@@ -2,6 +2,7 @@ package typings.extjs.Ext
 
 import typings.extjs.Ext.toolbar.IPaging
 import typings.extjs.Ext.view.IView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,78 +77,66 @@ object IBoundList {
   }
   
   @scala.inline
-  implicit class IBoundListOps[Self <: IBoundList] (val x: Self) extends AnyVal {
+  implicit class IBoundListMutableBuilder[Self <: IBoundList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindStore(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChild(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindStore(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = this.set("bindStore", js.Any.fromFunction2(value))
+    def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
     @scala.inline
-    def deleteBindStore: Self = this.set("bindStore", js.undefined)
+    def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChild(value: js.UndefOr[js.Any] => _): Self = this.set("child", js.Any.fromFunction1(value))
+    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
     @scala.inline
-    def deleteChild: Self = this.set("child", js.undefined)
+    def setDown(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplayField(value: java.lang.String): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
-    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    def setGetInnerTpl(value: /* displayField */ js.UndefOr[java.lang.String] => java.lang.String): Self = StObject.set(x, "getInnerTpl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDown(value: js.UndefOr[js.Any] => _): Self = this.set("down", js.Any.fromFunction1(value))
+    def setGetInnerTplUndefined: Self = StObject.set(x, "getInnerTpl", js.undefined)
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInnerTpl(value: /* displayField */ js.UndefOr[java.lang.String] => java.lang.String): Self = this.set("getInnerTpl", js.Any.fromFunction1(value))
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteGetInnerTpl: Self = this.set("getInnerTpl", js.undefined)
+    def setPagingToolbar(value: IPaging): Self = StObject.set(x, "pagingToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPagingToolbarUndefined: Self = StObject.set(x, "pagingToolbar", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPagingToolbar(value: IPaging): Self = this.set("pagingToolbar", value.asInstanceOf[js.Any])
+    def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deletePagingToolbar: Self = this.set("pagingToolbar", js.undefined)
+    def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = this.set("query", js.Any.fromFunction1(value))
+    def setQueryByIdUndefined: Self = StObject.set(x, "queryById", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
     
     @scala.inline
-    def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = this.set("queryBy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteQueryBy: Self = this.set("queryBy", js.undefined)
-    
-    @scala.inline
-    def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = this.set("queryById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteQueryById: Self = this.set("queryById", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class PivotGrid protected ()
   extends typings.ejWebAll.ej.PivotGrid {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.PivotGrid.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.PivotGrid.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.PivotGrid")
-@js.native
-object PivotGrid extends js.Object {
+object PivotGrid {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.PivotGrid = js.native
-  
+  @JSGlobal("ej.PivotGrid")
   @js.native
-  object Layout extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.PivotGrid.Layout")
+  @js.native
+  object Layout extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotGrid.Layout with Double] = js.native
@@ -38,4 +37,18 @@ object PivotGrid extends js.Object {
     
     /* 1 */ val NormalTopSummary: typings.ejWebAll.ej.PivotGrid.Layout.NormalTopSummary with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.PivotGrid.Locale")
+  @js.native
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("ej.PivotGrid.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.PivotGrid = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.PivotGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

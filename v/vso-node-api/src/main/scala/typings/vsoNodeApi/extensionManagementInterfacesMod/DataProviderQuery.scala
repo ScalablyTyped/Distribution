@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProviderQuery extends js.Object {
+trait DataProviderQuery extends StObject {
   
   /**
     * Contextual information to pass to the data providers
@@ -26,27 +27,15 @@ object DataProviderQuery {
   }
   
   @scala.inline
-  implicit class DataProviderQueryOps[Self <: DataProviderQuery] (val x: Self) extends AnyVal {
+  implicit class DataProviderQueryMutableBuilder[Self <: DataProviderQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: DataProviderContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: DataProviderContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContributionIdsVarargs(value: String*): Self = this.set("contributionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setContributionIds(value: js.Array[String]): Self = this.set("contributionIds", value.asInstanceOf[js.Any])
+    def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
   }
 }

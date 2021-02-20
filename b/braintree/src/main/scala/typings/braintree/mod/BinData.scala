@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BinData extends js.Object {
+trait BinData extends StObject {
   
   var commercial: js.UndefOr[Commercial] = js.native
   
@@ -34,72 +35,60 @@ object BinData {
   }
   
   @scala.inline
-  implicit class BinDataOps[Self <: BinData] (val x: Self) extends AnyVal {
+  implicit class BinDataMutableBuilder[Self <: BinData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommercial(value: Commercial): Self = StObject.set(x, "commercial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommercialUndefined: Self = StObject.set(x, "commercial", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryOfIssuance(value: String): Self = StObject.set(x, "countryOfIssuance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommercial(value: Commercial): Self = this.set("commercial", value.asInstanceOf[js.Any])
+    def setCountryOfIssuanceUndefined: Self = StObject.set(x, "countryOfIssuance", js.undefined)
     
     @scala.inline
-    def deleteCommercial: Self = this.set("commercial", js.undefined)
+    def setDebit(value: Debit): Self = StObject.set(x, "debit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryOfIssuance(value: String): Self = this.set("countryOfIssuance", value.asInstanceOf[js.Any])
+    def setDebitUndefined: Self = StObject.set(x, "debit", js.undefined)
     
     @scala.inline
-    def deleteCountryOfIssuance: Self = this.set("countryOfIssuance", js.undefined)
+    def setDurbinRegulated(value: DurbinRegulated): Self = StObject.set(x, "durbinRegulated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebit(value: Debit): Self = this.set("debit", value.asInstanceOf[js.Any])
+    def setDurbinRegulatedUndefined: Self = StObject.set(x, "durbinRegulated", js.undefined)
     
     @scala.inline
-    def deleteDebit: Self = this.set("debit", js.undefined)
+    def setHealthcare(value: HealthCare): Self = StObject.set(x, "healthcare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurbinRegulated(value: DurbinRegulated): Self = this.set("durbinRegulated", value.asInstanceOf[js.Any])
+    def setHealthcareUndefined: Self = StObject.set(x, "healthcare", js.undefined)
     
     @scala.inline
-    def deleteDurbinRegulated: Self = this.set("durbinRegulated", js.undefined)
+    def setIssuingBank(value: String): Self = StObject.set(x, "issuingBank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthcare(value: HealthCare): Self = this.set("healthcare", value.asInstanceOf[js.Any])
+    def setIssuingBankUndefined: Self = StObject.set(x, "issuingBank", js.undefined)
     
     @scala.inline
-    def deleteHealthcare: Self = this.set("healthcare", js.undefined)
+    def setPayroll(value: Payroll): Self = StObject.set(x, "payroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuingBank(value: String): Self = this.set("issuingBank", value.asInstanceOf[js.Any])
+    def setPayrollUndefined: Self = StObject.set(x, "payroll", js.undefined)
     
     @scala.inline
-    def deleteIssuingBank: Self = this.set("issuingBank", js.undefined)
+    def setPrepaid(value: Prepaid): Self = StObject.set(x, "prepaid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayroll(value: Payroll): Self = this.set("payroll", value.asInstanceOf[js.Any])
+    def setPrepaidUndefined: Self = StObject.set(x, "prepaid", js.undefined)
     
     @scala.inline
-    def deletePayroll: Self = this.set("payroll", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepaid(value: Prepaid): Self = this.set("prepaid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrepaid: Self = this.set("prepaid", js.undefined)
-    
-    @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

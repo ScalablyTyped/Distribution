@@ -10,12 +10,13 @@ import typings.skyway.skywayStrings.removeStream
 import typings.skyway.skywayStrings.stream
 import typings.std.MediaSource
 import typings.std.MediaStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SFURoom extends js.Object {
+trait SFURoom extends StObject {
   
   def close(): js.UndefOr[scala.Nothing] = js.native
   

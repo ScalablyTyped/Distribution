@@ -1,5 +1,6 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //  开放接口
 //  登录
 @js.native
-trait LoginResponse extends js.Object {
+trait LoginResponse extends StObject {
   
   /** 用户允许登录后，回调内容会带上 code（有效期五分钟），
     * 开发者需要将 code 发送到开发者服务器后台，
@@ -27,24 +28,12 @@ object LoginResponse {
   }
   
   @scala.inline
-  implicit class LoginResponseOps[Self <: LoginResponse] (val x: Self) extends AnyVal {
+  implicit class LoginResponseMutableBuilder[Self <: LoginResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

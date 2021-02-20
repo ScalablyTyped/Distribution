@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderreturnsRefundOperation extends js.Object {
+trait OrderreturnsRefundOperation extends StObject {
   
   /**
     * If true, the item will be fully refunded. Allowed only when payment_type is FOP. Merchant can choose this refund option to indicate the full remaining amount of corresponding object
@@ -34,48 +35,36 @@ object OrderreturnsRefundOperation {
   }
   
   @scala.inline
-  implicit class OrderreturnsRefundOperationOps[Self <: OrderreturnsRefundOperation] (val x: Self) extends AnyVal {
+  implicit class OrderreturnsRefundOperationMutableBuilder[Self <: OrderreturnsRefundOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartialRefund(value: OrderreturnsPartialRefund): Self = StObject.set(x, "partialRefund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullRefund(value: Boolean): Self = this.set("fullRefund", value.asInstanceOf[js.Any])
+    def setPartialRefundUndefined: Self = StObject.set(x, "partialRefund", js.undefined)
     
     @scala.inline
-    def deleteFullRefund: Self = this.set("fullRefund", js.undefined)
+    def setPaymentType(value: String): Self = StObject.set(x, "paymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialRefund(value: OrderreturnsPartialRefund): Self = this.set("partialRefund", value.asInstanceOf[js.Any])
+    def setPaymentTypeUndefined: Self = StObject.set(x, "paymentType", js.undefined)
     
     @scala.inline
-    def deletePartialRefund: Self = this.set("partialRefund", js.undefined)
+    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentType(value: String): Self = this.set("paymentType", value.asInstanceOf[js.Any])
+    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
     @scala.inline
-    def deletePaymentType: Self = this.set("paymentType", js.undefined)
+    def setReturnRefundReason(value: String): Self = StObject.set(x, "returnRefundReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonText(value: String): Self = this.set("reasonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonText: Self = this.set("reasonText", js.undefined)
-    
-    @scala.inline
-    def setReturnRefundReason(value: String): Self = this.set("returnRefundReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnRefundReason: Self = this.set("returnRefundReason", js.undefined)
+    def setReturnRefundReasonUndefined: Self = StObject.set(x, "returnRefundReason", js.undefined)
   }
 }

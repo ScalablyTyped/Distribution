@@ -1,11 +1,12 @@
 package typings.awsSdk.braketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelQuantumTaskResponse extends js.Object {
+trait CancelQuantumTaskResponse extends StObject {
   
   /**
     * The status of the cancellation request.
@@ -26,24 +27,12 @@ object CancelQuantumTaskResponse {
   }
   
   @scala.inline
-  implicit class CancelQuantumTaskResponseOps[Self <: CancelQuantumTaskResponse] (val x: Self) extends AnyVal {
+  implicit class CancelQuantumTaskResponseMutableBuilder[Self <: CancelQuantumTaskResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancellationStatus(value: CancellationStatus): Self = StObject.set(x, "cancellationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancellationStatus(value: CancellationStatus): Self = this.set("cancellationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuantumTaskArn(value: QuantumTaskArn): Self = this.set("quantumTaskArn", value.asInstanceOf[js.Any])
+    def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
   }
 }

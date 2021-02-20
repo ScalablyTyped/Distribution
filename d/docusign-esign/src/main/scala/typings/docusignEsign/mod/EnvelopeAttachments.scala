@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeAttachments extends js.Object {
+trait EnvelopeAttachments extends StObject {
   
   /**
     * Valid values are `sender` and `senderAndAllRecipients`.
@@ -54,56 +55,44 @@ object EnvelopeAttachments {
   }
   
   @scala.inline
-  implicit class EnvelopeAttachmentsOps[Self <: EnvelopeAttachments] (val x: Self) extends AnyVal {
+  implicit class EnvelopeAttachmentsMutableBuilder[Self <: EnvelopeAttachments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControl(value: String): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlUndefined: Self = StObject.set(x, "accessControl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControl(value: String): Self = this.set("accessControl", value.asInstanceOf[js.Any])
+    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
     @scala.inline
-    def deleteAccessControl: Self = this.set("accessControl", js.undefined)
+    def setAttachmentType(value: String): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentId(value: String): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachmentId: Self = this.set("attachmentId", js.undefined)
-    
-    @scala.inline
-    def setAttachmentType(value: String): Self = this.set("attachmentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachmentType: Self = this.set("attachmentType", js.undefined)
+    def setAttachmentTypeUndefined: Self = StObject.set(x, "attachmentType", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mongodbStrings.invalidate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,27 +25,15 @@ object ChangeEventInvalidate {
   }
   
   @scala.inline
-  implicit class ChangeEventInvalidateOps[Self <: ChangeEventInvalidate[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventInvalidate[TSchema]) extends AnyVal {
+  implicit class ChangeEventInvalidateMutableBuilder[Self <: ChangeEventInvalidate[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventInvalidate[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationType(value: invalidate): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_id(value: ResumeToken): Self = this.set("_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClusterTime(value: typings.bson.mod.Timestamp): Self = this.set("clusterTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperationType(value: invalidate): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def set_id(value: ResumeToken): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

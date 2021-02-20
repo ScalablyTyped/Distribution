@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * REST API methods.
   */
 @js.native
-trait SchemaHttp extends js.Object {
+trait SchemaHttp extends StObject {
   
   /**
     * When set to true, URL path parameters will be fully URI-decoded except in
@@ -36,33 +37,21 @@ object SchemaHttp {
   }
   
   @scala.inline
-  implicit class SchemaHttpOps[Self <: SchemaHttp] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpMutableBuilder[Self <: SchemaHttp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullyDecodeReservedExpansion(value: Boolean): Self = StObject.set(x, "fullyDecodeReservedExpansion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullyDecodeReservedExpansionUndefined: Self = StObject.set(x, "fullyDecodeReservedExpansion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRules(value: js.Array[SchemaHttpRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullyDecodeReservedExpansion(value: Boolean): Self = this.set("fullyDecodeReservedExpansion", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteFullyDecodeReservedExpansion: Self = this.set("fullyDecodeReservedExpansion", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: SchemaHttpRule*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[SchemaHttpRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRulesVarargs(value: SchemaHttpRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

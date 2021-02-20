@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
   
   def openDatabase(
     database_name: String,
@@ -25,24 +26,12 @@ object Window {
   }
   
   @scala.inline
-  implicit class WindowOps[Self <: Window] (val x: Self) extends AnyVal {
+  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenDatabase(value: (String, String, String, Double) => Database): Self = StObject.set(x, "openDatabase", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenDatabase(value: (String, String, String, Double) => Database): Self = this.set("openDatabase", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setRequestFileSystem(value: js.Any): Self = this.set("requestFileSystem", value.asInstanceOf[js.Any])
+    def setRequestFileSystem(value: js.Any): Self = StObject.set(x, "requestFileSystem", value.asInstanceOf[js.Any])
   }
 }

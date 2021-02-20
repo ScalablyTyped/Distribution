@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,42 +35,30 @@ object ExplanationOfBenefitInsurance {
   }
   
   @scala.inline
-  implicit class ExplanationOfBenefitInsuranceOps[Self <: ExplanationOfBenefitInsurance] (val x: Self) extends AnyVal {
+  implicit class ExplanationOfBenefitInsuranceMutableBuilder[Self <: ExplanationOfBenefitInsurance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreAuthRef(value: js.Array[String]): Self = StObject.set(x, "preAuthRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_preAuthRefVarargs(value: Element*): Self = this.set("_preAuthRef", js.Array(value :_*))
+    def setPreAuthRefUndefined: Self = StObject.set(x, "preAuthRef", js.undefined)
     
     @scala.inline
-    def set_preAuthRef(value: js.Array[Element]): Self = this.set("_preAuthRef", value.asInstanceOf[js.Any])
+    def setPreAuthRefVarargs(value: String*): Self = StObject.set(x, "preAuthRef", js.Array(value :_*))
     
     @scala.inline
-    def delete_preAuthRef: Self = this.set("_preAuthRef", js.undefined)
+    def set_preAuthRef(value: js.Array[Element]): Self = StObject.set(x, "_preAuthRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    def set_preAuthRefUndefined: Self = StObject.set(x, "_preAuthRef", js.undefined)
     
     @scala.inline
-    def deleteCoverage: Self = this.set("coverage", js.undefined)
-    
-    @scala.inline
-    def setPreAuthRefVarargs(value: String*): Self = this.set("preAuthRef", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreAuthRef(value: js.Array[String]): Self = this.set("preAuthRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreAuthRef: Self = this.set("preAuthRef", js.undefined)
+    def set_preAuthRefVarargs(value: Element*): Self = StObject.set(x, "_preAuthRef", js.Array(value :_*))
   }
 }

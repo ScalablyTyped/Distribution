@@ -1,11 +1,12 @@
 package typings.d3pie.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Background extends js.Object {
+trait Background extends StObject {
   
   var background: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object Background {
   }
   
   @scala.inline
-  implicit class BackgroundOps[Self <: Background] (val x: Self) extends AnyVal {
+  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentStroke(value: String): Self = StObject.set(x, "segmentStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setSegmentStrokeUndefined: Self = StObject.set(x, "segmentStroke", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setSegments(value: js.Array[String]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentStroke(value: String): Self = this.set("segmentStroke", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def deleteSegmentStroke: Self = this.set("segmentStroke", js.undefined)
-    
-    @scala.inline
-    def setSegmentsVarargs(value: String*): Self = this.set("segments", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegments(value: js.Array[String]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
+    def setSegmentsVarargs(value: String*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

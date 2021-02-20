@@ -4,12 +4,13 @@ import typings.atom.anon.Exclusive
 import typings.atom.anon.ExclusiveInvalidate
 import typings.atom.anon.Invalidate
 import typings.atom.anon.`27`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayMarkerLayer extends js.Object {
+trait DisplayMarkerLayer extends StObject {
   
   /** Destroy all markers in this layer. */
   def clear(): Unit = js.native

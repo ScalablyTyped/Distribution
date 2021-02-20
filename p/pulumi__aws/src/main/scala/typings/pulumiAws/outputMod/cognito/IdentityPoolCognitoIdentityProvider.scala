@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cognito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityPoolCognitoIdentityProvider extends js.Object {
+trait IdentityPoolCognitoIdentityProvider extends StObject {
   
   /**
     * The client ID for the Amazon Cognito Identity User Pool.
@@ -31,36 +32,24 @@ object IdentityPoolCognitoIdentityProvider {
   }
   
   @scala.inline
-  implicit class IdentityPoolCognitoIdentityProviderOps[Self <: IdentityPoolCognitoIdentityProvider] (val x: Self) extends AnyVal {
+  implicit class IdentityPoolCognitoIdentityProviderMutableBuilder[Self <: IdentityPoolCognitoIdentityProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setServerSideTokenCheck(value: Boolean): Self = StObject.set(x, "serverSideTokenCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderName(value: String): Self = this.set("providerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderName: Self = this.set("providerName", js.undefined)
-    
-    @scala.inline
-    def setServerSideTokenCheck(value: Boolean): Self = this.set("serverSideTokenCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerSideTokenCheck: Self = this.set("serverSideTokenCheck", js.undefined)
+    def setServerSideTokenCheckUndefined: Self = StObject.set(x, "serverSideTokenCheck", js.undefined)
   }
 }

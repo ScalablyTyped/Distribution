@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.ScpBallot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commit extends js.Object {
+trait Commit extends StObject {
   
   var commit: ScpBallot = js.native
   
@@ -24,27 +25,15 @@ object Commit {
   }
   
   @scala.inline
-  implicit class CommitOps[Self <: Commit] (val x: Self) extends AnyVal {
+  implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommit(value: ScpBallot): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitQuorumSetHash(value: Buffer): Self = StObject.set(x, "commitQuorumSetHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommit(value: ScpBallot): Self = this.set("commit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitQuorumSetHash(value: Buffer): Self = this.set("commitQuorumSetHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNH(value: Double): Self = this.set("nH", value.asInstanceOf[js.Any])
+    def setNH(value: Double): Self = StObject.set(x, "nH", value.asInstanceOf[js.Any])
   }
 }

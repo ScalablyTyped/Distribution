@@ -1,5 +1,6 @@
 package typings.riotjsDomBindings.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object SimpleBindingData {
   }
   
   @scala.inline
-  implicit class SimpleBindingDataOps[Self <: SimpleBindingData] (val x: Self) extends AnyVal {
+  implicit class SimpleBindingDataMutableBuilder[Self <: SimpleBindingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpressions(value: js.Array[ExpressionData]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpressionsVarargs(value: ExpressionData*): Self = this.set("expressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setExpressions(value: js.Array[ExpressionData]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    def setExpressionsVarargs(value: ExpressionData*): Self = StObject.set(x, "expressions", js.Array(value :_*))
   }
 }

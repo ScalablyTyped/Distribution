@@ -1,14 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageAdBuilder[ImageAd]
-  extends AdWordsBuilder[ImageAdBuilder[ImageAd]]
-     with hasFinalUrlBuilder[ImageAdBuilder[ImageAd]]
-     with hasTrackingTemplateBuilder[ImageAdBuilder[ImageAd]] {
+trait ImageAdBuilder[ImageAd] extends AdBuilder[ImageAdBuilder[ImageAd]] {
   
   def withDisplayUrl(displayUrl: String): ImageAdBuilder[ImageAd] = js.native
   
@@ -34,27 +32,15 @@ object ImageAdBuilder {
   }
   
   @scala.inline
-  implicit class ImageAdBuilderOps[Self <: ImageAdBuilder[_], ImageAd] (val x: Self with ImageAdBuilder[ImageAd]) extends AnyVal {
+  implicit class ImageAdBuilderMutableBuilder[Self <: ImageAdBuilder[_], ImageAd] (val x: Self with ImageAdBuilder[ImageAd]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithImage(value: Media => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = this.set("withDisplayUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithImage(value: Media => ImageAdBuilder[ImageAd]): Self = this.set("withImage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithName(value: String => ImageAdBuilder[ImageAd]): Self = this.set("withName", js.Any.fromFunction1(value))
+    def setWithName(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

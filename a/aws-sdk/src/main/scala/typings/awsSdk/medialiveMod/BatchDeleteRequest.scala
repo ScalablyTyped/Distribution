@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteRequest extends js.Object {
+trait BatchDeleteRequest extends StObject {
   
   /**
     * List of channel IDs
@@ -36,54 +37,42 @@ object BatchDeleteRequest {
   }
   
   @scala.inline
-  implicit class BatchDeleteRequestOps[Self <: BatchDeleteRequest] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteRequestMutableBuilder[Self <: BatchDeleteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelIds(value: listOfString): Self = StObject.set(x, "ChannelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdsUndefined: Self = StObject.set(x, "ChannelIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelIdsVarargs(value: string*): Self = StObject.set(x, "ChannelIds", js.Array(value :_*))
     
     @scala.inline
-    def setChannelIdsVarargs(value: string*): Self = this.set("ChannelIds", js.Array(value :_*))
+    def setInputIds(value: listOfString): Self = StObject.set(x, "InputIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelIds(value: listOfString): Self = this.set("ChannelIds", value.asInstanceOf[js.Any])
+    def setInputIdsUndefined: Self = StObject.set(x, "InputIds", js.undefined)
     
     @scala.inline
-    def deleteChannelIds: Self = this.set("ChannelIds", js.undefined)
+    def setInputIdsVarargs(value: string*): Self = StObject.set(x, "InputIds", js.Array(value :_*))
     
     @scala.inline
-    def setInputIdsVarargs(value: string*): Self = this.set("InputIds", js.Array(value :_*))
+    def setInputSecurityGroupIds(value: listOfString): Self = StObject.set(x, "InputSecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputIds(value: listOfString): Self = this.set("InputIds", value.asInstanceOf[js.Any])
+    def setInputSecurityGroupIdsUndefined: Self = StObject.set(x, "InputSecurityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteInputIds: Self = this.set("InputIds", js.undefined)
+    def setInputSecurityGroupIdsVarargs(value: string*): Self = StObject.set(x, "InputSecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setInputSecurityGroupIdsVarargs(value: string*): Self = this.set("InputSecurityGroupIds", js.Array(value :_*))
+    def setMultiplexIds(value: listOfString): Self = StObject.set(x, "MultiplexIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSecurityGroupIds(value: listOfString): Self = this.set("InputSecurityGroupIds", value.asInstanceOf[js.Any])
+    def setMultiplexIdsUndefined: Self = StObject.set(x, "MultiplexIds", js.undefined)
     
     @scala.inline
-    def deleteInputSecurityGroupIds: Self = this.set("InputSecurityGroupIds", js.undefined)
-    
-    @scala.inline
-    def setMultiplexIdsVarargs(value: string*): Self = this.set("MultiplexIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setMultiplexIds(value: listOfString): Self = this.set("MultiplexIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiplexIds: Self = this.set("MultiplexIds", js.undefined)
+    def setMultiplexIdsVarargs(value: string*): Self = StObject.set(x, "MultiplexIds", js.Array(value :_*))
   }
 }

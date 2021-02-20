@@ -5,13 +5,14 @@ import typings.react.mod.ComponentType
 import typings.std.Partial
 import typings.std.Record
 import typings.wordpressBlocks.anon.From
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<@wordpress/blocks.@wordpress/blocks.Block<T>, 'icon'>> & std.Pick<@wordpress/blocks.@wordpress/blocks.Block<T>, 'attributes' | 'category' | 'title'> & {  icon :@wordpress/blocks.@wordpress/blocks.BlockIcon | undefined} */
 @js.native
-trait BlockConfiguration[T /* <: Record[String, _] */] extends js.Object {
+trait BlockConfiguration[T /* <: Record[String, _] */] extends StObject {
   
   var attributes: (js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -66,19 +67,7 @@ object BlockConfiguration {
   }
   
   @scala.inline
-  implicit class BlockConfigurationOps[Self <: BlockConfiguration[_], T /* <: Record[String, _] */] (val x: Self with BlockConfiguration[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BlockConfigurationMutableBuilder[Self <: BlockConfiguration[_], T /* <: Record[String, _] */] (val x: Self with BlockConfiguration[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(
@@ -87,102 +76,102 @@ object BlockConfiguration {
     {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
       */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any]
         ]) with typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any]
-    ): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: js.UndefOr[String] with String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCategory(value: js.UndefOr[String] with String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: js.UndefOr[String] with String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setDeprecated(value: js.Array[BlockDeprecation[T]]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedVarargs(value: BlockDeprecation[T]*): Self = this.set("deprecated", js.Array(value :_*))
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def setDeprecated(value: js.Array[BlockDeprecation[T]]): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setDeprecatedVarargs(value: BlockDeprecation[T]*): Self = StObject.set(x, "deprecated", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEdit(value: ComponentType[BlockEditProps[T]]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: ComponentType[BlockEditProps[T]]): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
     @scala.inline
-    def deleteEdit: Self = this.set("edit", js.undefined)
+    def setGetEditWrapperProps(value: /* attrs */ T => Record[String, String | Double | Boolean]): Self = StObject.set(x, "getEditWrapperProps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEditWrapperProps(value: /* attrs */ T => Record[String, String | Double | Boolean]): Self = this.set("getEditWrapperProps", js.Any.fromFunction1(value))
+    def setGetEditWrapperPropsUndefined: Self = StObject.set(x, "getEditWrapperProps", js.undefined)
     
     @scala.inline
-    def deleteGetEditWrapperProps: Self = this.set("getEditWrapperProps", js.undefined)
+    def setIcon(value: BlockIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: BlockIcon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setMerge(value: (/* attributes */ T, /* attributesToMerge */ T) => Partial[T]): Self = StObject.set(x, "merge", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMerge(value: (/* attributes */ T, /* attributesToMerge */ T) => Partial[T]): Self = this.set("merge", js.Any.fromFunction2(value))
+    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
     @scala.inline
-    def deleteMerge: Self = this.set("merge", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParent(value: js.Array[String]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentVarargs(value: String*): Self = this.set("parent", js.Array(value :_*))
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def setParent(value: js.Array[String]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setParentVarargs(value: String*): Self = StObject.set(x, "parent", js.Array(value :_*))
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setSave(value: ComponentType[BlockSaveProps[T]]): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: ComponentType[BlockSaveProps[T]]): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setStyles(value: js.Array[BlockStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesVarargs(value: BlockStyle*): Self = this.set("styles", js.Array(value :_*))
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStyles(value: js.Array[BlockStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStylesVarargs(value: BlockStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setSupports(value: BlockSupports): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupports(value: BlockSupports): Self = this.set("supports", value.asInstanceOf[js.Any])
+    def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
     
     @scala.inline
-    def deleteSupports: Self = this.set("supports", js.undefined)
+    def setTitle(value: js.UndefOr[String] with String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransforms(value: From[T]): Self = this.set("transforms", value.asInstanceOf[js.Any])
+    def setTransforms(value: From[T]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransforms: Self = this.set("transforms", js.undefined)
+    def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
   }
 }

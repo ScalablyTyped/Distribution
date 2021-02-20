@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathPhantom extends js.Object {
+trait OMathPhantom extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -52,51 +53,39 @@ object OMathPhantom {
   }
   
   @scala.inline
-  implicit class OMathPhantomOps[Self <: OMathPhantom] (val x: Self) extends AnyVal {
+  implicit class OMathPhantomMutableBuilder[Self <: OMathPhantom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: OMath): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setSmash(value: Boolean): Self = StObject.set(x, "Smash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setTransp(value: Boolean): Self = StObject.set(x, "Transp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("Show", value.asInstanceOf[js.Any])
+    def setWordDotOMathPhantom_typekey(value: OMathPhantom): Self = StObject.set(x, "Word.OMathPhantom_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmash(value: Boolean): Self = this.set("Smash", value.asInstanceOf[js.Any])
+    def setZeroAsc(value: Boolean): Self = StObject.set(x, "ZeroAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransp(value: Boolean): Self = this.set("Transp", value.asInstanceOf[js.Any])
+    def setZeroDesc(value: Boolean): Self = StObject.set(x, "ZeroDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordDotOMathPhantom_typekey(value: OMathPhantom): Self = this.set("Word.OMathPhantom_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZeroAsc(value: Boolean): Self = this.set("ZeroAsc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZeroDesc(value: Boolean): Self = this.set("ZeroDesc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZeroWid(value: Boolean): Self = this.set("ZeroWid", value.asInstanceOf[js.Any])
+    def setZeroWid(value: Boolean): Self = StObject.set(x, "ZeroWid", value.asInstanceOf[js.Any])
   }
 }

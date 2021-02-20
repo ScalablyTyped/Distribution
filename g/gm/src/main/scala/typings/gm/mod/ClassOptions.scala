@@ -1,11 +1,12 @@
 package typings.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassOptions extends js.Object {
+trait ClassOptions extends StObject {
   
   var appPath: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ClassOptions {
   }
   
   @scala.inline
-  implicit class ClassOptionsOps[Self <: ClassOptions] (val x: Self) extends AnyVal {
+  implicit class ClassOptionsMutableBuilder[Self <: ClassOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppPath(value: String): Self = StObject.set(x, "appPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppPathUndefined: Self = StObject.set(x, "appPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageMagick(value: Boolean): Self = StObject.set(x, "imageMagick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppPath(value: String): Self = this.set("appPath", value.asInstanceOf[js.Any])
+    def setImageMagickUndefined: Self = StObject.set(x, "imageMagick", js.undefined)
     
     @scala.inline
-    def deleteAppPath: Self = this.set("appPath", js.undefined)
+    def setNativeAutoOrient(value: Boolean): Self = StObject.set(x, "nativeAutoOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMagick(value: Boolean): Self = this.set("imageMagick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageMagick: Self = this.set("imageMagick", js.undefined)
-    
-    @scala.inline
-    def setNativeAutoOrient(value: Boolean): Self = this.set("nativeAutoOrient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNativeAutoOrient: Self = this.set("nativeAutoOrient", js.undefined)
+    def setNativeAutoOrientUndefined: Self = StObject.set(x, "nativeAutoOrient", js.undefined)
   }
 }

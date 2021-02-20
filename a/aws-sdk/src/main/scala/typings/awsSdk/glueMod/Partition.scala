@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Partition extends js.Object {
+trait Partition extends StObject {
   
   /**
     * The ID of the Data Catalog in which the partition resides.
@@ -61,75 +62,63 @@ object Partition {
   }
   
   @scala.inline
-  implicit class PartitionOps[Self <: Partition] (val x: Self) extends AnyVal {
+  implicit class PartitionMutableBuilder[Self <: Partition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setLastAnalyzedTime(value: Timestamp): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessTime(value: Timestamp): Self = this.set("LastAccessTime", value.asInstanceOf[js.Any])
+    def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "LastAnalyzedTime", js.undefined)
     
     @scala.inline
-    def deleteLastAccessTime: Self = this.set("LastAccessTime", js.undefined)
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAnalyzedTime(value: Timestamp): Self = this.set("LastAnalyzedTime", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteLastAnalyzedTime: Self = this.set("LastAnalyzedTime", js.undefined)
+    def setStorageDescriptor(value: StorageDescriptor): Self = StObject.set(x, "StorageDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setStorageDescriptorUndefined: Self = StObject.set(x, "StorageDescriptor", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageDescriptor(value: StorageDescriptor): Self = this.set("StorageDescriptor", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteStorageDescriptor: Self = this.set("StorageDescriptor", js.undefined)
+    def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: NameString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: ValueString*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: ValueStringList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

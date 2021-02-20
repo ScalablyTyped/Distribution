@@ -1,5 +1,6 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.photo
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.string
 */
-trait OpenGraphValueType extends js.Object
+trait OpenGraphValueType extends StObject
 object OpenGraphValueType {
   
   @scala.inline

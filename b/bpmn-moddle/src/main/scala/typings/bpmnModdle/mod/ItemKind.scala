@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bpmnModdle.bpmnModdleStrings.Physical
   - typings.bpmnModdle.bpmnModdleStrings.Information
 */
-trait ItemKind extends js.Object
+trait ItemKind extends StObject
 object ItemKind {
   
   @scala.inline

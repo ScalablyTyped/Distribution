@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsdataserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchExecuteStatementResponse extends js.Object {
+trait BatchExecuteStatementResponse extends StObject {
   
   /**
     * The execution results of each batch entry.
@@ -21,27 +22,15 @@ object BatchExecuteStatementResponse {
   }
   
   @scala.inline
-  implicit class BatchExecuteStatementResponseOps[Self <: BatchExecuteStatementResponse] (val x: Self) extends AnyVal {
+  implicit class BatchExecuteStatementResponseMutableBuilder[Self <: BatchExecuteStatementResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateResults(value: UpdateResults): Self = StObject.set(x, "updateResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdateResultsUndefined: Self = StObject.set(x, "updateResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdateResultsVarargs(value: UpdateResult*): Self = this.set("updateResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdateResults(value: UpdateResults): Self = this.set("updateResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateResults: Self = this.set("updateResults", js.undefined)
+    def setUpdateResultsVarargs(value: UpdateResult*): Self = StObject.set(x, "updateResults", js.Array(value :_*))
   }
 }

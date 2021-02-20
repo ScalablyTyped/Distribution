@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerDefinition extends js.Object {
+trait ContainerDefinition extends StObject {
   
   /**
     * This parameter is ignored for models that contain only a PrimaryContainer. When a ContainerDefinition is part of an inference pipeline, the value of the parameter uniquely identifies the container for the purposes of logging and metrics. For information, see Use Logs and Metrics to Monitor an Inference Pipeline. If you don't specify a value for this parameter for a ContainerDefinition that is part of an inference pipeline, a unique name is automatically assigned based on the position of the ContainerDefinition in the pipeline. If you specify a value for the ContainerHostName for any ContainerDefinition that is part of an inference pipeline, you must specify a value for the ContainerHostName parameter of every ContainerDefinition in that pipeline.
@@ -51,60 +52,48 @@ object ContainerDefinition {
   }
   
   @scala.inline
-  implicit class ContainerDefinitionOps[Self <: ContainerDefinition] (val x: Self) extends AnyVal {
+  implicit class ContainerDefinitionMutableBuilder[Self <: ContainerDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerHostnameUndefined: Self = StObject.set(x, "ContainerHostname", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironment(value: EnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerHostname(value: ContainerHostname): Self = this.set("ContainerHostname", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def deleteContainerHostname: Self = this.set("ContainerHostname", js.undefined)
+    def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: EnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setImageConfig(value: ImageConfig): Self = StObject.set(x, "ImageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setImageConfigUndefined: Self = StObject.set(x, "ImageConfig", js.undefined)
     
     @scala.inline
-    def setImage(value: ContainerImage): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("Image", js.undefined)
+    def setMode(value: ContainerMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageConfig(value: ImageConfig): Self = this.set("ImageConfig", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
     @scala.inline
-    def deleteImageConfig: Self = this.set("ImageConfig", js.undefined)
+    def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ContainerMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
+    def setModelPackageName(value: VersionedArnOrName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelDataUrl(value: Url): Self = this.set("ModelDataUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelDataUrl: Self = this.set("ModelDataUrl", js.undefined)
-    
-    @scala.inline
-    def setModelPackageName(value: VersionedArnOrName): Self = this.set("ModelPackageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelPackageName: Self = this.set("ModelPackageName", js.undefined)
+    def setModelPackageNameUndefined: Self = StObject.set(x, "ModelPackageName", js.undefined)
   }
 }

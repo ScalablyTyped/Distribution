@@ -1,20 +1,34 @@
 package typings.loremIpsum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lorem-ipsum/types/src/constants/platforms", JSImport.Namespace)
-@js.native
-object platformsMod extends js.Object {
+object platformsMod {
   
-  @js.native
-  object SUPPORTED_PLATFORMS extends js.Object {
+  object SUPPORTED_PLATFORMS {
     
-    var DARWIN: String = js.native
+    @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var LINUX: String = js.native
+    @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS.DARWIN")
+    @js.native
+    def DARWIN: String = js.native
+    @scala.inline
+    def DARWIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARWIN")(x.asInstanceOf[js.Any])
     
-    var WIN32: String = js.native
+    @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS.LINUX")
+    @js.native
+    def LINUX: String = js.native
+    @scala.inline
+    def LINUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS.WIN32")
+    @js.native
+    def WIN32: String = js.native
+    @scala.inline
+    def WIN32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WIN32")(x.asInstanceOf[js.Any])
   }
 }

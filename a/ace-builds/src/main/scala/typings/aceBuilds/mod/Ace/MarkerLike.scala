@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerLike extends js.Object {
+trait MarkerLike extends StObject {
   
   var clazz: String = js.native
   
@@ -39,49 +40,37 @@ object MarkerLike {
   }
   
   @scala.inline
-  implicit class MarkerLikeOps[Self <: MarkerLike] (val x: Self) extends AnyVal {
+  implicit class MarkerLikeMutableBuilder[Self <: MarkerLike] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClazz(value: String): Self = StObject.set(x, "clazz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInFront(value: Boolean): Self = StObject.set(x, "inFront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClazz(value: String): Self = this.set("clazz", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInFront(value: Boolean): Self = this.set("inFront", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRenderer(
       value: (/* html */ js.Array[String], /* range */ Range, /* left */ Double, /* top */ Double, /* config */ js.Any) => Unit
-    ): Self = this.set("renderer", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "renderer", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    
+    @scala.inline
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUpdate(
       value: (/* html */ js.Array[String], /* marker */ js.Any, /* session */ EditSession, /* config */ js.Any) => Unit
-    ): Self = this.set("update", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

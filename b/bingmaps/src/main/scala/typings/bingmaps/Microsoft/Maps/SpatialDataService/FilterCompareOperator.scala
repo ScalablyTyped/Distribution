@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterCompareOperator extends js.Object
+sealed trait FilterCompareOperator extends StObject
 @JSGlobal("Microsoft.Maps.SpatialDataService.FilterCompareOperator")
 @js.native
-object FilterCompareOperator extends js.Object {
+object FilterCompareOperator extends StObject {
   
   /** Determines if a string value ends with a specified string value. */
   @js.native

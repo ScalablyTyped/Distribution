@@ -1,11 +1,12 @@
 package typings.babelTraverse.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Confident extends js.Object {
+trait Confident extends StObject {
   
   var confident: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Confident {
   }
   
   @scala.inline
-  implicit class ConfidentOps[Self <: Confident] (val x: Self) extends AnyVal {
+  implicit class ConfidentMutableBuilder[Self <: Confident] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfident(value: Boolean): Self = this.set("confident", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

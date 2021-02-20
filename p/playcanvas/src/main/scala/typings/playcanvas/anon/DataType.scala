@@ -1,12 +1,13 @@
 package typings.playcanvas.anon
 
 import typings.playcanvas.pc.ScopeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataType extends js.Object {
+trait DataType extends StObject {
   
   var dataType: Double = js.native
   
@@ -42,42 +43,30 @@ object DataType {
   }
   
   @scala.inline
-  implicit class DataTypeOps[Self <: DataType] (val x: Self) extends AnyVal {
+  implicit class DataTypeMutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: Double): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setNumComponents(value: Double): Self = StObject.set(x, "numComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: Boolean): Self = this.set("normalize", value.asInstanceOf[js.Any])
+    def setScopeId(value: ScopeId): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumComponents(value: Double): Self = this.set("numComponents", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeId(value: ScopeId): Self = this.set("scopeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStride(value: Double): Self = this.set("stride", value.asInstanceOf[js.Any])
+    def setStride(value: Double): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
   }
 }

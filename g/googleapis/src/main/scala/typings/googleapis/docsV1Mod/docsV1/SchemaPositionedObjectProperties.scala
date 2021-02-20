@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties of a PositionedObject.
   */
 @js.native
-trait SchemaPositionedObjectProperties extends js.Object {
+trait SchemaPositionedObjectProperties extends StObject {
   
   /**
     * The embedded object of this positioned object.
@@ -30,30 +31,18 @@ object SchemaPositionedObjectProperties {
   }
   
   @scala.inline
-  implicit class SchemaPositionedObjectPropertiesOps[Self <: SchemaPositionedObjectProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaPositionedObjectPropertiesMutableBuilder[Self <: SchemaPositionedObjectProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmbeddedObject(value: SchemaEmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositioning(value: SchemaPositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedObject(value: SchemaEmbeddedObject): Self = this.set("embeddedObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbeddedObject: Self = this.set("embeddedObject", js.undefined)
-    
-    @scala.inline
-    def setPositioning(value: SchemaPositionedObjectPositioning): Self = this.set("positioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositioning: Self = this.set("positioning", js.undefined)
+    def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
   }
 }

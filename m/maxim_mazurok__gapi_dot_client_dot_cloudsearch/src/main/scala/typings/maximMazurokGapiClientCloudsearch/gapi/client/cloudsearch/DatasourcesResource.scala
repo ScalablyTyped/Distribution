@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCloudsearch.anon.FromDateday
 import typings.maximMazurokGapiClientCloudsearch.anon.Key
 import typings.maximMazurokGapiClientCloudsearch.anon.PageSize
 import typings.maximMazurokGapiClientCloudsearch.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasourcesResource extends js.Object {
+trait DatasourcesResource extends StObject {
   
   /** Creates a datasource. **Note:** This API requires an admin account to execute. */
   def create(request: AccesstokenAlt): Request[Operation] = js.native

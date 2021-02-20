@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VisibleSecurityState extends js.Object {
+trait VisibleSecurityState extends StObject {
   
   /**
     * Security state details about the page certificate.
@@ -36,39 +37,27 @@ object VisibleSecurityState {
   }
   
   @scala.inline
-  implicit class VisibleSecurityStateOps[Self <: VisibleSecurityState] (val x: Self) extends AnyVal {
+  implicit class VisibleSecurityStateMutableBuilder[Self <: VisibleSecurityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateSecurityState(value: CertificateSecurityState): Self = StObject.set(x, "certificateSecurityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateSecurityStateUndefined: Self = StObject.set(x, "certificateSecurityState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSafetyTipInfo(value: SafetyTipInfo): Self = StObject.set(x, "safetyTipInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityState(value: SecurityState): Self = this.set("securityState", value.asInstanceOf[js.Any])
+    def setSafetyTipInfoUndefined: Self = StObject.set(x, "safetyTipInfo", js.undefined)
     
     @scala.inline
-    def setSecurityStateIssueIdsVarargs(value: String*): Self = this.set("securityStateIssueIds", js.Array(value :_*))
+    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityStateIssueIds(value: js.Array[String]): Self = this.set("securityStateIssueIds", value.asInstanceOf[js.Any])
+    def setSecurityStateIssueIds(value: js.Array[String]): Self = StObject.set(x, "securityStateIssueIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateSecurityState(value: CertificateSecurityState): Self = this.set("certificateSecurityState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateSecurityState: Self = this.set("certificateSecurityState", js.undefined)
-    
-    @scala.inline
-    def setSafetyTipInfo(value: SafetyTipInfo): Self = this.set("safetyTipInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSafetyTipInfo: Self = this.set("safetyTipInfo", js.undefined)
+    def setSecurityStateIssueIdsVarargs(value: String*): Self = StObject.set(x, "securityStateIssueIds", js.Array(value :_*))
   }
 }

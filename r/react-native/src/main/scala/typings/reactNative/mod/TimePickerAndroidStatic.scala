@@ -2,12 +2,13 @@ package typings.reactNative.mod
 
 import typings.reactNative.reactNativeStrings.dismissedAction
 import typings.reactNative.reactNativeStrings.timeSetAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePickerAndroidStatic extends js.Object {
+trait TimePickerAndroidStatic extends StObject {
   
   /**
     * The dialog has been dismissed.
@@ -53,27 +54,15 @@ object TimePickerAndroidStatic {
   }
   
   @scala.inline
-  implicit class TimePickerAndroidStaticOps[Self <: TimePickerAndroidStatic] (val x: Self) extends AnyVal {
+  implicit class TimePickerAndroidStaticMutableBuilder[Self <: TimePickerAndroidStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDismissedAction(value: dismissedAction): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpen(value: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDismissedAction(value: dismissedAction): Self = this.set("dismissedAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): Self = this.set("open", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTimeSetAction(value: timeSetAction): Self = this.set("timeSetAction", value.asInstanceOf[js.Any])
+    def setTimeSetAction(value: timeSetAction): Self = StObject.set(x, "timeSetAction", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.codebuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectEnvironmentRegistryCredential extends js.Object {
+trait ProjectEnvironmentRegistryCredential extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) or name of credentials created using AWS Secrets Manager.
@@ -26,24 +27,12 @@ object ProjectEnvironmentRegistryCredential {
   }
   
   @scala.inline
-  implicit class ProjectEnvironmentRegistryCredentialOps[Self <: ProjectEnvironmentRegistryCredential] (val x: Self) extends AnyVal {
+  implicit class ProjectEnvironmentRegistryCredentialMutableBuilder[Self <: ProjectEnvironmentRegistryCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredential(value: String): Self = this.set("credential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCredentialProvider(value: String): Self = this.set("credentialProvider", value.asInstanceOf[js.Any])
+    def setCredentialProvider(value: String): Self = StObject.set(x, "credentialProvider", value.asInstanceOf[js.Any])
   }
 }

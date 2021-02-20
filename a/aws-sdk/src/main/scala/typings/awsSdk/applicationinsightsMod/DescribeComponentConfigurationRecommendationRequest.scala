@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeComponentConfigurationRecommendationRequest extends js.Object {
+trait DescribeComponentConfigurationRecommendationRequest extends StObject {
   
   /**
     * The name of the component.
@@ -31,27 +32,15 @@ object DescribeComponentConfigurationRecommendationRequest {
   }
   
   @scala.inline
-  implicit class DescribeComponentConfigurationRecommendationRequestOps[Self <: DescribeComponentConfigurationRecommendationRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeComponentConfigurationRecommendationRequestMutableBuilder[Self <: DescribeComponentConfigurationRecommendationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentName(value: ComponentName): Self = this.set("ComponentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTier(value: Tier): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
   }
 }

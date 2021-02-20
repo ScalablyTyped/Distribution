@@ -12,14 +12,15 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pbkdf2", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: String,
@@ -27,6 +28,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: String,
@@ -35,6 +38,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: Buffer,
@@ -42,6 +47,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: Buffer,
@@ -50,6 +57,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: TypedArray,
@@ -57,6 +66,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: TypedArray,
@@ -65,6 +76,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: DataView,
@@ -72,6 +85,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: String,
     salt: DataView,
@@ -80,6 +95,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: String,
@@ -87,6 +104,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: String,
@@ -95,6 +114,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: Buffer,
@@ -102,6 +123,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: Buffer,
@@ -110,6 +133,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: TypedArray,
@@ -117,6 +142,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: TypedArray,
@@ -125,6 +152,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: DataView,
@@ -132,6 +161,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: Buffer,
     salt: DataView,
@@ -140,6 +171,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: String,
@@ -147,6 +180,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: String,
@@ -155,6 +190,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: Buffer,
@@ -162,6 +199,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: Buffer,
@@ -170,6 +209,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: TypedArray,
@@ -177,6 +218,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: TypedArray,
@@ -185,6 +228,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: DataView,
@@ -192,6 +237,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: TypedArray,
     salt: DataView,
@@ -200,6 +247,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: String,
@@ -207,6 +256,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: String,
@@ -215,6 +266,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: Buffer,
@@ -222,6 +275,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: Buffer,
@@ -230,6 +285,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: TypedArray,
@@ -237,6 +294,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: TypedArray,
@@ -245,6 +304,8 @@ object mod extends js.Object {
     digest: String,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: DataView,
@@ -252,6 +313,8 @@ object mod extends js.Object {
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
+  @JSImport("pbkdf2", "pbkdf2")
+  @js.native
   def pbkdf2(
     password: DataView,
     salt: DataView,
@@ -261,37 +324,101 @@ object mod extends js.Object {
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, Unit]
   ): Unit = js.native
   
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: Buffer, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: Buffer, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: TypedArray, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: TypedArray, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: DataView, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: String, salt: DataView, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: String, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: Buffer, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: Buffer, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: TypedArray, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: TypedArray, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: DataView, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: Buffer, salt: DataView, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: String, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: Buffer, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: Buffer, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: TypedArray, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: TypedArray, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: DataView, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: TypedArray, salt: DataView, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: String, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: Buffer, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: Buffer, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: TypedArray, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: TypedArray, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: DataView, iterations: Double, keylen: Double): Buffer = js.native
+  @JSImport("pbkdf2", "pbkdf2Sync")
+  @js.native
   def pbkdf2Sync(password: DataView, salt: DataView, iterations: Double, keylen: Double, digest: String): Buffer = js.native
   
   // No need to export this

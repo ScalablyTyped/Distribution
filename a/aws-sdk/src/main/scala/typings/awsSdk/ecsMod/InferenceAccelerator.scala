@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InferenceAccelerator extends js.Object {
+trait InferenceAccelerator extends StObject {
   
   /**
     * The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
@@ -26,24 +27,12 @@ object InferenceAccelerator {
   }
   
   @scala.inline
-  implicit class InferenceAcceleratorOps[Self <: InferenceAccelerator] (val x: Self) extends AnyVal {
+  implicit class InferenceAcceleratorMutableBuilder[Self <: InferenceAccelerator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
   }
 }

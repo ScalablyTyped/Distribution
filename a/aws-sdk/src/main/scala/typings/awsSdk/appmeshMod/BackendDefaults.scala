@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendDefaults extends js.Object {
+trait BackendDefaults extends StObject {
   
   /**
     * A reference to an object that represents a client policy.
@@ -21,24 +22,12 @@ object BackendDefaults {
   }
   
   @scala.inline
-  implicit class BackendDefaultsOps[Self <: BackendDefaults] (val x: Self) extends AnyVal {
+  implicit class BackendDefaultsMutableBuilder[Self <: BackendDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientPolicy(value: ClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClientPolicy(value: ClientPolicy): Self = this.set("clientPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientPolicy: Self = this.set("clientPolicy", js.undefined)
+    def setClientPolicyUndefined: Self = StObject.set(x, "clientPolicy", js.undefined)
   }
 }

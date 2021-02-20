@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasswordPolicy extends js.Object {
+trait PasswordPolicy extends StObject {
   
   /**
     * Specifies whether IAM users are allowed to change their own password.
@@ -66,78 +67,66 @@ object PasswordPolicy {
   }
   
   @scala.inline
-  implicit class PasswordPolicyOps[Self <: PasswordPolicy] (val x: Self) extends AnyVal {
+  implicit class PasswordPolicyMutableBuilder[Self <: PasswordPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUsersToChangePassword(value: booleanType): Self = StObject.set(x, "AllowUsersToChangePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUsersToChangePasswordUndefined: Self = StObject.set(x, "AllowUsersToChangePassword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirePasswords(value: booleanType): Self = StObject.set(x, "ExpirePasswords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUsersToChangePassword(value: booleanType): Self = this.set("AllowUsersToChangePassword", value.asInstanceOf[js.Any])
+    def setExpirePasswordsUndefined: Self = StObject.set(x, "ExpirePasswords", js.undefined)
     
     @scala.inline
-    def deleteAllowUsersToChangePassword: Self = this.set("AllowUsersToChangePassword", js.undefined)
+    def setHardExpiry(value: booleanObjectType): Self = StObject.set(x, "HardExpiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirePasswords(value: booleanType): Self = this.set("ExpirePasswords", value.asInstanceOf[js.Any])
+    def setHardExpiryUndefined: Self = StObject.set(x, "HardExpiry", js.undefined)
     
     @scala.inline
-    def deleteExpirePasswords: Self = this.set("ExpirePasswords", js.undefined)
+    def setMaxPasswordAge(value: maxPasswordAgeType): Self = StObject.set(x, "MaxPasswordAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardExpiry(value: booleanObjectType): Self = this.set("HardExpiry", value.asInstanceOf[js.Any])
+    def setMaxPasswordAgeUndefined: Self = StObject.set(x, "MaxPasswordAge", js.undefined)
     
     @scala.inline
-    def deleteHardExpiry: Self = this.set("HardExpiry", js.undefined)
+    def setMinimumPasswordLength(value: minimumPasswordLengthType): Self = StObject.set(x, "MinimumPasswordLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPasswordAge(value: maxPasswordAgeType): Self = this.set("MaxPasswordAge", value.asInstanceOf[js.Any])
+    def setMinimumPasswordLengthUndefined: Self = StObject.set(x, "MinimumPasswordLength", js.undefined)
     
     @scala.inline
-    def deleteMaxPasswordAge: Self = this.set("MaxPasswordAge", js.undefined)
+    def setPasswordReusePrevention(value: passwordReusePreventionType): Self = StObject.set(x, "PasswordReusePrevention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumPasswordLength(value: minimumPasswordLengthType): Self = this.set("MinimumPasswordLength", value.asInstanceOf[js.Any])
+    def setPasswordReusePreventionUndefined: Self = StObject.set(x, "PasswordReusePrevention", js.undefined)
     
     @scala.inline
-    def deleteMinimumPasswordLength: Self = this.set("MinimumPasswordLength", js.undefined)
+    def setRequireLowercaseCharacters(value: booleanType): Self = StObject.set(x, "RequireLowercaseCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordReusePrevention(value: passwordReusePreventionType): Self = this.set("PasswordReusePrevention", value.asInstanceOf[js.Any])
+    def setRequireLowercaseCharactersUndefined: Self = StObject.set(x, "RequireLowercaseCharacters", js.undefined)
     
     @scala.inline
-    def deletePasswordReusePrevention: Self = this.set("PasswordReusePrevention", js.undefined)
+    def setRequireNumbers(value: booleanType): Self = StObject.set(x, "RequireNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireLowercaseCharacters(value: booleanType): Self = this.set("RequireLowercaseCharacters", value.asInstanceOf[js.Any])
+    def setRequireNumbersUndefined: Self = StObject.set(x, "RequireNumbers", js.undefined)
     
     @scala.inline
-    def deleteRequireLowercaseCharacters: Self = this.set("RequireLowercaseCharacters", js.undefined)
+    def setRequireSymbols(value: booleanType): Self = StObject.set(x, "RequireSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireNumbers(value: booleanType): Self = this.set("RequireNumbers", value.asInstanceOf[js.Any])
+    def setRequireSymbolsUndefined: Self = StObject.set(x, "RequireSymbols", js.undefined)
     
     @scala.inline
-    def deleteRequireNumbers: Self = this.set("RequireNumbers", js.undefined)
+    def setRequireUppercaseCharacters(value: booleanType): Self = StObject.set(x, "RequireUppercaseCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireSymbols(value: booleanType): Self = this.set("RequireSymbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireSymbols: Self = this.set("RequireSymbols", js.undefined)
-    
-    @scala.inline
-    def setRequireUppercaseCharacters(value: booleanType): Self = this.set("RequireUppercaseCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireUppercaseCharacters: Self = this.set("RequireUppercaseCharacters", js.undefined)
+    def setRequireUppercaseCharactersUndefined: Self = StObject.set(x, "RequireUppercaseCharacters", js.undefined)
   }
 }

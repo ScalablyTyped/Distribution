@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartCondition extends js.Object {
+trait StartCondition extends StObject {
   
   /**
     * The custom description of the condition.
@@ -28,36 +29,24 @@ object StartCondition {
   }
   
   @scala.inline
-  implicit class StartConditionOps[Self <: StartCondition] (val x: Self) extends AnyVal {
+  implicit class StartConditionMutableBuilder[Self <: StartCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventStartCondition(value: EventStartCondition): Self = StObject.set(x, "EventStartCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEventStartConditionUndefined: Self = StObject.set(x, "EventStartCondition", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSegmentStartCondition(value: SegmentCondition): Self = StObject.set(x, "SegmentStartCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventStartCondition(value: EventStartCondition): Self = this.set("EventStartCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventStartCondition: Self = this.set("EventStartCondition", js.undefined)
-    
-    @scala.inline
-    def setSegmentStartCondition(value: SegmentCondition): Self = this.set("SegmentStartCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentStartCondition: Self = this.set("SegmentStartCondition", js.undefined)
+    def setSegmentStartConditionUndefined: Self = StObject.set(x, "SegmentStartCondition", js.undefined)
   }
 }

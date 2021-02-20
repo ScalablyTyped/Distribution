@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentCommand extends js.Object {
+trait DeploymentCommand extends StObject {
   
   /**
     * The arguments of those commands that take arguments. It should be set to a JSON object with the following format:  {"arg_name1" : ["value1", "value2", ...], "arg_name2" : ["value1", "value2", ...], ...}  The update_dependencies command takes two arguments:    upgrade_os_to - Specifies the desired Amazon Linux version for instances whose OS you want to upgrade, such as Amazon Linux 2016.09. You must also set the allow_reboot argument to true.    allow_reboot - Specifies whether to allow AWS OpsWorks Stacks to reboot the instances if necessary, after installing the updates. This argument can be set to either true or false. The default value is false.   For example, to upgrade an instance to Amazon Linux 2016.09, set Args to the following.   { "upgrade_os_to":["Amazon Linux 2016.09"], "allow_reboot":["true"] }  
@@ -26,27 +27,15 @@ object DeploymentCommand {
   }
   
   @scala.inline
-  implicit class DeploymentCommandOps[Self <: DeploymentCommand] (val x: Self) extends AnyVal {
+  implicit class DeploymentCommandMutableBuilder[Self <: DeploymentCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: DeploymentCommandArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: DeploymentCommandName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArgs(value: DeploymentCommandArgs): Self = this.set("Args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArgs: Self = this.set("Args", js.undefined)
+    def setName(value: DeploymentCommandName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

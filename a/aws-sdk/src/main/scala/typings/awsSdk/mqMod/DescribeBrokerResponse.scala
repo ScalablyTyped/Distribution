@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeBrokerResponse extends js.Object {
+trait DescribeBrokerResponse extends StObject {
   
   /**
     * The authentication strategy used to secure the broker.
@@ -156,201 +157,189 @@ object DescribeBrokerResponse {
   }
   
   @scala.inline
-  implicit class DescribeBrokerResponseOps[Self <: DescribeBrokerResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeBrokerResponseMutableBuilder[Self <: DescribeBrokerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "AuthenticationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationStrategyUndefined: Self = StObject.set(x, "AuthenticationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMinorVersionUpgrade(value: boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = this.set("AuthenticationStrategy", value.asInstanceOf[js.Any])
+    def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationStrategy: Self = this.set("AuthenticationStrategy", js.undefined)
+    def setBrokerArn(value: string): Self = StObject.set(x, "BrokerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMinorVersionUpgrade(value: boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    def setBrokerArnUndefined: Self = StObject.set(x, "BrokerArn", js.undefined)
     
     @scala.inline
-    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerArn(value: string): Self = this.set("BrokerArn", value.asInstanceOf[js.Any])
+    def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
     
     @scala.inline
-    def deleteBrokerArn: Self = this.set("BrokerArn", js.undefined)
+    def setBrokerInstances(value: listOfBrokerInstance): Self = StObject.set(x, "BrokerInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    def setBrokerInstancesUndefined: Self = StObject.set(x, "BrokerInstances", js.undefined)
     
     @scala.inline
-    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    def setBrokerInstancesVarargs(value: BrokerInstance*): Self = StObject.set(x, "BrokerInstances", js.Array(value :_*))
     
     @scala.inline
-    def setBrokerInstancesVarargs(value: BrokerInstance*): Self = this.set("BrokerInstances", js.Array(value :_*))
+    def setBrokerName(value: string): Self = StObject.set(x, "BrokerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerInstances(value: listOfBrokerInstance): Self = this.set("BrokerInstances", value.asInstanceOf[js.Any])
+    def setBrokerNameUndefined: Self = StObject.set(x, "BrokerName", js.undefined)
     
     @scala.inline
-    def deleteBrokerInstances: Self = this.set("BrokerInstances", js.undefined)
+    def setBrokerState(value: BrokerState): Self = StObject.set(x, "BrokerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerName(value: string): Self = this.set("BrokerName", value.asInstanceOf[js.Any])
+    def setBrokerStateUndefined: Self = StObject.set(x, "BrokerState", js.undefined)
     
     @scala.inline
-    def deleteBrokerName: Self = this.set("BrokerName", js.undefined)
+    def setConfigurations(value: Configurations): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerState(value: BrokerState): Self = this.set("BrokerState", value.asInstanceOf[js.Any])
+    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
     @scala.inline
-    def deleteBrokerState: Self = this.set("BrokerState", js.undefined)
+    def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurations(value: Configurations): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
     @scala.inline
-    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    def setDeploymentMode(value: DeploymentMode): Self = StObject.set(x, "DeploymentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: timestampIso8601): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setDeploymentModeUndefined: Self = StObject.set(x, "DeploymentMode", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("Created", js.undefined)
+    def setEncryptionOptions(value: EncryptionOptions): Self = StObject.set(x, "EncryptionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentMode(value: DeploymentMode): Self = this.set("DeploymentMode", value.asInstanceOf[js.Any])
+    def setEncryptionOptionsUndefined: Self = StObject.set(x, "EncryptionOptions", js.undefined)
     
     @scala.inline
-    def deleteDeploymentMode: Self = this.set("DeploymentMode", js.undefined)
+    def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionOptions(value: EncryptionOptions): Self = this.set("EncryptionOptions", value.asInstanceOf[js.Any])
+    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
     @scala.inline
-    def deleteEncryptionOptions: Self = this.set("EncryptionOptions", js.undefined)
+    def setEngineVersion(value: string): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineType(value: EngineType): Self = this.set("EngineType", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngineType: Self = this.set("EngineType", js.undefined)
+    def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: string): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setLdapServerMetadata(value: LdapServerMetadataOutput): Self = StObject.set(x, "LdapServerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    def setLdapServerMetadataUndefined: Self = StObject.set(x, "LdapServerMetadata", js.undefined)
     
     @scala.inline
-    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    def setLogs(value: LogsSummary): Self = StObject.set(x, "Logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLdapServerMetadata(value: LdapServerMetadataOutput): Self = this.set("LdapServerMetadata", value.asInstanceOf[js.Any])
+    def setLogsUndefined: Self = StObject.set(x, "Logs", js.undefined)
     
     @scala.inline
-    def deleteLdapServerMetadata: Self = this.set("LdapServerMetadata", js.undefined)
+    def setMaintenanceWindowStartTime(value: WeeklyStartTime): Self = StObject.set(x, "MaintenanceWindowStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: LogsSummary): Self = this.set("Logs", value.asInstanceOf[js.Any])
+    def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "MaintenanceWindowStartTime", js.undefined)
     
     @scala.inline
-    def deleteLogs: Self = this.set("Logs", js.undefined)
+    def setPendingAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "PendingAuthenticationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceWindowStartTime(value: WeeklyStartTime): Self = this.set("MaintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    def setPendingAuthenticationStrategyUndefined: Self = StObject.set(x, "PendingAuthenticationStrategy", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceWindowStartTime: Self = this.set("MaintenanceWindowStartTime", js.undefined)
+    def setPendingEngineVersion(value: string): Self = StObject.set(x, "PendingEngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingAuthenticationStrategy(value: AuthenticationStrategy): Self = this.set("PendingAuthenticationStrategy", value.asInstanceOf[js.Any])
+    def setPendingEngineVersionUndefined: Self = StObject.set(x, "PendingEngineVersion", js.undefined)
     
     @scala.inline
-    def deletePendingAuthenticationStrategy: Self = this.set("PendingAuthenticationStrategy", js.undefined)
+    def setPendingHostInstanceType(value: string): Self = StObject.set(x, "PendingHostInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingEngineVersion(value: string): Self = this.set("PendingEngineVersion", value.asInstanceOf[js.Any])
+    def setPendingHostInstanceTypeUndefined: Self = StObject.set(x, "PendingHostInstanceType", js.undefined)
     
     @scala.inline
-    def deletePendingEngineVersion: Self = this.set("PendingEngineVersion", js.undefined)
+    def setPendingLdapServerMetadata(value: LdapServerMetadataOutput): Self = StObject.set(x, "PendingLdapServerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingHostInstanceType(value: string): Self = this.set("PendingHostInstanceType", value.asInstanceOf[js.Any])
+    def setPendingLdapServerMetadataUndefined: Self = StObject.set(x, "PendingLdapServerMetadata", js.undefined)
     
     @scala.inline
-    def deletePendingHostInstanceType: Self = this.set("PendingHostInstanceType", js.undefined)
+    def setPendingSecurityGroups(value: listOfString): Self = StObject.set(x, "PendingSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingLdapServerMetadata(value: LdapServerMetadataOutput): Self = this.set("PendingLdapServerMetadata", value.asInstanceOf[js.Any])
+    def setPendingSecurityGroupsUndefined: Self = StObject.set(x, "PendingSecurityGroups", js.undefined)
     
     @scala.inline
-    def deletePendingLdapServerMetadata: Self = this.set("PendingLdapServerMetadata", js.undefined)
+    def setPendingSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "PendingSecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setPendingSecurityGroupsVarargs(value: string*): Self = this.set("PendingSecurityGroups", js.Array(value :_*))
+    def setPubliclyAccessible(value: boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingSecurityGroups(value: listOfString): Self = this.set("PendingSecurityGroups", value.asInstanceOf[js.Any])
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
     
     @scala.inline
-    def deletePendingSecurityGroups: Self = this.set("PendingSecurityGroups", js.undefined)
+    def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyAccessible(value: boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: string*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    def setStorageType(value: BrokerStorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: listOfString): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setSubnetIds(value: listOfString): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageType(value: BrokerStorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
     @scala.inline
-    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetIdsVarargs(value: string*): Self = this.set("SubnetIds", js.Array(value :_*))
+    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetIds(value: listOfString): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    def setUsers(value: listOfUserSummary): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setUsersVarargs(value: UserSummary*): Self = this.set("Users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: listOfUserSummary): Self = this.set("Users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("Users", js.undefined)
+    def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

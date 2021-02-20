@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.document.HeaderFooterSettings
 import typings.activexLibreoffice.com_.sun.star.document.Settings
 import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,39 +103,27 @@ object DocumentSettings {
   }
   
   @scala.inline
-  implicit class DocumentSettingsOps[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+  implicit class DocumentSettingsMutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsPrintFitPage(value: Boolean): Self = StObject.set(x, "IsPrintFitPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPrintTilePage(value: Boolean): Self = StObject.set(x, "IsPrintTilePage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasureUnit(value: Double): Self = StObject.set(x, "MeasureUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrintFitPage(value: Boolean): Self = this.set("IsPrintFitPage", value.asInstanceOf[js.Any])
+    def setPageNumberFormat(value: Double): Self = StObject.set(x, "PageNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrintTilePage(value: Boolean): Self = this.set("IsPrintTilePage", value.asInstanceOf[js.Any])
+    def setParagraphSummation(value: Boolean): Self = StObject.set(x, "ParagraphSummation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureUnit(value: Double): Self = this.set("MeasureUnit", value.asInstanceOf[js.Any])
+    def setScaleDenominator(value: Double): Self = StObject.set(x, "ScaleDenominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumberFormat(value: Double): Self = this.set("PageNumberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParagraphSummation(value: Boolean): Self = this.set("ParagraphSummation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleDenominator(value: Double): Self = this.set("ScaleDenominator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleNumerator(value: Double): Self = this.set("ScaleNumerator", value.asInstanceOf[js.Any])
+    def setScaleNumerator(value: Double): Self = StObject.set(x, "ScaleNumerator", value.asInstanceOf[js.Any])
   }
 }

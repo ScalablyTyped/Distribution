@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceAction extends js.Object {
+trait SalesforceAction extends StObject {
   
   /**
     * The token used to authenticate access to the Salesforce IoT Cloud Input Stream. The token is available from the Salesforce IoT Cloud platform after creation of the Input Stream.
@@ -26,24 +27,12 @@ object SalesforceAction {
   }
   
   @scala.inline
-  implicit class SalesforceActionOps[Self <: SalesforceAction] (val x: Self) extends AnyVal {
+  implicit class SalesforceActionMutableBuilder[Self <: SalesforceAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToken(value: SalesforceToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToken(value: SalesforceToken): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: SalesforceEndpoint): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: SalesforceEndpoint): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

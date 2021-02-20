@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISharedLinkPublicOperations extends js.Object {
+trait ISharedLinkPublicOperations extends StObject {
   
   def DownloadSharedFileInBlocks_Begin(VaultGUID: String, AccessKey: String, AdditionalData: INamedValues): IFileDownloadSession = js.native
   
@@ -32,33 +33,21 @@ object ISharedLinkPublicOperations {
   }
   
   @scala.inline
-  implicit class ISharedLinkPublicOperationsOps[Self <: ISharedLinkPublicOperations] (val x: Self) extends AnyVal {
+  implicit class ISharedLinkPublicOperationsMutableBuilder[Self <: ISharedLinkPublicOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadSharedFileInBlocks_Begin(value: (String, String, INamedValues) => IFileDownloadSession): Self = StObject.set(x, "DownloadSharedFileInBlocks_Begin", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadSharedFileInBlocks_Begin_32bit(value: (String, String, INamedValues) => IFileDownloadSession): Self = StObject.set(x, "DownloadSharedFileInBlocks_Begin_32bit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadSharedFileInBlocks_ReadBlock(value: (String, String, Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadSharedFileInBlocks_ReadBlock", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setDownloadSharedFileInBlocks_Begin(value: (String, String, INamedValues) => IFileDownloadSession): Self = this.set("DownloadSharedFileInBlocks_Begin", js.Any.fromFunction3(value))
+    def setDownloadSharedFileInBlocks_ReadBlock_32bit(value: (String, String, Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadSharedFileInBlocks_ReadBlock_32bit", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setDownloadSharedFileInBlocks_Begin_32bit(value: (String, String, INamedValues) => IFileDownloadSession): Self = this.set("DownloadSharedFileInBlocks_Begin_32bit", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setDownloadSharedFileInBlocks_ReadBlock(value: (String, String, Double, Double, Double) => js.Array[Double]): Self = this.set("DownloadSharedFileInBlocks_ReadBlock", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setDownloadSharedFileInBlocks_ReadBlock_32bit(value: (String, String, Double, Double, Double) => js.Array[Double]): Self = this.set("DownloadSharedFileInBlocks_ReadBlock_32bit", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setGetSharedLinkInfo(value: (String, String, INamedValues) => ISharedFileInfo): Self = this.set("GetSharedLinkInfo", js.Any.fromFunction3(value))
+    def setGetSharedLinkInfo(value: (String, String, INamedValues) => ISharedFileInfo): Self = StObject.set(x, "GetSharedLinkInfo", js.Any.fromFunction3(value))
   }
 }

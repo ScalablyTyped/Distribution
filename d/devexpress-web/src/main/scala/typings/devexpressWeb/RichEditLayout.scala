@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains members related to the document's layout functionality.
   */
 @js.native
-trait RichEditLayout extends js.Object {
+trait RichEditLayout extends StObject {
   
   /**
     * Returns bounds of the specified document model's position. The object that contains position bounds.

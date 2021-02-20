@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the caret type. */
 @JSGlobal("Windows.UI.Text.CaretType")
 @js.native
-object CaretType extends js.Object {
+object CaretType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.CaretType with Double] = js.native

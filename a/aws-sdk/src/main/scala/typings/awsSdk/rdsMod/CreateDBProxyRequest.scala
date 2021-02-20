@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDBProxyRequest extends js.Object {
+trait CreateDBProxyRequest extends StObject {
   
   /**
     * The authorization mechanism that the proxy uses.
@@ -72,75 +73,63 @@ object CreateDBProxyRequest {
   }
   
   @scala.inline
-  implicit class CreateDBProxyRequestOps[Self <: CreateDBProxyRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDBProxyRequestMutableBuilder[Self <: CreateDBProxyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: UserAuthConfigList): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthVarargs(value: UserAuthConfig*): Self = StObject.set(x, "Auth", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthVarargs(value: UserAuthConfig*): Self = this.set("Auth", js.Array(value :_*))
+    def setDebugLogging(value: Boolean): Self = StObject.set(x, "DebugLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: UserAuthConfigList): Self = this.set("Auth", value.asInstanceOf[js.Any])
+    def setDebugLoggingUndefined: Self = StObject.set(x, "DebugLogging", js.undefined)
     
     @scala.inline
-    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    def setEngineFamily(value: EngineFamily): Self = StObject.set(x, "EngineFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineFamily(value: EngineFamily): Self = this.set("EngineFamily", value.asInstanceOf[js.Any])
+    def setIdleClientTimeout(value: IntegerOptional): Self = StObject.set(x, "IdleClientTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setIdleClientTimeoutUndefined: Self = StObject.set(x, "IdleClientTimeout", js.undefined)
     
     @scala.inline
-    def setVpcSubnetIdsVarargs(value: String*): Self = this.set("VpcSubnetIds", js.Array(value :_*))
+    def setRequireTLS(value: Boolean): Self = StObject.set(x, "RequireTLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcSubnetIds(value: StringList): Self = this.set("VpcSubnetIds", value.asInstanceOf[js.Any])
+    def setRequireTLSUndefined: Self = StObject.set(x, "RequireTLS", js.undefined)
     
     @scala.inline
-    def setDebugLogging(value: Boolean): Self = this.set("DebugLogging", value.asInstanceOf[js.Any])
+    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebugLogging: Self = this.set("DebugLogging", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleClientTimeout(value: IntegerOptional): Self = this.set("IdleClientTimeout", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteIdleClientTimeout: Self = this.set("IdleClientTimeout", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setRequireTLS(value: Boolean): Self = this.set("RequireTLS", value.asInstanceOf[js.Any])
+    def setVpcSecurityGroupIds(value: StringList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequireTLS: Self = this.set("RequireTLS", js.undefined)
+    def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVpcSubnetIds(value: StringList): Self = StObject.set(x, "VpcSubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcSecurityGroupIdsVarargs(value: String*): Self = this.set("VpcSecurityGroupIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcSecurityGroupIds(value: StringList): Self = this.set("VpcSecurityGroupIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSecurityGroupIds: Self = this.set("VpcSecurityGroupIds", js.undefined)
+    def setVpcSubnetIdsVarargs(value: String*): Self = StObject.set(x, "VpcSubnetIds", js.Array(value :_*))
   }
 }

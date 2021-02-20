@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotConfiguratorMessages extends js.Object {
+trait PivotConfiguratorMessages extends StObject {
   
   var columns: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object PivotConfiguratorMessages {
   }
   
   @scala.inline
-  implicit class PivotConfiguratorMessagesOps[Self <: PivotConfiguratorMessages] (val x: Self) extends AnyVal {
+  implicit class PivotConfiguratorMessagesMutableBuilder[Self <: PivotConfiguratorMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsLabel(value: String): Self = StObject.set(x, "columnsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsLabelUndefined: Self = StObject.set(x, "columnsLabel", js.undefined)
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFieldMenu(value: PivotConfiguratorMessagesFieldMenu): Self = StObject.set(x, "fieldMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsLabel(value: String): Self = this.set("columnsLabel", value.asInstanceOf[js.Any])
+    def setFieldMenuUndefined: Self = StObject.set(x, "fieldMenu", js.undefined)
     
     @scala.inline
-    def deleteColumnsLabel: Self = this.set("columnsLabel", js.undefined)
+    def setFieldsLabel(value: String): Self = StObject.set(x, "fieldsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMenu(value: PivotConfiguratorMessagesFieldMenu): Self = this.set("fieldMenu", value.asInstanceOf[js.Any])
+    def setFieldsLabelUndefined: Self = StObject.set(x, "fieldsLabel", js.undefined)
     
     @scala.inline
-    def deleteFieldMenu: Self = this.set("fieldMenu", js.undefined)
+    def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsLabel(value: String): Self = this.set("fieldsLabel", value.asInstanceOf[js.Any])
+    def setMeasuresLabel(value: String): Self = StObject.set(x, "measuresLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldsLabel: Self = this.set("fieldsLabel", js.undefined)
+    def setMeasuresLabelUndefined: Self = StObject.set(x, "measuresLabel", js.undefined)
     
     @scala.inline
-    def setMeasures(value: String): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasuresLabel(value: String): Self = this.set("measuresLabel", value.asInstanceOf[js.Any])
+    def setRowsLabel(value: String): Self = StObject.set(x, "rowsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeasuresLabel: Self = this.set("measuresLabel", js.undefined)
+    def setRowsLabelUndefined: Self = StObject.set(x, "rowsLabel", js.undefined)
     
     @scala.inline
-    def setRows(value: String): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setRowsLabel(value: String): Self = this.set("rowsLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsLabel: Self = this.set("rowsLabel", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

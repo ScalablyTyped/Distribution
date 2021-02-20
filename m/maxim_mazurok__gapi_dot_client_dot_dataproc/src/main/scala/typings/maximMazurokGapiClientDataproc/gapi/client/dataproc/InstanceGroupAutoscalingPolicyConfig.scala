@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupAutoscalingPolicyConfig extends js.Object {
+trait InstanceGroupAutoscalingPolicyConfig extends StObject {
   
   /**
     * Required. Maximum number of instances for this group. Required for primary workers. Note that by default, clusters will not use secondary workers. Required for secondary workers if
@@ -35,36 +36,24 @@ object InstanceGroupAutoscalingPolicyConfig {
   }
   
   @scala.inline
-  implicit class InstanceGroupAutoscalingPolicyConfigOps[Self <: InstanceGroupAutoscalingPolicyConfig] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupAutoscalingPolicyConfigMutableBuilder[Self <: InstanceGroupAutoscalingPolicyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinInstances(value: Double): Self = StObject.set(x, "minInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    def setMinInstancesUndefined: Self = StObject.set(x, "minInstances", js.undefined)
     
     @scala.inline
-    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinInstances(value: Double): Self = this.set("minInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinInstances: Self = this.set("minInstances", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

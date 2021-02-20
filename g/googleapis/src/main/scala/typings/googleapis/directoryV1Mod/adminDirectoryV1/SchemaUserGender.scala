@@ -1,11 +1,12 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUserGender extends js.Object {
+trait SchemaUserGender extends StObject {
   
   /**
     * AddressMeAs. A human-readable string containing the proper way to refer
@@ -33,36 +34,24 @@ object SchemaUserGender {
   }
   
   @scala.inline
-  implicit class SchemaUserGenderOps[Self <: SchemaUserGender] (val x: Self) extends AnyVal {
+  implicit class SchemaUserGenderMutableBuilder[Self <: SchemaUserGender] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressMeAs(value: String): Self = StObject.set(x, "addressMeAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressMeAsUndefined: Self = StObject.set(x, "addressMeAs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomGender(value: String): Self = StObject.set(x, "customGender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressMeAs(value: String): Self = this.set("addressMeAs", value.asInstanceOf[js.Any])
+    def setCustomGenderUndefined: Self = StObject.set(x, "customGender", js.undefined)
     
     @scala.inline
-    def deleteAddressMeAs: Self = this.set("addressMeAs", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomGender(value: String): Self = this.set("customGender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomGender: Self = this.set("customGender", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Loader.FileTypes
 
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BitmapFontFileConfig extends js.Object {
+trait BitmapFontFileConfig extends StObject {
   
   /**
     * The default file extension to use for the font data xml if no url is provided.
@@ -57,63 +58,51 @@ object BitmapFontFileConfig {
   }
   
   @scala.inline
-  implicit class BitmapFontFileConfigOps[Self <: BitmapFontFileConfig] (val x: Self) extends AnyVal {
+  implicit class BitmapFontFileConfigMutableBuilder[Self <: BitmapFontFileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontDataExtension(value: String): Self = StObject.set(x, "fontDataExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontDataExtensionUndefined: Self = StObject.set(x, "fontDataExtension", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontDataURL(value: String): Self = StObject.set(x, "fontDataURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setFontDataURLUndefined: Self = StObject.set(x, "fontDataURL", js.undefined)
     
     @scala.inline
-    def setFontDataExtension(value: String): Self = this.set("fontDataExtension", value.asInstanceOf[js.Any])
+    def setFontDataXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "fontDataXhrSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontDataExtension: Self = this.set("fontDataExtension", js.undefined)
+    def setFontDataXhrSettingsUndefined: Self = StObject.set(x, "fontDataXhrSettings", js.undefined)
     
     @scala.inline
-    def setFontDataURL(value: String): Self = this.set("fontDataURL", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontDataURL: Self = this.set("fontDataURL", js.undefined)
+    def setNormalMap(value: String): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDataXhrSettings(value: XHRSettingsObject): Self = this.set("fontDataXhrSettings", value.asInstanceOf[js.Any])
+    def setNormalMapUndefined: Self = StObject.set(x, "normalMap", js.undefined)
     
     @scala.inline
-    def deleteFontDataXhrSettings: Self = this.set("fontDataXhrSettings", js.undefined)
+    def setTextureExtension(value: String): Self = StObject.set(x, "textureExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalMap(value: String): Self = this.set("normalMap", value.asInstanceOf[js.Any])
+    def setTextureExtensionUndefined: Self = StObject.set(x, "textureExtension", js.undefined)
     
     @scala.inline
-    def deleteNormalMap: Self = this.set("normalMap", js.undefined)
+    def setTextureURL(value: String): Self = StObject.set(x, "textureURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureExtension(value: String): Self = this.set("textureExtension", value.asInstanceOf[js.Any])
+    def setTextureURLUndefined: Self = StObject.set(x, "textureURL", js.undefined)
     
     @scala.inline
-    def deleteTextureExtension: Self = this.set("textureExtension", js.undefined)
+    def setTextureXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "textureXhrSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureURL(value: String): Self = this.set("textureURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextureURL: Self = this.set("textureURL", js.undefined)
-    
-    @scala.inline
-    def setTextureXhrSettings(value: XHRSettingsObject): Self = this.set("textureXhrSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextureXhrSettings: Self = this.set("textureXhrSettings", js.undefined)
+    def setTextureXhrSettingsUndefined: Self = StObject.set(x, "textureXhrSettings", js.undefined)
   }
 }

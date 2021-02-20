@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitySelf extends js.Object {
+trait IdentitySelf extends StObject {
   
   var accountName: String = js.native
   
@@ -24,33 +25,21 @@ object IdentitySelf {
   }
   
   @scala.inline
-  implicit class IdentitySelfOps[Self <: IdentitySelf] (val x: Self) extends AnyVal {
+  implicit class IdentitySelfMutableBuilder[Self <: IdentitySelf] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setTenants(value: js.Array[TenantInfo]): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTenantsVarargs(value: TenantInfo*): Self = this.set("tenants", js.Array(value :_*))
-    
-    @scala.inline
-    def setTenants(value: js.Array[TenantInfo]): Self = this.set("tenants", value.asInstanceOf[js.Any])
+    def setTenantsVarargs(value: TenantInfo*): Self = StObject.set(x, "tenants", js.Array(value :_*))
   }
 }

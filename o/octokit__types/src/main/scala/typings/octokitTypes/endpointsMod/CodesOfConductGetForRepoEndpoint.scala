@@ -1,13 +1,14 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  owner :string,   repo :string} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'scarlet-witch'> */
 @js.native
-trait CodesOfConductGetForRepoEndpoint extends js.Object {
+trait CodesOfConductGetForRepoEndpoint extends StObject {
   
   var mediaType: `3` = js.native
   
@@ -24,27 +25,15 @@ object CodesOfConductGetForRepoEndpoint {
   }
   
   @scala.inline
-  implicit class CodesOfConductGetForRepoEndpointOps[Self <: CodesOfConductGetForRepoEndpoint] (val x: Self) extends AnyVal {
+  implicit class CodesOfConductGetForRepoEndpointMutableBuilder[Self <: CodesOfConductGetForRepoEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: `3`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMediaType(value: `3`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

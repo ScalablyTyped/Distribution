@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.TSExternalModuleReferenceKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.namedTypesMod.namedTypes.TSImportEqualsDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSImportEqualsDeclarationBuilder extends js.Object {
+trait TSImportEqualsDeclarationBuilder extends StObject {
   
   def apply(id: IdentifierKind, moduleReference: IdentifierKind): TSImportEqualsDeclaration = js.native
   def apply(id: IdentifierKind, moduleReference: TSExternalModuleReferenceKind): TSImportEqualsDeclaration = js.native

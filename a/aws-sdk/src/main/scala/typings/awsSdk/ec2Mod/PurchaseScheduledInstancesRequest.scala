@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PurchaseScheduledInstancesRequest extends js.Object {
+trait PurchaseScheduledInstancesRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that ensures the idempotency of the request. For more information, see Ensuring Idempotency.
@@ -31,36 +32,24 @@ object PurchaseScheduledInstancesRequest {
   }
   
   @scala.inline
-  implicit class PurchaseScheduledInstancesRequestOps[Self <: PurchaseScheduledInstancesRequest] (val x: Self) extends AnyVal {
+  implicit class PurchaseScheduledInstancesRequestMutableBuilder[Self <: PurchaseScheduledInstancesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseRequestsVarargs(value: PurchaseRequest*): Self = this.set("PurchaseRequests", js.Array(value :_*))
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setPurchaseRequests(value: PurchaseRequestSet): Self = this.set("PurchaseRequests", value.asInstanceOf[js.Any])
+    def setPurchaseRequests(value: PurchaseRequestSet): Self = StObject.set(x, "PurchaseRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPurchaseRequestsVarargs(value: PurchaseRequest*): Self = StObject.set(x, "PurchaseRequests", js.Array(value :_*))
   }
 }

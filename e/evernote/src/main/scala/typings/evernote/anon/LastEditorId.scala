@@ -2,12 +2,13 @@ package typings.evernote.anon
 
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LastEditorId extends js.Object {
+trait LastEditorId extends StObject {
   
   var lastEditorId: js.UndefOr[UserID] = js.native
   
@@ -28,48 +29,36 @@ object LastEditorId {
   }
   
   @scala.inline
-  implicit class LastEditorIdOps[Self <: LastEditorId] (val x: Self) extends AnyVal {
+  implicit class LastEditorIdMutableBuilder[Self <: LastEditorId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastEditorId(value: UserID): Self = StObject.set(x, "lastEditorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastEditorIdUndefined: Self = StObject.set(x, "lastEditorId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSaved(value: Timestamp): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEditorId(value: UserID): Self = this.set("lastEditorId", value.asInstanceOf[js.Any])
+    def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
     
     @scala.inline
-    def deleteLastEditorId: Self = this.set("lastEditorId", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaved(value: Timestamp): Self = this.set("saved", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSaved: Self = this.set("saved", js.undefined)
+    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = this.set("updateSequenceNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSequenceNum: Self = this.set("updateSequenceNum", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

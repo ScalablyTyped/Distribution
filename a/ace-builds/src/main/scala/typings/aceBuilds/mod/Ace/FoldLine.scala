@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoldLine extends js.Object {
+trait FoldLine extends StObject {
   
   def addFold(fold: Fold): Unit = js.native
   

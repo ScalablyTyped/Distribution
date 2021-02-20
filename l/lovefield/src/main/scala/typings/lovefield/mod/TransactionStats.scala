@@ -1,11 +1,12 @@
 package typings.lovefield.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionStats extends js.Object {
+trait TransactionStats extends StObject {
   
   def changedTableCount(): Double = js.native
   
@@ -32,33 +33,21 @@ object TransactionStats {
   }
   
   @scala.inline
-  implicit class TransactionStatsOps[Self <: TransactionStats] (val x: Self) extends AnyVal {
+  implicit class TransactionStatsMutableBuilder[Self <: TransactionStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedTableCount(value: () => Double): Self = StObject.set(x, "changedTableCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedRowCount(value: () => Double): Self = StObject.set(x, "deletedRowCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertedRowCount(value: () => Double): Self = StObject.set(x, "insertedRowCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangedTableCount(value: () => Double): Self = this.set("changedTableCount", js.Any.fromFunction0(value))
+    def setSuccess(value: () => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeletedRowCount(value: () => Double): Self = this.set("deletedRowCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInsertedRowCount(value: () => Double): Self = this.set("insertedRowCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSuccess(value: () => Boolean): Self = this.set("success", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdatedRowCount(value: () => Double): Self = this.set("updatedRowCount", js.Any.fromFunction0(value))
+    def setUpdatedRowCount(value: () => Double): Self = StObject.set(x, "updatedRowCount", js.Any.fromFunction0(value))
   }
 }

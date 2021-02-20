@@ -3,12 +3,13 @@ package typings.socketclusterClient.clientsocketMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.socketclusterClient.authMod.AGAuthEngine
 import typings.socketclusterServer.serverMod.CodecEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientOptions extends js.Object {
+trait ClientOptions extends StObject {
   
   // (milliseconds) - This is the timeout for getting a response to a AGClientSocket invoke action.
   var ackTimeout: js.UndefOr[Double] = js.native
@@ -127,234 +128,222 @@ object ClientOptions {
   }
   
   @scala.inline
-  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthEngine(value: AGAuthEngine): Self = StObject.set(x, "authEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckTimeout(value: Double): Self = this.set("ackTimeout", value.asInstanceOf[js.Any])
+    def setAuthEngineNull: Self = StObject.set(x, "authEngine", null)
     
     @scala.inline
-    def deleteAckTimeout: Self = this.set("ackTimeout", js.undefined)
+    def setAuthEngineUndefined: Self = StObject.set(x, "authEngine", js.undefined)
     
     @scala.inline
-    def setAuthEngine(value: AGAuthEngine): Self = this.set("authEngine", value.asInstanceOf[js.Any])
+    def setAuthTokenName(value: String): Self = StObject.set(x, "authTokenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthEngine: Self = this.set("authEngine", js.undefined)
+    def setAuthTokenNameUndefined: Self = StObject.set(x, "authTokenName", js.undefined)
     
     @scala.inline
-    def setAuthEngineNull: Self = this.set("authEngine", null)
+    def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthTokenName(value: String): Self = this.set("authTokenName", value.asInstanceOf[js.Any])
+    def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
     
     @scala.inline
-    def deleteAuthTokenName: Self = this.set("authTokenName", js.undefined)
+    def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: Boolean): Self = this.set("autoConnect", value.asInstanceOf[js.Any])
+    def setAutoReconnectOptions(value: AutoReconnectOptions): Self = StObject.set(x, "autoReconnectOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoConnect: Self = this.set("autoConnect", js.undefined)
+    def setAutoReconnectOptionsUndefined: Self = StObject.set(x, "autoReconnectOptions", js.undefined)
     
     @scala.inline
-    def setAutoReconnect(value: Boolean): Self = this.set("autoReconnect", value.asInstanceOf[js.Any])
+    def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
     
     @scala.inline
-    def deleteAutoReconnect: Self = this.set("autoReconnect", js.undefined)
+    def setAutoSubscribeOnConnect(value: Boolean): Self = StObject.set(x, "autoSubscribeOnConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoReconnectOptions(value: AutoReconnectOptions): Self = this.set("autoReconnectOptions", value.asInstanceOf[js.Any])
+    def setAutoSubscribeOnConnectUndefined: Self = StObject.set(x, "autoSubscribeOnConnect", js.undefined)
     
     @scala.inline
-    def deleteAutoReconnectOptions: Self = this.set("autoReconnectOptions", js.undefined)
+    def setBatchInterval(value: Double): Self = StObject.set(x, "batchInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSubscribeOnConnect(value: Boolean): Self = this.set("autoSubscribeOnConnect", value.asInstanceOf[js.Any])
+    def setBatchIntervalUndefined: Self = StObject.set(x, "batchInterval", js.undefined)
     
     @scala.inline
-    def deleteAutoSubscribeOnConnect: Self = this.set("autoSubscribeOnConnect", js.undefined)
+    def setBatchOnHandshake(value: Boolean): Self = StObject.set(x, "batchOnHandshake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchInterval(value: Double): Self = this.set("batchInterval", value.asInstanceOf[js.Any])
+    def setBatchOnHandshakeDuration(value: Double): Self = StObject.set(x, "batchOnHandshakeDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchInterval: Self = this.set("batchInterval", js.undefined)
+    def setBatchOnHandshakeDurationUndefined: Self = StObject.set(x, "batchOnHandshakeDuration", js.undefined)
     
     @scala.inline
-    def setBatchOnHandshake(value: Boolean): Self = this.set("batchOnHandshake", value.asInstanceOf[js.Any])
+    def setBatchOnHandshakeUndefined: Self = StObject.set(x, "batchOnHandshake", js.undefined)
     
     @scala.inline
-    def deleteBatchOnHandshake: Self = this.set("batchOnHandshake", js.undefined)
+    def setBinaryType(value: String): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchOnHandshakeDuration(value: Double): Self = this.set("batchOnHandshakeDuration", value.asInstanceOf[js.Any])
+    def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
     
     @scala.inline
-    def deleteBatchOnHandshakeDuration: Self = this.set("batchOnHandshakeDuration", js.undefined)
+    def setCallIdGenerator(value: () => Double): Self = StObject.set(x, "callIdGenerator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBinaryType(value: String): Self = this.set("binaryType", value.asInstanceOf[js.Any])
+    def setCallIdGeneratorUndefined: Self = StObject.set(x, "callIdGenerator", js.undefined)
     
     @scala.inline
-    def deleteBinaryType: Self = this.set("binaryType", js.undefined)
+    def setChannelPrefix(value: String): Self = StObject.set(x, "channelPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallIdGenerator(value: () => Double): Self = this.set("callIdGenerator", js.Any.fromFunction0(value))
+    def setChannelPrefixNull: Self = StObject.set(x, "channelPrefix", null)
     
     @scala.inline
-    def deleteCallIdGenerator: Self = this.set("callIdGenerator", js.undefined)
+    def setChannelPrefixUndefined: Self = StObject.set(x, "channelPrefix", js.undefined)
     
     @scala.inline
-    def setChannelPrefix(value: String): Self = this.set("channelPrefix", value.asInstanceOf[js.Any])
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChannelPrefix: Self = this.set("channelPrefix", js.undefined)
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def setChannelPrefixNull: Self = this.set("channelPrefix", null)
+    def setCloneData(value: Boolean): Self = StObject.set(x, "cloneData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCloneDataUndefined: Self = StObject.set(x, "cloneData", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setCodecEngine(value: CodecEngine): Self = StObject.set(x, "codecEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneData(value: Boolean): Self = this.set("cloneData", value.asInstanceOf[js.Any])
+    def setCodecEngineNull: Self = StObject.set(x, "codecEngine", null)
     
     @scala.inline
-    def deleteCloneData: Self = this.set("cloneData", js.undefined)
+    def setCodecEngineUndefined: Self = StObject.set(x, "codecEngine", js.undefined)
     
     @scala.inline
-    def setCodecEngine(value: CodecEngine): Self = this.set("codecEngine", value.asInstanceOf[js.Any])
+    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodecEngine: Self = this.set("codecEngine", js.undefined)
+    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
     @scala.inline
-    def setCodecEngineNull: Self = this.set("codecEngine", null)
+    def setDisconnectOnUnload(value: Boolean): Self = StObject.set(x, "disconnectOnUnload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    def setDisconnectOnUnloadUndefined: Self = StObject.set(x, "disconnectOnUnload", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisconnectOnUnload(value: Boolean): Self = this.set("disconnectOnUnload", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDisconnectOnUnload: Self = this.set("disconnectOnUnload", js.undefined)
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPingTimeoutDisabled(value: Boolean): Self = StObject.set(x, "pingTimeoutDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPingTimeoutDisabledUndefined: Self = StObject.set(x, "pingTimeoutDisabled", js.undefined)
     
     @scala.inline
-    def setPingTimeout(value: Double): Self = this.set("pingTimeout", value.asInstanceOf[js.Any])
+    def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
     
     @scala.inline
-    def deletePingTimeout: Self = this.set("pingTimeout", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPingTimeoutDisabled(value: Boolean): Self = this.set("pingTimeoutDisabled", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePingTimeoutDisabled: Self = this.set("pingTimeoutDisabled", js.undefined)
+    def setProtocolScheme(value: String): Self = StObject.set(x, "protocolScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setProtocolSchemeUndefined: Self = StObject.set(x, "protocolScheme", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setProtocolVersion(value: ProtocolVersions): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolScheme(value: String): Self = this.set("protocolScheme", value.asInstanceOf[js.Any])
+    def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
     
     @scala.inline
-    def deleteProtocolScheme: Self = this.set("protocolScheme", js.undefined)
+    def setQuery(value: String | StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolVersion(value: ProtocolVersions): Self = this.set("protocolVersion", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteProtocolVersion: Self = this.set("protocolVersion", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String | StringDictionary[String]): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
     @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setSubscriptionRetryOptions(value: js.Object): Self = StObject.set(x, "subscriptionRetryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    def setSubscriptionRetryOptionsNull: Self = StObject.set(x, "subscriptionRetryOptions", null)
     
     @scala.inline
-    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    def setSubscriptionRetryOptionsUndefined: Self = StObject.set(x, "subscriptionRetryOptions", js.undefined)
     
     @scala.inline
-    def setSubscriptionRetryOptions(value: js.Object): Self = this.set("subscriptionRetryOptions", value.asInstanceOf[js.Any])
+    def setTimestampParam(value: String): Self = StObject.set(x, "timestampParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubscriptionRetryOptions: Self = this.set("subscriptionRetryOptions", js.undefined)
+    def setTimestampParamUndefined: Self = StObject.set(x, "timestampParam", js.undefined)
     
     @scala.inline
-    def setSubscriptionRetryOptionsNull: Self = this.set("subscriptionRetryOptions", null)
+    def setTimestampRequests(value: Boolean): Self = StObject.set(x, "timestampRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampParam(value: String): Self = this.set("timestampParam", value.asInstanceOf[js.Any])
+    def setTimestampRequestsUndefined: Self = StObject.set(x, "timestampRequests", js.undefined)
     
     @scala.inline
-    def deleteTimestampParam: Self = this.set("timestampParam", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampRequests(value: Boolean): Self = this.set("timestampRequests", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteTimestampRequests: Self = this.set("timestampRequests", js.undefined)
+    def setWsOptions(value: typings.ws.mod.ClientOptions): Self = StObject.set(x, "wsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setWsOptions(value: typings.ws.mod.ClientOptions): Self = this.set("wsOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWsOptions: Self = this.set("wsOptions", js.undefined)
+    def setWsOptionsUndefined: Self = StObject.set(x, "wsOptions", js.undefined)
   }
 }

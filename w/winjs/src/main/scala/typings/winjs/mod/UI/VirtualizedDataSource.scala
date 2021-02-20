@@ -1,6 +1,7 @@
 package typings.winjs.mod.UI
 
 import typings.winjs.WinJS.UI.IListDataAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,15 +23,21 @@ class VirtualizedDataSource[T] protected ()
   def this(listDataAdapter: IListDataAdapter[T]) = this()
   def this(listDataAdapter: IListDataAdapter[T], options: js.Any) = this()
 }
-/* static members */
-@JSImport("winjs", "UI.VirtualizedDataSource")
-@js.native
-object VirtualizedDataSource extends js.Object {
+object VirtualizedDataSource {
+  
+  @JSImport("winjs", "UI.VirtualizedDataSource")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#endregion Methods
   //#region Properties
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.VirtualizedDataSource.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

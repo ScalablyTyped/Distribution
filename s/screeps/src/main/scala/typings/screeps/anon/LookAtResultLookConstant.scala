@@ -19,13 +19,14 @@ import typings.screeps.Structure
 import typings.screeps.StructureConstant
 import typings.screeps.Terrain
 import typings.screeps.Tombstone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined screeps.LookAtResult<screeps.LookConstant> */
 @js.native
-trait LookAtResultLookConstant extends js.Object {
+trait LookAtResultLookConstant extends StObject {
   
   var constructionSite: js.UndefOr[ConstructionSite[BuildableStructureConstant]] = js.native
   
@@ -67,105 +68,93 @@ object LookAtResultLookConstant {
   }
   
   @scala.inline
-  implicit class LookAtResultLookConstantOps[Self <: LookAtResultLookConstant] (val x: Self) extends AnyVal {
+  implicit class LookAtResultLookConstantMutableBuilder[Self <: LookAtResultLookConstant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstructionSite(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "constructionSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstructionSiteUndefined: Self = StObject.set(x, "constructionSite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreep(value: Creep): Self = StObject.set(x, "creep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: LookConstant): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCreepUndefined: Self = StObject.set(x, "creep", js.undefined)
     
     @scala.inline
-    def setConstructionSite(value: ConstructionSite[BuildableStructureConstant]): Self = this.set("constructionSite", value.asInstanceOf[js.Any])
+    def setDeposit(value: Deposit): Self = StObject.set(x, "deposit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConstructionSite: Self = this.set("constructionSite", js.undefined)
+    def setDepositUndefined: Self = StObject.set(x, "deposit", js.undefined)
     
     @scala.inline
-    def setCreep(value: Creep): Self = this.set("creep", value.asInstanceOf[js.Any])
+    def setEnergy(value: Resource[RESOURCE_ENERGY]): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreep: Self = this.set("creep", js.undefined)
+    def setEnergyUndefined: Self = StObject.set(x, "energy", js.undefined)
     
     @scala.inline
-    def setDeposit(value: Deposit): Self = this.set("deposit", value.asInstanceOf[js.Any])
+    def setFlag(value: Flag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeposit: Self = this.set("deposit", js.undefined)
+    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
     @scala.inline
-    def setEnergy(value: Resource[RESOURCE_ENERGY]): Self = this.set("energy", value.asInstanceOf[js.Any])
+    def setMineral(value: Mineral[MineralConstant]): Self = StObject.set(x, "mineral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnergy: Self = this.set("energy", js.undefined)
+    def setMineralUndefined: Self = StObject.set(x, "mineral", js.undefined)
     
     @scala.inline
-    def setFlag(value: Flag): Self = this.set("flag", value.asInstanceOf[js.Any])
+    def setNuke(value: Nuke): Self = StObject.set(x, "nuke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlag: Self = this.set("flag", js.undefined)
+    def setNukeUndefined: Self = StObject.set(x, "nuke", js.undefined)
     
     @scala.inline
-    def setMineral(value: Mineral[MineralConstant]): Self = this.set("mineral", value.asInstanceOf[js.Any])
+    def setPowerCreep(value: PowerCreep): Self = StObject.set(x, "powerCreep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMineral: Self = this.set("mineral", js.undefined)
+    def setPowerCreepUndefined: Self = StObject.set(x, "powerCreep", js.undefined)
     
     @scala.inline
-    def setNuke(value: Nuke): Self = this.set("nuke", value.asInstanceOf[js.Any])
+    def setResource(value: Resource[ResourceConstant]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNuke: Self = this.set("nuke", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setPowerCreep(value: PowerCreep): Self = this.set("powerCreep", value.asInstanceOf[js.Any])
+    def setRuin(value: Ruin): Self = StObject.set(x, "ruin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePowerCreep: Self = this.set("powerCreep", js.undefined)
+    def setRuinUndefined: Self = StObject.set(x, "ruin", js.undefined)
     
     @scala.inline
-    def setResource(value: Resource[ResourceConstant]): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setRuin(value: Ruin): Self = this.set("ruin", value.asInstanceOf[js.Any])
+    def setStructure(value: Structure[StructureConstant]): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuin: Self = this.set("ruin", js.undefined)
+    def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
     @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTerrain(value: Terrain): Self = StObject.set(x, "terrain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setTerrainUndefined: Self = StObject.set(x, "terrain", js.undefined)
     
     @scala.inline
-    def setStructure(value: Structure[StructureConstant]): Self = this.set("structure", value.asInstanceOf[js.Any])
+    def setTombstone(value: Tombstone): Self = StObject.set(x, "tombstone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructure: Self = this.set("structure", js.undefined)
+    def setTombstoneUndefined: Self = StObject.set(x, "tombstone", js.undefined)
     
     @scala.inline
-    def setTerrain(value: Terrain): Self = this.set("terrain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerrain: Self = this.set("terrain", js.undefined)
-    
-    @scala.inline
-    def setTombstone(value: Tombstone): Self = this.set("tombstone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTombstone: Self = this.set("tombstone", js.undefined)
+    def setType(value: LookConstant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Events
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsScriptHttpRequestEvent extends js.Object {
+trait AppsScriptHttpRequestEvent extends StObject {
   
   var contentLength: Double = js.native
   
@@ -32,33 +33,21 @@ object AppsScriptHttpRequestEvent {
   }
   
   @scala.inline
-  implicit class AppsScriptHttpRequestEventOps[Self <: AppsScriptHttpRequestEvent] (val x: Self) extends AnyVal {
+  implicit class AppsScriptHttpRequestEventMutableBuilder[Self <: AppsScriptHttpRequestEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextPath(value: String): Self = StObject.set(x, "contextPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameter(value: js.Object): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLength(value: Double): Self = this.set("contentLength", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextPath(value: String): Self = this.set("contextPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameter(value: js.Object): Self = this.set("parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameters(value: js.Object): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryString(value: String): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }
 }

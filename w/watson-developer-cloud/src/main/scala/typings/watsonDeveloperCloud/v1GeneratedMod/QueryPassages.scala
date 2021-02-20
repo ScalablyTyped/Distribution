@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryPassages. */
 @js.native
-trait QueryPassages extends js.Object {
+trait QueryPassages extends StObject {
   
   /** The unique identifier of the document from which the passage has been extracted. */
   var document_id: js.UndefOr[String] = js.native
@@ -35,54 +36,42 @@ object QueryPassages {
   }
   
   @scala.inline
-  implicit class QueryPassagesOps[Self <: QueryPassages] (val x: Self) extends AnyVal {
+  implicit class QueryPassagesMutableBuilder[Self <: QueryPassages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_id(value: String): Self = this.set("document_id", value.asInstanceOf[js.Any])
+    def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
     
     @scala.inline
-    def deleteDocument_id: Self = this.set("document_id", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_offset(value: Double): Self = this.set("end_offset", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteEnd_offset: Self = this.set("end_offset", js.undefined)
+    def setPassage_score(value: Double): Self = StObject.set(x, "passage_score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setPassage_scoreUndefined: Self = StObject.set(x, "passage_score", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setPassage_text(value: String): Self = StObject.set(x, "passage_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassage_score(value: Double): Self = this.set("passage_score", value.asInstanceOf[js.Any])
+    def setPassage_textUndefined: Self = StObject.set(x, "passage_text", js.undefined)
     
     @scala.inline
-    def deletePassage_score: Self = this.set("passage_score", js.undefined)
+    def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassage_text(value: String): Self = this.set("passage_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassage_text: Self = this.set("passage_text", js.undefined)
-    
-    @scala.inline
-    def setStart_offset(value: Double): Self = this.set("start_offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_offset: Self = this.set("start_offset", js.undefined)
+    def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
   }
 }

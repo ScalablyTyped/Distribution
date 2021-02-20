@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaConfiguration extends js.Object {
+trait SchemaConfiguration extends StObject {
   
   /**
     * The ID of the AWS Glue Data Catalog. If you don't supply this, the AWS account ID is used by default.
@@ -46,54 +47,42 @@ object SchemaConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaConfigurationOps[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaConfigurationMutableBuilder[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseName(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogId(value: NonEmptyStringWithoutWhitespace): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    def setRegion(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: NonEmptyStringWithoutWhitespace): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setRoleARN(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: NonEmptyStringWithoutWhitespace): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setTableName(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: NonEmptyStringWithoutWhitespace): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setVersionId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: NonEmptyStringWithoutWhitespace): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: NonEmptyStringWithoutWhitespace): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

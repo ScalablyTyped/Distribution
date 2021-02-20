@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionic.ionicStrings.icon
   - typings.ionic.ionicStrings.splash
 */
-trait KnownResourceType extends js.Object
+trait KnownResourceType extends StObject
 object KnownResourceType {
   
   @scala.inline

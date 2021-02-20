@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityRecognizerInputDataConfig extends js.Object {
+trait EntityRecognizerInputDataConfig extends StObject {
   
   /**
     * The S3 location of the CSV file that annotates your training documents.
@@ -46,57 +47,45 @@ object EntityRecognizerInputDataConfig {
   }
   
   @scala.inline
-  implicit class EntityRecognizerInputDataConfigOps[Self <: EntityRecognizerInputDataConfig] (val x: Self) extends AnyVal {
+  implicit class EntityRecognizerInputDataConfigMutableBuilder[Self <: EntityRecognizerInputDataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: EntityRecognizerAnnotations): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAugmentedManifests(value: EntityRecognizerAugmentedManifestsList): Self = StObject.set(x, "AugmentedManifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypesVarargs(value: EntityTypesListItem*): Self = this.set("EntityTypes", js.Array(value :_*))
+    def setAugmentedManifestsUndefined: Self = StObject.set(x, "AugmentedManifests", js.undefined)
     
     @scala.inline
-    def setEntityTypes(value: EntityTypesList): Self = this.set("EntityTypes", value.asInstanceOf[js.Any])
+    def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotations(value: EntityRecognizerAnnotations): Self = this.set("Annotations", value.asInstanceOf[js.Any])
+    def setDataFormat(value: EntityRecognizerDataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("Annotations", js.undefined)
+    def setDataFormatUndefined: Self = StObject.set(x, "DataFormat", js.undefined)
     
     @scala.inline
-    def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = this.set("AugmentedManifests", js.Array(value :_*))
+    def setDocuments(value: EntityRecognizerDocuments): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAugmentedManifests(value: EntityRecognizerAugmentedManifestsList): Self = this.set("AugmentedManifests", value.asInstanceOf[js.Any])
+    def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
     
     @scala.inline
-    def deleteAugmentedManifests: Self = this.set("AugmentedManifests", js.undefined)
+    def setEntityList(value: EntityRecognizerEntityList): Self = StObject.set(x, "EntityList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormat(value: EntityRecognizerDataFormat): Self = this.set("DataFormat", value.asInstanceOf[js.Any])
+    def setEntityListUndefined: Self = StObject.set(x, "EntityList", js.undefined)
     
     @scala.inline
-    def deleteDataFormat: Self = this.set("DataFormat", js.undefined)
+    def setEntityTypes(value: EntityTypesList): Self = StObject.set(x, "EntityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: EntityRecognizerDocuments): Self = this.set("Documents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocuments: Self = this.set("Documents", js.undefined)
-    
-    @scala.inline
-    def setEntityList(value: EntityRecognizerEntityList): Self = this.set("EntityList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityList: Self = this.set("EntityList", js.undefined)
+    def setEntityTypesVarargs(value: EntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value :_*))
   }
 }

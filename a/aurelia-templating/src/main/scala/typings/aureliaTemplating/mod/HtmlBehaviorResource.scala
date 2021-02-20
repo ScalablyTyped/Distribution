@@ -4,6 +4,7 @@ import typings.aureliaBinding.mod.Binding
 import typings.aureliaDependencyInjection.mod.Container
 import typings.std.Element
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates an instance of HtmlBehaviorResource.
   */
-class HtmlBehaviorResource () extends js.Object {
+class HtmlBehaviorResource () extends StObject {
   
   /**
     * Adds a binding expression to the component created by this resource.
@@ -148,15 +149,17 @@ class HtmlBehaviorResource () extends js.Object {
   def register(registry: ViewResources_, name: String): Unit = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "HtmlBehaviorResource")
-@js.native
-object HtmlBehaviorResource extends js.Object {
+object HtmlBehaviorResource {
   
   /**
     * Checks whether the provided name matches any naming conventions for HtmlBehaviorResource.
     * @param name The name of the potential resource.
     * @param existing An already existing resource that may need a convention name applied.
     */
+  @JSImport("aurelia-templating", "HtmlBehaviorResource.convention")
+  @js.native
   def convention(name: String): HtmlBehaviorResource = js.native
+  @JSImport("aurelia-templating", "HtmlBehaviorResource.convention")
+  @js.native
   def convention(name: String, existing: HtmlBehaviorResource): HtmlBehaviorResource = js.native
 }

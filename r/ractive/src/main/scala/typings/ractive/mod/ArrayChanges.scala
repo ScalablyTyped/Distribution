@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayChanges extends js.Object {
+trait ArrayChanges extends StObject {
   
   /**
   	 * A list of any removed items.
@@ -31,33 +32,21 @@ object ArrayChanges {
   }
   
   @scala.inline
-  implicit class ArrayChangesOps[Self <: ArrayChanges] (val x: Self) extends AnyVal {
+  implicit class ArrayChangesMutableBuilder[Self <: ArrayChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: js.Array[_]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedVarargs(value: js.Any*): Self = StObject.set(x, "deleted", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInserted(value: js.Array[_]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedVarargs(value: js.Any*): Self = this.set("deleted", js.Array(value :_*))
+    def setInsertedVarargs(value: js.Any*): Self = StObject.set(x, "inserted", js.Array(value :_*))
     
     @scala.inline
-    def setDeleted(value: js.Array[_]): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertedVarargs(value: js.Any*): Self = this.set("inserted", js.Array(value :_*))
-    
-    @scala.inline
-    def setInserted(value: js.Array[_]): Self = this.set("inserted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

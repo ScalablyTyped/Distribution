@@ -1,5 +1,6 @@
 package typings.winjs.global.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSGlobal("WinJS.UI.CountResult")
 @js.native
-object CountResult extends js.Object {
+object CountResult extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.CountResult with Double] = js.native

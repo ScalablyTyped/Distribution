@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RewriteResponse extends js.Object {
+trait RewriteResponse extends StObject {
   
   /** true if the copy is finished; otherwise, false if the copy is in progress. This property is always present in the response. */
   var done: js.UndefOr[Boolean] = js.native
@@ -35,54 +36,42 @@ object RewriteResponse {
   }
   
   @scala.inline
-  implicit class RewriteResponseOps[Self <: RewriteResponse] (val x: Self) extends AnyVal {
+  implicit class RewriteResponseMutableBuilder[Self <: RewriteResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setObjectSize(value: String): Self = StObject.set(x, "objectSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setObjectSizeUndefined: Self = StObject.set(x, "objectSize", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setResource(value: Object): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectSize(value: String): Self = this.set("objectSize", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteObjectSize: Self = this.set("objectSize", js.undefined)
+    def setRewriteToken(value: String): Self = StObject.set(x, "rewriteToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Object): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setRewriteTokenUndefined: Self = StObject.set(x, "rewriteToken", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setTotalBytesRewritten(value: String): Self = StObject.set(x, "totalBytesRewritten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRewriteToken(value: String): Self = this.set("rewriteToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRewriteToken: Self = this.set("rewriteToken", js.undefined)
-    
-    @scala.inline
-    def setTotalBytesRewritten(value: String): Self = this.set("totalBytesRewritten", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalBytesRewritten: Self = this.set("totalBytesRewritten", js.undefined)
+    def setTotalBytesRewrittenUndefined: Self = StObject.set(x, "totalBytesRewritten", js.undefined)
   }
 }

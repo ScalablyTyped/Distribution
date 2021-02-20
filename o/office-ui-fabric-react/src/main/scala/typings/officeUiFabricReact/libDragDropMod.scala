@@ -1,14 +1,14 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.dragDropHelperMod.IDragDropHelperParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/DragDrop", JSImport.Namespace)
-@js.native
-object libDragDropMod extends js.Object {
+object libDragDropMod {
   
+  @JSImport("office-ui-fabric-react/lib/DragDrop", "DragDropHelper")
   @js.native
   class DragDropHelper protected ()
     extends typings.officeUiFabricReact.dragdropMod.DragDropHelper {

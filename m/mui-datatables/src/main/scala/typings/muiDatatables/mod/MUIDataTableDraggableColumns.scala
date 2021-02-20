@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableDraggableColumns extends js.Object {
+trait MUIDataTableDraggableColumns extends StObject {
   
   var enabled: Boolean = js.native
   
@@ -20,27 +21,15 @@ object MUIDataTableDraggableColumns {
   }
   
   @scala.inline
-  implicit class MUIDataTableDraggableColumnsOps[Self <: MUIDataTableDraggableColumns] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableDraggableColumnsMutableBuilder[Self <: MUIDataTableDraggableColumns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionTime(value: Double): Self = this.set("transitionTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionTime: Self = this.set("transitionTime", js.undefined)
+    def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
   }
 }

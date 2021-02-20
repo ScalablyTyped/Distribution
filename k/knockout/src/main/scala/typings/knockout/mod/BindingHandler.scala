@@ -1,11 +1,12 @@
 package typings.knockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindingHandler[T] extends js.Object {
+trait BindingHandler[T] extends StObject {
   
   var after: js.UndefOr[js.Array[String]] = js.native
   
@@ -51,57 +52,45 @@ object BindingHandler {
   }
   
   @scala.inline
-  implicit class BindingHandlerOps[Self <: BindingHandler[_], T] (val x: Self with BindingHandler[T]) extends AnyVal {
+  implicit class BindingHandlerMutableBuilder[Self <: BindingHandler[_], T] (val x: Self with BindingHandler[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAfterVarargs(value: String*): Self = this.set("after", js.Array(value :_*))
-    
-    @scala.inline
-    def setAfter(value: js.Array[String]): Self = this.set("after", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
     def setInit(
       value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[_]) => Unit | BindingHandlerControlsDescendant
-    ): Self = this.set("init", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
     def setPreprocess(
       value: (/* value */ js.UndefOr[String], /* name */ String, /* addBinding */ BindingHandlerAddBinding) => js.UndefOr[String | Unit]
-    ): Self = this.set("preprocess", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "preprocess", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deletePreprocess: Self = this.set("preprocess", js.undefined)
+    def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
     
     @scala.inline
     def setUpdate(
       value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[_]) => Unit
-    ): Self = this.set("update", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

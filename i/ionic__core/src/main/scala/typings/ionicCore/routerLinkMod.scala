@@ -4,14 +4,14 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/router-link/router-link", JSImport.Namespace)
-@js.native
-object routerLinkMod extends js.Object {
+object routerLinkMod {
   
+  @JSImport("@ionic/core/dist/types/components/router-link/router-link", "RouterLink")
   @js.native
   class RouterLink () extends ComponentInterface {
     

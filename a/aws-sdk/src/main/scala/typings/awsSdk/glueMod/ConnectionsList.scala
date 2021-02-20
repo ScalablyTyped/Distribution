@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionsList extends js.Object {
+trait ConnectionsList extends StObject {
   
   /**
     * A list of connections used by the job.
@@ -21,27 +22,15 @@ object ConnectionsList {
   }
   
   @scala.inline
-  implicit class ConnectionsListOps[Self <: ConnectionsList] (val x: Self) extends AnyVal {
+  implicit class ConnectionsListMutableBuilder[Self <: ConnectionsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnections(value: OrchestrationStringList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionsVarargs(value: GenericString*): Self = this.set("Connections", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnections(value: OrchestrationStringList): Self = this.set("Connections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnections: Self = this.set("Connections", js.undefined)
+    def setConnectionsVarargs(value: GenericString*): Self = StObject.set(x, "Connections", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldMappingV2 extends js.Object {
+trait FieldMappingV2 extends StObject {
   
   // A List of InputField for this mapping
   var input_fields: js.UndefOr[js.Array[InputField]] = js.native
@@ -25,39 +26,27 @@ object FieldMappingV2 {
   }
   
   @scala.inline
-  implicit class FieldMappingV2Ops[Self <: FieldMappingV2] (val x: Self) extends AnyVal {
+  implicit class FieldMappingV2MutableBuilder[Self <: FieldMappingV2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput_fields(value: js.Array[InputField]): Self = StObject.set(x, "input_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInput_fieldsUndefined: Self = StObject.set(x, "input_fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput_fieldsVarargs(value: InputField*): Self = StObject.set(x, "input_fields", js.Array(value :_*))
     
     @scala.inline
-    def setInput_fieldsVarargs(value: InputField*): Self = this.set("input_fields", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_fields(value: js.Array[InputField]): Self = this.set("input_fields", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInput_fields: Self = this.set("input_fields", js.undefined)
+    def setOutput_field(value: OutputField): Self = StObject.set(x, "output_field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOutput_field(value: OutputField): Self = this.set("output_field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutput_field: Self = this.set("output_field", js.undefined)
+    def setOutput_fieldUndefined: Self = StObject.set(x, "output_field", js.undefined)
   }
 }

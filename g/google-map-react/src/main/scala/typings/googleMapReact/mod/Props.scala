@@ -3,12 +3,13 @@ package typings.googleMapReact.mod
 import typings.googleMapReact.anon.Map
 import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Props extends js.Object {
+trait Props extends StObject {
   
   var bootstrapURLKeys: js.UndefOr[BootstrapURLKeys] = js.native
   
@@ -95,231 +96,219 @@ object Props {
   }
   
   @scala.inline
-  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+  implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBootstrapURLKeys(value: BootstrapURLKeys): Self = StObject.set(x, "bootstrapURLKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBootstrapURLKeysUndefined: Self = StObject.set(x, "bootstrapURLKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: Coords): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapURLKeys(value: BootstrapURLKeys): Self = this.set("bootstrapURLKeys", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBootstrapURLKeys: Self = this.set("bootstrapURLKeys", js.undefined)
+    def setDebounced(value: Boolean): Self = StObject.set(x, "debounced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Coords): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setDebouncedUndefined: Self = StObject.set(x, "debounced", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setDefaultCenter(value: Coords): Self = StObject.set(x, "defaultCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebounced(value: Boolean): Self = this.set("debounced", value.asInstanceOf[js.Any])
+    def setDefaultCenterUndefined: Self = StObject.set(x, "defaultCenter", js.undefined)
     
     @scala.inline
-    def deleteDebounced: Self = this.set("debounced", js.undefined)
+    def setDefaultZoom(value: Double): Self = StObject.set(x, "defaultZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCenter(value: Coords): Self = this.set("defaultCenter", value.asInstanceOf[js.Any])
+    def setDefaultZoomUndefined: Self = StObject.set(x, "defaultZoom", js.undefined)
     
     @scala.inline
-    def deleteDefaultCenter: Self = this.set("defaultCenter", js.undefined)
+    def setDistanceToMouse(value: (/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object]) => Double): Self = StObject.set(x, "distanceToMouse", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDefaultZoom(value: Double): Self = this.set("defaultZoom", value.asInstanceOf[js.Any])
+    def setDistanceToMouseUndefined: Self = StObject.set(x, "distanceToMouse", js.undefined)
     
     @scala.inline
-    def deleteDefaultZoom: Self = this.set("defaultZoom", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceToMouse(value: (/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object]) => Double): Self = this.set("distanceToMouse", js.Any.fromFunction3(value))
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteDistanceToMouse: Self = this.set("distanceToMouse", js.undefined)
+    def setGoogleMapLoader(value: /* bootstrapURLKeys */ js.Any => Unit): Self = StObject.set(x, "googleMapLoader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setGoogleMapLoaderUndefined: Self = StObject.set(x, "googleMapLoader", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setHeatmap(value: Heatmap): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleMapLoader(value: /* bootstrapURLKeys */ js.Any => Unit): Self = this.set("googleMapLoader", js.Any.fromFunction1(value))
+    def setHeatmapLibrary(value: Boolean): Self = StObject.set(x, "heatmapLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGoogleMapLoader: Self = this.set("googleMapLoader", js.undefined)
+    def setHeatmapLibraryUndefined: Self = StObject.set(x, "heatmapLibrary", js.undefined)
     
     @scala.inline
-    def setHeatmap(value: Heatmap): Self = this.set("heatmap", value.asInstanceOf[js.Any])
+    def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
     
     @scala.inline
-    def deleteHeatmap: Self = this.set("heatmap", js.undefined)
+    def setHoverDistance(value: Double): Self = StObject.set(x, "hoverDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeatmapLibrary(value: Boolean): Self = this.set("heatmapLibrary", value.asInstanceOf[js.Any])
+    def setHoverDistanceUndefined: Self = StObject.set(x, "hoverDistance", js.undefined)
     
     @scala.inline
-    def deleteHeatmapLibrary: Self = this.set("heatmapLibrary", js.undefined)
+    def setLayerTypes(value: js.Array[String]): Self = StObject.set(x, "layerTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverDistance(value: Double): Self = this.set("hoverDistance", value.asInstanceOf[js.Any])
+    def setLayerTypesUndefined: Self = StObject.set(x, "layerTypes", js.undefined)
     
     @scala.inline
-    def deleteHoverDistance: Self = this.set("hoverDistance", js.undefined)
+    def setLayerTypesVarargs(value: String*): Self = StObject.set(x, "layerTypes", js.Array(value :_*))
     
     @scala.inline
-    def setLayerTypesVarargs(value: String*): Self = this.set("layerTypes", js.Array(value :_*))
+    def setMargin(value: js.Array[_]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerTypes(value: js.Array[String]): Self = this.set("layerTypes", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLayerTypes: Self = this.set("layerTypes", js.undefined)
+    def setMarginVarargs(value: js.Any*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setMarginVarargs(value: js.Any*): Self = this.set("margin", js.Array(value :_*))
+    def setOnChange(value: /* value */ ChangeEventValue => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMargin(value: js.Array[_]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setOnChildClick(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = StObject.set(x, "onChildClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnChange(value: /* value */ ChangeEventValue => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnChildClickUndefined: Self = StObject.set(x, "onChildClick", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChildMouseDown(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseDown", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnChildClick(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = this.set("onChildClick", js.Any.fromFunction2(value))
+    def setOnChildMouseDownUndefined: Self = StObject.set(x, "onChildMouseDown", js.undefined)
     
     @scala.inline
-    def deleteOnChildClick: Self = this.set("onChildClick", js.undefined)
+    def setOnChildMouseEnter(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseEnter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnChildMouseDown(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = this.set("onChildMouseDown", js.Any.fromFunction3(value))
+    def setOnChildMouseEnterUndefined: Self = StObject.set(x, "onChildMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteOnChildMouseDown: Self = this.set("onChildMouseDown", js.undefined)
+    def setOnChildMouseLeave(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseLeave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnChildMouseEnter(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = this.set("onChildMouseEnter", js.Any.fromFunction2(value))
+    def setOnChildMouseLeaveUndefined: Self = StObject.set(x, "onChildMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteOnChildMouseEnter: Self = this.set("onChildMouseEnter", js.undefined)
+    def setOnChildMouseMove(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseMove", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnChildMouseLeave(value: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Unit): Self = this.set("onChildMouseLeave", js.Any.fromFunction2(value))
+    def setOnChildMouseMoveUndefined: Self = StObject.set(x, "onChildMouseMove", js.undefined)
     
     @scala.inline
-    def deleteOnChildMouseLeave: Self = this.set("onChildMouseLeave", js.undefined)
+    def setOnChildMouseUp(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = StObject.set(x, "onChildMouseUp", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnChildMouseMove(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = this.set("onChildMouseMove", js.Any.fromFunction3(value))
+    def setOnChildMouseUpUndefined: Self = StObject.set(x, "onChildMouseUp", js.undefined)
     
     @scala.inline
-    def deleteOnChildMouseMove: Self = this.set("onChildMouseMove", js.undefined)
+    def setOnClick(value: /* value */ ClickEventValue => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChildMouseUp(value: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit): Self = this.set("onChildMouseUp", js.Any.fromFunction3(value))
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteOnChildMouseUp: Self = this.set("onChildMouseUp", js.undefined)
+    def setOnDrag(value: /* map */ js.Any => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: /* value */ ClickEventValue => _): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: /* map */ js.Any => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDrag(value: /* map */ js.Any => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnGoogleApiLoaded(value: /* maps */ Map => Unit): Self = StObject.set(x, "onGoogleApiLoaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragEnd(value: /* map */ js.Any => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    def setOnGoogleApiLoadedUndefined: Self = StObject.set(x, "onGoogleApiLoaded", js.undefined)
     
     @scala.inline
-    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    def setOnMapTypeIdChange(value: /* args */ js.Any => Unit): Self = StObject.set(x, "onMapTypeIdChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGoogleApiLoaded(value: /* maps */ Map => Unit): Self = this.set("onGoogleApiLoaded", js.Any.fromFunction1(value))
+    def setOnMapTypeIdChangeUndefined: Self = StObject.set(x, "onMapTypeIdChange", js.undefined)
     
     @scala.inline
-    def deleteOnGoogleApiLoaded: Self = this.set("onGoogleApiLoaded", js.undefined)
+    def setOnTilesLoaded(value: () => Unit): Self = StObject.set(x, "onTilesLoaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMapTypeIdChange(value: /* args */ js.Any => Unit): Self = this.set("onMapTypeIdChange", js.Any.fromFunction1(value))
+    def setOnTilesLoadedUndefined: Self = StObject.set(x, "onTilesLoaded", js.undefined)
     
     @scala.inline
-    def deleteOnMapTypeIdChange: Self = this.set("onMapTypeIdChange", js.undefined)
+    def setOnZoomAnimationEnd(value: /* args */ js.Any => Unit): Self = StObject.set(x, "onZoomAnimationEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTilesLoaded(value: () => Unit): Self = this.set("onTilesLoaded", js.Any.fromFunction0(value))
+    def setOnZoomAnimationEndUndefined: Self = StObject.set(x, "onZoomAnimationEnd", js.undefined)
     
     @scala.inline
-    def deleteOnTilesLoaded: Self = this.set("onTilesLoaded", js.undefined)
+    def setOnZoomAnimationStart(value: /* args */ js.Any => Unit): Self = StObject.set(x, "onZoomAnimationStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnZoomAnimationEnd(value: /* args */ js.Any => Unit): Self = this.set("onZoomAnimationEnd", js.Any.fromFunction1(value))
+    def setOnZoomAnimationStartUndefined: Self = StObject.set(x, "onZoomAnimationStart", js.undefined)
     
     @scala.inline
-    def deleteOnZoomAnimationEnd: Self = this.set("onZoomAnimationEnd", js.undefined)
+    def setOptions(value: MapOptions | (js.Function1[/* maps */ Maps, MapOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnZoomAnimationStart(value: /* args */ js.Any => Unit): Self = this.set("onZoomAnimationStart", js.Any.fromFunction1(value))
+    def setOptionsFunction1(value: /* maps */ Maps => MapOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnZoomAnimationStart: Self = this.set("onZoomAnimationStart", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setOptionsFunction1(value: /* maps */ Maps => MapOptions): Self = this.set("options", js.Any.fromFunction1(value))
+    def setResetBoundsOnResize(value: Boolean): Self = StObject.set(x, "resetBoundsOnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: MapOptions | (js.Function1[/* maps */ Maps, MapOptions])): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setResetBoundsOnResizeUndefined: Self = StObject.set(x, "resetBoundsOnResize", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setShouldUnregisterMapOnUnmount(value: Boolean): Self = StObject.set(x, "shouldUnregisterMapOnUnmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetBoundsOnResize(value: Boolean): Self = this.set("resetBoundsOnResize", value.asInstanceOf[js.Any])
+    def setShouldUnregisterMapOnUnmountUndefined: Self = StObject.set(x, "shouldUnregisterMapOnUnmount", js.undefined)
     
     @scala.inline
-    def deleteResetBoundsOnResize: Self = this.set("resetBoundsOnResize", js.undefined)
+    def setStyle(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldUnregisterMapOnUnmount(value: Boolean): Self = this.set("shouldUnregisterMapOnUnmount", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShouldUnregisterMapOnUnmount: Self = this.set("shouldUnregisterMapOnUnmount", js.undefined)
+    def setYesIWantToUseGoogleMapApiInternals(value: Boolean): Self = StObject.set(x, "yesIWantToUseGoogleMapApiInternals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: HTMLProps[HTMLDivElement]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setYesIWantToUseGoogleMapApiInternalsUndefined: Self = StObject.set(x, "yesIWantToUseGoogleMapApiInternals", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYesIWantToUseGoogleMapApiInternals(value: Boolean): Self = this.set("yesIWantToUseGoogleMapApiInternals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYesIWantToUseGoogleMapApiInternals: Self = this.set("yesIWantToUseGoogleMapApiInternals", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

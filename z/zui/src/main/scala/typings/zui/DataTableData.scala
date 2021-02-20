@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTableData extends js.Object {
+trait DataTableData extends StObject {
   
   var cols: js.Array[Column] = js.native
   
@@ -20,30 +21,18 @@ object DataTableData {
   }
   
   @scala.inline
-  implicit class DataTableDataOps[Self <: DataTableData] (val x: Self) extends AnyVal {
+  implicit class DataTableDataMutableBuilder[Self <: DataTableData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCols(value: js.Array[Column]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColsVarargs(value: Column*): Self = StObject.set(x, "cols", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColsVarargs(value: Column*): Self = this.set("cols", js.Array(value :_*))
-    
-    @scala.inline
-    def setCols(value: js.Array[Column]): Self = this.set("cols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsVarargs(value: Row*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[Row]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

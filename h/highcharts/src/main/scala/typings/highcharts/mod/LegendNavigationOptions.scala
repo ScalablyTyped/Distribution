@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendNavigationOptions extends js.Object {
+trait LegendNavigationOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color for the active up or
@@ -60,54 +61,42 @@ object LegendNavigationOptions {
   }
   
   @scala.inline
-  implicit class LegendNavigationOptionsOps[Self <: LegendNavigationOptions] (val x: Self) extends AnyVal {
+  implicit class LegendNavigationOptionsMutableBuilder[Self <: LegendNavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("activeColor", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteActiveColor: Self = this.set("activeColor", js.undefined)
+    def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowSize(value: Double): Self = this.set("arrowSize", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteArrowSize: Self = this.set("arrowSize", js.undefined)
+    def setInactiveColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "inactiveColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setInactiveColorUndefined: Self = StObject.set(x, "inactiveColor", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactiveColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("inactiveColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInactiveColor: Self = this.set("inactiveColor", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

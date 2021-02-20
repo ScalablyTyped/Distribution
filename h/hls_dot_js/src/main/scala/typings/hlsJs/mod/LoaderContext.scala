@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoaderContext extends js.Object {
+trait LoaderContext extends StObject {
   
   /**
     * fragment object
@@ -58,51 +59,39 @@ object LoaderContext {
   }
   
   @scala.inline
-  implicit class LoaderContextOps[Self <: LoaderContext] (val x: Self) extends AnyVal {
+  implicit class LoaderContextMutableBuilder[Self <: LoaderContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgressData(value: Boolean): Self = StObject.set(x, "progressData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrag(value: Fragment): Self = this.set("frag", value.asInstanceOf[js.Any])
+    def setProgressDataUndefined: Self = StObject.set(x, "progressData", js.undefined)
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRangeStart(value: Double): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
     
     @scala.inline
-    def setProgressData(value: Boolean): Self = this.set("progressData", value.asInstanceOf[js.Any])
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressData: Self = this.set("progressData", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeEnd(value: Double): Self = this.set("rangeEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeEnd: Self = this.set("rangeEnd", js.undefined)
-    
-    @scala.inline
-    def setRangeStart(value: Double): Self = this.set("rangeStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeStart: Self = this.set("rangeStart", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

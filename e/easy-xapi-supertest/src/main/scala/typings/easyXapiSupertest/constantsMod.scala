@@ -1,457 +1,1348 @@
 package typings.easyXapiSupertest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
-  
-  var DH_CHECK_P_NOT_PRIME: Double = js.native
-  
-  var DH_CHECK_P_NOT_SAFE_PRIME: Double = js.native
-  
-  var DH_NOT_SUITABLE_GENERATOR: Double = js.native
-  
-  var DH_UNABLE_TO_CHECK_GENERATOR: Double = js.native
-  
-  var E2BIG: Double = js.native
-  
-  var EACCES: Double = js.native
-  
-  var EADDRINUSE: Double = js.native
-  
-  var EADDRNOTAVAIL: Double = js.native
-  
-  var EAFNOSUPPORT: Double = js.native
-  
-  var EAGAIN: Double = js.native
-  
-  var EALREADY: Double = js.native
-  
-  var EBADF: Double = js.native
-  
-  var EBADMSG: Double = js.native
-  
-  var EBUSY: Double = js.native
-  
-  var ECANCELED: Double = js.native
-  
-  var ECHILD: Double = js.native
-  
-  var ECONNABORTED: Double = js.native
-  
-  var ECONNREFUSED: Double = js.native
-  
-  var ECONNRESET: Double = js.native
-  
-  var EDEADLK: Double = js.native
-  
-  var EDESTADDRREQ: Double = js.native
-  
-  var EDOM: Double = js.native
-  
-  var EEXIST: Double = js.native
-  
-  var EFAULT: Double = js.native
-  
-  var EFBIG: Double = js.native
-  
-  var EHOSTUNREACH: Double = js.native
-  
-  var EIDRM: Double = js.native
-  
-  var EILSEQ: Double = js.native
-  
-  var EINPROGRESS: Double = js.native
-  
-  var EINTR: Double = js.native
-  
-  var EINVAL: Double = js.native
-  
-  var EIO: Double = js.native
-  
-  var EISCONN: Double = js.native
-  
-  var EISDIR: Double = js.native
-  
-  var ELOOP: Double = js.native
-  
-  var EMFILE: Double = js.native
-  
-  var EMLINK: Double = js.native
-  
-  var EMSGSIZE: Double = js.native
-  
-  var ENAMETOOLONG: Double = js.native
-  
-  var ENETDOWN: Double = js.native
-  
-  var ENETRESET: Double = js.native
-  
-  var ENETUNREACH: Double = js.native
-  
-  var ENFILE: Double = js.native
-  
-  var ENGINE_METHOD_ALL: Double = js.native
-  
-  var ENGINE_METHOD_CIPHERS: Double = js.native
-  
-  var ENGINE_METHOD_DH: Double = js.native
-  
-  var ENGINE_METHOD_DIGESTS: Double = js.native
-  
-  var ENGINE_METHOD_DSA: Double = js.native
-  
-  var ENGINE_METHOD_ECDH: Double = js.native
-  
-  var ENGINE_METHOD_ECDSA: Double = js.native
-  
-  var ENGINE_METHOD_NONE: Double = js.native
-  
-  var ENGINE_METHOD_PKEY_ASN1_METHS: Double = js.native
-  
-  var ENGINE_METHOD_PKEY_METHS: Double = js.native
-  
-  var ENGINE_METHOD_RAND: Double = js.native
-  
-  var ENGINE_METHOD_STORE: Double = js.native
-  
-  var ENOBUFS: Double = js.native
-  
-  var ENODATA: Double = js.native
-  
-  var ENODEV: Double = js.native
-  
-  var ENOENT: Double = js.native
-  
-  var ENOEXEC: Double = js.native
-  
-  var ENOLCK: Double = js.native
-  
-  var ENOLINK: Double = js.native
-  
-  var ENOMEM: Double = js.native
-  
-  var ENOMSG: Double = js.native
-  
-  var ENOPROTOOPT: Double = js.native
-  
-  var ENOSPC: Double = js.native
-  
-  var ENOSR: Double = js.native
-  
-  var ENOSTR: Double = js.native
-  
-  var ENOSYS: Double = js.native
-  
-  var ENOTCONN: Double = js.native
-  
-  var ENOTDIR: Double = js.native
-  
-  var ENOTEMPTY: Double = js.native
-  
-  var ENOTSOCK: Double = js.native
-  
-  var ENOTSUP: Double = js.native
-  
-  var ENOTTY: Double = js.native
-  
-  var ENXIO: Double = js.native
-  
-  var EOPNOTSUPP: Double = js.native
-  
-  var EOVERFLOW: Double = js.native
-  
-  var EPERM: Double = js.native
-  
-  var EPIPE: Double = js.native
-  
-  var EPROTO: Double = js.native
-  
-  var EPROTONOSUPPORT: Double = js.native
-  
-  var EPROTOTYPE: Double = js.native
-  
-  var ERANGE: Double = js.native
-  
-  var EROFS: Double = js.native
-  
-  var ESPIPE: Double = js.native
-  
-  var ESRCH: Double = js.native
-  
-  var ETIME: Double = js.native
-  
-  var ETIMEDOUT: Double = js.native
-  
-  var ETXTBSY: Double = js.native
-  
-  var EWOULDBLOCK: Double = js.native
-  
-  var EXDEV: Double = js.native
-  
-  var F_OK: Double = js.native
-  
-  var NPN_ENABLED: Double = js.native
-  
-  var O_APPEND: Double = js.native
-  
-  var O_CREAT: Double = js.native
-  
-  var O_EXCL: Double = js.native
-  
-  var O_RDONLY: Double = js.native
-  
-  var O_RDWR: Double = js.native
-  
-  var O_TRUNC: Double = js.native
-  
-  var O_WRONLY: Double = js.native
-  
-  var POINT_CONVERSION_COMPRESSED: Double = js.native
-  
-  var POINT_CONVERSION_HYBRID: Double = js.native
-  
-  var POINT_CONVERSION_UNCOMPRESSED: Double = js.native
-  
-  var RSA_NO_PADDING: Double = js.native
-  
-  var RSA_PKCS1_OAEP_PADDING: Double = js.native
-  
-  var RSA_PKCS1_PADDING: Double = js.native
-  
-  var RSA_PKCS1_PSS_PADDING: Double = js.native
-  
-  var RSA_SSLV23_PADDING: Double = js.native
-  
-  var RSA_X931_PADDING: Double = js.native
-  
-  var R_OK: Double = js.native
-  
-  var SIGABRT: Double = js.native
-  
-  var SIGBREAK: Double = js.native
-  
-  var SIGFPE: Double = js.native
-  
-  var SIGHUP: Double = js.native
-  
-  var SIGILL: Double = js.native
-  
-  var SIGINT: Double = js.native
-  
-  var SIGKILL: Double = js.native
-  
-  var SIGSEGV: Double = js.native
-  
-  var SIGTERM: Double = js.native
-  
-  var SIGWINCH: Double = js.native
-  
-  @JSName("SSL_OP_NO_SSLv2")
-  var SSLOPNOSSLv2: Double = js.native
-  
-  @JSName("SSL_OP_NO_SSLv3")
-  var SSLOPNOSSLv3: Double = js.native
-  
-  @JSName("SSL_OP_NO_TLSv1")
-  var SSLOPNOTLSv1: Double = js.native
-  
-  @JSName("SSL_OP_NO_TLSv1_1")
-  var SSLOPNOTLSv11: Double = js.native
-  
-  @JSName("SSL_OP_NO_TLSv1_2")
-  var SSLOPNOTLSv12: Double = js.native
-  
-  var SSL_OP_ALL: Double = js.native
-  
-  var SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: Double = js.native
-  
-  var SSL_OP_CIPHER_SERVER_PREFERENCE: Double = js.native
-  
-  var SSL_OP_CISCO_ANYCONNECT: Double = js.native
-  
-  var SSL_OP_COOKIE_EXCHANGE: Double = js.native
-  
-  var SSL_OP_CRYPTOPRO_TLSEXT_BUG: Double = js.native
-  
-  var SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: Double = js.native
-  
-  var SSL_OP_EPHEMERAL_RSA: Double = js.native
-  
-  var SSL_OP_LEGACY_SERVER_CONNECT: Double = js.native
-  
-  var SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER: Double = js.native
-  
-  var SSL_OP_MICROSOFT_SESS_ID_BUG: Double = js.native
-  
-  var SSL_OP_MSIE_SSLV2_RSA_PADDING: Double = js.native
-  
-  var SSL_OP_NETSCAPE_CA_DN_BUG: Double = js.native
-  
-  var SSL_OP_NETSCAPE_CHALLENGE_BUG: Double = js.native
-  
-  var SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG: Double = js.native
-  
-  var SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG: Double = js.native
-  
-  var SSL_OP_NO_COMPRESSION: Double = js.native
-  
-  var SSL_OP_NO_QUERY_MTU: Double = js.native
-  
-  var SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: Double = js.native
-  
-  var SSL_OP_NO_TICKET: Double = js.native
-  
-  var SSL_OP_PKCS1_CHECK_1: Double = js.native
-  
-  var SSL_OP_PKCS1_CHECK_2: Double = js.native
-  
-  var SSL_OP_SINGLE_DH_USE: Double = js.native
-  
-  var SSL_OP_SINGLE_ECDH_USE: Double = js.native
-  
-  var SSL_OP_SSLEAY_080_CLIENT_DH_BUG: Double = js.native
-  
-  var SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG: Double = js.native
-  
-  var SSL_OP_TLS_BLOCK_PADDING_BUG: Double = js.native
-  
-  var SSL_OP_TLS_D5_BUG: Double = js.native
-  
-  var SSL_OP_TLS_ROLLBACK_BUG: Double = js.native
-  
-  var S_IFCHR: Double = js.native
-  
-  var S_IFDIR: Double = js.native
-  
-  var S_IFLNK: Double = js.native
-  
-  var S_IFMT: Double = js.native
-  
-  var S_IFREG: Double = js.native
-  
-  var UV_UDP_REUSEADDR: Double = js.native
-  
-  var WSAEACCES: Double = js.native
-  
-  var WSAEADDRINUSE: Double = js.native
-  
-  var WSAEADDRNOTAVAIL: Double = js.native
-  
-  var WSAEAFNOSUPPORT: Double = js.native
-  
-  var WSAEALREADY: Double = js.native
-  
-  var WSAEBADF: Double = js.native
-  
-  var WSAECANCELLED: Double = js.native
-  
-  var WSAECONNABORTED: Double = js.native
-  
-  var WSAECONNREFUSED: Double = js.native
-  
-  var WSAECONNRESET: Double = js.native
-  
-  var WSAEDESTADDRREQ: Double = js.native
-  
-  var WSAEDISCON: Double = js.native
-  
-  var WSAEDQUOT: Double = js.native
-  
-  var WSAEFAULT: Double = js.native
-  
-  var WSAEHOSTDOWN: Double = js.native
-  
-  var WSAEHOSTUNREACH: Double = js.native
-  
-  var WSAEINPROGRESS: Double = js.native
-  
-  var WSAEINTR: Double = js.native
-  
-  var WSAEINVAL: Double = js.native
-  
-  var WSAEINVALIDPROCTABLE: Double = js.native
-  
-  var WSAEINVALIDPROVIDER: Double = js.native
-  
-  var WSAEISCONN: Double = js.native
-  
-  var WSAELOOP: Double = js.native
-  
-  var WSAEMFILE: Double = js.native
-  
-  var WSAEMSGSIZE: Double = js.native
-  
-  var WSAENAMETOOLONG: Double = js.native
-  
-  var WSAENETDOWN: Double = js.native
-  
-  var WSAENETRESET: Double = js.native
-  
-  var WSAENETUNREACH: Double = js.native
-  
-  var WSAENOBUFS: Double = js.native
-  
-  var WSAENOMORE: Double = js.native
-  
-  var WSAENOPROTOOPT: Double = js.native
-  
-  var WSAENOTCONN: Double = js.native
-  
-  var WSAENOTEMPTY: Double = js.native
-  
-  var WSAENOTSOCK: Double = js.native
-  
-  var WSAEOPNOTSUPP: Double = js.native
-  
-  var WSAEPFNOSUPPORT: Double = js.native
-  
-  var WSAEPROCLIM: Double = js.native
-  
-  var WSAEPROTONOSUPPORT: Double = js.native
-  
-  var WSAEPROTOTYPE: Double = js.native
-  
-  var WSAEPROVIDERFAILEDINIT: Double = js.native
-  
-  var WSAEREFUSED: Double = js.native
-  
-  var WSAEREMOTE: Double = js.native
-  
-  var WSAESHUTDOWN: Double = js.native
-  
-  var WSAESOCKTNOSUPPORT: Double = js.native
-  
-  var WSAESTALE: Double = js.native
-  
-  var WSAETIMEDOUT: Double = js.native
-  
-  var WSAETOOMANYREFS: Double = js.native
-  
-  var WSAEUSERS: Double = js.native
-  
-  var WSAEWOULDBLOCK: Double = js.native
-  
-  var WSANOTINITIALISED: Double = js.native
-  
-  var WSASERVICE_NOT_FOUND: Double = js.native
-  
-  var WSASYSCALLFAILURE: Double = js.native
-  
-  var WSASYSNOTREADY: Double = js.native
-  
-  var WSATYPE_NOT_FOUND: Double = js.native
-  
-  var WSAVERNOTSUPPORTED: Double = js.native
-  
-  var WSA_E_CANCELLED: Double = js.native
-  
-  var WSA_E_NO_MORE: Double = js.native
-  
-  var W_OK: Double = js.native
-  
-  var X_OK: Double = js.native
+object constantsMod {
+  
+  @JSImport("constants", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("constants", "DH_CHECK_P_NOT_PRIME")
+  @js.native
+  def DH_CHECK_P_NOT_PRIME: Double = js.native
+  @scala.inline
+  def DH_CHECK_P_NOT_PRIME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DH_CHECK_P_NOT_PRIME")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "DH_CHECK_P_NOT_SAFE_PRIME")
+  @js.native
+  def DH_CHECK_P_NOT_SAFE_PRIME: Double = js.native
+  @scala.inline
+  def DH_CHECK_P_NOT_SAFE_PRIME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DH_CHECK_P_NOT_SAFE_PRIME")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "DH_NOT_SUITABLE_GENERATOR")
+  @js.native
+  def DH_NOT_SUITABLE_GENERATOR: Double = js.native
+  @scala.inline
+  def DH_NOT_SUITABLE_GENERATOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DH_NOT_SUITABLE_GENERATOR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "DH_UNABLE_TO_CHECK_GENERATOR")
+  @js.native
+  def DH_UNABLE_TO_CHECK_GENERATOR: Double = js.native
+  @scala.inline
+  def DH_UNABLE_TO_CHECK_GENERATOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DH_UNABLE_TO_CHECK_GENERATOR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "E2BIG")
+  @js.native
+  def E2BIG: Double = js.native
+  @scala.inline
+  def E2BIG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E2BIG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EACCES")
+  @js.native
+  def EACCES: Double = js.native
+  @scala.inline
+  def EACCES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EACCES")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EADDRINUSE")
+  @js.native
+  def EADDRINUSE: Double = js.native
+  @scala.inline
+  def EADDRINUSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EADDRINUSE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EADDRNOTAVAIL")
+  @js.native
+  def EADDRNOTAVAIL: Double = js.native
+  @scala.inline
+  def EADDRNOTAVAIL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EADDRNOTAVAIL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EAFNOSUPPORT")
+  @js.native
+  def EAFNOSUPPORT: Double = js.native
+  @scala.inline
+  def EAFNOSUPPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EAFNOSUPPORT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EAGAIN")
+  @js.native
+  def EAGAIN: Double = js.native
+  @scala.inline
+  def EAGAIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EAGAIN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EALREADY")
+  @js.native
+  def EALREADY: Double = js.native
+  @scala.inline
+  def EALREADY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EALREADY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EBADF")
+  @js.native
+  def EBADF: Double = js.native
+  @scala.inline
+  def EBADF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EBADF")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EBADMSG")
+  @js.native
+  def EBADMSG: Double = js.native
+  @scala.inline
+  def EBADMSG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EBADMSG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EBUSY")
+  @js.native
+  def EBUSY: Double = js.native
+  @scala.inline
+  def EBUSY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EBUSY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ECANCELED")
+  @js.native
+  def ECANCELED: Double = js.native
+  @scala.inline
+  def ECANCELED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECANCELED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ECHILD")
+  @js.native
+  def ECHILD: Double = js.native
+  @scala.inline
+  def ECHILD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECHILD")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ECONNABORTED")
+  @js.native
+  def ECONNABORTED: Double = js.native
+  @scala.inline
+  def ECONNABORTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECONNABORTED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ECONNREFUSED")
+  @js.native
+  def ECONNREFUSED: Double = js.native
+  @scala.inline
+  def ECONNREFUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECONNREFUSED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ECONNRESET")
+  @js.native
+  def ECONNRESET: Double = js.native
+  @scala.inline
+  def ECONNRESET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECONNRESET")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EDEADLK")
+  @js.native
+  def EDEADLK: Double = js.native
+  @scala.inline
+  def EDEADLK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDEADLK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EDESTADDRREQ")
+  @js.native
+  def EDESTADDRREQ: Double = js.native
+  @scala.inline
+  def EDESTADDRREQ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDESTADDRREQ")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EDOM")
+  @js.native
+  def EDOM: Double = js.native
+  @scala.inline
+  def EDOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDOM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EEXIST")
+  @js.native
+  def EEXIST: Double = js.native
+  @scala.inline
+  def EEXIST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EEXIST")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EFAULT")
+  @js.native
+  def EFAULT: Double = js.native
+  @scala.inline
+  def EFAULT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EFAULT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EFBIG")
+  @js.native
+  def EFBIG: Double = js.native
+  @scala.inline
+  def EFBIG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EFBIG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EHOSTUNREACH")
+  @js.native
+  def EHOSTUNREACH: Double = js.native
+  @scala.inline
+  def EHOSTUNREACH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EHOSTUNREACH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EIDRM")
+  @js.native
+  def EIDRM: Double = js.native
+  @scala.inline
+  def EIDRM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIDRM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EILSEQ")
+  @js.native
+  def EILSEQ: Double = js.native
+  @scala.inline
+  def EILSEQ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EILSEQ")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EINPROGRESS")
+  @js.native
+  def EINPROGRESS: Double = js.native
+  @scala.inline
+  def EINPROGRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EINPROGRESS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EINTR")
+  @js.native
+  def EINTR: Double = js.native
+  @scala.inline
+  def EINTR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EINTR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EINVAL")
+  @js.native
+  def EINVAL: Double = js.native
+  @scala.inline
+  def EINVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EINVAL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EIO")
+  @js.native
+  def EIO: Double = js.native
+  @scala.inline
+  def EIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIO")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EISCONN")
+  @js.native
+  def EISCONN: Double = js.native
+  @scala.inline
+  def EISCONN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EISCONN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EISDIR")
+  @js.native
+  def EISDIR: Double = js.native
+  @scala.inline
+  def EISDIR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EISDIR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ELOOP")
+  @js.native
+  def ELOOP: Double = js.native
+  @scala.inline
+  def ELOOP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELOOP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EMFILE")
+  @js.native
+  def EMFILE: Double = js.native
+  @scala.inline
+  def EMFILE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMFILE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EMLINK")
+  @js.native
+  def EMLINK: Double = js.native
+  @scala.inline
+  def EMLINK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMLINK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EMSGSIZE")
+  @js.native
+  def EMSGSIZE: Double = js.native
+  @scala.inline
+  def EMSGSIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMSGSIZE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENAMETOOLONG")
+  @js.native
+  def ENAMETOOLONG: Double = js.native
+  @scala.inline
+  def ENAMETOOLONG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENAMETOOLONG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENETDOWN")
+  @js.native
+  def ENETDOWN: Double = js.native
+  @scala.inline
+  def ENETDOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENETDOWN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENETRESET")
+  @js.native
+  def ENETRESET: Double = js.native
+  @scala.inline
+  def ENETRESET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENETRESET")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENETUNREACH")
+  @js.native
+  def ENETUNREACH: Double = js.native
+  @scala.inline
+  def ENETUNREACH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENETUNREACH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENFILE")
+  @js.native
+  def ENFILE: Double = js.native
+  @scala.inline
+  def ENFILE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENFILE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_ALL")
+  @js.native
+  def ENGINE_METHOD_ALL: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_ALL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_CIPHERS")
+  @js.native
+  def ENGINE_METHOD_CIPHERS: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_CIPHERS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_CIPHERS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_DH")
+  @js.native
+  def ENGINE_METHOD_DH: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_DH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_DH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_DIGESTS")
+  @js.native
+  def ENGINE_METHOD_DIGESTS: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_DIGESTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_DIGESTS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_DSA")
+  @js.native
+  def ENGINE_METHOD_DSA: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_DSA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_DSA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_ECDH")
+  @js.native
+  def ENGINE_METHOD_ECDH: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_ECDH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_ECDH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_ECDSA")
+  @js.native
+  def ENGINE_METHOD_ECDSA: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_ECDSA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_ECDSA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_NONE")
+  @js.native
+  def ENGINE_METHOD_NONE: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_NONE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_PKEY_ASN1_METHS")
+  @js.native
+  def ENGINE_METHOD_PKEY_ASN1_METHS: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_PKEY_ASN1_METHS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_PKEY_ASN1_METHS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_PKEY_METHS")
+  @js.native
+  def ENGINE_METHOD_PKEY_METHS: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_PKEY_METHS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_PKEY_METHS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_RAND")
+  @js.native
+  def ENGINE_METHOD_RAND: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_RAND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_RAND")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENGINE_METHOD_STORE")
+  @js.native
+  def ENGINE_METHOD_STORE: Double = js.native
+  @scala.inline
+  def ENGINE_METHOD_STORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_METHOD_STORE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOBUFS")
+  @js.native
+  def ENOBUFS: Double = js.native
+  @scala.inline
+  def ENOBUFS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOBUFS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENODATA")
+  @js.native
+  def ENODATA: Double = js.native
+  @scala.inline
+  def ENODATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENODATA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENODEV")
+  @js.native
+  def ENODEV: Double = js.native
+  @scala.inline
+  def ENODEV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENODEV")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOENT")
+  @js.native
+  def ENOENT: Double = js.native
+  @scala.inline
+  def ENOENT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOENT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOEXEC")
+  @js.native
+  def ENOEXEC: Double = js.native
+  @scala.inline
+  def ENOEXEC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOEXEC")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOLCK")
+  @js.native
+  def ENOLCK: Double = js.native
+  @scala.inline
+  def ENOLCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOLCK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOLINK")
+  @js.native
+  def ENOLINK: Double = js.native
+  @scala.inline
+  def ENOLINK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOLINK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOMEM")
+  @js.native
+  def ENOMEM: Double = js.native
+  @scala.inline
+  def ENOMEM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOMEM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOMSG")
+  @js.native
+  def ENOMSG: Double = js.native
+  @scala.inline
+  def ENOMSG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOMSG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOPROTOOPT")
+  @js.native
+  def ENOPROTOOPT: Double = js.native
+  @scala.inline
+  def ENOPROTOOPT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOPROTOOPT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOSPC")
+  @js.native
+  def ENOSPC: Double = js.native
+  @scala.inline
+  def ENOSPC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOSPC")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOSR")
+  @js.native
+  def ENOSR: Double = js.native
+  @scala.inline
+  def ENOSR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOSR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOSTR")
+  @js.native
+  def ENOSTR: Double = js.native
+  @scala.inline
+  def ENOSTR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOSTR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOSYS")
+  @js.native
+  def ENOSYS: Double = js.native
+  @scala.inline
+  def ENOSYS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOSYS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOTCONN")
+  @js.native
+  def ENOTCONN: Double = js.native
+  @scala.inline
+  def ENOTCONN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOTCONN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOTDIR")
+  @js.native
+  def ENOTDIR: Double = js.native
+  @scala.inline
+  def ENOTDIR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOTDIR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOTEMPTY")
+  @js.native
+  def ENOTEMPTY: Double = js.native
+  @scala.inline
+  def ENOTEMPTY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOTEMPTY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOTSOCK")
+  @js.native
+  def ENOTSOCK: Double = js.native
+  @scala.inline
+  def ENOTSOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOTSOCK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOTSUP")
+  @js.native
+  def ENOTSUP: Double = js.native
+  @scala.inline
+  def ENOTSUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOTSUP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENOTTY")
+  @js.native
+  def ENOTTY: Double = js.native
+  @scala.inline
+  def ENOTTY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENOTTY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ENXIO")
+  @js.native
+  def ENXIO: Double = js.native
+  @scala.inline
+  def ENXIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENXIO")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EOPNOTSUPP")
+  @js.native
+  def EOPNOTSUPP: Double = js.native
+  @scala.inline
+  def EOPNOTSUPP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOPNOTSUPP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EOVERFLOW")
+  @js.native
+  def EOVERFLOW: Double = js.native
+  @scala.inline
+  def EOVERFLOW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOVERFLOW")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EPERM")
+  @js.native
+  def EPERM: Double = js.native
+  @scala.inline
+  def EPERM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPERM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EPIPE")
+  @js.native
+  def EPIPE: Double = js.native
+  @scala.inline
+  def EPIPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPIPE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EPROTO")
+  @js.native
+  def EPROTO: Double = js.native
+  
+  @JSImport("constants", "EPROTONOSUPPORT")
+  @js.native
+  def EPROTONOSUPPORT: Double = js.native
+  @scala.inline
+  def EPROTONOSUPPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPROTONOSUPPORT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EPROTOTYPE")
+  @js.native
+  def EPROTOTYPE: Double = js.native
+  @scala.inline
+  def EPROTOTYPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPROTOTYPE")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def EPROTO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPROTO")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ERANGE")
+  @js.native
+  def ERANGE: Double = js.native
+  @scala.inline
+  def ERANGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERANGE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EROFS")
+  @js.native
+  def EROFS: Double = js.native
+  @scala.inline
+  def EROFS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EROFS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ESPIPE")
+  @js.native
+  def ESPIPE: Double = js.native
+  @scala.inline
+  def ESPIPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESPIPE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ESRCH")
+  @js.native
+  def ESRCH: Double = js.native
+  @scala.inline
+  def ESRCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESRCH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ETIME")
+  @js.native
+  def ETIME: Double = js.native
+  
+  @JSImport("constants", "ETIMEDOUT")
+  @js.native
+  def ETIMEDOUT: Double = js.native
+  @scala.inline
+  def ETIMEDOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETIMEDOUT")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def ETIME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETIME")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "ETXTBSY")
+  @js.native
+  def ETXTBSY: Double = js.native
+  @scala.inline
+  def ETXTBSY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETXTBSY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EWOULDBLOCK")
+  @js.native
+  def EWOULDBLOCK: Double = js.native
+  @scala.inline
+  def EWOULDBLOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EWOULDBLOCK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "EXDEV")
+  @js.native
+  def EXDEV: Double = js.native
+  @scala.inline
+  def EXDEV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXDEV")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "F_OK")
+  @js.native
+  def F_OK: Double = js.native
+  @scala.inline
+  def F_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F_OK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "NPN_ENABLED")
+  @js.native
+  def NPN_ENABLED: Double = js.native
+  @scala.inline
+  def NPN_ENABLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NPN_ENABLED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_APPEND")
+  @js.native
+  def O_APPEND: Double = js.native
+  @scala.inline
+  def O_APPEND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_APPEND")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_CREAT")
+  @js.native
+  def O_CREAT: Double = js.native
+  @scala.inline
+  def O_CREAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_CREAT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_EXCL")
+  @js.native
+  def O_EXCL: Double = js.native
+  @scala.inline
+  def O_EXCL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_EXCL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_RDONLY")
+  @js.native
+  def O_RDONLY: Double = js.native
+  @scala.inline
+  def O_RDONLY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_RDONLY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_RDWR")
+  @js.native
+  def O_RDWR: Double = js.native
+  @scala.inline
+  def O_RDWR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_RDWR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_TRUNC")
+  @js.native
+  def O_TRUNC: Double = js.native
+  @scala.inline
+  def O_TRUNC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_TRUNC")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "O_WRONLY")
+  @js.native
+  def O_WRONLY: Double = js.native
+  @scala.inline
+  def O_WRONLY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O_WRONLY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "POINT_CONVERSION_COMPRESSED")
+  @js.native
+  def POINT_CONVERSION_COMPRESSED: Double = js.native
+  @scala.inline
+  def POINT_CONVERSION_COMPRESSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT_CONVERSION_COMPRESSED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "POINT_CONVERSION_HYBRID")
+  @js.native
+  def POINT_CONVERSION_HYBRID: Double = js.native
+  @scala.inline
+  def POINT_CONVERSION_HYBRID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT_CONVERSION_HYBRID")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "POINT_CONVERSION_UNCOMPRESSED")
+  @js.native
+  def POINT_CONVERSION_UNCOMPRESSED: Double = js.native
+  @scala.inline
+  def POINT_CONVERSION_UNCOMPRESSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT_CONVERSION_UNCOMPRESSED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "RSA_NO_PADDING")
+  @js.native
+  def RSA_NO_PADDING: Double = js.native
+  @scala.inline
+  def RSA_NO_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_NO_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "RSA_PKCS1_OAEP_PADDING")
+  @js.native
+  def RSA_PKCS1_OAEP_PADDING: Double = js.native
+  @scala.inline
+  def RSA_PKCS1_OAEP_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_PKCS1_OAEP_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "RSA_PKCS1_PADDING")
+  @js.native
+  def RSA_PKCS1_PADDING: Double = js.native
+  @scala.inline
+  def RSA_PKCS1_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_PKCS1_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "RSA_PKCS1_PSS_PADDING")
+  @js.native
+  def RSA_PKCS1_PSS_PADDING: Double = js.native
+  @scala.inline
+  def RSA_PKCS1_PSS_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_PKCS1_PSS_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "RSA_SSLV23_PADDING")
+  @js.native
+  def RSA_SSLV23_PADDING: Double = js.native
+  @scala.inline
+  def RSA_SSLV23_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_SSLV23_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "RSA_X931_PADDING")
+  @js.native
+  def RSA_X931_PADDING: Double = js.native
+  @scala.inline
+  def RSA_X931_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_X931_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "R_OK")
+  @js.native
+  def R_OK: Double = js.native
+  @scala.inline
+  def R_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("R_OK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGABRT")
+  @js.native
+  def SIGABRT: Double = js.native
+  @scala.inline
+  def SIGABRT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGABRT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGBREAK")
+  @js.native
+  def SIGBREAK: Double = js.native
+  @scala.inline
+  def SIGBREAK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGBREAK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGFPE")
+  @js.native
+  def SIGFPE: Double = js.native
+  @scala.inline
+  def SIGFPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGFPE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGHUP")
+  @js.native
+  def SIGHUP: Double = js.native
+  @scala.inline
+  def SIGHUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGHUP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGILL")
+  @js.native
+  def SIGILL: Double = js.native
+  @scala.inline
+  def SIGILL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGILL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGINT")
+  @js.native
+  def SIGINT: Double = js.native
+  @scala.inline
+  def SIGINT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGINT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGKILL")
+  @js.native
+  def SIGKILL: Double = js.native
+  @scala.inline
+  def SIGKILL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGKILL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGSEGV")
+  @js.native
+  def SIGSEGV: Double = js.native
+  @scala.inline
+  def SIGSEGV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSEGV")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGTERM")
+  @js.native
+  def SIGTERM: Double = js.native
+  @scala.inline
+  def SIGTERM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTERM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SIGWINCH")
+  @js.native
+  def SIGWINCH: Double = js.native
+  @scala.inline
+  def SIGWINCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGWINCH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_SSLv2")
+  @js.native
+  def SSLOPNOSSLv2: Double = js.native
+  
+  @scala.inline
+  def SSLOPNOSSLv2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_SSLv2")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_SSLv3")
+  @js.native
+  def SSLOPNOSSLv3: Double = js.native
+  
+  @scala.inline
+  def SSLOPNOSSLv3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_SSLv3")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_TLSv1")
+  @js.native
+  def SSLOPNOTLSv1: Double = js.native
+  
+  @JSImport("constants", "SSL_OP_NO_TLSv1_1")
+  @js.native
+  def SSLOPNOTLSv11: Double = js.native
+  
+  @scala.inline
+  def SSLOPNOTLSv11_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_TLSv1_1")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_TLSv1_2")
+  @js.native
+  def SSLOPNOTLSv12: Double = js.native
+  
+  @scala.inline
+  def SSLOPNOTLSv12_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_TLSv1_2")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def SSLOPNOTLSv1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_TLSv1")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_ALL")
+  @js.native
+  def SSL_OP_ALL: Double = js.native
+  
+  @JSImport("constants", "SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION")
+  @js.native
+  def SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: Double = js.native
+  @scala.inline
+  def SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def SSL_OP_ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_ALL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_CIPHER_SERVER_PREFERENCE")
+  @js.native
+  def SSL_OP_CIPHER_SERVER_PREFERENCE: Double = js.native
+  @scala.inline
+  def SSL_OP_CIPHER_SERVER_PREFERENCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_CIPHER_SERVER_PREFERENCE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_CISCO_ANYCONNECT")
+  @js.native
+  def SSL_OP_CISCO_ANYCONNECT: Double = js.native
+  @scala.inline
+  def SSL_OP_CISCO_ANYCONNECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_CISCO_ANYCONNECT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_COOKIE_EXCHANGE")
+  @js.native
+  def SSL_OP_COOKIE_EXCHANGE: Double = js.native
+  @scala.inline
+  def SSL_OP_COOKIE_EXCHANGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_COOKIE_EXCHANGE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_CRYPTOPRO_TLSEXT_BUG")
+  @js.native
+  def SSL_OP_CRYPTOPRO_TLSEXT_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_CRYPTOPRO_TLSEXT_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_CRYPTOPRO_TLSEXT_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS")
+  @js.native
+  def SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: Double = js.native
+  @scala.inline
+  def SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_EPHEMERAL_RSA")
+  @js.native
+  def SSL_OP_EPHEMERAL_RSA: Double = js.native
+  @scala.inline
+  def SSL_OP_EPHEMERAL_RSA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_EPHEMERAL_RSA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_LEGACY_SERVER_CONNECT")
+  @js.native
+  def SSL_OP_LEGACY_SERVER_CONNECT: Double = js.native
+  @scala.inline
+  def SSL_OP_LEGACY_SERVER_CONNECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_LEGACY_SERVER_CONNECT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER")
+  @js.native
+  def SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER: Double = js.native
+  @scala.inline
+  def SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_MICROSOFT_SESS_ID_BUG")
+  @js.native
+  def SSL_OP_MICROSOFT_SESS_ID_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_MICROSOFT_SESS_ID_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_MICROSOFT_SESS_ID_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_MSIE_SSLV2_RSA_PADDING")
+  @js.native
+  def SSL_OP_MSIE_SSLV2_RSA_PADDING: Double = js.native
+  @scala.inline
+  def SSL_OP_MSIE_SSLV2_RSA_PADDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_MSIE_SSLV2_RSA_PADDING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NETSCAPE_CA_DN_BUG")
+  @js.native
+  def SSL_OP_NETSCAPE_CA_DN_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_NETSCAPE_CA_DN_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NETSCAPE_CA_DN_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NETSCAPE_CHALLENGE_BUG")
+  @js.native
+  def SSL_OP_NETSCAPE_CHALLENGE_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_NETSCAPE_CHALLENGE_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NETSCAPE_CHALLENGE_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG")
+  @js.native
+  def SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG")
+  @js.native
+  def SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_COMPRESSION")
+  @js.native
+  def SSL_OP_NO_COMPRESSION: Double = js.native
+  @scala.inline
+  def SSL_OP_NO_COMPRESSION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_COMPRESSION")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_QUERY_MTU")
+  @js.native
+  def SSL_OP_NO_QUERY_MTU: Double = js.native
+  @scala.inline
+  def SSL_OP_NO_QUERY_MTU_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_QUERY_MTU")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION")
+  @js.native
+  def SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: Double = js.native
+  @scala.inline
+  def SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_NO_TICKET")
+  @js.native
+  def SSL_OP_NO_TICKET: Double = js.native
+  @scala.inline
+  def SSL_OP_NO_TICKET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_NO_TICKET")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_PKCS1_CHECK_1")
+  @js.native
+  def SSL_OP_PKCS1_CHECK_1: Double = js.native
+  @scala.inline
+  def SSL_OP_PKCS1_CHECK_1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_PKCS1_CHECK_1")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_PKCS1_CHECK_2")
+  @js.native
+  def SSL_OP_PKCS1_CHECK_2: Double = js.native
+  @scala.inline
+  def SSL_OP_PKCS1_CHECK_2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_PKCS1_CHECK_2")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_SINGLE_DH_USE")
+  @js.native
+  def SSL_OP_SINGLE_DH_USE: Double = js.native
+  @scala.inline
+  def SSL_OP_SINGLE_DH_USE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_SINGLE_DH_USE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_SINGLE_ECDH_USE")
+  @js.native
+  def SSL_OP_SINGLE_ECDH_USE: Double = js.native
+  @scala.inline
+  def SSL_OP_SINGLE_ECDH_USE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_SINGLE_ECDH_USE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_SSLEAY_080_CLIENT_DH_BUG")
+  @js.native
+  def SSL_OP_SSLEAY_080_CLIENT_DH_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_SSLEAY_080_CLIENT_DH_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_SSLEAY_080_CLIENT_DH_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG")
+  @js.native
+  def SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_TLS_BLOCK_PADDING_BUG")
+  @js.native
+  def SSL_OP_TLS_BLOCK_PADDING_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_TLS_BLOCK_PADDING_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_TLS_BLOCK_PADDING_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_TLS_D5_BUG")
+  @js.native
+  def SSL_OP_TLS_D5_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_TLS_D5_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_TLS_D5_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "SSL_OP_TLS_ROLLBACK_BUG")
+  @js.native
+  def SSL_OP_TLS_ROLLBACK_BUG: Double = js.native
+  @scala.inline
+  def SSL_OP_TLS_ROLLBACK_BUG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSL_OP_TLS_ROLLBACK_BUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "S_IFCHR")
+  @js.native
+  def S_IFCHR: Double = js.native
+  @scala.inline
+  def S_IFCHR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S_IFCHR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "S_IFDIR")
+  @js.native
+  def S_IFDIR: Double = js.native
+  @scala.inline
+  def S_IFDIR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S_IFDIR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "S_IFLNK")
+  @js.native
+  def S_IFLNK: Double = js.native
+  @scala.inline
+  def S_IFLNK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S_IFLNK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "S_IFMT")
+  @js.native
+  def S_IFMT: Double = js.native
+  @scala.inline
+  def S_IFMT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S_IFMT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "S_IFREG")
+  @js.native
+  def S_IFREG: Double = js.native
+  @scala.inline
+  def S_IFREG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S_IFREG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "UV_UDP_REUSEADDR")
+  @js.native
+  def UV_UDP_REUSEADDR: Double = js.native
+  @scala.inline
+  def UV_UDP_REUSEADDR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UV_UDP_REUSEADDR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEACCES")
+  @js.native
+  def WSAEACCES: Double = js.native
+  @scala.inline
+  def WSAEACCES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEACCES")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEADDRINUSE")
+  @js.native
+  def WSAEADDRINUSE: Double = js.native
+  @scala.inline
+  def WSAEADDRINUSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEADDRINUSE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEADDRNOTAVAIL")
+  @js.native
+  def WSAEADDRNOTAVAIL: Double = js.native
+  @scala.inline
+  def WSAEADDRNOTAVAIL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEADDRNOTAVAIL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEAFNOSUPPORT")
+  @js.native
+  def WSAEAFNOSUPPORT: Double = js.native
+  @scala.inline
+  def WSAEAFNOSUPPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEAFNOSUPPORT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEALREADY")
+  @js.native
+  def WSAEALREADY: Double = js.native
+  @scala.inline
+  def WSAEALREADY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEALREADY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEBADF")
+  @js.native
+  def WSAEBADF: Double = js.native
+  @scala.inline
+  def WSAEBADF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEBADF")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAECANCELLED")
+  @js.native
+  def WSAECANCELLED: Double = js.native
+  @scala.inline
+  def WSAECANCELLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAECANCELLED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAECONNABORTED")
+  @js.native
+  def WSAECONNABORTED: Double = js.native
+  @scala.inline
+  def WSAECONNABORTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAECONNABORTED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAECONNREFUSED")
+  @js.native
+  def WSAECONNREFUSED: Double = js.native
+  @scala.inline
+  def WSAECONNREFUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAECONNREFUSED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAECONNRESET")
+  @js.native
+  def WSAECONNRESET: Double = js.native
+  @scala.inline
+  def WSAECONNRESET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAECONNRESET")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEDESTADDRREQ")
+  @js.native
+  def WSAEDESTADDRREQ: Double = js.native
+  @scala.inline
+  def WSAEDESTADDRREQ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEDESTADDRREQ")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEDISCON")
+  @js.native
+  def WSAEDISCON: Double = js.native
+  @scala.inline
+  def WSAEDISCON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEDISCON")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEDQUOT")
+  @js.native
+  def WSAEDQUOT: Double = js.native
+  @scala.inline
+  def WSAEDQUOT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEDQUOT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEFAULT")
+  @js.native
+  def WSAEFAULT: Double = js.native
+  @scala.inline
+  def WSAEFAULT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEFAULT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEHOSTDOWN")
+  @js.native
+  def WSAEHOSTDOWN: Double = js.native
+  @scala.inline
+  def WSAEHOSTDOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEHOSTDOWN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEHOSTUNREACH")
+  @js.native
+  def WSAEHOSTUNREACH: Double = js.native
+  @scala.inline
+  def WSAEHOSTUNREACH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEHOSTUNREACH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEINPROGRESS")
+  @js.native
+  def WSAEINPROGRESS: Double = js.native
+  @scala.inline
+  def WSAEINPROGRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEINPROGRESS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEINTR")
+  @js.native
+  def WSAEINTR: Double = js.native
+  @scala.inline
+  def WSAEINTR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEINTR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEINVAL")
+  @js.native
+  def WSAEINVAL: Double = js.native
+  
+  @JSImport("constants", "WSAEINVALIDPROCTABLE")
+  @js.native
+  def WSAEINVALIDPROCTABLE: Double = js.native
+  @scala.inline
+  def WSAEINVALIDPROCTABLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEINVALIDPROCTABLE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEINVALIDPROVIDER")
+  @js.native
+  def WSAEINVALIDPROVIDER: Double = js.native
+  @scala.inline
+  def WSAEINVALIDPROVIDER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEINVALIDPROVIDER")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def WSAEINVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEINVAL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEISCONN")
+  @js.native
+  def WSAEISCONN: Double = js.native
+  @scala.inline
+  def WSAEISCONN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEISCONN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAELOOP")
+  @js.native
+  def WSAELOOP: Double = js.native
+  @scala.inline
+  def WSAELOOP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAELOOP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEMFILE")
+  @js.native
+  def WSAEMFILE: Double = js.native
+  @scala.inline
+  def WSAEMFILE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEMFILE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEMSGSIZE")
+  @js.native
+  def WSAEMSGSIZE: Double = js.native
+  @scala.inline
+  def WSAEMSGSIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEMSGSIZE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENAMETOOLONG")
+  @js.native
+  def WSAENAMETOOLONG: Double = js.native
+  @scala.inline
+  def WSAENAMETOOLONG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENAMETOOLONG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENETDOWN")
+  @js.native
+  def WSAENETDOWN: Double = js.native
+  @scala.inline
+  def WSAENETDOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENETDOWN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENETRESET")
+  @js.native
+  def WSAENETRESET: Double = js.native
+  @scala.inline
+  def WSAENETRESET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENETRESET")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENETUNREACH")
+  @js.native
+  def WSAENETUNREACH: Double = js.native
+  @scala.inline
+  def WSAENETUNREACH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENETUNREACH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENOBUFS")
+  @js.native
+  def WSAENOBUFS: Double = js.native
+  @scala.inline
+  def WSAENOBUFS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENOBUFS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENOMORE")
+  @js.native
+  def WSAENOMORE: Double = js.native
+  @scala.inline
+  def WSAENOMORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENOMORE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENOPROTOOPT")
+  @js.native
+  def WSAENOPROTOOPT: Double = js.native
+  @scala.inline
+  def WSAENOPROTOOPT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENOPROTOOPT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENOTCONN")
+  @js.native
+  def WSAENOTCONN: Double = js.native
+  @scala.inline
+  def WSAENOTCONN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENOTCONN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENOTEMPTY")
+  @js.native
+  def WSAENOTEMPTY: Double = js.native
+  @scala.inline
+  def WSAENOTEMPTY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENOTEMPTY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAENOTSOCK")
+  @js.native
+  def WSAENOTSOCK: Double = js.native
+  @scala.inline
+  def WSAENOTSOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAENOTSOCK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEOPNOTSUPP")
+  @js.native
+  def WSAEOPNOTSUPP: Double = js.native
+  @scala.inline
+  def WSAEOPNOTSUPP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEOPNOTSUPP")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEPFNOSUPPORT")
+  @js.native
+  def WSAEPFNOSUPPORT: Double = js.native
+  @scala.inline
+  def WSAEPFNOSUPPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEPFNOSUPPORT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEPROCLIM")
+  @js.native
+  def WSAEPROCLIM: Double = js.native
+  @scala.inline
+  def WSAEPROCLIM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEPROCLIM")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEPROTONOSUPPORT")
+  @js.native
+  def WSAEPROTONOSUPPORT: Double = js.native
+  @scala.inline
+  def WSAEPROTONOSUPPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEPROTONOSUPPORT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEPROTOTYPE")
+  @js.native
+  def WSAEPROTOTYPE: Double = js.native
+  @scala.inline
+  def WSAEPROTOTYPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEPROTOTYPE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEPROVIDERFAILEDINIT")
+  @js.native
+  def WSAEPROVIDERFAILEDINIT: Double = js.native
+  @scala.inline
+  def WSAEPROVIDERFAILEDINIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEPROVIDERFAILEDINIT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEREFUSED")
+  @js.native
+  def WSAEREFUSED: Double = js.native
+  @scala.inline
+  def WSAEREFUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEREFUSED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEREMOTE")
+  @js.native
+  def WSAEREMOTE: Double = js.native
+  @scala.inline
+  def WSAEREMOTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEREMOTE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAESHUTDOWN")
+  @js.native
+  def WSAESHUTDOWN: Double = js.native
+  @scala.inline
+  def WSAESHUTDOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAESHUTDOWN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAESOCKTNOSUPPORT")
+  @js.native
+  def WSAESOCKTNOSUPPORT: Double = js.native
+  @scala.inline
+  def WSAESOCKTNOSUPPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAESOCKTNOSUPPORT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAESTALE")
+  @js.native
+  def WSAESTALE: Double = js.native
+  @scala.inline
+  def WSAESTALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAESTALE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAETIMEDOUT")
+  @js.native
+  def WSAETIMEDOUT: Double = js.native
+  @scala.inline
+  def WSAETIMEDOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAETIMEDOUT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAETOOMANYREFS")
+  @js.native
+  def WSAETOOMANYREFS: Double = js.native
+  @scala.inline
+  def WSAETOOMANYREFS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAETOOMANYREFS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEUSERS")
+  @js.native
+  def WSAEUSERS: Double = js.native
+  @scala.inline
+  def WSAEUSERS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEUSERS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAEWOULDBLOCK")
+  @js.native
+  def WSAEWOULDBLOCK: Double = js.native
+  @scala.inline
+  def WSAEWOULDBLOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAEWOULDBLOCK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSANOTINITIALISED")
+  @js.native
+  def WSANOTINITIALISED: Double = js.native
+  @scala.inline
+  def WSANOTINITIALISED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSANOTINITIALISED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSASERVICE_NOT_FOUND")
+  @js.native
+  def WSASERVICE_NOT_FOUND: Double = js.native
+  @scala.inline
+  def WSASERVICE_NOT_FOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSASERVICE_NOT_FOUND")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSASYSCALLFAILURE")
+  @js.native
+  def WSASYSCALLFAILURE: Double = js.native
+  @scala.inline
+  def WSASYSCALLFAILURE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSASYSCALLFAILURE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSASYSNOTREADY")
+  @js.native
+  def WSASYSNOTREADY: Double = js.native
+  @scala.inline
+  def WSASYSNOTREADY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSASYSNOTREADY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSATYPE_NOT_FOUND")
+  @js.native
+  def WSATYPE_NOT_FOUND: Double = js.native
+  @scala.inline
+  def WSATYPE_NOT_FOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSATYPE_NOT_FOUND")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSAVERNOTSUPPORTED")
+  @js.native
+  def WSAVERNOTSUPPORTED: Double = js.native
+  @scala.inline
+  def WSAVERNOTSUPPORTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSAVERNOTSUPPORTED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSA_E_CANCELLED")
+  @js.native
+  def WSA_E_CANCELLED: Double = js.native
+  @scala.inline
+  def WSA_E_CANCELLED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSA_E_CANCELLED")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "WSA_E_NO_MORE")
+  @js.native
+  def WSA_E_NO_MORE: Double = js.native
+  @scala.inline
+  def WSA_E_NO_MORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WSA_E_NO_MORE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "W_OK")
+  @js.native
+  def W_OK: Double = js.native
+  @scala.inline
+  def W_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("W_OK")(x.asInstanceOf[js.Any])
+  
+  @JSImport("constants", "X_OK")
+  @js.native
+  def X_OK: Double = js.native
+  @scala.inline
+  def X_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X_OK")(x.asInstanceOf[js.Any])
 }

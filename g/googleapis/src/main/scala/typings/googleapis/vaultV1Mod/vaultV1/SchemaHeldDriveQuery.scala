@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Query options for Drive holds.
   */
 @js.native
-trait SchemaHeldDriveQuery extends js.Object {
+trait SchemaHeldDriveQuery extends StObject {
   
   /**
     * If true, include files in Team Drives in the hold.
@@ -24,24 +25,12 @@ object SchemaHeldDriveQuery {
   }
   
   @scala.inline
-  implicit class SchemaHeldDriveQueryOps[Self <: SchemaHeldDriveQuery] (val x: Self) extends AnyVal {
+  implicit class SchemaHeldDriveQueryMutableBuilder[Self <: SchemaHeldDriveQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeTeamDriveFiles(value: Boolean): Self = StObject.set(x, "includeTeamDriveFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeTeamDriveFiles(value: Boolean): Self = this.set("includeTeamDriveFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeTeamDriveFiles: Self = this.set("includeTeamDriveFiles", js.undefined)
+    def setIncludeTeamDriveFilesUndefined: Self = StObject.set(x, "includeTeamDriveFiles", js.undefined)
   }
 }

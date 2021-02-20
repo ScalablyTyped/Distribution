@@ -25,12 +25,13 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkProps extends js.Object {
+trait LinkProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.native
   
@@ -76,112 +77,100 @@ object LinkProps {
   }
   
   @scala.inline
-  implicit class LinkPropsOps[Self <: LinkProps] (val x: Self) extends AnyVal {
+  implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibilitySelected(value: Boolean): Self = StObject.set(x, "accessibilitySelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setAccessibilitySelectedUndefined: Self = StObject.set(x, "accessibilitySelected", js.undefined)
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setAccessibilitySelected(value: Boolean): Self = this.set("accessibilitySelected", value.asInstanceOf[js.Any])
+    def setHoverStyle(value: none | underline): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibilitySelected: Self = this.set("accessibilitySelected", js.undefined)
+    def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverStyle(value: none | underline): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
+    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOnBlur(value: /* arg */ js.Object with Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
-    
-    @scala.inline
-    def setOnBlur(value: /* arg */ js.Object with Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
     def setOnClick(
       value: /* arg */ js.Object with (Event[
           (MouseEvent[HTMLAnchorElement, NativeMouseEvent]) | KeyboardEvent[HTMLAnchorElement]
         ]) => Unit
-    ): Self = this.set("onClick", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* arg */ js.Object with Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: /* arg */ js.Object with Event[FocusEvent[HTMLAnchorElement]] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setRel(value: none | nofollow): Self = this.set("rel", value.asInstanceOf[js.Any])
+    def setRel(value: none | nofollow): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRel: Self = this.set("rel", js.undefined)
+    def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     @scala.inline
-    def setRole(value: tab): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRole(value: tab): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def setRounding(value: pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = this.set("rounding", value.asInstanceOf[js.Any])
+    def setRounding(value: pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRounding: Self = this.set("rounding", js.undefined)
+    def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
     
     @scala.inline
-    def setTapStyle(value: none | compress): Self = this.set("tapStyle", value.asInstanceOf[js.Any])
+    def setTapStyle(value: none | compress): Self = StObject.set(x, "tapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTapStyle: Self = this.set("tapStyle", js.undefined)
+    def setTapStyleUndefined: Self = StObject.set(x, "tapStyle", js.undefined)
     
     @scala.inline
-    def setTarget(value: self | blank): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: self | blank): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetNull: Self = StObject.set(x, "target", null)
     
     @scala.inline
-    def setTargetNull: Self = this.set("target", null)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

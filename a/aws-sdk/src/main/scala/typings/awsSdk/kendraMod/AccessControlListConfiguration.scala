@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessControlListConfiguration extends js.Object {
+trait AccessControlListConfiguration extends StObject {
   
   /**
     * Path to the AWS S3 bucket that contains the ACL files.
@@ -21,24 +22,12 @@ object AccessControlListConfiguration {
   }
   
   @scala.inline
-  implicit class AccessControlListConfigurationOps[Self <: AccessControlListConfiguration] (val x: Self) extends AnyVal {
+  implicit class AccessControlListConfigurationMutableBuilder[Self <: AccessControlListConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyPath(value: S3ObjectKey): Self = StObject.set(x, "KeyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyPath(value: S3ObjectKey): Self = this.set("KeyPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPath: Self = this.set("KeyPath", js.undefined)
+    def setKeyPathUndefined: Self = StObject.set(x, "KeyPath", js.undefined)
   }
 }

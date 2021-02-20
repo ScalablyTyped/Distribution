@@ -1,5 +1,6 @@
 package typings.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.opentok.opentokStrings.publisher
   - typings.opentok.opentokStrings.moderator
 */
-trait Role extends js.Object
+trait Role extends StObject
 object Role {
   
   @scala.inline

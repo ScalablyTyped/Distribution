@@ -1,12 +1,13 @@
 package typings.semanticUiTab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.Tab.ErrorSettings._Impl, 'noContent'> */
 @js.native
-trait PickImplnoContent extends js.Object {
+trait PickImplnoContent extends StObject {
   
   var noContent: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImplnoContent {
   }
   
   @scala.inline
-  implicit class PickImplnoContentOps[Self <: PickImplnoContent] (val x: Self) extends AnyVal {
+  implicit class PickImplnoContentMutableBuilder[Self <: PickImplnoContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNoContent(value: String): Self = this.set("noContent", value.asInstanceOf[js.Any])
+    def setNoContent(value: String): Self = StObject.set(x, "noContent", value.asInstanceOf[js.Any])
   }
 }

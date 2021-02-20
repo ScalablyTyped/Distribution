@@ -17,16 +17,16 @@ import typings.inversifyExpressUtils.resultsMod.ResponseMessageResult
 import typings.inversifyExpressUtils.resultsMod.StatusCodeResult
 import typings.node.urlMod.URL_
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-express-utils/dts/base_http_controller", JSImport.Namespace)
-@js.native
-object baseHttpControllerMod extends js.Object {
+object baseHttpControllerMod {
   
+  @JSImport("inversify-express-utils/dts/base_http_controller", "BaseHttpController")
   @js.native
-  class BaseHttpController () extends js.Object {
+  class BaseHttpController () extends StObject {
     
     /* protected */ def badRequest(): BadRequestResult = js.native
     /* protected */ def badRequest(message: String): BadRequestErrorMessageResult = js.native

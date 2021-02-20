@@ -2,6 +2,7 @@ package typings.leaflet.mod
 
 import typings.geojson.mod.MultiPolygon
 import typings.geojson.mod.Polygon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

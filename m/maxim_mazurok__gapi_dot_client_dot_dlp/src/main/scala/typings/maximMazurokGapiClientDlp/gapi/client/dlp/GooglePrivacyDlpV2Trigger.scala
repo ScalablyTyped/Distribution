@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2Trigger extends js.Object {
+trait GooglePrivacyDlpV2Trigger extends StObject {
   
   /**
     * For use with hybrid jobs. Jobs must be manually created and finished. Early access feature is in a pre-release state and might change or have limited support. For more information,
@@ -25,30 +26,18 @@ object GooglePrivacyDlpV2Trigger {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2TriggerOps[Self <: GooglePrivacyDlpV2Trigger] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2TriggerMutableBuilder[Self <: GooglePrivacyDlpV2Trigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManual(value: js.Any): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: GooglePrivacyDlpV2Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManual(value: js.Any): Self = this.set("manual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManual: Self = this.set("manual", js.undefined)
-    
-    @scala.inline
-    def setSchedule(value: GooglePrivacyDlpV2Schedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }
 }

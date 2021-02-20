@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "amap-js-api-map-type"
-version := "1.4-dt-20200106Z-8d73fd"
+version := "1.4-dt-20200106Z-758ff9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20201028Z-bebfa6",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20201028Z-2b4d5c",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

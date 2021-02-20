@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Component extends js.Object {
+trait Component extends StObject {
   
   /**
     * The abbreviated form of text. If this is present, there will also be an abbr_priority value.
@@ -61,54 +62,42 @@ object Component {
   }
   
   @scala.inline
-  implicit class ComponentOps[Self <: Component] (val x: Self) extends AnyVal {
+  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbbr_priority(value: Double): Self = StObject.set(x, "abbr_priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAbbr_priorityUndefined: Self = StObject.set(x, "abbr_priority", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDirections(value: js.Array[String]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbr(value: String): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
     @scala.inline
-    def deleteAbbr: Self = this.set("abbr", js.undefined)
+    def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
     @scala.inline
-    def setAbbr_priority(value: Double): Self = this.set("abbr_priority", value.asInstanceOf[js.Any])
+    def setImageBaseURL(value: String): Self = StObject.set(x, "imageBaseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAbbr_priority: Self = this.set("abbr_priority", js.undefined)
+    def setImageBaseURLUndefined: Self = StObject.set(x, "imageBaseURL", js.undefined)
     
     @scala.inline
-    def setDirectionsVarargs(value: String*): Self = this.set("directions", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: js.Array[String]): Self = this.set("directions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirections: Self = this.set("directions", js.undefined)
-    
-    @scala.inline
-    def setImageBaseURL(value: String): Self = this.set("imageBaseURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageBaseURL: Self = this.set("imageBaseURL", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

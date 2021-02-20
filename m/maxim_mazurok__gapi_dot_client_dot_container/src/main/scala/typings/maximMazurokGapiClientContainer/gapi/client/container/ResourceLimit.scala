@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceLimit extends js.Object {
+trait ResourceLimit extends StObject {
   
   /** Maximum amount of the resource in the cluster. */
   var maximum: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ResourceLimit {
   }
   
   @scala.inline
-  implicit class ResourceLimitOps[Self <: ResourceLimit] (val x: Self) extends AnyVal {
+  implicit class ResourceLimitMutableBuilder[Self <: ResourceLimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: String): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: String): Self = this.set("minimum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

@@ -1,22 +1,49 @@
 package typings.reactNativeMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-maps", "MAP_TYPES")
-@js.native
-object MAP_TYPES extends js.Object {
+object MAP_TYPES {
   
-  var HYBRID: MapTypes = js.native
+  @JSImport("react-native-maps", "MAP_TYPES")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MUTEDSTANDARD: MapTypes = js.native
+  @JSImport("react-native-maps", "MAP_TYPES.HYBRID")
+  @js.native
+  def HYBRID: MapTypes = js.native
+  @scala.inline
+  def HYBRID_=(x: MapTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HYBRID")(x.asInstanceOf[js.Any])
   
-  var NONE: MapTypes = js.native
+  @JSImport("react-native-maps", "MAP_TYPES.MUTEDSTANDARD")
+  @js.native
+  def MUTEDSTANDARD: MapTypes = js.native
+  @scala.inline
+  def MUTEDSTANDARD_=(x: MapTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUTEDSTANDARD")(x.asInstanceOf[js.Any])
   
-  var SATELLITE: MapTypes = js.native
+  @JSImport("react-native-maps", "MAP_TYPES.NONE")
+  @js.native
+  def NONE: MapTypes = js.native
+  @scala.inline
+  def NONE_=(x: MapTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
   
-  var STANDARD: MapTypes = js.native
+  @JSImport("react-native-maps", "MAP_TYPES.SATELLITE")
+  @js.native
+  def SATELLITE: MapTypes = js.native
+  @scala.inline
+  def SATELLITE_=(x: MapTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SATELLITE")(x.asInstanceOf[js.Any])
   
-  var TERRAIN: MapTypes = js.native
+  @JSImport("react-native-maps", "MAP_TYPES.STANDARD")
+  @js.native
+  def STANDARD: MapTypes = js.native
+  @scala.inline
+  def STANDARD_=(x: MapTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANDARD")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-maps", "MAP_TYPES.TERRAIN")
+  @js.native
+  def TERRAIN: MapTypes = js.native
+  @scala.inline
+  def TERRAIN_=(x: MapTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TERRAIN")(x.asInstanceOf[js.Any])
 }

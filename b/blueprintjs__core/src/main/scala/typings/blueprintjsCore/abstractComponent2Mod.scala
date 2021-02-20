@@ -1,14 +1,14 @@
 package typings.blueprintjsCore
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core/lib/esm/common/abstractComponent2", JSImport.Namespace)
-@js.native
-object abstractComponent2Mod extends js.Object {
+object abstractComponent2Mod {
   
+  @JSImport("@blueprintjs/core/lib/esm/common/abstractComponent2", "AbstractComponent2")
   @js.native
   abstract class AbstractComponent2[P, S, SS] protected () extends Component[P, S, SS] {
     def this(props: P) = this()

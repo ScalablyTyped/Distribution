@@ -2,6 +2,7 @@ package typings.p2.mod
 
 import typings.p2.anon.OptimalDecomp
 import typings.p2.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,19 +159,45 @@ class Body () extends EventEmitter {
   var world: World = js.native
 }
 /* static members */
-@JSImport("p2", "Body")
-@js.native
-object Body extends js.Object {
+object Body {
   
-  var AWAKE: Double = js.native
+  @JSImport("p2", "Body")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DYNAMIC: Double = js.native
+  @JSImport("p2", "Body.AWAKE")
+  @js.native
+  def AWAKE: Double = js.native
+  @scala.inline
+  def AWAKE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAKE")(x.asInstanceOf[js.Any])
   
-  var KINEMATIC: Double = js.native
+  @JSImport("p2", "Body.DYNAMIC")
+  @js.native
+  def DYNAMIC: Double = js.native
+  @scala.inline
+  def DYNAMIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC")(x.asInstanceOf[js.Any])
   
-  var SLEEPING: Double = js.native
+  @JSImport("p2", "Body.KINEMATIC")
+  @js.native
+  def KINEMATIC: Double = js.native
+  @scala.inline
+  def KINEMATIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KINEMATIC")(x.asInstanceOf[js.Any])
   
-  var SLEEPY: Double = js.native
+  @JSImport("p2", "Body.SLEEPING")
+  @js.native
+  def SLEEPING: Double = js.native
+  @scala.inline
+  def SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPING")(x.asInstanceOf[js.Any])
   
-  var STATIC: Double = js.native
+  @JSImport("p2", "Body.SLEEPY")
+  @js.native
+  def SLEEPY: Double = js.native
+  @scala.inline
+  def SLEEPY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("p2", "Body.STATIC")
+  @js.native
+  def STATIC: Double = js.native
+  @scala.inline
+  def STATIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATIC")(x.asInstanceOf[js.Any])
 }

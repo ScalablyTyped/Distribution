@@ -1,6 +1,7 @@
 package typings.googlemaps.global.google.maps
 
 import typings.googlemaps.google.maps.ReadonlyMarkerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,15 +21,15 @@ class Marker ()
   extends typings.googlemaps.google.maps.Marker {
   def this(opts: ReadonlyMarkerOptions) = this()
 }
-/* static members */
-@JSGlobal("google.maps.Marker")
-@js.native
-object Marker extends js.Object {
+object Marker {
   
   /**
     * The maximum default `z-index` that the API will assign to a marker. You
     * may set a higher `z-index` to bring a marker to the front.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.MAX_ZINDEX Maps JavaScript API}
     */
+  /* static member */
+  @JSGlobal("google.maps.Marker.MAX_ZINDEX")
+  @js.native
   val MAX_ZINDEX: Double = js.native
 }

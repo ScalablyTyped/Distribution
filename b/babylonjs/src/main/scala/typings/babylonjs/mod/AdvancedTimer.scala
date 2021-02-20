@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.timerMod.ITimerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Heading extends js.Object {
+trait Heading extends StObject {
   
   var heading: Double = js.native
   
@@ -22,27 +23,15 @@ object Heading {
   }
   
   @scala.inline
-  implicit class HeadingOps[Self <: Heading] (val x: Self) extends AnyVal {
+  implicit class HeadingMutableBuilder[Self <: Heading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoll(value: Double): Self = this.set("roll", value.asInstanceOf[js.Any])
+    def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
   }
 }

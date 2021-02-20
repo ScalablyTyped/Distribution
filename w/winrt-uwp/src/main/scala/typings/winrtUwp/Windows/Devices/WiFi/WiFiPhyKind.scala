@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiPhyKind extends js.Object
+sealed trait WiFiPhyKind extends StObject
 /** Describes PHY types supported by standard 802.11. */
 @JSGlobal("Windows.Devices.WiFi.WiFiPhyKind")
 @js.native
-object WiFiPhyKind extends js.Object {
+object WiFiPhyKind extends StObject {
   
   /** Direct sequence, spread-spectrum (DSSS) PHY. */
   @js.native

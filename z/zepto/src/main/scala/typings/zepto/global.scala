@@ -1,15 +1,22 @@
 package typings.zepto
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Zepto: js.Function1[/* fn */ js.Function1[/* $ */ ZeptoStatic, Unit], Unit] = js.native
+  @JSGlobal("Zepto")
+  @js.native
+  def Zepto: js.Function1[/* fn */ js.Function1[/* $ */ ZeptoStatic, Unit], Unit] = js.native
+  @scala.inline
+  def Zepto_=(x: js.Function1[/* fn */ js.Function1[/* $ */ ZeptoStatic, Unit], Unit]): Unit = js.Dynamic.global.updateDynamic("Zepto")(x.asInstanceOf[js.Any])
   
-  @JSName("$")
-  var _empty: ZeptoStatic = js.native
+  @JSGlobal("$")
+  @js.native
+  def _empty: ZeptoStatic = js.native
+  
+  @scala.inline
+  def _empty_=(x: ZeptoStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
 }

@@ -46,6 +46,7 @@ import typings.openfin.webcontentsMod.CertificateErrorEvent
 import typings.openfin.webcontentsMod.PageTitleUpdatedEvent
 import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
 import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -305,207 +306,195 @@ object WindowEvents {
   }
   
   @scala.inline
-  implicit class WindowEventsOps[Self <: WindowEvents] (val x: Self) extends AnyVal {
+  implicit class WindowEventsMutableBuilder[Self <: WindowEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAuth-requested`(value: WindowAuthRequestedEvent[window, `auth-requested`]): Self = StObject.set(x, "auth-requested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setBegin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[window, `begin-user-bounds-changing`]): Self = StObject.set(x, "begin-user-bounds-changing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlurred(value: WindowEvent[String, String]): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAuth-requested`(value: WindowAuthRequestedEvent[window, `auth-requested`]): Self = this.set("auth-requested", value.asInstanceOf[js.Any])
+    def `setBounds-changed`(value: WindowBoundsChange[window, `bounds-changed`]): Self = StObject.set(x, "bounds-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBegin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[window, `begin-user-bounds-changing`]): Self = this.set("begin-user-bounds-changing", value.asInstanceOf[js.Any])
+    def `setBounds-changing`(value: WindowBoundsChange[window, `bounds-changing`]): Self = StObject.set(x, "bounds-changing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurred(value: WindowEvent[String, String]): Self = this.set("blurred", value.asInstanceOf[js.Any])
+    def `setCertificate-error`(value: CertificateErrorEvent[String, String]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBounds-changed`(value: WindowBoundsChange[window, `bounds-changed`]): Self = this.set("bounds-changed", value.asInstanceOf[js.Any])
+    def `setClose-requested`(value: WindowEvent[window, `close-requested`]): Self = StObject.set(x, "close-requested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBounds-changing`(value: WindowBoundsChange[window, `bounds-changing`]): Self = this.set("bounds-changing", value.asInstanceOf[js.Any])
+    def setClosed(value: WindowEvent[window, closed]): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCertificate-error`(value: CertificateErrorEvent[String, String]): Self = this.set("certificate-error", value.asInstanceOf[js.Any])
+    def setClosing(value: WindowEvent[window, closing]): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setClose-requested`(value: WindowEvent[window, `close-requested`]): Self = this.set("close-requested", value.asInstanceOf[js.Any])
+    def setCrashed(value: CrashedEvent with (WindowEvent[String, String])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: WindowEvent[window, closed]): Self = this.set("closed", value.asInstanceOf[js.Any])
+    def `setDid-change-theme-color`(value: WindowEvent[String, String]): Self = StObject.set(x, "did-change-theme-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosing(value: WindowEvent[window, closing]): Self = this.set("closing", value.asInstanceOf[js.Any])
+    def `setDisabled-movement-bounds-changed`(value: WindowBoundsChange[window, `disabled-movement-bounds-changed`]): Self = StObject.set(x, "disabled-movement-bounds-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrashed(value: CrashedEvent with (WindowEvent[String, String])): Self = this.set("crashed", value.asInstanceOf[js.Any])
+    def `setDisabled-movement-bounds-changing`(value: WindowBoundsChange[window, `disabled-movement-bounds-changing`]): Self = StObject.set(x, "disabled-movement-bounds-changing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDid-change-theme-color`(value: WindowEvent[String, String]): Self = this.set("did-change-theme-color", value.asInstanceOf[js.Any])
+    def setEmbedded(value: WindowEvent[window, embedded]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDisabled-movement-bounds-changed`(value: WindowBoundsChange[window, `disabled-movement-bounds-changed`]): Self = this.set("disabled-movement-bounds-changed", value.asInstanceOf[js.Any])
+    def `setEnd-user-bounds-changing`(value: WindowEndBoundsChangingEvent[window, `end-user-bounds-changing`]): Self = StObject.set(x, "end-user-bounds-changing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDisabled-movement-bounds-changing`(value: WindowBoundsChange[window, `disabled-movement-bounds-changing`]): Self = this.set("disabled-movement-bounds-changing", value.asInstanceOf[js.Any])
+    def `setExternal-process-exited`(value: WindowExternalProcessExitedEvent[window, `external-process-exited`]): Self = StObject.set(x, "external-process-exited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedded(value: WindowEvent[window, embedded]): Self = this.set("embedded", value.asInstanceOf[js.Any])
+    def `setExternal-process-started`(value: WindowExternalProcessStartedEvent[window, `external-process-started`]): Self = StObject.set(x, "external-process-started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEnd-user-bounds-changing`(value: WindowEndBoundsChangingEvent[window, `end-user-bounds-changing`]): Self = this.set("end-user-bounds-changing", value.asInstanceOf[js.Any])
+    def setFocused(value: WindowEvent[String, String]): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setExternal-process-exited`(value: WindowExternalProcessExitedEvent[window, `external-process-exited`]): Self = this.set("external-process-exited", value.asInstanceOf[js.Any])
+    def `setFound-in-page`(value: WindowEvent[String, String]): Self = StObject.set(x, "found-in-page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setExternal-process-started`(value: WindowExternalProcessStartedEvent[window, `external-process-started`]): Self = this.set("external-process-started", value.asInstanceOf[js.Any])
+    def `setGroup-changed`(value: WindowGroupChanged[window, `group-changed`]): Self = StObject.set(x, "group-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: WindowEvent[String, String]): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setHidden(value: WindowHiddenEvent[window, hidden]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFound-in-page`(value: WindowEvent[String, String]): Self = this.set("found-in-page", value.asInstanceOf[js.Any])
+    def setHotkey(value: InputEvent with (WindowEvent[window, hotkey])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGroup-changed`(value: WindowGroupChanged[window, `group-changed`]): Self = this.set("group-changed", value.asInstanceOf[js.Any])
+    def setInitialized(value: WindowEvent[window, initialized]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: WindowHiddenEvent[window, hidden]): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def `setLayout-initialized`(value: WindowEvent[window, `layout-initialized`]): Self = StObject.set(x, "layout-initialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotkey(value: InputEvent with (WindowEvent[window, hotkey])): Self = this.set("hotkey", value.asInstanceOf[js.Any])
+    def `setLayout-ready`(value: WindowEvent[window, `layout-ready`]): Self = StObject.set(x, "layout-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialized(value: WindowEvent[window, initialized]): Self = this.set("initialized", value.asInstanceOf[js.Any])
+    def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLayout-initialized`(value: WindowEvent[window, `layout-initialized`]): Self = this.set("layout-initialized", value.asInstanceOf[js.Any])
+    def setMaximized(value: WindowEvent[window, maximized]): Self = StObject.set(x, "maximized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLayout-ready`(value: WindowEvent[window, `layout-ready`]): Self = this.set("layout-ready", value.asInstanceOf[js.Any])
+    def setMinimized(value: WindowEvent[window, minimized]): Self = StObject.set(x, "minimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListenerRemoved(value: String): Self = this.set("listenerRemoved", value.asInstanceOf[js.Any])
+    def `setNavigation-rejected`(value: WindowNavigationRejectedEvent[String, String]): Self = StObject.set(x, "navigation-rejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximized(value: WindowEvent[window, maximized]): Self = this.set("maximized", value.asInstanceOf[js.Any])
+    def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimized(value: WindowEvent[window, minimized]): Self = this.set("minimized", value.asInstanceOf[js.Any])
+    def `setOptions-changed`(value: WindowOptionsChangedEvent[window, `options-changed`]): Self = StObject.set(x, "options-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setNavigation-rejected`(value: WindowNavigationRejectedEvent[String, String]): Self = this.set("navigation-rejected", value.asInstanceOf[js.Any])
+    def `setPage-favicon-updated`(value: WindowEvent[String, String]): Self = StObject.set(x, "page-favicon-updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewListener(value: String): Self = this.set("newListener", value.asInstanceOf[js.Any])
+    def `setPage-title-updated`(value: PageTitleUpdatedEvent[String, String]): Self = StObject.set(x, "page-title-updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOptions-changed`(value: WindowOptionsChangedEvent[window, `options-changed`]): Self = this.set("options-changed", value.asInstanceOf[js.Any])
+    def `setPerformance-report`(value: WindowPerformanceReport[window, `performance-report`]): Self = StObject.set(x, "performance-report", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage-favicon-updated`(value: WindowEvent[String, String]): Self = this.set("page-favicon-updated", value.asInstanceOf[js.Any])
+    def `setPreload-scripts-state-changed`(value: WindowPreloadScriptsStateChangeEvent[window, `preload-scripts-state-changed`]): Self = StObject.set(x, "preload-scripts-state-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage-title-updated`(value: PageTitleUpdatedEvent[String, String]): Self = this.set("page-title-updated", value.asInstanceOf[js.Any])
+    def `setPreload-scripts-state-changing`(value: WindowPreloadScriptsStateChangeEvent[window, `preload-scripts-state-changing`]): Self = StObject.set(x, "preload-scripts-state-changing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPerformance-report`(value: WindowPerformanceReport[window, `performance-report`]): Self = this.set("performance-report", value.asInstanceOf[js.Any])
+    def setReloaded(value: WindowReloadedEvent[window, reloaded]): Self = StObject.set(x, "reloaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPreload-scripts-state-changed`(value: WindowPreloadScriptsStateChangeEvent[window, `preload-scripts-state-changed`]): Self = this.set("preload-scripts-state-changed", value.asInstanceOf[js.Any])
+    def `setResource-load-failed`(value: WindowResourceLoadFailedEvent[String, String]): Self = StObject.set(x, "resource-load-failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPreload-scripts-state-changing`(value: WindowPreloadScriptsStateChangeEvent[window, `preload-scripts-state-changing`]): Self = this.set("preload-scripts-state-changing", value.asInstanceOf[js.Any])
+    def `setResource-response-received`(value: WindowResourceResponseReceivedEvent[String, String]): Self = StObject.set(x, "resource-response-received", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReloaded(value: WindowReloadedEvent[window, reloaded]): Self = this.set("reloaded", value.asInstanceOf[js.Any])
+    def setRestored(value: WindowEvent[window, restored]): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setResource-load-failed`(value: WindowResourceLoadFailedEvent[String, String]): Self = this.set("resource-load-failed", value.asInstanceOf[js.Any])
+    def `setShow-requested`(value: WindowEvent[window, `show-requested`]): Self = StObject.set(x, "show-requested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setResource-response-received`(value: WindowResourceResponseReceivedEvent[String, String]): Self = this.set("resource-response-received", value.asInstanceOf[js.Any])
+    def setShown(value: WindowEvent[window, shown]): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestored(value: WindowEvent[window, restored]): Self = this.set("restored", value.asInstanceOf[js.Any])
+    def `setUser-movement-disabled`(value: WindowEvent[window, `user-movement-disabled`]): Self = StObject.set(x, "user-movement-disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setShow-requested`(value: WindowEvent[window, `show-requested`]): Self = this.set("show-requested", value.asInstanceOf[js.Any])
+    def `setUser-movement-enabled`(value: WindowEvent[window, `user-movement-enabled`]): Self = StObject.set(x, "user-movement-enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShown(value: WindowEvent[window, shown]): Self = this.set("shown", value.asInstanceOf[js.Any])
+    def `setView-attached`(value: WindowEvent[window, `view-attached`]): Self = StObject.set(x, "view-attached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUser-movement-disabled`(value: WindowEvent[window, `user-movement-disabled`]): Self = this.set("user-movement-disabled", value.asInstanceOf[js.Any])
+    def `setView-blurred`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUser-movement-enabled`(value: WindowEvent[window, `user-movement-enabled`]): Self = this.set("user-movement-enabled", value.asInstanceOf[js.Any])
+    def `setView-crashed`(value: CrashedEvent with (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-attached`(value: WindowEvent[window, `view-attached`]): Self = this.set("view-attached", value.asInstanceOf[js.Any])
+    def `setView-created`(value: CrashedEvent with (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-blurred`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-blurred", value.asInstanceOf[js.Any])
+    def `setView-destroyed`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-crashed`(value: CrashedEvent with (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-crashed", value.asInstanceOf[js.Any])
+    def `setView-detached`(value: ViewDetached[window, `view-detached`]): Self = StObject.set(x, "view-detached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-created`(value: CrashedEvent with (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-created", value.asInstanceOf[js.Any])
+    def `setView-did-change-theme-color`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-destroyed`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-destroyed", value.asInstanceOf[js.Any])
+    def `setView-focused`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-detached`(value: ViewDetached[window, `view-detached`]): Self = this.set("view-detached", value.asInstanceOf[js.Any])
+    def `setView-hidden`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-did-change-theme-color`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-did-change-theme-color", value.asInstanceOf[js.Any])
+    def `setView-hotkey`(value: InputEvent with (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-focused`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-focused", value.asInstanceOf[js.Any])
+    def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-hidden`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-hidden", value.asInstanceOf[js.Any])
+    def `setView-page-favicon-updated`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-hotkey`(value: InputEvent with (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-hotkey", value.asInstanceOf[js.Any])
+    def `setView-page-title-updated`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-navigation-rejected", value.asInstanceOf[js.Any])
+    def `setView-resource-load-failed`(value: (WindowResourceLoadFailedEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-page-favicon-updated`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-page-favicon-updated", value.asInstanceOf[js.Any])
+    def `setView-resource-response-received`(value: (WindowResourceResponseReceivedEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-page-title-updated`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-page-title-updated", value.asInstanceOf[js.Any])
+    def `setView-shown`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-resource-load-failed`(value: (WindowResourceLoadFailedEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-resource-load-failed", value.asInstanceOf[js.Any])
+    def `setView-target-changed`(value: (TargetChangedEvent[window, String]) with PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-resource-response-received`(value: (WindowResourceResponseReceivedEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-resource-response-received", value.asInstanceOf[js.Any])
+    def `setWill-move`(value: WillMoveOrResize[window, `will-move`]): Self = StObject.set(x, "will-move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setView-shown`(value: (WindowEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-shown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setView-target-changed`(value: (TargetChangedEvent[window, String]) with PropagatedViewIdentity): Self = this.set("view-target-changed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setWill-move`(value: WillMoveOrResize[window, `will-move`]): Self = this.set("will-move", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setWill-resize`(value: WillMoveOrResize[window, `will-resize`]): Self = this.set("will-resize", value.asInstanceOf[js.Any])
+    def `setWill-resize`(value: WillMoveOrResize[window, `will-resize`]): Self = StObject.set(x, "will-resize", value.asInstanceOf[js.Any])
   }
 }

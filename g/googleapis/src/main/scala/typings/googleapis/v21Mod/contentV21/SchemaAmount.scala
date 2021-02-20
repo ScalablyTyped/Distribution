@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAmount extends js.Object {
+trait SchemaAmount extends StObject {
   
   /**
     * [required] The pre-tax or post-tax price depending on the location of the
@@ -27,30 +28,18 @@ object SchemaAmount {
   }
   
   @scala.inline
-  implicit class SchemaAmountOps[Self <: SchemaAmount] (val x: Self) extends AnyVal {
+  implicit class SchemaAmountMutableBuilder[Self <: SchemaAmount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriceAmount(value: SchemaPrice): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriceAmountUndefined: Self = StObject.set(x, "priceAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTaxAmount(value: SchemaPrice): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceAmount(value: SchemaPrice): Self = this.set("priceAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriceAmount: Self = this.set("priceAmount", js.undefined)
-    
-    @scala.inline
-    def setTaxAmount(value: SchemaPrice): Self = this.set("taxAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaxAmount: Self = this.set("taxAmount", js.undefined)
+    def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
   }
 }

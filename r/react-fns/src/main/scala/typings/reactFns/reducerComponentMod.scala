@@ -1,14 +1,14 @@
 package typings.reactFns
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-fns/dist/ReducerComponent", JSImport.Namespace)
-@js.native
-object reducerComponentMod extends js.Object {
+object reducerComponentMod {
   
+  @JSImport("react-fns/dist/ReducerComponent", "ReducerComponent")
   @js.native
   class ReducerComponent[P, S, A] protected ()
     extends Component[P, S, js.Any] {

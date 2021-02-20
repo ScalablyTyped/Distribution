@@ -1,5 +1,6 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,45 +29,33 @@ object InlineFragment {
   }
   
   @scala.inline
-  implicit class InlineFragmentOps[Self <: InlineFragment] (val x: Self) extends AnyVal {
+  implicit class InlineFragmentMutableBuilder[Self <: InlineFragment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectives(value: js.Array[Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionSet(value: SelectionSet): Self = this.set("selectionSet", value.asInstanceOf[js.Any])
+    def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesVarargs(value: Directive*): Self = this.set("directives", js.Array(value :_*))
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setDirectives(value: js.Array[Directive]): Self = this.set("directives", value.asInstanceOf[js.Any])
+    def setSelectionSet(value: SelectionSet): Self = StObject.set(x, "selectionSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectives: Self = this.set("directives", js.undefined)
+    def setTypeCondition(value: NamedType): Self = StObject.set(x, "typeCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoc(value: Location): Self = this.set("loc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
-    
-    @scala.inline
-    def setTypeCondition(value: NamedType): Self = this.set("typeCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeCondition: Self = this.set("typeCondition", js.undefined)
+    def setTypeConditionUndefined: Self = StObject.set(x, "typeCondition", js.undefined)
   }
 }

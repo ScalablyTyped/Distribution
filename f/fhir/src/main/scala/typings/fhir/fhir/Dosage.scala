@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,153 +130,141 @@ object Dosage {
   }
   
   @scala.inline
-  implicit class DosageOps[Self <: Dosage] (val x: Self) extends AnyVal {
+  implicit class DosageMutableBuilder[Self <: Dosage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalInstruction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "additionalInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalInstructionUndefined: Self = StObject.set(x, "additionalInstruction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalInstructionVarargs(value: CodeableConcept*): Self = StObject.set(x, "additionalInstruction", js.Array(value :_*))
     
     @scala.inline
-    def set_asNeededBoolean(value: Element): Self = this.set("_asNeededBoolean", value.asInstanceOf[js.Any])
+    def setAsNeededBoolean(value: Boolean): Self = StObject.set(x, "asNeededBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_asNeededBoolean: Self = this.set("_asNeededBoolean", js.undefined)
+    def setAsNeededBooleanUndefined: Self = StObject.set(x, "asNeededBoolean", js.undefined)
     
     @scala.inline
-    def set_patientInstruction(value: Element): Self = this.set("_patientInstruction", value.asInstanceOf[js.Any])
+    def setAsNeededCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "asNeededCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_patientInstruction: Self = this.set("_patientInstruction", js.undefined)
+    def setAsNeededCodeableConceptUndefined: Self = StObject.set(x, "asNeededCodeableConcept", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setDoseQuantity(value: Quantity): Self = StObject.set(x, "doseQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def setDoseQuantityUndefined: Self = StObject.set(x, "doseQuantity", js.undefined)
     
     @scala.inline
-    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def setDoseRange(value: Range): Self = StObject.set(x, "doseRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_text: Self = this.set("_text", js.undefined)
+    def setDoseRangeUndefined: Self = StObject.set(x, "doseRange", js.undefined)
     
     @scala.inline
-    def setAdditionalInstructionVarargs(value: CodeableConcept*): Self = this.set("additionalInstruction", js.Array(value :_*))
+    def setMaxDosePerAdministration(value: Quantity): Self = StObject.set(x, "maxDosePerAdministration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalInstruction(value: js.Array[CodeableConcept]): Self = this.set("additionalInstruction", value.asInstanceOf[js.Any])
+    def setMaxDosePerAdministrationUndefined: Self = StObject.set(x, "maxDosePerAdministration", js.undefined)
     
     @scala.inline
-    def deleteAdditionalInstruction: Self = this.set("additionalInstruction", js.undefined)
+    def setMaxDosePerLifetime(value: Quantity): Self = StObject.set(x, "maxDosePerLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsNeededBoolean(value: Boolean): Self = this.set("asNeededBoolean", value.asInstanceOf[js.Any])
+    def setMaxDosePerLifetimeUndefined: Self = StObject.set(x, "maxDosePerLifetime", js.undefined)
     
     @scala.inline
-    def deleteAsNeededBoolean: Self = this.set("asNeededBoolean", js.undefined)
+    def setMaxDosePerPeriod(value: Ratio): Self = StObject.set(x, "maxDosePerPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsNeededCodeableConcept(value: CodeableConcept): Self = this.set("asNeededCodeableConcept", value.asInstanceOf[js.Any])
+    def setMaxDosePerPeriodUndefined: Self = StObject.set(x, "maxDosePerPeriod", js.undefined)
     
     @scala.inline
-    def deleteAsNeededCodeableConcept: Self = this.set("asNeededCodeableConcept", js.undefined)
+    def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoseQuantity(value: Quantity): Self = this.set("doseQuantity", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteDoseQuantity: Self = this.set("doseQuantity", js.undefined)
+    def setPatientInstruction(value: String): Self = StObject.set(x, "patientInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoseRange(value: Range): Self = this.set("doseRange", value.asInstanceOf[js.Any])
+    def setPatientInstructionUndefined: Self = StObject.set(x, "patientInstruction", js.undefined)
     
     @scala.inline
-    def deleteDoseRange: Self = this.set("doseRange", js.undefined)
+    def setRateQuantity(value: Quantity): Self = StObject.set(x, "rateQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDosePerAdministration(value: Quantity): Self = this.set("maxDosePerAdministration", value.asInstanceOf[js.Any])
+    def setRateQuantityUndefined: Self = StObject.set(x, "rateQuantity", js.undefined)
     
     @scala.inline
-    def deleteMaxDosePerAdministration: Self = this.set("maxDosePerAdministration", js.undefined)
+    def setRateRange(value: Range): Self = StObject.set(x, "rateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDosePerLifetime(value: Quantity): Self = this.set("maxDosePerLifetime", value.asInstanceOf[js.Any])
+    def setRateRangeUndefined: Self = StObject.set(x, "rateRange", js.undefined)
     
     @scala.inline
-    def deleteMaxDosePerLifetime: Self = this.set("maxDosePerLifetime", js.undefined)
+    def setRateRatio(value: Ratio): Self = StObject.set(x, "rateRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDosePerPeriod(value: Ratio): Self = this.set("maxDosePerPeriod", value.asInstanceOf[js.Any])
+    def setRateRatioUndefined: Self = StObject.set(x, "rateRatio", js.undefined)
     
     @scala.inline
-    def deleteMaxDosePerPeriod: Self = this.set("maxDosePerPeriod", js.undefined)
+    def setRoute(value: CodeableConcept): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: CodeableConcept): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSequence(value: integer): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatientInstruction(value: String): Self = this.set("patientInstruction", value.asInstanceOf[js.Any])
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     @scala.inline
-    def deletePatientInstruction: Self = this.set("patientInstruction", js.undefined)
+    def setSite(value: CodeableConcept): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateQuantity(value: Quantity): Self = this.set("rateQuantity", value.asInstanceOf[js.Any])
+    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
     @scala.inline
-    def deleteRateQuantity: Self = this.set("rateQuantity", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateRange(value: Range): Self = this.set("rateRange", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteRateRange: Self = this.set("rateRange", js.undefined)
+    def setTiming(value: Timing): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateRatio(value: Ratio): Self = this.set("rateRatio", value.asInstanceOf[js.Any])
+    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
     
     @scala.inline
-    def deleteRateRatio: Self = this.set("rateRatio", js.undefined)
+    def set_asNeededBoolean(value: Element): Self = StObject.set(x, "_asNeededBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(value: CodeableConcept): Self = this.set("route", value.asInstanceOf[js.Any])
+    def set_asNeededBooleanUndefined: Self = StObject.set(x, "_asNeededBoolean", js.undefined)
     
     @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
+    def set_patientInstruction(value: Element): Self = StObject.set(x, "_patientInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: integer): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def set_patientInstructionUndefined: Self = StObject.set(x, "_patientInstruction", js.undefined)
     
     @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSite(value: CodeableConcept): Self = this.set("site", value.asInstanceOf[js.Any])
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
     
     @scala.inline
-    def deleteSite: Self = this.set("site", js.undefined)
+    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTiming(value: Timing): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiming: Self = this.set("timing", js.undefined)
+    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
   }
 }

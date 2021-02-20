@@ -1,16 +1,29 @@
 package typings.awsSdkClientXrayNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/types/GetSamplingRulesExceptionsUnion", JSImport.Namespace)
-@js.native
-object getSamplingRulesExceptionsUnionMod extends js.Object {
+object getSamplingRulesExceptionsUnionMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientXrayNode.typesInvalidRequestExceptionMod.InvalidRequestException
     - typings.awsSdkClientXrayNode.typesThrottledExceptionMod.ThrottledException
   */
-  trait GetSamplingRulesExceptionsUnion extends js.Object
+  trait GetSamplingRulesExceptionsUnion extends StObject
+  object GetSamplingRulesExceptionsUnion {
+    
+    @scala.inline
+    def InvalidRequestException(name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException): typings.awsSdkClientXrayNode.typesInvalidRequestExceptionMod.InvalidRequestException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesInvalidRequestExceptionMod.InvalidRequestException]
+    }
+    
+    @scala.inline
+    def ThrottledException(name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException): typings.awsSdkClientXrayNode.typesThrottledExceptionMod.ThrottledException = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesThrottledExceptionMod.ThrottledException]
+    }
+  }
 }

@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineWidgetOptions extends js.Object {
+trait LineWidgetOptions extends StObject {
   
   /** Causes the widget to be placed above instead of below the text of the line. */
   var above: js.UndefOr[Boolean] = js.native
@@ -40,60 +41,48 @@ object LineWidgetOptions {
   }
   
   @scala.inline
-  implicit class LineWidgetOptionsOps[Self <: LineWidgetOptions] (val x: Self) extends AnyVal {
+  implicit class LineWidgetOptionsMutableBuilder[Self <: LineWidgetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAboveUndefined: Self = StObject.set(x, "above", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbove(value: Boolean): Self = this.set("above", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAbove: Self = this.set("above", js.undefined)
+    def setCoverGutter(value: Boolean): Self = StObject.set(x, "coverGutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCoverGutterUndefined: Self = StObject.set(x, "coverGutter", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setHandleMouseEvents(value: Boolean): Self = StObject.set(x, "handleMouseEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverGutter(value: Boolean): Self = this.set("coverGutter", value.asInstanceOf[js.Any])
+    def setHandleMouseEventsUndefined: Self = StObject.set(x, "handleMouseEvents", js.undefined)
     
     @scala.inline
-    def deleteCoverGutter: Self = this.set("coverGutter", js.undefined)
+    def setInsertAt(value: Double): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleMouseEvents(value: Boolean): Self = this.set("handleMouseEvents", value.asInstanceOf[js.Any])
+    def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
     
     @scala.inline
-    def deleteHandleMouseEvents: Self = this.set("handleMouseEvents", js.undefined)
+    def setNoHScroll(value: Boolean): Self = StObject.set(x, "noHScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertAt(value: Double): Self = this.set("insertAt", value.asInstanceOf[js.Any])
+    def setNoHScrollUndefined: Self = StObject.set(x, "noHScroll", js.undefined)
     
     @scala.inline
-    def deleteInsertAt: Self = this.set("insertAt", js.undefined)
+    def setShowIfHidden(value: Boolean): Self = StObject.set(x, "showIfHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoHScroll(value: Boolean): Self = this.set("noHScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoHScroll: Self = this.set("noHScroll", js.undefined)
-    
-    @scala.inline
-    def setShowIfHidden(value: Boolean): Self = this.set("showIfHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowIfHidden: Self = this.set("showIfHidden", js.undefined)
+    def setShowIfHiddenUndefined: Self = StObject.set(x, "showIfHidden", js.undefined)
   }
 }

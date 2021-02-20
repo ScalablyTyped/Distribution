@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,48 +57,36 @@ object DataSchemaSchemaFields {
   }
   
   @scala.inline
-  implicit class DataSchemaSchemaFieldsOps[Self <: DataSchemaSchemaFields] (val x: Self) extends AnyVal {
+  implicit class DataSchemaSchemaFieldsMutableBuilder[Self <: DataSchemaSchemaFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapper(value: String | js.Function): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: js.Any): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    def setMapperUndefined: Self = StObject.set(x, "mapper", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapper(value: String | js.Function): Self = this.set("mapper", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMapper: Self = this.set("mapper", js.undefined)
+    def setType(value: String | Double | Boolean | Date | js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String | Double | Boolean | Date | js.Object): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setXpath(value: String): Self = this.set("xpath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXpath: Self = this.set("xpath", js.undefined)
+    def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
   }
 }

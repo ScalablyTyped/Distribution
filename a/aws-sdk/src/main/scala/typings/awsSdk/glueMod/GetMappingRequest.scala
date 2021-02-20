@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMappingRequest extends js.Object {
+trait GetMappingRequest extends StObject {
   
   /**
     * Parameters for the mapping.
@@ -31,36 +32,24 @@ object GetMappingRequest {
   }
   
   @scala.inline
-  implicit class GetMappingRequestOps[Self <: GetMappingRequest] (val x: Self) extends AnyVal {
+  implicit class GetMappingRequestMutableBuilder[Self <: GetMappingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSinks(value: CatalogEntries): Self = StObject.set(x, "Sinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: CatalogEntry): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setSinksUndefined: Self = StObject.set(x, "Sinks", js.undefined)
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("Location", value.asInstanceOf[js.Any])
+    def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value :_*))
     
     @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
-    
-    @scala.inline
-    def setSinksVarargs(value: CatalogEntry*): Self = this.set("Sinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setSinks(value: CatalogEntries): Self = this.set("Sinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSinks: Self = this.set("Sinks", js.undefined)
+    def setSource(value: CatalogEntry): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

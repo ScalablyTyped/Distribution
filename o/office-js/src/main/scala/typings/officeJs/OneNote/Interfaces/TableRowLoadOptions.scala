@@ -1,5 +1,6 @@
 package typings.officeJs.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait TableRowLoadOptions extends js.Object {
+trait TableRowLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -65,54 +66,42 @@ object TableRowLoadOptions {
   }
   
   @scala.inline
-  implicit class TableRowLoadOptionsOps[Self <: TableRowLoadOptions] (val x: Self) extends AnyVal {
+  implicit class TableRowLoadOptionsMutableBuilder[Self <: TableRowLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellCount(value: Boolean): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setCells(value: TableCellCollectionLoadOptions): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellCount(value: Boolean): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
     @scala.inline
-    def deleteCellCount: Self = this.set("cellCount", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: TableCellCollectionLoadOptions): Self = this.set("cells", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCells: Self = this.set("cells", js.undefined)
+    def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTable(value: TableLoadOptions): Self = this.set("parentTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentTable: Self = this.set("parentTable", js.undefined)
-    
-    @scala.inline
-    def setRowIndex(value: Boolean): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

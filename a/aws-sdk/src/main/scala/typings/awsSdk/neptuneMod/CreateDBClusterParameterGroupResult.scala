@@ -1,11 +1,12 @@
 package typings.awsSdk.neptuneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDBClusterParameterGroupResult extends js.Object {
+trait CreateDBClusterParameterGroupResult extends StObject {
   
   var DBClusterParameterGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBClusterParameterGroup] = js.native
 }
@@ -18,24 +19,12 @@ object CreateDBClusterParameterGroupResult {
   }
   
   @scala.inline
-  implicit class CreateDBClusterParameterGroupResultOps[Self <: CreateDBClusterParameterGroupResult] (val x: Self) extends AnyVal {
+  implicit class CreateDBClusterParameterGroupResultMutableBuilder[Self <: CreateDBClusterParameterGroupResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterParameterGroup(value: DBClusterParameterGroup): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDBClusterParameterGroup(value: DBClusterParameterGroup): Self = this.set("DBClusterParameterGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterParameterGroup: Self = this.set("DBClusterParameterGroup", js.undefined)
+    def setDBClusterParameterGroupUndefined: Self = StObject.set(x, "DBClusterParameterGroup", js.undefined)
   }
 }

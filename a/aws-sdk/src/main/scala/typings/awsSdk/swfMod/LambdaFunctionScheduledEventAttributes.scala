@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaFunctionScheduledEventAttributes extends js.Object {
+trait LambdaFunctionScheduledEventAttributes extends StObject {
   
   /**
     * Data attached to the event that the decider can use in subsequent workflow tasks. This data isn't sent to the Lambda task.
@@ -46,45 +47,33 @@ object LambdaFunctionScheduledEventAttributes {
   }
   
   @scala.inline
-  implicit class LambdaFunctionScheduledEventAttributesOps[Self <: LambdaFunctionScheduledEventAttributes] (val x: Self) extends AnyVal {
+  implicit class LambdaFunctionScheduledEventAttributesMutableBuilder[Self <: LambdaFunctionScheduledEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    def setId(value: FunctionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: FunctionId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInput(value: FunctionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: FunctionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setName(value: FunctionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: FunctionInput): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
-    
-    @scala.inline
-    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("startToCloseTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartToCloseTimeout: Self = this.set("startToCloseTimeout", js.undefined)
+    def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
   }
 }

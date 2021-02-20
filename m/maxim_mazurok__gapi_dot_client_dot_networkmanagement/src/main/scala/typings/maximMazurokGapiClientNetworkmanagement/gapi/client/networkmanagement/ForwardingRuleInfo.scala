@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardingRuleInfo extends js.Object {
+trait ForwardingRuleInfo extends StObject {
   
   /** Name of a Compute Engine forwarding rule. */
   var displayName: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object ForwardingRuleInfo {
   }
   
   @scala.inline
-  implicit class ForwardingRuleInfoOps[Self <: ForwardingRuleInfo] (val x: Self) extends AnyVal {
+  implicit class ForwardingRuleInfoMutableBuilder[Self <: ForwardingRuleInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchedPortRange(value: String): Self = StObject.set(x, "matchedPortRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMatchedPortRangeUndefined: Self = StObject.set(x, "matchedPortRange", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setMatchedProtocol(value: String): Self = StObject.set(x, "matchedProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedPortRange(value: String): Self = this.set("matchedPortRange", value.asInstanceOf[js.Any])
+    def setMatchedProtocolUndefined: Self = StObject.set(x, "matchedProtocol", js.undefined)
     
     @scala.inline
-    def deleteMatchedPortRange: Self = this.set("matchedPortRange", js.undefined)
+    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedProtocol(value: String): Self = this.set("matchedProtocol", value.asInstanceOf[js.Any])
+    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
     @scala.inline
-    def deleteMatchedProtocol: Self = this.set("matchedProtocol", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkUri(value: String): Self = this.set("networkUri", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteNetworkUri: Self = this.set("networkUri", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setVip(value: String): Self = StObject.set(x, "vip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
-    
-    @scala.inline
-    def setVip(value: String): Self = this.set("vip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVip: Self = this.set("vip", js.undefined)
+    def setVipUndefined: Self = StObject.set(x, "vip", js.undefined)
   }
 }

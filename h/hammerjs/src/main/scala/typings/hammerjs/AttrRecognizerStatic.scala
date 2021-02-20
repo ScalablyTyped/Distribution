@@ -1,11 +1,12 @@
 package typings.hammerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttrRecognizerStatic extends js.Object {
+trait AttrRecognizerStatic extends StObject {
   
   def attrTest(input: HammerInput): Boolean = js.native
   
@@ -20,24 +21,12 @@ object AttrRecognizerStatic {
   }
   
   @scala.inline
-  implicit class AttrRecognizerStaticOps[Self <: AttrRecognizerStatic] (val x: Self) extends AnyVal {
+  implicit class AttrRecognizerStaticMutableBuilder[Self <: AttrRecognizerStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrTest(value: HammerInput => Boolean): Self = StObject.set(x, "attrTest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttrTest(value: HammerInput => Boolean): Self = this.set("attrTest", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProcess(value: HammerInput => js.Any): Self = this.set("process", js.Any.fromFunction1(value))
+    def setProcess(value: HammerInput => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
   }
 }

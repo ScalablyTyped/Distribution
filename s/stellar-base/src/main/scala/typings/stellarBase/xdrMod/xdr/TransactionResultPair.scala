@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionResultPair extends js.Object {
+trait TransactionResultPair extends StObject {
   
   def result(): TransactionResult = js.native
   def result(value: TransactionResult): TransactionResult = js.native

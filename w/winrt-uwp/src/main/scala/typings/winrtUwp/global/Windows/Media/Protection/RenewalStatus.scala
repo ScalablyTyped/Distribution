@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the possible values returned from RenewSystemComponentsAsync . */
 @JSGlobal("Windows.Media.Protection.RenewalStatus")
 @js.native
-object RenewalStatus extends js.Object {
+object RenewalStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Protection.RenewalStatus with Double] = js.native

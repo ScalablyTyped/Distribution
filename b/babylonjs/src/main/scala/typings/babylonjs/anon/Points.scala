@@ -4,12 +4,13 @@ import typings.babylonjs.linesMeshMod.LinesMesh
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Points extends js.Object {
+trait Points extends StObject {
   
   var colors: js.UndefOr[js.Array[Color4]] = js.native
   
@@ -30,54 +31,42 @@ object Points {
   }
   
   @scala.inline
-  implicit class PointsOps[Self <: Points] (val x: Self) extends AnyVal {
+  implicit class PointsMutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[Color4]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorsVarargs(value: Color4*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: Vector3*): Self = this.set("points", js.Array(value :_*))
+    def setInstance(value: Nullable[LinesMesh]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[Vector3]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setInstanceNull: Self = StObject.set(x, "instance", null)
     
     @scala.inline
-    def setColorsVarargs(value: Color4*): Self = this.set("colors", js.Array(value :_*))
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def setColors(value: js.Array[Color4]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[Vector3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setInstance(value: Nullable[LinesMesh]): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     @scala.inline
-    def setInstanceNull: Self = this.set("instance", null)
+    def setUseVertexAlpha(value: Boolean): Self = StObject.set(x, "useVertexAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatable: Self = this.set("updatable", js.undefined)
-    
-    @scala.inline
-    def setUseVertexAlpha(value: Boolean): Self = this.set("useVertexAlpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseVertexAlpha: Self = this.set("useVertexAlpha", js.undefined)
+    def setUseVertexAlphaUndefined: Self = StObject.set(x, "useVertexAlpha", js.undefined)
   }
 }

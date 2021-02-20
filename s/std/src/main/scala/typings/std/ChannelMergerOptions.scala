@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object ChannelMergerOptions {
   }
   
   @scala.inline
-  implicit class ChannelMergerOptionsOps[Self <: ChannelMergerOptions] (val x: Self) extends AnyVal {
+  implicit class ChannelMergerOptionsMutableBuilder[Self <: ChannelMergerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNumberOfInputs(value: Double): Self = this.set("numberOfInputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfInputs: Self = this.set("numberOfInputs", js.undefined)
+    def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
   }
 }

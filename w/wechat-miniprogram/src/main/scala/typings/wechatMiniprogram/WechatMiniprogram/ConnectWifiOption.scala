@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectWifiOption extends js.Object {
+trait ConnectWifiOption extends StObject {
   
   /** Wi-Fi 设备 BSSID */
   var BSSID: js.UndefOr[String] = js.native
@@ -39,54 +40,42 @@ object ConnectWifiOption {
   }
   
   @scala.inline
-  implicit class ConnectWifiOptionOps[Self <: ConnectWifiOption] (val x: Self) extends AnyVal {
+  implicit class ConnectWifiOptionMutableBuilder[Self <: ConnectWifiOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: /* res */ WifiError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSSID(value: String): Self = this.set("SSID", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setFail(value: /* res */ WifiError => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBSSID(value: String): Self = this.set("BSSID", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteBSSID: Self = this.set("BSSID", js.undefined)
+    def setMaunal(value: Boolean): Self = StObject.set(x, "maunal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ WifiError => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setMaunalUndefined: Self = StObject.set(x, "maunal", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ WifiError => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSuccess(value: /* res */ WifiError => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaunal(value: Boolean): Self = this.set("maunal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaunal: Self = this.set("maunal", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ WifiError => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

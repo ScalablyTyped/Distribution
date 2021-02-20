@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdGeneration[T, U] extends js.Object {
+trait IdGeneration[T, U] extends StObject {
   
   var connection: js.UndefOr[js.Object | Null] = js.native
   
@@ -22,39 +23,27 @@ object IdGeneration {
   }
   
   @scala.inline
-  implicit class IdGenerationOps[Self <: IdGeneration[_, _], T, U] (val x: Self with (IdGeneration[T, U])) extends AnyVal {
+  implicit class IdGenerationMutableBuilder[Self <: IdGeneration[_, _], T, U] (val x: Self with (IdGeneration[T, U])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionNull: Self = StObject.set(x, "connection", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def setConnection(value: js.Object): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setIdGeneration(value: String): Self = StObject.set(x, "idGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setIdGenerationUndefined: Self = StObject.set(x, "idGeneration", js.undefined)
     
     @scala.inline
-    def setConnectionNull: Self = this.set("connection", null)
+    def setTransform(value: /* doc */ T => U): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIdGeneration(value: String): Self = this.set("idGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdGeneration: Self = this.set("idGeneration", js.undefined)
-    
-    @scala.inline
-    def setTransform(value: /* doc */ T => U): Self = this.set("transform", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

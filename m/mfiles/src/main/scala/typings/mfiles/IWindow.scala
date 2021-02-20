@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWindow extends js.Object {
+trait IWindow extends StObject {
   
   def Close(): Unit = js.native
   
@@ -62,63 +63,51 @@ object IWindow {
   }
   
   @scala.inline
-  implicit class IWindowOps[Self <: IWindow] (val x: Self) extends AnyVal {
+  implicit class IWindowMutableBuilder[Self <: IWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvents(value: IWindowEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("Close", js.Any.fromFunction0(value))
+    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: IWindowEvents): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: () => Unit): Self = this.set("Focus", js.Any.fromFunction0(value))
+    def setIsFocused(value: Boolean): Self = StObject.set(x, "IsFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: Double): Self = this.set("Handle", value.asInstanceOf[js.Any])
+    def setMaximizable(value: Boolean): Self = StObject.set(x, "Maximizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setMaximize(value: () => Unit): Self = StObject.set(x, "Maximize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFocused(value: Boolean): Self = this.set("IsFocused", value.asInstanceOf[js.Any])
+    def setMinimizable(value: Boolean): Self = StObject.set(x, "Minimizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximizable(value: Boolean): Self = this.set("Maximizable", value.asInstanceOf[js.Any])
+    def setMinimize(value: () => Unit): Self = StObject.set(x, "Minimize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaximize(value: () => Unit): Self = this.set("Maximize", js.Any.fromFunction0(value))
+    def setResizable(value: Boolean): Self = StObject.set(x, "Resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimizable(value: Boolean): Self = this.set("Minimizable", value.asInstanceOf[js.Any])
+    def setRestore(value: () => Unit): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinimize(value: () => Unit): Self = this.set("Minimize", js.Any.fromFunction0(value))
+    def setSetDefaultSize(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "SetDefaultSize", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("Resizable", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestore(value: () => Unit): Self = this.set("Restore", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDefaultSize(value: (Double, Double, Boolean) => Unit): Self = this.set("SetDefaultSize", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

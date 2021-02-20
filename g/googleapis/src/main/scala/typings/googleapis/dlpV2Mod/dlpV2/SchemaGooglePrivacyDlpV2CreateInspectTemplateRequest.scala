@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for CreateInspectTemplate.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest extends js.Object {
+trait SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest extends StObject {
   
   /**
     * The InspectTemplate to create.
@@ -32,30 +33,18 @@ object SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateInspectTemplateRequestOps[Self <: SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CreateInspectTemplateRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "inspectTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInspectTemplateUndefined: Self = StObject.set(x, "inspectTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = this.set("inspectTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInspectTemplate: Self = this.set("inspectTemplate", js.undefined)
-    
-    @scala.inline
-    def setTemplateId(value: String): Self = this.set("templateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateId: Self = this.set("templateId", js.undefined)
+    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

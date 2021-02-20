@@ -36,6 +36,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Undefined
 import typings.officeJsPreview.officeJsPreviewStrings.Unsupported
 import typings.officeJsPreview.officeJsPreviewStrings.Whole
 import typings.officeJsPreview.officeJsPreviewStrings.Wmf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

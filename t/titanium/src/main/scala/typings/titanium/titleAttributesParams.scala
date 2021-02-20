@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary of options for the <Titanium.UI.Window.titleAttributes> property.
   */
 @js.native
-trait titleAttributesParams extends js.Object {
+trait titleAttributesParams extends StObject {
   
   /**
     * Color of the window title, as a color name or hex triplet.
@@ -35,36 +36,24 @@ object titleAttributesParams {
   }
   
   @scala.inline
-  implicit class titleAttributesParamsOps[Self <: titleAttributesParams] (val x: Self) extends AnyVal {
+  implicit class titleAttributesParamsMutableBuilder[Self <: titleAttributesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String | Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setShadow(value: shadowDict): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Font): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
-    
-    @scala.inline
-    def setShadow(value: shadowDict): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
   }
 }

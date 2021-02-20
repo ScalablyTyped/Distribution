@@ -7,6 +7,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.OnLoad
 import typings.officeJsPreview.officeJsPreviewStrings.Periodic
 import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait RefreshModeChangedEventArgs extends js.Object {
+trait RefreshModeChangedEventArgs extends StObject {
   
   /**
     *
@@ -72,30 +73,18 @@ object RefreshModeChangedEventArgs {
   }
   
   @scala.inline
-  implicit class RefreshModeChangedEventArgsOps[Self <: RefreshModeChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class RefreshModeChangedEventArgsMutableBuilder[Self <: RefreshModeChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRefreshMode(value: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshMode(value: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic): Self = this.set("refreshMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceId(value: Double): Self = this.set("serviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: LinkedDataTypeRefreshModeChanged): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: LinkedDataTypeRefreshModeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

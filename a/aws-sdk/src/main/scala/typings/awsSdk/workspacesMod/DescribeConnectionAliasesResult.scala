@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConnectionAliasesResult extends js.Object {
+trait DescribeConnectionAliasesResult extends StObject {
   
   /**
     * Information about the specified connection aliases.
@@ -26,33 +27,21 @@ object DescribeConnectionAliasesResult {
   }
   
   @scala.inline
-  implicit class DescribeConnectionAliasesResultOps[Self <: DescribeConnectionAliasesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeConnectionAliasesResultMutableBuilder[Self <: DescribeConnectionAliasesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionAliases(value: ConnectionAliasList): Self = StObject.set(x, "ConnectionAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionAliasesUndefined: Self = StObject.set(x, "ConnectionAliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionAliasesVarargs(value: ConnectionAlias*): Self = StObject.set(x, "ConnectionAliases", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionAliasesVarargs(value: ConnectionAlias*): Self = this.set("ConnectionAliases", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionAliases(value: ConnectionAliasList): Self = this.set("ConnectionAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionAliases: Self = this.set("ConnectionAliases", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

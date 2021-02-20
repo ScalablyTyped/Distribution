@@ -1,11 +1,20 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.anon.HTMLAttributesidclassNameModifier
+import typings.reactOnsenui.anon.HTMLAttributesidclassName
+import typings.reactOnsenui.anon.OnClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "BackButton")
 @js.native
-class BackButton ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNameModifier, js.Any, js.Any]
+class BackButton protected ()
+  extends Component[OnClick, js.Any] {
+  def this(props: HTMLAttributesidclassName with OnClick) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName with OnClick, context: js.Any) = this()
+}

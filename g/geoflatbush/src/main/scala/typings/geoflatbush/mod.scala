@@ -1,15 +1,18 @@
 package typings.geoflatbush
 
 import typings.flatbush.mod.Flatbush
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("geoflatbush", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(index: Flatbush, longitude: Double, latitude: Double): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(
     index: Flatbush,
     longitude: Double,
@@ -18,6 +21,8 @@ object mod extends js.Object {
     maxDistance: js.UndefOr[scala.Nothing],
     filter: js.Function1[/* index */ Double, Boolean]
   ): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(
     index: Flatbush,
     longitude: Double,
@@ -25,6 +30,8 @@ object mod extends js.Object {
     maxResults: js.UndefOr[scala.Nothing],
     maxDistance: Double
   ): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(
     index: Flatbush,
     longitude: Double,
@@ -33,7 +40,11 @@ object mod extends js.Object {
     maxDistance: Double,
     filter: js.Function1[/* index */ Double, Boolean]
   ): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(index: Flatbush, longitude: Double, latitude: Double, maxResults: Double): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(
     index: Flatbush,
     longitude: Double,
@@ -42,7 +53,11 @@ object mod extends js.Object {
     maxDistance: js.UndefOr[scala.Nothing],
     filter: js.Function1[/* index */ Double, Boolean]
   ): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(index: Flatbush, longitude: Double, latitude: Double, maxResults: Double, maxDistance: Double): js.Array[Double] = js.native
+  @JSImport("geoflatbush", "around")
+  @js.native
   def around(
     index: Flatbush,
     longitude: Double,

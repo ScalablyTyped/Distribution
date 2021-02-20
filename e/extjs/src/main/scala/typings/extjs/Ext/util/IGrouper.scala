@@ -1,6 +1,7 @@
 package typings.extjs.Ext.util
 
 import typings.extjs.Ext.data.IModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +24,12 @@ object IGrouper {
   }
   
   @scala.inline
-  implicit class IGrouperOps[Self <: IGrouper] (val x: Self) extends AnyVal {
+  implicit class IGrouperMutableBuilder[Self <: IGrouper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGroupString(value: /* instance */ js.UndefOr[IModel] => String): Self = StObject.set(x, "getGroupString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetGroupString(value: /* instance */ js.UndefOr[IModel] => String): Self = this.set("getGroupString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetGroupString: Self = this.set("getGroupString", js.undefined)
+    def setGetGroupStringUndefined: Self = StObject.set(x, "getGroupString", js.undefined)
   }
 }

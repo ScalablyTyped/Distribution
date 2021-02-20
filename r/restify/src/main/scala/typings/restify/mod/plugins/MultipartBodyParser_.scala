@@ -1,11 +1,12 @@
 package typings.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultipartBodyParser_ extends js.Object {
+trait MultipartBodyParser_ extends StObject {
   
   var hash: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object MultipartBodyParser_ {
   }
   
   @scala.inline
-  implicit class MultipartBodyParser_Ops[Self <: MultipartBodyParser_] (val x: Self) extends AnyVal {
+  implicit class MultipartBodyParser_MutableBuilder[Self <: MultipartBodyParser_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setMapFiles(value: Boolean): Self = StObject.set(x, "mapFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepExtensions(value: Boolean): Self = this.set("keepExtensions", value.asInstanceOf[js.Any])
+    def setMapFilesUndefined: Self = StObject.set(x, "mapFiles", js.undefined)
     
     @scala.inline
-    def deleteKeepExtensions: Self = this.set("keepExtensions", js.undefined)
+    def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapFiles(value: Boolean): Self = this.set("mapFiles", value.asInstanceOf[js.Any])
+    def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
     
     @scala.inline
-    def deleteMapFiles: Self = this.set("mapFiles", js.undefined)
+    def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapParams(value: Boolean): Self = this.set("mapParams", value.asInstanceOf[js.Any])
+    def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
     
     @scala.inline
-    def deleteMapParams: Self = this.set("mapParams", js.undefined)
+    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFieldsSize(value: Double): Self = this.set("maxFieldsSize", value.asInstanceOf[js.Any])
+    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
     @scala.inline
-    def deleteMaxFieldsSize: Self = this.set("maxFieldsSize", js.undefined)
+    def setMultipartFileHandler(value: js.Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
+    def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
     
     @scala.inline
-    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    def setMultipartHandler(value: js.Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipartFileHandler(value: js.Any): Self = this.set("multipartFileHandler", value.asInstanceOf[js.Any])
+    def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
     
     @scala.inline
-    def deleteMultipartFileHandler: Self = this.set("multipartFileHandler", js.undefined)
+    def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipartHandler(value: js.Any): Self = this.set("multipartHandler", value.asInstanceOf[js.Any])
+    def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
     
     @scala.inline
-    def deleteMultipartHandler: Self = this.set("multipartHandler", js.undefined)
+    def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiples(value: Boolean): Self = this.set("multiples", value.asInstanceOf[js.Any])
+    def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     
     @scala.inline
-    def deleteMultiples: Self = this.set("multiples", js.undefined)
+    def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideParams(value: Boolean): Self = this.set("overrideParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideParams: Self = this.set("overrideParams", js.undefined)
-    
-    @scala.inline
-    def setUploadDir(value: String): Self = this.set("uploadDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadDir: Self = this.set("uploadDir", js.undefined)
+    def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
   }
 }

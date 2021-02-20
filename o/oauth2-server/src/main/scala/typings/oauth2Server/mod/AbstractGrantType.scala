@@ -1,13 +1,14 @@
 package typings.oauth2Server.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2-server", "AbstractGrantType")
 @js.native
-abstract class AbstractGrantType protected () extends js.Object {
+abstract class AbstractGrantType protected () extends StObject {
   /**
     * Instantiates AbstractGrantType using the supplied options.
     *

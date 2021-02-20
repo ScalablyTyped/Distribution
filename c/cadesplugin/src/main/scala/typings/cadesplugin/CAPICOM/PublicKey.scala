@@ -1,11 +1,12 @@
 package typings.cadesplugin.CAPICOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicKey extends js.Object {
+trait PublicKey extends StObject {
   
   val Algorithm: OID = js.native
   
@@ -24,30 +25,18 @@ object PublicKey {
   }
   
   @scala.inline
-  implicit class PublicKeyOps[Self <: PublicKey] (val x: Self) extends AnyVal {
+  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: OID): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodedKey(value: EncodedData): Self = StObject.set(x, "EncodedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodedParameters(value: EncodedData): Self = StObject.set(x, "EncodedParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: OID): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncodedKey(value: EncodedData): Self = this.set("EncodedKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncodedParameters(value: EncodedData): Self = this.set("EncodedParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.victory.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Negative extends js.Object {
+trait Negative extends StObject {
   
   var negative: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Negative {
   }
   
   @scala.inline
-  implicit class NegativeOps[Self <: Negative] (val x: Self) extends AnyVal {
+  implicit class NegativeMutableBuilder[Self <: Negative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositive(value: String): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegative(value: String): Self = this.set("negative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegative: Self = this.set("negative", js.undefined)
-    
-    @scala.inline
-    def setPositive(value: String): Self = this.set("positive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositive: Self = this.set("positive", js.undefined)
+    def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
   }
 }

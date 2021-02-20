@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeginDragOptions extends js.Object {
+trait BeginDragOptions extends StObject {
   
   var clientOffset: js.UndefOr[XYCoord] = js.native
   
@@ -22,36 +23,24 @@ object BeginDragOptions {
   }
   
   @scala.inline
-  implicit class BeginDragOptionsOps[Self <: BeginDragOptions] (val x: Self) extends AnyVal {
+  implicit class BeginDragOptionsMutableBuilder[Self <: BeginDragOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientOffsetUndefined: Self = StObject.set(x, "clientOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSourceClientOffset(value: /* sourceId */ Identifier => XYCoord): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClientOffset(value: XYCoord): Self = this.set("clientOffset", value.asInstanceOf[js.Any])
+    def setGetSourceClientOffsetUndefined: Self = StObject.set(x, "getSourceClientOffset", js.undefined)
     
     @scala.inline
-    def deleteClientOffset: Self = this.set("clientOffset", js.undefined)
+    def setPublishSource(value: Boolean): Self = StObject.set(x, "publishSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSourceClientOffset(value: /* sourceId */ Identifier => XYCoord): Self = this.set("getSourceClientOffset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetSourceClientOffset: Self = this.set("getSourceClientOffset", js.undefined)
-    
-    @scala.inline
-    def setPublishSource(value: Boolean): Self = this.set("publishSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishSource: Self = this.set("publishSource", js.undefined)
+    def setPublishSourceUndefined: Self = StObject.set(x, "publishSource", js.undefined)
   }
 }

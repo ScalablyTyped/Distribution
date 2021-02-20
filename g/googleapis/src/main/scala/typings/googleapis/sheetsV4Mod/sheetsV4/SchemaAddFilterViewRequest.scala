@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Adds a filter view.
   */
 @js.native
-trait SchemaAddFilterViewRequest extends js.Object {
+trait SchemaAddFilterViewRequest extends StObject {
   
   /**
     * The filter to add. The filterViewId field is optional; if one is not set,
@@ -26,24 +27,12 @@ object SchemaAddFilterViewRequest {
   }
   
   @scala.inline
-  implicit class SchemaAddFilterViewRequestOps[Self <: SchemaAddFilterViewRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAddFilterViewRequestMutableBuilder[Self <: SchemaAddFilterViewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: SchemaFilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilter(value: SchemaFilterView): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.baseui.datepickerMod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatepickerState extends js.Object {
+trait DatepickerState extends StObject {
   
   var calendarFocused: Boolean = js.native
   
@@ -25,33 +26,21 @@ object DatepickerState {
   }
   
   @scala.inline
-  implicit class DatepickerStateOps[Self <: DatepickerState] (val x: Self) extends AnyVal {
+  implicit class DatepickerStateMutableBuilder[Self <: DatepickerState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarFocused(value: Boolean): Self = StObject.set(x, "calendarFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPseudoFocused(value: Boolean): Self = StObject.set(x, "isPseudoFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarFocused(value: Boolean): Self = this.set("calendarFocused", value.asInstanceOf[js.Any])
+    def setLastActiveElm(value: HTMLElement): Self = StObject.set(x, "lastActiveElm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPseudoFocused(value: Boolean): Self = this.set("isPseudoFocused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastActiveElm(value: HTMLElement): Self = this.set("lastActiveElm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastActiveElm: Self = this.set("lastActiveElm", js.undefined)
+    def setLastActiveElmUndefined: Self = StObject.set(x, "lastActiveElm", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelInputConfiguration extends js.Object {
+trait ModelInputConfiguration extends StObject {
   
   /**
     *  Template for constructing the CSV input-data sent to SageMaker. At event-evaluation, the placeholders for variable-names in the template will be replaced with the variable values before being sent to SageMaker. 
@@ -41,45 +42,33 @@ object ModelInputConfiguration {
   }
   
   @scala.inline
-  implicit class ModelInputConfigurationOps[Self <: ModelInputConfiguration] (val x: Self) extends AnyVal {
+  implicit class ModelInputConfigurationMutableBuilder[Self <: ModelInputConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvInputTemplate(value: String): Self = StObject.set(x, "csvInputTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsvInputTemplateUndefined: Self = StObject.set(x, "csvInputTemplate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseEventVariables(value: UseEventVariables): Self = this.set("useEventVariables", value.asInstanceOf[js.Any])
+    def setEventTypeNameUndefined: Self = StObject.set(x, "eventTypeName", js.undefined)
     
     @scala.inline
-    def setCsvInputTemplate(value: String): Self = this.set("csvInputTemplate", value.asInstanceOf[js.Any])
+    def setFormat(value: ModelInputDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCsvInputTemplate: Self = this.set("csvInputTemplate", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setEventTypeName(value: identifier): Self = this.set("eventTypeName", value.asInstanceOf[js.Any])
+    def setJsonInputTemplate(value: String): Self = StObject.set(x, "jsonInputTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventTypeName: Self = this.set("eventTypeName", js.undefined)
+    def setJsonInputTemplateUndefined: Self = StObject.set(x, "jsonInputTemplate", js.undefined)
     
     @scala.inline
-    def setFormat(value: ModelInputDataFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setJsonInputTemplate(value: String): Self = this.set("jsonInputTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonInputTemplate: Self = this.set("jsonInputTemplate", js.undefined)
+    def setUseEventVariables(value: UseEventVariables): Self = StObject.set(x, "useEventVariables", value.asInstanceOf[js.Any])
   }
 }

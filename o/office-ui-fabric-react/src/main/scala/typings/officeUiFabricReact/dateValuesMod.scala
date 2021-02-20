@@ -1,17 +1,19 @@
 package typings.officeUiFabricReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/dateValues/DateValues", JSImport.Namespace)
-@js.native
-object dateValuesMod extends js.Object {
+object dateValuesMod {
   
+  @JSImport("office-ui-fabric-react/lib/utilities/dateValues/DateValues", "DAYS_IN_WEEK")
+  @js.native
   val DAYS_IN_WEEK: /* 7 */ Double = js.native
   
+  @JSImport("office-ui-fabric-react/lib/utilities/dateValues/DateValues", "DateRangeType")
   @js.native
-  object DateRangeType extends js.Object {
+  object DateRangeType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType with Double] = js.native
@@ -25,8 +27,9 @@ object dateValuesMod extends js.Object {
     /* 3 */ val WorkWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType.WorkWeek with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/utilities/dateValues/DateValues", "DayOfWeek")
   @js.native
-  object DayOfWeek extends js.Object {
+  object DayOfWeek extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek with Double] = js.native
@@ -46,8 +49,9 @@ object dateValuesMod extends js.Object {
     /* 3 */ val Wednesday: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek.Wednesday with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/utilities/dateValues/DateValues", "FirstWeekOfYear")
   @js.native
-  object FirstWeekOfYear extends js.Object {
+  object FirstWeekOfYear extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear with Double] = js.native
@@ -59,8 +63,9 @@ object dateValuesMod extends js.Object {
     /* 1 */ val FirstFullWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear.FirstFullWeek with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/utilities/dateValues/DateValues", "MonthOfYear")
   @js.native
-  object MonthOfYear extends js.Object {
+  object MonthOfYear extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.fluentuiDateTimeUtilities.dateValuesMod.MonthOfYear with Double] = js.native

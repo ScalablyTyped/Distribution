@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KGKeyPairIds extends js.Object {
+trait KGKeyPairIds extends StObject {
   
   /**
     * The identifier of the key group that contains the public keys.
@@ -23,30 +24,18 @@ object KGKeyPairIds {
   }
   
   @scala.inline
-  implicit class KGKeyPairIdsOps[Self <: KGKeyPairIds] (val x: Self) extends AnyVal {
+  implicit class KGKeyPairIdsMutableBuilder[Self <: KGKeyPairIds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyGroupId(value: String): Self = StObject.set(x, "KeyGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyGroupIdUndefined: Self = StObject.set(x, "KeyGroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPairIds(value: KeyPairIds): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyGroupId(value: String): Self = this.set("KeyGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyGroupId: Self = this.set("KeyGroupId", js.undefined)
-    
-    @scala.inline
-    def setKeyPairIds(value: KeyPairIds): Self = this.set("KeyPairIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPairIds: Self = this.set("KeyPairIds", js.undefined)
+    def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
   }
 }

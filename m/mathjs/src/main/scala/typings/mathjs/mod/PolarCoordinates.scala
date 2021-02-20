@@ -1,11 +1,12 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolarCoordinates extends js.Object {
+trait PolarCoordinates extends StObject {
   
   var phi: Double = js.native
   
@@ -20,24 +21,12 @@ object PolarCoordinates {
   }
   
   @scala.inline
-  implicit class PolarCoordinatesOps[Self <: PolarCoordinates] (val x: Self) extends AnyVal {
+  implicit class PolarCoordinatesMutableBuilder[Self <: PolarCoordinates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPhi(value: Double): Self = StObject.set(x, "phi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPhi(value: Double): Self = this.set("phi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

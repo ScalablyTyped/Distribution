@@ -1,12 +1,13 @@
 package typings.openfin.mod.fin
 
 import typings.openfin.anon.EntityType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalHotkeyEvent extends js.Object {
+trait GlobalHotkeyEvent extends StObject {
   
   var hotkey: String = js.native
   
@@ -29,30 +30,18 @@ object GlobalHotkeyEvent {
   }
   
   @scala.inline
-  implicit class GlobalHotkeyEventOps[Self <: GlobalHotkeyEvent] (val x: Self) extends AnyVal {
+  implicit class GlobalHotkeyEventMutableBuilder[Self <: GlobalHotkeyEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentity(value: EntityType): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotkey(value: String): Self = this.set("hotkey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentity(value: EntityType): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: OpenFinGlobalHotkeyEventType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: OpenFinGlobalHotkeyEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

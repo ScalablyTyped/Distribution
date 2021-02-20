@@ -1,11 +1,12 @@
 package typings.angularCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallValue extends js.Object {
+trait FnCallValue extends StObject {
   
   def apply[T](value: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵi18nExp */ js.Any = js.native
 }

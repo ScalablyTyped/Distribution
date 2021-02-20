@@ -6,6 +6,7 @@ import typings.node.nodeStrings.altsvc
 import typings.node.nodeStrings.origin
 import typings.node.nodeStrings.stream
 import typings.node.tlsMod.TLSSocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

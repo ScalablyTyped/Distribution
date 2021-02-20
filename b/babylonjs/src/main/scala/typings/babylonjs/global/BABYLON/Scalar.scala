@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Scalar ()
   extends typings.babylonjs.BABYLON.Scalar
 /* static members */
-@JSGlobal("BABYLON.Scalar")
-@js.native
-object Scalar extends js.Object {
+object Scalar {
+  
+  @JSGlobal("BABYLON.Scalar")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns the value itself if it's between min and max.
@@ -22,9 +25,17 @@ object Scalar extends js.Object {
     * @param max the max value to clamp to (default: 1)
     * @returns the clamped value
     */
+  @JSGlobal("BABYLON.Scalar.Clamp")
+  @js.native
   def Clamp(value: Double): Double = js.native
+  @JSGlobal("BABYLON.Scalar.Clamp")
+  @js.native
   def Clamp(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
+  @JSGlobal("BABYLON.Scalar.Clamp")
+  @js.native
   def Clamp(value: Double, min: Double): Double = js.native
+  @JSGlobal("BABYLON.Scalar.Clamp")
+  @js.native
   def Clamp(value: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -33,6 +44,8 @@ object Scalar extends js.Object {
     * @param target target angle in degrees
     * @returns the delta
     */
+  @JSGlobal("BABYLON.Scalar.DeltaAngle")
+  @js.native
   def DeltaAngle(current: Double, target: Double): Double = js.native
   
   /**
@@ -42,6 +55,8 @@ object Scalar extends js.Object {
     * @param max min to denormalize between
     * @returns the denormalized value
     */
+  @JSGlobal("BABYLON.Scalar.Denormalize")
+  @js.native
   def Denormalize(normalized: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -54,6 +69,8 @@ object Scalar extends js.Object {
     * @param amount input value
     * @returns hermite result
     */
+  @JSGlobal("BABYLON.Scalar.Hermite")
+  @js.native
   def Hermite(value1: Double, tangent1: Double, value2: Double, tangent2: Double, amount: Double): Double = js.native
   
   /**
@@ -63,6 +80,8 @@ object Scalar extends js.Object {
     * @param value value between a and b
     * @returns the inverseLerp value
     */
+  @JSGlobal("BABYLON.Scalar.InverseLerp")
+  @js.native
   def InverseLerp(a: Double, b: Double, value: Double): Double = js.native
   
   /**
@@ -72,6 +91,8 @@ object Scalar extends js.Object {
     * @param amount amount to lerp between
     * @returns the lerped value
     */
+  @JSGlobal("BABYLON.Scalar.Lerp")
+  @js.native
   def Lerp(start: Double, end: Double, amount: Double): Double = js.native
   
   /**
@@ -82,6 +103,8 @@ object Scalar extends js.Object {
     * @param amount amount to lerp between
     * @returns the lerped value
     */
+  @JSGlobal("BABYLON.Scalar.LerpAngle")
+  @js.native
   def LerpAngle(start: Double, end: Double, amount: Double): Double = js.native
   
   /**
@@ -89,6 +112,8 @@ object Scalar extends js.Object {
     * @param value the value to compute log2 of
     * @returns the log2 of value.
     */
+  @JSGlobal("BABYLON.Scalar.Log2")
+  @js.native
   def Log2(value: Double): Double = js.native
   
   /**
@@ -101,6 +126,8 @@ object Scalar extends js.Object {
     * @param maxDelta max distance to move
     * @returns resulting value
     */
+  @JSGlobal("BABYLON.Scalar.MoveTowards")
+  @js.native
   def MoveTowards(current: Double, target: Double, maxDelta: Double): Double = js.native
   
   /**
@@ -113,6 +140,8 @@ object Scalar extends js.Object {
     * @param maxDelta max distance to move
     * @returns resulting angle
     */
+  @JSGlobal("BABYLON.Scalar.MoveTowardsAngle")
+  @js.native
   def MoveTowardsAngle(current: Double, target: Double, maxDelta: Double): Double = js.native
   
   /**
@@ -122,6 +151,8 @@ object Scalar extends js.Object {
     * @param max min to normalize between
     * @returns the normalized value
     */
+  @JSGlobal("BABYLON.Scalar.Normalize")
+  @js.native
   def Normalize(value: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -129,6 +160,8 @@ object Scalar extends js.Object {
     * @param angle The angle to normalize in radian.
     * @return The converted angle.
     */
+  @JSGlobal("BABYLON.Scalar.NormalizeRadians")
+  @js.native
   def NormalizeRadians(angle: Double): Double = js.native
   
   /**
@@ -140,6 +173,8 @@ object Scalar extends js.Object {
     * @param max max range
     * @returns the number
     */
+  @JSGlobal("BABYLON.Scalar.PercentToRange")
+  @js.native
   def PercentToRange(percent: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -148,6 +183,8 @@ object Scalar extends js.Object {
     * @param length length
     * @returns The returned value will move back and forth between 0 and length
     */
+  @JSGlobal("BABYLON.Scalar.PingPong")
+  @js.native
   def PingPong(tx: Double, length: Double): Double = js.native
   
   /**
@@ -156,6 +193,8 @@ object Scalar extends js.Object {
     * @param max max value of random
     * @returns random value
     */
+  @JSGlobal("BABYLON.Scalar.RandomRange")
+  @js.native
   def RandomRange(min: Double, max: Double): Double = js.native
   
   /**
@@ -168,6 +207,8 @@ object Scalar extends js.Object {
     * @param max max range
     * @returns the percentage
     */
+  @JSGlobal("BABYLON.Scalar.RangeToPercent")
+  @js.native
   def RangeToPercent(number: Double, min: Double, max: Double): Double = js.native
   
   /**
@@ -181,6 +222,8 @@ object Scalar extends js.Object {
     * @param length the length
     * @returns the looped value
     */
+  @JSGlobal("BABYLON.Scalar.Repeat")
+  @js.native
   def Repeat(value: Double, length: Double): Double = js.native
   
   /**
@@ -188,6 +231,8 @@ object Scalar extends js.Object {
     * @param value the value
     * @returns the value itself if it's equal to zero.
     */
+  @JSGlobal("BABYLON.Scalar.Sign")
+  @js.native
   def Sign(value: Double): Double = js.native
   
   /**
@@ -200,6 +245,8 @@ object Scalar extends js.Object {
     * @param tx value
     * @returns the smooth stepped value
     */
+  @JSGlobal("BABYLON.Scalar.SmoothStep")
+  @js.native
   def SmoothStep(from: Double, to: Double, tx: Double): Double = js.native
   
   /**
@@ -207,12 +254,18 @@ object Scalar extends js.Object {
     * @param i number
     * @returns the upper case translation of the number i to hexadecimal.
     */
+  @JSGlobal("BABYLON.Scalar.ToHex")
+  @js.native
   def ToHex(i: Double): String = js.native
   
   /**
     * Two pi constants convenient for computation.
     */
-  var TwoPi: Double = js.native
+  @JSGlobal("BABYLON.Scalar.TwoPi")
+  @js.native
+  def TwoPi: Double = js.native
+  @scala.inline
+  def TwoPi_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoPi")(x.asInstanceOf[js.Any])
   
   /**
     * Boolean : true if the absolute difference between a and b is lower than epsilon (default = 1.401298E-45)
@@ -221,6 +274,10 @@ object Scalar extends js.Object {
     * @param epsilon (default = 1.401298E-45)
     * @returns true if the absolute difference between a and b is lower than epsilon (default = 1.401298E-45)
     */
+  @JSGlobal("BABYLON.Scalar.WithinEpsilon")
+  @js.native
   def WithinEpsilon(a: Double, b: Double): Boolean = js.native
+  @JSGlobal("BABYLON.Scalar.WithinEpsilon")
+  @js.native
   def WithinEpsilon(a: Double, b: Double, epsilon: Double): Boolean = js.native
 }

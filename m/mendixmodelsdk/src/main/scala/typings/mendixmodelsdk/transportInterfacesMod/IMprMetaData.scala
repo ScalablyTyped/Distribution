@@ -1,11 +1,12 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMprMetaData extends js.Object {
+trait IMprMetaData extends StObject {
   
   /** docs:keep */ var _BuildVersion: String = js.native
   
@@ -22,27 +23,15 @@ object IMprMetaData {
   }
   
   @scala.inline
-  implicit class IMprMetaDataOps[Self <: IMprMetaData] (val x: Self) extends AnyVal {
+  implicit class IMprMetaDataMutableBuilder[Self <: IMprMetaData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_BuildVersion(value: String): Self = StObject.set(x, "_BuildVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_ProductVersion(value: String): Self = StObject.set(x, "_ProductVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_BuildVersion(value: String): Self = this.set("_BuildVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_ProductVersion(value: String): Self = this.set("_ProductVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_SchemaHash(value: String): Self = this.set("_SchemaHash", value.asInstanceOf[js.Any])
+    def set_SchemaHash(value: String): Self = StObject.set(x, "_SchemaHash", value.asInstanceOf[js.Any])
   }
 }

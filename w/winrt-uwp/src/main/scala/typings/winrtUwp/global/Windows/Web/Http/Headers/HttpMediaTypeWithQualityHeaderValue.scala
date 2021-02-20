@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
 import typings.winrtUwp.anon.MediaTypeWithQualityHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,24 @@ class HttpMediaTypeWithQualityHeaderValue protected ()
     */
   def this(mediaType: String, quality: Double) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue")
-@js.native
-object HttpMediaTypeWithQualityHeaderValue extends js.Object {
+object HttpMediaTypeWithQualityHeaderValue {
   
   /**
     * Converts a string to an HttpMediaTypeWithQualityHeaderValue instance.
     * @param input A string that represents the media-type, character set, and quality information used in the Accept HTTP header.
     * @return An HttpMediaTypeWithQualityHeaderValue instance.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue.parse")
+  @js.native
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue = js.native
   
   /**
     * Determines whether a string is valid HttpMediaTypeWithQualityHeaderValue information.
     * @param input The string to validate.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue.tryParse")
+  @js.native
   def tryParse(input: String): MediaTypeWithQualityHeaderValue = js.native
 }

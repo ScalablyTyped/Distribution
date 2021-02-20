@@ -1,12 +1,13 @@
 package typings.storybookAddons.typesMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseMeta[ComponentType] extends js.Object {
+trait BaseMeta[ComponentType] extends StObject {
   
   /**
     * The primary component for your story.
@@ -56,33 +57,21 @@ object BaseMeta {
   }
   
   @scala.inline
-  implicit class BaseMetaOps[Self <: BaseMeta[_], ComponentType] (val x: Self with BaseMeta[ComponentType]) extends AnyVal {
+  implicit class BaseMetaMutableBuilder[Self <: BaseMeta[_], ComponentType] (val x: Self with BaseMeta[ComponentType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubcomponents(value: Record[String, ComponentType]): Self = StObject.set(x, "subcomponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setSubcomponentsUndefined: Self = StObject.set(x, "subcomponents", js.undefined)
     
     @scala.inline
-    def setComponent(value: ComponentType): Self = this.set("component", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
-    
-    @scala.inline
-    def setSubcomponents(value: Record[String, ComponentType]): Self = this.set("subcomponents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubcomponents: Self = this.set("subcomponents", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

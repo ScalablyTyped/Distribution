@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIndicesResponse extends js.Object {
+trait ListIndicesResponse extends StObject {
   
   /**
     * List of index response
@@ -26,27 +27,15 @@ object ListIndicesResponse {
   }
   
   @scala.inline
-  implicit class ListIndicesResponseOps[Self <: ListIndicesResponse] (val x: Self) extends AnyVal {
+  implicit class ListIndicesResponseMutableBuilder[Self <: ListIndicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[Indice]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsVarargs(value: Indice*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: Indice*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[Indice]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNbPages(value: Double): Self = this.set("nbPages", value.asInstanceOf[js.Any])
+    def setNbPages(value: Double): Self = StObject.set(x, "nbPages", value.asInstanceOf[js.Any])
   }
 }

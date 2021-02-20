@@ -1,5 +1,6 @@
 package typings.wxJsSdkDt.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object OpenProductSpecificViewConfig {
   }
   
   @scala.inline
-  implicit class OpenProductSpecificViewConfigOps[Self <: OpenProductSpecificViewConfig] (val x: Self) extends AnyVal {
+  implicit class OpenProductSpecificViewConfigMutableBuilder[Self <: OpenProductSpecificViewConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setViewType(value: Double): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewType(value: Double): Self = this.set("viewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewType: Self = this.set("viewType", js.undefined)
+    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

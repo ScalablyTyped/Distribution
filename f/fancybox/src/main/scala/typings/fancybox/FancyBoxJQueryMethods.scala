@@ -1,12 +1,13 @@
 package typings.fancybox
 
 import typings.fancybox.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxJQueryMethods extends js.Object {
+trait FancyBoxJQueryMethods extends StObject {
   
   def animate(
     $el: JQuery,

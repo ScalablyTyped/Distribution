@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteBranchOutput extends js.Object {
+trait DeleteBranchOutput extends StObject {
   
   /**
     * Information about the branch deleted by the operation, including the branch name and the commit ID that was the tip of the branch.
@@ -21,24 +22,12 @@ object DeleteBranchOutput {
   }
   
   @scala.inline
-  implicit class DeleteBranchOutputOps[Self <: DeleteBranchOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteBranchOutputMutableBuilder[Self <: DeleteBranchOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedBranch(value: BranchInfo): Self = StObject.set(x, "deletedBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeletedBranch(value: BranchInfo): Self = this.set("deletedBranch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedBranch: Self = this.set("deletedBranch", js.undefined)
+    def setDeletedBranchUndefined: Self = StObject.set(x, "deletedBranch", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.roslib.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compression extends js.Object {
+trait Compression extends StObject {
   
   var compression: js.UndefOr[java.lang.String] = js.native
   
@@ -32,57 +33,45 @@ object Compression {
   }
   
   @scala.inline
-  implicit class CompressionOps[Self <: Compression] (val x: Self) extends AnyVal {
+  implicit class CompressionMutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompression(value: java.lang.String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatch(value: Boolean): Self = StObject.set(x, "latch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: java.lang.String): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setLatchUndefined: Self = StObject.set(x, "latch", js.undefined)
     
     @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMessageType(value: java.lang.String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRos(value: typings.roslib.mod.Ros): Self = this.set("ros", value.asInstanceOf[js.Any])
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: java.lang.String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setQueue_length(value: Double): Self = StObject.set(x, "queue_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setQueue_lengthUndefined: Self = StObject.set(x, "queue_length", js.undefined)
     
     @scala.inline
-    def setLatch(value: Boolean): Self = this.set("latch", value.asInstanceOf[js.Any])
+    def setQueue_size(value: Double): Self = StObject.set(x, "queue_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatch: Self = this.set("latch", js.undefined)
+    def setQueue_sizeUndefined: Self = StObject.set(x, "queue_size", js.undefined)
     
     @scala.inline
-    def setQueue_length(value: Double): Self = this.set("queue_length", value.asInstanceOf[js.Any])
+    def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueue_length: Self = this.set("queue_length", js.undefined)
+    def setThrottle_rate(value: Double): Self = StObject.set(x, "throttle_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue_size(value: Double): Self = this.set("queue_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueue_size: Self = this.set("queue_size", js.undefined)
-    
-    @scala.inline
-    def setThrottle_rate(value: Double): Self = this.set("throttle_rate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle_rate: Self = this.set("throttle_rate", js.undefined)
+    def setThrottle_rateUndefined: Self = StObject.set(x, "throttle_rate", js.undefined)
   }
 }

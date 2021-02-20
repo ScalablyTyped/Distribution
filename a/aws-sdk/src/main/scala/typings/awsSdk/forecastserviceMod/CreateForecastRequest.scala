@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateForecastRequest extends js.Object {
+trait CreateForecastRequest extends StObject {
   
   /**
     * A name for the forecast.
@@ -36,42 +37,30 @@ object CreateForecastRequest {
   }
   
   @scala.inline
-  implicit class CreateForecastRequestOps[Self <: CreateForecastRequest] (val x: Self) extends AnyVal {
+  implicit class CreateForecastRequestMutableBuilder[Self <: CreateForecastRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForecastName(value: Name): Self = StObject.set(x, "ForecastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForecastTypes(value: ForecastTypes): Self = StObject.set(x, "ForecastTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForecastTypesUndefined: Self = StObject.set(x, "ForecastTypes", js.undefined)
     
     @scala.inline
-    def setForecastName(value: Name): Self = this.set("ForecastName", value.asInstanceOf[js.Any])
+    def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value :_*))
     
     @scala.inline
-    def setPredictorArn(value: Arn): Self = this.set("PredictorArn", value.asInstanceOf[js.Any])
+    def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForecastTypesVarargs(value: ForecastType*): Self = this.set("ForecastTypes", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForecastTypes(value: ForecastTypes): Self = this.set("ForecastTypes", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteForecastTypes: Self = this.set("ForecastTypes", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

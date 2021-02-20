@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoutingProfileQueueConfigSummary extends js.Object {
+trait RoutingProfileQueueConfigSummary extends StObject {
   
   /**
     * The channels this queue supports.
@@ -53,36 +54,24 @@ object RoutingProfileQueueConfigSummary {
   }
   
   @scala.inline
-  implicit class RoutingProfileQueueConfigSummaryOps[Self <: RoutingProfileQueueConfigSummary] (val x: Self) extends AnyVal {
+  implicit class RoutingProfileQueueConfigSummaryMutableBuilder[Self <: RoutingProfileQueueConfigSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelay(value: Delay): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: Channel): Self = this.set("Channel", value.asInstanceOf[js.Any])
+    def setQueueArn(value: ARN): Self = StObject.set(x, "QueueArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Delay): Self = this.set("Delay", value.asInstanceOf[js.Any])
+    def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Priority): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueArn(value: ARN): Self = this.set("QueueArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueId(value: QueueId): Self = this.set("QueueId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueName(value: QueueName): Self = this.set("QueueName", value.asInstanceOf[js.Any])
+    def setQueueName(value: QueueName): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
   }
 }

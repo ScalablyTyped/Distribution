@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceLevelObjective extends js.Object {
+trait ServiceLevelObjective extends StObject {
   
   /** A calendar period, semantically "since the start of the current ". At this time, only DAY, WEEK, FORTNIGHT, and MONTH are supported. */
   var calendarPeriod: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object ServiceLevelObjective {
   }
   
   @scala.inline
-  implicit class ServiceLevelObjectiveOps[Self <: ServiceLevelObjective] (val x: Self) extends AnyVal {
+  implicit class ServiceLevelObjectiveMutableBuilder[Self <: ServiceLevelObjective] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarPeriod(value: String): Self = StObject.set(x, "calendarPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarPeriodUndefined: Self = StObject.set(x, "calendarPeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarPeriod(value: String): Self = this.set("calendarPeriod", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCalendarPeriod: Self = this.set("calendarPeriod", js.undefined)
+    def setGoal(value: Double): Self = StObject.set(x, "goal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGoalUndefined: Self = StObject.set(x, "goal", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoal(value: Double): Self = this.set("goal", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGoal: Self = this.set("goal", js.undefined)
+    def setRollingPeriod(value: String): Self = StObject.set(x, "rollingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRollingPeriodUndefined: Self = StObject.set(x, "rollingPeriod", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServiceLevelIndicator(value: ServiceLevelIndicator): Self = StObject.set(x, "serviceLevelIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollingPeriod(value: String): Self = this.set("rollingPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollingPeriod: Self = this.set("rollingPeriod", js.undefined)
-    
-    @scala.inline
-    def setServiceLevelIndicator(value: ServiceLevelIndicator): Self = this.set("serviceLevelIndicator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceLevelIndicator: Self = this.set("serviceLevelIndicator", js.undefined)
+    def setServiceLevelIndicatorUndefined: Self = StObject.set(x, "serviceLevelIndicator", js.undefined)
   }
 }

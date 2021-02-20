@@ -8,12 +8,13 @@ import typings.atom.atomStrings.never
 import typings.atom.atomStrings.overlap
 import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClipDirectionInvalidate extends js.Object {
+trait ClipDirectionInvalidate extends StObject {
   
   var clipDirection: js.UndefOr[backward | forward | closest] = js.native
   
@@ -28,30 +29,18 @@ object ClipDirectionInvalidate {
   }
   
   @scala.inline
-  implicit class ClipDirectionInvalidateOps[Self <: ClipDirectionInvalidate] (val x: Self) extends AnyVal {
+  implicit class ClipDirectionInvalidateMutableBuilder[Self <: ClipDirectionInvalidate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipDirection(value: backward | forward | closest): Self = this.set("clipDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClipDirection: Self = this.set("clipDirection", js.undefined)
-    
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = this.set("invalidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

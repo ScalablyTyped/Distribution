@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * type.
   */
 @js.native
-trait SchemaThreatEntryMetadata extends js.Object {
+trait SchemaThreatEntryMetadata extends StObject {
   
   /**
     * The metadata entries.
@@ -26,27 +27,15 @@ object SchemaThreatEntryMetadata {
   }
   
   @scala.inline
-  implicit class SchemaThreatEntryMetadataOps[Self <: SchemaThreatEntryMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaThreatEntryMetadataMutableBuilder[Self <: SchemaThreatEntryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: js.Array[SchemaMetadataEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntriesVarargs(value: SchemaMetadataEntry*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[SchemaMetadataEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setEntriesVarargs(value: SchemaMetadataEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

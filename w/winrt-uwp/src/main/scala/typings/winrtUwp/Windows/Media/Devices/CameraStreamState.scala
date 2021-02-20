@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CameraStreamState extends js.Object
+sealed trait CameraStreamState extends StObject
 /** Defines the state of a camera stream. */
 @JSGlobal("Windows.Media.Devices.CameraStreamState")
 @js.native
-object CameraStreamState extends js.Object {
+object CameraStreamState extends StObject {
   
   /** Frames in the stream are being dropped for privacy reasons. */
   @js.native

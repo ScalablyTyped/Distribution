@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource_for beta.networks ==)
   */
 @js.native
-trait SchemaNetwork extends js.Object {
+trait SchemaNetwork extends StObject {
   
   /**
     * Deprecated in favor of subnet mode networks. The range of internal
@@ -115,114 +116,102 @@ object SchemaNetwork {
   }
   
   @scala.inline
-  implicit class SchemaNetworkOps[Self <: SchemaNetwork] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkMutableBuilder[Self <: SchemaNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCreateSubnetworks(value: Boolean): Self = StObject.set(x, "autoCreateSubnetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCreateSubnetworksUndefined: Self = StObject.set(x, "autoCreateSubnetworks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPv4Range(value: String): Self = this.set("IPv4Range", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteIPv4Range: Self = this.set("IPv4Range", js.undefined)
+    def setCrossVmEncryption(value: String): Self = StObject.set(x, "crossVmEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCreateSubnetworks(value: Boolean): Self = this.set("autoCreateSubnetworks", value.asInstanceOf[js.Any])
+    def setCrossVmEncryptionUndefined: Self = StObject.set(x, "crossVmEncryption", js.undefined)
     
     @scala.inline
-    def deleteAutoCreateSubnetworks: Self = this.set("autoCreateSubnetworks", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setGatewayIPv4(value: String): Self = StObject.set(x, "gatewayIPv4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossVmEncryption(value: String): Self = this.set("crossVmEncryption", value.asInstanceOf[js.Any])
+    def setGatewayIPv4Undefined: Self = StObject.set(x, "gatewayIPv4", js.undefined)
     
     @scala.inline
-    def deleteCrossVmEncryption: Self = this.set("crossVmEncryption", js.undefined)
+    def setIPv4Range(value: String): Self = StObject.set(x, "IPv4Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIPv4RangeUndefined: Self = StObject.set(x, "IPv4Range", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayIPv4(value: String): Self = this.set("gatewayIPv4", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGatewayIPv4: Self = this.set("gatewayIPv4", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLoadBalancerVmEncryption(value: String): Self = StObject.set(x, "loadBalancerVmEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLoadBalancerVmEncryptionUndefined: Self = StObject.set(x, "loadBalancerVmEncryption", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerVmEncryption(value: String): Self = this.set("loadBalancerVmEncryption", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancerVmEncryption: Self = this.set("loadBalancerVmEncryption", js.undefined)
+    def setPeerings(value: js.Array[SchemaNetworkPeering]): Self = StObject.set(x, "peerings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPeeringsUndefined: Self = StObject.set(x, "peerings", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPeeringsVarargs(value: SchemaNetworkPeering*): Self = StObject.set(x, "peerings", js.Array(value :_*))
     
     @scala.inline
-    def setPeeringsVarargs(value: SchemaNetworkPeering*): Self = this.set("peerings", js.Array(value :_*))
+    def setRoutingConfig(value: SchemaNetworkRoutingConfig): Self = StObject.set(x, "routingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerings(value: js.Array[SchemaNetworkPeering]): Self = this.set("peerings", value.asInstanceOf[js.Any])
+    def setRoutingConfigUndefined: Self = StObject.set(x, "routingConfig", js.undefined)
     
     @scala.inline
-    def deletePeerings: Self = this.set("peerings", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingConfig(value: SchemaNetworkRoutingConfig): Self = this.set("routingConfig", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRoutingConfig: Self = this.set("routingConfig", js.undefined)
+    def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSubnetworks(value: js.Array[String]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
     @scala.inline
-    def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
-    
-    @scala.inline
-    def setSubnetworksVarargs(value: String*): Self = this.set("subnetworks", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubnetworks(value: js.Array[String]): Self = this.set("subnetworks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetworks: Self = this.set("subnetworks", js.undefined)
+    def setSubnetworksVarargs(value: String*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
   }
 }

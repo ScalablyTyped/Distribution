@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.crypto
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,24 +43,12 @@ object XXMLEncryption {
   }
   
   @scala.inline
-  implicit class XXMLEncryptionOps[Self <: XXMLEncryption] (val x: Self) extends AnyVal {
+  implicit class XXMLEncryptionMutableBuilder[Self <: XXMLEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecrypt(value: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDecrypt(value: (XXMLEncryptionTemplate, XXMLSecurityContext) => XXMLEncryptionTemplate): Self = this.set("decrypt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setEncrypt(value: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate): Self = this.set("encrypt", js.Any.fromFunction2(value))
+    def setEncrypt(value: (XXMLEncryptionTemplate, XSecurityEnvironment) => XXMLEncryptionTemplate): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
   }
 }

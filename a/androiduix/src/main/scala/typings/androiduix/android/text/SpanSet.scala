@@ -1,11 +1,12 @@
 package typings.androiduix.android.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpanSet[E] extends js.Object {
+trait SpanSet[E] extends StObject {
   
   var classType: js.Any = js.native
   
@@ -47,60 +48,48 @@ object SpanSet {
   }
   
   @scala.inline
-  implicit class SpanSetOps[Self <: SpanSet[_], E] (val x: Self with SpanSet[E]) extends AnyVal {
+  implicit class SpanSetMutableBuilder[Self <: SpanSet[_], E] (val x: Self with SpanSet[E]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassType(value: js.Any): Self = StObject.set(x, "classType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNextTransition(value: (Double, Double) => Double): Self = StObject.set(x, "getNextTransition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasSpansIntersecting(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasSpansIntersecting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClassType(value: js.Any): Self = this.set("classType", value.asInstanceOf[js.Any])
+    def setInit(value: (Spanned, Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetNextTransition(value: (Double, Double) => Double): Self = this.set("getNextTransition", js.Any.fromFunction2(value))
+    def setNumberOfSpans(value: Double): Self = StObject.set(x, "numberOfSpans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSpansIntersecting(value: (Double, Double) => Boolean): Self = this.set("hasSpansIntersecting", js.Any.fromFunction2(value))
+    def setRecycle(value: () => Unit): Self = StObject.set(x, "recycle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: (Spanned, Double, Double) => Unit): Self = this.set("init", js.Any.fromFunction3(value))
+    def setSpanEnds(value: js.Array[Double]): Self = StObject.set(x, "spanEnds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfSpans(value: Double): Self = this.set("numberOfSpans", value.asInstanceOf[js.Any])
+    def setSpanEndsVarargs(value: Double*): Self = StObject.set(x, "spanEnds", js.Array(value :_*))
     
     @scala.inline
-    def setRecycle(value: () => Unit): Self = this.set("recycle", js.Any.fromFunction0(value))
+    def setSpanFlags(value: js.Array[Double]): Self = StObject.set(x, "spanFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanEndsVarargs(value: Double*): Self = this.set("spanEnds", js.Array(value :_*))
+    def setSpanFlagsVarargs(value: Double*): Self = StObject.set(x, "spanFlags", js.Array(value :_*))
     
     @scala.inline
-    def setSpanEnds(value: js.Array[Double]): Self = this.set("spanEnds", value.asInstanceOf[js.Any])
+    def setSpanStarts(value: js.Array[Double]): Self = StObject.set(x, "spanStarts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanFlagsVarargs(value: Double*): Self = this.set("spanFlags", js.Array(value :_*))
+    def setSpanStartsVarargs(value: Double*): Self = StObject.set(x, "spanStarts", js.Array(value :_*))
     
     @scala.inline
-    def setSpanFlags(value: js.Array[Double]): Self = this.set("spanFlags", value.asInstanceOf[js.Any])
+    def setSpans(value: js.Array[E]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanStartsVarargs(value: Double*): Self = this.set("spanStarts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpanStarts(value: js.Array[Double]): Self = this.set("spanStarts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpansVarargs(value: E*): Self = this.set("spans", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpans(value: js.Array[E]): Self = this.set("spans", value.asInstanceOf[js.Any])
+    def setSpansVarargs(value: E*): Self = StObject.set(x, "spans", js.Array(value :_*))
   }
 }

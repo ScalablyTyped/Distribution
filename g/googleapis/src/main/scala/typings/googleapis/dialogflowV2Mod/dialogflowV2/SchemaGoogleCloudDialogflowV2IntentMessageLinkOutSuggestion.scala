@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * website associated with this agent.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends js.Object {
+trait SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends StObject {
   
   /**
     * Required. The name of the app or site this chip is linking to.
@@ -31,30 +32,18 @@ object SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestionOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestionMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationName(value: String): Self = this.set("destinationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationName: Self = this.set("destinationName", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

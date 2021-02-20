@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard extends js.Object {
+trait GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard extends StObject {
   
   /** Optional. Settings for displaying the image. Applies to every image in items. */
   var imageDisplayOptions: js.UndefOr[String] = js.native
@@ -24,33 +25,21 @@ object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardOps[Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageDisplayOptions(value: String): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDisplayOptions(value: String): Self = this.set("imageDisplayOptions", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteImageDisplayOptions: Self = this.set("imageDisplayOptions", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(value: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

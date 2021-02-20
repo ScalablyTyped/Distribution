@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsS3BucketServerSideEncryptionByDefault extends js.Object {
+trait AwsS3BucketServerSideEncryptionByDefault extends StObject {
   
   /**
     * AWS KMS customer master key (CMK) ID to use for the default encryption.
@@ -26,30 +27,18 @@ object AwsS3BucketServerSideEncryptionByDefault {
   }
   
   @scala.inline
-  implicit class AwsS3BucketServerSideEncryptionByDefaultOps[Self <: AwsS3BucketServerSideEncryptionByDefault] (val x: Self) extends AnyVal {
+  implicit class AwsS3BucketServerSideEncryptionByDefaultMutableBuilder[Self <: AwsS3BucketServerSideEncryptionByDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKMSMasterKeyID(value: NonEmptyString): Self = StObject.set(x, "KMSMasterKeyID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKMSMasterKeyIDUndefined: Self = StObject.set(x, "KMSMasterKeyID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSSEAlgorithm(value: NonEmptyString): Self = StObject.set(x, "SSEAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSMasterKeyID(value: NonEmptyString): Self = this.set("KMSMasterKeyID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKMSMasterKeyID: Self = this.set("KMSMasterKeyID", js.undefined)
-    
-    @scala.inline
-    def setSSEAlgorithm(value: NonEmptyString): Self = this.set("SSEAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSEAlgorithm: Self = this.set("SSEAlgorithm", js.undefined)
+    def setSSEAlgorithmUndefined: Self = StObject.set(x, "SSEAlgorithm", js.undefined)
   }
 }

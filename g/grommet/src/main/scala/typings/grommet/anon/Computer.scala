@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Computer extends js.Object {
+trait Computer extends StObject {
   
   var computer: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object Computer {
   }
   
   @scala.inline
-  implicit class ComputerOps[Self <: Computer] (val x: Self) extends AnyVal {
+  implicit class ComputerMutableBuilder[Self <: Computer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputer(value: String): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputer(value: String): Self = this.set("computer", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deleteComputer: Self = this.set("computer", js.undefined)
+    def setTablet(value: String): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
-    
-    @scala.inline
-    def setTablet(value: String): Self = this.set("tablet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTablet: Self = this.set("tablet", js.undefined)
+    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
   }
 }

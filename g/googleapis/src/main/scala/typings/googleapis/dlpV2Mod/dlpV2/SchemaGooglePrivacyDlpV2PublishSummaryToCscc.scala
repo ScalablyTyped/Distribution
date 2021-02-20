@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,4 +16,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * action can be specified. Compatible with: Inspect
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2PublishSummaryToCscc extends js.Object
+trait SchemaGooglePrivacyDlpV2PublishSummaryToCscc extends StObject

@@ -1,11 +1,12 @@
 package typings.arangodb.Foxx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Model extends js.Object {
+trait Model extends StObject {
   
   var forClient: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
   
@@ -22,33 +23,21 @@ object Model {
   }
   
   @scala.inline
-  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForClient(value: /* value */ js.Any => _): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForClientUndefined: Self = StObject.set(x, "forClient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromClient(value: /* value */ js.Any => _): Self = StObject.set(x, "fromClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSchema(value: Schema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setFromClientUndefined: Self = StObject.set(x, "fromClient", js.undefined)
     
     @scala.inline
-    def setForClient(value: /* value */ js.Any => _): Self = this.set("forClient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteForClient: Self = this.set("forClient", js.undefined)
-    
-    @scala.inline
-    def setFromClient(value: /* value */ js.Any => _): Self = this.set("fromClient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFromClient: Self = this.set("fromClient", js.undefined)
+    def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

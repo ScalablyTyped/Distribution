@@ -2,13 +2,14 @@ package typings.popperjsCore.anon
 
 import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/arrow.Options> */
 @js.native
-trait PartialOptionsElement extends js.Object {
+trait PartialOptionsElement extends StObject {
   
   var element: js.UndefOr[HTMLElement | String | Null] = js.native
   
@@ -23,33 +24,21 @@ object PartialOptionsElement {
   }
   
   @scala.inline
-  implicit class PartialOptionsElementOps[Self <: PartialOptionsElement] (val x: Self) extends AnyVal {
+  implicit class PartialOptionsElementMutableBuilder[Self <: PartialOptionsElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: HTMLElement | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementNull: Self = StObject.set(x, "element", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def setElement(value: HTMLElement | String): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
-    
-    @scala.inline
-    def setElementNull: Self = this.set("element", null)
-    
-    @scala.inline
-    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

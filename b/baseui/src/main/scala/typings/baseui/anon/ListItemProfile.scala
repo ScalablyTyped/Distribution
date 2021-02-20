@@ -1,11 +1,12 @@
 package typings.baseui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListItemProfile extends js.Object {
+trait ListItemProfile extends StObject {
   
   var ChildMenuPopover: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
@@ -48,82 +49,70 @@ object ListItemProfile {
   }
   
   @scala.inline
-  implicit class ListItemProfileOps[Self <: ListItemProfile] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ListItemProfileMutableBuilder[Self <: ListItemProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChildMenuPopover(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ChildMenuPopover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ChildMenuPopover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildMenuPopover: Self = this.set("ChildMenuPopover", js.undefined)
+    def setChildMenuPopoverUndefined: Self = StObject.set(x, "ChildMenuPopover", js.undefined)
     
     @scala.inline
     def setListItemProfile(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ListItemProfile", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ListItemProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItemProfile: Self = this.set("ListItemProfile", js.undefined)
+    def setListItemProfileUndefined: Self = StObject.set(x, "ListItemProfile", js.undefined)
     
     @scala.inline
     def setProfileBody(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ProfileBody", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ProfileBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfileBody: Self = this.set("ProfileBody", js.undefined)
+    def setProfileBodyUndefined: Self = StObject.set(x, "ProfileBody", js.undefined)
     
     @scala.inline
     def setProfileImg(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ProfileImg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileImg: Self = this.set("ProfileImg", js.undefined)
+    ): Self = StObject.set(x, "ProfileImg", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProfileImgContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ProfileImgContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ProfileImgContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfileImgContainer: Self = this.set("ProfileImgContainer", js.undefined)
+    def setProfileImgContainerUndefined: Self = StObject.set(x, "ProfileImgContainer", js.undefined)
+    
+    @scala.inline
+    def setProfileImgUndefined: Self = StObject.set(x, "ProfileImg", js.undefined)
     
     @scala.inline
     def setProfileLabelsContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ProfileLabelsContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ProfileLabelsContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfileLabelsContainer: Self = this.set("ProfileLabelsContainer", js.undefined)
+    def setProfileLabelsContainerUndefined: Self = StObject.set(x, "ProfileLabelsContainer", js.undefined)
     
     @scala.inline
     def setProfileSubtitle(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ProfileSubtitle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ProfileSubtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfileSubtitle: Self = this.set("ProfileSubtitle", js.undefined)
+    def setProfileSubtitleUndefined: Self = StObject.set(x, "ProfileSubtitle", js.undefined)
     
     @scala.inline
     def setProfileTitle(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-    ): Self = this.set("ProfileTitle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ProfileTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfileTitle: Self = this.set("ProfileTitle", js.undefined)
+    def setProfileTitleUndefined: Self = StObject.set(x, "ProfileTitle", js.undefined)
   }
 }

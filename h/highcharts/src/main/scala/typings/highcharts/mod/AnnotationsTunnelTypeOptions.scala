@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsTunnelTypeOptions extends js.Object {
+trait AnnotationsTunnelTypeOptions extends StObject {
   
   /**
     * (Highstock) Background options.
@@ -51,63 +52,51 @@ object AnnotationsTunnelTypeOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsTunnelTypeOptionsOps[Self <: AnnotationsTunnelTypeOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsTunnelTypeOptionsMutableBuilder[Self <: AnnotationsTunnelTypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: js.Object | AnnotationsTunnelTypeBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: js.Object | AnnotationsTunnelTypeBackgroundOptions): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setHeightControlPoint(value: AnnotationsTunnelTypeHeightControlPointOptions): Self = StObject.set(x, "heightControlPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setHeightControlPointUndefined: Self = StObject.set(x, "heightControlPoint", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLine(value: AnnotationsTunnelTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightControlPoint(value: AnnotationsTunnelTypeHeightControlPointOptions): Self = this.set("heightControlPoint", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteHeightControlPoint: Self = this.set("heightControlPoint", js.undefined)
+    def setPoints(value: js.Array[AnnotationsTunnelTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: AnnotationsTunnelTypeLineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setPointsVarargs(value: AnnotationsTunnelTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: AnnotationsTunnelTypePointsOptions*): Self = this.set("points", js.Array(value :_*))
+    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[AnnotationsTunnelTypePointsOptions]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
-    
-    @scala.inline
-    def setYAxis(value: Double): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

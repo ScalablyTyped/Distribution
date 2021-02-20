@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqsAction extends js.Object {
+trait SqsAction extends StObject {
   
   /**
     * The URL of the Amazon SQS queue.
@@ -31,30 +32,18 @@ object SqsAction {
   }
   
   @scala.inline
-  implicit class SqsActionOps[Self <: SqsAction] (val x: Self) extends AnyVal {
+  implicit class SqsActionMutableBuilder[Self <: SqsAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueueUrl(value: QueueUrl): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseBase64(value: UseBase64): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueUrl(value: QueueUrl): Self = this.set("queueUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseBase64(value: UseBase64): Self = this.set("useBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBase64: Self = this.set("useBase64", js.undefined)
+    def setUseBase64Undefined: Self = StObject.set(x, "useBase64", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECSService extends js.Object {
+trait ECSService extends StObject {
   
   /**
     *  The name of the cluster that the Amazon ECS service is associated with. 
@@ -26,30 +27,18 @@ object ECSService {
   }
   
   @scala.inline
-  implicit class ECSServiceOps[Self <: ECSService] (val x: Self) extends AnyVal {
+  implicit class ECSServiceMutableBuilder[Self <: ECSService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterName(value: ECSClusterName): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceName(value: ECSServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: ECSClusterName): Self = this.set("clusterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterName: Self = this.set("clusterName", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: ECSServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

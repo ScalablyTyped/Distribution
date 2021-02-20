@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateIntegrationResponseResponse extends js.Object {
+trait UpdateIntegrationResponseResponse extends StObject {
   
   /**
     * Supported only for WebSocket APIs. Specifies how to handle response payload content type conversions. Supported values are CONVERT_TO_BINARY and CONVERT_TO_TEXT, with the following behaviors: CONVERT_TO_BINARY: Converts a response payload from a Base64-encoded string to the corresponding binary blob. CONVERT_TO_TEXT: Converts a response payload from a binary blob to a Base64-encoded string. If this property is not defined, the response payload will be passed through from the integration response to the route response or method response without modification.
@@ -46,54 +47,42 @@ object UpdateIntegrationResponseResponse {
   }
   
   @scala.inline
-  implicit class UpdateIntegrationResponseResponseOps[Self <: UpdateIntegrationResponseResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateIntegrationResponseResponseMutableBuilder[Self <: UpdateIntegrationResponseResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = StObject.set(x, "ContentHandlingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentHandlingStrategyUndefined: Self = StObject.set(x, "ContentHandlingStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntegrationResponseId(value: Id): Self = StObject.set(x, "IntegrationResponseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = this.set("ContentHandlingStrategy", value.asInstanceOf[js.Any])
+    def setIntegrationResponseIdUndefined: Self = StObject.set(x, "IntegrationResponseId", js.undefined)
     
     @scala.inline
-    def deleteContentHandlingStrategy: Self = this.set("ContentHandlingStrategy", js.undefined)
+    def setIntegrationResponseKey(value: SelectionKey): Self = StObject.set(x, "IntegrationResponseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationResponseId(value: Id): Self = this.set("IntegrationResponseId", value.asInstanceOf[js.Any])
+    def setIntegrationResponseKeyUndefined: Self = StObject.set(x, "IntegrationResponseKey", js.undefined)
     
     @scala.inline
-    def deleteIntegrationResponseId: Self = this.set("IntegrationResponseId", js.undefined)
+    def setResponseParameters(value: IntegrationParameters): Self = StObject.set(x, "ResponseParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationResponseKey(value: SelectionKey): Self = this.set("IntegrationResponseKey", value.asInstanceOf[js.Any])
+    def setResponseParametersUndefined: Self = StObject.set(x, "ResponseParameters", js.undefined)
     
     @scala.inline
-    def deleteIntegrationResponseKey: Self = this.set("IntegrationResponseKey", js.undefined)
+    def setResponseTemplates(value: TemplateMap): Self = StObject.set(x, "ResponseTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseParameters(value: IntegrationParameters): Self = this.set("ResponseParameters", value.asInstanceOf[js.Any])
+    def setResponseTemplatesUndefined: Self = StObject.set(x, "ResponseTemplates", js.undefined)
     
     @scala.inline
-    def deleteResponseParameters: Self = this.set("ResponseParameters", js.undefined)
+    def setTemplateSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "TemplateSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTemplates(value: TemplateMap): Self = this.set("ResponseTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseTemplates: Self = this.set("ResponseTemplates", js.undefined)
-    
-    @scala.inline
-    def setTemplateSelectionExpression(value: SelectionExpression): Self = this.set("TemplateSelectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateSelectionExpression: Self = this.set("TemplateSelectionExpression", js.undefined)
+    def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "TemplateSelectionExpression", js.undefined)
   }
 }

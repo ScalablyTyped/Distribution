@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A object instantiated by the background broker infrastructure and used by an app to retrieve details when a SocketActivityTrigger occurs. */
 @js.native
-trait SocketActivityTriggerDetails extends js.Object {
+trait SocketActivityTriggerDetails extends StObject {
   
   /** Get the reason the SocketActivityTrigger occurred. */
   var reason: SocketActivityTriggerReason = js.native
@@ -23,24 +24,12 @@ object SocketActivityTriggerDetails {
   }
   
   @scala.inline
-  implicit class SocketActivityTriggerDetailsOps[Self <: SocketActivityTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class SocketActivityTriggerDetailsMutableBuilder[Self <: SocketActivityTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: SocketActivityTriggerReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReason(value: SocketActivityTriggerReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocketInformation(value: SocketActivityInformation): Self = this.set("socketInformation", value.asInstanceOf[js.Any])
+    def setSocketInformation(value: SocketActivityInformation): Self = StObject.set(x, "socketInformation", value.asInstanceOf[js.Any])
   }
 }

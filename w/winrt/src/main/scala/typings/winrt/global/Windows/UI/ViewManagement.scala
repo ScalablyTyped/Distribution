@@ -1,48 +1,65 @@
 package typings.winrt.global.Windows.UI
 
 import typings.winrt.Windows.UI.ViewManagement.ApplicationViewState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.ViewManagement")
-@js.native
-object ViewManagement extends js.Object {
+object ViewManagement {
   
+  @JSGlobal("Windows.UI.ViewManagement.AccessibilitySettings")
   @js.native
   class AccessibilitySettings ()
     extends typings.winrt.Windows.UI.ViewManagement.AccessibilitySettings
   
+  @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
   @js.native
   class ApplicationView ()
     extends typings.winrt.Windows.UI.ViewManagement.ApplicationView
   /* static members */
-  @js.native
-  object ApplicationView extends js.Object {
+  object ApplicationView {
+    
+    @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets the window (app view) for the current app.
       **/
+    @JSGlobal("Windows.UI.ViewManagement.ApplicationView.getForCurrentView")
+    @js.native
     def getForCurrentView(): typings.winrt.Windows.UI.ViewManagement.ApplicationView = js.native
     
     /**
       * Indicates whether the app terminates when the last window is closed.
       **/
-    var terminateAppOnFinalViewClose: Boolean = js.native
+    @JSGlobal("Windows.UI.ViewManagement.ApplicationView.terminateAppOnFinalViewClose")
+    @js.native
+    def terminateAppOnFinalViewClose: Boolean = js.native
+    @scala.inline
+    def terminateAppOnFinalViewClose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("terminateAppOnFinalViewClose")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to unsnap a previously snapped app. This call will only succeed when the app is running in the foreground.
       **/
+    @JSGlobal("Windows.UI.ViewManagement.ApplicationView.tryUnsnap")
+    @js.native
     def tryUnsnap(): Boolean = js.native
     
     /**
       * Gets the state of the current app view.
       **/
-    var value: ApplicationViewState = js.native
+    @JSGlobal("Windows.UI.ViewManagement.ApplicationView.value")
+    @js.native
+    def value: ApplicationViewState = js.native
+    @scala.inline
+    def value_=(x: ApplicationViewState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
+  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewOrientation")
   @js.native
-  object ApplicationViewOrientation extends js.Object {
+  object ApplicationViewOrientation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ViewManagement.ApplicationViewOrientation with Double] = js.native
@@ -52,8 +69,9 @@ object ViewManagement extends js.Object {
     /* 1 */ val portrait: typings.winrt.Windows.UI.ViewManagement.ApplicationViewOrientation.portrait with Double = js.native
   }
   
+  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewState")
   @js.native
-  object ApplicationViewState extends js.Object {
+  object ApplicationViewState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ViewManagement.ApplicationViewState with Double] = js.native
@@ -67,12 +85,14 @@ object ViewManagement extends js.Object {
     /* 2 */ val snapped: typings.winrt.Windows.UI.ViewManagement.ApplicationViewState.snapped with Double = js.native
   }
   
+  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTitleBar")
   @js.native
   class ApplicationViewTitleBar ()
     extends typings.winrt.Windows.UI.ViewManagement.ApplicationViewTitleBar
   
+  @JSGlobal("Windows.UI.ViewManagement.HandPreference")
   @js.native
-  object HandPreference extends js.Object {
+  object HandPreference extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ViewManagement.HandPreference with Double] = js.native
@@ -82,22 +102,26 @@ object ViewManagement extends js.Object {
     /* 1 */ val rightHanded: typings.winrt.Windows.UI.ViewManagement.HandPreference.rightHanded with Double = js.native
   }
   
+  @JSGlobal("Windows.UI.ViewManagement.InputPane")
   @js.native
   class InputPane ()
     extends typings.winrt.Windows.UI.ViewManagement.InputPane
   /* static members */
-  @js.native
-  object InputPane extends js.Object {
+  object InputPane {
     
+    @JSGlobal("Windows.UI.ViewManagement.InputPane.getForCurrentView")
+    @js.native
     def getForCurrentView(): typings.winrt.Windows.UI.ViewManagement.InputPane = js.native
   }
   
+  @JSGlobal("Windows.UI.ViewManagement.InputPaneVisibilityEventArgs")
   @js.native
   class InputPaneVisibilityEventArgs ()
     extends typings.winrt.Windows.UI.ViewManagement.InputPaneVisibilityEventArgs
   
+  @JSGlobal("Windows.UI.ViewManagement.UIElementType")
   @js.native
-  object UIElementType extends js.Object {
+  object UIElementType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ViewManagement.UIElementType with Double] = js.native
@@ -129,12 +153,14 @@ object ViewManagement extends js.Object {
     /* 12 */ val windowText: typings.winrt.Windows.UI.ViewManagement.UIElementType.windowText with Double = js.native
   }
   
+  @JSGlobal("Windows.UI.ViewManagement.UISettings")
   @js.native
   class UISettings ()
     extends typings.winrt.Windows.UI.ViewManagement.UISettings
   
+  @JSGlobal("Windows.UI.ViewManagement.ViewSizePreference")
   @js.native
-  object ViewSizePreference extends js.Object {
+  object ViewSizePreference extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.ViewManagement.ViewSizePreference with Double] = js.native

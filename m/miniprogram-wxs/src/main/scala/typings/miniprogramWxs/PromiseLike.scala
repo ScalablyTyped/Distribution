@@ -1,11 +1,12 @@
 package typings.miniprogramWxs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromiseLike[T] extends js.Object {
+trait PromiseLike[T] extends StObject {
   
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.

@@ -5,14 +5,15 @@ import typings.rcPicker.interfaceMod.PanelSharedProps
 import typings.rcPicker.uiUtilMod.KeyboardConfig
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-picker/es/panels/DatePanel", JSImport.Namespace)
-@js.native
-object datePanelMod extends js.Object {
+object datePanelMod {
   
+  @JSImport("rc-picker/es/panels/DatePanel", JSImport.Default)
+  @js.native
   def default[DateType](props: DatePanelProps[DateType]): Element = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

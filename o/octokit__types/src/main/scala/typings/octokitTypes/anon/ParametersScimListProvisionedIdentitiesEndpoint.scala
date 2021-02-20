@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ScimListProvisionedIdentitiesEndpoint
 import typings.octokitTypes.endpointsMod.ScimListProvisionedIdentitiesRequestOptions
 import typings.octokitTypes.endpointsMod.ScimListProvisionedIdentitiesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersScimListProvisionedIdentitiesEndpoint extends js.Object {
+trait ParametersScimListProvisionedIdentitiesEndpoint extends StObject {
   
   var parameters: ScimListProvisionedIdentitiesEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersScimListProvisionedIdentitiesEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersScimListProvisionedIdentitiesEndpointOps[Self <: ParametersScimListProvisionedIdentitiesEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersScimListProvisionedIdentitiesEndpointMutableBuilder[Self <: ParametersScimListProvisionedIdentitiesEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ScimListProvisionedIdentitiesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ScimListProvisionedIdentitiesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ScimListProvisionedIdentitiesEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ScimListProvisionedIdentitiesRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ScimListProvisionedIdentitiesResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ScimListProvisionedIdentitiesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

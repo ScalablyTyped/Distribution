@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimeType extends js.Object
+sealed trait TimeType extends StObject
 @JSGlobal("Microsoft.Maps.Directions.TimeType")
 @js.native
-object TimeType extends js.Object {
+object TimeType extends StObject {
   
   /** The dateTime parameter contains the desired arrival time for a transit request. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeDeveloperIdentitiesInput extends js.Object {
+trait MergeDeveloperIdentitiesInput extends StObject {
   
   /**
     * User identifier for the destination user. The value should be a DeveloperUserIdentifier.
@@ -41,30 +42,18 @@ object MergeDeveloperIdentitiesInput {
   }
   
   @scala.inline
-  implicit class MergeDeveloperIdentitiesInputOps[Self <: MergeDeveloperIdentitiesInput] (val x: Self) extends AnyVal {
+  implicit class MergeDeveloperIdentitiesInputMutableBuilder[Self <: MergeDeveloperIdentitiesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationUserIdentifier(value: DeveloperUserIdentifier): Self = this.set("DestinationUserIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeveloperProviderName(value: DeveloperProviderName): Self = this.set("DeveloperProviderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceUserIdentifier(value: DeveloperUserIdentifier): Self = this.set("SourceUserIdentifier", value.asInstanceOf[js.Any])
+    def setSourceUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "SourceUserIdentifier", value.asInstanceOf[js.Any])
   }
 }

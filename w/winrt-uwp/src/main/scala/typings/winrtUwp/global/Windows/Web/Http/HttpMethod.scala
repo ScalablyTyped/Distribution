@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,29 +16,65 @@ class HttpMethod protected ()
     */
   def this(method: String) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.HttpMethod")
-@js.native
-object HttpMethod extends js.Object {
+object HttpMethod {
+  
+  @JSGlobal("Windows.Web.Http.HttpMethod")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Gets the HTTP DELETE method. */
-  var delete: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.delete")
+  @js.native
+  def delete: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def delete_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delete")(x.asInstanceOf[js.Any])
   
   /** Gets the HTTP GET method. */
-  var get: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.get")
+  @js.native
+  def get: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def get_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
   
   /** Gets the HTTP HEAD method. */
-  var head: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.head")
+  @js.native
+  def head: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def head_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head")(x.asInstanceOf[js.Any])
   
   /** Gets the HTTP OPTIONS method. */
-  var options: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.options")
+  @js.native
+  def options: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def options_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
   /** Gets the HTTP PATCH method, */
-  var patch: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.patch")
+  @js.native
+  def patch: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def patch_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patch")(x.asInstanceOf[js.Any])
   
   /** Gets the HTTP POST method. */
-  var post: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.post")
+  @js.native
+  def post: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def post_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("post")(x.asInstanceOf[js.Any])
   
   /** Gets the HTTP PUT method. */
-  var put: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  /* static member */
+  @JSGlobal("Windows.Web.Http.HttpMethod.put")
+  @js.native
+  def put: typings.winrtUwp.Windows.Web.Http.HttpMethod = js.native
+  @scala.inline
+  def put_=(x: typings.winrtUwp.Windows.Web.Http.HttpMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("put")(x.asInstanceOf[js.Any])
 }

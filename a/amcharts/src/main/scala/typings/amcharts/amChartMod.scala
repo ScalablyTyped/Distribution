@@ -3,16 +3,24 @@ package typings.amcharts
 import typings.amcharts.anon.Type
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmChart", JSImport.Namespace)
-@js.native
-object amChartMod extends js.Object {
+object amChartMod {
+  
+  @JSImport("amcharts/AmChart", JSImport.Default)
+  @js.native
+  /**
+    * used when constructing a chart with a theme
+    */
+  class default () extends AmChart {
+    def this(theme: js.Any) = this()
+  }
   
   @js.native
-  trait AmChart extends js.Object {
+  trait AmChart extends StObject {
     
     /**
       * Specifies, if class names should be added to chart elements.
@@ -395,13 +403,5 @@ object amChartMod extends js.Object {
       */
     def write(container: String): Unit = js.native
     def write(container: HTMLDivElement): Unit = js.native
-  }
-  
-  @js.native
-  /**
-    * used when constructing a chart with a theme
-    */
-  class default () extends AmChart {
-    def this(theme: js.Any) = this()
   }
 }

@@ -8,18 +8,16 @@ import typings.libp2pNoise.basicMod.uint32
 import typings.libp2pNoise.handshakeMod.CipherState
 import typings.libp2pNoise.handshakeMod.MessageBuffer
 import typings.libp2pNoise.handshakeMod.SymmetricState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-noise/dist/src/handshakes/abstract-handshake", JSImport.Namespace)
-@js.native
-object abstractHandshakeMod extends js.Object {
+object abstractHandshakeMod {
   
-  val MIN_NONCE: /* 0 */ Double = js.native
-  
+  @JSImport("libp2p-noise/dist/src/handshakes/abstract-handshake", "AbstractHandshake")
   @js.native
-  abstract class AbstractHandshake () extends js.Object {
+  abstract class AbstractHandshake () extends StObject {
     
     /* protected */ def createEmptyKey(): bytes32 = js.native
     
@@ -65,4 +63,8 @@ object abstractHandshakeMod extends js.Object {
     
     /* protected */ def writeMessageRegular(cs: CipherState, payload: bytes): MessageBuffer = js.native
   }
+  
+  @JSImport("libp2p-noise/dist/src/handshakes/abstract-handshake", "MIN_NONCE")
+  @js.native
+  val MIN_NONCE: /* 0 */ Double = js.native
 }

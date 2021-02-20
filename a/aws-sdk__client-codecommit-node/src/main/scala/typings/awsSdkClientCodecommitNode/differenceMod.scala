@@ -1,13 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/_Difference", JSImport.Namespace)
-@js.native
-object differenceMod extends js.Object {
+object differenceMod {
   
-  @JSName("_Difference")
+  @JSImport("@aws-sdk/client-codecommit-node/model/_Difference", "_Difference")
+  @js.native
   val Difference: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

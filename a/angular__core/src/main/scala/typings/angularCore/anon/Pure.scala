@@ -1,12 +1,13 @@
 package typings.angularCore.anon
 
 import typings.angularCore.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pure[T] extends js.Object {
+trait Pure[T] extends StObject {
   
   /** Name of the pipe. Used for matching pipes in template to pipe defs. */
   var name: String = js.native
@@ -27,30 +28,18 @@ object Pure {
   }
   
   @scala.inline
-  implicit class PureOps[Self <: Pure[_], T] (val x: Self with Pure[T]) extends AnyVal {
+  implicit class PureMutableBuilder[Self <: Pure[_], T] (val x: Self with Pure[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Type[T]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPure(value: Boolean): Self = this.set("pure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePure: Self = this.set("pure", js.undefined)
+    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

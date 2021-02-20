@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeploymentResponse extends js.Object {
+trait CreateDeploymentResponse extends StObject {
   
   /**
     * The ARN of the deployment.
@@ -26,30 +27,18 @@ object CreateDeploymentResponse {
   }
   
   @scala.inline
-  implicit class CreateDeploymentResponseOps[Self <: CreateDeploymentResponse] (val x: Self) extends AnyVal {
+  implicit class CreateDeploymentResponseMutableBuilder[Self <: CreateDeploymentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentArn(value: string): Self = StObject.set(x, "DeploymentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentArnUndefined: Self = StObject.set(x, "DeploymentArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentArn(value: string): Self = this.set("DeploymentArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentArn: Self = this.set("DeploymentArn", js.undefined)
-    
-    @scala.inline
-    def setDeploymentId(value: string): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
   }
 }

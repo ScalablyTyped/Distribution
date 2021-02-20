@@ -1,5 +1,6 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.recharts.rechartsStrings.discard
   - typings.recharts.rechartsStrings.extendDomain
 */
-trait IfOverflowType extends js.Object
+trait IfOverflowType extends StObject
 object IfOverflowType {
   
   @scala.inline

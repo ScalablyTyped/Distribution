@@ -1,6 +1,7 @@
 package typings.relayRuntime.normalizationNodeMod
 
 import typings.relayRuntime.relayRuntimeStrings.Defer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,18 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation
   - typings.relayRuntime.normalizationNodeMod.NormalizationStream
 */
-trait NormalizationSelectableNode extends js.Object
+trait NormalizationSelectableNode extends StObject
 object NormalizationSelectableNode {
   
   @scala.inline
-  def NormalizationOperation(
-    argumentDefinitions: js.Array[NormalizationLocalArgumentDefinition],
-    kind: String,
-    name: String,
-    selections: js.Array[NormalizationSelection]
-  ): NormalizationSelectableNode = {
-    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NormalizationSelectableNode]
+  def NormalizationDefer(kind: Defer, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationDefer]
   }
   
   @scala.inline
@@ -33,26 +29,31 @@ object NormalizationSelectableNode {
     name: String,
     plural: Boolean,
     selections: js.Array[NormalizationSelection]
-  ): NormalizationSelectableNode = {
+  ): typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NormalizationSelectableNode]
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField]
   }
   
   @scala.inline
-  def NormalizationStream(kind: String, label: String, selections: js.Array[NormalizationSelection]): NormalizationSelectableNode = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NormalizationSelectableNode]
+  def NormalizationOperation(
+    argumentDefinitions: js.Array[NormalizationLocalArgumentDefinition],
+    kind: String,
+    name: String,
+    selections: js.Array[NormalizationSelection]
+  ): typings.relayRuntime.normalizationNodeMod.NormalizationOperation = {
+    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationOperation]
   }
   
   @scala.inline
-  def NormalizationSplitOperation(kind: String, name: String, selections: js.Array[NormalizationSelection]): NormalizationSelectableNode = {
+  def NormalizationSplitOperation(kind: String, name: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NormalizationSelectableNode]
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation]
   }
   
   @scala.inline
-  def NormalizationDefer(kind: Defer, label: String, selections: js.Array[NormalizationSelection]): NormalizationSelectableNode = {
+  def NormalizationStream(kind: String, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationStream = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NormalizationSelectableNode]
+    __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationStream]
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * automatically as a result of auto-rotation.
   */
 @js.native
-trait SchemaCryptoKeyVersionTemplate extends js.Object {
+trait SchemaCryptoKeyVersionTemplate extends StObject {
   
   /**
     * Required. Algorithm to use when creating a CryptoKeyVersion based on this
@@ -35,30 +36,18 @@ object SchemaCryptoKeyVersionTemplate {
   }
   
   @scala.inline
-  implicit class SchemaCryptoKeyVersionTemplateOps[Self <: SchemaCryptoKeyVersionTemplate] (val x: Self) extends AnyVal {
+  implicit class SchemaCryptoKeyVersionTemplateMutableBuilder[Self <: SchemaCryptoKeyVersionTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
-    
-    @scala.inline
-    def setProtectionLevel(value: String): Self = this.set("protectionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtectionLevel: Self = this.set("protectionLevel", js.undefined)
+    def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPieChartClasses extends js.Object {
+trait IPieChartClasses extends StObject {
   
   var chartDonut: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object IPieChartClasses {
   }
   
   @scala.inline
-  implicit class IPieChartClassesOps[Self <: IPieChartClasses] (val x: Self) extends AnyVal {
+  implicit class IPieChartClassesMutableBuilder[Self <: IPieChartClasses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartDonut(value: String): Self = StObject.set(x, "chartDonut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartDonutUndefined: Self = StObject.set(x, "chartDonut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartPie(value: String): Self = StObject.set(x, "chartPie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartDonut(value: String): Self = this.set("chartDonut", value.asInstanceOf[js.Any])
+    def setChartPieUndefined: Self = StObject.set(x, "chartPie", js.undefined)
     
     @scala.inline
-    def deleteChartDonut: Self = this.set("chartDonut", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartPie(value: String): Self = this.set("chartPie", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteChartPie: Self = this.set("chartPie", js.undefined)
+    def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSliceDonut(value: String): Self = StObject.set(x, "sliceDonut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: String): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSliceDonutUndefined: Self = StObject.set(x, "sliceDonut", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSlicePie(value: String): Self = StObject.set(x, "slicePie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliceDonut(value: String): Self = this.set("sliceDonut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSliceDonut: Self = this.set("sliceDonut", js.undefined)
-    
-    @scala.inline
-    def setSlicePie(value: String): Self = this.set("slicePie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlicePie: Self = this.set("slicePie", js.undefined)
+    def setSlicePieUndefined: Self = StObject.set(x, "slicePie", js.undefined)
   }
 }

@@ -3,16 +3,21 @@ package typings.antvScale
 import typings.antvScale.typesMod.ScaleConfig
 import typings.antvScale.typesMod.Tick
 import typings.antvScale.typesMod.TickMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
+object baseMod {
+  
+  @JSImport("@antv/scale/lib/base", JSImport.Default)
+  @js.native
+  abstract class default protected () extends Scale {
+    def this(cfg: ScaleConfig) = this()
+  }
   
   @js.native
-  trait Scale extends js.Object {
+  trait Scale extends StObject {
     
     var __cfg__ : ScaleConfig = js.native
     
@@ -104,10 +109,5 @@ object baseMod extends js.Object {
     var `type`: String = js.native
     
     var values: js.UndefOr[js.Array[_]] = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends Scale {
-    def this(cfg: ScaleConfig) = this()
   }
 }

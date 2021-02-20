@@ -1,5 +1,6 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes information about a regional election administrative area.
   */
 @js.native
-trait SchemaAdministrationRegion extends js.Object {
+trait SchemaAdministrationRegion extends StObject {
   
   /**
     * The election administration body for this area.
@@ -48,51 +49,39 @@ object SchemaAdministrationRegion {
   }
   
   @scala.inline
-  implicit class SchemaAdministrationRegionOps[Self <: SchemaAdministrationRegion] (val x: Self) extends AnyVal {
+  implicit class SchemaAdministrationRegionMutableBuilder[Self <: SchemaAdministrationRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElectionAdministrationBody(value: SchemaAdministrativeBody): Self = StObject.set(x, "electionAdministrationBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElectionAdministrationBodyUndefined: Self = StObject.set(x, "electionAdministrationBody", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionAdministrationBody(value: SchemaAdministrativeBody): Self = this.set("electionAdministrationBody", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteElectionAdministrationBody: Self = this.set("electionAdministrationBody", js.undefined)
+    def setLocal_jurisdiction(value: SchemaAdministrationRegion): Self = StObject.set(x, "local_jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocal_jurisdictionUndefined: Self = StObject.set(x, "local_jurisdiction", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal_jurisdiction(value: SchemaAdministrationRegion): Self = this.set("local_jurisdiction", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocal_jurisdiction: Self = this.set("local_jurisdiction", js.undefined)
+    def setSources(value: js.Array[SchemaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: SchemaSource*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[SchemaSource]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

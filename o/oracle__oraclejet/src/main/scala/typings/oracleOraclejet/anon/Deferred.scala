@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object Deferred {
   }
   
   @scala.inline
-  implicit class DeferredOps[Self <: Deferred] (val x: Self) extends AnyVal {
+  implicit class DeferredMutableBuilder[Self <: Deferred] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchSize(value: Double): Self = StObject.set(x, "fetchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferred(value: Boolean): Self = this.set("deferred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeferred: Self = this.set("deferred", js.undefined)
-    
-    @scala.inline
-    def setFetchSize(value: Double): Self = this.set("fetchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFetchSize: Self = this.set("fetchSize", js.undefined)
+    def setFetchSizeUndefined: Self = StObject.set(x, "fetchSize", js.undefined)
   }
 }

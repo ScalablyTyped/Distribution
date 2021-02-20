@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object DocumentManifestContent {
   }
   
   @scala.inline
-  implicit class DocumentManifestContentOps[Self <: DocumentManifestContent] (val x: Self) extends AnyVal {
+  implicit class DocumentManifestContentMutableBuilder[Self <: DocumentManifestContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPAttachment(value: Attachment): Self = StObject.set(x, "pAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPAttachmentUndefined: Self = StObject.set(x, "pAttachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPReference(value: Reference): Self = StObject.set(x, "pReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPAttachment(value: Attachment): Self = this.set("pAttachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePAttachment: Self = this.set("pAttachment", js.undefined)
-    
-    @scala.inline
-    def setPReference(value: Reference): Self = this.set("pReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePReference: Self = this.set("pReference", js.undefined)
+    def setPReferenceUndefined: Self = StObject.set(x, "pReference", js.undefined)
   }
 }

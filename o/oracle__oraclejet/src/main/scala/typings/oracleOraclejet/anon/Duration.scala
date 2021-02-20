@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Duration extends js.Object {
+trait Duration extends StObject {
   
   var delay: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object Duration {
   }
   
   @scala.inline
-  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEndOpacity(value: Double): Self = StObject.set(x, "endOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEndOpacityUndefined: Self = StObject.set(x, "endOpacity", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setPersist(value: String): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOpacity(value: Double): Self = this.set("endOpacity", value.asInstanceOf[js.Any])
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deleteEndOpacity: Self = this.set("endOpacity", js.undefined)
+    def setStartOpacity(value: Double): Self = StObject.set(x, "startOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist(value: String): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setStartOpacityUndefined: Self = StObject.set(x, "startOpacity", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartOpacity(value: Double): Self = this.set("startOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartOpacity: Self = this.set("startOpacity", js.undefined)
-    
-    @scala.inline
-    def setTimingFunction(value: String): Self = this.set("timingFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingFunction: Self = this.set("timingFunction", js.undefined)
+    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
   }
 }

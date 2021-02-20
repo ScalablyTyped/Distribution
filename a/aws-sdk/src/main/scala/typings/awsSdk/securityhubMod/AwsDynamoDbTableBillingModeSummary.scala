@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableBillingModeSummary extends js.Object {
+trait AwsDynamoDbTableBillingModeSummary extends StObject {
   
   /**
     * The method used to charge for read and write throughput and to manage capacity.
@@ -26,30 +27,18 @@ object AwsDynamoDbTableBillingModeSummary {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableBillingModeSummaryOps[Self <: AwsDynamoDbTableBillingModeSummary] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableBillingModeSummaryMutableBuilder[Self <: AwsDynamoDbTableBillingModeSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingMode(value: NonEmptyString): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastUpdateToPayPerRequestDateTime(value: NonEmptyString): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingMode(value: NonEmptyString): Self = this.set("BillingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingMode: Self = this.set("BillingMode", js.undefined)
-    
-    @scala.inline
-    def setLastUpdateToPayPerRequestDateTime(value: NonEmptyString): Self = this.set("LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateToPayPerRequestDateTime: Self = this.set("LastUpdateToPayPerRequestDateTime", js.undefined)
+    def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
   }
 }

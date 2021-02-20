@@ -3,6 +3,7 @@ package typings.kdbxweb.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.kdbxweb.anon.DefaultSequence
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,11 +47,13 @@ class Entry () extends KdbxObject {
   def write(parentNode: Node, ctx: Context): Unit = js.native
 }
 /* static members */
-@JSImport("kdbxweb", "Entry")
-@js.native
-object Entry extends js.Object {
+object Entry {
   
+  @JSImport("kdbxweb", "Entry.create")
+  @js.native
   def create(meta: Meta, parentGroup: Group): Entry = js.native
   
+  @JSImport("kdbxweb", "Entry.read")
+  @js.native
   def read(xmlNode: Node, ctx: Context, parentGroup: Group): Entry = js.native
 }

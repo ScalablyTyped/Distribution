@@ -3,12 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.NoteStore.NoteInvitationShareRelationship
 import typings.evernote.mod.NoteStore.NoteMemberShareRelationship
 import typings.evernote.mod.NoteStore.NoteShareRelationshipRestrictions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvitationRestrictions extends js.Object {
+trait InvitationRestrictions extends StObject {
   
   var invitationRestrictions: js.UndefOr[NoteShareRelationshipRestrictions] = js.native
   
@@ -25,42 +26,30 @@ object InvitationRestrictions {
   }
   
   @scala.inline
-  implicit class InvitationRestrictionsOps[Self <: InvitationRestrictions] (val x: Self) extends AnyVal {
+  implicit class InvitationRestrictionsMutableBuilder[Self <: InvitationRestrictions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvitationRestrictions(value: NoteShareRelationshipRestrictions): Self = StObject.set(x, "invitationRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvitationRestrictionsUndefined: Self = StObject.set(x, "invitationRestrictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvitations(value: js.Array[NoteInvitationShareRelationship]): Self = StObject.set(x, "invitations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitationRestrictions(value: NoteShareRelationshipRestrictions): Self = this.set("invitationRestrictions", value.asInstanceOf[js.Any])
+    def setInvitationsUndefined: Self = StObject.set(x, "invitations", js.undefined)
     
     @scala.inline
-    def deleteInvitationRestrictions: Self = this.set("invitationRestrictions", js.undefined)
+    def setInvitationsVarargs(value: NoteInvitationShareRelationship*): Self = StObject.set(x, "invitations", js.Array(value :_*))
     
     @scala.inline
-    def setInvitationsVarargs(value: NoteInvitationShareRelationship*): Self = this.set("invitations", js.Array(value :_*))
+    def setMemberships(value: js.Array[NoteMemberShareRelationship]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitations(value: js.Array[NoteInvitationShareRelationship]): Self = this.set("invitations", value.asInstanceOf[js.Any])
+    def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
     @scala.inline
-    def deleteInvitations: Self = this.set("invitations", js.undefined)
-    
-    @scala.inline
-    def setMembershipsVarargs(value: NoteMemberShareRelationship*): Self = this.set("memberships", js.Array(value :_*))
-    
-    @scala.inline
-    def setMemberships(value: js.Array[NoteMemberShareRelationship]): Self = this.set("memberships", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberships: Self = this.set("memberships", js.undefined)
+    def setMembershipsVarargs(value: NoteMemberShareRelationship*): Self = StObject.set(x, "memberships", js.Array(value :_*))
   }
 }

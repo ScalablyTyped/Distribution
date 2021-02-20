@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateTemplateRequest extends js.Object {
+trait GenerateTemplateRequest extends StObject {
   
   /**
     * The ID of the application associated with the AWS CloudFormation template.
@@ -26,30 +27,18 @@ object GenerateTemplateRequest {
   }
   
   @scala.inline
-  implicit class GenerateTemplateRequestOps[Self <: GenerateTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class GenerateTemplateRequestMutableBuilder[Self <: GenerateTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateFormat(value: OutputFormat): Self = StObject.set(x, "templateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
-    
-    @scala.inline
-    def setTemplateFormat(value: OutputFormat): Self = this.set("templateFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateFormat: Self = this.set("templateFormat", js.undefined)
+    def setTemplateFormatUndefined: Self = StObject.set(x, "templateFormat", js.undefined)
   }
 }

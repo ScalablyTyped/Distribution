@@ -2,6 +2,7 @@ package typings.typescriptServices.TypeScript.Services
 
 import typings.typescriptServices.TypeScript.ILogger
 import typings.typescriptServices.TypeScript.IScriptSnapshot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,42 +46,30 @@ object CoreServicesShim {
   }
   
   @scala.inline
-  implicit class CoreServicesShimOps[Self <: CoreServicesShim] (val x: Self) extends AnyVal {
+  implicit class CoreServicesShimMutableBuilder[Self <: CoreServicesShim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDumpMemory(value: js.Any => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForwardJSONCall(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultCompilationSettings(value: () => String): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDumpMemory(value: js.Any => String): Self = this.set("dumpMemory", js.Any.fromFunction1(value))
+    def setGetMemoryInfo(value: js.Any => String): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForwardJSONCall(value: (js.Any, js.Any) => js.Any): Self = this.set("forwardJSONCall", js.Any.fromFunction2(value))
+    def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => String): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDefaultCompilationSettings(value: () => String): Self = this.set("getDefaultCompilationSettings", js.Any.fromFunction0(value))
+    def setHost(value: ICoreServicesHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMemoryInfo(value: js.Any => String): Self = this.set("getMemoryInfo", js.Any.fromFunction1(value))
+    def setLogger(value: ILogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => String): Self = this.set("getPreProcessedFileInfo", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHost(value: ICoreServicesHost): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogger(value: ILogger): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServices(value: CoreServices): Self = this.set("services", value.asInstanceOf[js.Any])
+    def setServices(value: CoreServices): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }
 }

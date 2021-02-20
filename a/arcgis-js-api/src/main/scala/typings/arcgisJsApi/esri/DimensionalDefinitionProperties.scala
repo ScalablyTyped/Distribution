@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionalDefinitionProperties extends js.Object {
+trait DimensionalDefinitionProperties extends StObject {
   
   /**
     * The dimension associated with the variable.
@@ -44,45 +45,33 @@ object DimensionalDefinitionProperties {
   }
   
   @scala.inline
-  implicit class DimensionalDefinitionPropertiesOps[Self <: DimensionalDefinitionProperties] (val x: Self) extends AnyVal {
+  implicit class DimensionalDefinitionPropertiesMutableBuilder[Self <: DimensionalDefinitionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSlice(value: Boolean): Self = StObject.set(x, "isSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionName(value: String): Self = this.set("dimensionName", value.asInstanceOf[js.Any])
+    def setIsSliceUndefined: Self = StObject.set(x, "isSlice", js.undefined)
     
     @scala.inline
-    def deleteDimensionName: Self = this.set("dimensionName", js.undefined)
+    def setValues(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSlice(value: Boolean): Self = this.set("isSlice", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteIsSlice: Self = this.set("isSlice", js.undefined)
+    def setValuesVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setValuesVarargs(value: (Double | js.Array[Double])*): Self = this.set("values", js.Array(value :_*))
+    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[Double | js.Array[Double]]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
-    
-    @scala.inline
-    def setVariableName(value: String): Self = this.set("variableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableName: Self = this.set("variableName", js.undefined)
+    def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.reactOnsenui.anon
 
 import typings.reactOnsenui.mod.Route
 import typings.reactOnsenui.mod.RouteConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Key extends js.Object {
+trait Key extends StObject {
   
   var key: js.UndefOr[js.Any] = js.native
   
@@ -26,36 +27,24 @@ object Key {
   }
   
   @scala.inline
-  implicit class KeyOps[Self <: Key] (val x: Self) extends AnyVal {
+  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(value: Route): Self = this.set("route", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setRouteConfig(value: RouteConfig): Self = this.set("routeConfig", value.asInstanceOf[js.Any])
+    def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setRouteConfig(value: RouteConfig): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
   }
 }

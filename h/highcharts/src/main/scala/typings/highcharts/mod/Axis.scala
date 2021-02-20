@@ -2,13 +2,14 @@ package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Axis")
 @js.native
-class Axis protected () extends js.Object {
+class Axis protected () extends StObject {
   /**
     * Create a new axis object. Called internally when instanciating a new
     * chart or adding axes by Highcharts.Chart#addAxis.

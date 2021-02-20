@@ -24,13 +24,12 @@ import typings.phaser.Phaser.Types.Scenes.SettingsObject
 import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Scenes")
-@js.native
-object Scenes extends js.Object {
+object Scenes {
   
   /**
     * The Scene Manager.
@@ -39,7 +38,7 @@ object Scenes extends js.Object {
     * Scenes in a Game instance.
     */
   @js.native
-  trait SceneManager extends js.Object {
+  trait SceneManager extends StObject {
     
     def add(key: String, sceneConfig: js.Function): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
@@ -350,7 +349,7 @@ object Scenes extends js.Object {
     * A proxy class to the Global Scene Manager.
     */
   @js.native
-  trait ScenePlugin extends js.Object {
+  trait ScenePlugin extends StObject {
     
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean, data: js.Object): Scene = js.native
@@ -693,7 +692,7 @@ object Scenes extends js.Object {
     * handling the update step and renderer. It also contains references to global systems belonging to Game.
     */
   @js.native
-  trait Systems extends js.Object {
+  trait Systems extends StObject {
     
     /**
       * A reference to the Scene's Game Object Factory.

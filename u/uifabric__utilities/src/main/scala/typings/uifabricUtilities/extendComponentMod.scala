@@ -2,14 +2,15 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/extendComponent", JSImport.Namespace)
-@js.native
-object extendComponentMod extends js.Object {
+object extendComponentMod {
   
+  @JSImport("@uifabric/utilities/lib/extendComponent", "extendComponent")
+  @js.native
   def extendComponent[T /* <: Component[js.Object, js.Object, _] */](
     parent: T,
     methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 

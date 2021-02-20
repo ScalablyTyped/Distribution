@@ -9,12 +9,13 @@ import typings.uiGrid.mod.rowsVisibleChangedHandler
 import typings.uiGrid.mod.scrollBeginHandler
 import typings.uiGrid.mod.scrollEndHandler
 import typings.uiGrid.mod.sortChangedHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasHeightChanged[TEntity] extends js.Object {
+trait CanvasHeightChanged[TEntity] extends StObject {
   
   /**
     * is raised when the canvas height has changed
@@ -98,42 +99,30 @@ object CanvasHeightChanged {
   }
   
   @scala.inline
-  implicit class CanvasHeightChangedOps[Self <: CanvasHeightChanged[_], TEntity] (val x: Self with CanvasHeightChanged[TEntity]) extends AnyVal {
+  implicit class CanvasHeightChangedMutableBuilder[Self <: CanvasHeightChanged[_], TEntity] (val x: Self with CanvasHeightChanged[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = StObject.set(x, "canvasHeightChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnVisibilityChanged(value: (IScope, columnVisibilityChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "columnVisibilityChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterChanged(value: (IScope, filterChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "filterChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = this.set("canvasHeightChanged", js.Any.fromFunction2(value))
+    def setRowsRendered(value: (IScope, rowsRenderedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowsRendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColumnVisibilityChanged(value: (IScope, columnVisibilityChangedHandler[TEntity]) => Unit): Self = this.set("columnVisibilityChanged", js.Any.fromFunction2(value))
+    def setRowsVisibleChanged(value: (IScope, rowsVisibleChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowsVisibleChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFilterChanged(value: (IScope, filterChangedHandler[TEntity]) => Unit): Self = this.set("filterChanged", js.Any.fromFunction2(value))
+    def setScrollBegin(value: (IScope, scrollBeginHandler) => Unit): Self = StObject.set(x, "scrollBegin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowsRendered(value: (IScope, rowsRenderedHandler[TEntity]) => Unit): Self = this.set("rowsRendered", js.Any.fromFunction2(value))
+    def setScrollEnd(value: (IScope, scrollEndHandler) => Unit): Self = StObject.set(x, "scrollEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowsVisibleChanged(value: (IScope, rowsVisibleChangedHandler[TEntity]) => Unit): Self = this.set("rowsVisibleChanged", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setScrollBegin(value: (IScope, scrollBeginHandler) => Unit): Self = this.set("scrollBegin", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setScrollEnd(value: (IScope, scrollEndHandler) => Unit): Self = this.set("scrollEnd", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSortChanged(value: (IScope, sortChangedHandler[TEntity]) => Unit): Self = this.set("sortChanged", js.Any.fromFunction2(value))
+    def setSortChanged(value: (IScope, sortChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "sortChanged", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateEndpointGroupResponse extends js.Object {
+trait CreateEndpointGroupResponse extends StObject {
   
   /**
     * The information about the endpoint group that was created.
@@ -21,24 +22,12 @@ object CreateEndpointGroupResponse {
   }
   
   @scala.inline
-  implicit class CreateEndpointGroupResponseOps[Self <: CreateEndpointGroupResponse] (val x: Self) extends AnyVal {
+  implicit class CreateEndpointGroupResponseMutableBuilder[Self <: CreateEndpointGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointGroup(value: EndpointGroup): Self = StObject.set(x, "EndpointGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndpointGroup(value: EndpointGroup): Self = this.set("EndpointGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointGroup: Self = this.set("EndpointGroup", js.undefined)
+    def setEndpointGroupUndefined: Self = StObject.set(x, "EndpointGroup", js.undefined)
   }
 }

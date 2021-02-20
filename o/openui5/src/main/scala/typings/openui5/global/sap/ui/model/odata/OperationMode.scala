@@ -1,12 +1,15 @@
 package typings.openui5.global.sap.ui.model.odata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.OperationMode")
-@js.native
-object OperationMode extends js.Object {
+object OperationMode {
+  
+  @JSGlobal("sap.ui.model.odata.OperationMode")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * With OperationMode "Auto", operations are either processed on the client or on the server, depending
@@ -27,17 +30,29 @@ object OperationMode extends js.Object {
     * will behave like in operation mode "Server". In this case a new data requestcontaining the initially
     * set filters/sorters will be issued.
     */
-  var Auto: js.Any = js.native
+  @JSGlobal("sap.ui.model.odata.OperationMode.Auto")
+  @js.native
+  def Auto: js.Any = js.native
+  @scala.inline
+  def Auto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
   
   /**
     * Operations are executed on the client, all entries must be avilable to be able to do so.The initial
     * request fetches the complete collection, filtering and sorting does not trigger further requests
     */
-  var Client: js.Any = js.native
+  @JSGlobal("sap.ui.model.odata.OperationMode.Client")
+  @js.native
+  def Client: js.Any = js.native
+  @scala.inline
+  def Client_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
   
   /**
     * Operations are executed on the Odata service, by appending corresponding URL parameters ($filter,
     * $orderby).Each change in filtering or sorting is triggering a new request to the server.
     */
-  var Server: js.Any = js.native
+  @JSGlobal("sap.ui.model.odata.OperationMode.Server")
+  @js.native
+  def Server: js.Any = js.native
+  @scala.inline
+  def Server_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
 }

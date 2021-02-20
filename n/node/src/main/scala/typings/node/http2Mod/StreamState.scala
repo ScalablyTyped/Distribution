@@ -1,11 +1,12 @@
 package typings.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamState extends js.Object {
+trait StreamState extends StObject {
   
   var localClose: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object StreamState {
   }
   
   @scala.inline
-  implicit class StreamStateOps[Self <: StreamState] (val x: Self) extends AnyVal {
+  implicit class StreamStateMutableBuilder[Self <: StreamState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalClose(value: Double): Self = StObject.set(x, "localClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalCloseUndefined: Self = StObject.set(x, "localClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalWindowSize(value: Double): Self = StObject.set(x, "localWindowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalClose(value: Double): Self = this.set("localClose", value.asInstanceOf[js.Any])
+    def setLocalWindowSizeUndefined: Self = StObject.set(x, "localWindowSize", js.undefined)
     
     @scala.inline
-    def deleteLocalClose: Self = this.set("localClose", js.undefined)
+    def setRemoteClose(value: Double): Self = StObject.set(x, "remoteClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalWindowSize(value: Double): Self = this.set("localWindowSize", value.asInstanceOf[js.Any])
+    def setRemoteCloseUndefined: Self = StObject.set(x, "remoteClose", js.undefined)
     
     @scala.inline
-    def deleteLocalWindowSize: Self = this.set("localWindowSize", js.undefined)
+    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteClose(value: Double): Self = this.set("remoteClose", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteRemoteClose: Self = this.set("remoteClose", js.undefined)
+    def setSumDependencyWeight(value: Double): Self = StObject.set(x, "sumDependencyWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSumDependencyWeightUndefined: Self = StObject.set(x, "sumDependencyWeight", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSumDependencyWeight(value: Double): Self = this.set("sumDependencyWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSumDependencyWeight: Self = this.set("sumDependencyWeight", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

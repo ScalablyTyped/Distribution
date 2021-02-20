@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,33 +12,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientPopupControlCloseReason ()
   extends typings.devexpressWeb.ASPxClientPopupControlCloseReason
-/* static members */
-@JSGlobal("ASPxClientPopupControlCloseReason")
-@js.native
-object ASPxClientPopupControlCloseReason extends js.Object {
+object ASPxClientPopupControlCloseReason {
   
   /**
     * The window has been closed by an API.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlCloseReason.API")
+  @js.native
   val API: String = js.native
   
   /**
     * An end-user clicks the close header button.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlCloseReason.CloseButton")
+  @js.native
   val CloseButton: String = js.native
   
   /**
     * An end-user presses the ESC key.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlCloseReason.Escape")
+  @js.native
   val Escape: String = js.native
   
   /**
     * An end-user moves the mouse pointer out of the window region.
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlCloseReason.MouseOut")
+  @js.native
   val MouseOut: String = js.native
   
   /**
     * An end-user clicks outside the window's region
     */
+  /* static member */
+  @JSGlobal("ASPxClientPopupControlCloseReason.OuterMouseClick")
+  @js.native
   val OuterMouseClick: String = js.native
 }

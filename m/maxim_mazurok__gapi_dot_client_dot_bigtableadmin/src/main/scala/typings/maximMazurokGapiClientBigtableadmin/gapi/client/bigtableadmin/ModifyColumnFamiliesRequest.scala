@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyColumnFamiliesRequest extends js.Object {
+trait ModifyColumnFamiliesRequest extends StObject {
   
   /**
     * Required. Modifications to be atomically applied to the specified table's families. Entries are applied in order, meaning that earlier modifications can be masked by later ones (in
@@ -22,27 +23,15 @@ object ModifyColumnFamiliesRequest {
   }
   
   @scala.inline
-  implicit class ModifyColumnFamiliesRequestOps[Self <: ModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyColumnFamiliesRequestMutableBuilder[Self <: ModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifications(value: js.Array[Modification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModificationsVarargs(value: Modification*): Self = this.set("modifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setModifications(value: js.Array[Modification]): Self = this.set("modifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifications: Self = this.set("modifications", js.undefined)
+    def setModificationsVarargs(value: Modification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
   }
 }

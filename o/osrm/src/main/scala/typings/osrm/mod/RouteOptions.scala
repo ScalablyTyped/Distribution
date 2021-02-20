@@ -1,5 +1,6 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,57 +53,45 @@ object RouteOptions {
   }
   
   @scala.inline
-  implicit class RouteOptionsOps[Self <: RouteOptions] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotations(value: Boolean | js.Array[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatives(value: Boolean): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    def setAnnotationsVarargs(value: String*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationsVarargs(value: String*): Self = this.set("annotations", js.Array(value :_*))
+    def setContinue_straight(value: Boolean): Self = StObject.set(x, "continue_straight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: Boolean | js.Array[String]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setContinue_straightUndefined: Self = StObject.set(x, "continue_straight", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setGeometries(value: GeometriesTypes): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinue_straight(value: Boolean): Self = this.set("continue_straight", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteContinue_straight: Self = this.set("continue_straight", js.undefined)
+    def setOverview(value: OverviewTypes): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: GeometriesTypes): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview(value: OverviewTypes): Self = this.set("overview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverview: Self = this.set("overview", js.undefined)
-    
-    @scala.inline
-    def setSteps(value: Boolean): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
   }
 }

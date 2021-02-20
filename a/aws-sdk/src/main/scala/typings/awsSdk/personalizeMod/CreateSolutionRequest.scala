@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSolutionRequest extends js.Object {
+trait CreateSolutionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that provides the training data.
@@ -51,54 +52,42 @@ object CreateSolutionRequest {
   }
   
   @scala.inline
-  implicit class CreateSolutionRequestOps[Self <: CreateSolutionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSolutionRequestMutableBuilder[Self <: CreateSolutionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = this.set("datasetGroupArn", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: EventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setPerformAutoMLUndefined: Self = StObject.set(x, "performAutoML", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setPerformHPO(value: Boolean): Self = StObject.set(x, "performHPO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformAutoML(value: PerformAutoML): Self = this.set("performAutoML", value.asInstanceOf[js.Any])
+    def setPerformHPOUndefined: Self = StObject.set(x, "performHPO", js.undefined)
     
     @scala.inline
-    def deletePerformAutoML: Self = this.set("performAutoML", js.undefined)
+    def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformHPO(value: Boolean): Self = this.set("performHPO", value.asInstanceOf[js.Any])
+    def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
     
     @scala.inline
-    def deletePerformHPO: Self = this.set("performHPO", js.undefined)
+    def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipeArn(value: Arn): Self = this.set("recipeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipeArn: Self = this.set("recipeArn", js.undefined)
-    
-    @scala.inline
-    def setSolutionConfig(value: SolutionConfig): Self = this.set("solutionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolutionConfig: Self = this.set("solutionConfig", js.undefined)
+    def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
   }
 }

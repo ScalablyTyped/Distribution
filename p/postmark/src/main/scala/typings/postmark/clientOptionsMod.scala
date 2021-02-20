@@ -1,19 +1,17 @@
 package typings.postmark
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/models/client/ClientOptions", JSImport.Namespace)
-@js.native
-object clientOptionsMod extends js.Object {
+object clientOptionsMod {
   
-  @js.native
-  object ClientOptions extends js.Object {
+  object ClientOptions {
     
+    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.Configuration")
     @js.native
-    class Configuration protected () extends js.Object {
+    class Configuration protected () extends StObject {
       def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
       
       var requestHost: String = js.native
@@ -24,66 +22,59 @@ object clientOptionsMod extends js.Object {
     }
     
     @js.native
-    sealed trait DefaultHeaderNames extends js.Object
+    sealed trait DefaultHeaderNames extends StObject
+    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.DefaultHeaderNames")
     @js.native
-    object DefaultHeaderNames extends js.Object {
+    object DefaultHeaderNames extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[DefaultHeaderNames with String] = js.native
       
       @js.native
       sealed trait ACCOUNT_TOKEN extends DefaultHeaderNames
-      /* "X-Postmark-Account-Token" */ @js.native
-      object ACCOUNT_TOKEN extends TopLevel[ACCOUNT_TOKEN with String]
+      /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN with String = js.native
       
       @js.native
       sealed trait SERVER_TOKEN extends DefaultHeaderNames
-      /* "X-Postmark-Server-Token" */ @js.native
-      object SERVER_TOKEN extends TopLevel[SERVER_TOKEN with String]
+      /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN with String = js.native
     }
     
     @js.native
-    sealed trait HttpMethod extends js.Object
+    sealed trait HttpMethod extends StObject
+    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.HttpMethod")
     @js.native
-    object HttpMethod extends js.Object {
+    object HttpMethod extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[HttpMethod with String] = js.native
       
       @js.native
       sealed trait DELETE extends HttpMethod
-      /* "DELETE" */ @js.native
-      object DELETE extends TopLevel[DELETE with String]
+      /* "DELETE" */ val DELETE: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.DELETE with String = js.native
       
       @js.native
       sealed trait GET extends HttpMethod
-      /* "GET" */ @js.native
-      object GET extends TopLevel[GET with String]
+      /* "GET" */ val GET: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.GET with String = js.native
       
       @js.native
       sealed trait HEAD extends HttpMethod
-      /* "HEAD" */ @js.native
-      object HEAD extends TopLevel[HEAD with String]
+      /* "HEAD" */ val HEAD: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.HEAD with String = js.native
       
       @js.native
       sealed trait OPTIONS extends HttpMethod
-      /* "OPTIONS" */ @js.native
-      object OPTIONS extends TopLevel[OPTIONS with String]
+      /* "OPTIONS" */ val OPTIONS: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.OPTIONS with String = js.native
       
       @js.native
       sealed trait PATCH extends HttpMethod
-      /* "PATCH" */ @js.native
-      object PATCH extends TopLevel[PATCH with String]
+      /* "PATCH" */ val PATCH: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.PATCH with String = js.native
       
       @js.native
       sealed trait POST extends HttpMethod
-      /* "POST" */ @js.native
-      object POST extends TopLevel[POST with String]
+      /* "POST" */ val POST: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.POST with String = js.native
       
       @js.native
       sealed trait PUT extends HttpMethod
-      /* "PUT" */ @js.native
-      object PUT extends TopLevel[PUT with String]
+      /* "PUT" */ val PUT: typings.postmark.clientOptionsMod.ClientOptions.HttpMethod.PUT with String = js.native
     }
   }
 }

@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,87 +39,75 @@ object TileLayerOptions {
   }
   
   @scala.inline
-  implicit class TileLayerOptionsOps[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
+  implicit class TileLayerOptionsMutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossOrigin(value: CrossOrigin): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: CrossOrigin): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setDetectRetinaUndefined: Self = StObject.set(x, "detectRetina", js.undefined)
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setErrorTileUrl(value: String): Self = StObject.set(x, "errorTileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectRetina(value: Boolean): Self = this.set("detectRetina", value.asInstanceOf[js.Any])
+    def setErrorTileUrlUndefined: Self = StObject.set(x, "errorTileUrl", js.undefined)
     
     @scala.inline
-    def deleteDetectRetina: Self = this.set("detectRetina", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorTileUrl(value: String): Self = this.set("errorTileUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteErrorTileUrl: Self = this.set("errorTileUrl", js.undefined)
+    def setMaxNativeZoom(value: Double): Self = StObject.set(x, "maxNativeZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaxNativeZoomUndefined: Self = StObject.set(x, "maxNativeZoom", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMinNativeZoom(value: Double): Self = StObject.set(x, "minNativeZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNativeZoom(value: Double): Self = this.set("maxNativeZoom", value.asInstanceOf[js.Any])
+    def setMinNativeZoomUndefined: Self = StObject.set(x, "minNativeZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxNativeZoom: Self = this.set("maxNativeZoom", js.undefined)
+    def setSubdomains(value: String | js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinNativeZoom(value: Double): Self = this.set("minNativeZoom", value.asInstanceOf[js.Any])
+    def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     
     @scala.inline
-    def deleteMinNativeZoom: Self = this.set("minNativeZoom", js.undefined)
+    def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
     
     @scala.inline
-    def setSubdomainsVarargs(value: String*): Self = this.set("subdomains", js.Array(value :_*))
+    def setTms(value: Boolean): Self = StObject.set(x, "tms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdomains(value: String | js.Array[String]): Self = this.set("subdomains", value.asInstanceOf[js.Any])
+    def setTmsUndefined: Self = StObject.set(x, "tms", js.undefined)
     
     @scala.inline
-    def deleteSubdomains: Self = this.set("subdomains", js.undefined)
+    def setZoomOffset(value: Double): Self = StObject.set(x, "zoomOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTms(value: Boolean): Self = this.set("tms", value.asInstanceOf[js.Any])
+    def setZoomOffsetUndefined: Self = StObject.set(x, "zoomOffset", js.undefined)
     
     @scala.inline
-    def deleteTms: Self = this.set("tms", js.undefined)
+    def setZoomReverse(value: Boolean): Self = StObject.set(x, "zoomReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomOffset(value: Double): Self = this.set("zoomOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOffset: Self = this.set("zoomOffset", js.undefined)
-    
-    @scala.inline
-    def setZoomReverse(value: Boolean): Self = this.set("zoomReverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomReverse: Self = this.set("zoomReverse", js.undefined)
+    def setZoomReverseUndefined: Self = StObject.set(x, "zoomReverse", js.undefined)
   }
 }

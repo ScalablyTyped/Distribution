@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the Google Tag Manager Account access permissions.
   */
 @js.native
-trait SchemaAccountAccess extends js.Object {
+trait SchemaAccountAccess extends StObject {
   
   /**
     * Whether the user has no access, user access, or admin access to an
@@ -25,24 +26,12 @@ object SchemaAccountAccess {
   }
   
   @scala.inline
-  implicit class SchemaAccountAccessOps[Self <: SchemaAccountAccess] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountAccessMutableBuilder[Self <: SchemaAccountAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPermission(value: String): Self = this.set("permission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
   }
 }

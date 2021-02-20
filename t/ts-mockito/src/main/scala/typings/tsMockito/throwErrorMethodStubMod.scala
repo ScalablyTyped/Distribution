@@ -4,14 +4,14 @@ import typings.std.Error
 import typings.tsMockito.abstractMethodStubMod.AbstractMethodStub
 import typings.tsMockito.matcherMod.Matcher
 import typings.tsMockito.methodStubMod.MethodStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/stub/ThrowErrorMethodStub", JSImport.Namespace)
-@js.native
-object throwErrorMethodStubMod extends js.Object {
+object throwErrorMethodStubMod {
   
+  @JSImport("ts-mockito/lib/stub/ThrowErrorMethodStub", "ThrowErrorMethodStub")
   @js.native
   class ThrowErrorMethodStub protected ()
     extends AbstractMethodStub

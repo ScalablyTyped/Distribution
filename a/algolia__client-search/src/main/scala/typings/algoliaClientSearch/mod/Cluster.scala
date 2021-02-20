@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cluster extends js.Object {
+trait Cluster extends StObject {
   
   /**
     * The cluster name
@@ -36,30 +37,18 @@ object Cluster {
   }
   
   @scala.inline
-  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+  implicit class ClusterMutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNbRecords(value: Double): Self = StObject.set(x, "nbRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataSize(value: Double): Self = this.set("dataSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNbRecords(value: Double): Self = this.set("nbRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNbUserIDs(value: Double): Self = this.set("nbUserIDs", value.asInstanceOf[js.Any])
+    def setNbUserIDs(value: Double): Self = StObject.set(x, "nbUserIDs", value.asInstanceOf[js.Any])
   }
 }

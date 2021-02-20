@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.std.HTMLStyleElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StyleManager extends js.Object {
+trait StyleManager extends StObject {
   
   // Reading Style Elements
   /** Get all loaded style elements. */
@@ -45,36 +46,24 @@ object StyleManager {
   }
   
   @scala.inline
-  implicit class StyleManagerOps[Self <: StyleManager] (val x: Self) extends AnyVal {
+  implicit class StyleManagerMutableBuilder[Self <: StyleManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetStyleElements(value: () => js.Array[HTMLStyleElement]): Self = StObject.set(x, "getStyleElements", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUserStyleSheetPath(value: () => String): Self = StObject.set(x, "getUserStyleSheetPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObserveStyleElements(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "observeStyleElements", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStyleElements(value: () => js.Array[HTMLStyleElement]): Self = this.set("getStyleElements", js.Any.fromFunction0(value))
+    def setOnDidAddStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidAddStyleElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserStyleSheetPath(value: () => String): Self = this.set("getUserStyleSheetPath", js.Any.fromFunction0(value))
+    def setOnDidRemoveStyleElement(value: js.Function1[/* styleElement */ HTMLStyleElement, Unit] => Disposable): Self = StObject.set(x, "onDidRemoveStyleElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObserveStyleElements(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = this.set("observeStyleElements", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnDidAddStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = this.set("onDidAddStyleElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnDidRemoveStyleElement(value: js.Function1[/* styleElement */ HTMLStyleElement, Unit] => Disposable): Self = this.set("onDidRemoveStyleElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnDidUpdateStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = this.set("onDidUpdateStyleElement", js.Any.fromFunction1(value))
+    def setOnDidUpdateStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidUpdateStyleElement", js.Any.fromFunction1(value))
   }
 }

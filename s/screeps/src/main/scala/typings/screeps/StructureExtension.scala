@@ -1,6 +1,7 @@
 package typings.screeps
 
 import typings.screeps.anon.StoreRESOURCEENERGYfalse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,27 +59,15 @@ object StructureExtension {
   }
   
   @scala.inline
-  implicit class StructureExtensionOps[Self <: StructureExtension] (val x: Self) extends AnyVal {
+  implicit class StructureExtensionMutableBuilder[Self <: StructureExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnergy(value: Double): Self = this.set("energy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnergyCapacity(value: Double): Self = this.set("energyCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStore(value: StoreRESOURCEENERGYfalse): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStore(value: StoreRESOURCEENERGYfalse): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

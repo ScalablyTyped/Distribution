@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,12 +41,23 @@ abstract class FloatAttributeTypeBase protected () extends DecimalAttributeTypeB
   @JSName("containerAsODataKeyPart")
   def containerAsODataKeyPart_MFloatAttributeTypeBase: ODataKeyPart = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase")
-@js.native
-object FloatAttributeTypeBase extends js.Object {
+object FloatAttributeTypeBase {
   
-  var structureTypeName: String = js.native
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

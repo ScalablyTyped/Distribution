@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveStreamContentDetails extends js.Object {
+trait LiveStreamContentDetails extends StObject {
   
   /** The ingestion URL where the closed captions of this stream are sent. */
   var closedCaptionsIngestionUrl: js.UndefOr[String] = js.native
@@ -28,30 +29,18 @@ object LiveStreamContentDetails {
   }
   
   @scala.inline
-  implicit class LiveStreamContentDetailsOps[Self <: LiveStreamContentDetails] (val x: Self) extends AnyVal {
+  implicit class LiveStreamContentDetailsMutableBuilder[Self <: LiveStreamContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosedCaptionsIngestionUrl(value: String): Self = StObject.set(x, "closedCaptionsIngestionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosedCaptionsIngestionUrlUndefined: Self = StObject.set(x, "closedCaptionsIngestionUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsReusable(value: Boolean): Self = StObject.set(x, "isReusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedCaptionsIngestionUrl(value: String): Self = this.set("closedCaptionsIngestionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClosedCaptionsIngestionUrl: Self = this.set("closedCaptionsIngestionUrl", js.undefined)
-    
-    @scala.inline
-    def setIsReusable(value: Boolean): Self = this.set("isReusable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsReusable: Self = this.set("isReusable", js.undefined)
+    def setIsReusableUndefined: Self = StObject.set(x, "isReusable", js.undefined)
   }
 }

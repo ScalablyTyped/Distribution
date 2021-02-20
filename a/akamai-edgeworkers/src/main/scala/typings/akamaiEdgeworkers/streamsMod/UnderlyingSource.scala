@@ -1,5 +1,6 @@
 package typings.akamaiEdgeworkers.streamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://streams.spec.whatwg.org/#underlying-source-api
   */
 @js.native
-trait UnderlyingSource[R] extends js.Object {
+trait UnderlyingSource[R] extends StObject {
   
   var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.native
   
@@ -27,36 +28,24 @@ object UnderlyingSource {
   }
   
   @scala.inline
-  implicit class UnderlyingSourceOps[Self <: UnderlyingSource[_], R] (val x: Self with UnderlyingSource[R]) extends AnyVal {
+  implicit class UnderlyingSourceMutableBuilder[Self <: UnderlyingSource[_], R] (val x: Self with UnderlyingSource[R]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPull(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setStart(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPull(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = this.set("pull", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePull: Self = this.set("pull", js.undefined)
-    
-    @scala.inline
-    def setStart(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

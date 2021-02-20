@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stage extends js.Object {
+trait Stage extends StObject {
   
   /**
     * Settings for logging access in this stage.
@@ -101,120 +102,108 @@ object Stage {
   }
   
   @scala.inline
-  implicit class StageOps[Self <: Stage] (val x: Self) extends AnyVal {
+  implicit class StageMutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLogSettings(value: AccessLogSettings): Self = StObject.set(x, "accessLogSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLogSettingsUndefined: Self = StObject.set(x, "accessLogSettings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheClusterEnabled(value: Boolean): Self = StObject.set(x, "cacheClusterEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLogSettings(value: AccessLogSettings): Self = this.set("accessLogSettings", value.asInstanceOf[js.Any])
+    def setCacheClusterEnabledUndefined: Self = StObject.set(x, "cacheClusterEnabled", js.undefined)
     
     @scala.inline
-    def deleteAccessLogSettings: Self = this.set("accessLogSettings", js.undefined)
+    def setCacheClusterSize(value: CacheClusterSize): Self = StObject.set(x, "cacheClusterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterEnabled(value: Boolean): Self = this.set("cacheClusterEnabled", value.asInstanceOf[js.Any])
+    def setCacheClusterSizeUndefined: Self = StObject.set(x, "cacheClusterSize", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterEnabled: Self = this.set("cacheClusterEnabled", js.undefined)
+    def setCacheClusterStatus(value: CacheClusterStatus): Self = StObject.set(x, "cacheClusterStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterSize(value: CacheClusterSize): Self = this.set("cacheClusterSize", value.asInstanceOf[js.Any])
+    def setCacheClusterStatusUndefined: Self = StObject.set(x, "cacheClusterStatus", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterSize: Self = this.set("cacheClusterSize", js.undefined)
+    def setCanarySettings(value: CanarySettings): Self = StObject.set(x, "canarySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterStatus(value: CacheClusterStatus): Self = this.set("cacheClusterStatus", value.asInstanceOf[js.Any])
+    def setCanarySettingsUndefined: Self = StObject.set(x, "canarySettings", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterStatus: Self = this.set("cacheClusterStatus", js.undefined)
+    def setClientCertificateId(value: String): Self = StObject.set(x, "clientCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanarySettings(value: CanarySettings): Self = this.set("canarySettings", value.asInstanceOf[js.Any])
+    def setClientCertificateIdUndefined: Self = StObject.set(x, "clientCertificateId", js.undefined)
     
     @scala.inline
-    def deleteCanarySettings: Self = this.set("canarySettings", js.undefined)
+    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCertificateId(value: String): Self = this.set("clientCertificateId", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteClientCertificateId: Self = this.set("clientCertificateId", js.undefined)
+    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: String): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDocumentationVersionUndefined: Self = StObject.set(x, "documentationVersion", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentationVersion(value: String): Self = this.set("documentationVersion", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteDocumentationVersion: Self = this.set("documentationVersion", js.undefined)
+    def setMethodSettings(value: MapOfMethodSettings): Self = StObject.set(x, "methodSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    def setMethodSettingsUndefined: Self = StObject.set(x, "methodSettings", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
+    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodSettings(value: MapOfMethodSettings): Self = this.set("methodSettings", value.asInstanceOf[js.Any])
+    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
     @scala.inline
-    def deleteMethodSettings: Self = this.set("methodSettings", js.undefined)
+    def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStageName: Self = this.set("stageName", js.undefined)
+    def setTracingEnabled(value: Boolean): Self = StObject.set(x, "tracingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTracingEnabledUndefined: Self = StObject.set(x, "tracingEnabled", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVariables(value: MapOfStringToString): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracingEnabled(value: Boolean): Self = this.set("tracingEnabled", value.asInstanceOf[js.Any])
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
     @scala.inline
-    def deleteTracingEnabled: Self = this.set("tracingEnabled", js.undefined)
+    def setWebAclArn(value: String): Self = StObject.set(x, "webAclArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariables(value: MapOfStringToString): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
-    
-    @scala.inline
-    def setWebAclArn(value: String): Self = this.set("webAclArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebAclArn: Self = this.set("webAclArn", js.undefined)
+    def setWebAclArnUndefined: Self = StObject.set(x, "webAclArn", js.undefined)
   }
 }

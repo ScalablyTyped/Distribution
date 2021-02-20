@@ -1,12 +1,13 @@
 package typings.contentfulManagement.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/organization-invitation.OrganizationInvitationProps, 'sys'> */
 @js.native
-trait OmitOrganizationInvitatio extends js.Object {
+trait OmitOrganizationInvitatio extends StObject {
   
   var email: String = js.native
   
@@ -25,30 +26,18 @@ object OmitOrganizationInvitatio {
   }
   
   @scala.inline
-  implicit class OmitOrganizationInvitatioOps[Self <: OmitOrganizationInvitatio] (val x: Self) extends AnyVal {
+  implicit class OmitOrganizationInvitatioMutableBuilder[Self <: OmitOrganizationInvitatio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

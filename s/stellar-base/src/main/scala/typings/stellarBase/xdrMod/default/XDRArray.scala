@@ -1,10 +1,11 @@
 package typings.stellarBase.xdrMod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-base/types/xdr", "XDRArray")
+@JSImport("stellar-base/types/xdr", "default.XDRArray")
 @js.native
 class XDRArray[T] ()
   extends typings.stellarBase.xdrMod.xdr.XDRArray[T]

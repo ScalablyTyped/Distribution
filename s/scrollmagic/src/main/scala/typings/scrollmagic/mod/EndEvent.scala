@@ -2,6 +2,7 @@ package typings.scrollmagic.mod
 
 import typings.scrollmagic.scrollmagicStrings.end
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object EndEvent {
   }
   
   @scala.inline
-  implicit class EndEventOps[Self <: EndEvent] (val x: Self) extends AnyVal {
+  implicit class EndEventMutableBuilder[Self <: EndEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: SceneState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: SceneState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

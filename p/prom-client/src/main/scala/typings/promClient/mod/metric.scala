@@ -1,11 +1,12 @@
 package typings.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait metric extends js.Object {
+trait metric extends StObject {
   
   var aggregator: Aggregator = js.native
   
@@ -25,30 +26,18 @@ object metric {
   }
   
   @scala.inline
-  implicit class metricOps[Self <: metric] (val x: Self) extends AnyVal {
+  implicit class metricMutableBuilder[Self <: metric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregator(value: Aggregator): Self = this.set("aggregator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MetricType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MetricType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

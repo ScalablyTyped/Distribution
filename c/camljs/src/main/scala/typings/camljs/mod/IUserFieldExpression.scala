@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUserFieldExpression extends js.Object {
+trait IUserFieldExpression extends StObject {
   
   /** Checks whether the value of the User field is equal to id of the current user */
   def EqualToCurrentUser(): IExpression = js.native
@@ -53,45 +54,33 @@ object IUserFieldExpression {
   }
   
   @scala.inline
-  implicit class IUserFieldExpressionOps[Self <: IUserFieldExpression] (val x: Self) extends AnyVal {
+  implicit class IUserFieldExpressionMutableBuilder[Self <: IUserFieldExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEqualToCurrentUser(value: () => IExpression): Self = StObject.set(x, "EqualToCurrentUser", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: () => INumberFieldExpression): Self = StObject.set(x, "Id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsInCurrentUserGroups(value: () => IExpression): Self = StObject.set(x, "IsInCurrentUserGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEqualToCurrentUser(value: () => IExpression): Self = this.set("EqualToCurrentUser", js.Any.fromFunction0(value))
+    def setIsInSPGroup(value: Double => IExpression): Self = StObject.set(x, "IsInSPGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: () => INumberFieldExpression): Self = this.set("Id", js.Any.fromFunction0(value))
+    def setIsInSPWebAllUsers(value: () => IExpression): Self = StObject.set(x, "IsInSPWebAllUsers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsInCurrentUserGroups(value: () => IExpression): Self = this.set("IsInCurrentUserGroups", js.Any.fromFunction0(value))
+    def setIsInSPWebGroups(value: () => IExpression): Self = StObject.set(x, "IsInSPWebGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsInSPGroup(value: Double => IExpression): Self = this.set("IsInSPGroup", js.Any.fromFunction1(value))
+    def setIsInSPWebUsers(value: () => IExpression): Self = StObject.set(x, "IsInSPWebUsers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsInSPWebAllUsers(value: () => IExpression): Self = this.set("IsInSPWebAllUsers", js.Any.fromFunction0(value))
+    def setMembership(value: IMembership): Self = StObject.set(x, "Membership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInSPWebGroups(value: () => IExpression): Self = this.set("IsInSPWebGroups", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsInSPWebUsers(value: () => IExpression): Self = this.set("IsInSPWebUsers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMembership(value: IMembership): Self = this.set("Membership", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueAsText(value: () => ITextFieldExpression): Self = this.set("ValueAsText", js.Any.fromFunction0(value))
+    def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
   }
 }

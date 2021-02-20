@@ -10,12 +10,13 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.namedTypesMod.namedTypes.ObjectMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectMethodBuilder extends js.Object {
+trait ObjectMethodBuilder extends StObject {
   
   def apply(kind: get, key: ExpressionKind, params: js.Array[PatternKind], body: BlockStatementKind): ObjectMethod = js.native
   def apply(

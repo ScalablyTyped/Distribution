@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosTestSetup extends js.Object {
+trait IosTestSetup extends StObject {
   
   /** iOS apps to install in addition to those being directly tested. */
   var additionalIpas: js.UndefOr[js.Array[FileReference]] = js.native
@@ -34,51 +35,39 @@ object IosTestSetup {
   }
   
   @scala.inline
-  implicit class IosTestSetupOps[Self <: IosTestSetup] (val x: Self) extends AnyVal {
+  implicit class IosTestSetupMutableBuilder[Self <: IosTestSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalIpas(value: js.Array[FileReference]): Self = StObject.set(x, "additionalIpas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalIpasUndefined: Self = StObject.set(x, "additionalIpas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalIpasVarargs(value: FileReference*): Self = StObject.set(x, "additionalIpas", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalIpasVarargs(value: FileReference*): Self = this.set("additionalIpas", js.Array(value :_*))
+    def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalIpas(value: js.Array[FileReference]): Self = this.set("additionalIpas", value.asInstanceOf[js.Any])
+    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
     
     @scala.inline
-    def deleteAdditionalIpas: Self = this.set("additionalIpas", js.undefined)
+    def setPullDirectories(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pullDirectories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfile(value: String): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
+    def setPullDirectoriesUndefined: Self = StObject.set(x, "pullDirectories", js.undefined)
     
     @scala.inline
-    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+    def setPullDirectoriesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pullDirectories", js.Array(value :_*))
     
     @scala.inline
-    def setPullDirectoriesVarargs(value: IosDeviceFile*): Self = this.set("pullDirectories", js.Array(value :_*))
+    def setPushFiles(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pushFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullDirectories(value: js.Array[IosDeviceFile]): Self = this.set("pullDirectories", value.asInstanceOf[js.Any])
+    def setPushFilesUndefined: Self = StObject.set(x, "pushFiles", js.undefined)
     
     @scala.inline
-    def deletePullDirectories: Self = this.set("pullDirectories", js.undefined)
-    
-    @scala.inline
-    def setPushFilesVarargs(value: IosDeviceFile*): Self = this.set("pushFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setPushFiles(value: js.Array[IosDeviceFile]): Self = this.set("pushFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePushFiles: Self = this.set("pushFiles", js.undefined)
+    def setPushFilesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pushFiles", js.Array(value :_*))
   }
 }

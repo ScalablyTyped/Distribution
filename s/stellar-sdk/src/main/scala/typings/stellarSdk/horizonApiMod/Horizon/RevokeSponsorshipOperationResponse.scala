@@ -2,6 +2,7 @@ package typings.stellarSdk.horizonApiMod.Horizon
 
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.revokeSponsorship
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,72 +53,60 @@ object RevokeSponsorshipOperationResponse {
   }
   
   @scala.inline
-  implicit class RevokeSponsorshipOperationResponseOps[Self <: RevokeSponsorshipOperationResponse] (val x: Self) extends AnyVal {
+  implicit class RevokeSponsorshipOperationResponseMutableBuilder[Self <: RevokeSponsorshipOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount_idUndefined: Self = StObject.set(x, "account_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaimable_balance_id(value: String): Self = StObject.set(x, "claimable_balance_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_id(value: String): Self = this.set("account_id", value.asInstanceOf[js.Any])
+    def setClaimable_balance_idUndefined: Self = StObject.set(x, "claimable_balance_id", js.undefined)
     
     @scala.inline
-    def deleteAccount_id: Self = this.set("account_id", js.undefined)
+    def setData_account_id(value: String): Self = StObject.set(x, "data_account_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimable_balance_id(value: String): Self = this.set("claimable_balance_id", value.asInstanceOf[js.Any])
+    def setData_account_idUndefined: Self = StObject.set(x, "data_account_id", js.undefined)
     
     @scala.inline
-    def deleteClaimable_balance_id: Self = this.set("claimable_balance_id", js.undefined)
+    def setData_name(value: String): Self = StObject.set(x, "data_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData_account_id(value: String): Self = this.set("data_account_id", value.asInstanceOf[js.Any])
+    def setData_nameUndefined: Self = StObject.set(x, "data_name", js.undefined)
     
     @scala.inline
-    def deleteData_account_id: Self = this.set("data_account_id", js.undefined)
+    def setOffer_id(value: String): Self = StObject.set(x, "offer_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData_name(value: String): Self = this.set("data_name", value.asInstanceOf[js.Any])
+    def setOffer_idUndefined: Self = StObject.set(x, "offer_id", js.undefined)
     
     @scala.inline
-    def deleteData_name: Self = this.set("data_name", js.undefined)
+    def setSigner_account_id(value: String): Self = StObject.set(x, "signer_account_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffer_id(value: String): Self = this.set("offer_id", value.asInstanceOf[js.Any])
+    def setSigner_account_idUndefined: Self = StObject.set(x, "signer_account_id", js.undefined)
     
     @scala.inline
-    def deleteOffer_id: Self = this.set("offer_id", js.undefined)
+    def setSigner_key(value: String): Self = StObject.set(x, "signer_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigner_account_id(value: String): Self = this.set("signer_account_id", value.asInstanceOf[js.Any])
+    def setSigner_keyUndefined: Self = StObject.set(x, "signer_key", js.undefined)
     
     @scala.inline
-    def deleteSigner_account_id: Self = this.set("signer_account_id", js.undefined)
+    def setTrustline_account_id(value: String): Self = StObject.set(x, "trustline_account_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigner_key(value: String): Self = this.set("signer_key", value.asInstanceOf[js.Any])
+    def setTrustline_account_idUndefined: Self = StObject.set(x, "trustline_account_id", js.undefined)
     
     @scala.inline
-    def deleteSigner_key: Self = this.set("signer_key", js.undefined)
+    def setTrustline_asset(value: String): Self = StObject.set(x, "trustline_asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustline_account_id(value: String): Self = this.set("trustline_account_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustline_account_id: Self = this.set("trustline_account_id", js.undefined)
-    
-    @scala.inline
-    def setTrustline_asset(value: String): Self = this.set("trustline_asset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustline_asset: Self = this.set("trustline_asset", js.undefined)
+    def setTrustline_assetUndefined: Self = StObject.set(x, "trustline_asset", js.undefined)
   }
 }

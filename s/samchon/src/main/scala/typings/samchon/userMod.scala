@@ -1,27 +1,18 @@
 package typings.samchon
 
-import typings.ecol.hashMapCollectionMod.HashMapCollection
+import typings.ecol.mod.HashMapCollection
 import typings.samchon.clientMod.Client
 import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.serviceServerMod.Server
 import typings.samchon.webClientDriverMod.WebClientDriver
-import typings.tstl.entryMod.Entry
-import typings.tstl.hashMapMod.HashMap
-import typings.tstl.hashMapMod.HashMap.Iterator
-import typings.tstl.hashMapMod.HashMap.ReverseIterator
-import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.ipairMod.IPair
-import typings.tstl.mapContainerMod.MapContainer.InsertRet
-import typings.tstl.pairMod.Pair
-import typings.tstl.tstlBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/service/User", JSImport.Namespace)
-@js.native
-object userMod extends js.Object {
+object userMod {
   
+  @JSImport("samchon/templates/service/User", "User")
   @js.native
   abstract class User protected ()
     extends HashMapCollection[Double, Client]
@@ -33,33 +24,10 @@ object userMod extends js.Object {
       */
     def this(server: Server) = this()
     
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    /* protected */ override def _Erase_by_key(key: Double): Double = js.native
-    
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    /* protected */ override def _Erase_by_range(first: Iterator[Double, Client]): Iterator[Double, Client] = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    /* protected */ override def _Erase_by_range(first: Iterator[Double, Client], last: Iterator[Double, Client]): Iterator[Double, Client] = js.native
-    
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    /* protected */ override def _Handle_erase(first: Iterator[Double, Client], last: Iterator[Double, Client]): Unit = js.native
-    
     /**
       * @hidden
       */
     var _Handle_erase_client: js.Any = js.native
-    
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    /* protected */ override def _Handle_insert(first: Iterator[Double, Client], last: Iterator[Double, Client]): Unit = js.native
-    
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    /* protected */ override def _Insert_by_range[InputIterator /* <: IForwardIterator[IPair[Double, Client], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
     
     /**
       * @hidden
@@ -67,37 +35,9 @@ object userMod extends js.Object {
     var account_id_ : js.Any = js.native
     
     /**
-      * Range Assigner.
-      *
-      * @param first Input iteartor of the first position.
-      * @param last Input iterator of the last position.
-      */
-    /* InferMemberOverrides */
-    override def assign[InputIterator /* <: IForwardIterator[IPair[Double, Client], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    
-    /**
       * @hidden
       */
     var authority_ : js.Any = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    /* InferMemberOverrides */
-    override def clear(): Unit = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    /**
-      * Count elements with a specified key.
-      *
-      * @param key Key to search for.
-      * @return Number of elements with the specified key.
-      */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def count(key: Double): Double = js.native
     
     /**
       * Factory method creating a {@link Client} object.
@@ -136,86 +76,6 @@ object userMod extends js.Object {
       */
     /* protected */ def destructor(): Unit = js.native
     
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def emplace(key: Double, `val`: Client): InsertRet[
-        Double, 
-        Client, 
-        `true`, 
-        HashMap[Double, Client], 
-        Iterator[Double, Client], 
-        ReverseIterator[Double, Client]
-      ] = js.native
-    
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def emplace_hint(hint: Iterator[Double, Client], key: Double, `val`: Client): Iterator[Double, Client] = js.native
-    
-    /**
-      * Erase elements in range.
-      *
-      * @param first Range of the first position to erase.
-      * @param last Rangee of the last position to erase.
-      * @return Iterator following the last removed element, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(first: Iterator[Double, Client], last: Iterator[Double, Client]): Iterator[Double, Client] = js.native
-    /**
-      * Erase an element.
-      *
-      * @param pos Position to erase.
-      * @return Iterator following the *pos*, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(pos: Iterator[Double, Client]): Iterator[Double, Client] = js.native
-    /**
-      * @inheritDoc
-      */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    @JSName("erase")
-    override def erase_IteratorT(it: Iterator[Double, Client]): Iterator[Double, Client] = js.native
-    
-    /**
-      * Extract an element by key.
-      *
-      * @param key Key to search for.
-      * @return The extracted element.
-      */
-    /* InferMemberOverrides */
-    override def extract(key: Double): Entry[Double, Client] = js.native
-    /**
-      * Extract an element by iterator.
-      *
-      * @param pos The iterator to the element for extraction.
-      * @return Iterator following the *pos*, strained by the extraction.
-      */
-    /* InferMemberOverrides */
-    @JSName("extract")
-    override def extract_Iterator(pos: Iterator[Double, Client]): Iterator[Double, Client] = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    /**
-      * Get iterator to element.
-      *
-      * @param key Key to search for.
-      * @return An iterator to the element, if the specified key is found, otherwise `this.end()`.
-      */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def find(key: Double): Iterator[Double, Client] = js.native
-    
-    /**
-      * Get a value.
-      *
-      * @param key Key to search for.
-      * @return The value mapped by the key.
-      */
-    /* InferMemberOverrides */
-    override def get(key: Double): Client = js.native
-    
     /**
       * Get account id.
       *
@@ -238,56 +98,6 @@ object userMod extends js.Object {
     def getServer(): Server = js.native
     
     /**
-      * @inheritDoc
-      */
-    /**
-      * Test whether a key exists.
-      *
-      * @param key Key to search for.
-      * @return Whether the specified key exists.
-      */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def has(key: Double): Boolean = js.native
-    
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def insert(hint: Iterator[Double, Client], pair: IPair[Double, Client]): Iterator[Double, Client] = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def insert(pair: IPair[Double, Client]): InsertRet[
-        Double, 
-        Client, 
-        `true`, 
-        HashMap[Double, Client], 
-        Iterator[Double, Client], 
-        ReverseIterator[Double, Client]
-      ] = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def insert[InputIterator /* <: IForwardIterator[IPair[Double, Client], InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
-    
-    /**
-      * Insert or assign an element with hint.
-      *
-      * @param hint Hint for the position where the element can be inserted.
-      * @param key Key to be mapped or search for.
-      * @param value Value to insert or assign.
-      * @return An iterator to the newly inserted element, if the specified key doesn't exist, otherwise an iterator to the ordinary element.
-      */
-    /* InferMemberOverrides */
-    override def insert_or_assign(hint: Iterator[Double, Client], key: Double, value: Client): Iterator[Double, Client] = js.native
-    /**
-      * Insert or assign an element.
-      *
-      * @param key Key to be mapped or search for.
-      * @param value Value to insert or assign.
-      * @return {@link Pair} of an iterator to the newly inserted element and `true`, if the specified *key* doesn't exist, otherwise {@link Pair} of iterator to the ordinary element and `false`.
-      */
-    /* InferMemberOverrides */
-    override def insert_or_assign(key: Double, value: Client): Pair[Iterator[Double, Client], Boolean] = js.native
-    
-    /**
       * Log-out.
       *
       * This {@link logout logout()} method configures {@link getAccountID account id} to empty string and
@@ -298,15 +108,6 @@ object userMod extends js.Object {
       * with the ordinary {@link getAccountID account id} more.
       */
     def logout(): Unit = js.native
-    
-    /**
-      * Merge two containers.
-      *
-      * @param source Source container to transfer.
-      */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def merge(source: HashMap[Double, Client]): Unit = js.native
     
     /**
       * @hidden
@@ -322,15 +123,6 @@ object userMod extends js.Object {
       * @hidden
       */
     var session_id_ : js.Any = js.native
-    
-    /**
-      * Set a value with key.
-      *
-      * @param key Key to be mapped or search for.
-      * @param val Value to insert or assign.
-      */
-    /* InferMemberOverrides */
-    override def set(key: Double, `val`: Client): Unit = js.native
     
     /**
       * Set *account id* and *authority*.
@@ -351,21 +143,5 @@ object userMod extends js.Object {
       * @param authority To be authority.
       */
     def setAccount(id: String, authority: Double): Unit = js.native
-    
-    /**
-      * Swap elements.
-      *
-      * @param obj Target container to swap.
-      */
-    /* InferMemberOverrides */
-    override def swap(obj: HashMap[Double, Client]): Unit = js.native
-    
-    /**
-      * Native function for `JSON.stringify()`.
-      *
-      * @return An array containing children elements.
-      */
-    /* InferMemberOverrides */
-    override def toJSON(): js.Array[Entry[Double, Client]] = js.native
   }
 }

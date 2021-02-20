@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.form
 
 import typings.senchaTouch.Ext.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,48 +40,36 @@ object IFieldSet {
   }
   
   @scala.inline
-  implicit class IFieldSetOps[Self <: IFieldSet] (val x: Self) extends AnyVal {
+  implicit class IFieldSetMutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet): Self = this.set("doSetDisabled", js.Any.fromFunction1(value))
+    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
     @scala.inline
-    def deleteDoSetDisabled: Self = this.set("doSetDisabled", js.undefined)
+    def setSetInstructions(value: /* instructions */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInstructions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstructions(value: String): Self = this.set("instructions", value.asInstanceOf[js.Any])
+    def setSetInstructionsUndefined: Self = StObject.set(x, "setInstructions", js.undefined)
     
     @scala.inline
-    def deleteInstructions: Self = this.set("instructions", js.undefined)
+    def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInstructions(value: /* instructions */ js.UndefOr[String] => Unit): Self = this.set("setInstructions", js.Any.fromFunction1(value))
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def deleteSetInstructions: Self = this.set("setInstructions", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

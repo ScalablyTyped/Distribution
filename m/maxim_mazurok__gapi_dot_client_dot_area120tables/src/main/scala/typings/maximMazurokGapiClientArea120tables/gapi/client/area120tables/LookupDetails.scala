@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LookupDetails extends js.Object {
+trait LookupDetails extends StObject {
   
   /** The name of the relationship column associated with the lookup. */
   var relationshipColumn: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object LookupDetails {
   }
   
   @scala.inline
-  implicit class LookupDetailsOps[Self <: LookupDetails] (val x: Self) extends AnyVal {
+  implicit class LookupDetailsMutableBuilder[Self <: LookupDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelationshipColumn(value: String): Self = StObject.set(x, "relationshipColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelationshipColumnId(value: String): Self = StObject.set(x, "relationshipColumnId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelationshipColumnIdUndefined: Self = StObject.set(x, "relationshipColumnId", js.undefined)
     
     @scala.inline
-    def setRelationshipColumn(value: String): Self = this.set("relationshipColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationshipColumn: Self = this.set("relationshipColumn", js.undefined)
-    
-    @scala.inline
-    def setRelationshipColumnId(value: String): Self = this.set("relationshipColumnId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationshipColumnId: Self = this.set("relationshipColumnId", js.undefined)
+    def setRelationshipColumnUndefined: Self = StObject.set(x, "relationshipColumn", js.undefined)
   }
 }

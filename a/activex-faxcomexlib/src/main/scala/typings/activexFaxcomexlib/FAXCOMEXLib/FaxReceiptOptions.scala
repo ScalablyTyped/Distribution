@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxReceiptOptions Class */
 @js.native
-trait FaxReceiptOptions extends js.Object {
+trait FaxReceiptOptions extends StObject {
   
   /** Allowed receipt types, a bit-wise combination of FAX_RECEIPT_TYPE values */
   var AllowedReceipts: FAX_RECEIPT_TYPE_ENUM = js.native
@@ -63,51 +64,39 @@ object FaxReceiptOptions {
   }
   
   @scala.inline
-  implicit class FaxReceiptOptionsOps[Self <: FaxReceiptOptions] (val x: Self) extends AnyVal {
+  implicit class FaxReceiptOptionsMutableBuilder[Self <: FaxReceiptOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedReceipts(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "AllowedReceipts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationType(value: FAX_SMTP_AUTHENTICATION_TYPE_ENUM): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFAXCOMEXLibDotFaxReceiptOptions_typekey(value: FaxReceiptOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxReceiptOptions_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedReceipts(value: FAX_RECEIPT_TYPE_ENUM): Self = this.set("AllowedReceipts", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAuthenticationType(value: FAX_SMTP_AUTHENTICATION_TYPE_ENUM): Self = this.set("AuthenticationType", value.asInstanceOf[js.Any])
+    def setSMTPPassword(value: String): Self = StObject.set(x, "SMTPPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxReceiptOptions_typekey(value: FaxReceiptOptions): Self = this.set("FAXCOMEXLib.FaxReceiptOptions_typekey", value.asInstanceOf[js.Any])
+    def setSMTPPort(value: Double): Self = StObject.set(x, "SMTPPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    def setSMTPSender(value: String): Self = StObject.set(x, "SMTPSender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMTPPassword(value: String): Self = this.set("SMTPPassword", value.asInstanceOf[js.Any])
+    def setSMTPServer(value: String): Self = StObject.set(x, "SMTPServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMTPPort(value: Double): Self = this.set("SMTPPort", value.asInstanceOf[js.Any])
+    def setSMTPUser(value: String): Self = StObject.set(x, "SMTPUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMTPSender(value: String): Self = this.set("SMTPSender", value.asInstanceOf[js.Any])
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSMTPServer(value: String): Self = this.set("SMTPServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSMTPUser(value: String): Self = this.set("SMTPUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUseForInboundRouting(value: Boolean): Self = this.set("UseForInboundRouting", value.asInstanceOf[js.Any])
+    def setUseForInboundRouting(value: Boolean): Self = StObject.set(x, "UseForInboundRouting", value.asInstanceOf[js.Any])
   }
 }

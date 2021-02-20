@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.anon.MapTypeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapOptions extends js.Object {
+trait MapOptions extends StObject {
   
   var enableScrollWheel: js.UndefOr[Boolean] = js.native
   
@@ -41,90 +42,78 @@ object MapOptions {
   }
   
   @scala.inline
-  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableScrollWheel(value: Boolean): Self = StObject.set(x, "enableScrollWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableScrollWheelUndefined: Self = StObject.set(x, "enableScrollWheel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcons(value: js.Object): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaps(value: MapTypeId): Self = this.set("maps", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def setEnableScrollWheel(value: Boolean): Self = this.set("enableScrollWheel", value.asInstanceOf[js.Any])
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableScrollWheel: Self = this.set("enableScrollWheel", js.undefined)
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def setIcons(value: js.Object): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setMapTypeIds(value: js.Array[_]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setMapTypeIdsUndefined: Self = StObject.set(x, "mapTypeIds", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setMapTypeIdsVarargs(value: js.Any*): Self = StObject.set(x, "mapTypeIds", js.Array(value :_*))
     
     @scala.inline
-    def setMapType(value: String): Self = this.set("mapType", value.asInstanceOf[js.Any])
+    def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
     
     @scala.inline
-    def deleteMapType: Self = this.set("mapType", js.undefined)
+    def setMaps(value: MapTypeId): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeIdsVarargs(value: js.Any*): Self = this.set("mapTypeIds", js.Array(value :_*))
+    def setShowInfoWindow(value: Boolean): Self = StObject.set(x, "showInfoWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeIds(value: js.Array[_]): Self = this.set("mapTypeIds", value.asInstanceOf[js.Any])
+    def setShowInfoWindowUndefined: Self = StObject.set(x, "showInfoWindow", js.undefined)
     
     @scala.inline
-    def deleteMapTypeIds: Self = this.set("mapTypeIds", js.undefined)
+    def setShowLine(value: Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInfoWindow(value: Boolean): Self = this.set("showInfoWindow", value.asInstanceOf[js.Any])
+    def setShowLineUndefined: Self = StObject.set(x, "showLine", js.undefined)
     
     @scala.inline
-    def deleteShowInfoWindow: Self = this.set("showInfoWindow", js.undefined)
+    def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLine(value: Boolean): Self = this.set("showLine", value.asInstanceOf[js.Any])
+    def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
     
     @scala.inline
-    def deleteShowLine: Self = this.set("showLine", js.undefined)
+    def setUseMapTypeControl(value: Boolean): Self = StObject.set(x, "useMapTypeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTooltip(value: Boolean): Self = this.set("showTooltip", value.asInstanceOf[js.Any])
+    def setUseMapTypeControlUndefined: Self = StObject.set(x, "useMapTypeControl", js.undefined)
     
     @scala.inline
-    def deleteShowTooltip: Self = this.set("showTooltip", js.undefined)
+    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMapTypeControl(value: Boolean): Self = this.set("useMapTypeControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMapTypeControl: Self = this.set("useMapTypeControl", js.undefined)
-    
-    @scala.inline
-    def setZoomLevel(value: Double): Self = this.set("zoomLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomLevel: Self = this.set("zoomLevel", js.undefined)
+    def setZoomLevelUndefined: Self = StObject.set(x, "zoomLevel", js.undefined)
   }
 }

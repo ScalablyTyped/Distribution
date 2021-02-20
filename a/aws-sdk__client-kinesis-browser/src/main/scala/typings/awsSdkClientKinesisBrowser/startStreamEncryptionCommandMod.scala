@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionInputMod.Sta
 import typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionOutputMod.StartStreamEncryptionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/StartStreamEncryptionCommand", JSImport.Namespace)
-@js.native
-object startStreamEncryptionCommandMod extends js.Object {
+object startStreamEncryptionCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/StartStreamEncryptionCommand", "StartStreamEncryptionCommand")
   @js.native
   class StartStreamEncryptionCommand protected () extends Command[
           InputTypesUnion, 

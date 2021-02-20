@@ -1,6 +1,7 @@
 package typings.typeorm.typingsMod
 
 import typings.typeorm.typeormStrings.snapshot_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typeorm.typeormStrings.linearizable
   - typings.typeorm.typeormStrings.snapshot_
 */
-trait ReadConcernLevel extends js.Object
+trait ReadConcernLevel extends StObject
 object ReadConcernLevel {
   
   @scala.inline

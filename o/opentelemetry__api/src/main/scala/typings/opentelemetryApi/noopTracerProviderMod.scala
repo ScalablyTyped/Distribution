@@ -2,16 +2,18 @@ package typings.opentelemetryApi
 
 import typings.opentelemetryApi.tracerMod.Tracer
 import typings.opentelemetryApi.tracerProviderMod.TracerProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/trace/NoopTracerProvider", JSImport.Namespace)
-@js.native
-object noopTracerProviderMod extends js.Object {
+object noopTracerProviderMod {
   
+  @JSImport("@opentelemetry/api/build/src/trace/NoopTracerProvider", "NOOP_TRACER_PROVIDER")
+  @js.native
   val NOOP_TRACER_PROVIDER: NoopTracerProvider = js.native
   
+  @JSImport("@opentelemetry/api/build/src/trace/NoopTracerProvider", "NoopTracerProvider")
   @js.native
   class NoopTracerProvider () extends TracerProvider {
     

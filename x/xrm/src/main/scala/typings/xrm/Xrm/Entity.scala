@@ -3,6 +3,7 @@ package typings.xrm.Xrm
 import typings.xrm.Xrm.Attributes.Attribute
 import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-entity External Link: formContext.data.entity (Client API reference)}
   */
 @js.native
-trait Entity extends js.Object {
+trait Entity extends StObject {
   
   /**
     * Adds a handler to be called when the record is saved.

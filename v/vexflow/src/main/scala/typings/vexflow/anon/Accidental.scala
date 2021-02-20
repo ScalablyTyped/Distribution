@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accidental extends js.Object {
+trait Accidental extends StObject {
   
   var accidental: String = js.native
   
@@ -44,45 +45,33 @@ object Accidental {
   }
   
   @scala.inline
-  implicit class AccidentalOps[Self <: Accidental] (val x: Self) extends AnyVal {
+  implicit class AccidentalMutableBuilder[Self <: Accidental] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccidental(value: String): Self = StObject.set(x, "accidental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplaced(value: Boolean): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccidental(value: String): Self = this.set("accidental", value.asInstanceOf[js.Any])
+    def setInt_value(value: Double): Self = StObject.set(x, "int_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaced(value: Boolean): Self = this.set("displaced", value.asInstanceOf[js.Any])
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInt_value(value: Double): Self = this.set("int_value", value.asInstanceOf[js.Any])
+    def setOctave(value: Double): Self = StObject.set(x, "octave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOctave(value: Double): Self = this.set("octave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift_right(value: Double): Self = this.set("shift_right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStroke(value: Double): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStroke(value: Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }
 }

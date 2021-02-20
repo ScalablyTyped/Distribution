@@ -1,6 +1,7 @@
 package typings.bingmaps.Microsoft.Maps
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,39 +62,27 @@ object CustomOverlay {
   }
   
   @scala.inline
-  implicit class CustomOverlayOps[Self <: CustomOverlay] (val x: Self) extends AnyVal {
+  implicit class CustomOverlayMutableBuilder[Self <: CustomOverlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHtmlElement(value: () => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMap(value: () => Map): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnAdd(value: () => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_map(value: Map): Self = this.set("_map", value.asInstanceOf[js.Any])
+    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHtmlElement(value: () => HTMLElement): Self = this.set("getHtmlElement", js.Any.fromFunction0(value))
+    def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMap(value: () => Map): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setSetHtmlElement(value: HTMLElement => Unit): Self = StObject.set(x, "setHtmlElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAdd(value: () => Unit): Self = this.set("onAdd", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnLoad(value: () => Unit): Self = this.set("onLoad", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnRemove(value: () => Unit): Self = this.set("onRemove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetHtmlElement(value: HTMLElement => Unit): Self = this.set("setHtmlElement", js.Any.fromFunction1(value))
+    def set_map(value: Map): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
   }
 }

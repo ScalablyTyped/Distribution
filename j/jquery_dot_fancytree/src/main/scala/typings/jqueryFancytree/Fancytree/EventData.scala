@@ -1,18 +1,19 @@
 package typings.jqueryFancytree.Fancytree
 
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Context object passed to events and hook functions. */
 @js.native
-trait EventData extends js.Object {
+trait EventData extends StObject {
   
   /** The node that this call applies to (`null` for tree events) */
   var node: FancytreeNode = js.native
   
-      // JQueryUI.Widget;
+  // JQueryUI.Widget;
   /** Shortcut to tree.options */
   var options: FancytreeOptions = js.native
   
@@ -53,42 +54,30 @@ object EventData {
   }
   
   @scala.inline
-  implicit class EventDataOps[Self <: EventData] (val x: Self) extends AnyVal {
+  implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNode(value: FancytreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: FancytreeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalEvent(value: JQueryEventObject): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: FancytreeNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: FancytreeOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalEvent(value: JQueryEventObject): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: js.Any): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setTree(value: typings.jqueryFancytree.Fancytree.Fancytree): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTree(value: typings.jqueryFancytree.Fancytree.Fancytree): Self = this.set("tree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidget(value: js.Any): Self = this.set("widget", value.asInstanceOf[js.Any])
+    def setWidget(value: js.Any): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
   }
 }

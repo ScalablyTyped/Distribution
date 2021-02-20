@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearFilter extends js.Object {
+trait ClearFilter extends StObject {
   
   var clearFilter: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ClearFilter {
   }
   
   @scala.inline
-  implicit class ClearFilterOps[Self <: ClearFilter] (val x: Self) extends AnyVal {
+  implicit class ClearFilterMutableBuilder[Self <: ClearFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearFilter(value: String): Self = StObject.set(x, "clearFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearFilterUndefined: Self = StObject.set(x, "clearFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateFilter(value: String): Self = StObject.set(x, "createFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearFilter(value: String): Self = this.set("clearFilter", value.asInstanceOf[js.Any])
+    def setCreateFilterUndefined: Self = StObject.set(x, "createFilter", js.undefined)
     
     @scala.inline
-    def deleteClearFilter: Self = this.set("clearFilter", js.undefined)
+    def setFilterEnabledHint(value: String): Self = StObject.set(x, "filterEnabledHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFilter(value: String): Self = this.set("createFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateFilter: Self = this.set("createFilter", js.undefined)
-    
-    @scala.inline
-    def setFilterEnabledHint(value: String): Self = this.set("filterEnabledHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterEnabledHint: Self = this.set("filterEnabledHint", js.undefined)
+    def setFilterEnabledHintUndefined: Self = StObject.set(x, "filterEnabledHint", js.undefined)
   }
 }

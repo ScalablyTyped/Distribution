@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.screenshotSizeMod.IScreenshotSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ScreenshotTools ()
   extends typings.babylonjs.miscIndexMod.ScreenshotTools
 /* static members */
-@JSImport("babylonjs/index", "ScreenshotTools")
-@js.native
-object ScreenshotTools extends js.Object {
+object ScreenshotTools {
   
+  @JSImport("babylonjs/index", "ScreenshotTools")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: Double
   ): Unit = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -26,12 +33,16 @@ object ScreenshotTools extends js.Object {
     successCallback: js.UndefOr[scala.Nothing],
     mimeType: String
   ): Unit = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: Double,
     successCallback: js.Function1[/* data */ String, Unit]
   ): Unit = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -55,11 +66,15 @@ object ScreenshotTools extends js.Object {
     * @param mimeType defines the MIME type of the screenshot image (default: image/png).
     * Check your browser for supported MIME types
     */
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: IScreenshotSize
   ): Unit = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -67,12 +82,16 @@ object ScreenshotTools extends js.Object {
     successCallback: js.UndefOr[scala.Nothing],
     mimeType: String
   ): Unit = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: IScreenshotSize,
     successCallback: js.Function1[/* data */ String, Unit]
   ): Unit = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -96,11 +115,15 @@ object ScreenshotTools extends js.Object {
     * @returns screenshot as a string of base64-encoded characters. This string can be assigned
     * to the src parameter of an <img> to display it
     */
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotAsync")
+  @js.native
   def CreateScreenshotAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotAsync")
+  @js.native
   def CreateScreenshotAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -129,6 +152,8 @@ object ScreenshotTools extends js.Object {
     * @param renderSprites Whether the sprites should be rendered or not (default: false)
     * @param enableStencilBuffer Whether the stencil buffer should be enabled or not (default: false)
     */
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTarget")
+  @js.native
   def CreateScreenshotUsingRenderTarget(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -161,11 +186,15 @@ object ScreenshotTools extends js.Object {
     * @returns screenshot as a string of base64-encoded characters. This string can be assigned
     * to the src parameter of an <img> to display it
     */
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -176,6 +205,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -185,6 +216,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -195,6 +228,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -203,6 +238,8 @@ object ScreenshotTools extends js.Object {
     samples: js.UndefOr[scala.Nothing],
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -213,6 +250,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -222,6 +261,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -232,6 +273,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -239,6 +282,8 @@ object ScreenshotTools extends js.Object {
     mimeType: js.UndefOr[scala.Nothing],
     samples: Double
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -249,6 +294,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -258,6 +305,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -268,6 +317,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -276,6 +327,8 @@ object ScreenshotTools extends js.Object {
     samples: Double,
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -286,6 +339,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -295,6 +350,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -305,12 +362,16 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
     size: js.Any,
     mimeType: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -321,6 +382,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -330,6 +393,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -340,6 +405,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -348,6 +415,8 @@ object ScreenshotTools extends js.Object {
     samples: js.UndefOr[scala.Nothing],
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -358,6 +427,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -367,6 +438,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -377,6 +450,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -384,6 +459,8 @@ object ScreenshotTools extends js.Object {
     mimeType: String,
     samples: Double
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -394,6 +471,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -403,6 +482,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -413,6 +494,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -421,6 +504,8 @@ object ScreenshotTools extends js.Object {
     samples: Double,
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -431,6 +516,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -440,6 +527,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.engineMod.Engine,
     camera: typings.babylonjs.cameraMod.Camera,
@@ -455,5 +544,9 @@ object ScreenshotTools extends js.Object {
     * Gets height and width for screenshot size
     * @private
     */
-  var _getScreenshotSize: js.Any = js.native
+  @JSImport("babylonjs/index", "ScreenshotTools._getScreenshotSize")
+  @js.native
+  def _getScreenshotSize: js.Any = js.native
+  @scala.inline
+  def _getScreenshotSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getScreenshotSize")(x.asInstanceOf[js.Any])
 }

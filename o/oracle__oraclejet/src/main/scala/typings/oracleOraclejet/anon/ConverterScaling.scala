@@ -7,12 +7,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.quadrillion
 import typings.oracleOraclejet.oracleOraclejetStrings.thousand
 import typings.oracleOraclejet.oracleOraclejetStrings.trillion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConverterScaling extends js.Object {
+trait ConverterScaling extends StObject {
   
   var converter: js.Object = js.native
   
@@ -27,24 +28,12 @@ object ConverterScaling {
   }
   
   @scala.inline
-  implicit class ConverterScalingOps[Self <: ConverterScaling] (val x: Self) extends AnyVal {
+  implicit class ConverterScalingMutableBuilder[Self <: ConverterScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConverter(value: js.Object): Self = this.set("converter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = this.set("scaling", value.asInstanceOf[js.Any])
+    def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
   }
 }

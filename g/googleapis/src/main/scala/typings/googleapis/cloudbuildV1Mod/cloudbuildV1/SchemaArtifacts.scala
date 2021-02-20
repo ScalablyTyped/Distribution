@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * completion of all build steps.
   */
 @js.native
-trait SchemaArtifacts extends js.Object {
+trait SchemaArtifacts extends StObject {
   
   /**
     * A list of images to be pushed upon the successful completion of all build
@@ -40,33 +41,21 @@ object SchemaArtifacts {
   }
   
   @scala.inline
-  implicit class SchemaArtifactsOps[Self <: SchemaArtifacts] (val x: Self) extends AnyVal {
+  implicit class SchemaArtifactsMutableBuilder[Self <: SchemaArtifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImagesVarargs(value: String*): Self = this.set("images", js.Array(value :_*))
+    def setObjects(value: SchemaArtifactObjects): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[String]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
-    
-    @scala.inline
-    def setObjects(value: SchemaArtifactObjects): Self = this.set("objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjects: Self = this.set("objects", js.undefined)
+    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
   }
 }

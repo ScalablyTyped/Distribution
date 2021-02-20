@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendOptions extends js.Object {
+trait LegendOptions extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object LegendOptions {
   }
   
   @scala.inline
-  implicit class LegendOptionsOps[Self <: LegendOptions] (val x: Self) extends AnyVal {
+  implicit class LegendOptionsMutableBuilder[Self <: LegendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setIconSpacing(value: Double): Self = StObject.set(x, "iconSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconSize(value: Double): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    def setIconSpacingUndefined: Self = StObject.set(x, "iconSpacing", js.undefined)
     
     @scala.inline
-    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+    def setIcons(value: Boolean): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconSpacing(value: Double): Self = this.set("iconSpacing", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteIconSpacing: Self = this.set("iconSpacing", js.undefined)
+    def setLeft(value: LegendPositionOptions): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Boolean): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setRight(value: LegendPositionOptions): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: LegendPositionOptions): Self = this.set("left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
-    
-    @scala.inline
-    def setRight(value: LegendPositionOptions): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
   }
 }

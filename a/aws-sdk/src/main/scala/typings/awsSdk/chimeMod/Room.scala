@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Room extends js.Object {
+trait Room extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -46,54 +47,42 @@ object Room {
   }
   
   @scala.inline
-  implicit class RoomOps[Self <: Room] (val x: Self) extends AnyVal {
+  implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: NonEmptyString): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: NonEmptyString): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setName(value: SensitiveString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SensitiveString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRoomIdUndefined: Self = StObject.set(x, "RoomId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomId(value: NonEmptyString): Self = this.set("RoomId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomId: Self = this.set("RoomId", js.undefined)
-    
-    @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }
 }

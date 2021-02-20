@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutLogEventsResponse extends js.Object {
+trait PutLogEventsResponse extends StObject {
   
   /**
     * The next sequence token.
@@ -26,30 +27,18 @@ object PutLogEventsResponse {
   }
   
   @scala.inline
-  implicit class PutLogEventsResponseOps[Self <: PutLogEventsResponse] (val x: Self) extends AnyVal {
+  implicit class PutLogEventsResponseMutableBuilder[Self <: PutLogEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextSequenceToken(value: SequenceToken): Self = StObject.set(x, "nextSequenceToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextSequenceTokenUndefined: Self = StObject.set(x, "nextSequenceToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRejectedLogEventsInfo(value: RejectedLogEventsInfo): Self = StObject.set(x, "rejectedLogEventsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextSequenceToken(value: SequenceToken): Self = this.set("nextSequenceToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextSequenceToken: Self = this.set("nextSequenceToken", js.undefined)
-    
-    @scala.inline
-    def setRejectedLogEventsInfo(value: RejectedLogEventsInfo): Self = this.set("rejectedLogEventsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejectedLogEventsInfo: Self = this.set("rejectedLogEventsInfo", js.undefined)
+    def setRejectedLogEventsInfoUndefined: Self = StObject.set(x, "rejectedLogEventsInfo", js.undefined)
   }
 }

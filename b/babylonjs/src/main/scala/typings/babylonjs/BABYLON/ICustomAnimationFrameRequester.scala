@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICustomAnimationFrameRequester extends js.Object {
+trait ICustomAnimationFrameRequester extends StObject {
   
   /**
     * This function will be called when the render loop is ready. If this is not populated, the engine's renderloop function will be called
@@ -33,33 +34,21 @@ object ICustomAnimationFrameRequester {
   }
   
   @scala.inline
-  implicit class ICustomAnimationFrameRequesterOps[Self <: ICustomAnimationFrameRequester] (val x: Self) extends AnyVal {
+  implicit class ICustomAnimationFrameRequesterMutableBuilder[Self <: ICustomAnimationFrameRequester] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRenderFunction(value: js.Function): Self = StObject.set(x, "renderFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenderFunctionUndefined: Self = StObject.set(x, "renderFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestAnimationFrame(value: js.Function): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestAnimationFrame(value: js.Function): Self = this.set("requestAnimationFrame", value.asInstanceOf[js.Any])
+    def setRequestID(value: Double): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderFunction(value: js.Function): Self = this.set("renderFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderFunction: Self = this.set("renderFunction", js.undefined)
-    
-    @scala.inline
-    def setRequestID(value: Double): Self = this.set("requestID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestID: Self = this.set("requestID", js.undefined)
+    def setRequestIDUndefined: Self = StObject.set(x, "requestID", js.undefined)
   }
 }

@@ -1,16 +1,14 @@
 package typings.luminoCoreutils
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/coreutils/types/random", JSImport.Namespace)
-@js.native
-object randomMod extends js.Object {
+object randomMod {
   
-  @js.native
-  object Random extends js.Object {
+  object Random {
     
     /**
       * A function which generates random bytes.
@@ -29,6 +27,8 @@ object randomMod extends js.Object {
       *   - `require('crypto').randomBytes
       *   - `Math.random`
       */
+    @JSImport("@lumino/coreutils/types/random", "Random.getRandomValues")
+    @js.native
     def getRandomValues(buffer: Uint8Array): Unit = js.native
   }
 }

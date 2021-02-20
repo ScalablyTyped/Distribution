@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParsedQuery extends js.Object {
+trait ParsedQuery extends StObject {
   
   var ast: js.Array[QueryAstNode] = js.native
   
@@ -32,45 +33,33 @@ object ParsedQuery {
   }
   
   @scala.inline
-  implicit class ParsedQueryOps[Self <: ParsedQuery] (val x: Self) extends AnyVal {
+  implicit class ParsedQueryMutableBuilder[Self <: ParsedQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: js.Array[QueryAstNode]): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAstVarargs(value: QueryAstNode*): Self = StObject.set(x, "ast", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindVars(value: js.Array[String]): Self = StObject.set(x, "bindVars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAstVarargs(value: QueryAstNode*): Self = this.set("ast", js.Array(value :_*))
+    def setBindVarsVarargs(value: String*): Self = StObject.set(x, "bindVars", js.Array(value :_*))
     
     @scala.inline
-    def setAst(value: js.Array[QueryAstNode]): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setCollections(value: js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindVarsVarargs(value: String*): Self = this.set("bindVars", js.Array(value :_*))
+    def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value :_*))
     
     @scala.inline
-    def setBindVars(value: js.Array[String]): Self = this.set("bindVars", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionsVarargs(value: String*): Self = this.set("collections", js.Array(value :_*))
+    def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setCollections(value: js.Array[String]): Self = this.set("collections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParametersVarargs(value: String*): Self = this.set("parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: js.Array[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParsed(value: Boolean): Self = this.set("parsed", value.asInstanceOf[js.Any])
+    def setParsed(value: Boolean): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactFieldCategory extends js.Object
+sealed trait ContactFieldCategory extends StObject
 /** Defines the categories that contact data can belong to. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldCategory")
 @js.native
-object ContactFieldCategory extends js.Object {
+object ContactFieldCategory extends StObject {
   
   /** The Home category. */
   @js.native

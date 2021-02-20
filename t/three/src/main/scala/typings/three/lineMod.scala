@@ -8,14 +8,14 @@ import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
 import typings.three.threeStrings.LineLoop
 import typings.three.threeStrings.LineSegments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/objects/Line", JSImport.Namespace)
-@js.native
-object lineMod extends js.Object {
+object lineMod {
   
+  @JSImport("three/src/objects/Line", "Line")
   @js.native
   class Line[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D {
     def this(geometry: TGeometry) = this()

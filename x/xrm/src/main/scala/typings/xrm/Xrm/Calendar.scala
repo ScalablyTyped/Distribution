@@ -1,6 +1,7 @@
 package typings.xrm.Xrm
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for the DateFormattingInfo.calendar field
   */
 @js.native
-trait Calendar extends js.Object {
+trait Calendar extends StObject {
   
   var AlgorithmType: Double = js.native
   
@@ -42,42 +43,30 @@ object Calendar {
   }
   
   @scala.inline
-  implicit class CalendarOps[Self <: Calendar] (val x: Self) extends AnyVal {
+  implicit class CalendarMutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmType(value: Double): Self = StObject.set(x, "AlgorithmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarType(value: Double): Self = StObject.set(x, "CalendarType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEras(value: js.Array[Double]): Self = StObject.set(x, "Eras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmType(value: Double): Self = this.set("AlgorithmType", value.asInstanceOf[js.Any])
+    def setErasVarargs(value: Double*): Self = StObject.set(x, "Eras", js.Array(value :_*))
     
     @scala.inline
-    def setCalendarType(value: Double): Self = this.set("CalendarType", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErasVarargs(value: Double*): Self = this.set("Eras", js.Array(value :_*))
+    def setMaxSupportedDateTime(value: Date): Self = StObject.set(x, "MaxSupportedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEras(value: js.Array[Double]): Self = this.set("Eras", value.asInstanceOf[js.Any])
+    def setMinSupportedDateTime(value: Date): Self = StObject.set(x, "MinSupportedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxSupportedDateTime(value: Date): Self = this.set("MaxSupportedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinSupportedDateTime(value: Date): Self = this.set("MinSupportedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwoDigitYearMax(value: Double): Self = this.set("TwoDigitYearMax", value.asInstanceOf[js.Any])
+    def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "TwoDigitYearMax", value.asInstanceOf[js.Any])
   }
 }

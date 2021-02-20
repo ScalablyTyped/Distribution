@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object SlideVisibleLayersProperties {
   }
   
   @scala.inline
-  implicit class SlideVisibleLayersPropertiesOps[Self <: SlideVisibleLayersProperties] (val x: Self) extends AnyVal {
+  implicit class SlideVisibleLayersPropertiesMutableBuilder[Self <: SlideVisibleLayersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSublayerIds(value: js.Array[Double]): Self = StObject.set(x, "sublayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSublayerIdsUndefined: Self = StObject.set(x, "sublayerIds", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setSublayerIdsVarargs(value: Double*): Self = this.set("sublayerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSublayerIds(value: js.Array[Double]): Self = this.set("sublayerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSublayerIds: Self = this.set("sublayerIds", js.undefined)
+    def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value :_*))
   }
 }

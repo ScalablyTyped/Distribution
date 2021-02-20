@@ -5,16 +5,18 @@ import typings.materialMenuSurface.anon.PartialMDCMenuDistance
 import typings.materialMenuSurface.constantsMod.Corner
 import typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/menu-surface/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/menu-surface/component", "MDCMenuSurface")
   @js.native
-  class MDCMenuSurface () extends MDCComponent[MDCMenuSurfaceFoundation] {
+  class MDCMenuSurface protected () extends MDCComponent[MDCMenuSurfaceFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCMenuSurfaceFoundation, args: js.Any*) = this()
     
     var anchorElement: Element | Null = js.native
     
@@ -47,9 +49,10 @@ object componentMod extends js.Object {
     def setMenuSurfaceAnchorElement(element: Element): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCMenuSurface extends js.Object {
+  object MDCMenuSurface {
     
+    @JSImport("@material/menu-surface/component", "MDCMenuSurface.attachTo")
+    @js.native
     def attachTo(root: Element): MDCMenuSurface = js.native
   }
   

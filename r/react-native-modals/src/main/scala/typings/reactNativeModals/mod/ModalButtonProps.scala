@@ -3,12 +3,13 @@ package typings.reactNativeModals.mod
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalButtonProps extends js.Object {
+trait ModalButtonProps extends StObject {
   
   var activeOpacity: js.UndefOr[Double] = js.native
   
@@ -35,66 +36,54 @@ object ModalButtonProps {
   }
   
   @scala.inline
-  implicit class ModalButtonPropsOps[Self <: ModalButtonProps] (val x: Self) extends AnyVal {
+  implicit class ModalButtonPropsMutableBuilder[Self <: ModalButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     
     @scala.inline
-    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: AlignTypes): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBordered(value: Boolean): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBordered: Self = this.set("bordered", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
-    
-    @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
-    
-    @scala.inline
-    def setTextStyleNull: Self = this.set("textStyle", null)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

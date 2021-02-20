@@ -1,15 +1,15 @@
 package typings.sodiumjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/Lazy", JSImport.Namespace)
-@js.native
-object lazyMod extends js.Object {
+object lazyMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/Lazy", "Lazy")
   @js.native
-  class Lazy[A] protected () extends js.Object {
+  class Lazy[A] protected () extends StObject {
     def this(f: js.Function0[A]) = this()
     
     var f: js.Any = js.native

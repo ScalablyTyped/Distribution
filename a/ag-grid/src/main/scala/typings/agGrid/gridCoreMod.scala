@@ -3,14 +3,14 @@ package typings.agGrid
 import typings.agGrid.componentMod.Component
 import typings.agGrid.loggerMod.LoggerFactory
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/gridCore", JSImport.Namespace)
-@js.native
-object gridCoreMod extends js.Object {
+object gridCoreMod {
   
+  @JSImport("ag-grid/dist/lib/gridCore", "GridCore")
   @js.native
   class GridCore () extends Component {
     
@@ -88,11 +88,22 @@ object gridCoreMod extends js.Object {
     var toolPanelComp: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object GridCore extends js.Object {
+  object GridCore {
     
-    var TEMPLATE_ENTERPRISE: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/gridCore", "GridCore")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var TEMPLATE_NORMAL: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/gridCore", "GridCore.TEMPLATE_ENTERPRISE")
+    @js.native
+    def TEMPLATE_ENTERPRISE: js.Any = js.native
+    @scala.inline
+    def TEMPLATE_ENTERPRISE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE_ENTERPRISE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ag-grid/dist/lib/gridCore", "GridCore.TEMPLATE_NORMAL")
+    @js.native
+    def TEMPLATE_NORMAL: js.Any = js.native
+    @scala.inline
+    def TEMPLATE_NORMAL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE_NORMAL")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SummarizedCounter extends js.Object {
+trait SummarizedCounter extends StObject {
   
   /**
     * The average value of the counter for a specified time period.
@@ -46,54 +47,42 @@ object SummarizedCounter {
   }
   
   @scala.inline
-  implicit class SummarizedCounterOps[Self <: SummarizedCounter] (val x: Self) extends AnyVal {
+  implicit class SummarizedCounterMutableBuilder[Self <: SummarizedCounter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: Double): Self = this.set("Average", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("Average", js.undefined)
+    def setN(value: Integer): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("Max", value.asInstanceOf[js.Any])
+    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("Max", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: Integer): Self = this.set("N", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteN: Self = this.set("N", js.undefined)
+    def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSum(value: Double): Self = this.set("Sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSum: Self = this.set("Sum", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

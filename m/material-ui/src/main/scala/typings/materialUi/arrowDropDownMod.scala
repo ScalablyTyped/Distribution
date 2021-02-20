@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/navigation/arrow-drop-down", JSImport.Namespace)
-@js.native
-object arrowDropDownMod extends js.Object {
+object arrowDropDownMod {
   
+  @JSImport("material-ui/svg-icons/navigation/arrow-drop-down", JSImport.Default)
+  @js.native
+  class default () extends NavigationArrowDropDown
+  
+  @JSImport("material-ui/svg-icons/navigation/arrow-drop-down", "NavigationArrowDropDown")
   @js.native
   class NavigationArrowDropDown ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

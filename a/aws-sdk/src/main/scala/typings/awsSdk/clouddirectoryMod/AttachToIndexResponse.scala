@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachToIndexResponse extends js.Object {
+trait AttachToIndexResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the object that was attached to the index.
@@ -21,24 +22,12 @@ object AttachToIndexResponse {
   }
   
   @scala.inline
-  implicit class AttachToIndexResponseOps[Self <: AttachToIndexResponse] (val x: Self) extends AnyVal {
+  implicit class AttachToIndexResponseMutableBuilder[Self <: AttachToIndexResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "AttachedObjectIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttachedObjectIdentifier(value: ObjectIdentifier): Self = this.set("AttachedObjectIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachedObjectIdentifier: Self = this.set("AttachedObjectIdentifier", js.undefined)
+    def setAttachedObjectIdentifierUndefined: Self = StObject.set(x, "AttachedObjectIdentifier", js.undefined)
   }
 }

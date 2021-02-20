@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,66 +35,54 @@ object RoleDefinition {
   }
   
   @scala.inline
-  implicit class RoleDefinitionOps[Self <: RoleDefinition] (val x: Self) extends AnyVal {
+  implicit class RoleDefinitionMutableBuilder[Self <: RoleDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "isBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsBuiltInUndefined: Self = StObject.set(x, "isBuiltIn", js.undefined)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setRoleAssignments(value: NullableOption[js.Array[RoleAssignment]]): Self = StObject.set(x, "roleAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBuiltIn(value: Boolean): Self = this.set("isBuiltIn", value.asInstanceOf[js.Any])
+    def setRoleAssignmentsNull: Self = StObject.set(x, "roleAssignments", null)
     
     @scala.inline
-    def deleteIsBuiltIn: Self = this.set("isBuiltIn", js.undefined)
+    def setRoleAssignmentsUndefined: Self = StObject.set(x, "roleAssignments", js.undefined)
     
     @scala.inline
-    def setRoleAssignmentsVarargs(value: RoleAssignment*): Self = this.set("roleAssignments", js.Array(value :_*))
+    def setRoleAssignmentsVarargs(value: RoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setRoleAssignments(value: NullableOption[js.Array[RoleAssignment]]): Self = this.set("roleAssignments", value.asInstanceOf[js.Any])
+    def setRolePermissions(value: NullableOption[js.Array[RolePermission]]): Self = StObject.set(x, "rolePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoleAssignments: Self = this.set("roleAssignments", js.undefined)
+    def setRolePermissionsNull: Self = StObject.set(x, "rolePermissions", null)
     
     @scala.inline
-    def setRoleAssignmentsNull: Self = this.set("roleAssignments", null)
+    def setRolePermissionsUndefined: Self = StObject.set(x, "rolePermissions", js.undefined)
     
     @scala.inline
-    def setRolePermissionsVarargs(value: RolePermission*): Self = this.set("rolePermissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRolePermissions(value: NullableOption[js.Array[RolePermission]]): Self = this.set("rolePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolePermissions: Self = this.set("rolePermissions", js.undefined)
-    
-    @scala.inline
-    def setRolePermissionsNull: Self = this.set("rolePermissions", null)
+    def setRolePermissionsVarargs(value: RolePermission*): Self = StObject.set(x, "rolePermissions", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServiceAccountResponseBusinessManager extends js.Object {
+trait InsightsServiceAccountResponseBusinessManager extends StObject {
   
   var account_insights_unit: InsightsServiceAccountResponseAccountInsightsUnit = js.native
   
@@ -38,39 +39,27 @@ object InsightsServiceAccountResponseBusinessManager {
   }
   
   @scala.inline
-  implicit class InsightsServiceAccountResponseBusinessManagerOps[Self <: InsightsServiceAccountResponseBusinessManager] (val x: Self) extends AnyVal {
+  implicit class InsightsServiceAccountResponseBusinessManagerMutableBuilder[Self <: InsightsServiceAccountResponseBusinessManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_insights_unit(value: InsightsServiceAccountResponseAccountInsightsUnit): Self = StObject.set(x, "account_insights_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount_summary_unit(value: InsightsServiceAccountResponseAccountSummaryUnit): Self = StObject.set(x, "account_summary_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowers_unit(value: InsightsServiceAccountResponseFollowersUnit): Self = StObject.set(x, "followers_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_insights_unit(value: InsightsServiceAccountResponseAccountInsightsUnit): Self = this.set("account_insights_unit", value.asInstanceOf[js.Any])
+    def setPromotions_unit(value: InsightsServiceAccountResponsePromotionsUnit): Self = StObject.set(x, "promotions_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_summary_unit(value: InsightsServiceAccountResponseAccountSummaryUnit): Self = this.set("account_summary_unit", value.asInstanceOf[js.Any])
+    def setStatus(value: InsightsServiceAccountResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_unit(value: InsightsServiceAccountResponseFollowersUnit): Self = this.set("followers_unit", value.asInstanceOf[js.Any])
+    def setStories_unit(value: InsightsServiceAccountResponseStoriesUnit): Self = StObject.set(x, "stories_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotions_unit(value: InsightsServiceAccountResponsePromotionsUnit): Self = this.set("promotions_unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: InsightsServiceAccountResponseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStories_unit(value: InsightsServiceAccountResponseStoriesUnit): Self = this.set("stories_unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop_posts_unit(value: InsightsServiceAccountResponseTopPostsUnit): Self = this.set("top_posts_unit", value.asInstanceOf[js.Any])
+    def setTop_posts_unit(value: InsightsServiceAccountResponseTopPostsUnit): Self = StObject.set(x, "top_posts_unit", value.asInstanceOf[js.Any])
   }
 }

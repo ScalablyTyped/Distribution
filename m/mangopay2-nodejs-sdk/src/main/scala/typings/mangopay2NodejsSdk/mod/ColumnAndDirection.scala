@@ -1,5 +1,6 @@
 package typings.mangopay2NodejsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ASC
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DESC
 */
-trait ColumnAndDirection extends js.Object
+trait ColumnAndDirection extends StObject
 object ColumnAndDirection {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * type.
   */
 @js.native
-trait SchemaNamedStyle extends js.Object {
+trait SchemaNamedStyle extends StObject {
   
   /**
     * The type of this named style.
@@ -36,36 +37,24 @@ object SchemaNamedStyle {
   }
   
   @scala.inline
-  implicit class SchemaNamedStyleOps[Self <: SchemaNamedStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaNamedStyleMutableBuilder[Self <: SchemaNamedStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedStyleType(value: String): Self = this.set("namedStyleType", value.asInstanceOf[js.Any])
+    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
     
     @scala.inline
-    def deleteNamedStyleType: Self = this.set("namedStyleType", js.undefined)
+    def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphStyle(value: SchemaParagraphStyle): Self = this.set("paragraphStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraphStyle: Self = this.set("paragraphStyle", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: SchemaTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyGroup extends js.Object {
+trait PropertyGroup extends StObject {
   
   /**
     * Describes the key of an application execution property key-value pair.
@@ -26,24 +27,12 @@ object PropertyGroup {
   }
   
   @scala.inline
-  implicit class PropertyGroupOps[Self <: PropertyGroup] (val x: Self) extends AnyVal {
+  implicit class PropertyGroupMutableBuilder[Self <: PropertyGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPropertyGroupId(value: Id): Self = StObject.set(x, "PropertyGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyGroupId(value: Id): Self = this.set("PropertyGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyMap(value: PropertyMap): Self = this.set("PropertyMap", value.asInstanceOf[js.Any])
+    def setPropertyMap(value: PropertyMap): Self = StObject.set(x, "PropertyMap", value.asInstanceOf[js.Any])
   }
 }

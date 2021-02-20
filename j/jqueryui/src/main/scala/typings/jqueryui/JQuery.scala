@@ -93,12 +93,13 @@ import typings.std.Date
 import typings.std.Element
 import typings.std.MouseEvent
 import typings.std.ThisType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def accordion(): JQuery = js.native
   def accordion(methodName: String): JQuery = js.native
@@ -197,7 +198,7 @@ trait JQuery extends js.Object {
     * Initialize a datepicker
     */
   def datepicker(): JQuery = js.native
-   // Used for getting and setting options
+  // Used for getting and setting options
   def datepicker(methodName: String, otherParams: js.Any*): js.Any = js.native
   /**
     * Get the altField option, after initialization
@@ -1024,7 +1025,7 @@ trait JQuery extends js.Object {
   def progressbar_value(methodName: value): js.Any = js.native
   @JSName("progressbar")
   def progressbar_value(methodName: value, value: Boolean): Unit = js.native
-   // number or boolean
+  // number or boolean
   @JSName("progressbar")
   def progressbar_value(methodName: value, value: Double): Unit = js.native
   @JSName("progressbar")

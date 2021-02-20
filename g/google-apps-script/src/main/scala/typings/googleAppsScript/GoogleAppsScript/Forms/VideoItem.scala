@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setVideoUrl('1234abcdxyz');
   */
 @js.native
-trait VideoItem extends js.Object {
+trait VideoItem extends StObject {
   
   def duplicate(): VideoItem = js.native
   
@@ -78,57 +79,45 @@ object VideoItem {
   }
   
   @scala.inline
-  implicit class VideoItemOps[Self <: VideoItem] (val x: Self) extends AnyVal {
+  implicit class VideoItemMutableBuilder[Self <: VideoItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuplicate(value: () => VideoItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAlignment(value: () => Alignment): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDuplicate(value: () => VideoItem): Self = this.set("duplicate", js.Any.fromFunction0(value))
+    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAlignment(value: () => Alignment): Self = this.set("getAlignment", js.Any.fromFunction0(value))
+    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHelpText(value: () => String): Self = this.set("getHelpText", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Integer): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: () => Integer): Self = this.set("getIndex", js.Any.fromFunction0(value))
+    def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setSetAlignment(value: Alignment => VideoItem): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetType(value: () => ItemType): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setSetHelpText(value: String => VideoItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWidth(value: () => Integer): Self = this.set("getWidth", js.Any.fromFunction0(value))
+    def setSetTitle(value: String => VideoItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAlignment(value: Alignment => VideoItem): Self = this.set("setAlignment", js.Any.fromFunction1(value))
+    def setSetVideoUrl(value: String => VideoItem): Self = StObject.set(x, "setVideoUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHelpText(value: String => VideoItem): Self = this.set("setHelpText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => VideoItem): Self = this.set("setTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVideoUrl(value: String => VideoItem): Self = this.set("setVideoUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetWidth(value: Integer => VideoItem): Self = this.set("setWidth", js.Any.fromFunction1(value))
+    def setSetWidth(value: Integer => VideoItem): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
   }
 }

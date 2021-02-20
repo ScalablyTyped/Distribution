@@ -2,20 +2,22 @@ package typings.xstream
 
 import typings.xstream.mod.Operator
 import typings.xstream.mod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstream/extra/dropUntil", JSImport.Namespace)
-@js.native
-object dropUntilMod extends js.Object {
+object dropUntilMod {
   
+  @JSImport("xstream/extra/dropUntil", JSImport.Default)
+  @js.native
   def default[T](other: Stream[_]): js.Function1[/* ins */ Stream[T], Stream[T]] = js.native
   
+  @JSImport("xstream/extra/dropUntil", "DropUntilOperator")
   @js.native
   class DropUntilOperator[T] protected () extends Operator[T, T] {
-    def this( // o = other
-    o: Stream[_], ins: Stream[T]) = this()
+    def this(o: Stream[_], // o = other
+    ins: Stream[T]) = this()
     
     var o: Stream[_] = js.native
     

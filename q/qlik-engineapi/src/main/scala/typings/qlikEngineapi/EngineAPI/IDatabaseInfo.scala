@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DatabaseInfo...
   */
 @js.native
-trait IDatabaseInfo extends js.Object {
+trait IDatabaseInfo extends StObject {
   
   /**
     *  If set to true, it means that the database is displayed first, before the owners and tables.
@@ -98,54 +99,42 @@ object IDatabaseInfo {
   }
   
   @scala.inline
-  implicit class IDatabaseInfoOps[Self <: IDatabaseInfo] (val x: Self) extends AnyVal {
+  implicit class IDatabaseInfoMutableBuilder[Self <: IDatabaseInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDBFirst(value: Boolean): Self = StObject.set(x, "qDBFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDBMSName(value: String): Self = StObject.set(x, "qDBMSName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDBSeparator(value: String): Self = StObject.set(x, "qDBSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDBFirst(value: Boolean): Self = this.set("qDBFirst", value.asInstanceOf[js.Any])
+    def setQDBUsage(value: Boolean): Self = StObject.set(x, "qDBUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDBMSName(value: String): Self = this.set("qDBMSName", value.asInstanceOf[js.Any])
+    def setQDefaultDatabase(value: String): Self = StObject.set(x, "qDefaultDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDBSeparator(value: String): Self = this.set("qDBSeparator", value.asInstanceOf[js.Any])
+    def setQKeywords(value: js.Array[String]): Self = StObject.set(x, "qKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDBUsage(value: Boolean): Self = this.set("qDBUsage", value.asInstanceOf[js.Any])
+    def setQKeywordsVarargs(value: String*): Self = StObject.set(x, "qKeywords", js.Array(value :_*))
     
     @scala.inline
-    def setQDefaultDatabase(value: String): Self = this.set("qDefaultDatabase", value.asInstanceOf[js.Any])
+    def setQOwnerSeparator(value: String): Self = StObject.set(x, "qOwnerSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQKeywordsVarargs(value: String*): Self = this.set("qKeywords", js.Array(value :_*))
+    def setQOwnerUsage(value: Boolean): Self = StObject.set(x, "qOwnerUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQKeywords(value: js.Array[String]): Self = this.set("qKeywords", value.asInstanceOf[js.Any])
+    def setQQuotePreffix(value: String): Self = StObject.set(x, "qQuotePreffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOwnerSeparator(value: String): Self = this.set("qOwnerSeparator", value.asInstanceOf[js.Any])
+    def setQQuoteSuffix(value: String): Self = StObject.set(x, "qQuoteSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOwnerUsage(value: Boolean): Self = this.set("qOwnerUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQQuotePreffix(value: String): Self = this.set("qQuotePreffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQQuoteSuffix(value: String): Self = this.set("qQuoteSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSpecialChars(value: String): Self = this.set("qSpecialChars", value.asInstanceOf[js.Any])
+    def setQSpecialChars(value: String): Self = StObject.set(x, "qSpecialChars", value.asInstanceOf[js.Any])
   }
 }

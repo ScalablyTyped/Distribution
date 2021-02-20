@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "highlightjs"
-version := "10.1-dt-20201109Z-704e33"
+version := "10.1-dt-20201109Z-e79d57"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "highlight_dot_js" % "10.4.0-5b2ebc",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "highlight_dot_js" % "10.4.0-2c53bf",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,7 @@
 package typings.requirejs
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,33 +33,21 @@ object RequireError {
   }
   
   @scala.inline
-  implicit class RequireErrorOps[Self <: RequireError] (val x: Self) extends AnyVal {
+  implicit class RequireErrorMutableBuilder[Self <: RequireError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequireModules(value: js.Array[String]): Self = StObject.set(x, "requireModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequireModulesNull: Self = StObject.set(x, "requireModules", null)
     
     @scala.inline
-    def setOriginalError(value: Error): Self = this.set("originalError", value.asInstanceOf[js.Any])
+    def setRequireModulesVarargs(value: String*): Self = StObject.set(x, "requireModules", js.Array(value :_*))
     
     @scala.inline
-    def setRequireType(value: String): Self = this.set("requireType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequireModulesVarargs(value: String*): Self = this.set("requireModules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequireModules(value: js.Array[String]): Self = this.set("requireModules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequireModulesNull: Self = this.set("requireModules", null)
+    def setRequireType(value: String): Self = StObject.set(x, "requireType", value.asInstanceOf[js.Any])
   }
 }

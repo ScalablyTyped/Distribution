@@ -1,11 +1,12 @@
 package typings.wordpressApiFetch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Public extends js.Object {
+trait Public extends StObject {
   
   var public: Boolean = js.native
   
@@ -35,36 +36,24 @@ object Public {
   }
   
   @scala.inline
-  implicit class PublicOps[Self <: Public] (val x: Self) extends AnyVal {
+  implicit class PublicMutableBuilder[Self <: Public] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicly_queryable(value: Boolean): Self = StObject.set(x, "publicly_queryable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShow_admin_column(value: Boolean): Self = StObject.set(x, "show_admin_column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
+    def setShow_in_nav_menus(value: Boolean): Self = StObject.set(x, "show_in_nav_menus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicly_queryable(value: Boolean): Self = this.set("publicly_queryable", value.asInstanceOf[js.Any])
+    def setShow_in_quick_edit(value: Boolean): Self = StObject.set(x, "show_in_quick_edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_admin_column(value: Boolean): Self = this.set("show_admin_column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow_in_nav_menus(value: Boolean): Self = this.set("show_in_nav_menus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow_in_quick_edit(value: Boolean): Self = this.set("show_in_quick_edit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow_ui(value: Boolean): Self = this.set("show_ui", value.asInstanceOf[js.Any])
+    def setShow_ui(value: Boolean): Self = StObject.set(x, "show_ui", value.asInstanceOf[js.Any])
   }
 }

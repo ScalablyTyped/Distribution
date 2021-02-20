@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyPair extends js.Object {
+trait KeyPair extends StObject {
   
   /**
     * The SHA-1 digest of the DER encoded private key.
@@ -41,51 +42,39 @@ object KeyPair {
   }
   
   @scala.inline
-  implicit class KeyPairOps[Self <: KeyPair] (val x: Self) extends AnyVal {
+  implicit class KeyPairMutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyFingerprint(value: String): Self = StObject.set(x, "KeyFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyFingerprintUndefined: Self = StObject.set(x, "KeyFingerprint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyMaterial(value: SensitiveUserData): Self = StObject.set(x, "KeyMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyFingerprint(value: String): Self = this.set("KeyFingerprint", value.asInstanceOf[js.Any])
+    def setKeyMaterialUndefined: Self = StObject.set(x, "KeyMaterial", js.undefined)
     
     @scala.inline
-    def deleteKeyFingerprint: Self = this.set("KeyFingerprint", js.undefined)
+    def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyMaterial(value: SensitiveUserData): Self = this.set("KeyMaterial", value.asInstanceOf[js.Any])
+    def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
     @scala.inline
-    def deleteKeyMaterial: Self = this.set("KeyMaterial", js.undefined)
+    def setKeyPairId(value: String): Self = StObject.set(x, "KeyPairId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: String): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    def setKeyPairIdUndefined: Self = StObject.set(x, "KeyPairId", js.undefined)
     
     @scala.inline
-    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPairId(value: String): Self = this.set("KeyPairId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteKeyPairId: Self = this.set("KeyPairId", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

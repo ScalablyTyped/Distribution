@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragImpact extends js.Object {
+trait DragImpact extends StObject {
   
   var at: js.UndefOr[ImpactLocation] = js.native
   
@@ -22,30 +23,18 @@ object DragImpact {
   }
   
   @scala.inline
-  implicit class DragImpactOps[Self <: DragImpact] (val x: Self) extends AnyVal {
+  implicit class DragImpactMutableBuilder[Self <: DragImpact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAt(value: ImpactLocation): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplaced(value: DisplacementGroups): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaced(value: DisplacementGroups): Self = this.set("displaced", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplacedBy(value: DisplacedBy): Self = this.set("displacedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAt(value: ImpactLocation): Self = this.set("at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAt: Self = this.set("at", js.undefined)
+    def setDisplacedBy(value: DisplacedBy): Self = StObject.set(x, "displacedBy", value.asInstanceOf[js.Any])
   }
 }

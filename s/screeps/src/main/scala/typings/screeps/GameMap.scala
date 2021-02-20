@@ -1,6 +1,7 @@
 package typings.screeps
 
 import typings.screeps.anon.Exit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A global object representing world map. Use it to navigate between rooms. The object is accessible via Game.map property.
   */
 @js.native
-trait GameMap extends js.Object {
+trait GameMap extends StObject {
   
   /**
     * List all exits available from the room with the given name.

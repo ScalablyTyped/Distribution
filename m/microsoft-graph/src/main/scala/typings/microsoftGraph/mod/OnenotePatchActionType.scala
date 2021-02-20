@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.Insert
   - typings.microsoftGraph.microsoftGraphStrings.Prepend
 */
-trait OnenotePatchActionType extends js.Object
+trait OnenotePatchActionType extends StObject
 object OnenotePatchActionType {
   
   @scala.inline

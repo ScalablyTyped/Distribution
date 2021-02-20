@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerspectiveTransform extends js.Object {
+trait PerspectiveTransform extends StObject {
   
   var a11: Double = js.native
   
@@ -56,57 +57,45 @@ object PerspectiveTransform {
   }
   
   @scala.inline
-  implicit class PerspectiveTransformOps[Self <: PerspectiveTransform] (val x: Self) extends AnyVal {
+  implicit class PerspectiveTransformMutableBuilder[Self <: PerspectiveTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA11(value: Double): Self = StObject.set(x, "a11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setA12(value: Double): Self = StObject.set(x, "a12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setA13(value: Double): Self = StObject.set(x, "a13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA11(value: Double): Self = this.set("a11", value.asInstanceOf[js.Any])
+    def setA21(value: Double): Self = StObject.set(x, "a21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA12(value: Double): Self = this.set("a12", value.asInstanceOf[js.Any])
+    def setA22(value: Double): Self = StObject.set(x, "a22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA13(value: Double): Self = this.set("a13", value.asInstanceOf[js.Any])
+    def setA23(value: Double): Self = StObject.set(x, "a23", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA21(value: Double): Self = this.set("a21", value.asInstanceOf[js.Any])
+    def setA31(value: Double): Self = StObject.set(x, "a31", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA22(value: Double): Self = this.set("a22", value.asInstanceOf[js.Any])
+    def setA32(value: Double): Self = StObject.set(x, "a32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA23(value: Double): Self = this.set("a23", value.asInstanceOf[js.Any])
+    def setA33(value: Double): Self = StObject.set(x, "a33", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA31(value: Double): Self = this.set("a31", value.asInstanceOf[js.Any])
+    def setBuildAdjoint(value: () => PerspectiveTransform): Self = StObject.set(x, "buildAdjoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setA32(value: Double): Self = this.set("a32", value.asInstanceOf[js.Any])
+    def setTimes(value: PerspectiveTransform => PerspectiveTransform): Self = StObject.set(x, "times", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setA33(value: Double): Self = this.set("a33", value.asInstanceOf[js.Any])
+    def setTransformPoints1(value: js.Array[Double] => Unit): Self = StObject.set(x, "transformPoints1", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuildAdjoint(value: () => PerspectiveTransform): Self = this.set("buildAdjoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTimes(value: PerspectiveTransform => PerspectiveTransform): Self = this.set("times", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransformPoints1(value: js.Array[Double] => Unit): Self = this.set("transformPoints1", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransformPoints2(value: (js.Array[Double], js.Array[Double]) => Unit): Self = this.set("transformPoints2", js.Any.fromFunction2(value))
+    def setTransformPoints2(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "transformPoints2", js.Any.fromFunction2(value))
   }
 }

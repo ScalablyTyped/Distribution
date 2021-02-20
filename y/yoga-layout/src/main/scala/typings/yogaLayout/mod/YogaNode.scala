@@ -1,12 +1,13 @@
 package typings.yogaLayout.mod
 
 import typings.yogaLayout.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait YogaNode extends js.Object {
+trait YogaNode extends StObject {
   
   def calculateLayout(): Unit = js.native
   def calculateLayout(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], direction: YogaDirection): Unit = js.native

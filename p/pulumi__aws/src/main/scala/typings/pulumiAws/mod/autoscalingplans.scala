@@ -5,14 +5,14 @@ import typings.pulumiAws.scalingPlanMod.ScalingPlanState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "autoscalingplans")
-@js.native
-object autoscalingplans extends js.Object {
+object autoscalingplans {
   
+  @JSImport("@pulumi/aws", "autoscalingplans.ScalingPlan")
   @js.native
   class ScalingPlan protected ()
     extends typings.pulumiAws.autoscalingplansMod.ScalingPlan {
@@ -27,8 +27,7 @@ object autoscalingplans extends js.Object {
     def this(name: String, args: ScalingPlanArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ScalingPlan extends js.Object {
+  object ScalingPlan {
     
     /**
       * Get an existing ScalingPlan resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object autoscalingplans extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "autoscalingplans.ScalingPlan.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.scalingPlanMod.ScalingPlan = js.native
+    @JSImport("@pulumi/aws", "autoscalingplans.ScalingPlan.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.scalingPlanMod.ScalingPlan = js.native
+    @JSImport("@pulumi/aws", "autoscalingplans.ScalingPlan.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ScalingPlanState): typings.pulumiAws.scalingPlanMod.ScalingPlan = js.native
+    @JSImport("@pulumi/aws", "autoscalingplans.ScalingPlan.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ScalingPlanState, opts: CustomResourceOptions): typings.pulumiAws.scalingPlanMod.ScalingPlan = js.native
     
     /**
       * Returns true if the given object is an instance of ScalingPlan.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "autoscalingplans.ScalingPlan.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscalingplans/scalingPlan.ScalingPlan */ Boolean = js.native
   }
 }

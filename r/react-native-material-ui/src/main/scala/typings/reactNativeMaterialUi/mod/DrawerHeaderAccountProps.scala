@@ -2,12 +2,13 @@ package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.AccountContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawerHeaderAccountProps extends js.Object {
+trait DrawerHeaderAccountProps extends StObject {
   
   var accounts: js.UndefOr[js.Array[typings.reactNativeMaterialUi.anon.Avatar]] = js.native
   
@@ -26,45 +27,33 @@ object DrawerHeaderAccountProps {
   }
   
   @scala.inline
-  implicit class DrawerHeaderAccountPropsOps[Self <: DrawerHeaderAccountProps] (val x: Self) extends AnyVal {
+  implicit class DrawerHeaderAccountPropsMutableBuilder[Self <: DrawerHeaderAccountProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: js.Array[typings.reactNativeMaterialUi.anon.Avatar]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountsVarargs(value: typings.reactNativeMaterialUi.anon.Avatar*): Self = StObject.set(x, "accounts", js.Array(value :_*))
     
     @scala.inline
-    def setAccountsVarargs(value: typings.reactNativeMaterialUi.anon.Avatar*): Self = this.set("accounts", js.Array(value :_*))
+    def setAvatar(value: Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounts(value: js.Array[typings.reactNativeMaterialUi.anon.Avatar]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
     @scala.inline
-    def deleteAccounts: Self = this.set("accounts", js.undefined)
+    def setFooter(value: js.Object): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar(value: Element): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    def setStyle(value: AccountContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: js.Object): Self = this.set("footer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: AccountContainer): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenancePolicy extends js.Object {
+trait MaintenancePolicy extends StObject {
   
   /**
     * A hash identifying the version of this policy, so that updates to fields of the policy won't accidentally undo intermediate changes (and so that users of the API unaware of some
@@ -25,30 +26,18 @@ object MaintenancePolicy {
   }
   
   @scala.inline
-  implicit class MaintenancePolicyOps[Self <: MaintenancePolicy] (val x: Self) extends AnyVal {
+  implicit class MaintenancePolicyMutableBuilder[Self <: MaintenancePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindow(value: MaintenanceWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceVersion: Self = this.set("resourceVersion", js.undefined)
-    
-    @scala.inline
-    def setWindow(value: MaintenanceWindow): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

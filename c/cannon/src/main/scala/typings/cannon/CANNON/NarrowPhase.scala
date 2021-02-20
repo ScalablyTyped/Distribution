@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NarrowPhase extends js.Object {
+trait NarrowPhase extends StObject {
   
   var contactPointPool: js.Array[Pool] = js.native
   
@@ -20,27 +21,15 @@ object NarrowPhase {
   }
   
   @scala.inline
-  implicit class NarrowPhaseOps[Self <: NarrowPhase] (val x: Self) extends AnyVal {
+  implicit class NarrowPhaseMutableBuilder[Self <: NarrowPhase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactPointPool(value: js.Array[Pool]): Self = StObject.set(x, "contactPointPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactPointPoolVarargs(value: Pool*): Self = StObject.set(x, "contactPointPool", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContactPointPoolVarargs(value: Pool*): Self = this.set("contactPointPool", js.Array(value :_*))
-    
-    @scala.inline
-    def setContactPointPool(value: js.Array[Pool]): Self = this.set("contactPointPool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV3pool(value: Vec3Pool): Self = this.set("v3pool", value.asInstanceOf[js.Any])
+    def setV3pool(value: Vec3Pool): Self = StObject.set(x, "v3pool", value.asInstanceOf[js.Any])
   }
 }

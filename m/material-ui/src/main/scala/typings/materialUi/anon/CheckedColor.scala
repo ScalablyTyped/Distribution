@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckedColor extends js.Object {
+trait CheckedColor extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object CheckedColor {
   }
   
   @scala.inline
-  implicit class CheckedColorOps[Self <: CheckedColor] (val x: Self) extends AnyVal {
+  implicit class CheckedColorMutableBuilder[Self <: CheckedColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setCheckedColor(value: String): Self = StObject.set(x, "checkedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setCheckedColorUndefined: Self = StObject.set(x, "checkedColor", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedColor(value: String): Self = this.set("checkedColor", value.asInstanceOf[js.Any])
+    def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
     
     @scala.inline
-    def deleteCheckedColor: Self = this.set("checkedColor", js.undefined)
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledColor(value: String): Self = this.set("disabledColor", value.asInstanceOf[js.Any])
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def deleteDisabledColor: Self = this.set("disabledColor", js.undefined)
+    def setLabelDisabledColor(value: String): Self = StObject.set(x, "labelDisabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setLabelDisabledColorUndefined: Self = StObject.set(x, "labelDisabledColor", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setRequiredColor(value: String): Self = StObject.set(x, "requiredColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDisabledColor(value: String): Self = this.set("labelDisabledColor", value.asInstanceOf[js.Any])
+    def setRequiredColorUndefined: Self = StObject.set(x, "requiredColor", js.undefined)
     
     @scala.inline
-    def deleteLabelDisabledColor: Self = this.set("labelDisabledColor", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredColor(value: String): Self = this.set("requiredColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredColor: Self = this.set("requiredColor", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

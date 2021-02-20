@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Support extends js.Object {
+trait Support extends StObject {
   
   var export: SupportItem = js.native
   
@@ -22,36 +23,24 @@ object Support {
   }
   
   @scala.inline
-  implicit class SupportOps[Self <: Support] (val x: Self) extends AnyVal {
+  implicit class SupportMutableBuilder[Self <: Support] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExport(value: SupportItem): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportData(value: SupportItem): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportDataFunction1(value: /* layout */ Layout => Boolean): Self = StObject.set(x, "exportData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExportFunction1(value: /* layout */ Layout => Boolean): Self = this.set("export", js.Any.fromFunction1(value))
+    def setExportFunction1(value: /* layout */ Layout => Boolean): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExport(value: SupportItem): Self = this.set("export", value.asInstanceOf[js.Any])
+    def setSnapshot(value: SupportItem | SnapshotLegacy): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportDataFunction1(value: /* layout */ Layout => Boolean): Self = this.set("exportData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExportData(value: SupportItem): Self = this.set("exportData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshotFunction1(value: /* layout */ Layout => Boolean): Self = this.set("snapshot", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSnapshot(value: SupportItem | SnapshotLegacy): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setSnapshotFunction1(value: /* layout */ Layout => Boolean): Self = StObject.set(x, "snapshot", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DelimiterInfo...
   */
 @js.native
-trait IDelimiterInfo extends js.Object {
+trait IDelimiterInfo extends StObject {
   
   /**
     * Is set to true if multiple spaces are used to separate the values.
@@ -43,30 +44,18 @@ object IDelimiterInfo {
   }
   
   @scala.inline
-  implicit class IDelimiterInfoOps[Self <: IDelimiterInfo] (val x: Self) extends AnyVal {
+  implicit class IDelimiterInfoMutableBuilder[Self <: IDelimiterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQIsMultiple(value: Boolean): Self = StObject.set(x, "qIsMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQNumber(value: Double): Self = StObject.set(x, "qNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsMultiple(value: Boolean): Self = this.set("qIsMultiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQNumber(value: Double): Self = this.set("qNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQScriptCode(value: String): Self = this.set("qScriptCode", value.asInstanceOf[js.Any])
+    def setQScriptCode(value: String): Self = StObject.set(x, "qScriptCode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.DefaultProxy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreserveQueryParameters extends js.Object {
+trait PreserveQueryParameters extends StObject {
   
   var headers: js.UndefOr[js.Any] = js.native
   
@@ -35,72 +36,60 @@ object PreserveQueryParameters {
   }
   
   @scala.inline
-  implicit class PreserveQueryParametersOps[Self <: PreserveQueryParameters] (val x: Self) extends AnyVal {
+  implicit class PreserveQueryParametersMutableBuilder[Self <: PreserveQueryParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreserveQueryParameters(value: Boolean): Self = StObject.set(x, "preserveQueryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPreserveQueryParametersUndefined: Self = StObject.set(x, "preserveQueryParameters", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveQueryParameters(value: Boolean): Self = this.set("preserveQueryParameters", value.asInstanceOf[js.Any])
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def deletePreserveQueryParameters: Self = this.set("preserveQueryParameters", js.undefined)
+    def setQueryParameters(value: js.Any): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxy(value: DefaultProxy): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
     @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: js.Any): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
+    def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: typings.std.Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRetryCallback(value: js.Any): Self = StObject.set(x, "retryCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryAttempts(value: Double): Self = this.set("retryAttempts", value.asInstanceOf[js.Any])
+    def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)
     
     @scala.inline
-    def deleteRetryAttempts: Self = this.set("retryAttempts", js.undefined)
+    def setTemplateValues(value: js.Any): Self = StObject.set(x, "templateValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryCallback(value: js.Any): Self = this.set("retryCallback", value.asInstanceOf[js.Any])
+    def setTemplateValuesUndefined: Self = StObject.set(x, "templateValues", js.undefined)
     
     @scala.inline
-    def deleteRetryCallback: Self = this.set("retryCallback", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateValues(value: js.Any): Self = this.set("templateValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateValues: Self = this.set("templateValues", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

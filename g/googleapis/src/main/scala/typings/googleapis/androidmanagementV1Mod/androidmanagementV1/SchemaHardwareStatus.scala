@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * available in hardwareInfo to determine hardware health.
   */
 @js.native
-trait SchemaHardwareStatus extends js.Object {
+trait SchemaHardwareStatus extends StObject {
   
   /**
     * Current battery temperatures in Celsius for each battery on the device.
@@ -58,78 +59,66 @@ object SchemaHardwareStatus {
   }
   
   @scala.inline
-  implicit class SchemaHardwareStatusOps[Self <: SchemaHardwareStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaHardwareStatusMutableBuilder[Self <: SchemaHardwareStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatteryTemperatures(value: js.Array[Double]): Self = StObject.set(x, "batteryTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatteryTemperaturesUndefined: Self = StObject.set(x, "batteryTemperatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatteryTemperaturesVarargs(value: Double*): Self = StObject.set(x, "batteryTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setBatteryTemperaturesVarargs(value: Double*): Self = this.set("batteryTemperatures", js.Array(value :_*))
+    def setCpuTemperatures(value: js.Array[Double]): Self = StObject.set(x, "cpuTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatteryTemperatures(value: js.Array[Double]): Self = this.set("batteryTemperatures", value.asInstanceOf[js.Any])
+    def setCpuTemperaturesUndefined: Self = StObject.set(x, "cpuTemperatures", js.undefined)
     
     @scala.inline
-    def deleteBatteryTemperatures: Self = this.set("batteryTemperatures", js.undefined)
+    def setCpuTemperaturesVarargs(value: Double*): Self = StObject.set(x, "cpuTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setCpuTemperaturesVarargs(value: Double*): Self = this.set("cpuTemperatures", js.Array(value :_*))
+    def setCpuUsages(value: js.Array[Double]): Self = StObject.set(x, "cpuUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuTemperatures(value: js.Array[Double]): Self = this.set("cpuTemperatures", value.asInstanceOf[js.Any])
+    def setCpuUsagesUndefined: Self = StObject.set(x, "cpuUsages", js.undefined)
     
     @scala.inline
-    def deleteCpuTemperatures: Self = this.set("cpuTemperatures", js.undefined)
+    def setCpuUsagesVarargs(value: Double*): Self = StObject.set(x, "cpuUsages", js.Array(value :_*))
     
     @scala.inline
-    def setCpuUsagesVarargs(value: Double*): Self = this.set("cpuUsages", js.Array(value :_*))
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuUsages(value: js.Array[Double]): Self = this.set("cpuUsages", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCpuUsages: Self = this.set("cpuUsages", js.undefined)
+    def setFanSpeeds(value: js.Array[Double]): Self = StObject.set(x, "fanSpeeds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setFanSpeedsUndefined: Self = StObject.set(x, "fanSpeeds", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setFanSpeedsVarargs(value: Double*): Self = StObject.set(x, "fanSpeeds", js.Array(value :_*))
     
     @scala.inline
-    def setFanSpeedsVarargs(value: Double*): Self = this.set("fanSpeeds", js.Array(value :_*))
+    def setGpuTemperatures(value: js.Array[Double]): Self = StObject.set(x, "gpuTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFanSpeeds(value: js.Array[Double]): Self = this.set("fanSpeeds", value.asInstanceOf[js.Any])
+    def setGpuTemperaturesUndefined: Self = StObject.set(x, "gpuTemperatures", js.undefined)
     
     @scala.inline
-    def deleteFanSpeeds: Self = this.set("fanSpeeds", js.undefined)
+    def setGpuTemperaturesVarargs(value: Double*): Self = StObject.set(x, "gpuTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setGpuTemperaturesVarargs(value: Double*): Self = this.set("gpuTemperatures", js.Array(value :_*))
+    def setSkinTemperatures(value: js.Array[Double]): Self = StObject.set(x, "skinTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpuTemperatures(value: js.Array[Double]): Self = this.set("gpuTemperatures", value.asInstanceOf[js.Any])
+    def setSkinTemperaturesUndefined: Self = StObject.set(x, "skinTemperatures", js.undefined)
     
     @scala.inline
-    def deleteGpuTemperatures: Self = this.set("gpuTemperatures", js.undefined)
-    
-    @scala.inline
-    def setSkinTemperaturesVarargs(value: Double*): Self = this.set("skinTemperatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkinTemperatures(value: js.Array[Double]): Self = this.set("skinTemperatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkinTemperatures: Self = this.set("skinTemperatures", js.undefined)
+    def setSkinTemperaturesVarargs(value: Double*): Self = StObject.set(x, "skinTemperatures", js.Array(value :_*))
   }
 }

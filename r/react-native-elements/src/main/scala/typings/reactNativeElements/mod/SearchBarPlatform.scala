@@ -1,5 +1,6 @@
 package typings.reactNativeElements.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object SearchBarPlatform {
   }
   
   @scala.inline
-  implicit class SearchBarPlatformOps[Self <: SearchBarPlatform] (val x: Self) extends AnyVal {
+  implicit class SearchBarPlatformMutableBuilder[Self <: SearchBarPlatform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnCancel(value: () => Unit): Self = this.set("onCancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
   }
 }

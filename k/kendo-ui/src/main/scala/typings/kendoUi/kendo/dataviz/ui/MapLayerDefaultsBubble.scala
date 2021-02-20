@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapLayerDefaultsBubble extends js.Object {
+trait MapLayerDefaultsBubble extends StObject {
   
   var attribution: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object MapLayerDefaultsBubble {
   }
   
   @scala.inline
-  implicit class MapLayerDefaultsBubbleOps[Self <: MapLayerDefaultsBubble] (val x: Self) extends AnyVal {
+  implicit class MapLayerDefaultsBubbleMutableBuilder[Self <: MapLayerDefaultsBubble] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setStyle(value: MapLayerDefaultsBubbleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setSymbol(value: String | js.Function): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: MapLayerDefaultsBubbleStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setSymbol(value: String | js.Function): Self = this.set("symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

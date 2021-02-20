@@ -7,13 +7,14 @@ import typings.officeJs.officeJsStrings.NoFill
 import typings.officeJs.officeJsStrings.Pattern
 import typings.officeJs.officeJsStrings.PictureAndTexture
 import typings.officeJs.officeJsStrings.Solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
 @js.native
-trait ShapeFillData extends js.Object {
+trait ShapeFillData extends StObject {
   
   /**
     *
@@ -48,36 +49,24 @@ object ShapeFillData {
   }
   
   @scala.inline
-  implicit class ShapeFillDataOps[Self <: ShapeFillData] (val x: Self) extends AnyVal {
+  implicit class ShapeFillDataMutableBuilder[Self <: ShapeFillData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundColor(value: String): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
+    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     
     @scala.inline
-    def deleteForegroundColor: Self = this.set("foregroundColor", js.undefined)
+    def setType(value: ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparency(value: Double): Self = this.set("transparency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparency: Self = this.set("transparency", js.undefined)
-    
-    @scala.inline
-    def setType(value: ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

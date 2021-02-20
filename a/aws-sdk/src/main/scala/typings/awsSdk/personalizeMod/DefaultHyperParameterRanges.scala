@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultHyperParameterRanges extends js.Object {
+trait DefaultHyperParameterRanges extends StObject {
   
   /**
     * The categorical hyperparameters and their default ranges.
@@ -31,45 +32,33 @@ object DefaultHyperParameterRanges {
   }
   
   @scala.inline
-  implicit class DefaultHyperParameterRangesOps[Self <: DefaultHyperParameterRanges] (val x: Self) extends AnyVal {
+  implicit class DefaultHyperParameterRangesMutableBuilder[Self <: DefaultHyperParameterRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalHyperParameterRanges(value: DefaultCategoricalHyperParameterRanges): Self = StObject.set(x, "categoricalHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalHyperParameterRangesUndefined: Self = StObject.set(x, "categoricalHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoricalHyperParameterRangesVarargs(value: DefaultCategoricalHyperParameterRange*): Self = StObject.set(x, "categoricalHyperParameterRanges", js.Array(value :_*))
     
     @scala.inline
-    def setCategoricalHyperParameterRangesVarargs(value: DefaultCategoricalHyperParameterRange*): Self = this.set("categoricalHyperParameterRanges", js.Array(value :_*))
+    def setContinuousHyperParameterRanges(value: DefaultContinuousHyperParameterRanges): Self = StObject.set(x, "continuousHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalHyperParameterRanges(value: DefaultCategoricalHyperParameterRanges): Self = this.set("categoricalHyperParameterRanges", value.asInstanceOf[js.Any])
+    def setContinuousHyperParameterRangesUndefined: Self = StObject.set(x, "continuousHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def deleteCategoricalHyperParameterRanges: Self = this.set("categoricalHyperParameterRanges", js.undefined)
+    def setContinuousHyperParameterRangesVarargs(value: DefaultContinuousHyperParameterRange*): Self = StObject.set(x, "continuousHyperParameterRanges", js.Array(value :_*))
     
     @scala.inline
-    def setContinuousHyperParameterRangesVarargs(value: DefaultContinuousHyperParameterRange*): Self = this.set("continuousHyperParameterRanges", js.Array(value :_*))
+    def setIntegerHyperParameterRanges(value: DefaultIntegerHyperParameterRanges): Self = StObject.set(x, "integerHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousHyperParameterRanges(value: DefaultContinuousHyperParameterRanges): Self = this.set("continuousHyperParameterRanges", value.asInstanceOf[js.Any])
+    def setIntegerHyperParameterRangesUndefined: Self = StObject.set(x, "integerHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def deleteContinuousHyperParameterRanges: Self = this.set("continuousHyperParameterRanges", js.undefined)
-    
-    @scala.inline
-    def setIntegerHyperParameterRangesVarargs(value: DefaultIntegerHyperParameterRange*): Self = this.set("integerHyperParameterRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setIntegerHyperParameterRanges(value: DefaultIntegerHyperParameterRanges): Self = this.set("integerHyperParameterRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegerHyperParameterRanges: Self = this.set("integerHyperParameterRanges", js.undefined)
+    def setIntegerHyperParameterRangesVarargs(value: DefaultIntegerHyperParameterRange*): Self = StObject.set(x, "integerHyperParameterRanges", js.Array(value :_*))
   }
 }

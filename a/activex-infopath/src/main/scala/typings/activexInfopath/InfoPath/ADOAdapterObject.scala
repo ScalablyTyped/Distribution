@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ADOAdapterObject extends js.Object {
+trait ADOAdapterObject extends StObject {
   
   def BuildSQLFromXMLNodes(pXmlNode: IXMLDOMNode): String = js.native
   
@@ -50,48 +51,36 @@ object ADOAdapterObject {
   }
   
   @scala.inline
-  implicit class ADOAdapterObjectOps[Self <: ADOAdapterObject] (val x: Self) extends AnyVal {
+  implicit class ADOAdapterObjectMutableBuilder[Self <: ADOAdapterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildSQLFromXMLNodes(value: IXMLDOMNode => String): Self = StObject.set(x, "BuildSQLFromXMLNodes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildSQLFromXMLNodes(value: IXMLDOMNode => String): Self = this.set("BuildSQLFromXMLNodes", js.Any.fromFunction1(value))
+    def setInfoPathDotADOAdapterObject_typekey(value: ADOAdapterObject): Self = StObject.set(x, "InfoPath.ADOAdapterObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: String): Self = this.set("Connection", value.asInstanceOf[js.Any])
+    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInfoPathDotADOAdapterObject_typekey(value: ADOAdapterObject): Self = this.set("InfoPath.ADOAdapterObject_typekey", value.asInstanceOf[js.Any])
+    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("Query", js.Any.fromFunction0(value))
+    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryAllowed(value: Boolean): Self = this.set("QueryAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = this.set("Submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = this.set("SubmitAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
   }
 }

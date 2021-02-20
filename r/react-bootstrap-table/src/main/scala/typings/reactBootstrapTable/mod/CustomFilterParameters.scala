@@ -1,11 +1,12 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomFilterParameters[Params /* <: js.Object */] extends js.Object {
+trait CustomFilterParameters[Params /* <: js.Object */] extends StObject {
   
   def callback(cell: js.Any, params: Params): Boolean = js.native
   
@@ -20,24 +21,12 @@ object CustomFilterParameters {
   }
   
   @scala.inline
-  implicit class CustomFilterParametersOps[Self <: CustomFilterParameters[_], Params /* <: js.Object */] (val x: Self with CustomFilterParameters[Params]) extends AnyVal {
+  implicit class CustomFilterParametersMutableBuilder[Self <: CustomFilterParameters[_], Params /* <: js.Object */] (val x: Self with CustomFilterParameters[Params]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: (js.Any, Params) => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCallback(value: (js.Any, Params) => Boolean): Self = this.set("callback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCallbackParameters(value: Params): Self = this.set("callbackParameters", value.asInstanceOf[js.Any])
+    def setCallbackParameters(value: Params): Self = StObject.set(x, "callbackParameters", value.asInstanceOf[js.Any])
   }
 }

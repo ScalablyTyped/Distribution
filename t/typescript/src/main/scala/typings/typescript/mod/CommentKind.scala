@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.SingleLineCommentTrivia
   - typings.typescript.mod.SyntaxKind.MultiLineCommentTrivia
 */
-trait CommentKind extends js.Object
+trait CommentKind extends StObject

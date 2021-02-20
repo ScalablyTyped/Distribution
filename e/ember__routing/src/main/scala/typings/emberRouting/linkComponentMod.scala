@@ -1,12 +1,15 @@
 package typings.emberRouting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/routing/link-component", JSImport.Namespace)
-@js.native
-object linkComponentMod extends js.Object {
+object linkComponentMod {
+  
+  @JSImport("@ember/routing/link-component", JSImport.Default)
+  @js.native
+  class default () extends LinkComponent
   
   @js.native
   trait LinkComponent
@@ -49,7 +52,4 @@ object linkComponentMod extends js.Object {
       */
     var title: String | Null = js.native
   }
-  
-  @js.native
-  class default () extends LinkComponent
 }

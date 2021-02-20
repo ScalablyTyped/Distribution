@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWorkspacesRequest extends js.Object {
+trait CreateWorkspacesRequest extends StObject {
   
   /**
     * The WorkSpaces to create. You can specify up to 25 WorkSpaces.
@@ -21,24 +22,12 @@ object CreateWorkspacesRequest {
   }
   
   @scala.inline
-  implicit class CreateWorkspacesRequestOps[Self <: CreateWorkspacesRequest] (val x: Self) extends AnyVal {
+  implicit class CreateWorkspacesRequestMutableBuilder[Self <: CreateWorkspacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkspaces(value: WorkspaceRequestList): Self = StObject.set(x, "Workspaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkspacesVarargs(value: WorkspaceRequest*): Self = this.set("Workspaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkspaces(value: WorkspaceRequestList): Self = this.set("Workspaces", value.asInstanceOf[js.Any])
+    def setWorkspacesVarargs(value: WorkspaceRequest*): Self = StObject.set(x, "Workspaces", js.Array(value :_*))
   }
 }

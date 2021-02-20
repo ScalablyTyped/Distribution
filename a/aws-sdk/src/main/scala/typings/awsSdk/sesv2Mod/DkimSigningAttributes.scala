@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DkimSigningAttributes extends js.Object {
+trait DkimSigningAttributes extends StObject {
   
   /**
     * A private key that's used to generate a DKIM signature. The private key must use 1024-bit RSA encryption, and must be encoded using base64 encoding.
@@ -26,24 +27,12 @@ object DkimSigningAttributes {
   }
   
   @scala.inline
-  implicit class DkimSigningAttributesOps[Self <: DkimSigningAttributes] (val x: Self) extends AnyVal {
+  implicit class DkimSigningAttributesMutableBuilder[Self <: DkimSigningAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainSigningPrivateKey(value: PrivateKey): Self = StObject.set(x, "DomainSigningPrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainSigningPrivateKey(value: PrivateKey): Self = this.set("DomainSigningPrivateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomainSigningSelector(value: Selector): Self = this.set("DomainSigningSelector", value.asInstanceOf[js.Any])
+    def setDomainSigningSelector(value: Selector): Self = StObject.set(x, "DomainSigningSelector", value.asInstanceOf[js.Any])
   }
 }

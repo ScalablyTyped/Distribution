@@ -1,11 +1,12 @@
 package typings.googleapis.surveysV2Mod.surveysV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaResultsMask extends js.Object {
+trait SchemaResultsMask extends StObject {
   
   var fields: js.UndefOr[js.Array[SchemaFieldMask]] = js.native
   
@@ -20,33 +21,21 @@ object SchemaResultsMask {
   }
   
   @scala.inline
-  implicit class SchemaResultsMaskOps[Self <: SchemaResultsMask] (val x: Self) extends AnyVal {
+  implicit class SchemaResultsMaskMutableBuilder[Self <: SchemaResultsMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[SchemaFieldMask]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: SchemaFieldMask*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: SchemaFieldMask*): Self = this.set("fields", js.Array(value :_*))
+    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[SchemaFieldMask]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
-    
-    @scala.inline
-    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
   }
 }

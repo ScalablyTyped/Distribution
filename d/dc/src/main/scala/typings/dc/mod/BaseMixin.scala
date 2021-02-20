@@ -10,12 +10,13 @@ import typings.dc.dcStrings.preRender
 import typings.dc.dcStrings.pretransition
 import typings.dc.dcStrings.renderlet
 import typings.dc.dcStrings.zoomed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseMixin[T] extends js.Object {
+trait BaseMixin[T] extends StObject {
   
   def addFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def addFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): T = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity extends js.Object {
+trait Entity extends StObject {
   
   /**
     * The entity ID. If you do not know the entityId, you can pass unknown, which is areserved string literal.
@@ -26,24 +27,12 @@ object Entity {
   }
   
   @scala.inline
-  implicit class EntityOps[Self <: Entity] (val x: Self) extends AnyVal {
+  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityId(value: identifier): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntityId(value: identifier): Self = this.set("entityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.cylinderBufferGeometryMod.CylinderBufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/ConeBufferGeometry", JSImport.Namespace)
-@js.native
-object coneBufferGeometryMod extends js.Object {
+object coneBufferGeometryMod {
   
+  @JSImport("three/src/geometries/ConeBufferGeometry", "ConeBufferGeometry")
   @js.native
   class ConeBufferGeometry protected () extends CylinderBufferGeometry {
     /**

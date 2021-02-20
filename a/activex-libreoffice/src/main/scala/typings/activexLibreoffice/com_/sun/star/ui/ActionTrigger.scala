@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import typings.activexLibreoffice.com_.sun.star.awt.XBitmap
 import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Common examples for such triggers are menu entries or toolbar icons.
   */
 @js.native
-trait ActionTrigger extends js.Object {
+trait ActionTrigger extends StObject {
   
   /** contains the command URL for the menu entry. */
   var CommandURL: String = js.native
@@ -38,33 +39,21 @@ object ActionTrigger {
   }
   
   @scala.inline
-  implicit class ActionTriggerOps[Self <: ActionTrigger] (val x: Self) extends AnyVal {
+  implicit class ActionTriggerMutableBuilder[Self <: ActionTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandURL(value: String): Self = StObject.set(x, "CommandURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: XBitmap): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandURL(value: String): Self = this.set("CommandURL", value.asInstanceOf[js.Any])
+    def setSubContainer(value: XIndexContainer): Self = StObject.set(x, "SubContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImage(value: XBitmap): Self = this.set("Image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubContainer(value: XIndexContainer): Self = this.set("SubContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

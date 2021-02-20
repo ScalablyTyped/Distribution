@@ -3,14 +3,14 @@ package typings.three
 import typings.std.PannerNode
 import typings.three.audioListenerMod.AudioListener
 import typings.three.audioMod.Audio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/audio/PositionalAudio", JSImport.Namespace)
-@js.native
-object positionalAudioMod extends js.Object {
+object positionalAudioMod {
   
+  @JSImport("three/src/audio/PositionalAudio", "PositionalAudio")
   @js.native
   class PositionalAudio protected () extends Audio[PannerNode] {
     def this(listener: AudioListener) = this()

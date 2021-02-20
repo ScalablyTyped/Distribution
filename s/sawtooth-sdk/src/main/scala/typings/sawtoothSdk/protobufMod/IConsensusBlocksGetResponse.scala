@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ConsensusBlocksGetResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusBlocksGetResponse extends js.Object {
+trait IConsensusBlocksGetResponse extends StObject {
   
   /** ConsensusBlocksGetResponse blocks */
   var blocks: js.UndefOr[js.Array[IConsensusBlock] | Null] = js.native
@@ -23,39 +24,27 @@ object IConsensusBlocksGetResponse {
   }
   
   @scala.inline
-  implicit class IConsensusBlocksGetResponseOps[Self <: IConsensusBlocksGetResponse] (val x: Self) extends AnyVal {
+  implicit class IConsensusBlocksGetResponseMutableBuilder[Self <: IConsensusBlocksGetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocks(value: js.Array[IConsensusBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksNull: Self = StObject.set(x, "blocks", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
     @scala.inline
-    def setBlocksVarargs(value: IConsensusBlock*): Self = this.set("blocks", js.Array(value :_*))
+    def setBlocksVarargs(value: IConsensusBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocks(value: js.Array[IConsensusBlock]): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlocks: Self = this.set("blocks", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setBlocksNull: Self = this.set("blocks", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

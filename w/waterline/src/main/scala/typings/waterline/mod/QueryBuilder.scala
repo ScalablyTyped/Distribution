@@ -16,13 +16,14 @@ import typings.std.Map
 import typings.std.ReturnType
 import typings.waterline.anon.Limit
 import typings.waterline.waterlineStrings.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined waterline.waterline.WaterlinePromise<T> & {where (condition : any): waterline.waterline.QueryBuilder<T>, limit (lim : number): waterline.waterline.QueryBuilder<T>, skip (num : number): waterline.waterline.QueryBuilder<T>, sort (criteria : string | {[attribute: string] : string} | std.Array<{[attribute: string] : string}>): waterline.waterline.QueryBuilder<T>, paginate (pagination : {  page :number,   limit :number} | undefined): waterline.waterline.QueryBuilder<T>, populate (association : string): waterline.waterline.QueryBuilder<T>, populate (association : string, filter : any): waterline.waterline.QueryBuilder<T>, groupBy (attrOrExpr : string): waterline.waterline.QueryBuilder<T>, max (attribute : string): waterline.waterline.QueryBuilder<T>, min (attribute : string): waterline.waterline.QueryBuilder<T>, sum (attribute : string): waterline.waterline.QueryBuilder<T>, average (attribute : string): waterline.waterline.QueryBuilder<T>, meta (options : any): waterline.waterline.QueryBuilder<T>} */
 @js.native
-trait QueryBuilder[T] extends js.Object {
+trait QueryBuilder[T] extends StObject {
   
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -2991,7 +2992,7 @@ trait QueryBuilder[T] extends js.Object {
   
   def thenThrow(reason: Error): Bluebird[scala.Nothing] = js.native
   
-   // For simpler signature help.
+  // For simpler signature help.
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](): Bluebird[TResult1 | TResult2] = js.native
   @JSName("then")

@@ -1,6 +1,7 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for the `CreateSnapshot` method.
   */
 @js.native
-trait SchemaCreateSnapshotRequest extends js.Object {
+trait SchemaCreateSnapshotRequest extends StObject {
   
   /**
     * See &lt;a
@@ -39,30 +40,18 @@ object SchemaCreateSnapshotRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateSnapshotRequestOps[Self <: SchemaCreateSnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateSnapshotRequestMutableBuilder[Self <: SchemaCreateSnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

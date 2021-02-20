@@ -5,14 +5,35 @@ import typings.materialTabs.anon.ACTIVE
 import typings.materialTabs.anon.PartialMDCTabAdapter
 import typings.materialTabs.anon.SELECTEDEVENT
 import typings.materialTabs.tabAdapterMod.MDCTabAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tabs/tab/foundation", JSImport.Namespace)
-@js.native
-object tabFoundationMod extends js.Object {
+object tabFoundationMod {
   
+  @JSImport("@material/tabs/tab/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCTabFoundation {
+    def this(adapter: PartialMDCTabAdapter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@material/tabs/tab/foundation", "default.cssClasses")
+    @js.native
+    val cssClasses: ACTIVE = js.native
+    
+    @JSImport("@material/tabs/tab/foundation", "default.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCTabAdapter = js.native
+    
+    @JSImport("@material/tabs/tab/foundation", "default.strings")
+    @js.native
+    val strings: SELECTEDEVENT = js.native
+  }
+  
+  @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation")
   @js.native
   class MDCTabFoundation () extends MDCFoundation[MDCTabAdapter] {
     def this(adapter: PartialMDCTabAdapter) = this()
@@ -32,28 +53,18 @@ object tabFoundationMod extends js.Object {
     def setPreventDefaultOnClick(preventDefaultOnClick: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCTabFoundation extends js.Object {
+  object MDCTabFoundation {
     
+    @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation.cssClasses")
+    @js.native
     val cssClasses: ACTIVE = js.native
     
+    @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation.defaultAdapter")
+    @js.native
     val defaultAdapter: MDCTabAdapter = js.native
     
-    val strings: SELECTEDEVENT = js.native
-  }
-  
-  @js.native
-  class default () extends MDCTabFoundation {
-    def this(adapter: PartialMDCTabAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    val cssClasses: ACTIVE = js.native
-    
-    val defaultAdapter: MDCTabAdapter = js.native
-    
+    @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation.strings")
+    @js.native
     val strings: SELECTEDEVENT = js.native
   }
 }

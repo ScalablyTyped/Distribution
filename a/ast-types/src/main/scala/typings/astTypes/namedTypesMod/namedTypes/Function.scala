@@ -1,6 +1,5 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
-import org.scalablytyped.runtime.TopLevel
 import typings.astTypes.kindsMod.BlockStatementKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.FlowPredicateKind
@@ -10,7 +9,7 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
 import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
-import typings.astTypes.typesMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +39,3 @@ trait Function extends Node {
   
   var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.native
 }
-@JSImport("ast-types/gen/namedTypes", "namedTypes.Function")
-@js.native
-object Function extends TopLevel[Type[Function]]

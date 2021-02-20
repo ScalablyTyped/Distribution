@@ -1,5 +1,6 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,39 +32,27 @@ object RuleNewProps {
   }
   
   @scala.inline
-  implicit class RuleNewPropsOps[Self <: RuleNewProps] (val x: Self) extends AnyVal {
+  implicit class RuleNewPropsMutableBuilder[Self <: RuleNewProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRaws(value: RuleRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaws(value: RuleRaws): Self = this.set("raws", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteRaws: Self = this.set("raws", js.undefined)
+    def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
-    
-    @scala.inline
-    def setSelectorsVarargs(value: String*): Self = this.set("selectors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectors(value: js.Array[String]): Self = this.set("selectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

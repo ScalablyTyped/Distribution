@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class KeyboardDeliveryInterceptor ()
   extends typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor
-/* static members */
-@JSGlobal("Windows.UI.Input.KeyboardDeliveryInterceptor")
-@js.native
-object KeyboardDeliveryInterceptor extends js.Object {
+object KeyboardDeliveryInterceptor {
   
   /**
     * Retrieves a KeyboardDeliveryInterceptor object associated with the current app view.
     * @return The KeyboardDeliveryInterceptor object associated with the current app.
     */
+  /* static member */
+  @JSGlobal("Windows.UI.Input.KeyboardDeliveryInterceptor.getForCurrentView")
+  @js.native
   def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor = js.native
 }

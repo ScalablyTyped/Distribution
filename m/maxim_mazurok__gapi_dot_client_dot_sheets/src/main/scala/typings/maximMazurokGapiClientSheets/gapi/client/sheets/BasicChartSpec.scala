@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasicChartSpec extends js.Object {
+trait BasicChartSpec extends StObject {
   
   /** The axis on the chart. */
   var axis: js.UndefOr[js.Array[BasicChartAxis]] = js.native
@@ -55,93 +56,81 @@ object BasicChartSpec {
   }
   
   @scala.inline
-  implicit class BasicChartSpecOps[Self <: BasicChartSpec] (val x: Self) extends AnyVal {
+  implicit class BasicChartSpecMutableBuilder[Self <: BasicChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: js.Array[BasicChartAxis]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value :_*))
     
     @scala.inline
-    def setAxisVarargs(value: BasicChartAxis*): Self = this.set("axis", js.Array(value :_*))
+    def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: js.Array[BasicChartAxis]): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setCompareMode(value: String): Self = StObject.set(x, "compareMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartType(value: String): Self = this.set("chartType", value.asInstanceOf[js.Any])
+    def setCompareModeUndefined: Self = StObject.set(x, "compareMode", js.undefined)
     
     @scala.inline
-    def deleteChartType: Self = this.set("chartType", js.undefined)
+    def setDomains(value: js.Array[BasicChartDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareMode(value: String): Self = this.set("compareMode", value.asInstanceOf[js.Any])
+    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
     @scala.inline
-    def deleteCompareMode: Self = this.set("compareMode", js.undefined)
+    def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
     @scala.inline
-    def setDomainsVarargs(value: BasicChartDomain*): Self = this.set("domains", js.Array(value :_*))
+    def setHeaderCount(value: Double): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomains(value: js.Array[BasicChartDomain]): Self = this.set("domains", value.asInstanceOf[js.Any])
+    def setHeaderCountUndefined: Self = StObject.set(x, "headerCount", js.undefined)
     
     @scala.inline
-    def deleteDomains: Self = this.set("domains", js.undefined)
+    def setInterpolateNulls(value: Boolean): Self = StObject.set(x, "interpolateNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCount(value: Double): Self = this.set("headerCount", value.asInstanceOf[js.Any])
+    def setInterpolateNullsUndefined: Self = StObject.set(x, "interpolateNulls", js.undefined)
     
     @scala.inline
-    def deleteHeaderCount: Self = this.set("headerCount", js.undefined)
+    def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolateNulls(value: Boolean): Self = this.set("interpolateNulls", value.asInstanceOf[js.Any])
+    def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
     @scala.inline
-    def deleteInterpolateNulls: Self = this.set("interpolateNulls", js.undefined)
+    def setLineSmoothing(value: Boolean): Self = StObject.set(x, "lineSmoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendPosition(value: String): Self = this.set("legendPosition", value.asInstanceOf[js.Any])
+    def setLineSmoothingUndefined: Self = StObject.set(x, "lineSmoothing", js.undefined)
     
     @scala.inline
-    def deleteLegendPosition: Self = this.set("legendPosition", js.undefined)
+    def setSeries(value: js.Array[BasicChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSmoothing(value: Boolean): Self = this.set("lineSmoothing", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteLineSmoothing: Self = this.set("lineSmoothing", js.undefined)
+    def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSeriesVarargs(value: BasicChartSeries*): Self = this.set("series", js.Array(value :_*))
+    def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[BasicChartSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackedType(value: String): Self = this.set("stackedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackedType: Self = this.set("stackedType", js.undefined)
-    
-    @scala.inline
-    def setThreeDimensional(value: Boolean): Self = this.set("threeDimensional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreeDimensional: Self = this.set("threeDimensional", js.undefined)
+    def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
   }
 }

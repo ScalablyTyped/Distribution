@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,114 +85,102 @@ object HumanName {
   }
   
   @scala.inline
-  implicit class HumanNameOps[Self <: HumanName] (val x: Self) extends AnyVal {
+  implicit class HumanNameMutableBuilder[Self <: HumanName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGiven(value: js.Array[String]): Self = StObject.set(x, "given", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_family(value: Element): Self = this.set("_family", value.asInstanceOf[js.Any])
+    def setGivenUndefined: Self = StObject.set(x, "given", js.undefined)
     
     @scala.inline
-    def delete_family: Self = this.set("_family", js.undefined)
+    def setGivenVarargs(value: String*): Self = StObject.set(x, "given", js.Array(value :_*))
     
     @scala.inline
-    def set_givenVarargs(value: Element*): Self = this.set("_given", js.Array(value :_*))
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_given(value: js.Array[Element]): Self = this.set("_given", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def delete_given: Self = this.set("_given", js.undefined)
+    def setPrefix(value: js.Array[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_prefixVarargs(value: Element*): Self = this.set("_prefix", js.Array(value :_*))
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def set_prefix(value: js.Array[Element]): Self = this.set("_prefix", value.asInstanceOf[js.Any])
+    def setPrefixVarargs(value: String*): Self = StObject.set(x, "prefix", js.Array(value :_*))
     
     @scala.inline
-    def delete_prefix: Self = this.set("_prefix", js.undefined)
+    def setSuffix(value: js.Array[String]): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_suffixVarargs(value: Element*): Self = this.set("_suffix", js.Array(value :_*))
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
     @scala.inline
-    def set_suffix(value: js.Array[Element]): Self = this.set("_suffix", value.asInstanceOf[js.Any])
+    def setSuffixVarargs(value: String*): Self = StObject.set(x, "suffix", js.Array(value :_*))
     
     @scala.inline
-    def delete_suffix: Self = this.set("_suffix", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def delete_text: Self = this.set("_text", js.undefined)
+    def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_use(value: Element): Self = this.set("_use", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def delete_use: Self = this.set("_use", js.undefined)
+    def set_family(value: Element): Self = StObject.set(x, "_family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def set_familyUndefined: Self = StObject.set(x, "_family", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def set_given(value: js.Array[Element]): Self = StObject.set(x, "_given", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenVarargs(value: String*): Self = this.set("given", js.Array(value :_*))
+    def set_givenUndefined: Self = StObject.set(x, "_given", js.undefined)
     
     @scala.inline
-    def setGiven(value: js.Array[String]): Self = this.set("given", value.asInstanceOf[js.Any])
+    def set_givenVarargs(value: Element*): Self = StObject.set(x, "_given", js.Array(value :_*))
     
     @scala.inline
-    def deleteGiven: Self = this.set("given", js.undefined)
+    def set_prefix(value: js.Array[Element]): Self = StObject.set(x, "_prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def set_prefixUndefined: Self = StObject.set(x, "_prefix", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_prefixVarargs(value: Element*): Self = StObject.set(x, "_prefix", js.Array(value :_*))
     
     @scala.inline
-    def setPrefixVarargs(value: String*): Self = this.set("prefix", js.Array(value :_*))
+    def set_suffix(value: js.Array[Element]): Self = StObject.set(x, "_suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: js.Array[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def set_suffixUndefined: Self = StObject.set(x, "_suffix", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def set_suffixVarargs(value: Element*): Self = StObject.set(x, "_suffix", js.Array(value :_*))
     
     @scala.inline
-    def setSuffixVarargs(value: String*): Self = this.set("suffix", js.Array(value :_*))
+    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuffix(value: js.Array[String]): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
     
     @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUse(value: code): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
+    def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
   }
 }

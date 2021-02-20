@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * precedence.
   */
 @js.native
-trait SchemaSecurityContext extends js.Object {
+trait SchemaSecurityContext extends StObject {
   
   /**
     * AllowPrivilegeEscalation controls whether a process can gain more
@@ -86,66 +87,54 @@ object SchemaSecurityContext {
   }
   
   @scala.inline
-  implicit class SchemaSecurityContextOps[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityContextMutableBuilder[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPrivilegeEscalation(value: Boolean): Self = StObject.set(x, "allowPrivilegeEscalation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPrivilegeEscalationUndefined: Self = StObject.set(x, "allowPrivilegeEscalation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilities(value: SchemaCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPrivilegeEscalation(value: Boolean): Self = this.set("allowPrivilegeEscalation", value.asInstanceOf[js.Any])
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def deleteAllowPrivilegeEscalation: Self = this.set("allowPrivilegeEscalation", js.undefined)
+    def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: SchemaCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setPrivilegedUndefined: Self = StObject.set(x, "privileged", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setReadOnlyRootFilesystem(value: Boolean): Self = StObject.set(x, "readOnlyRootFilesystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivileged(value: Boolean): Self = this.set("privileged", value.asInstanceOf[js.Any])
+    def setReadOnlyRootFilesystemUndefined: Self = StObject.set(x, "readOnlyRootFilesystem", js.undefined)
     
     @scala.inline
-    def deletePrivileged: Self = this.set("privileged", js.undefined)
+    def setRunAsGroup(value: String): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnlyRootFilesystem(value: Boolean): Self = this.set("readOnlyRootFilesystem", value.asInstanceOf[js.Any])
+    def setRunAsGroupUndefined: Self = StObject.set(x, "runAsGroup", js.undefined)
     
     @scala.inline
-    def deleteReadOnlyRootFilesystem: Self = this.set("readOnlyRootFilesystem", js.undefined)
+    def setRunAsNonRoot(value: Boolean): Self = StObject.set(x, "runAsNonRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsGroup(value: String): Self = this.set("runAsGroup", value.asInstanceOf[js.Any])
+    def setRunAsNonRootUndefined: Self = StObject.set(x, "runAsNonRoot", js.undefined)
     
     @scala.inline
-    def deleteRunAsGroup: Self = this.set("runAsGroup", js.undefined)
+    def setRunAsUser(value: String): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsNonRoot(value: Boolean): Self = this.set("runAsNonRoot", value.asInstanceOf[js.Any])
+    def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
     
     @scala.inline
-    def deleteRunAsNonRoot: Self = this.set("runAsNonRoot", js.undefined)
+    def setSeLinuxOptions(value: SchemaSELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsUser(value: String): Self = this.set("runAsUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunAsUser: Self = this.set("runAsUser", js.undefined)
-    
-    @scala.inline
-    def setSeLinuxOptions(value: SchemaSELinuxOptions): Self = this.set("seLinuxOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeLinuxOptions: Self = this.set("seLinuxOptions", js.undefined)
+    def setSeLinuxOptionsUndefined: Self = StObject.set(x, "seLinuxOptions", js.undefined)
   }
 }

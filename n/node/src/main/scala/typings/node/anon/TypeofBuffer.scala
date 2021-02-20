@@ -1,20 +1,17 @@
 package typings.node.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
 import typings.std.ArrayBuffer
 import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofBuffer
-  extends Instantiable1[/* str */ String, typings.node.Buffer]
-     with Instantiable2[/* str */ String, /* encoding */ BufferEncoding, typings.node.Buffer] {
+trait TypeofBuffer extends StObject {
   
   /**
     * Allocates a new buffer of {size} octets.
@@ -24,6 +21,7 @@ trait TypeofBuffer
     *    If parameter is omitted, buffer will be filled with zeros.
     * @param encoding encoding used for call to buf.fill while initalizing
     */
+  /* static member */
   def alloc(size: Double): typings.node.Buffer = js.native
   def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: BufferEncoding): typings.node.Buffer = js.native
   def alloc(size: Double, fill: String): typings.node.Buffer = js.native
@@ -39,6 +37,7 @@ trait TypeofBuffer
     *
     * @param size count of octets to allocate
     */
+  /* static member */
   def allocUnsafe(size: Double): typings.node.Buffer = js.native
   
   /**
@@ -47,6 +46,7 @@ trait TypeofBuffer
     *
     * @param size count of octets to allocate
     */
+  /* static member */
   def allocUnsafeSlow(size: Double): typings.node.Buffer = js.native
   
   /**
@@ -56,6 +56,7 @@ trait TypeofBuffer
     * @param string string to test.
     * @param encoding encoding used to evaluate (defaults to 'utf8')
     */
+  /* static member */
   def byteLength(string: String): Double = js.native
   def byteLength(string: String, encoding: BufferEncoding): Double = js.native
   def byteLength(string: ArrayBufferView): Double = js.native
@@ -68,6 +69,7 @@ trait TypeofBuffer
   /**
     * The same as buf1.compare(buf2).
     */
+  /* static member */
   def compare(buf1: Uint8Array, buf2: Uint8Array): Double = js.native
   
   /**
@@ -81,6 +83,7 @@ trait TypeofBuffer
     * @param totalLength Total length of the buffers when concatenated.
     *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
     */
+  /* static member */
   def concat(list: js.Array[Uint8Array]): typings.node.Buffer = js.native
   def concat(list: js.Array[Uint8Array], totalLength: Double): typings.node.Buffer = js.native
   
@@ -92,6 +95,7 @@ trait TypeofBuffer
     *
     * @param arrayBuffer The .buffer property of any TypedArray or a new ArrayBuffer()
     */
+  /* static member */
   def from(arrayBuffer: ArrayBuffer): typings.node.Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.node.Buffer = js.native
@@ -104,7 +108,9 @@ trait TypeofBuffer
     * Creates a new Buffer using the passed {data}
     * @param data data to create a new Buffer
     */
+  /* static member */
   def from(data: js.Array[Double]): typings.node.Buffer = js.native
+  /* static member */
   def from(data: Uint8Array): typings.node.Buffer = js.native
   def from(obj: ToPrimitive): typings.node.Buffer = js.native
   def from(obj: ToPrimitive, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
@@ -115,6 +121,7 @@ trait TypeofBuffer
     * A `TypeError` will be thrown if {obj} has not mentioned methods or is not of other type appropriate for `Buffer.from()` variants.
     * @param obj An object supporting `Symbol.toPrimitive` or `valueOf()`.
     */
+  /* static member */
   def from(obj: ValueOf): typings.node.Buffer = js.native
   def from(obj: ValueOf, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
   def from(obj: ValueOf, byteOffset: Double): typings.node.Buffer = js.native
@@ -124,6 +131,7 @@ trait TypeofBuffer
     * If provided, the {encoding} parameter identifies the character encoding.
     * If not provided, {encoding} defaults to 'utf8'.
     */
+  /* static member */
   def from(str: String): typings.node.Buffer = js.native
   def from(str: String, encoding: BufferEncoding): typings.node.Buffer = js.native
   
@@ -132,6 +140,7 @@ trait TypeofBuffer
     *
     * @param obj object to test.
     */
+  /* static member */
   def isBuffer(obj: js.Any): /* is node.Buffer */ Boolean = js.native
   
   /**
@@ -140,16 +149,19 @@ trait TypeofBuffer
     *
     * @param encoding string to test.
     */
+  /* static member */
   def isEncoding(encoding: String): /* is node.BufferEncoding */ Boolean = js.native
   
   /**
     * Creates a new Buffer using the passed {data}
     * @param values to create a new Buffer
     */
+  /* static member */
   def of(items: Double*): typings.node.Buffer = js.native
   
   /**
     * This is the number of bytes used to determine the size of pre-allocated, internal Buffer instances used for pooling. This value may be modified.
     */
+  /* static member */
   var poolSize: Double = js.native
 }

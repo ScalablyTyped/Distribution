@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and modify protected sheets in the older version of Google Sheets.
   */
 @js.native
-trait PageProtection extends js.Object {
+trait PageProtection extends StObject {
   
   /** @deprecated DO NOT USE */ def addUser(email: String): Unit = js.native
   
@@ -39,33 +40,21 @@ object PageProtection {
   }
   
   @scala.inline
-  implicit class PageProtectionOps[Self <: PageProtection] (val x: Self) extends AnyVal {
+  implicit class PageProtectionMutableBuilder[Self <: PageProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddUser(value: String => Unit): Self = StObject.set(x, "addUser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUsers(value: () => js.Array[String]): Self = StObject.set(x, "getUsers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsProtected(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddUser(value: String => Unit): Self = this.set("addUser", js.Any.fromFunction1(value))
+    def setRemoveUser(value: String => Unit): Self = StObject.set(x, "removeUser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUsers(value: () => js.Array[String]): Self = this.set("getUsers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsProtected(value: () => Boolean): Self = this.set("isProtected", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveUser(value: String => Unit): Self = this.set("removeUser", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetProtected(value: Boolean => Unit): Self = this.set("setProtected", js.Any.fromFunction1(value))
+    def setSetProtected(value: Boolean => Unit): Self = StObject.set(x, "setProtected", js.Any.fromFunction1(value))
   }
 }

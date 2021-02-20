@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationReason extends js.Object {
+trait NotificationReason extends StObject {
   
   var notificationReasonType: NotificationReasonType = js.native
   
@@ -21,27 +22,15 @@ object NotificationReason {
   }
   
   @scala.inline
-  implicit class NotificationReasonOps[Self <: NotificationReason] (val x: Self) extends AnyVal {
+  implicit class NotificationReasonMutableBuilder[Self <: NotificationReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotificationReasonType(value: NotificationReasonType): Self = StObject.set(x, "notificationReasonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetIdentities(value: js.Array[IdentityRef]): Self = StObject.set(x, "targetIdentities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotificationReasonType(value: NotificationReasonType): Self = this.set("notificationReasonType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetIdentitiesVarargs(value: IdentityRef*): Self = this.set("targetIdentities", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetIdentities(value: js.Array[IdentityRef]): Self = this.set("targetIdentities", value.asInstanceOf[js.Any])
+    def setTargetIdentitiesVarargs(value: IdentityRef*): Self = StObject.set(x, "targetIdentities", js.Array(value :_*))
   }
 }

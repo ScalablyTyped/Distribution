@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Branding properties for the watch. All deprecated.
   */
 @js.native
-trait SchemaWatchSettings extends js.Object {
+trait SchemaWatchSettings extends StObject {
   
   /**
     * The text color for the video watch page&#39;s branded area.
@@ -35,36 +36,24 @@ object SchemaWatchSettings {
   }
   
   @scala.inline
-  implicit class SchemaWatchSettingsOps[Self <: SchemaWatchSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaWatchSettingsMutableBuilder[Self <: SchemaWatchSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturedPlaylistId(value: String): Self = StObject.set(x, "featuredPlaylistId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setFeaturedPlaylistIdUndefined: Self = StObject.set(x, "featuredPlaylistId", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedPlaylistId(value: String): Self = this.set("featuredPlaylistId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeaturedPlaylistId: Self = this.set("featuredPlaylistId", js.undefined)
-    
-    @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

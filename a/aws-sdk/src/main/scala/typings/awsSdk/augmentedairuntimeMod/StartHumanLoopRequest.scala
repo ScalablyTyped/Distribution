@@ -1,11 +1,12 @@
 package typings.awsSdk.augmentedairuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartHumanLoopRequest extends js.Object {
+trait StartHumanLoopRequest extends StObject {
   
   /**
     * Attributes of the specified data. Use DataAttributes to specify if your data is free of personally identifiable information and/or free of adult content.
@@ -36,33 +37,21 @@ object StartHumanLoopRequest {
   }
   
   @scala.inline
-  implicit class StartHumanLoopRequestOps[Self <: StartHumanLoopRequest] (val x: Self) extends AnyVal {
+  implicit class StartHumanLoopRequestMutableBuilder[Self <: StartHumanLoopRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataAttributes(value: HumanLoopDataAttributes): Self = StObject.set(x, "DataAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataAttributesUndefined: Self = StObject.set(x, "DataAttributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = this.set("FlowDefinitionArn", value.asInstanceOf[js.Any])
+    def setHumanLoopInput(value: HumanLoopInput): Self = StObject.set(x, "HumanLoopInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanLoopInput(value: HumanLoopInput): Self = this.set("HumanLoopInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHumanLoopName(value: HumanLoopName): Self = this.set("HumanLoopName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataAttributes(value: HumanLoopDataAttributes): Self = this.set("DataAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataAttributes: Self = this.set("DataAttributes", js.undefined)
+    def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
   }
 }

@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSecuritycenter.anon.CallbackFields
 import typings.maximMazurokGapiClientSecuritycenter.anon.PrettyPrint
 import typings.maximMazurokGapiClientSecuritycenter.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrganizationsResource extends js.Object {
+trait OrganizationsResource extends StObject {
   
   var assets: AssetsResource = js.native
   

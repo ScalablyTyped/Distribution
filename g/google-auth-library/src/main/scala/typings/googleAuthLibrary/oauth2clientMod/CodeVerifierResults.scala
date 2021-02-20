@@ -1,11 +1,12 @@
 package typings.googleAuthLibrary.oauth2clientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeVerifierResults extends js.Object {
+trait CodeVerifierResults extends StObject {
   
   /**
     * The code_challenge that should be sent with the `generateAuthUrl` call
@@ -28,27 +29,15 @@ object CodeVerifierResults {
   }
   
   @scala.inline
-  implicit class CodeVerifierResultsOps[Self <: CodeVerifierResults] (val x: Self) extends AnyVal {
+  implicit class CodeVerifierResultsMutableBuilder[Self <: CodeVerifierResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeChallenge(value: String): Self = StObject.set(x, "codeChallenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeChallengeUndefined: Self = StObject.set(x, "codeChallenge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCodeVerifier(value: String): Self = this.set("codeVerifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCodeChallenge(value: String): Self = this.set("codeChallenge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeChallenge: Self = this.set("codeChallenge", js.undefined)
+    def setCodeVerifier(value: String): Self = StObject.set(x, "codeVerifier", value.asInstanceOf[js.Any])
   }
 }

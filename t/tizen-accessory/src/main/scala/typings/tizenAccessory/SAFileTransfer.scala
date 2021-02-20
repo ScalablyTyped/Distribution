@@ -2,12 +2,13 @@ package typings.tizenAccessory
 
 import typings.tizenAccessory.anon.Oncomplete
 import typings.tizenAccessory.anon.Onprogress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SAFileTransfer extends js.Object {
+trait SAFileTransfer extends StObject {
   
   def cancelFile(id: String): Unit = js.native
   
@@ -40,39 +41,27 @@ object SAFileTransfer {
   }
   
   @scala.inline
-  implicit class SAFileTransferOps[Self <: SAFileTransfer] (val x: Self) extends AnyVal {
+  implicit class SAFileTransferMutableBuilder[Self <: SAFileTransfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelFile(value: String => Unit): Self = StObject.set(x, "cancelFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultReceivePath(value: String): Self = StObject.set(x, "defaultReceivePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiveFile(value: (String, String) => Unit): Self = StObject.set(x, "receiveFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCancelFile(value: String => Unit): Self = this.set("cancelFile", js.Any.fromFunction1(value))
+    def setRejectFile(value: String => Unit): Self = StObject.set(x, "rejectFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultReceivePath(value: String): Self = this.set("defaultReceivePath", value.asInstanceOf[js.Any])
+    def setSendFile(value: (SAPeerAgent, String) => Double): Self = StObject.set(x, "sendFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReceiveFile(value: (String, String) => Unit): Self = this.set("receiveFile", js.Any.fromFunction2(value))
+    def setSetFileReceiveListener(value: Onprogress => Unit): Self = StObject.set(x, "setFileReceiveListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRejectFile(value: String => Unit): Self = this.set("rejectFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendFile(value: (SAPeerAgent, String) => Double): Self = this.set("sendFile", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetFileReceiveListener(value: Onprogress => Unit): Self = this.set("setFileReceiveListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFileSendListener(value: Oncomplete => Unit): Self = this.set("setFileSendListener", js.Any.fromFunction1(value))
+    def setSetFileSendListener(value: Oncomplete => Unit): Self = StObject.set(x, "setFileSendListener", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiAws.containerMod
 
 import typings.pulumiAws.pulumiAwsStrings.syslog_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pulumiAws.pulumiAwsStrings.splunk
   - typings.pulumiAws.pulumiAwsStrings.awsfirelens
 */
-trait LogDriver extends js.Object
+trait LogDriver extends StObject
 object LogDriver {
   
   @scala.inline

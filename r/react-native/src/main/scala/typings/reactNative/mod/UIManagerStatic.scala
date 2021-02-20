@@ -4,12 +4,13 @@ import typings.react.mod.ReactElement
 import typings.reactNative.anon.Commands
 import typings.reactNative.anon.Format
 import typings.reactNative.reactNativeStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIManagerStatic extends js.Object {
+trait UIManagerStatic extends StObject {
   
   def dispatchViewManagerCommand(reactTag: Double, commandID: String): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Double, commandID: String, commandArgs: js.Array[_]): Unit = js.native

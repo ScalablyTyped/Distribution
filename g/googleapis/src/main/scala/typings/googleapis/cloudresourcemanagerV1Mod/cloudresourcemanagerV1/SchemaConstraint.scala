@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * question.
   */
 @js.native
-trait SchemaConstraint extends js.Object {
+trait SchemaConstraint extends StObject {
   
   /**
     * Defines this constraint as being a BooleanConstraint.
@@ -69,60 +70,48 @@ object SchemaConstraint {
   }
   
   @scala.inline
-  implicit class SchemaConstraintOps[Self <: SchemaConstraint] (val x: Self) extends AnyVal {
+  implicit class SchemaConstraintMutableBuilder[Self <: SchemaConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBooleanConstraint(value: SchemaBooleanConstraint): Self = StObject.set(x, "booleanConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanConstraintUndefined: Self = StObject.set(x, "booleanConstraint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintDefault(value: String): Self = StObject.set(x, "constraintDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanConstraint(value: SchemaBooleanConstraint): Self = this.set("booleanConstraint", value.asInstanceOf[js.Any])
+    def setConstraintDefaultUndefined: Self = StObject.set(x, "constraintDefault", js.undefined)
     
     @scala.inline
-    def deleteBooleanConstraint: Self = this.set("booleanConstraint", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintDefault(value: String): Self = this.set("constraintDefault", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteConstraintDefault: Self = this.set("constraintDefault", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setListConstraint(value: SchemaListConstraint): Self = StObject.set(x, "listConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setListConstraintUndefined: Self = StObject.set(x, "listConstraint", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListConstraint(value: SchemaListConstraint): Self = this.set("listConstraint", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteListConstraint: Self = this.set("listConstraint", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

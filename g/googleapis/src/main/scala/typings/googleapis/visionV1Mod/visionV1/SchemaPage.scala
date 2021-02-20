@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Detected page from OCR.
   */
 @js.native
-trait SchemaPage extends js.Object {
+trait SchemaPage extends StObject {
   
   /**
     * List of blocks of text, images etc on this page.
@@ -46,51 +47,39 @@ object SchemaPage {
   }
   
   @scala.inline
-  implicit class SchemaPageOps[Self <: SchemaPage] (val x: Self) extends AnyVal {
+  implicit class SchemaPageMutableBuilder[Self <: SchemaPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocks(value: js.Array[SchemaBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocksVarargs(value: SchemaBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocksVarargs(value: SchemaBlock*): Self = this.set("blocks", js.Array(value :_*))
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocks(value: js.Array[SchemaBlock]): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def deleteBlocks: Self = this.set("blocks", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: SchemaTextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

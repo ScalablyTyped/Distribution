@@ -3,12 +3,13 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.googleVisualizationStrings.newRow
 import typings.googleVisualization.googleVisualizationStrings.sameRow
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationChartOptions extends js.Object {
+trait AnnotationChartOptions extends StObject {
   
   var allValuesSuffix: js.UndefOr[String] = js.native
   
@@ -67,168 +68,156 @@ object AnnotationChartOptions {
   }
   
   @scala.inline
-  implicit class AnnotationChartOptionsOps[Self <: AnnotationChartOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationChartOptionsMutableBuilder[Self <: AnnotationChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllValuesSuffix(value: String): Self = StObject.set(x, "allValuesSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllValuesSuffixUndefined: Self = StObject.set(x, "allValuesSuffix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllValuesSuffix(value: String): Self = this.set("allValuesSuffix", value.asInstanceOf[js.Any])
+    def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
     
     @scala.inline
-    def deleteAllValuesSuffix: Self = this.set("allValuesSuffix", js.undefined)
+    def setAnnotationsWidth(value: Double): Self = StObject.set(x, "annotationsWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHtml(value: Boolean): Self = this.set("allowHtml", value.asInstanceOf[js.Any])
+    def setAnnotationsWidthUndefined: Self = StObject.set(x, "annotationsWidth", js.undefined)
     
     @scala.inline
-    def deleteAllowHtml: Self = this.set("allowHtml", js.undefined)
+    def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsWidth(value: Double): Self = this.set("annotationsWidth", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteAnnotationsWidth: Self = this.set("annotationsWidth", js.undefined)
+    def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setDisplayAnnotations(value: Boolean): Self = StObject.set(x, "displayAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDisplayAnnotationsFilter(value: Boolean): Self = StObject.set(x, "displayAnnotationsFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDisplayAnnotationsFilterUndefined: Self = StObject.set(x, "displayAnnotationsFilter", js.undefined)
     
     @scala.inline
-    def setDisplayAnnotations(value: Boolean): Self = this.set("displayAnnotations", value.asInstanceOf[js.Any])
+    def setDisplayAnnotationsUndefined: Self = StObject.set(x, "displayAnnotations", js.undefined)
     
     @scala.inline
-    def deleteDisplayAnnotations: Self = this.set("displayAnnotations", js.undefined)
+    def setDisplayDateBarSeparator(value: Boolean): Self = StObject.set(x, "displayDateBarSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAnnotationsFilter(value: Boolean): Self = this.set("displayAnnotationsFilter", value.asInstanceOf[js.Any])
+    def setDisplayDateBarSeparatorUndefined: Self = StObject.set(x, "displayDateBarSeparator", js.undefined)
     
     @scala.inline
-    def deleteDisplayAnnotationsFilter: Self = this.set("displayAnnotationsFilter", js.undefined)
+    def setDisplayExactValues(value: Boolean): Self = StObject.set(x, "displayExactValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDateBarSeparator(value: Boolean): Self = this.set("displayDateBarSeparator", value.asInstanceOf[js.Any])
+    def setDisplayExactValuesUndefined: Self = StObject.set(x, "displayExactValues", js.undefined)
     
     @scala.inline
-    def deleteDisplayDateBarSeparator: Self = this.set("displayDateBarSeparator", js.undefined)
+    def setDisplayLegendDots(value: Boolean): Self = StObject.set(x, "displayLegendDots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayExactValues(value: Boolean): Self = this.set("displayExactValues", value.asInstanceOf[js.Any])
+    def setDisplayLegendDotsUndefined: Self = StObject.set(x, "displayLegendDots", js.undefined)
     
     @scala.inline
-    def deleteDisplayExactValues: Self = this.set("displayExactValues", js.undefined)
+    def setDisplayLegendValues(value: Boolean): Self = StObject.set(x, "displayLegendValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLegendDots(value: Boolean): Self = this.set("displayLegendDots", value.asInstanceOf[js.Any])
+    def setDisplayLegendValuesUndefined: Self = StObject.set(x, "displayLegendValues", js.undefined)
     
     @scala.inline
-    def deleteDisplayLegendDots: Self = this.set("displayLegendDots", js.undefined)
+    def setDisplayRangeSelector(value: Boolean): Self = StObject.set(x, "displayRangeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLegendValues(value: Boolean): Self = this.set("displayLegendValues", value.asInstanceOf[js.Any])
+    def setDisplayRangeSelectorUndefined: Self = StObject.set(x, "displayRangeSelector", js.undefined)
     
     @scala.inline
-    def deleteDisplayLegendValues: Self = this.set("displayLegendValues", js.undefined)
+    def setDisplayZoomButtons(value: Boolean): Self = StObject.set(x, "displayZoomButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayRangeSelector(value: Boolean): Self = this.set("displayRangeSelector", value.asInstanceOf[js.Any])
+    def setDisplayZoomButtonsUndefined: Self = StObject.set(x, "displayZoomButtons", js.undefined)
     
     @scala.inline
-    def deleteDisplayRangeSelector: Self = this.set("displayRangeSelector", js.undefined)
+    def setFill(value: Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayZoomButtons(value: Boolean): Self = this.set("displayZoomButtons", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteDisplayZoomButtons: Self = this.set("displayZoomButtons", js.undefined)
+    def setLegendPosition(value: sameRow | newRow): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Double): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendPosition(value: sameRow | newRow): Self = this.set("legendPosition", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLegendPosition: Self = this.set("legendPosition", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setNumberFormats(value: js.Any): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setScaleColumns(value: js.Array[Double]): Self = StObject.set(x, "scaleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormats(value: js.Any): Self = this.set("numberFormats", value.asInstanceOf[js.Any])
+    def setScaleColumnsUndefined: Self = StObject.set(x, "scaleColumns", js.undefined)
     
     @scala.inline
-    def deleteNumberFormats: Self = this.set("numberFormats", js.undefined)
+    def setScaleColumnsVarargs(value: Double*): Self = StObject.set(x, "scaleColumns", js.Array(value :_*))
     
     @scala.inline
-    def setScaleColumnsVarargs(value: Double*): Self = this.set("scaleColumns", js.Array(value :_*))
+    def setScaleFormat(value: String): Self = StObject.set(x, "scaleFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleColumns(value: js.Array[Double]): Self = this.set("scaleColumns", value.asInstanceOf[js.Any])
+    def setScaleFormatUndefined: Self = StObject.set(x, "scaleFormat", js.undefined)
     
     @scala.inline
-    def deleteScaleColumns: Self = this.set("scaleColumns", js.undefined)
+    def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleFormat(value: String): Self = this.set("scaleFormat", value.asInstanceOf[js.Any])
+    def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
     
     @scala.inline
-    def deleteScaleFormat: Self = this.set("scaleFormat", js.undefined)
+    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleType(value: String): Self = this.set("scaleType", value.asInstanceOf[js.Any])
+    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     @scala.inline
-    def deleteScaleType: Self = this.set("scaleType", js.undefined)
+    def setZoomEndTime(value: Date): Self = StObject.set(x, "zoomEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThickness(value: Double): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    def setZoomEndTimeUndefined: Self = StObject.set(x, "zoomEndTime", js.undefined)
     
     @scala.inline
-    def deleteThickness: Self = this.set("thickness", js.undefined)
+    def setZoomStartTime(value: Date): Self = StObject.set(x, "zoomStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomEndTime(value: Date): Self = this.set("zoomEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomEndTime: Self = this.set("zoomEndTime", js.undefined)
-    
-    @scala.inline
-    def setZoomStartTime(value: Date): Self = this.set("zoomStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomStartTime: Self = this.set("zoomStartTime", js.undefined)
+    def setZoomStartTimeUndefined: Self = StObject.set(x, "zoomStartTime", js.undefined)
   }
 }

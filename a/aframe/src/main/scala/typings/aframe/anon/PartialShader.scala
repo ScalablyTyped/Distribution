@@ -1,13 +1,14 @@
 package typings.aframe.anon
 
 import typings.aframe.mod.Schema_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<aframe.aframe.Shader> */
 @js.native
-trait PartialShader extends js.Object {
+trait PartialShader extends StObject {
   
   var data: js.UndefOr[js.Object] = js.native
   
@@ -52,82 +53,70 @@ object PartialShader {
   }
   
   @scala.inline
-  implicit class PartialShaderOps[Self <: PartialShader] (val x: Self) extends AnyVal {
+  implicit class PartialShaderMutableBuilder[Self <: PartialShader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setFragmentShader(value: String): Self = this.set("fragmentShader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFragmentShader: Self = this.set("fragmentShader", js.undefined)
+    def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
     
     @scala.inline
     def setInit(
       value: /* data */ js.UndefOr[
           /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ js.Any
         ] => Unit
-    ): Self = this.set("init", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setMaterial(value: typings.three.mod.Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setMaterial(value: typings.three.mod.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
     def setSchema(
       value: Schema_[
           /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ js.Any
         ]
-    ): Self = this.set("schema", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setTick(value: (/* time */ Double, /* timeDelta */ Double) => Unit): Self = this.set("tick", js.Any.fromFunction2(value))
+    def setTick(value: (/* time */ Double, /* timeDelta */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteTick: Self = this.set("tick", js.undefined)
+    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
     @scala.inline
     def setUpdate(
       value: /* import warning: importer.ImportType#apply Failed type conversion: this['data'] */ /* oldData */ js.Any => Unit
-    ): Self = this.set("update", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def setVertexShader(value: String): Self = this.set("vertexShader", value.asInstanceOf[js.Any])
+    def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVertexShader: Self = this.set("vertexShader", js.undefined)
+    def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
   }
 }

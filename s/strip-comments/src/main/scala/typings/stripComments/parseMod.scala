@@ -2,13 +2,12 @@ package typings.stripComments
 
 import typings.stripComments.mod.Options
 import typings.stripComments.nodeMod.Block
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("strip-comments/lib/parse", JSImport.Namespace)
-@js.native
-object parseMod extends js.Object {
+object parseMod {
   
   /**
     * Parses a string and returns a basic CST (Concrete Syntax Tree).
@@ -22,6 +21,10 @@ object parseMod extends js.Object {
     * @param  `input` string from which to strip comments
     * @param  `options` pass `opts.keepProtected: true` to keep ignored comments (e.g. `/ *!`)
     */
+  @JSImport("strip-comments/lib/parse", JSImport.Namespace)
+  @js.native
   def apply(input: String): Block = js.native
+  @JSImport("strip-comments/lib/parse", JSImport.Namespace)
+  @js.native
   def apply(input: String, options: Options): Block = js.native
 }

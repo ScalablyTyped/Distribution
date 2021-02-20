@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,69 +79,57 @@ object NestedHeaders {
   }
   
   @scala.inline
-  implicit class NestedHeadersOps[Self <: NestedHeaders] (val x: Self) extends AnyVal {
+  implicit class NestedHeadersMutableBuilder[Self <: NestedHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckForFixedColumnsCollision(value: () => Unit): Self = StObject.set(x, "checkForFixedColumnsCollision", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckForOverlappingHeaders(value: () => Unit): Self = StObject.set(x, "checkForOverlappingHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColspanArray(value: js.Array[_]): Self = StObject.set(x, "colspanArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckForFixedColumnsCollision(value: () => Unit): Self = this.set("checkForFixedColumnsCollision", js.Any.fromFunction0(value))
+    def setColspanArrayVarargs(value: js.Any*): Self = StObject.set(x, "colspanArray", js.Array(value :_*))
     
     @scala.inline
-    def setCheckForOverlappingHeaders(value: () => Unit): Self = this.set("checkForOverlappingHeaders", js.Any.fromFunction0(value))
+    def setColumnHeaderLevelCount(value: Double): Self = StObject.set(x, "columnHeaderLevelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColspanArrayVarargs(value: js.Any*): Self = this.set("colspanArray", js.Array(value :_*))
+    def setFillColspanArrayWithDummies(value: (Double, Double) => Unit): Self = StObject.set(x, "fillColspanArrayWithDummies", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColspanArray(value: js.Array[_]): Self = this.set("colspanArray", value.asInstanceOf[js.Any])
+    def setFillTheRemainingColspans(value: () => Unit): Self = StObject.set(x, "fillTheRemainingColspans", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnHeaderLevelCount(value: Double): Self = this.set("columnHeaderLevelCount", value.asInstanceOf[js.Any])
+    def setGetChildHeaders(value: (Double, Double) => js.Array[_]): Self = StObject.set(x, "getChildHeaders", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFillColspanArrayWithDummies(value: (Double, Double) => Unit): Self = this.set("fillColspanArrayWithDummies", js.Any.fromFunction2(value))
+    def setGetColspan(value: (Double, Double) => Double): Self = StObject.set(x, "getColspan", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFillTheRemainingColspans(value: () => Unit): Self = this.set("fillTheRemainingColspans", js.Any.fromFunction0(value))
+    def setGetNestedParent(value: (Double, Double) => js.Any): Self = StObject.set(x, "getNestedParent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetChildHeaders(value: (Double, Double) => js.Array[_]): Self = this.set("getChildHeaders", js.Any.fromFunction2(value))
+    def setGhostTable(value: GhostTableNestedHeaders): Self = StObject.set(x, "ghostTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColspan(value: (Double, Double) => Double): Self = this.set("getColspan", js.Any.fromFunction2(value))
+    def setHeaderRendererFactory(value: Double => js.Function0[Unit]): Self = StObject.set(x, "headerRendererFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNestedParent(value: (Double, Double) => js.Any): Self = this.set("getNestedParent", js.Any.fromFunction2(value))
+    def setLevelToRowCoords(value: Double => Double): Self = StObject.set(x, "levelToRowCoords", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGhostTable(value: GhostTableNestedHeaders): Self = this.set("ghostTable", value.asInstanceOf[js.Any])
+    def setRowCoordsToLevel(value: Double => Double): Self = StObject.set(x, "rowCoordsToLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaderRendererFactory(value: Double => js.Function0[Unit]): Self = this.set("headerRendererFactory", js.Any.fromFunction1(value))
+    def setSettings(value: js.Array[_]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelToRowCoords(value: Double => Double): Self = this.set("levelToRowCoords", js.Any.fromFunction1(value))
+    def setSettingsVarargs(value: js.Any*): Self = StObject.set(x, "settings", js.Array(value :_*))
     
     @scala.inline
-    def setRowCoordsToLevel(value: Double => Double): Self = this.set("rowCoordsToLevel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSettingsVarargs(value: js.Any*): Self = this.set("settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: js.Array[_]): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetupColspanArray(value: () => Unit): Self = this.set("setupColspanArray", js.Any.fromFunction0(value))
+    def setSetupColspanArray(value: () => Unit): Self = StObject.set(x, "setupColspanArray", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNatGatewaysRequest extends js.Object {
+trait DescribeNatGatewaysRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -41,54 +42,42 @@ object DescribeNatGatewaysRequest {
   }
   
   @scala.inline
-  implicit class DescribeNatGatewaysRequestOps[Self <: DescribeNatGatewaysRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeNatGatewaysRequestMutableBuilder[Self <: DescribeNatGatewaysRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: FilterList): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: Filter*): Self = this.set("Filter", js.Array(value :_*))
+    def setMaxResults(value: DescribeNatGatewaysMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: FilterList): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setNatGatewayIds(value: NatGatewayIdStringList): Self = StObject.set(x, "NatGatewayIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: DescribeNatGatewaysMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNatGatewayIdsUndefined: Self = StObject.set(x, "NatGatewayIds", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNatGatewayIdsVarargs(value: NatGatewayId*): Self = StObject.set(x, "NatGatewayIds", js.Array(value :_*))
     
     @scala.inline
-    def setNatGatewayIdsVarargs(value: NatGatewayId*): Self = this.set("NatGatewayIds", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatGatewayIds(value: NatGatewayIdStringList): Self = this.set("NatGatewayIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNatGatewayIds: Self = this.set("NatGatewayIds", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

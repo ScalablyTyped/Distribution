@@ -1,11 +1,12 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateOptions extends js.Object {
+trait GenerateOptions extends StObject {
   
   var decorator: js.UndefOr[js.Function1[/* handlers */ GenerateHandlers, GenerateHandlers]] = js.native
   
@@ -20,30 +21,18 @@ object GenerateOptions {
   }
   
   @scala.inline
-  implicit class GenerateOptionsOps[Self <: GenerateOptions] (val x: Self) extends AnyVal {
+  implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecorator(value: /* handlers */ GenerateHandlers => GenerateHandlers): Self = StObject.set(x, "decorator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecoratorUndefined: Self = StObject.set(x, "decorator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorator(value: /* handlers */ GenerateHandlers => GenerateHandlers): Self = this.set("decorator", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDecorator: Self = this.set("decorator", js.undefined)
-    
-    @scala.inline
-    def setSourceMap(value: Boolean): Self = this.set("sourceMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMap: Self = this.set("sourceMap", js.undefined)
+    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
   }
 }

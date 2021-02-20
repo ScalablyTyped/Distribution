@@ -1,12 +1,13 @@
 package typings.twineSugarcube.anon
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Build extends js.Object {
+trait Build extends StObject {
   
   val build: Double = js.native
   
@@ -31,42 +32,30 @@ object Build {
   }
   
   @scala.inline
-  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+  implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: Double): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajor(value: Double): Self = this.set("major", value.asInstanceOf[js.Any])
+    def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinor(value: Double): Self = this.set("minor", value.asInstanceOf[js.Any])
+    def setPrereleaseNull: Self = StObject.set(x, "prerelease", null)
     
     @scala.inline
-    def setPatch(value: Double): Self = this.set("patch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrerelease(value: String): Self = this.set("prerelease", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrereleaseNull: Self = this.set("prerelease", null)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

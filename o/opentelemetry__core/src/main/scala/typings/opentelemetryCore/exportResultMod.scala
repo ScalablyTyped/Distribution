@@ -1,35 +1,31 @@
 package typings.opentelemetryCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/core/build/src/ExportResult", JSImport.Namespace)
-@js.native
-object exportResultMod extends js.Object {
+object exportResultMod {
   
   @js.native
-  sealed trait ExportResult extends js.Object
+  sealed trait ExportResult extends StObject
+  @JSImport("@opentelemetry/core/build/src/ExportResult", "ExportResult")
   @js.native
-  object ExportResult extends js.Object {
+  object ExportResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ExportResult with Double] = js.native
     
     @js.native
     sealed trait FAILED_NOT_RETRYABLE extends ExportResult
-    /* 1 */ @js.native
-    object FAILED_NOT_RETRYABLE extends TopLevel[FAILED_NOT_RETRYABLE with Double]
+    /* 1 */ val FAILED_NOT_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_NOT_RETRYABLE with Double = js.native
     
     @js.native
     sealed trait FAILED_RETRYABLE extends ExportResult
-    /* 2 */ @js.native
-    object FAILED_RETRYABLE extends TopLevel[FAILED_RETRYABLE with Double]
+    /* 2 */ val FAILED_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_RETRYABLE with Double = js.native
     
     @js.native
     sealed trait SUCCESS extends ExportResult
-    /* 0 */ @js.native
-    object SUCCESS extends TopLevel[SUCCESS with Double]
+    /* 0 */ val SUCCESS: typings.opentelemetryCore.exportResultMod.ExportResult.SUCCESS with Double = js.native
   }
 }

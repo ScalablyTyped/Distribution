@@ -10,6 +10,7 @@ import typings.node.nodeStrings.unknownProtocol
 import typings.node.tlsMod.Server
 import typings.node.tlsMod.TLSSocket
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

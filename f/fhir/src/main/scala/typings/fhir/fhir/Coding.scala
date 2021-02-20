@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,78 +70,66 @@ object Coding {
   }
   
   @scala.inline
-  implicit class CodingOps[Self <: Coding] (val x: Self) extends AnyVal {
+  implicit class CodingMutableBuilder[Self <: Coding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def delete_display: Self = this.set("_display", js.undefined)
+    def setUserSelected(value: Boolean): Self = StObject.set(x, "userSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    def setUserSelectedUndefined: Self = StObject.set(x, "userSelected", js.undefined)
     
     @scala.inline
-    def delete_system: Self = this.set("_system", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_userSelected(value: Element): Self = this.set("_userSelected", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def delete_userSelected: Self = this.set("_userSelected", js.undefined)
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def set_userSelected(value: Element): Self = StObject.set(x, "_userSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
+    def set_userSelectedUndefined: Self = StObject.set(x, "_userSelected", js.undefined)
     
     @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserSelected(value: Boolean): Self = this.set("userSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSelected: Self = this.set("userSelected", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

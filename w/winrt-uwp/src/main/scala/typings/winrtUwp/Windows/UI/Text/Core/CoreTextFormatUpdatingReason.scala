@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreTextFormatUpdatingReason extends js.Object
+sealed trait CoreTextFormatUpdatingReason extends StObject
 /** Defines constants that specify the set of state applied during text composition. */
 @JSGlobal("Windows.UI.Text.Core.CoreTextFormatUpdatingReason")
 @js.native
-object CoreTextFormatUpdatingReason extends js.Object {
+object CoreTextFormatUpdatingReason extends StObject {
   
   /** The text is a converted composition string. */
   @js.native

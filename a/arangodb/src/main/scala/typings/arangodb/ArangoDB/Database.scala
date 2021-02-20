@@ -2,12 +2,13 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.arangodbBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Database extends js.Object {
+trait Database extends StObject {
   
   // Collection
   def _collection(name: String): Collection[_] = js.native

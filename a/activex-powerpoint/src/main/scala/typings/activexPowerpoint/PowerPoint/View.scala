@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait View extends js.Object {
+trait View extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   

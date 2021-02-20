@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,20 +62,41 @@ class LinkReshapingTool () extends Tool {
     */
   def setReshapingBehavior(obj: GraphObject, behavior: EnumValue): Unit = js.native
 }
-/* static members */
-@JSImport("go", "LinkReshapingTool")
-@js.native
-object LinkReshapingTool extends js.Object {
+object LinkReshapingTool {
+  
+  @JSImport("go", "LinkReshapingTool")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**Allow dragging in any direction.*/
-  var All: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkReshapingTool.All")
+  @js.native
+  def All: EnumValue = js.native
+  @scala.inline
+  def All_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
   
   /**Allow only horizontal (left-and-right) dragging.*/
-  var Horizontal: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkReshapingTool.Horizontal")
+  @js.native
+  def Horizontal: EnumValue = js.native
+  @scala.inline
+  def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /**Disallow dragging.*/
-  var None: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkReshapingTool.None")
+  @js.native
+  def None: EnumValue = js.native
+  @scala.inline
+  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**Allow only vertical (up-and-down) dragging.*/
-  var Vertical: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkReshapingTool.Vertical")
+  @js.native
+  def Vertical: EnumValue = js.native
+  @scala.inline
+  def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

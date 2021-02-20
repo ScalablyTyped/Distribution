@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpressionFilterClause extends js.Object {
+trait ExpressionFilterClause extends StObject {
   
   var fieldName: String = js.native
   
@@ -32,33 +33,21 @@ object ExpressionFilterClause {
   }
   
   @scala.inline
-  implicit class ExpressionFilterClauseOps[Self <: ExpressionFilterClause] (val x: Self) extends AnyVal {
+  implicit class ExpressionFilterClauseMutableBuilder[Self <: ExpressionFilterClause] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogicalOperator(value: String): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalOperator(value: String): Self = this.set("logicalOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

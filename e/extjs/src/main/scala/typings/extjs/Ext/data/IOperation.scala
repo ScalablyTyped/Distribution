@@ -3,6 +3,7 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,180 +123,168 @@ object IOperation {
   }
   
   @scala.inline
-  implicit class IOperationOps[Self <: IOperation] (val x: Self) extends AnyVal {
+  implicit class IOperationMutableBuilder[Self <: IOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionCommitRecordsRe(value: RegExp): Self = StObject.set(x, "actionCommitRecordsRe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionCommitRecordsReUndefined: Self = StObject.set(x, "actionCommitRecordsRe", js.undefined)
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setActionSkipSyncRe(value: RegExp): Self = StObject.set(x, "actionSkipSyncRe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setActionSkipSyncReUndefined: Self = StObject.set(x, "actionSkipSyncRe", js.undefined)
     
     @scala.inline
-    def setActionCommitRecordsRe(value: RegExp): Self = this.set("actionCommitRecordsRe", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def deleteActionCommitRecordsRe: Self = this.set("actionCommitRecordsRe", js.undefined)
+    def setAllowWrite(value: () => Boolean): Self = StObject.set(x, "allowWrite", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActionSkipSyncRe(value: RegExp): Self = this.set("actionSkipSyncRe", value.asInstanceOf[js.Any])
+    def setAllowWriteUndefined: Self = StObject.set(x, "allowWrite", js.undefined)
     
     @scala.inline
-    def deleteActionSkipSyncRe: Self = this.set("actionSkipSyncRe", js.undefined)
+    def setBatch(value: IBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowWrite(value: () => Boolean): Self = this.set("allowWrite", js.Any.fromFunction0(value))
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def deleteAllowWrite: Self = this.set("allowWrite", js.undefined)
+    def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch(value: IBatch): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setCommitRecords(value: /* serverRecords */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "commitRecords", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallback(value: js.Any): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setCommitRecordsUndefined: Self = StObject.set(x, "commitRecords", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setFilters(value: Array): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitRecords(value: /* serverRecords */ js.UndefOr[Array] => Unit): Self = this.set("commitRecords", js.Any.fromFunction1(value))
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteCommitRecords: Self = this.set("commitRecords", js.undefined)
+    def setGetError(value: () => _): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFilters(value: Array): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setGetRecords(value: () => Array): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetError(value: () => _): Self = this.set("getError", js.Any.fromFunction0(value))
+    def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
     
     @scala.inline
-    def deleteGetError: Self = this.set("getError", js.undefined)
+    def setGetResultSet(value: () => IResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecords(value: () => Array): Self = this.set("getRecords", js.Any.fromFunction0(value))
+    def setGetResultSetUndefined: Self = StObject.set(x, "getResultSet", js.undefined)
     
     @scala.inline
-    def deleteGetRecords: Self = this.set("getRecords", js.undefined)
+    def setGroupers(value: Array): Self = StObject.set(x, "groupers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetResultSet(value: () => IResultSet): Self = this.set("getResultSet", js.Any.fromFunction0(value))
+    def setGroupersUndefined: Self = StObject.set(x, "groupers", js.undefined)
     
     @scala.inline
-    def deleteGetResultSet: Self = this.set("getResultSet", js.undefined)
+    def setHasException(value: () => Boolean): Self = StObject.set(x, "hasException", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGroupers(value: Array): Self = this.set("groupers", value.asInstanceOf[js.Any])
+    def setHasExceptionUndefined: Self = StObject.set(x, "hasException", js.undefined)
     
     @scala.inline
-    def deleteGroupers: Self = this.set("groupers", js.undefined)
+    def setIsComplete(value: () => Boolean): Self = StObject.set(x, "isComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasException(value: () => Boolean): Self = this.set("hasException", js.Any.fromFunction0(value))
+    def setIsCompleteUndefined: Self = StObject.set(x, "isComplete", js.undefined)
     
     @scala.inline
-    def deleteHasException: Self = this.set("hasException", js.undefined)
+    def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsComplete(value: () => Boolean): Self = this.set("isComplete", js.Any.fromFunction0(value))
+    def setIsRunningUndefined: Self = StObject.set(x, "isRunning", js.undefined)
     
     @scala.inline
-    def deleteIsComplete: Self = this.set("isComplete", js.undefined)
+    def setIsStarted(value: () => Boolean): Self = StObject.set(x, "isStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsRunning(value: () => Boolean): Self = this.set("isRunning", js.Any.fromFunction0(value))
+    def setIsStartedUndefined: Self = StObject.set(x, "isStarted", js.undefined)
     
     @scala.inline
-    def deleteIsRunning: Self = this.set("isRunning", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStarted(value: () => Boolean): Self = this.set("isStarted", js.Any.fromFunction0(value))
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteIsStarted: Self = this.set("isStarted", js.undefined)
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setSetCompleted(value: () => Unit): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScope(value: js.Any): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSetCompletedUndefined: Self = StObject.set(x, "setCompleted", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setSetException(value: /* error */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setException", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCompleted(value: () => Unit): Self = this.set("setCompleted", js.Any.fromFunction0(value))
+    def setSetExceptionUndefined: Self = StObject.set(x, "setException", js.undefined)
     
     @scala.inline
-    def deleteSetCompleted: Self = this.set("setCompleted", js.undefined)
+    def setSetStarted(value: () => Unit): Self = StObject.set(x, "setStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetException(value: /* error */ js.UndefOr[js.Any] => Unit): Self = this.set("setException", js.Any.fromFunction1(value))
+    def setSetStartedUndefined: Self = StObject.set(x, "setStarted", js.undefined)
     
     @scala.inline
-    def deleteSetException: Self = this.set("setException", js.undefined)
+    def setSetSuccessful(value: () => Unit): Self = StObject.set(x, "setSuccessful", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetStarted(value: () => Unit): Self = this.set("setStarted", js.Any.fromFunction0(value))
+    def setSetSuccessfulUndefined: Self = StObject.set(x, "setSuccessful", js.undefined)
     
     @scala.inline
-    def deleteSetStarted: Self = this.set("setStarted", js.undefined)
+    def setSorters(value: Array): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSuccessful(value: () => Unit): Self = this.set("setSuccessful", js.Any.fromFunction0(value))
+    def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
     
     @scala.inline
-    def deleteSetSuccessful: Self = this.set("setSuccessful", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorters(value: Array): Self = this.set("sorters", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSorters: Self = this.set("sorters", js.undefined)
+    def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setWasSuccessful(value: () => Boolean): Self = StObject.set(x, "wasSuccessful", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSynchronous(value: Boolean): Self = this.set("synchronous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynchronous: Self = this.set("synchronous", js.undefined)
-    
-    @scala.inline
-    def setWasSuccessful(value: () => Boolean): Self = this.set("wasSuccessful", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteWasSuccessful: Self = this.set("wasSuccessful", js.undefined)
+    def setWasSuccessfulUndefined: Self = StObject.set(x, "wasSuccessful", js.undefined)
   }
 }

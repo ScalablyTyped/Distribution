@@ -2,12 +2,13 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import typings.ckeditorCkeditor5Engine.mod.model.Node
 import typings.ckeditorCkeditor5Engine.mod.model.SchemaContextDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   var context: js.UndefOr[SchemaContextDefinition] = js.native
   
@@ -24,42 +25,30 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: SchemaContextDefinition): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextVarargs(value: (String | Node)*): Self = StObject.set(x, "context", js.Array(value :_*))
     
     @scala.inline
-    def setContextVarargs(value: (String | Node)*): Self = this.set("context", js.Array(value :_*))
+    def setLastRangeBackward(value: Boolean): Self = StObject.set(x, "lastRangeBackward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SchemaContextDefinition): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setLastRangeBackwardUndefined: Self = StObject.set(x, "lastRangeBackward", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setSelectionAttributes(value: js.Array[js.Object]): Self = StObject.set(x, "selectionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRangeBackward(value: Boolean): Self = this.set("lastRangeBackward", value.asInstanceOf[js.Any])
+    def setSelectionAttributesUndefined: Self = StObject.set(x, "selectionAttributes", js.undefined)
     
     @scala.inline
-    def deleteLastRangeBackward: Self = this.set("lastRangeBackward", js.undefined)
-    
-    @scala.inline
-    def setSelectionAttributesVarargs(value: js.Object*): Self = this.set("selectionAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectionAttributes(value: js.Array[js.Object]): Self = this.set("selectionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionAttributes: Self = this.set("selectionAttributes", js.undefined)
+    def setSelectionAttributesVarargs(value: js.Object*): Self = StObject.set(x, "selectionAttributes", js.Array(value :_*))
   }
 }

@@ -5,20 +5,27 @@ import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.ComponentResource
 import typings.pulumiPulumi.resourceMod.ResourceTransformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/runtime/stack", JSImport.Namespace)
-@js.native
-object stackMod extends js.Object {
+object stackMod {
   
+  @JSImport("@pulumi/pulumi/runtime/stack", "getStackResource")
+  @js.native
   def getStackResource(): js.UndefOr[Stack] = js.native
   
+  @JSImport("@pulumi/pulumi/runtime/stack", "registerStackTransformation")
+  @js.native
   def registerStackTransformation(t: ResourceTransformation): Unit = js.native
   
+  @JSImport("@pulumi/pulumi/runtime/stack", "rootPulumiStackTypeName")
+  @js.native
   val rootPulumiStackTypeName: /* "pulumi:pulumi:Stack" */ String = js.native
   
+  @JSImport("@pulumi/pulumi/runtime/stack", "runInPulumiStack")
+  @js.native
   def runInPulumiStack(init: js.Function0[js.Promise[_]]): js.Promise[js.UndefOr[Inputs]] = js.native
   
   /**

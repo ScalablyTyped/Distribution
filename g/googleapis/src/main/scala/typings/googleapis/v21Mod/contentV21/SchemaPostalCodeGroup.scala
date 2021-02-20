@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPostalCodeGroup extends js.Object {
+trait SchemaPostalCodeGroup extends StObject {
   
   /**
     * The CLDR territory code of the country the postal code group applies to.
@@ -32,39 +33,27 @@ object SchemaPostalCodeGroup {
   }
   
   @scala.inline
-  implicit class SchemaPostalCodeGroupOps[Self <: SchemaPostalCodeGroup] (val x: Self) extends AnyVal {
+  implicit class SchemaPostalCodeGroupMutableBuilder[Self <: SchemaPostalCodeGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setPostalCodeRanges(value: js.Array[SchemaPostalCodeRange]): Self = StObject.set(x, "postalCodeRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setPostalCodeRangesVarargs(value: SchemaPostalCodeRange*): Self = this.set("postalCodeRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setPostalCodeRanges(value: js.Array[SchemaPostalCodeRange]): Self = this.set("postalCodeRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalCodeRanges: Self = this.set("postalCodeRanges", js.undefined)
+    def setPostalCodeRangesVarargs(value: SchemaPostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
   }
 }

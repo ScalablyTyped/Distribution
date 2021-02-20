@@ -4,6 +4,7 @@ import typings.activexOffice.activexOfficeNumbers.`1`
 import typings.activexOffice.activexOfficeNumbers.`2`
 import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`3`
   - typings.activexOffice.activexOfficeNumbers.`1`
 */
-trait MsoRelativeNodePosition extends js.Object
+trait MsoRelativeNodePosition extends StObject
 object MsoRelativeNodePosition {
   
   @scala.inline

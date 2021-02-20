@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Failure extends js.Object {
+trait Failure extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the failed resource.
@@ -31,36 +32,24 @@ object Failure {
   }
   
   @scala.inline
-  implicit class FailureOps[Self <: Failure] (val x: Self) extends AnyVal {
+  implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

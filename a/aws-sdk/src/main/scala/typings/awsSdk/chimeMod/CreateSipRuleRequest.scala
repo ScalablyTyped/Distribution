@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSipRuleRequest extends js.Object {
+trait CreateSipRuleRequest extends StObject {
   
   /**
     * Enables or disables a rule. You must disable rules before you can delete them.
@@ -46,39 +47,27 @@ object CreateSipRuleRequest {
   }
   
   @scala.inline
-  implicit class CreateSipRuleRequestOps[Self <: CreateSipRuleRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSipRuleRequestMutableBuilder[Self <: CreateSipRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: SipRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SipRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setTargetApplications(value: SipRuleTargetApplicationList): Self = StObject.set(x, "TargetApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = this.set("TargetApplications", js.Array(value :_*))
+    def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
     
     @scala.inline
-    def setTargetApplications(value: SipRuleTargetApplicationList): Self = this.set("TargetApplications", value.asInstanceOf[js.Any])
+    def setTriggerType(value: SipRuleTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerType(value: SipRuleTriggerType): Self = this.set("TriggerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerValue(value: NonEmptyString): Self = this.set("TriggerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisabled(value: NullableBoolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    def setTriggerValue(value: NonEmptyString): Self = StObject.set(x, "TriggerValue", value.asInstanceOf[js.Any])
   }
 }

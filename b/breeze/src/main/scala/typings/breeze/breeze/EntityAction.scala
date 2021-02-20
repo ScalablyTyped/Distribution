@@ -2,6 +2,7 @@ package typings.breeze.breeze
 
 import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,54 +60,42 @@ object EntityAction {
   }
   
   @scala.inline
-  implicit class EntityActionOps[Self <: EntityAction] (val x: Self) extends AnyVal {
+  implicit class EntityActionMutableBuilder[Self <: EntityAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptChanges(value: EntityActionSymbol): Self = StObject.set(x, "AcceptChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttach(value: EntityActionSymbol): Self = StObject.set(x, "Attach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachOnImport(value: EntityActionSymbol): Self = StObject.set(x, "AttachOnImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptChanges(value: EntityActionSymbol): Self = this.set("AcceptChanges", value.asInstanceOf[js.Any])
+    def setAttachOnQuery(value: EntityActionSymbol): Self = StObject.set(x, "AttachOnQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttach(value: EntityActionSymbol): Self = this.set("Attach", value.asInstanceOf[js.Any])
+    def setClear(value: EntityActionSymbol): Self = StObject.set(x, "Clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachOnImport(value: EntityActionSymbol): Self = this.set("AttachOnImport", value.asInstanceOf[js.Any])
+    def setDetach(value: EntityActionSymbol): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachOnQuery(value: EntityActionSymbol): Self = this.set("AttachOnQuery", value.asInstanceOf[js.Any])
+    def setEntityStateChange(value: EntityActionSymbol): Self = StObject.set(x, "EntityStateChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: EntityActionSymbol): Self = this.set("Clear", value.asInstanceOf[js.Any])
+    def setMergeOnImport(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetach(value: EntityActionSymbol): Self = this.set("Detach", value.asInstanceOf[js.Any])
+    def setMergeOnQuery(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityStateChange(value: EntityActionSymbol): Self = this.set("EntityStateChange", value.asInstanceOf[js.Any])
+    def setMergeOnSave(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeOnImport(value: EntityActionSymbol): Self = this.set("MergeOnImport", value.asInstanceOf[js.Any])
+    def setPropertyChange(value: EntityActionSymbol): Self = StObject.set(x, "PropertyChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeOnQuery(value: EntityActionSymbol): Self = this.set("MergeOnQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMergeOnSave(value: EntityActionSymbol): Self = this.set("MergeOnSave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyChange(value: EntityActionSymbol): Self = this.set("PropertyChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejectChanges(value: EntityActionSymbol): Self = this.set("RejectChanges", value.asInstanceOf[js.Any])
+    def setRejectChanges(value: EntityActionSymbol): Self = StObject.set(x, "RejectChanges", value.asInstanceOf[js.Any])
   }
 }

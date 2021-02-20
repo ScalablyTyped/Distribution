@@ -1,6 +1,7 @@
 package typings.awsSdkClientKmsNode
 
 import typings.awsSdkClientKmsNode.kmsclientMod.KMSClient
+import typings.awsSdkClientKmsNode.kmsconfigurationMod.KMSConfiguration
 import typings.awsSdkClientKmsNode.typesCancelKeyDeletionInputMod.CancelKeyDeletionInput
 import typings.awsSdkClientKmsNode.typesCancelKeyDeletionOutputMod.CancelKeyDeletionOutput
 import typings.awsSdkClientKmsNode.typesCreateAliasInputMod.CreateAliasInput
@@ -71,16 +72,17 @@ import typings.awsSdkClientKmsNode.typesUpdateAliasInputMod.UpdateAliasInput
 import typings.awsSdkClientKmsNode.typesUpdateAliasOutputMod.UpdateAliasOutput
 import typings.awsSdkClientKmsNode.typesUpdateKeyDescriptionInputMod.UpdateKeyDescriptionInput
 import typings.awsSdkClientKmsNode.typesUpdateKeyDescriptionOutputMod.UpdateKeyDescriptionOutput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/KMS", JSImport.Namespace)
-@js.native
-object kmsMod extends js.Object {
+object kmsMod {
   
+  @JSImport("@aws-sdk/client-kms-node/KMS", "KMS")
   @js.native
-  class KMS () extends KMSClient {
+  class KMS protected () extends KMSClient {
+    def this(configuration: KMSConfiguration) = this()
     
     /**
       * <p>Cancels the deletion of a customer master key (CMK). When this operation is successful, the CMK is set to the <code>Disabled</code> state. To enable a CMK, use <a>EnableKey</a>. You cannot perform this operation on a CMK in a different AWS account.</p> <p>For more information about scheduling and canceling deletion of a CMK, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html">Deleting Customer Master Keys</a> in the <i>AWS Key Management Service Developer Guide</i>.</p> <p>The result of this operation varies with the key state of the CMK. For details, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/key-state.html">How Key State Affects Use of a Customer Master Key</a> in the <i>AWS Key Management Service Developer Guide</i>.</p>

@@ -1,31 +1,28 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewEncapsulation extends js.Object
+sealed trait ViewEncapsulation extends StObject
 @JSImport("@angular/compiler/src/compiler_facade_interface", "ViewEncapsulation")
 @js.native
-object ViewEncapsulation extends js.Object {
+object ViewEncapsulation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ViewEncapsulation with Double] = js.native
   
   @js.native
   sealed trait Emulated extends ViewEncapsulation
-  /* 0 */ @js.native
-  object Emulated extends TopLevel[Emulated with Double]
+  /* 0 */ val Emulated: typings.angularCompiler.compilerFacadeInterfaceMod.ViewEncapsulation.Emulated with Double = js.native
   
   @js.native
   sealed trait None extends ViewEncapsulation
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 2 */ val None: typings.angularCompiler.compilerFacadeInterfaceMod.ViewEncapsulation.None with Double = js.native
   
   @js.native
   sealed trait ShadowDom extends ViewEncapsulation
-  /* 3 */ @js.native
-  object ShadowDom extends TopLevel[ShadowDom with Double]
+  /* 3 */ val ShadowDom: typings.angularCompiler.compilerFacadeInterfaceMod.ViewEncapsulation.ShadowDom with Double = js.native
 }

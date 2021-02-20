@@ -1,12 +1,13 @@
 package typings.mz.anon
 
 import typings.mz.mzBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `2` extends js.Object {
+trait `2` extends StObject {
   
   var encoding: js.UndefOr[String | Null] = js.native
   
@@ -21,33 +22,21 @@ object `2` {
   }
   
   @scala.inline
-  implicit class `2Ops`[Self <: `2`] (val x: Self) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
-    
-    @scala.inline
-    def setWithFileTypes(value: `false`): Self = this.set("withFileTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithFileTypes: Self = this.set("withFileTypes", js.undefined)
+    def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
   }
 }

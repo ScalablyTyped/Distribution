@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.transformNodeMod.TransformNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/trailMesh", JSImport.Namespace)
-@js.native
-object trailMeshMod extends js.Object {
+object trailMeshMod {
   
+  @JSImport("babylonjs/Meshes/trailMesh", "TrailMesh")
   @js.native
   class TrailMesh protected () extends Mesh {
     /**
@@ -110,8 +110,7 @@ object trailMeshMod extends js.Object {
     def update(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object TrailMesh extends js.Object {
+  object TrailMesh {
     
     /**
       * Parses a serialized trail mesh
@@ -119,6 +118,8 @@ object trailMeshMod extends js.Object {
       * @param scene the scene to create the trail mesh in
       * @returns the created trail mesh
       */
+    @JSImport("babylonjs/Meshes/trailMesh", "TrailMesh.Parse")
+    @js.native
     def Parse(parsedMesh: js.Any, scene: Scene): TrailMesh = js.native
   }
 }

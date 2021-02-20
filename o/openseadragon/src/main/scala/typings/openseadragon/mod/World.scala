@@ -4,6 +4,7 @@ import typings.openseadragon.anon.Columns
 import typings.openseadragon.anon.Index
 import typings.std.Event
 import typings.std.EventSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

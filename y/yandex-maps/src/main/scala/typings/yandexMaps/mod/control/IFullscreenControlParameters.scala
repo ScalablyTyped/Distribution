@@ -3,12 +3,13 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.anon.Expanded
 import typings.yandexMaps.anon.IBaseButtonParametersOptiAdjustMapMargin
 import typings.yandexMaps.anon.Title
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFullscreenControlParameters extends js.Object {
+trait IFullscreenControlParameters extends StObject {
   
   var data: js.UndefOr[Title] = js.native
   
@@ -25,36 +26,24 @@ object IFullscreenControlParameters {
   }
   
   @scala.inline
-  implicit class IFullscreenControlParametersOps[Self <: IFullscreenControlParameters] (val x: Self) extends AnyVal {
+  implicit class IFullscreenControlParametersMutableBuilder[Self <: IFullscreenControlParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: IBaseButtonParametersOptiAdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Title): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IBaseButtonParametersOptiAdjustMapMargin): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setState(value: Expanded): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

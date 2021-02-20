@@ -2,13 +2,14 @@ package typings.dashjs.mod
 
 import typings.dashjs.dashjsStrings.audio
 import typings.dashjs.dashjsStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dashjs", "BitrateInfo")
 @js.native
-class BitrateInfo () extends js.Object {
+class BitrateInfo () extends StObject {
   
   var bitrate: Double = js.native
   

@@ -10,16 +10,16 @@ import typings.firebaseDatabase.queryMod.Query
 import typings.firebaseDatabase.viewCacheMod.ViewCache
 import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/View", JSImport.Namespace)
-@js.native
-object viewMod extends js.Object {
+object viewMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/View", "View")
   @js.native
-  class View protected () extends js.Object {
+  class View protected () extends StObject {
     /**
       *
       * @param {!Query} query_

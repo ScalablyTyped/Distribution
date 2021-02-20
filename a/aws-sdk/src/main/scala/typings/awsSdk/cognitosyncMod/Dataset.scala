@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dataset extends js.Object {
+trait Dataset extends StObject {
   
   /**
     * Date on which the dataset was created.
@@ -51,60 +52,48 @@ object Dataset {
   }
   
   @scala.inline
-  implicit class DatasetOps[Self <: Dataset] (val x: Self) extends AnyVal {
+  implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Date): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDataStorageUndefined: Self = StObject.set(x, "DataStorage", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataStorage(value: Long): Self = this.set("DataStorage", value.asInstanceOf[js.Any])
+    def setDatasetNameUndefined: Self = StObject.set(x, "DatasetName", js.undefined)
     
     @scala.inline
-    def deleteDataStorage: Self = this.set("DataStorage", js.undefined)
+    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetName(value: DatasetName): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
     @scala.inline
-    def deleteDatasetName: Self = this.set("DatasetName", js.undefined)
+    def setLastModifiedBy(value: String): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
+    def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
     @scala.inline
-    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
+    def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBy(value: String): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    def setNumRecords(value: Long): Self = StObject.set(x, "NumRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: Date): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
-    
-    @scala.inline
-    def setNumRecords(value: Long): Self = this.set("NumRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumRecords: Self = this.set("NumRecords", js.undefined)
+    def setNumRecordsUndefined: Self = StObject.set(x, "NumRecords", js.undefined)
   }
 }

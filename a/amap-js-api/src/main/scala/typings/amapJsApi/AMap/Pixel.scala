@@ -1,12 +1,13 @@
 package typings.amapJsApi.AMap
 
 import typings.amapJsApi.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pixel extends js.Object {
+trait Pixel extends StObject {
   
   // internal
   def add(offset: X): Pixel = js.native

@@ -1,6 +1,7 @@
 package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import typings.gatsbyPluginUtils.anon.Global
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,57 +56,45 @@ object ReferenceOptions {
   }
   
   @scala.inline
-  implicit class ReferenceOptionsOps[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
+  implicit class ReferenceOptionsMutableBuilder[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjust(value: /* value */ js.Any => _): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAncestor(value: Double): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjust(value: /* value */ js.Any => _): Self = this.set("adjust", js.Any.fromFunction1(value))
+    def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
     
     @scala.inline
-    def deleteAdjust: Self = this.set("adjust", js.undefined)
+    def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncestor(value: Double): Self = this.set("ancestor", value.asInstanceOf[js.Any])
+    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
     @scala.inline
-    def deleteAncestor: Self = this.set("ancestor", js.undefined)
+    def setIterables(value: Boolean): Self = StObject.set(x, "iterables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIn(value: Boolean): Self = this.set("in", value.asInstanceOf[js.Any])
+    def setIterablesUndefined: Self = StObject.set(x, "iterables", js.undefined)
     
     @scala.inline
-    def deleteIn: Self = this.set("in", js.undefined)
+    def setMap(value: js.Array[js.Tuple2[_, _]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterables(value: Boolean): Self = this.set("iterables", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteIterables: Self = this.set("iterables", js.undefined)
+    def setMapVarargs(value: (js.Tuple2[js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
     
     @scala.inline
-    def setMapVarargs(value: (js.Tuple2[js.Any, js.Any])*): Self = this.set("map", js.Array(value :_*))
+    def setPrefix(value: Global): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: js.Array[js.Tuple2[_, _]]): Self = this.set("map", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: Global): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

@@ -1,20 +1,36 @@
 package typings.reactSpinners
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactSpinners.interfacesMod.LoaderHeightWidthRadiusProps
 import typings.reactSpinners.interfacesMod.StyleFunction
 import typings.reactSpinners.interfacesMod.StyleFunctionWithIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-spinners/FadeLoader", JSImport.Namespace)
-@js.native
-object fadeLoaderMod extends js.Object {
+object fadeLoaderMod {
+  
+  @JSImport("react-spinners/FadeLoader", JSImport.Default)
+  @js.native
+  class default () extends Loader
+  object default {
+    
+    @JSImport("react-spinners/FadeLoader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("react-spinners/FadeLoader", "default.defaultProps")
+    @js.native
+    def defaultProps: LoaderHeightWidthRadiusProps = js.native
+    @scala.inline
+    def defaultProps_=(x: LoaderHeightWidthRadiusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Loader
-    extends Component[LoaderHeightWidthRadiusProps, js.Object, js.Any] {
+    extends PureComponent[LoaderHeightWidthRadiusProps, js.Object, js.Any] {
     
     var a: StyleFunction = js.native
     
@@ -39,14 +55,5 @@ object fadeLoaderMod extends js.Object {
     var style: StyleFunctionWithIndex = js.native
     
     var wrapper: StyleFunction = js.native
-  }
-  
-  @js.native
-  class default () extends Loader
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: LoaderHeightWidthRadiusProps = js.native
   }
 }

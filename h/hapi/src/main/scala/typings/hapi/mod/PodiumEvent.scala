@@ -1,12 +1,13 @@
 package typings.hapi.mod
 
 import typings.podium.mod.Listener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PodiumEvent[K /* <: String */, T] extends js.Object {
+trait PodiumEvent[K /* <: String */, T] extends StObject {
   
   def emit(criteria: K, listener: js.Function1[/* value */ T, Unit]): Unit = js.native
   

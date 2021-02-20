@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultWorkspaceCreationProperties extends js.Object {
+trait DefaultWorkspaceCreationProperties extends StObject {
   
   /**
     * The identifier of the default security group to apply to WorkSpaces when they are created. For more information, see  Security Groups for Your WorkSpaces.
@@ -46,54 +47,42 @@ object DefaultWorkspaceCreationProperties {
   }
   
   @scala.inline
-  implicit class DefaultWorkspaceCreationPropertiesOps[Self <: DefaultWorkspaceCreationProperties] (val x: Self) extends AnyVal {
+  implicit class DefaultWorkspaceCreationPropertiesMutableBuilder[Self <: DefaultWorkspaceCreationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "CustomSecurityGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "CustomSecurityGroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultOu(value: DefaultOu): Self = StObject.set(x, "DefaultOu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSecurityGroupId(value: SecurityGroupId): Self = this.set("CustomSecurityGroupId", value.asInstanceOf[js.Any])
+    def setDefaultOuUndefined: Self = StObject.set(x, "DefaultOu", js.undefined)
     
     @scala.inline
-    def deleteCustomSecurityGroupId: Self = this.set("CustomSecurityGroupId", js.undefined)
+    def setEnableInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableInternetAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOu(value: DefaultOu): Self = this.set("DefaultOu", value.asInstanceOf[js.Any])
+    def setEnableInternetAccessUndefined: Self = StObject.set(x, "EnableInternetAccess", js.undefined)
     
     @scala.inline
-    def deleteDefaultOu: Self = this.set("DefaultOu", js.undefined)
+    def setEnableMaintenanceMode(value: BooleanObject): Self = StObject.set(x, "EnableMaintenanceMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableInternetAccess(value: BooleanObject): Self = this.set("EnableInternetAccess", value.asInstanceOf[js.Any])
+    def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "EnableMaintenanceMode", js.undefined)
     
     @scala.inline
-    def deleteEnableInternetAccess: Self = this.set("EnableInternetAccess", js.undefined)
+    def setEnableWorkDocs(value: BooleanObject): Self = StObject.set(x, "EnableWorkDocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMaintenanceMode(value: BooleanObject): Self = this.set("EnableMaintenanceMode", value.asInstanceOf[js.Any])
+    def setEnableWorkDocsUndefined: Self = StObject.set(x, "EnableWorkDocs", js.undefined)
     
     @scala.inline
-    def deleteEnableMaintenanceMode: Self = this.set("EnableMaintenanceMode", js.undefined)
+    def setUserEnabledAsLocalAdministrator(value: BooleanObject): Self = StObject.set(x, "UserEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableWorkDocs(value: BooleanObject): Self = this.set("EnableWorkDocs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableWorkDocs: Self = this.set("EnableWorkDocs", js.undefined)
-    
-    @scala.inline
-    def setUserEnabledAsLocalAdministrator(value: BooleanObject): Self = this.set("UserEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEnabledAsLocalAdministrator: Self = this.set("UserEnabledAsLocalAdministrator", js.undefined)
+    def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "UserEnabledAsLocalAdministrator", js.undefined)
   }
 }

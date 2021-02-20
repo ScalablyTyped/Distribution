@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRulesOutput extends js.Object {
+trait DescribeRulesOutput extends StObject {
   
   /**
     * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
@@ -26,33 +27,21 @@ object DescribeRulesOutput {
   }
   
   @scala.inline
-  implicit class DescribeRulesOutputOps[Self <: DescribeRulesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeRulesOutputMutableBuilder[Self <: DescribeRulesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = this.set("Rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: Rules): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
+    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initialization parameters for creating a new disk.
   */
 @js.native
-trait SchemaNewDiskInitializeParams extends js.Object {
+trait SchemaNewDiskInitializeParams extends StObject {
   
   /**
     * The size of the created disk in gigabytes.
@@ -42,36 +43,24 @@ object SchemaNewDiskInitializeParams {
   }
   
   @scala.inline
-  implicit class SchemaNewDiskInitializeParamsOps[Self <: SchemaNewDiskInitializeParams] (val x: Self) extends AnyVal {
+  implicit class SchemaNewDiskInitializeParamsMutableBuilder[Self <: SchemaNewDiskInitializeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskType: Self = this.set("diskType", js.undefined)
-    
-    @scala.inline
-    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
   }
 }

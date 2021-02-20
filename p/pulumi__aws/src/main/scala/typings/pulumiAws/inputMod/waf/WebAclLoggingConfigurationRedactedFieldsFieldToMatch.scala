@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.waf
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclLoggingConfigurationRedactedFieldsFieldToMatch extends js.Object {
+trait WebAclLoggingConfigurationRedactedFieldsFieldToMatch extends StObject {
   
   /**
     * When the value of `type` is `HEADER`, enter the name of the header that you want the WAF to search, for example, `User-Agent` or `Referer`. If the value of `type` is any other value, omit `data`.
@@ -28,27 +29,15 @@ object WebAclLoggingConfigurationRedactedFieldsFieldToMatch {
   }
   
   @scala.inline
-  implicit class WebAclLoggingConfigurationRedactedFieldsFieldToMatchOps[Self <: WebAclLoggingConfigurationRedactedFieldsFieldToMatch] (val x: Self) extends AnyVal {
+  implicit class WebAclLoggingConfigurationRedactedFieldsFieldToMatchMutableBuilder[Self <: WebAclLoggingConfigurationRedactedFieldsFieldToMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Input[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setData(value: Input[String]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

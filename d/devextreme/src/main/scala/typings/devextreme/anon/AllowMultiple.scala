@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowMultiple extends js.Object {
+trait AllowMultiple extends StObject {
   
   var allowMultiple: js.UndefOr[Boolean] = js.native
   
@@ -35,74 +36,62 @@ object AllowMultiple {
   }
   
   @scala.inline
-  implicit class AllowMultipleOps[Self <: AllowMultiple] (val x: Self) extends AnyVal {
+  implicit class AllowMultipleMutableBuilder[Self <: AllowMultiple] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorExpr(value: String): Self = StObject.set(x, "colorExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiple(value: Boolean): Self = this.set("allowMultiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowMultiple: Self = this.set("allowMultiple", js.undefined)
-    
-    @scala.inline
-    def setColorExpr(value: String): Self = this.set("colorExpr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorExpr: Self = this.set("colorExpr", js.undefined)
-    
-    @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = this.set("dataSource", js.Array(value :_*))
+    def setColorExprUndefined: Self = StObject.set(x, "colorExpr", js.undefined)
     
     @scala.inline
     def setDataSource(
       value: String | js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
-    ): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def setDisplayExprFunction1(value: /* resource */ js.Any => String): Self = this.set("displayExpr", js.Any.fromFunction1(value))
+    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayExpr(value: String | (js.Function1[/* resource */ js.Any, String])): Self = this.set("displayExpr", value.asInstanceOf[js.Any])
+    def setDisplayExpr(value: String | (js.Function1[/* resource */ js.Any, String])): Self = StObject.set(x, "displayExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayExpr: Self = this.set("displayExpr", js.undefined)
+    def setDisplayExprFunction1(value: /* resource */ js.Any => String): Self = StObject.set(x, "displayExpr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFieldExpr(value: String): Self = this.set("fieldExpr", value.asInstanceOf[js.Any])
+    def setDisplayExprUndefined: Self = StObject.set(x, "displayExpr", js.undefined)
     
     @scala.inline
-    def deleteFieldExpr: Self = this.set("fieldExpr", js.undefined)
+    def setFieldExpr(value: String): Self = StObject.set(x, "fieldExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setFieldExprUndefined: Self = StObject.set(x, "fieldExpr", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseColorAsDefault(value: Boolean): Self = this.set("useColorAsDefault", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteUseColorAsDefault: Self = this.set("useColorAsDefault", js.undefined)
+    def setUseColorAsDefault(value: Boolean): Self = StObject.set(x, "useColorAsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueExpr(value: String | js.Function): Self = this.set("valueExpr", value.asInstanceOf[js.Any])
+    def setUseColorAsDefaultUndefined: Self = StObject.set(x, "useColorAsDefault", js.undefined)
     
     @scala.inline
-    def deleteValueExpr: Self = this.set("valueExpr", js.undefined)
+    def setValueExpr(value: String | js.Function): Self = StObject.set(x, "valueExpr", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueExprUndefined: Self = StObject.set(x, "valueExpr", js.undefined)
   }
 }

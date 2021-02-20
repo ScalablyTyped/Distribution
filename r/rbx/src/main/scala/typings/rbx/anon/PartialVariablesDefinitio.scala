@@ -1,12 +1,13 @@
 package typings.rbx.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rbx.rbx/base/helpers/variables.VariablesDefinitions> */
 @js.native
-trait PartialVariablesDefinitio extends js.Object {
+trait PartialVariablesDefinitio extends StObject {
   
   var badgeSizes: js.UndefOr[ReadonlyArraystringnumber] = js.native
   
@@ -41,90 +42,78 @@ object PartialVariablesDefinitio {
   }
   
   @scala.inline
-  implicit class PartialVariablesDefinitioOps[Self <: PartialVariablesDefinitio] (val x: Self) extends AnyVal {
+  implicit class PartialVariablesDefinitioMutableBuilder[Self <: PartialVariablesDefinitio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadgeSizes(value: ReadonlyArraystringnumber): Self = StObject.set(x, "badgeSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeSizesUndefined: Self = StObject.set(x, "badgeSizes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakpoints(value: ReadonlyArraystringnumber): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeSizes(value: ReadonlyArraystringnumber): Self = this.set("badgeSizes", value.asInstanceOf[js.Any])
+    def setBreakpointsLimited(value: ReadonlyArraystringnumber): Self = StObject.set(x, "breakpointsLimited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadgeSizes: Self = this.set("badgeSizes", js.undefined)
+    def setBreakpointsLimitedUndefined: Self = StObject.set(x, "breakpointsLimited", js.undefined)
     
     @scala.inline
-    def setBreakpoints(value: ReadonlyArraystringnumber): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
     @scala.inline
-    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    def setColors(value: ReadonlyArraystringnumber): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakpointsLimited(value: ReadonlyArraystringnumber): Self = this.set("breakpointsLimited", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteBreakpointsLimited: Self = this.set("breakpointsLimited", js.undefined)
+    def setDisplays(value: ReadonlyArraystringnumber): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: ReadonlyArraystringnumber): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setDisplaysUndefined: Self = StObject.set(x, "displays", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setFloatPulledAlignments(value: ReadonlyArraystringnumber): Self = StObject.set(x, "floatPulledAlignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplays(value: ReadonlyArraystringnumber): Self = this.set("displays", value.asInstanceOf[js.Any])
+    def setFloatPulledAlignmentsUndefined: Self = StObject.set(x, "floatPulledAlignments", js.undefined)
     
     @scala.inline
-    def deleteDisplays: Self = this.set("displays", js.undefined)
+    def setShades(value: ReadonlyArraystringnumber): Self = StObject.set(x, "shades", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatPulledAlignments(value: ReadonlyArraystringnumber): Self = this.set("floatPulledAlignments", value.asInstanceOf[js.Any])
+    def setShadesUndefined: Self = StObject.set(x, "shades", js.undefined)
     
     @scala.inline
-    def deleteFloatPulledAlignments: Self = this.set("floatPulledAlignments", js.undefined)
+    def setTextAlignments(value: ReadonlyArraystringnumber): Self = StObject.set(x, "textAlignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShades(value: ReadonlyArraystringnumber): Self = this.set("shades", value.asInstanceOf[js.Any])
+    def setTextAlignmentsUndefined: Self = StObject.set(x, "textAlignments", js.undefined)
     
     @scala.inline
-    def deleteShades: Self = this.set("shades", js.undefined)
+    def setTextSizes(value: ReadonlyArraystringnumber): Self = StObject.set(x, "textSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlignments(value: ReadonlyArraystringnumber): Self = this.set("textAlignments", value.asInstanceOf[js.Any])
+    def setTextSizesUndefined: Self = StObject.set(x, "textSizes", js.undefined)
     
     @scala.inline
-    def deleteTextAlignments: Self = this.set("textAlignments", js.undefined)
+    def setTextTransforms(value: ReadonlyArraystringnumber): Self = StObject.set(x, "textTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSizes(value: ReadonlyArraystringnumber): Self = this.set("textSizes", value.asInstanceOf[js.Any])
+    def setTextTransformsUndefined: Self = StObject.set(x, "textTransforms", js.undefined)
     
     @scala.inline
-    def deleteTextSizes: Self = this.set("textSizes", js.undefined)
+    def setTextWeights(value: ReadonlyArraystringnumber): Self = StObject.set(x, "textWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextTransforms(value: ReadonlyArraystringnumber): Self = this.set("textTransforms", value.asInstanceOf[js.Any])
+    def setTextWeightsUndefined: Self = StObject.set(x, "textWeights", js.undefined)
     
     @scala.inline
-    def deleteTextTransforms: Self = this.set("textTransforms", js.undefined)
+    def setTooltipPositions(value: ReadonlyArraystringnumber): Self = StObject.set(x, "tooltipPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextWeights(value: ReadonlyArraystringnumber): Self = this.set("textWeights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextWeights: Self = this.set("textWeights", js.undefined)
-    
-    @scala.inline
-    def setTooltipPositions(value: ReadonlyArraystringnumber): Self = this.set("tooltipPositions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipPositions: Self = this.set("tooltipPositions", js.undefined)
+    def setTooltipPositionsUndefined: Self = StObject.set(x, "tooltipPositions", js.undefined)
   }
 }

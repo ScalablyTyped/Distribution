@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChildWorkflowExecutionFailedEventAttributes extends js.Object {
+trait ChildWorkflowExecutionFailedEventAttributes extends StObject {
   
   /**
     * The details of the failure (if provided).
@@ -51,42 +52,30 @@ object ChildWorkflowExecutionFailedEventAttributes {
   }
   
   @scala.inline
-  implicit class ChildWorkflowExecutionFailedEventAttributesOps[Self <: ChildWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class ChildWorkflowExecutionFailedEventAttributesMutableBuilder[Self <: ChildWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiatedEventId(value: EventId): Self = this.set("initiatedEventId", value.asInstanceOf[js.Any])
+    def setReason(value: FailureReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def setWorkflowExecution(value: WorkflowExecution): Self = this.set("workflowExecution", value.asInstanceOf[js.Any])
+    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = this.set("workflowType", value.asInstanceOf[js.Any])
+    def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Data): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
-    
-    @scala.inline
-    def setReason(value: FailureReason): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionTypeSettings extends js.Object {
+trait ActionTypeSettings extends StObject {
   
   /**
     * The URL returned to the AWS CodePipeline console that provides a deep link to the resources of the external system, such as the configuration page for an AWS CodeDeploy deployment group. This link is provided as part of the action display in the pipeline.
@@ -36,42 +37,30 @@ object ActionTypeSettings {
   }
   
   @scala.inline
-  implicit class ActionTypeSettingsOps[Self <: ActionTypeSettings] (val x: Self) extends AnyVal {
+  implicit class ActionTypeSettingsMutableBuilder[Self <: ActionTypeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "entityUrlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityUrlTemplateUndefined: Self = StObject.set(x, "entityUrlTemplate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "executionUrlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityUrlTemplate(value: UrlTemplate): Self = this.set("entityUrlTemplate", value.asInstanceOf[js.Any])
+    def setExecutionUrlTemplateUndefined: Self = StObject.set(x, "executionUrlTemplate", js.undefined)
     
     @scala.inline
-    def deleteEntityUrlTemplate: Self = this.set("entityUrlTemplate", js.undefined)
+    def setRevisionUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "revisionUrlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionUrlTemplate(value: UrlTemplate): Self = this.set("executionUrlTemplate", value.asInstanceOf[js.Any])
+    def setRevisionUrlTemplateUndefined: Self = StObject.set(x, "revisionUrlTemplate", js.undefined)
     
     @scala.inline
-    def deleteExecutionUrlTemplate: Self = this.set("executionUrlTemplate", js.undefined)
+    def setThirdPartyConfigurationUrl(value: Url): Self = StObject.set(x, "thirdPartyConfigurationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionUrlTemplate(value: UrlTemplate): Self = this.set("revisionUrlTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionUrlTemplate: Self = this.set("revisionUrlTemplate", js.undefined)
-    
-    @scala.inline
-    def setThirdPartyConfigurationUrl(value: Url): Self = this.set("thirdPartyConfigurationUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirdPartyConfigurationUrl: Self = this.set("thirdPartyConfigurationUrl", js.undefined)
+    def setThirdPartyConfigurationUrlUndefined: Self = StObject.set(x, "thirdPartyConfigurationUrl", js.undefined)
   }
 }

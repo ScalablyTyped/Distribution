@@ -5,13 +5,14 @@ import typings.auth0Js.anon.Connection
 import typings.auth0Js.anon.Email
 import typings.auth0Js.anon.Hash
 import typings.auth0Js.anon.ResponseMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Popup")
 @js.native
-class Popup protected () extends js.Object {
+class Popup protected () extends StObject {
   def this(client: js.Any, options: js.Any) = this()
   
   /**

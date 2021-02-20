@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the platforms that a specified type should be supported in, as used by Windows Runtime attributes and metadata. */
 @JSGlobal("Windows.Foundation.Metadata.Platform")
 @js.native
-object Platform extends js.Object {
+object Platform extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Foundation.Metadata.Platform with Double] = js.native

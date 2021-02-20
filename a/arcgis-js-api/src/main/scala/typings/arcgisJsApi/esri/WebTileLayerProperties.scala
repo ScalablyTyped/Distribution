@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,45 +50,33 @@ object WebTileLayerProperties {
   }
   
   @scala.inline
-  implicit class WebTileLayerPropertiesOps[Self <: WebTileLayerProperties] (val x: Self) extends AnyVal {
+  implicit class WebTileLayerPropertiesMutableBuilder[Self <: WebTileLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubDomains(value: js.Array[String]): Self = StObject.set(x, "subDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setSubDomainsUndefined: Self = StObject.set(x, "subDomains", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setSubDomainsVarargs(value: String*): Self = StObject.set(x, "subDomains", js.Array(value :_*))
     
     @scala.inline
-    def setSubDomainsVarargs(value: String*): Self = this.set("subDomains", js.Array(value :_*))
+    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubDomains(value: js.Array[String]): Self = this.set("subDomains", value.asInstanceOf[js.Any])
+    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
     
     @scala.inline
-    def deleteSubDomains: Self = this.set("subDomains", js.undefined)
+    def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileInfo: Self = this.set("tileInfo", js.undefined)
-    
-    @scala.inline
-    def setUrlTemplate(value: String): Self = this.set("urlTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlTemplate: Self = this.set("urlTemplate", js.undefined)
+    def setUrlTemplateUndefined: Self = StObject.set(x, "urlTemplate", js.undefined)
   }
 }

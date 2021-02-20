@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnusedRoboDirective extends js.Object {
+trait UnusedRoboDirective extends StObject {
   
   /** The name of the resource that was unused. */
   var resourceName: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object UnusedRoboDirective {
   }
   
   @scala.inline
-  implicit class UnusedRoboDirectiveOps[Self <: UnusedRoboDirective] (val x: Self) extends AnyVal {
+  implicit class UnusedRoboDirectiveMutableBuilder[Self <: UnusedRoboDirective] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

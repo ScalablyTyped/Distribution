@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientClassroom.anon.CourseIdFields
 import typings.maximMazurokGapiClientClassroom.anon.CourseWorkMaterialStates
 import typings.maximMazurokGapiClientClassroom.anon.Fields
 import typings.maximMazurokGapiClientClassroom.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CourseWorkMaterialsResource extends js.Object {
+trait CourseWorkMaterialsResource extends StObject {
   
   def create(request: Alt, body: CourseWorkMaterial): Request[CourseWorkMaterial] = js.native
   /**

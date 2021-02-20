@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineExecution extends js.Object {
+trait PipelineExecution extends StObject {
   
   /**
     * A list of ArtifactRevision objects included in a pipeline execution.
@@ -41,51 +42,39 @@ object PipelineExecution {
   }
   
   @scala.inline
-  implicit class PipelineExecutionOps[Self <: PipelineExecution] (val x: Self) extends AnyVal {
+  implicit class PipelineExecutionMutableBuilder[Self <: PipelineExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactRevisions(value: ArtifactRevisionList): Self = StObject.set(x, "artifactRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactRevisionsUndefined: Self = StObject.set(x, "artifactRevisions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactRevisionsVarargs(value: ArtifactRevision*): Self = StObject.set(x, "artifactRevisions", js.Array(value :_*))
     
     @scala.inline
-    def setArtifactRevisionsVarargs(value: ArtifactRevision*): Self = this.set("artifactRevisions", js.Array(value :_*))
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactRevisions(value: ArtifactRevisionList): Self = this.set("artifactRevisions", value.asInstanceOf[js.Any])
+    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
     
     @scala.inline
-    def deleteArtifactRevisions: Self = this.set("artifactRevisions", js.undefined)
+    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
     
     @scala.inline
-    def deletePipelineExecutionId: Self = this.set("pipelineExecutionId", js.undefined)
+    def setPipelineVersion(value: PipelineVersion): Self = StObject.set(x, "pipelineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    def setPipelineVersionUndefined: Self = StObject.set(x, "pipelineVersion", js.undefined)
     
     @scala.inline
-    def deletePipelineName: Self = this.set("pipelineName", js.undefined)
+    def setStatus(value: PipelineExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineVersion(value: PipelineVersion): Self = this.set("pipelineVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineVersion: Self = this.set("pipelineVersion", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: PipelineExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelDataGridCell
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcelCell extends js.Object {
+trait ExcelCell extends StObject {
   
   var excelCell: js.UndefOr[js.Any] = js.native
   
@@ -21,30 +22,18 @@ object ExcelCell {
   }
   
   @scala.inline
-  implicit class ExcelCellOps[Self <: ExcelCell] (val x: Self) extends AnyVal {
+  implicit class ExcelCellMutableBuilder[Self <: ExcelCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcelCell(value: js.Any): Self = StObject.set(x, "excelCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcelCellUndefined: Self = StObject.set(x, "excelCell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridCell(value: ExcelDataGridCell): Self = StObject.set(x, "gridCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelCell(value: js.Any): Self = this.set("excelCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcelCell: Self = this.set("excelCell", js.undefined)
-    
-    @scala.inline
-    def setGridCell(value: ExcelDataGridCell): Self = this.set("gridCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridCell: Self = this.set("gridCell", js.undefined)
+    def setGridCellUndefined: Self = StObject.set(x, "gridCell", js.undefined)
   }
 }

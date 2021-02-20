@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Engines/Processors/shaderCodeCursor", JSImport.Namespace)
-@js.native
-object shaderCodeCursorMod extends js.Object {
+object shaderCodeCursorMod {
   
+  @JSImport("babylonjs/Engines/Processors/shaderCodeCursor", "ShaderCodeCursor")
   @js.native
-  class ShaderCodeCursor () extends js.Object {
+  class ShaderCodeCursor () extends StObject {
     
     var _lines: js.Any = js.native
     

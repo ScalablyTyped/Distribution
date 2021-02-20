@@ -2,13 +2,14 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleDocString
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.PickleStepArgument.IPickleTable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PickleStepArgument. */
 @js.native
-trait IPickleStepArgument extends js.Object {
+trait IPickleStepArgument extends StObject {
   
   /** PickleStepArgument dataTable */
   var dataTable: js.UndefOr[IPickleTable | Null] = js.native
@@ -25,36 +26,24 @@ object IPickleStepArgument {
   }
   
   @scala.inline
-  implicit class IPickleStepArgumentOps[Self <: IPickleStepArgument] (val x: Self) extends AnyVal {
+  implicit class IPickleStepArgumentMutableBuilder[Self <: IPickleStepArgument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataTable(value: IPickleTable): Self = StObject.set(x, "dataTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTableNull: Self = StObject.set(x, "dataTable", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTableUndefined: Self = StObject.set(x, "dataTable", js.undefined)
     
     @scala.inline
-    def setDataTable(value: IPickleTable): Self = this.set("dataTable", value.asInstanceOf[js.Any])
+    def setDocString(value: IPickleDocString): Self = StObject.set(x, "docString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataTable: Self = this.set("dataTable", js.undefined)
+    def setDocStringNull: Self = StObject.set(x, "docString", null)
     
     @scala.inline
-    def setDataTableNull: Self = this.set("dataTable", null)
-    
-    @scala.inline
-    def setDocString(value: IPickleDocString): Self = this.set("docString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocString: Self = this.set("docString", js.undefined)
-    
-    @scala.inline
-    def setDocStringNull: Self = this.set("docString", null)
+    def setDocStringUndefined: Self = StObject.set(x, "docString", js.undefined)
   }
 }

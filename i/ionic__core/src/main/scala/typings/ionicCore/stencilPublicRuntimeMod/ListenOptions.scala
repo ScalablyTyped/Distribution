@@ -1,11 +1,12 @@
 package typings.ionicCore.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenOptions extends js.Object {
+trait ListenOptions extends StObject {
   
   /**
     * Event listener attached with `@Listen` does not "capture" by default,
@@ -40,36 +41,24 @@ object ListenOptions {
   }
   
   @scala.inline
-  implicit class ListenOptionsOps[Self <: ListenOptions] (val x: Self) extends AnyVal {
+  implicit class ListenOptionsMutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
     
     @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
+    def setTarget(value: ListenTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassive(value: Boolean): Self = this.set("passive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassive: Self = this.set("passive", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: ListenTargetOptions): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

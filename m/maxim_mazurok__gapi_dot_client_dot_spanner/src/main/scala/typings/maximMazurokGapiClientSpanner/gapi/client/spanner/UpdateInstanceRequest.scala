@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateInstanceRequest extends js.Object {
+trait UpdateInstanceRequest extends StObject {
   
   /**
     * Required. A mask specifying which fields in Instance should be updated. The field mask must always be specified; this prevents any future fields in Instance from being erased
@@ -25,30 +26,18 @@ object UpdateInstanceRequest {
   }
   
   @scala.inline
-  implicit class UpdateInstanceRequestOps[Self <: UpdateInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateInstanceRequestMutableBuilder[Self <: UpdateInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMask(value: String): Self = this.set("fieldMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldMask: Self = this.set("fieldMask", js.undefined)
-    
-    @scala.inline
-    def setInstance(value: Instance): Self = this.set("instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }
 }

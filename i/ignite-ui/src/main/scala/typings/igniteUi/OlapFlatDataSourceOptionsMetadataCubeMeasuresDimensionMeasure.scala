@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure {
   }
   
   @scala.inline
-  implicit class OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasureOps[Self <: OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure] (val x: Self) extends AnyVal {
+  implicit class OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasureMutableBuilder[Self <: OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregator(value: js.Function): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregatorUndefined: Self = StObject.set(x, "aggregator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregator(value: js.Function): Self = this.set("aggregator", value.asInstanceOf[js.Any])
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def deleteAggregator: Self = this.set("aggregator", js.undefined)
+    def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFolder(value: String): Self = this.set("displayFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayFolder: Self = this.set("displayFolder", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

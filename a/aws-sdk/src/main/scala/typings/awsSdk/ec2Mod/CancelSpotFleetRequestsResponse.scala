@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelSpotFleetRequestsResponse extends js.Object {
+trait CancelSpotFleetRequestsResponse extends StObject {
   
   /**
     * Information about the Spot Fleet requests that are successfully canceled.
@@ -26,36 +27,24 @@ object CancelSpotFleetRequestsResponse {
   }
   
   @scala.inline
-  implicit class CancelSpotFleetRequestsResponseOps[Self <: CancelSpotFleetRequestsResponse] (val x: Self) extends AnyVal {
+  implicit class CancelSpotFleetRequestsResponseMutableBuilder[Self <: CancelSpotFleetRequestsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccessfulFleetRequests(value: CancelSpotFleetRequestsSuccessSet): Self = StObject.set(x, "SuccessfulFleetRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessfulFleetRequestsUndefined: Self = StObject.set(x, "SuccessfulFleetRequests", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = StObject.set(x, "SuccessfulFleetRequests", js.Array(value :_*))
     
     @scala.inline
-    def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = this.set("SuccessfulFleetRequests", js.Array(value :_*))
+    def setUnsuccessfulFleetRequests(value: CancelSpotFleetRequestsErrorSet): Self = StObject.set(x, "UnsuccessfulFleetRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfulFleetRequests(value: CancelSpotFleetRequestsSuccessSet): Self = this.set("SuccessfulFleetRequests", value.asInstanceOf[js.Any])
+    def setUnsuccessfulFleetRequestsUndefined: Self = StObject.set(x, "UnsuccessfulFleetRequests", js.undefined)
     
     @scala.inline
-    def deleteSuccessfulFleetRequests: Self = this.set("SuccessfulFleetRequests", js.undefined)
-    
-    @scala.inline
-    def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = this.set("UnsuccessfulFleetRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnsuccessfulFleetRequests(value: CancelSpotFleetRequestsErrorSet): Self = this.set("UnsuccessfulFleetRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsuccessfulFleetRequests: Self = this.set("UnsuccessfulFleetRequests", js.undefined)
+    def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetRequests", js.Array(value :_*))
   }
 }

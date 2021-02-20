@@ -2,12 +2,13 @@ package typings.blazy
 
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlazyOptions extends js.Object {
+trait BlazyOptions extends StObject {
   
   var breakpoints: js.UndefOr[js.Array[Breakpoint]] = js.native
   
@@ -44,99 +45,87 @@ object BlazyOptions {
   }
   
   @scala.inline
-  implicit class BlazyOptionsOps[Self <: BlazyOptions] (val x: Self) extends AnyVal {
+  implicit class BlazyOptionsMutableBuilder[Self <: BlazyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakpoints(value: js.Array[Breakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
     
     @scala.inline
-    def setBreakpointsVarargs(value: Breakpoint*): Self = this.set("breakpoints", js.Array(value :_*))
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakpoints(value: js.Array[Breakpoint]): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    def setError(value: (/* ele */ Element | HTMLElement, /* msg */ String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setErrorClassUndefined: Self = StObject.set(x, "errorClass", js.undefined)
     
     @scala.inline
-    def setError(value: (/* ele */ Element | HTMLElement, /* msg */ String) => Unit): Self = this.set("error", js.Any.fromFunction2(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLoadInvisible(value: Boolean): Self = StObject.set(x, "loadInvisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorClass(value: String): Self = this.set("errorClass", value.asInstanceOf[js.Any])
+    def setLoadInvisibleUndefined: Self = StObject.set(x, "loadInvisible", js.undefined)
     
     @scala.inline
-    def deleteErrorClass: Self = this.set("errorClass", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadInvisible(value: Boolean): Self = this.set("loadInvisible", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLoadInvisible: Self = this.set("loadInvisible", js.undefined)
+    def setSaveViewportOffsetDelay(value: Double): Self = StObject.set(x, "saveViewportOffsetDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setSaveViewportOffsetDelayUndefined: Self = StObject.set(x, "saveViewportOffsetDelay", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveViewportOffsetDelay(value: Double): Self = this.set("saveViewportOffsetDelay", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteSaveViewportOffsetDelay: Self = this.set("saveViewportOffsetDelay", js.undefined)
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSuccess(value: /* ele */ Element | HTMLElement => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSuccessClass(value: String): Self = StObject.set(x, "successClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setSuccessClassUndefined: Self = StObject.set(x, "successClass", js.undefined)
     
     @scala.inline
-    def setSuccess(value: /* ele */ Element | HTMLElement => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setValidateDelay(value: Double): Self = StObject.set(x, "validateDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessClass(value: String): Self = this.set("successClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessClass: Self = this.set("successClass", js.undefined)
-    
-    @scala.inline
-    def setValidateDelay(value: Double): Self = this.set("validateDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateDelay: Self = this.set("validateDelay", js.undefined)
+    def setValidateDelayUndefined: Self = StObject.set(x, "validateDelay", js.undefined)
   }
 }

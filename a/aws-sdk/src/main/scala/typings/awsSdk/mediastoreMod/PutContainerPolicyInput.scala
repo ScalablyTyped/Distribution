@@ -1,11 +1,12 @@
 package typings.awsSdk.mediastoreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutContainerPolicyInput extends js.Object {
+trait PutContainerPolicyInput extends StObject {
   
   /**
     * The name of the container.
@@ -26,24 +27,12 @@ object PutContainerPolicyInput {
   }
   
   @scala.inline
-  implicit class PutContainerPolicyInputOps[Self <: PutContainerPolicyInput] (val x: Self) extends AnyVal {
+  implicit class PutContainerPolicyInputMutableBuilder[Self <: PutContainerPolicyInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = this.set("ContainerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicy(value: ContainerPolicy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    def setPolicy(value: ContainerPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

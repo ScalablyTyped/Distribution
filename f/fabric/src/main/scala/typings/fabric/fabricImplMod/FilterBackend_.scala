@@ -2,12 +2,13 @@ package typings.fabric.fabricImplMod
 
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterBackend_ extends js.Object {
+trait FilterBackend_ extends StObject {
   
   def applyFilters(
     filters: js.Array[IBaseFilter],

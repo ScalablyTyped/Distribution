@@ -24,16 +24,16 @@ import typings.typeorm.subscriberEntitySubscriberInterfaceMod.EntitySubscriberIn
 import typings.typeorm.typeormRelationIdLoaderMod.RelationIdLoader
 import typings.typeorm.typesIsolationLevelMod.IsolationLevel
 import typings.typeorm.typesReplicationModeMod.ReplicationMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/connection/Connection", JSImport.Namespace)
-@js.native
-object connectionConnectionMod extends js.Object {
+object connectionConnectionMod {
   
+  @JSImport("typeorm/connection/Connection", "Connection")
   @js.native
-  class Connection protected () extends js.Object {
+  class Connection protected () extends StObject {
     def this(options: ConnectionOptions) = this()
     
     /**

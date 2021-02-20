@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A filter used to determine the points of interest to include or exclude on a map or local search.
   */
 @js.native
-trait PointOfInterestFilter extends js.Object {
+trait PointOfInterestFilter extends StObject {
   
   /**
     * Returns a Boolean value that indicates whether the filter excludes the provided point of interest category.
@@ -32,24 +33,12 @@ object PointOfInterestFilter {
   }
   
   @scala.inline
-  implicit class PointOfInterestFilterOps[Self <: PointOfInterestFilter] (val x: Self) extends AnyVal {
+  implicit class PointOfInterestFilterMutableBuilder[Self <: PointOfInterestFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "excludesCategory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExcludesCategory(value: PointOfInterestCategory => Boolean): Self = this.set("excludesCategory", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIncludesCategory(value: PointOfInterestCategory => Boolean): Self = this.set("includesCategory", js.Any.fromFunction1(value))
+    def setIncludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "includesCategory", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionDigits
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compactRounding
 */
-trait NumberFormatRoundingType extends js.Object
+trait NumberFormatRoundingType extends StObject
 object NumberFormatRoundingType {
   
   @scala.inline

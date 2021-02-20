@@ -1,12 +1,13 @@
 package typings.trtcJsSdk.mod
 
 import typings.trtcJsSdk.anon.CurState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientEventMap extends js.Object {
+trait ClientEventMap extends StObject {
   
   /** 用户被踢出房间通知，被踢原因有 */
   var `client-banned`: RtcError = js.native
@@ -82,57 +83,45 @@ object ClientEventMap {
   }
   
   @scala.inline
-  implicit class ClientEventMapOps[Self <: ClientEventMap] (val x: Self) extends AnyVal {
+  implicit class ClientEventMapMutableBuilder[Self <: ClientEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setClient-banned`(value: RtcError): Self = StObject.set(x, "client-banned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setConnection-state-changed`(value: CurState): Self = StObject.set(x, "connection-state-changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: RtcError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setClient-banned`(value: RtcError): Self = this.set("client-banned", value.asInstanceOf[js.Any])
+    def `setMute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "mute-audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setConnection-state-changed`(value: CurState): Self = this.set("connection-state-changed", value.asInstanceOf[js.Any])
+    def `setMute-video`(value: RemoteUserInfo): Self = StObject.set(x, "mute-video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: RtcError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def `setPeer-join`(value: RemoteUserInfo): Self = StObject.set(x, "peer-join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMute-audio`(value: RemoteUserInfo): Self = this.set("mute-audio", value.asInstanceOf[js.Any])
+    def `setPeer-leave`(value: RemoteUserInfo): Self = StObject.set(x, "peer-leave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMute-video`(value: RemoteUserInfo): Self = this.set("mute-video", value.asInstanceOf[js.Any])
+    def `setStream-added`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPeer-join`(value: RemoteUserInfo): Self = this.set("peer-join", value.asInstanceOf[js.Any])
+    def `setStream-removed`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPeer-leave`(value: RemoteUserInfo): Self = this.set("peer-leave", value.asInstanceOf[js.Any])
+    def `setStream-subscribed`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-subscribed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStream-added`(value: RemoteStreamInfo): Self = this.set("stream-added", value.asInstanceOf[js.Any])
+    def `setStream-updated`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStream-removed`(value: RemoteStreamInfo): Self = this.set("stream-removed", value.asInstanceOf[js.Any])
+    def `setUnmute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "unmute-audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStream-subscribed`(value: RemoteStreamInfo): Self = this.set("stream-subscribed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setStream-updated`(value: RemoteStreamInfo): Self = this.set("stream-updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUnmute-audio`(value: RemoteUserInfo): Self = this.set("unmute-audio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUnmute-video`(value: RemoteUserInfo): Self = this.set("unmute-video", value.asInstanceOf[js.Any])
+    def `setUnmute-video`(value: RemoteUserInfo): Self = StObject.set(x, "unmute-video", value.asInstanceOf[js.Any])
   }
 }

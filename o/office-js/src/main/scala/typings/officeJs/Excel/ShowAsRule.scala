@@ -16,6 +16,7 @@ import typings.officeJs.officeJsStrings.RankAscending
 import typings.officeJs.officeJsStrings.RankDecending
 import typings.officeJs.officeJsStrings.RunningTotal
 import typings.officeJs.officeJsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait ShowAsRule extends js.Object {
+trait ShowAsRule extends StObject {
   
   /**
     *
@@ -61,35 +62,23 @@ object ShowAsRule {
   }
   
   @scala.inline
-  implicit class ShowAsRuleOps[Self <: ShowAsRule] (val x: Self) extends AnyVal {
+  implicit class ShowAsRuleMutableBuilder[Self <: ShowAsRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseField(value: PivotField): Self = StObject.set(x, "baseField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseFieldUndefined: Self = StObject.set(x, "baseField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseItem(value: PivotItem): Self = StObject.set(x, "baseItem", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBaseItemUndefined: Self = StObject.set(x, "baseItem", js.undefined)
     
     @scala.inline
     def setCalculation(
       value: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
-    ): Self = this.set("calculation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseField(value: PivotField): Self = this.set("baseField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseField: Self = this.set("baseField", js.undefined)
-    
-    @scala.inline
-    def setBaseItem(value: PivotItem): Self = this.set("baseItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseItem: Self = this.set("baseItem", js.undefined)
+    ): Self = StObject.set(x, "calculation", value.asInstanceOf[js.Any])
   }
 }

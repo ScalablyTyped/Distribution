@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalculatedMember extends js.Object {
+trait CalculatedMember extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -67,66 +68,54 @@ object CalculatedMember {
   }
   
   @scala.inline
-  implicit class CalculatedMemberOps[Self <: CalculatedMember] (val x: Self) extends AnyVal {
+  implicit class CalculatedMemberMutableBuilder[Self <: CalculatedMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDisplayFolder(value: String): Self = StObject.set(x, "DisplayFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDynamic(value: Boolean): Self = StObject.set(x, "Dynamic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setExcelDotCalculatedMember_typekey(value: CalculatedMember): Self = StObject.set(x, "Excel.CalculatedMember_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFolder(value: String): Self = this.set("DisplayFolder", value.asInstanceOf[js.Any])
+    def setFlattenHierarchies(value: Boolean): Self = StObject.set(x, "FlattenHierarchies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamic(value: Boolean): Self = this.set("Dynamic", value.asInstanceOf[js.Any])
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotCalculatedMember_typekey(value: CalculatedMember): Self = this.set("Excel.CalculatedMember_typekey", value.asInstanceOf[js.Any])
+    def setHierarchizeDistinct(value: Boolean): Self = StObject.set(x, "HierarchizeDistinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlattenHierarchies(value: Boolean): Self = this.set("FlattenHierarchies", value.asInstanceOf[js.Any])
+    def setIsValid(value: Boolean): Self = StObject.set(x, "IsValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchizeDistinct(value: Boolean): Self = this.set("HierarchizeDistinct", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("IsValid", value.asInstanceOf[js.Any])
+    def setSolveOrder(value: Double): Self = StObject.set(x, "SolveOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setType(value: XlCalculatedMemberType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolveOrder(value: Double): Self = this.set("SolveOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceName(value: String): Self = this.set("SourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: XlCalculatedMemberType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_Default(value: String): Self = this.set("_Default", value.asInstanceOf[js.Any])
+    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

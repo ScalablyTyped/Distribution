@@ -1,5 +1,6 @@
 package typings.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,42 +53,30 @@ object GalleryAlbum {
   }
   
   @scala.inline
-  implicit class GalleryAlbumOps[Self <: GalleryAlbum] (val x: Self) extends AnyVal {
+  implicit class GalleryAlbumMutableBuilder[Self <: GalleryAlbum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCover(value: String): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCover_height(value: Double): Self = StObject.set(x, "cover_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCover_width(value: Double): Self = StObject.set(x, "cover_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover(value: String): Self = this.set("cover", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover_height(value: Double): Self = this.set("cover_height", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setCover_width(value: Double): Self = this.set("cover_width", value.asInstanceOf[js.Any])
+    def setImages_count(value: Double): Self = StObject.set(x, "images_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: Image*): Self = this.set("images", js.Array(value :_*))
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[Image]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImages_count(value: Double): Self = this.set("images_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivacy(value: String): Self = this.set("privacy", value.asInstanceOf[js.Any])
+    def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
   }
 }

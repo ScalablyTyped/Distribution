@@ -1,12 +1,13 @@
 package typings.shelljs.mod
 
 import typings.glob.mod.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellConfig extends js.Object {
+trait ShellConfig extends StObject {
   
   /**
     * Absolute path of the Node binary. Default is null (inferred).
@@ -49,39 +50,27 @@ object ShellConfig {
   }
   
   @scala.inline
-  implicit class ShellConfigOps[Self <: ShellConfig] (val x: Self) extends AnyVal {
+  implicit class ShellConfigMutableBuilder[Self <: ShellConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecPathNull: Self = StObject.set(x, "execPath", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFatal(value: Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
+    def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobOptions(value: IOptions): Self = this.set("globOptions", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecPath(value: String): Self = this.set("execPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecPathNull: Self = this.set("execPath", null)
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }
 }

@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Contacts")
-@js.native
-object Contacts extends js.Object {
+object Contacts {
   
   /**
     * An enum for extended contacts fields.
     */
+  @JSGlobal("GoogleAppsScript.Contacts.ExtendedField")
   @js.native
-  object ExtendedField extends js.Object {
+  object ExtendedField extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Contacts.ExtendedField with Double] = js.native
@@ -45,8 +45,9 @@ object Contacts extends js.Object {
   /**
     * An enum for contacts fields.
     */
+  @JSGlobal("GoogleAppsScript.Contacts.Field")
   @js.native
-  object Field extends js.Object {
+  object Field extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Contacts.Field with Double] = js.native
@@ -141,8 +142,9 @@ object Contacts extends js.Object {
   /**
     * An enum for contact gender.
     */
+  @JSGlobal("GoogleAppsScript.Contacts.Gender")
   @js.native
-  object Gender extends js.Object {
+  object Gender extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Contacts.Gender with Double] = js.native
@@ -155,8 +157,9 @@ object Contacts extends js.Object {
   /**
     * An enum for contact priority.
     */
+  @JSGlobal("GoogleAppsScript.Contacts.Priority")
   @js.native
-  object Priority extends js.Object {
+  object Priority extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Contacts.Priority with Double] = js.native
@@ -171,8 +174,9 @@ object Contacts extends js.Object {
   /**
     * An enum for contact sensitivity.
     */
+  @JSGlobal("GoogleAppsScript.Contacts.Sensitivity")
   @js.native
-  object Sensitivity extends js.Object {
+  object Sensitivity extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Contacts.Sensitivity with Double] = js.native

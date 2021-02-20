@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`slip-sheets`
   - typings.ipp.ippStrings.`start-sheet`
 */
-trait SeparatorSheetsType extends js.Object
+trait SeparatorSheetsType extends StObject
 object SeparatorSheetsType {
   
   @scala.inline

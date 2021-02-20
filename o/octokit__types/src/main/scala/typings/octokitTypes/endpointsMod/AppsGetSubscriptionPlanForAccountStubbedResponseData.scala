@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Billingcycle
 import typings.octokitTypes.anon.Effectivedate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsGetSubscriptionPlanForAccountStubbedResponseData extends js.Object {
+trait AppsGetSubscriptionPlanForAccountStubbedResponseData extends StObject {
   
   var email: String = js.native
   
@@ -44,42 +45,30 @@ object AppsGetSubscriptionPlanForAccountStubbedResponseData {
   }
   
   @scala.inline
-  implicit class AppsGetSubscriptionPlanForAccountStubbedResponseDataOps[Self <: AppsGetSubscriptionPlanForAccountStubbedResponseData] (val x: Self) extends AnyVal {
+  implicit class AppsGetSubscriptionPlanForAccountStubbedResponseDataMutableBuilder[Self <: AppsGetSubscriptionPlanForAccountStubbedResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setMarketplace_pending_change(value: Effectivedate): Self = StObject.set(x, "marketplace_pending_change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMarketplace_purchase(value: Billingcycle): Self = StObject.set(x, "marketplace_purchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setOrganization_billing_email(value: String): Self = StObject.set(x, "organization_billing_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketplace_pending_change(value: Effectivedate): Self = this.set("marketplace_pending_change", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketplace_purchase(value: Billingcycle): Self = this.set("marketplace_purchase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganization_billing_email(value: String): Self = this.set("organization_billing_email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

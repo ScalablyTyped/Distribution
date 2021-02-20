@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansCoverageData extends js.Object {
+trait SavingsPlansCoverageData extends StObject {
   
   /**
     * The percentage of your existing Savings Plans covered usage, divided by all of your eligible Savings Plans usage in an account(or set of accounts).
@@ -36,42 +37,30 @@ object SavingsPlansCoverageData {
   }
   
   @scala.inline
-  implicit class SavingsPlansCoverageDataOps[Self <: SavingsPlansCoverageData] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansCoverageDataMutableBuilder[Self <: SavingsPlansCoverageData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoveragePercentage(value: GenericString): Self = StObject.set(x, "CoveragePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoveragePercentageUndefined: Self = StObject.set(x, "CoveragePercentage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDemandCost(value: GenericString): Self = StObject.set(x, "OnDemandCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoveragePercentage(value: GenericString): Self = this.set("CoveragePercentage", value.asInstanceOf[js.Any])
+    def setOnDemandCostUndefined: Self = StObject.set(x, "OnDemandCost", js.undefined)
     
     @scala.inline
-    def deleteCoveragePercentage: Self = this.set("CoveragePercentage", js.undefined)
+    def setSpendCoveredBySavingsPlans(value: GenericString): Self = StObject.set(x, "SpendCoveredBySavingsPlans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandCost(value: GenericString): Self = this.set("OnDemandCost", value.asInstanceOf[js.Any])
+    def setSpendCoveredBySavingsPlansUndefined: Self = StObject.set(x, "SpendCoveredBySavingsPlans", js.undefined)
     
     @scala.inline
-    def deleteOnDemandCost: Self = this.set("OnDemandCost", js.undefined)
+    def setTotalCost(value: GenericString): Self = StObject.set(x, "TotalCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpendCoveredBySavingsPlans(value: GenericString): Self = this.set("SpendCoveredBySavingsPlans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpendCoveredBySavingsPlans: Self = this.set("SpendCoveredBySavingsPlans", js.undefined)
-    
-    @scala.inline
-    def setTotalCost(value: GenericString): Self = this.set("TotalCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCost: Self = this.set("TotalCost", js.undefined)
+    def setTotalCostUndefined: Self = StObject.set(x, "TotalCost", js.undefined)
   }
 }

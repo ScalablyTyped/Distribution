@@ -3,12 +3,13 @@ package typings.reactNativeModals.mod
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalTitleProps extends js.Object {
+trait ModalTitleProps extends StObject {
   
   var align: js.UndefOr[AlignTypes] = js.native
   
@@ -29,51 +30,39 @@ object ModalTitleProps {
   }
   
   @scala.inline
-  implicit class ModalTitlePropsOps[Self <: ModalTitleProps] (val x: Self) extends AnyVal {
+  implicit class ModalTitlePropsMutableBuilder[Self <: ModalTitleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasTitleBar(value: Boolean): Self = StObject.set(x, "hasTitleBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setHasTitleBarUndefined: Self = StObject.set(x, "hasTitleBar", js.undefined)
     
     @scala.inline
-    def setAlign(value: AlignTypes): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setHasTitleBar(value: Boolean): Self = this.set("hasTitleBar", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteHasTitleBar: Self = this.set("hasTitleBar", js.undefined)
+    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
-    
-    @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
-    
-    @scala.inline
-    def setTextStyleNull: Self = this.set("textStyle", null)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

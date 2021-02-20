@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MoveOperations extends js.Object
+sealed trait MoveOperations extends StObject
 @JSGlobal("SP.MoveOperations")
 @js.native
-object MoveOperations extends js.Object {
+object MoveOperations extends StObject {
   
   @js.native
   sealed trait allowBrokenThickets extends MoveOperations

@@ -1,6 +1,7 @@
 package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.mod.kycDocument.KycDocumentData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mangopay2-nodejs-sdk", "KycDocuments")
 @js.native
-class KycDocuments () extends js.Object {
+class KycDocuments () extends StObject {
   
   /**
     * Creates temporary URLs where each page of a KYC document can be viewed.

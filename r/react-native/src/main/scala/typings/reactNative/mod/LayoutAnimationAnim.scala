@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutAnimationAnim extends js.Object {
+trait LayoutAnimationAnim extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -13,7 +14,7 @@ trait LayoutAnimationAnim extends js.Object {
   
   var initialVelocity: js.UndefOr[Double] = js.native
   
-   //LayoutAnimationTypes
+  //LayoutAnimationTypes
   var property: js.UndefOr[String] = js.native
   
   var springDamping: js.UndefOr[Double] = js.native
@@ -29,54 +30,42 @@ object LayoutAnimationAnim {
   }
   
   @scala.inline
-  implicit class LayoutAnimationAnimOps[Self <: LayoutAnimationAnim] (val x: Self) extends AnyVal {
+  implicit class LayoutAnimationAnimMutableBuilder[Self <: LayoutAnimationAnim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setInitialVelocity(value: Double): Self = StObject.set(x, "initialVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setInitialVelocityUndefined: Self = StObject.set(x, "initialVelocity", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialVelocity(value: Double): Self = this.set("initialVelocity", value.asInstanceOf[js.Any])
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def deleteInitialVelocity: Self = this.set("initialVelocity", js.undefined)
+    def setSpringDamping(value: Double): Self = StObject.set(x, "springDamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setSpringDampingUndefined: Self = StObject.set(x, "springDamping", js.undefined)
     
     @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpringDamping(value: Double): Self = this.set("springDamping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpringDamping: Self = this.set("springDamping", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

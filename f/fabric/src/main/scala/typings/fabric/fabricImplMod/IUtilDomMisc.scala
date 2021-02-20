@@ -2,12 +2,13 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.LeftTop
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUtilDomMisc extends js.Object {
+trait IUtilDomMisc extends StObject {
   
   /**
     * Adds class to an element

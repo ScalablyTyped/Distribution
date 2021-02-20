@@ -66,13 +66,25 @@ import typings.postmark.templateMod.TemplateValidation
 import typings.postmark.templateMod.Templates
 import typings.postmark.webhookMod.Webhook
 import typings.postmark.webhooksMod.Webhooks
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/ServerClient", JSImport.Namespace)
-@js.native
-object serverClientMod extends js.Object {
+object serverClientMod {
+  
+  @JSImport("postmark/dist/client/ServerClient", JSImport.Default)
+  @js.native
+  class default protected () extends ServerClient {
+    /**
+      * Create a client.
+      *
+      * @param serverToken - The token for the server that you wish to interact with.
+      * @param configOptions - Options to customize the behavior of the this client.
+      */
+    def this(serverToken: String) = this()
+    def this(serverToken: String, configOptions: Configuration) = this()
+  }
   
   @js.native
   trait ServerClient
@@ -721,17 +733,5 @@ object serverClientMod extends js.Object {
       */
     def validateTemplate(options: TemplateValidationOptions): js.Promise[TemplateValidation] = js.native
     def validateTemplate(options: TemplateValidationOptions, callback: Callback[TemplateValidation]): js.Promise[TemplateValidation] = js.native
-  }
-  
-  @js.native
-  class default protected () extends ServerClient {
-    /**
-      * Create a client.
-      *
-      * @param serverToken - The token for the server that you wish to interact with.
-      * @param configOptions - Options to customize the behavior of the this client.
-      */
-    def this(serverToken: String) = this()
-    def this(serverToken: String, configOptions: Configuration) = this()
   }
 }

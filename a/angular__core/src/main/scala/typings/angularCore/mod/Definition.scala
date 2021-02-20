@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Definition[DF /* <: DefinitionFactory[_] */] extends js.Object {
+trait Definition[DF /* <: DefinitionFactory[_] */] extends StObject {
   
   var factory: DF | Null = js.native
 }
@@ -18,24 +19,12 @@ object Definition {
   }
   
   @scala.inline
-  implicit class DefinitionOps[Self <: Definition[_], DF /* <: DefinitionFactory[_] */] (val x: Self with Definition[DF]) extends AnyVal {
+  implicit class DefinitionMutableBuilder[Self <: Definition[_], DF /* <: DefinitionFactory[_] */] (val x: Self with Definition[DF]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFactory(value: DF): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFactory(value: DF): Self = this.set("factory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFactoryNull: Self = this.set("factory", null)
+    def setFactoryNull: Self = StObject.set(x, "factory", null)
   }
 }

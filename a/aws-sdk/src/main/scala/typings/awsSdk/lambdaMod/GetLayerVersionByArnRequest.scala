@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLayerVersionByArnRequest extends js.Object {
+trait GetLayerVersionByArnRequest extends StObject {
   
   /**
     * The ARN of the layer version.
@@ -21,21 +22,9 @@ object GetLayerVersionByArnRequest {
   }
   
   @scala.inline
-  implicit class GetLayerVersionByArnRequestOps[Self <: GetLayerVersionByArnRequest] (val x: Self) extends AnyVal {
+  implicit class GetLayerVersionByArnRequestMutableBuilder[Self <: GetLayerVersionByArnRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: LayerVersionArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setArn(value: LayerVersionArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

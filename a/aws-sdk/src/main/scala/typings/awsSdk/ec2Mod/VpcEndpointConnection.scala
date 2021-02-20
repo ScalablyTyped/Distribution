@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpcEndpointConnection extends js.Object {
+trait VpcEndpointConnection extends StObject {
   
   /**
     * The date and time that the VPC endpoint was created.
@@ -56,75 +57,63 @@ object VpcEndpointConnection {
   }
   
   @scala.inline
-  implicit class VpcEndpointConnectionOps[Self <: VpcEndpointConnection] (val x: Self) extends AnyVal {
+  implicit class VpcEndpointConnectionMutableBuilder[Self <: VpcEndpointConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimestamp(value: MillisecondDateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsEntries(value: DnsEntrySet): Self = StObject.set(x, "DnsEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: MillisecondDateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    def setDnsEntriesUndefined: Self = StObject.set(x, "DnsEntries", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    def setDnsEntriesVarargs(value: DnsEntry*): Self = StObject.set(x, "DnsEntries", js.Array(value :_*))
     
     @scala.inline
-    def setDnsEntriesVarargs(value: DnsEntry*): Self = this.set("DnsEntries", js.Array(value :_*))
+    def setGatewayLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "GatewayLoadBalancerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsEntries(value: DnsEntrySet): Self = this.set("DnsEntries", value.asInstanceOf[js.Any])
+    def setGatewayLoadBalancerArnsUndefined: Self = StObject.set(x, "GatewayLoadBalancerArns", js.undefined)
     
     @scala.inline
-    def deleteDnsEntries: Self = this.set("DnsEntries", js.undefined)
+    def setGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "GatewayLoadBalancerArns", js.Array(value :_*))
     
     @scala.inline
-    def setGatewayLoadBalancerArnsVarargs(value: String*): Self = this.set("GatewayLoadBalancerArns", js.Array(value :_*))
+    def setNetworkLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "NetworkLoadBalancerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayLoadBalancerArns(value: ValueStringList): Self = this.set("GatewayLoadBalancerArns", value.asInstanceOf[js.Any])
+    def setNetworkLoadBalancerArnsUndefined: Self = StObject.set(x, "NetworkLoadBalancerArns", js.undefined)
     
     @scala.inline
-    def deleteGatewayLoadBalancerArns: Self = this.set("GatewayLoadBalancerArns", js.undefined)
+    def setNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "NetworkLoadBalancerArns", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkLoadBalancerArnsVarargs(value: String*): Self = this.set("NetworkLoadBalancerArns", js.Array(value :_*))
+    def setServiceId(value: String): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkLoadBalancerArns(value: ValueStringList): Self = this.set("NetworkLoadBalancerArns", value.asInstanceOf[js.Any])
+    def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
     
     @scala.inline
-    def deleteNetworkLoadBalancerArns: Self = this.set("NetworkLoadBalancerArns", js.undefined)
+    def setVpcEndpointId(value: String): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: String): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
+    def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
     
     @scala.inline
-    def deleteServiceId: Self = this.set("ServiceId", js.undefined)
+    def setVpcEndpointOwner(value: String): Self = StObject.set(x, "VpcEndpointOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcEndpointId(value: String): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
+    def setVpcEndpointOwnerUndefined: Self = StObject.set(x, "VpcEndpointOwner", js.undefined)
     
     @scala.inline
-    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+    def setVpcEndpointState(value: State): Self = StObject.set(x, "VpcEndpointState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcEndpointOwner(value: String): Self = this.set("VpcEndpointOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointOwner: Self = this.set("VpcEndpointOwner", js.undefined)
-    
-    @scala.inline
-    def setVpcEndpointState(value: State): Self = this.set("VpcEndpointState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointState: Self = this.set("VpcEndpointState", js.undefined)
+    def setVpcEndpointStateUndefined: Self = StObject.set(x, "VpcEndpointState", js.undefined)
   }
 }

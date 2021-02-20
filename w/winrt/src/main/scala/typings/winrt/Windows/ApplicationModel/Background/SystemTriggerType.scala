@@ -1,14 +1,15 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemTriggerType extends js.Object
+sealed trait SystemTriggerType extends StObject
 @JSGlobal("Windows.ApplicationModel.Background.SystemTriggerType")
 @js.native
-object SystemTriggerType extends js.Object {
+object SystemTriggerType extends StObject {
   
   @js.native
   sealed trait controlChannelReset extends SystemTriggerType

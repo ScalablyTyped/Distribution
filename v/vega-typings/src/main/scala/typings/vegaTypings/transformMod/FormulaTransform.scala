@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.formula
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object FormulaTransform {
   }
   
   @scala.inline
-  implicit class FormulaTransformOps[Self <: FormulaTransform] (val x: Self) extends AnyVal {
+  implicit class FormulaTransformMutableBuilder[Self <: FormulaTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpr(value: ExprString): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitonly(value: Boolean): Self = StObject.set(x, "initonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setInitonlyUndefined: Self = StObject.set(x, "initonly", js.undefined)
     
     @scala.inline
-    def setExpr(value: ExprString): Self = this.set("expr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: formula): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitonly(value: Boolean): Self = this.set("initonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitonly: Self = this.set("initonly", js.undefined)
+    def setType(value: formula): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

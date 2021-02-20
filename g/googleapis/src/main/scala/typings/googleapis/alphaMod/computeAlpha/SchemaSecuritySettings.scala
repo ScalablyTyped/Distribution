@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The authentication and authorization settings for a BackendService.
   */
 @js.native
-trait SchemaSecuritySettings extends js.Object {
+trait SchemaSecuritySettings extends StObject {
   
   /**
     * Authentication policy defines what authentication methods can be accepted
@@ -42,42 +43,30 @@ object SchemaSecuritySettings {
   }
   
   @scala.inline
-  implicit class SchemaSecuritySettingsOps[Self <: SchemaSecuritySettings] (val x: Self) extends AnyVal {
+  implicit class SchemaSecuritySettingsMutableBuilder[Self <: SchemaSecuritySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationPolicy(value: SchemaAuthenticationPolicy): Self = StObject.set(x, "authenticationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationPolicyUndefined: Self = StObject.set(x, "authenticationPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationConfig(value: SchemaAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationPolicy(value: SchemaAuthenticationPolicy): Self = this.set("authenticationPolicy", value.asInstanceOf[js.Any])
+    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationPolicy: Self = this.set("authenticationPolicy", js.undefined)
+    def setClientTlsSettings(value: SchemaClientTlsSettings): Self = StObject.set(x, "clientTlsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationConfig(value: SchemaAuthorizationConfig): Self = this.set("authorizationConfig", value.asInstanceOf[js.Any])
+    def setClientTlsSettingsUndefined: Self = StObject.set(x, "clientTlsSettings", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationConfig: Self = this.set("authorizationConfig", js.undefined)
+    def setServerSettingsSelector(value: SchemaServerSecuritySettingsSelector): Self = StObject.set(x, "serverSettingsSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTlsSettings(value: SchemaClientTlsSettings): Self = this.set("clientTlsSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientTlsSettings: Self = this.set("clientTlsSettings", js.undefined)
-    
-    @scala.inline
-    def setServerSettingsSelector(value: SchemaServerSecuritySettingsSelector): Self = this.set("serverSettingsSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerSettingsSelector: Self = this.set("serverSettingsSelector", js.undefined)
+    def setServerSettingsSelectorUndefined: Self = StObject.set(x, "serverSettingsSelector", js.undefined)
   }
 }

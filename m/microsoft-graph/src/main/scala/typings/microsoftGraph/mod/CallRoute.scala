@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallRoute extends js.Object {
+trait CallRoute extends StObject {
   
   // The identity that was resolved to in the call.
   var `final`: js.UndefOr[IdentitySet] = js.native
@@ -25,36 +26,24 @@ object CallRoute {
   }
   
   @scala.inline
-  implicit class CallRouteOps[Self <: CallRoute] (val x: Self) extends AnyVal {
+  implicit class CallRouteMutableBuilder[Self <: CallRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinal(value: IdentitySet): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginal(value: IdentitySet): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinal(value: IdentitySet): Self = this.set("final", value.asInstanceOf[js.Any])
+    def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
     
     @scala.inline
-    def deleteFinal: Self = this.set("final", js.undefined)
+    def setRoutingType(value: RoutingType): Self = StObject.set(x, "routingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal(value: IdentitySet): Self = this.set("original", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginal: Self = this.set("original", js.undefined)
-    
-    @scala.inline
-    def setRoutingType(value: RoutingType): Self = this.set("routingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutingType: Self = this.set("routingType", js.undefined)
+    def setRoutingTypeUndefined: Self = StObject.set(x, "routingType", js.undefined)
   }
 }

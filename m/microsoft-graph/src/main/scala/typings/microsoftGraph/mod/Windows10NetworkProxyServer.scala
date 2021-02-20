@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Windows10NetworkProxyServer extends js.Object {
+trait Windows10NetworkProxyServer extends StObject {
   
   // Address to the proxy server. Specify an address in the format &amp;lt;server&amp;gt;[:&amp;lt;port&amp;gt;]
   var address: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Windows10NetworkProxyServer {
   }
   
   @scala.inline
-  implicit class Windows10NetworkProxyServerOps[Self <: Windows10NetworkProxyServer] (val x: Self) extends AnyVal {
+  implicit class Windows10NetworkProxyServerMutableBuilder[Self <: Windows10NetworkProxyServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setExceptionsNull: Self = StObject.set(x, "exceptions", null)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
     @scala.inline
-    def setExceptionsVarargs(value: String*): Self = this.set("exceptions", js.Array(value :_*))
+    def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
     
     @scala.inline
-    def setExceptions(value: NullableOption[js.Array[String]]): Self = this.set("exceptions", value.asInstanceOf[js.Any])
+    def setUseForLocalAddresses(value: Boolean): Self = StObject.set(x, "useForLocalAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExceptions: Self = this.set("exceptions", js.undefined)
-    
-    @scala.inline
-    def setExceptionsNull: Self = this.set("exceptions", null)
-    
-    @scala.inline
-    def setUseForLocalAddresses(value: Boolean): Self = this.set("useForLocalAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseForLocalAddresses: Self = this.set("useForLocalAddresses", js.undefined)
+    def setUseForLocalAddressesUndefined: Self = StObject.set(x, "useForLocalAddresses", js.undefined)
   }
 }

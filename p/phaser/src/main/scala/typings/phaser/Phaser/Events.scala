@@ -1,18 +1,17 @@
 package typings.phaser.Phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Events")
-@js.native
-object Events extends js.Object {
+object Events {
   
   /**
     * EventEmitter is a Scene Systems plugin compatible version of eventemitter3.
     */
   @js.native
-  trait EventEmitter extends js.Object {
+  trait EventEmitter extends StObject {
     
     /**
       * Add a listener for a given event.

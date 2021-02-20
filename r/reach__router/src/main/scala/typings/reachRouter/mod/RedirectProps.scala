@@ -1,11 +1,12 @@
 package typings.reachRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedirectProps[TState] extends js.Object {
+trait RedirectProps[TState] extends StObject {
   
   var from: js.UndefOr[String] = js.native
   
@@ -26,45 +27,33 @@ object RedirectProps {
   }
   
   @scala.inline
-  implicit class RedirectPropsOps[Self <: RedirectProps[_], TState] (val x: Self with RedirectProps[TState]) extends AnyVal {
+  implicit class RedirectPropsMutableBuilder[Self <: RedirectProps[_], TState] (val x: Self with RedirectProps[TState]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoThrow(value: Boolean): Self = StObject.set(x, "noThrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setNoThrowUndefined: Self = StObject.set(x, "noThrow", js.undefined)
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def setNoThrow(value: Boolean): Self = this.set("noThrow", value.asInstanceOf[js.Any])
+    def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoThrow: Self = this.set("noThrow", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setReplace(value: Boolean): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
-    
-    @scala.inline
-    def setState(value: TState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

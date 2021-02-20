@@ -1,13 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/_SubModule", JSImport.Namespace)
-@js.native
-object subModuleMod extends js.Object {
+object subModuleMod {
   
-  @JSName("_SubModule")
+  @JSImport("@aws-sdk/client-codecommit-node/model/_SubModule", "_SubModule")
+  @js.native
   val SubModule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object IdentityManagerGetCredentialOptions {
   }
   
   @scala.inline
-  implicit class IdentityManagerGetCredentialOptionsOps[Self <: IdentityManagerGetCredentialOptions] (val x: Self) extends AnyVal {
+  implicit class IdentityManagerGetCredentialOptionsMutableBuilder[Self <: IdentityManagerGetCredentialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOAuthPopupConfirmation(value: Boolean): Self = StObject.set(x, "oAuthPopupConfirmation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setOAuthPopupConfirmationUndefined: Self = StObject.set(x, "oAuthPopupConfirmation", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAuthPopupConfirmation(value: Boolean): Self = this.set("oAuthPopupConfirmation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOAuthPopupConfirmation: Self = this.set("oAuthPopupConfirmation", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

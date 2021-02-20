@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,39 +41,27 @@ object CurveTimeline {
   }
   
   @scala.inline
-  implicit class CurveTimelineOps[Self <: CurveTimeline] (val x: Self) extends AnyVal {
+  implicit class CurveTimelineMutableBuilder[Self <: CurveTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurves(value: js.Any): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurvePercent(value: (Double, Double) => Double): Self = StObject.set(x, "getCurvePercent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurveType(value: Double => Double): Self = StObject.set(x, "getCurveType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurves(value: js.Any): Self = this.set("curves", value.asInstanceOf[js.Any])
+    def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurvePercent(value: (Double, Double) => Double): Self = this.set("getCurvePercent", js.Any.fromFunction2(value))
+    def setSetCurve(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setCurve", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetCurveType(value: Double => Double): Self = this.set("getCurveType", js.Any.fromFunction1(value))
+    def setSetLinear(value: Double => Unit): Self = StObject.set(x, "setLinear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFrameCount(value: () => Double): Self = this.set("getFrameCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCurve(value: (Double, Double, Double, Double, Double) => Unit): Self = this.set("setCurve", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setSetLinear(value: Double => Unit): Self = this.set("setLinear", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStepped(value: Double => Unit): Self = this.set("setStepped", js.Any.fromFunction1(value))
+    def setSetStepped(value: Double => Unit): Self = StObject.set(x, "setStepped", js.Any.fromFunction1(value))
   }
 }

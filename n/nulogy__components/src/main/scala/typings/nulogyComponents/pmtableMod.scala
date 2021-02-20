@@ -1,12 +1,13 @@
 package typings.nulogyComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nulogy/components/src/PMTable", JSImport.Namespace)
-@js.native
-object pmtableMod extends js.Object {
+object pmtableMod {
   
+  @JSImport("@nulogy/components/src/PMTable", "PMTable")
+  @js.native
   val PMTable: js.Any = js.native
 }

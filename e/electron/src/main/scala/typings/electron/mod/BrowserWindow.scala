@@ -3,6 +3,7 @@ package typings.electron.mod
 import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.Electron.ExtensionInfo
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ class BrowserWindow ()
   extends typings.electron.Electron.BrowserWindow {
   def this(options: BrowserWindowConstructorOptions) = this()
 }
-/* static members */
-@JSImport("electron", "BrowserWindow")
-@js.native
-object BrowserWindow extends js.Object {
+object BrowserWindow {
   
   /**
     * Adds DevTools extension located at `path`, and returns extension's name.
@@ -39,6 +37,9 @@ object BrowserWindow extends js.Object {
     *
     * @deprecated
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.addDevToolsExtension")
+  @js.native
   def addDevToolsExtension(path: String): Unit = js.native
   
   /**
@@ -54,28 +55,43 @@ object BrowserWindow extends js.Object {
     *
     * @deprecated
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.addExtension")
+  @js.native
   def addExtension(path: String): Unit = js.native
   
   /**
     * The window that owns the given `browserView`. If the given view is not attached
     * to any window, returns `null`.
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.fromBrowserView")
+  @js.native
   def fromBrowserView(browserView: typings.electron.Electron.BrowserView): typings.electron.Electron.BrowserWindow | Null = js.native
   
   /**
     * The window with the given `id`.
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.fromId")
+  @js.native
   def fromId(id: Double): typings.electron.Electron.BrowserWindow | Null = js.native
   
   /**
     * The window that owns the given `webContents` or `null` if the contents are not
     * owned by a window.
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.fromWebContents")
+  @js.native
   def fromWebContents(webContents: typings.electron.Electron.WebContents_): typings.electron.Electron.BrowserWindow | Null = js.native
   
   /**
     * An array of all opened browser windows.
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.getAllWindows")
+  @js.native
   def getAllWindows(): js.Array[typings.electron.Electron.BrowserWindow] = js.native
   
   /**
@@ -91,6 +107,9 @@ object BrowserWindow extends js.Object {
     *
     * @deprecated
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.getDevToolsExtensions")
+  @js.native
   def getDevToolsExtensions(): Record[String, ExtensionInfo] = js.native
   
   /**
@@ -104,11 +123,17 @@ object BrowserWindow extends js.Object {
     *
     * @deprecated
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.getExtensions")
+  @js.native
   def getExtensions(): Record[String, ExtensionInfo] = js.native
   
   /**
     * The window that is focused in this application, otherwise returns `null`.
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.getFocusedWindow")
+  @js.native
   def getFocusedWindow(): typings.electron.Electron.BrowserWindow | Null = js.native
   
   /**
@@ -122,6 +147,9 @@ object BrowserWindow extends js.Object {
     *
     * @deprecated
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.removeDevToolsExtension")
+  @js.native
   def removeDevToolsExtension(name: String): Unit = js.native
   
   /**
@@ -135,5 +163,8 @@ object BrowserWindow extends js.Object {
     *
     * @deprecated
     */
+  /* static member */
+  @JSImport("electron", "BrowserWindow.removeExtension")
+  @js.native
   def removeExtension(name: String): Unit = js.native
 }

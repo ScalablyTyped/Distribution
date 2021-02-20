@@ -2,38 +2,39 @@ package typings.flot.jquery.flot
 
 import typings.jquery.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait legendOptions extends js.Object {
+trait legendOptions extends StObject {
   
-                  //number of pixels or [x margin, y margin]
+  //number of pixels or [x margin, y margin]
   var backgroundColor: js.UndefOr[js.Any] = js.native
   
-         //null or color
+  //null or color
   var backgroundOpacity: js.UndefOr[Double] = js.native
   
-    // between 0 and 1
+  // between 0 and 1
   var container: js.UndefOr[JQuery[HTMLElement]] = js.native
   
-   //  null or (fn: string, series object -> string)
+  //  null or (fn: string, series object -> string)
   var labelBoxBorderColor: js.UndefOr[js.Any] = js.native
   
   var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.native
   
-             //"ne" or "nw" or "se" or "sw"
+  //"ne" or "nw" or "se" or "sw"
   var margin: js.UndefOr[js.Any] = js.native
   
-     //color
+  //color
   var noColumns: js.UndefOr[Double] = js.native
   
   var position: js.UndefOr[String] = js.native
   
   var show: js.UndefOr[Boolean] = js.native
   
-           // null or jQuery object/DOM element/jQuery expression
+  // null or jQuery object/DOM element/jQuery expression
   var sorted: js.UndefOr[js.Any] = js.native
 }
 object legendOptions {
@@ -45,78 +46,66 @@ object legendOptions {
   }
   
   @scala.inline
-  implicit class legendOptionsOps[Self <: legendOptions] (val x: Self) extends AnyVal {
+  implicit class legendOptionsMutableBuilder[Self <: legendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: js.Any): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundOpacity(value: Double): Self = this.set("backgroundOpacity", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBackgroundOpacity: Self = this.set("backgroundOpacity", js.undefined)
+    def setLabelBoxBorderColor(value: js.Any): Self = StObject.set(x, "labelBoxBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: JQuery[HTMLElement]): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setLabelBoxBorderColorUndefined: Self = StObject.set(x, "labelBoxBorderColor", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setLabelFormatter(value: (/* label */ String, /* series */ js.Any) => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLabelBoxBorderColor(value: js.Any): Self = this.set("labelBoxBorderColor", value.asInstanceOf[js.Any])
+    def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     
     @scala.inline
-    def deleteLabelBoxBorderColor: Self = this.set("labelBoxBorderColor", js.undefined)
+    def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFormatter(value: (/* label */ String, /* series */ js.Any) => String): Self = this.set("labelFormatter", js.Any.fromFunction2(value))
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLabelFormatter: Self = this.set("labelFormatter", js.undefined)
+    def setNoColumns(value: Double): Self = StObject.set(x, "noColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setNoColumnsUndefined: Self = StObject.set(x, "noColumns", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoColumns(value: Double): Self = this.set("noColumns", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteNoColumns: Self = this.set("noColumns", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSorted(value: js.Any): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setSorted(value: js.Any): Self = this.set("sorted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorted: Self = this.set("sorted", js.undefined)
+    def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
   }
 }

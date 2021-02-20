@@ -6,6 +6,7 @@ import typings.officeJsPreview.OfficeExtension.LoadOption
 import typings.officeJsPreview.Visio.Interfaces.CollectionLoadOptions
 import typings.officeJsPreview.Visio.Interfaces.HyperlinkCollectionData
 import typings.officeJsPreview.Visio.Interfaces.HyperlinkCollectionLoadOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

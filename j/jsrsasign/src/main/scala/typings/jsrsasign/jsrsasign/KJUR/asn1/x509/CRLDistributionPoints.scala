@@ -1,6 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,27 +67,15 @@ object CRLDistributionPoints {
   }
   
   @scala.inline
-  implicit class CRLDistributionPointsOps[Self <: CRLDistributionPoints] (val x: Self) extends AnyVal {
+  implicit class CRLDistributionPointsMutableBuilder[Self <: CRLDistributionPoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetByDPArray(value: js.Array[ASN1Object] => Unit): Self = StObject.set(x, "setByDPArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = this.set("getExtnValueHex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetByDPArray(value: js.Array[ASN1Object] => Unit): Self = this.set("setByDPArray", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetByOneURI(value: String => Unit): Self = this.set("setByOneURI", js.Any.fromFunction1(value))
+    def setSetByOneURI(value: String => Unit): Self = StObject.set(x, "setByOneURI", js.Any.fromFunction1(value))
   }
 }

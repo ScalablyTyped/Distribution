@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfferingStatus extends js.Object {
+trait OfferingStatus extends StObject {
   
   /**
     * The date on which the offering is effective.
@@ -36,42 +37,30 @@ object OfferingStatus {
   }
   
   @scala.inline
-  implicit class OfferingStatusOps[Self <: OfferingStatus] (val x: Self) extends AnyVal {
+  implicit class OfferingStatusMutableBuilder[Self <: OfferingStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffectiveOn(value: DateTime): Self = StObject.set(x, "effectiveOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectiveOnUndefined: Self = StObject.set(x, "effectiveOn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffering(value: Offering): Self = StObject.set(x, "offering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveOn(value: DateTime): Self = this.set("effectiveOn", value.asInstanceOf[js.Any])
+    def setOfferingUndefined: Self = StObject.set(x, "offering", js.undefined)
     
     @scala.inline
-    def deleteEffectiveOn: Self = this.set("effectiveOn", js.undefined)
+    def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffering(value: Offering): Self = this.set("offering", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deleteOffering: Self = this.set("offering", js.undefined)
+    def setType(value: OfferingTransactionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: Integer): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
-    
-    @scala.inline
-    def setType(value: OfferingTransactionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerHealthReport extends js.Object {
+trait WorkerHealthReport extends StObject {
   
   /** A message describing any unusual health reports. */
   var msg: js.UndefOr[String] = js.native
@@ -44,32 +45,13 @@ object WorkerHealthReport {
   }
   
   @scala.inline
-  implicit class WorkerHealthReportOps[Self <: WorkerHealthReport] (val x: Self) extends AnyVal {
+  implicit class WorkerHealthReportMutableBuilder[Self <: WorkerHealthReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMsg(value: String): Self = this.set("msg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsg: Self = this.set("msg", js.undefined)
-    
-    @scala.inline
-    def setPodsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport with TopLevel[js.Any])*
-    ): Self = this.set("pods", js.Array(value :_*))
+    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
     @scala.inline
     def setPods(
@@ -78,33 +60,40 @@ object WorkerHealthReport {
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport with TopLevel[js.Any]
         ]
-    ): Self = this.set("pods", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePods: Self = this.set("pods", js.undefined)
+    def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
     
     @scala.inline
-    def setReportInterval(value: String): Self = this.set("reportInterval", value.asInstanceOf[js.Any])
+    def setPodsVarargs(
+      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: any}
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport with TopLevel[js.Any])*
+    ): Self = StObject.set(x, "pods", js.Array(value :_*))
     
     @scala.inline
-    def deleteReportInterval: Self = this.set("reportInterval", js.undefined)
+    def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmIsBroken(value: Boolean): Self = this.set("vmIsBroken", value.asInstanceOf[js.Any])
+    def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
     
     @scala.inline
-    def deleteVmIsBroken: Self = this.set("vmIsBroken", js.undefined)
+    def setVmIsBroken(value: Boolean): Self = StObject.set(x, "vmIsBroken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmIsHealthy(value: Boolean): Self = this.set("vmIsHealthy", value.asInstanceOf[js.Any])
+    def setVmIsBrokenUndefined: Self = StObject.set(x, "vmIsBroken", js.undefined)
     
     @scala.inline
-    def deleteVmIsHealthy: Self = this.set("vmIsHealthy", js.undefined)
+    def setVmIsHealthy(value: Boolean): Self = StObject.set(x, "vmIsHealthy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmStartupTime(value: String): Self = this.set("vmStartupTime", value.asInstanceOf[js.Any])
+    def setVmIsHealthyUndefined: Self = StObject.set(x, "vmIsHealthy", js.undefined)
     
     @scala.inline
-    def deleteVmStartupTime: Self = this.set("vmStartupTime", js.undefined)
+    def setVmStartupTime(value: String): Self = StObject.set(x, "vmStartupTime", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVmStartupTimeUndefined: Self = StObject.set(x, "vmStartupTime", js.undefined)
   }
 }

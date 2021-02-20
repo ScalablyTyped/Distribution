@@ -4,12 +4,13 @@ import typings.muiDatatables.anon.Data
 import typings.muiDatatables.anon.DataIndex
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableState extends js.Object {
+trait MUIDataTableState extends StObject {
   
   var activeColumn: String | Null = js.native
   
@@ -73,111 +74,99 @@ object MUIDataTableState {
   }
   
   @scala.inline
-  implicit class MUIDataTableStateOps[Self <: MUIDataTableState] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableStateMutableBuilder[Self <: MUIDataTableState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveColumn(value: String): Self = StObject.set(x, "activeColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveColumnNull: Self = StObject.set(x, "activeColumn", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnounceText(value: String): Self = StObject.set(x, "announceText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnOrderVarargs(value: Double*): Self = this.set("columnOrder", js.Array(value :_*))
+    def setAnnounceTextNull: Self = StObject.set(x, "announceText", null)
     
     @scala.inline
-    def setColumnOrder(value: js.Array[Double]): Self = this.set("columnOrder", value.asInstanceOf[js.Any])
+    def setColumnOrder(value: js.Array[Double]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: MUIDataTableColumnState*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
     
     @scala.inline
-    def setColumns(value: js.Array[MUIDataTableColumnState]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[MUIDataTableColumnState]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: MUIDataTableColumnState*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDataVarargs(value: Data*): Self = this.set("displayData", js.Array(value :_*))
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayData(value: DisplayData): Self = this.set("displayData", value.asInstanceOf[js.Any])
+    def setDisplayData(value: DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedRows(value: MUIDataTableStateRows): Self = this.set("expandedRows", value.asInstanceOf[js.Any])
+    def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
     @scala.inline
-    def setFilterDataVarargs(value: js.Array[String]*): Self = this.set("filterData", js.Array(value :_*))
+    def setExpandedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterData(value: js.Array[js.Array[String]]): Self = this.set("filterData", value.asInstanceOf[js.Any])
+    def setFilterData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterListVarargs(value: js.Array[String]*): Self = this.set("filterList", js.Array(value :_*))
+    def setFilterDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterData", js.Array(value :_*))
     
     @scala.inline
-    def setFilterList(value: js.Array[js.Array[String]]): Self = this.set("filterList", value.asInstanceOf[js.Any])
+    def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
     @scala.inline
-    def setRowsPerPage(value: Double): Self = this.set("rowsPerPage", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsPerPageOptionsVarargs(value: Double*): Self = this.set("rowsPerPageOptions", js.Array(value :_*))
+    def setPreviousSelectedRow(value: DataIndex): Self = StObject.set(x, "previousSelectedRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsPerPageOptions(value: js.Array[Double]): Self = this.set("rowsPerPageOptions", value.asInstanceOf[js.Any])
+    def setPreviousSelectedRowNull: Self = StObject.set(x, "previousSelectedRow", null)
     
     @scala.inline
-    def setSelectedRows(value: MUIDataTableStateRows): Self = this.set("selectedRows", value.asInstanceOf[js.Any])
+    def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowResponsive(value: Boolean): Self = this.set("showResponsive", value.asInstanceOf[js.Any])
+    def setRowsPerPageOptions(value: js.Array[Double]): Self = StObject.set(x, "rowsPerPageOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: MUISortOptions): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setRowsPerPageOptionsVarargs(value: Double*): Self = StObject.set(x, "rowsPerPageOptions", js.Array(value :_*))
     
     @scala.inline
-    def setActiveColumn(value: String): Self = this.set("activeColumn", value.asInstanceOf[js.Any])
+    def setSearchProps(value: HTMLAttributes[HTMLInputElement]): Self = StObject.set(x, "searchProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveColumnNull: Self = this.set("activeColumn", null)
+    def setSearchPropsNull: Self = StObject.set(x, "searchProps", null)
     
     @scala.inline
-    def setAnnounceText(value: String): Self = this.set("announceText", value.asInstanceOf[js.Any])
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnounceTextNull: Self = this.set("announceText", null)
+    def setSearchTextNull: Self = StObject.set(x, "searchText", null)
     
     @scala.inline
-    def setPreviousSelectedRow(value: DataIndex): Self = this.set("previousSelectedRow", value.asInstanceOf[js.Any])
+    def setSelectedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousSelectedRowNull: Self = this.set("previousSelectedRow", null)
+    def setShowResponsive(value: Boolean): Self = StObject.set(x, "showResponsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchProps(value: HTMLAttributes[HTMLInputElement]): Self = this.set("searchProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchPropsNull: Self = this.set("searchProps", null)
-    
-    @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchTextNull: Self = this.set("searchText", null)
+    def setSortOrder(value: MUISortOptions): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
   }
 }

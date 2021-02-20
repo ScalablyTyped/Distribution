@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutObjectOutput extends js.Object {
+trait PutObjectOutput extends StObject {
   
   /**
     * Entity tag for the uploaded object.
@@ -58,72 +59,60 @@ object PutObjectOutput {
   }
   
   @scala.inline
-  implicit class PutObjectOutputOps[Self <: PutObjectOutput] (val x: Self) extends AnyVal {
+  implicit class PutObjectOutputMutableBuilder[Self <: PutObjectOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiration(value: Expiration): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: ETag): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
     @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
+    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: Expiration): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     
     @scala.inline
-    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    def setSSEKMSEncryptionContext(value: SSEKMSEncryptionContext): Self = StObject.set(x, "SSEKMSEncryptionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    def setSSEKMSEncryptionContextUndefined: Self = StObject.set(x, "SSEKMSEncryptionContext", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEKMSEncryptionContext(value: SSEKMSEncryptionContext): Self = this.set("SSEKMSEncryptionContext", value.asInstanceOf[js.Any])
+    def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
     
     @scala.inline
-    def deleteSSEKMSEncryptionContext: Self = this.set("SSEKMSEncryptionContext", js.undefined)
+    def setServerSideEncryption(value: ServerSideEncryption): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = this.set("SSEKMSKeyId", value.asInstanceOf[js.Any])
+    def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
     
     @scala.inline
-    def deleteSSEKMSKeyId: Self = this.set("SSEKMSKeyId", js.undefined)
+    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("ServerSideEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerSideEncryption: Self = this.set("ServerSideEncryption", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpEndpointRequestConfiguration extends js.Object {
+trait HttpEndpointRequestConfiguration extends StObject {
   
   /**
     * Describes the metadata sent to the HTTP endpoint destination.
@@ -26,33 +27,21 @@ object HttpEndpointRequestConfiguration {
   }
   
   @scala.inline
-  implicit class HttpEndpointRequestConfigurationOps[Self <: HttpEndpointRequestConfiguration] (val x: Self) extends AnyVal {
+  implicit class HttpEndpointRequestConfigurationMutableBuilder[Self <: HttpEndpointRequestConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonAttributes(value: HttpEndpointCommonAttributesList): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonAttributesUndefined: Self = StObject.set(x, "CommonAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommonAttributesVarargs(value: HttpEndpointCommonAttribute*): Self = StObject.set(x, "CommonAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setCommonAttributesVarargs(value: HttpEndpointCommonAttribute*): Self = this.set("CommonAttributes", js.Array(value :_*))
+    def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "ContentEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonAttributes(value: HttpEndpointCommonAttributesList): Self = this.set("CommonAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommonAttributes: Self = this.set("CommonAttributes", js.undefined)
-    
-    @scala.inline
-    def setContentEncoding(value: ContentEncoding): Self = this.set("ContentEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentEncoding: Self = this.set("ContentEncoding", js.undefined)
+    def setContentEncodingUndefined: Self = StObject.set(x, "ContentEncoding", js.undefined)
   }
 }

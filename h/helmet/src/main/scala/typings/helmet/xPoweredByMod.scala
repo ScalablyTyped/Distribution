@@ -2,14 +2,15 @@ package typings.helmet
 
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("helmet/dist/middlewares/x-powered-by", JSImport.Namespace)
-@js.native
-object xPoweredByMod extends js.Object {
+object xPoweredByMod {
   
+  @JSImport("helmet/dist/middlewares/x-powered-by", JSImport.Default)
+  @js.native
   def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 

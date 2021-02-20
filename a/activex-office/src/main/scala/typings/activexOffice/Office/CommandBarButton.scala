@@ -1,12 +1,13 @@
 package typings.activexOffice.Office
 
 import typings.activexStdole.stdole.IPictureDisp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandBarButton extends js.Object {
+trait CommandBarButton extends StObject {
   
   val Application: js.Any = js.native
   

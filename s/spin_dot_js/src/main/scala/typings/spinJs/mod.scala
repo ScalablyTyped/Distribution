@@ -2,16 +2,16 @@ package typings.spinJs
 
 import typings.spinJs.spinnerOptionsMod.SpinnerOptions
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("spin.js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("spin.js", "Spinner")
   @js.native
-  class Spinner () extends js.Object {
+  class Spinner () extends StObject {
     def this(opts: SpinnerOptions) = this()
     
     var animateId: js.Any = js.native

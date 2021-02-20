@@ -2,6 +2,7 @@ package typings.vscodeLanguageserverTypes.mod
 
 import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
 import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
   - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
 */
-trait InsertTextFormat extends js.Object
-@JSImport("vscode-languageserver-types", "InsertTextFormat")
-@js.native
-object InsertTextFormat extends js.Object {
+trait InsertTextFormat extends StObject
+object InsertTextFormat {
   
   /**
     * The primary text to be inserted is treated as a plain string.
     */
+  @JSImport("vscode-languageserver-types", "InsertTextFormat.PlainText")
+  @js.native
   val PlainText: `1` = js.native
   
   /**
@@ -30,5 +31,7 @@ object InsertTextFormat extends js.Object {
     *
     * See also: https://github.com/Microsoft/vscode/blob/master/src/vs/editor/contrib/snippet/common/snippet.md
     */
+  @JSImport("vscode-languageserver-types", "InsertTextFormat.Snippet")
+  @js.native
   val Snippet: `2` = js.native
 }

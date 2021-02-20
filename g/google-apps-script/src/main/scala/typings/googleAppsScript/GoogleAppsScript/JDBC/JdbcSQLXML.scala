@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * .
   */
 @js.native
-trait JdbcSQLXML extends js.Object {
+trait JdbcSQLXML extends StObject {
   
   def free(): Unit = js.native
   
@@ -26,27 +27,15 @@ object JdbcSQLXML {
   }
   
   @scala.inline
-  implicit class JdbcSQLXMLOps[Self <: JdbcSQLXML] (val x: Self) extends AnyVal {
+  implicit class JdbcSQLXMLMutableBuilder[Self <: JdbcSQLXML] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFree(value: () => Unit): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFree(value: () => Unit): Self = this.set("free", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetString(value: () => String): Self = this.set("getString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetString(value: String => Unit): Self = this.set("setString", js.Any.fromFunction1(value))
+    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
   }
 }

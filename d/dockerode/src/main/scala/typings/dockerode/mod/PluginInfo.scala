@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginInfo extends js.Object {
+trait PluginInfo extends StObject {
   
   var Config: PluginConfig = js.native
   
@@ -28,42 +29,30 @@ object PluginInfo {
   }
   
   @scala.inline
-  implicit class PluginInfoOps[Self <: PluginInfo] (val x: Self) extends AnyVal {
+  implicit class PluginInfoMutableBuilder[Self <: PluginInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: PluginConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: PluginConfig): Self = this.set("Config", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPluginReference(value: String): Self = StObject.set(x, "PluginReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettings(value: PluginSettings): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    def setPluginReferenceUndefined: Self = StObject.set(x, "PluginReference", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
-    
-    @scala.inline
-    def setPluginReference(value: String): Self = this.set("PluginReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePluginReference: Self = this.set("PluginReference", js.undefined)
+    def setSettings(value: PluginSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
   }
 }

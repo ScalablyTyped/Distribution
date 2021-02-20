@@ -1,11 +1,12 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventHandler extends js.Object {
+trait EventHandler extends StObject {
   
   var bubbles: Boolean = js.native
   
@@ -26,33 +27,21 @@ object EventHandler {
   }
   
   @scala.inline
-  implicit class EventHandlerOps[Self <: EventHandler] (val x: Self) extends AnyVal {
+  implicit class EventHandlerMutableBuilder[Self <: EventHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: js.Function): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDispose(value: js.Function): Self = this.set("dispose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandler(value: js.Function): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInterconnectAttachmentsScopedList extends js.Object {
+trait SchemaInterconnectAttachmentsScopedList extends StObject {
   
   /**
     * A list of interconnect attachments contained in this scope.
@@ -28,33 +29,21 @@ object SchemaInterconnectAttachmentsScopedList {
   }
   
   @scala.inline
-  implicit class SchemaInterconnectAttachmentsScopedListOps[Self <: SchemaInterconnectAttachmentsScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaInterconnectAttachmentsScopedListMutableBuilder[Self <: SchemaInterconnectAttachmentsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterconnectAttachments(value: js.Array[SchemaInterconnectAttachment]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterconnectAttachmentsVarargs(value: SchemaInterconnectAttachment*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setInterconnectAttachmentsVarargs(value: SchemaInterconnectAttachment*): Self = this.set("interconnectAttachments", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterconnectAttachments(value: js.Array[SchemaInterconnectAttachment]): Self = this.set("interconnectAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterconnectAttachments: Self = this.set("interconnectAttachments", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

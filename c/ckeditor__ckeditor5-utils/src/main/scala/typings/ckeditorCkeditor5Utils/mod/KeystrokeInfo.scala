@@ -1,11 +1,12 @@
 package typings.ckeditorCkeditor5Utils.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeystrokeInfo extends js.Object {
+trait KeystrokeInfo extends StObject {
   
   var altKey: js.UndefOr[Boolean] = js.native
   
@@ -24,39 +25,27 @@ object KeystrokeInfo {
   }
   
   @scala.inline
-  implicit class KeystrokeInfoOps[Self <: KeystrokeInfo] (val x: Self) extends AnyVal {
+  implicit class KeystrokeInfoMutableBuilder[Self <: KeystrokeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyCode(value: Double): Self = this.set("keyCode", value.asInstanceOf[js.Any])
+    def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
     
     @scala.inline
-    def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAltKey: Self = this.set("altKey", js.undefined)
+    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCtrlKey: Self = this.set("ctrlKey", js.undefined)
-    
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShiftKey: Self = this.set("shiftKey", js.undefined)
+    def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
   }
 }

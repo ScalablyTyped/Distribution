@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,126 +131,114 @@ object IgTreeGridSelection {
   }
   
   @scala.inline
-  implicit class IgTreeGridSelectionOps[Self <: IgTreeGridSelection] (val x: Self) extends AnyVal {
+  implicit class IgTreeGridSelectionMutableBuilder[Self <: IgTreeGridSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivation(value: Boolean): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveCellChanged(value: (/* event */ Event, /* ui */ ActiveCellChangedEventUIParam) => Unit): Self = StObject.set(x, "activeCellChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActivation(value: Boolean): Self = this.set("activation", value.asInstanceOf[js.Any])
+    def setActiveCellChangedUndefined: Self = StObject.set(x, "activeCellChanged", js.undefined)
     
     @scala.inline
-    def deleteActivation: Self = this.set("activation", js.undefined)
+    def setActiveCellChanging(value: (/* event */ Event, /* ui */ ActiveCellChangingEventUIParam) => Unit): Self = StObject.set(x, "activeCellChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActiveCellChanged(value: (/* event */ Event, /* ui */ ActiveCellChangedEventUIParam) => Unit): Self = this.set("activeCellChanged", js.Any.fromFunction2(value))
+    def setActiveCellChangingUndefined: Self = StObject.set(x, "activeCellChanging", js.undefined)
     
     @scala.inline
-    def deleteActiveCellChanged: Self = this.set("activeCellChanged", js.undefined)
+    def setActiveRowChanged(value: (/* event */ Event, /* ui */ ActiveRowChangedEventUIParam) => Unit): Self = StObject.set(x, "activeRowChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActiveCellChanging(value: (/* event */ Event, /* ui */ ActiveCellChangingEventUIParam) => Unit): Self = this.set("activeCellChanging", js.Any.fromFunction2(value))
+    def setActiveRowChangedUndefined: Self = StObject.set(x, "activeRowChanged", js.undefined)
     
     @scala.inline
-    def deleteActiveCellChanging: Self = this.set("activeCellChanging", js.undefined)
+    def setActiveRowChanging(value: (/* event */ Event, /* ui */ ActiveRowChangingEventUIParam) => Unit): Self = StObject.set(x, "activeRowChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActiveRowChanged(value: (/* event */ Event, /* ui */ ActiveRowChangedEventUIParam) => Unit): Self = this.set("activeRowChanged", js.Any.fromFunction2(value))
+    def setActiveRowChangingUndefined: Self = StObject.set(x, "activeRowChanging", js.undefined)
     
     @scala.inline
-    def deleteActiveRowChanged: Self = this.set("activeRowChanged", js.undefined)
+    def setAllowMultipleRangeSelection(value: Boolean): Self = StObject.set(x, "allowMultipleRangeSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveRowChanging(value: (/* event */ Event, /* ui */ ActiveRowChangingEventUIParam) => Unit): Self = this.set("activeRowChanging", js.Any.fromFunction2(value))
+    def setAllowMultipleRangeSelectionUndefined: Self = StObject.set(x, "allowMultipleRangeSelection", js.undefined)
     
     @scala.inline
-    def deleteActiveRowChanging: Self = this.set("activeRowChanging", js.undefined)
+    def setCellSelectionChanged(value: (/* event */ Event, /* ui */ CellSelectionChangedEventUIParam) => Unit): Self = StObject.set(x, "cellSelectionChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAllowMultipleRangeSelection(value: Boolean): Self = this.set("allowMultipleRangeSelection", value.asInstanceOf[js.Any])
+    def setCellSelectionChangedUndefined: Self = StObject.set(x, "cellSelectionChanged", js.undefined)
     
     @scala.inline
-    def deleteAllowMultipleRangeSelection: Self = this.set("allowMultipleRangeSelection", js.undefined)
+    def setCellSelectionChanging(value: (/* event */ Event, /* ui */ CellSelectionChangingEventUIParam) => Unit): Self = StObject.set(x, "cellSelectionChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCellSelectionChanged(value: (/* event */ Event, /* ui */ CellSelectionChangedEventUIParam) => Unit): Self = this.set("cellSelectionChanged", js.Any.fromFunction2(value))
+    def setCellSelectionChangingUndefined: Self = StObject.set(x, "cellSelectionChanging", js.undefined)
     
     @scala.inline
-    def deleteCellSelectionChanged: Self = this.set("cellSelectionChanged", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellSelectionChanging(value: (/* event */ Event, /* ui */ CellSelectionChangingEventUIParam) => Unit): Self = this.set("cellSelectionChanging", js.Any.fromFunction2(value))
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteCellSelectionChanging: Self = this.set("cellSelectionChanging", js.undefined)
+    def setMouseDragSelect(value: Boolean): Self = StObject.set(x, "mouseDragSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMouseDragSelectUndefined: Self = StObject.set(x, "mouseDragSelect", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setMultipleCellSelectOnClick(value: Boolean): Self = StObject.set(x, "multipleCellSelectOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseDragSelect(value: Boolean): Self = this.set("mouseDragSelect", value.asInstanceOf[js.Any])
+    def setMultipleCellSelectOnClickUndefined: Self = StObject.set(x, "multipleCellSelectOnClick", js.undefined)
     
     @scala.inline
-    def deleteMouseDragSelect: Self = this.set("mouseDragSelect", js.undefined)
+    def setMultipleSelection(value: Boolean): Self = StObject.set(x, "multipleSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleCellSelectOnClick(value: Boolean): Self = this.set("multipleCellSelectOnClick", value.asInstanceOf[js.Any])
+    def setMultipleSelectionUndefined: Self = StObject.set(x, "multipleSelection", js.undefined)
     
     @scala.inline
-    def deleteMultipleCellSelectOnClick: Self = this.set("multipleCellSelectOnClick", js.undefined)
+    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleSelection(value: Boolean): Self = this.set("multipleSelection", value.asInstanceOf[js.Any])
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deleteMultipleSelection: Self = this.set("multipleSelection", js.undefined)
+    def setRowSelectionChanged(value: (/* event */ Event, /* ui */ RowSelectionChangedEventUIParam) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setRowSelectionChangedUndefined: Self = StObject.set(x, "rowSelectionChanged", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setRowSelectionChanging(value: (/* event */ Event, /* ui */ RowSelectionChangingEventUIParam) => Unit): Self = StObject.set(x, "rowSelectionChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowSelectionChanged(value: (/* event */ Event, /* ui */ RowSelectionChangedEventUIParam) => Unit): Self = this.set("rowSelectionChanged", js.Any.fromFunction2(value))
+    def setRowSelectionChangingUndefined: Self = StObject.set(x, "rowSelectionChanging", js.undefined)
     
     @scala.inline
-    def deleteRowSelectionChanged: Self = this.set("rowSelectionChanged", js.undefined)
+    def setSkipChildren(value: Boolean): Self = StObject.set(x, "skipChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSelectionChanging(value: (/* event */ Event, /* ui */ RowSelectionChangingEventUIParam) => Unit): Self = this.set("rowSelectionChanging", js.Any.fromFunction2(value))
+    def setSkipChildrenUndefined: Self = StObject.set(x, "skipChildren", js.undefined)
     
     @scala.inline
-    def deleteRowSelectionChanging: Self = this.set("rowSelectionChanging", js.undefined)
+    def setTouchDragSelect(value: Boolean): Self = StObject.set(x, "touchDragSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipChildren(value: Boolean): Self = this.set("skipChildren", value.asInstanceOf[js.Any])
+    def setTouchDragSelectUndefined: Self = StObject.set(x, "touchDragSelect", js.undefined)
     
     @scala.inline
-    def deleteSkipChildren: Self = this.set("skipChildren", js.undefined)
+    def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchDragSelect(value: Boolean): Self = this.set("touchDragSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchDragSelect: Self = this.set("touchDragSelect", js.undefined)
-    
-    @scala.inline
-    def setWrapAround(value: Boolean): Self = this.set("wrapAround", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapAround: Self = this.set("wrapAround", js.undefined)
+    def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
   }
 }

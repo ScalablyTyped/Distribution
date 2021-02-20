@@ -1,11 +1,12 @@
 package typings.jqueryGridster
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridsterCollision extends js.Object {
+trait GridsterCollision extends StObject {
   
   def on_overlap(data: GridsterCollisionData): Unit = js.native
   
@@ -26,27 +27,15 @@ object GridsterCollision {
   }
   
   @scala.inline
-  implicit class GridsterCollisionOps[Self <: GridsterCollision] (val x: Self) extends AnyVal {
+  implicit class GridsterCollisionMutableBuilder[Self <: GridsterCollision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOn_overlap(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOn_overlap_start(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap_start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOn_overlap(value: GridsterCollisionData => Unit): Self = this.set("on_overlap", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn_overlap_start(value: GridsterCollisionData => Unit): Self = this.set("on_overlap_start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn_overlap_stop(value: GridsterCollisionData => Unit): Self = this.set("on_overlap_stop", js.Any.fromFunction1(value))
+    def setOn_overlap_stop(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap_stop", js.Any.fromFunction1(value))
   }
 }

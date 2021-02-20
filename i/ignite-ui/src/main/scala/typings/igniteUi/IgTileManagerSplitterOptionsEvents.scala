@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +40,18 @@ object IgTileManagerSplitterOptionsEvents {
   }
   
   @scala.inline
-  implicit class IgTileManagerSplitterOptionsEventsOps[Self <: IgTileManagerSplitterOptionsEvents] (val x: Self) extends AnyVal {
+  implicit class IgTileManagerSplitterOptionsEventsMutableBuilder[Self <: IgTileManagerSplitterOptionsEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsed(value: js.Any): Self = this.set("collapsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
-    
-    @scala.inline
-    def setExpanded(value: js.Any): Self = this.set("expanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
   }
 }

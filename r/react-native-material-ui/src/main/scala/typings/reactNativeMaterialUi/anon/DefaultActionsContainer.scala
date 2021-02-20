@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.anon
 
 import typings.reactNativeMaterialUi.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultActionsContainer extends js.Object {
+trait DefaultActionsContainer extends StObject {
   
   var defaultActionsContainer: js.UndefOr[ViewStyle] = js.native
 }
@@ -19,27 +20,15 @@ object DefaultActionsContainer {
   }
   
   @scala.inline
-  implicit class DefaultActionsContainerOps[Self <: DefaultActionsContainer] (val x: Self) extends AnyVal {
+  implicit class DefaultActionsContainerMutableBuilder[Self <: DefaultActionsContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultActionsContainer(value: ViewStyle): Self = StObject.set(x, "defaultActionsContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultActionsContainerNull: Self = StObject.set(x, "defaultActionsContainer", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultActionsContainer(value: ViewStyle): Self = this.set("defaultActionsContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultActionsContainer: Self = this.set("defaultActionsContainer", js.undefined)
-    
-    @scala.inline
-    def setDefaultActionsContainerNull: Self = this.set("defaultActionsContainer", null)
+    def setDefaultActionsContainerUndefined: Self = StObject.set(x, "defaultActionsContainer", js.undefined)
   }
 }

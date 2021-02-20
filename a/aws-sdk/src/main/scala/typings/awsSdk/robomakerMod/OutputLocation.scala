@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputLocation extends js.Object {
+trait OutputLocation extends StObject {
   
   /**
     * The S3 bucket for output.
@@ -26,30 +27,18 @@ object OutputLocation {
   }
   
   @scala.inline
-  implicit class OutputLocationOps[Self <: OutputLocation] (val x: Self) extends AnyVal {
+  implicit class OutputLocationMutableBuilder[Self <: OutputLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Prefix(value: S3Key): Self = StObject.set(x, "s3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
-    
-    @scala.inline
-    def setS3Prefix(value: S3Key): Self = this.set("s3Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Prefix: Self = this.set("s3Prefix", js.undefined)
+    def setS3PrefixUndefined: Self = StObject.set(x, "s3Prefix", js.undefined)
   }
 }

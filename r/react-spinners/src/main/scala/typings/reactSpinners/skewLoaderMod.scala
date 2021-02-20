@@ -1,29 +1,36 @@
 package typings.reactSpinners
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactSpinners.interfacesMod.LoaderSizeProps
 import typings.reactSpinners.interfacesMod.StyleFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-spinners/SkewLoader", JSImport.Namespace)
-@js.native
-object skewLoaderMod extends js.Object {
+object skewLoaderMod {
   
+  @JSImport("react-spinners/SkewLoader", JSImport.Default)
   @js.native
-  trait Loader
-    extends Component[LoaderSizeProps, js.Object, js.Any] {
+  class default () extends Loader
+  object default {
     
-    var style: StyleFunction = js.native
+    @JSImport("react-spinners/SkewLoader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("react-spinners/SkewLoader", "default.defaultProps")
+    @js.native
+    def defaultProps: LoaderSizeProps = js.native
+    @scala.inline
+    def defaultProps_=(x: LoaderSizeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
-  class default () extends Loader
-  /* static members */
-  @js.native
-  object default extends js.Object {
+  trait Loader
+    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
     
-    var defaultProps: LoaderSizeProps = js.native
+    var style: StyleFunction = js.native
   }
 }

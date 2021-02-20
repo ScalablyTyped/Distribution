@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.monacoEditor.monacoEditorStrings.auto
   - typings.monacoEditor.monacoEditorStrings.never
 */
-trait EditorAutoClosingOvertypeStrategy extends js.Object
+trait EditorAutoClosingOvertypeStrategy extends StObject
 object EditorAutoClosingOvertypeStrategy {
   
   @scala.inline

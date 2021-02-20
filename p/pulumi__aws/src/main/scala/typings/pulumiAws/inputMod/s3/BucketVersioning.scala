@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketVersioning extends js.Object {
+trait BucketVersioning extends StObject {
   
   /**
     * Enable versioning. Once you version-enable a bucket, it can never return to an unversioned state. You can, however, suspend versioning on that bucket.
@@ -27,30 +28,18 @@ object BucketVersioning {
   }
   
   @scala.inline
-  implicit class BucketVersioningOps[Self <: BucketVersioning] (val x: Self) extends AnyVal {
+  implicit class BucketVersioningMutableBuilder[Self <: BucketVersioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMfaDelete(value: Input[Boolean]): Self = StObject.set(x, "mfaDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setMfaDelete(value: Input[Boolean]): Self = this.set("mfaDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMfaDelete: Self = this.set("mfaDelete", js.undefined)
+    def setMfaDeleteUndefined: Self = StObject.set(x, "mfaDelete", js.undefined)
   }
 }

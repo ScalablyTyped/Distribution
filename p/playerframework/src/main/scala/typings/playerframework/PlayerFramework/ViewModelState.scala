@@ -1,14 +1,15 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewModelState extends js.Object
+sealed trait ViewModelState extends StObject
 @JSGlobal("PlayerFramework.ViewModelState")
 @js.native
-object ViewModelState extends js.Object {
+object ViewModelState extends StObject {
   
   /**
     * The media is loading.

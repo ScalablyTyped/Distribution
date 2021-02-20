@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderTrackingSignalLineItemDetails extends js.Object {
+trait OrderTrackingSignalLineItemDetails extends StObject {
   
   /** The Global Trade Item Number. */
   var gtin: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object OrderTrackingSignalLineItemDetails {
   }
   
   @scala.inline
-  implicit class OrderTrackingSignalLineItemDetailsOps[Self <: OrderTrackingSignalLineItemDetails] (val x: Self) extends AnyVal {
+  implicit class OrderTrackingSignalLineItemDetailsMutableBuilder[Self <: OrderTrackingSignalLineItemDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGtin(value: String): Self = this.set("gtin", value.asInstanceOf[js.Any])
+    def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
     @scala.inline
-    def deleteGtin: Self = this.set("gtin", js.undefined)
+    def setMpn(value: String): Self = StObject.set(x, "mpn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemId(value: String): Self = this.set("lineItemId", value.asInstanceOf[js.Any])
+    def setMpnUndefined: Self = StObject.set(x, "mpn", js.undefined)
     
     @scala.inline
-    def deleteLineItemId: Self = this.set("lineItemId", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpn(value: String): Self = this.set("mpn", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteMpn: Self = this.set("mpn", js.undefined)
+    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: String): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

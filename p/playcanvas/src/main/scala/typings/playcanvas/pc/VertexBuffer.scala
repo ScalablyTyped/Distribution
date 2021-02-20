@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [initialData] - Initial data.
   */
 @js.native
-trait VertexBuffer extends js.Object {
+trait VertexBuffer extends StObject {
   
   /**
     * Frees resources associated with this vertex buffer.

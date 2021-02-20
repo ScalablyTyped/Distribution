@@ -1,5 +1,6 @@
 package typings.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.escpos.escposStrings.imageSlashgif
   - typings.escpos.escposStrings.imageSlashbmp
 */
-trait MIME_TYPE extends js.Object
+trait MIME_TYPE extends StObject
 object MIME_TYPE {
   
   @scala.inline

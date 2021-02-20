@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestErrorEventUIParam extends js.Object {
+trait RequestErrorEventUIParam extends StObject {
   
   /**
     * Gets the processed error message sent by the server
@@ -31,36 +32,24 @@ object RequestErrorEventUIParam {
   }
   
   @scala.inline
-  implicit class RequestErrorEventUIParamOps[Self <: RequestErrorEventUIParam] (val x: Self) extends AnyVal {
+  implicit class RequestErrorEventUIParamMutableBuilder[Self <: RequestErrorEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setResponse(value: js.Any): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.failed
   - typings.std.stdStrings.`new`
 */
-trait RTCPeerConnectionState extends js.Object
+trait RTCPeerConnectionState extends StObject
 object RTCPeerConnectionState {
   
   @scala.inline

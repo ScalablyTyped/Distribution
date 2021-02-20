@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `OfficeTheme` is only supported in Office on Windows.
   */
 @js.native
-trait OfficeTheme extends js.Object {
+trait OfficeTheme extends StObject {
   
   /**
     * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").
@@ -54,30 +55,18 @@ object OfficeTheme {
   }
   
   @scala.inline
-  implicit class OfficeThemeOps[Self <: OfficeTheme] (val x: Self) extends AnyVal {
+  implicit class OfficeThemeMutableBuilder[Self <: OfficeTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyBackgroundColor(value: String): Self = StObject.set(x, "bodyBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyForegroundColor(value: String): Self = StObject.set(x, "bodyForegroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlBackgroundColor(value: String): Self = StObject.set(x, "controlBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyBackgroundColor(value: String): Self = this.set("bodyBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBodyForegroundColor(value: String): Self = this.set("bodyForegroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setControlBackgroundColor(value: String): Self = this.set("controlBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setControlForegroundColor(value: String): Self = this.set("controlForegroundColor", value.asInstanceOf[js.Any])
+    def setControlForegroundColor(value: String): Self = StObject.set(x, "controlForegroundColor", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBotResponse extends js.Object {
+trait GetBotResponse extends StObject {
   
   /**
     * The message that Amazon Lex returns when the user elects to end the conversation without completing it. For more information, see PutBot.
@@ -106,129 +107,117 @@ object GetBotResponse {
   }
   
   @scala.inline
-  implicit class GetBotResponseOps[Self <: GetBotResponse] (val x: Self) extends AnyVal {
+  implicit class GetBotResponseMutableBuilder[Self <: GetBotResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortStatement(value: Statement): Self = StObject.set(x, "abortStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortStatementUndefined: Self = StObject.set(x, "abortStatement", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortStatement(value: Statement): Self = this.set("abortStatement", value.asInstanceOf[js.Any])
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def deleteAbortStatement: Self = this.set("abortStatement", js.undefined)
+    def setChildDirected(value: Boolean): Self = StObject.set(x, "childDirected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    def setChildDirectedUndefined: Self = StObject.set(x, "childDirected", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setClarificationPrompt(value: Prompt): Self = StObject.set(x, "clarificationPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDirected(value: Boolean): Self = this.set("childDirected", value.asInstanceOf[js.Any])
+    def setClarificationPromptUndefined: Self = StObject.set(x, "clarificationPrompt", js.undefined)
     
     @scala.inline
-    def deleteChildDirected: Self = this.set("childDirected", js.undefined)
+    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClarificationPrompt(value: Prompt): Self = this.set("clarificationPrompt", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteClarificationPrompt: Self = this.set("clarificationPrompt", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setDetectSentiment(value: Boolean): Self = StObject.set(x, "detectSentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDetectSentimentUndefined: Self = StObject.set(x, "detectSentiment", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnableModelImprovements(value: Boolean): Self = StObject.set(x, "enableModelImprovements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectSentiment(value: Boolean): Self = this.set("detectSentiment", value.asInstanceOf[js.Any])
+    def setEnableModelImprovementsUndefined: Self = StObject.set(x, "enableModelImprovements", js.undefined)
     
     @scala.inline
-    def deleteDetectSentiment: Self = this.set("detectSentiment", js.undefined)
+    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableModelImprovements(value: Boolean): Self = this.set("enableModelImprovements", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteEnableModelImprovements: Self = this.set("enableModelImprovements", js.undefined)
+    def setIdleSessionTTLInSeconds(value: SessionTTL): Self = StObject.set(x, "idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setIdleSessionTTLInSecondsUndefined: Self = StObject.set(x, "idleSessionTTLInSeconds", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setIntents(value: IntentList): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleSessionTTLInSeconds(value: SessionTTL): Self = this.set("idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
+    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
     @scala.inline
-    def deleteIdleSessionTTLInSeconds: Self = this.set("idleSessionTTLInSeconds", js.undefined)
+    def setIntentsVarargs(value: Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
     @scala.inline
-    def setIntentsVarargs(value: Intent*): Self = this.set("intents", js.Array(value :_*))
+    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntents(value: IntentList): Self = this.set("intents", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteIntents: Self = this.set("intents", js.undefined)
+    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
+    def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setNluIntentConfidenceThreshold(value: ConfidenceThreshold): Self = StObject.set(x, "nluIntentConfidenceThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: BotName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNluIntentConfidenceThresholdUndefined: Self = StObject.set(x, "nluIntentConfidenceThreshold", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNluIntentConfidenceThreshold(value: ConfidenceThreshold): Self = this.set("nluIntentConfidenceThreshold", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteNluIntentConfidenceThreshold: Self = this.set("nluIntentConfidenceThreshold", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVoiceId(value: String): Self = StObject.set(x, "voiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVoiceId(value: String): Self = this.set("voiceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceId: Self = this.set("voiceId", js.undefined)
+    def setVoiceIdUndefined: Self = StObject.set(x, "voiceId", js.undefined)
   }
 }

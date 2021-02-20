@@ -2,14 +2,14 @@ package typings.agGrid
 
 import typings.agGrid.componentMod.Component
 import typings.agGrid.iCellRendererMod.ICellRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/cellRenderers/animateShowChangeCellRenderer", JSImport.Namespace)
-@js.native
-object animateShowChangeCellRendererMod extends js.Object {
+object animateShowChangeCellRendererMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/cellRenderers/animateShowChangeCellRenderer", "AnimateShowChangeCellRenderer")
   @js.native
   class AnimateShowChangeCellRenderer ()
     extends Component
@@ -33,9 +33,16 @@ object animateShowChangeCellRendererMod extends js.Object {
     /* private */ def showDelta(params: js.Any, delta: js.Any): js.Any = js.native
   }
   /* static members */
-  @js.native
-  object AnimateShowChangeCellRenderer extends js.Object {
+  object AnimateShowChangeCellRenderer {
     
-    var TEMPLATE: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/cellRenderers/animateShowChangeCellRenderer", "AnimateShowChangeCellRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/rendering/cellRenderers/animateShowChangeCellRenderer", "AnimateShowChangeCellRenderer.TEMPLATE")
+    @js.native
+    def TEMPLATE: js.Any = js.native
+    @scala.inline
+    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
 }

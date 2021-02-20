@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentRecurrenceUnit extends js.Object
+sealed trait AppointmentRecurrenceUnit extends StObject
 /** Specifies the frequency for which an appointment occurs. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit")
 @js.native
-object AppointmentRecurrenceUnit extends js.Object {
+object AppointmentRecurrenceUnit extends StObject {
   
   /** Appointment occurs daily. */
   @js.native

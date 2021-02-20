@@ -2,6 +2,7 @@ package typings.fflate.mod
 
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates an asynchronous decompression stream
   * @param cb The callback to call whenever data is decompressed
   */
-class AsyncDecompress () extends js.Object {
+class AsyncDecompress () extends StObject {
   def this(cb: AsyncFlateStreamHandler) = this()
   
   var G: js.Any = js.native

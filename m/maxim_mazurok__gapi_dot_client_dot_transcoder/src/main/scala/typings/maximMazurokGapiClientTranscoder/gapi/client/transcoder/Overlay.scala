@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Overlay extends js.Object {
+trait Overlay extends StObject {
   
   /** List of Animations. The list should be chronological, without any time overlap. */
   var animations: js.UndefOr[js.Array[Animation]] = js.native
@@ -22,33 +23,21 @@ object Overlay {
   }
   
   @scala.inline
-  implicit class OverlayOps[Self <: Overlay] (val x: Self) extends AnyVal {
+  implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def setAnimationsVarargs(value: Animation*): Self = this.set("animations", js.Array(value :_*))
+    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimations(value: js.Array[Animation]): Self = this.set("animations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimations: Self = this.set("animations", js.undefined)
-    
-    @scala.inline
-    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

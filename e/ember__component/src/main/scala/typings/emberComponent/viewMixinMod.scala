@@ -1,5 +1,6 @@
 package typings.emberComponent
 
+import org.scalablytyped.runtime.Shortcut
 import typings.jquery.JQuery
 import typings.jquery.JQuery.PlainObject
 import typings.jquery.JQuery.Selector
@@ -11,18 +12,19 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/component/-private/view-mixin", JSImport.Namespace)
-@js.native
-object viewMixinMod extends js.Object {
+object viewMixinMod extends Shortcut {
   
+  @JSImport("@ember/component/-private/view-mixin", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[ViewMixin, typings.emberObject.mod.default] = js.native
   
   @js.native
-  trait ViewMixin extends js.Object {
+  trait ViewMixin extends StObject {
     
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
@@ -338,4 +340,9 @@ object viewMixinMod extends js.Object {
       */
     def willInsertElement(): Unit = js.native
   }
+  
+  type _To = typings.emberObject.mixinMod.default[ViewMixin, typings.emberObject.mod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `viewMixinMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[ViewMixin, typings.emberObject.mod.default] = default
 }

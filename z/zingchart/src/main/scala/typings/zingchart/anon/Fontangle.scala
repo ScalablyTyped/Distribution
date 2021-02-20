@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fontangle extends js.Object {
+trait Fontangle extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 being co
@@ -108,120 +109,108 @@ object Fontangle {
   }
   
   @scala.inline
-  implicit class FontangleOps[Self <: Fontangle] (val x: Self) extends AnyVal {
+  implicit class FontangleMutableBuilder[Self <: Fontangle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def `setBorder-alpha`(value: Double): Self = StObject.set(x, "border-alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-color`(value: String): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    def `setBorder-alphaUndefined`: Self = StObject.set(x, "border-alpha", js.undefined)
     
     @scala.inline
-    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-alpha`(value: Double): Self = this.set("border-alpha", value.asInstanceOf[js.Any])
+    def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
     @scala.inline
-    def `deleteBorder-alpha`: Self = this.set("border-alpha", js.undefined)
+    def `setBorder-radius`(value: Double): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-color`(value: String): Self = this.set("border-color", value.asInstanceOf[js.Any])
+    def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
     
     @scala.inline
-    def `deleteBorder-color`: Self = this.set("border-color", js.undefined)
+    def `setBorder-width`(value: Double): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-radius`(value: Double): Self = this.set("border-radius", value.asInstanceOf[js.Any])
+    def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
     @scala.inline
-    def `deleteBorder-radius`: Self = this.set("border-radius", js.undefined)
+    def `setFont-angle`(value: Double): Self = StObject.set(x, "font-angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-width`(value: Double): Self = this.set("border-width", value.asInstanceOf[js.Any])
+    def `setFont-angleUndefined`: Self = StObject.set(x, "font-angle", js.undefined)
     
     @scala.inline
-    def `deleteBorder-width`: Self = this.set("border-width", js.undefined)
+    def `setFont-color`(value: js.Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-angle`(value: Double): Self = this.set("font-angle", value.asInstanceOf[js.Any])
+    def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
     
     @scala.inline
-    def `deleteFont-angle`: Self = this.set("font-angle", js.undefined)
+    def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-color`(value: js.Any): Self = this.set("font-color", value.asInstanceOf[js.Any])
+    def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
     
     @scala.inline
-    def `deleteFont-color`: Self = this.set("font-color", js.undefined)
+    def `setFont-size`(value: Double): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-family`(value: String): Self = this.set("font-family", value.asInstanceOf[js.Any])
+    def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
     
     @scala.inline
-    def `deleteFont-family`: Self = this.set("font-family", js.undefined)
+    def `setFont-style`(value: String): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-size`(value: Double): Self = this.set("font-size", value.asInstanceOf[js.Any])
+    def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
     
     @scala.inline
-    def `deleteFont-size`: Self = this.set("font-size", js.undefined)
+    def `setFont-weight`(value: String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-style`(value: String): Self = this.set("font-style", value.asInstanceOf[js.Any])
+    def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
     
     @scala.inline
-    def `deleteFont-style`: Self = this.set("font-style", js.undefined)
+    def `setLine-style`(value: String): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-weight`(value: String): Self = this.set("font-weight", value.asInstanceOf[js.Any])
+    def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
     @scala.inline
-    def `deleteFont-weight`: Self = this.set("font-weight", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-style`(value: String): Self = this.set("line-style", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def `deleteLine-style`: Self = this.set("line-style", js.undefined)
+    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def `setText-alpha`(value: Double): Self = StObject.set(x, "text-alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def `setText-alphaUndefined`: Self = StObject.set(x, "text-alpha", js.undefined)
     
     @scala.inline
-    def setText(value: js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-alpha`(value: Double): Self = this.set("text-alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteText-alpha`: Self = this.set("text-alpha", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

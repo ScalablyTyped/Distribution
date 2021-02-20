@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountId extends js.Object {
+trait AccountId extends StObject {
   
   var accountId: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object AccountId {
   }
   
   @scala.inline
-  implicit class AccountIdOps[Self <: AccountId] (val x: Self) extends AnyVal {
+  implicit class AccountIdMutableBuilder[Self <: AccountId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    def setProfileName(value: String): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileName(value: String): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
     @scala.inline
-    def deleteProfileName: Self = this.set("profileName", js.undefined)
+    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("tableId", js.undefined)
-    
-    @scala.inline
-    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

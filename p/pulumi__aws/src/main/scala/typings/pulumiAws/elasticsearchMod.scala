@@ -10,17 +10,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/elasticsearch", JSImport.Namespace)
-@js.native
-object elasticsearchMod extends js.Object {
+object elasticsearchMod {
   
-  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = js.native
-  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = js.native
-  
+  @JSImport("@pulumi/aws/elasticsearch", "Domain")
   @js.native
   class Domain protected ()
     extends typings.pulumiAws.elasticsearchDomainMod.Domain {
@@ -37,8 +34,7 @@ object elasticsearchMod extends js.Object {
     def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Domain extends js.Object {
+  object Domain {
     
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
@@ -49,18 +45,29 @@ object elasticsearchMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticsearch", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticsearchDomainMod.Domain = js.native
+    @JSImport("@pulumi/aws/elasticsearch", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticsearchDomainMod.Domain = js.native
+    @JSImport("@pulumi/aws/elasticsearch", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.elasticsearchDomainMod.Domain = js.native
+    @JSImport("@pulumi/aws/elasticsearch", "Domain.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.elasticsearchDomainMod.Domain = js.native
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticsearch", "Domain.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticsearch", "DomainPolicy")
   @js.native
   class DomainPolicy protected ()
     extends typings.pulumiAws.domainPolicyMod.DomainPolicy {
@@ -75,8 +82,7 @@ object elasticsearchMod extends js.Object {
     def this(name: String, args: DomainPolicyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object DomainPolicy extends js.Object {
+  object DomainPolicy {
     
     /**
       * Get an existing DomainPolicy resource's state with the given name, ID, and optional extra
@@ -87,15 +93,32 @@ object elasticsearchMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticsearch", "DomainPolicy.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
+    @JSImport("@pulumi/aws/elasticsearch", "DomainPolicy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
+    @JSImport("@pulumi/aws/elasticsearch", "DomainPolicy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DomainPolicyState): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
+    @JSImport("@pulumi/aws/elasticsearch", "DomainPolicy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DomainPolicyState, opts: CustomResourceOptions): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
     
     /**
       * Returns true if the given object is an instance of DomainPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticsearch", "DomainPolicy.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domainPolicy.DomainPolicy */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/elasticsearch", "getDomain")
+  @js.native
+  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = js.native
+  @JSImport("@pulumi/aws/elasticsearch", "getDomain")
+  @js.native
+  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = js.native
 }

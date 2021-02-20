@@ -2,12 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bilinear
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.nearest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CropAndResizeAttrs extends js.Object {
+trait CropAndResizeAttrs extends StObject {
   
   var cropSize: js.Tuple2[Double, Double] = js.native
   
@@ -24,27 +25,15 @@ object CropAndResizeAttrs {
   }
   
   @scala.inline
-  implicit class CropAndResizeAttrsOps[Self <: CropAndResizeAttrs] (val x: Self) extends AnyVal {
+  implicit class CropAndResizeAttrsMutableBuilder[Self <: CropAndResizeAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCropSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtrapolationValue(value: Double): Self = StObject.set(x, "extrapolationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCropSize(value: js.Tuple2[Double, Double]): Self = this.set("cropSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtrapolationValue(value: Double): Self = this.set("extrapolationValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: bilinear | nearest): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMethod(value: bilinear | nearest): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

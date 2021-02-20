@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The response from a background app service for progress, confirmation, disambiguation, completion, or failure screens displayed on the Cortana canvas. */
 @js.native
-trait VoiceCommandResponse extends js.Object {
+trait VoiceCommandResponse extends StObject {
   
   /** Gets or sets a string as a launch parameter that can be associated with the response by the background app service. */
   var appLaunchArgument: String = js.native
@@ -35,30 +36,18 @@ object VoiceCommandResponse {
   }
   
   @scala.inline
-  implicit class VoiceCommandResponseOps[Self <: VoiceCommandResponse] (val x: Self) extends AnyVal {
+  implicit class VoiceCommandResponseMutableBuilder[Self <: VoiceCommandResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: VoiceCommandUserMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepeatMessage(value: VoiceCommandUserMessage): Self = StObject.set(x, "repeatMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppLaunchArgument(value: String): Self = this.set("appLaunchArgument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: VoiceCommandUserMessage): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatMessage(value: VoiceCommandUserMessage): Self = this.set("repeatMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoiceCommandContentTiles(value: IVector[VoiceCommandContentTile]): Self = this.set("voiceCommandContentTiles", value.asInstanceOf[js.Any])
+    def setVoiceCommandContentTiles(value: IVector[VoiceCommandContentTile]): Self = StObject.set(x, "voiceCommandContentTiles", value.asInstanceOf[js.Any])
   }
 }

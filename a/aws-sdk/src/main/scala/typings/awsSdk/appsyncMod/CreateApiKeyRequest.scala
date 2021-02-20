@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateApiKeyRequest extends js.Object {
+trait CreateApiKeyRequest extends StObject {
   
   /**
     * The ID for your GraphQL API.
@@ -31,33 +32,21 @@ object CreateApiKeyRequest {
   }
   
   @scala.inline
-  implicit class CreateApiKeyRequestOps[Self <: CreateApiKeyRequest] (val x: Self) extends AnyVal {
+  implicit class CreateApiKeyRequestMutableBuilder[Self <: CreateApiKeyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setApiId(value: String): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    def setExpires(value: Long): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setExpires(value: Long): Self = this.set("expires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticsearchRetryOptions extends js.Object {
+trait ElasticsearchRetryOptions extends StObject {
   
   /**
     * After an initial failure to deliver to Amazon ES, the total amount of time during which Kinesis Data Firehose retries delivery (including the first attempt). After this time has elapsed, the failed documents are written to Amazon S3. Default value is 300 seconds (5 minutes). A value of 0 (zero) results in no retries.
@@ -21,24 +22,12 @@ object ElasticsearchRetryOptions {
   }
   
   @scala.inline
-  implicit class ElasticsearchRetryOptionsOps[Self <: ElasticsearchRetryOptions] (val x: Self) extends AnyVal {
+  implicit class ElasticsearchRetryOptionsMutableBuilder[Self <: ElasticsearchRetryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationInSeconds(value: ElasticsearchRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDurationInSeconds(value: ElasticsearchRetryDurationInSeconds): Self = this.set("DurationInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationInSeconds: Self = this.set("DurationInSeconds", js.undefined)
+    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
   }
 }

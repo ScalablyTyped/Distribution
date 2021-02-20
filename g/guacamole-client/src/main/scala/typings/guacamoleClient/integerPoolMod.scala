@@ -1,15 +1,15 @@
 package typings.guacamoleClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/IntegerPool", JSImport.Namespace)
-@js.native
-object integerPoolMod extends js.Object {
+object integerPoolMod {
   
+  @JSImport("guacamole-client/lib/IntegerPool", "IntegerPool")
   @js.native
-  class IntegerPool () extends js.Object {
+  class IntegerPool () extends StObject {
     
     /**
       * Frees the given integer, allowing it to be reused.

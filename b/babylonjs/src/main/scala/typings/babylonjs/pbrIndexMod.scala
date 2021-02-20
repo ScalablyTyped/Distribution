@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/PBR/index", JSImport.Namespace)
-@js.native
-object pbrIndexMod extends js.Object {
+object pbrIndexMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "AnisotropyBlock")
   @js.native
   class AnisotropyBlock protected ()
     extends typings.babylonjs.anisotropyBlockMod.AnisotropyBlock {
@@ -20,6 +20,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ClearCoatBlock")
   @js.native
   class ClearCoatBlock protected ()
     extends typings.babylonjs.clearCoatBlockMod.ClearCoatBlock {
@@ -30,8 +31,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   /* static members */
-  @js.native
-  object ClearCoatBlock extends js.Object {
+  object ClearCoatBlock {
     
     /**
       * Gets the main code of the block (fragment side)
@@ -44,6 +44,8 @@ object pbrIndexMod extends js.Object {
       * @param worldNormalVarName name of the variable holding the world normal
       * @returns the shader code
       */
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ClearCoatBlock.GetCode")
+    @js.native
     def GetCode(
       state: NodeMaterialBuildState,
       ccBlock: Nullable[typings.babylonjs.clearCoatBlockMod.ClearCoatBlock],
@@ -55,6 +57,7 @@ object pbrIndexMod extends js.Object {
     ): String = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "PBRMetallicRoughnessBlock")
   @js.native
   class PBRMetallicRoughnessBlock protected ()
     extends typings.babylonjs.pbrMetallicRoughnessBlockMod.PBRMetallicRoughnessBlock {
@@ -65,6 +68,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "ReflectionBlock")
   @js.native
   class ReflectionBlock protected ()
     extends typings.babylonjs.reflectionBlockMod.ReflectionBlock {
@@ -75,6 +79,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "RefractionBlock")
   @js.native
   class RefractionBlock protected ()
     extends typings.babylonjs.refractionBlockMod.RefractionBlock {
@@ -85,6 +90,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SheenBlock")
   @js.native
   class SheenBlock protected ()
     extends typings.babylonjs.sheenBlockMod.SheenBlock {
@@ -95,6 +101,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SubSurfaceBlock")
   @js.native
   class SubSurfaceBlock protected ()
     extends typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock {
@@ -105,8 +112,7 @@ object pbrIndexMod extends js.Object {
     def this(name: String) = this()
   }
   /* static members */
-  @js.native
-  object SubSurfaceBlock extends js.Object {
+  object SubSurfaceBlock {
     
     /**
       * Gets the main code of the block (fragment side)
@@ -116,6 +122,8 @@ object pbrIndexMod extends js.Object {
       * @param worldPosVarName name of the variable holding the world position
       * @returns the shader code
       */
+    @JSImport("babylonjs/Materials/Node/Blocks/PBR/index", "SubSurfaceBlock.GetCode")
+    @js.native
     def GetCode(
       state: NodeMaterialBuildState,
       ssBlock: Nullable[typings.babylonjs.subSurfaceBlockMod.SubSurfaceBlock],

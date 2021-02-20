@@ -1,12 +1,13 @@
 package typings.babylonjs.blocksIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/Blocks/index", "AnimatedInputBlockTypes")
 @js.native
-object AnimatedInputBlockTypes extends js.Object {
+object AnimatedInputBlockTypes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes with Double] = js.native

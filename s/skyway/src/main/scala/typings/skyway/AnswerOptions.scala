@@ -1,11 +1,12 @@
 package typings.skyway
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnswerOptions extends js.Object {
+trait AnswerOptions extends StObject {
   
   var audioBandwidth: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object AnswerOptions {
   }
   
   @scala.inline
-  implicit class AnswerOptionsOps[Self <: AnswerOptions] (val x: Self) extends AnyVal {
+  implicit class AnswerOptionsMutableBuilder[Self <: AnswerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioBandwidthUndefined: Self = StObject.set(x, "audioBandwidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBandwidth(value: Double): Self = this.set("audioBandwidth", value.asInstanceOf[js.Any])
+    def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
     
     @scala.inline
-    def deleteAudioBandwidth: Self = this.set("audioBandwidth", js.undefined)
+    def setVideoBandwidth(value: Double): Self = StObject.set(x, "videoBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioCodec(value: String): Self = this.set("audioCodec", value.asInstanceOf[js.Any])
+    def setVideoBandwidthUndefined: Self = StObject.set(x, "videoBandwidth", js.undefined)
     
     @scala.inline
-    def deleteAudioCodec: Self = this.set("audioCodec", js.undefined)
+    def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoBandwidth(value: Double): Self = this.set("videoBandwidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoBandwidth: Self = this.set("videoBandwidth", js.undefined)
-    
-    @scala.inline
-    def setVideoCodec(value: String): Self = this.set("videoCodec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoCodec: Self = this.set("videoCodec", js.undefined)
+    def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
   }
 }

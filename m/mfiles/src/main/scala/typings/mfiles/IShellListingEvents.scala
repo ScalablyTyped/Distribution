@@ -1,6 +1,7 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,72 +36,60 @@ object IShellListingEvents {
   }
   
   @scala.inline
-  implicit class IShellListingEventsOps[Self <: IShellListingEvents] (val x: Self) extends AnyVal {
+  implicit class IShellListingEventsMutableBuilder[Self <: IShellListingEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnContentChanged(value: /* items */ IShellItems => Unit): Self = StObject.set(x, "OnContentChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnContentChangedUndefined: Self = StObject.set(x, "OnContentChanged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnListingActivated(value: /* oldListing */ Null | IShellListing => Unit): Self = StObject.set(x, "OnListingActivated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnContentChanged(value: /* items */ IShellItems => Unit): Self = this.set("OnContentChanged", js.Any.fromFunction1(value))
+    def setOnListingActivatedUndefined: Self = StObject.set(x, "OnListingActivated", js.undefined)
     
     @scala.inline
-    def deleteOnContentChanged: Self = this.set("OnContentChanged", js.undefined)
+    def setOnListingDeactivated(value: /* newListing */ Null | IShellListing => Unit): Self = StObject.set(x, "OnListingDeactivated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnListingActivated(value: /* oldListing */ Null | IShellListing => Unit): Self = this.set("OnListingActivated", js.Any.fromFunction1(value))
+    def setOnListingDeactivatedUndefined: Self = StObject.set(x, "OnListingDeactivated", js.undefined)
     
     @scala.inline
-    def deleteOnListingActivated: Self = this.set("OnListingActivated", js.undefined)
+    def setOnSelectedItemsChanged(value: /* selectedItems */ IShellItems => Unit): Self = StObject.set(x, "OnSelectedItemsChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnListingDeactivated(value: /* newListing */ Null | IShellListing => Unit): Self = this.set("OnListingDeactivated", js.Any.fromFunction1(value))
+    def setOnSelectedItemsChangedUndefined: Self = StObject.set(x, "OnSelectedItemsChanged", js.undefined)
     
     @scala.inline
-    def deleteOnListingDeactivated: Self = this.set("OnListingDeactivated", js.undefined)
+    def setOnSelectionChanged(value: /* selectedItems */ IShellItems => Unit): Self = StObject.set(x, "OnSelectionChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSelectedItemsChanged(value: /* selectedItems */ IShellItems => Unit): Self = this.set("OnSelectedItemsChanged", js.Any.fromFunction1(value))
+    def setOnSelectionChangedUndefined: Self = StObject.set(x, "OnSelectionChanged", js.undefined)
     
     @scala.inline
-    def deleteOnSelectedItemsChanged: Self = this.set("OnSelectedItemsChanged", js.undefined)
+    def setOnShowContextMenu(value: /* selectedItems */ IShellItems => Unit): Self = StObject.set(x, "OnShowContextMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSelectionChanged(value: /* selectedItems */ IShellItems => Unit): Self = this.set("OnSelectionChanged", js.Any.fromFunction1(value))
+    def setOnShowContextMenuUndefined: Self = StObject.set(x, "OnShowContextMenu", js.undefined)
     
     @scala.inline
-    def deleteOnSelectionChanged: Self = this.set("OnSelectionChanged", js.undefined)
+    def setOnShowMainMenu(value: /* selectedItems */ IShellItems => Unit): Self = StObject.set(x, "OnShowMainMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnShowContextMenu(value: /* selectedItems */ IShellItems => Unit): Self = this.set("OnShowContextMenu", js.Any.fromFunction1(value))
+    def setOnShowMainMenuUndefined: Self = StObject.set(x, "OnShowMainMenu", js.undefined)
     
     @scala.inline
-    def deleteOnShowContextMenu: Self = this.set("OnShowContextMenu", js.undefined)
+    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShowMainMenu(value: /* selectedItems */ IShellItems => Unit): Self = this.set("OnShowMainMenu", js.Any.fromFunction1(value))
+    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
     @scala.inline
-    def deleteOnShowMainMenu: Self = this.set("OnShowMainMenu", js.undefined)
+    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnStarted(value: () => Unit): Self = this.set("OnStarted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStarted: Self = this.set("OnStarted", js.undefined)
-    
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = this.set("OnStop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStop: Self = this.set("OnStop", js.undefined)
+    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
   }
 }

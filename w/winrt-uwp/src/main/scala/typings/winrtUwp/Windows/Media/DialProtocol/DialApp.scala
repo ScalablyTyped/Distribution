@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a DIAL application running on a remote device. */
 @js.native
-trait DialApp extends js.Object {
+trait DialApp extends StObject {
   
   /** Gets the applications registered DIAL name. */
   var appName: String = js.native
@@ -45,30 +46,18 @@ object DialApp {
   }
   
   @scala.inline
-  implicit class DialAppOps[Self <: DialApp] (val x: Self) extends AnyVal {
+  implicit class DialAppMutableBuilder[Self <: DialApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAppStateAsync(value: () => IPromiseWithIAsyncOperation[DialAppStateDetails]): Self = StObject.set(x, "getAppStateAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestLaunchAsync(value: String => IPromiseWithIAsyncOperation[DialAppLaunchResult]): Self = StObject.set(x, "requestLaunchAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAppStateAsync(value: () => IPromiseWithIAsyncOperation[DialAppStateDetails]): Self = this.set("getAppStateAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestLaunchAsync(value: String => IPromiseWithIAsyncOperation[DialAppLaunchResult]): Self = this.set("requestLaunchAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopAsync(value: () => IPromiseWithIAsyncOperation[DialAppStopResult]): Self = this.set("stopAsync", js.Any.fromFunction0(value))
+    def setStopAsync(value: () => IPromiseWithIAsyncOperation[DialAppStopResult]): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
   }
 }

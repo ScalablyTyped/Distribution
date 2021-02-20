@@ -1,21 +1,35 @@
 package typings.dialogflow.mod.google.longrunning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GetOperationRequest. */
-trait IGetOperationRequest extends js.Object {
+@js.native
+trait IGetOperationRequest extends StObject {
+  
   /** GetOperationRequest name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
 }
-
 object IGetOperationRequest {
+  
   @scala.inline
-  def apply(name: js.UndefOr[Null | String] = js.undefined): IGetOperationRequest = {
+  def apply(): IGetOperationRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetOperationRequest]
   }
+  
+  @scala.inline
+  implicit class IGetOperationRequestMutableBuilder[Self <: IGetOperationRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

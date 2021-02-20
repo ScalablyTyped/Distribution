@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorSuggestions extends js.Object {
+trait EditorSuggestions extends StObject {
   
   /**
     * A list of video editing operations that might improve the video quality or playback experience of the uploaded video.
@@ -47,48 +48,36 @@ object EditorSuggestions {
   }
   
   @scala.inline
-  implicit class EditorSuggestionsOps[Self <: EditorSuggestions] (val x: Self) extends AnyVal {
+  implicit class EditorSuggestionsMutableBuilder[Self <: EditorSuggestions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorSuggestionsVarargs(value: String*): Self = this.set("editorSuggestions", js.Array(value :_*))
+    def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
     
     @scala.inline
-    def setEditorSuggestions(value: js.Array[String]): Self = this.set("editorSuggestions", value.asInstanceOf[js.Any])
+    def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingErrorsVarargs(value: String*): Self = this.set("processingErrors", js.Array(value :_*))
+    def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
     
     @scala.inline
-    def setProcessingErrors(value: js.Array[String]): Self = this.set("processingErrors", value.asInstanceOf[js.Any])
+    def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingHintsVarargs(value: String*): Self = this.set("processingHints", js.Array(value :_*))
+    def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
     
     @scala.inline
-    def setProcessingHints(value: js.Array[String]): Self = this.set("processingHints", value.asInstanceOf[js.Any])
+    def setTagSuggestions(value: js.Array[CategoryRestricts]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingWarningsVarargs(value: String*): Self = this.set("processingWarnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setProcessingWarnings(value: js.Array[String]): Self = this.set("processingWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagSuggestionsVarargs(value: CategoryRestricts*): Self = this.set("tagSuggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagSuggestions(value: js.Array[CategoryRestricts]): Self = this.set("tagSuggestions", value.asInstanceOf[js.Any])
+    def setTagSuggestionsVarargs(value: CategoryRestricts*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
   }
 }

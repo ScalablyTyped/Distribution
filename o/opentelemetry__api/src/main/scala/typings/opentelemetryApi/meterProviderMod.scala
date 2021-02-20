@@ -1,16 +1,15 @@
 package typings.opentelemetryApi
 
 import typings.opentelemetryApi.meterMod.Meter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/metrics/MeterProvider", JSImport.Namespace)
-@js.native
-object meterProviderMod extends js.Object {
+object meterProviderMod {
   
   @js.native
-  trait MeterProvider extends js.Object {
+  trait MeterProvider extends StObject {
     
     /**
       * Returns a Meter, creating one if one with the given name and version is

@@ -9,12 +9,13 @@ import typings.angularCompiler.compileMetadataMod.CompileTypeMetadata
 import typings.angularCompiler.compileMetadataMod.ProxyClass
 import typings.angularCompiler.coreMod.ChangeDetectionStrategy
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeDetection extends js.Object {
+trait ChangeDetection extends StObject {
   
   var changeDetection: ChangeDetectionStrategy | Null = js.native
   
@@ -78,114 +79,102 @@ object ChangeDetection {
   }
   
   @scala.inline
-  implicit class ChangeDetectionOps[Self <: ChangeDetection] (val x: Self) extends AnyVal {
+  implicit class ChangeDetectionMutableBuilder[Self <: ChangeDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeDetectionNull: Self = StObject.set(x, "changeDetection", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentFactory(value: StaticSymbol | js.Object): Self = StObject.set(x, "componentFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryComponentsVarargs(value: CompileEntryComponentMetadata*): Self = this.set("entryComponents", js.Array(value :_*))
+    def setComponentFactoryNull: Self = StObject.set(x, "componentFactory", null)
     
     @scala.inline
-    def setEntryComponents(value: js.Array[CompileEntryComponentMetadata]): Self = this.set("entryComponents", value.asInstanceOf[js.Any])
+    def setComponentViewType(value: StaticSymbol | ProxyClass): Self = StObject.set(x, "componentViewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuards(value: StringDictionary[js.Any]): Self = this.set("guards", value.asInstanceOf[js.Any])
+    def setComponentViewTypeNull: Self = StObject.set(x, "componentViewType", null)
     
     @scala.inline
-    def setHost(value: StringDictionary[String]): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setEntryComponents(value: js.Array[CompileEntryComponentMetadata]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputsVarargs(value: String*): Self = this.set("inputs", js.Array(value :_*))
+    def setEntryComponentsVarargs(value: CompileEntryComponentMetadata*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
     
     @scala.inline
-    def setInputs(value: js.Array[String]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setExportAs(value: String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComponent(value: Boolean): Self = this.set("isComponent", value.asInstanceOf[js.Any])
+    def setExportAsNull: Self = StObject.set(x, "exportAs", null)
     
     @scala.inline
-    def setIsHost(value: Boolean): Self = this.set("isHost", value.asInstanceOf[js.Any])
+    def setGuards(value: StringDictionary[js.Any]): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputsVarargs(value: String*): Self = this.set("outputs", js.Array(value :_*))
+    def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: js.Array[String]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidersVarargs(value: CompileProviderMetadata*): Self = this.set("providers", js.Array(value :_*))
+    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setProviders(value: js.Array[CompileProviderMetadata]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueriesVarargs(value: CompileQueryMetadata*): Self = this.set("queries", js.Array(value :_*))
+    def setIsHost(value: Boolean): Self = StObject.set(x, "isHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueries(value: js.Array[CompileQueryMetadata]): Self = this.set("queries", value.asInstanceOf[js.Any])
+    def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: CompileTemplateMetadata): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: CompileTypeMetadata): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setProviders(value: js.Array[CompileProviderMetadata]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewProvidersVarargs(value: CompileProviderMetadata*): Self = this.set("viewProviders", js.Array(value :_*))
+    def setProvidersVarargs(value: CompileProviderMetadata*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setViewProviders(value: js.Array[CompileProviderMetadata]): Self = this.set("viewProviders", value.asInstanceOf[js.Any])
+    def setQueries(value: js.Array[CompileQueryMetadata]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewQueriesVarargs(value: CompileQueryMetadata*): Self = this.set("viewQueries", js.Array(value :_*))
+    def setQueriesVarargs(value: CompileQueryMetadata*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
     @scala.inline
-    def setViewQueries(value: js.Array[CompileQueryMetadata]): Self = this.set("viewQueries", value.asInstanceOf[js.Any])
+    def setRendererType(value: StaticSymbol | js.Object): Self = StObject.set(x, "rendererType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDetection(value: ChangeDetectionStrategy): Self = this.set("changeDetection", value.asInstanceOf[js.Any])
+    def setRendererTypeNull: Self = StObject.set(x, "rendererType", null)
     
     @scala.inline
-    def setChangeDetectionNull: Self = this.set("changeDetection", null)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentFactory(value: StaticSymbol | js.Object): Self = this.set("componentFactory", value.asInstanceOf[js.Any])
+    def setSelectorNull: Self = StObject.set(x, "selector", null)
     
     @scala.inline
-    def setComponentFactoryNull: Self = this.set("componentFactory", null)
+    def setTemplate(value: CompileTemplateMetadata): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentViewType(value: StaticSymbol | ProxyClass): Self = this.set("componentViewType", value.asInstanceOf[js.Any])
+    def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentViewTypeNull: Self = this.set("componentViewType", null)
+    def setViewProviders(value: js.Array[CompileProviderMetadata]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAs(value: String): Self = this.set("exportAs", value.asInstanceOf[js.Any])
+    def setViewProvidersVarargs(value: CompileProviderMetadata*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
     
     @scala.inline
-    def setExportAsNull: Self = this.set("exportAs", null)
+    def setViewQueries(value: js.Array[CompileQueryMetadata]): Self = StObject.set(x, "viewQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendererType(value: StaticSymbol | js.Object): Self = this.set("rendererType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRendererTypeNull: Self = this.set("rendererType", null)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorNull: Self = this.set("selector", null)
+    def setViewQueriesVarargs(value: CompileQueryMetadata*): Self = StObject.set(x, "viewQueries", js.Array(value :_*))
   }
 }

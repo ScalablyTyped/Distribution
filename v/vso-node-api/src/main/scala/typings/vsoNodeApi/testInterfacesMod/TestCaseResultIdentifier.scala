@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCaseResultIdentifier extends js.Object {
+trait TestCaseResultIdentifier extends StObject {
   
   var testResultId: Double = js.native
   
@@ -20,24 +21,12 @@ object TestCaseResultIdentifier {
   }
   
   @scala.inline
-  implicit class TestCaseResultIdentifierOps[Self <: TestCaseResultIdentifier] (val x: Self) extends AnyVal {
+  implicit class TestCaseResultIdentifierMutableBuilder[Self <: TestCaseResultIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTestResultId(value: Double): Self = StObject.set(x, "testResultId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTestResultId(value: Double): Self = this.set("testResultId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestRunId(value: Double): Self = this.set("testRunId", value.asInstanceOf[js.Any])
+    def setTestRunId(value: Double): Self = StObject.set(x, "testRunId", value.asInstanceOf[js.Any])
   }
 }

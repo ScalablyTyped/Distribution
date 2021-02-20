@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapPosition extends js.Object {
+trait SourceMapPosition extends StObject {
   
   var emittedColumn: Double = js.native
   
@@ -24,30 +25,18 @@ object SourceMapPosition {
   }
   
   @scala.inline
-  implicit class SourceMapPositionOps[Self <: SourceMapPosition] (val x: Self) extends AnyVal {
+  implicit class SourceMapPositionMutableBuilder[Self <: SourceMapPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmittedColumn(value: Double): Self = this.set("emittedColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmittedLine(value: Double): Self = this.set("emittedLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceColumn(value: Double): Self = this.set("sourceColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceLine(value: Double): Self = this.set("sourceLine", value.asInstanceOf[js.Any])
+    def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
   }
 }

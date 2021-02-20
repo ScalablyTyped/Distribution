@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.error
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import typings.winrtUwp.winrtUwpStrings.transferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a Play To connection. */
 @js.native
-trait PlayToConnection extends js.Object {
+trait PlayToConnection extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

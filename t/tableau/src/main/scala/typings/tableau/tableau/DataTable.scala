@@ -1,11 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTable extends js.Object {
+trait DataTable extends StObject {
   
   /** The column information, including the name, data type, and index. */
   def getColumns(): js.Array[Column] = js.native
@@ -40,33 +41,21 @@ object DataTable {
   }
   
   @scala.inline
-  implicit class DataTableOps[Self <: DataTable] (val x: Self) extends AnyVal {
+  implicit class DataTableMutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetColumns(value: () => js.Array[Column]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetData(value: () => js.Array[_]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIsSummaryData(value: () => Boolean): Self = StObject.set(x, "getIsSummaryData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumns(value: () => js.Array[Column]): Self = this.set("getColumns", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetData(value: () => js.Array[_]): Self = this.set("getData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsSummaryData(value: () => Boolean): Self = this.set("getIsSummaryData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTotalRowCount(value: () => Double): Self = this.set("getTotalRowCount", js.Any.fromFunction0(value))
+    def setGetTotalRowCount(value: () => Double): Self = StObject.set(x, "getTotalRowCount", js.Any.fromFunction0(value))
   }
 }

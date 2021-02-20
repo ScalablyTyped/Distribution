@@ -1,20 +1,15 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import typings.std.RTCIceCandidateInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RTCIceCandidate")
 @js.native
 class RTCIceCandidate ()
   extends typings.std.RTCIceCandidate {
   def this(candidateInitDict: RTCIceCandidateInit) = this()
 }
-@JSGlobal("RTCIceCandidate")
-@js.native
-object RTCIceCandidate
-  extends Instantiable0[typings.std.RTCIceCandidate]
-     with Instantiable1[/* candidateInitDict */ RTCIceCandidateInit, typings.std.RTCIceCandidate]

@@ -5,14 +5,14 @@ import typings.plottable.componentMod.Component
 import typings.plottable.dispatcherMod.Dispatcher
 import typings.plottable.interfacesMod.Point
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/dispatchers/touchDispatcher", JSImport.Namespace)
-@js.native
-object touchDispatcherMod extends js.Object {
+object touchDispatcherMod {
   
+  @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch")
   @js.native
   class Touch protected () extends Dispatcher {
     /**
@@ -97,18 +97,41 @@ object touchDispatcherMod extends js.Object {
     def onTouchStart(callback: TouchCallback): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Touch extends js.Object {
+  object Touch {
     
-    var _DISPATCHER_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _TOUCHCANCEL_EVENT_NAME: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch._DISPATCHER_KEY")
+    @js.native
+    def _DISPATCHER_KEY: js.Any = js.native
+    @scala.inline
+    def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
-    var _TOUCHEND_EVENT_NAME: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch._TOUCHCANCEL_EVENT_NAME")
+    @js.native
+    def _TOUCHCANCEL_EVENT_NAME: js.Any = js.native
+    @scala.inline
+    def _TOUCHCANCEL_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHCANCEL_EVENT_NAME")(x.asInstanceOf[js.Any])
     
-    var _TOUCHMOVE_EVENT_NAME: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch._TOUCHEND_EVENT_NAME")
+    @js.native
+    def _TOUCHEND_EVENT_NAME: js.Any = js.native
+    @scala.inline
+    def _TOUCHEND_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHEND_EVENT_NAME")(x.asInstanceOf[js.Any])
     
-    var _TOUCHSTART_EVENT_NAME: js.Any = js.native
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch._TOUCHMOVE_EVENT_NAME")
+    @js.native
+    def _TOUCHMOVE_EVENT_NAME: js.Any = js.native
+    @scala.inline
+    def _TOUCHMOVE_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch._TOUCHSTART_EVENT_NAME")
+    @js.native
+    def _TOUCHSTART_EVENT_NAME: js.Any = js.native
+    @scala.inline
+    def _TOUCHSTART_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHSTART_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Touch Dispatcher for the component.
@@ -117,6 +140,8 @@ object touchDispatcherMod extends js.Object {
       * @param component
       * @return {Dispatchers.Touch}
       */
+    @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch.getDispatcher")
+    @js.native
     def getDispatcher(component: Component): typings.plottable.dispatchersMod.Touch = js.native
   }
   

@@ -5,14 +5,14 @@ import typings.fastCsvFormat.typesMod.Row
 import typings.fastCsvFormat.typesMod.RowTransformFunction
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/format/build/src/CsvFormatterStream", JSImport.Namespace)
-@js.native
-object csvFormatterStreamMod extends js.Object {
+object csvFormatterStreamMod {
   
+  @JSImport("@fast-csv/format/build/src/CsvFormatterStream", "CsvFormatterStream")
   @js.native
   class CsvFormatterStream[I /* <: Row */, O /* <: Row */] protected () extends Transform {
     def this(formatterOptions: FormatterOptions[I, O]) = this()

@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart.series
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,90 +74,78 @@ object IPie3D {
   }
   
   @scala.inline
-  implicit class IPie3DOps[Self <: IPie3D] (val x: Self) extends AnyVal {
+  implicit class IPie3DMutableBuilder[Self <: IPie3D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDonut(value: js.Any): Self = this.set("donut", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteDonut: Self = this.set("donut", js.undefined)
+    def setGetDistortion(value: () => Double): Self = StObject.set(x, "getDistortion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setGetDistortionUndefined: Self = StObject.set(x, "getDistortion", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setGetDonut(value: () => _): Self = StObject.set(x, "getDonut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDistortion(value: () => Double): Self = this.set("getDistortion", js.Any.fromFunction0(value))
+    def setGetDonutUndefined: Self = StObject.set(x, "getDonut", js.undefined)
     
     @scala.inline
-    def deleteGetDistortion: Self = this.set("getDistortion", js.undefined)
+    def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDonut(value: () => _): Self = this.set("getDonut", js.Any.fromFunction0(value))
+    def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
     
     @scala.inline
-    def deleteGetDonut: Self = this.set("getDonut", js.undefined)
+    def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetField(value: () => String): Self = this.set("getField", js.Any.fromFunction0(value))
+    def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
     
     @scala.inline
-    def deleteGetField: Self = this.set("getField", js.undefined)
+    def setGetThickness(value: () => Double): Self = StObject.set(x, "getThickness", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRegion(value: () => Array): Self = this.set("getRegion", js.Any.fromFunction0(value))
+    def setGetThicknessUndefined: Self = StObject.set(x, "getThickness", js.undefined)
     
     @scala.inline
-    def deleteGetRegion: Self = this.set("getRegion", js.undefined)
+    def setSetDistortion(value: /* distortion */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDistortion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetThickness(value: () => Double): Self = this.set("getThickness", js.Any.fromFunction0(value))
+    def setSetDistortionUndefined: Self = StObject.set(x, "setDistortion", js.undefined)
     
     @scala.inline
-    def deleteGetThickness: Self = this.set("getThickness", js.undefined)
+    def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDonut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDistortion(value: /* distortion */ js.UndefOr[Double] => Unit): Self = this.set("setDistortion", js.Any.fromFunction1(value))
+    def setSetDonutUndefined: Self = StObject.set(x, "setDonut", js.undefined)
     
     @scala.inline
-    def deleteSetDistortion: Self = this.set("setDistortion", js.undefined)
+    def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDonut(value: /* donut */ js.UndefOr[js.Any] => Unit): Self = this.set("setDonut", js.Any.fromFunction1(value))
+    def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
     
     @scala.inline
-    def deleteSetDonut: Self = this.set("setDonut", js.undefined)
+    def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = this.set("setField", js.Any.fromFunction1(value))
+    def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
     
     @scala.inline
-    def deleteSetField: Self = this.set("setField", js.undefined)
+    def setSetThickness(value: /* thickness */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setThickness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = this.set("setRegion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetRegion: Self = this.set("setRegion", js.undefined)
-    
-    @scala.inline
-    def setSetThickness(value: /* thickness */ js.UndefOr[Double] => Unit): Self = this.set("setThickness", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetThickness: Self = this.set("setThickness", js.undefined)
+    def setSetThicknessUndefined: Self = StObject.set(x, "setThickness", js.undefined)
   }
 }

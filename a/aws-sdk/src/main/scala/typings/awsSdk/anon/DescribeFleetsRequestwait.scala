@@ -3,13 +3,14 @@ package typings.awsSdk.anon
 import typings.awsSdk.appstreamMod.String
 import typings.awsSdk.appstreamMod.StringList
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/appstream.DescribeFleetsRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeFleetsRequestwait extends js.Object {
+trait DescribeFleetsRequestwait extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -33,39 +34,27 @@ object DescribeFleetsRequestwait {
   }
   
   @scala.inline
-  implicit class DescribeFleetsRequestwaitOps[Self <: DescribeFleetsRequestwait] (val x: Self) extends AnyVal {
+  implicit class DescribeFleetsRequestwaitMutableBuilder[Self <: DescribeFleetsRequestwait] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNames(value: StringList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("Names", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: StringList): Self = this.set("Names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNames: Self = this.set("Names", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

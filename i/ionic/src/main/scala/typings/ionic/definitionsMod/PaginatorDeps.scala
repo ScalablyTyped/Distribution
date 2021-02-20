@@ -2,12 +2,13 @@ package typings.ionic.definitionsMod
 
 import typings.ionic.anon.Req
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends js.Object {
+trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends StObject {
   
   val client: IClient = js.native
   
@@ -28,39 +29,27 @@ object PaginatorDeps {
   }
   
   @scala.inline
-  implicit class PaginatorDepsOps[Self <: PaginatorDeps[_, _], T /* <: Response[js.Array[js.Object]] */, S] (val x: Self with (PaginatorDeps[T, S])) extends AnyVal {
+  implicit class PaginatorDepsMutableBuilder[Self <: PaginatorDeps[_, _], T /* <: Response[js.Array[js.Object]] */, S] (val x: Self with (PaginatorDeps[T, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGuard(value: APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: IClient): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setGuard(value: APIResponseSuccess => /* is T */ Boolean): Self = this.set("guard", js.Any.fromFunction1(value))
+    def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReqgen(value: () => js.Promise[Req]): Self = this.set("reqgen", js.Any.fromFunction0(value))
+    def setState(value: Partial[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
-    
-    @scala.inline
-    def setState(value: Partial[S]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

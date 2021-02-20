@@ -2,48 +2,90 @@ package typings.plupload
 
 import typings.std.Element
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plupload", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("plupload", "DONE")
+  @js.native
   val DONE: Double = js.native
   
+  @JSImport("plupload", "FAILED")
+  @js.native
   val FAILED: Double = js.native
   
+  @JSImport("plupload", "FILE_DUPLICATE_ERROR")
+  @js.native
   val FILE_DUPLICATE_ERROR: Double = js.native
   
+  @JSImport("plupload", "FILE_EXTENSION_ERROR")
+  @js.native
   val FILE_EXTENSION_ERROR: Double = js.native
   
+  @JSImport("plupload", "FILE_SIZE_ERROR")
+  @js.native
   val FILE_SIZE_ERROR: Double = js.native
   
+  @JSImport("plupload", "GENERIC_ERROR")
+  @js.native
   val GENERIC_ERROR: Double = js.native
   
+  @JSImport("plupload", "HTTP_ERROR")
+  @js.native
   val HTTP_ERROR: Double = js.native
   
+  @JSImport("plupload", "IMAGE_DIMENSIONS_ERROR")
+  @js.native
   val IMAGE_DIMENSIONS_ERROR: Double = js.native
   
+  @JSImport("plupload", "IMAGE_FORMAT_ERROR")
+  @js.native
   val IMAGE_FORMAT_ERROR: Double = js.native
   
+  @JSImport("plupload", "INIT_ERROR")
+  @js.native
   val INIT_ERROR: Double = js.native
   
+  @JSImport("plupload", "IO_ERROR")
+  @js.native
   val IO_ERROR: Double = js.native
   
+  @JSImport("plupload", "MEMORY_ERROR")
+  @js.native
   val MEMORY_ERROR: Double = js.native
   
+  @JSImport("plupload", "QUEUED")
+  @js.native
   val QUEUED: Double = js.native
   
+  @JSImport("plupload", "SECURITY_ERROR")
+  @js.native
   val SECURITY_ERROR: Double = js.native
   
+  @JSImport("plupload", "STARTED")
+  @js.native
   val STARTED: Double = js.native
   
+  @JSImport("plupload", "STOPPED")
+  @js.native
   val STOPPED: Double = js.native
   
+  @JSImport("plupload", "UPLOADING")
+  @js.native
   val UPLOADING: Double = js.native
   
+  @JSImport("plupload", "Uploader")
+  @js.native
+  class Uploader protected ()
+    extends typings.plupload.plupload.Uploader {
+    def this(settings: pluploadSettings) = this()
+  }
+  
+  @JSImport("plupload", "VERSION")
+  @js.native
   val VERSION: String = js.native
   
   /**
@@ -54,6 +96,8 @@ object mod extends js.Object {
     * @param {Object} obj DOM element like object to add handler to.
     * @param {String} name Class name
     */
+  @JSImport("plupload", "addClass")
+  @js.native
   def addClass(obj: js.Any, name: String): js.Any = js.native
   
   /**
@@ -67,7 +111,11 @@ object mod extends js.Object {
     * @param {Function} callback Function to call when event occurs.
     * @param {String} (optional) key that might be used to add specifity to the event record.
     */
+  @JSImport("plupload", "addEvent")
+  @js.native
   def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = js.native
+  @JSImport("plupload", "addEvent")
+  @js.native
   def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = js.native
   
   /**
@@ -82,6 +130,8 @@ object mod extends js.Object {
     * @param {String} name Name of the filter by which it can be referenced in settings.filters
     * @param {String} cb Callback - the actual routine that every added file must pass
     */
+  @JSImport("plupload", "addFileFilter")
+  @js.native
   def addFileFilter(name: String, cb: js.Function): Unit = js.native
   
   /**
@@ -92,6 +142,8 @@ object mod extends js.Object {
     * @param {Object} pack Language pack items to add.
     * @return {Object} Extended language pack object.
     */
+  @JSImport("plupload", "addI18n")
+  @js.native
   def addI18n(pack: js.Any): js.Any = js.native
   
   /**
@@ -103,6 +155,8 @@ object mod extends js.Object {
     * @param {Object} items Name/value object to serialize as a querystring.
     * @return {String} String with url + serialized query string items.
     */
+  @JSImport("plupload", "buildUrl")
+  @js.native
   def buildUrl(url: String, items: js.Any): String = js.native
   
   /**
@@ -113,6 +167,8 @@ object mod extends js.Object {
     * @param {String} s String to clean up.
     * @return {String} Cleaned string.
     */
+  @JSImport("plupload", "cleanName")
+  @js.native
   def cleanName(name: String): String = js.native
   
   /** Utility methods **/
@@ -125,6 +181,8 @@ object mod extends js.Object {
     * @param {Object} obj Object to iterate.
     * @param {function} callback Callback function to execute for each item.
     */
+  @JSImport("plupload", "each")
+  @js.native
   def each(obj: js.Any, callback: js.Function): Unit = js.native
   
   /**
@@ -136,6 +194,8 @@ object mod extends js.Object {
     * @param {Object..} obj Multiple objects to extend with.
     * @return {Object} Same as target, the extended object.
     */
+  @JSImport("plupload", "extend")
+  @js.native
   def extend(target: js.Any): js.Any = js.native
   
   /**
@@ -146,6 +206,8 @@ object mod extends js.Object {
     * @param {Number} size Size to format as string.
     * @return {String} Formatted size string.
     */
+  @JSImport("plupload", "formatSize")
+  @js.native
   def formatSize(size: Double): String = js.native
   
   /**
@@ -157,6 +219,8 @@ object mod extends js.Object {
     * @param {Element} root Optional root element to stop calculations at.
     * @return {object} Absolute position of the specified element object with x, y fields.
     */
+  @JSImport("plupload", "getPos")
+  @js.native
   def getPos(node: Element, root: Element): js.Any = js.native
   
   /**
@@ -167,6 +231,8 @@ object mod extends js.Object {
     * @param {Node} node Node to get the size of.
     * @return {Object} Object with a w and h property.
     */
+  @JSImport("plupload", "getSize")
+  @js.native
   def getSize(node: Node): js.Any = js.native
   
   /**
@@ -177,6 +243,8 @@ object mod extends js.Object {
     * @param {Object} obj DOM element like object.
     * @param {String} name Style you want to get from the DOM element
     */
+  @JSImport("plupload", "getStyle")
+  @js.native
   def getStyle(obj: js.Any, name: String): js.Any = js.native
   
   /**
@@ -190,6 +258,8 @@ object mod extends js.Object {
     * @static
     * @return {String} Virtually unique id.
     */
+  @JSImport("plupload", "guid")
+  @js.native
   def guid(guid: String): String = js.native
   
   /**
@@ -200,6 +270,8 @@ object mod extends js.Object {
     * @param {Object} obj DOM element like object to add handler to.
     * @param {String} name Class name
     */
+  @JSImport("plupload", "hasClass")
+  @js.native
   def hasClass(obj: js.Any, name: String): js.Any = js.native
   
   /**
@@ -211,6 +283,8 @@ object mod extends js.Object {
     * @param {Array} array
     * @return {Int} Index of the element, or -1 if not found
     */
+  @JSImport("plupload", "inArray")
+  @js.native
   def inArray(needle: js.Any, array: js.Array[_]): Double = js.native
   
   /**
@@ -224,6 +298,8 @@ object mod extends js.Object {
     @param {Array} queue Array of functions to call in sequence
     @param {Function} cb Main callback that is called in the end, or in case of error
     */
+  @JSImport("plupload", "inSeries")
+  @js.native
   def inSeries(queue: js.Array[_], callback: js.Function): Unit = js.native
   
   /**
@@ -234,10 +310,16 @@ object mod extends js.Object {
     * @param {Object} obj Object to check.
     * @return {Boolean}
     */
+  @JSImport("plupload", "isEmptyObj")
+  @js.native
   def isEmptyObj(obj: js.Any): Boolean = js.native
   
+  @JSImport("plupload", "mimeTypes")
+  @js.native
   val mimeTypes: js.Any = js.native
   
+  @JSImport("plupload", "parseSize")
+  @js.native
   def parseSize(size: String): Double = js.native
   /**
     * Parses the specified size string into a byte value. For example 10kb becomes 10240.
@@ -247,6 +329,8 @@ object mod extends js.Object {
     * @param {String|Number} size String to parse or number to just pass through.
     * @return {Number} Size in bytes.
     */
+  @JSImport("plupload", "parseSize")
+  @js.native
   def parseSize(size: Double): Double = js.native
   
   /**
@@ -259,6 +343,8 @@ object mod extends js.Object {
     * @param {String} [runtimes] Comma-separated list of runtimes to check against
     * @return {String} Type of compatible runtime
     */
+  @JSImport("plupload", "predictRuntime")
+  @js.native
   def predictRuntime(config: js.Any, runtimes: String): String = js.native
   
   /**
@@ -269,7 +355,11 @@ object mod extends js.Object {
     * @param {Object} obj DOM element to remove event listeners from.
     * @param {String} (optional) unique key to match, when removing events.
     */
+  @JSImport("plupload", "removeAllEvents")
+  @js.native
   def removeAllEvents(obj: js.Any): js.Any = js.native
+  @JSImport("plupload", "removeAllEvents")
+  @js.native
   def removeAllEvents(obj: js.Any, key: String): js.Any = js.native
   
   /**
@@ -280,6 +370,8 @@ object mod extends js.Object {
     * @param {Object} obj DOM element like object to add handler to.
     * @param {String} name Class name
     */
+  @JSImport("plupload", "removeClass")
+  @js.native
   def removeClass(obj: js.Any, name: String): js.Any = js.native
   
   /**
@@ -292,8 +384,14 @@ object mod extends js.Object {
     * @param {String} name Name of event listener to remove.
     * @param {Function|String} (optional) might be a callback or unique key to match.
     */
+  @JSImport("plupload", "removeEvent")
+  @js.native
   def removeEvent(obj: js.Any, name: String): js.Any = js.native
+  @JSImport("plupload", "removeEvent")
+  @js.native
   def removeEvent(obj: js.Any, name: String, optional: String): js.Any = js.native
+  @JSImport("plupload", "removeEvent")
+  @js.native
   def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = js.native
   
   /**
@@ -302,6 +400,8 @@ object mod extends js.Object {
     * @param {String} str String with tokens
     * @return {String} String with replaced tokens
     */
+  @JSImport("plupload", "sprintf")
+  @js.native
   def sprintf(str: String): String = js.native
   
   /**
@@ -312,6 +412,8 @@ object mod extends js.Object {
     * @param {Object} obj Object with length field.
     * @return {Array} Array object containing all items.
     */
+  @JSImport("plupload", "toArray")
+  @js.native
   def toArray(obj: js.Any): js.Array[_] = js.native
   
   /**
@@ -322,6 +424,8 @@ object mod extends js.Object {
     * @param {String} str String to look for.
     * @return {String} Translated string or the input string if it wasn't found.
     */
+  @JSImport("plupload", "translate")
+  @js.native
   def translate(str: String): String = js.native
   
   /**
@@ -333,8 +437,12 @@ object mod extends js.Object {
     * @param {Object} o Object to check.
     * @return {String} Object [[Class]]
     */
+  @JSImport("plupload", "typeOf")
+  @js.native
   def typeOf(o: js.Any): String = js.native
   
+  @JSImport("plupload", "ua")
+  @js.native
   val ua: js.Any = js.native
   
   /**
@@ -345,11 +453,7 @@ object mod extends js.Object {
     * @param {String} s String to encode.
     * @return {String} Encoded string.
     */
-  def xmlEncode(str: String): String = js.native
-  
+  @JSImport("plupload", "xmlEncode")
   @js.native
-  class Uploader protected ()
-    extends typings.plupload.plupload.Uploader {
-    def this(settings: pluploadSettings) = this()
-  }
+  def xmlEncode(str: String): String = js.native
 }

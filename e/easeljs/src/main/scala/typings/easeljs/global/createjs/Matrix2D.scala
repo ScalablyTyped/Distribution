@@ -1,5 +1,6 @@
 package typings.easeljs.global.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +19,21 @@ class Matrix2D protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("createjs.Matrix2D")
-@js.native
-object Matrix2D extends js.Object {
+object Matrix2D {
   
-  var DEG_TO_RAD: Double = js.native
+  @JSGlobal("createjs.Matrix2D")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var identity: typings.easeljs.createjs.Matrix2D = js.native
+  @JSGlobal("createjs.Matrix2D.DEG_TO_RAD")
+  @js.native
+  def DEG_TO_RAD: Double = js.native
+  @scala.inline
+  def DEG_TO_RAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEG_TO_RAD")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("createjs.Matrix2D.identity")
+  @js.native
+  def identity: typings.easeljs.createjs.Matrix2D = js.native
+  @scala.inline
+  def identity_=(x: typings.easeljs.createjs.Matrix2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
 }

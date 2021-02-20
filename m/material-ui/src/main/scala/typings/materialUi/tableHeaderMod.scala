@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.Table.TableHeaderProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Table/TableHeader", JSImport.Namespace)
-@js.native
-object tableHeaderMod extends js.Object {
+object tableHeaderMod {
   
+  @JSImport("material-ui/Table/TableHeader", JSImport.Default)
+  @js.native
+  class default () extends TableHeader
+  
+  @JSImport("material-ui/Table/TableHeader", "TableHeader")
   @js.native
   class TableHeader ()
-    extends Component[TableHeaderProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[TableHeaderProps, js.Object, js.Any]
 }

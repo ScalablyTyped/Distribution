@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugSymbol extends js.Object {
+trait DebugSymbol extends StObject {
   
   /**
     * Address that this symbol is for.
@@ -41,45 +42,33 @@ object DebugSymbol {
   }
   
   @scala.inline
-  implicit class DebugSymbolOps[Self <: DebugSymbol] (val x: Self) extends AnyVal {
+  implicit class DebugSymbolMutableBuilder[Self <: DebugSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileNameNull: Self = StObject.set(x, "fileName", null)
     
     @scala.inline
-    def setAddress(value: NativePointer): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
     
     @scala.inline
-    def setFileNameNull: Self = this.set("fileName", null)
+    def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    def setModuleNameNull: Self = StObject.set(x, "moduleName", null)
     
     @scala.inline
-    def setLineNumberNull: Self = this.set("lineNumber", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleName(value: String): Self = this.set("moduleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModuleNameNull: Self = this.set("moduleName", null)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setNameNull: Self = StObject.set(x, "name", null)
   }
 }

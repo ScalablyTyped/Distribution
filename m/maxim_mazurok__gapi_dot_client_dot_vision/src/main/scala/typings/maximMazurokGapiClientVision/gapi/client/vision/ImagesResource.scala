@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientVision.anon.Parent
 import typings.maximMazurokGapiClientVision.anon.PrettyPrint
 import typings.maximMazurokGapiClientVision.anon.QuotaUser
 import typings.maximMazurokGapiClientVision.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagesResource extends js.Object {
+trait ImagesResource extends StObject {
   
   def annotate(request: Alt, body: BatchAnnotateImagesRequest): Request[BatchAnnotateImagesResponse] = js.native
   def annotate(request: Key, body: BatchAnnotateImagesRequest): Request[BatchAnnotateImagesResponse] = js.native

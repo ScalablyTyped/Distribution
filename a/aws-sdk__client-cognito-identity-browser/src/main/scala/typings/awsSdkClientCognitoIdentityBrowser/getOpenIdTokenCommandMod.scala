@@ -7,14 +7,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenInputMod.Ge
 import typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenOutputMod.GetOpenIdTokenOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/commands/GetOpenIdTokenCommand", JSImport.Namespace)
-@js.native
-object getOpenIdTokenCommandMod extends js.Object {
+object getOpenIdTokenCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity-browser/commands/GetOpenIdTokenCommand", "GetOpenIdTokenCommand")
   @js.native
   class GetOpenIdTokenCommand protected () extends Command[
           InputTypesUnion, 

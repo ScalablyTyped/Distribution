@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBaiduChannelResponse extends js.Object {
+trait UpdateBaiduChannelResponse extends StObject {
   
   var BaiduChannelResponse: typings.awsSdk.pinpointMod.BaiduChannelResponse = js.native
 }
@@ -18,21 +19,9 @@ object UpdateBaiduChannelResponse {
   }
   
   @scala.inline
-  implicit class UpdateBaiduChannelResponseOps[Self <: UpdateBaiduChannelResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateBaiduChannelResponseMutableBuilder[Self <: UpdateBaiduChannelResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaiduChannelResponse(value: BaiduChannelResponse): Self = this.set("BaiduChannelResponse", value.asInstanceOf[js.Any])
+    def setBaiduChannelResponse(value: BaiduChannelResponse): Self = StObject.set(x, "BaiduChannelResponse", value.asInstanceOf[js.Any])
   }
 }

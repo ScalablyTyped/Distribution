@@ -1,12 +1,13 @@
 package typings.rollup.mod
 
 import typings.rollup.anon.PollInterval
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChokidarOptions extends js.Object {
+trait ChokidarOptions extends StObject {
   
   var alwaysStat: js.UndefOr[Boolean] = js.native
   
@@ -47,108 +48,96 @@ object ChokidarOptions {
   }
   
   @scala.inline
-  implicit class ChokidarOptionsOps[Self <: ChokidarOptions] (val x: Self) extends AnyVal {
+  implicit class ChokidarOptionsMutableBuilder[Self <: ChokidarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysStat(value: Boolean): Self = StObject.set(x, "alwaysStat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysStatUndefined: Self = StObject.set(x, "alwaysStat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAtomic(value: Boolean | Double): Self = StObject.set(x, "atomic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysStat(value: Boolean): Self = this.set("alwaysStat", value.asInstanceOf[js.Any])
+    def setAtomicUndefined: Self = StObject.set(x, "atomic", js.undefined)
     
     @scala.inline
-    def deleteAlwaysStat: Self = this.set("alwaysStat", js.undefined)
+    def setAwaitWriteFinish(value: PollInterval | Boolean): Self = StObject.set(x, "awaitWriteFinish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtomic(value: Boolean | Double): Self = this.set("atomic", value.asInstanceOf[js.Any])
+    def setAwaitWriteFinishUndefined: Self = StObject.set(x, "awaitWriteFinish", js.undefined)
     
     @scala.inline
-    def deleteAtomic: Self = this.set("atomic", js.undefined)
+    def setBinaryInterval(value: Double): Self = StObject.set(x, "binaryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwaitWriteFinish(value: PollInterval | Boolean): Self = this.set("awaitWriteFinish", value.asInstanceOf[js.Any])
+    def setBinaryIntervalUndefined: Self = StObject.set(x, "binaryInterval", js.undefined)
     
     @scala.inline
-    def deleteAwaitWriteFinish: Self = this.set("awaitWriteFinish", js.undefined)
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryInterval(value: Double): Self = this.set("binaryInterval", value.asInstanceOf[js.Any])
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def deleteBinaryInterval: Self = this.set("binaryInterval", js.undefined)
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setDisableGlobbing(value: Boolean): Self = StObject.set(x, "disableGlobbing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setDisableGlobbingUndefined: Self = StObject.set(x, "disableGlobbing", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableGlobbing(value: Boolean): Self = this.set("disableGlobbing", value.asInstanceOf[js.Any])
+    def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
     
     @scala.inline
-    def deleteDisableGlobbing: Self = this.set("disableGlobbing", js.undefined)
+    def setIgnoreInitial(value: Boolean): Self = StObject.set(x, "ignoreInitial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowSymlinks(value: Boolean): Self = this.set("followSymlinks", value.asInstanceOf[js.Any])
+    def setIgnoreInitialUndefined: Self = StObject.set(x, "ignoreInitial", js.undefined)
     
     @scala.inline
-    def deleteFollowSymlinks: Self = this.set("followSymlinks", js.undefined)
+    def setIgnorePermissionErrors(value: Boolean): Self = StObject.set(x, "ignorePermissionErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreInitial(value: Boolean): Self = this.set("ignoreInitial", value.asInstanceOf[js.Any])
+    def setIgnorePermissionErrorsUndefined: Self = StObject.set(x, "ignorePermissionErrors", js.undefined)
     
     @scala.inline
-    def deleteIgnoreInitial: Self = this.set("ignoreInitial", js.undefined)
+    def setIgnored(value: js.Any): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnorePermissionErrors(value: Boolean): Self = this.set("ignorePermissionErrors", value.asInstanceOf[js.Any])
+    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
     @scala.inline
-    def deleteIgnorePermissionErrors: Self = this.set("ignorePermissionErrors", js.undefined)
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnored(value: js.Any): Self = this.set("ignored", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteIgnored: Self = this.set("ignored", js.undefined)
+    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setUseFsEvents(value: Boolean): Self = StObject.set(x, "useFsEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("persistent", value.asInstanceOf[js.Any])
+    def setUseFsEventsUndefined: Self = StObject.set(x, "useFsEvents", js.undefined)
     
     @scala.inline
-    def deletePersistent: Self = this.set("persistent", js.undefined)
+    def setUsePolling(value: Boolean): Self = StObject.set(x, "usePolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseFsEvents(value: Boolean): Self = this.set("useFsEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFsEvents: Self = this.set("useFsEvents", js.undefined)
-    
-    @scala.inline
-    def setUsePolling(value: Boolean): Self = this.set("usePolling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePolling: Self = this.set("usePolling", js.undefined)
+    def setUsePollingUndefined: Self = StObject.set(x, "usePolling", js.undefined)
   }
 }

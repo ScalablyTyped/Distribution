@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class LowLevelDevicesController ()
   extends typings.winrtUwp.Windows.Devices.LowLevelDevicesController
-/* static members */
-@JSGlobal("Windows.Devices.LowLevelDevicesController")
-@js.native
-object LowLevelDevicesController extends js.Object {
+object LowLevelDevicesController {
   
-  var defaultProvider: js.Any = js.native
+  @JSGlobal("Windows.Devices.LowLevelDevicesController")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Windows.Devices.LowLevelDevicesController.defaultProvider")
+  @js.native
+  def defaultProvider: js.Any = js.native
+  @scala.inline
+  def defaultProvider_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProvider")(x.asInstanceOf[js.Any])
 }

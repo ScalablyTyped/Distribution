@@ -1,8 +1,8 @@
 package typings.apolloProtobufjs.descriptorMod
 
-import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloProtobufjs.mod.AnyNestedObject
+import typings.apolloProtobufjs.mod.Codegen
 import typings.apolloProtobufjs.mod.Constructor
 import typings.apolloProtobufjs.mod.Enum
 import typings.apolloProtobufjs.mod.Field
@@ -18,17 +18,26 @@ import typings.apolloProtobufjs.mod.ReflectionObject
 import typings.apolloProtobufjs.mod.Root
 import typings.apolloProtobufjs.mod.Service
 import typings.apolloProtobufjs.mod.Type
+import typings.apolloProtobufjs.mod.TypeDecorator
 import typings.apolloProtobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions")
-@js.native
-object FileOptions extends js.Object {
+/* Inlined @apollo/protobufjs.@apollo/protobufjs.Type & {  OptimizeMode :@apollo/protobufjs.@apollo/protobufjs.Enum} */
+object FileOptions {
   
-  var OptimizeMode: Enum = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.OptimizeMode")
+  @js.native
+  def OptimizeMode: Enum = js.native
+  @scala.inline
+  def OptimizeMode_=(x: Enum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OptimizeMode")(x.asInstanceOf[js.Any])
   
   /**
     * Adds a nested object to this namespace.
@@ -37,6 +46,8 @@ object FileOptions extends js.Object {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If there is already a nested object with this name
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.add")
+  @js.native
   def add(`object`: ReflectionObject): Namespace = js.native
   
   /**
@@ -44,6 +55,8 @@ object FileOptions extends js.Object {
     * @param nestedJson Any nested object descriptors
     * @returns `this`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.addJSON")
+  @js.native
   def addJSON(nestedJson: StringDictionary[js.UndefOr[AnyNestedObject]]): Namespace = js.native
   
   /**
@@ -53,25 +66,62 @@ object FileOptions extends js.Object {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If there is already a nested object with this name or, if a field, when there is already a field with this id
     */
-  @JSName("add")
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.add")
+  @js.native
   def add_Type(`object`: ReflectionObject): Type = js.native
   
   /** Comment text, if any. */
-  var comment: String | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.comment")
+  @js.native
+  def comment: String | Null = js.native
+  @scala.inline
+  def comment_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comment")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Constructs a new reflected message type instance.
+    * @param name Message name
+    * @param [options] Declared options
+    */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.constructor")
+  @js.native
+  def constructor(name: String): js.Any = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.constructor")
+  @js.native
+  def constructor(name: String, options: StringDictionary[js.UndefOr[js.Any]]): js.Any = js.native
   
   /**
     * Creates a new message of this type using the specified properties.
     * @param [properties] Properties to set
     * @returns Message instance
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.create")
+  @js.native
   def create(): Message[js.Object] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.create")
+  @js.native
   def create(properties: StringDictionary[js.UndefOr[js.Any]]): Message[js.Object] = js.native
   
   /**
     * The registered constructor, if any registered, otherwise a generic constructor.
     * Assigning a function replaces the internal constructor. If the function does not extend {@link Message} yet, its prototype will be setup accordingly and static methods will be populated. If it already extends {@link Message}, it will just replace the internal constructor.
     */
-  var ctor: Constructor[js.Object] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.ctor")
+  @js.native
+  def ctor: Constructor[js.Object] = js.native
+  @scala.inline
+  def ctor_=(x: Constructor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ctor")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Type decorator (TypeScript).
+    * @param [typeName] Type name, defaults to the constructor's name
+    * @returns Decorator function
+    */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.d")
+  @js.native
+  def d[T /* <: Message[T] */](): TypeDecorator[T] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.d")
+  @js.native
+  def d[T /* <: Message[T] */](typeName: String): TypeDecorator[T] = js.native
   
   /**
     * Decodes a message of this type.
@@ -81,9 +131,17 @@ object FileOptions extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {util.ProtocolError<{}>} If required fields are missing
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.decode")
+  @js.native
   def decode(reader: Reader): Message[js.Object] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.decode")
+  @js.native
   def decode(reader: Reader, length: Double): Message[js.Object] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.decode")
+  @js.native
   def decode(reader: Uint8Array): Message[js.Object] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): Message[js.Object] = js.native
   
   /**
@@ -93,7 +151,11 @@ object FileOptions extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {util.ProtocolError} If required fields are missing
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): Message[js.Object] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): Message[js.Object] = js.native
   
   /**
@@ -102,12 +164,24 @@ object FileOptions extends js.Object {
     * @param [json] Nested types to create from JSON
     * @returns Pointer to the last namespace created or `this` if path is empty
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.define")
+  @js.native
   def define(path: String): Namespace = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.define")
+  @js.native
   def define(path: String, json: js.Any): Namespace = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.define")
+  @js.native
   def define(path: js.Array[String]): Namespace = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.define")
+  @js.native
   def define(path: js.Array[String], json: js.Any): Namespace = js.native
   
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encode")
+  @js.native
   def encode(message: StringDictionary[js.UndefOr[js.Any]]): Writer = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encode")
+  @js.native
   def encode(message: StringDictionary[js.UndefOr[js.Any]], writer: Writer): Writer = js.native
   /**
     * Encodes a message of this type. Does not implicitly {@link Type#verify|verify} messages.
@@ -115,10 +189,18 @@ object FileOptions extends js.Object {
     * @param [writer] Writer to encode to
     * @returns writer
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encode")
+  @js.native
   def encode(message: Message[js.Object]): Writer = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encode")
+  @js.native
   def encode(message: Message[js.Object], writer: Writer): Writer = js.native
   
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encodeDelimited")
+  @js.native
   def encodeDelimited(message: StringDictionary[js.UndefOr[js.Any]]): Writer = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encodeDelimited")
+  @js.native
   def encodeDelimited(message: StringDictionary[js.UndefOr[js.Any]], writer: Writer): Writer = js.native
   /**
     * Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {@link Type#verify|verify} messages.
@@ -126,39 +208,72 @@ object FileOptions extends js.Object {
     * @param [writer] Writer to encode to
     * @returns writer
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encodeDelimited")
+  @js.native
   def encodeDelimited(message: Message[js.Object]): Writer = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.encodeDelimited")
+  @js.native
   def encodeDelimited(message: Message[js.Object], writer: Writer): Writer = js.native
   
   /** Extension ranges, if any. */
-  var extensions: js.Array[js.Array[Double]] = js.native
-  
-  /** Message fields. */
-  var fields: StringDictionary[js.UndefOr[Field]] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.extensions")
+  @js.native
+  def extensions: js.Array[js.Array[Double]] = js.native
+  @scala.inline
+  def extensions_=(x: js.Array[js.Array[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
   /** Fields of this message as an array for iteration. */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.fieldsArray")
+  @js.native
   val fieldsArray: js.Array[Field] = js.native
   
-  /** Message fields by id. */
-  val fieldsById: NumberDictionary[js.UndefOr[Field]] = js.native
-  
   /** Defining file name. */
-  var filename: String | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.filename")
+  @js.native
+  def filename: String | Null = js.native
+  @scala.inline
+  def filename_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filename")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Creates a message type from a message type descriptor.
+    * @param name Message name
+    * @param json Message type descriptor
+    * @returns Created message type
+    */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.fromJSON")
+  @js.native
+  def fromJSON(name: String, json: IType): Type = js.native
   
   /**
     * Creates a new message of this type from a plain object. Also converts values to their respective internal types.
     * @param object Plain object to convert
     * @returns Message instance
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.UndefOr[js.Any]]): Message[js.Object] = js.native
   
   /** Full name including leading dot. */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.fullName")
+  @js.native
   val fullName: String = js.native
+  
+  /**
+    * Generates a constructor function for the specified type.
+    * @param mtype Message type
+    * @returns Codegen instance
+    */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.generateConstructor")
+  @js.native
+  def generateConstructor(mtype: Type): Codegen = js.native
   
   /**
     * Gets the nested object of the specified name.
     * @param name Nested object name
     * @returns The reflection object or `null` if it doesn't exist
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.get")
+  @js.native
   def get(name: String): ReflectionObject | Null = js.native
   
   /**
@@ -168,6 +283,8 @@ object FileOptions extends js.Object {
     * @returns Enum values
     * @throws {Error} If there is no such enum
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.getEnum")
+  @js.native
   def getEnum(name: String): StringDictionary[js.UndefOr[Double]] = js.native
   
   /**
@@ -175,6 +292,8 @@ object FileOptions extends js.Object {
     * @param name Option name
     * @returns Option value or `undefined` if not set
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.getOption")
+  @js.native
   def getOption(name: String): js.Any = js.native
   
   /**
@@ -182,6 +301,8 @@ object FileOptions extends js.Object {
     * @param id Id to test
     * @returns `true` if reserved, otherwise `false`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.isReservedId")
+  @js.native
   def isReservedId(id: Double): Boolean = js.native
   
   /**
@@ -189,6 +310,8 @@ object FileOptions extends js.Object {
     * @param name Name to test
     * @returns `true` if reserved, otherwise `false`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.isReservedName")
+  @js.native
   def isReservedName(name: String): Boolean = js.native
   
   /**
@@ -197,6 +320,8 @@ object FileOptions extends js.Object {
     * @param [parentAlreadyChecked=false] Whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: String): ReflectionObject | Null = js.native
   /**
     * Recursively looks up the reflection object matching the specified path in the scope of this namespace.
@@ -205,16 +330,38 @@ object FileOptions extends js.Object {
     * @param [parentAlreadyChecked=false] If known, whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: String, filterTypes: js.Array[_]): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: String, filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: js.Array[String]): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: js.Array[String], filterTypes: js.Array[_]): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: js.Array[String], filterTypes: js.Array[_], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookup")
+  @js.native
   def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = js.native
   
   /**
@@ -224,7 +371,11 @@ object FileOptions extends js.Object {
     * @returns Looked up enum
     * @throws {Error} If `path` does not point to an enum
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupEnum")
+  @js.native
   def lookupEnum(path: String): Enum = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupEnum")
+  @js.native
   def lookupEnum(path: js.Array[String]): Enum = js.native
   
   /**
@@ -234,7 +385,11 @@ object FileOptions extends js.Object {
     * @returns Looked up service
     * @throws {Error} If `path` does not point to a service
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupService")
+  @js.native
   def lookupService(path: String): Service = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupService")
+  @js.native
   def lookupService(path: js.Array[String]): Service = js.native
   
   /**
@@ -244,7 +399,11 @@ object FileOptions extends js.Object {
     * @returns Looked up type
     * @throws {Error} If `path` does not point to a type
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupType")
+  @js.native
   def lookupType(path: String): Type = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupType")
+  @js.native
   def lookupType(path: js.Array[String]): Type = js.native
   
   /**
@@ -254,41 +413,67 @@ object FileOptions extends js.Object {
     * @returns Looked up type or enum
     * @throws {Error} If `path` does not point to a type or enum
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupTypeOrEnum")
+  @js.native
   def lookupTypeOrEnum(path: String): Type = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.lookupTypeOrEnum")
+  @js.native
   def lookupTypeOrEnum(path: js.Array[String]): Type = js.native
   
   /** Unique name within its namespace. */
-  var name: String = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.name")
+  @js.native
+  def name: String = js.native
+  @scala.inline
+  def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   
   /** Nested objects by name. */
-  var nested: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.nested")
+  @js.native
+  def nested: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]] = js.native
   
   /** Nested objects of this namespace as an array for iteration. */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.nestedArray")
+  @js.native
   val nestedArray: js.Array[ReflectionObject] = js.native
+  
+  @scala.inline
+  def nested_=(x: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nested")(x.asInstanceOf[js.Any])
   
   /**
     * Called when this object is added to a parent.
     * @param parent Parent added to
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.onAdd")
+  @js.native
   def onAdd(parent: ReflectionObject): Unit = js.native
   
   /**
     * Called when this object is removed from a parent.
     * @param parent Parent removed from
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.onRemove")
+  @js.native
   def onRemove(parent: ReflectionObject): Unit = js.native
   
-  /** Oneofs declared within this namespace, if any. */
-  var oneofs: StringDictionary[js.UndefOr[OneOf]] = js.native
-  
   /** Oneofs of this message as an array for iteration. */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.oneofsArray")
+  @js.native
   val oneofsArray: js.Array[OneOf] = js.native
   
   /** Options. */
-  var options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.options")
+  @js.native
+  def options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
+  @scala.inline
+  def options_=(x: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
   /** Parent namespace. */
-  var parent: Namespace | Null = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.parent")
+  @js.native
+  def parent: Namespace | Null = js.native
+  @scala.inline
+  def parent_=(x: Namespace | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parent")(x.asInstanceOf[js.Any])
   
   /**
     * Removes a nested object from this namespace.
@@ -297,6 +482,8 @@ object FileOptions extends js.Object {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If `object` is not a member of this namespace
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.remove")
+  @js.native
   def remove(`object`: ReflectionObject): Namespace = js.native
   /**
     * Removes a nested object from this type.
@@ -305,28 +492,43 @@ object FileOptions extends js.Object {
     * @throws {TypeError} If arguments are invalid
     * @throws {Error} If `object` is not a member of this type
     */
-  @JSName("remove")
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.remove")
+  @js.native
   def remove_Type(`object`: ReflectionObject): Type = js.native
   
   /** Reserved ranges, if any. */
-  var reserved: js.Array[js.Array[Double] | String] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.reserved")
+  @js.native
+  def reserved: js.Array[js.Array[Double] | String] = js.native
+  @scala.inline
+  def reserved_=(x: js.Array[js.Array[Double] | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reserved")(x.asInstanceOf[js.Any])
   
   /**
     * Resolves this objects type references.
     * @returns `this`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.resolve")
+  @js.native
   def resolve(): ReflectionObject = js.native
   
   /**
     * Resolves this namespace's and all its nested objects' type references. Useful to validate a reflection tree, but comes at a cost.
     * @returns `this`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.resolveAll")
+  @js.native
   def resolveAll(): Namespace = js.native
   
   /** Whether already resolved or not. */
-  var resolved: Boolean = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.resolved")
+  @js.native
+  def resolved: Boolean = js.native
+  @scala.inline
+  def resolved_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolved")(x.asInstanceOf[js.Any])
   
   /** Reference to the root namespace. */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.root")
+  @js.native
   val root: Root = js.native
   
   /**
@@ -336,7 +538,11 @@ object FileOptions extends js.Object {
     * @param [ifNotSet] Sets the option only if it isn't currently set
     * @returns `this`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.setOption")
+  @js.native
   def setOption(name: String, value: js.Any): ReflectionObject = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.setOption")
+  @js.native
   def setOption(name: String, value: js.Any, ifNotSet: Boolean): ReflectionObject = js.native
   
   /**
@@ -345,13 +551,19 @@ object FileOptions extends js.Object {
     * @param [ifNotSet] Sets an option only if it isn't currently set
     * @returns `this`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.setOptions")
+  @js.native
   def setOptions(options: StringDictionary[js.UndefOr[js.Any]]): ReflectionObject = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.setOptions")
+  @js.native
   def setOptions(options: StringDictionary[js.UndefOr[js.Any]], ifNotSet: Boolean): ReflectionObject = js.native
   
   /**
     * Sets up {@link Type#encode|encode}, {@link Type#decode|decode} and {@link Type#verify|verify}.
     * @returns `this`
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.setup")
+  @js.native
   def setup(): Type = js.native
   
   /**
@@ -359,22 +571,29 @@ object FileOptions extends js.Object {
     * @param [toJSONOptions] JSON conversion options
     * @returns Namespace descriptor
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toJSON")
+  @js.native
   def toJSON(): INamespace = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toJSON")
+  @js.native
   def toJSON(toJSONOptions: IToJSONOptions): INamespace = js.native
   /**
     * Converts this message type to a message type descriptor.
     * @param [toJSONOptions] JSON conversion options
     * @returns Message type descriptor
     */
-  @JSName("toJSON")
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toJSON")
+  @js.native
   def toJSON_IType(): IType = js.native
-  @JSName("toJSON")
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toJSON")
+  @js.native
   def toJSON_IType(toJSONOptions: IToJSONOptions): IType = js.native
   /**
     * Converts this reflection object to its descriptor representation.
     * @returns Descriptor
     */
-  @JSName("toJSON")
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toJSON")
+  @js.native
   def toJSON_StringDictionary(): StringDictionary[js.UndefOr[js.Any]] = js.native
   
   /**
@@ -383,13 +602,36 @@ object FileOptions extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toObject")
+  @js.native
   def toObject(message: Message[js.Object]): StringDictionary[js.UndefOr[js.Any]] = js.native
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toObject")
+  @js.native
   def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[js.UndefOr[js.Any]] = js.native
+  
+  /**
+    * Converts this instance to its string representation.
+    * @returns Class name[, space, full name]
+    */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.toString")
+  @js.native
+  def toString_(): String = js.native
   
   /**
     * Verifies that field values are valid and that required fields are present.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("@apollo/protobufjs/ext/descriptor", "FileOptions.verify")
+  @js.native
   def verify(message: StringDictionary[js.UndefOr[js.Any]]): Null | String = js.native
+  
+  /** Message fields. */
+  object fields
+  
+  /** Message fields by id. */
+  object fieldsById
+  
+  /** Oneofs declared within this namespace, if any. */
+  object oneofs
 }

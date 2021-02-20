@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,51 +52,39 @@ object ServerEntry {
   }
   
   @scala.inline
-  implicit class ServerEntryOps[Self <: ServerEntry] (val x: Self) extends AnyVal {
+  implicit class ServerEntryMutableBuilder[Self <: ServerEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVirtualserverAutostart(value: Double): Self = StObject.set(x, "virtualserverAutostart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVirtualserverClientsonline(value: Double): Self = StObject.set(x, "virtualserverClientsonline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVirtualserverId(value: String): Self = StObject.set(x, "virtualserverId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverAutostart(value: Double): Self = this.set("virtualserverAutostart", value.asInstanceOf[js.Any])
+    def setVirtualserverMachineId(value: String): Self = StObject.set(x, "virtualserverMachineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverClientsonline(value: Double): Self = this.set("virtualserverClientsonline", value.asInstanceOf[js.Any])
+    def setVirtualserverMaxclients(value: Double): Self = StObject.set(x, "virtualserverMaxclients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverId(value: String): Self = this.set("virtualserverId", value.asInstanceOf[js.Any])
+    def setVirtualserverName(value: String): Self = StObject.set(x, "virtualserverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverMachineId(value: String): Self = this.set("virtualserverMachineId", value.asInstanceOf[js.Any])
+    def setVirtualserverPort(value: Double): Self = StObject.set(x, "virtualserverPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverMaxclients(value: Double): Self = this.set("virtualserverMaxclients", value.asInstanceOf[js.Any])
+    def setVirtualserverQueryclientsonline(value: Double): Self = StObject.set(x, "virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverName(value: String): Self = this.set("virtualserverName", value.asInstanceOf[js.Any])
+    def setVirtualserverStatus(value: String): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverPort(value: Double): Self = this.set("virtualserverPort", value.asInstanceOf[js.Any])
+    def setVirtualserverUniqueIdentifier(value: String): Self = StObject.set(x, "virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverQueryclientsonline(value: Double): Self = this.set("virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualserverStatus(value: String): Self = this.set("virtualserverStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualserverUniqueIdentifier(value: String): Self = this.set("virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualserverUptime(value: Double): Self = this.set("virtualserverUptime", value.asInstanceOf[js.Any])
+    def setVirtualserverUptime(value: Double): Self = StObject.set(x, "virtualserverUptime", value.asInstanceOf[js.Any])
   }
 }

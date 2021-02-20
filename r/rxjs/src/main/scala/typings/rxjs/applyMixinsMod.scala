@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/util/applyMixins", JSImport.Namespace)
-@js.native
-object applyMixinsMod extends js.Object {
+object applyMixinsMod {
   
+  @JSImport("rxjs/internal/util/applyMixins", "applyMixins")
+  @js.native
   def applyMixins(derivedCtor: js.Any, baseCtors: js.Array[_]): Unit = js.native
 }

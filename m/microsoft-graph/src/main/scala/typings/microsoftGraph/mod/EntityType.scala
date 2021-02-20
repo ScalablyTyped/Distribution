@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.unknownfuturevalue_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.drive
   - typings.microsoftGraph.microsoftGraphStrings.unknownfuturevalue_
 */
-trait EntityType extends js.Object
+trait EntityType extends StObject
 object EntityType {
   
   @scala.inline

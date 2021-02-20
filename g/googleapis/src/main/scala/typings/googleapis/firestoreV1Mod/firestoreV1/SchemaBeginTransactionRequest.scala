@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for Firestore.BeginTransaction.
   */
 @js.native
-trait SchemaBeginTransactionRequest extends js.Object {
+trait SchemaBeginTransactionRequest extends StObject {
   
   /**
     * The options for the transaction. Defaults to a read-write transaction.
@@ -24,24 +25,12 @@ object SchemaBeginTransactionRequest {
   }
   
   @scala.inline
-  implicit class SchemaBeginTransactionRequestOps[Self <: SchemaBeginTransactionRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBeginTransactionRequestMutableBuilder[Self <: SchemaBeginTransactionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: SchemaTransactionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOptions(value: SchemaTransactionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

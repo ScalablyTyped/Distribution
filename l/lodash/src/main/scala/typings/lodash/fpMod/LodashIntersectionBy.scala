@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.List
 import typings.lodash.mod.ValueIteratee
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashIntersectionBy extends js.Object {
+trait LodashIntersectionBy extends StObject {
   
   def apply[T1](iteratee: __): LodashIntersectionBy1x2[T1] = js.native
   def apply[T1](iteratee: __, array: List[T1]): LodashIntersectionBy1x2[T1] = js.native

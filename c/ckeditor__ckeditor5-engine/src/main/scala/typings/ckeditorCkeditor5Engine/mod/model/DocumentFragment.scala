@@ -3,6 +3,7 @@ package typings.ckeditorCkeditor5Engine.mod.model
 import typings.std.Iterable
 import typings.std.Iterator
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,8 @@ class DocumentFragment protected () extends _NodeSet {
   
   def getPath(): js.Array[Double] = js.native
   
-   /*TS3.0: []*/ def is(`type`: String): Boolean = js.native
+  /*TS3.0: []*/
+  def is(`type`: String): Boolean = js.native
   
   val isEmpty: Boolean = js.native
   
@@ -56,10 +58,10 @@ class DocumentFragment protected () extends _NodeSet {
   
   def toJSON(): js.Object = js.native
 }
-/* static members */
-@JSImport("@ckeditor/ckeditor5-engine", "model.DocumentFragment")
-@js.native
-object DocumentFragment extends js.Object {
+object DocumentFragment {
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.DocumentFragment.fromJSON")
+  @js.native
   def fromJSON(json: js.Object): DocumentFragment = js.native
 }

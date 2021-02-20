@@ -3,18 +3,14 @@ package typings.vegaTypings
 import typings.vegaTypings.anon.Encode
 import typings.vegaTypings.exprMod.Expr
 import typings.vegaTypings.selectorMod.EventSelector
+import typings.vegaTypings.signalMod.SignalValue
 import typings.vegaTypings.streamMod.EventStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vega-typings/types/spec/on-events", JSImport.Namespace)
-@js.native
-object onEventsMod extends js.Object {
-  
-  trait _EventListener extends js.Object
-  
-  trait _Update extends js.Object
+object onEventsMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.signalMod.SignalRef
@@ -34,4 +30,28 @@ object onEventsMod extends js.Object {
     - typings.vegaTypings.anon.ValueSignalValue
   */
   type Update = _Update | Expr
+  
+  trait _EventListener extends StObject
+  
+  trait _Update extends StObject
+  object _Update {
+    
+    @scala.inline
+    def ExprRef(expr: Expr): typings.vegaTypings.exprMod.ExprRef = {
+      val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.exprMod.ExprRef]
+    }
+    
+    @scala.inline
+    def SignalRef(signal: String): typings.vegaTypings.signalMod.SignalRef = {
+      val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.signalMod.SignalRef]
+    }
+    
+    @scala.inline
+    def ValueSignalValue(value: SignalValue): typings.vegaTypings.anon.ValueSignalValue = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.anon.ValueSignalValue]
+    }
+  }
 }

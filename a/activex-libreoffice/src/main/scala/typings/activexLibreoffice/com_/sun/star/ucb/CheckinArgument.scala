@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The checkin command is always called on the target private working copy document.
   */
 @js.native
-trait CheckinArgument extends js.Object {
+trait CheckinArgument extends StObject {
   
   /** Tells whether to create a new major or minor version during the checkin. */
   var MajorVersion: Boolean = js.native
@@ -50,36 +51,24 @@ object CheckinArgument {
   }
   
   @scala.inline
-  implicit class CheckinArgumentOps[Self <: CheckinArgument] (val x: Self) extends AnyVal {
+  implicit class CheckinArgumentMutableBuilder[Self <: CheckinArgument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMajorVersion(value: Boolean): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: Boolean): Self = this.set("MajorVersion", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("MimeType", value.asInstanceOf[js.Any])
+    def setTargetURL(value: String): Self = StObject.set(x, "TargetURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTitle(value: String): Self = this.set("NewTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceURL(value: String): Self = this.set("SourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetURL(value: String): Self = this.set("TargetURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionComment(value: String): Self = this.set("VersionComment", value.asInstanceOf[js.Any])
+    def setVersionComment(value: String): Self = StObject.set(x, "VersionComment", value.asInstanceOf[js.Any])
   }
 }

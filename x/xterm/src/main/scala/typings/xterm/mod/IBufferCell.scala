@@ -1,5 +1,6 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a single cell in the terminal's buffer.
   */
 @js.native
-trait IBufferCell extends js.Object {
+trait IBufferCell extends StObject {
   
   /**
     * Gets a cell's background color number, this differs depending on what the
@@ -149,81 +150,69 @@ object IBufferCell {
   }
   
   @scala.inline
-  implicit class IBufferCellOps[Self <: IBufferCell] (val x: Self) extends AnyVal {
+  implicit class IBufferCellMutableBuilder[Self <: IBufferCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBgColor(value: () => Double): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBgColorMode(value: () => Double): Self = StObject.set(x, "getBgColorMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChars(value: () => String): Self = StObject.set(x, "getChars", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBgColor(value: () => Double): Self = this.set("getBgColor", js.Any.fromFunction0(value))
+    def setGetCode(value: () => Double): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBgColorMode(value: () => Double): Self = this.set("getBgColorMode", js.Any.fromFunction0(value))
+    def setGetFgColor(value: () => Double): Self = StObject.set(x, "getFgColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChars(value: () => String): Self = this.set("getChars", js.Any.fromFunction0(value))
+    def setGetFgColorMode(value: () => Double): Self = StObject.set(x, "getFgColorMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCode(value: () => Double): Self = this.set("getCode", js.Any.fromFunction0(value))
+    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFgColor(value: () => Double): Self = this.set("getFgColor", js.Any.fromFunction0(value))
+    def setIsAttributeDefault(value: () => Boolean): Self = StObject.set(x, "isAttributeDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFgColorMode(value: () => Double): Self = this.set("getFgColorMode", js.Any.fromFunction0(value))
+    def setIsBgDefault(value: () => Boolean): Self = StObject.set(x, "isBgDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetWidth(value: () => Double): Self = this.set("getWidth", js.Any.fromFunction0(value))
+    def setIsBgPalette(value: () => Boolean): Self = StObject.set(x, "isBgPalette", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAttributeDefault(value: () => Boolean): Self = this.set("isAttributeDefault", js.Any.fromFunction0(value))
+    def setIsBgRGB(value: () => Boolean): Self = StObject.set(x, "isBgRGB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBgDefault(value: () => Boolean): Self = this.set("isBgDefault", js.Any.fromFunction0(value))
+    def setIsBlink(value: () => Double): Self = StObject.set(x, "isBlink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBgPalette(value: () => Boolean): Self = this.set("isBgPalette", js.Any.fromFunction0(value))
+    def setIsBold(value: () => Double): Self = StObject.set(x, "isBold", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBgRGB(value: () => Boolean): Self = this.set("isBgRGB", js.Any.fromFunction0(value))
+    def setIsDim(value: () => Double): Self = StObject.set(x, "isDim", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBlink(value: () => Double): Self = this.set("isBlink", js.Any.fromFunction0(value))
+    def setIsFgDefault(value: () => Boolean): Self = StObject.set(x, "isFgDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBold(value: () => Double): Self = this.set("isBold", js.Any.fromFunction0(value))
+    def setIsFgPalette(value: () => Boolean): Self = StObject.set(x, "isFgPalette", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDim(value: () => Double): Self = this.set("isDim", js.Any.fromFunction0(value))
+    def setIsFgRGB(value: () => Boolean): Self = StObject.set(x, "isFgRGB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFgDefault(value: () => Boolean): Self = this.set("isFgDefault", js.Any.fromFunction0(value))
+    def setIsInverse(value: () => Double): Self = StObject.set(x, "isInverse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFgPalette(value: () => Boolean): Self = this.set("isFgPalette", js.Any.fromFunction0(value))
+    def setIsInvisible(value: () => Double): Self = StObject.set(x, "isInvisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFgRGB(value: () => Boolean): Self = this.set("isFgRGB", js.Any.fromFunction0(value))
+    def setIsItalic(value: () => Double): Self = StObject.set(x, "isItalic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsInverse(value: () => Double): Self = this.set("isInverse", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsInvisible(value: () => Double): Self = this.set("isInvisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsItalic(value: () => Double): Self = this.set("isItalic", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsUnderline(value: () => Double): Self = this.set("isUnderline", js.Any.fromFunction0(value))
+    def setIsUnderline(value: () => Double): Self = StObject.set(x, "isUnderline", js.Any.fromFunction0(value))
   }
 }

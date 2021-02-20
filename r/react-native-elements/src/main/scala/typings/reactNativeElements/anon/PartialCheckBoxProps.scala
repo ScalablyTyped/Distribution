@@ -7,13 +7,14 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.IconType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.CheckBoxProps> */
 @js.native
-trait PartialCheckBoxProps extends js.Object {
+trait PartialCheckBoxProps extends StObject {
   
   var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
   
@@ -68,159 +69,147 @@ object PartialCheckBoxProps {
   }
   
   @scala.inline
-  implicit class PartialCheckBoxPropsOps[Self <: PartialCheckBoxProps] (val x: Self) extends AnyVal {
+  implicit class PartialCheckBoxPropsMutableBuilder[Self <: PartialCheckBoxProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setCheckedColor(value: String): Self = StObject.set(x, "checkedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComponent: Self = this.set("Component", js.undefined)
+    def setCheckedColorUndefined: Self = StObject.set(x, "checkedColor", js.undefined)
     
     @scala.inline
-    def setCenter(value: Boolean): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setCheckedIcon(value: String | ReactElement): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setCheckedTitle(value: String): Self = StObject.set(x, "checkedTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setCheckedTitleUndefined: Self = StObject.set(x, "checkedTitle", js.undefined)
     
     @scala.inline
-    def setCheckedColor(value: String): Self = this.set("checkedColor", value.asInstanceOf[js.Any])
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def deleteCheckedColor: Self = this.set("checkedColor", js.undefined)
+    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedIcon(value: String | ReactElement): Self = this.set("checkedIcon", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
     @scala.inline
-    def deleteCheckedIcon: Self = this.set("checkedIcon", js.undefined)
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedTitle(value: String): Self = this.set("checkedTitle", value.asInstanceOf[js.Any])
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def deleteCheckedTitle: Self = this.set("checkedTitle", js.undefined)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setIconRight(value: Boolean): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setIconRightUndefined: Self = StObject.set(x, "iconRight", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setIconType(value: IconType): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconRight(value: Boolean): Self = this.set("iconRight", value.asInstanceOf[js.Any])
+    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
     @scala.inline
-    def deleteIconRight: Self = this.set("iconRight", js.undefined)
+    def setOnIconPress(value: () => Unit): Self = StObject.set(x, "onIconPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIconType(value: IconType): Self = this.set("iconType", value.asInstanceOf[js.Any])
+    def setOnIconPressUndefined: Self = StObject.set(x, "onIconPress", js.undefined)
     
     @scala.inline
-    def deleteIconType: Self = this.set("iconType", js.undefined)
+    def setOnLongIconPress(value: () => Unit): Self = StObject.set(x, "onLongIconPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnIconPress(value: () => Unit): Self = this.set("onIconPress", js.Any.fromFunction0(value))
+    def setOnLongIconPressUndefined: Self = StObject.set(x, "onLongIconPress", js.undefined)
     
     @scala.inline
-    def deleteOnIconPress: Self = this.set("onIconPress", js.undefined)
+    def setOnLongPress(value: () => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnLongIconPress(value: () => Unit): Self = this.set("onLongIconPress", js.Any.fromFunction0(value))
+    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
     @scala.inline
-    def deleteOnLongIconPress: Self = this.set("onLongIconPress", js.undefined)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnLongPress(value: () => Unit): Self = this.set("onLongPress", js.Any.fromFunction0(value))
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteOnLongPress: Self = this.set("onLongPress", js.undefined)
+    def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Boolean): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setTitle(value: String | ReactElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTitleProps(value: PartialTextProperties): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyleNull: Self = this.set("textStyle", null)
+    def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     
     @scala.inline
-    def setTitle(value: String | ReactElement): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUncheckedColor(value: String): Self = StObject.set(x, "uncheckedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleProps(value: PartialTextProperties): Self = this.set("titleProps", value.asInstanceOf[js.Any])
+    def setUncheckedColorUndefined: Self = StObject.set(x, "uncheckedColor", js.undefined)
     
     @scala.inline
-    def deleteTitleProps: Self = this.set("titleProps", js.undefined)
+    def setUncheckedIcon(value: String | ReactElement): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUncheckedColor(value: String): Self = this.set("uncheckedColor", value.asInstanceOf[js.Any])
+    def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
     
     @scala.inline
-    def deleteUncheckedColor: Self = this.set("uncheckedColor", js.undefined)
+    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUncheckedIcon(value: String | ReactElement): Self = this.set("uncheckedIcon", value.asInstanceOf[js.Any])
+    def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
     
     @scala.inline
-    def deleteUncheckedIcon: Self = this.set("uncheckedIcon", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyleNull: Self = this.set("wrapperStyle", null)
+    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

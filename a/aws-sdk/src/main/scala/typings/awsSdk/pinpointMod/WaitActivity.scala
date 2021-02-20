@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaitActivity extends js.Object {
+trait WaitActivity extends StObject {
   
   /**
     * The unique identifier for the next activity to perform, after performing the wait activity.
@@ -26,30 +27,18 @@ object WaitActivity {
   }
   
   @scala.inline
-  implicit class WaitActivityOps[Self <: WaitActivity] (val x: Self) extends AnyVal {
+  implicit class WaitActivityMutableBuilder[Self <: WaitActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWaitTime(value: WaitTime): Self = StObject.set(x, "WaitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextActivity(value: string): Self = this.set("NextActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextActivity: Self = this.set("NextActivity", js.undefined)
-    
-    @scala.inline
-    def setWaitTime(value: WaitTime): Self = this.set("WaitTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitTime: Self = this.set("WaitTime", js.undefined)
+    def setWaitTimeUndefined: Self = StObject.set(x, "WaitTime", js.undefined)
   }
 }

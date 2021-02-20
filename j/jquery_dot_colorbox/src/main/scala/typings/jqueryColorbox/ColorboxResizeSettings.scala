@@ -1,11 +1,12 @@
 package typings.jqueryColorbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorboxResizeSettings extends js.Object {
+trait ColorboxResizeSettings extends StObject {
   
   var height: js.UndefOr[Double | String] = js.native
   
@@ -24,42 +25,30 @@ object ColorboxResizeSettings {
   }
   
   @scala.inline
-  implicit class ColorboxResizeSettingsOps[Self <: ColorboxResizeSettings] (val x: Self) extends AnyVal {
+  implicit class ColorboxResizeSettingsMutableBuilder[Self <: ColorboxResizeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerHeight(value: Double | String): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInnerWidth(value: Double | String): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerHeight(value: Double | String): Self = this.set("innerHeight", value.asInstanceOf[js.Any])
+    def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
     @scala.inline
-    def deleteInnerHeight: Self = this.set("innerHeight", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerWidth(value: Double | String): Self = this.set("innerWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInnerWidth: Self = this.set("innerWidth", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

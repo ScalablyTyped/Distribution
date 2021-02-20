@@ -1,6 +1,7 @@
 package typings.fabric.mod.fabric
 
 import typings.fabric.fabricImplMod.ITextboxOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class Textbox protected ()
   def this(text: String, options: ITextboxOptions) = this()
 }
 /* static members */
-@JSImport("fabric", "fabric.Textbox")
-@js.native
-object Textbox extends js.Object {
+object Textbox {
   
   /**
     * Returns fabric.Textbox instance from an object representation
@@ -29,6 +28,10 @@ object Textbox extends js.Object {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Textbox instance is created
     */
+  @JSImport("fabric", "fabric.Textbox.fromObject")
+  @js.native
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Textbox = js.native
+  @JSImport("fabric", "fabric.Textbox.fromObject")
+  @js.native
   def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Textbox = js.native
 }

@@ -1,18 +1,19 @@
 package typings.openapiTypes.mod.OpenAPIV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemsObject extends js.Object {
+trait ItemsObject extends StObject {
+  
+  var default: js.UndefOr[js.Any] = js.native
   
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.native
   
   var collectionFormat: js.UndefOr[String] = js.native
-  
-  var default: js.UndefOr[js.Any] = js.native
   
   var enum: js.UndefOr[js.Array[_]] = js.native
   
@@ -54,126 +55,114 @@ object ItemsObject {
   }
   
   @scala.inline
-  implicit class ItemsObjectOps[Self <: ItemsObject] (val x: Self) extends AnyVal {
+  implicit class ItemsObjectMutableBuilder[Self <: ItemsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionFormat(value: String): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCollectionFormatUndefined: Self = StObject.set(x, "collectionFormat", js.undefined)
     
     @scala.inline
-    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$ref: Self = this.set("$ref", js.undefined)
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setCollectionFormat(value: String): Self = this.set("collectionFormat", value.asInstanceOf[js.Any])
+    def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollectionFormat: Self = this.set("collectionFormat", js.undefined)
+    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
     @scala.inline
-    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumVarargs(value: js.Any*): Self = this.set("enum", js.Array(value :_*))
+    def setExclusiveMaximumUndefined: Self = StObject.set(x, "exclusiveMaximum", js.undefined)
     
     @scala.inline
-    def setEnum(value: js.Array[_]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setExclusiveMinimum(value: Boolean): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnum: Self = this.set("enum", js.undefined)
+    def setExclusiveMinimumUndefined: Self = StObject.set(x, "exclusiveMinimum", js.undefined)
     
     @scala.inline
-    def setExclusiveMaximum(value: Boolean): Self = this.set("exclusiveMaximum", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclusiveMaximum: Self = this.set("exclusiveMaximum", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setExclusiveMinimum(value: Boolean): Self = this.set("exclusiveMinimum", value.asInstanceOf[js.Any])
+    def setItems(value: ItemsObject): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclusiveMinimum: Self = this.set("exclusiveMinimum", js.undefined)
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
     
     @scala.inline
-    def setItems(value: ItemsObject): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def setMaxItems(value: Double): Self = this.set("maxItems", value.asInstanceOf[js.Any])
+    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("maxItems", js.undefined)
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
     
     @scala.inline
-    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def setMinItems(value: Double): Self = this.set("minItems", value.asInstanceOf[js.Any])
+    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinItems: Self = this.set("minItems", js.undefined)
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setMultipleOfUndefined: Self = StObject.set(x, "multipleOf", js.undefined)
     
     @scala.inline
-    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setMultipleOf(value: Double): Self = this.set("multipleOf", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultipleOf: Self = this.set("multipleOf", js.undefined)
+    def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
-    
-    @scala.inline
-    def setUniqueItems(value: Boolean): Self = this.set("uniqueItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueItems: Self = this.set("uniqueItems", js.undefined)
+    def setUniqueItemsUndefined: Self = StObject.set(x, "uniqueItems", js.undefined)
   }
 }

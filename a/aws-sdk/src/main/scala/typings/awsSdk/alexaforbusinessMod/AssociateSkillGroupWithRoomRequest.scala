@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateSkillGroupWithRoomRequest extends js.Object {
+trait AssociateSkillGroupWithRoomRequest extends StObject {
   
   /**
     * The ARN of the room with which to associate the skill group. Required.
@@ -26,30 +27,18 @@ object AssociateSkillGroupWithRoomRequest {
   }
   
   @scala.inline
-  implicit class AssociateSkillGroupWithRoomRequestOps[Self <: AssociateSkillGroupWithRoomRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateSkillGroupWithRoomRequestMutableBuilder[Self <: AssociateSkillGroupWithRoomRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomArn(value: Arn): Self = this.set("RoomArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomArn: Self = this.set("RoomArn", js.undefined)
-    
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = this.set("SkillGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillGroupArn: Self = this.set("SkillGroupArn", js.undefined)
+    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
   }
 }

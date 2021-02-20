@@ -1,12 +1,13 @@
 package typings.sharepoint.SP
 
 import typings.microsoftAjax.Sys.Net.WebRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientRequest extends js.Object {
+trait ClientRequest extends StObject {
   
   def add_requestFailed(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit]): Unit = js.native
   
@@ -39,39 +40,27 @@ object ClientRequest {
   }
   
   @scala.inline
-  implicit class ClientRequestOps[Self <: ClientRequest] (val x: Self) extends AnyVal {
+  implicit class ClientRequestMutableBuilder[Self <: ClientRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd_requestFailed(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_requestFailed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd_requestSucceeded(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "add_requestSucceeded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_navigateWhenServerRedirect(value: () => Boolean): Self = StObject.set(x, "get_navigateWhenServerRedirect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd_requestFailed(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit] => Unit): Self = this.set("add_requestFailed", js.Any.fromFunction1(value))
+    def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd_requestSucceeded(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit] => Unit): Self = this.set("add_requestSucceeded", js.Any.fromFunction1(value))
+    def setRemove_requestFailed(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_requestFailed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_navigateWhenServerRedirect(value: () => Boolean): Self = this.set("get_navigateWhenServerRedirect", js.Any.fromFunction0(value))
+    def setRemove_requestSucceeded(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_requestSucceeded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_webRequest(value: () => WebRequest): Self = this.set("get_webRequest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove_requestFailed(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit] => Unit): Self = this.set("remove_requestFailed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove_requestSucceeded(value: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit] => Unit): Self = this.set("remove_requestSucceeded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_navigateWhenServerRedirect(value: Boolean => Unit): Self = this.set("set_navigateWhenServerRedirect", js.Any.fromFunction1(value))
+    def setSet_navigateWhenServerRedirect(value: Boolean => Unit): Self = StObject.set(x, "set_navigateWhenServerRedirect", js.Any.fromFunction1(value))
   }
 }

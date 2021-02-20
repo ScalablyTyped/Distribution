@@ -1,12 +1,13 @@
 package typings.aureliaDependencyInjection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "InvocationHandler")
 @js.native
-class InvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends js.Object {
+class InvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
   def this(
     fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs],
     invoker: Invoker_[TBase, TImpl, TArgs],

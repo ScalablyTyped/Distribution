@@ -2,14 +2,14 @@ package typings.plottable
 
 import typings.plottable.barPlotMod.Bar
 import typings.plottable.barPlotMod.BarOrientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/clusteredBarPlot", JSImport.Namespace)
-@js.native
-object clusteredBarPlotMod extends js.Object {
+object clusteredBarPlotMod {
   
+  @JSImport("plottable/build/src/plots/clusteredBarPlot", "ClusteredBar")
   @js.native
   /**
     * A ClusteredBar Plot groups bars across Datasets based on the primary value of the bars.

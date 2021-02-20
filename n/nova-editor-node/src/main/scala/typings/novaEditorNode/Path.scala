@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/path/
 @js.native
-trait Path extends js.Object {
+trait Path extends StObject {
   
   def basename(path: String): String = js.native
   
@@ -45,45 +46,33 @@ object Path {
   }
   
   @scala.inline
-  implicit class PathOps[Self <: Path] (val x: Self) extends AnyVal {
+  implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasename(value: String => String): Self = StObject.set(x, "basename", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpanduser(value: String => String): Self = StObject.set(x, "expanduser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBasename(value: String => String): Self = this.set("basename", js.Any.fromFunction1(value))
+    def setExtname(value: String => String): Self = StObject.set(x, "extname", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirname(value: String => String): Self = this.set("dirname", js.Any.fromFunction1(value))
+    def setIsAbsolute(value: String => Boolean): Self = StObject.set(x, "isAbsolute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpanduser(value: String => String): Self = this.set("expanduser", js.Any.fromFunction1(value))
+    def setJoin(value: /* repeated */ String => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtname(value: String => String): Self = this.set("extname", js.Any.fromFunction1(value))
+    def setNormalize(value: String => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAbsolute(value: String => Boolean): Self = this.set("isAbsolute", js.Any.fromFunction1(value))
+    def setSplit(value: String => js.Array[String]): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJoin(value: /* repeated */ String => String): Self = this.set("join", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNormalize(value: String => String): Self = this.set("normalize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSplit(value: String => js.Array[String]): Self = this.set("split", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSplitext(value: String => js.Tuple2[String, String]): Self = this.set("splitext", js.Any.fromFunction1(value))
+    def setSplitext(value: String => js.Tuple2[String, String]): Self = StObject.set(x, "splitext", js.Any.fromFunction1(value))
   }
 }

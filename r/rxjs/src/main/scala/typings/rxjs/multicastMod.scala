@@ -8,22 +8,14 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.UnaryFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/multicast", JSImport.Namespace)
-@js.native
-object multicastMod extends js.Object {
+object multicastMod {
   
-  def multicast[T](subjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
-  def multicast[T](subject: Subject[T]): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
-  def multicast[T, O /* <: ObservableInput[_] */](
-    SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]],
-    selector: js.Function1[/* shared */ Observable[T], O]
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  def multicast[T, O /* <: ObservableInput[_] */](subject: Subject[T], selector: js.Function1[/* shared */ Observable[T], O]): UnaryFunction[Observable[T], ConnectableObservable[ObservedValueOf[O]]] = js.native
-  
+  @JSImport("rxjs/internal/operators/multicast", "MulticastOperator")
   @js.native
   class MulticastOperator[T, R] protected () extends Operator[T, R] {
     def this(
@@ -35,4 +27,20 @@ object multicastMod extends js.Object {
     
     var subjectFactory: js.Any = js.native
   }
+  
+  @JSImport("rxjs/internal/operators/multicast", "multicast")
+  @js.native
+  def multicast[T](subjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
+  @JSImport("rxjs/internal/operators/multicast", "multicast")
+  @js.native
+  def multicast[T](subject: Subject[T]): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
+  @JSImport("rxjs/internal/operators/multicast", "multicast")
+  @js.native
+  def multicast[T, O /* <: ObservableInput[_] */](
+    SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]],
+    selector: js.Function1[/* shared */ Observable[T], O]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  @JSImport("rxjs/internal/operators/multicast", "multicast")
+  @js.native
+  def multicast[T, O /* <: ObservableInput[_] */](subject: Subject[T], selector: js.Function1[/* shared */ Observable[T], O]): UnaryFunction[Observable[T], ConnectableObservable[ObservedValueOf[O]]] = js.native
 }

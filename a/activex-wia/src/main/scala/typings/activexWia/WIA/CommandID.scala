@@ -5,6 +5,7 @@ import typings.activexWia.activexWiaStrings.`Leftcurlybracket1F3B3D8E-ACAE-11D2-
 import typings.activexWia.activexWiaStrings.`Leftcurlybracket9B26B7B2-ACAD-11D2-A093-00C04F72DC3CRightcurlybracket`
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketAF933CAC-ACAD-11D2-A093-00C04F72DC3CRightcurlybracket`
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketE208C170-ACAD-11D2-A093-00C04F72DC3CRightcurlybracket`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaStrings.`LeftcurlybracketAF933CAC-ACAD-11D2-A093-00C04F72DC3CRightcurlybracket`
   - typings.activexWia.activexWiaStrings.`Leftcurlybracket1F3B3D8E-ACAE-11D2-A093-00C04F72DC3CRightcurlybracket`
 */
-trait CommandID extends js.Object
+trait CommandID extends StObject
 object CommandID {
   
   @scala.inline

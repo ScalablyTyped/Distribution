@@ -1,5 +1,6 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.scrivito.scrivitoStrings.linksTo
   - typings.scrivito.scrivitoStrings.refersTo
 */
-trait ObjSearchOperator extends js.Object
+trait ObjSearchOperator extends StObject
 object ObjSearchOperator {
   
   @scala.inline

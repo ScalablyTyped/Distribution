@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuppressedDestination extends js.Object {
+trait SuppressedDestination extends StObject {
   
   /**
     * An optional value that can contain additional information about the reasons that the address was added to the suppression list for your account.
@@ -36,33 +37,21 @@ object SuppressedDestination {
   }
   
   @scala.inline
-  implicit class SuppressedDestinationOps[Self <: SuppressedDestination] (val x: Self) extends AnyVal {
+  implicit class SuppressedDestinationMutableBuilder[Self <: SuppressedDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: SuppressedDestinationAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: SuppressionListReason): Self = this.set("Reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributes(value: SuppressedDestinationAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setReason(value: SuppressionListReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

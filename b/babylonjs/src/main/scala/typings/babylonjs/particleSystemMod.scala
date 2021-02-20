@@ -16,17 +16,17 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subEmitterMod.SubEmitter
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/particleSystem", JSImport.Namespace)
-@js.native
-object particleSystemMod extends js.Object {
+object particleSystemMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.iparticlesystemMod.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient
-  - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @js.native
+  - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem")
+  @js.native
   class ParticleSystem protected ()
     extends BaseParticleSystem
        with IDisposable {
@@ -757,22 +757,27 @@ object particleSystemMod extends js.Object {
     var vertexShaderName_FParticleSystem: String = js.native
   }
   /* static members */
-  @js.native
-  object ParticleSystem extends js.Object {
+  object ParticleSystem {
     
     /**
       * Billboard mode will apply to all axes
       */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.BILLBOARDMODE_ALL")
+    @js.native
     val BILLBOARDMODE_ALL: Double = js.native
     
     /**
       * Special billboard mode where the particle will be biilboard to the camera but rotated to align with direction
       */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.BILLBOARDMODE_STRETCHED")
+    @js.native
     val BILLBOARDMODE_STRETCHED: Double = js.native
     
     /**
       * Billboard mode will only apply to Y axis
       */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.BILLBOARDMODE_Y")
+    @js.native
     val BILLBOARDMODE_Y: Double = js.native
     
     /**
@@ -783,44 +788,76 @@ object particleSystemMod extends js.Object {
       * @param doNotStart Ignore the preventAutoStart attribute and does not start
       * @returns the Parsed particle system
       */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.Parse")
+    @js.native
     def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String): ParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.Parse")
+    @js.native
     def Parse(parsedParticleSystem: js.Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): ParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.Parse")
+    @js.native
     def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): ParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem.Parse")
+    @js.native
     def Parse(parsedParticleSystem: js.Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): ParticleSystem = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(
       isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
       isBillboardBased: js.UndefOr[scala.Nothing],
       useRampGradients: Boolean
     ): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: js.UndefOr[scala.Nothing], isBillboardBased: Boolean): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(
       isAnimationSheetEnabled: js.UndefOr[scala.Nothing],
       isBillboardBased: Boolean,
       useRampGradients: Boolean
     ): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(
       isAnimationSheetEnabled: Boolean,
       isBillboardBased: js.UndefOr[scala.Nothing],
       useRampGradients: Boolean
     ): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetAttributeNamesOrOptions")
+    @js.native
     def _GetAttributeNamesOrOptions(isAnimationSheetEnabled: Boolean, isBillboardBased: Boolean, useRampGradients: Boolean): js.Array[String] = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetEffectCreationOptions")
+    @js.native
     def _GetEffectCreationOptions(): js.Array[String] = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._GetEffectCreationOptions")
+    @js.native
     def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._Parse")
+    @js.native
     def _Parse(
       parsedParticleSystem: js.Any,
       particleSystem: IParticleSystem,
       sceneOrEngine: Scene,
       rootUrl: String
     ): Unit = js.native
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._Parse")
+    @js.native
     def _Parse(
       parsedParticleSystem: js.Any,
       particleSystem: IParticleSystem,
@@ -829,6 +866,8 @@ object particleSystemMod extends js.Object {
     ): Unit = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Particles/particleSystem", "ParticleSystem._Serialize")
+    @js.native
     def _Serialize(serializationObject: js.Any, particleSystem: IParticleSystem, serializeTexture: Boolean): Unit = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2AnnotatedMessagePart extends js.Object {
+trait GoogleCloudDialogflowV2AnnotatedMessagePart extends StObject {
   
   /**
     * The [Dialogflow system entity type](https://cloud.google.com/dialogflow/docs/reference/system-entities) of this message part. If this is empty, Dialogflow could not annotate the
@@ -31,36 +32,24 @@ object GoogleCloudDialogflowV2AnnotatedMessagePart {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2AnnotatedMessagePartOps[Self <: GoogleCloudDialogflowV2AnnotatedMessagePart] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2AnnotatedMessagePartMutableBuilder[Self <: GoogleCloudDialogflowV2AnnotatedMessagePart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedValue(value: js.Any): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
     @scala.inline
-    def deleteEntityType: Self = this.set("entityType", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedValue(value: js.Any): Self = this.set("formattedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormattedValue: Self = this.set("formattedValue", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

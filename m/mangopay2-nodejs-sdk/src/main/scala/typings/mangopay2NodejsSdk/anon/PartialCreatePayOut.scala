@@ -1,13 +1,14 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.mod.MoneyData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.PayOut.CreatePayOut> */
 @js.native
-trait PartialCreatePayOut extends js.Object {
+trait PartialCreatePayOut extends StObject {
   
   var AuthorId: js.UndefOr[String] = js.native
   
@@ -32,60 +33,48 @@ object PartialCreatePayOut {
   }
   
   @scala.inline
-  implicit class PartialCreatePayOutOps[Self <: PartialCreatePayOut] (val x: Self) extends AnyVal {
+  implicit class PartialCreatePayOutMutableBuilder[Self <: PartialCreatePayOut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorIdUndefined: Self = StObject.set(x, "AuthorId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBankAccountId(value: String): Self = StObject.set(x, "BankAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorId(value: String): Self = this.set("AuthorId", value.asInstanceOf[js.Any])
+    def setBankAccountIdUndefined: Self = StObject.set(x, "BankAccountId", js.undefined)
     
     @scala.inline
-    def deleteAuthorId: Self = this.set("AuthorId", js.undefined)
+    def setBankWireRef(value: String): Self = StObject.set(x, "BankWireRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankAccountId(value: String): Self = this.set("BankAccountId", value.asInstanceOf[js.Any])
+    def setBankWireRefUndefined: Self = StObject.set(x, "BankWireRef", js.undefined)
     
     @scala.inline
-    def deleteBankAccountId: Self = this.set("BankAccountId", js.undefined)
+    def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankWireRef(value: String): Self = this.set("BankWireRef", value.asInstanceOf[js.Any])
+    def setDebitedFundsUndefined: Self = StObject.set(x, "DebitedFunds", js.undefined)
     
     @scala.inline
-    def deleteBankWireRef: Self = this.set("BankWireRef", js.undefined)
+    def setDebitedWalletId(value: String): Self = StObject.set(x, "DebitedWalletId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebitedFunds(value: MoneyData): Self = this.set("DebitedFunds", value.asInstanceOf[js.Any])
+    def setDebitedWalletIdUndefined: Self = StObject.set(x, "DebitedWalletId", js.undefined)
     
     @scala.inline
-    def deleteDebitedFunds: Self = this.set("DebitedFunds", js.undefined)
+    def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebitedWalletId(value: String): Self = this.set("DebitedWalletId", value.asInstanceOf[js.Any])
+    def setFeesUndefined: Self = StObject.set(x, "Fees", js.undefined)
     
     @scala.inline
-    def deleteDebitedWalletId: Self = this.set("DebitedWalletId", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFees(value: MoneyData): Self = this.set("Fees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFees: Self = this.set("Fees", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

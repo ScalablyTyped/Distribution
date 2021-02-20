@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Origin extends js.Object {
+trait Origin extends StObject {
   
   /**
     * The number of times that CloudFront attempts to connect to the origin. The minimum number is 1, the maximum is 3, and the default (if you don’t specify otherwise) is 3. For a custom origin (including an Amazon S3 bucket that’s configured with static website hosting), this value also specifies the number of times that CloudFront attempts to get a response from the origin, in the case of an Origin Response Timeout. For more information, see Origin Connection Attempts in the Amazon CloudFront Developer Guide.
@@ -61,66 +62,54 @@ object Origin {
   }
   
   @scala.inline
-  implicit class OriginOps[Self <: Origin] (val x: Self) extends AnyVal {
+  implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionAttempts(value: integer): Self = StObject.set(x, "ConnectionAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionAttemptsUndefined: Self = StObject.set(x, "ConnectionAttempts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionTimeout(value: integer): Self = StObject.set(x, "ConnectionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setConnectionTimeoutUndefined: Self = StObject.set(x, "ConnectionTimeout", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "CustomHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionAttempts(value: integer): Self = this.set("ConnectionAttempts", value.asInstanceOf[js.Any])
+    def setCustomHeadersUndefined: Self = StObject.set(x, "CustomHeaders", js.undefined)
     
     @scala.inline
-    def deleteConnectionAttempts: Self = this.set("ConnectionAttempts", js.undefined)
+    def setCustomOriginConfig(value: CustomOriginConfig): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTimeout(value: integer): Self = this.set("ConnectionTimeout", value.asInstanceOf[js.Any])
+    def setCustomOriginConfigUndefined: Self = StObject.set(x, "CustomOriginConfig", js.undefined)
     
     @scala.inline
-    def deleteConnectionTimeout: Self = this.set("ConnectionTimeout", js.undefined)
+    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomHeaders(value: CustomHeaders): Self = this.set("CustomHeaders", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomHeaders: Self = this.set("CustomHeaders", js.undefined)
+    def setOriginPath(value: String): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomOriginConfig(value: CustomOriginConfig): Self = this.set("CustomOriginConfig", value.asInstanceOf[js.Any])
+    def setOriginPathUndefined: Self = StObject.set(x, "OriginPath", js.undefined)
     
     @scala.inline
-    def deleteCustomOriginConfig: Self = this.set("CustomOriginConfig", js.undefined)
+    def setOriginShield(value: OriginShield): Self = StObject.set(x, "OriginShield", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginPath(value: String): Self = this.set("OriginPath", value.asInstanceOf[js.Any])
+    def setOriginShieldUndefined: Self = StObject.set(x, "OriginShield", js.undefined)
     
     @scala.inline
-    def deleteOriginPath: Self = this.set("OriginPath", js.undefined)
+    def setS3OriginConfig(value: S3OriginConfig): Self = StObject.set(x, "S3OriginConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginShield(value: OriginShield): Self = this.set("OriginShield", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginShield: Self = this.set("OriginShield", js.undefined)
-    
-    @scala.inline
-    def setS3OriginConfig(value: S3OriginConfig): Self = this.set("S3OriginConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3OriginConfig: Self = this.set("S3OriginConfig", js.undefined)
+    def setS3OriginConfigUndefined: Self = StObject.set(x, "S3OriginConfig", js.undefined)
   }
 }

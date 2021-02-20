@@ -2,14 +2,14 @@ package typings.formstate
 
 import typings.formstate.typesMod.Validatable
 import typings.formstate.typesMod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("formstate/lib/core/formStateLazy", JSImport.Namespace)
-@js.native
-object formStateLazyMod extends js.Object {
+object formStateLazyMod {
   
+  @JSImport("formstate/lib/core/formStateLazy", "FormStateLazy")
   @js.native
   class FormStateLazy[TValue /* <: ValidatableArray */] protected () extends Validatable[TValue] {
     def this(/** It is a function as fields can change over time */

@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
   */
 @js.native
-trait PlusAccelerometerAccelerometerOption extends js.Object {
+trait PlusAccelerometerAccelerometerOption extends StObject {
   
   /**
     * 更新加速度信息间隔时间
@@ -30,24 +31,12 @@ object PlusAccelerometerAccelerometerOption {
   }
   
   @scala.inline
-  implicit class PlusAccelerometerAccelerometerOptionOps[Self <: PlusAccelerometerAccelerometerOption] (val x: Self) extends AnyVal {
+  implicit class PlusAccelerometerAccelerometerOptionMutableBuilder[Self <: PlusAccelerometerAccelerometerOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

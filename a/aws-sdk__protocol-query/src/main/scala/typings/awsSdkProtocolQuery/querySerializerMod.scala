@@ -2,14 +2,14 @@ package typings.awsSdkProtocolQuery
 
 import typings.awsSdkTypes.httpMod.HttpRequest
 import typings.awsSdkTypes.serdeMod.RequestSerializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/protocol-query/build/QuerySerializer", JSImport.Namespace)
-@js.native
-object querySerializerMod extends js.Object {
+object querySerializerMod {
   
+  @JSImport("@aws-sdk/protocol-query/build/QuerySerializer", "QuerySerializer")
   @js.native
   class QuerySerializer[StreamType] protected ()
     extends RequestSerializer[StreamType, js.Any] {

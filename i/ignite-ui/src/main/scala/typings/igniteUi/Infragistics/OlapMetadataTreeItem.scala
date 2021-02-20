@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlapMetadataTreeItem extends js.Object {
+trait OlapMetadataTreeItem extends StObject {
   
   /**
     * Returns the caption text that should be displayed for this tree item.
@@ -73,30 +74,18 @@ object OlapMetadataTreeItem {
   }
   
   @scala.inline
-  implicit class OlapMetadataTreeItemOps[Self <: OlapMetadataTreeItem] (val x: Self) extends AnyVal {
+  implicit class OlapMetadataTreeItemMutableBuilder[Self <: OlapMetadataTreeItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: () => String): Self = StObject.set(x, "caption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: () => js.Object): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: () => js.Object): Self = StObject.set(x, "item", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCaption(value: () => String): Self = this.set("caption", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setChildren(value: () => js.Object): Self = this.set("children", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setItem(value: () => js.Object): Self = this.set("item", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: () => Double): Self = this.set("type", js.Any.fromFunction0(value))
+    def setType(value: () => Double): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
   }
 }

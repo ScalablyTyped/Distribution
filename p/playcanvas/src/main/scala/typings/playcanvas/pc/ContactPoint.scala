@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param normal - The normal vector of the contact on the other entity, in world space.
   */
 @js.native
-trait ContactPoint extends js.Object {
+trait ContactPoint extends StObject {
   
   /**
     * The point on the entity where the contact occurred, relative to the entity.
@@ -54,33 +55,21 @@ object ContactPoint {
   }
   
   @scala.inline
-  implicit class ContactPointOps[Self <: ContactPoint] (val x: Self) extends AnyVal {
+  implicit class ContactPointMutableBuilder[Self <: ContactPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalPoint(value: Vec3): Self = StObject.set(x, "localPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalPointOther(value: Vec3): Self = StObject.set(x, "localPointOther", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPoint(value: Vec3): Self = this.set("localPoint", value.asInstanceOf[js.Any])
+    def setPoint(value: Vec3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPointOther(value: Vec3): Self = this.set("localPointOther", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: Vec3): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: Vec3): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointOther(value: Vec3): Self = this.set("pointOther", value.asInstanceOf[js.Any])
+    def setPointOther(value: Vec3): Self = StObject.set(x, "pointOther", value.asInstanceOf[js.Any])
   }
 }

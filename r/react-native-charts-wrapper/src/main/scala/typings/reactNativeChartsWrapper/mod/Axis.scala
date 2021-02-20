@@ -6,12 +6,13 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.HOURS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.MILLISECONDS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.MINUTES
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SECONDS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axis extends js.Object {
+trait Axis extends StObject {
   
   var axisLineColor: js.UndefOr[Color] = js.native
   
@@ -76,186 +77,174 @@ object Axis {
   }
   
   @scala.inline
-  implicit class AxisOps[Self <: Axis] (val x: Self) extends AnyVal {
+  implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisLineColor(value: Color): Self = StObject.set(x, "axisLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisLineColorUndefined: Self = StObject.set(x, "axisLineColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisLineWidth(value: Double): Self = StObject.set(x, "axisLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLineColor(value: Color): Self = this.set("axisLineColor", value.asInstanceOf[js.Any])
+    def setAxisLineWidthUndefined: Self = StObject.set(x, "axisLineWidth", js.undefined)
     
     @scala.inline
-    def deleteAxisLineColor: Self = this.set("axisLineColor", js.undefined)
+    def setAxisMaximum(value: Double): Self = StObject.set(x, "axisMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLineWidth(value: Double): Self = this.set("axisLineWidth", value.asInstanceOf[js.Any])
+    def setAxisMaximumUndefined: Self = StObject.set(x, "axisMaximum", js.undefined)
     
     @scala.inline
-    def deleteAxisLineWidth: Self = this.set("axisLineWidth", js.undefined)
+    def setAxisMinimum(value: Double): Self = StObject.set(x, "axisMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisMaximum(value: Double): Self = this.set("axisMaximum", value.asInstanceOf[js.Any])
+    def setAxisMinimumUndefined: Self = StObject.set(x, "axisMinimum", js.undefined)
     
     @scala.inline
-    def deleteAxisMaximum: Self = this.set("axisMaximum", js.undefined)
+    def setCenterAxisLabels(value: Boolean): Self = StObject.set(x, "centerAxisLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisMinimum(value: Double): Self = this.set("axisMinimum", value.asInstanceOf[js.Any])
+    def setCenterAxisLabelsUndefined: Self = StObject.set(x, "centerAxisLabels", js.undefined)
     
     @scala.inline
-    def deleteAxisMinimum: Self = this.set("axisMinimum", js.undefined)
+    def setDrawAxisLines(value: Boolean): Self = StObject.set(x, "drawAxisLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterAxisLabels(value: Boolean): Self = this.set("centerAxisLabels", value.asInstanceOf[js.Any])
+    def setDrawAxisLinesUndefined: Self = StObject.set(x, "drawAxisLines", js.undefined)
     
     @scala.inline
-    def deleteCenterAxisLabels: Self = this.set("centerAxisLabels", js.undefined)
+    def setDrawGridLines(value: Boolean): Self = StObject.set(x, "drawGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawAxisLines(value: Boolean): Self = this.set("drawAxisLines", value.asInstanceOf[js.Any])
+    def setDrawGridLinesUndefined: Self = StObject.set(x, "drawGridLines", js.undefined)
     
     @scala.inline
-    def deleteDrawAxisLines: Self = this.set("drawAxisLines", js.undefined)
+    def setDrawLabels(value: Boolean): Self = StObject.set(x, "drawLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawGridLines(value: Boolean): Self = this.set("drawGridLines", value.asInstanceOf[js.Any])
+    def setDrawLabelsUndefined: Self = StObject.set(x, "drawLabels", js.undefined)
     
     @scala.inline
-    def deleteDrawGridLines: Self = this.set("drawGridLines", js.undefined)
+    def setDrawLimitLinesBehindData(value: Boolean): Self = StObject.set(x, "drawLimitLinesBehindData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawLabels(value: Boolean): Self = this.set("drawLabels", value.asInstanceOf[js.Any])
+    def setDrawLimitLinesBehindDataUndefined: Self = StObject.set(x, "drawLimitLinesBehindData", js.undefined)
     
     @scala.inline
-    def deleteDrawLabels: Self = this.set("drawLabels", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawLimitLinesBehindData(value: Boolean): Self = this.set("drawLimitLinesBehindData", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDrawLimitLinesBehindData: Self = this.set("drawLimitLinesBehindData", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setGranularityEnabled(value: Boolean): Self = StObject.set(x, "granularityEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setGranularityEnabledUndefined: Self = StObject.set(x, "granularityEnabled", js.undefined)
     
     @scala.inline
-    def setGranularity(value: Double): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    def setGridColor(value: Color): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranularityEnabled(value: Boolean): Self = this.set("granularityEnabled", value.asInstanceOf[js.Any])
+    def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
     
     @scala.inline
-    def deleteGranularityEnabled: Self = this.set("granularityEnabled", js.undefined)
+    def setGridDashedLine(value: LineLength): Self = StObject.set(x, "gridDashedLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridColor(value: Color): Self = this.set("gridColor", value.asInstanceOf[js.Any])
+    def setGridDashedLineUndefined: Self = StObject.set(x, "gridDashedLine", js.undefined)
     
     @scala.inline
-    def deleteGridColor: Self = this.set("gridColor", js.undefined)
+    def setGridLineWidth(value: Double): Self = StObject.set(x, "gridLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridDashedLine(value: LineLength): Self = this.set("gridDashedLine", value.asInstanceOf[js.Any])
+    def setGridLineWidthUndefined: Self = StObject.set(x, "gridLineWidth", js.undefined)
     
     @scala.inline
-    def deleteGridDashedLine: Self = this.set("gridDashedLine", js.undefined)
+    def setLabelCount(value: Double): Self = StObject.set(x, "labelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridLineWidth(value: Double): Self = this.set("gridLineWidth", value.asInstanceOf[js.Any])
+    def setLabelCountForce(value: Boolean): Self = StObject.set(x, "labelCountForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridLineWidth: Self = this.set("gridLineWidth", js.undefined)
+    def setLabelCountForceUndefined: Self = StObject.set(x, "labelCountForce", js.undefined)
     
     @scala.inline
-    def setLabelCount(value: Double): Self = this.set("labelCount", value.asInstanceOf[js.Any])
+    def setLabelCountUndefined: Self = StObject.set(x, "labelCount", js.undefined)
     
     @scala.inline
-    def deleteLabelCount: Self = this.set("labelCount", js.undefined)
+    def setLimitLines(value: js.Array[AxisLimitLine]): Self = StObject.set(x, "limitLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCountForce(value: Boolean): Self = this.set("labelCountForce", value.asInstanceOf[js.Any])
+    def setLimitLinesUndefined: Self = StObject.set(x, "limitLines", js.undefined)
     
     @scala.inline
-    def deleteLabelCountForce: Self = this.set("labelCountForce", js.undefined)
+    def setLimitLinesVarargs(value: AxisLimitLine*): Self = StObject.set(x, "limitLines", js.Array(value :_*))
     
     @scala.inline
-    def setLimitLinesVarargs(value: AxisLimitLine*): Self = this.set("limitLines", js.Array(value :_*))
+    def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitLines(value: js.Array[AxisLimitLine]): Self = this.set("limitLines", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteLimitLines: Self = this.set("limitLines", js.undefined)
+    def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: Double): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: Color): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
     
     @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTimeUnit(value: MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSize(value: Double): Self = this.set("textSize", value.asInstanceOf[js.Any])
+    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     
     @scala.inline
-    def deleteTextSize: Self = this.set("textSize", js.undefined)
+    def setValueFormatter(value: ValueFormatter): Self = StObject.set(x, "valueFormatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeUnit(value: MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS): Self = this.set("timeUnit", value.asInstanceOf[js.Any])
+    def setValueFormatterPattern(value: String): Self = StObject.set(x, "valueFormatterPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeUnit: Self = this.set("timeUnit", js.undefined)
+    def setValueFormatterPatternUndefined: Self = StObject.set(x, "valueFormatterPattern", js.undefined)
     
     @scala.inline
-    def setValueFormatterVarargs(value: String*): Self = this.set("valueFormatter", js.Array(value :_*))
+    def setValueFormatterUndefined: Self = StObject.set(x, "valueFormatter", js.undefined)
     
     @scala.inline
-    def setValueFormatter(value: ValueFormatter): Self = this.set("valueFormatter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFormatter: Self = this.set("valueFormatter", js.undefined)
-    
-    @scala.inline
-    def setValueFormatterPattern(value: String): Self = this.set("valueFormatterPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFormatterPattern: Self = this.set("valueFormatterPattern", js.undefined)
+    def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value :_*))
   }
 }

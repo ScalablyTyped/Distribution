@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Content extends js.Object {
+trait Content extends StObject {
   
   var comment: String = js.native
   
@@ -71,72 +72,60 @@ object Content {
   }
   
   @scala.inline
-  implicit class ContentOps[Self <: Content] (val x: Self) extends AnyVal {
+  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLeft(value: String): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setDescriptionUnderInput(value: String): Self = StObject.set(x, "descriptionUnderInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLeft(value: String): Self = this.set("contentLeft", value.asInstanceOf[js.Any])
+    def setFlowRoot(value: String): Self = StObject.set(x, "flowRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFormGroup(value: String): Self = StObject.set(x, "formGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionUnderInput(value: String): Self = this.set("descriptionUnderInput", value.asInstanceOf[js.Any])
+    def setHasError(value: String): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowRoot(value: String): Self = this.set("flowRoot", value.asInstanceOf[js.Any])
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormGroup(value: String): Self = this.set("formGroup", value.asInstanceOf[js.Any])
+    def setHeaderLeft(value: String): Self = StObject.set(x, "headerLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasError(value: String): Self = this.set("hasError", value.asInstanceOf[js.Any])
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setMainRoot(value: String): Self = StObject.set(x, "mainRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderLeft(value: String): Self = this.set("headerLeft", value.asInstanceOf[js.Any])
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainRoot(value: String): Self = this.set("mainRoot", value.asInstanceOf[js.Any])
+    def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: String): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setTitleLeftRoot(value: String): Self = StObject.set(x, "titleLeftRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredText(value: String): Self = this.set("requiredText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleLeftRoot(value: String): Self = this.set("titleLeftRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleRequired(value: String): Self = this.set("titleRequired", value.asInstanceOf[js.Any])
+    def setTitleRequired(value: String): Self = StObject.set(x, "titleRequired", value.asInstanceOf[js.Any])
   }
 }

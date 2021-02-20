@@ -1,5 +1,6 @@
 package typings.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,11 +31,21 @@ class Euler ()
   def this(x: Double, y: Double, z: Double, order: String) = this()
 }
 /* static members */
-@JSImport("three", "Euler")
-@js.native
-object Euler extends js.Object {
+object Euler {
   
-  var DefaultOrder: String = js.native
+  @JSImport("three", "Euler")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var RotationOrders: js.Array[String] = js.native
+  @JSImport("three", "Euler.DefaultOrder")
+  @js.native
+  def DefaultOrder: String = js.native
+  @scala.inline
+  def DefaultOrder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "Euler.RotationOrders")
+  @js.native
+  def RotationOrders: js.Array[String] = js.native
+  @scala.inline
+  def RotationOrders_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
 }

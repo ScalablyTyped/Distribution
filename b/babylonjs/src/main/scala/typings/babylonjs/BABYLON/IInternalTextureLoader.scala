@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInternalTextureLoader extends js.Object {
+trait IInternalTextureLoader extends StObject {
   
   /**
     * This returns if the loader support the current file information.

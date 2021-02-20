@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGossipConsensusMessage extends js.Object {
+trait IGossipConsensusMessage extends StObject {
   
   /** GossipConsensusMessage message */
   var message: js.UndefOr[Uint8Array | Null] = js.native
@@ -26,45 +27,33 @@ object IGossipConsensusMessage {
   }
   
   @scala.inline
-  implicit class IGossipConsensusMessageOps[Self <: IGossipConsensusMessage] (val x: Self) extends AnyVal {
+  implicit class IGossipConsensusMessageMutableBuilder[Self <: IGossipConsensusMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: Uint8Array): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageNull: Self = StObject.set(x, "message", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setMessage(value: Uint8Array): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSenderId(value: Uint8Array): Self = StObject.set(x, "senderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSenderIdNull: Self = StObject.set(x, "senderId", null)
     
     @scala.inline
-    def setMessageNull: Self = this.set("message", null)
+    def setSenderIdUndefined: Self = StObject.set(x, "senderId", js.undefined)
     
     @scala.inline
-    def setSenderId(value: Uint8Array): Self = this.set("senderId", value.asInstanceOf[js.Any])
+    def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderId: Self = this.set("senderId", js.undefined)
+    def setTimeToLiveNull: Self = StObject.set(x, "timeToLive", null)
     
     @scala.inline
-    def setSenderIdNull: Self = this.set("senderId", null)
-    
-    @scala.inline
-    def setTimeToLive(value: Double): Self = this.set("timeToLive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLive: Self = this.set("timeToLive", js.undefined)
-    
-    @scala.inline
-    def setTimeToLiveNull: Self = this.set("timeToLive", null)
+    def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
   }
 }

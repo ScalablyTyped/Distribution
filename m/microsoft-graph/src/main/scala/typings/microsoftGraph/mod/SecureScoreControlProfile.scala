@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,195 +69,183 @@ object SecureScoreControlProfile {
   }
   
   @scala.inline
-  implicit class SecureScoreControlProfileOps[Self <: SecureScoreControlProfile] (val x: Self) extends AnyVal {
+  implicit class SecureScoreControlProfileMutableBuilder[Self <: SecureScoreControlProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionType(value: NullableOption[String]): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTypeNull: Self = StObject.set(x, "actionType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def setActionType(value: NullableOption[String]): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setActionUrl(value: NullableOption[String]): Self = StObject.set(x, "actionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setActionUrlNull: Self = StObject.set(x, "actionUrl", null)
     
     @scala.inline
-    def setActionTypeNull: Self = this.set("actionType", null)
+    def setActionUrlUndefined: Self = StObject.set(x, "actionUrl", js.undefined)
     
     @scala.inline
-    def setActionUrl(value: NullableOption[String]): Self = this.set("actionUrl", value.asInstanceOf[js.Any])
+    def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionUrl: Self = this.set("actionUrl", js.undefined)
+    def setAzureTenantIdUndefined: Self = StObject.set(x, "azureTenantId", js.undefined)
     
     @scala.inline
-    def setActionUrlNull: Self = this.set("actionUrl", null)
+    def setComplianceInformation(value: NullableOption[js.Array[ComplianceInformation]]): Self = StObject.set(x, "complianceInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureTenantId(value: String): Self = this.set("azureTenantId", value.asInstanceOf[js.Any])
+    def setComplianceInformationNull: Self = StObject.set(x, "complianceInformation", null)
     
     @scala.inline
-    def deleteAzureTenantId: Self = this.set("azureTenantId", js.undefined)
+    def setComplianceInformationUndefined: Self = StObject.set(x, "complianceInformation", js.undefined)
     
     @scala.inline
-    def setComplianceInformationVarargs(value: ComplianceInformation*): Self = this.set("complianceInformation", js.Array(value :_*))
+    def setComplianceInformationVarargs(value: ComplianceInformation*): Self = StObject.set(x, "complianceInformation", js.Array(value :_*))
     
     @scala.inline
-    def setComplianceInformation(value: NullableOption[js.Array[ComplianceInformation]]): Self = this.set("complianceInformation", value.asInstanceOf[js.Any])
+    def setControlCategory(value: NullableOption[String]): Self = StObject.set(x, "controlCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplianceInformation: Self = this.set("complianceInformation", js.undefined)
+    def setControlCategoryNull: Self = StObject.set(x, "controlCategory", null)
     
     @scala.inline
-    def setComplianceInformationNull: Self = this.set("complianceInformation", null)
+    def setControlCategoryUndefined: Self = StObject.set(x, "controlCategory", js.undefined)
     
     @scala.inline
-    def setControlCategory(value: NullableOption[String]): Self = this.set("controlCategory", value.asInstanceOf[js.Any])
+    def setControlStateUpdates(value: NullableOption[js.Array[SecureScoreControlStateUpdate]]): Self = StObject.set(x, "controlStateUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlCategory: Self = this.set("controlCategory", js.undefined)
+    def setControlStateUpdatesNull: Self = StObject.set(x, "controlStateUpdates", null)
     
     @scala.inline
-    def setControlCategoryNull: Self = this.set("controlCategory", null)
+    def setControlStateUpdatesUndefined: Self = StObject.set(x, "controlStateUpdates", js.undefined)
     
     @scala.inline
-    def setControlStateUpdatesVarargs(value: SecureScoreControlStateUpdate*): Self = this.set("controlStateUpdates", js.Array(value :_*))
+    def setControlStateUpdatesVarargs(value: SecureScoreControlStateUpdate*): Self = StObject.set(x, "controlStateUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setControlStateUpdates(value: NullableOption[js.Array[SecureScoreControlStateUpdate]]): Self = this.set("controlStateUpdates", value.asInstanceOf[js.Any])
+    def setDeprecated(value: NullableOption[Boolean]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControlStateUpdates: Self = this.set("controlStateUpdates", js.undefined)
+    def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
     
     @scala.inline
-    def setControlStateUpdatesNull: Self = this.set("controlStateUpdates", null)
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def setDeprecated(value: NullableOption[Boolean]): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setImplementationCost(value: NullableOption[String]): Self = StObject.set(x, "implementationCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setImplementationCostNull: Self = StObject.set(x, "implementationCost", null)
     
     @scala.inline
-    def setDeprecatedNull: Self = this.set("deprecated", null)
+    def setImplementationCostUndefined: Self = StObject.set(x, "implementationCost", js.undefined)
     
     @scala.inline
-    def setImplementationCost(value: NullableOption[String]): Self = this.set("implementationCost", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplementationCost: Self = this.set("implementationCost", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setImplementationCostNull: Self = this.set("implementationCost", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setMaxScore(value: NullableOption[Double]): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setMaxScoreNull: Self = StObject.set(x, "maxScore", null)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setMaxScoreUndefined: Self = StObject.set(x, "maxScore", js.undefined)
     
     @scala.inline
-    def setMaxScore(value: NullableOption[Double]): Self = this.set("maxScore", value.asInstanceOf[js.Any])
+    def setRank(value: NullableOption[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxScore: Self = this.set("maxScore", js.undefined)
+    def setRankNull: Self = StObject.set(x, "rank", null)
     
     @scala.inline
-    def setMaxScoreNull: Self = this.set("maxScore", null)
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
     @scala.inline
-    def setRank(value: NullableOption[Double]): Self = this.set("rank", value.asInstanceOf[js.Any])
+    def setRemediation(value: NullableOption[String]): Self = StObject.set(x, "remediation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
+    def setRemediationImpact(value: NullableOption[String]): Self = StObject.set(x, "remediationImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRankNull: Self = this.set("rank", null)
+    def setRemediationImpactNull: Self = StObject.set(x, "remediationImpact", null)
     
     @scala.inline
-    def setRemediation(value: NullableOption[String]): Self = this.set("remediation", value.asInstanceOf[js.Any])
+    def setRemediationImpactUndefined: Self = StObject.set(x, "remediationImpact", js.undefined)
     
     @scala.inline
-    def deleteRemediation: Self = this.set("remediation", js.undefined)
+    def setRemediationNull: Self = StObject.set(x, "remediation", null)
     
     @scala.inline
-    def setRemediationNull: Self = this.set("remediation", null)
+    def setRemediationUndefined: Self = StObject.set(x, "remediation", js.undefined)
     
     @scala.inline
-    def setRemediationImpact(value: NullableOption[String]): Self = this.set("remediationImpact", value.asInstanceOf[js.Any])
+    def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemediationImpact: Self = this.set("remediationImpact", js.undefined)
+    def setServiceNull: Self = StObject.set(x, "service", null)
     
     @scala.inline
-    def setRemediationImpactNull: Self = this.set("remediationImpact", null)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setService(value: NullableOption[String]): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setThreats(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "threats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setThreatsNull: Self = StObject.set(x, "threats", null)
     
     @scala.inline
-    def setServiceNull: Self = this.set("service", null)
+    def setThreatsUndefined: Self = StObject.set(x, "threats", js.undefined)
     
     @scala.inline
-    def setThreatsVarargs(value: String*): Self = this.set("threats", js.Array(value :_*))
+    def setThreatsVarargs(value: String*): Self = StObject.set(x, "threats", js.Array(value :_*))
     
     @scala.inline
-    def setThreats(value: NullableOption[js.Array[String]]): Self = this.set("threats", value.asInstanceOf[js.Any])
+    def setTier(value: NullableOption[String]): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreats: Self = this.set("threats", js.undefined)
+    def setTierNull: Self = StObject.set(x, "tier", null)
     
     @scala.inline
-    def setThreatsNull: Self = this.set("threats", null)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
     @scala.inline
-    def setTier(value: NullableOption[String]): Self = this.set("tier", value.asInstanceOf[js.Any])
+    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def setTierNull: Self = this.set("tier", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitle(value: NullableOption[String]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUserImpact(value: NullableOption[String]): Self = StObject.set(x, "userImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUserImpactNull: Self = StObject.set(x, "userImpact", null)
     
     @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setUserImpactUndefined: Self = StObject.set(x, "userImpact", js.undefined)
     
     @scala.inline
-    def setUserImpact(value: NullableOption[String]): Self = this.set("userImpact", value.asInstanceOf[js.Any])
+    def setVendorInformation(value: NullableOption[SecurityVendorInformation]): Self = StObject.set(x, "vendorInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserImpact: Self = this.set("userImpact", js.undefined)
+    def setVendorInformationNull: Self = StObject.set(x, "vendorInformation", null)
     
     @scala.inline
-    def setUserImpactNull: Self = this.set("userImpact", null)
-    
-    @scala.inline
-    def setVendorInformation(value: NullableOption[SecurityVendorInformation]): Self = this.set("vendorInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorInformation: Self = this.set("vendorInformation", js.undefined)
-    
-    @scala.inline
-    def setVendorInformationNull: Self = this.set("vendorInformation", null)
+    def setVendorInformationUndefined: Self = StObject.set(x, "vendorInformation", js.undefined)
   }
 }

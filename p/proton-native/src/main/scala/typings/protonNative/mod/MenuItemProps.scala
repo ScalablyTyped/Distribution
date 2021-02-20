@@ -5,12 +5,13 @@ import typings.protonNative.protonNativeStrings.Check
 import typings.protonNative.protonNativeStrings.Item
 import typings.protonNative.protonNativeStrings.Preferences
 import typings.protonNative.protonNativeStrings.Quit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuItemProps extends js.Object {
+trait MenuItemProps extends StObject {
   
   /**
     * If the type is `Check`, then set whether it is checked or not.
@@ -50,44 +51,32 @@ object MenuItemProps {
   }
   
   @scala.inline
-  implicit class MenuItemPropsOps[Self <: MenuItemProps] (val x: Self) extends AnyVal {
+  implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setOnClick(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildren(value: String): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setOnClick(value: /* checked */ Boolean => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
     def setType(
       value: Check | Quit | About | Preferences | typings.protonNative.protonNativeStrings.Separator | Item
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

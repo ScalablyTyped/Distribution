@@ -3,27 +3,29 @@ package typings.maximMazurokGapiClientToolresults
 import typings.maximMazurokGapiClientToolresults.gapi.client.toolresults.ProjectsResource
 import typings.maximMazurokGapiClientToolresults.maximMazurokGapiClientToolresultsStrings.toolresults
 import typings.maximMazurokGapiClientToolresults.maximMazurokGapiClientToolresultsStrings.v1beta3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Cloud Tool Results API v1beta3 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: toolresults, version: v1beta3): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: toolresults, version: v1beta3, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object toolresults extends js.Object {
+      object toolresults {
         
+        @JSGlobal("gapi.client.toolresults.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
     }

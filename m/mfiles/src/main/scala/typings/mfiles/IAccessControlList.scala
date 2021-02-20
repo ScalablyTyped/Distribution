@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccessControlList extends js.Object {
+trait IAccessControlList extends StObject {
   
   val AutomaticComponents: IAccessControlListComponentContainer = js.native
   
@@ -44,45 +45,33 @@ object IAccessControlList {
   }
   
   @scala.inline
-  implicit class IAccessControlListOps[Self <: IAccessControlList] (val x: Self) extends AnyVal {
+  implicit class IAccessControlListMutableBuilder[Self <: IAccessControlList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticComponents(value: IAccessControlListComponentContainer): Self = StObject.set(x, "AutomaticComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedOutToUserID(value: Double): Self = StObject.set(x, "CheckedOutToUserID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone(value: () => IAccessControlList): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutomaticComponents(value: IAccessControlListComponentContainer): Self = this.set("AutomaticComponents", value.asInstanceOf[js.Any])
+    def setCloneFrom(value: IAccessControlList => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckedOutToUserID(value: Double): Self = this.set("CheckedOutToUserID", value.asInstanceOf[js.Any])
+    def setCustomComponent(value: IAccessControlListComponent): Self = StObject.set(x, "CustomComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IAccessControlList): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setEqualTo(value: IAccessControlList => Boolean): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloneFrom(value: IAccessControlList => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setHasCheckedOutToUserID(value: Boolean): Self = StObject.set(x, "HasCheckedOutToUserID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomComponent(value: IAccessControlListComponent): Self = this.set("CustomComponent", value.asInstanceOf[js.Any])
+    def setHasIdenticalPermissions(value: IAccessControlList => Boolean): Self = StObject.set(x, "HasIdenticalPermissions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEqualTo(value: IAccessControlList => Boolean): Self = this.set("EqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHasCheckedOutToUserID(value: Boolean): Self = this.set("HasCheckedOutToUserID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasIdenticalPermissions(value: IAccessControlList => Boolean): Self = this.set("HasIdenticalPermissions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFullyAuthoritative(value: Boolean): Self = this.set("IsFullyAuthoritative", value.asInstanceOf[js.Any])
+    def setIsFullyAuthoritative(value: Boolean): Self = StObject.set(x, "IsFullyAuthoritative", value.asInstanceOf[js.Any])
   }
 }

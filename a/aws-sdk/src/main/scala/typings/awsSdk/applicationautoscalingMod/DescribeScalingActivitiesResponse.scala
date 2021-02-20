@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeScalingActivitiesResponse extends js.Object {
+trait DescribeScalingActivitiesResponse extends StObject {
   
   /**
     * The token required to get the next set of results. This value is null if there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeScalingActivitiesResponse {
   }
   
   @scala.inline
-  implicit class DescribeScalingActivitiesResponseOps[Self <: DescribeScalingActivitiesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeScalingActivitiesResponseMutableBuilder[Self <: DescribeScalingActivitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScalingActivities(value: ScalingActivities): Self = StObject.set(x, "ScalingActivities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setScalingActivitiesUndefined: Self = StObject.set(x, "ScalingActivities", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setScalingActivitiesVarargs(value: ScalingActivity*): Self = this.set("ScalingActivities", js.Array(value :_*))
-    
-    @scala.inline
-    def setScalingActivities(value: ScalingActivities): Self = this.set("ScalingActivities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingActivities: Self = this.set("ScalingActivities", js.undefined)
+    def setScalingActivitiesVarargs(value: ScalingActivity*): Self = StObject.set(x, "ScalingActivities", js.Array(value :_*))
   }
 }

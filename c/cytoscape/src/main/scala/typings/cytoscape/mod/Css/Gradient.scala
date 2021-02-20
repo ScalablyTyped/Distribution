@@ -1,5 +1,6 @@
 package typings.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://js.cytoscape.org/#style/gradient
   */
 @js.native
-trait Gradient extends js.Object {
+trait Gradient extends StObject {
   
   /**
     * The colors of the gradient stops.
@@ -32,36 +33,24 @@ object Gradient {
   }
   
   @scala.inline
-  implicit class GradientOps[Self <: Gradient] (val x: Self) extends AnyVal {
+  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setLine-gradient-stop-colors`(value: js.Array[PropertyValueEdge[Colour]]): Self = StObject.set(x, "line-gradient-stop-colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setLine-gradient-stop-colorsUndefined`: Self = StObject.set(x, "line-gradient-stop-colors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setLine-gradient-stop-colorsVarargs`(value: PropertyValueEdge[Colour]*): Self = StObject.set(x, "line-gradient-stop-colors", js.Array(value :_*))
     
     @scala.inline
-    def `setLine-gradient-stop-colorsVarargs`(value: PropertyValueEdge[Colour]*): Self = this.set("line-gradient-stop-colors", js.Array(value :_*))
+    def `setLine-gradient-stop-positions`(value: js.Array[PropertyValueEdge[Double]]): Self = StObject.set(x, "line-gradient-stop-positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-gradient-stop-colors`(value: js.Array[PropertyValueEdge[Colour]]): Self = this.set("line-gradient-stop-colors", value.asInstanceOf[js.Any])
+    def `setLine-gradient-stop-positionsUndefined`: Self = StObject.set(x, "line-gradient-stop-positions", js.undefined)
     
     @scala.inline
-    def `deleteLine-gradient-stop-colors`: Self = this.set("line-gradient-stop-colors", js.undefined)
-    
-    @scala.inline
-    def `setLine-gradient-stop-positionsVarargs`(value: PropertyValueEdge[Double]*): Self = this.set("line-gradient-stop-positions", js.Array(value :_*))
-    
-    @scala.inline
-    def `setLine-gradient-stop-positions`(value: js.Array[PropertyValueEdge[Double]]): Self = this.set("line-gradient-stop-positions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteLine-gradient-stop-positions`: Self = this.set("line-gradient-stop-positions", js.undefined)
+    def `setLine-gradient-stop-positionsVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-gradient-stop-positions", js.Array(value :_*))
   }
 }

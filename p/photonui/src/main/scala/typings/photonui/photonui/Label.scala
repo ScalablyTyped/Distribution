@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,30 +53,18 @@ object Label {
   }
   
   @scala.inline
-  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForInput(value: Field | CheckBox): Self = StObject.set(x, "forInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForInputName(value: String): Self = StObject.set(x, "forInputName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForInput(value: Field | CheckBox): Self = this.set("forInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForInputName(value: String): Self = this.set("forInputName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

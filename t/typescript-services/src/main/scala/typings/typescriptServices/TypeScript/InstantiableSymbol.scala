@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstantiableSymbol extends js.Object {
+trait InstantiableSymbol extends StObject {
   
   def getAllowedToReferenceTypeParameters(): js.Array[PullTypeParameterSymbol] = js.native
   
@@ -26,27 +27,15 @@ object InstantiableSymbol {
   }
   
   @scala.inline
-  implicit class InstantiableSymbolOps[Self <: InstantiableSymbol] (val x: Self) extends AnyVal {
+  implicit class InstantiableSymbolMutableBuilder[Self <: InstantiableSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllowedToReferenceTypeParameters(value: () => js.Array[PullTypeParameterSymbol]): Self = StObject.set(x, "getAllowedToReferenceTypeParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIsSpecialized(value: () => Boolean): Self = StObject.set(x, "getIsSpecialized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAllowedToReferenceTypeParameters(value: () => js.Array[PullTypeParameterSymbol]): Self = this.set("getAllowedToReferenceTypeParameters", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsSpecialized(value: () => Boolean): Self = this.set("getIsSpecialized", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTypeParameterArgumentMap(value: () => TypeArgumentMap): Self = this.set("getTypeParameterArgumentMap", js.Any.fromFunction0(value))
+    def setGetTypeParameterArgumentMap(value: () => TypeArgumentMap): Self = StObject.set(x, "getTypeParameterArgumentMap", js.Any.fromFunction0(value))
   }
 }

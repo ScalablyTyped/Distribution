@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Adds a named range to the spreadsheet.
   */
 @js.native
-trait SchemaAddNamedRangeRequest extends js.Object {
+trait SchemaAddNamedRangeRequest extends StObject {
   
   /**
     * The named range to add. The namedRangeId field is optional; if one is not
@@ -26,24 +27,12 @@ object SchemaAddNamedRangeRequest {
   }
   
   @scala.inline
-  implicit class SchemaAddNamedRangeRequestOps[Self <: SchemaAddNamedRangeRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAddNamedRangeRequestMutableBuilder[Self <: SchemaAddNamedRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedRange(value: SchemaNamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamedRange(value: SchemaNamedRange): Self = this.set("namedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedRange: Self = this.set("namedRange", js.undefined)
+    def setNamedRangeUndefined: Self = StObject.set(x, "namedRange", js.undefined)
   }
 }

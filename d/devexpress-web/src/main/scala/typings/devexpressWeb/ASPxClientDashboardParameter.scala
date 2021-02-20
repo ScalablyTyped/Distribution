@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A client-side dashboard parameter.
   */
 @js.native
-trait ASPxClientDashboardParameter extends js.Object {
+trait ASPxClientDashboardParameter extends StObject {
   
   /**
     * Returns a default parameter value.
@@ -77,45 +78,33 @@ object ASPxClientDashboardParameter {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardParameterOps[Self <: ASPxClientDashboardParameter] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardParameterMutableBuilder[Self <: ASPxClientDashboardParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDefaultValue(value: () => js.Any): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDescription(value: () => String): Self = StObject.set(x, "GetDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultValue(value: () => js.Any): Self = this.set("GetDefaultValue", js.Any.fromFunction0(value))
+    def setGetType(value: () => String): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("GetDescription", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("GetName", js.Any.fromFunction0(value))
+    def setGetValues(value: () => js.Array[ASPxClientDashboardParameterValue]): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetType(value: () => String): Self = this.set("GetType", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValue(value: () => js.Any): Self = this.set("GetValue", js.Any.fromFunction0(value))
+    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValues(value: () => js.Array[ASPxClientDashboardParameterValue]): Self = this.set("GetValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = this.set("SetValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

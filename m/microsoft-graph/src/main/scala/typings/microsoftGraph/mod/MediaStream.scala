@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaStream extends js.Object {
+trait MediaStream extends StObject {
   
   // The direction. The possible values are inactive, sendOnly, receiveOnly, sendReceive.
   var direction: js.UndefOr[MediaDirection] = js.native
@@ -31,51 +32,39 @@ object MediaStream {
   }
   
   @scala.inline
-  implicit class MediaStreamOps[Self <: MediaStream] (val x: Self) extends AnyVal {
+  implicit class MediaStreamMutableBuilder[Self <: MediaStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: MediaDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: NullableOption[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: MediaDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabel(value: NullableOption[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMediaType(value: Modality): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     @scala.inline
-    def setLabelNull: Self = this.set("label", null)
+    def setServerMuted(value: Boolean): Self = StObject.set(x, "serverMuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: Modality): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setServerMutedUndefined: Self = StObject.set(x, "serverMuted", js.undefined)
     
     @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerMuted(value: Boolean): Self = this.set("serverMuted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerMuted: Self = this.set("serverMuted", js.undefined)
-    
-    @scala.inline
-    def setSourceId(value: String): Self = this.set("sourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceId: Self = this.set("sourceId", js.undefined)
+    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
   }
 }

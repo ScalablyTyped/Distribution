@@ -2,12 +2,13 @@ package typings.chartist.mod
 
 import typings.std.HTMLElement
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChartistSvg extends js.Object {
+trait IChartistSvg extends StObject {
   
   /**
     * The SVG DOM element wrapped by IChartistSvg
@@ -68,7 +69,7 @@ trait IChartistSvg extends js.Object {
     */
   def empty(): IChartistSvg = js.native
   
-   // this returns an svg wrapper list in the docs, need to see if that's just an array or a special list
+  // this returns an svg wrapper list in the docs, need to see if that's just an array or a special list
   /**
     * This method creates a foreignObject (see https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) that allows to embed HTML content into a SVG graphic. With the help of foreignObjects you can enable the usage of regular HTML elements inside of SVG where they are subject for SVG positioning and transformation but the Browser will use the HTML rendering capabilities for the containing DOM.
     */

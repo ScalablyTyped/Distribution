@@ -2,23 +2,18 @@ package typings.activexLibreoffice.com_.sun.star.embed
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XStream
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service provides a simple functionality to allow read/write the storages in OLE storage format. */
 @js.native
-trait OLESimpleStorage
-  extends XNameContainer
-     with XComponent
-     with XTransactedObject
-     with XClassifiedObject {
+trait OLESimpleStorage extends XOLESimpleStorage {
   
   /**
     * is used to initialize the object on it's creation.
@@ -69,24 +64,12 @@ object OLESimpleStorage {
   }
   
   @scala.inline
-  implicit class OLESimpleStorageOps[Self <: OLESimpleStorage] (val x: Self) extends AnyVal {
+  implicit class OLESimpleStorageMutableBuilder[Self <: OLESimpleStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFromInputStream(value: (XInputStream, Boolean) => Unit): Self = StObject.set(x, "createFromInputStream", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateFromInputStream(value: (XInputStream, Boolean) => Unit): Self = this.set("createFromInputStream", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreateFromStream(value: (XStream, Boolean) => Unit): Self = this.set("createFromStream", js.Any.fromFunction2(value))
+    def setCreateFromStream(value: (XStream, Boolean) => Unit): Self = StObject.set(x, "createFromStream", js.Any.fromFunction2(value))
   }
 }

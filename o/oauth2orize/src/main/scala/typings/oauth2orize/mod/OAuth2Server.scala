@@ -1,12 +1,13 @@
 package typings.oauth2orize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2orize", "OAuth2Server")
 @js.native
-class OAuth2Server () extends js.Object {
+class OAuth2Server () extends StObject {
   
   def authorization(options: AuthorizeOptions, validate: ValidateFunction): MiddlewareFunction = js.native
   def authorization(options: AuthorizeOptions, validate: ValidateFunction, immediate: ImmediateFunction): MiddlewareFunction = js.native

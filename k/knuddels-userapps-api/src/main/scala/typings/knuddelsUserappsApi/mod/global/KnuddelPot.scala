@@ -1,5 +1,6 @@
 package typings.knuddelsUserappsApi.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("KnuddelPot")
 @js.native
-class KnuddelPot () extends js.Object {
+class KnuddelPot () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_addWinner

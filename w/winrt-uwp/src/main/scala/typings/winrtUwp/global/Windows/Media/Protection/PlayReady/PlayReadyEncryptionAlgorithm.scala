@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the type of encryption algorithm specified in a PlayReady content header. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm")
 @js.native
-object PlayReadyEncryptionAlgorithm extends js.Object {
+object PlayReadyEncryptionAlgorithm extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

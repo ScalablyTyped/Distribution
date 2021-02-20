@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartParentLabelStrategy extends js.Object
+sealed trait ChartParentLabelStrategy extends StObject
 /**
   *
   * Represents the parent label strategy of the chart series layout. This only applies to treemap charts
@@ -14,7 +15,7 @@ sealed trait ChartParentLabelStrategy extends js.Object
   */
 @JSGlobal("Excel.ChartParentLabelStrategy")
 @js.native
-object ChartParentLabelStrategy extends js.Object {
+object ChartParentLabelStrategy extends StObject {
   
   @js.native
   sealed trait banner extends ChartParentLabelStrategy

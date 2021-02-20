@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,30 +76,18 @@ object XNamedRanges {
   }
   
   @scala.inline
-  implicit class XNamedRangesOps[Self <: XNamedRanges] (val x: Self) extends AnyVal {
+  implicit class XNamedRangesMutableBuilder[Self <: XNamedRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNewByName(value: (String, String, CellAddress, Double) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddNewFromTitles(value: (CellRangeAddress, Border) => Unit): Self = StObject.set(x, "addNewFromTitles", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputList(value: CellAddress => Unit): Self = StObject.set(x, "outputList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddNewByName(value: (String, String, CellAddress, Double) => Unit): Self = this.set("addNewByName", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setAddNewFromTitles(value: (CellRangeAddress, Border) => Unit): Self = this.set("addNewFromTitles", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOutputList(value: CellAddress => Unit): Self = this.set("outputList", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = this.set("removeByName", js.Any.fromFunction1(value))
+    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
   }
 }

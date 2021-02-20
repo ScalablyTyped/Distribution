@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CachePolicyConfig extends js.Object {
+trait CachePolicyConfig extends StObject {
   
   /**
     * A comment to describe the cache policy.
@@ -46,48 +47,36 @@ object CachePolicyConfig {
   }
   
   @scala.inline
-  implicit class CachePolicyConfigOps[Self <: CachePolicyConfig] (val x: Self) extends AnyVal {
+  implicit class CachePolicyConfigMutableBuilder[Self <: CachePolicyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTTL(value: long): Self = StObject.set(x, "DefaultTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTTL(value: long): Self = this.set("MinTTL", value.asInstanceOf[js.Any])
+    def setDefaultTTLUndefined: Self = StObject.set(x, "DefaultTTL", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setMaxTTL(value: long): Self = StObject.set(x, "MaxTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setMaxTTLUndefined: Self = StObject.set(x, "MaxTTL", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setMinTTL(value: long): Self = StObject.set(x, "MinTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTTL(value: long): Self = this.set("DefaultTTL", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultTTL: Self = this.set("DefaultTTL", js.undefined)
+    def setParametersInCacheKeyAndForwardedToOrigin(value: ParametersInCacheKeyAndForwardedToOrigin): Self = StObject.set(x, "ParametersInCacheKeyAndForwardedToOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTTL(value: long): Self = this.set("MaxTTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTTL: Self = this.set("MaxTTL", js.undefined)
-    
-    @scala.inline
-    def setParametersInCacheKeyAndForwardedToOrigin(value: ParametersInCacheKeyAndForwardedToOrigin): Self = this.set("ParametersInCacheKeyAndForwardedToOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParametersInCacheKeyAndForwardedToOrigin: Self = this.set("ParametersInCacheKeyAndForwardedToOrigin", js.undefined)
+    def setParametersInCacheKeyAndForwardedToOriginUndefined: Self = StObject.set(x, "ParametersInCacheKeyAndForwardedToOrigin", js.undefined)
   }
 }

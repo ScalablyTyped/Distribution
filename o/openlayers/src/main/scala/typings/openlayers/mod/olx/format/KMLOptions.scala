@@ -1,12 +1,13 @@
 package typings.openlayers.mod.olx.format
 
 import typings.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KMLOptions extends js.Object {
+trait KMLOptions extends StObject {
   
   var defaultStyle: js.UndefOr[js.Array[Style]] = js.native
   
@@ -25,45 +26,33 @@ object KMLOptions {
   }
   
   @scala.inline
-  implicit class KMLOptionsOps[Self <: KMLOptions] (val x: Self) extends AnyVal {
+  implicit class KMLOptionsMutableBuilder[Self <: KMLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultStyle(value: js.Array[Style]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultStyleVarargs(value: Style*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultStyleVarargs(value: Style*): Self = this.set("defaultStyle", js.Array(value :_*))
+    def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultStyle(value: js.Array[Style]): Self = this.set("defaultStyle", value.asInstanceOf[js.Any])
+    def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
     
     @scala.inline
-    def deleteDefaultStyle: Self = this.set("defaultStyle", js.undefined)
+    def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractStyles(value: Boolean): Self = this.set("extractStyles", value.asInstanceOf[js.Any])
+    def setShowPointNamesUndefined: Self = StObject.set(x, "showPointNames", js.undefined)
     
     @scala.inline
-    def deleteExtractStyles: Self = this.set("extractStyles", js.undefined)
+    def setWriteStyles(value: Boolean): Self = StObject.set(x, "writeStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPointNames(value: Boolean): Self = this.set("showPointNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPointNames: Self = this.set("showPointNames", js.undefined)
-    
-    @scala.inline
-    def setWriteStyles(value: Boolean): Self = this.set("writeStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteStyles: Self = this.set("writeStyles", js.undefined)
+    def setWriteStylesUndefined: Self = StObject.set(x, "writeStyles", js.undefined)
   }
 }

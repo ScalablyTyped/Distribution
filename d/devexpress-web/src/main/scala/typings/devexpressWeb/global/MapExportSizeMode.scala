@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class MapExportSizeMode ()
   extends typings.devexpressWeb.MapExportSizeMode
-/* static members */
-@JSGlobal("MapExportSizeMode")
-@js.native
-object MapExportSizeMode extends js.Object {
+object MapExportSizeMode {
   
   /**
     * A map dashboard item is exported in a size identical to that shown on the dashboard
     */
+  /* static member */
+  @JSGlobal("MapExportSizeMode.None")
+  @js.native
   val None: String = js.native
   
   /**
     * A map dashboard item is resized proportionally to best fit the exported page.
     */
+  /* static member */
+  @JSGlobal("MapExportSizeMode.Zoom")
+  @js.native
   val Zoom: String = js.native
 }

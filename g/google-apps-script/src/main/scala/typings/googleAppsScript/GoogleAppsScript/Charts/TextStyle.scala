@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *           .build();
   */
 @js.native
-trait TextStyle extends js.Object {
+trait TextStyle extends StObject {
   
   def getColor(): String = js.native
   
@@ -53,27 +54,15 @@ object TextStyle {
   }
   
   @scala.inline
-  implicit class TextStyleOps[Self <: TextStyle] (val x: Self) extends AnyVal {
+  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetColor(value: () => String): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFontName(value: () => String): Self = StObject.set(x, "getFontName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetColor(value: () => String): Self = this.set("getColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFontName(value: () => String): Self = this.set("getFontName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFontSize(value: () => Double): Self = this.set("getFontSize", js.Any.fromFunction0(value))
+    def setGetFontSize(value: () => Double): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
   }
 }

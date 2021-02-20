@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Output only.  Compensation based histogram result.
   */
 @js.native
-trait SchemaCompensationHistogramResult extends js.Object {
+trait SchemaCompensationHistogramResult extends StObject {
   
   /**
     * Histogram result.
@@ -29,30 +30,18 @@ object SchemaCompensationHistogramResult {
   }
   
   @scala.inline
-  implicit class SchemaCompensationHistogramResultOps[Self <: SchemaCompensationHistogramResult] (val x: Self) extends AnyVal {
+  implicit class SchemaCompensationHistogramResultMutableBuilder[Self <: SchemaCompensationHistogramResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult(value: SchemaNumericBucketingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: SchemaNumericBucketingResult): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

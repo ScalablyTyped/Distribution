@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ModelError")
 @js.native
-class ModelError () extends js.Object {
+class ModelError () extends StObject {
   
   /**
     * The high-level category for the error. See `ErrorCategory` for possible values.

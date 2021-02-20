@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateWorkspacesRequest extends js.Object {
+trait TerminateWorkspacesRequest extends StObject {
   
   /**
     * The WorkSpaces to terminate. You can specify up to 25 WorkSpaces.
@@ -21,24 +22,12 @@ object TerminateWorkspacesRequest {
   }
   
   @scala.inline
-  implicit class TerminateWorkspacesRequestOps[Self <: TerminateWorkspacesRequest] (val x: Self) extends AnyVal {
+  implicit class TerminateWorkspacesRequestMutableBuilder[Self <: TerminateWorkspacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTerminateWorkspaceRequests(value: TerminateWorkspaceRequests): Self = StObject.set(x, "TerminateWorkspaceRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTerminateWorkspaceRequestsVarargs(value: TerminateRequest*): Self = this.set("TerminateWorkspaceRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerminateWorkspaceRequests(value: TerminateWorkspaceRequests): Self = this.set("TerminateWorkspaceRequests", value.asInstanceOf[js.Any])
+    def setTerminateWorkspaceRequestsVarargs(value: TerminateRequest*): Self = StObject.set(x, "TerminateWorkspaceRequests", js.Array(value :_*))
   }
 }

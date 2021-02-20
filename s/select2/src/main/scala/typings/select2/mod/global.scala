@@ -13,16 +13,15 @@ import typings.select2.select2Strings.select2Colonselect
 import typings.select2.select2Strings.select2Colonselecting
 import typings.select2.select2Strings.select2Colonunselect
 import typings.select2.select2Strings.select2Colonunselecting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   @js.native
-  trait JQuery[TElement] extends js.Object {
+  trait JQuery[TElement] extends StObject {
     
     @JSName("data")
     def data_select2(key: select2): Select2 = js.native

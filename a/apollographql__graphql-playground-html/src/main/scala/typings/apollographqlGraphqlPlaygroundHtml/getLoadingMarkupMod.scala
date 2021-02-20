@@ -1,13 +1,14 @@
 package typings.apollographqlGraphqlPlaygroundHtml
 
 import typings.apollographqlGraphqlPlaygroundHtml.anon.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollographql/graphql-playground-html/dist/get-loading-markup", JSImport.Namespace)
-@js.native
-object getLoadingMarkupMod extends js.Object {
+object getLoadingMarkupMod {
   
+  @JSImport("@apollographql/graphql-playground-html/dist/get-loading-markup", JSImport.Default)
+  @js.native
   def default(): Container = js.native
 }

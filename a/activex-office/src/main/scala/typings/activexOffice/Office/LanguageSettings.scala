@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageSettings extends js.Object {
+trait LanguageSettings extends StObject {
   
   val Application: js.Any = js.native
   
@@ -37,36 +38,24 @@ object LanguageSettings {
   }
   
   @scala.inline
-  implicit class LanguageSettingsOps[Self <: LanguageSettings] (val x: Self) extends AnyVal {
+  implicit class LanguageSettingsMutableBuilder[Self <: LanguageSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageID(value: MsoAppLanguageID => Double): Self = StObject.set(x, "LanguageID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setLanguagePreferredForEditing(value: MsoLanguageID => Boolean): Self = StObject.set(x, "LanguagePreferredForEditing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setOfficeDotLanguageSettings_typekey(value: LanguageSettings): Self = StObject.set(x, "Office.LanguageSettings_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageID(value: MsoAppLanguageID => Double): Self = this.set("LanguageID", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLanguagePreferredForEditing(value: MsoLanguageID => Boolean): Self = this.set("LanguagePreferredForEditing", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOfficeDotLanguageSettings_typekey(value: LanguageSettings): Self = this.set("Office.LanguageSettings_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

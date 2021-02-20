@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,42 +73,30 @@ object RecastJSCrowd {
   }
   
   @scala.inline
-  implicit class RecastJSCrowdOps[Self <: RecastJSCrowd] (val x: Self) extends AnyVal {
+  implicit class RecastJSCrowdMutableBuilder[Self <: RecastJSCrowd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgents(value: js.Array[Double]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentsVarargs(value: Double*): Self = StObject.set(x, "agents", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBjsRECASTPlugin(value: RecastJSPlugin): Self = StObject.set(x, "bjsRECASTPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onBeforeAnimationsObserver(value: js.Any): Self = this.set("_onBeforeAnimationsObserver", value.asInstanceOf[js.Any])
+    def setRecastCrowd(value: js.Any): Self = StObject.set(x, "recastCrowd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_scene(value: js.Any): Self = this.set("_scene", value.asInstanceOf[js.Any])
+    def setTransforms(value: js.Array[TransformNode]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentsVarargs(value: Double*): Self = this.set("agents", js.Array(value :_*))
+    def setTransformsVarargs(value: TransformNode*): Self = StObject.set(x, "transforms", js.Array(value :_*))
     
     @scala.inline
-    def setAgents(value: js.Array[Double]): Self = this.set("agents", value.asInstanceOf[js.Any])
+    def set_onBeforeAnimationsObserver(value: js.Any): Self = StObject.set(x, "_onBeforeAnimationsObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBjsRECASTPlugin(value: RecastJSPlugin): Self = this.set("bjsRECASTPlugin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecastCrowd(value: js.Any): Self = this.set("recastCrowd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformsVarargs(value: TransformNode*): Self = this.set("transforms", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransforms(value: js.Array[TransformNode]): Self = this.set("transforms", value.asInstanceOf[js.Any])
+    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
   }
 }

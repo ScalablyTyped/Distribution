@@ -1,5 +1,6 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,7 +87,7 @@ object Group {
   def apply[T /* <: SlickData */](
     collapsed: Boolean,
     count: Double,
-    equals: Group[T] => Boolean,
+    equals_ : Group[T] => Boolean,
     groupingKey: js.Any,
     groups: js.Array[Group[T]],
     level: Double,
@@ -95,59 +96,48 @@ object Group {
     totals: GroupTotals[T],
     value: js.Any
   ): Group[T] = {
-    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), groupingKey = groupingKey.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], totals = totals.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], groupingKey = groupingKey.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], totals = totals.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Group[T]]
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group[_], T /* <: SlickData */] (val x: Self with Group[T]) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group[_], T /* <: SlickData */] (val x: Self with Group[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: Group[T] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setGroupingKey(value: js.Any): Self = StObject.set(x, "groupingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Array[Group[T]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: Group[T] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setGroupsVarargs(value: Group[T]*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupingKey(value: js.Any): Self = this.set("groupingKey", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: Group[T]*): Self = this.set("groups", js.Array(value :_*))
+    def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[Group[T]]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: T*): Self = this.set("rows", js.Array(value :_*))
+    def setTotals(value: GroupTotals[T]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[T]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotals(value: GroupTotals[T]): Self = this.set("totals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

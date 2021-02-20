@@ -1,6 +1,8 @@
 package typings.simperium.mod
 
+import typings.simperium.mod.^
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +20,10 @@ trait Client[Buckets] extends CustomEventEmitter[ClientEvent] {
   
   var heartbeat: Heartbeat = js.native
 }
-@JSImport("simperium", "Client")
-@js.native
-object Client extends js.Object {
+object Client {
   
-  def apply[Buckets](appID: String, token: String): Client[Buckets] = js.native
-  def apply[Buckets](appID: String, token: String, clientConfig: Partial[ClientConfig[Buckets]]): Client[Buckets] = js.native
+  @scala.inline
+  def apply[Buckets](appID: String, token: String): Client[Buckets] = (^.asInstanceOf[js.Dynamic].applyDynamic("Client")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Client[Buckets]]
+  @scala.inline
+  def apply[Buckets](appID: String, token: String, clientConfig: Partial[ClientConfig[Buckets]]): Client[Buckets] = (^.asInstanceOf[js.Dynamic].applyDynamic("Client")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[Client[Buckets]]
 }

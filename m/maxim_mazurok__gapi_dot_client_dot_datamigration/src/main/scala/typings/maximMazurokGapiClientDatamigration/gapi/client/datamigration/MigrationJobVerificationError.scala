@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationJobVerificationError extends js.Object {
+trait MigrationJobVerificationError extends StObject {
   
   /** Output only. An instance of ErrorCode specifying the error that occurred. */
   var errorCode: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object MigrationJobVerificationError {
   }
   
   @scala.inline
-  implicit class MigrationJobVerificationErrorOps[Self <: MigrationJobVerificationError] (val x: Self) extends AnyVal {
+  implicit class MigrationJobVerificationErrorMutableBuilder[Self <: MigrationJobVerificationError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorDetailMessage(value: String): Self = StObject.set(x, "errorDetailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorDetailMessageUndefined: Self = StObject.set(x, "errorDetailMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetailMessage(value: String): Self = this.set("errorDetailMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorDetailMessage: Self = this.set("errorDetailMessage", js.undefined)
-    
-    @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

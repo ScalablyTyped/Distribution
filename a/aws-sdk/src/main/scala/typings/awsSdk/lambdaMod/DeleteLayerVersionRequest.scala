@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteLayerVersionRequest extends js.Object {
+trait DeleteLayerVersionRequest extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of the layer.
@@ -26,24 +27,12 @@ object DeleteLayerVersionRequest {
   }
   
   @scala.inline
-  implicit class DeleteLayerVersionRequestOps[Self <: DeleteLayerVersionRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteLayerVersionRequestMutableBuilder[Self <: DeleteLayerVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayerName(value: LayerName): Self = this.set("LayerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionNumber(value: LayerVersionNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    def setVersionNumber(value: LayerVersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

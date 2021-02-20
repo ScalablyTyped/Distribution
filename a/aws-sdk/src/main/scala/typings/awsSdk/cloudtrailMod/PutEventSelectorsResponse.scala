@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutEventSelectorsResponse extends js.Object {
+trait PutEventSelectorsResponse extends StObject {
   
   /**
     * Specifies the event selectors configured for your trail.
@@ -26,33 +27,21 @@ object PutEventSelectorsResponse {
   }
   
   @scala.inline
-  implicit class PutEventSelectorsResponseOps[Self <: PutEventSelectorsResponse] (val x: Self) extends AnyVal {
+  implicit class PutEventSelectorsResponseMutableBuilder[Self <: PutEventSelectorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventSelectors(value: EventSelectors): Self = StObject.set(x, "EventSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventSelectorsUndefined: Self = StObject.set(x, "EventSelectors", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventSelectorsVarargs(value: EventSelector*): Self = StObject.set(x, "EventSelectors", js.Array(value :_*))
     
     @scala.inline
-    def setEventSelectorsVarargs(value: EventSelector*): Self = this.set("EventSelectors", js.Array(value :_*))
+    def setTrailARN(value: String): Self = StObject.set(x, "TrailARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSelectors(value: EventSelectors): Self = this.set("EventSelectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventSelectors: Self = this.set("EventSelectors", js.undefined)
-    
-    @scala.inline
-    def setTrailARN(value: String): Self = this.set("TrailARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailARN: Self = this.set("TrailARN", js.undefined)
+    def setTrailARNUndefined: Self = StObject.set(x, "TrailARN", js.undefined)
   }
 }

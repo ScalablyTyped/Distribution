@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait PivotManualFilter extends js.Object {
+trait PivotManualFilter extends StObject {
   
   /**
     *
@@ -31,27 +32,15 @@ object PivotManualFilter {
   }
   
   @scala.inline
-  implicit class PivotManualFilterOps[Self <: PivotManualFilter] (val x: Self) extends AnyVal {
+  implicit class PivotManualFilterMutableBuilder[Self <: PivotManualFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelectedItems(value: js.Array[String | PivotItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSelectedItemsVarargs(value: (String | PivotItem)*): Self = this.set("selectedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedItems(value: js.Array[String | PivotItem]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    def setSelectedItemsVarargs(value: (String | PivotItem)*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

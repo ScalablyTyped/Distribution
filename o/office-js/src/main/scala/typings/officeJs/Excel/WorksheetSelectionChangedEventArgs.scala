@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import typings.officeJs.officeJsStrings.WorksheetSelectionChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait WorksheetSelectionChangedEventArgs extends js.Object {
+trait WorksheetSelectionChangedEventArgs extends StObject {
   
   /**
     *
@@ -48,27 +49,15 @@ object WorksheetSelectionChangedEventArgs {
   }
   
   @scala.inline
-  implicit class WorksheetSelectionChangedEventArgsOps[Self <: WorksheetSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WorksheetSelectionChangedEventArgsMutableBuilder[Self <: WorksheetSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: WorksheetSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WorksheetSelectionChanged): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorksheetId(value: String): Self = this.set("worksheetId", value.asInstanceOf[js.Any])
+    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

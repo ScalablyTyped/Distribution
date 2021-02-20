@@ -4,6 +4,7 @@ import typings.elasticsearch.elasticsearchStrings.dfs_query_and_fetch
 import typings.elasticsearch.elasticsearchStrings.dfs_query_then_fetch
 import typings.elasticsearch.elasticsearchStrings.query_and_fetch
 import typings.elasticsearch.elasticsearchStrings.query_then_fetch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object MSearchTemplateParams {
   }
   
   @scala.inline
-  implicit class MSearchTemplateParamsOps[Self <: MSearchTemplateParams] (val x: Self) extends AnyVal {
+  implicit class MSearchTemplateParamsMutableBuilder[Self <: MSearchTemplateParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setSearch_type(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = StObject.set(x, "search_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSearch_typeUndefined: Self = StObject.set(x, "search_type", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_type(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = this.set("search_type", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSearch_type: Self = this.set("search_type", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: NameList): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

@@ -1,14 +1,15 @@
 package typings.makerJs.global.MakerJs
 
 import typings.makerJs.MakerJs.IModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.importer")
-@js.native
-object importer extends js.Object {
+object importer {
   
+  @JSGlobal("MakerJs.importer.fromSVGPathData")
+  @js.native
   def fromSVGPathData(pathData: String): IModel = js.native
   
   /**
@@ -22,5 +23,7 @@ object importer extends js.Object {
     * @param s The string of numbers.
     * @returns Array of numbers.
     */
+  @JSGlobal("MakerJs.importer.parseNumericList")
+  @js.native
   def parseNumericList(s: String): js.Array[Double] = js.native
 }

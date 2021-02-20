@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Returns information about the current organization settings.
   */
 @js.native
-trait OrganizationSettings extends js.Object {
+trait OrganizationSettings extends StObject {
   
   /**
     * Returns a lookup object containing the ID, name, and entity type of the base currency for the current organization.
@@ -69,42 +70,30 @@ object OrganizationSettings {
   }
   
   @scala.inline
-  implicit class OrganizationSettingsOps[Self <: OrganizationSettings] (val x: Self) extends AnyVal {
+  implicit class OrganizationSettingsMutableBuilder[Self <: OrganizationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseCurrency(value: LookupValue): Self = StObject.set(x, "baseCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseCurrencyId(value: String): Self = StObject.set(x, "baseCurrencyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultCountryCode(value: String): Self = StObject.set(x, "defaultCountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCurrency(value: LookupValue): Self = this.set("baseCurrency", value.asInstanceOf[js.Any])
+    def setIsAutoSaveEnabled(value: Boolean): Self = StObject.set(x, "isAutoSaveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCurrencyId(value: String): Self = this.set("baseCurrencyId", value.asInstanceOf[js.Any])
+    def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCountryCode(value: String): Self = this.set("defaultCountryCode", value.asInstanceOf[js.Any])
+    def setOrganizationId(value: String): Self = StObject.set(x, "organizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoSaveEnabled(value: Boolean): Self = this.set("isAutoSaveEnabled", value.asInstanceOf[js.Any])
+    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageId(value: Double): Self = this.set("languageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganizationId(value: String): Self = this.set("organizationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueName(value: String): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseSkypeProtocol(value: Boolean): Self = this.set("useSkypeProtocol", value.asInstanceOf[js.Any])
+    def setUseSkypeProtocol(value: Boolean): Self = StObject.set(x, "useSkypeProtocol", value.asInstanceOf[js.Any])
   }
 }

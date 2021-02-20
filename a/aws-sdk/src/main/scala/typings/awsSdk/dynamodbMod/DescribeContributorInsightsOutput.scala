@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeContributorInsightsOutput extends js.Object {
+trait DescribeContributorInsightsOutput extends StObject {
   
   /**
     * List of names of the associated Alpine rules.
@@ -46,57 +47,45 @@ object DescribeContributorInsightsOutput {
   }
   
   @scala.inline
-  implicit class DescribeContributorInsightsOutputOps[Self <: DescribeContributorInsightsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeContributorInsightsOutputMutableBuilder[Self <: DescribeContributorInsightsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
     
     @scala.inline
-    def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = this.set("ContributorInsightsRuleList", js.Array(value :_*))
+    def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = this.set("ContributorInsightsRuleList", value.asInstanceOf[js.Any])
+    def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
     
     @scala.inline
-    def deleteContributorInsightsRuleList: Self = this.set("ContributorInsightsRuleList", js.undefined)
+    def setFailureException(value: FailureException): Self = StObject.set(x, "FailureException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = this.set("ContributorInsightsStatus", value.asInstanceOf[js.Any])
+    def setFailureExceptionUndefined: Self = StObject.set(x, "FailureException", js.undefined)
     
     @scala.inline
-    def deleteContributorInsightsStatus: Self = this.set("ContributorInsightsStatus", js.undefined)
+    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureException(value: FailureException): Self = this.set("FailureException", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def deleteFailureException: Self = this.set("FailureException", js.undefined)
+    def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateDateTime(value: LastUpdateDateTime): Self = this.set("LastUpdateDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateDateTime: Self = this.set("LastUpdateDateTime", js.undefined)
-    
-    @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

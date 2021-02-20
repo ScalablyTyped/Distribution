@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object Trigger {
   }
   
   @scala.inline
-  implicit class TriggerOps[Self <: Trigger] (val x: Self) extends AnyVal {
+  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggerOperation(value: TriggerOperation): Self = StObject.set(x, "triggerOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTriggerOperation(value: TriggerOperation): Self = this.set("triggerOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerType(value: TriggerType): Self = this.set("triggerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerType: Self = this.set("triggerType", js.undefined)
+    def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

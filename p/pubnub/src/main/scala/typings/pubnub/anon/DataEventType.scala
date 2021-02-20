@@ -4,12 +4,13 @@ import typings.pubnub.mod.ObjectCustom
 import typings.pubnub.mod.UUIDMetadataObject
 import typings.pubnub.pubnubStrings.set
 import typings.pubnub.pubnubStrings.uuid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataEventType[UUIDCustom /* <: ObjectCustom */] extends js.Object {
+trait DataEventType[UUIDCustom /* <: ObjectCustom */] extends StObject {
   
   var data: UUIDMetadataObject[UUIDCustom] = js.native
   
@@ -27,27 +28,15 @@ object DataEventType {
   }
   
   @scala.inline
-  implicit class DataEventTypeOps[Self <: DataEventType[_], UUIDCustom /* <: ObjectCustom */] (val x: Self with DataEventType[UUIDCustom]) extends AnyVal {
+  implicit class DataEventTypeMutableBuilder[Self <: DataEventType[_], UUIDCustom /* <: ObjectCustom */] (val x: Self with DataEventType[UUIDCustom]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: UUIDMetadataObject[UUIDCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: UUIDMetadataObject[UUIDCustom]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: set): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: uuid): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

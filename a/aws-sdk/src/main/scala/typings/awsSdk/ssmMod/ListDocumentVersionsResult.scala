@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDocumentVersionsResult extends js.Object {
+trait ListDocumentVersionsResult extends StObject {
   
   /**
     * The document versions.
@@ -26,33 +27,21 @@ object ListDocumentVersionsResult {
   }
   
   @scala.inline
-  implicit class ListDocumentVersionsResultOps[Self <: ListDocumentVersionsResult] (val x: Self) extends AnyVal {
+  implicit class ListDocumentVersionsResultMutableBuilder[Self <: ListDocumentVersionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentVersions(value: DocumentVersionList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = this.set("DocumentVersions", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersions(value: DocumentVersionList): Self = this.set("DocumentVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentVersions: Self = this.set("DocumentVersions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

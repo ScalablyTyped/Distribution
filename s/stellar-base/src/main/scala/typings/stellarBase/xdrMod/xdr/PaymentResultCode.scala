@@ -20,12 +20,13 @@ import typings.stellarBase.stellarBaseStrings.paymentSrcNoTrust
 import typings.stellarBase.stellarBaseStrings.paymentSrcNotAuthorized
 import typings.stellarBase.stellarBaseStrings.paymentSuccess
 import typings.stellarBase.stellarBaseStrings.paymentUnderfunded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentResultCode extends js.Object {
+trait PaymentResultCode extends StObject {
   
   val name: paymentSuccess | paymentMalformed | paymentUnderfunded | paymentSrcNoTrust | paymentSrcNotAuthorized | paymentNoDestination | paymentNoTrust | paymentNotAuthorized | paymentLineFull | paymentNoIssuer = js.native
   
@@ -43,26 +44,14 @@ object PaymentResultCode {
   }
   
   @scala.inline
-  implicit class PaymentResultCodeOps[Self <: PaymentResultCode] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PaymentResultCodeMutableBuilder[Self <: PaymentResultCode] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setName(
       value: paymentSuccess | paymentMalformed | paymentUnderfunded | paymentSrcNoTrust | paymentSrcNotAuthorized | paymentNoDestination | paymentNoTrust | paymentNotAuthorized | paymentLineFull | paymentNoIssuer
-    ): Self = this.set("name", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4` | `-5` | `-6` | `-7` | `-8` | `-9`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4` | `-5` | `-6` | `-7` | `-8` | `-9`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

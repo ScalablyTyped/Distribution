@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteMissionProfileRequest extends js.Object {
+trait DeleteMissionProfileRequest extends StObject {
   
   /**
     * UUID of a mission profile.
@@ -21,21 +22,9 @@ object DeleteMissionProfileRequest {
   }
   
   @scala.inline
-  implicit class DeleteMissionProfileRequestOps[Self <: DeleteMissionProfileRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteMissionProfileRequestMutableBuilder[Self <: DeleteMissionProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMissionProfileId(value: String): Self = this.set("missionProfileId", value.asInstanceOf[js.Any])
+    def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
   }
 }

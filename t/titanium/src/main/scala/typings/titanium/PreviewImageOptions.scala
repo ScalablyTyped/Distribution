@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options passed to <Titanium.Media.previewImage>.
   */
 @js.native
-trait PreviewImageOptions extends js.Object {
+trait PreviewImageOptions extends StObject {
   
   /**
     * Function called back if the preview fails. Check the `message` property of passed back parameter.
@@ -35,36 +36,24 @@ object PreviewImageOptions {
   }
   
   @scala.inline
-  implicit class PreviewImageOptionsOps[Self <: PreviewImageOptions] (val x: Self) extends AnyVal {
+  implicit class PreviewImageOptionsMutableBuilder[Self <: PreviewImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: /* param0 */ PreviewImageError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: Blob): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* param0 */ PreviewImageError => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setSuccess(value: /* param0 */ SuccessResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImage(value: Blob): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* param0 */ SuccessResponse => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

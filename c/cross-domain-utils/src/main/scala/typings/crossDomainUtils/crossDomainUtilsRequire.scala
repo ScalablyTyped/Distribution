@@ -1,5 +1,6 @@
 package typings.crossDomainUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("cross-domain-utils", JSImport.Namespace)
 @js.native
-object crossDomainUtilsRequire extends js.Object
+object crossDomainUtilsRequire extends StObject

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConversionsBatchUpdateResponse extends js.Object {
+trait ConversionsBatchUpdateResponse extends StObject {
   
   /** Indicates that some or all conversions failed to update. */
   var hasFailures: js.UndefOr[Boolean] = js.native
@@ -25,39 +26,27 @@ object ConversionsBatchUpdateResponse {
   }
   
   @scala.inline
-  implicit class ConversionsBatchUpdateResponseOps[Self <: ConversionsBatchUpdateResponse] (val x: Self) extends AnyVal {
+  implicit class ConversionsBatchUpdateResponseMutableBuilder[Self <: ConversionsBatchUpdateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasFailures(value: Boolean): Self = StObject.set(x, "hasFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasFailuresUndefined: Self = StObject.set(x, "hasFailures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasFailures(value: Boolean): Self = this.set("hasFailures", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteHasFailures: Self = this.set("hasFailures", js.undefined)
+    def setStatus(value: js.Array[ConversionStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setStatusVarargs(value: ConversionStatus*): Self = this.set("status", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatus(value: js.Array[ConversionStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
   }
 }

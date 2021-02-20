@@ -1,5 +1,6 @@
 package typings.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactWindow.reactWindowStrings.forward
   - typings.reactWindow.reactWindowStrings.backward
 */
-trait ScrollDirection extends js.Object
+trait ScrollDirection extends StObject
 object ScrollDirection {
   
   @scala.inline

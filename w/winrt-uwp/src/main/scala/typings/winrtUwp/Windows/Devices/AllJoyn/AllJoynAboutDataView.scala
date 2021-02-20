@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Globalization.Language
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to view data about another app and the device it is running on. */
 @js.native
-trait AllJoynAboutDataView extends js.Object {
+trait AllJoynAboutDataView extends StObject {
   
   /** The version number for the implemented AllJoyn platform software. */
   var ajSoftwareVersion: String = js.native
@@ -87,66 +88,54 @@ object AllJoynAboutDataView {
   }
   
   @scala.inline
-  implicit class AllJoynAboutDataViewOps[Self <: AllJoynAboutDataView] (val x: Self) extends AnyVal {
+  implicit class AllJoynAboutDataViewMutableBuilder[Self <: AllJoynAboutDataView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjSoftwareVersion(value: String): Self = StObject.set(x, "ajSoftwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjSoftwareVersion(value: String): Self = this.set("ajSoftwareVersion", value.asInstanceOf[js.Any])
+    def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setDefaultLanguage(value: Language): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateOfManufacture(value: Date): Self = this.set("dateOfManufacture", value.asInstanceOf[js.Any])
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLanguage(value: Language): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHardwareVersion(value: String): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareVersion(value: String): Self = this.set("hardwareVersion", value.asInstanceOf[js.Any])
+    def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelNumber(value: String): Self = this.set("modelNumber", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMapView[String, _]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSupportUrl(value: Uri): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftwareVersion(value: String): Self = this.set("softwareVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportUrl(value: Uri): Self = this.set("supportUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedLanguages(value: IVectorView[Language]): Self = this.set("supportedLanguages", value.asInstanceOf[js.Any])
+    def setSupportedLanguages(value: IVectorView[Language]): Self = StObject.set(x, "supportedLanguages", value.asInstanceOf[js.Any])
   }
 }

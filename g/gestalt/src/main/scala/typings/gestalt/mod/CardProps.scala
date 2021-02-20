@@ -2,12 +2,13 @@ package typings.gestalt.mod
 
 import typings.gestalt.anon.EventSyntheticEvent
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardProps extends js.Object {
+trait CardProps extends StObject {
   
   var active: js.UndefOr[Boolean] = js.native
   
@@ -28,48 +29,36 @@ object CardProps {
   }
   
   @scala.inline
-  implicit class CardPropsOps[Self <: CardProps] (val x: Self) extends AnyVal {
+  implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnMouseEnter(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImage(value: ReactNode): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setOnMouseLeave(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseEnter(value: /* args */ EventSyntheticEvent => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
-    
-    @scala.inline
-    def setOnMouseLeave(value: /* args */ EventSyntheticEvent => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
   }
 }

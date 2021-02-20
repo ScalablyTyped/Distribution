@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
   */
 @js.native
-trait Probe extends js.Object {
+trait Probe extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the action to take.
@@ -68,42 +69,30 @@ object Probe {
   }
   
   @scala.inline
-  implicit class ProbeOps[Self <: Probe] (val x: Self) extends AnyVal {
+  implicit class ProbeMutableBuilder[Self <: Probe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExec(value: ExecAction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpGet(value: HTTPGetAction): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExec(value: ExecAction): Self = this.set("exec", value.asInstanceOf[js.Any])
+    def setInitialDelaySeconds(value: Double): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    def setPeriodSeconds(value: Double): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpGet(value: HTTPGetAction): Self = this.set("httpGet", value.asInstanceOf[js.Any])
+    def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDelaySeconds(value: Double): Self = this.set("initialDelaySeconds", value.asInstanceOf[js.Any])
+    def setTcpSocket(value: TCPSocketAction): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodSeconds(value: Double): Self = this.set("periodSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccessThreshold(value: Double): Self = this.set("successThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTcpSocket(value: TCPSocketAction): Self = this.set("tcpSocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
+    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
   }
 }

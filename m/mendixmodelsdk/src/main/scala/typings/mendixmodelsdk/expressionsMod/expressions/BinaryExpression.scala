@@ -36,6 +36,7 @@ import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,16 +79,20 @@ class BinaryExpression protected () extends Expression {
   def right: Expression = js.native
   def right_=(newValue: Expression): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression")
-@js.native
-object BinaryExpression extends js.Object {
+object BinaryExpression {
+  
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new BinaryExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.create")
+  @js.native
   def create(model: IModel): BinaryExpression = js.native
   
   /**
@@ -98,6 +103,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): BinaryExpression = js.native
   
   /**
@@ -108,6 +116,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): BinaryExpression = js.native
   
   /**
@@ -118,6 +129,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): BinaryExpression = js.native
   
   /**
@@ -128,6 +142,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBinaryExpressionUnderLeft")
+  @js.native
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): BinaryExpression = js.native
   
   /**
@@ -138,6 +155,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBinaryExpressionUnderRight")
+  @js.native
   def createInBinaryExpressionUnderRight(container: BinaryExpression): BinaryExpression = js.native
   
   /**
@@ -148,6 +168,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInBinaryRequestHandlingUnderExpressionModel")
+  @js.native
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): BinaryExpression = js.native
   
   /**
@@ -158,6 +181,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInChangeListActionUnderValueModel")
+  @js.native
   def createInChangeListActionUnderValueModel(container: ChangeListAction): BinaryExpression = js.native
   
   /**
@@ -168,6 +194,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInChangeVariableActionUnderValueModel")
+  @js.native
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): BinaryExpression = js.native
   
   /**
@@ -178,6 +207,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInConditionalSettingsUnderExpressionModel")
+  @js.native
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): BinaryExpression = js.native
   
   /**
@@ -188,6 +220,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInConsumedODataServiceUnderTimeoutModel")
+  @js.native
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): BinaryExpression = js.native
   
   /**
@@ -198,6 +233,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInCreateVariableActionUnderInitialValueModel")
+  @js.native
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): BinaryExpression = js.native
   
   /**
@@ -208,6 +246,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInCustomRangeUnderLimitExpressionModel")
+  @js.native
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): BinaryExpression = js.native
   
   /**
@@ -218,6 +259,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInCustomRangeUnderOffsetExpressionModel")
+  @js.native
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): BinaryExpression = js.native
   
   /**
@@ -228,6 +272,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
+  @js.native
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): BinaryExpression = js.native
   
   /**
@@ -238,6 +285,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInEndEventUnderReturnValueModel")
+  @js.native
   def createInEndEventUnderReturnValueModel(container: EndEvent): BinaryExpression = js.native
   
   /**
@@ -248,6 +298,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInExpressionSplitConditionUnderExpressionModel")
+  @js.native
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): BinaryExpression = js.native
   
   /**
@@ -258,6 +311,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInFormDataPartUnderValueModel")
+  @js.native
   def createInFormDataPartUnderValueModel(container: FormDataPart): BinaryExpression = js.native
   
   /**
@@ -268,6 +324,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInFunctionCallExpressionUnderArguments")
+  @js.native
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): BinaryExpression = js.native
   
   /**
@@ -278,6 +337,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
   
   /**
@@ -288,6 +350,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
   
   /**
@@ -298,6 +363,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
   
   /**
@@ -308,6 +376,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): BinaryExpression = js.native
   
   /**
@@ -318,6 +389,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpConfigurationUnderCustomLocationModel")
+  @js.native
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): BinaryExpression = js.native
   
   /**
@@ -328,6 +402,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpConfigurationUnderPassword")
+  @js.native
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): BinaryExpression = js.native
   
   /**
@@ -338,6 +415,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpConfigurationUnderUsername")
+  @js.native
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): BinaryExpression = js.native
   
   /**
@@ -348,6 +428,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInHttpHeaderEntryUnderValueModel")
+  @js.native
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): BinaryExpression = js.native
   
   /**
@@ -358,6 +441,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInIfExpressionUnderCondition")
+  @js.native
   def createInIfExpressionUnderCondition(container: IfExpression): BinaryExpression = js.native
   
   /**
@@ -368,6 +454,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInIfExpressionUnderIfFalse")
+  @js.native
   def createInIfExpressionUnderIfFalse(container: IfExpression): BinaryExpression = js.native
   
   /**
@@ -378,6 +467,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInIfExpressionUnderIfTrue")
+  @js.native
   def createInIfExpressionUnderIfTrue(container: IfExpression): BinaryExpression = js.native
   
   /**
@@ -388,6 +480,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInInspectAttributeUnderExpressionModel")
+  @js.native
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): BinaryExpression = js.native
   
   /**
@@ -398,6 +493,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInLogMessageActionUnderNodeModel")
+  @js.native
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): BinaryExpression = js.native
   
   /**
@@ -408,6 +506,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInMemberChangeUnderValueModel")
+  @js.native
   def createInMemberChangeUnderValueModel(container: MemberChange): BinaryExpression = js.native
   
   /**
@@ -418,6 +519,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): BinaryExpression = js.native
   
   /**
@@ -428,6 +532,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): BinaryExpression = js.native
   
   /**
@@ -438,6 +545,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInParenthesisExpressionUnderExpression")
+  @js.native
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): BinaryExpression = js.native
   
   /**
@@ -448,6 +558,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderHostExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
   
   /**
@@ -458,6 +571,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderPasswordExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
   
   /**
@@ -468,6 +584,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderPortExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
   
   /**
@@ -478,6 +597,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
   
   /**
@@ -488,6 +610,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInProxyConfigurationUnderUsernameExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): BinaryExpression = js.native
   
   /**
@@ -498,6 +623,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInRestCallActionUnderTimeOutModel")
+  @js.native
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): BinaryExpression = js.native
   
   /**
@@ -508,6 +636,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInRuleCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): BinaryExpression = js.native
   
   /**
@@ -518,6 +649,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInTemplateArgumentUnderExpressionModel")
+  @js.native
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): BinaryExpression = js.native
   
   /**
@@ -528,6 +662,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInUnaryExpressionUnderExpression")
+  @js.native
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): BinaryExpression = js.native
   
   /**
@@ -538,6 +675,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInWebServiceCallActionUnderTimeOutModel")
+  @js.native
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): BinaryExpression = js.native
   
   /**
@@ -548,6 +688,9 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
+  @js.native
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): BinaryExpression = js.native
   
   /**
@@ -558,9 +701,22 @@ object BinaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.createInWidgetValidationUnderExpressionModel")
+  @js.native
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): BinaryExpression = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.BinaryExpression.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

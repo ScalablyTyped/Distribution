@@ -3,19 +3,17 @@ package typings.reactNativeGoogleAnalyticsBridge
 import typings.reactNativeGoogleAnalyticsBridge.customMod.CustomDimensionsFieldIndexMap
 import typings.reactNativeGoogleAnalyticsBridge.dataLayerEventMod.DataLayerEvent
 import typings.reactNativeGoogleAnalyticsBridge.googleAnalyticsSettingsMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-google-analytics-bridge", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings")
   @js.native
   class GoogleAnalyticsSettings () extends default
-  /* static members */
-  @js.native
-  object GoogleAnalyticsSettings extends js.Object {
+  object GoogleAnalyticsSettings {
     
     /**
       * Sets the trackers dispatch interval.
@@ -23,6 +21,9 @@ object mod extends js.Object {
       * @example GoogleAnalyticsSettings.setDispatchInterval(30);
       * @param {number} intervalInSeconds
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings.setDispatchInterval")
+    @js.native
     def setDispatchInterval(intervalInSeconds: Double): Unit = js.native
     
     /**
@@ -30,6 +31,9 @@ object mod extends js.Object {
       * @example GoogleAnalyticsSettings.setDryRun(true);
       * @param {boolean} enabled
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings.setDryRun")
+    @js.native
     def setDryRun(enabled: Boolean): Unit = js.native
     
     /**
@@ -37,6 +41,9 @@ object mod extends js.Object {
       * @example GoogleAnalyticsSettings.setOptOut(true);
       * @param {boolean} enabled
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings.setOptOut")
+    @js.native
     def setOptOut(enabled: Boolean): Unit = js.native
   }
   
@@ -62,6 +69,7 @@ object mod extends js.Object {
     * // If you do not use a CustomDimensionsFieldIndexMap, you will have to use index as keys instead for custom dimensions:
     * tracker.trackScreenView("Home", { customDimensions: { 1: "Premium" } });
     */
+  @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsTracker")
   @js.native
   class GoogleAnalyticsTracker protected ()
     extends typings.reactNativeGoogleAnalyticsBridge.googleAnalyticsTrackerMod.default {
@@ -84,12 +92,11 @@ object mod extends js.Object {
     *   .then(() => GoogleTagManager.stringForKey("pack"))
     *   .then(str => console.log("Pack: ", str));
     */
+  @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
   @js.native
   class GoogleTagManager ()
     extends typings.reactNativeGoogleAnalyticsBridge.googleTagManagerMod.default
-  /* static members */
-  @js.native
-  object GoogleTagManager extends js.Object {
+  object GoogleTagManager {
     
     /**
       * Retrieves a boolean value with the given key from the opened container.
@@ -97,6 +104,9 @@ object mod extends js.Object {
       * @param {string} key
       * @returns {Promise<boolean>}
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.boolForKey")
+    @js.native
     def boolForKey(key: String): js.Promise[Boolean] = js.native
     
     /**
@@ -105,6 +115,9 @@ object mod extends js.Object {
       * @param {string} key
       * @returns {Promise<number>}
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.doubleForKey")
+    @js.native
     def doubleForKey(key: js.Any): js.Promise[Double] = js.native
     
     /**
@@ -114,6 +127,9 @@ object mod extends js.Object {
       * @param {string} containerId
       * @returns {Promise<boolean>}
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.openContainerWithId")
+    @js.native
     def openContainerWithId(containerId: String): js.Promise[Boolean] = js.native
     
     /**
@@ -126,6 +142,9 @@ object mod extends js.Object {
       * @param {DataLayerEvent} event An Map<String, Object> containing key and value pairs. It must have at least one key "event" with event name
       * @returns {Promise<boolean>}
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.pushDataLayerEvent")
+    @js.native
     def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = js.native
     
     /**
@@ -136,6 +155,9 @@ object mod extends js.Object {
       * GoogleTagManager.refreshContainer().then((..) => ..)
       * @returns {Promise<boolean>}
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.refreshContainer")
+    @js.native
     def refreshContainer(): js.Promise[Boolean] = js.native
     
     /**
@@ -143,12 +165,18 @@ object mod extends js.Object {
       * @param {String} functionName
       * @param {Function} handler
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.registerFunctionCallTagHandler")
+    @js.native
     def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = js.native
     
     /**
       * Sets logger to verbose, default is warning
       * @param {boolean} enabled
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.setVerboseLoggingEnabled")
+    @js.native
     def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = js.native
     
     /**
@@ -157,11 +185,15 @@ object mod extends js.Object {
       * @param {string} key
       * @returns {Promise<string>}
       */
+    /* static member */
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager.stringForKey")
+    @js.native
     def stringForKey(key: String): js.Promise[String] = js.native
   }
   
+  @JSImport("react-native-google-analytics-bridge", "ProductActionEnum")
   @js.native
-  object ProductActionEnum extends js.Object {
+  object ProductActionEnum extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

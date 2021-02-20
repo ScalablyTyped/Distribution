@@ -1,17 +1,18 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BorderType extends js.Object
+sealed trait BorderType extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.BorderType")
 @js.native
-object BorderType extends js.Object {
+object BorderType extends StObject {
   
   @js.native
   sealed trait dashDotStroked extends BorderType

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsivePanelOptions extends js.Object {
+trait ResponsivePanelOptions extends StObject {
   
   var autoClose: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object ResponsivePanelOptions {
   }
   
   @scala.inline
-  implicit class ResponsivePanelOptionsOps[Self <: ResponsivePanelOptions] (val x: Self) extends AnyVal {
+  implicit class ResponsivePanelOptionsMutableBuilder[Self <: ResponsivePanelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
     
     @scala.inline
-    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    def setClose(value: /* e */ ResponsivePanelEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBreakpoint(value: Double): Self = this.set("breakpoint", value.asInstanceOf[js.Any])
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteBreakpoint: Self = this.set("breakpoint", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: /* e */ ResponsivePanelEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setOpen(value: /* e */ ResponsivePanelEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: /* e */ ResponsivePanelEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setToggleButton(value: String): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
-    
-    @scala.inline
-    def setToggleButton(value: String): Self = this.set("toggleButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleButton: Self = this.set("toggleButton", js.undefined)
+    def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
   }
 }

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.FloodlightConfigurationId
 import typings.maximMazurokGapiClientDfareporting.anon.IdKeyOauthtoken
 import typings.maximMazurokGapiClientDfareporting.anon.PrettyPrintProfileIdQuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloodlightActivityGroupsResource extends js.Object {
+trait FloodlightActivityGroupsResource extends StObject {
   
   /** Gets one floodlight activity group by ID. */
   def get(): Request[FloodlightActivityGroup] = js.native

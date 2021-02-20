@@ -1,12 +1,13 @@
 package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
 import typings.instagramPrivateApi.instagramPrivateApiNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoryPollTallie extends js.Object {
+trait StoryPollTallie extends StObject {
   
   var count: `0` = js.native
   
@@ -23,27 +24,15 @@ object StoryPollTallie {
   }
   
   @scala.inline
-  implicit class StoryPollTallieOps[Self <: StoryPollTallie] (val x: Self) extends AnyVal {
+  implicit class StoryPollTallieMutableBuilder[Self <: StoryPollTallie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: `0`): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCount(value: `0`): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFont_size(value: Double): Self = this.set("font_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

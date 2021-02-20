@@ -1,12 +1,13 @@
 package typings.iotaLibJs.anon
 
 import typings.iotaLibJs.mod.InputObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Balance extends js.Object {
+trait Balance extends StObject {
   
   var addresses: js.Array[String] = js.native
   
@@ -33,42 +34,30 @@ object Balance {
   }
   
   @scala.inline
-  implicit class BalanceOps[Self <: Balance] (val x: Self) extends AnyVal {
+  implicit class BalanceMutableBuilder[Self <: Balance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressesVarargs(value: String*): Self = this.set("addresses", js.Array(value :_*))
+    def setInputs(value: js.Array[InputObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: js.Array[String]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setInputsVarargs(value: InputObject*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setBalance(value: Double): Self = this.set("balance", value.asInstanceOf[js.Any])
+    def setLatestAddress(value: String): Self = StObject.set(x, "latestAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputsVarargs(value: InputObject*): Self = this.set("inputs", js.Array(value :_*))
+    def setTransfers(value: js.Array[String]): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[InputObject]): Self = this.set("inputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLatestAddress(value: String): Self = this.set("latestAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransfersVarargs(value: String*): Self = this.set("transfers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransfers(value: js.Array[String]): Self = this.set("transfers", value.asInstanceOf[js.Any])
+    def setTransfersVarargs(value: String*): Self = StObject.set(x, "transfers", js.Array(value :_*))
   }
 }

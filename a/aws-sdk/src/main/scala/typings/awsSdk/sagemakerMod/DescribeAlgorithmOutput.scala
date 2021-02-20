@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAlgorithmOutput extends js.Object {
+trait DescribeAlgorithmOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm.
@@ -78,66 +79,54 @@ object DescribeAlgorithmOutput {
   }
   
   @scala.inline
-  implicit class DescribeAlgorithmOutputOps[Self <: DescribeAlgorithmOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeAlgorithmOutputMutableBuilder[Self <: DescribeAlgorithmOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmArn(value: AlgorithmArn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmDescription(value: EntityDescription): Self = StObject.set(x, "AlgorithmDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlgorithmDescriptionUndefined: Self = StObject.set(x, "AlgorithmDescription", js.undefined)
     
     @scala.inline
-    def setAlgorithmArn(value: AlgorithmArn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmName(value: EntityName): Self = this.set("AlgorithmName", value.asInstanceOf[js.Any])
+    def setAlgorithmStatus(value: AlgorithmStatus): Self = StObject.set(x, "AlgorithmStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmStatus(value: AlgorithmStatus): Self = this.set("AlgorithmStatus", value.asInstanceOf[js.Any])
+    def setAlgorithmStatusDetails(value: AlgorithmStatusDetails): Self = StObject.set(x, "AlgorithmStatusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmStatusDetails(value: AlgorithmStatusDetails): Self = this.set("AlgorithmStatusDetails", value.asInstanceOf[js.Any])
+    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = StObject.set(x, "CertifyForMarketplace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCertifyForMarketplaceUndefined: Self = StObject.set(x, "CertifyForMarketplace", js.undefined)
     
     @scala.inline
-    def setTrainingSpecification(value: TrainingSpecification): Self = this.set("TrainingSpecification", value.asInstanceOf[js.Any])
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmDescription(value: EntityDescription): Self = this.set("AlgorithmDescription", value.asInstanceOf[js.Any])
+    def setInferenceSpecification(value: InferenceSpecification): Self = StObject.set(x, "InferenceSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlgorithmDescription: Self = this.set("AlgorithmDescription", js.undefined)
+    def setInferenceSpecificationUndefined: Self = StObject.set(x, "InferenceSpecification", js.undefined)
     
     @scala.inline
-    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = this.set("CertifyForMarketplace", value.asInstanceOf[js.Any])
+    def setProductId(value: ProductId): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertifyForMarketplace: Self = this.set("CertifyForMarketplace", js.undefined)
+    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
     @scala.inline
-    def setInferenceSpecification(value: InferenceSpecification): Self = this.set("InferenceSpecification", value.asInstanceOf[js.Any])
+    def setTrainingSpecification(value: TrainingSpecification): Self = StObject.set(x, "TrainingSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInferenceSpecification: Self = this.set("InferenceSpecification", js.undefined)
+    def setValidationSpecification(value: AlgorithmValidationSpecification): Self = StObject.set(x, "ValidationSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: ProductId): Self = this.set("ProductId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("ProductId", js.undefined)
-    
-    @scala.inline
-    def setValidationSpecification(value: AlgorithmValidationSpecification): Self = this.set("ValidationSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationSpecification: Self = this.set("ValidationSpecification", js.undefined)
+    def setValidationSpecificationUndefined: Self = StObject.set(x, "ValidationSpecification", js.undefined)
   }
 }

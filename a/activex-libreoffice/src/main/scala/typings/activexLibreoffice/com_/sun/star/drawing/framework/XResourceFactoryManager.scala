@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XResourceFactory
   */
 @js.native
-trait XResourceFactoryManager extends js.Object {
+trait XResourceFactoryManager extends StObject {
   
   /**
     * Register a new resource factory for the given URL.
@@ -58,30 +59,18 @@ object XResourceFactoryManager {
   }
   
   @scala.inline
-  implicit class XResourceFactoryManagerOps[Self <: XResourceFactoryManager] (val x: Self) extends AnyVal {
+  implicit class XResourceFactoryManagerMutableBuilder[Self <: XResourceFactoryManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResourceFactory(value: (String, XResourceFactory) => Unit): Self = StObject.set(x, "addResourceFactory", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetResourceFactory(value: String => XResourceFactory): Self = StObject.set(x, "getResourceFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveResourceFactoryForReference(value: XResourceFactory => Unit): Self = StObject.set(x, "removeResourceFactoryForReference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddResourceFactory(value: (String, XResourceFactory) => Unit): Self = this.set("addResourceFactory", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetResourceFactory(value: String => XResourceFactory): Self = this.set("getResourceFactory", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveResourceFactoryForReference(value: XResourceFactory => Unit): Self = this.set("removeResourceFactoryForReference", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveResourceFactoryForURL(value: String => Unit): Self = this.set("removeResourceFactoryForURL", js.Any.fromFunction1(value))
+    def setRemoveResourceFactoryForURL(value: String => Unit): Self = StObject.set(x, "removeResourceFactoryForURL", js.Any.fromFunction1(value))
   }
 }

@@ -4,6 +4,7 @@ import typings.stripe.anon.Additionaldocument
 import typings.stripe.anon.Currentlydue
 import typings.stripe.mod.IMetadata
 import typings.stripe.stripeStrings.person
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,42 +73,30 @@ object IPerson {
   }
   
   @scala.inline
-  implicit class IPersonOps[Self <: IPerson] (val x: Self) extends AnyVal {
+  implicit class IPersonMutableBuilder[Self <: IPerson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId_number_provided(value: Boolean): Self = StObject.set(x, "id_number_provided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setObject(value: person): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_number_provided(value: Boolean): Self = this.set("id_number_provided", value.asInstanceOf[js.Any])
+    def setRequirements(value: Currentlydue): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setSsn_last_4_provided(value: Boolean): Self = StObject.set(x, "ssn_last_4_provided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: person): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequirements(value: Currentlydue): Self = this.set("requirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsn_last_4_provided(value: Boolean): Self = this.set("ssn_last_4_provided", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerification(value: Additionaldocument): Self = this.set("verification", value.asInstanceOf[js.Any])
+    def setVerification(value: Additionaldocument): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

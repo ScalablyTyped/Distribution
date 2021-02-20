@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A full query descriptor for a filtering predicate.
   */
 @js.native
-trait MediaQueryInfoType extends js.Object {
+trait MediaQueryInfoType extends StObject {
   
   /**
     * Whether or not the predicate is for an exact match.  The default is `true`.
@@ -29,30 +30,18 @@ object MediaQueryInfoType {
   }
   
   @scala.inline
-  implicit class MediaQueryInfoTypeOps[Self <: MediaQueryInfoType] (val x: Self) extends AnyVal {
+  implicit class MediaQueryInfoTypeMutableBuilder[Self <: MediaQueryInfoType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: Double | String | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double | String | Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

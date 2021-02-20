@@ -9,6 +9,7 @@ import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.short
 import typings.html5plus.html5plusStrings.text
 import typings.html5plus.html5plusStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
 @js.native
-trait PlusNativeUIToastOptions extends js.Object {
+trait PlusNativeUIToastOptions extends StObject {
   
   /**
     * 提示消息框在屏幕中的水平位置
@@ -124,72 +125,60 @@ object PlusNativeUIToastOptions {
   }
   
   @scala.inline
-  implicit class PlusNativeUIToastOptionsOps[Self <: PlusNativeUIToastOptions] (val x: Self) extends AnyVal {
+  implicit class PlusNativeUIToastOptionsMutableBuilder[Self <: PlusNativeUIToastOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: long | short): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: long | short): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconWidth(value: String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconHeight(value: String): Self = this.set("iconHeight", value.asInstanceOf[js.Any])
+    def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
     
     @scala.inline
-    def deleteIconHeight: Self = this.set("iconHeight", js.undefined)
+    def setRichTextStyle(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "richTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconWidth(value: String): Self = this.set("iconWidth", value.asInstanceOf[js.Any])
+    def setRichTextStyleUndefined: Self = StObject.set(x, "richTextStyle", js.undefined)
     
     @scala.inline
-    def deleteIconWidth: Self = this.set("iconWidth", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRichTextStyle(value: PlusNativeObjRichTextStyles): Self = this.set("richTextStyle", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRichTextStyle: Self = this.set("richTextStyle", js.undefined)
+    def setType(value: text | richtext): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setVerticalAlign(value: top | center | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: text | richtext): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlign(value: top | center | bottom): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

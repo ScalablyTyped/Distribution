@@ -3,12 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chromeStrings.mixed
 import typings.chrome.chromeStrings.normal
 import typings.chrome.chromeStrings.off
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MIXED extends js.Object {
+trait MIXED extends StObject {
   
   var MIXED: mixed = js.native
   
@@ -25,27 +26,15 @@ object MIXED {
   }
   
   @scala.inline
-  implicit class MIXEDOps[Self <: MIXED] (val x: Self) extends AnyVal {
+  implicit class MIXEDMutableBuilder[Self <: MIXED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMIXED(value: mixed): Self = StObject.set(x, "MIXED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNORMAL(value: normal): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMIXED(value: mixed): Self = this.set("MIXED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNORMAL(value: normal): Self = this.set("NORMAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOFF(value: off): Self = this.set("OFF", value.asInstanceOf[js.Any])
+    def setOFF(value: off): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
   }
 }

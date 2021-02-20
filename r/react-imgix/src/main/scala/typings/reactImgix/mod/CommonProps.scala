@@ -4,12 +4,13 @@ import typings.react.mod.RefObject
 import typings.std.HTMLImageElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLSourceElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonProps extends js.Object {
+trait CommonProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -31,38 +32,26 @@ object CommonProps {
   }
   
   @scala.inline
-  implicit class CommonPropsOps[Self <: CommonProps] (val x: Self) extends AnyVal {
+  implicit class CommonPropsMutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtmlAttributes(value: ImgixHTMLAttributes): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
-    
-    @scala.inline
-    def setHtmlAttributes(value: ImgixHTMLAttributes): Self = this.set("htmlAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlAttributes: Self = this.set("htmlAttributes", js.undefined)
+    def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
     
     @scala.inline
     def setOnMounted(
       value: /* ref */ js.UndefOr[RefObject[HTMLPictureElement | HTMLImageElement | HTMLSourceElement]] => Unit
-    ): Self = this.set("onMounted", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onMounted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMounted: Self = this.set("onMounted", js.undefined)
+    def setOnMountedUndefined: Self = StObject.set(x, "onMounted", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCSrtpKeyParam extends js.Object {
+trait RTCSrtpKeyParam extends StObject {
   
   var keyMethod: js.UndefOr[java.lang.String] = js.native
   
@@ -26,48 +27,36 @@ object RTCSrtpKeyParam {
   }
   
   @scala.inline
-  implicit class RTCSrtpKeyParamOps[Self <: RTCSrtpKeyParam] (val x: Self) extends AnyVal {
+  implicit class RTCSrtpKeyParamMutableBuilder[Self <: RTCSrtpKeyParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyMethod(value: java.lang.String): Self = StObject.set(x, "keyMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyMethodUndefined: Self = StObject.set(x, "keyMethod", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeySalt(value: java.lang.String): Self = StObject.set(x, "keySalt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyMethod(value: java.lang.String): Self = this.set("keyMethod", value.asInstanceOf[js.Any])
+    def setKeySaltUndefined: Self = StObject.set(x, "keySalt", js.undefined)
     
     @scala.inline
-    def deleteKeyMethod: Self = this.set("keyMethod", js.undefined)
+    def setLifetime(value: java.lang.String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySalt(value: java.lang.String): Self = this.set("keySalt", value.asInstanceOf[js.Any])
+    def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
     
     @scala.inline
-    def deleteKeySalt: Self = this.set("keySalt", js.undefined)
+    def setMkiLength(value: Double): Self = StObject.set(x, "mkiLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifetime(value: java.lang.String): Self = this.set("lifetime", value.asInstanceOf[js.Any])
+    def setMkiLengthUndefined: Self = StObject.set(x, "mkiLength", js.undefined)
     
     @scala.inline
-    def deleteLifetime: Self = this.set("lifetime", js.undefined)
+    def setMkiValue(value: Double): Self = StObject.set(x, "mkiValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMkiLength(value: Double): Self = this.set("mkiLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMkiLength: Self = this.set("mkiLength", js.undefined)
-    
-    @scala.inline
-    def setMkiValue(value: Double): Self = this.set("mkiValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMkiValue: Self = this.set("mkiValue", js.undefined)
+    def setMkiValueUndefined: Self = StObject.set(x, "mkiValue", js.undefined)
   }
 }

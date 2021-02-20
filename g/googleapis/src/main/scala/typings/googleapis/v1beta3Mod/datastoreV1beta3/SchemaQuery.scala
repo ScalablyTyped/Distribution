@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A query for entities.
   */
 @js.native
-trait SchemaQuery extends js.Object {
+trait SchemaQuery extends StObject {
   
   /**
     * The properties to make distinct. The query results will contain the first
@@ -74,84 +75,72 @@ object SchemaQuery {
   }
   
   @scala.inline
-  implicit class SchemaQueryOps[Self <: SchemaQuery] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryMutableBuilder[Self <: SchemaQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistinctOn(value: js.Array[SchemaPropertyReference]): Self = StObject.set(x, "distinctOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistinctOnUndefined: Self = StObject.set(x, "distinctOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistinctOnVarargs(value: SchemaPropertyReference*): Self = StObject.set(x, "distinctOn", js.Array(value :_*))
     
     @scala.inline
-    def setDistinctOnVarargs(value: SchemaPropertyReference*): Self = this.set("distinctOn", js.Array(value :_*))
+    def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinctOn(value: js.Array[SchemaPropertyReference]): Self = this.set("distinctOn", value.asInstanceOf[js.Any])
+    def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
     
     @scala.inline
-    def deleteDistinctOn: Self = this.set("distinctOn", js.undefined)
+    def setFilter(value: SchemaFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCursor(value: String): Self = this.set("endCursor", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteEndCursor: Self = this.set("endCursor", js.undefined)
+    def setKind(value: js.Array[SchemaKindExpression]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: SchemaFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setKindVarargs(value: SchemaKindExpression*): Self = StObject.set(x, "kind", js.Array(value :_*))
     
     @scala.inline
-    def setKindVarargs(value: SchemaKindExpression*): Self = this.set("kind", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: js.Array[SchemaKindExpression]): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setOrder(value: js.Array[SchemaPropertyOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOrderVarargs(value: SchemaPropertyOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
     
     @scala.inline
-    def setOrderVarargs(value: SchemaPropertyOrder*): Self = this.set("order", js.Array(value :_*))
+    def setProjection(value: js.Array[SchemaProjection]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: js.Array[SchemaPropertyOrder]): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setProjectionVarargs(value: SchemaProjection*): Self = StObject.set(x, "projection", js.Array(value :_*))
     
     @scala.inline
-    def setProjectionVarargs(value: SchemaProjection*): Self = this.set("projection", js.Array(value :_*))
+    def setStartCursor(value: String): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: js.Array[SchemaProjection]): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
-    
-    @scala.inline
-    def setStartCursor(value: String): Self = this.set("startCursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartCursor: Self = this.set("startCursor", js.undefined)
+    def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
   }
 }

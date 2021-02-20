@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioFileNodeCreationStatus extends js.Object
+sealed trait AudioFileNodeCreationStatus extends StObject
 /** Defines status values for audio file node creation. */
 @JSGlobal("Windows.Media.Audio.AudioFileNodeCreationStatus")
 @js.native
-object AudioFileNodeCreationStatus extends js.Object {
+object AudioFileNodeCreationStatus extends StObject {
   
   /** The audio file used to create the node was not found. */
   @js.native

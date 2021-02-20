@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataDroppingEventUIParam extends js.Object {
+trait MetadataDroppingEventUIParam extends StObject {
   
   /**
     * A reference to the dragged element.
@@ -51,60 +52,48 @@ object MetadataDroppingEventUIParam {
   }
   
   @scala.inline
-  implicit class MetadataDroppingEventUIParamOps[Self <: MetadataDroppingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class MetadataDroppingEventUIParamMutableBuilder[Self <: MetadataDroppingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraggedElement(value: String): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggedElement(value: String): Self = this.set("draggedElement", value.asInstanceOf[js.Any])
+    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
     @scala.inline
-    def deleteDraggedElement: Self = this.set("draggedElement", js.undefined)
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelper(value: String): Self = this.set("helper", value.asInstanceOf[js.Any])
+    def setMetadataIndex(value: Double): Self = StObject.set(x, "metadataIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHelper: Self = this.set("helper", js.undefined)
+    def setMetadataIndexUndefined: Self = StObject.set(x, "metadataIndex", js.undefined)
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataIndex(value: Double): Self = this.set("metadataIndex", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMetadataIndex: Self = this.set("metadataIndex", js.undefined)
+    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setTargetElement(value: String): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTargetElement(value: String): Self = this.set("targetElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetElement: Self = this.set("targetElement", js.undefined)
+    def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.awsSdk.anon
 
 import typings.awsSdk.schemasMod.string
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/schemas.DescribeCodeBindingRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeCodeBindingReques extends js.Object {
+trait DescribeCodeBindingReques extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -42,39 +43,27 @@ object DescribeCodeBindingReques {
   }
   
   @scala.inline
-  implicit class DescribeCodeBindingRequesOps[Self <: DescribeCodeBindingReques] (val x: Self) extends AnyVal {
+  implicit class DescribeCodeBindingRequesMutableBuilder[Self <: DescribeCodeBindingReques] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: string): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: string): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
-    
-    @scala.inline
-    def setSchemaVersion(value: string): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
+    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
   }
 }

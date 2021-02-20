@@ -1,6 +1,7 @@
 package typings.pkcs11js.Pkcs11Js
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object RsaOAEP {
   }
   
   @scala.inline
-  implicit class RsaOAEPOps[Self <: RsaOAEP] (val x: Self) extends AnyVal {
+  implicit class RsaOAEPMutableBuilder[Self <: RsaOAEP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHashAlg(value: Double): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMgf(value: Double): Self = StObject.set(x, "mgf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashAlg(value: Double): Self = this.set("hashAlg", value.asInstanceOf[js.Any])
+    def setSourceData(value: Buffer): Self = StObject.set(x, "sourceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMgf(value: Double): Self = this.set("mgf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: Double): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceData(value: Buffer): Self = this.set("sourceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceData: Self = this.set("sourceData", js.undefined)
+    def setSourceDataUndefined: Self = StObject.set(x, "sourceData", js.undefined)
   }
 }

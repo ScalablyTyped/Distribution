@@ -1,11 +1,12 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPool extends js.Object {
+trait SchemaPool extends StObject {
   
   /**
     * Whether replicas in this pool should be restarted if they experience a
@@ -109,120 +110,108 @@ object SchemaPool {
   }
   
   @scala.inline
-  implicit class SchemaPoolOps[Self <: SchemaPool] (val x: Self) extends AnyVal {
+  implicit class SchemaPoolMutableBuilder[Self <: SchemaPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRestartUndefined: Self = StObject.set(x, "autoRestart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseInstanceName(value: String): Self = StObject.set(x, "baseInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRestart(value: Boolean): Self = this.set("autoRestart", value.asInstanceOf[js.Any])
+    def setBaseInstanceNameUndefined: Self = StObject.set(x, "baseInstanceName", js.undefined)
     
     @scala.inline
-    def deleteAutoRestart: Self = this.set("autoRestart", js.undefined)
+    def setCurrentNumReplicas(value: Double): Self = StObject.set(x, "currentNumReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseInstanceName(value: String): Self = this.set("baseInstanceName", value.asInstanceOf[js.Any])
+    def setCurrentNumReplicasUndefined: Self = StObject.set(x, "currentNumReplicas", js.undefined)
     
     @scala.inline
-    def deleteBaseInstanceName: Self = this.set("baseInstanceName", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNumReplicas(value: Double): Self = this.set("currentNumReplicas", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCurrentNumReplicas: Self = this.set("currentNumReplicas", js.undefined)
+    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
     
     @scala.inline
-    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = this.set("healthChecks", js.Array(value :_*))
+    def setInitialNumReplicas(value: Double): Self = StObject.set(x, "initialNumReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    def setInitialNumReplicasUndefined: Self = StObject.set(x, "initialNumReplicas", js.undefined)
     
     @scala.inline
-    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    def setLabels(value: js.Array[SchemaLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialNumReplicas(value: Double): Self = this.set("initialNumReplicas", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteInitialNumReplicas: Self = this.set("initialNumReplicas", js.undefined)
+    def setLabelsVarargs(value: SchemaLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: SchemaLabel*): Self = this.set("labels", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[SchemaLabel]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setNumReplicas(value: Double): Self = StObject.set(x, "numReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumReplicasUndefined: Self = StObject.set(x, "numReplicas", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setResourceViews(value: js.Array[String]): Self = StObject.set(x, "resourceViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumReplicas(value: Double): Self = this.set("numReplicas", value.asInstanceOf[js.Any])
+    def setResourceViewsUndefined: Self = StObject.set(x, "resourceViews", js.undefined)
     
     @scala.inline
-    def deleteNumReplicas: Self = this.set("numReplicas", js.undefined)
+    def setResourceViewsVarargs(value: String*): Self = StObject.set(x, "resourceViews", js.Array(value :_*))
     
     @scala.inline
-    def setResourceViewsVarargs(value: String*): Self = this.set("resourceViews", js.Array(value :_*))
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceViews(value: js.Array[String]): Self = this.set("resourceViews", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteResourceViews: Self = this.set("resourceViews", js.undefined)
+    def setTargetPool(value: String): Self = StObject.set(x, "targetPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setTargetPoolUndefined: Self = StObject.set(x, "targetPool", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetPool(value: String): Self = this.set("targetPool", value.asInstanceOf[js.Any])
+    def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
     @scala.inline
-    def deleteTargetPool: Self = this.set("targetPool", js.undefined)
+    def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
     
     @scala.inline
-    def setTargetPoolsVarargs(value: String*): Self = this.set("targetPools", js.Array(value :_*))
+    def setTemplate(value: SchemaTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetPools(value: js.Array[String]): Self = this.set("targetPools", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteTargetPools: Self = this.set("targetPools", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: SchemaTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

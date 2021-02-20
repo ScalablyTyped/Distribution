@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response from the GetAncestry method.
   */
 @js.native
-trait SchemaGetAncestryResponse extends js.Object {
+trait SchemaGetAncestryResponse extends StObject {
   
   /**
     * Ancestors are ordered from bottom to top of the resource hierarchy. The
@@ -26,27 +27,15 @@ object SchemaGetAncestryResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetAncestryResponseOps[Self <: SchemaGetAncestryResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetAncestryResponseMutableBuilder[Self <: SchemaGetAncestryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAncestor(value: js.Array[SchemaAncestor]): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAncestorVarargs(value: SchemaAncestor*): Self = this.set("ancestor", js.Array(value :_*))
-    
-    @scala.inline
-    def setAncestor(value: js.Array[SchemaAncestor]): Self = this.set("ancestor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAncestor: Self = this.set("ancestor", js.undefined)
+    def setAncestorVarargs(value: SchemaAncestor*): Self = StObject.set(x, "ancestor", js.Array(value :_*))
   }
 }

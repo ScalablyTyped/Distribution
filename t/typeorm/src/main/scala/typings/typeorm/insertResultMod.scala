@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.objectLiteralMod.ObjectLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/result/InsertResult", JSImport.Namespace)
-@js.native
-object insertResultMod extends js.Object {
+object insertResultMod {
   
+  @JSImport("typeorm/browser/query-builder/result/InsertResult", "InsertResult")
   @js.native
-  class InsertResult () extends js.Object {
+  class InsertResult () extends StObject {
     
     /**
       * Generated values returned by a database.

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,60 +112,48 @@ object XDebugging {
   }
   
   @scala.inline
-  implicit class XDebuggingOps[Self <: XDebugging] (val x: Self) extends AnyVal {
+  implicit class XDebuggingMutableBuilder[Self <: XDebugging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearAllBreakPoints(value: String => Unit): Self = StObject.set(x, "clearAllBreakPoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoContinue(value: () => Unit): Self = StObject.set(x, "doContinue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDumpVariable(value: (String, Double) => String): Self = StObject.set(x, "dumpVariable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStackTrace(value: SafeArray[String]): Self = this.set("StackTrace", value.asInstanceOf[js.Any])
+    def setEval(value: (String, Double) => String): Self = StObject.set(x, "eval", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClearAllBreakPoints(value: String => Unit): Self = this.set("clearAllBreakPoints", js.Any.fromFunction1(value))
+    def setGetContextInformation(value: Double => ContextInformation): Self = StObject.set(x, "getContextInformation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoContinue(value: () => Unit): Self = this.set("doContinue", js.Any.fromFunction0(value))
+    def setGetStackTrace(value: () => SafeArray[String]): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDumpVariable(value: (String, Double) => String): Self = this.set("dumpVariable", js.Any.fromFunction2(value))
+    def setIsVariable(value: (String, Double) => Boolean): Self = StObject.set(x, "isVariable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEval(value: (String, Double) => String): Self = this.set("eval", js.Any.fromFunction2(value))
+    def setSetBreakPoint(value: (String, Double, Boolean) => Double): Self = StObject.set(x, "setBreakPoint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetContextInformation(value: Double => ContextInformation): Self = this.set("getContextInformation", js.Any.fromFunction1(value))
+    def setSetVariable(value: (String, String, Double) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetStackTrace(value: () => SafeArray[String]): Self = this.set("getStackTrace", js.Any.fromFunction0(value))
+    def setStackTrace(value: SafeArray[String]): Self = StObject.set(x, "StackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVariable(value: (String, Double) => Boolean): Self = this.set("isVariable", js.Any.fromFunction2(value))
+    def setStepIn(value: () => Unit): Self = StObject.set(x, "stepIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetBreakPoint(value: (String, Double, Boolean) => Double): Self = this.set("setBreakPoint", js.Any.fromFunction3(value))
+    def setStepOut(value: () => Unit): Self = StObject.set(x, "stepOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetVariable(value: (String, String, Double) => Unit): Self = this.set("setVariable", js.Any.fromFunction3(value))
+    def setStepOver(value: () => Unit): Self = StObject.set(x, "stepOver", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStepIn(value: () => Unit): Self = this.set("stepIn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepOut(value: () => Unit): Self = this.set("stepOut", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepOver(value: () => Unit): Self = this.set("stepOver", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

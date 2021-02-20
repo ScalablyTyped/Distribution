@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HPOConfig extends js.Object {
+trait HPOConfig extends StObject {
   
   /**
     * The hyperparameters and their allowable ranges.
@@ -31,36 +32,24 @@ object HPOConfig {
   }
   
   @scala.inline
-  implicit class HPOConfigOps[Self <: HPOConfig] (val x: Self) extends AnyVal {
+  implicit class HPOConfigMutableBuilder[Self <: HPOConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmHyperParameterRanges(value: HyperParameterRanges): Self = StObject.set(x, "algorithmHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmHyperParameterRangesUndefined: Self = StObject.set(x, "algorithmHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHpoObjective(value: HPOObjective): Self = StObject.set(x, "hpoObjective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmHyperParameterRanges(value: HyperParameterRanges): Self = this.set("algorithmHyperParameterRanges", value.asInstanceOf[js.Any])
+    def setHpoObjectiveUndefined: Self = StObject.set(x, "hpoObjective", js.undefined)
     
     @scala.inline
-    def deleteAlgorithmHyperParameterRanges: Self = this.set("algorithmHyperParameterRanges", js.undefined)
+    def setHpoResourceConfig(value: HPOResourceConfig): Self = StObject.set(x, "hpoResourceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHpoObjective(value: HPOObjective): Self = this.set("hpoObjective", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHpoObjective: Self = this.set("hpoObjective", js.undefined)
-    
-    @scala.inline
-    def setHpoResourceConfig(value: HPOResourceConfig): Self = this.set("hpoResourceConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHpoResourceConfig: Self = this.set("hpoResourceConfig", js.undefined)
+    def setHpoResourceConfigUndefined: Self = StObject.set(x, "hpoResourceConfig", js.undefined)
   }
 }

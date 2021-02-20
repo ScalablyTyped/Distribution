@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GetAccountInfoParams extends CommonParams {
   
-      // if both these fields are missing, the user will select an account
+  // if both these fields are missing, the user will select an account
   var coin: String = js.native
   
   var path: js.UndefOr[js.Array[Double]] = js.native
   
-    // NOTE:
+  // NOTE:
   var xpub: js.UndefOr[String] = js.native
 }
 object GetAccountInfoParams {
@@ -24,36 +25,24 @@ object GetAccountInfoParams {
   }
   
   @scala.inline
-  implicit class GetAccountInfoParamsOps[Self <: GetAccountInfoParams] (val x: Self) extends AnyVal {
+  implicit class GetAccountInfoParamsMutableBuilder[Self <: GetAccountInfoParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setCoin(value: String): Self = this.set("coin", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setPathVarargs(value: Double*): Self = this.set("path", js.Array(value :_*))
+    def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[Double]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setXpub(value: String): Self = this.set("xpub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXpub: Self = this.set("xpub", js.undefined)
+    def setXpubUndefined: Self = StObject.set(x, "xpub", js.undefined)
   }
 }

@@ -8,23 +8,20 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/max_pool", JSImport.Namespace)
-@js.native
-object maxPoolMod extends js.Object {
+object maxPoolMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/max_pool", "maxPool")
   @js.native
-  object maxPool extends js.Object {
-    
-    def apply[T /* <: Tensor3D | Tensor4D */](
-      x: T | TensorLike,
-      filterSize: (js.Tuple2[Double, Double]) | Double,
-      strides: (js.Tuple2[Double, Double]) | Double,
-      pad: valid_ | same_ | Double,
-      dimRoundingMode: js.UndefOr[floor | round | ceil]
-    ): T = js.native
-  }
+  def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: (js.Tuple2[Double, Double]) | Double,
+    strides: (js.Tuple2[Double, Double]) | Double,
+    pad: valid_ | same_ | Double,
+    dimRoundingMode: js.UndefOr[floor | round | ceil]
+  ): T = js.native
 }

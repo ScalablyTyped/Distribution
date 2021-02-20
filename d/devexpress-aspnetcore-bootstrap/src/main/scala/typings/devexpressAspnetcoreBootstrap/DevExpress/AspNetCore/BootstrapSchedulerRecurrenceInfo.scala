@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapSchedulerRecurrenceInfo extends js.Object {
+trait BootstrapSchedulerRecurrenceInfo extends StObject {
   
   def getDayNumber(): Double = js.native
   
@@ -87,87 +88,75 @@ object BootstrapSchedulerRecurrenceInfo {
   }
   
   @scala.inline
-  implicit class BootstrapSchedulerRecurrenceInfoOps[Self <: BootstrapSchedulerRecurrenceInfo] (val x: Self) extends AnyVal {
+  implicit class BootstrapSchedulerRecurrenceInfoMutableBuilder[Self <: BootstrapSchedulerRecurrenceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDayNumber(value: () => Double): Self = StObject.set(x, "getDayNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEnd(value: () => Date): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDayNumber(value: () => Double): Self = this.set("getDayNumber", js.Any.fromFunction0(value))
+    def setGetMonth(value: () => Double): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDuration(value: () => Double): Self = this.set("getDuration", js.Any.fromFunction0(value))
+    def setGetOccurrenceCount(value: () => Double): Self = StObject.set(x, "getOccurrenceCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnd(value: () => Date): Self = this.set("getEnd", js.Any.fromFunction0(value))
+    def setGetPeriodicity(value: () => Double): Self = StObject.set(x, "getPeriodicity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMonth(value: () => Double): Self = this.set("getMonth", js.Any.fromFunction0(value))
+    def setGetRange(value: () => BootstrapSchedulerRecurrenceRange): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOccurrenceCount(value: () => Double): Self = this.set("getOccurrenceCount", js.Any.fromFunction0(value))
+    def setGetRecurrenceType(value: () => BootstrapSchedulerRecurrenceType): Self = StObject.set(x, "getRecurrenceType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPeriodicity(value: () => Double): Self = this.set("getPeriodicity", js.Any.fromFunction0(value))
+    def setGetStart(value: () => Date): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRange(value: () => BootstrapSchedulerRecurrenceRange): Self = this.set("getRange", js.Any.fromFunction0(value))
+    def setGetWeekDays(value: () => WeekDays): Self = StObject.set(x, "getWeekDays", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecurrenceType(value: () => BootstrapSchedulerRecurrenceType): Self = this.set("getRecurrenceType", js.Any.fromFunction0(value))
+    def setGetWeekOfMonth(value: () => WeekOfMonth): Self = StObject.set(x, "getWeekOfMonth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStart(value: () => Date): Self = this.set("getStart", js.Any.fromFunction0(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWeekDays(value: () => WeekDays): Self = this.set("getWeekDays", js.Any.fromFunction0(value))
+    def setSetDayNumber(value: Double => Unit): Self = StObject.set(x, "setDayNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWeekOfMonth(value: () => WeekOfMonth): Self = this.set("getWeekOfMonth", js.Any.fromFunction0(value))
+    def setSetDuration(value: Double => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setSetEnd(value: Date => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDayNumber(value: Double => Unit): Self = this.set("setDayNumber", js.Any.fromFunction1(value))
+    def setSetMonth(value: Double => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDuration(value: Double => Unit): Self = this.set("setDuration", js.Any.fromFunction1(value))
+    def setSetOccurrenceCount(value: Double => Unit): Self = StObject.set(x, "setOccurrenceCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnd(value: Date => Unit): Self = this.set("setEnd", js.Any.fromFunction1(value))
+    def setSetPeriodicity(value: Double => Unit): Self = StObject.set(x, "setPeriodicity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMonth(value: Double => Unit): Self = this.set("setMonth", js.Any.fromFunction1(value))
+    def setSetRange(value: BootstrapSchedulerRecurrenceRange => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOccurrenceCount(value: Double => Unit): Self = this.set("setOccurrenceCount", js.Any.fromFunction1(value))
+    def setSetRecurrenceType(value: BootstrapSchedulerRecurrenceType => Unit): Self = StObject.set(x, "setRecurrenceType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPeriodicity(value: Double => Unit): Self = this.set("setPeriodicity", js.Any.fromFunction1(value))
+    def setSetStart(value: Date => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRange(value: BootstrapSchedulerRecurrenceRange => Unit): Self = this.set("setRange", js.Any.fromFunction1(value))
+    def setSetWeekDays(value: WeekDays => Unit): Self = StObject.set(x, "setWeekDays", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRecurrenceType(value: BootstrapSchedulerRecurrenceType => Unit): Self = this.set("setRecurrenceType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStart(value: Date => Unit): Self = this.set("setStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetWeekDays(value: WeekDays => Unit): Self = this.set("setWeekDays", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetWeekOfMonth(value: WeekOfMonth => Unit): Self = this.set("setWeekOfMonth", js.Any.fromFunction1(value))
+    def setSetWeekOfMonth(value: WeekOfMonth => Unit): Self = StObject.set(x, "setWeekOfMonth", js.Any.fromFunction1(value))
   }
 }

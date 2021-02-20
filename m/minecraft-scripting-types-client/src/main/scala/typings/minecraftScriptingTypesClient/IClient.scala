@@ -1,11 +1,12 @@
 package typings.minecraftScriptingTypesClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClient extends js.Object {
+trait IClient extends StObject {
   
   def log(message: String): Unit = js.native
   
@@ -20,24 +21,12 @@ object IClient {
   }
   
   @scala.inline
-  implicit class IClientOps[Self <: IClient] (val x: Self) extends AnyVal {
+  implicit class IClientMutableBuilder[Self <: IClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLog(value: String => Unit): Self = this.set("log", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterSystem(value: (Double, Double) => js.Any): Self = this.set("registerSystem", js.Any.fromFunction2(value))
+    def setRegisterSystem(value: (Double, Double) => js.Any): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
   }
 }

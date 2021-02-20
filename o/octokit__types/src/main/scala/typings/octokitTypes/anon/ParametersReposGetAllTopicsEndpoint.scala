@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposGetAllTopicsEndpoint
 import typings.octokitTypes.endpointsMod.ReposGetAllTopicsRequestOptions
 import typings.octokitTypes.endpointsMod.ReposGetAllTopicsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposGetAllTopicsEndpoint extends js.Object {
+trait ParametersReposGetAllTopicsEndpoint extends StObject {
   
   var parameters: ReposGetAllTopicsEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposGetAllTopicsEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposGetAllTopicsEndpointOps[Self <: ParametersReposGetAllTopicsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposGetAllTopicsEndpointMutableBuilder[Self <: ParametersReposGetAllTopicsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposGetAllTopicsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposGetAllTopicsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposGetAllTopicsEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposGetAllTopicsRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetAllTopicsResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposGetAllTopicsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

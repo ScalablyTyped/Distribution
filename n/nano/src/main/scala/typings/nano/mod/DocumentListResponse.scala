@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/bulk-api.html#get--db-_all_docs
 @js.native
-trait DocumentListResponse[D] extends js.Object {
+trait DocumentListResponse[D] extends StObject {
   
   // Offset where the document list started.
   var offset: Double = js.native
@@ -30,36 +31,24 @@ object DocumentListResponse {
   }
   
   @scala.inline
-  implicit class DocumentListResponseOps[Self <: DocumentListResponse[_], D] (val x: Self with DocumentListResponse[D]) extends AnyVal {
+  implicit class DocumentListResponseMutableBuilder[Self <: DocumentListResponse[_], D] (val x: Self with DocumentListResponse[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRows(value: js.Array[DocumentResponseRow[D]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowsVarargs(value: DocumentResponseRow[D]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: DocumentResponseRow[D]*): Self = this.set("rows", js.Array(value :_*))
+    def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[DocumentResponseRow[D]]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_rows(value: Double): Self = this.set("total_rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate_seq(value: Double): Self = this.set("update_seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate_seq: Self = this.set("update_seq", js.undefined)
+    def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
   }
 }

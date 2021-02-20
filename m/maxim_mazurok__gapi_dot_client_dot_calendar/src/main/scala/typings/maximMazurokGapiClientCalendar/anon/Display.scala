@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCalendar.anon
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Display extends js.Object {
+trait Display extends StObject {
   
   /**
     * The gadget's display mode. Deprecated. Possible values are:
@@ -49,70 +50,58 @@ object Display {
   }
   
   @scala.inline
-  implicit class DisplayOps[Self <: Display] (val x: Self) extends AnyVal {
+  implicit class DisplayMutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setIconLink(value: String): Self = StObject.set(x, "iconLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIconLinkUndefined: Self = StObject.set(x, "iconLink", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconLink(value: String): Self = this.set("iconLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconLink: Self = this.set("iconLink", js.undefined)
-    
-    @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
     def setPreferences(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display with TopLevel[js.Any]
-    ): Self = this.set("preferences", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferences: Self = this.set("preferences", js.undefined)
+    def setPreferencesUndefined: Self = StObject.set(x, "preferences", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

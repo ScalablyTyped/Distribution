@@ -1,11 +1,12 @@
 package typings.lyricist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Avatar extends js.Object {
+trait Avatar extends StObject {
   
   var medium: AvatarConfig = js.native
   
@@ -24,30 +25,18 @@ object Avatar {
   }
   
   @scala.inline
-  implicit class AvatarOps[Self <: Avatar] (val x: Self) extends AnyVal {
+  implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedium(value: AvatarConfig): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSmall(value: AvatarConfig): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThumb(value: AvatarConfig): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: AvatarConfig): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmall(value: AvatarConfig): Self = this.set("small", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumb(value: AvatarConfig): Self = this.set("thumb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiny(value: AvatarConfig): Self = this.set("tiny", value.asInstanceOf[js.Any])
+    def setTiny(value: AvatarConfig): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
   }
 }

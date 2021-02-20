@@ -1,13 +1,12 @@
 package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.typesLimitExceededExceptionMod.LimitExceededException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/types/ListStreamsExceptionsUnion", JSImport.Namespace)
-@js.native
-object listStreamsExceptionsUnionMod extends js.Object {
+object listStreamsExceptionsUnionMod {
   
   type ListStreamsExceptionsUnion = LimitExceededException
 }

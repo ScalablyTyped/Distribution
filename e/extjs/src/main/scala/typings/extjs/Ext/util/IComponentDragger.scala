@@ -1,6 +1,7 @@
 package typings.extjs.Ext.util
 
 import typings.extjs.Ext.dd.IDragTracker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,48 +42,36 @@ object IComponentDragger {
   }
   
   @scala.inline
-  implicit class IComponentDraggerOps[Self <: IComponentDragger] (val x: Self) extends AnyVal {
+  implicit class IComponentDraggerMutableBuilder[Self <: IComponentDragger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstrainDelegate(value: Boolean): Self = StObject.set(x, "constrainDelegate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstrainDelegateUndefined: Self = StObject.set(x, "constrainDelegate", js.undefined)
     
     @scala.inline
-    def setConstrain(value: Boolean): Self = this.set("constrain", value.asInstanceOf[js.Any])
+    def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
     @scala.inline
-    def deleteConstrain: Self = this.set("constrain", js.undefined)
+    def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConstrainDelegate(value: Boolean): Self = this.set("constrainDelegate", value.asInstanceOf[js.Any])
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
     @scala.inline
-    def deleteConstrainDelegate: Self = this.set("constrainDelegate", js.undefined)
+    def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = this.set("onEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
-    
-    @scala.inline
-    def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
   }
 }

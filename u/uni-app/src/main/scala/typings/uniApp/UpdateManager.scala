@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateManager extends js.Object {
+trait UpdateManager extends StObject {
   
   /**
     * 当新版本下载完成，调用该方法会强制当前uni-app应用上新版本并重启

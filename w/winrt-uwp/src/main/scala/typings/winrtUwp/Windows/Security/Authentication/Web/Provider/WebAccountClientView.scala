@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the client view for a web account. Use this to control what information about an account from a provider is available to the client. */
 @js.native
-trait WebAccountClientView extends js.Object {
+trait WebAccountClientView extends StObject {
   
   /** Gets the account pairwise Id. */
   var accountPairwiseId: String = js.native
@@ -28,27 +29,15 @@ object WebAccountClientView {
   }
   
   @scala.inline
-  implicit class WebAccountClientViewOps[Self <: WebAccountClientView] (val x: Self) extends AnyVal {
+  implicit class WebAccountClientViewMutableBuilder[Self <: WebAccountClientView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountPairwiseId(value: String): Self = StObject.set(x, "accountPairwiseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountPairwiseId(value: String): Self = this.set("accountPairwiseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = this.set("applicationCallbackUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WebAccountClientViewType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: WebAccountClientViewType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

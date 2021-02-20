@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationRepositoryStoryResponseOwner extends js.Object {
+trait LocationRepositoryStoryResponseOwner extends StObject {
   
   var lat: Double = js.native
   
@@ -45,45 +46,33 @@ object LocationRepositoryStoryResponseOwner {
   }
   
   @scala.inline
-  implicit class LocationRepositoryStoryResponseOwnerOps[Self <: LocationRepositoryStoryResponseOwner] (val x: Self) extends AnyVal {
+  implicit class LocationRepositoryStoryResponseOwnerMutableBuilder[Self <: LocationRepositoryStoryResponseOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation_dict(value: LocationRepositoryStoryResponseLocationDict): Self = StObject.set(x, "location_dict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: Double): Self = this.set("lat", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLng(value: String): Self = this.set("lng", value.asInstanceOf[js.Any])
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation_dict(value: LocationRepositoryStoryResponseLocationDict): Self = this.set("location_dict", value.asInstanceOf[js.Any])
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProfile_pic_username(value: String): Self = StObject.set(x, "profile_pic_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile_pic_username(value: String): Self = this.set("profile_pic_username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShort_name(value: String): Self = this.set("short_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

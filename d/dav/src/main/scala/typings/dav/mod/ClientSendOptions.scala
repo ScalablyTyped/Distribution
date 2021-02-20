@@ -1,11 +1,12 @@
 package typings.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientSendOptions extends js.Object {
+trait ClientSendOptions extends StObject {
   
   /**
     * request sandbox.
@@ -26,30 +27,18 @@ object ClientSendOptions {
   }
   
   @scala.inline
-  implicit class ClientSendOptionsOps[Self <: ClientSendOptions] (val x: Self) extends AnyVal {
+  implicit class ClientSendOptionsMutableBuilder[Self <: ClientSendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Sandbox): Self = this.set("sandbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

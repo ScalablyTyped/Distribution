@@ -2,12 +2,13 @@ package typings.openseadragon.anon
 
 import typings.openseadragon.mod.Viewer
 import typings.openseadragon.mod.Viewport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugGridColor extends js.Object {
+trait DebugGridColor extends StObject {
   
   var debugGridColor: js.UndefOr[String] = js.native
   
@@ -26,33 +27,21 @@ object DebugGridColor {
   }
   
   @scala.inline
-  implicit class DebugGridColorOps[Self <: DebugGridColor] (val x: Self) extends AnyVal {
+  implicit class DebugGridColorMutableBuilder[Self <: DebugGridColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebugGridColor(value: String): Self = StObject.set(x, "debugGridColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugGridColorUndefined: Self = StObject.set(x, "debugGridColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: typings.std.Element): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setViewer(value: Viewer): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewer(value: Viewer): Self = this.set("viewer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewport(value: Viewport): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDebugGridColor(value: String): Self = this.set("debugGridColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebugGridColor: Self = this.set("debugGridColor", js.undefined)
+    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

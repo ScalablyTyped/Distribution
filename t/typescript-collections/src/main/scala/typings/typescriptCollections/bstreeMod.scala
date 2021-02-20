@@ -1,13 +1,13 @@
 package typings.typescriptCollections
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections/dist/lib/BSTree", JSImport.Namespace)
-@js.native
-object bstreeMod extends js.Object {
+object bstreeMod {
   
+  @JSImport("typescript-collections/dist/lib/BSTree", JSImport.Default)
   @js.native
   class default[T] ()
     extends typings.typescriptCollections.bstreekvMod.default[T, T]

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreatIntelIndicator extends js.Object {
+trait ThreatIntelIndicator extends StObject {
   
   /**
     * The category of a threat intelligence indicator.
@@ -46,54 +47,42 @@ object ThreatIntelIndicator {
   }
   
   @scala.inline
-  implicit class ThreatIntelIndicatorOps[Self <: ThreatIntelIndicator] (val x: Self) extends AnyVal {
+  implicit class ThreatIntelIndicatorMutableBuilder[Self <: ThreatIntelIndicator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: ThreatIntelIndicatorCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastObservedAt(value: NonEmptyString): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: ThreatIntelIndicatorCategory): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setSource(value: NonEmptyString): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastObservedAt(value: NonEmptyString): Self = this.set("LastObservedAt", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
-    def deleteLastObservedAt: Self = this.set("LastObservedAt", js.undefined)
+    def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: NonEmptyString): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setType(value: ThreatIntelIndicatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUrl(value: NonEmptyString): Self = this.set("SourceUrl", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteSourceUrl: Self = this.set("SourceUrl", js.undefined)
+    def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ThreatIntelIndicatorType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setValue(value: NonEmptyString): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

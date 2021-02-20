@@ -5,6 +5,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.closed
 import typings.elasticElasticsearch.elasticElasticsearchStrings.hidden
 import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,48 +34,36 @@ object MlPutDatafeed {
   }
   
   @scala.inline
-  implicit class MlPutDatafeedOps[Self <: MlPutDatafeed[_], T] (val x: Self with MlPutDatafeed[T]) extends AnyVal {
+  implicit class MlPutDatafeedMutableBuilder[Self <: MlPutDatafeed[_], T] (val x: Self with MlPutDatafeed[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_no_indicesUndefined: Self = StObject.set(x, "allow_no_indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatafeed_id(value: String): Self = this.set("datafeed_id", value.asInstanceOf[js.Any])
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_no_indices(value: Boolean): Self = this.set("allow_no_indices", value.asInstanceOf[js.Any])
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def deleteAllow_no_indices: Self = this.set("allow_no_indices", js.undefined)
+    def setIgnore_throttled(value: Boolean): Self = StObject.set(x, "ignore_throttled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    def setIgnore_throttledUndefined: Self = StObject.set(x, "ignore_throttled", js.undefined)
     
     @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_throttled(value: Boolean): Self = this.set("ignore_throttled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnore_throttled: Self = this.set("ignore_throttled", js.undefined)
-    
-    @scala.inline
-    def setIgnore_unavailable(value: Boolean): Self = this.set("ignore_unavailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnore_unavailable: Self = this.set("ignore_unavailable", js.undefined)
+    def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendingOptions extends js.Object {
+trait SendingOptions extends StObject {
   
   /**
     * If true, email sending is enabled for the configuration set. If false, email sending is disabled for the configuration set.
@@ -21,24 +22,12 @@ object SendingOptions {
   }
   
   @scala.inline
-  implicit class SendingOptionsOps[Self <: SendingOptions] (val x: Self) extends AnyVal {
+  implicit class SendingOptionsMutableBuilder[Self <: SendingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = this.set("SendingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendingEnabled: Self = this.set("SendingEnabled", js.undefined)
+    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

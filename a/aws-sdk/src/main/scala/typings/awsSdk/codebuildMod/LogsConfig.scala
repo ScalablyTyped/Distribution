@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogsConfig extends js.Object {
+trait LogsConfig extends StObject {
   
   /**
     *  Information about Amazon CloudWatch Logs for a build project. Amazon CloudWatch Logs are enabled by default. 
@@ -26,30 +27,18 @@ object LogsConfig {
   }
   
   @scala.inline
-  implicit class LogsConfigOps[Self <: LogsConfig] (val x: Self) extends AnyVal {
+  implicit class LogsConfigMutableBuilder[Self <: LogsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = StObject.set(x, "cloudWatchLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogsUndefined: Self = StObject.set(x, "cloudWatchLogs", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Logs(value: S3LogsConfig): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = this.set("cloudWatchLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudWatchLogs: Self = this.set("cloudWatchLogs", js.undefined)
-    
-    @scala.inline
-    def setS3Logs(value: S3LogsConfig): Self = this.set("s3Logs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Logs: Self = this.set("s3Logs", js.undefined)
+    def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
   }
 }

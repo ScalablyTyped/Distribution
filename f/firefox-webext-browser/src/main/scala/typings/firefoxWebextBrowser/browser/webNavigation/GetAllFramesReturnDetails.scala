@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAllFramesReturnDetails extends js.Object {
+trait GetAllFramesReturnDetails extends StObject {
   
   /**
     * True if the last navigation in this frame was interrupted by an error, i.e. the onErrorOccurred event fired.
@@ -41,42 +42,30 @@ object GetAllFramesReturnDetails {
   }
   
   @scala.inline
-  implicit class GetAllFramesReturnDetailsOps[Self <: GetAllFramesReturnDetails] (val x: Self) extends AnyVal {
+  implicit class GetAllFramesReturnDetailsMutableBuilder[Self <: GetAllFramesReturnDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorOccurredUndefined: Self = StObject.set(x, "errorOccurred", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameId(value: Double): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFrameId(value: Double): Self = this.set("parentFrameId", value.asInstanceOf[js.Any])
+    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorOccurred(value: Boolean): Self = this.set("errorOccurred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorOccurred: Self = this.set("errorOccurred", js.undefined)
-    
-    @scala.inline
-    def setProcessId(value: Double): Self = this.set("processId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessId: Self = this.set("processId", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

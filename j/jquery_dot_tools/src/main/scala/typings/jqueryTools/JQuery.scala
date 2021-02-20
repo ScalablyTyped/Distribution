@@ -3,12 +3,13 @@ package typings.jqueryTools
 import typings.jqueryTools.JQueryTools.overlay.Overlay
 import typings.jqueryTools.JQueryTools.overlay.OverlayOptions
 import typings.jqueryTools.jqueryToolsStrings.overlay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   @JSName("data")
   def data_overlay(key: overlay): Overlay = js.native

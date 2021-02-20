@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitTable extends js.Object {
+trait TransitTable extends StObject {
   
   /**
     * A list of postal group names. The last value can be `"all other locations"`. Example: `["zone 1", "zone 2", "all other locations"]`. The referred postal code groups must match the
@@ -27,45 +28,33 @@ object TransitTable {
   }
   
   @scala.inline
-  implicit class TransitTableOps[Self <: TransitTable] (val x: Self) extends AnyVal {
+  implicit class TransitTableMutableBuilder[Self <: TransitTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
     
     @scala.inline
-    def setPostalCodeGroupNamesVarargs(value: String*): Self = this.set("postalCodeGroupNames", js.Array(value :_*))
+    def setRows(value: js.Array[TransitTableTransitTimeRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCodeGroupNames(value: js.Array[String]): Self = this.set("postalCodeGroupNames", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deletePostalCodeGroupNames: Self = this.set("postalCodeGroupNames", js.undefined)
+    def setRowsVarargs(value: TransitTableTransitTimeRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: TransitTableTransitTimeRow*): Self = this.set("rows", js.Array(value :_*))
+    def setTransitTimeLabels(value: js.Array[String]): Self = StObject.set(x, "transitTimeLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[TransitTableTransitTimeRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setTransitTimeLabelsUndefined: Self = StObject.set(x, "transitTimeLabels", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setTransitTimeLabelsVarargs(value: String*): Self = this.set("transitTimeLabels", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitTimeLabels(value: js.Array[String]): Self = this.set("transitTimeLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitTimeLabels: Self = this.set("transitTimeLabels", js.undefined)
+    def setTransitTimeLabelsVarargs(value: String*): Self = StObject.set(x, "transitTimeLabels", js.Array(value :_*))
   }
 }

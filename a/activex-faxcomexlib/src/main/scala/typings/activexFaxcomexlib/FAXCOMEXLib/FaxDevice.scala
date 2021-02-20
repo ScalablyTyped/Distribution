@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxDevice Class */
 @js.native
-trait FaxDevice extends js.Object {
+trait FaxDevice extends StObject {
   
   /** Answer the call */
   def AnswerCall(): Unit = js.native
@@ -104,81 +105,69 @@ object FaxDevice {
   }
   
   @scala.inline
-  implicit class FaxDeviceOps[Self <: FaxDevice] (val x: Self) extends AnyVal {
+  implicit class FaxDeviceMutableBuilder[Self <: FaxDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswerCall(value: () => Unit): Self = StObject.set(x, "AnswerCall", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswerCall(value: () => Unit): Self = this.set("AnswerCall", js.Any.fromFunction0(value))
+    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCSID(value: String): Self = this.set("CSID", value.asInstanceOf[js.Any])
+    def setFAXCOMEXLibDotFaxDevice_typekey(value: FaxDevice): Self = StObject.set(x, "FAXCOMEXLib.FaxDevice_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGetExtensionProperty(value: String => SafeArray[_]): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxDevice_typekey(value: FaxDevice): Self = this.set("FAXCOMEXLib.FaxDevice_typekey", value.asInstanceOf[js.Any])
+    def setPoweredOff(value: Boolean): Self = StObject.set(x, "PoweredOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExtensionProperty(value: String => SafeArray[_]): Self = this.set("GetExtensionProperty", js.Any.fromFunction1(value))
+    def setProviderUniqueName(value: String): Self = StObject.set(x, "ProviderUniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setReceiveMode(value: FAX_DEVICE_RECEIVE_MODE_ENUM): Self = StObject.set(x, "ReceiveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoweredOff(value: Boolean): Self = this.set("PoweredOff", value.asInstanceOf[js.Any])
+    def setReceivingNow(value: Boolean): Self = StObject.set(x, "ReceivingNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderUniqueName(value: String): Self = this.set("ProviderUniqueName", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReceiveMode(value: FAX_DEVICE_RECEIVE_MODE_ENUM): Self = this.set("ReceiveMode", value.asInstanceOf[js.Any])
+    def setRingingNow(value: Boolean): Self = StObject.set(x, "RingingNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivingNow(value: Boolean): Self = this.set("ReceivingNow", value.asInstanceOf[js.Any])
+    def setRingsBeforeAnswer(value: Double): Self = StObject.set(x, "RingsBeforeAnswer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRingingNow(value: Boolean): Self = this.set("RingingNow", value.asInstanceOf[js.Any])
+    def setSendEnabled(value: Boolean): Self = StObject.set(x, "SendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRingsBeforeAnswer(value: Double): Self = this.set("RingsBeforeAnswer", value.asInstanceOf[js.Any])
+    def setSendingNow(value: Boolean): Self = StObject.set(x, "SendingNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    def setSetExtensionProperty(value: (String, SafeArray[_]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSendEnabled(value: Boolean): Self = this.set("SendEnabled", value.asInstanceOf[js.Any])
+    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendingNow(value: Boolean): Self = this.set("SendingNow", value.asInstanceOf[js.Any])
+    def setUseRoutingMethod(value: (String, Boolean) => Unit): Self = StObject.set(x, "UseRoutingMethod", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetExtensionProperty(value: (String, SafeArray[_]) => Unit): Self = this.set("SetExtensionProperty", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTSID(value: String): Self = this.set("TSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseRoutingMethod(value: (String, Boolean) => Unit): Self = this.set("UseRoutingMethod", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUsedRoutingMethods(value: SafeArray[String]): Self = this.set("UsedRoutingMethods", value.asInstanceOf[js.Any])
+    def setUsedRoutingMethods(value: SafeArray[String]): Self = StObject.set(x, "UsedRoutingMethods", value.asInstanceOf[js.Any])
   }
 }

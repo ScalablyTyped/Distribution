@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2ConfirmationValueSpec extends js.Object {
+trait GoogleActionsV2ConfirmationValueSpec extends StObject {
   
   /**
     * Configures dialog that asks for confirmation.
@@ -21,24 +22,12 @@ object GoogleActionsV2ConfirmationValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2ConfirmationValueSpecOps[Self <: GoogleActionsV2ConfirmationValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2ConfirmationValueSpecMutableBuilder[Self <: GoogleActionsV2ConfirmationValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialogSpec(value: GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDialogSpec(value: GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec): Self = this.set("dialogSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDialogSpec: Self = this.set("dialogSpec", js.undefined)
+    def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
   }
 }

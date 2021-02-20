@@ -1,13 +1,14 @@
 package typings.yaml.typesMod
 
 import typings.yaml.utilMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Node")
 @js.native
-class Node () extends js.Object {
+class Node () extends StObject {
   
   /** A comment on or immediately after this */
   var comment: js.UndefOr[String | Null] = js.native

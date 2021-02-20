@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecencyDimension extends js.Object {
+trait RecencyDimension extends StObject {
   
   /**
     * The duration to use when determining whether an endpoint is active or inactive.
@@ -26,24 +27,12 @@ object RecencyDimension {
   }
   
   @scala.inline
-  implicit class RecencyDimensionOps[Self <: RecencyDimension] (val x: Self) extends AnyVal {
+  implicit class RecencyDimensionMutableBuilder[Self <: RecencyDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDuration(value: Duration): Self = this.set("Duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecencyType(value: RecencyType): Self = this.set("RecencyType", value.asInstanceOf[js.Any])
+    def setRecencyType(value: RecencyType): Self = StObject.set(x, "RecencyType", value.asInstanceOf[js.Any])
   }
 }

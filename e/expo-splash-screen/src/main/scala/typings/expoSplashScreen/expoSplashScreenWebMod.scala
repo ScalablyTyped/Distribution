@@ -1,20 +1,24 @@
 package typings.expoSplashScreen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-splash-screen/build/ExpoSplashScreen.web", JSImport.Namespace)
-@js.native
-object expoSplashScreenWebMod extends js.Object {
+object expoSplashScreenWebMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("expo-splash-screen/build/ExpoSplashScreen.web", "default.hideAsync")
+    @js.native
     def hideAsync(): Boolean = js.native
     
+    @JSImport("expo-splash-screen/build/ExpoSplashScreen.web", "default.name")
+    @js.native
     val name: String = js.native
     
+    @JSImport("expo-splash-screen/build/ExpoSplashScreen.web", "default.preventAutoHideAsync")
+    @js.native
     def preventAutoHideAsync(): Boolean = js.native
   }
 }

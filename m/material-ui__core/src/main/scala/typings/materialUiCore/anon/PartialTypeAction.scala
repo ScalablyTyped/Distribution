@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeAction> */
 @js.native
-trait PartialTypeAction extends js.Object {
+trait PartialTypeAction extends StObject {
   
   var active: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object PartialTypeAction {
   }
   
   @scala.inline
-  implicit class PartialTypeActionOps[Self <: PartialTypeAction] (val x: Self) extends AnyVal {
+  implicit class PartialTypeActionMutableBuilder[Self <: PartialTypeAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setDisabledBackground(value: String): Self = StObject.set(x, "disabledBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setDisabledBackgroundUndefined: Self = StObject.set(x, "disabledBackground", js.undefined)
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledBackground(value: String): Self = this.set("disabledBackground", value.asInstanceOf[js.Any])
+    def setHoverOpacity(value: Double): Self = StObject.set(x, "hoverOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledBackground: Self = this.set("disabledBackground", js.undefined)
+    def setHoverOpacityUndefined: Self = StObject.set(x, "hoverOpacity", js.undefined)
     
     @scala.inline
-    def setHover(value: String): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverOpacity(value: Double): Self = this.set("hoverOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoverOpacity: Self = this.set("hoverOpacity", js.undefined)
-    
-    @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

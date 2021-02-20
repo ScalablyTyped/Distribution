@@ -1,12 +1,13 @@
 package typings.webglExt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebGL 1 Extensions
 @js.native
-trait EXTColorBufferHalfFloat extends js.Object {
+trait EXTColorBufferHalfFloat extends StObject {
   
   val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: Double = js.native
   
@@ -30,30 +31,18 @@ object EXTColorBufferHalfFloat {
   }
   
   @scala.inline
-  implicit class EXTColorBufferHalfFloatOps[Self <: EXTColorBufferHalfFloat] (val x: Self) extends AnyVal {
+  implicit class EXTColorBufferHalfFloatMutableBuilder[Self <: EXTColorBufferHalfFloat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT(value: Double): Self = StObject.set(x, "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRGB16F_EXT(value: Double): Self = StObject.set(x, "RGB16F_EXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRGBA16F_EXT(value: Double): Self = StObject.set(x, "RGBA16F_EXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT(value: Double): Self = this.set("FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRGB16F_EXT(value: Double): Self = this.set("RGB16F_EXT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRGBA16F_EXT(value: Double): Self = this.set("RGBA16F_EXT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNSIGNED_NORMALIZED_EXT(value: Double): Self = this.set("UNSIGNED_NORMALIZED_EXT", value.asInstanceOf[js.Any])
+    def setUNSIGNED_NORMALIZED_EXT(value: Double): Self = StObject.set(x, "UNSIGNED_NORMALIZED_EXT", value.asInstanceOf[js.Any])
   }
 }

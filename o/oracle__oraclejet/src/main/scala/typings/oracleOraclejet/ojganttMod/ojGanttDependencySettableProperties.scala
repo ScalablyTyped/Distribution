@@ -5,6 +5,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.finishFinish
 import typings.oracleOraclejet.oracleOraclejetStrings.finishStart
 import typings.oracleOraclejet.oracleOraclejetStrings.startFinish
 import typings.oracleOraclejet.oracleOraclejetStrings.startStart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,39 +41,27 @@ object ojGanttDependencySettableProperties {
   }
   
   @scala.inline
-  implicit class ojGanttDependencySettablePropertiesOps[Self <: ojGanttDependencySettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojGanttDependencySettablePropertiesMutableBuilder[Self <: ojGanttDependencySettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPredecessorTaskId(value: js.Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
     
     @scala.inline
-    def setPredecessorTaskId(value: js.Any): Self = this.set("predecessorTaskId", value.asInstanceOf[js.Any])
+    def setSuccessorTaskId(value: js.Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessorTaskId(value: js.Any): Self = this.set("successorTaskId", value.asInstanceOf[js.Any])
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: finishStart | finishFinish | startStart | startFinish): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortDescNull: Self = this.set("shortDesc", null)
+    def setType(value: finishStart | finishFinish | startStart | startFinish): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

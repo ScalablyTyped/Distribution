@@ -25,6 +25,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,37 +155,25 @@ object ojButtonsetOneEventMap {
   }
   
   @scala.inline
-  implicit class ojButtonsetOneEventMapOps[Self <: ojButtonsetOneEventMap] (val x: Self) extends AnyVal {
+  implicit class ojButtonsetOneEventMapMutableBuilder[Self <: ojButtonsetOneEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = this.set("chromingChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = this.set("disabledChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayChanged(value: JetElementCustomEvent[all | icons]): Self = this.set("displayChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocusManagementChanged(value: JetElementCustomEvent[oneTabstop | none]): Self = this.set("focusManagementChanged", value.asInstanceOf[js.Any])
+    def setFocusManagementChanged(value: JetElementCustomEvent[oneTabstop | none]): Self = StObject.set(x, "focusManagementChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
         ]
-    ): Self = this.set("valueChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
   }
 }

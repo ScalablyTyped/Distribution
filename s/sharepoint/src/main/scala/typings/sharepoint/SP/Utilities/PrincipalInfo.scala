@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Utilities
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,45 +53,33 @@ object PrincipalInfo {
   }
   
   @scala.inline
-  implicit class PrincipalInfoOps[Self <: PrincipalInfo] (val x: Self) extends AnyVal {
+  implicit class PrincipalInfoMutableBuilder[Self <: PrincipalInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_department(value: () => String): Self = StObject.set(x, "get_department", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_email(value: () => String): Self = StObject.set(x, "get_email", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_department(value: () => String): Self = this.set("get_department", js.Any.fromFunction0(value))
+    def setGet_jobTitle(value: () => String): Self = StObject.set(x, "get_jobTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_displayName(value: () => String): Self = this.set("get_displayName", js.Any.fromFunction0(value))
+    def setGet_loginName(value: () => String): Self = StObject.set(x, "get_loginName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_email(value: () => String): Self = this.set("get_email", js.Any.fromFunction0(value))
+    def setGet_mobile(value: () => String): Self = StObject.set(x, "get_mobile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_jobTitle(value: () => String): Self = this.set("get_jobTitle", js.Any.fromFunction0(value))
+    def setGet_principalId(value: () => Double): Self = StObject.set(x, "get_principalId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_loginName(value: () => String): Self = this.set("get_loginName", js.Any.fromFunction0(value))
+    def setGet_principalType(value: () => PrincipalType): Self = StObject.set(x, "get_principalType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_mobile(value: () => String): Self = this.set("get_mobile", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_principalId(value: () => Double): Self = this.set("get_principalId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_principalType(value: () => PrincipalType): Self = this.set("get_principalType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_sIPAddress(value: () => String): Self = this.set("get_sIPAddress", js.Any.fromFunction0(value))
+    def setGet_sIPAddress(value: () => String): Self = StObject.set(x, "get_sIPAddress", js.Any.fromFunction0(value))
   }
 }

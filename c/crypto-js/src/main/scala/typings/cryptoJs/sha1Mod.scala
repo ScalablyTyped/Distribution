@@ -1,11 +1,20 @@
 package typings.cryptoJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.cryptoJs.mod.HasherHelper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("crypto-js/sha1", JSImport.Namespace)
-@js.native
-object sha1Mod extends TopLevel[HasherHelper]
+object sha1Mod extends Shortcut {
+  
+  @JSImport("crypto-js/sha1", JSImport.Namespace)
+  @js.native
+  val ^ : HasherHelper = js.native
+  
+  type _To = HasherHelper
+  
+  /* This means you don't have to write `^`, but can instead just say `sha1Mod.foo` */
+  override def _to: HasherHelper = ^
+}

@@ -1,6 +1,7 @@
 package typings.modernizr
 
 import typings.std.Boolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +20,9 @@ object DatauriBoolean {
   }
   
   @scala.inline
-  implicit class DatauriBooleanOps[Self <: DatauriBoolean] (val x: Self) extends AnyVal {
+  implicit class DatauriBooleanMutableBuilder[Self <: DatauriBoolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOver32kb(value: scala.Boolean): Self = this.set("over32kb", value.asInstanceOf[js.Any])
+    def setOver32kb(value: scala.Boolean): Self = StObject.set(x, "over32kb", value.asInstanceOf[js.Any])
   }
 }

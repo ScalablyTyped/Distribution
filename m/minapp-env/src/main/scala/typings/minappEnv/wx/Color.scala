@@ -1,5 +1,6 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -165,4 +166,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * | Yellow               | #FFFF00 |
   * | YellowGreen          | #9ACD32 | */
 @js.native
-trait Color extends js.Object
+trait Color extends StObject

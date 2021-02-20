@@ -1,6 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import typings.jsrsasign.jsrsasign.BigInteger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,27 +67,15 @@ object DEREnumerated {
   }
   
   @scala.inline
-  implicit class DEREnumeratedOps[Self <: DEREnumerated] (val x: Self) extends AnyVal {
+  implicit class DEREnumeratedMutableBuilder[Self <: DEREnumerated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetByBigInteger(value: BigInteger => Unit): Self = StObject.set(x, "setByBigInteger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetByInteger(value: Double => Unit): Self = StObject.set(x, "setByInteger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetByBigInteger(value: BigInteger => Unit): Self = this.set("setByBigInteger", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetByInteger(value: Double => Unit): Self = this.set("setByInteger", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValueHex(value: String => Unit): Self = this.set("setValueHex", js.Any.fromFunction1(value))
+    def setSetValueHex(value: String => Unit): Self = StObject.set(x, "setValueHex", js.Any.fromFunction1(value))
   }
 }

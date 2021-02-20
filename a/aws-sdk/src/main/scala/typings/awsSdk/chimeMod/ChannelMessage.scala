@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelMessage extends js.Object {
+trait ChannelMessage extends StObject {
   
   /**
     * The ARN of the channel.
@@ -68,84 +69,72 @@ object ChannelMessage {
   }
   
   @scala.inline
-  implicit class ChannelMessageOps[Self <: ChannelMessage] (val x: Self) extends AnyVal {
+  implicit class ChannelMessageMutableBuilder[Self <: ChannelMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelArn(value: ChimeArn): Self = this.set("ChannelArn", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
     @scala.inline
-    def deleteChannelArn: Self = this.set("ChannelArn", js.undefined)
+    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Content): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
+    def setLastEditedTimestamp(value: Timestamp): Self = StObject.set(x, "LastEditedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setLastEditedTimestampUndefined: Self = StObject.set(x, "LastEditedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEditedTimestamp(value: Timestamp): Self = this.set("LastEditedTimestamp", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteLastEditedTimestamp: Self = this.set("LastEditedTimestamp", js.undefined)
+    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = this.set("LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimestamp: Self = this.set("LastUpdatedTimestamp", js.undefined)
+    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: MessageId): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     @scala.inline
-    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    def setPersistence(value: ChannelMessagePersistenceType): Self = StObject.set(x, "Persistence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    def setPersistenceUndefined: Self = StObject.set(x, "Persistence", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    def setRedacted(value: NonNullableBoolean): Self = StObject.set(x, "Redacted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistence(value: ChannelMessagePersistenceType): Self = this.set("Persistence", value.asInstanceOf[js.Any])
+    def setRedactedUndefined: Self = StObject.set(x, "Redacted", js.undefined)
     
     @scala.inline
-    def deletePersistence: Self = this.set("Persistence", js.undefined)
+    def setSender(value: Identity): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedacted(value: NonNullableBoolean): Self = this.set("Redacted", value.asInstanceOf[js.Any])
+    def setSenderUndefined: Self = StObject.set(x, "Sender", js.undefined)
     
     @scala.inline
-    def deleteRedacted: Self = this.set("Redacted", js.undefined)
+    def setType(value: ChannelMessageType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSender(value: Identity): Self = this.set("Sender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSender: Self = this.set("Sender", js.undefined)
-    
-    @scala.inline
-    def setType(value: ChannelMessageType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

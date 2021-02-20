@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Cloud Autoscaler policy.
   */
 @js.native
-trait SchemaAutoscalingPolicy extends js.Object {
+trait SchemaAutoscalingPolicy extends StObject {
   
   /**
     * The number of seconds that the autoscaler should wait before it starts
@@ -61,57 +62,45 @@ object SchemaAutoscalingPolicy {
   }
   
   @scala.inline
-  implicit class SchemaAutoscalingPolicyOps[Self <: SchemaAutoscalingPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaAutoscalingPolicyMutableBuilder[Self <: SchemaAutoscalingPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoolDownPeriodSec(value: Double): Self = StObject.set(x, "coolDownPeriodSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoolDownPeriodSecUndefined: Self = StObject.set(x, "coolDownPeriodSec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpuUtilization(value: SchemaAutoscalingPolicyCpuUtilization): Self = StObject.set(x, "cpuUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoolDownPeriodSec(value: Double): Self = this.set("coolDownPeriodSec", value.asInstanceOf[js.Any])
+    def setCpuUtilizationUndefined: Self = StObject.set(x, "cpuUtilization", js.undefined)
     
     @scala.inline
-    def deleteCoolDownPeriodSec: Self = this.set("coolDownPeriodSec", js.undefined)
+    def setCustomMetricUtilizations(value: js.Array[SchemaAutoscalingPolicyCustomMetricUtilization]): Self = StObject.set(x, "customMetricUtilizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuUtilization(value: SchemaAutoscalingPolicyCpuUtilization): Self = this.set("cpuUtilization", value.asInstanceOf[js.Any])
+    def setCustomMetricUtilizationsUndefined: Self = StObject.set(x, "customMetricUtilizations", js.undefined)
     
     @scala.inline
-    def deleteCpuUtilization: Self = this.set("cpuUtilization", js.undefined)
+    def setCustomMetricUtilizationsVarargs(value: SchemaAutoscalingPolicyCustomMetricUtilization*): Self = StObject.set(x, "customMetricUtilizations", js.Array(value :_*))
     
     @scala.inline
-    def setCustomMetricUtilizationsVarargs(value: SchemaAutoscalingPolicyCustomMetricUtilization*): Self = this.set("customMetricUtilizations", js.Array(value :_*))
+    def setLoadBalancingUtilization(value: SchemaAutoscalingPolicyLoadBalancingUtilization): Self = StObject.set(x, "loadBalancingUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMetricUtilizations(value: js.Array[SchemaAutoscalingPolicyCustomMetricUtilization]): Self = this.set("customMetricUtilizations", value.asInstanceOf[js.Any])
+    def setLoadBalancingUtilizationUndefined: Self = StObject.set(x, "loadBalancingUtilization", js.undefined)
     
     @scala.inline
-    def deleteCustomMetricUtilizations: Self = this.set("customMetricUtilizations", js.undefined)
+    def setMaxNumReplicas(value: Double): Self = StObject.set(x, "maxNumReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancingUtilization(value: SchemaAutoscalingPolicyLoadBalancingUtilization): Self = this.set("loadBalancingUtilization", value.asInstanceOf[js.Any])
+    def setMaxNumReplicasUndefined: Self = StObject.set(x, "maxNumReplicas", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancingUtilization: Self = this.set("loadBalancingUtilization", js.undefined)
+    def setMinNumReplicas(value: Double): Self = StObject.set(x, "minNumReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumReplicas(value: Double): Self = this.set("maxNumReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxNumReplicas: Self = this.set("maxNumReplicas", js.undefined)
-    
-    @scala.inline
-    def setMinNumReplicas(value: Double): Self = this.set("minNumReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinNumReplicas: Self = this.set("minNumReplicas", js.undefined)
+    def setMinNumReplicasUndefined: Self = StObject.set(x, "minNumReplicas", js.undefined)
   }
 }

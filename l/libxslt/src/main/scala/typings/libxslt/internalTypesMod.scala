@@ -3,13 +3,12 @@ package typings.libxslt
 import typings.libxmljs.mod.Document
 import typings.libxslt.mod.Stylesheet
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libxslt/internal-types", JSImport.Namespace)
-@js.native
-object internalTypesMod extends js.Object {
+object internalTypesMod {
   
   type ApplyCallback = js.Function2[/* err */ Error | Null, /* result */ String | Document, Unit]
   

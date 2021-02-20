@@ -1,12 +1,13 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "NodeMaterialBlockConnectionPointMode")
 @js.native
-object NodeMaterialBlockConnectionPointMode extends js.Object {
+object NodeMaterialBlockConnectionPointMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

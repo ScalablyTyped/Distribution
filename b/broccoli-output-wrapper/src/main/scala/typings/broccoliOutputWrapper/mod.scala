@@ -34,18 +34,19 @@ import typings.node.fsMod.WriteFileOptions
 import typings.node.fsMod.symlink.Type
 import typings.std.Date
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("broccoli-output-wrapper", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("broccoli-output-wrapper", JSImport.Namespace)
+  @js.native
   def apply(node: js.Any): FSOutput = js.native
   
   @js.native
-  trait FSOutput extends js.Object {
+  trait FSOutput extends StObject {
     
     def appendFileSync(file: Double, data: String): Unit = js.native
     def appendFileSync(file: Double, data: String, options: WriteFileOptions): Unit = js.native

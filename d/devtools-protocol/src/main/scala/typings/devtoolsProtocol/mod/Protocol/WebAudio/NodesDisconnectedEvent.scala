@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodesDisconnectedEvent extends js.Object {
+trait NodesDisconnectedEvent extends StObject {
   
   var contextId: GraphObjectId = js.native
   
@@ -26,39 +27,27 @@ object NodesDisconnectedEvent {
   }
   
   @scala.inline
-  implicit class NodesDisconnectedEventOps[Self <: NodesDisconnectedEvent] (val x: Self) extends AnyVal {
+  implicit class NodesDisconnectedEventMutableBuilder[Self <: NodesDisconnectedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationId(value: GraphObjectId): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationInputIndex(value: Double): Self = StObject.set(x, "destinationInputIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextId(value: GraphObjectId): Self = this.set("contextId", value.asInstanceOf[js.Any])
+    def setDestinationInputIndexUndefined: Self = StObject.set(x, "destinationInputIndex", js.undefined)
     
     @scala.inline
-    def setDestinationId(value: GraphObjectId): Self = this.set("destinationId", value.asInstanceOf[js.Any])
+    def setSourceId(value: GraphObjectId): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: GraphObjectId): Self = this.set("sourceId", value.asInstanceOf[js.Any])
+    def setSourceOutputIndex(value: Double): Self = StObject.set(x, "sourceOutputIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationInputIndex(value: Double): Self = this.set("destinationInputIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationInputIndex: Self = this.set("destinationInputIndex", js.undefined)
-    
-    @scala.inline
-    def setSourceOutputIndex(value: Double): Self = this.set("sourceOutputIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceOutputIndex: Self = this.set("sourceOutputIndex", js.undefined)
+    def setSourceOutputIndexUndefined: Self = StObject.set(x, "sourceOutputIndex", js.undefined)
   }
 }

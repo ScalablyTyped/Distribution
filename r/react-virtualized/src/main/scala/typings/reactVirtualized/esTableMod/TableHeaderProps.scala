@@ -1,12 +1,13 @@
 package typings.reactVirtualized.esTableMod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableHeaderProps extends js.Object {
+trait TableHeaderProps extends StObject {
   
   var columnData: js.UndefOr[js.Any] = js.native
   
@@ -29,51 +30,39 @@ object TableHeaderProps {
   }
   
   @scala.inline
-  implicit class TableHeaderPropsOps[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
+  implicit class TableHeaderPropsMutableBuilder[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataKey(value: String): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    def setDisableSort(value: Boolean): Self = StObject.set(x, "disableSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnData(value: js.Any): Self = this.set("columnData", value.asInstanceOf[js.Any])
+    def setDisableSortUndefined: Self = StObject.set(x, "disableSort", js.undefined)
     
     @scala.inline
-    def deleteColumnData: Self = this.set("columnData", js.undefined)
+    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSort(value: Boolean): Self = this.set("disableSort", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteDisableSort: Self = this.set("disableSort", js.undefined)
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
-    
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
+    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
   }
 }

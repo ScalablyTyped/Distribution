@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoOrientation extends js.Object
+sealed trait PhotoOrientation extends StObject
 /** Indicates the Exchangeable Image File (EXIF) orientation flag of the photo. This flag describes how to rotate the photo to display it correctly. */
 @JSGlobal("Windows.Storage.FileProperties.PhotoOrientation")
 @js.native
-object PhotoOrientation extends js.Object {
+object PhotoOrientation extends StObject {
   
   /** Flip the photo horizontally. */
   @js.native

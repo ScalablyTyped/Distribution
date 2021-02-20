@@ -1,16 +1,16 @@
 package typings.webdriverManager
 
 import typings.webdriverManager.anon.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/binaries/config_source", JSImport.Namespace)
-@js.native
-object configSourceMod extends js.Object {
+object configSourceMod {
   
+  @JSImport("webdriver-manager/built/lib/binaries/config_source", "ConfigSource")
   @js.native
-  abstract class ConfigSource () extends js.Object {
+  abstract class ConfigSource () extends StObject {
     
     def getUrl(version: String): js.Promise[Url] = js.native
     
@@ -23,6 +23,7 @@ object configSourceMod extends js.Object {
     var out_dir: String = js.native
   }
   
+  @JSImport("webdriver-manager/built/lib/binaries/config_source", "GithubApiConfigSource")
   @js.native
   abstract class GithubApiConfigSource protected () extends JsonConfigSource {
     def this(name: String, url: String) = this()
@@ -32,6 +33,7 @@ object configSourceMod extends js.Object {
     /* private */ def requestJson(): js.Any = js.native
   }
   
+  @JSImport("webdriver-manager/built/lib/binaries/config_source", "JsonConfigSource")
   @js.native
   abstract class JsonConfigSource protected () extends ConfigSource {
     def this(name: String, jsonUrl: String) = this()
@@ -45,6 +47,7 @@ object configSourceMod extends js.Object {
     var name: String = js.native
   }
   
+  @JSImport("webdriver-manager/built/lib/binaries/config_source", "XmlConfigSource")
   @js.native
   abstract class XmlConfigSource protected () extends ConfigSource {
     def this(name: String, xmlUrl: String) = this()

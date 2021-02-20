@@ -2,13 +2,14 @@ package typings.storybookAddonKnobs.anon
 
 import typings.storybookAddonKnobs.filesMod.DateTypeKnobValue
 import typings.storybookAddonKnobs.filesMod.FileTypeKnob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FilesTypeProps> */
 @js.native
-trait PartialFilesTypeProps extends js.Object {
+trait PartialFilesTypeProps extends StObject {
   
   var knob: js.UndefOr[FileTypeKnob] = js.native
   
@@ -23,30 +24,18 @@ object PartialFilesTypeProps {
   }
   
   @scala.inline
-  implicit class PartialFilesTypePropsOps[Self <: PartialFilesTypeProps] (val x: Self) extends AnyVal {
+  implicit class PartialFilesTypePropsMutableBuilder[Self <: PartialFilesTypeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKnob(value: FileTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnChange(value: /* value */ DateTypeKnobValue => DateTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKnob(value: FileTypeKnob): Self = this.set("knob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKnob: Self = this.set("knob", js.undefined)
-    
-    @scala.inline
-    def setOnChange(value: /* value */ DateTypeKnobValue => DateTypeKnobValue): Self = this.set("onChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

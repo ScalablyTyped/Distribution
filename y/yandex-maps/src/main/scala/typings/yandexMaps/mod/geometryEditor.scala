@@ -5,14 +5,14 @@ import typings.yandexMaps.mod.geometryEditor.model.RootPolygon
 import typings.yandexMaps.mod.geometryEditor.view.MultiPath
 import typings.yandexMaps.mod.geometryEditor.view.Path
 import typings.yandexMaps.mod.vow.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "geometryEditor")
-@js.native
-object geometryEditor extends js.Object {
+object geometryEditor {
   
+  @JSImport("yandex-maps", "geometryEditor.Circle")
   @js.native
   class Circle protected () extends IGeometryEditor {
     def this(geometry: ICircleGeometry) = this()
@@ -23,6 +23,7 @@ object geometryEditor extends js.Object {
     def stopDrawing(): Promise = js.native
   }
   
+  @JSImport("yandex-maps", "geometryEditor.LineString")
   @js.native
   class LineString protected () extends IGeometryEditor {
     def this(geometry: ILineStringGeometry) = this()
@@ -45,6 +46,7 @@ object geometryEditor extends js.Object {
     def stopFraming(): Unit = js.native
   }
   
+  @JSImport("yandex-maps", "geometryEditor.Point")
   @js.native
   class Point () extends IGeometryEditor {
     
@@ -53,6 +55,7 @@ object geometryEditor extends js.Object {
     def stopDrawing(): Promise = js.native
   }
   
+  @JSImport("yandex-maps", "geometryEditor.Polygon")
   @js.native
   class Polygon protected () extends IGeometryEditor {
     def this(geometry: IPolygonGeometry, options: js.Object) = this()
@@ -74,9 +77,9 @@ object geometryEditor extends js.Object {
     def stopFraming(): Unit = js.native
   }
   
-  @js.native
-  object model extends js.Object {
+  object model {
     
+    @JSImport("yandex-maps", "geometryEditor.model.ChildLineString")
     @js.native
     class ChildLineString () extends IGeometryEditorChildModel {
       
@@ -93,9 +96,11 @@ object geometryEditor extends js.Object {
       def spliceVertices(start: Double, deleteCount: Double): js.Array[js.Array[Double]] = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.model.ChildLinearRing")
     @js.native
     class ChildLinearRing () extends ChildLineString
     
+    @JSImport("yandex-maps", "geometryEditor.model.ChildVertex")
     @js.native
     class ChildVertex () extends IGeometryEditorChildModel {
       
@@ -116,6 +121,7 @@ object geometryEditor extends js.Object {
       def setPrevVertex(prevVertex: ChildVertex): Unit = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.model.Edge")
     @js.native
     class Edge () extends IGeometryEditorModel {
       
@@ -128,9 +134,11 @@ object geometryEditor extends js.Object {
       def setPrevVertex(prevVertex: ChildVertex): Unit = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.model.EdgeGeometry")
     @js.native
     class EdgeGeometry () extends IGeometry
     
+    @JSImport("yandex-maps", "geometryEditor.model.RootLineString")
     @js.native
     class RootLineString () extends IGeometryEditorModel {
       
@@ -141,6 +149,7 @@ object geometryEditor extends js.Object {
       def spliceVertices(start: Double, deleteCount: Double): js.Array[js.Array[Double]] = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.model.RootPolygon")
     @js.native
     class RootPolygon () extends IGeometryEditorModel {
       
@@ -152,17 +161,18 @@ object geometryEditor extends js.Object {
     }
   }
   
-  @js.native
-  object view extends js.Object {
+  object view {
     
+    @JSImport("yandex-maps", "geometryEditor.view.Edge")
     @js.native
-    class Edge () extends js.Object {
+    class Edge () extends StObject {
       
       def getPlacemark(): GeoObject_[IGeometry, js.Object] = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.view.MultiPath")
     @js.native
-    class MultiPath () extends js.Object {
+    class MultiPath () extends StObject {
       
       def getEdgePlacemarks(): GeoObjectCollection = js.native
       
@@ -171,8 +181,9 @@ object geometryEditor extends js.Object {
       def getVertexPlacemarks(): GeoObjectCollection = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.view.Path")
     @js.native
-    class Path () extends js.Object {
+    class Path () extends StObject {
       
       def getEdgePlacemarks(): GeoObjectCollection = js.native
       
@@ -183,8 +194,9 @@ object geometryEditor extends js.Object {
       def getVertexViews(): js.Array[Vertex] = js.native
     }
     
+    @JSImport("yandex-maps", "geometryEditor.view.Vertex")
     @js.native
-    class Vertex () extends js.Object {
+    class Vertex () extends StObject {
       
       def getPlacemark(): GeoObject_[IGeometry, js.Object] = js.native
     }

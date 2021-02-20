@@ -1,12 +1,13 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "TonemappingOperator")
 @js.native
-object TonemappingOperator extends js.Object {
+object TonemappingOperator extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.tonemapPostProcessMod.TonemappingOperator with Double] = js.native

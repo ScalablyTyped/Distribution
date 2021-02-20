@@ -1,12 +1,13 @@
 package typings.ipp.anon
 
 import typings.ipp.mod.CharacterSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attributescharset extends js.Object {
+trait Attributescharset extends StObject {
   
   var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
   
@@ -26,39 +27,27 @@ object Attributescharset {
   }
   
   @scala.inline
-  implicit class AttributescharsetOps[Self <: Attributescharset] (val x: Self) extends AnyVal {
+  implicit class AttributescharsetMutableBuilder[Self <: Attributescharset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAttributes-charsetUndefined`: Self = StObject.set(x, "attributes-charset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRequesting-user-name`(value: String): Self = this.set("requesting-user-name", value.asInstanceOf[js.Any])
+    def `setAttributes-natural-languageUndefined`: Self = StObject.set(x, "attributes-natural-language", js.undefined)
     
     @scala.inline
-    def `setAttributes-charset`(value: CharacterSet): Self = this.set("attributes-charset", value.asInstanceOf[js.Any])
+    def `setPrinter-uri`(value: String): Self = StObject.set(x, "printer-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAttributes-charset`: Self = this.set("attributes-charset", js.undefined)
+    def `setPrinter-uriUndefined`: Self = StObject.set(x, "printer-uri", js.undefined)
     
     @scala.inline
-    def `setAttributes-natural-language`(value: String): Self = this.set("attributes-natural-language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteAttributes-natural-language`: Self = this.set("attributes-natural-language", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-uri`(value: String): Self = this.set("printer-uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-uri`: Self = this.set("printer-uri", js.undefined)
+    def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
   }
 }

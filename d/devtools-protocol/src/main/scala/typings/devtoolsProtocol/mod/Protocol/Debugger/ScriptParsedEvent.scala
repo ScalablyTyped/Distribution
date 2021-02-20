@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.ExecutionContextId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptParsedEvent extends js.Object {
+trait ScriptParsedEvent extends StObject {
   
   /**
     * If the scriptLanguage is WebAssembly, the code section offset in the module.
@@ -124,108 +125,96 @@ object ScriptParsedEvent {
   }
   
   @scala.inline
-  implicit class ScriptParsedEventOps[Self <: ScriptParsedEvent] (val x: Self) extends AnyVal {
+  implicit class ScriptParsedEventMutableBuilder[Self <: ScriptParsedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeOffset(value: integer): Self = StObject.set(x, "codeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeOffsetUndefined: Self = StObject.set(x, "codeOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugSymbols(value: DebugSymbols): Self = StObject.set(x, "debugSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: integer): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setDebugSymbolsUndefined: Self = StObject.set(x, "debugSymbols", js.undefined)
     
     @scala.inline
-    def setEndLine(value: integer): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setEmbedderName(value: String): Self = StObject.set(x, "embedderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = this.set("executionContextId", value.asInstanceOf[js.Any])
+    def setEmbedderNameUndefined: Self = StObject.set(x, "embedderName", js.undefined)
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setEndColumn(value: integer): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    def setEndLine(value: integer): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: integer): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setExecutionContextAuxData(value: js.Any): Self = StObject.set(x, "executionContextAuxData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLine(value: integer): Self = this.set("startLine", value.asInstanceOf[js.Any])
+    def setExecutionContextAuxDataUndefined: Self = StObject.set(x, "executionContextAuxData", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeOffset(value: integer): Self = this.set("codeOffset", value.asInstanceOf[js.Any])
+    def setHasSourceURL(value: Boolean): Self = StObject.set(x, "hasSourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodeOffset: Self = this.set("codeOffset", js.undefined)
+    def setHasSourceURLUndefined: Self = StObject.set(x, "hasSourceURL", js.undefined)
     
     @scala.inline
-    def setDebugSymbols(value: DebugSymbols): Self = this.set("debugSymbols", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebugSymbols: Self = this.set("debugSymbols", js.undefined)
+    def setIsLiveEdit(value: Boolean): Self = StObject.set(x, "isLiveEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedderName(value: String): Self = this.set("embedderName", value.asInstanceOf[js.Any])
+    def setIsLiveEditUndefined: Self = StObject.set(x, "isLiveEdit", js.undefined)
     
     @scala.inline
-    def deleteEmbedderName: Self = this.set("embedderName", js.undefined)
+    def setIsModule(value: Boolean): Self = StObject.set(x, "isModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionContextAuxData(value: js.Any): Self = this.set("executionContextAuxData", value.asInstanceOf[js.Any])
+    def setIsModuleUndefined: Self = StObject.set(x, "isModule", js.undefined)
     
     @scala.inline
-    def deleteExecutionContextAuxData: Self = this.set("executionContextAuxData", js.undefined)
+    def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSourceURL(value: Boolean): Self = this.set("hasSourceURL", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteHasSourceURL: Self = this.set("hasSourceURL", js.undefined)
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLiveEdit(value: Boolean): Self = this.set("isLiveEdit", value.asInstanceOf[js.Any])
+    def setScriptLanguage(value: ScriptLanguage): Self = StObject.set(x, "scriptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsLiveEdit: Self = this.set("isLiveEdit", js.undefined)
+    def setScriptLanguageUndefined: Self = StObject.set(x, "scriptLanguage", js.undefined)
     
     @scala.inline
-    def setIsModule(value: Boolean): Self = this.set("isModule", value.asInstanceOf[js.Any])
+    def setSourceMapURL(value: String): Self = StObject.set(x, "sourceMapURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsModule: Self = this.set("isModule", js.undefined)
+    def setSourceMapURLUndefined: Self = StObject.set(x, "sourceMapURL", js.undefined)
     
     @scala.inline
-    def setLength(value: integer): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
     @scala.inline
-    def setScriptLanguage(value: ScriptLanguage): Self = this.set("scriptLanguage", value.asInstanceOf[js.Any])
+    def setStartColumn(value: integer): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScriptLanguage: Self = this.set("scriptLanguage", js.undefined)
+    def setStartLine(value: integer): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceMapURL(value: String): Self = this.set("sourceMapURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMapURL: Self = this.set("sourceMapURL", js.undefined)
-    
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackTrace: Self = this.set("stackTrace", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactTouch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HoldableProps extends js.Object {
+trait HoldableProps extends StObject {
   
   /** @see defineHold */
   var config: js.UndefOr[HoldableConfig] = js.native
@@ -27,48 +28,36 @@ object HoldableProps {
   }
   
   @scala.inline
-  implicit class HoldablePropsOps[Self <: HoldableProps] (val x: Self) extends AnyVal {
+  implicit class HoldablePropsMutableBuilder[Self <: HoldableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: HoldableConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHoldComplete(value: () => Unit): Self = StObject.set(x, "onHoldComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfig(value: HoldableConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setOnHoldCompleteUndefined: Self = StObject.set(x, "onHoldComplete", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setOnHoldProgress(value: () => Unit): Self = StObject.set(x, "onHoldProgress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHoldComplete(value: () => Unit): Self = this.set("onHoldComplete", js.Any.fromFunction0(value))
+    def setOnHoldProgressUndefined: Self = StObject.set(x, "onHoldProgress", js.undefined)
     
     @scala.inline
-    def deleteOnHoldComplete: Self = this.set("onHoldComplete", js.undefined)
+    def setOnMouseDown(value: () => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHoldProgress(value: () => Unit): Self = this.set("onHoldProgress", js.Any.fromFunction0(value))
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteOnHoldProgress: Self = this.set("onHoldProgress", js.undefined)
+    def setOnTouchStart(value: () => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMouseDown(value: () => Unit): Self = this.set("onMouseDown", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
-    
-    @scala.inline
-    def setOnTouchStart(value: () => Unit): Self = this.set("onTouchStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
   }
 }

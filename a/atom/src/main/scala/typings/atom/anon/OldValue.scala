@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OldValue extends js.Object {
+trait OldValue extends StObject {
   
   var newValue: js.Array[String] = js.native
   
@@ -20,33 +21,21 @@ object OldValue {
   }
   
   @scala.inline
-  implicit class OldValueOps[Self <: OldValue] (val x: Self) extends AnyVal {
+  implicit class OldValueMutableBuilder[Self <: OldValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewValue(value: js.Array[String]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValueVarargs(value: String*): Self = StObject.set(x, "newValue", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldValue(value: js.Array[String]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValueVarargs(value: String*): Self = this.set("newValue", js.Array(value :_*))
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
     @scala.inline
-    def setNewValue(value: js.Array[String]): Self = this.set("newValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldValueVarargs(value: String*): Self = this.set("oldValue", js.Array(value :_*))
-    
-    @scala.inline
-    def setOldValue(value: js.Array[String]): Self = this.set("oldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
+    def setOldValueVarargs(value: String*): Self = StObject.set(x, "oldValue", js.Array(value :_*))
   }
 }

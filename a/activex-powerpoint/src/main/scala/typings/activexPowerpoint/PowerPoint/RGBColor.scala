@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoRGBType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RGBColor extends js.Object {
+trait RGBColor extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -27,30 +28,18 @@ object RGBColor {
   }
   
   @scala.inline
-  implicit class RGBColorOps[Self <: RGBColor] (val x: Self) extends AnyVal {
+  implicit class RGBColorMutableBuilder[Self <: RGBColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerPointDotRGBColor_typekey(value: RGBColor): Self = StObject.set(x, "PowerPoint.RGBColor_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotRGBColor_typekey(value: RGBColor): Self = this.set("PowerPoint.RGBColor_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRGB(value: MsoRGBType): Self = this.set("RGB", value.asInstanceOf[js.Any])
+    def setRGB(value: MsoRGBType): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
   }
 }

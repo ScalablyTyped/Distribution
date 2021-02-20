@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionDefinitionVersion extends js.Object {
+trait FunctionDefinitionVersion extends StObject {
   
   /**
     * The default configuration that applies to all Lambda functions in this function definition version. Individual Lambda functions can override these settings.
@@ -26,33 +27,21 @@ object FunctionDefinitionVersion {
   }
   
   @scala.inline
-  implicit class FunctionDefinitionVersionOps[Self <: FunctionDefinitionVersion] (val x: Self) extends AnyVal {
+  implicit class FunctionDefinitionVersionMutableBuilder[Self <: FunctionDefinitionVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultConfigUndefined: Self = StObject.set(x, "DefaultConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctions(value: listOfFunction): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultConfig(value: FunctionDefaultConfig): Self = this.set("DefaultConfig", value.asInstanceOf[js.Any])
+    def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
     @scala.inline
-    def deleteDefaultConfig: Self = this.set("DefaultConfig", js.undefined)
-    
-    @scala.inline
-    def setFunctionsVarargs(value: Function*): Self = this.set("Functions", js.Array(value :_*))
-    
-    @scala.inline
-    def setFunctions(value: listOfFunction): Self = this.set("Functions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunctions: Self = this.set("Functions", js.undefined)
+    def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "LeapSecond")
 @js.native
-class LeapSecond () extends js.Object {
+class LeapSecond () extends StObject {
   def this(date: JulianDate) = this()
   def this(date: js.UndefOr[scala.Nothing], offset: Double) = this()
   def this(date: JulianDate, offset: Double) = this()

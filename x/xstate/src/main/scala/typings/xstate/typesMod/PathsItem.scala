@@ -2,12 +2,13 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathsItem[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait PathsItem[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var paths: js.Array[js.Array[Segment[TContext, TEvent]]] = js.native
   
@@ -25,27 +26,15 @@ object PathsItem {
   }
   
   @scala.inline
-  implicit class PathsItemOps[Self <: PathsItem[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (PathsItem[TContext, TEvent])) extends AnyVal {
+  implicit class PathsItemMutableBuilder[Self <: PathsItem[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (PathsItem[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaths(value: js.Array[js.Array[Segment[TContext, TEvent]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathsVarargs(value: (js.Array[Segment[TContext, TEvent]])*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPathsVarargs(value: (js.Array[Segment[TContext, TEvent]])*): Self = this.set("paths", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaths(value: js.Array[js.Array[Segment[TContext, TEvent]]]): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

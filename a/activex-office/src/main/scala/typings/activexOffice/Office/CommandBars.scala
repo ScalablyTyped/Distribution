@@ -1,12 +1,13 @@
 package typings.activexOffice.Office
 
 import typings.activexStdole.stdole.IPictureDisp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandBars extends js.Object {
+trait CommandBars extends StObject {
   
   def apply(Index: String): CommandBar = js.native
   def apply(Index: Double): CommandBar = js.native

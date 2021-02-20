@@ -11,16 +11,16 @@ import typings.sodiumjs.lazyMod.Lazy
 import typings.sodiumjs.listenerMod.Listener
 import typings.sodiumjs.tuple2Mod.Tuple2
 import typings.sodiumjs.vertexMod.Vertex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/Stream", JSImport.Namespace)
-@js.native
-object streamMod extends js.Object {
+object streamMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/Stream", "Stream")
   @js.native
-  class Stream[A] () extends js.Object {
+  class Stream[A] () extends StObject {
     def this(vertex: Vertex) = this()
     
     /**
@@ -260,6 +260,7 @@ object streamMod extends js.Object {
     var vertex: Vertex = js.native
   }
   
+  @JSImport("sodiumjs/dist/typings/sodium/Stream", "StreamLoop")
   @js.native
   class StreamLoop[A] () extends StreamWithSend[A] {
     
@@ -274,6 +275,7 @@ object streamMod extends js.Object {
     def loop(sa_out: Stream[A]): Unit = js.native
   }
   
+  @JSImport("sodiumjs/dist/typings/sodium/Stream", "StreamWithSend")
   @js.native
   class StreamWithSend[A] () extends Stream[A] {
     def this(vertex: Vertex) = this()

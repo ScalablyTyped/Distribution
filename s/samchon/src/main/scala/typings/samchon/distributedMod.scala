@@ -3,14 +3,14 @@ package typings.samchon
 import typings.samchon.iclientdriverMod.IClientDriver
 import typings.samchon.idistributedserverMod.IDistributedServer
 import typings.samchon.invokeMod.Invoke
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed", JSImport.Namespace)
-@js.native
-object distributedMod extends js.Object {
+object distributedMod {
   
+  @JSImport("samchon/templates/distributed", "DSInvokeHistory")
   @js.native
   class DSInvokeHistory protected ()
     extends typings.samchon.dsinvokehistoryMod.DSInvokeHistory {
@@ -36,6 +36,7 @@ object distributedMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("samchon/templates/distributed", "DistributedClientArray")
   @js.native
   /**
     * Default Constructor.
@@ -43,6 +44,7 @@ object distributedMod extends js.Object {
   abstract class DistributedClientArray[System /* <: typings.samchon.distributedSystemMod.DistributedSystem */] ()
     extends typings.samchon.distributedClientArrayMod.DistributedClientArray[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedClientArrayMediator")
   @js.native
   /**
     * Default Constructor.
@@ -50,6 +52,7 @@ object distributedMod extends js.Object {
   abstract class DistributedClientArrayMediator[System /* <: typings.samchon.distributedSystemMod.DistributedSystem */] ()
     extends typings.samchon.distributedClientArrayMediatorMod.DistributedClientArrayMediator[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedProcess")
   @js.native
   abstract class DistributedProcess protected ()
     extends typings.samchon.distributedProcessMod.DistributedProcess {
@@ -61,6 +64,7 @@ object distributedMod extends js.Object {
     def this(systemArray: typings.samchon.distributedSystemArrayMod.DistributedSystemArray[typings.samchon.distributedSystemMod.DistributedSystem]) = this()
   }
   
+  @JSImport("samchon/templates/distributed", "DistributedServer")
   @js.native
   abstract class DistributedServer protected ()
     extends typings.samchon.distributedServerMod.DistributedServer {
@@ -72,6 +76,7 @@ object distributedMod extends js.Object {
     def this(systemArray: typings.samchon.distributedSystemArrayMod.DistributedSystemArray[typings.samchon.distributedSystemMod.DistributedSystem]) = this()
   }
   
+  @JSImport("samchon/templates/distributed", "DistributedServerArray")
   @js.native
   /**
     * Default Constructor.
@@ -79,6 +84,7 @@ object distributedMod extends js.Object {
   abstract class DistributedServerArray[System /* <: IDistributedServer */] ()
     extends typings.samchon.distributedServerArrayMod.DistributedServerArray[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedServerArrayMediator")
   @js.native
   /**
     * Default Constructor.
@@ -86,6 +92,7 @@ object distributedMod extends js.Object {
   abstract class DistributedServerArrayMediator[System /* <: IDistributedServer */] ()
     extends typings.samchon.distributedServerArrayMediatorMod.DistributedServerArrayMediator[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedServerClientArray")
   @js.native
   /**
     * Default Constructor.
@@ -93,6 +100,7 @@ object distributedMod extends js.Object {
   abstract class DistributedServerClientArray[System /* <: typings.samchon.distributedSystemMod.DistributedSystem */] ()
     extends typings.samchon.distributedServerClientArrayMod.DistributedServerClientArray[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedServerClientArrayMediator")
   @js.native
   /**
     * Default Constructor.
@@ -100,6 +108,7 @@ object distributedMod extends js.Object {
   abstract class DistributedServerClientArrayMediator[System /* <: typings.samchon.distributedSystemMod.DistributedSystem */] ()
     extends typings.samchon.distributedServerClientArrayMediatorMod.DistributedServerClientArrayMediator[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedSystem")
   @js.native
   abstract class DistributedSystem protected ()
     extends typings.samchon.distributedSystemMod.DistributedSystem {
@@ -121,6 +130,7 @@ object distributedMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("samchon/templates/distributed", "DistributedSystemArray")
   @js.native
   /**
     * Default Constructor.
@@ -128,6 +138,7 @@ object distributedMod extends js.Object {
   abstract class DistributedSystemArray[System /* <: typings.samchon.distributedSystemMod.DistributedSystem */] ()
     extends typings.samchon.distributedSystemArrayMod.DistributedSystemArray[System]
   
+  @JSImport("samchon/templates/distributed", "DistributedSystemArrayMediator")
   @js.native
   /**
     * Default Constructor.

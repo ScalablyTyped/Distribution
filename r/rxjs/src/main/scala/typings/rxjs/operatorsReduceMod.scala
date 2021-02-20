@@ -1,17 +1,22 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/reduce", JSImport.Namespace)
-@js.native
-object operatorsReduceMod extends js.Object {
+object operatorsReduceMod {
   
+  @JSImport("rxjs/operators/reduce", "reduce")
+  @js.native
   def reduce[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T]): js.Any = js.native
+  @JSImport("rxjs/operators/reduce", "reduce")
+  @js.native
   def reduce[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T], seed: T): js.Any = js.native
-  @JSName("reduce")
+  @JSImport("rxjs/operators/reduce", "reduce")
+  @js.native
   def reduce_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R]): js.Any = js.native
-  @JSName("reduce")
+  @JSImport("rxjs/operators/reduce", "reduce")
+  @js.native
   def reduce_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R], seed: R): js.Any = js.native
 }

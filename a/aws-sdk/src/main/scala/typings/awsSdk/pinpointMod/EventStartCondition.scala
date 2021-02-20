@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventStartCondition extends js.Object {
+trait EventStartCondition extends StObject {
   
   var EventFilter: js.UndefOr[typings.awsSdk.pinpointMod.EventFilter] = js.native
   
@@ -20,30 +21,18 @@ object EventStartCondition {
   }
   
   @scala.inline
-  implicit class EventStartConditionOps[Self <: EventStartCondition] (val x: Self) extends AnyVal {
+  implicit class EventStartConditionMutableBuilder[Self <: EventStartCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventFilter(value: EventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventFilter(value: EventFilter): Self = this.set("EventFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventFilter: Self = this.set("EventFilter", js.undefined)
-    
-    @scala.inline
-    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentId: Self = this.set("SegmentId", js.undefined)
+    def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
   }
 }

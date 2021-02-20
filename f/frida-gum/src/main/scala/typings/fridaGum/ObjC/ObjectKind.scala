@@ -1,5 +1,6 @@
 package typings.fridaGum.ObjC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.`class`
   - typings.fridaGum.fridaGumStrings.`meta-class`
 */
-trait ObjectKind extends js.Object
+trait ObjectKind extends StObject
 object ObjectKind {
   
   @scala.inline

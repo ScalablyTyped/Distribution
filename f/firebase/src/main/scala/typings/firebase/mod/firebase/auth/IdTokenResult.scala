@@ -1,6 +1,7 @@
 package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * claims.
   */
 @js.native
-trait IdTokenResult extends js.Object {
+trait IdTokenResult extends StObject {
   
   /**
     * The authentication time formatted as a UTC string. This is the time the
@@ -72,45 +73,33 @@ object IdTokenResult {
   }
   
   @scala.inline
-  implicit class IdTokenResultOps[Self <: IdTokenResult] (val x: Self) extends AnyVal {
+  implicit class IdTokenResultMutableBuilder[Self <: IdTokenResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthTime(value: String): Self = StObject.set(x, "authTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthTime(value: String): Self = this.set("authTime", value.asInstanceOf[js.Any])
+    def setIssuedAtTime(value: String): Self = StObject.set(x, "issuedAtTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaims(value: StringDictionary[js.Any]): Self = this.set("claims", value.asInstanceOf[js.Any])
+    def setSignInProvider(value: String): Self = StObject.set(x, "signInProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setSignInProviderNull: Self = StObject.set(x, "signInProvider", null)
     
     @scala.inline
-    def setIssuedAtTime(value: String): Self = this.set("issuedAtTime", value.asInstanceOf[js.Any])
+    def setSignInSecondFactor(value: String): Self = StObject.set(x, "signInSecondFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setSignInSecondFactorNull: Self = StObject.set(x, "signInSecondFactor", null)
     
     @scala.inline
-    def setSignInProvider(value: String): Self = this.set("signInProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignInProviderNull: Self = this.set("signInProvider", null)
-    
-    @scala.inline
-    def setSignInSecondFactor(value: String): Self = this.set("signInSecondFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignInSecondFactorNull: Self = this.set("signInSecondFactor", null)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

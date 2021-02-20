@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Blueprint extends js.Object {
+trait Blueprint extends StObject {
   
   /**
     * The ID for the virtual private server image (e.g., app_wordpress_4_4 or app_lamp_7_0).
@@ -76,90 +77,78 @@ object Blueprint {
   }
   
   @scala.inline
-  implicit class BlueprintOps[Self <: Blueprint] (val x: Self) extends AnyVal {
+  implicit class BlueprintMutableBuilder[Self <: Blueprint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueprintId(value: NonEmptyString): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBlueprintId: Self = this.set("blueprintId", js.undefined)
+    def setGroup(value: NonEmptyString): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: NonEmptyString): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setLicenseUrlUndefined: Self = StObject.set(x, "licenseUrl", js.undefined)
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def setMinPower(value: integer): Self = StObject.set(x, "minPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseUrl(value: String): Self = this.set("licenseUrl", value.asInstanceOf[js.Any])
+    def setMinPowerUndefined: Self = StObject.set(x, "minPower", js.undefined)
     
     @scala.inline
-    def deleteLicenseUrl: Self = this.set("licenseUrl", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPower(value: integer): Self = this.set("minPower", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinPower: Self = this.set("minPower", js.undefined)
+    def setPlatform(value: InstancePlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProductUrl(value: String): Self = StObject.set(x, "productUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: InstancePlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setProductUrlUndefined: Self = StObject.set(x, "productUrl", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setType(value: BlueprintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductUrl(value: String): Self = this.set("productUrl", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteProductUrl: Self = this.set("productUrl", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: BlueprintType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionCode(value: String): Self = this.set("versionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

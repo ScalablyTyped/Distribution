@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mongodbStrings.dropDatabase
   - typings.mongodb.mongodbStrings.invalidate
 */
-trait ChangeEventTypes extends js.Object
+trait ChangeEventTypes extends StObject
 object ChangeEventTypes {
   
   @scala.inline

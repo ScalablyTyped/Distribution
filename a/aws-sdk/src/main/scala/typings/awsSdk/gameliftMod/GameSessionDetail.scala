@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameSessionDetail extends js.Object {
+trait GameSessionDetail extends StObject {
   
   /**
     * Object that describes a game session.
@@ -26,30 +27,18 @@ object GameSessionDetail {
   }
   
   @scala.inline
-  implicit class GameSessionDetailOps[Self <: GameSessionDetail] (val x: Self) extends AnyVal {
+  implicit class GameSessionDetailMutableBuilder[Self <: GameSessionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSession(value: GameSession): Self = StObject.set(x, "GameSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameSessionUndefined: Self = StObject.set(x, "GameSession", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtectionPolicy(value: ProtectionPolicy): Self = StObject.set(x, "ProtectionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSession(value: GameSession): Self = this.set("GameSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameSession: Self = this.set("GameSession", js.undefined)
-    
-    @scala.inline
-    def setProtectionPolicy(value: ProtectionPolicy): Self = this.set("ProtectionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtectionPolicy: Self = this.set("ProtectionPolicy", js.undefined)
+    def setProtectionPolicyUndefined: Self = StObject.set(x, "ProtectionPolicy", js.undefined)
   }
 }

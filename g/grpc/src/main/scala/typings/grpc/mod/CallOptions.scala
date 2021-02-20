@@ -1,6 +1,7 @@
 package typings.grpc.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object CallOptions {
   }
   
   @scala.inline
-  implicit class CallOptionsOps[Self <: CallOptions] (val x: Self) extends AnyVal {
+  implicit class CallOptionsMutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: CallCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadline(value: Deadline): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: CallCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadline(value: Deadline): Self = this.set("deadline", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDeadline: Self = this.set("deadline", js.undefined)
+    def setParent(value: Call): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPropagate_flags(value: Double): Self = StObject.set(x, "propagate_flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Call): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setPropagate_flags(value: Double): Self = this.set("propagate_flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropagate_flags: Self = this.set("propagate_flags", js.undefined)
+    def setPropagate_flagsUndefined: Self = StObject.set(x, "propagate_flags", js.undefined)
   }
 }

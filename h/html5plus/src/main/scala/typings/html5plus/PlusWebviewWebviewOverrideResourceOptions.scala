@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
+trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
   
   /**
     * 重定向的资源数据编码
@@ -64,48 +65,36 @@ object PlusWebviewWebviewOverrideResourceOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewOverrideResourceOptionsOps[Self <: PlusWebviewWebviewOverrideResourceOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewOverrideResourceOptionsMutableBuilder[Self <: PlusWebviewWebviewOverrideResourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: js.Any): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: String): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
-    
-    @scala.inline
-    def setRedirect(value: String): Self = this.set("redirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
   }
 }

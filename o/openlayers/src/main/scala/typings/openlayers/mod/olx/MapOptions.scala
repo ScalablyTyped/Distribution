@@ -9,6 +9,7 @@ import typings.openlayers.mod.interaction.Interaction
 import typings.openlayers.mod.layer.Base
 import typings.std.Document
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object literal with config options for the map.
   */
 @js.native
-trait MapOptions extends js.Object {
+trait MapOptions extends StObject {
   
   var controls: js.UndefOr[Collection[Control] | js.Array[Control]] = js.native
   
@@ -54,111 +55,99 @@ object MapOptions {
   }
   
   @scala.inline
-  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControls(value: Collection[Control] | js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
     @scala.inline
-    def setControlsVarargs(value: Control*): Self = this.set("controls", js.Array(value :_*))
+    def setInteractions(value: Collection[Interaction] | js.Array[Interaction]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: Collection[Control] | js.Array[Control]): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value :_*))
     
     @scala.inline
-    def setInteractionsVarargs(value: Interaction*): Self = this.set("interactions", js.Array(value :_*))
+    def setKeyboardEventTarget(value: Element | Document | String): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractions(value: Collection[Interaction] | js.Array[Interaction]): Self = this.set("interactions", value.asInstanceOf[js.Any])
+    def setKeyboardEventTargetUndefined: Self = StObject.set(x, "keyboardEventTarget", js.undefined)
     
     @scala.inline
-    def deleteInteractions: Self = this.set("interactions", js.undefined)
+    def setLayers(value: js.Array[Base] | Collection[Base]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardEventTarget(value: Element | Document | String): Self = this.set("keyboardEventTarget", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteKeyboardEventTarget: Self = this.set("keyboardEventTarget", js.undefined)
+    def setLayersVarargs(value: Base*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: Base*): Self = this.set("layers", js.Array(value :_*))
+    def setLoadTilesWhileAnimating(value: Boolean): Self = StObject.set(x, "loadTilesWhileAnimating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: js.Array[Base] | Collection[Base]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setLoadTilesWhileAnimatingUndefined: Self = StObject.set(x, "loadTilesWhileAnimating", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLoadTilesWhileInteracting(value: Boolean): Self = StObject.set(x, "loadTilesWhileInteracting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadTilesWhileAnimating(value: Boolean): Self = this.set("loadTilesWhileAnimating", value.asInstanceOf[js.Any])
+    def setLoadTilesWhileInteractingUndefined: Self = StObject.set(x, "loadTilesWhileInteracting", js.undefined)
     
     @scala.inline
-    def deleteLoadTilesWhileAnimating: Self = this.set("loadTilesWhileAnimating", js.undefined)
+    def setLogo(value: Boolean | String | LogoOptions | Element): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadTilesWhileInteracting(value: Boolean): Self = this.set("loadTilesWhileInteracting", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteLoadTilesWhileInteracting: Self = this.set("loadTilesWhileInteracting", js.undefined)
+    def setMoveTolerance(value: Double): Self = StObject.set(x, "moveTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: Boolean | String | LogoOptions | Element): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setMoveToleranceUndefined: Self = StObject.set(x, "moveTolerance", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setOverlays(value: Collection[Overlay] | js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveTolerance(value: Double): Self = this.set("moveTolerance", value.asInstanceOf[js.Any])
+    def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
     @scala.inline
-    def deleteMoveTolerance: Self = this.set("moveTolerance", js.undefined)
+    def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
     @scala.inline
-    def setOverlaysVarargs(value: Overlay*): Self = this.set("overlays", js.Array(value :_*))
+    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlays(value: Collection[Overlay] | js.Array[Overlay]): Self = this.set("overlays", value.asInstanceOf[js.Any])
+    def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
     
     @scala.inline
-    def deleteOverlays: Self = this.set("overlays", js.undefined)
+    def setRenderer(value: RendererType | (js.Array[RendererType | String]) | String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deletePixelRatio: Self = this.set("pixelRatio", js.undefined)
+    def setRendererVarargs(value: (RendererType | String)*): Self = StObject.set(x, "renderer", js.Array(value :_*))
     
     @scala.inline
-    def setRendererVarargs(value: (RendererType | String)*): Self = this.set("renderer", js.Array(value :_*))
+    def setTarget(value: Element | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: RendererType | (js.Array[RendererType | String]) | String): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Element | String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

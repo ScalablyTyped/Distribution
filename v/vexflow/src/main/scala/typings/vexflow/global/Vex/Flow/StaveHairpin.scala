@@ -5,6 +5,7 @@ import typings.vexflow.Vex.Flow.StaveHairpin.`type`
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Firstnote
 import typings.vexflow.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,11 @@ class StaveHairpin protected ()
   extends typings.vexflow.Vex.Flow.StaveHairpin {
   def this(notes: Firstnote, `type`: typings.vexflow.Vex.Flow.StaveHairpin.`type`) = this()
 }
-/* static members */
-@JSGlobal("Vex.Flow.StaveHairpin")
-@js.native
-object StaveHairpin extends js.Object {
+object StaveHairpin {
   
+  /* static member */
+  @JSGlobal("Vex.Flow.StaveHairpin.FormatByTicksAndDraw")
+  @js.native
   def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
@@ -27,6 +28,8 @@ object StaveHairpin extends js.Object {
     `type`: `type`,
     position: Position
   ): Unit = js.native
+  @JSGlobal("Vex.Flow.StaveHairpin.FormatByTicksAndDraw")
+  @js.native
   def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
@@ -36,8 +39,9 @@ object StaveHairpin extends js.Object {
     options: Height
   ): Unit = js.native
   
+  @JSGlobal("Vex.Flow.StaveHairpin.type")
   @js.native
-  object `type` extends js.Object {
+  object `type` extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.StaveHairpin.`type` with Double] = js.native

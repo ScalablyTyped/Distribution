@@ -1,13 +1,12 @@
 package typings.sentryTypes
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/types/dist/extra", JSImport.Namespace)
-@js.native
-object extraMod extends js.Object {
+object extraMod {
   
   type Extra = js.Any
   

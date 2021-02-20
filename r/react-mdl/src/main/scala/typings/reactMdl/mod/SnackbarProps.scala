@@ -1,18 +1,17 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SnackbarProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends HTMLProps[js.Any] {
   
   var active: Boolean = js.native
   
@@ -31,36 +30,24 @@ object SnackbarProps {
   }
   
   @scala.inline
-  implicit class SnackbarPropsOps[Self <: SnackbarProps] (val x: Self) extends AnyVal {
+  implicit class SnackbarPropsMutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnActionClick(value: MouseEvent[Snackbar, NativeMouseEvent] => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setOnTimeout(value: () => js.Any): Self = StObject.set(x, "onTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTimeout(value: () => js.Any): Self = this.set("onTimeout", js.Any.fromFunction0(value))
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnActionClick(value: MouseEvent[Snackbar, NativeMouseEvent] => Unit): Self = this.set("onActionClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnActionClick: Self = this.set("onActionClick", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

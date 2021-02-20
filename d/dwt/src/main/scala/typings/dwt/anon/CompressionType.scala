@@ -2,12 +2,13 @@ package typings.dwt.anon
 
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTFileFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompressionType extends js.Object {
+trait CompressionType extends StObject {
   
   /**
     * Specify the compression type of the file.
@@ -39,42 +40,30 @@ object CompressionType {
   }
   
   @scala.inline
-  implicit class CompressionTypeOps[Self <: CompressionType] (val x: Self) extends AnyVal {
+  implicit class CompressionTypeMutableBuilder[Self <: CompressionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressionType(value: EnumDWTCompressionType | Double): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileFormat(value: EnumDWTFileFormat | Double): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionType(value: EnumDWTCompressionType | Double): Self = this.set("compressionType", value.asInstanceOf[js.Any])
+    def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
     
     @scala.inline
-    def deleteCompressionType: Self = this.set("compressionType", js.undefined)
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileFormat(value: EnumDWTFileFormat | Double): Self = this.set("fileFormat", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteFileFormat: Self = this.set("fileFormat", js.undefined)
+    def setJpegQuality(value: Double): Self = StObject.set(x, "jpegQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
-    
-    @scala.inline
-    def setJpegQuality(value: Double): Self = this.set("jpegQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJpegQuality: Self = this.set("jpegQuality", js.undefined)
+    def setJpegQualityUndefined: Self = StObject.set(x, "jpegQuality", js.undefined)
   }
 }

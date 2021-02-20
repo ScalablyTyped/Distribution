@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeBounds extends js.Object {
+trait TimeBounds extends StObject {
   
   def maxTime(): TimePoint = js.native
   def maxTime(value: TimePoint): TimePoint = js.native

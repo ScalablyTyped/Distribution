@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetingTemplate extends js.Object {
+trait TargetingTemplate extends StObject {
   
   /** Account ID of this targeting template. This field, if left unset, will be auto-generated on insert and is read-only after insert. */
   var accountId: js.UndefOr[String] = js.native
@@ -55,96 +56,84 @@ object TargetingTemplate {
   }
   
   @scala.inline
-  implicit class TargetingTemplateOps[Self <: TargetingTemplate] (val x: Self) extends AnyVal {
+  implicit class TargetingTemplateMutableBuilder[Self <: TargetingTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setDayPartTargeting(value: DayPartTargeting): Self = StObject.set(x, "dayPartTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    def setDayPartTargetingUndefined: Self = StObject.set(x, "dayPartTargeting", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    def setGeoTargeting(value: GeoTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayPartTargeting(value: DayPartTargeting): Self = this.set("dayPartTargeting", value.asInstanceOf[js.Any])
+    def setGeoTargetingUndefined: Self = StObject.set(x, "geoTargeting", js.undefined)
     
     @scala.inline
-    def deleteDayPartTargeting: Self = this.set("dayPartTargeting", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoTargeting(value: GeoTargeting): Self = this.set("geoTargeting", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGeoTargeting: Self = this.set("geoTargeting", js.undefined)
+    def setKeyValueTargetingExpression(value: KeyValueTargetingExpression): Self = StObject.set(x, "keyValueTargetingExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKeyValueTargetingExpressionUndefined: Self = StObject.set(x, "keyValueTargetingExpression", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyValueTargetingExpression(value: KeyValueTargetingExpression): Self = this.set("keyValueTargetingExpression", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteKeyValueTargetingExpression: Self = this.set("keyValueTargetingExpression", js.undefined)
+    def setLanguageTargeting(value: LanguageTargeting): Self = StObject.set(x, "languageTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLanguageTargetingUndefined: Self = StObject.set(x, "languageTargeting", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setListTargetingExpression(value: ListTargetingExpression): Self = StObject.set(x, "listTargetingExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageTargeting(value: LanguageTargeting): Self = this.set("languageTargeting", value.asInstanceOf[js.Any])
+    def setListTargetingExpressionUndefined: Self = StObject.set(x, "listTargetingExpression", js.undefined)
     
     @scala.inline
-    def deleteLanguageTargeting: Self = this.set("languageTargeting", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListTargetingExpression(value: ListTargetingExpression): Self = this.set("listTargetingExpression", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteListTargetingExpression: Self = this.set("listTargetingExpression", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTechnologyTargeting(value: TechnologyTargeting): Self = StObject.set(x, "technologyTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
-    
-    @scala.inline
-    def setTechnologyTargeting(value: TechnologyTargeting): Self = this.set("technologyTargeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechnologyTargeting: Self = this.set("technologyTargeting", js.undefined)
+    def setTechnologyTargetingUndefined: Self = StObject.set(x, "technologyTargeting", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Installment extends js.Object {
+trait Installment extends StObject {
   
   /** The amount the buyer has to pay per month. */
   var amount: js.UndefOr[Price] = js.native
@@ -22,30 +23,18 @@ object Installment {
   }
   
   @scala.inline
-  implicit class InstallmentOps[Self <: Installment] (val x: Self) extends AnyVal {
+  implicit class InstallmentMutableBuilder[Self <: Installment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Price): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
-    
-    @scala.inline
-    def setMonths(value: String): Self = this.set("months", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonths: Self = this.set("months", js.undefined)
+    def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
   }
 }

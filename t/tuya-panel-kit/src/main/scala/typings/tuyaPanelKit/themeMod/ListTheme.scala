@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTheme extends js.Object {
+trait ListTheme extends StObject {
   
   var boardBg: String = js.native
   
@@ -47,54 +48,42 @@ object ListTheme {
   }
   
   @scala.inline
-  implicit class ListThemeOps[Self <: ListTheme] (val x: Self) extends AnyVal {
+  implicit class ListThemeMutableBuilder[Self <: ListTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoardBg(value: String): Self = StObject.set(x, "boardBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellBg(value: String): Self = StObject.set(x, "cellBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellLine(value: String): Self = StObject.set(x, "cellLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoardBg(value: String): Self = this.set("boardBg", value.asInstanceOf[js.Any])
+    def setCellRadius(value: Double): Self = StObject.set(x, "cellRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellBg(value: String): Self = this.set("cellBg", value.asInstanceOf[js.Any])
+    def setDescFontColor(value: String): Self = StObject.set(x, "descFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellLine(value: String): Self = this.set("cellLine", value.asInstanceOf[js.Any])
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRadius(value: Double): Self = this.set("cellRadius", value.asInstanceOf[js.Any])
+    def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescFontColor(value: String): Self = this.set("descFontColor", value.asInstanceOf[js.Any])
+    def setMargin(value: js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginVarargs(value: Double*): Self = this.set("margin", js.Array(value :_*))
+    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setMargin(value: js.Array[Double]): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
-    
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubFontColor(value: String): Self = this.set("subFontColor", value.asInstanceOf[js.Any])
+    def setSubFontColor(value: String): Self = StObject.set(x, "subFontColor", value.asInstanceOf[js.Any])
   }
 }

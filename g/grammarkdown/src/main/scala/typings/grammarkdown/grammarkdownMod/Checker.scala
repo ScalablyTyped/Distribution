@@ -2,13 +2,14 @@ package typings.grammarkdown.grammarkdownMod
 
 import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "Checker")
 @js.native
-class Checker () extends js.Object {
+class Checker () extends StObject {
   def this(options: CompilerOptions) = this()
   
   var bindings: js.Any = js.native

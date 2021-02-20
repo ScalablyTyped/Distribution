@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleLongrunningOperation extends js.Object {
+trait GoogleLongrunningOperation extends StObject {
   
   /** If the value is `false`, it means the operation is still in progress. If `true`, the operation is completed, and either `error` or `response` is available. */
   var done: js.UndefOr[Boolean] = js.native
@@ -50,56 +51,44 @@ object GoogleLongrunningOperation {
   }
   
   @scala.inline
-  implicit class GoogleLongrunningOperationOps[Self <: GoogleLongrunningOperation] (val x: Self) extends AnyVal {
+  implicit class GoogleLongrunningOperationMutableBuilder[Self <: GoogleLongrunningOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: GoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
-    
-    @scala.inline
-    def setError(value: GoogleRpcStatus): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleLongrunningOperation with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
     def setResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleLongrunningOperation with TopLevel[js.Any]
-    ): Self = this.set("response", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableDefinition[Name /* <: String */, Row] extends js.Object {
+trait TableDefinition[Name /* <: String */, Row] extends StObject {
   
   var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
@@ -37,49 +38,37 @@ object TableDefinition {
   }
   
   @scala.inline
-  implicit class TableDefinitionOps[Self <: TableDefinition[_, _], Name /* <: String */, Row] (val x: Self with (TableDefinition[Name, Row])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition[_, _], Name /* <: String */, Row] (val x: Self with (TableDefinition[Name, Row])) extends AnyVal {
     
     @scala.inline
     def setColumns(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
       */ typings.nodeSql2.nodeSql2Strings.TableDefinition with TopLevel[Row]
-    ): Self = this.set("columns", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDialect(value: SQLDialects): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
     
     @scala.inline
-    def setDialect(value: SQLDialects): Self = this.set("dialect", value.asInstanceOf[js.Any])
+    def setForeignKeys(value: typings.nodeSql2.anon.Columns[Row]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDialect: Self = this.set("dialect", js.undefined)
+    def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
     
     @scala.inline
-    def setForeignKeys(value: typings.nodeSql2.anon.Columns[Row]): Self = this.set("foreignKeys", value.asInstanceOf[js.Any])
+    def setIsTemporary(value: Boolean): Self = StObject.set(x, "isTemporary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForeignKeys: Self = this.set("foreignKeys", js.undefined)
+    def setIsTemporaryUndefined: Self = StObject.set(x, "isTemporary", js.undefined)
     
     @scala.inline
-    def setIsTemporary(value: Boolean): Self = this.set("isTemporary", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTemporary: Self = this.set("isTemporary", js.undefined)
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

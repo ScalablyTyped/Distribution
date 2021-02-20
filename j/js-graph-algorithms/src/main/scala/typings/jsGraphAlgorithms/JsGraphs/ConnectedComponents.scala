@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectedComponents extends js.Object {
+trait ConnectedComponents extends StObject {
   
   def componentCount(): Double = js.native
   
@@ -35,36 +36,24 @@ object ConnectedComponents {
   }
   
   @scala.inline
-  implicit class ConnectedComponentsOps[Self <: ConnectedComponents] (val x: Self) extends AnyVal {
+  implicit class ConnectedComponentsMutableBuilder[Self <: ConnectedComponents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentCount(value: () => Double): Self = StObject.set(x, "componentCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentId(value: Double => Double): Self = StObject.set(x, "componentId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentCount(value: () => Double): Self = this.set("componentCount", js.Any.fromFunction0(value))
+    def setDfs(value: (Graph, Double) => Unit): Self = StObject.set(x, "dfs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setComponentId(value: Double => Double): Self = this.set("componentId", js.Any.fromFunction1(value))
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: js.Any): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDfs(value: (Graph, Double) => Unit): Self = this.set("dfs", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarked(value: js.Any): Self = this.set("marked", value.asInstanceOf[js.Any])
+    def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
   }
 }

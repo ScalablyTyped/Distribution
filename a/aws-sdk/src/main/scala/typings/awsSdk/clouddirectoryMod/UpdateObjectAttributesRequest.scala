@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateObjectAttributesRequest extends js.Object {
+trait UpdateObjectAttributesRequest extends StObject {
   
   /**
     * The attributes update structure.
@@ -31,30 +32,18 @@ object UpdateObjectAttributesRequest {
   }
   
   @scala.inline
-  implicit class UpdateObjectAttributesRequestOps[Self <: UpdateObjectAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateObjectAttributesRequestMutableBuilder[Self <: UpdateObjectAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeUpdates(value: ObjectAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUpdatesVarargs(value: ObjectAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeUpdatesVarargs(value: ObjectAttributeUpdate*): Self = this.set("AttributeUpdates", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributeUpdates(value: ObjectAttributeUpdateList): Self = this.set("AttributeUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = this.set("ObjectReference", value.asInstanceOf[js.Any])
+    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

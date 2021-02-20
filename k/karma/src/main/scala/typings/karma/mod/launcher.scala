@@ -1,16 +1,16 @@
 package typings.karma.mod
 
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("karma", "launcher")
-@js.native
-object launcher extends js.Object {
+object launcher {
   
+  @JSImport("karma", "launcher.Launcher")
   @js.native
-  class Launcher protected () extends js.Object {
+  class Launcher protected () extends StObject {
     def this(emitter: EventEmitter, injector: js.Any) = this()
     
     def areAllCaptured(): Boolean = js.native
@@ -26,10 +26,11 @@ object launcher extends js.Object {
     
     def restart(id: String): Boolean = js.native
   }
-  /* static members */
-  @js.native
-  object Launcher extends js.Object {
+  object Launcher {
     
+    /* static member */
+    @JSImport("karma", "launcher.Launcher.generateId")
+    @js.native
     def generateId(): String = js.native
   }
 }

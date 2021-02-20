@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.calendarCalendarMod.CalendarProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/calendar", JSImport.Namespace)
-@js.native
-object calendarMod extends js.Object {
+object calendarMod {
   
+  @JSImport("primereact/calendar", "Calendar")
   @js.native
-  class Calendar ()
-    extends Component[CalendarProps, js.Any, js.Any]
+  class Calendar protected ()
+    extends typings.primereact.calendarCalendarMod.Calendar {
+    def this(props: CalendarProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CalendarProps, context: js.Any) = this()
+  }
 }

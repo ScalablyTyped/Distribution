@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Discount extends js.Object {
+trait Discount extends StObject {
   
   var detail: String = js.native
   
@@ -41,45 +42,33 @@ object Discount {
   }
   
   @scala.inline
-  implicit class DiscountOps[Self <: Discount] (val x: Self) extends AnyVal {
+  implicit class DiscountMutableBuilder[Self <: Discount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhotos(value: js.Array[Photo]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setPhotosVarargs(value: Photo*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
     @scala.inline
-    def setEnd_time(value: String): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotosVarargs(value: Photo*): Self = this.set("photos", js.Array(value :_*))
+    def setSold_num(value: String): Self = StObject.set(x, "sold_num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotos(value: js.Array[Photo]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSold_num(value: String): Self = this.set("sold_num", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

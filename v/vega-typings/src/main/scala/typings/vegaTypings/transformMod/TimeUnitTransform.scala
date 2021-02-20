@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.timeunit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,63 +37,51 @@ object TimeUnitTransform {
   }
   
   @scala.inline
-  implicit class TimeUnitTransformOps[Self <: TimeUnitTransform] (val x: Self) extends AnyVal {
+  implicit class TimeUnitTransformMutableBuilder[Self <: TimeUnitTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setInterval(value: Boolean | SignalRef): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: timeunit): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setInterval(value: Boolean | SignalRef): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def setSignal(value: SignalName): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setTimezone(value: TimeZone | SignalRef): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def setStep(value: Double | SignalRef): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setType(value: timeunit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setUnits(value: (js.Array[TimeUnit | SignalRef]) | SignalRef): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: TimeZone | SignalRef): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
-    
-    @scala.inline
-    def setUnitsVarargs(value: (TimeUnit | SignalRef)*): Self = this.set("units", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnits(value: (js.Array[TimeUnit | SignalRef]) | SignalRef): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsVarargs(value: (TimeUnit | SignalRef)*): Self = StObject.set(x, "units", js.Array(value :_*))
   }
 }

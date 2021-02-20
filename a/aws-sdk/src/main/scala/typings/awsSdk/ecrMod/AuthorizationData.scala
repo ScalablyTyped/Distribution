@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizationData extends js.Object {
+trait AuthorizationData extends StObject {
   
   /**
     * A base64-encoded string that contains authorization data for the specified Amazon ECR registry. When the string is decoded, it is presented in the format user:password for private registry authentication using docker login.
@@ -31,36 +32,24 @@ object AuthorizationData {
   }
   
   @scala.inline
-  implicit class AuthorizationDataOps[Self <: AuthorizationData] (val x: Self) extends AnyVal {
+  implicit class AuthorizationDataMutableBuilder[Self <: AuthorizationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationToken(value: Base64): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiresAt(value: ExpirationTimestamp): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationToken(value: Base64): Self = this.set("authorizationToken", value.asInstanceOf[js.Any])
+    def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationToken: Self = this.set("authorizationToken", js.undefined)
+    def setProxyEndpoint(value: ProxyEndpoint): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresAt(value: ExpirationTimestamp): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiresAt: Self = this.set("expiresAt", js.undefined)
-    
-    @scala.inline
-    def setProxyEndpoint(value: ProxyEndpoint): Self = this.set("proxyEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyEndpoint: Self = this.set("proxyEndpoint", js.undefined)
+    def setProxyEndpointUndefined: Self = StObject.set(x, "proxyEndpoint", js.undefined)
   }
 }

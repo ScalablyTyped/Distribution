@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPartsResult extends js.Object {
+trait ListPartsResult extends StObject {
   
   var PartNumberMarker: Double = js.native
   
@@ -44,48 +45,36 @@ object ListPartsResult {
   }
   
   @scala.inline
-  implicit class ListPartsResultOps[Self <: ListPartsResult] (val x: Self) extends AnyVal {
+  implicit class ListPartsResultMutableBuilder[Self <: ListPartsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxParts(value: Double): Self = StObject.set(x, "maxParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartNumberMarker(value: Double): Self = this.set("PartNumberMarker", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setNextPartNumberMarker(value: Double): Self = StObject.set(x, "nextPartNumberMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: Boolean): Self = this.set("isTruncated", value.asInstanceOf[js.Any])
+    def setPartNumberMarker(value: Double): Self = StObject.set(x, "PartNumberMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParts(value: Double): Self = this.set("maxParts", value.asInstanceOf[js.Any])
+    def setParts(value: js.Array[ObjectPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPartsVarargs(value: ObjectPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
     
     @scala.inline
-    def setNextPartNumberMarker(value: Double): Self = this.set("nextPartNumberMarker", value.asInstanceOf[js.Any])
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartsVarargs(value: ObjectPart*): Self = this.set("parts", js.Array(value :_*))
-    
-    @scala.inline
-    def setParts(value: js.Array[ObjectPart]): Self = this.set("parts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadId(value: String): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

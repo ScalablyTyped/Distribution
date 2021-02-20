@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object HardwareScalingOptimization {
   }
   
   @scala.inline
-  implicit class HardwareScalingOptimizationOps[Self <: HardwareScalingOptimization] (val x: Self) extends AnyVal {
+  implicit class HardwareScalingOptimizationMutableBuilder[Self <: HardwareScalingOptimization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumScale(value: Double): Self = StObject.set(x, "maximumScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_currentScale(value: js.Any): Self = StObject.set(x, "_currentScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentScale(value: js.Any): Self = this.set("_currentScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_directionOffset(value: js.Any): Self = this.set("_directionOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaximumScale(value: Double): Self = this.set("maximumScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def set_directionOffset(value: js.Any): Self = StObject.set(x, "_directionOffset", value.asInstanceOf[js.Any])
   }
 }

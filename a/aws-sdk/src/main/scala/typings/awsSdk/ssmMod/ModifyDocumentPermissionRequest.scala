@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDocumentPermissionRequest extends js.Object {
+trait ModifyDocumentPermissionRequest extends StObject {
   
   /**
     * The AWS user accounts that should have access to the document. The account IDs can either be a group of account IDs or All.
@@ -41,48 +42,36 @@ object ModifyDocumentPermissionRequest {
   }
   
   @scala.inline
-  implicit class ModifyDocumentPermissionRequestOps[Self <: ModifyDocumentPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyDocumentPermissionRequestMutableBuilder[Self <: ModifyDocumentPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIdsToAdd(value: AccountIdList): Self = StObject.set(x, "AccountIdsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdsToAddUndefined: Self = StObject.set(x, "AccountIdsToAdd", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdsToAddVarargs(value: AccountId*): Self = StObject.set(x, "AccountIdsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: DocumentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setAccountIdsToRemove(value: AccountIdList): Self = StObject.set(x, "AccountIdsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionType(value: DocumentPermissionType): Self = this.set("PermissionType", value.asInstanceOf[js.Any])
+    def setAccountIdsToRemoveUndefined: Self = StObject.set(x, "AccountIdsToRemove", js.undefined)
     
     @scala.inline
-    def setAccountIdsToAddVarargs(value: AccountId*): Self = this.set("AccountIdsToAdd", js.Array(value :_*))
+    def setAccountIdsToRemoveVarargs(value: AccountId*): Self = StObject.set(x, "AccountIdsToRemove", js.Array(value :_*))
     
     @scala.inline
-    def setAccountIdsToAdd(value: AccountIdList): Self = this.set("AccountIdsToAdd", value.asInstanceOf[js.Any])
+    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountIdsToAdd: Self = this.set("AccountIdsToAdd", js.undefined)
+    def setPermissionType(value: DocumentPermissionType): Self = StObject.set(x, "PermissionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdsToRemoveVarargs(value: AccountId*): Self = this.set("AccountIdsToRemove", js.Array(value :_*))
+    def setSharedDocumentVersion(value: SharedDocumentVersion): Self = StObject.set(x, "SharedDocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdsToRemove(value: AccountIdList): Self = this.set("AccountIdsToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountIdsToRemove: Self = this.set("AccountIdsToRemove", js.undefined)
-    
-    @scala.inline
-    def setSharedDocumentVersion(value: SharedDocumentVersion): Self = this.set("SharedDocumentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedDocumentVersion: Self = this.set("SharedDocumentVersion", js.undefined)
+    def setSharedDocumentVersionUndefined: Self = StObject.set(x, "SharedDocumentVersion", js.undefined)
   }
 }

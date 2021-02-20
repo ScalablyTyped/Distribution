@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemEffect extends js.Object {
+trait ItemEffect extends StObject {
   
   var condition: String = js.native
   
@@ -26,48 +27,36 @@ object ItemEffect {
   }
   
   @scala.inline
-  implicit class ItemEffectOps[Self <: ItemEffect] (val x: Self) extends AnyVal {
+  implicit class ItemEffectMutableBuilder[Self <: ItemEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMove_changes(value: js.Array[ItemMoveChange]): Self = StObject.set(x, "move_changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMove_changesUndefined: Self = StObject.set(x, "move_changes", js.undefined)
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setMove_changesVarargs(value: ItemMoveChange*): Self = StObject.set(x, "move_changes", js.Array(value :_*))
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setPokemon_changes(value: js.Array[ItemPokemonChange]): Self = StObject.set(x, "pokemon_changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove_changesVarargs(value: ItemMoveChange*): Self = this.set("move_changes", js.Array(value :_*))
+    def setPokemon_changesUndefined: Self = StObject.set(x, "pokemon_changes", js.undefined)
     
     @scala.inline
-    def setMove_changes(value: js.Array[ItemMoveChange]): Self = this.set("move_changes", value.asInstanceOf[js.Any])
+    def setPokemon_changesVarargs(value: ItemPokemonChange*): Self = StObject.set(x, "pokemon_changes", js.Array(value :_*))
     
     @scala.inline
-    def deleteMove_changes: Self = this.set("move_changes", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPokemon_changesVarargs(value: ItemPokemonChange*): Self = this.set("pokemon_changes", js.Array(value :_*))
+    def setTriggers_evolution(value: Boolean): Self = StObject.set(x, "triggers_evolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPokemon_changes(value: js.Array[ItemPokemonChange]): Self = this.set("pokemon_changes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePokemon_changes: Self = this.set("pokemon_changes", js.undefined)
-    
-    @scala.inline
-    def setTriggers_evolution(value: Boolean): Self = this.set("triggers_evolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggers_evolution: Self = this.set("triggers_evolution", js.undefined)
+    def setTriggers_evolutionUndefined: Self = StObject.set(x, "triggers_evolution", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateSoftwareTokenRequest extends js.Object {
+trait AssociateSoftwareTokenRequest extends StObject {
   
   /**
     * The access token.
@@ -26,30 +27,18 @@ object AssociateSoftwareTokenRequest {
   }
   
   @scala.inline
-  implicit class AssociateSoftwareTokenRequestOps[Self <: AssociateSoftwareTokenRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateSoftwareTokenRequestMutableBuilder[Self <: AssociateSoftwareTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
-    
-    @scala.inline
-    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("Session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
   }
 }

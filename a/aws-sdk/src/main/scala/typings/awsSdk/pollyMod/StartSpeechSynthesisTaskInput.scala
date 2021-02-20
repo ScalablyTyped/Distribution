@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSpeechSynthesisTaskInput extends js.Object {
+trait StartSpeechSynthesisTaskInput extends StObject {
   
   /**
     * Specifies the engine (standard or neural) for Amazon Polly to use when processing input text for speech synthesis. Using a voice that is not supported for the engine selected will result in an error.
@@ -76,84 +77,72 @@ object StartSpeechSynthesisTaskInput {
   }
   
   @scala.inline
-  implicit class StartSpeechSynthesisTaskInputOps[Self <: StartSpeechSynthesisTaskInput] (val x: Self) extends AnyVal {
+  implicit class StartSpeechSynthesisTaskInputMutableBuilder[Self <: StartSpeechSynthesisTaskInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputFormat(value: OutputFormat): Self = this.set("OutputFormat", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def setOutputS3BucketName(value: OutputS3BucketName): Self = this.set("OutputS3BucketName", value.asInstanceOf[js.Any])
+    def setLexiconNames(value: LexiconNameList): Self = StObject.set(x, "LexiconNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Text): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setLexiconNamesUndefined: Self = StObject.set(x, "LexiconNames", js.undefined)
     
     @scala.inline
-    def setVoiceId(value: VoiceId): Self = this.set("VoiceId", value.asInstanceOf[js.Any])
+    def setLexiconNamesVarargs(value: LexiconName*): Self = StObject.set(x, "LexiconNames", js.Array(value :_*))
     
     @scala.inline
-    def setEngine(value: Engine): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setOutputS3BucketName(value: OutputS3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setOutputS3KeyPrefix(value: OutputS3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
     
     @scala.inline
-    def setLexiconNamesVarargs(value: LexiconName*): Self = this.set("LexiconNames", js.Array(value :_*))
+    def setSampleRate(value: SampleRate): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLexiconNames(value: LexiconNameList): Self = this.set("LexiconNames", value.asInstanceOf[js.Any])
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
     @scala.inline
-    def deleteLexiconNames: Self = this.set("LexiconNames", js.undefined)
+    def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3KeyPrefix(value: OutputS3KeyPrefix): Self = this.set("OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
     
     @scala.inline
-    def deleteOutputS3KeyPrefix: Self = this.set("OutputS3KeyPrefix", js.undefined)
+    def setSpeechMarkTypes(value: SpeechMarkTypeList): Self = StObject.set(x, "SpeechMarkTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleRate(value: SampleRate): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    def setSpeechMarkTypesUndefined: Self = StObject.set(x, "SpeechMarkTypes", js.undefined)
     
     @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = StObject.set(x, "SpeechMarkTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSnsTopicArn(value: SnsTopicArn): Self = this.set("SnsTopicArn", value.asInstanceOf[js.Any])
+    def setText(value: Text): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnsTopicArn: Self = this.set("SnsTopicArn", js.undefined)
+    def setTextType(value: TextType): Self = StObject.set(x, "TextType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = this.set("SpeechMarkTypes", js.Array(value :_*))
+    def setTextTypeUndefined: Self = StObject.set(x, "TextType", js.undefined)
     
     @scala.inline
-    def setSpeechMarkTypes(value: SpeechMarkTypeList): Self = this.set("SpeechMarkTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeechMarkTypes: Self = this.set("SpeechMarkTypes", js.undefined)
-    
-    @scala.inline
-    def setTextType(value: TextType): Self = this.set("TextType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextType: Self = this.set("TextType", js.undefined)
+    def setVoiceId(value: VoiceId): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
   }
 }

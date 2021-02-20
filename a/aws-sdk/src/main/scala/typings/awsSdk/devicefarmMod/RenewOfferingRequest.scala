@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenewOfferingRequest extends js.Object {
+trait RenewOfferingRequest extends StObject {
   
   /**
     * The ID of a request to renew an offering.
@@ -26,30 +27,18 @@ object RenewOfferingRequest {
   }
   
   @scala.inline
-  implicit class RenewOfferingRequestOps[Self <: RenewOfferingRequest] (val x: Self) extends AnyVal {
+  implicit class RenewOfferingRequestMutableBuilder[Self <: RenewOfferingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOfferingId(value: OfferingIdentifier): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOfferingIdUndefined: Self = StObject.set(x, "offeringId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuantity(value: Integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingId(value: OfferingIdentifier): Self = this.set("offeringId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferingId: Self = this.set("offeringId", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: Integer): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

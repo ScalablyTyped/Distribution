@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PolygonGraphics")
 @js.native
-class PolygonGraphics () extends js.Object {
+class PolygonGraphics () extends StObject {
   def this(options: typings.cesium.anon.ClassificationType) = this()
   
   var arcType: Property = js.native

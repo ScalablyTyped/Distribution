@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryDestinationBucketEncryptionSseKms extends js.Object {
+trait InventoryDestinationBucketEncryptionSseKms extends StObject {
   
   /**
     * The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
@@ -22,21 +23,9 @@ object InventoryDestinationBucketEncryptionSseKms {
   }
   
   @scala.inline
-  implicit class InventoryDestinationBucketEncryptionSseKmsOps[Self <: InventoryDestinationBucketEncryptionSseKms] (val x: Self) extends AnyVal {
+  implicit class InventoryDestinationBucketEncryptionSseKmsMutableBuilder[Self <: InventoryDestinationBucketEncryptionSseKms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyId(value: Input[String]): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
   }
 }

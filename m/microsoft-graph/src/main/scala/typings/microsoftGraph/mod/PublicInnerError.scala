@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicInnerError extends js.Object {
+trait PublicInnerError extends StObject {
   
   var code: js.UndefOr[NullableOption[String]] = js.native
   
@@ -24,57 +25,45 @@ object PublicInnerError {
   }
   
   @scala.inline
-  implicit class PublicInnerErrorOps[Self <: PublicInnerError] (val x: Self) extends AnyVal {
+  implicit class PublicInnerErrorMutableBuilder[Self <: PublicInnerError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeNull: Self = StObject.set(x, "code", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setCode(value: NullableOption[String]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDetails(value: NullableOption[js.Array[PublicErrorDetail]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setDetailsNull: Self = StObject.set(x, "details", null)
     
     @scala.inline
-    def setCodeNull: Self = this.set("code", null)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setDetailsVarargs(value: PublicErrorDetail*): Self = this.set("details", js.Array(value :_*))
+    def setDetailsVarargs(value: PublicErrorDetail*): Self = StObject.set(x, "details", js.Array(value :_*))
     
     @scala.inline
-    def setDetails(value: NullableOption[js.Array[PublicErrorDetail]]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setMessageNull: Self = StObject.set(x, "message", null)
     
     @scala.inline
-    def setDetailsNull: Self = this.set("details", null)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setMessage(value: NullableOption[String]): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setTarget(value: NullableOption[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setTargetNull: Self = StObject.set(x, "target", null)
     
     @scala.inline
-    def setMessageNull: Self = this.set("message", null)
-    
-    @scala.inline
-    def setTarget(value: NullableOption[String]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setTargetNull: Self = this.set("target", null)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

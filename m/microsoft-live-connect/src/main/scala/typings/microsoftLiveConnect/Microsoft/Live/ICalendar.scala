@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Calendar objects.
   */
 @js.native
-trait ICalendar extends js.Object {
+trait ICalendar extends StObject {
   
   /**
     * The time, in ISO 8601 format, at which the calendar was created.
@@ -90,45 +91,33 @@ object ICalendar {
   }
   
   @scala.inline
-  implicit class ICalendarOps[Self <: ICalendar] (val x: Self) extends AnyVal {
+  implicit class ICalendarMutableBuilder[Self <: ICalendar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: IUserInfo): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_time(value: String): Self = this.set("created_time", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIs_default(value: Boolean): Self = StObject.set(x, "is_default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: IUserInfo): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_default(value: Boolean): Self = this.set("is_default", value.asInstanceOf[js.Any])
+    def setSubscription_location(value: String): Self = StObject.set(x, "subscription_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissions(value: String): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscription_location(value: String): Self = this.set("subscription_location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_time(value: String): Self = this.set("updated_time", value.asInstanceOf[js.Any])
+    def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
   }
 }

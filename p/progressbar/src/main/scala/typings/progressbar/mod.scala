@@ -1,17 +1,15 @@
 package typings.progressbar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("progressbar", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def create(): Progressbar = js.native
-  
+  @JSImport("progressbar", "Progressbar")
   @js.native
-  class Progressbar () extends js.Object {
+  class Progressbar () extends StObject {
     
     def addTick(): this.type = js.native
     def addTick(steps: Double): this.type = js.native
@@ -41,4 +39,8 @@ object mod extends js.Object {
     
     def total(total: Double): this.type = js.native
   }
+  
+  @JSImport("progressbar", "create")
+  @js.native
+  def create(): Progressbar = js.native
 }

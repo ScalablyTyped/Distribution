@@ -1,11 +1,12 @@
 package typings.zipkin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Record extends js.Object {
+trait Record extends StObject {
   
   var annotation: IAnnotation = js.native
   
@@ -22,27 +23,15 @@ object Record {
   }
   
   @scala.inline
-  implicit class RecordOps[Self <: Record] (val x: Self) extends AnyVal {
+  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: IAnnotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnnotation(value: IAnnotation): Self = this.set("annotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTraceId(value: TraceId): Self = this.set("traceId", value.asInstanceOf[js.Any])
+    def setTraceId(value: TraceId): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
   }
 }

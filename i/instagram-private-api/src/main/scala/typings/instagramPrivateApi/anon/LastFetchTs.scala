@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LastFetchTs extends js.Object {
+trait LastFetchTs extends StObject {
   
   var broadcastId: String = js.native
   
@@ -29,30 +30,18 @@ object LastFetchTs {
   }
   
   @scala.inline
-  implicit class LastFetchTsOps[Self <: LastFetchTs] (val x: Self) extends AnyVal {
+  implicit class LastFetchTsMutableBuilder[Self <: LastFetchTs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastFetchTs(value: Double | String): Self = StObject.set(x, "lastFetchTs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastSeenTs(value: Double | String): Self = StObject.set(x, "lastSeenTs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastId(value: String): Self = this.set("broadcastId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastFetchTs(value: Double | String): Self = this.set("lastFetchTs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastSeenTs(value: Double | String): Self = this.set("lastSeenTs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastTotalCount(value: Double | String): Self = this.set("lastTotalCount", value.asInstanceOf[js.Any])
+    def setLastTotalCount(value: Double | String): Self = StObject.set(x, "lastTotalCount", value.asInstanceOf[js.Any])
   }
 }

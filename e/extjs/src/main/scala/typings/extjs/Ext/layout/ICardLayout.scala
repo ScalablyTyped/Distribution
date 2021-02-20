@@ -2,6 +2,7 @@ package typings.extjs.Ext.layout
 
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.layout.container.IFit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,60 +53,48 @@ object ICardLayout {
   }
   
   @scala.inline
-  implicit class ICardLayoutOps[Self <: ICardLayout] (val x: Self) extends AnyVal {
+  implicit class ICardLayoutMutableBuilder[Self <: ICardLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferredRenderUndefined: Self = StObject.set(x, "deferredRender", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveItem(value: () => IComponent): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeferredRender(value: Boolean): Self = this.set("deferredRender", value.asInstanceOf[js.Any])
+    def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
     
     @scala.inline
-    def deleteDeferredRender: Self = this.set("deferredRender", js.undefined)
+    def setGetNext(value: () => IComponent): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveItem(value: () => IComponent): Self = this.set("getActiveItem", js.Any.fromFunction0(value))
+    def setGetNextUndefined: Self = StObject.set(x, "getNext", js.undefined)
     
     @scala.inline
-    def deleteGetActiveItem: Self = this.set("getActiveItem", js.undefined)
+    def setGetPrev(value: () => IComponent): Self = StObject.set(x, "getPrev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNext(value: () => IComponent): Self = this.set("getNext", js.Any.fromFunction0(value))
+    def setGetPrevUndefined: Self = StObject.set(x, "getPrev", js.undefined)
     
     @scala.inline
-    def deleteGetNext: Self = this.set("getNext", js.undefined)
+    def setNext(value: () => IComponent): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPrev(value: () => IComponent): Self = this.set("getPrev", js.Any.fromFunction0(value))
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteGetPrev: Self = this.set("getPrev", js.undefined)
+    def setPrev(value: () => IComponent): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => IComponent): Self = this.set("next", js.Any.fromFunction0(value))
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setSetActiveItem(value: /* newCard */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrev(value: () => IComponent): Self = this.set("prev", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
-    
-    @scala.inline
-    def setSetActiveItem(value: /* newCard */ js.UndefOr[js.Any] => IComponent): Self = this.set("setActiveItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetActiveItem: Self = this.set("setActiveItem", js.undefined)
+    def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
   }
 }

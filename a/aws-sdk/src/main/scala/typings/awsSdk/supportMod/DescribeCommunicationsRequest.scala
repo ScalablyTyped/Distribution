@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCommunicationsRequest extends js.Object {
+trait DescribeCommunicationsRequest extends StObject {
   
   /**
     * The start date for a filtered date search on support case communications. Case communications are available for 12 months after creation.
@@ -41,45 +42,33 @@ object DescribeCommunicationsRequest {
   }
   
   @scala.inline
-  implicit class DescribeCommunicationsRequestOps[Self <: DescribeCommunicationsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCommunicationsRequestMutableBuilder[Self <: DescribeCommunicationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterTime(value: AfterTime): Self = StObject.set(x, "afterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterTimeUndefined: Self = StObject.set(x, "afterTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeTime(value: BeforeTime): Self = StObject.set(x, "beforeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    def setBeforeTimeUndefined: Self = StObject.set(x, "beforeTime", js.undefined)
     
     @scala.inline
-    def setAfterTime(value: AfterTime): Self = this.set("afterTime", value.asInstanceOf[js.Any])
+    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterTime: Self = this.set("afterTime", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeTime(value: BeforeTime): Self = this.set("beforeTime", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteBeforeTime: Self = this.set("beforeTime", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

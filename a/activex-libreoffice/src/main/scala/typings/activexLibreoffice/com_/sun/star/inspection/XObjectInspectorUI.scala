@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.inspection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait XObjectInspectorUI extends js.Object {
+trait XObjectInspectorUI extends StObject {
   
   /**
     * enables or disables all components belonging to the UI representation of a property
@@ -121,48 +122,36 @@ object XObjectInspectorUI {
   }
   
   @scala.inline
-  implicit class XObjectInspectorUIOps[Self <: XObjectInspectorUI] (val x: Self) extends AnyVal {
+  implicit class XObjectInspectorUIMutableBuilder[Self <: XObjectInspectorUI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablePropertyUI(value: (String, Boolean) => Unit): Self = StObject.set(x, "enablePropertyUI", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablePropertyUIElements(value: (String, Double, Boolean) => Unit): Self = StObject.set(x, "enablePropertyUIElements", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertyControl(value: String => XPropertyControl): Self = StObject.set(x, "getPropertyControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnablePropertyUI(value: (String, Boolean) => Unit): Self = this.set("enablePropertyUI", js.Any.fromFunction2(value))
+    def setHidePropertyUI(value: String => Unit): Self = StObject.set(x, "hidePropertyUI", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnablePropertyUIElements(value: (String, Double, Boolean) => Unit): Self = this.set("enablePropertyUIElements", js.Any.fromFunction3(value))
+    def setRebuildPropertyUI(value: String => Unit): Self = StObject.set(x, "rebuildPropertyUI", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertyControl(value: String => XPropertyControl): Self = this.set("getPropertyControl", js.Any.fromFunction1(value))
+    def setRegisterControlObserver(value: XPropertyControlObserver => Unit): Self = StObject.set(x, "registerControlObserver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHidePropertyUI(value: String => Unit): Self = this.set("hidePropertyUI", js.Any.fromFunction1(value))
+    def setRevokeControlObserver(value: XPropertyControlObserver => Unit): Self = StObject.set(x, "revokeControlObserver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRebuildPropertyUI(value: String => Unit): Self = this.set("rebuildPropertyUI", js.Any.fromFunction1(value))
+    def setSetHelpSectionText(value: String => Unit): Self = StObject.set(x, "setHelpSectionText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterControlObserver(value: XPropertyControlObserver => Unit): Self = this.set("registerControlObserver", js.Any.fromFunction1(value))
+    def setShowCategory(value: (String, Boolean) => Unit): Self = StObject.set(x, "showCategory", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRevokeControlObserver(value: XPropertyControlObserver => Unit): Self = this.set("revokeControlObserver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetHelpSectionText(value: String => Unit): Self = this.set("setHelpSectionText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowCategory(value: (String, Boolean) => Unit): Self = this.set("showCategory", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShowPropertyUI(value: String => Unit): Self = this.set("showPropertyUI", js.Any.fromFunction1(value))
+    def setShowPropertyUI(value: String => Unit): Self = StObject.set(x, "showPropertyUI", js.Any.fromFunction1(value))
   }
 }

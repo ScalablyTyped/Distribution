@@ -1,11 +1,12 @@
 package typings.openfin.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitorInfo extends js.Object {
+trait MonitorInfo extends StObject {
   
   var monitorInfo: typings.openfin.monitorMod.MonitorInfo = js.native
   
@@ -22,27 +23,15 @@ object MonitorInfo {
   }
   
   @scala.inline
-  implicit class MonitorInfoOps[Self <: MonitorInfo] (val x: Self) extends AnyVal {
+  implicit class MonitorInfoMutableBuilder[Self <: MonitorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitorInfo(value: typings.openfin.monitorMod.MonitorInfo): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuntimeInfo(value: String): Self = StObject.set(x, "runtimeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMonitorInfo(value: typings.openfin.monitorMod.MonitorInfo): Self = this.set("monitorInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuntimeInfo(value: String): Self = this.set("runtimeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: String): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

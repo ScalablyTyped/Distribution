@@ -1,12 +1,13 @@
 package typings.reactTouch.mod
 
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableProps extends js.Object {
+trait DraggableProps extends StObject {
   
   var children: DraggableCallback = js.native
   
@@ -26,24 +27,12 @@ object DraggableProps {
   }
   
   @scala.inline
-  implicit class DraggablePropsOps[Self <: DraggableProps] (val x: Self) extends AnyVal {
+  implicit class DraggablePropsMutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: /* argument */ DraggableCallbackArgument => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildren(value: /* argument */ DraggableCallbackArgument => Element): Self = this.set("children", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStyle(value: DraggableStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: DraggableStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

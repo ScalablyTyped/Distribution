@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudSqlConnectionProfile extends js.Object {
+trait CloudSqlConnectionProfile extends StObject {
   
   /** Output only. The Cloud SQL instance ID that this connection profile is associated with. */
   var cloudSqlId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object CloudSqlConnectionProfile {
   }
   
   @scala.inline
-  implicit class CloudSqlConnectionProfileOps[Self <: CloudSqlConnectionProfile] (val x: Self) extends AnyVal {
+  implicit class CloudSqlConnectionProfileMutableBuilder[Self <: CloudSqlConnectionProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudSqlId(value: String): Self = StObject.set(x, "cloudSqlId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudSqlIdUndefined: Self = StObject.set(x, "cloudSqlId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudSqlId(value: String): Self = this.set("cloudSqlId", value.asInstanceOf[js.Any])
+    def setPrivateIpUndefined: Self = StObject.set(x, "privateIp", js.undefined)
     
     @scala.inline
-    def deleteCloudSqlId: Self = this.set("cloudSqlId", js.undefined)
+    def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIp(value: String): Self = this.set("privateIp", value.asInstanceOf[js.Any])
+    def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
     
     @scala.inline
-    def deletePrivateIp: Self = this.set("privateIp", js.undefined)
+    def setSettings(value: CloudSqlSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicIp(value: String): Self = this.set("publicIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIp: Self = this.set("publicIp", js.undefined)
-    
-    @scala.inline
-    def setSettings(value: CloudSqlSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
   }
 }

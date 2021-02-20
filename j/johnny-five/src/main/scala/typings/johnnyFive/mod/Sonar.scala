@@ -2,13 +2,14 @@ package typings.johnnyFive.mod
 
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Sonar")
 @js.native
-class Sonar protected () extends js.Object {
+class Sonar protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: SonarOption) = this()

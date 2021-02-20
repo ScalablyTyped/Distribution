@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributeNameAndValue extends js.Object {
+trait AttributeNameAndValue extends StObject {
   
   /**
     * The attribute name of the typed link.
@@ -26,24 +27,12 @@ object AttributeNameAndValue {
   }
   
   @scala.inline
-  implicit class AttributeNameAndValueOps[Self <: AttributeNameAndValue] (val x: Self) extends AnyVal {
+  implicit class AttributeNameAndValueMutableBuilder[Self <: AttributeNameAndValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeName(value: AttributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: TypedAttributeValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: TypedAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents downward API info for projecting into a projected volume. Note that this is identical to a downwardAPI volume source without the default mode.
   */
 @js.native
-trait DownwardAPIProjection extends js.Object {
+trait DownwardAPIProjection extends StObject {
   
   /**
     * Items is a list of DownwardAPIVolume file
@@ -25,27 +26,15 @@ object DownwardAPIProjection {
   }
   
   @scala.inline
-  implicit class DownwardAPIProjectionOps[Self <: DownwardAPIProjection] (val x: Self) extends AnyVal {
+  implicit class DownwardAPIProjectionMutableBuilder[Self <: DownwardAPIProjection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: Input[js.Array[Input[DownwardAPIVolumeFile]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: Input[DownwardAPIVolumeFile]*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: Input[js.Array[Input[DownwardAPIVolumeFile]]]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: Input[DownwardAPIVolumeFile]*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

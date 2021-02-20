@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DashboardStateExcelExportPosition ()
   extends typings.devexpressWeb.DashboardStateExcelExportPosition
-/* static members */
-@JSGlobal("DashboardStateExcelExportPosition")
-@js.native
-object DashboardStateExcelExportPosition extends js.Object {
+object DashboardStateExcelExportPosition {
   
   /**
     * The dashboard state is placed below the exported data.
     */
+  /* static member */
+  @JSGlobal("DashboardStateExcelExportPosition.Below")
+  @js.native
   val Below: String = js.native
   
   /**
     * The dashboard state is placed on a separate sheet.
     */
+  /* static member */
+  @JSGlobal("DashboardStateExcelExportPosition.SeparateSheet")
+  @js.native
   val SeparateSheet: String = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * at GitHub.
   */
 @js.native
-trait SchemaEphemeralIdRegistrationParams extends js.Object {
+trait SchemaEphemeralIdRegistrationParams extends StObject {
   
   /**
     * Indicates the maximum rotation period supported by the service. See
@@ -41,36 +42,24 @@ object SchemaEphemeralIdRegistrationParams {
   }
   
   @scala.inline
-  implicit class SchemaEphemeralIdRegistrationParamsOps[Self <: SchemaEphemeralIdRegistrationParams] (val x: Self) extends AnyVal {
+  implicit class SchemaEphemeralIdRegistrationParamsMutableBuilder[Self <: SchemaEphemeralIdRegistrationParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRotationPeriodExponent(value: Double): Self = StObject.set(x, "maxRotationPeriodExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxRotationPeriodExponentUndefined: Self = StObject.set(x, "maxRotationPeriodExponent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinRotationPeriodExponent(value: Double): Self = StObject.set(x, "minRotationPeriodExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRotationPeriodExponent(value: Double): Self = this.set("maxRotationPeriodExponent", value.asInstanceOf[js.Any])
+    def setMinRotationPeriodExponentUndefined: Self = StObject.set(x, "minRotationPeriodExponent", js.undefined)
     
     @scala.inline
-    def deleteMaxRotationPeriodExponent: Self = this.set("maxRotationPeriodExponent", js.undefined)
+    def setServiceEcdhPublicKey(value: String): Self = StObject.set(x, "serviceEcdhPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRotationPeriodExponent(value: Double): Self = this.set("minRotationPeriodExponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinRotationPeriodExponent: Self = this.set("minRotationPeriodExponent", js.undefined)
-    
-    @scala.inline
-    def setServiceEcdhPublicKey(value: String): Self = this.set("serviceEcdhPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceEcdhPublicKey: Self = this.set("serviceEcdhPublicKey", js.undefined)
+    def setServiceEcdhPublicKeyUndefined: Self = StObject.set(x, "serviceEcdhPublicKey", js.undefined)
   }
 }

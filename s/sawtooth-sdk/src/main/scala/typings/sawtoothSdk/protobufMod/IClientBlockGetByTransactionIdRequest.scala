@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientBlockGetByTransactionIdRequest extends js.Object {
+trait IClientBlockGetByTransactionIdRequest extends StObject {
   
   /** ClientBlockGetByTransactionIdRequest transactionId */
   var transactionId: js.UndefOr[String | Null] = js.native
@@ -19,27 +20,15 @@ object IClientBlockGetByTransactionIdRequest {
   }
   
   @scala.inline
-  implicit class IClientBlockGetByTransactionIdRequestOps[Self <: IClientBlockGetByTransactionIdRequest] (val x: Self) extends AnyVal {
+  implicit class IClientBlockGetByTransactionIdRequestMutableBuilder[Self <: IClientBlockGetByTransactionIdRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransactionIdNull: Self = StObject.set(x, "transactionId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
-    
-    @scala.inline
-    def setTransactionIdNull: Self = this.set("transactionId", null)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

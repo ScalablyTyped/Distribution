@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllocatePublicVirtualInterfaceRequest extends js.Object {
+trait AllocatePublicVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the connection on which the public virtual interface is provisioned.
@@ -35,27 +36,15 @@ object AllocatePublicVirtualInterfaceRequest {
   }
   
   @scala.inline
-  implicit class AllocatePublicVirtualInterfaceRequestOps[Self <: AllocatePublicVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  implicit class AllocatePublicVirtualInterfaceRequestMutableBuilder[Self <: AllocatePublicVirtualInterfaceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewPublicVirtualInterfaceAllocation(value: NewPublicVirtualInterfaceAllocation): Self = StObject.set(x, "newPublicVirtualInterfaceAllocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = this.set("connectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewPublicVirtualInterfaceAllocation(value: NewPublicVirtualInterfaceAllocation): Self = this.set("newPublicVirtualInterfaceAllocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerAccount(value: OwnerAccount): Self = this.set("ownerAccount", value.asInstanceOf[js.Any])
+    def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
   }
 }

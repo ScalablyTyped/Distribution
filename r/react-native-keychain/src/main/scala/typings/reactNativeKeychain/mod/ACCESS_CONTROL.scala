@@ -1,51 +1,44 @@
 package typings.reactNativeKeychain.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ACCESS_CONTROL extends js.Object
+sealed trait ACCESS_CONTROL extends StObject
 @JSImport("react-native-keychain", "ACCESS_CONTROL")
 @js.native
-object ACCESS_CONTROL extends js.Object {
+object ACCESS_CONTROL extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ACCESS_CONTROL with String] = js.native
   
   @js.native
   sealed trait APPLICATION_PASSWORD extends ACCESS_CONTROL
-  /* "ApplicationPassword" */ @js.native
-  object APPLICATION_PASSWORD extends TopLevel[APPLICATION_PASSWORD with String]
+  /* "ApplicationPassword" */ val APPLICATION_PASSWORD: typings.reactNativeKeychain.mod.ACCESS_CONTROL.APPLICATION_PASSWORD with String = js.native
   
   @js.native
   sealed trait BIOMETRY_ANY extends ACCESS_CONTROL
-  /* "BiometryAny" */ @js.native
-  object BIOMETRY_ANY extends TopLevel[BIOMETRY_ANY with String]
+  /* "BiometryAny" */ val BIOMETRY_ANY: typings.reactNativeKeychain.mod.ACCESS_CONTROL.BIOMETRY_ANY with String = js.native
   
   @js.native
   sealed trait BIOMETRY_ANY_OR_DEVICE_PASSCODE extends ACCESS_CONTROL
-  /* "BiometryAnyOrDevicePasscode" */ @js.native
-  object BIOMETRY_ANY_OR_DEVICE_PASSCODE extends TopLevel[BIOMETRY_ANY_OR_DEVICE_PASSCODE with String]
+  /* "BiometryAnyOrDevicePasscode" */ val BIOMETRY_ANY_OR_DEVICE_PASSCODE: typings.reactNativeKeychain.mod.ACCESS_CONTROL.BIOMETRY_ANY_OR_DEVICE_PASSCODE with String = js.native
   
   @js.native
   sealed trait BIOMETRY_CURRENT_SET extends ACCESS_CONTROL
-  /* "BiometryCurrentSet" */ @js.native
-  object BIOMETRY_CURRENT_SET extends TopLevel[BIOMETRY_CURRENT_SET with String]
+  /* "BiometryCurrentSet" */ val BIOMETRY_CURRENT_SET: typings.reactNativeKeychain.mod.ACCESS_CONTROL.BIOMETRY_CURRENT_SET with String = js.native
   
   @js.native
   sealed trait BIOMETRY_CURRENT_SET_OR_DEVICE_PASSCODE extends ACCESS_CONTROL
-  /* "BiometryCurrentSetOrDevicePasscode" */ @js.native
-  object BIOMETRY_CURRENT_SET_OR_DEVICE_PASSCODE extends TopLevel[BIOMETRY_CURRENT_SET_OR_DEVICE_PASSCODE with String]
+  /* "BiometryCurrentSetOrDevicePasscode" */ val BIOMETRY_CURRENT_SET_OR_DEVICE_PASSCODE: typings.reactNativeKeychain.mod.ACCESS_CONTROL.BIOMETRY_CURRENT_SET_OR_DEVICE_PASSCODE with String = js.native
   
   @js.native
   sealed trait DEVICE_PASSCODE extends ACCESS_CONTROL
-  /* "DevicePasscode" */ @js.native
-  object DEVICE_PASSCODE extends TopLevel[DEVICE_PASSCODE with String]
+  /* "DevicePasscode" */ val DEVICE_PASSCODE: typings.reactNativeKeychain.mod.ACCESS_CONTROL.DEVICE_PASSCODE with String = js.native
   
   @js.native
   sealed trait USER_PRESENCE extends ACCESS_CONTROL
-  /* "UserPresence" */ @js.native
-  object USER_PRESENCE extends TopLevel[USER_PRESENCE with String]
+  /* "UserPresence" */ val USER_PRESENCE: typings.reactNativeKeychain.mod.ACCESS_CONTROL.USER_PRESENCE with String = js.native
 }

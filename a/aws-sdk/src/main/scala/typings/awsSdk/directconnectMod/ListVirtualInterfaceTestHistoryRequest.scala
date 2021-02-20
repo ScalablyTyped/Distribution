@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVirtualInterfaceTestHistoryRequest extends js.Object {
+trait ListVirtualInterfaceTestHistoryRequest extends StObject {
   
   /**
     * The BGP peers that were placed in the DOWN state during the virtual interface failover test.
@@ -46,57 +47,45 @@ object ListVirtualInterfaceTestHistoryRequest {
   }
   
   @scala.inline
-  implicit class ListVirtualInterfaceTestHistoryRequestOps[Self <: ListVirtualInterfaceTestHistoryRequest] (val x: Self) extends AnyVal {
+  implicit class ListVirtualInterfaceTestHistoryRequestMutableBuilder[Self <: ListVirtualInterfaceTestHistoryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
     
     @scala.inline
-    def setBgpPeersVarargs(value: BGPPeerId*): Self = this.set("bgpPeers", js.Array(value :_*))
+    def setMaxResults(value: MaxResultSetSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgpPeers(value: BGPPeerIdList): Self = this.set("bgpPeers", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteBgpPeers: Self = this.set("bgpPeers", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResultSetSize): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setStatus(value: FailureTestHistoryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setTestId(value: TestId): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FailureTestHistoryStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTestIdUndefined: Self = StObject.set(x, "testId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestId(value: TestId): Self = this.set("testId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestId: Self = this.set("testId", js.undefined)
-    
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+    def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
   }
 }

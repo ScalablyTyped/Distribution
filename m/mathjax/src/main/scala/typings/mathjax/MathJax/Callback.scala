@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callback extends js.Object {
+trait Callback extends StObject {
   
   def apply(code: String): CallbackObject = js.native
   def apply(fn: js.Function): CallbackObject = js.native

@@ -1,5 +1,6 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interfaces
   */
 @js.native
-trait MapEventListener extends js.Object {
+trait MapEventListener extends StObject {
   
   var eventName: String = js.native
   
@@ -27,30 +28,18 @@ object MapEventListener {
   }
   
   @scala.inline
-  implicit class MapEventListenerOps[Self <: MapEventListener] (val x: Self) extends AnyVal {
+  implicit class MapEventListenerMutableBuilder[Self <: MapEventListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListener(value: js.Any => js.Any): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListenerId(value: String): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListener(value: js.Any => js.Any): Self = this.set("listener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setListenerId(value: String): Self = this.set("listenerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

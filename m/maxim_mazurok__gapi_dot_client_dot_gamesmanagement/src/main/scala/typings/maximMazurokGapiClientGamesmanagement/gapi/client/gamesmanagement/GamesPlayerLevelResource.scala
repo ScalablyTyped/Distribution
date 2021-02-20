@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GamesPlayerLevelResource extends js.Object {
+trait GamesPlayerLevelResource extends StObject {
   
   /** The level for the user. */
   var level: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object GamesPlayerLevelResource {
   }
   
   @scala.inline
-  implicit class GamesPlayerLevelResourceOps[Self <: GamesPlayerLevelResource] (val x: Self) extends AnyVal {
+  implicit class GamesPlayerLevelResourceMutableBuilder[Self <: GamesPlayerLevelResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxExperiencePoints(value: String): Self = StObject.set(x, "maxExperiencePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMaxExperiencePointsUndefined: Self = StObject.set(x, "maxExperiencePoints", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMinExperiencePoints(value: String): Self = StObject.set(x, "minExperiencePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxExperiencePoints(value: String): Self = this.set("maxExperiencePoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxExperiencePoints: Self = this.set("maxExperiencePoints", js.undefined)
-    
-    @scala.inline
-    def setMinExperiencePoints(value: String): Self = this.set("minExperiencePoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinExperiencePoints: Self = this.set("minExperiencePoints", js.undefined)
+    def setMinExperiencePointsUndefined: Self = StObject.set(x, "minExperiencePoints", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressEntries extends js.Object {
+trait AddressEntries extends StObject {
   
   def Add(Type: String): AddressEntry = js.native
   def Add(Type: String, Name: js.UndefOr[scala.Nothing], Address: js.Any): AddressEntry = js.native

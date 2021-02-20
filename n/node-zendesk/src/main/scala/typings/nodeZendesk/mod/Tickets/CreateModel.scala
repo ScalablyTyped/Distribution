@@ -1,6 +1,7 @@
 package typings.nodeZendesk.mod.Tickets
 
 import typings.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket|Zendesk Tickets Create}
   */
 @js.native
-trait CreateModel extends js.Object {
+trait CreateModel extends StObject {
   
   var assignee_id: js.UndefOr[ZendeskID | Null] = js.native
   
@@ -74,276 +75,264 @@ object CreateModel {
   }
   
   @scala.inline
-  implicit class CreateModelOps[Self <: CreateModel] (val x: Self) extends AnyVal {
+  implicit class CreateModelMutableBuilder[Self <: CreateModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignee_id(value: ZendeskID): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignee_idNull: Self = StObject.set(x, "assignee_id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignee_idUndefined: Self = StObject.set(x, "assignee_id", js.undefined)
     
     @scala.inline
-    def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setBrand_id(value: Double): Self = StObject.set(x, "brand_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignee_id(value: ZendeskID): Self = this.set("assignee_id", value.asInstanceOf[js.Any])
+    def setBrand_idNull: Self = StObject.set(x, "brand_id", null)
     
     @scala.inline
-    def deleteAssignee_id: Self = this.set("assignee_id", js.undefined)
+    def setBrand_idUndefined: Self = StObject.set(x, "brand_id", js.undefined)
     
     @scala.inline
-    def setAssignee_idNull: Self = this.set("assignee_id", null)
+    def setCollaborator_ids(value: js.Array[Double]): Self = StObject.set(x, "collaborator_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_id(value: Double): Self = this.set("brand_id", value.asInstanceOf[js.Any])
+    def setCollaborator_idsNull: Self = StObject.set(x, "collaborator_ids", null)
     
     @scala.inline
-    def deleteBrand_id: Self = this.set("brand_id", js.undefined)
+    def setCollaborator_idsUndefined: Self = StObject.set(x, "collaborator_ids", js.undefined)
     
     @scala.inline
-    def setBrand_idNull: Self = this.set("brand_id", null)
+    def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value :_*))
     
     @scala.inline
-    def setCollaborator_idsVarargs(value: Double*): Self = this.set("collaborator_ids", js.Array(value :_*))
+    def setCollaborators(value: js.Array[_]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollaborator_ids(value: js.Array[Double]): Self = this.set("collaborator_ids", value.asInstanceOf[js.Any])
+    def setCollaboratorsNull: Self = StObject.set(x, "collaborators", null)
     
     @scala.inline
-    def deleteCollaborator_ids: Self = this.set("collaborator_ids", js.undefined)
+    def setCollaboratorsUndefined: Self = StObject.set(x, "collaborators", js.undefined)
     
     @scala.inline
-    def setCollaborator_idsNull: Self = this.set("collaborator_ids", null)
+    def setCollaboratorsVarargs(value: js.Any*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
     
     @scala.inline
-    def setCollaboratorsVarargs(value: js.Any*): Self = this.set("collaborators", js.Array(value :_*))
+    def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollaborators(value: js.Array[_]): Self = this.set("collaborators", value.asInstanceOf[js.Any])
+    def setCustom_fields(value: js.Array[Field]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollaborators: Self = this.set("collaborators", js.undefined)
+    def setCustom_fieldsNull: Self = StObject.set(x, "custom_fields", null)
     
     @scala.inline
-    def setCollaboratorsNull: Self = this.set("collaborators", null)
+    def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
     
     @scala.inline
-    def setCustom_fieldsVarargs(value: Field*): Self = this.set("custom_fields", js.Array(value :_*))
+    def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value :_*))
     
     @scala.inline
-    def setCustom_fields(value: js.Array[Field]): Self = this.set("custom_fields", value.asInstanceOf[js.Any])
+    def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustom_fields: Self = this.set("custom_fields", js.undefined)
+    def setDue_atNull: Self = StObject.set(x, "due_at", null)
     
     @scala.inline
-    def setCustom_fieldsNull: Self = this.set("custom_fields", null)
+    def setDue_atUndefined: Self = StObject.set(x, "due_at", js.undefined)
     
     @scala.inline
-    def setDue_at(value: String): Self = this.set("due_at", value.asInstanceOf[js.Any])
+    def setEmail_cc_ids(value: js.Array[Double]): Self = StObject.set(x, "email_cc_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDue_at: Self = this.set("due_at", js.undefined)
+    def setEmail_cc_idsNull: Self = StObject.set(x, "email_cc_ids", null)
     
     @scala.inline
-    def setDue_atNull: Self = this.set("due_at", null)
+    def setEmail_cc_idsUndefined: Self = StObject.set(x, "email_cc_ids", js.undefined)
     
     @scala.inline
-    def setEmail_cc_idsVarargs(value: Double*): Self = this.set("email_cc_ids", js.Array(value :_*))
+    def setEmail_cc_idsVarargs(value: Double*): Self = StObject.set(x, "email_cc_ids", js.Array(value :_*))
     
     @scala.inline
-    def setEmail_cc_ids(value: js.Array[Double]): Self = this.set("email_cc_ids", value.asInstanceOf[js.Any])
+    def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail_cc_ids: Self = this.set("email_cc_ids", js.undefined)
+    def setExternal_idNull: Self = StObject.set(x, "external_id", null)
     
     @scala.inline
-    def setEmail_cc_idsNull: Self = this.set("email_cc_ids", null)
+    def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
     
     @scala.inline
-    def setExternal_id(value: String): Self = this.set("external_id", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternal_id: Self = this.set("external_id", js.undefined)
+    def setFieldsNull: Self = StObject.set(x, "fields", null)
     
     @scala.inline
-    def setExternal_idNull: Self = this.set("external_id", null)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setFieldsVarargs(value: Field*): Self = this.set("fields", js.Array(value :_*))
+    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: js.Array[Field]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFollower_ids(value: js.Array[Double]): Self = StObject.set(x, "follower_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFollower_idsNull: Self = StObject.set(x, "follower_ids", null)
     
     @scala.inline
-    def setFieldsNull: Self = this.set("fields", null)
+    def setFollower_idsUndefined: Self = StObject.set(x, "follower_ids", js.undefined)
     
     @scala.inline
-    def setFollower_idsVarargs(value: Double*): Self = this.set("follower_ids", js.Array(value :_*))
+    def setFollower_idsVarargs(value: Double*): Self = StObject.set(x, "follower_ids", js.Array(value :_*))
     
     @scala.inline
-    def setFollower_ids(value: js.Array[Double]): Self = this.set("follower_ids", value.asInstanceOf[js.Any])
+    def setForum_topic_id(value: Double): Self = StObject.set(x, "forum_topic_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFollower_ids: Self = this.set("follower_ids", js.undefined)
+    def setForum_topic_idNull: Self = StObject.set(x, "forum_topic_id", null)
     
     @scala.inline
-    def setFollower_idsNull: Self = this.set("follower_ids", null)
+    def setForum_topic_idUndefined: Self = StObject.set(x, "forum_topic_id", js.undefined)
     
     @scala.inline
-    def setForum_topic_id(value: Double): Self = this.set("forum_topic_id", value.asInstanceOf[js.Any])
+    def setGroup_id(value: Double): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForum_topic_id: Self = this.set("forum_topic_id", js.undefined)
+    def setGroup_idNull: Self = StObject.set(x, "group_id", null)
     
     @scala.inline
-    def setForum_topic_idNull: Self = this.set("forum_topic_id", null)
+    def setGroup_idUndefined: Self = StObject.set(x, "group_id", js.undefined)
     
     @scala.inline
-    def setGroup_id(value: Double): Self = this.set("group_id", value.asInstanceOf[js.Any])
+    def setMacro_ids(value: js.Array[Double]): Self = StObject.set(x, "macro_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup_id: Self = this.set("group_id", js.undefined)
+    def setMacro_idsNull: Self = StObject.set(x, "macro_ids", null)
     
     @scala.inline
-    def setGroup_idNull: Self = this.set("group_id", null)
+    def setMacro_idsUndefined: Self = StObject.set(x, "macro_ids", js.undefined)
     
     @scala.inline
-    def setMacro_idsVarargs(value: Double*): Self = this.set("macro_ids", js.Array(value :_*))
+    def setMacro_idsVarargs(value: Double*): Self = StObject.set(x, "macro_ids", js.Array(value :_*))
     
     @scala.inline
-    def setMacro_ids(value: js.Array[Double]): Self = this.set("macro_ids", value.asInstanceOf[js.Any])
+    def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMacro_ids: Self = this.set("macro_ids", js.undefined)
+    def setOrganization_idNull: Self = StObject.set(x, "organization_id", null)
     
     @scala.inline
-    def setMacro_idsNull: Self = this.set("macro_ids", null)
+    def setOrganization_idUndefined: Self = StObject.set(x, "organization_id", js.undefined)
     
     @scala.inline
-    def setOrganization_id(value: Double): Self = this.set("organization_id", value.asInstanceOf[js.Any])
+    def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrganization_id: Self = this.set("organization_id", js.undefined)
+    def setPriorityNull: Self = StObject.set(x, "priority", null)
     
     @scala.inline
-    def setOrganization_idNull: Self = this.set("organization_id", null)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setPriority(value: Priority): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setProblem_id(value: Double): Self = StObject.set(x, "problem_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setProblem_idNull: Self = StObject.set(x, "problem_id", null)
     
     @scala.inline
-    def setPriorityNull: Self = this.set("priority", null)
+    def setProblem_idUndefined: Self = StObject.set(x, "problem_id", js.undefined)
     
     @scala.inline
-    def setProblem_id(value: Double): Self = this.set("problem_id", value.asInstanceOf[js.Any])
+    def setRaw_subject(value: String): Self = StObject.set(x, "raw_subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProblem_id: Self = this.set("problem_id", js.undefined)
+    def setRaw_subjectNull: Self = StObject.set(x, "raw_subject", null)
     
     @scala.inline
-    def setProblem_idNull: Self = this.set("problem_id", null)
+    def setRaw_subjectUndefined: Self = StObject.set(x, "raw_subject", js.undefined)
     
     @scala.inline
-    def setRaw_subject(value: String): Self = this.set("raw_subject", value.asInstanceOf[js.Any])
+    def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRaw_subject: Self = this.set("raw_subject", js.undefined)
+    def setRecipientNull: Self = StObject.set(x, "recipient", null)
     
     @scala.inline
-    def setRaw_subjectNull: Self = this.set("raw_subject", null)
+    def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
     @scala.inline
-    def setRecipient(value: String): Self = this.set("recipient", value.asInstanceOf[js.Any])
+    def setRequester_id(value: ZendeskID): Self = StObject.set(x, "requester_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipient: Self = this.set("recipient", js.undefined)
+    def setRequester_idUndefined: Self = StObject.set(x, "requester_id", js.undefined)
     
     @scala.inline
-    def setRecipientNull: Self = this.set("recipient", null)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequester_id(value: ZendeskID): Self = this.set("requester_id", value.asInstanceOf[js.Any])
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def deleteRequester_id: Self = this.set("requester_id", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubjectNull: Self = StObject.set(x, "subject", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setSubmitter_id(value: ZendeskID): Self = StObject.set(x, "submitter_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubmitter_idNull: Self = StObject.set(x, "submitter_id", null)
     
     @scala.inline
-    def setSubjectNull: Self = this.set("subject", null)
+    def setSubmitter_idUndefined: Self = StObject.set(x, "submitter_id", js.undefined)
     
     @scala.inline
-    def setSubmitter_id(value: ZendeskID): Self = this.set("submitter_id", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubmitter_id: Self = this.set("submitter_id", js.undefined)
+    def setTagsNull: Self = StObject.set(x, "tags", null)
     
     @scala.inline
-    def setSubmitter_idNull: Self = this.set("submitter_id", null)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTicket_form_id(value: Double): Self = StObject.set(x, "ticket_form_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTicket_form_idNull: Self = StObject.set(x, "ticket_form_id", null)
     
     @scala.inline
-    def setTagsNull: Self = this.set("tags", null)
+    def setTicket_form_idUndefined: Self = StObject.set(x, "ticket_form_id", js.undefined)
     
     @scala.inline
-    def setTicket_form_id(value: Double): Self = this.set("ticket_form_id", value.asInstanceOf[js.Any])
+    def setType(value: TicketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTicket_form_id: Self = this.set("ticket_form_id", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setTicket_form_idNull: Self = this.set("ticket_form_id", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setType(value: TicketType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVia_followup_source_id(value: Double): Self = StObject.set(x, "via_followup_source_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVia_followup_source_idNull: Self = StObject.set(x, "via_followup_source_id", null)
     
     @scala.inline
-    def setTypeNull: Self = this.set("type", null)
-    
-    @scala.inline
-    def setVia_followup_source_id(value: Double): Self = this.set("via_followup_source_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVia_followup_source_id: Self = this.set("via_followup_source_id", js.undefined)
-    
-    @scala.inline
-    def setVia_followup_source_idNull: Self = this.set("via_followup_source_id", null)
+    def setVia_followup_source_idUndefined: Self = StObject.set(x, "via_followup_source_id", js.undefined)
   }
 }

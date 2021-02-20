@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogQuickAmount")
 @js.native
-class CatalogQuickAmount () extends js.Object {
+class CatalogQuickAmount () extends StObject {
   
   /**
     * Represents the actual amount of the Quick Amount with Money type.

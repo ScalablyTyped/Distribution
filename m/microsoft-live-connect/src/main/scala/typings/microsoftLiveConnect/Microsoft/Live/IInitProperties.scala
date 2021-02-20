@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 'Properties' object passed into the WL.init method.
   */
 @js.native
-trait IInitProperties extends js.Object {
+trait IInitProperties extends StObject {
   
   /**
     * Web apps: Required.
@@ -85,60 +86,48 @@ object IInitProperties {
   }
   
   @scala.inline
-  implicit class IInitPropertiesOps[Self <: IInitProperties] (val x: Self) extends AnyVal {
+  implicit class IInitPropertiesMutableBuilder[Self <: IInitProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
+    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
     @scala.inline
-    def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteResponse_type: Self = this.set("response_type", js.undefined)
+    def setSecure_cookie(value: String): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: js.Any): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecure_cookie(value: String): Self = this.set("secure_cookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecure_cookie: Self = this.set("secure_cookie", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

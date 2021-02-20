@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesClient
 
 import typings.minecraftScriptingTypesShared.IEntity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is fired whenever a player joins the world. The event data contains the player entity object.
   */
 @js.native
-trait IClientEnteredWorldEventData extends js.Object {
+trait IClientEnteredWorldEventData extends StObject {
   
   /**
     * the player entering the world
@@ -25,21 +26,9 @@ object IClientEnteredWorldEventData {
   }
   
   @scala.inline
-  implicit class IClientEnteredWorldEventDataOps[Self <: IClientEnteredWorldEventData] (val x: Self) extends AnyVal {
+  implicit class IClientEnteredWorldEventDataMutableBuilder[Self <: IClientEnteredWorldEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlayer(value: IEntity): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

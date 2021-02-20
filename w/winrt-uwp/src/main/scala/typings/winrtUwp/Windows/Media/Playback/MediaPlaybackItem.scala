@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.audiotrackschanged
 import typings.winrtUwp.winrtUwpStrings.timedmetadatatrackschanged
 import typings.winrtUwp.winrtUwpStrings.videotrackschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media item that can be played back. This class acts as a wrapper around a MediaSource that exposes the audio tracks, video tracks, and timed metadata tracks included in the media source. */
 @js.native
-trait MediaPlaybackItem extends js.Object {
+trait MediaPlaybackItem extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

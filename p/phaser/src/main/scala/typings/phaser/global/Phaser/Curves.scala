@@ -5,17 +5,17 @@ import typings.phaser.Phaser.Types.Curves.EllipseCurveConfig
 import typings.phaser.Phaser.Types.Curves.JSONCurve
 import typings.phaser.Phaser.Types.Curves.JSONEllipseCurve
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Curves")
-@js.native
-object Curves extends js.Object {
+object Curves {
   
   /**
     * A higher-order Bézier curve constructed of four points.
     */
+  @JSGlobal("Phaser.Curves.CubicBezier")
   @js.native
   class CubicBezier protected ()
     extends typings.phaser.Phaser.Curves.CubicBezier {
@@ -29,14 +29,15 @@ object Curves extends js.Object {
       */
     def this(p0: Vector2, p1: Vector2, p2: Vector2, p3: Vector2) = this()
   }
-  /* static members */
-  @js.native
-  object CubicBezier extends js.Object {
+  object CubicBezier {
     
     /**
       * Generates a curve from a JSON object.
       * @param data The JSON object containing this curve data.
       */
+    /* static member */
+    @JSGlobal("Phaser.Curves.CubicBezier.fromJSON")
+    @js.native
     def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = js.native
   }
   
@@ -45,6 +46,7 @@ object Curves extends js.Object {
     * 
     * Based on the three.js Curve classes created by [zz85](http://www.lab4games.net/zz85/blog)
     */
+  @JSGlobal("Phaser.Curves.Curve")
   @js.native
   class Curve protected ()
     extends typings.phaser.Phaser.Curves.Curve {
@@ -60,6 +62,7 @@ object Curves extends js.Object {
     * 
     * See https://en.wikipedia.org/wiki/Elliptic_curve for more details.
     */
+  @JSGlobal("Phaser.Curves.Ellipse")
   @js.native
   class Ellipse protected ()
     extends typings.phaser.Phaser.Curves.Ellipse {
@@ -85,20 +88,22 @@ object Curves extends js.Object {
       rotation: js.UndefOr[integer]
     ) = this()
   }
-  /* static members */
-  @js.native
-  object Ellipse extends js.Object {
+  object Ellipse {
     
     /**
       * Creates a curve from the provided Ellipse Curve Configuration object.
       * @param data The JSON object containing this curve data.
       */
+    /* static member */
+    @JSGlobal("Phaser.Curves.Ellipse.fromJSON")
+    @js.native
     def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = js.native
   }
   
   /**
     * A LineCurve is a "curve" comprising exactly two points (a line segment).
     */
+  @JSGlobal("Phaser.Curves.Line")
   @js.native
   class Line protected ()
     extends typings.phaser.Phaser.Curves.Line {
@@ -112,20 +117,22 @@ object Curves extends js.Object {
     def this(p0: js.Array[Double], p1: Vector2) = this()
     def this(p0: Vector2, p1: Vector2) = this()
   }
-  /* static members */
-  @js.native
-  object Line extends js.Object {
+  object Line {
     
     /**
       * Configures this line from a JSON representation.
       * @param data The JSON object containing this curve data.
       */
+    /* static member */
+    @JSGlobal("Phaser.Curves.Line.fromJSON")
+    @js.native
     def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = js.native
   }
   
   /**
     * A MoveTo Curve is a very simple curve consisting of only a single point. Its intended use is to move the ending point in a Path.
     */
+  @JSGlobal("Phaser.Curves.MoveTo")
   @js.native
   /**
     * 
@@ -146,6 +153,7 @@ object Curves extends js.Object {
     * A Curve in a Path does not have to start where the previous Curve ends - that is to say, a Path does not
     * have to be an uninterrupted curve. Only the order of the Curves influences the actual points on the Path.
     */
+  @JSGlobal("Phaser.Curves.Path")
   @js.native
   /**
     * 
@@ -162,6 +170,7 @@ object Curves extends js.Object {
   /**
     * A quadratic Bézier curve constructed from two control points.
     */
+  @JSGlobal("Phaser.Curves.QuadraticBezier")
   @js.native
   class QuadraticBezier protected ()
     extends typings.phaser.Phaser.Curves.QuadraticBezier {
@@ -174,20 +183,22 @@ object Curves extends js.Object {
       */
     def this(p0: Vector2, p1: Vector2, p2: Vector2) = this()
   }
-  /* static members */
-  @js.native
-  object QuadraticBezier extends js.Object {
+  object QuadraticBezier {
     
     /**
       * Creates a curve from a JSON object, e. g. created by `toJSON`.
       * @param data The JSON object containing this curve data.
       */
+    /* static member */
+    @JSGlobal("Phaser.Curves.QuadraticBezier.fromJSON")
+    @js.native
     def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = js.native
   }
   
   /**
     * Create a smooth 2d spline curve from a series of points.
     */
+  @JSGlobal("Phaser.Curves.Spline")
   @js.native
   /**
     * 
@@ -197,14 +208,15 @@ object Curves extends js.Object {
     extends typings.phaser.Phaser.Curves.Spline {
     def this(points: js.Array[js.Array[Double] | Double | Vector2]) = this()
   }
-  /* static members */
-  @js.native
-  object Spline extends js.Object {
+  object Spline {
     
     /**
       * Imports a JSON object containing this curve data.
       * @param data The JSON object containing this curve data.
       */
+    /* static member */
+    @JSGlobal("Phaser.Curves.Spline.fromJSON")
+    @js.native
     def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = js.native
   }
 }

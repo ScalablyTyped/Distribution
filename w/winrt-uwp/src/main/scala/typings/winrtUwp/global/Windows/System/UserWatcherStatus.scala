@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents the status of a user watcher. */
 @JSGlobal("Windows.System.UserWatcherStatus")
 @js.native
-object UserWatcherStatus extends js.Object {
+object UserWatcherStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserWatcherStatus with Double] = js.native

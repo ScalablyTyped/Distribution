@@ -1,5 +1,6 @@
 package typings.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object MarkerSymbol {
   }
   
   @scala.inline
-  implicit class MarkerSymbolOps[Self <: MarkerSymbol] (val x: Self) extends AnyVal {
+  implicit class MarkerSymbolMutableBuilder[Self <: MarkerSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXoffset(value: Double): Self = this.set("xoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXoffset: Self = this.set("xoffset", js.undefined)
-    
-    @scala.inline
-    def setYoffset(value: Double): Self = this.set("yoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoffset: Self = this.set("yoffset", js.undefined)
+    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRemoteAccessSessionsResult extends js.Object {
+trait ListRemoteAccessSessionsResult extends StObject {
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
@@ -26,33 +27,21 @@ object ListRemoteAccessSessionsResult {
   }
   
   @scala.inline
-  implicit class ListRemoteAccessSessionsResultOps[Self <: ListRemoteAccessSessionsResult] (val x: Self) extends AnyVal {
+  implicit class ListRemoteAccessSessionsResultMutableBuilder[Self <: ListRemoteAccessSessionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteAccessSessions(value: RemoteAccessSessions): Self = StObject.set(x, "remoteAccessSessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRemoteAccessSessionsUndefined: Self = StObject.set(x, "remoteAccessSessions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRemoteAccessSessionsVarargs(value: RemoteAccessSession*): Self = this.set("remoteAccessSessions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoteAccessSessions(value: RemoteAccessSessions): Self = this.set("remoteAccessSessions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteAccessSessions: Self = this.set("remoteAccessSessions", js.undefined)
+    def setRemoteAccessSessionsVarargs(value: RemoteAccessSession*): Self = StObject.set(x, "remoteAccessSessions", js.Array(value :_*))
   }
 }

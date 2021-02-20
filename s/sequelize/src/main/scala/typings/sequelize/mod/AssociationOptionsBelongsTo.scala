@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object AssociationOptionsBelongsTo {
   }
   
   @scala.inline
-  implicit class AssociationOptionsBelongsToOps[Self <: AssociationOptionsBelongsTo] (val x: Self) extends AnyVal {
+  implicit class AssociationOptionsBelongsToMutableBuilder[Self <: AssociationOptionsBelongsTo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyType(value: DataTypeAbstract): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetKey(value: String): Self = StObject.set(x, "targetKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyType(value: DataTypeAbstract): Self = this.set("keyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
-    
-    @scala.inline
-    def setTargetKey(value: String): Self = this.set("targetKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetKey: Self = this.set("targetKey", js.undefined)
+    def setTargetKeyUndefined: Self = StObject.set(x, "targetKey", js.undefined)
   }
 }

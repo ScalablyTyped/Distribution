@@ -1,11 +1,12 @@
 package typings.wegameApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudID extends js.Object {
+trait CloudID extends StObject {
   
   /**
     * 敏感数据对应的云 ID，开通云开发的小程序才会返回，可通过云调用直接获取开放数据，详细见云调用直接获取开放数据
@@ -26,24 +27,12 @@ object CloudID {
   }
   
   @scala.inline
-  implicit class CloudIDOps[Self <: CloudID] (val x: Self) extends AnyVal {
+  implicit class CloudIDMutableBuilder[Self <: CloudID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudID(value: String): Self = this.set("cloudID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncryptedData(value: String): Self = this.set("encryptedData", value.asInstanceOf[js.Any])
+    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
   }
 }

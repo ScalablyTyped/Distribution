@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FocusNavigationOrigin extends js.Object {
+trait FocusNavigationOrigin extends StObject {
   
   var originHeight: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object FocusNavigationOrigin {
   }
   
   @scala.inline
-  implicit class FocusNavigationOriginOps[Self <: FocusNavigationOrigin] (val x: Self) extends AnyVal {
+  implicit class FocusNavigationOriginMutableBuilder[Self <: FocusNavigationOrigin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginHeight(value: Double): Self = StObject.set(x, "originHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginHeightUndefined: Self = StObject.set(x, "originHeight", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginLeft(value: Double): Self = StObject.set(x, "originLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginHeight(value: Double): Self = this.set("originHeight", value.asInstanceOf[js.Any])
+    def setOriginLeftUndefined: Self = StObject.set(x, "originLeft", js.undefined)
     
     @scala.inline
-    def deleteOriginHeight: Self = this.set("originHeight", js.undefined)
+    def setOriginTop(value: Double): Self = StObject.set(x, "originTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginLeft(value: Double): Self = this.set("originLeft", value.asInstanceOf[js.Any])
+    def setOriginTopUndefined: Self = StObject.set(x, "originTop", js.undefined)
     
     @scala.inline
-    def deleteOriginLeft: Self = this.set("originLeft", js.undefined)
+    def setOriginWidth(value: Double): Self = StObject.set(x, "originWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginTop(value: Double): Self = this.set("originTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginTop: Self = this.set("originTop", js.undefined)
-    
-    @scala.inline
-    def setOriginWidth(value: Double): Self = this.set("originWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginWidth: Self = this.set("originWidth", js.undefined)
+    def setOriginWidthUndefined: Self = StObject.set(x, "originWidth", js.undefined)
   }
 }

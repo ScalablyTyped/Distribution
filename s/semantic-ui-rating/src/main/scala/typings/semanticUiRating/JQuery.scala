@@ -27,12 +27,13 @@ import typings.semanticUiRating.semanticUiRatingStrings.selector
 import typings.semanticUiRating.semanticUiRatingStrings.setting
 import typings.semanticUiRating.semanticUiRatingStrings.silent
 import typings.semanticUiRating.semanticUiRatingStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def rating(): JQuery = js.native
   def rating(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native

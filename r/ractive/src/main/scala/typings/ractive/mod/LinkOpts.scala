@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkOpts extends js.Object {
+trait LinkOpts extends StObject {
   
   /**
   	 * The ractive instance in which to find the source keypath.
@@ -31,36 +32,24 @@ object LinkOpts {
   }
   
   @scala.inline
-  implicit class LinkOptsOps[Self <: LinkOpts] (val x: Self) extends AnyVal {
+  implicit class LinkOptsMutableBuilder[Self <: LinkOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: Ractive[Ractive[_]]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: Ractive[Ractive[_]]): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setKeypathUndefined: Self = StObject.set(x, "keypath", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setRactive(value: Ractive[Ractive[_]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypath(value: String): Self = this.set("keypath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeypath: Self = this.set("keypath", js.undefined)
-    
-    @scala.inline
-    def setRactive(value: Ractive[Ractive[_]]): Self = this.set("ractive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRactive: Self = this.set("ractive", js.undefined)
+    def setRactiveUndefined: Self = StObject.set(x, "ractive", js.undefined)
   }
 }

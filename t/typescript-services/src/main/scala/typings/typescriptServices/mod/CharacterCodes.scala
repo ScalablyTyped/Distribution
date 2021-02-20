@@ -1,18 +1,19 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.CharacterCodes.equals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "CharacterCodes")
 @js.native
-object CharacterCodes extends js.Object {
-  
-  /* 36 */ val $: typings.typescriptServices.TypeScript.CharacterCodes.$ with Double = js.native
+object CharacterCodes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.CharacterCodes with Double] = js.native
+  
+  /* 36 */ val $: typings.typescriptServices.TypeScript.CharacterCodes.$ with Double = js.native
   
   /* 65 */ val A: typings.typescriptServices.TypeScript.CharacterCodes.A with Double = js.native
   

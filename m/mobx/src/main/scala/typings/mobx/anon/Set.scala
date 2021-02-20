@@ -1,11 +1,12 @@
 package typings.mobx.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Set extends js.Object {
+trait Set extends StObject {
   
   var configurable: Boolean = js.native
   
@@ -29,30 +30,18 @@ object Set {
   }
   
   @scala.inline
-  implicit class SetOps[Self <: Set] (val x: Self) extends AnyVal {
+  implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigurable(value: Boolean): Self = this.set("configurable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnumerable(value: Boolean): Self = this.set("enumerable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGet(value: () => js.UndefOr[scala.Nothing]): Self = this.set("get", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: js.Any => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

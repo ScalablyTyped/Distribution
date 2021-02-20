@@ -1,11 +1,12 @@
 package typings.pubnub.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Custom extends js.Object {
+trait Custom extends StObject {
   
   var custom: js.UndefOr[js.Object | Null] = js.native
   
@@ -20,30 +21,18 @@ object Custom {
   }
   
   @scala.inline
-  implicit class CustomOps[Self <: Custom] (val x: Self) extends AnyVal {
+  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomNull: Self = StObject.set(x, "custom", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: js.Object): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
-    
-    @scala.inline
-    def setCustomNull: Self = this.set("custom", null)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

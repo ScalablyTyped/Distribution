@@ -1,6 +1,7 @@
 package typings.agGrid.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("ag-grid", "DateFilter")
 @js.native
 class DateFilter ()
-  extends typings.agGrid.dateFilterMod.DateFilter
+  extends typings.agGrid.dateFilterMod.DateFilter {
+  def this(template: String) = this()
+}
 /* static members */
-@JSImport("ag-grid", "DateFilter")
-@js.native
-object DateFilter extends js.Object {
+object DateFilter {
   
+  @JSImport("ag-grid", "DateFilter.removeTimezone")
+  @js.native
   def removeTimezone(from: Date): Date = js.native
 }

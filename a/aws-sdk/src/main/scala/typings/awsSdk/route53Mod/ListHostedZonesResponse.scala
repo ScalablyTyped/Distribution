@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListHostedZonesResponse extends js.Object {
+trait ListHostedZonesResponse extends StObject {
   
   /**
     * A complex type that contains general information about the hosted zone.
@@ -41,39 +42,27 @@ object ListHostedZonesResponse {
   }
   
   @scala.inline
-  implicit class ListHostedZonesResponseOps[Self <: ListHostedZonesResponse] (val x: Self) extends AnyVal {
+  implicit class ListHostedZonesResponseMutableBuilder[Self <: ListHostedZonesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostedZones(value: HostedZones): Self = StObject.set(x, "HostedZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostedZonesVarargs(value: HostedZone*): Self = StObject.set(x, "HostedZones", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZonesVarargs(value: HostedZone*): Self = this.set("HostedZones", js.Array(value :_*))
+    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZones(value: HostedZones): Self = this.set("HostedZones", value.asInstanceOf[js.Any])
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setNextMarker(value: PageMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: PageMarker): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextMarker(value: PageMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

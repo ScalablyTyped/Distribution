@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeContinuousBackupsOutput extends js.Object {
+trait DescribeContinuousBackupsOutput extends StObject {
   
   /**
     * Represents the continuous backups and point in time recovery settings on the table.
@@ -21,24 +22,12 @@ object DescribeContinuousBackupsOutput {
   }
   
   @scala.inline
-  implicit class DescribeContinuousBackupsOutputOps[Self <: DescribeContinuousBackupsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeContinuousBackupsOutputMutableBuilder[Self <: DescribeContinuousBackupsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = this.set("ContinuousBackupsDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContinuousBackupsDescription: Self = this.set("ContinuousBackupsDescription", js.undefined)
+    def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
   }
 }

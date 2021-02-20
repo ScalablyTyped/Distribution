@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeleconferenceDeviceMediaQuality extends js.Object {
+trait TeleconferenceDeviceMediaQuality extends StObject {
   
   // The average inbound stream network jitter.
   var averageInboundJitter: js.UndefOr[NullableOption[String]] = js.native
@@ -85,204 +86,192 @@ object TeleconferenceDeviceMediaQuality {
   }
   
   @scala.inline
-  implicit class TeleconferenceDeviceMediaQualityOps[Self <: TeleconferenceDeviceMediaQuality] (val x: Self) extends AnyVal {
+  implicit class TeleconferenceDeviceMediaQualityMutableBuilder[Self <: TeleconferenceDeviceMediaQuality] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageInboundJitter(value: NullableOption[String]): Self = StObject.set(x, "averageInboundJitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageInboundJitterNull: Self = StObject.set(x, "averageInboundJitter", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverageInboundJitterUndefined: Self = StObject.set(x, "averageInboundJitter", js.undefined)
     
     @scala.inline
-    def setAverageInboundJitter(value: NullableOption[String]): Self = this.set("averageInboundJitter", value.asInstanceOf[js.Any])
+    def setAverageInboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = StObject.set(x, "averageInboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageInboundJitter: Self = this.set("averageInboundJitter", js.undefined)
+    def setAverageInboundPacketLossRateInPercentageNull: Self = StObject.set(x, "averageInboundPacketLossRateInPercentage", null)
     
     @scala.inline
-    def setAverageInboundJitterNull: Self = this.set("averageInboundJitter", null)
+    def setAverageInboundPacketLossRateInPercentageUndefined: Self = StObject.set(x, "averageInboundPacketLossRateInPercentage", js.undefined)
     
     @scala.inline
-    def setAverageInboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = this.set("averageInboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
+    def setAverageInboundRoundTripDelay(value: NullableOption[String]): Self = StObject.set(x, "averageInboundRoundTripDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageInboundPacketLossRateInPercentage: Self = this.set("averageInboundPacketLossRateInPercentage", js.undefined)
+    def setAverageInboundRoundTripDelayNull: Self = StObject.set(x, "averageInboundRoundTripDelay", null)
     
     @scala.inline
-    def setAverageInboundPacketLossRateInPercentageNull: Self = this.set("averageInboundPacketLossRateInPercentage", null)
+    def setAverageInboundRoundTripDelayUndefined: Self = StObject.set(x, "averageInboundRoundTripDelay", js.undefined)
     
     @scala.inline
-    def setAverageInboundRoundTripDelay(value: NullableOption[String]): Self = this.set("averageInboundRoundTripDelay", value.asInstanceOf[js.Any])
+    def setAverageOutboundJitter(value: NullableOption[String]): Self = StObject.set(x, "averageOutboundJitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageInboundRoundTripDelay: Self = this.set("averageInboundRoundTripDelay", js.undefined)
+    def setAverageOutboundJitterNull: Self = StObject.set(x, "averageOutboundJitter", null)
     
     @scala.inline
-    def setAverageInboundRoundTripDelayNull: Self = this.set("averageInboundRoundTripDelay", null)
+    def setAverageOutboundJitterUndefined: Self = StObject.set(x, "averageOutboundJitter", js.undefined)
     
     @scala.inline
-    def setAverageOutboundJitter(value: NullableOption[String]): Self = this.set("averageOutboundJitter", value.asInstanceOf[js.Any])
+    def setAverageOutboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = StObject.set(x, "averageOutboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageOutboundJitter: Self = this.set("averageOutboundJitter", js.undefined)
+    def setAverageOutboundPacketLossRateInPercentageNull: Self = StObject.set(x, "averageOutboundPacketLossRateInPercentage", null)
     
     @scala.inline
-    def setAverageOutboundJitterNull: Self = this.set("averageOutboundJitter", null)
+    def setAverageOutboundPacketLossRateInPercentageUndefined: Self = StObject.set(x, "averageOutboundPacketLossRateInPercentage", js.undefined)
     
     @scala.inline
-    def setAverageOutboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = this.set("averageOutboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
+    def setAverageOutboundRoundTripDelay(value: NullableOption[String]): Self = StObject.set(x, "averageOutboundRoundTripDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageOutboundPacketLossRateInPercentage: Self = this.set("averageOutboundPacketLossRateInPercentage", js.undefined)
+    def setAverageOutboundRoundTripDelayNull: Self = StObject.set(x, "averageOutboundRoundTripDelay", null)
     
     @scala.inline
-    def setAverageOutboundPacketLossRateInPercentageNull: Self = this.set("averageOutboundPacketLossRateInPercentage", null)
+    def setAverageOutboundRoundTripDelayUndefined: Self = StObject.set(x, "averageOutboundRoundTripDelay", js.undefined)
     
     @scala.inline
-    def setAverageOutboundRoundTripDelay(value: NullableOption[String]): Self = this.set("averageOutboundRoundTripDelay", value.asInstanceOf[js.Any])
+    def setChannelIndex(value: Double): Self = StObject.set(x, "channelIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageOutboundRoundTripDelay: Self = this.set("averageOutboundRoundTripDelay", js.undefined)
+    def setChannelIndexUndefined: Self = StObject.set(x, "channelIndex", js.undefined)
     
     @scala.inline
-    def setAverageOutboundRoundTripDelayNull: Self = this.set("averageOutboundRoundTripDelay", null)
+    def setInboundPackets(value: NullableOption[Double]): Self = StObject.set(x, "inboundPackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelIndex(value: Double): Self = this.set("channelIndex", value.asInstanceOf[js.Any])
+    def setInboundPacketsNull: Self = StObject.set(x, "inboundPackets", null)
     
     @scala.inline
-    def deleteChannelIndex: Self = this.set("channelIndex", js.undefined)
+    def setInboundPacketsUndefined: Self = StObject.set(x, "inboundPackets", js.undefined)
     
     @scala.inline
-    def setInboundPackets(value: NullableOption[Double]): Self = this.set("inboundPackets", value.asInstanceOf[js.Any])
+    def setLocalIPAddress(value: NullableOption[String]): Self = StObject.set(x, "localIPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInboundPackets: Self = this.set("inboundPackets", js.undefined)
+    def setLocalIPAddressNull: Self = StObject.set(x, "localIPAddress", null)
     
     @scala.inline
-    def setInboundPacketsNull: Self = this.set("inboundPackets", null)
+    def setLocalIPAddressUndefined: Self = StObject.set(x, "localIPAddress", js.undefined)
     
     @scala.inline
-    def setLocalIPAddress(value: NullableOption[String]): Self = this.set("localIPAddress", value.asInstanceOf[js.Any])
+    def setLocalPort(value: NullableOption[Double]): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalIPAddress: Self = this.set("localIPAddress", js.undefined)
+    def setLocalPortNull: Self = StObject.set(x, "localPort", null)
     
     @scala.inline
-    def setLocalIPAddressNull: Self = this.set("localIPAddress", null)
+    def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
     
     @scala.inline
-    def setLocalPort(value: NullableOption[Double]): Self = this.set("localPort", value.asInstanceOf[js.Any])
+    def setMaximumInboundJitter(value: NullableOption[String]): Self = StObject.set(x, "maximumInboundJitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalPort: Self = this.set("localPort", js.undefined)
+    def setMaximumInboundJitterNull: Self = StObject.set(x, "maximumInboundJitter", null)
     
     @scala.inline
-    def setLocalPortNull: Self = this.set("localPort", null)
+    def setMaximumInboundJitterUndefined: Self = StObject.set(x, "maximumInboundJitter", js.undefined)
     
     @scala.inline
-    def setMaximumInboundJitter(value: NullableOption[String]): Self = this.set("maximumInboundJitter", value.asInstanceOf[js.Any])
+    def setMaximumInboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = StObject.set(x, "maximumInboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumInboundJitter: Self = this.set("maximumInboundJitter", js.undefined)
+    def setMaximumInboundPacketLossRateInPercentageNull: Self = StObject.set(x, "maximumInboundPacketLossRateInPercentage", null)
     
     @scala.inline
-    def setMaximumInboundJitterNull: Self = this.set("maximumInboundJitter", null)
+    def setMaximumInboundPacketLossRateInPercentageUndefined: Self = StObject.set(x, "maximumInboundPacketLossRateInPercentage", js.undefined)
     
     @scala.inline
-    def setMaximumInboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = this.set("maximumInboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
+    def setMaximumInboundRoundTripDelay(value: NullableOption[String]): Self = StObject.set(x, "maximumInboundRoundTripDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumInboundPacketLossRateInPercentage: Self = this.set("maximumInboundPacketLossRateInPercentage", js.undefined)
+    def setMaximumInboundRoundTripDelayNull: Self = StObject.set(x, "maximumInboundRoundTripDelay", null)
     
     @scala.inline
-    def setMaximumInboundPacketLossRateInPercentageNull: Self = this.set("maximumInboundPacketLossRateInPercentage", null)
+    def setMaximumInboundRoundTripDelayUndefined: Self = StObject.set(x, "maximumInboundRoundTripDelay", js.undefined)
     
     @scala.inline
-    def setMaximumInboundRoundTripDelay(value: NullableOption[String]): Self = this.set("maximumInboundRoundTripDelay", value.asInstanceOf[js.Any])
+    def setMaximumOutboundJitter(value: NullableOption[String]): Self = StObject.set(x, "maximumOutboundJitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumInboundRoundTripDelay: Self = this.set("maximumInboundRoundTripDelay", js.undefined)
+    def setMaximumOutboundJitterNull: Self = StObject.set(x, "maximumOutboundJitter", null)
     
     @scala.inline
-    def setMaximumInboundRoundTripDelayNull: Self = this.set("maximumInboundRoundTripDelay", null)
+    def setMaximumOutboundJitterUndefined: Self = StObject.set(x, "maximumOutboundJitter", js.undefined)
     
     @scala.inline
-    def setMaximumOutboundJitter(value: NullableOption[String]): Self = this.set("maximumOutboundJitter", value.asInstanceOf[js.Any])
+    def setMaximumOutboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = StObject.set(x, "maximumOutboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumOutboundJitter: Self = this.set("maximumOutboundJitter", js.undefined)
+    def setMaximumOutboundPacketLossRateInPercentageNull: Self = StObject.set(x, "maximumOutboundPacketLossRateInPercentage", null)
     
     @scala.inline
-    def setMaximumOutboundJitterNull: Self = this.set("maximumOutboundJitter", null)
+    def setMaximumOutboundPacketLossRateInPercentageUndefined: Self = StObject.set(x, "maximumOutboundPacketLossRateInPercentage", js.undefined)
     
     @scala.inline
-    def setMaximumOutboundPacketLossRateInPercentage(value: NullableOption[Double]): Self = this.set("maximumOutboundPacketLossRateInPercentage", value.asInstanceOf[js.Any])
+    def setMaximumOutboundRoundTripDelay(value: NullableOption[String]): Self = StObject.set(x, "maximumOutboundRoundTripDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumOutboundPacketLossRateInPercentage: Self = this.set("maximumOutboundPacketLossRateInPercentage", js.undefined)
+    def setMaximumOutboundRoundTripDelayNull: Self = StObject.set(x, "maximumOutboundRoundTripDelay", null)
     
     @scala.inline
-    def setMaximumOutboundPacketLossRateInPercentageNull: Self = this.set("maximumOutboundPacketLossRateInPercentage", null)
+    def setMaximumOutboundRoundTripDelayUndefined: Self = StObject.set(x, "maximumOutboundRoundTripDelay", js.undefined)
     
     @scala.inline
-    def setMaximumOutboundRoundTripDelay(value: NullableOption[String]): Self = this.set("maximumOutboundRoundTripDelay", value.asInstanceOf[js.Any])
+    def setMediaDuration(value: NullableOption[String]): Self = StObject.set(x, "mediaDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumOutboundRoundTripDelay: Self = this.set("maximumOutboundRoundTripDelay", js.undefined)
+    def setMediaDurationNull: Self = StObject.set(x, "mediaDuration", null)
     
     @scala.inline
-    def setMaximumOutboundRoundTripDelayNull: Self = this.set("maximumOutboundRoundTripDelay", null)
+    def setMediaDurationUndefined: Self = StObject.set(x, "mediaDuration", js.undefined)
     
     @scala.inline
-    def setMediaDuration(value: NullableOption[String]): Self = this.set("mediaDuration", value.asInstanceOf[js.Any])
+    def setNetworkLinkSpeedInBytes(value: NullableOption[Double]): Self = StObject.set(x, "networkLinkSpeedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaDuration: Self = this.set("mediaDuration", js.undefined)
+    def setNetworkLinkSpeedInBytesNull: Self = StObject.set(x, "networkLinkSpeedInBytes", null)
     
     @scala.inline
-    def setMediaDurationNull: Self = this.set("mediaDuration", null)
+    def setNetworkLinkSpeedInBytesUndefined: Self = StObject.set(x, "networkLinkSpeedInBytes", js.undefined)
     
     @scala.inline
-    def setNetworkLinkSpeedInBytes(value: NullableOption[Double]): Self = this.set("networkLinkSpeedInBytes", value.asInstanceOf[js.Any])
+    def setOutboundPackets(value: NullableOption[Double]): Self = StObject.set(x, "outboundPackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkLinkSpeedInBytes: Self = this.set("networkLinkSpeedInBytes", js.undefined)
+    def setOutboundPacketsNull: Self = StObject.set(x, "outboundPackets", null)
     
     @scala.inline
-    def setNetworkLinkSpeedInBytesNull: Self = this.set("networkLinkSpeedInBytes", null)
+    def setOutboundPacketsUndefined: Self = StObject.set(x, "outboundPackets", js.undefined)
     
     @scala.inline
-    def setOutboundPackets(value: NullableOption[Double]): Self = this.set("outboundPackets", value.asInstanceOf[js.Any])
+    def setRemoteIPAddress(value: NullableOption[String]): Self = StObject.set(x, "remoteIPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutboundPackets: Self = this.set("outboundPackets", js.undefined)
+    def setRemoteIPAddressNull: Self = StObject.set(x, "remoteIPAddress", null)
     
     @scala.inline
-    def setOutboundPacketsNull: Self = this.set("outboundPackets", null)
+    def setRemoteIPAddressUndefined: Self = StObject.set(x, "remoteIPAddress", js.undefined)
     
     @scala.inline
-    def setRemoteIPAddress(value: NullableOption[String]): Self = this.set("remoteIPAddress", value.asInstanceOf[js.Any])
+    def setRemotePort(value: NullableOption[Double]): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoteIPAddress: Self = this.set("remoteIPAddress", js.undefined)
+    def setRemotePortNull: Self = StObject.set(x, "remotePort", null)
     
     @scala.inline
-    def setRemoteIPAddressNull: Self = this.set("remoteIPAddress", null)
-    
-    @scala.inline
-    def setRemotePort(value: NullableOption[Double]): Self = this.set("remotePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemotePort: Self = this.set("remotePort", js.undefined)
-    
-    @scala.inline
-    def setRemotePortNull: Self = this.set("remotePort", null)
+    def setRemotePortUndefined: Self = StObject.set(x, "remotePort", js.undefined)
   }
 }

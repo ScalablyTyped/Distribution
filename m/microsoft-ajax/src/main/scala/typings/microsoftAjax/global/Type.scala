@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Type ()
   extends typings.microsoftAjax.Type
-/* static members */
-@JSGlobal("Type")
-@js.native
-object Type extends js.Object {
+object Type {
   
   /**
     * Creates a callback method, given the function to callback and the parameter to pass to it.
@@ -30,6 +28,9 @@ object Type extends js.Object {
     * @param context
     *           The parameter to pass to the function. This parameter can be null, but it cannot be omitted.
     */
+  /* static member */
+  @JSGlobal("Type.createCallback")
+  @js.native
   def createCallback(method: js.Function, context: js.Object): js.Function = js.native
   
   /**
@@ -40,6 +41,9 @@ object Type extends js.Object {
     *           The function from which the delegate is created.
     * @return The delegate function.
     */
+  /* static member */
+  @JSGlobal("Type.createDelegate")
+  @js.native
   def createDelegate(instance: js.Object, method: js.Function): js.Function = js.native
   
   /**
@@ -47,6 +51,9 @@ object Type extends js.Object {
     * Use the getRootNamespaces function to return an array containing references to all the root namespaces of the client application.
     * @return An object containing references to all the root namespaces of the client application.
     */
+  /* static member */
+  @JSGlobal("Type.getRootNamespaces")
+  @js.native
   def getRootNamespaces(): js.Any = js.native
   
   /**
@@ -55,6 +62,9 @@ object Type extends js.Object {
     *           The type to test.
     * @return true if the specified type is a class; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Type.isClass")
+  @js.native
   def isClass(`type`: js.Any): Boolean = js.native
   
   /**
@@ -63,6 +73,9 @@ object Type extends js.Object {
     *           The type to test.
     * @return true if the type is an enumeration; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Type.isEnum")
+  @js.native
   def isEnum(`type`: js.Any): Boolean = js.native
   
   /**
@@ -71,6 +84,9 @@ object Type extends js.Object {
     *      The type to test.
     * @return true if the type is an integer of flags; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Type.isFlags")
+  @js.native
   def isFlags(`type`: js.Any): Boolean = js.native
   
   /**
@@ -79,6 +95,9 @@ object Type extends js.Object {
     *           The type to test.
     * @return true if the specified type is an interface; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Type.isInterface")
+  @js.native
   def isInterface(`type`: js.Any): Boolean = js.native
   
   /**
@@ -87,6 +106,9 @@ object Type extends js.Object {
     *           The object to test.
     * @return true if the specified object is a namespace; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Type.isNamespace")
+  @js.native
   def isNamespace(`object`: js.Any): Boolean = js.native
   
   /**
@@ -97,7 +119,12 @@ object Type extends js.Object {
     *           (Optional) The namespace that contains the class.
     * @return The class represented by typeName, or null if a class that matches typeName does not occur in the namespace.
     */
+  /* static member */
+  @JSGlobal("Type.parse")
+  @js.native
   def parse(typeName: String): js.Any = js.native
+  @JSGlobal("Type.parse")
+  @js.native
   def parse(typeName: String, ns: String): js.Any = js.native
   
   /**
@@ -105,5 +132,8 @@ object Type extends js.Object {
     * @param namespacePath
     *           A string that represents the fully qualified namespace to register.
     */
+  /* static member */
+  @JSGlobal("Type.registerNamespace")
+  @js.native
   def registerNamespace(namespacePath: String): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.reactBootstrapTableNext.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSize extends js.Object {
+trait DataSize extends StObject {
   
   var dataSize: Double = js.native
 }
@@ -18,21 +19,9 @@ object DataSize {
   }
   
   @scala.inline
-  implicit class DataSizeOps[Self <: DataSize] (val x: Self) extends AnyVal {
+  implicit class DataSizeMutableBuilder[Self <: DataSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataSize(value: Double): Self = this.set("dataSize", value.asInstanceOf[js.Any])
+    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
   }
 }

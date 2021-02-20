@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SingleMasterConfiguration extends js.Object {
+trait SingleMasterConfiguration extends StObject {
   
   /**
     * The period of time a signaling channel retains underlivered messages before they are discarded.
@@ -21,24 +22,12 @@ object SingleMasterConfiguration {
   }
   
   @scala.inline
-  implicit class SingleMasterConfigurationOps[Self <: SingleMasterConfiguration] (val x: Self) extends AnyVal {
+  implicit class SingleMasterConfigurationMutableBuilder[Self <: SingleMasterConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageTtlSeconds(value: MessageTtlSeconds): Self = StObject.set(x, "MessageTtlSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageTtlSeconds(value: MessageTtlSeconds): Self = this.set("MessageTtlSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageTtlSeconds: Self = this.set("MessageTtlSeconds", js.undefined)
+    def setMessageTtlSecondsUndefined: Self = StObject.set(x, "MessageTtlSeconds", js.undefined)
   }
 }

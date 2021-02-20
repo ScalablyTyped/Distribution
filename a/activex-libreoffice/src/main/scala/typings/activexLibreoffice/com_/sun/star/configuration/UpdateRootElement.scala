@@ -3,20 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.configuration
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
-import typings.activexLibreoffice.com_.sun.star.beans.XProperty
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyWithState
-import typings.activexLibreoffice.com_.sun.star.container.XChild
-import typings.activexLibreoffice.com_.sun.star.container.XHierarchicalName
-import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
-import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.ChangesSet
 import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
-import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,14 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait UpdateRootElement
-  extends XHierarchicalName
-     with XNamed
-     with XProperty
-     with XPropertyWithState
-     with XChild
-     with XComponent
-     with XChangesNotifier
-     with XLocalizable
+  extends AccessRootElement
      with XChangesBatch
 object UpdateRootElement {
   

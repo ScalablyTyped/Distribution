@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationConfig extends js.Object {
+trait DestinationConfig extends StObject {
   
   /**
     * The destination configuration for failed invocations.
@@ -26,30 +27,18 @@ object DestinationConfig {
   }
   
   @scala.inline
-  implicit class DestinationConfigOps[Self <: DestinationConfig] (val x: Self) extends AnyVal {
+  implicit class DestinationConfigMutableBuilder[Self <: DestinationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnFailure(value: OnFailure): Self = StObject.set(x, "OnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFailureUndefined: Self = StObject.set(x, "OnFailure", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnSuccess(value: OnSuccess): Self = StObject.set(x, "OnSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFailure(value: OnFailure): Self = this.set("OnFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("OnFailure", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: OnSuccess): Self = this.set("OnSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("OnSuccess", js.undefined)
+    def setOnSuccessUndefined: Self = StObject.set(x, "OnSuccess", js.undefined)
   }
 }

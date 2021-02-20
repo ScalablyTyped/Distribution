@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,16 +60,20 @@ class Flow protected () extends Element[IModel] {
   @JSName("containerAsWorkflow")
   val containerAsWorkflow_FFlow: IWorkflow = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow")
-@js.native
-object Flow extends js.Object {
+object Flow {
+  
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new Flow instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.create")
+  @js.native
   def create(model: IModel): Flow = js.native
   
   /**
@@ -79,6 +84,9 @@ object Flow extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.createInOutcomeUnderFlow")
+  @js.native
   def createInOutcomeUnderFlow(container: Outcome): Flow = js.native
   
   /**
@@ -89,9 +97,22 @@ object Flow extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.createInWorkflowUnderFlow")
+  @js.native
   def createInWorkflowUnderFlow(container: Workflow): Flow = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

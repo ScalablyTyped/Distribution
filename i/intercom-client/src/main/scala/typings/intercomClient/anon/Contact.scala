@@ -2,12 +2,13 @@ package typings.intercomClient.anon
 
 import typings.intercomClient.leadMod.LeadIdentifier
 import typings.intercomClient.userMod.UserIdentifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contact extends js.Object {
+trait Contact extends StObject {
   
   var contact: LeadIdentifier = js.native
   
@@ -22,24 +23,12 @@ object Contact {
   }
   
   @scala.inline
-  implicit class ContactOps[Self <: Contact] (val x: Self) extends AnyVal {
+  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContact(value: LeadIdentifier): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContact(value: LeadIdentifier): Self = this.set("contact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: UserIdentifier): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: UserIdentifier): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to be updated with every transformation.
   */
 @js.native
-trait SymbolDefinition extends js.Object {
+trait SymbolDefinition extends StObject {
   
   /** 
     * Checks whether the symbol's definition is equal to the supplied symbol.

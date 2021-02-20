@@ -1,12 +1,13 @@
 package typings.xstate.typesMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryValue extends js.Object {
+trait HistoryValue extends StObject {
   
   var current: js.UndefOr[StateValue] = js.native
   
@@ -21,27 +22,15 @@ object HistoryValue {
   }
   
   @scala.inline
-  implicit class HistoryValueOps[Self <: HistoryValue] (val x: Self) extends AnyVal {
+  implicit class HistoryValueMutableBuilder[Self <: HistoryValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: StateValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStates(value: Record[String, js.UndefOr[HistoryValue]]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrent(value: StateValue): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrent: Self = this.set("current", js.undefined)
+    def setStates(value: Record[String, js.UndefOr[HistoryValue]]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
   }
 }

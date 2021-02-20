@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutChannelResult extends js.Object {
+trait PutChannelResult extends StObject {
   
   var playUrls: js.Array[String] = js.native
   
@@ -22,33 +23,21 @@ object PutChannelResult {
   }
   
   @scala.inline
-  implicit class PutChannelResultOps[Self <: PutChannelResult] (val x: Self) extends AnyVal {
+  implicit class PutChannelResultMutableBuilder[Self <: PutChannelResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "playUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "playUrls", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "publishUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayUrlsVarargs(value: String*): Self = this.set("playUrls", js.Array(value :_*))
+    def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "publishUrls", js.Array(value :_*))
     
     @scala.inline
-    def setPlayUrls(value: js.Array[String]): Self = this.set("playUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublishUrlsVarargs(value: String*): Self = this.set("publishUrls", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublishUrls(value: js.Array[String]): Self = this.set("publishUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

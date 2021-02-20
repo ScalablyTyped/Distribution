@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeTouchEvent extends js.Object {
+trait NativeTouchEvent extends StObject {
   
   /**
     * Array of all touch events that have changed since the last event
@@ -71,51 +72,39 @@ object NativeTouchEvent {
   }
   
   @scala.inline
-  implicit class NativeTouchEventOps[Self <: NativeTouchEvent] (val x: Self) extends AnyVal {
+  implicit class NativeTouchEventMutableBuilder[Self <: NativeTouchEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedTouchesVarargs(value: NativeTouchEvent*): Self = this.set("changedTouches", js.Array(value :_*))
+    def setLocationX(value: Double): Self = StObject.set(x, "locationX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedTouches(value: js.Array[NativeTouchEvent]): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    def setLocationY(value: Double): Self = StObject.set(x, "locationY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationX(value: Double): Self = this.set("locationX", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationY(value: Double): Self = this.set("locationY", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchesVarargs(value: NativeTouchEvent*): Self = this.set("touches", js.Array(value :_*))
-    
-    @scala.inline
-    def setTouches(value: js.Array[NativeTouchEvent]): Self = this.set("touches", value.asInstanceOf[js.Any])
+    def setTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

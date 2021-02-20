@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,27 +57,15 @@ object XContentAccess {
   }
   
   @scala.inline
-  implicit class XContentAccessOps[Self <: XContentAccess] (val x: Self) extends AnyVal {
+  implicit class XContentAccessMutableBuilder[Self <: XContentAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryContent(value: () => XContent): Self = StObject.set(x, "queryContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryContentIdentifier(value: () => XContentIdentifier): Self = StObject.set(x, "queryContentIdentifier", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueryContent(value: () => XContent): Self = this.set("queryContent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryContentIdentifier(value: () => XContentIdentifier): Self = this.set("queryContentIdentifier", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryContentIdentifierString(value: () => String): Self = this.set("queryContentIdentifierString", js.Any.fromFunction0(value))
+    def setQueryContentIdentifierString(value: () => String): Self = StObject.set(x, "queryContentIdentifierString", js.Any.fromFunction0(value))
   }
 }

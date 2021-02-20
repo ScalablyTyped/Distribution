@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.com_.sun.star.container.XStringKeyMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0.1
   */
 @js.native
-trait TextMarkupDescriptor extends js.Object {
+trait TextMarkupDescriptor extends StObject {
   
   var aIdentifier: String = js.native
   
@@ -37,33 +38,21 @@ object TextMarkupDescriptor {
   }
   
   @scala.inline
-  implicit class TextMarkupDescriptorOps[Self <: TextMarkupDescriptor] (val x: Self) extends AnyVal {
+  implicit class TextMarkupDescriptorMutableBuilder[Self <: TextMarkupDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAIdentifier(value: String): Self = StObject.set(x, "aIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNLength(value: Double): Self = StObject.set(x, "nLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNOffset(value: Double): Self = StObject.set(x, "nOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAIdentifier(value: String): Self = this.set("aIdentifier", value.asInstanceOf[js.Any])
+    def setNType(value: Double): Self = StObject.set(x, "nType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNLength(value: Double): Self = this.set("nLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNOffset(value: Double): Self = this.set("nOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNType(value: Double): Self = this.set("nType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXMarkupInfoContainer(value: XStringKeyMap): Self = this.set("xMarkupInfoContainer", value.asInstanceOf[js.Any])
+    def setXMarkupInfoContainer(value: XStringKeyMap): Self = StObject.set(x, "xMarkupInfoContainer", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.RequestExecutorErrors")
 @js.native
-object RequestExecutorErrors extends js.Object {
+object RequestExecutorErrors extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.RequestExecutorErrors with Double] = js.native

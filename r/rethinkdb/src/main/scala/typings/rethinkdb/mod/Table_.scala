@@ -1,6 +1,7 @@
 package typings.rethinkdb.mod
 
 import typings.rethinkdb.anon.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait Table_
   
   def get[TObjectType /* <: js.Object */](key: String): (Operation[TObjectType | Null]) with Writeable = js.native
   
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more compound index keys.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
@@ -26,7 +27,7 @@ trait Table_
     compoundKey5: js.Array[String],
     index: Index
   ): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more compound index keys.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
@@ -39,7 +40,7 @@ trait Table_
     compoundKey4: js.Array[String],
     index: Index
   ): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more compound index keys.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
@@ -51,14 +52,14 @@ trait Table_
     compoundKey3: js.Array[String],
     index: Index
   ): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more compound index keys.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
     * [compound indexes](https://www.rethinkdb.com/docs/secondary-indexes/javascript/#compound-indexes)
     */
   def getAll(compoundKey: js.Array[String], compoundKey2: js.Array[String], index: Index): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching a compound index key.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
@@ -71,28 +72,28 @@ trait Table_
     */
   def getAll(key: String): Sequence = js.native
   def getAll(key: String, index: Index): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more keys on a simple index; defaults to primary key if no index provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/)
     */
   def getAll(key: String, key2: String): Sequence = js.native
   def getAll(key: String, key2: String, index: Index): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more keys on a simple index; defaults to primary key if no index provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/)
     */
   def getAll(key: String, key2: String, key3: String): Sequence = js.native
   def getAll(key: String, key2: String, key3: String, index: Index): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more keys on a simple index; defaults to primary key if no index provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/)
     */
   def getAll(key: String, key2: String, key3: String, key4: String): Sequence = js.native
   def getAll(key: String, key2: String, key3: String, key4: String, index: Index): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching 2 or more keys on a simple index; defaults to primary key if no index provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/)
@@ -104,7 +105,7 @@ trait Table_
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/)
     */
   def getAll(keys: String*): Sequence = js.native
-   // without index defaults to primary key
+  // without index defaults to primary key
   /**
     * Get all documents matching a key on a simple index; defaults to primary key if no index provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and

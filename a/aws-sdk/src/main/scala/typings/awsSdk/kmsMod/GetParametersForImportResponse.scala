@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetParametersForImportResponse extends js.Object {
+trait GetParametersForImportResponse extends StObject {
   
   /**
     * The import token to send in a subsequent ImportKeyMaterial request.
@@ -36,42 +37,30 @@ object GetParametersForImportResponse {
   }
   
   @scala.inline
-  implicit class GetParametersForImportResponseOps[Self <: GetParametersForImportResponse] (val x: Self) extends AnyVal {
+  implicit class GetParametersForImportResponseMutableBuilder[Self <: GetParametersForImportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportTokenUndefined: Self = StObject.set(x, "ImportToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportToken(value: CiphertextType): Self = this.set("ImportToken", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def deleteImportToken: Self = this.set("ImportToken", js.undefined)
+    def setParametersValidTo(value: DateType): Self = StObject.set(x, "ParametersValidTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setParametersValidToUndefined: Self = StObject.set(x, "ParametersValidTo", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setPublicKey(value: PlaintextType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersValidTo(value: DateType): Self = this.set("ParametersValidTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParametersValidTo: Self = this.set("ParametersValidTo", js.undefined)
-    
-    @scala.inline
-    def setPublicKey(value: PlaintextType): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientAndroidpublisher.anon.VariantId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.VersionCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariantsResource extends js.Object {
+trait VariantsResource extends StObject {
   
   def create(request: KeyOauthtoken, body: Variant): Request[Variant] = js.native
   /** Creates an APK which is suitable for inclusion in a system image from an already uploaded Android App Bundle. */

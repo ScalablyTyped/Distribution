@@ -3,14 +3,14 @@ package typings.cosmiconfig
 import typings.cosmiconfig.explorerBaseMod.ExplorerBase
 import typings.cosmiconfig.typesMod.CosmiconfigResult
 import typings.cosmiconfig.typesMod.ExplorerOptionsSync
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cosmiconfig/dist/ExplorerSync", JSImport.Namespace)
-@js.native
-object explorerSyncMod extends js.Object {
+object explorerSyncMod {
   
+  @JSImport("cosmiconfig/dist/ExplorerSync", "ExplorerSync")
   @js.native
   class ExplorerSync protected () extends ExplorerBase[ExplorerOptionsSync] {
     def this(options: ExplorerOptionsSync) = this()

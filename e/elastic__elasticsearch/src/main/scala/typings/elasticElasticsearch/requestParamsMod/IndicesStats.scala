@@ -8,6 +8,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.indices
 import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import typings.elasticElasticsearch.elasticElasticsearchStrings.shards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,111 +49,99 @@ object IndicesStats {
   }
   
   @scala.inline
-  implicit class IndicesStatsOps[Self <: IndicesStats] (val x: Self) extends AnyVal {
+  implicit class IndicesStatsMutableBuilder[Self <: IndicesStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletion_fields(value: String | js.Array[String]): Self = StObject.set(x, "completion_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletion_fieldsUndefined: Self = StObject.set(x, "completion_fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletion_fieldsVarargs(value: String*): Self = StObject.set(x, "completion_fields", js.Array(value :_*))
     
     @scala.inline
-    def setCompletion_fieldsVarargs(value: String*): Self = this.set("completion_fields", js.Array(value :_*))
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletion_fields(value: String | js.Array[String]): Self = this.set("completion_fields", value.asInstanceOf[js.Any])
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def deleteCompletion_fields: Self = this.set("completion_fields", js.undefined)
+    def setFielddata_fields(value: String | js.Array[String]): Self = StObject.set(x, "fielddata_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    def setFielddata_fieldsUndefined: Self = StObject.set(x, "fielddata_fields", js.undefined)
     
     @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setFielddata_fieldsVarargs(value: String*): Self = StObject.set(x, "fielddata_fields", js.Array(value :_*))
     
     @scala.inline
-    def setFielddata_fieldsVarargs(value: String*): Self = this.set("fielddata_fields", js.Array(value :_*))
+    def setFields(value: String | js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFielddata_fields(value: String | js.Array[String]): Self = this.set("fielddata_fields", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteFielddata_fields: Self = this.set("fielddata_fields", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setForbid_closed_indices(value: Boolean): Self = StObject.set(x, "forbid_closed_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String | js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setForbid_closed_indicesUndefined: Self = StObject.set(x, "forbid_closed_indices", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setGroups(value: String | js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbid_closed_indices(value: Boolean): Self = this.set("forbid_closed_indices", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteForbid_closed_indices: Self = this.set("forbid_closed_indices", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setInclude_segment_file_sizes(value: Boolean): Self = StObject.set(x, "include_segment_file_sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: String | js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setInclude_segment_file_sizesUndefined: Self = StObject.set(x, "include_segment_file_sizes", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setInclude_unloaded_segments(value: Boolean): Self = StObject.set(x, "include_unloaded_segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_segment_file_sizes(value: Boolean): Self = this.set("include_segment_file_sizes", value.asInstanceOf[js.Any])
+    def setInclude_unloaded_segmentsUndefined: Self = StObject.set(x, "include_unloaded_segments", js.undefined)
     
     @scala.inline
-    def deleteInclude_segment_file_sizes: Self = this.set("include_segment_file_sizes", js.undefined)
+    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_unloaded_segments(value: Boolean): Self = this.set("include_unloaded_segments", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteInclude_unloaded_segments: Self = this.set("include_unloaded_segments", js.undefined)
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setLevel(value: cluster | indices | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: cluster | indices | shards): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
     
     @scala.inline
-    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
+    def setTypes(value: String | js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetric(value: String | js.Array[String]): Self = this.set("metric", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: String | js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

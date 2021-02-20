@@ -1,11 +1,12 @@
 package typings.libsodiumWrappers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StringSecretBox extends js.Object {
+trait StringSecretBox extends StObject {
   
   var cipher: String = js.native
   
@@ -20,24 +21,12 @@ object StringSecretBox {
   }
   
   @scala.inline
-  implicit class StringSecretBoxOps[Self <: StringSecretBox] (val x: Self) extends AnyVal {
+  implicit class StringSecretBoxMutableBuilder[Self <: StringSecretBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCipher(value: String): Self = this.set("cipher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMac(value: String): Self = this.set("mac", value.asInstanceOf[js.Any])
+    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
   }
 }

@@ -28,13 +28,14 @@ import typings.angularCommon.anon.`3`
 import typings.rxjs.mod.Observable_
 import typings.std.ArrayBuffer
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpClient")
 @js.native
-class HttpClient protected () extends js.Object {
+class HttpClient protected () extends StObject {
   def this(handler: HttpHandler) = this()
   
   /**

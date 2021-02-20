@@ -3,12 +3,13 @@ package typings.jupyterlabServices.messagesMod
 import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOptions[T /* <: Message */] extends js.Object {
+trait IOptions[T /* <: Message */] extends StObject {
   
   var buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.native
   
@@ -44,67 +45,55 @@ object IOptions {
   }
   
   @scala.inline
-  implicit class IOptionsOps[Self <: IOptions[_], T /* <: Message */] (val x: Self with IOptions[T]) extends AnyVal {
+  implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: Message */] (val x: Self with IOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
     
     @scala.inline
-    def setChannel(value: /* import warning: importer.ImportType#apply Failed type conversion: T['channel'] */ js.Any): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setChannel(value: /* import warning: importer.ImportType#apply Failed type conversion: T['channel'] */ js.Any): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: /* import warning: importer.ImportType#apply Failed type conversion: T['content'] */ js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: /* import warning: importer.ImportType#apply Failed type conversion: T['content'] */ js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    @scala.inline
+    def setMsgId(value: String): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMsgIdUndefined: Self = StObject.set(x, "msgId", js.undefined)
     
     @scala.inline
     def setMsgType(
       value: /* import warning: importer.ImportType#apply Failed type conversion: T['header']['msg_type'] */ js.Any
-    ): Self = this.set("msgType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: String): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = this.set("buffers", js.Array(value :_*))
-    
-    @scala.inline
-    def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = this.set("buffers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuffers: Self = this.set("buffers", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: JSONObject): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setMsgId(value: String): Self = this.set("msgId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsgId: Self = this.set("msgId", js.undefined)
+    ): Self = StObject.set(x, "msgType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentHeader(
       value: /* import warning: importer.ImportType#apply Failed type conversion: T['parent_header'] */ js.Any
-    ): Self = this.set("parentHeader", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "parentHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentHeader: Self = this.set("parentHeader", js.undefined)
+    def setParentHeaderUndefined: Self = StObject.set(x, "parentHeader", js.undefined)
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

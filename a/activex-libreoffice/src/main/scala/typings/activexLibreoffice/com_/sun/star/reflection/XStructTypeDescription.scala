@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,30 +80,18 @@ object XStructTypeDescription {
   }
   
   @scala.inline
-  implicit class XStructTypeDescriptionOps[Self <: XStructTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XStructTypeDescriptionMutableBuilder[Self <: XStructTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTypeArguments(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getTypeArguments", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTypeParameters(value: () => SafeArray[String]): Self = StObject.set(x, "getTypeParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeArguments(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "TypeArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeArguments(value: SafeArray[XTypeDescription]): Self = this.set("TypeArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeParameters(value: SafeArray[String]): Self = this.set("TypeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetTypeArguments(value: () => SafeArray[XTypeDescription]): Self = this.set("getTypeArguments", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTypeParameters(value: () => SafeArray[String]): Self = this.set("getTypeParameters", js.Any.fromFunction0(value))
+    def setTypeParameters(value: SafeArray[String]): Self = StObject.set(x, "TypeParameters", value.asInstanceOf[js.Any])
   }
 }

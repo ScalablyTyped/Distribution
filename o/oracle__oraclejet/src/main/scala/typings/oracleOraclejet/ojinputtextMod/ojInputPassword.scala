@@ -6,6 +6,7 @@ import typings.oracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateEnd
 import typings.oracleOraclejet.ojinputtextMod.ojInputPassword.ojAnimateStart
 import typings.oracleOraclejet.oracleOraclejetStrings.value
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +31,7 @@ trait ojInputPassword extends inputBase[String | Null, ojInputPasswordSettablePr
   @JSName("setProperty")
   def setProperty_value(property: value, value: String): Unit = js.native
 }
-@JSImport("@oracle/oraclejet/ojinputtext", "ojInputPassword")
-@js.native
-object ojInputPassword extends js.Object {
+object ojInputPassword {
   
   type ojAnimateEnd = CustomEvent[Action]
   

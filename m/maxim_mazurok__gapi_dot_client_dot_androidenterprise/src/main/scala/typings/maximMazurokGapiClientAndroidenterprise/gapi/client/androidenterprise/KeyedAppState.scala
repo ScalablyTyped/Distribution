@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyedAppState extends js.Object {
+trait KeyedAppState extends StObject {
   
   /** Additional field intended for machine-readable data. For example, a number or JSON object. To prevent XSS, we recommend removing any HTML from the data before displaying it. */
   var data: js.UndefOr[String] = js.native
@@ -34,48 +35,36 @@ object KeyedAppState {
   }
   
   @scala.inline
-  implicit class KeyedAppStateOps[Self <: KeyedAppState] (val x: Self) extends AnyVal {
+  implicit class KeyedAppStateMutableBuilder[Self <: KeyedAppState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setStateTimestampMillis(value: String): Self = StObject.set(x, "stateTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
-    
-    @scala.inline
-    def setStateTimestampMillis(value: String): Self = this.set("stateTimestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateTimestampMillis: Self = this.set("stateTimestampMillis", js.undefined)
+    def setStateTimestampMillisUndefined: Self = StObject.set(x, "stateTimestampMillis", js.undefined)
   }
 }

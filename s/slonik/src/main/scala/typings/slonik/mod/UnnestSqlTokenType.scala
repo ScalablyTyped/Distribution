@@ -1,5 +1,6 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,33 +24,21 @@ object UnnestSqlTokenType {
   }
   
   @scala.inline
-  implicit class UnnestSqlTokenTypeOps[Self <: UnnestSqlTokenType] (val x: Self) extends AnyVal {
+  implicit class UnnestSqlTokenTypeMutableBuilder[Self <: UnnestSqlTokenType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnTypes(value: js.Array[String]): Self = StObject.set(x, "columnTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnTypesVarargs(value: String*): Self = StObject.set(x, "columnTypes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTuples(value: js.Array[js.Array[ValueExpressionType]]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnTypesVarargs(value: String*): Self = this.set("columnTypes", js.Array(value :_*))
+    def setTuplesVarargs(value: js.Array[ValueExpressionType]*): Self = StObject.set(x, "tuples", js.Array(value :_*))
     
     @scala.inline
-    def setColumnTypes(value: js.Array[String]): Self = this.set("columnTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTuplesVarargs(value: js.Array[ValueExpressionType]*): Self = this.set("tuples", js.Array(value :_*))
-    
-    @scala.inline
-    def setTuples(value: js.Array[js.Array[ValueExpressionType]]): Self = this.set("tuples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: js.Symbol): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

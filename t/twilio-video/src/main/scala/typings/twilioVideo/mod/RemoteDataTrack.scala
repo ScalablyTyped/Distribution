@@ -1,7 +1,9 @@
 package typings.twilioVideo.mod
 
+import typings.node.eventsMod.EventEmitterOptions
 import typings.twilioVideo.mod.Track.SID
 import typings.twilioVideo.twilioVideoStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +14,7 @@ class RemoteDataTrack ()
   extends Track
      with DataTrack
      with RemoteTrack {
+  def this(options: EventEmitterOptions) = this()
   
   var isEnabled: Boolean = js.native
   

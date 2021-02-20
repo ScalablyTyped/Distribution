@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunTaskRequest extends js.Object {
+trait RunTaskRequest extends StObject {
   
   /**
     * The capacity provider strategy to use for the task. A capacity provider strategy consists of one or more capacity providers along with the base and weight to assign to them. A capacity provider must be associated with the cluster to be used in a capacity provider strategy. The PutClusterCapacityProviders API is used to associate a capacity provider with a cluster. Only capacity providers with an ACTIVE or UPDATING status can be used. If a capacityProviderStrategy is specified, the launchType parameter must be omitted. If no capacityProviderStrategy or launchType is specified, the defaultCapacityProviderStrategy for the cluster is used. If specifying a capacity provider that uses an Auto Scaling group, the capacity provider must already be created. New capacity providers can be created with the CreateCapacityProvider API operation. To use a AWS Fargate capacity provider, specify either the FARGATE or FARGATE_SPOT capacity providers. The AWS Fargate capacity providers are available to all accounts and only need to be associated with a cluster to be used. The PutClusterCapacityProviders API operation is used to update the list of available capacity providers for a cluster after the cluster is created.
@@ -96,123 +97,111 @@ object RunTaskRequest {
   }
   
   @scala.inline
-  implicit class RunTaskRequestOps[Self <: RunTaskRequest] (val x: Self) extends AnyVal {
+  implicit class RunTaskRequestMutableBuilder[Self <: RunTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "capacityProviderStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityProviderStrategyUndefined: Self = StObject.set(x, "capacityProviderStrategy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = StObject.set(x, "capacityProviderStrategy", js.Array(value :_*))
     
     @scala.inline
-    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    def setCount(value: BoxedInteger): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setEnableECSManagedTags(value: Boolean): Self = StObject.set(x, "enableECSManagedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setEnableECSManagedTagsUndefined: Self = StObject.set(x, "enableECSManagedTags", js.undefined)
     
     @scala.inline
-    def setCount(value: BoxedInteger): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setEnableECSManagedTags(value: Boolean): Self = this.set("enableECSManagedTags", value.asInstanceOf[js.Any])
+    def setLaunchType(value: LaunchType): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableECSManagedTags: Self = this.set("enableECSManagedTags", js.undefined)
+    def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
     
     @scala.inline
-    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    def setOverrides(value: TaskOverride): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    def setPlacementConstraints(value: PlacementConstraints): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
     
     @scala.inline
-    def setOverrides(value: TaskOverride): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setPlacementStrategy(value: PlacementStrategies): Self = StObject.set(x, "placementStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = this.set("placementConstraints", js.Array(value :_*))
+    def setPlacementStrategyUndefined: Self = StObject.set(x, "placementStrategy", js.undefined)
     
     @scala.inline
-    def setPlacementConstraints(value: PlacementConstraints): Self = this.set("placementConstraints", value.asInstanceOf[js.Any])
+    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategy", js.Array(value :_*))
     
     @scala.inline
-    def deletePlacementConstraints: Self = this.set("placementConstraints", js.undefined)
+    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = this.set("placementStrategy", js.Array(value :_*))
+    def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
     
     @scala.inline
-    def setPlacementStrategy(value: PlacementStrategies): Self = this.set("placementStrategy", value.asInstanceOf[js.Any])
+    def setPropagateTags(value: PropagateTags): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlacementStrategy: Self = this.set("placementStrategy", js.undefined)
+    def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
     
     @scala.inline
-    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
     
     @scala.inline
-    def setPropagateTags(value: PropagateTags): Self = this.set("propagateTags", value.asInstanceOf[js.Any])
+    def setStartedBy(value: String): Self = StObject.set(x, "startedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePropagateTags: Self = this.set("propagateTags", js.undefined)
+    def setStartedByUndefined: Self = StObject.set(x, "startedBy", js.undefined)
     
     @scala.inline
-    def setReferenceId(value: String): Self = this.set("referenceId", value.asInstanceOf[js.Any])
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferenceId: Self = this.set("referenceId", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
   }
 }

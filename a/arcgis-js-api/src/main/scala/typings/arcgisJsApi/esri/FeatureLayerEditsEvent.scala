@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureLayerEditsEvent extends js.Object {
+trait FeatureLayerEditsEvent extends StObject {
   
   var addedAttachments: js.Array[FeatureEditResult] = js.native
   
@@ -35,54 +36,42 @@ object FeatureLayerEditsEvent {
   }
   
   @scala.inline
-  implicit class FeatureLayerEditsEventOps[Self <: FeatureLayerEditsEvent] (val x: Self) extends AnyVal {
+  implicit class FeatureLayerEditsEventMutableBuilder[Self <: FeatureLayerEditsEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedAttachments(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "addedAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedAttachmentsVarargs(value: FeatureEditResult*): Self = StObject.set(x, "addedAttachments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddedFeatures(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "addedFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedAttachmentsVarargs(value: FeatureEditResult*): Self = this.set("addedAttachments", js.Array(value :_*))
+    def setAddedFeaturesVarargs(value: FeatureEditResult*): Self = StObject.set(x, "addedFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setAddedAttachments(value: js.Array[FeatureEditResult]): Self = this.set("addedAttachments", value.asInstanceOf[js.Any])
+    def setDeletedAttachments(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "deletedAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedFeaturesVarargs(value: FeatureEditResult*): Self = this.set("addedFeatures", js.Array(value :_*))
+    def setDeletedAttachmentsVarargs(value: FeatureEditResult*): Self = StObject.set(x, "deletedAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setAddedFeatures(value: js.Array[FeatureEditResult]): Self = this.set("addedFeatures", value.asInstanceOf[js.Any])
+    def setDeletedFeatures(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "deletedFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedAttachmentsVarargs(value: FeatureEditResult*): Self = this.set("deletedAttachments", js.Array(value :_*))
+    def setDeletedFeaturesVarargs(value: FeatureEditResult*): Self = StObject.set(x, "deletedFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedAttachments(value: js.Array[FeatureEditResult]): Self = this.set("deletedAttachments", value.asInstanceOf[js.Any])
+    def setUpdatedAttachments(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "updatedAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedFeaturesVarargs(value: FeatureEditResult*): Self = this.set("deletedFeatures", js.Array(value :_*))
+    def setUpdatedAttachmentsVarargs(value: FeatureEditResult*): Self = StObject.set(x, "updatedAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedFeatures(value: js.Array[FeatureEditResult]): Self = this.set("deletedFeatures", value.asInstanceOf[js.Any])
+    def setUpdatedFeatures(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "updatedFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAttachmentsVarargs(value: FeatureEditResult*): Self = this.set("updatedAttachments", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdatedAttachments(value: js.Array[FeatureEditResult]): Self = this.set("updatedAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedFeaturesVarargs(value: FeatureEditResult*): Self = this.set("updatedFeatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdatedFeatures(value: js.Array[FeatureEditResult]): Self = this.set("updatedFeatures", value.asInstanceOf[js.Any])
+    def setUpdatedFeaturesVarargs(value: FeatureEditResult*): Self = StObject.set(x, "updatedFeatures", js.Array(value :_*))
   }
 }

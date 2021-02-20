@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatLangPair extends js.Object {
+trait FormatLangPair extends StObject {
   
   /**
     * Format.
@@ -26,24 +27,12 @@ object FormatLangPair {
   }
   
   @scala.inline
-  implicit class FormatLangPairOps[Self <: FormatLangPair] (val x: Self) extends AnyVal {
+  implicit class FormatLangPairMutableBuilder[Self <: FormatLangPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }
 }

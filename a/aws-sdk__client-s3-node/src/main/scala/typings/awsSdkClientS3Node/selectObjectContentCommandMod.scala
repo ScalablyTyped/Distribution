@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesSelectObjectContentInputMod.SelectObjectC
 import typings.awsSdkClientS3Node.typesSelectObjectContentOutputMod.SelectObjectContentOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/SelectObjectContentCommand", JSImport.Namespace)
-@js.native
-object selectObjectContentCommandMod extends js.Object {
+object selectObjectContentCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/SelectObjectContentCommand", "SelectObjectContentCommand")
   @js.native
   class SelectObjectContentCommand protected () extends Command[
           InputTypesUnion, 

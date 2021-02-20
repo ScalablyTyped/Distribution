@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Catalog extends js.Object {
+trait Catalog extends StObject {
   
   /**
     * Returns the caption of the catalog used when displaying the name of the catalog to the user.
@@ -49,30 +50,18 @@ object Catalog {
   }
   
   @scala.inline
-  implicit class CatalogOps[Self <: Catalog] (val x: Self) extends AnyVal {
+  implicit class CatalogMutableBuilder[Self <: Catalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaption(value: js.Object => String): Self = this.set("caption", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = this.set("description", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: js.Object => String): Self = this.set("name", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = this.set("uniqueName", js.Any.fromFunction1(value))
+    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

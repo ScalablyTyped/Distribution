@@ -2,13 +2,14 @@ package typings.azure.mod
 
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "SpeedSummary")
 @js.native
-class SpeedSummary protected () extends js.Object {
+class SpeedSummary protected () extends StObject {
   def this(name: String) = this()
   
   var _speedTrackPtr: Double = js.native

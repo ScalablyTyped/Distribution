@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITexturePackerOptions extends js.Object {
+trait ITexturePackerOptions extends StObject {
   
   /**
     * number of columns if using custom column count layout(2).  This defaults to 4.
@@ -81,99 +82,87 @@ object ITexturePackerOptions {
   }
   
   @scala.inline
-  implicit class ITexturePackerOptionsOps[Self <: ITexturePackerOptions] (val x: Self) extends AnyVal {
+  implicit class ITexturePackerOptionsMutableBuilder[Self <: ITexturePackerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColnum(value: Double): Self = StObject.set(x, "colnum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColnumUndefined: Self = StObject.set(x, "colnum", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomFillColor(value: String): Self = StObject.set(x, "customFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColnum(value: Double): Self = this.set("colnum", value.asInstanceOf[js.Any])
+    def setCustomFillColorUndefined: Self = StObject.set(x, "customFillColor", js.undefined)
     
     @scala.inline
-    def deleteColnum: Self = this.set("colnum", js.undefined)
+    def setDisposeSources(value: Boolean): Self = StObject.set(x, "disposeSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFillColor(value: String): Self = this.set("customFillColor", value.asInstanceOf[js.Any])
+    def setDisposeSourcesUndefined: Self = StObject.set(x, "disposeSources", js.undefined)
     
     @scala.inline
-    def deleteCustomFillColor: Self = this.set("customFillColor", js.undefined)
+    def setFillBlanks(value: Boolean): Self = StObject.set(x, "fillBlanks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisposeSources(value: Boolean): Self = this.set("disposeSources", value.asInstanceOf[js.Any])
+    def setFillBlanksUndefined: Self = StObject.set(x, "fillBlanks", js.undefined)
     
     @scala.inline
-    def deleteDisposeSources: Self = this.set("disposeSources", js.undefined)
+    def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBlanks(value: Boolean): Self = this.set("fillBlanks", value.asInstanceOf[js.Any])
+    def setFrameSizeUndefined: Self = StObject.set(x, "frameSize", js.undefined)
     
     @scala.inline
-    def deleteFillBlanks: Self = this.set("fillBlanks", js.undefined)
+    def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameSize(value: Double): Self = this.set("frameSize", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteFrameSize: Self = this.set("frameSize", js.undefined)
+    def setMap(value: js.Array[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: Double): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value :_*))
     
     @scala.inline
-    def setMapVarargs(value: String*): Self = this.set("map", js.Array(value :_*))
+    def setPaddingColor(value: Color3 | Color4): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: js.Array[String]): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setPaddingColorUndefined: Self = StObject.set(x, "paddingColor", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPaddingMode(value: Double): Self = StObject.set(x, "paddingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingColor(value: Color3 | Color4): Self = this.set("paddingColor", value.asInstanceOf[js.Any])
+    def setPaddingModeUndefined: Self = StObject.set(x, "paddingMode", js.undefined)
     
     @scala.inline
-    def deletePaddingColor: Self = this.set("paddingColor", js.undefined)
+    def setPaddingRatio(value: Double): Self = StObject.set(x, "paddingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingMode(value: Double): Self = this.set("paddingMode", value.asInstanceOf[js.Any])
+    def setPaddingRatioUndefined: Self = StObject.set(x, "paddingRatio", js.undefined)
     
     @scala.inline
-    def deletePaddingMode: Self = this.set("paddingMode", js.undefined)
+    def setUpdateInputMeshes(value: Boolean): Self = StObject.set(x, "updateInputMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingRatio(value: Double): Self = this.set("paddingRatio", value.asInstanceOf[js.Any])
+    def setUpdateInputMeshesUndefined: Self = StObject.set(x, "updateInputMeshes", js.undefined)
     
     @scala.inline
-    def deletePaddingRatio: Self = this.set("paddingRatio", js.undefined)
+    def setUvsIn(value: String): Self = StObject.set(x, "uvsIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateInputMeshes(value: Boolean): Self = this.set("updateInputMeshes", value.asInstanceOf[js.Any])
+    def setUvsInUndefined: Self = StObject.set(x, "uvsIn", js.undefined)
     
     @scala.inline
-    def deleteUpdateInputMeshes: Self = this.set("updateInputMeshes", js.undefined)
+    def setUvsOut(value: String): Self = StObject.set(x, "uvsOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUvsIn(value: String): Self = this.set("uvsIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUvsIn: Self = this.set("uvsIn", js.undefined)
-    
-    @scala.inline
-    def setUvsOut(value: String): Self = this.set("uvsOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUvsOut: Self = this.set("uvsOut", js.undefined)
+    def setUvsOutUndefined: Self = StObject.set(x, "uvsOut", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDimension extends js.Object {
+trait IDimension extends StObject {
   
   var autoFitHeight: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IDimension {
   }
   
   @scala.inline
-  implicit class IDimensionOps[Self <: IDimension] (val x: Self) extends AnyVal {
+  implicit class IDimensionMutableBuilder[Self <: IDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFitHeight(value: Boolean): Self = StObject.set(x, "autoFitHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFitHeightUndefined: Self = StObject.set(x, "autoFitHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOuterHeight(value: Double): Self = StObject.set(x, "outerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFitHeight(value: Boolean): Self = this.set("autoFitHeight", value.asInstanceOf[js.Any])
+    def setOuterHeightUndefined: Self = StObject.set(x, "outerHeight", js.undefined)
     
     @scala.inline
-    def deleteAutoFitHeight: Self = this.set("autoFitHeight", js.undefined)
+    def setOuterWidth(value: Double): Self = StObject.set(x, "outerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterHeight(value: Double): Self = this.set("outerHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOuterHeight: Self = this.set("outerHeight", js.undefined)
-    
-    @scala.inline
-    def setOuterWidth(value: Double): Self = this.set("outerWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOuterWidth: Self = this.set("outerWidth", js.undefined)
+    def setOuterWidthUndefined: Self = StObject.set(x, "outerWidth", js.undefined)
   }
 }

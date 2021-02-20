@@ -2,12 +2,13 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.slimerjs.anon.Architecture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemModule extends js.Object {
+trait SystemModule extends StObject {
   
   var args: js.Array[String] = js.native
   
@@ -52,54 +53,42 @@ object SystemModule {
   }
   
   @scala.inline
-  implicit class SystemModuleOps[Self <: SystemModule] (val x: Self) extends AnyVal {
+  implicit class SystemModuleMutableBuilder[Self <: SystemModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setOs(value: Architecture): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: Architecture): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setStandarderr(value: Std): Self = StObject.set(x, "standarderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
+    def setStandardin(value: Std): Self = StObject.set(x, "standardin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setStandardout(value: Std): Self = StObject.set(x, "standardout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandarderr(value: Std): Self = this.set("standarderr", value.asInstanceOf[js.Any])
+    def setStderr(value: Std): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardin(value: Std): Self = this.set("standardin", value.asInstanceOf[js.Any])
+    def setStdin(value: Std): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardout(value: Std): Self = this.set("standardout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStderr(value: Std): Self = this.set("stderr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStdin(value: Std): Self = this.set("stdin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStdout(value: Std): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    def setStdout(value: Std): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
   }
 }

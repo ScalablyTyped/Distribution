@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRedshiftClusterClusterParameterStatus extends js.Object {
+trait AwsRedshiftClusterClusterParameterStatus extends StObject {
   
   /**
     * The error that prevented the parameter from being applied to the database.
@@ -31,36 +32,24 @@ object AwsRedshiftClusterClusterParameterStatus {
   }
   
   @scala.inline
-  implicit class AwsRedshiftClusterClusterParameterStatusOps[Self <: AwsRedshiftClusterClusterParameterStatus] (val x: Self) extends AnyVal {
+  implicit class AwsRedshiftClusterClusterParameterStatusMutableBuilder[Self <: AwsRedshiftClusterClusterParameterStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterApplyErrorDescription(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterApplyErrorDescriptionUndefined: Self = StObject.set(x, "ParameterApplyErrorDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterApplyErrorDescription(value: NonEmptyString): Self = this.set("ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
+    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
     
     @scala.inline
-    def deleteParameterApplyErrorDescription: Self = this.set("ParameterApplyErrorDescription", js.undefined)
+    def setParameterName(value: NonEmptyString): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterApplyStatus(value: NonEmptyString): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
-    
-    @scala.inline
-    def setParameterName(value: NonEmptyString): Self = this.set("ParameterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterName: Self = this.set("ParameterName", js.undefined)
+    def setParameterNameUndefined: Self = StObject.set(x, "ParameterName", js.undefined)
   }
 }

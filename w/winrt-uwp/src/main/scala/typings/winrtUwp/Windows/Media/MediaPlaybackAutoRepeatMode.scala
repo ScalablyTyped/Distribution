@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaPlaybackAutoRepeatMode extends js.Object
+sealed trait MediaPlaybackAutoRepeatMode extends StObject
 /** Specifies the auto repeat mode for media playback. */
 @JSGlobal("Windows.Media.MediaPlaybackAutoRepeatMode")
 @js.native
-object MediaPlaybackAutoRepeatMode extends js.Object {
+object MediaPlaybackAutoRepeatMode extends StObject {
   
   /** Repeat the current list of tracks. */
   @js.native

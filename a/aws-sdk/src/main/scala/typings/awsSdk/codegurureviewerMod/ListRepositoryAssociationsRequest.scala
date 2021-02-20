@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRepositoryAssociationsRequest extends js.Object {
+trait ListRepositoryAssociationsRequest extends StObject {
   
   /**
     * The maximum number of repository association results returned by ListRepositoryAssociations in paginated output. When this parameter is used, ListRepositoryAssociations only returns maxResults results in a single page with a nextToken response element. The remaining results of the initial request can be seen by sending another ListRepositoryAssociations request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, ListRepositoryAssociations returns up to 100 results and a nextToken value if applicable. 
@@ -46,66 +47,54 @@ object ListRepositoryAssociationsRequest {
   }
   
   @scala.inline
-  implicit class ListRepositoryAssociationsRequestOps[Self <: ListRepositoryAssociationsRequest] (val x: Self) extends AnyVal {
+  implicit class ListRepositoryAssociationsRequestMutableBuilder[Self <: ListRepositoryAssociationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNames(value: Names): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNamesVarargs(value: Name*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: Name*): Self = this.set("Names", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: Names): Self = this.set("Names", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteNames: Self = this.set("Names", js.undefined)
+    def setOwners(value: Owners): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setOwnersVarargs(value: Owner*): Self = StObject.set(x, "Owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwnersVarargs(value: Owner*): Self = this.set("Owners", js.Array(value :_*))
+    def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwners(value: Owners): Self = this.set("Owners", value.asInstanceOf[js.Any])
+    def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
     
     @scala.inline
-    def deleteOwners: Self = this.set("Owners", js.undefined)
+    def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
     
     @scala.inline
-    def setProviderTypesVarargs(value: ProviderType*): Self = this.set("ProviderTypes", js.Array(value :_*))
+    def setStates(value: RepositoryAssociationStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderTypes(value: ProviderTypes): Self = this.set("ProviderTypes", value.asInstanceOf[js.Any])
+    def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
     @scala.inline
-    def deleteProviderTypes: Self = this.set("ProviderTypes", js.undefined)
-    
-    @scala.inline
-    def setStatesVarargs(value: RepositoryAssociationState*): Self = this.set("States", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: RepositoryAssociationStates): Self = this.set("States", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("States", js.undefined)
+    def setStatesVarargs(value: RepositoryAssociationState*): Self = StObject.set(x, "States", js.Array(value :_*))
   }
 }

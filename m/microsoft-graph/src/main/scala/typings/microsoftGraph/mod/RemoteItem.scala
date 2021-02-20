@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteItem extends js.Object {
+trait RemoteItem extends StObject {
   
   /**
     * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
@@ -83,189 +84,177 @@ object RemoteItem {
   }
   
   @scala.inline
-  implicit class RemoteItemOps[Self <: RemoteItem] (val x: Self) extends AnyVal {
+  implicit class RemoteItemMutableBuilder[Self <: RemoteItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def set_package(value: NullableOption[Package]): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def set_packageNull: Self = this.set("package", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setFile(value: NullableOption[File]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setFileNull: Self = StObject.set(x, "file", null)
     
     @scala.inline
-    def setCreatedByNull: Self = this.set("createdBy", null)
+    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = StObject.set(x, "fileSystemInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setFileSystemInfoNull: Self = StObject.set(x, "fileSystemInfo", null)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setFileSystemInfoUndefined: Self = StObject.set(x, "fileSystemInfo", js.undefined)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setFile(value: NullableOption[File]): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFolder(value: NullableOption[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setFolderNull: Self = StObject.set(x, "folder", null)
     
     @scala.inline
-    def setFileNull: Self = this.set("file", null)
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = this.set("fileSystemInfo", value.asInstanceOf[js.Any])
+    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileSystemInfo: Self = this.set("fileSystemInfo", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setFileSystemInfoNull: Self = this.set("fileSystemInfo", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setFolder(value: NullableOption[Folder]): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setImage(value: NullableOption[Image]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setImageNull: Self = StObject.set(x, "image", null)
     
     @scala.inline
-    def setFolderNull: Self = this.set("folder", null)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def setId(value: NullableOption[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
     @scala.inline
-    def setImage(value: NullableOption[Image]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setImageNull: Self = this.set("image", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("lastModifiedBy", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setLastModifiedByNull: Self = this.set("lastModifiedBy", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setParentReference(value: NullableOption[ItemReference]): Self = StObject.set(x, "parentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setParentReferenceNull: Self = StObject.set(x, "parentReference", null)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setParentReferenceUndefined: Self = StObject.set(x, "parentReference", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShared(value: NullableOption[Shared]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSharedNull: Self = StObject.set(x, "shared", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def setParentReference(value: NullableOption[ItemReference]): Self = this.set("parentReference", value.asInstanceOf[js.Any])
+    def setSharepointIds(value: NullableOption[SharepointIds]): Self = StObject.set(x, "sharepointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentReference: Self = this.set("parentReference", js.undefined)
+    def setSharepointIdsNull: Self = StObject.set(x, "sharepointIds", null)
     
     @scala.inline
-    def setParentReferenceNull: Self = this.set("parentReference", null)
+    def setSharepointIdsUndefined: Self = StObject.set(x, "sharepointIds", js.undefined)
     
     @scala.inline
-    def setShared(value: NullableOption[Shared]): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setSizeNull: Self = StObject.set(x, "size", null)
     
     @scala.inline
-    def setSharedNull: Self = this.set("shared", null)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setSharepointIds(value: NullableOption[SharepointIds]): Self = this.set("sharepointIds", value.asInstanceOf[js.Any])
+    def setSpecialFolder(value: NullableOption[SpecialFolder]): Self = StObject.set(x, "specialFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharepointIds: Self = this.set("sharepointIds", js.undefined)
+    def setSpecialFolderNull: Self = StObject.set(x, "specialFolder", null)
     
     @scala.inline
-    def setSharepointIdsNull: Self = this.set("sharepointIds", null)
+    def setSpecialFolderUndefined: Self = StObject.set(x, "specialFolder", js.undefined)
     
     @scala.inline
-    def setSize(value: NullableOption[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setVideo(value: NullableOption[Video]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setVideoNull: Self = StObject.set(x, "video", null)
     
     @scala.inline
-    def setSizeNull: Self = this.set("size", null)
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def setSpecialFolder(value: NullableOption[SpecialFolder]): Self = this.set("specialFolder", value.asInstanceOf[js.Any])
+    def setWebDavUrl(value: NullableOption[String]): Self = StObject.set(x, "webDavUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpecialFolder: Self = this.set("specialFolder", js.undefined)
+    def setWebDavUrlNull: Self = StObject.set(x, "webDavUrl", null)
     
     @scala.inline
-    def setSpecialFolderNull: Self = this.set("specialFolder", null)
+    def setWebDavUrlUndefined: Self = StObject.set(x, "webDavUrl", js.undefined)
     
     @scala.inline
-    def setVideo(value: NullableOption[Video]): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
     
     @scala.inline
-    def setVideoNull: Self = this.set("video", null)
+    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
     
     @scala.inline
-    def setWebDavUrl(value: NullableOption[String]): Self = this.set("webDavUrl", value.asInstanceOf[js.Any])
+    def set_package(value: NullableOption[Package]): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebDavUrl: Self = this.set("webDavUrl", js.undefined)
+    def set_packageNull: Self = StObject.set(x, "package", null)
     
     @scala.inline
-    def setWebDavUrlNull: Self = this.set("webDavUrl", null)
-    
-    @scala.inline
-    def setWebUrl(value: NullableOption[String]): Self = this.set("webUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
-    
-    @scala.inline
-    def setWebUrlNull: Self = this.set("webUrl", null)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

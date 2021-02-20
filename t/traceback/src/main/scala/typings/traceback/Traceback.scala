@@ -1,54 +1,55 @@
 package typings.traceback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Traceback extends js.Object {
+trait Traceback extends StObject {
   
-   // | The line number in the file
+  // | The line number in the file
   var col: Double = js.native
   
-   // | The absolute path of the file defining the function
+  // | The absolute path of the file defining the function
   var file: String = js.native
   
-   // | The byte position in the file
+  // | The byte position in the file
   var fun: js.Any = js.native
   
-   // | Boolean indicating whether the function is native
+  // | Boolean indicating whether the function is native
   var is_ctor: Boolean = js.native
   
-   // | Boolean indicating whether the function was called with a global this
+  // | Boolean indicating whether the function was called with a global this
   var is_eval: Boolean = js.native
   
-   // | Boolean indicating whether the function comes from an eval() call
+  // | Boolean indicating whether the function comes from an eval() call
   var is_native: Boolean = js.native
   
-   // | The CallSite that ran eval(), if this frame is an eval
+  // | The CallSite that ran eval(), if this frame is an eval
   var is_top: Boolean = js.native
   
-   // | The basename of the path file ("example.js")
+  // | The basename of the path file ("example.js")
   var line: Double = js.native
   
-   // | The function itself
+  // | The function itself
   var method: String = js.native
   
   var name: String = js.native
   
-   // | The type of this; the name of the constructor function (Object, ReadStream, etc.)
+  // | The type of this; the name of the constructor function (Object, ReadStream, etc.)
   var origin: js.Any = js.native
   
-   // | The function name
+  // | The function name
   var path: String = js.native
   
-   // | The column number in the file
+  // | The column number in the file
   var pos: Double = js.native
   
-   // | If this function was called as a method, the name it is stored as
+  // | If this function was called as a method, the name it is stored as
   var `this`: js.Any = js.native
   
-   // | The object bound to the label this in the function
+  // | The object bound to the label this in the function
   var `type`: String = js.native
 }
 object Traceback {
@@ -78,63 +79,51 @@ object Traceback {
   }
   
   @scala.inline
-  implicit class TracebackOps[Self <: Traceback] (val x: Self) extends AnyVal {
+  implicit class TracebackMutableBuilder[Self <: Traceback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFun(value: js.Any): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setIs_ctor(value: Boolean): Self = StObject.set(x, "is_ctor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setIs_eval(value: Boolean): Self = StObject.set(x, "is_eval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFun(value: js.Any): Self = this.set("fun", value.asInstanceOf[js.Any])
+    def setIs_native(value: Boolean): Self = StObject.set(x, "is_native", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_ctor(value: Boolean): Self = this.set("is_ctor", value.asInstanceOf[js.Any])
+    def setIs_top(value: Boolean): Self = StObject.set(x, "is_top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_eval(value: Boolean): Self = this.set("is_eval", value.asInstanceOf[js.Any])
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_native(value: Boolean): Self = this.set("is_native", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_top(value: Boolean): Self = this.set("is_top", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setOrigin(value: js.Any): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: js.Any): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setThis(value: js.Any): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPos(value: Double): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThis(value: js.Any): Self = this.set("this", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

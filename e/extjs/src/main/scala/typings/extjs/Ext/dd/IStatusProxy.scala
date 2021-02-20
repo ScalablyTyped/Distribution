@@ -3,6 +3,7 @@ package typings.extjs.Ext.dd
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,74 +67,62 @@ object IStatusProxy {
   }
   
   @scala.inline
-  implicit class IStatusProxyOps[Self <: IStatusProxy] (val x: Self) extends AnyVal {
+  implicit class IStatusProxyMutableBuilder[Self <: IStatusProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropAllowed(value: String): Self = this.set("dropAllowed", value.asInstanceOf[js.Any])
+    def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
     @scala.inline
-    def deleteDropAllowed: Self = this.set("dropAllowed", js.undefined)
+    def setGetGhost(value: () => IElement): Self = StObject.set(x, "getGhost", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDropNotAllowed(value: String): Self = this.set("dropNotAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropNotAllowed: Self = this.set("dropNotAllowed", js.undefined)
-    
-    @scala.inline
-    def setGetGhost(value: () => IElement): Self = this.set("getGhost", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetGhost: Self = this.set("getGhost", js.undefined)
+    def setGetGhostUndefined: Self = StObject.set(x, "getGhost", js.undefined)
     
     @scala.inline
     def setRepair(
       value: (/* xy */ js.UndefOr[Array], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("repair", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "repair", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRepair: Self = this.set("repair", js.undefined)
+    def setRepairUndefined: Self = StObject.set(x, "repair", js.undefined)
     
     @scala.inline
-    def setReset(value: /* clearGhost */ js.UndefOr[Boolean] => Unit): Self = this.set("reset", js.Any.fromFunction1(value))
+    def setReset(value: /* clearGhost */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def setSetStatus(value: /* cssClass */ js.UndefOr[String] => Unit): Self = this.set("setStatus", js.Any.fromFunction1(value))
+    def setSetStatus(value: /* cssClass */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetStatus: Self = this.set("setStatus", js.undefined)
+    def setSetStatusUndefined: Self = StObject.set(x, "setStatus", js.undefined)
     
     @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def setSync(value: () => Unit): Self = this.set("sync", js.Any.fromFunction0(value))
+    def setSync(value: () => Unit): Self = StObject.set(x, "sync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteSync: Self = this.set("sync", js.undefined)
+    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
     @scala.inline
-    def setUpdate(value: /* html */ js.UndefOr[js.Any] => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: /* html */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

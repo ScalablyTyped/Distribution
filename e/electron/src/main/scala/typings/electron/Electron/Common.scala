@@ -1,12 +1,11 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Electron.Common")
-@js.native
-object Common extends js.Object {
+object Common {
   
   type AboutPanelOptionsOptions = typings.electron.Electron.AboutPanelOptionsOptions
   
@@ -400,5 +399,6 @@ object Common extends js.Object {
   
   type WillNavigateEvent = typings.electron.Electron.WillNavigateEvent
   
+  /* was `typeof NativeImage` */
   type nativeImage = typings.electron.Electron.Common.NativeImage_
 }

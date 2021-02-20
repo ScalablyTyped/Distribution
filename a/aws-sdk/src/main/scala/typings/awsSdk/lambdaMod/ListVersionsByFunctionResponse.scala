@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVersionsByFunctionResponse extends js.Object {
+trait ListVersionsByFunctionResponse extends StObject {
   
   /**
     * The pagination token that's included if more results are available.
@@ -26,33 +27,21 @@ object ListVersionsByFunctionResponse {
   }
   
   @scala.inline
-  implicit class ListVersionsByFunctionResponseOps[Self <: ListVersionsByFunctionResponse] (val x: Self) extends AnyVal {
+  implicit class ListVersionsByFunctionResponseMutableBuilder[Self <: ListVersionsByFunctionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersions(value: FunctionList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: String): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: FunctionConfiguration*): Self = this.set("Versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: FunctionList): Self = this.set("Versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("Versions", js.undefined)
+    def setVersionsVarargs(value: FunctionConfiguration*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

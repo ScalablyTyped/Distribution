@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.table
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @js.native
-trait TableSortDescriptor2 extends js.Object {
+trait TableSortDescriptor2 extends StObject {
   
   /**
     * specifies if the columns or rows are to be sorted.
@@ -41,27 +42,15 @@ object TableSortDescriptor2 {
   }
   
   @scala.inline
-  implicit class TableSortDescriptor2Ops[Self <: TableSortDescriptor2] (val x: Self) extends AnyVal {
+  implicit class TableSortDescriptor2MutableBuilder[Self <: TableSortDescriptor2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsSortColumns(value: Boolean): Self = StObject.set(x, "IsSortColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSortFieldsCount(value: Double): Self = StObject.set(x, "MaxSortFieldsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsSortColumns(value: Boolean): Self = this.set("IsSortColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxSortFieldsCount(value: Double): Self = this.set("MaxSortFieldsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortFields(value: SafeArray[TableSortField]): Self = this.set("SortFields", value.asInstanceOf[js.Any])
+    def setSortFields(value: SafeArray[TableSortField]): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
   }
 }

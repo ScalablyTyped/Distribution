@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRecordHistoryOutput extends js.Object {
+trait ListRecordHistoryOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
@@ -26,33 +27,21 @@ object ListRecordHistoryOutput {
   }
   
   @scala.inline
-  implicit class ListRecordHistoryOutputOps[Self <: ListRecordHistoryOutput] (val x: Self) extends AnyVal {
+  implicit class ListRecordHistoryOutputMutableBuilder[Self <: ListRecordHistoryOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordDetails(value: RecordDetails): Self = StObject.set(x, "RecordDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setRecordDetailsUndefined: Self = StObject.set(x, "RecordDetails", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setRecordDetailsVarargs(value: RecordDetail*): Self = this.set("RecordDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecordDetails(value: RecordDetails): Self = this.set("RecordDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordDetails: Self = this.set("RecordDetails", js.undefined)
+    def setRecordDetailsVarargs(value: RecordDetail*): Self = StObject.set(x, "RecordDetails", js.Array(value :_*))
   }
 }

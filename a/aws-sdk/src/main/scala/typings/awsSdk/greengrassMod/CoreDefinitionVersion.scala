@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreDefinitionVersion extends js.Object {
+trait CoreDefinitionVersion extends StObject {
   
   /**
     * A list of cores in the core definition version.
@@ -21,27 +22,15 @@ object CoreDefinitionVersion {
   }
   
   @scala.inline
-  implicit class CoreDefinitionVersionOps[Self <: CoreDefinitionVersion] (val x: Self) extends AnyVal {
+  implicit class CoreDefinitionVersionMutableBuilder[Self <: CoreDefinitionVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCores(value: listOfCore): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoresVarargs(value: Core*): Self = this.set("Cores", js.Array(value :_*))
-    
-    @scala.inline
-    def setCores(value: listOfCore): Self = this.set("Cores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCores: Self = this.set("Cores", js.undefined)
+    def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value :_*))
   }
 }

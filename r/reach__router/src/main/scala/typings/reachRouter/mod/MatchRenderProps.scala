@@ -2,12 +2,13 @@ package typings.reachRouter.mod
 
 import typings.history.mod.LocationState
 import typings.reachRouter.anon.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchRenderProps[TParams] extends js.Object {
+trait MatchRenderProps[TParams] extends StObject {
   
   var location: WindowLocation[LocationState] = js.native
   
@@ -24,30 +25,18 @@ object MatchRenderProps {
   }
   
   @scala.inline
-  implicit class MatchRenderPropsOps[Self <: MatchRenderProps[_], TParams] (val x: Self with MatchRenderProps[TParams]) extends AnyVal {
+  implicit class MatchRenderPropsMutableBuilder[Self <: MatchRenderProps[_], TParams] (val x: Self with MatchRenderProps[TParams]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatch(value: Path with TParams): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchNull: Self = StObject.set(x, "match", null)
     
     @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = this.set("navigate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatch(value: Path with TParams): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchNull: Self = this.set("match", null)
+    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
   }
 }

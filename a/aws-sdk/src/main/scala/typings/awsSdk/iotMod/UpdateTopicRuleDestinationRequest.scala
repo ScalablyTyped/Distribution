@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTopicRuleDestinationRequest extends js.Object {
+trait UpdateTopicRuleDestinationRequest extends StObject {
   
   /**
     * The ARN of the topic rule destination.
@@ -26,24 +27,12 @@ object UpdateTopicRuleDestinationRequest {
   }
   
   @scala.inline
-  implicit class UpdateTopicRuleDestinationRequestOps[Self <: UpdateTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTopicRuleDestinationRequestMutableBuilder[Self <: UpdateTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: AwsArn): Self = this.set("arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: TopicRuleDestinationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: TopicRuleDestinationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

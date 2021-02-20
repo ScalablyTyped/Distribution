@@ -3,14 +3,14 @@ package typings.stormReactDiagrams
 import org.scalablytyped.runtime.StringDictionary
 import typings.stormReactDiagrams.defaultPortModelMod.DefaultPortModel
 import typings.stormReactDiagrams.nodeModelMod.NodeModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultNodeModel", JSImport.Namespace)
-@js.native
-object defaultNodeModelMod extends js.Object {
+object defaultNodeModelMod {
   
+  @JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultNodeModel", "DefaultNodeModel")
   @js.native
   class DefaultNodeModel () extends NodeModel {
     def this(name: String) = this()

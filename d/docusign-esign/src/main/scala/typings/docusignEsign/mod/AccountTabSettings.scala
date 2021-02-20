@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountTabSettings extends js.Object {
+trait AccountTabSettings extends StObject {
   
   /**
     * When set to **true**, account users can set a tab order for the signing process.
@@ -278,298 +279,286 @@ object AccountTabSettings {
   }
   
   @scala.inline
-  implicit class AccountTabSettingsOps[Self <: AccountTabSettings] (val x: Self) extends AnyVal {
+  implicit class AccountTabSettingsMutableBuilder[Self <: AccountTabSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowTabOrder(value: String): Self = this.set("allowTabOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowTabOrder: Self = this.set("allowTabOrder", js.undefined)
+    def setAllowTabOrder(value: String): Self = StObject.set(x, "allowTabOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAllowTabOrderMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("allowTabOrderMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "allowTabOrderMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowTabOrderMetadata: Self = this.set("allowTabOrderMetadata", js.undefined)
+    def setAllowTabOrderMetadataUndefined: Self = StObject.set(x, "allowTabOrderMetadata", js.undefined)
     
     @scala.inline
-    def setApproveDeclineTabsEnabled(value: String): Self = this.set("approveDeclineTabsEnabled", value.asInstanceOf[js.Any])
+    def setAllowTabOrderUndefined: Self = StObject.set(x, "allowTabOrder", js.undefined)
     
     @scala.inline
-    def deleteApproveDeclineTabsEnabled: Self = this.set("approveDeclineTabsEnabled", js.undefined)
+    def setApproveDeclineTabsEnabled(value: String): Self = StObject.set(x, "approveDeclineTabsEnabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setApproveDeclineTabsEnabledUndefined: Self = StObject.set(x, "approveDeclineTabsEnabled", js.undefined)
     
     @scala.inline
     def setApproveDeclineTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("approveDeclineTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "approveDeclineTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApproveDeclineTabsMetadata: Self = this.set("approveDeclineTabsMetadata", js.undefined)
+    def setApproveDeclineTabsMetadataUndefined: Self = StObject.set(x, "approveDeclineTabsMetadata", js.undefined)
     
     @scala.inline
-    def setCalculatedFieldsEnabled(value: String): Self = this.set("calculatedFieldsEnabled", value.asInstanceOf[js.Any])
+    def setCalculatedFieldsEnabled(value: String): Self = StObject.set(x, "calculatedFieldsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalculatedFieldsEnabled: Self = this.set("calculatedFieldsEnabled", js.undefined)
+    def setCalculatedFieldsEnabledUndefined: Self = StObject.set(x, "calculatedFieldsEnabled", js.undefined)
     
     @scala.inline
     def setCalculatedFieldsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("calculatedFieldsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "calculatedFieldsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalculatedFieldsMetadata: Self = this.set("calculatedFieldsMetadata", js.undefined)
+    def setCalculatedFieldsMetadataUndefined: Self = StObject.set(x, "calculatedFieldsMetadata", js.undefined)
     
     @scala.inline
     def setCheckBoxTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("checkBoxTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "checkBoxTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckBoxTabsMetadata: Self = this.set("checkBoxTabsMetadata", js.undefined)
+    def setCheckBoxTabsMetadataUndefined: Self = StObject.set(x, "checkBoxTabsMetadata", js.undefined)
     
     @scala.inline
-    def setCheckboxTabsEnabled(value: String): Self = this.set("checkboxTabsEnabled", value.asInstanceOf[js.Any])
+    def setCheckboxTabsEnabled(value: String): Self = StObject.set(x, "checkboxTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckboxTabsEnabled: Self = this.set("checkboxTabsEnabled", js.undefined)
+    def setCheckboxTabsEnabledUndefined: Self = StObject.set(x, "checkboxTabsEnabled", js.undefined)
     
     @scala.inline
-    def setDataFieldRegexEnabled(value: String): Self = this.set("dataFieldRegexEnabled", value.asInstanceOf[js.Any])
+    def setDataFieldRegexEnabled(value: String): Self = StObject.set(x, "dataFieldRegexEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFieldRegexEnabled: Self = this.set("dataFieldRegexEnabled", js.undefined)
+    def setDataFieldRegexEnabledUndefined: Self = StObject.set(x, "dataFieldRegexEnabled", js.undefined)
     
     @scala.inline
     def setDataFieldRegexMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("dataFieldRegexMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataFieldRegexMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFieldRegexMetadata: Self = this.set("dataFieldRegexMetadata", js.undefined)
+    def setDataFieldRegexMetadataUndefined: Self = StObject.set(x, "dataFieldRegexMetadata", js.undefined)
     
     @scala.inline
-    def setDataFieldSizeEnabled(value: String): Self = this.set("dataFieldSizeEnabled", value.asInstanceOf[js.Any])
+    def setDataFieldSizeEnabled(value: String): Self = StObject.set(x, "dataFieldSizeEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFieldSizeEnabled: Self = this.set("dataFieldSizeEnabled", js.undefined)
+    def setDataFieldSizeEnabledUndefined: Self = StObject.set(x, "dataFieldSizeEnabled", js.undefined)
     
     @scala.inline
     def setDataFieldSizeMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("dataFieldSizeMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataFieldSizeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFieldSizeMetadata: Self = this.set("dataFieldSizeMetadata", js.undefined)
+    def setDataFieldSizeMetadataUndefined: Self = StObject.set(x, "dataFieldSizeMetadata", js.undefined)
     
     @scala.inline
-    def setDrawTabsEnabled(value: String): Self = this.set("drawTabsEnabled", value.asInstanceOf[js.Any])
+    def setDrawTabsEnabled(value: String): Self = StObject.set(x, "drawTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrawTabsEnabled: Self = this.set("drawTabsEnabled", js.undefined)
+    def setDrawTabsEnabledUndefined: Self = StObject.set(x, "drawTabsEnabled", js.undefined)
     
     @scala.inline
     def setDrawTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("drawTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "drawTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrawTabsMetadata: Self = this.set("drawTabsMetadata", js.undefined)
+    def setDrawTabsMetadataUndefined: Self = StObject.set(x, "drawTabsMetadata", js.undefined)
     
     @scala.inline
-    def setFirstLastEmailTabsEnabled(value: String): Self = this.set("firstLastEmailTabsEnabled", value.asInstanceOf[js.Any])
+    def setFirstLastEmailTabsEnabled(value: String): Self = StObject.set(x, "firstLastEmailTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstLastEmailTabsEnabled: Self = this.set("firstLastEmailTabsEnabled", js.undefined)
+    def setFirstLastEmailTabsEnabledUndefined: Self = StObject.set(x, "firstLastEmailTabsEnabled", js.undefined)
     
     @scala.inline
     def setFirstLastEmailTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("firstLastEmailTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "firstLastEmailTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstLastEmailTabsMetadata: Self = this.set("firstLastEmailTabsMetadata", js.undefined)
+    def setFirstLastEmailTabsMetadataUndefined: Self = StObject.set(x, "firstLastEmailTabsMetadata", js.undefined)
     
     @scala.inline
-    def setListTabsEnabled(value: String): Self = this.set("listTabsEnabled", value.asInstanceOf[js.Any])
+    def setListTabsEnabled(value: String): Self = StObject.set(x, "listTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListTabsEnabled: Self = this.set("listTabsEnabled", js.undefined)
+    def setListTabsEnabledUndefined: Self = StObject.set(x, "listTabsEnabled", js.undefined)
     
     @scala.inline
     def setListTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("listTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListTabsMetadata: Self = this.set("listTabsMetadata", js.undefined)
+    def setListTabsMetadataUndefined: Self = StObject.set(x, "listTabsMetadata", js.undefined)
     
     @scala.inline
-    def setNoteTabsEnabled(value: String): Self = this.set("noteTabsEnabled", value.asInstanceOf[js.Any])
+    def setNoteTabsEnabled(value: String): Self = StObject.set(x, "noteTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoteTabsEnabled: Self = this.set("noteTabsEnabled", js.undefined)
+    def setNoteTabsEnabledUndefined: Self = StObject.set(x, "noteTabsEnabled", js.undefined)
     
     @scala.inline
     def setNoteTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("noteTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "noteTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoteTabsMetadata: Self = this.set("noteTabsMetadata", js.undefined)
+    def setNoteTabsMetadataUndefined: Self = StObject.set(x, "noteTabsMetadata", js.undefined)
     
     @scala.inline
-    def setRadioTabsEnabled(value: String): Self = this.set("radioTabsEnabled", value.asInstanceOf[js.Any])
+    def setRadioTabsEnabled(value: String): Self = StObject.set(x, "radioTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadioTabsEnabled: Self = this.set("radioTabsEnabled", js.undefined)
+    def setRadioTabsEnabledUndefined: Self = StObject.set(x, "radioTabsEnabled", js.undefined)
     
     @scala.inline
     def setRadioTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("radioTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "radioTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadioTabsMetadata: Self = this.set("radioTabsMetadata", js.undefined)
+    def setRadioTabsMetadataUndefined: Self = StObject.set(x, "radioTabsMetadata", js.undefined)
     
     @scala.inline
-    def setSavingCustomTabsEnabled(value: String): Self = this.set("savingCustomTabsEnabled", value.asInstanceOf[js.Any])
+    def setSavingCustomTabsEnabled(value: String): Self = StObject.set(x, "savingCustomTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSavingCustomTabsEnabled: Self = this.set("savingCustomTabsEnabled", js.undefined)
+    def setSavingCustomTabsEnabledUndefined: Self = StObject.set(x, "savingCustomTabsEnabled", js.undefined)
     
     @scala.inline
     def setSavingCustomTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("savingCustomTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "savingCustomTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSavingCustomTabsMetadata: Self = this.set("savingCustomTabsMetadata", js.undefined)
+    def setSavingCustomTabsMetadataUndefined: Self = StObject.set(x, "savingCustomTabsMetadata", js.undefined)
     
     @scala.inline
-    def setSenderToChangeTabAssignmentsEnabled(value: String): Self = this.set("senderToChangeTabAssignmentsEnabled", value.asInstanceOf[js.Any])
+    def setSenderToChangeTabAssignmentsEnabled(value: String): Self = StObject.set(x, "senderToChangeTabAssignmentsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderToChangeTabAssignmentsEnabled: Self = this.set("senderToChangeTabAssignmentsEnabled", js.undefined)
+    def setSenderToChangeTabAssignmentsEnabledUndefined: Self = StObject.set(x, "senderToChangeTabAssignmentsEnabled", js.undefined)
     
     @scala.inline
     def setSenderToChangeTabAssignmentsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("senderToChangeTabAssignmentsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "senderToChangeTabAssignmentsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderToChangeTabAssignmentsMetadata: Self = this.set("senderToChangeTabAssignmentsMetadata", js.undefined)
+    def setSenderToChangeTabAssignmentsMetadataUndefined: Self = StObject.set(x, "senderToChangeTabAssignmentsMetadata", js.undefined)
     
     @scala.inline
-    def setSharedCustomTabsEnabled(value: String): Self = this.set("sharedCustomTabsEnabled", value.asInstanceOf[js.Any])
+    def setSharedCustomTabsEnabled(value: String): Self = StObject.set(x, "sharedCustomTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedCustomTabsEnabled: Self = this.set("sharedCustomTabsEnabled", js.undefined)
+    def setSharedCustomTabsEnabledUndefined: Self = StObject.set(x, "sharedCustomTabsEnabled", js.undefined)
     
     @scala.inline
     def setSharedCustomTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("sharedCustomTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sharedCustomTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedCustomTabsMetadata: Self = this.set("sharedCustomTabsMetadata", js.undefined)
+    def setSharedCustomTabsMetadataUndefined: Self = StObject.set(x, "sharedCustomTabsMetadata", js.undefined)
     
     @scala.inline
-    def setTabDataLabelEnabled(value: String): Self = this.set("tabDataLabelEnabled", value.asInstanceOf[js.Any])
+    def setTabDataLabelEnabled(value: String): Self = StObject.set(x, "tabDataLabelEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabDataLabelEnabled: Self = this.set("tabDataLabelEnabled", js.undefined)
+    def setTabDataLabelEnabledUndefined: Self = StObject.set(x, "tabDataLabelEnabled", js.undefined)
     
     @scala.inline
     def setTabDataLabelMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("tabDataLabelMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabDataLabelMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabDataLabelMetadata: Self = this.set("tabDataLabelMetadata", js.undefined)
+    def setTabDataLabelMetadataUndefined: Self = StObject.set(x, "tabDataLabelMetadata", js.undefined)
     
     @scala.inline
-    def setTabLocationEnabled(value: String): Self = this.set("tabLocationEnabled", value.asInstanceOf[js.Any])
+    def setTabLocationEnabled(value: String): Self = StObject.set(x, "tabLocationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabLocationEnabled: Self = this.set("tabLocationEnabled", js.undefined)
+    def setTabLocationEnabledUndefined: Self = StObject.set(x, "tabLocationEnabled", js.undefined)
     
     @scala.inline
     def setTabLocationMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("tabLocationMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabLocationMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabLocationMetadata: Self = this.set("tabLocationMetadata", js.undefined)
+    def setTabLocationMetadataUndefined: Self = StObject.set(x, "tabLocationMetadata", js.undefined)
     
     @scala.inline
-    def setTabLockingEnabled(value: String): Self = this.set("tabLockingEnabled", value.asInstanceOf[js.Any])
+    def setTabLockingEnabled(value: String): Self = StObject.set(x, "tabLockingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabLockingEnabled: Self = this.set("tabLockingEnabled", js.undefined)
+    def setTabLockingEnabledUndefined: Self = StObject.set(x, "tabLockingEnabled", js.undefined)
     
     @scala.inline
     def setTabLockingMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("tabLockingMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabLockingMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabLockingMetadata: Self = this.set("tabLockingMetadata", js.undefined)
+    def setTabLockingMetadataUndefined: Self = StObject.set(x, "tabLockingMetadata", js.undefined)
     
     @scala.inline
-    def setTabScaleEnabled(value: String): Self = this.set("tabScaleEnabled", value.asInstanceOf[js.Any])
+    def setTabScaleEnabled(value: String): Self = StObject.set(x, "tabScaleEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabScaleEnabled: Self = this.set("tabScaleEnabled", js.undefined)
+    def setTabScaleEnabledUndefined: Self = StObject.set(x, "tabScaleEnabled", js.undefined)
     
     @scala.inline
     def setTabScaleMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("tabScaleMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabScaleMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabScaleMetadata: Self = this.set("tabScaleMetadata", js.undefined)
+    def setTabScaleMetadataUndefined: Self = StObject.set(x, "tabScaleMetadata", js.undefined)
     
     @scala.inline
-    def setTabTextFormattingEnabled(value: String): Self = this.set("tabTextFormattingEnabled", value.asInstanceOf[js.Any])
+    def setTabTextFormattingEnabled(value: String): Self = StObject.set(x, "tabTextFormattingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabTextFormattingEnabled: Self = this.set("tabTextFormattingEnabled", js.undefined)
+    def setTabTextFormattingEnabledUndefined: Self = StObject.set(x, "tabTextFormattingEnabled", js.undefined)
     
     @scala.inline
     def setTabTextFormattingMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("tabTextFormattingMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabTextFormattingMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabTextFormattingMetadata: Self = this.set("tabTextFormattingMetadata", js.undefined)
+    def setTabTextFormattingMetadataUndefined: Self = StObject.set(x, "tabTextFormattingMetadata", js.undefined)
     
     @scala.inline
-    def setTextTabsEnabled(value: String): Self = this.set("textTabsEnabled", value.asInstanceOf[js.Any])
+    def setTextTabsEnabled(value: String): Self = StObject.set(x, "textTabsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextTabsEnabled: Self = this.set("textTabsEnabled", js.undefined)
+    def setTextTabsEnabledUndefined: Self = StObject.set(x, "textTabsEnabled", js.undefined)
     
     @scala.inline
     def setTextTabsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("textTabsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textTabsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextTabsMetadata: Self = this.set("textTabsMetadata", js.undefined)
+    def setTextTabsMetadataUndefined: Self = StObject.set(x, "textTabsMetadata", js.undefined)
   }
 }

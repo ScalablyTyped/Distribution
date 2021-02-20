@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://developer.android.com/guide/topics/manifest/intent-filter-element.html
   */
 @js.native
-trait SchemaIntentFilter extends js.Object {
+trait SchemaIntentFilter extends StObject {
   
   /**
     * The android:name value of the &lt;action&gt; tag.
@@ -35,42 +36,30 @@ object SchemaIntentFilter {
   }
   
   @scala.inline
-  implicit class SchemaIntentFilterOps[Self <: SchemaIntentFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaIntentFilterMutableBuilder[Self <: SchemaIntentFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionNames(value: js.Array[String]): Self = StObject.set(x, "actionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNamesUndefined: Self = StObject.set(x, "actionNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value :_*))
     
     @scala.inline
-    def setActionNamesVarargs(value: String*): Self = this.set("actionNames", js.Array(value :_*))
+    def setCategoryNames(value: js.Array[String]): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionNames(value: js.Array[String]): Self = this.set("actionNames", value.asInstanceOf[js.Any])
+    def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
     
     @scala.inline
-    def deleteActionNames: Self = this.set("actionNames", js.undefined)
+    def setCategoryNamesVarargs(value: String*): Self = StObject.set(x, "categoryNames", js.Array(value :_*))
     
     @scala.inline
-    def setCategoryNamesVarargs(value: String*): Self = this.set("categoryNames", js.Array(value :_*))
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryNames(value: js.Array[String]): Self = this.set("categoryNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryNames: Self = this.set("categoryNames", js.undefined)
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

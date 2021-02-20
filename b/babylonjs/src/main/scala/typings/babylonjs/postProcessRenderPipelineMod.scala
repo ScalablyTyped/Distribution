@@ -6,16 +6,16 @@ import typings.babylonjs.iInspectableMod.IInspectable
 import typings.babylonjs.postProcessRenderEffectMod.PostProcessRenderEffect
 import typings.babylonjs.prePassRendererMod.PrePassRenderer
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderPipeline", JSImport.Namespace)
-@js.native
-object postProcessRenderPipelineMod extends js.Object {
+object postProcessRenderPipelineMod {
   
+  @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderPipeline", "PostProcessRenderPipeline")
   @js.native
-  class PostProcessRenderPipeline protected () extends js.Object {
+  class PostProcessRenderPipeline protected () extends StObject {
     /**
       * Initializes a PostProcessRenderPipeline
       * @param engine engine to add the pipeline to

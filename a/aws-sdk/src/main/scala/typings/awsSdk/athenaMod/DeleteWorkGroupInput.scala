@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteWorkGroupInput extends js.Object {
+trait DeleteWorkGroupInput extends StObject {
   
   /**
     * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
@@ -26,27 +27,15 @@ object DeleteWorkGroupInput {
   }
   
   @scala.inline
-  implicit class DeleteWorkGroupInputOps[Self <: DeleteWorkGroupInput] (val x: Self) extends AnyVal {
+  implicit class DeleteWorkGroupInputMutableBuilder[Self <: DeleteWorkGroupInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecursiveDeleteOption(value: BoxedBoolean): Self = StObject.set(x, "RecursiveDeleteOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursiveDeleteOptionUndefined: Self = StObject.set(x, "RecursiveDeleteOption", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecursiveDeleteOption(value: BoxedBoolean): Self = this.set("RecursiveDeleteOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursiveDeleteOption: Self = this.set("RecursiveDeleteOption", js.undefined)
+    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
   }
 }

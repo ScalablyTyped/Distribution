@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeployedFleet extends js.Object {
+trait DeployedFleet extends StObject {
   
   /** The name of the Agones fleet. */
   var fleet: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object DeployedFleet {
   }
   
   @scala.inline
-  implicit class DeployedFleetOps[Self <: DeployedFleet] (val x: Self) extends AnyVal {
+  implicit class DeployedFleetMutableBuilder[Self <: DeployedFleet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFleet(value: String): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleetSpec(value: String): Self = StObject.set(x, "fleetSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetSpecUndefined: Self = StObject.set(x, "fleetSpec", js.undefined)
     
     @scala.inline
-    def setFleet(value: String): Self = this.set("fleet", value.asInstanceOf[js.Any])
+    def setFleetUndefined: Self = StObject.set(x, "fleet", js.undefined)
     
     @scala.inline
-    def deleteFleet: Self = this.set("fleet", js.undefined)
+    def setSpecSource(value: SpecSource): Self = StObject.set(x, "specSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetSpec(value: String): Self = this.set("fleetSpec", value.asInstanceOf[js.Any])
+    def setSpecSourceUndefined: Self = StObject.set(x, "specSource", js.undefined)
     
     @scala.inline
-    def deleteFleetSpec: Self = this.set("fleetSpec", js.undefined)
+    def setStatus(value: DeployedFleetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecSource(value: SpecSource): Self = this.set("specSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecSource: Self = this.set("specSource", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: DeployedFleetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

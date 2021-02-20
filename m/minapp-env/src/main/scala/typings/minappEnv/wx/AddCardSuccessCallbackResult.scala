@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddCardSuccessCallbackResult extends js.Object {
+trait AddCardSuccessCallbackResult extends StObject {
   
   /** 卡券添加结果列表 */
   var cardList: AddCardResponseInfo = js.native
@@ -19,21 +20,9 @@ object AddCardSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class AddCardSuccessCallbackResultOps[Self <: AddCardSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class AddCardSuccessCallbackResultMutableBuilder[Self <: AddCardSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCardList(value: AddCardResponseInfo): Self = this.set("cardList", value.asInstanceOf[js.Any])
+    def setCardList(value: AddCardResponseInfo): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
   }
 }

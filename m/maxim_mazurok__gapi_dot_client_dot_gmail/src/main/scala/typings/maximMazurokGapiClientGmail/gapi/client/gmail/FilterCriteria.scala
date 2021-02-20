@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterCriteria extends js.Object {
+trait FilterCriteria extends StObject {
   
   /** Whether the response should exclude chats. */
   var excludeChats: js.UndefOr[Boolean] = js.native
@@ -46,72 +47,60 @@ object FilterCriteria {
   }
   
   @scala.inline
-  implicit class FilterCriteriaOps[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+  implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeChatsUndefined: Self = StObject.set(x, "excludeChats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeChats(value: Boolean): Self = this.set("excludeChats", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteExcludeChats: Self = this.set("excludeChats", js.undefined)
+    def setHasAttachment(value: Boolean): Self = StObject.set(x, "hasAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setHasAttachmentUndefined: Self = StObject.set(x, "hasAttachment", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setNegatedQuery(value: String): Self = StObject.set(x, "negatedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAttachment(value: Boolean): Self = this.set("hasAttachment", value.asInstanceOf[js.Any])
+    def setNegatedQueryUndefined: Self = StObject.set(x, "negatedQuery", js.undefined)
     
     @scala.inline
-    def deleteHasAttachment: Self = this.set("hasAttachment", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegatedQuery(value: String): Self = this.set("negatedQuery", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteNegatedQuery: Self = this.set("negatedQuery", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setSizeComparison(value: String): Self = StObject.set(x, "sizeComparison", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSizeComparisonUndefined: Self = StObject.set(x, "sizeComparison", js.undefined)
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeComparison(value: String): Self = this.set("sizeComparison", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteSizeComparison: Self = this.set("sizeComparison", js.undefined)
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

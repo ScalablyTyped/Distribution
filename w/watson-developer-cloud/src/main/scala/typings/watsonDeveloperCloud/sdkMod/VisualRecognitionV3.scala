@@ -2,6 +2,7 @@ package typings.watsonDeveloperCloud.sdkMod
 
 import typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.Options
 import typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,20 +31,19 @@ class VisualRecognitionV3 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3")
-@js.native
-object VisualRecognitionV3 extends js.Object {
+object VisualRecognitionV3 {
   
-  var URL: String = js.native
+  @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Constants for the `classify` operation. */
-  @js.native
-  object ClassifyConstants extends js.Object {
+  object ClassifyConstants {
     
     /** The desired language of parts of the response. See the response for details. */
+    @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3.ClassifyConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
+    object AcceptLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -75,12 +75,12 @@ object VisualRecognitionV3 extends js.Object {
   }
   
   /** Constants for the `detectFaces` operation. */
-  @js.native
-  object DetectFacesConstants extends js.Object {
+  object DetectFacesConstants {
     
     /** The desired language of parts of the response. See the response for details. */
+    @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3.DetectFacesConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
+    object AcceptLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -110,4 +110,11 @@ object VisualRecognitionV3 extends js.Object {
       /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ZH_TW with String = js.native
     }
   }
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3.URL")
+  @js.native
+  def URL: String = js.native
+  @scala.inline
+  def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }

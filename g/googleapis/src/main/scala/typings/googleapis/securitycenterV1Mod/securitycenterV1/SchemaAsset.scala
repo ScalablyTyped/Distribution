@@ -1,6 +1,7 @@
 package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * referenced GCP resource.
   */
 @js.native
-trait SchemaAsset extends js.Object {
+trait SchemaAsset extends StObject {
   
   /**
     * The time at which the asset was created in Cloud SCC.
@@ -67,60 +68,48 @@ object SchemaAsset {
   }
   
   @scala.inline
-  implicit class SchemaAssetOps[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+  implicit class SchemaAssetMutableBuilder[Self <: SchemaAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamPolicy(value: SchemaIamPolicy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamPolicy(value: SchemaIamPolicy): Self = this.set("iamPolicy", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIamPolicy: Self = this.set("iamPolicy", js.undefined)
+    def setResourceProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResourcePropertiesUndefined: Self = StObject.set(x, "resourceProperties", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSecurityCenterProperties(value: SchemaSecurityCenterProperties): Self = StObject.set(x, "securityCenterProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceProperties(value: StringDictionary[js.Any]): Self = this.set("resourceProperties", value.asInstanceOf[js.Any])
+    def setSecurityCenterPropertiesUndefined: Self = StObject.set(x, "securityCenterProperties", js.undefined)
     
     @scala.inline
-    def deleteResourceProperties: Self = this.set("resourceProperties", js.undefined)
+    def setSecurityMarks(value: SchemaSecurityMarks): Self = StObject.set(x, "securityMarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityCenterProperties(value: SchemaSecurityCenterProperties): Self = this.set("securityCenterProperties", value.asInstanceOf[js.Any])
+    def setSecurityMarksUndefined: Self = StObject.set(x, "securityMarks", js.undefined)
     
     @scala.inline
-    def deleteSecurityCenterProperties: Self = this.set("securityCenterProperties", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityMarks(value: SchemaSecurityMarks): Self = this.set("securityMarks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityMarks: Self = this.set("securityMarks", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageSize extends js.Object {
+trait PageSize extends StObject {
   
   var delimiter: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object PageSize {
   }
   
   @scala.inline
-  implicit class PageSizeOps[Self <: PageSize] (val x: Self) extends AnyVal {
+  implicit class PageSizeMutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setPaging(value: Boolean): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setPaging(value: Boolean): Self = this.set("paging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
   }
 }

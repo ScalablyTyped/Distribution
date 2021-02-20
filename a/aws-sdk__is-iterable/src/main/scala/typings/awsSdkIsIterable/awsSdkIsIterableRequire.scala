@@ -1,5 +1,6 @@
 package typings.awsSdkIsIterable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@aws-sdk/is-iterable", JSImport.Namespace)
 @js.native
-object awsSdkIsIterableRequire extends js.Object
+object awsSdkIsIterableRequire extends StObject

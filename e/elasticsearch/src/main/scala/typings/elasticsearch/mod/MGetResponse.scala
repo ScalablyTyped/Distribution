@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MGetResponse[T] extends js.Object {
+trait MGetResponse[T] extends StObject {
   
   var docs: js.UndefOr[js.Array[GetResponse[T]]] = js.native
 }
@@ -18,27 +19,15 @@ object MGetResponse {
   }
   
   @scala.inline
-  implicit class MGetResponseOps[Self <: MGetResponse[_], T] (val x: Self with MGetResponse[T]) extends AnyVal {
+  implicit class MGetResponseMutableBuilder[Self <: MGetResponse[_], T] (val x: Self with MGetResponse[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocs(value: js.Array[GetResponse[T]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocsVarargs(value: GetResponse[T]*): Self = this.set("docs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDocs(value: js.Array[GetResponse[T]]): Self = this.set("docs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocs: Self = this.set("docs", js.undefined)
+    def setDocsVarargs(value: GetResponse[T]*): Self = StObject.set(x, "docs", js.Array(value :_*))
   }
 }

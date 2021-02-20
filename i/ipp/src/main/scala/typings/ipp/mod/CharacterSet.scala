@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,7 +122,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.macintosh
   - typings.ipp.ippStrings.`Windows-1252 `
 */
-trait CharacterSet extends js.Object
+trait CharacterSet extends StObject
 object CharacterSet {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.node.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data extends js.Object {
+trait Data extends StObject {
   
   var data: js.Array[Double] = js.native
   
@@ -21,27 +22,15 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data] (val x: Self) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataVarargs(value: Double*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: js.Array[Double]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.node.nodeStrings.Buffer): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.node.nodeStrings.Buffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

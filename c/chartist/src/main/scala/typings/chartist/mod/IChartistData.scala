@@ -1,6 +1,7 @@
 package typings.chartist.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // this definition gives some intellisense, but does not protect the user from misuse
 // TODO: come in and tidy this up and make it fit better
 @js.native
-trait IChartistData extends js.Object {
+trait IChartistData extends StObject {
   
   var labels: js.UndefOr[js.Array[Date | Double | String]] = js.native
   
@@ -30,37 +31,25 @@ object IChartistData {
   }
   
   @scala.inline
-  implicit class IChartistDataOps[Self <: IChartistData] (val x: Self) extends AnyVal {
+  implicit class IChartistDataMutableBuilder[Self <: IChartistData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: js.Array[Date | Double | String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSeriesVarargs(value: ((js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData)*): Self = this.set("series", js.Array(value :_*))
+    def setLabelsVarargs(value: (Date | Double | String)*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
     def setSeries(
       value: js.Array[
           (js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData
         ]
-    ): Self = this.set("series", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVarargs(value: (Date | Double | String)*): Self = this.set("labels", js.Array(value :_*))
-    
-    @scala.inline
-    def setLabels(value: js.Array[Date | Double | String]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setSeriesVarargs(value: ((js.Array[Double | IChartistData | IChartistSeriesData]) | Double | IChartistSeriesData)*): Self = StObject.set(x, "series", js.Array(value :_*))
   }
 }

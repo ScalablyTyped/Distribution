@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.view
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object XPrintJobBroadcaster {
   }
   
   @scala.inline
-  implicit class XPrintJobBroadcasterOps[Self <: XPrintJobBroadcaster] (val x: Self) extends AnyVal {
+  implicit class XPrintJobBroadcasterMutableBuilder[Self <: XPrintJobBroadcaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPrintJobListener(value: XPrintJobListener => Unit): Self = StObject.set(x, "addPrintJobListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddPrintJobListener(value: XPrintJobListener => Unit): Self = this.set("addPrintJobListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemovePrintJobListener(value: XPrintJobListener => Unit): Self = this.set("removePrintJobListener", js.Any.fromFunction1(value))
+    def setRemovePrintJobListener(value: XPrintJobListener => Unit): Self = StObject.set(x, "removePrintJobListener", js.Any.fromFunction1(value))
   }
 }

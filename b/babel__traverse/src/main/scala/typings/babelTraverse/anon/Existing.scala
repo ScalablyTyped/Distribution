@@ -8,12 +8,13 @@ import typings.babelTraverse.mod.NodePath
 import typings.babelTraverse.mod.Scope
 import typings.babelTypes.mod.Identifier_
 import typings.babelTypes.mod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Existing extends js.Object {
+trait Existing extends StObject {
   
   var existing: Binding = js.native
   
@@ -40,33 +41,21 @@ object Existing {
   }
   
   @scala.inline
-  implicit class ExistingOps[Self <: Existing] (val x: Self) extends AnyVal {
+  implicit class ExistingMutableBuilder[Self <: Existing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExisting(value: Binding): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentifier(value: Identifier_): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExisting(value: Binding): Self = this.set("existing", value.asInstanceOf[js.Any])
+    def setPath(value: NodePath[Node]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier_): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: `var` | let | const): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: NodePath[Node]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

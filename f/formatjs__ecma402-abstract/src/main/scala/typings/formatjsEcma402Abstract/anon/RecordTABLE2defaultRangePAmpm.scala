@@ -1,19 +1,20 @@
 package typings.formatjsEcma402Abstract.anon
 
 import typings.formatjsEcma402Abstract.typesDateTimeMod.RangePatterns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/date-time.RangePatterns> */
 @js.native
-trait RecordTABLE2defaultRangePAmpm extends js.Object {
+trait RecordTABLE2defaultRangePAmpm extends StObject {
+  
+  var default: RangePatterns = js.native
   
   var ampm: RangePatterns = js.native
   
   var day: RangePatterns = js.native
-  
-  var default: RangePatterns = js.native
   
   var era: RangePatterns = js.native
   
@@ -46,45 +47,33 @@ object RecordTABLE2defaultRangePAmpm {
   }
   
   @scala.inline
-  implicit class RecordTABLE2defaultRangePAmpmOps[Self <: RecordTABLE2defaultRangePAmpm] (val x: Self) extends AnyVal {
+  implicit class RecordTABLE2defaultRangePAmpmMutableBuilder[Self <: RecordTABLE2defaultRangePAmpm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmpm(value: RangePatterns): Self = StObject.set(x, "ampm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDay(value: RangePatterns): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: RangePatterns): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpm(value: RangePatterns): Self = this.set("ampm", value.asInstanceOf[js.Any])
+    def setEra(value: RangePatterns): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: RangePatterns): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setHour(value: RangePatterns): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: RangePatterns): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setMinute(value: RangePatterns): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEra(value: RangePatterns): Self = this.set("era", value.asInstanceOf[js.Any])
+    def setMonth(value: RangePatterns): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: RangePatterns): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setSecond(value: RangePatterns): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: RangePatterns): Self = this.set("minute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonth(value: RangePatterns): Self = this.set("month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond(value: RangePatterns): Self = this.set("second", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYear(value: RangePatterns): Self = this.set("year", value.asInstanceOf[js.Any])
+    def setYear(value: RangePatterns): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

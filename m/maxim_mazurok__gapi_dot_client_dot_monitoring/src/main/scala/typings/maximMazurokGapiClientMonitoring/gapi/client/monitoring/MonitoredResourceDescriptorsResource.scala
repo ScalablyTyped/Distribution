@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientMonitoring.anon.Alt
 import typings.maximMazurokGapiClientMonitoring.anon.PageSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoredResourceDescriptorsResource extends js.Object {
+trait MonitoredResourceDescriptorsResource extends StObject {
   
   /** Gets a single monitored resource descriptor. This method does not require a Workspace. */
   def get(): Request[MonitoredResourceDescriptor] = js.native

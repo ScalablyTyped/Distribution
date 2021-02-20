@@ -10,13 +10,18 @@ import typings.pQueue.pQueueStrings.next
 import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-queue", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("p-queue", JSImport.Default)
+  @js.native
+  class default[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] () extends PQueue[QueueType, EnqueueOptionsType] {
+    def this(options: Options[QueueType, EnqueueOptionsType]) = this()
+  }
   
   @js.native
   trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
@@ -148,11 +153,6 @@ object mod extends js.Object {
       Set the timeout for future operations.
       */
     def timeout_=(milliseconds: js.UndefOr[Double]): Unit = js.native
-  }
-  
-  @js.native
-  class default[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] () extends PQueue[QueueType, EnqueueOptionsType] {
-    def this(options: Options[QueueType, EnqueueOptionsType]) = this()
   }
   
   type Task[TaskResultType] = js.Function0[TaskResultType | js.Thenable[TaskResultType]]

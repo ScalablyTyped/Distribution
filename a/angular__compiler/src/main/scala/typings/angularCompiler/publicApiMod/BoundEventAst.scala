@@ -1,5 +1,6 @@
 package typings.angularCompiler.publicApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,14 +43,22 @@ class BoundEventAst protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@angular/compiler/public_api", "BoundEventAst")
-@js.native
-object BoundEventAst extends js.Object {
+object BoundEventAst {
   
+  @JSImport("@angular/compiler/public_api", "BoundEventAst.calcFullName")
+  @js.native
   def calcFullName(name: String): String = js.native
+  @JSImport("@angular/compiler/public_api", "BoundEventAst.calcFullName")
+  @js.native
   def calcFullName(name: String, target: String): String = js.native
+  @JSImport("@angular/compiler/public_api", "BoundEventAst.calcFullName")
+  @js.native
   def calcFullName(name: String, target: String, phase: String): String = js.native
+  @JSImport("@angular/compiler/public_api", "BoundEventAst.calcFullName")
+  @js.native
   def calcFullName(name: String, target: Null, phase: String): String = js.native
   
+  @JSImport("@angular/compiler/public_api", "BoundEventAst.fromParsedEvent")
+  @js.native
   def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): typings.angularCompiler.templateAstMod.BoundEventAst = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountQuota extends js.Object {
+trait AccountQuota extends StObject {
   
   /**
     * The name of the Amazon RDS quota for this AWS account.
@@ -31,36 +32,24 @@ object AccountQuota {
   }
   
   @scala.inline
-  implicit class AccountQuotaOps[Self <: AccountQuota] (val x: Self) extends AnyVal {
+  implicit class AccountQuotaMutableBuilder[Self <: AccountQuota] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountQuotaName(value: String): Self = StObject.set(x, "AccountQuotaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountQuotaNameUndefined: Self = StObject.set(x, "AccountQuotaName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Long): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountQuotaName(value: String): Self = this.set("AccountQuotaName", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
     @scala.inline
-    def deleteAccountQuotaName: Self = this.set("AccountQuotaName", js.undefined)
+    def setUsed(value: Long): Self = StObject.set(x, "Used", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Long): Self = this.set("Max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax: Self = this.set("Max", js.undefined)
-    
-    @scala.inline
-    def setUsed(value: Long): Self = this.set("Used", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsed: Self = this.set("Used", js.undefined)
+    def setUsedUndefined: Self = StObject.set(x, "Used", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.FieldUserSelectionMode")
 @js.native
-object FieldUserSelectionMode extends js.Object {
+object FieldUserSelectionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.FieldUserSelectionMode with Double] = js.native

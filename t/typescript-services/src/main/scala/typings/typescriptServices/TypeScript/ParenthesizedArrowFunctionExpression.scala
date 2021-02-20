@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object ParenthesizedArrowFunctionExpression {
   }
   
   @scala.inline
-  implicit class ParenthesizedArrowFunctionExpressionOps[Self <: ParenthesizedArrowFunctionExpression] (val x: Self) extends AnyVal {
+  implicit class ParenthesizedArrowFunctionExpressionMutableBuilder[Self <: ParenthesizedArrowFunctionExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlock(value: Block): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = this.set("callSignature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpression(value: AST): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

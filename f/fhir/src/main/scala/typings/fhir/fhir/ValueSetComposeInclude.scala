@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,78 +60,66 @@ object ValueSetComposeInclude {
   }
   
   @scala.inline
-  implicit class ValueSetComposeIncludeOps[Self <: ValueSetComposeInclude] (val x: Self) extends AnyVal {
+  implicit class ValueSetComposeIncludeMutableBuilder[Self <: ValueSetComposeInclude] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcept(value: js.Array[ValueSetComposeIncludeConcept]): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConceptVarargs(value: ValueSetComposeIncludeConcept*): Self = StObject.set(x, "concept", js.Array(value :_*))
     
     @scala.inline
-    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[ValueSetComposeIncludeFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_system: Self = this.set("_system", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set_valueSetVarargs(value: Element*): Self = this.set("_valueSet", js.Array(value :_*))
+    def setFilterVarargs(value: ValueSetComposeIncludeFilter*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def set_valueSet(value: js.Array[Element]): Self = this.set("_valueSet", value.asInstanceOf[js.Any])
+    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_valueSet: Self = this.set("_valueSet", js.undefined)
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def setValueSet(value: js.Array[uri]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def setValueSetUndefined: Self = StObject.set(x, "valueSet", js.undefined)
     
     @scala.inline
-    def setConceptVarargs(value: ValueSetComposeIncludeConcept*): Self = this.set("concept", js.Array(value :_*))
+    def setValueSetVarargs(value: uri*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
     
     @scala.inline
-    def setConcept(value: js.Array[ValueSetComposeIncludeConcept]): Self = this.set("concept", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConcept: Self = this.set("concept", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setFilterVarargs(value: ValueSetComposeIncludeFilter*): Self = this.set("filter", js.Array(value :_*))
+    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Array[ValueSetComposeIncludeFilter]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def set_valueSet(value: js.Array[Element]): Self = StObject.set(x, "_valueSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
+    def set_valueSetUndefined: Self = StObject.set(x, "_valueSet", js.undefined)
     
     @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def set_valueSetVarargs(value: Element*): Self = StObject.set(x, "_valueSet", js.Array(value :_*))
     
     @scala.inline
-    def setValueSetVarargs(value: uri*): Self = this.set("valueSet", js.Array(value :_*))
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueSet(value: js.Array[uri]): Self = this.set("valueSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSet: Self = this.set("valueSet", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

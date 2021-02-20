@@ -3,12 +3,13 @@ package typings.uiGrid.anon
 import typings.angular.mod.IScope
 import typings.uiGrid.mod.treeBase.rowCollapsedHandler
 import typings.uiGrid.mod.treeBase.rowExpandedHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowCollapsed[TEntity] extends js.Object {
+trait RowCollapsed[TEntity] extends StObject {
   
   /**
     * Raised when a row is collapsed.  Doesn't really have a purpose at the moment.  Included for symmetry
@@ -41,24 +42,12 @@ object RowCollapsed {
   }
   
   @scala.inline
-  implicit class RowCollapsedOps[Self <: RowCollapsed[_], TEntity] (val x: Self with RowCollapsed[TEntity]) extends AnyVal {
+  implicit class RowCollapsedMutableBuilder[Self <: RowCollapsed[_], TEntity] (val x: Self with RowCollapsed[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRowCollapsed(value: (IScope, rowCollapsedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowCollapsed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRowCollapsed(value: (IScope, rowCollapsedHandler[TEntity]) => Unit): Self = this.set("rowCollapsed", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRowExpanded(value: (IScope, rowExpandedHandler[TEntity]) => Unit): Self = this.set("rowExpanded", js.Any.fromFunction2(value))
+    def setRowExpanded(value: (IScope, rowExpandedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpanded", js.Any.fromFunction2(value))
   }
 }

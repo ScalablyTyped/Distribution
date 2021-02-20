@@ -1,6 +1,7 @@
 package typings.officeJsPreview.global.Excel
 
 import typings.officeJsPreview.Excel.LabelFilterCondition.equals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.LabelFilterCondition")
 @js.native
-object LabelFilterCondition extends js.Object {
+object LabelFilterCondition extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.LabelFilterCondition with String] = js.native

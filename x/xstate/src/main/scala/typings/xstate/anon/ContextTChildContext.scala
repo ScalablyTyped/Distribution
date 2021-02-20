@@ -1,11 +1,12 @@
 package typings.xstate.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextTChildContext[TChildContext] extends js.Object {
+trait ContextTChildContext[TChildContext] extends StObject {
   
   var context: TChildContext = js.native
   
@@ -20,24 +21,12 @@ object ContextTChildContext {
   }
   
   @scala.inline
-  implicit class ContextTChildContextOps[Self <: ContextTChildContext[_], TChildContext] (val x: Self with ContextTChildContext[TChildContext]) extends AnyVal {
+  implicit class ContextTChildContextMutableBuilder[Self <: ContextTChildContext[_], TChildContext] (val x: Self with ContextTChildContext[TChildContext]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: TChildContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: TChildContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

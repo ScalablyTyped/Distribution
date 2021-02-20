@@ -1,12 +1,13 @@
 package typings.dynatable.JQueryDynatable
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column extends js.Object {
+trait Column extends StObject {
   
   /**
     * Function that interprets the cell html data in order to convert it into data
@@ -79,45 +80,33 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeReader(value: (Element, js.Any) => String): Self = StObject.set(x, "attributeReader", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeWriter(value: js.Any => js.Any): Self = StObject.set(x, "attributeWriter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeReader(value: (Element, js.Any) => String): Self = this.set("attributeReader", js.Any.fromFunction2(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeWriter(value: js.Any => js.Any): Self = this.set("attributeWriter", js.Any.fromFunction1(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSorts(value: js.Array[String]): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSortsVarargs(value: String*): Self = StObject.set(x, "sorts", js.Array(value :_*))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortsVarargs(value: String*): Self = this.set("sorts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSorts(value: js.Array[String]): Self = this.set("sorts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

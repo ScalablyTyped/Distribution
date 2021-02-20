@@ -5,41 +5,60 @@ import typings.extjs.Ext.IClass
 import typings.extjs.Ext.util.IMixedCollection
 import typings.extjs.Ext.util.ISorter
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Ext.form")
-@js.native
-object form extends js.Object {
+object form {
   
+  @JSGlobal("Ext.form.CheckboxManager")
   @js.native
   class CheckboxManager ()
     extends typings.extjs.Ext.form.CheckboxManager
   /* static members */
-  @js.native
-  object CheckboxManager extends js.Object {
+  object CheckboxManager {
+    
+    @JSGlobal("Ext.form.CheckboxManager")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** [Method] Adds an item to the collection
       * @param key String/Object The key to associate with the item, or the new item. If a getKey implementation was specified for this MixedCollection, or if the key of the stored items is in a property called id, the MixedCollection will be able to derive the key for the new item. In this case just pass the new item in this parameter.
       * @param obj Object The item to add.
       * @returns Object The item added.
       */
+    @JSGlobal("Ext.form.CheckboxManager.add")
+    @js.native
     def add(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.add")
+    @js.native
     def add(key: js.UndefOr[scala.Nothing], obj: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.add")
+    @js.native
     def add(key: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.add")
+    @js.native
     def add(key: js.Any, obj: js.Any): js.Any = js.native
     
     /** [Method] Adds all elements of an Array or an Object to the collection
       * @param objs Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if allowFunctions has been set to true.
       */
+    @JSGlobal("Ext.form.CheckboxManager.addAll")
+    @js.native
     def addAll(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addAll")
+    @js.native
     def addAll(objs: js.Any): Unit = js.native
     
     /** [Method] Adds the specified events to the list of events which this Observable may fire
       * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
       */
+    @JSGlobal("Ext.form.CheckboxManager.addEvents")
+    @js.native
     def addEvents(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addEvents")
+    @js.native
     def addEvents(eventNames: js.Any): Unit = js.native
     
     /** [Method] Appends an event handler to this object
@@ -49,41 +68,73 @@ object form extends js.Object {
       * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.Any,
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(
       eventName: js.Any,
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
@@ -94,7 +145,11 @@ object form extends js.Object {
       * @param options Object If the ename parameter was an event name, this is the addListener options.
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -102,12 +157,16 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -115,7 +174,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -123,7 +186,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -131,7 +198,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -139,7 +210,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -147,7 +222,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -155,9 +234,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -165,7 +252,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -173,7 +264,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -181,9 +276,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.Any,
@@ -191,41 +294,71 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
+    @JSGlobal("Ext.form.CheckboxManager.callOverridden")
+    @js.native
     def callOverridden(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.callOverridden")
+    @js.native
     def callOverridden(args: js.Any): js.Any = js.native
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
+    @JSGlobal("Ext.form.CheckboxManager.callParent")
+    @js.native
     def callParent(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.callParent")
+    @js.native
     def callParent(args: js.Any): js.Any = js.native
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
+    @JSGlobal("Ext.form.CheckboxManager.callSuper")
+    @js.native
     def callSuper(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.callSuper")
+    @js.native
     def callSuper(args: js.Any): js.Any = js.native
     
     /** [Method] Removes all items from the collection  */
+    @JSGlobal("Ext.form.CheckboxManager.clear")
+    @js.native
     def clear(): Unit = js.native
     
     /** [Method] Removes all listeners for this object including the managed listeners */
+    @JSGlobal("Ext.form.CheckboxManager.clearListeners")
+    @js.native
     def clearListeners(): Unit = js.native
     
     /** [Method] Removes all managed listeners for this object  */
+    @JSGlobal("Ext.form.CheckboxManager.clearManagedListeners")
+    @js.native
     def clearManagedListeners(): Unit = js.native
     
     /** [Method] Collects unique values of a particular property in this MixedCollection
@@ -234,51 +367,95 @@ object form extends js.Object {
       * @param allowBlank Boolean Pass true to allow null, undefined or empty string values
       * @returns Array The unique values
       */
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], allowBlank: Boolean): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: js.UndefOr[scala.Nothing], root: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: js.UndefOr[scala.Nothing], root: java.lang.String, allowBlank: Boolean): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: java.lang.String, root: js.UndefOr[scala.Nothing], allowBlank: Boolean): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: java.lang.String, root: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.collect")
+    @js.native
     def collect(property: java.lang.String, root: java.lang.String, allowBlank: Boolean): typings.extjs.Ext.Array = js.native
     
     /** [Method] Returns true if the collection contains the passed Object as an item
       * @param o Object The Object to look for in the collection.
       * @returns Boolean True if the collection contains the Object as an item.
       */
+    @JSGlobal("Ext.form.CheckboxManager.contains")
+    @js.native
     def contains(): Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.contains")
+    @js.native
     def contains(o: js.Any): Boolean = js.native
     
     /** [Method] Returns true if the collection contains the passed Object as a key
       * @param key String The key to look for in the collection.
       * @returns Boolean True if the collection contains the Object as a key.
       */
+    @JSGlobal("Ext.form.CheckboxManager.containsKey")
+    @js.native
     def containsKey(): Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.containsKey")
+    @js.native
     def containsKey(key: java.lang.String): Boolean = js.native
     
     /** [Method] Executes the specified function once for every item in the collection
       * @param fn Function The function to execute for each item.
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
       */
+    @JSGlobal("Ext.form.CheckboxManager.each")
+    @js.native
     def each(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.each")
+    @js.native
     def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.each")
+    @js.native
     def each(fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.each")
+    @js.native
     def each(fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
       * @param fn Function The function to execute for each item.
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
       */
+    @JSGlobal("Ext.form.CheckboxManager.eachKey")
+    @js.native
     def eachKey(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.eachKey")
+    @js.native
     def eachKey(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.eachKey")
+    @js.native
     def eachKey(fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.eachKey")
+    @js.native
     def eachKey(fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
       * @param eventNames String/String[] The event name to bubble, or an Array of event names.
       */
+    @JSGlobal("Ext.form.CheckboxManager.enableBubble")
+    @js.native
     def enableBubble(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.enableBubble")
+    @js.native
     def enableBubble(eventNames: js.Any): Unit = js.native
     
     /** [Method] Filters the objects in this collection by a set of Filters or by a single property value pair with optional paramete
@@ -288,41 +465,73 @@ object form extends js.Object {
       * @param caseSensitive Boolean True for case sensitive comparison.
       * @returns Ext.util.MixedCollection The new filtered collection
       */
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(
       property: js.Any,
       value: js.UndefOr[scala.Nothing],
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any, anyMatch: js.UndefOr[scala.Nothing], caseSensitive: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any, anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any, anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
     
     /** [Method] Filter by a function
@@ -330,12 +539,22 @@ object form extends js.Object {
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to this MixedCollection.
       * @returns Ext.util.MixedCollection The new filtered collection
       */
+    @JSGlobal("Ext.form.CheckboxManager.filterBy")
+    @js.native
     def filterBy(): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filterBy")
+    @js.native
     def filterBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filterBy")
+    @js.native
     def filterBy(fn: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.filterBy")
+    @js.native
     def filterBy(fn: js.Any, scope: js.Any): IMixedCollection = js.native
     
     /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function  */
+    @JSGlobal("Ext.form.CheckboxManager.find")
+    @js.native
     def find(): Unit = js.native
     
     /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function
@@ -343,9 +562,17 @@ object form extends js.Object {
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
       * @returns Object The first item in the collection which returned true from the selection function, or null if none was found.
       */
+    @JSGlobal("Ext.form.CheckboxManager.findBy")
+    @js.native
     def findBy(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findBy")
+    @js.native
     def findBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findBy")
+    @js.native
     def findBy(fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findBy")
+    @js.native
     def findBy(fn: js.Any, scope: js.Any): js.Any = js.native
     
     /** [Method] Finds the index of the first matching object in this collection by a specific property value
@@ -356,7 +583,11 @@ object form extends js.Object {
       * @param caseSensitive Boolean True for case sensitive comparison.
       * @returns Number The matched index or -1
       */
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -364,12 +595,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -377,7 +612,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -385,12 +624,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       start: Double,
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -398,7 +641,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -406,12 +653,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
       start: js.UndefOr[scala.Nothing],
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -419,7 +670,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any, start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -427,7 +682,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -435,7 +694,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -443,12 +706,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -456,7 +723,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -464,7 +735,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.UndefOr[scala.Nothing], start: Double, anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -472,7 +747,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -480,7 +759,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any, start: js.UndefOr[scala.Nothing], anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -488,7 +771,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any, start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -496,7 +783,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -511,13 +802,29 @@ object form extends js.Object {
       * @param start Number The index to start searching at.
       * @returns Number The matched index or -1
       */
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any, start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any, scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any, scope: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any, scope: js.Any, start: Double): Double = js.native
     
     /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
@@ -525,9 +832,17 @@ object form extends js.Object {
       * @param sorterFn Function The function to sort by. This is the same as the sorting function passed to sortBy. It accepts 2 items from this MixedCollection, and returns -1 0, or 1 depending on the relative sort positions of the 2 compared items. If omitted, a function generated from the currently defined set of sorters will be used.
       * @returns Number The insertion point to add the new item into this MixedCollection at using insert
       */
+    @JSGlobal("Ext.form.CheckboxManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(newItem: js.UndefOr[scala.Nothing], sorterFn: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(newItem: js.Any): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(newItem: js.Any, sorterFn: js.Any): Double = js.native
     
     /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
@@ -535,6 +850,8 @@ object form extends js.Object {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
+    @JSGlobal("Ext.form.CheckboxManager.fireEvent")
+    @js.native
     def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = js.native
     
     /** [Method] Fires the specified event with the passed parameter list
@@ -542,62 +859,98 @@ object form extends js.Object {
       * @param args Object[] An array of parameters which are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
+    @JSGlobal("Ext.form.CheckboxManager.fireEventArgs")
+    @js.native
     def fireEventArgs(): Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.fireEventArgs")
+    @js.native
     def fireEventArgs(eventName: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.fireEventArgs")
+    @js.native
     def fireEventArgs(eventName: java.lang.String): Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.fireEventArgs")
+    @js.native
     def fireEventArgs(eventName: java.lang.String, args: typings.extjs.Ext.Array): Boolean = js.native
     
     /** [Method] Returns the first item in the collection
       * @returns Object the first item in the collection..
       */
+    @JSGlobal("Ext.form.CheckboxManager.first")
+    @js.native
     def first(): js.Any = js.native
     
     /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
+    @JSGlobal("Ext.form.CheckboxManager.generateComparator")
+    @js.native
     def generateComparator(): Unit = js.native
     
     /** [Method] Returns the item associated with the passed key OR index
       * @param key String/Number The key or index of the item.
       * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
       */
+    @JSGlobal("Ext.form.CheckboxManager.get")
+    @js.native
     def get(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.get")
+    @js.native
     def get(key: js.Any): js.Any = js.native
     
     /** [Method] Returns the item at the specified index
       * @param index Number The index of the item.
       * @returns Object The item at the specified index.
       */
+    @JSGlobal("Ext.form.CheckboxManager.getAt")
+    @js.native
     def getAt(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getAt")
+    @js.native
     def getAt(index: Double): js.Any = js.native
     
     /** [Method] Returns the item associated with the passed key
       * @param key String/Number The key of the item.
       * @returns Object The item associated with the passed key.
       */
+    @JSGlobal("Ext.form.CheckboxManager.getByKey")
+    @js.native
     def getByKey(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getByKey")
+    @js.native
     def getByKey(key: js.Any): js.Any = js.native
     
     /** [Method] Returns the number of items in the collection
       * @returns Number the number of items in the collection.
       */
+    @JSGlobal("Ext.form.CheckboxManager.getCount")
+    @js.native
     def getCount(): Double = js.native
     
     /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
       * @returns Ext.util.Sorter The sorter, null if none exist
       */
+    @JSGlobal("Ext.form.CheckboxManager.getFirstSorter")
+    @js.native
     def getFirstSorter(): ISorter = js.native
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
+    @JSGlobal("Ext.form.CheckboxManager.getInitialConfig")
+    @js.native
     def getInitialConfig(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getInitialConfig")
+    @js.native
     def getInitialConfig(name: java.lang.String): js.Any = js.native
     
     /** [Method] A function which will be called passing a newly added object when the object is added without a separate id
       * @param item Object The item for which to find the key.
       * @returns Object The key for the passed item.
       */
+    @JSGlobal("Ext.form.CheckboxManager.getKey")
+    @js.native
     def getKey(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getKey")
+    @js.native
     def getKey(item: js.Any): js.Any = js.native
     
     /** [Method] Returns a range of items in this collection
@@ -605,43 +958,73 @@ object form extends js.Object {
       * @param endIndex Number The ending index. Defaults to the last item.
       * @returns Array An array of items
       */
+    @JSGlobal("Ext.form.CheckboxManager.getRange")
+    @js.native
     def getRange(): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getRange")
+    @js.native
     def getRange(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getRange")
+    @js.native
     def getRange(startIndex: Double): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.getRange")
+    @js.native
     def getRange(startIndex: Double, endIndex: Double): typings.extjs.Ext.Array = js.native
     
     /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
       * @param eventName String The name of the event to check for
       * @returns Boolean true if the event is being listened for or bubbles, else false
       */
+    @JSGlobal("Ext.form.CheckboxManager.hasListener")
+    @js.native
     def hasListener(): Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.hasListener")
+    @js.native
     def hasListener(eventName: java.lang.String): Boolean = js.native
     
     /** [Property] (Object) */
-    var hasListeners: js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.hasListeners")
+    @js.native
+    def hasListeners: js.Any = js.native
+    @scala.inline
+    def hasListeners_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasListeners")(x.asInstanceOf[js.Any])
     
     /** [Method] Returns index within the collection of the passed Object
       * @param o Object The item to find the index of.
       * @returns Number index of the item. Returns -1 if not found.
       */
+    @JSGlobal("Ext.form.CheckboxManager.indexOf")
+    @js.native
     def indexOf(): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.indexOf")
+    @js.native
     def indexOf(o: js.Any): Double = js.native
     
     /** [Method] Returns index within the collection of the passed key
       * @param key String The key to find the index of.
       * @returns Number index of the key.
       */
+    @JSGlobal("Ext.form.CheckboxManager.indexOfKey")
+    @js.native
     def indexOfKey(): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.indexOfKey")
+    @js.native
     def indexOfKey(key: java.lang.String): Double = js.native
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
+    @JSGlobal("Ext.form.CheckboxManager.initConfig")
+    @js.native
     def initConfig(): IBase = js.native
+    @JSGlobal("Ext.form.CheckboxManager.initConfig")
+    @js.native
     def initConfig(config: js.Any): IBase = js.native
     
     /** [Method] Performs initialization of this mixin  */
+    @JSGlobal("Ext.form.CheckboxManager.initSortable")
+    @js.native
     def initSortable(): Unit = js.native
     
     /** [Method] Inserts an item at the specified index in the collection
@@ -650,27 +1033,57 @@ object form extends js.Object {
       * @param o Object/Object[] If the second parameter was a key, the new item. May also be an array to insert multiple items at once.
       * @returns Object The item inserted or an array of items inserted.
       */
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: js.UndefOr[scala.Nothing], key: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: js.UndefOr[scala.Nothing], key: js.Any, o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: Double): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: Double, key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: Double, key: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.insert")
+    @js.native
     def insert(index: Double, key: js.Any, o: js.Any): js.Any = js.native
     
     /** [Property] (Boolean) */
-    var isMixedCollection: Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.isMixedCollection")
+    @js.native
+    def isMixedCollection: Boolean = js.native
+    @scala.inline
+    def isMixedCollection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isMixedCollection")(x.asInstanceOf[js.Any])
     
     /** [Property] (Boolean) */
-    var isObservable: Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.isObservable")
+    @js.native
+    def isObservable: Boolean = js.native
+    @scala.inline
+    def isObservable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isObservable")(x.asInstanceOf[js.Any])
     
     /** [Property] (Boolean) */
-    var isSortable: Boolean = js.native
+    @JSGlobal("Ext.form.CheckboxManager.isSortable")
+    @js.native
+    def isSortable: Boolean = js.native
+    @scala.inline
+    def isSortable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSortable")(x.asInstanceOf[js.Any])
     
     /** [Method] Returns the last item in the collection
       * @returns Object the last item in the collection..
       */
+    @JSGlobal("Ext.form.CheckboxManager.last")
+    @js.native
     def last(): js.Any = js.native
     
     /** [Method] Shorthand for addManagedListener
@@ -681,7 +1094,11 @@ object form extends js.Object {
       * @param options Object If the ename parameter was an event name, this is the addListener options.
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -689,12 +1106,16 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -702,7 +1123,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -710,7 +1135,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -718,7 +1147,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -726,7 +1159,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -734,7 +1171,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -742,9 +1183,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -752,7 +1201,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -760,7 +1213,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -768,9 +1225,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.Any,
@@ -778,11 +1243,23 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Shorthand for removeManagedListener
@@ -791,26 +1268,58 @@ object form extends js.Object {
       * @param fn Function If the ename parameter was an event name, this is the handler function.
       * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Shorthand for addListener
@@ -820,41 +1329,73 @@ object form extends js.Object {
       * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.Any,
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(
       eventName: js.Any,
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
@@ -863,41 +1404,73 @@ object form extends js.Object {
       * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
       * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
       */
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any, events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
     
     /** [Method] Remove an item from the collection
       * @param o Object The item to remove.
       * @returns Object The item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.remove")
+    @js.native
     def remove(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.remove")
+    @js.native
     def remove(o: js.Any): js.Any = js.native
     
     /** [Method] Remove all items in the collection
       * @param items Array An array of items to be removed.
       * @returns Ext.util.MixedCollection this object
       */
+    @JSGlobal("Ext.form.CheckboxManager.removeAll")
+    @js.native
     def removeAll(): IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeAll")
+    @js.native
     def removeAll(items: typings.extjs.Ext.Array): IMixedCollection = js.native
     
     /** [Method] Remove an item from a specified index in the collection
       * @param index Number The index within the collection of the item to remove.
       * @returns Object The item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.removeAt")
+    @js.native
     def removeAt(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeAt")
+    @js.native
     def removeAt(index: Double): js.Any = js.native
     
     /** [Method] Removes an item associated with the passed key fom the collection
       * @param key String The key of the item to remove. If null is passed, all objects which yielded no key from the configured getKey function are removed.
       * @returns Object Only returned if removing at a specified key. The item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.removeAtKey")
+    @js.native
     def removeAtKey(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeAtKey")
+    @js.native
     def removeAtKey(key: java.lang.String): js.Any = js.native
     
     /** [Method] Removes an event handler
@@ -905,13 +1478,29 @@ object form extends js.Object {
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Removes listeners that were added by the mon method
@@ -920,26 +1509,58 @@ object form extends js.Object {
       * @param fn Function If the ename parameter was an event name, this is the handler function.
       * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Remove a range of items starting at a specified index in the collection
@@ -947,15 +1568,27 @@ object form extends js.Object {
       * @param removeCount Number The nuber of items to remove beginning at the specified index.
       * @returns Object The last item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.removeRange")
+    @js.native
     def removeRange(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeRange")
+    @js.native
     def removeRange(index: js.UndefOr[scala.Nothing], removeCount: Double): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeRange")
+    @js.native
     def removeRange(index: Double): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.removeRange")
+    @js.native
     def removeRange(index: Double, removeCount: Double): js.Any = js.native
     
     /** [Method] Reorders each of the items based on a mapping from old index to new index
       * @param mapping Object Mapping from old item index to new item index
       */
+    @JSGlobal("Ext.form.CheckboxManager.reorder")
+    @js.native
     def reorder(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.reorder")
+    @js.native
     def reorder(mapping: js.Any): Unit = js.native
     
     /** [Method] Replaces an item in the collection
@@ -963,53 +1596,95 @@ object form extends js.Object {
       * @param o Object {Object} o (optional) If the first parameter passed was a key, the item to associate with that key.
       * @returns Object The new item.
       */
+    @JSGlobal("Ext.form.CheckboxManager.replace")
+    @js.native
     def replace(): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.replace")
+    @js.native
     def replace(key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.replace")
+    @js.native
     def replace(key: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.CheckboxManager.replace")
+    @js.native
     def replace(key: java.lang.String, o: js.Any): js.Any = js.native
     
     /** [Method] Resumes firing of the named event s
       * @param eventName String... Multiple event names to resume.
       */
+    @JSGlobal("Ext.form.CheckboxManager.resumeEvent")
+    @js.native
     def resumeEvent(eventName: js.Any*): Unit = js.native
     
     /** [Method] Resumes firing events see suspendEvents */
+    @JSGlobal("Ext.form.CheckboxManager.resumeEvents")
+    @js.native
     def resumeEvents(): Unit = js.native
     
     /** [Property] (Ext.Class) */
-    var self: IClass = js.native
+    @JSGlobal("Ext.form.CheckboxManager.self")
+    @js.native
+    def self: IClass = js.native
+    @scala.inline
+    def self_=(x: IClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
     
     /** [Method] Sorts the data in the Store by one or more of its properties
       * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
       * @param direction String The overall direction to sort the data by.
       * @returns Ext.util.Sorter[]
       */
+    @JSGlobal("Ext.form.CheckboxManager.sort")
+    @js.native
     def sort(): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sort")
+    @js.native
     def sort(sorters: js.UndefOr[scala.Nothing], direction: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sort")
+    @js.native
     def sort(sorters: js.Any): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sort")
+    @js.native
     def sort(sorters: js.Any, direction: java.lang.String): typings.extjs.Ext.Array = js.native
     
     /** [Method] Sorts the collection by a single sorter function
       * @param sorterFn Function The function to sort by
       */
+    @JSGlobal("Ext.form.CheckboxManager.sortBy")
+    @js.native
     def sortBy(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sortBy")
+    @js.native
     def sortBy(sorterFn: js.Any): Unit = js.native
     
     /** [Method] Sorts this collection by keys
       * @param direction String 'ASC' or 'DESC'. Defaults to 'ASC'.
       * @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
       */
+    @JSGlobal("Ext.form.CheckboxManager.sortByKey")
+    @js.native
     def sortByKey(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sortByKey")
+    @js.native
     def sortByKey(direction: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sortByKey")
+    @js.native
     def sortByKey(direction: java.lang.String): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sortByKey")
+    @js.native
     def sortByKey(direction: java.lang.String, fn: js.Any): Unit = js.native
     
     /** [Property] (Ext.util.MixedCollection) */
-    var sorters: IMixedCollection = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sorters")
+    @js.native
+    def sorters: IMixedCollection = js.native
+    @scala.inline
+    def sorters_=(x: IMixedCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sorters")(x.asInstanceOf[js.Any])
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
+    @JSGlobal("Ext.form.CheckboxManager.statics")
+    @js.native
     def statics(): IClass = js.native
     
     /** [Method] Collects all of the values of the given property and returns their sum
@@ -1019,47 +1694,85 @@ object form extends js.Object {
       * @param end Number The record index to end at
       * @returns Number The total
       */
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(
       property: js.UndefOr[scala.Nothing],
       root: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       end: Double
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], start: Double, end: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(
       property: js.UndefOr[scala.Nothing],
       root: java.lang.String,
       start: js.UndefOr[scala.Nothing],
       end: Double
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: java.lang.String, start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: java.lang.String, start: Double, end: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(
       property: java.lang.String,
       root: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       end: Double
     ): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: js.UndefOr[scala.Nothing], start: Double, end: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String, start: Double): Double = js.native
+    @JSGlobal("Ext.form.CheckboxManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String, start: Double, end: Double): Double = js.native
     
     /** [Method] Suspends firing of the named event s
       * @param eventName String... Multiple event names to suspend.
       */
+    @JSGlobal("Ext.form.CheckboxManager.suspendEvent")
+    @js.native
     def suspendEvent(eventName: js.Any*): Unit = js.native
     
     /** [Method] Suspends the firing of all events
       * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
       */
+    @JSGlobal("Ext.form.CheckboxManager.suspendEvents")
+    @js.native
     def suspendEvents(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.suspendEvents")
+    @js.native
     def suspendEvents(queueSuspended: Boolean): Unit = js.native
     
     /** [Method] Shorthand for removeListener
@@ -1067,52 +1780,96 @@ object form extends js.Object {
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: java.lang.String): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.un")
+    @js.native
     def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Change the key for an existing item in the collection
       * @param oldKey Object The old key
       * @param newKey Object The new key
       */
+    @JSGlobal("Ext.form.CheckboxManager.updateKey")
+    @js.native
     def updateKey(): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.updateKey")
+    @js.native
     def updateKey(oldKey: js.UndefOr[scala.Nothing], newKey: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.updateKey")
+    @js.native
     def updateKey(oldKey: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.CheckboxManager.updateKey")
+    @js.native
     def updateKey(oldKey: js.Any, newKey: js.Any): Unit = js.native
   }
   
+  @JSGlobal("Ext.form.RadioManager")
   @js.native
   class RadioManager ()
     extends typings.extjs.Ext.form.RadioManager
   /* static members */
-  @js.native
-  object RadioManager extends js.Object {
+  object RadioManager {
+    
+    @JSGlobal("Ext.form.RadioManager")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** [Method] Adds an item to the collection
       * @param key String/Object The key to associate with the item, or the new item. If a getKey implementation was specified for this MixedCollection, or if the key of the stored items is in a property called id, the MixedCollection will be able to derive the key for the new item. In this case just pass the new item in this parameter.
       * @param obj Object The item to add.
       * @returns Object The item added.
       */
+    @JSGlobal("Ext.form.RadioManager.add")
+    @js.native
     def add(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.add")
+    @js.native
     def add(key: js.UndefOr[scala.Nothing], obj: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.add")
+    @js.native
     def add(key: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.add")
+    @js.native
     def add(key: js.Any, obj: js.Any): js.Any = js.native
     
     /** [Method] Adds all elements of an Array or an Object to the collection
       * @param objs Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if allowFunctions has been set to true.
       */
+    @JSGlobal("Ext.form.RadioManager.addAll")
+    @js.native
     def addAll(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.addAll")
+    @js.native
     def addAll(objs: js.Any): Unit = js.native
     
     /** [Method] Adds the specified events to the list of events which this Observable may fire
       * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
       */
+    @JSGlobal("Ext.form.RadioManager.addEvents")
+    @js.native
     def addEvents(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.addEvents")
+    @js.native
     def addEvents(eventNames: js.Any): Unit = js.native
     
     /** [Method] Appends an event handler to this object
@@ -1122,41 +1879,73 @@ object form extends js.Object {
       * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.Any,
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(
       eventName: js.Any,
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addListener")
+    @js.native
     def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
@@ -1167,7 +1956,11 @@ object form extends js.Object {
       * @param options Object If the ename parameter was an event name, this is the addListener options.
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1175,12 +1968,16 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1188,7 +1985,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1196,7 +1997,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1204,7 +2009,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -1212,7 +2021,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -1220,7 +2033,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -1228,9 +2045,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -1238,7 +2063,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -1246,7 +2075,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -1254,9 +2087,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(
       item: js.Any,
       ename: js.Any,
@@ -1264,41 +2105,71 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.addManagedListener")
+    @js.native
     def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
+    @JSGlobal("Ext.form.RadioManager.callOverridden")
+    @js.native
     def callOverridden(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.callOverridden")
+    @js.native
     def callOverridden(args: js.Any): js.Any = js.native
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
+    @JSGlobal("Ext.form.RadioManager.callParent")
+    @js.native
     def callParent(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.callParent")
+    @js.native
     def callParent(args: js.Any): js.Any = js.native
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
+    @JSGlobal("Ext.form.RadioManager.callSuper")
+    @js.native
     def callSuper(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.callSuper")
+    @js.native
     def callSuper(args: js.Any): js.Any = js.native
     
     /** [Method] Removes all items from the collection  */
+    @JSGlobal("Ext.form.RadioManager.clear")
+    @js.native
     def clear(): Unit = js.native
     
     /** [Method] Removes all listeners for this object including the managed listeners */
+    @JSGlobal("Ext.form.RadioManager.clearListeners")
+    @js.native
     def clearListeners(): Unit = js.native
     
     /** [Method] Removes all managed listeners for this object  */
+    @JSGlobal("Ext.form.RadioManager.clearManagedListeners")
+    @js.native
     def clearManagedListeners(): Unit = js.native
     
     /** [Method] Collects unique values of a particular property in this MixedCollection
@@ -1307,51 +2178,95 @@ object form extends js.Object {
       * @param allowBlank Boolean Pass true to allow null, undefined or empty string values
       * @returns Array The unique values
       */
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], allowBlank: Boolean): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: js.UndefOr[scala.Nothing], root: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: js.UndefOr[scala.Nothing], root: java.lang.String, allowBlank: Boolean): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: java.lang.String, root: js.UndefOr[scala.Nothing], allowBlank: Boolean): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: java.lang.String, root: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.collect")
+    @js.native
     def collect(property: java.lang.String, root: java.lang.String, allowBlank: Boolean): typings.extjs.Ext.Array = js.native
     
     /** [Method] Returns true if the collection contains the passed Object as an item
       * @param o Object The Object to look for in the collection.
       * @returns Boolean True if the collection contains the Object as an item.
       */
+    @JSGlobal("Ext.form.RadioManager.contains")
+    @js.native
     def contains(): Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.contains")
+    @js.native
     def contains(o: js.Any): Boolean = js.native
     
     /** [Method] Returns true if the collection contains the passed Object as a key
       * @param key String The key to look for in the collection.
       * @returns Boolean True if the collection contains the Object as a key.
       */
+    @JSGlobal("Ext.form.RadioManager.containsKey")
+    @js.native
     def containsKey(): Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.containsKey")
+    @js.native
     def containsKey(key: java.lang.String): Boolean = js.native
     
     /** [Method] Executes the specified function once for every item in the collection
       * @param fn Function The function to execute for each item.
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
       */
+    @JSGlobal("Ext.form.RadioManager.each")
+    @js.native
     def each(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.each")
+    @js.native
     def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.each")
+    @js.native
     def each(fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.each")
+    @js.native
     def each(fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
       * @param fn Function The function to execute for each item.
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
       */
+    @JSGlobal("Ext.form.RadioManager.eachKey")
+    @js.native
     def eachKey(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.eachKey")
+    @js.native
     def eachKey(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.eachKey")
+    @js.native
     def eachKey(fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.eachKey")
+    @js.native
     def eachKey(fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
       * @param eventNames String/String[] The event name to bubble, or an Array of event names.
       */
+    @JSGlobal("Ext.form.RadioManager.enableBubble")
+    @js.native
     def enableBubble(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.enableBubble")
+    @js.native
     def enableBubble(eventNames: js.Any): Unit = js.native
     
     /** [Method] Filters the objects in this collection by a set of Filters or by a single property value pair with optional paramete
@@ -1361,41 +2276,73 @@ object form extends js.Object {
       * @param caseSensitive Boolean True for case sensitive comparison.
       * @returns Ext.util.MixedCollection The new filtered collection
       */
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(
       property: js.Any,
       value: js.UndefOr[scala.Nothing],
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any, anyMatch: js.UndefOr[scala.Nothing], caseSensitive: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any, anyMatch: Boolean): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filter")
+    @js.native
     def filter(property: js.Any, value: js.Any, anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
     
     /** [Method] Filter by a function
@@ -1403,12 +2350,22 @@ object form extends js.Object {
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to this MixedCollection.
       * @returns Ext.util.MixedCollection The new filtered collection
       */
+    @JSGlobal("Ext.form.RadioManager.filterBy")
+    @js.native
     def filterBy(): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filterBy")
+    @js.native
     def filterBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filterBy")
+    @js.native
     def filterBy(fn: js.Any): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.filterBy")
+    @js.native
     def filterBy(fn: js.Any, scope: js.Any): IMixedCollection = js.native
     
     /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function  */
+    @JSGlobal("Ext.form.RadioManager.find")
+    @js.native
     def find(): Unit = js.native
     
     /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function
@@ -1416,9 +2373,17 @@ object form extends js.Object {
       * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
       * @returns Object The first item in the collection which returned true from the selection function, or null if none was found.
       */
+    @JSGlobal("Ext.form.RadioManager.findBy")
+    @js.native
     def findBy(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.findBy")
+    @js.native
     def findBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.findBy")
+    @js.native
     def findBy(fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.findBy")
+    @js.native
     def findBy(fn: js.Any, scope: js.Any): js.Any = js.native
     
     /** [Method] Finds the index of the first matching object in this collection by a specific property value
@@ -1429,7 +2394,11 @@ object form extends js.Object {
       * @param caseSensitive Boolean True for case sensitive comparison.
       * @returns Number The matched index or -1
       */
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -1437,12 +2406,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -1450,7 +2423,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -1458,12 +2435,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       start: Double,
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
@@ -1471,7 +2452,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -1479,12 +2464,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
       start: js.UndefOr[scala.Nothing],
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -1492,7 +2481,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any, start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -1500,7 +2493,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: js.UndefOr[scala.Nothing],
       value: js.Any,
@@ -1508,7 +2505,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -1516,12 +2517,16 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       anyMatch: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -1529,7 +2534,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -1537,7 +2546,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.UndefOr[scala.Nothing], start: Double, anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.UndefOr[scala.Nothing],
@@ -1545,7 +2558,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -1553,7 +2570,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any, start: js.UndefOr[scala.Nothing], anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -1561,7 +2582,11 @@ object form extends js.Object {
       anyMatch: Boolean,
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any, start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -1569,7 +2594,11 @@ object form extends js.Object {
       anyMatch: js.UndefOr[scala.Nothing],
       caseSensitive: Boolean
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(property: java.lang.String, value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndex")
+    @js.native
     def findIndex(
       property: java.lang.String,
       value: js.Any,
@@ -1584,13 +2613,29 @@ object form extends js.Object {
       * @param start Number The index to start searching at.
       * @returns Number The matched index or -1
       */
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any, start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any, scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any, scope: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findIndexBy")
+    @js.native
     def findIndexBy(fn: js.Any, scope: js.Any, start: Double): Double = js.native
     
     /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
@@ -1598,9 +2643,17 @@ object form extends js.Object {
       * @param sorterFn Function The function to sort by. This is the same as the sorting function passed to sortBy. It accepts 2 items from this MixedCollection, and returns -1 0, or 1 depending on the relative sort positions of the 2 compared items. If omitted, a function generated from the currently defined set of sorters will be used.
       * @returns Number The insertion point to add the new item into this MixedCollection at using insert
       */
+    @JSGlobal("Ext.form.RadioManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(newItem: js.UndefOr[scala.Nothing], sorterFn: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(newItem: js.Any): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.findInsertionIndex")
+    @js.native
     def findInsertionIndex(newItem: js.Any, sorterFn: js.Any): Double = js.native
     
     /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
@@ -1608,6 +2661,8 @@ object form extends js.Object {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
+    @JSGlobal("Ext.form.RadioManager.fireEvent")
+    @js.native
     def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = js.native
     
     /** [Method] Fires the specified event with the passed parameter list
@@ -1615,62 +2670,98 @@ object form extends js.Object {
       * @param args Object[] An array of parameters which are passed to handlers.
       * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
       */
+    @JSGlobal("Ext.form.RadioManager.fireEventArgs")
+    @js.native
     def fireEventArgs(): Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.fireEventArgs")
+    @js.native
     def fireEventArgs(eventName: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.fireEventArgs")
+    @js.native
     def fireEventArgs(eventName: java.lang.String): Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.fireEventArgs")
+    @js.native
     def fireEventArgs(eventName: java.lang.String, args: typings.extjs.Ext.Array): Boolean = js.native
     
     /** [Method] Returns the first item in the collection
       * @returns Object the first item in the collection..
       */
+    @JSGlobal("Ext.form.RadioManager.first")
+    @js.native
     def first(): js.Any = js.native
     
     /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
+    @JSGlobal("Ext.form.RadioManager.generateComparator")
+    @js.native
     def generateComparator(): Unit = js.native
     
     /** [Method] Returns the item associated with the passed key OR index
       * @param key String/Number The key or index of the item.
       * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
       */
+    @JSGlobal("Ext.form.RadioManager.get")
+    @js.native
     def get(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.get")
+    @js.native
     def get(key: js.Any): js.Any = js.native
     
     /** [Method] Returns the item at the specified index
       * @param index Number The index of the item.
       * @returns Object The item at the specified index.
       */
+    @JSGlobal("Ext.form.RadioManager.getAt")
+    @js.native
     def getAt(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.getAt")
+    @js.native
     def getAt(index: Double): js.Any = js.native
     
     /** [Method] Returns the item associated with the passed key
       * @param key String/Number The key of the item.
       * @returns Object The item associated with the passed key.
       */
+    @JSGlobal("Ext.form.RadioManager.getByKey")
+    @js.native
     def getByKey(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.getByKey")
+    @js.native
     def getByKey(key: js.Any): js.Any = js.native
     
     /** [Method] Returns the number of items in the collection
       * @returns Number the number of items in the collection.
       */
+    @JSGlobal("Ext.form.RadioManager.getCount")
+    @js.native
     def getCount(): Double = js.native
     
     /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
       * @returns Ext.util.Sorter The sorter, null if none exist
       */
+    @JSGlobal("Ext.form.RadioManager.getFirstSorter")
+    @js.native
     def getFirstSorter(): ISorter = js.native
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
+    @JSGlobal("Ext.form.RadioManager.getInitialConfig")
+    @js.native
     def getInitialConfig(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.getInitialConfig")
+    @js.native
     def getInitialConfig(name: java.lang.String): js.Any = js.native
     
     /** [Method] A function which will be called passing a newly added object when the object is added without a separate id
       * @param item Object The item for which to find the key.
       * @returns Object The key for the passed item.
       */
+    @JSGlobal("Ext.form.RadioManager.getKey")
+    @js.native
     def getKey(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.getKey")
+    @js.native
     def getKey(item: js.Any): js.Any = js.native
     
     /** [Method] Returns a range of items in this collection
@@ -1678,43 +2769,73 @@ object form extends js.Object {
       * @param endIndex Number The ending index. Defaults to the last item.
       * @returns Array An array of items
       */
+    @JSGlobal("Ext.form.RadioManager.getRange")
+    @js.native
     def getRange(): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.getRange")
+    @js.native
     def getRange(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.getRange")
+    @js.native
     def getRange(startIndex: Double): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.getRange")
+    @js.native
     def getRange(startIndex: Double, endIndex: Double): typings.extjs.Ext.Array = js.native
     
     /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
       * @param eventName String The name of the event to check for
       * @returns Boolean true if the event is being listened for or bubbles, else false
       */
+    @JSGlobal("Ext.form.RadioManager.hasListener")
+    @js.native
     def hasListener(): Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.hasListener")
+    @js.native
     def hasListener(eventName: java.lang.String): Boolean = js.native
     
     /** [Property] (Object) */
-    var hasListeners: js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.hasListeners")
+    @js.native
+    def hasListeners: js.Any = js.native
+    @scala.inline
+    def hasListeners_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasListeners")(x.asInstanceOf[js.Any])
     
     /** [Method] Returns index within the collection of the passed Object
       * @param o Object The item to find the index of.
       * @returns Number index of the item. Returns -1 if not found.
       */
+    @JSGlobal("Ext.form.RadioManager.indexOf")
+    @js.native
     def indexOf(): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.indexOf")
+    @js.native
     def indexOf(o: js.Any): Double = js.native
     
     /** [Method] Returns index within the collection of the passed key
       * @param key String The key to find the index of.
       * @returns Number index of the key.
       */
+    @JSGlobal("Ext.form.RadioManager.indexOfKey")
+    @js.native
     def indexOfKey(): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.indexOfKey")
+    @js.native
     def indexOfKey(key: java.lang.String): Double = js.native
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
+    @JSGlobal("Ext.form.RadioManager.initConfig")
+    @js.native
     def initConfig(): IBase = js.native
+    @JSGlobal("Ext.form.RadioManager.initConfig")
+    @js.native
     def initConfig(config: js.Any): IBase = js.native
     
     /** [Method] Performs initialization of this mixin  */
+    @JSGlobal("Ext.form.RadioManager.initSortable")
+    @js.native
     def initSortable(): Unit = js.native
     
     /** [Method] Inserts an item at the specified index in the collection
@@ -1723,27 +2844,57 @@ object form extends js.Object {
       * @param o Object/Object[] If the second parameter was a key, the new item. May also be an array to insert multiple items at once.
       * @returns Object The item inserted or an array of items inserted.
       */
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: js.UndefOr[scala.Nothing], key: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: js.UndefOr[scala.Nothing], key: js.Any, o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: Double): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: Double, key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: Double, key: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.insert")
+    @js.native
     def insert(index: Double, key: js.Any, o: js.Any): js.Any = js.native
     
     /** [Property] (Boolean) */
-    var isMixedCollection: Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.isMixedCollection")
+    @js.native
+    def isMixedCollection: Boolean = js.native
+    @scala.inline
+    def isMixedCollection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isMixedCollection")(x.asInstanceOf[js.Any])
     
     /** [Property] (Boolean) */
-    var isObservable: Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.isObservable")
+    @js.native
+    def isObservable: Boolean = js.native
+    @scala.inline
+    def isObservable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isObservable")(x.asInstanceOf[js.Any])
     
     /** [Property] (Boolean) */
-    var isSortable: Boolean = js.native
+    @JSGlobal("Ext.form.RadioManager.isSortable")
+    @js.native
+    def isSortable: Boolean = js.native
+    @scala.inline
+    def isSortable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSortable")(x.asInstanceOf[js.Any])
     
     /** [Method] Returns the last item in the collection
       * @returns Object the last item in the collection..
       */
+    @JSGlobal("Ext.form.RadioManager.last")
+    @js.native
     def last(): js.Any = js.native
     
     /** [Method] Shorthand for addManagedListener
@@ -1754,7 +2905,11 @@ object form extends js.Object {
       * @param options Object If the ename parameter was an event name, this is the addListener options.
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1762,12 +2917,16 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1775,7 +2934,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1783,7 +2946,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
@@ -1791,7 +2958,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -1799,7 +2970,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -1807,7 +2982,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.UndefOr[scala.Nothing],
       ename: js.Any,
@@ -1815,9 +2994,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -1825,7 +3012,11 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -1833,7 +3024,11 @@ object form extends js.Object {
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.UndefOr[scala.Nothing],
@@ -1841,9 +3036,17 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(
       item: js.Any,
       ename: js.Any,
@@ -1851,11 +3054,23 @@ object form extends js.Object {
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.mon")
+    @js.native
     def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Shorthand for removeManagedListener
@@ -1864,26 +3079,58 @@ object form extends js.Object {
       * @param fn Function If the ename parameter was an event name, this is the handler function.
       * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
       */
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.mun")
+    @js.native
     def mun(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Shorthand for addListener
@@ -1893,41 +3140,73 @@ object form extends js.Object {
       * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
       * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
       */
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any,
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(
       eventName: js.UndefOr[scala.Nothing],
       fn: js.Any,
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(
       eventName: js.Any,
       fn: js.UndefOr[scala.Nothing],
       scope: js.UndefOr[scala.Nothing],
       options: js.Any
     ): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.on")
+    @js.native
     def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
@@ -1936,41 +3215,73 @@ object form extends js.Object {
       * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
       * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
       */
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any, events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.relayEvents")
+    @js.native
     def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
     
     /** [Method] Remove an item from the collection
       * @param o Object The item to remove.
       * @returns Object The item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.RadioManager.remove")
+    @js.native
     def remove(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.remove")
+    @js.native
     def remove(o: js.Any): js.Any = js.native
     
     /** [Method] Remove all items in the collection
       * @param items Array An array of items to be removed.
       * @returns Ext.util.MixedCollection this object
       */
+    @JSGlobal("Ext.form.RadioManager.removeAll")
+    @js.native
     def removeAll(): IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.removeAll")
+    @js.native
     def removeAll(items: typings.extjs.Ext.Array): IMixedCollection = js.native
     
     /** [Method] Remove an item from a specified index in the collection
       * @param index Number The index within the collection of the item to remove.
       * @returns Object The item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.RadioManager.removeAt")
+    @js.native
     def removeAt(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.removeAt")
+    @js.native
     def removeAt(index: Double): js.Any = js.native
     
     /** [Method] Removes an item associated with the passed key fom the collection
       * @param key String The key of the item to remove. If null is passed, all objects which yielded no key from the configured getKey function are removed.
       * @returns Object Only returned if removing at a specified key. The item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.RadioManager.removeAtKey")
+    @js.native
     def removeAtKey(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.removeAtKey")
+    @js.native
     def removeAtKey(key: java.lang.String): js.Any = js.native
     
     /** [Method] Removes an event handler
@@ -1978,13 +3289,29 @@ object form extends js.Object {
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeListener")
+    @js.native
     def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Removes listeners that were added by the mon method
@@ -1993,26 +3320,58 @@ object form extends js.Object {
       * @param fn Function If the ename parameter was an event name, this is the handler function.
       * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
       */
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(
       item: js.UndefOr[scala.Nothing],
       ename: js.UndefOr[scala.Nothing],
       fn: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.removeManagedListener")
+    @js.native
     def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Remove a range of items starting at a specified index in the collection
@@ -2020,15 +3379,27 @@ object form extends js.Object {
       * @param removeCount Number The nuber of items to remove beginning at the specified index.
       * @returns Object The last item removed or false if no item was removed.
       */
+    @JSGlobal("Ext.form.RadioManager.removeRange")
+    @js.native
     def removeRange(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.removeRange")
+    @js.native
     def removeRange(index: js.UndefOr[scala.Nothing], removeCount: Double): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.removeRange")
+    @js.native
     def removeRange(index: Double): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.removeRange")
+    @js.native
     def removeRange(index: Double, removeCount: Double): js.Any = js.native
     
     /** [Method] Reorders each of the items based on a mapping from old index to new index
       * @param mapping Object Mapping from old item index to new item index
       */
+    @JSGlobal("Ext.form.RadioManager.reorder")
+    @js.native
     def reorder(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.reorder")
+    @js.native
     def reorder(mapping: js.Any): Unit = js.native
     
     /** [Method] Replaces an item in the collection
@@ -2036,53 +3407,95 @@ object form extends js.Object {
       * @param o Object {Object} o (optional) If the first parameter passed was a key, the item to associate with that key.
       * @returns Object The new item.
       */
+    @JSGlobal("Ext.form.RadioManager.replace")
+    @js.native
     def replace(): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.replace")
+    @js.native
     def replace(key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.replace")
+    @js.native
     def replace(key: java.lang.String): js.Any = js.native
+    @JSGlobal("Ext.form.RadioManager.replace")
+    @js.native
     def replace(key: java.lang.String, o: js.Any): js.Any = js.native
     
     /** [Method] Resumes firing of the named event s
       * @param eventName String... Multiple event names to resume.
       */
+    @JSGlobal("Ext.form.RadioManager.resumeEvent")
+    @js.native
     def resumeEvent(eventName: js.Any*): Unit = js.native
     
     /** [Method] Resumes firing events see suspendEvents */
+    @JSGlobal("Ext.form.RadioManager.resumeEvents")
+    @js.native
     def resumeEvents(): Unit = js.native
     
     /** [Property] (Ext.Class) */
-    var self: IClass = js.native
+    @JSGlobal("Ext.form.RadioManager.self")
+    @js.native
+    def self: IClass = js.native
+    @scala.inline
+    def self_=(x: IClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
     
     /** [Method] Sorts the data in the Store by one or more of its properties
       * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
       * @param direction String The overall direction to sort the data by.
       * @returns Ext.util.Sorter[]
       */
+    @JSGlobal("Ext.form.RadioManager.sort")
+    @js.native
     def sort(): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.sort")
+    @js.native
     def sort(sorters: js.UndefOr[scala.Nothing], direction: java.lang.String): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.sort")
+    @js.native
     def sort(sorters: js.Any): typings.extjs.Ext.Array = js.native
+    @JSGlobal("Ext.form.RadioManager.sort")
+    @js.native
     def sort(sorters: js.Any, direction: java.lang.String): typings.extjs.Ext.Array = js.native
     
     /** [Method] Sorts the collection by a single sorter function
       * @param sorterFn Function The function to sort by
       */
+    @JSGlobal("Ext.form.RadioManager.sortBy")
+    @js.native
     def sortBy(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.sortBy")
+    @js.native
     def sortBy(sorterFn: js.Any): Unit = js.native
     
     /** [Method] Sorts this collection by keys
       * @param direction String 'ASC' or 'DESC'. Defaults to 'ASC'.
       * @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
       */
+    @JSGlobal("Ext.form.RadioManager.sortByKey")
+    @js.native
     def sortByKey(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.sortByKey")
+    @js.native
     def sortByKey(direction: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.sortByKey")
+    @js.native
     def sortByKey(direction: java.lang.String): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.sortByKey")
+    @js.native
     def sortByKey(direction: java.lang.String, fn: js.Any): Unit = js.native
     
     /** [Property] (Ext.util.MixedCollection) */
-    var sorters: IMixedCollection = js.native
+    @JSGlobal("Ext.form.RadioManager.sorters")
+    @js.native
+    def sorters: IMixedCollection = js.native
+    @scala.inline
+    def sorters_=(x: IMixedCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sorters")(x.asInstanceOf[js.Any])
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
+    @JSGlobal("Ext.form.RadioManager.statics")
+    @js.native
     def statics(): IClass = js.native
     
     /** [Method] Collects all of the values of the given property and returns their sum
@@ -2092,47 +3505,85 @@ object form extends js.Object {
       * @param end Number The record index to end at
       * @returns Number The total
       */
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(
       property: js.UndefOr[scala.Nothing],
       root: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       end: Double
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], start: Double, end: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(
       property: js.UndefOr[scala.Nothing],
       root: java.lang.String,
       start: js.UndefOr[scala.Nothing],
       end: Double
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: java.lang.String, start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: js.UndefOr[scala.Nothing], root: java.lang.String, start: Double, end: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(
       property: java.lang.String,
       root: js.UndefOr[scala.Nothing],
       start: js.UndefOr[scala.Nothing],
       end: Double
     ): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: js.UndefOr[scala.Nothing], start: Double, end: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String, start: Double): Double = js.native
+    @JSGlobal("Ext.form.RadioManager.sum")
+    @js.native
     def sum(property: java.lang.String, root: java.lang.String, start: Double, end: Double): Double = js.native
     
     /** [Method] Suspends firing of the named event s
       * @param eventName String... Multiple event names to suspend.
       */
+    @JSGlobal("Ext.form.RadioManager.suspendEvent")
+    @js.native
     def suspendEvent(eventName: js.Any*): Unit = js.native
     
     /** [Method] Suspends the firing of all events
       * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
       */
+    @JSGlobal("Ext.form.RadioManager.suspendEvents")
+    @js.native
     def suspendEvents(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.suspendEvents")
+    @js.native
     def suspendEvents(queueSuspended: Boolean): Unit = js.native
     
     /** [Method] Shorthand for removeListener
@@ -2140,226 +3591,397 @@ object form extends js.Object {
       * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
       * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: java.lang.String): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.un")
+    @js.native
     def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
     
     /** [Method] Change the key for an existing item in the collection
       * @param oldKey Object The old key
       * @param newKey Object The new key
       */
+    @JSGlobal("Ext.form.RadioManager.updateKey")
+    @js.native
     def updateKey(): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.updateKey")
+    @js.native
     def updateKey(oldKey: js.UndefOr[scala.Nothing], newKey: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.updateKey")
+    @js.native
     def updateKey(oldKey: js.Any): Unit = js.native
+    @JSGlobal("Ext.form.RadioManager.updateKey")
+    @js.native
     def updateKey(oldKey: js.Any, newKey: js.Any): Unit = js.native
   }
   
+  @JSGlobal("Ext.form.VTypes")
   @js.native
   class VTypes ()
     extends typings.extjs.Ext.form.VTypes
   /* static members */
-  @js.native
-  object VTypes extends js.Object {
+  object VTypes {
+    
+    @JSGlobal("Ext.form.VTypes")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** [Method] The function used to validate alpha values
       * @param value String The value
       * @returns Boolean true if the RegExp test passed, and false if not.
       */
+    @JSGlobal("Ext.form.VTypes.alpha")
+    @js.native
     def alpha(): Boolean = js.native
+    @JSGlobal("Ext.form.VTypes.alpha")
+    @js.native
     def alpha(value: java.lang.String): Boolean = js.native
     
     /** [Property] (RegExp) */
-    var alphaMask: RegExp = js.native
+    @JSGlobal("Ext.form.VTypes.alphaMask")
+    @js.native
+    def alphaMask: RegExp = js.native
+    @scala.inline
+    def alphaMask_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphaMask")(x.asInstanceOf[js.Any])
     
     /** [Property] (String) */
-    var alphaText: java.lang.String = js.native
+    @JSGlobal("Ext.form.VTypes.alphaText")
+    @js.native
+    def alphaText: java.lang.String = js.native
+    @scala.inline
+    def alphaText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphaText")(x.asInstanceOf[js.Any])
     
     /** [Method] The function used to validate alphanumeric values
       * @param value String The value
       * @returns Boolean true if the RegExp test passed, and false if not.
       */
+    @JSGlobal("Ext.form.VTypes.alphanum")
+    @js.native
     def alphanum(): Boolean = js.native
+    @JSGlobal("Ext.form.VTypes.alphanum")
+    @js.native
     def alphanum(value: java.lang.String): Boolean = js.native
     
     /** [Property] (RegExp) */
-    var alphanumMask: RegExp = js.native
+    @JSGlobal("Ext.form.VTypes.alphanumMask")
+    @js.native
+    def alphanumMask: RegExp = js.native
+    @scala.inline
+    def alphanumMask_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphanumMask")(x.asInstanceOf[js.Any])
     
     /** [Property] (String) */
-    var alphanumText: java.lang.String = js.native
+    @JSGlobal("Ext.form.VTypes.alphanumText")
+    @js.native
+    def alphanumText: java.lang.String = js.native
+    @scala.inline
+    def alphanumText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphanumText")(x.asInstanceOf[js.Any])
     
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
+    @JSGlobal("Ext.form.VTypes.callOverridden")
+    @js.native
     def callOverridden(): js.Any = js.native
+    @JSGlobal("Ext.form.VTypes.callOverridden")
+    @js.native
     def callOverridden(args: js.Any): js.Any = js.native
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
+    @JSGlobal("Ext.form.VTypes.callParent")
+    @js.native
     def callParent(): js.Any = js.native
+    @JSGlobal("Ext.form.VTypes.callParent")
+    @js.native
     def callParent(args: js.Any): js.Any = js.native
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
+    @JSGlobal("Ext.form.VTypes.callSuper")
+    @js.native
     def callSuper(): js.Any = js.native
+    @JSGlobal("Ext.form.VTypes.callSuper")
+    @js.native
     def callSuper(args: js.Any): js.Any = js.native
     
     /** [Method] The function used to validate email addresses
       * @param value String The email address
       * @returns Boolean true if the RegExp test passed, and false if not.
       */
+    @JSGlobal("Ext.form.VTypes.email")
+    @js.native
     def email(): Boolean = js.native
+    @JSGlobal("Ext.form.VTypes.email")
+    @js.native
     def email(value: java.lang.String): Boolean = js.native
     
     /** [Property] (RegExp) */
-    var emailMask: RegExp = js.native
+    @JSGlobal("Ext.form.VTypes.emailMask")
+    @js.native
+    def emailMask: RegExp = js.native
+    @scala.inline
+    def emailMask_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emailMask")(x.asInstanceOf[js.Any])
     
     /** [Property] (String) */
-    var emailText: java.lang.String = js.native
+    @JSGlobal("Ext.form.VTypes.emailText")
+    @js.native
+    def emailText: java.lang.String = js.native
+    @scala.inline
+    def emailText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emailText")(x.asInstanceOf[js.Any])
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
+    @JSGlobal("Ext.form.VTypes.getInitialConfig")
+    @js.native
     def getInitialConfig(): js.Any = js.native
+    @JSGlobal("Ext.form.VTypes.getInitialConfig")
+    @js.native
     def getInitialConfig(name: java.lang.String): js.Any = js.native
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
+    @JSGlobal("Ext.form.VTypes.initConfig")
+    @js.native
     def initConfig(): IBase = js.native
+    @JSGlobal("Ext.form.VTypes.initConfig")
+    @js.native
     def initConfig(config: js.Any): IBase = js.native
     
     /** [Property] (Ext.Class) */
-    var self: IClass = js.native
+    @JSGlobal("Ext.form.VTypes.self")
+    @js.native
+    def self: IClass = js.native
+    @scala.inline
+    def self_=(x: IClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
     
     /** [Method] Get the reference to the class from which this object was instantiated
       * @returns Ext.Class
       */
+    @JSGlobal("Ext.form.VTypes.statics")
+    @js.native
     def statics(): IClass = js.native
     
     /** [Method] The function used to validate URLs
       * @param value String The URL
       * @returns Boolean true if the RegExp test passed, and false if not.
       */
+    @JSGlobal("Ext.form.VTypes.url")
+    @js.native
     def url(): Boolean = js.native
+    @JSGlobal("Ext.form.VTypes.url")
+    @js.native
     def url(value: java.lang.String): Boolean = js.native
     
     /** [Property] (String) */
-    var urlText: java.lang.String = js.native
+    @JSGlobal("Ext.form.VTypes.urlText")
+    @js.native
+    def urlText: java.lang.String = js.native
+    @scala.inline
+    def urlText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlText")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object field extends js.Object {
+  object field {
     
+    @JSGlobal("Ext.form.field.VTypes")
     @js.native
     class VTypes ()
       extends typings.extjs.Ext.form.field.VTypes
     /* static members */
-    @js.native
-    object VTypes extends js.Object {
+    object VTypes {
+      
+      @JSGlobal("Ext.form.field.VTypes")
+      @js.native
+      val ^ : js.Any = js.native
       
       /** [Method] The function used to validate alpha values
         * @param value String The value
         * @returns Boolean true if the RegExp test passed, and false if not.
         */
+      @JSGlobal("Ext.form.field.VTypes.alpha")
+      @js.native
       def alpha(): Boolean = js.native
+      @JSGlobal("Ext.form.field.VTypes.alpha")
+      @js.native
       def alpha(value: java.lang.String): Boolean = js.native
       
       /** [Property] (RegExp) */
-      var alphaMask: RegExp = js.native
+      @JSGlobal("Ext.form.field.VTypes.alphaMask")
+      @js.native
+      def alphaMask: RegExp = js.native
+      @scala.inline
+      def alphaMask_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphaMask")(x.asInstanceOf[js.Any])
       
       /** [Property] (String) */
-      var alphaText: java.lang.String = js.native
+      @JSGlobal("Ext.form.field.VTypes.alphaText")
+      @js.native
+      def alphaText: java.lang.String = js.native
+      @scala.inline
+      def alphaText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphaText")(x.asInstanceOf[js.Any])
       
       /** [Method] The function used to validate alphanumeric values
         * @param value String The value
         * @returns Boolean true if the RegExp test passed, and false if not.
         */
+      @JSGlobal("Ext.form.field.VTypes.alphanum")
+      @js.native
       def alphanum(): Boolean = js.native
+      @JSGlobal("Ext.form.field.VTypes.alphanum")
+      @js.native
       def alphanum(value: java.lang.String): Boolean = js.native
       
       /** [Property] (RegExp) */
-      var alphanumMask: RegExp = js.native
+      @JSGlobal("Ext.form.field.VTypes.alphanumMask")
+      @js.native
+      def alphanumMask: RegExp = js.native
+      @scala.inline
+      def alphanumMask_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphanumMask")(x.asInstanceOf[js.Any])
       
       /** [Property] (String) */
-      var alphanumText: java.lang.String = js.native
+      @JSGlobal("Ext.form.field.VTypes.alphanumText")
+      @js.native
+      def alphanumText: java.lang.String = js.native
+      @scala.inline
+      def alphanumText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphanumText")(x.asInstanceOf[js.Any])
       
       /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
         * @returns Object Returns the result of calling the overridden method
         */
+      @JSGlobal("Ext.form.field.VTypes.callOverridden")
+      @js.native
       def callOverridden(): js.Any = js.native
+      @JSGlobal("Ext.form.field.VTypes.callOverridden")
+      @js.native
       def callOverridden(args: js.Any): js.Any = js.native
       
       /** [Method] Call the parent method of the current method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
         * @returns Object Returns the result of calling the parent method
         */
+      @JSGlobal("Ext.form.field.VTypes.callParent")
+      @js.native
       def callParent(): js.Any = js.native
+      @JSGlobal("Ext.form.field.VTypes.callParent")
+      @js.native
       def callParent(args: js.Any): js.Any = js.native
       
       /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
         * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
         * @returns Object Returns the result of calling the superclass method
         */
+      @JSGlobal("Ext.form.field.VTypes.callSuper")
+      @js.native
       def callSuper(): js.Any = js.native
+      @JSGlobal("Ext.form.field.VTypes.callSuper")
+      @js.native
       def callSuper(args: js.Any): js.Any = js.native
       
       /** [Method] The function used to validate email addresses
         * @param value String The email address
         * @returns Boolean true if the RegExp test passed, and false if not.
         */
+      @JSGlobal("Ext.form.field.VTypes.email")
+      @js.native
       def email(): Boolean = js.native
+      @JSGlobal("Ext.form.field.VTypes.email")
+      @js.native
       def email(value: java.lang.String): Boolean = js.native
       
       /** [Property] (RegExp) */
-      var emailMask: RegExp = js.native
+      @JSGlobal("Ext.form.field.VTypes.emailMask")
+      @js.native
+      def emailMask: RegExp = js.native
+      @scala.inline
+      def emailMask_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emailMask")(x.asInstanceOf[js.Any])
       
       /** [Property] (String) */
-      var emailText: java.lang.String = js.native
+      @JSGlobal("Ext.form.field.VTypes.emailText")
+      @js.native
+      def emailText: java.lang.String = js.native
+      @scala.inline
+      def emailText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emailText")(x.asInstanceOf[js.Any])
       
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
         * @param name String Name of the config option to return.
         * @returns Object/Mixed The full config object or a single config value when name parameter specified.
         */
+      @JSGlobal("Ext.form.field.VTypes.getInitialConfig")
+      @js.native
       def getInitialConfig(): js.Any = js.native
+      @JSGlobal("Ext.form.field.VTypes.getInitialConfig")
+      @js.native
       def getInitialConfig(name: java.lang.String): js.Any = js.native
       
       /** [Method] Initialize configuration for this class
         * @param config Object
         * @returns Ext.Base this
         */
+      @JSGlobal("Ext.form.field.VTypes.initConfig")
+      @js.native
       def initConfig(): IBase = js.native
+      @JSGlobal("Ext.form.field.VTypes.initConfig")
+      @js.native
       def initConfig(config: js.Any): IBase = js.native
       
       /** [Property] (Ext.Class) */
-      var self: IClass = js.native
+      @JSGlobal("Ext.form.field.VTypes.self")
+      @js.native
+      def self: IClass = js.native
+      @scala.inline
+      def self_=(x: IClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
       
       /** [Method] Get the reference to the class from which this object was instantiated
         * @returns Ext.Class
         */
+      @JSGlobal("Ext.form.field.VTypes.statics")
+      @js.native
       def statics(): IClass = js.native
       
       /** [Method] The function used to validate URLs
         * @param value String The URL
         * @returns Boolean true if the RegExp test passed, and false if not.
         */
+      @JSGlobal("Ext.form.field.VTypes.url")
+      @js.native
       def url(): Boolean = js.native
+      @JSGlobal("Ext.form.field.VTypes.url")
+      @js.native
       def url(value: java.lang.String): Boolean = js.native
       
       /** [Property] (String) */
-      var urlText: java.lang.String = js.native
+      @JSGlobal("Ext.form.field.VTypes.urlText")
+      @js.native
+      def urlText: java.lang.String = js.native
+      @scala.inline
+      def urlText_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlText")(x.asInstanceOf[js.Any])
     }
   }
 }

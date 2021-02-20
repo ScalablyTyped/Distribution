@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEventConfigurationsResponse extends js.Object {
+trait DescribeEventConfigurationsResponse extends StObject {
   
   /**
     * The creation date of the event configuration.
@@ -31,36 +32,24 @@ object DescribeEventConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class DescribeEventConfigurationsResponseOps[Self <: DescribeEventConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEventConfigurationsResponseMutableBuilder[Self <: DescribeEventConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventConfigurations(value: EventConfigurations): Self = StObject.set(x, "eventConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setEventConfigurationsUndefined: Self = StObject.set(x, "eventConfigurations", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventConfigurations(value: EventConfigurations): Self = this.set("eventConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventConfigurations: Self = this.set("eventConfigurations", js.undefined)
-    
-    @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
   }
 }

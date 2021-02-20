@@ -1,11 +1,12 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportBundleRequest extends js.Object {
+trait ExportBundleRequest extends StObject {
   
   /**
     *  Unique bundle identifier. 
@@ -31,33 +32,21 @@ object ExportBundleRequest {
   }
   
   @scala.inline
-  implicit class ExportBundleRequestOps[Self <: ExportBundleRequest] (val x: Self) extends AnyVal {
+  implicit class ExportBundleRequestMutableBuilder[Self <: ExportBundleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
-    
-    @scala.inline
-    def setProjectId(value: ProjectId): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

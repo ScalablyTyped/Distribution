@@ -2,12 +2,13 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.oakdexPokedex.anon.Increasedcriticalhitratio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Move extends js.Object {
+trait Move extends StObject {
   
   var accuracy: Double = js.native
   
@@ -81,93 +82,81 @@ object Move {
   }
   
   @scala.inline
-  implicit class MoveOps[Self <: Move] (val x: Self) extends AnyVal {
+  implicit class MoveMutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffected_by_kings_rock(value: Boolean): Self = StObject.set(x, "affected_by_kings_rock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAffected_by_magic_coat(value: Boolean): Self = StObject.set(x, "affected_by_magic_coat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setAffected_by_mirror_move(value: Boolean): Self = StObject.set(x, "affected_by_mirror_move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffected_by_kings_rock(value: Boolean): Self = this.set("affected_by_kings_rock", value.asInstanceOf[js.Any])
+    def setAffected_by_protect(value: Boolean): Self = StObject.set(x, "affected_by_protect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffected_by_magic_coat(value: Boolean): Self = this.set("affected_by_magic_coat", value.asInstanceOf[js.Any])
+    def setAffected_by_snatch(value: Boolean): Self = StObject.set(x, "affected_by_snatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffected_by_mirror_move(value: Boolean): Self = this.set("affected_by_mirror_move", value.asInstanceOf[js.Any])
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffected_by_protect(value: Boolean): Self = this.set("affected_by_protect", value.asInstanceOf[js.Any])
+    def setContests(value: js.Array[MoveContest]): Self = StObject.set(x, "contests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffected_by_snatch(value: Boolean): Self = this.set("affected_by_snatch", value.asInstanceOf[js.Any])
+    def setContestsVarargs(value: MoveContest*): Self = StObject.set(x, "contests", js.Array(value :_*))
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCritical_hit(value: Double): Self = StObject.set(x, "critical_hit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContestsVarargs(value: MoveContest*): Self = this.set("contests", js.Array(value :_*))
+    def setIn_battle_properties(value: Increasedcriticalhitratio): Self = StObject.set(x, "in_battle_properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContests(value: js.Array[MoveContest]): Self = this.set("contests", value.asInstanceOf[js.Any])
+    def setIn_battle_propertiesUndefined: Self = StObject.set(x, "in_battle_properties", js.undefined)
     
     @scala.inline
-    def setCritical_hit(value: Double): Self = this.set("critical_hit", value.asInstanceOf[js.Any])
+    def setIndex_number(value: Double): Self = StObject.set(x, "index_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex_number(value: Double): Self = this.set("index_number", value.asInstanceOf[js.Any])
+    def setMakes_contact(value: Boolean): Self = StObject.set(x, "makes_contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMakes_contact(value: Boolean): Self = this.set("makes_contact", value.asInstanceOf[js.Any])
+    def setMax_pp(value: Double): Self = StObject.set(x, "max_pp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_pp(value: Double): Self = this.set("max_pp", value.asInstanceOf[js.Any])
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setPokedex_entries(value: StringDictionary[Translations]): Self = StObject.set(x, "pokedex_entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPokedex_entries(value: StringDictionary[Translations]): Self = this.set("pokedex_entries", value.asInstanceOf[js.Any])
+    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPower(value: Double): Self = this.set("power", value.asInstanceOf[js.Any])
+    def setPp(value: Double): Self = StObject.set(x, "pp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPp(value: Double): Self = this.set("pp", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setStat_modifiers(value: js.Array[MoveStatModifier]): Self = StObject.set(x, "stat_modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setStat_modifiersUndefined: Self = StObject.set(x, "stat_modifiers", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStat_modifiersVarargs(value: MoveStatModifier*): Self = StObject.set(x, "stat_modifiers", js.Array(value :_*))
     
     @scala.inline
-    def setIn_battle_properties(value: Increasedcriticalhitratio): Self = this.set("in_battle_properties", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIn_battle_properties: Self = this.set("in_battle_properties", js.undefined)
-    
-    @scala.inline
-    def setStat_modifiersVarargs(value: MoveStatModifier*): Self = this.set("stat_modifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setStat_modifiers(value: js.Array[MoveStatModifier]): Self = this.set("stat_modifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStat_modifiers: Self = this.set("stat_modifiers", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

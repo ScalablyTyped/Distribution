@@ -1,5 +1,6 @@
 package typings.reactElemental.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactElemental.reactElementalStrings.gamma
   - typings.reactElemental.reactElementalStrings.delta
 */
-trait SpinnerSize extends js.Object
+trait SpinnerSize extends StObject
 object SpinnerSize {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeaderboardEntry extends js.Object {
+trait LeaderboardEntry extends StObject {
   
   /** The localized string for the numerical value of this score. */
   var formattedScore: js.UndefOr[String] = js.native
@@ -43,72 +44,60 @@ object LeaderboardEntry {
   }
   
   @scala.inline
-  implicit class LeaderboardEntryOps[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
+  implicit class LeaderboardEntryMutableBuilder[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormattedScore(value: String): Self = StObject.set(x, "formattedScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormattedScoreRank(value: String): Self = StObject.set(x, "formattedScoreRank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedScoreRankUndefined: Self = StObject.set(x, "formattedScoreRank", js.undefined)
     
     @scala.inline
-    def setFormattedScore(value: String): Self = this.set("formattedScore", value.asInstanceOf[js.Any])
+    def setFormattedScoreUndefined: Self = StObject.set(x, "formattedScore", js.undefined)
     
     @scala.inline
-    def deleteFormattedScore: Self = this.set("formattedScore", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedScoreRank(value: String): Self = this.set("formattedScoreRank", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFormattedScoreRank: Self = this.set("formattedScoreRank", js.undefined)
+    def setPlayer(value: Player): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setScoreRank(value: String): Self = StObject.set(x, "scoreRank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayer(value: Player): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setScoreRankUndefined: Self = StObject.set(x, "scoreRank", js.undefined)
     
     @scala.inline
-    def deletePlayer: Self = this.set("player", js.undefined)
+    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreRank(value: String): Self = this.set("scoreRank", value.asInstanceOf[js.Any])
+    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
     @scala.inline
-    def deleteScoreRank: Self = this.set("scoreRank", js.undefined)
+    def setScoreValue(value: String): Self = StObject.set(x, "scoreValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreTag(value: String): Self = this.set("scoreTag", value.asInstanceOf[js.Any])
+    def setScoreValueUndefined: Self = StObject.set(x, "scoreValue", js.undefined)
     
     @scala.inline
-    def deleteScoreTag: Self = this.set("scoreTag", js.undefined)
+    def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreValue(value: String): Self = this.set("scoreValue", value.asInstanceOf[js.Any])
+    def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
     
     @scala.inline
-    def deleteScoreValue: Self = this.set("scoreValue", js.undefined)
+    def setWriteTimestampMillis(value: String): Self = StObject.set(x, "writeTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSpan(value: String): Self = this.set("timeSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSpan: Self = this.set("timeSpan", js.undefined)
-    
-    @scala.inline
-    def setWriteTimestampMillis(value: String): Self = this.set("writeTimestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteTimestampMillis: Self = this.set("writeTimestampMillis", js.undefined)
+    def setWriteTimestampMillisUndefined: Self = StObject.set(x, "writeTimestampMillis", js.undefined)
   }
 }

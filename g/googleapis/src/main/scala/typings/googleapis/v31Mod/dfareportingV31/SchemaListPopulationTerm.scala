@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Remarketing List Population Rule Term.
   */
 @js.native
-trait SchemaListPopulationTerm extends js.Object {
+trait SchemaListPopulationTerm extends StObject {
   
   /**
     * Will be true if the term should check if the user is in the list and
@@ -76,66 +77,54 @@ object SchemaListPopulationTerm {
   }
   
   @scala.inline
-  implicit class SchemaListPopulationTermOps[Self <: SchemaListPopulationTerm] (val x: Self) extends AnyVal {
+  implicit class SchemaListPopulationTermMutableBuilder[Self <: SchemaListPopulationTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNegation(value: Boolean): Self = StObject.set(x, "negation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: Boolean): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setNegationUndefined: Self = StObject.set(x, "negation", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegation(value: Boolean): Self = this.set("negation", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteNegation: Self = this.set("negation", js.undefined)
+    def setRemarketingListId(value: String): Self = StObject.set(x, "remarketingListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setRemarketingListIdUndefined: Self = StObject.set(x, "remarketingListId", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarketingListId(value: String): Self = this.set("remarketingListId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRemarketingListId: Self = this.set("remarketingListId", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVariableFriendlyName(value: String): Self = StObject.set(x, "variableFriendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setVariableFriendlyNameUndefined: Self = StObject.set(x, "variableFriendlyName", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariableFriendlyName(value: String): Self = this.set("variableFriendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableFriendlyName: Self = this.set("variableFriendlyName", js.undefined)
-    
-    @scala.inline
-    def setVariableName(value: String): Self = this.set("variableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableName: Self = this.set("variableName", js.undefined)
+    def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
   }
 }

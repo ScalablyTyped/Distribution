@@ -2,17 +2,20 @@ package typings.playable
 
 import typings.playable.subtitlesTypesMod.ISubtitlesViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/subtitles/subtitles.view", JSImport.Namespace)
-@js.native
-object subtitlesViewMod extends js.Object {
+object subtitlesViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/subtitles/subtitles.view", JSImport.Default)
+  @js.native
+  class default () extends SubtitlesView
   
   @js.native
   trait SubtitlesView
-    extends typings.playable.stylableMod.default[ISubtitlesViewStyles] {
+    extends typings.playable.viewMod.default[ISubtitlesViewStyles] {
     
     @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
@@ -38,7 +41,4 @@ object subtitlesViewMod extends js.Object {
     
     def showSubtitles(subtitles: js.Array[String]): Unit = js.native
   }
-  
-  @js.native
-  class default () extends SubtitlesView
 }

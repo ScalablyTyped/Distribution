@@ -15,12 +15,13 @@ import typings.mongodb.anon.UpdateOneOptionsmultibool
 import typings.mongodb.anon.`1`
 import typings.mongodb.mongodbStrings._id
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
+trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends StObject {
   
   def aggregate[T](): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#aggregate */

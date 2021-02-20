@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartnerWatermarking extends js.Object {
+trait PartnerWatermarking extends StObject {
   
   /**
     * For forensic video watermarking, MediaConvert supports Nagra NexGuard File Marker watermarking. MediaConvert supports both PreRelease Content (NGPR/G2) and OTT Streaming workflows.
@@ -21,24 +22,12 @@ object PartnerWatermarking {
   }
   
   @scala.inline
-  implicit class PartnerWatermarkingOps[Self <: PartnerWatermarking] (val x: Self) extends AnyVal {
+  implicit class PartnerWatermarkingMutableBuilder[Self <: PartnerWatermarking] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNexguardFileMarkerSettings(value: NexGuardFileMarkerSettings): Self = StObject.set(x, "NexguardFileMarkerSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNexguardFileMarkerSettings(value: NexGuardFileMarkerSettings): Self = this.set("NexguardFileMarkerSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNexguardFileMarkerSettings: Self = this.set("NexguardFileMarkerSettings", js.undefined)
+    def setNexguardFileMarkerSettingsUndefined: Self = StObject.set(x, "NexguardFileMarkerSettings", js.undefined)
   }
 }

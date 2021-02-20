@@ -7,16 +7,16 @@ import typings.ndnJs.faceMod.InterestFilter
 import typings.ndnJs.faceMod.OnInterestCallback
 import typings.ndnJs.interestMod.Interest
 import typings.ndnJs.nameMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js/memory-content-cache", JSImport.Namespace)
-@js.native
-object memoryContentCacheMod extends js.Object {
+object memoryContentCacheMod {
   
+  @JSImport("ndn-js/memory-content-cache", "MemoryContentCache")
   @js.native
-  class MemoryContentCache protected () extends js.Object {
+  class MemoryContentCache protected () extends StObject {
     def this(face: Face) = this()
     def this(face: Face, cleanupIntervalMilliseconds: Double) = this()
     

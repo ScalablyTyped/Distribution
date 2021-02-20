@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;High Price&quot;, &quot;Low Price&quot; and &quot;Close Price&quot;.
   */
 @js.native
-trait SchemaBasicChartSeries extends js.Object {
+trait SchemaBasicChartSeries extends StObject {
   
   /**
     * The color for elements (i.e. bars, lines, points) associated with this
@@ -56,48 +57,36 @@ object SchemaBasicChartSeries {
   }
   
   @scala.inline
-  implicit class SchemaBasicChartSeriesOps[Self <: SchemaBasicChartSeries] (val x: Self) extends AnyVal {
+  implicit class SchemaBasicChartSeriesMutableBuilder[Self <: SchemaBasicChartSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: SchemaColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineStyle(value: SchemaLineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: SchemaColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSeries(value: SchemaChartData): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: SchemaLineStyle): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setTargetAxis(value: String): Self = StObject.set(x, "targetAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: SchemaChartData): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setTargetAxisUndefined: Self = StObject.set(x, "targetAxis", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetAxis(value: String): Self = this.set("targetAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetAxis: Self = this.set("targetAxis", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

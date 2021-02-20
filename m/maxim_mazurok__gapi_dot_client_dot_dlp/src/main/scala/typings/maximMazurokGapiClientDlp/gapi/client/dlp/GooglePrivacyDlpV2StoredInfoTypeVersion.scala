@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2StoredInfoTypeVersion extends js.Object {
+trait GooglePrivacyDlpV2StoredInfoTypeVersion extends StObject {
   
   /** StoredInfoType configuration. */
   var config: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeConfig] = js.native
@@ -36,51 +37,39 @@ object GooglePrivacyDlpV2StoredInfoTypeVersion {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2StoredInfoTypeVersionOps[Self <: GooglePrivacyDlpV2StoredInfoTypeVersion] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2StoredInfoTypeVersionMutableBuilder[Self <: GooglePrivacyDlpV2StoredInfoTypeVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: GooglePrivacyDlpV2StoredInfoTypeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: GooglePrivacyDlpV2StoredInfoTypeConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setErrors(value: js.Array[GooglePrivacyDlpV2Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setErrorsVarargs(value: GooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: GooglePrivacyDlpV2Error*): Self = this.set("errors", js.Array(value :_*))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[GooglePrivacyDlpV2Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setStats(value: GooglePrivacyDlpV2StoredInfoTypeStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setStats(value: GooglePrivacyDlpV2StoredInfoTypeStats): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
   }
 }

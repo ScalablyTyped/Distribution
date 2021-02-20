@@ -1,15 +1,14 @@
 package typings.vizJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Module extends js.Object {
+  trait Module extends StObject {
     
     var Module: typings.vizJs.Module = js.native
     

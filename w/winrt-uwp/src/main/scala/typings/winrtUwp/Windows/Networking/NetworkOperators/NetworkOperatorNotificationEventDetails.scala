@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Devices.Sms.ISmsMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network operator notification. */
 @js.native
-trait NetworkOperatorNotificationEventDetails extends js.Object {
+trait NetworkOperatorNotificationEventDetails extends StObject {
   
   /**
     * Used to indicate if tethering is permitted for a device. If it is not, a reason can be provided.
@@ -51,39 +52,27 @@ object NetworkOperatorNotificationEventDetails {
   }
   
   @scala.inline
-  implicit class NetworkOperatorNotificationEventDetailsOps[Self <: NetworkOperatorNotificationEventDetails] (val x: Self) extends AnyVal {
+  implicit class NetworkOperatorNotificationEventDetailsMutableBuilder[Self <: NetworkOperatorNotificationEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizeTethering(value: (Boolean, String) => Unit): Self = StObject.set(x, "authorizeTethering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizeTethering(value: (Boolean, String) => Unit): Self = this.set("authorizeTethering", js.Any.fromFunction2(value))
+    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: Double): Self = this.set("encodingType", value.asInstanceOf[js.Any])
+    def setNotificationType(value: NetworkOperatorEventMessageType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkAccountId(value: String): Self = this.set("networkAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotificationType(value: NetworkOperatorEventMessageType): Self = this.set("notificationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleId(value: String): Self = this.set("ruleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmsMessage(value: ISmsMessage): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
+    def setSmsMessage(value: ISmsMessage): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
   }
 }

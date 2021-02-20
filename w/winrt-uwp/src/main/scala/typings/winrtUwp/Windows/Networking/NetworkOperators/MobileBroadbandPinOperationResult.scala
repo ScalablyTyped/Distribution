@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a mobile broadband PIN operation. */
 @js.native
-trait MobileBroadbandPinOperationResult extends js.Object {
+trait MobileBroadbandPinOperationResult extends StObject {
   
   /** Gets the number of PIN entry attempts remaining until the mobile broadband PIN is blocked. */
   var attemptsRemaining: Double = js.native
@@ -23,24 +24,12 @@ object MobileBroadbandPinOperationResult {
   }
   
   @scala.inline
-  implicit class MobileBroadbandPinOperationResultOps[Self <: MobileBroadbandPinOperationResult] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandPinOperationResultMutableBuilder[Self <: MobileBroadbandPinOperationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttemptsRemaining(value: Double): Self = this.set("attemptsRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSuccessful(value: Boolean): Self = this.set("isSuccessful", value.asInstanceOf[js.Any])
+    def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.ibmCloudSdkCore.helperMod.FileObject
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Parameters for the `classify` operation. */
 @js.native
-trait ClassifyParams extends js.Object {
+trait ClassifyParams extends StObject {
   
   /** The desired language of parts of the response. See the response for details. */
   var accept_language: js.UndefOr[AcceptLanguage | String] = js.native
@@ -52,84 +53,72 @@ object ClassifyParams {
   }
   
   @scala.inline
-  implicit class ClassifyParamsOps[Self <: ClassifyParams] (val x: Self) extends AnyVal {
+  implicit class ClassifyParamsMutableBuilder[Self <: ClassifyParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassifier_ids(value: js.Array[String]): Self = StObject.set(x, "classifier_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = this.set("accept_language", value.asInstanceOf[js.Any])
+    def setClassifier_idsUndefined: Self = StObject.set(x, "classifier_ids", js.undefined)
     
     @scala.inline
-    def deleteAccept_language: Self = this.set("accept_language", js.undefined)
+    def setClassifier_idsVarargs(value: String*): Self = StObject.set(x, "classifier_ids", js.Array(value :_*))
     
     @scala.inline
-    def setClassifier_idsVarargs(value: String*): Self = this.set("classifier_ids", js.Array(value :_*))
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifier_ids(value: js.Array[String]): Self = this.set("classifier_ids", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteClassifier_ids: Self = this.set("classifier_ids", js.undefined)
+    def setImages_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "images_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setImages_fileUndefined: Self = StObject.set(x, "images_file", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setImages_file_content_type(value: String): Self = StObject.set(x, "images_file_content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages_file(value: ReadableStream | FileObject | Buffer): Self = this.set("images_file", value.asInstanceOf[js.Any])
+    def setImages_file_content_typeUndefined: Self = StObject.set(x, "images_file_content_type", js.undefined)
     
     @scala.inline
-    def deleteImages_file: Self = this.set("images_file", js.undefined)
+    def setImages_filename(value: String): Self = StObject.set(x, "images_filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages_file_content_type(value: String): Self = this.set("images_file_content_type", value.asInstanceOf[js.Any])
+    def setImages_filenameUndefined: Self = StObject.set(x, "images_filename", js.undefined)
     
     @scala.inline
-    def deleteImages_file_content_type: Self = this.set("images_file_content_type", js.undefined)
+    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages_filename(value: String): Self = this.set("images_filename", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
     @scala.inline
-    def deleteImages_filename: Self = this.set("images_filename", js.undefined)
+    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def deleteOwners: Self = this.set("owners", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

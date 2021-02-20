@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerAssignedEvent extends js.Object {
+trait WorkerAssignedEvent extends StObject {
   
   /** The worker's instance name. */
   var instance: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object WorkerAssignedEvent {
   }
   
   @scala.inline
-  implicit class WorkerAssignedEventOps[Self <: WorkerAssignedEvent] (val x: Self) extends AnyVal {
+  implicit class WorkerAssignedEventMutableBuilder[Self <: WorkerAssignedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
-    
-    @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

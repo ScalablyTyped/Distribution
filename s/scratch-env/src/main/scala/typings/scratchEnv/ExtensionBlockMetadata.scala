@@ -2,13 +2,14 @@ package typings.scratchEnv
 
 import typings.scratchEnv.Scratch.BlockType
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** All the metadata needed to register an extension block. */
 @js.native
-trait ExtensionBlockMetadata extends js.Object {
+trait ExtensionBlockMetadata extends StObject {
   
   /** Map of argument placeholder to metadata about each arg. */
   var arguments: js.UndefOr[Record[String, ExtensionArgumentMetadata]] = js.native
@@ -55,81 +56,69 @@ object ExtensionBlockMetadata {
   }
   
   @scala.inline
-  implicit class ExtensionBlockMetadataOps[Self <: ExtensionBlockMetadata] (val x: Self) extends AnyVal {
+  implicit class ExtensionBlockMetadataMutableBuilder[Self <: ExtensionBlockMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: Record[String, ExtensionArgumentMetadata]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockType(value: ValueOf[BlockType]): Self = StObject.set(x, "blockType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockType(value: ValueOf[BlockType]): Self = this.set("blockType", value.asInstanceOf[js.Any])
+    def setBranchCount(value: Double): Self = StObject.set(x, "branchCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpcode(value: String): Self = this.set("opcode", value.asInstanceOf[js.Any])
+    def setBranchCountUndefined: Self = StObject.set(x, "branchCount", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setDisableMonitor(value: Boolean): Self = StObject.set(x, "disableMonitor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: Record[String, ExtensionArgumentMetadata]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setDisableMonitorUndefined: Self = StObject.set(x, "disableMonitor", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchCount(value: Double): Self = this.set("branchCount", value.asInstanceOf[js.Any])
+    def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
     
     @scala.inline
-    def deleteBranchCount: Self = this.set("branchCount", js.undefined)
+    def setHideFromPalette(value: Boolean): Self = StObject.set(x, "hideFromPalette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMonitor(value: Boolean): Self = this.set("disableMonitor", value.asInstanceOf[js.Any])
+    def setHideFromPaletteUndefined: Self = StObject.set(x, "hideFromPalette", js.undefined)
     
     @scala.inline
-    def deleteDisableMonitor: Self = this.set("disableMonitor", js.undefined)
+    def setIsEdgeActivated(value: Boolean): Self = StObject.set(x, "isEdgeActivated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunc(value: String): Self = this.set("func", value.asInstanceOf[js.Any])
+    def setIsEdgeActivatedUndefined: Self = StObject.set(x, "isEdgeActivated", js.undefined)
     
     @scala.inline
-    def deleteFunc: Self = this.set("func", js.undefined)
+    def setIsTerminal(value: Boolean): Self = StObject.set(x, "isTerminal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideFromPalette(value: Boolean): Self = this.set("hideFromPalette", value.asInstanceOf[js.Any])
+    def setIsTerminalUndefined: Self = StObject.set(x, "isTerminal", js.undefined)
     
     @scala.inline
-    def deleteHideFromPalette: Self = this.set("hideFromPalette", js.undefined)
+    def setOpcode(value: String): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEdgeActivated(value: Boolean): Self = this.set("isEdgeActivated", value.asInstanceOf[js.Any])
+    def setReporterScope(value: ReporterScope): Self = StObject.set(x, "reporterScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEdgeActivated: Self = this.set("isEdgeActivated", js.undefined)
+    def setReporterScopeUndefined: Self = StObject.set(x, "reporterScope", js.undefined)
     
     @scala.inline
-    def setIsTerminal(value: Boolean): Self = this.set("isTerminal", value.asInstanceOf[js.Any])
+    def setShouldRestartExistingThreads(value: Boolean): Self = StObject.set(x, "shouldRestartExistingThreads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTerminal: Self = this.set("isTerminal", js.undefined)
+    def setShouldRestartExistingThreadsUndefined: Self = StObject.set(x, "shouldRestartExistingThreads", js.undefined)
     
     @scala.inline
-    def setReporterScope(value: ReporterScope): Self = this.set("reporterScope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReporterScope: Self = this.set("reporterScope", js.undefined)
-    
-    @scala.inline
-    def setShouldRestartExistingThreads(value: Boolean): Self = this.set("shouldRestartExistingThreads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldRestartExistingThreads: Self = this.set("shouldRestartExistingThreads", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

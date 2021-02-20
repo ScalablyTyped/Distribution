@@ -1,11 +1,12 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IParseProvider extends js.Object {
+trait IParseProvider extends StObject {
   
   /**
     * Configure $parse service to add literal values that will be present as literal at expressions.

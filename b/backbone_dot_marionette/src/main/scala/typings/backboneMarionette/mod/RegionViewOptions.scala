@@ -1,11 +1,12 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionViewOptions extends js.Object {
+trait RegionViewOptions extends StObject {
   
   /**
     * DEPRECATED: If you replace the current view with a new view by calling show, by
@@ -23,24 +24,12 @@ object RegionViewOptions {
   }
   
   @scala.inline
-  implicit class RegionViewOptionsOps[Self <: RegionViewOptions] (val x: Self) extends AnyVal {
+  implicit class RegionViewOptionsMutableBuilder[Self <: RegionViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreventDestroy(value: Boolean): Self = StObject.set(x, "preventDestroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreventDestroy(value: Boolean): Self = this.set("preventDestroy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventDestroy: Self = this.set("preventDestroy", js.undefined)
+    def setPreventDestroyUndefined: Self = StObject.set(x, "preventDestroy", js.undefined)
   }
 }

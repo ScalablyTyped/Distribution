@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectEntitiesRequest extends js.Object {
+trait DetectEntitiesRequest extends StObject {
   
   /**
     * The Amazon Resource Name of an endpoint that is associated with a custom entity recognition model. Provide an endpoint if you want to detect entities by using your own custom model instead of the default model that is used by Amazon Comprehend. If you specify an endpoint, Amazon Comprehend uses the language of your custom model, and it ignores any language code that you provide in your request.
@@ -31,33 +32,21 @@ object DetectEntitiesRequest {
   }
   
   @scala.inline
-  implicit class DetectEntitiesRequestOps[Self <: DetectEntitiesRequest] (val x: Self) extends AnyVal {
+  implicit class DetectEntitiesRequestMutableBuilder[Self <: DetectEntitiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointArn(value: EntityRecognizerEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: CustomerInputString): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def setEndpointArn(value: EntityRecognizerEndpointArn): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointArn: Self = this.set("EndpointArn", js.undefined)
-    
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

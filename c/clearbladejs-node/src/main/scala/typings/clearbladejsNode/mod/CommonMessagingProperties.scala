@@ -1,11 +1,12 @@
 package typings.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonMessagingProperties extends js.Object {
+trait CommonMessagingProperties extends StObject {
   
   var hosts: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object CommonMessagingProperties {
   }
   
   @scala.inline
-  implicit class CommonMessagingPropertiesOps[Self <: CommonMessagingProperties] (val x: Self) extends AnyVal {
+  implicit class CommonMessagingPropertiesMutableBuilder[Self <: CommonMessagingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPorts(value: String): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: String): Self = this.set("hosts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHosts: Self = this.set("hosts", js.undefined)
-    
-    @scala.inline
-    def setPorts(value: String): Self = this.set("ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
   }
 }

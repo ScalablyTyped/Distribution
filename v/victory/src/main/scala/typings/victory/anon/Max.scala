@@ -1,12 +1,13 @@
 package typings.victory.anon
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Max extends js.Object {
+trait Max extends StObject {
   
   var max: js.UndefOr[CSSProperties] = js.native
   
@@ -37,78 +38,66 @@ object Max {
   }
   
   @scala.inline
-  implicit class MaxOps[Self <: Max] (val x: Self) extends AnyVal {
+  implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: CSSProperties): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLabels(value: CSSProperties): Self = StObject.set(x, "maxLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxLabelsUndefined: Self = StObject.set(x, "maxLabels", js.undefined)
     
     @scala.inline
-    def setMax(value: CSSProperties): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMedian(value: CSSProperties): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLabels(value: CSSProperties): Self = this.set("maxLabels", value.asInstanceOf[js.Any])
+    def setMedianLabels(value: CSSProperties): Self = StObject.set(x, "medianLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLabels: Self = this.set("maxLabels", js.undefined)
+    def setMedianLabelsUndefined: Self = StObject.set(x, "medianLabels", js.undefined)
     
     @scala.inline
-    def setMedian(value: CSSProperties): Self = this.set("median", value.asInstanceOf[js.Any])
+    def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
     
     @scala.inline
-    def deleteMedian: Self = this.set("median", js.undefined)
+    def setMin(value: CSSProperties): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedianLabels(value: CSSProperties): Self = this.set("medianLabels", value.asInstanceOf[js.Any])
+    def setMinLabels(value: CSSProperties): Self = StObject.set(x, "minLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedianLabels: Self = this.set("medianLabels", js.undefined)
+    def setMinLabelsUndefined: Self = StObject.set(x, "minLabels", js.undefined)
     
     @scala.inline
-    def setMin(value: CSSProperties): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setQ1(value: CSSProperties): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLabels(value: CSSProperties): Self = this.set("minLabels", value.asInstanceOf[js.Any])
+    def setQ1Labels(value: CSSProperties): Self = StObject.set(x, "q1Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinLabels: Self = this.set("minLabels", js.undefined)
+    def setQ1LabelsUndefined: Self = StObject.set(x, "q1Labels", js.undefined)
     
     @scala.inline
-    def setQ1(value: CSSProperties): Self = this.set("q1", value.asInstanceOf[js.Any])
+    def setQ1Undefined: Self = StObject.set(x, "q1", js.undefined)
     
     @scala.inline
-    def deleteQ1: Self = this.set("q1", js.undefined)
+    def setQ3(value: CSSProperties): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ1Labels(value: CSSProperties): Self = this.set("q1Labels", value.asInstanceOf[js.Any])
+    def setQ3Labels(value: CSSProperties): Self = StObject.set(x, "q3Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQ1Labels: Self = this.set("q1Labels", js.undefined)
+    def setQ3LabelsUndefined: Self = StObject.set(x, "q3Labels", js.undefined)
     
     @scala.inline
-    def setQ3(value: CSSProperties): Self = this.set("q3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ3: Self = this.set("q3", js.undefined)
-    
-    @scala.inline
-    def setQ3Labels(value: CSSProperties): Self = this.set("q3Labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ3Labels: Self = this.set("q3Labels", js.undefined)
+    def setQ3Undefined: Self = StObject.set(x, "q3", js.undefined)
   }
 }

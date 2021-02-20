@@ -20,14 +20,14 @@ import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Immutable
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/renderTargetTexture", JSImport.Namespace)
-@js.native
-object renderTargetTextureMod extends js.Object {
+object renderTargetTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/renderTargetTexture", "RenderTargetTexture")
   @js.native
   class RenderTargetTexture protected () extends Texture {
     /**
@@ -457,23 +457,28 @@ object renderTargetTextureMod extends js.Object {
     var useCameraPostProcesses: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object RenderTargetTexture extends js.Object {
+  object RenderTargetTexture {
     
     /**
       * The texture will only be rendered once which can be useful to improve performance if everything in your render is static for instance.
       */
+    @JSImport("babylonjs/Materials/Textures/renderTargetTexture", "RenderTargetTexture.REFRESHRATE_RENDER_ONCE")
+    @js.native
     val REFRESHRATE_RENDER_ONCE: Double = js.native
     
     /**
       * The texture will only be rendered rendered every frame and is recomended for dynamic contents.
       */
+    @JSImport("babylonjs/Materials/Textures/renderTargetTexture", "RenderTargetTexture.REFRESHRATE_RENDER_ONEVERYFRAME")
+    @js.native
     val REFRESHRATE_RENDER_ONEVERYFRAME: Double = js.native
     
     /**
       * The texture will be rendered every 2 frames which could be enough if your dynamic objects are not
       * the central point of your effect and can save a lot of performances.
       */
+    @JSImport("babylonjs/Materials/Textures/renderTargetTexture", "RenderTargetTexture.REFRESHRATE_RENDER_ONEVERYTWOFRAMES")
+    @js.native
     val REFRESHRATE_RENDER_ONEVERYTWOFRAMES: Double = js.native
   }
 }

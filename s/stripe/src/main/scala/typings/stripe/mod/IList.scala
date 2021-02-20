@@ -1,11 +1,12 @@
 package typings.stripe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IList[T] extends js.Object {
+trait IList[T] extends StObject {
   
   /**
     * An array containing the actual response elements, paginated by any request parameters.
@@ -43,39 +44,27 @@ object IList {
   }
   
   @scala.inline
-  implicit class IListOps[Self <: IList[_], T] (val x: Self with IList[T]) extends AnyVal {
+  implicit class IListMutableBuilder[Self <: IList[_], T] (val x: Self with IList[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_more(value: Boolean): Self = this.set("has_more", value.asInstanceOf[js.Any])
+    def setTotal_countUndefined: Self = StObject.set(x, "total_count", js.undefined)
     
     @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_count: Self = this.set("total_count", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

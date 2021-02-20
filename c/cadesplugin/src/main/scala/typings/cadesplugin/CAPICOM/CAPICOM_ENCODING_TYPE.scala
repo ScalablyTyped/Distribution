@@ -3,12 +3,13 @@ package typings.cadesplugin.CAPICOM
 import typings.cadesplugin.cadespluginNumbers.`-1`
 import typings.cadesplugin.cadespluginNumbers.`0`
 import typings.cadesplugin.cadespluginNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAPICOM_ENCODING_TYPE extends js.Object {
+trait CAPICOM_ENCODING_TYPE extends StObject {
   
   val CAPICOM_ENCODE_ANY: `-1` = js.native
   
@@ -25,27 +26,15 @@ object CAPICOM_ENCODING_TYPE {
   }
   
   @scala.inline
-  implicit class CAPICOM_ENCODING_TYPEOps[Self <: CAPICOM_ENCODING_TYPE] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_ENCODING_TYPEMutableBuilder[Self <: CAPICOM_ENCODING_TYPE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_ENCODE_ANY(value: `-1`): Self = StObject.set(x, "CAPICOM_ENCODE_ANY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_ENCODE_BASE64(value: `0`): Self = StObject.set(x, "CAPICOM_ENCODE_BASE64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCAPICOM_ENCODE_ANY(value: `-1`): Self = this.set("CAPICOM_ENCODE_ANY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_ENCODE_BASE64(value: `0`): Self = this.set("CAPICOM_ENCODE_BASE64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_ENCODE_BINARY(value: `1`): Self = this.set("CAPICOM_ENCODE_BINARY", value.asInstanceOf[js.Any])
+    def setCAPICOM_ENCODE_BINARY(value: `1`): Self = StObject.set(x, "CAPICOM_ENCODE_BINARY", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChunkSize extends js.Object {
+trait ChunkSize extends StObject {
   
   var chunkSize: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object ChunkSize {
   }
   
   @scala.inline
-  implicit class ChunkSizeOps[Self <: ChunkSize] (val x: Self) extends AnyVal {
+  implicit class ChunkSizeMutableBuilder[Self <: ChunkSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
-    
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
   }
 }

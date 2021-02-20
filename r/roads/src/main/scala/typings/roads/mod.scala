@@ -2,100 +2,139 @@ package typings.roads
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.roads.anon.CacheMaxAge
 import typings.roads.buildMod.RoadsBuildOptions
-import typings.roads.responseMod.default
 import typings.roads.roadMod.ResponseMiddleware
+import typings.roads.simpleRouterMod.default
 import typings.std.HTMLElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("roads", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def build(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = js.native
-  
-  @js.native
-  object Middleware extends js.Object {
+  object Middleware {
     
+    @JSImport("roads", "Middleware")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("roads", "Middleware.SimpleRouter")
+    @js.native
+    /**
+      * @param {Road} [road] - The road that will receive the SimpleRouter middleware
+      */
+    class SimpleRouter () extends default {
+      def this(road: typings.roads.roadMod.default) = this()
+    }
+    @JSImport("roads", "Middleware.SimpleRouter")
+    @js.native
+    def SimpleRouter: Instantiable1[/* road */ js.UndefOr[typings.roads.roadMod.default], default] = js.native
+    @scala.inline
+    def SimpleRouter_=(x: Instantiable1[/* road */ js.UndefOr[typings.roads.roadMod.default], default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SimpleRouter")(x.asInstanceOf[js.Any])
+    
+    @JSImport("roads", "Middleware.applyToContext")
+    @js.native
+    def applyToContext: js.Function2[/* key */ String, /* val */ js.Any, typings.roads.roadMod.Middleware] = js.native
+    @JSImport("roads", "Middleware.applyToContext")
+    @js.native
     def applyToContext(key: String, `val`: js.Any): typings.roads.roadMod.Middleware = js.native
-    @JSName("applyToContext")
-    var applyToContext_Original: js.Function2[/* key */ String, /* val */ js.Any, typings.roads.roadMod.Middleware] = js.native
+    @scala.inline
+    def applyToContext_=(x: js.Function2[/* key */ String, /* val */ js.Any, typings.roads.roadMod.Middleware]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applyToContext")(x.asInstanceOf[js.Any])
     
+    @JSImport("roads", "Middleware.cookie")
+    @js.native
+    def cookie: typings.roads.roadMod.Middleware = js.native
+    @JSImport("roads", "Middleware.cookie")
+    @js.native
     def cookie(
       method: String,
       path: String,
       body: String,
       headers: StringDictionary[js.Any],
       next: ResponseMiddleware
-    ): js.Promise[default] = js.native
-    @JSName("cookie")
-    var cookie_Original: typings.roads.roadMod.Middleware = js.native
+    ): js.Promise[typings.roads.responseMod.default] = js.native
+    @scala.inline
+    def cookie_=(x: typings.roads.roadMod.Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookie")(x.asInstanceOf[js.Any])
     
+    @JSImport("roads", "Middleware.cors")
+    @js.native
+    def cors: js.Function1[/* options */ CacheMaxAge, typings.roads.roadMod.Middleware] = js.native
+    @JSImport("roads", "Middleware.cors")
+    @js.native
     def cors(options: CacheMaxAge): typings.roads.roadMod.Middleware = js.native
-    @JSName("cors")
-    var cors_Original: js.Function1[/* options */ CacheMaxAge, typings.roads.roadMod.Middleware] = js.native
+    @scala.inline
+    def cors_=(x: js.Function1[/* options */ CacheMaxAge, typings.roads.roadMod.Middleware]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cors")(x.asInstanceOf[js.Any])
     
+    @JSImport("roads", "Middleware.killSlash")
+    @js.native
+    def killSlash: typings.roads.roadMod.Middleware = js.native
+    @JSImport("roads", "Middleware.killSlash")
+    @js.native
     def killSlash(
       method: String,
       path: String,
       body: String,
       headers: StringDictionary[js.Any],
       next: ResponseMiddleware
-    ): js.Promise[default] = js.native
-    @JSName("killSlash")
-    var killSlash_Original: typings.roads.roadMod.Middleware = js.native
+    ): js.Promise[typings.roads.responseMod.default] = js.native
+    @scala.inline
+    def killSlash_=(x: typings.roads.roadMod.Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("killSlash")(x.asInstanceOf[js.Any])
     
+    @JSImport("roads", "Middleware.parseBody")
+    @js.native
+    def parseBody: typings.roads.roadMod.Middleware = js.native
+    @JSImport("roads", "Middleware.parseBody")
+    @js.native
     def parseBody(
       method: String,
       path: String,
       body: String,
       headers: StringDictionary[js.Any],
       next: ResponseMiddleware
-    ): js.Promise[default] = js.native
-    @JSName("parseBody")
-    var parseBody_Original: typings.roads.roadMod.Middleware = js.native
+    ): js.Promise[typings.roads.responseMod.default] = js.native
+    @scala.inline
+    def parseBody_=(x: typings.roads.roadMod.Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseBody")(x.asInstanceOf[js.Any])
     
-    def reroute(key: String, road: typings.roads.roadMod.default): typings.roads.roadMod.Middleware = js.native
-    @JSName("reroute")
-    var reroute_Original: js.Function2[
+    @JSImport("roads", "Middleware.reroute")
+    @js.native
+    def reroute: js.Function2[
         /* key */ String, 
         /* road */ typings.roads.roadMod.default, 
         typings.roads.roadMod.Middleware
       ] = js.native
+    @JSImport("roads", "Middleware.reroute")
+    @js.native
+    def reroute(key: String, road: typings.roads.roadMod.default): typings.roads.roadMod.Middleware = js.native
+    @scala.inline
+    def reroute_=(
+      x: js.Function2[
+          /* key */ String, 
+          /* road */ typings.roads.roadMod.default, 
+          typings.roads.roadMod.Middleware
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reroute")(x.asInstanceOf[js.Any])
     
+    @JSImport("roads", "Middleware.setTitle")
+    @js.native
+    def setTitle: typings.roads.roadMod.Middleware = js.native
+    @JSImport("roads", "Middleware.setTitle")
+    @js.native
     def setTitle(
       method: String,
       path: String,
       body: String,
       headers: StringDictionary[js.Any],
       next: ResponseMiddleware
-    ): js.Promise[default] = js.native
-    @JSName("setTitle")
-    var setTitle_Original: typings.roads.roadMod.Middleware = js.native
-    
-    @js.native
-    /**
-      * @param {Road} [road] - The road that will receive the SimpleRouter middleware
-      */
-    class SimpleRouter ()
-      extends typings.roads.simpleRouterMod.default {
-      def this(road: typings.roads.roadMod.default) = this()
-    }
-    @js.native
-    object SimpleRouter
-      extends TopLevel[
-              Instantiable1[
-                /* road */ js.UndefOr[typings.roads.roadMod.default], 
-                typings.roads.simpleRouterMod.default
-              ]
-            ]
+    ): js.Promise[typings.roads.responseMod.default] = js.native
+    @scala.inline
+    def setTitle_=(x: typings.roads.roadMod.Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setTitle")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("roads", "Request")
   @js.native
   class Request protected ()
     extends typings.roads.requestMod.default {
@@ -109,8 +148,10 @@ object mod extends js.Object {
     def this(secure: Boolean, host: String, port: Double) = this()
   }
   
+  @JSImport("roads", "Response")
   @js.native
-  class Response protected () extends default {
+  class Response protected ()
+    extends typings.roads.responseMod.default {
     /**
       * Creates a new Response object.
       *
@@ -124,6 +165,7 @@ object mod extends js.Object {
     def this(body: String, status: Double, headers: js.Object) = this()
   }
   
+  @JSImport("roads", "Road")
   @js.native
   /**
     * Road Constructor
@@ -133,6 +175,7 @@ object mod extends js.Object {
   class Road ()
     extends typings.roads.roadMod.default
   
+  @JSImport("roads", "RoadsPJAX")
   @js.native
   class RoadsPJAX protected ()
     extends typings.roads.pjaxMod.default {
@@ -145,4 +188,8 @@ object mod extends js.Object {
       */
     def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
   }
+  
+  @JSImport("roads", "build")
+  @js.native
+  def build(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = js.native
 }

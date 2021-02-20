@@ -2,21 +2,16 @@ package typings.webcola
 
 import typings.webcola.anon.DesiredCenter
 import typings.webcola.anon.LowerBound
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcola/dist/src/vpsc", JSImport.Namespace)
-@js.native
-object vpscMod extends js.Object {
+object vpscMod {
   
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter]): LowerBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: js.UndefOr[scala.Nothing], upperBound: Double): LowerBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double): LowerBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double, upperBound: Double): LowerBound = js.native
-  
+  @JSImport("webcola/dist/src/vpsc", "Block")
   @js.native
-  class Block protected () extends js.Object {
+  class Block protected () extends StObject {
     def this(v: Variable) = this()
     
     var addVariable: js.Any = js.native
@@ -60,16 +55,26 @@ object vpscMod extends js.Object {
     var vars: js.Array[Variable] = js.native
   }
   /* static members */
-  @js.native
-  object Block extends js.Object {
+  object Block {
     
-    var createSplitBlock: js.Any = js.native
+    @JSImport("webcola/dist/src/vpsc", "Block")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("webcola/dist/src/vpsc", "Block.createSplitBlock")
+    @js.native
+    def createSplitBlock: js.Any = js.native
+    @scala.inline
+    def createSplitBlock_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webcola/dist/src/vpsc", "Block.split")
+    @js.native
     def split(c: Constraint): js.Array[Block] = js.native
   }
   
+  @JSImport("webcola/dist/src/vpsc", "Blocks")
   @js.native
-  class Blocks protected () extends js.Object {
+  class Blocks protected () extends StObject {
     def this(vs: js.Array[Variable]) = this()
     
     def cost(): Double = js.native
@@ -91,8 +96,9 @@ object vpscMod extends js.Object {
     var vs: js.Array[Variable] = js.native
   }
   
+  @JSImport("webcola/dist/src/vpsc", "Constraint")
   @js.native
-  class Constraint protected () extends js.Object {
+  class Constraint protected () extends StObject {
     def this(left: Variable, right: Variable, gap: Double) = this()
     def this(left: Variable, right: Variable, gap: Double, equality: Boolean) = this()
     
@@ -113,8 +119,9 @@ object vpscMod extends js.Object {
     var unsatisfiable: Boolean = js.native
   }
   
+  @JSImport("webcola/dist/src/vpsc", "PositionStats")
   @js.native
-  class PositionStats protected () extends js.Object {
+  class PositionStats protected () extends StObject {
     def this(scale: Double) = this()
     
     var A2: Double = js.native
@@ -130,8 +137,9 @@ object vpscMod extends js.Object {
     var scale: Double = js.native
   }
   
+  @JSImport("webcola/dist/src/vpsc", "Solver")
   @js.native
-  class Solver protected () extends js.Object {
+  class Solver protected () extends StObject {
     def this(vs: js.Array[Variable], cs: js.Array[Constraint]) = this()
     
     var bs: Blocks = js.native
@@ -155,16 +163,28 @@ object vpscMod extends js.Object {
     var vs: js.Array[Variable] = js.native
   }
   /* static members */
-  @js.native
-  object Solver extends js.Object {
+  object Solver {
     
-    var LAGRANGIAN_TOLERANCE: Double = js.native
+    @JSImport("webcola/dist/src/vpsc", "Solver")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ZERO_UPPERBOUND: Double = js.native
+    @JSImport("webcola/dist/src/vpsc", "Solver.LAGRANGIAN_TOLERANCE")
+    @js.native
+    def LAGRANGIAN_TOLERANCE: Double = js.native
+    @scala.inline
+    def LAGRANGIAN_TOLERANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAGRANGIAN_TOLERANCE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webcola/dist/src/vpsc", "Solver.ZERO_UPPERBOUND")
+    @js.native
+    def ZERO_UPPERBOUND: Double = js.native
+    @scala.inline
+    def ZERO_UPPERBOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO_UPPERBOUND")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("webcola/dist/src/vpsc", "Variable")
   @js.native
-  class Variable protected () extends js.Object {
+  class Variable protected () extends StObject {
     def this(desiredPosition: Double) = this()
     def this(desiredPosition: Double, weight: Double) = this()
     def this(desiredPosition: Double, weight: js.UndefOr[scala.Nothing], scale: Double) = this()
@@ -190,4 +210,17 @@ object vpscMod extends js.Object {
     
     var weight: Double = js.native
   }
+  
+  @JSImport("webcola/dist/src/vpsc", "removeOverlapInOneDimension")
+  @js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter]): LowerBound = js.native
+  @JSImport("webcola/dist/src/vpsc", "removeOverlapInOneDimension")
+  @js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: js.UndefOr[scala.Nothing], upperBound: Double): LowerBound = js.native
+  @JSImport("webcola/dist/src/vpsc", "removeOverlapInOneDimension")
+  @js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double): LowerBound = js.native
+  @JSImport("webcola/dist/src/vpsc", "removeOverlapInOneDimension")
+  @js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double, upperBound: Double): LowerBound = js.native
 }

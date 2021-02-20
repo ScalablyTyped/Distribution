@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISyntaxVisitor extends js.Object {
+trait ISyntaxVisitor extends StObject {
   
   def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
   
@@ -275,276 +276,264 @@ object ISyntaxVisitor {
   }
   
   @scala.inline
-  implicit class ISyntaxVisitorOps[Self <: ISyntaxVisitor] (val x: Self) extends AnyVal {
+  implicit class ISyntaxVisitorMutableBuilder[Self <: ISyntaxVisitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVisitArgumentList(value: ArgumentListSyntax => js.Any): Self = StObject.set(x, "visitArgumentList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVisitArrayLiteralExpression(value: ArrayLiteralExpressionSyntax => js.Any): Self = StObject.set(x, "visitArrayLiteralExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVisitArrayType(value: ArrayTypeSyntax => js.Any): Self = StObject.set(x, "visitArrayType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitArgumentList(value: ArgumentListSyntax => js.Any): Self = this.set("visitArgumentList", js.Any.fromFunction1(value))
+    def setVisitBinaryExpression(value: BinaryExpressionSyntax => js.Any): Self = StObject.set(x, "visitBinaryExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitArrayLiteralExpression(value: ArrayLiteralExpressionSyntax => js.Any): Self = this.set("visitArrayLiteralExpression", js.Any.fromFunction1(value))
+    def setVisitBlock(value: BlockSyntax => js.Any): Self = StObject.set(x, "visitBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitArrayType(value: ArrayTypeSyntax => js.Any): Self = this.set("visitArrayType", js.Any.fromFunction1(value))
+    def setVisitBreakStatement(value: BreakStatementSyntax => js.Any): Self = StObject.set(x, "visitBreakStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitBinaryExpression(value: BinaryExpressionSyntax => js.Any): Self = this.set("visitBinaryExpression", js.Any.fromFunction1(value))
+    def setVisitCallSignature(value: CallSignatureSyntax => js.Any): Self = StObject.set(x, "visitCallSignature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitBlock(value: BlockSyntax => js.Any): Self = this.set("visitBlock", js.Any.fromFunction1(value))
+    def setVisitCaseSwitchClause(value: CaseSwitchClauseSyntax => js.Any): Self = StObject.set(x, "visitCaseSwitchClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitBreakStatement(value: BreakStatementSyntax => js.Any): Self = this.set("visitBreakStatement", js.Any.fromFunction1(value))
+    def setVisitCastExpression(value: CastExpressionSyntax => js.Any): Self = StObject.set(x, "visitCastExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitCallSignature(value: CallSignatureSyntax => js.Any): Self = this.set("visitCallSignature", js.Any.fromFunction1(value))
+    def setVisitCatchClause(value: CatchClauseSyntax => js.Any): Self = StObject.set(x, "visitCatchClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitCaseSwitchClause(value: CaseSwitchClauseSyntax => js.Any): Self = this.set("visitCaseSwitchClause", js.Any.fromFunction1(value))
+    def setVisitClassDeclaration(value: ClassDeclarationSyntax => js.Any): Self = StObject.set(x, "visitClassDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitCastExpression(value: CastExpressionSyntax => js.Any): Self = this.set("visitCastExpression", js.Any.fromFunction1(value))
+    def setVisitConditionalExpression(value: ConditionalExpressionSyntax => js.Any): Self = StObject.set(x, "visitConditionalExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitCatchClause(value: CatchClauseSyntax => js.Any): Self = this.set("visitCatchClause", js.Any.fromFunction1(value))
+    def setVisitConstraint(value: ConstraintSyntax => js.Any): Self = StObject.set(x, "visitConstraint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitClassDeclaration(value: ClassDeclarationSyntax => js.Any): Self = this.set("visitClassDeclaration", js.Any.fromFunction1(value))
+    def setVisitConstructSignature(value: ConstructSignatureSyntax => js.Any): Self = StObject.set(x, "visitConstructSignature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitConditionalExpression(value: ConditionalExpressionSyntax => js.Any): Self = this.set("visitConditionalExpression", js.Any.fromFunction1(value))
+    def setVisitConstructorDeclaration(value: ConstructorDeclarationSyntax => js.Any): Self = StObject.set(x, "visitConstructorDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitConstraint(value: ConstraintSyntax => js.Any): Self = this.set("visitConstraint", js.Any.fromFunction1(value))
+    def setVisitConstructorType(value: ConstructorTypeSyntax => js.Any): Self = StObject.set(x, "visitConstructorType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitConstructSignature(value: ConstructSignatureSyntax => js.Any): Self = this.set("visitConstructSignature", js.Any.fromFunction1(value))
+    def setVisitContinueStatement(value: ContinueStatementSyntax => js.Any): Self = StObject.set(x, "visitContinueStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitConstructorDeclaration(value: ConstructorDeclarationSyntax => js.Any): Self = this.set("visitConstructorDeclaration", js.Any.fromFunction1(value))
+    def setVisitDebuggerStatement(value: DebuggerStatementSyntax => js.Any): Self = StObject.set(x, "visitDebuggerStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitConstructorType(value: ConstructorTypeSyntax => js.Any): Self = this.set("visitConstructorType", js.Any.fromFunction1(value))
+    def setVisitDefaultSwitchClause(value: DefaultSwitchClauseSyntax => js.Any): Self = StObject.set(x, "visitDefaultSwitchClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitContinueStatement(value: ContinueStatementSyntax => js.Any): Self = this.set("visitContinueStatement", js.Any.fromFunction1(value))
+    def setVisitDeleteExpression(value: DeleteExpressionSyntax => js.Any): Self = StObject.set(x, "visitDeleteExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitDebuggerStatement(value: DebuggerStatementSyntax => js.Any): Self = this.set("visitDebuggerStatement", js.Any.fromFunction1(value))
+    def setVisitDoStatement(value: DoStatementSyntax => js.Any): Self = StObject.set(x, "visitDoStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitDefaultSwitchClause(value: DefaultSwitchClauseSyntax => js.Any): Self = this.set("visitDefaultSwitchClause", js.Any.fromFunction1(value))
+    def setVisitElementAccessExpression(value: ElementAccessExpressionSyntax => js.Any): Self = StObject.set(x, "visitElementAccessExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitDeleteExpression(value: DeleteExpressionSyntax => js.Any): Self = this.set("visitDeleteExpression", js.Any.fromFunction1(value))
+    def setVisitElseClause(value: ElseClauseSyntax => js.Any): Self = StObject.set(x, "visitElseClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitDoStatement(value: DoStatementSyntax => js.Any): Self = this.set("visitDoStatement", js.Any.fromFunction1(value))
+    def setVisitEmptyStatement(value: EmptyStatementSyntax => js.Any): Self = StObject.set(x, "visitEmptyStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitElementAccessExpression(value: ElementAccessExpressionSyntax => js.Any): Self = this.set("visitElementAccessExpression", js.Any.fromFunction1(value))
+    def setVisitEnumDeclaration(value: EnumDeclarationSyntax => js.Any): Self = StObject.set(x, "visitEnumDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitElseClause(value: ElseClauseSyntax => js.Any): Self = this.set("visitElseClause", js.Any.fromFunction1(value))
+    def setVisitEnumElement(value: EnumElementSyntax => js.Any): Self = StObject.set(x, "visitEnumElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitEmptyStatement(value: EmptyStatementSyntax => js.Any): Self = this.set("visitEmptyStatement", js.Any.fromFunction1(value))
+    def setVisitEqualsValueClause(value: EqualsValueClauseSyntax => js.Any): Self = StObject.set(x, "visitEqualsValueClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitEnumDeclaration(value: EnumDeclarationSyntax => js.Any): Self = this.set("visitEnumDeclaration", js.Any.fromFunction1(value))
+    def setVisitExportAssignment(value: ExportAssignmentSyntax => js.Any): Self = StObject.set(x, "visitExportAssignment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitEnumElement(value: EnumElementSyntax => js.Any): Self = this.set("visitEnumElement", js.Any.fromFunction1(value))
+    def setVisitExpressionStatement(value: ExpressionStatementSyntax => js.Any): Self = StObject.set(x, "visitExpressionStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitEqualsValueClause(value: EqualsValueClauseSyntax => js.Any): Self = this.set("visitEqualsValueClause", js.Any.fromFunction1(value))
+    def setVisitExternalModuleReference(value: ExternalModuleReferenceSyntax => js.Any): Self = StObject.set(x, "visitExternalModuleReference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitExportAssignment(value: ExportAssignmentSyntax => js.Any): Self = this.set("visitExportAssignment", js.Any.fromFunction1(value))
+    def setVisitFinallyClause(value: FinallyClauseSyntax => js.Any): Self = StObject.set(x, "visitFinallyClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitExpressionStatement(value: ExpressionStatementSyntax => js.Any): Self = this.set("visitExpressionStatement", js.Any.fromFunction1(value))
+    def setVisitForInStatement(value: ForInStatementSyntax => js.Any): Self = StObject.set(x, "visitForInStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitExternalModuleReference(value: ExternalModuleReferenceSyntax => js.Any): Self = this.set("visitExternalModuleReference", js.Any.fromFunction1(value))
+    def setVisitForStatement(value: ForStatementSyntax => js.Any): Self = StObject.set(x, "visitForStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitFinallyClause(value: FinallyClauseSyntax => js.Any): Self = this.set("visitFinallyClause", js.Any.fromFunction1(value))
+    def setVisitFunctionDeclaration(value: FunctionDeclarationSyntax => js.Any): Self = StObject.set(x, "visitFunctionDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitForInStatement(value: ForInStatementSyntax => js.Any): Self = this.set("visitForInStatement", js.Any.fromFunction1(value))
+    def setVisitFunctionExpression(value: FunctionExpressionSyntax => js.Any): Self = StObject.set(x, "visitFunctionExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitForStatement(value: ForStatementSyntax => js.Any): Self = this.set("visitForStatement", js.Any.fromFunction1(value))
+    def setVisitFunctionPropertyAssignment(value: FunctionPropertyAssignmentSyntax => js.Any): Self = StObject.set(x, "visitFunctionPropertyAssignment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitFunctionDeclaration(value: FunctionDeclarationSyntax => js.Any): Self = this.set("visitFunctionDeclaration", js.Any.fromFunction1(value))
+    def setVisitFunctionType(value: FunctionTypeSyntax => js.Any): Self = StObject.set(x, "visitFunctionType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitFunctionExpression(value: FunctionExpressionSyntax => js.Any): Self = this.set("visitFunctionExpression", js.Any.fromFunction1(value))
+    def setVisitGenericType(value: GenericTypeSyntax => js.Any): Self = StObject.set(x, "visitGenericType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitFunctionPropertyAssignment(value: FunctionPropertyAssignmentSyntax => js.Any): Self = this.set("visitFunctionPropertyAssignment", js.Any.fromFunction1(value))
+    def setVisitGetAccessor(value: GetAccessorSyntax => js.Any): Self = StObject.set(x, "visitGetAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitFunctionType(value: FunctionTypeSyntax => js.Any): Self = this.set("visitFunctionType", js.Any.fromFunction1(value))
+    def setVisitHeritageClause(value: HeritageClauseSyntax => js.Any): Self = StObject.set(x, "visitHeritageClause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitGenericType(value: GenericTypeSyntax => js.Any): Self = this.set("visitGenericType", js.Any.fromFunction1(value))
+    def setVisitIfStatement(value: IfStatementSyntax => js.Any): Self = StObject.set(x, "visitIfStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitGetAccessor(value: GetAccessorSyntax => js.Any): Self = this.set("visitGetAccessor", js.Any.fromFunction1(value))
+    def setVisitImportDeclaration(value: ImportDeclarationSyntax => js.Any): Self = StObject.set(x, "visitImportDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitHeritageClause(value: HeritageClauseSyntax => js.Any): Self = this.set("visitHeritageClause", js.Any.fromFunction1(value))
+    def setVisitIndexMemberDeclaration(value: IndexMemberDeclarationSyntax => js.Any): Self = StObject.set(x, "visitIndexMemberDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitIfStatement(value: IfStatementSyntax => js.Any): Self = this.set("visitIfStatement", js.Any.fromFunction1(value))
+    def setVisitIndexSignature(value: IndexSignatureSyntax => js.Any): Self = StObject.set(x, "visitIndexSignature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitImportDeclaration(value: ImportDeclarationSyntax => js.Any): Self = this.set("visitImportDeclaration", js.Any.fromFunction1(value))
+    def setVisitInterfaceDeclaration(value: InterfaceDeclarationSyntax => js.Any): Self = StObject.set(x, "visitInterfaceDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitIndexMemberDeclaration(value: IndexMemberDeclarationSyntax => js.Any): Self = this.set("visitIndexMemberDeclaration", js.Any.fromFunction1(value))
+    def setVisitInvocationExpression(value: InvocationExpressionSyntax => js.Any): Self = StObject.set(x, "visitInvocationExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitIndexSignature(value: IndexSignatureSyntax => js.Any): Self = this.set("visitIndexSignature", js.Any.fromFunction1(value))
+    def setVisitLabeledStatement(value: LabeledStatementSyntax => js.Any): Self = StObject.set(x, "visitLabeledStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitInterfaceDeclaration(value: InterfaceDeclarationSyntax => js.Any): Self = this.set("visitInterfaceDeclaration", js.Any.fromFunction1(value))
+    def setVisitMemberAccessExpression(value: MemberAccessExpressionSyntax => js.Any): Self = StObject.set(x, "visitMemberAccessExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitInvocationExpression(value: InvocationExpressionSyntax => js.Any): Self = this.set("visitInvocationExpression", js.Any.fromFunction1(value))
+    def setVisitMemberFunctionDeclaration(value: MemberFunctionDeclarationSyntax => js.Any): Self = StObject.set(x, "visitMemberFunctionDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitLabeledStatement(value: LabeledStatementSyntax => js.Any): Self = this.set("visitLabeledStatement", js.Any.fromFunction1(value))
+    def setVisitMemberVariableDeclaration(value: MemberVariableDeclarationSyntax => js.Any): Self = StObject.set(x, "visitMemberVariableDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitMemberAccessExpression(value: MemberAccessExpressionSyntax => js.Any): Self = this.set("visitMemberAccessExpression", js.Any.fromFunction1(value))
+    def setVisitMethodSignature(value: MethodSignatureSyntax => js.Any): Self = StObject.set(x, "visitMethodSignature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitMemberFunctionDeclaration(value: MemberFunctionDeclarationSyntax => js.Any): Self = this.set("visitMemberFunctionDeclaration", js.Any.fromFunction1(value))
+    def setVisitModuleDeclaration(value: ModuleDeclarationSyntax => js.Any): Self = StObject.set(x, "visitModuleDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitMemberVariableDeclaration(value: MemberVariableDeclarationSyntax => js.Any): Self = this.set("visitMemberVariableDeclaration", js.Any.fromFunction1(value))
+    def setVisitModuleNameModuleReference(value: ModuleNameModuleReferenceSyntax => js.Any): Self = StObject.set(x, "visitModuleNameModuleReference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitMethodSignature(value: MethodSignatureSyntax => js.Any): Self = this.set("visitMethodSignature", js.Any.fromFunction1(value))
+    def setVisitObjectCreationExpression(value: ObjectCreationExpressionSyntax => js.Any): Self = StObject.set(x, "visitObjectCreationExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitModuleDeclaration(value: ModuleDeclarationSyntax => js.Any): Self = this.set("visitModuleDeclaration", js.Any.fromFunction1(value))
+    def setVisitObjectLiteralExpression(value: ObjectLiteralExpressionSyntax => js.Any): Self = StObject.set(x, "visitObjectLiteralExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitModuleNameModuleReference(value: ModuleNameModuleReferenceSyntax => js.Any): Self = this.set("visitModuleNameModuleReference", js.Any.fromFunction1(value))
+    def setVisitObjectType(value: ObjectTypeSyntax => js.Any): Self = StObject.set(x, "visitObjectType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitObjectCreationExpression(value: ObjectCreationExpressionSyntax => js.Any): Self = this.set("visitObjectCreationExpression", js.Any.fromFunction1(value))
+    def setVisitOmittedExpression(value: OmittedExpressionSyntax => js.Any): Self = StObject.set(x, "visitOmittedExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitObjectLiteralExpression(value: ObjectLiteralExpressionSyntax => js.Any): Self = this.set("visitObjectLiteralExpression", js.Any.fromFunction1(value))
+    def setVisitParameter(value: ParameterSyntax => js.Any): Self = StObject.set(x, "visitParameter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitObjectType(value: ObjectTypeSyntax => js.Any): Self = this.set("visitObjectType", js.Any.fromFunction1(value))
+    def setVisitParameterList(value: ParameterListSyntax => js.Any): Self = StObject.set(x, "visitParameterList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitOmittedExpression(value: OmittedExpressionSyntax => js.Any): Self = this.set("visitOmittedExpression", js.Any.fromFunction1(value))
+    def setVisitParenthesizedArrowFunctionExpression(value: ParenthesizedArrowFunctionExpressionSyntax => js.Any): Self = StObject.set(x, "visitParenthesizedArrowFunctionExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitParameter(value: ParameterSyntax => js.Any): Self = this.set("visitParameter", js.Any.fromFunction1(value))
+    def setVisitParenthesizedExpression(value: ParenthesizedExpressionSyntax => js.Any): Self = StObject.set(x, "visitParenthesizedExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitParameterList(value: ParameterListSyntax => js.Any): Self = this.set("visitParameterList", js.Any.fromFunction1(value))
+    def setVisitPostfixUnaryExpression(value: PostfixUnaryExpressionSyntax => js.Any): Self = StObject.set(x, "visitPostfixUnaryExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitParenthesizedArrowFunctionExpression(value: ParenthesizedArrowFunctionExpressionSyntax => js.Any): Self = this.set("visitParenthesizedArrowFunctionExpression", js.Any.fromFunction1(value))
+    def setVisitPrefixUnaryExpression(value: PrefixUnaryExpressionSyntax => js.Any): Self = StObject.set(x, "visitPrefixUnaryExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitParenthesizedExpression(value: ParenthesizedExpressionSyntax => js.Any): Self = this.set("visitParenthesizedExpression", js.Any.fromFunction1(value))
+    def setVisitPropertySignature(value: PropertySignatureSyntax => js.Any): Self = StObject.set(x, "visitPropertySignature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitPostfixUnaryExpression(value: PostfixUnaryExpressionSyntax => js.Any): Self = this.set("visitPostfixUnaryExpression", js.Any.fromFunction1(value))
+    def setVisitQualifiedName(value: QualifiedNameSyntax => js.Any): Self = StObject.set(x, "visitQualifiedName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitPrefixUnaryExpression(value: PrefixUnaryExpressionSyntax => js.Any): Self = this.set("visitPrefixUnaryExpression", js.Any.fromFunction1(value))
+    def setVisitReturnStatement(value: ReturnStatementSyntax => js.Any): Self = StObject.set(x, "visitReturnStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitPropertySignature(value: PropertySignatureSyntax => js.Any): Self = this.set("visitPropertySignature", js.Any.fromFunction1(value))
+    def setVisitSetAccessor(value: SetAccessorSyntax => js.Any): Self = StObject.set(x, "visitSetAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitQualifiedName(value: QualifiedNameSyntax => js.Any): Self = this.set("visitQualifiedName", js.Any.fromFunction1(value))
+    def setVisitSimpleArrowFunctionExpression(value: SimpleArrowFunctionExpressionSyntax => js.Any): Self = StObject.set(x, "visitSimpleArrowFunctionExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitReturnStatement(value: ReturnStatementSyntax => js.Any): Self = this.set("visitReturnStatement", js.Any.fromFunction1(value))
+    def setVisitSimplePropertyAssignment(value: SimplePropertyAssignmentSyntax => js.Any): Self = StObject.set(x, "visitSimplePropertyAssignment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitSetAccessor(value: SetAccessorSyntax => js.Any): Self = this.set("visitSetAccessor", js.Any.fromFunction1(value))
+    def setVisitSourceUnit(value: SourceUnitSyntax => js.Any): Self = StObject.set(x, "visitSourceUnit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitSimpleArrowFunctionExpression(value: SimpleArrowFunctionExpressionSyntax => js.Any): Self = this.set("visitSimpleArrowFunctionExpression", js.Any.fromFunction1(value))
+    def setVisitSwitchStatement(value: SwitchStatementSyntax => js.Any): Self = StObject.set(x, "visitSwitchStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitSimplePropertyAssignment(value: SimplePropertyAssignmentSyntax => js.Any): Self = this.set("visitSimplePropertyAssignment", js.Any.fromFunction1(value))
+    def setVisitThrowStatement(value: ThrowStatementSyntax => js.Any): Self = StObject.set(x, "visitThrowStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitSourceUnit(value: SourceUnitSyntax => js.Any): Self = this.set("visitSourceUnit", js.Any.fromFunction1(value))
+    def setVisitToken(value: ISyntaxToken => js.Any): Self = StObject.set(x, "visitToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitSwitchStatement(value: SwitchStatementSyntax => js.Any): Self = this.set("visitSwitchStatement", js.Any.fromFunction1(value))
+    def setVisitTryStatement(value: TryStatementSyntax => js.Any): Self = StObject.set(x, "visitTryStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitThrowStatement(value: ThrowStatementSyntax => js.Any): Self = this.set("visitThrowStatement", js.Any.fromFunction1(value))
+    def setVisitTypeAnnotation(value: TypeAnnotationSyntax => js.Any): Self = StObject.set(x, "visitTypeAnnotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitToken(value: ISyntaxToken => js.Any): Self = this.set("visitToken", js.Any.fromFunction1(value))
+    def setVisitTypeArgumentList(value: TypeArgumentListSyntax => js.Any): Self = StObject.set(x, "visitTypeArgumentList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTryStatement(value: TryStatementSyntax => js.Any): Self = this.set("visitTryStatement", js.Any.fromFunction1(value))
+    def setVisitTypeOfExpression(value: TypeOfExpressionSyntax => js.Any): Self = StObject.set(x, "visitTypeOfExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTypeAnnotation(value: TypeAnnotationSyntax => js.Any): Self = this.set("visitTypeAnnotation", js.Any.fromFunction1(value))
+    def setVisitTypeParameter(value: TypeParameterSyntax => js.Any): Self = StObject.set(x, "visitTypeParameter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTypeArgumentList(value: TypeArgumentListSyntax => js.Any): Self = this.set("visitTypeArgumentList", js.Any.fromFunction1(value))
+    def setVisitTypeParameterList(value: TypeParameterListSyntax => js.Any): Self = StObject.set(x, "visitTypeParameterList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTypeOfExpression(value: TypeOfExpressionSyntax => js.Any): Self = this.set("visitTypeOfExpression", js.Any.fromFunction1(value))
+    def setVisitTypeQuery(value: TypeQuerySyntax => js.Any): Self = StObject.set(x, "visitTypeQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTypeParameter(value: TypeParameterSyntax => js.Any): Self = this.set("visitTypeParameter", js.Any.fromFunction1(value))
+    def setVisitVariableDeclaration(value: VariableDeclarationSyntax => js.Any): Self = StObject.set(x, "visitVariableDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTypeParameterList(value: TypeParameterListSyntax => js.Any): Self = this.set("visitTypeParameterList", js.Any.fromFunction1(value))
+    def setVisitVariableDeclarator(value: VariableDeclaratorSyntax => js.Any): Self = StObject.set(x, "visitVariableDeclarator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitTypeQuery(value: TypeQuerySyntax => js.Any): Self = this.set("visitTypeQuery", js.Any.fromFunction1(value))
+    def setVisitVariableStatement(value: VariableStatementSyntax => js.Any): Self = StObject.set(x, "visitVariableStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitVariableDeclaration(value: VariableDeclarationSyntax => js.Any): Self = this.set("visitVariableDeclaration", js.Any.fromFunction1(value))
+    def setVisitVoidExpression(value: VoidExpressionSyntax => js.Any): Self = StObject.set(x, "visitVoidExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitVariableDeclarator(value: VariableDeclaratorSyntax => js.Any): Self = this.set("visitVariableDeclarator", js.Any.fromFunction1(value))
+    def setVisitWhileStatement(value: WhileStatementSyntax => js.Any): Self = StObject.set(x, "visitWhileStatement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVisitVariableStatement(value: VariableStatementSyntax => js.Any): Self = this.set("visitVariableStatement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisitVoidExpression(value: VoidExpressionSyntax => js.Any): Self = this.set("visitVoidExpression", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisitWhileStatement(value: WhileStatementSyntax => js.Any): Self = this.set("visitWhileStatement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisitWithStatement(value: WithStatementSyntax => js.Any): Self = this.set("visitWithStatement", js.Any.fromFunction1(value))
+    def setVisitWithStatement(value: WithStatementSyntax => js.Any): Self = StObject.set(x, "visitWithStatement", js.Any.fromFunction1(value))
   }
 }

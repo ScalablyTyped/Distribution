@@ -11,19 +11,18 @@ import typings.webgme.GmeCommon.Metadata
 import typings.webgme.GmeCommon.Promisable
 import typings.webgme.GmeCommon.ResultCallback
 import typings.webgme.GmeConfig.ConfigItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GmePlugin")
-@js.native
-object GmePlugin extends js.Object {
+object GmePlugin {
   
   /**
     The base plugin object from which all plugins should inherit.
     */
   @js.native
-  trait PluginBase extends js.Object {
+  trait PluginBase extends StObject {
     
     /**
       * The resolved META nodes based on the active namespace. Index by the fully qualified meta node names
@@ -139,9 +138,9 @@ object GmePlugin extends js.Object {
     def save(): Promisable = js.native
     def save(message: String): Promisable = js.native
     
-     // returns a promise?
+    // returns a promise?
     def sendNotification(message: String): js.Promise[DataObject] = js.native
-     // returns a promise?
+    // returns a promise?
     def sendNotification(message: String, callback: ResultCallback[DataObject]): Unit = js.native
     
     def setCurrentConfig(newConfig: typings.webgme.GmeConfig.GmeConfig): Unit = js.native

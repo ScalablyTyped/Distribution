@@ -2,12 +2,13 @@ package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Channel
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.ChannelGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidNotifications extends js.Object {
+trait AndroidNotifications extends StObject {
   
   def createChannel(channel: Channel): js.Promise[Unit] = js.native
   
@@ -49,48 +50,36 @@ object AndroidNotifications {
   }
   
   @scala.inline
-  implicit class AndroidNotificationsOps[Self <: AndroidNotifications] (val x: Self) extends AnyVal {
+  implicit class AndroidNotificationsMutableBuilder[Self <: AndroidNotifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateChannel(value: Channel => js.Promise[Unit]): Self = StObject.set(x, "createChannel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateChannelGroup(value: ChannelGroup => js.Promise[Unit]): Self = StObject.set(x, "createChannelGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateChannelGroups(value: js.Array[ChannelGroup] => js.Promise[Unit]): Self = StObject.set(x, "createChannelGroups", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateChannel(value: Channel => js.Promise[Unit]): Self = this.set("createChannel", js.Any.fromFunction1(value))
+    def setCreateChannels(value: js.Array[Channel] => js.Promise[Unit]): Self = StObject.set(x, "createChannels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateChannelGroup(value: ChannelGroup => js.Promise[Unit]): Self = this.set("createChannelGroup", js.Any.fromFunction1(value))
+    def setDeleteChannel(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteChannel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateChannelGroups(value: js.Array[ChannelGroup] => js.Promise[Unit]): Self = this.set("createChannelGroups", js.Any.fromFunction1(value))
+    def setDeleteChannelGroup(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteChannelGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateChannels(value: js.Array[Channel] => js.Promise[Unit]): Self = this.set("createChannels", js.Any.fromFunction1(value))
+    def setGetChannel(value: String => js.Promise[NativeAndroidChannel | Null]): Self = StObject.set(x, "getChannel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteChannel(value: String => js.Promise[Unit]): Self = this.set("deleteChannel", js.Any.fromFunction1(value))
+    def setGetChannelGroup(value: String => js.Promise[NativeAndroidChannelGroup | Null]): Self = StObject.set(x, "getChannelGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteChannelGroup(value: String => js.Promise[Unit]): Self = this.set("deleteChannelGroup", js.Any.fromFunction1(value))
+    def setGetChannelGroups(value: String => js.Promise[js.Array[NativeAndroidChannelGroup]]): Self = StObject.set(x, "getChannelGroups", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetChannel(value: String => js.Promise[NativeAndroidChannel | Null]): Self = this.set("getChannel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetChannelGroup(value: String => js.Promise[NativeAndroidChannelGroup | Null]): Self = this.set("getChannelGroup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetChannelGroups(value: String => js.Promise[js.Array[NativeAndroidChannelGroup]]): Self = this.set("getChannelGroups", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetChannels(value: String => js.Promise[js.Array[NativeAndroidChannel]]): Self = this.set("getChannels", js.Any.fromFunction1(value))
+    def setGetChannels(value: String => js.Promise[js.Array[NativeAndroidChannel]]): Self = StObject.set(x, "getChannels", js.Any.fromFunction1(value))
   }
 }

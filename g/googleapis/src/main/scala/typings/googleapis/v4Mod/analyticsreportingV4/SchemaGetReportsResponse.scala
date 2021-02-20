@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `batchGet` call.
   */
 @js.native
-trait SchemaGetReportsResponse extends js.Object {
+trait SchemaGetReportsResponse extends StObject {
   
   /**
     * The amount of resource quota tokens deducted to execute the query.
@@ -36,39 +37,27 @@ object SchemaGetReportsResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetReportsResponseOps[Self <: SchemaGetReportsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetReportsResponseMutableBuilder[Self <: SchemaGetReportsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryCost(value: Double): Self = StObject.set(x, "queryCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryCostUndefined: Self = StObject.set(x, "queryCost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReports(value: js.Array[SchemaReport]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryCost(value: Double): Self = this.set("queryCost", value.asInstanceOf[js.Any])
+    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
     @scala.inline
-    def deleteQueryCost: Self = this.set("queryCost", js.undefined)
+    def setReportsVarargs(value: SchemaReport*): Self = StObject.set(x, "reports", js.Array(value :_*))
     
     @scala.inline
-    def setReportsVarargs(value: SchemaReport*): Self = this.set("reports", js.Array(value :_*))
+    def setResourceQuotasRemaining(value: SchemaResourceQuotasRemaining): Self = StObject.set(x, "resourceQuotasRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReports(value: js.Array[SchemaReport]): Self = this.set("reports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReports: Self = this.set("reports", js.undefined)
-    
-    @scala.inline
-    def setResourceQuotasRemaining(value: SchemaResourceQuotasRemaining): Self = this.set("resourceQuotasRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceQuotasRemaining: Self = this.set("resourceQuotasRemaining", js.undefined)
+    def setResourceQuotasRemainingUndefined: Self = StObject.set(x, "resourceQuotasRemaining", js.undefined)
   }
 }

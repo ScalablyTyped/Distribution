@@ -3,6 +3,7 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.core.IElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,60 +58,48 @@ object IRenderable {
   }
   
   @scala.inline
-  implicit class IRenderableOps[Self <: IRenderable] (val x: Self) extends AnyVal {
+  implicit class IRenderableMutableBuilder[Self <: IRenderable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterRender(value: () => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoAutoRender(value: () => Unit): Self = StObject.set(x, "doAutoRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAfterRender(value: () => Unit): Self = this.set("afterRender", js.Any.fromFunction0(value))
+    def setDoAutoRenderUndefined: Self = StObject.set(x, "doAutoRender", js.undefined)
     
     @scala.inline
-    def deleteAfterRender: Self = this.set("afterRender", js.undefined)
+    def setEnsureAttachedToBody(value: /* runLayout */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "ensureAttachedToBody", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoAutoRender(value: () => Unit): Self = this.set("doAutoRender", js.Any.fromFunction0(value))
+    def setEnsureAttachedToBodyUndefined: Self = StObject.set(x, "ensureAttachedToBody", js.undefined)
     
     @scala.inline
-    def deleteDoAutoRender: Self = this.set("doAutoRender", js.undefined)
+    def setGetInsertPosition(value: /* position */ js.UndefOr[js.Any] => HTMLElement): Self = StObject.set(x, "getInsertPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnsureAttachedToBody(value: /* runLayout */ js.UndefOr[Boolean] => Unit): Self = this.set("ensureAttachedToBody", js.Any.fromFunction1(value))
+    def setGetInsertPositionUndefined: Self = StObject.set(x, "getInsertPosition", js.undefined)
     
     @scala.inline
-    def deleteEnsureAttachedToBody: Self = this.set("ensureAttachedToBody", js.undefined)
+    def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInsertPosition(value: /* position */ js.UndefOr[js.Any] => HTMLElement): Self = this.set("getInsertPosition", js.Any.fromFunction1(value))
+    def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
     @scala.inline
-    def deleteGetInsertPosition: Self = this.set("getInsertPosition", js.undefined)
+    def setOnRender(value: (/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInitRenderData(value: () => _): Self = this.set("initRenderData", js.Any.fromFunction0(value))
+    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
     @scala.inline
-    def deleteInitRenderData: Self = this.set("initRenderData", js.undefined)
+    def setRender(value: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnRender(value: (/* parentNode */ js.UndefOr[IElement], /* containerIdx */ js.UndefOr[Double]) => Unit): Self = this.set("onRender", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnRender: Self = this.set("onRender", js.undefined)
-    
-    @scala.inline
-    def setRender(value: (/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = this.set("render", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

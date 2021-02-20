@@ -1,12 +1,13 @@
 package typings.parse.mod.global.Parse.Cloud
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CookieOptions extends js.Object {
+trait CookieOptions extends StObject {
   
   var domain: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object CookieOptions {
   }
   
   @scala.inline
-  implicit class CookieOptionsOps[Self <: CookieOptions] (val x: Self) extends AnyVal {
+  implicit class CookieOptionsMutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: Date): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
     
     @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpOnly(value: Boolean): Self = this.set("httpOnly", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def deleteHttpOnly: Self = this.set("httpOnly", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
   }
 }

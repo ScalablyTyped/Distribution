@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AadOauthTokenRequest extends js.Object {
+trait AadOauthTokenRequest extends StObject {
   
   var refresh: Boolean = js.native
   
@@ -24,30 +25,18 @@ object AadOauthTokenRequest {
   }
   
   @scala.inline
-  implicit class AadOauthTokenRequestOps[Self <: AadOauthTokenRequest] (val x: Self) extends AnyVal {
+  implicit class AadOauthTokenRequestMutableBuilder[Self <: AadOauthTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

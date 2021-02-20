@@ -1,46 +1,40 @@
 package typings.nodeSnap7.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Area extends js.Object
+sealed trait Area extends StObject
 @JSImport("node-snap7", "Area")
 @js.native
-object Area extends js.Object {
+object Area extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Area with Double] = js.native
   
   @js.native
   sealed trait S7AreaCT extends Area
-  /* 0x1C */ @js.native
-  object S7AreaCT extends TopLevel[S7AreaCT with Double]
+  /* 0x1C */ val S7AreaCT: typings.nodeSnap7.mod.Area.S7AreaCT with Double = js.native
   
   @js.native
   sealed trait S7AreaDB extends Area
-  /* 0x84 */ @js.native
-  object S7AreaDB extends TopLevel[S7AreaDB with Double]
+  /* 0x84 */ val S7AreaDB: typings.nodeSnap7.mod.Area.S7AreaDB with Double = js.native
   
   @js.native
   sealed trait S7AreaMK extends Area
-  /* 0x83 */ @js.native
-  object S7AreaMK extends TopLevel[S7AreaMK with Double]
+  /* 0x83 */ val S7AreaMK: typings.nodeSnap7.mod.Area.S7AreaMK with Double = js.native
   
   @js.native
   sealed trait S7AreaPA extends Area
-  /* 0x82 */ @js.native
-  object S7AreaPA extends TopLevel[S7AreaPA with Double]
+  /* 0x82 */ val S7AreaPA: typings.nodeSnap7.mod.Area.S7AreaPA with Double = js.native
   
   @js.native
   sealed trait S7AreaPE extends Area
-  /* 0x81 */ @js.native
-  object S7AreaPE extends TopLevel[S7AreaPE with Double]
+  /* 0x81 */ val S7AreaPE: typings.nodeSnap7.mod.Area.S7AreaPE with Double = js.native
   
   @js.native
   sealed trait S7AreaTM extends Area
-  /* 0x1D */ @js.native
-  object S7AreaTM extends TopLevel[S7AreaTM with Double]
+  /* 0x1D */ val S7AreaTM: typings.nodeSnap7.mod.Area.S7AreaTM with Double = js.native
 }

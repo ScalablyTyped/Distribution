@@ -4,14 +4,14 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
 import typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/motionController/webXRGenericMotionController", JSImport.Namespace)
-@js.native
-object webXRGenericMotionControllerMod extends js.Object {
+object webXRGenericMotionControllerMod {
   
+  @JSImport("babylonjs/XR/motionController/webXRGenericMotionController", "WebXRGenericTriggerMotionController")
   @js.native
   class WebXRGenericTriggerMotionController protected () extends WebXRAbstractMotionController {
     def this(
@@ -23,12 +23,19 @@ object webXRGenericMotionControllerMod extends js.Object {
     /* protected */ def _updateModel(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object WebXRGenericTriggerMotionController extends js.Object {
+  object WebXRGenericTriggerMotionController {
+    
+    @JSImport("babylonjs/XR/motionController/webXRGenericMotionController", "WebXRGenericTriggerMotionController")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Static version of the profile id of this controller
       */
-    var ProfileId: String = js.native
+    @JSImport("babylonjs/XR/motionController/webXRGenericMotionController", "WebXRGenericTriggerMotionController.ProfileId")
+    @js.native
+    def ProfileId: String = js.native
+    @scala.inline
+    def ProfileId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileId")(x.asInstanceOf[js.Any])
   }
 }

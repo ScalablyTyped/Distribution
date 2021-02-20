@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSourceSettings extends js.Object {
+trait FileSourceSettings extends StObject {
   
   /**
     * Specify whether this set of input captions appears in your outputs in both 608 and 708 format. If you choose Upconvert (UPCONVERT), MediaConvert includes the captions data in two ways: it passes the 608 data through using the 608 compatibility bytes fields of the 708 wrapper, and it also translates the 608 data into 708.
@@ -38,44 +39,32 @@ object FileSourceSettings {
   }
   
   @scala.inline
-  implicit class FileSourceSettingsOps[Self <: FileSourceSettings] (val x: Self) extends AnyVal {
+  implicit class FileSourceSettingsMutableBuilder[Self <: FileSourceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert608To708(value: FileSourceConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFramerate(value: CaptionSourceFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert608To708(value: FileSourceConvert608To708): Self = this.set("Convert608To708", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConvert608To708: Self = this.set("Convert608To708", js.undefined)
-    
-    @scala.inline
-    def setFramerate(value: CaptionSourceFramerate): Self = this.set("Framerate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFramerate: Self = this.set("Framerate", js.undefined)
+    def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
     
     @scala.inline
     def setSourceFile(
       value: stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMIHttpsSccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI
-    ): Self = this.set("SourceFile", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "SourceFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceFile: Self = this.set("SourceFile", js.undefined)
+    def setSourceFileUndefined: Self = StObject.set(x, "SourceFile", js.undefined)
     
     @scala.inline
-    def setTimeDelta(value: integerMinNegative2147483648Max2147483647): Self = this.set("TimeDelta", value.asInstanceOf[js.Any])
+    def setTimeDelta(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "TimeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeDelta: Self = this.set("TimeDelta", js.undefined)
+    def setTimeDeltaUndefined: Self = StObject.set(x, "TimeDelta", js.undefined)
   }
 }

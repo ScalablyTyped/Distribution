@@ -3,6 +3,7 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.container.IContainer
 import typings.extjs.Ext.panel.ITool
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,138 +104,126 @@ object IFieldSet {
   }
   
   @scala.inline
-  implicit class IFieldSetOps[Self <: IFieldSet] (val x: Self) extends AnyVal {
+  implicit class IFieldSetMutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckboxCmp(value: typings.extjs.Ext.form.field.ICheckbox): Self = StObject.set(x, "checkboxCmp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckboxCmpUndefined: Self = StObject.set(x, "checkboxCmp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckboxName(value: String): Self = StObject.set(x, "checkboxName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxCmp(value: typings.extjs.Ext.form.field.ICheckbox): Self = this.set("checkboxCmp", value.asInstanceOf[js.Any])
+    def setCheckboxNameUndefined: Self = StObject.set(x, "checkboxName", js.undefined)
     
     @scala.inline
-    def deleteCheckboxCmp: Self = this.set("checkboxCmp", js.undefined)
+    def setCheckboxToggle(value: Boolean): Self = StObject.set(x, "checkboxToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxName(value: String): Self = this.set("checkboxName", value.asInstanceOf[js.Any])
+    def setCheckboxToggleUndefined: Self = StObject.set(x, "checkboxToggle", js.undefined)
     
     @scala.inline
-    def deleteCheckboxName: Self = this.set("checkboxName", js.undefined)
+    def setCollapse(value: () => IFieldSet): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckboxToggle(value: Boolean): Self = this.set("checkboxToggle", value.asInstanceOf[js.Any])
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def deleteCheckboxToggle: Self = this.set("checkboxToggle", js.undefined)
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapse(value: () => IFieldSet): Self = this.set("collapse", js.Any.fromFunction0(value))
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setCreateCheckboxCmp(value: () => IComponent): Self = StObject.set(x, "createCheckboxCmp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    def setCreateCheckboxCmpUndefined: Self = StObject.set(x, "createCheckboxCmp", js.undefined)
     
     @scala.inline
-    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    def setCreateTitleCmp(value: () => IComponent): Self = StObject.set(x, "createTitleCmp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateCheckboxCmp(value: () => IComponent): Self = this.set("createCheckboxCmp", js.Any.fromFunction0(value))
+    def setCreateTitleCmpUndefined: Self = StObject.set(x, "createTitleCmp", js.undefined)
     
     @scala.inline
-    def deleteCreateCheckboxCmp: Self = this.set("createCheckboxCmp", js.undefined)
+    def setCreateToggleCmp(value: () => IComponent): Self = StObject.set(x, "createToggleCmp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateTitleCmp(value: () => IComponent): Self = this.set("createTitleCmp", js.Any.fromFunction0(value))
+    def setCreateToggleCmpUndefined: Self = StObject.set(x, "createToggleCmp", js.undefined)
     
     @scala.inline
-    def deleteCreateTitleCmp: Self = this.set("createTitleCmp", js.undefined)
+    def setExpand(value: () => IFieldSet): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateToggleCmp(value: () => IComponent): Self = this.set("createToggleCmp", js.Any.fromFunction0(value))
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteCreateToggleCmp: Self = this.set("createToggleCmp", js.undefined)
+    def setFieldDefaults(value: js.Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: () => IFieldSet): Self = this.set("expand", js.Any.fromFunction0(value))
+    def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setInitFieldAncestor(value: () => Unit): Self = StObject.set(x, "initFieldAncestor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFieldDefaults(value: js.Any): Self = this.set("fieldDefaults", value.asInstanceOf[js.Any])
+    def setInitFieldAncestorUndefined: Self = StObject.set(x, "initFieldAncestor", js.undefined)
     
     @scala.inline
-    def deleteFieldDefaults: Self = this.set("fieldDefaults", js.undefined)
+    def setLegend(value: IComponent): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitFieldAncestor(value: () => Unit): Self = this.set("initFieldAncestor", js.Any.fromFunction0(value))
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteInitFieldAncestor: Self = this.set("initFieldAncestor", js.undefined)
+    def setOnFieldErrorChange(value: (js.UndefOr[ILabelable], js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFieldErrorChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLegend(value: IComponent): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setOnFieldErrorChangeUndefined: Self = StObject.set(x, "onFieldErrorChange", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setOnFieldValidityChange(value: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onFieldValidityChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnFieldErrorChange(value: (js.UndefOr[ILabelable], js.UndefOr[String]) => Unit): Self = this.set("onFieldErrorChange", js.Any.fromFunction2(value))
+    def setOnFieldValidityChangeUndefined: Self = StObject.set(x, "onFieldValidityChange", js.undefined)
     
     @scala.inline
-    def deleteOnFieldErrorChange: Self = this.set("onFieldErrorChange", js.undefined)
+    def setSetTitle(value: /* title */ js.UndefOr[String] => IFieldSet): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFieldValidityChange(value: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit): Self = this.set("onFieldValidityChange", js.Any.fromFunction2(value))
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def deleteOnFieldValidityChange: Self = this.set("onFieldValidityChange", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[String] => IFieldSet): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setToggleCmp(value: ITool): Self = StObject.set(x, "toggleCmp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setToggleCmpUndefined: Self = StObject.set(x, "toggleCmp", js.undefined)
     
     @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setToggleOnTitleClick(value: Boolean): Self = StObject.set(x, "toggleOnTitleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setToggleOnTitleClickUndefined: Self = StObject.set(x, "toggleOnTitleClick", js.undefined)
     
     @scala.inline
-    def setToggleCmp(value: ITool): Self = this.set("toggleCmp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleCmp: Self = this.set("toggleCmp", js.undefined)
-    
-    @scala.inline
-    def setToggleOnTitleClick(value: Boolean): Self = this.set("toggleOnTitleClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleOnTitleClick: Self = this.set("toggleOnTitleClick", js.undefined)
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

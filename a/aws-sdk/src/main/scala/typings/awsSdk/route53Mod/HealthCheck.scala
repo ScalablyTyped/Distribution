@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HealthCheck extends js.Object {
+trait HealthCheck extends StObject {
   
   /**
     * A unique string that you specified when you created the health check.
@@ -51,42 +52,30 @@ object HealthCheck {
   }
   
   @scala.inline
-  implicit class HealthCheckOps[Self <: HealthCheck] (val x: Self) extends AnyVal {
+  implicit class HealthCheckMutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallerReference(value: HealthCheckNonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchAlarmConfiguration(value: CloudWatchAlarmConfiguration): Self = StObject.set(x, "CloudWatchAlarmConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWatchAlarmConfigurationUndefined: Self = StObject.set(x, "CloudWatchAlarmConfiguration", js.undefined)
     
     @scala.inline
-    def setCallerReference(value: HealthCheckNonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckConfig(value: HealthCheckConfig): Self = this.set("HealthCheckConfig", value.asInstanceOf[js.Any])
+    def setHealthCheckVersion(value: HealthCheckVersion): Self = StObject.set(x, "HealthCheckVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckVersion(value: HealthCheckVersion): Self = this.set("HealthCheckVersion", value.asInstanceOf[js.Any])
+    def setId(value: HealthCheckId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: HealthCheckId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLinkedService(value: LinkedService): Self = StObject.set(x, "LinkedService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchAlarmConfiguration(value: CloudWatchAlarmConfiguration): Self = this.set("CloudWatchAlarmConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudWatchAlarmConfiguration: Self = this.set("CloudWatchAlarmConfiguration", js.undefined)
-    
-    @scala.inline
-    def setLinkedService(value: LinkedService): Self = this.set("LinkedService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkedService: Self = this.set("LinkedService", js.undefined)
+    def setLinkedServiceUndefined: Self = StObject.set(x, "LinkedService", js.undefined)
   }
 }

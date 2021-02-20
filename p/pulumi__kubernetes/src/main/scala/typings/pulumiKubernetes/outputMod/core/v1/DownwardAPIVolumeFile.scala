@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DownwardAPIVolumeFile represents information to create the file containing the pod field
   */
 @js.native
-trait DownwardAPIVolumeFile extends js.Object {
+trait DownwardAPIVolumeFile extends StObject {
   
   /**
     * Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.
@@ -39,30 +40,18 @@ object DownwardAPIVolumeFile {
   }
   
   @scala.inline
-  implicit class DownwardAPIVolumeFileOps[Self <: DownwardAPIVolumeFile] (val x: Self) extends AnyVal {
+  implicit class DownwardAPIVolumeFileMutableBuilder[Self <: DownwardAPIVolumeFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldRef(value: ObjectFieldSelector): Self = StObject.set(x, "fieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldRef(value: ObjectFieldSelector): Self = this.set("fieldRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceFieldRef(value: ResourceFieldSelector): Self = this.set("resourceFieldRef", value.asInstanceOf[js.Any])
+    def setResourceFieldRef(value: ResourceFieldSelector): Self = StObject.set(x, "resourceFieldRef", value.asInstanceOf[js.Any])
   }
 }

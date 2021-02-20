@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "HeadingPitchRange")
 @js.native
-class HeadingPitchRange () extends js.Object {
+class HeadingPitchRange () extends StObject {
   def this(heading: Double) = this()
   def this(heading: js.UndefOr[scala.Nothing], pitch: Double) = this()
   def this(heading: Double, pitch: Double) = this()
@@ -21,11 +22,13 @@ class HeadingPitchRange () extends js.Object {
   
   var range: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "HeadingPitchRange")
-@js.native
-object HeadingPitchRange extends js.Object {
+object HeadingPitchRange {
   
-  def clone(hpr: HeadingPitchRange): HeadingPitchRange = js.native
-  def clone(hpr: HeadingPitchRange, result: HeadingPitchRange): HeadingPitchRange = js.native
+  /* static member */
+  @JSImport("cesium", "HeadingPitchRange.clone")
+  @js.native
+  def clone_(hpr: HeadingPitchRange): HeadingPitchRange = js.native
+  @JSImport("cesium", "HeadingPitchRange.clone")
+  @js.native
+  def clone_(hpr: HeadingPitchRange, result: HeadingPitchRange): HeadingPitchRange = js.native
 }

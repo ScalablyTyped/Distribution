@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientBooks.anon.Oauthtoken
 import typings.maximMazurokGapiClientBooks.anon.PrettyPrint
 import typings.maximMazurokGapiClientBooks.anon.QuotaUser
 import typings.maximMazurokGapiClientBooks.anon.Shelf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BookshelvesResource extends js.Object {
+trait BookshelvesResource extends StObject {
   
   /** Adds a volume to a bookshelf. */
   def addVolume(): Request[js.Object] = js.native

@@ -8,6 +8,7 @@ import typings.stripe.mod.taxRates.ITaxRate
 import typings.stripe.stripeStrings.invoiceitem
 import typings.stripe.stripeStrings.line_item
 import typings.stripe.stripeStrings.subscription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,72 +123,60 @@ object IInvoiceLineItem {
   }
   
   @scala.inline
-  implicit class IInvoiceLineItemOps[Self <: IInvoiceLineItem] (val x: Self) extends AnyVal {
+  implicit class IInvoiceLineItemMutableBuilder[Self <: IInvoiceLineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setDiscountable(value: Boolean): Self = StObject.set(x, "discountable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscountable(value: Boolean): Self = this.set("discountable", value.asInstanceOf[js.Any])
+    def setObject(value: line_item): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLivemode(value: Boolean): Self = this.set("livemode", value.asInstanceOf[js.Any])
+    def setPeriod(value: IPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setPlan(value: IPlan): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: line_item): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setProration(value: Boolean): Self = StObject.set(x, "proration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: IPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan(value: IPlan): Self = this.set("plan", value.asInstanceOf[js.Any])
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProration(value: Boolean): Self = this.set("proration", value.asInstanceOf[js.Any])
+    def setSubscription_item(value: String): Self = StObject.set(x, "subscription_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setTax_amounts(value: js.Array[ITaxAmount]): Self = StObject.set(x, "tax_amounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    def setTax_amountsVarargs(value: ITaxAmount*): Self = StObject.set(x, "tax_amounts", js.Array(value :_*))
     
     @scala.inline
-    def setSubscription_item(value: String): Self = this.set("subscription_item", value.asInstanceOf[js.Any])
+    def setTax_rates(value: js.Array[ITaxRate]): Self = StObject.set(x, "tax_rates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTax_amountsVarargs(value: ITaxAmount*): Self = this.set("tax_amounts", js.Array(value :_*))
+    def setTax_ratesVarargs(value: ITaxRate*): Self = StObject.set(x, "tax_rates", js.Array(value :_*))
     
     @scala.inline
-    def setTax_amounts(value: js.Array[ITaxAmount]): Self = this.set("tax_amounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTax_ratesVarargs(value: ITaxRate*): Self = this.set("tax_rates", js.Array(value :_*))
-    
-    @scala.inline
-    def setTax_rates(value: js.Array[ITaxRate]): Self = this.set("tax_rates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: invoiceitem | subscription): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: invoiceitem | subscription): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/_Record", JSImport.Namespace)
-@js.native
-object recordMod extends js.Object {
+object recordMod {
   
-  @JSName("_Record")
+  @JSImport("@aws-sdk/client-kinesis-browser/model/_Record", "_Record")
+  @js.native
   val Record: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

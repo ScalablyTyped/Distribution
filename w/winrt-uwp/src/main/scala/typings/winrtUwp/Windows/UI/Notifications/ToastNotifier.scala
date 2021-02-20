@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Raises a toast notification to the specific app to which the ToastNotifier is bound. This class also lets you schedule and remove toast notifications. */
 @js.native
-trait ToastNotifier extends js.Object {
+trait ToastNotifier extends StObject {
   
   /**
     * Adds a ScheduledToastNotification for later display by Windows.
@@ -58,36 +59,24 @@ object ToastNotifier {
   }
   
   @scala.inline
-  implicit class ToastNotifierOps[Self <: ToastNotifier] (val x: Self) extends AnyVal {
+  implicit class ToastNotifierMutableBuilder[Self <: ToastNotifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "addToSchedule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetScheduledToastNotifications(value: () => IVectorView[ScheduledToastNotification]): Self = StObject.set(x, "getScheduledToastNotifications", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHide(value: ToastNotification => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddToSchedule(value: ScheduledToastNotification => Unit): Self = this.set("addToSchedule", js.Any.fromFunction1(value))
+    def setRemoveFromSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "removeFromSchedule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScheduledToastNotifications(value: () => IVectorView[ScheduledToastNotification]): Self = this.set("getScheduledToastNotifications", js.Any.fromFunction0(value))
+    def setSetting(value: NotificationSetting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: ToastNotification => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveFromSchedule(value: ScheduledToastNotification => Unit): Self = this.set("removeFromSchedule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetting(value: NotificationSetting): Self = this.set("setting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow(value: ToastNotification => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setShow(value: ToastNotification => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

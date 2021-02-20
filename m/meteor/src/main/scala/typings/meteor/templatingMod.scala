@@ -1,15 +1,19 @@
 package typings.meteor
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("meteor/templating", JSImport.Namespace)
-@js.native
-object templatingMod extends js.Object {
+object templatingMod {
   
+  @JSImport("meteor/templating", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("meteor/templating", "Template")
   @js.native
   class Template ()
     extends typings.meteor.Blaze.Template {
@@ -17,9 +21,11 @@ object templatingMod extends js.Object {
     def this(viewName: js.UndefOr[scala.Nothing], renderFunction: js.Function) = this()
     def this(viewName: String, renderFunction: js.Function) = this()
   }
+  @JSImport("meteor/templating", "Template")
   @js.native
-  object Template
-    extends TopLevel[typings.meteor.templatingMod.TemplateStatic]
+  def Template: typings.meteor.templatingMod.TemplateStatic = js.native
+  @scala.inline
+  def Template_=(x: typings.meteor.templatingMod.TemplateStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Template")(x.asInstanceOf[js.Any])
   
   @js.native
   trait TemplateStatic

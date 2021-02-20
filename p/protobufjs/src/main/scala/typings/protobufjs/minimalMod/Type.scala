@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.Codegen
 import typings.protobufjs.mod.IType
 import typings.protobufjs.mod.TypeDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,18 @@ class Type protected ()
   def this(name: String, options: StringDictionary[js.Any]) = this()
 }
 /* static members */
-@JSImport("protobufjs/minimal", "Type")
-@js.native
-object Type extends js.Object {
+object Type {
   
   /**
     * Type decorator (TypeScript).
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Decorator function
     */
+  @JSImport("protobufjs/minimal", "Type.d")
+  @js.native
   def d[T /* <: typings.protobufjs.mod.Message[T] */](): TypeDecorator[T] = js.native
+  @JSImport("protobufjs/minimal", "Type.d")
+  @js.native
   def d[T /* <: typings.protobufjs.mod.Message[T] */](typeName: String): TypeDecorator[T] = js.native
   
   /**
@@ -39,6 +42,8 @@ object Type extends js.Object {
     * @param json Message type descriptor
     * @returns Created message type
     */
+  @JSImport("protobufjs/minimal", "Type.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IType): typings.protobufjs.mod.Type = js.native
   
   /**
@@ -46,5 +51,7 @@ object Type extends js.Object {
     * @param mtype Message type
     * @returns Codegen instance
     */
+  @JSImport("protobufjs/minimal", "Type.generateConstructor")
+  @js.native
   def generateConstructor(mtype: typings.protobufjs.mod.Type): Codegen = js.native
 }

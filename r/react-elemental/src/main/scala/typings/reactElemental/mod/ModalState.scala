@@ -1,12 +1,13 @@
 package typings.reactElemental.mod
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalState extends js.Object {
+trait ModalState extends StObject {
   
   val modal: HTMLDivElement = js.native
   
@@ -23,27 +24,15 @@ object ModalState {
   }
   
   @scala.inline
-  implicit class ModalStateOps[Self <: ModalState] (val x: Self) extends AnyVal {
+  implicit class ModalStateMutableBuilder[Self <: ModalState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModal(value: HTMLDivElement): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModal(value: HTMLDivElement): Self = this.set("modal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowHeight(value: Double): Self = this.set("windowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowWidth(value: Double): Self = this.set("windowWidth", value.asInstanceOf[js.Any])
+    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
   }
 }

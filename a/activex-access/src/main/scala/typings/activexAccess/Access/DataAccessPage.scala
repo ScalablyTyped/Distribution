@@ -1,12 +1,13 @@
 package typings.activexAccess.Access
 
 import typings.activexOffice.Office.MsoEnvelope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataAccessPage extends js.Object {
+trait DataAccessPage extends StObject {
   
   @JSName("Access.DataAccessPage_typekey")
   var AccessDotDataAccessPage_typekey: DataAccessPage = js.native
@@ -80,78 +81,66 @@ object DataAccessPage {
   }
   
   @scala.inline
-  implicit class DataAccessPageOps[Self <: DataAccessPage] (val x: Self) extends AnyVal {
+  implicit class DataAccessPageMutableBuilder[Self <: DataAccessPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotDataAccessPage_typekey(value: DataAccessPage): Self = StObject.set(x, "Access.DataAccessPage_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyTheme(value: String => Unit): Self = StObject.set(x, "ApplyTheme", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessDotDataAccessPage_typekey(value: DataAccessPage): Self = this.set("Access.DataAccessPage_typekey", value.asInstanceOf[js.Any])
+    def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCurrentSelection(value: js.Any): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyTheme(value: String => Unit): Self = this.set("ApplyTheme", js.Any.fromFunction1(value))
+    def setCurrentView(value: Double): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionString(value: String): Self = this.set("ConnectionString", value.asInstanceOf[js.Any])
+    def setDocument(value: js.Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSelection(value: js.Any): Self = this.set("CurrentSelection", value.asInstanceOf[js.Any])
+    def setFieldListConnection(value: js.Any): Self = StObject.set(x, "FieldListConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentView(value: Double): Self = this.set("CurrentView", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDocument(value: js.Any): Self = this.set("Document", value.asInstanceOf[js.Any])
+    def setMSODSC(value: js.Any): Self = StObject.set(x, "MSODSC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldListConnection(value: js.Any): Self = this.set("FieldListConnection", value.asInstanceOf[js.Any])
+    def setMailEnvelope(value: MsoEnvelope): Self = StObject.set(x, "MailEnvelope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSODSC(value: js.Any): Self = this.set("MSODSC", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailEnvelope(value: MsoEnvelope): Self = this.set("MailEnvelope", value.asInstanceOf[js.Any])
+    def setRemovePersonalInformation(value: Boolean): Self = StObject.set(x, "RemovePersonalInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovePersonalInformation(value: Boolean): Self = this.set("RemovePersonalInformation", value.asInstanceOf[js.Any])
+    def setWebOptions(value: WebOptions): Self = StObject.set(x, "WebOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    def setWindowHeight(value: Double): Self = StObject.set(x, "WindowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setWindowWidth(value: Double): Self = StObject.set(x, "WindowWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebOptions(value: WebOptions): Self = this.set("WebOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowHeight(value: Double): Self = this.set("WindowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowWidth(value: Double): Self = this.set("WindowWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_Name(value: String): Self = this.set("_Name", value.asInstanceOf[js.Any])
+    def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
   }
 }

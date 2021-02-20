@@ -1,12 +1,13 @@
 package typings.playable.anon
 
 import typings.playable.themeTypesMod.IThemeConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemeConfig extends js.Object {
+trait ThemeConfig extends StObject {
   
   var themeConfig: IThemeConfig = js.native
 }
@@ -19,21 +20,9 @@ object ThemeConfig {
   }
   
   @scala.inline
-  implicit class ThemeConfigOps[Self <: ThemeConfig] (val x: Self) extends AnyVal {
+  implicit class ThemeConfigMutableBuilder[Self <: ThemeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setThemeConfig(value: IThemeConfig): Self = this.set("themeConfig", value.asInstanceOf[js.Any])
+    def setThemeConfig(value: IThemeConfig): Self = StObject.set(x, "themeConfig", value.asInstanceOf[js.Any])
   }
 }

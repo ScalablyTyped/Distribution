@@ -1,11 +1,12 @@
 package typings.gapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiOAuth2TokenObject extends js.Object {
+trait GoogleApiOAuth2TokenObject extends StObject {
   
   /**
     * The OAuth 2.0 token. Only present in successful responses
@@ -38,36 +39,24 @@ object GoogleApiOAuth2TokenObject {
   }
   
   @scala.inline
-  implicit class GoogleApiOAuth2TokenObjectOps[Self <: GoogleApiOAuth2TokenObject] (val x: Self) extends AnyVal {
+  implicit class GoogleApiOAuth2TokenObjectMutableBuilder[Self <: GoogleApiOAuth2TokenObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setSession_state(value: GoogleApiOAuth2TokenSessionState): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setSession_stateUndefined: Self = StObject.set(x, "session_state", js.undefined)
     
     @scala.inline
-    def setExpires_in(value: String): Self = this.set("expires_in", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession_state(value: GoogleApiOAuth2TokenSessionState): Self = this.set("session_state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession_state: Self = this.set("session_state", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

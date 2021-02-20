@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkTextBlobFactory extends js.Object {
+trait SkTextBlobFactory extends StObject {
   
   /**
     * Return a TextBlob with a single run of text.

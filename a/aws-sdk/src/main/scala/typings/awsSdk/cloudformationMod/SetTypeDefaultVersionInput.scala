@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetTypeDefaultVersionInput extends js.Object {
+trait SetTypeDefaultVersionInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the type for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
@@ -36,42 +37,30 @@ object SetTypeDefaultVersionInput {
   }
   
   @scala.inline
-  implicit class SetTypeDefaultVersionInputOps[Self <: SetTypeDefaultVersionInput] (val x: Self) extends AnyVal {
+  implicit class SetTypeDefaultVersionInputMutableBuilder[Self <: SetTypeDefaultVersionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: PrivateTypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: PrivateTypeArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
     @scala.inline
-    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setVersionId(value: TypeVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: TypeVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,27 +60,15 @@ object GraphicRendererVCL {
   }
   
   @scala.inline
-  implicit class GraphicRendererVCLOps[Self <: GraphicRendererVCL] (val x: Self) extends AnyVal {
+  implicit class GraphicRendererVCLMutableBuilder[Self <: GraphicRendererVCL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationRect(value: Rectangle): Self = StObject.set(x, "DestinationRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevice(value: js.Any): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestinationRect(value: Rectangle): Self = this.set("DestinationRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDevice(value: js.Any): Self = this.set("Device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderData(value: js.Any): Self = this.set("RenderData", value.asInstanceOf[js.Any])
+    def setRenderData(value: js.Any): Self = StObject.set(x, "RenderData", value.asInstanceOf[js.Any])
   }
 }

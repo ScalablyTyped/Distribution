@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolClientDescription extends js.Object {
+trait UserPoolClientDescription extends StObject {
   
   /**
     * The ID of the client associated with the user pool.
@@ -31,36 +32,24 @@ object UserPoolClientDescription {
   }
   
   @scala.inline
-  implicit class UserPoolClientDescriptionOps[Self <: UserPoolClientDescription] (val x: Self) extends AnyVal {
+  implicit class UserPoolClientDescriptionMutableBuilder[Self <: UserPoolClientDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientName(value: ClientNameType): Self = StObject.set(x, "ClientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setClientNameUndefined: Self = StObject.set(x, "ClientName", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientName(value: ClientNameType): Self = this.set("ClientName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientName: Self = this.set("ClientName", js.undefined)
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

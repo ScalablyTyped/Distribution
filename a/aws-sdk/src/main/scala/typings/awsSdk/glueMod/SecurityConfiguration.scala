@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityConfiguration extends js.Object {
+trait SecurityConfiguration extends StObject {
   
   /**
     * The time at which this security configuration was created.
@@ -31,36 +32,24 @@ object SecurityConfiguration {
   }
   
   @scala.inline
-  implicit class SecurityConfigurationOps[Self <: SecurityConfiguration] (val x: Self) extends AnyVal {
+  implicit class SecurityConfigurationMutableBuilder[Self <: SecurityConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTimeStamp(value: TimestampValue): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimeStamp(value: TimestampValue): Self = this.set("CreatedTimeStamp", value.asInstanceOf[js.Any])
+    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimeStamp: Self = this.set("CreatedTimeStamp", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
-    
-    @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

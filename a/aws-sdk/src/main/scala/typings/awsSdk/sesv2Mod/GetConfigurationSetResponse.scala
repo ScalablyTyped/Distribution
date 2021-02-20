@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConfigurationSetResponse extends js.Object {
+trait GetConfigurationSetResponse extends StObject {
   
   /**
     * The name of the configuration set.
@@ -51,63 +52,51 @@ object GetConfigurationSetResponse {
   }
   
   @scala.inline
-  implicit class GetConfigurationSetResponseOps[Self <: GetConfigurationSetResponse] (val x: Self) extends AnyVal {
+  implicit class GetConfigurationSetResponseMutableBuilder[Self <: GetConfigurationSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliveryOptions(value: DeliveryOptions): Self = StObject.set(x, "DeliveryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setDeliveryOptionsUndefined: Self = StObject.set(x, "DeliveryOptions", js.undefined)
     
     @scala.inline
-    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    def setReputationOptions(value: ReputationOptions): Self = StObject.set(x, "ReputationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryOptions(value: DeliveryOptions): Self = this.set("DeliveryOptions", value.asInstanceOf[js.Any])
+    def setReputationOptionsUndefined: Self = StObject.set(x, "ReputationOptions", js.undefined)
     
     @scala.inline
-    def deleteDeliveryOptions: Self = this.set("DeliveryOptions", js.undefined)
+    def setSendingOptions(value: SendingOptions): Self = StObject.set(x, "SendingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReputationOptions(value: ReputationOptions): Self = this.set("ReputationOptions", value.asInstanceOf[js.Any])
+    def setSendingOptionsUndefined: Self = StObject.set(x, "SendingOptions", js.undefined)
     
     @scala.inline
-    def deleteReputationOptions: Self = this.set("ReputationOptions", js.undefined)
+    def setSuppressionOptions(value: SuppressionOptions): Self = StObject.set(x, "SuppressionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendingOptions(value: SendingOptions): Self = this.set("SendingOptions", value.asInstanceOf[js.Any])
+    def setSuppressionOptionsUndefined: Self = StObject.set(x, "SuppressionOptions", js.undefined)
     
     @scala.inline
-    def deleteSendingOptions: Self = this.set("SendingOptions", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressionOptions(value: SuppressionOptions): Self = this.set("SuppressionOptions", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSuppressionOptions: Self = this.set("SuppressionOptions", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTrackingOptions(value: TrackingOptions): Self = this.set("TrackingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingOptions: Self = this.set("TrackingOptions", js.undefined)
+    def setTrackingOptionsUndefined: Self = StObject.set(x, "TrackingOptions", js.undefined)
   }
 }

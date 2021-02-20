@@ -7,26 +7,14 @@ import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/io/http", JSImport.Namespace)
-@js.native
-object httpMod extends js.Object {
+object httpMod {
   
-  def browserHTTPRequest(path: String): IOHandler = js.native
-  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = js.native
-  
-  def http(path: String): IOHandler = js.native
-  def http(path: String, loadOptions: LoadOptions): IOHandler = js.native
-  
-  val httpRouter: IORouter = js.native
-  
-  def isHTTPScheme(url: String): Boolean = js.native
-  
-  def parseUrl(url: String): js.Tuple2[String, String] = js.native
-  
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "HTTPRequest")
   @js.native
   class HTTPRequest protected () extends IOHandler {
     def this(path: String) = this()
@@ -63,9 +51,36 @@ object httpMod extends js.Object {
     val weightUrlConverter: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object HTTPRequest extends js.Object {
+  object HTTPRequest {
     
+    @JSImport("@tensorflow/tfjs-core/dist/io/http", "HTTPRequest.URL_SCHEME_REGEX")
+    @js.native
     val URL_SCHEME_REGEX: RegExp = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "browserHTTPRequest")
+  @js.native
+  def browserHTTPRequest(path: String): IOHandler = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "browserHTTPRequest")
+  @js.native
+  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = js.native
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "http")
+  @js.native
+  def http(path: String): IOHandler = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "http")
+  @js.native
+  def http(path: String, loadOptions: LoadOptions): IOHandler = js.native
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "httpRouter")
+  @js.native
+  val httpRouter: IORouter = js.native
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "isHTTPScheme")
+  @js.native
+  def isHTTPScheme(url: String): Boolean = js.native
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/http", "parseUrl")
+  @js.native
+  def parseUrl(url: String): js.Tuple2[String, String] = js.native
 }

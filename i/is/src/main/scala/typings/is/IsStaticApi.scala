@@ -1,12 +1,13 @@
 package typings.is
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsStaticApi extends js.Object {
+trait IsStaticApi extends StObject {
   
   /**
     * Checks if the given value matches affirmative regexp.

@@ -1,11 +1,12 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenFinFrame extends js.Object {
+trait OpenFinFrame extends StObject {
   
   def addEventListener(`type`: String, listener: js.Function0[Unit]): Unit = js.native
   def addEventListener(

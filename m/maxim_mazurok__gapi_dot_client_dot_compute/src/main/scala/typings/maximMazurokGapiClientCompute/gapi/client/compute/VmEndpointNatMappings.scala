@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VmEndpointNatMappings extends js.Object {
+trait VmEndpointNatMappings extends StObject {
   
   /** Name of the VM instance which the endpoint belongs to */
   var instanceName: js.UndefOr[String] = js.native
@@ -21,33 +22,21 @@ object VmEndpointNatMappings {
   }
   
   @scala.inline
-  implicit class VmEndpointNatMappingsOps[Self <: VmEndpointNatMappings] (val x: Self) extends AnyVal {
+  implicit class VmEndpointNatMappingsMutableBuilder[Self <: VmEndpointNatMappings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterfaceNatMappings(value: js.Array[VmEndpointNatMappingsInterfaceNatMappings]): Self = StObject.set(x, "interfaceNatMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: String): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    def setInterfaceNatMappingsUndefined: Self = StObject.set(x, "interfaceNatMappings", js.undefined)
     
     @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
-    
-    @scala.inline
-    def setInterfaceNatMappingsVarargs(value: VmEndpointNatMappingsInterfaceNatMappings*): Self = this.set("interfaceNatMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setInterfaceNatMappings(value: js.Array[VmEndpointNatMappingsInterfaceNatMappings]): Self = this.set("interfaceNatMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterfaceNatMappings: Self = this.set("interfaceNatMappings", js.undefined)
+    def setInterfaceNatMappingsVarargs(value: VmEndpointNatMappingsInterfaceNatMappings*): Self = StObject.set(x, "interfaceNatMappings", js.Array(value :_*))
   }
 }

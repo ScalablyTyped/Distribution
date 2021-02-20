@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLayoutInterface extends js.Object {
+trait ChartLayoutInterface extends StObject {
   
   def getBoundingBox(id: String): ChartBoundingBox = js.native
   

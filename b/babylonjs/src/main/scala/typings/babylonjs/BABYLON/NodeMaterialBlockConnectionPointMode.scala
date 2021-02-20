@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeMaterialBlockConnectionPointMode extends js.Object
+sealed trait NodeMaterialBlockConnectionPointMode extends StObject
 @JSGlobal("BABYLON.NodeMaterialBlockConnectionPointMode")
 @js.native
-object NodeMaterialBlockConnectionPointMode extends js.Object {
+object NodeMaterialBlockConnectionPointMode extends StObject {
   
   /** Value is a mesh attribute */
   @js.native

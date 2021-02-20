@@ -1,5 +1,6 @@
 package typings.googleapis.driveV2Mod.driveV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A comment on a file in Google Drive.
   */
 @js.native
-trait SchemaCommentReply extends js.Object {
+trait SchemaCommentReply extends StObject {
   
   /**
     * The user who wrote this reply.
@@ -72,72 +73,60 @@ object SchemaCommentReply {
   }
   
   @scala.inline
-  implicit class SchemaCommentReplyOps[Self <: SchemaCommentReply] (val x: Self) extends AnyVal {
+  implicit class SchemaCommentReplyMutableBuilder[Self <: SchemaCommentReply] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: SchemaUser): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: SchemaUser): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setHtmlContent(value: String): Self = StObject.set(x, "htmlContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlContent(value: String): Self = this.set("htmlContent", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteHtmlContent: Self = this.set("htmlContent", js.undefined)
+    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setReplyId(value: String): Self = StObject.set(x, "replyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedDate(value: String): Self = this.set("modifiedDate", value.asInstanceOf[js.Any])
+    def setReplyIdUndefined: Self = StObject.set(x, "replyId", js.undefined)
     
     @scala.inline
-    def deleteModifiedDate: Self = this.set("modifiedDate", js.undefined)
+    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyId(value: String): Self = this.set("replyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyId: Self = this.set("replyId", js.undefined)
-    
-    @scala.inline
-    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerb: Self = this.set("verb", js.undefined)
+    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

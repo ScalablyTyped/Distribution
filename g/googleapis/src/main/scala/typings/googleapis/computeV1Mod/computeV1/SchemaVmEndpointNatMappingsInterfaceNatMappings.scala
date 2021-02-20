@@ -1,5 +1,6 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contain information of Nat mapping for an interface of this endpoint.
   */
 @js.native
-trait SchemaVmEndpointNatMappingsInterfaceNatMappings extends js.Object {
+trait SchemaVmEndpointNatMappingsInterfaceNatMappings extends StObject {
   
   /**
     * A list of all IP:port-range mappings assigned to this interface. These
@@ -45,45 +46,33 @@ object SchemaVmEndpointNatMappingsInterfaceNatMappings {
   }
   
   @scala.inline
-  implicit class SchemaVmEndpointNatMappingsInterfaceNatMappingsOps[Self <: SchemaVmEndpointNatMappingsInterfaceNatMappings] (val x: Self) extends AnyVal {
+  implicit class SchemaVmEndpointNatMappingsInterfaceNatMappingsMutableBuilder[Self <: SchemaVmEndpointNatMappingsInterfaceNatMappings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNatIpPortRanges(value: js.Array[String]): Self = StObject.set(x, "natIpPortRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNatIpPortRangesUndefined: Self = StObject.set(x, "natIpPortRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNatIpPortRangesVarargs(value: String*): Self = StObject.set(x, "natIpPortRanges", js.Array(value :_*))
     
     @scala.inline
-    def setNatIpPortRangesVarargs(value: String*): Self = this.set("natIpPortRanges", js.Array(value :_*))
+    def setNumTotalNatPorts(value: Double): Self = StObject.set(x, "numTotalNatPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatIpPortRanges(value: js.Array[String]): Self = this.set("natIpPortRanges", value.asInstanceOf[js.Any])
+    def setNumTotalNatPortsUndefined: Self = StObject.set(x, "numTotalNatPorts", js.undefined)
     
     @scala.inline
-    def deleteNatIpPortRanges: Self = this.set("natIpPortRanges", js.undefined)
+    def setSourceAliasIpRange(value: String): Self = StObject.set(x, "sourceAliasIpRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTotalNatPorts(value: Double): Self = this.set("numTotalNatPorts", value.asInstanceOf[js.Any])
+    def setSourceAliasIpRangeUndefined: Self = StObject.set(x, "sourceAliasIpRange", js.undefined)
     
     @scala.inline
-    def deleteNumTotalNatPorts: Self = this.set("numTotalNatPorts", js.undefined)
+    def setSourceVirtualIp(value: String): Self = StObject.set(x, "sourceVirtualIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAliasIpRange(value: String): Self = this.set("sourceAliasIpRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceAliasIpRange: Self = this.set("sourceAliasIpRange", js.undefined)
-    
-    @scala.inline
-    def setSourceVirtualIp(value: String): Self = this.set("sourceVirtualIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceVirtualIp: Self = this.set("sourceVirtualIp", js.undefined)
+    def setSourceVirtualIpUndefined: Self = StObject.set(x, "sourceVirtualIp", js.undefined)
   }
 }

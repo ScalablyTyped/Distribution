@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint extends js.Object {
+trait EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
@@ -21,21 +22,9 @@ object EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminListRunnerApplicationsForEnterpriseEndpointOps[Self <: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminListRunnerApplicationsForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnterprise(value: String): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
   }
 }

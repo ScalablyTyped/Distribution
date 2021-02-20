@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARTStatic extends js.Object {
+trait ARTStatic extends StObject {
   
   var ClippingRectangle: Instantiable0[typings.reactNative.mod.ClippingRectangle] = js.native
   
@@ -33,33 +34,21 @@ object ARTStatic {
   }
   
   @scala.inline
-  implicit class ARTStaticOps[Self <: ARTStatic] (val x: Self) extends AnyVal {
+  implicit class ARTStaticMutableBuilder[Self <: ARTStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClippingRectangle(value: Instantiable0[ClippingRectangle]): Self = StObject.set(x, "ClippingRectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroup(value: Instantiable0[Group]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShape(value: Instantiable0[Shape]): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippingRectangle(value: Instantiable0[ClippingRectangle]): Self = this.set("ClippingRectangle", value.asInstanceOf[js.Any])
+    def setSurface(value: Instantiable0[Surface]): Self = StObject.set(x, "Surface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Instantiable0[Group]): Self = this.set("Group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: Instantiable0[Shape]): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurface(value: Instantiable0[Surface]): Self = this.set("Surface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: Instantiable0[ARTText]): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setText(value: Instantiable0[ARTText]): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

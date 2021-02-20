@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A live stream describes a live ingestion point.
   */
 @js.native
-trait SchemaLiveStream extends js.Object {
+trait SchemaLiveStream extends StObject {
   
   /**
     * The cdn object defines the live stream&#39;s content delivery network
@@ -59,60 +60,48 @@ object SchemaLiveStream {
   }
   
   @scala.inline
-  implicit class SchemaLiveStreamOps[Self <: SchemaLiveStream] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveStreamMutableBuilder[Self <: SchemaLiveStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCdn(value: SchemaCdnSettings): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCdnUndefined: Self = StObject.set(x, "cdn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentDetails(value: SchemaLiveStreamContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdn(value: SchemaCdnSettings): Self = this.set("cdn", value.asInstanceOf[js.Any])
+    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
     @scala.inline
-    def deleteCdn: Self = this.set("cdn", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: SchemaLiveStreamContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setSnippet(value: SchemaLiveStreamSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setStatus(value: SchemaLiveStreamStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: SchemaLiveStreamSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SchemaLiveStreamStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

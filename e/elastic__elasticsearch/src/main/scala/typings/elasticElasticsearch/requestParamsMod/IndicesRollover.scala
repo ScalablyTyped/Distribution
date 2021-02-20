@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,63 +33,51 @@ object IndicesRollover {
   }
   
   @scala.inline
-  implicit class IndicesRolloverOps[Self <: IndicesRollover[_], T] (val x: Self with IndicesRollover[T]) extends AnyVal {
+  implicit class IndicesRolloverMutableBuilder[Self <: IndicesRollover[_], T] (val x: Self with IndicesRollover[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDry_runUndefined: Self = StObject.set(x, "dry_run", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setInclude_type_name(value: Boolean): Self = StObject.set(x, "include_type_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDry_run(value: Boolean): Self = this.set("dry_run", value.asInstanceOf[js.Any])
+    def setInclude_type_nameUndefined: Self = StObject.set(x, "include_type_name", js.undefined)
     
     @scala.inline
-    def deleteDry_run: Self = this.set("dry_run", js.undefined)
+    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_type_name(value: Boolean): Self = this.set("include_type_name", value.asInstanceOf[js.Any])
+    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
     @scala.inline
-    def deleteInclude_type_name: Self = this.set("include_type_name", js.undefined)
+    def setNew_index(value: String): Self = StObject.set(x, "new_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_timeout(value: String): Self = this.set("master_timeout", value.asInstanceOf[js.Any])
+    def setNew_indexUndefined: Self = StObject.set(x, "new_index", js.undefined)
     
     @scala.inline
-    def deleteMaster_timeout: Self = this.set("master_timeout", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_index(value: String): Self = this.set("new_index", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteNew_index: Self = this.set("new_index", js.undefined)
+    def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setWait_for_active_shards(value: String): Self = this.set("wait_for_active_shards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_active_shards: Self = this.set("wait_for_active_shards", js.undefined)
+    def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
   }
 }

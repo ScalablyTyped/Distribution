@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Devices.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the flash settings for a frame in a variable photo sequence. */
 @js.native
-trait FrameFlashControl extends js.Object {
+trait FrameFlashControl extends StObject {
   
   /** Gets or sets a value indicating whether flash settings are automatically set for a frame in a variable photo sequence. */
   var auto: Boolean = js.native
@@ -29,30 +30,18 @@ object FrameFlashControl {
   }
   
   @scala.inline
-  implicit class FrameFlashControlOps[Self <: FrameFlashControl] (val x: Self) extends AnyVal {
+  implicit class FrameFlashControlMutableBuilder[Self <: FrameFlashControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: FrameFlashMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerPercent(value: Double): Self = StObject.set(x, "powerPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: FrameFlashMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPercent(value: Double): Self = this.set("powerPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedEyeReduction(value: Boolean): Self = this.set("redEyeReduction", value.asInstanceOf[js.Any])
+    def setRedEyeReduction(value: Boolean): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
   }
 }

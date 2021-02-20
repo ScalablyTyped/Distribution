@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalUrlInfo extends js.Object {
+trait ApprovalUrlInfo extends StObject {
   
   /** A URL that displays a product's permissions and that can also be used to approve the product with the Products.approve call. */
   var approvalUrl: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object ApprovalUrlInfo {
   }
   
   @scala.inline
-  implicit class ApprovalUrlInfoOps[Self <: ApprovalUrlInfo] (val x: Self) extends AnyVal {
+  implicit class ApprovalUrlInfoMutableBuilder[Self <: ApprovalUrlInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApprovalUrl(value: String): Self = this.set("approvalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalUrl: Self = this.set("approvalUrl", js.undefined)
+    def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
   }
 }

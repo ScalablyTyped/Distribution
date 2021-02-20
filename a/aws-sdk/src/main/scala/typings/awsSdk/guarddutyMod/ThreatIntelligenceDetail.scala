@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreatIntelligenceDetail extends js.Object {
+trait ThreatIntelligenceDetail extends StObject {
   
   /**
     * The name of the threat intelligence list that triggered the finding.
@@ -26,33 +27,21 @@ object ThreatIntelligenceDetail {
   }
   
   @scala.inline
-  implicit class ThreatIntelligenceDetailOps[Self <: ThreatIntelligenceDetail] (val x: Self) extends AnyVal {
+  implicit class ThreatIntelligenceDetailMutableBuilder[Self <: ThreatIntelligenceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThreatListName(value: String): Self = StObject.set(x, "ThreatListName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThreatListNameUndefined: Self = StObject.set(x, "ThreatListName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreatNames(value: ThreatNames): Self = StObject.set(x, "ThreatNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatListName(value: String): Self = this.set("ThreatListName", value.asInstanceOf[js.Any])
+    def setThreatNamesUndefined: Self = StObject.set(x, "ThreatNames", js.undefined)
     
     @scala.inline
-    def deleteThreatListName: Self = this.set("ThreatListName", js.undefined)
-    
-    @scala.inline
-    def setThreatNamesVarargs(value: String*): Self = this.set("ThreatNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreatNames(value: ThreatNames): Self = this.set("ThreatNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatNames: Self = this.set("ThreatNames", js.undefined)
+    def setThreatNamesVarargs(value: String*): Self = StObject.set(x, "ThreatNames", js.Array(value :_*))
   }
 }

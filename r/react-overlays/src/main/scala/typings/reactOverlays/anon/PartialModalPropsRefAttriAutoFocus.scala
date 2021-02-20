@@ -19,13 +19,14 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-overlays.react-overlays/esm/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/esm/Modal.ModalHandle>> */
 @js.native
-trait PartialModalPropsRefAttriAutoFocus extends js.Object {
+trait PartialModalPropsRefAttriAutoFocus extends StObject {
   
   var autoFocus: js.UndefOr[Boolean] = js.native
   
@@ -96,213 +97,201 @@ object PartialModalPropsRefAttriAutoFocus {
   }
   
   @scala.inline
-  implicit class PartialModalPropsRefAttriAutoFocusOps[Self <: PartialModalPropsRefAttriAutoFocus] (val x: Self) extends AnyVal {
+  implicit class PartialModalPropsRefAttriAutoFocusMutableBuilder[Self <: PartialModalPropsRefAttriAutoFocus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackdrop(value: `true` | `false` | static): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setBackdropTransition(value: ModalTransitionComponent): Self = StObject.set(x, "backdropTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setBackdropTransitionUndefined: Self = StObject.set(x, "backdropTransition", js.undefined)
     
     @scala.inline
-    def setBackdrop(value: `true` | `false` | static): Self = this.set("backdrop", value.asInstanceOf[js.Any])
+    def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
     @scala.inline
-    def deleteBackdrop: Self = this.set("backdrop", js.undefined)
+    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropTransition(value: ModalTransitionComponent): Self = this.set("backdropTransition", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteBackdropTransition: Self = this.set("backdropTransition", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactElement): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setContainer(value: DOMContainer[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
     
     @scala.inline
-    def setContainerFunction0(value: () => HTMLElement | RefObject[HTMLElement] | Null): Self = this.set("container", js.Any.fromFunction0(value))
+    def setContainerFunction0(value: () => HTMLElement | RefObject[HTMLElement] | Null): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContainer(value: DOMContainer[HTMLElement]): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClassName(value: String): Self = this.set("containerClassName", value.asInstanceOf[js.Any])
+    def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
     
     @scala.inline
-    def deleteContainerClassName: Self = this.set("containerClassName", js.undefined)
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceFocus(value: Boolean): Self = this.set("enforceFocus", value.asInstanceOf[js.Any])
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def deleteEnforceFocus: Self = this.set("enforceFocus", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setManager(value: default): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setManagerUndefined: Self = StObject.set(x, "manager", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setOnBackdropClick(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setManager(value: default): Self = this.set("manager", value.asInstanceOf[js.Any])
+    def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
     
     @scala.inline
-    def deleteManager: Self = this.set("manager", js.undefined)
+    def setOnEnter(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBackdropClick(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = this.set("onBackdropClick", js.Any.fromFunction1(value))
+    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def deleteOnBackdropClick: Self = this.set("onBackdropClick", js.undefined)
+    def setOnEntered(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnter(value: /* node */ HTMLElement => _): Self = this.set("onEnter", js.Any.fromFunction1(value))
+    def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
     @scala.inline
-    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    def setOnEntering(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEntered(value: /* node */ HTMLElement => _): Self = this.set("onEntered", js.Any.fromFunction1(value))
+    def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
     @scala.inline
-    def deleteOnEntered: Self = this.set("onEntered", js.undefined)
+    def setOnEscapeKeyDown(value: /* e */ KeyboardEvent => Unit): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEntering(value: /* node */ HTMLElement => _): Self = this.set("onEntering", js.Any.fromFunction1(value))
+    def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
     
     @scala.inline
-    def deleteOnEntering: Self = this.set("onEntering", js.undefined)
+    def setOnExit(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEscapeKeyDown(value: /* e */ KeyboardEvent => Unit): Self = this.set("onEscapeKeyDown", js.Any.fromFunction1(value))
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def deleteOnEscapeKeyDown: Self = this.set("onEscapeKeyDown", js.undefined)
+    def setOnExited(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnExit(value: /* node */ HTMLElement => _): Self = this.set("onExit", js.Any.fromFunction1(value))
+    def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
     @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    def setOnExiting(value: /* node */ HTMLElement => _): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnExited(value: /* node */ HTMLElement => _): Self = this.set("onExited", js.Any.fromFunction1(value))
+    def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
     
     @scala.inline
-    def deleteOnExited: Self = this.set("onExited", js.undefined)
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnExiting(value: /* node */ HTMLElement => _): Self = this.set("onExiting", js.Any.fromFunction1(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnExiting: Self = this.set("onExiting", js.undefined)
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setRef(value: typings.react.mod.Ref[ModalHandle]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setRefFunction1(value: /* instance */ ModalHandle | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ ModalHandle | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRef(value: typings.react.mod.Ref[ModalHandle]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRenderBackdrop(value: /* props */ RenderModalBackdropProps => ReactNode): Self = StObject.set(x, "renderBackdrop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setRenderBackdropUndefined: Self = StObject.set(x, "renderBackdrop", js.undefined)
     
     @scala.inline
-    def setRefNull: Self = this.set("ref", null)
+    def setRenderDialog(value: /* props */ RenderModalDialogProps => ReactNode): Self = StObject.set(x, "renderDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderBackdrop(value: /* props */ RenderModalBackdropProps => ReactNode): Self = this.set("renderBackdrop", js.Any.fromFunction1(value))
+    def setRenderDialogUndefined: Self = StObject.set(x, "renderDialog", js.undefined)
     
     @scala.inline
-    def deleteRenderBackdrop: Self = this.set("renderBackdrop", js.undefined)
+    def setRestoreFocus(value: Boolean): Self = StObject.set(x, "restoreFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderDialog(value: /* props */ RenderModalDialogProps => ReactNode): Self = this.set("renderDialog", js.Any.fromFunction1(value))
+    def setRestoreFocusOptions(value: PreventScroll): Self = StObject.set(x, "restoreFocusOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderDialog: Self = this.set("renderDialog", js.undefined)
+    def setRestoreFocusOptionsUndefined: Self = StObject.set(x, "restoreFocusOptions", js.undefined)
     
     @scala.inline
-    def setRestoreFocus(value: Boolean): Self = this.set("restoreFocus", value.asInstanceOf[js.Any])
+    def setRestoreFocusUndefined: Self = StObject.set(x, "restoreFocus", js.undefined)
     
     @scala.inline
-    def deleteRestoreFocus: Self = this.set("restoreFocus", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestoreFocusOptions(value: PreventScroll): Self = this.set("restoreFocusOptions", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteRestoreFocusOptions: Self = this.set("restoreFocusOptions", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTransition(value: ModalTransitionComponent): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTransition(value: ModalTransitionComponent): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

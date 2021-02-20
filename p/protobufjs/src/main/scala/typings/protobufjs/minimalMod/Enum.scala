@@ -2,6 +2,7 @@ package typings.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,9 +100,7 @@ class Enum protected ()
   ) = this()
 }
 /* static members */
-@JSImport("protobufjs/minimal", "Enum")
-@js.native
-object Enum extends js.Object {
+object Enum {
   
   /**
     * Constructs an enum from an enum descriptor.
@@ -110,5 +109,7 @@ object Enum extends js.Object {
     * @returns Created enum
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("protobufjs/minimal", "Enum.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IEnum): typings.protobufjs.mod.Enum = js.native
 }

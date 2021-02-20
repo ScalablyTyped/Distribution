@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object IndicesPutSettingsParams {
   }
   
   @scala.inline
-  implicit class IndicesPutSettingsParamsOps[Self <: IndicesPutSettingsParams] (val x: Self) extends AnyVal {
+  implicit class IndicesPutSettingsParamsMutableBuilder[Self <: IndicesPutSettingsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
     @scala.inline
-    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
     @scala.inline
-    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
     @scala.inline
-    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatSettings(value: Boolean): Self = this.set("flatSettings", value.asInstanceOf[js.Any])
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def deleteFlatSettings: Self = this.set("flatSettings", js.undefined)
+    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    def setPreserveExisting(value: Boolean): Self = StObject.set(x, "preserveExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
-    
-    @scala.inline
-    def setPreserveExisting(value: Boolean): Self = this.set("preserveExisting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveExisting: Self = this.set("preserveExisting", js.undefined)
+    def setPreserveExistingUndefined: Self = StObject.set(x, "preserveExisting", js.undefined)
   }
 }

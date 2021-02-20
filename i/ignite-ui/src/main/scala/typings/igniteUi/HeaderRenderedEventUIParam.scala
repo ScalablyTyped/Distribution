@@ -1,12 +1,13 @@
 package typings.igniteUi
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderRenderedEventUIParam extends js.Object {
+trait HeaderRenderedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the grid.
@@ -27,30 +28,18 @@ object HeaderRenderedEventUIParam {
   }
   
   @scala.inline
-  implicit class HeaderRenderedEventUIParamOps[Self <: HeaderRenderedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class HeaderRenderedEventUIParamMutableBuilder[Self <: HeaderRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setTable(value: Element): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

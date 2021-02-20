@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 import typings.winrtUwp.Windows.Foundation.Numerics.Vector2
 import typings.winrtUwp.Windows.Foundation.Numerics.Vector3
 import typings.winrtUwp.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the intrinsics that describe the camera distortion model. */
 @js.native
-trait CameraIntrinsics extends js.Object {
+trait CameraIntrinsics extends StObject {
   
   /** Gets the focal length of the camera. */
   var focalLength: Vector2 = js.native
@@ -77,48 +78,36 @@ object CameraIntrinsics {
   }
   
   @scala.inline
-  implicit class CameraIntrinsicsOps[Self <: CameraIntrinsics] (val x: Self) extends AnyVal {
+  implicit class CameraIntrinsicsMutableBuilder[Self <: CameraIntrinsics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFocalLength(value: Vector2): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocalLength(value: Vector2): Self = this.set("focalLength", value.asInstanceOf[js.Any])
+    def setPrincipalPoint(value: Vector2): Self = StObject.set(x, "principalPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    def setProjectManyOntoFrame(value: Vector3 => Point): Self = StObject.set(x, "projectManyOntoFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageWidth(value: Double): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
+    def setProjectOntoFrame(value: Vector3 => Point): Self = StObject.set(x, "projectOntoFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrincipalPoint(value: Vector2): Self = this.set("principalPoint", value.asInstanceOf[js.Any])
+    def setRadialDistortion(value: Vector3): Self = StObject.set(x, "radialDistortion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectManyOntoFrame(value: Vector3 => Point): Self = this.set("projectManyOntoFrame", js.Any.fromFunction1(value))
+    def setTangentialDistortion(value: Vector2): Self = StObject.set(x, "tangentialDistortion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectOntoFrame(value: Vector3 => Point): Self = this.set("projectOntoFrame", js.Any.fromFunction1(value))
+    def setUnprojectAtUnitDepth(value: Point => Vector2): Self = StObject.set(x, "unprojectAtUnitDepth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRadialDistortion(value: Vector3): Self = this.set("radialDistortion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTangentialDistortion(value: Vector2): Self = this.set("tangentialDistortion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnprojectAtUnitDepth(value: Point => Vector2): Self = this.set("unprojectAtUnitDepth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnprojectPixelsAtUnitDepth(value: Point => Vector2): Self = this.set("unprojectPixelsAtUnitDepth", js.Any.fromFunction1(value))
+    def setUnprojectPixelsAtUnitDepth(value: Point => Vector2): Self = StObject.set(x, "unprojectPixelsAtUnitDepth", js.Any.fromFunction1(value))
   }
 }

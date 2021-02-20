@@ -1,34 +1,31 @@
 package typings.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AccessibilitySupport extends js.Object
+sealed trait AccessibilitySupport extends StObject
 @JSImport("monaco-editor", "editor.AccessibilitySupport")
 @js.native
-object AccessibilitySupport extends js.Object {
+object AccessibilitySupport extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AccessibilitySupport with Double] = js.native
   
   @js.native
   sealed trait Disabled extends AccessibilitySupport
-  /* 1 */ @js.native
-  object Disabled extends TopLevel[Disabled with Double]
+  /* 1 */ val Disabled: typings.monacoEditor.mod.editor.AccessibilitySupport.Disabled with Double = js.native
   
   @js.native
   sealed trait Enabled extends AccessibilitySupport
-  /* 2 */ @js.native
-  object Enabled extends TopLevel[Enabled with Double]
+  /* 2 */ val Enabled: typings.monacoEditor.mod.editor.AccessibilitySupport.Enabled with Double = js.native
   
   /**
     * This should be the browser case where it is not known if a screen reader is attached or no.
     */
   @js.native
   sealed trait Unknown extends AccessibilitySupport
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  /* 0 */ val Unknown: typings.monacoEditor.mod.editor.AccessibilitySupport.Unknown with Double = js.native
 }

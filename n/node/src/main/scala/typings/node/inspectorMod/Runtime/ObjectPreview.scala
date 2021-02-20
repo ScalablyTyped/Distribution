@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @experimental
   */
 @js.native
-trait ObjectPreview extends js.Object {
+trait ObjectPreview extends StObject {
   
   /**
     * String representation of the object.
@@ -51,51 +52,39 @@ object ObjectPreview {
   }
   
   @scala.inline
-  implicit class ObjectPreviewOps[Self <: ObjectPreview] (val x: Self) extends AnyVal {
+  implicit class ObjectPreviewMutableBuilder[Self <: ObjectPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: js.Array[EntryPreview]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: Boolean): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def setPropertiesVarargs(value: PropertyPreview*): Self = this.set("properties", js.Array(value :_*))
+    def setEntriesVarargs(value: EntryPreview*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def setProperties(value: js.Array[PropertyPreview]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Array[PropertyPreview]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(value: PropertyPreview*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntriesVarargs(value: EntryPreview*): Self = this.set("entries", js.Array(value :_*))
+    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
     @scala.inline
-    def setEntries(value: js.Array[EntryPreview]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
-    
-    @scala.inline
-    def setSubtype(value: String): Self = this.set("subtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtype: Self = this.set("subtype", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

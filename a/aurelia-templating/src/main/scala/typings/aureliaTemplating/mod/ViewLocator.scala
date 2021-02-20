@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.aureliaMetadata.mod.Origin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewLocator")
 @js.native
-class ViewLocator () extends js.Object {
+class ViewLocator () extends StObject {
   
   /**
     * Conventionally converts a view model origin to a view url.
@@ -33,12 +34,18 @@ class ViewLocator () extends js.Object {
   def getViewStrategy(value: js.Any): ViewStrategy_ = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "ViewLocator")
-@js.native
-object ViewLocator extends js.Object {
+object ViewLocator {
+  
+  @JSImport("aurelia-templating", "ViewLocator")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The metadata key for storing/finding view strategies associated with an class/object.
     */
-  var viewStrategyMetadataKey: js.Any = js.native
+  @JSImport("aurelia-templating", "ViewLocator.viewStrategyMetadataKey")
+  @js.native
+  def viewStrategyMetadataKey: js.Any = js.native
+  @scala.inline
+  def viewStrategyMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewStrategyMetadataKey")(x.asInstanceOf[js.Any])
 }

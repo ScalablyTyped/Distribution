@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait htmlInputImage extends js.Object {
+trait htmlInputImage extends StObject {
   
   @JSName("MSHTML.htmlInputImage_typekey")
   var MSHTMLDothtmlInputImage_typekey: htmlInputImage = js.native

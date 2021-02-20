@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceGroupProperties extends js.Object {
+trait ResourceGroupProperties extends StObject {
   
   /**
     * The provisioning state.
@@ -21,24 +22,12 @@ object ResourceGroupProperties {
   }
   
   @scala.inline
-  implicit class ResourceGroupPropertiesOps[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
+  implicit class ResourceGroupPropertiesMutableBuilder[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvisioningState(value: String): Self = this.set("provisioningState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningState: Self = this.set("provisioningState", js.undefined)
+    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
   }
 }

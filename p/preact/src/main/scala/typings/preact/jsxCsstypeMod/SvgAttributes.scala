@@ -1,5 +1,6 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -253,7 +254,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.`[z]`
   - typings.preact.preactStrings.`[zoomAndPan]`
 */
-trait SvgAttributes extends js.Object
+trait SvgAttributes extends StObject
 object SvgAttributes {
   
   @scala.inline

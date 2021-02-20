@@ -5,6 +5,7 @@ import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionSta
 import typings.winrt.Windows.ApplicationModel.Activation.ICachedFileUpdaterActivatedEventArgs
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Storage.Provider.CachedFileUpdaterUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonHTMLOutputProcessor extends js.Object {
+trait CommonHTMLOutputProcessor extends StObject {
   
   /*This is an object that configures automatic linebreaking in the CommonHTML output. In order to be backward
     * compatible with earlier versions of MathJax, only explicit line breaks are performed by default, so you must
@@ -40,42 +41,30 @@ object CommonHTMLOutputProcessor {
   }
   
   @scala.inline
-  implicit class CommonHTMLOutputProcessorOps[Self <: CommonHTMLOutputProcessor] (val x: Self) extends AnyVal {
+  implicit class CommonHTMLOutputProcessorMutableBuilder[Self <: CommonHTMLOutputProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinebreaksUndefined: Self = StObject.set(x, "linebreaks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinebreaks(value: LineBreaks): Self = this.set("linebreaks", value.asInstanceOf[js.Any])
+    def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
     
     @scala.inline
-    def deleteLinebreaks: Self = this.set("linebreaks", js.undefined)
+    def setMtextFontInherit(value: Boolean): Self = StObject.set(x, "mtextFontInherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScaleAdjust(value: Double): Self = this.set("minScaleAdjust", value.asInstanceOf[js.Any])
+    def setMtextFontInheritUndefined: Self = StObject.set(x, "mtextFontInherit", js.undefined)
     
     @scala.inline
-    def deleteMinScaleAdjust: Self = this.set("minScaleAdjust", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtextFontInherit(value: Boolean): Self = this.set("mtextFontInherit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMtextFontInherit: Self = this.set("mtextFontInherit", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

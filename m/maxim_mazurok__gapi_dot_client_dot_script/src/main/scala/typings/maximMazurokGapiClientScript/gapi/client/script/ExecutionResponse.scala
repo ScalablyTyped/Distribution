@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionResponse extends js.Object {
+trait ExecutionResponse extends StObject {
   
   /**
     * The return value of the script function. The type matches the object type returned in Apps Script. Functions called using the Apps Script API cannot return Apps Script-specific
@@ -22,24 +23,12 @@ object ExecutionResponse {
   }
   
   @scala.inline
-  implicit class ExecutionResponseOps[Self <: ExecutionResponse] (val x: Self) extends AnyVal {
+  implicit class ExecutionResponseMutableBuilder[Self <: ExecutionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetIdentityFeedbackForwardingEnabledRequest extends js.Object {
+trait SetIdentityFeedbackForwardingEnabledRequest extends StObject {
   
   /**
     * Sets whether Amazon SES will forward bounce and complaint notifications as email. true specifies that Amazon SES will forward bounce and complaint notifications as email, in addition to any Amazon SNS topic publishing otherwise specified. false specifies that Amazon SES will publish bounce and complaint notifications only through Amazon SNS. This value can only be set to false when Amazon SNS topics are set for both Bounce and Complaint notification types.
@@ -26,24 +27,12 @@ object SetIdentityFeedbackForwardingEnabledRequest {
   }
   
   @scala.inline
-  implicit class SetIdentityFeedbackForwardingEnabledRequestOps[Self <: SetIdentityFeedbackForwardingEnabledRequest] (val x: Self) extends AnyVal {
+  implicit class SetIdentityFeedbackForwardingEnabledRequestMutableBuilder[Self <: SetIdentityFeedbackForwardingEnabledRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardingEnabled(value: Enabled): Self = StObject.set(x, "ForwardingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForwardingEnabled(value: Enabled): Self = this.set("ForwardingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentity(value: Identity): Self = this.set("Identity", value.asInstanceOf[js.Any])
+    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
   }
 }

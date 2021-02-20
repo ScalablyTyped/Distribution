@@ -3,12 +3,13 @@ package typings.blessed.mod.Widgets
 import typings.blessed.anon.X
 import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Coords extends js.Object {
+trait Coords extends StObject {
   
   var _contentEnd: X = js.native
   
@@ -50,48 +51,36 @@ object Coords {
   }
   
   @scala.inline
-  implicit class CoordsOps[Self <: Coords] (val x: Self) extends AnyVal {
+  implicit class CoordsMutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNobot(value: TPosition): Self = StObject.set(x, "nobot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoleft(value: TTopLeft): Self = StObject.set(x, "noleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_contentEnd(value: X): Self = this.set("_contentEnd", value.asInstanceOf[js.Any])
+    def setNoright(value: TPosition): Self = StObject.set(x, "noright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: Double): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setNotop(value: TTopLeft): Self = StObject.set(x, "notop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNobot(value: TPosition): Self = this.set("nobot", value.asInstanceOf[js.Any])
+    def setXi(value: Double): Self = StObject.set(x, "xi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoleft(value: TTopLeft): Self = this.set("noleft", value.asInstanceOf[js.Any])
+    def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoright(value: TPosition): Self = this.set("noright", value.asInstanceOf[js.Any])
+    def setYi(value: Double): Self = StObject.set(x, "yi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotop(value: TTopLeft): Self = this.set("notop", value.asInstanceOf[js.Any])
+    def setYl(value: Double): Self = StObject.set(x, "yl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXi(value: Double): Self = this.set("xi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXl(value: Double): Self = this.set("xl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYi(value: Double): Self = this.set("yi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYl(value: Double): Self = this.set("yl", value.asInstanceOf[js.Any])
+    def set_contentEnd(value: X): Self = StObject.set(x, "_contentEnd", value.asInstanceOf[js.Any])
   }
 }

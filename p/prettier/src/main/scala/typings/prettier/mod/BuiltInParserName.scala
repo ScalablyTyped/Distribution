@@ -1,5 +1,6 @@
 package typings.prettier.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.prettier.prettierStrings.yaml
   - typings.prettier.prettierStrings.lwc
 */
-trait BuiltInParserName extends js.Object
+trait BuiltInParserName extends StObject
 object BuiltInParserName {
   
   @scala.inline

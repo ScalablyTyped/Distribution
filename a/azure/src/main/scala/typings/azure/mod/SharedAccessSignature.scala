@@ -1,12 +1,13 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "SharedAccessSignature")
 @js.native
-class SharedAccessSignature protected () extends js.Object {
+class SharedAccessSignature protected () extends StObject {
   def this(storageAccount: String, storageAccessKey: String, permissionSet: js.Array[String]) = this()
   
   /**

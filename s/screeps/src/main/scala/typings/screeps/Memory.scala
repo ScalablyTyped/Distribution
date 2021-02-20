@@ -1,12 +1,13 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Memory extends js.Object {
+trait Memory extends StObject {
   
   var creeps: StringDictionary[CreepMemory] = js.native
   
@@ -33,33 +34,21 @@ object Memory {
   }
   
   @scala.inline
-  implicit class MemoryOps[Self <: Memory] (val x: Self) extends AnyVal {
+  implicit class MemoryMutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreeps(value: StringDictionary[CreepMemory]): Self = StObject.set(x, "creeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: StringDictionary[FlagMemory]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPowerCreeps(value: StringDictionary[PowerCreepMemory]): Self = StObject.set(x, "powerCreeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreeps(value: StringDictionary[CreepMemory]): Self = this.set("creeps", value.asInstanceOf[js.Any])
+    def setRooms(value: StringDictionary[RoomMemory]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: StringDictionary[FlagMemory]): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerCreeps(value: StringDictionary[PowerCreepMemory]): Self = this.set("powerCreeps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRooms(value: StringDictionary[RoomMemory]): Self = this.set("rooms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpawns(value: StringDictionary[SpawnMemory]): Self = this.set("spawns", value.asInstanceOf[js.Any])
+    def setSpawns(value: StringDictionary[SpawnMemory]): Self = StObject.set(x, "spawns", value.asInstanceOf[js.Any])
   }
 }

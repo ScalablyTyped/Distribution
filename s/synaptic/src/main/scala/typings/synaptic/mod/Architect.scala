@@ -1,16 +1,16 @@
 package typings.synaptic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("synaptic", "Architect")
-@js.native
-object Architect extends js.Object {
+object Architect {
   
   /**
     * The Hopfield architecture serves as content-addressable memory. They are trained to remember patterns and then when feeding new patterns to the network it returns the most similar one from the patterns it was trained to remember.
     */
+  @JSImport("synaptic", "Architect.Hopfield")
   @js.native
   class Hopfield protected () extends Network {
     /**
@@ -35,6 +35,7 @@ object Architect extends js.Object {
   /**
     * The long short-term memory is an architecture well-suited to learn from experience to classify, process and predict time series when there are very long time lags of unknown size between important events.
     */
+  @JSImport("synaptic", "Architect.LSTM")
   @js.native
   class LSTM protected () extends Network {
     /**
@@ -49,6 +50,7 @@ object Architect extends js.Object {
   /**
     * The Liquid architecture allows you to create Liquid State Machines. In these networks, neurons are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes.
     */
+  @JSImport("synaptic", "Architect.Liquid")
   @js.native
   class Liquid protected () extends Network {
     /**
@@ -67,6 +69,7 @@ object Architect extends js.Object {
   /**
     * This architecture allows you to create multilayer perceptrons, also known as feed-forward neural networks. They consist of a sequence of layers, each fully connected to the next one.
     */
+  @JSImport("synaptic", "Architect.Perceptron")
   @js.native
   class Perceptron protected () extends Network {
     /**

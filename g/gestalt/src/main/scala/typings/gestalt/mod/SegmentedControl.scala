@@ -1,11 +1,19 @@
 package typings.gestalt.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gestalt", "SegmentedControl")
 @js.native
-class SegmentedControl ()
-  extends Component[SegmentedControlProps, js.Any, js.Any]
+class SegmentedControl protected ()
+  extends Component[SegmentedControlProps, js.Any, js.Any] {
+  def this(props: SegmentedControlProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: SegmentedControlProps, context: js.Any) = this()
+}

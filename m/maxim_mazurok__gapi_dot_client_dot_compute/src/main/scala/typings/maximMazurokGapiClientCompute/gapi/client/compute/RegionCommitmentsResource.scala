@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.Alt
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRegionRequestId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionCommitmentsResource extends js.Object {
+trait RegionCommitmentsResource extends StObject {
   
   /** Retrieves an aggregated list of commitments. */
   def aggregatedList(): Request[CommitmentAggregatedList] = js.native

@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellHeight extends js.Object {
+trait CellHeight extends StObject {
   
   var cellHeight: js.UndefOr[Double] = js.native
   
@@ -32,63 +33,51 @@ object CellHeight {
   }
   
   @scala.inline
-  implicit class CellHeightOps[Self <: CellHeight] (val x: Self) extends AnyVal {
+  implicit class CellHeightMutableBuilder[Self <: CellHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setCellPerRow(value: Double): Self = StObject.set(x, "cellPerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellHeight(value: Double): Self = this.set("cellHeight", value.asInstanceOf[js.Any])
+    def setCellPerRowUndefined: Self = StObject.set(x, "cellPerRow", js.undefined)
     
     @scala.inline
-    def deleteCellHeight: Self = this.set("cellHeight", js.undefined)
+    def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellMargin(value: Double): Self = this.set("cellMargin", value.asInstanceOf[js.Any])
+    def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
     
     @scala.inline
-    def deleteCellMargin: Self = this.set("cellMargin", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellPerRow(value: Double): Self = this.set("cellPerRow", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCellPerRow: Self = this.set("cellPerRow", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setCellWidth(value: Double): Self = this.set("cellWidth", value.asInstanceOf[js.Any])
+    def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCellWidth: Self = this.set("cellWidth", js.undefined)
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPaletteVarargs(value: js.Any*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setPaletteVarargs(value: js.Any*): Self = this.set("palette", js.Array(value :_*))
-    
-    @scala.inline
-    def setPalette(value: js.Array[js.Any]): Self = this.set("palette", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

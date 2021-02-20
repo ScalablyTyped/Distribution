@@ -1,10 +1,11 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember", "Application")
+@JSImport("ember", "default.Application")
 @js.native
 class Application ()
-  extends typings.emberApplication.mod.Application
+  extends typings.ember.mod.Ember.Application

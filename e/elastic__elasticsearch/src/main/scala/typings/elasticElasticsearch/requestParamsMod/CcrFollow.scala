@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object CcrFollow {
   }
   
   @scala.inline
-  implicit class CcrFollowOps[Self <: CcrFollow[_], T] (val x: Self with CcrFollow[T]) extends AnyVal {
+  implicit class CcrFollowMutableBuilder[Self <: CcrFollow[_], T] (val x: Self with CcrFollow[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWait_for_active_shards(value: String): Self = this.set("wait_for_active_shards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_active_shards: Self = this.set("wait_for_active_shards", js.undefined)
+    def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
   }
 }

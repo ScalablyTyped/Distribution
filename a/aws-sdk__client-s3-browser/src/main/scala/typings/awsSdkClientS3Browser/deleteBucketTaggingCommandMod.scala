@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesDeleteBucketTaggingInputMod.DeleteBuck
 import typings.awsSdkClientS3Browser.typesDeleteBucketTaggingOutputMod.DeleteBucketTaggingOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/DeleteBucketTaggingCommand", JSImport.Namespace)
-@js.native
-object deleteBucketTaggingCommandMod extends js.Object {
+object deleteBucketTaggingCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/DeleteBucketTaggingCommand", "DeleteBucketTaggingCommand")
   @js.native
   class DeleteBucketTaggingCommand protected () extends Command[
           InputTypesUnion, 

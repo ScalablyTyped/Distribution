@@ -11,6 +11,7 @@ import typings.tedious.tediousStrings.error
 import typings.tedious.tediousStrings.errorMessage
 import typings.tedious.tediousStrings.infoMessage
 import typings.tedious.tediousStrings.languageChange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

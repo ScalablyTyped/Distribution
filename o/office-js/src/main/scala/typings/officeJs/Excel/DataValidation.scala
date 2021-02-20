@@ -16,6 +16,7 @@ import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.TextLength
 import typings.officeJs.officeJsStrings.Time
 import typings.officeJs.officeJsStrings.WholeNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

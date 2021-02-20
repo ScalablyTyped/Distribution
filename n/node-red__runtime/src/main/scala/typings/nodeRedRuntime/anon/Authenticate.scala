@@ -3,16 +3,17 @@ package typings.nodeRedRuntime.anon
 import typings.nodeRedRuntime.mod.AnonymousPermissions
 import typings.nodeRedRuntime.mod.UsernamePermissions
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.credentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authenticate extends js.Object {
-  
-  def authenticate(username: String, password: String): js.Promise[UsernamePermissions | Null] = js.native
+trait Authenticate extends StObject {
   
   def default(): js.Promise[AnonymousPermissions | Null] = js.native
+  
+  def authenticate(username: String, password: String): js.Promise[UsernamePermissions | Null] = js.native
   
   var `type`: credentials = js.native
   
@@ -33,30 +34,18 @@ object Authenticate {
   }
   
   @scala.inline
-  implicit class AuthenticateOps[Self <: Authenticate] (val x: Self) extends AnyVal {
+  implicit class AuthenticateMutableBuilder[Self <: Authenticate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticate(value: (String, String) => js.Promise[UsernamePermissions | Null]): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault(value: () => js.Promise[AnonymousPermissions | Null]): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: credentials): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticate(value: (String, String) => js.Promise[UsernamePermissions | Null]): Self = this.set("authenticate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDefault(value: () => js.Promise[AnonymousPermissions | Null]): Self = this.set("default", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: credentials): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsers(value: String => js.Promise[UsernamePermissions | Null]): Self = this.set("users", js.Any.fromFunction1(value))
+    def setUsers(value: String => js.Promise[UsernamePermissions | Null]): Self = StObject.set(x, "users", js.Any.fromFunction1(value))
   }
 }

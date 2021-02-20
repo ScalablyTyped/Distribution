@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3Impression extends js.Object {
+trait GoogleMapsPlayablelocationsV3Impression extends StObject {
   
   /**
     * An arbitrary, developer-defined type identifier for each type of game object used in your game. Since players interact with differ types of game objects in different ways, this
@@ -29,36 +30,24 @@ object GoogleMapsPlayablelocationsV3Impression {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3ImpressionOps[Self <: GoogleMapsPlayablelocationsV3Impression] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3ImpressionMutableBuilder[Self <: GoogleMapsPlayablelocationsV3Impression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameObjectTypeUndefined: Self = StObject.set(x, "gameObjectType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressionType(value: String): Self = StObject.set(x, "impressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameObjectType(value: Double): Self = this.set("gameObjectType", value.asInstanceOf[js.Any])
+    def setImpressionTypeUndefined: Self = StObject.set(x, "impressionType", js.undefined)
     
     @scala.inline
-    def deleteGameObjectType: Self = this.set("gameObjectType", js.undefined)
+    def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionType(value: String): Self = this.set("impressionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressionType: Self = this.set("impressionType", js.undefined)
-    
-    @scala.inline
-    def setLocationName(value: String): Self = this.set("locationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationName: Self = this.set("locationName", js.undefined)
+    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
   }
 }

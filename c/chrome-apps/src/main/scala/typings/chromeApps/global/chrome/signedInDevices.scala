@@ -1,6 +1,7 @@
 package typings.chromeApps.global.chrome
 
 import typings.chromeApps.chrome.signedInDevices.DeviceInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use the *chrome.signedInDevices* API to get a list of devices
   * signed into chrome with the same account as the current profile.
   */
-@JSGlobal("chrome.signedInDevices")
-@js.native
-object signedInDevices extends js.Object {
+object signedInDevices {
   
   /**
     * Gets the array of signed in devices, signed into the same account as the current profile.
     * @param callback The callback to be invoked with the array of DeviceInfo objects.
     */
+  @JSGlobal("chrome.signedInDevices.get")
+  @js.native
   def get(callback: js.Function1[/* devices */ js.Array[DeviceInfo], Unit]): Unit = js.native
   /**
     * Gets the array of signed in devices, signed into the same account as the current profile.
@@ -30,6 +31,8 @@ object signedInDevices extends js.Object {
     * If false or omitted return the list of all devices including the local device.
     * @param callback The callback to be invoked with the array of DeviceInfo objects.
     */
+  @JSGlobal("chrome.signedInDevices.get")
+  @js.native
   def get(isLocal: Boolean, callback: js.Function1[/* devices */ js.Array[DeviceInfo], Unit]): Unit = js.native
   
   /**
@@ -38,5 +41,7 @@ object signedInDevices extends js.Object {
     * Provides *devices*:
     * The array of all signed in devices.
     */
+  @JSGlobal("chrome.signedInDevices.onDeviceInfoChange")
+  @js.native
   val onDeviceInfoChange: typings.chromeApps.chrome.events.Event[js.Function1[/* devices */ js.Array[DeviceInfo], Unit]] = js.native
 }

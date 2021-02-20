@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3TransactionDecisionValueSpec extends js.Object {
+trait GoogleActionsTransactionsV3TransactionDecisionValueSpec extends StObject {
   
   /**
     * The order that's ready for user to approve.
@@ -36,42 +37,30 @@ object GoogleActionsTransactionsV3TransactionDecisionValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3TransactionDecisionValueSpecOps[Self <: GoogleActionsTransactionsV3TransactionDecisionValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3TransactionDecisionValueSpecMutableBuilder[Self <: GoogleActionsTransactionsV3TransactionDecisionValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderOptions(value: GoogleActionsTransactionsV3OrderOptions): Self = StObject.set(x, "orderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderOptionsUndefined: Self = StObject.set(x, "orderOptions", js.undefined)
     
     @scala.inline
-    def setOrder(value: GoogleActionsOrdersV3Order): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setPaymentParameters(value: GoogleActionsTransactionsV3PaymentParameters): Self = StObject.set(x, "paymentParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderOptions(value: GoogleActionsTransactionsV3OrderOptions): Self = this.set("orderOptions", value.asInstanceOf[js.Any])
+    def setPaymentParametersUndefined: Self = StObject.set(x, "paymentParameters", js.undefined)
     
     @scala.inline
-    def deleteOrderOptions: Self = this.set("orderOptions", js.undefined)
+    def setPresentationOptions(value: GoogleActionsTransactionsV3PresentationOptions): Self = StObject.set(x, "presentationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentParameters(value: GoogleActionsTransactionsV3PaymentParameters): Self = this.set("paymentParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentParameters: Self = this.set("paymentParameters", js.undefined)
-    
-    @scala.inline
-    def setPresentationOptions(value: GoogleActionsTransactionsV3PresentationOptions): Self = this.set("presentationOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresentationOptions: Self = this.set("presentationOptions", js.undefined)
+    def setPresentationOptionsUndefined: Self = StObject.set(x, "presentationOptions", js.undefined)
   }
 }

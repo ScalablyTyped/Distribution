@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * offsets are given then the upper left corner bitmap is painted with its lower right at the upper left of the center box.
   */
 @js.native
-trait XPaneBorderPainter extends js.Object {
+trait XPaneBorderPainter extends StObject {
   
   /**
     * Enlarge the given rectangle by the size of the specified part of the border. This method can be used to convert an inner bounding box into the center
@@ -94,33 +95,21 @@ object XPaneBorderPainter {
   }
   
   @scala.inline
-  implicit class XPaneBorderPainterOps[Self <: XPaneBorderPainter] (val x: Self) extends AnyVal {
+  implicit class XPaneBorderPainterMutableBuilder[Self <: XPaneBorderPainter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "addBorder", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCalloutOffset(value: String => Point): Self = StObject.set(x, "getCalloutOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaintBorder(value: (String, XCanvas, Rectangle, Rectangle, String) => Unit): Self = StObject.set(x, "paintBorder", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setAddBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = this.set("addBorder", js.Any.fromFunction3(value))
+    def setPaintBorderWithCallout(value: (String, XCanvas, Rectangle, Rectangle, String, Point) => Unit): Self = StObject.set(x, "paintBorderWithCallout", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setGetCalloutOffset(value: String => Point): Self = this.set("getCalloutOffset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPaintBorder(value: (String, XCanvas, Rectangle, Rectangle, String) => Unit): Self = this.set("paintBorder", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setPaintBorderWithCallout(value: (String, XCanvas, Rectangle, Rectangle, String, Point) => Unit): Self = this.set("paintBorderWithCallout", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setRemoveBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = this.set("removeBorder", js.Any.fromFunction3(value))
+    def setRemoveBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "removeBorder", js.Any.fromFunction3(value))
   }
 }

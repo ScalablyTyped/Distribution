@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteCampaignResponse extends js.Object {
+trait DeleteCampaignResponse extends StObject {
   
   var CampaignResponse: typings.awsSdk.pinpointMod.CampaignResponse = js.native
 }
@@ -18,21 +19,9 @@ object DeleteCampaignResponse {
   }
   
   @scala.inline
-  implicit class DeleteCampaignResponseOps[Self <: DeleteCampaignResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteCampaignResponseMutableBuilder[Self <: DeleteCampaignResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCampaignResponse(value: CampaignResponse): Self = this.set("CampaignResponse", value.asInstanceOf[js.Any])
+    def setCampaignResponse(value: CampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
   }
 }

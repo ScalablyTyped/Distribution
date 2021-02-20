@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFACLEnforcingMode
 import typings.mfiles.MFiles.MFMetadataSyncFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultObjectPropertyOperations extends js.Object {
+trait IVaultObjectPropertyOperations extends StObject {
   
   def ApproveOrRejectAssignment(ObjVer: IObjVer, Approve: Boolean): IObjectVersionAndProperties = js.native
   
@@ -160,125 +161,113 @@ object IVaultObjectPropertyOperations {
   }
   
   @scala.inline
-  implicit class IVaultObjectPropertyOperationsOps[Self <: IVaultObjectPropertyOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultObjectPropertyOperationsMutableBuilder[Self <: IVaultObjectPropertyOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproveOrRejectAssignment(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "ApproveOrRejectAssignment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproveOrRejectAssignmentByUser(value: (IObjVer, Boolean, Double) => IObjectVersionAndProperties): Self = StObject.set(x, "ApproveOrRejectAssignmentByUser", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatePropertiesFromFileInformation(value: IFileInformation => IPropertyValues): Self = StObject.set(x, "CreatePropertiesFromFileInformation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApproveOrRejectAssignment(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = this.set("ApproveOrRejectAssignment", js.Any.fromFunction2(value))
+    def setGenerateAutomaticPermissionsFromPropertyValues(value: IPropertyValues => IAccessControlList): Self = StObject.set(x, "GenerateAutomaticPermissionsFromPropertyValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApproveOrRejectAssignmentByUser(value: (IObjVer, Boolean, Double) => IObjectVersionAndProperties): Self = this.set("ApproveOrRejectAssignmentByUser", js.Any.fromFunction3(value))
+    def setGetProperties(value: (IObjVer, Boolean) => IPropertyValues): Self = StObject.set(x, "GetProperties", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreatePropertiesFromFileInformation(value: IFileInformation => IPropertyValues): Self = this.set("CreatePropertiesFromFileInformation", js.Any.fromFunction1(value))
+    def setGetPropertiesAsXML(value: (IObjVer, Boolean) => String): Self = StObject.set(x, "GetPropertiesAsXML", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGenerateAutomaticPermissionsFromPropertyValues(value: IPropertyValues => IAccessControlList): Self = this.set("GenerateAutomaticPermissionsFromPropertyValues", js.Any.fromFunction1(value))
+    def setGetPropertiesForDisplay(value: (IObjVer, Boolean) => IPropertyValuesForDisplay): Self = StObject.set(x, "GetPropertiesForDisplay", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetProperties(value: (IObjVer, Boolean) => IPropertyValues): Self = this.set("GetProperties", js.Any.fromFunction2(value))
+    def setGetPropertiesForMetadataSync(value: (IObjVer, MFMetadataSyncFormat) => INamedValues): Self = StObject.set(x, "GetPropertiesForMetadataSync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPropertiesAsXML(value: (IObjVer, Boolean) => String): Self = this.set("GetPropertiesAsXML", js.Any.fromFunction2(value))
+    def setGetPropertiesOfMultipleObjects(value: IObjVers => IPropertyValuesOfMultipleObjects): Self = StObject.set(x, "GetPropertiesOfMultipleObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertiesForDisplay(value: (IObjVer, Boolean) => IPropertyValuesForDisplay): Self = this.set("GetPropertiesForDisplay", js.Any.fromFunction2(value))
+    def setGetPropertiesWithIconClues(value: (IObjVer, Boolean) => IPropertyValuesWithIconClues): Self = StObject.set(x, "GetPropertiesWithIconClues", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPropertiesForMetadataSync(value: (IObjVer, MFMetadataSyncFormat) => INamedValues): Self = this.set("GetPropertiesForMetadataSync", js.Any.fromFunction2(value))
+    def setGetPropertiesWithIconCluesOfMultipleObjects(value: IObjVers => IPropertyValuesWithIconCluesOfMultipleObjects): Self = StObject.set(x, "GetPropertiesWithIconCluesOfMultipleObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertiesOfMultipleObjects(value: IObjVers => IPropertyValuesOfMultipleObjects): Self = this.set("GetPropertiesOfMultipleObjects", js.Any.fromFunction1(value))
+    def setGetProperty(value: (IObjVer, Double) => IPropertyValue): Self = StObject.set(x, "GetProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPropertiesWithIconClues(value: (IObjVer, Boolean) => IPropertyValuesWithIconClues): Self = this.set("GetPropertiesWithIconClues", js.Any.fromFunction2(value))
+    def setGetVersionComment(value: IObjVer => IVersionComment): Self = StObject.set(x, "GetVersionComment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertiesWithIconCluesOfMultipleObjects(value: IObjVers => IPropertyValuesWithIconCluesOfMultipleObjects): Self = this.set("GetPropertiesWithIconCluesOfMultipleObjects", js.Any.fromFunction1(value))
+    def setGetVersionCommentHistory(value: IObjVer => IVersionComments): Self = StObject.set(x, "GetVersionCommentHistory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProperty(value: (IObjVer, Double) => IPropertyValue): Self = this.set("GetProperty", js.Any.fromFunction2(value))
+    def setGetWorkflowState(value: (IObjVer, Boolean) => IObjectVersionWorkflowState): Self = StObject.set(x, "GetWorkflowState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetVersionComment(value: IObjVer => IVersionComment): Self = this.set("GetVersionComment", js.Any.fromFunction1(value))
+    def setMarkAssignmentComplete(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "MarkAssignmentComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVersionCommentHistory(value: IObjVer => IVersionComments): Self = this.set("GetVersionCommentHistory", js.Any.fromFunction1(value))
+    def setMarkAssignmentCompleteByUser(value: (IObjVer, Double) => IObjectVersionAndProperties): Self = StObject.set(x, "MarkAssignmentCompleteByUser", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetWorkflowState(value: (IObjVer, Boolean) => IObjectVersionWorkflowState): Self = this.set("GetWorkflowState", js.Any.fromFunction2(value))
+    def setRemoveProperty(value: (IObjVer, Double) => IObjectVersionAndProperties): Self = StObject.set(x, "RemoveProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMarkAssignmentComplete(value: IObjVer => IObjectVersionAndProperties): Self = this.set("MarkAssignmentComplete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMarkAssignmentCompleteByUser(value: (IObjVer, Double) => IObjectVersionAndProperties): Self = this.set("MarkAssignmentCompleteByUser", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveProperty(value: (IObjVer, Double) => IObjectVersionAndProperties): Self = this.set("RemoveProperty", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetAllProperties(value: (IObjVer, Boolean, IPropertyValues) => IObjectVersionAndProperties): Self = this.set("SetAllProperties", js.Any.fromFunction3(value))
+    def setSetAllProperties(value: (IObjVer, Boolean, IPropertyValues) => IObjectVersionAndProperties): Self = StObject.set(x, "SetAllProperties", js.Any.fromFunction3(value))
     
     @scala.inline
     def setSetAllPropertiesWithPermissions(
       value: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
-    ): Self = this.set("SetAllPropertiesWithPermissions", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "SetAllPropertiesWithPermissions", js.Any.fromFunction5(value))
     
     @scala.inline
     def setSetAllPropertiesWithPermissionsEx(
       value: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList, js.Any) => IObjectVersionAndProperties
-    ): Self = this.set("SetAllPropertiesWithPermissionsEx", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "SetAllPropertiesWithPermissionsEx", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setSetCreationInfoAdmin(value: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties): Self = this.set("SetCreationInfoAdmin", js.Any.fromFunction5(value))
+    def setSetCreationInfoAdmin(value: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties): Self = StObject.set(x, "SetCreationInfoAdmin", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSetLastModificationInfoAdmin(value: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties): Self = this.set("SetLastModificationInfoAdmin", js.Any.fromFunction5(value))
+    def setSetLastModificationInfoAdmin(value: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties): Self = StObject.set(x, "SetLastModificationInfoAdmin", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSetProperties(value: (IObjVer, IPropertyValues) => IObjectVersionAndProperties): Self = this.set("SetProperties", js.Any.fromFunction2(value))
+    def setSetProperties(value: (IObjVer, IPropertyValues) => IObjectVersionAndProperties): Self = StObject.set(x, "SetProperties", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetPropertiesOfMultipleObjects(value: ISetPropertiesParamsOfMultipleObjects => IObjectVersionAndPropertiesOfMultipleObjects): Self = this.set("SetPropertiesOfMultipleObjects", js.Any.fromFunction1(value))
+    def setSetPropertiesOfMultipleObjects(value: ISetPropertiesParamsOfMultipleObjects => IObjectVersionAndPropertiesOfMultipleObjects): Self = StObject.set(x, "SetPropertiesOfMultipleObjects", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetPropertiesWithPermissions(
       value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
-    ): Self = this.set("SetPropertiesWithPermissions", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "SetPropertiesWithPermissions", js.Any.fromFunction4(value))
     
     @scala.inline
     def setSetPropertiesWithPermissionsEx(
       value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList, js.Any) => IObjectVersionAndProperties
-    ): Self = this.set("SetPropertiesWithPermissionsEx", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "SetPropertiesWithPermissionsEx", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSetProperty(value: (IObjVer, IPropertyValue) => IObjectVersionAndProperties): Self = this.set("SetProperty", js.Any.fromFunction2(value))
+    def setSetProperty(value: (IObjVer, IPropertyValue) => IObjectVersionAndProperties): Self = StObject.set(x, "SetProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetVersionComment(value: (IObjVer, IPropertyValue) => IObjectVersionAndProperties): Self = this.set("SetVersionComment", js.Any.fromFunction2(value))
+    def setSetVersionComment(value: (IObjVer, IPropertyValue) => IObjectVersionAndProperties): Self = StObject.set(x, "SetVersionComment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetWorkflowState(value: (IObjVer, IObjectVersionWorkflowState) => IObjectVersionAndProperties): Self = this.set("SetWorkflowState", js.Any.fromFunction2(value))
+    def setSetWorkflowState(value: (IObjVer, IObjectVersionWorkflowState) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetWorkflowStateEx(value: (IObjVer, IObjectVersionWorkflowState, js.Any) => IObjectVersionAndProperties): Self = this.set("SetWorkflowStateEx", js.Any.fromFunction3(value))
+    def setSetWorkflowStateEx(value: (IObjVer, IObjectVersionWorkflowState, js.Any) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateEx", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetWorkflowStateTransition(value: (IObjVer, Double, Double, String) => IObjectVersionAndProperties): Self = this.set("SetWorkflowStateTransition", js.Any.fromFunction4(value))
+    def setSetWorkflowStateTransition(value: (IObjVer, Double, Double, String) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateTransition", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSetWorkflowStateTransitionEx(value: (IObjVer, Double, Double, String, js.Any) => IObjectVersionAndProperties): Self = this.set("SetWorkflowStateTransitionEx", js.Any.fromFunction5(value))
+    def setSetWorkflowStateTransitionEx(value: (IObjVer, Double, Double, String, js.Any) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateTransitionEx", js.Any.fromFunction5(value))
   }
 }

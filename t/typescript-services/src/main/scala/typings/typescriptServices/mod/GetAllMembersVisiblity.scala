@@ -1,12 +1,13 @@
 package typings.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "GetAllMembersVisiblity")
 @js.native
-object GetAllMembersVisiblity extends js.Object {
+object GetAllMembersVisiblity extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.GetAllMembersVisiblity with Double] = js.native

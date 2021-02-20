@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commits extends js.Object {
+trait Commits extends StObject {
   
   var comments: HrefString = js.native
   
@@ -41,42 +42,30 @@ object Commits {
   }
   
   @scala.inline
-  implicit class CommitsOps[Self <: Commits] (val x: Self) extends AnyVal {
+  implicit class CommitsMutableBuilder[Self <: Commits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: HrefString): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommits(value: HrefString): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: HrefString): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setIssue(value: HrefString): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommits(value: HrefString): Self = this.set("commits", value.asInstanceOf[js.Any])
+    def setReview_comment(value: HrefString): Self = StObject.set(x, "review_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: HrefString): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setReview_comments(value: HrefString): Self = StObject.set(x, "review_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssue(value: HrefString): Self = this.set("issue", value.asInstanceOf[js.Any])
+    def setSelf(value: HrefString): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReview_comment(value: HrefString): Self = this.set("review_comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReview_comments(value: HrefString): Self = this.set("review_comments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelf(value: HrefString): Self = this.set("self", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatuses(value: HrefString): Self = this.set("statuses", value.asInstanceOf[js.Any])
+    def setStatuses(value: HrefString): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,20 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/last", JSImport.Namespace)
-@js.native
-object operatorLastMod extends js.Object {
+object operatorLastMod {
   
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last[T, D](): js.Any = js.native
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
@@ -18,6 +23,8 @@ object operatorLastMod extends js.Object {
       /* is S */ Boolean
     ]
   ): js.Any = js.native
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
@@ -27,8 +34,11 @@ object operatorLastMod extends js.Object {
     ],
     defaultValue: S
   ): js.Any = js.native
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last[T, D](predicate: Null, defaultValue: D): js.Any = js.native
-  @JSName("last")
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 
@@ -37,7 +47,8 @@ object operatorLastMod extends js.Object {
       Boolean
     ]
   ): js.Any = js.native
-  @JSName("last")
+  @JSImport("rxjs-compat/operator/last", "last")
+  @js.native
   def last_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 

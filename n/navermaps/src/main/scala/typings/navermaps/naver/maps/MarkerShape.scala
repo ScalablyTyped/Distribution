@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerShape extends js.Object {
+trait MarkerShape extends StObject {
   
   var coords: js.Array[_] = js.native
   
@@ -21,27 +22,15 @@ object MarkerShape {
   }
   
   @scala.inline
-  implicit class MarkerShapeOps[Self <: MarkerShape] (val x: Self) extends AnyVal {
+  implicit class MarkerShapeMutableBuilder[Self <: MarkerShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoords(value: js.Array[_]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordsVarargs(value: js.Any*): Self = StObject.set(x, "coords", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoordsVarargs(value: js.Any*): Self = this.set("coords", js.Array(value :_*))
-    
-    @scala.inline
-    def setCoords(value: js.Array[_]): Self = this.set("coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

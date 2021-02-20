@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.brightness
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotTreemapLevelsColorVariationOptions extends js.Object {
+trait PlotTreemapLevelsColorVariationOptions extends StObject {
   
   /**
     * (Highcharts) The key of a color variation. Currently supports
@@ -29,30 +30,18 @@ object PlotTreemapLevelsColorVariationOptions {
   }
   
   @scala.inline
-  implicit class PlotTreemapLevelsColorVariationOptionsOps[Self <: PlotTreemapLevelsColorVariationOptions] (val x: Self) extends AnyVal {
+  implicit class PlotTreemapLevelsColorVariationOptionsMutableBuilder[Self <: PlotTreemapLevelsColorVariationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: brightness): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: brightness): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

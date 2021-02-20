@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object with survival game info
   */
 @js.native
-trait SurvivalGameInfo extends js.Object {
+trait SurvivalGameInfo extends StObject {
   
   /**
     * Current score.
@@ -34,27 +35,15 @@ object SurvivalGameInfo {
   }
   
   @scala.inline
-  implicit class SurvivalGameInfoOps[Self <: SurvivalGameInfo] (val x: Self) extends AnyVal {
+  implicit class SurvivalGameInfoMutableBuilder[Self <: SurvivalGameInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimeToWave(value: Double): Self = StObject.set(x, "timeToWave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeToWave(value: Double): Self = this.set("timeToWave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWave(value: Double): Self = this.set("wave", value.asInstanceOf[js.Any])
+    def setWave(value: Double): Self = StObject.set(x, "wave", value.asInstanceOf[js.Any])
   }
 }

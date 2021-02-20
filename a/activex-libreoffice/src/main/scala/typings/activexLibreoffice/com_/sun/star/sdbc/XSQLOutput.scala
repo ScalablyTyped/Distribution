@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -203,78 +204,66 @@ object XSQLOutput {
   }
   
   @scala.inline
-  implicit class XSQLOutputOps[Self <: XSQLOutput] (val x: Self) extends AnyVal {
+  implicit class XSQLOutputMutableBuilder[Self <: XSQLOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWriteArray(value: XArray => Unit): Self = StObject.set(x, "writeArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWriteBinaryStream(value: XInputStream => Unit): Self = StObject.set(x, "writeBinaryStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWriteBlob(value: XBlob => Unit): Self = StObject.set(x, "writeBlob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteArray(value: XArray => Unit): Self = this.set("writeArray", js.Any.fromFunction1(value))
+    def setWriteBoolean(value: Boolean => Unit): Self = StObject.set(x, "writeBoolean", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteBinaryStream(value: XInputStream => Unit): Self = this.set("writeBinaryStream", js.Any.fromFunction1(value))
+    def setWriteByte(value: Double => Unit): Self = StObject.set(x, "writeByte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteBlob(value: XBlob => Unit): Self = this.set("writeBlob", js.Any.fromFunction1(value))
+    def setWriteBytes(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "writeBytes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteBoolean(value: Boolean => Unit): Self = this.set("writeBoolean", js.Any.fromFunction1(value))
+    def setWriteCharacterStream(value: XInputStream => Unit): Self = StObject.set(x, "writeCharacterStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteByte(value: Double => Unit): Self = this.set("writeByte", js.Any.fromFunction1(value))
+    def setWriteClob(value: XClob => Unit): Self = StObject.set(x, "writeClob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteBytes(value: SeqEquiv[Double] => Unit): Self = this.set("writeBytes", js.Any.fromFunction1(value))
+    def setWriteDate(value: Date => Unit): Self = StObject.set(x, "writeDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteCharacterStream(value: XInputStream => Unit): Self = this.set("writeCharacterStream", js.Any.fromFunction1(value))
+    def setWriteDouble(value: Double => Unit): Self = StObject.set(x, "writeDouble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteClob(value: XClob => Unit): Self = this.set("writeClob", js.Any.fromFunction1(value))
+    def setWriteFloat(value: Double => Unit): Self = StObject.set(x, "writeFloat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteDate(value: Date => Unit): Self = this.set("writeDate", js.Any.fromFunction1(value))
+    def setWriteInt(value: Double => Unit): Self = StObject.set(x, "writeInt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteDouble(value: Double => Unit): Self = this.set("writeDouble", js.Any.fromFunction1(value))
+    def setWriteLong(value: Double => Unit): Self = StObject.set(x, "writeLong", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteFloat(value: Double => Unit): Self = this.set("writeFloat", js.Any.fromFunction1(value))
+    def setWriteObject(value: XSQLData => Unit): Self = StObject.set(x, "writeObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteInt(value: Double => Unit): Self = this.set("writeInt", js.Any.fromFunction1(value))
+    def setWriteRef(value: XRef => Unit): Self = StObject.set(x, "writeRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteLong(value: Double => Unit): Self = this.set("writeLong", js.Any.fromFunction1(value))
+    def setWriteShort(value: Double => Unit): Self = StObject.set(x, "writeShort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteObject(value: XSQLData => Unit): Self = this.set("writeObject", js.Any.fromFunction1(value))
+    def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteRef(value: XRef => Unit): Self = this.set("writeRef", js.Any.fromFunction1(value))
+    def setWriteStruct(value: XStruct => Unit): Self = StObject.set(x, "writeStruct", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteShort(value: Double => Unit): Self = this.set("writeShort", js.Any.fromFunction1(value))
+    def setWriteTime(value: Time => Unit): Self = StObject.set(x, "writeTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteString(value: String => Unit): Self = this.set("writeString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteStruct(value: XStruct => Unit): Self = this.set("writeStruct", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteTime(value: Time => Unit): Self = this.set("writeTime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteTimestamp(value: DateTime => Unit): Self = this.set("writeTimestamp", js.Any.fromFunction1(value))
+    def setWriteTimestamp(value: DateTime => Unit): Self = StObject.set(x, "writeTimestamp", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.networking.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * IngressRule represents the rules mapping the paths under a specified host to the related backend services. Incoming requests are first evaluated for a host match, then routed to the backend associated with the matching IngressRuleValue.
   */
 @js.native
-trait IngressRule extends js.Object {
+trait IngressRule extends StObject {
   
   /**
     * Host is the fully qualified domain name of a network host, as defined by RFC 3986. Note the following deviations from the "host" part of the URI as defined in RFC 3986: 1. IPs are not allowed. Currently an IngressRuleValue can only apply to
@@ -33,24 +34,12 @@ object IngressRule {
   }
   
   @scala.inline
-  implicit class IngressRuleOps[Self <: IngressRule] (val x: Self) extends AnyVal {
+  implicit class IngressRuleMutableBuilder[Self <: IngressRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHttp(value: HTTPIngressRuleValue): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setHttp(value: HTTPIngressRuleValue): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

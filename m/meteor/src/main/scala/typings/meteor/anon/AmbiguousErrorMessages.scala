@@ -2,12 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.meteor.meteorNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmbiguousErrorMessages extends js.Object {
+trait AmbiguousErrorMessages extends StObject {
   
   var ambiguousErrorMessages: js.UndefOr[Boolean] = js.native
   
@@ -36,72 +37,60 @@ object AmbiguousErrorMessages {
   }
   
   @scala.inline
-  implicit class AmbiguousErrorMessagesOps[Self <: AmbiguousErrorMessages] (val x: Self) extends AnyVal {
+  implicit class AmbiguousErrorMessagesMutableBuilder[Self <: AmbiguousErrorMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmbiguousErrorMessages(value: Boolean): Self = StObject.set(x, "ambiguousErrorMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmbiguousErrorMessagesUndefined: Self = StObject.set(x, "ambiguousErrorMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultFieldSelector(value: StringDictionary[typings.meteor.meteorNumbers.`0` | `1`]): Self = StObject.set(x, "defaultFieldSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmbiguousErrorMessages(value: Boolean): Self = this.set("ambiguousErrorMessages", value.asInstanceOf[js.Any])
+    def setDefaultFieldSelectorUndefined: Self = StObject.set(x, "defaultFieldSelector", js.undefined)
     
     @scala.inline
-    def deleteAmbiguousErrorMessages: Self = this.set("ambiguousErrorMessages", js.undefined)
+    def setForbidClientAccountCreation(value: Boolean): Self = StObject.set(x, "forbidClientAccountCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFieldSelector(value: StringDictionary[typings.meteor.meteorNumbers.`0` | `1`]): Self = this.set("defaultFieldSelector", value.asInstanceOf[js.Any])
+    def setForbidClientAccountCreationUndefined: Self = StObject.set(x, "forbidClientAccountCreation", js.undefined)
     
     @scala.inline
-    def deleteDefaultFieldSelector: Self = this.set("defaultFieldSelector", js.undefined)
+    def setLoginExpirationInDays(value: Double): Self = StObject.set(x, "loginExpirationInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbidClientAccountCreation(value: Boolean): Self = this.set("forbidClientAccountCreation", value.asInstanceOf[js.Any])
+    def setLoginExpirationInDaysUndefined: Self = StObject.set(x, "loginExpirationInDays", js.undefined)
     
     @scala.inline
-    def deleteForbidClientAccountCreation: Self = this.set("forbidClientAccountCreation", js.undefined)
+    def setOauthSecretKey(value: String): Self = StObject.set(x, "oauthSecretKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginExpirationInDays(value: Double): Self = this.set("loginExpirationInDays", value.asInstanceOf[js.Any])
+    def setOauthSecretKeyUndefined: Self = StObject.set(x, "oauthSecretKey", js.undefined)
     
     @scala.inline
-    def deleteLoginExpirationInDays: Self = this.set("loginExpirationInDays", js.undefined)
+    def setPasswordEnrollTokenExpirationInDays(value: Double): Self = StObject.set(x, "passwordEnrollTokenExpirationInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthSecretKey(value: String): Self = this.set("oauthSecretKey", value.asInstanceOf[js.Any])
+    def setPasswordEnrollTokenExpirationInDaysUndefined: Self = StObject.set(x, "passwordEnrollTokenExpirationInDays", js.undefined)
     
     @scala.inline
-    def deleteOauthSecretKey: Self = this.set("oauthSecretKey", js.undefined)
+    def setPasswordResetTokenExpirationInDays(value: Double): Self = StObject.set(x, "passwordResetTokenExpirationInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordEnrollTokenExpirationInDays(value: Double): Self = this.set("passwordEnrollTokenExpirationInDays", value.asInstanceOf[js.Any])
+    def setPasswordResetTokenExpirationInDaysUndefined: Self = StObject.set(x, "passwordResetTokenExpirationInDays", js.undefined)
     
     @scala.inline
-    def deletePasswordEnrollTokenExpirationInDays: Self = this.set("passwordEnrollTokenExpirationInDays", js.undefined)
+    def setRestrictCreationByEmailDomain(value: String | js.Function): Self = StObject.set(x, "restrictCreationByEmailDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordResetTokenExpirationInDays(value: Double): Self = this.set("passwordResetTokenExpirationInDays", value.asInstanceOf[js.Any])
+    def setRestrictCreationByEmailDomainUndefined: Self = StObject.set(x, "restrictCreationByEmailDomain", js.undefined)
     
     @scala.inline
-    def deletePasswordResetTokenExpirationInDays: Self = this.set("passwordResetTokenExpirationInDays", js.undefined)
+    def setSendVerificationEmail(value: Boolean): Self = StObject.set(x, "sendVerificationEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictCreationByEmailDomain(value: String | js.Function): Self = this.set("restrictCreationByEmailDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictCreationByEmailDomain: Self = this.set("restrictCreationByEmailDomain", js.undefined)
-    
-    @scala.inline
-    def setSendVerificationEmail(value: Boolean): Self = this.set("sendVerificationEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendVerificationEmail: Self = this.set("sendVerificationEmail", js.undefined)
+    def setSendVerificationEmailUndefined: Self = StObject.set(x, "sendVerificationEmail", js.undefined)
   }
 }

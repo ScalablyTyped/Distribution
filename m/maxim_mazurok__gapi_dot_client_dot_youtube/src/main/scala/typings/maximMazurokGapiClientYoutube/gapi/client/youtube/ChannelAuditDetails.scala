@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelAuditDetails extends js.Object {
+trait ChannelAuditDetails extends StObject {
   
   /** Whether or not the channel respects the community guidelines. */
   var communityGuidelinesGoodStanding: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object ChannelAuditDetails {
   }
   
   @scala.inline
-  implicit class ChannelAuditDetailsOps[Self <: ChannelAuditDetails] (val x: Self) extends AnyVal {
+  implicit class ChannelAuditDetailsMutableBuilder[Self <: ChannelAuditDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommunityGuidelinesGoodStanding(value: Boolean): Self = StObject.set(x, "communityGuidelinesGoodStanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommunityGuidelinesGoodStandingUndefined: Self = StObject.set(x, "communityGuidelinesGoodStanding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentIdClaimsGoodStanding(value: Boolean): Self = StObject.set(x, "contentIdClaimsGoodStanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommunityGuidelinesGoodStanding(value: Boolean): Self = this.set("communityGuidelinesGoodStanding", value.asInstanceOf[js.Any])
+    def setContentIdClaimsGoodStandingUndefined: Self = StObject.set(x, "contentIdClaimsGoodStanding", js.undefined)
     
     @scala.inline
-    def deleteCommunityGuidelinesGoodStanding: Self = this.set("communityGuidelinesGoodStanding", js.undefined)
+    def setCopyrightStrikesGoodStanding(value: Boolean): Self = StObject.set(x, "copyrightStrikesGoodStanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentIdClaimsGoodStanding(value: Boolean): Self = this.set("contentIdClaimsGoodStanding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentIdClaimsGoodStanding: Self = this.set("contentIdClaimsGoodStanding", js.undefined)
-    
-    @scala.inline
-    def setCopyrightStrikesGoodStanding(value: Boolean): Self = this.set("copyrightStrikesGoodStanding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyrightStrikesGoodStanding: Self = this.set("copyrightStrikesGoodStanding", js.undefined)
+    def setCopyrightStrikesGoodStandingUndefined: Self = StObject.set(x, "copyrightStrikesGoodStanding", js.undefined)
   }
 }

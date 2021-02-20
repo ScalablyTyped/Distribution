@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TSThisTypeKind
 import typings.astTypes.kindsMod.TSTypeAnnotationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Asserts extends js.Object {
+trait Asserts extends StObject {
   
   var asserts: js.UndefOr[Boolean] = js.native
   
@@ -31,57 +32,45 @@ object Asserts {
   }
   
   @scala.inline
-  implicit class AssertsOps[Self <: Asserts] (val x: Self) extends AnyVal {
+  implicit class AssertsMutableBuilder[Self <: Asserts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsserts(value: Boolean): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertsUndefined: Self = StObject.set(x, "asserts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterName(value: IdentifierKind | TSThisTypeKind): Self = this.set("parameterName", value.asInstanceOf[js.Any])
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def setAsserts(value: Boolean): Self = this.set("asserts", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteAsserts: Self = this.set("asserts", js.undefined)
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setParameterName(value: IdentifierKind | TSThisTypeKind): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setTypeAnnotation(value: TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
-    
-    @scala.inline
-    def setTypeAnnotation(value: TSTypeAnnotationKind): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeAnnotation: Self = this.set("typeAnnotation", js.undefined)
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
+    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

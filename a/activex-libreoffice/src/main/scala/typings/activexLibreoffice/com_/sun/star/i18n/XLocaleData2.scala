@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,21 +48,9 @@ object XLocaleData2 {
   }
   
   @scala.inline
-  implicit class XLocaleData2Ops[Self <: XLocaleData2] (val x: Self) extends AnyVal {
+  implicit class XLocaleData2MutableBuilder[Self <: XLocaleData2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAllCurrencies2(value: Locale => SafeArray[Currency2]): Self = this.set("getAllCurrencies2", js.Any.fromFunction1(value))
+    def setGetAllCurrencies2(value: Locale => SafeArray[Currency2]): Self = StObject.set(x, "getAllCurrencies2", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashDrawingLayer extends js.Object {
+trait FlashDrawingLayer extends StObject {
   
   /// Puts Flash in drawing mode.
   def beginDraw(): Unit = js.native

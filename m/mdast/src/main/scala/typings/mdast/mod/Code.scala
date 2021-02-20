@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object Code {
   }
   
   @scala.inline
-  implicit class CodeOps[Self <: Code] (val x: Self) extends AnyVal {
+  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
-    
-    @scala.inline
-    def setMeta(value: String): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.ionicCore.mod.Side
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonMenu extends js.Object {
+trait IonMenu extends StObject {
   
   /**
     * The content's id the menu should use.
@@ -73,84 +74,72 @@ object IonMenu {
   }
   
   @scala.inline
-  implicit class IonMenuOps[Self <: IonMenu] (val x: Self) extends AnyVal {
+  implicit class IonMenuMutableBuilder[Self <: IonMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteContentId: Self = this.set("contentId", js.undefined)
+    def setMaxEdgeStart(value: Double): Self = StObject.set(x, "maxEdgeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setMaxEdgeStartUndefined: Self = StObject.set(x, "maxEdgeStart", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMenuId(value: String): Self = StObject.set(x, "menuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEdgeStart(value: Double): Self = this.set("maxEdgeStart", value.asInstanceOf[js.Any])
+    def setMenuIdUndefined: Self = StObject.set(x, "menuId", js.undefined)
     
     @scala.inline
-    def deleteMaxEdgeStart: Self = this.set("maxEdgeStart", js.undefined)
+    def setOnIonDidClose(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonDidClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMenuId(value: String): Self = this.set("menuId", value.asInstanceOf[js.Any])
+    def setOnIonDidCloseUndefined: Self = StObject.set(x, "onIonDidClose", js.undefined)
     
     @scala.inline
-    def deleteMenuId: Self = this.set("menuId", js.undefined)
+    def setOnIonDidOpen(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonDidOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonDidClose(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonDidClose", js.Any.fromFunction1(value))
+    def setOnIonDidOpenUndefined: Self = StObject.set(x, "onIonDidOpen", js.undefined)
     
     @scala.inline
-    def deleteOnIonDidClose: Self = this.set("onIonDidClose", js.undefined)
+    def setOnIonWillClose(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonWillClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonDidOpen(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonDidOpen", js.Any.fromFunction1(value))
+    def setOnIonWillCloseUndefined: Self = StObject.set(x, "onIonWillClose", js.undefined)
     
     @scala.inline
-    def deleteOnIonDidOpen: Self = this.set("onIonDidOpen", js.undefined)
+    def setOnIonWillOpen(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonWillOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonWillClose(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonWillClose", js.Any.fromFunction1(value))
+    def setOnIonWillOpenUndefined: Self = StObject.set(x, "onIonWillOpen", js.undefined)
     
     @scala.inline
-    def deleteOnIonWillClose: Self = this.set("onIonWillClose", js.undefined)
+    def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonWillOpen(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonWillOpen", js.Any.fromFunction1(value))
+    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
     @scala.inline
-    def deleteOnIonWillOpen: Self = this.set("onIonWillOpen", js.undefined)
+    def setSwipeGesture(value: Boolean): Self = StObject.set(x, "swipeGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSide(value: Side): Self = this.set("side", value.asInstanceOf[js.Any])
+    def setSwipeGestureUndefined: Self = StObject.set(x, "swipeGesture", js.undefined)
     
     @scala.inline
-    def deleteSide: Self = this.set("side", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeGesture(value: Boolean): Self = this.set("swipeGesture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwipeGesture: Self = this.set("swipeGesture", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

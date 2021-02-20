@@ -17,14 +17,14 @@ import typings.angularCompiler.t2ApiMod.TargetBinder
 import typings.std.Map
 import typings.std.ReadonlySet
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/render3/view/t2_binder", JSImport.Namespace)
-@js.native
-object t2BinderMod extends js.Object {
+object t2BinderMod {
   
+  @JSImport("@angular/compiler/src/render3/view/t2_binder", "R3BoundTarget")
   @js.native
   class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected () extends BoundTarget[DirectiveT] {
     def this(
@@ -59,6 +59,7 @@ object t2BinderMod extends js.Object {
     var usedPipes: js.Any = js.native
   }
   
+  @JSImport("@angular/compiler/src/render3/view/t2_binder", "R3TargetBinder")
   @js.native
   class R3TargetBinder[DirectiveT /* <: DirectiveMeta */] protected () extends TargetBinder[DirectiveT] {
     def this(directiveMatcher: SelectorMatcher[DirectiveT]) = this()

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMaterialClearCoatDefines extends js.Object {
+trait IMaterialClearCoatDefines extends StObject {
   
   var CLEARCOAT: Boolean = js.native
   
@@ -63,63 +64,51 @@ object IMaterialClearCoatDefines {
   }
   
   @scala.inline
-  implicit class IMaterialClearCoatDefinesOps[Self <: IMaterialClearCoatDefines] (val x: Self) extends AnyVal {
+  implicit class IMaterialClearCoatDefinesMutableBuilder[Self <: IMaterialClearCoatDefines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLEARCOAT(value: Boolean): Self = StObject.set(x, "CLEARCOAT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCLEARCOAT_BUMP(value: Boolean): Self = StObject.set(x, "CLEARCOAT_BUMP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCLEARCOAT_BUMPDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_BUMPDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT(value: Boolean): Self = this.set("CLEARCOAT", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_DEFAULTIOR(value: Boolean): Self = StObject.set(x, "CLEARCOAT_DEFAULTIOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_BUMP(value: Boolean): Self = this.set("CLEARCOAT_BUMP", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_REMAP_F0(value: Boolean): Self = StObject.set(x, "CLEARCOAT_REMAP_F0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_BUMPDIRECTUV(value: Double): Self = this.set("CLEARCOAT_BUMPDIRECTUV", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_DEFAULTIOR(value: Boolean): Self = this.set("CLEARCOAT_DEFAULTIOR", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_REMAP_F0(value: Boolean): Self = this.set("CLEARCOAT_REMAP_F0", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TEXTURE_ROUGHNESS(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TEXTURE(value: Boolean): Self = this.set("CLEARCOAT_TEXTURE", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TEXTUREDIRECTUV(value: Double): Self = this.set("CLEARCOAT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TEXTURE_ROUGHNESS(value: Boolean): Self = this.set("CLEARCOAT_TEXTURE_ROUGHNESS", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TINT(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TINT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV(value: Double): Self = this.set("CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TINT_TEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_TINT_TEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL(value: Boolean): Self = this.set("CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_TINT_TEXTUREDIRECTUV(value: Double): Self = StObject.set(x, "CLEARCOAT_TINT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TINT(value: Boolean): Self = this.set("CLEARCOAT_TINT", value.asInstanceOf[js.Any])
+    def setCLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = StObject.set(x, "CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLEARCOAT_TINT_TEXTURE(value: Boolean): Self = this.set("CLEARCOAT_TINT_TEXTURE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCLEARCOAT_TINT_TEXTUREDIRECTUV(value: Double): Self = this.set("CLEARCOAT_TINT_TEXTUREDIRECTUV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE(value: Boolean): Self = this.set("CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_areTexturesDirty(value: Boolean): Self = this.set("_areTexturesDirty", value.asInstanceOf[js.Any])
+    def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
   }
 }

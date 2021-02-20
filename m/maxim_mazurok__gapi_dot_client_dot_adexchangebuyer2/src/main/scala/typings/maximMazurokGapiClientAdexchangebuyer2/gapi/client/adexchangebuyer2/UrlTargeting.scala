@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlTargeting extends js.Object {
+trait UrlTargeting extends StObject {
   
   /** A list of URLs to be excluded. */
   var excludedUrls: js.UndefOr[js.Array[String]] = js.native
@@ -22,36 +23,24 @@ object UrlTargeting {
   }
   
   @scala.inline
-  implicit class UrlTargetingOps[Self <: UrlTargeting] (val x: Self) extends AnyVal {
+  implicit class UrlTargetingMutableBuilder[Self <: UrlTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedUrls(value: js.Array[String]): Self = StObject.set(x, "excludedUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedUrlsUndefined: Self = StObject.set(x, "excludedUrls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedUrlsVarargs(value: String*): Self = StObject.set(x, "excludedUrls", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedUrlsVarargs(value: String*): Self = this.set("excludedUrls", js.Array(value :_*))
+    def setTargetedUrls(value: js.Array[String]): Self = StObject.set(x, "targetedUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedUrls(value: js.Array[String]): Self = this.set("excludedUrls", value.asInstanceOf[js.Any])
+    def setTargetedUrlsUndefined: Self = StObject.set(x, "targetedUrls", js.undefined)
     
     @scala.inline
-    def deleteExcludedUrls: Self = this.set("excludedUrls", js.undefined)
-    
-    @scala.inline
-    def setTargetedUrlsVarargs(value: String*): Self = this.set("targetedUrls", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetedUrls(value: js.Array[String]): Self = this.set("targetedUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetedUrls: Self = this.set("targetedUrls", js.undefined)
+    def setTargetedUrlsVarargs(value: String*): Self = StObject.set(x, "targetedUrls", js.Array(value :_*))
   }
 }

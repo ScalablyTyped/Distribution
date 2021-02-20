@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectPairingProcedure extends js.Object
+sealed trait WiFiDirectPairingProcedure extends StObject
 /** Specifies a direct pairing procedure. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure")
 @js.native
-object WiFiDirectPairingProcedure extends js.Object {
+object WiFiDirectPairingProcedure extends StObject {
   
   /** Group Owner Negotiation. The connecting device chooses the configuration method. */
   @js.native

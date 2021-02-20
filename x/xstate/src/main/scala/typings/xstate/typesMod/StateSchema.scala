@@ -2,12 +2,13 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateSchema[TC] extends js.Object {
+trait StateSchema[TC] extends StObject {
   
   var context: js.UndefOr[Partial[TC]] = js.native
   
@@ -24,36 +25,24 @@ object StateSchema {
   }
   
   @scala.inline
-  implicit class StateSchemaOps[Self <: StateSchema[_], TC] (val x: Self with StateSchema[TC]) extends AnyVal {
+  implicit class StateSchemaMutableBuilder[Self <: StateSchema[_], TC] (val x: Self with StateSchema[TC]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: Partial[TC]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Partial[TC]): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setStates(value: StringDictionary[StateSchema[TC]]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
-    
-    @scala.inline
-    def setStates(value: StringDictionary[StateSchema[TC]]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
   }
 }

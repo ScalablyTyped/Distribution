@@ -2,12 +2,13 @@ package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sigmajs.anon.DictrenderType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVG extends js.Object {
+trait SVG extends StObject {
   
   var edges: DictrenderType = js.native
   
@@ -28,27 +29,15 @@ object SVG {
   }
   
   @scala.inline
-  implicit class SVGOps[Self <: SVG] (val x: Self) extends AnyVal {
+  implicit class SVGMutableBuilder[Self <: SVG] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdges(value: DictrenderType): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabels(value: StringDictionary[SVGObject[Node]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEdges(value: DictrenderType): Self = this.set("edges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabels(value: StringDictionary[SVGObject[Node]]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodes(value: StringDictionary[SVGObject[Node]]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setNodes(value: StringDictionary[SVGObject[Node]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for Calendar Resource object in Directory API.
   */
 @js.native
-trait SchemaCalendarResource extends js.Object {
+trait SchemaCalendarResource extends StObject {
   
   /**
     * Unique ID for the building a resource is located in.
@@ -97,108 +98,96 @@ object SchemaCalendarResource {
   }
   
   @scala.inline
-  implicit class SchemaCalendarResourceOps[Self <: SchemaCalendarResource] (val x: Self) extends AnyVal {
+  implicit class SchemaCalendarResourceMutableBuilder[Self <: SchemaCalendarResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildingId(value: String): Self = this.set("buildingId", value.asInstanceOf[js.Any])
+    def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     
     @scala.inline
-    def deleteBuildingId: Self = this.set("buildingId", js.undefined)
+    def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacity(value: Double): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
     
     @scala.inline
-    def deleteCapacity: Self = this.set("capacity", js.undefined)
+    def setFeatureInstances(value: js.Any): Self = StObject.set(x, "featureInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtags(value: String): Self = this.set("etags", value.asInstanceOf[js.Any])
+    def setFeatureInstancesUndefined: Self = StObject.set(x, "featureInstances", js.undefined)
     
     @scala.inline
-    def deleteEtags: Self = this.set("etags", js.undefined)
+    def setFloorName(value: String): Self = StObject.set(x, "floorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureInstances(value: js.Any): Self = this.set("featureInstances", value.asInstanceOf[js.Any])
+    def setFloorNameUndefined: Self = StObject.set(x, "floorName", js.undefined)
     
     @scala.inline
-    def deleteFeatureInstances: Self = this.set("featureInstances", js.undefined)
+    def setFloorSection(value: String): Self = StObject.set(x, "floorSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorName(value: String): Self = this.set("floorName", value.asInstanceOf[js.Any])
+    def setFloorSectionUndefined: Self = StObject.set(x, "floorSection", js.undefined)
     
     @scala.inline
-    def deleteFloorName: Self = this.set("floorName", js.undefined)
+    def setGeneratedResourceName(value: String): Self = StObject.set(x, "generatedResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorSection(value: String): Self = this.set("floorSection", value.asInstanceOf[js.Any])
+    def setGeneratedResourceNameUndefined: Self = StObject.set(x, "generatedResourceName", js.undefined)
     
     @scala.inline
-    def deleteFloorSection: Self = this.set("floorSection", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratedResourceName(value: String): Self = this.set("generatedResourceName", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGeneratedResourceName: Self = this.set("generatedResourceName", js.undefined)
+    def setResourceCategory(value: String): Self = StObject.set(x, "resourceCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setResourceCategoryUndefined: Self = StObject.set(x, "resourceCategory", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setResourceDescription(value: String): Self = StObject.set(x, "resourceDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceCategory(value: String): Self = this.set("resourceCategory", value.asInstanceOf[js.Any])
+    def setResourceDescriptionUndefined: Self = StObject.set(x, "resourceDescription", js.undefined)
     
     @scala.inline
-    def deleteResourceCategory: Self = this.set("resourceCategory", js.undefined)
+    def setResourceEmail(value: String): Self = StObject.set(x, "resourceEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceDescription(value: String): Self = this.set("resourceDescription", value.asInstanceOf[js.Any])
+    def setResourceEmailUndefined: Self = StObject.set(x, "resourceEmail", js.undefined)
     
     @scala.inline
-    def deleteResourceDescription: Self = this.set("resourceDescription", js.undefined)
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceEmail(value: String): Self = this.set("resourceEmail", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
     @scala.inline
-    def deleteResourceEmail: Self = this.set("resourceEmail", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setUserVisibleDescription(value: String): Self = StObject.set(x, "userVisibleDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
-    
-    @scala.inline
-    def setUserVisibleDescription(value: String): Self = this.set("userVisibleDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVisibleDescription: Self = this.set("userVisibleDescription", js.undefined)
+    def setUserVisibleDescriptionUndefined: Self = StObject.set(x, "userVisibleDescription", js.undefined)
   }
 }

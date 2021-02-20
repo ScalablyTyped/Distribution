@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteMarkerEntry extends js.Object {
+trait DeleteMarkerEntry extends StObject {
   
   /**
     * Specifies whether the object is (true) or is not (false) the latest version of an object.
@@ -41,48 +42,36 @@ object DeleteMarkerEntry {
   }
   
   @scala.inline
-  implicit class DeleteMarkerEntryOps[Self <: DeleteMarkerEntry] (val x: Self) extends AnyVal {
+  implicit class DeleteMarkerEntryMutableBuilder[Self <: DeleteMarkerEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLatest(value: IsLatest): Self = StObject.set(x, "IsLatest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLatestUndefined: Self = StObject.set(x, "IsLatest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLatest(value: IsLatest): Self = this.set("IsLatest", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteIsLatest: Self = this.set("IsLatest", js.undefined)
+    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

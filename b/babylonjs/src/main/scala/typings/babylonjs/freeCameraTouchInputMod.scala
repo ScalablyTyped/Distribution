@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.freeCameraMod.FreeCamera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/Inputs/freeCameraTouchInput", JSImport.Namespace)
-@js.native
-object freeCameraTouchInputMod extends js.Object {
+object freeCameraTouchInputMod {
   
+  @JSImport("babylonjs/Cameras/Inputs/freeCameraTouchInput", "FreeCameraTouchInput")
   @js.native
   /**
     * Manage the touch inputs to control the movement of a free camera.

@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VakataStatic extends js.Object {
+trait VakataStatic extends StObject {
   
   /**
     * filter array
@@ -62,48 +63,36 @@ object VakataStatic {
   }
   
   @scala.inline
-  implicit class VakataStaticOps[Self <: VakataStatic] (val x: Self) extends AnyVal {
+  implicit class VakataStaticMutableBuilder[Self <: VakataStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray_filter(value: (js.Any, js.Any, js.Any, js.Array[_], js.Any) => js.Array[_]): Self = StObject.set(x, "array_filter", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArray_remove(value: (js.Array[_], Double) => js.Array[_]): Self = StObject.set(x, "array_remove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArray_remove_item(value: (js.Array[_], js.Any) => js.Array[_]): Self = StObject.set(x, "array_remove_item", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setArray_filter(value: (js.Any, js.Any, js.Any, js.Array[_], js.Any) => js.Array[_]): Self = this.set("array_filter", js.Any.fromFunction5(value))
+    def setArray_unique(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "array_unique", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArray_remove(value: (js.Array[_], Double) => js.Array[_]): Self = this.set("array_remove", js.Any.fromFunction2(value))
+    def setAttributes(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setArray_remove_item(value: (js.Array[_], js.Any) => js.Array[_]): Self = this.set("array_remove_item", js.Any.fromFunction2(value))
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray_unique(value: js.Array[_] => js.Array[_]): Self = this.set("array_unique", js.Any.fromFunction1(value))
+    def setDnd(value: js.Any): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: (js.Any, js.Any) => js.Any): Self = this.set("attributes", js.Any.fromFunction2(value))
+    def setHtml(value: js.Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnd(value: js.Any): Self = this.set("dnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtml(value: js.Any): Self = this.set("html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: js.Any): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorage(value: js.Any): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

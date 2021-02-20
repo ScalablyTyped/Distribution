@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationOptions extends js.Object {
+trait ApplicationOptions extends StObject {
   
   var browserHistory: js.UndefOr[Boolean] = js.native
   
@@ -46,108 +47,96 @@ object ApplicationOptions {
   }
   
   @scala.inline
-  implicit class ApplicationOptionsOps[Self <: ApplicationOptions] (val x: Self) extends AnyVal {
+  implicit class ApplicationOptionsMutableBuilder[Self <: ApplicationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserHistory(value: Boolean): Self = StObject.set(x, "browserHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserHistoryUndefined: Self = StObject.set(x, "browserHistory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideAddressBar(value: Boolean): Self = StObject.set(x, "hideAddressBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserHistory(value: Boolean): Self = this.set("browserHistory", value.asInstanceOf[js.Any])
+    def setHideAddressBarUndefined: Self = StObject.set(x, "hideAddressBar", js.undefined)
     
     @scala.inline
-    def deleteBrowserHistory: Self = this.set("browserHistory", js.undefined)
+    def setInit(value: /* e */ ApplicationEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideAddressBar(value: Boolean): Self = this.set("hideAddressBar", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteHideAddressBar: Self = this.set("hideAddressBar", js.undefined)
+    def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: /* e */ ApplicationEvent => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitial(value: String): Self = this.set("initial", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteInitial: Self = this.set("initial", js.undefined)
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setModelScope(value: js.Object): Self = StObject.set(x, "modelScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setModelScopeUndefined: Self = StObject.set(x, "modelScope", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelScope(value: js.Object): Self = this.set("modelScope", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteModelScope: Self = this.set("modelScope", js.undefined)
+    def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setServerNavigation(value: Boolean): Self = StObject.set(x, "serverNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetina(value: Boolean): Self = this.set("retina", value.asInstanceOf[js.Any])
+    def setServerNavigationUndefined: Self = StObject.set(x, "serverNavigation", js.undefined)
     
     @scala.inline
-    def deleteRetina: Self = this.set("retina", js.undefined)
+    def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerNavigation(value: Boolean): Self = this.set("serverNavigation", value.asInstanceOf[js.Any])
+    def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     
     @scala.inline
-    def deleteServerNavigation: Self = this.set("serverNavigation", js.undefined)
+    def setStatusBarStyle(value: String): Self = StObject.set(x, "statusBarStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkin(value: String): Self = this.set("skin", value.asInstanceOf[js.Any])
+    def setStatusBarStyleUndefined: Self = StObject.set(x, "statusBarStyle", js.undefined)
     
     @scala.inline
-    def deleteSkin: Self = this.set("skin", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusBarStyle(value: String): Self = this.set("statusBarStyle", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteStatusBarStyle: Self = this.set("statusBarStyle", js.undefined)
+    def setUpdateDocumentTitle(value: Boolean): Self = StObject.set(x, "updateDocumentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setUpdateDocumentTitleUndefined: Self = StObject.set(x, "updateDocumentTitle", js.undefined)
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDocumentTitle(value: Boolean): Self = this.set("updateDocumentTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDocumentTitle: Self = this.set("updateDocumentTitle", js.undefined)
-    
-    @scala.inline
-    def setUseNativeScrolling(value: Boolean): Self = this.set("useNativeScrolling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNativeScrolling: Self = this.set("useNativeScrolling", js.undefined)
+    def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
   }
 }

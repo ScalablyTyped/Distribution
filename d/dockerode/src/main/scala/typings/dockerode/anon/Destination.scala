@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Destination extends js.Object {
+trait Destination extends StObject {
   
   var Destination: String = js.native
   
@@ -32,48 +33,36 @@ object Destination {
   }
   
   @scala.inline
-  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriverUndefined: Self = StObject.set(x, "Driver", js.undefined)
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagation(value: String): Self = this.set("Propagation", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setRW(value: Boolean): Self = this.set("RW", value.asInstanceOf[js.Any])
+    def setPropagation(value: String): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setRW(value: Boolean): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("Driver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriver: Self = this.set("Driver", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

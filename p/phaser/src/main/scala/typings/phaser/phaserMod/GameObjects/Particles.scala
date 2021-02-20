@@ -7,19 +7,19 @@ import typings.phaser.Phaser.Types.GameObjects.Particles.GravityWellConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.RandomZoneSource
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "GameObjects.Particles")
-@js.native
-object Particles extends js.Object {
+object Particles {
   
   /**
     * A Particle Emitter property.
     * 
     * Facilitates changing Particle properties as they are emitted and throughout their lifetime.
     */
+  @JSImport("phaser", "GameObjects.Particles.EmitterOp")
   @js.native
   class EmitterOp protected ()
     extends typings.phaser.Phaser.GameObjects.Particles.EmitterOp {
@@ -41,6 +41,7 @@ object Particles extends js.Object {
     * 
     * This simulates the effect of gravity over large distances (as between planets, for example).
     */
+  @JSImport("phaser", "GameObjects.Particles.GravityWell")
   @js.native
   /**
     * 
@@ -223,6 +224,7 @@ object Particles extends js.Object {
     * A Particle is a simple Game Object controlled by a Particle Emitter and Manager, and rendered by the Manager.
     * It uses its own lightweight physics system, and can interact only with its Emitter's bounds and zones.
     */
+  @JSImport("phaser", "GameObjects.Particles.Particle")
   @js.native
   class Particle protected ()
     extends typings.phaser.Phaser.GameObjects.Particles.Particle {
@@ -237,6 +239,7 @@ object Particles extends js.Object {
     * A particle emitter represents a single particle stream.
     * It controls a pool of {@link Phaser.GameObjects.Particles.Particle Particles} and is controlled by a {@link Phaser.GameObjects.Particles.ParticleEmitterManager Particle Emitter Manager}.
     */
+  @JSImport("phaser", "GameObjects.Particles.ParticleEmitter")
   @js.native
   class ParticleEmitter protected ()
     extends typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter {
@@ -254,6 +257,7 @@ object Particles extends js.Object {
   /**
     * A Particle Emitter Manager creates and controls {@link Phaser.GameObjects.Particles.ParticleEmitter Particle Emitters} and {@link Phaser.GameObjects.Particles.GravityWell Gravity Wells}.
     */
+  @JSImport("phaser", "GameObjects.Particles.ParticleEmitterManager")
   @js.native
   class ParticleEmitterManager protected ()
     extends typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager {
@@ -280,8 +284,7 @@ object Particles extends js.Object {
     def this(scene: Scene, texture: String, frame: integer, emitters: ParticleEmitterConfig) = this()
   }
   
-  @js.native
-  object Zones extends js.Object {
+  object Zones {
     
     /**
       * A Death Zone.
@@ -291,6 +294,7 @@ object Particles extends js.Object {
       * The zone consists of a `source` which could be a Geometric shape, such as a Rectangle or Ellipse, or your own
       * object as long as it includes a `contains` method for which the Particles can be tested against.
       */
+    @JSImport("phaser", "GameObjects.Particles.Zones.DeathZone")
     @js.native
     class DeathZone protected ()
       extends typings.phaser.Phaser.GameObjects.Particles.Zones.DeathZone {
@@ -305,6 +309,7 @@ object Particles extends js.Object {
     /**
       * A zone that places particles on a shape's edges.
       */
+    @JSImport("phaser", "GameObjects.Particles.Zones.EdgeZone")
     @js.native
     class EdgeZone protected ()
       extends typings.phaser.Phaser.GameObjects.Particles.Zones.EdgeZone {
@@ -331,6 +336,7 @@ object Particles extends js.Object {
     /**
       * A zone that places particles randomly within a shape's area.
       */
+    @JSImport("phaser", "GameObjects.Particles.Zones.RandomZone")
     @js.native
     class RandomZone protected ()
       extends typings.phaser.Phaser.GameObjects.Particles.Zones.RandomZone {

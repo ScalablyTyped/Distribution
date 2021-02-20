@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Base extends js.Object {
+trait Base extends StObject {
   
   def addHook(name: String, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   
@@ -63,66 +64,54 @@ object Base {
   }
   
   @scala.inline
-  implicit class BaseOps[Self <: Base] (val x: Self) extends AnyVal {
+  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddHook(value: (String, js.Function1[/* repeated */ js.Any, _]) => Unit): Self = StObject.set(x, "addHook", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallOnPluginsReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "callOnPluginsReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearHooks(value: () => Unit): Self = StObject.set(x, "clearHooks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddHook(value: (String, js.Function1[/* repeated */ js.Any, _]) => Unit): Self = this.set("addHook", js.Any.fromFunction2(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallOnPluginsReady(value: js.Function0[Unit] => Unit): Self = this.set("callOnPluginsReady", js.Any.fromFunction1(value))
+    def setDisablePlugin(value: () => Unit): Self = StObject.set(x, "disablePlugin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearHooks(value: () => Unit): Self = this.set("clearHooks", js.Any.fromFunction0(value))
+    def setEnablePlugin(value: () => Unit): Self = StObject.set(x, "enablePlugin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePlugin(value: () => Unit): Self = this.set("disablePlugin", js.Any.fromFunction0(value))
+    def setHot(value: Core): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePlugin(value: () => Unit): Self = this.set("enablePlugin", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHot(value: Core): Self = this.set("hot", value.asInstanceOf[js.Any])
+    def setIsPluginsReady(value: Boolean): Self = StObject.set(x, "isPluginsReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialized(value: Boolean): Self = this.set("initialized", value.asInstanceOf[js.Any])
+    def setPluginsInitializedCallback(value: js.Array[_]): Self = StObject.set(x, "pluginsInitializedCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPluginsReady(value: Boolean): Self = this.set("isPluginsReady", value.asInstanceOf[js.Any])
+    def setPluginsInitializedCallbackVarargs(value: js.Any*): Self = StObject.set(x, "pluginsInitializedCallback", js.Array(value :_*))
     
     @scala.inline
-    def setPluginName(value: String): Self = this.set("pluginName", value.asInstanceOf[js.Any])
+    def setRemoveHooks(value: String => Unit): Self = StObject.set(x, "removeHooks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPluginsInitializedCallbackVarargs(value: js.Any*): Self = this.set("pluginsInitializedCallback", js.Array(value :_*))
-    
-    @scala.inline
-    def setPluginsInitializedCallback(value: js.Array[_]): Self = this.set("pluginsInitializedCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveHooks(value: String => Unit): Self = this.set("removeHooks", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdatePlugin(value: () => Unit): Self = this.set("updatePlugin", js.Any.fromFunction0(value))
+    def setUpdatePlugin(value: () => Unit): Self = StObject.set(x, "updatePlugin", js.Any.fromFunction0(value))
   }
 }

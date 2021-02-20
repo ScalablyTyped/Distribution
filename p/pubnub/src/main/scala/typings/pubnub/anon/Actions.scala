@@ -1,12 +1,13 @@
 package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Actions extends js.Object {
+trait Actions extends StObject {
   
   var actions: StringDictionary[StringDictionary[js.Array[ActionTimetoken]]] = js.native
   
@@ -32,36 +33,24 @@ object Actions {
   }
   
   @scala.inline
-  implicit class ActionsOps[Self <: Actions] (val x: Self) extends AnyVal {
+  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: StringDictionary[StringDictionary[js.Array[ActionTimetoken]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: StringDictionary[StringDictionary[js.Array[ActionTimetoken]]]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setMeta(value: StringDictionary[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setMessage(value: js.Any): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimetoken(value: String | Double): Self = this.set("timetoken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: StringDictionary[js.Any]): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setTimetoken(value: String | Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

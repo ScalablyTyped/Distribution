@@ -2,6 +2,7 @@ package typings.phaser.global.MatterJS
 
 import typings.phaser.MatterJS.IEngineDefinition
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,16 +20,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Engine ()
   extends typings.phaser.MatterJS.Engine
-/* static members */
-@JSGlobal("MatterJS.Engine")
-@js.native
-object Engine extends js.Object {
+object Engine {
   
   /**
     * Clears the engine including the world, pairs and broadphase.
     * @method clear
     * @param {engine} engine
     */
+  /* static member */
+  @JSGlobal("MatterJS.Engine.clear")
+  @js.native
   def clear(engine: typings.phaser.MatterJS.Engine): Unit = js.native
   
   /**
@@ -41,6 +42,7 @@ object Engine extends js.Object {
     * @return {engine} engine
     * @deprecated
     */
+  /* static member */
   /**
     * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -50,11 +52,23 @@ object Engine extends js.Object {
     * @return {engine} engine
     * @deprecated
     */
+  @JSGlobal("MatterJS.Engine.create")
+  @js.native
   def create(): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.create")
+  @js.native
   def create(element: js.UndefOr[scala.Nothing], options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.create")
+  @js.native
   def create(element: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.create")
+  @js.native
   def create(element: IEngineDefinition, options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.create")
+  @js.native
   def create(element: HTMLElement): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.create")
+  @js.native
   def create(element: HTMLElement, options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
   
   /**
@@ -63,6 +77,9 @@ object Engine extends js.Object {
     * @param {engine} engineA
     * @param {engine} engineB
     */
+  /* static member */
+  @JSGlobal("MatterJS.Engine.merge")
+  @js.native
   def merge(engineA: typings.phaser.MatterJS.Engine, engineB: typings.phaser.MatterJS.Engine): Unit = js.native
   
   /**
@@ -70,6 +87,9 @@ object Engine extends js.Object {
     * @method run
     * @param {engine} engine
     */
+  /* static member */
+  @JSGlobal("MatterJS.Engine.run")
+  @js.native
   def run(engine: typings.phaser.MatterJS.Engine): Unit = js.native
   
   /**
@@ -87,8 +107,17 @@ object Engine extends js.Object {
     * @param {number} [delta=16.666]
     * @param {number} [correction=1]
     */
+  /* static member */
+  @JSGlobal("MatterJS.Engine.update")
+  @js.native
   def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.update")
+  @js.native
   def update(engine: typings.phaser.MatterJS.Engine, delta: js.UndefOr[scala.Nothing], correction: Double): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.update")
+  @js.native
   def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = js.native
+  @JSGlobal("MatterJS.Engine.update")
+  @js.native
   def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = js.native
 }

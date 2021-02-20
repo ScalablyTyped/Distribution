@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Storage
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sequential-access output stream that indicates a request for the data stream of a StorageFile that was created by calling CreateStreamedFileAsync or ReplaceWithStreamedFileAsync . */
 @js.native
-trait StreamedFileDataRequest extends js.Object {
+trait StreamedFileDataRequest extends StObject {
   
   /** Releases system resources that are exposed by the current stream indicating that the data request is complete. */
   def close(): Unit = js.native
@@ -47,30 +48,18 @@ object StreamedFileDataRequest {
   }
   
   @scala.inline
-  implicit class StreamedFileDataRequestOps[Self <: StreamedFileDataRequest] (val x: Self) extends AnyVal {
+  implicit class StreamedFileDataRequestMutableBuilder[Self <: StreamedFileDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = StObject.set(x, "failAndClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = this.set("failAndClose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = this.set("flushAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = this.set("writeAsync", js.Any.fromFunction1(value))
+    def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
   }
 }

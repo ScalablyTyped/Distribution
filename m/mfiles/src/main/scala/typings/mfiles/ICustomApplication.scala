@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFCustomApplicationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICustomApplication extends js.Object {
+trait ICustomApplication extends StObject {
   
   val ApplicationType: MFCustomApplicationType = js.native
   
@@ -54,54 +55,42 @@ object ICustomApplication {
   }
   
   @scala.inline
-  implicit class ICustomApplicationOps[Self <: ICustomApplication] (val x: Self) extends AnyVal {
+  implicit class ICustomApplicationMutableBuilder[Self <: ICustomApplication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationType(value: MFCustomApplicationType): Self = StObject.set(x, "ApplicationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumHash(value: String): Self = StObject.set(x, "ChecksumHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone(value: () => ICustomApplication): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplicationType(value: MFCustomApplicationType): Self = this.set("ApplicationType", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksumHash(value: String): Self = this.set("ChecksumHash", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ICustomApplication): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setMasterApplication(value: String): Self = StObject.set(x, "MasterApplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setOptional(value: Boolean): Self = StObject.set(x, "Optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterApplication(value: String): Self = this.set("MasterApplication", value.asInstanceOf[js.Any])
+    def setPublisher(value: String): Self = StObject.set(x, "Publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRequireSystemAccess(value: Boolean): Self = StObject.set(x, "RequireSystemAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("Optional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisher(value: String): Self = this.set("Publisher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequireSystemAccess(value: Boolean): Self = this.set("RequireSystemAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

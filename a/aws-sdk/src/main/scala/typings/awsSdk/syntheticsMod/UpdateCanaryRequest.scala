@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCanaryRequest extends js.Object {
+trait UpdateCanaryRequest extends StObject {
   
   /**
     * A structure that includes the entry point from which the canary should start running your script. If the script is stored in an S3 bucket, the bucket name, key, and version are also included. 
@@ -61,69 +62,57 @@ object UpdateCanaryRequest {
   }
   
   @scala.inline
-  implicit class UpdateCanaryRequestOps[Self <: UpdateCanaryRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateCanaryRequestMutableBuilder[Self <: UpdateCanaryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CanaryCodeInput): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CanaryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
     @scala.inline
-    def setCode(value: CanaryCodeInput): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setFailureRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "FailureRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
+    def setFailureRetentionPeriodInDaysUndefined: Self = StObject.set(x, "FailureRetentionPeriodInDays", js.undefined)
     
     @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionRoleArn: Self = this.set("ExecutionRoleArn", js.undefined)
+    def setRunConfig(value: CanaryRunConfigInput): Self = StObject.set(x, "RunConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureRetentionPeriodInDays(value: MaxSize1024): Self = this.set("FailureRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    def setRunConfigUndefined: Self = StObject.set(x, "RunConfig", js.undefined)
     
     @scala.inline
-    def deleteFailureRetentionPeriodInDays: Self = this.set("FailureRetentionPeriodInDays", js.undefined)
+    def setRuntimeVersion(value: String): Self = StObject.set(x, "RuntimeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunConfig(value: CanaryRunConfigInput): Self = this.set("RunConfig", value.asInstanceOf[js.Any])
+    def setRuntimeVersionUndefined: Self = StObject.set(x, "RuntimeVersion", js.undefined)
     
     @scala.inline
-    def deleteRunConfig: Self = this.set("RunConfig", js.undefined)
+    def setSchedule(value: CanaryScheduleInput): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeVersion(value: String): Self = this.set("RuntimeVersion", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteRuntimeVersion: Self = this.set("RuntimeVersion", js.undefined)
+    def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: CanaryScheduleInput): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setSuccessRetentionPeriodInDaysUndefined: Self = StObject.set(x, "SuccessRetentionPeriodInDays", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setVpcConfig(value: VpcConfigInput): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = this.set("SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessRetentionPeriodInDays: Self = this.set("SuccessRetentionPeriodInDays", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfigInput): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

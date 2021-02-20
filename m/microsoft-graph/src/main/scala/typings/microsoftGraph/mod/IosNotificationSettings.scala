@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosNotificationSettings extends js.Object {
+trait IosNotificationSettings extends StObject {
   
   // Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none.
   var alertType: js.UndefOr[IosNotificationAlertType] = js.native
@@ -43,93 +44,81 @@ object IosNotificationSettings {
   }
   
   @scala.inline
-  implicit class IosNotificationSettingsOps[Self <: IosNotificationSettings] (val x: Self) extends AnyVal {
+  implicit class IosNotificationSettingsMutableBuilder[Self <: IosNotificationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertType(value: IosNotificationAlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertTypeUndefined: Self = StObject.set(x, "alertType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppName(value: NullableOption[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertType(value: IosNotificationAlertType): Self = this.set("alertType", value.asInstanceOf[js.Any])
+    def setAppNameNull: Self = StObject.set(x, "appName", null)
     
     @scala.inline
-    def deleteAlertType: Self = this.set("alertType", js.undefined)
+    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
     @scala.inline
-    def setAppName(value: NullableOption[String]): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setBadgesEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "badgesEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppName: Self = this.set("appName", js.undefined)
+    def setBadgesEnabledNull: Self = StObject.set(x, "badgesEnabled", null)
     
     @scala.inline
-    def setAppNameNull: Self = this.set("appName", null)
+    def setBadgesEnabledUndefined: Self = StObject.set(x, "badgesEnabled", js.undefined)
     
     @scala.inline
-    def setBadgesEnabled(value: NullableOption[Boolean]): Self = this.set("badgesEnabled", value.asInstanceOf[js.Any])
+    def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadgesEnabled: Self = this.set("badgesEnabled", js.undefined)
+    def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
     
     @scala.inline
-    def setBadgesEnabledNull: Self = this.set("badgesEnabled", null)
+    def setEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleID(value: String): Self = this.set("bundleID", value.asInstanceOf[js.Any])
+    def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
     @scala.inline
-    def deleteBundleID: Self = this.set("bundleID", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setEnabled(value: NullableOption[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setPublisherNull: Self = StObject.set(x, "publisher", null)
     
     @scala.inline
-    def setEnabledNull: Self = this.set("enabled", null)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def setPublisher(value: NullableOption[String]): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setShowInNotificationCenter(value: NullableOption[Boolean]): Self = StObject.set(x, "showInNotificationCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def setShowInNotificationCenterNull: Self = StObject.set(x, "showInNotificationCenter", null)
     
     @scala.inline
-    def setPublisherNull: Self = this.set("publisher", null)
+    def setShowInNotificationCenterUndefined: Self = StObject.set(x, "showInNotificationCenter", js.undefined)
     
     @scala.inline
-    def setShowInNotificationCenter(value: NullableOption[Boolean]): Self = this.set("showInNotificationCenter", value.asInstanceOf[js.Any])
+    def setShowOnLockScreen(value: NullableOption[Boolean]): Self = StObject.set(x, "showOnLockScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowInNotificationCenter: Self = this.set("showInNotificationCenter", js.undefined)
+    def setShowOnLockScreenNull: Self = StObject.set(x, "showOnLockScreen", null)
     
     @scala.inline
-    def setShowInNotificationCenterNull: Self = this.set("showInNotificationCenter", null)
+    def setShowOnLockScreenUndefined: Self = StObject.set(x, "showOnLockScreen", js.undefined)
     
     @scala.inline
-    def setShowOnLockScreen(value: NullableOption[Boolean]): Self = this.set("showOnLockScreen", value.asInstanceOf[js.Any])
+    def setSoundsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "soundsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowOnLockScreen: Self = this.set("showOnLockScreen", js.undefined)
+    def setSoundsEnabledNull: Self = StObject.set(x, "soundsEnabled", null)
     
     @scala.inline
-    def setShowOnLockScreenNull: Self = this.set("showOnLockScreen", null)
-    
-    @scala.inline
-    def setSoundsEnabled(value: NullableOption[Boolean]): Self = this.set("soundsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoundsEnabled: Self = this.set("soundsEnabled", js.undefined)
-    
-    @scala.inline
-    def setSoundsEnabledNull: Self = this.set("soundsEnabled", null)
+    def setSoundsEnabledUndefined: Self = StObject.set(x, "soundsEnabled", js.undefined)
   }
 }

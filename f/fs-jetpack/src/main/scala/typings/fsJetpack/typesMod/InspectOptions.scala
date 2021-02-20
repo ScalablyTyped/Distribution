@@ -2,12 +2,13 @@ package typings.fsJetpack.typesMod
 
 import typings.fsJetpack.fsJetpackStrings.follow
 import typings.fsJetpack.fsJetpackStrings.report
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InspectOptions extends js.Object {
+trait InspectOptions extends StObject {
   
   var absolutePath: js.UndefOr[Boolean] = js.native
   
@@ -28,48 +29,36 @@ object InspectOptions {
   }
   
   @scala.inline
-  implicit class InspectOptionsOps[Self <: InspectOptions] (val x: Self) extends AnyVal {
+  implicit class InspectOptionsMutableBuilder[Self <: InspectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChecksum(value: Checksum): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutePath(value: Boolean): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
+    def setMode(value: Boolean): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: Checksum): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setSymlinks(value: report | follow): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Boolean): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setTimes(value: Boolean): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymlinks(value: report | follow): Self = this.set("symlinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymlinks: Self = this.set("symlinks", js.undefined)
-    
-    @scala.inline
-    def setTimes(value: Boolean): Self = this.set("times", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimes: Self = this.set("times", js.undefined)
+    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
   }
 }

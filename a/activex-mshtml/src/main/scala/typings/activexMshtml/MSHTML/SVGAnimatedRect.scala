@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGAnimatedRect extends js.Object {
+trait SVGAnimatedRect extends StObject {
   
   @JSName("MSHTML.SVGAnimatedRect_typekey")
   var MSHTMLDotSVGAnimatedRect_typekey: SVGAnimatedRect = js.native
@@ -24,27 +25,15 @@ object SVGAnimatedRect {
   }
   
   @scala.inline
-  implicit class SVGAnimatedRectOps[Self <: SVGAnimatedRect] (val x: Self) extends AnyVal {
+  implicit class SVGAnimatedRectMutableBuilder[Self <: SVGAnimatedRect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimVal(value: SVGRect): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseVal(value: SVGRect): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedRect_typekey(value: SVGAnimatedRect): Self = this.set("MSHTML.SVGAnimatedRect_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimVal(value: SVGRect): Self = this.set("animVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseVal(value: SVGRect): Self = this.set("baseVal", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGAnimatedRect_typekey(value: SVGAnimatedRect): Self = StObject.set(x, "MSHTML.SVGAnimatedRect_typekey", value.asInstanceOf[js.Any])
   }
 }

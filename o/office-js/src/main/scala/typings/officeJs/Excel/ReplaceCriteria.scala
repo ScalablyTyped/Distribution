@@ -1,5 +1,6 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ReplaceCriteria extends js.Object {
+trait ReplaceCriteria extends StObject {
   
   /**
     *
@@ -40,30 +41,18 @@ object ReplaceCriteria {
   }
   
   @scala.inline
-  implicit class ReplaceCriteriaOps[Self <: ReplaceCriteria] (val x: Self) extends AnyVal {
+  implicit class ReplaceCriteriaMutableBuilder[Self <: ReplaceCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteMatchUndefined: Self = StObject.set(x, "completeMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteMatch(value: Boolean): Self = this.set("completeMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompleteMatch: Self = this.set("completeMatch", js.undefined)
-    
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchCase: Self = this.set("matchCase", js.undefined)
+    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
   }
 }

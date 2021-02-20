@@ -1,6 +1,7 @@
 package typings.yaml.parseCstMod.CST
 
 import typings.yaml.utilMod.Type.DOCUMENT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment(value: Null): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContents(value: js.Array[BlankLine | Comment | ContentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Null): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setContentsVarargs(value: (BlankLine | Comment | ContentNode)*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
     @scala.inline
-    def setComment(value: Null): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDirectives(value: js.Array[BlankLine | Comment | Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentsVarargs(value: (BlankLine | Comment | ContentNode)*): Self = this.set("contents", js.Array(value :_*))
+    def setDirectivesVarargs(value: (BlankLine | Comment | Directive)*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
     @scala.inline
-    def setContents(value: js.Array[BlankLine | Comment | ContentNode]): Self = this.set("contents", value.asInstanceOf[js.Any])
+    def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesVarargs(value: (BlankLine | Comment | Directive)*): Self = this.set("directives", js.Array(value :_*))
-    
-    @scala.inline
-    def setDirectives(value: js.Array[BlankLine | Comment | Directive]): Self = this.set("directives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: Null): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: DOCUMENT): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: DOCUMENT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

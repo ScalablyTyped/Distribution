@@ -5,14 +5,14 @@ import typings.three.eulerMod.Euler
 import typings.three.matrix4Mod.Matrix4
 import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Quaternion", JSImport.Namespace)
-@js.native
-object quaternionMod extends js.Object {
+object quaternionMod {
   
+  @JSImport("three/src/math/Quaternion", "Quaternion")
   @js.native
   /**
   	 * @param x x coordinate
@@ -20,7 +20,7 @@ object quaternionMod extends js.Object {
   	 * @param z z coordinate
   	 * @param w w coordinate
   	 */
-  class Quaternion () extends js.Object {
+  class Quaternion () extends StObject {
     def this(x: Double) = this()
     def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
@@ -181,9 +181,10 @@ object quaternionMod extends js.Object {
     var z: Double = js.native
   }
   /* static members */
-  @js.native
-  object Quaternion extends js.Object {
+  object Quaternion {
     
+    @JSImport("three/src/math/Quaternion", "Quaternion.multiplyQuaternionsFlat")
+    @js.native
     def multiplyQuaternionsFlat(
       dst: js.Array[Double],
       dstOffset: Double,
@@ -196,8 +197,12 @@ object quaternionMod extends js.Object {
     /**
     	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
     	 */
+    @JSImport("three/src/math/Quaternion", "Quaternion.slerp")
+    @js.native
     def slerp(qa: Quaternion, qb: Quaternion, qm: Quaternion, t: Double): Quaternion = js.native
     
+    @JSImport("three/src/math/Quaternion", "Quaternion.slerpFlat")
+    @js.native
     def slerpFlat(
       dst: js.Array[Double],
       dstOffset: Double,

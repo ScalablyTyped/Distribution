@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLSnippets extends js.Object {
+trait HTMLSnippets extends StObject {
   
   /*HTML that gives the download link for the STIX fonts only. (Used in place of fonts when the HTML-CSS option
     * for availableFonts only includes the STIX fonts.)
@@ -35,48 +36,36 @@ object HTMLSnippets {
   }
   
   @scala.inline
-  implicit class HTMLSnippetsOps[Self <: HTMLSnippets] (val x: Self) extends AnyVal {
+  implicit class HTMLSnippetsMutableBuilder[Self <: HTMLSnippets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseBox(value: String): Self = StObject.set(x, "closeBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseBoxUndefined: Self = StObject.set(x, "closeBox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFonts(value: String): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSTIXfonts(value: String): Self = this.set("STIXfonts", value.asInstanceOf[js.Any])
+    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
     @scala.inline
-    def deleteSTIXfonts: Self = this.set("STIXfonts", js.undefined)
+    def setSTIXfonts(value: String): Self = StObject.set(x, "STIXfonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeXfonts(value: String): Self = this.set("TeXfonts", value.asInstanceOf[js.Any])
+    def setSTIXfontsUndefined: Self = StObject.set(x, "STIXfonts", js.undefined)
     
     @scala.inline
-    def deleteTeXfonts: Self = this.set("TeXfonts", js.undefined)
+    def setTeXfonts(value: String): Self = StObject.set(x, "TeXfonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBox(value: String): Self = this.set("closeBox", value.asInstanceOf[js.Any])
+    def setTeXfontsUndefined: Self = StObject.set(x, "TeXfonts", js.undefined)
     
     @scala.inline
-    def deleteCloseBox: Self = this.set("closeBox", js.undefined)
+    def setWebfonts(value: String): Self = StObject.set(x, "webfonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFonts(value: String): Self = this.set("fonts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFonts: Self = this.set("fonts", js.undefined)
-    
-    @scala.inline
-    def setWebfonts(value: String): Self = this.set("webfonts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebfonts: Self = this.set("webfonts", js.undefined)
+    def setWebfontsUndefined: Self = StObject.set(x, "webfonts", js.undefined)
   }
 }

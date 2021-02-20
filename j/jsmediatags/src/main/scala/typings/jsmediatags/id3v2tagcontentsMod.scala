@@ -5,16 +5,21 @@ import typings.jsmediatags.anon.CRC
 import typings.jsmediatags.typesMod.ByteArray
 import typings.jsmediatags.typesMod.TagFrameFlags
 import typings.jsmediatags.typesMod.TagHeaderFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/ID3v2TagContents", JSImport.Namespace)
-@js.native
-object id3v2tagcontentsMod extends js.Object {
+object id3v2tagcontentsMod {
+  
+  @JSImport("jsmediatags/build2/ID3v2TagContents", JSImport.Default)
+  @js.native
+  class default protected () extends ID3v2TagContents {
+    def this(major: Double, revision: Double) = this()
+  }
   
   @js.native
-  trait ID3v2TagContents extends js.Object {
+  trait ID3v2TagContents extends StObject {
     
     def _addData(offset: Double, data: ByteArray): Unit = js.native
     
@@ -63,10 +68,5 @@ object id3v2tagcontentsMod extends js.Object {
     def setTagRestrictions(size: Double, textEncoding: Double, textSize: Double, imageEncoding: Double, imageSize: Double): ID3v2TagContents = js.native
     
     def toArray(): ByteArray = js.native
-  }
-  
-  @js.native
-  class default protected () extends ID3v2TagContents {
-    def this(major: Double, revision: Double) = this()
   }
 }

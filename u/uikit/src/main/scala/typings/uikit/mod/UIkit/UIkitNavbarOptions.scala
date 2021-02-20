@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitNavbarOptions extends js.Object {
+trait UIkitNavbarOptions extends StObject {
   
   var align: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object UIkitNavbarOptions {
   }
   
   @scala.inline
-  implicit class UIkitNavbarOptionsOps[Self <: UIkitNavbarOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitNavbarOptionsMutableBuilder[Self <: UIkitNavbarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def `setBoundary-align`(value: Boolean): Self = StObject.set(x, "boundary-align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def `setBoundary-alignUndefined`: Self = StObject.set(x, "boundary-align", js.undefined)
     
     @scala.inline
-    def setBoundary(value: String): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
     @scala.inline
-    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    def `setDelay-hide`(value: Double): Self = StObject.set(x, "delay-hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBoundary-align`(value: Boolean): Self = this.set("boundary-align", value.asInstanceOf[js.Any])
+    def `setDelay-hideUndefined`: Self = StObject.set(x, "delay-hide", js.undefined)
     
     @scala.inline
-    def `deleteBoundary-align`: Self = this.set("boundary-align", js.undefined)
+    def `setDelay-show`(value: Double): Self = StObject.set(x, "delay-show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDelay-hide`(value: Double): Self = this.set("delay-hide", value.asInstanceOf[js.Any])
+    def `setDelay-showUndefined`: Self = StObject.set(x, "delay-show", js.undefined)
     
     @scala.inline
-    def `deleteDelay-hide`: Self = this.set("delay-hide", js.undefined)
+    def setDropbar(value: Boolean): Self = StObject.set(x, "dropbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDelay-show`(value: Double): Self = this.set("delay-show", value.asInstanceOf[js.Any])
+    def `setDropbar-mode`(value: String): Self = StObject.set(x, "dropbar-mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteDelay-show`: Self = this.set("delay-show", js.undefined)
+    def `setDropbar-modeUndefined`: Self = StObject.set(x, "dropbar-mode", js.undefined)
     
     @scala.inline
-    def setDropbar(value: Boolean): Self = this.set("dropbar", value.asInstanceOf[js.Any])
+    def setDropbarUndefined: Self = StObject.set(x, "dropbar", js.undefined)
     
     @scala.inline
-    def deleteDropbar: Self = this.set("dropbar", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDropbar-mode`(value: String): Self = this.set("dropbar-mode", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def `deleteDropbar-mode`: Self = this.set("dropbar-mode", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

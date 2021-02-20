@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtraLarge extends js.Object {
+trait ExtraLarge extends StObject {
   
   var extraLarge: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object ExtraLarge {
   }
   
   @scala.inline
-  implicit class ExtraLargeOps[Self <: ExtraLarge] (val x: Self) extends AnyVal {
+  implicit class ExtraLargeMutableBuilder[Self <: ExtraLarge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraLarge(value: String): Self = StObject.set(x, "extraLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraLargeUndefined: Self = StObject.set(x, "extraLarge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraLarge(value: String): Self = this.set("extraLarge", value.asInstanceOf[js.Any])
+    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
     @scala.inline
-    def deleteExtraLarge: Self = this.set("extraLarge", js.undefined)
+    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge(value: String): Self = this.set("large", value.asInstanceOf[js.Any])
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def deleteLarge: Self = this.set("large", js.undefined)
+    def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: String): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setSmallThumbnail(value: String): Self = StObject.set(x, "smallThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
+    def setSmallThumbnailUndefined: Self = StObject.set(x, "smallThumbnail", js.undefined)
     
     @scala.inline
-    def setSmall(value: String): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
     @scala.inline
-    def deleteSmall: Self = this.set("small", js.undefined)
+    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallThumbnail(value: String): Self = this.set("smallThumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmallThumbnail: Self = this.set("smallThumbnail", js.undefined)
-    
-    @scala.inline
-    def setThumbnail(value: String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

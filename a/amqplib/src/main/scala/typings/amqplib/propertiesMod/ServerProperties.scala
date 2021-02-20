@@ -1,6 +1,7 @@
 package typings.amqplib.propertiesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,39 +31,27 @@ object ServerProperties {
   }
   
   @scala.inline
-  implicit class ServerPropertiesOps[Self <: ServerProperties] (val x: Self) extends AnyVal {
+  implicit class ServerPropertiesMutableBuilder[Self <: ServerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setInformation(value: String): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInformation(value: String): Self = this.set("information", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

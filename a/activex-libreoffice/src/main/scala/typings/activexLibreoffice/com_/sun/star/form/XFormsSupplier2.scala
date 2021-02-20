@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,21 +38,9 @@ object XFormsSupplier2 {
   }
   
   @scala.inline
-  implicit class XFormsSupplier2Ops[Self <: XFormsSupplier2] (val x: Self) extends AnyVal {
+  implicit class XFormsSupplier2MutableBuilder[Self <: XFormsSupplier2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasForms(value: () => Boolean): Self = this.set("hasForms", js.Any.fromFunction0(value))
+    def setHasForms(value: () => Boolean): Self = StObject.set(x, "hasForms", js.Any.fromFunction0(value))
   }
 }

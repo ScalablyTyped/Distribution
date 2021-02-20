@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointSymbolCalloutScale extends js.Object
+sealed trait PointSymbolCalloutScale extends StObject
 @JSGlobal("__esri.CIM.PointSymbolCalloutScale")
 @js.native
-object PointSymbolCalloutScale extends js.Object {
+object PointSymbolCalloutScale extends StObject {
   
   /**
     * Non-uniform scaling.

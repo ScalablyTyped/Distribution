@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryItem extends js.Object {
+trait InventoryItem extends StObject {
   
   /** Software package available to be installed on the VM instance. */
   var availablePackage: js.UndefOr[InventorySoftwarePackage] = js.native
@@ -37,60 +38,48 @@ object InventoryItem {
   }
   
   @scala.inline
-  implicit class InventoryItemOps[Self <: InventoryItem] (val x: Self) extends AnyVal {
+  implicit class InventoryItemMutableBuilder[Self <: InventoryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailablePackage(value: InventorySoftwarePackage): Self = StObject.set(x, "availablePackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePackageUndefined: Self = StObject.set(x, "availablePackage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePackage(value: InventorySoftwarePackage): Self = this.set("availablePackage", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAvailablePackage: Self = this.set("availablePackage", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setInstalledPackage(value: InventorySoftwarePackage): Self = StObject.set(x, "installedPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstalledPackageUndefined: Self = StObject.set(x, "installedPackage", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOriginType(value: String): Self = StObject.set(x, "originType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledPackage(value: InventorySoftwarePackage): Self = this.set("installedPackage", value.asInstanceOf[js.Any])
+    def setOriginTypeUndefined: Self = StObject.set(x, "originType", js.undefined)
     
     @scala.inline
-    def deleteInstalledPackage: Self = this.set("installedPackage", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginType(value: String): Self = this.set("originType", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteOriginType: Self = this.set("originType", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponse extends js.Object {
+trait GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponse extends StObject {
   
   /** The duration between asset discovery run start and end */
   var duration: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponseOps[Self <: GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponseMutableBuilder[Self <: GoogleCloudSecuritycenterV1beta1RunAssetDiscoveryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import typings.googleAppsScript.GoogleAppsScript.Base.User
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     form.setDestination(FormApp.DestinationType.SPREADSHEET, ss.getId());
   */
 @js.native
-trait Form extends js.Object {
+trait Form extends StObject {
   
   def addCheckboxGridItem(): CheckboxGridItem = js.native
   

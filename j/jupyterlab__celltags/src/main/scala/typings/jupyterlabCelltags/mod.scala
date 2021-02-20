@@ -3,14 +3,14 @@ package typings.jupyterlabCelltags
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabNotebook.tokensMod.INotebookTracker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/celltags", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jupyterlab/celltags", "AddWidget")
   @js.native
   /**
     * Construct a new tag widget.
@@ -18,6 +18,7 @@ object mod extends js.Object {
   class AddWidget ()
     extends typings.jupyterlabCelltags.addwidgetMod.AddWidget
   
+  @JSImport("@jupyterlab/celltags", "TagTool")
   @js.native
   class TagTool protected ()
     extends typings.jupyterlabCelltags.toolMod.TagTool {
@@ -29,6 +30,7 @@ object mod extends js.Object {
     def this(tracker: INotebookTracker, app: JupyterFrontEnd[IShell]) = this()
   }
   
+  @JSImport("@jupyterlab/celltags", "TagWidget")
   @js.native
   class TagWidget protected ()
     extends typings.jupyterlabCelltags.widgetMod.TagWidget {

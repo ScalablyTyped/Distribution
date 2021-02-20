@@ -1,27 +1,25 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `createEvent` operation. */
-@JSImport("watson-developer-cloud/discovery/v1-generated", "CreateEventConstants")
-@js.native
-object CreateEventConstants extends js.Object {
+object CreateEventConstants {
   
   @js.native
-  sealed trait Type extends js.Object
+  sealed trait Type extends StObject
   /** The event type to be created. */
+  @JSImport("watson-developer-cloud/discovery/v1-generated", "CreateEventConstants.Type")
   @js.native
-  object Type extends js.Object {
+  object Type extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Type with String] = js.native
     
     @js.native
     sealed trait CLICK extends Type
-    /* "click" */ @js.native
-    object CLICK extends TopLevel[CLICK with String]
+    /* "click" */ val CLICK: typings.watsonDeveloperCloud.v1GeneratedMod.CreateEventConstants.Type.CLICK with String = js.native
   }
 }

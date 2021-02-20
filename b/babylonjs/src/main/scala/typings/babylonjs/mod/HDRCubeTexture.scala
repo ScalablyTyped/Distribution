@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +38,11 @@ class HDRCubeTexture protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "HDRCubeTexture")
-@js.native
-object HDRCubeTexture extends js.Object {
+object HDRCubeTexture {
+  
+  @JSImport("babylonjs", "HDRCubeTexture")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parses a JSON representation of an HDR Texture in order to create the texture
@@ -48,7 +51,13 @@ object HDRCubeTexture extends js.Object {
     * @param rootUrl Define the root url in case we need to load relative dependencies
     * @returns the newly created texture after parsing
     */
+  @JSImport("babylonjs", "HDRCubeTexture.Parse")
+  @js.native
   def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.hdrCubeTextureMod.HDRCubeTexture] = js.native
   
-  var _facesMapping: js.Any = js.native
+  @JSImport("babylonjs", "HDRCubeTexture._facesMapping")
+  @js.native
+  def _facesMapping: js.Any = js.native
+  @scala.inline
+  def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
 }

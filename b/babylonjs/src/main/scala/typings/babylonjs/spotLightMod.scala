@@ -6,14 +6,14 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowLightMod.ShadowLight
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/spotLight", JSImport.Namespace)
-@js.native
-object spotLightMod extends js.Object {
+object spotLightMod {
   
+  @JSImport("babylonjs/Lights/spotLight", "SpotLight")
   @js.native
   class SpotLight protected () extends ShadowLight {
     /**
@@ -155,11 +155,22 @@ object spotLightMod extends js.Object {
     def shadowAngleScale_=(value: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object SpotLight extends js.Object {
+  object SpotLight {
     
-    var _IsProceduralTexture: js.Any = js.native
+    @JSImport("babylonjs/Lights/spotLight", "SpotLight")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _IsTexture: js.Any = js.native
+    @JSImport("babylonjs/Lights/spotLight", "SpotLight._IsProceduralTexture")
+    @js.native
+    def _IsProceduralTexture: js.Any = js.native
+    @scala.inline
+    def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Lights/spotLight", "SpotLight._IsTexture")
+    @js.native
+    def _IsTexture: js.Any = js.native
+    @scala.inline
+    def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
   }
 }

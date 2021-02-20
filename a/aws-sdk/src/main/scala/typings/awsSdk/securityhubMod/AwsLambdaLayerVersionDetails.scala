@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsLambdaLayerVersionDetails extends js.Object {
+trait AwsLambdaLayerVersionDetails extends StObject {
   
   /**
     * The layer's compatible runtimes. Maximum number of five items. Valid values: nodejs10.x | nodejs12.x | java8 | java11 | python2.7 | python3.6 | python3.7 | python3.8 | dotnetcore1.0 | dotnetcore2.1 | go1.x | ruby2.5 | provided 
@@ -31,39 +32,27 @@ object AwsLambdaLayerVersionDetails {
   }
   
   @scala.inline
-  implicit class AwsLambdaLayerVersionDetailsOps[Self <: AwsLambdaLayerVersionDetails] (val x: Self) extends AnyVal {
+  implicit class AwsLambdaLayerVersionDetailsMutableBuilder[Self <: AwsLambdaLayerVersionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompatibleRuntimes(value: NonEmptyStringList): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompatibleRuntimesVarargs(value: NonEmptyString*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
     
     @scala.inline
-    def setCompatibleRuntimesVarargs(value: NonEmptyString*): Self = this.set("CompatibleRuntimes", js.Array(value :_*))
+    def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibleRuntimes(value: NonEmptyStringList): Self = this.set("CompatibleRuntimes", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteCompatibleRuntimes: Self = this.set("CompatibleRuntimes", js.undefined)
+    def setVersion(value: AwsLambdaLayerVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: NonEmptyString): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: AwsLambdaLayerVersionNumber): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

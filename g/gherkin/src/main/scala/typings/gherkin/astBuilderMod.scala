@@ -15,16 +15,21 @@ import typings.cucumberMessages.mod.messages.GherkinDocument.Feature.Step.DocStr
 import typings.cucumberMessages.mod.messages.GherkinDocument.Feature.TableRow
 import typings.cucumberMessages.mod.messages.GherkinDocument.Feature.TableRow.TableCell
 import typings.gherkin.parserMod.RuleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gherkin/dist/src/AstBuilder", JSImport.Namespace)
-@js.native
-object astBuilderMod extends js.Object {
+object astBuilderMod {
+  
+  @JSImport("gherkin/dist/src/AstBuilder", JSImport.Default)
+  @js.native
+  class default protected () extends AstBuilder {
+    def this(newId: NewId) = this()
+  }
   
   @js.native
-  trait AstBuilder extends js.Object {
+  trait AstBuilder extends StObject {
     
     def build(token: typings.gherkin.tokenMod.default): Unit = js.native
     
@@ -60,10 +65,5 @@ object astBuilderMod extends js.Object {
     def startRule(ruleType: RuleType): Unit = js.native
     
     def transformNode(node: typings.gherkin.astNodeMod.default): String | typings.gherkin.astNodeMod.default | GherkinDocument | Feature | Step | DocString | DataTable | js.Array[TableRow] | Background | Scenario | Examples | Rule = js.native
-  }
-  
-  @js.native
-  class default protected () extends AstBuilder {
-    def this(newId: NewId) = this()
   }
 }

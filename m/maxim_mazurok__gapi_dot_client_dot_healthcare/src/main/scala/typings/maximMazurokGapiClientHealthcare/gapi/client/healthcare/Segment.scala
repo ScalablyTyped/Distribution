@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Segment extends js.Object {
+trait Segment extends StObject {
   
   /**
     * A mapping from the positional location to the value. The key string uses zero-based indexes separated by dots to identify Fields, components and sub-components. A bracket notation
@@ -35,40 +36,28 @@ object Segment {
   }
   
   @scala.inline
-  implicit class SegmentOps[Self <: Segment] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Segment with TopLevel[js.Any]
-    ): Self = this.set("fields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setSegmentId(value: String): Self = this.set("segmentId", value.asInstanceOf[js.Any])
+    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSegmentId: Self = this.set("segmentId", js.undefined)
+    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
     
     @scala.inline
-    def setSetId(value: String): Self = this.set("setId", value.asInstanceOf[js.Any])
+    def setSetId(value: String): Self = StObject.set(x, "setId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetId: Self = this.set("setId", js.undefined)
+    def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
   }
 }

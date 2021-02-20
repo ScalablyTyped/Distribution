@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentRefinementsExposed extends js.Object {
+trait CurrentRefinementsExposed extends StObject {
   
   /** Pass true to also clear the search query */
   var clearsQuery: js.UndefOr[Boolean] = js.native
@@ -25,30 +26,18 @@ object CurrentRefinementsExposed {
   }
   
   @scala.inline
-  implicit class CurrentRefinementsExposedOps[Self <: CurrentRefinementsExposed] (val x: Self) extends AnyVal {
+  implicit class CurrentRefinementsExposedMutableBuilder[Self <: CurrentRefinementsExposed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearsQuery(value: Boolean): Self = StObject.set(x, "clearsQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearsQueryUndefined: Self = StObject.set(x, "clearsQuery", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearsQuery(value: Boolean): Self = this.set("clearsQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClearsQuery: Self = this.set("clearsQuery", js.undefined)
-    
-    @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = this.set("transformItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTransformItems: Self = this.set("transformItems", js.undefined)
+    def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }
 }

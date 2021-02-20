@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBuildStateMod.NodeMaterialBuildState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Fragment/screenSizeBlock", JSImport.Namespace)
-@js.native
-object screenSizeBlockMod extends js.Object {
+object screenSizeBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/screenSizeBlock", "ScreenSizeBlock")
   @js.native
   class ScreenSizeBlock protected () extends NodeMaterialBlock {
     /**

@@ -7,12 +7,13 @@ import typings.kafkaNode.kafkaNodeStrings.none
 import typings.kafkaNode.kafkaNodeStrings.range
 import typings.kafkaNode.kafkaNodeStrings.roundrobin
 import typings.kafkaNode.kafkaNodeStrings.utf8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsumerGroupOptions extends js.Object {
+trait ConsumerGroupOptions extends StObject {
   
   var autoCommit: js.UndefOr[Boolean] = js.native
   
@@ -79,186 +80,174 @@ object ConsumerGroupOptions {
   }
   
   @scala.inline
-  implicit class ConsumerGroupOptionsOps[Self <: ConsumerGroupOptions] (val x: Self) extends AnyVal {
+  implicit class ConsumerGroupOptionsMutableBuilder[Self <: ConsumerGroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCommitIntervalMs(value: Double): Self = StObject.set(x, "autoCommitIntervalMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCommitIntervalMsUndefined: Self = StObject.set(x, "autoCommitIntervalMs", js.undefined)
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
     @scala.inline
-    def setAutoCommit(value: Boolean): Self = this.set("autoCommit", value.asInstanceOf[js.Any])
+    def setBatch(value: AckBatchOptions): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCommit: Self = this.set("autoCommit", js.undefined)
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def setAutoCommitIntervalMs(value: Double): Self = this.set("autoCommitIntervalMs", value.asInstanceOf[js.Any])
+    def setConnectOnReady(value: Boolean): Self = StObject.set(x, "connectOnReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCommitIntervalMs: Self = this.set("autoCommitIntervalMs", js.undefined)
+    def setConnectOnReadyUndefined: Self = StObject.set(x, "connectOnReady", js.undefined)
     
     @scala.inline
-    def setBatch(value: AckBatchOptions): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setEncoding(value: buffer | utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setConnectOnReady(value: Boolean): Self = this.set("connectOnReady", value.asInstanceOf[js.Any])
+    def setFetchMaxBytes(value: Double): Self = StObject.set(x, "fetchMaxBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectOnReady: Self = this.set("connectOnReady", js.undefined)
+    def setFetchMaxBytesUndefined: Self = StObject.set(x, "fetchMaxBytes", js.undefined)
     
     @scala.inline
-    def setEncoding(value: buffer | utf8): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFetchMaxWaitMs(value: Double): Self = StObject.set(x, "fetchMaxWaitMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setFetchMaxWaitMsUndefined: Self = StObject.set(x, "fetchMaxWaitMs", js.undefined)
     
     @scala.inline
-    def setFetchMaxBytes(value: Double): Self = this.set("fetchMaxBytes", value.asInstanceOf[js.Any])
+    def setFetchMinBytes(value: Double): Self = StObject.set(x, "fetchMinBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFetchMaxBytes: Self = this.set("fetchMaxBytes", js.undefined)
+    def setFetchMinBytesUndefined: Self = StObject.set(x, "fetchMinBytes", js.undefined)
     
     @scala.inline
-    def setFetchMaxWaitMs(value: Double): Self = this.set("fetchMaxWaitMs", value.asInstanceOf[js.Any])
+    def setFromOffset(value: earliest | latest | none): Self = StObject.set(x, "fromOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFetchMaxWaitMs: Self = this.set("fetchMaxWaitMs", js.undefined)
+    def setFromOffsetUndefined: Self = StObject.set(x, "fromOffset", js.undefined)
     
     @scala.inline
-    def setFetchMinBytes(value: Double): Self = this.set("fetchMinBytes", value.asInstanceOf[js.Any])
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFetchMinBytes: Self = this.set("fetchMinBytes", js.undefined)
+    def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromOffset(value: earliest | latest | none): Self = this.set("fromOffset", value.asInstanceOf[js.Any])
+    def setHeartbeatIntervalUndefined: Self = StObject.set(x, "heartbeatInterval", js.undefined)
     
     @scala.inline
-    def deleteFromOffset: Self = this.set("fromOffset", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatInterval(value: Double): Self = this.set("heartbeatInterval", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatInterval: Self = this.set("heartbeatInterval", js.undefined)
+    def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKafkaHostUndefined: Self = StObject.set(x, "kafkaHost", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKeyEncoding(value: buffer | utf8): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKafkaHost(value: String): Self = this.set("kafkaHost", value.asInstanceOf[js.Any])
+    def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
     
     @scala.inline
-    def deleteKafkaHost: Self = this.set("kafkaHost", js.undefined)
+    def setMaxNumSegments(value: Double): Self = StObject.set(x, "maxNumSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyEncoding(value: buffer | utf8): Self = this.set("keyEncoding", value.asInstanceOf[js.Any])
+    def setMaxNumSegmentsUndefined: Self = StObject.set(x, "maxNumSegments", js.undefined)
     
     @scala.inline
-    def deleteKeyEncoding: Self = this.set("keyEncoding", js.undefined)
+    def setMaxTickMessages(value: Double): Self = StObject.set(x, "maxTickMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumSegments(value: Double): Self = this.set("maxNumSegments", value.asInstanceOf[js.Any])
+    def setMaxTickMessagesUndefined: Self = StObject.set(x, "maxTickMessages", js.undefined)
     
     @scala.inline
-    def deleteMaxNumSegments: Self = this.set("maxNumSegments", js.undefined)
+    def setMigrateHLC(value: Boolean): Self = StObject.set(x, "migrateHLC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTickMessages(value: Double): Self = this.set("maxTickMessages", value.asInstanceOf[js.Any])
+    def setMigrateHLCUndefined: Self = StObject.set(x, "migrateHLC", js.undefined)
     
     @scala.inline
-    def deleteMaxTickMessages: Self = this.set("maxTickMessages", js.undefined)
+    def setMigrateRolling(value: Boolean): Self = StObject.set(x, "migrateRolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrateHLC(value: Boolean): Self = this.set("migrateHLC", value.asInstanceOf[js.Any])
+    def setMigrateRollingUndefined: Self = StObject.set(x, "migrateRolling", js.undefined)
     
     @scala.inline
-    def deleteMigrateHLC: Self = this.set("migrateHLC", js.undefined)
+    def setOnRebalance(value: () => js.Promise[Unit]): Self = StObject.set(x, "onRebalance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMigrateRolling(value: Boolean): Self = this.set("migrateRolling", value.asInstanceOf[js.Any])
+    def setOnRebalanceUndefined: Self = StObject.set(x, "onRebalance", js.undefined)
     
     @scala.inline
-    def deleteMigrateRolling: Self = this.set("migrateRolling", js.undefined)
+    def setOutOfRangeOffset(value: earliest | latest | none): Self = StObject.set(x, "outOfRangeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRebalance(value: () => js.Promise[Unit]): Self = this.set("onRebalance", js.Any.fromFunction0(value))
+    def setOutOfRangeOffsetUndefined: Self = StObject.set(x, "outOfRangeOffset", js.undefined)
     
     @scala.inline
-    def deleteOnRebalance: Self = this.set("onRebalance", js.undefined)
+    def setProtocol(value: js.Array[roundrobin | range | CustomPartitionAssignmentProtocol]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutOfRangeOffset(value: earliest | latest | none): Self = this.set("outOfRangeOffset", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteOutOfRangeOffset: Self = this.set("outOfRangeOffset", js.undefined)
+    def setProtocolVarargs(value: (roundrobin | range | CustomPartitionAssignmentProtocol)*): Self = StObject.set(x, "protocol", js.Array(value :_*))
     
     @scala.inline
-    def setProtocolVarargs(value: (roundrobin | range | CustomPartitionAssignmentProtocol)*): Self = this.set("protocol", js.Array(value :_*))
+    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: js.Array[roundrobin | range | CustomPartitionAssignmentProtocol]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setRetryFactor(value: Double): Self = StObject.set(x, "retryFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    def setRetryFactorUndefined: Self = StObject.set(x, "retryFactor", js.undefined)
     
     @scala.inline
-    def deleteRetries: Self = this.set("retries", js.undefined)
+    def setRetryMinTimeout(value: Double): Self = StObject.set(x, "retryMinTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryFactor(value: Double): Self = this.set("retryFactor", value.asInstanceOf[js.Any])
+    def setRetryMinTimeoutUndefined: Self = StObject.set(x, "retryMinTimeout", js.undefined)
     
     @scala.inline
-    def deleteRetryFactor: Self = this.set("retryFactor", js.undefined)
+    def setSasl(value: js.Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryMinTimeout(value: Double): Self = this.set("retryMinTimeout", value.asInstanceOf[js.Any])
+    def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
     
     @scala.inline
-    def deleteRetryMinTimeout: Self = this.set("retryMinTimeout", js.undefined)
+    def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSasl(value: js.Any): Self = this.set("sasl", value.asInstanceOf[js.Any])
+    def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     
     @scala.inline
-    def deleteSasl: Self = this.set("sasl", js.undefined)
+    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionTimeout(value: Double): Self = this.set("sessionTimeout", value.asInstanceOf[js.Any])
+    def setSslOptions(value: js.Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSessionTimeout: Self = this.set("sessionTimeout", js.undefined)
+    def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
     
     @scala.inline
-    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
-    
-    @scala.inline
-    def setSslOptions(value: js.Any): Self = this.set("sslOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslOptions: Self = this.set("sslOptions", js.undefined)
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

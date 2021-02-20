@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProfileRequest extends js.Object {
+trait UpdateProfileRequest extends StObject {
   
   /**
     * The updated address for the room profile.
@@ -81,96 +82,84 @@ object UpdateProfileRequest {
   }
   
   @scala.inline
-  implicit class UpdateProfileRequestOps[Self <: UpdateProfileRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateProfileRequestMutableBuilder[Self <: UpdateProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "DistanceUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: Address): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setDistanceUnitUndefined: Self = StObject.set(x, "DistanceUnit", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("Address", js.undefined)
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceUnit(value: DistanceUnit): Self = this.set("DistanceUnit", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
     @scala.inline
-    def deleteDistanceUnit: Self = this.set("DistanceUnit", js.undefined)
+    def setLocale(value: DeviceLocale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    def setMaxVolumeLimit(value: MaxVolumeLimit): Self = StObject.set(x, "MaxVolumeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: DeviceLocale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setMaxVolumeLimitUndefined: Self = StObject.set(x, "MaxVolumeLimit", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("Locale", js.undefined)
+    def setMeetingRoomConfiguration(value: UpdateMeetingRoomConfiguration): Self = StObject.set(x, "MeetingRoomConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVolumeLimit(value: MaxVolumeLimit): Self = this.set("MaxVolumeLimit", value.asInstanceOf[js.Any])
+    def setMeetingRoomConfigurationUndefined: Self = StObject.set(x, "MeetingRoomConfiguration", js.undefined)
     
     @scala.inline
-    def deleteMaxVolumeLimit: Self = this.set("MaxVolumeLimit", js.undefined)
+    def setPSTNEnabled(value: Boolean): Self = StObject.set(x, "PSTNEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeetingRoomConfiguration(value: UpdateMeetingRoomConfiguration): Self = this.set("MeetingRoomConfiguration", value.asInstanceOf[js.Any])
+    def setPSTNEnabledUndefined: Self = StObject.set(x, "PSTNEnabled", js.undefined)
     
     @scala.inline
-    def deleteMeetingRoomConfiguration: Self = this.set("MeetingRoomConfiguration", js.undefined)
+    def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPSTNEnabled(value: Boolean): Self = this.set("PSTNEnabled", value.asInstanceOf[js.Any])
+    def setProfileArnUndefined: Self = StObject.set(x, "ProfileArn", js.undefined)
     
     @scala.inline
-    def deletePSTNEnabled: Self = this.set("PSTNEnabled", js.undefined)
+    def setProfileName(value: ProfileName): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileArn(value: Arn): Self = this.set("ProfileArn", value.asInstanceOf[js.Any])
+    def setProfileNameUndefined: Self = StObject.set(x, "ProfileName", js.undefined)
     
     @scala.inline
-    def deleteProfileArn: Self = this.set("ProfileArn", js.undefined)
+    def setSetupModeDisabled(value: Boolean): Self = StObject.set(x, "SetupModeDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileName(value: ProfileName): Self = this.set("ProfileName", value.asInstanceOf[js.Any])
+    def setSetupModeDisabledUndefined: Self = StObject.set(x, "SetupModeDisabled", js.undefined)
     
     @scala.inline
-    def deleteProfileName: Self = this.set("ProfileName", js.undefined)
+    def setTemperatureUnit(value: TemperatureUnit): Self = StObject.set(x, "TemperatureUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetupModeDisabled(value: Boolean): Self = this.set("SetupModeDisabled", value.asInstanceOf[js.Any])
+    def setTemperatureUnitUndefined: Self = StObject.set(x, "TemperatureUnit", js.undefined)
     
     @scala.inline
-    def deleteSetupModeDisabled: Self = this.set("SetupModeDisabled", js.undefined)
+    def setTimezone(value: Timezone): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemperatureUnit(value: TemperatureUnit): Self = this.set("TemperatureUnit", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
     
     @scala.inline
-    def deleteTemperatureUnit: Self = this.set("TemperatureUnit", js.undefined)
+    def setWakeWord(value: WakeWord): Self = StObject.set(x, "WakeWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: Timezone): Self = this.set("Timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("Timezone", js.undefined)
-    
-    @scala.inline
-    def setWakeWord(value: WakeWord): Self = this.set("WakeWord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWakeWord: Self = this.set("WakeWord", js.undefined)
+    def setWakeWordUndefined: Self = StObject.set(x, "WakeWord", js.undefined)
   }
 }

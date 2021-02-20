@@ -1,11 +1,12 @@
 package typings.cordovaPluginBadge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CordovaPluginBadge extends js.Object {
+trait CordovaPluginBadge extends StObject {
   
   def clear(): Unit = js.native
   def clear(callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native

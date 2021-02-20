@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueFilter extends js.Object {
+trait ValueFilter extends StObject {
   
   /**
     * The `operator_name` applied to the query, such as *price_greater_than*. The filter can work against both types of filters defined in the schema for your data source: 1.
@@ -26,30 +27,18 @@ object ValueFilter {
   }
   
   @scala.inline
-  implicit class ValueFilterOps[Self <: ValueFilter] (val x: Self) extends AnyVal {
+  implicit class ValueFilterMutableBuilder[Self <: ValueFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Value): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

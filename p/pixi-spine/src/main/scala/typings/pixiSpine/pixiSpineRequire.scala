@@ -1,5 +1,6 @@
 package typings.pixiSpine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("pixi-spine", JSImport.Namespace)
 @js.native
-object pixiSpineRequire extends js.Object
+object pixiSpineRequire extends StObject

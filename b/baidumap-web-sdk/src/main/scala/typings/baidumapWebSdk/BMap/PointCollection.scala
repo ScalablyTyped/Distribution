@@ -1,6 +1,7 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.baidumapWebSdk.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object PointCollection {
   }
   
   @scala.inline
-  implicit class PointCollectionOps[Self <: PointCollection] (val x: Self) extends AnyVal {
+  implicit class PointCollectionMutableBuilder[Self <: PointCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnclick(value: Type => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnmouseout(value: Type => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setOnmouseover(value: Type => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclick(value: Type => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setSetPoints(value: js.Array[Point] => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseout(value: Type => Unit): Self = this.set("onmouseout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnmouseover(value: Type => Unit): Self = this.set("onmouseover", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPoints(value: js.Array[Point] => Unit): Self = this.set("setPoints", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStyles(value: PointCollectionOption => Unit): Self = this.set("setStyles", js.Any.fromFunction1(value))
+    def setSetStyles(value: PointCollectionOption => Unit): Self = StObject.set(x, "setStyles", js.Any.fromFunction1(value))
   }
 }

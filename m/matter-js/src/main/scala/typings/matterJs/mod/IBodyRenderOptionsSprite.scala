@@ -1,11 +1,12 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBodyRenderOptionsSprite extends js.Object {
+trait IBodyRenderOptionsSprite extends StObject {
   
   /**
     * An `String` that defines the path to the image to use as the sprite texture, if any.
@@ -42,27 +43,15 @@ object IBodyRenderOptionsSprite {
   }
   
   @scala.inline
-  implicit class IBodyRenderOptionsSpriteOps[Self <: IBodyRenderOptionsSprite] (val x: Self) extends AnyVal {
+  implicit class IBodyRenderOptionsSpriteMutableBuilder[Self <: IBodyRenderOptionsSprite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTexture(value: String): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTexture(value: String): Self = this.set("texture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXScale(value: Double): Self = this.set("xScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYScale(value: Double): Self = this.set("yScale", value.asInstanceOf[js.Any])
+    def setYScale(value: Double): Self = StObject.set(x, "yScale", value.asInstanceOf[js.Any])
   }
 }

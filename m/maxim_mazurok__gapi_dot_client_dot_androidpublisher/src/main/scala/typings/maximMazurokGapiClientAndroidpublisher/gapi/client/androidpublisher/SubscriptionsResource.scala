@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientAndroidpublisher.anon.AltCallback
 import typings.maximMazurokGapiClientAndroidpublisher.anon.SubscriptionId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionsResource extends js.Object {
+trait SubscriptionsResource extends StObject {
   
   def acknowledge(request: AccesstokenAlt, body: SubscriptionPurchasesAcknowledgeRequest): Request[Unit] = js.native
   /** Acknowledges a subscription purchase. */

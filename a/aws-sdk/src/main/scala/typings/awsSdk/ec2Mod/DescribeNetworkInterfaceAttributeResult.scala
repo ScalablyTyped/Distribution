@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNetworkInterfaceAttributeResult extends js.Object {
+trait DescribeNetworkInterfaceAttributeResult extends StObject {
   
   /**
     * The attachment (if any) of the network interface.
@@ -41,51 +42,39 @@ object DescribeNetworkInterfaceAttributeResult {
   }
   
   @scala.inline
-  implicit class DescribeNetworkInterfaceAttributeResultOps[Self <: DescribeNetworkInterfaceAttributeResult] (val x: Self) extends AnyVal {
+  implicit class DescribeNetworkInterfaceAttributeResultMutableBuilder[Self <: DescribeNetworkInterfaceAttributeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: NetworkInterfaceAttachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentUndefined: Self = StObject.set(x, "Attachment", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: AttributeValue): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: NetworkInterfaceAttachment): Self = this.set("Attachment", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteAttachment: Self = this.set("Attachment", js.undefined)
+    def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: AttributeValue): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: GroupIdentifier*): Self = this.set("Groups", js.Array(value :_*))
+    def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: GroupIdentifierList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
+    def setSourceDestCheck(value: AttributeBooleanValue): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: String): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
-    
-    @scala.inline
-    def setSourceDestCheck(value: AttributeBooleanValue): Self = this.set("SourceDestCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceDestCheck: Self = this.set("SourceDestCheck", js.undefined)
+    def setSourceDestCheckUndefined: Self = StObject.set(x, "SourceDestCheck", js.undefined)
   }
 }

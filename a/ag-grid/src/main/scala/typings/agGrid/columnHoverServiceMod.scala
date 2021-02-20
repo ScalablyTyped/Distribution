@@ -2,14 +2,14 @@ package typings.agGrid
 
 import typings.agGrid.beanStubMod.BeanStub
 import typings.agGrid.columnMod.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/columnHoverService", JSImport.Namespace)
-@js.native
-object columnHoverServiceMod extends js.Object {
+object columnHoverServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/columnHoverService", "ColumnHoverService")
   @js.native
   class ColumnHoverService () extends BeanStub {
     

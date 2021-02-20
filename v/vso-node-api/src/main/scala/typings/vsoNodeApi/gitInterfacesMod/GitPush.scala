@@ -2,6 +2,7 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,33 +35,21 @@ object GitPush {
   }
   
   @scala.inline
-  implicit class GitPushOps[Self <: GitPush] (val x: Self) extends AnyVal {
+  implicit class GitPushMutableBuilder[Self <: GitPush] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefUpdates(value: js.Array[GitRefUpdate]): Self = StObject.set(x, "refUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitsVarargs(value: GitCommitRef*): Self = this.set("commits", js.Array(value :_*))
+    def setRefUpdatesVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setCommits(value: js.Array[GitCommitRef]): Self = this.set("commits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefUpdatesVarargs(value: GitRefUpdate*): Self = this.set("refUpdates", js.Array(value :_*))
-    
-    @scala.inline
-    def setRefUpdates(value: js.Array[GitRefUpdate]): Self = this.set("refUpdates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository(value: GitRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

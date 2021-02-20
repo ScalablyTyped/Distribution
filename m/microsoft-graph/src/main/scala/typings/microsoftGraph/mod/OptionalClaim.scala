@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionalClaim extends js.Object {
+trait OptionalClaim extends StObject {
   
   /**
     * Additional properties of the claim. If a property exists in this collection, it modifies the behavior of the optional
@@ -38,51 +39,39 @@ object OptionalClaim {
   }
   
   @scala.inline
-  implicit class OptionalClaimOps[Self <: OptionalClaim] (val x: Self) extends AnyVal {
+  implicit class OptionalClaimMutableBuilder[Self <: OptionalClaim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalProperties(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalPropertiesNull: Self = StObject.set(x, "additionalProperties", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
     @scala.inline
-    def setAdditionalPropertiesVarargs(value: String*): Self = this.set("additionalProperties", js.Array(value :_*))
+    def setAdditionalPropertiesVarargs(value: String*): Self = StObject.set(x, "additionalProperties", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalProperties(value: NullableOption[js.Array[String]]): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    def setEssentialUndefined: Self = StObject.set(x, "essential", js.undefined)
     
     @scala.inline
-    def setAdditionalPropertiesNull: Self = this.set("additionalProperties", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEssential(value: Boolean): Self = this.set("essential", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEssential: Self = this.set("essential", js.undefined)
+    def setSource(value: NullableOption[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSource(value: NullableOption[String]): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListLogEntriesRequest extends js.Object {
+trait ListLogEntriesRequest extends StObject {
   
   /**
     * Optional. A filter that chooses which log entries to return. See Advanced Logs Queries (https://cloud.google.com/logging/docs/view/advanced-queries). Only log entries that match the
@@ -53,60 +54,48 @@ object ListLogEntriesRequest {
   }
   
   @scala.inline
-  implicit class ListLogEntriesRequestOps[Self <: ListLogEntriesRequest] (val x: Self) extends AnyVal {
+  implicit class ListLogEntriesRequestMutableBuilder[Self <: ListLogEntriesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setProjectIds(value: js.Array[String]): Self = StObject.set(x, "projectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setProjectIdsUndefined: Self = StObject.set(x, "projectIds", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value :_*))
     
     @scala.inline
-    def setProjectIdsVarargs(value: String*): Self = this.set("projectIds", js.Array(value :_*))
+    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectIds(value: js.Array[String]): Self = this.set("projectIds", value.asInstanceOf[js.Any])
+    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
     @scala.inline
-    def deleteProjectIds: Self = this.set("projectIds", js.undefined)
-    
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = this.set("resourceNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = this.set("resourceNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceNames: Self = this.set("resourceNames", js.undefined)
+    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

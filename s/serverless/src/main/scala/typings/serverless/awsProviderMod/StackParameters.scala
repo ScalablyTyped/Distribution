@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackParameters extends js.Object {
+trait StackParameters extends StObject {
   
   var ParameterKey: String = js.native
   
@@ -20,24 +21,12 @@ object StackParameters {
   }
   
   @scala.inline
-  implicit class StackParametersOps[Self <: StackParameters] (val x: Self) extends AnyVal {
+  implicit class StackParametersMutableBuilder[Self <: StackParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterKey(value: String): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameterKey(value: String): Self = this.set("ParameterKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterValue(value: String): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
+    def setParameterValue(value: String): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
   }
 }

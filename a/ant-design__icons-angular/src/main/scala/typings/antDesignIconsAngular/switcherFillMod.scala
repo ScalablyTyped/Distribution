@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/fill/SwitcherFill", JSImport.Namespace)
-@js.native
-object switcherFillMod extends js.Object {
+object switcherFillMod {
   
+  @JSImport("@ant-design/icons-angular/icons/fill/SwitcherFill", "SwitcherFill")
+  @js.native
   val SwitcherFill: IconDefinition = js.native
 }

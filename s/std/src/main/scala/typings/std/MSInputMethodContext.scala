@@ -3,6 +3,7 @@ package typings.std
 import typings.std.stdStrings.MSCandidateWindowHide
 import typings.std.stdStrings.MSCandidateWindowShow
 import typings.std.stdStrings.MSCandidateWindowUpdate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

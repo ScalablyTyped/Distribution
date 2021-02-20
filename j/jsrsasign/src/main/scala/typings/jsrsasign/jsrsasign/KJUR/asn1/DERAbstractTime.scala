@@ -3,6 +3,7 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasignStrings.gen
 import typings.jsrsasign.jsrsasignStrings.utc
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

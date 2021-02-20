@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Result of a risk analysis operation request.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends js.Object {
+trait SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends StObject {
   
   var categoricalStatsResult: js.UndefOr[SchemaGooglePrivacyDlpV2CategoricalStatsResult] = js.native
   
@@ -41,66 +42,54 @@ object SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetailsOps[Self <: SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetailsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalStatsResult(value: SchemaGooglePrivacyDlpV2CategoricalStatsResult): Self = StObject.set(x, "categoricalStatsResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalStatsResultUndefined: Self = StObject.set(x, "categoricalStatsResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaPresenceEstimationResult(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult): Self = StObject.set(x, "deltaPresenceEstimationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalStatsResult(value: SchemaGooglePrivacyDlpV2CategoricalStatsResult): Self = this.set("categoricalStatsResult", value.asInstanceOf[js.Any])
+    def setDeltaPresenceEstimationResultUndefined: Self = StObject.set(x, "deltaPresenceEstimationResult", js.undefined)
     
     @scala.inline
-    def deleteCategoricalStatsResult: Self = this.set("categoricalStatsResult", js.undefined)
+    def setKAnonymityResult(value: SchemaGooglePrivacyDlpV2KAnonymityResult): Self = StObject.set(x, "kAnonymityResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaPresenceEstimationResult(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult): Self = this.set("deltaPresenceEstimationResult", value.asInstanceOf[js.Any])
+    def setKAnonymityResultUndefined: Self = StObject.set(x, "kAnonymityResult", js.undefined)
     
     @scala.inline
-    def deleteDeltaPresenceEstimationResult: Self = this.set("deltaPresenceEstimationResult", js.undefined)
+    def setKMapEstimationResult(value: SchemaGooglePrivacyDlpV2KMapEstimationResult): Self = StObject.set(x, "kMapEstimationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKAnonymityResult(value: SchemaGooglePrivacyDlpV2KAnonymityResult): Self = this.set("kAnonymityResult", value.asInstanceOf[js.Any])
+    def setKMapEstimationResultUndefined: Self = StObject.set(x, "kMapEstimationResult", js.undefined)
     
     @scala.inline
-    def deleteKAnonymityResult: Self = this.set("kAnonymityResult", js.undefined)
+    def setLDiversityResult(value: SchemaGooglePrivacyDlpV2LDiversityResult): Self = StObject.set(x, "lDiversityResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMapEstimationResult(value: SchemaGooglePrivacyDlpV2KMapEstimationResult): Self = this.set("kMapEstimationResult", value.asInstanceOf[js.Any])
+    def setLDiversityResultUndefined: Self = StObject.set(x, "lDiversityResult", js.undefined)
     
     @scala.inline
-    def deleteKMapEstimationResult: Self = this.set("kMapEstimationResult", js.undefined)
+    def setNumericalStatsResult(value: SchemaGooglePrivacyDlpV2NumericalStatsResult): Self = StObject.set(x, "numericalStatsResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLDiversityResult(value: SchemaGooglePrivacyDlpV2LDiversityResult): Self = this.set("lDiversityResult", value.asInstanceOf[js.Any])
+    def setNumericalStatsResultUndefined: Self = StObject.set(x, "numericalStatsResult", js.undefined)
     
     @scala.inline
-    def deleteLDiversityResult: Self = this.set("lDiversityResult", js.undefined)
+    def setRequestedPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "requestedPrivacyMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericalStatsResult(value: SchemaGooglePrivacyDlpV2NumericalStatsResult): Self = this.set("numericalStatsResult", value.asInstanceOf[js.Any])
+    def setRequestedPrivacyMetricUndefined: Self = StObject.set(x, "requestedPrivacyMetric", js.undefined)
     
     @scala.inline
-    def deleteNumericalStatsResult: Self = this.set("numericalStatsResult", js.undefined)
+    def setRequestedSourceTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "requestedSourceTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = this.set("requestedPrivacyMetric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedPrivacyMetric: Self = this.set("requestedPrivacyMetric", js.undefined)
-    
-    @scala.inline
-    def setRequestedSourceTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = this.set("requestedSourceTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedSourceTable: Self = this.set("requestedSourceTable", js.undefined)
+    def setRequestedSourceTableUndefined: Self = StObject.set(x, "requestedSourceTable", js.undefined)
   }
 }

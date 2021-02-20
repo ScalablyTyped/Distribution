@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideScriptedProcessor extends js.Object {
+trait GlideScriptedProcessor extends StObject {
   
   /**
     * Redirects to the specified URL.

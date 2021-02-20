@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Payment extends js.Object {
+trait Payment extends StObject {
   
   /**
     * The identifier of the purchased product.
@@ -26,24 +27,12 @@ object Payment {
   }
   
   @scala.inline
-  implicit class PaymentOps[Self <: Payment] (val x: Self) extends AnyVal {
+  implicit class PaymentMutableBuilder[Self <: Payment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductIdentifier(value: String): Self = this.set("productIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
   }
 }

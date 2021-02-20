@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlacementEndings extends js.Object
+sealed trait PlacementEndings extends StObject
 @JSGlobal("__esri.CIM.PlacementEndings")
 @js.native
-object PlacementEndings extends js.Object {
+object PlacementEndings extends StObject {
   
   /**
     * Will fit the pattern to the length of the features by adjusting the gaps slightly.

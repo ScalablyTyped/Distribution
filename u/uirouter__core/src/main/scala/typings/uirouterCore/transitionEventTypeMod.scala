@@ -7,16 +7,16 @@ import typings.uirouterCore.transitionHookMod.ResultHandler
 import typings.uirouterCore.transitionHookMod.TransitionHook
 import typings.uirouterCore.transitionInterfaceMod.PathType
 import typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/transition/transitionEventType", JSImport.Namespace)
-@js.native
-object transitionEventTypeMod extends js.Object {
+object transitionEventTypeMod {
   
+  @JSImport("@uirouter/core/lib/transition/transitionEventType", "TransitionEventType")
   @js.native
-  class TransitionEventType protected () extends js.Object {
+  class TransitionEventType protected () extends StObject {
     def this(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType) = this()
     def this(
       name: String,

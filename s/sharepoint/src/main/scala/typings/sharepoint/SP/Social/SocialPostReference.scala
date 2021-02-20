@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,30 +43,18 @@ object SocialPostReference {
   }
   
   @scala.inline
-  implicit class SocialPostReferenceOps[Self <: SocialPostReference] (val x: Self) extends AnyVal {
+  implicit class SocialPostReferenceMutableBuilder[Self <: SocialPostReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_digest(value: () => SocialThread): Self = StObject.set(x, "get_digest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_post(value: () => SocialPost): Self = StObject.set(x, "get_post", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_threadId(value: () => String): Self = StObject.set(x, "get_threadId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_digest(value: () => SocialThread): Self = this.set("get_digest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_post(value: () => SocialPost): Self = this.set("get_post", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_threadId(value: () => String): Self = this.set("get_threadId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_threadOwnerIndex(value: () => Double): Self = this.set("get_threadOwnerIndex", js.Any.fromFunction0(value))
+    def setGet_threadOwnerIndex(value: () => Double): Self = StObject.set(x, "get_threadOwnerIndex", js.Any.fromFunction0(value))
   }
 }

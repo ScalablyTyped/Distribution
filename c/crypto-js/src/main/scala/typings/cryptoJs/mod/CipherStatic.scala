@@ -1,11 +1,12 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CipherStatic extends js.Object {
+trait CipherStatic extends StObject {
   
   /**
     * Initializes a newly created cipher.

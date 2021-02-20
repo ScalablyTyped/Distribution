@@ -7,12 +7,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.start
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import typings.arcgisJsApi.arcgisJsApiStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchViewModelUpdateEvent extends js.Object {
+trait SketchViewModelUpdateEvent extends StObject {
   
   var aborted: Boolean = js.native
   
@@ -43,39 +44,27 @@ object SketchViewModelUpdateEvent {
   }
   
   @scala.inline
-  implicit class SketchViewModelUpdateEventOps[Self <: SketchViewModelUpdateEvent] (val x: Self) extends AnyVal {
+  implicit class SketchViewModelUpdateEventMutableBuilder[Self <: SketchViewModelUpdateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
     @scala.inline
-    def setAborted(value: Boolean): Self = this.set("aborted", value.asInstanceOf[js.Any])
+    def setState(value: start | active | complete): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphicsVarargs(value: Graphic*): Self = this.set("graphics", js.Array(value :_*))
+    def setTool(value: move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphics(value: js.Array[Graphic]): Self = this.set("graphics", value.asInstanceOf[js.Any])
+    def setToolEventInfo(value: UpdateToolEventInfo): Self = StObject.set(x, "toolEventInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: start | active | complete): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTool(value: move | transform | reshape): Self = this.set("tool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolEventInfo(value: UpdateToolEventInfo): Self = this.set("toolEventInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: update): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

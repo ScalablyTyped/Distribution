@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Problem extends js.Object {
+trait Problem extends StObject {
   
   /**
     * Information about the associated device.
@@ -51,60 +52,48 @@ object Problem {
   }
   
   @scala.inline
-  implicit class ProblemOps[Self <: Problem] (val x: Self) extends AnyVal {
+  implicit class ProblemMutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJob(value: ProblemDetail): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob(value: ProblemDetail): Self = this.set("job", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteJob: Self = this.set("job", js.undefined)
+    def setResult(value: ExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRun(value: ProblemDetail): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: ExecutionResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setSuite(value: ProblemDetail): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun(value: ProblemDetail): Self = this.set("run", value.asInstanceOf[js.Any])
+    def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
     
     @scala.inline
-    def deleteRun: Self = this.set("run", js.undefined)
+    def setTest(value: ProblemDetail): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuite(value: ProblemDetail): Self = this.set("suite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuite: Self = this.set("suite", js.undefined)
-    
-    @scala.inline
-    def setTest(value: ProblemDetail): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

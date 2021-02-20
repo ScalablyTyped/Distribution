@@ -2,12 +2,13 @@ package typings.threeTdsLoader.anon
 
 import typings.three.constantsMod.Mapping
 import typings.three.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofImageUtils extends js.Object {
+trait TypeofImageUtils extends StObject {
   
   var crossOrigin: String = js.native
   

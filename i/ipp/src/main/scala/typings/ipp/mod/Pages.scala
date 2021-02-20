@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pages extends js.Object {
+trait Pages extends StObject {
   
   var `full-color`: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object Pages {
   }
   
   @scala.inline
-  implicit class PagesOps[Self <: Pages] (val x: Self) extends AnyVal {
+  implicit class PagesMutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setFull-color`(value: Double): Self = StObject.set(x, "full-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFull-colorUndefined`: Self = StObject.set(x, "full-color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonochrome(value: Double): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFull-color`(value: Double): Self = this.set("full-color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFull-color`: Self = this.set("full-color", js.undefined)
-    
-    @scala.inline
-    def setMonochrome(value: Double): Self = this.set("monochrome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonochrome: Self = this.set("monochrome", js.undefined)
+    def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
   }
 }

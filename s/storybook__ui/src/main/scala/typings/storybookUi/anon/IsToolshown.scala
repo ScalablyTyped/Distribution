@@ -2,12 +2,13 @@ package typings.storybookUi.anon
 
 import typings.storybookUi.storybookUiStrings.bottom
 import typings.storybookUi.storybookUiStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsToolshown extends js.Object {
+trait IsToolshown extends StObject {
   
   var isFullscreen: Boolean = js.native
   
@@ -34,33 +35,21 @@ object IsToolshown {
   }
   
   @scala.inline
-  implicit class IsToolshownOps[Self <: IsToolshown] (val x: Self) extends AnyVal {
+  implicit class IsToolshownMutableBuilder[Self <: IsToolshown] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPanelPosition(value: bottom | right): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFullscreen(value: Boolean): Self = this.set("isFullscreen", value.asInstanceOf[js.Any])
+    def setShowNav(value: Boolean): Self = StObject.set(x, "showNav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsToolshown(value: Boolean): Self = this.set("isToolshown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPanelPosition(value: bottom | right): Self = this.set("panelPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowNav(value: Boolean): Self = this.set("showNav", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowPanel(value: Boolean): Self = this.set("showPanel", value.asInstanceOf[js.Any])
+    def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
   }
 }

@@ -5,12 +5,13 @@ import typings.dateFns.dateFnsStrings.complete
 import typings.dateFns.dateFnsStrings.date
 import typings.dateFns.dateFnsStrings.extended
 import typings.dateFns.dateFnsStrings.time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Representation extends js.Object {
+trait Representation extends StObject {
   
   var format: js.UndefOr[extended | basic] = js.native
   
@@ -25,30 +26,18 @@ object Representation {
   }
   
   @scala.inline
-  implicit class RepresentationOps[Self <: Representation] (val x: Self) extends AnyVal {
+  implicit class RepresentationMutableBuilder[Self <: Representation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: extended | basic): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepresentation(value: complete | date | time): Self = StObject.set(x, "representation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: extended | basic): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setRepresentation(value: complete | date | time): Self = this.set("representation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepresentation: Self = this.set("representation", js.undefined)
+    def setRepresentationUndefined: Self = StObject.set(x, "representation", js.undefined)
   }
 }

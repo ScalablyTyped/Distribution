@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosDeviceType extends js.Object {
+trait IosDeviceType extends StObject {
   
   // Whether the app should run on iPads.
   var iPad: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object IosDeviceType {
   }
   
   @scala.inline
-  implicit class IosDeviceTypeOps[Self <: IosDeviceType] (val x: Self) extends AnyVal {
+  implicit class IosDeviceTypeMutableBuilder[Self <: IosDeviceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIPadUndefined: Self = StObject.set(x, "iPad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIPhoneAndIPod(value: Boolean): Self = StObject.set(x, "iPhoneAndIPod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPad(value: Boolean): Self = this.set("iPad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIPad: Self = this.set("iPad", js.undefined)
-    
-    @scala.inline
-    def setIPhoneAndIPod(value: Boolean): Self = this.set("iPhoneAndIPod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIPhoneAndIPod: Self = this.set("iPhoneAndIPod", js.undefined)
+    def setIPhoneAndIPodUndefined: Self = StObject.set(x, "iPhoneAndIPod", js.undefined)
   }
 }

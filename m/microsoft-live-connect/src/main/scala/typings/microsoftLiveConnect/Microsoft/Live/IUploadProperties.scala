@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 'Properties' object passed into the WL.upload method.
   */
 @js.native
-trait IUploadProperties extends js.Object {
+trait IUploadProperties extends StObject {
   
   /**
     * The id attribute of the <input> tag containing info about the file to
@@ -40,30 +41,18 @@ object IUploadProperties {
   }
   
   @scala.inline
-  implicit class IUploadPropertiesOps[Self <: IUploadProperties] (val x: Self) extends AnyVal {
+  implicit class IUploadPropertiesMutableBuilder[Self <: IUploadProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def setElement(value: String): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverwrite(value: String): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

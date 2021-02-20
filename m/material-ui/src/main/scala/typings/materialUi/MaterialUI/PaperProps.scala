@@ -3,12 +3,13 @@ package typings.materialUi.MaterialUI
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined key, ref */ @js.native
+- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
 trait PaperProps
   extends HTMLAttributes[js.Object] {
   
@@ -37,72 +38,60 @@ object PaperProps {
   }
   
   @scala.inline
-  implicit class PaperPropsOps[Self <: PaperProps] (val x: Self) extends AnyVal {
+  implicit class PaperPropsMutableBuilder[Self <: PaperProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: Boolean): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCircle: Self = this.set("circle", js.undefined)
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setRef(value: LegacyRef[Paper]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setRefFunction1(value: /* instance */ Paper | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ Paper | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[Paper]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
     @scala.inline
-    def setRefNull: Self = this.set("ref", null)
+    def setTransitionEnabled(value: Boolean): Self = StObject.set(x, "transitionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRounded(value: Boolean): Self = this.set("rounded", value.asInstanceOf[js.Any])
+    def setTransitionEnabledUndefined: Self = StObject.set(x, "transitionEnabled", js.undefined)
     
     @scala.inline
-    def deleteRounded: Self = this.set("rounded", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionEnabled(value: Boolean): Self = this.set("transitionEnabled", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTransitionEnabled: Self = this.set("transitionEnabled", js.undefined)
+    def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZDepth(value: Double): Self = this.set("zDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZDepth: Self = this.set("zDepth", js.undefined)
+    def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
   }
 }

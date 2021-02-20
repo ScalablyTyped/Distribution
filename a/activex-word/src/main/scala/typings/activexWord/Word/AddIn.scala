@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddIn extends js.Object {
+trait AddIn extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -52,51 +53,39 @@ object AddIn {
   }
   
   @scala.inline
-  implicit class AddInOps[Self <: AddIn] (val x: Self) extends AnyVal {
+  implicit class AddInMutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoload(value: Boolean): Self = StObject.set(x, "Autoload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompiled(value: Boolean): Self = StObject.set(x, "Compiled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoload(value: Boolean): Self = this.set("Autoload", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCompiled(value: Boolean): Self = this.set("Compiled", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setInstalled(value: Boolean): Self = StObject.set(x, "Installed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalled(value: Boolean): Self = this.set("Installed", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotAddIn_typekey(value: AddIn): Self = this.set("Word.AddIn_typekey", value.asInstanceOf[js.Any])
+    def setWordDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "Word.AddIn_typekey", value.asInstanceOf[js.Any])
   }
 }

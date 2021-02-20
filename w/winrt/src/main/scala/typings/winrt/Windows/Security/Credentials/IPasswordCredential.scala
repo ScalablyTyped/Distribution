@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Security.Credentials
 
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPasswordCredential extends js.Object {
+trait IPasswordCredential extends StObject {
   
   var password: String = js.native
   
@@ -33,33 +34,21 @@ object IPasswordCredential {
   }
   
   @scala.inline
-  implicit class IPasswordCredentialOps[Self <: IPasswordCredential] (val x: Self) extends AnyVal {
+  implicit class IPasswordCredentialMutableBuilder[Self <: IPasswordCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setRetrievePassword(value: () => Unit): Self = StObject.set(x, "retrievePassword", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProperties(value: IPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetrievePassword(value: () => Unit): Self = this.set("retrievePassword", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

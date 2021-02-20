@@ -1,12 +1,13 @@
 package typings.victory.anon
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Labels extends js.Object {
+trait Labels extends StObject {
   
   var data: js.UndefOr[CSSPropertiestypeScatterS] = js.native
   
@@ -23,36 +24,24 @@ object Labels {
   }
   
   @scala.inline
-  implicit class LabelsOps[Self <: Labels] (val x: Self) extends AnyVal {
+  implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: CSSPropertiestypeScatterS): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabels(value: CSSProperties): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: CSSPropertiestypeScatterS): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: CSSProperties): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: CSSProperties): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

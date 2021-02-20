@@ -1,12 +1,13 @@
 package typings.algoliaClientSearch.mod
 
 import typings.algoliaTransporter.mod.Transporter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchIndex extends js.Object {
+trait SearchIndex extends StObject {
   
   /**
     * The application id.
@@ -32,27 +33,15 @@ object SearchIndex {
   }
   
   @scala.inline
-  implicit class SearchIndexOps[Self <: SearchIndex] (val x: Self) extends AnyVal {
+  implicit class SearchIndexMutableBuilder[Self <: SearchIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndexName(value: String): Self = this.set("indexName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransporter(value: Transporter): Self = this.set("transporter", value.asInstanceOf[js.Any])
+    def setTransporter(value: Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.hystrixjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandMetrics extends js.Object {
+trait CommandMetrics extends StObject {
   
   def addExecutionTime(value: Double): Unit = js.native
   
@@ -56,57 +57,45 @@ object CommandMetrics {
   }
   
   @scala.inline
-  implicit class CommandMetricsOps[Self <: CommandMetrics] (val x: Self) extends AnyVal {
+  implicit class CommandMetricsMutableBuilder[Self <: CommandMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddExecutionTime(value: Double => Unit): Self = StObject.set(x, "addExecutionTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecrementExecutionCount(value: () => Unit): Self = StObject.set(x, "decrementExecutionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentExecutionCount(value: () => Double): Self = StObject.set(x, "getCurrentExecutionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddExecutionTime(value: Double => Unit): Self = this.set("addExecutionTime", js.Any.fromFunction1(value))
+    def setGetExecutionTime(value: js.Any => Double): Self = StObject.set(x, "getExecutionTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDecrementExecutionCount(value: () => Unit): Self = this.set("decrementExecutionCount", js.Any.fromFunction0(value))
+    def setGetHealthCounts(value: () => HealthCounts): Self = StObject.set(x, "getHealthCounts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentExecutionCount(value: () => Double): Self = this.set("getCurrentExecutionCount", js.Any.fromFunction0(value))
+    def setGetRollingCount(value: js.Any => Double): Self = StObject.set(x, "getRollingCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetExecutionTime(value: js.Any => Double): Self = this.set("getExecutionTime", js.Any.fromFunction1(value))
+    def setIncrementExecutionCount(value: () => Unit): Self = StObject.set(x, "incrementExecutionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHealthCounts(value: () => HealthCounts): Self = this.set("getHealthCounts", js.Any.fromFunction0(value))
+    def setMarkFailure(value: () => Unit): Self = StObject.set(x, "markFailure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRollingCount(value: js.Any => Double): Self = this.set("getRollingCount", js.Any.fromFunction1(value))
+    def setMarkRejected(value: () => Unit): Self = StObject.set(x, "markRejected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIncrementExecutionCount(value: () => Unit): Self = this.set("incrementExecutionCount", js.Any.fromFunction0(value))
+    def setMarkShortCircuited(value: () => Unit): Self = StObject.set(x, "markShortCircuited", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMarkFailure(value: () => Unit): Self = this.set("markFailure", js.Any.fromFunction0(value))
+    def setMarkSuccess(value: () => Unit): Self = StObject.set(x, "markSuccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMarkRejected(value: () => Unit): Self = this.set("markRejected", js.Any.fromFunction0(value))
+    def setMarkTimeout(value: () => Unit): Self = StObject.set(x, "markTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMarkShortCircuited(value: () => Unit): Self = this.set("markShortCircuited", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMarkSuccess(value: () => Unit): Self = this.set("markSuccess", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMarkTimeout(value: () => Unit): Self = this.set("markTimeout", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

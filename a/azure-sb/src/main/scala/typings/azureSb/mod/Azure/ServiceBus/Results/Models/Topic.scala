@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,42 +63,30 @@ object Topic {
   }
   
   @scala.inline
-  implicit class TopicOps[Self <: Topic] (val x: Self) extends AnyVal {
+  implicit class TopicMutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessedAt(value: DateString): Self = StObject.set(x, "AccessedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountDetails(value: StringDictionary[String]): Self = StObject.set(x, "CountDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableSubscriptionPartitioning(value: String): Self = StObject.set(x, "EnableSubscriptionPartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessedAt(value: DateString): Self = this.set("AccessedAt", value.asInstanceOf[js.Any])
+    def setFilteringMessagesBeforePublishing(value: String): Self = StObject.set(x, "FilteringMessagesBeforePublishing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountDetails(value: StringDictionary[String]): Self = this.set("CountDetails", value.asInstanceOf[js.Any])
+    def setIsExpress(value: String): Self = StObject.set(x, "IsExpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSubscriptionPartitioning(value: String): Self = this.set("EnableSubscriptionPartitioning", value.asInstanceOf[js.Any])
+    def setSubscriptionCount(value: String): Self = StObject.set(x, "SubscriptionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteringMessagesBeforePublishing(value: String): Self = this.set("FilteringMessagesBeforePublishing", value.asInstanceOf[js.Any])
+    def setSupportOrdering(value: String): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExpress(value: String): Self = this.set("IsExpress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionCount(value: String): Self = this.set("SubscriptionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportOrdering(value: String): Self = this.set("SupportOrdering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicName(value: String): Self = this.set("TopicName", value.asInstanceOf[js.Any])
+    def setTopicName(value: String): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

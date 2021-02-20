@@ -3,16 +3,16 @@ package typings.three
 import typings.three.webGLRendererMod.WebGLRenderer
 import typings.three.webGLShaderMod.WebGLShader
 import typings.three.webGLUniformsMod.WebGLUniforms
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLProgram", JSImport.Namespace)
-@js.native
-object webGLProgramMod extends js.Object {
+object webGLProgramMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLProgram", "WebGLProgram")
   @js.native
-  class WebGLProgram protected () extends js.Object {
+  class WebGLProgram protected () extends StObject {
     def this(renderer: WebGLRenderer, cacheKey: String, parameters: js.Object) = this()
     
     /**
@@ -41,7 +41,7 @@ object webGLProgramMod extends js.Object {
     	 */
     var uniforms: js.Any = js.native
     
-     // unique identifier for this program, used for looking up compiled programs from cache.
+    // unique identifier for this program, used for looking up compiled programs from cache.
     /**
     	 * @default 1
     	 */

@@ -1,13 +1,12 @@
 package typings.sindresorhusStringHash
 
 import typings.sindresorhusFnv1a.mod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sindresorhus/string-hash", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	[FNV-1a](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) non-cryptographic hash function.
@@ -19,6 +18,8 @@ object mod extends js.Object {
   	//=> 2868248295
   	```
   	*/
+  @JSImport("@sindresorhus/string-hash", "<apply>")
+  @js.native
   def apply(string: String): Double = js.native
   
   /**
@@ -32,6 +33,10 @@ object mod extends js.Object {
   	//=> 13487074350300261116944693128525960095n
   	```
   	*/
+  @JSImport("@sindresorhus/string-hash", "bigInt")
+  @js.native
   def bigInt(string: String): js.BigInt = js.native
+  @JSImport("@sindresorhus/string-hash", "bigInt")
+  @js.native
   def bigInt(string: String, options: Options): js.BigInt = js.native
 }

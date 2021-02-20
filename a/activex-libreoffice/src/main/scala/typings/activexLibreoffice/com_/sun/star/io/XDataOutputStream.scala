@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,45 +66,33 @@ object XDataOutputStream {
   }
   
   @scala.inline
-  implicit class XDataOutputStreamOps[Self <: XDataOutputStream] (val x: Self) extends AnyVal {
+  implicit class XDataOutputStreamMutableBuilder[Self <: XDataOutputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWriteBoolean(value: Boolean => Unit): Self = StObject.set(x, "writeBoolean", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWriteByte(value: Double => Unit): Self = StObject.set(x, "writeByte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWriteChar(value: String => Unit): Self = StObject.set(x, "writeChar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteBoolean(value: Boolean => Unit): Self = this.set("writeBoolean", js.Any.fromFunction1(value))
+    def setWriteDouble(value: Double => Unit): Self = StObject.set(x, "writeDouble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteByte(value: Double => Unit): Self = this.set("writeByte", js.Any.fromFunction1(value))
+    def setWriteFloat(value: Double => Unit): Self = StObject.set(x, "writeFloat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteChar(value: String => Unit): Self = this.set("writeChar", js.Any.fromFunction1(value))
+    def setWriteHyper(value: Double => Unit): Self = StObject.set(x, "writeHyper", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteDouble(value: Double => Unit): Self = this.set("writeDouble", js.Any.fromFunction1(value))
+    def setWriteLong(value: Double => Unit): Self = StObject.set(x, "writeLong", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteFloat(value: Double => Unit): Self = this.set("writeFloat", js.Any.fromFunction1(value))
+    def setWriteShort(value: Double => Unit): Self = StObject.set(x, "writeShort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWriteHyper(value: Double => Unit): Self = this.set("writeHyper", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteLong(value: Double => Unit): Self = this.set("writeLong", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteShort(value: Double => Unit): Self = this.set("writeShort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteUTF(value: String => Unit): Self = this.set("writeUTF", js.Any.fromFunction1(value))
+    def setWriteUTF(value: String => Unit): Self = StObject.set(x, "writeUTF", js.Any.fromFunction1(value))
   }
 }

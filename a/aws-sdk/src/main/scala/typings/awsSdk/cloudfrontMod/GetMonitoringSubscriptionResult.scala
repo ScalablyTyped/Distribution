@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMonitoringSubscriptionResult extends js.Object {
+trait GetMonitoringSubscriptionResult extends StObject {
   
   /**
     * A monitoring subscription. This structure contains information about whether additional CloudWatch metrics are enabled for a given CloudFront distribution.
@@ -21,24 +22,12 @@ object GetMonitoringSubscriptionResult {
   }
   
   @scala.inline
-  implicit class GetMonitoringSubscriptionResultOps[Self <: GetMonitoringSubscriptionResult] (val x: Self) extends AnyVal {
+  implicit class GetMonitoringSubscriptionResultMutableBuilder[Self <: GetMonitoringSubscriptionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitoringSubscription(value: MonitoringSubscription): Self = StObject.set(x, "MonitoringSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMonitoringSubscription(value: MonitoringSubscription): Self = this.set("MonitoringSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitoringSubscription: Self = this.set("MonitoringSubscription", js.undefined)
+    def setMonitoringSubscriptionUndefined: Self = StObject.set(x, "MonitoringSubscription", js.undefined)
   }
 }

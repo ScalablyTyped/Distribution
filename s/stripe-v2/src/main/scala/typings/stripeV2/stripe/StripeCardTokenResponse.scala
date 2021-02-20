@@ -1,5 +1,6 @@
 package typings.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,21 +30,9 @@ object StripeCardTokenResponse {
   }
   
   @scala.inline
-  implicit class StripeCardTokenResponseOps[Self <: StripeCardTokenResponse] (val x: Self) extends AnyVal {
+  implicit class StripeCardTokenResponseMutableBuilder[Self <: StripeCardTokenResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCard(value: StripeCard): Self = this.set("card", value.asInstanceOf[js.Any])
+    def setCard(value: StripeCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
   }
 }

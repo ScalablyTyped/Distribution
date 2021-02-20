@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InviteUsersResponse extends js.Object {
+trait InviteUsersResponse extends StObject {
   
   /**
     * The email invitation details.
@@ -21,27 +22,15 @@ object InviteUsersResponse {
   }
   
   @scala.inline
-  implicit class InviteUsersResponseOps[Self <: InviteUsersResponse] (val x: Self) extends AnyVal {
+  implicit class InviteUsersResponseMutableBuilder[Self <: InviteUsersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvites(value: InviteList): Self = StObject.set(x, "Invites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvitesUndefined: Self = StObject.set(x, "Invites", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvitesVarargs(value: Invite*): Self = this.set("Invites", js.Array(value :_*))
-    
-    @scala.inline
-    def setInvites(value: InviteList): Self = this.set("Invites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvites: Self = this.set("Invites", js.undefined)
+    def setInvitesVarargs(value: Invite*): Self = StObject.set(x, "Invites", js.Array(value :_*))
   }
 }

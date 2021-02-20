@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait FontMetrics extends js.Object {
+trait FontMetrics extends StObject {
   
   var Ascent: Double = js.native
   
@@ -63,39 +64,27 @@ object FontMetrics {
   }
   
   @scala.inline
-  implicit class FontMetricsOps[Self <: FontMetrics] (val x: Self) extends AnyVal {
+  implicit class FontMetricsMutableBuilder[Self <: FontMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscent(value: Double): Self = StObject.set(x, "Ascent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescent(value: Double): Self = StObject.set(x, "Descent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalLeading(value: Double): Self = StObject.set(x, "ExternalLeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscent(value: Double): Self = this.set("Ascent", value.asInstanceOf[js.Any])
+    def setInternalLeading(value: Double): Self = StObject.set(x, "InternalLeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescent(value: Double): Self = this.set("Descent", value.asInstanceOf[js.Any])
+    def setReferenceCharSize(value: Double): Self = StObject.set(x, "ReferenceCharSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalLeading(value: Double): Self = this.set("ExternalLeading", value.asInstanceOf[js.Any])
+    def setStrikeThroughOffset(value: Double): Self = StObject.set(x, "StrikeThroughOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalLeading(value: Double): Self = this.set("InternalLeading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceCharSize(value: Double): Self = this.set("ReferenceCharSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrikeThroughOffset(value: Double): Self = this.set("StrikeThroughOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineOffset(value: Double): Self = this.set("UnderlineOffset", value.asInstanceOf[js.Any])
+    def setUnderlineOffset(value: Double): Self = StObject.set(x, "UnderlineOffset", value.asInstanceOf[js.Any])
   }
 }

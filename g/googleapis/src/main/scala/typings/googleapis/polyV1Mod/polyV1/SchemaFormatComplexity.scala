@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information on the complexity of this Format.
   */
 @js.native
-trait SchemaFormatComplexity extends js.Object {
+trait SchemaFormatComplexity extends StObject {
   
   /**
     * A non-negative integer that represents the level of detail (LOD) of this
@@ -32,30 +33,18 @@ object SchemaFormatComplexity {
   }
   
   @scala.inline
-  implicit class SchemaFormatComplexityOps[Self <: SchemaFormatComplexity] (val x: Self) extends AnyVal {
+  implicit class SchemaFormatComplexityMutableBuilder[Self <: SchemaFormatComplexity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLodHint(value: Double): Self = StObject.set(x, "lodHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLodHintUndefined: Self = StObject.set(x, "lodHint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriangleCount(value: String): Self = StObject.set(x, "triangleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLodHint(value: Double): Self = this.set("lodHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLodHint: Self = this.set("lodHint", js.undefined)
-    
-    @scala.inline
-    def setTriangleCount(value: String): Self = this.set("triangleCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriangleCount: Self = this.set("triangleCount", js.undefined)
+    def setTriangleCountUndefined: Self = StObject.set(x, "triangleCount", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaRouterBgpPeerBfd extends js.Object {
+trait SchemaRouterBgpPeerBfd extends StObject {
   
   /**
     * The minimum interval, in milliseconds, between BFD packets received from
@@ -79,54 +80,42 @@ object SchemaRouterBgpPeerBfd {
   }
   
   @scala.inline
-  implicit class SchemaRouterBgpPeerBfdOps[Self <: SchemaRouterBgpPeerBfd] (val x: Self) extends AnyVal {
+  implicit class SchemaRouterBgpPeerBfdMutableBuilder[Self <: SchemaRouterBgpPeerBfd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinReceiveInterval(value: Double): Self = StObject.set(x, "minReceiveInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinReceiveIntervalUndefined: Self = StObject.set(x, "minReceiveInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinTransmitInterval(value: Double): Self = StObject.set(x, "minTransmitInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinReceiveInterval(value: Double): Self = this.set("minReceiveInterval", value.asInstanceOf[js.Any])
+    def setMinTransmitIntervalUndefined: Self = StObject.set(x, "minTransmitInterval", js.undefined)
     
     @scala.inline
-    def deleteMinReceiveInterval: Self = this.set("minReceiveInterval", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTransmitInterval(value: Double): Self = this.set("minTransmitInterval", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMinTransmitInterval: Self = this.set("minTransmitInterval", js.undefined)
+    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setPacketMode(value: String): Self = StObject.set(x, "packetMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplier(value: Double): Self = this.set("multiplier", value.asInstanceOf[js.Any])
+    def setPacketModeUndefined: Self = StObject.set(x, "packetMode", js.undefined)
     
     @scala.inline
-    def deleteMultiplier: Self = this.set("multiplier", js.undefined)
+    def setSlowTimerInterval(value: Double): Self = StObject.set(x, "slowTimerInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketMode(value: String): Self = this.set("packetMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacketMode: Self = this.set("packetMode", js.undefined)
-    
-    @scala.inline
-    def setSlowTimerInterval(value: Double): Self = this.set("slowTimerInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlowTimerInterval: Self = this.set("slowTimerInterval", js.undefined)
+    def setSlowTimerIntervalUndefined: Self = StObject.set(x, "slowTimerInterval", js.undefined)
   }
 }

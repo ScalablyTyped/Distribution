@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.drawer
 import typings.arcgisJsApi.arcgisJsApiStrings.floating
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,90 +105,78 @@ object ExpandProperties {
   }
   
   @scala.inline
-  implicit class ExpandPropertiesOps[Self <: ExpandProperties] (val x: Self) extends AnyVal {
+  implicit class ExpandPropertiesMutableBuilder[Self <: ExpandProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapseIconClass(value: String): Self = StObject.set(x, "collapseIconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCollapse(value: Boolean): Self = this.set("autoCollapse", value.asInstanceOf[js.Any])
+    def setCollapseIconClassUndefined: Self = StObject.set(x, "collapseIconClass", js.undefined)
     
     @scala.inline
-    def deleteAutoCollapse: Self = this.set("autoCollapse", js.undefined)
+    def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseIconClass(value: String): Self = this.set("collapseIconClass", value.asInstanceOf[js.Any])
+    def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
     
     @scala.inline
-    def deleteCollapseIconClass: Self = this.set("collapseIconClass", js.undefined)
+    def setContent(value: Node | String | WidgetProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseTooltip(value: String): Self = this.set("collapseTooltip", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteCollapseTooltip: Self = this.set("collapseTooltip", js.undefined)
+    def setExpandIconClass(value: String): Self = StObject.set(x, "expandIconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Node | String | WidgetProperties): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setExpandIconClassUndefined: Self = StObject.set(x, "expandIconClass", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandIconClass(value: String): Self = this.set("expandIconClass", value.asInstanceOf[js.Any])
+    def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
     
     @scala.inline
-    def deleteExpandIconClass: Self = this.set("expandIconClass", js.undefined)
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandTooltip(value: String): Self = this.set("expandTooltip", value.asInstanceOf[js.Any])
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def deleteExpandTooltip: Self = this.set("expandTooltip", js.undefined)
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setIconNumber(value: Double): Self = StObject.set(x, "iconNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setIconNumberUndefined: Self = StObject.set(x, "iconNumber", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setMode(value: auto | floating | drawer): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconNumber(value: Double): Self = this.set("iconNumber", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteIconNumber: Self = this.set("iconNumber", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: auto | floating | drawer): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setViewModel(value: ExpandViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: ExpandViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

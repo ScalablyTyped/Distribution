@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,33 +58,21 @@ object XTabListener {
   }
   
   @scala.inline
-  implicit class XTabListenerOps[Self <: XTabListener] (val x: Self) extends AnyVal {
+  implicit class XTabListenerMutableBuilder[Self <: XTabListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivated(value: Double => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChanged(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeactivated(value: Double => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActivated(value: Double => Unit): Self = this.set("activated", js.Any.fromFunction1(value))
+    def setInserted(value: Double => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChanged(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = this.set("changed", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDeactivated(value: Double => Unit): Self = this.set("deactivated", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInserted(value: Double => Unit): Self = this.set("inserted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoved(value: Double => Unit): Self = this.set("removed", js.Any.fromFunction1(value))
+    def setRemoved(value: Double => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
   }
 }

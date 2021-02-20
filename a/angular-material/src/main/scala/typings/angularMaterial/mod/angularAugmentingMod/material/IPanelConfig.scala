@@ -6,14 +6,15 @@ import typings.angular.mod.IController
 import typings.angular.mod.IControllerConstructor
 import typings.angular.mod.Injectable
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPanelConfig extends js.Object {
+trait IPanelConfig extends StObject {
   
-   // default: false
+  // default: false
   var animation: js.UndefOr[IPanelAnimation] = js.native
   
   var attachTo: js.UndefOr[String | JQuery | Element] = js.native
@@ -26,28 +27,28 @@ trait IPanelConfig extends js.Object {
   
   var controllerAs: js.UndefOr[String] = js.native
   
-   // default: false
+  // default: false
   var disableParentScroll: js.UndefOr[Boolean] = js.native
   
-   // default: false
+  // default: false
   var escapeToClose: js.UndefOr[Boolean] = js.native
   
-   // default: false
+  // default: false
   var focusOnOpen: js.UndefOr[Boolean] = js.native
   
-   // default: true
+  // default: true
   var fullscreen: js.UndefOr[Boolean] = js.native
   
   var hasBackdrop: js.UndefOr[Boolean] = js.native
   
   var id: js.UndefOr[String] = js.native
   
-   // default: true
+  // default: true
   var locals: js.UndefOr[StringDictionary[js.Any]] = js.native
   
   var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, _]] = js.native
   
-   // default: false
+  // default: false
   var onDomAdded: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.native
   
   var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.native
@@ -60,7 +61,7 @@ trait IPanelConfig extends js.Object {
   
   var panelClass: js.UndefOr[String] = js.native
   
-   // default: 80
+  // default: 80
   var position: js.UndefOr[IPanelPosition] = js.native
   
   var propagateContainerEvents: js.UndefOr[Boolean] = js.native
@@ -71,7 +72,7 @@ trait IPanelConfig extends js.Object {
   
   var templateUrl: js.UndefOr[String] = js.native
   
-   // default: false
+  // default: false
   var trapFocus: js.UndefOr[Boolean] = js.native
   
   var zIndex: js.UndefOr[Double] = js.native
@@ -85,186 +86,174 @@ object IPanelConfig {
   }
   
   @scala.inline
-  implicit class IPanelConfigOps[Self <: IPanelConfig] (val x: Self) extends AnyVal {
+  implicit class IPanelConfigMutableBuilder[Self <: IPanelConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: IPanelAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachTo(value: String | JQuery | Element): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: IPanelAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachTo(value: String | JQuery | Element): Self = this.set("attachTo", value.asInstanceOf[js.Any])
+    def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
     
     @scala.inline
-    def deleteAttachTo: Self = this.set("attachTo", js.undefined)
+    def setClickOutsideToClose(value: Boolean): Self = StObject.set(x, "clickOutsideToClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindToController(value: Boolean): Self = this.set("bindToController", value.asInstanceOf[js.Any])
+    def setClickOutsideToCloseUndefined: Self = StObject.set(x, "clickOutsideToClose", js.undefined)
     
     @scala.inline
-    def deleteBindToController: Self = this.set("bindToController", js.undefined)
+    def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickOutsideToClose(value: Boolean): Self = this.set("clickOutsideToClose", value.asInstanceOf[js.Any])
+    def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickOutsideToClose: Self = this.set("clickOutsideToClose", js.undefined)
+    def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
     @scala.inline
-    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = this.set("controller", js.Array(value :_*))
+    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = this.set("controller", js.Any.fromFunction1(value))
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setController(value: String | Injectable[IControllerConstructor]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setDisableParentScroll(value: Boolean): Self = StObject.set(x, "disableParentScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    def setDisableParentScrollUndefined: Self = StObject.set(x, "disableParentScroll", js.undefined)
     
     @scala.inline
-    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    def setEscapeToClose(value: Boolean): Self = StObject.set(x, "escapeToClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableParentScroll(value: Boolean): Self = this.set("disableParentScroll", value.asInstanceOf[js.Any])
+    def setEscapeToCloseUndefined: Self = StObject.set(x, "escapeToClose", js.undefined)
     
     @scala.inline
-    def deleteDisableParentScroll: Self = this.set("disableParentScroll", js.undefined)
+    def setFocusOnOpen(value: Boolean): Self = StObject.set(x, "focusOnOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeToClose(value: Boolean): Self = this.set("escapeToClose", value.asInstanceOf[js.Any])
+    def setFocusOnOpenUndefined: Self = StObject.set(x, "focusOnOpen", js.undefined)
     
     @scala.inline
-    def deleteEscapeToClose: Self = this.set("escapeToClose", js.undefined)
+    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusOnOpen(value: Boolean): Self = this.set("focusOnOpen", value.asInstanceOf[js.Any])
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def deleteFocusOnOpen: Self = this.set("focusOnOpen", js.undefined)
+    def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBackdrop(value: Boolean): Self = this.set("hasBackdrop", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHasBackdrop: Self = this.set("hasBackdrop", js.undefined)
+    def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => _): Self = StObject.set(x, "onCloseSuccess", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLocals(value: StringDictionary[js.Any]): Self = this.set("locals", value.asInstanceOf[js.Any])
+    def setOnCloseSuccessUndefined: Self = StObject.set(x, "onCloseSuccess", js.undefined)
     
     @scala.inline
-    def deleteLocals: Self = this.set("locals", js.undefined)
+    def setOnDomAdded(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomAdded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => _): Self = this.set("onCloseSuccess", js.Any.fromFunction2(value))
+    def setOnDomAddedUndefined: Self = StObject.set(x, "onDomAdded", js.undefined)
     
     @scala.inline
-    def deleteOnCloseSuccess: Self = this.set("onCloseSuccess", js.undefined)
+    def setOnDomRemoved(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDomAdded(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = this.set("onDomAdded", js.Any.fromFunction1(value))
+    def setOnDomRemovedUndefined: Self = StObject.set(x, "onDomRemoved", js.undefined)
     
     @scala.inline
-    def deleteOnDomAdded: Self = this.set("onDomAdded", js.undefined)
+    def setOnOpenComplete(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onOpenComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDomRemoved(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = this.set("onDomRemoved", js.Any.fromFunction1(value))
+    def setOnOpenCompleteUndefined: Self = StObject.set(x, "onOpenComplete", js.undefined)
     
     @scala.inline
-    def deleteOnDomRemoved: Self = this.set("onDomRemoved", js.undefined)
+    def setOnRemoving(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnOpenComplete(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = this.set("onOpenComplete", js.Any.fromFunction1(value))
+    def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)
     
     @scala.inline
-    def deleteOnOpenComplete: Self = this.set("onOpenComplete", js.undefined)
+    def setOrigin(value: String | JQuery | Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRemoving(value: /* repeated */ js.Any => js.Thenable[Unit] | Unit): Self = this.set("onRemoving", js.Any.fromFunction1(value))
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteOnRemoving: Self = this.set("onRemoving", js.undefined)
+    def setPanelClass(value: String): Self = StObject.set(x, "panelClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String | JQuery | Element): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setPanelClassUndefined: Self = StObject.set(x, "panelClass", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setPosition(value: IPanelPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelClass(value: String): Self = this.set("panelClass", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePanelClass: Self = this.set("panelClass", js.undefined)
+    def setPropagateContainerEvents(value: Boolean): Self = StObject.set(x, "propagateContainerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: IPanelPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPropagateContainerEventsUndefined: Self = StObject.set(x, "propagateContainerEvents", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setResolve(value: ResolveObject): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagateContainerEvents(value: Boolean): Self = this.set("propagateContainerEvents", value.asInstanceOf[js.Any])
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def deletePropagateContainerEvents: Self = this.set("propagateContainerEvents", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolve(value: ResolveObject): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
     
     @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrapFocus(value: Boolean): Self = this.set("trapFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrapFocus: Self = this.set("trapFocus", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

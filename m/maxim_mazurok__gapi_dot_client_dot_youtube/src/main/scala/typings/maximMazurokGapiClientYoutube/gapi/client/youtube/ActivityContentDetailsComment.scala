@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityContentDetailsComment extends js.Object {
+trait ActivityContentDetailsComment extends StObject {
   
   /** The resourceId object contains information that identifies the resource associated with the comment. */
   var resourceId: js.UndefOr[ResourceId] = js.native
@@ -19,24 +20,12 @@ object ActivityContentDetailsComment {
   }
   
   @scala.inline
-  implicit class ActivityContentDetailsCommentOps[Self <: ActivityContentDetailsComment] (val x: Self) extends AnyVal {
+  implicit class ActivityContentDetailsCommentMutableBuilder[Self <: ActivityContentDetailsComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

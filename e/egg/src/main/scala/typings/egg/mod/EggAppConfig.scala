@@ -11,6 +11,7 @@ import typings.eggLogger.mod.EggLoggerOptions
 import typings.node.Buffer
 import typings.node.netMod.Socket
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -181,99 +182,87 @@ object EggAppConfig {
   }
   
   @scala.inline
-  implicit class EggAppConfigOps[Self <: EggAppConfig] (val x: Self) extends AnyVal {
+  implicit class EggAppConfigMutableBuilder[Self <: EggAppConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyParser(value: Enable): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomLoader(value: StringDictionary[CustomLoaderConfig]): Self = StObject.set(x, "customLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHOME(value: String): Self = this.set("HOME", value.asInstanceOf[js.Any])
+    def setCustomLogger(value: StringDictionary[EggLoggerOptions]): Self = StObject.set(x, "customLogger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseDir(value: String): Self = this.set("baseDir", value.asInstanceOf[js.Any])
+    def setDevelopment(value: FastReady): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyParser(value: Enable): Self = this.set("bodyParser", value.asInstanceOf[js.Any])
+    def setDump(value: Ignore): Self = StObject.set(x, "dump", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLoader(value: StringDictionary[CustomLoaderConfig]): Self = this.set("customLoader", value.asInstanceOf[js.Any])
+    def setEnv(value: EggEnvType): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLogger(value: StringDictionary[EggLoggerOptions]): Self = this.set("customLogger", value.asInstanceOf[js.Any])
+    def setHOME(value: String): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevelopment(value: FastReady): Self = this.set("development", value.asInstanceOf[js.Any])
+    def setHostHeaders(value: String): Self = StObject.set(x, "hostHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDump(value: Ignore): Self = this.set("dump", value.asInstanceOf[js.Any])
+    def setHttpclient(value: HttpClientConfig): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: EggEnvType): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setI18n(value: CookieField): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostHeaders(value: String): Self = this.set("hostHeaders", value.asInstanceOf[js.Any])
+    def setIpHeaders(value: String): Self = StObject.set(x, "ipHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpclient(value: HttpClientConfig): Self = this.set("httpclient", value.asInstanceOf[js.Any])
+    def setJsonp(value: Callback): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: CookieField): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setKeys(value: String): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpHeaders(value: String): Self = this.set("ipHeaders", value.asInstanceOf[js.Any])
+    def setLogger(value: EggLoggerConfig): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonp(value: Callback): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    def setMiddleware(value: js.Array[String]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: String): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setMiddlewareVarargs(value: String*): Self = StObject.set(x, "middleware", js.Array(value :_*))
     
     @scala.inline
-    def setLogger(value: EggLoggerConfig): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddlewareVarargs(value: String*): Self = this.set("middleware", js.Array(value :_*))
+    def setOnClientError(value: (Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse]): Self = StObject.set(x, "onClientError", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMiddleware(value: js.Array[String]): Self = this.set("middleware", value.asInstanceOf[js.Any])
+    def setPkg(value: js.Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRundir(value: String): Self = StObject.set(x, "rundir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClientError(value: (Error, Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse]): Self = this.set("onClientError", js.Any.fromFunction3(value))
+    def setSecurity(value: Csp): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkg(value: js.Any): Self = this.set("pkg", value.asInstanceOf[js.Any])
+    def setServerTimeout(value: Double): Self = StObject.set(x, "serverTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRundir(value: String): Self = this.set("rundir", value.asInstanceOf[js.Any])
+    def setServerTimeoutNull: Self = StObject.set(x, "serverTimeout", null)
     
     @scala.inline
-    def setSecurity(value: Csp): Self = this.set("security", value.asInstanceOf[js.Any])
+    def setSiteFile(value: PlainObject[String | Buffer]): Self = StObject.set(x, "siteFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteFile(value: PlainObject[String | Buffer]): Self = this.set("siteFile", value.asInstanceOf[js.Any])
+    def setWatcher(value: PlainObject[_]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatcher(value: PlainObject[_]): Self = this.set("watcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerStartTimeout(value: Double): Self = this.set("workerStartTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerTimeout(value: Double): Self = this.set("serverTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerTimeoutNull: Self = this.set("serverTimeout", null)
+    def setWorkerStartTimeout(value: Double): Self = StObject.set(x, "workerStartTimeout", value.asInstanceOf[js.Any])
   }
 }

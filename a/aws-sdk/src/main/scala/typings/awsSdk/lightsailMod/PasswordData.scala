@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasswordData extends js.Object {
+trait PasswordData extends StObject {
   
   /**
     * The encrypted password. Ciphertext will be an empty string if access to your new instance is not ready yet. When you create an instance, it can take up to 15 minutes for the instance to be ready.  If you use the default key pair (LightsailDefaultKeyPair), the decrypted password will be available in the password field. If you are using a custom key pair, you need to use your own means of decryption. If you change the Administrator password on the instance, Lightsail will continue to return the original ciphertext value. When accessing the instance using RDP, you need to manually enter the Administrator password after changing it from the default. 
@@ -26,30 +27,18 @@ object PasswordData {
   }
   
   @scala.inline
-  implicit class PasswordDataOps[Self <: PasswordData] (val x: Self) extends AnyVal {
+  implicit class PasswordDataMutableBuilder[Self <: PasswordData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCiphertext(value: String): Self = this.set("ciphertext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCiphertext: Self = this.set("ciphertext", js.undefined)
-    
-    @scala.inline
-    def setKeyPairName(value: ResourceName): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+    def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
   }
 }

@@ -1,46 +1,40 @@
 package typings.three.constantsMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MOUSE extends js.Object
+sealed trait MOUSE extends StObject
 @JSImport("three/src/constants", "MOUSE")
 @js.native
-object MOUSE extends js.Object {
+object MOUSE extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MOUSE with Double] = js.native
   
   @js.native
   sealed trait DOLLY extends MOUSE
-  /* 4 */ @js.native
-  object DOLLY extends TopLevel[DOLLY with Double]
+  /* 4 */ val DOLLY: typings.three.constantsMod.MOUSE.DOLLY with Double = js.native
   
   @js.native
   sealed trait LEFT extends MOUSE
-  /* 0 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
+  /* 0 */ val LEFT: typings.three.constantsMod.MOUSE.LEFT with Double = js.native
   
   @js.native
   sealed trait MIDDLE extends MOUSE
-  /* 1 */ @js.native
-  object MIDDLE extends TopLevel[MIDDLE with Double]
+  /* 1 */ val MIDDLE: typings.three.constantsMod.MOUSE.MIDDLE with Double = js.native
   
   @js.native
   sealed trait PAN extends MOUSE
-  /* 5 */ @js.native
-  object PAN extends TopLevel[PAN with Double]
+  /* 5 */ val PAN: typings.three.constantsMod.MOUSE.PAN with Double = js.native
   
   @js.native
   sealed trait RIGHT extends MOUSE
-  /* 2 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
+  /* 2 */ val RIGHT: typings.three.constantsMod.MOUSE.RIGHT with Double = js.native
   
   @js.native
   sealed trait ROTATE extends MOUSE
-  /* 3 */ @js.native
-  object ROTATE extends TopLevel[ROTATE with Double]
+  /* 3 */ val ROTATE: typings.three.constantsMod.MOUSE.ROTATE with Double = js.native
 }

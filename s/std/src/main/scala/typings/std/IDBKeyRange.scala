@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A key range can be a single value or a range with upper and lower bounds or endpoints. If the key range has both upper and lower bounds, then it is bounded; if it has no bounds, it is unbounded. A bounded key range can either be open (the endpoints are excluded) or closed (the endpoints are included). To retrieve all keys within a certain range, you can use the following code constructs: */
 @js.native
-trait IDBKeyRange extends js.Object {
+trait IDBKeyRange extends StObject {
   
   /**
     * Returns true if key is included in the range, and false otherwise.
@@ -48,33 +49,21 @@ object IDBKeyRange {
   }
   
   @scala.inline
-  implicit class IDBKeyRangeOps[Self <: IDBKeyRange] (val x: Self) extends AnyVal {
+  implicit class IDBKeyRangeMutableBuilder[Self <: IDBKeyRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludes(value: js.Any => scala.Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLower(value: js.Any): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowerOpen(value: scala.Boolean): Self = StObject.set(x, "lowerOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludes(value: js.Any => scala.Boolean): Self = this.set("includes", js.Any.fromFunction1(value))
+    def setUpper(value: js.Any): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLower(value: js.Any): Self = this.set("lower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLowerOpen(value: scala.Boolean): Self = this.set("lowerOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpper(value: js.Any): Self = this.set("upper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpperOpen(value: scala.Boolean): Self = this.set("upperOpen", value.asInstanceOf[js.Any])
+    def setUpperOpen(value: scala.Boolean): Self = StObject.set(x, "upperOpen", value.asInstanceOf[js.Any])
   }
 }

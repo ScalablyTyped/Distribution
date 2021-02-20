@@ -1,12 +1,17 @@
 package typings.reactBootstrapDaterangepicker
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
-import typings.reactBootstrapDaterangepicker.ReactBootstrapDaterangepicker.DateRangePicker
+import typings.react.mod.Component
+import typings.reactBootstrapDaterangepicker.ReactBootstrapDaterangepicker.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-bootstrap-daterangepicker", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Instantiable0[DateRangePicker]]
+object mod {
+  
+  /* was `typeof ReactBootstrapDaterangepicker.DateRangePicker` */
+  @JSImport("react-bootstrap-daterangepicker", JSImport.Namespace)
+  @js.native
+  class ^ ()
+    extends Component[Props, js.Object, js.Any]
+}

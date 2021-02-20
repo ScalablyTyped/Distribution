@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersonalUsagePolicies extends js.Object {
+trait PersonalUsagePolicies extends StObject {
   
   /** Account types that can't be managed by the user. */
   var accountTypesWithManagementDisabled: js.UndefOr[js.Array[String]] = js.native
@@ -34,60 +35,48 @@ object PersonalUsagePolicies {
   }
   
   @scala.inline
-  implicit class PersonalUsagePoliciesOps[Self <: PersonalUsagePolicies] (val x: Self) extends AnyVal {
+  implicit class PersonalUsagePoliciesMutableBuilder[Self <: PersonalUsagePolicies] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = StObject.set(x, "accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountTypesWithManagementDisabledUndefined: Self = StObject.set(x, "accountTypesWithManagementDisabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value :_*))
     
     @scala.inline
-    def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = this.set("accountTypesWithManagementDisabled", js.Array(value :_*))
+    def setCameraDisabled(value: Boolean): Self = StObject.set(x, "cameraDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = this.set("accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
+    def setCameraDisabledUndefined: Self = StObject.set(x, "cameraDisabled", js.undefined)
     
     @scala.inline
-    def deleteAccountTypesWithManagementDisabled: Self = this.set("accountTypesWithManagementDisabled", js.undefined)
+    def setMaxDaysWithWorkOff(value: Double): Self = StObject.set(x, "maxDaysWithWorkOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraDisabled(value: Boolean): Self = this.set("cameraDisabled", value.asInstanceOf[js.Any])
+    def setMaxDaysWithWorkOffUndefined: Self = StObject.set(x, "maxDaysWithWorkOff", js.undefined)
     
     @scala.inline
-    def deleteCameraDisabled: Self = this.set("cameraDisabled", js.undefined)
+    def setPersonalApplications(value: js.Array[PersonalApplicationPolicy]): Self = StObject.set(x, "personalApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDaysWithWorkOff(value: Double): Self = this.set("maxDaysWithWorkOff", value.asInstanceOf[js.Any])
+    def setPersonalApplicationsUndefined: Self = StObject.set(x, "personalApplications", js.undefined)
     
     @scala.inline
-    def deleteMaxDaysWithWorkOff: Self = this.set("maxDaysWithWorkOff", js.undefined)
+    def setPersonalApplicationsVarargs(value: PersonalApplicationPolicy*): Self = StObject.set(x, "personalApplications", js.Array(value :_*))
     
     @scala.inline
-    def setPersonalApplicationsVarargs(value: PersonalApplicationPolicy*): Self = this.set("personalApplications", js.Array(value :_*))
+    def setPersonalPlayStoreMode(value: String): Self = StObject.set(x, "personalPlayStoreMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonalApplications(value: js.Array[PersonalApplicationPolicy]): Self = this.set("personalApplications", value.asInstanceOf[js.Any])
+    def setPersonalPlayStoreModeUndefined: Self = StObject.set(x, "personalPlayStoreMode", js.undefined)
     
     @scala.inline
-    def deletePersonalApplications: Self = this.set("personalApplications", js.undefined)
+    def setScreenCaptureDisabled(value: Boolean): Self = StObject.set(x, "screenCaptureDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonalPlayStoreMode(value: String): Self = this.set("personalPlayStoreMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersonalPlayStoreMode: Self = this.set("personalPlayStoreMode", js.undefined)
-    
-    @scala.inline
-    def setScreenCaptureDisabled(value: Boolean): Self = this.set("screenCaptureDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenCaptureDisabled: Self = this.set("screenCaptureDisabled", js.undefined)
+    def setScreenCaptureDisabledUndefined: Self = StObject.set(x, "screenCaptureDisabled", js.undefined)
   }
 }

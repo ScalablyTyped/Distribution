@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Disable extends js.Object {
+trait Disable extends StObject {
   
   var Disable: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object Disable {
   }
   
   @scala.inline
-  implicit class DisableOps[Self <: Disable] (val x: Self) extends AnyVal {
+  implicit class DisableMutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: Boolean): Self = StObject.set(x, "Disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableUndefined: Self = StObject.set(x, "Disable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: String): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Boolean): Self = this.set("Disable", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("Disable", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: String): Self = this.set("Level", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("Level", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

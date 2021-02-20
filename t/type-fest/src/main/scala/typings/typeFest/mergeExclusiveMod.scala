@@ -1,13 +1,12 @@
 package typings.typeFest
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("type-fest/source/merge-exclusive", JSImport.Namespace)
-@js.native
-object mergeExclusiveMod extends js.Object {
+object mergeExclusiveMod {
   
   type MergeExclusive[FirstType, SecondType] = FirstType | SecondType | ((Without[FirstType, SecondType]) with SecondType) | ((Without[SecondType, FirstType]) with FirstType)
   

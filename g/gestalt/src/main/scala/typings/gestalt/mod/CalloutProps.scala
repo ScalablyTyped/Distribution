@@ -4,12 +4,13 @@ import typings.gestalt.anon.AccessibilityLabel
 import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.info
 import typings.gestalt.gestaltStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalloutProps extends js.Object {
+trait CalloutProps extends StObject {
   
   var dismissButton: js.UndefOr[AccessibilityLabel] = js.native
   
@@ -35,51 +36,39 @@ object CalloutProps {
   }
   
   @scala.inline
-  implicit class CalloutPropsOps[Self <: CalloutProps] (val x: Self) extends AnyVal {
+  implicit class CalloutPropsMutableBuilder[Self <: CalloutProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissButtonUndefined: Self = StObject.set(x, "dismissButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconAccessibilityLabel(value: String): Self = StObject.set(x, "iconAccessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconAccessibilityLabel(value: String): Self = this.set("iconAccessibilityLabel", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPrimaryLink(value: LinkData): Self = StObject.set(x, "primaryLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: error | info | warning): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPrimaryLinkUndefined: Self = StObject.set(x, "primaryLink", js.undefined)
     
     @scala.inline
-    def setDismissButton(value: AccessibilityLabel): Self = this.set("dismissButton", value.asInstanceOf[js.Any])
+    def setSecondaryLink(value: LinkData): Self = StObject.set(x, "secondaryLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDismissButton: Self = this.set("dismissButton", js.undefined)
+    def setSecondaryLinkUndefined: Self = StObject.set(x, "secondaryLink", js.undefined)
     
     @scala.inline
-    def setPrimaryLink(value: LinkData): Self = this.set("primaryLink", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimaryLink: Self = this.set("primaryLink", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setSecondaryLink(value: LinkData): Self = this.set("secondaryLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryLink: Self = this.set("secondaryLink", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: error | info | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

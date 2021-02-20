@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRHandedness
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRControllerPointerSelectionOptions extends js.Object {
+trait IWebXRControllerPointerSelectionOptions extends StObject {
   
   /**
     * if provided, this scene will be used to render meshes.
@@ -109,96 +110,84 @@ object IWebXRControllerPointerSelectionOptions {
   }
   
   @scala.inline
-  implicit class IWebXRControllerPointerSelectionOptionsOps[Self <: IWebXRControllerPointerSelectionOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRControllerPointerSelectionOptionsMutableBuilder[Self <: IWebXRControllerPointerSelectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUtilityLayerSceneUndefined: Self = StObject.set(x, "customUtilityLayerScene", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisablePointerUpOnTouchOut(value: Boolean): Self = StObject.set(x, "disablePointerUpOnTouchOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePointerUpOnTouchOut(value: Boolean): Self = this.set("disablePointerUpOnTouchOut", value.asInstanceOf[js.Any])
+    def setDisableScenePointerVectorUpdate(value: Boolean): Self = StObject.set(x, "disableScenePointerVectorUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableScenePointerVectorUpdate(value: Boolean): Self = this.set("disableScenePointerVectorUpdate", value.asInstanceOf[js.Any])
+    def setDisableSwitchOnClick(value: Boolean): Self = StObject.set(x, "disableSwitchOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceGazeMode(value: Boolean): Self = this.set("forceGazeMode", value.asInstanceOf[js.Any])
+    def setDisableSwitchOnClickUndefined: Self = StObject.set(x, "disableSwitchOnClick", js.undefined)
     
     @scala.inline
-    def setXrInput(value: WebXRInput): Self = this.set("xrInput", value.asInstanceOf[js.Any])
+    def setEnablePointerSelectionOnAllControllers(value: Boolean): Self = StObject.set(x, "enablePointerSelectionOnAllControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomUtilityLayerScene(value: Scene): Self = this.set("customUtilityLayerScene", value.asInstanceOf[js.Any])
+    def setEnablePointerSelectionOnAllControllersUndefined: Self = StObject.set(x, "enablePointerSelectionOnAllControllers", js.undefined)
     
     @scala.inline
-    def deleteCustomUtilityLayerScene: Self = this.set("customUtilityLayerScene", js.undefined)
+    def setForceGazeMode(value: Boolean): Self = StObject.set(x, "forceGazeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSwitchOnClick(value: Boolean): Self = this.set("disableSwitchOnClick", value.asInstanceOf[js.Any])
+    def setGazeCamera(value: WebXRCamera): Self = StObject.set(x, "gazeCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableSwitchOnClick: Self = this.set("disableSwitchOnClick", js.undefined)
+    def setGazeCameraUndefined: Self = StObject.set(x, "gazeCamera", js.undefined)
     
     @scala.inline
-    def setEnablePointerSelectionOnAllControllers(value: Boolean): Self = this.set("enablePointerSelectionOnAllControllers", value.asInstanceOf[js.Any])
+    def setGazeModePointerMovedFactor(value: Double): Self = StObject.set(x, "gazeModePointerMovedFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnablePointerSelectionOnAllControllers: Self = this.set("enablePointerSelectionOnAllControllers", js.undefined)
+    def setGazeModePointerMovedFactorUndefined: Self = StObject.set(x, "gazeModePointerMovedFactor", js.undefined)
     
     @scala.inline
-    def setGazeCamera(value: WebXRCamera): Self = this.set("gazeCamera", value.asInstanceOf[js.Any])
+    def setMaxPointerDistance(value: Double): Self = StObject.set(x, "maxPointerDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGazeCamera: Self = this.set("gazeCamera", js.undefined)
+    def setMaxPointerDistanceUndefined: Self = StObject.set(x, "maxPointerDistance", js.undefined)
     
     @scala.inline
-    def setGazeModePointerMovedFactor(value: Double): Self = this.set("gazeModePointerMovedFactor", value.asInstanceOf[js.Any])
+    def setOverrideButtonId(value: String): Self = StObject.set(x, "overrideButtonId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGazeModePointerMovedFactor: Self = this.set("gazeModePointerMovedFactor", js.undefined)
+    def setOverrideButtonIdUndefined: Self = StObject.set(x, "overrideButtonId", js.undefined)
     
     @scala.inline
-    def setMaxPointerDistance(value: Double): Self = this.set("maxPointerDistance", value.asInstanceOf[js.Any])
+    def setPreferredHandedness(value: XRHandedness): Self = StObject.set(x, "preferredHandedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxPointerDistance: Self = this.set("maxPointerDistance", js.undefined)
+    def setPreferredHandednessUndefined: Self = StObject.set(x, "preferredHandedness", js.undefined)
     
     @scala.inline
-    def setOverrideButtonId(value: String): Self = this.set("overrideButtonId", value.asInstanceOf[js.Any])
+    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverrideButtonId: Self = this.set("overrideButtonId", js.undefined)
+    def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
     
     @scala.inline
-    def setPreferredHandedness(value: XRHandedness): Self = this.set("preferredHandedness", value.asInstanceOf[js.Any])
+    def setTimeToSelect(value: Double): Self = StObject.set(x, "timeToSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredHandedness: Self = this.set("preferredHandedness", js.undefined)
+    def setTimeToSelectUndefined: Self = StObject.set(x, "timeToSelect", js.undefined)
     
     @scala.inline
-    def setRenderingGroupId(value: Double): Self = this.set("renderingGroupId", value.asInstanceOf[js.Any])
+    def setUseUtilityLayer(value: Boolean): Self = StObject.set(x, "useUtilityLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderingGroupId: Self = this.set("renderingGroupId", js.undefined)
+    def setUseUtilityLayerUndefined: Self = StObject.set(x, "useUtilityLayer", js.undefined)
     
     @scala.inline
-    def setTimeToSelect(value: Double): Self = this.set("timeToSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToSelect: Self = this.set("timeToSelect", js.undefined)
-    
-    @scala.inline
-    def setUseUtilityLayer(value: Boolean): Self = this.set("useUtilityLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUtilityLayer: Self = this.set("useUtilityLayer", js.undefined)
+    def setXrInput(value: WebXRInput): Self = StObject.set(x, "xrInput", value.asInstanceOf[js.Any])
   }
 }

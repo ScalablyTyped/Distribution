@@ -19,6 +19,7 @@ import typings.officeJs.officeJsStrings.Sum
 import typings.officeJs.officeJsStrings.Unknown_
 import typings.officeJs.officeJsStrings.Variance
 import typings.officeJs.officeJsStrings.VarianceP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

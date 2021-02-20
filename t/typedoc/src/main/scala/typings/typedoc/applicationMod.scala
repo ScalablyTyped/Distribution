@@ -12,14 +12,14 @@ import typings.typedoc.modelsMod.ProjectReflection
 import typings.typedoc.optionsDeclarationMod.TypeDocAndTSOptions
 import typings.typedoc.rendererMod.Renderer
 import typings.typedoc.serializationMod.Serializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/application", JSImport.Namespace)
-@js.native
-object applicationMod extends js.Object {
+object applicationMod {
   
+  @JSImport("typedoc/dist/lib/application", "Application")
   @js.native
   class Application () extends ChildableComponent[Application, AbstractComponent[Application]] {
     
@@ -69,11 +69,22 @@ object applicationMod extends js.Object {
     var serializer: Serializer = js.native
   }
   /* static members */
-  @js.native
-  object Application extends js.Object {
+  object Application {
     
-    var SUPPORTED_TS_VERSION: String = js.native
+    @JSImport("typedoc/dist/lib/application", "Application")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var VERSION: String = js.native
+    @JSImport("typedoc/dist/lib/application", "Application.SUPPORTED_TS_VERSION")
+    @js.native
+    def SUPPORTED_TS_VERSION: String = js.native
+    @scala.inline
+    def SUPPORTED_TS_VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTED_TS_VERSION")(x.asInstanceOf[js.Any])
+    
+    @JSImport("typedoc/dist/lib/application", "Application.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    @scala.inline
+    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

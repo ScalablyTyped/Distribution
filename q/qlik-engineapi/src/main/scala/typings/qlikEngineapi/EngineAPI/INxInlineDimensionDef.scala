@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxInlineDimensionDef...
   */
 @js.native
-trait INxInlineDimensionDef extends js.Object {
+trait INxInlineDimensionDef extends StObject {
   
   /**
     * Index of the active field in a cyclic dimension.
@@ -64,69 +65,57 @@ object INxInlineDimensionDef {
   }
   
   @scala.inline
-  implicit class INxInlineDimensionDefOps[Self <: INxInlineDimensionDef] (val x: Self) extends AnyVal {
+  implicit class INxInlineDimensionDefMutableBuilder[Self <: INxInlineDimensionDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQActiveField(value: Double): Self = StObject.set(x, "qActiveField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQActiveFieldUndefined: Self = StObject.set(x, "qActiveField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQActiveField(value: Double): Self = this.set("qActiveField", value.asInstanceOf[js.Any])
+    def setQFieldDefsUndefined: Self = StObject.set(x, "qFieldDefs", js.undefined)
     
     @scala.inline
-    def deleteQActiveField: Self = this.set("qActiveField", js.undefined)
+    def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
     @scala.inline
-    def setQFieldDefsVarargs(value: String*): Self = this.set("qFieldDefs", js.Array(value :_*))
+    def setQFieldLabels(value: js.Array[String]): Self = StObject.set(x, "qFieldLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefs(value: js.Array[String]): Self = this.set("qFieldDefs", value.asInstanceOf[js.Any])
+    def setQFieldLabelsUndefined: Self = StObject.set(x, "qFieldLabels", js.undefined)
     
     @scala.inline
-    def deleteQFieldDefs: Self = this.set("qFieldDefs", js.undefined)
+    def setQFieldLabelsVarargs(value: String*): Self = StObject.set(x, "qFieldLabels", js.Array(value :_*))
     
     @scala.inline
-    def setQFieldLabelsVarargs(value: String*): Self = this.set("qFieldLabels", js.Array(value :_*))
+    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldLabels(value: js.Array[String]): Self = this.set("qFieldLabels", value.asInstanceOf[js.Any])
+    def setQGroupingUndefined: Self = StObject.set(x, "qGrouping", js.undefined)
     
     @scala.inline
-    def deleteQFieldLabels: Self = this.set("qFieldLabels", js.undefined)
+    def setQNumberPresentations(value: js.Array[IFieldAttributes]): Self = StObject.set(x, "qNumberPresentations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQGrouping(value: NxGrpType): Self = this.set("qGrouping", value.asInstanceOf[js.Any])
+    def setQNumberPresentationsUndefined: Self = StObject.set(x, "qNumberPresentations", js.undefined)
     
     @scala.inline
-    def deleteQGrouping: Self = this.set("qGrouping", js.undefined)
+    def setQNumberPresentationsVarargs(value: IFieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value :_*))
     
     @scala.inline
-    def setQNumberPresentationsVarargs(value: IFieldAttributes*): Self = this.set("qNumberPresentations", js.Array(value :_*))
+    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNumberPresentations(value: js.Array[IFieldAttributes]): Self = this.set("qNumberPresentations", value.asInstanceOf[js.Any])
+    def setQReverseSortUndefined: Self = StObject.set(x, "qReverseSort", js.undefined)
     
     @scala.inline
-    def deleteQNumberPresentations: Self = this.set("qNumberPresentations", js.undefined)
+    def setQSortCriterias(value: ISortCriteria): Self = StObject.set(x, "qSortCriterias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQReverseSort(value: Boolean): Self = this.set("qReverseSort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQReverseSort: Self = this.set("qReverseSort", js.undefined)
-    
-    @scala.inline
-    def setQSortCriterias(value: ISortCriteria): Self = this.set("qSortCriterias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQSortCriterias: Self = this.set("qSortCriterias", js.undefined)
+    def setQSortCriteriasUndefined: Self = StObject.set(x, "qSortCriterias", js.undefined)
   }
 }

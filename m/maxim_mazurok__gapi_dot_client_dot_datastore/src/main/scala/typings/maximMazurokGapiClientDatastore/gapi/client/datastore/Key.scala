@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Key extends js.Object {
+trait Key extends StObject {
   
   /** Entities are partitioned into subsets, currently identified by a project ID and namespace ID. Queries are scoped to a single partition. */
   var partitionId: js.UndefOr[PartitionId] = js.native
@@ -28,33 +29,21 @@ object Key {
   }
   
   @scala.inline
-  implicit class KeyOps[Self <: Key] (val x: Self) extends AnyVal {
+  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartitionId(value: PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: js.Array[PathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionId(value: PartitionId): Self = this.set("partitionId", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deletePartitionId: Self = this.set("partitionId", js.undefined)
-    
-    @scala.inline
-    def setPathVarargs(value: PathElement*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[PathElement]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

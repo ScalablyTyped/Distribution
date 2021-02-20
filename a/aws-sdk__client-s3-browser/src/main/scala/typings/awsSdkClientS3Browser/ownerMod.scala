@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/model/_Owner", JSImport.Namespace)
-@js.native
-object ownerMod extends js.Object {
+object ownerMod {
   
-  @JSName("_Owner")
+  @JSImport("@aws-sdk/client-s3-browser/model/_Owner", "_Owner")
+  @js.native
   val Owner: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

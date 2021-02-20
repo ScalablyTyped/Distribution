@@ -3,6 +3,7 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Ratio
 import typings.babylonjs.anon.Width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultConfiguration extends js.Object {
+trait ResultConfiguration extends StObject {
   
   /**
     * If query results are encrypted in Amazon S3, indicates the encryption option used (for example, SSE-KMS or CSE-KMS) and key information. This is a client-side setting. If workgroup settings override client-side settings, then the query uses the encryption configuration that is specified for the workgroup, and also uses the location for storing query results specified in the workgroup. See WorkGroupConfiguration$EnforceWorkGroupConfiguration and Workgroup Settings Override Client-Side Settings.
@@ -26,30 +27,18 @@ object ResultConfiguration {
   }
   
   @scala.inline
-  implicit class ResultConfigurationOps[Self <: ResultConfiguration] (val x: Self) extends AnyVal {
+  implicit class ResultConfigurationMutableBuilder[Self <: ResultConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputLocation(value: String): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
-    
-    @scala.inline
-    def setOutputLocation(value: String): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
   }
 }

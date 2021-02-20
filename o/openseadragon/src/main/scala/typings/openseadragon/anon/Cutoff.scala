@@ -3,12 +3,13 @@ package typings.openseadragon.anon
 import typings.openseadragon.mod.Tile
 import typings.openseadragon.mod.TiledImage
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cutoff extends js.Object {
+trait Cutoff extends StObject {
   
   var cutoff: js.UndefOr[Double] = js.native
   
@@ -16,7 +17,7 @@ trait Cutoff extends js.Object {
   
   var tile: Tile = js.native
   
-   // TODO: check type
+  // TODO: check type
   var tiledImage: TiledImage = js.native
 }
 object Cutoff {
@@ -28,33 +29,21 @@ object Cutoff {
   }
   
   @scala.inline
-  implicit class CutoffOps[Self <: Cutoff] (val x: Self) extends AnyVal {
+  implicit class CutoffMutableBuilder[Self <: Cutoff] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCutoffUndefined: Self = StObject.set(x, "cutoff", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: HTMLImageElement): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setTile(value: Tile): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTile(value: Tile): Self = this.set("tile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiledImage(value: TiledImage): Self = this.set("tiledImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCutoff(value: Double): Self = this.set("cutoff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCutoff: Self = this.set("cutoff", js.undefined)
+    def setTiledImage(value: TiledImage): Self = StObject.set(x, "tiledImage", value.asInstanceOf[js.Any])
   }
 }

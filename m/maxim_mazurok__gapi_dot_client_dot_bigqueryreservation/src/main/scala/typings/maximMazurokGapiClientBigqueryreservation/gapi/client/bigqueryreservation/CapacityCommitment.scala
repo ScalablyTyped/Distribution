@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityCommitment extends js.Object {
+trait CapacityCommitment extends StObject {
   
   /** Output only. The end of the current commitment period. It is applicable only for ACTIVE capacity commitments. */
   var commitmentEndTime: js.UndefOr[String] = js.native
@@ -43,66 +44,54 @@ object CapacityCommitment {
   }
   
   @scala.inline
-  implicit class CapacityCommitmentOps[Self <: CapacityCommitment] (val x: Self) extends AnyVal {
+  implicit class CapacityCommitmentMutableBuilder[Self <: CapacityCommitment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitmentEndTime(value: String): Self = StObject.set(x, "commitmentEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitmentEndTimeUndefined: Self = StObject.set(x, "commitmentEndTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitmentStartTime(value: String): Self = StObject.set(x, "commitmentStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitmentEndTime(value: String): Self = this.set("commitmentEndTime", value.asInstanceOf[js.Any])
+    def setCommitmentStartTimeUndefined: Self = StObject.set(x, "commitmentStartTime", js.undefined)
     
     @scala.inline
-    def deleteCommitmentEndTime: Self = this.set("commitmentEndTime", js.undefined)
+    def setFailureStatus(value: Status): Self = StObject.set(x, "failureStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitmentStartTime(value: String): Self = this.set("commitmentStartTime", value.asInstanceOf[js.Any])
+    def setFailureStatusUndefined: Self = StObject.set(x, "failureStatus", js.undefined)
     
     @scala.inline
-    def deleteCommitmentStartTime: Self = this.set("commitmentStartTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureStatus(value: Status): Self = this.set("failureStatus", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFailureStatus: Self = this.set("failureStatus", js.undefined)
+    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRenewalPlan(value: String): Self = StObject.set(x, "renewalPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan(value: String): Self = this.set("plan", value.asInstanceOf[js.Any])
+    def setRenewalPlanUndefined: Self = StObject.set(x, "renewalPlan", js.undefined)
     
     @scala.inline
-    def deletePlan: Self = this.set("plan", js.undefined)
+    def setSlotCount(value: String): Self = StObject.set(x, "slotCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalPlan(value: String): Self = this.set("renewalPlan", value.asInstanceOf[js.Any])
+    def setSlotCountUndefined: Self = StObject.set(x, "slotCount", js.undefined)
     
     @scala.inline
-    def deleteRenewalPlan: Self = this.set("renewalPlan", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotCount(value: String): Self = this.set("slotCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotCount: Self = this.set("slotCount", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

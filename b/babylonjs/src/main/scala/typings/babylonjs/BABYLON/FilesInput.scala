@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.std.File
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilesInput extends js.Object {
+trait FilesInput extends StObject {
   
   var _additionalRenderLoopLogicCallback: js.Any = js.native
   

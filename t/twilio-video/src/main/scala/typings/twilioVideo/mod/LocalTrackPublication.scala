@@ -1,6 +1,8 @@
 package typings.twilioVideo.mod
 
+import typings.node.eventsMod.EventEmitterOptions
 import typings.twilioVideo.mod.Track.Kind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("twilio-video", "LocalTrackPublication")
 @js.native
 class LocalTrackPublication () extends TrackPublication {
+  def this(options: EventEmitterOptions) = this()
   
   var isTrackEnabled: Boolean = js.native
   

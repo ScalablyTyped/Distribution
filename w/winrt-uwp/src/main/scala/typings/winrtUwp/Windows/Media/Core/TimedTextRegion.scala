@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Core
 
 import typings.winrtUwp.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes properties for customizing the appearance of the rendering area of a TimedTextCue . */
 @js.native
-trait TimedTextRegion extends js.Object {
+trait TimedTextRegion extends StObject {
   
   /** Gets or sets the background color of the TimedTextRegion . */
   var background: Color = js.native
@@ -67,54 +68,42 @@ object TimedTextRegion {
   }
   
   @scala.inline
-  implicit class TimedTextRegionOps[Self <: TimedTextRegion] (val x: Self) extends AnyVal {
+  implicit class TimedTextRegionMutableBuilder[Self <: TimedTextRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayAlignment(value: TimedTextDisplayAlignment): Self = StObject.set(x, "displayAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtent(value: TimedTextSize): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: Color): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setIsOverflowClipped(value: Boolean): Self = StObject.set(x, "isOverflowClipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAlignment(value: TimedTextDisplayAlignment): Self = this.set("displayAlignment", value.asInstanceOf[js.Any])
+    def setLineHeight(value: TimedTextDouble): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: TimedTextSize): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOverflowClipped(value: Boolean): Self = this.set("isOverflowClipped", value.asInstanceOf[js.Any])
+    def setPadding(value: TimedTextPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: TimedTextDouble): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setPosition(value: TimedTextPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScrollMode(value: TimedTextScrollMode): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: TimedTextPadding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setTextWrapping(value: TimedTextWrapping): Self = StObject.set(x, "textWrapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: TimedTextPoint): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setWritingMode(value: TimedTextWritingMode): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollMode(value: TimedTextScrollMode): Self = this.set("scrollMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextWrapping(value: TimedTextWrapping): Self = this.set("textWrapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritingMode(value: TimedTextWritingMode): Self = this.set("writingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZindex(value: Double): Self = this.set("zindex", value.asInstanceOf[js.Any])
+    def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
   }
 }

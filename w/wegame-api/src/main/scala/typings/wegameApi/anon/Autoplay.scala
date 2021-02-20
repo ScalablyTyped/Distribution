@@ -3,12 +3,13 @@ package typings.wegameApi.anon
 import typings.wegameApi.wegameApiStrings.contain
 import typings.wegameApi.wegameApiStrings.cover
 import typings.wegameApi.wegameApiStrings.fill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Autoplay extends js.Object {
+trait Autoplay extends StObject {
   
   /**
     * 视频是否自动播放，默认false
@@ -92,99 +93,87 @@ object Autoplay {
   }
   
   @scala.inline
-  implicit class AutoplayOps[Self <: Autoplay] (val x: Self) extends AnyVal {
+  implicit class AutoplayMutableBuilder[Self <: Autoplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setInitialTime(value: Double): Self = StObject.set(x, "initialTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setInitialTimeUndefined: Self = StObject.set(x, "initialTime", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLive(value: Double): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
     
     @scala.inline
-    def setInitialTime(value: Double): Self = this.set("initialTime", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialTime: Self = this.set("initialTime", js.undefined)
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def setLive(value: Double): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLive: Self = this.set("live", js.undefined)
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setObjectFit(value: contain | cover | fill): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMuted: Self = this.set("muted", js.undefined)
+    def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
     
     @scala.inline
-    def setObjectFit(value: contain | cover | fill): Self = this.set("objectFit", value.asInstanceOf[js.Any])
+    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectFit: Self = this.set("objectFit", js.undefined)
+    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
     @scala.inline
-    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deletePoster: Self = this.set("poster", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

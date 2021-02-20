@@ -1,5 +1,6 @@
 package typings.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object MSIAppServiceOptions {
   }
   
   @scala.inline
-  implicit class MSIAppServiceOptionsOps[Self <: MSIAppServiceOptions] (val x: Self) extends AnyVal {
+  implicit class MSIAppServiceOptionsMutableBuilder[Self <: MSIAppServiceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMsiApiVersion(value: String): Self = StObject.set(x, "msiApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMsiApiVersionUndefined: Self = StObject.set(x, "msiApiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsiEndpoint(value: String): Self = StObject.set(x, "msiEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsiApiVersion(value: String): Self = this.set("msiApiVersion", value.asInstanceOf[js.Any])
+    def setMsiEndpointUndefined: Self = StObject.set(x, "msiEndpoint", js.undefined)
     
     @scala.inline
-    def deleteMsiApiVersion: Self = this.set("msiApiVersion", js.undefined)
+    def setMsiSecret(value: String): Self = StObject.set(x, "msiSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsiEndpoint(value: String): Self = this.set("msiEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsiEndpoint: Self = this.set("msiEndpoint", js.undefined)
-    
-    @scala.inline
-    def setMsiSecret(value: String): Self = this.set("msiSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsiSecret: Self = this.set("msiSecret", js.undefined)
+    def setMsiSecretUndefined: Self = StObject.set(x, "msiSecret", js.undefined)
   }
 }

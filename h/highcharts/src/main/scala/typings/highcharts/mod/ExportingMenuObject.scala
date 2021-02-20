@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportingMenuObject extends js.Object {
+trait ExportingMenuObject extends StObject {
   
   /**
     * The click handler for the menu item.
@@ -36,42 +37,30 @@ object ExportingMenuObject {
   }
   
   @scala.inline
-  implicit class ExportingMenuObjectOps[Self <: ExportingMenuObject] (val x: Self) extends AnyVal {
+  implicit class ExportingMenuObjectMutableBuilder[Self <: ExportingMenuObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnclick(value: EventCallbackFunction[Chart_]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeparator(value: Boolean): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnclick(value: EventCallbackFunction[Chart_]): Self = this.set("onclick", value.asInstanceOf[js.Any])
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
     @scala.inline
-    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparator(value: Boolean): Self = this.set("separator", value.asInstanceOf[js.Any])
+    def setTextKey(value: String): Self = StObject.set(x, "textKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setTextKeyUndefined: Self = StObject.set(x, "textKey", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextKey(value: String): Self = this.set("textKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextKey: Self = this.set("textKey", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

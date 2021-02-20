@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a single wallet transaction in the transaction history. */
 @js.native
-trait WalletTransaction extends js.Object {
+trait WalletTransaction extends StObject {
   
   /** Gets or sets the summary description (suitable for user UI) of the transaction. */
   var description: String = js.native
@@ -43,36 +44,24 @@ object WalletTransaction {
   }
   
   @scala.inline
-  implicit class WalletTransactionOps[Self <: WalletTransaction] (val x: Self) extends AnyVal {
+  implicit class WalletTransactionMutableBuilder[Self <: WalletTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayAmount(value: String): Self = StObject.set(x, "displayAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayLocation(value: String): Self = StObject.set(x, "displayLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIgnoreTimeOfDay(value: Boolean): Self = StObject.set(x, "ignoreTimeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAmount(value: String): Self = this.set("displayAmount", value.asInstanceOf[js.Any])
+    def setIsLaunchable(value: Boolean): Self = StObject.set(x, "isLaunchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLocation(value: String): Self = this.set("displayLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnoreTimeOfDay(value: Boolean): Self = this.set("ignoreTimeOfDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsLaunchable(value: Boolean): Self = this.set("isLaunchable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionDate(value: Date): Self = this.set("transactionDate", value.asInstanceOf[js.Any])
+    def setTransactionDate(value: Date): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
   }
 }

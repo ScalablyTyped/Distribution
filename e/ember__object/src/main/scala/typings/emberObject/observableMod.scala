@@ -1,26 +1,28 @@
 package typings.emberObject
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.TopLevel
 import typings.emberObject.typesMod.ObserverMethod
 import typings.emberObject.typesMod.UnwrapComputedPropertyGetter
 import typings.emberObject.typesMod.UnwrapComputedPropertyGetters
 import typings.emberObject.typesMod.UnwrapComputedPropertySetters
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/object/observable", JSImport.Namespace)
-@js.native
-object observableMod extends js.Object {
+object observableMod extends Shortcut {
   
+  @JSImport("@ember/object/observable", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[Observable, typings.emberObject.coreMod.default] = js.native
   
   /**
     * This mixin provides properties and property observing functionality, core features of the Ember object model.
     */
   @js.native
-  trait Observable extends js.Object {
+  trait Observable extends StObject {
     
     def addObserver(key: /* keyof this */ String, method: ObserverMethod[this.type, this.type]): this.type = js.native
     /**
@@ -121,4 +123,9 @@ object observableMod extends js.Object {
       */
     def toggleProperty(keyName: /* keyof this */ String): Boolean = js.native
   }
+  
+  type _To = typings.emberObject.mixinMod.default[Observable, typings.emberObject.coreMod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `observableMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[Observable, typings.emberObject.coreMod.default] = default
 }

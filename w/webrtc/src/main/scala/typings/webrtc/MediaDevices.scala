@@ -1,12 +1,13 @@
 package typings.webrtc
 
 import typings.std.MediaDeviceInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaDevices extends js.Object {
+trait MediaDevices extends StObject {
   
   def enumerateDevices(): js.Promise[js.Array[MediaDeviceInfo]] = js.native
   
@@ -27,27 +28,15 @@ object MediaDevices {
   }
   
   @scala.inline
-  implicit class MediaDevicesOps[Self <: MediaDevices] (val x: Self) extends AnyVal {
+  implicit class MediaDevicesMutableBuilder[Self <: MediaDevices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnumerateDevices(value: () => js.Promise[js.Array[MediaDeviceInfo]]): Self = StObject.set(x, "enumerateDevices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSupportedConstraints(value: () => MediaTrackSupportedConstraints): Self = StObject.set(x, "getSupportedConstraints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnumerateDevices(value: () => js.Promise[js.Array[MediaDeviceInfo]]): Self = this.set("enumerateDevices", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSupportedConstraints(value: () => MediaTrackSupportedConstraints): Self = this.set("getSupportedConstraints", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUserMedia(value: MediaStreamConstraints => js.Promise[MediaStream]): Self = this.set("getUserMedia", js.Any.fromFunction1(value))
+    def setGetUserMedia(value: MediaStreamConstraints => js.Promise[MediaStream]): Self = StObject.set(x, "getUserMedia", js.Any.fromFunction1(value))
   }
 }

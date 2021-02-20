@@ -4,13 +4,14 @@ import typings.openfin.shapesMod.ContextMenuSettings
 import typings.openfin.viewViewMod.AutoResizeOptions
 import typings.openfin.windowOptionMod.Api
 import typings.openfin.windowOptionMod.ContentNavigation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<openfin.openfin/_v2/api/view/view.ViewOptions> */
 @js.native
-trait PartialViewOptions extends js.Object {
+trait PartialViewOptions extends StObject {
   
   var api: js.UndefOr[Api] = js.native
   
@@ -37,66 +38,54 @@ object PartialViewOptions {
   }
   
   @scala.inline
-  implicit class PartialViewOptionsOps[Self <: PartialViewOptions] (val x: Self) extends AnyVal {
+  implicit class PartialViewOptionsMutableBuilder[Self <: PartialViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoResize(value: AutoResizeOptions): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: Api): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
     @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResize(value: AutoResizeOptions): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    def setContentNavigation(value: ContentNavigation): Self = StObject.set(x, "contentNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setContentNavigationUndefined: Self = StObject.set(x, "contentNavigation", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setContextMenuSettings(value: ContextMenuSettings): Self = StObject.set(x, "contextMenuSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentNavigation(value: ContentNavigation): Self = this.set("contentNavigation", value.asInstanceOf[js.Any])
+    def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
     
     @scala.inline
-    def deleteContentNavigation: Self = this.set("contentNavigation", js.undefined)
+    def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuSettings(value: ContextMenuSettings): Self = this.set("contextMenuSettings", value.asInstanceOf[js.Any])
+    def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
     
     @scala.inline
-    def deleteContextMenuSettings: Self = this.set("contextMenuSettings", js.undefined)
+    def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomContext(value: js.Any): Self = this.set("customContext", value.asInstanceOf[js.Any])
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def deleteCustomContext: Self = this.set("customContext", js.undefined)
+    def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: js.Any): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
-    
-    @scala.inline
-    def setExperimental(value: js.Any): Self = this.set("experimental", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
   }
 }

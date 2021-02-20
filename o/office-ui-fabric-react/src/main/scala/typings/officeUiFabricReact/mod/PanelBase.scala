@@ -4,6 +4,7 @@ import typings.officeUiFabricReact.anon.PartialIPanelState
 import typings.officeUiFabricReact.anon.ReadonlyIPanelProps
 import typings.officeUiFabricReact.anon.ReadonlyIPanelState
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,19 @@ class PanelBase protected ()
   def this(props: IPanelProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "PanelBase")
-@js.native
-object PanelBase extends js.Object {
+object PanelBase {
   
-  var defaultProps: IPanelProps = js.native
+  @JSImport("office-ui-fabric-react", "PanelBase")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("office-ui-fabric-react", "PanelBase.defaultProps")
+  @js.native
+  def defaultProps: IPanelProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IPanelProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("office-ui-fabric-react", "PanelBase.getDerivedStateFromProps")
+  @js.native
   def getDerivedStateFromProps(nextProps: ReadonlyIPanelProps, prevState: ReadonlyIPanelState): PartialIPanelState | Null = js.native
 }

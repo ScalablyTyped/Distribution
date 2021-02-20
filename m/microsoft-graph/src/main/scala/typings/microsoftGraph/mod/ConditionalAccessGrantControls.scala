@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalAccessGrantControls extends js.Object {
+trait ConditionalAccessGrantControls extends StObject {
   
   /**
     * List of values of built-in controls required by the policy. Possible values: Block, Mfa, CompliantDevice,
@@ -31,54 +32,42 @@ object ConditionalAccessGrantControls {
   }
   
   @scala.inline
-  implicit class ConditionalAccessGrantControlsOps[Self <: ConditionalAccessGrantControls] (val x: Self) extends AnyVal {
+  implicit class ConditionalAccessGrantControlsMutableBuilder[Self <: ConditionalAccessGrantControls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuiltInControls(value: js.Array[ConditionalAccessGrantControl]): Self = StObject.set(x, "builtInControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuiltInControlsUndefined: Self = StObject.set(x, "builtInControls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuiltInControlsVarargs(value: ConditionalAccessGrantControl*): Self = StObject.set(x, "builtInControls", js.Array(value :_*))
     
     @scala.inline
-    def setBuiltInControlsVarargs(value: ConditionalAccessGrantControl*): Self = this.set("builtInControls", js.Array(value :_*))
+    def setCustomAuthenticationFactors(value: js.Array[String]): Self = StObject.set(x, "customAuthenticationFactors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltInControls(value: js.Array[ConditionalAccessGrantControl]): Self = this.set("builtInControls", value.asInstanceOf[js.Any])
+    def setCustomAuthenticationFactorsUndefined: Self = StObject.set(x, "customAuthenticationFactors", js.undefined)
     
     @scala.inline
-    def deleteBuiltInControls: Self = this.set("builtInControls", js.undefined)
+    def setCustomAuthenticationFactorsVarargs(value: String*): Self = StObject.set(x, "customAuthenticationFactors", js.Array(value :_*))
     
     @scala.inline
-    def setCustomAuthenticationFactorsVarargs(value: String*): Self = this.set("customAuthenticationFactors", js.Array(value :_*))
+    def setOperator(value: NullableOption[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAuthenticationFactors(value: js.Array[String]): Self = this.set("customAuthenticationFactors", value.asInstanceOf[js.Any])
+    def setOperatorNull: Self = StObject.set(x, "operator", null)
     
     @scala.inline
-    def deleteCustomAuthenticationFactors: Self = this.set("customAuthenticationFactors", js.undefined)
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def setOperator(value: NullableOption[String]): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setTermsOfUse(value: js.Array[String]): Self = StObject.set(x, "termsOfUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setTermsOfUseUndefined: Self = StObject.set(x, "termsOfUse", js.undefined)
     
     @scala.inline
-    def setOperatorNull: Self = this.set("operator", null)
-    
-    @scala.inline
-    def setTermsOfUseVarargs(value: String*): Self = this.set("termsOfUse", js.Array(value :_*))
-    
-    @scala.inline
-    def setTermsOfUse(value: js.Array[String]): Self = this.set("termsOfUse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermsOfUse: Self = this.set("termsOfUse", js.undefined)
+    def setTermsOfUseVarargs(value: String*): Self = StObject.set(x, "termsOfUse", js.Array(value :_*))
   }
 }

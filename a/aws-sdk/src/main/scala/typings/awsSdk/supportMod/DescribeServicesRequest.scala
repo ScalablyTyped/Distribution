@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeServicesRequest extends js.Object {
+trait DescribeServicesRequest extends StObject {
   
   /**
     * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
@@ -26,33 +27,21 @@ object DescribeServicesRequest {
   }
   
   @scala.inline
-  implicit class DescribeServicesRequestOps[Self <: DescribeServicesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeServicesRequestMutableBuilder[Self <: DescribeServicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceCodeList(value: ServiceCodeList): Self = StObject.set(x, "serviceCodeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setServiceCodeListUndefined: Self = StObject.set(x, "serviceCodeList", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setServiceCodeListVarargs(value: ServiceCode*): Self = this.set("serviceCodeList", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceCodeList(value: ServiceCodeList): Self = this.set("serviceCodeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceCodeList: Self = this.set("serviceCodeList", js.undefined)
+    def setServiceCodeListVarargs(value: ServiceCode*): Self = StObject.set(x, "serviceCodeList", js.Array(value :_*))
   }
 }

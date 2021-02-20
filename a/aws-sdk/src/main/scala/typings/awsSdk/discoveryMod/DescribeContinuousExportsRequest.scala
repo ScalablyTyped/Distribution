@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeContinuousExportsRequest extends js.Object {
+trait DescribeContinuousExportsRequest extends StObject {
   
   /**
     * The unique IDs assigned to the exports.
@@ -31,39 +32,27 @@ object DescribeContinuousExportsRequest {
   }
   
   @scala.inline
-  implicit class DescribeContinuousExportsRequestOps[Self <: DescribeContinuousExportsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeContinuousExportsRequestMutableBuilder[Self <: DescribeContinuousExportsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportIds(value: ContinuousExportIds): Self = StObject.set(x, "exportIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportIdsUndefined: Self = StObject.set(x, "exportIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportIdsVarargs(value: ConfigurationsExportId*): Self = StObject.set(x, "exportIds", js.Array(value :_*))
     
     @scala.inline
-    def setExportIdsVarargs(value: ConfigurationsExportId*): Self = this.set("exportIds", js.Array(value :_*))
+    def setMaxResults(value: DescribeContinuousExportsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportIds(value: ContinuousExportIds): Self = this.set("exportIds", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteExportIds: Self = this.set("exportIds", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: DescribeContinuousExportsMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

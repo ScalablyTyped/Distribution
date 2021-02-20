@@ -52,9 +52,10 @@ import typings.ddTrace.mod.plugins.limitdClient
 import typings.ddTrace.mod.plugins.microgatewayCore
 import typings.ddTrace.mod.plugins.mongodbCore
 import typings.ddTrace.mod.plugins.promiseJs
+import typings.opentracing.mod.Tracer
 import typings.opentracing.tracerMod.SpanOptions
-import typings.opentracing.tracerMod.Tracer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

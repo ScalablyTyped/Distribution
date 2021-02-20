@@ -14,16 +14,16 @@ import typings.bip174.interfacesMod.Transaction
 import typings.bip174.interfacesMod.TransactionFromBuffer
 import typings.node.Buffer
 import typings.std.InstanceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bip174", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("bip174", "Psbt")
   @js.native
-  class Psbt protected () extends js.Object {
+  class Psbt protected () extends StObject {
     def this(tx: Transaction) = this()
     
     def addInput(inputData: PsbtInputExtended): this.type = js.native
@@ -61,13 +61,18 @@ object mod extends js.Object {
     def updateOutput(outputIndex: Double, updateData: PsbtOutputUpdate): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Psbt extends js.Object {
+  object Psbt {
     
+    @JSImport("bip174", "Psbt.fromBase64")
+    @js.native
     def fromBase64[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
     
+    @JSImport("bip174", "Psbt.fromBuffer")
+    @js.native
     def fromBuffer[T /* <: TypeofPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
     
+    @JSImport("bip174", "Psbt.fromHex")
+    @js.native
     def fromHex[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = js.native
   }
 }

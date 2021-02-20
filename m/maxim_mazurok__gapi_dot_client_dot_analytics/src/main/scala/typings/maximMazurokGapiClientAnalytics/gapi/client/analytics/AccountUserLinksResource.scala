@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAnalytics.anon.Maxresults
 import typings.maximMazurokGapiClientAnalytics.anon.Oauthtoken
 import typings.maximMazurokGapiClientAnalytics.anon.PrettyPrint
 import typings.maximMazurokGapiClientAnalytics.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountUserLinksResource extends js.Object {
+trait AccountUserLinksResource extends StObject {
   
   /** Removes a user from the given account. */
   def delete(): Request[Unit] = js.native

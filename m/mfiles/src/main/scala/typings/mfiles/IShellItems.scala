@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShellItems extends js.Object {
+trait IShellItems extends StObject {
   
   val Count: Double = js.native
   
@@ -35,36 +36,24 @@ object IShellItems {
   }
   
   @scala.inline
-  implicit class IShellItemsOps[Self <: IShellItems] (val x: Self) extends AnyVal {
+  implicit class IShellItemsMutableBuilder[Self <: IShellItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolders(value: IFolderDefs): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetObjectVersionsCount(value: () => Double): Self = StObject.set(x, "GetObjectVersionsCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setObjectFiles(value: IObjectFileAndObjVerOfMultipleFiles): Self = StObject.set(x, "ObjectFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: IFolderDefs): Self = this.set("Folders", value.asInstanceOf[js.Any])
+    def setObjectVersions(value: IObjectVersions): Self = StObject.set(x, "ObjectVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetObjectVersionsCount(value: () => Double): Self = this.set("GetObjectVersionsCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setObjectFiles(value: IObjectFileAndObjVerOfMultipleFiles): Self = this.set("ObjectFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectVersions(value: IObjectVersions): Self = this.set("ObjectVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectVersionsAndProperties(value: IObjectVersionAndPropertiesOfMultipleObjects): Self = this.set("ObjectVersionsAndProperties", value.asInstanceOf[js.Any])
+    def setObjectVersionsAndProperties(value: IObjectVersionAndPropertiesOfMultipleObjects): Self = StObject.set(x, "ObjectVersionsAndProperties", value.asInstanceOf[js.Any])
   }
 }

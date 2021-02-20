@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRPlane
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRPlane extends js.Object {
+trait IWebXRPlane extends StObject {
   
   /**
     * a babylon-assigned ID for this polygon
@@ -38,33 +39,21 @@ object IWebXRPlane {
   }
   
   @scala.inline
-  implicit class IWebXRPlaneOps[Self <: IWebXRPlane] (val x: Self) extends AnyVal {
+  implicit class IWebXRPlaneMutableBuilder[Self <: IWebXRPlane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolygonDefinition(value: js.Array[Vector3]): Self = StObject.set(x, "polygonDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolygonDefinitionVarargs(value: Vector3*): Self = StObject.set(x, "polygonDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonDefinitionVarargs(value: Vector3*): Self = this.set("polygonDefinition", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolygonDefinition(value: js.Array[Vector3]): Self = this.set("polygonDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformationMatrix(value: Matrix): Self = this.set("transformationMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXrPlane(value: XRPlane): Self = this.set("xrPlane", value.asInstanceOf[js.Any])
+    def setXrPlane(value: XRPlane): Self = StObject.set(x, "xrPlane", value.asInstanceOf[js.Any])
   }
 }

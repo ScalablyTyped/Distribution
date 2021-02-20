@@ -1,11 +1,12 @@
 package typings.aureliaDependencyInjection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends js.Object {
+trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends StObject {
   
   def invoke(container: Container, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs], dependencies: TArgs): ImplOrAny[TImpl] = js.native
   
@@ -36,22 +37,10 @@ object Invoker_ {
   }
   
   @scala.inline
-  implicit class Invoker_Ops[Self <: Invoker_[_, _, _], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self with (Invoker_[TBase, TImpl, TArgs])) extends AnyVal {
+  implicit class Invoker_MutableBuilder[Self <: Invoker_[_, _, _], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self with (Invoker_[TBase, TImpl, TArgs])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = this.set("invoke", js.Any.fromFunction3(value))
+    def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     
     @scala.inline
     def setInvokeWithDynamicDependencies(
@@ -60,6 +49,6 @@ object Invoker_ {
         ], js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
         ]) => ImplOrAny[TImpl]
-    ): Self = this.set("invokeWithDynamicDependencies", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "invokeWithDynamicDependencies", js.Any.fromFunction4(value))
   }
 }

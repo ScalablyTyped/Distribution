@@ -5,16 +5,16 @@ import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Collisions/collider", JSImport.Namespace)
-@js.native
-object colliderMod extends js.Object {
+object colliderMod {
   
+  @JSImport("babylonjs/Collisions/collider", "Collider")
   @js.native
-  class Collider () extends js.Object {
+  class Collider () extends StObject {
     
     var _basePoint: js.Any = js.native
     

@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait HeaderFooterLoadOptions extends js.Object {
+trait HeaderFooterLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -79,60 +80,48 @@ object HeaderFooterLoadOptions {
   }
   
   @scala.inline
-  implicit class HeaderFooterLoadOptionsOps[Self <: HeaderFooterLoadOptions] (val x: Self) extends AnyVal {
+  implicit class HeaderFooterLoadOptionsMutableBuilder[Self <: HeaderFooterLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterFooter(value: Boolean): Self = StObject.set(x, "centerFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setCenterFooterUndefined: Self = StObject.set(x, "centerFooter", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setCenterHeader(value: Boolean): Self = StObject.set(x, "centerHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterFooter(value: Boolean): Self = this.set("centerFooter", value.asInstanceOf[js.Any])
+    def setCenterHeaderUndefined: Self = StObject.set(x, "centerHeader", js.undefined)
     
     @scala.inline
-    def deleteCenterFooter: Self = this.set("centerFooter", js.undefined)
+    def setLeftFooter(value: Boolean): Self = StObject.set(x, "leftFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterHeader(value: Boolean): Self = this.set("centerHeader", value.asInstanceOf[js.Any])
+    def setLeftFooterUndefined: Self = StObject.set(x, "leftFooter", js.undefined)
     
     @scala.inline
-    def deleteCenterHeader: Self = this.set("centerHeader", js.undefined)
+    def setLeftHeader(value: Boolean): Self = StObject.set(x, "leftHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftFooter(value: Boolean): Self = this.set("leftFooter", value.asInstanceOf[js.Any])
+    def setLeftHeaderUndefined: Self = StObject.set(x, "leftHeader", js.undefined)
     
     @scala.inline
-    def deleteLeftFooter: Self = this.set("leftFooter", js.undefined)
+    def setRightFooter(value: Boolean): Self = StObject.set(x, "rightFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftHeader(value: Boolean): Self = this.set("leftHeader", value.asInstanceOf[js.Any])
+    def setRightFooterUndefined: Self = StObject.set(x, "rightFooter", js.undefined)
     
     @scala.inline
-    def deleteLeftHeader: Self = this.set("leftHeader", js.undefined)
+    def setRightHeader(value: Boolean): Self = StObject.set(x, "rightHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightFooter(value: Boolean): Self = this.set("rightFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightFooter: Self = this.set("rightFooter", js.undefined)
-    
-    @scala.inline
-    def setRightHeader(value: Boolean): Self = this.set("rightHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightHeader: Self = this.set("rightHeader", js.undefined)
+    def setRightHeaderUndefined: Self = StObject.set(x, "rightHeader", js.undefined)
   }
 }

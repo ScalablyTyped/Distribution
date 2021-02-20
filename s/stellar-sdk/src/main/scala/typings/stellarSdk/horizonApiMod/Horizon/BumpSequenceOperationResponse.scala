@@ -2,6 +2,7 @@ package typings.stellarSdk.horizonApiMod.Horizon
 
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.horizonApiMod.Horizon.OperationResponseType.bumpSequence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,21 +38,9 @@ object BumpSequenceOperationResponse {
   }
   
   @scala.inline
-  implicit class BumpSequenceOperationResponseOps[Self <: BumpSequenceOperationResponse] (val x: Self) extends AnyVal {
+  implicit class BumpSequenceOperationResponseMutableBuilder[Self <: BumpSequenceOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBump_to(value: String): Self = this.set("bump_to", value.asInstanceOf[js.Any])
+    def setBump_to(value: String): Self = StObject.set(x, "bump_to", value.asInstanceOf[js.Any])
   }
 }

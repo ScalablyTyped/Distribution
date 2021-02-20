@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CryptoKeyVersion extends js.Object {
+trait CryptoKeyVersion extends StObject {
   
   /** Output only. The CryptoKeyVersionAlgorithm that this CryptoKeyVersion supports. */
   var algorithm: js.UndefOr[String] = js.native
@@ -58,96 +59,84 @@ object CryptoKeyVersion {
   }
   
   @scala.inline
-  implicit class CryptoKeyVersionOps[Self <: CryptoKeyVersion] (val x: Self) extends AnyVal {
+  implicit class CryptoKeyVersionMutableBuilder[Self <: CryptoKeyVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttestation(value: KeyOperationAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestation(value: KeyOperationAttestation): Self = this.set("attestation", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    def setDestroyEventTime(value: String): Self = StObject.set(x, "destroyEventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDestroyEventTimeUndefined: Self = StObject.set(x, "destroyEventTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDestroyTime(value: String): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyEventTime(value: String): Self = this.set("destroyEventTime", value.asInstanceOf[js.Any])
+    def setDestroyTimeUndefined: Self = StObject.set(x, "destroyTime", js.undefined)
     
     @scala.inline
-    def deleteDestroyEventTime: Self = this.set("destroyEventTime", js.undefined)
+    def setExternalProtectionLevelOptions(value: ExternalProtectionLevelOptions): Self = StObject.set(x, "externalProtectionLevelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyTime(value: String): Self = this.set("destroyTime", value.asInstanceOf[js.Any])
+    def setExternalProtectionLevelOptionsUndefined: Self = StObject.set(x, "externalProtectionLevelOptions", js.undefined)
     
     @scala.inline
-    def deleteDestroyTime: Self = this.set("destroyTime", js.undefined)
+    def setGenerateTime(value: String): Self = StObject.set(x, "generateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalProtectionLevelOptions(value: ExternalProtectionLevelOptions): Self = this.set("externalProtectionLevelOptions", value.asInstanceOf[js.Any])
+    def setGenerateTimeUndefined: Self = StObject.set(x, "generateTime", js.undefined)
     
     @scala.inline
-    def deleteExternalProtectionLevelOptions: Self = this.set("externalProtectionLevelOptions", js.undefined)
+    def setImportFailureReason(value: String): Self = StObject.set(x, "importFailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateTime(value: String): Self = this.set("generateTime", value.asInstanceOf[js.Any])
+    def setImportFailureReasonUndefined: Self = StObject.set(x, "importFailureReason", js.undefined)
     
     @scala.inline
-    def deleteGenerateTime: Self = this.set("generateTime", js.undefined)
+    def setImportJob(value: String): Self = StObject.set(x, "importJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportFailureReason(value: String): Self = this.set("importFailureReason", value.asInstanceOf[js.Any])
+    def setImportJobUndefined: Self = StObject.set(x, "importJob", js.undefined)
     
     @scala.inline
-    def deleteImportFailureReason: Self = this.set("importFailureReason", js.undefined)
+    def setImportTime(value: String): Self = StObject.set(x, "importTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportJob(value: String): Self = this.set("importJob", value.asInstanceOf[js.Any])
+    def setImportTimeUndefined: Self = StObject.set(x, "importTime", js.undefined)
     
     @scala.inline
-    def deleteImportJob: Self = this.set("importJob", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportTime(value: String): Self = this.set("importTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImportTime: Self = this.set("importTime", js.undefined)
+    def setProtectionLevel(value: String): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProtectionLevelUndefined: Self = StObject.set(x, "protectionLevel", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionLevel(value: String): Self = this.set("protectionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtectionLevel: Self = this.set("protectionLevel", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

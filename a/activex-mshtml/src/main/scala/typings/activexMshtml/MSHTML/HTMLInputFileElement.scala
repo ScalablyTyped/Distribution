@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLInputFileElement extends js.Object {
+trait HTMLInputFileElement extends StObject {
   
   @JSName("MSHTML.HTMLInputFileElement_typekey")
   var MSHTMLDotHTMLInputFileElement_typekey: HTMLInputFileElement = js.native

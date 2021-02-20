@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterElasticIpResult extends js.Object {
+trait RegisterElasticIpResult extends StObject {
   
   /**
     * The Elastic IP address.
@@ -21,24 +22,12 @@ object RegisterElasticIpResult {
   }
   
   @scala.inline
-  implicit class RegisterElasticIpResultOps[Self <: RegisterElasticIpResult] (val x: Self) extends AnyVal {
+  implicit class RegisterElasticIpResultMutableBuilder[Self <: RegisterElasticIpResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElasticIp(value: String): Self = this.set("ElasticIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElasticIp: Self = this.set("ElasticIp", js.undefined)
+    def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
   }
 }

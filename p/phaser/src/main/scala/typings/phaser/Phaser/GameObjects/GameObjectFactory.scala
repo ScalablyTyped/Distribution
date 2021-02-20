@@ -17,6 +17,7 @@ import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
 import typings.phaser.SpineGameObject
 import typings.phaser.integer
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods into the class.
   */
 @js.native
-trait GameObjectFactory extends js.Object {
+trait GameObjectFactory extends StObject {
   
   /**
     * Creates a new Arc Shape Game Object and adds it to the Scene.

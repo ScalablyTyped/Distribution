@@ -1,12 +1,13 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.selectTapp()
 @js.native
-trait SelectTappConfig extends js.Object {
+trait SelectTappConfig extends StObject {
   
   var id: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object SelectTappConfig {
   }
   
   @scala.inline
-  implicit class SelectTappConfigOps[Self <: SelectTappConfig] (val x: Self) extends AnyVal {
+  implicit class SelectTappConfigMutableBuilder[Self <: SelectTappConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternalName(value: String): Self = StObject.set(x, "internalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInternalNameUndefined: Self = StObject.set(x, "internalName", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalName(value: String): Self = this.set("internalName", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteInternalName: Self = this.set("internalName", js.undefined)
+    def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setShowName(value: String): Self = this.set("showName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowName: Self = this.set("showName", js.undefined)
+    def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
   }
 }

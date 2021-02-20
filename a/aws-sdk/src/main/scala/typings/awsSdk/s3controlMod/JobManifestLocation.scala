@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobManifestLocation extends js.Object {
+trait JobManifestLocation extends StObject {
   
   /**
     * The ETag for the specified manifest object.
@@ -31,30 +32,18 @@ object JobManifestLocation {
   }
   
   @scala.inline
-  implicit class JobManifestLocationOps[Self <: JobManifestLocation] (val x: Self) extends AnyVal {
+  implicit class JobManifestLocationMutableBuilder[Self <: JobManifestLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectArn(value: S3KeyArnString): Self = StObject.set(x, "ObjectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectVersionId(value: S3ObjectVersionId): Self = StObject.set(x, "ObjectVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: NonEmptyMaxLength1024String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectArn(value: S3KeyArnString): Self = this.set("ObjectArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectVersionId(value: S3ObjectVersionId): Self = this.set("ObjectVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersionId: Self = this.set("ObjectVersionId", js.undefined)
+    def setObjectVersionIdUndefined: Self = StObject.set(x, "ObjectVersionId", js.undefined)
   }
 }

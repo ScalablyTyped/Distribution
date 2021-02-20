@@ -3,6 +3,7 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Disabled
 import typings.postmanCollection.anon.IgnoreOwnVariables
 import typings.postmanCollection.anon.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,12 +31,16 @@ class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefiniti
   def toObjectResolved(scope: Variables, overrides: js.Array[_], options: IgnoreOwnVariables): TDefinition = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Property")
-@js.native
-object Property extends js.Object {
+object Property {
   
+  @JSImport("postman-collection", "Property.replaceSubstitutions")
+  @js.native
   def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = js.native
+  @JSImport("postman-collection", "Property.replaceSubstitutions")
+  @js.native
   def replaceSubstitutions(str: String, variables: VariableList): String = js.native
   
+  @JSImport("postman-collection", "Property.replaceSubstitutionsIn")
+  @js.native
   def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = js.native
 }

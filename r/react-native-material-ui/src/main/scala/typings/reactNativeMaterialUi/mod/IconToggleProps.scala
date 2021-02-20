@@ -2,12 +2,13 @@ package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.ContainerIcon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IconToggleProps extends js.Object {
+trait IconToggleProps extends StObject {
   
   var children: js.UndefOr[Element] = js.native
   
@@ -40,81 +41,69 @@ object IconToggleProps {
   }
   
   @scala.inline
-  implicit class IconTogglePropsOps[Self <: IconToggleProps] (val x: Self) extends AnyVal {
+  implicit class IconTogglePropsMutableBuilder[Self <: IconToggleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setChildren(value: Element): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setMaxOpacity(value: Double): Self = StObject.set(x, "maxOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setMaxOpacityUndefined: Self = StObject.set(x, "maxOpacity", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxOpacity(value: Double): Self = this.set("maxOpacity", value.asInstanceOf[js.Any])
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteMaxOpacity: Self = this.set("maxOpacity", js.undefined)
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deletePercent: Self = this.set("percent", js.undefined)
+    def setStyle(value: ContainerIcon): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: ContainerIcon): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
-    
-    @scala.inline
-    def setUnderlayColor(value: String): Self = this.set("underlayColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderlayColor: Self = this.set("underlayColor", js.undefined)
+    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
   }
 }

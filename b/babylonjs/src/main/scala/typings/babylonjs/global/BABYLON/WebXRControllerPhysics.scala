@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +20,13 @@ class WebXRControllerPhysics protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.WebXRControllerPhysics")
-@js.native
-object WebXRControllerPhysics extends js.Object {
+object WebXRControllerPhysics {
   
   /**
     * The module's name
     */
+  @JSGlobal("BABYLON.WebXRControllerPhysics.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -33,5 +34,7 @@ object WebXRControllerPhysics extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the webxr specs version
     */
+  @JSGlobal("BABYLON.WebXRControllerPhysics.Version")
+  @js.native
   val Version: Double = js.native
 }

@@ -1,13 +1,12 @@
 package typings.openui5.sap.ui.model.odata
 
 import typings.openui5.sap.ui.model.SimpleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.type")
-@js.native
-object `type` extends js.Object {
+object `type` {
   
   @js.native
   trait Boolean extends ODataType {

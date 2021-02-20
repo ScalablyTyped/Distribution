@@ -1,5 +1,6 @@
 package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Template for a collection of DataTransfer resources.
   */
 @js.native
-trait SchemaDataTransfersListResponse extends js.Object {
+trait SchemaDataTransfersListResponse extends StObject {
   
   /**
     * List of data transfer requests.
@@ -39,45 +40,33 @@ object SchemaDataTransfersListResponse {
   }
   
   @scala.inline
-  implicit class SchemaDataTransfersListResponseOps[Self <: SchemaDataTransfersListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDataTransfersListResponseMutableBuilder[Self <: SchemaDataTransfersListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataTransfers(value: js.Array[SchemaDataTransfer]): Self = StObject.set(x, "dataTransfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTransfersUndefined: Self = StObject.set(x, "dataTransfers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTransfersVarargs(value: SchemaDataTransfer*): Self = StObject.set(x, "dataTransfers", js.Array(value :_*))
     
     @scala.inline
-    def setDataTransfersVarargs(value: SchemaDataTransfer*): Self = this.set("dataTransfers", js.Array(value :_*))
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTransfers(value: js.Array[SchemaDataTransfer]): Self = this.set("dataTransfers", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDataTransfers: Self = this.set("dataTransfers", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

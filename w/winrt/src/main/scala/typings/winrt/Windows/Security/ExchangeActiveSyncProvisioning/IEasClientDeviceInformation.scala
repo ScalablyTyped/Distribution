@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEasClientDeviceInformation extends js.Object {
+trait IEasClientDeviceInformation extends StObject {
   
   var friendlyName: String = js.native
   
@@ -35,36 +36,24 @@ object IEasClientDeviceInformation {
   }
   
   @scala.inline
-  implicit class IEasClientDeviceInformationOps[Self <: IEasClientDeviceInformation] (val x: Self) extends AnyVal {
+  implicit class IEasClientDeviceInformationMutableBuilder[Self <: IEasClientDeviceInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setSystemManufacturer(value: String): Self = StObject.set(x, "systemManufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSystemProductName(value: String): Self = StObject.set(x, "systemProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystem(value: String): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemManufacturer(value: String): Self = this.set("systemManufacturer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemProductName(value: String): Self = this.set("systemProductName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemSku(value: String): Self = this.set("systemSku", value.asInstanceOf[js.Any])
+    def setSystemSku(value: String): Self = StObject.set(x, "systemSku", value.asInstanceOf[js.Any])
   }
 }

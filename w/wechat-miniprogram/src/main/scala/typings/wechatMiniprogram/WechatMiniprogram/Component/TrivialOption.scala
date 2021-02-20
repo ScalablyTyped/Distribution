@@ -8,13 +8,14 @@ import typings.wechatMiniprogram.WechatMiniprogram.IAnyObject
 import typings.wechatMiniprogram.anon.PartialILifetime
 import typings.wechatMiniprogram.anon.PartialPageLifetimes
 import typings.wechatMiniprogram.anon.Partialcreatedvoidattache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.WechatMiniprogram.Component.Options<wechat-miniprogram.WechatMiniprogram.IAnyObject, wechat-miniprogram.WechatMiniprogram.IAnyObject, wechat-miniprogram.WechatMiniprogram.IAnyObject, wechat-miniprogram.WechatMiniprogram.IAnyObject, false> */
 @js.native
-trait TrivialOption extends js.Object {
+trait TrivialOption extends StObject {
   
   var attached: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -59,46 +60,34 @@ object TrivialOption {
   }
   
   @scala.inline
-  implicit class TrivialOptionOps[Self <: TrivialOption] (val x: Self) extends AnyVal {
+  implicit class TrivialOptionMutableBuilder[Self <: TrivialOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttached(value: () => Unit): Self = this.set("attached", js.Any.fromFunction0(value))
+    def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
     @scala.inline
-    def deleteAttached: Self = this.set("attached", js.undefined)
+    def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
     @scala.inline
-    def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = this.set("behaviors", js.Array(value :_*))
+    def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    def setData(value: IAnyObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: () => Unit): Self = this.set("created", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
-    
-    @scala.inline
-    def setData(value: IAnyObject): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
     def setDefinitionFilter(
@@ -107,84 +96,84 @@ object TrivialOption {
             /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias wechat-miniprogram.WechatMiniprogram.Component.DefinitionFilter */ js.Object
           ]
         ]) => Unit
-    ): Self = this.set("definitionFilter", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "definitionFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDefinitionFilter: Self = this.set("definitionFilter", js.undefined)
+    def setDefinitionFilterUndefined: Self = StObject.set(x, "definitionFilter", js.undefined)
     
     @scala.inline
-    def setDetached(value: () => Unit): Self = this.set("detached", js.Any.fromFunction0(value))
+    def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDetached: Self = this.set("detached", js.undefined)
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     @scala.inline
-    def setError(value: /* err */ Error => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setExternalClassesVarargs(value: String*): Self = this.set("externalClasses", js.Array(value :_*))
+    def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalClasses(value: js.Array[String]): Self = this.set("externalClasses", value.asInstanceOf[js.Any])
+    def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
     
     @scala.inline
-    def deleteExternalClasses: Self = this.set("externalClasses", js.undefined)
+    def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
     
     @scala.inline
-    def setLifetimes(value: Partialcreatedvoidattache): Self = this.set("lifetimes", value.asInstanceOf[js.Any])
+    def setLifetimes(value: Partialcreatedvoidattache): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLifetimes: Self = this.set("lifetimes", js.undefined)
+    def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
     
     @scala.inline
-    def setMethods(value: IAnyObject with (js.Object | PartialILifetime)): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setMethods(value: IAnyObject with (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def setMoved(value: () => Unit): Self = this.set("moved", js.Any.fromFunction0(value))
+    def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMoved: Self = this.set("moved", js.undefined)
+    def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
     
     @scala.inline
-    def setObservers(value: Record[String, js.Function1[/* repeated */ _, _]]): Self = this.set("observers", value.asInstanceOf[js.Any])
+    def setObservers(value: Record[String, js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObservers: Self = this.set("observers", js.undefined)
+    def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
     
     @scala.inline
-    def setOptions(value: ComponentOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: ComponentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setPageLifetimes(value: PartialPageLifetimes): Self = this.set("pageLifetimes", value.asInstanceOf[js.Any])
+    def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageLifetimes: Self = this.set("pageLifetimes", js.undefined)
+    def setPageLifetimesUndefined: Self = StObject.set(x, "pageLifetimes", js.undefined)
     
     @scala.inline
-    def setProperties(value: IAnyObject): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IAnyObject): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def setRelations(value: StringDictionary[RelationOption]): Self = this.set("relations", value.asInstanceOf[js.Any])
+    def setRelations(value: StringDictionary[RelationOption]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelations: Self = this.set("relations", js.undefined)
+    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
   }
 }

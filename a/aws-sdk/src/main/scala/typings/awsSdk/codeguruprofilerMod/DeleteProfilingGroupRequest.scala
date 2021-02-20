@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteProfilingGroupRequest extends js.Object {
+trait DeleteProfilingGroupRequest extends StObject {
   
   /**
     * The name of the profiling group to delete.
@@ -21,21 +22,9 @@ object DeleteProfilingGroupRequest {
   }
   
   @scala.inline
-  implicit class DeleteProfilingGroupRequestOps[Self <: DeleteProfilingGroupRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteProfilingGroupRequestMutableBuilder[Self <: DeleteProfilingGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

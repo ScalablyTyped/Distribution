@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTD extends js.Object {
+trait RTD extends StObject {
   
   @JSName("Excel.RTD_typekey")
   var ExcelDotRTD_typekey: RTD = js.native
@@ -31,30 +32,18 @@ object RTD {
   }
   
   @scala.inline
-  implicit class RTDOps[Self <: RTD] (val x: Self) extends AnyVal {
+  implicit class RTDMutableBuilder[Self <: RTD] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcelDotRTD_typekey(value: RTD): Self = StObject.set(x, "Excel.RTD_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRefreshData(value: () => Unit): Self = StObject.set(x, "RefreshData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRestartServers(value: () => Unit): Self = StObject.set(x, "RestartServers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExcelDotRTD_typekey(value: RTD): Self = this.set("Excel.RTD_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefreshData(value: () => Unit): Self = this.set("RefreshData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRestartServers(value: () => Unit): Self = this.set("RestartServers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setThrottleInterval(value: Double): Self = this.set("ThrottleInterval", value.asInstanceOf[js.Any])
+    def setThrottleInterval(value: Double): Self = StObject.set(x, "ThrottleInterval", value.asInstanceOf[js.Any])
   }
 }

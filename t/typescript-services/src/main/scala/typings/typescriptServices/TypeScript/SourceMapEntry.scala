@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapEntry extends js.Object {
+trait SourceMapEntry extends StObject {
   
   var emittedColumn: Double = js.native
   
@@ -38,39 +39,27 @@ object SourceMapEntry {
   }
   
   @scala.inline
-  implicit class SourceMapEntryOps[Self <: SourceMapEntry] (val x: Self) extends AnyVal {
+  implicit class SourceMapEntryMutableBuilder[Self <: SourceMapEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmittedFile(value: String): Self = StObject.set(x, "emittedFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmittedColumn(value: Double): Self = this.set("emittedColumn", value.asInstanceOf[js.Any])
+    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmittedFile(value: String): Self = this.set("emittedFile", value.asInstanceOf[js.Any])
+    def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmittedLine(value: Double): Self = this.set("emittedLine", value.asInstanceOf[js.Any])
+    def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceColumn(value: Double): Self = this.set("sourceColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFile(value: String): Self = this.set("sourceFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceLine(value: Double): Self = this.set("sourceLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceName(value: String): Self = this.set("sourceName", value.asInstanceOf[js.Any])
+    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
   }
 }

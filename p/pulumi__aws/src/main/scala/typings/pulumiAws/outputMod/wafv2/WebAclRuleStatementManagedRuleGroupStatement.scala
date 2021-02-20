@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleStatementManagedRuleGroupStatement extends js.Object {
+trait WebAclRuleStatementManagedRuleGroupStatement extends StObject {
   
   /**
     * The `rules` whose actions are set to `COUNT` by the web ACL, regardless of the action that is set on the rule. See Excluded Rule below for details.
@@ -31,33 +32,21 @@ object WebAclRuleStatementManagedRuleGroupStatement {
   }
   
   @scala.inline
-  implicit class WebAclRuleStatementManagedRuleGroupStatementOps[Self <: WebAclRuleStatementManagedRuleGroupStatement] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleStatementManagedRuleGroupStatementMutableBuilder[Self <: WebAclRuleStatementManagedRuleGroupStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedRules(value: js.Array[WebAclRuleStatementManagedRuleGroupStatementExcludedRule]): Self = StObject.set(x, "excludedRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedRulesUndefined: Self = StObject.set(x, "excludedRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedRulesVarargs(value: WebAclRuleStatementManagedRuleGroupStatementExcludedRule*): Self = StObject.set(x, "excludedRules", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVendorName(value: String): Self = this.set("vendorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcludedRulesVarargs(value: WebAclRuleStatementManagedRuleGroupStatementExcludedRule*): Self = this.set("excludedRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcludedRules(value: js.Array[WebAclRuleStatementManagedRuleGroupStatementExcludedRule]): Self = this.set("excludedRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedRules: Self = this.set("excludedRules", js.undefined)
+    def setVendorName(value: String): Self = StObject.set(x, "vendorName", value.asInstanceOf[js.Any])
   }
 }

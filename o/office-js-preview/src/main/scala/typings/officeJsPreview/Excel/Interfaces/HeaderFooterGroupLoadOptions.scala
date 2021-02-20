@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait HeaderFooterGroupLoadOptions extends js.Object {
+trait HeaderFooterGroupLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -81,66 +82,54 @@ object HeaderFooterGroupLoadOptions {
   }
   
   @scala.inline
-  implicit class HeaderFooterGroupLoadOptionsOps[Self <: HeaderFooterGroupLoadOptions] (val x: Self) extends AnyVal {
+  implicit class HeaderFooterGroupLoadOptionsMutableBuilder[Self <: HeaderFooterGroupLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultForAllPages(value: HeaderFooterLoadOptions): Self = StObject.set(x, "defaultForAllPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setDefaultForAllPagesUndefined: Self = StObject.set(x, "defaultForAllPages", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setEvenPages(value: HeaderFooterLoadOptions): Self = StObject.set(x, "evenPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultForAllPages(value: HeaderFooterLoadOptions): Self = this.set("defaultForAllPages", value.asInstanceOf[js.Any])
+    def setEvenPagesUndefined: Self = StObject.set(x, "evenPages", js.undefined)
     
     @scala.inline
-    def deleteDefaultForAllPages: Self = this.set("defaultForAllPages", js.undefined)
+    def setFirstPage(value: HeaderFooterLoadOptions): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvenPages(value: HeaderFooterLoadOptions): Self = this.set("evenPages", value.asInstanceOf[js.Any])
+    def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
     
     @scala.inline
-    def deleteEvenPages: Self = this.set("evenPages", js.undefined)
+    def setOddPages(value: HeaderFooterLoadOptions): Self = StObject.set(x, "oddPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPage(value: HeaderFooterLoadOptions): Self = this.set("firstPage", value.asInstanceOf[js.Any])
+    def setOddPagesUndefined: Self = StObject.set(x, "oddPages", js.undefined)
     
     @scala.inline
-    def deleteFirstPage: Self = this.set("firstPage", js.undefined)
+    def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOddPages(value: HeaderFooterLoadOptions): Self = this.set("oddPages", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteOddPages: Self = this.set("oddPages", js.undefined)
+    def setUseSheetMargins(value: Boolean): Self = StObject.set(x, "useSheetMargins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Boolean): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setUseSheetMarginsUndefined: Self = StObject.set(x, "useSheetMargins", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUseSheetScale(value: Boolean): Self = StObject.set(x, "useSheetScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseSheetMargins(value: Boolean): Self = this.set("useSheetMargins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSheetMargins: Self = this.set("useSheetMargins", js.undefined)
-    
-    @scala.inline
-    def setUseSheetScale(value: Boolean): Self = this.set("useSheetScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSheetScale: Self = this.set("useSheetScale", js.undefined)
+    def setUseSheetScaleUndefined: Self = StObject.set(x, "useSheetScale", js.undefined)
   }
 }

@@ -1,17 +1,18 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverflowToolbarPriority extends js.Object
+sealed trait OverflowToolbarPriority extends StObject
 /**
   * Defines the priorities of the controls within sap.m.OverflowToolbar
   */
 @JSGlobal("sap.m.OverflowToolbarPriority")
 @js.native
-object OverflowToolbarPriority extends js.Object {
+object OverflowToolbarPriority extends StObject {
   
   @js.native
   sealed trait AlwaysOverflow extends OverflowToolbarPriority

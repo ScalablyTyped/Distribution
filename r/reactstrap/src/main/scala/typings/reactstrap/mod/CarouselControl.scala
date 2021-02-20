@@ -1,12 +1,11 @@
 package typings.reactstrap.mod
 
-import typings.react.mod.Component
-import typings.reactstrap.carouselControlMod.CarouselControlProps
+import typings.reactstrap.carouselControlMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap/lib", "CarouselControl")
 @js.native
-class CarouselControl ()
-  extends Component[CarouselControlProps, js.Object, js.Any]
+class CarouselControl () extends default

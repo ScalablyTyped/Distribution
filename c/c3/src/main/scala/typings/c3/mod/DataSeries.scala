@@ -1,11 +1,12 @@
 package typings.c3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSeries extends js.Object {
+trait DataSeries extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object DataSeries {
   }
   
   @scala.inline
-  implicit class DataSeriesOps[Self <: DataSeries] (val x: Self) extends AnyVal {
+  implicit class DataSeriesMutableBuilder[Self <: DataSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId_org(value: String): Self = StObject.set(x, "id_org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: DataPoint*): Self = this.set("values", js.Array(value :_*))
+    def setId_orgUndefined: Self = StObject.set(x, "id_org", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[DataPoint]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[DataPoint]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setId_org(value: String): Self = this.set("id_org", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId_org: Self = this.set("id_org", js.undefined)
+    def setValuesVarargs(value: DataPoint*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

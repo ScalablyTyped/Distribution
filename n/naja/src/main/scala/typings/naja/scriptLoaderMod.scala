@@ -1,13 +1,13 @@
 package typings.naja
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("naja/src/core/ScriptLoader", JSImport.Namespace)
-@js.native
-object scriptLoaderMod extends js.Object {
+object scriptLoaderMod {
   
+  @JSImport("naja/src/core/ScriptLoader", "ScriptLoader")
   @js.native
-  class ScriptLoader () extends js.Object
+  class ScriptLoader () extends StObject
 }

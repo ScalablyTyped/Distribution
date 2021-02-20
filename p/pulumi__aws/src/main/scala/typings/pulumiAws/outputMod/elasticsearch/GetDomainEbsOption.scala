@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDomainEbsOption extends js.Object {
+trait GetDomainEbsOption extends StObject {
   
   /**
     * Whether EBS volumes are attached to data nodes in the domain.
@@ -36,30 +37,18 @@ object GetDomainEbsOption {
   }
   
   @scala.inline
-  implicit class GetDomainEbsOptionOps[Self <: GetDomainEbsOption] (val x: Self) extends AnyVal {
+  implicit class GetDomainEbsOptionMutableBuilder[Self <: GetDomainEbsOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEbsEnabled(value: Boolean): Self = StObject.set(x, "ebsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsEnabled(value: Boolean): Self = this.set("ebsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIops(value: Double): Self = this.set("iops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeSize(value: Double): Self = this.set("volumeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeType(value: String): Self = this.set("volumeType", value.asInstanceOf[js.Any])
+    def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
   }
 }

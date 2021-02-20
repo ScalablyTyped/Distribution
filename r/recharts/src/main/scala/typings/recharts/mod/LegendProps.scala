@@ -10,12 +10,13 @@ import typings.recharts.rechartsStrings.left
 import typings.recharts.rechartsStrings.middle
 import typings.recharts.rechartsStrings.right
 import typings.recharts.rechartsStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendProps extends js.Object {
+trait LegendProps extends StObject {
   
   var align: js.UndefOr[left | center | right] = js.native
   
@@ -62,136 +63,124 @@ object LegendProps {
   }
   
   @scala.inline
-  implicit class LegendPropsOps[Self <: LegendProps] (val x: Self) extends AnyVal {
+  implicit class LegendPropsMutableBuilder[Self <: LegendProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartHeight(value: Double): Self = StObject.set(x, "chartHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setChartHeightUndefined: Self = StObject.set(x, "chartHeight", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setChartWidth(value: Double): Self = StObject.set(x, "chartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartHeight(value: Double): Self = this.set("chartHeight", value.asInstanceOf[js.Any])
+    def setChartWidthUndefined: Self = StObject.set(x, "chartWidth", js.undefined)
     
     @scala.inline
-    def deleteChartHeight: Self = this.set("chartHeight", js.undefined)
+    def setContent(value: ReactElement | ContentRenderer[LegendProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartWidth(value: Double): Self = this.set("chartWidth", value.asInstanceOf[js.Any])
+    def setContentFunction1(value: LegendProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteChartWidth: Self = this.set("chartWidth", js.undefined)
-    
-    @scala.inline
-    def setContentFunction1(value: LegendProps => ReactNode): Self = this.set("content", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setContent(value: ReactElement | ContentRenderer[LegendProps]): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
     def setFormatter(
       value: (/* value */ js.UndefOr[
           /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
         ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => js.Any
-    ): Self = this.set("formatter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setIconSize(value: Double): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+    def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     
     @scala.inline
-    def setIconType(value: IconType): Self = this.set("iconType", value.asInstanceOf[js.Any])
+    def setIconType(value: IconType): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconType: Self = this.set("iconType", js.undefined)
+    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
     @scala.inline
-    def setLayout(value: LayoutType): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLayout(value: LayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setMargin(value: PartialMargin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMargin(value: PartialMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setOnBBoxUpdate(value: /* box */ Width => Unit): Self = this.set("onBBoxUpdate", js.Any.fromFunction1(value))
+    def setOnBBoxUpdate(value: /* box */ Width => Unit): Self = StObject.set(x, "onBBoxUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnBBoxUpdate: Self = this.set("onBBoxUpdate", js.undefined)
+    def setOnBBoxUpdateUndefined: Self = StObject.set(x, "onBBoxUpdate", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def setPayloadVarargs(value: LegendPayload*): Self = this.set("payload", js.Array(value :_*))
+    def setPayload(value: js.Array[LegendPayload]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: js.Array[LegendPayload]): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadVarargs(value: LegendPayload*): Self = StObject.set(x, "payload", js.Array(value :_*))
     
     @scala.inline
-    def setVerticalAlign(value: top | middle | bottom): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    def setVerticalAlign(value: top | middle | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setWrapperStyle(value: js.Object): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
+    def setWrapperStyle(value: js.Object): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
+    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

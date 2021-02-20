@@ -1,5 +1,6 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about the election that was queried.
   */
 @js.native
-trait SchemaElection extends js.Object {
+trait SchemaElection extends StObject {
   
   /**
     * Day of the election in YYYY-MM-DD format.
@@ -43,42 +44,30 @@ object SchemaElection {
   }
   
   @scala.inline
-  implicit class SchemaElectionOps[Self <: SchemaElection] (val x: Self) extends AnyVal {
+  implicit class SchemaElectionMutableBuilder[Self <: SchemaElection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElectionDay(value: String): Self = StObject.set(x, "electionDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElectionDayUndefined: Self = StObject.set(x, "electionDay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectionDay(value: String): Self = this.set("electionDay", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteElectionDay: Self = this.set("electionDay", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOcdDivisionId(value: String): Self = StObject.set(x, "ocdDivisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOcdDivisionId(value: String): Self = this.set("ocdDivisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOcdDivisionId: Self = this.set("ocdDivisionId", js.undefined)
+    def setOcdDivisionIdUndefined: Self = StObject.set(x, "ocdDivisionId", js.undefined)
   }
 }

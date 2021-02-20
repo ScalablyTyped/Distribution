@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsLatLongOptions extends js.Object {
+trait IsLatLongOptions extends StObject {
   
   var checkDMS: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object IsLatLongOptions {
   }
   
   @scala.inline
-  implicit class IsLatLongOptionsOps[Self <: IsLatLongOptions] (val x: Self) extends AnyVal {
+  implicit class IsLatLongOptionsMutableBuilder[Self <: IsLatLongOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckDMS(value: Boolean): Self = StObject.set(x, "checkDMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckDMS(value: Boolean): Self = this.set("checkDMS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckDMS: Self = this.set("checkDMS", js.undefined)
+    def setCheckDMSUndefined: Self = StObject.set(x, "checkDMS", js.undefined)
   }
 }

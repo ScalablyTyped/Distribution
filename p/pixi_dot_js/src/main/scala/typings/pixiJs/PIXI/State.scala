@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   /**
     * Activates blending of the computed fragment color values
@@ -89,39 +90,27 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlend(value: Boolean): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClockwiseFrontFace(value: Boolean): Self = StObject.set(x, "clockwiseFrontFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlend(value: Boolean): Self = this.set("blend", value.asInstanceOf[js.Any])
+    def setCulling(value: Boolean): Self = StObject.set(x, "culling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendMode(value: Double): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    def setDepthTest(value: Boolean): Self = StObject.set(x, "depthTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockwiseFrontFace(value: Boolean): Self = this.set("clockwiseFrontFace", value.asInstanceOf[js.Any])
+    def setOffsets(value: Boolean): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulling(value: Boolean): Self = this.set("culling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepthTest(value: Boolean): Self = this.set("depthTest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsets(value: Boolean): Self = this.set("offsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolygonOffset(value: Double): Self = this.set("polygonOffset", value.asInstanceOf[js.Any])
+    def setPolygonOffset(value: Double): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
   }
 }

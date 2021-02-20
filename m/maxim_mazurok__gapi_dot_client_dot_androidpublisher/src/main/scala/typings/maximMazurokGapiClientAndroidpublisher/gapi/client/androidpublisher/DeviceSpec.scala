@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceSpec extends js.Object {
+trait DeviceSpec extends StObject {
   
   /** Screen dpi. */
   var screenDensity: js.UndefOr[Double] = js.native
@@ -25,42 +26,30 @@ object DeviceSpec {
   }
   
   @scala.inline
-  implicit class DeviceSpecOps[Self <: DeviceSpec] (val x: Self) extends AnyVal {
+  implicit class DeviceSpecMutableBuilder[Self <: DeviceSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScreenDensity(value: Double): Self = StObject.set(x, "screenDensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScreenDensityUndefined: Self = StObject.set(x, "screenDensity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportedAbis(value: js.Array[String]): Self = StObject.set(x, "supportedAbis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenDensity(value: Double): Self = this.set("screenDensity", value.asInstanceOf[js.Any])
+    def setSupportedAbisUndefined: Self = StObject.set(x, "supportedAbis", js.undefined)
     
     @scala.inline
-    def deleteScreenDensity: Self = this.set("screenDensity", js.undefined)
+    def setSupportedAbisVarargs(value: String*): Self = StObject.set(x, "supportedAbis", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedAbisVarargs(value: String*): Self = this.set("supportedAbis", js.Array(value :_*))
+    def setSupportedLocales(value: js.Array[String]): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedAbis(value: js.Array[String]): Self = this.set("supportedAbis", value.asInstanceOf[js.Any])
+    def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
     
     @scala.inline
-    def deleteSupportedAbis: Self = this.set("supportedAbis", js.undefined)
-    
-    @scala.inline
-    def setSupportedLocalesVarargs(value: String*): Self = this.set("supportedLocales", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedLocales(value: js.Array[String]): Self = this.set("supportedLocales", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedLocales: Self = this.set("supportedLocales", js.undefined)
+    def setSupportedLocalesVarargs(value: String*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
   }
 }

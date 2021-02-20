@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an event period update resource.
   */
 @js.native
-trait SchemaEventPeriodUpdate extends js.Object {
+trait SchemaEventPeriodUpdate extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -35,39 +36,27 @@ object SchemaEventPeriodUpdate {
   }
   
   @scala.inline
-  implicit class SchemaEventPeriodUpdateOps[Self <: SchemaEventPeriodUpdate] (val x: Self) extends AnyVal {
+  implicit class SchemaEventPeriodUpdateMutableBuilder[Self <: SchemaEventPeriodUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimePeriod(value: SchemaEventPeriodRange): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUpdates(value: js.Array[SchemaEventUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePeriod(value: SchemaEventPeriodRange): Self = this.set("timePeriod", value.asInstanceOf[js.Any])
+    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
     @scala.inline
-    def deleteTimePeriod: Self = this.set("timePeriod", js.undefined)
-    
-    @scala.inline
-    def setUpdatesVarargs(value: SchemaEventUpdateRequest*): Self = this.set("updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: js.Array[SchemaEventUpdateRequest]): Self = this.set("updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdates: Self = this.set("updates", js.undefined)
+    def setUpdatesVarargs(value: SchemaEventUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

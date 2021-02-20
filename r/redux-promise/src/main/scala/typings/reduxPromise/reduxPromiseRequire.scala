@@ -1,5 +1,6 @@
 package typings.reduxPromise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("redux-promise", JSImport.Namespace)
 @js.native
-object reduxPromiseRequire extends js.Object
+object reduxPromiseRequire extends StObject

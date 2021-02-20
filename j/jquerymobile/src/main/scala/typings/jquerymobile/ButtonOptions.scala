@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonOptions extends js.Object {
+trait ButtonOptions extends StObject {
   
   var corners: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object ButtonOptions {
   }
   
   @scala.inline
-  implicit class ButtonOptionsOps[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+  implicit class ButtonOptionsMutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorners(value: Boolean): Self = this.set("corners", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteCorners: Self = this.set("corners", js.undefined)
+    def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconposUndefined: Self = StObject.set(x, "iconpos", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconshadow(value: Boolean): Self = StObject.set(x, "iconshadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconpos(value: String): Self = this.set("iconpos", value.asInstanceOf[js.Any])
+    def setIconshadowUndefined: Self = StObject.set(x, "iconshadow", js.undefined)
     
     @scala.inline
-    def deleteIconpos: Self = this.set("iconpos", js.undefined)
+    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconshadow(value: Boolean): Self = this.set("iconshadow", value.asInstanceOf[js.Any])
+    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
     @scala.inline
-    def deleteIconshadow: Self = this.set("iconshadow", js.undefined)
+    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
+    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMini(value: Boolean): Self = this.set("mini", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteMini: Self = this.set("mini", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

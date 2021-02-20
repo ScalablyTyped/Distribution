@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentConfig extends js.Object {
+trait EnvironmentConfig extends StObject {
   
   /** Output only. The URI of the Apache Airflow Web UI hosted within this environment (see [Airflow web interface](/composer/docs/how-to/accessing/airflow-web-interface)). */
   var airflowUri: js.UndefOr[String] = js.native
@@ -40,60 +41,48 @@ object EnvironmentConfig {
   }
   
   @scala.inline
-  implicit class EnvironmentConfigOps[Self <: EnvironmentConfig] (val x: Self) extends AnyVal {
+  implicit class EnvironmentConfigMutableBuilder[Self <: EnvironmentConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAirflowUri(value: String): Self = StObject.set(x, "airflowUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAirflowUriUndefined: Self = StObject.set(x, "airflowUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDagGcsPrefix(value: String): Self = StObject.set(x, "dagGcsPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAirflowUri(value: String): Self = this.set("airflowUri", value.asInstanceOf[js.Any])
+    def setDagGcsPrefixUndefined: Self = StObject.set(x, "dagGcsPrefix", js.undefined)
     
     @scala.inline
-    def deleteAirflowUri: Self = this.set("airflowUri", js.undefined)
+    def setGkeCluster(value: String): Self = StObject.set(x, "gkeCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDagGcsPrefix(value: String): Self = this.set("dagGcsPrefix", value.asInstanceOf[js.Any])
+    def setGkeClusterUndefined: Self = StObject.set(x, "gkeCluster", js.undefined)
     
     @scala.inline
-    def deleteDagGcsPrefix: Self = this.set("dagGcsPrefix", js.undefined)
+    def setNodeConfig(value: NodeConfig): Self = StObject.set(x, "nodeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGkeCluster(value: String): Self = this.set("gkeCluster", value.asInstanceOf[js.Any])
+    def setNodeConfigUndefined: Self = StObject.set(x, "nodeConfig", js.undefined)
     
     @scala.inline
-    def deleteGkeCluster: Self = this.set("gkeCluster", js.undefined)
+    def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeConfig(value: NodeConfig): Self = this.set("nodeConfig", value.asInstanceOf[js.Any])
+    def setNodeCountUndefined: Self = StObject.set(x, "nodeCount", js.undefined)
     
     @scala.inline
-    def deleteNodeConfig: Self = this.set("nodeConfig", js.undefined)
+    def setPrivateEnvironmentConfig(value: PrivateEnvironmentConfig): Self = StObject.set(x, "privateEnvironmentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeCount(value: Double): Self = this.set("nodeCount", value.asInstanceOf[js.Any])
+    def setPrivateEnvironmentConfigUndefined: Self = StObject.set(x, "privateEnvironmentConfig", js.undefined)
     
     @scala.inline
-    def deleteNodeCount: Self = this.set("nodeCount", js.undefined)
+    def setSoftwareConfig(value: SoftwareConfig): Self = StObject.set(x, "softwareConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateEnvironmentConfig(value: PrivateEnvironmentConfig): Self = this.set("privateEnvironmentConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateEnvironmentConfig: Self = this.set("privateEnvironmentConfig", js.undefined)
-    
-    @scala.inline
-    def setSoftwareConfig(value: SoftwareConfig): Self = this.set("softwareConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoftwareConfig: Self = this.set("softwareConfig", js.undefined)
+    def setSoftwareConfigUndefined: Self = StObject.set(x, "softwareConfig", js.undefined)
   }
 }

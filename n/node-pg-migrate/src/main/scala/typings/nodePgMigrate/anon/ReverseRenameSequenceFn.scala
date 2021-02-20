@@ -1,12 +1,13 @@
 package typings.nodePgMigrate.anon
 
 import typings.nodePgMigrate.sequencesTypesMod.RenameSequenceFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseRenameSequenceFn extends js.Object {
+trait ReverseRenameSequenceFn extends StObject {
   
   def reverse(
     oldSequenceName: typings.nodePgMigrate.generalTypesMod.Name,

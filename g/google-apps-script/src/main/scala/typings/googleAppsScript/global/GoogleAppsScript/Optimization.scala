@@ -1,20 +1,20 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Optimization")
-@js.native
-object Optimization extends js.Object {
+object Optimization {
   
   /**
     * Status of the solution. Before solving a problem the status will be NOT_SOLVED;
     * afterwards it will take any of the other values depending if it successfully found a solution and
     * if the solution is optimal.
     */
+  @JSGlobal("GoogleAppsScript.Optimization.Status")
   @js.native
-  object Status extends js.Object {
+  object Status extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Optimization.Status with Double] = js.native
@@ -37,8 +37,9 @@ object Optimization extends js.Object {
   /**
     * Type of variables created by the engine.
     */
+  @JSGlobal("GoogleAppsScript.Optimization.VariableType")
   @js.native
-  object VariableType extends js.Object {
+  object VariableType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Optimization.VariableType with Double] = js.native

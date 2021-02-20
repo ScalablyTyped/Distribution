@@ -1,5 +1,6 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,60 +76,48 @@ object ViewMixin {
   }
   
   @scala.inline
-  implicit class ViewMixinOps[Self <: ViewMixin] (val x: Self) extends AnyVal {
+  implicit class ViewMixinMutableBuilder[Self <: ViewMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindUIElements(value: js.Any): Self = StObject.set(x, "bindUIElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildViewEventPrefix(value: js.Any): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelegateEntityEvents(value: js.Any): Self = StObject.set(x, "delegateEntityEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindUIElements(value: js.Any): Self = this.set("bindUIElements", value.asInstanceOf[js.Any])
+    def setDelegateEvents(value: js.Any): Self = StObject.set(x, "delegateEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildViewEventPrefix(value: js.Any): Self = this.set("childViewEventPrefix", value.asInstanceOf[js.Any])
+    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegateEntityEvents(value: js.Any): Self = this.set("delegateEntityEvents", value.asInstanceOf[js.Any])
+    def setGetTriggers(value: js.Any): Self = StObject.set(x, "getTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegateEvents(value: js.Any): Self = this.set("delegateEvents", value.asInstanceOf[js.Any])
+    def setIsAttached(value: js.Any): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: js.Any): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setIsDestroyed(value: js.Any): Self = StObject.set(x, "isDestroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTriggers(value: js.Any): Self = this.set("getTriggers", value.asInstanceOf[js.Any])
+    def setIsRendered(value: js.Any): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttached(value: js.Any): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    def setSupportsDestroyLifecycle(value: js.Any): Self = StObject.set(x, "supportsDestroyLifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDestroyed(value: js.Any): Self = this.set("isDestroyed", value.asInstanceOf[js.Any])
+    def setSupportsRenderLifecycle(value: js.Any): Self = StObject.set(x, "supportsRenderLifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRendered(value: js.Any): Self = this.set("isRendered", value.asInstanceOf[js.Any])
+    def setTriggerMethod(value: js.Any): Self = StObject.set(x, "triggerMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDestroyLifecycle(value: js.Any): Self = this.set("supportsDestroyLifecycle", value.asInstanceOf[js.Any])
+    def setUnbindUIElements(value: js.Any): Self = StObject.set(x, "unbindUIElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsRenderLifecycle(value: js.Any): Self = this.set("supportsRenderLifecycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerMethod(value: js.Any): Self = this.set("triggerMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnbindUIElements(value: js.Any): Self = this.set("unbindUIElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndelegateEntityEvents(value: js.Any): Self = this.set("undelegateEntityEvents", value.asInstanceOf[js.Any])
+    def setUndelegateEntityEvents(value: js.Any): Self = StObject.set(x, "undelegateEntityEvents", value.asInstanceOf[js.Any])
   }
 }

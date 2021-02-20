@@ -1,6 +1,7 @@
 package typings.backblazeB2.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,51 +35,39 @@ object UploadPartOpts {
   }
   
   @scala.inline
-  implicit class UploadPartOptsOps[Self <: UploadPartOpts] (val x: Self) extends AnyVal {
+  implicit class UploadPartOptsMutableBuilder[Self <: UploadPartOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Buffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartNumber(value: Double): Self = this.set("partNumber", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def setUploadAuthToken(value: String): Self = this.set("uploadAuthToken", value.asInstanceOf[js.Any])
+    def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
+    def setOnUploadProgressNull: Self = StObject.set(x, "onUploadProgress", null)
     
     @scala.inline
-    def setContentLength(value: Double): Self = this.set("contentLength", value.asInstanceOf[js.Any])
+    def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
     
     @scala.inline
-    def deleteContentLength: Self = this.set("contentLength", js.undefined)
+    def setPartNumber(value: Double): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setUploadAuthToken(value: String): Self = StObject.set(x, "uploadAuthToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
-    
-    @scala.inline
-    def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = this.set("onUploadProgress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnUploadProgress: Self = this.set("onUploadProgress", js.undefined)
-    
-    @scala.inline
-    def setOnUploadProgressNull: Self = this.set("onUploadProgress", null)
+    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
   }
 }

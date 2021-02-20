@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,39 +48,27 @@ object GridBroadphase {
   }
   
   @scala.inline
-  implicit class GridBroadphaseOps[Self <: GridBroadphase] (val x: Self) extends AnyVal {
+  implicit class GridBroadphaseMutableBuilder[Self <: GridBroadphase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAabbMax(value: Vec3): Self = StObject.set(x, "aabbMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAabbMin(value: Vec3): Self = StObject.set(x, "aabbMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBins(value: js.Array[_]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAabbMax(value: Vec3): Self = this.set("aabbMax", value.asInstanceOf[js.Any])
+    def setBinsVarargs(value: js.Any*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
     @scala.inline
-    def setAabbMin(value: Vec3): Self = this.set("aabbMin", value.asInstanceOf[js.Any])
+    def setNx(value: Double): Self = StObject.set(x, "nx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinsVarargs(value: js.Any*): Self = this.set("bins", js.Array(value :_*))
+    def setNy(value: Double): Self = StObject.set(x, "ny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBins(value: js.Array[_]): Self = this.set("bins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNx(value: Double): Self = this.set("nx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNy(value: Double): Self = this.set("ny", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNz(value: Double): Self = this.set("nz", value.asInstanceOf[js.Any])
+    def setNz(value: Double): Self = StObject.set(x, "nz", value.asInstanceOf[js.Any])
   }
 }

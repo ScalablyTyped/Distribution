@@ -3,6 +3,7 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.interfacesMod.IColor
 import typings.officeUiFabricReact.ithemerulesMod.IThemeRules
 import typings.officeUiFabricReact.ithemeslotruleMod.IThemeSlotRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ThemeGenerator ()
   extends typings.officeUiFabricReact.libThemeGeneratorMod.ThemeGenerator
 /* static members */
-@JSImport("office-ui-fabric-react", "ThemeGenerator")
-@js.native
-object ThemeGenerator extends js.Object {
+object ThemeGenerator {
+  
+  @JSImport("office-ui-fabric-react", "ThemeGenerator")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Makes the rest of the code that's used for the load theme blob in the exported codepens of
@@ -31,7 +34,11 @@ object ThemeGenerator extends js.Object {
     * ```
     * The first line is loadTheme instead of createTheme for the old sharepoint theme designer.
     */
-  var _makeRemainingCode: js.Any = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator._makeRemainingCode")
+  @js.native
+  def _makeRemainingCode: js.Any = js.native
+  @scala.inline
+  def _makeRemainingCode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_makeRemainingCode")(x.asInstanceOf[js.Any])
   
   /**
     * Sets the given slot's color to the appropriate color, shading it if necessary.
@@ -39,13 +46,19 @@ object ThemeGenerator extends js.Object {
     * @param isCustomization - If true, it's a user-provided color, which should be to that raw color.
     * If false, the rule it's inheriting from changed, so updated using asShade.
     */
-  var _setSlot: js.Any = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator._setSlot")
+  @js.native
+  def _setSlot: js.Any = js.native
+  @scala.inline
+  def _setSlot_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_setSlot")(x.asInstanceOf[js.Any])
   
   /**
     * Gets code-formatted load theme blob that can be copy and pasted.
     * Only used for the old theme designer, where loadTheme usage is acceptable,
     * unlike in the new theme designer.
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.getThemeAsCode")
+  @js.native
   def getThemeAsCode(slotRules: IThemeRules): js.Any = js.native
   
   /**
@@ -53,6 +66,8 @@ object ThemeGenerator extends js.Object {
     * aka.ms/themedesigner. Shouldn't use loadTheme like the old theme designer since it's deprecated.
     * We want to use the theme object from createTheme and use the Customizations.applySettings API instead.
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.getThemeAsCodeWithCreateTheme")
+  @js.native
   def getThemeAsCodeWithCreateTheme(slotRules: IThemeRules): js.Any = js.native
   
   /**
@@ -64,6 +79,8 @@ object ThemeGenerator extends js.Object {
     *   ... }
     * ```
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.getThemeAsJson")
+  @js.native
   def getThemeAsJson(slotRules: IThemeRules): js.Any = js.native
   
   /**
@@ -74,6 +91,8 @@ object ThemeGenerator extends js.Object {
     * ...
     * ```
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.getThemeAsSass")
+  @js.native
   def getThemeAsSass(slotRules: IThemeRules): js.Any = js.native
   
   /**
@@ -86,6 +105,8 @@ object ThemeGenerator extends js.Object {
     * }
     * ```
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.getThemeForPowerShell")
+  @js.native
   def getThemeForPowerShell(slotRules: IThemeRules): js.Any = js.native
   
   /**
@@ -94,6 +115,8 @@ object ThemeGenerator extends js.Object {
     * setSlot() can be called before this, but this must be called before getThemeAs*().
     * Does not override colors of rules where isCustomized is true (i.e. doesn't override existing customizations).
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.insureSlots")
+  @js.native
   def insureSlots(slotRules: IThemeRules, isInverted: Boolean): Unit = js.native
   
   /**
@@ -106,7 +129,11 @@ object ThemeGenerator extends js.Object {
     * is false), or a custom color based on user input (isCustomized is true). This bool tells us whether to override
     * existing customized colors.
     */
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(rule: IThemeSlotRule, color: String): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: String,
@@ -114,12 +141,16 @@ object ThemeGenerator extends js.Object {
     isCustomization: js.UndefOr[scala.Nothing],
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: String,
     isInverted: js.UndefOr[scala.Nothing],
     isCustomization: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: String,
@@ -127,7 +158,11 @@ object ThemeGenerator extends js.Object {
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: String,
@@ -135,7 +170,11 @@ object ThemeGenerator extends js.Object {
     isCustomization: js.UndefOr[scala.Nothing],
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: String,
@@ -143,7 +182,11 @@ object ThemeGenerator extends js.Object {
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(rule: IThemeSlotRule, color: IColor): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
@@ -151,12 +194,16 @@ object ThemeGenerator extends js.Object {
     isCustomization: js.UndefOr[scala.Nothing],
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
     isInverted: js.UndefOr[scala.Nothing],
     isCustomization: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
@@ -164,7 +211,11 @@ object ThemeGenerator extends js.Object {
     isCustomization: Boolean,
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: IColor,
@@ -172,7 +223,11 @@ object ThemeGenerator extends js.Object {
     isCustomization: js.UndefOr[scala.Nothing],
     overwriteCustomColor: Boolean
   ): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
+  @JSImport("office-ui-fabric-react", "ThemeGenerator.setSlot")
+  @js.native
   def setSlot(
     rule: IThemeSlotRule,
     color: IColor,

@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
   */
 @js.native
-trait PlusOrientationRotation extends js.Object {
+trait PlusOrientationRotation extends StObject {
   
   /**
     * 以z方向为轴心的旋转角度
@@ -69,54 +70,42 @@ object PlusOrientationRotation {
   }
   
   @scala.inline
-  implicit class PlusOrientationRotationOps[Self <: PlusOrientationRotation] (val x: Self) extends AnyVal {
+  implicit class PlusOrientationRotationMutableBuilder[Self <: PlusOrientationRotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
+    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
     
     @scala.inline
-    def deleteBeta: Self = this.set("beta", js.undefined)
+    def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
     
     @scala.inline
-    def deleteGamma: Self = this.set("gamma", js.undefined)
+    def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadingAccuracy(value: Double): Self = this.set("headingAccuracy", value.asInstanceOf[js.Any])
+    def setMagneticHeadingUndefined: Self = StObject.set(x, "magneticHeading", js.undefined)
     
     @scala.inline
-    def deleteHeadingAccuracy: Self = this.set("headingAccuracy", js.undefined)
+    def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagneticHeading(value: Double): Self = this.set("magneticHeading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMagneticHeading: Self = this.set("magneticHeading", js.undefined)
-    
-    @scala.inline
-    def setTrueHeading(value: Double): Self = this.set("trueHeading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueHeading: Self = this.set("trueHeading", js.undefined)
+    def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
   }
 }

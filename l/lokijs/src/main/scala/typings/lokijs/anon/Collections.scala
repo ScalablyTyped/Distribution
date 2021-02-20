@@ -1,12 +1,13 @@
 package typings.lokijs.anon
 
 import typings.lokijs.Collection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collections extends js.Object {
+trait Collections extends StObject {
   
   var collections: js.Array[Collection[_]] = js.native
   
@@ -25,36 +26,24 @@ object Collections {
   }
   
   @scala.inline
-  implicit class CollectionsOps[Self <: Collections] (val x: Self) extends AnyVal {
+  implicit class CollectionsMutableBuilder[Self <: Collections] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollections(value: js.Array[Collection[_]]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionsVarargs(value: Collection[js.Any]*): Self = StObject.set(x, "collections", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseVersion(value: Double): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionsVarargs(value: Collection[js.Any]*): Self = this.set("collections", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollections(value: js.Array[Collection[_]]): Self = this.set("collections", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setDatabaseVersion(value: Double): Self = this.set("databaseVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThrottledSaves(value: Boolean): Self = this.set("throttledSaves", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
   }
 }

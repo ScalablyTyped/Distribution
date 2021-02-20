@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,24 +65,12 @@ object BootstrapClientAccordion {
   }
   
   @scala.inline
-  implicit class BootstrapClientAccordionOps[Self <: BootstrapClientAccordion] (val x: Self) extends AnyVal {
+  implicit class BootstrapClientAccordionMutableBuilder[Self <: BootstrapClientAccordion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetActiveGroup(value: BootstrapClientAccordionGroup => Unit): Self = StObject.set(x, "SetActiveGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetActiveGroup(value: BootstrapClientAccordionGroup => Unit): Self = this.set("SetActiveGroup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSelectedItem(value: BootstrapClientAccordionItem => Unit): Self = this.set("SetSelectedItem", js.Any.fromFunction1(value))
+    def setSetSelectedItem(value: BootstrapClientAccordionItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

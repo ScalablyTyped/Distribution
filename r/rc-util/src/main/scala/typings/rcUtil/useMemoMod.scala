@@ -1,13 +1,14 @@
 package typings.rcUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-util/lib/hooks/useMemo", JSImport.Namespace)
-@js.native
-object useMemoMod extends js.Object {
+object useMemoMod {
   
+  @JSImport("rc-util/lib/hooks/useMemo", JSImport.Default)
+  @js.native
   def default[Value, Condition](
     getValue: js.Function0[Value],
     condition: Condition,

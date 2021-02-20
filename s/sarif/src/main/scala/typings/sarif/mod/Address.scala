@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Address extends js.Object {
+trait Address extends StObject {
   
   /**
     * The address expressed as a byte offset from the start of the addressable region.
@@ -67,78 +68,66 @@ object Address {
   }
   
   @scala.inline
-  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteAddress(value: Double): Self = StObject.set(x, "absoluteAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsoluteAddressUndefined: Self = StObject.set(x, "absoluteAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullyQualifiedName(value: String): Self = StObject.set(x, "fullyQualifiedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteAddress(value: Double): Self = this.set("absoluteAddress", value.asInstanceOf[js.Any])
+    def setFullyQualifiedNameUndefined: Self = StObject.set(x, "fullyQualifiedName", js.undefined)
     
     @scala.inline
-    def deleteAbsoluteAddress: Self = this.set("absoluteAddress", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullyQualifiedName(value: String): Self = this.set("fullyQualifiedName", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteFullyQualifiedName: Self = this.set("fullyQualifiedName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setOffsetFromParent(value: Double): Self = StObject.set(x, "offsetFromParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOffsetFromParentUndefined: Self = StObject.set(x, "offsetFromParent", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParentIndex(value: Double): Self = StObject.set(x, "parentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetFromParent(value: Double): Self = this.set("offsetFromParent", value.asInstanceOf[js.Any])
+    def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
     
     @scala.inline
-    def deleteOffsetFromParent: Self = this.set("offsetFromParent", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentIndex(value: Double): Self = this.set("parentIndex", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteParentIndex: Self = this.set("parentIndex", js.undefined)
+    def setRelativeAddress(value: Double): Self = StObject.set(x, "relativeAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setRelativeAddress(value: Double): Self = this.set("relativeAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeAddress: Self = this.set("relativeAddress", js.undefined)
+    def setRelativeAddressUndefined: Self = StObject.set(x, "relativeAddress", js.undefined)
   }
 }

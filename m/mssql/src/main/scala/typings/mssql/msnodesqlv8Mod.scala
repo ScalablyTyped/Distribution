@@ -13,92 +13,42 @@ import typings.mssql.mod.ISqlTypeWithNoParams
 import typings.mssql.mod.ISqlTypeWithPrecisionScale
 import typings.mssql.mod.ISqlTypeWithScale
 import typings.mssql.mod.ISqlTypeWithTvpType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mssql/msnodesqlv8", JSImport.Namespace)
-@js.native
-object msnodesqlv8Mod extends js.Object {
+object msnodesqlv8Mod {
   
-  var BigInt: ISqlTypeFactoryWithNoParams = js.native
+  @JSImport("mssql/msnodesqlv8", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Binary: ISqlTypeFactoryWithNoParams = js.native
+  @JSImport("mssql/msnodesqlv8", "BigInt")
+  @js.native
+  def BigInt: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def BigInt_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigInt")(x.asInstanceOf[js.Any])
   
-  var Bit: ISqlTypeFactoryWithNoParams = js.native
+  @JSImport("mssql/msnodesqlv8", "Binary")
+  @js.native
+  def Binary: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Binary_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
   
-  var Char: ISqlTypeFactoryWithLength = js.native
+  @JSImport("mssql/msnodesqlv8", "Bit")
+  @js.native
+  def Bit: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Bit_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bit")(x.asInstanceOf[js.Any])
   
-  var DRIVERS: js.Array[String] = js.native
+  @JSImport("mssql/msnodesqlv8", "Char")
+  @js.native
+  def Char: ISqlTypeFactoryWithLength = js.native
+  @scala.inline
+  def Char_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Char")(x.asInstanceOf[js.Any])
   
-  var Date: ISqlTypeFactoryWithNoParams = js.native
-  
-  var DateTime: ISqlTypeFactoryWithNoParams = js.native
-  
-  var DateTime2: ISqlTypeFactoryWithScale = js.native
-  
-  var DateTimeOffset: ISqlTypeFactoryWithScale = js.native
-  
-  var Decimal: ISqlTypeFactoryWithPrecisionScale = js.native
-  
-  var Float: ISqlTypeFactoryWithNoParams = js.native
-  
-  var Geography: ISqlTypeFactoryWithNoParams = js.native
-  
-  var Geometry: ISqlTypeFactoryWithNoParams = js.native
-  
-  var Image: ISqlTypeFactoryWithNoParams = js.native
-  
-  var Int: ISqlTypeFactoryWithNoParams = js.native
-  
-  var MAX: Double = js.native
-  
-  var Money: ISqlTypeFactoryWithNoParams = js.native
-  
-  var NChar: ISqlTypeFactoryWithLength = js.native
-  
-  var NText: ISqlTypeFactoryWithNoParams = js.native
-  
-  var NVarChar: ISqlTypeFactoryWithLength = js.native
-  
-  var Numeric: ISqlTypeFactoryWithPrecisionScale = js.native
-  
-  var Promise: js.Any = js.native
-  
-  var Real: ISqlTypeFactoryWithNoParams = js.native
-  
-  var SmallDateTime: ISqlTypeFactoryWithNoParams = js.native
-  
-  var SmallInt: ISqlTypeFactoryWithNoParams = js.native
-  
-  var SmallMoney: ISqlTypeFactoryWithNoParams = js.native
-  
-  var TVP: ISqlTypeFactoryWithTvpType = js.native
-  
-  var Text: ISqlTypeFactoryWithNoParams = js.native
-  
-  var Time: ISqlTypeFactoryWithScale = js.native
-  
-  var TinyInt: ISqlTypeFactoryWithNoParams = js.native
-  
-  var UDT: ISqlTypeFactoryWithNoParams = js.native
-  
-  var UniqueIdentifier: ISqlTypeFactoryWithNoParams = js.native
-  
-  var VarBinary: ISqlTypeFactoryWithLength = js.native
-  
-  var VarChar: ISqlTypeFactoryWithLength = js.native
-  
-  var Variant: ISqlTypeFactoryWithNoParams = js.native
-  
-  var Xml: ISqlTypeFactoryWithNoParams = js.native
-  
-  var fix: Boolean = js.native
-  
-  var map: IMap = js.native
-  
-  var pool: IPool = js.native
-  
+  @JSImport("mssql/msnodesqlv8", "ConnectionError")
   @js.native
   class ConnectionError protected ()
     extends typings.mssql.mod.ConnectionError {
@@ -106,6 +56,7 @@ object msnodesqlv8Mod extends js.Object {
     def this(message: String, code: js.Any) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "ConnectionPool")
   @js.native
   class ConnectionPool protected ()
     extends typings.mssql.mod.ConnectionPool {
@@ -115,20 +66,148 @@ object msnodesqlv8Mod extends js.Object {
     def this(connectionString: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "DRIVERS")
   @js.native
-  object ISOLATION_LEVEL extends js.Object {
+  def DRIVERS: js.Array[String] = js.native
+  @scala.inline
+  def DRIVERS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRIVERS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Date")
+  @js.native
+  def Date: ISqlTypeFactoryWithNoParams = js.native
+  
+  @JSImport("mssql/msnodesqlv8", "DateTime")
+  @js.native
+  def DateTime: ISqlTypeFactoryWithNoParams = js.native
+  
+  @JSImport("mssql/msnodesqlv8", "DateTime2")
+  @js.native
+  def DateTime2: ISqlTypeFactoryWithScale = js.native
+  @scala.inline
+  def DateTime2_=(x: ISqlTypeFactoryWithScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime2")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "DateTimeOffset")
+  @js.native
+  def DateTimeOffset: ISqlTypeFactoryWithScale = js.native
+  @scala.inline
+  def DateTimeOffset_=(x: ISqlTypeFactoryWithScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTimeOffset")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def DateTime_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Date_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Decimal")
+  @js.native
+  def Decimal: ISqlTypeFactoryWithPrecisionScale = js.native
+  @scala.inline
+  def Decimal_=(x: ISqlTypeFactoryWithPrecisionScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Float")
+  @js.native
+  def Float: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Float_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Geography")
+  @js.native
+  def Geography: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Geography_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Geography")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Geometry")
+  @js.native
+  def Geometry: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Geometry_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Geometry")(x.asInstanceOf[js.Any])
+  
+  object ISOLATION_LEVEL {
     
-    var READ_COMMITTED: IIsolationLevel = js.native
+    @JSImport("mssql/msnodesqlv8", "ISOLATION_LEVEL")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var READ_UNCOMMITTED: IIsolationLevel = js.native
+    @JSImport("mssql/msnodesqlv8", "ISOLATION_LEVEL.READ_COMMITTED")
+    @js.native
+    def READ_COMMITTED: IIsolationLevel = js.native
+    @scala.inline
+    def READ_COMMITTED_=(x: IIsolationLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READ_COMMITTED")(x.asInstanceOf[js.Any])
     
-    var REPEATABLE_READ: IIsolationLevel = js.native
+    @JSImport("mssql/msnodesqlv8", "ISOLATION_LEVEL.READ_UNCOMMITTED")
+    @js.native
+    def READ_UNCOMMITTED: IIsolationLevel = js.native
+    @scala.inline
+    def READ_UNCOMMITTED_=(x: IIsolationLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READ_UNCOMMITTED")(x.asInstanceOf[js.Any])
     
-    var SERIALIZABLE: IIsolationLevel = js.native
+    @JSImport("mssql/msnodesqlv8", "ISOLATION_LEVEL.REPEATABLE_READ")
+    @js.native
+    def REPEATABLE_READ: IIsolationLevel = js.native
+    @scala.inline
+    def REPEATABLE_READ_=(x: IIsolationLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REPEATABLE_READ")(x.asInstanceOf[js.Any])
     
-    var SNAPSHOT: IIsolationLevel = js.native
+    @JSImport("mssql/msnodesqlv8", "ISOLATION_LEVEL.SERIALIZABLE")
+    @js.native
+    def SERIALIZABLE: IIsolationLevel = js.native
+    @scala.inline
+    def SERIALIZABLE_=(x: IIsolationLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SERIALIZABLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "ISOLATION_LEVEL.SNAPSHOT")
+    @js.native
+    def SNAPSHOT: IIsolationLevel = js.native
+    @scala.inline
+    def SNAPSHOT_=(x: IIsolationLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNAPSHOT")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mssql/msnodesqlv8", "Image")
+  @js.native
+  def Image: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Image_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Int")
+  @js.native
+  def Int: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Int_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Int")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "MAX")
+  @js.native
+  def MAX: Double = js.native
+  @scala.inline
+  def MAX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Money")
+  @js.native
+  def Money: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Money_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Money")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "NChar")
+  @js.native
+  def NChar: ISqlTypeFactoryWithLength = js.native
+  @scala.inline
+  def NChar_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NChar")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "NText")
+  @js.native
+  def NText: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def NText_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NText")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "NVarChar")
+  @js.native
+  def NVarChar: ISqlTypeFactoryWithLength = js.native
+  @scala.inline
+  def NVarChar_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NVarChar")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Numeric")
+  @js.native
+  def Numeric: ISqlTypeFactoryWithPrecisionScale = js.native
+  @scala.inline
+  def Numeric_=(x: ISqlTypeFactoryWithPrecisionScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numeric")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "PreparedStatement")
   @js.native
   class PreparedStatement ()
     extends typings.mssql.mod.PreparedStatement {
@@ -136,6 +215,7 @@ object msnodesqlv8Mod extends js.Object {
     def this(transaction: typings.mssql.mod.Transaction) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "PreparedStatementError")
   @js.native
   class PreparedStatementError protected ()
     extends typings.mssql.mod.PreparedStatementError {
@@ -143,6 +223,19 @@ object msnodesqlv8Mod extends js.Object {
     def this(message: String, code: js.Any) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "Promise")
+  @js.native
+  def Promise: js.Any = js.native
+  @scala.inline
+  def Promise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Real")
+  @js.native
+  def Real: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Real_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Real")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Request")
   @js.native
   class Request ()
     extends typings.mssql.mod.Request {
@@ -151,6 +244,7 @@ object msnodesqlv8Mod extends js.Object {
     def this(transaction: typings.mssql.mod.Transaction) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "RequestError")
   @js.native
   class RequestError protected ()
     extends typings.mssql.mod.RequestError {
@@ -158,175 +252,505 @@ object msnodesqlv8Mod extends js.Object {
     def this(message: String, code: js.Any) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "SmallDateTime")
   @js.native
-  object TYPES extends js.Object {
+  def SmallDateTime: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def SmallDateTime_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallDateTime")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "SmallInt")
+  @js.native
+  def SmallInt: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def SmallInt_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallInt")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "SmallMoney")
+  @js.native
+  def SmallMoney: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def SmallMoney_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallMoney")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "TVP")
+  @js.native
+  def TVP: ISqlTypeFactoryWithTvpType = js.native
+  @scala.inline
+  def TVP_=(x: ISqlTypeFactoryWithTvpType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TVP")(x.asInstanceOf[js.Any])
+  
+  object TYPES {
     
+    @JSImport("mssql/msnodesqlv8", "TYPES")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.BigInt")
+    @js.native
     def BigInt(): ISqlTypeWithNoParams = js.native
-    @JSName("BigInt")
-    var BigInt_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.BigInt")
+    @js.native
+    def BigInt_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def BigInt_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigInt")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Binary")
+    @js.native
     def Binary(): ISqlTypeWithNoParams = js.native
-    @JSName("Binary")
-    var Binary_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Binary")
+    @js.native
+    def Binary_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Binary_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Bit")
+    @js.native
     def Bit(): ISqlTypeWithNoParams = js.native
-    @JSName("Bit")
-    var Bit_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Bit")
+    @js.native
+    def Bit_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Bit_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bit")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Char")
+    @js.native
     def Char(): ISqlTypeWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Char")
+    @js.native
     def Char(length: Double): ISqlTypeWithLength = js.native
-    @JSName("Char")
-    var Char_Original: ISqlTypeFactoryWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Char")
+    @js.native
+    def Char_FTYPES: ISqlTypeFactoryWithLength = js.native
     
+    @scala.inline
+    def Char_FTYPES_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Char")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Date")
+    @js.native
     def Date(): ISqlTypeWithNoParams = js.native
     
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTime")
+    @js.native
     def DateTime(): ISqlTypeWithNoParams = js.native
     
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTime2")
+    @js.native
     def DateTime2(): ISqlTypeWithScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTime2")
+    @js.native
     def DateTime2(scale: Double): ISqlTypeWithScale = js.native
-    @JSName("DateTime2")
-    var DateTime2_Original: ISqlTypeFactoryWithScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTime2")
+    @js.native
+    def DateTime2_FTYPES: ISqlTypeFactoryWithScale = js.native
     
+    @scala.inline
+    def DateTime2_FTYPES_=(x: ISqlTypeFactoryWithScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime2")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTimeOffset")
+    @js.native
     def DateTimeOffset(): ISqlTypeWithScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTimeOffset")
+    @js.native
     def DateTimeOffset(scale: Double): ISqlTypeWithScale = js.native
-    @JSName("DateTimeOffset")
-    var DateTimeOffset_Original: ISqlTypeFactoryWithScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTimeOffset")
+    @js.native
+    def DateTimeOffset_FTYPES: ISqlTypeFactoryWithScale = js.native
     
-    @JSName("DateTime")
-    var DateTime_Original: ISqlTypeFactoryWithNoParams = js.native
+    @scala.inline
+    def DateTimeOffset_FTYPES_=(x: ISqlTypeFactoryWithScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTimeOffset")(x.asInstanceOf[js.Any])
     
-    @JSName("Date")
-    var Date_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.DateTime")
+    @js.native
+    def DateTime_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def DateTime_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Date")
+    @js.native
+    def Date_FTYPES: ISqlTypeFactoryWithNoParams = js.native
+    
+    @scala.inline
+    def Date_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Decimal")
+    @js.native
     def Decimal(): ISqlTypeWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Decimal")
+    @js.native
     def Decimal(precision: js.UndefOr[scala.Nothing], scale: Double): ISqlTypeWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Decimal")
+    @js.native
     def Decimal(precision: Double): ISqlTypeWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Decimal")
+    @js.native
     def Decimal(precision: Double, scale: Double): ISqlTypeWithPrecisionScale = js.native
-    @JSName("Decimal")
-    var Decimal_Original: ISqlTypeFactoryWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Decimal")
+    @js.native
+    def Decimal_FTYPES: ISqlTypeFactoryWithPrecisionScale = js.native
     
+    @scala.inline
+    def Decimal_FTYPES_=(x: ISqlTypeFactoryWithPrecisionScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Float")
+    @js.native
     def Float(): ISqlTypeWithNoParams = js.native
-    @JSName("Float")
-    var Float_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Float")
+    @js.native
+    def Float_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Float_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Geography")
+    @js.native
     def Geography(): ISqlTypeWithNoParams = js.native
-    @JSName("Geography")
-    var Geography_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Geography")
+    @js.native
+    def Geography_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Geography_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Geography")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Geometry")
+    @js.native
     def Geometry(): ISqlTypeWithNoParams = js.native
-    @JSName("Geometry")
-    var Geometry_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Geometry")
+    @js.native
+    def Geometry_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Geometry_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Geometry")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Image")
+    @js.native
     def Image(): ISqlTypeWithNoParams = js.native
-    @JSName("Image")
-    var Image_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Image")
+    @js.native
+    def Image_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Image_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Int")
+    @js.native
     def Int(): ISqlTypeWithNoParams = js.native
-    @JSName("Int")
-    var Int_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Int")
+    @js.native
+    def Int_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Int_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Int")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Money")
+    @js.native
     def Money(): ISqlTypeWithNoParams = js.native
-    @JSName("Money")
-    var Money_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Money")
+    @js.native
+    def Money_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Money_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Money")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.NChar")
+    @js.native
     def NChar(): ISqlTypeWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.NChar")
+    @js.native
     def NChar(length: Double): ISqlTypeWithLength = js.native
-    @JSName("NChar")
-    var NChar_Original: ISqlTypeFactoryWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.NChar")
+    @js.native
+    def NChar_FTYPES: ISqlTypeFactoryWithLength = js.native
     
+    @scala.inline
+    def NChar_FTYPES_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NChar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.NText")
+    @js.native
     def NText(): ISqlTypeWithNoParams = js.native
-    @JSName("NText")
-    var NText_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.NText")
+    @js.native
+    def NText_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def NText_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NText")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.NVarChar")
+    @js.native
     def NVarChar(): ISqlTypeWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.NVarChar")
+    @js.native
     def NVarChar(length: Double): ISqlTypeWithLength = js.native
-    @JSName("NVarChar")
-    var NVarChar_Original: ISqlTypeFactoryWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.NVarChar")
+    @js.native
+    def NVarChar_FTYPES: ISqlTypeFactoryWithLength = js.native
     
+    @scala.inline
+    def NVarChar_FTYPES_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NVarChar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Numeric")
+    @js.native
     def Numeric(): ISqlTypeWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Numeric")
+    @js.native
     def Numeric(precision: js.UndefOr[scala.Nothing], scale: Double): ISqlTypeWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Numeric")
+    @js.native
     def Numeric(precision: Double): ISqlTypeWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Numeric")
+    @js.native
     def Numeric(precision: Double, scale: Double): ISqlTypeWithPrecisionScale = js.native
-    @JSName("Numeric")
-    var Numeric_Original: ISqlTypeFactoryWithPrecisionScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Numeric")
+    @js.native
+    def Numeric_FTYPES: ISqlTypeFactoryWithPrecisionScale = js.native
     
+    @scala.inline
+    def Numeric_FTYPES_=(x: ISqlTypeFactoryWithPrecisionScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numeric")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Real")
+    @js.native
     def Real(): ISqlTypeWithNoParams = js.native
-    @JSName("Real")
-    var Real_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Real")
+    @js.native
+    def Real_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Real_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Real")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.SmallDateTime")
+    @js.native
     def SmallDateTime(): ISqlTypeWithNoParams = js.native
-    @JSName("SmallDateTime")
-    var SmallDateTime_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.SmallDateTime")
+    @js.native
+    def SmallDateTime_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def SmallDateTime_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallDateTime")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.SmallInt")
+    @js.native
     def SmallInt(): ISqlTypeWithNoParams = js.native
-    @JSName("SmallInt")
-    var SmallInt_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.SmallInt")
+    @js.native
+    def SmallInt_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def SmallInt_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallInt")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.SmallMoney")
+    @js.native
     def SmallMoney(): ISqlTypeWithNoParams = js.native
-    @JSName("SmallMoney")
-    var SmallMoney_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.SmallMoney")
+    @js.native
+    def SmallMoney_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def SmallMoney_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallMoney")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.TVP")
+    @js.native
     def TVP(): ISqlTypeWithTvpType = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.TVP")
+    @js.native
     def TVP(tvpType: js.Any): ISqlTypeWithTvpType = js.native
-    @JSName("TVP")
-    var TVP_Original: ISqlTypeFactoryWithTvpType = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.TVP")
+    @js.native
+    def TVP_FTYPES: ISqlTypeFactoryWithTvpType = js.native
     
+    @scala.inline
+    def TVP_FTYPES_=(x: ISqlTypeFactoryWithTvpType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TVP")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Text")
+    @js.native
     def Text(): ISqlTypeWithNoParams = js.native
-    @JSName("Text")
-    var Text_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Text")
+    @js.native
+    def Text_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Text_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Time")
+    @js.native
     def Time(): ISqlTypeWithScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Time")
+    @js.native
     def Time(scale: Double): ISqlTypeWithScale = js.native
-    @JSName("Time")
-    var Time_Original: ISqlTypeFactoryWithScale = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Time")
+    @js.native
+    def Time_FTYPES: ISqlTypeFactoryWithScale = js.native
     
+    @scala.inline
+    def Time_FTYPES_=(x: ISqlTypeFactoryWithScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.TinyInt")
+    @js.native
     def TinyInt(): ISqlTypeWithNoParams = js.native
-    @JSName("TinyInt")
-    var TinyInt_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.TinyInt")
+    @js.native
+    def TinyInt_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def TinyInt_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TinyInt")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.UDT")
+    @js.native
     def UDT(): ISqlTypeWithNoParams = js.native
-    @JSName("UDT")
-    var UDT_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.UDT")
+    @js.native
+    def UDT_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def UDT_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UDT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.UniqueIdentifier")
+    @js.native
     def UniqueIdentifier(): ISqlTypeWithNoParams = js.native
-    @JSName("UniqueIdentifier")
-    var UniqueIdentifier_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.UniqueIdentifier")
+    @js.native
+    def UniqueIdentifier_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def UniqueIdentifier_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniqueIdentifier")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.VarBinary")
+    @js.native
     def VarBinary(): ISqlTypeWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.VarBinary")
+    @js.native
     def VarBinary(length: Double): ISqlTypeWithLength = js.native
-    @JSName("VarBinary")
-    var VarBinary_Original: ISqlTypeFactoryWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.VarBinary")
+    @js.native
+    def VarBinary_FTYPES: ISqlTypeFactoryWithLength = js.native
     
+    @scala.inline
+    def VarBinary_FTYPES_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VarBinary")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.VarChar")
+    @js.native
     def VarChar(): ISqlTypeWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.VarChar")
+    @js.native
     def VarChar(length: Double): ISqlTypeWithLength = js.native
-    @JSName("VarChar")
-    var VarChar_Original: ISqlTypeFactoryWithLength = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.VarChar")
+    @js.native
+    def VarChar_FTYPES: ISqlTypeFactoryWithLength = js.native
     
+    @scala.inline
+    def VarChar_FTYPES_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VarChar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Variant")
+    @js.native
     def Variant(): ISqlTypeWithNoParams = js.native
-    @JSName("Variant")
-    var Variant_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Variant")
+    @js.native
+    def Variant_FTYPES: ISqlTypeFactoryWithNoParams = js.native
     
+    @scala.inline
+    def Variant_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Variant")(x.asInstanceOf[js.Any])
+    
+    @JSImport("mssql/msnodesqlv8", "TYPES.Xml")
+    @js.native
     def Xml(): ISqlTypeWithNoParams = js.native
-    @JSName("Xml")
-    var Xml_Original: ISqlTypeFactoryWithNoParams = js.native
+    @JSImport("mssql/msnodesqlv8", "TYPES.Xml")
+    @js.native
+    def Xml_FTYPES: ISqlTypeFactoryWithNoParams = js.native
+    
+    @scala.inline
+    def Xml_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Xml")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mssql/msnodesqlv8", "Table")
   @js.native
   class Table ()
     extends typings.mssql.mod.Table {
     def this(tableName: String) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "Text")
+  @js.native
+  def Text: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Text_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Time")
+  @js.native
+  def Time: ISqlTypeFactoryWithScale = js.native
+  @scala.inline
+  def Time_=(x: ISqlTypeFactoryWithScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "TinyInt")
+  @js.native
+  def TinyInt: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def TinyInt_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TinyInt")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Transaction")
   @js.native
   class Transaction ()
     extends typings.mssql.mod.Transaction {
     def this(connection: typings.mssql.mod.ConnectionPool) = this()
   }
   
+  @JSImport("mssql/msnodesqlv8", "TransactionError")
   @js.native
   class TransactionError protected ()
     extends typings.mssql.mod.TransactionError {
     def this(message: String) = this()
     def this(message: String, code: js.Any) = this()
   }
+  
+  @JSImport("mssql/msnodesqlv8", "UDT")
+  @js.native
+  def UDT: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def UDT_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UDT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "UniqueIdentifier")
+  @js.native
+  def UniqueIdentifier: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def UniqueIdentifier_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniqueIdentifier")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "VarBinary")
+  @js.native
+  def VarBinary: ISqlTypeFactoryWithLength = js.native
+  @scala.inline
+  def VarBinary_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VarBinary")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "VarChar")
+  @js.native
+  def VarChar: ISqlTypeFactoryWithLength = js.native
+  @scala.inline
+  def VarChar_=(x: ISqlTypeFactoryWithLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VarChar")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Variant")
+  @js.native
+  def Variant: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Variant_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Variant")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "Xml")
+  @js.native
+  def Xml: ISqlTypeFactoryWithNoParams = js.native
+  @scala.inline
+  def Xml_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Xml")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "fix")
+  @js.native
+  def fix: Boolean = js.native
+  @scala.inline
+  def fix_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fix")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "map")
+  @js.native
+  def map: IMap = js.native
+  @scala.inline
+  def map_=(x: IMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("map")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mssql/msnodesqlv8", "pool")
+  @js.native
+  def pool: IPool = js.native
+  @scala.inline
+  def pool_=(x: IPool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pool")(x.asInstanceOf[js.Any])
 }

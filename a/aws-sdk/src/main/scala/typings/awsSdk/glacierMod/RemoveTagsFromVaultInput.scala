@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveTagsFromVaultInput extends js.Object {
+trait RemoveTagsFromVaultInput extends StObject {
   
   /**
     * A list of tag keys. Each corresponding tag is removed from the vault.
@@ -31,33 +32,21 @@ object RemoveTagsFromVaultInput {
   }
   
   @scala.inline
-  implicit class RemoveTagsFromVaultInputOps[Self <: RemoveTagsFromVaultInput] (val x: Self) extends AnyVal {
+  implicit class RemoveTagsFromVaultInputMutableBuilder[Self <: RemoveTagsFromVaultInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
     
     @scala.inline
-    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagKeysVarargs(value: String*): Self = this.set("TagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = this.set("TagKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagKeys: Self = this.set("TagKeys", js.undefined)
+    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

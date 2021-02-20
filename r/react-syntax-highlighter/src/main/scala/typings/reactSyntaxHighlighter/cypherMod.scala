@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/cypher", JSImport.Namespace)
-@js.native
-object cypherMod extends js.Object {
+object cypherMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/cypher", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

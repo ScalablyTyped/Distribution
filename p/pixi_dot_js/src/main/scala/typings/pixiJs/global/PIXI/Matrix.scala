@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +30,11 @@ class Matrix protected ()
     ty: js.UndefOr[Double]
   ) = this()
 }
-/* static members */
-@JSGlobal("PIXI.Matrix")
-@js.native
-object Matrix extends js.Object {
+object Matrix {
+  
+  @JSGlobal("PIXI.Matrix")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A default (identity) matrix
@@ -41,7 +43,12 @@ object Matrix extends js.Object {
     * @const
     * @member {PIXI.Matrix}
     */
-  var IDENTITY: typings.pixiJs.PIXI.Matrix = js.native
+  /* static member */
+  @JSGlobal("PIXI.Matrix.IDENTITY")
+  @js.native
+  def IDENTITY: typings.pixiJs.PIXI.Matrix = js.native
+  @scala.inline
+  def IDENTITY_=(x: typings.pixiJs.PIXI.Matrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
   
   /**
     * A temp matrix
@@ -50,5 +57,10 @@ object Matrix extends js.Object {
     * @const
     * @member {PIXI.Matrix}
     */
-  var TEMP_MATRIX: typings.pixiJs.PIXI.Matrix = js.native
+  /* static member */
+  @JSGlobal("PIXI.Matrix.TEMP_MATRIX")
+  @js.native
+  def TEMP_MATRIX: typings.pixiJs.PIXI.Matrix = js.native
+  @scala.inline
+  def TEMP_MATRIX_=(x: typings.pixiJs.PIXI.Matrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMP_MATRIX")(x.asInstanceOf[js.Any])
 }

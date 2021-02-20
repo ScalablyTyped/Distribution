@@ -1,21 +1,26 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileFlyoutUpdater extends js.Object {
+trait TileFlyoutUpdater extends StObject {
   
   var clear: js.Any = js.native
   
-   /* unmapped type */ var setting: js.Any = js.native
+  /* unmapped type */
+  var setting: js.Any = js.native
   
-   /* unmapped type */ var startPeriodicUpdate: js.Any = js.native
+  /* unmapped type */
+  var startPeriodicUpdate: js.Any = js.native
   
-   /* unmapped type */ var stopPeriodicUpdate: js.Any = js.native
+  /* unmapped type */
+  var stopPeriodicUpdate: js.Any = js.native
   
-   /* unmapped type */ var update: js.Any = js.native
+  /* unmapped type */
+  var update: js.Any = js.native
 }
 object TileFlyoutUpdater {
   
@@ -32,33 +37,21 @@ object TileFlyoutUpdater {
   }
   
   @scala.inline
-  implicit class TileFlyoutUpdaterOps[Self <: TileFlyoutUpdater] (val x: Self) extends AnyVal {
+  implicit class TileFlyoutUpdaterMutableBuilder[Self <: TileFlyoutUpdater] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: js.Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartPeriodicUpdate(value: js.Any): Self = StObject.set(x, "startPeriodicUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: js.Any): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setStopPeriodicUpdate(value: js.Any): Self = StObject.set(x, "stopPeriodicUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetting(value: js.Any): Self = this.set("setting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPeriodicUpdate(value: js.Any): Self = this.set("startPeriodicUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopPeriodicUpdate(value: js.Any): Self = this.set("stopPeriodicUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: js.Any): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

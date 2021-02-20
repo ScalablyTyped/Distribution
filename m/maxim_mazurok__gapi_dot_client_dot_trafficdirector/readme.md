@@ -3,6 +3,24 @@
 
 Typings are for version 2.0.20201105
 
+## Library description:
+TypeScript typings for Traffic Director API v2
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.trafficdirector |
+| Keywords           | - |
+| # releases         | 9 |
+| # dependents       | 1 |
+| # downloads        | 923 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.trafficdirector)
+    
 
 
 ## Note

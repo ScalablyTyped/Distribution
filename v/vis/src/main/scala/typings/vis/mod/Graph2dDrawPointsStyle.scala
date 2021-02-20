@@ -1,5 +1,6 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vis.visStrings.square
   - typings.vis.visStrings.circle
 */
-trait Graph2dDrawPointsStyle extends js.Object
+trait Graph2dDrawPointsStyle extends StObject
 object Graph2dDrawPointsStyle {
   
   @scala.inline

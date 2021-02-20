@@ -5,6 +5,7 @@ import typings.reactNativeJoi.reactNativeJoiStrings.NFD
 import typings.reactNativeJoi.reactNativeJoiStrings.NFKC
 import typings.reactNativeJoi.reactNativeJoiStrings.NFKD
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

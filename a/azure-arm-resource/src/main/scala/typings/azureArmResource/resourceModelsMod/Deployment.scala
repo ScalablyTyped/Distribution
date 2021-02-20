@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deployment extends js.Object {
+trait Deployment extends StObject {
   
   /**
     * The location to store the deployment data.
@@ -26,27 +27,15 @@ object Deployment {
   }
   
   @scala.inline
-  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProperties(value: DeploymentProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setProperties(value: DeploymentProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

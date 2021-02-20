@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The template used for creating replicas in the pool.
   */
 @js.native
-trait SchemaTemplate extends js.Object {
+trait SchemaTemplate extends StObject {
   
   /**
     * An action to run during initialization of your replicas. An action is run
@@ -47,45 +48,33 @@ object SchemaTemplate {
   }
   
   @scala.inline
-  implicit class SchemaTemplateOps[Self <: SchemaTemplate] (val x: Self) extends AnyVal {
+  implicit class SchemaTemplateMutableBuilder[Self <: SchemaTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: SchemaAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: SchemaAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
     
     @scala.inline
-    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = this.set("healthChecks", js.Array(value :_*))
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    def setVmParams(value: SchemaVmParams): Self = StObject.set(x, "vmParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVmParams(value: SchemaVmParams): Self = this.set("vmParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmParams: Self = this.set("vmParams", js.undefined)
+    def setVmParamsUndefined: Self = StObject.set(x, "vmParams", js.undefined)
   }
 }

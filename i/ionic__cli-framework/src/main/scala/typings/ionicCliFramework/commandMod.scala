@@ -13,20 +13,16 @@ import typings.ionicCliFramework.definitionsMod.INamespace
 import typings.ionicCliFramework.definitionsMod.NamespaceMapGetter
 import typings.ionicUtilsObject.mod.AliasedMap
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/cli-framework/lib/command", JSImport.Namespace)
-@js.native
-object commandMod extends js.Object {
+object commandMod {
   
-  val CommandMapDefault: js.Symbol = js.native
-  
-  def generateCommandPath[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: C): js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]] = js.native
-  
+  @JSImport("@ionic/cli-framework/lib/command", "BaseCommand")
   @js.native
-  abstract class BaseCommand[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends js.Object {
+  abstract class BaseCommand[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends StObject {
     def this(namespace: N) = this()
     
     def getMetadata(): js.Promise[M] = js.native
@@ -43,9 +39,11 @@ object commandMod extends js.Object {
     def validate(argv: CommandLineInputs): js.Promise[Unit] = js.native
   }
   
+  @JSImport("@ionic/cli-framework/lib/command", "BaseCommandMap")
   @js.native
   class BaseCommandMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, CommandMapGetter[C, N, M, I, O]]
   
+  @JSImport("@ionic/cli-framework/lib/command", "BaseNamespace")
   @js.native
   abstract class BaseNamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends INamespace[C, N, M, I, O] {
     def this(parent: N) = this()
@@ -54,11 +52,25 @@ object commandMod extends js.Object {
     def root_MBaseNamespace: N = js.native
   }
   
+  @JSImport("@ionic/cli-framework/lib/command", "BaseNamespaceMap")
   @js.native
   class BaseNamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, NamespaceMapGetter[C, N, M, I, O]]
   
+  @JSImport("@ionic/cli-framework/lib/command", "Command")
   @js.native
-  abstract class Command () extends BaseCommand[
+  abstract class Command protected () extends BaseCommand[
+          Command, 
+          Namespace, 
+          CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
+          CommandMetadataInput, 
+          CommandMetadataOption
+        ] {
+    def this(namespace: Namespace) = this()
+  }
+  
+  @JSImport("@ionic/cli-framework/lib/command", "CommandMap")
+  @js.native
+  class CommandMap () extends BaseCommandMap[
           Command, 
           Namespace, 
           CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
@@ -66,18 +78,11 @@ object commandMod extends js.Object {
           CommandMetadataOption
         ]
   
+  @JSImport("@ionic/cli-framework/lib/command", "CommandMapDefault")
   @js.native
-  class CommandMap () extends AliasedMap[
-          String, 
-          CommandMapGetter[
-            Command, 
-            Namespace, 
-            CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
-            CommandMetadataInput, 
-            CommandMetadataOption
-          ]
-        ]
+  val CommandMapDefault: js.Symbol = js.native
   
+  @JSImport("@ionic/cli-framework/lib/command", "Namespace")
   @js.native
   abstract class Namespace () extends BaseNamespace[
           Command, 
@@ -85,17 +90,21 @@ object commandMod extends js.Object {
           CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
           CommandMetadataInput, 
           CommandMetadataOption
+        ] {
+    def this(parent: Namespace) = this()
+  }
+  
+  @JSImport("@ionic/cli-framework/lib/command", "NamespaceMap")
+  @js.native
+  class NamespaceMap () extends BaseNamespaceMap[
+          Command, 
+          Namespace, 
+          CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
+          CommandMetadataInput, 
+          CommandMetadataOption
         ]
   
+  @JSImport("@ionic/cli-framework/lib/command", "generateCommandPath")
   @js.native
-  class NamespaceMap () extends AliasedMap[
-          String, 
-          NamespaceMapGetter[
-            Command, 
-            Namespace, 
-            CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
-            CommandMetadataInput, 
-            CommandMetadataOption
-          ]
-        ]
+  def generateCommandPath[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: C): js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]] = js.native
 }

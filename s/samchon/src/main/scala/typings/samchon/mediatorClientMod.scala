@@ -6,18 +6,18 @@ import typings.samchon.iserverconnectorMod.IServerConnector
 import typings.samchon.mediatorSystemMod.MediatorSystem
 import typings.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediator
 import typings.samchon.parallelSystemMod.ParallelSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/parallel/derived/MediatorClient", JSImport.Namespace)
-@js.native
-object mediatorClientMod extends js.Object {
+object mediatorClientMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.slaveSystemMod.SlaveSystem because Already inherited
-  - typings.samchon.slaveClientMod.ISlaveClient because var conflicts: _Complete_process, communicator_. Inlined connect */ @js.native
+  - typings.samchon.slaveClientMod.ISlaveClient because var conflicts: _Complete_process, communicator_. Inlined connect */ @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorClient")
+  @js.native
   class MediatorClient protected () extends MediatorSystem {
     /**
       * Initializer Constructor.
@@ -68,9 +68,45 @@ object mediatorClientMod extends js.Object {
     var port: js.Any = js.native
   }
   
+  @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorSharedWorkerClient")
   @js.native
-  class MediatorSharedWorkerClient () extends MediatorClient
+  class MediatorSharedWorkerClient protected () extends MediatorClient {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], ip: String, port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(systemArray: ParallelSystemArrayMediator[ParallelSystem], ip: String, port: Double) = this()
+  }
   
+  @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorWebClient")
   @js.native
-  class MediatorWebClient () extends MediatorClient
+  class MediatorWebClient protected () extends MediatorClient {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], ip: String, port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(systemArray: ParallelSystemArrayMediator[ParallelSystem], ip: String, port: Double) = this()
+  }
 }

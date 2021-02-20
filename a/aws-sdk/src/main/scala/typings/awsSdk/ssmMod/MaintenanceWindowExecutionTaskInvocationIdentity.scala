@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowExecutionTaskInvocationIdentity extends js.Object {
+trait MaintenanceWindowExecutionTaskInvocationIdentity extends StObject {
   
   /**
     * The time the invocation finished.
@@ -76,90 +77,78 @@ object MaintenanceWindowExecutionTaskInvocationIdentity {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowExecutionTaskInvocationIdentityOps[Self <: MaintenanceWindowExecutionTaskInvocationIdentity] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowExecutionTaskInvocationIdentityMutableBuilder[Self <: MaintenanceWindowExecutionTaskInvocationIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionId(value: MaintenanceWindowExecutionTaskExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: DateTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setInvocationId(value: MaintenanceWindowExecutionTaskInvocationId): Self = StObject.set(x, "InvocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: MaintenanceWindowExecutionTaskExecutionId): Self = this.set("ExecutionId", value.asInstanceOf[js.Any])
+    def setInvocationIdUndefined: Self = StObject.set(x, "InvocationId", js.undefined)
     
     @scala.inline
-    def deleteExecutionId: Self = this.set("ExecutionId", js.undefined)
+    def setOwnerInformation(value: OwnerInformation): Self = StObject.set(x, "OwnerInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvocationId(value: MaintenanceWindowExecutionTaskInvocationId): Self = this.set("InvocationId", value.asInstanceOf[js.Any])
+    def setOwnerInformationUndefined: Self = StObject.set(x, "OwnerInformation", js.undefined)
     
     @scala.inline
-    def deleteInvocationId: Self = this.set("InvocationId", js.undefined)
+    def setParameters(value: MaintenanceWindowExecutionTaskInvocationParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerInformation(value: OwnerInformation): Self = this.set("OwnerInformation", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteOwnerInformation: Self = this.set("OwnerInformation", js.undefined)
+    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: MaintenanceWindowExecutionTaskInvocationParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setStatus(value: MaintenanceWindowExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStatusDetails(value: MaintenanceWindowExecutionStatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
     @scala.inline
-    def setStatus(value: MaintenanceWindowExecutionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTaskExecutionId(value: MaintenanceWindowExecutionTaskId): Self = StObject.set(x, "TaskExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetails(value: MaintenanceWindowExecutionStatusDetails): Self = this.set("StatusDetails", value.asInstanceOf[js.Any])
+    def setTaskExecutionIdUndefined: Self = StObject.set(x, "TaskExecutionId", js.undefined)
     
     @scala.inline
-    def deleteStatusDetails: Self = this.set("StatusDetails", js.undefined)
+    def setTaskType(value: MaintenanceWindowTaskType): Self = StObject.set(x, "TaskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskExecutionId(value: MaintenanceWindowExecutionTaskId): Self = this.set("TaskExecutionId", value.asInstanceOf[js.Any])
+    def setTaskTypeUndefined: Self = StObject.set(x, "TaskType", js.undefined)
     
     @scala.inline
-    def deleteTaskExecutionId: Self = this.set("TaskExecutionId", js.undefined)
+    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskType(value: MaintenanceWindowTaskType): Self = this.set("TaskType", value.asInstanceOf[js.Any])
+    def setWindowExecutionIdUndefined: Self = StObject.set(x, "WindowExecutionId", js.undefined)
     
     @scala.inline
-    def deleteTaskType: Self = this.set("TaskType", js.undefined)
+    def setWindowTargetId(value: MaintenanceWindowTaskTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = this.set("WindowExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowExecutionId: Self = this.set("WindowExecutionId", js.undefined)
-    
-    @scala.inline
-    def setWindowTargetId(value: MaintenanceWindowTaskTargetId): Self = this.set("WindowTargetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowTargetId: Self = this.set("WindowTargetId", js.undefined)
+    def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
   }
 }

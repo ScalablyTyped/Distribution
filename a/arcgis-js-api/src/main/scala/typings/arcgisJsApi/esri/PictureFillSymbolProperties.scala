@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,60 +66,48 @@ object PictureFillSymbolProperties {
   }
   
   @scala.inline
-  implicit class PictureFillSymbolPropertiesOps[Self <: PictureFillSymbolProperties] (val x: Self) extends AnyVal {
+  implicit class PictureFillSymbolPropertiesMutableBuilder[Self <: PictureFillSymbolProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setXscale(value: Double): Self = StObject.set(x, "xscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXoffset(value: Double | String): Self = this.set("xoffset", value.asInstanceOf[js.Any])
+    def setXscaleUndefined: Self = StObject.set(x, "xscale", js.undefined)
     
     @scala.inline
-    def deleteXoffset: Self = this.set("xoffset", js.undefined)
+    def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXscale(value: Double): Self = this.set("xscale", value.asInstanceOf[js.Any])
+    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
     
     @scala.inline
-    def deleteXscale: Self = this.set("xscale", js.undefined)
+    def setYscale(value: Double): Self = StObject.set(x, "yscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYoffset(value: Double | String): Self = this.set("yoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoffset: Self = this.set("yoffset", js.undefined)
-    
-    @scala.inline
-    def setYscale(value: Double): Self = this.set("yscale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYscale: Self = this.set("yscale", js.undefined)
+    def setYscaleUndefined: Self = StObject.set(x, "yscale", js.undefined)
   }
 }

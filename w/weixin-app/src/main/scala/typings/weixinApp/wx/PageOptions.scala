@@ -1,6 +1,7 @@
 package typings.weixinApp.wx
 
 import typings.weixinApp.anon.ScrollTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Page 实现的接口对象
   */
 @js.native
-trait PageOptions extends js.Object {
+trait PageOptions extends StObject {
   
   /**
     * 页面的初始数据
@@ -89,84 +90,72 @@ object PageOptions {
   }
   
   @scala.inline
-  implicit class PageOptionsOps[Self <: PageOptions] (val x: Self) extends AnyVal {
+  implicit class PageOptionsMutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setOnLoad(value: /* options */ js.Object => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnPageScroll(value: /* option */ ScrollTop => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLoad(value: /* options */ js.Object => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setOnPullDownRefresh(value: () => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPageScroll(value: /* option */ ScrollTop => Unit): Self = this.set("onPageScroll", js.Any.fromFunction1(value))
+    def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
     
     @scala.inline
-    def deleteOnPageScroll: Self = this.set("onPageScroll", js.undefined)
+    def setOnReachBottom(value: () => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPullDownRefresh(value: () => Unit): Self = this.set("onPullDownRefresh", js.Any.fromFunction0(value))
+    def setOnReachBottomUndefined: Self = StObject.set(x, "onReachBottom", js.undefined)
     
     @scala.inline
-    def deleteOnPullDownRefresh: Self = this.set("onPullDownRefresh", js.undefined)
+    def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnReachBottom(value: () => Unit): Self = this.set("onReachBottom", js.Any.fromFunction0(value))
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     @scala.inline
-    def deleteOnReachBottom: Self = this.set("onReachBottom", js.undefined)
+    def setOnShareAppMessage(value: /* options */ js.UndefOr[PageShareAppMessageOptions] => ShareAppMessage): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReady(value: () => Unit): Self = this.set("onReady", js.Any.fromFunction0(value))
+    def setOnShareAppMessageUndefined: Self = StObject.set(x, "onShareAppMessage", js.undefined)
     
     @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShareAppMessage(value: /* options */ js.UndefOr[PageShareAppMessageOptions] => ShareAppMessage): Self = this.set("onShareAppMessage", js.Any.fromFunction1(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnShareAppMessage: Self = this.set("onShareAppMessage", js.undefined)
+    def setOnTabItemTap(value: /* item */ js.Any => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTabItemTap(value: /* item */ js.Any => Unit): Self = this.set("onTabItemTap", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnTabItemTap: Self = this.set("onTabItemTap", js.undefined)
-    
-    @scala.inline
-    def setOnUnload(value: () => Unit): Self = this.set("onUnload", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnUnload: Self = this.set("onUnload", js.undefined)
+    def setOnUnloadUndefined: Self = StObject.set(x, "onUnload", js.undefined)
   }
 }

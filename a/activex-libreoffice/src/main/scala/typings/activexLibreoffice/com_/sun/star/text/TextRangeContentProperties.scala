@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.com_.sun.star.table.XCell
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.3
   */
 @js.native
-trait TextRangeContentProperties extends js.Object {
+trait TextRangeContentProperties extends StObject {
   
   /** may contain a table cell. */
   var Cell: XCell = js.native
@@ -66,48 +67,36 @@ object TextRangeContentProperties {
   }
   
   @scala.inline
-  implicit class TextRangeContentPropertiesOps[Self <: TextRangeContentProperties] (val x: Self) extends AnyVal {
+  implicit class TextRangeContentPropertiesMutableBuilder[Self <: TextRangeContentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: XCell): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentIndex(value: XDocumentIndex): Self = StObject.set(x, "DocumentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentIndexMark(value: XDocumentIndexMark): Self = StObject.set(x, "DocumentIndexMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: XCell): Self = this.set("Cell", value.asInstanceOf[js.Any])
+    def setEndnote(value: XFootnote): Self = StObject.set(x, "Endnote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentIndex(value: XDocumentIndex): Self = this.set("DocumentIndex", value.asInstanceOf[js.Any])
+    def setFootnote(value: XFootnote): Self = StObject.set(x, "Footnote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentIndexMark(value: XDocumentIndexMark): Self = this.set("DocumentIndexMark", value.asInstanceOf[js.Any])
+    def setNestedTextContent(value: XTextContent): Self = StObject.set(x, "NestedTextContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndnote(value: XFootnote): Self = this.set("Endnote", value.asInstanceOf[js.Any])
+    def setReferenceMark(value: XTextContent): Self = StObject.set(x, "ReferenceMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnote(value: XFootnote): Self = this.set("Footnote", value.asInstanceOf[js.Any])
+    def setTextFrame(value: XTextFrame): Self = StObject.set(x, "TextFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedTextContent(value: XTextContent): Self = this.set("NestedTextContent", value.asInstanceOf[js.Any])
+    def setTextSection(value: XTextSection): Self = StObject.set(x, "TextSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceMark(value: XTextContent): Self = this.set("ReferenceMark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextFrame(value: XTextFrame): Self = this.set("TextFrame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextSection(value: XTextSection): Self = this.set("TextSection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTable(value: XTextTable): Self = this.set("TextTable", value.asInstanceOf[js.Any])
+    def setTextTable(value: XTextTable): Self = StObject.set(x, "TextTable", value.asInstanceOf[js.Any])
   }
 }

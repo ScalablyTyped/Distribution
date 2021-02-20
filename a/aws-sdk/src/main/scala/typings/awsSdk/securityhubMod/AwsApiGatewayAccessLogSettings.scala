@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsApiGatewayAccessLogSettings extends js.Object {
+trait AwsApiGatewayAccessLogSettings extends StObject {
   
   /**
     * The ARN of the CloudWatch Logs log group that receives the access logs.
@@ -26,30 +27,18 @@ object AwsApiGatewayAccessLogSettings {
   }
   
   @scala.inline
-  implicit class AwsApiGatewayAccessLogSettingsOps[Self <: AwsApiGatewayAccessLogSettings] (val x: Self) extends AnyVal {
+  implicit class AwsApiGatewayAccessLogSettingsMutableBuilder[Self <: AwsApiGatewayAccessLogSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationArn(value: NonEmptyString): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationArnUndefined: Self = StObject.set(x, "DestinationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: NonEmptyString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationArn(value: NonEmptyString): Self = this.set("DestinationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationArn: Self = this.set("DestinationArn", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: NonEmptyString): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
   }
 }

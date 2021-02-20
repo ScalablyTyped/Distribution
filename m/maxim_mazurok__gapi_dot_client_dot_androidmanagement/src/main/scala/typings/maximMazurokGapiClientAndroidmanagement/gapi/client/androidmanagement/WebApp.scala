@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebApp extends js.Object {
+trait WebApp extends StObject {
   
   /** The display mode of the web app. */
   var displayMode: js.UndefOr[String] = js.native
@@ -37,57 +38,45 @@ object WebApp {
   }
   
   @scala.inline
-  implicit class WebAppOps[Self <: WebApp] (val x: Self) extends AnyVal {
+  implicit class WebAppMutableBuilder[Self <: WebApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcons(value: js.Array[WebAppIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: String): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setIconsVarargs(value: WebAppIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
     @scala.inline
-    def setIconsVarargs(value: WebAppIcon*): Self = this.set("icons", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: js.Array[WebAppIcon]): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setStartUrl(value: String): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStartUrlUndefined: Self = StObject.set(x, "startUrl", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartUrl(value: String): Self = this.set("startUrl", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStartUrl: Self = this.set("startUrl", js.undefined)
+    def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVersionCode(value: String): Self = this.set("versionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
   }
 }

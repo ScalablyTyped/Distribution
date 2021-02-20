@@ -2,13 +2,18 @@ package typings.cucumberMessages
 
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cucumber-messages/dist/src/NdjsonToMessageStream", JSImport.Namespace)
-@js.native
-object ndjsonToMessageStreamMod extends js.Object {
+object ndjsonToMessageStreamMod {
+  
+  @JSImport("cucumber-messages/dist/src/NdjsonToMessageStream", JSImport.Default)
+  @js.native
+  class default[T] protected () extends NdjsonToMessageStream[T] {
+    def this(fromObject: js.Function1[/* object */ js.Any, T]) = this()
+  }
   
   @js.native
   trait NdjsonToMessageStream[T] extends Transform {
@@ -18,10 +23,5 @@ object ndjsonToMessageStreamMod extends js.Object {
     var buffer: js.Any = js.native
     
     val fromObject: js.Any = js.native
-  }
-  
-  @js.native
-  class default[T] protected () extends NdjsonToMessageStream[T] {
-    def this(fromObject: js.Function1[/* object */ js.Any, T]) = this()
   }
 }

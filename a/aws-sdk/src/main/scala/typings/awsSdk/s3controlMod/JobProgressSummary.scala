@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobProgressSummary extends js.Object {
+trait JobProgressSummary extends StObject {
   
   /**
     * 
@@ -31,36 +32,24 @@ object JobProgressSummary {
   }
   
   @scala.inline
-  implicit class JobProgressSummaryOps[Self <: JobProgressSummary] (val x: Self) extends AnyVal {
+  implicit class JobProgressSummaryMutableBuilder[Self <: JobProgressSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumberOfTasksFailed(value: JobNumberOfTasksFailed): Self = StObject.set(x, "NumberOfTasksFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberOfTasksFailedUndefined: Self = StObject.set(x, "NumberOfTasksFailed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfTasksSucceeded(value: JobNumberOfTasksSucceeded): Self = StObject.set(x, "NumberOfTasksSucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTasksFailed(value: JobNumberOfTasksFailed): Self = this.set("NumberOfTasksFailed", value.asInstanceOf[js.Any])
+    def setNumberOfTasksSucceededUndefined: Self = StObject.set(x, "NumberOfTasksSucceeded", js.undefined)
     
     @scala.inline
-    def deleteNumberOfTasksFailed: Self = this.set("NumberOfTasksFailed", js.undefined)
+    def setTotalNumberOfTasks(value: JobTotalNumberOfTasks): Self = StObject.set(x, "TotalNumberOfTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTasksSucceeded(value: JobNumberOfTasksSucceeded): Self = this.set("NumberOfTasksSucceeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfTasksSucceeded: Self = this.set("NumberOfTasksSucceeded", js.undefined)
-    
-    @scala.inline
-    def setTotalNumberOfTasks(value: JobTotalNumberOfTasks): Self = this.set("TotalNumberOfTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalNumberOfTasks: Self = this.set("TotalNumberOfTasks", js.undefined)
+    def setTotalNumberOfTasksUndefined: Self = StObject.set(x, "TotalNumberOfTasks", js.undefined)
   }
 }

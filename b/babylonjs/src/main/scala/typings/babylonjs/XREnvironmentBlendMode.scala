@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babylonjs.babylonjsStrings.additive
   - typings.babylonjs.babylonjsStrings.`alpha-blend`
 */
-trait XREnvironmentBlendMode extends js.Object
+trait XREnvironmentBlendMode extends StObject
 object XREnvironmentBlendMode {
   
   @scala.inline

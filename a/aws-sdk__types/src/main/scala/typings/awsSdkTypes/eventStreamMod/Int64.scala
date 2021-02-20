@@ -1,12 +1,13 @@
 package typings.awsSdkTypes.eventStreamMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Int64 extends js.Object {
+trait Int64 extends StObject {
   
   val bytes: Uint8Array = js.native
 }
@@ -19,21 +20,9 @@ object Int64 {
   }
   
   @scala.inline
-  implicit class Int64Ops[Self <: Int64] (val x: Self) extends AnyVal {
+  implicit class Int64MutableBuilder[Self <: Int64] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBytes(value: Uint8Array): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
   }
 }

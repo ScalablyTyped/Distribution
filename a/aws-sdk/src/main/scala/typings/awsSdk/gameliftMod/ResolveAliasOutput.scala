@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveAliasOutput extends js.Object {
+trait ResolveAliasOutput extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift fleet resource that this alias points to. 
@@ -26,30 +27,18 @@ object ResolveAliasOutput {
   }
   
   @scala.inline
-  implicit class ResolveAliasOutputOps[Self <: ResolveAliasOutput] (val x: Self) extends AnyVal {
+  implicit class ResolveAliasOutputMutableBuilder[Self <: ResolveAliasOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
-    
-    @scala.inline
-    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
   }
 }

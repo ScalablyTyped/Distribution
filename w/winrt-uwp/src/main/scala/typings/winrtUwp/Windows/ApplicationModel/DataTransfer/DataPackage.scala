@@ -10,13 +10,14 @@ import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.destroyed
 import typings.winrtUwp.winrtUwpStrings.operationcompleted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the data that a user wants to exchange with another app. */
 @js.native
-trait DataPackage extends js.Object {
+trait DataPackage extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

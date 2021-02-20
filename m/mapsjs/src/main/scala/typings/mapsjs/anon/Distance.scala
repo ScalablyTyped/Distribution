@@ -1,12 +1,13 @@
 package typings.mapsjs.anon
 
 import typings.mapsjs.mod.point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distance extends js.Object {
+trait Distance extends StObject {
   
   var distance: Double = js.native
   
@@ -25,30 +26,18 @@ object Distance {
   }
   
   @scala.inline
-  implicit class DistanceOps[Self <: Distance] (val x: Self) extends AnyVal {
+  implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPt(value: point): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPtIdx(value: Double): Self = StObject.set(x, "ptIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt(value: point): Self = this.set("pt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPtIdx(value: Double): Self = this.set("ptIdx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetIdx(value: Double): Self = this.set("setIdx", value.asInstanceOf[js.Any])
+    def setSetIdx(value: Double): Self = StObject.set(x, "setIdx", value.asInstanceOf[js.Any])
   }
 }

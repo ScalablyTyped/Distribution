@@ -1,15 +1,15 @@
 package typings.lodashDecorators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/utils/CompositeKeyWeakMap", JSImport.Namespace)
-@js.native
-object compositeKeyWeakMapMod extends js.Object {
+object compositeKeyWeakMapMod {
   
+  @JSImport("lodash-decorators/utils/CompositeKeyWeakMap", "CompositeKeyWeakMap")
   @js.native
-  class CompositeKeyWeakMap[T] () extends js.Object {
+  class CompositeKeyWeakMap[T] () extends StObject {
     
     var _weakMap: js.Any = js.native
     

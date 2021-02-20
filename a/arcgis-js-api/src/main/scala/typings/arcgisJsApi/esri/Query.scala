@@ -20,6 +20,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.standard
 import typings.arcgisJsApi.arcgisJsApiStrings.touches
 import typings.arcgisJsApi.arcgisJsApiStrings.within
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,13 @@
 package typings.obeliskJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "Matrix")
 @js.native
-class Matrix protected () extends js.Object {
+class Matrix protected () extends StObject {
   def this(
     a: js.UndefOr[Double],
     b: js.UndefOr[Double],

@@ -4,21 +4,23 @@ import typings.ionic.anon.NameString
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.App
 import typings.ionic.definitionsMod.CommandInstanceInfo
+import typings.ionic.definitionsMod.INamespace
 import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/link", JSImport.Namespace)
-@js.native
-object linkMod extends js.Object {
+object linkMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.ICommand because Already inherited
-  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native
-  class LinkCommand () extends Command {
+  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/link", "LinkCommand")
+  @js.native
+  class LinkCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
     
     def chooseApp(apps: js.Array[App]): js.Promise[String] = js.native
     

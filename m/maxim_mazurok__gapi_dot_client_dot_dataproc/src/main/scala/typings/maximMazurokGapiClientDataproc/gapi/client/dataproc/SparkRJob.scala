@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparkRJob extends js.Object {
+trait SparkRJob extends StObject {
   
   /** Optional. HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip. */
   var archiveUris: js.UndefOr[js.Array[String]] = js.native
@@ -45,67 +46,55 @@ object SparkRJob {
   }
   
   @scala.inline
-  implicit class SparkRJobOps[Self <: SparkRJob] (val x: Self) extends AnyVal {
+  implicit class SparkRJobMutableBuilder[Self <: SparkRJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveUris(value: js.Array[String]): Self = StObject.set(x, "archiveUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveUrisUndefined: Self = StObject.set(x, "archiveUris", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchiveUrisVarargs(value: String*): Self = StObject.set(x, "archiveUris", js.Array(value :_*))
     
     @scala.inline
-    def setArchiveUrisVarargs(value: String*): Self = this.set("archiveUris", js.Array(value :_*))
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveUris(value: js.Array[String]): Self = this.set("archiveUris", value.asInstanceOf[js.Any])
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def deleteArchiveUris: Self = this.set("archiveUris", js.undefined)
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setFileUris(value: js.Array[String]): Self = StObject.set(x, "fileUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setFileUrisUndefined: Self = StObject.set(x, "fileUris", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setFileUrisVarargs(value: String*): Self = StObject.set(x, "fileUris", js.Array(value :_*))
     
     @scala.inline
-    def setFileUrisVarargs(value: String*): Self = this.set("fileUris", js.Array(value :_*))
+    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileUris(value: js.Array[String]): Self = this.set("fileUris", value.asInstanceOf[js.Any])
+    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
     @scala.inline
-    def deleteFileUris: Self = this.set("fileUris", js.undefined)
+    def setMainRFileUri(value: String): Self = StObject.set(x, "mainRFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
-    
-    @scala.inline
-    def setMainRFileUri(value: String): Self = this.set("mainRFileUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMainRFileUri: Self = this.set("mainRFileUri", js.undefined)
+    def setMainRFileUriUndefined: Self = StObject.set(x, "mainRFileUri", js.undefined)
     
     @scala.inline
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkRJob with TopLevel[js.Any]
-    ): Self = this.set("properties", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

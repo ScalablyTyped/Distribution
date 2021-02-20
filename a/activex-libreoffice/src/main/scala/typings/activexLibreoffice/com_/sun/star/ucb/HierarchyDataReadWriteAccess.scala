@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.container.XHierarchicalNameAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.ChangesSet
 import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
-import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** provides read and write access to a fragment of the hierarchy data. */
 @js.native
 trait HierarchyDataReadWriteAccess
-  extends XNameContainer
-     with XHierarchicalNameAccess
-     with XChangesNotifier
-     with XComponent
+  extends HierarchyDataReadAccess
+     with XNameContainer
      with XSingleServiceFactory
      with XChangesBatch
 object HierarchyDataReadWriteAccess {

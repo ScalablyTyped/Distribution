@@ -2,12 +2,13 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.std.AudioContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioFileConfig extends js.Object {
+trait AudioFileConfig extends StObject {
   
   /**
     * The AudioContext this file will use to process itself.
@@ -38,39 +39,27 @@ object AudioFileConfig {
   }
   
   @scala.inline
-  implicit class AudioFileConfigOps[Self <: AudioFileConfig] (val x: Self) extends AnyVal {
+  implicit class AudioFileConfigMutableBuilder[Self <: AudioFileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioContextUndefined: Self = StObject.set(x, "audioContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setUrlConfig(value: String): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioContext(value: AudioContext): Self = this.set("audioContext", value.asInstanceOf[js.Any])
+    def setUrlConfigUndefined: Self = StObject.set(x, "urlConfig", js.undefined)
     
     @scala.inline
-    def deleteAudioContext: Self = this.set("audioContext", js.undefined)
+    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlConfig(value: String): Self = this.set("urlConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlConfig: Self = this.set("urlConfig", js.undefined)
-    
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = this.set("xhrSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhrSettings: Self = this.set("xhrSettings", js.undefined)
+    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

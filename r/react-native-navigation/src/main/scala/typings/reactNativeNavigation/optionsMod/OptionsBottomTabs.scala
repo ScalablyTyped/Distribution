@@ -9,12 +9,13 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.onSwitchToTab
 import typings.reactNativeNavigation.reactNativeNavigationStrings.showWhenActive
 import typings.reactNativeNavigation.reactNativeNavigationStrings.showWhenActiveForce
 import typings.reactNativeNavigation.reactNativeNavigationStrings.together
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsBottomTabs extends js.Object {
+trait OptionsBottomTabs extends StObject {
   
   /**
     * Enable animations when toggling visibility
@@ -112,108 +113,96 @@ object OptionsBottomTabs {
   }
   
   @scala.inline
-  implicit class OptionsBottomTabsOps[Self <: OptionsBottomTabs] (val x: Self) extends AnyVal {
+  implicit class OptionsBottomTabsMutableBuilder[Self <: OptionsBottomTabs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setBarStyle(value: default | black): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setCurrentTabId(value: String): Self = StObject.set(x, "currentTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarStyle(value: default | black): Self = this.set("barStyle", value.asInstanceOf[js.Any])
+    def setCurrentTabIdUndefined: Self = StObject.set(x, "currentTabId", js.undefined)
     
     @scala.inline
-    def deleteBarStyle: Self = this.set("barStyle", js.undefined)
+    def setCurrentTabIndex(value: Double): Self = StObject.set(x, "currentTabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTabId(value: String): Self = this.set("currentTabId", value.asInstanceOf[js.Any])
+    def setCurrentTabIndexUndefined: Self = StObject.set(x, "currentTabIndex", js.undefined)
     
     @scala.inline
-    def deleteCurrentTabId: Self = this.set("currentTabId", js.undefined)
+    def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTabIndex(value: Double): Self = this.set("currentTabIndex", value.asInstanceOf[js.Any])
+    def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
     
     @scala.inline
-    def deleteCurrentTabIndex: Self = this.set("currentTabIndex", js.undefined)
+    def setElevation(value: AndroidDensityNumber): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBehind(value: Boolean): Self = this.set("drawBehind", value.asInstanceOf[js.Any])
+    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
     @scala.inline
-    def deleteDrawBehind: Self = this.set("drawBehind", js.undefined)
+    def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation(value: AndroidDensityNumber): Self = this.set("elevation", value.asInstanceOf[js.Any])
+    def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
     
     @scala.inline
-    def deleteElevation: Self = this.set("elevation", js.undefined)
+    def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOnScroll(value: Boolean): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
     
     @scala.inline
-    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    def setPreferLargeIcons(value: Boolean): Self = StObject.set(x, "preferLargeIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideShadow(value: Boolean): Self = this.set("hideShadow", value.asInstanceOf[js.Any])
+    def setPreferLargeIconsUndefined: Self = StObject.set(x, "preferLargeIcons", js.undefined)
     
     @scala.inline
-    def deleteHideShadow: Self = this.set("hideShadow", js.undefined)
+    def setTabsAttachMode(value: together | afterInitialTab | onSwitchToTab): Self = StObject.set(x, "tabsAttachMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferLargeIcons(value: Boolean): Self = this.set("preferLargeIcons", value.asInstanceOf[js.Any])
+    def setTabsAttachModeUndefined: Self = StObject.set(x, "tabsAttachMode", js.undefined)
     
     @scala.inline
-    def deletePreferLargeIcons: Self = this.set("preferLargeIcons", js.undefined)
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabsAttachMode(value: together | afterInitialTab | onSwitchToTab): Self = this.set("tabsAttachMode", value.asInstanceOf[js.Any])
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def deleteTabsAttachMode: Self = this.set("tabsAttachMode", js.undefined)
+    def setTitleDisplayMode(value: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce): Self = StObject.set(x, "titleDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    def setTitleDisplayModeUndefined: Self = StObject.set(x, "titleDisplayMode", js.undefined)
     
     @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleDisplayMode(value: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce): Self = this.set("titleDisplayMode", value.asInstanceOf[js.Any])
+    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
     @scala.inline
-    def deleteTitleDisplayMode: Self = this.set("titleDisplayMode", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslucent: Self = this.set("translucent", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

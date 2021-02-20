@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Operation extends js.Object {
+trait Operation extends StObject {
   
   /**
     * The date and time that the request was submitted, in Unix date/time format and Coordinated Universal Time (UTC). The value of CreateDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
@@ -56,66 +57,54 @@ object Operation {
   }
   
   @scala.inline
-  implicit class OperationOps[Self <: Operation] (val x: Self) extends AnyVal {
+  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCode(value: Code): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setErrorMessage(value: Message): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Code): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setId(value: OperationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: Message): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setStatus(value: OperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: OperationId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setTargets(value: OperationTargetsMap): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: OperationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setType(value: OperationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: OperationTargetsMap): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTargets: Self = this.set("Targets", js.undefined)
+    def setUpdateDate(value: Timestamp): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: OperationType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setUpdateDate(value: Timestamp): Self = this.set("UpdateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDate: Self = this.set("UpdateDate", js.undefined)
+    def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }
 }

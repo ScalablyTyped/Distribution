@@ -1,5 +1,6 @@
 package typings.nodePgMigrate.distTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodePgMigrate.nodePgMigrateStrings.up
   - typings.nodePgMigrate.nodePgMigrateStrings.down
 */
-trait MigrationDirection extends js.Object
+trait MigrationDirection extends StObject
 object MigrationDirection {
   
   @scala.inline

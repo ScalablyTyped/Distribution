@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerVersion extends js.Object {
+trait ContainerVersion extends StObject {
   
   /** GTM Account ID. */
   var accountId: js.UndefOr[String] = js.native
@@ -70,150 +71,138 @@ object ContainerVersion {
   }
   
   @scala.inline
-  implicit class ContainerVersionOps[Self <: ContainerVersion] (val x: Self) extends AnyVal {
+  implicit class ContainerVersionMutableBuilder[Self <: ContainerVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
     
     @scala.inline
-    def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = this.set("builtInVariable", js.Array(value :_*))
+    def setClient(value: js.Array[Client]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = this.set("builtInVariable", value.asInstanceOf[js.Any])
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def deleteBuiltInVariable: Self = this.set("builtInVariable", js.undefined)
+    def setClientVarargs(value: Client*): Self = StObject.set(x, "client", js.Array(value :_*))
     
     @scala.inline
-    def setClientVarargs(value: Client*): Self = this.set("client", js.Array(value :_*))
+    def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: js.Array[Client]): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
     @scala.inline
-    def setContainer(value: Container): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
     
     @scala.inline
-    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    def setCustomTemplate(value: js.Array[CustomTemplate]): Self = StObject.set(x, "customTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerVersionId(value: String): Self = this.set("containerVersionId", value.asInstanceOf[js.Any])
+    def setCustomTemplateUndefined: Self = StObject.set(x, "customTemplate", js.undefined)
     
     @scala.inline
-    def deleteContainerVersionId: Self = this.set("containerVersionId", js.undefined)
+    def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value :_*))
     
     @scala.inline
-    def setCustomTemplateVarargs(value: CustomTemplate*): Self = this.set("customTemplate", js.Array(value :_*))
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomTemplate(value: js.Array[CustomTemplate]): Self = this.set("customTemplate", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCustomTemplate: Self = this.set("customTemplate", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFolder(value: js.Array[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
     
     @scala.inline
-    def setFolderVarargs(value: Folder*): Self = this.set("folder", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolder(value: js.Array[Folder]): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
     
     @scala.inline
-    def setTagVarargs(value: Tag*): Self = this.set("tag", js.Array(value :_*))
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def setTag(value: js.Array[Tag]): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagManagerUrl(value: String): Self = this.set("tagManagerUrl", value.asInstanceOf[js.Any])
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
     @scala.inline
-    def deleteTagManagerUrl: Self = this.set("tagManagerUrl", js.undefined)
+    def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
     
     @scala.inline
-    def setTriggerVarargs(value: Trigger*): Self = this.set("trigger", js.Array(value :_*))
+    def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: js.Array[Trigger]): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
     @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
     
     @scala.inline
-    def setVariableVarargs(value: Variable*): Self = this.set("variable", js.Array(value :_*))
+    def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariable(value: js.Array[Variable]): Self = this.set("variable", value.asInstanceOf[js.Any])
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     
     @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
-    
-    @scala.inline
-    def setZoneVarargs(value: Zone*): Self = this.set("zone", js.Array(value :_*))
-    
-    @scala.inline
-    def setZone(value: js.Array[Zone]): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
   }
 }

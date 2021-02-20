@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object ContentEvent {
   }
   
   @scala.inline
-  implicit class ContentEventOps[Self <: ContentEvent] (val x: Self) extends AnyVal {
+  implicit class ContentEventMutableBuilder[Self <: ContentEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: Double): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent(value: XContent): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: XContentIdentifier): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setId(value: XContentIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

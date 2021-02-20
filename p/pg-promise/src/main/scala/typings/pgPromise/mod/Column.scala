@@ -1,5 +1,6 @@
 package typings.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/helpers.Column.html
 @JSImport("pg-promise", "Column")
 @js.native
-class Column[S] protected () extends js.Object {
+class Column[S] protected () extends StObject {
   def this(col: String) = this()
   def this(col: IColumnConfig[S]) = this()
   

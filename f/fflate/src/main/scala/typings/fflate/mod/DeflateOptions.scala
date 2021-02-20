@@ -13,12 +13,13 @@ import typings.fflate.fflateNumbers.`6`
 import typings.fflate.fflateNumbers.`7`
 import typings.fflate.fflateNumbers.`8`
 import typings.fflate.fflateNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeflateOptions extends js.Object {
+trait DeflateOptions extends StObject {
   
   /**
     * The level of compression to use, ranging from 0-9.
@@ -57,30 +58,18 @@ object DeflateOptions {
   }
   
   @scala.inline
-  implicit class DeflateOptionsOps[Self <: DeflateOptions] (val x: Self) extends AnyVal {
+  implicit class DeflateOptionsMutableBuilder[Self <: DeflateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
-    
-    @scala.inline
-    def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = this.set("mem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMem: Self = this.set("mem", js.undefined)
+    def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
   }
 }

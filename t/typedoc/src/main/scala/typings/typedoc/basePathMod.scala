@@ -1,15 +1,15 @@
 package typings.typedoc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/utils/base-path", JSImport.Namespace)
-@js.native
-object basePathMod extends js.Object {
+object basePathMod {
   
+  @JSImport("typedoc/dist/lib/converter/utils/base-path", "BasePath")
   @js.native
-  class BasePath () extends js.Object {
+  class BasePath () extends StObject {
     
     def add(fileName: String): Unit = js.native
     
@@ -20,9 +20,10 @@ object basePathMod extends js.Object {
     def trim(fileName: String): String = js.native
   }
   /* static members */
-  @js.native
-  object BasePath extends js.Object {
+  object BasePath {
     
+    @JSImport("typedoc/dist/lib/converter/utils/base-path", "BasePath.normalize")
+    @js.native
     def normalize(path: String): String = js.native
   }
 }

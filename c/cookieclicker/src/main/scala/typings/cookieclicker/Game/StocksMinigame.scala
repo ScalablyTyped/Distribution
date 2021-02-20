@@ -3,6 +3,7 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

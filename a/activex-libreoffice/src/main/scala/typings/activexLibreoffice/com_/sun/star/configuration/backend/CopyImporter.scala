@@ -2,7 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait CopyImporter
-  extends XLayerImporter
-     with XInitialization
+trait CopyImporter extends Importer
 object CopyImporter {
   
   @scala.inline

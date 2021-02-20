@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogSubscription extends js.Object {
+trait LogSubscription extends StObject {
   
   /**
     * Identifier (ID) of the directory that you want to associate with the log subscription.
@@ -31,36 +32,24 @@ object LogSubscription {
   }
   
   @scala.inline
-  implicit class LogSubscriptionOps[Self <: LogSubscription] (val x: Self) extends AnyVal {
+  implicit class LogSubscriptionMutableBuilder[Self <: LogSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setSubscriptionCreatedDateTime(value: SubscriptionCreatedDateTime): Self = StObject.set(x, "SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionCreatedDateTime(value: SubscriptionCreatedDateTime): Self = this.set("SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionCreatedDateTime: Self = this.set("SubscriptionCreatedDateTime", js.undefined)
+    def setSubscriptionCreatedDateTimeUndefined: Self = StObject.set(x, "SubscriptionCreatedDateTime", js.undefined)
   }
 }

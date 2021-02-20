@@ -1,5 +1,6 @@
 package typings.navermaps.global.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("naver.maps.MapTypeControlStyle")
 @js.native
-object MapTypeControlStyle extends js.Object {
+object MapTypeControlStyle extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.MapTypeControlStyle with Double] = js.native

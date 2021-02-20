@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPair extends js.Object {
+trait IPair extends StObject {
   
   var activeContacts: js.Any = js.native
   
@@ -59,60 +60,48 @@ object IPair {
   }
   
   @scala.inline
-  implicit class IPairOps[Self <: IPair] (val x: Self) extends AnyVal {
+  implicit class IPairMutableBuilder[Self <: IPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveContacts(value: js.Any): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyB(value: Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveContacts(value: js.Any): Self = this.set("activeContacts", value.asInstanceOf[js.Any])
+    def setContacts(value: js.Any): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyA(value: Body): Self = this.set("bodyA", value.asInstanceOf[js.Any])
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyB(value: Body): Self = this.set("bodyB", value.asInstanceOf[js.Any])
+    def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContacts(value: js.Any): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrictionStatic(value: Double): Self = this.set("frictionStatic", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverseMass(value: Double): Self = this.set("inverseMass", value.asInstanceOf[js.Any])
+    def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestitution(value: Double): Self = this.set("restitution", value.asInstanceOf[js.Any])
+    def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparation(value: Double): Self = this.set("separation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlop(value: Double): Self = this.set("slop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeCreated(value: Double): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeUpdated(value: Double): Self = this.set("timeUpdated", value.asInstanceOf[js.Any])
+    def setTimeUpdated(value: Double): Self = StObject.set(x, "timeUpdated", value.asInstanceOf[js.Any])
   }
 }

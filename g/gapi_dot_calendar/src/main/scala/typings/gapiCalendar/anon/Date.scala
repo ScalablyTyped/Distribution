@@ -2,12 +2,13 @@ package typings.gapiCalendar.anon
 
 import typings.gapiCalendar.gapi.client.calendar.date
 import typings.gapiCalendar.gapi.client.calendar.datetime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   // The date, in the format "yyyy-mm-dd", if this is an all-day event.
   var date: js.UndefOr[typings.gapiCalendar.gapi.client.calendar.date] = js.native
@@ -30,36 +31,24 @@ object Date {
   }
   
   @scala.inline
-  implicit class DateOps[Self <: Date] (val x: Self) extends AnyVal {
+  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTime(value: datetime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
     @scala.inline
-    def setDate(value: date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTime(value: datetime): Self = this.set("dateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateTime: Self = this.set("dateTime", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

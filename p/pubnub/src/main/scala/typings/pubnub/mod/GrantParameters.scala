@@ -1,12 +1,13 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // grant
 @js.native
-trait GrantParameters extends js.Object {
+trait GrantParameters extends StObject {
   
   var authKeys: js.UndefOr[js.Array[String]] = js.native
   
@@ -41,102 +42,90 @@ object GrantParameters {
   }
   
   @scala.inline
-  implicit class GrantParametersOps[Self <: GrantParameters] (val x: Self) extends AnyVal {
+  implicit class GrantParametersMutableBuilder[Self <: GrantParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthKeys(value: js.Array[String]): Self = StObject.set(x, "authKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthKeysUndefined: Self = StObject.set(x, "authKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthKeysVarargs(value: String*): Self = StObject.set(x, "authKeys", js.Array(value :_*))
     
     @scala.inline
-    def setAuthKeysVarargs(value: String*): Self = this.set("authKeys", js.Array(value :_*))
+    def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthKeys(value: js.Array[String]): Self = this.set("authKeys", value.asInstanceOf[js.Any])
+    def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
     
     @scala.inline
-    def deleteAuthKeys: Self = this.set("authKeys", js.undefined)
+    def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
     
     @scala.inline
-    def setChannelGroupsVarargs(value: String*): Self = this.set("channelGroups", js.Array(value :_*))
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelGroups(value: js.Array[String]): Self = this.set("channelGroups", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def deleteChannelGroups: Self = this.set("channelGroups", js.undefined)
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setGet(value: Boolean): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Boolean): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setJoin(value: Boolean): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: Boolean): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoin(value: Boolean): Self = this.set("join", value.asInstanceOf[js.Any])
+    def setManageUndefined: Self = StObject.set(x, "manage", js.undefined)
     
     @scala.inline
-    def deleteJoin: Self = this.set("join", js.undefined)
+    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManage(value: Boolean): Self = this.set("manage", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deleteManage: Self = this.set("manage", js.undefined)
+    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
     
     @scala.inline
-    def setUuidsVarargs(value: String*): Self = this.set("uuids", js.Array(value :_*))
+    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUuids(value: js.Array[String]): Self = this.set("uuids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuids: Self = this.set("uuids", js.undefined)
-    
-    @scala.inline
-    def setWrite(value: Boolean): Self = this.set("write", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

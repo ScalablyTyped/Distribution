@@ -3,18 +3,17 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/sign", JSImport.Namespace)
-@js.native
-object signMod extends js.Object {
+object signMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/sign", "sign")
   @js.native
-  object sign extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  }
+  def sign[T /* <: Tensor[Rank] */](x: T): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/sign", "sign")
+  @js.native
+  def sign[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
 }

@@ -3,6 +3,7 @@ package typings.ejWebAll.global.ej.datavisualization
 import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Model
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +17,15 @@ class LinearGauge protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-/* static members */
-@JSGlobal("ej.datavisualization.LinearGauge")
-@js.native
-object LinearGauge extends js.Object {
+object LinearGauge {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.datavisualization.LinearGauge = js.native
-  
+  @JSGlobal("ej.datavisualization.LinearGauge")
   @js.native
-  object Direction extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.datavisualization.LinearGauge.Direction")
+  @js.native
+  object Direction extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.Direction with Double] = js.native
@@ -36,8 +35,9 @@ object LinearGauge extends js.Object {
     /* 1 */ val CounterClockwise: typings.ejWebAll.ej.datavisualization.LinearGauge.Direction.CounterClockwise with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.ExportingMode")
   @js.native
-  object ExportingMode extends js.Object {
+  object ExportingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.ExportingMode with Double] = js.native
@@ -47,8 +47,9 @@ object LinearGauge extends js.Object {
     /* 0 */ val ServerSide: typings.ejWebAll.ej.datavisualization.LinearGauge.ExportingMode.ServerSide with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.ExportingType")
   @js.native
-  object ExportingType extends js.Object {
+  object ExportingType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.ExportingType with Double] = js.native
@@ -58,8 +59,9 @@ object LinearGauge extends js.Object {
     /* 0 */ val PNG: typings.ejWebAll.ej.datavisualization.LinearGauge.ExportingType.PNG with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.FontStyle")
   @js.native
-  object FontStyle extends js.Object {
+  object FontStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.FontStyle with Double] = js.native
@@ -75,8 +77,9 @@ object LinearGauge extends js.Object {
     /* 4 */ val Underline: typings.ejWebAll.ej.datavisualization.LinearGauge.FontStyle.Underline with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.IndicatorTypes")
   @js.native
-  object IndicatorTypes extends js.Object {
+  object IndicatorTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.IndicatorTypes with Double] = js.native
@@ -90,8 +93,16 @@ object LinearGauge extends js.Object {
     /* 3 */ val Text: typings.ejWebAll.ej.datavisualization.LinearGauge.IndicatorTypes.Text with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.datavisualization.LinearGauge.Locale")
   @js.native
-  object MarkerType extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.datavisualization.LinearGauge.MarkerType")
+  @js.native
+  object MarkerType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.MarkerType with Double] = js.native
@@ -121,8 +132,9 @@ object LinearGauge extends js.Object {
     /* 9 */ val Wedge: typings.ejWebAll.ej.datavisualization.LinearGauge.MarkerType.Wedge with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.OuterCustomLabelPosition")
   @js.native
-  object OuterCustomLabelPosition extends js.Object {
+  object OuterCustomLabelPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -138,8 +150,9 @@ object LinearGauge extends js.Object {
     /* 2 */ val Top: typings.ejWebAll.ej.datavisualization.LinearGauge.OuterCustomLabelPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.PointerPlacement")
   @js.native
-  object PointerPlacement extends js.Object {
+  object PointerPlacement extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.PointerPlacement with Double] = js.native
@@ -151,8 +164,9 @@ object LinearGauge extends js.Object {
     /* 0 */ val Near: typings.ejWebAll.ej.datavisualization.LinearGauge.PointerPlacement.Near with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.ScaleType")
   @js.native
-  object ScaleType extends js.Object {
+  object ScaleType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.ScaleType with Double] = js.native
@@ -162,8 +176,9 @@ object LinearGauge extends js.Object {
     /* 1 */ val Minor: typings.ejWebAll.ej.datavisualization.LinearGauge.ScaleType.Minor with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.Themes")
   @js.native
-  object Themes extends js.Object {
+  object Themes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.Themes with Double] = js.native
@@ -173,8 +188,9 @@ object LinearGauge extends js.Object {
     /* 0 */ val FlatLight: typings.ejWebAll.ej.datavisualization.LinearGauge.Themes.FlatLight with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.TicksType")
   @js.native
-  object TicksType extends js.Object {
+  object TicksType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.TicksType with Double] = js.native
@@ -184,8 +200,9 @@ object LinearGauge extends js.Object {
     /* 1 */ val Minorinterval: typings.ejWebAll.ej.datavisualization.LinearGauge.TicksType.Minorinterval with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.LinearGauge.UnitTextPlacement")
   @js.native
-  object UnitTextPlacement extends js.Object {
+  object UnitTextPlacement extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.LinearGauge.UnitTextPlacement with Double] = js.native
@@ -194,4 +211,11 @@ object LinearGauge extends js.Object {
     
     /* 1 */ val From: typings.ejWebAll.ej.datavisualization.LinearGauge.UnitTextPlacement.From with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.datavisualization.LinearGauge.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.datavisualization.LinearGauge = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.datavisualization.LinearGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

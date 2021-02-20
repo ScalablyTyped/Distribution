@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -141,160 +142,148 @@ object IMessageBox {
   }
   
   @scala.inline
-  implicit class IMessageBoxOps[Self <: IMessageBox] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IMessageBoxMutableBuilder[Self <: IMessageBox] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAlert(
       value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox
-    ): Self = this.set("alert", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "alert", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteAlert: Self = this.set("alert", js.undefined)
+    def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
     
     @scala.inline
-    def setButtons(value: js.Any): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
     def setConfirm(
       value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox
-    ): Self = this.set("confirm", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "confirm", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteConfirm: Self = this.set("confirm", js.undefined)
+    def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
     
     @scala.inline
-    def setDefaultTextHeight(value: Double): Self = this.set("defaultTextHeight", value.asInstanceOf[js.Any])
+    def setDefaultTextHeight(value: Double): Self = StObject.set(x, "defaultTextHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultTextHeight: Self = this.set("defaultTextHeight", js.undefined)
+    def setDefaultTextHeightUndefined: Self = StObject.set(x, "defaultTextHeight", js.undefined)
     
     @scala.inline
-    def setGetButtons(value: () => _): Self = this.set("getButtons", js.Any.fromFunction0(value))
+    def setGetButtons(value: () => _): Self = StObject.set(x, "getButtons", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetButtons: Self = this.set("getButtons", js.undefined)
+    def setGetButtonsUndefined: Self = StObject.set(x, "getButtons", js.undefined)
     
     @scala.inline
-    def setGetDefaultTextHeight(value: () => Double): Self = this.set("getDefaultTextHeight", js.Any.fromFunction0(value))
+    def setGetDefaultTextHeight(value: () => Double): Self = StObject.set(x, "getDefaultTextHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDefaultTextHeight: Self = this.set("getDefaultTextHeight", js.undefined)
+    def setGetDefaultTextHeightUndefined: Self = StObject.set(x, "getDefaultTextHeight", js.undefined)
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = this.set("getLayout", js.Any.fromFunction0(value))
+    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetLayout: Self = this.set("getLayout", js.undefined)
+    def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
     @scala.inline
-    def setGetPrompt(value: () => _): Self = this.set("getPrompt", js.Any.fromFunction0(value))
+    def setGetPrompt(value: () => _): Self = StObject.set(x, "getPrompt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetPrompt: Self = this.set("getPrompt", js.undefined)
+    def setGetPromptUndefined: Self = StObject.set(x, "getPrompt", js.undefined)
     
     @scala.inline
-    def setGetTitle(value: () => java.lang.String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetTitle: Self = this.set("getTitle", js.undefined)
+    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
     @scala.inline
-    def setIcon(value: java.lang.String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconCls(value: java.lang.String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconCls(value: java.lang.String): Self = this.set("iconCls", value.asInstanceOf[js.Any])
+    def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
     
     @scala.inline
-    def deleteIconCls: Self = this.set("iconCls", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setMessage(value: java.lang.String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setMsg(value: java.lang.String): Self = this.set("msg", value.asInstanceOf[js.Any])
+    def setMsg(value: java.lang.String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMsg: Self = this.set("msg", js.undefined)
+    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
     @scala.inline
-    def setPrompt(value: js.Any): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    def setPrompt(value: js.Any): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def setSetButtons(value: /* buttons */ js.UndefOr[js.Any] => Unit): Self = this.set("setButtons", js.Any.fromFunction1(value))
+    def setSetButtons(value: /* buttons */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setButtons", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetButtons: Self = this.set("setButtons", js.undefined)
+    def setSetButtonsUndefined: Self = StObject.set(x, "setButtons", js.undefined)
     
     @scala.inline
-    def setSetDefaultTextHeight(value: /* defaultTextHeight */ js.UndefOr[Double] => Unit): Self = this.set("setDefaultTextHeight", js.Any.fromFunction1(value))
+    def setSetDefaultTextHeight(value: /* defaultTextHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDefaultTextHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDefaultTextHeight: Self = this.set("setDefaultTextHeight", js.undefined)
+    def setSetDefaultTextHeightUndefined: Self = StObject.set(x, "setDefaultTextHeight", js.undefined)
     
     @scala.inline
-    def setSetIcon(value: /* iconCls */ js.UndefOr[java.lang.String] => IMessageBox): Self = this.set("setIcon", js.Any.fromFunction1(value))
+    def setSetIcon(value: /* iconCls */ js.UndefOr[java.lang.String] => IMessageBox): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetIcon: Self = this.set("setIcon", js.undefined)
+    def setSetIconCls(value: /* iconCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setIconCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIconCls(value: /* iconCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setIconCls", js.Any.fromFunction1(value))
+    def setSetIconClsUndefined: Self = StObject.set(x, "setIconCls", js.undefined)
     
     @scala.inline
-    def deleteSetIconCls: Self = this.set("setIconCls", js.undefined)
+    def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
     
     @scala.inline
-    def setSetMessage(value: /* message */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setMessage", js.Any.fromFunction1(value))
+    def setSetMessage(value: /* message */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMessage: Self = this.set("setMessage", js.undefined)
+    def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
     
     @scala.inline
-    def setSetPrompt(value: /* prompt */ js.UndefOr[js.Any] => Unit): Self = this.set("setPrompt", js.Any.fromFunction1(value))
+    def setSetPrompt(value: /* prompt */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetPrompt: Self = this.set("setPrompt", js.undefined)
+    def setSetPromptUndefined: Self = StObject.set(x, "setPrompt", js.undefined)
     
     @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setUpdateText(value: /* message */ js.UndefOr[java.lang.String] => IMessageBox): Self = this.set("updateText", js.Any.fromFunction1(value))
+    def setUpdateText(value: /* message */ js.UndefOr[java.lang.String] => IMessageBox): Self = StObject.set(x, "updateText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteUpdateText: Self = this.set("updateText", js.undefined)
+    def setUpdateTextUndefined: Self = StObject.set(x, "updateText", js.undefined)
   }
 }

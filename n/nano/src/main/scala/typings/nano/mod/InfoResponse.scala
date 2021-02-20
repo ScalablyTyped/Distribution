@@ -1,13 +1,14 @@
 package typings.nano.mod
 
 import typings.nano.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://docs.couchdb.org/en/stable/api/server/common.html#api-server-root
 @js.native
-trait InfoResponse extends js.Object {
+trait InfoResponse extends StObject {
   
   var couchdb: String = js.native
   
@@ -37,39 +38,27 @@ object InfoResponse {
   }
   
   @scala.inline
-  implicit class InfoResponseOps[Self <: InfoResponse] (val x: Self) extends AnyVal {
+  implicit class InfoResponseMutableBuilder[Self <: InfoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCouchdb(value: String): Self = StObject.set(x, "couchdb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setCouchdb(value: String): Self = this.set("couchdb", value.asInstanceOf[js.Any])
+    def setGit_sha(value: String): Self = StObject.set(x, "git_sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[String]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setVendor(value: Name): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGit_sha(value: String): Self = this.set("git_sha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendor(value: Name): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

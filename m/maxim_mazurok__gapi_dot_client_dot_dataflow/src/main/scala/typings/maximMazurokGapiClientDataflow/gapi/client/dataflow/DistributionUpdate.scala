@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionUpdate extends js.Object {
+trait DistributionUpdate extends StObject {
   
   /** The count of the number of elements present in the distribution. */
   var count: js.UndefOr[SplitInt64] = js.native
@@ -34,54 +35,42 @@ object DistributionUpdate {
   }
   
   @scala.inline
-  implicit class DistributionUpdateOps[Self <: DistributionUpdate] (val x: Self) extends AnyVal {
+  implicit class DistributionUpdateMutableBuilder[Self <: DistributionUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: SplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistogram(value: Histogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: SplitInt64): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMax(value: SplitInt64): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogram(value: Histogram): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    def setMin(value: SplitInt64): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: SplitInt64): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setSum(value: SplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: SplitInt64): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     
     @scala.inline
-    def setSum(value: SplitInt64): Self = this.set("sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSum: Self = this.set("sum", js.undefined)
-    
-    @scala.inline
-    def setSumOfSquares(value: Double): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
+    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

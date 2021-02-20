@@ -1,11 +1,12 @@
 package typings.chessboardjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChessBoardFactory extends js.Object {
+trait ChessBoardFactory extends StObject {
   
   def apply(containerElOrId: js.Any): ChessBoardInstance = js.native
   def apply(containerElOrId: js.Any, config: BoardConfig): ChessBoardInstance = js.native

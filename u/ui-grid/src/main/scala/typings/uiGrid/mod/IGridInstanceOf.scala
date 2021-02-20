@@ -3,12 +3,13 @@ package typings.uiGrid.mod
 import typings.angular.mod.IAngularEvent
 import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridInstanceOf[TEntity] extends js.Object {
+trait IGridInstanceOf[TEntity] extends StObject {
   
   /**
     * adds a row header column to the grid

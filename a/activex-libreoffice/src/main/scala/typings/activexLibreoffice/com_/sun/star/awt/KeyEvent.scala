@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object KeyEvent {
   }
   
   @scala.inline
-  implicit class KeyEventOps[Self <: KeyEvent] (val x: Self) extends AnyVal {
+  implicit class KeyEventMutableBuilder[Self <: KeyEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyChar(value: String): Self = StObject.set(x, "KeyChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyChar(value: String): Self = this.set("KeyChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyCode(value: Double): Self = this.set("KeyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyFunc(value: Double): Self = this.set("KeyFunc", value.asInstanceOf[js.Any])
+    def setKeyFunc(value: Double): Self = StObject.set(x, "KeyFunc", value.asInstanceOf[js.Any])
   }
 }

@@ -3,29 +3,46 @@ package typings.fortawesomeFreeSolidSvgIcons
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", JSImport.Namespace)
-@js.native
-object faHighlighterMod extends js.Object {
+object faHighlighterMod {
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "definition")
+  @js.native
   val definition: IconDefinition = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "faHighlighter")
+  @js.native
   val faHighlighter: IconDefinition = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "height")
+  @js.native
   val height: Double = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "iconName")
+  @js.native
   val iconName: IconName = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "ligatures")
+  @js.native
   val ligatures: js.Array[String] = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "prefix")
+  @js.native
   val prefix: IconPrefix = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "svgPathData")
+  @js.native
   val svgPathData: String = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "unicode")
+  @js.native
   val unicode: String = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faHighlighter", "width")
+  @js.native
   val width: Double = js.native
 }

@@ -1,5 +1,6 @@
 package typings.apiErrorHandler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("api-error-handler", JSImport.Namespace)
 @js.native
-object apiErrorHandlerRequire extends js.Object
+object apiErrorHandlerRequire extends StObject

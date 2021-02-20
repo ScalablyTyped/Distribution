@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,39 +53,27 @@ object AssociationOptionsBelongsToMany {
   }
   
   @scala.inline
-  implicit class AssociationOptionsBelongsToManyOps[Self <: AssociationOptionsBelongsToMany] (val x: Self) extends AnyVal {
+  implicit class AssociationOptionsBelongsToManyMutableBuilder[Self <: AssociationOptionsBelongsToMany] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOtherKey(value: String | AssociationForeignKeyOptions): Self = StObject.set(x, "otherKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOtherKeyUndefined: Self = StObject.set(x, "otherKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThrough(value: (Model[_, _, _]) | String | ThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrough(value: (Model[_, _, _]) | String | ThroughOptions): Self = this.set("through", value.asInstanceOf[js.Any])
+    def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherKey(value: String | AssociationForeignKeyOptions): Self = this.set("otherKey", value.asInstanceOf[js.Any])
+    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
     @scala.inline
-    def deleteOtherKey: Self = this.set("otherKey", js.undefined)
+    def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamps(value: Boolean): Self = this.set("timestamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
-    
-    @scala.inline
-    def setUniqueKey(value: String): Self = this.set("uniqueKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueKey: Self = this.set("uniqueKey", js.undefined)
+    def setUniqueKeyUndefined: Self = StObject.set(x, "uniqueKey", js.undefined)
   }
 }

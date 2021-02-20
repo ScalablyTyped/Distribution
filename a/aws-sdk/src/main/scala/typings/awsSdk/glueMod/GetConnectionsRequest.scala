@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConnectionsRequest extends js.Object {
+trait GetConnectionsRequest extends StObject {
   
   /**
     * The ID of the Data Catalog in which the connections reside. If none is provided, the AWS account ID is used by default.
@@ -41,48 +42,36 @@ object GetConnectionsRequest {
   }
   
   @scala.inline
-  implicit class GetConnectionsRequestOps[Self <: GetConnectionsRequest] (val x: Self) extends AnyVal {
+  implicit class GetConnectionsRequestMutableBuilder[Self <: GetConnectionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: GetConnectionsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    def setHidePassword(value: Boolean): Self = StObject.set(x, "HidePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: GetConnectionsFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setHidePasswordUndefined: Self = StObject.set(x, "HidePassword", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidePassword(value: Boolean): Self = this.set("HidePassword", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteHidePassword: Self = this.set("HidePassword", js.undefined)
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

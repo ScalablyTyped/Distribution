@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextSnippet extends js.Object {
+trait TextSnippet extends StObject {
   
   var textSnippet: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object TextSnippet {
   }
   
   @scala.inline
-  implicit class TextSnippetOps[Self <: TextSnippet] (val x: Self) extends AnyVal {
+  implicit class TextSnippetMutableBuilder[Self <: TextSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextSnippet(value: String): Self = StObject.set(x, "textSnippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextSnippet(value: String): Self = this.set("textSnippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextSnippet: Self = this.set("textSnippet", js.undefined)
+    def setTextSnippetUndefined: Self = StObject.set(x, "textSnippet", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Conversations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreviewClickEvent extends js.Object {
+trait PreviewClickEvent extends StObject {
   
   var attachmentCardView: AttachmentCardView = js.native
   
@@ -20,24 +21,12 @@ object PreviewClickEvent {
   }
   
   @scala.inline
-  implicit class PreviewClickEventOps[Self <: PreviewClickEvent] (val x: Self) extends AnyVal {
+  implicit class PreviewClickEventMutableBuilder[Self <: PreviewClickEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentCardView(value: AttachmentCardView): Self = StObject.set(x, "attachmentCardView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttachmentCardView(value: AttachmentCardView): Self = this.set("attachmentCardView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
+    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

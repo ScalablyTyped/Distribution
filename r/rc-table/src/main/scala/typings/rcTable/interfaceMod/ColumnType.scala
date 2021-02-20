@@ -5,6 +5,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,71 +48,59 @@ object ColumnType {
   }
   
   @scala.inline
-  implicit class ColumnTypeOps[Self <: ColumnType[_], RecordType] (val x: Self with ColumnType[RecordType]) extends AnyVal {
+  implicit class ColumnTypeMutableBuilder[Self <: ColumnType[_], RecordType] (val x: Self with ColumnType[RecordType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataIndex(value: DataIndex): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
     
     @scala.inline
-    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value :_*))
     
     @scala.inline
-    def setDataIndexVarargs(value: (String | Double)*): Self = this.set("dataIndex", js.Array(value :_*))
+    def setOnCell(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDataIndex(value: DataIndex): Self = this.set("dataIndex", value.asInstanceOf[js.Any])
+    def setOnCellClick(value: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDataIndex: Self = this.set("dataIndex", js.undefined)
+    def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
     
     @scala.inline
-    def setOnCell(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = this.set("onCell", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnCell: Self = this.set("onCell", js.undefined)
-    
-    @scala.inline
-    def setOnCellClick(value: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onCellClick", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnCellClick: Self = this.set("onCellClick", js.undefined)
+    def setOnCellUndefined: Self = StObject.set(x, "onCell", js.undefined)
     
     @scala.inline
     def setRender(
       value: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType]
-    ): Self = this.set("render", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
     @scala.inline
-    def setShouldCellUpdate(value: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean): Self = this.set("shouldCellUpdate", js.Any.fromFunction2(value))
+    def setShouldCellUpdate(value: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean): Self = StObject.set(x, "shouldCellUpdate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteShouldCellUpdate: Self = this.set("shouldCellUpdate", js.undefined)
+    def setShouldCellUpdateUndefined: Self = StObject.set(x, "shouldCellUpdate", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceTextEdit extends js.Object {
+trait WorkspaceTextEdit extends StObject {
   
   var edit: TextEdit = js.native
   
@@ -25,36 +26,24 @@ object WorkspaceTextEdit {
   }
   
   @scala.inline
-  implicit class WorkspaceTextEditOps[Self <: WorkspaceTextEdit] (val x: Self) extends AnyVal {
+  implicit class WorkspaceTextEditMutableBuilder[Self <: WorkspaceTextEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdit(value: TextEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadata(value: WorkspaceEditMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setEdit(value: TextEdit): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Uri): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setModelVersionIdUndefined: Self = StObject.set(x, "modelVersionId", js.undefined)
     
     @scala.inline
-    def setMetadata(value: WorkspaceEditMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setModelVersionId(value: Double): Self = this.set("modelVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelVersionId: Self = this.set("modelVersionId", js.undefined)
+    def setResource(value: Uri): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

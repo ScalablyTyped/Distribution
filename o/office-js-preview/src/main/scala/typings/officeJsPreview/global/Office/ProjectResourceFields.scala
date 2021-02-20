@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.ProjectResourceFields")
 @js.native
-object ProjectResourceFields extends js.Object {
+object ProjectResourceFields extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.ProjectResourceFields with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelFontGlyph extends js.Object {
+trait RaphaelFontGlyph extends StObject {
   
   /** An SVG path string for drawing this glyph. */
   var d: String = js.native
@@ -22,24 +23,12 @@ object RaphaelFontGlyph {
   }
   
   @scala.inline
-  implicit class RaphaelFontGlyphOps[Self <: RaphaelFontGlyph] (val x: Self) extends AnyVal {
+  implicit class RaphaelFontGlyphMutableBuilder[Self <: RaphaelFontGlyph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

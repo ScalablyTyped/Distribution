@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTagsRequest extends js.Object {
+trait ListTagsRequest extends StObject {
   
   /**
     * Reserved for future use.
@@ -26,30 +27,18 @@ object ListTagsRequest {
   }
   
   @scala.inline
-  implicit class ListTagsRequestOps[Self <: ListTagsRequest] (val x: Self) extends AnyVal {
+  implicit class ListTagsRequestMutableBuilder[Self <: ListTagsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceIdList(value: ResourceIdList): Self = StObject.set(x, "ResourceIdList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdListVarargs(value: String*): Self = this.set("ResourceIdList", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceIdList(value: ResourceIdList): Self = this.set("ResourceIdList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setResourceIdListVarargs(value: String*): Self = StObject.set(x, "ResourceIdList", js.Array(value :_*))
   }
 }

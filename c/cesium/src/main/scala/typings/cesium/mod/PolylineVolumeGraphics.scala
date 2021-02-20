@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Shape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PolylineVolumeGraphics")
 @js.native
-class PolylineVolumeGraphics () extends js.Object {
+class PolylineVolumeGraphics () extends StObject {
   def this(options: Shape) = this()
   
   def clone(result: PolylineVolumeGraphics): PolylineVolumeGraphics = js.native

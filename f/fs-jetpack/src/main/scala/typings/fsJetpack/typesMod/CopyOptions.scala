@@ -1,11 +1,12 @@
 package typings.fsJetpack.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyOptions extends js.Object {
+trait CopyOptions extends StObject {
   
   var ignoreCase: js.UndefOr[Boolean] = js.native
   
@@ -22,44 +23,32 @@ object CopyOptions {
   }
   
   @scala.inline
-  implicit class CopyOptionsOps[Self <: CopyOptions] (val x: Self) extends AnyVal {
+  implicit class CopyOptionsMutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatching(value: String | js.Array[String]): Self = StObject.set(x, "matching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
     
     @scala.inline
-    def setMatchingVarargs(value: String*): Self = this.set("matching", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatching(value: String | js.Array[String]): Self = this.set("matching", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatching: Self = this.set("matching", js.undefined)
+    def setOverwrite(value: Boolean | OverwriteFunction): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOverwriteFunction2(
       value: (/* srcInspectData */ InspectResult, /* destInspectData */ InspectResult) => Boolean | js.Promise[Boolean]
-    ): Self = this.set("overwrite", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "overwrite", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOverwrite(value: Boolean | OverwriteFunction): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

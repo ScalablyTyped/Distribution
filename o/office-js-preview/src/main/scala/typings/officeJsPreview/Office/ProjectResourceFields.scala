@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProjectResourceFields extends js.Object
+sealed trait ProjectResourceFields extends StObject
 /**
   * Specifies the resource fields that are available as a parameter for the {@link Office.Document | Document}.getResourceFieldAsync method.
   *
@@ -19,7 +20,7 @@ sealed trait ProjectResourceFields extends js.Object
   */
 @JSGlobal("Office.ProjectResourceFields")
 @js.native
-object ProjectResourceFields extends js.Object {
+object ProjectResourceFields extends StObject {
   
   /**
     * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1,

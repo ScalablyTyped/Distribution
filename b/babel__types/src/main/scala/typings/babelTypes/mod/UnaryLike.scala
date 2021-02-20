@@ -10,6 +10,7 @@ import typings.babelTypes.babelTypesStrings.`throw`
 import typings.babelTypes.babelTypesStrings.delete
 import typings.babelTypes.babelTypesStrings.typeof
 import typings.babelTypes.babelTypesStrings.void
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,21 @@ trait UnaryLike extends _Node
 object UnaryLike {
   
   @scala.inline
+  def SpreadElement_(argument: Expression, `type`: SpreadElement): typings.babelTypes.mod.SpreadElement_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.mod.SpreadElement_]
+  }
+  
+  @scala.inline
   def UnaryExpression_(
     argument: Expression,
     operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
     prefix: Boolean,
     `type`: UnaryExpression
-  ): UnaryLike = {
+  ): typings.babelTypes.mod.UnaryExpression_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UnaryLike]
-  }
-  
-  @scala.inline
-  def SpreadElement_(argument: Expression, `type`: SpreadElement): UnaryLike = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UnaryLike]
+    __obj.asInstanceOf[typings.babelTypes.mod.UnaryExpression_]
   }
 }

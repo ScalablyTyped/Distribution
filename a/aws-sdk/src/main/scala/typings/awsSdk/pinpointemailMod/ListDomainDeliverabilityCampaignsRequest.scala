@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDomainDeliverabilityCampaignsRequest extends js.Object {
+trait ListDomainDeliverabilityCampaignsRequest extends StObject {
   
   /**
     * The last day, in Unix time format, that you want to obtain deliverability data for. This value has to be less than or equal to 30 days after the value of the StartDate parameter.
@@ -41,39 +42,27 @@ object ListDomainDeliverabilityCampaignsRequest {
   }
   
   @scala.inline
-  implicit class ListDomainDeliverabilityCampaignsRequestOps[Self <: ListDomainDeliverabilityCampaignsRequest] (val x: Self) extends AnyVal {
+  implicit class ListDomainDeliverabilityCampaignsRequestMutableBuilder[Self <: ListDomainDeliverabilityCampaignsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setEndDate(value: Timestamp): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: Timestamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def setSubscribedDomain(value: Domain): Self = this.set("SubscribedDomain", value.asInstanceOf[js.Any])
+    def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = this.set("PageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setSubscribedDomain(value: Domain): Self = StObject.set(x, "SubscribedDomain", value.asInstanceOf[js.Any])
   }
 }

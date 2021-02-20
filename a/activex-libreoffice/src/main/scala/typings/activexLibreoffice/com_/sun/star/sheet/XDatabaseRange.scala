@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,54 +110,42 @@ object XDatabaseRange {
   }
   
   @scala.inline
-  implicit class XDatabaseRangeOps[Self <: XDatabaseRange] (val x: Self) extends AnyVal {
+  implicit class XDatabaseRangeMutableBuilder[Self <: XDatabaseRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataArea(value: CellRangeAddress): Self = StObject.set(x, "DataArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterDescriptor(value: XSheetFilterDescriptor): Self = StObject.set(x, "FilterDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDataArea(value: () => CellRangeAddress): Self = StObject.set(x, "getDataArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataArea(value: CellRangeAddress): Self = this.set("DataArea", value.asInstanceOf[js.Any])
+    def setGetFilterDescriptor(value: () => XSheetFilterDescriptor): Self = StObject.set(x, "getFilterDescriptor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFilterDescriptor(value: XSheetFilterDescriptor): Self = this.set("FilterDescriptor", value.asInstanceOf[js.Any])
+    def setGetImportDescriptor(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getImportDescriptor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImportDescriptor(value: SafeArray[PropertyValue]): Self = this.set("ImportDescriptor", value.asInstanceOf[js.Any])
+    def setGetSortDescriptor(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getSortDescriptor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSortDescriptor(value: SafeArray[PropertyValue]): Self = this.set("SortDescriptor", value.asInstanceOf[js.Any])
+    def setGetSubTotalDescriptor(value: () => XSubTotalDescriptor): Self = StObject.set(x, "getSubTotalDescriptor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSubTotalDescriptor(value: XSubTotalDescriptor): Self = this.set("SubTotalDescriptor", value.asInstanceOf[js.Any])
+    def setImportDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ImportDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDataArea(value: () => CellRangeAddress): Self = this.set("getDataArea", js.Any.fromFunction0(value))
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilterDescriptor(value: () => XSheetFilterDescriptor): Self = this.set("getFilterDescriptor", js.Any.fromFunction0(value))
+    def setSetDataArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setDataArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetImportDescriptor(value: () => SafeArray[PropertyValue]): Self = this.set("getImportDescriptor", js.Any.fromFunction0(value))
+    def setSortDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "SortDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSortDescriptor(value: () => SafeArray[PropertyValue]): Self = this.set("getSortDescriptor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSubTotalDescriptor(value: () => XSubTotalDescriptor): Self = this.set("getSubTotalDescriptor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDataArea(value: CellRangeAddress => Unit): Self = this.set("setDataArea", js.Any.fromFunction1(value))
+    def setSubTotalDescriptor(value: XSubTotalDescriptor): Self = StObject.set(x, "SubTotalDescriptor", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.inquirer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,38 +36,26 @@ object ListQuestionOptionsBase {
   }
   
   @scala.inline
-  implicit class ListQuestionOptionsBaseOps[Self <: ListQuestionOptionsBase[_, _], T, TChoiceMap] (val x: Self with (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
+  implicit class ListQuestionOptionsBaseMutableBuilder[Self <: ListQuestionOptionsBase[_, _], T, TChoiceMap] (val x: Self with (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChoicesVarargs(value: DistinctChoice[TChoiceMap]*): Self = this.set("choices", js.Array(value :_*))
+    def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChoicesFunction1(
       value: T => js.Array[DistinctChoice[TChoiceMap]] | js.Promise[js.Array[DistinctChoice[TChoiceMap]]]
-    ): Self = this.set("choices", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "choices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]): Self = this.set("choices", value.asInstanceOf[js.Any])
+    def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
     
     @scala.inline
-    def deleteChoices: Self = this.set("choices", js.undefined)
+    def setChoicesVarargs(value: DistinctChoice[TChoiceMap]*): Self = StObject.set(x, "choices", js.Array(value :_*))
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

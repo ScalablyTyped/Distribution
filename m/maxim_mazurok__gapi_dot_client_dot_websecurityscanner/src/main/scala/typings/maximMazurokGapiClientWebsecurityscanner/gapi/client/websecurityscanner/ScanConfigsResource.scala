@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientWebsecurityscanner.anon.Name
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.Oauthtoken
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.PrettyPrint
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanConfigsResource extends js.Object {
+trait ScanConfigsResource extends StObject {
   
   def create(request: Fields, body: ScanConfig): Request[ScanConfig] = js.native
   /** Creates a new ScanConfig. */

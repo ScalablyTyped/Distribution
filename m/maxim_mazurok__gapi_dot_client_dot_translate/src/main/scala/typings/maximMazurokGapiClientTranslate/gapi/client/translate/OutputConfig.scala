@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputConfig extends js.Object {
+trait OutputConfig extends StObject {
   
   /**
     * Google Cloud Storage destination for output content. For every single input file (for example, gs://a/b/c.[extension]), we generate at most 2 * n output files. (n is the # of
@@ -39,24 +40,12 @@ object OutputConfig {
   }
   
   @scala.inline
-  implicit class OutputConfigOps[Self <: OutputConfig] (val x: Self) extends AnyVal {
+  implicit class OutputConfigMutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsDestination(value: GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcsDestination(value: GcsDestination): Self = this.set("gcsDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsDestination: Self = this.set("gcsDestination", js.undefined)
+    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

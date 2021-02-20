@@ -1,5 +1,6 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,108 +93,96 @@ object IPieChartOptions {
   }
   
   @scala.inline
-  implicit class IPieChartOptionsOps[Self <: IPieChartOptions] (val x: Self) extends AnyVal {
+  implicit class IPieChartOptionsMutableBuilder[Self <: IPieChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartPadding(value: IChartPadding | Double): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassNames(value: IPieChartClasses): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartPadding(value: IChartPadding | Double): Self = this.set("chartPadding", value.asInstanceOf[js.Any])
+    def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     
     @scala.inline
-    def deleteChartPadding: Self = this.set("chartPadding", js.undefined)
+    def setDonut(value: Boolean): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNames(value: IPieChartClasses): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    def setDonutSolid(value: Boolean): Self = StObject.set(x, "donutSolid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassNames: Self = this.set("classNames", js.undefined)
+    def setDonutSolidUndefined: Self = StObject.set(x, "donutSolid", js.undefined)
     
     @scala.inline
-    def setDonut(value: Boolean): Self = this.set("donut", value.asInstanceOf[js.Any])
+    def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
     
     @scala.inline
-    def deleteDonut: Self = this.set("donut", js.undefined)
+    def setDonutWidth(value: Double | String): Self = StObject.set(x, "donutWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDonutSolid(value: Boolean): Self = this.set("donutSolid", value.asInstanceOf[js.Any])
+    def setDonutWidthUndefined: Self = StObject.set(x, "donutWidth", js.undefined)
     
     @scala.inline
-    def deleteDonutSolid: Self = this.set("donutSolid", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDonutWidth(value: Double | String): Self = this.set("donutWidth", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDonutWidth: Self = this.set("donutWidth", js.undefined)
+    def setIgnoreEmptyValues(value: Boolean): Self = StObject.set(x, "ignoreEmptyValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIgnoreEmptyValuesUndefined: Self = StObject.set(x, "ignoreEmptyValues", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLabelDirection(value: String): Self = StObject.set(x, "labelDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreEmptyValues(value: Boolean): Self = this.set("ignoreEmptyValues", value.asInstanceOf[js.Any])
+    def setLabelDirectionUndefined: Self = StObject.set(x, "labelDirection", js.undefined)
     
     @scala.inline
-    def deleteIgnoreEmptyValues: Self = this.set("ignoreEmptyValues", js.undefined)
+    def setLabelInterpolationFnc(value: js.Function): Self = StObject.set(x, "labelInterpolationFnc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDirection(value: String): Self = this.set("labelDirection", value.asInstanceOf[js.Any])
+    def setLabelInterpolationFncUndefined: Self = StObject.set(x, "labelInterpolationFnc", js.undefined)
     
     @scala.inline
-    def deleteLabelDirection: Self = this.set("labelDirection", js.undefined)
+    def setLabelOffset(value: Double): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInterpolationFnc(value: js.Function): Self = this.set("labelInterpolationFnc", value.asInstanceOf[js.Any])
+    def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
     
     @scala.inline
-    def deleteLabelInterpolationFnc: Self = this.set("labelInterpolationFnc", js.undefined)
+    def setLabelPosition(value: String): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOffset(value: Double): Self = this.set("labelOffset", value.asInstanceOf[js.Any])
+    def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
     
     @scala.inline
-    def deleteLabelOffset: Self = this.set("labelOffset", js.undefined)
+    def setShowLabel(value: Boolean): Self = StObject.set(x, "showLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPosition(value: String): Self = this.set("labelPosition", value.asInstanceOf[js.Any])
+    def setShowLabelUndefined: Self = StObject.set(x, "showLabel", js.undefined)
     
     @scala.inline
-    def deleteLabelPosition: Self = this.set("labelPosition", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLabel(value: Boolean): Self = this.set("showLabel", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteShowLabel: Self = this.set("showLabel", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

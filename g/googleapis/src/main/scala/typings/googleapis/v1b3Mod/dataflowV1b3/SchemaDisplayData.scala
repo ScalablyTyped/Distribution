@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Data provided with a pipeline or transform to provide descriptive info.
   */
 @js.native
-trait SchemaDisplayData extends js.Object {
+trait SchemaDisplayData extends StObject {
   
   /**
     * Contains value if the data is of a boolean type.
@@ -87,90 +88,78 @@ object SchemaDisplayData {
   }
   
   @scala.inline
-  implicit class SchemaDisplayDataOps[Self <: SchemaDisplayData] (val x: Self) extends AnyVal {
+  implicit class SchemaDisplayDataMutableBuilder[Self <: SchemaDisplayData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationValue(value: String): Self = StObject.set(x, "durationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setDurationValueUndefined: Self = StObject.set(x, "durationValue", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationValue(value: String): Self = this.set("durationValue", value.asInstanceOf[js.Any])
+    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
     @scala.inline
-    def deleteDurationValue: Self = this.set("durationValue", js.undefined)
+    def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatValue(value: Double): Self = this.set("floatValue", value.asInstanceOf[js.Any])
+    def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
     
     @scala.inline
-    def deleteFloatValue: Self = this.set("floatValue", js.undefined)
+    def setJavaClassValue(value: String): Self = StObject.set(x, "javaClassValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInt64Value(value: String): Self = this.set("int64Value", value.asInstanceOf[js.Any])
+    def setJavaClassValueUndefined: Self = StObject.set(x, "javaClassValue", js.undefined)
     
     @scala.inline
-    def deleteInt64Value: Self = this.set("int64Value", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavaClassValue(value: String): Self = this.set("javaClassValue", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteJavaClassValue: Self = this.set("javaClassValue", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setShortStrValue(value: String): Self = StObject.set(x, "shortStrValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setShortStrValueUndefined: Self = StObject.set(x, "shortStrValue", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortStrValue(value: String): Self = this.set("shortStrValue", value.asInstanceOf[js.Any])
+    def setStrValueUndefined: Self = StObject.set(x, "strValue", js.undefined)
     
     @scala.inline
-    def deleteShortStrValue: Self = this.set("shortStrValue", js.undefined)
+    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrValue(value: String): Self = this.set("strValue", value.asInstanceOf[js.Any])
+    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
     
     @scala.inline
-    def deleteStrValue: Self = this.set("strValue", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.qlikEngineapi.anon.QAxisData
 import typings.qlikEngineapi.anon.QDataPages
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import typings.std.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

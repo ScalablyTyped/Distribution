@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewSummary extends js.Object {
+trait ReviewSummary extends StObject {
   
   /**
     * Average Rating
@@ -31,30 +32,18 @@ object ReviewSummary {
   }
   
   @scala.inline
-  implicit class ReviewSummaryOps[Self <: ReviewSummary] (val x: Self) extends AnyVal {
+  implicit class ReviewSummaryMutableBuilder[Self <: ReviewSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRatingCount(value: Double): Self = StObject.set(x, "ratingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRatingSplit(value: js.Array[RatingCountPerRating]): Self = StObject.set(x, "ratingSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageRating(value: Double): Self = this.set("averageRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatingCount(value: Double): Self = this.set("ratingCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatingSplitVarargs(value: RatingCountPerRating*): Self = this.set("ratingSplit", js.Array(value :_*))
-    
-    @scala.inline
-    def setRatingSplit(value: js.Array[RatingCountPerRating]): Self = this.set("ratingSplit", value.asInstanceOf[js.Any])
+    def setRatingSplitVarargs(value: RatingCountPerRating*): Self = StObject.set(x, "ratingSplit", js.Array(value :_*))
   }
 }

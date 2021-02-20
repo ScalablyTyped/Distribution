@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/kubernetes/api/blob/e771f807/core/v1/types.go#L3179-L3190
   */
 @js.native
-trait SchemaRevisionTemplate extends js.Object {
+trait SchemaRevisionTemplate extends StObject {
   
   /**
     * Optional metadata for this Revision, including labels and annotations.
@@ -32,30 +33,18 @@ object SchemaRevisionTemplate {
   }
   
   @scala.inline
-  implicit class SchemaRevisionTemplateOps[Self <: SchemaRevisionTemplate] (val x: Self) extends AnyVal {
+  implicit class SchemaRevisionTemplateMutableBuilder[Self <: SchemaRevisionTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: SchemaObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpec(value: SchemaRevisionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: SchemaObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setSpec(value: SchemaRevisionSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpec: Self = this.set("spec", js.undefined)
+    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

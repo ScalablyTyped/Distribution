@@ -1,11 +1,12 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapAccordionGroup extends js.Object {
+trait BootstrapAccordionGroup extends StObject {
   
   def getEnabled(): Boolean = js.native
   
@@ -70,75 +71,63 @@ object BootstrapAccordionGroup {
   }
   
   @scala.inline
-  implicit class BootstrapAccordionGroupOps[Self <: BootstrapAccordionGroup] (val x: Self) extends AnyVal {
+  implicit class BootstrapAccordionGroupMutableBuilder[Self <: BootstrapAccordionGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExpanded(value: () => Boolean): Self = StObject.set(x, "getExpanded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHeaderBadgeIconCssClass(value: () => String): Self = StObject.set(x, "getHeaderBadgeIconCssClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("getEnabled", js.Any.fromFunction0(value))
+    def setGetHeaderBadgeText(value: () => String): Self = StObject.set(x, "getHeaderBadgeText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExpanded(value: () => Boolean): Self = this.set("getExpanded", js.Any.fromFunction0(value))
+    def setGetItem(value: Double => BootstrapAccordionItem | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeaderBadgeIconCssClass(value: () => String): Self = this.set("getHeaderBadgeIconCssClass", js.Any.fromFunction0(value))
+    def setGetItemByName(value: String => BootstrapAccordionItem | Null): Self = StObject.set(x, "getItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeaderBadgeText(value: () => String): Self = this.set("getHeaderBadgeText", js.Any.fromFunction0(value))
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItem(value: Double => BootstrapAccordionItem | Null): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemByName(value: String => BootstrapAccordionItem | Null): Self = this.set("getItemByName", js.Any.fromFunction1(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("getItemCount", js.Any.fromFunction0(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("getVisible", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setNavBar(value: BootstrapAccordion): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setNavBarNull: Self = StObject.set(x, "navBar", null)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSetExpanded(value: Boolean => Unit): Self = StObject.set(x, "setExpanded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetExpanded(value: Boolean => Unit): Self = this.set("setExpanded", js.Any.fromFunction1(value))
+    def setSetHeaderBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "setHeaderBadgeIconCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeaderBadgeIconCssClass(value: String => Unit): Self = this.set("setHeaderBadgeIconCssClass", js.Any.fromFunction1(value))
+    def setSetHeaderBadgeText(value: String => Unit): Self = StObject.set(x, "setHeaderBadgeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeaderBadgeText(value: String => Unit): Self = this.set("setHeaderBadgeText", js.Any.fromFunction1(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("setVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNavBar(value: BootstrapAccordion): Self = this.set("navBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavBarNull: Self = this.set("navBar", null)
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

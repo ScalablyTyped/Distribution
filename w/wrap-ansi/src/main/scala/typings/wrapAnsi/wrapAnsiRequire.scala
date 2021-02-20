@@ -1,5 +1,6 @@
 package typings.wrapAnsi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("wrap-ansi", JSImport.Namespace)
 @js.native
-object wrapAnsiRequire extends js.Object
+object wrapAnsiRequire extends StObject

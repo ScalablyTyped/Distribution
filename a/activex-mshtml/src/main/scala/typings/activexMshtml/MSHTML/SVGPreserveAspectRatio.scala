@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGPreserveAspectRatio extends js.Object {
+trait SVGPreserveAspectRatio extends StObject {
   
   @JSName("MSHTML.SVGPreserveAspectRatio_typekey")
   var MSHTMLDotSVGPreserveAspectRatio_typekey: SVGPreserveAspectRatio = js.native
@@ -28,27 +29,15 @@ object SVGPreserveAspectRatio {
   }
   
   @scala.inline
-  implicit class SVGPreserveAspectRatioOps[Self <: SVGPreserveAspectRatio] (val x: Self) extends AnyVal {
+  implicit class SVGPreserveAspectRatioMutableBuilder[Self <: SVGPreserveAspectRatio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSHTMLDotSVGPreserveAspectRatio_typekey(value: SVGPreserveAspectRatio): Self = StObject.set(x, "MSHTML.SVGPreserveAspectRatio_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotSVGPreserveAspectRatio_typekey(value: SVGPreserveAspectRatio): Self = this.set("MSHTML.SVGPreserveAspectRatio_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlign(value: Double): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeetOrSlice(value: Double): Self = this.set("meetOrSlice", value.asInstanceOf[js.Any])
+    def setMeetOrSlice(value: Double): Self = StObject.set(x, "meetOrSlice", value.asInstanceOf[js.Any])
   }
 }

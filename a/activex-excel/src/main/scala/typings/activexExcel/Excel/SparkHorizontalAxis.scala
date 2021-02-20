@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparkHorizontalAxis extends js.Object {
+trait SparkHorizontalAxis extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -40,39 +41,27 @@ object SparkHorizontalAxis {
   }
   
   @scala.inline
-  implicit class SparkHorizontalAxisOps[Self <: SparkHorizontalAxis] (val x: Self) extends AnyVal {
+  implicit class SparkHorizontalAxisMutableBuilder[Self <: SparkHorizontalAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxis(value: SparkColor): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotSparkHorizontalAxis_typekey(value: SparkHorizontalAxis): Self = StObject.set(x, "Excel.SparkHorizontalAxis_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: SparkColor): Self = this.set("Axis", value.asInstanceOf[js.Any])
+    def setIsDateAxis(value: Boolean): Self = StObject.set(x, "IsDateAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSparkHorizontalAxis_typekey(value: SparkHorizontalAxis): Self = this.set("Excel.SparkHorizontalAxis_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDateAxis(value: Boolean): Self = this.set("IsDateAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightToLeftPlotOrder(value: Boolean): Self = this.set("RightToLeftPlotOrder", value.asInstanceOf[js.Any])
+    def setRightToLeftPlotOrder(value: Boolean): Self = StObject.set(x, "RightToLeftPlotOrder", value.asInstanceOf[js.Any])
   }
 }

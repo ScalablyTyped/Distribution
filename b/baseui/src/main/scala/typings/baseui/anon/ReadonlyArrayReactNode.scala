@@ -3,13 +3,14 @@ package typings.baseui.anon
 import typings.react.mod.ReactNode
 import typings.std.FlatArray
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Array<react.react.ReactNode>> */
 @js.native
-trait ReadonlyArrayReactNode extends js.Object {
+trait ReadonlyArrayReactNode extends StObject {
   
   val concat: js.Function1[/* repeated */ js.Array[ReactNode], js.Array[ReactNode]] = js.native
   
@@ -208,37 +209,26 @@ object ReadonlyArrayReactNode {
     sort: () => ReadonlyArrayReactNode,
     splice: /* start */ Double => js.Array[ReactNode],
     toLocaleString: () => String,
-    toString: () => String,
+    toString_ : () => String,
     unshift: /* repeated */ ReactNode => Double,
     values: () => IterableIterator[ReactNode]
   ): ReadonlyArrayReactNode = {
-    val __obj = js.Dynamic.literal(concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), flat = flat.asInstanceOf[js.Any], flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), toLocaleString = js.Any.fromFunction0(toLocaleString), toString = js.Any.fromFunction0(toString), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
+    val __obj = js.Dynamic.literal(concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), flat = flat.asInstanceOf[js.Any], flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), toLocaleString = js.Any.fromFunction0(toLocaleString), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
+    __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
     __obj.asInstanceOf[ReadonlyArrayReactNode]
   }
   
   @scala.inline
-  implicit class ReadonlyArrayReactNodeOps[Self <: ReadonlyArrayReactNode] (val x: Self) extends AnyVal {
+  implicit class ReadonlyArrayReactNodeMutableBuilder[Self <: ReadonlyArrayReactNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcat(value: /* repeated */ js.Array[ReactNode] => js.Array[ReactNode]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyWithin(value: (/* target */ Double, /* start */ Double) => ReadonlyArrayReactNode): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConcat(value: /* repeated */ js.Array[ReactNode] => js.Array[ReactNode]): Self = this.set("concat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCopyWithin(value: (/* target */ Double, /* start */ Double) => ReadonlyArrayReactNode): Self = this.set("copyWithin", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setEntries(value: () => IterableIterator[js.Tuple2[Double, ReactNode]]): Self = this.set("entries", js.Any.fromFunction0(value))
+    def setEntries(value: () => IterableIterator[js.Tuple2[Double, ReactNode]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     
     @scala.inline
     def setEvery(
@@ -248,10 +238,10 @@ object ReadonlyArrayReactNode {
           /* array */ js.Array[ReactNode], 
           /* is react.react.ReactNode */ Boolean
         ] => /* is std.Array<react.react.ReactNode> */ Boolean
-    ): Self = this.set("every", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFill(value: /* value */ ReactNode => ReadonlyArrayReactNode): Self = this.set("fill", js.Any.fromFunction1(value))
+    def setFill(value: /* value */ ReactNode => ReadonlyArrayReactNode): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFilter(
@@ -261,7 +251,7 @@ object ReadonlyArrayReactNode {
           /* array */ js.Array[ReactNode], 
           /* is react.react.ReactNode */ Boolean
         ] => js.Array[ReactNode]
-    ): Self = this.set("filter", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFind(
@@ -272,17 +262,17 @@ object ReadonlyArrayReactNode {
           /* obj */ js.Array[ReactNode], 
           /* is react.react.ReactNode */ Boolean
         ] => js.UndefOr[ReactNode]
-    ): Self = this.set("find", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFindIndex(
       value: /* predicate */ js.Function3[/* value */ ReactNode, /* index */ Double, /* obj */ js.Array[ReactNode], _] => Double
-    ): Self = this.set("findIndex", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFlat(
       value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, typings.baseui.baseuiNumbers.`1`]]]
-    ): Self = this.set("flat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFlatMap(
@@ -293,41 +283,41 @@ object ReadonlyArrayReactNode {
           /* array */ js.Array[ReactNode], 
           _ | js.Array[_]
         ] => js.Array[_]
-    ): Self = this.set("flatMap", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
     
     @scala.inline
     def setForEach(
       value: /* callbackfn */ js.Function3[/* value */ ReactNode, /* index */ Double, /* array */ js.Array[ReactNode], Unit] => Unit
-    ): Self = this.set("forEach", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncludes(value: /* searchElement */ ReactNode => Boolean): Self = this.set("includes", js.Any.fromFunction1(value))
+    def setIncludes(value: /* searchElement */ ReactNode => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexOf(value: /* searchElement */ ReactNode => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
+    def setIndexOf(value: /* searchElement */ ReactNode => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJoin(value: () => String): Self = this.set("join", js.Any.fromFunction0(value))
+    def setJoin(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKeys(value: () => IterableIterator[Double]): Self = this.set("keys", js.Any.fromFunction0(value))
+    def setKeys(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLastIndexOf(value: /* searchElement */ ReactNode => Double): Self = this.set("lastIndexOf", js.Any.fromFunction1(value))
+    def setLastIndexOf(value: /* searchElement */ ReactNode => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMap(
       value: /* callbackfn */ js.Function3[/* value */ ReactNode, /* index */ Double, /* array */ js.Array[ReactNode], _] => js.Array[_]
-    ): Self = this.set("map", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPop(value: () => js.UndefOr[ReactNode]): Self = this.set("pop", js.Any.fromFunction0(value))
+    def setPop(value: () => js.UndefOr[ReactNode]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPush(value: /* repeated */ ReactNode => Double): Self = this.set("push", js.Any.fromFunction1(value))
+    def setPush(value: /* repeated */ ReactNode => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
     def setReduce(
@@ -338,7 +328,7 @@ object ReadonlyArrayReactNode {
           /* array */ js.Array[ReactNode], 
           ReactNode
         ] => ReactNode
-    ): Self = this.set("reduce", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
     
     @scala.inline
     def setReduceRight(
@@ -349,38 +339,38 @@ object ReadonlyArrayReactNode {
           /* array */ js.Array[ReactNode], 
           ReactNode
         ] => ReactNode
-    ): Self = this.set("reduceRight", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReverse(value: () => js.Array[ReactNode]): Self = this.set("reverse", js.Any.fromFunction0(value))
+    def setReverse(value: () => js.Array[ReactNode]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShift(value: () => js.UndefOr[ReactNode]): Self = this.set("shift", js.Any.fromFunction0(value))
+    def setShift(value: () => js.UndefOr[ReactNode]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSlice(value: () => js.Array[ReactNode]): Self = this.set("slice", js.Any.fromFunction0(value))
+    def setSlice(value: () => js.Array[ReactNode]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSome(
       value: /* predicate */ js.Function3[/* value */ ReactNode, /* index */ Double, /* array */ js.Array[ReactNode], _] => Boolean
-    ): Self = this.set("some", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSort(value: () => ReadonlyArrayReactNode): Self = this.set("sort", js.Any.fromFunction0(value))
+    def setSort(value: () => ReadonlyArrayReactNode): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSplice(value: /* start */ Double => js.Array[ReactNode]): Self = this.set("splice", js.Any.fromFunction1(value))
+    def setSplice(value: /* start */ Double => js.Array[ReactNode]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToLocaleString(value: () => String): Self = this.set("toLocaleString", js.Any.fromFunction0(value))
+    def setToLocaleString(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUnshift(value: /* repeated */ ReactNode => Double): Self = this.set("unshift", js.Any.fromFunction1(value))
+    def setUnshift(value: /* repeated */ ReactNode => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValues(value: () => IterableIterator[ReactNode]): Self = this.set("values", js.Any.fromFunction0(value))
+    def setValues(value: () => IterableIterator[ReactNode]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASNObject extends js.Object {
+trait ASNObject extends StObject {
   
   var bitstr: DERBitString = js.native
   
@@ -69,69 +70,57 @@ object ASNObject {
   }
   
   @scala.inline
-  implicit class ASNObjectOps[Self <: ASNObject] (val x: Self) extends AnyVal {
+  implicit class ASNObjectMutableBuilder[Self <: ASNObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitstr(value: DERBitString): Self = StObject.set(x, "bitstr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBool(value: DERBoolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnum(value: DEREnumerated): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitstr(value: DERBitString): Self = this.set("bitstr", value.asInstanceOf[js.Any])
+    def setGentime(value: DERGeneralizedTime): Self = StObject.set(x, "gentime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBool(value: DERBoolean): Self = this.set("bool", value.asInstanceOf[js.Any])
+    def setIa5str(value: DERIA5String): Self = StObject.set(x, "ia5str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnum(value: DEREnumerated): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setInt(value: DERInteger): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGentime(value: DERGeneralizedTime): Self = this.set("gentime", value.asInstanceOf[js.Any])
+    def setNull(value: DERNull): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIa5str(value: DERIA5String): Self = this.set("ia5str", value.asInstanceOf[js.Any])
+    def setNumstr(value: DERNumericString): Self = StObject.set(x, "numstr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInt(value: DERInteger): Self = this.set("int", value.asInstanceOf[js.Any])
+    def setOctstr(value: DEROctetString): Self = StObject.set(x, "octstr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNull(value: DERNull): Self = this.set("null", value.asInstanceOf[js.Any])
+    def setOid(value: DERObjectIdentifier): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumstr(value: DERNumericString): Self = this.set("numstr", value.asInstanceOf[js.Any])
+    def setPrnstr(value: DERPrintableString): Self = StObject.set(x, "prnstr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOctstr(value: DEROctetString): Self = this.set("octstr", value.asInstanceOf[js.Any])
+    def setSeq(value: DERSequence): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOid(value: DERObjectIdentifier): Self = this.set("oid", value.asInstanceOf[js.Any])
+    def setSet(value: DERSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrnstr(value: DERPrintableString): Self = this.set("prnstr", value.asInstanceOf[js.Any])
+    def setTag(value: DERTaggedObject): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeq(value: DERSequence): Self = this.set("seq", value.asInstanceOf[js.Any])
+    def setTelstr(value: DERTeletexString): Self = StObject.set(x, "telstr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: DERSet): Self = this.set("set", value.asInstanceOf[js.Any])
+    def setUtctime(value: DERUTCTime): Self = StObject.set(x, "utctime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: DERTaggedObject): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTelstr(value: DERTeletexString): Self = this.set("telstr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtctime(value: DERUTCTime): Self = this.set("utctime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtf8str(value: DERUTF8String): Self = this.set("utf8str", value.asInstanceOf[js.Any])
+    def setUtf8str(value: DERUTF8String): Self = StObject.set(x, "utf8str", value.asInstanceOf[js.Any])
   }
 }

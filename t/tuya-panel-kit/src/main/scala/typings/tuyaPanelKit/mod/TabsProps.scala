@@ -7,12 +7,13 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Easing
 import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabsProps extends js.Object {
+trait TabsProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.native
   
@@ -77,204 +78,192 @@ object TabsProps {
   }
   
   @scala.inline
-  implicit class TabsPropsOps[Self <: TabsProps] (val x: Self) extends AnyVal {
+  implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceVarargs(value: TabDataSource*): Self = this.set("dataSource", js.Array(value :_*))
+    def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Array[TabDataSource]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setActiveKey(value: Double | String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setAnimationConfig(value: Easing): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveColor(value: String): Self = this.set("activeColor", value.asInstanceOf[js.Any])
+    def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
     
     @scala.inline
-    def deleteActiveColor: Self = this.set("activeColor", js.undefined)
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveKey(value: Double | String): Self = this.set("activeKey", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteActiveKey: Self = this.set("activeKey", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationConfig(value: Easing): Self = this.set("animationConfig", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAnimationConfig: Self = this.set("animationConfig", js.undefined)
+    def setDataSource(value: js.Array[TabDataSource]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setDataSourceVarargs(value: TabDataSource*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setDefaultActiveKey(value: Double | String): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultActiveKey(value: Double | String): Self = this.set("defaultActiveKey", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultActiveKey: Self = this.set("defaultActiveKey", js.undefined)
+    def setExtraSpace(value: Double): Self = StObject.set(x, "extraSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setExtraSpaceUndefined: Self = StObject.set(x, "extraSpace", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMaxItem(value: Double): Self = StObject.set(x, "maxItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraSpace(value: Double): Self = this.set("extraSpace", value.asInstanceOf[js.Any])
+    def setMaxItemUndefined: Self = StObject.set(x, "maxItem", js.undefined)
     
     @scala.inline
-    def deleteExtraSpace: Self = this.set("extraSpace", js.undefined)
+    def setOnChange(value: (/* tab */ TabDataSource, /* idx */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMaxItem(value: Double): Self = this.set("maxItem", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteMaxItem: Self = this.set("maxItem", js.undefined)
+    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: (/* tab */ TabDataSource, /* idx */ Double) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    def setPreloadTimeout(value: Double): Self = StObject.set(x, "preloadTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setPreloadTimeoutUndefined: Self = StObject.set(x, "preloadTimeout", js.undefined)
     
     @scala.inline
-    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setRenderPlaceholder(value: (/* activeIndex */ Double, /* child */ ReactNode) => ReactNode): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreloadTimeout(value: Double): Self = this.set("preloadTimeout", value.asInstanceOf[js.Any])
+    def setRenderPlaceholderUndefined: Self = StObject.set(x, "renderPlaceholder", js.undefined)
     
     @scala.inline
-    def deletePreloadTimeout: Self = this.set("preloadTimeout", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderPlaceholder(value: (/* activeIndex */ Double, /* child */ ReactNode) => ReactNode): Self = this.set("renderPlaceholder", js.Any.fromFunction2(value))
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteRenderPlaceholder: Self = this.set("renderPlaceholder", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSwipeable(value: Boolean): Self = StObject.set(x, "swipeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSwipeableUndefined: Self = StObject.set(x, "swipeable", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTabActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabActiveStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeable(value: Boolean): Self = this.set("swipeable", value.asInstanceOf[js.Any])
+    def setTabActiveStyleNull: Self = StObject.set(x, "tabActiveStyle", null)
     
     @scala.inline
-    def deleteSwipeable: Self = this.set("swipeable", js.undefined)
+    def setTabActiveStyleUndefined: Self = StObject.set(x, "tabActiveStyle", js.undefined)
     
     @scala.inline
-    def setTabActiveStyle(value: StyleProp[ViewStyle]): Self = this.set("tabActiveStyle", value.asInstanceOf[js.Any])
+    def setTabActiveTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "tabActiveTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabActiveStyle: Self = this.set("tabActiveStyle", js.undefined)
+    def setTabActiveTextStyleNull: Self = StObject.set(x, "tabActiveTextStyle", null)
     
     @scala.inline
-    def setTabActiveStyleNull: Self = this.set("tabActiveStyle", null)
+    def setTabActiveTextStyleUndefined: Self = StObject.set(x, "tabActiveTextStyle", js.undefined)
     
     @scala.inline
-    def setTabActiveTextStyle(value: StyleProp[TextStyle]): Self = this.set("tabActiveTextStyle", value.asInstanceOf[js.Any])
+    def setTabContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabContentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabActiveTextStyle: Self = this.set("tabActiveTextStyle", js.undefined)
+    def setTabContentStyleNull: Self = StObject.set(x, "tabContentStyle", null)
     
     @scala.inline
-    def setTabActiveTextStyleNull: Self = this.set("tabActiveTextStyle", null)
+    def setTabContentStyleUndefined: Self = StObject.set(x, "tabContentStyle", js.undefined)
     
     @scala.inline
-    def setTabContentStyle(value: StyleProp[ViewStyle]): Self = this.set("tabContentStyle", value.asInstanceOf[js.Any])
+    def setTabPosition(value: top | bottom): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabContentStyle: Self = this.set("tabContentStyle", js.undefined)
+    def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
     
     @scala.inline
-    def setTabContentStyleNull: Self = this.set("tabContentStyle", null)
+    def setTabStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabPosition(value: top | bottom): Self = this.set("tabPosition", value.asInstanceOf[js.Any])
+    def setTabStyleNull: Self = StObject.set(x, "tabStyle", null)
     
     @scala.inline
-    def deleteTabPosition: Self = this.set("tabPosition", js.undefined)
+    def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
     
     @scala.inline
-    def setTabStyle(value: StyleProp[ViewStyle]): Self = this.set("tabStyle", value.asInstanceOf[js.Any])
+    def setTabTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "tabTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabStyle: Self = this.set("tabStyle", js.undefined)
+    def setTabTextStyleNull: Self = StObject.set(x, "tabTextStyle", null)
     
     @scala.inline
-    def setTabStyleNull: Self = this.set("tabStyle", null)
+    def setTabTextStyleUndefined: Self = StObject.set(x, "tabTextStyle", js.undefined)
     
     @scala.inline
-    def setTabTextStyle(value: StyleProp[TextStyle]): Self = this.set("tabTextStyle", value.asInstanceOf[js.Any])
+    def setUnderlineStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabTextStyle: Self = this.set("tabTextStyle", js.undefined)
+    def setUnderlineStyleNull: Self = StObject.set(x, "underlineStyle", null)
     
     @scala.inline
-    def setTabTextStyleNull: Self = this.set("tabTextStyle", null)
+    def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
     
     @scala.inline
-    def setUnderlineStyle(value: StyleProp[ViewStyle]): Self = this.set("underlineStyle", value.asInstanceOf[js.Any])
+    def setUnderlineWidth(value: Double): Self = StObject.set(x, "underlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderlineStyle: Self = this.set("underlineStyle", js.undefined)
+    def setUnderlineWidthUndefined: Self = StObject.set(x, "underlineWidth", js.undefined)
     
     @scala.inline
-    def setUnderlineStyleNull: Self = this.set("underlineStyle", null)
+    def setVelocityThreshold(value: Double): Self = StObject.set(x, "velocityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlineWidth(value: Double): Self = this.set("underlineWidth", value.asInstanceOf[js.Any])
+    def setVelocityThresholdUndefined: Self = StObject.set(x, "velocityThreshold", js.undefined)
     
     @scala.inline
-    def deleteUnderlineWidth: Self = this.set("underlineWidth", js.undefined)
+    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVelocityThreshold(value: Double): Self = this.set("velocityThreshold", value.asInstanceOf[js.Any])
+    def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
     
     @scala.inline
-    def deleteVelocityThreshold: Self = this.set("velocityThreshold", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyleNull: Self = this.set("wrapperStyle", null)
+    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

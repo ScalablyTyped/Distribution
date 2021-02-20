@@ -1,11 +1,12 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILegend extends js.Object {
+trait ILegend extends StObject {
   
   var align: Double = js.native
   
@@ -89,90 +90,78 @@ object ILegend {
   }
   
   @scala.inline
-  implicit class ILegendOps[Self <: ILegend] (val x: Self) extends AnyVal {
+  implicit class ILegendMutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailRows(value: () => Double): Self = StObject.set(x, "availRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Double): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailRows(value: () => Double): Self = this.set("availRows", js.Any.fromFunction0(value))
+    def setDividing(value: IStroke): Self = StObject.set(x, "dividing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: IRectangle): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setFontColor(value: Boolean): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: IChart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDividing(value: IStroke): Self = this.set("dividing", value.asInstanceOf[js.Any])
+    def setInnerOff(value: Double): Self = StObject.set(x, "innerOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: Boolean): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: IFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInnerOff(value: Double): Self = this.set("innerOff", value.asInstanceOf[js.Any])
+    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setItemText(value: (ISeries, Double) => String): Self = StObject.set(x, "itemText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsVertical(value: () => Boolean): Self = this.set("isVertical", js.Any.fromFunction0(value))
+    def setItemsCount(value: () => Double): Self = StObject.set(x, "itemsCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    def setLegendStyle(value: String): Self = StObject.set(x, "legendStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemText(value: (ISeries, Double) => String): Self = this.set("itemText", js.Any.fromFunction2(value))
+    def setOver(value: Double): Self = StObject.set(x, "over", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsCount(value: () => Double): Self = this.set("itemsCount", js.Any.fromFunction0(value))
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendStyle(value: String): Self = this.set("legendStyle", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOver(value: Double): Self = this.set("over", value.asInstanceOf[js.Any])
+    def setShowValues(value: () => Boolean): Self = StObject.set(x, "showValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setSymbol(value: ISymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTextStyle(value: String): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowValues(value: () => Boolean): Self = this.set("showValues", js.Any.fromFunction0(value))
+    def setTitle(value: IAnnotation): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol(value: ISymbol): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setTotalWidth(value: () => Double): Self = StObject.set(x, "totalWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTextStyle(value: String): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: IAnnotation): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalWidth(value: () => Double): Self = this.set("totalWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

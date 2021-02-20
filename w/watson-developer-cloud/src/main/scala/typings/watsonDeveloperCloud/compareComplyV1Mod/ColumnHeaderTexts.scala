@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An array of values, each being the `text` value of a column header that is applicable to the current cell. */
 @js.native
-trait ColumnHeaderTexts extends js.Object {
+trait ColumnHeaderTexts extends StObject {
   
   /** The `text` value of a column header. */
   var text: js.UndefOr[String] = js.native
@@ -20,24 +21,12 @@ object ColumnHeaderTexts {
   }
   
   @scala.inline
-  implicit class ColumnHeaderTextsOps[Self <: ColumnHeaderTexts] (val x: Self) extends AnyVal {
+  implicit class ColumnHeaderTextsMutableBuilder[Self <: ColumnHeaderTexts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

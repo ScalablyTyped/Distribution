@@ -1,12 +1,13 @@
 package typings.elasticJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "DirectSettingsMixin")
 @js.native
-class DirectSettingsMixin () extends js.Object {
+class DirectSettingsMixin () extends StObject {
   
   /*
     Sets the accuracy.  How similar the suggested terms at least

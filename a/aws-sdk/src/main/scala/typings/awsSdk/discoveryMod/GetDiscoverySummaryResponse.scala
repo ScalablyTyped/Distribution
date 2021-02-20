@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDiscoverySummaryResponse extends js.Object {
+trait GetDiscoverySummaryResponse extends StObject {
   
   /**
     * Details about discovered agents, including agent status and health.
@@ -46,54 +47,42 @@ object GetDiscoverySummaryResponse {
   }
   
   @scala.inline
-  implicit class GetDiscoverySummaryResponseOps[Self <: GetDiscoverySummaryResponse] (val x: Self) extends AnyVal {
+  implicit class GetDiscoverySummaryResponseMutableBuilder[Self <: GetDiscoverySummaryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentSummary(value: CustomerAgentInfo): Self = StObject.set(x, "agentSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentSummaryUndefined: Self = StObject.set(x, "agentSummary", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplications(value: Long): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentSummary(value: CustomerAgentInfo): Self = this.set("agentSummary", value.asInstanceOf[js.Any])
+    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
     @scala.inline
-    def deleteAgentSummary: Self = this.set("agentSummary", js.undefined)
+    def setConnectorSummary(value: CustomerConnectorInfo): Self = StObject.set(x, "connectorSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplications(value: Long): Self = this.set("applications", value.asInstanceOf[js.Any])
+    def setConnectorSummaryUndefined: Self = StObject.set(x, "connectorSummary", js.undefined)
     
     @scala.inline
-    def deleteApplications: Self = this.set("applications", js.undefined)
+    def setServers(value: Long): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorSummary(value: CustomerConnectorInfo): Self = this.set("connectorSummary", value.asInstanceOf[js.Any])
+    def setServersMappedToApplications(value: Long): Self = StObject.set(x, "serversMappedToApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectorSummary: Self = this.set("connectorSummary", js.undefined)
+    def setServersMappedToApplicationsUndefined: Self = StObject.set(x, "serversMappedToApplications", js.undefined)
     
     @scala.inline
-    def setServers(value: Long): Self = this.set("servers", value.asInstanceOf[js.Any])
+    def setServersMappedtoTags(value: Long): Self = StObject.set(x, "serversMappedtoTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServers: Self = this.set("servers", js.undefined)
+    def setServersMappedtoTagsUndefined: Self = StObject.set(x, "serversMappedtoTags", js.undefined)
     
     @scala.inline
-    def setServersMappedToApplications(value: Long): Self = this.set("serversMappedToApplications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServersMappedToApplications: Self = this.set("serversMappedToApplications", js.undefined)
-    
-    @scala.inline
-    def setServersMappedtoTags(value: Long): Self = this.set("serversMappedtoTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServersMappedtoTags: Self = this.set("serversMappedtoTags", js.undefined)
+    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Object extends js.Object {
+trait S3Object extends StObject {
   
   /**
     * The bucket containing the object.
@@ -31,30 +32,18 @@ object S3Object {
   }
   
   @scala.inline
-  implicit class S3ObjectOps[Self <: S3Object] (val x: Self) extends AnyVal {
+  implicit class S3ObjectMutableBuilder[Self <: S3Object] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: S3Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtag(value: S3Etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def setBucket(value: S3Bucket): Self = this.set("bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: S3Key): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEtag(value: S3Etag): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKey(value: S3Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

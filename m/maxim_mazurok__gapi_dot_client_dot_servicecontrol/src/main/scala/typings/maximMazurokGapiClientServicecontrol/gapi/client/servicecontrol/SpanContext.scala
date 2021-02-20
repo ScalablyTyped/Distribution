@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpanContext extends js.Object {
+trait SpanContext extends StObject {
   
   /**
     * The resource name of the span. The format is: projects/[PROJECT_ID_OR_NUMBER]/traces/[TRACE_ID]/spans/[SPAN_ID] `[TRACE_ID]` is a unique identifier for a trace within a project; it
@@ -23,24 +24,12 @@ object SpanContext {
   }
   
   @scala.inline
-  implicit class SpanContextOps[Self <: SpanContext] (val x: Self) extends AnyVal {
+  implicit class SpanContextMutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpanName(value: String): Self = StObject.set(x, "spanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSpanName(value: String): Self = this.set("spanName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpanName: Self = this.set("spanName", js.undefined)
+    def setSpanNameUndefined: Self = StObject.set(x, "spanName", js.undefined)
   }
 }

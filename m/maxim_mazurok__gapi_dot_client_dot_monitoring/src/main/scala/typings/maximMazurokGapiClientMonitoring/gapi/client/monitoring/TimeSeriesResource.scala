@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientMonitoring.anon.AggregationalignmentPeriod
 import typings.maximMazurokGapiClientMonitoring.anon.Alt
 import typings.maximMazurokGapiClientMonitoring.anon.AltCallback
 import typings.maximMazurokGapiClientMonitoring.anon.CallbackFields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSeriesResource extends js.Object {
+trait TimeSeriesResource extends StObject {
   
   /**
     * Creates or adds data to one or more time series. The response is empty if all time series in the request were written. If any time series could not be written, a corresponding

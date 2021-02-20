@@ -1,10 +1,19 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/dict", JSImport.Namespace)
-@js.native
-object fnDictMod extends TopLevel[DictConstructor]
+object fnDictMod extends Shortcut {
+  
+  @JSImport("core-js/fn/dict", JSImport.Namespace)
+  @js.native
+  val ^ : DictConstructor = js.native
+  
+  type _To = DictConstructor
+  
+  /* This means you don't have to write `^`, but can instead just say `fnDictMod.foo` */
+  override def _to: DictConstructor = ^
+}

@@ -1,12 +1,13 @@
 package typings.instagramPrivateApi.anon
 
 import typings.instagramPrivateApi.instagramPrivateApiStrings.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Countrycode extends js.Object {
+trait Countrycode extends StObject {
   
   var country_code: String = js.native
   
@@ -21,27 +22,15 @@ object Countrycode {
   }
   
   @scala.inline
-  implicit class CountrycodeOps[Self <: Countrycode] (val x: Self) extends AnyVal {
+  implicit class CountrycodeMutableBuilder[Self <: Countrycode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSource(value: js.Array[String | default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountry_code(value: String): Self = this.set("country_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceVarargs(value: (String | default)*): Self = this.set("source", js.Array(value :_*))
-    
-    @scala.inline
-    def setSource(value: js.Array[String | default]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSourceVarargs(value: (String | default)*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

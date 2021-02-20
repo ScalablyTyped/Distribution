@@ -1,12 +1,13 @@
 package typings.bmapgl.BMapGL
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalSearchOptions extends js.Object {
+trait LocalSearchOptions extends StObject {
   
   var onInfoHtmlSet: js.UndefOr[js.Function2[/* poi */ LocalResultPoi, /* html */ HTMLElement, Unit]] = js.native
   
@@ -29,54 +30,42 @@ object LocalSearchOptions {
   }
   
   @scala.inline
-  implicit class LocalSearchOptionsOps[Self <: LocalSearchOptions] (val x: Self) extends AnyVal {
+  implicit class LocalSearchOptionsMutableBuilder[Self <: LocalSearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnInfoHtmlSet(value: (/* poi */ LocalResultPoi, /* html */ HTMLElement) => Unit): Self = StObject.set(x, "onInfoHtmlSet", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnInfoHtmlSetUndefined: Self = StObject.set(x, "onInfoHtmlSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMarkersSet(value: /* pois */ js.Array[LocalResultPoi] => Unit): Self = StObject.set(x, "onMarkersSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInfoHtmlSet(value: (/* poi */ LocalResultPoi, /* html */ HTMLElement) => Unit): Self = this.set("onInfoHtmlSet", js.Any.fromFunction2(value))
+    def setOnMarkersSetUndefined: Self = StObject.set(x, "onMarkersSet", js.undefined)
     
     @scala.inline
-    def deleteOnInfoHtmlSet: Self = this.set("onInfoHtmlSet", js.undefined)
+    def setOnResultsHtmlSet(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "onResultsHtmlSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMarkersSet(value: /* pois */ js.Array[LocalResultPoi] => Unit): Self = this.set("onMarkersSet", js.Any.fromFunction1(value))
+    def setOnResultsHtmlSetUndefined: Self = StObject.set(x, "onResultsHtmlSet", js.undefined)
     
     @scala.inline
-    def deleteOnMarkersSet: Self = this.set("onMarkersSet", js.undefined)
+    def setOnSearchComplete(value: /* results */ js.Array[LocalResult] => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnResultsHtmlSet(value: /* container */ HTMLElement => Unit): Self = this.set("onResultsHtmlSet", js.Any.fromFunction1(value))
+    def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
     
     @scala.inline
-    def deleteOnResultsHtmlSet: Self = this.set("onResultsHtmlSet", js.undefined)
+    def setPageCapacity(value: Double): Self = StObject.set(x, "pageCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSearchComplete(value: /* results */ js.Array[LocalResult] => Unit): Self = this.set("onSearchComplete", js.Any.fromFunction1(value))
+    def setPageCapacityUndefined: Self = StObject.set(x, "pageCapacity", js.undefined)
     
     @scala.inline
-    def deleteOnSearchComplete: Self = this.set("onSearchComplete", js.undefined)
+    def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageCapacity(value: Double): Self = this.set("pageCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageCapacity: Self = this.set("pageCapacity", js.undefined)
-    
-    @scala.inline
-    def setRenderOptions(value: RenderOptions): Self = this.set("renderOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderOptions: Self = this.set("renderOptions", js.undefined)
+    def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
   }
 }

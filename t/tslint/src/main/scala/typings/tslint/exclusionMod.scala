@@ -5,16 +5,16 @@ import typings.std.Set
 import typings.tslint.completedDocsRuleMod.All
 import typings.tslint.exclusionDescriptorsMod.ExclusionDescriptor
 import typings.typescript.mod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/completed-docs/exclusion", JSImport.Namespace)
-@js.native
-object exclusionMod extends js.Object {
+object exclusionMod {
   
+  @JSImport("tslint/lib/rules/completed-docs/exclusion", "Exclusion")
   @js.native
-  abstract class Exclusion[TDescriptor /* <: ExclusionDescriptor */] () extends js.Object {
+  abstract class Exclusion[TDescriptor /* <: ExclusionDescriptor */] () extends StObject {
     def this(descriptor: Partial[TDescriptor]) = this()
     
     /* protected */ def createSet[T /* <: All | String */](): Set[T] = js.native

@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAccountUser extends js.Object {
+trait SchemaAccountUser extends StObject {
   
   /**
     * Whether user is an admin.
@@ -41,48 +42,36 @@ object SchemaAccountUser {
   }
   
   @scala.inline
-  implicit class SchemaAccountUserOps[Self <: SchemaAccountUser] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountUserMutableBuilder[Self <: SchemaAccountUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdmin(value: Boolean): Self = this.set("admin", value.asInstanceOf[js.Any])
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def deleteAdmin: Self = this.set("admin", js.undefined)
+    def setOrderManager(value: Boolean): Self = StObject.set(x, "orderManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setOrderManagerUndefined: Self = StObject.set(x, "orderManager", js.undefined)
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    def setPaymentsAnalyst(value: Boolean): Self = StObject.set(x, "paymentsAnalyst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderManager(value: Boolean): Self = this.set("orderManager", value.asInstanceOf[js.Any])
+    def setPaymentsAnalystUndefined: Self = StObject.set(x, "paymentsAnalyst", js.undefined)
     
     @scala.inline
-    def deleteOrderManager: Self = this.set("orderManager", js.undefined)
+    def setPaymentsManager(value: Boolean): Self = StObject.set(x, "paymentsManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentsAnalyst(value: Boolean): Self = this.set("paymentsAnalyst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentsAnalyst: Self = this.set("paymentsAnalyst", js.undefined)
-    
-    @scala.inline
-    def setPaymentsManager(value: Boolean): Self = this.set("paymentsManager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentsManager: Self = this.set("paymentsManager", js.undefined)
+    def setPaymentsManagerUndefined: Self = StObject.set(x, "paymentsManager", js.undefined)
   }
 }

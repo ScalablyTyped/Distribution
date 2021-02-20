@@ -1,11 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NextArgs extends js.Object {
+trait NextArgs extends StObject {
   
   var avoidConstraints: Boolean = js.native
   
@@ -36,45 +37,33 @@ object NextArgs {
   }
   
   @scala.inline
-  implicit class NextArgsOps[Self <: NextArgs] (val x: Self) extends AnyVal {
+  implicit class NextArgsMutableBuilder[Self <: NextArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidConstraints(value: Boolean): Self = StObject.set(x, "avoidConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextInterceptor(value: Context => Context): Self = StObject.set(x, "contextInterceptor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMultiInject(value: Boolean): Self = StObject.set(x, "isMultiInject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidConstraints(value: Boolean): Self = this.set("avoidConstraints", value.asInstanceOf[js.Any])
+    def setKey(value: String | Double | js.Symbol): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextInterceptor(value: Context => Context): Self = this.set("contextInterceptor", js.Any.fromFunction1(value))
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setIsMultiInject(value: Boolean): Self = this.set("isMultiInject", value.asInstanceOf[js.Any])
+    def setServiceIdentifier(value: ServiceIdentifier[_]): Self = StObject.set(x, "serviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceIdentifier(value: ServiceIdentifier[_]): Self = this.set("serviceIdentifier", value.asInstanceOf[js.Any])
+    def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: TargetType): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | Double | js.Symbol): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

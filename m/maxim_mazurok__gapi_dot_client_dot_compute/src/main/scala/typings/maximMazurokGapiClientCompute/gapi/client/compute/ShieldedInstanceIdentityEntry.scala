@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShieldedInstanceIdentityEntry extends js.Object {
+trait ShieldedInstanceIdentityEntry extends StObject {
   
   /** A PEM-encoded X.509 certificate. This field can be empty. */
   var ekCert: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ShieldedInstanceIdentityEntry {
   }
   
   @scala.inline
-  implicit class ShieldedInstanceIdentityEntryOps[Self <: ShieldedInstanceIdentityEntry] (val x: Self) extends AnyVal {
+  implicit class ShieldedInstanceIdentityEntryMutableBuilder[Self <: ShieldedInstanceIdentityEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEkCert(value: String): Self = StObject.set(x, "ekCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEkCertUndefined: Self = StObject.set(x, "ekCert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEkPub(value: String): Self = StObject.set(x, "ekPub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEkCert(value: String): Self = this.set("ekCert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEkCert: Self = this.set("ekCert", js.undefined)
-    
-    @scala.inline
-    def setEkPub(value: String): Self = this.set("ekPub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEkPub: Self = this.set("ekPub", js.undefined)
+    def setEkPubUndefined: Self = StObject.set(x, "ekPub", js.undefined)
   }
 }

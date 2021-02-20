@@ -3,121 +3,84 @@ package typings.babylonjs
 import typings.babylonjs.anon.NameString
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXRFeaturesManager", JSImport.Namespace)
-@js.native
-object webXRFeaturesManagerMod extends js.Object {
+object webXRFeaturesManagerMod {
   
+  @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName")
   @js.native
-  trait IWebXRFeature extends IDisposable {
-    
-    /**
-      * Attach the feature to the session
-      * Will usually be called by the features manager
-      *
-      * @param force should attachment be forced (even when already attached)
-      * @returns true if successful.
-      */
-    def attach(): Boolean = js.native
-    def attach(force: Boolean): Boolean = js.native
-    
-    /**
-      * Is this feature attached
-      */
-    var attached: Boolean = js.native
-    
-    /**
-      * A list of (Babylon WebXR) features this feature depends on
-      */
-    var dependsOn: js.UndefOr[js.Array[String]] = js.native
-    
-    /**
-      * Detach the feature from the session
-      * Will usually be called by the features manager
-      *
-      * @returns true if successful.
-      */
-    def detach(): Boolean = js.native
-    
-    /**
-      * Should auto-attach be disabled?
-      */
-    var disableAutoAttach: Boolean = js.native
-    
-    /**
-      * This function will be executed during before enabling the feature and can be used to not-allow enabling it.
-      * Note that at this point the session has NOT started, so this is purely checking if the browser supports it
-      *
-      * @returns whether or not the feature is compatible in this environment
-      */
-    def isCompatible(): Boolean = js.native
-    
-    /**
-      * Was this feature disposed;
-      */
-    var isDisposed: Boolean = js.native
-    
-    /**
-      * The name of the native xr feature name, if applicable (like anchor, hit-test, or hand-tracking)
-      */
-    var xrNativeFeatureName: js.UndefOr[String] = js.native
-  }
-  
-  @js.native
-  class WebXRFeatureName () extends js.Object
+  class WebXRFeatureName () extends StObject
   /* static members */
-  @js.native
-  object WebXRFeatureName extends js.Object {
+  object WebXRFeatureName {
     
     /**
       * The name of the anchor system feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.ANCHOR_SYSTEM")
+    @js.native
     val ANCHOR_SYSTEM: String = js.native
     
     /**
       * The name of the background remover feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.BACKGROUND_REMOVER")
+    @js.native
     val BACKGROUND_REMOVER: String = js.native
     
     /**
       * The name of the feature points feature.
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.FEATURE_POINTS")
+    @js.native
     val FEATURE_POINTS: String = js.native
     
     /**
       * The name of the hand tracking feature.
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.HAND_TRACKING")
+    @js.native
     val HAND_TRACKING: String = js.native
     
     /**
       * The name of the hit test feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.HIT_TEST")
+    @js.native
     val HIT_TEST: String = js.native
     
     /**
       * physics impostors for xr controllers feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.PHYSICS_CONTROLLERS")
+    @js.native
     val PHYSICS_CONTROLLERS: String = js.native
     
     /**
       * The name of the plane detection feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.PLANE_DETECTION")
+    @js.native
     val PLANE_DETECTION: String = js.native
     
     /**
       * The name of the pointer selection feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.POINTER_SELECTION")
+    @js.native
     val POINTER_SELECTION: String = js.native
     
     /**
       * The name of the teleportation feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeatureName.TELEPORTATION")
+    @js.native
     val TELEPORTATION: String = js.native
   }
   
+  @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager")
   @js.native
   class WebXRFeaturesManager protected () extends IDisposable {
     /**
@@ -421,8 +384,7 @@ object webXRFeaturesManagerMod extends js.Object {
     def getEnabledFeatures(): js.Array[String] = js.native
   }
   /* static members */
-  @js.native
-  object WebXRFeaturesManager extends js.Object {
+  object WebXRFeaturesManager {
     
     /**
       * Used to register a module. After calling this function a developer can use this feature in the scene.
@@ -433,14 +395,22 @@ object webXRFeaturesManagerMod extends js.Object {
       * @param version the (babylon) version of the module
       * @param stable is that a stable version of this module
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
+    @js.native
     def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor): Unit = js.native
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
+    @js.native
     def AddWebXRFeature(
       featureName: String,
       constructorFunction: WebXRFeatureConstructor,
       version: js.UndefOr[scala.Nothing],
       stable: Boolean
     ): Unit = js.native
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
+    @js.native
     def AddWebXRFeature(featureName: String, constructorFunction: WebXRFeatureConstructor, version: Double): Unit = js.native
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.AddWebXRFeature")
+    @js.native
     def AddWebXRFeature(
       featureName: String,
       constructorFunction: WebXRFeatureConstructor,
@@ -448,7 +418,11 @@ object webXRFeaturesManagerMod extends js.Object {
       stable: Boolean
     ): Unit = js.native
     
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
+    @js.native
     def ConstructFeature(featureName: String, version: js.UndefOr[scala.Nothing], xrSessionManager: WebXRSessionManager): js.Function0[IWebXRFeature] = js.native
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
+    @js.native
     def ConstructFeature(
       featureName: String,
       version: js.UndefOr[scala.Nothing],
@@ -464,7 +438,11 @@ object webXRFeaturesManagerMod extends js.Object {
       * @param options optional options provided to the module.
       * @returns a function that, when called, will return a new instance of this feature
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
+    @js.native
     def ConstructFeature(featureName: String, version: Double, xrSessionManager: WebXRSessionManager): js.Function0[IWebXRFeature] = js.native
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.ConstructFeature")
+    @js.native
     def ConstructFeature(featureName: String, version: Double, xrSessionManager: WebXRSessionManager, options: js.Any): js.Function0[IWebXRFeature] = js.native
     
     /**
@@ -472,6 +450,8 @@ object webXRFeaturesManagerMod extends js.Object {
       *
       * @returns an Array of available features
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetAvailableFeatures")
+    @js.native
     def GetAvailableFeatures(): js.Array[String] = js.native
     
     /**
@@ -479,6 +459,8 @@ object webXRFeaturesManagerMod extends js.Object {
       * @param featureName the name of the feature
       * @returns an array with the available versions
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetAvailableVersions")
+    @js.native
     def GetAvailableVersions(featureName: String): js.Array[String] = js.native
     
     /**
@@ -486,6 +468,8 @@ object webXRFeaturesManagerMod extends js.Object {
       * @param featureName the name of the feature to search
       * @returns the version number. if not found will return -1
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetLatestVersionOfFeature")
+    @js.native
     def GetLatestVersionOfFeature(featureName: String): Double = js.native
     
     /**
@@ -493,9 +477,68 @@ object webXRFeaturesManagerMod extends js.Object {
       * @param featureName the name of the feature to search
       * @returns the version number. if not found will return -1
       */
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager.GetStableVersionOfFeature")
+    @js.native
     def GetStableVersionOfFeature(featureName: String): Double = js.native
     
+    @JSImport("babylonjs/XR/webXRFeaturesManager", "WebXRFeaturesManager._AvailableFeatures")
+    @js.native
     val _AvailableFeatures: js.Any = js.native
+  }
+  
+  @js.native
+  trait IWebXRFeature extends IDisposable {
+    
+    /**
+      * Attach the feature to the session
+      * Will usually be called by the features manager
+      *
+      * @param force should attachment be forced (even when already attached)
+      * @returns true if successful.
+      */
+    def attach(): Boolean = js.native
+    def attach(force: Boolean): Boolean = js.native
+    
+    /**
+      * Is this feature attached
+      */
+    var attached: Boolean = js.native
+    
+    /**
+      * A list of (Babylon WebXR) features this feature depends on
+      */
+    var dependsOn: js.UndefOr[js.Array[String]] = js.native
+    
+    /**
+      * Detach the feature from the session
+      * Will usually be called by the features manager
+      *
+      * @returns true if successful.
+      */
+    def detach(): Boolean = js.native
+    
+    /**
+      * Should auto-attach be disabled?
+      */
+    var disableAutoAttach: Boolean = js.native
+    
+    /**
+      * This function will be executed during before enabling the feature and can be used to not-allow enabling it.
+      * Note that at this point the session has NOT started, so this is purely checking if the browser supports it
+      *
+      * @returns whether or not the feature is compatible in this environment
+      */
+    def isCompatible(): Boolean = js.native
+    
+    /**
+      * Was this feature disposed;
+      */
+    var isDisposed: Boolean = js.native
+    
+    /**
+      * The name of the native xr feature name, if applicable (like anchor, hit-test, or hand-tracking)
+      */
+    var xrNativeFeatureName: js.UndefOr[String] = js.native
   }
   
   type WebXRFeatureConstructor = js.Function2[

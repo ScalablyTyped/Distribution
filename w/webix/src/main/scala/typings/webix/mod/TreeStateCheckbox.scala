@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeStateCheckbox extends js.Object {
+trait TreeStateCheckbox extends StObject {
   
   def checkAll(): Unit = js.native
   def checkAll(id: String): Unit = js.native
@@ -25,6 +25,3 @@ trait TreeStateCheckbox extends js.Object {
   
   def uncheckItem(id: String): Unit = js.native
 }
-@JSImport("webix", "TreeStateCheckbox")
-@js.native
-object TreeStateCheckbox extends TopLevel[TreeStateCheckbox]

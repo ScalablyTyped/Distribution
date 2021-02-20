@@ -5,12 +5,13 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.DENIED
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PENDING
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PROCESSING
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.SUCCESS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PayoutHeader extends js.Object {
+trait PayoutHeader extends StObject {
   
   var batch_status: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS = js.native
   
@@ -35,39 +36,27 @@ object PayoutHeader {
   }
   
   @scala.inline
-  implicit class PayoutHeaderOps[Self <: PayoutHeader] (val x: Self) extends AnyVal {
+  implicit class PayoutHeaderMutableBuilder[Self <: PayoutHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch_status(value: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS): Self = StObject.set(x, "batch_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def setBatch_status(value: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS): Self = this.set("batch_status", value.asInstanceOf[js.Any])
+    def setPayout_batch_id(value: String): Self = StObject.set(x, "payout_batch_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayout_batch_id(value: String): Self = this.set("payout_batch_id", value.asInstanceOf[js.Any])
+    def setSender_batch_header(value: PayoutSenderBatchHeader): Self = StObject.set(x, "sender_batch_header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSender_batch_header(value: PayoutSenderBatchHeader): Self = this.set("sender_batch_header", value.asInstanceOf[js.Any])
+    def setTime_created(value: String): Self = StObject.set(x, "time_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Any): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
-    
-    @scala.inline
-    def setTime_created(value: String): Self = this.set("time_created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime_created: Self = this.set("time_created", js.undefined)
+    def setTime_createdUndefined: Self = StObject.set(x, "time_created", js.undefined)
   }
 }

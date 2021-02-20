@@ -1,11 +1,12 @@
 package typings.awsSdk.iotjobsdataplaneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJobExecutionRequest extends js.Object {
+trait UpdateJobExecutionRequest extends StObject {
   
   /**
     * Optional. A number that identifies a particular job execution on a particular device.
@@ -61,63 +62,51 @@ object UpdateJobExecutionRequest {
   }
   
   @scala.inline
-  implicit class UpdateJobExecutionRequestOps[Self <: UpdateJobExecutionRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJobExecutionRequestMutableBuilder[Self <: UpdateJobExecutionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedVersion(value: ExpectedVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
     
     @scala.inline
-    def setStatus(value: JobExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setIncludeJobDocument(value: IncludeJobDocument): Self = StObject.set(x, "includeJobDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    def setIncludeJobDocumentUndefined: Self = StObject.set(x, "includeJobDocument", js.undefined)
     
     @scala.inline
-    def setExecutionNumber(value: ExecutionNumber): Self = this.set("executionNumber", value.asInstanceOf[js.Any])
+    def setIncludeJobExecutionState(value: IncludeExecutionState): Self = StObject.set(x, "includeJobExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionNumber: Self = this.set("executionNumber", js.undefined)
+    def setIncludeJobExecutionStateUndefined: Self = StObject.set(x, "includeJobExecutionState", js.undefined)
     
     @scala.inline
-    def setExpectedVersion(value: ExpectedVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+    def setStatus(value: JobExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeJobDocument(value: IncludeJobDocument): Self = this.set("includeJobDocument", value.asInstanceOf[js.Any])
+    def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeJobDocument: Self = this.set("includeJobDocument", js.undefined)
+    def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
     @scala.inline
-    def setIncludeJobExecutionState(value: IncludeExecutionState): Self = this.set("includeJobExecutionState", value.asInstanceOf[js.Any])
+    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = StObject.set(x, "stepTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeJobExecutionState: Self = this.set("includeJobExecutionState", js.undefined)
+    def setStepTimeoutInMinutesUndefined: Self = StObject.set(x, "stepTimeoutInMinutes", js.undefined)
     
     @scala.inline
-    def setStatusDetails(value: DetailsMap): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
-    
-    @scala.inline
-    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = this.set("stepTimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepTimeoutInMinutes: Self = this.set("stepTimeoutInMinutes", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

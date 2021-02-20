@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object TestReportSetupAction {
   }
   
   @scala.inline
-  implicit class TestReportSetupActionOps[Self <: TestReportSetupAction] (val x: Self) extends AnyVal {
+  implicit class TestReportSetupActionMutableBuilder[Self <: TestReportSetupAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssert(value: TestReportSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: TestReportSetupActionOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssert(value: TestReportSetupActionAssert): Self = this.set("assert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssert: Self = this.set("assert", js.undefined)
-    
-    @scala.inline
-    def setOperation(value: TestReportSetupActionOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

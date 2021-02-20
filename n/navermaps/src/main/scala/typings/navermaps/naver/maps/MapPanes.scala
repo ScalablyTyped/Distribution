@@ -1,12 +1,13 @@
 package typings.navermaps.naver.maps
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapPanes extends js.Object {
+trait MapPanes extends StObject {
   
   var floatPane: HTMLElement = js.native
   
@@ -23,27 +24,15 @@ object MapPanes {
   }
   
   @scala.inline
-  implicit class MapPanesOps[Self <: MapPanes] (val x: Self) extends AnyVal {
+  implicit class MapPanesMutableBuilder[Self <: MapPanes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloatPane(value: HTMLElement): Self = StObject.set(x, "floatPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverlayImage(value: HTMLElement): Self = StObject.set(x, "overlayImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFloatPane(value: HTMLElement): Self = this.set("floatPane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlayImage(value: HTMLElement): Self = this.set("overlayImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlayLayer(value: HTMLElement): Self = this.set("overlayLayer", value.asInstanceOf[js.Any])
+    def setOverlayLayer(value: HTMLElement): Self = StObject.set(x, "overlayLayer", value.asInstanceOf[js.Any])
   }
 }

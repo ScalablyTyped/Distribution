@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * fields.
   */
 @js.native
-trait SchemaNonComplianceDetailCondition extends js.Object {
+trait SchemaNonComplianceDetailCondition extends StObject {
   
   /**
     * The reason the device is not in compliance with the setting. If not set,
@@ -42,36 +43,24 @@ object SchemaNonComplianceDetailCondition {
   }
   
   @scala.inline
-  implicit class SchemaNonComplianceDetailConditionOps[Self <: SchemaNonComplianceDetailCondition] (val x: Self) extends AnyVal {
+  implicit class SchemaNonComplianceDetailConditionMutableBuilder[Self <: SchemaNonComplianceDetailCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonComplianceReason(value: String): Self = StObject.set(x, "nonComplianceReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonComplianceReasonUndefined: Self = StObject.set(x, "nonComplianceReason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonComplianceReason(value: String): Self = this.set("nonComplianceReason", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteNonComplianceReason: Self = this.set("nonComplianceReason", js.undefined)
+    def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
-    
-    @scala.inline
-    def setSettingName(value: String): Self = this.set("settingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingName: Self = this.set("settingName", js.undefined)
+    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
   }
 }

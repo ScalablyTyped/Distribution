@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportApiResponse extends js.Object {
+trait ExportApiResponse extends StObject {
   
   var body: js.UndefOr[ExportedApi] = js.native
 }
@@ -18,24 +19,12 @@ object ExportApiResponse {
   }
   
   @scala.inline
-  implicit class ExportApiResponseOps[Self <: ExportApiResponse] (val x: Self) extends AnyVal {
+  implicit class ExportApiResponseMutableBuilder[Self <: ExportApiResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: ExportedApi): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBody(value: ExportedApi): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

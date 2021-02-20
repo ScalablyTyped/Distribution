@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMessageBatchRequest extends js.Object {
+trait SendMessageBatchRequest extends StObject {
   
   /**
     * A list of  SendMessageBatchRequestEntry  items.
@@ -26,27 +27,15 @@ object SendMessageBatchRequest {
   }
   
   @scala.inline
-  implicit class SendMessageBatchRequestOps[Self <: SendMessageBatchRequest] (val x: Self) extends AnyVal {
+  implicit class SendMessageBatchRequestMutableBuilder[Self <: SendMessageBatchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: SendMessageBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesVarargs(value: SendMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntriesVarargs(value: SendMessageBatchRequestEntry*): Self = this.set("Entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: SendMessageBatchRequestEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueUrl(value: String): Self = this.set("QueueUrl", value.asInstanceOf[js.Any])
+    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

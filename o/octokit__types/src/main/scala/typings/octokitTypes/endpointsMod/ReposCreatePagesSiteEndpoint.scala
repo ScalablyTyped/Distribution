@@ -1,13 +1,14 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.`12`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  owner :string,   repo :string,   source :@octokit/types.@octokit/types/dist-types/generated/Endpoints.ReposCreatePagesSiteParamsSource} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'switcheroo'> */
 @js.native
-trait ReposCreatePagesSiteEndpoint extends js.Object {
+trait ReposCreatePagesSiteEndpoint extends StObject {
   
   var mediaType: `12` = js.native
   
@@ -29,30 +30,18 @@ object ReposCreatePagesSiteEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCreatePagesSiteEndpointOps[Self <: ReposCreatePagesSiteEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCreatePagesSiteEndpointMutableBuilder[Self <: ReposCreatePagesSiteEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: `12`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: `12`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: ReposCreatePagesSiteParamsSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: ReposCreatePagesSiteParamsSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

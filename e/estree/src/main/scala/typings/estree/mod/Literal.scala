@@ -1,6 +1,7 @@
 package typings.estree.mod
 
 import typings.estree.anon.Flags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Literal {
   
   @scala.inline
-  def SimpleLiteral(`type`: typings.estree.estreeStrings.Literal): Literal = {
-    val __obj = js.Dynamic.literal()
+  def RegExpLiteral(regex: Flags, `type`: typings.estree.estreeStrings.Literal): typings.estree.mod.RegExpLiteral = {
+    val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.asInstanceOf[typings.estree.mod.RegExpLiteral]
   }
   
   @scala.inline
-  def RegExpLiteral(regex: Flags, `type`: typings.estree.estreeStrings.Literal): Literal = {
-    val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
+  def SimpleLiteral(`type`: typings.estree.estreeStrings.Literal): typings.estree.mod.SimpleLiteral = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.asInstanceOf[typings.estree.mod.SimpleLiteral]
   }
 }

@@ -2,6 +2,7 @@ package typings.twilioVideo.mod
 
 import typings.twilioVideo.twilioVideoNumbers.`53114`
 import typings.twilioVideo.twilioVideoStrings.`Room creation parameterLeftparenthesissRightparenthesis incompatible with the Room type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

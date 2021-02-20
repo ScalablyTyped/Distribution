@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,42 +61,30 @@ object ISyntaxList2 {
   }
   
   @scala.inline
-  implicit class ISyntaxList2Ops[Self <: ISyntaxList2] (val x: Self) extends AnyVal {
+  implicit class ISyntaxList2MutableBuilder[Self <: ISyntaxList2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAny(value: js.Function1[/* v */ AST, Boolean] => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildAt(value: Double => AST): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildCount(value: () => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_fileName(value: js.Any): Self = this.set("_fileName", value.asInstanceOf[js.Any])
+    def setFirstOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "firstOrDefault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAny(value: js.Function1[/* v */ AST, Boolean] => Boolean): Self = this.set("any", js.Any.fromFunction1(value))
+    def setLastOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "lastOrDefault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildAt(value: Double => AST): Self = this.set("childAt", js.Any.fromFunction1(value))
+    def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildCount(value: () => Double): Self = this.set("childCount", js.Any.fromFunction0(value))
+    def setStructuralEquals(value: (ISyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFirstOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = this.set("firstOrDefault", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLastOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = this.set("lastOrDefault", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMembers(value: js.Any): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (ISyntaxList2, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
   }
 }

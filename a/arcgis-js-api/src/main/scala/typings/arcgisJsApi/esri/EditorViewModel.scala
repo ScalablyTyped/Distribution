@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`editing-existing-feature`
 import typings.arcgisJsApi.arcgisJsApiStrings.`editing-new-feature`
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

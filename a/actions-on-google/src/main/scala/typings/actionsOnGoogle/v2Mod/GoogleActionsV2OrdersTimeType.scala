@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ETA
   - typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT
 */
-trait GoogleActionsV2OrdersTimeType extends js.Object
+trait GoogleActionsV2OrdersTimeType extends StObject
 object GoogleActionsV2OrdersTimeType {
   
   @scala.inline

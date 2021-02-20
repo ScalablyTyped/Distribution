@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreconnectOptions extends js.Object {
+trait PreconnectOptions extends StObject {
   
   /**
     * number of sockets to preconnect. Must be between 1 and 6. Defaults to 1.
@@ -26,27 +27,15 @@ object PreconnectOptions {
   }
   
   @scala.inline
-  implicit class PreconnectOptionsOps[Self <: PreconnectOptions] (val x: Self) extends AnyVal {
+  implicit class PreconnectOptionsMutableBuilder[Self <: PreconnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumSockets(value: Double): Self = StObject.set(x, "numSockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumSocketsUndefined: Self = StObject.set(x, "numSockets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumSockets(value: Double): Self = this.set("numSockets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumSockets: Self = this.set("numSockets", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

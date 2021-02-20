@@ -1,11 +1,12 @@
 package typings.sharepoint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BDelayInit extends js.Object {
+trait BDelayInit extends StObject {
   
   var bDelayInit: Boolean = js.native
   
@@ -22,27 +23,15 @@ object BDelayInit {
   }
   
   @scala.inline
-  implicit class BDelayInitOps[Self <: BDelayInit] (val x: Self) extends AnyVal {
+  implicit class BDelayInitMutableBuilder[Self <: BDelayInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBDelayInit(value: Boolean): Self = StObject.set(x, "bDelayInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeparatorChar(value: String): Self = StObject.set(x, "separatorChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBDelayInit(value: Boolean): Self = this.set("bDelayInit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparatorChar(value: String): Self = this.set("separatorChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleValuePropTypeID(value: String): Self = this.set("singleValuePropTypeID", value.asInstanceOf[js.Any])
+    def setSingleValuePropTypeID(value: String): Self = StObject.set(x, "singleValuePropTypeID", value.asInstanceOf[js.Any])
   }
 }

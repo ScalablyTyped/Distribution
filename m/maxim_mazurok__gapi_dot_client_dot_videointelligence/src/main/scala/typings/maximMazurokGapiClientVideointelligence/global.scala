@@ -5,31 +5,37 @@ import typings.maximMazurokGapiClientVideointelligence.gapi.client.videointellig
 import typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence.VideosResource
 import typings.maximMazurokGapiClientVideointelligence.maximMazurokGapiClientVideointelligenceStrings.v1
 import typings.maximMazurokGapiClientVideointelligence.maximMazurokGapiClientVideointelligenceStrings.videointelligence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Cloud Video Intelligence API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: videointelligence, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: videointelligence, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object videointelligence extends js.Object {
+      object videointelligence {
         
+        @JSGlobal("gapi.client.videointelligence.operations")
+        @js.native
         val operations: OperationsResource = js.native
         
+        @JSGlobal("gapi.client.videointelligence.projects")
+        @js.native
         val projects: ProjectsResource = js.native
         
+        @JSGlobal("gapi.client.videointelligence.videos")
+        @js.native
         val videos: VideosResource = js.native
       }
     }

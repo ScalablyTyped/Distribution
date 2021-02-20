@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTestGridSessionArtifactsResult extends js.Object {
+trait ListTestGridSessionArtifactsResult extends StObject {
   
   /**
     * A list of test grid session artifacts for a TestGridSession.
@@ -26,33 +27,21 @@ object ListTestGridSessionArtifactsResult {
   }
   
   @scala.inline
-  implicit class ListTestGridSessionArtifactsResultOps[Self <: ListTestGridSessionArtifactsResult] (val x: Self) extends AnyVal {
+  implicit class ListTestGridSessionArtifactsResultMutableBuilder[Self <: ListTestGridSessionArtifactsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: TestGridSessionArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactsVarargs(value: TestGridSessionArtifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
     @scala.inline
-    def setArtifactsVarargs(value: TestGridSessionArtifact*): Self = this.set("artifacts", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: TestGridSessionArtifacts): Self = this.set("artifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

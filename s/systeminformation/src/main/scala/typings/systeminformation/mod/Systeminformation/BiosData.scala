@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BiosData extends js.Object {
+trait BiosData extends StObject {
   
   var releaseDate: String = js.native
   
@@ -24,30 +25,18 @@ object BiosData {
   }
   
   @scala.inline
-  implicit class BiosDataOps[Self <: BiosData] (val x: Self) extends AnyVal {
+  implicit class BiosDataMutableBuilder[Self <: BiosData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDate(value: String): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

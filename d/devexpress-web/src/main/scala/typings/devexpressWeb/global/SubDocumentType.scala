@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SubDocumentType")
 @js.native
-object SubDocumentType extends js.Object {
+object SubDocumentType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.devexpressWeb.SubDocumentType with Double] = js.native

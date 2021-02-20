@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedTextLineAlignment extends js.Object
+sealed trait TimedTextLineAlignment extends StObject
 /** Specifies the alignment of a TimedTextLine relative to the TimedTextRegion in which it is displayed. */
 @JSGlobal("Windows.Media.Core.TimedTextLineAlignment")
 @js.native
-object TimedTextLineAlignment extends js.Object {
+object TimedTextLineAlignment extends StObject {
   
   /** The text line is aligned in the center of the region. */
   @js.native

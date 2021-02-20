@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2ImageRedactionConfig extends js.Object {
+trait GooglePrivacyDlpV2ImageRedactionConfig extends StObject {
   
   /**
     * Only one per info_type should be provided per request. If not specified, and redact_all_text is false, the DLP API will redact all text that it matches against all info_types that
@@ -28,36 +29,24 @@ object GooglePrivacyDlpV2ImageRedactionConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ImageRedactionConfigOps[Self <: GooglePrivacyDlpV2ImageRedactionConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ImageRedactionConfigMutableBuilder[Self <: GooglePrivacyDlpV2ImageRedactionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedactAllText(value: Boolean): Self = StObject.set(x, "redactAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    def setRedactAllTextUndefined: Self = StObject.set(x, "redactAllText", js.undefined)
     
     @scala.inline
-    def deleteInfoType: Self = this.set("infoType", js.undefined)
+    def setRedactionColor(value: GooglePrivacyDlpV2Color): Self = StObject.set(x, "redactionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedactAllText(value: Boolean): Self = this.set("redactAllText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedactAllText: Self = this.set("redactAllText", js.undefined)
-    
-    @scala.inline
-    def setRedactionColor(value: GooglePrivacyDlpV2Color): Self = this.set("redactionColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedactionColor: Self = this.set("redactionColor", js.undefined)
+    def setRedactionColorUndefined: Self = StObject.set(x, "redactionColor", js.undefined)
   }
 }

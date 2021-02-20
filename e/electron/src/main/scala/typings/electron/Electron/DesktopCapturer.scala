@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DesktopCapturer extends js.Object {
+trait DesktopCapturer extends StObject {
   
   // Docs: https://electronjs.org/docs/api/desktop-capturer
   /**
@@ -28,21 +29,9 @@ object DesktopCapturer {
   }
   
   @scala.inline
-  implicit class DesktopCapturerOps[Self <: DesktopCapturer] (val x: Self) extends AnyVal {
+  implicit class DesktopCapturerMutableBuilder[Self <: DesktopCapturer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetSources(value: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): Self = this.set("getSources", js.Any.fromFunction1(value))
+    def setGetSources(value: SourcesOptions => js.Promise[js.Array[DesktopCapturerSource]]): Self = StObject.set(x, "getSources", js.Any.fromFunction1(value))
   }
 }

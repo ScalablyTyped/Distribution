@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Retried execution is charged as any other execution.
   */
 @js.native
-trait SchemaRetry extends js.Object
+trait SchemaRetry extends StObject

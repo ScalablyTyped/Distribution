@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,30 +74,18 @@ object XConfiguration {
   }
   
   @scala.inline
-  implicit class XConfigurationOps[Self <: XConfiguration] (val x: Self) extends AnyVal {
+  implicit class XConfigurationMutableBuilder[Self <: XConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResource(value: XResourceId => Unit): Self = StObject.set(x, "addResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetResources(value: (XResourceId, String, AnchorBindingMode) => SafeArray[XResourceId]): Self = StObject.set(x, "getResources", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasResource(value: XResourceId => Boolean): Self = StObject.set(x, "hasResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddResource(value: XResourceId => Unit): Self = this.set("addResource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetResources(value: (XResourceId, String, AnchorBindingMode) => SafeArray[XResourceId]): Self = this.set("getResources", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setHasResource(value: XResourceId => Boolean): Self = this.set("hasResource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveResource(value: XResourceId => Unit): Self = this.set("removeResource", js.Any.fromFunction1(value))
+    def setRemoveResource(value: XResourceId => Unit): Self = StObject.set(x, "removeResource", js.Any.fromFunction1(value))
   }
 }

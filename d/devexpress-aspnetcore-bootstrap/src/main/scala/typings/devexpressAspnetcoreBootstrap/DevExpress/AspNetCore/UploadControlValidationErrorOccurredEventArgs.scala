@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object UploadControlValidationErrorOccurredEventArgs {
   }
   
   @scala.inline
-  implicit class UploadControlValidationErrorOccurredEventArgsOps[Self <: UploadControlValidationErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  implicit class UploadControlValidationErrorOccurredEventArgsMutableBuilder[Self <: UploadControlValidationErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidFiles(value: js.Array[BootstrapUploadControlInvalidFileInfo]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidFilesVarargs(value: BootstrapUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value :_*))
     
     @scala.inline
-    def setErrorText(value: String): Self = this.set("errorText", value.asInstanceOf[js.Any])
+    def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidFilesVarargs(value: BootstrapUploadControlInvalidFileInfo*): Self = this.set("invalidFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setInvalidFiles(value: js.Array[BootstrapUploadControlInvalidFileInfo]): Self = this.set("invalidFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowAlert(value: Boolean): Self = this.set("showAlert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationSettings(value: BootstrapUploadControlValidationSettings): Self = this.set("validationSettings", value.asInstanceOf[js.Any])
+    def setValidationSettings(value: BootstrapUploadControlValidationSettings): Self = StObject.set(x, "validationSettings", value.asInstanceOf[js.Any])
   }
 }

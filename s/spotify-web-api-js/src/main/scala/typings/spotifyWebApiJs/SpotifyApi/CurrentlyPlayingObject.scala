@@ -1,11 +1,12 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentlyPlayingObject extends js.Object {
+trait CurrentlyPlayingObject extends StObject {
   
   var context: ContextObject | Null = js.native
   
@@ -28,45 +29,33 @@ object CurrentlyPlayingObject {
   }
   
   @scala.inline
-  implicit class CurrentlyPlayingObjectOps[Self <: CurrentlyPlayingObject] (val x: Self) extends AnyVal {
+  implicit class CurrentlyPlayingObjectMutableBuilder[Self <: CurrentlyPlayingObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: ContextObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextNull: Self = StObject.set(x, "context", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: UserDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: UserDevice): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setIs_playing(value: Boolean): Self = StObject.set(x, "is_playing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_playing(value: Boolean): Self = this.set("is_playing", value.asInstanceOf[js.Any])
+    def setItem(value: TrackObjectFull): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setItemNull: Self = StObject.set(x, "item", null)
     
     @scala.inline
-    def setContext(value: ContextObject): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setProgress_ms(value: Double): Self = StObject.set(x, "progress_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextNull: Self = this.set("context", null)
+    def setProgress_msNull: Self = StObject.set(x, "progress_ms", null)
     
     @scala.inline
-    def setItem(value: TrackObjectFull): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemNull: Self = this.set("item", null)
-    
-    @scala.inline
-    def setProgress_ms(value: Double): Self = this.set("progress_ms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgress_msNull: Self = this.set("progress_ms", null)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

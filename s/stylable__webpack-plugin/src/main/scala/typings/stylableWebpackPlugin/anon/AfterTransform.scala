@@ -2,12 +2,13 @@ package typings.stylableWebpackPlugin.anon
 
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.module
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.namespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AfterTransform extends js.Object {
+trait AfterTransform extends StObject {
   
   var afterTransform: js.Any = js.native
   
@@ -22,24 +23,12 @@ object AfterTransform {
   }
   
   @scala.inline
-  implicit class AfterTransformOps[Self <: AfterTransform] (val x: Self) extends AnyVal {
+  implicit class AfterTransformMutableBuilder[Self <: AfterTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAfterTransform(value: js.Any): Self = this.set("afterTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuntimeStylesheetId(value: module | namespace): Self = this.set("runtimeStylesheetId", value.asInstanceOf[js.Any])
+    def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
   }
 }

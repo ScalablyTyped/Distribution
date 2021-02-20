@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientCompute.anon.QuotaUserUrlMap
 import typings.maximMazurokGapiClientCompute.anon.RequestIdResourceUrlMap
 import typings.maximMazurokGapiClientCompute.anon.RequestIdUrlMap
 import typings.maximMazurokGapiClientCompute.anon.ResourceUrlMapUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlMapsResource extends js.Object {
+trait UrlMapsResource extends StObject {
   
   /** Retrieves the list of all UrlMap resources, regional and global, available to the specified project. */
   def aggregatedList(): Request[UrlMapsAggregatedList] = js.native

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Review extends js.Object {
+trait Review extends StObject {
   
   /**
     * Admin Reply, if any, for this review
@@ -87,54 +88,42 @@ object Review {
   }
   
   @scala.inline
-  implicit class ReviewOps[Self <: Review] (val x: Self) extends AnyVal {
+  implicit class ReviewMutableBuilder[Self <: Review] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminReply(value: ReviewReply): Self = StObject.set(x, "adminReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminReply(value: ReviewReply): Self = this.set("adminReply", value.asInstanceOf[js.Any])
+    def setIsIgnored(value: Boolean): Self = StObject.set(x, "isIgnored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProductVersion(value: String): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeleted(value: Boolean): Self = this.set("isDeleted", value.asInstanceOf[js.Any])
+    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIgnored(value: Boolean): Self = this.set("isIgnored", value.asInstanceOf[js.Any])
+    def setReply(value: ReviewReply): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductVersion(value: String): Self = this.set("productVersion", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: Double): Self = this.set("rating", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReply(value: ReviewReply): Self = this.set("reply", value.asInstanceOf[js.Any])
+    def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedDate(value: Date): Self = this.set("updatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDisplayName(value: String): Self = this.set("userDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

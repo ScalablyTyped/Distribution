@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the style used to mark the item paragraphs in a list. */
 @JSGlobal("Windows.UI.Text.MarkerStyle")
 @js.native
-object MarkerStyle extends js.Object {
+object MarkerStyle extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.MarkerStyle with Double] = js.native

@@ -10,12 +10,13 @@ import typings.std.HTMLElement
 import typings.std.HTMLIFrameElement
 import typings.std.RegExp
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dom extends js.Object {
+trait Dom extends StObject {
   
   var HTML_CHARACTERS: RegExp = js.native
   

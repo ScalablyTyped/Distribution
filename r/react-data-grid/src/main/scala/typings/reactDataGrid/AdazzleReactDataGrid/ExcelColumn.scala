@@ -1,11 +1,12 @@
 package typings.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcelColumn extends js.Object {
+trait ExcelColumn extends StObject {
   
   var editable: Boolean = js.native
   
@@ -35,36 +36,24 @@ object ExcelColumn {
   }
   
   @scala.inline
-  implicit class ExcelColumnOps[Self <: ExcelColumn] (val x: Self) extends AnyVal {
+  implicit class ExcelColumnMutableBuilder[Self <: ExcelColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setResizeable(value: Boolean): Self = StObject.set(x, "resizeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: js.Any): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResizeable(value: Boolean): Self = this.set("resizeable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

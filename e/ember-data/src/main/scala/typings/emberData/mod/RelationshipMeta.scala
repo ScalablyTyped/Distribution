@@ -4,12 +4,13 @@ import typings.emberData.emberDataBooleans.`true`
 import typings.emberData.emberDataStrings.belongsTo
 import typings.emberData.emberDataStrings.hasMany
 import typings.emberData.mod.DS.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationshipMeta[Model /* <: Model */] extends js.Object {
+trait RelationshipMeta[Model /* <: Model */] extends StObject {
   
   var isRelationship: `true` = js.native
   
@@ -43,39 +44,27 @@ object RelationshipMeta {
   }
   
   @scala.inline
-  implicit class RelationshipMetaOps[Self <: RelationshipMeta[_], Model /* <: Model */] (val x: Self with RelationshipMeta[Model]) extends AnyVal {
+  implicit class RelationshipMetaMutableBuilder[Self <: RelationshipMeta[_], Model /* <: Model */] (val x: Self with RelationshipMeta[Model]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRelationship(value: `true`): Self = StObject.set(x, "isRelationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: RelationshipsFor[Model]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: belongsTo | hasMany): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRelationship(value: `true`): Self = this.set("isRelationship", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: RelationshipsFor[Model]): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOptions(value: RelationshipMetaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: belongsTo | hasMany): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setParentType(value: Model): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: RelationshipMetaOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentType(value: Model): Self = this.set("parentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

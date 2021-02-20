@@ -1,12 +1,13 @@
 package typings.ecmarkup.anon
 
 import typings.std.HTMLUListElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Grammar extends js.Object {
+trait Grammar extends StObject {
   
   var grammar: typings.std.Element = js.native
   
@@ -21,27 +22,15 @@ object Grammar {
   }
   
   @scala.inline
-  implicit class GrammarOps[Self <: Grammar] (val x: Self) extends AnyVal {
+  implicit class GrammarMutableBuilder[Self <: Grammar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrammar(value: typings.std.Element): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLists(value: js.Array[HTMLUListElement]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGrammar(value: typings.std.Element): Self = this.set("grammar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListsVarargs(value: HTMLUListElement*): Self = this.set("lists", js.Array(value :_*))
-    
-    @scala.inline
-    def setLists(value: js.Array[HTMLUListElement]): Self = this.set("lists", value.asInstanceOf[js.Any])
+    def setListsVarargs(value: HTMLUListElement*): Self = StObject.set(x, "lists", js.Array(value :_*))
   }
 }

@@ -6,16 +6,16 @@ import typings.mendixmodelsdk.structuresMod.Structure
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import typings.mendixmodelsdk.utilsMod.utils.IMap
 import typings.mendixmodelsdk.versionChecksMod.PropertyVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/properties/AbstractProperty", JSImport.Namespace)
-@js.native
-object abstractPropertyMod extends js.Object {
+object abstractPropertyMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/AbstractProperty", "AbstractProperty")
   @js.native
-  abstract class AbstractProperty[T, P] protected () extends js.Object {
+  abstract class AbstractProperty[T, P] protected () extends StObject {
     /**
       * parent is the structure that the value of this property attaches to,
       * so e.g. for all values `item` of Part(List)Property we (should) have the invariant:

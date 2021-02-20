@@ -1,12 +1,13 @@
 package typings.openlayers.mod
 
 import typings.openlayers.mod.proj.Projection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SphereMetricOptions extends js.Object {
+trait SphereMetricOptions extends StObject {
   
   /**
     * Projection of the geometry.  By default, the geometry is assumed to be in
@@ -30,30 +31,18 @@ object SphereMetricOptions {
   }
   
   @scala.inline
-  implicit class SphereMetricOptionsOps[Self <: SphereMetricOptions] (val x: Self) extends AnyVal {
+  implicit class SphereMetricOptionsMutableBuilder[Self <: SphereMetricOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: Projection): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

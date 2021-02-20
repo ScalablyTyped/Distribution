@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.Videos
   - typings.reactNative.reactNativeStrings.Photos
 */
-trait CameraRollAssetType extends js.Object
+trait CameraRollAssetType extends StObject
 object CameraRollAssetType {
   
   @scala.inline

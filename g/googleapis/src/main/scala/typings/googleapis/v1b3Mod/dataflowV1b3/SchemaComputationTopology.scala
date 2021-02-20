@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All configuration data for a particular Computation.
   */
 @js.native
-trait SchemaComputationTopology extends js.Object {
+trait SchemaComputationTopology extends StObject {
   
   /**
     * The ID of the computation.
@@ -49,66 +50,54 @@ object SchemaComputationTopology {
   }
   
   @scala.inline
-  implicit class SchemaComputationTopologyOps[Self <: SchemaComputationTopology] (val x: Self) extends AnyVal {
+  implicit class SchemaComputationTopologyMutableBuilder[Self <: SchemaComputationTopology] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputationId(value: String): Self = this.set("computationId", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteComputationId: Self = this.set("computationId", js.undefined)
+    def setInputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: SchemaStreamLocation*): Self = this.set("inputs", js.Array(value :_*))
+    def setKeyRanges(value: js.Array[SchemaKeyRangeLocation]): Self = StObject.set(x, "keyRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[SchemaStreamLocation]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setKeyRangesUndefined: Self = StObject.set(x, "keyRanges", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setKeyRangesVarargs(value: SchemaKeyRangeLocation*): Self = StObject.set(x, "keyRanges", js.Array(value :_*))
     
     @scala.inline
-    def setKeyRangesVarargs(value: SchemaKeyRangeLocation*): Self = this.set("keyRanges", js.Array(value :_*))
+    def setOutputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyRanges(value: js.Array[SchemaKeyRangeLocation]): Self = this.set("keyRanges", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteKeyRanges: Self = this.set("keyRanges", js.undefined)
+    def setOutputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: SchemaStreamLocation*): Self = this.set("outputs", js.Array(value :_*))
+    def setStateFamilies(value: js.Array[SchemaStateFamilyConfig]): Self = StObject.set(x, "stateFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: js.Array[SchemaStreamLocation]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setStateFamiliesUndefined: Self = StObject.set(x, "stateFamilies", js.undefined)
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setStateFamiliesVarargs(value: SchemaStateFamilyConfig*): Self = StObject.set(x, "stateFamilies", js.Array(value :_*))
     
     @scala.inline
-    def setStateFamiliesVarargs(value: SchemaStateFamilyConfig*): Self = this.set("stateFamilies", js.Array(value :_*))
+    def setSystemStageName(value: String): Self = StObject.set(x, "systemStageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateFamilies(value: js.Array[SchemaStateFamilyConfig]): Self = this.set("stateFamilies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateFamilies: Self = this.set("stateFamilies", js.undefined)
-    
-    @scala.inline
-    def setSystemStageName(value: String): Self = this.set("systemStageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemStageName: Self = this.set("systemStageName", js.undefined)
+    def setSystemStageNameUndefined: Self = StObject.set(x, "systemStageName", js.undefined)
   }
 }

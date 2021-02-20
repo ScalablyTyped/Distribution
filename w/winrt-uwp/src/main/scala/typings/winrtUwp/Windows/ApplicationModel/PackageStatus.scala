@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the status of the package. */
 @js.native
-trait PackageStatus extends js.Object {
+trait PackageStatus extends StObject {
   
   /** Indicates whether the data for the package is offline. */
   var dataOffline: Boolean = js.native
@@ -69,54 +70,42 @@ object PackageStatus {
   }
   
   @scala.inline
-  implicit class PackageStatusOps[Self <: PackageStatus] (val x: Self) extends AnyVal {
+  implicit class PackageStatusMutableBuilder[Self <: PackageStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataOffline(value: Boolean): Self = StObject.set(x, "dataOffline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencyIssue(value: Boolean): Self = StObject.set(x, "dependencyIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentInProgress(value: Boolean): Self = StObject.set(x, "deploymentInProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataOffline(value: Boolean): Self = this.set("dataOffline", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyIssue(value: Boolean): Self = this.set("dependencyIssue", value.asInstanceOf[js.Any])
+    def setLicenseIssue(value: Boolean): Self = StObject.set(x, "licenseIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentInProgress(value: Boolean): Self = this.set("deploymentInProgress", value.asInstanceOf[js.Any])
+    def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setNeedsRemediation(value: Boolean): Self = StObject.set(x, "needsRemediation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseIssue(value: Boolean): Self = this.set("licenseIssue", value.asInstanceOf[js.Any])
+    def setNotAvailable(value: Boolean): Self = StObject.set(x, "notAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: Boolean): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setPackageOffline(value: Boolean): Self = StObject.set(x, "packageOffline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedsRemediation(value: Boolean): Self = this.set("needsRemediation", value.asInstanceOf[js.Any])
+    def setServicing(value: Boolean): Self = StObject.set(x, "servicing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAvailable(value: Boolean): Self = this.set("notAvailable", value.asInstanceOf[js.Any])
+    def setTampered(value: Boolean): Self = StObject.set(x, "tampered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageOffline(value: Boolean): Self = this.set("packageOffline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServicing(value: Boolean): Self = this.set("servicing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTampered(value: Boolean): Self = this.set("tampered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerifyIsOK(value: () => Boolean): Self = this.set("verifyIsOK", js.Any.fromFunction0(value))
+    def setVerifyIsOK(value: () => Boolean): Self = StObject.set(x, "verifyIsOK", js.Any.fromFunction0(value))
   }
 }

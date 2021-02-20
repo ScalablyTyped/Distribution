@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagFilter extends js.Object {
+trait TagFilter extends StObject {
   
   /**
     * A name of the tag filter.
@@ -26,27 +27,15 @@ object TagFilter {
   }
   
   @scala.inline
-  implicit class TagFilterOps[Self <: TagFilter] (val x: Self) extends AnyVal {
+  implicit class TagFilterMutableBuilder[Self <: TagFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: FilterName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: FilterValues): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

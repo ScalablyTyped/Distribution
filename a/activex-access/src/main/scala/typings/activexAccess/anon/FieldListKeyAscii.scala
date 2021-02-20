@@ -1,11 +1,12 @@
 package typings.activexAccess.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldListKeyAscii extends js.Object {
+trait FieldListKeyAscii extends StObject {
   
   val FieldList: Double = js.native
   
@@ -20,24 +21,12 @@ object FieldListKeyAscii {
   }
   
   @scala.inline
-  implicit class FieldListKeyAsciiOps[Self <: FieldListKeyAscii] (val x: Self) extends AnyVal {
+  implicit class FieldListKeyAsciiMutableBuilder[Self <: FieldListKeyAscii] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldList(value: Double): Self = StObject.set(x, "FieldList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldList(value: Double): Self = this.set("FieldList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyAscii(value: Double): Self = this.set("KeyAscii", value.asInstanceOf[js.Any])
+    def setKeyAscii(value: Double): Self = StObject.set(x, "KeyAscii", value.asInstanceOf[js.Any])
   }
 }

@@ -7,19 +7,18 @@ import typings.babylonjs.groundMeshMod.GroundMesh
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/Builders/groundBuilder", JSImport.Namespace)
-@js.native
-object groundBuilderMod extends js.Object {
+object groundBuilderMod {
   
+  @JSImport("babylonjs/Meshes/Builders/groundBuilder", "GroundBuilder")
   @js.native
-  class GroundBuilder () extends js.Object
+  class GroundBuilder () extends StObject
   /* static members */
-  @js.native
-  object GroundBuilder extends js.Object {
+  object GroundBuilder {
     
     /**
       * Creates a ground mesh
@@ -32,6 +31,8 @@ object groundBuilderMod extends js.Object {
       * @returns the ground mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#ground
       */
+    @JSImport("babylonjs/Meshes/Builders/groundBuilder", "GroundBuilder.CreateGround")
+    @js.native
     def CreateGround(name: String, options: SubdivisionsX, scene: js.Any): Mesh = js.native
     
     /**
@@ -53,7 +54,11 @@ object groundBuilderMod extends js.Object {
       * @see https://doc.babylonjs.com/babylon101/height_map
       * @see https://doc.babylonjs.com/how_to/set_shapes#ground-from-a-height-map
       */
+    @JSImport("babylonjs/Meshes/Builders/groundBuilder", "GroundBuilder.CreateGroundFromHeightMap")
+    @js.native
     def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter): GroundMesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/groundBuilder", "GroundBuilder.CreateGroundFromHeightMap")
+    @js.native
     def CreateGroundFromHeightMap(name: String, url: String, options: ColorFilter, scene: Nullable[Scene]): GroundMesh = js.native
     
     /**
@@ -69,7 +74,11 @@ object groundBuilderMod extends js.Object {
       * @returns the tiled ground mesh
       * @see https://doc.babylonjs.com/how_to/set_shapes#tiled-ground
       */
+    @JSImport("babylonjs/Meshes/Builders/groundBuilder", "GroundBuilder.CreateTiledGround")
+    @js.native
     def CreateTiledGround(name: String, options: Updatable): Mesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/groundBuilder", "GroundBuilder.CreateTiledGround")
+    @js.native
     def CreateTiledGround(name: String, options: Updatable, scene: Nullable[Scene]): Mesh = js.native
   }
 }

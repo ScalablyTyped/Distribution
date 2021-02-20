@@ -2,16 +2,15 @@ package typings.arrayFrom
 
 import typings.std.ArrayLike
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply[T](arrayLike: ArrayLike[T]): js.Array[T] = js.native
     def apply[T](iterable: Iterable[T]): js.Array[T] = js.native

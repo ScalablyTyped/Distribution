@@ -3,19 +3,19 @@ package typings.phaser.Phaser.Types
 import typings.phaser.Phaser.Display.Color
 import typings.phaser.integer
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Types.Renderer")
-@js.native
-object Renderer extends js.Object {
+object Renderer {
   
-  @js.native
-  object Snapshot extends js.Object {
+  object Snapshot {
+    
+    type SnapshotCallback = js.Function1[/* snapshot */ Color | HTMLImageElement, Unit]
     
     @js.native
-    trait SnapshotState extends js.Object {
+    trait SnapshotState extends StObject {
       
       /**
         * The height of the frame buffer, if a frame buffer grab.
@@ -78,7 +78,5 @@ object Renderer extends js.Object {
         */
       var y: js.UndefOr[integer] = js.native
     }
-    
-    type SnapshotCallback = js.Function1[/* snapshot */ Color | HTMLImageElement, Unit]
   }
 }

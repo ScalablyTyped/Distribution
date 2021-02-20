@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration for exporting to BigQuery.
   */
 @js.native
-trait SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination extends js.Object {
+trait SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination extends StObject {
   
   /**
     * BigQuery URI to a dataset, up to 2000 characters long, in the format
@@ -30,30 +31,18 @@ object SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestinationOps[Self <: SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetUri(value: String): Self = StObject.set(x, "datasetUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUriUndefined: Self = StObject.set(x, "datasetUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaConfig(value: SchemaSchemaConfig): Self = StObject.set(x, "schemaConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetUri(value: String): Self = this.set("datasetUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatasetUri: Self = this.set("datasetUri", js.undefined)
-    
-    @scala.inline
-    def setSchemaConfig(value: SchemaSchemaConfig): Self = this.set("schemaConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaConfig: Self = this.set("schemaConfig", js.undefined)
+    def setSchemaConfigUndefined: Self = StObject.set(x, "schemaConfig", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object ITextArea {
   }
   
   @scala.inline
-  implicit class ITextAreaOps[Self <: ITextArea] (val x: Self) extends AnyVal {
+  implicit class ITextAreaMutableBuilder[Self <: ITextArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMaxRows(value: () => Double): Self = StObject.set(x, "getMaxRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaxRowsUndefined: Self = StObject.set(x, "getMaxRows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMaxRows(value: () => Double): Self = this.set("getMaxRows", js.Any.fromFunction0(value))
+    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
     @scala.inline
-    def deleteGetMaxRows: Self = this.set("getMaxRows", js.undefined)
+    def setSetMaxRows(value: /* maxRows */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRows: Self = this.set("maxRows", js.undefined)
-    
-    @scala.inline
-    def setSetMaxRows(value: /* maxRows */ js.UndefOr[Double] => Unit): Self = this.set("setMaxRows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetMaxRows: Self = this.set("setMaxRows", js.undefined)
+    def setSetMaxRowsUndefined: Self = StObject.set(x, "setMaxRows", js.undefined)
   }
 }

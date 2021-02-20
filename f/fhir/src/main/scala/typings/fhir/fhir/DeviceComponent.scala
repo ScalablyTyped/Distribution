@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,90 +82,78 @@ object DeviceComponent {
   }
   
   @scala.inline
-  implicit class DeviceComponentOps[Self <: DeviceComponent] (val x: Self) extends AnyVal {
+  implicit class DeviceComponentMutableBuilder[Self <: DeviceComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageCode(value: CodeableConcept): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setLastSystemChange(value: instant): Self = StObject.set(x, "lastSystemChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLastSystemChangeUndefined: Self = StObject.set(x, "lastSystemChange", js.undefined)
     
     @scala.inline
-    def set_lastSystemChange(value: Element): Self = this.set("_lastSystemChange", value.asInstanceOf[js.Any])
+    def setMeasurementPrinciple(value: code): Self = StObject.set(x, "measurementPrinciple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_lastSystemChange: Self = this.set("_lastSystemChange", js.undefined)
+    def setMeasurementPrincipleUndefined: Self = StObject.set(x, "measurementPrinciple", js.undefined)
     
     @scala.inline
-    def set_measurementPrinciple(value: Element): Self = this.set("_measurementPrinciple", value.asInstanceOf[js.Any])
+    def setOperationalStatus(value: js.Array[CodeableConcept]): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_measurementPrinciple: Self = this.set("_measurementPrinciple", js.undefined)
+    def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
     @scala.inline
-    def setLanguageCode(value: CodeableConcept): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setOperationalStatusVarargs(value: CodeableConcept*): Self = StObject.set(x, "operationalStatus", js.Array(value :_*))
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setParameterGroup(value: CodeableConcept): Self = StObject.set(x, "parameterGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSystemChange(value: instant): Self = this.set("lastSystemChange", value.asInstanceOf[js.Any])
+    def setParameterGroupUndefined: Self = StObject.set(x, "parameterGroup", js.undefined)
     
     @scala.inline
-    def deleteLastSystemChange: Self = this.set("lastSystemChange", js.undefined)
+    def setParent(value: Reference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurementPrinciple(value: code): Self = this.set("measurementPrinciple", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteMeasurementPrinciple: Self = this.set("measurementPrinciple", js.undefined)
+    def setProductionSpecification(value: js.Array[DeviceComponentProductionSpecification]): Self = StObject.set(x, "productionSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationalStatusVarargs(value: CodeableConcept*): Self = this.set("operationalStatus", js.Array(value :_*))
+    def setProductionSpecificationUndefined: Self = StObject.set(x, "productionSpecification", js.undefined)
     
     @scala.inline
-    def setOperationalStatus(value: js.Array[CodeableConcept]): Self = this.set("operationalStatus", value.asInstanceOf[js.Any])
+    def setProductionSpecificationVarargs(value: DeviceComponentProductionSpecification*): Self = StObject.set(x, "productionSpecification", js.Array(value :_*))
     
     @scala.inline
-    def deleteOperationalStatus: Self = this.set("operationalStatus", js.undefined)
+    def setSource(value: Reference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterGroup(value: CodeableConcept): Self = this.set("parameterGroup", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteParameterGroup: Self = this.set("parameterGroup", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Reference): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def set_lastSystemChange(value: Element): Self = StObject.set(x, "_lastSystemChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def set_lastSystemChangeUndefined: Self = StObject.set(x, "_lastSystemChange", js.undefined)
     
     @scala.inline
-    def setProductionSpecificationVarargs(value: DeviceComponentProductionSpecification*): Self = this.set("productionSpecification", js.Array(value :_*))
+    def set_measurementPrinciple(value: Element): Self = StObject.set(x, "_measurementPrinciple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductionSpecification(value: js.Array[DeviceComponentProductionSpecification]): Self = this.set("productionSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductionSpecification: Self = this.set("productionSpecification", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Reference): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def set_measurementPrincipleUndefined: Self = StObject.set(x, "_measurementPrinciple", js.undefined)
   }
 }

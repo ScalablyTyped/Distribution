@@ -1,12 +1,13 @@
 package typings.asana.mod.auth
 
 import typings.asana.anon.Authorization
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OauthAuthenticatorRequest extends js.Object {
+trait OauthAuthenticatorRequest extends StObject {
   
   /**
     * When browserify-d, the `auth` component of the `request` library
@@ -23,21 +24,9 @@ object OauthAuthenticatorRequest {
   }
   
   @scala.inline
-  implicit class OauthAuthenticatorRequestOps[Self <: OauthAuthenticatorRequest] (val x: Self) extends AnyVal {
+  implicit class OauthAuthenticatorRequestMutableBuilder[Self <: OauthAuthenticatorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeaders(value: Authorization): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeaders(value: Authorization): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

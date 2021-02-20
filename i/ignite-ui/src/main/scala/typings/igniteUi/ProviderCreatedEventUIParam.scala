@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProviderCreatedEventUIParam extends js.Object {
+trait ProviderCreatedEventUIParam extends StObject {
   
   /**
     * Gets reference to the igZoombar.
@@ -26,30 +27,18 @@ object ProviderCreatedEventUIParam {
   }
   
   @scala.inline
-  implicit class ProviderCreatedEventUIParamOps[Self <: ProviderCreatedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ProviderCreatedEventUIParamMutableBuilder[Self <: ProviderCreatedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setProvider(value: js.Any): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

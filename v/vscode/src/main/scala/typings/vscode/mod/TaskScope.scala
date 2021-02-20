@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskScope extends js.Object
+sealed trait TaskScope extends StObject
 @JSImport("vscode", "TaskScope")
 @js.native
-object TaskScope extends js.Object {
+object TaskScope extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskScope with Double] = js.native
@@ -19,14 +19,12 @@ object TaskScope extends js.Object {
     */
   @js.native
   sealed trait Global extends TaskScope
-  /* 1 */ @js.native
-  object Global extends TopLevel[Global with Double]
+  /* 1 */ val Global: typings.vscode.mod.TaskScope.Global with Double = js.native
   
   /**
     * The task is a workspace task
     */
   @js.native
   sealed trait Workspace extends TaskScope
-  /* 2 */ @js.native
-  object Workspace extends TopLevel[Workspace with Double]
+  /* 2 */ val Workspace: typings.vscode.mod.TaskScope.Workspace with Double = js.native
 }

@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.anon
 
 import typings.kiiCloudSdk.KiiCloud.KiiSocialConnectOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object Accesstoken {
   }
   
   @scala.inline
-  implicit class AccesstokenOps[Self <: Accesstoken] (val x: Self) extends AnyVal {
+  implicit class AccesstokenMutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenID(value: String): Self = StObject.set(x, "openID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenID(value: String): Self = this.set("openID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenID: Self = this.set("openID", js.undefined)
+    def setOpenIDUndefined: Self = StObject.set(x, "openID", js.undefined)
   }
 }

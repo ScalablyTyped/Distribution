@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Label extends js.Object {
+trait Label extends StObject {
   
   /**
     * Level of confidence.
@@ -36,48 +37,36 @@ object Label {
   }
   
   @scala.inline
-  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = this.set("Instances", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: Instances): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("Instances", js.undefined)
+    def setParents(value: Parents): Self = StObject.set(x, "Parents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setParentsUndefined: Self = StObject.set(x, "Parents", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setParentsVarargs(value: Parent*): Self = this.set("Parents", js.Array(value :_*))
-    
-    @scala.inline
-    def setParents(value: Parents): Self = this.set("Parents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParents: Self = this.set("Parents", js.undefined)
+    def setParentsVarargs(value: Parent*): Self = StObject.set(x, "Parents", js.Array(value :_*))
   }
 }

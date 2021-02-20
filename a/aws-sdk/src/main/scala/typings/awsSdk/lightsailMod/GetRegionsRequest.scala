@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRegionsRequest extends js.Object {
+trait GetRegionsRequest extends StObject {
   
   /**
     * A Boolean value indicating whether to also include Availability Zones in your get regions request. Availability Zones are indicated with a letter: e.g., us-east-2a.
@@ -26,30 +27,18 @@ object GetRegionsRequest {
   }
   
   @scala.inline
-  implicit class GetRegionsRequestOps[Self <: GetRegionsRequest] (val x: Self) extends AnyVal {
+  implicit class GetRegionsRequestMutableBuilder[Self <: GetRegionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeAvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeAvailabilityZonesUndefined: Self = StObject.set(x, "includeAvailabilityZones", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeRelationalDatabaseAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeRelationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAvailabilityZones(value: Boolean): Self = this.set("includeAvailabilityZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeAvailabilityZones: Self = this.set("includeAvailabilityZones", js.undefined)
-    
-    @scala.inline
-    def setIncludeRelationalDatabaseAvailabilityZones(value: Boolean): Self = this.set("includeRelationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeRelationalDatabaseAvailabilityZones: Self = this.set("includeRelationalDatabaseAvailabilityZones", js.undefined)
+    def setIncludeRelationalDatabaseAvailabilityZonesUndefined: Self = StObject.set(x, "includeRelationalDatabaseAvailabilityZones", js.undefined)
   }
 }

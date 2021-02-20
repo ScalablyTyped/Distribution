@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateInstancesResult extends js.Object {
+trait TerminateInstancesResult extends StObject {
   
   /**
     * Information about the terminated instances.
@@ -21,27 +22,15 @@ object TerminateInstancesResult {
   }
   
   @scala.inline
-  implicit class TerminateInstancesResultOps[Self <: TerminateInstancesResult] (val x: Self) extends AnyVal {
+  implicit class TerminateInstancesResultMutableBuilder[Self <: TerminateInstancesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTerminatingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "TerminatingInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTerminatingInstancesUndefined: Self = StObject.set(x, "TerminatingInstances", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTerminatingInstancesVarargs(value: InstanceStateChange*): Self = this.set("TerminatingInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerminatingInstances(value: InstanceStateChangeList): Self = this.set("TerminatingInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminatingInstances: Self = this.set("TerminatingInstances", js.undefined)
+    def setTerminatingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "TerminatingInstances", js.Array(value :_*))
   }
 }

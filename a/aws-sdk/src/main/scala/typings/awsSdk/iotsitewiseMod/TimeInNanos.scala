@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeInNanos extends js.Object {
+trait TimeInNanos extends StObject {
   
   /**
     * The nanosecond offset from timeInSeconds.
@@ -26,27 +27,15 @@ object TimeInNanos {
   }
   
   @scala.inline
-  implicit class TimeInNanosOps[Self <: TimeInNanos] (val x: Self) extends AnyVal {
+  implicit class TimeInNanosMutableBuilder[Self <: TimeInNanos] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffsetInNanos(value: OffsetInNanos): Self = StObject.set(x, "offsetInNanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffsetInNanosUndefined: Self = StObject.set(x, "offsetInNanos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimeInSeconds(value: TimeInSeconds): Self = this.set("timeInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetInNanos(value: OffsetInNanos): Self = this.set("offsetInNanos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetInNanos: Self = this.set("offsetInNanos", js.undefined)
+    def setTimeInSeconds(value: TimeInSeconds): Self = StObject.set(x, "timeInSeconds", value.asInstanceOf[js.Any])
   }
 }

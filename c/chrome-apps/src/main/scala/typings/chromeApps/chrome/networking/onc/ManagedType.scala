@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedType[T] extends js.Object {
+trait ManagedType[T] extends StObject {
   
   /** The active value currently used by the network configuration manager (e.g. Shill). */
   var Active: js.UndefOr[T] = js.native
@@ -48,66 +49,54 @@ object ManagedType {
   }
   
   @scala.inline
-  implicit class ManagedTypeOps[Self <: ManagedType[_], T] (val x: Self with ManagedType[T]) extends AnyVal {
+  implicit class ManagedTypeMutableBuilder[Self <: ManagedType[_], T] (val x: Self with ManagedType[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: T): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceEditable(value: Boolean): Self = StObject.set(x, "DeviceEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: T): Self = this.set("Active", value.asInstanceOf[js.Any])
+    def setDeviceEditableUndefined: Self = StObject.set(x, "DeviceEditable", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("Active", js.undefined)
+    def setDevicePolicy(value: T): Self = StObject.set(x, "DevicePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceEditable(value: Boolean): Self = this.set("DeviceEditable", value.asInstanceOf[js.Any])
+    def setDevicePolicyUndefined: Self = StObject.set(x, "DevicePolicy", js.undefined)
     
     @scala.inline
-    def deleteDeviceEditable: Self = this.set("DeviceEditable", js.undefined)
+    def setEffective(value: String): Self = StObject.set(x, "Effective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePolicy(value: T): Self = this.set("DevicePolicy", value.asInstanceOf[js.Any])
+    def setEffectiveUndefined: Self = StObject.set(x, "Effective", js.undefined)
     
     @scala.inline
-    def deleteDevicePolicy: Self = this.set("DevicePolicy", js.undefined)
+    def setSharedSetting(value: T): Self = StObject.set(x, "SharedSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffective(value: String): Self = this.set("Effective", value.asInstanceOf[js.Any])
+    def setSharedSettingUndefined: Self = StObject.set(x, "SharedSetting", js.undefined)
     
     @scala.inline
-    def deleteEffective: Self = this.set("Effective", js.undefined)
+    def setUserEditable(value: Boolean): Self = StObject.set(x, "UserEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedSetting(value: T): Self = this.set("SharedSetting", value.asInstanceOf[js.Any])
+    def setUserEditableUndefined: Self = StObject.set(x, "UserEditable", js.undefined)
     
     @scala.inline
-    def deleteSharedSetting: Self = this.set("SharedSetting", js.undefined)
+    def setUserPolicy(value: T): Self = StObject.set(x, "UserPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserEditable(value: Boolean): Self = this.set("UserEditable", value.asInstanceOf[js.Any])
+    def setUserPolicyUndefined: Self = StObject.set(x, "UserPolicy", js.undefined)
     
     @scala.inline
-    def deleteUserEditable: Self = this.set("UserEditable", js.undefined)
+    def setUserSetting(value: T): Self = StObject.set(x, "UserSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPolicy(value: T): Self = this.set("UserPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPolicy: Self = this.set("UserPolicy", js.undefined)
-    
-    @scala.inline
-    def setUserSetting(value: T): Self = this.set("UserSetting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSetting: Self = this.set("UserSetting", js.undefined)
+    def setUserSettingUndefined: Self = StObject.set(x, "UserSetting", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.angularCompiler.srcCompilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,12 @@ class TreeError protected ()
   def this(elementName: Null, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String) = this()
 }
 /* static members */
-@JSImport("@angular/compiler/src/compiler", "TreeError")
-@js.native
-object TreeError extends js.Object {
+object TreeError {
   
+  @JSImport("@angular/compiler/src/compiler", "TreeError.create")
+  @js.native
   def create(elementName: String, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String): typings.angularCompiler.mlParserParserMod.TreeError = js.native
+  @JSImport("@angular/compiler/src/compiler", "TreeError.create")
+  @js.native
   def create(elementName: Null, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String): typings.angularCompiler.mlParserParserMod.TreeError = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderreturnsProcessRequest extends js.Object {
+trait OrderreturnsProcessRequest extends StObject {
   
   /** Option to charge the customer return shipping cost. */
   var fullChargeReturnShippingCost: js.UndefOr[Boolean] = js.native
@@ -28,45 +29,33 @@ object OrderreturnsProcessRequest {
   }
   
   @scala.inline
-  implicit class OrderreturnsProcessRequestOps[Self <: OrderreturnsProcessRequest] (val x: Self) extends AnyVal {
+  implicit class OrderreturnsProcessRequestMutableBuilder[Self <: OrderreturnsProcessRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullChargeReturnShippingCost(value: Boolean): Self = StObject.set(x, "fullChargeReturnShippingCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullChargeReturnShippingCostUndefined: Self = StObject.set(x, "fullChargeReturnShippingCost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullChargeReturnShippingCost(value: Boolean): Self = this.set("fullChargeReturnShippingCost", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteFullChargeReturnShippingCost: Self = this.set("fullChargeReturnShippingCost", js.undefined)
+    def setRefundShippingFee(value: OrderreturnsRefundOperation): Self = StObject.set(x, "refundShippingFee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setRefundShippingFeeUndefined: Self = StObject.set(x, "refundShippingFee", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setReturnItems(value: js.Array[OrderreturnsReturnItem]): Self = StObject.set(x, "returnItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefundShippingFee(value: OrderreturnsRefundOperation): Self = this.set("refundShippingFee", value.asInstanceOf[js.Any])
+    def setReturnItemsUndefined: Self = StObject.set(x, "returnItems", js.undefined)
     
     @scala.inline
-    def deleteRefundShippingFee: Self = this.set("refundShippingFee", js.undefined)
-    
-    @scala.inline
-    def setReturnItemsVarargs(value: OrderreturnsReturnItem*): Self = this.set("returnItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setReturnItems(value: js.Array[OrderreturnsReturnItem]): Self = this.set("returnItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnItems: Self = this.set("returnItems", js.undefined)
+    def setReturnItemsVarargs(value: OrderreturnsReturnItem*): Self = StObject.set(x, "returnItems", js.Array(value :_*))
   }
 }

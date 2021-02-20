@@ -2,6 +2,7 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import typings.googleapis.anon.MysqlExportOptions
 import typings.googleapis.anon.SelectQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Database instance export context.
   */
 @js.native
-trait SchemaExportContext extends js.Object {
+trait SchemaExportContext extends StObject {
   
   /**
     * Options for exporting data as CSV.
@@ -63,57 +64,45 @@ object SchemaExportContext {
   }
   
   @scala.inline
-  implicit class SchemaExportContextOps[Self <: SchemaExportContext] (val x: Self) extends AnyVal {
+  implicit class SchemaExportContextMutableBuilder[Self <: SchemaExportContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvExportOptions(value: SelectQuery): Self = StObject.set(x, "csvExportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsvExportOptionsUndefined: Self = StObject.set(x, "csvExportOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabases(value: js.Array[String]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvExportOptions(value: SelectQuery): Self = this.set("csvExportOptions", value.asInstanceOf[js.Any])
+    def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
     @scala.inline
-    def deleteCsvExportOptions: Self = this.set("csvExportOptions", js.undefined)
+    def setDatabasesVarargs(value: String*): Self = StObject.set(x, "databases", js.Array(value :_*))
     
     @scala.inline
-    def setDatabasesVarargs(value: String*): Self = this.set("databases", js.Array(value :_*))
+    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabases(value: js.Array[String]): Self = this.set("databases", value.asInstanceOf[js.Any])
+    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     @scala.inline
-    def deleteDatabases: Self = this.set("databases", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFileType: Self = this.set("fileType", js.undefined)
+    def setSqlExportOptions(value: MysqlExportOptions): Self = StObject.set(x, "sqlExportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSqlExportOptionsUndefined: Self = StObject.set(x, "sqlExportOptions", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlExportOptions(value: MysqlExportOptions): Self = this.set("sqlExportOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlExportOptions: Self = this.set("sqlExportOptions", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

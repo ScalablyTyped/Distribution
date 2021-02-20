@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.dockerode.anon.RefCount
 import typings.dockerode.dockerodeStrings.global
 import typings.dockerode.dockerodeStrings.local
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tslint:enable:interface-name */
 @js.native
-trait VolumeInspectInfo extends js.Object {
+trait VolumeInspectInfo extends StObject {
   
   var Driver: String = js.native
   
@@ -45,54 +46,42 @@ object VolumeInspectInfo {
   }
   
   @scala.inline
-  implicit class VolumeInspectInfoOps[Self <: VolumeInspectInfo] (val x: Self) extends AnyVal {
+  implicit class VolumeInspectInfoMutableBuilder[Self <: VolumeInspectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMountpoint(value: String): Self = StObject.set(x, "Mountpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("Driver", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountpoint(value: String): Self = this.set("Mountpoint", value.asInstanceOf[js.Any])
+    def setOptionsNull: Self = StObject.set(x, "Options", null)
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setScope(value: local | global): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: local | global): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    def setStatus(value: StringDictionary[String]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def setOptionsNull: Self = this.set("Options", null)
+    def setUsageData(value: RefCount): Self = StObject.set(x, "UsageData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StringDictionary[String]): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUsageDataNull: Self = StObject.set(x, "UsageData", null)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUsageData(value: RefCount): Self = this.set("UsageData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageData: Self = this.set("UsageData", js.undefined)
-    
-    @scala.inline
-    def setUsageDataNull: Self = this.set("UsageData", null)
+    def setUsageDataUndefined: Self = StObject.set(x, "UsageData", js.undefined)
   }
 }

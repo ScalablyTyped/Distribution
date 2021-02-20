@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to modify assignee mode and options of a coursework.
   */
 @js.native
-trait SchemaModifyCourseWorkAssigneesRequest extends js.Object {
+trait SchemaModifyCourseWorkAssigneesRequest extends StObject {
   
   /**
     * Mode of the coursework describing whether it will be assigned to all
@@ -31,30 +32,18 @@ object SchemaModifyCourseWorkAssigneesRequest {
   }
   
   @scala.inline
-  implicit class SchemaModifyCourseWorkAssigneesRequestOps[Self <: SchemaModifyCourseWorkAssigneesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaModifyCourseWorkAssigneesRequestMutableBuilder[Self <: SchemaModifyCourseWorkAssigneesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssigneeModeUndefined: Self = StObject.set(x, "assigneeMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifyIndividualStudentsOptions(value: SchemaModifyIndividualStudentsOptions): Self = StObject.set(x, "modifyIndividualStudentsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssigneeMode(value: String): Self = this.set("assigneeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssigneeMode: Self = this.set("assigneeMode", js.undefined)
-    
-    @scala.inline
-    def setModifyIndividualStudentsOptions(value: SchemaModifyIndividualStudentsOptions): Self = this.set("modifyIndividualStudentsOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifyIndividualStudentsOptions: Self = this.set("modifyIndividualStudentsOptions", js.undefined)
+    def setModifyIndividualStudentsOptionsUndefined: Self = StObject.set(x, "modifyIndividualStudentsOptions", js.undefined)
   }
 }

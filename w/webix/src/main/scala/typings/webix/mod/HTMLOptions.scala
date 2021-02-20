@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLOptions extends js.Object {
+trait HTMLOptions extends StObject {
   
   def addOption(id: String, value: js.Any): Unit = js.native
   def addOption(id: String, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
@@ -38,6 +38,3 @@ trait HTMLOptions extends js.Object {
   def showOption(id: String): Unit = js.native
   def showOption(id: Double): Unit = js.native
 }
-@JSImport("webix", "HTMLOptions")
-@js.native
-object HTMLOptions extends TopLevel[HTMLOptions]

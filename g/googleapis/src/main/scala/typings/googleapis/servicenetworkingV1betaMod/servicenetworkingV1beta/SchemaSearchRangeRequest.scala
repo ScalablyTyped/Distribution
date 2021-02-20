@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to search for an unused range within allocated ranges.
   */
 @js.native
-trait SchemaSearchRangeRequest extends js.Object {
+trait SchemaSearchRangeRequest extends StObject {
   
   /**
     * Required. The prefix length of the IP range. Use usual CIDR range
@@ -36,30 +37,18 @@ object SchemaSearchRangeRequest {
   }
   
   @scala.inline
-  implicit class SchemaSearchRangeRequestOps[Self <: SchemaSearchRangeRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchRangeRequestMutableBuilder[Self <: SchemaSearchRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpPrefixLength(value: Double): Self = this.set("ipPrefixLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpPrefixLength: Self = this.set("ipPrefixLength", js.undefined)
-    
-    @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

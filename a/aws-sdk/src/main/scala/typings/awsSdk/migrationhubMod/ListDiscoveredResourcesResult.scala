@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDiscoveredResourcesResult extends js.Object {
+trait ListDiscoveredResourcesResult extends StObject {
   
   /**
     * Returned list of discovered resources associated with the given MigrationTask.
@@ -26,33 +27,21 @@ object ListDiscoveredResourcesResult {
   }
   
   @scala.inline
-  implicit class ListDiscoveredResourcesResultOps[Self <: ListDiscoveredResourcesResult] (val x: Self) extends AnyVal {
+  implicit class ListDiscoveredResourcesResultMutableBuilder[Self <: ListDiscoveredResourcesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscoveredResourceList(value: DiscoveredResourceList): Self = StObject.set(x, "DiscoveredResourceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscoveredResourceListUndefined: Self = StObject.set(x, "DiscoveredResourceList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscoveredResourceListVarargs(value: DiscoveredResource*): Self = StObject.set(x, "DiscoveredResourceList", js.Array(value :_*))
     
     @scala.inline
-    def setDiscoveredResourceListVarargs(value: DiscoveredResource*): Self = this.set("DiscoveredResourceList", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscoveredResourceList(value: DiscoveredResourceList): Self = this.set("DiscoveredResourceList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscoveredResourceList: Self = this.set("DiscoveredResourceList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

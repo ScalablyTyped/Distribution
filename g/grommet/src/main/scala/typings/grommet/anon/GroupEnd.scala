@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupEnd extends js.Object {
+trait GroupEnd extends StObject {
   
   var body: js.UndefOr[`14`] = js.native
   
@@ -32,66 +33,54 @@ object GroupEnd {
   }
   
   @scala.inline
-  implicit class GroupEndOps[Self <: GroupEnd] (val x: Self) extends AnyVal {
+  implicit class GroupEndMutableBuilder[Self <: GroupEnd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: `14`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupEnd(value: `16`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: `14`): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setGroupEndUndefined: Self = StObject.set(x, "groupEnd", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setGroupHeader(value: Fill): Self = StObject.set(x, "groupHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupEnd(value: `16`): Self = this.set("groupEnd", value.asInstanceOf[js.Any])
+    def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
     
     @scala.inline
-    def deleteGroupEnd: Self = this.set("groupEnd", js.undefined)
+    def setHeader(value: Gap): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupHeader(value: Fill): Self = this.set("groupHeader", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteGroupHeader: Self = this.set("groupHeader", js.undefined)
+    def setIcons(value: Ascending): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Gap): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setPinned(value: Body): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Ascending): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setPrimary(value: `18`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: Body): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deletePinned: Self = this.set("pinned", js.undefined)
+    def setResize(value: `17`): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: `18`): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
-    
-    @scala.inline
-    def setResize(value: `17`): Self = this.set("resize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
   }
 }

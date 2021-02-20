@@ -1,14 +1,16 @@
 package typings.videoJs.mod.default
 
+import typings.videoJs.mod.videojs.Slider
 import typings.videoJs.mod.videojs.SliderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "Slider")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.Slider")
 @js.native
-class SliderCls protected ()
-  extends typings.videoJs.mod.videojs.Slider {
+class SliderCls protected () extends Slider {
   /**
     * Create an instance of this class
     *

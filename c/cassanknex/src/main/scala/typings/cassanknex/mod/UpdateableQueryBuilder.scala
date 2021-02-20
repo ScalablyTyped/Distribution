@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import typings.std.Partial
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateableQueryBuilder[T] extends js.Object {
+trait UpdateableQueryBuilder[T] extends StObject {
   
   def add(`object`: Partial[T]): this.type = js.native
   def add[K /* <: /* keyof T */ String */](

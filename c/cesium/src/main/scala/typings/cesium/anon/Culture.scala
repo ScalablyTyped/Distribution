@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.TileDiscardPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Culture extends js.Object {
+trait Culture extends StObject {
   
   var culture: js.UndefOr[String] = js.native
   
@@ -33,63 +34,51 @@ object Culture {
   }
   
   @scala.inline
-  implicit class CultureOps[Self <: Culture] (val x: Self) extends AnyVal {
+  implicit class CultureMutableBuilder[Self <: Culture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setMapStyle(value: String): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setProxy(value: typings.cesium.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def setMapStyle(value: String): Self = this.set("mapStyle", value.asInstanceOf[js.Any])
+    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapStyle: Self = this.set("mapStyle", js.undefined)
+    def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
     
     @scala.inline
-    def setProxy(value: typings.cesium.mod.Proxy): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setTileProtocol(value: String): Self = StObject.set(x, "tileProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setTileProtocolUndefined: Self = StObject.set(x, "tileProtocol", js.undefined)
     
     @scala.inline
-    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = this.set("tileDiscardPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileDiscardPolicy: Self = this.set("tileDiscardPolicy", js.undefined)
-    
-    @scala.inline
-    def setTileProtocol(value: String): Self = this.set("tileProtocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileProtocol: Self = this.set("tileProtocol", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

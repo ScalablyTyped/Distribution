@@ -1,5 +1,6 @@
 package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The JSON template for a DataTransfer resource.
   */
 @js.native
-trait SchemaDataTransfer extends js.Object {
+trait SchemaDataTransfer extends StObject {
   
   /**
     * List of per application data transfer resources. It contains data
@@ -63,69 +64,57 @@ object SchemaDataTransfer {
   }
   
   @scala.inline
-  implicit class SchemaDataTransferOps[Self <: SchemaDataTransfer] (val x: Self) extends AnyVal {
+  implicit class SchemaDataTransferMutableBuilder[Self <: SchemaDataTransfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationDataTransfers(value: js.Array[SchemaApplicationDataTransfer]): Self = StObject.set(x, "applicationDataTransfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationDataTransfersUndefined: Self = StObject.set(x, "applicationDataTransfers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationDataTransfersVarargs(value: SchemaApplicationDataTransfer*): Self = StObject.set(x, "applicationDataTransfers", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationDataTransfersVarargs(value: SchemaApplicationDataTransfer*): Self = this.set("applicationDataTransfers", js.Array(value :_*))
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationDataTransfers(value: js.Array[SchemaApplicationDataTransfer]): Self = this.set("applicationDataTransfers", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteApplicationDataTransfers: Self = this.set("applicationDataTransfers", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNewOwnerUserId(value: String): Self = StObject.set(x, "newOwnerUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNewOwnerUserIdUndefined: Self = StObject.set(x, "newOwnerUserId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOldOwnerUserId(value: String): Self = StObject.set(x, "oldOwnerUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewOwnerUserId(value: String): Self = this.set("newOwnerUserId", value.asInstanceOf[js.Any])
+    def setOldOwnerUserIdUndefined: Self = StObject.set(x, "oldOwnerUserId", js.undefined)
     
     @scala.inline
-    def deleteNewOwnerUserId: Self = this.set("newOwnerUserId", js.undefined)
+    def setOverallTransferStatusCode(value: String): Self = StObject.set(x, "overallTransferStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldOwnerUserId(value: String): Self = this.set("oldOwnerUserId", value.asInstanceOf[js.Any])
+    def setOverallTransferStatusCodeUndefined: Self = StObject.set(x, "overallTransferStatusCode", js.undefined)
     
     @scala.inline
-    def deleteOldOwnerUserId: Self = this.set("oldOwnerUserId", js.undefined)
+    def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverallTransferStatusCode(value: String): Self = this.set("overallTransferStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverallTransferStatusCode: Self = this.set("overallTransferStatusCode", js.undefined)
-    
-    @scala.inline
-    def setRequestTime(value: String): Self = this.set("requestTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestTime: Self = this.set("requestTime", js.undefined)
+    def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
   }
 }

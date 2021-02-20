@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.funnel3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -232,171 +233,159 @@ object SeriesFunnel3dOptions {
   }
   
   @scala.inline
-  implicit class SeriesFunnel3dOptionsOps[Self <: SeriesFunnel3dOptions] (val x: Self) extends AnyVal {
+  implicit class SeriesFunnel3dOptionsMutableBuilder[Self <: SeriesFunnel3dOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: js.Array[Double | String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: String | funnel3d): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterVarargs(value: (Double | String)*): Self = this.set("center", js.Array(value :_*))
+    def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
     
     @scala.inline
-    def setCenter(value: js.Array[Double | String]): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
     
     @scala.inline
-    def setConnectEnds(value: Boolean): Self = this.set("connectEnds", value.asInstanceOf[js.Any])
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectEnds: Self = this.set("connectEnds", js.undefined)
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def setConnectNulls(value: Boolean): Self = this.set("connectNulls", value.asInstanceOf[js.Any])
+    def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectNulls: Self = this.set("connectNulls", js.undefined)
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
     @scala.inline
-    def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
     @scala.inline
-    def setGapSize(value: Double): Self = this.set("gapSize", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGapSize: Self = this.set("gapSize", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setGapUnit(value: OptionsGapUnitValue): Self = this.set("gapUnit", value.asInstanceOf[js.Any])
+    def setIgnoreHiddenPoint(value: Boolean): Self = StObject.set(x, "ignoreHiddenPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGapUnit: Self = this.set("gapUnit", js.undefined)
+    def setIgnoreHiddenPointUndefined: Self = StObject.set(x, "ignoreHiddenPoint", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setIgnoreHiddenPoint(value: Boolean): Self = this.set("ignoreHiddenPoint", value.asInstanceOf[js.Any])
+    def setLegendIndex(value: Double): Self = StObject.set(x, "legendIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreHiddenPoint: Self = this.set("ignoreHiddenPoint", js.undefined)
+    def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def setLegendIndex(value: Double): Self = this.set("legendIndex", value.asInstanceOf[js.Any])
+    def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegendIndex: Self = this.set("legendIndex", js.undefined)
+    def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
     @scala.inline
-    def setLinecap(value: SeriesLinecapValue): Self = this.set("linecap", value.asInstanceOf[js.Any])
+    def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
     
     @scala.inline
-    def deleteLinecap: Self = this.set("linecap", js.undefined)
+    def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapDataVarargs(value: SeriesMapDataOptions*): Self = this.set("mapData", js.Array(value :_*))
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = this.set("mapData", value.asInstanceOf[js.Any])
+    def setMinSize(value: Double | String): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapData: Self = this.set("mapData", js.undefined)
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def setMarker(value: PointMarkerOptionsObject): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMinSize(value: Double | String): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setSlicedOffset(value: Double): Self = StObject.set(x, "slicedOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setSlicedOffsetUndefined: Self = StObject.set(x, "slicedOffset", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def setSlicedOffset(value: Double): Self = this.set("slicedOffset", value.asInstanceOf[js.Any])
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSlicedOffset: Self = this.set("slicedOffset", js.undefined)
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def setStack(value: Double | String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setType(value: String | funnel3d): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: OptionsStepValue): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseOhlcData(value: Boolean): Self = this.set("useOhlcData", value.asInstanceOf[js.Any])
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def deleteUseOhlcData: Self = this.set("useOhlcData", js.undefined)
+    def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double | String): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
-    
-    @scala.inline
-    def setYAxis(value: Double | String): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

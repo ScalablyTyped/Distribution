@@ -5,12 +5,13 @@ import typings.mfiles.MFiles.MFBuiltInObjectClass
 import typings.mfiles.MFiles.MFObjectVersionFlag
 import typings.mfiles.MFiles.MFSpecialObjectFlag
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectVersion extends js.Object {
+trait IObjectVersion extends StObject {
   
   val AccessedByMeUtc: Date = js.native
   
@@ -139,135 +140,123 @@ object IObjectVersion {
   }
   
   @scala.inline
-  implicit class IObjectVersionOps[Self <: IObjectVersion] (val x: Self) extends AnyVal {
+  implicit class IObjectVersionMutableBuilder[Self <: IObjectVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessedByMeUtc(value: Date): Self = StObject.set(x, "AccessedByMeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedOutAtUtc(value: Date): Self = StObject.set(x, "CheckedOutAtUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedOutTo(value: Double): Self = StObject.set(x, "CheckedOutTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessedByMeUtc(value: Date): Self = this.set("AccessedByMeUtc", value.asInstanceOf[js.Any])
+    def setCheckedOutToHostName(value: String): Self = StObject.set(x, "CheckedOutToHostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedOutAtUtc(value: Date): Self = this.set("CheckedOutAtUtc", value.asInstanceOf[js.Any])
+    def setCheckedOutToUserName(value: String): Self = StObject.set(x, "CheckedOutToUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedOutTo(value: Double): Self = this.set("CheckedOutTo", value.asInstanceOf[js.Any])
+    def setCheckedOutVersion(value: Double): Self = StObject.set(x, "CheckedOutVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedOutToHostName(value: String): Self = this.set("CheckedOutToHostName", value.asInstanceOf[js.Any])
+    def setClass(value: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedOutToUserName(value: String): Self = this.set("CheckedOutToUserName", value.asInstanceOf[js.Any])
+    def setClone(value: () => IObjectVersion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckedOutVersion(value: Double): Self = this.set("CheckedOutVersion", value.asInstanceOf[js.Any])
+    def setCreatedUtc(value: Date): Self = StObject.set(x, "CreatedUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IObjectVersion): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDisplayID(value: String): Self = StObject.set(x, "DisplayID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedUtc(value: Date): Self = this.set("CreatedUtc", value.asInstanceOf[js.Any])
+    def setDisplayIDAvailable(value: Boolean): Self = StObject.set(x, "DisplayIDAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    def setFiles(value: IObjectFiles): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayID(value: String): Self = this.set("DisplayID", value.asInstanceOf[js.Any])
+    def setFilesCount(value: Double): Self = StObject.set(x, "FilesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayIDAvailable(value: Boolean): Self = this.set("DisplayIDAvailable", value.asInstanceOf[js.Any])
+    def setGetNameForFileSystem(value: Boolean => String): Self = StObject.set(x, "GetNameForFileSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFiles(value: IObjectFiles): Self = this.set("Files", value.asInstanceOf[js.Any])
+    def setGetNameForFileSystemEx(value: (Boolean, Boolean) => String): Self = StObject.set(x, "GetNameForFileSystemEx", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFilesCount(value: Double): Self = this.set("FilesCount", value.asInstanceOf[js.Any])
+    def setHasAssignments(value: Boolean): Self = StObject.set(x, "HasAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNameForFileSystem(value: Boolean => String): Self = this.set("GetNameForFileSystem", js.Any.fromFunction1(value))
+    def setHasSharedFiles(value: Boolean): Self = StObject.set(x, "HasSharedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNameForFileSystemEx(value: (Boolean, Boolean) => String): Self = this.set("GetNameForFileSystemEx", js.Any.fromFunction2(value))
+    def setIsAccessedByMeValid(value: Boolean): Self = StObject.set(x, "IsAccessedByMeValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAssignments(value: Boolean): Self = this.set("HasAssignments", value.asInstanceOf[js.Any])
+    def setIsObjectConflict(value: Boolean): Self = StObject.set(x, "IsObjectConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSharedFiles(value: Boolean): Self = this.set("HasSharedFiles", value.asInstanceOf[js.Any])
+    def setIsObjectShortcut(value: Boolean): Self = StObject.set(x, "IsObjectShortcut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAccessedByMeValid(value: Boolean): Self = this.set("IsAccessedByMeValid", value.asInstanceOf[js.Any])
+    def setLastModifiedUtc(value: Date): Self = StObject.set(x, "LastModifiedUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsObjectConflict(value: Boolean): Self = this.set("IsObjectConflict", value.asInstanceOf[js.Any])
+    def setLatestCheckedInVersion(value: Double): Self = StObject.set(x, "LatestCheckedInVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsObjectShortcut(value: Boolean): Self = this.set("IsObjectShortcut", value.asInstanceOf[js.Any])
+    def setLatestCheckedInVersionOrCheckedOutVersion(value: Boolean): Self = StObject.set(x, "LatestCheckedInVersionOrCheckedOutVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedUtc(value: Date): Self = this.set("LastModifiedUtc", value.asInstanceOf[js.Any])
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestCheckedInVersion(value: Double): Self = this.set("LatestCheckedInVersion", value.asInstanceOf[js.Any])
+    def setObjectCheckedOut(value: Boolean): Self = StObject.set(x, "ObjectCheckedOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestCheckedInVersionOrCheckedOutVersion(value: Boolean): Self = this.set("LatestCheckedInVersionOrCheckedOutVersion", value.asInstanceOf[js.Any])
+    def setObjectCheckedOutToThisUserOnAnyComputer(value: Boolean): Self = StObject.set(x, "ObjectCheckedOutToThisUserOnAnyComputer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
+    def setObjectCheckedOutToThisUserOnThisComputer(value: Boolean): Self = StObject.set(x, "ObjectCheckedOutToThisUserOnThisComputer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectCheckedOut(value: Boolean): Self = this.set("ObjectCheckedOut", value.asInstanceOf[js.Any])
+    def setObjectFlags(value: MFSpecialObjectFlag): Self = StObject.set(x, "ObjectFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectCheckedOutToThisUserOnAnyComputer(value: Boolean): Self = this.set("ObjectCheckedOutToThisUserOnAnyComputer", value.asInstanceOf[js.Any])
+    def setObjectGUID(value: String): Self = StObject.set(x, "ObjectGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectCheckedOutToThisUserOnThisComputer(value: Boolean): Self = this.set("ObjectCheckedOutToThisUserOnThisComputer", value.asInstanceOf[js.Any])
+    def setObjectVersionFlags(value: MFObjectVersionFlag): Self = StObject.set(x, "ObjectVersionFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectFlags(value: MFSpecialObjectFlag): Self = this.set("ObjectFlags", value.asInstanceOf[js.Any])
+    def setOriginalObjID(value: IObjID): Self = StObject.set(x, "OriginalObjID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectGUID(value: String): Self = this.set("ObjectGUID", value.asInstanceOf[js.Any])
+    def setOriginalVaultGUID(value: String): Self = StObject.set(x, "OriginalVaultGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectVersionFlags(value: MFObjectVersionFlag): Self = this.set("ObjectVersionFlags", value.asInstanceOf[js.Any])
+    def setSingleFile(value: Boolean): Self = StObject.set(x, "SingleFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalObjID(value: IObjID): Self = this.set("OriginalObjID", value.asInstanceOf[js.Any])
+    def setThisVersionCheckedOut(value: Boolean): Self = StObject.set(x, "ThisVersionCheckedOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalVaultGUID(value: String): Self = this.set("OriginalVaultGUID", value.asInstanceOf[js.Any])
+    def setThisVersionLatestToThisUser(value: Boolean): Self = StObject.set(x, "ThisVersionLatestToThisUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleFile(value: Boolean): Self = this.set("SingleFile", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThisVersionCheckedOut(value: Boolean): Self = this.set("ThisVersionCheckedOut", value.asInstanceOf[js.Any])
+    def setVersionGUID(value: String): Self = StObject.set(x, "VersionGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThisVersionLatestToThisUser(value: Boolean): Self = this.set("ThisVersionLatestToThisUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionGUID(value: String): Self = this.set("VersionGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleAfterOperation(value: Boolean): Self = this.set("VisibleAfterOperation", value.asInstanceOf[js.Any])
+    def setVisibleAfterOperation(value: Boolean): Self = StObject.set(x, "VisibleAfterOperation", value.asInstanceOf[js.Any])
   }
 }

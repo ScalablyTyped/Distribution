@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnomalyMonitor extends js.Object {
+trait AnomalyMonitor extends StObject {
   
   /**
     *  The date when the monitor was created. 
@@ -58,66 +59,54 @@ object AnomalyMonitor {
   }
   
   @scala.inline
-  implicit class AnomalyMonitorOps[Self <: AnomalyMonitor] (val x: Self) extends AnyVal {
+  implicit class AnomalyMonitorMutableBuilder[Self <: AnomalyMonitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: YearMonthDay): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionalValueCount(value: NonNegativeInteger): Self = StObject.set(x, "DimensionalValueCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorName(value: GenericString): Self = this.set("MonitorName", value.asInstanceOf[js.Any])
+    def setDimensionalValueCountUndefined: Self = StObject.set(x, "DimensionalValueCount", js.undefined)
     
     @scala.inline
-    def setMonitorType(value: MonitorType): Self = this.set("MonitorType", value.asInstanceOf[js.Any])
+    def setLastEvaluatedDate(value: YearMonthDay): Self = StObject.set(x, "LastEvaluatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: YearMonthDay): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setLastEvaluatedDateUndefined: Self = StObject.set(x, "LastEvaluatedDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setLastUpdatedDate(value: YearMonthDay): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionalValueCount(value: NonNegativeInteger): Self = this.set("DimensionalValueCount", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteDimensionalValueCount: Self = this.set("DimensionalValueCount", js.undefined)
+    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEvaluatedDate(value: YearMonthDay): Self = this.set("LastEvaluatedDate", value.asInstanceOf[js.Any])
+    def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
     
     @scala.inline
-    def deleteLastEvaluatedDate: Self = this.set("LastEvaluatedDate", js.undefined)
+    def setMonitorDimension(value: MonitorDimension): Self = StObject.set(x, "MonitorDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: YearMonthDay): Self = this.set("LastUpdatedDate", value.asInstanceOf[js.Any])
+    def setMonitorDimensionUndefined: Self = StObject.set(x, "MonitorDimension", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("LastUpdatedDate", js.undefined)
+    def setMonitorName(value: GenericString): Self = StObject.set(x, "MonitorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorArn(value: GenericString): Self = this.set("MonitorArn", value.asInstanceOf[js.Any])
+    def setMonitorSpecification(value: Expression): Self = StObject.set(x, "MonitorSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonitorArn: Self = this.set("MonitorArn", js.undefined)
+    def setMonitorSpecificationUndefined: Self = StObject.set(x, "MonitorSpecification", js.undefined)
     
     @scala.inline
-    def setMonitorDimension(value: MonitorDimension): Self = this.set("MonitorDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitorDimension: Self = this.set("MonitorDimension", js.undefined)
-    
-    @scala.inline
-    def setMonitorSpecification(value: Expression): Self = this.set("MonitorSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitorSpecification: Self = this.set("MonitorSpecification", js.undefined)
+    def setMonitorType(value: MonitorType): Self = StObject.set(x, "MonitorType", value.asInstanceOf[js.Any])
   }
 }

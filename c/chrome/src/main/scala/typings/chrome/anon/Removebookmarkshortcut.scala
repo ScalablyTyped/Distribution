@@ -1,11 +1,12 @@
 package typings.chrome.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Removebookmarkshortcut extends js.Object {
+trait Removebookmarkshortcut extends StObject {
   
   var remove_bookmark_shortcut: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Removebookmarkshortcut {
   }
   
   @scala.inline
-  implicit class RemovebookmarkshortcutOps[Self <: Removebookmarkshortcut] (val x: Self) extends AnyVal {
+  implicit class RemovebookmarkshortcutMutableBuilder[Self <: Removebookmarkshortcut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemove_bookmark_shortcut(value: Boolean): Self = StObject.set(x, "remove_bookmark_shortcut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemove_bookmark_shortcutUndefined: Self = StObject.set(x, "remove_bookmark_shortcut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemove_button(value: Boolean): Self = StObject.set(x, "remove_button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove_bookmark_shortcut(value: Boolean): Self = this.set("remove_bookmark_shortcut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove_bookmark_shortcut: Self = this.set("remove_bookmark_shortcut", js.undefined)
-    
-    @scala.inline
-    def setRemove_button(value: Boolean): Self = this.set("remove_button", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove_button: Self = this.set("remove_button", js.undefined)
+    def setRemove_buttonUndefined: Self = StObject.set(x, "remove_button", js.undefined)
   }
 }

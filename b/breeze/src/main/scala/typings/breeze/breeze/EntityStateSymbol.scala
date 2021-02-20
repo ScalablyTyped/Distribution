@@ -2,6 +2,7 @@ package typings.breeze.breeze
 
 import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,39 +43,27 @@ object EntityStateSymbol {
   }
   
   @scala.inline
-  implicit class EntityStateSymbolOps[Self <: EntityStateSymbol] (val x: Self) extends AnyVal {
+  implicit class EntityStateSymbolMutableBuilder[Self <: EntityStateSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAdded(value: () => Boolean): Self = StObject.set(x, "isAdded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAddedModifiedOrDeleted(value: () => Boolean): Self = StObject.set(x, "isAddedModifiedOrDeleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "isDeleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAdded(value: () => Boolean): Self = this.set("isAdded", js.Any.fromFunction0(value))
+    def setIsDetached(value: () => Boolean): Self = StObject.set(x, "isDetached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAddedModifiedOrDeleted(value: () => Boolean): Self = this.set("isAddedModifiedOrDeleted", js.Any.fromFunction0(value))
+    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDeleted(value: () => Boolean): Self = this.set("isDeleted", js.Any.fromFunction0(value))
+    def setIsUnchanged(value: () => Boolean): Self = StObject.set(x, "isUnchanged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDetached(value: () => Boolean): Self = this.set("isDetached", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsUnchanged(value: () => Boolean): Self = this.set("isUnchanged", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsUnchangedOrModified(value: () => Boolean): Self = this.set("isUnchangedOrModified", js.Any.fromFunction0(value))
+    def setIsUnchangedOrModified(value: () => Boolean): Self = StObject.set(x, "isUnchangedOrModified", js.Any.fromFunction0(value))
   }
 }

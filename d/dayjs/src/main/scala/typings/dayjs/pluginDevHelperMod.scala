@@ -1,12 +1,20 @@
 package typings.dayjs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.mod.PluginFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dayjs/plugin/devHelper", JSImport.Namespace)
-@js.native
-object pluginDevHelperMod
-  extends TopLevel[PluginFunc[js.Any]]
+object pluginDevHelperMod extends Shortcut {
+  
+  @JSImport("dayjs/plugin/devHelper", JSImport.Namespace)
+  @js.native
+  val ^ : PluginFunc[js.Any] = js.native
+  
+  type _To = PluginFunc[js.Any]
+  
+  /* This means you don't have to write `^`, but can instead just say `pluginDevHelperMod.foo` */
+  override def _to: PluginFunc[js.Any] = ^
+}

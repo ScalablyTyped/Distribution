@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAndroidenterprise.anon.CallbackClusterId
 import typings.maximMazurokGapiClientAndroidenterprise.anon.ClusterId
 import typings.maximMazurokGapiClientAndroidenterprise.anon.FieldsKey
 import typings.maximMazurokGapiClientAndroidenterprise.anon.PageId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorelayoutclustersResource extends js.Object {
+trait StorelayoutclustersResource extends StObject {
   
   /** Deletes a cluster. */
   def delete(): Request[Unit] = js.native

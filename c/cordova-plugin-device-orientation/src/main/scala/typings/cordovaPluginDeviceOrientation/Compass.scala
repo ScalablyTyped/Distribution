@@ -1,5 +1,6 @@
 package typings.cordovaPluginDeviceOrientation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It measures the heading in degrees from 0 to 359.99, where 0 is north.
   */
 @js.native
-trait Compass extends js.Object {
+trait Compass extends StObject {
   
   /**
     * Stop watching the compass referenced by the watch ID parameter.

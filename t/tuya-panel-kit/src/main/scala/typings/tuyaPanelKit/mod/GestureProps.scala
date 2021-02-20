@@ -6,6 +6,7 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-none`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-only`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object GestureProps {
   }
   
   @scala.inline
-  implicit class GesturePropsOps[Self <: GestureProps] (val x: Self) extends AnyVal {
+  implicit class GesturePropsMutableBuilder[Self <: GestureProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setPointerEvents(value: `box-none` | none_ | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setPointerEvents(value: `box-none` | none_ | `box-only` | auto): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
   }
 }

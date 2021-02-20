@@ -1,6 +1,7 @@
 package typings.mockAwsS3.mod
 
 import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,4 @@ class TemporaryCredentials ()
   def this(options: TemporaryCredentialsOptions, masterCredentials: typings.awsSdk.credentialsMod.Credentials) = this()
 }
 // Needed to expose interfaces on the class
-@JSImport("mock-aws-s3", "TemporaryCredentials")
-@js.native
-object TemporaryCredentials extends js.Object
+object TemporaryCredentials

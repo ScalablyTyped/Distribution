@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyListenerOutput extends js.Object {
+trait ModifyListenerOutput extends StObject {
   
   /**
     * Information about the modified listener.
@@ -21,27 +22,15 @@ object ModifyListenerOutput {
   }
   
   @scala.inline
-  implicit class ModifyListenerOutputOps[Self <: ModifyListenerOutput] (val x: Self) extends AnyVal {
+  implicit class ModifyListenerOutputMutableBuilder[Self <: ModifyListenerOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setListenersVarargs(value: Listener*): Self = this.set("Listeners", js.Array(value :_*))
-    
-    @scala.inline
-    def setListeners(value: Listeners): Self = this.set("Listeners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListeners: Self = this.set("Listeners", js.undefined)
+    def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
   }
 }

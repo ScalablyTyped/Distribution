@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadSnapshotRequest extends js.Object {
+trait LoadSnapshotRequest extends StObject {
   
   /**
     * An array of tiles composing the snapshot.
@@ -21,24 +22,12 @@ object LoadSnapshotRequest {
   }
   
   @scala.inline
-  implicit class LoadSnapshotRequestOps[Self <: LoadSnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class LoadSnapshotRequestMutableBuilder[Self <: LoadSnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTiles(value: js.Array[PictureTile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTilesVarargs(value: PictureTile*): Self = this.set("tiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTiles(value: js.Array[PictureTile]): Self = this.set("tiles", value.asInstanceOf[js.Any])
+    def setTilesVarargs(value: PictureTile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
   }
 }

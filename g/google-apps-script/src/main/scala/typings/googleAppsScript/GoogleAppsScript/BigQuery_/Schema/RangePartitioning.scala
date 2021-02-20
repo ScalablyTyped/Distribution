@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangePartitioning extends js.Object {
+trait RangePartitioning extends StObject {
   
   var field: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object RangePartitioning {
   }
   
   @scala.inline
-  implicit class RangePartitioningOps[Self <: RangePartitioning] (val x: Self) extends AnyVal {
+  implicit class RangePartitioningMutableBuilder[Self <: RangePartitioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: RangePartitioningRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
-    
-    @scala.inline
-    def setRange(value: RangePartitioningRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

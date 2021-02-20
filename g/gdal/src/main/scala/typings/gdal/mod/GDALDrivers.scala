@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GDALDrivers extends js.Object {
+trait GDALDrivers extends StObject {
   
   def count(): Double = js.native
   

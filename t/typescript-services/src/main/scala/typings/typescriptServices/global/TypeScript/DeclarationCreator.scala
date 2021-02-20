@@ -1,13 +1,14 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.DeclarationCreator")
-@js.native
-object DeclarationCreator extends js.Object {
+object DeclarationCreator {
   
+  @JSGlobal("TypeScript.DeclarationCreator.create")
+  @js.native
   def create(
     document: typings.typescriptServices.TypeScript.Document,
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain,

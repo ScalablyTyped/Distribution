@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a detached signature for a signed CMS message. */
 @js.native
-trait CmsDetachedSignature extends js.Object {
+trait CmsDetachedSignature extends StObject {
   
   /** Gets the list of certificates that are used for chain building for the signer certificate. */
   var certificates: IVectorView[Certificate] = js.native
@@ -37,27 +38,15 @@ object CmsDetachedSignature {
   }
   
   @scala.inline
-  implicit class CmsDetachedSignatureOps[Self <: CmsDetachedSignature] (val x: Self) extends AnyVal {
+  implicit class CmsDetachedSignatureMutableBuilder[Self <: CmsDetachedSignature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSigners(value: IVectorView[CmsSignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificates(value: IVectorView[Certificate]): Self = this.set("certificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigners(value: IVectorView[CmsSignerInfo]): Self = this.set("signers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerifySignatureAsync(value: IInputStream => IPromiseWithIAsyncOperation[SignatureValidationResult]): Self = this.set("verifySignatureAsync", js.Any.fromFunction1(value))
+    def setVerifySignatureAsync(value: IInputStream => IPromiseWithIAsyncOperation[SignatureValidationResult]): Self = StObject.set(x, "verifySignatureAsync", js.Any.fromFunction1(value))
   }
 }

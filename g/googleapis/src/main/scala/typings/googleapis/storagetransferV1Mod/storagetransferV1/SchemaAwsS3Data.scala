@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AwsS3Data resource, an object&#39;s name is the S3 object&#39;s key name.
   */
 @js.native
-trait SchemaAwsS3Data extends js.Object {
+trait SchemaAwsS3Data extends StObject {
   
   /**
     * AWS access key used to sign the API requests to the AWS S3 bucket.
@@ -34,30 +35,18 @@ object SchemaAwsS3Data {
   }
   
   @scala.inline
-  implicit class SchemaAwsS3DataOps[Self <: SchemaAwsS3Data] (val x: Self) extends AnyVal {
+  implicit class SchemaAwsS3DataMutableBuilder[Self <: SchemaAwsS3Data] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccessKey(value: SchemaAwsAccessKey): Self = StObject.set(x, "awsAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccessKeyUndefined: Self = StObject.set(x, "awsAccessKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccessKey(value: SchemaAwsAccessKey): Self = this.set("awsAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsAccessKey: Self = this.set("awsAccessKey", js.undefined)
-    
-    @scala.inline
-    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
   }
 }

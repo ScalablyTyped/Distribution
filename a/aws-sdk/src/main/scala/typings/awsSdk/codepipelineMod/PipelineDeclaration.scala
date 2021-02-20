@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineDeclaration extends js.Object {
+trait PipelineDeclaration extends StObject {
   
   /**
     * Represents information about the S3 bucket where artifacts are stored for the pipeline.  You must include either artifactStore or artifactStores in your pipeline, but you cannot use both. If you create a cross-region action in your pipeline, you must use artifactStores. 
@@ -46,48 +47,36 @@ object PipelineDeclaration {
   }
   
   @scala.inline
-  implicit class PipelineDeclarationOps[Self <: PipelineDeclaration] (val x: Self) extends AnyVal {
+  implicit class PipelineDeclarationMutableBuilder[Self <: PipelineDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactStore(value: ArtifactStore): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactStoreUndefined: Self = StObject.set(x, "artifactStore", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactStores(value: ArtifactStoreMap): Self = StObject.set(x, "artifactStores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: PipelineName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setArtifactStoresUndefined: Self = StObject.set(x, "artifactStores", js.undefined)
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setName(value: PipelineName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStagesVarargs(value: StageDeclaration*): Self = this.set("stages", js.Array(value :_*))
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStages(value: PipelineStageDeclarationList): Self = this.set("stages", value.asInstanceOf[js.Any])
+    def setStages(value: PipelineStageDeclarationList): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactStore(value: ArtifactStore): Self = this.set("artifactStore", value.asInstanceOf[js.Any])
+    def setStagesVarargs(value: StageDeclaration*): Self = StObject.set(x, "stages", js.Array(value :_*))
     
     @scala.inline
-    def deleteArtifactStore: Self = this.set("artifactStore", js.undefined)
+    def setVersion(value: PipelineVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactStores(value: ArtifactStoreMap): Self = this.set("artifactStores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArtifactStores: Self = this.set("artifactStores", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: PipelineVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

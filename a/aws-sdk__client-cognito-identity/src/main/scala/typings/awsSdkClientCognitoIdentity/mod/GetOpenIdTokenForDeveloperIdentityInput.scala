@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity", "GetOpenIdTokenForDeveloperIdentityInput")
-@js.native
-object GetOpenIdTokenForDeveloperIdentityInput extends js.Object {
+object GetOpenIdTokenForDeveloperIdentityInput {
   
+  @JSImport("@aws-sdk/client-cognito-identity", "GetOpenIdTokenForDeveloperIdentityInput.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.GetOpenIdTokenForDeveloperIdentityInput): js.Any = js.native
 }

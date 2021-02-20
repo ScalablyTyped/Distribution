@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WavSettings extends js.Object {
+trait WavSettings extends StObject {
   
   /**
     * Specify Bit depth (BitDepth), in bits per sample, to choose the encoding quality for this audio track.
@@ -36,42 +37,30 @@ object WavSettings {
   }
   
   @scala.inline
-  implicit class WavSettingsOps[Self <: WavSettings] (val x: Self) extends AnyVal {
+  implicit class WavSettingsMutableBuilder[Self <: WavSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannels(value: integerMin1Max64): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitDepth(value: integerMin16Max24): Self = this.set("BitDepth", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
     @scala.inline
-    def deleteBitDepth: Self = this.set("BitDepth", js.undefined)
+    def setFormat(value: WavFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: integerMin1Max64): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("Channels", js.undefined)
+    def setSampleRate(value: integerMin8000Max192000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: WavFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: integerMin8000Max192000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XChild
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,33 +69,21 @@ object XFunction {
   }
   
   @scala.inline
-  implicit class XFunctionOps[Self <: XFunction] (val x: Self) extends AnyVal {
+  implicit class XFunctionMutableBuilder[Self <: XFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeepTraversing(value: Boolean): Self = StObject.set(x, "DeepTraversing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialFormula(value: Optional[String]): Self = StObject.set(x, "InitialFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepTraversing(value: Boolean): Self = this.set("DeepTraversing", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialFormula(value: Optional[String]): Self = this.set("InitialFormula", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreEvaluated(value: Boolean): Self = this.set("PreEvaluated", value.asInstanceOf[js.Any])
+    def setPreEvaluated(value: Boolean): Self = StObject.set(x, "PreEvaluated", value.asInstanceOf[js.Any])
   }
 }

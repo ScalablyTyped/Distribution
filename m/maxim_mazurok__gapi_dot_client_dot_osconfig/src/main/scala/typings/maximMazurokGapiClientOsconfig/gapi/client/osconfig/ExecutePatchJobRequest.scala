@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutePatchJobRequest extends js.Object {
+trait ExecutePatchJobRequest extends StObject {
   
   /** Description of the patch job. Length of the description is limited to 1024 characters. */
   var description: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object ExecutePatchJobRequest {
   }
   
   @scala.inline
-  implicit class ExecutePatchJobRequestOps[Self <: ExecutePatchJobRequest] (val x: Self) extends AnyVal {
+  implicit class ExecutePatchJobRequestMutableBuilder[Self <: ExecutePatchJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setInstanceFilter(value: PatchInstanceFilter): Self = StObject.set(x, "instanceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setInstanceFilterUndefined: Self = StObject.set(x, "instanceFilter", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setPatchConfig(value: PatchConfig): Self = StObject.set(x, "patchConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFilter(value: PatchInstanceFilter): Self = this.set("instanceFilter", value.asInstanceOf[js.Any])
+    def setPatchConfigUndefined: Self = StObject.set(x, "patchConfig", js.undefined)
     
     @scala.inline
-    def deleteInstanceFilter: Self = this.set("instanceFilter", js.undefined)
+    def setRollout(value: PatchRollout): Self = StObject.set(x, "rollout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchConfig(value: PatchConfig): Self = this.set("patchConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatchConfig: Self = this.set("patchConfig", js.undefined)
-    
-    @scala.inline
-    def setRollout(value: PatchRollout): Self = this.set("rollout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollout: Self = this.set("rollout", js.undefined)
+    def setRolloutUndefined: Self = StObject.set(x, "rollout", js.undefined)
   }
 }

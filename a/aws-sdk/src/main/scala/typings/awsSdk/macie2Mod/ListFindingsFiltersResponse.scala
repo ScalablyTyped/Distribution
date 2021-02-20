@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFindingsFiltersResponse extends js.Object {
+trait ListFindingsFiltersResponse extends StObject {
   
   /**
     * An array of objects, one for each filter that's associated with the account.
@@ -26,33 +27,21 @@ object ListFindingsFiltersResponse {
   }
   
   @scala.inline
-  implicit class ListFindingsFiltersResponseOps[Self <: ListFindingsFiltersResponse] (val x: Self) extends AnyVal {
+  implicit class ListFindingsFiltersResponseMutableBuilder[Self <: ListFindingsFiltersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindingsFilterListItems(value: listOfFindingsFilterListItem): Self = StObject.set(x, "findingsFilterListItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingsFilterListItemsUndefined: Self = StObject.set(x, "findingsFilterListItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindingsFilterListItemsVarargs(value: FindingsFilterListItem*): Self = StObject.set(x, "findingsFilterListItems", js.Array(value :_*))
     
     @scala.inline
-    def setFindingsFilterListItemsVarargs(value: FindingsFilterListItem*): Self = this.set("findingsFilterListItems", js.Array(value :_*))
+    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingsFilterListItems(value: listOfFindingsFilterListItem): Self = this.set("findingsFilterListItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFindingsFilterListItems: Self = this.set("findingsFilterListItems", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

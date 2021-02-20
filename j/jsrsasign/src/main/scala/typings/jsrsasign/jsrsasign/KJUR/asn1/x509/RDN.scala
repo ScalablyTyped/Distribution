@@ -1,6 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,24 +81,12 @@ object RDN {
   }
   
   @scala.inline
-  implicit class RDNOps[Self <: RDN] (val x: Self) extends AnyVal {
+  implicit class RDNMutableBuilder[Self <: RDN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddByMultiValuedString(value: String => Unit): Self = StObject.set(x, "addByMultiValuedString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddByMultiValuedString(value: String => Unit): Self = this.set("addByMultiValuedString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAddByString(value: String => Unit): Self = this.set("addByString", js.Any.fromFunction1(value))
+    def setAddByString(value: String => Unit): Self = StObject.set(x, "addByString", js.Any.fromFunction1(value))
   }
 }

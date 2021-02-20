@@ -1,13 +1,14 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelHistory extends js.Object {
+trait ChannelHistory extends StObject {
   
-   //
+  //
   var EndTime: String = js.native
   
   var RemoteAddr: String = js.native
@@ -23,27 +24,15 @@ object ChannelHistory {
   }
   
   @scala.inline
-  implicit class ChannelHistoryOps[Self <: ChannelHistory] (val x: Self) extends AnyVal {
+  implicit class ChannelHistoryMutableBuilder[Self <: ChannelHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoteAddr(value: String): Self = StObject.set(x, "RemoteAddr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndTime(value: String): Self = this.set("EndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteAddr(value: String): Self = this.set("RemoteAddr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

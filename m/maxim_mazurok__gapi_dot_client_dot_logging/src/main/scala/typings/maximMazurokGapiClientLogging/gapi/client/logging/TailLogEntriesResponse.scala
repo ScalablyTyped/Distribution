@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TailLogEntriesResponse extends js.Object {
+trait TailLogEntriesResponse extends StObject {
   
   /** A list of log entries. Each response in the stream will order entries with increasing values of LogEntry.timestamp. Ordering is not guaranteed between separate responses. */
   var entries: js.UndefOr[js.Array[LogEntry]] = js.native
@@ -25,36 +26,24 @@ object TailLogEntriesResponse {
   }
   
   @scala.inline
-  implicit class TailLogEntriesResponseOps[Self <: TailLogEntriesResponse] (val x: Self) extends AnyVal {
+  implicit class TailLogEntriesResponseMutableBuilder[Self <: TailLogEntriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: js.Array[LogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntriesVarargs(value: LogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def setEntriesVarargs(value: LogEntry*): Self = this.set("entries", js.Array(value :_*))
+    def setSuppressionInfo(value: js.Array[SuppressionInfo]): Self = StObject.set(x, "suppressionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: js.Array[LogEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setSuppressionInfoUndefined: Self = StObject.set(x, "suppressionInfo", js.undefined)
     
     @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
-    
-    @scala.inline
-    def setSuppressionInfoVarargs(value: SuppressionInfo*): Self = this.set("suppressionInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuppressionInfo(value: js.Array[SuppressionInfo]): Self = this.set("suppressionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressionInfo: Self = this.set("suppressionInfo", js.undefined)
+    def setSuppressionInfoVarargs(value: SuppressionInfo*): Self = StObject.set(x, "suppressionInfo", js.Array(value :_*))
   }
 }

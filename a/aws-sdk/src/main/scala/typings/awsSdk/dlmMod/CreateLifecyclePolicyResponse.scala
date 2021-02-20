@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLifecyclePolicyResponse extends js.Object {
+trait CreateLifecyclePolicyResponse extends StObject {
   
   /**
     * The identifier of the lifecycle policy.
@@ -21,24 +22,12 @@ object CreateLifecyclePolicyResponse {
   }
   
   @scala.inline
-  implicit class CreateLifecyclePolicyResponseOps[Self <: CreateLifecyclePolicyResponse] (val x: Self) extends AnyVal {
+  implicit class CreateLifecyclePolicyResponseMutableBuilder[Self <: CreateLifecyclePolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyId: Self = this.set("PolicyId", js.undefined)
+    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
   }
 }

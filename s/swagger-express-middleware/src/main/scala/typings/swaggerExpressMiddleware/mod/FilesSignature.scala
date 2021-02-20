@@ -5,12 +5,13 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Router
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilesSignature extends js.Object {
+trait FilesSignature extends StObject {
   
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(/**

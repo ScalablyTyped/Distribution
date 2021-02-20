@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCloudasset.anon.Key
 import typings.maximMazurokGapiClientCloudasset.anon.Oauthtoken
 import typings.maximMazurokGapiClientCloudasset.anon.PageSize
 import typings.maximMazurokGapiClientCloudasset.anon.Parent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V1Resource extends js.Object {
+trait V1Resource extends StObject {
   
   /** Analyzes IAM policies to answer which identities have what accesses on which resources. */
   def analyzeIamPolicy(): Request[AnalyzeIamPolicyResponse] = js.native

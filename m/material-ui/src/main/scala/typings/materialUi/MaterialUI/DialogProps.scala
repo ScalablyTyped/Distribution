@@ -6,12 +6,13 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined key, ref */ @js.native
+- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
 trait DialogProps
   extends DOMAttributes[js.Object] {
   
@@ -75,174 +76,162 @@ object DialogProps {
   }
   
   @scala.inline
-  implicit class DialogPropsOps[Self <: DialogProps] (val x: Self) extends AnyVal {
+  implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionFocus(value: String): Self = StObject.set(x, "actionFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionFocusUndefined: Self = StObject.set(x, "actionFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActions(value: js.Array[DialogAction | ReactElement]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setActionsContainerClassName(value: String): Self = StObject.set(x, "actionsContainerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionFocus(value: String): Self = this.set("actionFocus", value.asInstanceOf[js.Any])
+    def setActionsContainerClassNameUndefined: Self = StObject.set(x, "actionsContainerClassName", js.undefined)
     
     @scala.inline
-    def deleteActionFocus: Self = this.set("actionFocus", js.undefined)
+    def setActionsContainerStyle(value: CSSProperties): Self = StObject.set(x, "actionsContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: (DialogAction | ReactElement)*): Self = this.set("actions", js.Array(value :_*))
+    def setActionsContainerStyleUndefined: Self = StObject.set(x, "actionsContainerStyle", js.undefined)
     
     @scala.inline
-    def setActions(value: js.Array[DialogAction | ReactElement]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setActionsVarargs(value: (DialogAction | ReactElement)*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsContainerClassName(value: String): Self = this.set("actionsContainerClassName", value.asInstanceOf[js.Any])
+    def setAutoDetectWindowHeight(value: Boolean): Self = StObject.set(x, "autoDetectWindowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionsContainerClassName: Self = this.set("actionsContainerClassName", js.undefined)
+    def setAutoDetectWindowHeightUndefined: Self = StObject.set(x, "autoDetectWindowHeight", js.undefined)
     
     @scala.inline
-    def setActionsContainerStyle(value: CSSProperties): Self = this.set("actionsContainerStyle", value.asInstanceOf[js.Any])
+    def setAutoScrollBodyContent(value: Boolean): Self = StObject.set(x, "autoScrollBodyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionsContainerStyle: Self = this.set("actionsContainerStyle", js.undefined)
+    def setAutoScrollBodyContentUndefined: Self = StObject.set(x, "autoScrollBodyContent", js.undefined)
     
     @scala.inline
-    def setAutoDetectWindowHeight(value: Boolean): Self = this.set("autoDetectWindowHeight", value.asInstanceOf[js.Any])
+    def setBodyClassName(value: String): Self = StObject.set(x, "bodyClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoDetectWindowHeight: Self = this.set("autoDetectWindowHeight", js.undefined)
+    def setBodyClassNameUndefined: Self = StObject.set(x, "bodyClassName", js.undefined)
     
     @scala.inline
-    def setAutoScrollBodyContent(value: Boolean): Self = this.set("autoScrollBodyContent", value.asInstanceOf[js.Any])
+    def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoScrollBodyContent: Self = this.set("autoScrollBodyContent", js.undefined)
+    def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
     
     @scala.inline
-    def setBodyClassName(value: String): Self = this.set("bodyClassName", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyClassName: Self = this.set("bodyClassName", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setBodyStyle(value: CSSProperties): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
     @scala.inline
-    def setContentClassName(value: String): Self = this.set("contentClassName", value.asInstanceOf[js.Any])
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentClassName: Self = this.set("contentClassName", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setContentStyle(value: CSSProperties): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOnRequestClose(value: /* buttonClicked */ Boolean => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModal: Self = this.set("modal", js.undefined)
+    def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRequestClose(value: /* buttonClicked */ Boolean => Unit): Self = this.set("onRequestClose", js.Any.fromFunction1(value))
+    def setOverlayClassNameUndefined: Self = StObject.set(x, "overlayClassName", js.undefined)
     
     @scala.inline
-    def deleteOnRequestClose: Self = this.set("onRequestClose", js.undefined)
+    def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayClassName(value: String): Self = this.set("overlayClassName", value.asInstanceOf[js.Any])
+    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
     @scala.inline
-    def deleteOverlayClassName: Self = this.set("overlayClassName", js.undefined)
+    def setPaperClassName(value: String): Self = StObject.set(x, "paperClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayStyle(value: CSSProperties): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    def setPaperClassNameUndefined: Self = StObject.set(x, "paperClassName", js.undefined)
     
     @scala.inline
-    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    def setPaperProps(value: js.Any): Self = StObject.set(x, "paperProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperClassName(value: String): Self = this.set("paperClassName", value.asInstanceOf[js.Any])
+    def setPaperPropsUndefined: Self = StObject.set(x, "paperProps", js.undefined)
     
     @scala.inline
-    def deletePaperClassName: Self = this.set("paperClassName", js.undefined)
+    def setRef(value: LegacyRef[Dialog]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperProps(value: js.Any): Self = this.set("paperProps", value.asInstanceOf[js.Any])
+    def setRefFunction1(value: /* instance */ Dialog | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePaperProps: Self = this.set("paperProps", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ Dialog | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[Dialog]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRepositionOnUpdate(value: Boolean): Self = StObject.set(x, "repositionOnUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setRepositionOnUpdateUndefined: Self = StObject.set(x, "repositionOnUpdate", js.undefined)
     
     @scala.inline
-    def setRefNull: Self = this.set("ref", null)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositionOnUpdate(value: Boolean): Self = this.set("repositionOnUpdate", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRepositionOnUpdate: Self = this.set("repositionOnUpdate", js.undefined)
+    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTitleClassName(value: String): Self = StObject.set(x, "titleClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTitleClassNameUndefined: Self = StObject.set(x, "titleClassName", js.undefined)
     
     @scala.inline
-    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def setTitleClassName(value: String): Self = this.set("titleClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleClassName: Self = this.set("titleClassName", js.undefined)
-    
-    @scala.inline
-    def setTitleStyle(value: CSSProperties): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConnectorProfilesResponse extends js.Object {
+trait DescribeConnectorProfilesResponse extends StObject {
   
   /**
     *  Returns information about the connector profiles associated with the flow. 
@@ -26,33 +27,21 @@ object DescribeConnectorProfilesResponse {
   }
   
   @scala.inline
-  implicit class DescribeConnectorProfilesResponseOps[Self <: DescribeConnectorProfilesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeConnectorProfilesResponseMutableBuilder[Self <: DescribeConnectorProfilesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorProfileDetails(value: ConnectorProfileDetailList): Self = StObject.set(x, "connectorProfileDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorProfileDetailsUndefined: Self = StObject.set(x, "connectorProfileDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorProfileDetailsVarargs(value: ConnectorProfile*): Self = StObject.set(x, "connectorProfileDetails", js.Array(value :_*))
     
     @scala.inline
-    def setConnectorProfileDetailsVarargs(value: ConnectorProfile*): Self = this.set("connectorProfileDetails", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorProfileDetails(value: ConnectorProfileDetailList): Self = this.set("connectorProfileDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectorProfileDetails: Self = this.set("connectorProfileDetails", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.agGrid.mainMod
 
 import typings.agGrid.iCellEditorMod.ICellEditorComp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class PopupEditorWrapper protected ()
   def this(cellEditor: ICellEditorComp) = this()
 }
 /* static members */
-@JSImport("ag-grid/dist/lib/main", "PopupEditorWrapper")
-@js.native
-object PopupEditorWrapper extends js.Object {
+object PopupEditorWrapper {
   
-  var DOM_KEY_POPUP_EDITOR_WRAPPER: String = js.native
+  @JSImport("ag-grid/dist/lib/main", "PopupEditorWrapper")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid/dist/lib/main", "PopupEditorWrapper.DOM_KEY_POPUP_EDITOR_WRAPPER")
+  @js.native
+  def DOM_KEY_POPUP_EDITOR_WRAPPER: String = js.native
+  @scala.inline
+  def DOM_KEY_POPUP_EDITOR_WRAPPER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_KEY_POPUP_EDITOR_WRAPPER")(x.asInstanceOf[js.Any])
 }

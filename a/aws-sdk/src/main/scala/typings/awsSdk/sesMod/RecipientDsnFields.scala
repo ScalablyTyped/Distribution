@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientDsnFields extends js.Object {
+trait RecipientDsnFields extends StObject {
   
   /**
     * The action performed by the reporting mail transfer agent (MTA) as a result of its attempt to deliver the message to the recipient address. This is required by RFC 3464.
@@ -51,57 +52,45 @@ object RecipientDsnFields {
   }
   
   @scala.inline
-  implicit class RecipientDsnFieldsOps[Self <: RecipientDsnFields] (val x: Self) extends AnyVal {
+  implicit class RecipientDsnFieldsMutableBuilder[Self <: RecipientDsnFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: DsnAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosticCode(value: DiagnosticCode): Self = StObject.set(x, "DiagnosticCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnosticCodeUndefined: Self = StObject.set(x, "DiagnosticCode", js.undefined)
     
     @scala.inline
-    def setAction(value: DsnAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setExtensionFields(value: ExtensionFieldList): Self = StObject.set(x, "ExtensionFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DsnStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setExtensionFieldsUndefined: Self = StObject.set(x, "ExtensionFields", js.undefined)
     
     @scala.inline
-    def setDiagnosticCode(value: DiagnosticCode): Self = this.set("DiagnosticCode", value.asInstanceOf[js.Any])
+    def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteDiagnosticCode: Self = this.set("DiagnosticCode", js.undefined)
+    def setFinalRecipient(value: Address): Self = StObject.set(x, "FinalRecipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionFieldsVarargs(value: ExtensionField*): Self = this.set("ExtensionFields", js.Array(value :_*))
+    def setFinalRecipientUndefined: Self = StObject.set(x, "FinalRecipient", js.undefined)
     
     @scala.inline
-    def setExtensionFields(value: ExtensionFieldList): Self = this.set("ExtensionFields", value.asInstanceOf[js.Any])
+    def setLastAttemptDate(value: LastAttemptDate): Self = StObject.set(x, "LastAttemptDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionFields: Self = this.set("ExtensionFields", js.undefined)
+    def setLastAttemptDateUndefined: Self = StObject.set(x, "LastAttemptDate", js.undefined)
     
     @scala.inline
-    def setFinalRecipient(value: Address): Self = this.set("FinalRecipient", value.asInstanceOf[js.Any])
+    def setRemoteMta(value: RemoteMta): Self = StObject.set(x, "RemoteMta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFinalRecipient: Self = this.set("FinalRecipient", js.undefined)
+    def setRemoteMtaUndefined: Self = StObject.set(x, "RemoteMta", js.undefined)
     
     @scala.inline
-    def setLastAttemptDate(value: LastAttemptDate): Self = this.set("LastAttemptDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAttemptDate: Self = this.set("LastAttemptDate", js.undefined)
-    
-    @scala.inline
-    def setRemoteMta(value: RemoteMta): Self = this.set("RemoteMta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteMta: Self = this.set("RemoteMta", js.undefined)
+    def setStatus(value: DsnStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A place object returned from a geocoder lookup or reverse lookup.
   */
 @js.native
-trait Place extends js.Object {
+trait Place extends StObject {
   
   /**
     * The state or province of the place.
@@ -110,111 +111,99 @@ object Place {
   }
   
   @scala.inline
-  implicit class PlaceOps[Self <: Place] (val x: Self) extends AnyVal {
+  implicit class PlaceMutableBuilder[Self <: Place] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministrativeAreaCode(value: String): Self = StObject.set(x, "administrativeAreaCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdministrativeAreaCodeUndefined: Self = StObject.set(x, "administrativeAreaCode", js.undefined)
     
     @scala.inline
-    def setCoordinate(value: Coordinate): Self = this.set("coordinate", value.asInstanceOf[js.Any])
+    def setAdministrativeAreaUndefined: Self = StObject.set(x, "administrativeArea", js.undefined)
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setAreasOfInterest(value: js.Array[String]): Self = StObject.set(x, "areasOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedAddress(value: String): Self = this.set("formattedAddress", value.asInstanceOf[js.Any])
+    def setAreasOfInterestUndefined: Self = StObject.set(x, "areasOfInterest", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAreasOfInterestVarargs(value: String*): Self = StObject.set(x, "areasOfInterest", js.Array(value :_*))
     
     @scala.inline
-    def setRegion(value: CoordinateRegion): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeArea(value: String): Self = this.set("administrativeArea", value.asInstanceOf[js.Any])
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdministrativeArea: Self = this.set("administrativeArea", js.undefined)
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeAreaCode(value: String): Self = this.set("administrativeAreaCode", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteAdministrativeAreaCode: Self = this.set("administrativeAreaCode", js.undefined)
+    def setDependentLocalities(value: js.Array[String]): Self = StObject.set(x, "dependentLocalities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreasOfInterestVarargs(value: String*): Self = this.set("areasOfInterest", js.Array(value :_*))
+    def setDependentLocalitiesUndefined: Self = StObject.set(x, "dependentLocalities", js.undefined)
     
     @scala.inline
-    def setAreasOfInterest(value: js.Array[String]): Self = this.set("areasOfInterest", value.asInstanceOf[js.Any])
+    def setDependentLocalitiesVarargs(value: String*): Self = StObject.set(x, "dependentLocalities", js.Array(value :_*))
     
     @scala.inline
-    def deleteAreasOfInterest: Self = this.set("areasOfInterest", js.undefined)
+    def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setFullThoroughfare(value: String): Self = StObject.set(x, "fullThoroughfare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setFullThoroughfareUndefined: Self = StObject.set(x, "fullThoroughfare", js.undefined)
     
     @scala.inline
-    def setDependentLocalitiesVarargs(value: String*): Self = this.set("dependentLocalities", js.Array(value :_*))
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependentLocalities(value: js.Array[String]): Self = this.set("dependentLocalities", value.asInstanceOf[js.Any])
+    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
     @scala.inline
-    def deleteDependentLocalities: Self = this.set("dependentLocalities", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullThoroughfare(value: String): Self = this.set("fullThoroughfare", value.asInstanceOf[js.Any])
+    def setPointOfInterestCategory(value: PointOfInterestCategory): Self = StObject.set(x, "pointOfInterestCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullThoroughfare: Self = this.set("fullThoroughfare", js.undefined)
+    def setPointOfInterestCategoryUndefined: Self = StObject.set(x, "pointOfInterestCategory", js.undefined)
     
     @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    def setPostCode(value: String): Self = StObject.set(x, "postCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocality: Self = this.set("locality", js.undefined)
+    def setPostCodeUndefined: Self = StObject.set(x, "postCode", js.undefined)
     
     @scala.inline
-    def setPointOfInterestCategory(value: PointOfInterestCategory): Self = this.set("pointOfInterestCategory", value.asInstanceOf[js.Any])
+    def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePointOfInterestCategory: Self = this.set("pointOfInterestCategory", js.undefined)
+    def setSubLocality(value: String): Self = StObject.set(x, "subLocality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostCode(value: String): Self = this.set("postCode", value.asInstanceOf[js.Any])
+    def setSubLocalityUndefined: Self = StObject.set(x, "subLocality", js.undefined)
     
     @scala.inline
-    def deletePostCode: Self = this.set("postCode", js.undefined)
+    def setSubThoroughfare(value: String): Self = StObject.set(x, "subThoroughfare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubLocality(value: String): Self = this.set("subLocality", value.asInstanceOf[js.Any])
+    def setSubThoroughfareUndefined: Self = StObject.set(x, "subThoroughfare", js.undefined)
     
     @scala.inline
-    def deleteSubLocality: Self = this.set("subLocality", js.undefined)
+    def setThoroughfare(value: String): Self = StObject.set(x, "thoroughfare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubThoroughfare(value: String): Self = this.set("subThoroughfare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubThoroughfare: Self = this.set("subThoroughfare", js.undefined)
-    
-    @scala.inline
-    def setThoroughfare(value: String): Self = this.set("thoroughfare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThoroughfare: Self = this.set("thoroughfare", js.undefined)
+    def setThoroughfareUndefined: Self = StObject.set(x, "thoroughfare", js.undefined)
   }
 }

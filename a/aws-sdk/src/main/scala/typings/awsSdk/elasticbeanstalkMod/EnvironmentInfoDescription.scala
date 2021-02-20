@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentInfoDescription extends js.Object {
+trait EnvironmentInfoDescription extends StObject {
   
   /**
     * The Amazon EC2 Instance ID for this information.
@@ -36,42 +37,30 @@ object EnvironmentInfoDescription {
   }
   
   @scala.inline
-  implicit class EnvironmentInfoDescriptionOps[Self <: EnvironmentInfoDescription] (val x: Self) extends AnyVal {
+  implicit class EnvironmentInfoDescriptionMutableBuilder[Self <: EnvironmentInfoDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoType(value: EnvironmentInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2InstanceId(value: Ec2InstanceId): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    def setInfoTypeUndefined: Self = StObject.set(x, "InfoType", js.undefined)
     
     @scala.inline
-    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoType(value: EnvironmentInfoType): Self = this.set("InfoType", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteInfoType: Self = this.set("InfoType", js.undefined)
+    def setSampleTimestamp(value: SampleTimestamp): Self = StObject.set(x, "SampleTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
-    
-    @scala.inline
-    def setSampleTimestamp(value: SampleTimestamp): Self = this.set("SampleTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleTimestamp: Self = this.set("SampleTimestamp", js.undefined)
+    def setSampleTimestampUndefined: Self = StObject.set(x, "SampleTimestamp", js.undefined)
   }
 }

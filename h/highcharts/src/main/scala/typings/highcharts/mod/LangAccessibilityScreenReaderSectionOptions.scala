@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilityScreenReaderSectionOptions extends js.Object {
+trait LangAccessibilityScreenReaderSectionOptions extends StObject {
   
   var afterRegionLabel: js.UndefOr[String] = js.native
   
@@ -32,42 +33,30 @@ object LangAccessibilityScreenReaderSectionOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilityScreenReaderSectionOptionsOps[Self <: LangAccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilityScreenReaderSectionOptionsMutableBuilder[Self <: LangAccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterRegionLabel(value: String): Self = StObject.set(x, "afterRegionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRegionLabelUndefined: Self = StObject.set(x, "afterRegionLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotations(value: LangAccessibilityScreenReaderSectionAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterRegionLabel(value: String): Self = this.set("afterRegionLabel", value.asInstanceOf[js.Any])
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def deleteAfterRegionLabel: Self = this.set("afterRegionLabel", js.undefined)
+    def setBeforeRegionLabel(value: String): Self = StObject.set(x, "beforeRegionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: LangAccessibilityScreenReaderSectionAnnotationsOptions): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setBeforeRegionLabelUndefined: Self = StObject.set(x, "beforeRegionLabel", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setEndOfChartMarker(value: String): Self = StObject.set(x, "endOfChartMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeRegionLabel(value: String): Self = this.set("beforeRegionLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeforeRegionLabel: Self = this.set("beforeRegionLabel", js.undefined)
-    
-    @scala.inline
-    def setEndOfChartMarker(value: String): Self = this.set("endOfChartMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndOfChartMarker: Self = this.set("endOfChartMarker", js.undefined)
+    def setEndOfChartMarkerUndefined: Self = StObject.set(x, "endOfChartMarker", js.undefined)
   }
 }

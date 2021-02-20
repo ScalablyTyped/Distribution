@@ -1,11 +1,12 @@
 package typings.recurlyRecurlyJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cvv extends js.Object {
+trait Cvv extends StObject {
   
   /**
     * Placeholder content for the card verification value input.
@@ -31,36 +32,24 @@ object Cvv {
   }
   
   @scala.inline
-  implicit class CvvOps[Self <: Cvv] (val x: Self) extends AnyVal {
+  implicit class CvvMutableBuilder[Self <: Cvv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiry(value: String): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCvv(value: String): Self = this.set("cvv", value.asInstanceOf[js.Any])
+    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
     @scala.inline
-    def deleteCvv: Self = this.set("cvv", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiry(value: String): Self = this.set("expiry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiry: Self = this.set("expiry", js.undefined)
-    
-    @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

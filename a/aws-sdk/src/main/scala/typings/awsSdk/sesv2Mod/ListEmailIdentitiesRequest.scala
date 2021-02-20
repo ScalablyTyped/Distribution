@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEmailIdentitiesRequest extends js.Object {
+trait ListEmailIdentitiesRequest extends StObject {
   
   /**
     * A token returned from a previous call to ListEmailIdentities to indicate the position in the list of identities.
@@ -26,30 +27,18 @@ object ListEmailIdentitiesRequest {
   }
   
   @scala.inline
-  implicit class ListEmailIdentitiesRequestOps[Self <: ListEmailIdentitiesRequest] (val x: Self) extends AnyVal {
+  implicit class ListEmailIdentitiesRequestMutableBuilder[Self <: ListEmailIdentitiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = this.set("PageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

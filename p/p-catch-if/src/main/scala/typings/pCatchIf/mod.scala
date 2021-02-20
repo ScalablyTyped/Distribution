@@ -3,13 +3,12 @@ package typings.pCatchIf
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-catch-if", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Conditional promise catch handler.
@@ -36,7 +35,13 @@ object mod extends js.Object {
   	getData().catch(pCatchIf(UnicornError, pCatchIf(validateMessage, console.error)));
   	```
   	*/
+  @JSImport("p-catch-if", JSImport.Namespace)
+  @js.native
   def apply[T](predicate: Predicate, catchHandler: js.Function1[/* error */ Error, T]): js.Function1[/* error */ Error, T] = js.native
+  
+  @JSImport("p-catch-if", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function pCatchIf<T>(
@@ -44,7 +49,11 @@ object mod extends js.Object {
   // 	catchHandler: (error: Error) => T
   // ): (error: Error) => T;
   // export = pCatchIf;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pCatchIf */ js.Any = js.native
+  @JSImport("p-catch-if", "default")
+  @js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pCatchIf */ js.Any = js.native
+  @scala.inline
+  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pCatchIf */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait ErrorConstructor

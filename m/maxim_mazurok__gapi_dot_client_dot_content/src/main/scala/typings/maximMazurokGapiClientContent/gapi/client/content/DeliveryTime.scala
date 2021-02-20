@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryTime extends js.Object {
+trait DeliveryTime extends StObject {
   
   /** Business days cutoff time definition. If not configured the cutoff time will be defaulted to 8AM PST. */
   var cutoffTime: js.UndefOr[CutoffTime] = js.native
@@ -46,75 +47,63 @@ object DeliveryTime {
   }
   
   @scala.inline
-  implicit class DeliveryTimeOps[Self <: DeliveryTime] (val x: Self) extends AnyVal {
+  implicit class DeliveryTimeMutableBuilder[Self <: DeliveryTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCutoffTime(value: CutoffTime): Self = StObject.set(x, "cutoffTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCutoffTimeUndefined: Self = StObject.set(x, "cutoffTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandlingBusinessDayConfig(value: BusinessDayConfig): Self = StObject.set(x, "handlingBusinessDayConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCutoffTime(value: CutoffTime): Self = this.set("cutoffTime", value.asInstanceOf[js.Any])
+    def setHandlingBusinessDayConfigUndefined: Self = StObject.set(x, "handlingBusinessDayConfig", js.undefined)
     
     @scala.inline
-    def deleteCutoffTime: Self = this.set("cutoffTime", js.undefined)
+    def setHolidayCutoffs(value: js.Array[HolidayCutoff]): Self = StObject.set(x, "holidayCutoffs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlingBusinessDayConfig(value: BusinessDayConfig): Self = this.set("handlingBusinessDayConfig", value.asInstanceOf[js.Any])
+    def setHolidayCutoffsUndefined: Self = StObject.set(x, "holidayCutoffs", js.undefined)
     
     @scala.inline
-    def deleteHandlingBusinessDayConfig: Self = this.set("handlingBusinessDayConfig", js.undefined)
+    def setHolidayCutoffsVarargs(value: HolidayCutoff*): Self = StObject.set(x, "holidayCutoffs", js.Array(value :_*))
     
     @scala.inline
-    def setHolidayCutoffsVarargs(value: HolidayCutoff*): Self = this.set("holidayCutoffs", js.Array(value :_*))
+    def setMaxHandlingTimeInDays(value: Double): Self = StObject.set(x, "maxHandlingTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHolidayCutoffs(value: js.Array[HolidayCutoff]): Self = this.set("holidayCutoffs", value.asInstanceOf[js.Any])
+    def setMaxHandlingTimeInDaysUndefined: Self = StObject.set(x, "maxHandlingTimeInDays", js.undefined)
     
     @scala.inline
-    def deleteHolidayCutoffs: Self = this.set("holidayCutoffs", js.undefined)
+    def setMaxTransitTimeInDays(value: Double): Self = StObject.set(x, "maxTransitTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHandlingTimeInDays(value: Double): Self = this.set("maxHandlingTimeInDays", value.asInstanceOf[js.Any])
+    def setMaxTransitTimeInDaysUndefined: Self = StObject.set(x, "maxTransitTimeInDays", js.undefined)
     
     @scala.inline
-    def deleteMaxHandlingTimeInDays: Self = this.set("maxHandlingTimeInDays", js.undefined)
+    def setMinHandlingTimeInDays(value: Double): Self = StObject.set(x, "minHandlingTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTransitTimeInDays(value: Double): Self = this.set("maxTransitTimeInDays", value.asInstanceOf[js.Any])
+    def setMinHandlingTimeInDaysUndefined: Self = StObject.set(x, "minHandlingTimeInDays", js.undefined)
     
     @scala.inline
-    def deleteMaxTransitTimeInDays: Self = this.set("maxTransitTimeInDays", js.undefined)
+    def setMinTransitTimeInDays(value: Double): Self = StObject.set(x, "minTransitTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHandlingTimeInDays(value: Double): Self = this.set("minHandlingTimeInDays", value.asInstanceOf[js.Any])
+    def setMinTransitTimeInDaysUndefined: Self = StObject.set(x, "minTransitTimeInDays", js.undefined)
     
     @scala.inline
-    def deleteMinHandlingTimeInDays: Self = this.set("minHandlingTimeInDays", js.undefined)
+    def setTransitBusinessDayConfig(value: BusinessDayConfig): Self = StObject.set(x, "transitBusinessDayConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTransitTimeInDays(value: Double): Self = this.set("minTransitTimeInDays", value.asInstanceOf[js.Any])
+    def setTransitBusinessDayConfigUndefined: Self = StObject.set(x, "transitBusinessDayConfig", js.undefined)
     
     @scala.inline
-    def deleteMinTransitTimeInDays: Self = this.set("minTransitTimeInDays", js.undefined)
+    def setTransitTimeTable(value: TransitTable): Self = StObject.set(x, "transitTimeTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitBusinessDayConfig(value: BusinessDayConfig): Self = this.set("transitBusinessDayConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitBusinessDayConfig: Self = this.set("transitBusinessDayConfig", js.undefined)
-    
-    @scala.inline
-    def setTransitTimeTable(value: TransitTable): Self = this.set("transitTimeTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitTimeTable: Self = this.set("transitTimeTable", js.undefined)
+    def setTransitTimeTableUndefined: Self = StObject.set(x, "transitTimeTable", js.undefined)
   }
 }

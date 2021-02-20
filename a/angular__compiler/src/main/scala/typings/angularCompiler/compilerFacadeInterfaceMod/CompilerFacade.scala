@@ -1,12 +1,13 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import typings.angularCompiler.anon.InstantiableResourceLoader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompilerFacade extends js.Object {
+trait CompilerFacade extends StObject {
   
   var R3FactoryTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any = js.native
   
@@ -51,55 +52,43 @@ object CompilerFacade {
   }
   
   @scala.inline
-  implicit class CompilerFacadeOps[Self <: CompilerFacade] (val x: Self) extends AnyVal {
+  implicit class CompilerFacadeMutableBuilder[Self <: CompilerFacade] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompileComponent(value: (CoreEnvironment, String, R3ComponentMetadataFacade) => js.Any): Self = StObject.set(x, "compileComponent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompileDirective(value: (CoreEnvironment, String, R3DirectiveMetadataFacade) => js.Any): Self = StObject.set(x, "compileDirective", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompileFactory(value: (CoreEnvironment, String, R3FactoryDefMetadataFacade) => js.Any): Self = StObject.set(x, "compileFactory", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setCompileInjectable(value: (CoreEnvironment, String, R3InjectableMetadataFacade) => js.Any): Self = StObject.set(x, "compileInjectable", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setCompileInjector(value: (CoreEnvironment, String, R3InjectorMetadataFacade) => js.Any): Self = StObject.set(x, "compileInjector", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setCompileNgModule(value: (CoreEnvironment, String, R3NgModuleMetadataFacade) => js.Any): Self = StObject.set(x, "compileNgModule", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setCompilePipe(value: (CoreEnvironment, String, R3PipeMetadataFacade) => js.Any): Self = StObject.set(x, "compilePipe", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setCreateParseSourceSpan(value: (String, String, String) => ParseSourceSpan): Self = StObject.set(x, "createParseSourceSpan", js.Any.fromFunction3(value))
     
     @scala.inline
     def setR3FactoryTarget(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any
-    ): Self = this.set("R3FactoryTarget", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "R3FactoryTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setR3ResolvedDependencyType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any
-    ): Self = this.set("R3ResolvedDependencyType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "R3ResolvedDependencyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceLoader(value: InstantiableResourceLoader): Self = this.set("ResourceLoader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompileComponent(value: (CoreEnvironment, String, R3ComponentMetadataFacade) => js.Any): Self = this.set("compileComponent", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCompileDirective(value: (CoreEnvironment, String, R3DirectiveMetadataFacade) => js.Any): Self = this.set("compileDirective", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCompileFactory(value: (CoreEnvironment, String, R3FactoryDefMetadataFacade) => js.Any): Self = this.set("compileFactory", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCompileInjectable(value: (CoreEnvironment, String, R3InjectableMetadataFacade) => js.Any): Self = this.set("compileInjectable", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCompileInjector(value: (CoreEnvironment, String, R3InjectorMetadataFacade) => js.Any): Self = this.set("compileInjector", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCompileNgModule(value: (CoreEnvironment, String, R3NgModuleMetadataFacade) => js.Any): Self = this.set("compileNgModule", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCompilePipe(value: (CoreEnvironment, String, R3PipeMetadataFacade) => js.Any): Self = this.set("compilePipe", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCreateParseSourceSpan(value: (String, String, String) => ParseSourceSpan): Self = this.set("createParseSourceSpan", js.Any.fromFunction3(value))
+    def setResourceLoader(value: InstantiableResourceLoader): Self = StObject.set(x, "ResourceLoader", value.asInstanceOf[js.Any])
   }
 }

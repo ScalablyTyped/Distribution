@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "PivotLinkFormat")
 @js.native
-object PivotLinkFormat extends js.Object {
+object PivotLinkFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat with Double] = js.native

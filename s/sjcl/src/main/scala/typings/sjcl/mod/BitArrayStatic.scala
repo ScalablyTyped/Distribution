@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BitArrayStatic extends js.Object {
+trait BitArrayStatic extends StObject {
   
   /// Shift an array right.
   def _shiftRight(a: BitArray_, shift: Double): BitArray_ = js.native

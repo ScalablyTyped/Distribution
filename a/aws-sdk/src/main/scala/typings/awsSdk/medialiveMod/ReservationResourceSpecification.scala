@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationResourceSpecification extends js.Object {
+trait ReservationResourceSpecification extends StObject {
   
   /**
     * Channel class, e.g. 'STANDARD'
@@ -56,66 +57,54 @@ object ReservationResourceSpecification {
   }
   
   @scala.inline
-  implicit class ReservationResourceSpecificationOps[Self <: ReservationResourceSpecification] (val x: Self) extends AnyVal {
+  implicit class ReservationResourceSpecificationMutableBuilder[Self <: ReservationResourceSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelClassUndefined: Self = StObject.set(x, "ChannelClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodec(value: ReservationCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelClass(value: ChannelClass): Self = this.set("ChannelClass", value.asInstanceOf[js.Any])
+    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
     @scala.inline
-    def deleteChannelClass: Self = this.set("ChannelClass", js.undefined)
+    def setMaximumBitrate(value: ReservationMaximumBitrate): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: ReservationCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("Codec", js.undefined)
+    def setMaximumFramerate(value: ReservationMaximumFramerate): Self = StObject.set(x, "MaximumFramerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumBitrate(value: ReservationMaximumBitrate): Self = this.set("MaximumBitrate", value.asInstanceOf[js.Any])
+    def setMaximumFramerateUndefined: Self = StObject.set(x, "MaximumFramerate", js.undefined)
     
     @scala.inline
-    def deleteMaximumBitrate: Self = this.set("MaximumBitrate", js.undefined)
+    def setResolution(value: ReservationResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumFramerate(value: ReservationMaximumFramerate): Self = this.set("MaximumFramerate", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
     @scala.inline
-    def deleteMaximumFramerate: Self = this.set("MaximumFramerate", js.undefined)
+    def setResourceType(value: ReservationResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: ReservationResolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("Resolution", js.undefined)
+    def setSpecialFeature(value: ReservationSpecialFeature): Self = StObject.set(x, "SpecialFeature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ReservationResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setSpecialFeatureUndefined: Self = StObject.set(x, "SpecialFeature", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setVideoQuality(value: ReservationVideoQuality): Self = StObject.set(x, "VideoQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialFeature(value: ReservationSpecialFeature): Self = this.set("SpecialFeature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecialFeature: Self = this.set("SpecialFeature", js.undefined)
-    
-    @scala.inline
-    def setVideoQuality(value: ReservationVideoQuality): Self = this.set("VideoQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoQuality: Self = this.set("VideoQuality", js.undefined)
+    def setVideoQualityUndefined: Self = StObject.set(x, "VideoQuality", js.undefined)
   }
 }

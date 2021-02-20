@@ -2,16 +2,16 @@ package typings.relayRuntime
 
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayStoreTypesMod.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("relay-runtime/lib/store/RelayModernRecord", JSImport.Namespace)
-@js.native
-object relayModernRecordMod extends js.Object {
+object relayModernRecordMod {
   
+  @JSImport("relay-runtime/lib/store/RelayModernRecord", "RelayModernRecord")
   @js.native
-  class RelayModernRecord () extends js.Object {
+  class RelayModernRecord () extends StObject {
     
     /**
       * Clone a record.

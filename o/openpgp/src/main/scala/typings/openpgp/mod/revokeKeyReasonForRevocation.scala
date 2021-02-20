@@ -1,12 +1,13 @@
 package typings.openpgp.mod
 
 import typings.openpgp.mod.enums.reasonForRevocation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait revokeKeyReasonForRevocation extends js.Object {
+trait revokeKeyReasonForRevocation extends StObject {
   
   /**
     * (optional) flag indicating the reason for revocation
@@ -27,24 +28,12 @@ object revokeKeyReasonForRevocation {
   }
   
   @scala.inline
-  implicit class revokeKeyReasonForRevocationOps[Self <: revokeKeyReasonForRevocation] (val x: Self) extends AnyVal {
+  implicit class revokeKeyReasonForRevocationMutableBuilder[Self <: revokeKeyReasonForRevocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlag(value: reasonForRevocation): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlag(value: reasonForRevocation): Self = this.set("flag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

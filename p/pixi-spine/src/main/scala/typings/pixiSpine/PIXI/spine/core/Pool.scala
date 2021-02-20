@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pool[T] extends js.Object {
+trait Pool[T] extends StObject {
   
   def clear(): Unit = js.native
   
@@ -35,36 +36,24 @@ object Pool {
   }
   
   @scala.inline
-  implicit class PoolOps[Self <: Pool[_], T] (val x: Self with Pool[T]) extends AnyVal {
+  implicit class PoolMutableBuilder[Self <: Pool[_], T] (val x: Self with Pool[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFree(value: T => Unit): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreeAll(value: ArrayLike[T] => Unit): Self = StObject.set(x, "freeAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setInstantiator(value: js.Any): Self = StObject.set(x, "instantiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFree(value: T => Unit): Self = this.set("free", js.Any.fromFunction1(value))
+    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreeAll(value: ArrayLike[T] => Unit): Self = this.set("freeAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInstantiator(value: js.Any): Self = this.set("instantiator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItems(value: js.Any): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObtain(value: () => T): Self = this.set("obtain", js.Any.fromFunction0(value))
+    def setObtain(value: () => T): Self = StObject.set(x, "obtain", js.Any.fromFunction0(value))
   }
 }

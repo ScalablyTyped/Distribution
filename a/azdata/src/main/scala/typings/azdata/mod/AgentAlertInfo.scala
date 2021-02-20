@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentAlertInfo extends js.Object {
+trait AgentAlertInfo extends StObject {
   
   var alertType: AlertType = js.native
   
@@ -86,87 +87,75 @@ object AgentAlertInfo {
   }
   
   @scala.inline
-  implicit class AgentAlertInfoOps[Self <: AgentAlertInfo] (val x: Self) extends AnyVal {
+  implicit class AgentAlertInfoMutableBuilder[Self <: AgentAlertInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertType(value: AlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountResetDate(value: String): Self = StObject.set(x, "countResetDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertType(value: AlertType): Self = this.set("alertType", value.asInstanceOf[js.Any])
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryName(value: String): Self = this.set("categoryName", value.asInstanceOf[js.Any])
+    def setDelayBetweenResponses(value: Double): Self = StObject.set(x, "delayBetweenResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountResetDate(value: String): Self = this.set("countResetDate", value.asInstanceOf[js.Any])
+    def setEventDescriptionKeyword(value: String): Self = StObject.set(x, "eventDescriptionKeyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayBetweenResponses(value: Double): Self = this.set("delayBetweenResponses", value.asInstanceOf[js.Any])
+    def setHasNotification(value: Double): Self = StObject.set(x, "hasNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDescriptionKeyword(value: String): Self = this.set("eventDescriptionKeyword", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSource(value: String): Self = this.set("eventSource", value.asInstanceOf[js.Any])
+    def setIncludeEventDescription(value: NotifyMethods): Self = StObject.set(x, "includeEventDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasNotification(value: Double): Self = this.set("hasNotification", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeEventDescription(value: NotifyMethods): Self = this.set("includeEventDescription", value.asInstanceOf[js.Any])
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setLastOccurrenceDate(value: String): Self = StObject.set(x, "lastOccurrenceDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setLastResponseDate(value: String): Self = StObject.set(x, "lastResponseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastOccurrenceDate(value: String): Self = this.set("lastOccurrenceDate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastResponseDate(value: String): Self = this.set("lastResponseDate", value.asInstanceOf[js.Any])
+    def setNotificationMessage(value: String): Self = StObject.set(x, "notificationMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: Double): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    def setOccurrenceCount(value: Double): Self = StObject.set(x, "occurrenceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPerformanceCondition(value: String): Self = StObject.set(x, "performanceCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationMessage(value: String): Self = this.set("notificationMessage", value.asInstanceOf[js.Any])
+    def setSeverity(value: Double): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrenceCount(value: Double): Self = this.set("occurrenceCount", value.asInstanceOf[js.Any])
+    def setWmiEventNamespace(value: String): Self = StObject.set(x, "wmiEventNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceCondition(value: String): Self = this.set("performanceCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeverity(value: Double): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWmiEventNamespace(value: String): Self = this.set("wmiEventNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWmiEventQuery(value: String): Self = this.set("wmiEventQuery", value.asInstanceOf[js.Any])
+    def setWmiEventQuery(value: String): Self = StObject.set(x, "wmiEventQuery", value.asInstanceOf[js.Any])
   }
 }

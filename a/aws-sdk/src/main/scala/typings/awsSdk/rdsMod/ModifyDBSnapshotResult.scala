@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDBSnapshotResult extends js.Object {
+trait ModifyDBSnapshotResult extends StObject {
   
   var DBSnapshot: js.UndefOr[typings.awsSdk.rdsMod.DBSnapshot] = js.native
 }
@@ -18,24 +19,12 @@ object ModifyDBSnapshotResult {
   }
   
   @scala.inline
-  implicit class ModifyDBSnapshotResultOps[Self <: ModifyDBSnapshotResult] (val x: Self) extends AnyVal {
+  implicit class ModifyDBSnapshotResultMutableBuilder[Self <: ModifyDBSnapshotResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBSnapshot(value: DBSnapshot): Self = StObject.set(x, "DBSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDBSnapshot(value: DBSnapshot): Self = this.set("DBSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBSnapshot: Self = this.set("DBSnapshot", js.undefined)
+    def setDBSnapshotUndefined: Self = StObject.set(x, "DBSnapshot", js.undefined)
   }
 }

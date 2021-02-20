@@ -4,15 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@testing-library/dom/types/get-queries-for-element", JSImport.Namespace)
-@js.native
-object getQueriesForElementMod extends js.Object {
+object getQueriesForElementMod {
   
+  @JSImport("@testing-library/dom/types/get-queries-for-element", "getQueriesForElement")
+  @js.native
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
+  @JSImport("@testing-library/dom/types/get-queries-for-element", "getQueriesForElement")
+  @js.native
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
   
   type BoundFunction[T] = (js.Function2[/* text */ js.Any, js.UndefOr[js.Any], js.Any]) | (js.Function3[

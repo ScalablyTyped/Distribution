@@ -2,12 +2,13 @@ package typings.mongodb.mod
 
 import typings.mongodb.mongodbNumbers.`4`
 import typings.mongodb.mongodbNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocketOptions extends js.Object {
+trait SocketOptions extends StObject {
   
   /**
     * Reconnect on error.
@@ -63,63 +64,51 @@ object SocketOptions {
   }
   
   @scala.inline
-  implicit class SocketOptionsOps[Self <: SocketOptions] (val x: Self) extends AnyVal {
+  implicit class SocketOptionsMutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectTimeoutMS(value: scala.Double): Self = StObject.set(x, "connectTimeoutMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoReconnect(value: Boolean): Self = this.set("autoReconnect", value.asInstanceOf[js.Any])
+    def setConnectTimeoutMSUndefined: Self = StObject.set(x, "connectTimeoutMS", js.undefined)
     
     @scala.inline
-    def deleteAutoReconnect: Self = this.set("autoReconnect", js.undefined)
+    def setFamily(value: `4` | `6`): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeoutMS(value: scala.Double): Self = this.set("connectTimeoutMS", value.asInstanceOf[js.Any])
+    def setFamilyNull: Self = StObject.set(x, "family", null)
     
     @scala.inline
-    def deleteConnectTimeoutMS: Self = this.set("connectTimeoutMS", js.undefined)
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def setFamily(value: `4` | `6`): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setKeepAliveInitialDelay(value: scala.Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyNull: Self = this.set("family", null)
+    def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
     
     @scala.inline
-    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     @scala.inline
-    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAliveInitialDelay(value: scala.Double): Self = this.set("keepAliveInitialDelay", value.asInstanceOf[js.Any])
+    def setNoDelayUndefined: Self = StObject.set(x, "noDelay", js.undefined)
     
     @scala.inline
-    def deleteKeepAliveInitialDelay: Self = this.set("keepAliveInitialDelay", js.undefined)
+    def setSocketTimeoutMS(value: scala.Double): Self = StObject.set(x, "socketTimeoutMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDelay(value: Boolean): Self = this.set("noDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDelay: Self = this.set("noDelay", js.undefined)
-    
-    @scala.inline
-    def setSocketTimeoutMS(value: scala.Double): Self = this.set("socketTimeoutMS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocketTimeoutMS: Self = this.set("socketTimeoutMS", js.undefined)
+    def setSocketTimeoutMSUndefined: Self = StObject.set(x, "socketTimeoutMS", js.undefined)
   }
 }

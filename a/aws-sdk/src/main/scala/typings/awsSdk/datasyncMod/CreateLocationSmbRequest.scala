@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLocationSmbRequest extends js.Object {
+trait CreateLocationSmbRequest extends StObject {
   
   /**
     * The Amazon Resource Names (ARNs) of agents to use for a Simple Message Block (SMB) location. 
@@ -62,57 +63,45 @@ object CreateLocationSmbRequest {
   }
   
   @scala.inline
-  implicit class CreateLocationSmbRequestOps[Self <: CreateLocationSmbRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLocationSmbRequestMutableBuilder[Self <: CreateLocationSmbRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = this.set("AgentArns", js.Array(value :_*))
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def setAgentArns(value: AgentArnList): Self = this.set("AgentArns", value.asInstanceOf[js.Any])
+    def setMountOptions(value: SmbMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: SmbPassword): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
     
     @scala.inline
-    def setServerHostname(value: ServerHostname): Self = this.set("ServerHostname", value.asInstanceOf[js.Any])
+    def setPassword(value: SmbPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdirectory(value: SmbSubdirectory): Self = this.set("Subdirectory", value.asInstanceOf[js.Any])
+    def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: SmbUser): Self = this.set("User", value.asInstanceOf[js.Any])
+    def setSubdirectory(value: SmbSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: SmbDomain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def setMountOptions(value: SmbMountOptions): Self = this.set("MountOptions", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteMountOptions: Self = this.set("MountOptions", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: InputTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

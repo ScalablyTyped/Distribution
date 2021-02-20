@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MousePressOptions extends js.Object {
+trait MousePressOptions extends StObject {
   
   /**
     * left, right, or middle.
@@ -28,30 +29,18 @@ object MousePressOptions {
   }
   
   @scala.inline
-  implicit class MousePressOptionsOps[Self <: MousePressOptions] (val x: Self) extends AnyVal {
+  implicit class MousePressOptionsMutableBuilder[Self <: MousePressOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: MouseButtons): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: MouseButtons): Self = this.set("button", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
-    
-    @scala.inline
-    def setClickCount(value: Double): Self = this.set("clickCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClickCount: Self = this.set("clickCount", js.undefined)
+    def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
   }
 }

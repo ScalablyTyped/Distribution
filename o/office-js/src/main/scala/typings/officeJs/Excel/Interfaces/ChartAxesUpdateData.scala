@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`. */
 @js.native
-trait ChartAxesUpdateData extends js.Object {
+trait ChartAxesUpdateData extends StObject {
   
   /**
     *
@@ -41,36 +42,24 @@ object ChartAxesUpdateData {
   }
   
   @scala.inline
-  implicit class ChartAxesUpdateDataOps[Self <: ChartAxesUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartAxesUpdateDataMutableBuilder[Self <: ChartAxesUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeriesAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryAxis(value: ChartAxisUpdateData): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
     
     @scala.inline
-    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    def setValueAxis(value: ChartAxisUpdateData): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesAxis(value: ChartAxisUpdateData): Self = this.set("seriesAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesAxis: Self = this.set("seriesAxis", js.undefined)
-    
-    @scala.inline
-    def setValueAxis(value: ChartAxisUpdateData): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

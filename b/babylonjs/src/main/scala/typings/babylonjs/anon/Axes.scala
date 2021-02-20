@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axes extends js.Object {
+trait Axes extends StObject {
   
   var axes: Xrstandardthumbstick = js.native
   
@@ -29,30 +30,18 @@ object Axes {
   }
   
   @scala.inline
-  implicit class AxesOps[Self <: Axes] (val x: Self) extends AnyVal {
+  implicit class AxesMutableBuilder[Self <: Axes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxes(value: Xrstandardthumbstick): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtons(value: Xrstandardsqueeze): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultAxis(value: MaxNodeName): Self = StObject.set(x, "defaultAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxes(value: Xrstandardthumbstick): Self = this.set("axes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setButtons(value: Xrstandardsqueeze): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultAxis(value: MaxNodeName): Self = this.set("defaultAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultButton(value: PressedNodeName): Self = this.set("defaultButton", value.asInstanceOf[js.Any])
+    def setDefaultButton(value: PressedNodeName): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism extends js.Object {
+trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism extends StObject {
   
   /**
     * The number of in-application streams to create.
@@ -22,24 +23,12 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputP
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismOps[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCount(value: Input[Double]): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

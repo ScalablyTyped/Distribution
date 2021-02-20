@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateGroupResult extends js.Object {
+trait UpdateGroupResult extends StObject {
   
   /**
     * The group that was updated. Contains the name of the group that was updated, the ARN of the group that was updated, the updated filter expression, and the updated insight configuration assigned to the group.
@@ -21,24 +22,12 @@ object UpdateGroupResult {
   }
   
   @scala.inline
-  implicit class UpdateGroupResultOps[Self <: UpdateGroupResult] (val x: Self) extends AnyVal {
+  implicit class UpdateGroupResultMutableBuilder[Self <: UpdateGroupResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroup(value: Group): Self = this.set("Group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroup: Self = this.set("Group", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
   }
 }

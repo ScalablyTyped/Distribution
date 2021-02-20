@@ -2,13 +2,14 @@ package typings.squareConnect.mod
 
 import typings.squareConnect.squareConnectStrings.MOBILE
 import typings.squareConnect.squareConnectStrings.PHYSICAL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Location")
 @js.native
-class Location () extends js.Object {
+class Location () extends StObject {
   
   /**
     * The physical address of the location.

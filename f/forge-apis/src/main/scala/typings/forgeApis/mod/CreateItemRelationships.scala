@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateItemRelationships extends js.Object {
+trait CreateItemRelationships extends StObject {
   
   var storage: js.UndefOr[CreateItemRelationshipsStorage] = js.native
 }
@@ -18,24 +19,12 @@ object CreateItemRelationships {
   }
   
   @scala.inline
-  implicit class CreateItemRelationshipsOps[Self <: CreateItemRelationships] (val x: Self) extends AnyVal {
+  implicit class CreateItemRelationshipsMutableBuilder[Self <: CreateItemRelationships] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStorage(value: CreateItemRelationshipsStorage): Self = this.set("storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorage: Self = this.set("storage", js.undefined)
+    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

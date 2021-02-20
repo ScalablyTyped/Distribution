@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecondaryStatusTransition extends js.Object {
+trait SecondaryStatusTransition extends StObject {
   
   /**
     * A timestamp that shows when the training job transitioned out of this secondary status state into another secondary status state or when the training job has ended.
@@ -36,36 +37,24 @@ object SecondaryStatusTransition {
   }
   
   @scala.inline
-  implicit class SecondaryStatusTransitionOps[Self <: SecondaryStatusTransition] (val x: Self) extends AnyVal {
+  implicit class SecondaryStatusTransitionMutableBuilder[Self <: SecondaryStatusTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStatus(value: SecondaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SecondaryStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.CalendarObject> */
 @js.native
-trait CalendarObjectOptions extends js.Object {
+trait CalendarObjectOptions extends StObject {
   
   var calendar: js.UndefOr[Calendar] = js.native
   
@@ -29,54 +30,42 @@ object CalendarObjectOptions {
   }
   
   @scala.inline
-  implicit class CalendarObjectOptionsOps[Self <: CalendarObjectOptions] (val x: Self) extends AnyVal {
+  implicit class CalendarObjectOptionsMutableBuilder[Self <: CalendarObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarData(value: String): Self = StObject.set(x, "calendarData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalendarDataUndefined: Self = StObject.set(x, "calendarData", js.undefined)
     
     @scala.inline
-    def setCalendar(value: Calendar): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setConstructor(value: /* options */ js.UndefOr[CalendarObjectOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalendarData(value: String): Self = this.set("calendarData", value.asInstanceOf[js.Any])
+    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
     @scala.inline
-    def deleteCalendarData: Self = this.set("calendarData", js.undefined)
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: /* options */ js.UndefOr[CalendarObjectOptions] => js.Any): Self = this.set("constructor", js.Any.fromFunction1(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

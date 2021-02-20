@@ -3,12 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.Errors.EDAMNotFoundException
 import typings.evernote.mod.Errors.EDAMUserException
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityID extends js.Object {
+trait IdentityID extends StObject {
   
   var identityID: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.native
   
@@ -27,42 +28,30 @@ object IdentityID {
   }
   
   @scala.inline
-  implicit class IdentityIDOps[Self <: IdentityID] (val x: Self) extends AnyVal {
+  implicit class IdentityIDMutableBuilder[Self <: IdentityID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityID(value: typings.evernote.mod.Types.IdentityID): Self = StObject.set(x, "identityID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityIDUndefined: Self = StObject.set(x, "identityID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotFoundException(value: EDAMNotFoundException): Self = StObject.set(x, "notFoundException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityID(value: typings.evernote.mod.Types.IdentityID): Self = this.set("identityID", value.asInstanceOf[js.Any])
+    def setNotFoundExceptionUndefined: Self = StObject.set(x, "notFoundException", js.undefined)
     
     @scala.inline
-    def deleteIdentityID: Self = this.set("identityID", js.undefined)
+    def setUserException(value: EDAMUserException): Self = StObject.set(x, "userException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotFoundException(value: EDAMNotFoundException): Self = this.set("notFoundException", value.asInstanceOf[js.Any])
+    def setUserExceptionUndefined: Self = StObject.set(x, "userException", js.undefined)
     
     @scala.inline
-    def deleteNotFoundException: Self = this.set("notFoundException", js.undefined)
+    def setUserID(value: UserID): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserException(value: EDAMUserException): Self = this.set("userException", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserException: Self = this.set("userException", js.undefined)
-    
-    @scala.inline
-    def setUserID(value: UserID): Self = this.set("userID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserID: Self = this.set("userID", js.undefined)
+    def setUserIDUndefined: Self = StObject.set(x, "userID", js.undefined)
   }
 }

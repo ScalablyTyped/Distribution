@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,42 +42,30 @@ object OlapTableViewOptions {
   }
   
   @scala.inline
-  implicit class OlapTableViewOptionsOps[Self <: OlapTableViewOptions] (val x: Self) extends AnyVal {
+  implicit class OlapTableViewOptionsMutableBuilder[Self <: OlapTableViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasColumns(value: Boolean): Self = StObject.set(x, "hasColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasColumnsUndefined: Self = StObject.set(x, "hasColumns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasRows(value: Boolean): Self = StObject.set(x, "hasRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasColumns(value: Boolean): Self = this.set("hasColumns", value.asInstanceOf[js.Any])
+    def setHasRowsUndefined: Self = StObject.set(x, "hasRows", js.undefined)
     
     @scala.inline
-    def deleteHasColumns: Self = this.set("hasColumns", js.undefined)
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasRows(value: Boolean): Self = this.set("hasRows", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteHasRows: Self = this.set("hasRows", js.undefined)
+    def setViewSettings(value: OlapTableViewOptionsViewSettings): Self = StObject.set(x, "viewSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
-    
-    @scala.inline
-    def setViewSettings(value: OlapTableViewOptionsViewSettings): Self = this.set("viewSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewSettings: Self = this.set("viewSettings", js.undefined)
+    def setViewSettingsUndefined: Self = StObject.set(x, "viewSettings", js.undefined)
   }
 }

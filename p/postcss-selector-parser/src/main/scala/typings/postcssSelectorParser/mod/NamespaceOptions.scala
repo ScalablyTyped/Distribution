@@ -1,6 +1,7 @@
 package typings.postcssSelectorParser.mod
 
 import typings.postcssSelectorParser.postcssSelectorParserBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object NamespaceOptions {
   }
   
   @scala.inline
-  implicit class NamespaceOptionsOps[Self <: NamespaceOptions[_], Value /* <: js.UndefOr[String] */] (val x: Self with NamespaceOptions[Value]) extends AnyVal {
+  implicit class NamespaceOptionsMutableBuilder[Self <: NamespaceOptions[_], Value /* <: js.UndefOr[String] */] (val x: Self with NamespaceOptions[Value]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamespace(value: String | `true`): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

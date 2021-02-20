@@ -1,11 +1,12 @@
 package typings.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VastAdExtensionChild extends js.Object {
+trait VastAdExtensionChild extends StObject {
   
   var attributes: VastAdChildAttributes = js.native
   
@@ -22,30 +23,18 @@ object VastAdExtensionChild {
   }
   
   @scala.inline
-  implicit class VastAdExtensionChildOps[Self <: VastAdExtensionChild] (val x: Self) extends AnyVal {
+  implicit class VastAdExtensionChildMutableBuilder[Self <: VastAdExtensionChild] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: VastAdChildAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setAttributes(value: VastAdChildAttributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.anon.QIsDesktop
 import typings.qlikEngineapi.anon.QPathSeparator
 import typings.qlikEngineapi.anon.QUrl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQConfig extends js.Object {
+trait IQConfig extends StObject {
   
   var qFeatures: QIsDesktop = js.native
   
@@ -25,30 +26,18 @@ object IQConfig {
   }
   
   @scala.inline
-  implicit class IQConfigOps[Self <: IQConfig] (val x: Self) extends AnyVal {
+  implicit class IQConfigMutableBuilder[Self <: IQConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFeatures(value: QIsDesktop): Self = StObject.set(x, "qFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQServices(value: js.Array[QUrl]): Self = StObject.set(x, "qServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQServicesVarargs(value: QUrl*): Self = StObject.set(x, "qServices", js.Array(value :_*))
     
     @scala.inline
-    def setQFeatures(value: QIsDesktop): Self = this.set("qFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQServicesVarargs(value: QUrl*): Self = this.set("qServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setQServices(value: js.Array[QUrl]): Self = this.set("qServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSystemProperties(value: QPathSeparator): Self = this.set("qSystemProperties", value.asInstanceOf[js.Any])
+    def setQSystemProperties(value: QPathSeparator): Self = StObject.set(x, "qSystemProperties", value.asInstanceOf[js.Any])
   }
 }

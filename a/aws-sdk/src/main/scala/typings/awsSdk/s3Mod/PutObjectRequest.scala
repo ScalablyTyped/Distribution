@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutObjectRequest extends js.Object {
+trait PutObjectRequest extends StObject {
   
   /**
     * The canned ACL to apply to the object. For more information, see Canned ACL. This action is not supported by Amazon S3 on Outposts.
@@ -168,198 +169,186 @@ object PutObjectRequest {
   }
   
   @scala.inline
-  implicit class PutObjectRequestOps[Self <: PutObjectRequest] (val x: Self) extends AnyVal {
+  implicit class PutObjectRequestMutableBuilder[Self <: PutObjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setACL(value: ObjectCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACLUndefined: Self = StObject.set(x, "ACL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACL(value: ObjectCannedACL): Self = this.set("ACL", value.asInstanceOf[js.Any])
+    def setCacheControl(value: CacheControl): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteACL: Self = this.set("ACL", js.undefined)
+    def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
     
     @scala.inline
-    def setBody(value: Body): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setContentDisposition(value: ContentDisposition): Self = StObject.set(x, "ContentDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setContentDispositionUndefined: Self = StObject.set(x, "ContentDisposition", js.undefined)
     
     @scala.inline
-    def setCacheControl(value: CacheControl): Self = this.set("CacheControl", value.asInstanceOf[js.Any])
+    def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "ContentEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheControl: Self = this.set("CacheControl", js.undefined)
+    def setContentEncodingUndefined: Self = StObject.set(x, "ContentEncoding", js.undefined)
     
     @scala.inline
-    def setContentDisposition(value: ContentDisposition): Self = this.set("ContentDisposition", value.asInstanceOf[js.Any])
+    def setContentLanguage(value: ContentLanguage): Self = StObject.set(x, "ContentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentDisposition: Self = this.set("ContentDisposition", js.undefined)
+    def setContentLanguageUndefined: Self = StObject.set(x, "ContentLanguage", js.undefined)
     
     @scala.inline
-    def setContentEncoding(value: ContentEncoding): Self = this.set("ContentEncoding", value.asInstanceOf[js.Any])
+    def setContentLength(value: ContentLength): Self = StObject.set(x, "ContentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentEncoding: Self = this.set("ContentEncoding", js.undefined)
+    def setContentLengthUndefined: Self = StObject.set(x, "ContentLength", js.undefined)
     
     @scala.inline
-    def setContentLanguage(value: ContentLanguage): Self = this.set("ContentLanguage", value.asInstanceOf[js.Any])
+    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentLanguage: Self = this.set("ContentLanguage", js.undefined)
+    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
     @scala.inline
-    def setContentLength(value: ContentLength): Self = this.set("ContentLength", value.asInstanceOf[js.Any])
+    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentLength: Self = this.set("ContentLength", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    def setExpires(value: Expires): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    def setGrantFullControl(value: GrantFullControl): Self = StObject.set(x, "GrantFullControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setGrantFullControlUndefined: Self = StObject.set(x, "GrantFullControl", js.undefined)
     
     @scala.inline
-    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    def setGrantRead(value: GrantRead): Self = StObject.set(x, "GrantRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpires: Self = this.set("Expires", js.undefined)
+    def setGrantReadACP(value: GrantReadACP): Self = StObject.set(x, "GrantReadACP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantFullControl(value: GrantFullControl): Self = this.set("GrantFullControl", value.asInstanceOf[js.Any])
+    def setGrantReadACPUndefined: Self = StObject.set(x, "GrantReadACP", js.undefined)
     
     @scala.inline
-    def deleteGrantFullControl: Self = this.set("GrantFullControl", js.undefined)
+    def setGrantReadUndefined: Self = StObject.set(x, "GrantRead", js.undefined)
     
     @scala.inline
-    def setGrantRead(value: GrantRead): Self = this.set("GrantRead", value.asInstanceOf[js.Any])
+    def setGrantWriteACP(value: GrantWriteACP): Self = StObject.set(x, "GrantWriteACP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrantRead: Self = this.set("GrantRead", js.undefined)
+    def setGrantWriteACPUndefined: Self = StObject.set(x, "GrantWriteACP", js.undefined)
     
     @scala.inline
-    def setGrantReadACP(value: GrantReadACP): Self = this.set("GrantReadACP", value.asInstanceOf[js.Any])
+    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrantReadACP: Self = this.set("GrantReadACP", js.undefined)
+    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantWriteACP(value: GrantWriteACP): Self = this.set("GrantWriteACP", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     @scala.inline
-    def deleteGrantWriteACP: Self = this.set("GrantWriteACP", js.undefined)
+    def setObjectLockLegalHoldStatus(value: ObjectLockLegalHoldStatus): Self = StObject.set(x, "ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    def setObjectLockLegalHoldStatusUndefined: Self = StObject.set(x, "ObjectLockLegalHoldStatus", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    def setObjectLockMode(value: ObjectLockMode): Self = StObject.set(x, "ObjectLockMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockLegalHoldStatus(value: ObjectLockLegalHoldStatus): Self = this.set("ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
+    def setObjectLockModeUndefined: Self = StObject.set(x, "ObjectLockMode", js.undefined)
     
     @scala.inline
-    def deleteObjectLockLegalHoldStatus: Self = this.set("ObjectLockLegalHoldStatus", js.undefined)
+    def setObjectLockRetainUntilDate(value: ObjectLockRetainUntilDate): Self = StObject.set(x, "ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockMode(value: ObjectLockMode): Self = this.set("ObjectLockMode", value.asInstanceOf[js.Any])
+    def setObjectLockRetainUntilDateUndefined: Self = StObject.set(x, "ObjectLockRetainUntilDate", js.undefined)
     
     @scala.inline
-    def deleteObjectLockMode: Self = this.set("ObjectLockMode", js.undefined)
+    def setRequestPayer(value: RequestPayer): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLockRetainUntilDate(value: ObjectLockRetainUntilDate): Self = this.set("ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
     
     @scala.inline
-    def deleteObjectLockRetainUntilDate: Self = this.set("ObjectLockRetainUntilDate", js.undefined)
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    def setSSECustomerKey(value: SSECustomerKey): Self = StObject.set(x, "SSECustomerKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
     
     @scala.inline
-    def setSSECustomerKey(value: SSECustomerKey): Self = this.set("SSECustomerKey", value.asInstanceOf[js.Any])
+    def setSSECustomerKeyUndefined: Self = StObject.set(x, "SSECustomerKey", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerKey: Self = this.set("SSECustomerKey", js.undefined)
+    def setSSEKMSEncryptionContext(value: SSEKMSEncryptionContext): Self = StObject.set(x, "SSEKMSEncryptionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    def setSSEKMSEncryptionContextUndefined: Self = StObject.set(x, "SSEKMSEncryptionContext", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEKMSEncryptionContext(value: SSEKMSEncryptionContext): Self = this.set("SSEKMSEncryptionContext", value.asInstanceOf[js.Any])
+    def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
     
     @scala.inline
-    def deleteSSEKMSEncryptionContext: Self = this.set("SSEKMSEncryptionContext", js.undefined)
+    def setServerSideEncryption(value: ServerSideEncryption): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = this.set("SSEKMSKeyId", value.asInstanceOf[js.Any])
+    def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
     
     @scala.inline
-    def deleteSSEKMSKeyId: Self = this.set("SSEKMSKeyId", js.undefined)
+    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("ServerSideEncryption", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
     @scala.inline
-    def deleteServerSideEncryption: Self = this.set("ServerSideEncryption", js.undefined)
+    def setTagging(value: TaggingHeader): Self = StObject.set(x, "Tagging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    def setTaggingUndefined: Self = StObject.set(x, "Tagging", js.undefined)
     
     @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    def setWebsiteRedirectLocation(value: WebsiteRedirectLocation): Self = StObject.set(x, "WebsiteRedirectLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagging(value: TaggingHeader): Self = this.set("Tagging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagging: Self = this.set("Tagging", js.undefined)
-    
-    @scala.inline
-    def setWebsiteRedirectLocation(value: WebsiteRedirectLocation): Self = this.set("WebsiteRedirectLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteRedirectLocation: Self = this.set("WebsiteRedirectLocation", js.undefined)
+    def setWebsiteRedirectLocationUndefined: Self = StObject.set(x, "WebsiteRedirectLocation", js.undefined)
   }
 }

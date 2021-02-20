@@ -1,11 +1,12 @@
 package typings.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Method1[T, R] extends js.Object {
+trait Method1[T, R] extends StObject {
   
   def apply(a: T): js.Promise[R] = js.native
   

@@ -7,16 +7,19 @@ import typings.stripe.mod.IList
 import typings.stripe.mod.IListOptions
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.cards.ICard
 import typings.stripe.mod.cards.ICardUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CustomerCards")
 @js.native
-class CustomerCards () extends StripeResource {
+class CustomerCards protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: Card): js.Promise[ICard] = js.native
   /**

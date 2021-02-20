@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Third party identity principal.
   */
 @js.native
-trait SchemaThirdPartyPrincipal extends js.Object {
+trait SchemaThirdPartyPrincipal extends StObject {
   
   /**
     * Metadata about third party identity.
@@ -25,24 +26,12 @@ object SchemaThirdPartyPrincipal {
   }
   
   @scala.inline
-  implicit class SchemaThirdPartyPrincipalOps[Self <: SchemaThirdPartyPrincipal] (val x: Self) extends AnyVal {
+  implicit class SchemaThirdPartyPrincipalMutableBuilder[Self <: SchemaThirdPartyPrincipal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThirdPartyClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setThirdPartyClaims(value: StringDictionary[js.Any]): Self = this.set("thirdPartyClaims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirdPartyClaims: Self = this.set("thirdPartyClaims", js.undefined)
+    def setThirdPartyClaimsUndefined: Self = StObject.set(x, "thirdPartyClaims", js.undefined)
   }
 }

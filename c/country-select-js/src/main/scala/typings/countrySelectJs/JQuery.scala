@@ -5,12 +5,13 @@ import typings.countrySelectJs.CountrySelectJs.Options
 import typings.countrySelectJs.countrySelectJsStrings.destroy
 import typings.countrySelectJs.countrySelectJsStrings.getSelectedCountryData
 import typings.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * initialize the plugin with optional options.

@@ -1,11 +1,12 @@
 package typings.awsSdk.connectparticipantMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTranscriptResponse extends js.Object {
+trait GetTranscriptResponse extends StObject {
   
   /**
     * The initial contact ID for the contact. 
@@ -31,39 +32,27 @@ object GetTranscriptResponse {
   }
   
   @scala.inline
-  implicit class GetTranscriptResponseOps[Self <: GetTranscriptResponse] (val x: Self) extends AnyVal {
+  implicit class GetTranscriptResponseMutableBuilder[Self <: GetTranscriptResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialContactIdUndefined: Self = StObject.set(x, "InitialContactId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialContactId(value: ContactId): Self = this.set("InitialContactId", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteInitialContactId: Self = this.set("InitialContactId", js.undefined)
+    def setTranscript(value: Transcript): Self = StObject.set(x, "Transcript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTranscriptUndefined: Self = StObject.set(x, "Transcript", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTranscriptVarargs(value: Item*): Self = this.set("Transcript", js.Array(value :_*))
-    
-    @scala.inline
-    def setTranscript(value: Transcript): Self = this.set("Transcript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscript: Self = this.set("Transcript", js.undefined)
+    def setTranscriptVarargs(value: Item*): Self = StObject.set(x, "Transcript", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.pouchdbCore.PouchDB.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionDiff extends js.Object {
+trait RevisionDiff extends StObject {
   
   var missing: js.UndefOr[js.Array[String]] = js.native
   
@@ -20,36 +21,24 @@ object RevisionDiff {
   }
   
   @scala.inline
-  implicit class RevisionDiffOps[Self <: RevisionDiff] (val x: Self) extends AnyVal {
+  implicit class RevisionDiffMutableBuilder[Self <: RevisionDiff] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
     
     @scala.inline
-    def setMissingVarargs(value: String*): Self = this.set("missing", js.Array(value :_*))
+    def setPossible_ancestors(value: js.Array[String]): Self = StObject.set(x, "possible_ancestors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissing(value: js.Array[String]): Self = this.set("missing", value.asInstanceOf[js.Any])
+    def setPossible_ancestorsUndefined: Self = StObject.set(x, "possible_ancestors", js.undefined)
     
     @scala.inline
-    def deleteMissing: Self = this.set("missing", js.undefined)
-    
-    @scala.inline
-    def setPossible_ancestorsVarargs(value: String*): Self = this.set("possible_ancestors", js.Array(value :_*))
-    
-    @scala.inline
-    def setPossible_ancestors(value: js.Array[String]): Self = this.set("possible_ancestors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePossible_ancestors: Self = this.set("possible_ancestors", js.undefined)
+    def setPossible_ancestorsVarargs(value: String*): Self = StObject.set(x, "possible_ancestors", js.Array(value :_*))
   }
 }

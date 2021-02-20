@@ -1,12 +1,13 @@
 package typings.ot.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "TextOperation")
 @js.native
-class TextOperation () extends js.Object {
+class TextOperation () extends StObject {
   
   /**
     * Apply an operation to a string, returning a new string. Throws an error if
@@ -107,21 +108,25 @@ class TextOperation () extends js.Object {
   def toJSON(): SerializedTextOperation = js.native
 }
 /* static members */
-@JSImport("ot", "TextOperation")
-@js.native
-object TextOperation extends js.Object {
+object TextOperation {
   
   /**
     * Converts a plain JS object into an operation and validates it.
     * @param operation The op
     */
+  @JSImport("ot", "TextOperation.fromJSON")
+  @js.native
   def fromJSON(operation: SerializedTextOperation): TextOperation = js.native
   
   /**
     * Delete ops: Delete the next n characters. Represented by negative ints.
     * @param operation The op
     */
+  @JSImport("ot", "TextOperation.isDelete")
+  @js.native
   def isDelete(operation: String): Boolean = js.native
+  @JSImport("ot", "TextOperation.isDelete")
+  @js.native
   def isDelete(operation: Double): Boolean = js.native
   
   /**
@@ -129,7 +134,11 @@ object TextOperation extends js.Object {
     *   Represented by strings.
     * @param operation The op
     */
+  @JSImport("ot", "TextOperation.isInsert")
+  @js.native
   def isInsert(operation: String): Boolean = js.native
+  @JSImport("ot", "TextOperation.isInsert")
+  @js.native
   def isInsert(operation: Double): Boolean = js.native
   
   /**
@@ -137,7 +146,11 @@ object TextOperation extends js.Object {
     *   Represented by positive ints.
     * @param operation The op
     */
+  @JSImport("ot", "TextOperation.isRetain")
+  @js.native
   def isRetain(operation: String): Boolean = js.native
+  @JSImport("ot", "TextOperation.isRetain")
+  @js.native
   def isRetain(operation: Double): Boolean = js.native
   
   /**
@@ -148,5 +161,7 @@ object TextOperation extends js.Object {
     * @param left The left op
     * @param right The right op
     */
+  @JSImport("ot", "TextOperation.transform")
+  @js.native
   def transform(left: TextOperation, right: TextOperation): TextOperation = js.native
 }

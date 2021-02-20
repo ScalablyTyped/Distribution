@@ -1,6 +1,7 @@
 package typings.officeJsPreview.OfficeExtension
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The `Excel.run` and `Word.run` methods provide a request context.
   */
 @js.native
-trait ClientRequestContext extends js.Object {
+trait ClientRequestContext extends StObject {
   
   /** Debug information */
   val debugInfo: RequestContextDebugInfo = js.native

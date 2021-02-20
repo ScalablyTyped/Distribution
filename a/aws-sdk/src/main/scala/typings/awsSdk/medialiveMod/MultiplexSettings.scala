@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexSettings extends js.Object {
+trait MultiplexSettings extends StObject {
   
   /**
     * Maximum video buffer delay in milliseconds.
@@ -36,36 +37,24 @@ object MultiplexSettings {
   }
   
   @scala.inline
-  implicit class MultiplexSettingsOps[Self <: MultiplexSettings] (val x: Self) extends AnyVal {
+  implicit class MultiplexSettingsMutableBuilder[Self <: MultiplexSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumVideoBufferDelayMilliseconds(value: integerMin800Max3000): Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumVideoBufferDelayMillisecondsUndefined: Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = StObject.set(x, "TransportStreamBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = this.set("TransportStreamBitrate", value.asInstanceOf[js.Any])
+    def setTransportStreamId(value: integerMin0Max65535): Self = StObject.set(x, "TransportStreamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportStreamId(value: integerMin0Max65535): Self = this.set("TransportStreamId", value.asInstanceOf[js.Any])
+    def setTransportStreamReservedBitrate(value: integerMin0Max100000000): Self = StObject.set(x, "TransportStreamReservedBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumVideoBufferDelayMilliseconds(value: integerMin800Max3000): Self = this.set("MaximumVideoBufferDelayMilliseconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumVideoBufferDelayMilliseconds: Self = this.set("MaximumVideoBufferDelayMilliseconds", js.undefined)
-    
-    @scala.inline
-    def setTransportStreamReservedBitrate(value: integerMin0Max100000000): Self = this.set("TransportStreamReservedBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportStreamReservedBitrate: Self = this.set("TransportStreamReservedBitrate", js.undefined)
+    def setTransportStreamReservedBitrateUndefined: Self = StObject.set(x, "TransportStreamReservedBitrate", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesPutKeyPolicyInputMod.PutKeyPolicyInput
 import typings.awsSdkClientKmsNode.typesPutKeyPolicyOutputMod.PutKeyPolicyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/PutKeyPolicyCommand", JSImport.Namespace)
-@js.native
-object putKeyPolicyCommandMod extends js.Object {
+object putKeyPolicyCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/PutKeyPolicyCommand", "PutKeyPolicyCommand")
   @js.native
   class PutKeyPolicyCommand protected () extends Command[
           InputTypesUnion, 

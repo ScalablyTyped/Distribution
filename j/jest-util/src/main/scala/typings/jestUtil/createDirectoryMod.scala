@@ -1,13 +1,14 @@
 package typings.jestUtil
 
 import typings.jestTypes.configMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-util/build/createDirectory", JSImport.Namespace)
-@js.native
-object createDirectoryMod extends js.Object {
+object createDirectoryMod {
   
+  @JSImport("jest-util/build/createDirectory", JSImport.Default)
+  @js.native
   def default(path: Path): Unit = js.native
 }

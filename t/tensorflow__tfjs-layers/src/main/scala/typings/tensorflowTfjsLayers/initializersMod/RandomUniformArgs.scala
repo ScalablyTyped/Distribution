@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsLayers.initializersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RandomUniformArgs extends js.Object {
+trait RandomUniformArgs extends StObject {
   
   /** Upper bound of the range of random values to generate. */
   var maxval: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object RandomUniformArgs {
   }
   
   @scala.inline
-  implicit class RandomUniformArgsOps[Self <: RandomUniformArgs] (val x: Self) extends AnyVal {
+  implicit class RandomUniformArgsMutableBuilder[Self <: RandomUniformArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxvalUndefined: Self = StObject.set(x, "maxval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinval(value: Double): Self = StObject.set(x, "minval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxval(value: Double): Self = this.set("maxval", value.asInstanceOf[js.Any])
+    def setMinvalUndefined: Self = StObject.set(x, "minval", js.undefined)
     
     @scala.inline
-    def deleteMaxval: Self = this.set("maxval", js.undefined)
+    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinval(value: Double): Self = this.set("minval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinval: Self = this.set("minval", js.undefined)
-    
-    @scala.inline
-    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

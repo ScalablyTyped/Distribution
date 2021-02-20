@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceConnectionStatus extends js.Object {
+trait WorkspaceConnectionStatus extends StObject {
   
   /**
     * The connection state of the WorkSpace. The connection state is unknown if the WorkSpace is stopped.
@@ -36,42 +37,30 @@ object WorkspaceConnectionStatus {
   }
   
   @scala.inline
-  implicit class WorkspaceConnectionStatusOps[Self <: WorkspaceConnectionStatus] (val x: Self) extends AnyVal {
+  implicit class WorkspaceConnectionStatusMutableBuilder[Self <: WorkspaceConnectionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionState(value: ConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionStateCheckTimestamp(value: Timestamp): Self = StObject.set(x, "ConnectionStateCheckTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionStateCheckTimestampUndefined: Self = StObject.set(x, "ConnectionStateCheckTimestamp", js.undefined)
     
     @scala.inline
-    def setConnectionState(value: ConnectionState): Self = this.set("ConnectionState", value.asInstanceOf[js.Any])
+    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
     @scala.inline
-    def deleteConnectionState: Self = this.set("ConnectionState", js.undefined)
+    def setLastKnownUserConnectionTimestamp(value: Timestamp): Self = StObject.set(x, "LastKnownUserConnectionTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStateCheckTimestamp(value: Timestamp): Self = this.set("ConnectionStateCheckTimestamp", value.asInstanceOf[js.Any])
+    def setLastKnownUserConnectionTimestampUndefined: Self = StObject.set(x, "LastKnownUserConnectionTimestamp", js.undefined)
     
     @scala.inline
-    def deleteConnectionStateCheckTimestamp: Self = this.set("ConnectionStateCheckTimestamp", js.undefined)
+    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastKnownUserConnectionTimestamp(value: Timestamp): Self = this.set("LastKnownUserConnectionTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastKnownUserConnectionTimestamp: Self = this.set("LastKnownUserConnectionTimestamp", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = this.set("WorkspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceId: Self = this.set("WorkspaceId", js.undefined)
+    def setWorkspaceIdUndefined: Self = StObject.set(x, "WorkspaceId", js.undefined)
   }
 }

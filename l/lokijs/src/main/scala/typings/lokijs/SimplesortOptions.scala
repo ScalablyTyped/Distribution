@@ -1,11 +1,12 @@
 package typings.lokijs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimplesortOptions extends js.Object {
+trait SimplesortOptions extends StObject {
   
   var desc: Boolean = js.native
   
@@ -29,30 +30,18 @@ object SimplesortOptions {
   }
   
   @scala.inline
-  implicit class SimplesortOptionsOps[Self <: SimplesortOptions] (val x: Self) extends AnyVal {
+  implicit class SimplesortOptionsMutableBuilder[Self <: SimplesortOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableIndexIntersect(value: Boolean): Self = StObject.set(x, "disableIndexIntersect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceIndexIntersect(value: Boolean): Self = StObject.set(x, "forceIndexIntersect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: Boolean): Self = this.set("desc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisableIndexIntersect(value: Boolean): Self = this.set("disableIndexIntersect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceIndexIntersect(value: Boolean): Self = this.set("forceIndexIntersect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseJavascriptSorting(value: Boolean): Self = this.set("useJavascriptSorting", value.asInstanceOf[js.Any])
+    def setUseJavascriptSorting(value: Boolean): Self = StObject.set(x, "useJavascriptSorting", value.asInstanceOf[js.Any])
   }
 }

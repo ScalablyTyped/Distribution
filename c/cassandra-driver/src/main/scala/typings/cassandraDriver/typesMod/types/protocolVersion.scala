@@ -1,63 +1,54 @@
 package typings.cassandraDriver.typesMod.types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait protocolVersion extends js.Object
+sealed trait protocolVersion extends StObject
 @JSImport("cassandra-driver/lib/types", "types.protocolVersion")
 @js.native
-object protocolVersion extends js.Object {
+object protocolVersion extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[protocolVersion with Double] = js.native
   
-  def isSupported(version: protocolVersion): Boolean = js.native
-  
   @js.native
   sealed trait dseV1 extends protocolVersion
-  /* 0x41 */ @js.native
-  object dseV1 extends TopLevel[dseV1 with Double]
+  /* 0x41 */ val dseV1: typings.cassandraDriver.typesMod.types.protocolVersion.dseV1 with Double = js.native
   
   @js.native
   sealed trait dseV2 extends protocolVersion
-  /* 0x42 */ @js.native
-  object dseV2 extends TopLevel[dseV2 with Double]
+  /* 0x42 */ val dseV2: typings.cassandraDriver.typesMod.types.protocolVersion.dseV2 with Double = js.native
+  
+  def isSupported(version: protocolVersion): Boolean = js.native
   
   @js.native
   sealed trait maxSupported extends protocolVersion
-  /* 0x42 */ @js.native
-  object maxSupported extends TopLevel[maxSupported with Double]
+  /* 0x42 */ val maxSupported: typings.cassandraDriver.typesMod.types.protocolVersion.maxSupported with Double = js.native
   
   @js.native
   sealed trait minSupported extends protocolVersion
-  /* 0x01 */ @js.native
-  object minSupported extends TopLevel[minSupported with Double]
+  /* 0x01 */ val minSupported: typings.cassandraDriver.typesMod.types.protocolVersion.minSupported with Double = js.native
   
   @js.native
   sealed trait v1 extends protocolVersion
-  /* 0x01 */ @js.native
-  object v1 extends TopLevel[v1 with Double]
+  /* 0x01 */ val v1: typings.cassandraDriver.typesMod.types.protocolVersion.v1 with Double = js.native
   
   @js.native
   sealed trait v2 extends protocolVersion
-  /* 0x02 */ @js.native
-  object v2 extends TopLevel[v2 with Double]
+  /* 0x02 */ val v2: typings.cassandraDriver.typesMod.types.protocolVersion.v2 with Double = js.native
   
   @js.native
   sealed trait v3 extends protocolVersion
-  /* 0x03 */ @js.native
-  object v3 extends TopLevel[v3 with Double]
+  /* 0x03 */ val v3: typings.cassandraDriver.typesMod.types.protocolVersion.v3 with Double = js.native
   
   @js.native
   sealed trait v4 extends protocolVersion
-  /* 0x04 */ @js.native
-  object v4 extends TopLevel[v4 with Double]
+  /* 0x04 */ val v4: typings.cassandraDriver.typesMod.types.protocolVersion.v4 with Double = js.native
   
   @js.native
   sealed trait v5 extends protocolVersion
-  /* 0x05 */ @js.native
-  object v5 extends TopLevel[v5 with Double]
+  /* 0x05 */ val v5: typings.cassandraDriver.typesMod.types.protocolVersion.v5 with Double = js.native
 }

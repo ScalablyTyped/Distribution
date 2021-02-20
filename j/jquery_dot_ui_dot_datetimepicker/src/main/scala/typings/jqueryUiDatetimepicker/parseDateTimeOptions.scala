@@ -1,11 +1,12 @@
 package typings.jqueryUiDatetimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait parseDateTimeOptions extends js.Object {
+trait parseDateTimeOptions extends StObject {
   
   var dateFormat: String = js.native
   
@@ -32,33 +33,21 @@ object parseDateTimeOptions {
   }
   
   @scala.inline
-  implicit class parseDateTimeOptionsOps[Self <: parseDateTimeOptions] (val x: Self) extends AnyVal {
+  implicit class parseDateTimeOptionsMutableBuilder[Self <: parseDateTimeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateSettings(value: String): Self = StObject.set(x, "dateSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTimeString(value: String): Self = StObject.set(x, "dateTimeString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateSettings(value: String): Self = this.set("dateSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDateTimeString(value: String): Self = this.set("dateTimeString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeFormat(value: String): Self = this.set("timeFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSettings(value: String): Self = this.set("timeSettings", value.asInstanceOf[js.Any])
+    def setTimeSettings(value: String): Self = StObject.set(x, "timeSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -4,13 +4,14 @@ import typings.react.mod.SyntheticEvent
 import typings.reactOverlays.dropdownToggleMod.UseDropdownToggleProps
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-overlays.react-overlays/cjs/DropdownToggle.UseDropdownToggleHelpers & {  props :react-overlays.react-overlays/cjs/DropdownToggle.UseDropdownToggleProps} */
 @js.native
-trait UseDropdownToggleHelpersp extends js.Object {
+trait UseDropdownToggleHelpersp extends StObject {
   
   var props: UseDropdownToggleProps = js.native
   
@@ -35,29 +36,17 @@ object UseDropdownToggleHelpersp {
   }
   
   @scala.inline
-  implicit class UseDropdownToggleHelperspOps[Self <: UseDropdownToggleHelpersp] (val x: Self) extends AnyVal {
+  implicit class UseDropdownToggleHelperspMutableBuilder[Self <: UseDropdownToggleHelpersp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProps(value: UseDropdownToggleProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProps(value: UseDropdownToggleProps): Self = this.set("props", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setToggle(
       value: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[Element, Event]) | Event]) => Unit
-    ): Self = this.set("toggle", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "toggle", js.Any.fromFunction2(value))
   }
 }

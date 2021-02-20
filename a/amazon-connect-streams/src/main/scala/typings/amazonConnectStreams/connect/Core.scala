@@ -1,12 +1,13 @@
 package typings.amazonConnectStreams.connect
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Core extends js.Object {
+trait Core extends StObject {
   
   /**
     * Integrates with Amazon Connect by loading the pre-built CCP located at `ccpUrl` into an iframe and placing it into the `container` provided.
@@ -69,36 +70,24 @@ object Core {
   }
   
   @scala.inline
-  implicit class CoreOps[Self <: Core] (val x: Self) extends AnyVal {
+  implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitCCP(value: (HTMLElement, InitCCPOptions) => Unit): Self = StObject.set(x, "initCCP", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnAccessDenied(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = StObject.set(x, "onAccessDenied", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnAuthFail(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = StObject.set(x, "onAuthFail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitCCP(value: (HTMLElement, InitCCPOptions) => Unit): Self = this.set("initCCP", js.Any.fromFunction2(value))
+    def setOnViewContact(value: ViewContactCallback => Unit): Self = StObject.set(x, "onViewContact", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAccessDenied(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = this.set("onAccessDenied", js.Any.fromFunction1(value))
+    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnAuthFail(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = this.set("onAuthFail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnViewContact(value: ViewContactCallback => Unit): Self = this.set("onViewContact", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = this.set("terminate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setViewContact(value: String => Unit): Self = this.set("viewContact", js.Any.fromFunction1(value))
+    def setViewContact(value: String => Unit): Self = StObject.set(x, "viewContact", js.Any.fromFunction1(value))
   }
 }

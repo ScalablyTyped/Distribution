@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuotaSettings extends js.Object {
+trait QuotaSettings extends StObject {
   
   /**
     * The maximum number of requests that can be made in a given time period.
@@ -31,36 +32,24 @@ object QuotaSettings {
   }
   
   @scala.inline
-  implicit class QuotaSettingsOps[Self <: QuotaSettings] (val x: Self) extends AnyVal {
+  implicit class QuotaSettingsMutableBuilder[Self <: QuotaSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: Integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Integer): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setPeriod(value: QuotaPeriodType): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Integer): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: QuotaPeriodType): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

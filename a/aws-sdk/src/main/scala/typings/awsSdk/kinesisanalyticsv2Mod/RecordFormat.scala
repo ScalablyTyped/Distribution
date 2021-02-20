@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordFormat extends js.Object {
+trait RecordFormat extends StObject {
   
   /**
     * When you configure application input at the time of creating or updating an application, provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.
@@ -26,27 +27,15 @@ object RecordFormat {
   }
   
   @scala.inline
-  implicit class RecordFormatOps[Self <: RecordFormat] (val x: Self) extends AnyVal {
+  implicit class RecordFormatMutableBuilder[Self <: RecordFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMappingParameters(value: MappingParameters): Self = StObject.set(x, "MappingParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMappingParametersUndefined: Self = StObject.set(x, "MappingParameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordFormatType(value: RecordFormatType): Self = this.set("RecordFormatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMappingParameters(value: MappingParameters): Self = this.set("MappingParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMappingParameters: Self = this.set("MappingParameters", js.undefined)
+    def setRecordFormatType(value: RecordFormatType): Self = StObject.set(x, "RecordFormatType", value.asInstanceOf[js.Any])
   }
 }

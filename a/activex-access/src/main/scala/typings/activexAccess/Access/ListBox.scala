@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBox extends js.Object {
+trait ListBox extends StObject {
   
   @JSName("Access.ListBox_typekey")
   var AccessDotListBox_typekey: ListBox = js.native

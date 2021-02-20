@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientFirestore.anon.Accesstoken
 import typings.maximMazurokGapiClientFirestore.anon.Alt
 import typings.maximMazurokGapiClientFirestore.anon.Key
 import typings.maximMazurokGapiClientFirestore.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexesResource extends js.Object {
+trait IndexesResource extends StObject {
   
   /**
     * Creates a composite index. This returns a google.longrunning.Operation which may be used to track the status of the creation. The metadata for the operation will be the type

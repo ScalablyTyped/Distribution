@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerifiedDomain extends js.Object {
+trait VerifiedDomain extends StObject {
   
   // For example, 'Email', 'OfficeCommunicationsOnline'.
   var capabilities: js.UndefOr[NullableOption[String]] = js.native
@@ -31,63 +32,51 @@ object VerifiedDomain {
   }
   
   @scala.inline
-  implicit class VerifiedDomainOps[Self <: VerifiedDomain] (val x: Self) extends AnyVal {
+  implicit class VerifiedDomainMutableBuilder[Self <: VerifiedDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: NullableOption[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesNull: Self = StObject.set(x, "capabilities", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: NullableOption[String]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
     
     @scala.inline
-    def setCapabilitiesNull: Self = this.set("capabilities", null)
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def setIsDefault(value: NullableOption[Boolean]): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setIsInitial(value: NullableOption[Boolean]): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    def setIsInitialNull: Self = StObject.set(x, "isInitial", null)
     
     @scala.inline
-    def setIsDefaultNull: Self = this.set("isDefault", null)
+    def setIsInitialUndefined: Self = StObject.set(x, "isInitial", js.undefined)
     
     @scala.inline
-    def setIsInitial(value: NullableOption[Boolean]): Self = this.set("isInitial", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsInitial: Self = this.set("isInitial", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setIsInitialNull: Self = this.set("isInitial", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

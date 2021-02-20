@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.constantsMod.InterpolationModes
 import typings.three.keyframeTrackMod.KeyframeTrack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/animation/tracks/StringKeyframeTrack", JSImport.Namespace)
-@js.native
-object stringKeyframeTrackMod extends js.Object {
+object stringKeyframeTrackMod {
   
+  @JSImport("three/src/animation/tracks/StringKeyframeTrack", "StringKeyframeTrack")
   @js.native
   class StringKeyframeTrack protected () extends KeyframeTrack {
     def this(name: String, times: js.Array[_], values: js.Array[_]) = this()

@@ -10,12 +10,13 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.SourceLocationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Computed extends js.Object {
+trait Computed extends StObject {
   
   var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
   
@@ -48,78 +49,66 @@ object Computed {
   }
   
   @scala.inline
-  implicit class ComputedOps[Self <: Computed] (val x: Self) extends AnyVal {
+  implicit class ComputedMutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setKey(value: LiteralKind | IdentifierKind | ExpressionKind): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setKind(value: init | get | set): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: ExpressionKind | PatternKind): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setDecorators(value: js.Array[DecoratorKind]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setDecoratorsVarargs(value: DecoratorKind*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setKey(value: LiteralKind | IdentifierKind | ExpressionKind): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComputed: Self = this.set("computed", js.undefined)
+    def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecoratorsVarargs(value: DecoratorKind*): Self = this.set("decorators", js.Array(value :_*))
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: js.Array[DecoratorKind]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setDecoratorsNull: Self = this.set("decorators", null)
+    def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setShorthandUndefined: Self = StObject.set(x, "shorthand", js.undefined)
     
     @scala.inline
-    def setMethod(value: Boolean): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setShorthand(value: Boolean): Self = this.set("shorthand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShorthand: Self = this.set("shorthand", js.undefined)
+    def setValue(value: ExpressionKind | PatternKind): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

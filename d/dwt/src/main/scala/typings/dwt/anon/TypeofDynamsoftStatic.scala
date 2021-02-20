@@ -5,12 +5,13 @@ import typings.dwt.dynamsoftMod.DynamsoftLib
 import typings.dwt.dynamsoftMod.ManagerEnv
 import typings.dwt.dynamsoftMod.Messages
 import typings.dwt.dynamsoftMod.WebTwainEnv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDynamsoftStatic extends js.Object {
+trait TypeofDynamsoftStatic extends StObject {
   
   var FileUploader: typings.dwt.dynamsoftFileUploaderMod.FileUploader = js.native
   
@@ -40,36 +41,24 @@ object TypeofDynamsoftStatic {
   }
   
   @scala.inline
-  implicit class TypeofDynamsoftStaticOps[Self <: TypeofDynamsoftStatic] (val x: Self) extends AnyVal {
+  implicit class TypeofDynamsoftStaticMutableBuilder[Self <: TypeofDynamsoftStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileUploader(value: FileUploader): Self = StObject.set(x, "FileUploader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLib(value: DynamsoftLib): Self = StObject.set(x, "Lib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSG(value: Messages): Self = StObject.set(x, "MSG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileUploader(value: FileUploader): Self = this.set("FileUploader", value.asInstanceOf[js.Any])
+    def setManagerEnv(value: ManagerEnv): Self = StObject.set(x, "managerEnv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLib(value: DynamsoftLib): Self = this.set("Lib", value.asInstanceOf[js.Any])
+    def setWebTwain(value: TypeofWebTwain): Self = StObject.set(x, "WebTwain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSG(value: Messages): Self = this.set("MSG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebTwain(value: TypeofWebTwain): Self = this.set("WebTwain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebTwainEnv(value: WebTwainEnv): Self = this.set("WebTwainEnv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManagerEnv(value: ManagerEnv): Self = this.set("managerEnv", value.asInstanceOf[js.Any])
+    def setWebTwainEnv(value: WebTwainEnv): Self = StObject.set(x, "WebTwainEnv", value.asInstanceOf[js.Any])
   }
 }

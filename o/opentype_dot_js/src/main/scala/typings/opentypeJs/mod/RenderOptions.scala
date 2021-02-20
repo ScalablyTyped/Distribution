@@ -1,12 +1,13 @@
 package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderOptions extends js.Object {
+trait RenderOptions extends StObject {
   
   var features: js.UndefOr[StringDictionary[Boolean]] = js.native
   
@@ -29,54 +30,42 @@ object RenderOptions {
   }
   
   @scala.inline
-  implicit class RenderOptionsOps[Self <: RenderOptions] (val x: Self) extends AnyVal {
+  implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: StringDictionary[Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: StringDictionary[Boolean]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKerning(value: Boolean): Self = this.set("kerning", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteKerning: Self = this.set("kerning", js.undefined)
+    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setXScaleUndefined: Self = StObject.set(x, "xScale", js.undefined)
     
     @scala.inline
-    def deleteScript: Self = this.set("script", js.undefined)
+    def setYScale(value: Double): Self = StObject.set(x, "yScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXScale(value: Double): Self = this.set("xScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXScale: Self = this.set("xScale", js.undefined)
-    
-    @scala.inline
-    def setYScale(value: Double): Self = this.set("yScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYScale: Self = this.set("yScale", js.undefined)
+    def setYScaleUndefined: Self = StObject.set(x, "yScale", js.undefined)
   }
 }

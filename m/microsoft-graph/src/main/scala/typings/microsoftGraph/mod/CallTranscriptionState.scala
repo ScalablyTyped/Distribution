@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.notStarted_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.inactive
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait CallTranscriptionState extends js.Object
+trait CallTranscriptionState extends StObject
 object CallTranscriptionState {
   
   @scala.inline

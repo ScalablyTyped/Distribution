@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions {
   }
   
   @scala.inline
-  implicit class IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptionsOps[Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions] (val x: Self) extends AnyVal {
+  implicit class IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptionsMutableBuilder[Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSend(value: js.Function): Self = this.set("beforeSend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeforeSend: Self = this.set("beforeSend", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

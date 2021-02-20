@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,57 +67,45 @@ object AttachToBoxBehavior {
   }
   
   @scala.inline
-  implicit class AttachToBoxBehaviorOps[Self <: AttachToBoxBehavior] (val x: Self) extends AnyVal {
+  implicit class AttachToBoxBehaviorMutableBuilder[Self <: AttachToBoxBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceAwayFromBottomOfFace(value: Double): Self = StObject.set(x, "distanceAwayFromBottomOfFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceAwayFromFace(value: Double): Self = StObject.set(x, "distanceAwayFromFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_closestFace(value: js.Any): Self = this.set("_closestFace", value.asInstanceOf[js.Any])
+    def set_closestFace(value: js.Any): Self = StObject.set(x, "_closestFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_faceVectors(value: js.Any): Self = this.set("_faceVectors", value.asInstanceOf[js.Any])
+    def set_faceVectors(value: js.Any): Self = StObject.set(x, "_faceVectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lookAtTmpMatrix(value: js.Any): Self = this.set("_lookAtTmpMatrix", value.asInstanceOf[js.Any])
+    def set_lookAtTmpMatrix(value: js.Any): Self = StObject.set(x, "_lookAtTmpMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lookAtToRef(value: js.Any): Self = this.set("_lookAtToRef", value.asInstanceOf[js.Any])
+    def set_lookAtToRef(value: js.Any): Self = StObject.set(x, "_lookAtToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onRenderObserver(value: js.Any): Self = this.set("_onRenderObserver", value.asInstanceOf[js.Any])
+    def set_onRenderObserver(value: js.Any): Self = StObject.set(x, "_onRenderObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_scene(value: js.Any): Self = this.set("_scene", value.asInstanceOf[js.Any])
+    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_target(value: js.Any): Self = this.set("_target", value.asInstanceOf[js.Any])
+    def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_tmpMatrix(value: js.Any): Self = this.set("_tmpMatrix", value.asInstanceOf[js.Any])
+    def set_tmpMatrix(value: js.Any): Self = StObject.set(x, "_tmpMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_tmpVector(value: js.Any): Self = this.set("_tmpVector", value.asInstanceOf[js.Any])
+    def set_tmpVector(value: js.Any): Self = StObject.set(x, "_tmpVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_zeroVector(value: js.Any): Self = this.set("_zeroVector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistanceAwayFromBottomOfFace(value: Double): Self = this.set("distanceAwayFromBottomOfFace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistanceAwayFromFace(value: Double): Self = this.set("distanceAwayFromFace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUi(value: js.Any): Self = this.set("ui", value.asInstanceOf[js.Any])
+    def set_zeroVector(value: js.Any): Self = StObject.set(x, "_zeroVector", value.asInstanceOf[js.Any])
   }
 }

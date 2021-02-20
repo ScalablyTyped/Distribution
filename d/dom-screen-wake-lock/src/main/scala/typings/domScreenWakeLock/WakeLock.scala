@@ -1,5 +1,6 @@
 package typings.domScreenWakeLock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Allows a document to acquire a screen wake lock.
   */
 @js.native
-trait WakeLock extends js.Object {
+trait WakeLock extends StObject {
   
   /**
     * The request method will attempt to obtain a wake lock, and will return
@@ -39,21 +40,9 @@ object WakeLock {
   }
   
   @scala.inline
-  implicit class WakeLockOps[Self <: WakeLock] (val x: Self) extends AnyVal {
+  implicit class WakeLockMutableBuilder[Self <: WakeLock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequest(value: WakeLockType => js.Promise[WakeLockSentinel]): Self = this.set("request", js.Any.fromFunction1(value))
+    def setRequest(value: WakeLockType => js.Promise[WakeLockSentinel]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
   }
 }

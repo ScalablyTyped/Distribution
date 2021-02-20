@@ -7,12 +7,13 @@ import typings.pixiJs.PIXI.SCALE_MODES
 import typings.pixiJs.PIXI.TARGETS
 import typings.pixiJs.PIXI.TYPES
 import typings.pixiJs.PIXI.WRAP_MODES
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlphaMode extends js.Object {
+trait AlphaMode extends StObject {
   
   var alphaMode: js.UndefOr[ALPHA_MODES] = js.native
   
@@ -47,90 +48,78 @@ object AlphaMode {
   }
   
   @scala.inline
-  implicit class AlphaModeOps[Self <: AlphaMode] (val x: Self) extends AnyVal {
+  implicit class AlphaModeMutableBuilder[Self <: AlphaMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnisotropicLevel(value: Double): Self = StObject.set(x, "anisotropicLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaMode(value: ALPHA_MODES): Self = this.set("alphaMode", value.asInstanceOf[js.Any])
+    def setAnisotropicLevelUndefined: Self = StObject.set(x, "anisotropicLevel", js.undefined)
     
     @scala.inline
-    def deleteAlphaMode: Self = this.set("alphaMode", js.undefined)
+    def setFormat(value: FORMATS): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnisotropicLevel(value: Double): Self = this.set("anisotropicLevel", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteAnisotropicLevel: Self = this.set("anisotropicLevel", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: FORMATS): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMipmap(value: MIPMAP_MODES): Self = StObject.set(x, "mipmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMipmapUndefined: Self = StObject.set(x, "mipmap", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMipmap(value: MIPMAP_MODES): Self = this.set("mipmap", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteMipmap: Self = this.set("mipmap", js.undefined)
+    def setResourceOptions(value: js.Any): Self = StObject.set(x, "resourceOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setResourceOptionsUndefined: Self = StObject.set(x, "resourceOptions", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setScaleMode(value: SCALE_MODES): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceOptions(value: js.Any): Self = this.set("resourceOptions", value.asInstanceOf[js.Any])
+    def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
     
     @scala.inline
-    def deleteResourceOptions: Self = this.set("resourceOptions", js.undefined)
+    def setTarget(value: TARGETS): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleMode(value: SCALE_MODES): Self = this.set("scaleMode", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteScaleMode: Self = this.set("scaleMode", js.undefined)
+    def setType(value: TYPES): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: TARGETS): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TYPES): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWrapMode(value: WRAP_MODES): Self = StObject.set(x, "wrapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWrapMode(value: WRAP_MODES): Self = this.set("wrapMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapMode: Self = this.set("wrapMode", js.undefined)
+    def setWrapModeUndefined: Self = StObject.set(x, "wrapMode", js.undefined)
   }
 }

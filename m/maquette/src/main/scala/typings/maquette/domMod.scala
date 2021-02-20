@@ -4,18 +4,24 @@ import typings.maquette.interfacesMod.Projection
 import typings.maquette.interfacesMod.ProjectionOptions
 import typings.maquette.interfacesMod.VNode
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("maquette/dist/dom", JSImport.Namespace)
-@js.native
-object domMod extends js.Object {
+object domMod {
   
-  var applyDefaultProjectionOptions: js.Function1[/* projectorOptions */ js.UndefOr[ProjectionOptions], ProjectionOptions] = js.native
-  
+  @JSImport("maquette/dist/dom", JSImport.Namespace)
   @js.native
-  object dom extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("maquette/dist/dom", "applyDefaultProjectionOptions")
+  @js.native
+  def applyDefaultProjectionOptions: js.Function1[/* projectorOptions */ js.UndefOr[ProjectionOptions], ProjectionOptions] = js.native
+  @scala.inline
+  def applyDefaultProjectionOptions_=(x: js.Function1[/* projectorOptions */ js.UndefOr[ProjectionOptions], ProjectionOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applyDefaultProjectionOptions")(x.asInstanceOf[js.Any])
+  
+  object dom {
     
     /**
       * Appends a new child node to the DOM which is generated from a [[VNode]].
@@ -26,7 +32,11 @@ object domMod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette/dist/dom", "dom.append")
+    @js.native
     def append(parentNode: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette/dist/dom", "dom.append")
+    @js.native
     def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -38,7 +48,11 @@ object domMod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the projection.
       * @returns The [[Projection]] which also contains the DOM Node that was created.
       */
+    @JSImport("maquette/dist/dom", "dom.create")
+    @js.native
     def create(vnode: VNode): Projection = js.native
+    @JSImport("maquette/dist/dom", "dom.create")
+    @js.native
     def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -50,7 +64,11 @@ object domMod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette/dist/dom", "dom.insertBefore")
+    @js.native
     def insertBefore(beforeNode: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette/dist/dom", "dom.insertBefore")
+    @js.native
     def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -64,7 +82,11 @@ object domMod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette/dist/dom", "dom.merge")
+    @js.native
     def merge(element: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette/dist/dom", "dom.merge")
+    @js.native
     def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
     
     /**
@@ -76,7 +98,11 @@ object domMod extends js.Object {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
+    @JSImport("maquette/dist/dom", "dom.replace")
+    @js.native
     def replace(element: Element, vnode: VNode): Projection = js.native
+    @JSImport("maquette/dist/dom", "dom.replace")
+    @js.native
     def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
   }
 }

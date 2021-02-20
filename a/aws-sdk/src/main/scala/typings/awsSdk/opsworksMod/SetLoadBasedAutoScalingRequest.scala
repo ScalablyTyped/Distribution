@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetLoadBasedAutoScalingRequest extends js.Object {
+trait SetLoadBasedAutoScalingRequest extends StObject {
   
   /**
     * An AutoScalingThresholds object with the downscaling threshold configuration. If the load falls below these thresholds for a specified amount of time, AWS OpsWorks Stacks stops a specified number of instances.
@@ -36,39 +37,27 @@ object SetLoadBasedAutoScalingRequest {
   }
   
   @scala.inline
-  implicit class SetLoadBasedAutoScalingRequestOps[Self <: SetLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
+  implicit class SetLoadBasedAutoScalingRequestMutableBuilder[Self <: SetLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownScaling(value: AutoScalingThresholds): Self = StObject.set(x, "DownScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownScalingUndefined: Self = StObject.set(x, "DownScaling", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerId(value: String): Self = this.set("LayerId", value.asInstanceOf[js.Any])
+    def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
     
     @scala.inline
-    def setDownScaling(value: AutoScalingThresholds): Self = this.set("DownScaling", value.asInstanceOf[js.Any])
+    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDownScaling: Self = this.set("DownScaling", js.undefined)
+    def setUpScaling(value: AutoScalingThresholds): Self = StObject.set(x, "UpScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("Enable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnable: Self = this.set("Enable", js.undefined)
-    
-    @scala.inline
-    def setUpScaling(value: AutoScalingThresholds): Self = this.set("UpScaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpScaling: Self = this.set("UpScaling", js.undefined)
+    def setUpScalingUndefined: Self = StObject.set(x, "UpScaling", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregatedSourceStatus extends js.Object {
+trait AggregatedSourceStatus extends StObject {
   
   /**
     * The region authorized to collect aggregated data.
@@ -51,60 +52,48 @@ object AggregatedSourceStatus {
   }
   
   @scala.inline
-  implicit class AggregatedSourceStatusOps[Self <: AggregatedSourceStatus] (val x: Self) extends AnyVal {
+  implicit class AggregatedSourceStatusMutableBuilder[Self <: AggregatedSourceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastErrorCode(value: String): Self = StObject.set(x, "LastErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    def setLastErrorCodeUndefined: Self = StObject.set(x, "LastErrorCode", js.undefined)
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    def setLastErrorMessage(value: String): Self = StObject.set(x, "LastErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorCode(value: String): Self = this.set("LastErrorCode", value.asInstanceOf[js.Any])
+    def setLastErrorMessageUndefined: Self = StObject.set(x, "LastErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteLastErrorCode: Self = this.set("LastErrorCode", js.undefined)
+    def setLastUpdateStatus(value: AggregatedSourceStatusType): Self = StObject.set(x, "LastUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorMessage(value: String): Self = this.set("LastErrorMessage", value.asInstanceOf[js.Any])
+    def setLastUpdateStatusUndefined: Self = StObject.set(x, "LastUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteLastErrorMessage: Self = this.set("LastErrorMessage", js.undefined)
+    def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateStatus(value: AggregatedSourceStatusType): Self = this.set("LastUpdateStatus", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateStatus: Self = this.set("LastUpdateStatus", js.undefined)
+    def setSourceId(value: String): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Date): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+    def setSourceType(value: AggregatedSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: String): Self = this.set("SourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceId: Self = this.set("SourceId", js.undefined)
-    
-    @scala.inline
-    def setSourceType(value: AggregatedSourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

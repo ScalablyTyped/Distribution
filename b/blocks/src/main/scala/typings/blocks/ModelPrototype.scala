@@ -2,6 +2,7 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.blocks.anon.BaseUrl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,54 +51,42 @@ object ModelPrototype {
   }
   
   @scala.inline
-  implicit class ModelPrototypeOps[Self <: ModelPrototype] (val x: Self) extends AnyVal {
+  implicit class ModelPrototypeMutableBuilder[Self <: ModelPrototype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataItem(value: () => js.Object): Self = StObject.set(x, "dataItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataItem(value: () => js.Object): Self = this.set("dataItem", js.Any.fromFunction0(value))
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteDataItem: Self = this.set("dataItem", js.undefined)
+    def setIsNew(value: () => Boolean): Self = StObject.set(x, "isNew", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: js.Function): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setIsNewUndefined: Self = StObject.set(x, "isNew", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setOptions(value: BaseUrl): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNew(value: () => Boolean): Self = this.set("isNew", js.Any.fromFunction0(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteIsNew: Self = this.set("isNew", js.undefined)
+    def setReset(value: ModelPrototype => ModelPrototype): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptions(value: BaseUrl): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReset(value: ModelPrototype => ModelPrototype): Self = this.set("reset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
-    
-    @scala.inline
-    def setValidate(value: () => Boolean): Self = this.set("validate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

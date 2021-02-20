@@ -1,12 +1,13 @@
 package typings.activexWord.Word
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Revision extends js.Object {
+trait Revision extends StObject {
   
   def Accept(): Unit = js.native
   
@@ -65,63 +66,51 @@ object Revision {
   }
   
   @scala.inline
-  implicit class RevisionOps[Self <: Revision] (val x: Self) extends AnyVal {
+  implicit class RevisionMutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: () => Unit): Self = StObject.set(x, "Accept", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: () => Unit): Self = this.set("Accept", js.Any.fromFunction0(value))
+    def setCells(value: Cells): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: Cells): Self = this.set("Cells", value.asInstanceOf[js.Any])
+    def setFormatDescription(value: String): Self = StObject.set(x, "FormatDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: VarDate): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setMovedRange(value: Range): Self = StObject.set(x, "MovedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatDescription(value: String): Self = this.set("FormatDescription", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovedRange(value: Range): Self = this.set("MovedRange", value.asInstanceOf[js.Any])
+    def setReject(value: () => Unit): Self = StObject.set(x, "Reject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStyle(value: Style): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setType(value: WdRevisionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReject(value: () => Unit): Self = this.set("Reject", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStyle(value: Style): Self = this.set("Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WdRevisionType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotRevision_typekey(value: Revision): Self = this.set("Word.Revision_typekey", value.asInstanceOf[js.Any])
+    def setWordDotRevision_typekey(value: Revision): Self = StObject.set(x, "Word.Revision_typekey", value.asInstanceOf[js.Any])
   }
 }

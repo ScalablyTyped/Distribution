@@ -1,12 +1,13 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/components/agGridWebComponent", JSImport.Namespace)
-@js.native
-object agGridWebComponentMod extends js.Object {
+object agGridWebComponentMod {
   
+  @JSImport("ag-grid/dist/lib/components/agGridWebComponent", "initialiseAgGridWithWebComponents")
+  @js.native
   def initialiseAgGridWithWebComponents(): Unit = js.native
 }

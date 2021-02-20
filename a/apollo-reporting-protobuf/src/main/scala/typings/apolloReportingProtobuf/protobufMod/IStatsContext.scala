@@ -1,11 +1,12 @@
 package typings.apolloReportingProtobuf.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStatsContext extends js.Object {
+trait IStatsContext extends StObject {
   
   /** StatsContext clientName */
   var clientName: js.UndefOr[String | Null] = js.native
@@ -25,45 +26,33 @@ object IStatsContext {
   }
   
   @scala.inline
-  implicit class IStatsContextOps[Self <: IStatsContext] (val x: Self) extends AnyVal {
+  implicit class IStatsContextMutableBuilder[Self <: IStatsContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientNameNull: Self = StObject.set(x, "clientName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
     @scala.inline
-    def setClientName(value: String): Self = this.set("clientName", value.asInstanceOf[js.Any])
+    def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientName: Self = this.set("clientName", js.undefined)
+    def setClientReferenceIdNull: Self = StObject.set(x, "clientReferenceId", null)
     
     @scala.inline
-    def setClientNameNull: Self = this.set("clientName", null)
+    def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
     
     @scala.inline
-    def setClientReferenceId(value: String): Self = this.set("clientReferenceId", value.asInstanceOf[js.Any])
+    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientReferenceId: Self = this.set("clientReferenceId", js.undefined)
+    def setClientVersionNull: Self = StObject.set(x, "clientVersion", null)
     
     @scala.inline
-    def setClientReferenceIdNull: Self = this.set("clientReferenceId", null)
-    
-    @scala.inline
-    def setClientVersion(value: String): Self = this.set("clientVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientVersion: Self = this.set("clientVersion", js.undefined)
-    
-    @scala.inline
-    def setClientVersionNull: Self = this.set("clientVersion", null)
+    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
   }
 }

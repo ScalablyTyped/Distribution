@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDistributionMetricDataRequest extends js.Object {
+trait GetDistributionMetricDataRequest extends StObject {
   
   /**
     * The name of the distribution for which to get metric data. Use the GetDistributions action to get a list of distribution names that you can specify.
@@ -59,42 +60,30 @@ object GetDistributionMetricDataRequest {
   }
   
   @scala.inline
-  implicit class GetDistributionMetricDataRequestOps[Self <: GetDistributionMetricDataRequest] (val x: Self) extends AnyVal {
+  implicit class GetDistributionMetricDataRequestMutableBuilder[Self <: GetDistributionMetricDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTime(value: timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricName(value: DistributionMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionName(value: ResourceName): Self = this.set("distributionName", value.asInstanceOf[js.Any])
+    def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: DistributionMetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setStatistics(value: MetricStatisticList): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: MetricPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
     @scala.inline
-    def setStartTime(value: timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatisticsVarargs(value: MetricStatistic*): Self = this.set("statistics", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatistics(value: MetricStatisticList): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

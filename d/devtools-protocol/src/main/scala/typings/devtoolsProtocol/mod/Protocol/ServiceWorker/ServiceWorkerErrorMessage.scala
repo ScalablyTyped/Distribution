@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceWorkerErrorMessage extends js.Object {
+trait ServiceWorkerErrorMessage extends StObject {
   
   var columnNumber: integer = js.native
   
@@ -36,36 +37,24 @@ object ServiceWorkerErrorMessage {
   }
   
   @scala.inline
-  implicit class ServiceWorkerErrorMessageOps[Self <: ServiceWorkerErrorMessage] (val x: Self) extends AnyVal {
+  implicit class ServiceWorkerErrorMessageMutableBuilder[Self <: ServiceWorkerErrorMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNumber(value: integer): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
+    def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: integer): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistrationId(value: RegistrationID): Self = this.set("registrationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

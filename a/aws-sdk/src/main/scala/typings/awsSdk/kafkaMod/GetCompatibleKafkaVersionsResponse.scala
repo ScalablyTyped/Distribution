@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCompatibleKafkaVersionsResponse extends js.Object {
+trait GetCompatibleKafkaVersionsResponse extends StObject {
   
   /**
     * 
@@ -23,27 +24,15 @@ object GetCompatibleKafkaVersionsResponse {
   }
   
   @scala.inline
-  implicit class GetCompatibleKafkaVersionsResponseOps[Self <: GetCompatibleKafkaVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetCompatibleKafkaVersionsResponseMutableBuilder[Self <: GetCompatibleKafkaVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompatibleKafkaVersions(value: listOfCompatibleKafkaVersion): Self = StObject.set(x, "CompatibleKafkaVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompatibleKafkaVersionsUndefined: Self = StObject.set(x, "CompatibleKafkaVersions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompatibleKafkaVersionsVarargs(value: CompatibleKafkaVersion*): Self = this.set("CompatibleKafkaVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setCompatibleKafkaVersions(value: listOfCompatibleKafkaVersion): Self = this.set("CompatibleKafkaVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompatibleKafkaVersions: Self = this.set("CompatibleKafkaVersions", js.undefined)
+    def setCompatibleKafkaVersionsVarargs(value: CompatibleKafkaVersion*): Self = StObject.set(x, "CompatibleKafkaVersions", js.Array(value :_*))
   }
 }

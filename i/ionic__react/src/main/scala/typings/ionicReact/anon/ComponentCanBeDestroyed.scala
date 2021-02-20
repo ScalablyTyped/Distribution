@@ -1,12 +1,13 @@
 package typings.ionicReact.anon
 
 import typings.ionicReact.ionLifeCycleContextMod.LifeCycleCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentCanBeDestroyed extends js.Object {
+trait ComponentCanBeDestroyed extends StObject {
   
   def componentCanBeDestroyed(): Unit = js.native
   
@@ -62,78 +63,66 @@ object ComponentCanBeDestroyed {
   }
   
   @scala.inline
-  implicit class ComponentCanBeDestroyedOps[Self <: ComponentCanBeDestroyed] (val x: Self) extends AnyVal {
+  implicit class ComponentCanBeDestroyedMutableBuilder[Self <: ComponentCanBeDestroyed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentCanBeDestroyed(value: () => Unit): Self = StObject.set(x, "componentCanBeDestroyed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentCanBeDestroyedCallback(value: () => Unit): Self = StObject.set(x, "componentCanBeDestroyedCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentCanBeDestroyedCallbackUndefined: Self = StObject.set(x, "componentCanBeDestroyedCallback", js.undefined)
     
     @scala.inline
-    def setComponentCanBeDestroyed(value: () => Unit): Self = this.set("componentCanBeDestroyed", js.Any.fromFunction0(value))
+    def setIonViewDidEnter(value: () => Unit): Self = StObject.set(x, "ionViewDidEnter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIonViewDidEnter(value: () => Unit): Self = this.set("ionViewDidEnter", js.Any.fromFunction0(value))
+    def setIonViewDidEnterCallbacks(value: js.Array[LifeCycleCallback]): Self = StObject.set(x, "ionViewDidEnterCallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIonViewDidEnterCallbacksVarargs(value: LifeCycleCallback*): Self = this.set("ionViewDidEnterCallbacks", js.Array(value :_*))
+    def setIonViewDidEnterCallbacksVarargs(value: LifeCycleCallback*): Self = StObject.set(x, "ionViewDidEnterCallbacks", js.Array(value :_*))
     
     @scala.inline
-    def setIonViewDidEnterCallbacks(value: js.Array[LifeCycleCallback]): Self = this.set("ionViewDidEnterCallbacks", value.asInstanceOf[js.Any])
+    def setIonViewDidLeave(value: () => Unit): Self = StObject.set(x, "ionViewDidLeave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIonViewDidLeave(value: () => Unit): Self = this.set("ionViewDidLeave", js.Any.fromFunction0(value))
+    def setIonViewDidLeaveCallbacks(value: js.Array[LifeCycleCallback]): Self = StObject.set(x, "ionViewDidLeaveCallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIonViewDidLeaveCallbacksVarargs(value: LifeCycleCallback*): Self = this.set("ionViewDidLeaveCallbacks", js.Array(value :_*))
+    def setIonViewDidLeaveCallbacksVarargs(value: LifeCycleCallback*): Self = StObject.set(x, "ionViewDidLeaveCallbacks", js.Array(value :_*))
     
     @scala.inline
-    def setIonViewDidLeaveCallbacks(value: js.Array[LifeCycleCallback]): Self = this.set("ionViewDidLeaveCallbacks", value.asInstanceOf[js.Any])
+    def setIonViewWillEnter(value: () => Unit): Self = StObject.set(x, "ionViewWillEnter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIonViewWillEnter(value: () => Unit): Self = this.set("ionViewWillEnter", js.Any.fromFunction0(value))
+    def setIonViewWillEnterCallbacks(value: js.Array[LifeCycleCallback]): Self = StObject.set(x, "ionViewWillEnterCallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIonViewWillEnterCallbacksVarargs(value: LifeCycleCallback*): Self = this.set("ionViewWillEnterCallbacks", js.Array(value :_*))
+    def setIonViewWillEnterCallbacksVarargs(value: LifeCycleCallback*): Self = StObject.set(x, "ionViewWillEnterCallbacks", js.Array(value :_*))
     
     @scala.inline
-    def setIonViewWillEnterCallbacks(value: js.Array[LifeCycleCallback]): Self = this.set("ionViewWillEnterCallbacks", value.asInstanceOf[js.Any])
+    def setIonViewWillLeave(value: () => Unit): Self = StObject.set(x, "ionViewWillLeave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIonViewWillLeave(value: () => Unit): Self = this.set("ionViewWillLeave", js.Any.fromFunction0(value))
+    def setIonViewWillLeaveCallbacks(value: js.Array[LifeCycleCallback]): Self = StObject.set(x, "ionViewWillLeaveCallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIonViewWillLeaveCallbacksVarargs(value: LifeCycleCallback*): Self = this.set("ionViewWillLeaveCallbacks", js.Array(value :_*))
+    def setIonViewWillLeaveCallbacksVarargs(value: LifeCycleCallback*): Self = StObject.set(x, "ionViewWillLeaveCallbacks", js.Array(value :_*))
     
     @scala.inline
-    def setIonViewWillLeaveCallbacks(value: js.Array[LifeCycleCallback]): Self = this.set("ionViewWillLeaveCallbacks", value.asInstanceOf[js.Any])
+    def setOnComponentCanBeDestroyed(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onComponentCanBeDestroyed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnComponentCanBeDestroyed(value: js.Function0[Unit] => Unit): Self = this.set("onComponentCanBeDestroyed", js.Any.fromFunction1(value))
+    def setOnIonViewDidEnter(value: LifeCycleCallback => Unit): Self = StObject.set(x, "onIonViewDidEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonViewDidEnter(value: LifeCycleCallback => Unit): Self = this.set("onIonViewDidEnter", js.Any.fromFunction1(value))
+    def setOnIonViewDidLeave(value: LifeCycleCallback => Unit): Self = StObject.set(x, "onIonViewDidLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonViewDidLeave(value: LifeCycleCallback => Unit): Self = this.set("onIonViewDidLeave", js.Any.fromFunction1(value))
+    def setOnIonViewWillEnter(value: LifeCycleCallback => Unit): Self = StObject.set(x, "onIonViewWillEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonViewWillEnter(value: LifeCycleCallback => Unit): Self = this.set("onIonViewWillEnter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnIonViewWillLeave(value: LifeCycleCallback => Unit): Self = this.set("onIonViewWillLeave", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setComponentCanBeDestroyedCallback(value: () => Unit): Self = this.set("componentCanBeDestroyedCallback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteComponentCanBeDestroyedCallback: Self = this.set("componentCanBeDestroyedCallback", js.undefined)
+    def setOnIonViewWillLeave(value: LifeCycleCallback => Unit): Self = StObject.set(x, "onIonViewWillLeave", js.Any.fromFunction1(value))
   }
 }

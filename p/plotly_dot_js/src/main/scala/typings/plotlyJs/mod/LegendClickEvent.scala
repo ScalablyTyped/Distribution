@@ -3,12 +3,13 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialConfig
 import typings.plotlyJs.anon.PartialLayout
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendClickEvent extends js.Object {
+trait LegendClickEvent extends StObject {
   
   var config: PartialConfig = js.native
   
@@ -50,57 +51,45 @@ object LegendClickEvent {
   }
   
   @scala.inline
-  implicit class LegendClickEventOps[Self <: LegendClickEvent] (val x: Self) extends AnyVal {
+  implicit class LegendClickEventMutableBuilder[Self <: LegendClickEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: PartialConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCurveNumber(value: Double): Self = this.set("curveNumber", value.asInstanceOf[js.Any])
+    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Data*): Self = this.set("data", js.Array(value :_*))
+    def setExpandedIndex(value: Double): Self = StObject.set(x, "expandedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Data]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: MouseEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setExpandedIndex(value: Double): Self = this.set("expandedIndex", value.asInstanceOf[js.Any])
+    def setFullData(value: js.Array[Data]): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesVarargs(value: Frame*): Self = this.set("frames", js.Array(value :_*))
+    def setFullDataVarargs(value: Data*): Self = StObject.set(x, "fullData", js.Array(value :_*))
     
     @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setFullLayout(value: PartialLayout): Self = StObject.set(x, "fullLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDataVarargs(value: Data*): Self = this.set("fullData", js.Array(value :_*))
+    def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullData(value: js.Array[Data]): Self = this.set("fullData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullLayout(value: PartialLayout): Self = this.set("fullLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayout(value: PartialLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: PlotlyHTMLElement): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: PlotlyHTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

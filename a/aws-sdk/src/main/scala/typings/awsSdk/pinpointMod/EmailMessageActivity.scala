@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailMessageActivity extends js.Object {
+trait EmailMessageActivity extends StObject {
   
   /**
     * Specifies the sender address for an email message that's sent to participants in the journey.
@@ -36,42 +37,30 @@ object EmailMessageActivity {
   }
   
   @scala.inline
-  implicit class EmailMessageActivityOps[Self <: EmailMessageActivity] (val x: Self) extends AnyVal {
+  implicit class EmailMessageActivityMutableBuilder[Self <: EmailMessageActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageConfig(value: JourneyEmailMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageConfigUndefined: Self = StObject.set(x, "MessageConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageConfig(value: JourneyEmailMessage): Self = this.set("MessageConfig", value.asInstanceOf[js.Any])
+    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
     @scala.inline
-    def deleteMessageConfig: Self = this.set("MessageConfig", js.undefined)
+    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextActivity(value: string): Self = this.set("NextActivity", value.asInstanceOf[js.Any])
+    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
     @scala.inline
-    def deleteNextActivity: Self = this.set("NextActivity", js.undefined)
+    def setTemplateVersion(value: string): Self = StObject.set(x, "TemplateVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: string): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
-    
-    @scala.inline
-    def setTemplateVersion(value: string): Self = this.set("TemplateVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateVersion: Self = this.set("TemplateVersion", js.undefined)
+    def setTemplateVersionUndefined: Self = StObject.set(x, "TemplateVersion", js.undefined)
   }
 }

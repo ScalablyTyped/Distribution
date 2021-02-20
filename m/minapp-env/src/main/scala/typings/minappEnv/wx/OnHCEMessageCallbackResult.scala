@@ -3,12 +3,13 @@ package typings.minappEnv.wx
 import typings.minappEnv.ArrayBuffer
 import typings.minappEnv.minappEnvNumbers.`1`
 import typings.minappEnv.minappEnvNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnHCEMessageCallbackResult extends js.Object {
+trait OnHCEMessageCallbackResult extends StObject {
   
   /** `messageType=1` 时 ,客户端接收到 NFC 设备的指令 */
   var data: ArrayBuffer = js.native
@@ -32,27 +33,15 @@ object OnHCEMessageCallbackResult {
   }
   
   @scala.inline
-  implicit class OnHCEMessageCallbackResultOps[Self <: OnHCEMessageCallbackResult] (val x: Self) extends AnyVal {
+  implicit class OnHCEMessageCallbackResultMutableBuilder[Self <: OnHCEMessageCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageType(value: `1` | `2`): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: ArrayBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageType(value: `1` | `2`): Self = this.set("messageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: Double): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

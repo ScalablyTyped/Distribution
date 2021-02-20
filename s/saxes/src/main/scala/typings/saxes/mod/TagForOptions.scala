@@ -1,6 +1,7 @@
 package typings.saxes.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,27 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.saxes.mod.SaxesTagPlain
   - typings.saxes.mod.SaxesTagNS
 */
-trait TagForOptions[O /* <: SaxesOptions */] extends js.Object
+trait TagForOptions[O /* <: SaxesOptions */] extends StObject
 object TagForOptions {
   
   @scala.inline
-  def SaxesTag[O /* <: SaxesOptions */](attributes: Record[String, SaxesAttributeNS | String], isSelfClosing: Boolean, name: String): TagForOptions[O] = {
+  def SaxesTag(attributes: Record[String, SaxesAttributeNS | String], isSelfClosing: Boolean, name: String): typings.saxes.mod.SaxesTag = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TagForOptions[O]]
+    __obj.asInstanceOf[typings.saxes.mod.SaxesTag]
   }
   
   @scala.inline
-  def SaxesTagPlain[O /* <: SaxesOptions */](
-    attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, String]),
-    isSelfClosing: Boolean,
-    name: String
-  ): TagForOptions[O] = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TagForOptions[O]]
-  }
-  
-  @scala.inline
-  def SaxesTagNS[O /* <: SaxesOptions */](
+  def SaxesTagNS(
     attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, SaxesAttributeNS]),
     isSelfClosing: Boolean,
     local: String,
@@ -38,8 +29,18 @@ object TagForOptions {
     ns: Record[String, String],
     prefix: String,
     uri: String
-  ): TagForOptions[O] = {
+  ): typings.saxes.mod.SaxesTagNS = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TagForOptions[O]]
+    __obj.asInstanceOf[typings.saxes.mod.SaxesTagNS]
+  }
+  
+  @scala.inline
+  def SaxesTagPlain(
+    attributes: (Record[String, SaxesAttributeNS | String]) with (Record[String, String]),
+    isSelfClosing: Boolean,
+    name: String
+  ): typings.saxes.mod.SaxesTagPlain = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.saxes.mod.SaxesTagPlain]
   }
 }

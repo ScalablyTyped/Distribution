@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewEngineHooksResource")
 @js.native
-class ViewEngineHooksResource () extends js.Object {
+class ViewEngineHooksResource () extends StObject {
   
   def initialize(): js.Any = js.native
   def initialize(container: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
@@ -24,10 +25,12 @@ class ViewEngineHooksResource () extends js.Object {
   def register(registry: js.Any, name: js.Any): js.Any = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "ViewEngineHooksResource")
-@js.native
-object ViewEngineHooksResource extends js.Object {
+object ViewEngineHooksResource {
   
+  @JSImport("aurelia-templating", "ViewEngineHooksResource.convention")
+  @js.native
   def convention(): js.Any = js.native
+  @JSImport("aurelia-templating", "ViewEngineHooksResource.convention")
+  @js.native
   def convention(name: js.Any): js.Any = js.native
 }

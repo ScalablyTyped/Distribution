@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,60 +75,48 @@ object SketchViewModelUpdateUpdateOptions {
   }
   
   @scala.inline
-  implicit class SketchViewModelUpdateUpdateOptionsOps[Self <: SketchViewModelUpdateUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class SketchViewModelUpdateUpdateOptionsMutableBuilder[Self <: SketchViewModelUpdateUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableRotation(value: Boolean): Self = StObject.set(x, "enableRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableRotationUndefined: Self = StObject.set(x, "enableRotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableScaling(value: Boolean): Self = StObject.set(x, "enableScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRotation(value: Boolean): Self = this.set("enableRotation", value.asInstanceOf[js.Any])
+    def setEnableScalingUndefined: Self = StObject.set(x, "enableScaling", js.undefined)
     
     @scala.inline
-    def deleteEnableRotation: Self = this.set("enableRotation", js.undefined)
+    def setEnableZ(value: Boolean): Self = StObject.set(x, "enableZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableScaling(value: Boolean): Self = this.set("enableScaling", value.asInstanceOf[js.Any])
+    def setEnableZUndefined: Self = StObject.set(x, "enableZ", js.undefined)
     
     @scala.inline
-    def deleteEnableScaling: Self = this.set("enableScaling", js.undefined)
+    def setMultipleSelectionEnabled(value: Boolean): Self = StObject.set(x, "multipleSelectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableZ(value: Boolean): Self = this.set("enableZ", value.asInstanceOf[js.Any])
+    def setMultipleSelectionEnabledUndefined: Self = StObject.set(x, "multipleSelectionEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnableZ: Self = this.set("enableZ", js.undefined)
+    def setPreserveAspectRatio(value: Boolean): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleSelectionEnabled(value: Boolean): Self = this.set("multipleSelectionEnabled", value.asInstanceOf[js.Any])
+    def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteMultipleSelectionEnabled: Self = this.set("multipleSelectionEnabled", js.undefined)
+    def setToggleToolOnClick(value: Boolean): Self = StObject.set(x, "toggleToolOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveAspectRatio(value: Boolean): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    def setToggleToolOnClickUndefined: Self = StObject.set(x, "toggleToolOnClick", js.undefined)
     
     @scala.inline
-    def deletePreserveAspectRatio: Self = this.set("preserveAspectRatio", js.undefined)
+    def setTool(value: transform | reshape | move): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleToolOnClick(value: Boolean): Self = this.set("toggleToolOnClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleToolOnClick: Self = this.set("toggleToolOnClick", js.undefined)
-    
-    @scala.inline
-    def setTool(value: transform | reshape | move): Self = this.set("tool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTool: Self = this.set("tool", js.undefined)
+    def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
   }
 }

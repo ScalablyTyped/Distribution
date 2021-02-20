@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ec2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplateBlockDeviceMapping extends js.Object {
+trait LaunchTemplateBlockDeviceMapping extends StObject {
   
   /**
     * The name of the device to mount.
@@ -39,42 +40,30 @@ object LaunchTemplateBlockDeviceMapping {
   }
   
   @scala.inline
-  implicit class LaunchTemplateBlockDeviceMappingOps[Self <: LaunchTemplateBlockDeviceMapping] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateBlockDeviceMappingMutableBuilder[Self <: LaunchTemplateBlockDeviceMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbs(value: Input[LaunchTemplateBlockDeviceMappingEbs]): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: Input[String]): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setEbsUndefined: Self = StObject.set(x, "ebs", js.undefined)
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    def setNoDevice(value: Input[String]): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbs(value: Input[LaunchTemplateBlockDeviceMappingEbs]): Self = this.set("ebs", value.asInstanceOf[js.Any])
+    def setNoDeviceUndefined: Self = StObject.set(x, "noDevice", js.undefined)
     
     @scala.inline
-    def deleteEbs: Self = this.set("ebs", js.undefined)
+    def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDevice(value: Input[String]): Self = this.set("noDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDevice: Self = this.set("noDevice", js.undefined)
-    
-    @scala.inline
-    def setVirtualName(value: Input[String]): Self = this.set("virtualName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualName: Self = this.set("virtualName", js.undefined)
+    def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
   }
 }

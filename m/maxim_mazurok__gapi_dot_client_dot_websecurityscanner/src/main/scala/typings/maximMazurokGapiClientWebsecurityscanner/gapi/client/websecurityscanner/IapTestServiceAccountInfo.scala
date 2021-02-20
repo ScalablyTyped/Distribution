@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurityscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IapTestServiceAccountInfo extends js.Object {
+trait IapTestServiceAccountInfo extends StObject {
   
   /** Required. Describes OAuth2 client id of resources protected by Identity-Aware-Proxy (IAP). */
   var targetAudienceClientId: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object IapTestServiceAccountInfo {
   }
   
   @scala.inline
-  implicit class IapTestServiceAccountInfoOps[Self <: IapTestServiceAccountInfo] (val x: Self) extends AnyVal {
+  implicit class IapTestServiceAccountInfoMutableBuilder[Self <: IapTestServiceAccountInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetAudienceClientId(value: String): Self = StObject.set(x, "targetAudienceClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetAudienceClientId(value: String): Self = this.set("targetAudienceClientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetAudienceClientId: Self = this.set("targetAudienceClientId", js.undefined)
+    def setTargetAudienceClientIdUndefined: Self = StObject.set(x, "targetAudienceClientId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.extjs.Ext.dd
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,60 +44,48 @@ object IDDProxy {
   }
   
   @scala.inline
-  implicit class IDDProxyOps[Self <: IDDProxy] (val x: Self) extends AnyVal {
+  implicit class IDDProxyMutableBuilder[Self <: IDDProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterFrame(value: Boolean): Self = StObject.set(x, "centerFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterFrameUndefined: Self = StObject.set(x, "centerFrame", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateFrame(value: () => Unit): Self = StObject.set(x, "createFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenterFrame(value: Boolean): Self = this.set("centerFrame", value.asInstanceOf[js.Any])
+    def setCreateFrameUndefined: Self = StObject.set(x, "createFrame", js.undefined)
     
     @scala.inline
-    def deleteCenterFrame: Self = this.set("centerFrame", js.undefined)
+    def setDragElId(value: String): Self = StObject.set(x, "dragElId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFrame(value: () => Unit): Self = this.set("createFrame", js.Any.fromFunction0(value))
+    def setDragElIdUndefined: Self = StObject.set(x, "dragElId", js.undefined)
     
     @scala.inline
-    def deleteCreateFrame: Self = this.set("createFrame", js.undefined)
+    def setEndDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "endDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragElId(value: String): Self = this.set("dragElId", value.asInstanceOf[js.Any])
+    def setEndDragUndefined: Self = StObject.set(x, "endDrag", js.undefined)
     
     @scala.inline
-    def deleteDragElId: Self = this.set("dragElId", js.undefined)
+    def setInitFrame(value: () => Unit): Self = StObject.set(x, "initFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = this.set("endDrag", js.Any.fromFunction1(value))
+    def setInitFrameUndefined: Self = StObject.set(x, "initFrame", js.undefined)
     
     @scala.inline
-    def deleteEndDrag: Self = this.set("endDrag", js.undefined)
+    def setResizeFrame(value: Boolean): Self = StObject.set(x, "resizeFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitFrame(value: () => Unit): Self = this.set("initFrame", js.Any.fromFunction0(value))
+    def setResizeFrameUndefined: Self = StObject.set(x, "resizeFrame", js.undefined)
     
     @scala.inline
-    def deleteInitFrame: Self = this.set("initFrame", js.undefined)
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResizeFrame(value: Boolean): Self = this.set("resizeFrame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeFrame: Self = this.set("resizeFrame", js.undefined)
-    
-    @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
   }
 }

@@ -10,12 +10,13 @@ import typings.astTypes.kindsMod.JSXSpreadChildKind
 import typings.astTypes.kindsMod.JSXTextKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.namedTypesMod.namedTypes.JSXElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSXElementBuilder extends js.Object {
+trait JSXElementBuilder extends StObject {
   
   def apply(openingElement: JSXOpeningElementKind): JSXElement = js.native
   def apply(

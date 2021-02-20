@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesShared
 
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +28,12 @@ object IQuery {
   }
   
   @scala.inline
-  implicit class IQueryOps[Self <: IQuery] (val x: Self) extends AnyVal {
+  implicit class IQueryMutableBuilder[Self <: IQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery_id(value: Double): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__type__(value: query): Self = this.set("__type__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery_id(value: Double): Self = this.set("query_id", value.asInstanceOf[js.Any])
+    def set__type__(value: query): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

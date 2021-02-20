@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountDisplayInfo extends js.Object {
+trait AccountDisplayInfo extends StObject {
   
   /**
     * account provider (eg, Work/School vs Microsoft Account)
@@ -36,30 +37,18 @@ object AccountDisplayInfo {
   }
   
   @scala.inline
-  implicit class AccountDisplayInfoOps[Self <: AccountDisplayInfo] (val x: Self) extends AnyVal {
+  implicit class AccountDisplayInfoMutableBuilder[Self <: AccountDisplayInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextualDisplayName(value: String): Self = StObject.set(x, "contextualDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountType(value: String): Self = this.set("accountType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContextualDisplayName(value: String): Self = this.set("contextualDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

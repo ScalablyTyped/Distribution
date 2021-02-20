@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolBarOptions extends js.Object {
+trait ToolBarOptions extends StObject {
   
   var click: js.UndefOr[js.Function1[/* e */ ToolBarClickEvent, Unit]] = js.native
   
@@ -34,75 +35,63 @@ object ToolBarOptions {
   }
   
   @scala.inline
-  implicit class ToolBarOptionsOps[Self <: ToolBarOptions] (val x: Self) extends AnyVal {
+  implicit class ToolBarOptionsMutableBuilder[Self <: ToolBarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: /* e */ ToolBarClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: /* e */ ToolBarCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClick(value: /* e */ ToolBarClickEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setItems(value: js.Array[ToolBarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: /* e */ ToolBarCloseEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setItemsVarargs(value: ToolBarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: ToolBarItem*): Self = this.set("items", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[ToolBarItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setOpen(value: /* e */ ToolBarOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOverflowClose(value: /* e */ ToolBarOverflowCloseEvent => Unit): Self = StObject.set(x, "overflowClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: /* e */ ToolBarOpenEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setOverflowCloseUndefined: Self = StObject.set(x, "overflowClose", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOverflowOpen(value: /* e */ ToolBarOverflowOpenEvent => Unit): Self = StObject.set(x, "overflowOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverflowClose(value: /* e */ ToolBarOverflowCloseEvent => Unit): Self = this.set("overflowClose", js.Any.fromFunction1(value))
+    def setOverflowOpenUndefined: Self = StObject.set(x, "overflowOpen", js.undefined)
     
     @scala.inline
-    def deleteOverflowClose: Self = this.set("overflowClose", js.undefined)
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowOpen(value: /* e */ ToolBarOverflowOpenEvent => Unit): Self = this.set("overflowOpen", js.Any.fromFunction1(value))
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def deleteOverflowOpen: Self = this.set("overflowOpen", js.undefined)
+    def setToggle(value: /* e */ ToolBarToggleEvent => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
-    
-    @scala.inline
-    def setToggle(value: /* e */ ToolBarToggleEvent => Unit): Self = this.set("toggle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

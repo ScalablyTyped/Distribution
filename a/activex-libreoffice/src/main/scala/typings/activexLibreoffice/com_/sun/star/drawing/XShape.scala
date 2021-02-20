@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,36 +69,24 @@ object XShape {
   }
   
   @scala.inline
-  implicit class XShapeOps[Self <: XShape] (val x: Self) extends AnyVal {
+  implicit class XShapeMutableBuilder[Self <: XShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Point): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setSetPosition(value: Point => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPosition(value: () => Point): Self = this.set("getPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSize(value: () => Size): Self = this.set("getSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPosition(value: Point => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSize(value: Size => Unit): Self = this.set("setSize", js.Any.fromFunction1(value))
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

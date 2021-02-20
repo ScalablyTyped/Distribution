@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoHaystackSearchOptions extends js.Object {
+trait GeoHaystackSearchOptions extends StObject {
   
   var limit: js.UndefOr[scala.Double] = js.native
   
@@ -26,48 +27,36 @@ object GeoHaystackSearchOptions {
   }
   
   @scala.inline
-  implicit class GeoHaystackSearchOptionsOps[Self <: GeoHaystackSearchOptions] (val x: Self) extends AnyVal {
+  implicit class GeoHaystackSearchOptionsMutableBuilder[Self <: GeoHaystackSearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDistance(value: scala.Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: scala.Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistance(value: scala.Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: js.Object): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

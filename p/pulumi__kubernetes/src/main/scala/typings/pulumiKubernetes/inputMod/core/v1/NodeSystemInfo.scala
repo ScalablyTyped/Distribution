@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
   */
 @js.native
-trait NodeSystemInfo extends js.Object {
+trait NodeSystemInfo extends StObject {
   
   /**
     * The Architecture reported by the node
@@ -81,48 +82,36 @@ object NodeSystemInfo {
   }
   
   @scala.inline
-  implicit class NodeSystemInfoOps[Self <: NodeSystemInfo] (val x: Self) extends AnyVal {
+  implicit class NodeSystemInfoMutableBuilder[Self <: NodeSystemInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: Input[String]): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBootID(value: Input[String]): Self = StObject.set(x, "bootID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerRuntimeVersion(value: Input[String]): Self = StObject.set(x, "containerRuntimeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchitecture(value: Input[String]): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    def setKernelVersion(value: Input[String]): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootID(value: Input[String]): Self = this.set("bootID", value.asInstanceOf[js.Any])
+    def setKubeProxyVersion(value: Input[String]): Self = StObject.set(x, "kubeProxyVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerRuntimeVersion(value: Input[String]): Self = this.set("containerRuntimeVersion", value.asInstanceOf[js.Any])
+    def setKubeletVersion(value: Input[String]): Self = StObject.set(x, "kubeletVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelVersion(value: Input[String]): Self = this.set("kernelVersion", value.asInstanceOf[js.Any])
+    def setMachineID(value: Input[String]): Self = StObject.set(x, "machineID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKubeProxyVersion(value: Input[String]): Self = this.set("kubeProxyVersion", value.asInstanceOf[js.Any])
+    def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKubeletVersion(value: Input[String]): Self = this.set("kubeletVersion", value.asInstanceOf[js.Any])
+    def setOsImage(value: Input[String]): Self = StObject.set(x, "osImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineID(value: Input[String]): Self = this.set("machineID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperatingSystem(value: Input[String]): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOsImage(value: Input[String]): Self = this.set("osImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemUUID(value: Input[String]): Self = this.set("systemUUID", value.asInstanceOf[js.Any])
+    def setSystemUUID(value: Input[String]): Self = StObject.set(x, "systemUUID", value.asInstanceOf[js.Any])
   }
 }

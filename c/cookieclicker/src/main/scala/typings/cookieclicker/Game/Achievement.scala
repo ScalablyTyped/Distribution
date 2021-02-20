@@ -1,12 +1,13 @@
 package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerStrings.achievement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Achievement extends js.Object {
+trait Achievement extends StObject {
   
   /**
     * The description of the upgrade without auto-adjusted text
@@ -79,63 +80,51 @@ object Achievement {
   }
   
   @scala.inline
-  implicit class AchievementOps[Self <: Achievement] (val x: Self) extends AnyVal {
+  implicit class AchievementMutableBuilder[Self <: Achievement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseDesc(value: String): Self = StObject.set(x, "baseDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickFunction(value: () => Unit): Self = StObject.set(x, "clickFunction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBaseDesc(value: String): Self = this.set("baseDesc", value.asInstanceOf[js.Any])
+    def setClickFunctionUndefined: Self = StObject.set(x, "clickFunction", js.undefined)
     
     @scala.inline
-    def setClick(value: () => Unit): Self = this.set("click", js.Any.fromFunction0(value))
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setDisabled(value: PseudoBoolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: PseudoBoolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setPool(value: AchievementPool): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: AchievementPool): Self = this.set("pool", value.asInstanceOf[js.Any])
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setType(value: achievement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: achievement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVanilla(value: PseudoBoolean): Self = StObject.set(x, "vanilla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVanilla(value: PseudoBoolean): Self = this.set("vanilla", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWon(value: PseudoBoolean): Self = this.set("won", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClickFunction(value: () => Unit): Self = this.set("clickFunction", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClickFunction: Self = this.set("clickFunction", js.undefined)
+    def setWon(value: PseudoBoolean): Self = StObject.set(x, "won", value.asInstanceOf[js.Any])
   }
 }

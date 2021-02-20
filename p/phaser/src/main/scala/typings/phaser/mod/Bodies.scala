@@ -3,6 +3,7 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IBodyDefinition
 import typings.phaser.MatterJS.IChamferableBodyDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Bodies ()
   extends typings.phaser.MatterJS.Bodies
-/* static members */
-@JSImport("matter", "Bodies")
-@js.native
-object Bodies extends js.Object {
+object Bodies {
   
   /**
     * Creates a new rigid body model with a circle hull.
@@ -34,9 +32,18 @@ object Bodies extends js.Object {
     * @param {number} [maxSides]
     * @return {body} A new circle body
     */
+  /* static member */
+  @JSImport("matter", "Bodies.circle")
+  @js.native
   def circle(x: Double, y: Double, radius: Double): BodyType = js.native
+  @JSImport("matter", "Bodies.circle")
+  @js.native
   def circle(x: Double, y: Double, radius: Double, options: js.UndefOr[scala.Nothing], maxSides: Double): BodyType = js.native
+  @JSImport("matter", "Bodies.circle")
+  @js.native
   def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): BodyType = js.native
+  @JSImport("matter", "Bodies.circle")
+  @js.native
   def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): BodyType = js.native
   
   /**
@@ -59,7 +66,12 @@ object Bodies extends js.Object {
     * @param {number} [minimumArea=10]
     * @return {body}
     */
+  /* static member */
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]]): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -69,6 +81,8 @@ object Bodies extends js.Object {
     removeCollinear: js.UndefOr[scala.Nothing],
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -77,6 +91,8 @@ object Bodies extends js.Object {
     flagInternal: js.UndefOr[scala.Nothing],
     removeCollinear: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -86,6 +102,8 @@ object Bodies extends js.Object {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -93,6 +111,8 @@ object Bodies extends js.Object {
     options: js.UndefOr[scala.Nothing],
     flagInternal: Boolean
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -102,6 +122,8 @@ object Bodies extends js.Object {
     removeCollinear: js.UndefOr[scala.Nothing],
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -110,6 +132,8 @@ object Bodies extends js.Object {
     flagInternal: Boolean,
     removeCollinear: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -119,12 +143,16 @@ object Bodies extends js.Object {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
     options: IBodyDefinition
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -134,6 +162,8 @@ object Bodies extends js.Object {
     removeCollinear: js.UndefOr[scala.Nothing],
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -142,6 +172,8 @@ object Bodies extends js.Object {
     flagInternal: js.UndefOr[scala.Nothing],
     removeCollinear: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -151,6 +183,8 @@ object Bodies extends js.Object {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -158,6 +192,8 @@ object Bodies extends js.Object {
     options: IBodyDefinition,
     flagInternal: Boolean
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -167,6 +203,8 @@ object Bodies extends js.Object {
     removeCollinear: js.UndefOr[scala.Nothing],
     minimumArea: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -175,6 +213,8 @@ object Bodies extends js.Object {
     flagInternal: Boolean,
     removeCollinear: Double
   ): BodyType = js.native
+  @JSImport("matter", "Bodies.fromVertices")
+  @js.native
   def fromVertices(
     x: Double,
     y: Double,
@@ -197,7 +237,12 @@ object Bodies extends js.Object {
     * @param {object} [options]
     * @return {body} A new regular polygon body
     */
+  /* static member */
+  @JSImport("matter", "Bodies.polygon")
+  @js.native
   def polygon(x: Double, y: Double, sides: Double, radius: Double): BodyType = js.native
+  @JSImport("matter", "Bodies.polygon")
+  @js.native
   def polygon(x: Double, y: Double, sides: Double, radius: Double, options: IChamferableBodyDefinition): BodyType = js.native
   
   /**
@@ -212,7 +257,12 @@ object Bodies extends js.Object {
     * @param {object} [options]
     * @return {body} A new rectangle body
     */
+  /* static member */
+  @JSImport("matter", "Bodies.rectangle")
+  @js.native
   def rectangle(x: Double, y: Double, width: Double, height: Double): BodyType = js.native
+  @JSImport("matter", "Bodies.rectangle")
+  @js.native
   def rectangle(x: Double, y: Double, width: Double, height: Double, options: IChamferableBodyDefinition): BodyType = js.native
   
   /**
@@ -228,7 +278,12 @@ object Bodies extends js.Object {
     * @param {object} [options]
     * @return {body} A new trapezoid body
     */
+  /* static member */
+  @JSImport("matter", "Bodies.trapezoid")
+  @js.native
   def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): BodyType = js.native
+  @JSImport("matter", "Bodies.trapezoid")
+  @js.native
   def trapezoid(
     x: Double,
     y: Double,

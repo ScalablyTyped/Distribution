@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpeechSynthesisUtteranceEventMap extends js.Object {
+trait SpeechSynthesisUtteranceEventMap extends StObject {
   
   var boundary: SpeechSynthesisEvent = js.native
   
@@ -38,39 +39,27 @@ object SpeechSynthesisUtteranceEventMap {
   }
   
   @scala.inline
-  implicit class SpeechSynthesisUtteranceEventMapOps[Self <: SpeechSynthesisUtteranceEventMap] (val x: Self) extends AnyVal {
+  implicit class SpeechSynthesisUtteranceEventMapMutableBuilder[Self <: SpeechSynthesisUtteranceEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundary(value: SpeechSynthesisEvent): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: SpeechSynthesisEvent): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: SpeechSynthesisErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundary(value: SpeechSynthesisEvent): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    def setMark(value: SpeechSynthesisEvent): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: SpeechSynthesisEvent): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setPause(value: SpeechSynthesisEvent): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: SpeechSynthesisErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setResume(value: SpeechSynthesisEvent): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMark(value: SpeechSynthesisEvent): Self = this.set("mark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPause(value: SpeechSynthesisEvent): Self = this.set("pause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResume(value: SpeechSynthesisEvent): Self = this.set("resume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: SpeechSynthesisEvent): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: SpeechSynthesisEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.akamaiEdgeworkers.streamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadableStreamDefaultReader[R] extends js.Object {
+trait ReadableStreamDefaultReader[R] extends StObject {
   
   def cancel(): js.Promise[Unit] = js.native
   def cancel(reason: js.Any): js.Promise[Unit] = js.native

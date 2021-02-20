@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import typings.googleAppsScript.GoogleAppsScript.Byte
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * .
   */
 @js.native
-trait JdbcRowId extends js.Object {
+trait JdbcRowId extends StObject {
   
   def getBytes(): js.Array[Byte] = js.native
 }
@@ -23,21 +24,9 @@ object JdbcRowId {
   }
   
   @scala.inline
-  implicit class JdbcRowIdOps[Self <: JdbcRowId] (val x: Self) extends AnyVal {
+  implicit class JdbcRowIdMutableBuilder[Self <: JdbcRowId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetBytes(value: () => js.Array[Byte]): Self = this.set("getBytes", js.Any.fromFunction0(value))
+    def setGetBytes(value: () => js.Array[Byte]): Self = StObject.set(x, "getBytes", js.Any.fromFunction0(value))
   }
 }

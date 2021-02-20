@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorCheckingOptions extends js.Object {
+trait ErrorCheckingOptions extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -64,63 +65,51 @@ object ErrorCheckingOptions {
   }
   
   @scala.inline
-  implicit class ErrorCheckingOptionsOps[Self <: ErrorCheckingOptions] (val x: Self) extends AnyVal {
+  implicit class ErrorCheckingOptionsMutableBuilder[Self <: ErrorCheckingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundChecking(value: Boolean): Self = StObject.set(x, "BackgroundChecking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setEmptyCellReferences(value: Boolean): Self = StObject.set(x, "EmptyCellReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundChecking(value: Boolean): Self = this.set("BackgroundChecking", value.asInstanceOf[js.Any])
+    def setEvaluateToError(value: Boolean): Self = StObject.set(x, "EvaluateToError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setExcelDotErrorCheckingOptions_typekey(value: ErrorCheckingOptions): Self = StObject.set(x, "Excel.ErrorCheckingOptions_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyCellReferences(value: Boolean): Self = this.set("EmptyCellReferences", value.asInstanceOf[js.Any])
+    def setInconsistentFormula(value: Boolean): Self = StObject.set(x, "InconsistentFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluateToError(value: Boolean): Self = this.set("EvaluateToError", value.asInstanceOf[js.Any])
+    def setInconsistentTableFormula(value: Boolean): Self = StObject.set(x, "InconsistentTableFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotErrorCheckingOptions_typekey(value: ErrorCheckingOptions): Self = this.set("Excel.ErrorCheckingOptions_typekey", value.asInstanceOf[js.Any])
+    def setIndicatorColorIndex(value: XlColorIndex): Self = StObject.set(x, "IndicatorColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInconsistentFormula(value: Boolean): Self = this.set("InconsistentFormula", value.asInstanceOf[js.Any])
+    def setListDataValidation(value: Boolean): Self = StObject.set(x, "ListDataValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInconsistentTableFormula(value: Boolean): Self = this.set("InconsistentTableFormula", value.asInstanceOf[js.Any])
+    def setNumberAsText(value: Boolean): Self = StObject.set(x, "NumberAsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicatorColorIndex(value: XlColorIndex): Self = this.set("IndicatorColorIndex", value.asInstanceOf[js.Any])
+    def setOmittedCells(value: Boolean): Self = StObject.set(x, "OmittedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListDataValidation(value: Boolean): Self = this.set("ListDataValidation", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberAsText(value: Boolean): Self = this.set("NumberAsText", value.asInstanceOf[js.Any])
+    def setTextDate(value: Boolean): Self = StObject.set(x, "TextDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmittedCells(value: Boolean): Self = this.set("OmittedCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextDate(value: Boolean): Self = this.set("TextDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnlockedFormulaCells(value: Boolean): Self = this.set("UnlockedFormulaCells", value.asInstanceOf[js.Any])
+    def setUnlockedFormulaCells(value: Boolean): Self = StObject.set(x, "UnlockedFormulaCells", value.asInstanceOf[js.Any])
   }
 }

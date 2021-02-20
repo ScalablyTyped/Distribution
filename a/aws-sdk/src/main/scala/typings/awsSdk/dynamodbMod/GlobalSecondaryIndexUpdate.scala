@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalSecondaryIndexUpdate extends js.Object {
+trait GlobalSecondaryIndexUpdate extends StObject {
   
   /**
     * The parameters required for creating a global secondary index on an existing table:    IndexName      KeySchema      AttributeDefinitions      Projection      ProvisionedThroughput    
@@ -31,36 +32,24 @@ object GlobalSecondaryIndexUpdate {
   }
   
   @scala.inline
-  implicit class GlobalSecondaryIndexUpdateOps[Self <: GlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
+  implicit class GlobalSecondaryIndexUpdateMutableBuilder[Self <: GlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: DeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: CreateGlobalSecondaryIndexAction): Self = this.set("Create", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("Create", js.undefined)
+    def setUpdate(value: UpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: DeleteGlobalSecondaryIndexAction): Self = this.set("Delete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelete: Self = this.set("Delete", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: UpdateGlobalSecondaryIndexAction): Self = this.set("Update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("Update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
   }
 }

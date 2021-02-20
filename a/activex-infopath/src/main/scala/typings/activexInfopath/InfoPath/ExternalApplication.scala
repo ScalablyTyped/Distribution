@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalApplication extends js.Object {
+trait ExternalApplication extends StObject {
   
   def CacheSolution(bstrSolutionURI: String): Unit = js.native
   

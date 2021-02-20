@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationGroupMessage extends js.Object {
+trait ReplicationGroupMessage extends StObject {
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
@@ -26,33 +27,21 @@ object ReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class ReplicationGroupMessageOps[Self <: ReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class ReplicationGroupMessageMutableBuilder[Self <: ReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationGroups(value: ReplicationGroupList): Self = StObject.set(x, "ReplicationGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setReplicationGroupsVarargs(value: ReplicationGroup*): Self = this.set("ReplicationGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationGroups(value: ReplicationGroupList): Self = this.set("ReplicationGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationGroups: Self = this.set("ReplicationGroups", js.undefined)
+    def setReplicationGroupsVarargs(value: ReplicationGroup*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
   }
 }

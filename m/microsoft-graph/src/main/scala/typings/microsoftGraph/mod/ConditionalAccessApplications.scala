@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalAccessApplications extends js.Object {
+trait ConditionalAccessApplications extends StObject {
   
   // The list of application IDs explicitly excluded from the policy.
   var excludeApplications: js.UndefOr[js.Array[String]] = js.native
@@ -28,45 +29,33 @@ object ConditionalAccessApplications {
   }
   
   @scala.inline
-  implicit class ConditionalAccessApplicationsOps[Self <: ConditionalAccessApplications] (val x: Self) extends AnyVal {
+  implicit class ConditionalAccessApplicationsMutableBuilder[Self <: ConditionalAccessApplications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeApplications(value: js.Array[String]): Self = StObject.set(x, "excludeApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeApplicationsUndefined: Self = StObject.set(x, "excludeApplications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeApplicationsVarargs(value: String*): Self = StObject.set(x, "excludeApplications", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeApplicationsVarargs(value: String*): Self = this.set("excludeApplications", js.Array(value :_*))
+    def setIncludeApplications(value: js.Array[String]): Self = StObject.set(x, "includeApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeApplications(value: js.Array[String]): Self = this.set("excludeApplications", value.asInstanceOf[js.Any])
+    def setIncludeApplicationsUndefined: Self = StObject.set(x, "includeApplications", js.undefined)
     
     @scala.inline
-    def deleteExcludeApplications: Self = this.set("excludeApplications", js.undefined)
+    def setIncludeApplicationsVarargs(value: String*): Self = StObject.set(x, "includeApplications", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeApplicationsVarargs(value: String*): Self = this.set("includeApplications", js.Array(value :_*))
+    def setIncludeUserActions(value: js.Array[String]): Self = StObject.set(x, "includeUserActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeApplications(value: js.Array[String]): Self = this.set("includeApplications", value.asInstanceOf[js.Any])
+    def setIncludeUserActionsUndefined: Self = StObject.set(x, "includeUserActions", js.undefined)
     
     @scala.inline
-    def deleteIncludeApplications: Self = this.set("includeApplications", js.undefined)
-    
-    @scala.inline
-    def setIncludeUserActionsVarargs(value: String*): Self = this.set("includeUserActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludeUserActions(value: js.Array[String]): Self = this.set("includeUserActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUserActions: Self = this.set("includeUserActions", js.undefined)
+    def setIncludeUserActionsVarargs(value: String*): Self = StObject.set(x, "includeUserActions", js.Array(value :_*))
   }
 }

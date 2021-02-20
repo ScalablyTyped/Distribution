@@ -1,18 +1,18 @@
 package typings.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait signature extends js.Object
+sealed trait signature extends StObject
 /**
   * One pass signature packet type
   */
 @JSImport("openpgp", "enums.signature")
 @js.native
-object signature extends js.Object {
+object signature extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[signature with Double] = js.native
@@ -22,8 +22,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait binary extends signature
-  /* 0 */ @js.native
-  object binary extends TopLevel[binary with Double]
+  /* 0 */ val binary: typings.openpgp.mod.enums.signature.binary with Double = js.native
   
   /**
     * 0x12: Casual certification of a User ID and Public-Key packet.
@@ -32,8 +31,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_casual extends signature
-  /* 18 */ @js.native
-  object cert_casual extends TopLevel[cert_casual with Double]
+  /* 18 */ val cert_casual: typings.openpgp.mod.enums.signature.cert_casual with Double = js.native
   
   /**
     * 0x10: Generic certification of a User ID and Public-Key packet.
@@ -43,8 +41,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_generic extends signature
-  /* 16 */ @js.native
-  object cert_generic extends TopLevel[cert_generic with Double]
+  /* 16 */ val cert_generic: typings.openpgp.mod.enums.signature.cert_generic with Double = js.native
   
   /**
     * 0x11: Persona certification of a User ID and Public-Key packet.
@@ -53,8 +50,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_persona extends signature
-  /* 17 */ @js.native
-  object cert_persona extends TopLevel[cert_persona with Double]
+  /* 17 */ val cert_persona: typings.openpgp.mod.enums.signature.cert_persona with Double = js.native
   
   /**
     * 0x13: Positive certification of a User ID and Public-Key packet.
@@ -66,8 +62,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_positive extends signature
-  /* 19 */ @js.native
-  object cert_positive extends TopLevel[cert_positive with Double]
+  /* 19 */ val cert_positive: typings.openpgp.mod.enums.signature.cert_positive with Double = js.native
   
   /**
     * 0x30: Certification revocation signature
@@ -81,8 +76,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait cert_revocation extends signature
-  /* 48 */ @js.native
-  object cert_revocation extends TopLevel[cert_revocation with Double]
+  /* 48 */ val cert_revocation: typings.openpgp.mod.enums.signature.cert_revocation with Double = js.native
   
   /**
     * 0x1F: Signature directly on a key
@@ -96,8 +90,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait key extends signature
-  /* 31 */ @js.native
-  object key extends TopLevel[key with Double]
+  /* 31 */ val key: typings.openpgp.mod.enums.signature.key with Double = js.native
   
   /**
     * 0x19: Primary Key Binding Signature
@@ -115,8 +108,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait key_binding extends signature
-  /* 25 */ @js.native
-  object key_binding extends TopLevel[key_binding with Double]
+  /* 25 */ val key_binding: typings.openpgp.mod.enums.signature.key_binding with Double = js.native
   
   /**
     * 0x20: Key revocation signature
@@ -127,8 +119,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait key_revocation extends signature
-  /* 32 */ @js.native
-  object key_revocation extends TopLevel[key_revocation with Double]
+  /* 32 */ val key_revocation: typings.openpgp.mod.enums.signature.key_revocation with Double = js.native
   
   /**
     * 0x02: Standalone signature.
@@ -139,8 +130,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait standalone extends signature
-  /* 2 */ @js.native
-  object standalone extends TopLevel[standalone with Double]
+  /* 2 */ val standalone: typings.openpgp.mod.enums.signature.standalone with Double = js.native
   
   /**
     * 0x18: Subkey Binding Signature
@@ -154,8 +144,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait subkey_binding extends signature
-  /* 24 */ @js.native
-  object subkey_binding extends TopLevel[subkey_binding with Double]
+  /* 24 */ val subkey_binding: typings.openpgp.mod.enums.signature.subkey_binding with Double = js.native
   
   /**
     * 0x28: Subkey revocation signature
@@ -169,8 +158,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait subkey_revocation extends signature
-  /* 40 */ @js.native
-  object subkey_revocation extends TopLevel[subkey_revocation with Double]
+  /* 40 */ val subkey_revocation: typings.openpgp.mod.enums.signature.subkey_revocation with Double = js.native
   
   /**
     * 0x01: Signature of a canonical text document.
@@ -178,8 +166,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait text extends signature
-  /* 1 */ @js.native
-  object text extends TopLevel[text with Double]
+  /* 1 */ val text: typings.openpgp.mod.enums.signature.text with Double = js.native
   
   /**
     * 0x50: Third-Party Confirmation signature.
@@ -193,8 +180,7 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait third_party extends signature
-  /* 80 */ @js.native
-  object third_party extends TopLevel[third_party with Double]
+  /* 80 */ val third_party: typings.openpgp.mod.enums.signature.third_party with Double = js.native
   
   /**
     * 0x40: Timestamp signature.
@@ -203,6 +189,5 @@ object signature extends js.Object {
     */
   @js.native
   sealed trait timestamp extends signature
-  /* 64 */ @js.native
-  object timestamp extends TopLevel[timestamp with Double]
+  /* 64 */ val timestamp: typings.openpgp.mod.enums.signature.timestamp with Double = js.native
 }

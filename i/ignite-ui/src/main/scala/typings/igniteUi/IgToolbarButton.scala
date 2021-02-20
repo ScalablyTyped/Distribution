@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,54 +63,42 @@ object IgToolbarButton {
   }
   
   @scala.inline
-  implicit class IgToolbarButtonOps[Self <: IgToolbarButton] (val x: Self) extends AnyVal {
+  implicit class IgToolbarButtonMutableBuilder[Self <: IgToolbarButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivated(value: (/* event */ Event, /* ui */ ActivatedEventUIParam) => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivating(value: (/* event */ Event, /* ui */ ActivatingEventUIParam) => Unit): Self = StObject.set(x, "activating", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActivated(value: (/* event */ Event, /* ui */ ActivatedEventUIParam) => Unit): Self = this.set("activated", js.Any.fromFunction2(value))
+    def setActivatingUndefined: Self = StObject.set(x, "activating", js.undefined)
     
     @scala.inline
-    def deleteActivated: Self = this.set("activated", js.undefined)
+    def setAllowToggling(value: Boolean): Self = StObject.set(x, "allowToggling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivating(value: (/* event */ Event, /* ui */ ActivatingEventUIParam) => Unit): Self = this.set("activating", js.Any.fromFunction2(value))
+    def setAllowTogglingUndefined: Self = StObject.set(x, "allowToggling", js.undefined)
     
     @scala.inline
-    def deleteActivating: Self = this.set("activating", js.undefined)
+    def setDeactivated(value: (/* event */ Event, /* ui */ DeactivatedEventUIParam) => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAllowToggling(value: Boolean): Self = this.set("allowToggling", value.asInstanceOf[js.Any])
+    def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
     
     @scala.inline
-    def deleteAllowToggling: Self = this.set("allowToggling", js.undefined)
+    def setDeactivating(value: (/* event */ Event, /* ui */ DeactivatingEventUIParam) => Unit): Self = StObject.set(x, "deactivating", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeactivated(value: (/* event */ Event, /* ui */ DeactivatedEventUIParam) => Unit): Self = this.set("deactivated", js.Any.fromFunction2(value))
+    def setDeactivatingUndefined: Self = StObject.set(x, "deactivating", js.undefined)
     
     @scala.inline
-    def deleteDeactivated: Self = this.set("deactivated", js.undefined)
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeactivating(value: (/* event */ Event, /* ui */ DeactivatingEventUIParam) => Unit): Self = this.set("deactivating", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteDeactivating: Self = this.set("deactivating", js.undefined)
-    
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSelected: Self = this.set("isSelected", js.undefined)
+    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
   }
 }

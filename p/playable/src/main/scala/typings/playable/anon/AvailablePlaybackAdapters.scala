@@ -3,12 +3,13 @@ package typings.playable.anon
 import typings.playable.adaptersTypesMod.IPlaybackAdapterClass
 import typings.playable.configMod.IPlayerConfig
 import typings.playable.eventEmitterTypesMod.IEventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailablePlaybackAdapters extends js.Object {
+trait AvailablePlaybackAdapters extends StObject {
   
   var availablePlaybackAdapters: js.Array[IPlaybackAdapterClass] = js.native
   
@@ -29,30 +30,18 @@ object AvailablePlaybackAdapters {
   }
   
   @scala.inline
-  implicit class AvailablePlaybackAdaptersOps[Self <: AvailablePlaybackAdapters] (val x: Self) extends AnyVal {
+  implicit class AvailablePlaybackAdaptersMutableBuilder[Self <: AvailablePlaybackAdapters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = StObject.set(x, "availablePlaybackAdapters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePlaybackAdaptersVarargs(value: IPlaybackAdapterClass*): Self = StObject.set(x, "availablePlaybackAdapters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePlaybackAdaptersVarargs(value: IPlaybackAdapterClass*): Self = this.set("availablePlaybackAdapters", js.Array(value :_*))
-    
-    @scala.inline
-    def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = this.set("availablePlaybackAdapters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
   }
 }

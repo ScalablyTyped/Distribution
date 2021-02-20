@@ -1,5 +1,6 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rollup.rollupStrings.transform
   - typings.rollup.rollupStrings.watchChange
 */
-trait SequentialPluginHooks extends js.Object
+trait SequentialPluginHooks extends StObject
 object SequentialPluginHooks {
   
   @scala.inline

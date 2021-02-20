@@ -1,5 +1,6 @@
 package typings.rcTabs
 
+import org.scalablytyped.runtime.Shortcut
 import typings.rcTabs.interfaceMod.EditableConfig
 import typings.rcTabs.interfaceMod.Tab
 import typings.rcTabs.interfaceMod.TabsLocale
@@ -13,18 +14,19 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.std.Element
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-tabs/es/TabNavList/OperationNode", JSImport.Namespace)
-@js.native
-object operationNodeMod extends js.Object {
+object operationNodeMod extends Shortcut {
   
+  @JSImport("rc-tabs/es/TabNavList/OperationNode", JSImport.Default)
+  @js.native
   val default: ForwardRefExoticComponent[OperationNodeProps with RefAttributes[HTMLDivElement]] = js.native
   
   @js.native
-  trait OperationNodeProps extends js.Object {
+  trait OperationNodeProps extends StObject {
     
     var activeKey: String = js.native
     
@@ -55,4 +57,9 @@ object operationNodeMod extends js.Object {
     
     var tabs: js.Array[Tab] = js.native
   }
+  
+  type _To = ForwardRefExoticComponent[OperationNodeProps with RefAttributes[HTMLDivElement]]
+  
+  /* This means you don't have to write `default`, but can instead just say `operationNodeMod.foo` */
+  override def _to: ForwardRefExoticComponent[OperationNodeProps with RefAttributes[HTMLDivElement]] = default
 }

@@ -3,13 +3,14 @@ package typings.firebase.mod.default.firestore
 import typings.firebase.anon.Complete
 import typings.firebase.anon.Delete
 import typings.firebase.mod.firebase.app.App
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.Firestore")
+@JSImport("firebase", "default.firestore.Firestore")
 @js.native
-class Firestore protected () extends js.Object {
+class Firestore protected () extends StObject {
   
   /**
     * @hidden

@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeterUsageRequest extends js.Object {
+trait MeterUsageRequest extends StObject {
   
   /**
     * Checks whether you have the permissions required for the action, but does not make the request. If you have the permissions, the request returns DryRunOperation; otherwise, it returns UnauthorizedException. Defaults to false if not specified.
@@ -46,48 +47,36 @@ object MeterUsageRequest {
   }
   
   @scala.inline
-  implicit class MeterUsageRequestOps[Self <: MeterUsageRequest] (val x: Self) extends AnyVal {
+  implicit class MeterUsageRequestMutableBuilder[Self <: MeterUsageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsageDimension(value: UsageDimension): Self = this.set("UsageDimension", value.asInstanceOf[js.Any])
+    def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setUsageDimension(value: UsageDimension): Self = StObject.set(x, "UsageDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsageAllocationsVarargs(value: UsageAllocation*): Self = this.set("UsageAllocations", js.Array(value :_*))
+    def setUsageQuantity(value: UsageQuantity): Self = StObject.set(x, "UsageQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsageAllocations(value: UsageAllocations): Self = this.set("UsageAllocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageAllocations: Self = this.set("UsageAllocations", js.undefined)
-    
-    @scala.inline
-    def setUsageQuantity(value: UsageQuantity): Self = this.set("UsageQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageQuantity: Self = this.set("UsageQuantity", js.undefined)
+    def setUsageQuantityUndefined: Self = StObject.set(x, "UsageQuantity", js.undefined)
   }
 }

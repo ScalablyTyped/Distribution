@@ -2,19 +2,27 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationStyleProps
 import typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationStyles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation.styles", JSImport.Namespace)
-@js.native
-object documentCardLocationStylesMod extends js.Object {
+object documentCardLocationStylesMod {
   
-  def getStyles(props: IDocumentCardLocationStyleProps): IDocumentCardLocationStyles = js.native
-  
-  @js.native
-  object DocumentCardLocationGlobalClassNames extends js.Object {
+  object DocumentCardLocationGlobalClassNames {
     
-    var root: String = js.native
+    @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation.styles", "DocumentCardLocationGlobalClassNames")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation.styles", "DocumentCardLocationGlobalClassNames.root")
+    @js.native
+    def root: String = js.native
+    @scala.inline
+    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation.styles", "getStyles")
+  @js.native
+  def getStyles(props: IDocumentCardLocationStyleProps): IDocumentCardLocationStyles = js.native
 }

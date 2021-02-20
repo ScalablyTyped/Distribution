@@ -1,12 +1,13 @@
 package typings.ace.AceAjax
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ace extends js.Object {
+trait Ace extends StObject {
   
   /**
     * Creates a new [[EditSession]], and returns the associated [[Document]].

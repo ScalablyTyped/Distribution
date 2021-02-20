@@ -1,15 +1,13 @@
 package typings.materialTooltip
 
-import typings.materialTooltip.adapterMod.MDCTooltipAdapter
 import typings.materialTooltip.anon.PartialMDCTooltipAdapter
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tooltip", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Enum for possible anchor boundary types. This determines the gap between the
@@ -17,8 +15,9 @@ object mod extends js.Object {
     * Bounded anchors have an identifiable boundary (e.g. buttons).
     * Unbounded anchors don't have a visually declared boundary (e.g. plain text).
     */
+  @JSImport("@material/tooltip", "AnchorBoundaryType")
   @js.native
-  object AnchorBoundaryType extends js.Object {
+  object AnchorBoundaryType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.AnchorBoundaryType with Double] = js.native
@@ -50,8 +49,9 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
+  @JSImport("@material/tooltip", "CssClasses")
   @js.native
-  object CssClasses extends js.Object {
+  object CssClasses extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.materialTooltip.constantsMod.CssClasses with String] = js.native
@@ -69,31 +69,36 @@ object mod extends js.Object {
     /* "mdc-tooltip--shown" */ val SHOWN: typings.materialTooltip.constantsMod.CssClasses.SHOWN with String = js.native
   }
   
+  @JSImport("@material/tooltip", "MDCTooltip")
   @js.native
-  class MDCTooltip ()
-    extends typings.materialTooltip.componentMod.MDCTooltip
+  class MDCTooltip protected ()
+    extends typings.materialTooltip.componentMod.MDCTooltip {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialTooltip.foundationMod.MDCTooltipFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTooltip extends js.Object {
+  object MDCTooltip {
     
+    @JSImport("@material/tooltip", "MDCTooltip.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialTooltip.componentMod.MDCTooltip = js.native
   }
   
+  @JSImport("@material/tooltip", "MDCTooltipFoundation")
   @js.native
   class MDCTooltipFoundation ()
     extends typings.materialTooltip.foundationMod.MDCTooltipFoundation {
     def this(adapter: PartialMDCTooltipAdapter) = this()
   }
-  /* static members */
-  @js.native
-  object MDCTooltipFoundation extends js.Object {
-    
-    def defaultAdapter: MDCTooltipAdapter = js.native
-  }
   
   /** Enum for possible tooltip positioning relative to its anchor element. */
+  @JSImport("@material/tooltip", "XPosition")
   @js.native
-  object XPosition extends js.Object {
+  object XPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.XPosition with Double] = js.native
@@ -107,8 +112,9 @@ object mod extends js.Object {
     /* 1 */ val START: typings.materialTooltip.constantsMod.XPosition.START with Double = js.native
   }
   
+  @JSImport("@material/tooltip", "YPosition")
   @js.native
-  object YPosition extends js.Object {
+  object YPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.materialTooltip.constantsMod.YPosition with Double] = js.native
@@ -120,27 +126,65 @@ object mod extends js.Object {
     /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.YPosition.DETECTED with Double = js.native
   }
   
-  @js.native
-  object events extends js.Object {
+  object events {
     
-    var HIDDEN: String = js.native
+    @JSImport("@material/tooltip", "events")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tooltip", "events.HIDDEN")
+    @js.native
+    def HIDDEN: String = js.native
+    @scala.inline
+    def HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
     
-    var BOUNDED_ANCHOR_GAP: Double = js.native
+    @JSImport("@material/tooltip", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var HIDE_DELAY_MS: Double = js.native
+    @JSImport("@material/tooltip", "numbers.BOUNDED_ANCHOR_GAP")
+    @js.native
+    def BOUNDED_ANCHOR_GAP: Double = js.native
+    @scala.inline
+    def BOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
     
-    var MAX_WIDTH: Double = js.native
+    @JSImport("@material/tooltip", "numbers.HIDE_DELAY_MS")
+    @js.native
+    def HIDE_DELAY_MS: Double = js.native
+    @scala.inline
+    def HIDE_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDE_DELAY_MS")(x.asInstanceOf[js.Any])
     
-    var MIN_HEIGHT: Double = js.native
+    @JSImport("@material/tooltip", "numbers.MAX_WIDTH")
+    @js.native
+    def MAX_WIDTH: Double = js.native
+    @scala.inline
+    def MAX_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WIDTH")(x.asInstanceOf[js.Any])
     
-    var MIN_VIEWPORT_TOOLTIP_THRESHOLD: Double = js.native
+    @JSImport("@material/tooltip", "numbers.MIN_HEIGHT")
+    @js.native
+    def MIN_HEIGHT: Double = js.native
+    @scala.inline
+    def MIN_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_HEIGHT")(x.asInstanceOf[js.Any])
     
-    var SHOW_DELAY_MS: Double = js.native
+    @JSImport("@material/tooltip", "numbers.MIN_VIEWPORT_TOOLTIP_THRESHOLD")
+    @js.native
+    def MIN_VIEWPORT_TOOLTIP_THRESHOLD: Double = js.native
+    @scala.inline
+    def MIN_VIEWPORT_TOOLTIP_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VIEWPORT_TOOLTIP_THRESHOLD")(x.asInstanceOf[js.Any])
     
-    var UNBOUNDED_ANCHOR_GAP: Double = js.native
+    @JSImport("@material/tooltip", "numbers.SHOW_DELAY_MS")
+    @js.native
+    def SHOW_DELAY_MS: Double = js.native
+    @scala.inline
+    def SHOW_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_DELAY_MS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tooltip", "numbers.UNBOUNDED_ANCHOR_GAP")
+    @js.native
+    def UNBOUNDED_ANCHOR_GAP: Double = js.native
+    @scala.inline
+    def UNBOUNDED_ANCHOR_GAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNBOUNDED_ANCHOR_GAP")(x.asInstanceOf[js.Any])
   }
 }

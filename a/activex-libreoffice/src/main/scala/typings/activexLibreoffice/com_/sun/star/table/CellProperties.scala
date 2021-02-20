@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.util.CellProtection
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -232,111 +233,99 @@ object CellProperties {
   }
   
   @scala.inline
-  implicit class CellPropertiesOps[Self <: CellProperties] (val x: Self) extends AnyVal {
+  implicit class CellPropertiesMutableBuilder[Self <: CellProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsianVerticalMode(value: Boolean): Self = StObject.set(x, "AsianVerticalMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomBorder(value: BorderLine): Self = StObject.set(x, "BottomBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottomBorder2(value: BorderLine2): Self = StObject.set(x, "BottomBorder2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsianVerticalMode(value: Boolean): Self = this.set("AsianVerticalMode", value.asInstanceOf[js.Any])
+    def setCellBackColor(value: Color): Self = StObject.set(x, "CellBackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBorder(value: BorderLine): Self = this.set("BottomBorder", value.asInstanceOf[js.Any])
+    def setCellInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CellInteropGrabBag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBorder2(value: BorderLine2): Self = this.set("BottomBorder2", value.asInstanceOf[js.Any])
+    def setCellProtection(value: CellProtection): Self = StObject.set(x, "CellProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellBackColor(value: Color): Self = this.set("CellBackColor", value.asInstanceOf[js.Any])
+    def setCellStyle(value: String): Self = StObject.set(x, "CellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("CellInteropGrabBag", value.asInstanceOf[js.Any])
+    def setDiagonalBLTR(value: BorderLine): Self = StObject.set(x, "DiagonalBLTR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellProtection(value: CellProtection): Self = this.set("CellProtection", value.asInstanceOf[js.Any])
+    def setDiagonalBLTR2(value: BorderLine2): Self = StObject.set(x, "DiagonalBLTR2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellStyle(value: String): Self = this.set("CellStyle", value.asInstanceOf[js.Any])
+    def setDiagonalTLBR(value: BorderLine): Self = StObject.set(x, "DiagonalTLBR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagonalBLTR(value: BorderLine): Self = this.set("DiagonalBLTR", value.asInstanceOf[js.Any])
+    def setDiagonalTLBR2(value: BorderLine2): Self = StObject.set(x, "DiagonalTLBR2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagonalBLTR2(value: BorderLine2): Self = this.set("DiagonalBLTR2", value.asInstanceOf[js.Any])
+    def setHoriJustify(value: CellHoriJustify): Self = StObject.set(x, "HoriJustify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagonalTLBR(value: BorderLine): Self = this.set("DiagonalTLBR", value.asInstanceOf[js.Any])
+    def setIsCellBackgroundTransparent(value: Boolean): Self = StObject.set(x, "IsCellBackgroundTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagonalTLBR2(value: BorderLine2): Self = this.set("DiagonalTLBR2", value.asInstanceOf[js.Any])
+    def setIsTextWrapped(value: Boolean): Self = StObject.set(x, "IsTextWrapped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriJustify(value: CellHoriJustify): Self = this.set("HoriJustify", value.asInstanceOf[js.Any])
+    def setLeftBorder(value: BorderLine): Self = StObject.set(x, "LeftBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCellBackgroundTransparent(value: Boolean): Self = this.set("IsCellBackgroundTransparent", value.asInstanceOf[js.Any])
+    def setLeftBorder2(value: BorderLine2): Self = StObject.set(x, "LeftBorder2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTextWrapped(value: Boolean): Self = this.set("IsTextWrapped", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftBorder(value: BorderLine): Self = this.set("LeftBorder", value.asInstanceOf[js.Any])
+    def setOrientation(value: CellOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftBorder2(value: BorderLine2): Self = this.set("LeftBorder2", value.asInstanceOf[js.Any])
+    def setParaIndent(value: Double): Self = StObject.set(x, "ParaIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setRightBorder(value: BorderLine): Self = StObject.set(x, "RightBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: CellOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setRightBorder2(value: BorderLine2): Self = StObject.set(x, "RightBorder2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaIndent(value: Double): Self = this.set("ParaIndent", value.asInstanceOf[js.Any])
+    def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightBorder(value: BorderLine): Self = this.set("RightBorder", value.asInstanceOf[js.Any])
+    def setRotateReference(value: Double): Self = StObject.set(x, "RotateReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightBorder2(value: BorderLine2): Self = this.set("RightBorder2", value.asInstanceOf[js.Any])
+    def setShadowFormat(value: ShadowFormat): Self = StObject.set(x, "ShadowFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateAngle(value: Double): Self = this.set("RotateAngle", value.asInstanceOf[js.Any])
+    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "ShrinkToFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateReference(value: Double): Self = this.set("RotateReference", value.asInstanceOf[js.Any])
+    def setTableBorder(value: TableBorder): Self = StObject.set(x, "TableBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowFormat(value: ShadowFormat): Self = this.set("ShadowFormat", value.asInstanceOf[js.Any])
+    def setTableBorder2(value: TableBorder2): Self = StObject.set(x, "TableBorder2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShrinkToFit(value: Boolean): Self = this.set("ShrinkToFit", value.asInstanceOf[js.Any])
+    def setTopBorder(value: BorderLine): Self = StObject.set(x, "TopBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBorder(value: TableBorder): Self = this.set("TableBorder", value.asInstanceOf[js.Any])
+    def setTopBorder2(value: BorderLine2): Self = StObject.set(x, "TopBorder2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBorder2(value: TableBorder2): Self = this.set("TableBorder2", value.asInstanceOf[js.Any])
+    def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopBorder(value: BorderLine): Self = this.set("TopBorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopBorder2(value: BorderLine2): Self = this.set("TopBorder2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDefinedAttributes(value: XNameContainer): Self = this.set("UserDefinedAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertJustify(value: Double): Self = this.set("VertJustify", value.asInstanceOf[js.Any])
+    def setVertJustify(value: Double): Self = StObject.set(x, "VertJustify", value.asInstanceOf[js.Any])
   }
 }

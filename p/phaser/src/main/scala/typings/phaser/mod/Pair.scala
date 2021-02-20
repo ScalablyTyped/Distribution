@@ -3,6 +3,7 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.ICollisionData
 import typings.phaser.MatterJS.IPair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Pair ()
   extends typings.phaser.MatterJS.Pair
-/* static members */
-@JSImport("matter", "Pair")
-@js.native
-object Pair extends js.Object {
+object Pair {
   
   /**
     * Creates a pair.
@@ -28,6 +26,9 @@ object Pair extends js.Object {
     * @param {number} timestamp
     * @return {IPair} A new pair
     */
+  /* static member */
+  @JSImport("matter", "Pair.create")
+  @js.native
   def create(collision: ICollisionData, timestamp: Double): IPair = js.native
   
   /**
@@ -37,6 +38,9 @@ object Pair extends js.Object {
     * @param {Body} bodyB
     * @return {string} Unique pairId
     */
+  /* static member */
+  @JSImport("matter", "Pair.id")
+  @js.native
   def id(bodyA: BodyType, bodyB: BodyType): String = js.native
   
   /**
@@ -46,6 +50,9 @@ object Pair extends js.Object {
     * @param {boolean} isActive
     * @param {number} timestamp
     */
+  /* static member */
+  @JSImport("matter", "Pair.setActive")
+  @js.native
   def setActive(pair: IPair, isActive: Boolean, timestamp: Double): Unit = js.native
   
   /**
@@ -55,5 +62,8 @@ object Pair extends js.Object {
     * @param {ICollisionData} collision
     * @param {number} timestamp
     */
+  /* static member */
+  @JSImport("matter", "Pair.update")
+  @js.native
   def update(pair: IPair, collision: ICollisionData, timestamp: Double): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.firebase.mod.default.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsCallOptions extends js.Object {
+trait AnalyticsCallOptions extends StObject {
   
   /**
     * If true, this config or event call applies globally to all
@@ -22,21 +23,9 @@ object AnalyticsCallOptions {
   }
   
   @scala.inline
-  implicit class AnalyticsCallOptionsOps[Self <: AnalyticsCallOptions] (val x: Self) extends AnyVal {
+  implicit class AnalyticsCallOptionsMutableBuilder[Self <: AnalyticsCallOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
   }
 }

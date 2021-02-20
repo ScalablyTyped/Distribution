@@ -8,13 +8,14 @@ import typings.forgeApis.anon.IfModifiedSince
 import typings.forgeApis.anon.IfNoneMatch
 import typings.forgeApis.anon.With
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ObjectsApi")
 @js.native
-class ObjectsApi () extends js.Object {
+class ObjectsApi () extends StObject {
   
   /**
     * Copies an object to another object name in the same bucket.

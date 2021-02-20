@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPackageVersionAssetsResult extends js.Object {
+trait ListPackageVersionAssetsResult extends StObject {
   
   /**
     *  The name of the package that contains the returned package version assets. 
@@ -52,63 +53,51 @@ object ListPackageVersionAssetsResult {
   }
   
   @scala.inline
-  implicit class ListPackageVersionAssetsResultOps[Self <: ListPackageVersionAssetsResult] (val x: Self) extends AnyVal {
+  implicit class ListPackageVersionAssetsResultMutableBuilder[Self <: ListPackageVersionAssetsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: AssetSummaryList): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetsVarargs(value: AssetSummary*): Self = StObject.set(x, "assets", js.Array(value :_*))
     
     @scala.inline
-    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setAssetsVarargs(value: AssetSummary*): Self = this.set("assets", js.Array(value :_*))
+    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: AssetSummaryList): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteAssets: Self = this.set("assets", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "versionRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setVersionRevisionUndefined: Self = StObject.set(x, "versionRevision", js.undefined)
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: PackageVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionRevision(value: PackageVersionRevision): Self = this.set("versionRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionRevision: Self = this.set("versionRevision", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.JSXSpreadChild
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +28,12 @@ object JSXSpreadChild_ {
   }
   
   @scala.inline
-  implicit class JSXSpreadChild_Ops[Self <: JSXSpreadChild_] (val x: Self) extends AnyVal {
+  implicit class JSXSpreadChild_MutableBuilder[Self <: JSXSpreadChild_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpression(value: Expression): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: JSXSpreadChild): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: JSXSpreadChild): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.ERROR
   - typings.invityApi.invityApiStrings.BLOCKED
 */
-trait BuyTradeFinalStatus extends js.Object
+trait BuyTradeFinalStatus extends StObject
 object BuyTradeFinalStatus {
   
   @scala.inline

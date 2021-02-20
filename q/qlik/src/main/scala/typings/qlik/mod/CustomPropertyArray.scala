@@ -1,6 +1,7 @@
 package typings.qlik.mod
 
 import typings.qlik.qlikStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,51 +36,39 @@ object CustomPropertyArray {
   }
   
   @scala.inline
-  implicit class CustomPropertyArrayOps[Self <: CustomPropertyArray] (val x: Self) extends AnyVal {
+  implicit class CustomPropertyArrayMutableBuilder[Self <: CustomPropertyArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddTranslationUndefined: Self = StObject.set(x, "addTranslation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: array): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAllowAddUndefined: Self = StObject.set(x, "allowAdd", js.undefined)
     
     @scala.inline
-    def setAddTranslation(value: String): Self = this.set("addTranslation", value.asInstanceOf[js.Any])
+    def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddTranslation: Self = this.set("addTranslation", js.undefined)
+    def setAllowMoveUndefined: Self = StObject.set(x, "allowMove", js.undefined)
     
     @scala.inline
-    def setAllowAdd(value: Boolean): Self = this.set("allowAdd", value.asInstanceOf[js.Any])
+    def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowAdd: Self = this.set("allowAdd", js.undefined)
+    def setAllowRemoveUndefined: Self = StObject.set(x, "allowRemove", js.undefined)
     
     @scala.inline
-    def setAllowMove(value: Boolean): Self = this.set("allowMove", value.asInstanceOf[js.Any])
+    def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowMove: Self = this.set("allowMove", js.undefined)
+    def setItemTitleRefUndefined: Self = StObject.set(x, "itemTitleRef", js.undefined)
     
     @scala.inline
-    def setAllowRemove(value: Boolean): Self = this.set("allowRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowRemove: Self = this.set("allowRemove", js.undefined)
-    
-    @scala.inline
-    def setItemTitleRef(value: String): Self = this.set("itemTitleRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemTitleRef: Self = this.set("itemTitleRef", js.undefined)
+    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

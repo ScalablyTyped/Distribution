@@ -1,17 +1,19 @@
 package typings.hdrHistogramJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hdr-histogram-js/packedarray/PackedArrayContext", JSImport.Namespace)
-@js.native
-object packedArrayContextMod extends js.Object {
+object packedArrayContextMod {
   
+  @JSImport("hdr-histogram-js/packedarray/PackedArrayContext", "MINIMUM_INITIAL_PACKED_ARRAY_CAPACITY")
+  @js.native
   val MINIMUM_INITIAL_PACKED_ARRAY_CAPACITY: /* 16 */ Double = js.native
   
+  @JSImport("hdr-histogram-js/packedarray/PackedArrayContext", "PackedArrayContext")
   @js.native
-  class PackedArrayContext protected () extends js.Object {
+  class PackedArrayContext protected () extends StObject {
     def this(virtualLength: Double, initialPhysicalLength: Double) = this()
     
     def addAndGetAtUnpackedIndex(index: Double, valueToAdd: Double): Double = js.native

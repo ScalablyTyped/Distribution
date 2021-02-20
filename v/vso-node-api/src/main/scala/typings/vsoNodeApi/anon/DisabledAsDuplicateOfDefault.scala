@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisabledAsDuplicateOfDefault extends js.Object {
+trait DisabledAsDuplicateOfDefault extends StObject {
   
   var disabled: scala.Double = js.native
   
@@ -56,57 +57,45 @@ object DisabledAsDuplicateOfDefault {
   }
   
   @scala.inline
-  implicit class DisabledAsDuplicateOfDefaultOps[Self <: DisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
+  implicit class DisabledAsDuplicateOfDefaultMutableBuilder[Self <: DisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledAsDuplicateOfDefault(value: scala.Double): Self = StObject.set(x, "disabledAsDuplicateOfDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledByAdmin(value: scala.Double): Self = StObject.set(x, "disabledByAdmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: scala.Double): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabledBySystem(value: scala.Double): Self = StObject.set(x, "disabledBySystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledAsDuplicateOfDefault(value: scala.Double): Self = this.set("disabledAsDuplicateOfDefault", value.asInstanceOf[js.Any])
+    def setDisabledInactiveIdentity(value: scala.Double): Self = StObject.set(x, "disabledInactiveIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledByAdmin(value: scala.Double): Self = this.set("disabledByAdmin", value.asInstanceOf[js.Any])
+    def setDisabledInvalidPathClause(value: scala.Double): Self = StObject.set(x, "disabledInvalidPathClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledBySystem(value: scala.Double): Self = this.set("disabledBySystem", value.asInstanceOf[js.Any])
+    def setDisabledInvalidRoleExpression(value: scala.Double): Self = StObject.set(x, "disabledInvalidRoleExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledInactiveIdentity(value: scala.Double): Self = this.set("disabledInactiveIdentity", value.asInstanceOf[js.Any])
+    def setDisabledMessageQueueNotSupported(value: scala.Double): Self = StObject.set(x, "disabledMessageQueueNotSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledInvalidPathClause(value: scala.Double): Self = this.set("disabledInvalidPathClause", value.asInstanceOf[js.Any])
+    def setDisabledMissingIdentity(value: scala.Double): Self = StObject.set(x, "disabledMissingIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledInvalidRoleExpression(value: scala.Double): Self = this.set("disabledInvalidRoleExpression", value.asInstanceOf[js.Any])
+    def setEnabled(value: scala.Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledMessageQueueNotSupported(value: scala.Double): Self = this.set("disabledMessageQueueNotSupported", value.asInstanceOf[js.Any])
+    def setEnabledOnProbation(value: scala.Double): Self = StObject.set(x, "enabledOnProbation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledMissingIdentity(value: scala.Double): Self = this.set("disabledMissingIdentity", value.asInstanceOf[js.Any])
+    def setJailedByNotificationsVolume(value: scala.Double): Self = StObject.set(x, "jailedByNotificationsVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: scala.Double): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabledOnProbation(value: scala.Double): Self = this.set("enabledOnProbation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJailedByNotificationsVolume(value: scala.Double): Self = this.set("jailedByNotificationsVolume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPendingDeletion(value: scala.Double): Self = this.set("pendingDeletion", value.asInstanceOf[js.Any])
+    def setPendingDeletion(value: scala.Double): Self = StObject.set(x, "pendingDeletion", value.asInstanceOf[js.Any])
   }
 }

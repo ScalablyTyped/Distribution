@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RetrieveTeamMemberResponse")
 @js.native
-class RetrieveTeamMemberResponse () extends js.Object {
+class RetrieveTeamMemberResponse () extends StObject {
   
   /**
     * The errors that occurred during the request.

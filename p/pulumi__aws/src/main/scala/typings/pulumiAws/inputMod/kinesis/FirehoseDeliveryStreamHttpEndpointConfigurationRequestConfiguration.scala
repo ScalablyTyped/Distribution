@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesis
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration extends js.Object {
+trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration extends StObject {
   
   /**
     * Describes the metadata sent to the HTTP endpoint destination. More details are given below
@@ -35,26 +36,7 @@ object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOps[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommonAttributesVarargs(
-      value: (Input[
-          FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute
-        ])*
-    ): Self = this.set("commonAttributes", js.Array(value :_*))
+  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCommonAttributes(
@@ -65,15 +47,22 @@ object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
             ]
           ]
         ]
-    ): Self = this.set("commonAttributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "commonAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommonAttributes: Self = this.set("commonAttributes", js.undefined)
+    def setCommonAttributesUndefined: Self = StObject.set(x, "commonAttributes", js.undefined)
     
     @scala.inline
-    def setContentEncoding(value: Input[String]): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    def setCommonAttributesVarargs(
+      value: (Input[
+          FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute
+        ])*
+    ): Self = StObject.set(x, "commonAttributes", js.Array(value :_*))
     
     @scala.inline
-    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    def setContentEncoding(value: Input[String]): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMContainer extends js.Object {
+trait DOMContainer extends StObject {
   
   /**
     * The `id` or node representing the DOM element containing the view.
@@ -90,48 +91,36 @@ object DOMContainer {
   }
   
   @scala.inline
-  implicit class DOMContainerOps[Self <: DOMContainer] (val x: Self) extends AnyVal {
+  implicit class DOMContainerMutableBuilder[Self <: DOMContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: HTMLDivElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: HTMLDivElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setPopup(value: Popup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: Boolean): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setResizing(value: Boolean): Self = StObject.set(x, "resizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: Popup): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
     
     @scala.inline
-    def setResizing(value: Boolean): Self = this.set("resizing", value.asInstanceOf[js.Any])
+    def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeVarargs(value: Double*): Self = this.set("size", js.Array(value :_*))
+    def setUi(value: DefaultUI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: js.Array[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuspended(value: Boolean): Self = this.set("suspended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUi(value: DefaultUI): Self = this.set("ui", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

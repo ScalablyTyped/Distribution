@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePortalRequest extends js.Object {
+trait UpdatePortalRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
@@ -48,48 +49,36 @@ object UpdatePortalRequest {
   }
   
   @scala.inline
-  implicit class UpdatePortalRequestOps[Self <: UpdatePortalRequest] (val x: Self) extends AnyVal {
+  implicit class UpdatePortalRequestMutableBuilder[Self <: UpdatePortalRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalContactEmail(value: Email): Self = this.set("portalContactEmail", value.asInstanceOf[js.Any])
+    def setPortalDescription(value: Description): Self = StObject.set(x, "portalDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalId(value: ID): Self = this.set("portalId", value.asInstanceOf[js.Any])
+    def setPortalDescriptionUndefined: Self = StObject.set(x, "portalDescription", js.undefined)
     
     @scala.inline
-    def setPortalName(value: Name): Self = this.set("portalName", value.asInstanceOf[js.Any])
+    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: ARN): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setPortalLogoImage(value: Image): Self = StObject.set(x, "portalLogoImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setPortalLogoImageUndefined: Self = StObject.set(x, "portalLogoImage", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setPortalName(value: Name): Self = StObject.set(x, "portalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalDescription(value: Description): Self = this.set("portalDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortalDescription: Self = this.set("portalDescription", js.undefined)
-    
-    @scala.inline
-    def setPortalLogoImage(value: Image): Self = this.set("portalLogoImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortalLogoImage: Self = this.set("portalLogoImage", js.undefined)
+    def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -20,12 +20,13 @@ import typings.yandexMaps.yandexMapsStrings.small
 import typings.yandexMaps.yandexMapsStrings.street
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsearch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundedBy extends js.Object {
+trait BoundedBy extends StObject {
   
   var adjustMapMargin: js.UndefOr[Boolean] = js.native
   
@@ -88,180 +89,168 @@ object BoundedBy {
   }
   
   @scala.inline
-  implicit class BoundedByOps[Self <: BoundedBy] (val x: Self) extends AnyVal {
+  implicit class BoundedByMutableBuilder[Self <: BoundedBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustMapMargin(value: Boolean): Self = StObject.set(x, "adjustMapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustMapMarginUndefined: Self = StObject.set(x, "adjustMapMargin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundedBy(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "boundedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustMapMargin(value: Boolean): Self = this.set("adjustMapMargin", value.asInstanceOf[js.Any])
+    def setBoundedByUndefined: Self = StObject.set(x, "boundedBy", js.undefined)
     
     @scala.inline
-    def deleteAdjustMapMargin: Self = this.set("adjustMapMargin", js.undefined)
+    def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value :_*))
     
     @scala.inline
-    def setBoundedByVarargs(value: js.Array[Double]*): Self = this.set("boundedBy", js.Array(value :_*))
+    def setFitMaxWidth(value: Boolean): Self = StObject.set(x, "fitMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundedBy(value: js.Array[js.Array[Double]]): Self = this.set("boundedBy", value.asInstanceOf[js.Any])
+    def setFitMaxWidthUndefined: Self = StObject.set(x, "fitMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteBoundedBy: Self = this.set("boundedBy", js.undefined)
+    def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitMaxWidth(value: Boolean): Self = this.set("fitMaxWidth", value.asInstanceOf[js.Any])
+    def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFitMaxWidth: Self = this.set("fitMaxWidth", js.undefined)
+    def setFloatIndexUndefined: Self = StObject.set(x, "floatIndex", js.undefined)
     
     @scala.inline
-    def setFloat(value: none | left | right): Self = this.set("float", value.asInstanceOf[js.Any])
+    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
     @scala.inline
-    def deleteFloat: Self = this.set("float", js.undefined)
+    def setFormLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatIndex(value: Double): Self = this.set("floatIndex", value.asInstanceOf[js.Any])
+    def setFormLayoutUndefined: Self = StObject.set(x, "formLayout", js.undefined)
     
     @scala.inline
-    def deleteFloatIndex: Self = this.set("floatIndex", js.undefined)
+    def setKind(value: house | street | metro | district | locality): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormLayout(value: String | IClassConstructor[ILayout]): Self = this.set("formLayout", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFormLayout: Self = this.set("formLayout", js.undefined)
+    def setLayout(value: String | IClassConstructor[ISearchControlLayout]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: house | street | metro | district | locality): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMaxWidth(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String | IClassConstructor[ISearchControlLayout]): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setMaxWidthVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
     
     @scala.inline
-    def setMaxWidthVarargs(value: (js.Array[Double] | Double)*): Self = this.set("maxWidth", js.Array(value :_*))
+    def setNoCentering(value: Boolean): Self = StObject.set(x, "noCentering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setNoCenteringUndefined: Self = StObject.set(x, "noCentering", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setNoPlacemark(value: Boolean): Self = StObject.set(x, "noPlacemark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCentering(value: Boolean): Self = this.set("noCentering", value.asInstanceOf[js.Any])
+    def setNoPlacemarkUndefined: Self = StObject.set(x, "noPlacemark", js.undefined)
     
     @scala.inline
-    def deleteNoCentering: Self = this.set("noCentering", js.undefined)
+    def setNoPopup(value: Boolean): Self = StObject.set(x, "noPopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoPlacemark(value: Boolean): Self = this.set("noPlacemark", value.asInstanceOf[js.Any])
+    def setNoPopupUndefined: Self = StObject.set(x, "noPopup", js.undefined)
     
     @scala.inline
-    def deleteNoPlacemark: Self = this.set("noPlacemark", js.undefined)
+    def setNoSelect(value: Boolean): Self = StObject.set(x, "noSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoPopup(value: Boolean): Self = this.set("noPopup", value.asInstanceOf[js.Any])
+    def setNoSelectUndefined: Self = StObject.set(x, "noSelect", js.undefined)
     
     @scala.inline
-    def deleteNoPopup: Self = this.set("noPopup", js.undefined)
+    def setNoSuggestPanel(value: Boolean): Self = StObject.set(x, "noSuggestPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSelect(value: Boolean): Self = this.set("noSelect", value.asInstanceOf[js.Any])
+    def setNoSuggestPanelUndefined: Self = StObject.set(x, "noSuggestPanel", js.undefined)
     
     @scala.inline
-    def deleteNoSelect: Self = this.set("noSelect", js.undefined)
+    def setPlaceholderContent(value: String): Self = StObject.set(x, "placeholderContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSuggestPanel(value: Boolean): Self = this.set("noSuggestPanel", value.asInstanceOf[js.Any])
+    def setPlaceholderContentUndefined: Self = StObject.set(x, "placeholderContent", js.undefined)
     
     @scala.inline
-    def deleteNoSuggestPanel: Self = this.set("noSuggestPanel", js.undefined)
+    def setPopupItemLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "popupItemLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderContent(value: String): Self = this.set("placeholderContent", value.asInstanceOf[js.Any])
+    def setPopupItemLayoutUndefined: Self = StObject.set(x, "popupItemLayout", js.undefined)
     
     @scala.inline
-    def deletePlaceholderContent: Self = this.set("placeholderContent", js.undefined)
+    def setPopupLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "popupLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupItemLayout(value: String | IClassConstructor[ILayout]): Self = this.set("popupItemLayout", value.asInstanceOf[js.Any])
+    def setPopupLayoutUndefined: Self = StObject.set(x, "popupLayout", js.undefined)
     
     @scala.inline
-    def deletePopupItemLayout: Self = this.set("popupItemLayout", js.undefined)
+    def setPosition(value: Bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupLayout(value: String | IClassConstructor[ILayout]): Self = this.set("popupLayout", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePopupLayout: Self = this.set("popupLayout", js.undefined)
+    def setProvider(value: IGeocodeProvider | yandexNumbersignmap | yandexNumbersignsearch): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSearchCoordOrder(value: latlong | longlat): Self = StObject.set(x, "searchCoordOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: IGeocodeProvider | yandexNumbersignmap | yandexNumbersignsearch): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setSearchCoordOrderUndefined: Self = StObject.set(x, "searchCoordOrder", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setSize(value: auto | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchCoordOrder(value: latlong | longlat): Self = this.set("searchCoordOrder", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSearchCoordOrder: Self = this.set("searchCoordOrder", js.undefined)
+    def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: auto | small | medium | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSuppressYandexSearch(value: Boolean): Self = StObject.set(x, "suppressYandexSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictBounds(value: Boolean): Self = this.set("strictBounds", value.asInstanceOf[js.Any])
+    def setSuppressYandexSearchUndefined: Self = StObject.set(x, "suppressYandexSearch", js.undefined)
     
     @scala.inline
-    def deleteStrictBounds: Self = this.set("strictBounds", js.undefined)
+    def setUseMapBounds(value: Boolean): Self = StObject.set(x, "useMapBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressYandexSearch(value: Boolean): Self = this.set("suppressYandexSearch", value.asInstanceOf[js.Any])
+    def setUseMapBoundsUndefined: Self = StObject.set(x, "useMapBounds", js.undefined)
     
     @scala.inline
-    def deleteSuppressYandexSearch: Self = this.set("suppressYandexSearch", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMapBounds(value: Boolean): Self = this.set("useMapBounds", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteUseMapBounds: Self = this.set("useMapBounds", js.undefined)
+    def setZoomMargin(value: Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZoomMargin(value: Double): Self = this.set("zoomMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMargin: Self = this.set("zoomMargin", js.undefined)
+    def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
   }
 }

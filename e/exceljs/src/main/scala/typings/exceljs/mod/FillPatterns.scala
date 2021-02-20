@@ -1,6 +1,7 @@
 package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.gray125
   - typings.exceljs.exceljsStrings.gray0625
 */
-trait FillPatterns extends js.Object
+trait FillPatterns extends StObject
 object FillPatterns {
   
   @scala.inline

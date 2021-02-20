@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.DeclareExportDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,9 @@ trait DeclareExportDeclaration_
      with FlowDeclaration
      with Statement {
   
-  var declaration: Flow | Null = js.native
-  
   var default: Boolean | Null = js.native
+  
+  var declaration: Flow | Null = js.native
   
   var source: StringLiteral_ | Null = js.native
   
@@ -35,48 +36,36 @@ object DeclareExportDeclaration_ {
   }
   
   @scala.inline
-  implicit class DeclareExportDeclaration_Ops[Self <: DeclareExportDeclaration_] (val x: Self) extends AnyVal {
+  implicit class DeclareExportDeclaration_MutableBuilder[Self <: DeclareExportDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclaration(value: Flow): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclarationNull: Self = StObject.set(x, "declaration", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: DeclareExportDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDefaultNull: Self = StObject.set(x, "default", null)
     
     @scala.inline
-    def setDeclaration(value: Flow): Self = this.set("declaration", value.asInstanceOf[js.Any])
+    def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclarationNull: Self = this.set("declaration", null)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setSpecifiers(value: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNull: Self = this.set("default", null)
+    def setSpecifiersNull: Self = StObject.set(x, "specifiers", null)
     
     @scala.inline
-    def setSource(value: StringLiteral_): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
     
     @scala.inline
-    def setSourceNull: Self = this.set("source", null)
-    
-    @scala.inline
-    def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = this.set("specifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpecifiers(value: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]): Self = this.set("specifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecifiersNull: Self = this.set("specifiers", null)
+    def setType(value: DeclareExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

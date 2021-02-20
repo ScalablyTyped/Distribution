@@ -15,53 +15,79 @@ import typings.maximMazurokGapiClientBooks.gapi.client.books.SeriesResource
 import typings.maximMazurokGapiClientBooks.gapi.client.books.VolumesResource
 import typings.maximMazurokGapiClientBooks.maximMazurokGapiClientBooksStrings.books
 import typings.maximMazurokGapiClientBooks.maximMazurokGapiClientBooksStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Books API v1 */
-      def load(name: books, version: v1): js.Thenable[Unit] = js.native
-      def load(name: books, version: v1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object books extends js.Object {
+      object books {
         
+        @JSGlobal("gapi.client.books.bookshelves")
+        @js.native
         val bookshelves: BookshelvesResource = js.native
         
+        @JSGlobal("gapi.client.books.cloudloading")
+        @js.native
         val cloudloading: CloudloadingResource = js.native
         
+        @JSGlobal("gapi.client.books.dictionary")
+        @js.native
         val dictionary: DictionaryResource = js.native
         
+        @JSGlobal("gapi.client.books.familysharing")
+        @js.native
         val familysharing: FamilysharingResource = js.native
         
+        @JSGlobal("gapi.client.books.layers")
+        @js.native
         val layers: LayersResource = js.native
         
+        @JSGlobal("gapi.client.books.myconfig")
+        @js.native
         val myconfig: MyconfigResource = js.native
         
+        @JSGlobal("gapi.client.books.mylibrary")
+        @js.native
         val mylibrary: MylibraryResource = js.native
         
+        @JSGlobal("gapi.client.books.notification")
+        @js.native
         val notification: NotificationResource = js.native
         
+        @JSGlobal("gapi.client.books.onboarding")
+        @js.native
         val onboarding: OnboardingResource = js.native
         
+        @JSGlobal("gapi.client.books.personalizedstream")
+        @js.native
         val personalizedstream: PersonalizedstreamResource = js.native
         
+        @JSGlobal("gapi.client.books.promooffer")
+        @js.native
         val promooffer: PromoofferResource = js.native
         
+        @JSGlobal("gapi.client.books.series")
+        @js.native
         val series: SeriesResource = js.native
         
+        @JSGlobal("gapi.client.books.volumes")
+        @js.native
         val volumes: VolumesResource = js.native
       }
+      
+      /** Load Books API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: books, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: books, version: v1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

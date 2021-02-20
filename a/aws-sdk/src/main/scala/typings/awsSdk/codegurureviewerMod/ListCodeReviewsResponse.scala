@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCodeReviewsResponse extends js.Object {
+trait ListCodeReviewsResponse extends StObject {
   
   /**
     *  A list of code reviews that meet the criteria of the request. 
@@ -26,33 +27,21 @@ object ListCodeReviewsResponse {
   }
   
   @scala.inline
-  implicit class ListCodeReviewsResponseOps[Self <: ListCodeReviewsResponse] (val x: Self) extends AnyVal {
+  implicit class ListCodeReviewsResponseMutableBuilder[Self <: ListCodeReviewsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeReviewSummaries(value: CodeReviewSummaries): Self = StObject.set(x, "CodeReviewSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeReviewSummariesUndefined: Self = StObject.set(x, "CodeReviewSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeReviewSummariesVarargs(value: CodeReviewSummary*): Self = StObject.set(x, "CodeReviewSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setCodeReviewSummariesVarargs(value: CodeReviewSummary*): Self = this.set("CodeReviewSummaries", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeReviewSummaries(value: CodeReviewSummaries): Self = this.set("CodeReviewSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeReviewSummaries: Self = this.set("CodeReviewSummaries", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

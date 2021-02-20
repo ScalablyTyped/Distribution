@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbsessionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendCommandRequest extends js.Object {
+trait SendCommandRequest extends StObject {
   
   /**
     * Command to abort the current transaction.
@@ -56,66 +57,54 @@ object SendCommandRequest {
   }
   
   @scala.inline
-  implicit class SendCommandRequestOps[Self <: SendCommandRequest] (val x: Self) extends AnyVal {
+  implicit class SendCommandRequestMutableBuilder[Self <: SendCommandRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortTransaction(value: AbortTransactionRequest): Self = StObject.set(x, "AbortTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortTransactionUndefined: Self = StObject.set(x, "AbortTransaction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitTransaction(value: CommitTransactionRequest): Self = StObject.set(x, "CommitTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortTransaction(value: AbortTransactionRequest): Self = this.set("AbortTransaction", value.asInstanceOf[js.Any])
+    def setCommitTransactionUndefined: Self = StObject.set(x, "CommitTransaction", js.undefined)
     
     @scala.inline
-    def deleteAbortTransaction: Self = this.set("AbortTransaction", js.undefined)
+    def setEndSession(value: EndSessionRequest): Self = StObject.set(x, "EndSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitTransaction(value: CommitTransactionRequest): Self = this.set("CommitTransaction", value.asInstanceOf[js.Any])
+    def setEndSessionUndefined: Self = StObject.set(x, "EndSession", js.undefined)
     
     @scala.inline
-    def deleteCommitTransaction: Self = this.set("CommitTransaction", js.undefined)
+    def setExecuteStatement(value: ExecuteStatementRequest): Self = StObject.set(x, "ExecuteStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndSession(value: EndSessionRequest): Self = this.set("EndSession", value.asInstanceOf[js.Any])
+    def setExecuteStatementUndefined: Self = StObject.set(x, "ExecuteStatement", js.undefined)
     
     @scala.inline
-    def deleteEndSession: Self = this.set("EndSession", js.undefined)
+    def setFetchPage(value: FetchPageRequest): Self = StObject.set(x, "FetchPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteStatement(value: ExecuteStatementRequest): Self = this.set("ExecuteStatement", value.asInstanceOf[js.Any])
+    def setFetchPageUndefined: Self = StObject.set(x, "FetchPage", js.undefined)
     
     @scala.inline
-    def deleteExecuteStatement: Self = this.set("ExecuteStatement", js.undefined)
+    def setSessionToken(value: SessionToken): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchPage(value: FetchPageRequest): Self = this.set("FetchPage", value.asInstanceOf[js.Any])
+    def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
     
     @scala.inline
-    def deleteFetchPage: Self = this.set("FetchPage", js.undefined)
+    def setStartSession(value: StartSessionRequest): Self = StObject.set(x, "StartSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionToken(value: SessionToken): Self = this.set("SessionToken", value.asInstanceOf[js.Any])
+    def setStartSessionUndefined: Self = StObject.set(x, "StartSession", js.undefined)
     
     @scala.inline
-    def deleteSessionToken: Self = this.set("SessionToken", js.undefined)
+    def setStartTransaction(value: StartTransactionRequest): Self = StObject.set(x, "StartTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartSession(value: StartSessionRequest): Self = this.set("StartSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartSession: Self = this.set("StartSession", js.undefined)
-    
-    @scala.inline
-    def setStartTransaction(value: StartTransactionRequest): Self = this.set("StartTransaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTransaction: Self = this.set("StartTransaction", js.undefined)
+    def setStartTransactionUndefined: Self = StObject.set(x, "StartTransaction", js.undefined)
   }
 }

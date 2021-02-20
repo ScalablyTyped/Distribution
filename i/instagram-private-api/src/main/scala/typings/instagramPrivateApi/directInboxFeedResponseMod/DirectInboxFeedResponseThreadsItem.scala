@@ -1,12 +1,13 @@
 package typings.instagramPrivateApi.directInboxFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api/dist/responses/direct-inbox.feed.response", "DirectInboxFeedResponseThreadsItem")
 @js.native
-class DirectInboxFeedResponseThreadsItem () extends js.Object {
+class DirectInboxFeedResponseThreadsItem () extends StObject {
   
   var admin_user_ids: js.Array[_] = js.native
   

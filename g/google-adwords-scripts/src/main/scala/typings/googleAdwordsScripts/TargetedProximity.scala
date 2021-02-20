@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +28,6 @@ trait TargetedProximity
   
   def getVideoCampaign(): Campaign = js.native
   
-   // TODO: VideoCampaign
+  // TODO: VideoCampaign
   def remove(): Unit = js.native
 }

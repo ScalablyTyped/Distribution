@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectOrderFixed extends js.Object {
+trait ObjectOrderFixed extends StObject {
   
   /**
     * Two-element array:
@@ -30,36 +31,24 @@ object ObjectOrderFixed {
   }
   
   @scala.inline
-  implicit class ObjectOrderFixedOps[Self <: ObjectOrderFixed] (val x: Self) extends AnyVal {
+  implicit class ObjectOrderFixedMutableBuilder[Self <: ObjectOrderFixed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPost(value: js.Array[_]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostVarargs(value: js.Any*): Self = StObject.set(x, "post", js.Array(value :_*))
     
     @scala.inline
-    def setPostVarargs(value: js.Any*): Self = this.set("post", js.Array(value :_*))
+    def setPre(value: js.Array[_]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost(value: js.Array[_]): Self = this.set("post", value.asInstanceOf[js.Any])
+    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
     @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
-    
-    @scala.inline
-    def setPreVarargs(value: js.Any*): Self = this.set("pre", js.Array(value :_*))
-    
-    @scala.inline
-    def setPre(value: js.Array[_]): Self = this.set("pre", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePre: Self = this.set("pre", js.undefined)
+    def setPreVarargs(value: js.Any*): Self = StObject.set(x, "pre", js.Array(value :_*))
   }
 }

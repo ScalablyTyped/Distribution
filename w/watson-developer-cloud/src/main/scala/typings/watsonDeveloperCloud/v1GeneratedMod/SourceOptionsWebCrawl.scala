@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object defining which URL to crawl and how to crawl it. */
 @js.native
-trait SourceOptionsWebCrawl extends js.Object {
+trait SourceOptionsWebCrawl extends StObject {
   
   /** When `true`, allows the crawl to interact with HTTPS sites with SSL certificates with untrusted signers. */
   var allow_untrusted_certificate: js.UndefOr[Boolean] = js.native
@@ -38,57 +39,45 @@ object SourceOptionsWebCrawl {
   }
   
   @scala.inline
-  implicit class SourceOptionsWebCrawlOps[Self <: SourceOptionsWebCrawl] (val x: Self) extends AnyVal {
+  implicit class SourceOptionsWebCrawlMutableBuilder[Self <: SourceOptionsWebCrawl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_untrusted_certificate(value: Boolean): Self = StObject.set(x, "allow_untrusted_certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_untrusted_certificateUndefined: Self = StObject.set(x, "allow_untrusted_certificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawl_speed(value: String): Self = StObject.set(x, "crawl_speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setCrawl_speedUndefined: Self = StObject.set(x, "crawl_speed", js.undefined)
     
     @scala.inline
-    def setAllow_untrusted_certificate(value: Boolean): Self = this.set("allow_untrusted_certificate", value.asInstanceOf[js.Any])
+    def setLimit_to_starting_hosts(value: Boolean): Self = StObject.set(x, "limit_to_starting_hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow_untrusted_certificate: Self = this.set("allow_untrusted_certificate", js.undefined)
+    def setLimit_to_starting_hostsUndefined: Self = StObject.set(x, "limit_to_starting_hosts", js.undefined)
     
     @scala.inline
-    def setCrawl_speed(value: String): Self = this.set("crawl_speed", value.asInstanceOf[js.Any])
+    def setMaximum_hops(value: Double): Self = StObject.set(x, "maximum_hops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrawl_speed: Self = this.set("crawl_speed", js.undefined)
+    def setMaximum_hopsUndefined: Self = StObject.set(x, "maximum_hops", js.undefined)
     
     @scala.inline
-    def setLimit_to_starting_hosts(value: Boolean): Self = this.set("limit_to_starting_hosts", value.asInstanceOf[js.Any])
+    def setOverride_robots_txt(value: Boolean): Self = StObject.set(x, "override_robots_txt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit_to_starting_hosts: Self = this.set("limit_to_starting_hosts", js.undefined)
+    def setOverride_robots_txtUndefined: Self = StObject.set(x, "override_robots_txt", js.undefined)
     
     @scala.inline
-    def setMaximum_hops(value: Double): Self = this.set("maximum_hops", value.asInstanceOf[js.Any])
+    def setRequest_timeout(value: Double): Self = StObject.set(x, "request_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximum_hops: Self = this.set("maximum_hops", js.undefined)
+    def setRequest_timeoutUndefined: Self = StObject.set(x, "request_timeout", js.undefined)
     
     @scala.inline
-    def setOverride_robots_txt(value: Boolean): Self = this.set("override_robots_txt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverride_robots_txt: Self = this.set("override_robots_txt", js.undefined)
-    
-    @scala.inline
-    def setRequest_timeout(value: Double): Self = this.set("request_timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest_timeout: Self = this.set("request_timeout", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

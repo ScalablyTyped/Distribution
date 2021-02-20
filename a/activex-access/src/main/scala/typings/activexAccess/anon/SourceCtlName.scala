@@ -1,11 +1,12 @@
 package typings.activexAccess.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceCtlName extends js.Object {
+trait SourceCtlName extends StObject {
   
   val SourceCtlName: String = js.native
   
@@ -26,33 +27,21 @@ object SourceCtlName {
   }
   
   @scala.inline
-  implicit class SourceCtlNameOps[Self <: SourceCtlName] (val x: Self) extends AnyVal {
+  implicit class SourceCtlNameMutableBuilder[Self <: SourceCtlName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceFieldList(value: Double): Self = StObject.set(x, "SourceFieldList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceRow(value: Double): Self = StObject.set(x, "SourceRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCtlName(value: String): Self = this.set("SourceCtlName", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFieldList(value: Double): Self = this.set("SourceFieldList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceRow(value: Double): Self = this.set("SourceRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("X", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("Y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

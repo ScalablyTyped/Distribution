@@ -24,26 +24,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/wafv2", JSImport.Namespace)
-@js.native
-object wafv2Mod extends js.Object {
+object wafv2Mod {
   
-  def getIpSet(args: GetIpSetArgs): js.Promise[GetIpSetResult] = js.native
-  def getIpSet(args: GetIpSetArgs, opts: InvokeOptions): js.Promise[GetIpSetResult] = js.native
-  
-  def getRegexPatternSet(args: GetRegexPatternSetArgs): js.Promise[GetRegexPatternSetResult] = js.native
-  def getRegexPatternSet(args: GetRegexPatternSetArgs, opts: InvokeOptions): js.Promise[GetRegexPatternSetResult] = js.native
-  
-  def getRuleGroup(args: GetRuleGroupArgs): js.Promise[GetRuleGroupResult] = js.native
-  def getRuleGroup(args: GetRuleGroupArgs, opts: InvokeOptions): js.Promise[GetRuleGroupResult] = js.native
-  
-  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = js.native
-  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = js.native
-  
+  @JSImport("@pulumi/aws/wafv2", "IpSet")
   @js.native
   class IpSet protected ()
     extends typings.pulumiAws.wafv2IpSetMod.IpSet {
@@ -58,8 +46,7 @@ object wafv2Mod extends js.Object {
     def this(name: String, args: IpSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object IpSet extends js.Object {
+  object IpSet {
     
     /**
       * Get an existing IpSet resource's state with the given name, ID, and optional extra
@@ -70,18 +57,29 @@ object wafv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/wafv2", "IpSet.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.wafv2IpSetMod.IpSet = js.native
+    @JSImport("@pulumi/aws/wafv2", "IpSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafv2IpSetMod.IpSet = js.native
+    @JSImport("@pulumi/aws/wafv2", "IpSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: IpSetState): typings.pulumiAws.wafv2IpSetMod.IpSet = js.native
+    @JSImport("@pulumi/aws/wafv2", "IpSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): typings.pulumiAws.wafv2IpSetMod.IpSet = js.native
     
     /**
       * Returns true if the given object is an instance of IpSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/wafv2", "IpSet.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/ipSet.IpSet */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/wafv2", "RegexPatternSet")
   @js.native
   class RegexPatternSet protected ()
     extends typings.pulumiAws.wafv2RegexPatternSetMod.RegexPatternSet {
@@ -96,8 +94,7 @@ object wafv2Mod extends js.Object {
     def this(name: String, args: RegexPatternSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object RegexPatternSet extends js.Object {
+  object RegexPatternSet {
     
     /**
       * Get an existing RegexPatternSet resource's state with the given name, ID, and optional extra
@@ -108,18 +105,29 @@ object wafv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/wafv2", "RegexPatternSet.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.wafv2RegexPatternSetMod.RegexPatternSet = js.native
+    @JSImport("@pulumi/aws/wafv2", "RegexPatternSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafv2RegexPatternSetMod.RegexPatternSet = js.native
+    @JSImport("@pulumi/aws/wafv2", "RegexPatternSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RegexPatternSetState): typings.pulumiAws.wafv2RegexPatternSetMod.RegexPatternSet = js.native
+    @JSImport("@pulumi/aws/wafv2", "RegexPatternSet.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): typings.pulumiAws.wafv2RegexPatternSetMod.RegexPatternSet = js.native
     
     /**
       * Returns true if the given object is an instance of RegexPatternSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/wafv2", "RegexPatternSet.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/wafv2", "RuleGroup")
   @js.native
   class RuleGroup protected ()
     extends typings.pulumiAws.wafv2RuleGroupMod.RuleGroup {
@@ -134,8 +142,7 @@ object wafv2Mod extends js.Object {
     def this(name: String, args: RuleGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object RuleGroup extends js.Object {
+  object RuleGroup {
     
     /**
       * Get an existing RuleGroup resource's state with the given name, ID, and optional extra
@@ -146,18 +153,29 @@ object wafv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/wafv2", "RuleGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.wafv2RuleGroupMod.RuleGroup = js.native
+    @JSImport("@pulumi/aws/wafv2", "RuleGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafv2RuleGroupMod.RuleGroup = js.native
+    @JSImport("@pulumi/aws/wafv2", "RuleGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RuleGroupState): typings.pulumiAws.wafv2RuleGroupMod.RuleGroup = js.native
+    @JSImport("@pulumi/aws/wafv2", "RuleGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): typings.pulumiAws.wafv2RuleGroupMod.RuleGroup = js.native
     
     /**
       * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/wafv2", "RuleGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/ruleGroup.RuleGroup */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/wafv2", "WebAcl")
   @js.native
   class WebAcl protected ()
     extends typings.pulumiAws.wafv2WebAclMod.WebAcl {
@@ -172,8 +190,7 @@ object wafv2Mod extends js.Object {
     def this(name: String, args: WebAclArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object WebAcl extends js.Object {
+  object WebAcl {
     
     /**
       * Get an existing WebAcl resource's state with the given name, ID, and optional extra
@@ -184,18 +201,29 @@ object wafv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/wafv2", "WebAcl.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.wafv2WebAclMod.WebAcl = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAcl.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafv2WebAclMod.WebAcl = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAcl.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WebAclState): typings.pulumiAws.wafv2WebAclMod.WebAcl = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAcl.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): typings.pulumiAws.wafv2WebAclMod.WebAcl = js.native
     
     /**
       * Returns true if the given object is an instance of WebAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/wafv2", "WebAcl.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/wafv2", "WebAclAssociation")
   @js.native
   class WebAclAssociation protected ()
     extends typings.pulumiAws.wafv2WebAclAssociationMod.WebAclAssociation {
@@ -210,8 +238,7 @@ object wafv2Mod extends js.Object {
     def this(name: String, args: WebAclAssociationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object WebAclAssociation extends js.Object {
+  object WebAclAssociation {
     
     /**
       * Get an existing WebAclAssociation resource's state with the given name, ID, and optional extra
@@ -222,18 +249,29 @@ object wafv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/wafv2", "WebAclAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.wafv2WebAclAssociationMod.WebAclAssociation = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAclAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafv2WebAclAssociationMod.WebAclAssociation = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAclAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WebAclAssociationState): typings.pulumiAws.wafv2WebAclAssociationMod.WebAclAssociation = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAclAssociation.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WebAclAssociationState, opts: CustomResourceOptions): typings.pulumiAws.wafv2WebAclAssociationMod.WebAclAssociation = js.native
     
     /**
       * Returns true if the given object is an instance of WebAclAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/wafv2", "WebAclAssociation.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclAssociation.WebAclAssociation */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/wafv2", "WebAclLoggingConfiguration")
   @js.native
   class WebAclLoggingConfiguration protected ()
     extends typings.pulumiAws.webAclLoggingConfigurationMod.WebAclLoggingConfiguration {
@@ -248,8 +286,7 @@ object wafv2Mod extends js.Object {
     def this(name: String, args: WebAclLoggingConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object WebAclLoggingConfiguration extends js.Object {
+  object WebAclLoggingConfiguration {
     
     /**
       * Get an existing WebAclLoggingConfiguration resource's state with the given name, ID, and optional extra
@@ -260,15 +297,53 @@ object wafv2Mod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/wafv2", "WebAclLoggingConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.webAclLoggingConfigurationMod.WebAclLoggingConfiguration = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAclLoggingConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.webAclLoggingConfigurationMod.WebAclLoggingConfiguration = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAclLoggingConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState): typings.pulumiAws.webAclLoggingConfigurationMod.WebAclLoggingConfiguration = js.native
+    @JSImport("@pulumi/aws/wafv2", "WebAclLoggingConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.webAclLoggingConfigurationMod.WebAclLoggingConfiguration = js.native
     
     /**
       * Returns true if the given object is an instance of WebAclLoggingConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/wafv2", "WebAclLoggingConfiguration.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/wafv2", "getIpSet")
+  @js.native
+  def getIpSet(args: GetIpSetArgs): js.Promise[GetIpSetResult] = js.native
+  @JSImport("@pulumi/aws/wafv2", "getIpSet")
+  @js.native
+  def getIpSet(args: GetIpSetArgs, opts: InvokeOptions): js.Promise[GetIpSetResult] = js.native
+  
+  @JSImport("@pulumi/aws/wafv2", "getRegexPatternSet")
+  @js.native
+  def getRegexPatternSet(args: GetRegexPatternSetArgs): js.Promise[GetRegexPatternSetResult] = js.native
+  @JSImport("@pulumi/aws/wafv2", "getRegexPatternSet")
+  @js.native
+  def getRegexPatternSet(args: GetRegexPatternSetArgs, opts: InvokeOptions): js.Promise[GetRegexPatternSetResult] = js.native
+  
+  @JSImport("@pulumi/aws/wafv2", "getRuleGroup")
+  @js.native
+  def getRuleGroup(args: GetRuleGroupArgs): js.Promise[GetRuleGroupResult] = js.native
+  @JSImport("@pulumi/aws/wafv2", "getRuleGroup")
+  @js.native
+  def getRuleGroup(args: GetRuleGroupArgs, opts: InvokeOptions): js.Promise[GetRuleGroupResult] = js.native
+  
+  @JSImport("@pulumi/aws/wafv2", "getWebAcl")
+  @js.native
+  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = js.native
+  @JSImport("@pulumi/aws/wafv2", "getWebAcl")
+  @js.native
+  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = js.native
 }

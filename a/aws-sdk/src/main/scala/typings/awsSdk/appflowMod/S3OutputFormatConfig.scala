@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3OutputFormatConfig extends js.Object {
+trait S3OutputFormatConfig extends StObject {
   
   var aggregationConfig: js.UndefOr[AggregationConfig] = js.native
   
@@ -28,36 +29,24 @@ object S3OutputFormatConfig {
   }
   
   @scala.inline
-  implicit class S3OutputFormatConfigOps[Self <: S3OutputFormatConfig] (val x: Self) extends AnyVal {
+  implicit class S3OutputFormatConfigMutableBuilder[Self <: S3OutputFormatConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationConfig(value: AggregationConfig): Self = StObject.set(x, "aggregationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationConfigUndefined: Self = StObject.set(x, "aggregationConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationConfig(value: AggregationConfig): Self = this.set("aggregationConfig", value.asInstanceOf[js.Any])
+    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     @scala.inline
-    def deleteAggregationConfig: Self = this.set("aggregationConfig", js.undefined)
+    def setPrefixConfig(value: PrefixConfig): Self = StObject.set(x, "prefixConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: FileType): Self = this.set("fileType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileType: Self = this.set("fileType", js.undefined)
-    
-    @scala.inline
-    def setPrefixConfig(value: PrefixConfig): Self = this.set("prefixConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixConfig: Self = this.set("prefixConfig", js.undefined)
+    def setPrefixConfigUndefined: Self = StObject.set(x, "prefixConfig", js.undefined)
   }
 }

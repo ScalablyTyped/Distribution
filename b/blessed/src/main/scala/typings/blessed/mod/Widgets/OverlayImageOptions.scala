@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object OverlayImageOptions {
   }
   
   @scala.inline
-  implicit class OverlayImageOptionsOps[Self <: OverlayImageOptions] (val x: Self) extends AnyVal {
+  implicit class OverlayImageOptionsMutableBuilder[Self <: OverlayImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnsi(value: Boolean): Self = this.set("ansi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setW3m(value: String): Self = this.set("w3m", value.asInstanceOf[js.Any])
+    def setW3m(value: String): Self = StObject.set(x, "w3m", value.asInstanceOf[js.Any])
   }
 }

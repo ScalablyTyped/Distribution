@@ -1,11 +1,12 @@
 package typings.activexDao.DAO
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Property extends js.Object {
+trait Property extends StObject {
   
   @JSName("DAO.Property_typekey")
   var DAODotProperty_typekey: Property = js.native

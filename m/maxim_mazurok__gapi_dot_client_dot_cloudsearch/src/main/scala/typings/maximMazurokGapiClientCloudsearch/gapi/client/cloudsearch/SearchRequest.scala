@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchRequest extends js.Object {
+trait SearchRequest extends StObject {
   
   /** The sources to use for querying. If not specified, all data sources from the current search application are used. */
   var dataSourceRestrictions: js.UndefOr[js.Array[DataSourceRestriction]] = js.native
@@ -42,72 +43,60 @@ object SearchRequest {
   }
   
   @scala.inline
-  implicit class SearchRequestOps[Self <: SearchRequest] (val x: Self) extends AnyVal {
+  implicit class SearchRequestMutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = this.set("dataSourceRestrictions", js.Array(value :_*))
+    def setFacetOptions(value: js.Array[FacetOptions]): Self = StObject.set(x, "facetOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = this.set("dataSourceRestrictions", value.asInstanceOf[js.Any])
+    def setFacetOptionsUndefined: Self = StObject.set(x, "facetOptions", js.undefined)
     
     @scala.inline
-    def deleteDataSourceRestrictions: Self = this.set("dataSourceRestrictions", js.undefined)
+    def setFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "facetOptions", js.Array(value :_*))
     
     @scala.inline
-    def setFacetOptionsVarargs(value: FacetOptions*): Self = this.set("facetOptions", js.Array(value :_*))
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetOptions(value: js.Array[FacetOptions]): Self = this.set("facetOptions", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteFacetOptions: Self = this.set("facetOptions", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setQueryInterpretationOptions(value: QueryInterpretationOptions): Self = StObject.set(x, "queryInterpretationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setQueryInterpretationOptionsUndefined: Self = StObject.set(x, "queryInterpretationOptions", js.undefined)
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryInterpretationOptions(value: QueryInterpretationOptions): Self = this.set("queryInterpretationOptions", value.asInstanceOf[js.Any])
+    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
     @scala.inline
-    def deleteQueryInterpretationOptions: Self = this.set("queryInterpretationOptions", js.undefined)
+    def setSortOptions(value: SortOptions): Self = StObject.set(x, "sortOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestOptions(value: RequestOptions): Self = this.set("requestOptions", value.asInstanceOf[js.Any])
+    def setSortOptionsUndefined: Self = StObject.set(x, "sortOptions", js.undefined)
     
     @scala.inline
-    def deleteRequestOptions: Self = this.set("requestOptions", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOptions(value: SortOptions): Self = this.set("sortOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOptions: Self = this.set("sortOptions", js.undefined)
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

@@ -5,13 +5,14 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.Filters> */
 @js.native
-trait PartialFilters extends js.Object {
+trait PartialFilters extends StObject {
   
   var AfterDate: js.UndefOr[Timestamp] = js.native
   
@@ -52,117 +53,105 @@ object PartialFilters {
   }
   
   @scala.inline
-  implicit class PartialFiltersOps[Self <: PartialFilters] (val x: Self) extends AnyVal {
+  implicit class PartialFiltersMutableBuilder[Self <: PartialFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterDate(value: Timestamp): Self = StObject.set(x, "AfterDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterDateUndefined: Self = StObject.set(x, "AfterDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterDate(value: Timestamp): Self = this.set("AfterDate", value.asInstanceOf[js.Any])
+    def setAuthorIdUndefined: Self = StObject.set(x, "AuthorId", js.undefined)
     
     @scala.inline
-    def deleteAfterDate: Self = this.set("AfterDate", js.undefined)
+    def setBeforeDate(value: Timestamp): Self = StObject.set(x, "BeforeDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorId(value: String): Self = this.set("AuthorId", value.asInstanceOf[js.Any])
+    def setBeforeDateUndefined: Self = StObject.set(x, "BeforeDate", js.undefined)
     
     @scala.inline
-    def deleteAuthorId: Self = this.set("AuthorId", js.undefined)
+    def setMaxDebitedFundsAmount(value: Double): Self = StObject.set(x, "MaxDebitedFundsAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeDate(value: Timestamp): Self = this.set("BeforeDate", value.asInstanceOf[js.Any])
+    def setMaxDebitedFundsAmountUndefined: Self = StObject.set(x, "MaxDebitedFundsAmount", js.undefined)
     
     @scala.inline
-    def deleteBeforeDate: Self = this.set("BeforeDate", js.undefined)
+    def setMaxDebitedFundsCurrency(value: CurrencyISO): Self = StObject.set(x, "MaxDebitedFundsCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDebitedFundsAmount(value: Double): Self = this.set("MaxDebitedFundsAmount", value.asInstanceOf[js.Any])
+    def setMaxDebitedFundsCurrencyUndefined: Self = StObject.set(x, "MaxDebitedFundsCurrency", js.undefined)
     
     @scala.inline
-    def deleteMaxDebitedFundsAmount: Self = this.set("MaxDebitedFundsAmount", js.undefined)
+    def setMaxFeesAmount(value: Double): Self = StObject.set(x, "MaxFeesAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDebitedFundsCurrency(value: CurrencyISO): Self = this.set("MaxDebitedFundsCurrency", value.asInstanceOf[js.Any])
+    def setMaxFeesAmountUndefined: Self = StObject.set(x, "MaxFeesAmount", js.undefined)
     
     @scala.inline
-    def deleteMaxDebitedFundsCurrency: Self = this.set("MaxDebitedFundsCurrency", js.undefined)
+    def setMaxFeesCurrency(value: CurrencyISO): Self = StObject.set(x, "MaxFeesCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFeesAmount(value: Double): Self = this.set("MaxFeesAmount", value.asInstanceOf[js.Any])
+    def setMaxFeesCurrencyUndefined: Self = StObject.set(x, "MaxFeesCurrency", js.undefined)
     
     @scala.inline
-    def deleteMaxFeesAmount: Self = this.set("MaxFeesAmount", js.undefined)
+    def setMinDebitedFundsAmount(value: Double): Self = StObject.set(x, "MinDebitedFundsAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFeesCurrency(value: CurrencyISO): Self = this.set("MaxFeesCurrency", value.asInstanceOf[js.Any])
+    def setMinDebitedFundsAmountUndefined: Self = StObject.set(x, "MinDebitedFundsAmount", js.undefined)
     
     @scala.inline
-    def deleteMaxFeesCurrency: Self = this.set("MaxFeesCurrency", js.undefined)
+    def setMinDebitedFundsCurrency(value: CurrencyISO): Self = StObject.set(x, "MinDebitedFundsCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDebitedFundsAmount(value: Double): Self = this.set("MinDebitedFundsAmount", value.asInstanceOf[js.Any])
+    def setMinDebitedFundsCurrencyUndefined: Self = StObject.set(x, "MinDebitedFundsCurrency", js.undefined)
     
     @scala.inline
-    def deleteMinDebitedFundsAmount: Self = this.set("MinDebitedFundsAmount", js.undefined)
+    def setMinFeesAmount(value: Double): Self = StObject.set(x, "MinFeesAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDebitedFundsCurrency(value: CurrencyISO): Self = this.set("MinDebitedFundsCurrency", value.asInstanceOf[js.Any])
+    def setMinFeesAmountUndefined: Self = StObject.set(x, "MinFeesAmount", js.undefined)
     
     @scala.inline
-    def deleteMinDebitedFundsCurrency: Self = this.set("MinDebitedFundsCurrency", js.undefined)
+    def setMinFeesCurrency(value: CurrencyISO): Self = StObject.set(x, "MinFeesCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFeesAmount(value: Double): Self = this.set("MinFeesAmount", value.asInstanceOf[js.Any])
+    def setMinFeesCurrencyUndefined: Self = StObject.set(x, "MinFeesCurrency", js.undefined)
     
     @scala.inline
-    def deleteMinFeesAmount: Self = this.set("MinFeesAmount", js.undefined)
+    def setNature(value: js.Array[TransactionNature]): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFeesCurrency(value: CurrencyISO): Self = this.set("MinFeesCurrency", value.asInstanceOf[js.Any])
+    def setNatureUndefined: Self = StObject.set(x, "Nature", js.undefined)
     
     @scala.inline
-    def deleteMinFeesCurrency: Self = this.set("MinFeesCurrency", js.undefined)
+    def setNatureVarargs(value: TransactionNature*): Self = StObject.set(x, "Nature", js.Array(value :_*))
     
     @scala.inline
-    def setNatureVarargs(value: TransactionNature*): Self = this.set("Nature", js.Array(value :_*))
+    def setStatus(value: js.Array[TransactionStatus]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNature(value: js.Array[TransactionNature]): Self = this.set("Nature", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteNature: Self = this.set("Nature", js.undefined)
+    def setStatusVarargs(value: TransactionStatus*): Self = StObject.set(x, "Status", js.Array(value :_*))
     
     @scala.inline
-    def setStatusVarargs(value: TransactionStatus*): Self = this.set("Status", js.Array(value :_*))
+    def setType(value: js.Array[TransactionType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: js.Array[TransactionStatus]): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTypeVarargs(value: TransactionType*): Self = StObject.set(x, "Type", js.Array(value :_*))
     
     @scala.inline
-    def setTypeVarargs(value: TransactionType*): Self = this.set("Type", js.Array(value :_*))
+    def setWalletId(value: String): Self = StObject.set(x, "WalletId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: js.Array[TransactionType]): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setWalletId(value: String): Self = this.set("WalletId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWalletId: Self = this.set("WalletId", js.undefined)
+    def setWalletIdUndefined: Self = StObject.set(x, "WalletId", js.undefined)
   }
 }

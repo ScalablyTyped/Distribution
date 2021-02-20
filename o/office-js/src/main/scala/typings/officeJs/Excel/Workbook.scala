@@ -11,6 +11,7 @@ import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Prompt
 import typings.officeJs.officeJsStrings.Save
 import typings.officeJs.officeJsStrings.SkipSave
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

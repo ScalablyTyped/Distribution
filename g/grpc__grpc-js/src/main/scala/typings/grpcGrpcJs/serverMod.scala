@@ -7,16 +7,16 @@ import typings.grpcGrpcJs.makeClientMod.Serialize
 import typings.grpcGrpcJs.serverCallMod.HandleCall
 import typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/server", JSImport.Namespace)
-@js.native
-object serverMod extends js.Object {
+object serverMod {
   
+  @JSImport("@grpc/grpc-js/build/src/server", "Server")
   @js.native
-  class Server () extends js.Object {
+  class Server () extends StObject {
     def this(options: ChannelOptions) = this()
     
     var _setupHandlers: js.Any = js.native

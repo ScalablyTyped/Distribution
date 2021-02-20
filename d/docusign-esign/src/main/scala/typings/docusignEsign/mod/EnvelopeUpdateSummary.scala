@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeUpdateSummary extends js.Object {
+trait EnvelopeUpdateSummary extends StObject {
   
   /**
     * An object that describes the status of the bulk send envelopes.
@@ -75,101 +76,89 @@ object EnvelopeUpdateSummary {
   }
   
   @scala.inline
-  implicit class EnvelopeUpdateSummaryOps[Self <: EnvelopeUpdateSummary] (val x: Self) extends AnyVal {
+  implicit class EnvelopeUpdateSummaryMutableBuilder[Self <: EnvelopeUpdateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkEnvelopeStatus(value: BulkEnvelopeStatus): Self = StObject.set(x, "bulkEnvelopeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkEnvelopeStatusUndefined: Self = StObject.set(x, "bulkEnvelopeStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkEnvelopeStatus(value: BulkEnvelopeStatus): Self = this.set("bulkEnvelopeStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBulkEnvelopeStatus: Self = this.set("bulkEnvelopeStatus", js.undefined)
-    
-    @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
-    
-    @scala.inline
-    def setListCustomFieldUpdateResultsVarargs(
-      value: (/* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField)*
-    ): Self = this.set("listCustomFieldUpdateResults", js.Array(value :_*))
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
     def setListCustomFieldUpdateResults(
       value: js.Array[
           /* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField
         ]
-    ): Self = this.set("listCustomFieldUpdateResults", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listCustomFieldUpdateResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListCustomFieldUpdateResults: Self = this.set("listCustomFieldUpdateResults", js.undefined)
+    def setListCustomFieldUpdateResultsUndefined: Self = StObject.set(x, "listCustomFieldUpdateResults", js.undefined)
     
     @scala.inline
-    def setLockInformation(value: /* This section provides information about envelope locks. */ EnvelopeLocks): Self = this.set("lockInformation", value.asInstanceOf[js.Any])
+    def setListCustomFieldUpdateResultsVarargs(
+      value: (/* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField)*
+    ): Self = StObject.set(x, "listCustomFieldUpdateResults", js.Array(value :_*))
     
     @scala.inline
-    def deleteLockInformation: Self = this.set("lockInformation", js.undefined)
+    def setLockInformation(value: /* This section provides information about envelope locks. */ EnvelopeLocks): Self = StObject.set(x, "lockInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgeState(value: String): Self = this.set("purgeState", value.asInstanceOf[js.Any])
+    def setLockInformationUndefined: Self = StObject.set(x, "lockInformation", js.undefined)
     
     @scala.inline
-    def deletePurgeState: Self = this.set("purgeState", js.undefined)
+    def setPurgeState(value: String): Self = StObject.set(x, "purgeState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientUpdateResultsVarargs(
-      value: (/* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse)*
-    ): Self = this.set("recipientUpdateResults", js.Array(value :_*))
+    def setPurgeStateUndefined: Self = StObject.set(x, "purgeState", js.undefined)
     
     @scala.inline
     def setRecipientUpdateResults(
       value: js.Array[
           /* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse
         ]
-    ): Self = this.set("recipientUpdateResults", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "recipientUpdateResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientUpdateResults: Self = this.set("recipientUpdateResults", js.undefined)
+    def setRecipientUpdateResultsUndefined: Self = StObject.set(x, "recipientUpdateResults", js.undefined)
     
     @scala.inline
-    def setTabUpdateResults(value: EnvelopeRecipientTabs): Self = this.set("tabUpdateResults", value.asInstanceOf[js.Any])
+    def setRecipientUpdateResultsVarargs(
+      value: (/* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse)*
+    ): Self = StObject.set(x, "recipientUpdateResults", js.Array(value :_*))
     
     @scala.inline
-    def deleteTabUpdateResults: Self = this.set("tabUpdateResults", js.undefined)
+    def setTabUpdateResults(value: EnvelopeRecipientTabs): Self = StObject.set(x, "tabUpdateResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextCustomFieldUpdateResultsVarargs(
-      value: (/* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField)*
-    ): Self = this.set("textCustomFieldUpdateResults", js.Array(value :_*))
+    def setTabUpdateResultsUndefined: Self = StObject.set(x, "tabUpdateResults", js.undefined)
     
     @scala.inline
     def setTextCustomFieldUpdateResults(
       value: js.Array[
           /* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField
         ]
-    ): Self = this.set("textCustomFieldUpdateResults", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textCustomFieldUpdateResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextCustomFieldUpdateResults: Self = this.set("textCustomFieldUpdateResults", js.undefined)
+    def setTextCustomFieldUpdateResultsUndefined: Self = StObject.set(x, "textCustomFieldUpdateResults", js.undefined)
+    
+    @scala.inline
+    def setTextCustomFieldUpdateResultsVarargs(
+      value: (/* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField)*
+    ): Self = StObject.set(x, "textCustomFieldUpdateResults", js.Array(value :_*))
   }
 }

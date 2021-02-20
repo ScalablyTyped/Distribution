@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/TableSortLabel.TableSortLabelClassKey>> */
 @js.native
-trait PartialStyleRulesTableSor extends js.Object {
+trait PartialStyleRulesTableSor extends StObject {
   
   var active: js.UndefOr[CSSProperties] = js.native
   
@@ -28,48 +29,36 @@ object PartialStyleRulesTableSor {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesTableSorOps[Self <: PartialStyleRulesTableSor] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesTableSorMutableBuilder[Self <: PartialStyleRulesTableSor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: CSSProperties): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: CSSProperties): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: CSSProperties): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setIconDirectionAsc(value: CSSProperties): Self = StObject.set(x, "iconDirectionAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setIconDirectionAscUndefined: Self = StObject.set(x, "iconDirectionAsc", js.undefined)
     
     @scala.inline
-    def setIcon(value: CSSProperties): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconDirectionDesc(value: CSSProperties): Self = StObject.set(x, "iconDirectionDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconDirectionDescUndefined: Self = StObject.set(x, "iconDirectionDesc", js.undefined)
     
     @scala.inline
-    def setIconDirectionAsc(value: CSSProperties): Self = this.set("iconDirectionAsc", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIconDirectionAsc: Self = this.set("iconDirectionAsc", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconDirectionDesc(value: CSSProperties): Self = this.set("iconDirectionDesc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconDirectionDesc: Self = this.set("iconDirectionDesc", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

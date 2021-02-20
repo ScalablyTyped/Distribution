@@ -1,54 +1,110 @@
 package typings.xsockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object XSockets extends js.Object {
+  object XSockets {
     
-    @js.native
-    object Events extends js.Object {
+    object Events {
       
-      var close: String = js.native
-      
-      var onBlob: String = js.native
-      
-      var onError: String = js.native
-      
-      var open: String = js.native
-      
+      @JSGlobal("XSockets.Events")
       @js.native
-      object bindings extends js.Object {
+      val ^ : js.Any = js.native
+      
+      object bindings {
         
-        var completed: String = js.native
+        @JSGlobal("XSockets.Events.bindings")
+        @js.native
+        val ^ : js.Any = js.native
+        
+        @JSGlobal("XSockets.Events.bindings.completed")
+        @js.native
+        def completed: String = js.native
+        @scala.inline
+        def completed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completed")(x.asInstanceOf[js.Any])
       }
       
+      @JSGlobal("XSockets.Events.close")
       @js.native
-      object pubSub extends js.Object {
+      def close: String = js.native
+      @scala.inline
+      def close_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("XSockets.Events.onBlob")
+      @js.native
+      def onBlob: String = js.native
+      @scala.inline
+      def onBlob_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onBlob")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("XSockets.Events.onError")
+      @js.native
+      def onError: String = js.native
+      @scala.inline
+      def onError_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("XSockets.Events.open")
+      @js.native
+      def open: String = js.native
+      @scala.inline
+      def open_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("open")(x.asInstanceOf[js.Any])
+      
+      object pubSub {
         
-        var subscribe: String = js.native
+        @JSGlobal("XSockets.Events.pubSub")
+        @js.native
+        val ^ : js.Any = js.native
         
-        var unsubscribe: String = js.native
+        @JSGlobal("XSockets.Events.pubSub.subscribe")
+        @js.native
+        def subscribe: String = js.native
+        @scala.inline
+        def subscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribe")(x.asInstanceOf[js.Any])
+        
+        @JSGlobal("XSockets.Events.pubSub.unsubscribe")
+        @js.native
+        def unsubscribe: String = js.native
+        @scala.inline
+        def unsubscribe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unsubscribe")(x.asInstanceOf[js.Any])
       }
       
-      @js.native
-      object storage extends js.Object {
+      object storage {
         
-        var get: String = js.native
+        @JSGlobal("XSockets.Events.storage")
+        @js.native
+        val ^ : js.Any = js.native
         
-        var getAll: String = js.native
+        @JSGlobal("XSockets.Events.storage.get")
+        @js.native
+        def get: String = js.native
         
-        var remove: String = js.native
+        @JSGlobal("XSockets.Events.storage.getAll")
+        @js.native
+        def getAll: String = js.native
+        @scala.inline
+        def getAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAll")(x.asInstanceOf[js.Any])
         
-        var set: String = js.native
+        @scala.inline
+        def get_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+        
+        @JSGlobal("XSockets.Events.storage.remove")
+        @js.native
+        def remove: String = js.native
+        @scala.inline
+        def remove_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+        
+        @JSGlobal("XSockets.Events.storage.set")
+        @js.native
+        def set: String = js.native
+        @scala.inline
+        def set_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
       }
     }
     
+    @JSGlobal("XSockets.WebSocket")
     @js.native
     class WebSocket protected ()
       extends typings.xsockets.XSockets.WebSocket {

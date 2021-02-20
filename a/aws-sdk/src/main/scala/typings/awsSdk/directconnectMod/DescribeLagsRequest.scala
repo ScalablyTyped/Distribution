@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLagsRequest extends js.Object {
+trait DescribeLagsRequest extends StObject {
   
   /**
     * The ID of the LAG.
@@ -21,24 +22,12 @@ object DescribeLagsRequest {
   }
   
   @scala.inline
-  implicit class DescribeLagsRequestOps[Self <: DescribeLagsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeLagsRequestMutableBuilder[Self <: DescribeLagsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLagId: Self = this.set("lagId", js.undefined)
+    def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
   }
 }

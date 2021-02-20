@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddSlicerRequest extends js.Object {
+trait AddSlicerRequest extends StObject {
   
   /**
     * The slicer that should be added to the spreadsheet, including the position where it should be placed. The slicerId field is optional; if one is not set, an id will be randomly
@@ -22,24 +23,12 @@ object AddSlicerRequest {
   }
   
   @scala.inline
-  implicit class AddSlicerRequestOps[Self <: AddSlicerRequest] (val x: Self) extends AnyVal {
+  implicit class AddSlicerRequestMutableBuilder[Self <: AddSlicerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSlicer(value: Slicer): Self = StObject.set(x, "slicer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSlicer(value: Slicer): Self = this.set("slicer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlicer: Self = this.set("slicer", js.undefined)
+    def setSlicerUndefined: Self = StObject.set(x, "slicer", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.zdog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zdog", "Dragger")
 @js.native
-class Dragger () extends js.Object {
+class Dragger () extends StObject {
   def this(options: DraggerOptions) = this()
   
   /** @see {@link DraggerOptions#onDragEnd} */

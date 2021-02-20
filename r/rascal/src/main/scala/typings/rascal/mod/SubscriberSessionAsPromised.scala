@@ -2,6 +2,7 @@ package typings.rascal.mod
 
 import typings.amqplib.propertiesMod.Message
 import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
 import typings.rascal.rascalStrings.cancelled
 import typings.rascal.rascalStrings.error
 import typings.rascal.rascalStrings.invalid_content
@@ -9,6 +10,7 @@ import typings.rascal.rascalStrings.message
 import typings.rascal.rascalStrings.redeliveries_error
 import typings.rascal.rascalStrings.redeliveries_exceeded
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("rascal", "SubscriberSessionAsPromised")
 @js.native
 class SubscriberSessionAsPromised () extends EventEmitter {
+  def this(options: EventEmitterOptions) = this()
   
   def cancel(): js.Promise[Unit] = js.native
   

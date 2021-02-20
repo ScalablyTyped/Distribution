@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CLEAR extends js.Object {
+trait CLEAR extends StObject {
   
   var CLEAR: Double = js.native
   
@@ -22,27 +23,15 @@ object CLEAR {
   }
   
   @scala.inline
-  implicit class CLEAROps[Self <: CLEAR] (val x: Self) extends AnyVal {
+  implicit class CLEARMutableBuilder[Self <: CLEAR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLEAR(value: Double): Self = StObject.set(x, "CLEAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCLICK(value: Double): Self = StObject.set(x, "CLICK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCLEAR(value: Double): Self = this.set("CLEAR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCLICK(value: Double): Self = this.set("CLICK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKEYDOWN(value: Double): Self = this.set("KEYDOWN", value.asInstanceOf[js.Any])
+    def setKEYDOWN(value: Double): Self = StObject.set(x, "KEYDOWN", value.asInstanceOf[js.Any])
   }
 }

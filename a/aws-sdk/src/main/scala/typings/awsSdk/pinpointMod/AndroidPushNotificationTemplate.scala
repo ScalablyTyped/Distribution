@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidPushNotificationTemplate extends js.Object {
+trait AndroidPushNotificationTemplate extends StObject {
   
   /**
     * The action to occur if a recipient taps a push notification that's based on the message template. Valid values are: OPEN_APP - Your app opens or it becomes the foreground app if it was sent to the background. This is the default action. DEEP_LINK - Your app opens and displays a designated user interface in the app. This action uses the deep-linking features of the Android platform. URL - The default mobile browser on the recipient's device opens and loads the web page at a URL that you specify.
@@ -61,72 +62,60 @@ object AndroidPushNotificationTemplate {
   }
   
   @scala.inline
-  implicit class AndroidPushNotificationTemplateOps[Self <: AndroidPushNotificationTemplate] (val x: Self) extends AnyVal {
+  implicit class AndroidPushNotificationTemplateMutableBuilder[Self <: AndroidPushNotificationTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setImageIconUrl(value: string): Self = StObject.set(x, "ImageIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setImageIconUrlUndefined: Self = StObject.set(x, "ImageIconUrl", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setImageUrl(value: string): Self = StObject.set(x, "ImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageIconUrl(value: string): Self = this.set("ImageIconUrl", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageIconUrl: Self = this.set("ImageIconUrl", js.undefined)
+    def setRawContent(value: string): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: string): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    def setSmallImageIconUrl(value: string): Self = StObject.set(x, "SmallImageIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    def setSmallImageIconUrlUndefined: Self = StObject.set(x, "SmallImageIconUrl", js.undefined)
     
     @scala.inline
-    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    def setSound(value: string): Self = StObject.set(x, "Sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallImageIconUrl(value: string): Self = this.set("SmallImageIconUrl", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "Sound", js.undefined)
     
     @scala.inline
-    def deleteSmallImageIconUrl: Self = this.set("SmallImageIconUrl", js.undefined)
+    def setTitle(value: string): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: string): Self = this.set("Sound", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     
     @scala.inline
-    def deleteSound: Self = this.set("Sound", js.undefined)
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

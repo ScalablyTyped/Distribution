@@ -1,13 +1,14 @@
 package typings.reactInstantsearchDom.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DOM
 @js.native
-trait CommonWidgetProps extends js.Object {
+trait CommonWidgetProps extends StObject {
   
   /**
     * All static text rendered by widgets, such as “Load more”, “Show more” are translatable using the translations prop on relevant widgets.
@@ -26,24 +27,12 @@ object CommonWidgetProps {
   }
   
   @scala.inline
-  implicit class CommonWidgetPropsOps[Self <: CommonWidgetProps] (val x: Self) extends AnyVal {
+  implicit class CommonWidgetPropsMutableBuilder[Self <: CommonWidgetProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])]): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }
 }

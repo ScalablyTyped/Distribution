@@ -1,6 +1,7 @@
 package typings.blessed.mod.Widgets
 
 import typings.blessed.mod.Widgets.Types.ListbarCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,39 +34,27 @@ object ListbarOptions {
   }
   
   @scala.inline
-  implicit class ListbarOptionsOps[Self <: ListbarOptions] (val x: Self) extends AnyVal {
+  implicit class ListbarOptionsMutableBuilder[Self <: ListbarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCommandKeys(value: Boolean): Self = StObject.set(x, "autoCommandKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommands(value: js.Array[ListbarCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandsVarargs(value: ListbarCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def setAutoCommandKeys(value: Boolean): Self = this.set("autoCommandKeys", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[ListbarCommand]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandsVarargs(value: ListbarCommand*): Self = this.set("commands", js.Array(value :_*))
+    def setItemsVarargs(value: ListbarCommand*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setCommands(value: js.Array[ListbarCommand]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setStyle(value: ListElementStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: ListbarCommand*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[ListbarCommand]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: ListElementStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

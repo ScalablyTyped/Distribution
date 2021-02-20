@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDiscovery.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ref extends js.Object {
+trait Ref extends StObject {
   
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.native
@@ -21,30 +22,18 @@ object Ref {
   }
   
   @scala.inline
-  implicit class RefOps[Self <: Ref] (val x: Self) extends AnyVal {
+  implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType_value(value: String): Self = StObject.set(x, "type_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$ref: Self = this.set("$ref", js.undefined)
-    
-    @scala.inline
-    def setType_value(value: String): Self = this.set("type_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType_value: Self = this.set("type_value", js.undefined)
+    def setType_valueUndefined: Self = StObject.set(x, "type_value", js.undefined)
   }
 }

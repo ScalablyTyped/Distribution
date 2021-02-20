@@ -1,15 +1,13 @@
 package typings.jupyterlabCoreutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/coreutils/lib/text", JSImport.Namespace)
-@js.native
-object textMod extends js.Object {
+object textMod {
   
-  @js.native
-  object Text extends js.Object {
+  object Text {
     
     /**
       * Given a 'snake-case', 'snake_case', 'snake:case', or
@@ -22,7 +20,11 @@ object textMod extends js.Object {
       *
       * @returns the camel case version of the input string.
       */
+    @JSImport("@jupyterlab/coreutils/lib/text", "Text.camelCase")
+    @js.native
     def camelCase(str: String): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/text", "Text.camelCase")
+    @js.native
     def camelCase(str: String, upper: Boolean): String = js.native
     
     /**
@@ -34,6 +36,8 @@ object textMod extends js.Object {
       *
       * @returns The js-native index
       */
+    @JSImport("@jupyterlab/coreutils/lib/text", "Text.charIndexToJsIndex")
+    @js.native
     def charIndexToJsIndex(charIdx: Double, text: String): Double = js.native
     
     /**
@@ -45,6 +49,8 @@ object textMod extends js.Object {
       *
       * @returns The unicode character offset
       */
+    @JSImport("@jupyterlab/coreutils/lib/text", "Text.jsIndexToCharIndex")
+    @js.native
     def jsIndexToCharIndex(jsIdx: Double, text: String): Double = js.native
     
     /**
@@ -54,6 +60,8 @@ object textMod extends js.Object {
       *
       * @returns the same string, but with each word capitalized.
       */
+    @JSImport("@jupyterlab/coreutils/lib/text", "Text.titleCase")
+    @js.native
     def titleCase(str: String): String = js.native
   }
 }

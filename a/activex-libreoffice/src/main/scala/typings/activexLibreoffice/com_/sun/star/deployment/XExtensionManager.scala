@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -208,66 +209,54 @@ object XExtensionManager {
   }
   
   @scala.inline
-  implicit class XExtensionManagerOps[Self <: XExtensionManager] (val x: Self) extends AnyVal {
+  implicit class XExtensionManagerMutableBuilder[Self <: XExtensionManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddExtension(value: (String, SeqEquiv[NamedValue], String, XAbortChannel, XCommandEnvironment) => XPackage): Self = StObject.set(x, "addExtension", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckPrerequisitesAndEnable(value: (XPackage, XAbortChannel, XCommandEnvironment) => Double): Self = StObject.set(x, "checkPrerequisitesAndEnable", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateAbortChannel(value: () => XAbortChannel): Self = StObject.set(x, "createAbortChannel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = this.set("SupportedPackageTypes", value.asInstanceOf[js.Any])
+    def setDisableExtension(value: (XPackage, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "disableExtension", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddExtension(value: (String, SeqEquiv[NamedValue], String, XAbortChannel, XCommandEnvironment) => XPackage): Self = this.set("addExtension", js.Any.fromFunction5(value))
+    def setEnableExtension(value: (XPackage, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "enableExtension", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCheckPrerequisitesAndEnable(value: (XPackage, XAbortChannel, XCommandEnvironment) => Double): Self = this.set("checkPrerequisitesAndEnable", js.Any.fromFunction3(value))
+    def setGetAllExtensions(value: (XAbortChannel, XCommandEnvironment) => SafeArray[SafeArray[XPackage]]): Self = StObject.set(x, "getAllExtensions", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateAbortChannel(value: () => XAbortChannel): Self = this.set("createAbortChannel", js.Any.fromFunction0(value))
+    def setGetDeployedExtension(value: (String, String, String, XCommandEnvironment) => XPackage): Self = StObject.set(x, "getDeployedExtension", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDisableExtension(value: (XPackage, XAbortChannel, XCommandEnvironment) => Unit): Self = this.set("disableExtension", js.Any.fromFunction3(value))
+    def setGetDeployedExtensions(value: (String, XAbortChannel, XCommandEnvironment) => SafeArray[XPackage]): Self = StObject.set(x, "getDeployedExtensions", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEnableExtension(value: (XPackage, XAbortChannel, XCommandEnvironment) => Unit): Self = this.set("enableExtension", js.Any.fromFunction3(value))
+    def setGetExtensionsWithSameIdentifier(value: (String, String, XCommandEnvironment) => SafeArray[XPackage]): Self = StObject.set(x, "getExtensionsWithSameIdentifier", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetAllExtensions(value: (XAbortChannel, XCommandEnvironment) => SafeArray[SafeArray[XPackage]]): Self = this.set("getAllExtensions", js.Any.fromFunction2(value))
+    def setGetExtensionsWithUnacceptedLicenses(value: (String, XCommandEnvironment) => SafeArray[XPackage]): Self = StObject.set(x, "getExtensionsWithUnacceptedLicenses", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDeployedExtension(value: (String, String, String, XCommandEnvironment) => XPackage): Self = this.set("getDeployedExtension", js.Any.fromFunction4(value))
+    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "getSupportedPackageTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDeployedExtensions(value: (String, XAbortChannel, XCommandEnvironment) => SafeArray[XPackage]): Self = this.set("getDeployedExtensions", js.Any.fromFunction3(value))
+    def setIsReadOnlyRepository(value: String => Boolean): Self = StObject.set(x, "isReadOnlyRepository", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetExtensionsWithSameIdentifier(value: (String, String, XCommandEnvironment) => SafeArray[XPackage]): Self = this.set("getExtensionsWithSameIdentifier", js.Any.fromFunction3(value))
+    def setReinstallDeployedExtensions(value: (Boolean, String, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "reinstallDeployedExtensions", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetExtensionsWithUnacceptedLicenses(value: (String, XCommandEnvironment) => SafeArray[XPackage]): Self = this.set("getExtensionsWithUnacceptedLicenses", js.Any.fromFunction2(value))
+    def setRemoveExtension(value: (String, String, String, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "removeExtension", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = this.set("getSupportedPackageTypes", js.Any.fromFunction0(value))
+    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "SupportedPackageTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnlyRepository(value: String => Boolean): Self = this.set("isReadOnlyRepository", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReinstallDeployedExtensions(value: (Boolean, String, XAbortChannel, XCommandEnvironment) => Unit): Self = this.set("reinstallDeployedExtensions", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setRemoveExtension(value: (String, String, String, XAbortChannel, XCommandEnvironment) => Unit): Self = this.set("removeExtension", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setSynchronize(value: (XAbortChannel, XCommandEnvironment) => Boolean): Self = this.set("synchronize", js.Any.fromFunction2(value))
+    def setSynchronize(value: (XAbortChannel, XCommandEnvironment) => Boolean): Self = StObject.set(x, "synchronize", js.Any.fromFunction2(value))
   }
 }

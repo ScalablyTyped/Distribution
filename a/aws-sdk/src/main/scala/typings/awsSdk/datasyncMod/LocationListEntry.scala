@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationListEntry extends js.Object {
+trait LocationListEntry extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the location. For Network File System (NFS) or Amazon EFS, the location is the export path. For Amazon S3, the location is the prefix path that you want to mount and use as the root of the location.
@@ -26,30 +27,18 @@ object LocationListEntry {
   }
   
   @scala.inline
-  implicit class LocationListEntryOps[Self <: LocationListEntry] (val x: Self) extends AnyVal {
+  implicit class LocationListEntryMutableBuilder[Self <: LocationListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
-    
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
   }
 }

@@ -8,12 +8,13 @@ import typings.ioredis.ioredisStrings.master
 import typings.ioredis.ioredisStrings.slave
 import typings.node.tlsMod.ConnectionOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedisOptions extends js.Object {
+trait RedisOptions extends StObject {
   
   /**
     * If true, client will resend unfulfilled commands(e.g. block commands) in the previous connection when reconnected.
@@ -196,240 +197,228 @@ object RedisOptions {
   }
   
   @scala.inline
-  implicit class RedisOptionsOps[Self <: RedisOptions] (val x: Self) extends AnyVal {
+  implicit class RedisOptionsMutableBuilder[Self <: RedisOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoResendUnfulfilledCommands(value: Boolean): Self = StObject.set(x, "autoResendUnfulfilledCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoResendUnfulfilledCommandsUndefined: Self = StObject.set(x, "autoResendUnfulfilledCommands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoResubscribe(value: Boolean): Self = StObject.set(x, "autoResubscribe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResendUnfulfilledCommands(value: Boolean): Self = this.set("autoResendUnfulfilledCommands", value.asInstanceOf[js.Any])
+    def setAutoResubscribeUndefined: Self = StObject.set(x, "autoResubscribe", js.undefined)
     
     @scala.inline
-    def deleteAutoResendUnfulfilledCommands: Self = this.set("autoResendUnfulfilledCommands", js.undefined)
+    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResubscribe(value: Boolean): Self = this.set("autoResubscribe", value.asInstanceOf[js.Any])
+    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
     @scala.inline
-    def deleteAutoResubscribe: Self = this.set("autoResubscribe", js.undefined)
+    def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    def setDb(value: Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionName(value: String): Self = this.set("connectionName", value.asInstanceOf[js.Any])
+    def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
     
     @scala.inline
-    def deleteConnectionName: Self = this.set("connectionName", js.undefined)
+    def setDropBufferSupport(value: Boolean): Self = StObject.set(x, "dropBufferSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDb(value: Double): Self = this.set("db", value.asInstanceOf[js.Any])
+    def setDropBufferSupportUndefined: Self = StObject.set(x, "dropBufferSupport", js.undefined)
     
     @scala.inline
-    def deleteDb: Self = this.set("db", js.undefined)
+    def setEnableAutoPipelining(value: Boolean): Self = StObject.set(x, "enableAutoPipelining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropBufferSupport(value: Boolean): Self = this.set("dropBufferSupport", value.asInstanceOf[js.Any])
+    def setEnableAutoPipeliningUndefined: Self = StObject.set(x, "enableAutoPipelining", js.undefined)
     
     @scala.inline
-    def deleteDropBufferSupport: Self = this.set("dropBufferSupport", js.undefined)
+    def setEnableOfflineQueue(value: Boolean): Self = StObject.set(x, "enableOfflineQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoPipelining(value: Boolean): Self = this.set("enableAutoPipelining", value.asInstanceOf[js.Any])
+    def setEnableOfflineQueueUndefined: Self = StObject.set(x, "enableOfflineQueue", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoPipelining: Self = this.set("enableAutoPipelining", js.undefined)
+    def setEnableReadyCheck(value: Boolean): Self = StObject.set(x, "enableReadyCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableOfflineQueue(value: Boolean): Self = this.set("enableOfflineQueue", value.asInstanceOf[js.Any])
+    def setEnableReadyCheckUndefined: Self = StObject.set(x, "enableReadyCheck", js.undefined)
     
     @scala.inline
-    def deleteEnableOfflineQueue: Self = this.set("enableOfflineQueue", js.undefined)
+    def setEnableTLSForSentinelMode(value: Boolean): Self = StObject.set(x, "enableTLSForSentinelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableReadyCheck(value: Boolean): Self = this.set("enableReadyCheck", value.asInstanceOf[js.Any])
+    def setEnableTLSForSentinelModeUndefined: Self = StObject.set(x, "enableTLSForSentinelMode", js.undefined)
     
     @scala.inline
-    def deleteEnableReadyCheck: Self = this.set("enableReadyCheck", js.undefined)
+    def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTLSForSentinelMode(value: Boolean): Self = this.set("enableTLSForSentinelMode", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def deleteEnableTLSForSentinelMode: Self = this.set("enableTLSForSentinelMode", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: Double): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setKeepAlive(value: Double): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAlive(value: Double): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
     @scala.inline
-    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    def setLazyConnect(value: Boolean): Self = StObject.set(x, "lazyConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPrefix(value: String): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
+    def setLazyConnectUndefined: Self = StObject.set(x, "lazyConnect", js.undefined)
     
     @scala.inline
-    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
+    def setMaxRetriesPerRequest(value: Double): Self = StObject.set(x, "maxRetriesPerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLazyConnect(value: Boolean): Self = this.set("lazyConnect", value.asInstanceOf[js.Any])
+    def setMaxRetriesPerRequestNull: Self = StObject.set(x, "maxRetriesPerRequest", null)
     
     @scala.inline
-    def deleteLazyConnect: Self = this.set("lazyConnect", js.undefined)
+    def setMaxRetriesPerRequestUndefined: Self = StObject.set(x, "maxRetriesPerRequest", js.undefined)
     
     @scala.inline
-    def setMaxRetriesPerRequest(value: Double): Self = this.set("maxRetriesPerRequest", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRetriesPerRequest: Self = this.set("maxRetriesPerRequest", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMaxRetriesPerRequestNull: Self = this.set("maxRetriesPerRequest", null)
+    def setNatMap(value: NatMap): Self = StObject.set(x, "natMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNatMapUndefined: Self = StObject.set(x, "natMap", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatMap(value: NatMap): Self = this.set("natMap", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteNatMap: Self = this.set("natMap", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPreferredSlaves(value: PreferredSlaves): Self = StObject.set(x, "preferredSlaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPreferredSlavesFunction1(value: /* slaves */ js.Array[AddressFromResponse] => AddressFromResponse | Null): Self = StObject.set(x, "preferredSlaves", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPreferredSlavesUndefined: Self = StObject.set(x, "preferredSlaves", js.undefined)
     
     @scala.inline
-    def setPreferredSlavesVarargs(value: Ip*): Self = this.set("preferredSlaves", js.Array(value :_*))
+    def setPreferredSlavesVarargs(value: Ip*): Self = StObject.set(x, "preferredSlaves", js.Array(value :_*))
     
     @scala.inline
-    def setPreferredSlavesFunction1(value: /* slaves */ js.Array[AddressFromResponse] => AddressFromResponse | Null): Self = this.set("preferredSlaves", js.Any.fromFunction1(value))
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredSlaves(value: PreferredSlaves): Self = this.set("preferredSlaves", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deletePreferredSlaves: Self = this.set("preferredSlaves", js.undefined)
+    def setReconnectOnError(value: /* error */ Error => Boolean | `1` | `2`): Self = StObject.set(x, "reconnectOnError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReconnectOnErrorUndefined: Self = StObject.set(x, "reconnectOnError", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setRetryStrategy(value: /* times */ Double => Double | Unit | Null): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReconnectOnError(value: /* error */ Error => Boolean | `1` | `2`): Self = this.set("reconnectOnError", js.Any.fromFunction1(value))
+    def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     
     @scala.inline
-    def deleteReconnectOnError: Self = this.set("reconnectOnError", js.undefined)
+    def setRole(value: master | slave): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryStrategy(value: /* times */ Double => Double | Unit | Null): Self = this.set("retryStrategy", js.Any.fromFunction1(value))
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    def setSentinelPassword(value: String): Self = StObject.set(x, "sentinelPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: master | slave): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setSentinelPasswordUndefined: Self = StObject.set(x, "sentinelPassword", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setSentinelRetryStrategy(value: /* times */ Double => Double | Unit | Null): Self = StObject.set(x, "sentinelRetryStrategy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSentinelPassword(value: String): Self = this.set("sentinelPassword", value.asInstanceOf[js.Any])
+    def setSentinelRetryStrategyUndefined: Self = StObject.set(x, "sentinelRetryStrategy", js.undefined)
     
     @scala.inline
-    def deleteSentinelPassword: Self = this.set("sentinelPassword", js.undefined)
+    def setSentinelTLS(value: SecureContextOptions): Self = StObject.set(x, "sentinelTLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentinelRetryStrategy(value: /* times */ Double => Double | Unit | Null): Self = this.set("sentinelRetryStrategy", js.Any.fromFunction1(value))
+    def setSentinelTLSUndefined: Self = StObject.set(x, "sentinelTLS", js.undefined)
     
     @scala.inline
-    def deleteSentinelRetryStrategy: Self = this.set("sentinelRetryStrategy", js.undefined)
+    def setSentinelUsername(value: String): Self = StObject.set(x, "sentinelUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentinelTLS(value: SecureContextOptions): Self = this.set("sentinelTLS", value.asInstanceOf[js.Any])
+    def setSentinelUsernameUndefined: Self = StObject.set(x, "sentinelUsername", js.undefined)
     
     @scala.inline
-    def deleteSentinelTLS: Self = this.set("sentinelTLS", js.undefined)
+    def setSentinels(value: js.Array[Host]): Self = StObject.set(x, "sentinels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentinelUsername(value: String): Self = this.set("sentinelUsername", value.asInstanceOf[js.Any])
+    def setSentinelsUndefined: Self = StObject.set(x, "sentinels", js.undefined)
     
     @scala.inline
-    def deleteSentinelUsername: Self = this.set("sentinelUsername", js.undefined)
+    def setSentinelsVarargs(value: Host*): Self = StObject.set(x, "sentinels", js.Array(value :_*))
     
     @scala.inline
-    def setSentinelsVarargs(value: Host*): Self = this.set("sentinels", js.Array(value :_*))
+    def setShowFriendlyErrorStack(value: Boolean): Self = StObject.set(x, "showFriendlyErrorStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentinels(value: js.Array[Host]): Self = this.set("sentinels", value.asInstanceOf[js.Any])
+    def setShowFriendlyErrorStackUndefined: Self = StObject.set(x, "showFriendlyErrorStack", js.undefined)
     
     @scala.inline
-    def deleteSentinels: Self = this.set("sentinels", js.undefined)
+    def setTls(value: ConnectionOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFriendlyErrorStack(value: Boolean): Self = this.set("showFriendlyErrorStack", value.asInstanceOf[js.Any])
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     
     @scala.inline
-    def deleteShowFriendlyErrorStack: Self = this.set("showFriendlyErrorStack", js.undefined)
+    def setUpdateSentinels(value: Boolean): Self = StObject.set(x, "updateSentinels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTls(value: ConnectionOptions): Self = this.set("tls", value.asInstanceOf[js.Any])
+    def setUpdateSentinelsUndefined: Self = StObject.set(x, "updateSentinels", js.undefined)
     
     @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSentinels(value: Boolean): Self = this.set("updateSentinels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSentinels: Self = this.set("updateSentinels", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

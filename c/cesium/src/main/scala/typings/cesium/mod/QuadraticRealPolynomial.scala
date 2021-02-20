@@ -1,14 +1,17 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cesium", "QuadraticRealPolynomial")
-@js.native
-object QuadraticRealPolynomial extends js.Object {
+object QuadraticRealPolynomial {
   
+  @JSImport("cesium", "QuadraticRealPolynomial.computeDiscriminant")
+  @js.native
   def computeDiscriminant(a: Double, b: Double, c: Double): Double = js.native
   
+  @JSImport("cesium", "QuadraticRealPolynomial.computeRealRoots")
+  @js.native
   def computeRealRoots(a: Double, b: Double, c: Double): js.Array[Double] = js.native
 }

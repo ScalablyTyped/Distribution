@@ -1,5 +1,6 @@
 package typings.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureSet extends HasZM {
   
-   // optional
+  // optional
   var displayFieldName: js.UndefOr[String] = js.native
   
   var features: js.Array[Feature] = js.native
   
-   // for feature layers only.
+  // for feature layers only.
   var fields: js.UndefOr[js.Array[Field]] = js.native
   
-   // optional
+  // optional
   var geometryType: js.UndefOr[esriGeometryType] = js.native
   
-   // optional
+  // optional
   var globalIdFieldName: js.UndefOr[String] = js.native
   
   var objectIdFieldName: js.UndefOr[String] = js.native
   
-   // for feature layers only
+  // for feature layers only
   var spatialReference: js.UndefOr[SpatialReference] = js.native
 }
 object FeatureSet {
@@ -35,63 +36,51 @@ object FeatureSet {
   }
   
   @scala.inline
-  implicit class FeatureSetOps[Self <: FeatureSet] (val x: Self) extends AnyVal {
+  implicit class FeatureSetMutableBuilder[Self <: FeatureSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFieldNameUndefined: Self = StObject.set(x, "displayFieldName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = this.set("features", js.Array(value :_*))
+    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeatures(value: js.Array[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFieldName(value: String): Self = this.set("displayFieldName", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteDisplayFieldName: Self = this.set("displayFieldName", js.undefined)
+    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: Field*): Self = this.set("fields", js.Array(value :_*))
+    def setGeometryType(value: esriGeometryType): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[Field]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setGlobalIdFieldName(value: String): Self = StObject.set(x, "globalIdFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryType(value: esriGeometryType): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    def setGlobalIdFieldNameUndefined: Self = StObject.set(x, "globalIdFieldName", js.undefined)
     
     @scala.inline
-    def deleteGeometryType: Self = this.set("geometryType", js.undefined)
+    def setObjectIdFieldName(value: String): Self = StObject.set(x, "objectIdFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalIdFieldName(value: String): Self = this.set("globalIdFieldName", value.asInstanceOf[js.Any])
+    def setObjectIdFieldNameUndefined: Self = StObject.set(x, "objectIdFieldName", js.undefined)
     
     @scala.inline
-    def deleteGlobalIdFieldName: Self = this.set("globalIdFieldName", js.undefined)
+    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIdFieldName(value: String): Self = this.set("objectIdFieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectIdFieldName: Self = this.set("objectIdFieldName", js.undefined)
-    
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

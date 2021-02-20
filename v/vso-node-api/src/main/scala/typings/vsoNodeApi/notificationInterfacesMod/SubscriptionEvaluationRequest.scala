@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionEvaluationRequest extends js.Object {
+trait SubscriptionEvaluationRequest extends StObject {
   
   /**
     * The min created date for the events used for matching in UTC. Use all events created since this date
@@ -27,24 +28,12 @@ object SubscriptionEvaluationRequest {
   }
   
   @scala.inline
-  implicit class SubscriptionEvaluationRequestOps[Self <: SubscriptionEvaluationRequest] (val x: Self) extends AnyVal {
+  implicit class SubscriptionEvaluationRequestMutableBuilder[Self <: SubscriptionEvaluationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinEventsCreatedDate(value: Date): Self = StObject.set(x, "minEventsCreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinEventsCreatedDate(value: Date): Self = this.set("minEventsCreatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionCreateParameters(value: NotificationSubscriptionCreateParameters): Self = this.set("subscriptionCreateParameters", value.asInstanceOf[js.Any])
+    def setSubscriptionCreateParameters(value: NotificationSubscriptionCreateParameters): Self = StObject.set(x, "subscriptionCreateParameters", value.asInstanceOf[js.Any])
   }
 }

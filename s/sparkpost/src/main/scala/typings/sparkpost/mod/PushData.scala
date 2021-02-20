@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushData extends js.Object {
+trait PushData extends StObject {
   
   /** payload for APNs messages */
   var apns: js.UndefOr[js.Any] = js.native
@@ -22,30 +23,18 @@ object PushData {
   }
   
   @scala.inline
-  implicit class PushDataOps[Self <: PushData] (val x: Self) extends AnyVal {
+  implicit class PushDataMutableBuilder[Self <: PushData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApns(value: js.Any): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcm(value: js.Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApns(value: js.Any): Self = this.set("apns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApns: Self = this.set("apns", js.undefined)
-    
-    @scala.inline
-    def setGcm(value: js.Any): Self = this.set("gcm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcm: Self = this.set("gcm", js.undefined)
+    def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
   }
 }

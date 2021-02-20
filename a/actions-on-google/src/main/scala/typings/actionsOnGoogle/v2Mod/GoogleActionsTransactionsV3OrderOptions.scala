@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3OrderOptions extends js.Object {
+trait GoogleActionsTransactionsV3OrderOptions extends StObject {
   
   /**
     * If true, delivery address is required for the associated order.
@@ -28,30 +29,18 @@ object GoogleActionsTransactionsV3OrderOptions {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3OrderOptionsOps[Self <: GoogleActionsTransactionsV3OrderOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3OrderOptionsMutableBuilder[Self <: GoogleActionsTransactionsV3OrderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestDeliveryAddress(value: Boolean): Self = StObject.set(x, "requestDeliveryAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestDeliveryAddressUndefined: Self = StObject.set(x, "requestDeliveryAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserInfoOptions(value: GoogleActionsTransactionsV3UserInfoOptions): Self = StObject.set(x, "userInfoOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDeliveryAddress(value: Boolean): Self = this.set("requestDeliveryAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestDeliveryAddress: Self = this.set("requestDeliveryAddress", js.undefined)
-    
-    @scala.inline
-    def setUserInfoOptions(value: GoogleActionsTransactionsV3UserInfoOptions): Self = this.set("userInfoOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfoOptions: Self = this.set("userInfoOptions", js.undefined)
+    def setUserInfoOptionsUndefined: Self = StObject.set(x, "userInfoOptions", js.undefined)
   }
 }

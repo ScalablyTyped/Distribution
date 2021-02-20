@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedCreateAssociation extends js.Object {
+trait FailedCreateAssociation extends StObject {
   
   /**
     * The association.
@@ -31,36 +32,24 @@ object FailedCreateAssociation {
   }
   
   @scala.inline
-  implicit class FailedCreateAssociationOps[Self <: FailedCreateAssociation] (val x: Self) extends AnyVal {
+  implicit class FailedCreateAssociationMutableBuilder[Self <: FailedCreateAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntry(value: CreateAssociationBatchRequestEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryUndefined: Self = StObject.set(x, "Entry", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFault(value: Fault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: CreateAssociationBatchRequestEntry): Self = this.set("Entry", value.asInstanceOf[js.Any])
+    def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
     
     @scala.inline
-    def deleteEntry: Self = this.set("Entry", js.undefined)
+    def setMessage(value: BatchErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFault(value: Fault): Self = this.set("Fault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFault: Self = this.set("Fault", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: BatchErrorMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

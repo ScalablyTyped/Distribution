@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrdersCustomBatchRequestEntry extends js.Object {
+trait SchemaOrdersCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
@@ -104,120 +105,108 @@ object SchemaOrdersCustomBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class SchemaOrdersCustomBatchRequestEntryOps[Self <: SchemaOrdersCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaOrdersCustomBatchRequestEntryMutableBuilder[Self <: SchemaOrdersCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: SchemaOrdersCustomBatchRequestEntryCancel): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setCancelLineItem(value: SchemaOrdersCustomBatchRequestEntryCancelLineItem): Self = StObject.set(x, "cancelLineItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setCancelLineItemUndefined: Self = StObject.set(x, "cancelLineItem", js.undefined)
     
     @scala.inline
-    def setCancel(value: SchemaOrdersCustomBatchRequestEntryCancel): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setInStoreRefundLineItem(value: SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem): Self = StObject.set(x, "inStoreRefundLineItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelLineItem(value: SchemaOrdersCustomBatchRequestEntryCancelLineItem): Self = this.set("cancelLineItem", value.asInstanceOf[js.Any])
+    def setInStoreRefundLineItemUndefined: Self = StObject.set(x, "inStoreRefundLineItem", js.undefined)
     
     @scala.inline
-    def deleteCancelLineItem: Self = this.set("cancelLineItem", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInStoreRefundLineItem(value: SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem): Self = this.set("inStoreRefundLineItem", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteInStoreRefundLineItem: Self = this.set("inStoreRefundLineItem", js.undefined)
+    def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantOrderId(value: String): Self = this.set("merchantOrderId", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMerchantOrderId: Self = this.set("merchantOrderId", js.undefined)
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setRefund(value: SchemaOrdersCustomBatchRequestEntryRefund): Self = StObject.set(x, "refund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    def setRefundUndefined: Self = StObject.set(x, "refund", js.undefined)
     
     @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setRejectReturnLineItem(value: SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem): Self = StObject.set(x, "rejectReturnLineItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund(value: SchemaOrdersCustomBatchRequestEntryRefund): Self = this.set("refund", value.asInstanceOf[js.Any])
+    def setRejectReturnLineItemUndefined: Self = StObject.set(x, "rejectReturnLineItem", js.undefined)
     
     @scala.inline
-    def deleteRefund: Self = this.set("refund", js.undefined)
+    def setReturnLineItem(value: SchemaOrdersCustomBatchRequestEntryReturnLineItem): Self = StObject.set(x, "returnLineItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectReturnLineItem(value: SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem): Self = this.set("rejectReturnLineItem", value.asInstanceOf[js.Any])
+    def setReturnLineItemUndefined: Self = StObject.set(x, "returnLineItem", js.undefined)
     
     @scala.inline
-    def deleteRejectReturnLineItem: Self = this.set("rejectReturnLineItem", js.undefined)
+    def setReturnRefundLineItem(value: SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem): Self = StObject.set(x, "returnRefundLineItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnLineItem(value: SchemaOrdersCustomBatchRequestEntryReturnLineItem): Self = this.set("returnLineItem", value.asInstanceOf[js.Any])
+    def setReturnRefundLineItemUndefined: Self = StObject.set(x, "returnRefundLineItem", js.undefined)
     
     @scala.inline
-    def deleteReturnLineItem: Self = this.set("returnLineItem", js.undefined)
+    def setSetLineItemMetadata(value: SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata): Self = StObject.set(x, "setLineItemMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnRefundLineItem(value: SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem): Self = this.set("returnRefundLineItem", value.asInstanceOf[js.Any])
+    def setSetLineItemMetadataUndefined: Self = StObject.set(x, "setLineItemMetadata", js.undefined)
     
     @scala.inline
-    def deleteReturnRefundLineItem: Self = this.set("returnRefundLineItem", js.undefined)
+    def setShipLineItems(value: SchemaOrdersCustomBatchRequestEntryShipLineItems): Self = StObject.set(x, "shipLineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetLineItemMetadata(value: SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata): Self = this.set("setLineItemMetadata", value.asInstanceOf[js.Any])
+    def setShipLineItemsUndefined: Self = StObject.set(x, "shipLineItems", js.undefined)
     
     @scala.inline
-    def deleteSetLineItemMetadata: Self = this.set("setLineItemMetadata", js.undefined)
+    def setUpdateLineItemShippingDetails(value: SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails): Self = StObject.set(x, "updateLineItemShippingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipLineItems(value: SchemaOrdersCustomBatchRequestEntryShipLineItems): Self = this.set("shipLineItems", value.asInstanceOf[js.Any])
+    def setUpdateLineItemShippingDetailsUndefined: Self = StObject.set(x, "updateLineItemShippingDetails", js.undefined)
     
     @scala.inline
-    def deleteShipLineItems: Self = this.set("shipLineItems", js.undefined)
+    def setUpdateShipment(value: SchemaOrdersCustomBatchRequestEntryUpdateShipment): Self = StObject.set(x, "updateShipment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLineItemShippingDetails(value: SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails): Self = this.set("updateLineItemShippingDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateLineItemShippingDetails: Self = this.set("updateLineItemShippingDetails", js.undefined)
-    
-    @scala.inline
-    def setUpdateShipment(value: SchemaOrdersCustomBatchRequestEntryUpdateShipment): Self = this.set("updateShipment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateShipment: Self = this.set("updateShipment", js.undefined)
+    def setUpdateShipmentUndefined: Self = StObject.set(x, "updateShipment", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.formInputInterfacesMod.InputValuesQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object FieldValuesQuery {
   }
   
   @scala.inline
-  implicit class FieldValuesQueryOps[Self <: FieldValuesQuery] (val x: Self) extends AnyVal {
+  implicit class FieldValuesQueryMutableBuilder[Self <: FieldValuesQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputValues(value: js.Array[FieldInputValues]): Self = StObject.set(x, "inputValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputValuesVarargs(value: FieldInputValues*): Self = StObject.set(x, "inputValues", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputValuesVarargs(value: FieldInputValues*): Self = this.set("inputValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputValues(value: js.Array[FieldInputValues]): Self = this.set("inputValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

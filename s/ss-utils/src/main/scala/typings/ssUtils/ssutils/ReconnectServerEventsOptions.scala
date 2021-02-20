@@ -1,11 +1,12 @@
 package typings.ssUtils.ssutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReconnectServerEventsOptions extends js.Object {
+trait ReconnectServerEventsOptions extends StObject {
   
   var errorArgs: js.UndefOr[js.Array[_]] = js.native
   
@@ -24,45 +25,33 @@ object ReconnectServerEventsOptions {
   }
   
   @scala.inline
-  implicit class ReconnectServerEventsOptionsOps[Self <: ReconnectServerEventsOptions] (val x: Self) extends AnyVal {
+  implicit class ReconnectServerEventsOptionsMutableBuilder[Self <: ReconnectServerEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorArgs(value: js.Array[_]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorArgsUndefined: Self = StObject.set(x, "errorArgs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorArgsVarargs(value: js.Any*): Self = StObject.set(x, "errorArgs", js.Array(value :_*))
     
     @scala.inline
-    def setErrorArgsVarargs(value: js.Any*): Self = this.set("errorArgs", js.Array(value :_*))
+    def setOnerror(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setErrorArgs(value: js.Array[_]): Self = this.set("errorArgs", value.asInstanceOf[js.Any])
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def deleteErrorArgs: Self = this.set("errorArgs", js.undefined)
+    def setOnmessage(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnerror(value: /* repeated */ js.Any => Unit): Self = this.set("onerror", js.Any.fromFunction1(value))
+    def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmessage(value: /* repeated */ js.Any => Unit): Self = this.set("onmessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnmessage: Self = this.set("onmessage", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

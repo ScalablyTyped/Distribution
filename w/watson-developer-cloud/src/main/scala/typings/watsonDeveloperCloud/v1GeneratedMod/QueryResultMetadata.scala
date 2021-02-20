@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Metadata of a query result. */
 @js.native
-trait QueryResultMetadata extends js.Object {
+trait QueryResultMetadata extends StObject {
   
   /** The confidence score for the given result. Calculated based on how relevant the result is estimated to be. confidence can range from `0.0` to `1.0`. The higher the number, the more relevant the document. The `confidence` value for a result was calculated using the model specified in the `document_retrieval_strategy` field of the result set. */
   var confidence: js.UndefOr[Double] = js.native
@@ -23,27 +24,15 @@ object QueryResultMetadata {
   }
   
   @scala.inline
-  implicit class QueryResultMetadataOps[Self <: QueryResultMetadata] (val x: Self) extends AnyVal {
+  implicit class QueryResultMetadataMutableBuilder[Self <: QueryResultMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

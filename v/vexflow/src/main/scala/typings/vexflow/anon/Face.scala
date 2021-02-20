@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Face extends js.Object {
+trait Face extends StObject {
   
   var face: String = js.native
   
@@ -22,27 +23,15 @@ object Face {
   }
   
   @scala.inline
-  implicit class FaceOps[Self <: Face] (val x: Self) extends AnyVal {
+  implicit class FaceMutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoint(value: Double): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFace(value: String): Self = this.set("face", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: Double): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

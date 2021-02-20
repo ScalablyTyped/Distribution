@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncreaseReplicaCountMessage extends js.Object {
+trait IncreaseReplicaCountMessage extends StObject {
   
   /**
     * If True, the number of replica nodes is increased immediately. ApplyImmediately=False is not currently supported.
@@ -36,39 +37,27 @@ object IncreaseReplicaCountMessage {
   }
   
   @scala.inline
-  implicit class IncreaseReplicaCountMessageOps[Self <: IncreaseReplicaCountMessage] (val x: Self) extends AnyVal {
+  implicit class IncreaseReplicaCountMessageMutableBuilder[Self <: IncreaseReplicaCountMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewReplicaCount(value: IntegerOptional): Self = StObject.set(x, "NewReplicaCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewReplicaCountUndefined: Self = StObject.set(x, "NewReplicaCount", js.undefined)
     
     @scala.inline
-    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    def setReplicaConfiguration(value: ReplicaConfigurationList): Self = StObject.set(x, "ReplicaConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    def setReplicaConfigurationUndefined: Self = StObject.set(x, "ReplicaConfiguration", js.undefined)
     
     @scala.inline
-    def setNewReplicaCount(value: IntegerOptional): Self = this.set("NewReplicaCount", value.asInstanceOf[js.Any])
+    def setReplicaConfigurationVarargs(value: ConfigureShard*): Self = StObject.set(x, "ReplicaConfiguration", js.Array(value :_*))
     
     @scala.inline
-    def deleteNewReplicaCount: Self = this.set("NewReplicaCount", js.undefined)
-    
-    @scala.inline
-    def setReplicaConfigurationVarargs(value: ConfigureShard*): Self = this.set("ReplicaConfiguration", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicaConfiguration(value: ReplicaConfigurationList): Self = this.set("ReplicaConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaConfiguration: Self = this.set("ReplicaConfiguration", js.undefined)
+    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

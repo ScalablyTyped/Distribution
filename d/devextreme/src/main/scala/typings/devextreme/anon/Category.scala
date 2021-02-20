@@ -49,12 +49,13 @@ import typings.devextreme.devextremeStrings.text
 import typings.devextreme.devextremeStrings.texts
 import typings.devextreme.devextremeStrings.triangle
 import typings.devextreme.devextremeStrings.verticalContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Category extends js.Object {
+trait Category extends StObject {
   
   var category: js.UndefOr[general | flowchart | orgChart | containers | custom | String] = js.native
   
@@ -81,63 +82,51 @@ object Category {
   }
   
   @scala.inline
-  implicit class CategoryOps[Self <: Category] (val x: Self) extends AnyVal {
+  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: general | flowchart | orgChart | containers | custom | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayMode(value: icons | texts): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: general | flowchart | orgChart | containers | custom | String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: icons | texts): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setShapeIconsPerRow(value: Double): Self = StObject.set(x, "shapeIconsPerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setShapeIconsPerRow(value: Double): Self = this.set("shapeIconsPerRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapeIconsPerRow: Self = this.set("shapeIconsPerRow", js.undefined)
-    
-    @scala.inline
-    def setShapesVarargs(
-      value: (text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String)*
-    ): Self = this.set("shapes", js.Array(value :_*))
+    def setShapeIconsPerRowUndefined: Self = StObject.set(x, "shapeIconsPerRow", js.undefined)
     
     @scala.inline
     def setShapes(
       value: js.Array[
           text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
         ]
-    ): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShapes: Self = this.set("shapes", js.undefined)
+    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setShapesVarargs(
+      value: (text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String)*
+    ): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

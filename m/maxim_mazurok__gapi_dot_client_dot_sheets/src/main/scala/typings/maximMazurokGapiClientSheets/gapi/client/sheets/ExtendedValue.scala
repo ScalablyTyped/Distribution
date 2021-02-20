@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtendedValue extends js.Object {
+trait ExtendedValue extends StObject {
   
   /** Represents a boolean value. */
   var boolValue: js.UndefOr[Boolean] = js.native
@@ -31,48 +32,36 @@ object ExtendedValue {
   }
   
   @scala.inline
-  implicit class ExtendedValueOps[Self <: ExtendedValue] (val x: Self) extends AnyVal {
+  implicit class ExtendedValueMutableBuilder[Self <: ExtendedValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorValue(value: ErrorValue): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setErrorValueUndefined: Self = StObject.set(x, "errorValue", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setFormulaValue(value: String): Self = StObject.set(x, "formulaValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorValue(value: ErrorValue): Self = this.set("errorValue", value.asInstanceOf[js.Any])
+    def setFormulaValueUndefined: Self = StObject.set(x, "formulaValue", js.undefined)
     
     @scala.inline
-    def deleteErrorValue: Self = this.set("errorValue", js.undefined)
+    def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulaValue(value: String): Self = this.set("formulaValue", value.asInstanceOf[js.Any])
+    def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
     
     @scala.inline
-    def deleteFormulaValue: Self = this.set("formulaValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberValue(value: Double): Self = this.set("numberValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberValue: Self = this.set("numberValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

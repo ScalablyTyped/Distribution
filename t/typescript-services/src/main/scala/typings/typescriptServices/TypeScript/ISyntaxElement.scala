@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISyntaxElement extends js.Object {
+trait ISyntaxElement extends StObject {
   
   def childAt(index: Double): ISyntaxElement = js.native
   
@@ -74,75 +75,63 @@ object ISyntaxElement {
   }
   
   @scala.inline
-  implicit class ISyntaxElementOps[Self <: ISyntaxElement] (val x: Self) extends AnyVal {
+  implicit class ISyntaxElementMutableBuilder[Self <: ISyntaxElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildAt(value: Double => ISyntaxElement): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildCount(value: () => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectTextElements(value: js.Array[String] => Unit): Self = StObject.set(x, "collectTextElements", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildAt(value: Double => ISyntaxElement): Self = this.set("childAt", js.Any.fromFunction1(value))
+    def setFirstToken(value: () => ISyntaxToken): Self = StObject.set(x, "firstToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildCount(value: () => Double): Self = this.set("childCount", js.Any.fromFunction0(value))
+    def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollectTextElements(value: js.Array[String] => Unit): Self = this.set("collectTextElements", js.Any.fromFunction1(value))
+    def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstToken(value: () => ISyntaxToken): Self = this.set("firstToken", js.Any.fromFunction0(value))
+    def setIsIncrementallyUnusable(value: () => Boolean): Self = StObject.set(x, "isIncrementallyUnusable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullText(value: () => String): Self = this.set("fullText", js.Any.fromFunction0(value))
+    def setIsList(value: () => Boolean): Self = StObject.set(x, "isList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullWidth(value: () => Double): Self = this.set("fullWidth", js.Any.fromFunction0(value))
+    def setIsNode(value: () => Boolean): Self = StObject.set(x, "isNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIncrementallyUnusable(value: () => Boolean): Self = this.set("isIncrementallyUnusable", js.Any.fromFunction0(value))
+    def setIsSeparatedList(value: () => Boolean): Self = StObject.set(x, "isSeparatedList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsList(value: () => Boolean): Self = this.set("isList", js.Any.fromFunction0(value))
+    def setIsToken(value: () => Boolean): Self = StObject.set(x, "isToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNode(value: () => Boolean): Self = this.set("isNode", js.Any.fromFunction0(value))
+    def setIsTypeScriptSpecific(value: () => Boolean): Self = StObject.set(x, "isTypeScriptSpecific", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsSeparatedList(value: () => Boolean): Self = this.set("isSeparatedList", js.Any.fromFunction0(value))
+    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsToken(value: () => Boolean): Self = this.set("isToken", js.Any.fromFunction0(value))
+    def setLastToken(value: () => ISyntaxToken): Self = StObject.set(x, "lastToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsTypeScriptSpecific(value: () => Boolean): Self = this.set("isTypeScriptSpecific", js.Any.fromFunction0(value))
+    def setLeadingTrivia(value: () => ISyntaxTriviaList): Self = StObject.set(x, "leadingTrivia", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKind(value: () => SyntaxKind): Self = this.set("kind", js.Any.fromFunction0(value))
+    def setLeadingTriviaWidth(value: () => Double): Self = StObject.set(x, "leadingTriviaWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLastToken(value: () => ISyntaxToken): Self = this.set("lastToken", js.Any.fromFunction0(value))
+    def setTrailingTrivia(value: () => ISyntaxTriviaList): Self = StObject.set(x, "trailingTrivia", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLeadingTrivia(value: () => ISyntaxTriviaList): Self = this.set("leadingTrivia", js.Any.fromFunction0(value))
+    def setTrailingTriviaWidth(value: () => Double): Self = StObject.set(x, "trailingTriviaWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLeadingTriviaWidth(value: () => Double): Self = this.set("leadingTriviaWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTrailingTrivia(value: () => ISyntaxTriviaList): Self = this.set("trailingTrivia", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTrailingTriviaWidth(value: () => Double): Self = this.set("trailingTriviaWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWidth(value: () => Double): Self = this.set("width", js.Any.fromFunction0(value))
+    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
   }
 }

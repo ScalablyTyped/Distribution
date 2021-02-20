@@ -8,16 +8,16 @@ import typings.babylonjs.multiRenderTargetMod.MultiRenderTarget
 import typings.babylonjs.prePassEffectConfigurationMod.PrePassEffectConfiguration
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subMeshMod.SubMesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Rendering/prePassRenderer", JSImport.Namespace)
-@js.native
-object prePassRendererMod extends js.Object {
+object prePassRendererMod {
   
+  @JSImport("babylonjs/Rendering/prePassRenderer", "PrePassRenderer")
   @js.native
-  class PrePassRenderer protected () extends js.Object {
+  class PrePassRenderer protected () extends StObject {
     /**
       * Instanciates a prepass renderer
       * @param scene The scene
@@ -200,10 +200,11 @@ object prePassRendererMod extends js.Object {
     def useGeometryBufferFallback_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object PrePassRenderer extends js.Object {
+  object PrePassRenderer {
     
     /** @hidden */
+    @JSImport("babylonjs/Rendering/prePassRenderer", "PrePassRenderer._SceneComponentInitialization")
+    @js.native
     def _SceneComponentInitialization(scene: Scene): Unit = js.native
   }
 }

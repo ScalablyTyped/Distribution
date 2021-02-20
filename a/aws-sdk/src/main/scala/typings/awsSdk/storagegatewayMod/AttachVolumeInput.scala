@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachVolumeInput extends js.Object {
+trait AttachVolumeInput extends StObject {
   
   /**
     * The unique device ID or other distinguishing data that identifies the local disk used to create the volume. This value is only required when you are attaching a stored volume.
@@ -41,39 +42,27 @@ object AttachVolumeInput {
   }
   
   @scala.inline
-  implicit class AttachVolumeInputOps[Self <: AttachVolumeInput] (val x: Self) extends AnyVal {
+  implicit class AttachVolumeInputMutableBuilder[Self <: AttachVolumeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskIdUndefined: Self = StObject.set(x, "DiskId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    def setTargetNameUndefined: Self = StObject.set(x, "TargetName", js.undefined)
     
     @scala.inline
-    def setDiskId(value: DiskId): Self = this.set("DiskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskId: Self = this.set("DiskId", js.undefined)
-    
-    @scala.inline
-    def setTargetName(value: TargetName): Self = this.set("TargetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetName: Self = this.set("TargetName", js.undefined)
+    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
   }
 }

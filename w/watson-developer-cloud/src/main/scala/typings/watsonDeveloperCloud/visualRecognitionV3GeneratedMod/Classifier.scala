@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about a classifier. */
 @js.native
-trait Classifier extends js.Object {
+trait Classifier extends StObject {
   
   /** Classes that define a classifier. */
   var classes: js.UndefOr[js.Array[Class]] = js.native
@@ -47,75 +48,63 @@ object Classifier {
   }
   
   @scala.inline
-  implicit class ClassifierOps[Self <: Classifier] (val x: Self) extends AnyVal {
+  implicit class ClassifierMutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Array[Class]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassesVarargs(value: Class*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
     @scala.inline
-    def setClassifier_id(value: String): Self = this.set("classifier_id", value.asInstanceOf[js.Any])
+    def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCore_ml_enabled(value: Boolean): Self = StObject.set(x, "core_ml_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassesVarargs(value: Class*): Self = this.set("classes", js.Array(value :_*))
+    def setCore_ml_enabledUndefined: Self = StObject.set(x, "core_ml_enabled", js.undefined)
     
     @scala.inline
-    def setClasses(value: js.Array[Class]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def setCore_ml_enabled(value: Boolean): Self = this.set("core_ml_enabled", value.asInstanceOf[js.Any])
+    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCore_ml_enabled: Self = this.set("core_ml_enabled", js.undefined)
+    def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanation(value: String): Self = this.set("explanation", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteExplanation: Self = this.set("explanation", js.undefined)
+    def setRetrained(value: String): Self = StObject.set(x, "retrained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRetrainedUndefined: Self = StObject.set(x, "retrained", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetrained(value: String): Self = this.set("retrained", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRetrained: Self = this.set("retrained", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

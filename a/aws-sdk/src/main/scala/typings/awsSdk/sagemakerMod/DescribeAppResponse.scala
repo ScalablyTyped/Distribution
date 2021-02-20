@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAppResponse extends js.Object {
+trait DescribeAppResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the app.
@@ -71,84 +72,72 @@ object DescribeAppResponse {
   }
   
   @scala.inline
-  implicit class DescribeAppResponseOps[Self <: DescribeAppResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAppResponseMutableBuilder[Self <: DescribeAppResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppArn(value: AppArn): Self = StObject.set(x, "AppArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppArnUndefined: Self = StObject.set(x, "AppArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppName(value: AppName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppArn(value: AppArn): Self = this.set("AppArn", value.asInstanceOf[js.Any])
+    def setAppNameUndefined: Self = StObject.set(x, "AppName", js.undefined)
     
     @scala.inline
-    def deleteAppArn: Self = this.set("AppArn", js.undefined)
+    def setAppType(value: AppType): Self = StObject.set(x, "AppType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppName(value: AppName): Self = this.set("AppName", value.asInstanceOf[js.Any])
+    def setAppTypeUndefined: Self = StObject.set(x, "AppType", js.undefined)
     
     @scala.inline
-    def deleteAppName: Self = this.set("AppName", js.undefined)
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppType(value: AppType): Self = this.set("AppType", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAppType: Self = this.set("AppType", js.undefined)
+    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteDomainId: Self = this.set("DomainId", js.undefined)
+    def setLastHealthCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastHealthCheckTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setLastHealthCheckTimestampUndefined: Self = StObject.set(x, "LastHealthCheckTimestamp", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setLastUserActivityTimestamp(value: Timestamp): Self = StObject.set(x, "LastUserActivityTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastHealthCheckTimestamp(value: Timestamp): Self = this.set("LastHealthCheckTimestamp", value.asInstanceOf[js.Any])
+    def setLastUserActivityTimestampUndefined: Self = StObject.set(x, "LastUserActivityTimestamp", js.undefined)
     
     @scala.inline
-    def deleteLastHealthCheckTimestamp: Self = this.set("LastHealthCheckTimestamp", js.undefined)
+    def setResourceSpec(value: ResourceSpec): Self = StObject.set(x, "ResourceSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUserActivityTimestamp(value: Timestamp): Self = this.set("LastUserActivityTimestamp", value.asInstanceOf[js.Any])
+    def setResourceSpecUndefined: Self = StObject.set(x, "ResourceSpec", js.undefined)
     
     @scala.inline
-    def deleteLastUserActivityTimestamp: Self = this.set("LastUserActivityTimestamp", js.undefined)
+    def setStatus(value: AppStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceSpec(value: ResourceSpec): Self = this.set("ResourceSpec", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteResourceSpec: Self = this.set("ResourceSpec", js.undefined)
+    def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: AppStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUserProfileName(value: UserProfileName): Self = this.set("UserProfileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProfileName: Self = this.set("UserProfileName", js.undefined)
+    def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
   }
 }

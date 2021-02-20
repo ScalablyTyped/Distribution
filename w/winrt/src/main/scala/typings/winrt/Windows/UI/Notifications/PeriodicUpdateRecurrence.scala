@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeriodicUpdateRecurrence extends js.Object
+sealed trait PeriodicUpdateRecurrence extends StObject
 @JSGlobal("Windows.UI.Notifications.PeriodicUpdateRecurrence")
 @js.native
-object PeriodicUpdateRecurrence extends js.Object {
+object PeriodicUpdateRecurrence extends StObject {
   
   @js.native
   sealed trait daily extends PeriodicUpdateRecurrence

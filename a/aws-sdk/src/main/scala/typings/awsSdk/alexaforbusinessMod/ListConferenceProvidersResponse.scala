@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConferenceProvidersResponse extends js.Object {
+trait ListConferenceProvidersResponse extends StObject {
   
   /**
     * The conference providers.
@@ -26,33 +27,21 @@ object ListConferenceProvidersResponse {
   }
   
   @scala.inline
-  implicit class ListConferenceProvidersResponseOps[Self <: ListConferenceProvidersResponse] (val x: Self) extends AnyVal {
+  implicit class ListConferenceProvidersResponseMutableBuilder[Self <: ListConferenceProvidersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConferenceProviders(value: ConferenceProvidersList): Self = StObject.set(x, "ConferenceProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConferenceProvidersUndefined: Self = StObject.set(x, "ConferenceProviders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = StObject.set(x, "ConferenceProviders", js.Array(value :_*))
     
     @scala.inline
-    def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = this.set("ConferenceProviders", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConferenceProviders(value: ConferenceProvidersList): Self = this.set("ConferenceProviders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConferenceProviders: Self = this.set("ConferenceProviders", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapFrame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of printing instructions that you want to run on the slip printer station. */
 @js.native
-trait SlipPrintJob extends js.Object {
+trait SlipPrintJob extends StObject {
   
   /**
     * Adds an instruction to the print job to print a drawn, ruled line on the paper of the slip printer station.

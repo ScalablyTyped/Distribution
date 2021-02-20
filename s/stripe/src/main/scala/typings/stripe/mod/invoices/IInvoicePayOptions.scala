@@ -2,6 +2,7 @@ package typings.stripe.mod.invoices
 
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.cards.ICardSourceCreationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,36 +45,24 @@ object IInvoicePayOptions {
   }
   
   @scala.inline
-  implicit class IInvoicePayOptionsOps[Self <: IInvoicePayOptions] (val x: Self) extends AnyVal {
+  implicit class IInvoicePayOptionsMutableBuilder[Self <: IInvoicePayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForgive(value: Boolean): Self = StObject.set(x, "forgive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForgiveUndefined: Self = StObject.set(x, "forgive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaid_out_of_band(value: Boolean): Self = StObject.set(x, "paid_out_of_band", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForgive(value: Boolean): Self = this.set("forgive", value.asInstanceOf[js.Any])
+    def setPaid_out_of_bandUndefined: Self = StObject.set(x, "paid_out_of_band", js.undefined)
     
     @scala.inline
-    def deleteForgive: Self = this.set("forgive", js.undefined)
+    def setSource(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaid_out_of_band(value: Boolean): Self = this.set("paid_out_of_band", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaid_out_of_band: Self = this.set("paid_out_of_band", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String | ICardSourceCreationOptions): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

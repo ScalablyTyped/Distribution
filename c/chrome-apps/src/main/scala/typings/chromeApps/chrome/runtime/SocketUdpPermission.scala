@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocketUdpPermission extends js.Object {
+trait SocketUdpPermission extends StObject {
   
   /**
     * The host:port pattern for bind operations.
@@ -34,45 +35,33 @@ object SocketUdpPermission {
   }
   
   @scala.inline
-  implicit class SocketUdpPermissionOps[Self <: SocketUdpPermission] (val x: Self) extends AnyVal {
+  implicit class SocketUdpPermissionMutableBuilder[Self <: SocketUdpPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: String | js.Array[String]): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value :_*))
     
     @scala.inline
-    def setBindVarargs(value: String*): Self = this.set("bind", js.Array(value :_*))
+    def setMulticastMembership(value: String | js.Array[String]): Self = StObject.set(x, "multicastMembership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind(value: String | js.Array[String]): Self = this.set("bind", value.asInstanceOf[js.Any])
+    def setMulticastMembershipUndefined: Self = StObject.set(x, "multicastMembership", js.undefined)
     
     @scala.inline
-    def deleteBind: Self = this.set("bind", js.undefined)
+    def setMulticastMembershipVarargs(value: String*): Self = StObject.set(x, "multicastMembership", js.Array(value :_*))
     
     @scala.inline
-    def setMulticastMembershipVarargs(value: String*): Self = this.set("multicastMembership", js.Array(value :_*))
+    def setSend(value: String | js.Array[String]): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulticastMembership(value: String | js.Array[String]): Self = this.set("multicastMembership", value.asInstanceOf[js.Any])
+    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
     @scala.inline
-    def deleteMulticastMembership: Self = this.set("multicastMembership", js.undefined)
-    
-    @scala.inline
-    def setSendVarargs(value: String*): Self = this.set("send", js.Array(value :_*))
-    
-    @scala.inline
-    def setSend(value: String | js.Array[String]): Self = this.set("send", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend: Self = this.set("send", js.undefined)
+    def setSendVarargs(value: String*): Self = StObject.set(x, "send", js.Array(value :_*))
   }
 }

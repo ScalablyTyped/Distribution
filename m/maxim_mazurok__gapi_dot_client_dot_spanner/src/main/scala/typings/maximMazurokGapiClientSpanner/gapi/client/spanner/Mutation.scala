@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mutation extends js.Object {
+trait Mutation extends StObject {
   
   /** Delete rows from a table. Succeeds whether or not the named rows were present. */
   var delete: js.UndefOr[Delete] = js.native
@@ -39,48 +40,36 @@ object Mutation {
   }
   
   @scala.inline
-  implicit class MutationOps[Self <: Mutation] (val x: Self) extends AnyVal {
+  implicit class MutationMutableBuilder[Self <: Mutation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelete(value: Delete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsert(value: Write): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Delete): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setInsertOrUpdate(value: Write): Self = StObject.set(x, "insertOrUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setInsertOrUpdateUndefined: Self = StObject.set(x, "insertOrUpdate", js.undefined)
     
     @scala.inline
-    def setInsert(value: Write): Self = this.set("insert", value.asInstanceOf[js.Any])
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
+    def setReplace(value: Write): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertOrUpdate(value: Write): Self = this.set("insertOrUpdate", value.asInstanceOf[js.Any])
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def deleteInsertOrUpdate: Self = this.set("insertOrUpdate", js.undefined)
+    def setUpdate(value: Write): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplace(value: Write): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: Write): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

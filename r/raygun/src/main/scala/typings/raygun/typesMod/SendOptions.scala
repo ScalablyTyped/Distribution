@@ -2,12 +2,13 @@ package typings.raygun.typesMod
 
 import typings.node.httpMod.IncomingMessage
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendOptions extends js.Object {
+trait SendOptions extends StObject {
   
   var batch: Boolean = js.native
   
@@ -26,36 +27,24 @@ object SendOptions {
   }
   
   @scala.inline
-  implicit class SendOptionsOps[Self <: SendOptions] (val x: Self) extends AnyVal {
+  implicit class SendOptionsMutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallback(value: Callback[IncomingMessage]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackFunction1(value: /* t */ IncomingMessage | Null => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBatch(value: Boolean): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setCallbackFunction2(value: (/* e */ Error | Null, /* t */ IncomingMessage | Null) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCallbackFunction2(value: (/* e */ Error | Null, /* t */ IncomingMessage | Null) => Unit): Self = this.set("callback", js.Any.fromFunction2(value))
+    def setHttp(value: HTTPOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackFunction1(value: /* t */ IncomingMessage | Null => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCallback(value: Callback[IncomingMessage]): Self = this.set("callback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHttp(value: HTTPOptions): Self = this.set("http", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

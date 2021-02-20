@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.com_.sun.star.container.XStringKeyMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.3
   */
 @js.native
-trait XTextMarkup extends js.Object {
+trait XTextMarkup extends StObject {
   
   /**
     * obtains a container to store additional user defined text markup information.
@@ -56,30 +57,18 @@ object XTextMarkup {
   }
   
   @scala.inline
-  implicit class XTextMarkupOps[Self <: XTextMarkup] (val x: Self) extends AnyVal {
+  implicit class XTextMarkupMutableBuilder[Self <: XTextMarkup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitStringMarkup(value: (Double, String, Double, Double, XStringKeyMap) => Unit): Self = StObject.set(x, "commitStringMarkup", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitTextRangeMarkup(value: (Double, String, XTextRange, XStringKeyMap) => Unit): Self = StObject.set(x, "commitTextRangeMarkup", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMarkupInfoContainer(value: () => XStringKeyMap): Self = StObject.set(x, "getMarkupInfoContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMarkupInfoContainer(value: XStringKeyMap): Self = this.set("MarkupInfoContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitStringMarkup(value: (Double, String, Double, Double, XStringKeyMap) => Unit): Self = this.set("commitStringMarkup", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setCommitTextRangeMarkup(value: (Double, String, XTextRange, XStringKeyMap) => Unit): Self = this.set("commitTextRangeMarkup", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setGetMarkupInfoContainer(value: () => XStringKeyMap): Self = this.set("getMarkupInfoContainer", js.Any.fromFunction0(value))
+    def setMarkupInfoContainer(value: XStringKeyMap): Self = StObject.set(x, "MarkupInfoContainer", value.asInstanceOf[js.Any])
   }
 }

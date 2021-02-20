@@ -1,11 +1,12 @@
 package typings.i18next.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Modules extends js.Object {
+trait Modules extends StObject {
   
   var backend: js.UndefOr[BackendModule[js.Object]] = js.native
   
@@ -26,48 +27,36 @@ object Modules {
   }
   
   @scala.inline
-  implicit class ModulesOps[Self <: Modules] (val x: Self) extends AnyVal {
+  implicit class ModulesMutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackend(value: BackendModule[js.Object]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternal(value: js.Array[ThirdPartyModule]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalVarargs(value: ThirdPartyModule*): Self = this.set("external", js.Array(value :_*))
+    def setExternalVarargs(value: ThirdPartyModule*): Self = StObject.set(x, "external", js.Array(value :_*))
     
     @scala.inline
-    def setExternal(value: js.Array[ThirdPartyModule]): Self = this.set("external", value.asInstanceOf[js.Any])
+    def setI18nFormat(value: I18nFormatModule): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackend(value: BackendModule[js.Object]): Self = this.set("backend", value.asInstanceOf[js.Any])
+    def setI18nFormatUndefined: Self = StObject.set(x, "i18nFormat", js.undefined)
     
     @scala.inline
-    def deleteBackend: Self = this.set("backend", js.undefined)
+    def setLanguageDetector(value: LanguageDetectorModule | LanguageDetectorAsyncModule): Self = StObject.set(x, "languageDetector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18nFormat(value: I18nFormatModule): Self = this.set("i18nFormat", value.asInstanceOf[js.Any])
+    def setLanguageDetectorUndefined: Self = StObject.set(x, "languageDetector", js.undefined)
     
     @scala.inline
-    def deleteI18nFormat: Self = this.set("i18nFormat", js.undefined)
+    def setLogger(value: LoggerModule): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageDetector(value: LanguageDetectorModule | LanguageDetectorAsyncModule): Self = this.set("languageDetector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageDetector: Self = this.set("languageDetector", js.undefined)
-    
-    @scala.inline
-    def setLogger(value: LoggerModule): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

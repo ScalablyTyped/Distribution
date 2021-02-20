@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HostReservation extends js.Object {
+trait HostReservation extends StObject {
   
   /**
     * The number of Dedicated Hosts the reservation is associated with.
@@ -86,108 +87,96 @@ object HostReservation {
   }
   
   @scala.inline
-  implicit class HostReservationOps[Self <: HostReservation] (val x: Self) extends AnyVal {
+  implicit class HostReservationMutableBuilder[Self <: HostReservation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setDuration(value: Integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setEnd(value: DateTime): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setHostIdSet(value: ResponseHostIdSet): Self = StObject.set(x, "HostIdSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: DateTime): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setHostIdSetUndefined: Self = StObject.set(x, "HostIdSet", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("End", js.undefined)
+    def setHostIdSetVarargs(value: String*): Self = StObject.set(x, "HostIdSet", js.Array(value :_*))
     
     @scala.inline
-    def setHostIdSetVarargs(value: String*): Self = this.set("HostIdSet", js.Array(value :_*))
+    def setHostReservationId(value: String): Self = StObject.set(x, "HostReservationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostIdSet(value: ResponseHostIdSet): Self = this.set("HostIdSet", value.asInstanceOf[js.Any])
+    def setHostReservationIdUndefined: Self = StObject.set(x, "HostReservationId", js.undefined)
     
     @scala.inline
-    def deleteHostIdSet: Self = this.set("HostIdSet", js.undefined)
+    def setHourlyPrice(value: String): Self = StObject.set(x, "HourlyPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostReservationId(value: String): Self = this.set("HostReservationId", value.asInstanceOf[js.Any])
+    def setHourlyPriceUndefined: Self = StObject.set(x, "HourlyPrice", js.undefined)
     
     @scala.inline
-    def deleteHostReservationId: Self = this.set("HostReservationId", js.undefined)
+    def setInstanceFamily(value: String): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyPrice(value: String): Self = this.set("HourlyPrice", value.asInstanceOf[js.Any])
+    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
     @scala.inline
-    def deleteHourlyPrice: Self = this.set("HourlyPrice", js.undefined)
+    def setOfferingId(value: String): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFamily(value: String): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
+    def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
     
     @scala.inline
-    def deleteInstanceFamily: Self = this.set("InstanceFamily", js.undefined)
+    def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingId(value: String): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
     
     @scala.inline
-    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
+    def setStart(value: DateTime): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentOption(value: PaymentOption): Self = this.set("PaymentOption", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     
     @scala.inline
-    def deletePaymentOption: Self = this.set("PaymentOption", js.undefined)
+    def setState(value: ReservationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: DateTime): Self = this.set("Start", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("Start", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ReservationState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setUpfrontPrice(value: String): Self = StObject.set(x, "UpfrontPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setUpfrontPrice(value: String): Self = this.set("UpfrontPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpfrontPrice: Self = this.set("UpfrontPrice", js.undefined)
+    def setUpfrontPriceUndefined: Self = StObject.set(x, "UpfrontPrice", js.undefined)
   }
 }

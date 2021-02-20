@@ -12,12 +12,13 @@ import typings.plotlyJs.plotlyJsStrings.opaque
 import typings.plotlyJs.plotlyJsStrings.reset
 import typings.plotlyJs.plotlyJsStrings.resetPlussignautosize
 import typings.plotlyJs.plotlyJsStrings.transparent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   /** DO autosize once regardless of layout.autosize (use default width or height values otherwise) */
   var autosizable: Boolean = js.native
@@ -191,129 +192,117 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutosizable(value: Boolean): Self = StObject.set(x, "autosizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayModeBar(value: hover | Boolean): Self = StObject.set(x, "displayModeBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplaylogo(value: Boolean): Self = StObject.set(x, "displaylogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutosizable(value: Boolean): Self = this.set("autosizable", value.asInstanceOf[js.Any])
+    def setDoubleClick(value: resetPlussignautosize | reset | autosize | `false`): Self = StObject.set(x, "doubleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayModeBar(value: hover | Boolean): Self = this.set("displayModeBar", value.asInstanceOf[js.Any])
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaylogo(value: Boolean): Self = this.set("displaylogo", value.asInstanceOf[js.Any])
+    def setEdits(value: PartialEdits): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClick(value: resetPlussignautosize | reset | autosize | `false`): Self = this.set("doubleClick", value.asInstanceOf[js.Any])
+    def setFillFrame(value: Boolean): Self = StObject.set(x, "fillFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setFrameMargins(value: Double): Self = StObject.set(x, "frameMargins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdits(value: PartialEdits): Self = this.set("edits", value.asInstanceOf[js.Any])
+    def setGlobalTransforms(value: js.Array[_]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillFrame(value: Boolean): Self = this.set("fillFrame", value.asInstanceOf[js.Any])
+    def setGlobalTransformsVarargs(value: js.Any*): Self = StObject.set(x, "globalTransforms", js.Array(value :_*))
     
     @scala.inline
-    def setFrameMargins(value: Double): Self = this.set("frameMargins", value.asInstanceOf[js.Any])
+    def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTransformsVarargs(value: js.Any*): Self = this.set("globalTransforms", js.Array(value :_*))
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTransforms(value: js.Array[_]): Self = this.set("globalTransforms", value.asInstanceOf[js.Any])
+    def setLogging(value: Boolean | `0` | `1` | `2`): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkText(value: String): Self = this.set("linkText", value.asInstanceOf[js.Any])
+    def setMapboxAccessToken(value: String): Self = StObject.set(x, "mapboxAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setModeBarButtons(value: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`): Self = StObject.set(x, "modeBarButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean | `0` | `1` | `2`): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setModeBarButtonsToAdd(value: js.Array[ModeBarButton | ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapboxAccessToken(value: String): Self = this.set("mapboxAccessToken", value.asInstanceOf[js.Any])
+    def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = this.set("modeBarButtons", js.Array(value :_*))
+    def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModeBarButtons(value: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`): Self = this.set("modeBarButtons", value.asInstanceOf[js.Any])
+    def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = StObject.set(x, "modeBarButtonsToRemove", js.Array(value :_*))
     
     @scala.inline
-    def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = this.set("modeBarButtonsToAdd", js.Array(value :_*))
+    def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = StObject.set(x, "modeBarButtons", js.Array(value :_*))
     
     @scala.inline
-    def setModeBarButtonsToAdd(value: js.Array[ModeBarButton | ModeBarDefaultButtons]): Self = this.set("modeBarButtonsToAdd", value.asInstanceOf[js.Any])
+    def setPlotGlPixelRatio(value: Double): Self = StObject.set(x, "plotGlPixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = this.set("modeBarButtonsToRemove", js.Array(value :_*))
+    def setPlotlyServerURL(value: String): Self = StObject.set(x, "plotlyServerURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = this.set("modeBarButtonsToRemove", value.asInstanceOf[js.Any])
+    def setQueueLength(value: Double): Self = StObject.set(x, "queueLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlotGlPixelRatio(value: Double): Self = this.set("plotGlPixelRatio", value.asInstanceOf[js.Any])
+    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlotlyServerURL(value: String): Self = this.set("plotlyServerURL", value.asInstanceOf[js.Any])
+    def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueLength(value: Double): Self = this.set("queueLength", value.asInstanceOf[js.Any])
+    def setSendData(value: Boolean): Self = StObject.set(x, "sendData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    def setSetBackground(value: () => String | opaque | transparent): Self = StObject.set(x, "setBackground", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScrollZoom(value: Boolean): Self = this.set("scrollZoom", value.asInstanceOf[js.Any])
+    def setShowAxisDragHandles(value: Boolean): Self = StObject.set(x, "showAxisDragHandles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendData(value: Boolean): Self = this.set("sendData", value.asInstanceOf[js.Any])
+    def setShowAxisRangeEntryBoxes(value: Boolean): Self = StObject.set(x, "showAxisRangeEntryBoxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetBackground(value: () => String | opaque | transparent): Self = this.set("setBackground", js.Any.fromFunction0(value))
+    def setShowEditInChartStudio(value: Boolean): Self = StObject.set(x, "showEditInChartStudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAxisDragHandles(value: Boolean): Self = this.set("showAxisDragHandles", value.asInstanceOf[js.Any])
+    def setShowLink(value: Boolean): Self = StObject.set(x, "showLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAxisRangeEntryBoxes(value: Boolean): Self = this.set("showAxisRangeEntryBoxes", value.asInstanceOf[js.Any])
+    def setShowSendToCloud(value: Boolean): Self = StObject.set(x, "showSendToCloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEditInChartStudio(value: Boolean): Self = this.set("showEditInChartStudio", value.asInstanceOf[js.Any])
+    def setShowSources(value: Boolean): Self = StObject.set(x, "showSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLink(value: Boolean): Self = this.set("showLink", value.asInstanceOf[js.Any])
+    def setShowTips(value: Boolean): Self = StObject.set(x, "showTips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSendToCloud(value: Boolean): Self = this.set("showSendToCloud", value.asInstanceOf[js.Any])
+    def setStaticPlot(value: Boolean): Self = StObject.set(x, "staticPlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSources(value: Boolean): Self = this.set("showSources", value.asInstanceOf[js.Any])
+    def setToImageButtonOptions(value: Partialfilenamestringscal): Self = StObject.set(x, "toImageButtonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTips(value: Boolean): Self = this.set("showTips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStaticPlot(value: Boolean): Self = this.set("staticPlot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToImageButtonOptions(value: Partialfilenamestringscal): Self = this.set("toImageButtonOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopojsonURL(value: String): Self = this.set("topojsonURL", value.asInstanceOf[js.Any])
+    def setTopojsonURL(value: String): Self = StObject.set(x, "topojsonURL", value.asInstanceOf[js.Any])
   }
 }

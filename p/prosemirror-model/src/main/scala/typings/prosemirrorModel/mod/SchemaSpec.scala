@@ -2,12 +2,13 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.orderedmap.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
+trait SchemaSpec[N /* <: String */, M /* <: String */] extends StObject {
   
   /**
     * The mark types that exist in this schema. The order in which they
@@ -52,47 +53,35 @@ object SchemaSpec {
   }
   
   @scala.inline
-  implicit class SchemaSpecOps[Self <: SchemaSpec[_, _], N /* <: String */, M /* <: String */] (val x: Self with (SchemaSpec[N, M])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNodes(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
-      */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec]
-    ): Self = this.set("nodes", value.asInstanceOf[js.Any])
+  implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[_, _], N /* <: String */, M /* <: String */] (val x: Self with (SchemaSpec[N, M])) extends AnyVal {
     
     @scala.inline
     def setMarks(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
       */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[MarkSpec]
-    ): Self = this.set("marks", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarks: Self = this.set("marks", js.undefined)
+    def setMarksNull: Self = StObject.set(x, "marks", null)
     
     @scala.inline
-    def setMarksNull: Self = this.set("marks", null)
+    def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
     @scala.inline
-    def setTopNode(value: String): Self = this.set("topNode", value.asInstanceOf[js.Any])
+    def setNodes(
+      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
+      */ typings.prosemirrorModel.prosemirrorModelStrings.SchemaSpec with TopLevel[js.Any]) | ^[NodeSpec]
+    ): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopNode: Self = this.set("topNode", js.undefined)
+    def setTopNode(value: String): Self = StObject.set(x, "topNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopNodeNull: Self = this.set("topNode", null)
+    def setTopNodeNull: Self = StObject.set(x, "topNode", null)
+    
+    @scala.inline
+    def setTopNodeUndefined: Self = StObject.set(x, "topNode", js.undefined)
   }
 }

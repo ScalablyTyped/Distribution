@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnGatewayInfo extends js.Object {
+trait VpnGatewayInfo extends StObject {
   
   /** Name of a VPN gateway. */
   var displayName: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object VpnGatewayInfo {
   }
   
   @scala.inline
-  implicit class VpnGatewayInfoOps[Self <: VpnGatewayInfo] (val x: Self) extends AnyVal {
+  implicit class VpnGatewayInfoMutableBuilder[Self <: VpnGatewayInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkUri(value: String): Self = this.set("networkUri", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteNetworkUri: Self = this.set("networkUri", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setVpnTunnelUri(value: String): Self = StObject.set(x, "vpnTunnelUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
-    
-    @scala.inline
-    def setVpnTunnelUri(value: String): Self = this.set("vpnTunnelUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnTunnelUri: Self = this.set("vpnTunnelUri", js.undefined)
+    def setVpnTunnelUriUndefined: Self = StObject.set(x, "vpnTunnelUri", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Gamepad API interface defines an individual gamepad or other controller, allowing access to information such as button presses, axis positions, and id. */
 @js.native
-trait Gamepad extends js.Object {
+trait Gamepad extends StObject {
   
   val axes: js.Array[Double] = js.native
   
@@ -47,60 +48,48 @@ object Gamepad {
   }
   
   @scala.inline
-  implicit class GamepadOps[Self <: Gamepad] (val x: Self) extends AnyVal {
+  implicit class GamepadMutableBuilder[Self <: Gamepad] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: js.Array[GamepadButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxesVarargs(value: Double*): Self = this.set("axes", js.Array(value :_*))
+    def setButtonsVarargs(value: GamepadButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setAxes(value: js.Array[Double]): Self = this.set("axes", value.asInstanceOf[js.Any])
+    def setConnected(value: scala.Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonsVarargs(value: GamepadButton*): Self = this.set("buttons", js.Array(value :_*))
+    def setHand(value: GamepadHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[GamepadButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setHapticActuators(value: js.Array[GamepadHapticActuator]): Self = StObject.set(x, "hapticActuators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected(value: scala.Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
+    def setHapticActuatorsVarargs(value: GamepadHapticActuator*): Self = StObject.set(x, "hapticActuators", js.Array(value :_*))
     
     @scala.inline
-    def setHand(value: GamepadHand): Self = this.set("hand", value.asInstanceOf[js.Any])
+    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHapticActuatorsVarargs(value: GamepadHapticActuator*): Self = this.set("hapticActuators", js.Array(value :_*))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHapticActuators(value: js.Array[GamepadHapticActuator]): Self = this.set("hapticActuators", value.asInstanceOf[js.Any])
+    def setMapping(value: GamepadMappingType): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPose(value: GamepadPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setPoseNull: Self = StObject.set(x, "pose", null)
     
     @scala.inline
-    def setMapping(value: GamepadMappingType): Self = this.set("mapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPose(value: GamepadPose): Self = this.set("pose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoseNull: Self = this.set("pose", null)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

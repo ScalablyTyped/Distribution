@@ -3,20 +3,14 @@ package typings.tensorflowTfjsNode
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node/dist/io/file_system", JSImport.Namespace)
-@js.native
-object fileSystemMod extends js.Object {
+object fileSystemMod {
   
-  def fileSystem(path: String): NodeFileSystem = js.native
-  def fileSystem(path: js.Array[String]): NodeFileSystem = js.native
-  
-  def nodeFileSystemRouter(url: String): NodeFileSystem = js.native
-  def nodeFileSystemRouter(url: js.Array[String]): NodeFileSystem = js.native
-  
+  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "NodeFileSystem")
   @js.native
   class NodeFileSystem protected () extends IOHandler {
     /**
@@ -67,9 +61,24 @@ object fileSystemMod extends js.Object {
     def save_MNodeFileSystem(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
   }
   /* static members */
-  @js.native
-  object NodeFileSystem extends js.Object {
+  object NodeFileSystem {
     
+    @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "NodeFileSystem.URL_SCHEME")
+    @js.native
     val URL_SCHEME: /* "file://" */ String = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "fileSystem")
+  @js.native
+  def fileSystem(path: String): NodeFileSystem = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "fileSystem")
+  @js.native
+  def fileSystem(path: js.Array[String]): NodeFileSystem = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "nodeFileSystemRouter")
+  @js.native
+  def nodeFileSystemRouter(url: String): NodeFileSystem = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "nodeFileSystemRouter")
+  @js.native
+  def nodeFileSystemRouter(url: js.Array[String]): NodeFileSystem = js.native
 }

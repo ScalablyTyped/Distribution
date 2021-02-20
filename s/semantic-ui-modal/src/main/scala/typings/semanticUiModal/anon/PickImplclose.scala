@@ -1,12 +1,13 @@
 package typings.semanticUiModal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-modal.SemanticUI.Modal.SelectorSettings._Impl, 'close'> */
 @js.native
-trait PickImplclose extends js.Object {
+trait PickImplclose extends StObject {
   
   var close: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImplclose {
   }
   
   @scala.inline
-  implicit class PickImplcloseOps[Self <: PickImplclose] (val x: Self) extends AnyVal {
+  implicit class PickImplcloseMutableBuilder[Self <: PickImplclose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
   }
 }

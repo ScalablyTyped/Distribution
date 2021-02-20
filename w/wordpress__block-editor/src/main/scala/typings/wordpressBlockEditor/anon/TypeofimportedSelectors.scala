@@ -10,12 +10,13 @@ import typings.wordpressBlockEditor.mod.EditorSettings
 import typings.wordpressBlockEditor.wordpressBlockEditorNumbers.`-1`
 import typings.wordpressBlockEditor.wordpressBlockEditorNumbers.`1`
 import typings.wordpressBlocks.mod.BlockInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofimportedSelectors extends js.Object {
+trait TypeofimportedSelectors extends StObject {
   
   def canInsertBlockType(blockName: String): Boolean = js.native
   def canInsertBlockType(blockName: String, rootClientId: String): Boolean = js.native

@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.TransactionSignaturePayloadTaggedTransaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkId extends js.Object {
+trait NetworkId extends StObject {
   
   var networkId: Buffer = js.native
   
@@ -22,24 +23,12 @@ object NetworkId {
   }
   
   @scala.inline
-  implicit class NetworkIdOps[Self <: NetworkId] (val x: Self) extends AnyVal {
+  implicit class NetworkIdMutableBuilder[Self <: NetworkId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkId(value: Buffer): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkId(value: Buffer): Self = this.set("networkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaggedTransaction(value: TransactionSignaturePayloadTaggedTransaction): Self = this.set("taggedTransaction", value.asInstanceOf[js.Any])
+    def setTaggedTransaction(value: TransactionSignaturePayloadTaggedTransaction): Self = StObject.set(x, "taggedTransaction", value.asInstanceOf[js.Any])
   }
 }

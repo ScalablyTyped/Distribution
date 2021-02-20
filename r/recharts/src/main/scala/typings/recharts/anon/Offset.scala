@@ -2,12 +2,13 @@ package typings.recharts.anon
 
 import typings.recharts.mod.ChartOffset
 import typings.recharts.mod.XAxisProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Offset extends js.Object {
+trait Offset extends StObject {
   
   var height: js.UndefOr[Double] = js.native
   
@@ -26,42 +27,30 @@ object Offset {
   }
   
   @scala.inline
-  implicit class OffsetOps[Self <: Offset] (val x: Self) extends AnyVal {
+  implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: ChartOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: ChartOffset): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setXAxis(value: XAxisProps): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setXAxis(value: XAxisProps): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
   }
 }

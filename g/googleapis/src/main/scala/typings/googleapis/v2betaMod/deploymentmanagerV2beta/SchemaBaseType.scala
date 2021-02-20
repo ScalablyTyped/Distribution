@@ -1,5 +1,6 @@
 package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * BaseType that describes a service-backed Type.
   */
 @js.native
-trait SchemaBaseType extends js.Object {
+trait SchemaBaseType extends StObject {
   
   /**
     * Allows resource handling overrides for specific collections
@@ -39,45 +40,33 @@ object SchemaBaseType {
   }
   
   @scala.inline
-  implicit class SchemaBaseTypeOps[Self <: SchemaBaseType] (val x: Self) extends AnyVal {
+  implicit class SchemaBaseTypeMutableBuilder[Self <: SchemaBaseType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = StObject.set(x, "collectionOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionOverridesUndefined: Self = StObject.set(x, "collectionOverrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = StObject.set(x, "collectionOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = this.set("collectionOverrides", js.Array(value :_*))
+    def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = this.set("collectionOverrides", value.asInstanceOf[js.Any])
+    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
     @scala.inline
-    def deleteCollectionOverrides: Self = this.set("collectionOverrides", js.undefined)
+    def setDescriptorUrl(value: String): Self = StObject.set(x, "descriptorUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential(value: SchemaCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    def setDescriptorUrlUndefined: Self = StObject.set(x, "descriptorUrl", js.undefined)
     
     @scala.inline
-    def deleteCredential: Self = this.set("credential", js.undefined)
+    def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptorUrl(value: String): Self = this.set("descriptorUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescriptorUrl: Self = this.set("descriptorUrl", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: SchemaOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

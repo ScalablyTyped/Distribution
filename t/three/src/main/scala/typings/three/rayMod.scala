@@ -5,16 +5,16 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.planeMod.Plane
 import typings.three.sphereMod.Sphere
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Ray", JSImport.Namespace)
-@js.native
-object rayMod extends js.Object {
+object rayMod {
   
+  @JSImport("three/src/math/Ray", "Ray")
   @js.native
-  class Ray () extends js.Object {
+  class Ray () extends StObject {
     def this(origin: Vector3) = this()
     def this(origin: js.UndefOr[scala.Nothing], direction: Vector3) = this()
     def this(origin: Vector3, direction: Vector3) = this()

@@ -1,12 +1,13 @@
 package typings.antdMobileRn.anon
 
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BottomTabBarSplitLine extends js.Object {
+trait BottomTabBarSplitLine extends StObject {
   
   var bottomTabBarSplitLine: ViewStyle = js.native
   
@@ -23,27 +24,15 @@ object BottomTabBarSplitLine {
   }
   
   @scala.inline
-  implicit class BottomTabBarSplitLineOps[Self <: BottomTabBarSplitLine] (val x: Self) extends AnyVal {
+  implicit class BottomTabBarSplitLineMutableBuilder[Self <: BottomTabBarSplitLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomTabBarSplitLine(value: ViewStyle): Self = StObject.set(x, "bottomTabBarSplitLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBottomTabBarSplitLine(value: ViewStyle): Self = this.set("bottomTabBarSplitLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopTabBarSplitLine(value: ViewStyle): Self = this.set("topTabBarSplitLine", value.asInstanceOf[js.Any])
+    def setTopTabBarSplitLine(value: ViewStyle): Self = StObject.set(x, "topTabBarSplitLine", value.asInstanceOf[js.Any])
   }
 }

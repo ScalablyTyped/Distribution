@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PickupCarrierService extends js.Object {
+trait PickupCarrierService extends StObject {
   
   /** The name of the pickup carrier (e.g., `"UPS"`). Required. */
   var carrierName: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object PickupCarrierService {
   }
   
   @scala.inline
-  implicit class PickupCarrierServiceOps[Self <: PickupCarrierService] (val x: Self) extends AnyVal {
+  implicit class PickupCarrierServiceMutableBuilder[Self <: PickupCarrierService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierNameUndefined: Self = StObject.set(x, "carrierName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierName(value: String): Self = this.set("carrierName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCarrierName: Self = this.set("carrierName", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceProperties extends js.Object {
+trait WorkspaceProperties extends StObject {
   
   /**
     * The compute type. For more information, see Amazon WorkSpaces Bundles.
@@ -41,48 +42,36 @@ object WorkspaceProperties {
   }
   
   @scala.inline
-  implicit class WorkspacePropertiesOps[Self <: WorkspaceProperties] (val x: Self) extends AnyVal {
+  implicit class WorkspacePropertiesMutableBuilder[Self <: WorkspaceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeTypeName(value: Compute): Self = StObject.set(x, "ComputeTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeTypeNameUndefined: Self = StObject.set(x, "ComputeTypeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRootVolumeSizeGib(value: RootVolumeSizeGib): Self = StObject.set(x, "RootVolumeSizeGib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeTypeName(value: Compute): Self = this.set("ComputeTypeName", value.asInstanceOf[js.Any])
+    def setRootVolumeSizeGibUndefined: Self = StObject.set(x, "RootVolumeSizeGib", js.undefined)
     
     @scala.inline
-    def deleteComputeTypeName: Self = this.set("ComputeTypeName", js.undefined)
+    def setRunningMode(value: RunningMode): Self = StObject.set(x, "RunningMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootVolumeSizeGib(value: RootVolumeSizeGib): Self = this.set("RootVolumeSizeGib", value.asInstanceOf[js.Any])
+    def setRunningModeAutoStopTimeoutInMinutes(value: RunningModeAutoStopTimeoutInMinutes): Self = StObject.set(x, "RunningModeAutoStopTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRootVolumeSizeGib: Self = this.set("RootVolumeSizeGib", js.undefined)
+    def setRunningModeAutoStopTimeoutInMinutesUndefined: Self = StObject.set(x, "RunningModeAutoStopTimeoutInMinutes", js.undefined)
     
     @scala.inline
-    def setRunningMode(value: RunningMode): Self = this.set("RunningMode", value.asInstanceOf[js.Any])
+    def setRunningModeUndefined: Self = StObject.set(x, "RunningMode", js.undefined)
     
     @scala.inline
-    def deleteRunningMode: Self = this.set("RunningMode", js.undefined)
+    def setUserVolumeSizeGib(value: UserVolumeSizeGib): Self = StObject.set(x, "UserVolumeSizeGib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunningModeAutoStopTimeoutInMinutes(value: RunningModeAutoStopTimeoutInMinutes): Self = this.set("RunningModeAutoStopTimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunningModeAutoStopTimeoutInMinutes: Self = this.set("RunningModeAutoStopTimeoutInMinutes", js.undefined)
-    
-    @scala.inline
-    def setUserVolumeSizeGib(value: UserVolumeSizeGib): Self = this.set("UserVolumeSizeGib", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVolumeSizeGib: Self = this.set("UserVolumeSizeGib", js.undefined)
+    def setUserVolumeSizeGibUndefined: Self = StObject.set(x, "UserVolumeSizeGib", js.undefined)
   }
 }

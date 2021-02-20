@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushNotification extends js.Object {
+trait PushNotification extends StObject {
   
   /**
     * iOS Only
@@ -66,42 +67,30 @@ object PushNotification {
   }
   
   @scala.inline
-  implicit class PushNotificationOps[Self <: PushNotification] (val x: Self) extends AnyVal {
+  implicit class PushNotificationMutableBuilder[Self <: PushNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinish(value: String => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAlert(value: () => String | js.Object): Self = StObject.set(x, "getAlert", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBadgeCount(value: () => Double): Self = StObject.set(x, "getBadgeCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFinish(value: String => Unit): Self = this.set("finish", js.Any.fromFunction1(value))
+    def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAlert(value: () => String | js.Object): Self = this.set("getAlert", js.Any.fromFunction0(value))
+    def setGetContentAvailable(value: () => Double): Self = StObject.set(x, "getContentAvailable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBadgeCount(value: () => Double): Self = this.set("getBadgeCount", js.Any.fromFunction0(value))
+    def setGetData(value: () => js.Object): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCategory(value: () => String): Self = this.set("getCategory", js.Any.fromFunction0(value))
+    def setGetMessage(value: () => String | js.Object): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContentAvailable(value: () => Double): Self = this.set("getContentAvailable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetData(value: () => js.Object): Self = this.set("getData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMessage(value: () => String | js.Object): Self = this.set("getMessage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSound(value: () => String): Self = this.set("getSound", js.Any.fromFunction0(value))
+    def setGetSound(value: () => String): Self = StObject.set(x, "getSound", js.Any.fromFunction0(value))
   }
 }

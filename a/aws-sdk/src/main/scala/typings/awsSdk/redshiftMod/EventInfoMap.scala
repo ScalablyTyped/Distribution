@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventInfoMap extends js.Object {
+trait EventInfoMap extends StObject {
   
   /**
     * The category of an Amazon Redshift event.
@@ -36,45 +37,33 @@ object EventInfoMap {
   }
   
   @scala.inline
-  implicit class EventInfoMapOps[Self <: EventInfoMap] (val x: Self) extends AnyVal {
+  implicit class EventInfoMapMutableBuilder[Self <: EventInfoMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
     
     @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = this.set("EventCategories", js.Array(value :_*))
+    def setEventDescription(value: String): Self = StObject.set(x, "EventDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCategories(value: EventCategoriesList): Self = this.set("EventCategories", value.asInstanceOf[js.Any])
+    def setEventDescriptionUndefined: Self = StObject.set(x, "EventDescription", js.undefined)
     
     @scala.inline
-    def deleteEventCategories: Self = this.set("EventCategories", js.undefined)
+    def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDescription(value: String): Self = this.set("EventDescription", value.asInstanceOf[js.Any])
+    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
     @scala.inline
-    def deleteEventDescription: Self = this.set("EventDescription", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: String): Self = this.set("EventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventId: Self = this.set("EventId", js.undefined)
-    
-    @scala.inline
-    def setSeverity(value: String): Self = this.set("Severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
   }
 }

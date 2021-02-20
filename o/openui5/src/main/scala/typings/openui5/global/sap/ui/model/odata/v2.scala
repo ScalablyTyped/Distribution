@@ -3,20 +3,20 @@ package typings.openui5.global.sap.ui.model.odata
 import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Model
 import typings.openui5.sap.ui.model.Sorter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.v2")
-@js.native
-object v2 extends js.Object {
+object v2 {
   
+  @JSGlobal("sap.ui.model.odata.v2.ODataAnnotations")
   @js.native
   class ODataAnnotations ()
     extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations
-  @js.native
-  object ODataAnnotations extends js.Object {
+  object ODataAnnotations {
     
+    @JSGlobal("sap.ui.model.odata.v2.ODataAnnotations.constructor")
     @js.native
     class constructor protected ()
       extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations.constructor {
@@ -29,6 +29,7 @@ object v2 extends js.Object {
     }
   }
   
+  @JSGlobal("sap.ui.model.odata.v2.ODataContextBinding")
   @js.native
   abstract class ODataContextBinding protected ()
     extends typings.openui5.sap.ui.model.odata.v2.ODataContextBinding {
@@ -43,6 +44,7 @@ object v2 extends js.Object {
     def this(oModel: Model, sPath: String, oContext: js.Any, mParameters: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v2.ODataListBinding")
   @js.native
   class ODataListBinding protected ()
     extends typings.openui5.sap.ui.model.odata.v2.ODataListBinding {
@@ -90,6 +92,7 @@ object v2 extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v2.ODataModel")
   @js.native
   class ODataModel protected ()
     extends typings.openui5.sap.ui.model.odata.v2.ODataModel {
@@ -104,6 +107,7 @@ object v2 extends js.Object {
     def this(sServiceUrl: String, mParameters: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.v2.ODataTreeBinding")
   @js.native
   class ODataTreeBinding protected ()
     extends typings.openui5.sap.ui.model.odata.v2.ODataTreeBinding {

@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An output of an instruction.
   */
 @js.native
-trait SchemaInstructionOutput extends js.Object {
+trait SchemaInstructionOutput extends StObject {
   
   /**
     * The codec to use to encode data being written via this output.
@@ -54,54 +55,42 @@ object SchemaInstructionOutput {
   }
   
   @scala.inline
-  implicit class SchemaInstructionOutputOps[Self <: SchemaInstructionOutput] (val x: Self) extends AnyVal {
+  implicit class SchemaInstructionOutputMutableBuilder[Self <: SchemaInstructionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: StringDictionary[js.Any]): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("codec", js.undefined)
+    def setOnlyCountKeyBytes(value: Boolean): Self = StObject.set(x, "onlyCountKeyBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnlyCountKeyBytesUndefined: Self = StObject.set(x, "onlyCountKeyBytes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnlyCountValueBytes(value: Boolean): Self = StObject.set(x, "onlyCountValueBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyCountKeyBytes(value: Boolean): Self = this.set("onlyCountKeyBytes", value.asInstanceOf[js.Any])
+    def setOnlyCountValueBytesUndefined: Self = StObject.set(x, "onlyCountValueBytes", js.undefined)
     
     @scala.inline
-    def deleteOnlyCountKeyBytes: Self = this.set("onlyCountKeyBytes", js.undefined)
+    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyCountValueBytes(value: Boolean): Self = this.set("onlyCountValueBytes", value.asInstanceOf[js.Any])
+    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
     @scala.inline
-    def deleteOnlyCountValueBytes: Self = this.set("onlyCountValueBytes", js.undefined)
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalName: Self = this.set("originalName", js.undefined)
-    
-    @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,36 +86,24 @@ object XComplexDescriptionAccess {
   }
   
   @scala.inline
-  implicit class XComplexDescriptionAccessOps[Self <: XComplexDescriptionAccess] (val x: Self) extends AnyVal {
+  implicit class XComplexDescriptionAccessMutableBuilder[Self <: XComplexDescriptionAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplexColumnDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexColumnDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplexRowDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexRowDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetComplexColumnDescriptions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getComplexColumnDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplexColumnDescriptions(value: SafeArray[SafeArray[String]]): Self = this.set("ComplexColumnDescriptions", value.asInstanceOf[js.Any])
+    def setGetComplexRowDescriptions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getComplexRowDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplexRowDescriptions(value: SafeArray[SafeArray[String]]): Self = this.set("ComplexRowDescriptions", value.asInstanceOf[js.Any])
+    def setSetComplexColumnDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setComplexColumnDescriptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetComplexColumnDescriptions(value: () => SafeArray[SafeArray[String]]): Self = this.set("getComplexColumnDescriptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetComplexRowDescriptions(value: () => SafeArray[SafeArray[String]]): Self = this.set("getComplexRowDescriptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetComplexColumnDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = this.set("setComplexColumnDescriptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetComplexRowDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = this.set("setComplexRowDescriptions", js.Any.fromFunction1(value))
+    def setSetComplexRowDescriptions(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = StObject.set(x, "setComplexRowDescriptions", js.Any.fromFunction1(value))
   }
 }

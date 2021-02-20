@@ -3,6 +3,7 @@ package typings.nodeZendesk.mod.Users
 import typings.nodeZendesk.mod.Attachments.Model
 import typings.nodeZendesk.mod.AuditableModel
 import typings.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,186 +109,174 @@ object ResponseModel {
   }
   
   @scala.inline
-  implicit class ResponseModelOps[Self <: ResponseModel] (val x: Self) extends AnyVal {
+  implicit class ResponseModelMutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasNull: Self = StObject.set(x, "alias", null)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setChat_only(value: Boolean): Self = StObject.set(x, "chat_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChat_only(value: Boolean): Self = this.set("chat_only", value.asInstanceOf[js.Any])
+    def setCustom_role_id(value: Double): Self = StObject.set(x, "custom_role_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerator(value: Boolean): Self = this.set("moderator", value.asInstanceOf[js.Any])
+    def setCustom_role_idNull: Self = StObject.set(x, "custom_role_id", null)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDefault_group_id(value: Double): Self = StObject.set(x, "default_group_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnly_private_comments(value: Boolean): Self = this.set("only_private_comments", value.asInstanceOf[js.Any])
+    def setDefault_group_idNull: Self = StObject.set(x, "default_group_id", null)
     
     @scala.inline
-    def setReport_csv(value: Boolean): Self = this.set("report_csv", value.asInstanceOf[js.Any])
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestricted_agent(value: Boolean): Self = this.set("restricted_agent", value.asInstanceOf[js.Any])
+    def setDetailsNull: Self = StObject.set(x, "details", null)
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole_type(value: RoleType): Self = this.set("role_type", value.asInstanceOf[js.Any])
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared_agent(value: Boolean): Self = this.set("shared_agent", value.asInstanceOf[js.Any])
+    def setExternal_idNull: Self = StObject.set(x, "external_id", null)
     
     @scala.inline
-    def setSuspended(value: Boolean): Self = this.set("suspended", value.asInstanceOf[js.Any])
+    def setLast_login_at(value: String): Self = StObject.set(x, "last_login_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwo_factor_auth_enabled(value: Boolean): Self = this.set("two_factor_auth_enabled", value.asInstanceOf[js.Any])
+    def setLast_login_atNull: Self = StObject.set(x, "last_login_at", null)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerified(value: Boolean): Self = this.set("verified", value.asInstanceOf[js.Any])
+    def setLocaleNull: Self = StObject.set(x, "locale", null)
     
     @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setLocale_id(value: Double): Self = StObject.set(x, "locale_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasNull: Self = this.set("alias", null)
+    def setLocale_idNull: Self = StObject.set(x, "locale_id", null)
     
     @scala.inline
-    def setCustom_role_id(value: Double): Self = this.set("custom_role_id", value.asInstanceOf[js.Any])
+    def setModerator(value: Boolean): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_role_idNull: Self = this.set("custom_role_id", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_group_id(value: Double): Self = this.set("default_group_id", value.asInstanceOf[js.Any])
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_group_idNull: Self = this.set("default_group_id", null)
+    def setNotesNull: Self = StObject.set(x, "notes", null)
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setOnly_private_comments(value: Boolean): Self = StObject.set(x, "only_private_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailsNull: Self = this.set("details", null)
+    def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setOrganization_idNull: Self = StObject.set(x, "organization_id", null)
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_id(value: String): Self = this.set("external_id", value.asInstanceOf[js.Any])
+    def setPhoneNull: Self = StObject.set(x, "phone", null)
     
     @scala.inline
-    def setExternal_idNull: Self = this.set("external_id", null)
+    def setPhoto(value: Model): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_login_at(value: String): Self = this.set("last_login_at", value.asInstanceOf[js.Any])
+    def setPhotoNull: Self = StObject.set(x, "photo", null)
     
     @scala.inline
-    def setLast_login_atNull: Self = this.set("last_login_at", null)
+    def setReport_csv(value: Boolean): Self = StObject.set(x, "report_csv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setRestricted_agent(value: Boolean): Self = StObject.set(x, "restricted_agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleNull: Self = this.set("locale", null)
+    def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale_id(value: Double): Self = this.set("locale_id", value.asInstanceOf[js.Any])
+    def setRole_type(value: RoleType): Self = StObject.set(x, "role_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale_idNull: Self = this.set("locale_id", null)
+    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setShared_agent(value: Boolean): Self = StObject.set(x, "shared_agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotesNull: Self = this.set("notes", null)
+    def setShared_phone_number(value: Boolean): Self = StObject.set(x, "shared_phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization_id(value: Double): Self = this.set("organization_id", value.asInstanceOf[js.Any])
+    def setShared_phone_numberNull: Self = StObject.set(x, "shared_phone_number", null)
     
     @scala.inline
-    def setOrganization_idNull: Self = this.set("organization_id", null)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    def setSignatureNull: Self = StObject.set(x, "signature", null)
     
     @scala.inline
-    def setPhoneNull: Self = this.set("phone", null)
+    def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoto(value: Model): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoNull: Self = this.set("photo", null)
+    def setTagsNull: Self = StObject.set(x, "tags", null)
     
     @scala.inline
-    def setShared_phone_number(value: Boolean): Self = this.set("shared_phone_number", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setShared_phone_numberNull: Self = this.set("shared_phone_number", null)
+    def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setTicket_restriction(value: TicketRestriction): Self = StObject.set(x, "ticket_restriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureNull: Self = this.set("signature", null)
+    def setTicket_restrictionNull: Self = StObject.set(x, "ticket_restriction", null)
     
     @scala.inline
-    def setTagsVarargs(value: js.Any*): Self = this.set("tags", js.Array(value :_*))
+    def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[_]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTime_zoneNull: Self = StObject.set(x, "time_zone", null)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTwo_factor_auth_enabled(value: Boolean): Self = StObject.set(x, "two_factor_auth_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsNull: Self = this.set("tags", null)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicket_restriction(value: TicketRestriction): Self = this.set("ticket_restriction", value.asInstanceOf[js.Any])
+    def setUser_fields(value: js.Object): Self = StObject.set(x, "user_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicket_restrictionNull: Self = this.set("ticket_restriction", null)
+    def setUser_fieldsNull: Self = StObject.set(x, "user_fields", null)
     
     @scala.inline
-    def setTime_zone(value: String): Self = this.set("time_zone", value.asInstanceOf[js.Any])
+    def setUser_fieldsUndefined: Self = StObject.set(x, "user_fields", js.undefined)
     
     @scala.inline
-    def setTime_zoneNull: Self = this.set("time_zone", null)
-    
-    @scala.inline
-    def setUser_fields(value: js.Object): Self = this.set("user_fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_fields: Self = this.set("user_fields", js.undefined)
-    
-    @scala.inline
-    def setUser_fieldsNull: Self = this.set("user_fields", null)
+    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

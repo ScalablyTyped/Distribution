@@ -1,14 +1,14 @@
 package typings.awsSdk
 
 import typings.awsSdk.credentialsMod.Credentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/credentials/file_system_credentials", JSImport.Namespace)
-@js.native
-object fileSystemCredentialsMod extends js.Object {
+object fileSystemCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/file_system_credentials", "FileSystemCredentials")
   @js.native
   class FileSystemCredentials protected () extends Credentials {
     /**

@@ -1,11 +1,12 @@
 package typings.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseRequestOptions extends js.Object {
+trait ParseRequestOptions extends StObject {
   
   /**
     * Cookie parser options
@@ -46,54 +47,42 @@ object ParseRequestOptions {
   }
   
   @scala.inline
-  implicit class ParseRequestOptionsOps[Self <: ParseRequestOptions] (val x: Self) extends AnyVal {
+  implicit class ParseRequestOptionsMutableBuilder[Self <: ParseRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookie(value: CookieParserOptionItem): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJson(value: JsonParseOptionItem): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookie(value: CookieParserOptionItem): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
     @scala.inline
-    def deleteCookie: Self = this.set("cookie", js.undefined)
+    def setMultipart(value: MulterOptions): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: JsonParseOptionItem): Self = this.set("json", value.asInstanceOf[js.Any])
+    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
     @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setRaw(value: RawParserOptionItem): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipart(value: MulterOptions): Self = this.set("multipart", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteMultipart: Self = this.set("multipart", js.undefined)
+    def setText(value: TextParserOptionItem): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: RawParserOptionItem): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setUrlencoded(value: UrlEncodedOptionItem): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: TextParserOptionItem): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUrlencoded(value: UrlEncodedOptionItem): Self = this.set("urlencoded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlencoded: Self = this.set("urlencoded", js.undefined)
+    def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
   }
 }

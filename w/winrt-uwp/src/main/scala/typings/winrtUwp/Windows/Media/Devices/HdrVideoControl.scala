@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to enable High Dynamic Range (HDR) video recording on the capture device. */
 @js.native
-trait HdrVideoControl extends js.Object {
+trait HdrVideoControl extends StObject {
   
   /** Gets or sets a value indicating the current High Dynamic Range (HDR) video recording mode of the capture device. */
   var mode: HdrVideoMode = js.native
@@ -27,27 +28,15 @@ object HdrVideoControl {
   }
   
   @scala.inline
-  implicit class HdrVideoControlOps[Self <: HdrVideoControl] (val x: Self) extends AnyVal {
+  implicit class HdrVideoControlMutableBuilder[Self <: HdrVideoControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: HdrVideoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMode(value: HdrVideoMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedModes(value: IVectorView[HdrVideoMode]): Self = this.set("supportedModes", value.asInstanceOf[js.Any])
+    def setSupportedModes(value: IVectorView[HdrVideoMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
   }
 }

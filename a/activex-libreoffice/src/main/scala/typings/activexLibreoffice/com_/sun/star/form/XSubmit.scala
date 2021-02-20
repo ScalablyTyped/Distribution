@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.MouseEvent
 import typings.activexLibreoffice.com_.sun.star.awt.XControl
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,27 +57,15 @@ object XSubmit {
   }
   
   @scala.inline
-  implicit class XSubmitOps[Self <: XSubmit] (val x: Self) extends AnyVal {
+  implicit class XSubmitMutableBuilder[Self <: XSubmit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "addSubmitListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "removeSubmitListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddSubmitListener(value: XSubmitListener => Unit): Self = this.set("addSubmitListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSubmitListener(value: XSubmitListener => Unit): Self = this.set("removeSubmitListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubmit(value: (XControl, MouseEvent) => Unit): Self = this.set("submit", js.Any.fromFunction2(value))
+    def setSubmit(value: (XControl, MouseEvent) => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
   }
 }

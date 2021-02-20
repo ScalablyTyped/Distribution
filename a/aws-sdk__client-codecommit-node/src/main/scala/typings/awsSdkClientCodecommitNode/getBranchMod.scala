@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/GetBranch", JSImport.Namespace)
-@js.native
-object getBranchMod extends js.Object {
+object getBranchMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/GetBranch", "GetBranch")
+  @js.native
   val GetBranch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

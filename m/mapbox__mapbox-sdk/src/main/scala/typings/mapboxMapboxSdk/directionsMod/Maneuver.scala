@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Maneuver extends js.Object {
+trait Maneuver extends StObject {
   
   /**
     * Number between 0 and 360 indicating the clockwise angle from true north to the direction of travel right after the maneuver
@@ -53,42 +54,30 @@ object Maneuver {
   }
   
   @scala.inline
-  implicit class ManeuverOps[Self <: Maneuver] (val x: Self) extends AnyVal {
+  implicit class ManeuverMutableBuilder[Self <: Maneuver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearing_after(value: Double): Self = StObject.set(x, "bearing_after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearing_before(value: Double): Self = StObject.set(x, "bearing_before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearing_after(value: Double): Self = this.set("bearing_after", value.asInstanceOf[js.Any])
+    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearing_before(value: Double): Self = this.set("bearing_before", value.asInstanceOf[js.Any])
+    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setModifier(value: ManeuverModifier): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationVarargs(value: Double*): Self = this.set("location", js.Array(value :_*))
+    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def setLocation(value: js.Array[Double]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ManeuverType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifier(value: ManeuverModifier): Self = this.set("modifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifier: Self = this.set("modifier", js.undefined)
+    def setType(value: ManeuverType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

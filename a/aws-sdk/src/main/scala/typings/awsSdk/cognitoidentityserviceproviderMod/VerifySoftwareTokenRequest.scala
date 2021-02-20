@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerifySoftwareTokenRequest extends js.Object {
+trait VerifySoftwareTokenRequest extends StObject {
   
   /**
     * The access token.
@@ -36,39 +37,27 @@ object VerifySoftwareTokenRequest {
   }
   
   @scala.inline
-  implicit class VerifySoftwareTokenRequestOps[Self <: VerifySoftwareTokenRequest] (val x: Self) extends AnyVal {
+  implicit class VerifySoftwareTokenRequestMutableBuilder[Self <: VerifySoftwareTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriendlyDeviceName(value: StringType): Self = StObject.set(x, "FriendlyDeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserCode(value: SoftwareTokenMFAUserCodeType): Self = this.set("UserCode", value.asInstanceOf[js.Any])
+    def setFriendlyDeviceNameUndefined: Self = StObject.set(x, "FriendlyDeviceName", js.undefined)
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
     @scala.inline
-    def setFriendlyDeviceName(value: StringType): Self = this.set("FriendlyDeviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFriendlyDeviceName: Self = this.set("FriendlyDeviceName", js.undefined)
-    
-    @scala.inline
-    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("Session", js.undefined)
+    def setUserCode(value: SoftwareTokenMFAUserCodeType): Self = StObject.set(x, "UserCode", value.asInstanceOf[js.Any])
   }
 }

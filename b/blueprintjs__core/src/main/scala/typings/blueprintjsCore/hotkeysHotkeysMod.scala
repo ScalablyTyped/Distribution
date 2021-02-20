@@ -4,26 +4,39 @@ import typings.blueprintjsCore.anon.IHotkeysPropschildrenReac
 import typings.blueprintjsCore.anon.TabIndex
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.hotkeysTypesMod.IHotkeysProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", JSImport.Namespace)
-@js.native
-object hotkeysHotkeysMod extends js.Object {
+object hotkeysHotkeysMod {
   
+  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "Hotkeys")
   @js.native
-  class Hotkeys ()
+  class Hotkeys protected ()
     extends AbstractPureComponent2[IHotkeysProps, js.Object, js.Object] {
+    def this(props: IHotkeysProps) = this()
+    def this(props: IHotkeysProps, context: js.Any) = this()
     
     /* protected */ def validateProps(props: IHotkeysPropschildrenReac): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Hotkeys extends js.Object {
+  object Hotkeys {
     
-    var defaultProps: TabIndex = js.native
+    @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "Hotkeys")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var displayName: String = js.native
+    @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "Hotkeys.defaultProps")
+    @js.native
+    def defaultProps: TabIndex = js.native
+    @scala.inline
+    def defaultProps_=(x: TabIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "Hotkeys.displayName")
+    @js.native
+    def displayName: String = js.native
+    @scala.inline
+    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

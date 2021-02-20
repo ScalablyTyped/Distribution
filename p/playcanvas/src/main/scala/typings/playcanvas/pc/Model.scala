@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property morphInstances - An array of MorphInstances contained in this model.
   */
 @js.native
-trait Model extends js.Object {
+trait Model extends StObject {
   
   /**
     * Destroys skinning texture and possibly deletes vertex/index buffers of a model.
@@ -74,45 +75,33 @@ object Model {
   }
   
   @scala.inline
-  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerateWireframe(value: () => Unit): Self = StObject.set(x, "generateWireframe", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraph(value: GraphNode): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setMeshInstances(value: js.Array[MeshInstance]): Self = StObject.set(x, "meshInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateWireframe(value: () => Unit): Self = this.set("generateWireframe", js.Any.fromFunction0(value))
+    def setMeshInstancesVarargs(value: MeshInstance*): Self = StObject.set(x, "meshInstances", js.Array(value :_*))
     
     @scala.inline
-    def setGraph(value: GraphNode): Self = this.set("graph", value.asInstanceOf[js.Any])
+    def setMorphInstances(value: js.Array[MorphInstance]): Self = StObject.set(x, "morphInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshInstancesVarargs(value: MeshInstance*): Self = this.set("meshInstances", js.Array(value :_*))
+    def setMorphInstancesVarargs(value: MorphInstance*): Self = StObject.set(x, "morphInstances", js.Array(value :_*))
     
     @scala.inline
-    def setMeshInstances(value: js.Array[MeshInstance]): Self = this.set("meshInstances", value.asInstanceOf[js.Any])
+    def setSkinInstances(value: js.Array[SkinInstance]): Self = StObject.set(x, "skinInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMorphInstancesVarargs(value: MorphInstance*): Self = this.set("morphInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setMorphInstances(value: js.Array[MorphInstance]): Self = this.set("morphInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkinInstancesVarargs(value: SkinInstance*): Self = this.set("skinInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkinInstances(value: js.Array[SkinInstance]): Self = this.set("skinInstances", value.asInstanceOf[js.Any])
+    def setSkinInstancesVarargs(value: SkinInstance*): Self = StObject.set(x, "skinInstances", js.Array(value :_*))
   }
 }

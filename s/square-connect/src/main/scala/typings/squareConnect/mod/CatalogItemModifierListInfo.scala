@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItemModifierListInfo")
 @js.native
-class CatalogItemModifierListInfo () extends js.Object {
+class CatalogItemModifierListInfo () extends StObject {
   
   /**
     * If `true`, enable this `CatalogModifierList`. The default value is `true`.

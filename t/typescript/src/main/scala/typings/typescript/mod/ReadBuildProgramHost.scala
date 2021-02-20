@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadBuildProgramHost extends js.Object {
+trait ReadBuildProgramHost extends StObject {
   
   def getCurrentDirectory(): java.lang.String = js.native
   
@@ -26,27 +27,15 @@ object ReadBuildProgramHost {
   }
   
   @scala.inline
-  implicit class ReadBuildProgramHostOps[Self <: ReadBuildProgramHost] (val x: Self) extends AnyVal {
+  implicit class ReadBuildProgramHostMutableBuilder[Self <: ReadBuildProgramHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = this.set("getCurrentDirectory", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = this.set("readFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUseCaseSensitiveFileNames(value: () => Boolean): Self = this.set("useCaseSensitiveFileNames", js.Any.fromFunction0(value))
+    def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
   }
 }

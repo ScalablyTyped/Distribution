@@ -1,6 +1,7 @@
 package typings.three.mod
 
 import typings.three.geometryMod.MorphTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,19 +79,29 @@ class AnimationClip ()
   ) = this()
 }
 /* static members */
-@JSImport("three", "AnimationClip")
-@js.native
-object AnimationClip extends js.Object {
+object AnimationClip {
   
+  @JSImport("three", "AnimationClip.CreateClipsFromMorphTargetSequences")
+  @js.native
   def CreateClipsFromMorphTargetSequences(morphTargets: js.Array[MorphTarget], fps: Double, noLoop: Boolean): js.Array[typings.three.animationClipMod.AnimationClip] = js.native
   
+  @JSImport("three", "AnimationClip.CreateFromMorphTargetSequence")
+  @js.native
   def CreateFromMorphTargetSequence(name: String, morphTargetSequence: js.Array[MorphTarget], fps: Double, noLoop: Boolean): typings.three.animationClipMod.AnimationClip = js.native
   
+  @JSImport("three", "AnimationClip.findByName")
+  @js.native
   def findByName(clipArray: js.Array[typings.three.animationClipMod.AnimationClip], name: String): typings.three.animationClipMod.AnimationClip = js.native
   
+  @JSImport("three", "AnimationClip.parse")
+  @js.native
   def parse(json: js.Any): typings.three.animationClipMod.AnimationClip = js.native
   
+  @JSImport("three", "AnimationClip.parseAnimation")
+  @js.native
   def parseAnimation(animation: js.Any, bones: js.Array[typings.three.boneMod.Bone]): typings.three.animationClipMod.AnimationClip = js.native
   
+  @JSImport("three", "AnimationClip.toJSON")
+  @js.native
   def toJSON(clip: typings.three.animationClipMod.AnimationClip): js.Any = js.native
 }

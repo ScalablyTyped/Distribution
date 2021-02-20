@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CbOnlyInterface[Context] extends js.Object {
+trait CbOnlyInterface[Context] extends StObject {
   
   /**
   	 * Declare a test that must call `t.end()` when it's done. Only this test and others declared with `.only()` are run.

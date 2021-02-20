@@ -1,11 +1,12 @@
 package typings.saxes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLDecl extends js.Object {
+trait XMLDecl extends StObject {
   
   /** The encoding specified by the XML declaration. */
   var encoding: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object XMLDecl {
   }
   
   @scala.inline
-  implicit class XMLDeclOps[Self <: XMLDecl] (val x: Self) extends AnyVal {
+  implicit class XMLDeclMutableBuilder[Self <: XMLDecl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandalone(value: String): Self = this.set("standalone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandalone: Self = this.set("standalone", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

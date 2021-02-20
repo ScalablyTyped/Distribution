@@ -1,11 +1,12 @@
 package typings.knuddelsUserappsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnEnd extends js.Object {
+trait OnEnd extends StObject {
   
   var onEnd: js.UndefOr[
     js.Function2[/* accessibleUserCount */ Double, /* key */ js.UndefOr[String], Unit]
@@ -26,36 +27,24 @@ object OnEnd {
   }
   
   @scala.inline
-  implicit class OnEndOps[Self <: OnEnd] (val x: Self) extends AnyVal {
+  implicit class OnEndMutableBuilder[Self <: OnEnd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnEnd(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnStart(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnEnd(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = this.set("onEnd", js.Any.fromFunction2(value))
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
     @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStart(value: (/* accessibleUserCount */ Double, /* key */ js.UndefOr[String]) => Unit): Self = this.set("onStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
-    
-    @scala.inline
-    def setOnline(value: Boolean): Self = this.set("online", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnline: Self = this.set("online", js.undefined)
+    def setOnlineUndefined: Self = StObject.set(x, "online", js.undefined)
   }
 }

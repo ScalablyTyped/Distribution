@@ -1,12 +1,12 @@
 package typings.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pipe extends js.Object {
+trait Pipe extends StObject {
   
   /**
     * The pipe name to use in template bindings.
@@ -27,6 +27,22 @@ trait Pipe extends js.Object {
     */
   var pure: js.UndefOr[Boolean] = js.native
 }
-@JSImport("@angular/core", "Pipe")
-@js.native
-object Pipe extends TopLevel[PipeDecorator]
+object Pipe {
+  
+  @JSImport("@angular/core", "Pipe")
+  @js.native
+  val ^ : PipeDecorator = js.native
+  
+  @scala.inline
+  implicit class PipeMutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+  }
+}

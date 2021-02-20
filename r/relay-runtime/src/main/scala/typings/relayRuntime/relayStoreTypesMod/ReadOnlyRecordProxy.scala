@@ -2,12 +2,13 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadOnlyRecordProxy extends js.Object {
+trait ReadOnlyRecordProxy extends StObject {
   
   def getDataID(): DataID = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetParametersResult extends js.Object {
+trait GetParametersResult extends StObject {
   
   /**
     * A list of parameters that are not formatted correctly or do not run during an execution.
@@ -26,36 +27,24 @@ object GetParametersResult {
   }
   
   @scala.inline
-  implicit class GetParametersResultOps[Self <: GetParametersResult] (val x: Self) extends AnyVal {
+  implicit class GetParametersResultMutableBuilder[Self <: GetParametersResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidParameters(value: ParameterNameList): Self = StObject.set(x, "InvalidParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidParametersUndefined: Self = StObject.set(x, "InvalidParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value :_*))
     
     @scala.inline
-    def setInvalidParametersVarargs(value: PSParameterName*): Self = this.set("InvalidParameters", js.Array(value :_*))
+    def setParameters(value: ParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidParameters(value: ParameterNameList): Self = this.set("InvalidParameters", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteInvalidParameters: Self = this.set("InvalidParameters", js.undefined)
-    
-    @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: ParameterList): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
   }
 }

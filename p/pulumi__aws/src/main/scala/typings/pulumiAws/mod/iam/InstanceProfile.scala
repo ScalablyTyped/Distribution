@@ -5,6 +5,7 @@ import typings.pulumiAws.instanceProfileMod.InstanceProfileState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class InstanceProfile protected ()
   def this(name: String, args: InstanceProfileArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "iam.InstanceProfile")
-@js.native
-object InstanceProfile extends js.Object {
+object InstanceProfile {
   
   /**
     * Get an existing InstanceProfile resource's state with the given name, ID, and optional extra
@@ -39,14 +38,24 @@ object InstanceProfile extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws", "iam.InstanceProfile.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.instanceProfileMod.InstanceProfile = js.native
+  @JSImport("@pulumi/aws", "iam.InstanceProfile.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.instanceProfileMod.InstanceProfile = js.native
+  @JSImport("@pulumi/aws", "iam.InstanceProfile.get")
+  @js.native
   def get(name: String, id: Input[ID], state: InstanceProfileState): typings.pulumiAws.instanceProfileMod.InstanceProfile = js.native
+  @JSImport("@pulumi/aws", "iam.InstanceProfile.get")
+  @js.native
   def get(name: String, id: Input[ID], state: InstanceProfileState, opts: CustomResourceOptions): typings.pulumiAws.instanceProfileMod.InstanceProfile = js.native
   
   /**
     * Returns true if the given object is an instance of InstanceProfile.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "iam.InstanceProfile.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/instanceProfile.InstanceProfile */ Boolean = js.native
 }

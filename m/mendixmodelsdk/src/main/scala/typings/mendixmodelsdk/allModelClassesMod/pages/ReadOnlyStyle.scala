@@ -1,21 +1,41 @@
 package typings.mendixmodelsdk.allModelClassesMod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ReadOnlyStyle")
 @js.native
-class ReadOnlyStyle ()
-  extends typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ReadOnlyStyle")
-@js.native
-object ReadOnlyStyle extends js.Object {
+class ReadOnlyStyle protected ()
+  extends typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object ReadOnlyStyle {
   
-  var Control: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ReadOnlyStyle")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Inherit: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ReadOnlyStyle.Control")
+  @js.native
+  def Control: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle = js.native
+  @scala.inline
+  def Control_=(x: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
   
-  var Text: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ReadOnlyStyle.Inherit")
+  @js.native
+  def Inherit: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle = js.native
+  @scala.inline
+  def Inherit_=(x: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inherit")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ReadOnlyStyle.Text")
+  @js.native
+  def Text: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle = js.native
+  @scala.inline
+  def Text_=(x: typings.mendixmodelsdk.pagesMod.pages.ReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

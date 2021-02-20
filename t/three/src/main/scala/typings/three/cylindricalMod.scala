@@ -1,16 +1,16 @@
 package typings.three
 
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Cylindrical", JSImport.Namespace)
-@js.native
-object cylindricalMod extends js.Object {
+object cylindricalMod {
   
+  @JSImport("three/src/math/Cylindrical", "Cylindrical")
   @js.native
-  class Cylindrical () extends js.Object {
+  class Cylindrical () extends StObject {
     def this(radius: Double) = this()
     def this(radius: js.UndefOr[scala.Nothing], theta: Double) = this()
     def this(radius: Double, theta: Double) = this()

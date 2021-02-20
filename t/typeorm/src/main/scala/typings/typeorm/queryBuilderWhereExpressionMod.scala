@@ -2,16 +2,15 @@ package typings.typeorm
 
 import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.queryBuilderBracketsMod.Brackets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/WhereExpression", JSImport.Namespace)
-@js.native
-object queryBuilderWhereExpressionMod extends js.Object {
+object queryBuilderWhereExpressionMod {
   
   @js.native
-  trait WhereExpression extends js.Object {
+  trait WhereExpression extends StObject {
     
     /**
       * Adds new AND WHERE condition in the query builder.

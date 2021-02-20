@@ -12,12 +12,13 @@ import typings.inboxsdk.mod.Search.SearchInstance
 import typings.inboxsdk.mod.Toolbars.ToolbarsInstance
 import typings.inboxsdk.mod.User.UserInstance
 import typings.inboxsdk.mod.Widgets.WidgetsInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InboxSDKInstance extends js.Object {
+trait InboxSDKInstance extends StObject {
   
   var ButterBar: ButterBarInstance = js.native
   
@@ -65,54 +66,42 @@ object InboxSDKInstance {
   }
   
   @scala.inline
-  implicit class InboxSDKInstanceOps[Self <: InboxSDKInstance] (val x: Self) extends AnyVal {
+  implicit class InboxSDKInstanceMutableBuilder[Self <: InboxSDKInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButterBar(value: ButterBarInstance): Self = StObject.set(x, "ButterBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompose(value: ComposeInstance): Self = StObject.set(x, "Compose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversations(value: ConversationsInstance): Self = StObject.set(x, "Conversations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButterBar(value: ButterBarInstance): Self = this.set("ButterBar", value.asInstanceOf[js.Any])
+    def setGlobal(value: GlobalInstance): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompose(value: ComposeInstance): Self = this.set("Compose", value.asInstanceOf[js.Any])
+    def setKeyboard(value: KeyboardInstance): Self = StObject.set(x, "Keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversations(value: ConversationsInstance): Self = this.set("Conversations", value.asInstanceOf[js.Any])
+    def setLists(value: ListsInstance): Self = StObject.set(x, "Lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: GlobalInstance): Self = this.set("Global", value.asInstanceOf[js.Any])
+    def setNavMenu(value: NavMenuInstance): Self = StObject.set(x, "NavMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: KeyboardInstance): Self = this.set("Keyboard", value.asInstanceOf[js.Any])
+    def setRouter(value: RouterInstance): Self = StObject.set(x, "Router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLists(value: ListsInstance): Self = this.set("Lists", value.asInstanceOf[js.Any])
+    def setSearch(value: SearchInstance): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavMenu(value: NavMenuInstance): Self = this.set("NavMenu", value.asInstanceOf[js.Any])
+    def setToolbars(value: ToolbarsInstance): Self = StObject.set(x, "Toolbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouter(value: RouterInstance): Self = this.set("Router", value.asInstanceOf[js.Any])
+    def setUser(value: UserInstance): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: SearchInstance): Self = this.set("Search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolbars(value: ToolbarsInstance): Self = this.set("Toolbars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: UserInstance): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidgets(value: WidgetsInstance): Self = this.set("Widgets", value.asInstanceOf[js.Any])
+    def setWidgets(value: WidgetsInstance): Self = StObject.set(x, "Widgets", value.asInstanceOf[js.Any])
   }
 }

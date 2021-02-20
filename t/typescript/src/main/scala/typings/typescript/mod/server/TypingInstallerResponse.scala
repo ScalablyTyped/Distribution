@@ -1,11 +1,12 @@
 package typings.typescript.mod.server
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypingInstallerResponse extends js.Object {
+trait TypingInstallerResponse extends StObject {
   
   val kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed = js.native
 }
@@ -20,23 +21,11 @@ object TypingInstallerResponse {
   }
   
   @scala.inline
-  implicit class TypingInstallerResponseOps[Self <: TypingInstallerResponse] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TypingInstallerResponseMutableBuilder[Self <: TypingInstallerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setKind(
       value: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed
-    ): Self = this.set("kind", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

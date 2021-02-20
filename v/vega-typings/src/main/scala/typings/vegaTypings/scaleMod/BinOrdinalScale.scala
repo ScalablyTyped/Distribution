@@ -2,6 +2,7 @@ package typings.vegaTypings.scaleMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.`bin-ordinal`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,45 +31,33 @@ object BinOrdinalScale {
   }
   
   @scala.inline
-  implicit class BinOrdinalScaleOps[Self <: BinOrdinalScale] (val x: Self) extends AnyVal {
+  implicit class BinOrdinalScaleMutableBuilder[Self <: BinOrdinalScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: `bin-ordinal`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinsVarargs(value: (Double | SignalRef)*): Self = this.set("bins", js.Array(value :_*))
+    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
     @scala.inline
-    def setBins(value: ScaleBins): Self = this.set("bins", value.asInstanceOf[js.Any])
+    def setRange(value: RangeScheme | ScaleData): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBins: Self = this.set("bins", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def setInterpolate(value: ScaleInterpolate): Self = this.set("interpolate", value.asInstanceOf[js.Any])
+    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
     
     @scala.inline
-    def deleteInterpolate: Self = this.set("interpolate", js.undefined)
-    
-    @scala.inline
-    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = this.set("range", js.Array(value :_*))
-    
-    @scala.inline
-    def setRange(value: RangeScheme | ScaleData): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setType(value: `bin-ordinal`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

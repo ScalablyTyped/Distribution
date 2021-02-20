@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDatastore.anon.Accesstoken
 import typings.maximMazurokGapiClientDatastore.anon.Alt
 import typings.maximMazurokGapiClientDatastore.anon.Callback
 import typings.maximMazurokGapiClientDatastore.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexesResource extends js.Object {
+trait IndexesResource extends StObject {
   
   /**
     * Creates the specified index. A newly created index's initial state is `CREATING`. On completion of the returned google.longrunning.Operation, the state will be `READY`. If the index

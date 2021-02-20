@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesis
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsApplicationOutput extends js.Object {
+trait AnalyticsApplicationOutput extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
@@ -49,48 +50,36 @@ object AnalyticsApplicationOutput {
   }
   
   @scala.inline
-  implicit class AnalyticsApplicationOutputOps[Self <: AnalyticsApplicationOutput] (val x: Self) extends AnyVal {
+  implicit class AnalyticsApplicationOutputMutableBuilder[Self <: AnalyticsApplicationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKinesisFirehose(value: Input[AnalyticsApplicationOutputKinesisFirehose]): Self = StObject.set(x, "kinesisFirehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseUndefined: Self = StObject.set(x, "kinesisFirehose", js.undefined)
     
     @scala.inline
-    def setSchema(value: Input[AnalyticsApplicationOutputSchema]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setKinesisStream(value: Input[AnalyticsApplicationOutputKinesisStream]): Self = StObject.set(x, "kinesisStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKinesisStreamUndefined: Self = StObject.set(x, "kinesisStream", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLambda(value: Input[AnalyticsApplicationOutputLambda]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisFirehose(value: Input[AnalyticsApplicationOutputKinesisFirehose]): Self = this.set("kinesisFirehose", value.asInstanceOf[js.Any])
+    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
     @scala.inline
-    def deleteKinesisFirehose: Self = this.set("kinesisFirehose", js.undefined)
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisStream(value: Input[AnalyticsApplicationOutputKinesisStream]): Self = this.set("kinesisStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStream: Self = this.set("kinesisStream", js.undefined)
-    
-    @scala.inline
-    def setLambda(value: Input[AnalyticsApplicationOutputLambda]): Self = this.set("lambda", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambda: Self = this.set("lambda", js.undefined)
+    def setSchema(value: Input[AnalyticsApplicationOutputSchema]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

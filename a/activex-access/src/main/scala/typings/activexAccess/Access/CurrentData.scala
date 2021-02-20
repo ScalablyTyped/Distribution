@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentData extends js.Object {
+trait CurrentData extends StObject {
   
   @JSName("Access.CurrentData_typekey")
   var AccessDotCurrentData_typekey: CurrentData = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminManagedRestrictions extends js.Object {
+trait AdminManagedRestrictions extends StObject {
   
   /** Whether administrative privileges on this shared drive are required to modify restrictions. */
   var adminManagedRestrictions: js.UndefOr[Boolean] = js.native
@@ -34,42 +35,30 @@ object AdminManagedRestrictions {
   }
   
   @scala.inline
-  implicit class AdminManagedRestrictionsOps[Self <: AdminManagedRestrictions] (val x: Self) extends AnyVal {
+  implicit class AdminManagedRestrictionsMutableBuilder[Self <: AdminManagedRestrictions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminManagedRestrictions(value: Boolean): Self = StObject.set(x, "adminManagedRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminManagedRestrictionsUndefined: Self = StObject.set(x, "adminManagedRestrictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyRequiresWriterPermission(value: Boolean): Self = StObject.set(x, "copyRequiresWriterPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminManagedRestrictions(value: Boolean): Self = this.set("adminManagedRestrictions", value.asInstanceOf[js.Any])
+    def setCopyRequiresWriterPermissionUndefined: Self = StObject.set(x, "copyRequiresWriterPermission", js.undefined)
     
     @scala.inline
-    def deleteAdminManagedRestrictions: Self = this.set("adminManagedRestrictions", js.undefined)
+    def setDomainUsersOnly(value: Boolean): Self = StObject.set(x, "domainUsersOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyRequiresWriterPermission(value: Boolean): Self = this.set("copyRequiresWriterPermission", value.asInstanceOf[js.Any])
+    def setDomainUsersOnlyUndefined: Self = StObject.set(x, "domainUsersOnly", js.undefined)
     
     @scala.inline
-    def deleteCopyRequiresWriterPermission: Self = this.set("copyRequiresWriterPermission", js.undefined)
+    def setDriveMembersOnly(value: Boolean): Self = StObject.set(x, "driveMembersOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainUsersOnly(value: Boolean): Self = this.set("domainUsersOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainUsersOnly: Self = this.set("domainUsersOnly", js.undefined)
-    
-    @scala.inline
-    def setDriveMembersOnly(value: Boolean): Self = this.set("driveMembersOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriveMembersOnly: Self = this.set("driveMembersOnly", js.undefined)
+    def setDriveMembersOnlyUndefined: Self = StObject.set(x, "driveMembersOnly", js.undefined)
   }
 }

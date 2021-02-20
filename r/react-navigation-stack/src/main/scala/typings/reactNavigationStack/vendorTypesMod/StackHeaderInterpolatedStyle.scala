@@ -1,11 +1,12 @@
 package typings.reactNavigationStack.vendorTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackHeaderInterpolatedStyle extends js.Object {
+trait StackHeaderInterpolatedStyle extends StObject {
   
   /**
     * Interpolated style for the header background.
@@ -41,48 +42,36 @@ object StackHeaderInterpolatedStyle {
   }
   
   @scala.inline
-  implicit class StackHeaderInterpolatedStyleOps[Self <: StackHeaderInterpolatedStyle] (val x: Self) extends AnyVal {
+  implicit class StackHeaderInterpolatedStyleMutableBuilder[Self <: StackHeaderInterpolatedStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundStyle(value: js.Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftButtonStyle(value: js.Any): Self = StObject.set(x, "leftButtonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundStyle(value: js.Any): Self = this.set("backgroundStyle", value.asInstanceOf[js.Any])
+    def setLeftButtonStyleUndefined: Self = StObject.set(x, "leftButtonStyle", js.undefined)
     
     @scala.inline
-    def deleteBackgroundStyle: Self = this.set("backgroundStyle", js.undefined)
+    def setLeftLabelStyle(value: js.Any): Self = StObject.set(x, "leftLabelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftButtonStyle(value: js.Any): Self = this.set("leftButtonStyle", value.asInstanceOf[js.Any])
+    def setLeftLabelStyleUndefined: Self = StObject.set(x, "leftLabelStyle", js.undefined)
     
     @scala.inline
-    def deleteLeftButtonStyle: Self = this.set("leftButtonStyle", js.undefined)
+    def setRightButtonStyle(value: js.Any): Self = StObject.set(x, "rightButtonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftLabelStyle(value: js.Any): Self = this.set("leftLabelStyle", value.asInstanceOf[js.Any])
+    def setRightButtonStyleUndefined: Self = StObject.set(x, "rightButtonStyle", js.undefined)
     
     @scala.inline
-    def deleteLeftLabelStyle: Self = this.set("leftLabelStyle", js.undefined)
+    def setTitleStyle(value: js.Any): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightButtonStyle(value: js.Any): Self = this.set("rightButtonStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightButtonStyle: Self = this.set("rightButtonStyle", js.undefined)
-    
-    @scala.inline
-    def setTitleStyle(value: js.Any): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
   }
 }

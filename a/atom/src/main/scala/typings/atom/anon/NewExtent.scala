@@ -1,12 +1,13 @@
 package typings.atom.anon
 
 import typings.atom.mod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewExtent extends js.Object {
+trait NewExtent extends StObject {
   
   /** A Point representing the replacement extent. */
   var newExtent: Point = js.native
@@ -29,30 +30,18 @@ object NewExtent {
   }
   
   @scala.inline
-  implicit class NewExtentOps[Self <: NewExtent] (val x: Self) extends AnyVal {
+  implicit class NewExtentMutableBuilder[Self <: NewExtent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewExtent(value: Point): Self = this.set("newExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewText(value: String): Self = this.set("newText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldExtent(value: Point): Self = this.set("oldExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Point): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

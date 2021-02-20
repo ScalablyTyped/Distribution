@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluateOnCallFrameParameterType extends js.Object {
+trait EvaluateOnCallFrameParameterType extends StObject {
   
   /**
     * Call frame identifier to evaluate on.
@@ -57,60 +58,48 @@ object EvaluateOnCallFrameParameterType {
   }
   
   @scala.inline
-  implicit class EvaluateOnCallFrameParameterTypeOps[Self <: EvaluateOnCallFrameParameterType] (val x: Self) extends AnyVal {
+  implicit class EvaluateOnCallFrameParameterTypeMutableBuilder[Self <: EvaluateOnCallFrameParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = this.set("callFrameId", value.asInstanceOf[js.Any])
+    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratePreview(value: Boolean): Self = this.set("generatePreview", value.asInstanceOf[js.Any])
+    def setIncludeCommandLineAPIUndefined: Self = StObject.set(x, "includeCommandLineAPI", js.undefined)
     
     @scala.inline
-    def deleteGeneratePreview: Self = this.set("generatePreview", js.undefined)
+    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCommandLineAPI(value: Boolean): Self = this.set("includeCommandLineAPI", value.asInstanceOf[js.Any])
+    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
     
     @scala.inline
-    def deleteIncludeCommandLineAPI: Self = this.set("includeCommandLineAPI", js.undefined)
+    def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectGroup(value: String): Self = this.set("objectGroup", value.asInstanceOf[js.Any])
+    def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
     
     @scala.inline
-    def deleteObjectGroup: Self = this.set("objectGroup", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnByValue(value: Boolean): Self = this.set("returnByValue", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteReturnByValue: Self = this.set("returnByValue", js.undefined)
+    def setThrowOnSideEffect(value: Boolean): Self = StObject.set(x, "throwOnSideEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
-    
-    @scala.inline
-    def setThrowOnSideEffect(value: Boolean): Self = this.set("throwOnSideEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrowOnSideEffect: Self = this.set("throwOnSideEffect", js.undefined)
+    def setThrowOnSideEffectUndefined: Self = StObject.set(x, "throwOnSideEffect", js.undefined)
   }
 }

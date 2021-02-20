@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`raster-shaded-relief`
 import typings.arcgisJsApi.arcgisJsApiStrings.adjusted
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.traditional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

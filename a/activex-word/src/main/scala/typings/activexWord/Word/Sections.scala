@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sections extends js.Object {
+trait Sections extends StObject {
   
   def Add(): Section = js.native
   def Add(Range: js.UndefOr[scala.Nothing], Start: js.Any): Section = js.native

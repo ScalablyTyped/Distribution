@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`18`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,51 +38,39 @@ object FunctionExpression {
   }
   
   @scala.inline
-  implicit class FunctionExpressionOps[Self <: FunctionExpression] (val x: Self) extends AnyVal {
+  implicit class FunctionExpressionMutableBuilder[Self <: FunctionExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: BlockStatement | IfStatement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSlot(value: Boolean): Self = StObject.set(x, "isSlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSlot(value: Boolean): Self = this.set("isSlot", value.asInstanceOf[js.Any])
+    def setNewline(value: Boolean): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewline(value: Boolean): Self = this.set("newline", value.asInstanceOf[js.Any])
+    def setParams(value: ExpressionNode | String | (js.Array[ExpressionNode | String])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `18`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setBody(value: BlockStatement | IfStatement): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: (ExpressionNode | String)*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: (ExpressionNode | String)*): Self = this.set("params", js.Array(value :_*))
+    def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
     @scala.inline
-    def setParams(value: ExpressionNode | String | (js.Array[ExpressionNode | String])): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setReturnsVarargs(value: TemplateChildNode*): Self = this.set("returns", js.Array(value :_*))
-    
-    @scala.inline
-    def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = this.set("returns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturns: Self = this.set("returns", js.undefined)
+    def setType(value: `18`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

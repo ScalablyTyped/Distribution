@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JwtAuthorizer extends js.Object {
+trait JwtAuthorizer extends StObject {
   
   var audience: js.Array[String] = js.native
   
@@ -22,30 +23,18 @@ object JwtAuthorizer {
   }
   
   @scala.inline
-  implicit class JwtAuthorizerOps[Self <: JwtAuthorizer] (val x: Self) extends AnyVal {
+  implicit class JwtAuthorizerMutableBuilder[Self <: JwtAuthorizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudience(value: js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentitySource(value: String): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudienceVarargs(value: String*): Self = this.set("audience", js.Array(value :_*))
-    
-    @scala.inline
-    def setAudience(value: js.Array[String]): Self = this.set("audience", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentitySource(value: String): Self = this.set("identitySource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssuerUrl(value: String): Self = this.set("issuerUrl", value.asInstanceOf[js.Any])
+    def setIssuerUrl(value: String): Self = StObject.set(x, "issuerUrl", value.asInstanceOf[js.Any])
   }
 }

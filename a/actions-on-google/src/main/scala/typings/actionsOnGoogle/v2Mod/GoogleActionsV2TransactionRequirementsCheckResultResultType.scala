@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ASSISTANT_SURFACE_NOT_SUPPORTED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.REGION_NOT_SUPPORTED
 */
-trait GoogleActionsV2TransactionRequirementsCheckResultResultType extends js.Object
+trait GoogleActionsV2TransactionRequirementsCheckResultResultType extends StObject
 object GoogleActionsV2TransactionRequirementsCheckResultResultType {
   
   @scala.inline

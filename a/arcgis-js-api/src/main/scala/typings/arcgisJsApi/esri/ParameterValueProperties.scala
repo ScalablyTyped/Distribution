@@ -13,12 +13,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.double
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.long
 import typings.arcgisJsApi.arcgisJsApiStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterValueProperties extends js.Object {
+trait ParameterValueProperties extends StObject {
   
   /**
     * Specifies the parameter's data type.
@@ -45,32 +46,20 @@ object ParameterValueProperties {
   }
   
   @scala.inline
-  implicit class ParameterValuePropertiesOps[Self <: ParameterValueProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ParameterValuePropertiesMutableBuilder[Self <: ParameterValueProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDataType(
       value: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value`
-    ): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -5,23 +5,31 @@ import typings.angularAnimations.browserMod.AnimationDriver
 import typings.angularAnimations.mod.AnimationPlayer
 import typings.angularAnimations.mod.NoopAnimationPlayer
 import typings.angularAnimations.mod.ɵStyleData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/animations/browser/testing/testing", JSImport.Namespace)
-@js.native
-object testingTestingMod extends js.Object {
+object testingTestingMod {
   
+  @JSImport("@angular/animations/browser/testing/testing", "MockAnimationDriver")
   @js.native
   class MockAnimationDriver () extends AnimationDriver
   /* static members */
-  @js.native
-  object MockAnimationDriver extends js.Object {
+  object MockAnimationDriver {
     
-    var log: js.Array[AnimationPlayer] = js.native
+    @JSImport("@angular/animations/browser/testing/testing", "MockAnimationDriver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@angular/animations/browser/testing/testing", "MockAnimationDriver.log")
+    @js.native
+    def log: js.Array[AnimationPlayer] = js.native
+    @scala.inline
+    def log_=(x: js.Array[AnimationPlayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@angular/animations/browser/testing/testing", "MockAnimationPlayer")
   @js.native
   class MockAnimationPlayer protected () extends NoopAnimationPlayer {
     def this(

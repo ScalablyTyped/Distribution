@@ -1,11 +1,12 @@
 package typings.zchatBrowser.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Department extends js.Object {
+trait Department extends StObject {
   
   var department: js.UndefOr[Double] = js.native
   
@@ -26,39 +27,27 @@ object Department {
   }
   
   @scala.inline
-  implicit class DepartmentOps[Self <: Department] (val x: Self) extends AnyVal {
+  implicit class DepartmentMutableBuilder[Self <: Department] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepartment(value: Double): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartment(value: Double): Self = this.set("department", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDepartment: Self = this.set("department", js.undefined)
-    
-    @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
   }
 }

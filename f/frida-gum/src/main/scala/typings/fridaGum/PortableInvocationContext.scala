@@ -1,6 +1,7 @@
 package typings.fridaGum
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,30 +43,18 @@ object PortableInvocationContext {
   }
   
   @scala.inline
-  implicit class PortableInvocationContextOps[Self <: PortableInvocationContext] (val x: Self) extends AnyVal {
+  implicit class PortableInvocationContextMutableBuilder[Self <: PortableInvocationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnAddress(value: NativePointer): Self = StObject.set(x, "returnAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: CpuContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnAddress(value: NativePointer): Self = this.set("returnAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadId(value: ThreadId): Self = this.set("threadId", value.asInstanceOf[js.Any])
+    def setThreadId(value: ThreadId): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the app capture video encoding bitrate mode. */
 @JSGlobal("Windows.Media.Capture.AppCaptureVideoEncodingBitrateMode")
 @js.native
-object AppCaptureVideoEncodingBitrateMode extends js.Object {
+object AppCaptureVideoEncodingBitrateMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

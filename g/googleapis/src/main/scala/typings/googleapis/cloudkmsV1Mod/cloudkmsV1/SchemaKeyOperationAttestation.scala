@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (https://cloud.google.com/kms/docs/attest-key).
   */
 @js.native
-trait SchemaKeyOperationAttestation extends js.Object {
+trait SchemaKeyOperationAttestation extends StObject {
   
   /**
     * Output only. The attestation data provided by the HSM when the key
@@ -32,30 +33,18 @@ object SchemaKeyOperationAttestation {
   }
   
   @scala.inline
-  implicit class SchemaKeyOperationAttestationOps[Self <: SchemaKeyOperationAttestation] (val x: Self) extends AnyVal {
+  implicit class SchemaKeyOperationAttestationMutableBuilder[Self <: SchemaKeyOperationAttestation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

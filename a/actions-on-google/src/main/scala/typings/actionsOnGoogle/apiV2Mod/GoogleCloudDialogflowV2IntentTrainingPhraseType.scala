@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.apiV2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.EXAMPLE
   - typings.actionsOnGoogle.actionsOnGoogleStrings.TEMPLATE
 */
-trait GoogleCloudDialogflowV2IntentTrainingPhraseType extends js.Object
+trait GoogleCloudDialogflowV2IntentTrainingPhraseType extends StObject
 object GoogleCloudDialogflowV2IntentTrainingPhraseType {
   
   @scala.inline

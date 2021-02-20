@@ -1,32 +1,29 @@
 package typings.watsonDeveloperCloud.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `createValue` operation. */
-@JSImport("watson-developer-cloud/assistant/v1", "CreateValueConstants")
-@js.native
-object CreateValueConstants extends js.Object {
+object CreateValueConstants {
   
   @js.native
-  sealed trait ValueType extends js.Object
+  sealed trait ValueType extends StObject
   /** Specifies the type of entity value. */
+  @JSImport("watson-developer-cloud/assistant/v1", "CreateValueConstants.ValueType")
   @js.native
-  object ValueType extends js.Object {
+  object ValueType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ValueType with String] = js.native
     
     @js.native
     sealed trait PATTERNS extends ValueType
-    /* "patterns" */ @js.native
-    object PATTERNS extends TopLevel[PATTERNS with String]
+    /* "patterns" */ val PATTERNS: typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType.PATTERNS with String = js.native
     
     @js.native
     sealed trait SYNONYMS extends ValueType
-    /* "synonyms" */ @js.native
-    object SYNONYMS extends TopLevel[SYNONYMS with String]
+    /* "synonyms" */ val SYNONYMS: typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType.SYNONYMS with String = js.native
   }
 }

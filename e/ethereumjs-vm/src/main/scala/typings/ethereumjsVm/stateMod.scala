@@ -2,14 +2,14 @@ package typings.ethereumjsVm
 
 import typings.ethereumjsVm.stateManagerMod.StateManagerOpts
 import typings.ethereumjsVm.stateManagerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-vm/dist/state", JSImport.Namespace)
-@js.native
-object stateMod extends js.Object {
+object stateMod {
   
+  @JSImport("ethereumjs-vm/dist/state", "StateManager")
   @js.native
   /**
     * Instantiate the StateManager interface.

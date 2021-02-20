@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeoXmlCompressedFormat extends js.Object
+sealed trait GeoXmlCompressedFormat extends StObject
 @JSGlobal("Microsoft.Maps.GeoXmlCompressedFormat")
 @js.native
-object GeoXmlCompressedFormat extends js.Object {
+object GeoXmlCompressedFormat extends StObject {
   
   /** XML data compressed into an ArrayBuffer. */
   @js.native

@@ -1,5 +1,6 @@
 package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and will never block a pod creation.
   */
 @js.native
-trait SchemaAdmissionRule extends js.Object {
+trait SchemaAdmissionRule extends StObject {
   
   /**
     * Required. The action when a pod creation is denied by the admission rule.
@@ -44,39 +45,27 @@ object SchemaAdmissionRule {
   }
   
   @scala.inline
-  implicit class SchemaAdmissionRuleOps[Self <: SchemaAdmissionRule] (val x: Self) extends AnyVal {
+  implicit class SchemaAdmissionRuleMutableBuilder[Self <: SchemaAdmissionRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnforcementMode(value: String): Self = StObject.set(x, "enforcementMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnforcementModeUndefined: Self = StObject.set(x, "enforcementMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationMode(value: String): Self = StObject.set(x, "evaluationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforcementMode(value: String): Self = this.set("enforcementMode", value.asInstanceOf[js.Any])
+    def setEvaluationModeUndefined: Self = StObject.set(x, "evaluationMode", js.undefined)
     
     @scala.inline
-    def deleteEnforcementMode: Self = this.set("enforcementMode", js.undefined)
+    def setRequireAttestationsBy(value: js.Array[String]): Self = StObject.set(x, "requireAttestationsBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationMode(value: String): Self = this.set("evaluationMode", value.asInstanceOf[js.Any])
+    def setRequireAttestationsByUndefined: Self = StObject.set(x, "requireAttestationsBy", js.undefined)
     
     @scala.inline
-    def deleteEvaluationMode: Self = this.set("evaluationMode", js.undefined)
-    
-    @scala.inline
-    def setRequireAttestationsByVarargs(value: String*): Self = this.set("requireAttestationsBy", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequireAttestationsBy(value: js.Array[String]): Self = this.set("requireAttestationsBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireAttestationsBy: Self = this.set("requireAttestationsBy", js.undefined)
+    def setRequireAttestationsByVarargs(value: String*): Self = StObject.set(x, "requireAttestationsBy", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HostIp extends js.Object {
+trait HostIp extends StObject {
   
   var HostIp: String = js.native
   
@@ -20,24 +21,12 @@ object HostIp {
   }
   
   @scala.inline
-  implicit class HostIpOps[Self <: HostIp] (val x: Self) extends AnyVal {
+  implicit class HostIpMutableBuilder[Self <: HostIp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostIp(value: String): Self = this.set("HostIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostPort(value: String): Self = this.set("HostPort", value.asInstanceOf[js.Any])
+    def setHostPort(value: String): Self = StObject.set(x, "HostPort", value.asInstanceOf[js.Any])
   }
 }

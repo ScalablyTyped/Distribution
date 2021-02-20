@@ -2,12 +2,13 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait vscroll extends js.Object {
+trait vscroll extends StObject {
   
   def activeArea(node: HTMLElement): Unit = js.native
   

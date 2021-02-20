@@ -1,10 +1,11 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember", "TextField")
+@JSImport("ember", "default.TextField")
 @js.native
 class TextField ()
-  extends typings.emberComponent.textFieldMod.TextField
+  extends typings.ember.mod.Ember.TextField

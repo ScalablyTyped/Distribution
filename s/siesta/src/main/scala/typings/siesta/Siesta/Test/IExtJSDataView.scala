@@ -1,5 +1,6 @@
 package typings.siesta.Siesta.Test
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @mixin
   */
 @js.native
-trait IExtJSDataView extends js.Object {
+trait IExtJSDataView extends StObject {
   
   def getFirstItem(view: js.Any): js.Any = js.native
   

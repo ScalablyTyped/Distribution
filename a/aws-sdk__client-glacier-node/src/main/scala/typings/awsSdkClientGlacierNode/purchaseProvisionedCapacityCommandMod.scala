@@ -7,14 +7,14 @@ import typings.awsSdkClientGlacierNode.typesPurchaseProvisionedCapacityInputMod.
 import typings.awsSdkClientGlacierNode.typesPurchaseProvisionedCapacityOutputMod.PurchaseProvisionedCapacityOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/PurchaseProvisionedCapacityCommand", JSImport.Namespace)
-@js.native
-object purchaseProvisionedCapacityCommandMod extends js.Object {
+object purchaseProvisionedCapacityCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/PurchaseProvisionedCapacityCommand", "PurchaseProvisionedCapacityCommand")
   @js.native
   class PurchaseProvisionedCapacityCommand protected () extends Command[
           InputTypesUnion, 

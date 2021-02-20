@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropOptions extends js.Object {
+trait PropOptions extends StObject {
   
   /** @deprecated: "attr" has been deprecated, please use "attribute" instead. */
   var attr: js.UndefOr[String] = js.native
@@ -49,63 +50,51 @@ object PropOptions {
   }
   
   @scala.inline
-  implicit class PropOptionsOps[Self <: PropOptions] (val x: Self) extends AnyVal {
+  implicit class PropOptionsMutableBuilder[Self <: PropOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttr(value: String): Self = this.set("attr", value.asInstanceOf[js.Any])
+    def setAttributeNull: Self = StObject.set(x, "attribute", null)
     
     @scala.inline
-    def deleteAttr: Self = this.set("attr", js.undefined)
+    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
     @scala.inline
-    def setAttributeNull: Self = this.set("attribute", null)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: String): Self = this.set("connect", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteConnect: Self = this.set("connect", js.undefined)
+    def setMutable(value: Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setMutableUndefined: Self = StObject.set(x, "mutable", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setReflect(value: Boolean): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutable(value: Boolean): Self = this.set("mutable", value.asInstanceOf[js.Any])
+    def setReflectToAttr(value: Boolean): Self = StObject.set(x, "reflectToAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMutable: Self = this.set("mutable", js.undefined)
+    def setReflectToAttrUndefined: Self = StObject.set(x, "reflectToAttr", js.undefined)
     
     @scala.inline
-    def setReflect(value: Boolean): Self = this.set("reflect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReflect: Self = this.set("reflect", js.undefined)
-    
-    @scala.inline
-    def setReflectToAttr(value: Boolean): Self = this.set("reflectToAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReflectToAttr: Self = this.set("reflectToAttr", js.undefined)
+    def setReflectUndefined: Self = StObject.set(x, "reflect", js.undefined)
   }
 }

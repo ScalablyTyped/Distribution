@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * body&#39;s response field contains this `ExecutionResponse` object.
   */
 @js.native
-trait SchemaExecutionResponse extends js.Object {
+trait SchemaExecutionResponse extends StObject {
   
   /**
     * The return value of the script function. The type matches the object type
@@ -30,24 +31,12 @@ object SchemaExecutionResponse {
   }
   
   @scala.inline
-  implicit class SchemaExecutionResponseOps[Self <: SchemaExecutionResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaExecutionResponseMutableBuilder[Self <: SchemaExecutionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

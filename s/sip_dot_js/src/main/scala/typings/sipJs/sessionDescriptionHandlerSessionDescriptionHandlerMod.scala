@@ -15,14 +15,14 @@ import typings.std.RTCDataChannel
 import typings.std.RTCPeerConnection
 import typings.std.RTCSessionDescription
 import typings.std.RTCSessionDescriptionInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", JSImport.Namespace)
-@js.native
-object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
+object sessionDescriptionHandlerSessionDescriptionHandlerMod {
   
+  @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler")
   @js.native
   class SessionDescriptionHandler protected ()
     extends typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler {
@@ -243,11 +243,22 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod extends js.Object {
     /* protected */ def waitForIceGatheringComplete(restart: Boolean, timeout: Double): js.Promise[Unit] = js.native
   }
   /* static members */
-  @js.native
-  object SessionDescriptionHandler extends js.Object {
+  object SessionDescriptionHandler {
     
-    var dispatchAddTrackEvent: js.Any = js.native
+    @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var dispatchRemoveTrackEvent: js.Any = js.native
+    @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler.dispatchAddTrackEvent")
+    @js.native
+    def dispatchAddTrackEvent: js.Any = js.native
+    @scala.inline
+    def dispatchAddTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
+    
+    @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler.dispatchRemoveTrackEvent")
+    @js.native
+    def dispatchRemoveTrackEvent: js.Any = js.native
+    @scala.inline
+    def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
 }

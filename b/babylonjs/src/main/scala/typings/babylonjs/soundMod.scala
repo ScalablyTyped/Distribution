@@ -10,16 +10,16 @@ import typings.std.AudioBuffer
 import typings.std.AudioBufferSourceNode
 import typings.std.AudioNode
 import typings.std.GainNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Audio/sound", JSImport.Namespace)
-@js.native
-object soundMod extends js.Object {
+object soundMod {
   
+  @JSImport("babylonjs/Audio/sound", "Sound")
   @js.native
-  class Sound protected () extends js.Object {
+  class Sound protected () extends StObject {
     /**
       * Create a sound and attach it to a scene
       * @param name Name of your sound
@@ -393,8 +393,7 @@ object soundMod extends js.Object {
     var useCustomAttenuation: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object Sound extends js.Object {
+  object Sound {
     
     /**
       * Parse a JSON representation of a sound to innstantiate in a given scene
@@ -404,10 +403,16 @@ object soundMod extends js.Object {
       * @param sourceSound Define a cound place holder if do not need to instantiate a new one
       * @returns the newly parsed sound
       */
+    @JSImport("babylonjs/Audio/sound", "Sound.Parse")
+    @js.native
     def Parse(parsedSound: js.Any, scene: Scene, rootUrl: String): Sound = js.native
+    @JSImport("babylonjs/Audio/sound", "Sound.Parse")
+    @js.native
     def Parse(parsedSound: js.Any, scene: Scene, rootUrl: String, sourceSound: Sound): Sound = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Audio/sound", "Sound._SceneComponentInitialization")
+    @js.native
     def _SceneComponentInitialization(scene: Scene): Unit = js.native
   }
 }

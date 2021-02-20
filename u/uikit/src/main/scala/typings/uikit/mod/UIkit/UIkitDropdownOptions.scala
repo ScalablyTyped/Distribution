@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitDropdownOptions extends js.Object {
+trait UIkitDropdownOptions extends StObject {
   
   var animation: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object UIkitDropdownOptions {
   }
   
   @scala.inline
-  implicit class UIkitDropdownOptionsOps[Self <: UIkitDropdownOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitDropdownOptionsMutableBuilder[Self <: UIkitDropdownOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def `setBoundary-align`(value: Boolean): Self = StObject.set(x, "boundary-align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def `setBoundary-alignUndefined`: Self = StObject.set(x, "boundary-align", js.undefined)
     
     @scala.inline
-    def setBoundary(value: String): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
     @scala.inline
-    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    def `setDelay-hide`(value: Double): Self = StObject.set(x, "delay-hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBoundary-align`(value: Boolean): Self = this.set("boundary-align", value.asInstanceOf[js.Any])
+    def `setDelay-hideUndefined`: Self = StObject.set(x, "delay-hide", js.undefined)
     
     @scala.inline
-    def `deleteBoundary-align`: Self = this.set("boundary-align", js.undefined)
+    def `setDelay-show`(value: Double): Self = StObject.set(x, "delay-show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDelay-hide`(value: Double): Self = this.set("delay-hide", value.asInstanceOf[js.Any])
+    def `setDelay-showUndefined`: Self = StObject.set(x, "delay-show", js.undefined)
     
     @scala.inline
-    def `deleteDelay-hide`: Self = this.set("delay-hide", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDelay-show`(value: Double): Self = this.set("delay-show", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def `deleteDelay-show`: Self = this.set("delay-show", js.undefined)
+    def setFlip(value: Boolean | String): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlip(value: Boolean | String): Self = this.set("flip", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteFlip: Self = this.set("flip", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setToggle(value: String | Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos(value: String): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePos: Self = this.set("pos", js.undefined)
-    
-    @scala.inline
-    def setToggle(value: String | Boolean): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

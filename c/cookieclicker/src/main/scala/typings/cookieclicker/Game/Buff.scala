@@ -2,12 +2,13 @@ package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerNumbers.`1`
 import typings.cookieclicker.cookieclickerNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buff extends js.Object {
+trait Buff extends StObject {
   
   /**
     * If true, when a buff it gained when it already exists, adds the buff times together
@@ -58,78 +59,66 @@ object Buff {
   }
   
   @scala.inline
-  implicit class BuffOps[Self <: Buff] (val x: Self) extends AnyVal {
+  implicit class BuffMutableBuilder[Self <: Buff] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAura(value: `1` | `2`): Self = StObject.set(x, "aura", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setAuraUndefined: Self = StObject.set(x, "aura", js.undefined)
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: Boolean): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setMultClick(value: Double): Self = StObject.set(x, "multClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAura(value: `1` | `2`): Self = this.set("aura", value.asInstanceOf[js.Any])
+    def setMultClickUndefined: Self = StObject.set(x, "multClick", js.undefined)
     
     @scala.inline
-    def deleteAura: Self = this.set("aura", js.undefined)
+    def setMultCpS(value: Double): Self = StObject.set(x, "multCpS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Boolean): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMultCpSUndefined: Self = StObject.set(x, "multCpS", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultClick(value: Double): Self = this.set("multClick", value.asInstanceOf[js.Any])
+    def setOnDie(value: () => Unit): Self = StObject.set(x, "onDie", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMultClick: Self = this.set("multClick", js.undefined)
+    def setOnDieUndefined: Self = StObject.set(x, "onDie", js.undefined)
     
     @scala.inline
-    def setMultCpS(value: Double): Self = this.set("multCpS", value.asInstanceOf[js.Any])
+    def setPow(value: Double): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultCpS: Self = this.set("multCpS", js.undefined)
+    def setPowUndefined: Self = StObject.set(x, "pow", js.undefined)
     
     @scala.inline
-    def setOnDie(value: () => Unit): Self = this.set("onDie", js.Any.fromFunction0(value))
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDie: Self = this.set("onDie", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPow(value: Double): Self = this.set("pow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePow: Self = this.set("pow", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

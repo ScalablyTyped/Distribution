@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMaintenanceWindowExecutionTaskInvocationsResult extends js.Object {
+trait DescribeMaintenanceWindowExecutionTaskInvocationsResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
@@ -26,33 +27,21 @@ object DescribeMaintenanceWindowExecutionTaskInvocationsResult {
   }
   
   @scala.inline
-  implicit class DescribeMaintenanceWindowExecutionTaskInvocationsResultOps[Self <: DescribeMaintenanceWindowExecutionTaskInvocationsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeMaintenanceWindowExecutionTaskInvocationsResultMutableBuilder[Self <: DescribeMaintenanceWindowExecutionTaskInvocationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindowExecutionTaskInvocationIdentities(value: MaintenanceWindowExecutionTaskInvocationIdentityList): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setWindowExecutionTaskInvocationIdentitiesUndefined: Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setWindowExecutionTaskInvocationIdentitiesVarargs(value: MaintenanceWindowExecutionTaskInvocationIdentity*): Self = this.set("WindowExecutionTaskInvocationIdentities", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindowExecutionTaskInvocationIdentities(value: MaintenanceWindowExecutionTaskInvocationIdentityList): Self = this.set("WindowExecutionTaskInvocationIdentities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowExecutionTaskInvocationIdentities: Self = this.set("WindowExecutionTaskInvocationIdentities", js.undefined)
+    def setWindowExecutionTaskInvocationIdentitiesVarargs(value: MaintenanceWindowExecutionTaskInvocationIdentity*): Self = StObject.set(x, "WindowExecutionTaskInvocationIdentities", js.Array(value :_*))
   }
 }

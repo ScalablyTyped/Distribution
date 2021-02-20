@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCloudkms.anon.KeyRingId
 import typings.maximMazurokGapiClientCloudkms.anon.OptionsrequestedPolicyVersion
 import typings.maximMazurokGapiClientCloudkms.anon.PageSize
 import typings.maximMazurokGapiClientCloudkms.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyRingsResource extends js.Object {
+trait KeyRingsResource extends StObject {
   
   def create(request: CallbackFields, body: KeyRing): Request[KeyRing] = js.native
   /** Create a new KeyRing in a given Project and Location. */

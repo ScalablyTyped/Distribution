@@ -1,26 +1,24 @@
 package typings.emojiMart
 
-import typings.emojiMart.categoryMod.Props
-import typings.emojiMart.nimblePickerMod.NimblePickerProps
-import typings.emojiMart.sharedPropsMod.PickerProps
-import typings.react.mod.Component
+import typings.emojiMart.categoryMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("emoji-mart/dist-es/components", JSImport.Namespace)
-@js.native
-object componentsMod extends js.Object {
+object componentsMod {
   
+  @JSImport("emoji-mart/dist-es/components", "Category")
   @js.native
-  class Category ()
-    extends Component[Props, js.Object, js.Any]
+  class Category () extends default
   
+  @JSImport("emoji-mart/dist-es/components", "NimblePicker")
   @js.native
   class NimblePicker ()
-    extends Component[NimblePickerProps, js.Object, js.Any]
+    extends typings.emojiMart.nimblePickerMod.default
   
+  @JSImport("emoji-mart/dist-es/components", "Picker")
   @js.native
   class Picker ()
-    extends Component[PickerProps, js.Object, js.Any]
+    extends typings.emojiMart.pickerMod.default
 }

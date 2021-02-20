@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxClientSideParametersModel extends js.Object {
+trait ASPxClientSideParametersModel extends StObject {
   
   def serializeParameters(): Unit = js.native
   
@@ -22,27 +23,15 @@ object ASPxClientSideParametersModel {
   }
   
   @scala.inline
-  implicit class ASPxClientSideParametersModelOps[Self <: ASPxClientSideParametersModel] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSideParametersModelMutableBuilder[Self <: ASPxClientSideParametersModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSerializeParameters(value: () => Unit): Self = StObject.set(x, "serializeParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSerializeParameters(value: () => Unit): Self = this.set("serializeParameters", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = this.set("submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTabInfo(value: ASPxClientDocumentPreviewTab): Self = this.set("tabInfo", value.asInstanceOf[js.Any])
+    def setTabInfo(value: ASPxClientDocumentPreviewTab): Self = StObject.set(x, "tabInfo", value.asInstanceOf[js.Any])
   }
 }

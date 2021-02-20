@@ -5,12 +5,13 @@ import typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha.Optio
 import typings.googleapis.googleapisStrings.alpha
 import typings.googleapis.googleapisStrings.v2
 import typings.googleapis.googleapisStrings.v2beta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn54 extends js.Object {
+trait Fn54 extends StObject {
   
   def apply(options: Options): Deploymentmanager = js.native
   def apply(options: typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Options): typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager = js.native

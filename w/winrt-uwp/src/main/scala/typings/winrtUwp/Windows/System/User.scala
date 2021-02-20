@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a user. */
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   /** Gets the authentication status of the user. */
   var authenticationStatus: UserAuthenticationStatus = js.native
@@ -59,36 +60,24 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "authenticationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPictureAsync(value: UserPictureSize => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = StObject.set(x, "getPictureAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertiesAsync(value: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuthenticationStatus(value: UserAuthenticationStatus): Self = this.set("authenticationStatus", value.asInstanceOf[js.Any])
+    def setGetPropertyAsync(value: String => IPromiseWithIAsyncOperation[_]): Self = StObject.set(x, "getPropertyAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPictureAsync(value: UserPictureSize => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = this.set("getPictureAsync", js.Any.fromFunction1(value))
+    def setNonRoamableId(value: String): Self = StObject.set(x, "nonRoamableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPropertiesAsync(value: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet]): Self = this.set("getPropertiesAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPropertyAsync(value: String => IPromiseWithIAsyncOperation[_]): Self = this.set("getPropertyAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNonRoamableId(value: String): Self = this.set("nonRoamableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: UserType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

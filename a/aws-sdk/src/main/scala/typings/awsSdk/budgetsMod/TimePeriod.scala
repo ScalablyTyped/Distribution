@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePeriod extends js.Object {
+trait TimePeriod extends StObject {
   
   /**
     * The end date for a budget. If you didn't specify an end date, AWS set your end date to 06/15/87 00:00 UTC. The defaults are the same for the AWS Billing and Cost Management console and the API. After the end date, AWS deletes the budget and all associated notifications and subscribers. You can change your end date with the UpdateBudget operation.
@@ -26,30 +27,18 @@ object TimePeriod {
   }
   
   @scala.inline
-  implicit class TimePeriodOps[Self <: TimePeriod] (val x: Self) extends AnyVal {
+  implicit class TimePeriodMutableBuilder[Self <: TimePeriod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: GenericTimestamp): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: GenericTimestamp): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: GenericTimestamp): Self = this.set("End", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnd: Self = this.set("End", js.undefined)
-    
-    @scala.inline
-    def setStart(value: GenericTimestamp): Self = this.set("Start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("Start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

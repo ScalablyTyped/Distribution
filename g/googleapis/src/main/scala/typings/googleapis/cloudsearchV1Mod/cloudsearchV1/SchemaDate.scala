@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * date must be a valid calendar date between the year 1 and 9999.
   */
 @js.native
-trait SchemaDate extends js.Object {
+trait SchemaDate extends StObject {
   
   /**
     * Day of month. Must be from 1 to 31 and valid for the year and month.
@@ -38,36 +39,24 @@ object SchemaDate {
   }
   
   @scala.inline
-  implicit class SchemaDateOps[Self <: SchemaDate] (val x: Self) extends AnyVal {
+  implicit class SchemaDateMutableBuilder[Self <: SchemaDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: Double): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: Double): Self = this.set("month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
-    
-    @scala.inline
-    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

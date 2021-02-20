@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Finding extends js.Object {
+trait Finding extends StObject {
   
   /**
     * The unique identifier for the AWS account that the finding applies to. This is typically the account that owns the affected resource.
@@ -106,126 +107,114 @@ object Finding {
   }
   
   @scala.inline
-  implicit class FindingOps[Self <: Finding] (val x: Self) extends AnyVal {
+  implicit class FindingMutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchived(value: boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setCategory(value: FindingCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchived(value: boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def deleteArchived: Self = this.set("archived", js.undefined)
+    def setClassificationDetails(value: ClassificationDetails): Self = StObject.set(x, "classificationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: FindingCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setClassificationDetailsUndefined: Self = StObject.set(x, "classificationDetails", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassificationDetails(value: ClassificationDetails): Self = this.set("classificationDetails", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteClassificationDetails: Self = this.set("classificationDetails", js.undefined)
+    def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: long): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPartition(value: string): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPolicyDetails(value: PolicyDetails): Self = StObject.set(x, "policyDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartition(value: string): Self = this.set("partition", value.asInstanceOf[js.Any])
+    def setPolicyDetailsUndefined: Self = StObject.set(x, "policyDetails", js.undefined)
     
     @scala.inline
-    def deletePartition: Self = this.set("partition", js.undefined)
+    def setRegion(value: string): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyDetails(value: PolicyDetails): Self = this.set("policyDetails", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePolicyDetails: Self = this.set("policyDetails", js.undefined)
+    def setResourcesAffected(value: ResourcesAffected): Self = StObject.set(x, "resourcesAffected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: string): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setResourcesAffectedUndefined: Self = StObject.set(x, "resourcesAffected", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSample(value: boolean): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesAffected(value: ResourcesAffected): Self = this.set("resourcesAffected", value.asInstanceOf[js.Any])
+    def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
     
     @scala.inline
-    def deleteResourcesAffected: Self = this.set("resourcesAffected", js.undefined)
+    def setSchemaVersion(value: string): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSample(value: boolean): Self = this.set("sample", value.asInstanceOf[js.Any])
+    def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
     
     @scala.inline
-    def deleteSample: Self = this.set("sample", js.undefined)
+    def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaVersion(value: string): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteSchemaVersion: Self = this.set("schemaVersion", js.undefined)
+    def setTitle(value: string): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: Severity): Self = this.set("severity", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
+    def setType(value: FindingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: string): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: FindingType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: timestampIso8601): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }
 }

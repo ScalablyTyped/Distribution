@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFSearchFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISearchDef extends js.Object {
+trait ISearchDef extends StObject {
   
   def Clone(): ISearchDef = js.native
   
@@ -39,39 +40,27 @@ object ISearchDef {
   }
   
   @scala.inline
-  implicit class ISearchDefOps[Self <: ISearchDef] (val x: Self) extends AnyVal {
+  implicit class ISearchDefMutableBuilder[Self <: ISearchDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ISearchDef): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: ISearchConditions): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIndirectionUsed(value: () => Boolean): Self = StObject.set(x, "IsIndirectionUsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => ISearchDef): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setLevels(value: IExpressionExs): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: ISearchConditions): Self = this.set("Conditions", value.asInstanceOf[js.Any])
+    def setLookInAllVersions(value: Boolean): Self = StObject.set(x, "LookInAllVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIndirectionUsed(value: () => Boolean): Self = this.set("IsIndirectionUsed", js.Any.fromFunction0(value))
+    def setReturnLatestVisibleVersion(value: Boolean): Self = StObject.set(x, "ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: IExpressionExs): Self = this.set("Levels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLookInAllVersions(value: Boolean): Self = this.set("LookInAllVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnLatestVisibleVersion(value: Boolean): Self = this.set("ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchFlags(value: MFSearchFlags): Self = this.set("SearchFlags", value.asInstanceOf[js.Any])
+    def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
   }
 }

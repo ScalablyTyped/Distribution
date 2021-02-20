@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,39 +123,27 @@ object XSprite {
   }
   
   @scala.inline
-  implicit class XSpriteOps[Self <: XSprite] (val x: Self) extends AnyVal {
+  implicit class XSpriteMutableBuilder[Self <: XSprite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClip(value: XPolyPolygon2D => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMove(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setClip(value: XPolyPolygon2D => Unit): Self = this.set("clip", js.Any.fromFunction1(value))
+    def setSetAlpha(value: Double => Unit): Self = StObject.set(x, "setAlpha", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setSetPriority(value: Double => Unit): Self = StObject.set(x, "setPriority", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMove(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = this.set("move", js.Any.fromFunction3(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetAlpha(value: Double => Unit): Self = this.set("setAlpha", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPriority(value: Double => Unit): Self = this.set("setPriority", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTransform(value: AffineMatrix2D => Unit): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setTransform(value: AffineMatrix2D => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

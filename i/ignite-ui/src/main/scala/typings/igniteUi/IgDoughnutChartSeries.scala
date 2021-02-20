@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -182,180 +183,168 @@ object IgDoughnutChartSeries {
   }
   
   @scala.inline
-  implicit class IgDoughnutChartSeriesOps[Self <: IgDoughnutChartSeries] (val x: Self) extends AnyVal {
+  implicit class IgDoughnutChartSeriesMutableBuilder[Self <: IgDoughnutChartSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatLabel(value: js.Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushes(value: js.Any): Self = this.set("brushes", value.asInstanceOf[js.Any])
+    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
     @scala.inline
-    def deleteBrushes: Self = this.set("brushes", js.undefined)
+    def setFormatLegendLabel(value: js.Any): Self = StObject.set(x, "formatLegendLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLabel(value: js.Any): Self = this.set("formatLabel", value.asInstanceOf[js.Any])
+    def setFormatLegendLabelUndefined: Self = StObject.set(x, "formatLegendLabel", js.undefined)
     
     @scala.inline
-    def deleteFormatLabel: Self = this.set("formatLabel", js.undefined)
+    def setIsSurfaceInteractionDisabled(value: Boolean): Self = StObject.set(x, "isSurfaceInteractionDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLegendLabel(value: js.Any): Self = this.set("formatLegendLabel", value.asInstanceOf[js.Any])
+    def setIsSurfaceInteractionDisabledUndefined: Self = StObject.set(x, "isSurfaceInteractionDisabled", js.undefined)
     
     @scala.inline
-    def deleteFormatLegendLabel: Self = this.set("formatLegendLabel", js.undefined)
+    def setItemsSource(value: js.Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSurfaceInteractionDisabled(value: Boolean): Self = this.set("isSurfaceInteractionDisabled", value.asInstanceOf[js.Any])
+    def setItemsSourceUndefined: Self = StObject.set(x, "itemsSource", js.undefined)
     
     @scala.inline
-    def deleteIsSurfaceInteractionDisabled: Self = this.set("isSurfaceInteractionDisabled", js.undefined)
+    def setLabelExtent(value: Double): Self = StObject.set(x, "labelExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsSource(value: js.Any): Self = this.set("itemsSource", value.asInstanceOf[js.Any])
+    def setLabelExtentUndefined: Self = StObject.set(x, "labelExtent", js.undefined)
     
     @scala.inline
-    def deleteItemsSource: Self = this.set("itemsSource", js.undefined)
+    def setLabelInnerColor(value: String): Self = StObject.set(x, "labelInnerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelExtent(value: Double): Self = this.set("labelExtent", value.asInstanceOf[js.Any])
+    def setLabelInnerColorUndefined: Self = StObject.set(x, "labelInnerColor", js.undefined)
     
     @scala.inline
-    def deleteLabelExtent: Self = this.set("labelExtent", js.undefined)
+    def setLabelMemberPath(value: String): Self = StObject.set(x, "labelMemberPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInnerColor(value: String): Self = this.set("labelInnerColor", value.asInstanceOf[js.Any])
+    def setLabelMemberPathUndefined: Self = StObject.set(x, "labelMemberPath", js.undefined)
     
     @scala.inline
-    def deleteLabelInnerColor: Self = this.set("labelInnerColor", js.undefined)
+    def setLabelOuterColor(value: String): Self = StObject.set(x, "labelOuterColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMemberPath(value: String): Self = this.set("labelMemberPath", value.asInstanceOf[js.Any])
+    def setLabelOuterColorUndefined: Self = StObject.set(x, "labelOuterColor", js.undefined)
     
     @scala.inline
-    def deleteLabelMemberPath: Self = this.set("labelMemberPath", js.undefined)
+    def setLabelsPosition(value: String): Self = StObject.set(x, "labelsPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOuterColor(value: String): Self = this.set("labelOuterColor", value.asInstanceOf[js.Any])
+    def setLabelsPositionUndefined: Self = StObject.set(x, "labelsPosition", js.undefined)
     
     @scala.inline
-    def deleteLabelOuterColor: Self = this.set("labelOuterColor", js.undefined)
+    def setLeaderLineMargin(value: Double): Self = StObject.set(x, "leaderLineMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsPosition(value: String): Self = this.set("labelsPosition", value.asInstanceOf[js.Any])
+    def setLeaderLineMarginUndefined: Self = StObject.set(x, "leaderLineMargin", js.undefined)
     
     @scala.inline
-    def deleteLabelsPosition: Self = this.set("labelsPosition", js.undefined)
+    def setLeaderLineStyle(value: js.Any): Self = StObject.set(x, "leaderLineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaderLineMargin(value: Double): Self = this.set("leaderLineMargin", value.asInstanceOf[js.Any])
+    def setLeaderLineStyleUndefined: Self = StObject.set(x, "leaderLineStyle", js.undefined)
     
     @scala.inline
-    def deleteLeaderLineMargin: Self = this.set("leaderLineMargin", js.undefined)
+    def setLeaderLineType(value: String): Self = StObject.set(x, "leaderLineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaderLineStyle(value: js.Any): Self = this.set("leaderLineStyle", value.asInstanceOf[js.Any])
+    def setLeaderLineTypeUndefined: Self = StObject.set(x, "leaderLineType", js.undefined)
     
     @scala.inline
-    def deleteLeaderLineStyle: Self = this.set("leaderLineStyle", js.undefined)
+    def setLeaderLineVisibility(value: String): Self = StObject.set(x, "leaderLineVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaderLineType(value: String): Self = this.set("leaderLineType", value.asInstanceOf[js.Any])
+    def setLeaderLineVisibilityUndefined: Self = StObject.set(x, "leaderLineVisibility", js.undefined)
     
     @scala.inline
-    def deleteLeaderLineType: Self = this.set("leaderLineType", js.undefined)
+    def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaderLineVisibility(value: String): Self = this.set("leaderLineVisibility", value.asInstanceOf[js.Any])
+    def setLegendLabelMemberPath(value: String): Self = StObject.set(x, "legendLabelMemberPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeaderLineVisibility: Self = this.set("leaderLineVisibility", js.undefined)
+    def setLegendLabelMemberPathUndefined: Self = StObject.set(x, "legendLabelMemberPath", js.undefined)
     
     @scala.inline
-    def setLegend(value: js.Any): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setOthersCategoryText(value: String): Self = StObject.set(x, "othersCategoryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendLabelMemberPath(value: String): Self = this.set("legendLabelMemberPath", value.asInstanceOf[js.Any])
+    def setOthersCategoryTextUndefined: Self = StObject.set(x, "othersCategoryText", js.undefined)
     
     @scala.inline
-    def deleteLegendLabelMemberPath: Self = this.set("legendLabelMemberPath", js.undefined)
+    def setOthersCategoryThreshold(value: Double): Self = StObject.set(x, "othersCategoryThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOthersCategoryText(value: String): Self = this.set("othersCategoryText", value.asInstanceOf[js.Any])
+    def setOthersCategoryThresholdUndefined: Self = StObject.set(x, "othersCategoryThreshold", js.undefined)
     
     @scala.inline
-    def deleteOthersCategoryText: Self = this.set("othersCategoryText", js.undefined)
+    def setOthersCategoryType(value: String): Self = StObject.set(x, "othersCategoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOthersCategoryThreshold(value: Double): Self = this.set("othersCategoryThreshold", value.asInstanceOf[js.Any])
+    def setOthersCategoryTypeUndefined: Self = StObject.set(x, "othersCategoryType", js.undefined)
     
     @scala.inline
-    def deleteOthersCategoryThreshold: Self = this.set("othersCategoryThreshold", js.undefined)
+    def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOthersCategoryType(value: String): Self = this.set("othersCategoryType", value.asInstanceOf[js.Any])
+    def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
     @scala.inline
-    def deleteOthersCategoryType: Self = this.set("othersCategoryType", js.undefined)
+    def setRadiusFactor(value: Double): Self = StObject.set(x, "radiusFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlines(value: js.Any): Self = this.set("outlines", value.asInstanceOf[js.Any])
+    def setRadiusFactorUndefined: Self = StObject.set(x, "radiusFactor", js.undefined)
     
     @scala.inline
-    def deleteOutlines: Self = this.set("outlines", js.undefined)
+    def setSelectedStyle(value: js.Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusFactor(value: Double): Self = this.set("radiusFactor", value.asInstanceOf[js.Any])
+    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
     @scala.inline
-    def deleteRadiusFactor: Self = this.set("radiusFactor", js.undefined)
+    def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedStyle(value: js.Any): Self = this.set("selectedStyle", value.asInstanceOf[js.Any])
+    def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
     
     @scala.inline
-    def deleteSelectedStyle: Self = this.set("selectedStyle", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTooltip(value: Boolean): Self = this.set("showTooltip", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteShowTooltip: Self = this.set("showTooltip", js.undefined)
+    def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipTemplate(value: String): Self = this.set("tooltipTemplate", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTooltipTemplate: Self = this.set("tooltipTemplate", js.undefined)
+    def setValueMemberPath(value: String): Self = StObject.set(x, "valueMemberPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValueMemberPath(value: String): Self = this.set("valueMemberPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueMemberPath: Self = this.set("valueMemberPath", js.undefined)
+    def setValueMemberPathUndefined: Self = StObject.set(x, "valueMemberPath", js.undefined)
   }
 }

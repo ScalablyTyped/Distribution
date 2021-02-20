@@ -1,11 +1,12 @@
 package typings.mangopay2NodejsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginationOptions extends js.Object {
+trait PaginationOptions extends StObject {
   
   /**
     * The page number of results you wish to return
@@ -28,30 +29,18 @@ object PaginationOptions {
   }
   
   @scala.inline
-  implicit class PaginationOptionsOps[Self <: PaginationOptions] (val x: Self) extends AnyVal {
+  implicit class PaginationOptionsMutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPage(value: Double): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPer_Page(value: Double): Self = StObject.set(x, "Per_Page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("Page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage: Self = this.set("Page", js.undefined)
-    
-    @scala.inline
-    def setPer_Page(value: Double): Self = this.set("Per_Page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_Page: Self = this.set("Per_Page", js.undefined)
+    def setPer_PageUndefined: Self = StObject.set(x, "Per_Page", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofdesktopCapture extends js.Object {
+trait TypeofdesktopCapture extends StObject {
   
   val DesktopCaptureSourceType: AUDIO = js.native
   
@@ -62,25 +63,10 @@ object TypeofdesktopCapture {
   }
   
   @scala.inline
-  implicit class TypeofdesktopCaptureOps[Self <: TypeofdesktopCapture] (val x: Self) extends AnyVal {
+  implicit class TypeofdesktopCaptureMutableBuilder[Self <: TypeofdesktopCapture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDesktopCaptureSourceType(value: AUDIO): Self = this.set("DesktopCaptureSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCancelChooseDesktopMedia(value: integer => Unit): Self = this.set("cancelChooseDesktopMedia", js.Any.fromFunction1(value))
+    def setCancelChooseDesktopMedia(value: integer => Unit): Self = StObject.set(x, "cancelChooseDesktopMedia", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChooseDesktopMedia(
@@ -94,6 +80,9 @@ object TypeofdesktopCapture {
             ]
           ]
         ], js.Function1[/* streamId */ String, Unit]) => integer
-    ): Self = this.set("chooseDesktopMedia", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "chooseDesktopMedia", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setDesktopCaptureSourceType(value: AUDIO): Self = StObject.set(x, "DesktopCaptureSourceType", value.asInstanceOf[js.Any])
   }
 }

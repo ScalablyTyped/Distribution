@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsResponse extends js.Object {
+trait DirectionsResponse extends StObject {
   
   /**
     * contains an array of available travel modes. This field is returned when a request specifies a travel `mode` and gets no results.
@@ -54,39 +55,27 @@ object DirectionsResponse {
   }
   
   @scala.inline
-  implicit class DirectionsResponseOps[Self <: DirectionsResponse] (val x: Self) extends AnyVal {
+  implicit class DirectionsResponseMutableBuilder[Self <: DirectionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable_travel_modes(value: js.Array[String]): Self = StObject.set(x, "available_travel_modes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailable_travel_modesVarargs(value: String*): Self = StObject.set(x, "available_travel_modes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeocoded_waypoints(value: js.Array[GeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable_travel_modesVarargs(value: String*): Self = this.set("available_travel_modes", js.Array(value :_*))
+    def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
     
     @scala.inline
-    def setAvailable_travel_modes(value: js.Array[String]): Self = this.set("available_travel_modes", value.asInstanceOf[js.Any])
+    def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = this.set("geocoded_waypoints", js.Array(value :_*))
+    def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
-    def setGeocoded_waypoints(value: js.Array[GeocodedWaypoint]): Self = this.set("geocoded_waypoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutesVarargs(value: DirectionsRoute*): Self = this.set("routes", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutes(value: js.Array[DirectionsRoute]): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: DirectionsReponseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: DirectionsReponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

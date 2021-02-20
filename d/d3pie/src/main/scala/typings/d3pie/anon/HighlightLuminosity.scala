@@ -1,11 +1,12 @@
 package typings.d3pie.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightLuminosity extends js.Object {
+trait HighlightLuminosity extends StObject {
   
   var highlightLuminosity: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object HighlightLuminosity {
   }
   
   @scala.inline
-  implicit class HighlightLuminosityOps[Self <: HighlightLuminosity] (val x: Self) extends AnyVal {
+  implicit class HighlightLuminosityMutableBuilder[Self <: HighlightLuminosity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightLuminosity(value: Double): Self = StObject.set(x, "highlightLuminosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightLuminosityUndefined: Self = StObject.set(x, "highlightLuminosity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightSegmentOnMouseover(value: Boolean): Self = StObject.set(x, "highlightSegmentOnMouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightLuminosity(value: Double): Self = this.set("highlightLuminosity", value.asInstanceOf[js.Any])
+    def setHighlightSegmentOnMouseoverUndefined: Self = StObject.set(x, "highlightSegmentOnMouseover", js.undefined)
     
     @scala.inline
-    def deleteHighlightLuminosity: Self = this.set("highlightLuminosity", js.undefined)
+    def setLoad(value: Effect): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightSegmentOnMouseover(value: Boolean): Self = this.set("highlightSegmentOnMouseover", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteHighlightSegmentOnMouseover: Self = this.set("highlightSegmentOnMouseover", js.undefined)
+    def setPullOutSegmentOnClick(value: Size): Self = StObject.set(x, "pullOutSegmentOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: Effect): Self = this.set("load", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
-    
-    @scala.inline
-    def setPullOutSegmentOnClick(value: Size): Self = this.set("pullOutSegmentOnClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePullOutSegmentOnClick: Self = this.set("pullOutSegmentOnClick", js.undefined)
+    def setPullOutSegmentOnClickUndefined: Self = StObject.set(x, "pullOutSegmentOnClick", js.undefined)
   }
 }

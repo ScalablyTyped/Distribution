@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object RoleBasedFilter {
   }
   
   @scala.inline
-  implicit class RoleBasedFilterOps[Self <: RoleBasedFilter] (val x: Self) extends AnyVal {
+  implicit class RoleBasedFilterMutableBuilder[Self <: RoleBasedFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusions(value: js.Array[String]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusionsVarargs(value: String*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInclusions(value: js.Array[String]): Self = StObject.set(x, "inclusions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusionsVarargs(value: String*): Self = this.set("exclusions", js.Array(value :_*))
-    
-    @scala.inline
-    def setExclusions(value: js.Array[String]): Self = this.set("exclusions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInclusionsVarargs(value: String*): Self = this.set("inclusions", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclusions(value: js.Array[String]): Self = this.set("inclusions", value.asInstanceOf[js.Any])
+    def setInclusionsVarargs(value: String*): Self = StObject.set(x, "inclusions", js.Array(value :_*))
   }
 }

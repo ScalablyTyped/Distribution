@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrgsUpdateWebhookEndpoint extends js.Object {
+trait OrgsUpdateWebhookEndpoint extends StObject {
   
   /**
     * Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
@@ -37,45 +38,33 @@ object OrgsUpdateWebhookEndpoint {
   }
   
   @scala.inline
-  implicit class OrgsUpdateWebhookEndpointOps[Self <: OrgsUpdateWebhookEndpoint] (val x: Self) extends AnyVal {
+  implicit class OrgsUpdateWebhookEndpointMutableBuilder[Self <: OrgsUpdateWebhookEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: OrgsUpdateWebhookParamsConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHook_id(value: Double): Self = this.set("hook_id", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setConfig(value: OrgsUpdateWebhookParamsConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
-    
-    @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

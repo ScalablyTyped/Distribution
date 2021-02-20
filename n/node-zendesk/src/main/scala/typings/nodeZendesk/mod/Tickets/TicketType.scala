@@ -1,5 +1,6 @@
 package typings.nodeZendesk.mod.Tickets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeZendesk.nodeZendeskStrings.question
   - typings.nodeZendesk.nodeZendeskStrings.task
 */
-trait TicketType extends js.Object
+trait TicketType extends StObject
 object TicketType {
   
   @scala.inline

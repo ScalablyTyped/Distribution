@@ -2,6 +2,7 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.kde2d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ trait KDE2DTransform extends _Transforms {
   
   var cellSize: js.UndefOr[Double | SignalRef] = js.native
   
-   // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
+  // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
   var counts: js.UndefOr[Boolean | SignalRef] = js.native
   
   var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.native
@@ -26,7 +27,7 @@ trait KDE2DTransform extends _Transforms {
   
   var weight: js.UndefOr[String | TransformField] = js.native
   
-   // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
+  // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
   var x: String | TransformField = js.native
   
   var y: String | TransformField = js.native
@@ -46,75 +47,63 @@ object KDE2DTransform {
   }
   
   @scala.inline
-  implicit class KDE2DTransformOps[Self <: KDE2DTransform] (val x: Self) extends AnyVal {
+  implicit class KDE2DTransformMutableBuilder[Self <: KDE2DTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidth(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeVarargs(value: (Double | SignalRef)*): Self = this.set("size", js.Array(value :_*))
+    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
     @scala.inline
-    def setSize(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setBandwidthVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: kde2d): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCellSize(value: Double | SignalRef): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: String | TransformField): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
     
     @scala.inline
-    def setY(value: String | TransformField): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setCounts(value: Boolean | SignalRef): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setGroupby(value: (js.Array[String | TransformField]) | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidthVarargs(value: (Double | SignalRef)*): Self = this.set("bandwidth", js.Array(value :_*))
+    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
     @scala.inline
-    def setBandwidth(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setGroupbyVarargs(value: (String | TransformField)*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    def setSize(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellSize(value: Double | SignalRef): Self = this.set("cellSize", value.asInstanceOf[js.Any])
+    def setSizeVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "size", js.Array(value :_*))
     
     @scala.inline
-    def deleteCellSize: Self = this.set("cellSize", js.undefined)
+    def setType(value: kde2d): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounts(value: Boolean | SignalRef): Self = this.set("counts", value.asInstanceOf[js.Any])
+    def setWeight(value: String | TransformField): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCounts: Self = this.set("counts", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     
     @scala.inline
-    def setGroupbyVarargs(value: (String | TransformField)*): Self = this.set("groupby", js.Array(value :_*))
+    def setX(value: String | TransformField): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupby(value: (js.Array[String | TransformField]) | SignalRef): Self = this.set("groupby", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupby: Self = this.set("groupby", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: String | TransformField): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setY(value: String | TransformField): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

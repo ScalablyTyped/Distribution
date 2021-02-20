@@ -1,12 +1,13 @@
 package typings.nightwatch.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChromeOptions extends js.Object {
+trait ChromeOptions extends StObject {
   
   /**
     *     List of command-line arguments to use when starting Chrome. Arguments with an associated value should be separated by a '=' sign
@@ -89,108 +90,96 @@ object ChromeOptions {
   }
   
   @scala.inline
-  implicit class ChromeOptionsOps[Self <: ChromeOptions] (val x: Self) extends AnyVal {
+  implicit class ChromeOptionsMutableBuilder[Self <: ChromeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: String): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebuggerAddress(value: String): Self = this.set("debuggerAddress", value.asInstanceOf[js.Any])
+    def setDetachUndefined: Self = StObject.set(x, "detach", js.undefined)
     
     @scala.inline
-    def deleteDebuggerAddress: Self = this.set("debuggerAddress", js.undefined)
+    def setExcludeSwitches(value: js.Array[String]): Self = StObject.set(x, "excludeSwitches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetach(value: Boolean): Self = this.set("detach", value.asInstanceOf[js.Any])
+    def setExcludeSwitchesUndefined: Self = StObject.set(x, "excludeSwitches", js.undefined)
     
     @scala.inline
-    def deleteDetach: Self = this.set("detach", js.undefined)
+    def setExcludeSwitchesVarargs(value: String*): Self = StObject.set(x, "excludeSwitches", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeSwitchesVarargs(value: String*): Self = this.set("excludeSwitches", js.Array(value :_*))
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeSwitches(value: js.Array[String]): Self = this.set("excludeSwitches", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteExcludeSwitches: Self = this.set("excludeSwitches", js.undefined)
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setLocalState(value: Record[String, String]): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setMinidumpPath(value: String): Self = StObject.set(x, "minidumpPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalState(value: Record[String, String]): Self = this.set("localState", value.asInstanceOf[js.Any])
+    def setMinidumpPathUndefined: Self = StObject.set(x, "minidumpPath", js.undefined)
     
     @scala.inline
-    def deleteLocalState: Self = this.set("localState", js.undefined)
+    def setMobileEmulation(value: Record[String, String]): Self = StObject.set(x, "mobileEmulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinidumpPath(value: String): Self = this.set("minidumpPath", value.asInstanceOf[js.Any])
+    def setMobileEmulationUndefined: Self = StObject.set(x, "mobileEmulation", js.undefined)
     
     @scala.inline
-    def deleteMinidumpPath: Self = this.set("minidumpPath", js.undefined)
+    def setPerfLoggingPrefs(value: ChromePerfLoggingPrefs): Self = StObject.set(x, "perfLoggingPrefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileEmulation(value: Record[String, String]): Self = this.set("mobileEmulation", value.asInstanceOf[js.Any])
+    def setPerfLoggingPrefsUndefined: Self = StObject.set(x, "perfLoggingPrefs", js.undefined)
     
     @scala.inline
-    def deleteMobileEmulation: Self = this.set("mobileEmulation", js.undefined)
+    def setPrefs(value: Record[String, String]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerfLoggingPrefs(value: ChromePerfLoggingPrefs): Self = this.set("perfLoggingPrefs", value.asInstanceOf[js.Any])
+    def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     
     @scala.inline
-    def deletePerfLoggingPrefs: Self = this.set("perfLoggingPrefs", js.undefined)
+    def setW3c(value: Boolean): Self = StObject.set(x, "w3c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefs(value: Record[String, String]): Self = this.set("prefs", value.asInstanceOf[js.Any])
+    def setW3cUndefined: Self = StObject.set(x, "w3c", js.undefined)
     
     @scala.inline
-    def deletePrefs: Self = this.set("prefs", js.undefined)
+    def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW3c(value: Boolean): Self = this.set("w3c", value.asInstanceOf[js.Any])
+    def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
     
     @scala.inline
-    def deleteW3c: Self = this.set("w3c", js.undefined)
-    
-    @scala.inline
-    def setWindowTypesVarargs(value: String*): Self = this.set("windowTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindowTypes(value: js.Array[String]): Self = this.set("windowTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowTypes: Self = this.set("windowTypes", js.undefined)
+    def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
   }
 }

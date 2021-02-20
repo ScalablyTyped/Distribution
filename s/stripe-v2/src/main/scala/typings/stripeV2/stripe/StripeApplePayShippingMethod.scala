@@ -1,11 +1,12 @@
 package typings.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeApplePayShippingMethod extends js.Object {
+trait StripeApplePayShippingMethod extends StObject {
   
   var amount: Double = js.native
   
@@ -24,30 +25,18 @@ object StripeApplePayShippingMethod {
   }
   
   @scala.inline
-  implicit class StripeApplePayShippingMethodOps[Self <: StripeApplePayShippingMethod] (val x: Self) extends AnyVal {
+  implicit class StripeApplePayShippingMethodMutableBuilder[Self <: StripeApplePayShippingMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

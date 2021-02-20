@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geocoder extends js.Object {
+trait Geocoder extends StObject {
   
   def getAddress(
     location: js.Array[LngLat],

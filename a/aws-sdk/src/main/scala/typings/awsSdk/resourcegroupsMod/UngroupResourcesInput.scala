@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UngroupResourcesInput extends js.Object {
+trait UngroupResourcesInput extends StObject {
   
   /**
     * The name or the ARN of the resource group from which to remove the resources.
@@ -26,27 +27,15 @@ object UngroupResourcesInput {
   }
   
   @scala.inline
-  implicit class UngroupResourcesInputOps[Self <: UngroupResourcesInput] (val x: Self) extends AnyVal {
+  implicit class UngroupResourcesInputMutableBuilder[Self <: UngroupResourcesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroup(value: GroupString): Self = this.set("Group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceArnsVarargs(value: ResourceArn*): Self = this.set("ResourceArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceArns(value: ResourceArnList): Self = this.set("ResourceArns", value.asInstanceOf[js.Any])
+    def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
   }
 }

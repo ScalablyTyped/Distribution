@@ -1,11 +1,12 @@
 package typings.angularCommon.httpHttpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpParameterCodec extends js.Object {
+trait HttpParameterCodec extends StObject {
   
   def decodeKey(key: String): String = js.native
   
@@ -29,30 +30,18 @@ object HttpParameterCodec {
   }
   
   @scala.inline
-  implicit class HttpParameterCodecOps[Self <: HttpParameterCodec] (val x: Self) extends AnyVal {
+  implicit class HttpParameterCodecMutableBuilder[Self <: HttpParameterCodec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecodeKey(value: String => String): Self = StObject.set(x, "decodeKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecodeValue(value: String => String): Self = StObject.set(x, "decodeValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodeKey(value: String => String): Self = StObject.set(x, "encodeKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDecodeKey(value: String => String): Self = this.set("decodeKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDecodeValue(value: String => String): Self = this.set("decodeValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEncodeKey(value: String => String): Self = this.set("encodeKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEncodeValue(value: String => String): Self = this.set("encodeValue", js.Any.fromFunction1(value))
+    def setEncodeValue(value: String => String): Self = StObject.set(x, "encodeValue", js.Any.fromFunction1(value))
   }
 }

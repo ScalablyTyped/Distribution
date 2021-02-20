@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserStorageMetadata extends js.Object {
+trait UserStorageMetadata extends StObject {
   
   /**
     * The storage for a user.
@@ -26,30 +27,18 @@ object UserStorageMetadata {
   }
   
   @scala.inline
-  implicit class UserStorageMetadataOps[Self <: UserStorageMetadata] (val x: Self) extends AnyVal {
+  implicit class UserStorageMetadataMutableBuilder[Self <: UserStorageMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStorageRule(value: StorageRuleType): Self = StObject.set(x, "StorageRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStorageRuleUndefined: Self = StObject.set(x, "StorageRule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageUtilizedInBytes(value: SizeType): Self = StObject.set(x, "StorageUtilizedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageRule(value: StorageRuleType): Self = this.set("StorageRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageRule: Self = this.set("StorageRule", js.undefined)
-    
-    @scala.inline
-    def setStorageUtilizedInBytes(value: SizeType): Self = this.set("StorageUtilizedInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageUtilizedInBytes: Self = this.set("StorageUtilizedInBytes", js.undefined)
+    def setStorageUtilizedInBytesUndefined: Self = StObject.set(x, "StorageUtilizedInBytes", js.undefined)
   }
 }

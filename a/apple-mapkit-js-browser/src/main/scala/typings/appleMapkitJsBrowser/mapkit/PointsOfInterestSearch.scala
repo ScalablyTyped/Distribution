@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that fetches points of interest within a specified region.
   */
 @js.native
-trait PointsOfInterestSearch extends js.Object {
+trait PointsOfInterestSearch extends StObject {
   
   /**
     * The maximum distance to use from the center of the region for fetching points of interest.

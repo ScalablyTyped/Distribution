@@ -1,5 +1,6 @@
 package typings.iconvLite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("iconv-lite", JSImport.Namespace)
 @js.native
-object iconvLiteRequire extends js.Object
+object iconvLiteRequire extends StObject

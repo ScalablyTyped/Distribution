@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 可选的字体描述符 */
 @js.native
-trait DescOption extends js.Object {
+trait DescOption extends StObject {
   
   /** 字体样式，可选值为 normal / italic / oblique */
   var style: js.UndefOr[String] = js.native
@@ -26,36 +27,24 @@ object DescOption {
   }
   
   @scala.inline
-  implicit class DescOptionOps[Self <: DescOption] (val x: Self) extends AnyVal {
+  implicit class DescOptionMutableBuilder[Self <: DescOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariant(value: String): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: String): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

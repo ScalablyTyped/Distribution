@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloodlightGroup extends js.Object {
+trait FloodlightGroup extends StObject {
   
   /** The Active View video viewability metric configuration for the Floodlight group. */
   var activeViewConfig: js.UndefOr[ActiveViewVideoViewabilityMetricConfig] = js.native
@@ -49,64 +50,52 @@ object FloodlightGroup {
   }
   
   @scala.inline
-  implicit class FloodlightGroupOps[Self <: FloodlightGroup] (val x: Self) extends AnyVal {
+  implicit class FloodlightGroupMutableBuilder[Self <: FloodlightGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveViewConfig(value: ActiveViewVideoViewabilityMetricConfig): Self = StObject.set(x, "activeViewConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActiveViewConfig(value: ActiveViewVideoViewabilityMetricConfig): Self = this.set("activeViewConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveViewConfig: Self = this.set("activeViewConfig", js.undefined)
+    def setActiveViewConfigUndefined: Self = StObject.set(x, "activeViewConfig", js.undefined)
     
     @scala.inline
     def setCustomVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup with TopLevel[js.Any]
-    ): Self = this.set("customVariables", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomVariables: Self = this.set("customVariables", js.undefined)
+    def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setFloodlightGroupId(value: String): Self = this.set("floodlightGroupId", value.asInstanceOf[js.Any])
+    def setFloodlightGroupId(value: String): Self = StObject.set(x, "floodlightGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloodlightGroupId: Self = this.set("floodlightGroupId", js.undefined)
+    def setFloodlightGroupIdUndefined: Self = StObject.set(x, "floodlightGroupId", js.undefined)
     
     @scala.inline
-    def setLookbackWindow(value: LookbackWindow): Self = this.set("lookbackWindow", value.asInstanceOf[js.Any])
+    def setLookbackWindow(value: LookbackWindow): Self = StObject.set(x, "lookbackWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLookbackWindow: Self = this.set("lookbackWindow", js.undefined)
+    def setLookbackWindowUndefined: Self = StObject.set(x, "lookbackWindow", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setWebTagType(value: String): Self = this.set("webTagType", value.asInstanceOf[js.Any])
+    def setWebTagType(value: String): Self = StObject.set(x, "webTagType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebTagType: Self = this.set("webTagType", js.undefined)
+    def setWebTagTypeUndefined: Self = StObject.set(x, "webTagType", js.undefined)
   }
 }

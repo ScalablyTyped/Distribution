@@ -1,21 +1,35 @@
 package typings.ejWebAll.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.PivotPager
-import typings.ejWebAll.ej.PivotPager.Model
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofPivotPager
-  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), PivotPager]
-     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, PivotPager] {
+trait TypeofPivotPager extends StObject {
   
+  /* static member */
   var Locale: js.Any = js.native
   
+  /* static member */
   var fn: PivotPager = js.native
+}
+object TypeofPivotPager {
+  
+  @scala.inline
+  def apply(Locale: js.Any, fn: PivotPager): TypeofPivotPager = {
+    val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofPivotPager]
+  }
+  
+  @scala.inline
+  implicit class TypeofPivotPagerMutableBuilder[Self <: TypeofPivotPager] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFn(value: PivotPager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+  }
 }

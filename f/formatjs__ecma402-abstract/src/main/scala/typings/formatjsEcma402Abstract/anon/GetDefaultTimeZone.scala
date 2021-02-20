@@ -5,12 +5,13 @@ import typings.formatjsEcma402Abstract.dateTimeMod.IntlDateTimeFormatInternal
 import typings.std.Intl.DateTimeFormat
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDefaultTimeZone extends js.Object {
+trait GetDefaultTimeZone extends StObject {
   
   var availableLocales: Set[String] = js.native
   
@@ -46,45 +47,33 @@ object GetDefaultTimeZone {
   }
   
   @scala.inline
-  implicit class GetDefaultTimeZoneOps[Self <: GetDefaultTimeZone] (val x: Self) extends AnyVal {
+  implicit class GetDefaultTimeZoneMutableBuilder[Self <: GetDefaultTimeZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultTimeZone(value: () => String): Self = StObject.set(x, "getDefaultTimeZone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAvailableLocales(value: Set[String]): Self = this.set("availableLocales", value.asInstanceOf[js.Any])
+    def setGetInternalSlots(value: DateTimeFormat => IntlDateTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultLocale(value: () => String): Self = this.set("getDefaultLocale", js.Any.fromFunction0(value))
+    def setLocaleData(value: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultTimeZone(value: () => String): Self = this.set("getDefaultTimeZone", js.Any.fromFunction0(value))
+    def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInternalSlots(value: DateTimeFormat => IntlDateTimeFormatInternal): Self = this.set("getInternalSlots", js.Any.fromFunction1(value))
+    def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
     
     @scala.inline
-    def setLocaleData(value: Record[String, js.UndefOr[DateTimeFormatLocaleInternalData]]): Self = this.set("localeData", value.asInstanceOf[js.Any])
+    def setTzData(value: Record[String, _]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelevantExtensionKeysVarargs(value: String*): Self = this.set("relevantExtensionKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelevantExtensionKeys(value: js.Array[String]): Self = this.set("relevantExtensionKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTzData(value: Record[String, _]): Self = this.set("tzData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUppercaseLinks(value: Record[String, String]): Self = this.set("uppercaseLinks", value.asInstanceOf[js.Any])
+    def setUppercaseLinks(value: Record[String, String]): Self = StObject.set(x, "uppercaseLinks", value.asInstanceOf[js.Any])
   }
 }

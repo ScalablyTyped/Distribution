@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendmedicalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnmappedAttribute extends js.Object {
+trait UnmappedAttribute extends StObject {
   
   /**
     *  The specific attribute that has been extracted but not mapped to an entity. 
@@ -26,30 +27,18 @@ object UnmappedAttribute {
   }
   
   @scala.inline
-  implicit class UnmappedAttributeOps[Self <: UnmappedAttribute] (val x: Self) extends AnyVal {
+  implicit class UnmappedAttributeMutableBuilder[Self <: UnmappedAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: Attribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: EntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: Attribute): Self = this.set("Attribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttribute: Self = this.set("Attribute", js.undefined)
-    
-    @scala.inline
-    def setType(value: EntityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

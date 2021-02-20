@@ -1,6 +1,7 @@
 package typings.vexflow.global.Vex.Flow
 
 import typings.vexflow.anon.Firstindices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +12,11 @@ class StaveLine protected ()
   extends typings.vexflow.Vex.Flow.StaveLine {
   def this(notes: Firstindices) = this()
 }
-@JSGlobal("Vex.Flow.StaveLine")
-@js.native
-object StaveLine extends js.Object {
+object StaveLine {
   
+  @JSGlobal("Vex.Flow.StaveLine.TextJustification")
   @js.native
-  object TextJustification extends js.Object {
+  object TextJustification extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.StaveLine.TextJustification with Double] = js.native
@@ -28,8 +28,9 @@ object StaveLine extends js.Object {
     /* 1 */ val RIGHT: typings.vexflow.Vex.Flow.StaveLine.TextJustification.RIGHT with Double = js.native
   }
   
+  @JSGlobal("Vex.Flow.StaveLine.TextVerticalPosition")
   @js.native
-  object TextVerticalPosition extends js.Object {
+  object TextVerticalPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.StaveLine.TextVerticalPosition with Double] = js.native

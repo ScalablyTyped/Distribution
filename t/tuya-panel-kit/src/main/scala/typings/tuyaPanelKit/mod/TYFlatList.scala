@@ -2,26 +2,56 @@ package typings.tuyaPanelKit.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ElementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "TYFlatList")
 @js.native
-class TYFlatList[ItemT /* <: TYFlatListData */] ()
-  extends Component[TYFlatListProps[ItemT], js.Object, js.Any]
+class TYFlatList[ItemT /* <: TYFlatListData */] protected ()
+  extends Component[TYFlatListProps[ItemT], js.Object, js.Any] {
+  def this(props: TYFlatListProps[ItemT]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: TYFlatListProps[ItemT], context: js.Any) = this()
+}
 /* static members */
-@JSImport("tuya-panel-kit", "TYFlatList")
-@js.native
-object TYFlatList extends js.Object {
+object TYFlatList {
   
-  var CheckboxItem: ElementType[TYFlatListCheckbox[TYFlatListData]] = js.native
+  @JSImport("tuya-panel-kit", "TYFlatList")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var InputItem: ElementType[TYSectionInputProps] = js.native
+  @JSImport("tuya-panel-kit", "TYFlatList.CheckboxItem")
+  @js.native
+  def CheckboxItem: ElementType[TYFlatListCheckbox[TYFlatListData]] = js.native
+  @scala.inline
+  def CheckboxItem_=(x: ElementType[TYFlatListCheckbox[TYFlatListData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
   
-  var Item: ElementType[TYListItemProps] = js.native
+  @JSImport("tuya-panel-kit", "TYFlatList.InputItem")
+  @js.native
+  def InputItem: ElementType[TYSectionInputProps] = js.native
+  @scala.inline
+  def InputItem_=(x: ElementType[TYSectionInputProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InputItem")(x.asInstanceOf[js.Any])
   
-  var SliderItem: ElementType[TYSectionSliderProps] = js.native
+  @JSImport("tuya-panel-kit", "TYFlatList.Item")
+  @js.native
+  def Item: ElementType[TYListItemProps] = js.native
+  @scala.inline
+  def Item_=(x: ElementType[TYListItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
-  var SwitchItem: ElementType[TYSectionListProps] = js.native
+  @JSImport("tuya-panel-kit", "TYFlatList.SliderItem")
+  @js.native
+  def SliderItem: ElementType[TYSectionSliderProps] = js.native
+  @scala.inline
+  def SliderItem_=(x: ElementType[TYSectionSliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderItem")(x.asInstanceOf[js.Any])
+  
+  @JSImport("tuya-panel-kit", "TYFlatList.SwitchItem")
+  @js.native
+  def SwitchItem: ElementType[TYSectionListProps] = js.native
+  @scala.inline
+  def SwitchItem_=(x: ElementType[TYSectionListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchItem")(x.asInstanceOf[js.Any])
 }

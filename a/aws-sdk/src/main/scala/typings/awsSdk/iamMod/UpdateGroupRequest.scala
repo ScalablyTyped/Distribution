@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateGroupRequest extends js.Object {
+trait UpdateGroupRequest extends StObject {
   
   /**
     * Name of the IAM group to update. If you're changing the name of the group, this is the original name. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
@@ -31,33 +32,21 @@ object UpdateGroupRequest {
   }
   
   @scala.inline
-  implicit class UpdateGroupRequestOps[Self <: UpdateGroupRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateGroupRequestMutableBuilder[Self <: UpdateGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewGroupName(value: groupNameType): Self = StObject.set(x, "NewGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewGroupNameUndefined: Self = StObject.set(x, "NewGroupName", js.undefined)
     
     @scala.inline
-    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewGroupName(value: groupNameType): Self = this.set("NewGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewGroupName: Self = this.set("NewGroupName", js.undefined)
-    
-    @scala.inline
-    def setNewPath(value: pathType): Self = this.set("NewPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPath: Self = this.set("NewPath", js.undefined)
+    def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
   }
 }

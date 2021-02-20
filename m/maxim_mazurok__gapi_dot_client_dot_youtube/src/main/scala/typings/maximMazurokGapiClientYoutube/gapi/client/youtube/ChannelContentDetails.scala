@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import typings.maximMazurokGapiClientYoutube.anon.Favorites
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelContentDetails extends js.Object {
+trait ChannelContentDetails extends StObject {
   
   var relatedPlaylists: js.UndefOr[Favorites] = js.native
 }
@@ -19,24 +20,12 @@ object ChannelContentDetails {
   }
   
   @scala.inline
-  implicit class ChannelContentDetailsOps[Self <: ChannelContentDetails] (val x: Self) extends AnyVal {
+  implicit class ChannelContentDetailsMutableBuilder[Self <: ChannelContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedPlaylists(value: Favorites): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelatedPlaylists(value: Favorites): Self = this.set("relatedPlaylists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelatedPlaylists: Self = this.set("relatedPlaylists", js.undefined)
+    def setRelatedPlaylistsUndefined: Self = StObject.set(x, "relatedPlaylists", js.undefined)
   }
 }

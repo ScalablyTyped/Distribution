@@ -5,14 +5,15 @@ import typings.angularCompiler.compileMetadataMod.CompileTypeMetadata
 import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.srcUtilMod.OutputContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/render3/r3_module_factory_compiler", JSImport.Namespace)
-@js.native
-object r3ModuleFactoryCompilerMod extends js.Object {
+object r3ModuleFactoryCompilerMod {
   
+  @JSImport("@angular/compiler/src/render3/r3_module_factory_compiler", "compileModuleFactory")
+  @js.native
   def compileModuleFactory(
     outputCtx: OutputContext,
     module: CompileNgModuleMetadata,

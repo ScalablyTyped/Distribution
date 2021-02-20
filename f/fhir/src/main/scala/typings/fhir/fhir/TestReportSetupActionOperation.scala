@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,51 +50,39 @@ object TestReportSetupActionOperation {
   }
   
   @scala.inline
-  implicit class TestReportSetupActionOperationOps[Self <: TestReportSetupActionOperation] (val x: Self) extends AnyVal {
+  implicit class TestReportSetupActionOperationMutableBuilder[Self <: TestReportSetupActionOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: uri): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: markdown): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: code): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def set_detail(value: Element): Self = this.set("_detail", value.asInstanceOf[js.Any])
+    def setResult(value: code): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_detail: Self = this.set("_detail", js.undefined)
+    def set_detail(value: Element): Self = StObject.set(x, "_detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_message(value: Element): Self = this.set("_message", value.asInstanceOf[js.Any])
+    def set_detailUndefined: Self = StObject.set(x, "_detail", js.undefined)
     
     @scala.inline
-    def delete_message: Self = this.set("_message", js.undefined)
+    def set_message(value: Element): Self = StObject.set(x, "_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_result(value: Element): Self = this.set("_result", value.asInstanceOf[js.Any])
+    def set_messageUndefined: Self = StObject.set(x, "_message", js.undefined)
     
     @scala.inline
-    def delete_result: Self = this.set("_result", js.undefined)
+    def set_result(value: Element): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: uri): Self = this.set("detail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: markdown): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def set_resultUndefined: Self = StObject.set(x, "_result", js.undefined)
   }
 }

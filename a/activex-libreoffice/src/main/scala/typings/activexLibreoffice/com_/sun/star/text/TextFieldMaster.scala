@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,27 +51,15 @@ object TextFieldMaster {
   }
   
   @scala.inline
-  implicit class TextFieldMasterOps[Self <: TextFieldMaster] (val x: Self) extends AnyVal {
+  implicit class TextFieldMasterMutableBuilder[Self <: TextFieldMaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependentTextFields(value: SafeArray[XDependentTextField]): Self = StObject.set(x, "DependentTextFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceName(value: String): Self = StObject.set(x, "InstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDependentTextFields(value: SafeArray[XDependentTextField]): Self = this.set("DependentTextFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceName(value: String): Self = this.set("InstanceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

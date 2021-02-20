@@ -2,12 +2,13 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.elasticsearch.httpMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigOptions extends js.Object {
+trait ConfigOptions extends StObject {
   
   var apiVersion: js.UndefOr[String] = js.native
   
@@ -64,156 +65,144 @@ object ConfigOptions {
   }
   
   @scala.inline
-  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+  implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionClass(value: String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^])): Self = StObject.set(x, "connectionClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setConnectionClassUndefined: Self = StObject.set(x, "connectionClass", js.undefined)
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setCreateNodeAgent(value: js.Any): Self = StObject.set(x, "createNodeAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionClass(value: String | (Instantiable2[/* host */ js.Any, /* config */ js.Any, ^])): Self = this.set("connectionClass", value.asInstanceOf[js.Any])
+    def setCreateNodeAgentUndefined: Self = StObject.set(x, "createNodeAgent", js.undefined)
     
     @scala.inline
-    def deleteConnectionClass: Self = this.set("connectionClass", js.undefined)
+    def setDeadTimeout(value: Double): Self = StObject.set(x, "deadTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateNodeAgent(value: js.Any): Self = this.set("createNodeAgent", value.asInstanceOf[js.Any])
+    def setDeadTimeoutUndefined: Self = StObject.set(x, "deadTimeout", js.undefined)
     
     @scala.inline
-    def deleteCreateNodeAgent: Self = this.set("createNodeAgent", js.undefined)
+    def setDefer(value: () => Unit): Self = StObject.set(x, "defer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeadTimeout(value: Double): Self = this.set("deadTimeout", value.asInstanceOf[js.Any])
+    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
     @scala.inline
-    def deleteDeadTimeout: Self = this.set("deadTimeout", js.undefined)
+    def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefer(value: () => Unit): Self = this.set("defer", js.Any.fromFunction0(value))
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDefer: Self = this.set("defer", js.undefined)
+    def setHosts(value: js.Any): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: js.Any): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHttpAuth(value: String): Self = StObject.set(x, "httpAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: js.Any): Self = this.set("hosts", value.asInstanceOf[js.Any])
+    def setHttpAuthUndefined: Self = StObject.set(x, "httpAuth", js.undefined)
     
     @scala.inline
-    def deleteHosts: Self = this.set("hosts", js.undefined)
+    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpAuth(value: String): Self = this.set("httpAuth", value.asInstanceOf[js.Any])
+    def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     @scala.inline
-    def deleteHttpAuth: Self = this.set("httpAuth", js.undefined)
+    def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: js.Any): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setNodesToHostCallback(value: js.Any): Self = StObject.set(x, "nodesToHostCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSockets(value: Double): Self = this.set("maxSockets", value.asInstanceOf[js.Any])
+    def setNodesToHostCallbackUndefined: Self = StObject.set(x, "nodesToHostCallback", js.undefined)
     
     @scala.inline
-    def deleteMaxSockets: Self = this.set("maxSockets", js.undefined)
+    def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesToHostCallback(value: js.Any): Self = this.set("nodesToHostCallback", value.asInstanceOf[js.Any])
+    def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
     
     @scala.inline
-    def deleteNodesToHostCallback: Self = this.set("nodesToHostCallback", js.undefined)
+    def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPingTimeout(value: Double): Self = this.set("pingTimeout", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePingTimeout: Self = this.set("pingTimeout", js.undefined)
+    def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Any): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setSelector(value: js.Any): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTimeout(value: Double): Self = this.set("requestTimeout", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteRequestTimeout: Self = this.set("requestTimeout", js.undefined)
+    def setSniffInterval(value: Double): Self = StObject.set(x, "sniffInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: js.Any): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSniffIntervalUndefined: Self = StObject.set(x, "sniffInterval", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSniffOnConnectionFault(value: Boolean): Self = StObject.set(x, "sniffOnConnectionFault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSniffInterval(value: Double): Self = this.set("sniffInterval", value.asInstanceOf[js.Any])
+    def setSniffOnConnectionFaultUndefined: Self = StObject.set(x, "sniffOnConnectionFault", js.undefined)
     
     @scala.inline
-    def deleteSniffInterval: Self = this.set("sniffInterval", js.undefined)
+    def setSniffOnStart(value: Boolean): Self = StObject.set(x, "sniffOnStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSniffOnConnectionFault(value: Boolean): Self = this.set("sniffOnConnectionFault", value.asInstanceOf[js.Any])
+    def setSniffOnStartUndefined: Self = StObject.set(x, "sniffOnStart", js.undefined)
     
     @scala.inline
-    def deleteSniffOnConnectionFault: Self = this.set("sniffOnConnectionFault", js.undefined)
+    def setSniffedNodesProtocol(value: String): Self = StObject.set(x, "sniffedNodesProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSniffOnStart(value: Boolean): Self = this.set("sniffOnStart", value.asInstanceOf[js.Any])
+    def setSniffedNodesProtocolUndefined: Self = StObject.set(x, "sniffedNodesProtocol", js.undefined)
     
     @scala.inline
-    def deleteSniffOnStart: Self = this.set("sniffOnStart", js.undefined)
+    def setSsl(value: js.Object): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSniffedNodesProtocol(value: String): Self = this.set("sniffedNodesProtocol", value.asInstanceOf[js.Any])
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def deleteSniffedNodesProtocol: Self = this.set("sniffedNodesProtocol", js.undefined)
+    def setSuggestCompression(value: Boolean): Self = StObject.set(x, "suggestCompression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsl(value: js.Object): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
-    
-    @scala.inline
-    def setSuggestCompression(value: Boolean): Self = this.set("suggestCompression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestCompression: Self = this.set("suggestCompression", js.undefined)
+    def setSuggestCompressionUndefined: Self = StObject.set(x, "suggestCompression", js.undefined)
   }
 }

@@ -2,23 +2,24 @@ package typings.winrtUwp.global.Windows.Media
 
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The DIAL protocol ( DIscover And Launch) lets people launches media apps from a primary device, like a phone or tablet, to a remote device like a television. See http://www.dial-multiscreen.org/home for more information in the industry-standard protocol. */
-@JSGlobal("Windows.Media.DialProtocol")
-@js.native
-object DialProtocol extends js.Object {
+object DialProtocol {
   
   /** Represents a DIAL application running on a remote device. */
+  @JSGlobal("Windows.Media.DialProtocol.DialApp")
   @js.native
   abstract class DialApp ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialApp
   
   /** The result of attempting to launch an app on a remote device. */
+  @JSGlobal("Windows.Media.DialProtocol.DialAppLaunchResult")
   @js.native
-  object DialAppLaunchResult extends js.Object {
+  object DialAppLaunchResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.DialProtocol.DialAppLaunchResult with Double] = js.native
@@ -33,8 +34,9 @@ object DialProtocol extends js.Object {
   }
   
   /** The state of the application on the remote device. */
+  @JSGlobal("Windows.Media.DialProtocol.DialAppState")
   @js.native
-  object DialAppState extends js.Object {
+  object DialAppState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.DialProtocol.DialAppState with Double] = js.native
@@ -49,13 +51,15 @@ object DialProtocol extends js.Object {
   }
   
   /** Represents the state of the DIAL app. */
+  @JSGlobal("Windows.Media.DialProtocol.DialAppStateDetails")
   @js.native
   abstract class DialAppStateDetails ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialAppStateDetails
   
   /** The result of attempting to stop an app from running on a remote device. */
+  @JSGlobal("Windows.Media.DialProtocol.DialAppStopResult")
   @js.native
-  object DialAppStopResult extends js.Object {
+  object DialAppStopResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.DialProtocol.DialAppStopResult with Double] = js.native
@@ -70,18 +74,20 @@ object DialProtocol extends js.Object {
   }
   
   /** Represents the remote device capable of running DIAL apps. */
+  @JSGlobal("Windows.Media.DialProtocol.DialDevice")
   @js.native
   abstract class DialDevice ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialDevice
-  /* static members */
-  @js.native
-  object DialDevice extends js.Object {
+  object DialDevice {
     
     /**
       * Indicates whether or not the device supports launching DIAL apps.
       * @param device The device you want to get information for.
       * @return True if app launching is supported; false, otherwise.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.DialProtocol.DialDevice.deviceInfoSupportsDialAsync")
+    @js.native
     def deviceInfoSupportsDialAsync(device: DeviceInformation): IPromiseWithIAsyncOperation[Boolean] = js.native
     
     /**
@@ -89,6 +95,9 @@ object DialProtocol extends js.Object {
       * @param value The ID of the device you want a DialDevice object for.
       * @return The DialDevice object for the given device ID.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.DialProtocol.DialDevice.fromIdAsync")
+    @js.native
     def fromIdAsync(value: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.DialProtocol.DialDevice] = js.native
     
     /**
@@ -96,12 +105,16 @@ object DialProtocol extends js.Object {
       * @param appName The name of the app.
       * @return The AQS filter.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.DialProtocol.DialDevice.getDeviceSelector")
+    @js.native
     def getDeviceSelector(appName: String): String = js.native
   }
   
   /** The possible statuses a DIAL device can have in the DIAL device picker. You can use these to adjust the sub-status and other visual attributes for a particular device in the picker. */
+  @JSGlobal("Windows.Media.DialProtocol.DialDeviceDisplayStatus")
   @js.native
-  object DialDeviceDisplayStatus extends js.Object {
+  object DialDeviceDisplayStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.DialProtocol.DialDeviceDisplayStatus with Double] = js.native
@@ -120,22 +133,26 @@ object DialProtocol extends js.Object {
   }
   
   /** Represents a picker flyout that contains a list of remote devices for the user to choose from. */
+  @JSGlobal("Windows.Media.DialProtocol.DialDevicePicker")
   @js.native
   /** Creates a new DialDevicePicker object. */
   class DialDevicePicker ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialDevicePicker
   
   /** Represents the filter used to determine which devices to show in a DialDevicePicker . The filter parameters are OR-ed together to build the resulting filter. */
+  @JSGlobal("Windows.Media.DialProtocol.DialDevicePickerFilter")
   @js.native
   abstract class DialDevicePickerFilter ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialDevicePickerFilter
   
   /** Represents the event arguments for the DialDeviceSelected event on the DialDevicePicker object. */
+  @JSGlobal("Windows.Media.DialProtocol.DialDeviceSelectedEventArgs")
   @js.native
   abstract class DialDeviceSelectedEventArgs ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialDeviceSelectedEventArgs
   
   /** Represents the event arguments for the DisconnectButtonClicked event on the DialDevicePicker object. */
+  @JSGlobal("Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs")
   @js.native
   abstract class DialDisconnectButtonClickedEventArgs ()
     extends typings.winrtUwp.Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs

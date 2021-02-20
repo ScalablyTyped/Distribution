@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,54 +140,42 @@ object ASPxClientCheckBoxList {
   }
   
   @scala.inline
-  implicit class ASPxClientCheckBoxListOps[Self <: ASPxClientCheckBoxList] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCheckBoxListMutableBuilder[Self <: ASPxClientCheckBoxList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSelectedIndices(value: () => js.Array[Double]): Self = StObject.set(x, "GetSelectedIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelectedItems(value: () => js.Array[ASPxClientListEditItem]): Self = StObject.set(x, "GetSelectedItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedValues(value: () => js.Array[_]): Self = StObject.set(x, "GetSelectedValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedIndices(value: () => js.Array[Double]): Self = this.set("GetSelectedIndices", js.Any.fromFunction0(value))
+    def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedItems(value: () => js.Array[ASPxClientListEditItem]): Self = this.set("GetSelectedItems", js.Any.fromFunction0(value))
+    def setSelectIndices(value: js.Array[Double] => Unit): Self = StObject.set(x, "SelectIndices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedValues(value: () => js.Array[_]): Self = this.set("GetSelectedValues", js.Any.fromFunction0(value))
+    def setSelectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = StObject.set(x, "SelectItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectAll(value: () => Unit): Self = this.set("SelectAll", js.Any.fromFunction0(value))
+    def setSelectValues(value: js.Array[_] => Unit): Self = StObject.set(x, "SelectValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectIndices(value: js.Array[Double] => Unit): Self = this.set("SelectIndices", js.Any.fromFunction1(value))
+    def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]]): Self = StObject.set(x, "SelectedIndexChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = this.set("SelectItems", js.Any.fromFunction1(value))
+    def setUnselectAll(value: () => Unit): Self = StObject.set(x, "UnselectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectValues(value: js.Array[_] => Unit): Self = this.set("SelectValues", js.Any.fromFunction1(value))
+    def setUnselectIndices(value: js.Array[Double] => Unit): Self = StObject.set(x, "UnselectIndices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]]): Self = this.set("SelectedIndexChanged", value.asInstanceOf[js.Any])
+    def setUnselectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = StObject.set(x, "UnselectItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnselectAll(value: () => Unit): Self = this.set("UnselectAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnselectIndices(value: js.Array[Double] => Unit): Self = this.set("UnselectIndices", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnselectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = this.set("UnselectItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnselectValues(value: js.Array[_] => Unit): Self = this.set("UnselectValues", js.Any.fromFunction1(value))
+    def setUnselectValues(value: js.Array[_] => Unit): Self = StObject.set(x, "UnselectValues", js.Any.fromFunction1(value))
   }
 }

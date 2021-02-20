@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Project-specific data associated with a beacon.
   */
 @js.native
-trait SchemaBeaconAttachment extends js.Object {
+trait SchemaBeaconAttachment extends StObject {
   
   /**
     * Resource name of this attachment. Attachment names have the format:
@@ -63,48 +64,36 @@ object SchemaBeaconAttachment {
   }
   
   @scala.inline
-  implicit class SchemaBeaconAttachmentOps[Self <: SchemaBeaconAttachment] (val x: Self) extends AnyVal {
+  implicit class SchemaBeaconAttachmentMutableBuilder[Self <: SchemaBeaconAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeMs(value: String): Self = StObject.set(x, "creationTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentName(value: String): Self = this.set("attachmentName", value.asInstanceOf[js.Any])
+    def setCreationTimeMsUndefined: Self = StObject.set(x, "creationTimeMs", js.undefined)
     
     @scala.inline
-    def deleteAttachmentName: Self = this.set("attachmentName", js.undefined)
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimeMs(value: String): Self = this.set("creationTimeMs", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCreationTimeMs: Self = this.set("creationTimeMs", js.undefined)
+    def setMaxDistanceMeters(value: Double): Self = StObject.set(x, "maxDistanceMeters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMaxDistanceMetersUndefined: Self = StObject.set(x, "maxDistanceMeters", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setNamespacedType(value: String): Self = StObject.set(x, "namespacedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistanceMeters(value: Double): Self = this.set("maxDistanceMeters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDistanceMeters: Self = this.set("maxDistanceMeters", js.undefined)
-    
-    @scala.inline
-    def setNamespacedType(value: String): Self = this.set("namespacedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespacedType: Self = this.set("namespacedType", js.undefined)
+    def setNamespacedTypeUndefined: Self = StObject.set(x, "namespacedType", js.undefined)
   }
 }

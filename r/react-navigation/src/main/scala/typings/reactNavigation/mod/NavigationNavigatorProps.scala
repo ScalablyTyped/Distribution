@@ -1,12 +1,13 @@
 package typings.reactNavigation.mod
 
 import typings.reactNavigation.reactNavigationStrings.`no-preference`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationNavigatorProps[Options, State, ScreenProps] extends js.Object {
+trait NavigationNavigatorProps[Options, State, ScreenProps] extends StObject {
   
   var detached: js.UndefOr[Boolean] = js.native
   
@@ -27,48 +28,36 @@ object NavigationNavigatorProps {
   }
   
   @scala.inline
-  implicit class NavigationNavigatorPropsOps[Self <: NavigationNavigatorProps[_, _, _], Options, State, ScreenProps] (val x: Self with (NavigationNavigatorProps[Options, State, ScreenProps])) extends AnyVal {
+  implicit class NavigationNavigatorPropsMutableBuilder[Self <: NavigationNavigatorProps[_, _, _], Options, State, ScreenProps] (val x: Self with (NavigationNavigatorProps[Options, State, ScreenProps])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNavigation(value: NavigationProp[State]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetached(value: Boolean): Self = this.set("detached", value.asInstanceOf[js.Any])
+    def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetached: Self = this.set("detached", js.undefined)
+    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
     
     @scala.inline
-    def setNavigation(value: NavigationProp[State]): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
     @scala.inline
-    def deleteNavigation: Self = this.set("navigation", js.undefined)
+    def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationOptions(value: Options): Self = this.set("navigationOptions", value.asInstanceOf[js.Any])
+    def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
     
     @scala.inline
-    def deleteNavigationOptions: Self = this.set("navigationOptions", js.undefined)
+    def setTheme(value: SupportedThemes | `no-preference`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenProps(value: ScreenProps): Self = this.set("screenProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenProps: Self = this.set("screenProps", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: SupportedThemes | `no-preference`): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

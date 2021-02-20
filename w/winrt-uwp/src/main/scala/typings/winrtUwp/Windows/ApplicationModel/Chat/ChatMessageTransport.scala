@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the identity of a transport for sending and receiving messages. Physically, a chat message transport is a SIM slot on the phone. */
 @js.native
-trait ChatMessageTransport extends js.Object {
+trait ChatMessageTransport extends StObject {
   
   /** Gets the configuration of the message transport. */
   var configuration: ChatMessageTransportConfiguration = js.native
@@ -50,39 +51,27 @@ object ChatMessageTransport {
   }
   
   @scala.inline
-  implicit class ChatMessageTransportOps[Self <: ChatMessageTransport] (val x: Self) extends AnyVal {
+  implicit class ChatMessageTransportMutableBuilder[Self <: ChatMessageTransport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: ChatMessageTransportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAppSetAsNotificationProvider(value: Boolean): Self = StObject.set(x, "isAppSetAsNotificationProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: ChatMessageTransportConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setRequestSetAsNotificationProviderAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "requestSetAsNotificationProviderAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setTransportFriendlyName(value: String): Self = StObject.set(x, "transportFriendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAppSetAsNotificationProvider(value: Boolean): Self = this.set("isAppSetAsNotificationProvider", value.asInstanceOf[js.Any])
+    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestSetAsNotificationProviderAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("requestSetAsNotificationProviderAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTransportFriendlyName(value: String): Self = this.set("transportFriendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportId(value: String): Self = this.set("transportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportKind(value: ChatMessageTransportKind): Self = this.set("transportKind", value.asInstanceOf[js.Any])
+    def setTransportKind(value: ChatMessageTransportKind): Self = StObject.set(x, "transportKind", value.asInstanceOf[js.Any])
   }
 }

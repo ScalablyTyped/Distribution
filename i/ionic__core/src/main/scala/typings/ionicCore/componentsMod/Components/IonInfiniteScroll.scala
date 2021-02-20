@@ -2,12 +2,13 @@ package typings.ionicCore.componentsMod.Components
 
 import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonInfiniteScroll extends js.Object {
+trait IonInfiniteScroll extends StObject {
   
   /**
     * Call `complete()` within the `ionInfinite` output event handler when your async operation has completed. For example, the `loading` state is while the app is performing an asynchronous operation, such as receiving more data from an AJAX request to add more items to a data list. Once the data has been received and UI updated, you then call this method to signify that the loading has completed. This method will change the infinite scroll's state from `loading` to `enabled`.
@@ -38,30 +39,18 @@ object IonInfiniteScroll {
   }
   
   @scala.inline
-  implicit class IonInfiniteScrollOps[Self <: IonInfiniteScroll] (val x: Self) extends AnyVal {
+  implicit class IonInfiniteScrollMutableBuilder[Self <: IonInfiniteScroll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => js.Promise[Unit]): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: () => js.Promise[Unit]): Self = this.set("complete", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: top | bottom): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreshold(value: String): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frame extends js.Object {
+trait Frame extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -88,87 +89,75 @@ object Frame {
   }
   
   @scala.inline
-  implicit class FrameOps[Self <: Frame] (val x: Self) extends AnyVal {
+  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("Borders", value.asInstanceOf[js.Any])
+    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: () => Unit): Self = this.set("Copy", js.Any.fromFunction0(value))
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCut(value: () => Unit): Self = this.set("Cut", js.Any.fromFunction0(value))
+    def setHeightRule(value: WdFrameSizeRule): Self = StObject.set(x, "HeightRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setHorizontalDistanceFromText(value: Double): Self = StObject.set(x, "HorizontalDistanceFromText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setHorizontalPosition(value: Double): Self = StObject.set(x, "HorizontalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightRule(value: WdFrameSizeRule): Self = this.set("HeightRule", value.asInstanceOf[js.Any])
+    def setLockAnchor(value: Boolean): Self = StObject.set(x, "LockAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalDistanceFromText(value: Double): Self = this.set("HorizontalDistanceFromText", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalPosition(value: Double): Self = this.set("HorizontalPosition", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockAnchor(value: Boolean): Self = this.set("LockAnchor", value.asInstanceOf[js.Any])
+    def setRelativeHorizontalPosition(value: WdRelativeHorizontalPosition): Self = StObject.set(x, "RelativeHorizontalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRelativeVerticalPosition(value: WdRelativeVerticalPosition): Self = StObject.set(x, "RelativeVerticalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRelativeHorizontalPosition(value: WdRelativeHorizontalPosition): Self = this.set("RelativeHorizontalPosition", value.asInstanceOf[js.Any])
+    def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeVerticalPosition(value: WdRelativeVerticalPosition): Self = this.set("RelativeVerticalPosition", value.asInstanceOf[js.Any])
+    def setTextWrap(value: Boolean): Self = StObject.set(x, "TextWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setVerticalDistanceFromText(value: Double): Self = StObject.set(x, "VerticalDistanceFromText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShading(value: Shading): Self = this.set("Shading", value.asInstanceOf[js.Any])
+    def setVerticalPosition(value: Double): Self = StObject.set(x, "VerticalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextWrap(value: Boolean): Self = this.set("TextWrap", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalDistanceFromText(value: Double): Self = this.set("VerticalDistanceFromText", value.asInstanceOf[js.Any])
+    def setWidthRule(value: WdFrameSizeRule): Self = StObject.set(x, "WidthRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalPosition(value: Double): Self = this.set("VerticalPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthRule(value: WdFrameSizeRule): Self = this.set("WidthRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotFrame_typekey(value: Frame): Self = this.set("Word.Frame_typekey", value.asInstanceOf[js.Any])
+    def setWordDotFrame_typekey(value: Frame): Self = StObject.set(x, "Word.Frame_typekey", value.asInstanceOf[js.Any])
   }
 }

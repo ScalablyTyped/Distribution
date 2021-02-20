@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,33 +55,21 @@ object ClassBreaksResult {
   }
   
   @scala.inline
-  implicit class ClassBreaksResultOps[Self <: ClassBreaksResult] (val x: Self) extends AnyVal {
+  implicit class ClassBreaksResultMutableBuilder[Self <: ClassBreaksResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassBreakInfosVarargs(value: ClassBreak*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassBreakInfosVarargs(value: ClassBreak*): Self = this.set("classBreakInfos", js.Array(value :_*))
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassBreakInfos(value: js.Array[ClassBreak]): Self = this.set("classBreakInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalizationTotal(value: Double): Self = this.set("normalizationTotal", value.asInstanceOf[js.Any])
+    def setNormalizationTotal(value: Double): Self = StObject.set(x, "normalizationTotal", value.asInstanceOf[js.Any])
   }
 }

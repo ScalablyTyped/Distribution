@@ -1,6 +1,7 @@
 package typings.react.mod
 
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // React.Children
 // ----------------------------------------------------------------------
 @js.native
-trait ReactChildren extends js.Object {
+trait ReactChildren extends StObject {
   
   def count(children: js.Any): Double = js.native
   

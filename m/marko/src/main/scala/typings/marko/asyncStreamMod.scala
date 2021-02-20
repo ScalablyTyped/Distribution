@@ -1,13 +1,12 @@
 package typings.marko
 
 import typings.marko.asyncMod.Async
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/runtime/html/AsyncStream", JSImport.Namespace)
-@js.native
-object asyncStreamMod extends js.Object {
+object asyncStreamMod {
   
   @js.native
   trait AsyncStream extends Async {

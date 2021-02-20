@@ -1,11 +1,12 @@
 package typings.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITheme extends js.Object {
+trait ITheme extends StObject {
   
   /** The default background color */
   var background: js.UndefOr[String] = js.native
@@ -79,144 +80,132 @@ object ITheme {
   }
   
   @scala.inline
-  implicit class IThemeOps[Self <: ITheme] (val x: Self) extends AnyVal {
+  implicit class IThemeMutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBlackUndefined: Self = StObject.set(x, "black", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlack(value: String): Self = this.set("black", value.asInstanceOf[js.Any])
+    def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
     
     @scala.inline
-    def deleteBlack: Self = this.set("black", js.undefined)
+    def setBrightBlack(value: String): Self = StObject.set(x, "brightBlack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlue(value: String): Self = this.set("blue", value.asInstanceOf[js.Any])
+    def setBrightBlackUndefined: Self = StObject.set(x, "brightBlack", js.undefined)
     
     @scala.inline
-    def deleteBlue: Self = this.set("blue", js.undefined)
+    def setBrightBlue(value: String): Self = StObject.set(x, "brightBlue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightBlack(value: String): Self = this.set("brightBlack", value.asInstanceOf[js.Any])
+    def setBrightBlueUndefined: Self = StObject.set(x, "brightBlue", js.undefined)
     
     @scala.inline
-    def deleteBrightBlack: Self = this.set("brightBlack", js.undefined)
+    def setBrightCyan(value: String): Self = StObject.set(x, "brightCyan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightBlue(value: String): Self = this.set("brightBlue", value.asInstanceOf[js.Any])
+    def setBrightCyanUndefined: Self = StObject.set(x, "brightCyan", js.undefined)
     
     @scala.inline
-    def deleteBrightBlue: Self = this.set("brightBlue", js.undefined)
+    def setBrightGreen(value: String): Self = StObject.set(x, "brightGreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightCyan(value: String): Self = this.set("brightCyan", value.asInstanceOf[js.Any])
+    def setBrightGreenUndefined: Self = StObject.set(x, "brightGreen", js.undefined)
     
     @scala.inline
-    def deleteBrightCyan: Self = this.set("brightCyan", js.undefined)
+    def setBrightMagenta(value: String): Self = StObject.set(x, "brightMagenta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightGreen(value: String): Self = this.set("brightGreen", value.asInstanceOf[js.Any])
+    def setBrightMagentaUndefined: Self = StObject.set(x, "brightMagenta", js.undefined)
     
     @scala.inline
-    def deleteBrightGreen: Self = this.set("brightGreen", js.undefined)
+    def setBrightRed(value: String): Self = StObject.set(x, "brightRed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightMagenta(value: String): Self = this.set("brightMagenta", value.asInstanceOf[js.Any])
+    def setBrightRedUndefined: Self = StObject.set(x, "brightRed", js.undefined)
     
     @scala.inline
-    def deleteBrightMagenta: Self = this.set("brightMagenta", js.undefined)
+    def setBrightWhite(value: String): Self = StObject.set(x, "brightWhite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightRed(value: String): Self = this.set("brightRed", value.asInstanceOf[js.Any])
+    def setBrightWhiteUndefined: Self = StObject.set(x, "brightWhite", js.undefined)
     
     @scala.inline
-    def deleteBrightRed: Self = this.set("brightRed", js.undefined)
+    def setBrightYellow(value: String): Self = StObject.set(x, "brightYellow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightWhite(value: String): Self = this.set("brightWhite", value.asInstanceOf[js.Any])
+    def setBrightYellowUndefined: Self = StObject.set(x, "brightYellow", js.undefined)
     
     @scala.inline
-    def deleteBrightWhite: Self = this.set("brightWhite", js.undefined)
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightYellow(value: String): Self = this.set("brightYellow", value.asInstanceOf[js.Any])
+    def setCursorAccent(value: String): Self = StObject.set(x, "cursorAccent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrightYellow: Self = this.set("brightYellow", js.undefined)
+    def setCursorAccentUndefined: Self = StObject.set(x, "cursorAccent", js.undefined)
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setCyan(value: String): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorAccent(value: String): Self = this.set("cursorAccent", value.asInstanceOf[js.Any])
+    def setCyanUndefined: Self = StObject.set(x, "cyan", js.undefined)
     
     @scala.inline
-    def deleteCursorAccent: Self = this.set("cursorAccent", js.undefined)
+    def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyan(value: String): Self = this.set("cyan", value.asInstanceOf[js.Any])
+    def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
     
     @scala.inline
-    def deleteCyan: Self = this.set("cyan", js.undefined)
+    def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeground(value: String): Self = this.set("foreground", value.asInstanceOf[js.Any])
+    def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
     
     @scala.inline
-    def deleteForeground: Self = this.set("foreground", js.undefined)
+    def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen(value: String): Self = this.set("green", value.asInstanceOf[js.Any])
+    def setMagentaUndefined: Self = StObject.set(x, "magenta", js.undefined)
     
     @scala.inline
-    def deleteGreen: Self = this.set("green", js.undefined)
+    def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagenta(value: String): Self = this.set("magenta", value.asInstanceOf[js.Any])
+    def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
     
     @scala.inline
-    def deleteMagenta: Self = this.set("magenta", js.undefined)
+    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed(value: String): Self = this.set("red", value.asInstanceOf[js.Any])
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def deleteRed: Self = this.set("red", js.undefined)
+    def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: String): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
     
     @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhite(value: String): Self = this.set("white", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhite: Self = this.set("white", js.undefined)
-    
-    @scala.inline
-    def setYellow(value: String): Self = this.set("yellow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYellow: Self = this.set("yellow", js.undefined)
+    def setYellowUndefined: Self = StObject.set(x, "yellow", js.undefined)
   }
 }

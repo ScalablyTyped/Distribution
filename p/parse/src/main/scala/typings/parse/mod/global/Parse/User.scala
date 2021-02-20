@@ -1,6 +1,6 @@
 package typings.parse.mod.global.Parse
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,6 +56,3 @@ trait User[T /* <: Attributes */] extends Object[T] {
   def signUp(attrs: js.Any): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any, options: SignUpOptions): js.Promise[this.type] = js.native
 }
-@JSGlobal("Parse.User")
-@js.native
-object User extends TopLevel[UserConstructor]

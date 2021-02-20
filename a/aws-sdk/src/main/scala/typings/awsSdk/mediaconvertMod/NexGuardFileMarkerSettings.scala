@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NexGuardFileMarkerSettings extends js.Object {
+trait NexGuardFileMarkerSettings extends StObject {
   
   /**
     * Use the base64 license string that Nagra provides you. Enter it directly in your JSON job specification or in the console. Required when you include Nagra NexGuard File Marker watermarking (NexGuardWatermarkingSettings) in your job.
@@ -36,42 +37,30 @@ object NexGuardFileMarkerSettings {
   }
   
   @scala.inline
-  implicit class NexGuardFileMarkerSettingsOps[Self <: NexGuardFileMarkerSettings] (val x: Self) extends AnyVal {
+  implicit class NexGuardFileMarkerSettingsMutableBuilder[Self <: NexGuardFileMarkerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLicense(value: stringMin1Max100000): Self = StObject.set(x, "License", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLicenseUndefined: Self = StObject.set(x, "License", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayload(value: integerMin0Max4194303): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: stringMin1Max100000): Self = this.set("License", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
     @scala.inline
-    def deleteLicense: Self = this.set("License", js.undefined)
+    def setPreset(value: stringMin1Max256): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: integerMin0Max4194303): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("Payload", js.undefined)
+    def setStrength(value: WatermarkingStrength): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreset(value: stringMin1Max256): Self = this.set("Preset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreset: Self = this.set("Preset", js.undefined)
-    
-    @scala.inline
-    def setStrength(value: WatermarkingStrength): Self = this.set("Strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("Strength", js.undefined)
+    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

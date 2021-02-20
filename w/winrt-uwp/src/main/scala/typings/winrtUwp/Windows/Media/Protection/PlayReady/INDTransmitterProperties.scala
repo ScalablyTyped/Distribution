@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the property values for a PlayReady-ND transmitter certificate. */
 @js.native
-trait INDTransmitterProperties extends js.Object {
+trait INDTransmitterProperties extends StObject {
   
   /** Gets the certificate type for the transmitter. */
   var certificateType: NDCertificateType = js.native
@@ -63,51 +64,39 @@ object INDTransmitterProperties {
   }
   
   @scala.inline
-  implicit class INDTransmitterPropertiesOps[Self <: INDTransmitterProperties] (val x: Self) extends AnyVal {
+  implicit class INDTransmitterPropertiesMutableBuilder[Self <: INDTransmitterProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateType(value: NDCertificateType): Self = StObject.set(x, "certificateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientID(value: Double): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateType(value: NDCertificateType): Self = this.set("certificateType", value.asInstanceOf[js.Any])
+    def setModelDigest(value: Double): Self = StObject.set(x, "modelDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientID(value: Double): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    def setModelManufacturerName(value: String): Self = StObject.set(x, "modelManufacturerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelDigest(value: Double): Self = this.set("modelDigest", value.asInstanceOf[js.Any])
+    def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelManufacturerName(value: String): Self = this.set("modelManufacturerName", value.asInstanceOf[js.Any])
+    def setPlatformIdentifier(value: NDCertificatePlatformID): Self = StObject.set(x, "platformIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    def setSecurityLevel(value: Double): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelNumber(value: String): Self = this.set("modelNumber", value.asInstanceOf[js.Any])
+    def setSecurityVersion(value: Double): Self = StObject.set(x, "securityVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformIdentifier(value: NDCertificatePlatformID): Self = this.set("platformIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurityLevel(value: Double): Self = this.set("securityLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurityVersion(value: Double): Self = this.set("securityVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedFeatures(value: NDCertificateFeature): Self = this.set("supportedFeatures", value.asInstanceOf[js.Any])
+    def setSupportedFeatures(value: NDCertificateFeature): Self = StObject.set(x, "supportedFeatures", value.asInstanceOf[js.Any])
   }
 }

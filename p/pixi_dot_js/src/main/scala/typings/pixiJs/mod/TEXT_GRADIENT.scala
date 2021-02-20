@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} LINEAR_VERTICAL Vertical gradient
   * @property {number} LINEAR_HORIZONTAL Linear gradient
   */
-@JSImport("pixi.js", "TEXT_GRADIENT")
-@js.native
-object TEXT_GRADIENT extends js.Object {
+object TEXT_GRADIENT {
   
-  var LINEAR_HORIZONTAL: Double = js.native
+  @JSImport("pixi.js", "TEXT_GRADIENT")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var LINEAR_VERTICAL: Double = js.native
+  @JSImport("pixi.js", "TEXT_GRADIENT.LINEAR_HORIZONTAL")
+  @js.native
+  def LINEAR_HORIZONTAL: Double = js.native
+  @scala.inline
+  def LINEAR_HORIZONTAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_HORIZONTAL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "TEXT_GRADIENT.LINEAR_VERTICAL")
+  @js.native
+  def LINEAR_VERTICAL: Double = js.native
+  @scala.inline
+  def LINEAR_VERTICAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEAR_VERTICAL")(x.asInstanceOf[js.Any])
 }

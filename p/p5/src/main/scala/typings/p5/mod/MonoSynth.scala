@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonoSynth extends js.Object {
+trait MonoSynth extends StObject {
   
   /**
     *   MonoSynth amp

@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesListShardsInputMod.ListShardsInpu
 import typings.awsSdkClientKinesisBrowser.typesListShardsOutputMod.ListShardsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/ListShardsCommand", JSImport.Namespace)
-@js.native
-object listShardsCommandMod extends js.Object {
+object listShardsCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/ListShardsCommand", "ListShardsCommand")
   @js.native
   class ListShardsCommand protected () extends Command[
           InputTypesUnion, 

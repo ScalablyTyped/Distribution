@@ -1,11 +1,12 @@
 package typings.reduxLittleRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FragmentProps extends js.Object {
+trait FragmentProps extends StObject {
   
   var forNoMatch: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object FragmentProps {
   }
   
   @scala.inline
-  implicit class FragmentPropsOps[Self <: FragmentProps] (val x: Self) extends AnyVal {
+  implicit class FragmentPropsMutableBuilder[Self <: FragmentProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForNoMatch(value: Boolean): Self = StObject.set(x, "forNoMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForNoMatchUndefined: Self = StObject.set(x, "forNoMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForRoute(value: String): Self = StObject.set(x, "forRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForNoMatch(value: Boolean): Self = this.set("forNoMatch", value.asInstanceOf[js.Any])
+    def setForRouteUndefined: Self = StObject.set(x, "forRoute", js.undefined)
     
     @scala.inline
-    def deleteForNoMatch: Self = this.set("forNoMatch", js.undefined)
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForRoute(value: String): Self = this.set("forRoute", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteForRoute: Self = this.set("forRoute", js.undefined)
+    def setMatchRoute(value: js.Function): Self = StObject.set(x, "matchRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMatchRouteUndefined: Self = StObject.set(x, "matchRoute", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMatchWildcardRoute(value: js.Function): Self = StObject.set(x, "matchWildcardRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchRoute(value: js.Function): Self = this.set("matchRoute", value.asInstanceOf[js.Any])
+    def setMatchWildcardRouteUndefined: Self = StObject.set(x, "matchWildcardRoute", js.undefined)
     
     @scala.inline
-    def deleteMatchRoute: Self = this.set("matchRoute", js.undefined)
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchWildcardRoute(value: js.Function): Self = this.set("matchWildcardRoute", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def deleteMatchWildcardRoute: Self = this.set("matchWildcardRoute", js.undefined)
+    def setParentRoute(value: String): Self = StObject.set(x, "parentRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setParentRouteUndefined: Self = StObject.set(x, "parentRoute", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setStyle(value: ObjectLiteral[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentRoute(value: String): Self = this.set("parentRoute", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteParentRoute: Self = this.set("parentRoute", js.undefined)
+    def setWithConditions(value: /* location */ Location => Boolean): Self = StObject.set(x, "withConditions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStyle(value: ObjectLiteral[_]): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setWithConditions(value: /* location */ Location => Boolean): Self = this.set("withConditions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWithConditions: Self = this.set("withConditions", js.undefined)
+    def setWithConditionsUndefined: Self = StObject.set(x, "withConditions", js.undefined)
   }
 }

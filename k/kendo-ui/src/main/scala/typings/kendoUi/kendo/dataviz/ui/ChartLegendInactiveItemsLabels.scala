@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegendInactiveItemsLabels extends js.Object {
+trait ChartLegendInactiveItemsLabels extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ChartLegendInactiveItemsLabels {
   }
   
   @scala.inline
-  implicit class ChartLegendInactiveItemsLabelsOps[Self <: ChartLegendInactiveItemsLabels] (val x: Self) extends AnyVal {
+  implicit class ChartLegendInactiveItemsLabelsMutableBuilder[Self <: ChartLegendInactiveItemsLabels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

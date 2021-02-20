@@ -1,6 +1,7 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information involved in an HTTP/HTTPS uptime check request.
   */
 @js.native
-trait SchemaHttpCheck extends js.Object {
+trait SchemaHttpCheck extends StObject {
   
   /**
     * The authentication information. Optional when creating an HTTP check;
@@ -68,54 +69,42 @@ object SchemaHttpCheck {
   }
   
   @scala.inline
-  implicit class SchemaHttpCheckOps[Self <: SchemaHttpCheck] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpCheckMutableBuilder[Self <: SchemaHttpCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthInfo(value: SchemaBasicAuthentication): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthInfo(value: SchemaBasicAuthentication): Self = this.set("authInfo", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteAuthInfo: Self = this.set("authInfo", js.undefined)
+    def setMaskHeaders(value: Boolean): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskHeaders(value: Boolean): Self = this.set("maskHeaders", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteMaskHeaders: Self = this.set("maskHeaders", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setUseSsl(value: Boolean): Self = StObject.set(x, "useSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setUseSsl(value: Boolean): Self = this.set("useSsl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSsl: Self = this.set("useSsl", js.undefined)
+    def setUseSslUndefined: Self = StObject.set(x, "useSsl", js.undefined)
   }
 }

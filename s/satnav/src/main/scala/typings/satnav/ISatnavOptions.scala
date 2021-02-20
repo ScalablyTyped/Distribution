@@ -1,11 +1,12 @@
 package typings.satnav
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISatnavOptions extends js.Object {
+trait ISatnavOptions extends StObject {
   
   var force: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object ISatnavOptions {
   }
   
   @scala.inline
-  implicit class ISatnavOptionsOps[Self <: ISatnavOptions] (val x: Self) extends AnyVal {
+  implicit class ISatnavOptionsMutableBuilder[Self <: ISatnavOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setHtml5Undefined: Self = StObject.set(x, "html5", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setMatchAll(value: Boolean): Self = StObject.set(x, "matchAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml5(value: Boolean): Self = this.set("html5", value.asInstanceOf[js.Any])
+    def setMatchAllUndefined: Self = StObject.set(x, "matchAll", js.undefined)
     
     @scala.inline
-    def deleteHtml5: Self = this.set("html5", js.undefined)
+    def setPoll(value: Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchAll(value: Boolean): Self = this.set("matchAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchAll: Self = this.set("matchAll", js.undefined)
-    
-    @scala.inline
-    def setPoll(value: Double): Self = this.set("poll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoll: Self = this.set("poll", js.undefined)
+    def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
   }
 }

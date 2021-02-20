@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * warning will be given and the condition will evaluate to false.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Condition extends js.Object {
+trait SchemaGooglePrivacyDlpV2Condition extends StObject {
   
   /**
     * Field within the record this condition is evaluated against. [required]
@@ -45,36 +46,24 @@ object SchemaGooglePrivacyDlpV2Condition {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ConditionOps[Self <: SchemaGooglePrivacyDlpV2Condition] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2ConditionMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setValue(value: SchemaGooglePrivacyDlpV2Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
-    
-    @scala.inline
-    def setValue(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

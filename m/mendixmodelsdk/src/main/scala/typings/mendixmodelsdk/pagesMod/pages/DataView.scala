@@ -13,6 +13,7 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,16 +102,20 @@ class DataView protected () extends EntityWidget {
     */
   def widgets: IList[Widget] = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView")
-@js.native
-object DataView extends js.Object {
+object DataView {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.create")
+  @js.native
   def create(model: IModel): DataView = js.native
   
   /**
@@ -121,6 +126,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): DataView = js.native
   
   /**
@@ -131,6 +139,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): DataView = js.native
   
   /**
@@ -141,6 +152,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): DataView = js.native
   
   /**
@@ -151,6 +165,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): DataView = js.native
   
   /**
@@ -161,6 +178,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): DataView = js.native
   
   /**
@@ -171,6 +191,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): DataView = js.native
   
   /**
@@ -181,6 +204,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): DataView = js.native
   
   /**
@@ -191,6 +217,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): DataView = js.native
   
   /**
@@ -201,6 +230,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): DataView = js.native
   
   /**
@@ -211,6 +243,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): DataView = js.native
   
   /**
@@ -221,6 +256,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): DataView = js.native
   
   /**
@@ -231,6 +269,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): DataView = js.native
   
   /**
@@ -241,6 +282,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): DataView = js.native
   
   /**
@@ -251,6 +295,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): DataView = js.native
   
   /**
@@ -261,6 +308,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DataView = js.native
   
   /**
@@ -271,6 +321,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DataView = js.native
   
   /**
@@ -281,6 +334,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DataView = js.native
   
   /**
@@ -291,6 +347,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DataView = js.native
   
   /**
@@ -301,6 +360,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): DataView = js.native
   
   /**
@@ -311,6 +373,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): DataView = js.native
   
   /**
@@ -321,6 +386,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): DataView = js.native
   
   /**
@@ -331,6 +399,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DataView = js.native
   
   /**
@@ -341,6 +412,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): DataView = js.native
   
   /**
@@ -351,6 +425,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): DataView = js.native
   
   /**
@@ -361,6 +438,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DataView = js.native
   
   /**
@@ -371,6 +451,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataView = js.native
   
   /**
@@ -381,6 +464,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataView = js.native
   
   /**
@@ -391,6 +477,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DataView = js.native
   
   /**
@@ -401,6 +490,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DataView = js.native
   
   /**
@@ -411,6 +503,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): DataView = js.native
   
   /**
@@ -421,6 +516,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): DataView = js.native
   
   /**
@@ -431,6 +529,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): DataView = js.native
   
   /**
@@ -441,6 +542,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): DataView = js.native
   
   /**
@@ -451,6 +555,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): DataView = js.native
   
   /**
@@ -461,6 +568,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DataView = js.native
   
   /**
@@ -471,6 +581,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DataView = js.native
   
   /**
@@ -481,6 +594,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): DataView = js.native
   
   /**
@@ -491,6 +607,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): DataView = js.native
   
   /**
@@ -501,6 +620,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): DataView = js.native
   
   /**
@@ -511,6 +633,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): DataView = js.native
   
   /**
@@ -521,6 +646,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): DataView = js.native
   
   /**
@@ -531,6 +659,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): DataView = js.native
   
   /**
@@ -541,6 +672,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): DataView = js.native
   
   /**
@@ -551,6 +685,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): DataView = js.native
   
   /**
@@ -561,6 +698,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): DataView = js.native
   
   /**
@@ -571,6 +711,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): DataView = js.native
   
   /**
@@ -581,6 +724,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DataView = js.native
   
   /**
@@ -591,6 +737,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DataView = js.native
   
   /**
@@ -601,6 +750,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): DataView = js.native
   
   /**
@@ -611,6 +763,9 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DataView = js.native
   
   /**
@@ -621,9 +776,22 @@ object DataView extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): DataView = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

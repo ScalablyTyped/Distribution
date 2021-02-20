@@ -1,21 +1,41 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
 import typings.mendixmodelsdk.internalMod.AbstractEnum
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType")
 @js.native
-class ShowPagingBarType () extends AbstractEnum
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType")
-@js.native
-object ShowPagingBarType extends js.Object {
+class ShowPagingBarType protected () extends AbstractEnum {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object ShowPagingBarType {
   
-  var No: ShowPagingBarType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var YesWithTotalCount: ShowPagingBarType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType.No")
+  @js.native
+  def No: ShowPagingBarType = js.native
+  @scala.inline
+  def No_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
   
-  var YesWithoutTotalCount: ShowPagingBarType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType.YesWithTotalCount")
+  @js.native
+  def YesWithTotalCount: ShowPagingBarType = js.native
+  @scala.inline
+  def YesWithTotalCount_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithTotalCount")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ShowPagingBarType.YesWithoutTotalCount")
+  @js.native
+  def YesWithoutTotalCount: ShowPagingBarType = js.native
+  @scala.inline
+  def YesWithoutTotalCount_=(x: ShowPagingBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithoutTotalCount")(x.asInstanceOf[js.Any])
 }

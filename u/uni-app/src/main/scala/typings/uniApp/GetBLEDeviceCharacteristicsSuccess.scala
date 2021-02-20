@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBLEDeviceCharacteristicsSuccess extends js.Object {
+trait GetBLEDeviceCharacteristicsSuccess extends StObject {
   
   /**
     * 设备特征值列表
@@ -26,33 +27,21 @@ object GetBLEDeviceCharacteristicsSuccess {
   }
   
   @scala.inline
-  implicit class GetBLEDeviceCharacteristicsSuccessOps[Self <: GetBLEDeviceCharacteristicsSuccess] (val x: Self) extends AnyVal {
+  implicit class GetBLEDeviceCharacteristicsSuccessMutableBuilder[Self <: GetBLEDeviceCharacteristicsSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacteristics(value: js.Array[GetBLEDeviceCharacteristicsSuccessData]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharacteristicsVarargs(value: GetBLEDeviceCharacteristicsSuccessData*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
     
     @scala.inline
-    def setCharacteristicsVarargs(value: GetBLEDeviceCharacteristicsSuccessData*): Self = this.set("characteristics", js.Array(value :_*))
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacteristics(value: js.Array[GetBLEDeviceCharacteristicsSuccessData]): Self = this.set("characteristics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCharacteristics: Self = this.set("characteristics", js.undefined)
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrMsg: Self = this.set("errMsg", js.undefined)
+    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateSummary extends js.Object {
+trait TemplateSummary extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -55,68 +56,56 @@ object TemplateSummary {
   }
   
   @scala.inline
-  implicit class TemplateSummaryOps[Self <: TemplateSummary] (val x: Self) extends AnyVal {
+  implicit class TemplateSummaryMutableBuilder[Self <: TemplateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplied(value: String): Self = StObject.set(x, "applied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppliedUndefined: Self = StObject.set(x, "applied", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplied(value: String): Self = this.set("applied", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteApplied: Self = this.set("applied", js.undefined)
+    def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
-    
-    @scala.inline
-    def setDocumentName(value: String): Self = this.set("documentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentName: Self = this.set("documentName", js.undefined)
+    def setDocumentNameUndefined: Self = StObject.set(x, "documentName", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setTemplateId(value: String): Self = this.set("templateId", value.asInstanceOf[js.Any])
+    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateId: Self = this.set("templateId", js.undefined)
+    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
     
     @scala.inline
-    def setTemplateMatch(value: TemplateMatch): Self = this.set("templateMatch", value.asInstanceOf[js.Any])
+    def setTemplateMatch(value: TemplateMatch): Self = StObject.set(x, "templateMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateMatch: Self = this.set("templateMatch", js.undefined)
+    def setTemplateMatchUndefined: Self = StObject.set(x, "templateMatch", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

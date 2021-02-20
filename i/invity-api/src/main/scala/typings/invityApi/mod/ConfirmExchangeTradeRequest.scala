@@ -1,18 +1,19 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmExchangeTradeRequest extends js.Object {
+trait ConfirmExchangeTradeRequest extends StObject {
   
-   // address hash (optional because Changelly doesn't support it)
+  // address hash (optional because Changelly doesn't support it)
   var extraField: js.UndefOr[String] = js.native
   
   var receiveAddress: String = js.native
   
-   // address hash
+  // address hash
   var refundAddress: String = js.native
   
   var trade: ExchangeTrade = js.native
@@ -26,33 +27,21 @@ object ConfirmExchangeTradeRequest {
   }
   
   @scala.inline
-  implicit class ConfirmExchangeTradeRequestOps[Self <: ConfirmExchangeTradeRequest] (val x: Self) extends AnyVal {
+  implicit class ConfirmExchangeTradeRequestMutableBuilder[Self <: ConfirmExchangeTradeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraField(value: String): Self = StObject.set(x, "extraField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraFieldUndefined: Self = StObject.set(x, "extraField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveAddress(value: String): Self = this.set("receiveAddress", value.asInstanceOf[js.Any])
+    def setRefundAddress(value: String): Self = StObject.set(x, "refundAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefundAddress(value: String): Self = this.set("refundAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrade(value: ExchangeTrade): Self = this.set("trade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtraField(value: String): Self = this.set("extraField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtraField: Self = this.set("extraField", js.undefined)
+    def setTrade(value: ExchangeTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
   }
 }

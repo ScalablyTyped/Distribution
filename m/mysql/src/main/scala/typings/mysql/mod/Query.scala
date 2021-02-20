@@ -7,12 +7,13 @@ import typings.mysql.mysqlStrings.packet
 import typings.mysql.mysqlStrings.result
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   def EofPacket(packet: js.Any): Unit = js.native
   @JSName("EofPacket")

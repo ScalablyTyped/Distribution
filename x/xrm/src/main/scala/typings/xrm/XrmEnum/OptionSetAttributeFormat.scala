@@ -2,6 +2,7 @@ package typings.xrm.XrmEnum
 
 import typings.xrm.xrmStrings.language
 import typings.xrm.xrmStrings.timezone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.language
   - typings.xrm.xrmStrings.timezone
 */
-trait OptionSetAttributeFormat extends js.Object
+trait OptionSetAttributeFormat extends StObject
 object OptionSetAttributeFormat {
   
   @scala.inline

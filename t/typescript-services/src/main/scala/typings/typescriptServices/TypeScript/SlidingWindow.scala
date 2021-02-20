@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlidingWindow extends js.Object {
+trait SlidingWindow extends StObject {
   
   var _pinCount: js.Any = js.native
   
@@ -86,90 +87,78 @@ object SlidingWindow {
   }
   
   @scala.inline
-  implicit class SlidingWindowOps[Self <: SlidingWindow] (val x: Self) extends AnyVal {
+  implicit class SlidingWindowMutableBuilder[Self <: SlidingWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMoreItemsToWindow(value: js.Any => js.Any): Self = StObject.set(x, "addMoreItemsToWindow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentItem(value: js.Any => js.Any): Self = StObject.set(x, "currentItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_pinCount(value: js.Any): Self = this.set("_pinCount", value.asInstanceOf[js.Any])
+    def setCurrentRelativeItemIndex(value: Double): Self = StObject.set(x, "currentRelativeItemIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteIndex(value: () => Double): Self = this.set("absoluteIndex", js.Any.fromFunction0(value))
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddMoreItemsToWindow(value: js.Any => js.Any): Self = this.set("addMoreItemsToWindow", js.Any.fromFunction1(value))
+    def setDisgardAllItemsFromCurrentIndexOnwards(value: () => Unit): Self = StObject.set(x, "disgardAllItemsFromCurrentIndexOnwards", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentItem(value: js.Any => js.Any): Self = this.set("currentItem", js.Any.fromFunction1(value))
+    def setFirstPinnedAbsoluteIndex(value: js.Any): Self = StObject.set(x, "firstPinnedAbsoluteIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRelativeItemIndex(value: Double): Self = this.set("currentRelativeItemIndex", value.asInstanceOf[js.Any])
+    def setGetAndPinAbsoluteIndex(value: () => Double): Self = StObject.set(x, "getAndPinAbsoluteIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setIsAtEndOfSource(value: () => Boolean): Self = StObject.set(x, "isAtEndOfSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisgardAllItemsFromCurrentIndexOnwards(value: () => Unit): Self = this.set("disgardAllItemsFromCurrentIndexOnwards", js.Any.fromFunction0(value))
+    def setMoveToNextItem(value: () => Unit): Self = StObject.set(x, "moveToNextItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstPinnedAbsoluteIndex(value: js.Any): Self = this.set("firstPinnedAbsoluteIndex", value.asInstanceOf[js.Any])
+    def setPeekItemN(value: Double => js.Any): Self = StObject.set(x, "peekItemN", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAndPinAbsoluteIndex(value: () => Double): Self = this.set("getAndPinAbsoluteIndex", js.Any.fromFunction0(value))
+    def setPinCount(value: () => Double): Self = StObject.set(x, "pinCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAtEndOfSource(value: () => Boolean): Self = this.set("isAtEndOfSource", js.Any.fromFunction0(value))
+    def setReleaseAndUnpinAbsoluteIndex(value: Double => Unit): Self = StObject.set(x, "releaseAndUnpinAbsoluteIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveToNextItem(value: () => Unit): Self = this.set("moveToNextItem", js.Any.fromFunction0(value))
+    def setRewindToPinnedIndex(value: Double => Unit): Self = StObject.set(x, "rewindToPinnedIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPeekItemN(value: Double => js.Any): Self = this.set("peekItemN", js.Any.fromFunction1(value))
+    def setSetAbsoluteIndex(value: Double => Unit): Self = StObject.set(x, "setAbsoluteIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPinCount(value: () => Double): Self = this.set("pinCount", js.Any.fromFunction0(value))
+    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseAndUnpinAbsoluteIndex(value: Double => Unit): Self = this.set("releaseAndUnpinAbsoluteIndex", js.Any.fromFunction1(value))
+    def setSourceLength(value: js.Any): Self = StObject.set(x, "sourceLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRewindToPinnedIndex(value: Double => Unit): Self = this.set("rewindToPinnedIndex", js.Any.fromFunction1(value))
+    def setTryShiftOrGrowWindow(value: () => js.Any): Self = StObject.set(x, "tryShiftOrGrowWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetAbsoluteIndex(value: Double => Unit): Self = this.set("setAbsoluteIndex", js.Any.fromFunction1(value))
+    def setWindow(value: js.Array[_]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setWindowAbsoluteEndIndex(value: () => js.Any): Self = StObject.set(x, "windowAbsoluteEndIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSourceLength(value: js.Any): Self = this.set("sourceLength", value.asInstanceOf[js.Any])
+    def setWindowAbsoluteStartIndex(value: Double): Self = StObject.set(x, "windowAbsoluteStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTryShiftOrGrowWindow(value: () => js.Any): Self = this.set("tryShiftOrGrowWindow", js.Any.fromFunction0(value))
+    def setWindowCount(value: Double): Self = StObject.set(x, "windowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowVarargs(value: js.Any*): Self = this.set("window", js.Array(value :_*))
+    def setWindowVarargs(value: js.Any*): Self = StObject.set(x, "window", js.Array(value :_*))
     
     @scala.inline
-    def setWindow(value: js.Array[_]): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowAbsoluteEndIndex(value: () => js.Any): Self = this.set("windowAbsoluteEndIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWindowAbsoluteStartIndex(value: Double): Self = this.set("windowAbsoluteStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowCount(value: Double): Self = this.set("windowCount", value.asInstanceOf[js.Any])
+    def set_pinCount(value: js.Any): Self = StObject.set(x, "_pinCount", value.asInstanceOf[js.Any])
   }
 }

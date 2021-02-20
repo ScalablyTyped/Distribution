@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientGmail.anon.Callback
 import typings.maximMazurokGapiClientGmail.anon.FieldsId
 import typings.maximMazurokGapiClientGmail.anon.Format
 import typings.maximMazurokGapiClientGmail.anon.LabelIds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadsResource extends js.Object {
+trait ThreadsResource extends StObject {
   
   /** Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer `threads.trash` instead. */
   def delete(): Request[Unit] = js.native

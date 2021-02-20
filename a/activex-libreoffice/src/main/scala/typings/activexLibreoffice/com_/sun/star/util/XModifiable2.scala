@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,27 +50,15 @@ object XModifiable2 {
   }
   
   @scala.inline
-  implicit class XModifiable2Ops[Self <: XModifiable2] (val x: Self) extends AnyVal {
+  implicit class XModifiable2MutableBuilder[Self <: XModifiable2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableSetModified(value: () => Boolean): Self = StObject.set(x, "disableSetModified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableSetModified(value: () => Boolean): Self = StObject.set(x, "enableSetModified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisableSetModified(value: () => Boolean): Self = this.set("disableSetModified", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEnableSetModified(value: () => Boolean): Self = this.set("enableSetModified", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSetModifiedEnabled(value: () => Boolean): Self = this.set("isSetModifiedEnabled", js.Any.fromFunction0(value))
+    def setIsSetModifiedEnabled(value: () => Boolean): Self = StObject.set(x, "isSetModifiedEnabled", js.Any.fromFunction0(value))
   }
 }

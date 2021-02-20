@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,36 +114,24 @@ object XDynamicResultSet {
   }
   
   @scala.inline
-  implicit class XDynamicResultSetOps[Self <: XDynamicResultSet] (val x: Self) extends AnyVal {
+  implicit class XDynamicResultSetMutableBuilder[Self <: XDynamicResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: Double): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectToCache(value: XDynamicResultSet => Unit): Self = StObject.set(x, "connectToCache", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCapabilities(value: () => Double): Self = StObject.set(x, "getCapabilities", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCapabilities(value: Double): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setGetStaticResultSet(value: () => XResultSet): Self = StObject.set(x, "getStaticResultSet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStaticResultSet(value: XResultSet): Self = this.set("StaticResultSet", value.asInstanceOf[js.Any])
+    def setSetListener(value: XDynamicResultSetListener => Unit): Self = StObject.set(x, "setListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectToCache(value: XDynamicResultSet => Unit): Self = this.set("connectToCache", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCapabilities(value: () => Double): Self = this.set("getCapabilities", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStaticResultSet(value: () => XResultSet): Self = this.set("getStaticResultSet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetListener(value: XDynamicResultSetListener => Unit): Self = this.set("setListener", js.Any.fromFunction1(value))
+    def setStaticResultSet(value: XResultSet): Self = StObject.set(x, "StaticResultSet", value.asInstanceOf[js.Any])
   }
 }

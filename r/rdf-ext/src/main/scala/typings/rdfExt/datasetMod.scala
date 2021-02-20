@@ -5,13 +5,12 @@ import typings.rdfExt.propTypeMod.PropType
 import typings.rdfExt.quadMod.QuadExt
 import typings.rdfJs.mod.Quad
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdf-ext/lib/Dataset", JSImport.Namespace)
-@js.native
-object datasetMod extends js.Object {
+object datasetMod {
   
   @js.native
   trait DatasetExt extends DatasetIndexed[QuadExt, Quad] {

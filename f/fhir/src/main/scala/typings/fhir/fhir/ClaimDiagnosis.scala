@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,54 +50,42 @@ object ClaimDiagnosis {
   }
   
   @scala.inline
-  implicit class ClaimDiagnosisOps[Self <: ClaimDiagnosis] (val x: Self) extends AnyVal {
+  implicit class ClaimDiagnosisMutableBuilder[Self <: ClaimDiagnosis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagnosisCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "diagnosisCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosisCodeableConceptUndefined: Self = StObject.set(x, "diagnosisCodeableConcept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnosisReference(value: Reference): Self = StObject.set(x, "diagnosisReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setDiagnosisReferenceUndefined: Self = StObject.set(x, "diagnosisReference", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setPackageCode(value: CodeableConcept): Self = StObject.set(x, "packageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def setPackageCodeUndefined: Self = StObject.set(x, "packageCode", js.undefined)
     
     @scala.inline
-    def setDiagnosisCodeableConcept(value: CodeableConcept): Self = this.set("diagnosisCodeableConcept", value.asInstanceOf[js.Any])
+    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiagnosisCodeableConcept: Self = this.set("diagnosisCodeableConcept", js.undefined)
+    def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosisReference(value: Reference): Self = this.set("diagnosisReference", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteDiagnosisReference: Self = this.set("diagnosisReference", js.undefined)
+    def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setPackageCode(value: CodeableConcept): Self = this.set("packageCode", value.asInstanceOf[js.Any])
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePackageCode: Self = this.set("packageCode", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

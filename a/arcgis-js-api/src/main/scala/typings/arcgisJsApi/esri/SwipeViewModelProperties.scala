@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeViewModelProperties extends js.Object {
+trait SwipeViewModelProperties extends StObject {
   
   /**
     * The direction the Swipe widget moves across the view.
@@ -53,54 +54,42 @@ object SwipeViewModelProperties {
   }
   
   @scala.inline
-  implicit class SwipeViewModelPropertiesOps[Self <: SwipeViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class SwipeViewModelPropertiesMutableBuilder[Self <: SwipeViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeadingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "leadingLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: horizontal | vertical): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setLeadingLayersUndefined: Self = StObject.set(x, "leadingLayers", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value :_*))
     
     @scala.inline
-    def setLeadingLayersVarargs(value: LayerProperties*): Self = this.set("leadingLayers", js.Array(value :_*))
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadingLayers(value: CollectionProperties[LayerProperties]): Self = this.set("leadingLayers", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteLeadingLayers: Self = this.set("leadingLayers", js.undefined)
+    def setTrailingLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "trailingLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTrailingLayersUndefined: Self = StObject.set(x, "trailingLayers", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value :_*))
     
     @scala.inline
-    def setTrailingLayersVarargs(value: LayerProperties*): Self = this.set("trailingLayers", js.Array(value :_*))
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrailingLayers(value: CollectionProperties[LayerProperties]): Self = this.set("trailingLayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailingLayers: Self = this.set("trailingLayers", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

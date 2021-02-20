@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointsmsvoiceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteConfigurationSetRequest extends js.Object {
+trait DeleteConfigurationSetRequest extends StObject {
   
   /**
     * ConfigurationSetName
@@ -21,21 +22,9 @@ object DeleteConfigurationSetRequest {
   }
   
   @scala.inline
-  implicit class DeleteConfigurationSetRequestOps[Self <: DeleteConfigurationSetRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteConfigurationSetRequestMutableBuilder[Self <: DeleteConfigurationSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationSetName(value: _String): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }
 }

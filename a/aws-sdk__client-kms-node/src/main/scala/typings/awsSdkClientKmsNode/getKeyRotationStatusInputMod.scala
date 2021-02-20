@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/GetKeyRotationStatusInput", JSImport.Namespace)
-@js.native
-object getKeyRotationStatusInputMod extends js.Object {
+object getKeyRotationStatusInputMod {
   
+  @JSImport("@aws-sdk/client-kms-node/model/GetKeyRotationStatusInput", "GetKeyRotationStatusInput")
+  @js.native
   val GetKeyRotationStatusInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

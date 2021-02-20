@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlwaysReturnBasicInformation extends js.Object {
+trait AlwaysReturnBasicInformation extends StObject {
   
   var alwaysReturnBasicInformation: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object AlwaysReturnBasicInformation {
   }
   
   @scala.inline
-  implicit class AlwaysReturnBasicInformationOps[Self <: AlwaysReturnBasicInformation] (val x: Self) extends AnyVal {
+  implicit class AlwaysReturnBasicInformationMutableBuilder[Self <: AlwaysReturnBasicInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysReturnBasicInformation(value: scala.Double): Self = StObject.set(x, "alwaysReturnBasicInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeDeletedSubscriptions(value: scala.Double): Self = StObject.set(x, "includeDeletedSubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeFilterDetails(value: scala.Double): Self = StObject.set(x, "includeFilterDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysReturnBasicInformation(value: scala.Double): Self = this.set("alwaysReturnBasicInformation", value.asInstanceOf[js.Any])
+    def setIncludeInvalidSubscriptions(value: scala.Double): Self = StObject.set(x, "includeInvalidSubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDeletedSubscriptions(value: scala.Double): Self = this.set("includeDeletedSubscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeFilterDetails(value: scala.Double): Self = this.set("includeFilterDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeInvalidSubscriptions(value: scala.Double): Self = this.set("includeInvalidSubscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

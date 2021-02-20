@@ -1,11 +1,12 @@
 package typings.swipe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Swipe extends js.Object {
+trait Swipe extends StObject {
   
   def attachEvents(): Unit = js.native
   
@@ -41,42 +42,30 @@ object Swipe {
   }
   
   @scala.inline
-  implicit class SwipeOps[Self <: Swipe] (val x: Self) extends AnyVal {
+  implicit class SwipeMutableBuilder[Self <: Swipe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachEvents(value: () => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNumSlides(value: () => Double): Self = StObject.set(x, "getNumSlides", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPos(value: () => Double): Self = StObject.set(x, "getPos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachEvents(value: () => Unit): Self = this.set("attachEvents", js.Any.fromFunction0(value))
+    def setKill(value: () => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNumSlides(value: () => Double): Self = this.set("getNumSlides", js.Any.fromFunction0(value))
+    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPos(value: () => Double): Self = this.set("getPos", js.Any.fromFunction0(value))
+    def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKill(value: () => Unit): Self = this.set("kill", js.Any.fromFunction0(value))
+    def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => Unit): Self = this.set("next", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrev(value: () => Unit): Self = this.set("prev", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetup(value: () => Unit): Self = this.set("setup", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSlide(value: (Double, Double) => Unit): Self = this.set("slide", js.Any.fromFunction2(value))
+    def setSlide(value: (Double, Double) => Unit): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
   }
 }

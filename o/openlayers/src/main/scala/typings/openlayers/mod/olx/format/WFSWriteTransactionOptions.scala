@@ -1,12 +1,13 @@
 package typings.openlayers.mod.olx.format
 
 import typings.openlayers.mod.GlobalObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WFSWriteTransactionOptions extends js.Object {
+trait WFSWriteTransactionOptions extends StObject {
   
   var featureNS: String = js.native
   
@@ -36,51 +37,39 @@ object WFSWriteTransactionOptions {
   }
   
   @scala.inline
-  implicit class WFSWriteTransactionOptionsOps[Self <: WFSWriteTransactionOptions] (val x: Self) extends AnyVal {
+  implicit class WFSWriteTransactionOptionsMutableBuilder[Self <: WFSWriteTransactionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureNS(value: String): Self = this.set("featureNS", value.asInstanceOf[js.Any])
+    def setGmlOptions(value: GMLOptions): Self = StObject.set(x, "gmlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturePrefix(value: String): Self = this.set("featurePrefix", value.asInstanceOf[js.Any])
+    def setGmlOptionsUndefined: Self = StObject.set(x, "gmlOptions", js.undefined)
     
     @scala.inline
-    def setFeatureType(value: String): Self = this.set("featureType", value.asInstanceOf[js.Any])
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeElementsVarargs(value: GlobalObject*): Self = this.set("nativeElements", js.Array(value :_*))
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def setNativeElements(value: js.Array[GlobalObject]): Self = this.set("nativeElements", value.asInstanceOf[js.Any])
+    def setNativeElements(value: js.Array[GlobalObject]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGmlOptions(value: GMLOptions): Self = this.set("gmlOptions", value.asInstanceOf[js.Any])
+    def setNativeElementsVarargs(value: GlobalObject*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
     
     @scala.inline
-    def deleteGmlOptions: Self = this.set("gmlOptions", js.undefined)
+    def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
-    
-    @scala.inline
-    def setSrsName(value: String): Self = this.set("srsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrsName: Self = this.set("srsName", js.undefined)
+    def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
   }
 }

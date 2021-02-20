@@ -2,16 +2,16 @@ package typings.agGrid
 
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/gridPanel/navigationService", JSImport.Namespace)
-@js.native
-object navigationServiceMod extends js.Object {
+object navigationServiceMod {
   
+  @JSImport("ag-grid/dist/lib/gridPanel/navigationService", "NavigationService")
   @js.native
-  class NavigationService () extends js.Object {
+  class NavigationService () extends StObject {
     
     var animationFrameService: js.Any = js.native
     

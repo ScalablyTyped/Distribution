@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TIcu extends js.Object {
+trait TIcu extends StObject {
   
   /**
     * Index in `LView` where the anchor node is stored. `<!-- ICU 0:0 -->`
@@ -71,51 +72,39 @@ object TIcu {
   }
   
   @scala.inline
-  implicit class TIcuOps[Self <: TIcu] (val x: Self) extends AnyVal {
+  implicit class TIcuMutableBuilder[Self <: TIcu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorIdx(value: Double): Self = StObject.set(x, "anchorIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCases(value: js.Array[_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCasesVarargs(value: js.Any*): Self = StObject.set(x, "cases", js.Array(value :_*))
     
     @scala.inline
-    def setAnchorIdx(value: Double): Self = this.set("anchorIdx", value.asInstanceOf[js.Any])
+    def setCreate(value: js.Array[IcuCreateOpCodes]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCasesVarargs(value: js.Any*): Self = this.set("cases", js.Array(value :_*))
+    def setCreateVarargs(value: IcuCreateOpCodes*): Self = StObject.set(x, "create", js.Array(value :_*))
     
     @scala.inline
-    def setCases(value: js.Array[_]): Self = this.set("cases", value.asInstanceOf[js.Any])
+    def setCurrentCaseLViewIndex(value: Double): Self = StObject.set(x, "currentCaseLViewIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateVarargs(value: IcuCreateOpCodes*): Self = this.set("create", js.Array(value :_*))
+    def setRemove(value: js.Array[I18nRemoveOpCodes]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: js.Array[IcuCreateOpCodes]): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setRemoveVarargs(value: I18nRemoveOpCodes*): Self = StObject.set(x, "remove", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentCaseLViewIndex(value: Double): Self = this.set("currentCaseLViewIndex", value.asInstanceOf[js.Any])
+    def setType(value: IcuType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveVarargs(value: I18nRemoveOpCodes*): Self = this.set("remove", js.Array(value :_*))
+    def setUpdate(value: js.Array[I18nUpdateOpCodes]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: js.Array[I18nRemoveOpCodes]): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: IcuType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateVarargs(value: I18nUpdateOpCodes*): Self = this.set("update", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdate(value: js.Array[I18nUpdateOpCodes]): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdateVarargs(value: I18nUpdateOpCodes*): Self = StObject.set(x, "update", js.Array(value :_*))
   }
 }

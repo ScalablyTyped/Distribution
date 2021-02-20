@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStateChangeList extends js.Object {
+trait IStateChangeList extends StObject {
   
   /** StateChangeList stateChanges */
   var stateChanges: js.UndefOr[js.Array[IStateChange] | Null] = js.native
@@ -19,30 +20,18 @@ object IStateChangeList {
   }
   
   @scala.inline
-  implicit class IStateChangeListOps[Self <: IStateChangeList] (val x: Self) extends AnyVal {
+  implicit class IStateChangeListMutableBuilder[Self <: IStateChangeList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStateChanges(value: js.Array[IStateChange]): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateChangesNull: Self = StObject.set(x, "stateChanges", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateChangesUndefined: Self = StObject.set(x, "stateChanges", js.undefined)
     
     @scala.inline
-    def setStateChangesVarargs(value: IStateChange*): Self = this.set("stateChanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setStateChanges(value: js.Array[IStateChange]): Self = this.set("stateChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChanges: Self = this.set("stateChanges", js.undefined)
-    
-    @scala.inline
-    def setStateChangesNull: Self = this.set("stateChanges", null)
+    def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
   }
 }

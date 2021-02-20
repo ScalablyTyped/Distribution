@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionic.ionicStrings.yarn
   - typings.ionic.ionicStrings.npm
 */
-trait NpmClient extends js.Object
+trait NpmClient extends StObject
 object NpmClient {
   
   @scala.inline

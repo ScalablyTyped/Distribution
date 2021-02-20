@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Meters
 import typings.arcgisJsApi.arcgisJsApiStrings.Miles
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,60 +69,48 @@ object PrintTemplateLayoutOptions {
   }
   
   @scala.inline
-  implicit class PrintTemplateLayoutOptionsOps[Self <: PrintTemplateLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class PrintTemplateLayoutOptionsMutableBuilder[Self <: PrintTemplateLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorText(value: String): Self = StObject.set(x, "authorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorTextUndefined: Self = StObject.set(x, "authorText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyrightText(value: String): Self = StObject.set(x, "copyrightText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorText(value: String): Self = this.set("authorText", value.asInstanceOf[js.Any])
+    def setCopyrightTextUndefined: Self = StObject.set(x, "copyrightText", js.undefined)
     
     @scala.inline
-    def deleteAuthorText: Self = this.set("authorText", js.undefined)
+    def setCustomTextElements(value: js.Array[_]): Self = StObject.set(x, "customTextElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrightText(value: String): Self = this.set("copyrightText", value.asInstanceOf[js.Any])
+    def setCustomTextElementsUndefined: Self = StObject.set(x, "customTextElements", js.undefined)
     
     @scala.inline
-    def deleteCopyrightText: Self = this.set("copyrightText", js.undefined)
+    def setCustomTextElementsVarargs(value: js.Any*): Self = StObject.set(x, "customTextElements", js.Array(value :_*))
     
     @scala.inline
-    def setCustomTextElementsVarargs(value: js.Any*): Self = this.set("customTextElements", js.Array(value :_*))
+    def setLegendLayers(value: js.Array[LegendLayer]): Self = StObject.set(x, "legendLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomTextElements(value: js.Array[_]): Self = this.set("customTextElements", value.asInstanceOf[js.Any])
+    def setLegendLayersUndefined: Self = StObject.set(x, "legendLayers", js.undefined)
     
     @scala.inline
-    def deleteCustomTextElements: Self = this.set("customTextElements", js.undefined)
+    def setLegendLayersVarargs(value: LegendLayer*): Self = StObject.set(x, "legendLayers", js.Array(value :_*))
     
     @scala.inline
-    def setLegendLayersVarargs(value: LegendLayer*): Self = this.set("legendLayers", js.Array(value :_*))
+    def setScalebarUnit(value: Miles | Kilometers | Meters | Feet): Self = StObject.set(x, "scalebarUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendLayers(value: js.Array[LegendLayer]): Self = this.set("legendLayers", value.asInstanceOf[js.Any])
+    def setScalebarUnitUndefined: Self = StObject.set(x, "scalebarUnit", js.undefined)
     
     @scala.inline
-    def deleteLegendLayers: Self = this.set("legendLayers", js.undefined)
+    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalebarUnit(value: Miles | Kilometers | Meters | Feet): Self = this.set("scalebarUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalebarUnit: Self = this.set("scalebarUnit", js.undefined)
-    
-    @scala.inline
-    def setTitleText(value: String): Self = this.set("titleText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleText: Self = this.set("titleText", js.undefined)
+    def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
   }
 }

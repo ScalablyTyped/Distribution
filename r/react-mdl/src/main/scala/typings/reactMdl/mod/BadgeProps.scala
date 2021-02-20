@@ -1,6 +1,7 @@
 package typings.reactMdl.mod
 
 import typings.react.mod.ClassAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,39 +27,27 @@ object BadgeProps {
   }
   
   @scala.inline
-  implicit class BadgePropsOps[Self <: BadgeProps] (val x: Self) extends AnyVal {
+  implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoBackground(value: Boolean): Self = StObject.set(x, "noBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | Double): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setNoBackgroundUndefined: Self = StObject.set(x, "noBackground", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setOverlap(value: Boolean): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOverlapUndefined: Self = StObject.set(x, "overlap", js.undefined)
     
     @scala.inline
-    def setNoBackground(value: Boolean): Self = this.set("noBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoBackground: Self = this.set("noBackground", js.undefined)
-    
-    @scala.inline
-    def setOverlap(value: Boolean): Self = this.set("overlap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlap: Self = this.set("overlap", js.undefined)
+    def setText(value: String | Double): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

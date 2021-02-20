@@ -2,6 +2,7 @@ package typings.webidl2.mod
 
 import typings.webidl2.webidl2Strings.const
 import typings.webidl2.webidl2Strings.operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webidl2.mod.ConstantMemberType
   - typings.webidl2.mod.OperationMemberType
 */
-trait IDLCallbackInterfaceMemberType extends js.Object
+trait IDLCallbackInterfaceMemberType extends StObject
 object IDLCallbackInterfaceMemberType {
   
   @scala.inline
@@ -22,10 +23,10 @@ object IDLCallbackInterfaceMemberType {
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType,
     `type`: const,
     value: ValueDescription
-  ): IDLCallbackInterfaceMemberType = {
+  ): typings.webidl2.mod.ConstantMemberType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLCallbackInterfaceMemberType]
+    __obj.asInstanceOf[typings.webidl2.mod.ConstantMemberType]
   }
   
   @scala.inline
@@ -34,9 +35,9 @@ object IDLCallbackInterfaceMemberType {
     extAttrs: js.Array[ExtendedAttribute],
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType,
     `type`: operation
-  ): IDLCallbackInterfaceMemberType = {
+  ): typings.webidl2.mod.OperationMemberType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLCallbackInterfaceMemberType]
+    __obj.asInstanceOf[typings.webidl2.mod.OperationMemberType]
   }
 }

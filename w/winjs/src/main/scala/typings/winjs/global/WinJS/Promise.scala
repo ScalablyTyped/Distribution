@@ -2,6 +2,7 @@ package typings.winjs.global.WinJS
 
 import typings.std.CustomEvent
 import typings.winjs.WinJS.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,10 +38,11 @@ class Promise[T] ()
     onCancel: js.Function
   ) = this()
 }
-/* static members */
-@JSGlobal("WinJS.Promise")
-@js.native
-object Promise extends js.Object {
+object Promise {
+  
+  @JSGlobal("WinJS.Promise")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#endregion Events
   //#region Methods
@@ -50,15 +52,26 @@ object Promise extends js.Object {
     * @param listener The listener to invoke when the event is raised.
     * @param capture true to initiate capture, otherwise false.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.addEventListener")
+  @js.native
   def addEventListener(`type`: String, listener: js.Function): Unit = js.native
+  @JSGlobal("WinJS.Promise.addEventListener")
+  @js.native
   def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = js.native
   
+  /* static member */
+  @JSGlobal("WinJS.Promise.any")
+  @js.native
   def any(value: js.Any): IPromise[_] = js.native
   /**
     * Returns a promise that is fulfilled when one of the input promises has been fulfilled.
     * @param value An array that contains Promise objects or objects whose property values include Promise objects.
     * @returns A promise that on fulfillment yields the value of the input (complete or error).
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.any")
+  @js.native
   def any(value: js.Array[IPromise[_]]): IPromise[_] = js.native
   
   /**
@@ -66,13 +79,23 @@ object Promise extends js.Object {
     * @param value The value to be treated as a Promise.
     * @returns The promise.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.as")
+  @js.native
   def as[U](): IPromise[U] = js.native
+  @JSGlobal("WinJS.Promise.as")
+  @js.native
   def as[U](value: U): IPromise[U] = js.native
   
   /**
     * Canceled promise value, can be returned from a promise completion handler to indicate cancelation of the promise chain.
     */
-  var cancel: IPromise[_] = js.native
+  /* static member */
+  @JSGlobal("WinJS.Promise.cancel")
+  @js.native
+  def cancel: IPromise[js.Any] = js.native
+  @scala.inline
+  def cancel_=(x: IPromise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
   
   /**
     * Raises an event of the specified type and properties.
@@ -80,6 +103,9 @@ object Promise extends js.Object {
     * @param details The set of additional properties to be attached to the event object.
     * @returns true if preventDefault was called on the event; otherwise, false.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.dispatchEvent")
+  @js.native
   def dispatchEvent(`type`: String, details: js.Any): Boolean = js.native
   
   /**
@@ -87,6 +113,9 @@ object Promise extends js.Object {
     * @param value A value that may be a promise.
     * @returns true if the object conforms to the promise contract (has a then function), otherwise false.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.is")
+  @js.native
   def is(value: js.Any): Boolean = js.native
   
   /**
@@ -94,6 +123,9 @@ object Promise extends js.Object {
     * @param values An object whose members contain values, some of which may be promises.
     * @returns A Promise whose value is an object with the same field names as those of the object in the values parameter, where each field value is the fulfilled value of a promise.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.join")
+  @js.native
   def join(values: js.Any): IPromise[_] = js.native
   
   //#endregion Constructors
@@ -102,6 +134,9 @@ object Promise extends js.Object {
     * Occurs when there is an error in processing a promise.
     * @param eventInfo An object that contains information about the event.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.onerror")
+  @js.native
   def onerror(eventInfo: CustomEvent[_]): Unit = js.native
   
   /**
@@ -110,7 +145,12 @@ object Promise extends js.Object {
     * @param listener The listener to remove.
     * @param capture Specifies whether or not to initiate capture.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.removeEventListener")
+  @js.native
   def removeEventListener(eventType: String, listener: js.Function): Unit = js.native
+  @JSGlobal("WinJS.Promise.removeEventListener")
+  @js.native
   def removeEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = js.native
   
   //#endregion Methods
@@ -118,52 +158,12 @@ object Promise extends js.Object {
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
-  
-  /**
-    * A static helper that functions identically to then() off a promise instance.
-    * @param promise The promise to chain from.
-    * @param onComplete The function to be called if the promise is fulfilled successfully with a value. The value is passed as the single argument. If the value is null, the value is returned. The value returned from the function becomes the fulfilled value of the promise returned by then. If an exception is thrown while this function is being executed, the promise returned by then moves into the error state.
-    * @param onError The function to be called if the promise is fulfilled with an error. The error is passed as the single argument. In different cases this object may be of different types, so it is necessary to test the object for the properties you expect. If the error is null, it is forwarded. The value returned from the function becomes the value of the promise returned by the then function.
-    * @param onProgress The function to be called if the promise reports progress. Data about the progress is passed as the single argument. Promises are not required to support progress.
-    * @returns The promise whose value is the result of executing the onComplete function.
-    **/
-  def `then`(promise: IPromise[_]): IPromise[_] = js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* error */ js.Any, _]
-  ): IPromise[_] = js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* error */ js.Any, _],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  def `then`(promise: IPromise[_], onComplete: js.Function1[/* value */ js.Any, _]): IPromise[_] = js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.Function1[/* value */ js.Any, _],
-    onError: js.UndefOr[scala.Nothing],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.Function1[/* value */ js.Any, _],
-    onError: js.Function1[/* error */ js.Any, _]
-  ): IPromise[_] = js.native
-  def `then`(
-    promise: IPromise[_],
-    onComplete: js.Function1[/* value */ js.Any, _],
-    onError: js.Function1[/* error */ js.Any, _],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[_] = js.native
+  /* static member */
+  @JSGlobal("WinJS.Promise.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
   
   /**
     * Performs an operation on all the input promises and returns a promise that has the shape of the input and contains the result of the operation that has been performed on each input.
@@ -173,32 +173,49 @@ object Promise extends js.Object {
     * @param progress The function to be called if the promise reports progress. This function takes a single argument, which is the data about the progress of the promise. Promises are not required to support progress.
     * @returns A Promise that is the result of calling join on the values parameter.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(values: js.Any): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(
     values: js.Any,
     complete: js.UndefOr[scala.Nothing],
     error: js.UndefOr[scala.Nothing],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(values: js.Any, complete: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ js.Any, Unit]): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(
     values: js.Any,
     complete: js.UndefOr[scala.Nothing],
     error: js.Function1[/* error */ js.Any, Unit],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
     error: js.UndefOr[scala.Nothing],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
     error: js.Function1[/* error */ js.Any, Unit]
   ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.thenEach")
+  @js.native
   def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
@@ -212,9 +229,18 @@ object Promise extends js.Object {
     * @param promise Optional. A promise that will be canceled if it doesn't complete within the timeout period.
     * @returns If the promise parameter is omitted, returns a promise that will be fulfilled after the timeout period. If the promise paramater is provided, the same promise is returned.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.timeout")
+  @js.native
   def timeout(): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.timeout")
+  @js.native
   def timeout(timeout: js.UndefOr[scala.Nothing], promise: IPromise[_]): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.timeout")
+  @js.native
   def timeout(timeout: Double): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.timeout")
+  @js.native
   def timeout(timeout: Double, promise: IPromise[_]): IPromise[_] = js.native
   
   /**
@@ -222,7 +248,12 @@ object Promise extends js.Object {
     * @param value Some non-promise value to be wrapped in a promise.
     * @returns A promise that is successfully fulfilled with the specified value.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.wrap")
+  @js.native
   def wrap[U](): IPromise[U] = js.native
+  @JSGlobal("WinJS.Promise.wrap")
+  @js.native
   def wrap[U](value: U): IPromise[U] = js.native
   
   /**
@@ -230,5 +261,70 @@ object Promise extends js.Object {
     * @param error A non-promise error value to be wrapped in a promise.
     * @returns A promise that is in an error state with the specified value.
     **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.wrapError")
+  @js.native
   def wrapError[U](error: U): IPromise[U] = js.native
+  
+  /**
+    * A static helper that functions identically to then() off a promise instance.
+    * @param promise The promise to chain from.
+    * @param onComplete The function to be called if the promise is fulfilled successfully with a value. The value is passed as the single argument. If the value is null, the value is returned. The value returned from the function becomes the fulfilled value of the promise returned by then. If an exception is thrown while this function is being executed, the promise returned by then moves into the error state.
+    * @param onError The function to be called if the promise is fulfilled with an error. The error is passed as the single argument. In different cases this object may be of different types, so it is necessary to test the object for the properties you expect. If the error is null, it is forwarded. The value returned from the function becomes the value of the promise returned by the then function.
+    * @param onProgress The function to be called if the promise reports progress. Data about the progress is passed as the single argument. Promises are not required to support progress.
+    * @returns The promise whose value is the result of executing the onComplete function.
+    **/
+  /* static member */
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(promise: IPromise[_]): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, _]
+  ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, _],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(promise: IPromise[_], onComplete: js.Function1[/* value */ js.Any, _]): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.Function1[/* value */ js.Any, _],
+    onError: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.Function1[/* value */ js.Any, _],
+    onError: js.Function1[/* error */ js.Any, _]
+  ): IPromise[_] = js.native
+  @JSGlobal("WinJS.Promise.then")
+  @js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.Function1[/* value */ js.Any, _],
+    onError: js.Function1[/* error */ js.Any, _],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
 }

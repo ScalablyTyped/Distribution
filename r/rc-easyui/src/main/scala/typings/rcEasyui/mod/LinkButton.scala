@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,169 +41,225 @@ class LinkButton protected ()
   
   def text(): js.Any = js.native
 }
-@JSImport("rc-easyui", "LinkButton")
-@js.native
-object LinkButton extends js.Object {
+object LinkButton {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "LinkButton.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.contextTypes.locale
+      @JSImport("rc-easyui", "LinkButton.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "LinkButton.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.contextTypes.t
+      @JSImport("rc-easyui", "LinkButton.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.disabled")
+    @js.native
     val disabled: Boolean = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.iconAlign")
+    @js.native
     val iconAlign: String = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.onClick")
+    @js.native
     def onClick(): Unit = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.outline")
+    @js.native
     val outline: Boolean = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.plain")
+    @js.native
     val plain: Boolean = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.selected")
+    @js.native
     val selected: Boolean = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.size")
+    @js.native
     val size: String = js.native
     
+    @JSImport("rc-easyui", "LinkButton.defaultProps.toggle")
+    @js.native
     val toggle: Boolean = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.className
+      @JSImport("rc-easyui", "LinkButton.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object disabled extends js.Object {
+    object disabled {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.disabled")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.disabled
+      @JSImport("rc-easyui", "LinkButton.propTypes.disabled.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object href extends js.Object {
+    object href {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.href")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.href
+      @JSImport("rc-easyui", "LinkButton.propTypes.href.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object iconAlign extends js.Object {
+    object iconAlign {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.iconAlign")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.iconAlign
+      @JSImport("rc-easyui", "LinkButton.propTypes.iconAlign.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object iconCls extends js.Object {
+    object iconCls {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.iconCls")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.iconCls
+      @JSImport("rc-easyui", "LinkButton.propTypes.iconCls.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object onClick extends js.Object {
+    object onClick {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.onClick")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.onClick
+      @JSImport("rc-easyui", "LinkButton.propTypes.onClick.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object outline extends js.Object {
+    object outline {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.outline")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.outline
+      @JSImport("rc-easyui", "LinkButton.propTypes.outline.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object plain extends js.Object {
+    object plain {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.plain")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.plain
+      @JSImport("rc-easyui", "LinkButton.propTypes.plain.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object selected extends js.Object {
+    object selected {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.selected")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.selected
+      @JSImport("rc-easyui", "LinkButton.propTypes.selected.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object size extends js.Object {
+    object size {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.size")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.size
+      @JSImport("rc-easyui", "LinkButton.propTypes.size.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.style
+      @JSImport("rc-easyui", "LinkButton.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object text extends js.Object {
+    object text {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.text")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.text
+      @JSImport("rc-easyui", "LinkButton.propTypes.text.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object toggle extends js.Object {
+    object toggle {
       
+      @JSImport("rc-easyui", "LinkButton.propTypes.toggle")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LinkButton.propTypes.toggle
+      @JSImport("rc-easyui", "LinkButton.propTypes.toggle.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

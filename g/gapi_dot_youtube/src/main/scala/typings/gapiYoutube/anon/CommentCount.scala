@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentCount extends js.Object {
+trait CommentCount extends StObject {
   
   /**
     * The number of comments for the channel.
@@ -36,30 +37,18 @@ object CommentCount {
   }
   
   @scala.inline
-  implicit class CommentCountOps[Self <: CommentCount] (val x: Self) extends AnyVal {
+  implicit class CommentCountMutableBuilder[Self <: CommentCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentCount(value: Double): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscriberCount(value: Double): Self = StObject.set(x, "subscriberCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVideoCount(value: Double): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentCount(value: Double): Self = this.set("commentCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriberCount(value: Double): Self = this.set("subscriberCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoCount(value: Double): Self = this.set("videoCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewCount(value: Double): Self = this.set("viewCount", value.asInstanceOf[js.Any])
+    def setViewCount(value: Double): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
   }
 }

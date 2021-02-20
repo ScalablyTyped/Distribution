@@ -23,13 +23,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.SlantDashDot
 import typings.officeJsPreview.officeJsPreviewStrings.Thick
 import typings.officeJsPreview.officeJsPreviewStrings.Thin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeBorder.toJSON()`. */
 @js.native
-trait RangeBorderData extends js.Object {
+trait RangeBorderData extends StObject {
   
   /**
     *
@@ -85,52 +86,40 @@ object RangeBorderData {
   }
   
   @scala.inline
-  implicit class RangeBorderDataOps[Self <: RangeBorderData] (val x: Self) extends AnyVal {
+  implicit class RangeBorderDataMutableBuilder[Self <: RangeBorderData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
     def setSideIndex(
       value: BorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight | InsideVertical | InsideHorizontal | DiagonalDown | DiagonalUp
-    ): Self = this.set("sideIndex", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSideIndex: Self = this.set("sideIndex", js.undefined)
+    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
     @scala.inline
     def setStyle(
       value: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
-    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setTintAndShade(value: scala.Double): Self = this.set("tintAndShade", value.asInstanceOf[js.Any])
+    def setTintAndShade(value: scala.Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTintAndShade: Self = this.set("tintAndShade", js.undefined)
+    def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
     
     @scala.inline
-    def setWeight(value: BorderWeight | Hairline | Thin | Medium | Thick): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: BorderWeight | Hairline | Thin | Medium | Thick): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

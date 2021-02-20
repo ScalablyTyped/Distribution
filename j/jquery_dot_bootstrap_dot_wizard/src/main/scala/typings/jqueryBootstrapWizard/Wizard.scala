@@ -1,11 +1,12 @@
 package typings.jqueryBootstrapWizard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Wizard extends js.Object {
+trait Wizard extends StObject {
   
   def activeTab(): js.Any = js.native
   
@@ -62,63 +63,51 @@ object Wizard {
   }
   
   @scala.inline
-  implicit class WizardOps[Self <: Wizard] (val x: Self) extends AnyVal {
+  implicit class WizardMutableBuilder[Self <: Wizard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTab(value: () => js.Any): Self = StObject.set(x, "activeTab", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentIndex(value: () => Double): Self = StObject.set(x, "currentIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirst(value: () => Unit): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActiveTab(value: () => js.Any): Self = this.set("activeTab", js.Any.fromFunction0(value))
+    def setFirstIndex(value: () => Double): Self = StObject.set(x, "firstIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentIndex(value: () => Double): Self = this.set("currentIndex", js.Any.fromFunction0(value))
+    def setGetIndex(value: js.Any => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirst(value: () => Unit): Self = this.set("first", js.Any.fromFunction0(value))
+    def setLast(value: () => Unit): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstIndex(value: () => Double): Self = this.set("firstIndex", js.Any.fromFunction0(value))
+    def setLastIndex(value: () => Double): Self = StObject.set(x, "lastIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: js.Any => Double): Self = this.set("getIndex", js.Any.fromFunction1(value))
+    def setNavigationLength(value: () => Double): Self = StObject.set(x, "navigationLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLast(value: () => Unit): Self = this.set("last", js.Any.fromFunction0(value))
+    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLastIndex(value: () => Double): Self = this.set("lastIndex", js.Any.fromFunction0(value))
+    def setNextIndex(value: () => Double): Self = StObject.set(x, "nextIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNavigationLength(value: () => Double): Self = this.set("navigationLength", js.Any.fromFunction0(value))
+    def setNextTab(value: () => js.Any): Self = StObject.set(x, "nextTab", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => Unit): Self = this.set("next", js.Any.fromFunction0(value))
+    def setPrevious(value: () => Unit): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextIndex(value: () => Double): Self = this.set("nextIndex", js.Any.fromFunction0(value))
+    def setPreviousIndex(value: () => Double): Self = StObject.set(x, "previousIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextTab(value: () => js.Any): Self = this.set("nextTab", js.Any.fromFunction0(value))
+    def setPreviousTab(value: () => js.Any): Self = StObject.set(x, "previousTab", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrevious(value: () => Unit): Self = this.set("previous", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreviousIndex(value: () => Double): Self = this.set("previousIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreviousTab(value: () => js.Any): Self = this.set("previousTab", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShow(value: Double => js.Any): Self = this.set("show", js.Any.fromFunction1(value))
+    def setShow(value: Double => js.Any): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

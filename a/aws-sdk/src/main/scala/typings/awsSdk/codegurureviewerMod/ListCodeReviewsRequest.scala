@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCodeReviewsRequest extends js.Object {
+trait ListCodeReviewsRequest extends StObject {
   
   /**
     *  The maximum number of results that are returned per call. The default is 100. 
@@ -46,60 +47,48 @@ object ListCodeReviewsRequest {
   }
   
   @scala.inline
-  implicit class ListCodeReviewsRequestOps[Self <: ListCodeReviewsRequest] (val x: Self) extends AnyVal {
+  implicit class ListCodeReviewsRequestMutableBuilder[Self <: ListCodeReviewsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: ListCodeReviewsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: ListCodeReviewsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setRepositoryNames(value: RepositoryNames): Self = StObject.set(x, "RepositoryNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderTypesVarargs(value: ProviderType*): Self = this.set("ProviderTypes", js.Array(value :_*))
+    def setRepositoryNamesUndefined: Self = StObject.set(x, "RepositoryNames", js.undefined)
     
     @scala.inline
-    def setProviderTypes(value: ProviderTypes): Self = this.set("ProviderTypes", value.asInstanceOf[js.Any])
+    def setRepositoryNamesVarargs(value: Name*): Self = StObject.set(x, "RepositoryNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteProviderTypes: Self = this.set("ProviderTypes", js.undefined)
+    def setStates(value: JobStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryNamesVarargs(value: Name*): Self = this.set("RepositoryNames", js.Array(value :_*))
+    def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
     @scala.inline
-    def setRepositoryNames(value: RepositoryNames): Self = this.set("RepositoryNames", value.asInstanceOf[js.Any])
+    def setStatesVarargs(value: JobState*): Self = StObject.set(x, "States", js.Array(value :_*))
     
     @scala.inline
-    def deleteRepositoryNames: Self = this.set("RepositoryNames", js.undefined)
-    
-    @scala.inline
-    def setStatesVarargs(value: JobState*): Self = this.set("States", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: JobStates): Self = this.set("States", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("States", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

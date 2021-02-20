@@ -2,6 +2,7 @@ package typings.fridaGum.ObjC
 
 import typings.fridaGum.AnyFunction
 import typings.fridaGum.ObjectWrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

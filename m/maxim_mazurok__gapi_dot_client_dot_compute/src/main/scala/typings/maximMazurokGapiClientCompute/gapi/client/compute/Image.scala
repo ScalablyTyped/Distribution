@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientCompute.anon.ContainerType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   /** Size of the image tar.gz archive stored in Google Cloud Storage (in bytes). */
   var archiveSizeBytes: js.UndefOr[String] = js.native
@@ -169,214 +170,202 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveSizeBytes(value: String): Self = StObject.set(x, "archiveSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveSizeBytesUndefined: Self = StObject.set(x, "archiveSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveSizeBytes(value: String): Self = this.set("archiveSizeBytes", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteArchiveSizeBytes: Self = this.set("archiveSizeBytes", js.undefined)
+    def setDeprecated(value: DeprecationStatus): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecated(value: DeprecationStatus): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    def setGuestOsFeatures(value: js.Array[GuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuestOsFeatures(value: js.Array[GuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    def setImageEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "imageEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageEncryptionKeyUndefined: Self = StObject.set(x, "imageEncryptionKey", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageEncryptionKey(value: CustomerEncryptionKey): Self = this.set("imageEncryptionKey", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteImageEncryptionKey: Self = this.set("imageEncryptionKey", js.undefined)
+    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.Image with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLicenseCodesVarargs(value: String*): Self = this.set("licenseCodes", js.Array(value :_*))
+    def setLicenseCodes(value: js.Array[String]): Self = StObject.set(x, "licenseCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseCodes(value: js.Array[String]): Self = this.set("licenseCodes", value.asInstanceOf[js.Any])
+    def setLicenseCodesUndefined: Self = StObject.set(x, "licenseCodes", js.undefined)
     
     @scala.inline
-    def deleteLicenseCodes: Self = this.set("licenseCodes", js.undefined)
+    def setLicenseCodesVarargs(value: String*): Self = StObject.set(x, "licenseCodes", js.Array(value :_*))
     
     @scala.inline
-    def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
     @scala.inline
-    def deleteLicenses: Self = this.set("licenses", js.undefined)
+    def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setRawDisk(value: ContainerType): Self = this.set("rawDisk", value.asInstanceOf[js.Any])
+    def setRawDisk(value: ContainerType): Self = StObject.set(x, "rawDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRawDisk: Self = this.set("rawDisk", js.undefined)
+    def setRawDiskUndefined: Self = StObject.set(x, "rawDisk", js.undefined)
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def setShieldedInstanceInitialState(value: InitialStateConfig): Self = this.set("shieldedInstanceInitialState", value.asInstanceOf[js.Any])
+    def setShieldedInstanceInitialState(value: InitialStateConfig): Self = StObject.set(x, "shieldedInstanceInitialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShieldedInstanceInitialState: Self = this.set("shieldedInstanceInitialState", js.undefined)
+    def setShieldedInstanceInitialStateUndefined: Self = StObject.set(x, "shieldedInstanceInitialState", js.undefined)
     
     @scala.inline
-    def setSourceDisk(value: String): Self = this.set("sourceDisk", value.asInstanceOf[js.Any])
+    def setSourceDisk(value: String): Self = StObject.set(x, "sourceDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceDisk: Self = this.set("sourceDisk", js.undefined)
+    def setSourceDiskEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceDiskEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDiskEncryptionKey(value: CustomerEncryptionKey): Self = this.set("sourceDiskEncryptionKey", value.asInstanceOf[js.Any])
+    def setSourceDiskEncryptionKeyUndefined: Self = StObject.set(x, "sourceDiskEncryptionKey", js.undefined)
     
     @scala.inline
-    def deleteSourceDiskEncryptionKey: Self = this.set("sourceDiskEncryptionKey", js.undefined)
+    def setSourceDiskId(value: String): Self = StObject.set(x, "sourceDiskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDiskId(value: String): Self = this.set("sourceDiskId", value.asInstanceOf[js.Any])
+    def setSourceDiskIdUndefined: Self = StObject.set(x, "sourceDiskId", js.undefined)
     
     @scala.inline
-    def deleteSourceDiskId: Self = this.set("sourceDiskId", js.undefined)
+    def setSourceDiskUndefined: Self = StObject.set(x, "sourceDisk", js.undefined)
     
     @scala.inline
-    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    def setSourceImageEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceImageEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceImageEncryptionKey(value: CustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    def setSourceImageEncryptionKeyUndefined: Self = StObject.set(x, "sourceImageEncryptionKey", js.undefined)
     
     @scala.inline
-    def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+    def setSourceImageId(value: String): Self = StObject.set(x, "sourceImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceImageId(value: String): Self = this.set("sourceImageId", value.asInstanceOf[js.Any])
+    def setSourceImageIdUndefined: Self = StObject.set(x, "sourceImageId", js.undefined)
     
     @scala.inline
-    def deleteSourceImageId: Self = this.set("sourceImageId", js.undefined)
+    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
     @scala.inline
-    def setSourceSnapshot(value: String): Self = this.set("sourceSnapshot", value.asInstanceOf[js.Any])
+    def setSourceSnapshot(value: String): Self = StObject.set(x, "sourceSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceSnapshot: Self = this.set("sourceSnapshot", js.undefined)
+    def setSourceSnapshotEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSnapshotEncryptionKey(value: CustomerEncryptionKey): Self = this.set("sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    def setSourceSnapshotEncryptionKeyUndefined: Self = StObject.set(x, "sourceSnapshotEncryptionKey", js.undefined)
     
     @scala.inline
-    def deleteSourceSnapshotEncryptionKey: Self = this.set("sourceSnapshotEncryptionKey", js.undefined)
+    def setSourceSnapshotId(value: String): Self = StObject.set(x, "sourceSnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSnapshotId(value: String): Self = this.set("sourceSnapshotId", value.asInstanceOf[js.Any])
+    def setSourceSnapshotIdUndefined: Self = StObject.set(x, "sourceSnapshotId", js.undefined)
     
     @scala.inline
-    def deleteSourceSnapshotId: Self = this.set("sourceSnapshotId", js.undefined)
+    def setSourceSnapshotUndefined: Self = StObject.set(x, "sourceSnapshot", js.undefined)
     
     @scala.inline
-    def setSourceType(value: String): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStorageLocationsVarargs(value: String*): Self = this.set("storageLocations", js.Array(value :_*))
+    def setStorageLocations(value: js.Array[String]): Self = StObject.set(x, "storageLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageLocations(value: js.Array[String]): Self = this.set("storageLocations", value.asInstanceOf[js.Any])
+    def setStorageLocationsUndefined: Self = StObject.set(x, "storageLocations", js.undefined)
     
     @scala.inline
-    def deleteStorageLocations: Self = this.set("storageLocations", js.undefined)
+    def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value :_*))
   }
 }

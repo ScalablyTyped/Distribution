@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureFilterProperties extends js.Object {
+trait FeatureFilterProperties extends StObject {
   
   /**
     * Specifies a search distance from a given [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry) in a spatial filter.
@@ -71,63 +72,51 @@ object FeatureFilterProperties {
   }
   
   @scala.inline
-  implicit class FeatureFilterPropertiesOps[Self <: FeatureFilterProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureFilterPropertiesMutableBuilder[Self <: FeatureFilterProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: GeometryProperties): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
     @scala.inline
-    def setObjectIdsVarargs(value: Double*): Self = this.set("objectIds", js.Array(value :_*))
+    def setSpatialRelationship(value: String): Self = StObject.set(x, "spatialRelationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIds(value: js.Array[Double]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
+    def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
     
     @scala.inline
-    def deleteObjectIds: Self = this.set("objectIds", js.undefined)
+    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialRelationship(value: String): Self = this.set("spatialRelationship", value.asInstanceOf[js.Any])
+    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
     @scala.inline
-    def deleteSpatialRelationship: Self = this.set("spatialRelationship", js.undefined)
+    def setUnits(value: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnits(value: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

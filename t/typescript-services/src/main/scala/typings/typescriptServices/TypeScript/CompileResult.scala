@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileResult extends js.Object {
+trait CompileResult extends StObject {
   
   var diagnostics: js.Array[Diagnostic] = js.native
   
@@ -20,30 +21,18 @@ object CompileResult {
   }
   
   @scala.inline
-  implicit class CompileResultOps[Self <: CompileResult] (val x: Self) extends AnyVal {
+  implicit class CompileResultMutableBuilder[Self <: CompileResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputFiles(value: js.Array[OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
-    
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputFilesVarargs(value: OutputFile*): Self = this.set("outputFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputFiles(value: js.Array[OutputFile]): Self = this.set("outputFiles", value.asInstanceOf[js.Any])
+    def setOutputFilesVarargs(value: OutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
   }
 }

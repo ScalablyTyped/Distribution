@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * expressed in degrees of latitude and longitude.
   */
 @js.native
-trait CoordinateRegion extends js.Object {
+trait CoordinateRegion extends StObject {
   
   /**
     * The center point of the region.
@@ -52,50 +53,39 @@ object CoordinateRegion {
   def apply(
     center: Coordinate,
     copy: () => CoordinateRegion,
-    equals: CoordinateRegion => Boolean,
+    equals_ : CoordinateRegion => Boolean,
     radius: Double,
     span: CoordinateSpan,
     toBoundingRegion: () => BoundingRegion,
     toMapRect: () => MapRect
   ): CoordinateRegion = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), radius = radius.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], toBoundingRegion = js.Any.fromFunction0(toBoundingRegion), toMapRect = js.Any.fromFunction0(toMapRect))
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], copy = js.Any.fromFunction0(copy), radius = radius.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], toBoundingRegion = js.Any.fromFunction0(toBoundingRegion), toMapRect = js.Any.fromFunction0(toMapRect))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[CoordinateRegion]
   }
   
   @scala.inline
-  implicit class CoordinateRegionOps[Self <: CoordinateRegion] (val x: Self) extends AnyVal {
+  implicit class CoordinateRegionMutableBuilder[Self <: CoordinateRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopy(value: () => CoordinateRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: CoordinateRegion => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCenter(value: Coordinate): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => CoordinateRegion): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setSpan(value: CoordinateSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: CoordinateRegion => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setToBoundingRegion(value: () => BoundingRegion): Self = StObject.set(x, "toBoundingRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpan(value: CoordinateSpan): Self = this.set("span", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToBoundingRegion(value: () => BoundingRegion): Self = this.set("toBoundingRegion", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToMapRect(value: () => MapRect): Self = this.set("toMapRect", js.Any.fromFunction0(value))
+    def setToMapRect(value: () => MapRect): Self = StObject.set(x, "toMapRect", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The ChangedEvent class constructor produces an empty ChangedEvent object.
   */
-class ChangedEvent () extends js.Object {
+class ChangedEvent () extends StObject {
   
   /**
     * This predicate returns true if you can call redo().
@@ -96,20 +97,41 @@ class ChangedEvent () extends js.Object {
     */
   def undo(): Unit = js.native
 }
-/* static members */
-@JSImport("go", "ChangedEvent")
-@js.native
-object ChangedEvent extends js.Object {
+object ChangedEvent {
+  
+  @JSImport("go", "ChangedEvent")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**For inserting into collections, and used as the value for ChangedEvent.change.*/
-  var Insert: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "ChangedEvent.Insert")
+  @js.native
+  def Insert: EnumValue = js.native
+  @scala.inline
+  def Insert_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Insert")(x.asInstanceOf[js.Any])
   
   /**For simple property changes, and used as the value for ChangedEvent.change.*/
-  var Property: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "ChangedEvent.Property")
+  @js.native
+  def Property: EnumValue = js.native
+  @scala.inline
+  def Property_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
   
   /**For removing from collections, and used as the value for ChangedEvent.change.*/
-  var Remove: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "ChangedEvent.Remove")
+  @js.native
+  def Remove: EnumValue = js.native
+  @scala.inline
+  def Remove_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Remove")(x.asInstanceOf[js.Any])
   
   /**For informational events, such as transactions and undo/redo operations, and used as the value for ChangedEvent.change.*/
-  var Transaction: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "ChangedEvent.Transaction")
+  @js.native
+  def Transaction: EnumValue = js.native
+  @scala.inline
+  def Transaction_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transaction")(x.asInstanceOf[js.Any])
 }

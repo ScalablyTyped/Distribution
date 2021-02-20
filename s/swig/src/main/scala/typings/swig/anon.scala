@@ -1,16 +1,15 @@
 package typings.swig
 
 import typings.swig.mod.TemplateLoader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeofloaders extends js.Object {
+  trait Typeofloaders extends StObject {
     
     def fs(): TemplateLoader = js.native
     def fs(basepath: js.UndefOr[scala.Nothing], encoding: String): TemplateLoader = js.native

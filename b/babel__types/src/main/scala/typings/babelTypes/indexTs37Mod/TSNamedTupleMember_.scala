@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.TSNamedTupleMember
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object TSNamedTupleMember_ {
   }
   
   @scala.inline
-  implicit class TSNamedTupleMember_Ops[Self <: TSNamedTupleMember_] (val x: Self) extends AnyVal {
+  implicit class TSNamedTupleMember_MutableBuilder[Self <: TSNamedTupleMember_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementType(value: TSType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementType(value: TSType): Self = this.set("elementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: Identifier_): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TSNamedTupleMember): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TSNamedTupleMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

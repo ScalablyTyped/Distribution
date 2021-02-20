@@ -1,15 +1,31 @@
 package typings.emberOrderedSet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/ordered-set", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@ember/ordered-set", JSImport.Default)
+  @js.native
+  class default[T] () extends OrderedSet[T]
+  /* static members */
+  object default {
+    
+    // Disable this to let users call like `OrderedSet.create<string>();`. This
+    // is a rare case where it's preferable, because it's *much* briefer than
+    // `let set: OrderedSet<string> = OrderedSet.create();`. If TS could infer
+    // from usage what the type would be, this wouldn't be required, but until
+    // it does, this is better than *not* allowing it.
+    // tslint:disable-next-line:no-unnecessary-generics
+    @JSImport("@ember/ordered-set", "default.create")
+    @js.native
+    def create[T](): OrderedSet[T] = js.native
+  }
   
   @js.native
-  trait OrderedSet[T] extends js.Object {
+  trait OrderedSet[T] extends StObject {
     
     def add(value: T): this.type = js.native
     
@@ -38,20 +54,5 @@ object mod extends js.Object {
     def isEmpty(): Boolean = js.native
     
     def toArray(): js.Array[T] = js.native
-  }
-  
-  @js.native
-  class default[T] () extends OrderedSet[T]
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    // Disable this to let users call like `OrderedSet.create<string>();`. This
-    // is a rare case where it's preferable, because it's *much* briefer than
-    // `let set: OrderedSet<string> = OrderedSet.create();`. If TS could infer
-    // from usage what the type would be, this wouldn't be required, but until
-    // it does, this is better than *not* allowing it.
-    // tslint:disable-next-line:no-unnecessary-generics
-    def create[T](): OrderedSet[T] = js.native
   }
 }

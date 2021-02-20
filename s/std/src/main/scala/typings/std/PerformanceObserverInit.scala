@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceObserverInit extends js.Object {
+trait PerformanceObserverInit extends StObject {
   
   var buffered: js.UndefOr[scala.Boolean] = js.native
   
@@ -22,39 +23,27 @@ object PerformanceObserverInit {
   }
   
   @scala.inline
-  implicit class PerformanceObserverInitOps[Self <: PerformanceObserverInit] (val x: Self) extends AnyVal {
+  implicit class PerformanceObserverInitMutableBuilder[Self <: PerformanceObserverInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffered(value: scala.Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "entryTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffered(value: scala.Boolean): Self = this.set("buffered", value.asInstanceOf[js.Any])
+    def setEntryTypesUndefined: Self = StObject.set(x, "entryTypes", js.undefined)
     
     @scala.inline
-    def deleteBuffered: Self = this.set("buffered", js.undefined)
+    def setEntryTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "entryTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEntryTypesVarargs(value: java.lang.String*): Self = this.set("entryTypes", js.Array(value :_*))
+    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryTypes(value: js.Array[java.lang.String]): Self = this.set("entryTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntryTypes: Self = this.set("entryTypes", js.undefined)
-    
-    @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

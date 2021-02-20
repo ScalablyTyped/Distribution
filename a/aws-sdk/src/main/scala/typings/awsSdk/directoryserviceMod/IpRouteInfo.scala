@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpRouteInfo extends js.Object {
+trait IpRouteInfo extends StObject {
   
   /**
     * The date and time the address block was added to the directory.
@@ -46,54 +47,42 @@ object IpRouteInfo {
   }
   
   @scala.inline
-  implicit class IpRouteInfoOps[Self <: IpRouteInfo] (val x: Self) extends AnyVal {
+  implicit class IpRouteInfoMutableBuilder[Self <: IpRouteInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedDateTime(value: AddedDateTime): Self = StObject.set(x, "AddedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedDateTimeUndefined: Self = StObject.set(x, "AddedDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrIp(value: CidrIp): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedDateTime(value: AddedDateTime): Self = this.set("AddedDateTime", value.asInstanceOf[js.Any])
+    def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
     
     @scala.inline
-    def deleteAddedDateTime: Self = this.set("AddedDateTime", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrIp(value: CidrIp): Self = this.set("CidrIp", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCidrIp: Self = this.set("CidrIp", js.undefined)
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIpRouteStatusMsg(value: IpRouteStatusMsg): Self = StObject.set(x, "IpRouteStatusMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setIpRouteStatusMsgUndefined: Self = StObject.set(x, "IpRouteStatusMsg", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setIpRouteStatusReason(value: IpRouteStatusReason): Self = StObject.set(x, "IpRouteStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpRouteStatusMsg(value: IpRouteStatusMsg): Self = this.set("IpRouteStatusMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpRouteStatusMsg: Self = this.set("IpRouteStatusMsg", js.undefined)
-    
-    @scala.inline
-    def setIpRouteStatusReason(value: IpRouteStatusReason): Self = this.set("IpRouteStatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpRouteStatusReason: Self = this.set("IpRouteStatusReason", js.undefined)
+    def setIpRouteStatusReasonUndefined: Self = StObject.set(x, "IpRouteStatusReason", js.undefined)
   }
 }

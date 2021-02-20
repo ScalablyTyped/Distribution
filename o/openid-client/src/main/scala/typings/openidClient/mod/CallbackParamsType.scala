@@ -1,6 +1,7 @@
 package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,84 +41,72 @@ object CallbackParamsType {
   }
   
   @scala.inline
-  implicit class CallbackParamsTypeOps[Self <: CallbackParamsType] (val x: Self) extends AnyVal {
+  implicit class CallbackParamsTypeMutableBuilder[Self <: CallbackParamsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteAccess_token: Self = this.set("access_token", js.undefined)
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError_descriptionUndefined: Self = StObject.set(x, "error_description", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setError_uri(value: String): Self = StObject.set(x, "error_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_description(value: String): Self = this.set("error_description", value.asInstanceOf[js.Any])
+    def setError_uriUndefined: Self = StObject.set(x, "error_uri", js.undefined)
     
     @scala.inline
-    def deleteError_description: Self = this.set("error_description", js.undefined)
+    def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_uri(value: String): Self = this.set("error_uri", value.asInstanceOf[js.Any])
+    def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
     
     @scala.inline
-    def deleteError_uri: Self = this.set("error_uri", js.undefined)
+    def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires_in(value: String): Self = this.set("expires_in", value.asInstanceOf[js.Any])
+    def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
     
     @scala.inline
-    def deleteExpires_in: Self = this.set("expires_in", js.undefined)
+    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token(value: String): Self = this.set("id_token", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteId_token: Self = this.set("id_token", js.undefined)
+    def setSession_state(value: String): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setSession_stateUndefined: Self = StObject.set(x, "session_state", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession_state(value: String): Self = this.set("session_state", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSession_state: Self = this.set("session_state", js.undefined)
+    def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setToken_type(value: String): Self = this.set("token_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken_type: Self = this.set("token_type", js.undefined)
+    def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
   }
 }

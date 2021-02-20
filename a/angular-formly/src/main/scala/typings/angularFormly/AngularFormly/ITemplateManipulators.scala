@@ -1,11 +1,12 @@
 package typings.angularFormly.AngularFormly
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITemplateManipulators extends js.Object {
+trait ITemplateManipulators extends StObject {
   
   var postWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.native
   
@@ -20,36 +21,24 @@ object ITemplateManipulators {
   }
   
   @scala.inline
-  implicit class ITemplateManipulatorsOps[Self <: ITemplateManipulators] (val x: Self) extends AnyVal {
+  implicit class ITemplateManipulatorsMutableBuilder[Self <: ITemplateManipulators] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "postWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostWrapperUndefined: Self = StObject.set(x, "postWrapper", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "postWrapper", js.Array(value :_*))
     
     @scala.inline
-    def setPostWrapperVarargs(value: ITemplateManipulator*): Self = this.set("postWrapper", js.Array(value :_*))
+    def setPreWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "preWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostWrapper(value: js.Array[ITemplateManipulator]): Self = this.set("postWrapper", value.asInstanceOf[js.Any])
+    def setPreWrapperUndefined: Self = StObject.set(x, "preWrapper", js.undefined)
     
     @scala.inline
-    def deletePostWrapper: Self = this.set("postWrapper", js.undefined)
-    
-    @scala.inline
-    def setPreWrapperVarargs(value: ITemplateManipulator*): Self = this.set("preWrapper", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreWrapper(value: js.Array[ITemplateManipulator]): Self = this.set("preWrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreWrapper: Self = this.set("preWrapper", js.undefined)
+    def setPreWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "preWrapper", js.Array(value :_*))
   }
 }

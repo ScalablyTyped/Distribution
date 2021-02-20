@@ -1,15 +1,13 @@
 package typings.es6Promise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("es6-promise", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def polyfill(): Unit = js.native
-  
+  @JSImport("es6-promise", "Promise")
   @js.native
   class Promise[R] protected () extends Thenable[R] {
     /**
@@ -45,13 +43,22 @@ object mod extends js.Object {
     def `finally`(onFinally: js.Function0[_ | Thenable[_]]): Promise[R] = js.native
   }
   /* static members */
-  @js.native
-  object Promise extends js.Object {
+  object Promise {
     
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3](values: js.Tuple3[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3]]): Promise[js.Tuple3[T1, T2, T3]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4](values: js.Tuple4[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3], T4 | Thenable[T4]]): Promise[js.Tuple4[T1, T2, T3, T4]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4, T5](
       values: js.Tuple5[
           T1 | Thenable[T1], 
@@ -61,6 +68,8 @@ object mod extends js.Object {
           T5 | Thenable[T5]
         ]
     ): Promise[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4, T5, T6](
       values: js.Tuple6[
           T1 | Thenable[T1], 
@@ -71,6 +80,8 @@ object mod extends js.Object {
           T6 | Thenable[T6]
         ]
     ): Promise[js.Tuple6[T1, T2, T3, T4, T5, T6]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4, T5, T6, T7](
       values: js.Tuple7[
           T1 | Thenable[T1], 
@@ -82,6 +93,8 @@ object mod extends js.Object {
           T7 | Thenable[T7]
         ]
     ): Promise[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4, T5, T6, T7, T8](
       values: js.Tuple8[
           T1 | Thenable[T1], 
@@ -94,6 +107,8 @@ object mod extends js.Object {
           T8 | Thenable[T8]
         ]
     ): Promise[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]] = js.native
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       values: js.Tuple9[
           T1 | Thenable[T1], 
@@ -112,6 +127,8 @@ object mod extends js.Object {
       * the array passed to all can be a mixture of promise-like objects and other objects.
       * The fulfillment value is an array (in order) of fulfillment values. The rejection value is the first rejection value.
       */
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       values: js.Tuple10[
           T1 | Thenable[T1], 
@@ -126,30 +143,45 @@ object mod extends js.Object {
           T10 | Thenable[T10]
         ]
     ): Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
-    @JSName("all")
+    @JSImport("es6-promise", "Promise.all")
+    @js.native
     def all_TAll[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = js.native
     
     /**
       * Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.
       */
+    @JSImport("es6-promise", "Promise.race")
+    @js.native
     def race[R](promises: js.Array[R | Thenable[R]]): Promise[R] = js.native
     
     /**
       * Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error
       */
+    @JSImport("es6-promise", "Promise.reject")
+    @js.native
     def reject[R](error: js.Any): Promise[R] = js.native
     
     /**
       * Make a new promise from the thenable.
       * A thenable is promise-like in as far as it has a "then" method.
       */
+    @JSImport("es6-promise", "Promise.resolve")
+    @js.native
     def resolve(): Promise[Unit] = js.native
+    @JSImport("es6-promise", "Promise.resolve")
+    @js.native
     def resolve[R](value: R): Promise[R] = js.native
+    @JSImport("es6-promise", "Promise.resolve")
+    @js.native
     def resolve[R](value: Thenable[R]): Promise[R] = js.native
   }
   
+  @JSImport("es6-promise", "polyfill")
   @js.native
-  trait Thenable[R] extends js.Object {
+  def polyfill(): Unit = js.native
+  
+  @js.native
+  trait Thenable[R] extends StObject {
     
     def `then`[U](): Thenable[U] = js.native
     def `then`[U](

@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object TransformPutTransform {
   }
   
   @scala.inline
-  implicit class TransformPutTransformOps[Self <: TransformPutTransform[_], T] (val x: Self with TransformPutTransform[T]) extends AnyVal {
+  implicit class TransformPutTransformMutableBuilder[Self <: TransformPutTransform[_], T] (val x: Self with TransformPutTransform[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefer_validation(value: Boolean): Self = StObject.set(x, "defer_validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefer_validationUndefined: Self = StObject.set(x, "defer_validation", js.undefined)
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransform_id(value: String): Self = this.set("transform_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefer_validation(value: Boolean): Self = this.set("defer_validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefer_validation: Self = this.set("defer_validation", js.undefined)
+    def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
   }
 }

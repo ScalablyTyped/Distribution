@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MaxZoomStatus extends js.Object
+sealed trait MaxZoomStatus extends StObject
 /**
   * The status returned by the {@link MaxZoomService} on the completion of a call to
   * {@link MaxZoomService#getMaxZoomAtLatLng getMaxZoomAtLatLng()}. Specify these by value, or by using the
@@ -14,7 +15,7 @@ sealed trait MaxZoomStatus extends js.Object
   */
 @JSGlobal("google.maps.MaxZoomStatus")
 @js.native
-object MaxZoomStatus extends js.Object {
+object MaxZoomStatus extends StObject {
   
   /**
     * There was a problem contacting the Google servers.

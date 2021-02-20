@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,42 +87,30 @@ object ColumnSettings {
   }
   
   @scala.inline
-  implicit class ColumnSettingsOps[Self <: ColumnSettings] (val x: Self) extends AnyVal {
+  implicit class ColumnSettingsMutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlDefault(value: String): Self = StObject.set(x, "ControlDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlModel(value: XPropertySet): Self = StObject.set(x, "ControlModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Double): Self = this.set("Align", value.asInstanceOf[js.Any])
+    def setFormatKey(value: Double): Self = StObject.set(x, "FormatKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlDefault(value: String): Self = this.set("ControlDefault", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlModel(value: XPropertySet): Self = this.set("ControlModel", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatKey(value: Double): Self = this.set("FormatKey", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHidden(value: Boolean): Self = this.set("Hidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

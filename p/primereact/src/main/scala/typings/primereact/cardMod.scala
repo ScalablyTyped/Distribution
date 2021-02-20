@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.cardCardMod.CardProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/card", JSImport.Namespace)
-@js.native
-object cardMod extends js.Object {
+object cardMod {
   
+  @JSImport("primereact/card", "Card")
   @js.native
-  class Card ()
-    extends Component[CardProps, js.Any, js.Any]
+  class Card protected ()
+    extends typings.primereact.cardCardMod.Card {
+    def this(props: CardProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardProps, context: js.Any) = this()
+  }
 }

@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToastAndroidStatic extends js.Object {
+trait ToastAndroidStatic extends StObject {
   
   var BOTTOM: Double = js.native
   
@@ -49,42 +50,30 @@ object ToastAndroidStatic {
   }
   
   @scala.inline
-  implicit class ToastAndroidStaticOps[Self <: ToastAndroidStatic] (val x: Self) extends AnyVal {
+  implicit class ToastAndroidStaticMutableBuilder[Self <: ToastAndroidStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBOTTOM(value: Double): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCENTER(value: Double): Self = StObject.set(x, "CENTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLONG(value: Double): Self = StObject.set(x, "LONG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBOTTOM(value: Double): Self = this.set("BOTTOM", value.asInstanceOf[js.Any])
+    def setSHORT(value: Double): Self = StObject.set(x, "SHORT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCENTER(value: Double): Self = this.set("CENTER", value.asInstanceOf[js.Any])
+    def setShow(value: (String, Double) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLONG(value: Double): Self = this.set("LONG", value.asInstanceOf[js.Any])
+    def setShowWithGravity(value: (String, Double, Double) => Unit): Self = StObject.set(x, "showWithGravity", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSHORT(value: Double): Self = this.set("SHORT", value.asInstanceOf[js.Any])
+    def setShowWithGravityAndOffset(value: (String, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "showWithGravityAndOffset", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setTOP(value: Double): Self = this.set("TOP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShow(value: (String, Double) => Unit): Self = this.set("show", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShowWithGravity(value: (String, Double, Double) => Unit): Self = this.set("showWithGravity", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setShowWithGravityAndOffset(value: (String, Double, Double, Double, Double) => Unit): Self = this.set("showWithGravityAndOffset", js.Any.fromFunction5(value))
+    def setTOP(value: Double): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
   }
 }

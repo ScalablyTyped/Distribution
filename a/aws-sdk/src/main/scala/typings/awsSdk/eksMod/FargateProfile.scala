@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FargateProfile extends js.Object {
+trait FargateProfile extends StObject {
   
   /**
     * The name of the Amazon EKS cluster that the Fargate profile belongs to.
@@ -61,78 +62,66 @@ object FargateProfile {
   }
   
   @scala.inline
-  implicit class FargateProfileOps[Self <: FargateProfile] (val x: Self) extends AnyVal {
+  implicit class FargateProfileMutableBuilder[Self <: FargateProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    def setFargateProfileArn(value: String): Self = StObject.set(x, "fargateProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setFargateProfileArnUndefined: Self = StObject.set(x, "fargateProfileArn", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFargateProfileName(value: String): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFargateProfileArn(value: String): Self = this.set("fargateProfileArn", value.asInstanceOf[js.Any])
+    def setFargateProfileNameUndefined: Self = StObject.set(x, "fargateProfileName", js.undefined)
     
     @scala.inline
-    def deleteFargateProfileArn: Self = this.set("fargateProfileArn", js.undefined)
+    def setPodExecutionRoleArn(value: String): Self = StObject.set(x, "podExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFargateProfileName(value: String): Self = this.set("fargateProfileName", value.asInstanceOf[js.Any])
+    def setPodExecutionRoleArnUndefined: Self = StObject.set(x, "podExecutionRoleArn", js.undefined)
     
     @scala.inline
-    def deleteFargateProfileName: Self = this.set("fargateProfileName", js.undefined)
+    def setSelectors(value: FargateProfileSelectors): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodExecutionRoleArn(value: String): Self = this.set("podExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
     @scala.inline
-    def deletePodExecutionRoleArn: Self = this.set("podExecutionRoleArn", js.undefined)
+    def setSelectorsVarargs(value: FargateProfileSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
     @scala.inline
-    def setSelectorsVarargs(value: FargateProfileSelector*): Self = this.set("selectors", js.Array(value :_*))
+    def setStatus(value: FargateProfileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectors(value: FargateProfileSelectors): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FargateProfileStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetsVarargs(value: String*): Self = this.set("subnets", js.Array(value :_*))
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnets(value: StringList): Self = this.set("subnets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnets: Self = this.set("subnets", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

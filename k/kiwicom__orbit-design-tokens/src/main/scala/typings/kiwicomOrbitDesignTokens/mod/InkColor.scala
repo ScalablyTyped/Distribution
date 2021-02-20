@@ -1,11 +1,12 @@
 package typings.kiwicomOrbitDesignTokens.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InkColor extends js.Object {
+trait InkColor extends StObject {
   
   var light: String = js.native
   
@@ -44,45 +45,33 @@ object InkColor {
   }
   
   @scala.inline
-  implicit class InkColorOps[Self <: InkColor] (val x: Self) extends AnyVal {
+  implicit class InkColorMutableBuilder[Self <: InkColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLightActive(value: String): Self = StObject.set(x, "lightActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLightHover(value: String): Self = StObject.set(x, "lightHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLight(value: String): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setLighter(value: String): Self = StObject.set(x, "lighter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightActive(value: String): Self = this.set("lightActive", value.asInstanceOf[js.Any])
+    def setLighterActive(value: String): Self = StObject.set(x, "lighterActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightHover(value: String): Self = this.set("lightHover", value.asInstanceOf[js.Any])
+    def setLighterHover(value: String): Self = StObject.set(x, "lighterHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighter(value: String): Self = this.set("lighter", value.asInstanceOf[js.Any])
+    def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighterActive(value: String): Self = this.set("lighterActive", value.asInstanceOf[js.Any])
+    def setNormalActive(value: String): Self = StObject.set(x, "normalActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighterHover(value: String): Self = this.set("lighterHover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: String): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalActive(value: String): Self = this.set("normalActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalHover(value: String): Self = this.set("normalHover", value.asInstanceOf[js.Any])
+    def setNormalHover(value: String): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
   }
 }

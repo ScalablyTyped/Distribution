@@ -39,14 +39,14 @@ import typings.typeorm.mongodbTypingsMod.ReplaceOneOptions
 import typings.typeorm.mongodbTypingsMod.UnorderedBulkOperation
 import typings.typeorm.mongodbTypingsMod.UpdateWriteOpResult
 import typings.typeorm.repositoryRepositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/repository/MongoRepository", JSImport.Namespace)
-@js.native
-object repositoryMongoRepositoryMod extends js.Object {
+object repositoryMongoRepositoryMod {
   
+  @JSImport("typeorm/repository/MongoRepository", "MongoRepository")
   @js.native
   class MongoRepository[Entity /* <: ObjectLiteral */] () extends Repository[Entity] {
     

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CdnSettings extends js.Object {
+trait CdnSettings extends StObject {
   
   /** The format of the video stream that you are sending to Youtube. */
   var format: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object CdnSettings {
   }
   
   @scala.inline
-  implicit class CdnSettingsOps[Self <: CdnSettings] (val x: Self) extends AnyVal {
+  implicit class CdnSettingsMutableBuilder[Self <: CdnSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameRate(value: String): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setIngestionInfo(value: IngestionInfo): Self = StObject.set(x, "ingestionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: String): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setIngestionInfoUndefined: Self = StObject.set(x, "ingestionInfo", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setIngestionType(value: String): Self = StObject.set(x, "ingestionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionInfo(value: IngestionInfo): Self = this.set("ingestionInfo", value.asInstanceOf[js.Any])
+    def setIngestionTypeUndefined: Self = StObject.set(x, "ingestionType", js.undefined)
     
     @scala.inline
-    def deleteIngestionInfo: Self = this.set("ingestionInfo", js.undefined)
+    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionType(value: String): Self = this.set("ingestionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIngestionType: Self = this.set("ingestionType", js.undefined)
-    
-    @scala.inline
-    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

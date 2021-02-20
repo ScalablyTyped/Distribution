@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the client-side equivalent of the ListEditItem object.
   */
 @js.native
-trait ASPxClientListEditItem extends js.Object {
+trait ASPxClientListEditItem extends StObject {
   
   def GetColumnText(columnIndex: String): String = js.native
   /**

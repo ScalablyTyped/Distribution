@@ -1,12 +1,13 @@
 package typings.chrome.chrome.webRequest
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadData extends js.Object {
+trait UploadData extends StObject {
   
   /** Optional. An ArrayBuffer with a copy of the data. */
   var bytes: js.UndefOr[ArrayBuffer] = js.native
@@ -23,30 +24,18 @@ object UploadData {
   }
   
   @scala.inline
-  implicit class UploadDataOps[Self <: UploadData] (val x: Self) extends AnyVal {
+  implicit class UploadDataMutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytes(value: ArrayBuffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: ArrayBuffer): Self = this.set("bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytes: Self = this.set("bytes", js.undefined)
-    
-    @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

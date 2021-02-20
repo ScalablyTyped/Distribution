@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Behaviors extends js.Object {
+trait Behaviors extends StObject {
   
   var behaviors: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Behaviors {
   }
   
   @scala.inline
-  implicit class BehaviorsOps[Self <: Behaviors] (val x: Self) extends AnyVal {
+  implicit class BehaviorsMutableBuilder[Self <: Behaviors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehaviors(value: scala.Double): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayout(value: scala.Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviors(value: scala.Double): Self = this.set("behaviors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayout(value: scala.Double): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStates(value: scala.Double): Self = this.set("states", value.asInstanceOf[js.Any])
+    def setStates(value: scala.Double): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.leafletGeosearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenStreetMapProviderOptionsResultLanguage extends js.Object {
+trait OpenStreetMapProviderOptionsResultLanguage extends StObject {
   
   var `accept-language`: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object OpenStreetMapProviderOptionsResultLanguage {
   }
   
   @scala.inline
-  implicit class OpenStreetMapProviderOptionsResultLanguageOps[Self <: OpenStreetMapProviderOptionsResultLanguage] (val x: Self) extends AnyVal {
+  implicit class OpenStreetMapProviderOptionsResultLanguageMutableBuilder[Self <: OpenStreetMapProviderOptionsResultLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAccept-language`(value: String): Self = StObject.set(x, "accept-language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `setAccept-language`(value: String): Self = this.set("accept-language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteAccept-language`: Self = this.set("accept-language", js.undefined)
+    def `setAccept-languageUndefined`: Self = StObject.set(x, "accept-language", js.undefined)
   }
 }

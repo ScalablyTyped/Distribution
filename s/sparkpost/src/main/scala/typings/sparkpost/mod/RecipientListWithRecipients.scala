@@ -1,5 +1,6 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object RecipientListWithRecipients {
   }
   
   @scala.inline
-  implicit class RecipientListWithRecipientsOps[Self <: RecipientListWithRecipients] (val x: Self) extends AnyVal {
+  implicit class RecipientListWithRecipientsMutableBuilder[Self <: RecipientListWithRecipients] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecipientsVarargs(value: Recipient*): Self = this.set("recipients", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecipients(value: js.Array[Recipient]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
   }
 }

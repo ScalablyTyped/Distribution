@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Guid extends js.Object {
+trait Guid extends StObject {
   
   var businessId: js.UndefOr[Double] = js.native
   
@@ -38,84 +39,72 @@ object Guid {
   }
   
   @scala.inline
-  implicit class GuidOps[Self <: Guid] (val x: Self) extends AnyVal {
+  implicit class GuidMutableBuilder[Self <: Guid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusinessId(value: Double): Self = StObject.set(x, "businessId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusinessIdUndefined: Self = StObject.set(x, "businessId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessId(value: Double): Self = this.set("businessId", value.asInstanceOf[js.Any])
+    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
     @scala.inline
-    def deleteBusinessId: Self = this.set("businessId", js.undefined)
+    def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
     
     @scala.inline
-    def deleteGuid: Self = this.set("guid", js.undefined)
+    def setShardId(value: String): Self = StObject.set(x, "shardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteStoreUrl(value: String): Self = this.set("noteStoreUrl", value.asInstanceOf[js.Any])
+    def setShardIdUndefined: Self = StObject.set(x, "shardId", js.undefined)
     
     @scala.inline
-    def deleteNoteStoreUrl: Self = this.set("noteStoreUrl", js.undefined)
+    def setShareKey(value: String): Self = StObject.set(x, "shareKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardId(value: String): Self = this.set("shardId", value.asInstanceOf[js.Any])
+    def setShareKeyUndefined: Self = StObject.set(x, "shareKey", js.undefined)
     
     @scala.inline
-    def deleteShardId: Self = this.set("shardId", js.undefined)
+    def setShareName(value: String): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareKey(value: String): Self = this.set("shareKey", value.asInstanceOf[js.Any])
+    def setShareNameUndefined: Self = StObject.set(x, "shareName", js.undefined)
     
     @scala.inline
-    def deleteShareKey: Self = this.set("shareKey", js.undefined)
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareName(value: String): Self = this.set("shareName", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def deleteShareName: Self = this.set("shareName", js.undefined)
+    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
     
     @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = this.set("updateSequenceNum", value.asInstanceOf[js.Any])
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def deleteUpdateSequenceNum: Self = this.set("updateSequenceNum", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setWebApiUrlPrefix(value: String): Self = this.set("webApiUrlPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApiUrlPrefix: Self = this.set("webApiUrlPrefix", js.undefined)
+    def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
   }
 }

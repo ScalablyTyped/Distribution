@@ -1,12 +1,13 @@
 package typings.reactBeautifulDnd.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableProps extends js.Object {
+trait DraggableProps extends StObject {
   
   var children: DraggableChildrenFn = js.native
   
@@ -33,47 +34,35 @@ object DraggableProps {
   }
   
   @scala.inline
-  implicit class DraggablePropsOps[Self <: DraggableProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DraggablePropsMutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChildren(
       value: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => ReactElement
-    ): Self = this.set("children", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDraggableId(value: DraggableId): Self = this.set("draggableId", value.asInstanceOf[js.Any])
+    def setDisableInteractiveElementBlocking(value: Boolean): Self = StObject.set(x, "disableInteractiveElementBlocking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setDisableInteractiveElementBlockingUndefined: Self = StObject.set(x, "disableInteractiveElementBlocking", js.undefined)
     
     @scala.inline
-    def setDisableInteractiveElementBlocking(value: Boolean): Self = this.set("disableInteractiveElementBlocking", value.asInstanceOf[js.Any])
+    def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableInteractiveElementBlocking: Self = this.set("disableInteractiveElementBlocking", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDragDisabled(value: Boolean): Self = this.set("isDragDisabled", value.asInstanceOf[js.Any])
+    def setIsDragDisabled(value: Boolean): Self = StObject.set(x, "isDragDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDragDisabled: Self = this.set("isDragDisabled", js.undefined)
+    def setIsDragDisabledUndefined: Self = StObject.set(x, "isDragDisabled", js.undefined)
     
     @scala.inline
-    def setShouldRespectForcePress(value: Boolean): Self = this.set("shouldRespectForcePress", value.asInstanceOf[js.Any])
+    def setShouldRespectForcePress(value: Boolean): Self = StObject.set(x, "shouldRespectForcePress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShouldRespectForcePress: Self = this.set("shouldRespectForcePress", js.undefined)
+    def setShouldRespectForcePressUndefined: Self = StObject.set(x, "shouldRespectForcePress", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * condition to reduce repetitive results by source.
   */
 @js.native
-trait SchemaSourceCrowdingConfig extends js.Object {
+trait SchemaSourceCrowdingConfig extends StObject {
   
   /**
     * Use a field to control results crowding. For example, if you want to
@@ -50,42 +51,30 @@ object SchemaSourceCrowdingConfig {
   }
   
   @scala.inline
-  implicit class SchemaSourceCrowdingConfigOps[Self <: SchemaSourceCrowdingConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceCrowdingConfigMutableBuilder[Self <: SchemaSourceCrowdingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setNumSuggestions(value: Double): Self = StObject.set(x, "numSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumResults(value: Double): Self = this.set("numResults", value.asInstanceOf[js.Any])
+    def setNumSuggestionsUndefined: Self = StObject.set(x, "numSuggestions", js.undefined)
     
     @scala.inline
-    def deleteNumResults: Self = this.set("numResults", js.undefined)
+    def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumSuggestions(value: Double): Self = this.set("numSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumSuggestions: Self = this.set("numSuggestions", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Boolean): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

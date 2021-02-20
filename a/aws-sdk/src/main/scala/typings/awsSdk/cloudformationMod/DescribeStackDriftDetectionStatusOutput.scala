@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStackDriftDetectionStatusOutput extends js.Object {
+trait DescribeStackDriftDetectionStatusOutput extends StObject {
   
   /**
     * The status of the stack drift detection operation.    DETECTION_COMPLETE: The stack drift detection operation has successfully completed for all resources in the stack that support drift detection. (Resources that do not currently support stack detection remain unchecked.) If you specified logical resource IDs for AWS CloudFormation to use as a filter for the stack drift detection operation, only the resources with those logical IDs are checked for drift.    DETECTION_FAILED: The stack drift detection operation has failed for at least one resource in the stack. Results will be available for resources on which AWS CloudFormation successfully completed drift detection.    DETECTION_IN_PROGRESS: The stack drift detection operation is currently in progress.  
@@ -56,48 +57,36 @@ object DescribeStackDriftDetectionStatusOutput {
   }
   
   @scala.inline
-  implicit class DescribeStackDriftDetectionStatusOutputOps[Self <: DescribeStackDriftDetectionStatusOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeStackDriftDetectionStatusOutputMutableBuilder[Self <: DescribeStackDriftDetectionStatusOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectionStatus(value: StackDriftDetectionStatus): Self = StObject.set(x, "DetectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectionStatusReason(value: StackDriftDetectionStatusReason): Self = StObject.set(x, "DetectionStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectionStatusReasonUndefined: Self = StObject.set(x, "DetectionStatusReason", js.undefined)
     
     @scala.inline
-    def setDetectionStatus(value: StackDriftDetectionStatus): Self = this.set("DetectionStatus", value.asInstanceOf[js.Any])
+    def setDriftedStackResourceCount(value: BoxedInteger): Self = StObject.set(x, "DriftedStackResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackDriftDetectionId(value: StackDriftDetectionId): Self = this.set("StackDriftDetectionId", value.asInstanceOf[js.Any])
+    def setDriftedStackResourceCountUndefined: Self = StObject.set(x, "DriftedStackResourceCount", js.undefined)
     
     @scala.inline
-    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setStackDriftDetectionId(value: StackDriftDetectionId): Self = StObject.set(x, "StackDriftDetectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setStackDriftStatus(value: StackDriftStatus): Self = StObject.set(x, "StackDriftStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectionStatusReason(value: StackDriftDetectionStatusReason): Self = this.set("DetectionStatusReason", value.asInstanceOf[js.Any])
+    def setStackDriftStatusUndefined: Self = StObject.set(x, "StackDriftStatus", js.undefined)
     
     @scala.inline
-    def deleteDetectionStatusReason: Self = this.set("DetectionStatusReason", js.undefined)
+    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftedStackResourceCount(value: BoxedInteger): Self = this.set("DriftedStackResourceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriftedStackResourceCount: Self = this.set("DriftedStackResourceCount", js.undefined)
-    
-    @scala.inline
-    def setStackDriftStatus(value: StackDriftStatus): Self = this.set("StackDriftStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackDriftStatus: Self = this.set("StackDriftStatus", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

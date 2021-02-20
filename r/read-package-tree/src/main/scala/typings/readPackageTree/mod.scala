@@ -3,21 +3,25 @@ package typings.readPackageTree
 import org.scalablytyped.runtime.StringDictionary
 import typings.readPackageTree.readPackageTreeBooleans.`true`
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("read-package-tree", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("read-package-tree", JSImport.Namespace)
+  @js.native
   def apply(root: String, cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]): Unit = js.native
+  @JSImport("read-package-tree", JSImport.Namespace)
+  @js.native
   def apply(
     root: String,
     filterWith: js.Function2[/* node */ Node, /* kidName */ String, js.UndefOr[Unit | Boolean]],
     cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]
   ): Unit = js.native
   
+  @JSImport("read-package-tree", "Link")
   @js.native
   class Link protected () extends Node {
     def this(
@@ -43,8 +47,9 @@ object mod extends js.Object {
     var target: Node = js.native
   }
   
+  @JSImport("read-package-tree", "Node")
   @js.native
-  class Node protected () extends js.Object {
+  class Node protected () extends StObject {
     def this(pkg: js.Any, logical: String, physical: String, er: Null, cache: StringDictionary[Node]) = this()
     def this(pkg: js.Any, logical: String, physical: String, er: Error, cache: StringDictionary[Node]) = this()
     def this(

@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEntityCollectionView extends js.Object {
+trait IEntityCollectionView extends StObject {
   
   var entities: js.Array[IEntityView] = js.native
   
@@ -38,42 +39,30 @@ object IEntityCollectionView {
   }
   
   @scala.inline
-  implicit class IEntityCollectionViewOps[Self <: IEntityCollectionView] (val x: Self) extends AnyVal {
+  implicit class IEntityCollectionViewMutableBuilder[Self <: IEntityCollectionView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[IEntityView]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesVarargs(value: IEntityView*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityName(value: java.lang.String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesVarargs(value: IEntityView*): Self = this.set("entities", js.Array(value :_*))
+    def setMinActiveRowVersion(value: java.lang.String): Self = StObject.set(x, "minActiveRowVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Array[IEntityView]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setMoreRecords(value: scala.Boolean): Self = StObject.set(x, "moreRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityName(value: java.lang.String): Self = this.set("entityName", value.asInstanceOf[js.Any])
+    def setPagingCookie(value: java.lang.String): Self = StObject.set(x, "pagingCookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinActiveRowVersion(value: java.lang.String): Self = this.set("minActiveRowVersion", value.asInstanceOf[js.Any])
+    def setTotalRecordCount(value: scala.Double): Self = StObject.set(x, "totalRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreRecords(value: scala.Boolean): Self = this.set("moreRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagingCookie(value: java.lang.String): Self = this.set("pagingCookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalRecordCount(value: scala.Double): Self = this.set("totalRecordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalRecordCountLimitExceeded(value: scala.Boolean): Self = this.set("totalRecordCountLimitExceeded", value.asInstanceOf[js.Any])
+    def setTotalRecordCountLimitExceeded(value: scala.Boolean): Self = StObject.set(x, "totalRecordCountLimitExceeded", value.asInstanceOf[js.Any])
   }
 }

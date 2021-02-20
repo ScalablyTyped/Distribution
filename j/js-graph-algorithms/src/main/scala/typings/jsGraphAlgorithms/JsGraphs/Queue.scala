@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Queue[T] extends js.Object {
+trait Queue[T] extends StObject {
   
   var N: js.Any = js.native
   
@@ -41,42 +42,30 @@ object Queue {
   }
   
   @scala.inline
-  implicit class QueueOps[Self <: Queue[_], T] (val x: Self with Queue[T]) extends AnyVal {
+  implicit class QueueMutableBuilder[Self <: Queue[_], T] (val x: Self with Queue[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnqueue(value: T => Unit): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirst(value: js.Any): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: js.Any): Self = this.set("N", value.asInstanceOf[js.Any])
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDequeue(value: () => js.UndefOr[T]): Self = this.set("dequeue", js.Any.fromFunction0(value))
+    def setLast(value: js.Any): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnqueue(value: T => Unit): Self = this.set("enqueue", js.Any.fromFunction1(value))
+    def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: js.Any): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLast(value: js.Any): Self = this.set("last", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToArray(value: () => js.Array[T]): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

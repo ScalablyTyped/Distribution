@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1Mod.languageV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Setting each one to true will enable that specific analysis for the input.
   */
 @js.native
-trait SchemaFeatures extends js.Object {
+trait SchemaFeatures extends StObject {
   
   /**
     * Classify the full document into categories.
@@ -45,48 +46,36 @@ object SchemaFeatures {
   }
   
   @scala.inline
-  implicit class SchemaFeaturesOps[Self <: SchemaFeatures] (val x: Self) extends AnyVal {
+  implicit class SchemaFeaturesMutableBuilder[Self <: SchemaFeatures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassifyText(value: Boolean): Self = StObject.set(x, "classifyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassifyTextUndefined: Self = StObject.set(x, "classifyText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtractDocumentSentiment(value: Boolean): Self = StObject.set(x, "extractDocumentSentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifyText(value: Boolean): Self = this.set("classifyText", value.asInstanceOf[js.Any])
+    def setExtractDocumentSentimentUndefined: Self = StObject.set(x, "extractDocumentSentiment", js.undefined)
     
     @scala.inline
-    def deleteClassifyText: Self = this.set("classifyText", js.undefined)
+    def setExtractEntities(value: Boolean): Self = StObject.set(x, "extractEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractDocumentSentiment(value: Boolean): Self = this.set("extractDocumentSentiment", value.asInstanceOf[js.Any])
+    def setExtractEntitiesUndefined: Self = StObject.set(x, "extractEntities", js.undefined)
     
     @scala.inline
-    def deleteExtractDocumentSentiment: Self = this.set("extractDocumentSentiment", js.undefined)
+    def setExtractEntitySentiment(value: Boolean): Self = StObject.set(x, "extractEntitySentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractEntities(value: Boolean): Self = this.set("extractEntities", value.asInstanceOf[js.Any])
+    def setExtractEntitySentimentUndefined: Self = StObject.set(x, "extractEntitySentiment", js.undefined)
     
     @scala.inline
-    def deleteExtractEntities: Self = this.set("extractEntities", js.undefined)
+    def setExtractSyntax(value: Boolean): Self = StObject.set(x, "extractSyntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractEntitySentiment(value: Boolean): Self = this.set("extractEntitySentiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtractEntitySentiment: Self = this.set("extractEntitySentiment", js.undefined)
-    
-    @scala.inline
-    def setExtractSyntax(value: Boolean): Self = this.set("extractSyntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtractSyntax: Self = this.set("extractSyntax", js.undefined)
+    def setExtractSyntaxUndefined: Self = StObject.set(x, "extractSyntax", js.undefined)
   }
 }

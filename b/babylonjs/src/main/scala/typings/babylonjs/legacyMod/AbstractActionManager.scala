@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,27 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class AbstractActionManager ()
   extends typings.babylonjs.indexMod.AbstractActionManager
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "AbstractActionManager")
-@js.native
-object AbstractActionManager extends js.Object {
+object AbstractActionManager {
   
-  /**
-    * Does exist one action manager with at least one pick trigger
-    **/
-  def HasPickTriggers: Boolean = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractActionManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Does exist one action manager that handles actions of a given trigger
     * @param trigger defines the trigger to be tested
     * @return a boolean indicating whether the trigger is handeled by at least one action manager
     **/
+  @JSImport("babylonjs/Legacy/legacy", "AbstractActionManager.HasSpecificTrigger")
+  @js.native
   def HasSpecificTrigger(trigger: Double): Boolean = js.native
   
-  /**
-    * Does exist one action manager with at least one trigger
-    **/
-  def HasTriggers: Boolean = js.native
-  
   /** Gets the list of active triggers */
-  var Triggers: org.scalablytyped.runtime.StringDictionary[Double] = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AbstractActionManager.Triggers")
+  @js.native
+  def Triggers: org.scalablytyped.runtime.StringDictionary[Double] = js.native
+  @scala.inline
+  def Triggers_=(x: org.scalablytyped.runtime.StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Triggers")(x.asInstanceOf[js.Any])
 }

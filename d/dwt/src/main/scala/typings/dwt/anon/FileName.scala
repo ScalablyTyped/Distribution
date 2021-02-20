@@ -1,11 +1,12 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileName extends js.Object {
+trait FileName extends StObject {
   
   /**
     * Specify the name(s) (pattern) of the uploaded files.
@@ -56,60 +57,48 @@ object FileName {
   }
   
   @scala.inline
-  implicit class FileNameOps[Self <: FileName] (val x: Self) extends AnyVal {
+  implicit class FileNameMutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormFields(value: js.Any): Self = StObject.set(x, "formFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setFormFieldsUndefined: Self = StObject.set(x, "formFields", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormFields(value: js.Any): Self = this.set("formFields", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFormFields: Self = this.set("formFields", js.undefined)
+    def setMaxSizeLimit(value: Double): Self = StObject.set(x, "maxSizeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMaxSizeLimitUndefined: Self = StObject.set(x, "maxSizeLimit", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setRemoteName(value: String): Self = StObject.set(x, "remoteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSizeLimit(value: Double): Self = this.set("maxSizeLimit", value.asInstanceOf[js.Any])
+    def setRemoteNameUndefined: Self = StObject.set(x, "remoteName", js.undefined)
     
     @scala.inline
-    def deleteMaxSizeLimit: Self = this.set("maxSizeLimit", js.undefined)
+    def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteName(value: String): Self = this.set("remoteName", value.asInstanceOf[js.Any])
+    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
     @scala.inline
-    def deleteRemoteName: Self = this.set("remoteName", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreads(value: Double): Self = this.set("threads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreads: Self = this.set("threads", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

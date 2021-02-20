@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInValueList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IValueListItem extends js.Object {
+trait IValueListItem extends StObject {
   
   var AutomaticPermissionsForObjects: IAutomaticPermissions = js.native
   
@@ -66,69 +67,57 @@ object IValueListItem {
   }
   
   @scala.inline
-  implicit class IValueListItemOps[Self <: IValueListItem] (val x: Self) extends AnyVal {
+  implicit class IValueListItemMutableBuilder[Self <: IValueListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticPermissionsForObjects(value: IAutomaticPermissions): Self = StObject.set(x, "AutomaticPermissionsForObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IValueListItem): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloneFrom(value: IValueListItem => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutomaticPermissionsForObjects(value: IAutomaticPermissions): Self = this.set("AutomaticPermissionsForObjects", value.asInstanceOf[js.Any])
+    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IValueListItem): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDisplayID(value: String): Self = StObject.set(x, "DisplayID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneFrom(value: IValueListItem => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setDisplayIDAvailable(value: Boolean): Self = StObject.set(x, "DisplayIDAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    def setGetIconAsPNG(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "GetIconAsPNG", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDisplayID(value: String): Self = this.set("DisplayID", value.asInstanceOf[js.Any])
+    def setHasOwner(value: Boolean): Self = StObject.set(x, "HasOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayIDAvailable(value: Boolean): Self = this.set("DisplayIDAvailable", value.asInstanceOf[js.Any])
+    def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIconAsPNG(value: (Double, Double) => js.Array[Double]): Self = this.set("GetIconAsPNG", js.Any.fromFunction2(value))
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasOwner(value: Boolean): Self = this.set("HasOwner", value.asInstanceOf[js.Any])
+    def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasParent(value: Boolean): Self = this.set("HasParent", value.asInstanceOf[js.Any])
+    def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setItemGUID(value: String): Self = StObject.set(x, "ItemGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconVarargs(value: Double*): Self = this.set("Icon", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: js.Array[Double]): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    def setOwnerID(value: Double): Self = StObject.set(x, "OwnerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemGUID(value: String): Self = this.set("ItemGUID", value.asInstanceOf[js.Any])
+    def setParentID(value: Double): Self = StObject.set(x, "ParentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerID(value: Double): Self = this.set("OwnerID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentID(value: Double): Self = this.set("ParentID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueListID(value: MFBuiltInValueList | Double): Self = this.set("ValueListID", value.asInstanceOf[js.Any])
+    def setValueListID(value: MFBuiltInValueList | Double): Self = StObject.set(x, "ValueListID", value.asInstanceOf[js.Any])
   }
 }

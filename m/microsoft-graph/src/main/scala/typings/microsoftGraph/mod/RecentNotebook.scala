@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecentNotebook extends js.Object {
+trait RecentNotebook extends StObject {
   
   // The name of the notebook.
   var displayName: js.UndefOr[NullableOption[String]] = js.native
@@ -35,54 +36,42 @@ object RecentNotebook {
   }
   
   @scala.inline
-  implicit class RecentNotebookOps[Self <: RecentNotebook] (val x: Self) extends AnyVal {
+  implicit class RecentNotebookMutableBuilder[Self <: RecentNotebook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setLastAccessedTime(value: NullableOption[String]): Self = StObject.set(x, "lastAccessedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setLastAccessedTimeNull: Self = StObject.set(x, "lastAccessedTime", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setLastAccessedTimeUndefined: Self = StObject.set(x, "lastAccessedTime", js.undefined)
     
     @scala.inline
-    def setLastAccessedTime(value: NullableOption[String]): Self = this.set("lastAccessedTime", value.asInstanceOf[js.Any])
+    def setLinks(value: NullableOption[RecentNotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastAccessedTime: Self = this.set("lastAccessedTime", js.undefined)
+    def setLinksNull: Self = StObject.set(x, "links", null)
     
     @scala.inline
-    def setLastAccessedTimeNull: Self = this.set("lastAccessedTime", null)
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setLinks(value: NullableOption[RecentNotebookLinks]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setSourceService(value: NullableOption[OnenoteSourceService]): Self = StObject.set(x, "sourceService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setSourceServiceNull: Self = StObject.set(x, "sourceService", null)
     
     @scala.inline
-    def setLinksNull: Self = this.set("links", null)
-    
-    @scala.inline
-    def setSourceService(value: NullableOption[OnenoteSourceService]): Self = this.set("sourceService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceService: Self = this.set("sourceService", js.undefined)
-    
-    @scala.inline
-    def setSourceServiceNull: Self = this.set("sourceService", null)
+    def setSourceServiceUndefined: Self = StObject.set(x, "sourceService", js.undefined)
   }
 }

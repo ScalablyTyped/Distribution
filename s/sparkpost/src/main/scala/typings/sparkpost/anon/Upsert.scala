@@ -6,12 +6,13 @@ import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.SupressionListEntry
 import typings.sparkpost.mod.SupressionSearchParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Upsert extends js.Object {
+trait Upsert extends StObject {
   
   /**
     * Delete a recipient from the list by specifying the recipient’s email address in the URI path.

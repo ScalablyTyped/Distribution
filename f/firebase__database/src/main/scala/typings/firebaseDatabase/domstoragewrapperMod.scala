@@ -1,16 +1,16 @@
 package typings.firebaseDatabase
 
 import typings.std.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/storage/DOMStorageWrapper", JSImport.Namespace)
-@js.native
-object domstoragewrapperMod extends js.Object {
+object domstoragewrapperMod {
   
+  @JSImport("@firebase/database/dist/src/core/storage/DOMStorageWrapper", "DOMStorageWrapper")
   @js.native
-  class DOMStorageWrapper protected () extends js.Object {
+  class DOMStorageWrapper protected () extends StObject {
     /**
       * @param {Storage} domStorage_ The underlying storage object (e.g. localStorage or sessionStorage)
       */

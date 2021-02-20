@@ -6,18 +6,16 @@ import typings.cosmiconfig.typesMod.CosmiconfigResult
 import typings.cosmiconfig.typesMod.ExplorerOptions
 import typings.cosmiconfig.typesMod.ExplorerOptionsSync
 import typings.cosmiconfig.typesMod.LoadedFileContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cosmiconfig/dist/ExplorerBase", JSImport.Namespace)
-@js.native
-object explorerBaseMod extends js.Object {
+object explorerBaseMod {
   
-  def getExtensionDescription(filepath: String): String = js.native
-  
+  @JSImport("cosmiconfig/dist/ExplorerBase", "ExplorerBase")
   @js.native
-  class ExplorerBase[T /* <: ExplorerOptions | ExplorerOptionsSync */] protected () extends js.Object {
+  class ExplorerBase[T /* <: ExplorerOptions | ExplorerOptionsSync */] protected () extends StObject {
     def this(options: T) = this()
     
     def clearCaches(): Unit = js.native
@@ -46,4 +44,8 @@ object explorerBaseMod extends js.Object {
     
     /* protected */ def validateFilePath(filepath: String): Unit = js.native
   }
+  
+  @JSImport("cosmiconfig/dist/ExplorerBase", "getExtensionDescription")
+  @js.native
+  def getExtensionDescription(filepath: String): String = js.native
 }

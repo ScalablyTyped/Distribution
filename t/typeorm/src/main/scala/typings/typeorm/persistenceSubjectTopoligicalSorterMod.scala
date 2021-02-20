@@ -4,16 +4,16 @@ import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.persistenceSubjectMod.Subject
 import typings.typeorm.typeormStrings.delete
 import typings.typeorm.typeormStrings.insert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/persistence/SubjectTopoligicalSorter", JSImport.Namespace)
-@js.native
-object persistenceSubjectTopoligicalSorterMod extends js.Object {
+object persistenceSubjectTopoligicalSorterMod {
   
+  @JSImport("typeorm/persistence/SubjectTopoligicalSorter", "SubjectTopoligicalSorter")
   @js.native
-  class SubjectTopoligicalSorter protected () extends js.Object {
+  class SubjectTopoligicalSorter protected () extends StObject {
     def this(subjects: js.Array[Subject]) = this()
     
     /**

@@ -1,11 +1,12 @@
 package typings.openlayers.mod.olx.source
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileUTFGridOptions extends js.Object {
+trait TileUTFGridOptions extends StObject {
   
   var jsonp: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object TileUTFGridOptions {
   }
   
   @scala.inline
-  implicit class TileUTFGridOptionsOps[Self <: TileUTFGridOptions] (val x: Self) extends AnyVal {
+  implicit class TileUTFGridOptionsMutableBuilder[Self <: TileUTFGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreemptive(value: Boolean): Self = StObject.set(x, "preemptive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonp(value: Boolean): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    def setPreemptiveUndefined: Self = StObject.set(x, "preemptive", js.undefined)
     
     @scala.inline
-    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    def setTileJSON(value: TileJSON): Self = StObject.set(x, "tileJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreemptive(value: Boolean): Self = this.set("preemptive", value.asInstanceOf[js.Any])
+    def setTileJSONUndefined: Self = StObject.set(x, "tileJSON", js.undefined)
     
     @scala.inline
-    def deletePreemptive: Self = this.set("preemptive", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileJSON(value: TileJSON): Self = this.set("tileJSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileJSON: Self = this.set("tileJSON", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

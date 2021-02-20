@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Content")
-@js.native
-object Content extends js.Object {
+object Content {
   
   /**
     * An enum for mime types that can be served from a script.
     */
+  @JSGlobal("GoogleAppsScript.Content.MimeType")
   @js.native
-  object MimeType extends js.Object {
+  object MimeType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Content.MimeType with Double] = js.native

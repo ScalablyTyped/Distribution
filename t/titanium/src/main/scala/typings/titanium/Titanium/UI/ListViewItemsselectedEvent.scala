@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.SelectedItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object ListViewItemsselectedEvent {
   }
   
   @scala.inline
-  implicit class ListViewItemsselectedEventOps[Self <: ListViewItemsselectedEvent] (val x: Self) extends AnyVal {
+  implicit class ListViewItemsselectedEventMutableBuilder[Self <: ListViewItemsselectedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelectedItems(value: js.Array[SelectedItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedItemsVarargs(value: SelectedItem*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSelectedItemsVarargs(value: SelectedItem*): Self = this.set("selectedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedItems(value: js.Array[SelectedItem]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartingItem(value: SelectedItem): Self = this.set("startingItem", value.asInstanceOf[js.Any])
+    def setStartingItem(value: SelectedItem): Self = StObject.set(x, "startingItem", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,39 +66,27 @@ object ConstructionSite {
   }
   
   @scala.inline
-  implicit class ConstructionSiteOps[Self <: ConstructionSite[_], T /* <: BuildableStructureConstant */] (val x: Self with ConstructionSite[T]) extends AnyVal {
+  implicit class ConstructionSiteMutableBuilder[Self <: ConstructionSite[_], T /* <: BuildableStructureConstant */] (val x: Self with ConstructionSite[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Id[ConstructionSite[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id[ConstructionSite[T]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMy(value: Boolean): Self = this.set("my", value.asInstanceOf[js.Any])
+    def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRemove(value: () => Double): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgressTotal(value: Double): Self = this.set("progressTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: () => Double): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStructureType(value: T): Self = this.set("structureType", value.asInstanceOf[js.Any])
+    def setStructureType(value: T): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
   }
 }

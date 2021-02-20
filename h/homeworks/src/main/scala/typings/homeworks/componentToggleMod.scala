@@ -6,14 +6,14 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.Renderer2
 import typings.angularForms.mod.ControlValueAccessor
 import typings.homeworks.managerMod.HomeworksManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/toggle/component.toggle", JSImport.Namespace)
-@js.native
-object componentToggleMod extends js.Object {
+object componentToggleMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/toggle/component.toggle", "WorksToggle")
   @js.native
   class WorksToggle protected ()
     extends HomeworksManager

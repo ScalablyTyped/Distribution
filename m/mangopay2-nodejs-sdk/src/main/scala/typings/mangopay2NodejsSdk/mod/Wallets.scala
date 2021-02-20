@@ -5,13 +5,14 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionData
 import typings.mangopay2NodejsSdk.mod.wallet.CreateWallet
 import typings.mangopay2NodejsSdk.mod.wallet.UpdateWallet
 import typings.mangopay2NodejsSdk.mod.wallet.WalletData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Wallets")
 @js.native
-class Wallets () extends js.Object {
+class Wallets () extends StObject {
   
   def create(data: Wallet): js.Promise[WalletData] = js.native
   def create(data: Wallet, callback: js.Function1[/* data */ WalletData, Unit]): Unit = js.native

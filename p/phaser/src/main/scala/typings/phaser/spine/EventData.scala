@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventData extends js.Object {
+trait EventData extends StObject {
   
   var audioPath: String = js.native
   
@@ -38,39 +39,27 @@ object EventData {
   }
   
   @scala.inline
-  implicit class EventDataOps[Self <: EventData] (val x: Self) extends AnyVal {
+  implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioPath(value: String): Self = StObject.set(x, "audioPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioPath(value: String): Self = this.set("audioPath", value.asInstanceOf[js.Any])
+    def setIntValue(value: Double): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalance(value: Double): Self = this.set("balance", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatValue(value: Double): Self = this.set("floatValue", value.asInstanceOf[js.Any])
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntValue(value: Double): Self = this.set("intValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEventProvider extends js.Object {
+trait IEventProvider extends StObject {
   
   def assignEvents(): Unit = js.native
   
@@ -50,51 +51,39 @@ object IEventProvider {
   }
   
   @scala.inline
-  implicit class IEventProviderOps[Self <: IEventProvider] (val x: Self) extends AnyVal {
+  implicit class IEventProviderMutableBuilder[Self <: IEventProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignEvents(value: () => Unit): Self = StObject.set(x, "assignEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignGridEventHandlers(value: () => Unit): Self = StObject.set(x, "assignGridEventHandlers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColToMove(value: IColumn): Self = StObject.set(x, "colToMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignEvents(value: () => Unit): Self = this.set("assignEvents", js.Any.fromFunction0(value))
+    def setDragOver(value: js.Any => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAssignGridEventHandlers(value: () => Unit): Self = this.set("assignGridEventHandlers", js.Any.fromFunction0(value))
+    def setDragStart(value: js.Any => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColToMove(value: IColumn): Self = this.set("colToMove", value.asInstanceOf[js.Any])
+    def setGroupToMove(value: js.Any): Self = StObject.set(x, "groupToMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragOver(value: js.Any => Unit): Self = this.set("dragOver", js.Any.fromFunction1(value))
+    def setOnGroupDrop(value: js.Any => Unit): Self = StObject.set(x, "onGroupDrop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragStart(value: js.Any => Unit): Self = this.set("dragStart", js.Any.fromFunction1(value))
+    def setOnGroupMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onGroupMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroupToMove(value: js.Any): Self = this.set("groupToMove", value.asInstanceOf[js.Any])
+    def setOnHeaderDrop(value: js.Any => Unit): Self = StObject.set(x, "onHeaderDrop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGroupDrop(value: js.Any => Unit): Self = this.set("onGroupDrop", js.Any.fromFunction1(value))
+    def setOnHeaderMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onHeaderMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGroupMouseDown(value: js.Any => Unit): Self = this.set("onGroupMouseDown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnHeaderDrop(value: js.Any => Unit): Self = this.set("onHeaderDrop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnHeaderMouseDown(value: js.Any => Unit): Self = this.set("onHeaderMouseDown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDraggables(value: () => Unit): Self = this.set("setDraggables", js.Any.fromFunction0(value))
+    def setSetDraggables(value: () => Unit): Self = StObject.set(x, "setDraggables", js.Any.fromFunction0(value))
   }
 }

@@ -1,16 +1,16 @@
 package typings.jestCucumber
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-cucumber/dist/src/reporting/report-event-generation/FeatureFileEventGenerator", JSImport.Namespace)
-@js.native
-object featureFileEventGeneratorMod extends js.Object {
+object featureFileEventGeneratorMod {
   
+  @JSImport("jest-cucumber/dist/src/reporting/report-event-generation/FeatureFileEventGenerator", "FeatureFileEventGenerator")
   @js.native
-  class FeatureFileEventGenerator protected () extends js.Object {
+  class FeatureFileEventGenerator protected () extends StObject {
     def this(eventBroadcaster: EventEmitter) = this()
     
     var eventBroadcaster: js.Any = js.native

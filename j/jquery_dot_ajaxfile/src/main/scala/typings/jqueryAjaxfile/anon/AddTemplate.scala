@@ -3,12 +3,13 @@ package typings.jqueryAjaxfile.anon
 import typings.jqueryAjaxfile.KnockoutBindingContext
 import typings.jqueryAjaxfile.Object
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddTemplate extends js.Object {
+trait AddTemplate extends StObject {
   
   def addTemplate(templateName: String, templateMarkup: String): Unit = js.native
   
@@ -29,27 +30,15 @@ object AddTemplate {
   }
   
   @scala.inline
-  implicit class AddTemplateOps[Self <: AddTemplate] (val x: Self) extends AnyVal {
+  implicit class AddTemplateMutableBuilder[Self <: AddTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTemplate(value: (String, String) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateJavaScriptEvaluatorBlock(value: String => String): Self = StObject.set(x, "createJavaScriptEvaluatorBlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddTemplate(value: (String, String) => Unit): Self = this.set("addTemplate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreateJavaScriptEvaluatorBlock(value: String => String): Self = this.set("createJavaScriptEvaluatorBlock", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRenderTemplateSource(value: (Object, KnockoutBindingContext, Object) => js.Array[Node]): Self = this.set("renderTemplateSource", js.Any.fromFunction3(value))
+    def setRenderTemplateSource(value: (Object, KnockoutBindingContext, Object) => js.Array[Node]): Self = StObject.set(x, "renderTemplateSource", js.Any.fromFunction3(value))
   }
 }

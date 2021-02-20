@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.data
 
 import typings.kendoUi.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,33 +26,21 @@ object DataSourceErrorEvent {
   }
   
   @scala.inline
-  implicit class DataSourceErrorEventOps[Self <: DataSourceErrorEvent] (val x: Self) extends AnyVal {
+  implicit class DataSourceErrorEventMutableBuilder[Self <: DataSourceErrorEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorThrown(value: js.Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def setErrorThrown(value: js.Any): Self = this.set("errorThrown", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXhr(value: JQueryXHR): Self = this.set("xhr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrors(value: js.Any): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
   }
 }

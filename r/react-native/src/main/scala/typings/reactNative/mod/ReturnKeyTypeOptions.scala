@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.yahoo
   - typings.reactNative.reactNativeStrings.`emergency-call`
 */
-trait ReturnKeyTypeOptions extends js.Object
+trait ReturnKeyTypeOptions extends StObject
 object ReturnKeyTypeOptions {
   
   @scala.inline

@@ -2,12 +2,13 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionDailyStat extends js.Object {
+trait ExtensionDailyStat extends StObject {
   
   /**
     * Stores the event counts
@@ -38,30 +39,18 @@ object ExtensionDailyStat {
   }
   
   @scala.inline
-  implicit class ExtensionDailyStatOps[Self <: ExtensionDailyStat] (val x: Self) extends AnyVal {
+  implicit class ExtensionDailyStatMutableBuilder[Self <: ExtensionDailyStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCounts(value: EventCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendedStats(value: StringDictionary[js.Any]): Self = StObject.set(x, "extendedStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatisticDate(value: Date): Self = StObject.set(x, "statisticDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounts(value: EventCounts): Self = this.set("counts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtendedStats(value: StringDictionary[js.Any]): Self = this.set("extendedStats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatisticDate(value: Date): Self = this.set("statisticDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

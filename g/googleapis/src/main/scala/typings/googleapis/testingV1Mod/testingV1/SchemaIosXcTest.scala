@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the binaries needed to run the tests.
   */
 @js.native
-trait SchemaIosXcTest extends js.Object {
+trait SchemaIosXcTest extends StObject {
   
   /**
     * Output only. The bundle id for the application under test.
@@ -51,42 +52,30 @@ object SchemaIosXcTest {
   }
   
   @scala.inline
-  implicit class SchemaIosXcTestOps[Self <: SchemaIosXcTest] (val x: Self) extends AnyVal {
+  implicit class SchemaIosXcTestMutableBuilder[Self <: SchemaIosXcTest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestsZip(value: SchemaFileReference): Self = StObject.set(x, "testsZip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppBundleId(value: String): Self = this.set("appBundleId", value.asInstanceOf[js.Any])
+    def setTestsZipUndefined: Self = StObject.set(x, "testsZip", js.undefined)
     
     @scala.inline
-    def deleteAppBundleId: Self = this.set("appBundleId", js.undefined)
+    def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestsZip(value: SchemaFileReference): Self = this.set("testsZip", value.asInstanceOf[js.Any])
+    def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
     
     @scala.inline
-    def deleteTestsZip: Self = this.set("testsZip", js.undefined)
+    def setXctestrun(value: SchemaFileReference): Self = StObject.set(x, "xctestrun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXcodeVersion(value: String): Self = this.set("xcodeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXcodeVersion: Self = this.set("xcodeVersion", js.undefined)
-    
-    @scala.inline
-    def setXctestrun(value: SchemaFileReference): Self = this.set("xctestrun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXctestrun: Self = this.set("xctestrun", js.undefined)
+    def setXctestrunUndefined: Self = StObject.set(x, "xctestrun", js.undefined)
   }
 }

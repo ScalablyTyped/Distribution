@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecCreateOptions extends js.Object {
+trait ExecCreateOptions extends StObject {
   
   var AttachStderr: js.UndefOr[Boolean] = js.native
   
@@ -36,84 +37,72 @@ object ExecCreateOptions {
   }
   
   @scala.inline
-  implicit class ExecCreateOptionsOps[Self <: ExecCreateOptions] (val x: Self) extends AnyVal {
+  implicit class ExecCreateOptionsMutableBuilder[Self <: ExecCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachStderrUndefined: Self = StObject.set(x, "AttachStderr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachStdin(value: Boolean): Self = StObject.set(x, "AttachStdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachStderr(value: Boolean): Self = this.set("AttachStderr", value.asInstanceOf[js.Any])
+    def setAttachStdinUndefined: Self = StObject.set(x, "AttachStdin", js.undefined)
     
     @scala.inline
-    def deleteAttachStderr: Self = this.set("AttachStderr", js.undefined)
+    def setAttachStdout(value: Boolean): Self = StObject.set(x, "AttachStdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachStdin(value: Boolean): Self = this.set("AttachStdin", value.asInstanceOf[js.Any])
+    def setAttachStdoutUndefined: Self = StObject.set(x, "AttachStdout", js.undefined)
     
     @scala.inline
-    def deleteAttachStdin: Self = this.set("AttachStdin", js.undefined)
+    def setCmd(value: js.Array[String]): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachStdout(value: Boolean): Self = this.set("AttachStdout", value.asInstanceOf[js.Any])
+    def setCmdUndefined: Self = StObject.set(x, "Cmd", js.undefined)
     
     @scala.inline
-    def deleteAttachStdout: Self = this.set("AttachStdout", js.undefined)
+    def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value :_*))
     
     @scala.inline
-    def setCmdVarargs(value: String*): Self = this.set("Cmd", js.Array(value :_*))
+    def setDetachKeys(value: String): Self = StObject.set(x, "DetachKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: js.Array[String]): Self = this.set("Cmd", value.asInstanceOf[js.Any])
+    def setDetachKeysUndefined: Self = StObject.set(x, "DetachKeys", js.undefined)
     
     @scala.inline
-    def deleteCmd: Self = this.set("Cmd", js.undefined)
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachKeys(value: String): Self = this.set("DetachKeys", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
     @scala.inline
-    def deleteDetachKeys: Self = this.set("DetachKeys", js.undefined)
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("Env", js.Array(value :_*))
+    def setPrivileged(value: Boolean): Self = StObject.set(x, "Privileged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("Env", value.asInstanceOf[js.Any])
+    def setPrivilegedUndefined: Self = StObject.set(x, "Privileged", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("Env", js.undefined)
+    def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivileged(value: Boolean): Self = this.set("Privileged", value.asInstanceOf[js.Any])
+    def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
     
     @scala.inline
-    def deletePrivileged: Self = this.set("Privileged", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTty(value: Boolean): Self = this.set("Tty", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
     
     @scala.inline
-    def deleteTty: Self = this.set("Tty", js.undefined)
+    def setWorkingDir(value: String): Self = StObject.set(x, "WorkingDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
-    
-    @scala.inline
-    def setWorkingDir(value: String): Self = this.set("WorkingDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingDir: Self = this.set("WorkingDir", js.undefined)
+    def setWorkingDirUndefined: Self = StObject.set(x, "WorkingDir", js.undefined)
   }
 }

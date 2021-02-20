@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleRangeLayerProperties extends js.Object {
+trait ScaleRangeLayerProperties extends StObject {
   
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
@@ -30,30 +31,18 @@ object ScaleRangeLayerProperties {
   }
   
   @scala.inline
-  implicit class ScaleRangeLayerPropertiesOps[Self <: ScaleRangeLayerProperties] (val x: Self) extends AnyVal {
+  implicit class ScaleRangeLayerPropertiesMutableBuilder[Self <: ScaleRangeLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxScale: Self = this.set("maxScale", js.undefined)
-    
-    @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinScale: Self = this.set("minScale", js.undefined)
+    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
   }
 }

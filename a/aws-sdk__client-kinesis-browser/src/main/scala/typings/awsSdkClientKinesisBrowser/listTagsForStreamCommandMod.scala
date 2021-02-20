@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesListTagsForStreamInputMod.ListTag
 import typings.awsSdkClientKinesisBrowser.typesListTagsForStreamOutputMod.ListTagsForStreamOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/ListTagsForStreamCommand", JSImport.Namespace)
-@js.native
-object listTagsForStreamCommandMod extends js.Object {
+object listTagsForStreamCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/ListTagsForStreamCommand", "ListTagsForStreamCommand")
   @js.native
   class ListTagsForStreamCommand protected () extends Command[
           InputTypesUnion, 

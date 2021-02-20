@@ -4,13 +4,12 @@ import typings.lasso.dependenciesMod.Bundle
 import typings.lasso.lassoContextMod.default
 import typings.lasso.lassoMod.LassoConfig
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lasso/lib/writers/Writer", JSImport.Namespace)
-@js.native
-object writerMod extends js.Object {
+object writerMod {
   
   @js.native
   trait Writer extends EventEmitter {

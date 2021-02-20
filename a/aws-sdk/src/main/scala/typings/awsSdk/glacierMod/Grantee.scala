@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Grantee extends js.Object {
+trait Grantee extends StObject {
   
   /**
     * Screen name of the grantee.
@@ -41,45 +42,33 @@ object Grantee {
   }
   
   @scala.inline
-  implicit class GranteeOps[Self <: Grantee] (val x: Self) extends AnyVal {
+  implicit class GranteeMutableBuilder[Self <: Grantee] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
     
     @scala.inline
-    def setEmailAddress(value: String): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteID: Self = this.set("ID", js.undefined)
-    
-    @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteURI: Self = this.set("URI", js.undefined)
+    def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateExperimentResponse extends js.Object {
+trait CreateExperimentResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the experiment.
@@ -21,24 +22,12 @@ object CreateExperimentResponse {
   }
   
   @scala.inline
-  implicit class CreateExperimentResponseOps[Self <: CreateExperimentResponse] (val x: Self) extends AnyVal {
+  implicit class CreateExperimentResponseMutableBuilder[Self <: CreateExperimentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExperimentArn(value: ExperimentArn): Self = StObject.set(x, "ExperimentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExperimentArn(value: ExperimentArn): Self = this.set("ExperimentArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExperimentArn: Self = this.set("ExperimentArn", js.undefined)
+    def setExperimentArnUndefined: Self = StObject.set(x, "ExperimentArn", js.undefined)
   }
 }

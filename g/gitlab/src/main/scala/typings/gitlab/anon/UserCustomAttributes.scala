@@ -7,12 +7,13 @@ import typings.gitlab.servicesMod.UserGPGKeys
 import typings.gitlab.servicesMod.UserImpersonationTokens
 import typings.gitlab.servicesMod.UserKeys
 import typings.gitlab.servicesMod.Users
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserCustomAttributes extends js.Object {
+trait UserCustomAttributes extends StObject {
   
   var UserCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes] = js.native
   
@@ -42,38 +43,26 @@ object UserCustomAttributes {
   }
   
   @scala.inline
-  implicit class UserCustomAttributesOps[Self <: UserCustomAttributes] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class UserCustomAttributesMutableBuilder[Self <: UserCustomAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setUserCustomAttributes(
       value: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.UserCustomAttributes]
-    ): Self = this.set("UserCustomAttributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "UserCustomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserEmails(value: Instantiable0[typings.gitlab.servicesMod.UserEmails]): Self = this.set("UserEmails", value.asInstanceOf[js.Any])
+    def setUserEmails(value: Instantiable0[typings.gitlab.servicesMod.UserEmails]): Self = StObject.set(x, "UserEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserGPGKeys(value: Instantiable0[UserGPGKeys]): Self = this.set("UserGPGKeys", value.asInstanceOf[js.Any])
+    def setUserGPGKeys(value: Instantiable0[UserGPGKeys]): Self = StObject.set(x, "UserGPGKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserImpersonationTokens(value: Instantiable0[UserImpersonationTokens]): Self = this.set("UserImpersonationTokens", value.asInstanceOf[js.Any])
+    def setUserImpersonationTokens(value: Instantiable0[UserImpersonationTokens]): Self = StObject.set(x, "UserImpersonationTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserKeys(value: Instantiable0[UserKeys]): Self = this.set("UserKeys", value.asInstanceOf[js.Any])
+    def setUserKeys(value: Instantiable0[UserKeys]): Self = StObject.set(x, "UserKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsers(value: Instantiable0[Users]): Self = this.set("Users", value.asInstanceOf[js.Any])
+    def setUsers(value: Instantiable0[Users]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
   }
 }

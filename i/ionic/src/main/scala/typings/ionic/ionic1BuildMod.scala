@@ -4,14 +4,14 @@ import typings.ionic.definitionsMod.Ionic1BuildOptions
 import typings.ionic.ionic1Mod.Ionic1Project
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/project/ionic1/build", JSImport.Namespace)
-@js.native
-object ionic1BuildMod extends js.Object {
+object ionic1BuildMod {
   
+  @JSImport("ionic/lib/project/ionic1/build", "Ionic1BuildRunner")
   @js.native
   class Ionic1BuildRunner protected () extends BuildRunner[Ionic1BuildOptions] {
     def this(e: Ionic1BuildRunnerDeps) = this()

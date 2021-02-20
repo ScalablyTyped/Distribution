@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,48 +40,36 @@ object AngularServeOptions {
   }
   
   @scala.inline
-  implicit class AngularServeOptionsOps[Self <: AngularServeOptions] (val x: Self) extends AnyVal {
+  implicit class AngularServeOptionsMutableBuilder[Self <: AngularServeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setConsolelogsPort(value: Double): Self = StObject.set(x, "consolelogsPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setConsolelogsPortUndefined: Self = StObject.set(x, "consolelogsPort", js.undefined)
     
     @scala.inline
-    def setConsolelogs(value: Boolean): Self = this.set("consolelogs", value.asInstanceOf[js.Any])
+    def setConsolelogsUndefined: Self = StObject.set(x, "consolelogs", js.undefined)
     
     @scala.inline
-    def deleteConsolelogs: Self = this.set("consolelogs", js.undefined)
+    def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsolelogsPort(value: Double): Self = this.set("consolelogsPort", value.asInstanceOf[js.Any])
+    def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
     
     @scala.inline
-    def deleteConsolelogsPort: Self = this.set("consolelogsPort", js.undefined)
+    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcemaps(value: Boolean): Self = this.set("sourcemaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcemaps: Self = this.set("sourcemaps", js.undefined)
-    
-    @scala.inline
-    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

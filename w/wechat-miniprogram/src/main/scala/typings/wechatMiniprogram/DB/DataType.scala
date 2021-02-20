@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wechatMiniprogram.wechatMiniprogramStrings.remove
   - typings.wechatMiniprogram.wechatMiniprogramStrings.limit
 */
-trait DataType extends js.Object
+trait DataType extends StObject
 object DataType {
   
   @scala.inline

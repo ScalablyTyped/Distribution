@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsLambdaFunctionDetails extends js.Object {
+trait AwsLambdaFunctionDetails extends StObject {
   
   /**
     * An AwsLambdaFunctionCode object.
@@ -106,129 +107,117 @@ object AwsLambdaFunctionDetails {
   }
   
   @scala.inline
-  implicit class AwsLambdaFunctionDetailsOps[Self <: AwsLambdaFunctionDetails] (val x: Self) extends AnyVal {
+  implicit class AwsLambdaFunctionDetailsMutableBuilder[Self <: AwsLambdaFunctionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: AwsLambdaFunctionCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeSha256(value: NonEmptyString): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
     
     @scala.inline
-    def setCode(value: AwsLambdaFunctionCode): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
+    def setDeadLetterConfig(value: AwsLambdaFunctionDeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSha256(value: NonEmptyString): Self = this.set("CodeSha256", value.asInstanceOf[js.Any])
+    def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
     
     @scala.inline
-    def deleteCodeSha256: Self = this.set("CodeSha256", js.undefined)
+    def setEnvironment(value: AwsLambdaFunctionEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterConfig(value: AwsLambdaFunctionDeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    def setFunctionName(value: NonEmptyString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: AwsLambdaFunctionEnvironment): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setHandler(value: NonEmptyString): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: NonEmptyString): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    def setKmsKeyArn(value: NonEmptyString): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: NonEmptyString): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("Handler", js.undefined)
+    def setLastModified(value: NonEmptyString): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyArn(value: NonEmptyString): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    def setLayers(value: AwsLambdaFunctionLayerList): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: NonEmptyString): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setLayersVarargs(value: AwsLambdaFunctionLayer*): Self = StObject.set(x, "Layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: AwsLambdaFunctionLayer*): Self = this.set("Layers", js.Array(value :_*))
+    def setMasterArn(value: NonEmptyString): Self = StObject.set(x, "MasterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: AwsLambdaFunctionLayerList): Self = this.set("Layers", value.asInstanceOf[js.Any])
+    def setMasterArnUndefined: Self = StObject.set(x, "MasterArn", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("Layers", js.undefined)
+    def setMemorySize(value: Integer): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterArn(value: NonEmptyString): Self = this.set("MasterArn", value.asInstanceOf[js.Any])
+    def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
     
     @scala.inline
-    def deleteMasterArn: Self = this.set("MasterArn", js.undefined)
+    def setRevisionId(value: NonEmptyString): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorySize(value: Integer): Self = this.set("MemorySize", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
     @scala.inline
-    def deleteMemorySize: Self = this.set("MemorySize", js.undefined)
+    def setRole(value: NonEmptyString): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: NonEmptyString): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    def setRuntime(value: NonEmptyString): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: NonEmptyString): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setTimeout(value: Integer): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: NonEmptyString): Self = this.set("Runtime", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteRuntime: Self = this.set("Runtime", js.undefined)
+    def setTracingConfig(value: AwsLambdaFunctionTracingConfig): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Integer): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracingConfig(value: AwsLambdaFunctionTracingConfig): Self = this.set("TracingConfig", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     
     @scala.inline
-    def deleteTracingConfig: Self = this.set("TracingConfig", js.undefined)
+    def setVpcConfig(value: AwsLambdaFunctionVpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: NonEmptyString): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: AwsLambdaFunctionVpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

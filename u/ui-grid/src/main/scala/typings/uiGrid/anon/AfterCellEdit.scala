@@ -4,12 +4,13 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.edit.afterCellEditHandler
 import typings.uiGrid.mod.edit.beginCellEditHandler
 import typings.uiGrid.mod.edit.cancelCellEditHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AfterCellEdit[TEntity] extends js.Object {
+trait AfterCellEdit[TEntity] extends StObject {
   
   /**
     * raised when cell editing is complete
@@ -45,27 +46,15 @@ object AfterCellEdit {
   }
   
   @scala.inline
-  implicit class AfterCellEditOps[Self <: AfterCellEdit[_], TEntity] (val x: Self with AfterCellEdit[TEntity]) extends AnyVal {
+  implicit class AfterCellEditMutableBuilder[Self <: AfterCellEdit[_], TEntity] (val x: Self with AfterCellEdit[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCellEdit(value: (IScope, afterCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "afterCellEdit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginCellEdit(value: (IScope, beginCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "beginCellEdit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAfterCellEdit(value: (IScope, afterCellEditHandler[TEntity]) => Unit): Self = this.set("afterCellEdit", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setBeginCellEdit(value: (IScope, beginCellEditHandler[TEntity]) => Unit): Self = this.set("beginCellEdit", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCancelCellEdit(value: (IScope, cancelCellEditHandler[TEntity]) => Unit): Self = this.set("cancelCellEdit", js.Any.fromFunction2(value))
+    def setCancelCellEdit(value: (IScope, cancelCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "cancelCellEdit", js.Any.fromFunction2(value))
   }
 }

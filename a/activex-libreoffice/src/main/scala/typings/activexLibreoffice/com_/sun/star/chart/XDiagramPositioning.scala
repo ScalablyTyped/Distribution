@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,45 +74,33 @@ object XDiagramPositioning {
   }
   
   @scala.inline
-  implicit class XDiagramPositioningOps[Self <: XDiagramPositioning] (val x: Self) extends AnyVal {
+  implicit class XDiagramPositioningMutableBuilder[Self <: XDiagramPositioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculateDiagramPositionExcludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionExcludingAxes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateDiagramPositionIncludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionIncludingAxes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalculateDiagramPositionIncludingAxesAndAxisTitles(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateDiagramPositionExcludingAxes(value: () => Rectangle): Self = this.set("calculateDiagramPositionExcludingAxes", js.Any.fromFunction0(value))
+    def setIsAutomaticDiagramPositioning(value: () => Boolean): Self = StObject.set(x, "isAutomaticDiagramPositioning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateDiagramPositionIncludingAxes(value: () => Rectangle): Self = this.set("calculateDiagramPositionIncludingAxes", js.Any.fromFunction0(value))
+    def setIsExcludingDiagramPositioning(value: () => Boolean): Self = StObject.set(x, "isExcludingDiagramPositioning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateDiagramPositionIncludingAxesAndAxisTitles(value: () => Rectangle): Self = this.set("calculateDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction0(value))
+    def setSetAutomaticDiagramPositioning(value: () => Unit): Self = StObject.set(x, "setAutomaticDiagramPositioning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAutomaticDiagramPositioning(value: () => Boolean): Self = this.set("isAutomaticDiagramPositioning", js.Any.fromFunction0(value))
+    def setSetDiagramPositionExcludingAxes(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionExcludingAxes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsExcludingDiagramPositioning(value: () => Boolean): Self = this.set("isExcludingDiagramPositioning", js.Any.fromFunction0(value))
+    def setSetDiagramPositionIncludingAxes(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionIncludingAxes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutomaticDiagramPositioning(value: () => Unit): Self = this.set("setAutomaticDiagramPositioning", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDiagramPositionExcludingAxes(value: Rectangle => Unit): Self = this.set("setDiagramPositionExcludingAxes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDiagramPositionIncludingAxes(value: Rectangle => Unit): Self = this.set("setDiagramPositionIncludingAxes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDiagramPositionIncludingAxesAndAxisTitles(value: Rectangle => Unit): Self = this.set("setDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction1(value))
+    def setSetDiagramPositionIncludingAxesAndAxisTitles(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction1(value))
   }
 }

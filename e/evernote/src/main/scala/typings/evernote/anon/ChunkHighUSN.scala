@@ -6,12 +6,13 @@ import typings.evernote.mod.Types.Resource
 import typings.evernote.mod.Types.SavedSearch
 import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChunkHighUSN extends js.Object {
+trait ChunkHighUSN extends StObject {
   
   var chunkHighUSN: js.UndefOr[Double] = js.native
   
@@ -50,135 +51,123 @@ object ChunkHighUSN {
   }
   
   @scala.inline
-  implicit class ChunkHighUSNOps[Self <: ChunkHighUSN] (val x: Self) extends AnyVal {
+  implicit class ChunkHighUSNMutableBuilder[Self <: ChunkHighUSN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkHighUSN(value: Double): Self = StObject.set(x, "chunkHighUSN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkHighUSNUndefined: Self = StObject.set(x, "chunkHighUSN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTime(value: Timestamp): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkHighUSN(value: Double): Self = this.set("chunkHighUSN", value.asInstanceOf[js.Any])
+    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
     @scala.inline
-    def deleteChunkHighUSN: Self = this.set("chunkHighUSN", js.undefined)
+    def setExpungedLinkedNotebooks(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedLinkedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Timestamp): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setExpungedLinkedNotebooksUndefined: Self = StObject.set(x, "expungedLinkedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteCurrentTime: Self = this.set("currentTime", js.undefined)
+    def setExpungedLinkedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedLinkedNotebooks", js.Array(value :_*))
     
     @scala.inline
-    def setExpungedLinkedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = this.set("expungedLinkedNotebooks", js.Array(value :_*))
+    def setExpungedNotebooks(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungedLinkedNotebooks(value: js.Array[typings.evernote.mod.Types.Guid]): Self = this.set("expungedLinkedNotebooks", value.asInstanceOf[js.Any])
+    def setExpungedNotebooksUndefined: Self = StObject.set(x, "expungedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteExpungedLinkedNotebooks: Self = this.set("expungedLinkedNotebooks", js.undefined)
+    def setExpungedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedNotebooks", js.Array(value :_*))
     
     @scala.inline
-    def setExpungedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = this.set("expungedNotebooks", js.Array(value :_*))
+    def setExpungedNotes(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungedNotebooks(value: js.Array[typings.evernote.mod.Types.Guid]): Self = this.set("expungedNotebooks", value.asInstanceOf[js.Any])
+    def setExpungedNotesUndefined: Self = StObject.set(x, "expungedNotes", js.undefined)
     
     @scala.inline
-    def deleteExpungedNotebooks: Self = this.set("expungedNotebooks", js.undefined)
+    def setExpungedNotesVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedNotes", js.Array(value :_*))
     
     @scala.inline
-    def setExpungedNotesVarargs(value: typings.evernote.mod.Types.Guid*): Self = this.set("expungedNotes", js.Array(value :_*))
+    def setExpungedSearches(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedSearches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungedNotes(value: js.Array[typings.evernote.mod.Types.Guid]): Self = this.set("expungedNotes", value.asInstanceOf[js.Any])
+    def setExpungedSearchesUndefined: Self = StObject.set(x, "expungedSearches", js.undefined)
     
     @scala.inline
-    def deleteExpungedNotes: Self = this.set("expungedNotes", js.undefined)
+    def setExpungedSearchesVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedSearches", js.Array(value :_*))
     
     @scala.inline
-    def setExpungedSearchesVarargs(value: typings.evernote.mod.Types.Guid*): Self = this.set("expungedSearches", js.Array(value :_*))
+    def setExpungedTags(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungedSearches(value: js.Array[typings.evernote.mod.Types.Guid]): Self = this.set("expungedSearches", value.asInstanceOf[js.Any])
+    def setExpungedTagsUndefined: Self = StObject.set(x, "expungedTags", js.undefined)
     
     @scala.inline
-    def deleteExpungedSearches: Self = this.set("expungedSearches", js.undefined)
+    def setExpungedTagsVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedTags", js.Array(value :_*))
     
     @scala.inline
-    def setExpungedTagsVarargs(value: typings.evernote.mod.Types.Guid*): Self = this.set("expungedTags", js.Array(value :_*))
+    def setLinkedNotebooks(value: js.Array[LinkedNotebook]): Self = StObject.set(x, "linkedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungedTags(value: js.Array[typings.evernote.mod.Types.Guid]): Self = this.set("expungedTags", value.asInstanceOf[js.Any])
+    def setLinkedNotebooksUndefined: Self = StObject.set(x, "linkedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteExpungedTags: Self = this.set("expungedTags", js.undefined)
+    def setLinkedNotebooksVarargs(value: LinkedNotebook*): Self = StObject.set(x, "linkedNotebooks", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedNotebooksVarargs(value: LinkedNotebook*): Self = this.set("linkedNotebooks", js.Array(value :_*))
+    def setNotebooks(value: js.Array[Notebook]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedNotebooks(value: js.Array[LinkedNotebook]): Self = this.set("linkedNotebooks", value.asInstanceOf[js.Any])
+    def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
     @scala.inline
-    def deleteLinkedNotebooks: Self = this.set("linkedNotebooks", js.undefined)
+    def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
     
     @scala.inline
-    def setNotebooksVarargs(value: Notebook*): Self = this.set("notebooks", js.Array(value :_*))
+    def setNotes(value: js.Array[typings.evernote.mod.Types.Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebooks(value: js.Array[Notebook]): Self = this.set("notebooks", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteNotebooks: Self = this.set("notebooks", js.undefined)
+    def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
     @scala.inline
-    def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = this.set("notes", js.Array(value :_*))
+    def setResources(value: js.Array[Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: js.Array[typings.evernote.mod.Types.Note]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: Resource*): Self = this.set("resources", js.Array(value :_*))
+    def setSearches(value: js.Array[SavedSearch]): Self = StObject.set(x, "searches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[Resource]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setSearchesUndefined: Self = StObject.set(x, "searches", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setSearchesVarargs(value: SavedSearch*): Self = StObject.set(x, "searches", js.Array(value :_*))
     
     @scala.inline
-    def setSearchesVarargs(value: SavedSearch*): Self = this.set("searches", js.Array(value :_*))
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearches(value: js.Array[SavedSearch]): Self = this.set("searches", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSearches: Self = this.set("searches", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setUpdateCount(value: Double): Self = StObject.set(x, "updateCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUpdateCount(value: Double): Self = this.set("updateCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateCount: Self = this.set("updateCount", js.undefined)
+    def setUpdateCountUndefined: Self = StObject.set(x, "updateCount", js.undefined)
   }
 }

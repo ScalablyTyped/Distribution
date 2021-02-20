@@ -1,11 +1,12 @@
 package typings.mongodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropTarget extends js.Object {
+trait DropTarget extends StObject {
   
   var dropTarget: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object DropTarget {
   }
   
   @scala.inline
-  implicit class DropTargetOps[Self <: DropTarget] (val x: Self) extends AnyVal {
+  implicit class DropTargetMutableBuilder[Self <: DropTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropTarget(value: Boolean): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDropTarget(value: Boolean): Self = this.set("dropTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropTarget: Self = this.set("dropTarget", js.undefined)
+    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
   }
 }

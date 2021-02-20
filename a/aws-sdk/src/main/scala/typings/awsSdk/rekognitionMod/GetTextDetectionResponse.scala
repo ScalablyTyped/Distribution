@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTextDetectionResponse extends js.Object {
+trait GetTextDetectionResponse extends StObject {
   
   /**
     * Current status of the text detection job.
@@ -43,57 +44,45 @@ object GetTextDetectionResponse {
   }
   
   @scala.inline
-  implicit class GetTextDetectionResponseOps[Self <: GetTextDetectionResponse] (val x: Self) extends AnyVal {
+  implicit class GetTextDetectionResponseMutableBuilder[Self <: GetTextDetectionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: VideoJobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTextDetections(value: TextDetectionResults): Self = StObject.set(x, "TextDetections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setTextDetectionsUndefined: Self = StObject.set(x, "TextDetections", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setTextDetectionsVarargs(value: TextDetectionResult*): Self = StObject.set(x, "TextDetections", js.Array(value :_*))
     
     @scala.inline
-    def setTextDetectionsVarargs(value: TextDetectionResult*): Self = this.set("TextDetections", js.Array(value :_*))
+    def setTextModelVersion(value: String): Self = StObject.set(x, "TextModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDetections(value: TextDetectionResults): Self = this.set("TextDetections", value.asInstanceOf[js.Any])
+    def setTextModelVersionUndefined: Self = StObject.set(x, "TextModelVersion", js.undefined)
     
     @scala.inline
-    def deleteTextDetections: Self = this.set("TextDetections", js.undefined)
+    def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextModelVersion(value: String): Self = this.set("TextModelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextModelVersion: Self = this.set("TextModelVersion", js.undefined)
-    
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadata): Self = this.set("VideoMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoMetadata: Self = this.set("VideoMetadata", js.undefined)
+    def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
   }
 }

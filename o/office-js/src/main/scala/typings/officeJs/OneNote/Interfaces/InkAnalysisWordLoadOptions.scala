@@ -1,5 +1,6 @@
 package typings.officeJs.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait InkAnalysisWordLoadOptions extends js.Object {
+trait InkAnalysisWordLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -65,54 +66,42 @@ object InkAnalysisWordLoadOptions {
   }
   
   @scala.inline
-  implicit class InkAnalysisWordLoadOptionsOps[Self <: InkAnalysisWordLoadOptions] (val x: Self) extends AnyVal {
+  implicit class InkAnalysisWordLoadOptionsMutableBuilder[Self <: InkAnalysisWordLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setLanguageId(value: Boolean): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLine(value: InkAnalysisLineLoadOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageId(value: Boolean): Self = this.set("languageId", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLanguageId: Self = this.set("languageId", js.undefined)
+    def setStrokePointers(value: Boolean): Self = StObject.set(x, "strokePointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: InkAnalysisLineLoadOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setStrokePointersUndefined: Self = StObject.set(x, "strokePointers", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setWordAlternates(value: Boolean): Self = StObject.set(x, "wordAlternates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokePointers(value: Boolean): Self = this.set("strokePointers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokePointers: Self = this.set("strokePointers", js.undefined)
-    
-    @scala.inline
-    def setWordAlternates(value: Boolean): Self = this.set("wordAlternates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordAlternates: Self = this.set("wordAlternates", js.undefined)
+    def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
   }
 }

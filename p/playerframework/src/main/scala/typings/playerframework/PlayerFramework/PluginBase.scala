@@ -1,12 +1,13 @@
 package typings.playerframework.PlayerFramework
 
 import typings.std.MediaSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginBase extends js.Object {
+trait PluginBase extends StObject {
   
   var currentMediaSource: MediaSource = js.native
   
@@ -42,42 +43,30 @@ object PluginBase {
   }
   
   @scala.inline
-  implicit class PluginBaseOps[Self <: PluginBase] (val x: Self) extends AnyVal {
+  implicit class PluginBaseMutableBuilder[Self <: PluginBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentMediaSource(value: MediaSource): Self = StObject.set(x, "currentMediaSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMediaSource(value: MediaSource): Self = this.set("currentMediaSource", value.asInstanceOf[js.Any])
+    def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setMediaPlayer(value: MediaPlayer): Self = StObject.set(x, "mediaPlayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoaded(value: Boolean): Self = this.set("isLoaded", value.asInstanceOf[js.Any])
+    def setUnload(value: () => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoad(value: () => Unit): Self = this.set("load", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMediaPlayer(value: MediaPlayer): Self = this.set("mediaPlayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnload(value: () => Unit): Self = this.set("unload", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: MediaSource => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: MediaSource => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

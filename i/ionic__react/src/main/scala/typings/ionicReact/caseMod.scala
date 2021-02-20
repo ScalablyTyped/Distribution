@@ -1,14 +1,17 @@
 package typings.ionicReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/components/utils/case", JSImport.Namespace)
-@js.native
-object caseMod extends js.Object {
+object caseMod {
   
+  @JSImport("@ionic/react/dist/types/components/utils/case", "camelToDashCase")
+  @js.native
   def camelToDashCase(str: String): String = js.native
   
+  @JSImport("@ionic/react/dist/types/components/utils/case", "dashToPascalCase")
+  @js.native
   def dashToPascalCase(str: String): String = js.native
 }

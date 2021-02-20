@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * overwrite).
   */
 @js.native
-trait SchemaImportDicomDataRequest extends js.Object {
+trait SchemaImportDicomDataRequest extends StObject {
   
   /**
     * Specifies where the imported data resides.
@@ -27,24 +28,12 @@ object SchemaImportDicomDataRequest {
   }
   
   @scala.inline
-  implicit class SchemaImportDicomDataRequestOps[Self <: SchemaImportDicomDataRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaImportDicomDataRequestMutableBuilder[Self <: SchemaImportDicomDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputConfig(value: SchemaInputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
   }
 }

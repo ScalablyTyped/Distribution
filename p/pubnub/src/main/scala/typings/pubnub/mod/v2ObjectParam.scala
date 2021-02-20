@@ -1,11 +1,12 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait v2ObjectParam[Custom /* <: ObjectCustom */] extends js.Object {
+trait v2ObjectParam[Custom /* <: ObjectCustom */] extends StObject {
   
   var custom: js.UndefOr[Custom] = js.native
 }
@@ -18,24 +19,12 @@ object v2ObjectParam {
   }
   
   @scala.inline
-  implicit class v2ObjectParamOps[Self <: v2ObjectParam[_], Custom /* <: ObjectCustom */] (val x: Self with v2ObjectParam[Custom]) extends AnyVal {
+  implicit class v2ObjectParamMutableBuilder[Self <: v2ObjectParam[_], Custom /* <: ObjectCustom */] (val x: Self with v2ObjectParam[Custom]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustom(value: Custom): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
   }
 }

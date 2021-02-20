@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListStudentsResponse extends js.Object {
+trait ListStudentsResponse extends StObject {
   
   /** Token identifying the next page of results to return. If empty, no further results are available. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object ListStudentsResponse {
   }
   
   @scala.inline
-  implicit class ListStudentsResponseOps[Self <: ListStudentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListStudentsResponseMutableBuilder[Self <: ListStudentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStudents(value: js.Array[Student]): Self = StObject.set(x, "students", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setStudentsUndefined: Self = StObject.set(x, "students", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setStudentsVarargs(value: Student*): Self = this.set("students", js.Array(value :_*))
-    
-    @scala.inline
-    def setStudents(value: js.Array[Student]): Self = this.set("students", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudents: Self = this.set("students", js.undefined)
+    def setStudentsVarargs(value: Student*): Self = StObject.set(x, "students", js.Array(value :_*))
   }
 }

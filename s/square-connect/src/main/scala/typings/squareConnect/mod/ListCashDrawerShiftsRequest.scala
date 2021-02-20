@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListCashDrawerShiftsRequest")
 @js.native
-class ListCashDrawerShiftsRequest () extends js.Object {
+class ListCashDrawerShiftsRequest () extends StObject {
   
   /**
     * The inclusive start time of the query on opened_at, in ISO 8601 format.

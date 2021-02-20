@@ -1,16 +1,23 @@
 package typings.luminoWidgets
 
+import typings.luminoWidgets.layoutMod.Layout.IOptions
 import typings.luminoWidgets.panellayoutMod.PanelLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/widgets/types/stackedlayout", JSImport.Namespace)
-@js.native
-object stackedlayoutMod extends js.Object {
+object stackedlayoutMod {
   
+  @JSImport("@lumino/widgets/types/stackedlayout", "StackedLayout")
   @js.native
+  /**
+    * Construct a new layout.
+    *
+    * @param options - The options for initializing the layout.
+    */
   class StackedLayout () extends PanelLayout {
+    def this(options: IOptions) = this()
     
     var _box: js.Any = js.native
     

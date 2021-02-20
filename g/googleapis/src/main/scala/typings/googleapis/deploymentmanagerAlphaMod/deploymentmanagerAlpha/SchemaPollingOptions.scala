@@ -1,11 +1,12 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPollingOptions extends js.Object {
+trait SchemaPollingOptions extends StObject {
   
   /**
     * An array of diagnostics to be collected by Deployment Manager, these
@@ -43,51 +44,39 @@ object SchemaPollingOptions {
   }
   
   @scala.inline
-  implicit class SchemaPollingOptionsOps[Self <: SchemaPollingOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaPollingOptionsMutableBuilder[Self <: SchemaPollingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    def setFailCondition(value: String): Self = StObject.set(x, "failCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setFailConditionUndefined: Self = StObject.set(x, "failCondition", js.undefined)
     
     @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    def setFinishCondition(value: String): Self = StObject.set(x, "finishCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailCondition(value: String): Self = this.set("failCondition", value.asInstanceOf[js.Any])
+    def setFinishConditionUndefined: Self = StObject.set(x, "finishCondition", js.undefined)
     
     @scala.inline
-    def deleteFailCondition: Self = this.set("failCondition", js.undefined)
+    def setPollingLink(value: String): Self = StObject.set(x, "pollingLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishCondition(value: String): Self = this.set("finishCondition", value.asInstanceOf[js.Any])
+    def setPollingLinkUndefined: Self = StObject.set(x, "pollingLink", js.undefined)
     
     @scala.inline
-    def deleteFinishCondition: Self = this.set("finishCondition", js.undefined)
+    def setTargetLink(value: String): Self = StObject.set(x, "targetLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPollingLink(value: String): Self = this.set("pollingLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePollingLink: Self = this.set("pollingLink", js.undefined)
-    
-    @scala.inline
-    def setTargetLink(value: String): Self = this.set("targetLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLink: Self = this.set("targetLink", js.undefined)
+    def setTargetLinkUndefined: Self = StObject.set(x, "targetLink", js.undefined)
   }
 }

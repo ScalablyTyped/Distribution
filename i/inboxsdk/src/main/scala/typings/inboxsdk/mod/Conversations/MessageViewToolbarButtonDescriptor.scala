@@ -1,12 +1,13 @@
 package typings.inboxsdk.mod.Conversations
 
 import typings.inboxsdk.inboxsdkStrings.MORE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageViewToolbarButtonDescriptor extends js.Object {
+trait MessageViewToolbarButtonDescriptor extends StObject {
   
   var iconClass: js.UndefOr[String] = js.native
   
@@ -29,39 +30,27 @@ object MessageViewToolbarButtonDescriptor {
   }
   
   @scala.inline
-  implicit class MessageViewToolbarButtonDescriptorOps[Self <: MessageViewToolbarButtonDescriptor] (val x: Self) extends AnyVal {
+  implicit class MessageViewToolbarButtonDescriptorMutableBuilder[Self <: MessageViewToolbarButtonDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnClick(value: () => Unit): Self = this.set("onClick", js.Any.fromFunction0(value))
+    def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderHint(value: Double): Self = this.set("orderHint", value.asInstanceOf[js.Any])
+    def setSection(value: MORE): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: MORE): Self = this.set("section", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

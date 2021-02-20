@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * key. Choose another type of key if possible.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2UnwrappedCryptoKey extends js.Object {
+trait SchemaGooglePrivacyDlpV2UnwrappedCryptoKey extends StObject {
   
   /**
     * A 128/192/256 bit key. [required]
@@ -25,24 +26,12 @@ object SchemaGooglePrivacyDlpV2UnwrappedCryptoKey {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2UnwrappedCryptoKeyOps[Self <: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2UnwrappedCryptoKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

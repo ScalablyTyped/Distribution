@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.networkfirewall
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRulesSourceStatefulRuleHeader extends js.Object {
+trait RuleGroupRuleGroupRulesSourceStatefulRuleHeader extends StObject {
   
   /**
     * The destination IP address or address range to inspect for, in CIDR notation. If left empty, this matches with any destination address.
@@ -47,51 +48,39 @@ object RuleGroupRuleGroupRulesSourceStatefulRuleHeader {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleHeaderOps[Self <: RuleGroupRuleGroupRulesSourceStatefulRuleHeader] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleHeaderMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatefulRuleHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationPort(value: String): Self = StObject.set(x, "destinationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationPortUndefined: Self = StObject.set(x, "destinationPort", js.undefined)
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPort(value: String): Self = this.set("destinationPort", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteDestinationPort: Self = this.set("destinationPort", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setSourcePort(value: String): Self = StObject.set(x, "sourcePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setSourcePortUndefined: Self = StObject.set(x, "sourcePort", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSourcePort(value: String): Self = this.set("sourcePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePort: Self = this.set("sourcePort", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

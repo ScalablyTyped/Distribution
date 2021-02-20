@@ -3,12 +3,13 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.double
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceRequest extends js.Object {
+trait ResourceRequest extends StObject {
   
   /** The value 0 indicates that the request happens in the main frame; a positive value indicates the ID of a subframe in which the request happens. If the document of a (sub-)frame is loaded (type is main_frame or sub_frame), frameId indicates the ID of this frame, not the ID of the outer frame. Frame IDs are unique within a tab. */
   var frameId: integer = js.native
@@ -55,45 +56,33 @@ object ResourceRequest {
   }
   
   @scala.inline
-  implicit class ResourceRequestOps[Self <: ResourceRequest] (val x: Self) extends AnyVal {
+  implicit class ResourceRequestMutableBuilder[Self <: ResourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitiator(value: String): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
     
     @scala.inline
-    def setFrameId(value: integer): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setParentFrameId(value: integer): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFrameId(value: integer): Self = this.set("parentFrameId", value.asInstanceOf[js.Any])
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setTabId(value: integer): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabId(value: integer): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ResourceType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitiator(value: String): Self = this.set("initiator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitiator: Self = this.set("initiator", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

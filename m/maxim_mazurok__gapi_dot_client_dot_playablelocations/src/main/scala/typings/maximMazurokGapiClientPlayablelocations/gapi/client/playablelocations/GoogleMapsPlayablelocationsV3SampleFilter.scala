@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3SampleFilter extends js.Object {
+trait GoogleMapsPlayablelocationsV3SampleFilter extends StObject {
   
   /** Restricts the set of playable locations to just the [types](/maps/documentation/gaming/tt/types) that you want. */
   var includedTypes: js.UndefOr[js.Array[String]] = js.native
@@ -28,39 +29,27 @@ object GoogleMapsPlayablelocationsV3SampleFilter {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleFilterOps[Self <: GoogleMapsPlayablelocationsV3SampleFilter] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3SampleFilterMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludedTypes(value: js.Array[String]): Self = StObject.set(x, "includedTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludedTypesUndefined: Self = StObject.set(x, "includedTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludedTypesVarargs(value: String*): Self = StObject.set(x, "includedTypes", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedTypesVarargs(value: String*): Self = this.set("includedTypes", js.Array(value :_*))
+    def setMaxLocationCount(value: Double): Self = StObject.set(x, "maxLocationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedTypes(value: js.Array[String]): Self = this.set("includedTypes", value.asInstanceOf[js.Any])
+    def setMaxLocationCountUndefined: Self = StObject.set(x, "maxLocationCount", js.undefined)
     
     @scala.inline
-    def deleteIncludedTypes: Self = this.set("includedTypes", js.undefined)
+    def setSpacing(value: GoogleMapsPlayablelocationsV3SampleSpacingOptions): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLocationCount(value: Double): Self = this.set("maxLocationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLocationCount: Self = this.set("maxLocationCount", js.undefined)
-    
-    @scala.inline
-    def setSpacing(value: GoogleMapsPlayablelocationsV3SampleSpacingOptions): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

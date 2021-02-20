@@ -2,6 +2,7 @@ package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
 import typings.instagramPrivateApi.instagramPrivateApiBooleans.`false`
 import typings.instagramPrivateApi.instagramPrivateApiBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,33 +40,21 @@ object StoryChat {
   }
   
   @scala.inline
-  implicit class StoryChatOps[Self <: StoryChat] (val x: Self) extends AnyVal {
+  implicit class StoryChatMutableBuilder[Self <: StoryChat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHas_started_chat(value: `false`): Self = StObject.set(x, "has_started_chat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_background_color(value: String): Self = this.set("end_background_color", value.asInstanceOf[js.Any])
+    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_started_chat(value: `false`): Self = this.set("has_started_chat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIs_sticker(value: `true`): Self = this.set("is_sticker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_background_color(value: String): Self = this.set("start_background_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

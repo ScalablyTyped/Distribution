@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.view
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.same
   - typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.different
 */
-trait PositionRelation extends js.Object
+trait PositionRelation extends StObject
 object PositionRelation {
   
   @scala.inline

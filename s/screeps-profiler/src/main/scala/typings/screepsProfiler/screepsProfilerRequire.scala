@@ -1,5 +1,6 @@
 package typings.screepsProfiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("screeps-profiler", JSImport.Namespace)
 @js.native
-object screepsProfilerRequire extends js.Object
+object screepsProfilerRequire extends StObject

@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/distanceBlock", JSImport.Namespace)
-@js.native
-object distanceBlockMod extends js.Object {
+object distanceBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/distanceBlock", "DistanceBlock")
   @js.native
   class DistanceBlock protected () extends NodeMaterialBlock {
     /**

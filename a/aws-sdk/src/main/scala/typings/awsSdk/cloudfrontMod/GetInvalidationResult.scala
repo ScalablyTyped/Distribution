@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInvalidationResult extends js.Object {
+trait GetInvalidationResult extends StObject {
   
   /**
     * The invalidation's information. For more information, see Invalidation Complex Type. 
@@ -21,24 +22,12 @@ object GetInvalidationResult {
   }
   
   @scala.inline
-  implicit class GetInvalidationResultOps[Self <: GetInvalidationResult] (val x: Self) extends AnyVal {
+  implicit class GetInvalidationResultMutableBuilder[Self <: GetInvalidationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidation(value: Invalidation): Self = StObject.set(x, "Invalidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvalidation(value: Invalidation): Self = this.set("Invalidation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalidation: Self = this.set("Invalidation", js.undefined)
+    def setInvalidationUndefined: Self = StObject.set(x, "Invalidation", js.undefined)
   }
 }

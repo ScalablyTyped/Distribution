@@ -5,6 +5,7 @@ import typings.stellarSdk.stellarSdkNumbers.`1`
 import typings.stellarSdk.stellarSdkNumbers.`2`
 import typings.stellarSdk.stellarSdkStrings.auth_required_flag
 import typings.stellarSdk.stellarSdkStrings.auth_revocable_flag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

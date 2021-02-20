@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadTaskOnProgressUpdateCallbackResult extends js.Object {
+trait DownloadTaskOnProgressUpdateCallbackResult extends StObject {
   
   /** 下载进度百分比 */
   var progress: Double = js.native
@@ -25,27 +26,15 @@ object DownloadTaskOnProgressUpdateCallbackResult {
   }
   
   @scala.inline
-  implicit class DownloadTaskOnProgressUpdateCallbackResultOps[Self <: DownloadTaskOnProgressUpdateCallbackResult] (val x: Self) extends AnyVal {
+  implicit class DownloadTaskOnProgressUpdateCallbackResultMutableBuilder[Self <: DownloadTaskOnProgressUpdateCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesExpectedToWrite(value: Double): Self = this.set("totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesWritten(value: Double): Self = this.set("totalBytesWritten", value.asInstanceOf[js.Any])
+    def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
   }
 }

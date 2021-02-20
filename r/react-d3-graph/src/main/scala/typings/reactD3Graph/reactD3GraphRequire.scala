@@ -1,5 +1,6 @@
 package typings.reactD3Graph
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("react-d3-graph", JSImport.Namespace)
 @js.native
-object reactD3GraphRequire extends js.Object
+object reactD3GraphRequire extends StObject

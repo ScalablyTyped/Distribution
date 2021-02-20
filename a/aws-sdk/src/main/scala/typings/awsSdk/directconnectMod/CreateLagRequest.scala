@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLagRequest extends js.Object {
+trait CreateLagRequest extends StObject {
   
   /**
     * The tags to associate with the automtically created LAGs.
@@ -61,60 +62,48 @@ object CreateLagRequest {
   }
   
   @scala.inline
-  implicit class CreateLagRequestOps[Self <: CreateLagRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLagRequestMutableBuilder[Self <: CreateLagRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildConnectionTags(value: TagList): Self = StObject.set(x, "childConnectionTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildConnectionTagsUndefined: Self = StObject.set(x, "childConnectionTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildConnectionTagsVarargs(value: Tag*): Self = StObject.set(x, "childConnectionTags", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionsBandwidth(value: Bandwidth): Self = this.set("connectionsBandwidth", value.asInstanceOf[js.Any])
+    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLagName(value: LagName): Self = this.set("lagName", value.asInstanceOf[js.Any])
+    def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
     
     @scala.inline
-    def setLocation(value: LocationCode): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setConnectionsBandwidth(value: Bandwidth): Self = StObject.set(x, "connectionsBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfConnections(value: Count): Self = this.set("numberOfConnections", value.asInstanceOf[js.Any])
+    def setLagName(value: LagName): Self = StObject.set(x, "lagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildConnectionTagsVarargs(value: Tag*): Self = this.set("childConnectionTags", js.Array(value :_*))
+    def setLocation(value: LocationCode): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildConnectionTags(value: TagList): Self = this.set("childConnectionTags", value.asInstanceOf[js.Any])
+    def setNumberOfConnections(value: Count): Self = StObject.set(x, "numberOfConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildConnectionTags: Self = this.set("childConnectionTags", js.undefined)
+    def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: ConnectionId): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
     @scala.inline
-    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteProviderName: Self = this.set("providerName", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,78 +41,66 @@ object BitmapTextOptions {
   }
   
   @scala.inline
-  implicit class BitmapTextOptionsOps[Self <: BitmapTextOptions] (val x: Self) extends AnyVal {
+  implicit class BitmapTextOptionsMutableBuilder[Self <: BitmapTextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharHeight(value: Double): Self = StObject.set(x, "charHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharWidth(value: Double): Self = StObject.set(x, "charWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHeight(value: Double): Self = this.set("charHeight", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setCharWidth(value: Double): Self = this.set("charWidth", value.asInstanceOf[js.Any])
+    def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
     
     @scala.inline
-    def setStartY(value: Double): Self = this.set("startY", value.asInstanceOf[js.Any])
+    def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImageSrcUndefined: Self = StObject.set(x, "imageSrc", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: String): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    def setScrollOffsetX(value: Double): Self = StObject.set(x, "scrollOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageId: Self = this.set("imageId", js.undefined)
+    def setScrollOffsetXUndefined: Self = StObject.set(x, "scrollOffsetX", js.undefined)
     
     @scala.inline
-    def setImageSrc(value: String): Self = this.set("imageSrc", value.asInstanceOf[js.Any])
+    def setScrollOffsetY(value: Double): Self = StObject.set(x, "scrollOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageSrc: Self = this.set("imageSrc", js.undefined)
+    def setScrollOffsetYUndefined: Self = StObject.set(x, "scrollOffsetY", js.undefined)
     
     @scala.inline
-    def setScrollOffsetX(value: Double): Self = this.set("scrollOffsetX", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollOffsetX: Self = this.set("scrollOffsetX", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setScrollOffsetY(value: Double): Self = this.set("scrollOffsetY", value.asInstanceOf[js.Any])
+    def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollOffsetY: Self = this.set("scrollOffsetY", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

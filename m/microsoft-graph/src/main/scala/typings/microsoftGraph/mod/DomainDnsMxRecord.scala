@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object DomainDnsMxRecord {
   }
   
   @scala.inline
-  implicit class DomainDnsMxRecordOps[Self <: DomainDnsMxRecord] (val x: Self) extends AnyVal {
+  implicit class DomainDnsMxRecordMutableBuilder[Self <: DomainDnsMxRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMailExchange(value: String): Self = StObject.set(x, "mailExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMailExchangeUndefined: Self = StObject.set(x, "mailExchange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreference(value: NullableOption[Double]): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailExchange(value: String): Self = this.set("mailExchange", value.asInstanceOf[js.Any])
+    def setPreferenceNull: Self = StObject.set(x, "preference", null)
     
     @scala.inline
-    def deleteMailExchange: Self = this.set("mailExchange", js.undefined)
-    
-    @scala.inline
-    def setPreference(value: NullableOption[Double]): Self = this.set("preference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreference: Self = this.set("preference", js.undefined)
-    
-    @scala.inline
-    def setPreferenceNull: Self = this.set("preference", null)
+    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
   }
 }

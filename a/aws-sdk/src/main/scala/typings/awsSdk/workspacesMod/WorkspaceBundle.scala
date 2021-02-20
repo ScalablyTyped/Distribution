@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceBundle extends js.Object {
+trait WorkspaceBundle extends StObject {
   
   /**
     * The bundle identifier.
@@ -61,72 +62,60 @@ object WorkspaceBundle {
   }
   
   @scala.inline
-  implicit class WorkspaceBundleOps[Self <: WorkspaceBundle] (val x: Self) extends AnyVal {
+  implicit class WorkspaceBundleMutableBuilder[Self <: WorkspaceBundle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeType(value: ComputeType): Self = this.set("ComputeType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteComputeType: Self = this.set("ComputeType", js.undefined)
+    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastUpdatedTime(value: Timestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: Timestamp): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setOwner(value: BundleOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRootStorage(value: RootStorage): Self = StObject.set(x, "RootStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: BundleOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setRootStorageUndefined: Self = StObject.set(x, "RootStorage", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setUserStorage(value: UserStorage): Self = StObject.set(x, "UserStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootStorage(value: RootStorage): Self = this.set("RootStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootStorage: Self = this.set("RootStorage", js.undefined)
-    
-    @scala.inline
-    def setUserStorage(value: UserStorage): Self = this.set("UserStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStorage: Self = this.set("UserStorage", js.undefined)
+    def setUserStorageUndefined: Self = StObject.set(x, "UserStorage", js.undefined)
   }
 }

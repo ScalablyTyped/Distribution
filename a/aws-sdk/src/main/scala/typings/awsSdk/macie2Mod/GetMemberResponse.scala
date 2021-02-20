@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMemberResponse extends js.Object {
+trait GetMemberResponse extends StObject {
   
   /**
     * The AWS account ID for the account.
@@ -56,66 +57,54 @@ object GetMemberResponse {
   }
   
   @scala.inline
-  implicit class GetMemberResponseOps[Self <: GetMemberResponse] (val x: Self) extends AnyVal {
+  implicit class GetMemberResponseMutableBuilder[Self <: GetMemberResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setEmail(value: string): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: string): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setMasterAccountId(value: string): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitedAt(value: timestampIso8601): Self = this.set("invitedAt", value.asInstanceOf[js.Any])
+    def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
     
     @scala.inline
-    def deleteInvitedAt: Self = this.set("invitedAt", js.undefined)
+    def setRelationshipStatus(value: RelationshipStatus): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterAccountId(value: string): Self = this.set("masterAccountId", value.asInstanceOf[js.Any])
+    def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
     
     @scala.inline
-    def deleteMasterAccountId: Self = this.set("masterAccountId", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipStatus(value: RelationshipStatus): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+    def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: timestampIso8601): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }
 }

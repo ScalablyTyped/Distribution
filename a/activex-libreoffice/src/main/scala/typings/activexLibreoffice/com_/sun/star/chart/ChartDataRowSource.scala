@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
-trait ChartDataRowSource extends js.Object
+trait ChartDataRowSource extends StObject
 object ChartDataRowSource {
   
   /** values displayed as data rows are taken from the columns of the data source. */

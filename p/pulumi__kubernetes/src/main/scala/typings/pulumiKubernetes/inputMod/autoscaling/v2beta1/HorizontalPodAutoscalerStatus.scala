@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.autoscaling.v2beta1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HorizontalPodAutoscalerStatus describes the current status of a horizontal pod autoscaler.
   */
 @js.native
-trait HorizontalPodAutoscalerStatus extends js.Object {
+trait HorizontalPodAutoscalerStatus extends StObject {
   
   /**
     * conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met.
@@ -54,51 +55,39 @@ object HorizontalPodAutoscalerStatus {
   }
   
   @scala.inline
-  implicit class HorizontalPodAutoscalerStatusOps[Self <: HorizontalPodAutoscalerStatus] (val x: Self) extends AnyVal {
+  implicit class HorizontalPodAutoscalerStatusMutableBuilder[Self <: HorizontalPodAutoscalerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: Input[js.Array[Input[HorizontalPodAutoscalerCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsVarargs(value: Input[HorizontalPodAutoscalerCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentMetrics(value: Input[js.Array[Input[MetricStatus]]]): Self = StObject.set(x, "currentMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: Input[HorizontalPodAutoscalerCondition]*): Self = this.set("conditions", js.Array(value :_*))
+    def setCurrentMetricsUndefined: Self = StObject.set(x, "currentMetrics", js.undefined)
     
     @scala.inline
-    def setConditions(value: Input[js.Array[Input[HorizontalPodAutoscalerCondition]]]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setCurrentMetricsVarargs(value: Input[MetricStatus]*): Self = StObject.set(x, "currentMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentReplicas(value: Input[Double]): Self = this.set("currentReplicas", value.asInstanceOf[js.Any])
+    def setCurrentReplicas(value: Input[Double]): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredReplicas(value: Input[Double]): Self = this.set("desiredReplicas", value.asInstanceOf[js.Any])
+    def setDesiredReplicas(value: Input[Double]): Self = StObject.set(x, "desiredReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMetricsVarargs(value: Input[MetricStatus]*): Self = this.set("currentMetrics", js.Array(value :_*))
+    def setLastScaleTime(value: Input[String]): Self = StObject.set(x, "lastScaleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMetrics(value: Input[js.Array[Input[MetricStatus]]]): Self = this.set("currentMetrics", value.asInstanceOf[js.Any])
+    def setLastScaleTimeUndefined: Self = StObject.set(x, "lastScaleTime", js.undefined)
     
     @scala.inline
-    def deleteCurrentMetrics: Self = this.set("currentMetrics", js.undefined)
+    def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastScaleTime(value: Input[String]): Self = this.set("lastScaleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastScaleTime: Self = this.set("lastScaleTime", js.undefined)
-    
-    @scala.inline
-    def setObservedGeneration(value: Input[Double]): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
   }
 }

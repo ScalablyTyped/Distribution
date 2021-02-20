@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitJobRequest extends js.Object {
+trait SubmitJobRequest extends StObject {
   
   /** Required. The job resource. */
   var job: js.UndefOr[Job] = js.native
@@ -26,30 +27,18 @@ object SubmitJobRequest {
   }
   
   @scala.inline
-  implicit class SubmitJobRequestOps[Self <: SubmitJobRequest] (val x: Self) extends AnyVal {
+  implicit class SubmitJobRequestMutableBuilder[Self <: SubmitJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob(value: Job): Self = this.set("job", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJob: Self = this.set("job", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

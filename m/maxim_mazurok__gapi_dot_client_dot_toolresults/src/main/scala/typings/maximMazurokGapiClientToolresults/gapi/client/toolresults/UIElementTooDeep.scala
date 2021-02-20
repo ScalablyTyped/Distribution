@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIElementTooDeep extends js.Object {
+trait UIElementTooDeep extends StObject {
   
   /** The depth of the screen element */
   var depth: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object UIElementTooDeep {
   }
   
   @scala.inline
-  implicit class UIElementTooDeepOps[Self <: UIElementTooDeep] (val x: Self) extends AnyVal {
+  implicit class UIElementTooDeepMutableBuilder[Self <: UIElementTooDeep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setScreenStateId(value: String): Self = StObject.set(x, "screenStateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenId(value: String): Self = this.set("screenId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenId: Self = this.set("screenId", js.undefined)
-    
-    @scala.inline
-    def setScreenStateId(value: String): Self = this.set("screenStateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenStateId: Self = this.set("screenStateId", js.undefined)
+    def setScreenStateIdUndefined: Self = StObject.set(x, "screenStateId", js.undefined)
   }
 }

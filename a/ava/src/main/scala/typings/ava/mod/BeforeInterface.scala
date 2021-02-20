@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeforeInterface[Context] extends js.Object {
+trait BeforeInterface[Context] extends StObject {
   
   /** Declare a hook that is run once, before all tests. */
   def apply(implementation: Implementation[Context]): Unit = js.native

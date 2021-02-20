@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledInstancesPlacement extends js.Object {
+trait ScheduledInstancesPlacement extends StObject {
   
   /**
     * The Availability Zone.
@@ -26,30 +27,18 @@ object ScheduledInstancesPlacement {
   }
   
   @scala.inline
-  implicit class ScheduledInstancesPlacementOps[Self <: ScheduledInstancesPlacement] (val x: Self) extends AnyVal {
+  implicit class ScheduledInstancesPlacementMutableBuilder[Self <: ScheduledInstancesPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
-    
-    @scala.inline
-    def setGroupName(value: PlacementGroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

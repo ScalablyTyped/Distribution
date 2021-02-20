@@ -1,5 +1,6 @@
 package typings.inquirer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The type of the answers.
   */
 @js.native
-trait QuestionMap[T /* <: Answers */] extends js.Object {
+trait QuestionMap[T /* <: Answers */] extends StObject {
   
   /**
     * The `CheckboxQuestion` type.
@@ -77,45 +78,33 @@ object QuestionMap {
   }
   
   @scala.inline
-  implicit class QuestionMapOps[Self <: QuestionMap[_], T /* <: Answers */] (val x: Self with QuestionMap[T]) extends AnyVal {
+  implicit class QuestionMapMutableBuilder[Self <: QuestionMap[_], T /* <: Answers */] (val x: Self with QuestionMap[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckbox(value: CheckboxQuestion[T]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirm(value: ConfirmQuestion[T]): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditor(value: EditorQuestion[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckbox(value: CheckboxQuestion[T]): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    def setExpand(value: ExpandQuestion[T]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirm(value: ConfirmQuestion[T]): Self = this.set("confirm", value.asInstanceOf[js.Any])
+    def setInput(value: InputQuestion[T]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: EditorQuestion[T]): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setList(value: ListQuestion[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: ExpandQuestion[T]): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setNumber(value: NumberQuestion[T]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: InputQuestion[T]): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setPassword(value: PasswordQuestion[T]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: ListQuestion[T]): Self = this.set("list", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumber(value: NumberQuestion[T]): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassword(value: PasswordQuestion[T]): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawList(value: RawListQuestion[T]): Self = this.set("rawList", value.asInstanceOf[js.Any])
+    def setRawList(value: RawListQuestion[T]): Self = StObject.set(x, "rawList", value.asInstanceOf[js.Any])
   }
 }

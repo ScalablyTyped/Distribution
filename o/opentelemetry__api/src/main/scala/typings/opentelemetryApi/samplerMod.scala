@@ -5,16 +5,15 @@ import typings.opentelemetryApi.linkMod.Link
 import typings.opentelemetryApi.samplingResultMod.SamplingResult
 import typings.opentelemetryApi.spanContextMod.SpanContext
 import typings.opentelemetryApi.spanKindMod.SpanKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/trace/Sampler", JSImport.Namespace)
-@js.native
-object samplerMod extends js.Object {
+object samplerMod {
   
   @js.native
-  trait Sampler extends js.Object {
+  trait Sampler extends StObject {
     
     def shouldSample(
       parentContext: js.UndefOr[scala.Nothing],

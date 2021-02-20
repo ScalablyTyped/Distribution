@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a color frame arrived event. */
 @js.native
-trait PerceptionColorFrameArrivedEventArgs extends js.Object {
+trait PerceptionColorFrameArrivedEventArgs extends StObject {
   
   /** Gets the relative time of this frame. */
   var relativeTime: Double = js.native
@@ -26,24 +27,12 @@ object PerceptionColorFrameArrivedEventArgs {
   }
   
   @scala.inline
-  implicit class PerceptionColorFrameArrivedEventArgsOps[Self <: PerceptionColorFrameArrivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PerceptionColorFrameArrivedEventArgsMutableBuilder[Self <: PerceptionColorFrameArrivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelativeTime(value: Double): Self = this.set("relativeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTryOpenFrame(value: () => PerceptionColorFrame): Self = this.set("tryOpenFrame", js.Any.fromFunction0(value))
+    def setTryOpenFrame(value: () => PerceptionColorFrame): Self = StObject.set(x, "tryOpenFrame", js.Any.fromFunction0(value))
   }
 }

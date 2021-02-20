@@ -2,12 +2,13 @@ package typings.minappEnv.DB
 
 import typings.minappEnv.Array
 import typings.minappEnv.InternalSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseLogicCommand extends js.Object {
+trait DatabaseLogicCommand extends StObject {
   
   def _setFieldName(fieldName: String): DatabaseLogicCommand = js.native
   
@@ -37,36 +38,24 @@ object DatabaseLogicCommand {
   }
   
   @scala.inline
-  implicit class DatabaseLogicCommandOps[Self <: DatabaseLogicCommand] (val x: Self) extends AnyVal {
+  implicit class DatabaseLogicCommandMutableBuilder[Self <: DatabaseLogicCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperands(value: Array[_]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_setFieldName(value: String => DatabaseLogicCommand): Self = this.set("_setFieldName", js.Any.fromFunction1(value))
+    def setOperator(value: LOGIC_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = this.set("and", js.Any.fromFunction1(value))
+    def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFieldName(value: String | InternalSymbol): Self = this.set("fieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperands(value: Array[_]): Self = this.set("operands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: LOGIC_COMMANDS_LITERAL | String): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = this.set("or", js.Any.fromFunction1(value))
+    def set_setFieldName(value: String => DatabaseLogicCommand): Self = StObject.set(x, "_setFieldName", js.Any.fromFunction1(value))
   }
 }

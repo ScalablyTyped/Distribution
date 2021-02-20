@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchProvisionedProductsInput extends js.Object {
+trait SearchProvisionedProductsInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -51,60 +52,48 @@ object SearchProvisionedProductsInput {
   }
   
   @scala.inline
-  implicit class SearchProvisionedProductsInputOps[Self <: SearchProvisionedProductsInput] (val x: Self) extends AnyVal {
+  implicit class SearchProvisionedProductsInputMutableBuilder[Self <: SearchProvisionedProductsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessLevelFilter(value: AccessLevelFilter): Self = StObject.set(x, "AccessLevelFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setAccessLevelFilterUndefined: Self = StObject.set(x, "AccessLevelFilter", js.undefined)
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setFilters(value: ProvisionedProductFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLevelFilter(value: AccessLevelFilter): Self = this.set("AccessLevelFilter", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteAccessLevelFilter: Self = this.set("AccessLevelFilter", js.undefined)
+    def setPageSize(value: SearchProvisionedProductsPageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: ProvisionedProductFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: SearchProvisionedProductsPageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setSortBy(value: SortField): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: SortField): Self = this.set("SortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("SortBy", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

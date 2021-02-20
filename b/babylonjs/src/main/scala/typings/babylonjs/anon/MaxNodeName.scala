@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxNodeName extends js.Object {
+trait MaxNodeName extends StObject {
   
   var maxNodeName: String = js.native
   
@@ -22,27 +23,15 @@ object MaxNodeName {
   }
   
   @scala.inline
-  implicit class MaxNodeNameOps[Self <: MaxNodeName] (val x: Self) extends AnyVal {
+  implicit class MaxNodeNameMutableBuilder[Self <: MaxNodeName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxNodeName(value: String): Self = StObject.set(x, "maxNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinNodeName(value: String): Self = StObject.set(x, "minNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxNodeName(value: String): Self = this.set("maxNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinNodeName(value: String): Self = this.set("minNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueNodeName(value: String): Self = this.set("valueNodeName", value.asInstanceOf[js.Any])
+    def setValueNodeName(value: String): Self = StObject.set(x, "valueNodeName", value.asInstanceOf[js.Any])
   }
 }

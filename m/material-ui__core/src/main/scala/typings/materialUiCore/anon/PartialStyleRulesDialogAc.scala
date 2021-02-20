@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/DialogActions.DialogActionsClassKey>> */
 @js.native
-trait PartialStyleRulesDialogAc extends js.Object {
+trait PartialStyleRulesDialogAc extends StObject {
   
   var action: js.UndefOr[CSSProperties] = js.native
   
@@ -22,30 +23,18 @@ object PartialStyleRulesDialogAc {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesDialogAcOps[Self <: PartialStyleRulesDialogAc] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesDialogAcMutableBuilder[Self <: PartialStyleRulesDialogAc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: CSSProperties): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: CSSProperties): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

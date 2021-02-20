@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Game extends js.Object {
+trait Game extends StObject {
   
   var animation: js.UndefOr[Animation] = js.native
   
@@ -28,51 +29,39 @@ object Game {
   }
   
   @scala.inline
-  implicit class GameOps[Self <: Game] (val x: Self) extends AnyVal {
+  implicit class GameMutableBuilder[Self <: Game] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPhoto(value: js.Array[PhotoSize]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoVarargs(value: PhotoSize*): Self = this.set("photo", js.Array(value :_*))
+    def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value :_*))
     
     @scala.inline
-    def setPhoto(value: js.Array[PhotoSize]): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setAnimation(value: Animation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setText_entities(value: js.Array[MessageEntity]): Self = StObject.set(x, "text_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setText_entitiesUndefined: Self = StObject.set(x, "text_entities", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "text_entities", js.Array(value :_*))
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setText_entitiesVarargs(value: MessageEntity*): Self = this.set("text_entities", js.Array(value :_*))
-    
-    @scala.inline
-    def setText_entities(value: js.Array[MessageEntity]): Self = this.set("text_entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText_entities: Self = this.set("text_entities", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

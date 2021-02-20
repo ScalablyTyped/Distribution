@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Common properties for all manifest.json files */
 @js.native
-trait ManifestBase extends js.Object {
+trait ManifestBase extends StObject {
   
   var applications: js.UndefOr[ManifestBaseApplications] = js.native
   
@@ -35,63 +36,51 @@ object ManifestBase {
   }
   
   @scala.inline
-  implicit class ManifestBaseOps[Self <: ManifestBase] (val x: Self) extends AnyVal {
+  implicit class ManifestBaseMutableBuilder[Self <: ManifestBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplications(value: ManifestBaseApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifest_version(value: Double): Self = this.set("manifest_version", value.asInstanceOf[js.Any])
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setBrowser_specific_settings(value: ManifestBaseBrowserSpecificSettings): Self = StObject.set(x, "browser_specific_settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setBrowser_specific_settingsUndefined: Self = StObject.set(x, "browser_specific_settings", js.undefined)
     
     @scala.inline
-    def setApplications(value: ManifestBaseApplications): Self = this.set("applications", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplications: Self = this.set("applications", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setHomepage_url(value: String): Self = StObject.set(x, "homepage_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setHomepage_urlUndefined: Self = StObject.set(x, "homepage_url", js.undefined)
     
     @scala.inline
-    def setBrowser_specific_settings(value: ManifestBaseBrowserSpecificSettings): Self = this.set("browser_specific_settings", value.asInstanceOf[js.Any])
+    def setManifest_version(value: Double): Self = StObject.set(x, "manifest_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowser_specific_settings: Self = this.set("browser_specific_settings", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
     
     @scala.inline
-    def setHomepage_url(value: String): Self = this.set("homepage_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHomepage_url: Self = this.set("homepage_url", js.undefined)
-    
-    @scala.inline
-    def setShort_name(value: String): Self = this.set("short_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort_name: Self = this.set("short_name", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

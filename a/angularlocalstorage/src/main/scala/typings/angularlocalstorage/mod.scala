@@ -2,20 +2,18 @@ package typings.angularlocalstorage
 
 import typings.angular.mod.IScope
 import typings.angularlocalstorage.anon.DefaultValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("angular", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object localStorage extends js.Object {
+  object localStorage {
     
     @js.native
-    trait ILocalStorageService extends js.Object {
+    trait ILocalStorageService extends StObject {
       
       def bind($scope: IScope, key: String): js.Any = js.native
       def bind($scope: IScope, key: String, opts: DefaultValue): js.Any = js.native

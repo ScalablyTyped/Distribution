@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImapSettings extends js.Object {
+trait ImapSettings extends StObject {
   
   /**
     * If this value is true, Gmail will immediately expunge a message when it is marked as deleted in IMAP. Otherwise, Gmail will wait for an update from the client before expunging
@@ -34,42 +35,30 @@ object ImapSettings {
   }
   
   @scala.inline
-  implicit class ImapSettingsOps[Self <: ImapSettings] (val x: Self) extends AnyVal {
+  implicit class ImapSettingsMutableBuilder[Self <: ImapSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoExpungeUndefined: Self = StObject.set(x, "autoExpunge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoExpunge(value: Boolean): Self = this.set("autoExpunge", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteAutoExpunge: Self = this.set("autoExpunge", js.undefined)
+    def setExpungeBehavior(value: String): Self = StObject.set(x, "expungeBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setExpungeBehaviorUndefined: Self = StObject.set(x, "expungeBehavior", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setMaxFolderSize(value: Double): Self = StObject.set(x, "maxFolderSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpungeBehavior(value: String): Self = this.set("expungeBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpungeBehavior: Self = this.set("expungeBehavior", js.undefined)
-    
-    @scala.inline
-    def setMaxFolderSize(value: Double): Self = this.set("maxFolderSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFolderSize: Self = this.set("maxFolderSize", js.undefined)
+    def setMaxFolderSizeUndefined: Self = StObject.set(x, "maxFolderSize", js.undefined)
   }
 }

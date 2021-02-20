@@ -1,5 +1,6 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#annotation-object
   */
 @js.native
-trait Annotation extends js.Object {
+trait Annotation extends StObject {
   
   /**
     * The index of the datasource for the speed between each pair of coordinates. 0 is the default profile, other values are supplied via --segment-speed-file to osrm-contract
@@ -58,54 +59,42 @@ object Annotation {
   }
   
   @scala.inline
-  implicit class AnnotationOps[Self <: Annotation] (val x: Self) extends AnyVal {
+  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasources(value: js.Array[Double]): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasourcesVarargs(value: Double*): Self = StObject.set(x, "datasources", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasourcesVarargs(value: Double*): Self = this.set("datasources", js.Array(value :_*))
+    def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
     
     @scala.inline
-    def setDatasources(value: js.Array[Double]): Self = this.set("datasources", value.asInstanceOf[js.Any])
+    def setDuration(value: js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceVarargs(value: Double*): Self = this.set("distance", js.Array(value :_*))
+    def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
     
     @scala.inline
-    def setDistance(value: js.Array[Double]): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setNodes(value: js.Array[Double]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationVarargs(value: Double*): Self = this.set("duration", js.Array(value :_*))
+    def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setDuration(value: js.Array[Double]): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesVarargs(value: Double*): Self = this.set("nodes", js.Array(value :_*))
+    def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
     
     @scala.inline
-    def setNodes(value: js.Array[Double]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setWeight(value: js.Array[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedVarargs(value: Double*): Self = this.set("speed", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpeed(value: js.Array[Double]): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeightVarargs(value: Double*): Self = this.set("weight", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeight(value: js.Array[Double]): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeightVarargs(value: Double*): Self = StObject.set(x, "weight", js.Array(value :_*))
   }
 }

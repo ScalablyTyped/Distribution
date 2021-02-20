@@ -7,14 +7,14 @@ import typings.pulumiAws.lambdaMixinsMod.CallbackFunctionArgs
 import typings.pulumiAws.utilsMod.Overwrite
 import typings.pulumiPulumi.mod.ComponentResource
 import typings.pulumiPulumi.resourceMod.ResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/serverless/function", JSImport.Namespace)
-@js.native
-object serverlessFunctionMod extends js.Object {
+object serverlessFunctionMod {
   
+  @JSImport("@pulumi/aws/serverless/function", "Function")
   @js.native
   class Function protected ()
     extends ComponentResource[js.Any] {

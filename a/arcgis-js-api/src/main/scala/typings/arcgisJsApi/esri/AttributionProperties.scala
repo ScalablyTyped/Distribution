@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object AttributionProperties {
   }
   
   @scala.inline
-  implicit class AttributionPropertiesOps[Self <: AttributionProperties] (val x: Self) extends AnyVal {
+  implicit class AttributionPropertiesMutableBuilder[Self <: AttributionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemDelimiter(value: String): Self = this.set("itemDelimiter", value.asInstanceOf[js.Any])
+    def setViewModel(value: AttributionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemDelimiter: Self = this.set("itemDelimiter", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: AttributionViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

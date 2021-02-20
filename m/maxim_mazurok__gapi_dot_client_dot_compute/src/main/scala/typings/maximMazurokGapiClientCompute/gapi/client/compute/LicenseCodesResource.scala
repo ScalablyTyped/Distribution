@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LicenseCodesResource extends js.Object {
+trait LicenseCodesResource extends StObject {
   
   /**
     * Return a specified license code. License codes are mirrored across all projects that have permissions to read the License Code.  Caution This resource is intended for use only by

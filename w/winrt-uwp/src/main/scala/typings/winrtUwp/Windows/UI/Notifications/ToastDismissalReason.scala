@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ToastDismissalReason extends js.Object
+sealed trait ToastDismissalReason extends StObject
 /** Specifies the reason that a toast notification is no longer being shown. Used with ToastDismissedEventArgs.Reason . */
 @JSGlobal("Windows.UI.Notifications.ToastDismissalReason")
 @js.native
-object ToastDismissalReason extends js.Object {
+object ToastDismissalReason extends StObject {
   
   /** The app explicitly hid the toast notification by calling the ToastNotifier.hide method. */
   @js.native

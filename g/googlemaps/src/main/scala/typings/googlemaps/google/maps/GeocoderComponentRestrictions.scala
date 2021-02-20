@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocoderComponentRestrictions extends js.Object {
+trait GeocoderComponentRestrictions extends StObject {
   
   var administrativeArea: js.UndefOr[String] = js.native
   
@@ -26,51 +27,39 @@ object GeocoderComponentRestrictions {
   }
   
   @scala.inline
-  implicit class GeocoderComponentRestrictionsOps[Self <: GeocoderComponentRestrictions] (val x: Self) extends AnyVal {
+  implicit class GeocoderComponentRestrictionsMutableBuilder[Self <: GeocoderComponentRestrictions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministrativeAreaUndefined: Self = StObject.set(x, "administrativeArea", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String | js.Array[String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeArea(value: String): Self = this.set("administrativeArea", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteAdministrativeArea: Self = this.set("administrativeArea", js.undefined)
+    def setCountryVarargs(value: String*): Self = StObject.set(x, "country", js.Array(value :_*))
     
     @scala.inline
-    def setCountryVarargs(value: String*): Self = this.set("country", js.Array(value :_*))
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String | js.Array[String]): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     
     @scala.inline
-    def deleteLocality: Self = this.set("locality", js.undefined)
+    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalCode: Self = this.set("postalCode", js.undefined)
-    
-    @scala.inline
-    def setRoute(value: String): Self = this.set("route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
   }
 }

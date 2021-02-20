@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.Blocked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.Identity")
 @js.native
-class Identity () extends js.Object {
+class Identity () extends StObject {
   def this(args: Blocked) = this()
   
   var blocked: js.UndefOr[Boolean] = js.native

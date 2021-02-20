@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateConnectivityInfoRequest extends js.Object {
+trait UpdateConnectivityInfoRequest extends StObject {
   
   /**
     * A list of connectivity info.
@@ -26,30 +27,18 @@ object UpdateConnectivityInfoRequest {
   }
   
   @scala.inline
-  implicit class UpdateConnectivityInfoRequestOps[Self <: UpdateConnectivityInfoRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateConnectivityInfoRequestMutableBuilder[Self <: UpdateConnectivityInfoRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectivityInfo(value: listOfConnectivityInfo): Self = StObject.set(x, "ConnectivityInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectivityInfoUndefined: Self = StObject.set(x, "ConnectivityInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectivityInfoVarargs(value: ConnectivityInfo*): Self = StObject.set(x, "ConnectivityInfo", js.Array(value :_*))
     
     @scala.inline
-    def setThingName(value: string): Self = this.set("ThingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectivityInfoVarargs(value: ConnectivityInfo*): Self = this.set("ConnectivityInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnectivityInfo(value: listOfConnectivityInfo): Self = this.set("ConnectivityInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectivityInfo: Self = this.set("ConnectivityInfo", js.undefined)
+    def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
   }
 }

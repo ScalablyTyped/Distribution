@@ -10,12 +10,13 @@ import typings.antvG2.antvG2Strings.mousemove
 import typings.antvG2.antvG2Strings.none
 import typings.antvG2.antvG2Strings.right
 import typings.antvG2.antvG2Strings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonTooltipConfig extends js.Object {
+trait CommonTooltipConfig extends StObject {
   
   var crosshairs: js.UndefOr[Style] = js.native
   
@@ -50,90 +51,78 @@ object CommonTooltipConfig {
   }
   
   @scala.inline
-  implicit class CommonTooltipConfigOps[Self <: CommonTooltipConfig] (val x: Self) extends AnyVal {
+  implicit class CommonTooltipConfigMutableBuilder[Self <: CommonTooltipConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrosshairs(value: Style): Self = StObject.set(x, "crosshairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrosshairsUndefined: Self = StObject.set(x, "crosshairs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairs(value: Style): Self = this.set("crosshairs", value.asInstanceOf[js.Any])
+    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     @scala.inline
-    def deleteCrosshairs: Self = this.set("crosshairs", js.undefined)
+    def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
     
     @scala.inline
-    def deleteFollow: Self = this.set("follow", js.undefined)
+    def setInPlot(value: Boolean): Self = StObject.set(x, "inPlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideMarkers(value: Boolean): Self = this.set("hideMarkers", value.asInstanceOf[js.Any])
+    def setInPlotUndefined: Self = StObject.set(x, "inPlot", js.undefined)
     
     @scala.inline
-    def deleteHideMarkers: Self = this.set("hideMarkers", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPlot(value: Boolean): Self = this.set("inPlot", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteInPlot: Self = this.set("inPlot", js.undefined)
+    def setPosition(value: left | right | top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: left | right | top | bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTitle(value: Boolean): Self = this.set("showTitle", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowTitle: Self = this.set("showTitle", js.undefined)
+    def setTriggerOn(value: mousemove | click | none): Self = StObject.set(x, "triggerOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTriggerOnUndefined: Self = StObject.set(x, "triggerOn", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: default | mini): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerOn(value: mousemove | click | none): Self = this.set("triggerOn", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTriggerOn: Self = this.set("triggerOn", js.undefined)
+    def setUseHtml(value: Boolean): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: default | mini): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUseHtml(value: Boolean): Self = this.set("useHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHtml: Self = this.set("useHtml", js.undefined)
+    def setUseHtmlUndefined: Self = StObject.set(x, "useHtml", js.undefined)
   }
 }

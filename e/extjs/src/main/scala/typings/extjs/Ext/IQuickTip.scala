@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,42 +36,30 @@ object IQuickTip {
   }
   
   @scala.inline
-  implicit class IQuickTipOps[Self <: IQuickTip] (val x: Self) extends AnyVal {
+  implicit class IQuickTipMutableBuilder[Self <: IQuickTip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelShow(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "cancelShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelShowUndefined: Self = StObject.set(x, "cancelShow", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterceptTitles(value: Boolean): Self = StObject.set(x, "interceptTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelShow(value: /* el */ js.UndefOr[js.Any] => Unit): Self = this.set("cancelShow", js.Any.fromFunction1(value))
+    def setInterceptTitlesUndefined: Self = StObject.set(x, "interceptTitles", js.undefined)
     
     @scala.inline
-    def deleteCancelShow: Self = this.set("cancelShow", js.undefined)
+    def setRegister(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInterceptTitles(value: Boolean): Self = this.set("interceptTitles", value.asInstanceOf[js.Any])
+    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
     @scala.inline
-    def deleteInterceptTitles: Self = this.set("interceptTitles", js.undefined)
+    def setUnregister(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegister(value: /* config */ js.UndefOr[js.Any] => Unit): Self = this.set("register", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRegister: Self = this.set("register", js.undefined)
-    
-    @scala.inline
-    def setUnregister(value: /* el */ js.UndefOr[js.Any] => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUnregister: Self = this.set("unregister", js.undefined)
+    def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
   }
 }

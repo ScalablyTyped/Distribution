@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsEncryption extends js.Object {
+trait HlsEncryption extends StObject {
   
   /**
     * A constant initialization vector for encryption (optional).
@@ -29,33 +30,21 @@ object HlsEncryption {
   }
   
   @scala.inline
-  implicit class HlsEncryptionOps[Self <: HlsEncryption] (val x: Self) extends AnyVal {
+  implicit class HlsEncryptionMutableBuilder[Self <: HlsEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstantInitializationVector(value: string): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionMethod(value: EncryptionMethod): Self = StObject.set(x, "EncryptionMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
+    def setEncryptionMethodUndefined: Self = StObject.set(x, "EncryptionMethod", js.undefined)
     
     @scala.inline
-    def setConstantInitializationVector(value: string): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
-    
-    @scala.inline
-    def setEncryptionMethod(value: EncryptionMethod): Self = this.set("EncryptionMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionMethod: Self = this.set("EncryptionMethod", js.undefined)
+    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
   }
 }

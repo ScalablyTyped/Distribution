@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EllipsoidGeodesic")
 @js.native
-class EllipsoidGeodesic () extends js.Object {
+class EllipsoidGeodesic () extends StObject {
   def this(start: Cartographic) = this()
   def this(start: js.UndefOr[scala.Nothing], end: Cartographic) = this()
   def this(start: Cartographic, end: Cartographic) = this()

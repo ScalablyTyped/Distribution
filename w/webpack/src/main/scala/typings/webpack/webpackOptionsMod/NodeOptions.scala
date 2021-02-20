@@ -5,6 +5,7 @@ import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackBooleans.`true`
 import typings.webpack.webpackStrings.empty
 import typings.webpack.webpackStrings.mock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,54 +56,42 @@ object NodeOptions {
   }
   
   @scala.inline
-  implicit class NodeOptionsOps[Self <: NodeOptions] (val x: Self) extends AnyVal {
+  implicit class NodeOptionsMutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: `false` | `true` | mock): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferUndefined: Self = StObject.set(x, "Buffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsole(value: `false` | `true` | mock): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffer(value: `false` | `true` | mock): Self = this.set("Buffer", value.asInstanceOf[js.Any])
+    def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     
     @scala.inline
-    def deleteBuffer: Self = this.set("Buffer", js.undefined)
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__dirname(value: `false` | `true` | mock): Self = this.set("__dirname", value.asInstanceOf[js.Any])
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def delete__dirname: Self = this.set("__dirname", js.undefined)
+    def setProcess(value: `false` | `true` | mock): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__filename(value: `false` | `true` | mock): Self = this.set("__filename", value.asInstanceOf[js.Any])
+    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     
     @scala.inline
-    def delete__filename: Self = this.set("__filename", js.undefined)
+    def set__dirname(value: `false` | `true` | mock): Self = StObject.set(x, "__dirname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsole(value: `false` | `true` | mock): Self = this.set("console", value.asInstanceOf[js.Any])
+    def set__dirnameUndefined: Self = StObject.set(x, "__dirname", js.undefined)
     
     @scala.inline
-    def deleteConsole: Self = this.set("console", js.undefined)
+    def set__filename(value: `false` | `true` | mock): Self = StObject.set(x, "__filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
-    
-    @scala.inline
-    def setProcess(value: `false` | `true` | mock): Self = this.set("process", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcess: Self = this.set("process", js.undefined)
+    def set__filenameUndefined: Self = StObject.set(x, "__filename", js.undefined)
   }
 }

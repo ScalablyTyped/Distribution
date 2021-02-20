@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocketTcpServerPermission extends js.Object {
+trait SocketTcpServerPermission extends StObject {
   
   /**
     * The host:port pattern for listen operations.
@@ -22,27 +23,15 @@ object SocketTcpServerPermission {
   }
   
   @scala.inline
-  implicit class SocketTcpServerPermissionOps[Self <: SocketTcpServerPermission] (val x: Self) extends AnyVal {
+  implicit class SocketTcpServerPermissionMutableBuilder[Self <: SocketTcpServerPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListen(value: String | js.Array[String]): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setListenVarargs(value: String*): Self = this.set("listen", js.Array(value :_*))
-    
-    @scala.inline
-    def setListen(value: String | js.Array[String]): Self = this.set("listen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListen: Self = this.set("listen", js.undefined)
+    def setListenVarargs(value: String*): Self = StObject.set(x, "listen", js.Array(value :_*))
   }
 }

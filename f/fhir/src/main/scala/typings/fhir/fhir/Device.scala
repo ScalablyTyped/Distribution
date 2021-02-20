@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -145,180 +146,168 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContact(value: js.Array[ContactPoint]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactVarargs(value: ContactPoint*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def set_expirationDate(value: Element): Self = this.set("_expirationDate", value.asInstanceOf[js.Any])
+    def setExpirationDate(value: dateTime): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_expirationDate: Self = this.set("_expirationDate", js.undefined)
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def set_lotNumber(value: Element): Self = this.set("_lotNumber", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_lotNumber: Self = this.set("_lotNumber", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set_manufactureDate(value: Element): Self = this.set("_manufactureDate", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def delete_manufactureDate: Self = this.set("_manufactureDate", js.undefined)
+    def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_manufacturer(value: Element): Self = this.set("_manufacturer", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def delete_manufacturer: Self = this.set("_manufacturer", js.undefined)
+    def setLotNumber(value: String): Self = StObject.set(x, "lotNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_model(value: Element): Self = this.set("_model", value.asInstanceOf[js.Any])
+    def setLotNumberUndefined: Self = StObject.set(x, "lotNumber", js.undefined)
     
     @scala.inline
-    def delete_model: Self = this.set("_model", js.undefined)
+    def setManufactureDate(value: dateTime): Self = StObject.set(x, "manufactureDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setManufactureDateUndefined: Self = StObject.set(x, "manufactureDate", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def delete_version: Self = this.set("_version", js.undefined)
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactVarargs(value: ContactPoint*): Self = this.set("contact", js.Array(value :_*))
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setContact(value: js.Array[ContactPoint]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setOwner(value: Reference): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: dateTime): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setSafety(value: js.Array[CodeableConcept]): Self = StObject.set(x, "safety", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setSafetyUndefined: Self = StObject.set(x, "safety", js.undefined)
     
     @scala.inline
-    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setSafetyVarargs(value: CodeableConcept*): Self = StObject.set(x, "safety", js.Array(value :_*))
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLotNumber(value: String): Self = this.set("lotNumber", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteLotNumber: Self = this.set("lotNumber", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufactureDate(value: dateTime): Self = this.set("manufactureDate", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteManufactureDate: Self = this.set("manufactureDate", js.undefined)
+    def setUdi(value: DeviceUdi): Self = StObject.set(x, "udi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setUdiUndefined: Self = StObject.set(x, "udi", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
     
     @scala.inline
-    def setOwner(value: Reference): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def set_lotNumber(value: Element): Self = StObject.set(x, "_lotNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def set_lotNumberUndefined: Self = StObject.set(x, "_lotNumber", js.undefined)
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def set_manufactureDate(value: Element): Self = StObject.set(x, "_manufactureDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePatient: Self = this.set("patient", js.undefined)
+    def set_manufactureDateUndefined: Self = StObject.set(x, "_manufactureDate", js.undefined)
     
     @scala.inline
-    def setSafetyVarargs(value: CodeableConcept*): Self = this.set("safety", js.Array(value :_*))
+    def set_manufacturer(value: Element): Self = StObject.set(x, "_manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafety(value: js.Array[CodeableConcept]): Self = this.set("safety", value.asInstanceOf[js.Any])
+    def set_manufacturerUndefined: Self = StObject.set(x, "_manufacturer", js.undefined)
     
     @scala.inline
-    def deleteSafety: Self = this.set("safety", js.undefined)
+    def set_model(value: Element): Self = StObject.set(x, "_model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def set_modelUndefined: Self = StObject.set(x, "_model", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUdi(value: DeviceUdi): Self = this.set("udi", value.asInstanceOf[js.Any])
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     @scala.inline
-    def deleteUdi: Self = this.set("udi", js.undefined)
+    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

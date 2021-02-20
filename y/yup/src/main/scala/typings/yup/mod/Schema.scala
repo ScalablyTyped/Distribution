@@ -1,12 +1,16 @@
 package typings.yup.mod
 
 import typings.yup.anon.Values
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schema[T, C] extends js.Object {
+trait Schema[T, C] extends StObject {
+  
+  def default(): T = js.native
+  def default(value: js.Any): this.type = js.native
   
   def cast(): T = js.native
   def cast(value: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
@@ -14,9 +18,6 @@ trait Schema[T, C] extends js.Object {
   def cast(value: js.Any, options: js.Any): T = js.native
   
   def concat(schema: this.type): this.type = js.native
-  
-  def default(): T = js.native
-  def default(value: js.Any): this.type = js.native
   
   def describe(): SchemaDescription = js.native
   

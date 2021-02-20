@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTagsOutput extends js.Object {
+trait DescribeTagsOutput extends StObject {
   
   /**
     * Information about the tags.
@@ -21,27 +22,15 @@ object DescribeTagsOutput {
   }
   
   @scala.inline
-  implicit class DescribeTagsOutputOps[Self <: DescribeTagsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeTagsOutputMutableBuilder[Self <: DescribeTagsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTagDescriptions(value: TagDescriptions): Self = StObject.set(x, "TagDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTagDescriptionsUndefined: Self = StObject.set(x, "TagDescriptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTagDescriptionsVarargs(value: TagDescription*): Self = this.set("TagDescriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagDescriptions(value: TagDescriptions): Self = this.set("TagDescriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagDescriptions: Self = this.set("TagDescriptions", js.undefined)
+    def setTagDescriptionsVarargs(value: TagDescription*): Self = StObject.set(x, "TagDescriptions", js.Array(value :_*))
   }
 }

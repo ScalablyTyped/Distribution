@@ -1,12 +1,13 @@
 package typings.waypoints
 
 import typings.waypoints.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaypointAdapter extends js.Object {
+trait WaypointAdapter extends StObject {
   
   def innerHeight(): Double = js.native
   
@@ -45,45 +46,33 @@ object WaypointAdapter {
   }
   
   @scala.inline
-  implicit class WaypointAdapterOps[Self <: WaypointAdapter] (val x: Self) extends AnyVal {
+  implicit class WaypointAdapterMutableBuilder[Self <: WaypointAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInnerHeight(value: () => Double): Self = StObject.set(x, "innerHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInnerWidth(value: () => Double): Self = StObject.set(x, "innerWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOff(value: String => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInnerHeight(value: () => Double): Self = this.set("innerHeight", js.Any.fromFunction0(value))
+    def setOffset(value: () => Left): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInnerWidth(value: () => Double): Self = this.set("innerWidth", js.Any.fromFunction0(value))
+    def setOn(value: (String, js.Function0[Unit]) => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOff(value: String => js.UndefOr[scala.Nothing]): Self = this.set("off", js.Any.fromFunction1(value))
+    def setOuterHeight(value: Boolean => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffset(value: () => Left): Self = this.set("offset", js.Any.fromFunction0(value))
+    def setOuterWidth(value: Boolean => Double): Self = StObject.set(x, "outerWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOn(value: (String, js.Function0[Unit]) => js.UndefOr[scala.Nothing]): Self = this.set("on", js.Any.fromFunction2(value))
+    def setScrollLeft(value: () => Double): Self = StObject.set(x, "scrollLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOuterHeight(value: Boolean => Double): Self = this.set("outerHeight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOuterWidth(value: Boolean => Double): Self = this.set("outerWidth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScrollLeft(value: () => Double): Self = this.set("scrollLeft", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScrollTop(value: () => Double): Self = this.set("scrollTop", js.Any.fromFunction0(value))
+    def setScrollTop(value: () => Double): Self = StObject.set(x, "scrollTop", js.Any.fromFunction0(value))
   }
 }

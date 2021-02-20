@@ -1,13 +1,12 @@
 package typings.materialSnackbar
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/snackbar/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
+object utilMod {
   
   /**
     * @license
@@ -31,6 +30,10 @@ object utilMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
+  @JSImport("@material/snackbar/util", "announce")
+  @js.native
   def announce(ariaEl: Element): Unit = js.native
+  @JSImport("@material/snackbar/util", "announce")
+  @js.native
   def announce(ariaEl: Element, labelEl: Element): Unit = js.native
 }

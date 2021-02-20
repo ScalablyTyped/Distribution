@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoftwareTokenMfaSettingsType extends js.Object {
+trait SoftwareTokenMfaSettingsType extends StObject {
   
   /**
     * Specifies whether software token MFA is enabled.
@@ -26,30 +27,18 @@ object SoftwareTokenMfaSettingsType {
   }
   
   @scala.inline
-  implicit class SoftwareTokenMfaSettingsTypeOps[Self <: SoftwareTokenMfaSettingsType] (val x: Self) extends AnyVal {
+  implicit class SoftwareTokenMfaSettingsTypeMutableBuilder[Self <: SoftwareTokenMfaSettingsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreferredMfa(value: BooleanType): Self = StObject.set(x, "PreferredMfa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: BooleanType): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
-    
-    @scala.inline
-    def setPreferredMfa(value: BooleanType): Self = this.set("PreferredMfa", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredMfa: Self = this.set("PreferredMfa", js.undefined)
+    def setPreferredMfaUndefined: Self = StObject.set(x, "PreferredMfa", js.undefined)
   }
 }

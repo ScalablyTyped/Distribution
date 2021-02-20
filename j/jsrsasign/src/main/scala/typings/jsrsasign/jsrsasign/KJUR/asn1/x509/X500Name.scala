@@ -1,6 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,27 +91,15 @@ object X500Name {
   }
   
   @scala.inline
-  implicit class X500NameOps[Self <: X500Name] (val x: Self) extends AnyVal {
+  implicit class X500NameMutableBuilder[Self <: X500Name] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetByLdapString(value: String => Unit): Self = StObject.set(x, "setByLdapString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetByObject(value: X500NameParam => Unit): Self = StObject.set(x, "setByObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetByLdapString(value: String => Unit): Self = this.set("setByLdapString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetByObject(value: X500NameParam => Unit): Self = this.set("setByObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetByString(value: String => Unit): Self = this.set("setByString", js.Any.fromFunction1(value))
+    def setSetByString(value: String => Unit): Self = StObject.set(x, "setByString", js.Any.fromFunction1(value))
   }
 }

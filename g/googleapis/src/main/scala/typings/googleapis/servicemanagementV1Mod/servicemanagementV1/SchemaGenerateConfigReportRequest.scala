@@ -1,6 +1,7 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for GenerateConfigReport method.
   */
 @js.native
-trait SchemaGenerateConfigReportRequest extends js.Object {
+trait SchemaGenerateConfigReportRequest extends StObject {
   
   /**
     * Service configuration for which we want to generate the report. For this
@@ -36,30 +37,18 @@ object SchemaGenerateConfigReportRequest {
   }
   
   @scala.inline
-  implicit class SchemaGenerateConfigReportRequestOps[Self <: SchemaGenerateConfigReportRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGenerateConfigReportRequestMutableBuilder[Self <: SchemaGenerateConfigReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewConfig(value: StringDictionary[js.Any]): Self = this.set("newConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewConfig: Self = this.set("newConfig", js.undefined)
-    
-    @scala.inline
-    def setOldConfig(value: StringDictionary[js.Any]): Self = this.set("oldConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldConfig: Self = this.set("oldConfig", js.undefined)
+    def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)
   }
 }

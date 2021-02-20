@@ -1,36 +1,32 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DraftStateType extends js.Object
+sealed trait DraftStateType extends StObject
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "DraftStateType")
 @js.native
-object DraftStateType extends js.Object {
+object DraftStateType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DraftStateType with Double] = js.native
   
   @js.native
   sealed trait Cancelled extends DraftStateType
-  /* 3 */ @js.native
-  object Cancelled extends TopLevel[Cancelled with Double]
+  /* 3 */ val Cancelled: typings.vsoNodeApi.galleryInterfacesMod.DraftStateType.Cancelled with Double = js.native
   
   @js.native
   sealed trait Error extends DraftStateType
-  /* 4 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 4 */ val Error: typings.vsoNodeApi.galleryInterfacesMod.DraftStateType.Error with Double = js.native
   
   @js.native
   sealed trait Published extends DraftStateType
-  /* 2 */ @js.native
-  object Published extends TopLevel[Published with Double]
+  /* 2 */ val Published: typings.vsoNodeApi.galleryInterfacesMod.DraftStateType.Published with Double = js.native
   
   @js.native
   sealed trait Unpublished extends DraftStateType
-  /* 1 */ @js.native
-  object Unpublished extends TopLevel[Unpublished with Double]
+  /* 1 */ val Unpublished: typings.vsoNodeApi.galleryInterfacesMod.DraftStateType.Unpublished with Double = js.native
 }

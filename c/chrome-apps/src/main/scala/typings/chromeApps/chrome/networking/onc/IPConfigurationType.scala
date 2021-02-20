@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.IPv4
   - typings.chromeApps.chromeAppsStrings.IPv6
 */
-trait IPConfigurationType extends js.Object
+trait IPConfigurationType extends StObject
 object IPConfigurationType {
   
   @scala.inline

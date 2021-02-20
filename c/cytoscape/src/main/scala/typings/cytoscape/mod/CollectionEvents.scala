@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/events
   */
 @js.native
-trait CollectionEvents extends js.Object {
+trait CollectionEvents extends StObject {
   
   def addListener(events: EventNames, handler: EventHandler): this.type = js.native
   def addListener(events: EventNames, selector: String, data: js.Any, handler: EventHandler): this.type = js.native

@@ -1,6 +1,7 @@
 package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,42 +32,30 @@ object IHighlight {
   }
   
   @scala.inline
-  implicit class IHighlightOps[Self <: IHighlight] (val x: Self) extends AnyVal {
+  implicit class IHighlightMutableBuilder[Self <: IHighlight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightCfg(value: js.Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightCfgUndefined: Self = StObject.set(x, "highlightCfg", js.undefined)
     
     @scala.inline
-    def setHighlight(value: js.Any): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
     @scala.inline
-    def setHighlightCfg(value: js.Any): Self = this.set("highlightCfg", value.asInstanceOf[js.Any])
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def deleteHighlightCfg: Self = this.set("highlightCfg", js.undefined)
+    def setUnHighlightItem(value: () => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("highlightItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHighlightItem: Self = this.set("highlightItem", js.undefined)
-    
-    @scala.inline
-    def setUnHighlightItem(value: () => Unit): Self = this.set("unHighlightItem", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteUnHighlightItem: Self = this.set("unHighlightItem", js.undefined)
+    def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
   }
 }

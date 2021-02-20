@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutBucketInventoryConfigurationRequest extends js.Object {
+trait PutBucketInventoryConfigurationRequest extends StObject {
   
   /**
     * The name of the bucket where the inventory configuration will be stored.
@@ -36,33 +37,21 @@ object PutBucketInventoryConfigurationRequest {
   }
   
   @scala.inline
-  implicit class PutBucketInventoryConfigurationRequestOps[Self <: PutBucketInventoryConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class PutBucketInventoryConfigurationRequestMutableBuilder[Self <: PutBucketInventoryConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: InventoryId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInventoryConfiguration(value: InventoryConfiguration): Self = this.set("InventoryConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setInventoryConfiguration(value: InventoryConfiguration): Self = StObject.set(x, "InventoryConfiguration", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VRLayer extends js.Object {
+trait VRLayer extends StObject {
   
   var leftBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.native
   
@@ -22,51 +23,39 @@ object VRLayer {
   }
   
   @scala.inline
-  implicit class VRLayerOps[Self <: VRLayer] (val x: Self) extends AnyVal {
+  implicit class VRLayerMutableBuilder[Self <: VRLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftBounds(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "leftBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftBoundsNull: Self = StObject.set(x, "leftBounds", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftBoundsUndefined: Self = StObject.set(x, "leftBounds", js.undefined)
     
     @scala.inline
-    def setLeftBoundsVarargs(value: Double*): Self = this.set("leftBounds", js.Array(value :_*))
+    def setLeftBoundsVarargs(value: Double*): Self = StObject.set(x, "leftBounds", js.Array(value :_*))
     
     @scala.inline
-    def setLeftBounds(value: js.Array[Double] | Float32Array): Self = this.set("leftBounds", value.asInstanceOf[js.Any])
+    def setRightBounds(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "rightBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeftBounds: Self = this.set("leftBounds", js.undefined)
+    def setRightBoundsNull: Self = StObject.set(x, "rightBounds", null)
     
     @scala.inline
-    def setLeftBoundsNull: Self = this.set("leftBounds", null)
+    def setRightBoundsUndefined: Self = StObject.set(x, "rightBounds", js.undefined)
     
     @scala.inline
-    def setRightBoundsVarargs(value: Double*): Self = this.set("rightBounds", js.Array(value :_*))
+    def setRightBoundsVarargs(value: Double*): Self = StObject.set(x, "rightBounds", js.Array(value :_*))
     
     @scala.inline
-    def setRightBounds(value: js.Array[Double] | Float32Array): Self = this.set("rightBounds", value.asInstanceOf[js.Any])
+    def setSource(value: HTMLCanvasElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRightBounds: Self = this.set("rightBounds", js.undefined)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setRightBoundsNull: Self = this.set("rightBounds", null)
-    
-    @scala.inline
-    def setSource(value: HTMLCanvasElement): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

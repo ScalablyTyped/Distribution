@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleDestinationSummary extends js.Object {
+trait TopicRuleDestinationSummary extends StObject {
   
   /**
     * The topic rule destination ARN.
@@ -36,42 +37,30 @@ object TopicRuleDestinationSummary {
   }
   
   @scala.inline
-  implicit class TopicRuleDestinationSummaryOps[Self <: TopicRuleDestinationSummary] (val x: Self) extends AnyVal {
+  implicit class TopicRuleDestinationSummaryMutableBuilder[Self <: TopicRuleDestinationSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpUrlSummary(value: HttpUrlDestinationSummary): Self = StObject.set(x, "httpUrlSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: AwsArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setHttpUrlSummaryUndefined: Self = StObject.set(x, "httpUrlSummary", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setStatus(value: TopicRuleDestinationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpUrlSummary(value: HttpUrlDestinationSummary): Self = this.set("httpUrlSummary", value.asInstanceOf[js.Any])
+    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpUrlSummary: Self = this.set("httpUrlSummary", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
     @scala.inline
-    def setStatus(value: TopicRuleDestinationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Edge extends js.Object {
+trait Edge extends StObject {
   
   var edge: Boolean = js.native
   
@@ -38,39 +39,27 @@ object Edge {
   }
   
   @scala.inline
-  implicit class EdgeOps[Self <: Edge] (val x: Self) extends AnyVal {
+  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdge(value: Boolean): Self = this.set("edge", value.asInstanceOf[js.Any])
+    def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozilla(value: Boolean): Self = this.set("mozilla", value.asInstanceOf[js.Any])
+    def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsie(value: Boolean): Self = this.set("msie", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpera(value: Boolean): Self = this.set("opera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSafari(value: Boolean): Self = this.set("safari", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebkit(value: Boolean): Self = this.set("webkit", value.asInstanceOf[js.Any])
+    def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
   }
 }

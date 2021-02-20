@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Spline")
 @js.native
-class Spline () extends js.Object {
+class Spline () extends StObject {
   
   def evaluate(time: Double): Cartesian3 | Quaternion = js.native
   def evaluate(time: Double, result: Cartesian3): Cartesian3 | Quaternion = js.native

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains relative size settings for floating objects.
   */
 @js.native
-trait TextBoxRelativeSizeSettings extends js.Object {
+trait TextBoxRelativeSizeSettings extends StObject {
   
   /**
     * Gets or sets the percentage specifying a floating object's height relative to the element defined by the TextBoxRelativeSizeSettings.relativeHeightType property.
@@ -44,30 +45,18 @@ object TextBoxRelativeSizeSettings {
   }
   
   @scala.inline
-  implicit class TextBoxRelativeSizeSettingsOps[Self <: TextBoxRelativeSizeSettings] (val x: Self) extends AnyVal {
+  implicit class TextBoxRelativeSizeSettingsMutableBuilder[Self <: TextBoxRelativeSizeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelativeHeight(value: Double): Self = StObject.set(x, "relativeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelativeHeightType(value: FloatingObjectRelativeHeightType): Self = StObject.set(x, "relativeHeightType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelativeWidth(value: Double): Self = StObject.set(x, "relativeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeHeight(value: Double): Self = this.set("relativeHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelativeHeightType(value: FloatingObjectRelativeHeightType): Self = this.set("relativeHeightType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelativeWidth(value: Double): Self = this.set("relativeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelativeWidthType(value: FloatingObjectRelativeWidthType): Self = this.set("relativeWidthType", value.asInstanceOf[js.Any])
+    def setRelativeWidthType(value: FloatingObjectRelativeWidthType): Self = StObject.set(x, "relativeWidthType", value.asInstanceOf[js.Any])
   }
 }

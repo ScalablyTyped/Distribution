@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.animations
 
 import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
-trait Timing extends js.Object
+trait Timing extends StObject
 object Timing {
   
   /** specifies that a duration, end or start time is indefinite */

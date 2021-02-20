@@ -5,14 +5,14 @@ import typings.pulumiKubernetes.auditSinkMod.AuditSinkArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", JSImport.Namespace)
-@js.native
-object v1alpha1Mod extends js.Object {
+object v1alpha1Mod {
   
+  @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSink")
   @js.native
   class AuditSink protected ()
     extends typings.pulumiKubernetes.auditSinkMod.AuditSink {
@@ -29,8 +29,7 @@ object v1alpha1Mod extends js.Object {
     def this(name: String, args: AuditSinkArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object AuditSink extends js.Object {
+  object AuditSink {
     
     /**
       * Get an existing AuditSink resource's state with the given name, ID, and optional extra
@@ -40,16 +39,23 @@ object v1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSink.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.auditSinkMod.AuditSink = js.native
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSink.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.auditSinkMod.AuditSink = js.native
     
     /**
       * Returns true if the given object is an instance of AuditSink.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSink.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSinkList")
   @js.native
   class AuditSinkList protected ()
     extends typings.pulumiKubernetes.auditSinkListMod.AuditSinkList {
@@ -66,8 +72,7 @@ object v1alpha1Mod extends js.Object {
     def this(name: String, args: AuditSinkListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object AuditSinkList extends js.Object {
+  object AuditSinkList {
     
     /**
       * Get an existing AuditSinkList resource's state with the given name, ID, and optional extra
@@ -77,13 +82,19 @@ object v1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSinkList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.auditSinkListMod.AuditSinkList = js.native
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSinkList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.auditSinkListMod.AuditSinkList = js.native
     
     /**
       * Returns true if the given object is an instance of AuditSinkList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/auditregistration/v1alpha1", "AuditSinkList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean = js.native
   }
 }

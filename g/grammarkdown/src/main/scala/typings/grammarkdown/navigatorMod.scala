@@ -4,16 +4,16 @@ import typings.grammarkdown.nodesMod.Node
 import typings.grammarkdown.nodesMod.SourceFile
 import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.grammarkdown.typesMod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/navigator", JSImport.Namespace)
-@js.native
-object navigatorMod extends js.Object {
+object navigatorMod {
   
+  @JSImport("grammarkdown/dist/navigator", "NodeNavigator")
   @js.native
-  class NodeNavigator protected () extends js.Object {
+  class NodeNavigator protected () extends StObject {
     /**
       * @param other A {@link NodeNavigator} whose position information is used to create this navigator.
       */

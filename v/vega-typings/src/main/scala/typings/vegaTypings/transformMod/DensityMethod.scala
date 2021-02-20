@@ -1,5 +1,6 @@
 package typings.vegaTypings.transformMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.pdf
   - typings.vegaTypings.vegaTypingsStrings.cdf
 */
-trait DensityMethod extends js.Object
+trait DensityMethod extends StObject
 object DensityMethod {
   
   @scala.inline

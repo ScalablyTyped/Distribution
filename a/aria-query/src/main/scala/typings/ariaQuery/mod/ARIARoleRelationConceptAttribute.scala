@@ -2,12 +2,13 @@ package typings.ariaQuery.mod
 
 import typings.ariaQuery.ariaQueryStrings.Greaterthansign1
 import typings.ariaQuery.ariaQueryStrings.unset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARIARoleRelationConceptAttribute extends js.Object {
+trait ARIARoleRelationConceptAttribute extends StObject {
   
   // These constraints are drawn from the mapping between ARIA and HTML:
   // https://www.w3.org/TR/html-aria
@@ -26,36 +27,24 @@ object ARIARoleRelationConceptAttribute {
   }
   
   @scala.inline
-  implicit class ARIARoleRelationConceptAttributeOps[Self <: ARIARoleRelationConceptAttribute] (val x: Self) extends AnyVal {
+  implicit class ARIARoleRelationConceptAttributeMutableBuilder[Self <: ARIARoleRelationConceptAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: js.Array[unset | Greaterthansign1]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintsVarargs(value: (unset | Greaterthansign1)*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintsVarargs(value: (unset | Greaterthansign1)*): Self = this.set("constraints", js.Array(value :_*))
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: js.Array[unset | Greaterthansign1]): Self = this.set("constraints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConstraints: Self = this.set("constraints", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

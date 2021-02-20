@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbStatusInfo extends js.Object {
+trait AwsRdsDbStatusInfo extends StObject {
   
   /**
     * If the read replica is currently in an error state, provides the error details.
@@ -36,42 +37,30 @@ object AwsRdsDbStatusInfo {
   }
   
   @scala.inline
-  implicit class AwsRdsDbStatusInfoOps[Self <: AwsRdsDbStatusInfo] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbStatusInfoMutableBuilder[Self <: AwsRdsDbStatusInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormal(value: Boolean): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: NonEmptyString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setNormalUndefined: Self = StObject.set(x, "Normal", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: Boolean): Self = this.set("Normal", value.asInstanceOf[js.Any])
+    def setStatusType(value: NonEmptyString): Self = StObject.set(x, "StatusType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormal: Self = this.set("Normal", js.undefined)
+    def setStatusTypeUndefined: Self = StObject.set(x, "StatusType", js.undefined)
     
     @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusType(value: NonEmptyString): Self = this.set("StatusType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusType: Self = this.set("StatusType", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainClusterConfig extends js.Object {
+trait DomainClusterConfig extends StObject {
   
   /**
     * Number of dedicated master nodes in the cluster
@@ -66,78 +67,66 @@ object DomainClusterConfig {
   }
   
   @scala.inline
-  implicit class DomainClusterConfigOps[Self <: DomainClusterConfig] (val x: Self) extends AnyVal {
+  implicit class DomainClusterConfigMutableBuilder[Self <: DomainClusterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDedicatedMasterCount(value: Double): Self = StObject.set(x, "dedicatedMasterCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDedicatedMasterCountUndefined: Self = StObject.set(x, "dedicatedMasterCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDedicatedMasterEnabled(value: Boolean): Self = StObject.set(x, "dedicatedMasterEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedicatedMasterCount(value: Double): Self = this.set("dedicatedMasterCount", value.asInstanceOf[js.Any])
+    def setDedicatedMasterEnabledUndefined: Self = StObject.set(x, "dedicatedMasterEnabled", js.undefined)
     
     @scala.inline
-    def deleteDedicatedMasterCount: Self = this.set("dedicatedMasterCount", js.undefined)
+    def setDedicatedMasterType(value: String): Self = StObject.set(x, "dedicatedMasterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedicatedMasterEnabled(value: Boolean): Self = this.set("dedicatedMasterEnabled", value.asInstanceOf[js.Any])
+    def setDedicatedMasterTypeUndefined: Self = StObject.set(x, "dedicatedMasterType", js.undefined)
     
     @scala.inline
-    def deleteDedicatedMasterEnabled: Self = this.set("dedicatedMasterEnabled", js.undefined)
+    def setInstanceCount(value: Double): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedicatedMasterType(value: String): Self = this.set("dedicatedMasterType", value.asInstanceOf[js.Any])
+    def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
     
     @scala.inline
-    def deleteDedicatedMasterType: Self = this.set("dedicatedMasterType", js.undefined)
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCount(value: Double): Self = this.set("instanceCount", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceCount: Self = this.set("instanceCount", js.undefined)
+    def setWarmCount(value: Double): Self = StObject.set(x, "warmCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setWarmCountUndefined: Self = StObject.set(x, "warmCount", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    def setWarmEnabled(value: Boolean): Self = StObject.set(x, "warmEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarmCount(value: Double): Self = this.set("warmCount", value.asInstanceOf[js.Any])
+    def setWarmEnabledUndefined: Self = StObject.set(x, "warmEnabled", js.undefined)
     
     @scala.inline
-    def deleteWarmCount: Self = this.set("warmCount", js.undefined)
+    def setWarmType(value: String): Self = StObject.set(x, "warmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarmEnabled(value: Boolean): Self = this.set("warmEnabled", value.asInstanceOf[js.Any])
+    def setWarmTypeUndefined: Self = StObject.set(x, "warmType", js.undefined)
     
     @scala.inline
-    def deleteWarmEnabled: Self = this.set("warmEnabled", js.undefined)
+    def setZoneAwarenessConfig(value: DomainClusterConfigZoneAwarenessConfig): Self = StObject.set(x, "zoneAwarenessConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarmType(value: String): Self = this.set("warmType", value.asInstanceOf[js.Any])
+    def setZoneAwarenessConfigUndefined: Self = StObject.set(x, "zoneAwarenessConfig", js.undefined)
     
     @scala.inline
-    def deleteWarmType: Self = this.set("warmType", js.undefined)
+    def setZoneAwarenessEnabled(value: Boolean): Self = StObject.set(x, "zoneAwarenessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoneAwarenessConfig(value: DomainClusterConfigZoneAwarenessConfig): Self = this.set("zoneAwarenessConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneAwarenessConfig: Self = this.set("zoneAwarenessConfig", js.undefined)
-    
-    @scala.inline
-    def setZoneAwarenessEnabled(value: Boolean): Self = this.set("zoneAwarenessEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneAwarenessEnabled: Self = this.set("zoneAwarenessEnabled", js.undefined)
+    def setZoneAwarenessEnabledUndefined: Self = StObject.set(x, "zoneAwarenessEnabled", js.undefined)
   }
 }

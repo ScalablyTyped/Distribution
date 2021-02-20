@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListEmployeesRequest")
 @js.native
-class ListEmployeesRequest () extends js.Object {
+class ListEmployeesRequest () extends StObject {
   
   /**
     * The token required to retrieve the specified page of results.

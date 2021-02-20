@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointLocation extends js.Object {
+trait EndpointLocation extends StObject {
   
   /**
     * The name of the city where the endpoint is located.
@@ -46,54 +47,42 @@ object EndpointLocation {
   }
   
   @scala.inline
-  implicit class EndpointLocationOps[Self <: EndpointLocation] (val x: Self) extends AnyVal {
+  implicit class EndpointLocationMutableBuilder[Self <: EndpointLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: string): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: string): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: string): Self = this.set("City", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("City", js.undefined)
+    def setLatitude(value: double): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: string): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "Latitude", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("Country", js.undefined)
+    def setLongitude(value: double): Self = StObject.set(x, "Longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: double): Self = this.set("Latitude", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "Longitude", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("Latitude", js.undefined)
+    def setPostalCode(value: string): Self = StObject.set(x, "PostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: double): Self = this.set("Longitude", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "PostalCode", js.undefined)
     
     @scala.inline
-    def deleteLongitude: Self = this.set("Longitude", js.undefined)
+    def setRegion(value: string): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: string): Self = this.set("PostalCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalCode: Self = this.set("PostalCode", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: string): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
   }
 }

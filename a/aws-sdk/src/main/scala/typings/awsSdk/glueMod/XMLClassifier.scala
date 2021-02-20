@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLClassifier extends js.Object {
+trait XMLClassifier extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches.
@@ -46,48 +47,36 @@ object XMLClassifier {
   }
   
   @scala.inline
-  implicit class XMLClassifierOps[Self <: XMLClassifier] (val x: Self) extends AnyVal {
+  implicit class XMLClassifierMutableBuilder[Self <: XMLClassifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassification(value: Classification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def setClassification(value: Classification): Self = this.set("Classification", value.asInstanceOf[js.Any])
+    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setRowTag(value: RowTag): Self = StObject.set(x, "RowTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setRowTagUndefined: Self = StObject.set(x, "RowTag", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setVersion(value: VersionId): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowTag(value: RowTag): Self = this.set("RowTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowTag: Self = this.set("RowTag", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: VersionId): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

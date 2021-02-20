@@ -2,16 +2,16 @@ package typings.agGrid
 
 import typings.agGrid.gridCellMod.GridCell
 import typings.agGrid.gridRowMod.GridRow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/cellNavigationService", JSImport.Namespace)
-@js.native
-object cellNavigationServiceMod extends js.Object {
+object cellNavigationServiceMod {
   
+  @JSImport("ag-grid/dist/lib/cellNavigationService", "CellNavigationService")
   @js.native
-  class CellNavigationService () extends js.Object {
+  class CellNavigationService () extends StObject {
     
     var columnController: js.Any = js.native
     

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.dynamodb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableTtl extends js.Object {
+trait TableTtl extends StObject {
   
   /**
     * The name of the table attribute to store the TTL timestamp in.
@@ -26,27 +27,15 @@ object TableTtl {
   }
   
   @scala.inline
-  implicit class TableTtlOps[Self <: TableTtl] (val x: Self) extends AnyVal {
+  implicit class TableTtlMutableBuilder[Self <: TableTtl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

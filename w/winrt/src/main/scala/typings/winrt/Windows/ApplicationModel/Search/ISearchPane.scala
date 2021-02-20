@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISearchPane extends js.Object {
+trait ISearchPane extends StObject {
   
   var language: String = js.native
   

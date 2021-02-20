@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,96 +55,84 @@ object MarkerOptions {
   }
   
   @scala.inline
-  implicit class MarkerOptionsOps[Self <: MarkerOptions] (val x: Self) extends AnyVal {
+  implicit class MarkerOptionsMutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setAutoPanPadding(value: PointExpression): Self = StObject.set(x, "autoPanPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setAutoPanPaddingUndefined: Self = StObject.set(x, "autoPanPadding", js.undefined)
     
     @scala.inline
-    def setAutoPan(value: Boolean): Self = this.set("autoPan", value.asInstanceOf[js.Any])
+    def setAutoPanSpeed(value: Double): Self = StObject.set(x, "autoPanSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoPan: Self = this.set("autoPan", js.undefined)
+    def setAutoPanSpeedUndefined: Self = StObject.set(x, "autoPanSpeed", js.undefined)
     
     @scala.inline
-    def setAutoPanPadding(value: PointExpression): Self = this.set("autoPanPadding", value.asInstanceOf[js.Any])
+    def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
     
     @scala.inline
-    def deleteAutoPanPadding: Self = this.set("autoPanPadding", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPanSpeed(value: Double): Self = this.set("autoPanSpeed", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteAutoPanSpeed: Self = this.set("autoPanSpeed", js.undefined)
+    def setIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Icon_[IconOptions] | DivIcon_): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setRiseOffset(value: Double): Self = StObject.set(x, "riseOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setRiseOffsetUndefined: Self = StObject.set(x, "riseOffset", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRiseOnHover(value: Boolean): Self = StObject.set(x, "riseOnHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiseOffset(value: Double): Self = this.set("riseOffset", value.asInstanceOf[js.Any])
+    def setRiseOnHoverUndefined: Self = StObject.set(x, "riseOnHover", js.undefined)
     
     @scala.inline
-    def deleteRiseOffset: Self = this.set("riseOffset", js.undefined)
+    def setShadowPane(value: String): Self = StObject.set(x, "shadowPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiseOnHover(value: Boolean): Self = this.set("riseOnHover", value.asInstanceOf[js.Any])
+    def setShadowPaneUndefined: Self = StObject.set(x, "shadowPane", js.undefined)
     
     @scala.inline
-    def deleteRiseOnHover: Self = this.set("riseOnHover", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowPane(value: String): Self = this.set("shadowPane", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShadowPane: Self = this.set("shadowPane", js.undefined)
+    def setZIndexOffset(value: Double): Self = StObject.set(x, "zIndexOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setZIndexOffset(value: Double): Self = this.set("zIndexOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndexOffset: Self = this.set("zIndexOffset", js.undefined)
+    def setZIndexOffsetUndefined: Self = StObject.set(x, "zIndexOffset", js.undefined)
   }
 }

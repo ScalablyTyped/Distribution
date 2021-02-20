@@ -2,20 +2,20 @@ package typings.grasp.anon
 
 import typings.cliColor.mod.Color
 import typings.node.anon.ReadStreamfd0
-import typings.node.consoleMod.global.Console_
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Args extends js.Object {
+trait Args extends StObject {
   
   var args: js.Array[String] | (Record[String, _]) | String = js.native
   
   var callback: js.UndefOr[js.Function1[/* result */ String, Unit]] = js.native
   
-  var console: js.UndefOr[Console_] = js.native
+  var console: js.UndefOr[Typeofconsole] = js.native
   
   var error: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
   
@@ -45,72 +45,60 @@ object Args {
   }
   
   @scala.inline
-  implicit class ArgsOps[Self <: Args] (val x: Self) extends AnyVal {
+  implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String] | (Record[String, _]) | String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: /* result */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def setArgs(value: js.Array[String] | (Record[String, _]) | String): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setConsole(value: Typeofconsole): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* result */ String => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setError(value: /* message */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConsole(value: Console_): Self = this.set("console", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteConsole: Self = this.set("console", js.undefined)
+    def setExit(value: /* code */ Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* message */ String => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit(value: /* code */ Double => Unit): Self = this.set("exit", js.Any.fromFunction1(value))
+    def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
     @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFs(value: Typeoffs): Self = this.set("fs", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteFs: Self = this.set("fs", js.undefined)
+    def setStdin(value: ReadStreamfd0): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setTextFormat(value: Color): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdin(value: ReadStreamfd0): Self = this.set("stdin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdin: Self = this.set("stdin", js.undefined)
-    
-    @scala.inline
-    def setTextFormat(value: Color): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

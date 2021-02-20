@@ -6,14 +6,14 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/templates/ResourceBadges", JSImport.Namespace)
-@js.native
-object resourceBadgesMod extends js.Object {
+object resourceBadgesMod {
   
+  @JSImport("gitlab/dist/types/core/templates/ResourceBadges", "ResourceBadges")
   @js.native
   class ResourceBadges protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()

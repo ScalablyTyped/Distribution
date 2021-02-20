@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Submodule")
 @js.native
-class Submodule protected () extends js.Object {
+class Submodule protected () extends StObject {
   def this(repo: js.Any, id: js.Any, mode: js.Any, name: js.Any) = this()
   
   var basename: js.Any = js.native
@@ -20,11 +21,13 @@ class Submodule protected () extends js.Object {
   var repo: js.Any = js.native
 }
 /* static members */
-@JSImport("git", "Submodule")
-@js.native
-object Submodule extends js.Object {
+object Submodule {
   
+  @JSImport("git", "Submodule.config")
+  @js.native
   def config(repo: js.Any, ref: js.Any, callback: js.Function): Unit = js.native
   
+  @JSImport("git", "Submodule.create")
+  @js.native
   def create(repo: js.Any, attributes: js.Any, callback: js.Function): Unit = js.native
 }

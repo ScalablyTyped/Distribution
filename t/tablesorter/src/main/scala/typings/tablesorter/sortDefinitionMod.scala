@@ -1,13 +1,12 @@
 package typings.tablesorter
 
 import typings.tablesorter.sortDefinitionOrderMod.SortDefinitionOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Sorting/SortDefinition", JSImport.Namespace)
-@js.native
-object sortDefinitionMod extends js.Object {
+object sortDefinitionMod {
   
   type SortDefinition = js.Tuple2[Double, SortDefinitionOrder]
 }

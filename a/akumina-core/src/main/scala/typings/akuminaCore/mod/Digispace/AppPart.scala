@@ -1,29 +1,39 @@
 package typings.akuminaCore.mod.Digispace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("akumina-core", "Digispace.AppPart")
-@js.native
-object AppPart extends js.Object {
+object AppPart {
   
+  @JSImport("akumina-core", "Digispace.AppPart.Data")
   @js.native
-  class Data () extends js.Object {
+  class Data () extends StObject {
     
     var Templates: typings.akuminaCore.mod.Templates = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.AppPart.Eventing")
   @js.native
-  class Eventing () extends js.Object
-  /* static members */
-  @js.native
-  object Eventing extends js.Object {
+  class Eventing () extends StObject
+  object Eventing {
     
-     /* Updated */ def Publish(t: String): Unit = js.native
+    /* Updated */
+    /* static member */
+    @JSImport("akumina-core", "Digispace.AppPart.Eventing.Publish")
+    @js.native
+    def Publish(t: String): Unit = js.native
+    @JSImport("akumina-core", "Digispace.AppPart.Eventing.Publish")
+    @js.native
     def Publish(t: String, data: js.Any): Unit = js.native
     
+    /* static member */
+    @JSImport("akumina-core", "Digispace.AppPart.Eventing.Subscribe")
+    @js.native
     def Subscribe(e: String, func: js.Any): Unit = js.native
+    @JSImport("akumina-core", "Digispace.AppPart.Eventing.Subscribe")
+    @js.native
     def Subscribe(e: String, func: js.Any, caller: js.Any): Unit = js.native
   }
 }

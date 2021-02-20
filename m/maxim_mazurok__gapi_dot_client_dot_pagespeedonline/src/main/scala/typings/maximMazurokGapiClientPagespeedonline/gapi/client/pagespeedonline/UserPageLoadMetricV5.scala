@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPageLoadMetricV5 extends js.Object {
+trait UserPageLoadMetricV5 extends StObject {
   
   /** The category of the specific time metric. */
   var category: js.UndefOr[String] = js.native
@@ -34,57 +35,45 @@ object UserPageLoadMetricV5 {
   }
   
   @scala.inline
-  implicit class UserPageLoadMetricV5Ops[Self <: UserPageLoadMetricV5] (val x: Self) extends AnyVal {
+  implicit class UserPageLoadMetricV5MutableBuilder[Self <: UserPageLoadMetricV5] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributions(value: js.Array[Bucket]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setDistributionsVarargs(value: Bucket*): Self = StObject.set(x, "distributions", js.Array(value :_*))
     
     @scala.inline
-    def setDistributionsVarargs(value: Bucket*): Self = this.set("distributions", js.Array(value :_*))
+    def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributions(value: js.Array[Bucket]): Self = this.set("distributions", value.asInstanceOf[js.Any])
+    def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
     
     @scala.inline
-    def deleteDistributions: Self = this.set("distributions", js.undefined)
+    def setMedian(value: Double): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormFactor(value: String): Self = this.set("formFactor", value.asInstanceOf[js.Any])
+    def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
     
     @scala.inline
-    def deleteFormFactor: Self = this.set("formFactor", js.undefined)
+    def setMetricId(value: String): Self = StObject.set(x, "metricId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedian(value: Double): Self = this.set("median", value.asInstanceOf[js.Any])
+    def setMetricIdUndefined: Self = StObject.set(x, "metricId", js.undefined)
     
     @scala.inline
-    def deleteMedian: Self = this.set("median", js.undefined)
+    def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricId(value: String): Self = this.set("metricId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricId: Self = this.set("metricId", js.undefined)
-    
-    @scala.inline
-    def setPercentile(value: Double): Self = this.set("percentile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentile: Self = this.set("percentile", js.undefined)
+    def setPercentileUndefined: Self = StObject.set(x, "percentile", js.undefined)
   }
 }

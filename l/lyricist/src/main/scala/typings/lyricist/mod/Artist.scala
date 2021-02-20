@@ -1,13 +1,14 @@
 package typings.lyricist.mod
 
 import typings.lyricist.anon.Permissions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Artist =========================================================================================
 @js.native
-trait Artist extends js.Object {
+trait Artist extends StObject {
   
   var alternate_names: js.Array[_] = js.native
   
@@ -72,78 +73,66 @@ object Artist {
   }
   
   @scala.inline
-  implicit class ArtistOps[Self <: Artist] (val x: Self) extends AnyVal {
+  implicit class ArtistMutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate_names(value: js.Array[_]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternate_namesVarargs(value: js.Any*): Self = StObject.set(x, "alternate_names", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternate_namesVarargs(value: js.Any*): Self = this.set("alternate_names", js.Array(value :_*))
+    def setCurrent_user_metadata(value: Permissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternate_names(value: js.Array[_]): Self = this.set("alternate_names", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_path(value: String): Self = this.set("api_path", value.asInstanceOf[js.Any])
+    def setDescription_annotation(value: DescriptionAnnotation): Self = StObject.set(x, "description_annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent_user_metadata(value: Permissions): Self = this.set("current_user_metadata", value.asInstanceOf[js.Any])
+    def setFacebook_name(value: String): Self = StObject.set(x, "facebook_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription_annotation(value: DescriptionAnnotation): Self = this.set("description_annotation", value.asInstanceOf[js.Any])
+    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebook_name(value: String): Self = this.set("facebook_name", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_count(value: Double): Self = this.set("followers_count", value.asInstanceOf[js.Any])
+    def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader_image_url(value: String): Self = this.set("header_image_url", value.asInstanceOf[js.Any])
+    def setInstagram_name(value: String): Self = StObject.set(x, "instagram_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIs_meme_verified(value: Boolean): Self = StObject.set(x, "is_meme_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_url(value: String): Self = this.set("image_url", value.asInstanceOf[js.Any])
+    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstagram_name(value: String): Self = this.set("instagram_name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_meme_verified(value: Boolean): Self = this.set("is_meme_verified", value.asInstanceOf[js.Any])
+    def setTranslation_artist(value: Boolean): Self = StObject.set(x, "translation_artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    def setTwitter_name(value: String): Self = StObject.set(x, "twitter_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslation_artist(value: Boolean): Self = this.set("translation_artist", value.asInstanceOf[js.Any])
+    def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwitter_name(value: String): Self = this.set("twitter_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: js.Any): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

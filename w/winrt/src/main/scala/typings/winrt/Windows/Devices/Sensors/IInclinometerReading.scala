@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Devices.Sensors
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInclinometerReading extends js.Object {
+trait IInclinometerReading extends StObject {
   
   var pitchDegrees: Double = js.native
   
@@ -25,30 +26,18 @@ object IInclinometerReading {
   }
   
   @scala.inline
-  implicit class IInclinometerReadingOps[Self <: IInclinometerReading] (val x: Self) extends AnyVal {
+  implicit class IInclinometerReadingMutableBuilder[Self <: IInclinometerReading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPitchDegrees(value: Double): Self = StObject.set(x, "pitchDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRollDegrees(value: Double): Self = StObject.set(x, "rollDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitchDegrees(value: Double): Self = this.set("pitchDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRollDegrees(value: Double): Self = this.set("rollDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYawDegrees(value: Double): Self = this.set("yawDegrees", value.asInstanceOf[js.Any])
+    def setYawDegrees(value: Double): Self = StObject.set(x, "yawDegrees", value.asInstanceOf[js.Any])
   }
 }

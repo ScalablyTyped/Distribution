@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Streaming appliance snapshot configuration.
   */
 @js.native
-trait SchemaStreamingApplianceSnapshotConfig extends js.Object {
+trait SchemaStreamingApplianceSnapshotConfig extends StObject {
   
   /**
     * Indicates which endpoint is used to import appliance state.
@@ -29,30 +30,18 @@ object SchemaStreamingApplianceSnapshotConfig {
   }
   
   @scala.inline
-  implicit class SchemaStreamingApplianceSnapshotConfigOps[Self <: SchemaStreamingApplianceSnapshotConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaStreamingApplianceSnapshotConfigMutableBuilder[Self <: SchemaStreamingApplianceSnapshotConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportStateEndpoint(value: String): Self = StObject.set(x, "importStateEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportStateEndpointUndefined: Self = StObject.set(x, "importStateEndpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportStateEndpoint(value: String): Self = this.set("importStateEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportStateEndpoint: Self = this.set("importStateEndpoint", js.undefined)
-    
-    @scala.inline
-    def setSnapshotId(value: String): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

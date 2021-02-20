@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HttpProgressStage extends js.Object
+sealed trait HttpProgressStage extends StObject
 /** Indicates the step in the progress for an HTTP connection. */
 @JSGlobal("Windows.Web.Http.HttpProgressStage")
 @js.native
-object HttpProgressStage extends js.Object {
+object HttpProgressStage extends StObject {
   
   /** The socket used for the HTTP connection is connecting to the server. */
   @js.native

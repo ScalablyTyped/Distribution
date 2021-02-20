@@ -1,11 +1,12 @@
 package typings.angularAnimations.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationEvent extends js.Object {
+trait AnimationEvent extends StObject {
   
   /**
     * Internal.
@@ -60,39 +61,27 @@ object AnimationEvent {
   }
   
   @scala.inline
-  implicit class AnimationEventOps[Self <: AnimationEvent] (val x: Self) extends AnyVal {
+  implicit class AnimationEventMutableBuilder[Self <: AnimationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromState(value: String): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setPhaseName(value: String): Self = StObject.set(x, "phaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: js.Any): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setToState(value: String): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromState(value: String): Self = this.set("fromState", value.asInstanceOf[js.Any])
+    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhaseName(value: String): Self = this.set("phaseName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToState(value: String): Self = this.set("toState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalTime(value: Double): Self = this.set("totalTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerName(value: String): Self = this.set("triggerName", value.asInstanceOf[js.Any])
+    def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
   }
 }

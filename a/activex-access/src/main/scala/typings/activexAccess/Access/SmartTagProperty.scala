@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagProperty extends js.Object {
+trait SmartTagProperty extends StObject {
   
   @JSName("Access.SmartTagProperty_typekey")
   var AccessDotSmartTagProperty_typekey: SmartTagProperty = js.native
@@ -34,33 +35,21 @@ object SmartTagProperty {
   }
   
   @scala.inline
-  implicit class SmartTagPropertyOps[Self <: SmartTagProperty] (val x: Self) extends AnyVal {
+  implicit class SmartTagPropertyMutableBuilder[Self <: SmartTagProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotSmartTagProperty_typekey(value: SmartTagProperty): Self = StObject.set(x, "Access.SmartTagProperty_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessDotSmartTagProperty_typekey(value: SmartTagProperty): Self = this.set("Access.SmartTagProperty_typekey", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

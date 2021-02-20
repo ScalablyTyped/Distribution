@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Video annotation request.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest extends StObject {
   
   /**
     * Requested video annotation features.
@@ -67,57 +68,45 @@ object SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequestOps[Self <: SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequestMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    def setInputContent(value: String): Self = StObject.set(x, "inputContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[String]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setInputContentUndefined: Self = StObject.set(x, "inputContent", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputContent(value: String): Self = this.set("inputContent", value.asInstanceOf[js.Any])
+    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
     @scala.inline
-    def deleteInputContent: Self = this.set("inputContent", js.undefined)
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputUri(value: String): Self = this.set("inputUri", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteInputUri: Self = this.set("inputUri", js.undefined)
+    def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setVideoContext(value: SchemaGoogleCloudVideointelligenceV1VideoContext): Self = StObject.set(x, "videoContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputUri(value: String): Self = this.set("outputUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputUri: Self = this.set("outputUri", js.undefined)
-    
-    @scala.inline
-    def setVideoContext(value: SchemaGoogleCloudVideointelligenceV1VideoContext): Self = this.set("videoContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoContext: Self = this.set("videoContext", js.undefined)
+    def setVideoContextUndefined: Self = StObject.set(x, "videoContext", js.undefined)
   }
 }

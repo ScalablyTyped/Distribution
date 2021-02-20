@@ -1,11 +1,12 @@
 package typings.reactWeui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dot extends js.Object {
+trait Dot extends StObject {
   
   var dot: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Dot {
   }
   
   @scala.inline
-  implicit class DotOps[Self <: Dot] (val x: Self) extends AnyVal {
+  implicit class DotMutableBuilder[Self <: Dot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDot(value: Boolean): Self = this.set("dot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
   }
 }

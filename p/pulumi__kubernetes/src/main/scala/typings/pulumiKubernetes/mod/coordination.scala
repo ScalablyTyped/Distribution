@@ -5,17 +5,16 @@ import typings.pulumiKubernetes.v1LeaseMod.LeaseArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "coordination")
-@js.native
-object coordination extends js.Object {
+object coordination {
   
-  @js.native
-  object v1 extends js.Object {
+  object v1 {
     
+    @JSImport("@pulumi/kubernetes", "coordination.v1.Lease")
     @js.native
     class Lease protected ()
       extends typings.pulumiKubernetes.coordinationMod.v1.Lease {
@@ -32,8 +31,7 @@ object coordination extends js.Object {
       def this(name: String, args: LeaseArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object Lease extends js.Object {
+    object Lease {
       
       /**
         * Get an existing Lease resource's state with the given name, ID, and optional extra
@@ -43,16 +41,23 @@ object coordination extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1.Lease.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LeaseMod.Lease = js.native
+      @JSImport("@pulumi/kubernetes", "coordination.v1.Lease.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LeaseMod.Lease = js.native
       
       /**
         * Returns true if the given object is an instance of Lease.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1.Lease.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/lease.Lease */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "coordination.v1.LeaseList")
     @js.native
     class LeaseList protected ()
       extends typings.pulumiKubernetes.coordinationMod.v1.LeaseList {
@@ -69,8 +74,7 @@ object coordination extends js.Object {
       def this(name: String, args: LeaseListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object LeaseList extends js.Object {
+    object LeaseList {
       
       /**
         * Get an existing LeaseList resource's state with the given name, ID, and optional extra
@@ -80,20 +84,26 @@ object coordination extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1.LeaseList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LeaseListMod.LeaseList = js.native
+      @JSImport("@pulumi/kubernetes", "coordination.v1.LeaseList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LeaseListMod.LeaseList = js.native
       
       /**
         * Returns true if the given object is an instance of LeaseList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1.LeaseList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/leaseList.LeaseList */ Boolean = js.native
     }
   }
   
-  @js.native
-  object v1beta1 extends js.Object {
+  object v1beta1 {
     
+    @JSImport("@pulumi/kubernetes", "coordination.v1beta1.Lease")
     @js.native
     class Lease protected ()
       extends typings.pulumiKubernetes.coordinationMod.v1beta1.Lease {
@@ -110,8 +120,7 @@ object coordination extends js.Object {
       def this(name: String, args: typings.pulumiKubernetes.leaseMod.LeaseArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object Lease extends js.Object {
+    object Lease {
       
       /**
         * Get an existing Lease resource's state with the given name, ID, and optional extra
@@ -121,16 +130,23 @@ object coordination extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1beta1.Lease.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.leaseMod.Lease = js.native
+      @JSImport("@pulumi/kubernetes", "coordination.v1beta1.Lease.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.leaseMod.Lease = js.native
       
       /**
         * Returns true if the given object is an instance of Lease.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1beta1.Lease.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/lease.Lease */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "coordination.v1beta1.LeaseList")
     @js.native
     class LeaseList protected ()
       extends typings.pulumiKubernetes.coordinationMod.v1beta1.LeaseList {
@@ -151,8 +167,7 @@ object coordination extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object LeaseList extends js.Object {
+    object LeaseList {
       
       /**
         * Get an existing LeaseList resource's state with the given name, ID, and optional extra
@@ -162,13 +177,19 @@ object coordination extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1beta1.LeaseList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.leaseListMod.LeaseList = js.native
+      @JSImport("@pulumi/kubernetes", "coordination.v1beta1.LeaseList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.leaseListMod.LeaseList = js.native
       
       /**
         * Returns true if the given object is an instance of LeaseList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "coordination.v1beta1.LeaseList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/leaseList.LeaseList */ Boolean = js.native
     }
   }

@@ -1,11 +1,12 @@
 package typings.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceGroup extends js.Object {
+trait VoiceGroup extends StObject {
   
   def addVoice(voice: Voice): Unit = js.native
   
@@ -26,27 +27,15 @@ object VoiceGroup {
   }
   
   @scala.inline
-  implicit class VoiceGroupOps[Self <: VoiceGroup] (val x: Self) extends AnyVal {
+  implicit class VoiceGroupMutableBuilder[Self <: VoiceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddVoice(value: Voice => Unit): Self = StObject.set(x, "addVoice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetModifierContexts(value: () => js.Array[ModifierContext]): Self = StObject.set(x, "getModifierContexts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddVoice(value: Voice => Unit): Self = this.set("addVoice", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetModifierContexts(value: () => js.Array[ModifierContext]): Self = this.set("getModifierContexts", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVoices(value: () => js.Array[Voice]): Self = this.set("getVoices", js.Any.fromFunction0(value))
+    def setGetVoices(value: () => js.Array[Voice]): Self = StObject.set(x, "getVoices", js.Any.fromFunction0(value))
   }
 }

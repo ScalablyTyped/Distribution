@@ -1,12 +1,13 @@
 package typings.reactNativeJoi.mod
 
 import typings.reactNativeJoi.anon.Arrays
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationOptions extends js.Object {
+trait ValidationOptions extends StObject {
   
   /**
     * when true, stops validation on the first error, otherwise returns all the errors found. Defaults to true.
@@ -67,74 +68,62 @@ object ValidationOptions {
   }
   
   @scala.inline
-  implicit class ValidationOptionsOps[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+  implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortEarly(value: Boolean): Self = this.set("abortEarly", value.asInstanceOf[js.Any])
+    def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
     
     @scala.inline
-    def deleteAbortEarly: Self = this.set("abortEarly", js.undefined)
+    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUnknown(value: Boolean): Self = this.set("allowUnknown", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteAllowUnknown: Self = this.set("allowUnknown", js.undefined)
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Context): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setLanguage(value: LanguageRootOptions): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setNoDefaults(value: Boolean): Self = StObject.set(x, "noDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: LanguageRootOptions): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setNoDefaults(value: Boolean): Self = this.set("noDefaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDefaults: Self = this.set("noDefaults", js.undefined)
+    def setNoDefaultsUndefined: Self = StObject.set(x, "noDefaults", js.undefined)
     
     @scala.inline
     def setPresence(
       value: typings.reactNativeJoi.reactNativeJoiStrings.optional | typings.reactNativeJoi.reactNativeJoiStrings.required | typings.reactNativeJoi.reactNativeJoiStrings.forbidden
-    ): Self = this.set("presence", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePresence: Self = this.set("presence", js.undefined)
+    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
     @scala.inline
-    def setSkipFunctions(value: Boolean): Self = this.set("skipFunctions", value.asInstanceOf[js.Any])
+    def setSkipFunctions(value: Boolean): Self = StObject.set(x, "skipFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipFunctions: Self = this.set("skipFunctions", js.undefined)
+    def setSkipFunctionsUndefined: Self = StObject.set(x, "skipFunctions", js.undefined)
     
     @scala.inline
-    def setStripUnknown(value: Boolean | Arrays): Self = this.set("stripUnknown", value.asInstanceOf[js.Any])
+    def setStripUnknown(value: Boolean | Arrays): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStripUnknown: Self = this.set("stripUnknown", js.undefined)
+    def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
   }
 }

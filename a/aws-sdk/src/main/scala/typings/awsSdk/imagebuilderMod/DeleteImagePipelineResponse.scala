@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteImagePipelineResponse extends js.Object {
+trait DeleteImagePipelineResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline that was deleted. 
@@ -26,30 +27,18 @@ object DeleteImagePipelineResponse {
   }
   
   @scala.inline
-  implicit class DeleteImagePipelineResponseOps[Self <: DeleteImagePipelineResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteImagePipelineResponseMutableBuilder[Self <: DeleteImagePipelineResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagePipelineArnUndefined: Self = StObject.set(x, "imagePipelineArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePipelineArn(value: ImagePipelineArn): Self = this.set("imagePipelineArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImagePipelineArn: Self = this.set("imagePipelineArn", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

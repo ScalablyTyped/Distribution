@@ -1,11 +1,12 @@
 package typings.openpgp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerOptions extends js.Object {
+trait WorkerOptions extends StObject {
   
   /**
     * number of workers to initialize
@@ -31,36 +32,24 @@ object WorkerOptions {
   }
   
   @scala.inline
-  implicit class WorkerOptionsOps[Self <: WorkerOptions] (val x: Self) extends AnyVal {
+  implicit class WorkerOptionsMutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setWorkers(value: js.Array[_]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: Double): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     
     @scala.inline
-    def deleteN: Self = this.set("n", js.undefined)
-    
-    @scala.inline
-    def setWorkersVarargs(value: js.Any*): Self = this.set("workers", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkers(value: js.Array[_]): Self = this.set("workers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkers: Self = this.set("workers", js.undefined)
+    def setWorkersVarargs(value: js.Any*): Self = StObject.set(x, "workers", js.Array(value :_*))
   }
 }

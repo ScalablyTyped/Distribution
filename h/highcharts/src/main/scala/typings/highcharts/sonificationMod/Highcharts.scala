@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable7
-import org.scalablytyped.runtime.TopLevel
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.anon.TypeofColor
 import typings.highcharts.mod.AnimationOptionsObject
@@ -44,429 +43,19 @@ import typings.highcharts.mod.WrapProceedFunction
 import typings.std.Element
 import typings.std.Event
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("highcharts/modules/sonification", "Highcharts")
-@js.native
-object Highcharts extends js.Object {
+object Highcharts {
   
-  var Color: TypeofColor = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
-  def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
-  def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
-  def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
-  def addEvent[T](el: Class[T], `type`: String, fn: js.Function): js.Function = js.native
-  def addEvent[T](el: Class[T], `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
-  def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
-  def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
-  
-  def animObject(): AnimationOptionsObject = js.native
-  def animObject(animation: Boolean): AnimationOptionsObject = js.native
-  def animObject(animation: AnimationOptionsObject): AnimationOptionsObject = js.native
-  
-  def animate(el: HTMLDOMElement, params: CSSObject): Unit = js.native
-  def animate(el: HTMLDOMElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
-  def animate(el: HTMLDOMElement, params: SVGAttributes): Unit = js.native
-  def animate(el: HTMLDOMElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
-  def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject): Unit = js.native
-  def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
-  def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes): Unit = js.native
-  def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
-  
-  def arrayMax(data: js.Array[_]): Double = js.native
-  
-  def arrayMin(data: js.Array[_]): Double = js.native
-  
-  def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
-  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
-  
-  def chart(options: Options): Chart_ = js.native
-  def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-  def chart(renderTo: String, options: Options): Chart_ = js.native
-  def chart(renderTo: String, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-  def chart(renderTo: HTMLDOMElement, options: Options): Chart_ = js.native
-  def chart(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
-  
-  var charts: js.Array[js.UndefOr[Chart_]] = js.native
-  
-  def clearTimeout(id: Double): Unit = js.native
-  
-  def color(input: ColorType): Color_ = js.native
-  
-  def correctFloat(num: Double): Double = js.native
-  def correctFloat(num: Double, prec: Double): Double = js.native
-  
-  def createElement(tag: String): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: js.UndefOr[scala.Nothing],
-    styles: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: js.UndefOr[scala.Nothing],
-    styles: js.UndefOr[scala.Nothing],
-    parent: HTMLDOMElement
-  ): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: js.UndefOr[scala.Nothing],
-    styles: js.UndefOr[scala.Nothing],
-    parent: HTMLDOMElement,
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: js.UndefOr[scala.Nothing],
-    styles: CSSObject,
-    parent: js.UndefOr[scala.Nothing],
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: js.UndefOr[scala.Nothing],
-    styles: CSSObject,
-    parent: HTMLDOMElement,
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: HTMLAttributes,
-    styles: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: HTMLAttributes, styles: js.UndefOr[scala.Nothing], parent: HTMLDOMElement): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: HTMLAttributes,
-    styles: js.UndefOr[scala.Nothing],
-    parent: HTMLDOMElement,
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = js.native
-  def createElement(
-    tag: String,
-    attribs: HTMLAttributes,
-    styles: CSSObject,
-    parent: js.UndefOr[scala.Nothing],
-    nopad: Boolean
-  ): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-  def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
-  
-  def css(el: HTMLDOMElement, styles: CSSObject): Unit = js.native
-  def css(el: SVGDOMElement, styles: CSSObject): Unit = js.native
-  
-  def dateFormat(format: String, timestamp: Double): String = js.native
-  def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = js.native
-  
-  var dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
-  
-  var defaultOptions: Options = js.native
-  
-  def defined(obj: js.Any): Boolean = js.native
-  
-  def destroyObjectProperties(obj: js.Any): Unit = js.native
-  def destroyObjectProperties(obj: js.Any, except: js.Any): Unit = js.native
-  
-  def discardElement(element: HTMLDOMElement): Unit = js.native
-  
-  def each(arr: js.Array[_], fn: js.Function): Unit = js.native
-  def each(arr: js.Array[_], fn: js.Function, ctx: js.Any): Unit = js.native
-  
-  def erase(arr: js.Array[_], item: js.Any): Unit = js.native
-  
-  def error(code: String): Unit = js.native
-  def error(
-    code: String,
-    stop: js.UndefOr[scala.Nothing],
-    chart: js.UndefOr[scala.Nothing],
-    params: Dictionary[String]
-  ): Unit = js.native
-  def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-  def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
-  def error(code: String, stop: Boolean): Unit = js.native
-  def error(code: String, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
-  def error(code: String, stop: Boolean, chart: Chart_): Unit = js.native
-  def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
-  def error(code: Double): Unit = js.native
-  def error(
-    code: Double,
-    stop: js.UndefOr[scala.Nothing],
-    chart: js.UndefOr[scala.Nothing],
-    params: Dictionary[String]
-  ): Unit = js.native
-  def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-  def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
-  def error(code: Double, stop: Boolean): Unit = js.native
-  def error(code: Double, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
-  def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
-  def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
-  
-  def extend[T](a: T, b: js.Object): T = js.native
-  def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
-  
-  def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
-  
-  def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
-  
-  def fireEvent[T](el: T, `type`: String): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: js.UndefOr[scala.Nothing], defaultFunction: js.Function): Unit = js.native
-  def fireEvent[T](
-    el: T,
-    `type`: String,
-    eventArguments: js.UndefOr[scala.Nothing],
-    defaultFunction: EventCallbackFunction[T]
-  ): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
-  
-  def format(str: String, ctx: Record[String, _]): String = js.native
-  def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
-  
-  def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = js.native
-  def getDeferredAnimation(chart: Chart_, animation: Boolean, series: typings.highcharts.mod.Series): Double = js.native
-  def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject): Double = js.native
-  def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject, series: typings.highcharts.mod.Series): Double = js.native
-  
-  def getMagnitude(num: Double): Double = js.native
-  
-  def getOptions(): Options = js.native
-  
-  def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native
-  def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = js.native
-  
-  def grep(arr: js.Array[_], callback: js.Function): js.Array[_] = js.native
-  
-  def inArray(item: js.Any, arr: js.Array[_]): Double = js.native
-  def inArray(item: js.Any, arr: js.Array[_], fromIndex: Double): Double = js.native
-  
-  def isArray(obj: js.Any): Boolean = js.native
-  
-  def isClass(): Boolean = js.native
-  def isClass(obj: js.Object): Boolean = js.native
-  
-  def isDOMElement(obj: js.Any): Boolean = js.native
-  
-  def isNumber(n: js.Any): Boolean = js.native
-  
-  def isObject(obj: js.Any): Boolean = js.native
-  def isObject(obj: js.Any, strict: Boolean): Boolean = js.native
-  
-  def isString(s: js.Any): Boolean = js.native
-  
-  def keys(obj: js.Any): js.Array[String] = js.native
-  
-  def map(arr: js.Array[_], fn: js.Function): js.Array[_] = js.native
-  
-  def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
-  def merge[T](a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
-  def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
-  def merge[T](extend: Boolean, a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
-  
-  def normalizeTickInterval(interval: Double): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.UndefOr[scala.Nothing],
-    magnitude: js.UndefOr[scala.Nothing],
-    allowDecimals: js.UndefOr[scala.Nothing],
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.UndefOr[scala.Nothing],
-    magnitude: js.UndefOr[scala.Nothing],
-    allowDecimals: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.UndefOr[scala.Nothing],
-    magnitude: js.UndefOr[scala.Nothing],
-    allowDecimals: Boolean,
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.UndefOr[scala.Nothing],
-    magnitude: Double,
-    allowDecimals: js.UndefOr[scala.Nothing],
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double, allowDecimals: Boolean): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.UndefOr[scala.Nothing],
-    magnitude: Double,
-    allowDecimals: Boolean,
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(interval: Double, multiples: js.Array[_]): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.Array[_],
-    magnitude: js.UndefOr[scala.Nothing],
-    allowDecimals: js.UndefOr[scala.Nothing],
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.Array[_],
-    magnitude: js.UndefOr[scala.Nothing],
-    allowDecimals: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.Array[_],
-    magnitude: js.UndefOr[scala.Nothing],
-    allowDecimals: Boolean,
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.Array[_],
-    magnitude: Double,
-    allowDecimals: js.UndefOr[scala.Nothing],
-    hasTickAmount: Boolean
-  ): Double = js.native
-  def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double, allowDecimals: Boolean): Double = js.native
-  def normalizeTickInterval(
-    interval: Double,
-    multiples: js.Array[_],
-    magnitude: Double,
-    allowDecimals: Boolean,
-    hasTickAmount: Boolean
-  ): Double = js.native
-  
-  def numberFormat(number: Double, decimals: Double): String = js.native
-  def numberFormat(number: Double, decimals: Double, decimalPoint: js.UndefOr[scala.Nothing], thousandsSep: String): String = js.native
-  def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = js.native
-  def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
-  
-  def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
-  def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
-  
-  def offset(el: Element): OffsetObject = js.native
-  
-  def pad(number: Double): String = js.native
-  def pad(number: Double, length: js.UndefOr[scala.Nothing], padder: String): String = js.native
-  def pad(number: Double, length: Double): String = js.native
-  def pad(number: Double, length: Double, padder: String): String = js.native
-  
-  def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
-  
-  def reduce(arr: js.Array[_], fn: js.Function, initialValue: js.Any): js.Any = js.native
-  
-  def relativeLength(value: RelativeSize, base: Double): Double = js.native
-  def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = js.native
-  
-  def removeEvent[T](el: T): Unit = js.native
-  def removeEvent[T](el: T, `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
-  def removeEvent[T](el: T, `type`: String): Unit = js.native
-  def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-  def removeEvent[T](el: Class[T]): Unit = js.native
-  def removeEvent[T](el: Class[T], `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
-  def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
-  def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
-  
-  def seriesType(`type`: String, parent: String, options: Dictionary[_]): typings.highcharts.mod.Series = js.native
-  def seriesType(
-    `type`: String,
-    parent: String,
-    options: Dictionary[_],
-    props: js.UndefOr[scala.Nothing],
-    pointProps: Dictionary[_]
-  ): typings.highcharts.mod.Series = js.native
-  def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): typings.highcharts.mod.Series = js.native
-  def seriesType(
-    `type`: String,
-    parent: String,
-    options: Dictionary[_],
-    props: Dictionary[_],
-    pointProps: Dictionary[_]
-  ): typings.highcharts.mod.Series = js.native
-  def seriesType(`type`: String, parent: String, options: SeriesOptionsType): typings.highcharts.mod.Series = js.native
-  def seriesType(
-    `type`: String,
-    parent: String,
-    options: SeriesOptionsType,
-    props: js.UndefOr[scala.Nothing],
-    pointProps: Dictionary[_]
-  ): typings.highcharts.mod.Series = js.native
-  def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): typings.highcharts.mod.Series = js.native
-  def seriesType(
-    `type`: String,
-    parent: String,
-    options: SeriesOptionsType,
-    props: Dictionary[_],
-    pointProps: Dictionary[_]
-  ): typings.highcharts.mod.Series = js.native
-  
-  def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-  def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
-  def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = js.native
-  
-  def setOptions(options: Options): Options = js.native
-  
-  def some(arr: js.Array[_], fn: js.Function, ctx: js.Any): Boolean = js.native
-  
-  def splat(obj: js.Any): js.Array[_] = js.native
-  
-  def stableSort(arr: js.Array[_], sortFunction: js.Function): Unit = js.native
-  
-  def stop(el: typings.highcharts.mod.SVGElement): Unit = js.native
-  def stop(el: typings.highcharts.mod.SVGElement, prop: String): Unit = js.native
-  
-  def syncTimeout(fn: js.Function, delay: Double): Double = js.native
-  def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = js.native
-  
-  var theme: Options = js.native
-  
-  var time: Time_ = js.native
-  
-  def uniqueKey(): String = js.native
-  
-  def useSerialIds(): js.UndefOr[Boolean] = js.native
-  def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = js.native
-  
-  def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = js.native
-  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Annotation")
   @js.native
   class Annotation protected ()
     extends typings.highcharts.mod.Annotation {
@@ -483,16 +72,16 @@ object Highcharts extends js.Object {
       */
     def this(chart: Chart_, userOptions: AnnotationsOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Annotation")
   @js.native
-  object Annotation
-    extends TopLevel[
-          Instantiable2[
-            /* chart */ Chart_, 
-            /* userOptions */ AnnotationsOptions, 
-            typings.highcharts.mod.Annotation
-          ]
-        ]
+  def Annotation: Instantiable2[
+    /* chart */ Chart_, 
+    /* userOptions */ AnnotationsOptions, 
+    typings.highcharts.mod.Annotation
+  ] = js.native
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.AnnotationControlPoint")
   @js.native
   class AnnotationControlPoint protected ()
     extends typings.highcharts.mod.AnnotationControlPoint {
@@ -520,18 +109,37 @@ object Highcharts extends js.Object {
       index: Double
     ) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.AnnotationControlPoint")
   @js.native
-  object AnnotationControlPoint
-    extends TopLevel[
-          Instantiable4[
-            /* chart */ Chart_, 
-            /* target */ AnnotationControllable, 
-            /* options */ AnnotationControlPointOptionsObject, 
-            /* index */ js.UndefOr[Double], 
-            typings.highcharts.mod.AnnotationControlPoint
-          ]
-        ]
+  def AnnotationControlPoint: Instantiable4[
+    /* chart */ Chart_, 
+    /* target */ AnnotationControllable, 
+    /* options */ AnnotationControlPointOptionsObject, 
+    /* index */ js.UndefOr[Double], 
+    typings.highcharts.mod.AnnotationControlPoint
+  ] = js.native
+  @scala.inline
+  def AnnotationControlPoint_=(
+    x: Instantiable4[
+      /* chart */ Chart_, 
+      /* target */ AnnotationControllable, 
+      /* options */ AnnotationControlPointOptionsObject, 
+      /* index */ js.UndefOr[Double], 
+      typings.highcharts.mod.AnnotationControlPoint
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnnotationControlPoint")(x.asInstanceOf[js.Any])
   
+  @scala.inline
+  def Annotation_=(
+    x: Instantiable2[
+      /* chart */ Chart_, 
+      /* userOptions */ AnnotationsOptions, 
+      typings.highcharts.mod.Annotation
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Annotation")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Axis")
   @js.native
   class Axis protected ()
     extends typings.highcharts.mod.Axis {
@@ -566,12 +174,14 @@ object Highcharts extends js.Object {
       */
     def this(chart: Chart_, userOptions: AxisOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Axis")
   @js.native
-  object Axis
-    extends TopLevel[
-          Instantiable2[/* chart */ Chart_, /* userOptions */ AxisOptions, typings.highcharts.mod.Axis]
-        ]
+  def Axis: Instantiable2[/* chart */ Chart_, /* userOptions */ AxisOptions, typings.highcharts.mod.Axis] = js.native
+  @scala.inline
+  def Axis_=(x: Instantiable2[/* chart */ Chart_, /* userOptions */ AxisOptions, typings.highcharts.mod.Axis]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Axis")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Chart")
   @js.native
   class Chart protected () extends Chart_ {
     /**
@@ -588,12 +198,32 @@ object Highcharts extends js.Object {
     def this(options: Options) = this()
     def this(options: Options, callback: ChartCallbackFunction) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Chart")
   @js.native
-  object Chart
-    extends TopLevel[
-          Instantiable2[/* options */ Options, /* callback */ js.UndefOr[ChartCallbackFunction], Chart_]
-        ]
+  def Chart_ : Instantiable2[
+    /* options */ Options, 
+    /* callback */ js.UndefOr[ChartCallbackFunction], 
+    typings.highcharts.mod.Chart_
+  ] = js.native
   
+  @scala.inline
+  def Chart__=(x: Instantiable2[/* options */ Options, /* callback */ js.UndefOr[ChartCallbackFunction], Chart_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Chart")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Color")
+  @js.native
+  class Color protected () extends Color_ {
+    /**
+      * Handle color operations. Some object methods are chainable.
+      *
+      * @param input
+      *        The input color in either rbga or hex format
+      */
+    def this(input: ColorType) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.ColorAxis")
   @js.native
   class ColorAxis protected ()
     extends typings.highcharts.mod.ColorAxis {
@@ -608,16 +238,31 @@ object Highcharts extends js.Object {
       */
     def this(chart: Chart_, userOptions: ColorAxisOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.ColorAxis")
   @js.native
-  object ColorAxis
-    extends TopLevel[
-          Instantiable2[
-            /* chart */ Chart_, 
-            /* userOptions */ ColorAxisOptions, 
-            typings.highcharts.mod.ColorAxis
-          ]
-        ]
+  def ColorAxis: Instantiable2[
+    /* chart */ Chart_, 
+    /* userOptions */ ColorAxisOptions, 
+    typings.highcharts.mod.ColorAxis
+  ] = js.native
+  @scala.inline
+  def ColorAxis_=(
+    x: Instantiable2[
+      /* chart */ Chart_, 
+      /* userOptions */ ColorAxisOptions, 
+      typings.highcharts.mod.ColorAxis
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ColorAxis")(x.asInstanceOf[js.Any])
   
+  @JSImport("highcharts/modules/sonification", "Highcharts.Color")
+  @js.native
+  def Color_ : TypeofColor = js.native
+  
+  @scala.inline
+  def Color__=(x: TypeofColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Color")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Legend")
   @js.native
   class Legend protected ()
     extends typings.highcharts.mod.Legend {
@@ -634,12 +279,14 @@ object Highcharts extends js.Object {
       */
     def this(chart: Chart_, options: LegendOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Legend")
   @js.native
-  object Legend
-    extends TopLevel[
-          Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend]
-        ]
+  def Legend: Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend] = js.native
+  @scala.inline
+  def Legend_=(x: Instantiable2[/* chart */ Chart_, /* options */ LegendOptions, typings.highcharts.mod.Legend]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Legend")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.PlotLineOrBand")
   @js.native
   class PlotLineOrBand protected ()
     extends typings.highcharts.mod.PlotLineOrBand {
@@ -650,23 +297,35 @@ object Highcharts extends js.Object {
     def this(axis: typings.highcharts.mod.Axis, options: AxisPlotBandsOptions) = this()
     def this(axis: typings.highcharts.mod.Axis, options: AxisPlotLinesOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.PlotLineOrBand")
   @js.native
-  object PlotLineOrBand
-    extends TopLevel[
-          Instantiable2[
-            /* axis */ typings.highcharts.mod.Axis, 
-            /* options */ js.UndefOr[AxisPlotBandsOptions | AxisPlotLinesOptions], 
-            typings.highcharts.mod.PlotLineOrBand
-          ]
-        ]
+  def PlotLineOrBand: Instantiable2[
+    /* axis */ typings.highcharts.mod.Axis, 
+    /* options */ js.UndefOr[AxisPlotBandsOptions | AxisPlotLinesOptions], 
+    typings.highcharts.mod.PlotLineOrBand
+  ] = js.native
+  @scala.inline
+  def PlotLineOrBand_=(
+    x: Instantiable2[
+      /* axis */ typings.highcharts.mod.Axis, 
+      /* options */ js.UndefOr[AxisPlotBandsOptions | AxisPlotLinesOptions], 
+      typings.highcharts.mod.PlotLineOrBand
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlotLineOrBand")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Point")
   @js.native
   class Point ()
     extends typings.highcharts.mod.Point
+  @JSImport("highcharts/modules/sonification", "Highcharts.Point")
   @js.native
-  object Point
-    extends TopLevel[Instantiable0[typings.highcharts.mod.Point]]
+  def Point: Instantiable0[typings.highcharts.mod.Point] = js.native
+  @scala.inline
+  def Point_=(x: Instantiable0[typings.highcharts.mod.Point]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Point")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Pointer")
   @js.native
   class Pointer protected ()
     extends typings.highcharts.mod.Pointer {
@@ -683,19 +342,25 @@ object Highcharts extends js.Object {
       */
     def this(chart: Chart_, options: Options) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Pointer")
   @js.native
-  object Pointer
-    extends TopLevel[
-          Instantiable2[/* chart */ Chart_, /* options */ Options, typings.highcharts.mod.Pointer]
-        ]
+  def Pointer: Instantiable2[/* chart */ Chart_, /* options */ Options, typings.highcharts.mod.Pointer] = js.native
+  @scala.inline
+  def Pointer_=(x: Instantiable2[/* chart */ Chart_, /* options */ Options, typings.highcharts.mod.Pointer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pointer")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.SVGElement")
   @js.native
   class SVGElement ()
     extends typings.highcharts.mod.SVGElement
+  @JSImport("highcharts/modules/sonification", "Highcharts.SVGElement")
   @js.native
-  object SVGElement
-    extends TopLevel[Instantiable0[typings.highcharts.mod.SVGElement]]
+  def SVGElement: Instantiable0[typings.highcharts.mod.SVGElement] = js.native
+  @scala.inline
+  def SVGElement_=(x: Instantiable0[typings.highcharts.mod.SVGElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVGElement")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.SVGRenderer")
   @js.native
   class SVGRenderer protected ()
     extends typings.highcharts.mod.SVGRenderer {
@@ -848,21 +513,34 @@ object Highcharts extends js.Object {
       styledMode: Boolean
     ) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.SVGRenderer")
   @js.native
-  object SVGRenderer
-    extends TopLevel[
-          Instantiable7[
-            /* container */ HTMLDOMElement, 
-            /* width */ Double, 
-            /* height */ Double, 
-            /* style */ js.UndefOr[CSSObject], 
-            /* forExport */ js.UndefOr[Boolean], 
-            /* allowHTML */ js.UndefOr[Boolean], 
-            /* styledMode */ js.UndefOr[Boolean], 
-            typings.highcharts.mod.SVGRenderer
-          ]
-        ]
+  def SVGRenderer: Instantiable7[
+    /* container */ HTMLDOMElement, 
+    /* width */ Double, 
+    /* height */ Double, 
+    /* style */ js.UndefOr[CSSObject], 
+    /* forExport */ js.UndefOr[Boolean], 
+    /* allowHTML */ js.UndefOr[Boolean], 
+    /* styledMode */ js.UndefOr[Boolean], 
+    typings.highcharts.mod.SVGRenderer
+  ] = js.native
+  @scala.inline
+  def SVGRenderer_=(
+    x: Instantiable7[
+      /* container */ HTMLDOMElement, 
+      /* width */ Double, 
+      /* height */ Double, 
+      /* style */ js.UndefOr[CSSObject], 
+      /* forExport */ js.UndefOr[Boolean], 
+      /* allowHTML */ js.UndefOr[Boolean], 
+      /* styledMode */ js.UndefOr[Boolean], 
+      typings.highcharts.mod.SVGRenderer
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVGRenderer")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Series")
   @js.native
   class Series protected ()
     extends typings.highcharts.mod.Series {
@@ -920,16 +598,24 @@ object Highcharts extends js.Object {
     def this(chart: Chart_, options: js.Object) = this()
     def this(chart: Chart_, options: SeriesOptionsType) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Series")
   @js.native
-  object Series
-    extends TopLevel[
-          Instantiable2[
-            /* chart */ Chart_, 
-            /* options */ js.Object | SeriesOptionsType, 
-            typings.highcharts.mod.Series
-          ]
-        ]
+  def Series: Instantiable2[
+    /* chart */ Chart_, 
+    /* options */ js.Object | SeriesOptionsType, 
+    typings.highcharts.mod.Series
+  ] = js.native
+  @scala.inline
+  def Series_=(
+    x: Instantiable2[
+      /* chart */ Chart_, 
+      /* options */ js.Object | SeriesOptionsType, 
+      typings.highcharts.mod.Series
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Series")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Tick")
   @js.native
   class Tick protected ()
     extends typings.highcharts.mod.Tick {
@@ -989,19 +675,30 @@ object Highcharts extends js.Object {
       parameters: js.Object
     ) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Tick")
   @js.native
-  object Tick
-    extends TopLevel[
-          Instantiable5[
-            /* axis */ typings.highcharts.mod.Axis, 
-            /* pos */ Double, 
-            /* type */ js.UndefOr[String], 
-            /* noLabel */ js.UndefOr[Boolean], 
-            /* parameters */ js.UndefOr[js.Object], 
-            typings.highcharts.mod.Tick
-          ]
-        ]
+  def Tick: Instantiable5[
+    /* axis */ typings.highcharts.mod.Axis, 
+    /* pos */ Double, 
+    /* type */ js.UndefOr[String], 
+    /* noLabel */ js.UndefOr[Boolean], 
+    /* parameters */ js.UndefOr[js.Object], 
+    typings.highcharts.mod.Tick
+  ] = js.native
+  @scala.inline
+  def Tick_=(
+    x: Instantiable5[
+      /* axis */ typings.highcharts.mod.Axis, 
+      /* pos */ Double, 
+      /* type */ js.UndefOr[String], 
+      /* noLabel */ js.UndefOr[Boolean], 
+      /* parameters */ js.UndefOr[js.Object], 
+      typings.highcharts.mod.Tick
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tick")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Time")
   @js.native
   class Time protected () extends Time_ {
     /**
@@ -1017,9 +714,15 @@ object Highcharts extends js.Object {
       */
     def this(options: TimeOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Time")
   @js.native
-  object Time extends TopLevel[Instantiable1[/* options */ TimeOptions, Time_]]
+  def Time_ : Instantiable1[/* options */ TimeOptions, typings.highcharts.mod.Time_] = js.native
   
+  @scala.inline
+  def Time__=(x: Instantiable1[/* options */ TimeOptions, Time_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("highcharts/modules/sonification", "Highcharts.Tooltip")
   @js.native
   class Tooltip protected ()
     extends typings.highcharts.mod.Tooltip {
@@ -1034,9 +737,842 @@ object Highcharts extends js.Object {
       */
     def this(chart: Chart_, options: TooltipOptions) = this()
   }
+  @JSImport("highcharts/modules/sonification", "Highcharts.Tooltip")
   @js.native
-  object Tooltip
-    extends TopLevel[
-          Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip]
-        ]
+  def Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
+  @scala.inline
+  def Tooltip_=(x: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tooltip")(x.asInstanceOf[js.Any])
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: Class[T], `type`: String, fn: js.Function): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: Class[T], `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.addEvent")
+  @js.native
+  def addEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T], options: EventOptionsObject): js.Function = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.animObject")
+  @js.native
+  def animObject(): AnimationOptionsObject = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animObject")
+  @js.native
+  def animObject(animation: Boolean): AnimationOptionsObject = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animObject")
+  @js.native
+  def animObject(animation: AnimationOptionsObject): AnimationOptionsObject = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: HTMLDOMElement, params: CSSObject): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: HTMLDOMElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: HTMLDOMElement, params: SVGAttributes): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: HTMLDOMElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: typings.highcharts.mod.SVGElement, params: CSSObject, opt: PartialAnimationOptionsOb): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.animate")
+  @js.native
+  def animate(el: typings.highcharts.mod.SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.arrayMax")
+  @js.native
+  def arrayMax(data: js.Array[_]): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.arrayMin")
+  @js.native
+  def arrayMin(data: js.Array[_]): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.attr")
+  @js.native
+  def attr(elem: SVGDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.chart")
+  @js.native
+  def chart(options: Options): Chart_ = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.chart")
+  @js.native
+  def chart(options: Options, callback: ChartCallbackFunction): Chart_ = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.chart")
+  @js.native
+  def chart(renderTo: String, options: Options): Chart_ = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.chart")
+  @js.native
+  def chart(renderTo: String, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.chart")
+  @js.native
+  def chart(renderTo: HTMLDOMElement, options: Options): Chart_ = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.chart")
+  @js.native
+  def chart(renderTo: HTMLDOMElement, options: Options, callback: ChartCallbackFunction): Chart_ = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.charts")
+  @js.native
+  def charts: js.Array[js.UndefOr[Chart_]] = js.native
+  @scala.inline
+  def charts_=(x: js.Array[js.UndefOr[Chart_]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charts")(x.asInstanceOf[js.Any])
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.clearTimeout")
+  @js.native
+  def clearTimeout(id: Double): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.color")
+  @js.native
+  def color(input: ColorType): Color_ = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.correctFloat")
+  @js.native
+  def correctFloat(num: Double): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.correctFloat")
+  @js.native
+  def correctFloat(num: Double, prec: Double): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: js.UndefOr[scala.Nothing],
+    styles: js.UndefOr[scala.Nothing],
+    parent: js.UndefOr[scala.Nothing],
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: js.UndefOr[scala.Nothing],
+    styles: js.UndefOr[scala.Nothing],
+    parent: HTMLDOMElement
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: js.UndefOr[scala.Nothing],
+    styles: js.UndefOr[scala.Nothing],
+    parent: HTMLDOMElement,
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: js.UndefOr[scala.Nothing],
+    styles: CSSObject,
+    parent: js.UndefOr[scala.Nothing],
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: js.UndefOr[scala.Nothing],
+    styles: CSSObject,
+    parent: HTMLDOMElement,
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: HTMLAttributes,
+    styles: js.UndefOr[scala.Nothing],
+    parent: js.UndefOr[scala.Nothing],
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: HTMLAttributes, styles: js.UndefOr[scala.Nothing], parent: HTMLDOMElement): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: HTMLAttributes,
+    styles: js.UndefOr[scala.Nothing],
+    parent: HTMLDOMElement,
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(
+    tag: String,
+    attribs: HTMLAttributes,
+    styles: CSSObject,
+    parent: js.UndefOr[scala.Nothing],
+    nopad: Boolean
+  ): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.createElement")
+  @js.native
+  def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.css")
+  @js.native
+  def css(el: HTMLDOMElement, styles: CSSObject): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.css")
+  @js.native
+  def css(el: SVGDOMElement, styles: CSSObject): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.dateFormat")
+  @js.native
+  def dateFormat(format: String, timestamp: Double): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.dateFormat")
+  @js.native
+  def dateFormat(format: String, timestamp: Double, capitalize: Boolean): String = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.dateFormats")
+  @js.native
+  def dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
+  @scala.inline
+  def dateFormats_=(x: Dictionary[TimeFormatCallbackFunction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateFormats")(x.asInstanceOf[js.Any])
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.defaultOptions")
+  @js.native
+  def defaultOptions: Options = js.native
+  @scala.inline
+  def defaultOptions_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.defined")
+  @js.native
+  def defined(obj: js.Any): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.destroyObjectProperties")
+  @js.native
+  def destroyObjectProperties(obj: js.Any): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.destroyObjectProperties")
+  @js.native
+  def destroyObjectProperties(obj: js.Any, except: js.Any): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.discardElement")
+  @js.native
+  def discardElement(element: HTMLDOMElement): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.each")
+  @js.native
+  def each(arr: js.Array[_], fn: js.Function): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.each")
+  @js.native
+  def each(arr: js.Array[_], fn: js.Function, ctx: js.Any): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.erase")
+  @js.native
+  def erase(arr: js.Array[_], item: js.Any): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(
+    code: String,
+    stop: js.UndefOr[scala.Nothing],
+    chart: js.UndefOr[scala.Nothing],
+    params: Dictionary[String]
+  ): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String, stop: Boolean): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String, stop: Boolean, chart: Chart_): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(
+    code: Double,
+    stop: js.UndefOr[scala.Nothing],
+    chart: js.UndefOr[scala.Nothing],
+    params: Dictionary[String]
+  ): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double, stop: Boolean): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.error")
+  @js.native
+  def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.extend")
+  @js.native
+  def extend[T](a: T, b: js.Object): T = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.extend")
+  @js.native
+  def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.extendClass")
+  @js.native
+  def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.find")
+  @js.native
+  def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: js.UndefOr[scala.Nothing], defaultFunction: js.Function): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](
+    el: T,
+    `type`: String,
+    eventArguments: js.UndefOr[scala.Nothing],
+    defaultFunction: EventCallbackFunction[T]
+  ): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.fireEvent")
+  @js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.format")
+  @js.native
+  def format(str: String, ctx: Record[String, _]): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.format")
+  @js.native
+  def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.getDeferredAnimation")
+  @js.native
+  def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.getDeferredAnimation")
+  @js.native
+  def getDeferredAnimation(chart: Chart_, animation: Boolean, series: typings.highcharts.mod.Series): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.getDeferredAnimation")
+  @js.native
+  def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.getDeferredAnimation")
+  @js.native
+  def getDeferredAnimation(chart: Chart_, animation: AnimationOptionsObject, series: typings.highcharts.mod.Series): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.getMagnitude")
+  @js.native
+  def getMagnitude(num: Double): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.getOptions")
+  @js.native
+  def getOptions(): Options = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.getStyle")
+  @js.native
+  def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.getStyle")
+  @js.native
+  def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.grep")
+  @js.native
+  def grep(arr: js.Array[_], callback: js.Function): js.Array[_] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.inArray")
+  @js.native
+  def inArray(item: js.Any, arr: js.Array[_]): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.inArray")
+  @js.native
+  def inArray(item: js.Any, arr: js.Array[_], fromIndex: Double): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.isArray")
+  @js.native
+  def isArray(obj: js.Any): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.isClass")
+  @js.native
+  def isClass(): Boolean = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.isClass")
+  @js.native
+  def isClass(obj: js.Object): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.isDOMElement")
+  @js.native
+  def isDOMElement(obj: js.Any): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.isNumber")
+  @js.native
+  def isNumber(n: js.Any): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.isObject")
+  @js.native
+  def isObject(obj: js.Any): Boolean = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.isObject")
+  @js.native
+  def isObject(obj: js.Any, strict: Boolean): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.isString")
+  @js.native
+  def isString(s: js.Any): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.keys")
+  @js.native
+  def keys(obj: js.Any): js.Array[String] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.map")
+  @js.native
+  def map(arr: js.Array[_], fn: js.Function): js.Array[_] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.merge")
+  @js.native
+  def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.merge")
+  @js.native
+  def merge[T](a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.merge")
+  @js.native
+  def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.merge")
+  @js.native
+  def merge[T](extend: Boolean, a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(interval: Double): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.UndefOr[scala.Nothing],
+    magnitude: js.UndefOr[scala.Nothing],
+    allowDecimals: js.UndefOr[scala.Nothing],
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.UndefOr[scala.Nothing],
+    magnitude: js.UndefOr[scala.Nothing],
+    allowDecimals: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.UndefOr[scala.Nothing],
+    magnitude: js.UndefOr[scala.Nothing],
+    allowDecimals: Boolean,
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.UndefOr[scala.Nothing],
+    magnitude: Double,
+    allowDecimals: js.UndefOr[scala.Nothing],
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double, allowDecimals: Boolean): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.UndefOr[scala.Nothing],
+    magnitude: Double,
+    allowDecimals: Boolean,
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(interval: Double, multiples: js.Array[_]): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.Array[_],
+    magnitude: js.UndefOr[scala.Nothing],
+    allowDecimals: js.UndefOr[scala.Nothing],
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.Array[_],
+    magnitude: js.UndefOr[scala.Nothing],
+    allowDecimals: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.Array[_],
+    magnitude: js.UndefOr[scala.Nothing],
+    allowDecimals: Boolean,
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.Array[_],
+    magnitude: Double,
+    allowDecimals: js.UndefOr[scala.Nothing],
+    hasTickAmount: Boolean
+  ): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double, allowDecimals: Boolean): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.normalizeTickInterval")
+  @js.native
+  def normalizeTickInterval(
+    interval: Double,
+    multiples: js.Array[_],
+    magnitude: Double,
+    allowDecimals: Boolean,
+    hasTickAmount: Boolean
+  ): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.numberFormat")
+  @js.native
+  def numberFormat(number: Double, decimals: Double): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.numberFormat")
+  @js.native
+  def numberFormat(number: Double, decimals: Double, decimalPoint: js.UndefOr[scala.Nothing], thousandsSep: String): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.numberFormat")
+  @js.native
+  def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.numberFormat")
+  @js.native
+  def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.objectEach")
+  @js.native
+  def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.objectEach")
+  @js.native
+  def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.offset")
+  @js.native
+  def offset(el: Element): OffsetObject = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.pad")
+  @js.native
+  def pad(number: Double): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.pad")
+  @js.native
+  def pad(number: Double, length: js.UndefOr[scala.Nothing], padder: String): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.pad")
+  @js.native
+  def pad(number: Double, length: Double): String = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.pad")
+  @js.native
+  def pad(number: Double, length: Double, padder: String): String = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.pick")
+  @js.native
+  def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.reduce")
+  @js.native
+  def reduce(arr: js.Array[_], fn: js.Function, initialValue: js.Any): js.Any = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.relativeLength")
+  @js.native
+  def relativeLength(value: RelativeSize, base: Double): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.relativeLength")
+  @js.native
+  def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: T): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: T, `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: T, `type`: String): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: Class[T]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: Class[T], `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.removeEvent")
+  @js.native
+  def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(`type`: String, parent: String, options: Dictionary[_]): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: Dictionary[_],
+    props: js.UndefOr[scala.Nothing],
+    pointProps: Dictionary[_]
+  ): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: Dictionary[_],
+    props: Dictionary[_],
+    pointProps: Dictionary[_]
+  ): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(`type`: String, parent: String, options: SeriesOptionsType): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: SeriesOptionsType,
+    props: js.UndefOr[scala.Nothing],
+    pointProps: Dictionary[_]
+  ): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): typings.highcharts.mod.Series = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.seriesType")
+  @js.native
+  def seriesType(
+    `type`: String,
+    parent: String,
+    options: SeriesOptionsType,
+    props: Dictionary[_],
+    pointProps: Dictionary[_]
+  ): typings.highcharts.mod.Series = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.setAnimation")
+  @js.native
+  def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.setAnimation")
+  @js.native
+  def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.setAnimation")
+  @js.native
+  def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.setOptions")
+  @js.native
+  def setOptions(options: Options): Options = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.some")
+  @js.native
+  def some(arr: js.Array[_], fn: js.Function, ctx: js.Any): Boolean = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.splat")
+  @js.native
+  def splat(obj: js.Any): js.Array[_] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.stableSort")
+  @js.native
+  def stableSort(arr: js.Array[_], sortFunction: js.Function): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.stop")
+  @js.native
+  def stop(el: typings.highcharts.mod.SVGElement): Unit = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.stop")
+  @js.native
+  def stop(el: typings.highcharts.mod.SVGElement, prop: String): Unit = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.syncTimeout")
+  @js.native
+  def syncTimeout(fn: js.Function, delay: Double): Double = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.syncTimeout")
+  @js.native
+  def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.theme")
+  @js.native
+  def theme: Options = js.native
+  @scala.inline
+  def theme_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.time")
+  @js.native
+  def time: Time_ = js.native
+  @scala.inline
+  def time_=(x: Time_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.uniqueKey")
+  @js.native
+  def uniqueKey(): String = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.useSerialIds")
+  @js.native
+  def useSerialIds(): js.UndefOr[Boolean] = js.native
+  @JSImport("highcharts/modules/sonification", "Highcharts.useSerialIds")
+  @js.native
+  def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = js.native
+  
+  @JSImport("highcharts/modules/sonification", "Highcharts.wrap")
+  @js.native
+  def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = js.native
 }

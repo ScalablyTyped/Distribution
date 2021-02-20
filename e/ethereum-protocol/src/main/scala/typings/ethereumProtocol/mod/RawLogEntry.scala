@@ -1,11 +1,12 @@
 package typings.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawLogEntry extends js.Object {
+trait RawLogEntry extends StObject {
   
   var address: String = js.native
   
@@ -32,57 +33,45 @@ object RawLogEntry {
   }
   
   @scala.inline
-  implicit class RawLogEntryOps[Self <: RawLogEntry] (val x: Self) extends AnyVal {
+  implicit class RawLogEntryMutableBuilder[Self <: RawLogEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockHashNull: Self = StObject.set(x, "blockHash", null)
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setBlockNumber(value: String): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setBlockNumberNull: Self = StObject.set(x, "blockNumber", null)
     
     @scala.inline
-    def setTopicsVarargs(value: String*): Self = this.set("topics", js.Array(value :_*))
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopics(value: js.Array[String]): Self = this.set("topics", value.asInstanceOf[js.Any])
+    def setLogIndex(value: String): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionHash(value: String): Self = this.set("transactionHash", value.asInstanceOf[js.Any])
+    def setLogIndexNull: Self = StObject.set(x, "logIndex", null)
     
     @scala.inline
-    def setBlockHash(value: String): Self = this.set("blockHash", value.asInstanceOf[js.Any])
+    def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockHashNull: Self = this.set("blockHash", null)
+    def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
     
     @scala.inline
-    def setBlockNumber(value: String): Self = this.set("blockNumber", value.asInstanceOf[js.Any])
+    def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockNumberNull: Self = this.set("blockNumber", null)
+    def setTransactionIndex(value: String): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogIndex(value: String): Self = this.set("logIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogIndexNull: Self = this.set("logIndex", null)
-    
-    @scala.inline
-    def setTransactionIndex(value: String): Self = this.set("transactionIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionIndexNull: Self = this.set("transactionIndex", null)
+    def setTransactionIndexNull: Self = StObject.set(x, "transactionIndex", null)
   }
 }

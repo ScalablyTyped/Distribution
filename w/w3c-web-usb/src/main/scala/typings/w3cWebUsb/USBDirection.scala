@@ -1,5 +1,6 @@
 package typings.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.w3cWebUsb.w3cWebUsbStrings.in
   - typings.w3cWebUsb.w3cWebUsbStrings.out
 */
-trait USBDirection extends js.Object
+trait USBDirection extends StObject
 object USBDirection {
   
   @scala.inline

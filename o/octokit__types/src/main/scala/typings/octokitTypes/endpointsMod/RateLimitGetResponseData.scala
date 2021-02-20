@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Core
 import typings.octokitTypes.anon.Limit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RateLimitGetResponseData extends js.Object {
+trait RateLimitGetResponseData extends StObject {
   
   var rate: Limit = js.native
   
@@ -22,24 +23,12 @@ object RateLimitGetResponseData {
   }
   
   @scala.inline
-  implicit class RateLimitGetResponseDataOps[Self <: RateLimitGetResponseData] (val x: Self) extends AnyVal {
+  implicit class RateLimitGetResponseDataMutableBuilder[Self <: RateLimitGetResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRate(value: Limit): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRate(value: Limit): Self = this.set("rate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResources(value: Core): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setResources(value: Core): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
   }
 }

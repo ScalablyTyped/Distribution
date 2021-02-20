@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailureInfo extends js.Object {
+trait FailureInfo extends StObject {
   
   /**
     * A message about why the import job failed.
@@ -26,30 +27,18 @@ object FailureInfo {
   }
   
   @scala.inline
-  implicit class FailureInfoOps[Self <: FailureInfo] (val x: Self) extends AnyVal {
+  implicit class FailureInfoMutableBuilder[Self <: FailureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedRecordsS3Url(value: FailedRecordsS3Url): Self = StObject.set(x, "FailedRecordsS3Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
-    
-    @scala.inline
-    def setFailedRecordsS3Url(value: FailedRecordsS3Url): Self = this.set("FailedRecordsS3Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedRecordsS3Url: Self = this.set("FailedRecordsS3Url", js.undefined)
+    def setFailedRecordsS3UrlUndefined: Self = StObject.set(x, "FailedRecordsS3Url", js.undefined)
   }
 }

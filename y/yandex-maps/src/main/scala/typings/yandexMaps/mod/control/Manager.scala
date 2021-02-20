@@ -4,13 +4,14 @@ import typings.std.HTMLElement
 import typings.yandexMaps.mod.ControlKey
 import typings.yandexMaps.mod.IControl
 import typings.yandexMaps.mod.Map_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "control.Manager")
 @js.native
-class Manager protected () extends js.Object {
+class Manager protected () extends StObject {
   def this(map: Map_) = this()
   def this(map: Map_, controls: js.Array[String | IControl]) = this()
   def this(map: Map_, controls: js.UndefOr[scala.Nothing], options: IManagerOptions) = this()

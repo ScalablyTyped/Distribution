@@ -1,11 +1,12 @@
 package typings.promiseFs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `4` extends js.Object {
+trait `4` extends StObject {
   
   var encoding: js.UndefOr[String | Null] = js.native
 }
@@ -18,27 +19,15 @@ object `4` {
   }
   
   @scala.inline
-  implicit class `4Ops`[Self <: `4`] (val x: Self) extends AnyVal {
+  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

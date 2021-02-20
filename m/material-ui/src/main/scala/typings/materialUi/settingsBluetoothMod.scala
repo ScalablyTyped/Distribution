@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/settings-bluetooth", JSImport.Namespace)
-@js.native
-object settingsBluetoothMod extends js.Object {
+object settingsBluetoothMod {
   
+  @JSImport("material-ui/svg-icons/action/settings-bluetooth", JSImport.Default)
+  @js.native
+  class default () extends ActionSettingsBluetooth
+  
+  @JSImport("material-ui/svg-icons/action/settings-bluetooth", "ActionSettingsBluetooth")
   @js.native
   class ActionSettingsBluetooth ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

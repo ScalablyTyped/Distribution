@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/footer/footer", JSImport.Namespace)
-@js.native
-object footerMod extends js.Object {
+object footerMod {
   
+  @JSImport("@ionic/core/dist/types/components/footer/footer", "Footer")
   @js.native
   class Footer () extends ComponentInterface {
     

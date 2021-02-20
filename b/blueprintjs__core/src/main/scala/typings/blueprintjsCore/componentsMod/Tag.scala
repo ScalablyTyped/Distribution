@@ -1,17 +1,28 @@
 package typings.blueprintjsCore.componentsMod
 
+import typings.blueprintjsCore.tagMod.ITagProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Tag")
 @js.native
-class Tag ()
-  extends typings.blueprintjsCore.tagMod.Tag
+class Tag protected ()
+  extends typings.blueprintjsCore.tagMod.Tag {
+  def this(props: ITagProps) = this()
+  def this(props: ITagProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("@blueprintjs/core/lib/esm/components", "Tag")
-@js.native
-object Tag extends js.Object {
+object Tag {
   
-  var displayName: String = js.native
+  @JSImport("@blueprintjs/core/lib/esm/components", "Tag")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/components", "Tag.displayName")
+  @js.native
+  def displayName: String = js.native
+  @scala.inline
+  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

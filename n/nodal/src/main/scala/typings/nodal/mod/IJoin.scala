@@ -1,11 +1,12 @@
 package typings.nodal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJoin extends js.Object {
+trait IJoin extends StObject {
   
   var cachedModel: js.UndefOr[Model] = js.native
   
@@ -48,111 +49,99 @@ object IJoin {
   }
   
   @scala.inline
-  implicit class IJoinOps[Self <: IJoin] (val x: Self) extends AnyVal {
+  implicit class IJoinMutableBuilder[Self <: IJoin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachedModel(value: Model): Self = StObject.set(x, "cachedModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachedModelUndefined: Self = StObject.set(x, "cachedModel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinTable(value: String): Self = this.set("joinTable", value.asInstanceOf[js.Any])
+    def setColumnsObject(value: js.Object): Self = StObject.set(x, "columnsObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevTable(value: String): Self = this.set("prevTable", value.asInstanceOf[js.Any])
+    def setColumnsObjectUndefined: Self = StObject.set(x, "columnsObject", js.undefined)
     
     @scala.inline
-    def setCachedModel(value: Model): Self = this.set("cachedModel", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteCachedModel: Self = this.set("cachedModel", js.undefined)
+    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setJoinAlias(value: String): Self = StObject.set(x, "joinAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsObject(value: js.Object): Self = this.set("columnsObject", value.asInstanceOf[js.Any])
+    def setJoinAliasUndefined: Self = StObject.set(x, "joinAlias", js.undefined)
     
     @scala.inline
-    def deleteColumnsObject: Self = this.set("columnsObject", js.undefined)
+    def setJoinColumn(value: String): Self = StObject.set(x, "joinColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setJoinColumnUndefined: Self = StObject.set(x, "joinColumn", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setJoinTable(value: String): Self = StObject.set(x, "joinTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinAlias(value: String): Self = this.set("joinAlias", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJoinAlias: Self = this.set("joinAlias", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setJoinColumn(value: String): Self = this.set("joinColumn", value.asInstanceOf[js.Any])
+    def setMultiFilter(value: js.Any): Self = StObject.set(x, "multiFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJoinColumn: Self = this.set("joinColumn", js.undefined)
+    def setMultiFilterUndefined: Self = StObject.set(x, "multiFilter", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def setMultiFilter(value: js.Any): Self = this.set("multiFilter", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiFilter: Self = this.set("multiFilter", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrderBy(value: js.Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPrevAlias(value: String): Self = StObject.set(x, "prevAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPrevAliasUndefined: Self = StObject.set(x, "prevAlias", js.undefined)
     
     @scala.inline
-    def setOrderBy(value: js.Any): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPrevColumn(value: String): Self = StObject.set(x, "prevColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setPrevColumnUndefined: Self = StObject.set(x, "prevColumn", js.undefined)
     
     @scala.inline
-    def setPrevAlias(value: String): Self = this.set("prevAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevAlias: Self = this.set("prevAlias", js.undefined)
-    
-    @scala.inline
-    def setPrevColumn(value: String): Self = this.set("prevColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevColumn: Self = this.set("prevColumn", js.undefined)
+    def setPrevTable(value: String): Self = StObject.set(x, "prevTable", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstrainPoint2DParameters extends js.Object {
+trait ConstrainPoint2DParameters extends StObject {
   
   var exact: js.Array[Point2D] = js.native
   
@@ -20,30 +21,18 @@ object ConstrainPoint2DParameters {
   }
   
   @scala.inline
-  implicit class ConstrainPoint2DParametersOps[Self <: ConstrainPoint2DParameters] (val x: Self) extends AnyVal {
+  implicit class ConstrainPoint2DParametersMutableBuilder[Self <: ConstrainPoint2DParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExact(value: js.Array[Point2D]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactVarargs(value: Point2D*): Self = StObject.set(x, "exact", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdeal(value: js.Array[Point2D]): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactVarargs(value: Point2D*): Self = this.set("exact", js.Array(value :_*))
-    
-    @scala.inline
-    def setExact(value: js.Array[Point2D]): Self = this.set("exact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdealVarargs(value: Point2D*): Self = this.set("ideal", js.Array(value :_*))
-    
-    @scala.inline
-    def setIdeal(value: js.Array[Point2D]): Self = this.set("ideal", value.asInstanceOf[js.Any])
+    def setIdealVarargs(value: Point2D*): Self = StObject.set(x, "ideal", js.Array(value :_*))
   }
 }

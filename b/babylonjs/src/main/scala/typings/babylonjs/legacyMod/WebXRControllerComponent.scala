@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,32 +66,54 @@ class WebXRControllerComponent protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent")
-@js.native
-object WebXRControllerComponent extends js.Object {
+object WebXRControllerComponent {
+  
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * button component type
     */
-  var BUTTON_TYPE: MotionControllerComponentType = js.native
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent.BUTTON_TYPE")
+  @js.native
+  def BUTTON_TYPE: MotionControllerComponentType = js.native
+  @scala.inline
+  def BUTTON_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUTTON_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * squeeze component type
     */
-  var SQUEEZE_TYPE: MotionControllerComponentType = js.native
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent.SQUEEZE_TYPE")
+  @js.native
+  def SQUEEZE_TYPE: MotionControllerComponentType = js.native
+  @scala.inline
+  def SQUEEZE_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SQUEEZE_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * Thumbstick component type
     */
-  var THUMBSTICK_TYPE: MotionControllerComponentType = js.native
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent.THUMBSTICK_TYPE")
+  @js.native
+  def THUMBSTICK_TYPE: MotionControllerComponentType = js.native
+  @scala.inline
+  def THUMBSTICK_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMBSTICK_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * Touchpad component type
     */
-  var TOUCHPAD_TYPE: MotionControllerComponentType = js.native
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent.TOUCHPAD_TYPE")
+  @js.native
+  def TOUCHPAD_TYPE: MotionControllerComponentType = js.native
+  @scala.inline
+  def TOUCHPAD_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCHPAD_TYPE")(x.asInstanceOf[js.Any])
   
   /**
     * trigger component type
     */
-  var TRIGGER_TYPE: MotionControllerComponentType = js.native
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerComponent.TRIGGER_TYPE")
+  @js.native
+  def TRIGGER_TYPE: MotionControllerComponentType = js.native
+  @scala.inline
+  def TRIGGER_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIGGER_TYPE")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a LevelDetails object contains level details retrieved after level playlist parsing
   */
 @js.native
-trait LevelDetails extends js.Object {
+trait LevelDetails extends StObject {
   
   /**
     * average fragment duration
@@ -75,48 +76,36 @@ object LevelDetails {
   }
   
   @scala.inline
-  implicit class LevelDetailsOps[Self <: LevelDetails] (val x: Self) extends AnyVal {
+  implicit class LevelDetailsMutableBuilder[Self <: LevelDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAveragetargetduration(value: Double): Self = StObject.set(x, "averagetargetduration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndSN(value: Double): Self = StObject.set(x, "endSN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFragments(value: js.Array[Fragment]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAveragetargetduration(value: Double): Self = this.set("averagetargetduration", value.asInstanceOf[js.Any])
+    def setFragmentsVarargs(value: Fragment*): Self = StObject.set(x, "fragments", js.Array(value :_*))
     
     @scala.inline
-    def setEndSN(value: Double): Self = this.set("endSN", value.asInstanceOf[js.Any])
+    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentsVarargs(value: Fragment*): Self = this.set("fragments", js.Array(value :_*))
+    def setStartSN(value: Double): Self = StObject.set(x, "startSN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragments(value: js.Array[Fragment]): Self = this.set("fragments", value.asInstanceOf[js.Any])
+    def setTargetduration(value: Double): Self = StObject.set(x, "targetduration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setTotalduration(value: Double): Self = StObject.set(x, "totalduration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartSN(value: Double): Self = this.set("startSN", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetduration(value: Double): Self = this.set("targetduration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalduration(value: Double): Self = this.set("totalduration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

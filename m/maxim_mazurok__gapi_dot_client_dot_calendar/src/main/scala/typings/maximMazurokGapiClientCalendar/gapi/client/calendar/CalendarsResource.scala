@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientCalendar.anon.AltFields
 import typings.maximMazurokGapiClientCalendar.anon.CalendarIdFields
 import typings.maximMazurokGapiClientCalendar.anon.FieldsKey
 import typings.maximMazurokGapiClientCalendar.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarsResource extends js.Object {
+trait CalendarsResource extends StObject {
   
   /** Clears a primary calendar. This operation deletes all events associated with the primary calendar of an account. */
   def clear(): Request[Unit] = js.native

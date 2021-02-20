@@ -7,13 +7,14 @@ import typings.evernote.mod.Types.NotebookDescriptor
 import typings.evernote.mod.Types.RelatedContent
 import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.UserProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.RelatedResult")
 @js.native
-class RelatedResult () extends js.Object {
+class RelatedResult () extends StObject {
   def this(args: CacheExpires) = this()
   
   var cacheExpires: js.UndefOr[Double] = js.native

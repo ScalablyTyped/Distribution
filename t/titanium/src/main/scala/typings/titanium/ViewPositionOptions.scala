@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     the view elment to replace.
   */
 @js.native
-trait ViewPositionOptions extends js.Object {
+trait ViewPositionOptions extends StObject {
   
   /**
     * Position in the [children](Titanium.UI.View.children) array of the view element to replace.
@@ -33,27 +34,15 @@ object ViewPositionOptions {
   }
   
   @scala.inline
-  implicit class ViewPositionOptionsOps[Self <: ViewPositionOptions] (val x: Self) extends AnyVal {
+  implicit class ViewPositionOptionsMutableBuilder[Self <: ViewPositionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

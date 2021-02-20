@@ -4,12 +4,13 @@ import typings.std.Record
 import typings.wechatMiniprogram.OQ
 import typings.wechatMiniprogram.anon.RQICountDocumentOptions
 import typings.wechatMiniprogram.anon.RQIGetDocumentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   def count(): js.Promise[ICountResult] = js.native
   def count(options: OQ[ICountDocumentOptions]): Unit = js.native

@@ -1,12 +1,13 @@
 package typings.elasticJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "QueryMixin")
 @js.native
-class QueryMixin () extends js.Object {
+class QueryMixin () extends StObject {
   
   /*
     The type of ejs object.  For internal use only.

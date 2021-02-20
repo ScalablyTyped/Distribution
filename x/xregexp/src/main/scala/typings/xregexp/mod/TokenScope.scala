@@ -1,5 +1,6 @@
 package typings.xregexp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xregexp.xregexpStrings.default
   - typings.xregexp.xregexpStrings.`class`
 */
-trait TokenScope extends js.Object
+trait TokenScope extends StObject
 object TokenScope {
   
   @scala.inline
-  def `class`: typings.xregexp.xregexpStrings.`class` = "class".asInstanceOf[typings.xregexp.xregexpStrings.`class`]
+  def default: typings.xregexp.xregexpStrings.default = "default".asInstanceOf[typings.xregexp.xregexpStrings.default]
   
   @scala.inline
-  def default: typings.xregexp.xregexpStrings.default = "default".asInstanceOf[typings.xregexp.xregexpStrings.default]
+  def `class`: typings.xregexp.xregexpStrings.`class` = "class".asInstanceOf[typings.xregexp.xregexpStrings.`class`]
 }

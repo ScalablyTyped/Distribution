@@ -3,12 +3,13 @@ package typings.octokitPluginPaginateRest.anon
 import typings.octokitTypes.endpointsMod.ActivityListWatchedReposForAuthenticatedUserEndpoint
 import typings.octokitTypes.endpointsMod.ActivityListWatchedReposForAuthenticatedUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersActivityListWatchedReposForAuthenticatedUserEndpoint extends js.Object {
+trait ParametersActivityListWatchedReposForAuthenticatedUserEndpoint extends StObject {
   
   var parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint = js.native
   
@@ -26,24 +27,12 @@ object ParametersActivityListWatchedReposForAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersActivityListWatchedReposForAuthenticatedUserEndpointOps[Self <: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersActivityListWatchedReposForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ActivityListWatchedReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ActivityListWatchedReposForAuthenticatedUserEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

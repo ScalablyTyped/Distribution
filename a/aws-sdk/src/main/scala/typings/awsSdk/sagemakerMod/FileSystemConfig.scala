@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemConfig extends js.Object {
+trait FileSystemConfig extends StObject {
   
   /**
     * The default POSIX group ID (GID). If not specified, defaults to 100.
@@ -31,36 +32,24 @@ object FileSystemConfig {
   }
   
   @scala.inline
-  implicit class FileSystemConfigOps[Self <: FileSystemConfig] (val x: Self) extends AnyVal {
+  implicit class FileSystemConfigMutableBuilder[Self <: FileSystemConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultGid(value: DefaultGid): Self = StObject.set(x, "DefaultGid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultGidUndefined: Self = StObject.set(x, "DefaultGid", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultUid(value: DefaultUid): Self = StObject.set(x, "DefaultUid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultGid(value: DefaultGid): Self = this.set("DefaultGid", value.asInstanceOf[js.Any])
+    def setDefaultUidUndefined: Self = StObject.set(x, "DefaultUid", js.undefined)
     
     @scala.inline
-    def deleteDefaultGid: Self = this.set("DefaultGid", js.undefined)
+    def setMountPath(value: MountPath): Self = StObject.set(x, "MountPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUid(value: DefaultUid): Self = this.set("DefaultUid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultUid: Self = this.set("DefaultUid", js.undefined)
-    
-    @scala.inline
-    def setMountPath(value: MountPath): Self = this.set("MountPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountPath: Self = this.set("MountPath", js.undefined)
+    def setMountPathUndefined: Self = StObject.set(x, "MountPath", js.undefined)
   }
 }

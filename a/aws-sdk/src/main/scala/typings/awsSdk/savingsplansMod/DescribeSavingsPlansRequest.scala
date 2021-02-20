@@ -1,11 +1,12 @@
 package typings.awsSdk.savingsplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSavingsPlansRequest extends js.Object {
+trait DescribeSavingsPlansRequest extends StObject {
   
   /**
     * The filters.
@@ -46,66 +47,54 @@ object DescribeSavingsPlansRequest {
   }
   
   @scala.inline
-  implicit class DescribeSavingsPlansRequestOps[Self <: DescribeSavingsPlansRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeSavingsPlansRequestMutableBuilder[Self <: DescribeSavingsPlansRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: SavingsPlanFilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: SavingsPlanFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: SavingsPlanFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: SavingsPlanFilterList): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setSavingsPlanArns(value: SavingsPlanArnList): Self = StObject.set(x, "savingsPlanArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSavingsPlanArnsUndefined: Self = StObject.set(x, "savingsPlanArns", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setSavingsPlanArnsVarargs(value: SavingsPlanArn*): Self = StObject.set(x, "savingsPlanArns", js.Array(value :_*))
     
     @scala.inline
-    def setSavingsPlanArnsVarargs(value: SavingsPlanArn*): Self = this.set("savingsPlanArns", js.Array(value :_*))
+    def setSavingsPlanIds(value: SavingsPlanIdList): Self = StObject.set(x, "savingsPlanIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlanArns(value: SavingsPlanArnList): Self = this.set("savingsPlanArns", value.asInstanceOf[js.Any])
+    def setSavingsPlanIdsUndefined: Self = StObject.set(x, "savingsPlanIds", js.undefined)
     
     @scala.inline
-    def deleteSavingsPlanArns: Self = this.set("savingsPlanArns", js.undefined)
+    def setSavingsPlanIdsVarargs(value: SavingsPlanId*): Self = StObject.set(x, "savingsPlanIds", js.Array(value :_*))
     
     @scala.inline
-    def setSavingsPlanIdsVarargs(value: SavingsPlanId*): Self = this.set("savingsPlanIds", js.Array(value :_*))
+    def setStates(value: SavingsPlanStateList): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlanIds(value: SavingsPlanIdList): Self = this.set("savingsPlanIds", value.asInstanceOf[js.Any])
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def deleteSavingsPlanIds: Self = this.set("savingsPlanIds", js.undefined)
-    
-    @scala.inline
-    def setStatesVarargs(value: SavingsPlanState*): Self = this.set("states", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: SavingsPlanStateList): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setStatesVarargs(value: SavingsPlanState*): Self = StObject.set(x, "states", js.Array(value :_*))
   }
 }

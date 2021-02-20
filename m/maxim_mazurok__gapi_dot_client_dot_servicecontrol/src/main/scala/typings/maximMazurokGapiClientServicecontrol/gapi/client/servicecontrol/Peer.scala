@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Peer extends js.Object {
+trait Peer extends StObject {
   
   /** The IP address of the peer. */
   var ip: js.UndefOr[String] = js.native
@@ -39,52 +40,40 @@ object Peer {
   }
   
   @scala.inline
-  implicit class PeerOps[Self <: Peer] (val x: Self) extends AnyVal {
+  implicit class PeerMutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Peer with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
+    def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrincipal: Self = this.set("principal", js.undefined)
+    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
     @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

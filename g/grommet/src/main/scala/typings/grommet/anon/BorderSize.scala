@@ -3,12 +3,13 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.BreakpointBorderSize
 import typings.grommet.utilsMod.BreakpointEdgeSize
 import typings.grommet.utilsMod.BreakpointSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderSize extends js.Object {
+trait BorderSize extends StObject {
   
   var borderSize: js.UndefOr[BreakpointBorderSize] = js.native
   
@@ -27,42 +28,30 @@ object BorderSize {
   }
   
   @scala.inline
-  implicit class BorderSizeOps[Self <: BorderSize] (val x: Self) extends AnyVal {
+  implicit class BorderSizeMutableBuilder[Self <: BorderSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderSize(value: BreakpointBorderSize): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderSizeUndefined: Self = StObject.set(x, "borderSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeSize(value: BreakpointEdgeSize): Self = StObject.set(x, "edgeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderSize(value: BreakpointBorderSize): Self = this.set("borderSize", value.asInstanceOf[js.Any])
+    def setEdgeSizeUndefined: Self = StObject.set(x, "edgeSize", js.undefined)
     
     @scala.inline
-    def deleteBorderSize: Self = this.set("borderSize", js.undefined)
+    def setSize(value: BreakpointSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeSize(value: BreakpointEdgeSize): Self = this.set("edgeSize", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteEdgeSize: Self = this.set("edgeSize", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: BreakpointSize): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

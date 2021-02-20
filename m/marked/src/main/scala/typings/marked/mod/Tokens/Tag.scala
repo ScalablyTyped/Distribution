@@ -3,6 +3,7 @@ package typings.marked.mod.Tokens
 import typings.marked.markedStrings.html
 import typings.marked.markedStrings.text
 import typings.marked.mod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object Tag {
   }
   
   @scala.inline
-  implicit class TagOps[Self <: Tag] (val x: Self) extends AnyVal {
+  implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInLink(value: Boolean): Self = StObject.set(x, "inLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInRawBlock(value: Boolean): Self = StObject.set(x, "inRawBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInLink(value: Boolean): Self = this.set("inLink", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInRawBlock(value: Boolean): Self = this.set("inRawBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: text | html): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: text | html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

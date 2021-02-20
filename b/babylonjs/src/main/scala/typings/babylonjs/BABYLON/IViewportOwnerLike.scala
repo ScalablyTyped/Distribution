@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the interface used by objects containing a viewport (like a camera)
   */
 @js.native
-trait IViewportOwnerLike extends js.Object {
+trait IViewportOwnerLike extends StObject {
   
   /**
     * Gets or sets the viewport
@@ -24,21 +25,9 @@ object IViewportOwnerLike {
   }
   
   @scala.inline
-  implicit class IViewportOwnerLikeOps[Self <: IViewportOwnerLike] (val x: Self) extends AnyVal {
+  implicit class IViewportOwnerLikeMutableBuilder[Self <: IViewportOwnerLike] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setViewport(value: IViewportLike): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setViewport(value: IViewportLike): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

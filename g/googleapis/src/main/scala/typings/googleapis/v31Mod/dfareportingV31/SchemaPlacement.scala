@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains properties of a placement.
   */
 @js.native
-trait SchemaPlacement extends js.Object {
+trait SchemaPlacement extends StObject {
   
   /**
     * Account ID of this placement. This field can be left blank.
@@ -279,261 +280,249 @@ object SchemaPlacement {
   }
   
   @scala.inline
-  implicit class SchemaPlacementOps[Self <: SchemaPlacement] (val x: Self) extends AnyVal {
+  implicit class SchemaPlacementMutableBuilder[Self <: SchemaPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdBlockingOptOut(value: Boolean): Self = StObject.set(x, "adBlockingOptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAdBlockingOptOutUndefined: Self = StObject.set(x, "adBlockingOptOut", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdBlockingOptOut(value: Boolean): Self = this.set("adBlockingOptOut", value.asInstanceOf[js.Any])
+    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdBlockingOptOut: Self = this.set("adBlockingOptOut", js.undefined)
+    def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    def setCampaignIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "campaignIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArchived: Self = this.set("archived", js.undefined)
+    def setCampaignIdDimensionValueUndefined: Self = StObject.set(x, "campaignIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
     @scala.inline
-    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignIdDimensionValue(value: SchemaDimensionValue): Self = this.set("campaignIdDimensionValue", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteCampaignIdDimensionValue: Self = this.set("campaignIdDimensionValue", js.undefined)
+    def setCompatibility(value: String): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setContentCategoryId(value: String): Self = StObject.set(x, "contentCategoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibility(value: String): Self = this.set("compatibility", value.asInstanceOf[js.Any])
+    def setContentCategoryIdUndefined: Self = StObject.set(x, "contentCategoryId", js.undefined)
     
     @scala.inline
-    def deleteCompatibility: Self = this.set("compatibility", js.undefined)
+    def setCreateInfo(value: SchemaLastModifiedInfo): Self = StObject.set(x, "createInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentCategoryId(value: String): Self = this.set("contentCategoryId", value.asInstanceOf[js.Any])
+    def setCreateInfoUndefined: Self = StObject.set(x, "createInfo", js.undefined)
     
     @scala.inline
-    def deleteContentCategoryId: Self = this.set("contentCategoryId", js.undefined)
+    def setDirectorySiteId(value: String): Self = StObject.set(x, "directorySiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateInfo(value: SchemaLastModifiedInfo): Self = this.set("createInfo", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateInfo: Self = this.set("createInfo", js.undefined)
+    def setDirectorySiteIdDimensionValueUndefined: Self = StObject.set(x, "directorySiteIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdUndefined: Self = StObject.set(x, "directorySiteId", js.undefined)
     
     @scala.inline
-    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectorySiteIdDimensionValue(value: SchemaDimensionValue): Self = this.set("directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def deleteDirectorySiteIdDimensionValue: Self = this.set("directorySiteIdDimensionValue", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    def setLastModifiedInfo(value: SchemaLastModifiedInfo): Self = StObject.set(x, "lastModifiedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastModifiedInfoUndefined: Self = StObject.set(x, "lastModifiedInfo", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLookbackConfiguration(value: SchemaLookbackConfiguration): Self = StObject.set(x, "lookbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedInfo(value: SchemaLastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    def setLookbackConfigurationUndefined: Self = StObject.set(x, "lookbackConfiguration", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookbackConfiguration(value: SchemaLookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
+    def setPaymentApproved(value: Boolean): Self = StObject.set(x, "paymentApproved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPaymentApprovedUndefined: Self = StObject.set(x, "paymentApproved", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPaymentSource(value: String): Self = StObject.set(x, "paymentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentApproved(value: Boolean): Self = this.set("paymentApproved", value.asInstanceOf[js.Any])
+    def setPaymentSourceUndefined: Self = StObject.set(x, "paymentSource", js.undefined)
     
     @scala.inline
-    def deletePaymentApproved: Self = this.set("paymentApproved", js.undefined)
+    def setPlacementGroupId(value: String): Self = StObject.set(x, "placementGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentSource(value: String): Self = this.set("paymentSource", value.asInstanceOf[js.Any])
+    def setPlacementGroupIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "placementGroupIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaymentSource: Self = this.set("paymentSource", js.undefined)
+    def setPlacementGroupIdDimensionValueUndefined: Self = StObject.set(x, "placementGroupIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setPlacementGroupId(value: String): Self = this.set("placementGroupId", value.asInstanceOf[js.Any])
+    def setPlacementGroupIdUndefined: Self = StObject.set(x, "placementGroupId", js.undefined)
     
     @scala.inline
-    def deletePlacementGroupId: Self = this.set("placementGroupId", js.undefined)
+    def setPlacementStrategyId(value: String): Self = StObject.set(x, "placementStrategyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementGroupIdDimensionValue(value: SchemaDimensionValue): Self = this.set("placementGroupIdDimensionValue", value.asInstanceOf[js.Any])
+    def setPlacementStrategyIdUndefined: Self = StObject.set(x, "placementStrategyId", js.undefined)
     
     @scala.inline
-    def deletePlacementGroupIdDimensionValue: Self = this.set("placementGroupIdDimensionValue", js.undefined)
+    def setPricingSchedule(value: SchemaPricingSchedule): Self = StObject.set(x, "pricingSchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementStrategyId(value: String): Self = this.set("placementStrategyId", value.asInstanceOf[js.Any])
+    def setPricingScheduleUndefined: Self = StObject.set(x, "pricingSchedule", js.undefined)
     
     @scala.inline
-    def deletePlacementStrategyId: Self = this.set("placementStrategyId", js.undefined)
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingSchedule(value: SchemaPricingSchedule): Self = this.set("pricingSchedule", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deletePricingSchedule: Self = this.set("pricingSchedule", js.undefined)
+    def setPublisherUpdateInfo(value: SchemaLastModifiedInfo): Self = StObject.set(x, "publisherUpdateInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setPublisherUpdateInfoUndefined: Self = StObject.set(x, "publisherUpdateInfo", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherUpdateInfo(value: SchemaLastModifiedInfo): Self = this.set("publisherUpdateInfo", value.asInstanceOf[js.Any])
+    def setSiteIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "siteIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisherUpdateInfo: Self = this.set("publisherUpdateInfo", js.undefined)
+    def setSiteIdDimensionValueUndefined: Self = StObject.set(x, "siteIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
+    def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
     @scala.inline
-    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteIdDimensionValue(value: SchemaDimensionValue): Self = this.set("siteIdDimensionValue", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSiteIdDimensionValue: Self = this.set("siteIdDimensionValue", js.undefined)
+    def setSslRequired(value: Boolean): Self = StObject.set(x, "sslRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSslRequiredUndefined: Self = StObject.set(x, "sslRequired", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTagFormats(value: js.Array[String]): Self = StObject.set(x, "tagFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
     
     @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
     
     @scala.inline
-    def setTagFormatsVarargs(value: String*): Self = this.set("tagFormats", js.Array(value :_*))
+    def setTagSetting(value: SchemaTagSetting): Self = StObject.set(x, "tagSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagFormats(value: js.Array[String]): Self = this.set("tagFormats", value.asInstanceOf[js.Any])
+    def setTagSettingUndefined: Self = StObject.set(x, "tagSetting", js.undefined)
     
     @scala.inline
-    def deleteTagFormats: Self = this.set("tagFormats", js.undefined)
+    def setVideoActiveViewOptOut(value: Boolean): Self = StObject.set(x, "videoActiveViewOptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSetting(value: SchemaTagSetting): Self = this.set("tagSetting", value.asInstanceOf[js.Any])
+    def setVideoActiveViewOptOutUndefined: Self = StObject.set(x, "videoActiveViewOptOut", js.undefined)
     
     @scala.inline
-    def deleteTagSetting: Self = this.set("tagSetting", js.undefined)
+    def setVideoSettings(value: SchemaVideoSettings): Self = StObject.set(x, "videoSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoActiveViewOptOut(value: Boolean): Self = this.set("videoActiveViewOptOut", value.asInstanceOf[js.Any])
+    def setVideoSettingsUndefined: Self = StObject.set(x, "videoSettings", js.undefined)
     
     @scala.inline
-    def deleteVideoActiveViewOptOut: Self = this.set("videoActiveViewOptOut", js.undefined)
+    def setVpaidAdapterChoice(value: String): Self = StObject.set(x, "vpaidAdapterChoice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoSettings(value: SchemaVideoSettings): Self = this.set("videoSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoSettings: Self = this.set("videoSettings", js.undefined)
-    
-    @scala.inline
-    def setVpaidAdapterChoice(value: String): Self = this.set("vpaidAdapterChoice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpaidAdapterChoice: Self = this.set("vpaidAdapterChoice", js.undefined)
+    def setVpaidAdapterChoiceUndefined: Self = StObject.set(x, "vpaidAdapterChoice", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrustedKeyGroups extends js.Object {
+trait TrustedKeyGroups extends StObject {
   
   /**
     * This field is true if any of the key groups in the list have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies. If not, this field is false.
@@ -31,33 +32,21 @@ object TrustedKeyGroups {
   }
   
   @scala.inline
-  implicit class TrustedKeyGroupsOps[Self <: TrustedKeyGroups] (val x: Self) extends AnyVal {
+  implicit class TrustedKeyGroupsMutableBuilder[Self <: TrustedKeyGroups] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: TrustedKeyGroupIdList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
     @scala.inline
-    def setQuantity(value: integer): Self = this.set("Quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = this.set("Items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: TrustedKeyGroupIdList): Self = this.set("Items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("Items", js.undefined)
+    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

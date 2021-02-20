@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact.anon
 
 import typings.uifabricMergeStyles.istyleMod.IStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/ComboBox/ComboBox.types.IComboBoxStyles> */
 @js.native
-trait PartialIComboBoxStyles extends js.Object {
+trait PartialIComboBoxStyles extends StObject {
   
   var callout: js.UndefOr[IStyle] = js.native
   
@@ -56,189 +57,177 @@ object PartialIComboBoxStyles {
   }
   
   @scala.inline
-  implicit class PartialIComboBoxStylesOps[Self <: PartialIComboBoxStyles] (val x: Self) extends AnyVal {
+  implicit class PartialIComboBoxStylesMutableBuilder[Self <: PartialIComboBoxStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalloutNull: Self = StObject.set(x, "callout", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
     @scala.inline
-    def setCallout(value: IStyle): Self = this.set("callout", value.asInstanceOf[js.Any])
+    def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallout: Self = this.set("callout", js.undefined)
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def setCalloutNull: Self = this.set("callout", null)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: IStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDivider(value: IStyle): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setDividerNull: Self = StObject.set(x, "divider", null)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
     
     @scala.inline
-    def setDivider(value: IStyle): Self = this.set("divider", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: IStyle): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDivider: Self = this.set("divider", js.undefined)
+    def setErrorMessageNull: Self = StObject.set(x, "errorMessage", null)
     
     @scala.inline
-    def setDividerNull: Self = this.set("divider", null)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setErrorMessage(value: IStyle): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setHeader(value: IStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setHeaderNull: Self = StObject.set(x, "header", null)
     
     @scala.inline
-    def setErrorMessageNull: Self = this.set("errorMessage", null)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setHeader(value: IStyle): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setInputDisabled(value: IStyle): Self = StObject.set(x, "inputDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderNull: Self = this.set("header", null)
+    def setInputDisabledNull: Self = StObject.set(x, "inputDisabled", null)
     
     @scala.inline
-    def setInput(value: IStyle): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInputDisabledUndefined: Self = StObject.set(x, "inputDisabled", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInputNull: Self = StObject.set(x, "input", null)
     
     @scala.inline
-    def setInputNull: Self = this.set("input", null)
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setInputDisabled(value: IStyle): Self = this.set("inputDisabled", value.asInstanceOf[js.Any])
+    def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputDisabled: Self = this.set("inputDisabled", js.undefined)
+    def setLabelDisabled(value: IStyle): Self = StObject.set(x, "labelDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDisabledNull: Self = this.set("inputDisabled", null)
+    def setLabelDisabledNull: Self = StObject.set(x, "labelDisabled", null)
     
     @scala.inline
-    def setLabel(value: IStyle): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelDisabledUndefined: Self = StObject.set(x, "labelDisabled", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def setLabelNull: Self = this.set("label", null)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabelDisabled(value: IStyle): Self = this.set("labelDisabled", value.asInstanceOf[js.Any])
+    def setOptionsContainer(value: IStyle): Self = StObject.set(x, "optionsContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelDisabled: Self = this.set("labelDisabled", js.undefined)
+    def setOptionsContainerNull: Self = StObject.set(x, "optionsContainer", null)
     
     @scala.inline
-    def setLabelDisabledNull: Self = this.set("labelDisabled", null)
+    def setOptionsContainerUndefined: Self = StObject.set(x, "optionsContainer", js.undefined)
     
     @scala.inline
-    def setOptionsContainer(value: IStyle): Self = this.set("optionsContainer", value.asInstanceOf[js.Any])
+    def setOptionsContainerWrapper(value: IStyle): Self = StObject.set(x, "optionsContainerWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptionsContainer: Self = this.set("optionsContainer", js.undefined)
+    def setOptionsContainerWrapperNull: Self = StObject.set(x, "optionsContainerWrapper", null)
     
     @scala.inline
-    def setOptionsContainerNull: Self = this.set("optionsContainer", null)
+    def setOptionsContainerWrapperUndefined: Self = StObject.set(x, "optionsContainerWrapper", js.undefined)
     
     @scala.inline
-    def setOptionsContainerWrapper(value: IStyle): Self = this.set("optionsContainerWrapper", value.asInstanceOf[js.Any])
+    def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptionsContainerWrapper: Self = this.set("optionsContainerWrapper", js.undefined)
+    def setRootDisabled(value: IStyle): Self = StObject.set(x, "rootDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsContainerWrapperNull: Self = this.set("optionsContainerWrapper", null)
+    def setRootDisabledNull: Self = StObject.set(x, "rootDisabled", null)
     
     @scala.inline
-    def setRoot(value: IStyle): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRootDisabledUndefined: Self = StObject.set(x, "rootDisabled", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootDisallowFreeForm(value: IStyle): Self = StObject.set(x, "rootDisallowFreeForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setRootDisallowFreeFormNull: Self = StObject.set(x, "rootDisallowFreeForm", null)
     
     @scala.inline
-    def setRootDisabled(value: IStyle): Self = this.set("rootDisabled", value.asInstanceOf[js.Any])
+    def setRootDisallowFreeFormUndefined: Self = StObject.set(x, "rootDisallowFreeForm", js.undefined)
     
     @scala.inline
-    def deleteRootDisabled: Self = this.set("rootDisabled", js.undefined)
+    def setRootError(value: IStyle): Self = StObject.set(x, "rootError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDisabledNull: Self = this.set("rootDisabled", null)
+    def setRootErrorNull: Self = StObject.set(x, "rootError", null)
     
     @scala.inline
-    def setRootDisallowFreeForm(value: IStyle): Self = this.set("rootDisallowFreeForm", value.asInstanceOf[js.Any])
+    def setRootErrorUndefined: Self = StObject.set(x, "rootError", js.undefined)
     
     @scala.inline
-    def deleteRootDisallowFreeForm: Self = this.set("rootDisallowFreeForm", js.undefined)
+    def setRootFocused(value: IStyle): Self = StObject.set(x, "rootFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootDisallowFreeFormNull: Self = this.set("rootDisallowFreeForm", null)
+    def setRootFocusedNull: Self = StObject.set(x, "rootFocused", null)
     
     @scala.inline
-    def setRootError(value: IStyle): Self = this.set("rootError", value.asInstanceOf[js.Any])
+    def setRootFocusedUndefined: Self = StObject.set(x, "rootFocused", js.undefined)
     
     @scala.inline
-    def deleteRootError: Self = this.set("rootError", js.undefined)
+    def setRootHovered(value: IStyle): Self = StObject.set(x, "rootHovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootErrorNull: Self = this.set("rootError", null)
+    def setRootHoveredNull: Self = StObject.set(x, "rootHovered", null)
     
     @scala.inline
-    def setRootFocused(value: IStyle): Self = this.set("rootFocused", value.asInstanceOf[js.Any])
+    def setRootHoveredUndefined: Self = StObject.set(x, "rootHovered", js.undefined)
     
     @scala.inline
-    def deleteRootFocused: Self = this.set("rootFocused", js.undefined)
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setRootFocusedNull: Self = this.set("rootFocused", null)
+    def setRootPressed(value: IStyle): Self = StObject.set(x, "rootPressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootHovered(value: IStyle): Self = this.set("rootHovered", value.asInstanceOf[js.Any])
+    def setRootPressedNull: Self = StObject.set(x, "rootPressed", null)
     
     @scala.inline
-    def deleteRootHovered: Self = this.set("rootHovered", js.undefined)
+    def setRootPressedUndefined: Self = StObject.set(x, "rootPressed", js.undefined)
     
     @scala.inline
-    def setRootHoveredNull: Self = this.set("rootHovered", null)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setRootPressed(value: IStyle): Self = this.set("rootPressed", value.asInstanceOf[js.Any])
+    def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRootPressed: Self = this.set("rootPressed", js.undefined)
+    def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
     
     @scala.inline
-    def setRootPressedNull: Self = this.set("rootPressed", null)
-    
-    @scala.inline
-    def setScreenReaderText(value: IStyle): Self = this.set("screenReaderText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenReaderText: Self = this.set("screenReaderText", js.undefined)
-    
-    @scala.inline
-    def setScreenReaderTextNull: Self = this.set("screenReaderText", null)
+    def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
   }
 }

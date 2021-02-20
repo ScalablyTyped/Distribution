@@ -1,14 +1,14 @@
 package typings.babylonjs
 
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Background/index", JSImport.Namespace)
-@js.native
-object backgroundIndexMod extends js.Object {
+object backgroundIndexMod {
   
+  @JSImport("babylonjs/Materials/Background/index", "BackgroundMaterial")
   @js.native
   class BackgroundMaterial protected ()
     extends typings.babylonjs.backgroundMaterialMod.BackgroundMaterial {
@@ -20,8 +20,11 @@ object backgroundIndexMod extends js.Object {
     def this(name: String, scene: Scene) = this()
   }
   /* static members */
-  @js.native
-  object BackgroundMaterial extends js.Object {
+  object BackgroundMaterial {
+    
+    @JSImport("babylonjs/Materials/Background/index", "BackgroundMaterial")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parse a JSON input to create back a background material.
@@ -30,16 +33,26 @@ object backgroundIndexMod extends js.Object {
       * @param rootUrl The root url of the assets the material depends upon
       * @returns the instantiated BackgroundMaterial.
       */
+    @JSImport("babylonjs/Materials/Background/index", "BackgroundMaterial.Parse")
+    @js.native
     def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.backgroundMaterialMod.BackgroundMaterial = js.native
     
     /**
       * Standard reflectance value at parallel view angle.
       */
-    var StandardReflectance0: Double = js.native
+    @JSImport("babylonjs/Materials/Background/index", "BackgroundMaterial.StandardReflectance0")
+    @js.native
+    def StandardReflectance0: Double = js.native
+    @scala.inline
+    def StandardReflectance0_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance0")(x.asInstanceOf[js.Any])
     
     /**
       * Standard reflectance value at grazing angle.
       */
-    var StandardReflectance90: Double = js.native
+    @JSImport("babylonjs/Materials/Background/index", "BackgroundMaterial.StandardReflectance90")
+    @js.native
+    def StandardReflectance90: Double = js.native
+    @scala.inline
+    def StandardReflectance90_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StandardReflectance90")(x.asInstanceOf[js.Any])
   }
 }

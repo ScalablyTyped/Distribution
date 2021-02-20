@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmSubscriptionInput extends js.Object {
+trait ConfirmSubscriptionInput extends StObject {
   
   /**
     * Disallows unauthenticated unsubscribes of the subscription. If the value of this parameter is true and the request has an AWS signature, then only the topic owner and the subscription owner can unsubscribe the endpoint. The unsubscribe action requires AWS authentication. 
@@ -31,30 +32,18 @@ object ConfirmSubscriptionInput {
   }
   
   @scala.inline
-  implicit class ConfirmSubscriptionInputOps[Self <: ConfirmSubscriptionInput] (val x: Self) extends AnyVal {
+  implicit class ConfirmSubscriptionInputMutableBuilder[Self <: ConfirmSubscriptionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticateOnUnsubscribe(value: authenticateOnUnsubscribe): Self = StObject.set(x, "AuthenticateOnUnsubscribe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticateOnUnsubscribeUndefined: Self = StObject.set(x, "AuthenticateOnUnsubscribe", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToken(value: token): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: token): Self = this.set("Token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthenticateOnUnsubscribe(value: authenticateOnUnsubscribe): Self = this.set("AuthenticateOnUnsubscribe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthenticateOnUnsubscribe: Self = this.set("AuthenticateOnUnsubscribe", js.undefined)
+    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

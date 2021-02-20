@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalModel extends js.Object {
+trait ExternalModel extends StObject {
   
   /**
     * The model ARN.
@@ -61,72 +62,60 @@ object ExternalModel {
   }
   
   @scala.inline
-  implicit class ExternalModelOps[Self <: ExternalModel] (val x: Self) extends AnyVal {
+  implicit class ExternalModelMutableBuilder[Self <: ExternalModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: fraudDetectorArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setInputConfiguration(value: ModelInputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: time): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    def setInvokeModelEndpointRoleArn(value: String): Self = StObject.set(x, "invokeModelEndpointRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfiguration(value: ModelInputConfiguration): Self = this.set("inputConfiguration", value.asInstanceOf[js.Any])
+    def setInvokeModelEndpointRoleArnUndefined: Self = StObject.set(x, "invokeModelEndpointRoleArn", js.undefined)
     
     @scala.inline
-    def deleteInputConfiguration: Self = this.set("inputConfiguration", js.undefined)
+    def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvokeModelEndpointRoleArn(value: String): Self = this.set("invokeModelEndpointRoleArn", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteInvokeModelEndpointRoleArn: Self = this.set("invokeModelEndpointRoleArn", js.undefined)
+    def setModelEndpoint(value: String): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: time): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    def setModelEndpointStatus(value: ModelEndpointStatus): Self = StObject.set(x, "modelEndpointStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    def setModelEndpointStatusUndefined: Self = StObject.set(x, "modelEndpointStatus", js.undefined)
     
     @scala.inline
-    def setModelEndpoint(value: String): Self = this.set("modelEndpoint", value.asInstanceOf[js.Any])
+    def setModelEndpointUndefined: Self = StObject.set(x, "modelEndpoint", js.undefined)
     
     @scala.inline
-    def deleteModelEndpoint: Self = this.set("modelEndpoint", js.undefined)
+    def setModelSource(value: ModelSource): Self = StObject.set(x, "modelSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelEndpointStatus(value: ModelEndpointStatus): Self = this.set("modelEndpointStatus", value.asInstanceOf[js.Any])
+    def setModelSourceUndefined: Self = StObject.set(x, "modelSource", js.undefined)
     
     @scala.inline
-    def deleteModelEndpointStatus: Self = this.set("modelEndpointStatus", js.undefined)
+    def setOutputConfiguration(value: ModelOutputConfiguration): Self = StObject.set(x, "outputConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelSource(value: ModelSource): Self = this.set("modelSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelSource: Self = this.set("modelSource", js.undefined)
-    
-    @scala.inline
-    def setOutputConfiguration(value: ModelOutputConfiguration): Self = this.set("outputConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputConfiguration: Self = this.set("outputConfiguration", js.undefined)
+    def setOutputConfigurationUndefined: Self = StObject.set(x, "outputConfiguration", js.undefined)
   }
 }

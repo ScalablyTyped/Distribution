@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendmedicalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RxNormEntity extends js.Object {
+trait RxNormEntity extends StObject {
   
   /**
     * The extracted attributes that relate to the entity. The attributes recognized by InferRxNorm are DOSAGE, DURATION, FORM, FREQUENCY, RATE, ROUTE_OR_MODE, and STRENGTH.
@@ -66,87 +67,75 @@ object RxNormEntity {
   }
   
   @scala.inline
-  implicit class RxNormEntityOps[Self <: RxNormEntity] (val x: Self) extends AnyVal {
+  implicit class RxNormEntityMutableBuilder[Self <: RxNormEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: RxNormAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: RxNormAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: RxNormAttribute*): Self = this.set("Attributes", js.Array(value :_*))
+    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: RxNormAttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setCategory(value: RxNormEntityCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: RxNormEntityCategory): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    def setRxNormConcepts(value: RxNormConceptList): Self = StObject.set(x, "RxNormConcepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Integer): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setRxNormConceptsUndefined: Self = StObject.set(x, "RxNormConcepts", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setRxNormConceptsVarargs(value: RxNormConcept*): Self = StObject.set(x, "RxNormConcepts", js.Array(value :_*))
     
     @scala.inline
-    def setRxNormConceptsVarargs(value: RxNormConcept*): Self = this.set("RxNormConcepts", js.Array(value :_*))
+    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRxNormConcepts(value: RxNormConceptList): Self = this.set("RxNormConcepts", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
     
     @scala.inline
-    def deleteRxNormConcepts: Self = this.set("RxNormConcepts", js.undefined)
+    def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
     @scala.inline
-    def deleteScore: Self = this.set("Score", js.undefined)
+    def setTraits(value: RxNormTraitList): Self = StObject.set(x, "Traits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: OntologyLinkingBoundedLengthString): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
+    def setTraitsVarargs(value: RxNormTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
     
     @scala.inline
-    def setTraitsVarargs(value: RxNormTrait*): Self = this.set("Traits", js.Array(value :_*))
+    def setType(value: RxNormEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraits(value: RxNormTraitList): Self = this.set("Traits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraits: Self = this.set("Traits", js.undefined)
-    
-    @scala.inline
-    def setType(value: RxNormEntityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

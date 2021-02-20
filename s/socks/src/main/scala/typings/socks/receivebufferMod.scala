@@ -1,16 +1,16 @@
 package typings.socks
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("socks/typings/common/receivebuffer", JSImport.Namespace)
-@js.native
-object receivebufferMod extends js.Object {
+object receivebufferMod {
   
+  @JSImport("socks/typings/common/receivebuffer", "ReceiveBuffer")
   @js.native
-  class ReceiveBuffer () extends js.Object {
+  class ReceiveBuffer () extends StObject {
     def this(size: Double) = this()
     
     def append(data: Buffer): Double = js.native

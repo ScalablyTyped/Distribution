@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductsListResponse extends js.Object {
+trait ProductsListResponse extends StObject {
   
   /** General pagination information. */
   var pageInfo: js.UndefOr[PageInfo] = js.native
@@ -25,39 +26,27 @@ object ProductsListResponse {
   }
   
   @scala.inline
-  implicit class ProductsListResponseOps[Self <: ProductsListResponse] (val x: Self) extends AnyVal {
+  implicit class ProductsListResponseMutableBuilder[Self <: ProductsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProduct(value: js.Array[Product]): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageInfo(value: PageInfo): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def deletePageInfo: Self = this.set("pageInfo", js.undefined)
+    def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value :_*))
     
     @scala.inline
-    def setProductVarargs(value: Product*): Self = this.set("product", js.Array(value :_*))
+    def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: js.Array[Product]): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
-    
-    @scala.inline
-    def setTokenPagination(value: TokenPagination): Self = this.set("tokenPagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenPagination: Self = this.set("tokenPagination", js.undefined)
+    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

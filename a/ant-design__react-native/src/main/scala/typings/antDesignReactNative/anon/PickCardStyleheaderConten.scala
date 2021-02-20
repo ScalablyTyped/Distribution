@@ -3,13 +3,14 @@ package typings.antDesignReactNative.anon
 import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@ant-design/react-native.@ant-design/react-native/lib/card/style.CardStyle, 'headerContentWrap' | 'headerContent' | 'headerExtraWrap' | 'headerExtra' | 'headerImage' | 'headerTitle' | 'headerWrap'> */
 @js.native
-trait PickCardStyleheaderConten extends js.Object {
+trait PickCardStyleheaderConten extends StObject {
   
   var headerContent: TextStyle = js.native
   
@@ -42,39 +43,27 @@ object PickCardStyleheaderConten {
   }
   
   @scala.inline
-  implicit class PickCardStyleheaderContenOps[Self <: PickCardStyleheaderConten] (val x: Self) extends AnyVal {
+  implicit class PickCardStyleheaderContenMutableBuilder[Self <: PickCardStyleheaderConten] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderContent(value: TextStyle): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderContentWrap(value: ViewStyle): Self = StObject.set(x, "headerContentWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderExtra(value: TextStyle): Self = StObject.set(x, "headerExtra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderContent(value: TextStyle): Self = this.set("headerContent", value.asInstanceOf[js.Any])
+    def setHeaderExtraWrap(value: ViewStyle): Self = StObject.set(x, "headerExtraWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderContentWrap(value: ViewStyle): Self = this.set("headerContentWrap", value.asInstanceOf[js.Any])
+    def setHeaderImage(value: ImageStyle): Self = StObject.set(x, "headerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderExtra(value: TextStyle): Self = this.set("headerExtra", value.asInstanceOf[js.Any])
+    def setHeaderTitle(value: ViewStyle): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderExtraWrap(value: ViewStyle): Self = this.set("headerExtraWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderImage(value: ImageStyle): Self = this.set("headerImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderTitle(value: ViewStyle): Self = this.set("headerTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderWrap(value: ViewStyle): Self = this.set("headerWrap", value.asInstanceOf[js.Any])
+    def setHeaderWrap(value: ViewStyle): Self = StObject.set(x, "headerWrap", value.asInstanceOf[js.Any])
   }
 }

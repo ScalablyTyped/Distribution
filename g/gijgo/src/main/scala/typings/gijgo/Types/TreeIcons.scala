@@ -1,12 +1,13 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tree
 @js.native
-trait TreeIcons extends js.Object {
+trait TreeIcons extends StObject {
   
   var collapse: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object TreeIcons {
   }
   
   @scala.inline
-  implicit class TreeIconsOps[Self <: TreeIcons] (val x: Self) extends AnyVal {
+  implicit class TreeIconsMutableBuilder[Self <: TreeIcons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapse(value: String): Self = this.set("collapse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
-    
-    @scala.inline
-    def setExpand(value: String): Self = this.set("expand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }
 }

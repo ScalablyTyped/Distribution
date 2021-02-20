@@ -5,12 +5,13 @@ import typings.yandexMaps.yandexMapsStrings.`type`
 import typings.yandexMaps.yandexMapsStrings.newZoom
 import typings.yandexMaps.yandexMapsStrings.objectId
 import typings.yandexMaps.yandexMapsStrings.oldZoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEvent[OriginalEvent, TargetGeometry] extends js.Object {
+trait IEvent[OriginalEvent, TargetGeometry] extends StObject {
   
   def allowMapEvent(): Unit = js.native
   

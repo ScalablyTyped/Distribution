@@ -1,6 +1,7 @@
 package typings.reactReconciler.mod
 
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // And expose interaction metadata to the React DevTools Profiler plugin.
 // Note that these attributes are only defined when the enableSchedulerTracing flag is enabled.
 @js.native
-trait ProfilingOnlyFiberRootProperties extends js.Object {
+trait ProfilingOnlyFiberRootProperties extends StObject {
   
   var interactionThreadID: Double = js.native
   
@@ -31,27 +32,15 @@ object ProfilingOnlyFiberRootProperties {
   }
   
   @scala.inline
-  implicit class ProfilingOnlyFiberRootPropertiesOps[Self <: ProfilingOnlyFiberRootProperties] (val x: Self) extends AnyVal {
+  implicit class ProfilingOnlyFiberRootPropertiesMutableBuilder[Self <: ProfilingOnlyFiberRootProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractionThreadID(value: Double): Self = StObject.set(x, "interactionThreadID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemoizedInteractions(value: Set[Interaction]): Self = StObject.set(x, "memoizedInteractions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInteractionThreadID(value: Double): Self = this.set("interactionThreadID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemoizedInteractions(value: Set[Interaction]): Self = this.set("memoizedInteractions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPendingInteractionMap(value: PendingInteractionMap): Self = this.set("pendingInteractionMap", value.asInstanceOf[js.Any])
+    def setPendingInteractionMap(value: PendingInteractionMap): Self = StObject.set(x, "pendingInteractionMap", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentRefinementsProvided extends js.Object {
+trait CurrentRefinementsProvided extends StObject {
   
   /**
     * all the filters, the value is to pass to the refine function for removing all currentrefinements,

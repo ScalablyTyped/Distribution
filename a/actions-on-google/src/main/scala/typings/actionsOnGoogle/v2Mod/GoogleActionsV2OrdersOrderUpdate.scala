@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersOrderUpdate extends js.Object {
+trait GoogleActionsV2OrdersOrderUpdate extends StObject {
   
   /**
     * Required. The canonical order id referencing this order.
@@ -98,111 +99,99 @@ object GoogleActionsV2OrdersOrderUpdate {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersOrderUpdateOps[Self <: GoogleActionsV2OrdersOrderUpdate] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersOrderUpdateMutableBuilder[Self <: GoogleActionsV2OrdersOrderUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionOrderId(value: String): Self = StObject.set(x, "actionOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionOrderIdUndefined: Self = StObject.set(x, "actionOrderId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancellationInfo(value: GoogleActionsV2OrdersCancellationInfo): Self = StObject.set(x, "cancellationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionOrderId(value: String): Self = this.set("actionOrderId", value.asInstanceOf[js.Any])
+    def setCancellationInfoUndefined: Self = StObject.set(x, "cancellationInfo", js.undefined)
     
     @scala.inline
-    def deleteActionOrderId: Self = this.set("actionOrderId", js.undefined)
+    def setFulfillmentInfo(value: GoogleActionsV2OrdersFulfillmentInfo): Self = StObject.set(x, "fulfillmentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancellationInfo(value: GoogleActionsV2OrdersCancellationInfo): Self = this.set("cancellationInfo", value.asInstanceOf[js.Any])
+    def setFulfillmentInfoUndefined: Self = StObject.set(x, "fulfillmentInfo", js.undefined)
     
     @scala.inline
-    def deleteCancellationInfo: Self = this.set("cancellationInfo", js.undefined)
+    def setGoogleOrderId(value: String): Self = StObject.set(x, "googleOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentInfo(value: GoogleActionsV2OrdersFulfillmentInfo): Self = this.set("fulfillmentInfo", value.asInstanceOf[js.Any])
+    def setGoogleOrderIdUndefined: Self = StObject.set(x, "googleOrderId", js.undefined)
     
     @scala.inline
-    def deleteFulfillmentInfo: Self = this.set("fulfillmentInfo", js.undefined)
+    def setInTransitInfo(value: GoogleActionsV2OrdersInTransitInfo): Self = StObject.set(x, "inTransitInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleOrderId(value: String): Self = this.set("googleOrderId", value.asInstanceOf[js.Any])
+    def setInTransitInfoUndefined: Self = StObject.set(x, "inTransitInfo", js.undefined)
     
     @scala.inline
-    def deleteGoogleOrderId: Self = this.set("googleOrderId", js.undefined)
+    def setInfoExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "infoExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInTransitInfo(value: GoogleActionsV2OrdersInTransitInfo): Self = this.set("inTransitInfo", value.asInstanceOf[js.Any])
+    def setInfoExtensionUndefined: Self = StObject.set(x, "infoExtension", js.undefined)
     
     @scala.inline
-    def deleteInTransitInfo: Self = this.set("inTransitInfo", js.undefined)
+    def setLineItemUpdates(value: ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]): Self = StObject.set(x, "lineItemUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoExtension(value: ApiClientObjectMap[_]): Self = this.set("infoExtension", value.asInstanceOf[js.Any])
+    def setLineItemUpdatesUndefined: Self = StObject.set(x, "lineItemUpdates", js.undefined)
     
     @scala.inline
-    def deleteInfoExtension: Self = this.set("infoExtension", js.undefined)
+    def setOrderManagementActions(value: js.Array[GoogleActionsV2OrdersOrderUpdateAction]): Self = StObject.set(x, "orderManagementActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemUpdates(value: ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]): Self = this.set("lineItemUpdates", value.asInstanceOf[js.Any])
+    def setOrderManagementActionsUndefined: Self = StObject.set(x, "orderManagementActions", js.undefined)
     
     @scala.inline
-    def deleteLineItemUpdates: Self = this.set("lineItemUpdates", js.undefined)
+    def setOrderManagementActionsVarargs(value: GoogleActionsV2OrdersOrderUpdateAction*): Self = StObject.set(x, "orderManagementActions", js.Array(value :_*))
     
     @scala.inline
-    def setOrderManagementActionsVarargs(value: GoogleActionsV2OrdersOrderUpdateAction*): Self = this.set("orderManagementActions", js.Array(value :_*))
+    def setOrderState(value: GoogleActionsV2OrdersOrderState): Self = StObject.set(x, "orderState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderManagementActions(value: js.Array[GoogleActionsV2OrdersOrderUpdateAction]): Self = this.set("orderManagementActions", value.asInstanceOf[js.Any])
+    def setOrderStateUndefined: Self = StObject.set(x, "orderState", js.undefined)
     
     @scala.inline
-    def deleteOrderManagementActions: Self = this.set("orderManagementActions", js.undefined)
+    def setReceipt(value: GoogleActionsV2OrdersReceipt): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderState(value: GoogleActionsV2OrdersOrderState): Self = this.set("orderState", value.asInstanceOf[js.Any])
+    def setReceiptUndefined: Self = StObject.set(x, "receipt", js.undefined)
     
     @scala.inline
-    def deleteOrderState: Self = this.set("orderState", js.undefined)
+    def setRejectionInfo(value: GoogleActionsV2OrdersRejectionInfo): Self = StObject.set(x, "rejectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceipt(value: GoogleActionsV2OrdersReceipt): Self = this.set("receipt", value.asInstanceOf[js.Any])
+    def setRejectionInfoUndefined: Self = StObject.set(x, "rejectionInfo", js.undefined)
     
     @scala.inline
-    def deleteReceipt: Self = this.set("receipt", js.undefined)
+    def setReturnInfo(value: GoogleActionsV2OrdersReturnInfo): Self = StObject.set(x, "returnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectionInfo(value: GoogleActionsV2OrdersRejectionInfo): Self = this.set("rejectionInfo", value.asInstanceOf[js.Any])
+    def setReturnInfoUndefined: Self = StObject.set(x, "returnInfo", js.undefined)
     
     @scala.inline
-    def deleteRejectionInfo: Self = this.set("rejectionInfo", js.undefined)
+    def setTotalPrice(value: GoogleActionsV2OrdersPrice): Self = StObject.set(x, "totalPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnInfo(value: GoogleActionsV2OrdersReturnInfo): Self = this.set("returnInfo", value.asInstanceOf[js.Any])
+    def setTotalPriceUndefined: Self = StObject.set(x, "totalPrice", js.undefined)
     
     @scala.inline
-    def deleteReturnInfo: Self = this.set("returnInfo", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPrice(value: GoogleActionsV2OrdersPrice): Self = this.set("totalPrice", value.asInstanceOf[js.Any])
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def deleteTotalPrice: Self = this.set("totalPrice", js.undefined)
+    def setUserNotification(value: GoogleActionsV2OrdersOrderUpdateUserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
-    
-    @scala.inline
-    def setUserNotification(value: GoogleActionsV2OrdersOrderUpdateUserNotification): Self = this.set("userNotification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserNotification: Self = this.set("userNotification", js.undefined)
+    def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
   }
 }

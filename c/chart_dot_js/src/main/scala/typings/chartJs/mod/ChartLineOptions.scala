@@ -5,12 +5,13 @@ import typings.chartJs.chartJsStrings.default
 import typings.chartJs.chartJsStrings.monotone
 import typings.chartJs.chartJsStrings.top
 import typings.chartJs.chartJsStrings.zero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLineOptions extends js.Object {
+trait ChartLineOptions extends StObject {
   
   var backgroundColor: js.UndefOr[ChartColor] = js.native
   
@@ -45,99 +46,87 @@ object ChartLineOptions {
   }
   
   @scala.inline
-  implicit class ChartLineOptionsOps[Self <: ChartLineOptions] (val x: Self) extends AnyVal {
+  implicit class ChartLineOptionsMutableBuilder[Self <: ChartLineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: ChartColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorVarargs(value: String*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColorVarargs(value: String*): Self = this.set("backgroundColor", js.Array(value :_*))
+    def setBorderCapStyle(value: String): Self = StObject.set(x, "borderCapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: ChartColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderCapStyleUndefined: Self = StObject.set(x, "borderCapStyle", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderColor(value: ChartColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderCapStyle(value: String): Self = this.set("borderCapStyle", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBorderCapStyle: Self = this.set("borderCapStyle", js.undefined)
+    def setBorderColorVarargs(value: String*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
     
     @scala.inline
-    def setBorderColorVarargs(value: String*): Self = this.set("borderColor", js.Array(value :_*))
+    def setBorderDash(value: js.Array[_]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ChartColor): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderDashOffset(value: Double): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderDashOffsetUndefined: Self = StObject.set(x, "borderDashOffset", js.undefined)
     
     @scala.inline
-    def setBorderDashVarargs(value: js.Any*): Self = this.set("borderDash", js.Array(value :_*))
+    def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
     
     @scala.inline
-    def setBorderDash(value: js.Array[_]): Self = this.set("borderDash", value.asInstanceOf[js.Any])
+    def setBorderDashVarargs(value: js.Any*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
     
     @scala.inline
-    def deleteBorderDash: Self = this.set("borderDash", js.undefined)
+    def setBorderJoinStyle(value: String): Self = StObject.set(x, "borderJoinStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderDashOffset(value: Double): Self = this.set("borderDashOffset", value.asInstanceOf[js.Any])
+    def setBorderJoinStyleUndefined: Self = StObject.set(x, "borderJoinStyle", js.undefined)
     
     @scala.inline
-    def deleteBorderDashOffset: Self = this.set("borderDashOffset", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderJoinStyle(value: String): Self = this.set("borderJoinStyle", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderJoinStyle: Self = this.set("borderJoinStyle", js.undefined)
+    def setCapBezierPoints(value: Boolean): Self = StObject.set(x, "capBezierPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setCapBezierPointsUndefined: Self = StObject.set(x, "capBezierPoints", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setCubicInterpolationMode(value: default | monotone): Self = StObject.set(x, "cubicInterpolationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapBezierPoints(value: Boolean): Self = this.set("capBezierPoints", value.asInstanceOf[js.Any])
+    def setCubicInterpolationModeUndefined: Self = StObject.set(x, "cubicInterpolationMode", js.undefined)
     
     @scala.inline
-    def deleteCapBezierPoints: Self = this.set("capBezierPoints", js.undefined)
+    def setFill(value: zero | top | bottom | Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubicInterpolationMode(value: default | monotone): Self = this.set("cubicInterpolationMode", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteCubicInterpolationMode: Self = this.set("cubicInterpolationMode", js.undefined)
+    def setStepped(value: Boolean): Self = StObject.set(x, "stepped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: zero | top | bottom | Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setSteppedUndefined: Self = StObject.set(x, "stepped", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepped(value: Boolean): Self = this.set("stepped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepped: Self = this.set("stepped", js.undefined)
-    
-    @scala.inline
-    def setTension(value: Double): Self = this.set("tension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTension: Self = this.set("tension", js.undefined)
+    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
   }
 }

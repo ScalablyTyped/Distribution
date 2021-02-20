@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains limited user information for developer callbacks.
   */
 @js.native
-trait IntermediatePaymentData extends js.Object {
+trait IntermediatePaymentData extends StObject {
   
   /**
     * Indicate the changing field that triggers the callback.
@@ -41,39 +42,27 @@ object IntermediatePaymentData {
   }
   
   @scala.inline
-  implicit class IntermediatePaymentDataOps[Self <: IntermediatePaymentData] (val x: Self) extends AnyVal {
+  implicit class IntermediatePaymentDataMutableBuilder[Self <: IntermediatePaymentData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackTrigger(value: js.Array[CallbackTrigger]): Self = StObject.set(x, "callbackTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackTriggerVarargs(value: CallbackTrigger*): Self = StObject.set(x, "callbackTrigger", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentMethodData(value: IntermediatePaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackTriggerVarargs(value: CallbackTrigger*): Self = this.set("callbackTrigger", js.Array(value :_*))
+    def setShippingAddress(value: IntermediateAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackTrigger(value: js.Array[CallbackTrigger]): Self = this.set("callbackTrigger", value.asInstanceOf[js.Any])
+    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
     
     @scala.inline
-    def setPaymentMethodData(value: IntermediatePaymentMethodData): Self = this.set("paymentMethodData", value.asInstanceOf[js.Any])
+    def setShippingOptionData(value: SelectionOptionData): Self = StObject.set(x, "shippingOptionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingAddress(value: IntermediateAddress): Self = this.set("shippingAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingAddress: Self = this.set("shippingAddress", js.undefined)
-    
-    @scala.inline
-    def setShippingOptionData(value: SelectionOptionData): Self = this.set("shippingOptionData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingOptionData: Self = this.set("shippingOptionData", js.undefined)
+    def setShippingOptionDataUndefined: Self = StObject.set(x, "shippingOptionData", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single update to apply to a document.
   */
 @js.native
-trait SchemaRequest extends js.Object {
+trait SchemaRequest extends StObject {
   
   /**
     * Creates a named range.
@@ -99,114 +100,102 @@ object SchemaRequest {
   }
   
   @scala.inline
-  implicit class SchemaRequestOps[Self <: SchemaRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRequestMutableBuilder[Self <: SchemaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateNamedRange(value: SchemaCreateNamedRangeRequest): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateParagraphBullets(value: SchemaCreateParagraphBulletsRequest): Self = StObject.set(x, "createParagraphBullets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateNamedRange(value: SchemaCreateNamedRangeRequest): Self = this.set("createNamedRange", value.asInstanceOf[js.Any])
+    def setCreateParagraphBulletsUndefined: Self = StObject.set(x, "createParagraphBullets", js.undefined)
     
     @scala.inline
-    def deleteCreateNamedRange: Self = this.set("createNamedRange", js.undefined)
+    def setDeleteContentRange(value: SchemaDeleteContentRangeRequest): Self = StObject.set(x, "deleteContentRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateParagraphBullets(value: SchemaCreateParagraphBulletsRequest): Self = this.set("createParagraphBullets", value.asInstanceOf[js.Any])
+    def setDeleteContentRangeUndefined: Self = StObject.set(x, "deleteContentRange", js.undefined)
     
     @scala.inline
-    def deleteCreateParagraphBullets: Self = this.set("createParagraphBullets", js.undefined)
+    def setDeleteNamedRange(value: SchemaDeleteNamedRangeRequest): Self = StObject.set(x, "deleteNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteContentRange(value: SchemaDeleteContentRangeRequest): Self = this.set("deleteContentRange", value.asInstanceOf[js.Any])
+    def setDeleteNamedRangeUndefined: Self = StObject.set(x, "deleteNamedRange", js.undefined)
     
     @scala.inline
-    def deleteDeleteContentRange: Self = this.set("deleteContentRange", js.undefined)
+    def setDeleteParagraphBullets(value: SchemaDeleteParagraphBulletsRequest): Self = StObject.set(x, "deleteParagraphBullets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteNamedRange(value: SchemaDeleteNamedRangeRequest): Self = this.set("deleteNamedRange", value.asInstanceOf[js.Any])
+    def setDeleteParagraphBulletsUndefined: Self = StObject.set(x, "deleteParagraphBullets", js.undefined)
     
     @scala.inline
-    def deleteDeleteNamedRange: Self = this.set("deleteNamedRange", js.undefined)
+    def setDeletePositionedObject(value: SchemaDeletePositionedObjectRequest): Self = StObject.set(x, "deletePositionedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteParagraphBullets(value: SchemaDeleteParagraphBulletsRequest): Self = this.set("deleteParagraphBullets", value.asInstanceOf[js.Any])
+    def setDeletePositionedObjectUndefined: Self = StObject.set(x, "deletePositionedObject", js.undefined)
     
     @scala.inline
-    def deleteDeleteParagraphBullets: Self = this.set("deleteParagraphBullets", js.undefined)
+    def setDeleteTableColumn(value: SchemaDeleteTableColumnRequest): Self = StObject.set(x, "deleteTableColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePositionedObject(value: SchemaDeletePositionedObjectRequest): Self = this.set("deletePositionedObject", value.asInstanceOf[js.Any])
+    def setDeleteTableColumnUndefined: Self = StObject.set(x, "deleteTableColumn", js.undefined)
     
     @scala.inline
-    def deleteDeletePositionedObject: Self = this.set("deletePositionedObject", js.undefined)
+    def setDeleteTableRow(value: SchemaDeleteTableRowRequest): Self = StObject.set(x, "deleteTableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTableColumn(value: SchemaDeleteTableColumnRequest): Self = this.set("deleteTableColumn", value.asInstanceOf[js.Any])
+    def setDeleteTableRowUndefined: Self = StObject.set(x, "deleteTableRow", js.undefined)
     
     @scala.inline
-    def deleteDeleteTableColumn: Self = this.set("deleteTableColumn", js.undefined)
+    def setInsertInlineImage(value: SchemaInsertInlineImageRequest): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTableRow(value: SchemaDeleteTableRowRequest): Self = this.set("deleteTableRow", value.asInstanceOf[js.Any])
+    def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
     
     @scala.inline
-    def deleteDeleteTableRow: Self = this.set("deleteTableRow", js.undefined)
+    def setInsertPageBreak(value: SchemaInsertPageBreakRequest): Self = StObject.set(x, "insertPageBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertInlineImage(value: SchemaInsertInlineImageRequest): Self = this.set("insertInlineImage", value.asInstanceOf[js.Any])
+    def setInsertPageBreakUndefined: Self = StObject.set(x, "insertPageBreak", js.undefined)
     
     @scala.inline
-    def deleteInsertInlineImage: Self = this.set("insertInlineImage", js.undefined)
+    def setInsertTable(value: SchemaInsertTableRequest): Self = StObject.set(x, "insertTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertPageBreak(value: SchemaInsertPageBreakRequest): Self = this.set("insertPageBreak", value.asInstanceOf[js.Any])
+    def setInsertTableRow(value: SchemaInsertTableRowRequest): Self = StObject.set(x, "insertTableRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsertPageBreak: Self = this.set("insertPageBreak", js.undefined)
+    def setInsertTableRowUndefined: Self = StObject.set(x, "insertTableRow", js.undefined)
     
     @scala.inline
-    def setInsertTable(value: SchemaInsertTableRequest): Self = this.set("insertTable", value.asInstanceOf[js.Any])
+    def setInsertTableUndefined: Self = StObject.set(x, "insertTable", js.undefined)
     
     @scala.inline
-    def deleteInsertTable: Self = this.set("insertTable", js.undefined)
+    def setInsertText(value: SchemaInsertTextRequest): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertTableRow(value: SchemaInsertTableRowRequest): Self = this.set("insertTableRow", value.asInstanceOf[js.Any])
+    def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
     @scala.inline
-    def deleteInsertTableRow: Self = this.set("insertTableRow", js.undefined)
+    def setReplaceAllText(value: SchemaReplaceAllTextRequest): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertText(value: SchemaInsertTextRequest): Self = this.set("insertText", value.asInstanceOf[js.Any])
+    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
     
     @scala.inline
-    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    def setUpdateParagraphStyle(value: SchemaUpdateParagraphStyleRequest): Self = StObject.set(x, "updateParagraphStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceAllText(value: SchemaReplaceAllTextRequest): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
+    def setUpdateParagraphStyleUndefined: Self = StObject.set(x, "updateParagraphStyle", js.undefined)
     
     @scala.inline
-    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    def setUpdateTextStyle(value: SchemaUpdateTextStyleRequest): Self = StObject.set(x, "updateTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateParagraphStyle(value: SchemaUpdateParagraphStyleRequest): Self = this.set("updateParagraphStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateParagraphStyle: Self = this.set("updateParagraphStyle", js.undefined)
-    
-    @scala.inline
-    def setUpdateTextStyle(value: SchemaUpdateTextStyleRequest): Self = this.set("updateTextStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTextStyle: Self = this.set("updateTextStyle", js.undefined)
+    def setUpdateTextStyleUndefined: Self = StObject.set(x, "updateTextStyle", js.undefined)
   }
 }

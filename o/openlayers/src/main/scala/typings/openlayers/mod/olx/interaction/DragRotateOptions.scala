@@ -2,12 +2,13 @@ package typings.openlayers.mod.olx.interaction
 
 import typings.openlayers.mod.EventsConditionType
 import typings.openlayers.mod.MapBrowserEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragRotateOptions extends js.Object {
+trait DragRotateOptions extends StObject {
   
   var condition: js.UndefOr[EventsConditionType] = js.native
   
@@ -22,30 +23,18 @@ object DragRotateOptions {
   }
   
   @scala.inline
-  implicit class DragRotateOptionsOps[Self <: DragRotateOptions] (val x: Self) extends AnyVal {
+  implicit class DragRotateOptionsMutableBuilder[Self <: DragRotateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("condition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGlobalReplicationGroupMessage extends js.Object {
+trait CreateGlobalReplicationGroupMessage extends StObject {
   
   /**
     * Provides details of the Global Datastore
@@ -31,30 +32,18 @@ object CreateGlobalReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class CreateGlobalReplicationGroupMessageOps[Self <: CreateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class CreateGlobalReplicationGroupMessageMutableBuilder[Self <: CreateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalReplicationGroupDescription(value: String): Self = StObject.set(x, "GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalReplicationGroupDescriptionUndefined: Self = StObject.set(x, "GlobalReplicationGroupDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalReplicationGroupIdSuffix(value: String): Self = StObject.set(x, "GlobalReplicationGroupIdSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalReplicationGroupIdSuffix(value: String): Self = this.set("GlobalReplicationGroupIdSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimaryReplicationGroupId(value: String): Self = this.set("PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlobalReplicationGroupDescription(value: String): Self = this.set("GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalReplicationGroupDescription: Self = this.set("GlobalReplicationGroupDescription", js.undefined)
+    def setPrimaryReplicationGroupId(value: String): Self = StObject.set(x, "PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

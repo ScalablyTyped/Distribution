@@ -1,13 +1,14 @@
 package typings.reactAsync.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react-async.react-async.AbstractState<T>, 'run' | 'reload' | 'cancel' | 'setData' | 'setError'> */
 @js.native
-trait ReducerBaseState[T] extends js.Object {
+trait ReducerBaseState[T] extends StObject {
   
   var counter: Double = js.native
   
@@ -24,30 +25,18 @@ object ReducerBaseState {
   }
   
   @scala.inline
-  implicit class ReducerBaseStateOps[Self <: ReducerBaseState[_], T] (val x: Self with ReducerBaseState[T]) extends AnyVal {
+  implicit class ReducerBaseStateMutableBuilder[Self <: ReducerBaseState[_], T] (val x: Self with ReducerBaseState[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialValue(value: T | Error): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
     @scala.inline
-    def setCounter(value: Double): Self = this.set("counter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPromise(value: js.Promise[T]): Self = this.set("promise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialValue(value: T | Error): Self = this.set("initialValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialValue: Self = this.set("initialValue", js.undefined)
+    def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

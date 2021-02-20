@@ -1,5 +1,6 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapiHapi.hapiHapiStrings.onPostHandler
   - typings.hapiHapi.hapiHapiStrings.onPreResponse
 */
-trait RouteRequestExtType extends js.Object
+trait RouteRequestExtType extends StObject
 object RouteRequestExtType {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,81 +70,69 @@ object ElementDefinitionType {
   }
   
   @scala.inline
-  implicit class ElementDefinitionTypeOps[Self <: ElementDefinitionType] (val x: Self) extends AnyVal {
+  implicit class ElementDefinitionTypeMutableBuilder[Self <: ElementDefinitionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregation(value: js.Array[code]): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationVarargs(value: code*): Self = StObject.set(x, "aggregation", js.Array(value :_*))
     
     @scala.inline
-    def setCode(value: uri): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCode(value: uri): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_aggregationVarargs(value: Element*): Self = this.set("_aggregation", js.Array(value :_*))
+    def setProfile(value: uri): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_aggregation(value: js.Array[Element]): Self = this.set("_aggregation", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def delete_aggregation: Self = this.set("_aggregation", js.undefined)
+    def setTargetProfile(value: uri): Self = StObject.set(x, "targetProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setTargetProfileUndefined: Self = StObject.set(x, "targetProfile", js.undefined)
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def setVersioning(value: code): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_profile(value: Element): Self = this.set("_profile", value.asInstanceOf[js.Any])
+    def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
     
     @scala.inline
-    def delete_profile: Self = this.set("_profile", js.undefined)
+    def set_aggregation(value: js.Array[Element]): Self = StObject.set(x, "_aggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_targetProfile(value: Element): Self = this.set("_targetProfile", value.asInstanceOf[js.Any])
+    def set_aggregationUndefined: Self = StObject.set(x, "_aggregation", js.undefined)
     
     @scala.inline
-    def delete_targetProfile: Self = this.set("_targetProfile", js.undefined)
+    def set_aggregationVarargs(value: Element*): Self = StObject.set(x, "_aggregation", js.Array(value :_*))
     
     @scala.inline
-    def set_versioning(value: Element): Self = this.set("_versioning", value.asInstanceOf[js.Any])
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_versioning: Self = this.set("_versioning", js.undefined)
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def setAggregationVarargs(value: code*): Self = this.set("aggregation", js.Array(value :_*))
+    def set_profile(value: Element): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregation(value: js.Array[code]): Self = this.set("aggregation", value.asInstanceOf[js.Any])
+    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
     @scala.inline
-    def deleteAggregation: Self = this.set("aggregation", js.undefined)
+    def set_targetProfile(value: Element): Self = StObject.set(x, "_targetProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: uri): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def set_targetProfileUndefined: Self = StObject.set(x, "_targetProfile", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def set_versioning(value: Element): Self = StObject.set(x, "_versioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetProfile(value: uri): Self = this.set("targetProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetProfile: Self = this.set("targetProfile", js.undefined)
-    
-    @scala.inline
-    def setVersioning(value: code): Self = this.set("versioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersioning: Self = this.set("versioning", js.undefined)
+    def set_versioningUndefined: Self = StObject.set(x, "_versioning", js.undefined)
   }
 }

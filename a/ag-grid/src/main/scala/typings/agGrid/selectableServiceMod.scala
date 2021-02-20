@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowNodes/selectableService", JSImport.Namespace)
-@js.native
-object selectableServiceMod extends js.Object {
+object selectableServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rowNodes/selectableService", "SelectableService")
   @js.native
-  class SelectableService () extends js.Object {
+  class SelectableService () extends StObject {
     
     var gridOptionsWrapper: js.Any = js.native
     

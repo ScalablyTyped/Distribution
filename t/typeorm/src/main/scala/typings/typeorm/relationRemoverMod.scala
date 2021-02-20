@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.queryBuilderMod.QueryBuilder
 import typings.typeorm.queryExpressionMapMod.QueryExpressionMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/RelationRemover", JSImport.Namespace)
-@js.native
-object relationRemoverMod extends js.Object {
+object relationRemoverMod {
   
+  @JSImport("typeorm/browser/query-builder/RelationRemover", "RelationRemover")
   @js.native
-  class RelationRemover protected () extends js.Object {
+  class RelationRemover protected () extends StObject {
     def this(queryBuilder: QueryBuilder[_], expressionMap: QueryExpressionMap) = this()
     
     var expressionMap: QueryExpressionMap = js.native

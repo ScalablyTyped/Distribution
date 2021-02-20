@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * suggested value.
   */
 @js.native
-trait SchemaListPropertiesSuggestionState extends js.Object {
+trait SchemaListPropertiesSuggestionState extends StObject {
   
   /**
     * A mask that indicates which of the fields on the corresponding
@@ -29,27 +30,15 @@ object SchemaListPropertiesSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaListPropertiesSuggestionStateOps[Self <: SchemaListPropertiesSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaListPropertiesSuggestionStateMutableBuilder[Self <: SchemaListPropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNestingLevelsSuggestionStates(value: js.Array[SchemaNestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNestingLevelsSuggestionStatesUndefined: Self = StObject.set(x, "nestingLevelsSuggestionStates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNestingLevelsSuggestionStatesVarargs(value: SchemaNestingLevelSuggestionState*): Self = this.set("nestingLevelsSuggestionStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setNestingLevelsSuggestionStates(value: js.Array[SchemaNestingLevelSuggestionState]): Self = this.set("nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNestingLevelsSuggestionStates: Self = this.set("nestingLevelsSuggestionStates", js.undefined)
+    def setNestingLevelsSuggestionStatesVarargs(value: SchemaNestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value :_*))
   }
 }

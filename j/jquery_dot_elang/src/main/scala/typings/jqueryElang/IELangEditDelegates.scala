@@ -1,12 +1,13 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ELangEdit
 @js.native
-trait IELangEditDelegates extends js.Object {
+trait IELangEditDelegates extends StObject {
   
   var btnAddClickHandler: js.Function = js.native
   
@@ -48,48 +49,36 @@ object IELangEditDelegates {
   }
   
   @scala.inline
-  implicit class IELangEditDelegatesOps[Self <: IELangEditDelegates] (val x: Self) extends AnyVal {
+  implicit class IELangEditDelegatesMutableBuilder[Self <: IELangEditDelegates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBtnAddClickHandler(value: js.Function): Self = StObject.set(x, "btnAddClickHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBtnAddHandler(value: js.Function): Self = StObject.set(x, "btnAddHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertCallback(value: js.Function): Self = StObject.set(x, "insertCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnAddClickHandler(value: js.Function): Self = this.set("btnAddClickHandler", value.asInstanceOf[js.Any])
+    def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnAddHandler(value: js.Function): Self = this.set("btnAddHandler", value.asInstanceOf[js.Any])
+    def setModifyCallback(value: js.Function): Self = StObject.set(x, "modifyCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertCallback(value: js.Function): Self = this.set("insertCallback", value.asInstanceOf[js.Any])
+    def setModifyHandler(value: js.Function): Self = StObject.set(x, "modifyHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertHandler(value: js.Function): Self = this.set("insertHandler", value.asInstanceOf[js.Any])
+    def setRemoveCallback(value: js.Function): Self = StObject.set(x, "removeCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyCallback(value: js.Function): Self = this.set("modifyCallback", value.asInstanceOf[js.Any])
+    def setRemoveHandler(value: js.Function): Self = StObject.set(x, "removeHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyHandler(value: js.Function): Self = this.set("modifyHandler", value.asInstanceOf[js.Any])
+    def setSelectCallback(value: js.Function): Self = StObject.set(x, "selectCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveCallback(value: js.Function): Self = this.set("removeCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveHandler(value: js.Function): Self = this.set("removeHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectCallback(value: js.Function): Self = this.set("selectCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectHandler(value: js.Function): Self = this.set("selectHandler", value.asInstanceOf[js.Any])
+    def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
   }
 }

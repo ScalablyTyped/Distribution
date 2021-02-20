@@ -1,14 +1,15 @@
 package typings.tizenAccessory
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SATransport extends js.Object
+sealed trait SATransport extends StObject
 @JSGlobal("SATransport")
 @js.native
-object SATransport extends js.Object {
+object SATransport extends StObject {
   
   @js.native
   sealed trait TRANSPORT_BLE extends SATransport

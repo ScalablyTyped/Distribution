@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFresnelParametersCreationOptions extends js.Object {
+trait IFresnelParametersCreationOptions extends StObject {
   
   /**
     * Define bias applied to computed fresnel term
@@ -41,48 +42,36 @@ object IFresnelParametersCreationOptions {
   }
   
   @scala.inline
-  implicit class IFresnelParametersCreationOptionsOps[Self <: IFresnelParametersCreationOptions] (val x: Self) extends AnyVal {
+  implicit class IFresnelParametersCreationOptionsMutableBuilder[Self <: IFresnelParametersCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBias(value: Double): Self = this.set("bias", value.asInstanceOf[js.Any])
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
     @scala.inline
-    def deleteBias: Self = this.set("bias", js.undefined)
+    def setLeftColor(value: Color3): Self = StObject.set(x, "leftColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setLeftColorUndefined: Self = StObject.set(x, "leftColor", js.undefined)
     
     @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftColor(value: Color3): Self = this.set("leftColor", value.asInstanceOf[js.Any])
+    def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
     
     @scala.inline
-    def deleteLeftColor: Self = this.set("leftColor", js.undefined)
+    def setRightColor(value: Color3): Self = StObject.set(x, "rightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPower(value: Double): Self = this.set("power", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePower: Self = this.set("power", js.undefined)
-    
-    @scala.inline
-    def setRightColor(value: Color3): Self = this.set("rightColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightColor: Self = this.set("rightColor", js.undefined)
+    def setRightColorUndefined: Self = StObject.set(x, "rightColor", js.undefined)
   }
 }

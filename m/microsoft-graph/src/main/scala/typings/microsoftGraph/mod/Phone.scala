@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Phone extends js.Object {
+trait Phone extends StObject {
   
   var language: js.UndefOr[NullableOption[String]] = js.native
   
@@ -29,54 +30,42 @@ object Phone {
   }
   
   @scala.inline
-  implicit class PhoneOps[Self <: Phone] (val x: Self) extends AnyVal {
+  implicit class PhoneMutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageNull: Self = StObject.set(x, "language", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setLanguage(value: NullableOption[String]): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setNumber(value: NullableOption[String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setNumberNull: Self = StObject.set(x, "number", null)
     
     @scala.inline
-    def setLanguageNull: Self = this.set("language", null)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def setNumber(value: NullableOption[String]): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setRegionNull: Self = StObject.set(x, "region", null)
     
     @scala.inline
-    def setNumberNull: Self = this.set("number", null)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def setRegion(value: NullableOption[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[PhoneType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setRegionNull: Self = this.set("region", null)
-    
-    @scala.inline
-    def setType(value: NullableOption[PhoneType]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

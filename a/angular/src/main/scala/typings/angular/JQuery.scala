@@ -6,12 +6,13 @@ import typings.angular.mod.auto.IInjectorService
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Adds the specified class(es) to each of the set of matched elements.

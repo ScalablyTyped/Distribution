@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,15 @@ class EnumElementSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "EnumElementSyntax")
-@js.native
-object EnumElementSyntax extends js.Object {
+object EnumElementSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "EnumElementSyntax.create")
+  @js.native
   def create(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.EnumElementSyntax = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "EnumElementSyntax.create1")
+  @js.native
   def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.EnumElementSyntax = js.native
 }

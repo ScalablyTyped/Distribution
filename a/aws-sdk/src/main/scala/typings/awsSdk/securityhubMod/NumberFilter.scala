@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberFilter extends js.Object {
+trait NumberFilter extends StObject {
   
   /**
     * The equal-to condition to be applied to a single field when querying for findings.
@@ -31,36 +32,24 @@ object NumberFilter {
   }
   
   @scala.inline
-  implicit class NumberFilterOps[Self <: NumberFilter] (val x: Self) extends AnyVal {
+  implicit class NumberFilterMutableBuilder[Self <: NumberFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEq(value: Double): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGte(value: Double): Self = StObject.set(x, "Gte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEq(value: Double): Self = this.set("Eq", value.asInstanceOf[js.Any])
+    def setGteUndefined: Self = StObject.set(x, "Gte", js.undefined)
     
     @scala.inline
-    def deleteEq: Self = this.set("Eq", js.undefined)
+    def setLte(value: Double): Self = StObject.set(x, "Lte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGte(value: Double): Self = this.set("Gte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGte: Self = this.set("Gte", js.undefined)
-    
-    @scala.inline
-    def setLte(value: Double): Self = this.set("Lte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLte: Self = this.set("Lte", js.undefined)
+    def setLteUndefined: Self = StObject.set(x, "Lte", js.undefined)
   }
 }

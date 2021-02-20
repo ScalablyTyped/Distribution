@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.descriptorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDescriptorProto extends js.Object {
+trait IDescriptorProto extends StObject {
   
   var enumType: js.UndefOr[js.Array[IEnumDescriptorProto]] = js.native
   
@@ -36,102 +37,90 @@ object IDescriptorProto {
   }
   
   @scala.inline
-  implicit class IDescriptorProtoOps[Self <: IDescriptorProto] (val x: Self) extends AnyVal {
+  implicit class IDescriptorProtoMutableBuilder[Self <: IDescriptorProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnumType(value: js.Array[IEnumDescriptorProto]): Self = StObject.set(x, "enumType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnumTypeUndefined: Self = StObject.set(x, "enumType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnumTypeVarargs(value: IEnumDescriptorProto*): Self = StObject.set(x, "enumType", js.Array(value :_*))
     
     @scala.inline
-    def setEnumTypeVarargs(value: IEnumDescriptorProto*): Self = this.set("enumType", js.Array(value :_*))
+    def setExtension(value: js.Array[IFieldDescriptorProto]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumType(value: js.Array[IEnumDescriptorProto]): Self = this.set("enumType", value.asInstanceOf[js.Any])
+    def setExtensionRange(value: js.Array[IDescriptorProtoExtensionRange]): Self = StObject.set(x, "extensionRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnumType: Self = this.set("enumType", js.undefined)
+    def setExtensionRangeUndefined: Self = StObject.set(x, "extensionRange", js.undefined)
     
     @scala.inline
-    def setExtensionVarargs(value: IFieldDescriptorProto*): Self = this.set("extension", js.Array(value :_*))
+    def setExtensionRangeVarargs(value: IDescriptorProtoExtensionRange*): Self = StObject.set(x, "extensionRange", js.Array(value :_*))
     
     @scala.inline
-    def setExtension(value: js.Array[IFieldDescriptorProto]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setExtensionVarargs(value: IFieldDescriptorProto*): Self = StObject.set(x, "extension", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionRangeVarargs(value: IDescriptorProtoExtensionRange*): Self = this.set("extensionRange", js.Array(value :_*))
+    def setField(value: js.Array[IFieldDescriptorProto]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionRange(value: js.Array[IDescriptorProtoExtensionRange]): Self = this.set("extensionRange", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteExtensionRange: Self = this.set("extensionRange", js.undefined)
+    def setFieldVarargs(value: IFieldDescriptorProto*): Self = StObject.set(x, "field", js.Array(value :_*))
     
     @scala.inline
-    def setFieldVarargs(value: IFieldDescriptorProto*): Self = this.set("field", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: js.Array[IFieldDescriptorProto]): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setNestedType(value: js.Array[IDescriptorProto]): Self = StObject.set(x, "nestedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNestedTypeUndefined: Self = StObject.set(x, "nestedType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNestedTypeVarargs(value: IDescriptorProto*): Self = StObject.set(x, "nestedType", js.Array(value :_*))
     
     @scala.inline
-    def setNestedTypeVarargs(value: IDescriptorProto*): Self = this.set("nestedType", js.Array(value :_*))
+    def setOneofDecl(value: js.Array[IOneofDescriptorProto]): Self = StObject.set(x, "oneofDecl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedType(value: js.Array[IDescriptorProto]): Self = this.set("nestedType", value.asInstanceOf[js.Any])
+    def setOneofDeclUndefined: Self = StObject.set(x, "oneofDecl", js.undefined)
     
     @scala.inline
-    def deleteNestedType: Self = this.set("nestedType", js.undefined)
+    def setOneofDeclVarargs(value: IOneofDescriptorProto*): Self = StObject.set(x, "oneofDecl", js.Array(value :_*))
     
     @scala.inline
-    def setOneofDeclVarargs(value: IOneofDescriptorProto*): Self = this.set("oneofDecl", js.Array(value :_*))
+    def setOptions(value: IMessageOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneofDecl(value: js.Array[IOneofDescriptorProto]): Self = this.set("oneofDecl", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOneofDecl: Self = this.set("oneofDecl", js.undefined)
+    def setReservedName(value: js.Array[String]): Self = StObject.set(x, "reservedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IMessageOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setReservedNameUndefined: Self = StObject.set(x, "reservedName", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setReservedNameVarargs(value: String*): Self = StObject.set(x, "reservedName", js.Array(value :_*))
     
     @scala.inline
-    def setReservedNameVarargs(value: String*): Self = this.set("reservedName", js.Array(value :_*))
+    def setReservedRange(value: js.Array[IDescriptorProtoReservedRange]): Self = StObject.set(x, "reservedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedName(value: js.Array[String]): Self = this.set("reservedName", value.asInstanceOf[js.Any])
+    def setReservedRangeUndefined: Self = StObject.set(x, "reservedRange", js.undefined)
     
     @scala.inline
-    def deleteReservedName: Self = this.set("reservedName", js.undefined)
-    
-    @scala.inline
-    def setReservedRangeVarargs(value: IDescriptorProtoReservedRange*): Self = this.set("reservedRange", js.Array(value :_*))
-    
-    @scala.inline
-    def setReservedRange(value: js.Array[IDescriptorProtoReservedRange]): Self = this.set("reservedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedRange: Self = this.set("reservedRange", js.undefined)
+    def setReservedRangeVarargs(value: IDescriptorProtoReservedRange*): Self = StObject.set(x, "reservedRange", js.Array(value :_*))
   }
 }

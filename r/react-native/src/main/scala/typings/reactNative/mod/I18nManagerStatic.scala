@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.DoLeftAndRightSwapInRTL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait I18nManagerStatic extends js.Object {
+trait I18nManagerStatic extends StObject {
   
   def allowRTL(allowRTL: Boolean): Unit = js.native
   
@@ -36,36 +37,24 @@ object I18nManagerStatic {
   }
   
   @scala.inline
-  implicit class I18nManagerStaticOps[Self <: I18nManagerStatic] (val x: Self) extends AnyVal {
+  implicit class I18nManagerStaticMutableBuilder[Self <: I18nManagerStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowRTL(value: Boolean => Unit): Self = StObject.set(x, "allowRTL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoLeftAndRightSwapInRTL(value: Boolean): Self = StObject.set(x, "doLeftAndRightSwapInRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceRTL(value: Boolean => Unit): Self = StObject.set(x, "forceRTL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowRTL(value: Boolean => Unit): Self = this.set("allowRTL", js.Any.fromFunction1(value))
+    def setGetConstants(value: () => DoLeftAndRightSwapInRTL): Self = StObject.set(x, "getConstants", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoLeftAndRightSwapInRTL(value: Boolean): Self = this.set("doLeftAndRightSwapInRTL", value.asInstanceOf[js.Any])
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceRTL(value: Boolean => Unit): Self = this.set("forceRTL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetConstants(value: () => DoLeftAndRightSwapInRTL): Self = this.set("getConstants", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwapLeftAndRightInRTL(value: Boolean => Unit): Self = this.set("swapLeftAndRightInRTL", js.Any.fromFunction1(value))
+    def setSwapLeftAndRightInRTL(value: Boolean => Unit): Self = StObject.set(x, "swapLeftAndRightInRTL", js.Any.fromFunction1(value))
   }
 }

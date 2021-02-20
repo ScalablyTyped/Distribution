@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1AnnotatedDataset extends js.Object {
+trait GoogleCloudDatalabelingV1beta1AnnotatedDataset extends StObject {
   
   /** Output only. Source of the annotation. */
   var annotationSource: js.UndefOr[String] = js.native
@@ -49,87 +50,75 @@ object GoogleCloudDatalabelingV1beta1AnnotatedDataset {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AnnotatedDatasetOps[Self <: GoogleCloudDatalabelingV1beta1AnnotatedDataset] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1AnnotatedDatasetMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotatedDataset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationSource(value: String): Self = StObject.set(x, "annotationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationSourceUndefined: Self = StObject.set(x, "annotationSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationSource(value: String): Self = this.set("annotationSource", value.asInstanceOf[js.Any])
+    def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
     
     @scala.inline
-    def deleteAnnotationSource: Self = this.set("annotationSource", js.undefined)
+    def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationType(value: String): Self = this.set("annotationType", value.asInstanceOf[js.Any])
+    def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
     @scala.inline
-    def deleteAnnotationType: Self = this.set("annotationType", js.undefined)
+    def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
     
     @scala.inline
-    def setBlockingResourcesVarargs(value: String*): Self = this.set("blockingResources", js.Array(value :_*))
+    def setCompletedExampleCount(value: String): Self = StObject.set(x, "completedExampleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockingResources(value: js.Array[String]): Self = this.set("blockingResources", value.asInstanceOf[js.Any])
+    def setCompletedExampleCountUndefined: Self = StObject.set(x, "completedExampleCount", js.undefined)
     
     @scala.inline
-    def deleteBlockingResources: Self = this.set("blockingResources", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedExampleCount(value: String): Self = this.set("completedExampleCount", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCompletedExampleCount: Self = this.set("completedExampleCount", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExampleCount(value: String): Self = StObject.set(x, "exampleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExampleCountUndefined: Self = StObject.set(x, "exampleCount", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setLabelStats(value: GoogleCloudDatalabelingV1beta1LabelStats): Self = StObject.set(x, "labelStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleCount(value: String): Self = this.set("exampleCount", value.asInstanceOf[js.Any])
+    def setLabelStatsUndefined: Self = StObject.set(x, "labelStats", js.undefined)
     
     @scala.inline
-    def deleteExampleCount: Self = this.set("exampleCount", js.undefined)
+    def setMetadata(value: GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStats(value: GoogleCloudDatalabelingV1beta1LabelStats): Self = this.set("labelStats", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLabelStats: Self = this.set("labelStats", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryOutput extends js.Object {
+trait QueryOutput extends StObject {
   
   /**
     * The capacity units consumed by the Query operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Provisioned Throughput in the Amazon DynamoDB Developer Guide.
@@ -41,51 +42,39 @@ object QueryOutput {
   }
   
   @scala.inline
-  implicit class QueryOutputOps[Self <: QueryOutput] (val x: Self) extends AnyVal {
+  implicit class QueryOutputMutableBuilder[Self <: QueryOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedCapacity(value: ConsumedCapacity): Self = this.set("ConsumedCapacity", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def deleteConsumedCapacity: Self = this.set("ConsumedCapacity", js.undefined)
+    def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: AttributeMap*): Self = this.set("Items", js.Array(value :_*))
+    def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: ItemList): Self = this.set("Items", value.asInstanceOf[js.Any])
+    def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("Items", js.undefined)
+    def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEvaluatedKey(value: Key): Self = this.set("LastEvaluatedKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastEvaluatedKey: Self = this.set("LastEvaluatedKey", js.undefined)
-    
-    @scala.inline
-    def setScannedCount(value: Integer): Self = this.set("ScannedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScannedCount: Self = this.set("ScannedCount", js.undefined)
+    def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
   }
 }

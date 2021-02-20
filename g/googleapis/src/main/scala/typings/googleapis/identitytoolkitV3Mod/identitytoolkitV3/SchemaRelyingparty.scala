@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * email etc.)
   */
 @js.native
-trait SchemaRelyingparty extends js.Object {
+trait SchemaRelyingparty extends StObject {
   
   /**
     * whether or not to install the android app on the device where the link is
@@ -97,108 +98,96 @@ object SchemaRelyingparty {
   }
   
   @scala.inline
-  implicit class SchemaRelyingpartyOps[Self <: SchemaRelyingparty] (val x: Self) extends AnyVal {
+  implicit class SchemaRelyingpartyMutableBuilder[Self <: SchemaRelyingparty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidInstallApp(value: Boolean): Self = StObject.set(x, "androidInstallApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidInstallAppUndefined: Self = StObject.set(x, "androidInstallApp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidMinimumVersion(value: String): Self = StObject.set(x, "androidMinimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidInstallApp(value: Boolean): Self = this.set("androidInstallApp", value.asInstanceOf[js.Any])
+    def setAndroidMinimumVersionUndefined: Self = StObject.set(x, "androidMinimumVersion", js.undefined)
     
     @scala.inline
-    def deleteAndroidInstallApp: Self = this.set("androidInstallApp", js.undefined)
+    def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidMinimumVersion(value: String): Self = this.set("androidMinimumVersion", value.asInstanceOf[js.Any])
+    def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
     
     @scala.inline
-    def deleteAndroidMinimumVersion: Self = this.set("androidMinimumVersion", js.undefined)
+    def setCanHandleCodeInApp(value: Boolean): Self = StObject.set(x, "canHandleCodeInApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidPackageName(value: String): Self = this.set("androidPackageName", value.asInstanceOf[js.Any])
+    def setCanHandleCodeInAppUndefined: Self = StObject.set(x, "canHandleCodeInApp", js.undefined)
     
     @scala.inline
-    def deleteAndroidPackageName: Self = this.set("androidPackageName", js.undefined)
+    def setCaptchaResp(value: String): Self = StObject.set(x, "captchaResp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanHandleCodeInApp(value: Boolean): Self = this.set("canHandleCodeInApp", value.asInstanceOf[js.Any])
+    def setCaptchaRespUndefined: Self = StObject.set(x, "captchaResp", js.undefined)
     
     @scala.inline
-    def deleteCanHandleCodeInApp: Self = this.set("canHandleCodeInApp", js.undefined)
+    def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptchaResp(value: String): Self = this.set("captchaResp", value.asInstanceOf[js.Any])
+    def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
     
     @scala.inline
-    def deleteCaptchaResp: Self = this.set("captchaResp", js.undefined)
+    def setContinueUrl(value: String): Self = StObject.set(x, "continueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallenge(value: String): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    def setContinueUrlUndefined: Self = StObject.set(x, "continueUrl", js.undefined)
     
     @scala.inline
-    def deleteChallenge: Self = this.set("challenge", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueUrl(value: String): Self = this.set("continueUrl", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteContinueUrl: Self = this.set("continueUrl", js.undefined)
+    def setIOSAppStoreId(value: String): Self = StObject.set(x, "iOSAppStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIOSAppStoreIdUndefined: Self = StObject.set(x, "iOSAppStoreId", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setIOSBundleId(value: String): Self = StObject.set(x, "iOSBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIOSAppStoreId(value: String): Self = this.set("iOSAppStoreId", value.asInstanceOf[js.Any])
+    def setIOSBundleIdUndefined: Self = StObject.set(x, "iOSBundleId", js.undefined)
     
     @scala.inline
-    def deleteIOSAppStoreId: Self = this.set("iOSAppStoreId", js.undefined)
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIOSBundleId(value: String): Self = this.set("iOSBundleId", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteIOSBundleId: Self = this.set("iOSBundleId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    def setNewEmail(value: String): Self = StObject.set(x, "newEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNewEmailUndefined: Self = StObject.set(x, "newEmail", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewEmail(value: String): Self = this.set("newEmail", value.asInstanceOf[js.Any])
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
     @scala.inline
-    def deleteNewEmail: Self = this.set("newEmail", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
-    
-    @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
   }
 }

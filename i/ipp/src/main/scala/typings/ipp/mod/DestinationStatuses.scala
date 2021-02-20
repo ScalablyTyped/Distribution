@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationStatuses extends js.Object {
+trait DestinationStatuses extends StObject {
   
   var `destination-uri`: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object DestinationStatuses {
   }
   
   @scala.inline
-  implicit class DestinationStatusesOps[Self <: DestinationStatuses] (val x: Self) extends AnyVal {
+  implicit class DestinationStatusesMutableBuilder[Self <: DestinationStatuses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setDestination-uri`(value: String): Self = StObject.set(x, "destination-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setDestination-uriUndefined`: Self = StObject.set(x, "destination-uri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setImages-completed`(value: Double): Self = StObject.set(x, "images-completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-uri`(value: String): Self = this.set("destination-uri", value.asInstanceOf[js.Any])
+    def `setImages-completedUndefined`: Self = StObject.set(x, "images-completed", js.undefined)
     
     @scala.inline
-    def `deleteDestination-uri`: Self = this.set("destination-uri", js.undefined)
+    def `setTransmission-status`(value: TransmissionStatus): Self = StObject.set(x, "transmission-status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setImages-completed`(value: Double): Self = this.set("images-completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteImages-completed`: Self = this.set("images-completed", js.undefined)
-    
-    @scala.inline
-    def `setTransmission-status`(value: TransmissionStatus): Self = this.set("transmission-status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteTransmission-status`: Self = this.set("transmission-status", js.undefined)
+    def `setTransmission-statusUndefined`: Self = StObject.set(x, "transmission-status", js.undefined)
   }
 }

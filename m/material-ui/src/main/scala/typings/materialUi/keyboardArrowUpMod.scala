@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/hardware/keyboard-arrow-up", JSImport.Namespace)
-@js.native
-object keyboardArrowUpMod extends js.Object {
+object keyboardArrowUpMod {
   
+  @JSImport("material-ui/svg-icons/hardware/keyboard-arrow-up", JSImport.Default)
+  @js.native
+  class default () extends HardwareKeyboardArrowUp
+  
+  @JSImport("material-ui/svg-icons/hardware/keyboard-arrow-up", "HardwareKeyboardArrowUp")
   @js.native
   class HardwareKeyboardArrowUp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

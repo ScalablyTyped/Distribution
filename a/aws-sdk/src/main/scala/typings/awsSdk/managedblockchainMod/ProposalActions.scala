@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProposalActions extends js.Object {
+trait ProposalActions extends StObject {
   
   /**
     *  The actions to perform for an APPROVED proposal to invite an AWS account to create a member and join the network. 
@@ -26,36 +27,24 @@ object ProposalActions {
   }
   
   @scala.inline
-  implicit class ProposalActionsOps[Self <: ProposalActions] (val x: Self) extends AnyVal {
+  implicit class ProposalActionsMutableBuilder[Self <: ProposalActions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvitations(value: InviteActionList): Self = StObject.set(x, "Invitations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvitationsUndefined: Self = StObject.set(x, "Invitations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvitationsVarargs(value: InviteAction*): Self = StObject.set(x, "Invitations", js.Array(value :_*))
     
     @scala.inline
-    def setInvitationsVarargs(value: InviteAction*): Self = this.set("Invitations", js.Array(value :_*))
+    def setRemovals(value: RemoveActionList): Self = StObject.set(x, "Removals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitations(value: InviteActionList): Self = this.set("Invitations", value.asInstanceOf[js.Any])
+    def setRemovalsUndefined: Self = StObject.set(x, "Removals", js.undefined)
     
     @scala.inline
-    def deleteInvitations: Self = this.set("Invitations", js.undefined)
-    
-    @scala.inline
-    def setRemovalsVarargs(value: RemoveAction*): Self = this.set("Removals", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovals(value: RemoveActionList): Self = this.set("Removals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemovals: Self = this.set("Removals", js.undefined)
+    def setRemovalsVarargs(value: RemoveAction*): Self = StObject.set(x, "Removals", js.Array(value :_*))
   }
 }

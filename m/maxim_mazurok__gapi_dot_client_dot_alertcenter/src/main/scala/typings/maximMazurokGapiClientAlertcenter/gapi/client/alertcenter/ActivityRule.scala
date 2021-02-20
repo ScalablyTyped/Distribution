@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityRule extends js.Object {
+trait ActivityRule extends StObject {
   
   /** List of action names associated with the rule threshold. */
   var actionNames: js.UndefOr[js.Array[String]] = js.native
@@ -55,96 +56,84 @@ object ActivityRule {
   }
   
   @scala.inline
-  implicit class ActivityRuleOps[Self <: ActivityRule] (val x: Self) extends AnyVal {
+  implicit class ActivityRuleMutableBuilder[Self <: ActivityRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionNames(value: js.Array[String]): Self = StObject.set(x, "actionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNamesUndefined: Self = StObject.set(x, "actionNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value :_*))
     
     @scala.inline
-    def setActionNamesVarargs(value: String*): Self = this.set("actionNames", js.Array(value :_*))
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionNames(value: js.Array[String]): Self = this.set("actionNames", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteActionNames: Self = this.set("actionNames", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSupersededAlerts(value: js.Array[String]): Self = StObject.set(x, "supersededAlerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setSupersededAlertsUndefined: Self = StObject.set(x, "supersededAlerts", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSupersededAlertsVarargs(value: String*): Self = StObject.set(x, "supersededAlerts", js.Array(value :_*))
     
     @scala.inline
-    def setSupersededAlertsVarargs(value: String*): Self = this.set("supersededAlerts", js.Array(value :_*))
+    def setSupersedingAlert(value: String): Self = StObject.set(x, "supersedingAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupersededAlerts(value: js.Array[String]): Self = this.set("supersededAlerts", value.asInstanceOf[js.Any])
+    def setSupersedingAlertUndefined: Self = StObject.set(x, "supersedingAlert", js.undefined)
     
     @scala.inline
-    def deleteSupersededAlerts: Self = this.set("supersededAlerts", js.undefined)
+    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupersedingAlert(value: String): Self = this.set("supersedingAlert", value.asInstanceOf[js.Any])
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     @scala.inline
-    def deleteSupersedingAlert: Self = this.set("supersedingAlert", js.undefined)
+    def setTriggerSource(value: String): Self = StObject.set(x, "triggerSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: String): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setTriggerSourceUndefined: Self = StObject.set(x, "triggerSource", js.undefined)
     
     @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerSource(value: String): Self = this.set("triggerSource", value.asInstanceOf[js.Any])
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def deleteTriggerSource: Self = this.set("triggerSource", js.undefined)
+    def setWindowSize(value: String): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
-    
-    @scala.inline
-    def setWindowSize(value: String): Self = this.set("windowSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowSize: Self = this.set("windowSize", js.undefined)
+    def setWindowSizeUndefined: Self = StObject.set(x, "windowSize", js.undefined)
   }
 }

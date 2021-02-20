@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class BootstrapClientUtils ()
   extends typings.devexpressWeb.BootstrapClientUtils
-/* static members */
-@JSGlobal("BootstrapClientUtils")
-@js.native
-object BootstrapClientUtils extends js.Object {
+object BootstrapClientUtils {
   
+  /* static member */
+  @JSGlobal("BootstrapClientUtils.UpdateDefaultStyles")
+  @js.native
   def UpdateDefaultStyles(): Unit = js.native
 }

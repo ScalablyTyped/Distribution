@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.xml")
-@js.native
-object xml extends js.Object {
+object xml {
   
+  @JSGlobal("sap.ui.model.xml.XMLModel")
   @js.native
   class XMLModel protected ()
     extends typings.openui5.sap.ui.model.xml.XMLModel {

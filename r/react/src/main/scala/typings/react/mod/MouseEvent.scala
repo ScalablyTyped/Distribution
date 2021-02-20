@@ -1,6 +1,7 @@
 package typings.react.mod
 
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,69 +87,57 @@ object MouseEvent {
   }
   
   @scala.inline
-  implicit class MouseEventOps[Self <: MouseEvent[_, _], T, E] (val x: Self with (MouseEvent[T, E])) extends AnyVal {
+  implicit class MouseEventMutableBuilder[Self <: MouseEvent[_, _], T, E] (val x: Self with (MouseEvent[T, E])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: Double): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientX(value: Double): Self = this.set("clientX", value.asInstanceOf[js.Any])
+    def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClientY(value: Double): Self = this.set("clientY", value.asInstanceOf[js.Any])
+    def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetModifierState(value: String => Boolean): Self = this.set("getModifierState", js.Any.fromFunction1(value))
+    def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaKey(value: Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovementX(value: Double): Self = this.set("movementX", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovementY(value: Double): Self = this.set("movementY", value.asInstanceOf[js.Any])
+    def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
+    def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedTarget(value: EventTarget): Self = this.set("relatedTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedTargetNull: Self = this.set("relatedTarget", null)
+    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
   }
 }

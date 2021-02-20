@@ -3,20 +3,35 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react", "FocusZoneTabbableElements")
-@js.native
-object FocusZoneTabbableElements extends js.Object {
+object FocusZoneTabbableElements {
+  
+  @JSImport("office-ui-fabric-react", "FocusZoneTabbableElements")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** All tabbing action is allowed */
-  var all: `1` = js.native
+  @JSImport("office-ui-fabric-react", "FocusZoneTabbableElements.all")
+  @js.native
+  def all: `1` = js.native
+  @scala.inline
+  def all_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
   
   /** Tabbing is allowed only on input elements */
-  var inputOnly: `2` = js.native
+  @JSImport("office-ui-fabric-react", "FocusZoneTabbableElements.inputOnly")
+  @js.native
+  def inputOnly: `2` = js.native
+  @scala.inline
+  def inputOnly_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputOnly")(x.asInstanceOf[js.Any])
   
   /** Tabbing is not allowed */
-  var none: `0` = js.native
+  @JSImport("office-ui-fabric-react", "FocusZoneTabbableElements.none")
+  @js.native
+  def none: `0` = js.native
+  @scala.inline
+  def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
 }

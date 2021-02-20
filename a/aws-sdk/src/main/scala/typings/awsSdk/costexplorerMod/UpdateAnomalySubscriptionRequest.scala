@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAnomalySubscriptionRequest extends js.Object {
+trait UpdateAnomalySubscriptionRequest extends StObject {
   
   /**
     *  The update to the frequency value at which subscribers will receive notifications. 
@@ -46,57 +47,45 @@ object UpdateAnomalySubscriptionRequest {
   }
   
   @scala.inline
-  implicit class UpdateAnomalySubscriptionRequestOps[Self <: UpdateAnomalySubscriptionRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAnomalySubscriptionRequestMutableBuilder[Self <: UpdateAnomalySubscriptionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrequency(value: AnomalySubscriptionFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonitorArnList(value: Values): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionArn(value: GenericString): Self = this.set("SubscriptionArn", value.asInstanceOf[js.Any])
+    def setMonitorArnListUndefined: Self = StObject.set(x, "MonitorArnList", js.undefined)
     
     @scala.inline
-    def setFrequency(value: AnomalySubscriptionFrequency): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    def setMonitorArnListVarargs(value: Value*): Self = StObject.set(x, "MonitorArnList", js.Array(value :_*))
     
     @scala.inline
-    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorArnListVarargs(value: Value*): Self = this.set("MonitorArnList", js.Array(value :_*))
+    def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
     @scala.inline
-    def setMonitorArnList(value: Values): Self = this.set("MonitorArnList", value.asInstanceOf[js.Any])
+    def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
     
     @scala.inline
-    def deleteMonitorArnList: Self = this.set("MonitorArnList", js.undefined)
+    def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscribersVarargs(value: Subscriber*): Self = this.set("Subscribers", js.Array(value :_*))
+    def setSubscriptionName(value: GenericString): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscribers(value: Subscribers): Self = this.set("Subscribers", value.asInstanceOf[js.Any])
+    def setSubscriptionNameUndefined: Self = StObject.set(x, "SubscriptionName", js.undefined)
     
     @scala.inline
-    def deleteSubscribers: Self = this.set("Subscribers", js.undefined)
+    def setThreshold(value: NullableNonNegativeDouble): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionName(value: GenericString): Self = this.set("SubscriptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionName: Self = this.set("SubscriptionName", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: NullableNonNegativeDouble): Self = this.set("Threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("Threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
   }
 }

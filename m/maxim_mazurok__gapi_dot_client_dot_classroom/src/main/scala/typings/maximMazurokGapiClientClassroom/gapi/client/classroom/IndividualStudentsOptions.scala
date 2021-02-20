@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndividualStudentsOptions extends js.Object {
+trait IndividualStudentsOptions extends StObject {
   
   /** Identifiers for the students that have access to the coursework/announcement. */
   var studentIds: js.UndefOr[js.Array[String]] = js.native
@@ -19,27 +20,15 @@ object IndividualStudentsOptions {
   }
   
   @scala.inline
-  implicit class IndividualStudentsOptionsOps[Self <: IndividualStudentsOptions] (val x: Self) extends AnyVal {
+  implicit class IndividualStudentsOptionsMutableBuilder[Self <: IndividualStudentsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStudentIds(value: js.Array[String]): Self = StObject.set(x, "studentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStudentIdsUndefined: Self = StObject.set(x, "studentIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStudentIdsVarargs(value: String*): Self = this.set("studentIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setStudentIds(value: js.Array[String]): Self = this.set("studentIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudentIds: Self = this.set("studentIds", js.undefined)
+    def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value :_*))
   }
 }

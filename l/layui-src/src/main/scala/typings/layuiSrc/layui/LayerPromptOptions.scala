@@ -1,5 +1,6 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,45 +26,33 @@ object LayerPromptOptions {
   }
   
   @scala.inline
-  implicit class LayerPromptOptionsOps[Self <: LayerPromptOptions] (val x: Self) extends AnyVal {
+  implicit class LayerPromptOptionsMutableBuilder[Self <: LayerPromptOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: js.Array[String]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAreaVarargs(value: String*): Self = StObject.set(x, "area", js.Array(value :_*))
     
     @scala.inline
-    def setAreaVarargs(value: String*): Self = this.set("area", js.Array(value :_*))
+    def setFormType(value: Double): Self = StObject.set(x, "formType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: js.Array[String]): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setFormTypeUndefined: Self = StObject.set(x, "formType", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormType(value: Double): Self = this.set("formType", value.asInstanceOf[js.Any])
+    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
     @scala.inline
-    def deleteFormType: Self = this.set("formType", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxlength(value: Double): Self = this.set("maxlength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxlength: Self = this.set("maxlength", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

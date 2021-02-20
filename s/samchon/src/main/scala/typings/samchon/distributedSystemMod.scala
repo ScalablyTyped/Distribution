@@ -3,14 +3,14 @@ package typings.samchon
 import typings.samchon.distributedSystemArrayMod.DistributedSystemArray
 import typings.samchon.iclientdriverMod.IClientDriver
 import typings.samchon.parallelSystemMod.ParallelSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed/DistributedSystem", JSImport.Namespace)
-@js.native
-object distributedSystemMod extends js.Object {
+object distributedSystemMod {
   
+  @JSImport("samchon/templates/distributed/DistributedSystem", "DistributedSystem")
   @js.native
   abstract class DistributedSystem protected () extends ParallelSystem {
     /**

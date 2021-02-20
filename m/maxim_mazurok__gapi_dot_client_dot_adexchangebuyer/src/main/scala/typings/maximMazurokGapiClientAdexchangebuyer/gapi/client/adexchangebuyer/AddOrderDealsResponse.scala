@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddOrderDealsResponse extends js.Object {
+trait AddOrderDealsResponse extends StObject {
   
   /** List of deals added (in the same proposal as passed in the request) */
   var deals: js.UndefOr[js.Array[MarketplaceDeal]] = js.native
@@ -22,33 +23,21 @@ object AddOrderDealsResponse {
   }
   
   @scala.inline
-  implicit class AddOrderDealsResponseOps[Self <: AddOrderDealsResponse] (val x: Self) extends AnyVal {
+  implicit class AddOrderDealsResponseMutableBuilder[Self <: AddOrderDealsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeals(value: js.Array[MarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
     
     @scala.inline
-    def setDealsVarargs(value: MarketplaceDeal*): Self = this.set("deals", js.Array(value :_*))
+    def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeals(value: js.Array[MarketplaceDeal]): Self = this.set("deals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeals: Self = this.set("deals", js.undefined)
-    
-    @scala.inline
-    def setProposalRevisionNumber(value: String): Self = this.set("proposalRevisionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProposalRevisionNumber: Self = this.set("proposalRevisionNumber", js.undefined)
+    def setProposalRevisionNumberUndefined: Self = StObject.set(x, "proposalRevisionNumber", js.undefined)
   }
 }

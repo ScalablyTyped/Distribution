@@ -1,12 +1,13 @@
 package typings.typeorm.anon
 
 import typings.typeorm.sqlserverSqlServerConnectionCredentialsOptionsMod.SqlServerConnectionCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlavesArray extends js.Object {
+trait SlavesArray extends StObject {
   
   /**
     * Master server used by orm to perform writes.
@@ -30,27 +31,15 @@ object SlavesArray {
   }
   
   @scala.inline
-  implicit class SlavesArrayOps[Self <: SlavesArray] (val x: Self) extends AnyVal {
+  implicit class SlavesArrayMutableBuilder[Self <: SlavesArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaster(value: SqlServerConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSlaves(value: js.Array[SqlServerConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaster(value: SqlServerConnectionCredentialsOptions): Self = this.set("master", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlavesVarargs(value: SqlServerConnectionCredentialsOptions*): Self = this.set("slaves", js.Array(value :_*))
-    
-    @scala.inline
-    def setSlaves(value: js.Array[SqlServerConnectionCredentialsOptions]): Self = this.set("slaves", value.asInstanceOf[js.Any])
+    def setSlavesVarargs(value: SqlServerConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
   }
 }

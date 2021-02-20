@@ -1,42 +1,15 @@
 package typings.seleniumWebdriver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("selenium-webdriver/http", JSImport.Namespace)
-@js.native
-object httpMod extends js.Object {
+object httpMod {
   
-  def buildPath(path: String, parameters: js.Object): String = js.native
-  
-  def del(path: String): js.Any = js.native
-  
-  def get(path: String): js.Any = js.native
-  
-  def headersToString(headers: js.Any): String = js.native
-  
-  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = js.native
-  
-  def post(path: String): js.Any = js.native
-  
-  def resource(method: String, path: String): js.Any = js.native
-  
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
-  def sendRequest(
-    options: js.Object,
-    onOk: js.Any,
-    onError: js.Any,
-    opt_data: js.UndefOr[scala.Nothing],
-    opt_proxy: String
-  ): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
-  
-  def tryParse(str: String): js.Any = js.native
-  
+  @JSImport("selenium-webdriver/http", "Executor")
   @js.native
-  class Executor protected () extends js.Object {
+  class Executor protected () extends StObject {
     def this(client: js.Promise[HttpClient]) = this()
     /**
       * @param {!(HttpClient|IThenable<!HttpClient>)} client The client to use for sending
@@ -64,8 +37,9 @@ object httpMod extends js.Object {
     def execute(command: js.Any): js.Any = js.native
   }
   
+  @JSImport("selenium-webdriver/http", "HttpClient")
   @js.native
-  class HttpClient protected () extends js.Object {
+  class HttpClient protected () extends StObject {
     /**
       * @param {string} serverUrl URL for the WebDriver server to send commands to.
       * @param {http.Agent=} opt_agent The agent to use for each request.
@@ -90,8 +64,9 @@ object httpMod extends js.Object {
     def send(httpRequest: Request): js.Promise[Response] = js.native
   }
   
+  @JSImport("selenium-webdriver/http", "Request")
   @js.native
-  class Request protected () extends js.Object {
+  class Request protected () extends StObject {
     /**
       * @param {string} method The HTTP method to use for the request.
       * @param {string} path The path on the server to send the request to.
@@ -101,8 +76,9 @@ object httpMod extends js.Object {
     def this(method: String, path: String, opt_data: js.Object) = this()
   }
   
+  @JSImport("selenium-webdriver/http", "Response")
   @js.native
-  class Response protected () extends js.Object {
+  class Response protected () extends StObject {
     /**
       * @param {number} status The response code.
       * @param {!Object<string>} headers The response headers. All header names
@@ -111,4 +87,55 @@ object httpMod extends js.Object {
       */
     def this(status: Double, headers: js.Object, body: String) = this()
   }
+  
+  @JSImport("selenium-webdriver/http", "buildPath")
+  @js.native
+  def buildPath(path: String, parameters: js.Object): String = js.native
+  
+  @JSImport("selenium-webdriver/http", "del")
+  @js.native
+  def del(path: String): js.Any = js.native
+  
+  @JSImport("selenium-webdriver/http", "get")
+  @js.native
+  def get(path: String): js.Any = js.native
+  
+  @JSImport("selenium-webdriver/http", "headersToString")
+  @js.native
+  def headersToString(headers: js.Any): String = js.native
+  
+  @JSImport("selenium-webdriver/http", "parseHttpResponse")
+  @js.native
+  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = js.native
+  
+  @JSImport("selenium-webdriver/http", "post")
+  @js.native
+  def post(path: String): js.Any = js.native
+  
+  @JSImport("selenium-webdriver/http", "resource")
+  @js.native
+  def resource(method: String, path: String): js.Any = js.native
+  
+  @JSImport("selenium-webdriver/http", "sendRequest")
+  @js.native
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
+  @JSImport("selenium-webdriver/http", "sendRequest")
+  @js.native
+  def sendRequest(
+    options: js.Object,
+    onOk: js.Any,
+    onError: js.Any,
+    opt_data: js.UndefOr[scala.Nothing],
+    opt_proxy: String
+  ): js.Any = js.native
+  @JSImport("selenium-webdriver/http", "sendRequest")
+  @js.native
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
+  @JSImport("selenium-webdriver/http", "sendRequest")
+  @js.native
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
+  
+  @JSImport("selenium-webdriver/http", "tryParse")
+  @js.native
+  def tryParse(str: String): js.Any = js.native
 }

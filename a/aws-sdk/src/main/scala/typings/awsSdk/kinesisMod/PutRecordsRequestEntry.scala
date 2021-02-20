@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRecordsRequestEntry extends js.Object {
+trait PutRecordsRequestEntry extends StObject {
   
   /**
     * The data blob to put into the record, which is base64-encoded when the blob is serialized. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MiB).
@@ -31,30 +32,18 @@ object PutRecordsRequestEntry {
   }
   
   @scala.inline
-  implicit class PutRecordsRequestEntryOps[Self <: PutRecordsRequestEntry] (val x: Self) extends AnyVal {
+  implicit class PutRecordsRequestEntryMutableBuilder[Self <: PutRecordsRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExplicitHashKey(value: HashKey): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
     
     @scala.inline
-    def setData(value: Data): Self = this.set("Data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartitionKey(value: PartitionKey): Self = this.set("PartitionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExplicitHashKey(value: HashKey): Self = this.set("ExplicitHashKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExplicitHashKey: Self = this.set("ExplicitHashKey", js.undefined)
+    def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
   }
 }

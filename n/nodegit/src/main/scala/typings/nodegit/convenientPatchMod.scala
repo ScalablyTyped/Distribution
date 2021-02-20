@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.convenientHunkMod.ConvenientHunk
 import typings.nodegit.diffFileMod.DiffFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/convenient-patch", JSImport.Namespace)
-@js.native
-object convenientPatchMod extends js.Object {
+object convenientPatchMod {
   
+  @JSImport("nodegit/convenient-patch", "ConvenientPatch")
   @js.native
-  class ConvenientPatch () extends js.Object {
+  class ConvenientPatch () extends StObject {
     
     /**
       * The hunks in this patch

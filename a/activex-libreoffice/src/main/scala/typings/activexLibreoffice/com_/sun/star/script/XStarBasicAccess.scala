@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,33 +61,21 @@ object XStarBasicAccess {
   }
   
   @scala.inline
-  implicit class XStarBasicAccessOps[Self <: XStarBasicAccess] (val x: Self) extends AnyVal {
+  implicit class XStarBasicAccessMutableBuilder[Self <: XStarBasicAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDialog(value: (String, String, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "addDialog", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddModule(value: (String, String, String, String) => Unit): Self = StObject.set(x, "addModule", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateLibrary(value: (String, String, String, String) => Unit): Self = StObject.set(x, "createLibrary", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setLibraryContainer(value: XNameContainer): Self = this.set("LibraryContainer", value.asInstanceOf[js.Any])
+    def setGetLibraryContainer(value: () => XNameContainer): Self = StObject.set(x, "getLibraryContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddDialog(value: (String, String, SeqEquiv[Double]) => Unit): Self = this.set("addDialog", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setAddModule(value: (String, String, String, String) => Unit): Self = this.set("addModule", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setCreateLibrary(value: (String, String, String, String) => Unit): Self = this.set("createLibrary", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setGetLibraryContainer(value: () => XNameContainer): Self = this.set("getLibraryContainer", js.Any.fromFunction0(value))
+    def setLibraryContainer(value: XNameContainer): Self = StObject.set(x, "LibraryContainer", value.asInstanceOf[js.Any])
   }
 }

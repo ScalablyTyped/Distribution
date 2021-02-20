@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GistsUpdateCommentEndpoint extends js.Object {
+trait GistsUpdateCommentEndpoint extends StObject {
   
   /**
     * The comment text.
@@ -25,27 +26,15 @@ object GistsUpdateCommentEndpoint {
   }
   
   @scala.inline
-  implicit class GistsUpdateCommentEndpointOps[Self <: GistsUpdateCommentEndpoint] (val x: Self) extends AnyVal {
+  implicit class GistsUpdateCommentEndpointMutableBuilder[Self <: GistsUpdateCommentEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComment_id(value: Double): Self = this.set("comment_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGist_id(value: String): Self = this.set("gist_id", value.asInstanceOf[js.Any])
+    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

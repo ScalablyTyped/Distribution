@@ -1,6 +1,7 @@
 package typings.chartJs.mod
 
 import typings.chartJs.chartJsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object TickOptions {
   }
   
   @scala.inline
-  implicit class TickOptionsOps[Self <: TickOptions] (val x: Self) extends AnyVal {
+  implicit class TickOptionsMutableBuilder[Self <: TickOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMajor(value: MajorTickOptions | `false`): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinor(value: NestedTickOptions | `false`): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajor(value: MajorTickOptions | `false`): Self = this.set("major", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMajor: Self = this.set("major", js.undefined)
-    
-    @scala.inline
-    def setMinor(value: NestedTickOptions | `false`): Self = this.set("minor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinor: Self = this.set("minor", js.undefined)
+    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
   }
 }

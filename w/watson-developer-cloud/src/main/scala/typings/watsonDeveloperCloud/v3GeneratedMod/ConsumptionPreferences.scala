@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ConsumptionPreferences. */
 @js.native
-trait ConsumptionPreferences extends js.Object {
+trait ConsumptionPreferences extends StObject {
   
   /** The unique, non-localized identifier of the consumption preference to which the results pertain. IDs have the form `consumption_preferences_{preference}`. */
   var consumption_preference_id: String = js.native
@@ -26,27 +27,15 @@ object ConsumptionPreferences {
   }
   
   @scala.inline
-  implicit class ConsumptionPreferencesOps[Self <: ConsumptionPreferences] (val x: Self) extends AnyVal {
+  implicit class ConsumptionPreferencesMutableBuilder[Self <: ConsumptionPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumption_preference_id(value: String): Self = StObject.set(x, "consumption_preference_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConsumption_preference_id(value: String): Self = this.set("consumption_preference_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

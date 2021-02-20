@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apiextensions.v1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceConversion describes how to convert different versions of a CR.
   */
 @js.native
-trait CustomResourceConversion extends js.Object {
+trait CustomResourceConversion extends StObject {
   
   /**
     * conversionReviewVersions is an ordered list of preferred `ConversionReview` versions the Webhook expects. The API server will use the first version in the list which it supports. If none of the versions specified in this list are supported by API server, conversion will fail for the custom resource. If a persisted Webhook configuration specifies allowed versions and does not include any versions known to the API Server, calls to the webhook will fail. Defaults to `["v1beta1"]`.
@@ -39,30 +40,18 @@ object CustomResourceConversion {
   }
   
   @scala.inline
-  implicit class CustomResourceConversionOps[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
+  implicit class CustomResourceConversionMutableBuilder[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionReviewVersionsVarargs(value: String*): Self = this.set("conversionReviewVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConversionReviewVersions(value: js.Array[String]): Self = this.set("conversionReviewVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrategy(value: String): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebhookClientConfig(value: WebhookClientConfig): Self = this.set("webhookClientConfig", value.asInstanceOf[js.Any])
+    def setWebhookClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "webhookClientConfig", value.asInstanceOf[js.Any])
   }
 }

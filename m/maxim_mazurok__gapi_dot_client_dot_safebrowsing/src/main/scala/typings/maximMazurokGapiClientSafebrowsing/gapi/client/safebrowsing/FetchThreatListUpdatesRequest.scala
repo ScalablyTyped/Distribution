@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchThreatListUpdatesRequest extends js.Object {
+trait FetchThreatListUpdatesRequest extends StObject {
   
   /** The client metadata. */
   var client: js.UndefOr[ClientInfo] = js.native
@@ -22,33 +23,21 @@ object FetchThreatListUpdatesRequest {
   }
   
   @scala.inline
-  implicit class FetchThreatListUpdatesRequestOps[Self <: FetchThreatListUpdatesRequest] (val x: Self) extends AnyVal {
+  implicit class FetchThreatListUpdatesRequestMutableBuilder[Self <: FetchThreatListUpdatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListUpdateRequests(value: js.Array[ListUpdateRequest]): Self = StObject.set(x, "listUpdateRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: ClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setListUpdateRequestsUndefined: Self = StObject.set(x, "listUpdateRequests", js.undefined)
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
-    
-    @scala.inline
-    def setListUpdateRequestsVarargs(value: ListUpdateRequest*): Self = this.set("listUpdateRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setListUpdateRequests(value: js.Array[ListUpdateRequest]): Self = this.set("listUpdateRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListUpdateRequests: Self = this.set("listUpdateRequests", js.undefined)
+    def setListUpdateRequestsVarargs(value: ListUpdateRequest*): Self = StObject.set(x, "listUpdateRequests", js.Array(value :_*))
   }
 }

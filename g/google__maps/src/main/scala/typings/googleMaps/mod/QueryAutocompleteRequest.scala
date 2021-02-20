@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryAutocompleteRequest extends js.Object {
+trait QueryAutocompleteRequest extends StObject {
   
   /**
     * The text string on which to search.
@@ -46,45 +47,33 @@ object QueryAutocompleteRequest {
   }
   
   @scala.inline
-  implicit class QueryAutocompleteRequestOps[Self <: QueryAutocompleteRequest] (val x: Self) extends AnyVal {
+  implicit class QueryAutocompleteRequestMutableBuilder[Self <: QueryAutocompleteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LatLng): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

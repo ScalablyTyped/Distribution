@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceStatistics extends js.Object {
+trait ServiceStatistics extends StObject {
   
   /**
     * Information about requests that failed with a 4xx Client Error status code.
@@ -41,48 +42,36 @@ object ServiceStatistics {
   }
   
   @scala.inline
-  implicit class ServiceStatisticsOps[Self <: ServiceStatistics] (val x: Self) extends AnyVal {
+  implicit class ServiceStatisticsMutableBuilder[Self <: ServiceStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorStatistics(value: ErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorStatisticsUndefined: Self = StObject.set(x, "ErrorStatistics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaultStatistics(value: FaultStatistics): Self = StObject.set(x, "FaultStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorStatistics(value: ErrorStatistics): Self = this.set("ErrorStatistics", value.asInstanceOf[js.Any])
+    def setFaultStatisticsUndefined: Self = StObject.set(x, "FaultStatistics", js.undefined)
     
     @scala.inline
-    def deleteErrorStatistics: Self = this.set("ErrorStatistics", js.undefined)
+    def setOkCount(value: NullableLong): Self = StObject.set(x, "OkCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultStatistics(value: FaultStatistics): Self = this.set("FaultStatistics", value.asInstanceOf[js.Any])
+    def setOkCountUndefined: Self = StObject.set(x, "OkCount", js.undefined)
     
     @scala.inline
-    def deleteFaultStatistics: Self = this.set("FaultStatistics", js.undefined)
+    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkCount(value: NullableLong): Self = this.set("OkCount", value.asInstanceOf[js.Any])
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
     @scala.inline
-    def deleteOkCount: Self = this.set("OkCount", js.undefined)
+    def setTotalResponseTime(value: NullableDouble): Self = StObject.set(x, "TotalResponseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalCount(value: NullableLong): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
-    
-    @scala.inline
-    def setTotalResponseTime(value: NullableDouble): Self = this.set("TotalResponseTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResponseTime: Self = this.set("TotalResponseTime", js.undefined)
+    def setTotalResponseTimeUndefined: Self = StObject.set(x, "TotalResponseTime", js.undefined)
   }
 }

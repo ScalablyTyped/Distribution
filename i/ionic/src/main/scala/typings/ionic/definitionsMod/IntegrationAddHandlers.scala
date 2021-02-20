@@ -1,12 +1,13 @@
 package typings.ionic.definitionsMod
 
 import typings.node.fsMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntegrationAddHandlers extends js.Object {
+trait IntegrationAddHandlers extends StObject {
   
   var conflictHandler: js.UndefOr[js.Function2[/* f */ String, /* stats */ Stats, js.Promise[Boolean]]] = js.native
   
@@ -21,30 +22,18 @@ object IntegrationAddHandlers {
   }
   
   @scala.inline
-  implicit class IntegrationAddHandlersOps[Self <: IntegrationAddHandlers] (val x: Self) extends AnyVal {
+  implicit class IntegrationAddHandlersMutableBuilder[Self <: IntegrationAddHandlers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflictHandler(value: (/* f */ String, /* stats */ Stats) => js.Promise[Boolean]): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFileCreate(value: /* f */ String => Unit): Self = StObject.set(x, "onFileCreate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConflictHandler(value: (/* f */ String, /* stats */ Stats) => js.Promise[Boolean]): Self = this.set("conflictHandler", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteConflictHandler: Self = this.set("conflictHandler", js.undefined)
-    
-    @scala.inline
-    def setOnFileCreate(value: /* f */ String => Unit): Self = this.set("onFileCreate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFileCreate: Self = this.set("onFileCreate", js.undefined)
+    def setOnFileCreateUndefined: Self = StObject.set(x, "onFileCreate", js.undefined)
   }
 }

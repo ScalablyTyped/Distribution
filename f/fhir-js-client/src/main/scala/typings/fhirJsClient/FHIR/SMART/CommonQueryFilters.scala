@@ -1,12 +1,13 @@
 package typings.fhirJsClient.FHIR.SMART
 
 import typings.fhirJsClient.anon.DictpropName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonQueryFilters extends js.Object {
+trait CommonQueryFilters extends StObject {
   
   /**
     * Number of return records requested. The server is not bound to return the number requested, but cannot return more
@@ -37,36 +38,24 @@ object CommonQueryFilters {
   }
   
   @scala.inline
-  implicit class CommonQueryFiltersOps[Self <: CommonQueryFilters] (val x: Self) extends AnyVal {
+  implicit class CommonQueryFiltersMutableBuilder[Self <: CommonQueryFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: DictpropName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: DictpropName): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

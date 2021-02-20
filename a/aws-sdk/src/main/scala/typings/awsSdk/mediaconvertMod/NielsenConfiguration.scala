@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NielsenConfiguration extends js.Object {
+trait NielsenConfiguration extends StObject {
   
   /**
     * Nielsen has discontinued the use of breakout code functionality. If you must include this property, set the value to zero.
@@ -26,30 +27,18 @@ object NielsenConfiguration {
   }
   
   @scala.inline
-  implicit class NielsenConfigurationOps[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
+  implicit class NielsenConfigurationMutableBuilder[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakoutCode(value: integerMin0Max0): Self = StObject.set(x, "BreakoutCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakoutCodeUndefined: Self = StObject.set(x, "BreakoutCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakoutCode(value: integerMin0Max0): Self = this.set("BreakoutCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBreakoutCode: Self = this.set("BreakoutCode", js.undefined)
-    
-    @scala.inline
-    def setDistributorId(value: string): Self = this.set("DistributorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistributorId: Self = this.set("DistributorId", js.undefined)
+    def setDistributorIdUndefined: Self = StObject.set(x, "DistributorId", js.undefined)
   }
 }

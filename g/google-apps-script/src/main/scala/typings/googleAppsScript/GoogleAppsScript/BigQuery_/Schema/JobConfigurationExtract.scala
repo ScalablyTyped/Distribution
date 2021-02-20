@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobConfigurationExtract extends js.Object {
+trait JobConfigurationExtract extends StObject {
   
   var compression: js.UndefOr[String] = js.native
   
@@ -30,63 +31,51 @@ object JobConfigurationExtract {
   }
   
   @scala.inline
-  implicit class JobConfigurationExtractOps[Self <: JobConfigurationExtract] (val x: Self) extends AnyVal {
+  implicit class JobConfigurationExtractMutableBuilder[Self <: JobConfigurationExtract] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationFormat(value: String): Self = StObject.set(x, "destinationFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setDestinationFormatUndefined: Self = StObject.set(x, "destinationFormat", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setDestinationUri(value: String): Self = StObject.set(x, "destinationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationFormat(value: String): Self = this.set("destinationFormat", value.asInstanceOf[js.Any])
+    def setDestinationUriUndefined: Self = StObject.set(x, "destinationUri", js.undefined)
     
     @scala.inline
-    def deleteDestinationFormat: Self = this.set("destinationFormat", js.undefined)
+    def setDestinationUris(value: js.Array[String]): Self = StObject.set(x, "destinationUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationUri(value: String): Self = this.set("destinationUri", value.asInstanceOf[js.Any])
+    def setDestinationUrisUndefined: Self = StObject.set(x, "destinationUris", js.undefined)
     
     @scala.inline
-    def deleteDestinationUri: Self = this.set("destinationUri", js.undefined)
+    def setDestinationUrisVarargs(value: String*): Self = StObject.set(x, "destinationUris", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationUrisVarargs(value: String*): Self = this.set("destinationUris", js.Array(value :_*))
+    def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationUris(value: js.Array[String]): Self = this.set("destinationUris", value.asInstanceOf[js.Any])
+    def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
     
     @scala.inline
-    def deleteDestinationUris: Self = this.set("destinationUris", js.undefined)
+    def setPrintHeader(value: Boolean): Self = StObject.set(x, "printHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDelimiter(value: String): Self = this.set("fieldDelimiter", value.asInstanceOf[js.Any])
+    def setPrintHeaderUndefined: Self = StObject.set(x, "printHeader", js.undefined)
     
     @scala.inline
-    def deleteFieldDelimiter: Self = this.set("fieldDelimiter", js.undefined)
+    def setSourceTable(value: TableReference): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintHeader(value: Boolean): Self = this.set("printHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrintHeader: Self = this.set("printHeader", js.undefined)
-    
-    @scala.inline
-    def setSourceTable(value: TableReference): Self = this.set("sourceTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTable: Self = this.set("sourceTable", js.undefined)
+    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
   }
 }

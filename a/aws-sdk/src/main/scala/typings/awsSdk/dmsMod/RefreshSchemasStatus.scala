@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshSchemasStatus extends js.Object {
+trait RefreshSchemasStatus extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
@@ -41,48 +42,36 @@ object RefreshSchemasStatus {
   }
   
   @scala.inline
-  implicit class RefreshSchemasStatusOps[Self <: RefreshSchemasStatus] (val x: Self) extends AnyVal {
+  implicit class RefreshSchemasStatusMutableBuilder[Self <: RefreshSchemasStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointArnUndefined: Self = StObject.set(x, "EndpointArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointArn(value: String): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
     @scala.inline
-    def deleteEndpointArn: Self = this.set("EndpointArn", js.undefined)
+    def setLastRefreshDate(value: TStamp): Self = StObject.set(x, "LastRefreshDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFailureMessage(value: String): Self = this.set("LastFailureMessage", value.asInstanceOf[js.Any])
+    def setLastRefreshDateUndefined: Self = StObject.set(x, "LastRefreshDate", js.undefined)
     
     @scala.inline
-    def deleteLastFailureMessage: Self = this.set("LastFailureMessage", js.undefined)
+    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRefreshDate(value: TStamp): Self = this.set("LastRefreshDate", value.asInstanceOf[js.Any])
+    def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
     
     @scala.inline
-    def deleteLastRefreshDate: Self = this.set("LastRefreshDate", js.undefined)
+    def setStatus(value: RefreshSchemasStatusTypeValue): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: RefreshSchemasStatusTypeValue): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReprojectImageOptions extends js.Object {
+trait ReprojectImageOptions extends StObject {
   
   var cutline: js.UndefOr[Geometry] = js.native
   
@@ -48,111 +49,99 @@ object ReprojectImageOptions {
   }
   
   @scala.inline
-  implicit class ReprojectImageOptionsOps[Self <: ReprojectImageOptions] (val x: Self) extends AnyVal {
+  implicit class ReprojectImageOptionsMutableBuilder[Self <: ReprojectImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCutline(value: Geometry): Self = StObject.set(x, "cutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCutlineUndefined: Self = StObject.set(x, "cutline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDst(value: Dataset): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDst(value: Dataset): Self = this.set("dst", value.asInstanceOf[js.Any])
+    def setDstAlphaBand(value: Double): Self = StObject.set(x, "dstAlphaBand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS_srs(value: SpatialReference): Self = this.set("s_srs", value.asInstanceOf[js.Any])
+    def setDstAlphaBandUndefined: Self = StObject.set(x, "dstAlphaBand", js.undefined)
     
     @scala.inline
-    def setSrc(value: Dataset): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setDstBands(value: js.Array[Double]): Self = StObject.set(x, "dstBands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setT_srs(value: SpatialReference): Self = this.set("t_srs", value.asInstanceOf[js.Any])
+    def setDstBandsUndefined: Self = StObject.set(x, "dstBands", js.undefined)
     
     @scala.inline
-    def setCutline(value: Geometry): Self = this.set("cutline", value.asInstanceOf[js.Any])
+    def setDstBandsVarargs(value: Double*): Self = StObject.set(x, "dstBands", js.Array(value :_*))
     
     @scala.inline
-    def deleteCutline: Self = this.set("cutline", js.undefined)
+    def setDstNodata(value: Double): Self = StObject.set(x, "dstNodata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstAlphaBand(value: Double): Self = this.set("dstAlphaBand", value.asInstanceOf[js.Any])
+    def setDstNodataUndefined: Self = StObject.set(x, "dstNodata", js.undefined)
     
     @scala.inline
-    def deleteDstAlphaBand: Self = this.set("dstAlphaBand", js.undefined)
+    def setMaxError(value: Double): Self = StObject.set(x, "maxError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstBandsVarargs(value: Double*): Self = this.set("dstBands", js.Array(value :_*))
+    def setMaxErrorUndefined: Self = StObject.set(x, "maxError", js.undefined)
     
     @scala.inline
-    def setDstBands(value: js.Array[Double]): Self = this.set("dstBands", value.asInstanceOf[js.Any])
+    def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDstBands: Self = this.set("dstBands", js.undefined)
+    def setMemoryLimitUndefined: Self = StObject.set(x, "memoryLimit", js.undefined)
     
     @scala.inline
-    def setDstNodata(value: Double): Self = this.set("dstNodata", value.asInstanceOf[js.Any])
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDstNodata: Self = this.set("dstNodata", js.undefined)
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     @scala.inline
-    def setMaxError(value: Double): Self = this.set("maxError", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[String] | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxError: Self = this.set("maxError", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setMemoryLimit(value: Double): Self = this.set("memoryLimit", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def deleteMemoryLimit: Self = this.set("memoryLimit", js.undefined)
+    def setResampling(value: String): Self = StObject.set(x, "resampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    def setResamplingUndefined: Self = StObject.set(x, "resampling", js.undefined)
     
     @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
+    def setS_srs(value: SpatialReference): Self = StObject.set(x, "s_srs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    def setSrc(value: Dataset): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[String] | js.Object): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSrcAlphaBand(value: Double): Self = StObject.set(x, "srcAlphaBand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setSrcAlphaBandUndefined: Self = StObject.set(x, "srcAlphaBand", js.undefined)
     
     @scala.inline
-    def setResampling(value: String): Self = this.set("resampling", value.asInstanceOf[js.Any])
+    def setSrcBands(value: js.Array[Double]): Self = StObject.set(x, "srcBands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResampling: Self = this.set("resampling", js.undefined)
+    def setSrcBandsUndefined: Self = StObject.set(x, "srcBands", js.undefined)
     
     @scala.inline
-    def setSrcAlphaBand(value: Double): Self = this.set("srcAlphaBand", value.asInstanceOf[js.Any])
+    def setSrcBandsVarargs(value: Double*): Self = StObject.set(x, "srcBands", js.Array(value :_*))
     
     @scala.inline
-    def deleteSrcAlphaBand: Self = this.set("srcAlphaBand", js.undefined)
+    def setSrcNodata(value: Double): Self = StObject.set(x, "srcNodata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcBandsVarargs(value: Double*): Self = this.set("srcBands", js.Array(value :_*))
+    def setSrcNodataUndefined: Self = StObject.set(x, "srcNodata", js.undefined)
     
     @scala.inline
-    def setSrcBands(value: js.Array[Double]): Self = this.set("srcBands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcBands: Self = this.set("srcBands", js.undefined)
-    
-    @scala.inline
-    def setSrcNodata(value: Double): Self = this.set("srcNodata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcNodata: Self = this.set("srcNodata", js.undefined)
+    def setT_srs(value: SpatialReference): Self = StObject.set(x, "t_srs", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.cassandraDriver.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyBuffer extends js.Object {
+trait CopyBuffer extends StObject {
   
   var copyBuffer: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object CopyBuffer {
   }
   
   @scala.inline
-  implicit class CopyBufferOps[Self <: CopyBuffer] (val x: Self) extends AnyVal {
+  implicit class CopyBufferMutableBuilder[Self <: CopyBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyBuffer(value: Boolean): Self = StObject.set(x, "copyBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyBufferUndefined: Self = StObject.set(x, "copyBuffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMap(value: js.Function): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyBuffer(value: Boolean): Self = this.set("copyBuffer", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteCopyBuffer: Self = this.set("copyBuffer", js.undefined)
+    def setSet(value: js.Function): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: js.Function): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setUseBigIntAsLong(value: Boolean): Self = StObject.set(x, "useBigIntAsLong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: js.Function): Self = this.set("set", value.asInstanceOf[js.Any])
+    def setUseBigIntAsLongUndefined: Self = StObject.set(x, "useBigIntAsLong", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setUseBigIntAsVarint(value: Boolean): Self = StObject.set(x, "useBigIntAsVarint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBigIntAsLong(value: Boolean): Self = this.set("useBigIntAsLong", value.asInstanceOf[js.Any])
+    def setUseBigIntAsVarintUndefined: Self = StObject.set(x, "useBigIntAsVarint", js.undefined)
     
     @scala.inline
-    def deleteUseBigIntAsLong: Self = this.set("useBigIntAsLong", js.undefined)
+    def setUseUndefinedAsUnset(value: Boolean): Self = StObject.set(x, "useUndefinedAsUnset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBigIntAsVarint(value: Boolean): Self = this.set("useBigIntAsVarint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBigIntAsVarint: Self = this.set("useBigIntAsVarint", js.undefined)
-    
-    @scala.inline
-    def setUseUndefinedAsUnset(value: Boolean): Self = this.set("useUndefinedAsUnset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUndefinedAsUnset: Self = this.set("useUndefinedAsUnset", js.undefined)
+    def setUseUndefinedAsUnsetUndefined: Self = StObject.set(x, "useUndefinedAsUnset", js.undefined)
   }
 }

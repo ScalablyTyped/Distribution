@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientSheets.anon.Callback
 import typings.maximMazurokGapiClientSheets.anon.IncludeGridData
 import typings.maximMazurokGapiClientSheets.anon.Uploadprotocol
 import typings.maximMazurokGapiClientSheets.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpreadsheetsResource extends js.Object {
+trait SpreadsheetsResource extends StObject {
   
   def batchUpdate(request: Callback, body: BatchUpdateSpreadsheetRequest): typings.gapiClient.gapi.client.Request[BatchUpdateSpreadsheetResponse] = js.native
   /**

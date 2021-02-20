@@ -1,12 +1,13 @@
 package typings.yup.mod
 
 import typings.yup.anon.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestContext[C] extends js.Object {
+trait TestContext[C] extends StObject {
   
   def createError(): ValidationError = js.native
   def createError(params: Message): ValidationError = js.native

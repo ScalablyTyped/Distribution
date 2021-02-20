@@ -2,6 +2,7 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.wechatMiniprogram.wechatMiniprogramStrings.audio
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * 最低基础库： `2.9.0` */
 @js.native
-trait MediaTrack extends js.Object {
+trait MediaTrack extends StObject {
   
   /** 轨道长度，只读 */
   var duration: Double = js.native
@@ -36,27 +37,15 @@ object MediaTrack {
   }
   
   @scala.inline
-  implicit class MediaTrackOps[Self <: MediaTrack] (val x: Self) extends AnyVal {
+  implicit class MediaTrackMutableBuilder[Self <: MediaTrack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: audio | video): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: audio | video): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

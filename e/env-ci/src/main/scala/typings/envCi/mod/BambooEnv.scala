@@ -3,6 +3,7 @@ package typings.envCi.mod
 import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.Bamboo
 import typings.envCi.envCiStrings.bamboo_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,42 +48,30 @@ object BambooEnv {
   }
   
   @scala.inline
-  implicit class BambooEnvOps[Self <: BambooEnv] (val x: Self) extends AnyVal {
+  implicit class BambooEnvMutableBuilder[Self <: BambooEnv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildUrl(value: String): Self = StObject.set(x, "buildUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: String): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setJob(value: String): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildUrl(value: String): Self = this.set("buildUrl", value.asInstanceOf[js.Any])
+    def setName(value: Bamboo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: String): Self = this.set("commit", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob(value: String): Self = this.set("job", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: Bamboo): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService(value: bamboo_): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setService(value: bamboo_): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait history extends js.Object {
+trait history extends StObject {
   
   def push(view: String, url: String, value: js.Any): Unit = js.native
   
@@ -20,24 +21,12 @@ object history {
   }
   
   @scala.inline
-  implicit class historyOps[Self <: history] (val x: Self) extends AnyVal {
+  implicit class historyMutableBuilder[Self <: history] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPush(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPush(value: (String, String, js.Any) => Unit): Self = this.set("push", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setTrack(value: (String, String) => Unit): Self = this.set("track", js.Any.fromFunction2(value))
+    def setTrack(value: (String, String) => Unit): Self = StObject.set(x, "track", js.Any.fromFunction2(value))
   }
 }

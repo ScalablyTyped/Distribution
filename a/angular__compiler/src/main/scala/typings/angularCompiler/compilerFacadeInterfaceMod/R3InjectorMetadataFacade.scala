@@ -1,11 +1,12 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait R3InjectorMetadataFacade extends js.Object {
+trait R3InjectorMetadataFacade extends StObject {
   
   var deps: js.Array[R3DependencyMetadataFacade] | Null = js.native
   
@@ -27,45 +28,33 @@ object R3InjectorMetadataFacade {
   }
   
   @scala.inline
-  implicit class R3InjectorMetadataFacadeOps[Self <: R3InjectorMetadataFacade] (val x: Self) extends AnyVal {
+  implicit class R3InjectorMetadataFacadeMutableBuilder[Self <: R3InjectorMetadataFacade] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsNull: Self = StObject.set(x, "deps", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setImportsVarargs(value: js.Any*): Self = this.set("imports", js.Array(value :_*))
+    def setImports(value: js.Array[_]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Array[_]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setImportsVarargs(value: js.Any*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidersVarargs(value: js.Any*): Self = this.set("providers", js.Array(value :_*))
+    def setProviders(value: js.Array[_]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[_]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    def setProvidersVarargs(value: js.Any*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = this.set("deps", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = this.set("deps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepsNull: Self = this.set("deps", null)
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -9,13 +9,14 @@ import typings.knockoutPreRendered.anon.InstantiableKnockoutTemplateEngine
 import typings.knockoutPreRendered.anon.ReadValue
 import typings.std.Element
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////
 @js.native
-trait KnockoutStatic extends js.Object {
+trait KnockoutStatic extends StObject {
   
   def applyBindingAccessorsToNode(
     node: Node,

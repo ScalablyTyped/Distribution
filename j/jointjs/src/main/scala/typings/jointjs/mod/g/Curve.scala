@@ -1,5 +1,6 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +62,7 @@ class Curve protected () extends _PathObjectUnit {
   
   var end: Point = js.native
   
-   // alias to `divideAtT`
+  // alias to `divideAtT`
   def endpointDistance(): Double = js.native
   
   def equals(c: Curve): Boolean = js.native
@@ -119,10 +120,10 @@ class Curve protected () extends _PathObjectUnit {
   def translate(tx: Double, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
 }
-/* static members */
-@JSImport("jointjs", "g.Curve")
-@js.native
-object Curve extends js.Object {
+object Curve {
   
+  /* static member */
+  @JSImport("jointjs", "g.Curve.throughPoints")
+  @js.native
   def throughPoints(points: js.Array[PlainPoint]): js.Array[Curve] = js.native
 }

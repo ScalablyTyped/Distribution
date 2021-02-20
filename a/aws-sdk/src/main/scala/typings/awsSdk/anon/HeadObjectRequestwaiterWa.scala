@@ -15,13 +15,14 @@ import typings.awsSdk.s3Mod.SSECustomerAlgorithm
 import typings.awsSdk.s3Mod.SSECustomerKey
 import typings.awsSdk.s3Mod.SSECustomerKeyMD5
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/s3.HeadObjectRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait HeadObjectRequestwaiterWa extends js.Object {
+trait HeadObjectRequestwaiterWa extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -102,102 +103,90 @@ object HeadObjectRequestwaiterWa {
   }
   
   @scala.inline
-  implicit class HeadObjectRequestwaiterWaOps[Self <: HeadObjectRequestwaiterWa] (val x: Self) extends AnyVal {
+  implicit class HeadObjectRequestwaiterWaMutableBuilder[Self <: HeadObjectRequestwaiterWa] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setIfMatch(value: IfMatch): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    def setIfModifiedSince(value: IfModifiedSince): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setIfModifiedSinceUndefined: Self = StObject.set(x, "IfModifiedSince", js.undefined)
     
     @scala.inline
-    def setIfMatch(value: IfMatch): Self = this.set("IfMatch", value.asInstanceOf[js.Any])
+    def setIfNoneMatch(value: IfNoneMatch): Self = StObject.set(x, "IfNoneMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIfMatch: Self = this.set("IfMatch", js.undefined)
+    def setIfNoneMatchUndefined: Self = StObject.set(x, "IfNoneMatch", js.undefined)
     
     @scala.inline
-    def setIfModifiedSince(value: IfModifiedSince): Self = this.set("IfModifiedSince", value.asInstanceOf[js.Any])
+    def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIfModifiedSince: Self = this.set("IfModifiedSince", js.undefined)
+    def setIfUnmodifiedSinceUndefined: Self = StObject.set(x, "IfUnmodifiedSince", js.undefined)
     
     @scala.inline
-    def setIfNoneMatch(value: IfNoneMatch): Self = this.set("IfNoneMatch", value.asInstanceOf[js.Any])
+    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIfNoneMatch: Self = this.set("IfNoneMatch", js.undefined)
+    def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = this.set("IfUnmodifiedSince", value.asInstanceOf[js.Any])
+    def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
     
     @scala.inline
-    def deleteIfUnmodifiedSince: Self = this.set("IfUnmodifiedSince", js.undefined)
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartNumber(value: PartNumber): Self = this.set("PartNumber", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
     
     @scala.inline
-    def deletePartNumber: Self = this.set("PartNumber", js.undefined)
+    def setRequestPayer(value: RequestPayer): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("Range", js.undefined)
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    def setSSECustomerKey(value: SSECustomerKey): Self = StObject.set(x, "SSECustomerKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
     
     @scala.inline
-    def setSSECustomerKey(value: SSECustomerKey): Self = this.set("SSECustomerKey", value.asInstanceOf[js.Any])
+    def setSSECustomerKeyUndefined: Self = StObject.set(x, "SSECustomerKey", js.undefined)
     
     @scala.inline
-    def deleteSSECustomerKey: Self = this.set("SSECustomerKey", js.undefined)
+    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

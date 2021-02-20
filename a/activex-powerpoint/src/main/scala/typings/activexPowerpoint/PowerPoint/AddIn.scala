@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddIn extends js.Object {
+trait AddIn extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -53,51 +54,39 @@ object AddIn {
   }
   
   @scala.inline
-  implicit class AddInOps[Self <: AddIn] (val x: Self) extends AnyVal {
+  implicit class AddInMutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoLoad(value: MsoTriState): Self = StObject.set(x, "AutoLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayAlerts(value: MsoTriState): Self = StObject.set(x, "DisplayAlerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLoad(value: MsoTriState): Self = this.set("AutoLoad", value.asInstanceOf[js.Any])
+    def setLoaded(value: MsoTriState): Self = StObject.set(x, "Loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAlerts(value: MsoTriState): Self = this.set("DisplayAlerts", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("FullName", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: MsoTriState): Self = this.set("Loaded", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPowerPointDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "PowerPoint.AddIn_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRegistered(value: MsoTriState): Self = StObject.set(x, "Registered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotAddIn_typekey(value: AddIn): Self = this.set("PowerPoint.AddIn_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistered(value: MsoTriState): Self = this.set("Registered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisteredInHKLM(value: MsoTriState): Self = this.set("RegisteredInHKLM", value.asInstanceOf[js.Any])
+    def setRegisteredInHKLM(value: MsoTriState): Self = StObject.set(x, "RegisteredInHKLM", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.microsoftLiveConnect.Microsoft.Live
 import typings.microsoftLiveConnect.anon.Account
 import typings.microsoftLiveConnect.anon.Mobile
 import typings.microsoftLiveConnect.anon.Personal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * supports reading User objects.
   */
 @js.native
-trait IUser extends js.Object {
+trait IUser extends StObject {
   
   /**
     * The user's postal addresses.
@@ -118,66 +119,54 @@ object IUser {
   }
   
   @scala.inline
-  implicit class IUserOps[Self <: IUser] (val x: Self) extends AnyVal {
+  implicit class IUserMutableBuilder[Self <: IUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: Personal): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBirth_day(value: Double): Self = StObject.set(x, "birth_day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBirth_month(value: Double): Self = StObject.set(x, "birth_month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: Personal): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setBirth_year(value: Double): Self = StObject.set(x, "birth_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirth_day(value: Double): Self = this.set("birth_day", value.asInstanceOf[js.Any])
+    def setEmails(value: Account): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirth_month(value: Double): Self = this.set("birth_month", value.asInstanceOf[js.Any])
+    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirth_year(value: Double): Self = this.set("birth_year", value.asInstanceOf[js.Any])
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: Account): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setPhones(value: Mobile): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setWork(value: js.Array[IWorkInfo]): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhones(value: Mobile): Self = this.set("phones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_time(value: String): Self = this.set("updated_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkVarargs(value: IWorkInfo*): Self = this.set("work", js.Array(value :_*))
-    
-    @scala.inline
-    def setWork(value: js.Array[IWorkInfo]): Self = this.set("work", value.asInstanceOf[js.Any])
+    def setWorkVarargs(value: IWorkInfo*): Self = StObject.set(x, "work", js.Array(value :_*))
   }
 }

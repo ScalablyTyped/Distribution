@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MailTips extends js.Object {
+trait MailTips extends StObject {
   
   // Mail tips for automatic reply if it has been set up by the recipient.
   var automaticReplies: js.UndefOr[NullableOption[AutomaticRepliesMailTips]] = js.native
@@ -64,129 +65,117 @@ object MailTips {
   }
   
   @scala.inline
-  implicit class MailTipsOps[Self <: MailTips] (val x: Self) extends AnyVal {
+  implicit class MailTipsMutableBuilder[Self <: MailTips] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticReplies(value: NullableOption[AutomaticRepliesMailTips]): Self = StObject.set(x, "automaticReplies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticRepliesNull: Self = StObject.set(x, "automaticReplies", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticRepliesUndefined: Self = StObject.set(x, "automaticReplies", js.undefined)
     
     @scala.inline
-    def setAutomaticReplies(value: NullableOption[AutomaticRepliesMailTips]): Self = this.set("automaticReplies", value.asInstanceOf[js.Any])
+    def setCustomMailTip(value: NullableOption[String]): Self = StObject.set(x, "customMailTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutomaticReplies: Self = this.set("automaticReplies", js.undefined)
+    def setCustomMailTipNull: Self = StObject.set(x, "customMailTip", null)
     
     @scala.inline
-    def setAutomaticRepliesNull: Self = this.set("automaticReplies", null)
+    def setCustomMailTipUndefined: Self = StObject.set(x, "customMailTip", js.undefined)
     
     @scala.inline
-    def setCustomMailTip(value: NullableOption[String]): Self = this.set("customMailTip", value.asInstanceOf[js.Any])
+    def setDeliveryRestricted(value: NullableOption[Boolean]): Self = StObject.set(x, "deliveryRestricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomMailTip: Self = this.set("customMailTip", js.undefined)
+    def setDeliveryRestrictedNull: Self = StObject.set(x, "deliveryRestricted", null)
     
     @scala.inline
-    def setCustomMailTipNull: Self = this.set("customMailTip", null)
+    def setDeliveryRestrictedUndefined: Self = StObject.set(x, "deliveryRestricted", js.undefined)
     
     @scala.inline
-    def setDeliveryRestricted(value: NullableOption[Boolean]): Self = this.set("deliveryRestricted", value.asInstanceOf[js.Any])
+    def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeliveryRestricted: Self = this.set("deliveryRestricted", js.undefined)
+    def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
     @scala.inline
-    def setDeliveryRestrictedNull: Self = this.set("deliveryRestricted", null)
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def setEmailAddress(value: NullableOption[EmailAddress]): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setError(value: NullableOption[MailTipsError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def setEmailAddressNull: Self = this.set("emailAddress", null)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setError(value: NullableOption[MailTipsError]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExternalMemberCount(value: NullableOption[Double]): Self = StObject.set(x, "externalMemberCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setExternalMemberCountNull: Self = StObject.set(x, "externalMemberCount", null)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setExternalMemberCountUndefined: Self = StObject.set(x, "externalMemberCount", js.undefined)
     
     @scala.inline
-    def setExternalMemberCount(value: NullableOption[Double]): Self = this.set("externalMemberCount", value.asInstanceOf[js.Any])
+    def setIsModerated(value: NullableOption[Boolean]): Self = StObject.set(x, "isModerated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalMemberCount: Self = this.set("externalMemberCount", js.undefined)
+    def setIsModeratedNull: Self = StObject.set(x, "isModerated", null)
     
     @scala.inline
-    def setExternalMemberCountNull: Self = this.set("externalMemberCount", null)
+    def setIsModeratedUndefined: Self = StObject.set(x, "isModerated", js.undefined)
     
     @scala.inline
-    def setIsModerated(value: NullableOption[Boolean]): Self = this.set("isModerated", value.asInstanceOf[js.Any])
+    def setMailboxFull(value: NullableOption[Boolean]): Self = StObject.set(x, "mailboxFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsModerated: Self = this.set("isModerated", js.undefined)
+    def setMailboxFullNull: Self = StObject.set(x, "mailboxFull", null)
     
     @scala.inline
-    def setIsModeratedNull: Self = this.set("isModerated", null)
+    def setMailboxFullUndefined: Self = StObject.set(x, "mailboxFull", js.undefined)
     
     @scala.inline
-    def setMailboxFull(value: NullableOption[Boolean]): Self = this.set("mailboxFull", value.asInstanceOf[js.Any])
+    def setMaxMessageSize(value: NullableOption[Double]): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMailboxFull: Self = this.set("mailboxFull", js.undefined)
+    def setMaxMessageSizeNull: Self = StObject.set(x, "maxMessageSize", null)
     
     @scala.inline
-    def setMailboxFullNull: Self = this.set("mailboxFull", null)
+    def setMaxMessageSizeUndefined: Self = StObject.set(x, "maxMessageSize", js.undefined)
     
     @scala.inline
-    def setMaxMessageSize(value: NullableOption[Double]): Self = this.set("maxMessageSize", value.asInstanceOf[js.Any])
+    def setRecipientScope(value: NullableOption[RecipientScopeType]): Self = StObject.set(x, "recipientScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxMessageSize: Self = this.set("maxMessageSize", js.undefined)
+    def setRecipientScopeNull: Self = StObject.set(x, "recipientScope", null)
     
     @scala.inline
-    def setMaxMessageSizeNull: Self = this.set("maxMessageSize", null)
+    def setRecipientScopeUndefined: Self = StObject.set(x, "recipientScope", js.undefined)
     
     @scala.inline
-    def setRecipientScope(value: NullableOption[RecipientScopeType]): Self = this.set("recipientScope", value.asInstanceOf[js.Any])
+    def setRecipientSuggestions(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "recipientSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientScope: Self = this.set("recipientScope", js.undefined)
+    def setRecipientSuggestionsNull: Self = StObject.set(x, "recipientSuggestions", null)
     
     @scala.inline
-    def setRecipientScopeNull: Self = this.set("recipientScope", null)
+    def setRecipientSuggestionsUndefined: Self = StObject.set(x, "recipientSuggestions", js.undefined)
     
     @scala.inline
-    def setRecipientSuggestionsVarargs(value: Recipient*): Self = this.set("recipientSuggestions", js.Array(value :_*))
+    def setRecipientSuggestionsVarargs(value: Recipient*): Self = StObject.set(x, "recipientSuggestions", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientSuggestions(value: NullableOption[js.Array[Recipient]]): Self = this.set("recipientSuggestions", value.asInstanceOf[js.Any])
+    def setTotalMemberCount(value: NullableOption[Double]): Self = StObject.set(x, "totalMemberCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientSuggestions: Self = this.set("recipientSuggestions", js.undefined)
+    def setTotalMemberCountNull: Self = StObject.set(x, "totalMemberCount", null)
     
     @scala.inline
-    def setRecipientSuggestionsNull: Self = this.set("recipientSuggestions", null)
-    
-    @scala.inline
-    def setTotalMemberCount(value: NullableOption[Double]): Self = this.set("totalMemberCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalMemberCount: Self = this.set("totalMemberCount", js.undefined)
-    
-    @scala.inline
-    def setTotalMemberCountNull: Self = this.set("totalMemberCount", null)
+    def setTotalMemberCountUndefined: Self = StObject.set(x, "totalMemberCount", js.undefined)
   }
 }

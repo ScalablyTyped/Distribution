@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object BuiltInType {
   }
   
   @scala.inline
-  implicit class BuiltInTypeOps[Self <: BuiltInType] (val x: Self) extends AnyVal {
+  implicit class BuiltInTypeMutableBuilder[Self <: BuiltInType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_nodeType(value: js.Any): Self = this.set("_nodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_text(value: js.Any): Self = this.set("_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_valueText(value: js.Any): Self = this.set("_valueText", value.asInstanceOf[js.Any])
+    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

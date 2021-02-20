@@ -3,16 +3,15 @@ package typings.canvasRenderer
 import typings.canvasRenderer.canvasMod.Canvas
 import typings.canvasRenderer.canvasRendererStrings.evenodd
 import typings.canvasRenderer.canvasRendererStrings.nonzero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("canvas-renderer/types/canvasContext", JSImport.Namespace)
-@js.native
-object canvasContextMod extends js.Object {
+object canvasContextMod {
   
   @js.native
-  trait CanvasContext extends js.Object {
+  trait CanvasContext extends StObject {
     
     /**
       * Adds an arc to the current path.

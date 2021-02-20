@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgLoaderSettings extends js.Object {
+trait IgLoaderSettings extends StObject {
   
   var autoDetectLocale: js.UndefOr[Boolean] = js.native
   
@@ -36,72 +37,60 @@ object IgLoaderSettings {
   }
   
   @scala.inline
-  implicit class IgLoaderSettingsOps[Self <: IgLoaderSettings] (val x: Self) extends AnyVal {
+  implicit class IgLoaderSettingsMutableBuilder[Self <: IgLoaderSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDetectLocale(value: Boolean): Self = StObject.set(x, "autoDetectLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDetectLocaleUndefined: Self = StObject.set(x, "autoDetectLocale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssPath(value: String): Self = this.set("cssPath", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptPath(value: String): Self = this.set("scriptPath", value.asInstanceOf[js.Any])
+    def setLocalePath(value: String): Self = StObject.set(x, "localePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDetectLocale(value: Boolean): Self = this.set("autoDetectLocale", value.asInstanceOf[js.Any])
+    def setLocalePathUndefined: Self = StObject.set(x, "localePath", js.undefined)
     
     @scala.inline
-    def deleteAutoDetectLocale: Self = this.set("autoDetectLocale", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPreinit(value: js.Function): Self = StObject.set(x, "preinit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPreinitUndefined: Self = StObject.set(x, "preinit", js.undefined)
     
     @scala.inline
-    def setLocalePath(value: String): Self = this.set("localePath", value.asInstanceOf[js.Any])
+    def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalePath: Self = this.set("localePath", js.undefined)
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def setPreinit(value: js.Function): Self = this.set("preinit", value.asInstanceOf[js.Any])
+    def setRegional(value: String): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreinit: Self = this.set("preinit", js.undefined)
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def setReady(value: js.Function): Self = this.set("ready", value.asInstanceOf[js.Any])
+    def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def setRegional(value: String): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: String): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

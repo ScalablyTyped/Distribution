@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentTemplate extends js.Object {
+trait DocumentTemplate extends StObject {
   
   var documentEndPage: js.UndefOr[String] = js.native
   
@@ -37,50 +38,38 @@ object DocumentTemplate {
   }
   
   @scala.inline
-  implicit class DocumentTemplateOps[Self <: DocumentTemplate] (val x: Self) extends AnyVal {
+  implicit class DocumentTemplateMutableBuilder[Self <: DocumentTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentEndPage(value: String): Self = StObject.set(x, "documentEndPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentEndPageUndefined: Self = StObject.set(x, "documentEndPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentEndPage(value: String): Self = this.set("documentEndPage", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteDocumentEndPage: Self = this.set("documentEndPage", js.undefined)
+    def setDocumentStartPage(value: String): Self = StObject.set(x, "documentStartPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
-    
-    @scala.inline
-    def setDocumentStartPage(value: String): Self = this.set("documentStartPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentStartPage: Self = this.set("documentStartPage", js.undefined)
+    def setDocumentStartPageUndefined: Self = StObject.set(x, "documentStartPage", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setTemplateId(value: String): Self = this.set("templateId", value.asInstanceOf[js.Any])
+    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateId: Self = this.set("templateId", js.undefined)
+    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

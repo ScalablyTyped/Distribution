@@ -2,12 +2,13 @@ package typings.activexAccess.anon
 
 import typings.activexStdole.stdole.OLE_XPOS_PIXELS
 import typings.activexStdole.stdole.OLE_YPOS_PIXELS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait X extends js.Object {
+trait X extends StObject {
   
   val Button: Double = js.native
   
@@ -28,33 +29,21 @@ object X {
   }
   
   @scala.inline
-  implicit class XOps[Self <: X] (val x: Self) extends AnyVal {
+  implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: Double): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldList(value: Double): Self = StObject.set(x, "FieldList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Double): Self = this.set("Button", value.asInstanceOf[js.Any])
+    def setX(value: OLE_XPOS_PIXELS): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldList(value: Double): Self = this.set("FieldList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift(value: Double): Self = this.set("Shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: OLE_XPOS_PIXELS): Self = this.set("X", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: OLE_YPOS_PIXELS): Self = this.set("Y", value.asInstanceOf[js.Any])
+    def setY(value: OLE_YPOS_PIXELS): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

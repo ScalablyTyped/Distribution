@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportSourceType extends js.Object
+sealed trait PhotoImportSourceType extends StObject
 /** Specifies the type of device that is being used as a photo import source. */
 @JSGlobal("Windows.Media.Import.PhotoImportSourceType")
 @js.native
-object PhotoImportSourceType extends js.Object {
+object PhotoImportSourceType extends StObject {
   
   /** The device is an audio recorder. */
   @js.native

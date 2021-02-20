@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressU extends js.Object {
+trait AddressU extends StObject {
   
   var addressU: js.UndefOr[Double] = js.native
   
@@ -56,138 +57,126 @@ object AddressU {
   }
   
   @scala.inline
-  implicit class AddressUOps[Self <: AddressU] (val x: Self) extends AnyVal {
+  implicit class AddressUMutableBuilder[Self <: AddressU] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressU(value: Double): Self = StObject.set(x, "addressU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUUndefined: Self = StObject.set(x, "addressU", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressV(value: Double): Self = StObject.set(x, "addressV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressU(value: Double): Self = this.set("addressU", value.asInstanceOf[js.Any])
+    def setAddressVUndefined: Self = StObject.set(x, "addressV", js.undefined)
     
     @scala.inline
-    def deleteAddressU: Self = this.set("addressU", js.undefined)
+    def setAddressW(value: Double): Self = StObject.set(x, "addressW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressV(value: Double): Self = this.set("addressV", value.asInstanceOf[js.Any])
+    def setAddressWUndefined: Self = StObject.set(x, "addressW", js.undefined)
     
     @scala.inline
-    def deleteAddressV: Self = this.set("addressV", js.undefined)
+    def setAnisotropy(value: Double): Self = StObject.set(x, "anisotropy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressW(value: Double): Self = this.set("addressW", value.asInstanceOf[js.Any])
+    def setAnisotropyUndefined: Self = StObject.set(x, "anisotropy", js.undefined)
     
     @scala.inline
-    def deleteAddressW: Self = this.set("addressW", js.undefined)
+    def setCompareFunc(value: Double): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnisotropy(value: Double): Self = this.set("anisotropy", value.asInstanceOf[js.Any])
+    def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
     
     @scala.inline
-    def deleteAnisotropy: Self = this.set("anisotropy", js.undefined)
+    def setCompareOnRead(value: Boolean): Self = StObject.set(x, "compareOnRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareFunc(value: Double): Self = this.set("compareFunc", value.asInstanceOf[js.Any])
+    def setCompareOnReadUndefined: Self = StObject.set(x, "compareOnRead", js.undefined)
     
     @scala.inline
-    def deleteCompareFunc: Self = this.set("compareFunc", js.undefined)
+    def setCubemap(value: Boolean): Self = StObject.set(x, "cubemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareOnRead(value: Boolean): Self = this.set("compareOnRead", value.asInstanceOf[js.Any])
+    def setCubemapUndefined: Self = StObject.set(x, "cubemap", js.undefined)
     
     @scala.inline
-    def deleteCompareOnRead: Self = this.set("compareOnRead", js.undefined)
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubemap(value: Boolean): Self = this.set("cubemap", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteCubemap: Self = this.set("cubemap", js.undefined)
+    def setFixCubemapSeams(value: Boolean): Self = StObject.set(x, "fixCubemapSeams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setFixCubemapSeamsUndefined: Self = StObject.set(x, "fixCubemapSeams", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixCubemapSeams(value: Boolean): Self = this.set("fixCubemapSeams", value.asInstanceOf[js.Any])
+    def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
     
     @scala.inline
-    def deleteFixCubemapSeams: Self = this.set("fixCubemapSeams", js.undefined)
+    def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlipY(value: Boolean): Self = this.set("flipY", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFlipY: Self = this.set("flipY", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Double): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMagFilter(value: Double): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMagFilterUndefined: Self = StObject.set(x, "magFilter", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMinFilter(value: Double): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagFilter(value: Double): Self = this.set("magFilter", value.asInstanceOf[js.Any])
+    def setMinFilterUndefined: Self = StObject.set(x, "minFilter", js.undefined)
     
     @scala.inline
-    def deleteMagFilter: Self = this.set("magFilter", js.undefined)
+    def setMipmaps(value: Boolean): Self = StObject.set(x, "mipmaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFilter(value: Double): Self = this.set("minFilter", value.asInstanceOf[js.Any])
+    def setMipmapsUndefined: Self = StObject.set(x, "mipmaps", js.undefined)
     
     @scala.inline
-    def deleteMinFilter: Self = this.set("minFilter", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMipmaps(value: Boolean): Self = this.set("mipmaps", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMipmaps: Self = this.set("mipmaps", js.undefined)
+    def setPremultiplyAlpha(value: Boolean): Self = StObject.set(x, "premultiplyAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPremultiplyAlphaUndefined: Self = StObject.set(x, "premultiplyAlpha", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremultiplyAlpha(value: Boolean): Self = this.set("premultiplyAlpha", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePremultiplyAlpha: Self = this.set("premultiplyAlpha", js.undefined)
+    def setVolume(value: Boolean): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolume(value: Boolean): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,16 +1,16 @@
 package typings.handsontable.mod.Handsontable
 
 import typings.handsontable.anon.A
-import typings.handsontable.mod._Handsontable.Core
 import typings.std.Date
 import typings.std.Document
 import typings.std.HTMLTableElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Helper extends js.Object {
+trait Helper extends StObject {
   
   val KEY_CODES: A = js.native
   
@@ -132,7 +132,7 @@ trait Helper extends js.Object {
   
   def inherit(Child: js.Object, Parent: js.Object): js.Object = js.native
   
-  def instanceToHTML(instance: Core): String = js.native
+  def instanceToHTML(instance: typings.handsontable.mod._Handsontable.Core): String = js.native
   
   def isChrome(): Boolean = js.native
   

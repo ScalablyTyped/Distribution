@@ -1,11 +1,12 @@
 package typings.nodeMailjet.mod.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutResponseData extends js.Object {
+trait PutResponseData extends StObject {
   
   val Count: Double = js.native
   
@@ -22,30 +23,18 @@ object PutResponseData {
   }
   
   @scala.inline
-  implicit class PutResponseDataOps[Self <: PutResponseData] (val x: Self) extends AnyVal {
+  implicit class PutResponseDataMutableBuilder[Self <: PutResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Array[js.Object]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: js.Object*): Self = StObject.set(x, "Data", js.Array(value :_*))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataVarargs(value: js.Object*): Self = this.set("Data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: js.Array[js.Object]): Self = this.set("Data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("Total", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
   }
 }

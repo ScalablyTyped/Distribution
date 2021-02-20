@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Organization extends js.Object {
+trait Organization extends StObject {
   
   var organization: scala.Double = js.native
   
@@ -25,30 +26,18 @@ object Organization {
   }
   
   @scala.inline
-  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganization(value: scala.Double): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivate(value: scala.Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublic(value: scala.Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: scala.Double): Self = this.set("organization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate(value: scala.Double): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublic(value: scala.Double): Self = this.set("public", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnchanged(value: scala.Double): Self = this.set("unchanged", value.asInstanceOf[js.Any])
+    def setUnchanged(value: scala.Double): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
   }
 }

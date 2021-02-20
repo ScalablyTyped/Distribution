@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecBackendVirtualService extends js.Object {
+trait VirtualNodeSpecBackendVirtualService extends StObject {
   
   /**
     * The client policy for the backend.
@@ -26,27 +27,15 @@ object VirtualNodeSpecBackendVirtualService {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecBackendVirtualServiceOps[Self <: VirtualNodeSpecBackendVirtualService] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecBackendVirtualServiceMutableBuilder[Self <: VirtualNodeSpecBackendVirtualService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientPolicy(value: VirtualNodeSpecBackendVirtualServiceClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientPolicyUndefined: Self = StObject.set(x, "clientPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualServiceName(value: String): Self = this.set("virtualServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientPolicy(value: VirtualNodeSpecBackendVirtualServiceClientPolicy): Self = this.set("clientPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientPolicy: Self = this.set("clientPolicy", js.undefined)
+    def setVirtualServiceName(value: String): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ListItemText.ListItemTextClassKey>> */
 @js.native
-trait PartialStyleRulesListItem extends js.Object {
+trait PartialStyleRulesListItem extends StObject {
   
   var dense: js.UndefOr[CSSProperties] = js.native
   
@@ -30,54 +31,42 @@ object PartialStyleRulesListItem {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesListItemOps[Self <: PartialStyleRulesListItem] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesListItemMutableBuilder[Self <: PartialStyleRulesListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDense(value: CSSProperties): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDense(value: CSSProperties): Self = this.set("dense", value.asInstanceOf[js.Any])
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def deleteDense: Self = this.set("dense", js.undefined)
+    def setPrimary(value: CSSProperties): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: CSSProperties): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: CSSProperties): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setSecondary(value: CSSProperties): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setTextDense(value: CSSProperties): Self = StObject.set(x, "textDense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary(value: CSSProperties): Self = this.set("secondary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
-    
-    @scala.inline
-    def setTextDense(value: CSSProperties): Self = this.set("textDense", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDense: Self = this.set("textDense", js.undefined)
+    def setTextDenseUndefined: Self = StObject.set(x, "textDense", js.undefined)
   }
 }

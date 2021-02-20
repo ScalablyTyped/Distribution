@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/diff-line", JSImport.Namespace)
-@js.native
-object diffLineMod extends js.Object {
+object diffLineMod {
   
+  @JSImport("nodegit/diff-line", "DiffLine")
   @js.native
-  class DiffLine () extends js.Object {
+  class DiffLine () extends StObject {
     
     /**
       * The relevant line

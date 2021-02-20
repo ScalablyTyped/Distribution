@@ -1,6 +1,7 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Query
 
 import typings.microsoftSdkSoap.mod.global.Sdk.Collection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.FilterExpression")
 @js.native
-class FilterExpression protected () extends js.Object {
+class FilterExpression protected () extends StObject {
   def this(logicalOperator: LogicalOperator) = this()
   
   /**

@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderDeliveryDetails extends js.Object {
+trait SchemaOrderDeliveryDetails extends StObject {
   
   /**
     * The delivery address
@@ -26,30 +27,18 @@ object SchemaOrderDeliveryDetails {
   }
   
   @scala.inline
-  implicit class SchemaOrderDeliveryDetailsOps[Self <: SchemaOrderDeliveryDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderDeliveryDetailsMutableBuilder[Self <: SchemaOrderDeliveryDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: SchemaOrderAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: SchemaOrderAddress): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
-    
-    @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
   }
 }

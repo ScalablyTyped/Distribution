@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRateBasedRuleManagedKeysRequest extends js.Object {
+trait GetRateBasedRuleManagedKeysRequest extends StObject {
   
   /**
     * A null value and not currently used. Do not include this in your request.
@@ -26,27 +27,15 @@ object GetRateBasedRuleManagedKeysRequest {
   }
   
   @scala.inline
-  implicit class GetRateBasedRuleManagedKeysRequestOps[Self <: GetRateBasedRuleManagedKeysRequest] (val x: Self) extends AnyVal {
+  implicit class GetRateBasedRuleManagedKeysRequestMutableBuilder[Self <: GetRateBasedRuleManagedKeysRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = this.set("RuleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

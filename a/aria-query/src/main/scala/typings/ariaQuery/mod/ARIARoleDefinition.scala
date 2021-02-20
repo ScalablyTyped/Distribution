@@ -1,11 +1,12 @@
 package typings.ariaQuery.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARIARoleDefinition extends js.Object {
+trait ARIARoleDefinition extends StObject {
   
   /* Abstract roles may not be used in HTML. */
   var `abstract`: Boolean = js.native
@@ -54,51 +55,39 @@ object ARIARoleDefinition {
   }
   
   @scala.inline
-  implicit class ARIARoleDefinitionOps[Self <: ARIARoleDefinition] (val x: Self) extends AnyVal {
+  implicit class ARIARoleDefinitionMutableBuilder[Self <: ARIARoleDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "baseConcepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "baseConcepts", js.Array(value :_*))
     
     @scala.inline
-    def setAbstract(value: Boolean): Self = this.set("abstract", value.asInstanceOf[js.Any])
+    def setChildrenPresentational(value: Boolean): Self = StObject.set(x, "childrenPresentational", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseConceptsVarargs(value: ARIARoleRelation*): Self = this.set("baseConcepts", js.Array(value :_*))
+    def setProhibitedProps(value: ARIAPropertyMap): Self = StObject.set(x, "prohibitedProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseConcepts(value: js.Array[ARIARoleRelation]): Self = this.set("baseConcepts", value.asInstanceOf[js.Any])
+    def setProps(value: ARIAPropertyMap): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenPresentational(value: Boolean): Self = this.set("childrenPresentational", value.asInstanceOf[js.Any])
+    def setRelatedConcepts(value: js.Array[ARIARoleRelation]): Self = StObject.set(x, "relatedConcepts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProhibitedProps(value: ARIAPropertyMap): Self = this.set("prohibitedProps", value.asInstanceOf[js.Any])
+    def setRelatedConceptsVarargs(value: ARIARoleRelation*): Self = StObject.set(x, "relatedConcepts", js.Array(value :_*))
     
     @scala.inline
-    def setProps(value: ARIAPropertyMap): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setRequiredProps(value: ARIAPropertyMap): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedConceptsVarargs(value: ARIARoleRelation*): Self = this.set("relatedConcepts", js.Array(value :_*))
+    def setSuperClass(value: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedConcepts(value: js.Array[ARIARoleRelation]): Self = this.set("relatedConcepts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequiredProps(value: ARIAPropertyMap): Self = this.set("requiredProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuperClassVarargs(value: (js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole])*): Self = this.set("superClass", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuperClass(value: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]): Self = this.set("superClass", value.asInstanceOf[js.Any])
+    def setSuperClassVarargs(value: (js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole])*): Self = StObject.set(x, "superClass", js.Array(value :_*))
   }
 }

@@ -431,6 +431,7 @@ import typings.astTypes.namedTypesMod.namedTypes.WhileStatement
 import typings.astTypes.namedTypesMod.namedTypes.WithStatement
 import typings.astTypes.namedTypesMod.namedTypes.YieldExpression
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cloudfront
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionOriginGroupFailoverCriteria extends js.Object {
+trait DistributionOriginGroupFailoverCriteria extends StObject {
   
   /**
     * A list of HTTP status codes for the origin group
@@ -21,24 +22,12 @@ object DistributionOriginGroupFailoverCriteria {
   }
   
   @scala.inline
-  implicit class DistributionOriginGroupFailoverCriteriaOps[Self <: DistributionOriginGroupFailoverCriteria] (val x: Self) extends AnyVal {
+  implicit class DistributionOriginGroupFailoverCriteriaMutableBuilder[Self <: DistributionOriginGroupFailoverCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatusCodesVarargs(value: Double*): Self = this.set("statusCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatusCodes(value: js.Array[Double]): Self = this.set("statusCodes", value.asInstanceOf[js.Any])
+    def setStatusCodesVarargs(value: Double*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
   }
 }

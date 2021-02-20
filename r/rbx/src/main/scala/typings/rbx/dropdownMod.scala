@@ -5,6 +5,8 @@ import typings.rbx.anon.PickDropdownContainerProp
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
 import typings.rbx.anon.TypeofDropdownContainer
 import typings.rbx.anon.`6`
+import typings.rbx.dropdownContainerMod.DropdownContainer
+import typings.rbx.dropdownContainerMod.DropdownContainerProps
 import typings.rbx.dropdownContextMod.DropdownContextValue
 import typings.rbx.dropdownItemMod.DropdownItemProps
 import typings.rbx.dropdownTriggerMod.DropdownTriggerProps
@@ -50,23 +52,25 @@ import typings.rbx.rbxStrings.tooltipResponsive
 import typings.rbx.rbxStrings.unselectable
 import typings.rbx.rbxStrings.up
 import typings.react.mod.ComponentProps
+import typings.react.mod.Context
 import typings.react.mod.ElementType
 import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import typings.std.Exclude
 import typings.std.Partial
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rbx/components/dropdown", JSImport.Namespace)
-@js.native
-object dropdownMod extends js.Object {
+object dropdownMod {
   
-  @js.native
-  object Dropdown extends js.Object {
+  /* Inlined {None <TAsComponent extends react.react.ElementType<any> = react.react.ElementType<any>>(props : {  as :TAsComponent | undefined} & std.Pick<rbx.rbx/components/dropdown/dropdown-container.DropdownContainerProps, 'active' | 'hidden' | 'up' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'align' | 'hoverable' | 'managed'> & std.Pick<react.react.ComponentProps<TAsComponent>, std.Exclude<keyof react.react.ComponentProps<TAsComponent>, 'active' | 'hidden' | 'up' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'as' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'align' | 'hoverable' | 'managed'>> & react.react.RefAttributes<TAsComponent extends 'symbol' | 'object' | 'big' | 'link' | 'small' | 'sub' | 'sup' | 'track' | 'progress' | 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'source' | 'span' | 'strong' | 'style' | 'summary' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'svg' | 'switch' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' | 'menuitem' | 'keygen' | 'noindex' | 'webview' | 'animate' | 'animateMotion' | 'animateTransform' | 'feDropShadow' | 'mpath' ? rbx.rbx/base/exotic.FromReactType<TAsComponent> : TAsComponent>): react.react.<global>.JSX.Element | null,   defaultProps :{  as :react.react.ElementType<any>} & std.Partial<std.Pick<rbx.rbx/components/dropdown/dropdown-container.DropdownContainerProps, 'active' | 'hidden' | 'up' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'align' | 'hoverable' | 'managed'> & std.Pick<any, string | number | symbol>>,   displayName :string,   propTypes :react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}>,   Container :{  displayName :string, new (props : rbx.rbx/components/dropdown/dropdown-container.DropdownContainerProps): rbx.rbx/components/dropdown/dropdown-container.DropdownContainer},   Content :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/types.Prefer<rbx.rbx/base/helpers.HelpersPropsOverrides, rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}>, react.react.ElementType<any>>,   Context :react.react.Context<rbx.rbx/components/dropdown/dropdown-context.DropdownContextValue>,   Divider :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/types.Prefer<rbx.rbx/base/helpers.HelpersPropsOverrides, rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}>, react.react.ElementType<any>>,   Item :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/components/dropdown/dropdown-item.DropdownItemProps, react.react.ElementType<any>>,   Menu :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/types.Prefer<rbx.rbx/base/helpers.HelpersPropsOverrides, rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}>, react.react.ElementType<any>>,   Trigger :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/components/dropdown/dropdown-trigger.DropdownTriggerProps, react.react.ElementType<any>>} & std.Pick<react.react.ForwardRefExoticComponent<react.react.ElementType<any>>, 'displayName' | '$$typeof'> */
+  object Dropdown {
     
+    @JSImport("rbx/components/dropdown", "Dropdown")
+    @js.native
     def apply[TAsComponent /* <: ElementType[_] */](
       props: `6`[TAsComponent] with PickDropdownContainerProp with (Pick[
           ComponentProps[TAsComponent], 
@@ -76,26 +80,80 @@ object dropdownMod extends js.Object {
           ]
         ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
     ): Element | Null = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var Container: TypeofDropdownContainer = js.native
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("rbx/components/dropdown", "Dropdown.Container")
+    @js.native
+    class Container protected () extends DropdownContainer {
+      def this(props: DropdownContainerProps) = this()
+    }
+    @JSImport("rbx/components/dropdown", "Dropdown.Container")
+    @js.native
+    def Container: TypeofDropdownContainer = js.native
+    @scala.inline
+    def Container_=(x: TypeofDropdownContainer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
     
-    var Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.Content")
+    @js.native
+    def Content: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[js.Any]] = js.native
+    @scala.inline
+    def Content_=(x: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
     
-    var Context: typings.react.mod.Context[DropdownContextValue] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.Context")
+    @js.native
+    def Context: typings.react.mod.Context[DropdownContextValue] = js.native
+    @scala.inline
+    def Context_=(x: Context[DropdownContextValue]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Context")(x.asInstanceOf[js.Any])
     
-    var Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.Divider")
+    @js.native
+    def Divider: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[js.Any]] = js.native
+    @scala.inline
+    def Divider_=(x: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
     
-    @JSName("$$typeof")
-    var DollarDollartypeof: js.Symbol = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.Item")
+    @js.native
+    def Item: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[js.Any]] = js.native
+    @scala.inline
+    def Item_=(x: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
-    var Item: ForwardRefAsExoticComponent[DropdownItemProps, ElementType[_]] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.Menu")
+    @js.native
+    def Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[js.Any]] = js.native
+    @scala.inline
+    def Menu_=(x: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Menu")(x.asInstanceOf[js.Any])
     
-    var Menu: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBackgroundColor, ElementType[_]] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.Trigger")
+    @js.native
+    def Trigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[js.Any]] = js.native
+    @scala.inline
+    def Trigger_=(x: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Trigger")(x.asInstanceOf[js.Any])
     
-    var Trigger: ForwardRefAsExoticComponent[DropdownTriggerProps, ElementType[_]] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.defaultProps")
+    @js.native
+    def defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
+    @scala.inline
+    def defaultProps_=(
+      x: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])])
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    var defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    @scala.inline
+    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    var displayName: js.UndefOr[String] = js.native
+    @JSImport("rbx/components/dropdown", "Dropdown.$$typeof")
+    @js.native
+    def typeof: js.Symbol = js.native
+    
+    @scala.inline
+    def typeof_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$$typeof")(x.asInstanceOf[js.Any])
+    
+    /* Inlined react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}> */
+    object propTypes
   }
 }

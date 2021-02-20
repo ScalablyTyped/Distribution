@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheNodeTypeSpecificValue extends js.Object {
+trait CacheNodeTypeSpecificValue extends StObject {
   
   /**
     * The cache node type for which this value applies.
@@ -26,30 +27,18 @@ object CacheNodeTypeSpecificValue {
   }
   
   @scala.inline
-  implicit class CacheNodeTypeSpecificValueOps[Self <: CacheNodeTypeSpecificValue] (val x: Self) extends AnyVal {
+  implicit class CacheNodeTypeSpecificValueMutableBuilder[Self <: CacheNodeTypeSpecificValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

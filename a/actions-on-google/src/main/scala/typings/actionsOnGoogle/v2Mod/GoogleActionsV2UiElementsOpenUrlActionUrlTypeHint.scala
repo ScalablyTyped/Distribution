@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.URL_TYPE_HINT_UNSPECIFIED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.AMP_CONTENT
 */
-trait GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint extends js.Object
+trait GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint extends StObject
 object GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint {
   
   @scala.inline

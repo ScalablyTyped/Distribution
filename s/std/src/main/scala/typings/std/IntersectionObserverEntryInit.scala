@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntersectionObserverEntryInit extends js.Object {
+trait IntersectionObserverEntryInit extends StObject {
   
   var boundingClientRect: DOMRectInit = js.native
   
@@ -37,42 +38,30 @@ object IntersectionObserverEntryInit {
   }
   
   @scala.inline
-  implicit class IntersectionObserverEntryInitOps[Self <: IntersectionObserverEntryInit] (val x: Self) extends AnyVal {
+  implicit class IntersectionObserverEntryInitMutableBuilder[Self <: IntersectionObserverEntryInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingClientRect(value: DOMRectInit): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntersectionRect(value: DOMRectInit): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingClientRect(value: DOMRectInit): Self = this.set("boundingClientRect", value.asInstanceOf[js.Any])
+    def setIsIntersecting(value: scala.Boolean): Self = StObject.set(x, "isIntersecting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectionRatio(value: Double): Self = this.set("intersectionRatio", value.asInstanceOf[js.Any])
+    def setRootBounds(value: DOMRectInit): Self = StObject.set(x, "rootBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectionRect(value: DOMRectInit): Self = this.set("intersectionRect", value.asInstanceOf[js.Any])
+    def setRootBoundsNull: Self = StObject.set(x, "rootBounds", null)
     
     @scala.inline
-    def setIsIntersecting(value: scala.Boolean): Self = this.set("isIntersecting", value.asInstanceOf[js.Any])
+    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootBounds(value: DOMRectInit): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootBoundsNull: Self = this.set("rootBounds", null)
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

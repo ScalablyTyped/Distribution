@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceRadarRequest extends js.Object {
+trait PlaceRadarRequest extends StObject {
   
   /**
     * A term to be matched against all content that Google has indexed for this place, including but not limited to
@@ -69,66 +70,54 @@ object PlaceRadarRequest {
   }
   
   @scala.inline
-  implicit class PlaceRadarRequestOps[Self <: PlaceRadarRequest] (val x: Self) extends AnyVal {
+  implicit class PlaceRadarRequestMutableBuilder[Self <: PlaceRadarRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LatLng): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    def setMaxprice(value: Double): Self = StObject.set(x, "maxprice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyword: Self = this.set("keyword", js.undefined)
+    def setMaxpriceUndefined: Self = StObject.set(x, "maxprice", js.undefined)
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setMinprice(value: Double): Self = StObject.set(x, "minprice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMinpriceUndefined: Self = StObject.set(x, "minprice", js.undefined)
     
     @scala.inline
-    def setMaxprice(value: Double): Self = this.set("maxprice", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxprice: Self = this.set("maxprice", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMinprice(value: Double): Self = this.set("minprice", value.asInstanceOf[js.Any])
+    def setOpennow(value: Boolean): Self = StObject.set(x, "opennow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinprice: Self = this.set("minprice", js.undefined)
+    def setOpennowUndefined: Self = StObject.set(x, "opennow", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: AddressType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpennow(value: Boolean): Self = this.set("opennow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpennow: Self = this.set("opennow", js.undefined)
-    
-    @scala.inline
-    def setType(value: AddressType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

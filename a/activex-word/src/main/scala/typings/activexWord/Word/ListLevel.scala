@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListLevel extends js.Object {
+trait ListLevel extends StObject {
   
   var Alignment: WdListLevelAlignment = js.native
   
@@ -76,75 +77,63 @@ object ListLevel {
   }
   
   @scala.inline
-  implicit class ListLevelOps[Self <: ListLevel] (val x: Self) extends AnyVal {
+  implicit class ListLevelMutableBuilder[Self <: ListLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: WdListLevelAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyPictureBullet(value: String => InlineShape): Self = StObject.set(x, "ApplyPictureBullet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlignment(value: WdListLevelAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyPictureBullet(value: String => InlineShape): Self = this.set("ApplyPictureBullet", js.Any.fromFunction1(value))
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLinkedStyle(value: String): Self = StObject.set(x, "LinkedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Font): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setNumberPosition(value: Double): Self = StObject.set(x, "NumberPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedStyle(value: String): Self = this.set("LinkedStyle", value.asInstanceOf[js.Any])
+    def setNumberStyle(value: WdListNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: String): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberPosition(value: Double): Self = this.set("NumberPosition", value.asInstanceOf[js.Any])
+    def setPictureBullet(value: InlineShape): Self = StObject.set(x, "PictureBullet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberStyle(value: WdListNumberStyle): Self = this.set("NumberStyle", value.asInstanceOf[js.Any])
+    def setResetOnHigher(value: Double): Self = StObject.set(x, "ResetOnHigher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setResetOnHigherOld(value: Boolean): Self = StObject.set(x, "ResetOnHigherOld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureBullet(value: InlineShape): Self = this.set("PictureBullet", value.asInstanceOf[js.Any])
+    def setStartAt(value: Double): Self = StObject.set(x, "StartAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetOnHigher(value: Double): Self = this.set("ResetOnHigher", value.asInstanceOf[js.Any])
+    def setTabPosition(value: Double): Self = StObject.set(x, "TabPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetOnHigherOld(value: Boolean): Self = this.set("ResetOnHigherOld", value.asInstanceOf[js.Any])
+    def setTextPosition(value: Double): Self = StObject.set(x, "TextPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAt(value: Double): Self = this.set("StartAt", value.asInstanceOf[js.Any])
+    def setTrailingCharacter(value: WdTrailingCharacter): Self = StObject.set(x, "TrailingCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabPosition(value: Double): Self = this.set("TabPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextPosition(value: Double): Self = this.set("TextPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrailingCharacter(value: WdTrailingCharacter): Self = this.set("TrailingCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotListLevel_typekey(value: ListLevel): Self = this.set("Word.ListLevel_typekey", value.asInstanceOf[js.Any])
+    def setWordDotListLevel_typekey(value: ListLevel): Self = StObject.set(x, "Word.ListLevel_typekey", value.asInstanceOf[js.Any])
   }
 }

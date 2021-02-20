@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.gridPanelMod.GridPanel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/misc/animationFrameService", JSImport.Namespace)
-@js.native
-object animationFrameServiceMod extends js.Object {
+object animationFrameServiceMod {
   
+  @JSImport("ag-grid/dist/lib/misc/animationFrameService", "AnimationFrameService")
   @js.native
-  class AnimationFrameService () extends js.Object {
+  class AnimationFrameService () extends StObject {
     
     def addP1Task(task: js.Function0[Unit]): Unit = js.native
     

@@ -4,6 +4,7 @@ import typings.antdMobile.anon.AntLocale
 import typings.antdMobile.anon.Current
 import typings.antdMobile.paginationMod.PaginationProps
 import typings.antdMobile.paginationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +15,21 @@ class Pagination protected () extends default {
   def this(props: PaginationProps) = this()
 }
 /* static members */
-@JSImport("antd-mobile", "Pagination")
-@js.native
-object Pagination extends js.Object {
+object Pagination {
   
-  var contextTypes: AntLocale = js.native
+  @JSImport("antd-mobile", "Pagination")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var defaultProps: Current = js.native
+  @JSImport("antd-mobile", "Pagination.contextTypes")
+  @js.native
+  def contextTypes: AntLocale = js.native
+  @scala.inline
+  def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile", "Pagination.defaultProps")
+  @js.native
+  def defaultProps: Current = js.native
+  @scala.inline
+  def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

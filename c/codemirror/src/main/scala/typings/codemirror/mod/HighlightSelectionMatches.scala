@@ -1,12 +1,13 @@
 package typings.codemirror.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightSelectionMatches extends js.Object {
+trait HighlightSelectionMatches extends StObject {
   
   /**
     * If annotateScrollbar is enabled, the occurences will be highlighted on the scrollbar via the matchesonscrollbar addon.
@@ -52,60 +53,48 @@ object HighlightSelectionMatches {
   }
   
   @scala.inline
-  implicit class HighlightSelectionMatchesOps[Self <: HighlightSelectionMatches] (val x: Self) extends AnyVal {
+  implicit class HighlightSelectionMatchesMutableBuilder[Self <: HighlightSelectionMatches] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotateScrollbar(value: Boolean): Self = StObject.set(x, "annotateScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotateScrollbarUndefined: Self = StObject.set(x, "annotateScrollbar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotateScrollbar(value: Boolean): Self = this.set("annotateScrollbar", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteAnnotateScrollbar: Self = this.set("annotateScrollbar", js.undefined)
+    def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setShowToken(value: Boolean | RegExp): Self = StObject.set(x, "showToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinChars(value: Double): Self = this.set("minChars", value.asInstanceOf[js.Any])
+    def setShowTokenUndefined: Self = StObject.set(x, "showToken", js.undefined)
     
     @scala.inline
-    def deleteMinChars: Self = this.set("minChars", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowToken(value: Boolean | RegExp): Self = this.set("showToken", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShowToken: Self = this.set("showToken", js.undefined)
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWordsOnly(value: Boolean): Self = StObject.set(x, "wordsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
-    
-    @scala.inline
-    def setWordsOnly(value: Boolean): Self = this.set("wordsOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordsOnly: Self = this.set("wordsOnly", js.undefined)
+    def setWordsOnlyUndefined: Self = StObject.set(x, "wordsOnly", js.undefined)
   }
 }

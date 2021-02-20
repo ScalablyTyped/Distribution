@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReelsMediaFeedResponseFriendshipStatus extends js.Object {
+trait ReelsMediaFeedResponseFriendshipStatus extends StObject {
   
   var following: Boolean = js.native
   
@@ -32,33 +33,21 @@ object ReelsMediaFeedResponseFriendshipStatus {
   }
   
   @scala.inline
-  implicit class ReelsMediaFeedResponseFriendshipStatusOps[Self <: ReelsMediaFeedResponseFriendshipStatus] (val x: Self) extends AnyVal {
+  implicit class ReelsMediaFeedResponseFriendshipStatusMutableBuilder[Self <: ReelsMediaFeedResponseFriendshipStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing(value: Boolean): Self = this.set("following", value.asInstanceOf[js.Any])
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncoming_request(value: Boolean): Self = this.set("incoming_request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIs_bestie(value: Boolean): Self = this.set("is_bestie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoing_request(value: Boolean): Self = this.set("outgoing_request", value.asInstanceOf[js.Any])
+    def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
   }
 }

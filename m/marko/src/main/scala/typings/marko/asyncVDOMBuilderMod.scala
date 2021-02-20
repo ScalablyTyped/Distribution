@@ -3,13 +3,12 @@ package typings.marko
 import typings.marko.asyncMod.Async
 import typings.marko.componentMod.Component
 import typings.marko.markoBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/runtime/vdom/AsyncVDOMBuilder", JSImport.Namespace)
-@js.native
-object asyncVDOMBuilderMod extends js.Object {
+object asyncVDOMBuilderMod {
   
   @js.native
   trait AsyncVDOMBuilder extends Async {

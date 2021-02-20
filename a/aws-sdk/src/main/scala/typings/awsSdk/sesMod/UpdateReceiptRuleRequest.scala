@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateReceiptRuleRequest extends js.Object {
+trait UpdateReceiptRuleRequest extends StObject {
   
   /**
     * A data structure that contains the updated receipt rule information.
@@ -26,24 +27,12 @@ object UpdateReceiptRuleRequest {
   }
   
   @scala.inline
-  implicit class UpdateReceiptRuleRequestOps[Self <: UpdateReceiptRuleRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateReceiptRuleRequestMutableBuilder[Self <: UpdateReceiptRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRule(value: ReceiptRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRule(value: ReceiptRule): Self = this.set("Rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleSetName(value: ReceiptRuleSetName): Self = this.set("RuleSetName", value.asInstanceOf[js.Any])
+    def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
   }
 }

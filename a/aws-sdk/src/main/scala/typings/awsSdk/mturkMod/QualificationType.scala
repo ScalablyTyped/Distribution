@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QualificationType extends js.Object {
+trait QualificationType extends StObject {
   
   /**
     * The answers to the Qualification test specified in the Test parameter.
@@ -81,96 +82,84 @@ object QualificationType {
   }
   
   @scala.inline
-  implicit class QualificationTypeOps[Self <: QualificationType] (val x: Self) extends AnyVal {
+  implicit class QualificationTypeMutableBuilder[Self <: QualificationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswerKey(value: String): Self = StObject.set(x, "AnswerKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnswerKeyUndefined: Self = StObject.set(x, "AnswerKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoGranted(value: Boolean): Self = StObject.set(x, "AutoGranted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswerKey(value: String): Self = this.set("AnswerKey", value.asInstanceOf[js.Any])
+    def setAutoGrantedUndefined: Self = StObject.set(x, "AutoGranted", js.undefined)
     
     @scala.inline
-    def deleteAnswerKey: Self = this.set("AnswerKey", js.undefined)
+    def setAutoGrantedValue(value: Integer): Self = StObject.set(x, "AutoGrantedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoGranted(value: Boolean): Self = this.set("AutoGranted", value.asInstanceOf[js.Any])
+    def setAutoGrantedValueUndefined: Self = StObject.set(x, "AutoGrantedValue", js.undefined)
     
     @scala.inline
-    def deleteAutoGranted: Self = this.set("AutoGranted", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoGrantedValue(value: Integer): Self = this.set("AutoGrantedValue", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAutoGrantedValue: Self = this.set("AutoGrantedValue", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setIsRequestable(value: Boolean): Self = StObject.set(x, "IsRequestable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsRequestableUndefined: Self = StObject.set(x, "IsRequestable", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRequestable(value: Boolean): Self = this.set("IsRequestable", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "Keywords", js.undefined)
     
     @scala.inline
-    def deleteIsRequestable: Self = this.set("IsRequestable", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("Keywords", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("Keywords", js.undefined)
+    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setQualificationTypeStatus(value: QualificationTypeStatus): Self = StObject.set(x, "QualificationTypeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    def setQualificationTypeStatusUndefined: Self = StObject.set(x, "QualificationTypeStatus", js.undefined)
     
     @scala.inline
-    def deleteQualificationTypeId: Self = this.set("QualificationTypeId", js.undefined)
+    def setRetryDelayInSeconds(value: Long): Self = StObject.set(x, "RetryDelayInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationTypeStatus(value: QualificationTypeStatus): Self = this.set("QualificationTypeStatus", value.asInstanceOf[js.Any])
+    def setRetryDelayInSecondsUndefined: Self = StObject.set(x, "RetryDelayInSeconds", js.undefined)
     
     @scala.inline
-    def deleteQualificationTypeStatus: Self = this.set("QualificationTypeStatus", js.undefined)
+    def setTest(value: String): Self = StObject.set(x, "Test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryDelayInSeconds(value: Long): Self = this.set("RetryDelayInSeconds", value.asInstanceOf[js.Any])
+    def setTestDurationInSeconds(value: Long): Self = StObject.set(x, "TestDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetryDelayInSeconds: Self = this.set("RetryDelayInSeconds", js.undefined)
+    def setTestDurationInSecondsUndefined: Self = StObject.set(x, "TestDurationInSeconds", js.undefined)
     
     @scala.inline
-    def setTest(value: String): Self = this.set("Test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("Test", js.undefined)
-    
-    @scala.inline
-    def setTestDurationInSeconds(value: Long): Self = this.set("TestDurationInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestDurationInSeconds: Self = this.set("TestDurationInSeconds", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
   }
 }

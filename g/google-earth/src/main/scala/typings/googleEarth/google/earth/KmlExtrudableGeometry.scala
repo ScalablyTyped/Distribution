@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ object KmlExtrudableGeometry {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getAltitudeMode: () => KmlAltitudeModeEnum,
     getExtrude: () => Boolean,
     getId: () => String,
@@ -52,35 +53,24 @@ object KmlExtrudableGeometry {
     setExtrude: Boolean => Unit,
     setTessellate: Boolean => Unit
   ): KmlExtrudableGeometry = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getExtrude = js.Any.fromFunction0(getExtrude), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getTessellate = js.Any.fromFunction0(getTessellate), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode), setExtrude = js.Any.fromFunction1(setExtrude), setTessellate = js.Any.fromFunction1(setTessellate))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getExtrude = js.Any.fromFunction0(getExtrude), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getTessellate = js.Any.fromFunction0(getTessellate), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode), setExtrude = js.Any.fromFunction1(setExtrude), setTessellate = js.Any.fromFunction1(setTessellate))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlExtrudableGeometry]
   }
   
   @scala.inline
-  implicit class KmlExtrudableGeometryOps[Self <: KmlExtrudableGeometry] (val x: Self) extends AnyVal {
+  implicit class KmlExtrudableGeometryMutableBuilder[Self <: KmlExtrudableGeometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetExtrude(value: () => Boolean): Self = StObject.set(x, "getExtrude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTessellate(value: () => Boolean): Self = StObject.set(x, "getTessellate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetExtrude(value: Boolean => Unit): Self = StObject.set(x, "setExtrude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetExtrude(value: () => Boolean): Self = this.set("getExtrude", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTessellate(value: () => Boolean): Self = this.set("getTessellate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetExtrude(value: Boolean => Unit): Self = this.set("setExtrude", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTessellate(value: Boolean => Unit): Self = this.set("setTessellate", js.Any.fromFunction1(value))
+    def setSetTessellate(value: Boolean => Unit): Self = StObject.set(x, "setTessellate", js.Any.fromFunction1(value))
   }
 }

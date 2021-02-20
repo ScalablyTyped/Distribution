@@ -5,12 +5,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.keyDown
 import typings.devtoolsProtocol.devtoolsProtocolStrings.keyUp
 import typings.devtoolsProtocol.devtoolsProtocolStrings.rawKeyDown
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DispatchKeyEventRequest extends js.Object {
+trait DispatchKeyEventRequest extends StObject {
   
   /**
     * Whether the event was generated from auto repeat (default: false).
@@ -104,108 +105,96 @@ object DispatchKeyEventRequest {
   }
   
   @scala.inline
-  implicit class DispatchKeyEventRequestOps[Self <: DispatchKeyEventRequest] (val x: Self) extends AnyVal {
+  implicit class DispatchKeyEventRequestMutableBuilder[Self <: DispatchKeyEventRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRepeat(value: Boolean): Self = StObject.set(x, "autoRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRepeatUndefined: Self = StObject.set(x, "autoRepeat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: keyDown | keyUp | rawKeyDown | char): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setAutoRepeat(value: Boolean): Self = this.set("autoRepeat", value.asInstanceOf[js.Any])
+    def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoRepeat: Self = this.set("autoRepeat", js.undefined)
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setIsKeypad(value: Boolean): Self = StObject.set(x, "isKeypad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandsVarargs(value: String*): Self = this.set("commands", js.Array(value :_*))
+    def setIsKeypadUndefined: Self = StObject.set(x, "isKeypad", js.undefined)
     
     @scala.inline
-    def setCommands(value: js.Array[String]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    def setIsSystemKey(value: Boolean): Self = StObject.set(x, "isSystemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setIsSystemKeyUndefined: Self = StObject.set(x, "isSystemKey", js.undefined)
     
     @scala.inline
-    def setIsKeypad(value: Boolean): Self = this.set("isKeypad", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsKeypad: Self = this.set("isKeypad", js.undefined)
+    def setKeyIdentifier(value: String): Self = StObject.set(x, "keyIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSystemKey(value: Boolean): Self = this.set("isSystemKey", value.asInstanceOf[js.Any])
+    def setKeyIdentifierUndefined: Self = StObject.set(x, "keyIdentifier", js.undefined)
     
     @scala.inline
-    def deleteIsSystemKey: Self = this.set("isSystemKey", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLocation(value: integer): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setKeyIdentifier(value: String): Self = this.set("keyIdentifier", value.asInstanceOf[js.Any])
+    def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyIdentifier: Self = this.set("keyIdentifier", js.undefined)
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def setLocation(value: integer): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNativeVirtualKeyCode(value: integer): Self = StObject.set(x, "nativeVirtualKeyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNativeVirtualKeyCodeUndefined: Self = StObject.set(x, "nativeVirtualKeyCode", js.undefined)
     
     @scala.inline
-    def setModifiers(value: integer): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setNativeVirtualKeyCode(value: integer): Self = this.set("nativeVirtualKeyCode", value.asInstanceOf[js.Any])
+    def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNativeVirtualKeyCode: Self = this.set("nativeVirtualKeyCode", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setType(value: keyDown | keyUp | rawKeyDown | char): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setUnmodifiedText(value: String): Self = StObject.set(x, "unmodifiedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: TimeSinceEpoch): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setUnmodifiedTextUndefined: Self = StObject.set(x, "unmodifiedText", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setWindowsVirtualKeyCode(value: integer): Self = StObject.set(x, "windowsVirtualKeyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnmodifiedText(value: String): Self = this.set("unmodifiedText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmodifiedText: Self = this.set("unmodifiedText", js.undefined)
-    
-    @scala.inline
-    def setWindowsVirtualKeyCode(value: integer): Self = this.set("windowsVirtualKeyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsVirtualKeyCode: Self = this.set("windowsVirtualKeyCode", js.undefined)
+    def setWindowsVirtualKeyCodeUndefined: Self = StObject.set(x, "windowsVirtualKeyCode", js.undefined)
   }
 }

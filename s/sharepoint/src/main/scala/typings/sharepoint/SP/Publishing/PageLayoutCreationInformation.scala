@@ -4,6 +4,7 @@ import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.Web
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,48 +57,36 @@ object PageLayoutCreationInformation {
   }
   
   @scala.inline
-  implicit class PageLayoutCreationInformationOps[Self <: PageLayoutCreationInformation] (val x: Self) extends AnyVal {
+  implicit class PageLayoutCreationInformationMutableBuilder[Self <: PageLayoutCreationInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_associatedContentTypeId(value: () => String): Self = StObject.set(x, "get_associatedContentTypeId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_masterPageUrl(value: () => String): Self = StObject.set(x, "get_masterPageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_newPageLayoutEditablePath(value: () => String): Self = StObject.set(x, "get_newPageLayoutEditablePath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_associatedContentTypeId(value: () => String): Self = this.set("get_associatedContentTypeId", js.Any.fromFunction0(value))
+    def setGet_newPageLayoutNameWithoutExtension(value: () => String): Self = StObject.set(x, "get_newPageLayoutNameWithoutExtension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_masterPageUrl(value: () => String): Self = this.set("get_masterPageUrl", js.Any.fromFunction0(value))
+    def setGet_web(value: () => Web): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_newPageLayoutEditablePath(value: () => String): Self = this.set("get_newPageLayoutEditablePath", js.Any.fromFunction0(value))
+    def setSet_associatedContentTypeId(value: String => String): Self = StObject.set(x, "set_associatedContentTypeId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_newPageLayoutNameWithoutExtension(value: () => String): Self = this.set("get_newPageLayoutNameWithoutExtension", js.Any.fromFunction0(value))
+    def setSet_masterPageUrl(value: String => String): Self = StObject.set(x, "set_masterPageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_web(value: () => Web): Self = this.set("get_web", js.Any.fromFunction0(value))
+    def setSet_newPageLayoutEditablePath(value: String => String): Self = StObject.set(x, "set_newPageLayoutEditablePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_associatedContentTypeId(value: String => String): Self = this.set("set_associatedContentTypeId", js.Any.fromFunction1(value))
+    def setSet_newPageLayoutNameWithoutExtension(value: String => String): Self = StObject.set(x, "set_newPageLayoutNameWithoutExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_masterPageUrl(value: String => String): Self = this.set("set_masterPageUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_newPageLayoutEditablePath(value: String => String): Self = this.set("set_newPageLayoutEditablePath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_newPageLayoutNameWithoutExtension(value: String => String): Self = this.set("set_newPageLayoutNameWithoutExtension", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_web(value: Web => Web): Self = this.set("set_web", js.Any.fromFunction1(value))
+    def setSet_web(value: Web => Web): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
   }
 }

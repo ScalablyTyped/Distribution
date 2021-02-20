@@ -1,6 +1,7 @@
 package typings.massive.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object DecomposeOptions {
   }
   
   @scala.inline
-  implicit class DecomposeOptionsOps[Self <: DecomposeOptions] (val x: Self) extends AnyVal {
+  implicit class DecomposeOptionsMutableBuilder[Self <: DecomposeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[String] | AnyObject[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumns(value: js.Array[String] | AnyObject[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
   }
 }

@@ -602,1213 +602,2414 @@ import typings.wixUiIconsCommon.zoomInMod.ZoomInProps
 import typings.wixUiIconsCommon.zoomInSmallMod.ZoomInSmallProps
 import typings.wixUiIconsCommon.zoomOutMod.ZoomOutProps
 import typings.wixUiIconsCommon.zoomOutSmallMod.ZoomOutSmallProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wix-ui-icons-common/dist/src", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("wix-ui-icons-common/dist/src", "Accessibility")
+  @js.native
   val Accessibility: SFC[AccessibilityProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AccessibilitySmall")
+  @js.native
   val AccessibilitySmall: SFC[AccessibilitySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Add")
+  @js.native
   val Add: SFC[AddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AddChannel")
+  @js.native
   val AddChannel: SFC[AddChannelProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AddChannelSmall")
+  @js.native
   val AddChannelSmall: SFC[AddChannelSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AddSmall")
+  @js.native
   val AddSmall: SFC[AddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Adjust")
+  @js.native
   val Adjust: SFC[AdjustProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AdjustSmall")
+  @js.native
   val AdjustSmall: SFC[AdjustSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AdminAccess")
+  @js.native
   val AdminAccess: SFC[AdminAccessProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AdminAccessSmall")
+  @js.native
   val AdminAccessSmall: SFC[AdminAccessSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignBottom")
+  @js.native
   val AlignBottom: SFC[AlignBottomProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignBottomSmall")
+  @js.native
   val AlignBottomSmall: SFC[AlignBottomSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignCenterHorizontally")
+  @js.native
   val AlignCenterHorizontally: SFC[AlignCenterHorizontallyProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignCenterHorizontallySmall")
+  @js.native
   val AlignCenterHorizontallySmall: SFC[AlignCenterHorizontallySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignCenterVertically")
+  @js.native
   val AlignCenterVertically: SFC[AlignCenterVerticallyProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignCenterVerticallySmall")
+  @js.native
   val AlignCenterVerticallySmall: SFC[AlignCenterVerticallySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignLeft")
+  @js.native
   val AlignLeft: SFC[AlignLeftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignLeftSmall")
+  @js.native
   val AlignLeftSmall: SFC[AlignLeftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignRight")
+  @js.native
   val AlignRight: SFC[AlignRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignRightSmall")
+  @js.native
   val AlignRightSmall: SFC[AlignRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignTop")
+  @js.native
   val AlignTop: SFC[AlignTopProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AlignTopSmall")
+  @js.native
   val AlignTopSmall: SFC[AlignTopSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AppMarket")
+  @js.native
   val AppMarket: SFC[AppMarketProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AppMarketSmall")
+  @js.native
   val AppMarketSmall: SFC[AppMarketSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Archive")
+  @js.native
   val Archive: SFC[ArchiveProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArchiveSmall")
+  @js.native
   val ArchiveSmall: SFC[ArchiveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowDown")
+  @js.native
   val ArrowDown: SFC[ArrowDownProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowDownRight")
+  @js.native
   val ArrowDownRight: SFC[ArrowDownRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowDownRightSmall")
+  @js.native
   val ArrowDownRightSmall: SFC[ArrowDownRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowDownSmall")
+  @js.native
   val ArrowDownSmall: SFC[ArrowDownSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowLeft")
+  @js.native
   val ArrowLeft: SFC[ArrowLeftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowLeftSmall")
+  @js.native
   val ArrowLeftSmall: SFC[ArrowLeftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowRight")
+  @js.native
   val ArrowRight: SFC[ArrowRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowRightSmall")
+  @js.native
   val ArrowRightSmall: SFC[ArrowRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowUp")
+  @js.native
   val ArrowUp: SFC[ArrowUpProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArrowUpSmall")
+  @js.native
   val ArrowUpSmall: SFC[ArrowUpSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Article")
+  @js.native
   val Article: SFC[ArticleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ArticleSmall")
+  @js.native
   val ArticleSmall: SFC[ArticleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Attachement")
+  @js.native
   val Attachement: SFC[AttachementProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Attachment")
+  @js.native
   val Attachment: SFC[AttachmentProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AttachmentSmall")
+  @js.native
   val AttachmentSmall: SFC[AttachmentSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Automations")
+  @js.native
   val Automations: SFC[AutomationsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AutomationsFilled")
+  @js.native
   val AutomationsFilled: SFC[AutomationsFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AutomationsFilledSmall")
+  @js.native
   val AutomationsFilledSmall: SFC[AutomationsFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "AutomationsSmall")
+  @js.native
   val AutomationsSmall: SFC[AutomationsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Background")
+  @js.native
   val Background: SFC[BackgroundProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BackgroundSmall")
+  @js.native
   val BackgroundSmall: SFC[BackgroundSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Backward")
+  @js.native
   val Backward: SFC[BackwardProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BackwardSmall")
+  @js.native
   val BackwardSmall: SFC[BackwardSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Badge")
+  @js.native
   val Badge: SFC[BadgeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BadgeSmall")
+  @js.native
   val BadgeSmall: SFC[BadgeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BarChartSplit")
+  @js.native
   val BarChartSplit: SFC[BarChartSplitProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BarChartSplitSmall")
+  @js.native
   val BarChartSplitSmall: SFC[BarChartSplitSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Bing")
+  @js.native
   val Bing: SFC[BingProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BingSmall")
+  @js.native
   val BingSmall: SFC[BingSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Block")
+  @js.native
   val Block: SFC[BlockProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BlockSmall")
+  @js.native
   val BlockSmall: SFC[BlockSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BonusGift")
+  @js.native
   val BonusGift: SFC[BonusGiftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BonusGiftSmall")
+  @js.native
   val BonusGiftSmall: SFC[BonusGiftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Bookmark")
+  @js.native
   val Bookmark: SFC[BookmarkProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BookmarkFilled")
+  @js.native
   val BookmarkFilled: SFC[BookmarkFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BookmarkFilledSmall")
+  @js.native
   val BookmarkFilledSmall: SFC[BookmarkFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BookmarkSmall")
+  @js.native
   val BookmarkSmall: SFC[BookmarkSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Bow")
+  @js.native
   val Bow: SFC[BowProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BowSmall")
+  @js.native
   val BowSmall: SFC[BowSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Brightness")
+  @js.native
   val Brightness: SFC[BrightnessProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "BrightnessSmall")
+  @js.native
   val BrightnessSmall: SFC[BrightnessSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CahtFilledSmall")
+  @js.native
   val CahtFilledSmall: SFC[CahtFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CancelOrder")
+  @js.native
   val CancelOrder: SFC[CancelOrderProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CancelOrderSmall")
+  @js.native
   val CancelOrderSmall: SFC[CancelOrderSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Cart")
+  @js.native
   val Cart: SFC[CartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CartSmall")
+  @js.native
   val CartSmall: SFC[CartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Category")
+  @js.native
   val Category: SFC[CategoryProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CategorySmall")
+  @js.native
   val CategorySmall: SFC[CategorySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Chat")
+  @js.native
   val Chat: SFC[ChatProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatDisabed")
+  @js.native
   val ChatDisabed: SFC[ChatDisabedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatDisabled")
+  @js.native
   val ChatDisabled: SFC[ChatDisabledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatDisabledSmall")
+  @js.native
   val ChatDisabledSmall: SFC[ChatDisabledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatFilled")
+  @js.native
   val ChatFilled: SFC[ChatFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatFilledSmall")
+  @js.native
   val ChatFilledSmall: SFC[ChatFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatReply")
+  @js.native
   val ChatReply: SFC[ChatReplyProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatReplySmall")
+  @js.native
   val ChatReplySmall: SFC[ChatReplySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChatSmall")
+  @js.native
   val ChatSmall: SFC[ChatSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Check")
+  @js.native
   val Check: SFC[CheckProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronDown")
+  @js.native
   val ChevronDown: SFC[ChevronDownProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronDownCircle")
+  @js.native
   val ChevronDownCircle: SFC[ChevronDownCircleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronDownCircleSmall")
+  @js.native
   val ChevronDownCircleSmall: SFC[ChevronDownCircleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronDownLarge")
+  @js.native
   val ChevronDownLarge: SFC[ChevronDownLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronDownLargeSmall")
+  @js.native
   val ChevronDownLargeSmall: SFC[ChevronDownLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronDownSmall")
+  @js.native
   val ChevronDownSmall: SFC[ChevronDownSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronLeft")
+  @js.native
   val ChevronLeft: SFC[ChevronLeftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronLeftCircle")
+  @js.native
   val ChevronLeftCircle: SFC[ChevronLeftCircleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronLeftCircleSmall")
+  @js.native
   val ChevronLeftCircleSmall: SFC[ChevronLeftCircleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronLeftLarge")
+  @js.native
   val ChevronLeftLarge: SFC[ChevronLeftLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronLeftLargeSmall")
+  @js.native
   val ChevronLeftLargeSmall: SFC[ChevronLeftLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronLeftSmall")
+  @js.native
   val ChevronLeftSmall: SFC[ChevronLeftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronRight")
+  @js.native
   val ChevronRight: SFC[ChevronRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronRightCircle")
+  @js.native
   val ChevronRightCircle: SFC[ChevronRightCircleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronRightCircleSmall")
+  @js.native
   val ChevronRightCircleSmall: SFC[ChevronRightCircleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronRightLarge")
+  @js.native
   val ChevronRightLarge: SFC[ChevronRightLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronRightLargeSmall")
+  @js.native
   val ChevronRightLargeSmall: SFC[ChevronRightLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronRightSmall")
+  @js.native
   val ChevronRightSmall: SFC[ChevronRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronUp")
+  @js.native
   val ChevronUp: SFC[ChevronUpProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronUpCircle")
+  @js.native
   val ChevronUpCircle: SFC[ChevronUpCircleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronUpCircleSmall")
+  @js.native
   val ChevronUpCircleSmall: SFC[ChevronUpCircleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronUpLarge")
+  @js.native
   val ChevronUpLarge: SFC[ChevronUpLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronUpLargeSmall")
+  @js.native
   val ChevronUpLargeSmall: SFC[ChevronUpLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ChevronUpSmall")
+  @js.native
   val ChevronUpSmall: SFC[ChevronUpSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CircleLarge")
+  @js.native
   val CircleLarge: SFC[CircleLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CircleLargeSmall")
+  @js.native
   val CircleLargeSmall: SFC[CircleLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CircleSmallFilled")
+  @js.native
   val CircleSmallFilled: SFC[CircleSmallFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CircleSmallFilledSmall")
+  @js.native
   val CircleSmallFilledSmall: SFC[CircleSmallFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Code")
+  @js.native
   val Code: SFC[CodeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CodeSmall")
+  @js.native
   val CodeSmall: SFC[CodeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Collections")
+  @js.native
   val Collections: SFC[CollectionsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CollectionsSmall")
+  @js.native
   val CollectionsSmall: SFC[CollectionsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ColorDrop")
+  @js.native
   val ColorDrop: SFC[ColorDropProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ColorDropSmall")
+  @js.native
   val ColorDropSmall: SFC[ColorDropSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Compose")
+  @js.native
   val Compose: SFC[ComposeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ComposeSmall")
+  @js.native
   val ComposeSmall: SFC[ComposeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Confirm")
+  @js.native
   val Confirm: SFC[ConfirmProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ConfirmSmall")
+  @js.native
   val ConfirmSmall: SFC[ConfirmSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ContentFilter")
+  @js.native
   val ContentFilter: SFC[ContentFilterProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ContentFilterSmall")
+  @js.native
   val ContentFilterSmall: SFC[ContentFilterSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Contrast")
+  @js.native
   val Contrast: SFC[ContrastProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ContrastSmall")
+  @js.native
   val ContrastSmall: SFC[ContrastSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Coupon")
+  @js.native
   val Coupon: SFC[CouponProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CouponSmall")
+  @js.native
   val CouponSmall: SFC[CouponSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Crop")
+  @js.native
   val Crop: SFC[CropProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CropRotate")
+  @js.native
   val CropRotate: SFC[CropRotateProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CropRotateSmall")
+  @js.native
   val CropRotateSmall: SFC[CropRotateSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CropSmall")
+  @js.native
   val CropSmall: SFC[CropSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CutOut")
+  @js.native
   val CutOut: SFC[CutOutProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CutOutSmall")
+  @js.native
   val CutOutSmall: SFC[CutOutSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Cutlery")
+  @js.native
   val Cutlery: SFC[CutleryProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "CutlerySmall")
+  @js.native
   val CutlerySmall: SFC[CutlerySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DataCollection")
+  @js.native
   val DataCollection: SFC[DataCollectionProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DataCollectionSmall")
+  @js.native
   val DataCollectionSmall: SFC[DataCollectionSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Database")
+  @js.native
   val Database: SFC[DatabaseProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DatabaseSmall")
+  @js.native
   val DatabaseSmall: SFC[DatabaseSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Date")
+  @js.native
   val Date: SFC[DateProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateAdd")
+  @js.native
   val DateAdd: SFC[DateAddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateAddSmall")
+  @js.native
   val DateAddSmall: SFC[DateAddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateAndTime")
+  @js.native
   val DateAndTime: SFC[DateAndTimeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateAndTimeSmall")
+  @js.native
   val DateAndTimeSmall: SFC[DateAndTimeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateChecked")
+  @js.native
   val DateChecked: SFC[DateCheckedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateCheckedSmall")
+  @js.native
   val DateCheckedSmall: SFC[DateCheckedSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DateSmall")
+  @js.native
   val DateSmall: SFC[DateSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Delete")
+  @js.native
   val Delete: SFC[DeleteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DeleteSmall")
+  @js.native
   val DeleteSmall: SFC[DeleteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Desktop")
+  @js.native
   val Desktop: SFC[DesktopProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DesktopSmall")
+  @js.native
   val DesktopSmall: SFC[DesktopSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Dismiss")
+  @js.native
   val Dismiss: SFC[DismissProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DismissSmall")
+  @js.native
   val DismissSmall: SFC[DismissSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeGlobe")
+  @js.native
   val DistributeGlobe: SFC[DistributeGlobeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeGlobeSmall")
+  @js.native
   val DistributeGlobeSmall: SFC[DistributeGlobeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeHorizontally")
+  @js.native
   val DistributeHorizontally: SFC[DistributeHorizontallyProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeHorizontallySmall")
+  @js.native
   val DistributeHorizontallySmall: SFC[DistributeHorizontallySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeSmall")
+  @js.native
   val DistributeSmall: SFC[DistributeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeVertically")
+  @js.native
   val DistributeVertically: SFC[DistributeVerticallyProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DistributeVerticallySmall")
+  @js.native
   val DistributeVerticallySmall: SFC[DistributeVerticallySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Divider")
+  @js.native
   val Divider: SFC[DividerProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DividerSmall")
+  @js.native
   val DividerSmall: SFC[DividerSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocDuplicate")
+  @js.native
   val DocDuplicate: SFC[DocDuplicateProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocExpire")
+  @js.native
   val DocExpire: SFC[DocExpireProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocExpireSmall")
+  @js.native
   val DocExpireSmall: SFC[DocExpireSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocMoveto")
+  @js.native
   val DocMoveto: SFC[DocMovetoProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocMovetoSmall")
+  @js.native
   val DocMovetoSmall: SFC[DocMovetoSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocSend")
+  @js.native
   val DocSend: SFC[DocSendProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocSendSmall")
+  @js.native
   val DocSendSmall: SFC[DocSendSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Document")
+  @js.native
   val Document: SFC[DocumentProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocumentExpire")
+  @js.native
   val DocumentExpire: SFC[DocumentExpireProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocumentExpireSmall")
+  @js.native
   val DocumentExpireSmall: SFC[DocumentExpireSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocumentSend")
+  @js.native
   val DocumentSend: SFC[DocumentSendProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocumentSendSmall")
+  @js.native
   val DocumentSendSmall: SFC[DocumentSendSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DocumentSmall")
+  @js.native
   val DocumentSmall: SFC[DocumentSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Download")
+  @js.native
   val Download: SFC[DownloadProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DownloadImport")
+  @js.native
   val DownloadImport: SFC[DownloadImportProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DownloadImportSmall")
+  @js.native
   val DownloadImportSmall: SFC[DownloadImportSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DropShadowBottom")
+  @js.native
   val DropShadowBottom: SFC[DropShadowBottomProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DropShadowBottomSmall")
+  @js.native
   val DropShadowBottomSmall: SFC[DropShadowBottomSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DropShadowLeft")
+  @js.native
   val DropShadowLeft: SFC[DropShadowLeftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DropShadowLeftSmall")
+  @js.native
   val DropShadowLeftSmall: SFC[DropShadowLeftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DropShadowRight")
+  @js.native
   val DropShadowRight: SFC[DropShadowRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DropShadowRightSmall")
+  @js.native
   val DropShadowRightSmall: SFC[DropShadowRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Duplicate")
+  @js.native
   val Duplicate: SFC[DuplicateProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "DuplicateSmall")
+  @js.native
   val DuplicateSmall: SFC[DuplicateSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Edit")
+  @js.native
   val Edit: SFC[EditProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EditSmall")
+  @js.native
   val EditSmall: SFC[EditSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Email")
+  @js.native
   val Email: SFC[EmailProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailAlert")
+  @js.native
   val EmailAlert: SFC[EmailAlertProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailAlertSmall")
+  @js.native
   val EmailAlertSmall: SFC[EmailAlertSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailClick")
+  @js.native
   val EmailClick: SFC[EmailClickProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailClickSmall")
+  @js.native
   val EmailClickSmall: SFC[EmailClickSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailFilled")
+  @js.native
   val EmailFilled: SFC[EmailFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailFilledSmall")
+  @js.native
   val EmailFilledSmall: SFC[EmailFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailOpen")
+  @js.native
   val EmailOpen: SFC[EmailOpenProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailOpenSmall")
+  @js.native
   val EmailOpenSmall: SFC[EmailOpenSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailSend")
+  @js.native
   val EmailSend: SFC[EmailSendProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailSendSmall")
+  @js.native
   val EmailSendSmall: SFC[EmailSendSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmailSmall")
+  @js.native
   val EmailSmall: SFC[EmailSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmptyTrash")
+  @js.native
   val EmptyTrash: SFC[EmptyTrashProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "EmptyTrashSmall")
+  @js.native
   val EmptyTrashSmall: SFC[EmptyTrashSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Exclude")
+  @js.native
   val Exclude: SFC[ExcludeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ExcludeSmall")
+  @js.native
   val ExcludeSmall: SFC[ExcludeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Exposure")
+  @js.native
   val Exposure: SFC[ExposureProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ExposureSmall")
+  @js.native
   val ExposureSmall: SFC[ExposureSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ExternalLink")
+  @js.native
   val ExternalLink: SFC[ExternalLinkProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ExternalLinkSmall")
+  @js.native
   val ExternalLinkSmall: SFC[ExternalLinkSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceDisapointed")
+  @js.native
   val FaceDisapointed: SFC[FaceDisapointedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceFemale")
+  @js.native
   val FaceFemale: SFC[FaceFemaleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceFemaleSmall")
+  @js.native
   val FaceFemaleSmall: SFC[FaceFemaleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceFrowning")
+  @js.native
   val FaceFrowning: SFC[FaceFrowningProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceGrining")
+  @js.native
   val FaceGrining: SFC[FaceGriningProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceNeutral")
+  @js.native
   val FaceNeutral: SFC[FaceNeutralProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaceSmiling")
+  @js.native
   val FaceSmiling: SFC[FaceSmilingProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Facebook")
+  @js.native
   val Facebook: SFC[FacebookProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FacebookSmall")
+  @js.native
   val FacebookSmall: SFC[FacebookSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Favorite")
+  @js.native
   val Favorite: SFC[FavoriteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FavoriteFilled")
+  @js.native
   val FavoriteFilled: SFC[FavoriteFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FavoriteFilledSmall")
+  @js.native
   val FavoriteFilledSmall: SFC[FavoriteFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FavoriteSmall")
+  @js.native
   val FavoriteSmall: SFC[FavoriteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Fax")
+  @js.native
   val Fax: SFC[FaxProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FaxSmall")
+  @js.native
   val FaxSmall: SFC[FaxSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FileDocumentSmall")
+  @js.native
   val FileDocumentSmall: SFC[FileDocumentSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FilterSmall")
+  @js.native
   val FilterSmall: SFC[FilterSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Filters")
+  @js.native
   val Filters: SFC[FiltersProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FiltersSmall")
+  @js.native
   val FiltersSmall: SFC[FiltersSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Flag")
+  @js.native
   val Flag: SFC[FlagProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FlagFilled")
+  @js.native
   val FlagFilled: SFC[FlagFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FlagFilledSmall")
+  @js.native
   val FlagFilledSmall: SFC[FlagFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FlagSmall")
+  @js.native
   val FlagSmall: SFC[FlagSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Folder")
+  @js.native
   val Folder: SFC[FolderProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FolderFind")
+  @js.native
   val FolderFind: SFC[FolderFindProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FolderFindSmall")
+  @js.native
   val FolderFindSmall: SFC[FolderFindSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FolderMove")
+  @js.native
   val FolderMove: SFC[FolderMoveProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FolderMoveSmall")
+  @js.native
   val FolderMoveSmall: SFC[FolderMoveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FolderSmall")
+  @js.native
   val FolderSmall: SFC[FolderSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FoodInStock")
+  @js.native
   val FoodInStock: SFC[FoodInStockProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FoodInStockSmall")
+  @js.native
   val FoodInStockSmall: SFC[FoodInStockSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FoodOutOfStock")
+  @js.native
   val FoodOutOfStock: SFC[FoodOutOfStockProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FoodOutOfStockSmall")
+  @js.native
   val FoodOutOfStockSmall: SFC[FoodOutOfStockSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Forward")
+  @js.native
   val Forward: SFC[ForwardProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ForwardSmall")
+  @js.native
   val ForwardSmall: SFC[ForwardSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FunnelChart")
+  @js.native
   val FunnelChart: SFC[FunnelChartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "FunnelChartSmall")
+  @js.native
   val FunnelChartSmall: SFC[FunnelChartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Gift")
+  @js.native
   val Gift: SFC[GiftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "GiftSmall")
+  @js.native
   val GiftSmall: SFC[GiftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "GitHub")
+  @js.native
   val GitHub: SFC[GitHubProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "GitHubSmall")
+  @js.native
   val GitHubSmall: SFC[GitHubSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Globe")
+  @js.native
   val Globe: SFC[GlobeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Google")
+  @js.native
   val Google: SFC[GoogleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "GoogleSmall")
+  @js.native
   val GoogleSmall: SFC[GoogleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Heart")
+  @js.native
   val Heart: SFC[HeartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HeartFilled")
+  @js.native
   val HeartFilled: SFC[HeartFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HeartFilledSmall")
+  @js.native
   val HeartFilledSmall: SFC[HeartFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HeartSmall")
+  @js.native
   val HeartSmall: SFC[HeartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HeatmapChart")
+  @js.native
   val HeatmapChart: SFC[HeatmapChartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HeatmapChartSmall")
+  @js.native
   val HeatmapChartSmall: SFC[HeatmapChartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Help")
+  @js.native
   val Help: SFC[HelpProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HelpCircle")
+  @js.native
   val HelpCircle: SFC[HelpCircleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HelpCircleSmall")
+  @js.native
   val HelpCircleSmall: SFC[HelpCircleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HelpSmall")
+  @js.native
   val HelpSmall: SFC[HelpSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Hidden")
+  @js.native
   val Hidden: SFC[HiddenProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HiddenSmall")
+  @js.native
   val HiddenSmall: SFC[HiddenSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Highlights")
+  @js.native
   val Highlights: SFC[HighlightsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HighlightsSmall")
+  @js.native
   val HighlightsSmall: SFC[HighlightsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Hint")
+  @js.native
   val Hint: SFC[HintProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HintSmall")
+  @js.native
   val HintSmall: SFC[HintSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Home")
+  @js.native
   val Home: SFC[HomeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HomeSmall")
+  @js.native
   val HomeSmall: SFC[HomeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HorizontalRatio")
+  @js.native
   val HorizontalRatio: SFC[HorizontalRatioProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HorizontalRatioChecked")
+  @js.native
   val HorizontalRatioChecked: SFC[HorizontalRatioCheckedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HorizontalRatioCheckedSmall")
+  @js.native
   val HorizontalRatioCheckedSmall: SFC[HorizontalRatioCheckedSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HorizontalRatioSmall")
+  @js.native
   val HorizontalRatioSmall: SFC[HorizontalRatioSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Hotel")
+  @js.native
   val Hotel: SFC[HotelProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "HotelSmall")
+  @js.native
   val HotelSmall: SFC[HotelSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Image")
+  @js.native
   val Image: SFC[ImageProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ImageSmall")
+  @js.native
   val ImageSmall: SFC[ImageSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "IndoorLight")
+  @js.native
   val IndoorLight: SFC[IndoorLightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "IndoorLightSmall")
+  @js.native
   val IndoorLightSmall: SFC[IndoorLightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Info")
+  @js.native
   val Info: SFC[InfoProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "InfoCircle")
+  @js.native
   val InfoCircle: SFC[InfoCircleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "InfoCircleSmall")
+  @js.native
   val InfoCircleSmall: SFC[InfoCircleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "InfoSmall")
+  @js.native
   val InfoSmall: SFC[InfoSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Instagram")
+  @js.native
   val Instagram: SFC[InstagramProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "InstagramSmall")
+  @js.native
   val InstagramSmall: SFC[InstagramSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Integrations")
+  @js.native
   val Integrations: SFC[IntegrationsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "IntegrationsSmall")
+  @js.native
   val IntegrationsSmall: SFC[IntegrationsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Intersect")
+  @js.native
   val Intersect: SFC[IntersectProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "IntersectSmall")
+  @js.native
   val IntersectSmall: SFC[IntersectSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Invoice")
+  @js.native
   val Invoice: SFC[InvoiceProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "InvoiceSmall")
+  @js.native
   val InvoiceSmall: SFC[InvoiceSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Languages")
+  @js.native
   val Languages: SFC[LanguagesProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LanguagesSmall")
+  @js.native
   val LanguagesSmall: SFC[LanguagesSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Layers")
+  @js.native
   val Layers: SFC[LayersProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayersSmall")
+  @js.native
   val LayersSmall: SFC[LayersSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutGallery")
+  @js.native
   val LayoutGallery: SFC[LayoutGalleryProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutGallerySmall")
+  @js.native
   val LayoutGallerySmall: SFC[LayoutGallerySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutGalleryWithPanel")
+  @js.native
   val LayoutGalleryWithPanel: SFC[LayoutGalleryWithPanelProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutGalleryWithPanelSmall")
+  @js.native
   val LayoutGalleryWithPanelSmall: SFC[LayoutGalleryWithPanelSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutList")
+  @js.native
   val LayoutList: SFC[LayoutListProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutListSmall")
+  @js.native
   val LayoutListSmall: SFC[LayoutListSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutListWithPanel")
+  @js.native
   val LayoutListWithPanel: SFC[LayoutListWithPanelProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LayoutListWithPanelSmall")
+  @js.native
   val LayoutListWithPanelSmall: SFC[LayoutListWithPanelSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LineChart")
+  @js.native
   val LineChart: SFC[LineChartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LineChartSmall")
+  @js.native
   val LineChartSmall: SFC[LineChartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LineChartSplit")
+  @js.native
   val LineChartSplit: SFC[LineChartSplitProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LineChartSplitSmall")
+  @js.native
   val LineChartSplitSmall: SFC[LineChartSplitSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Link")
+  @js.native
   val Link: SFC[LinkProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LinkSmall")
+  @js.native
   val LinkSmall: SFC[LinkSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LinkedIn")
+  @js.native
   val LinkedIn: SFC[LinkedInProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LinkedInSmall")
+  @js.native
   val LinkedInSmall: SFC[LinkedInSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "List")
+  @js.native
   val List: SFC[ListProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ListSmall")
+  @js.native
   val ListSmall: SFC[ListSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Location")
+  @js.native
   val Location: SFC[LocationProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LocationSmall")
+  @js.native
   val LocationSmall: SFC[LocationSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LockLocked")
+  @js.native
   val LockLocked: SFC[LockLockedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LockLockedSmall")
+  @js.native
   val LockLockedSmall: SFC[LockLockedSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LockUnlocked")
+  @js.native
   val LockUnlocked: SFC[LockUnlockedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LockUnlockedSmall")
+  @js.native
   val LockUnlockedSmall: SFC[LockUnlockedSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LowerCase")
+  @js.native
   val LowerCase: SFC[LowerCaseProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "LowerCaseSmall")
+  @js.native
   val LowerCaseSmall: SFC[LowerCaseSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MagicWand")
+  @js.native
   val MagicWand: SFC[MagicWandProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MagicWandSmall")
+  @js.native
   val MagicWandSmall: SFC[MagicWandSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Map")
+  @js.native
   val Map: SFC[MapProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MapSmall")
+  @js.native
   val MapSmall: SFC[MapSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Merge")
+  @js.native
   val Merge: SFC[MergeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MergeSmall")
+  @js.native
   val MergeSmall: SFC[MergeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Minus")
+  @js.native
   val Minus: SFC[MinusProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MinusSmall")
+  @js.native
   val MinusSmall: SFC[MinusSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MirrorHorizontal")
+  @js.native
   val MirrorHorizontal: SFC[MirrorHorizontalProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MirrorHorizontalSmall")
+  @js.native
   val MirrorHorizontalSmall: SFC[MirrorHorizontalSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MirrorVertical")
+  @js.native
   val MirrorVertical: SFC[MirrorVerticalProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MirrorVerticalSmall")
+  @js.native
   val MirrorVerticalSmall: SFC[MirrorVerticalSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Mobile")
+  @js.native
   val Mobile: SFC[MobileProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MobileSmall")
+  @js.native
   val MobileSmall: SFC[MobileSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ModalSmall")
+  @js.native
   val ModalSmall: SFC[ModalSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "More")
+  @js.native
   val More: SFC[MoreProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MoreSmall")
+  @js.native
   val MoreSmall: SFC[MoreSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MoveTo")
+  @js.native
   val MoveTo: SFC[MoveToProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MoveToSmall")
+  @js.native
   val MoveToSmall: SFC[MoveToSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MultipleChoices")
+  @js.native
   val MultipleChoices: SFC[MultipleChoicesProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MultipleChoicesSmall")
+  @js.native
   val MultipleChoicesSmall: SFC[MultipleChoicesSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Music")
+  @js.native
   val Music: SFC[MusicProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "MusicSmall")
+  @js.native
   val MusicSmall: SFC[MusicSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "NewFolder")
+  @js.native
   val NewFolder: SFC[NewFolderProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "NewFolderSmall")
+  @js.native
   val NewFolderSmall: SFC[NewFolderSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Note")
+  @js.native
   val Note: SFC[NoteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "NoteSmall")
+  @js.native
   val NoteSmall: SFC[NoteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Notification")
+  @js.native
   val Notification: SFC[NotificationProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "NotificationSmall")
+  @js.native
   val NotificationSmall: SFC[NotificationSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Number")
+  @js.native
   val Number: SFC[NumberProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "NumberSmall")
+  @js.native
   val NumberSmall: SFC[NumberSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Objects")
+  @js.native
   val Objects: SFC[ObjectsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ObjectsSmall")
+  @js.native
   val ObjectsSmall: SFC[ObjectsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "OpenModal")
+  @js.native
   val OpenModal: SFC[OpenModalProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "OpenModalSmall")
+  @js.native
   val OpenModalSmall: SFC[OpenModalSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Order")
+  @js.native
   val Order: SFC[OrderProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "OrderAdd")
+  @js.native
   val OrderAdd: SFC[OrderAddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "OrderAddSmall")
+  @js.native
   val OrderAddSmall: SFC[OrderAddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "OrderSmall")
+  @js.native
   val OrderSmall: SFC[OrderSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Overlay")
+  @js.native
   val Overlay: SFC[OverlayProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "OverlaySmall")
+  @js.native
   val OverlaySmall: SFC[OverlaySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Pause")
+  @js.native
   val Pause: SFC[PauseProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PauseFilled")
+  @js.native
   val PauseFilled: SFC[PauseFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PauseFilledSmall")
+  @js.native
   val PauseFilledSmall: SFC[PauseFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PauseSmall")
+  @js.native
   val PauseSmall: SFC[PauseSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Payment")
+  @js.native
   val Payment: SFC[PaymentProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PaymentSmall")
+  @js.native
   val PaymentSmall: SFC[PaymentSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PenNib")
+  @js.native
   val PenNib: SFC[PenNibProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PenNibAdd")
+  @js.native
   val PenNibAdd: SFC[PenNibAddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PenNibAddSmall")
+  @js.native
   val PenNibAddSmall: SFC[PenNibAddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PenNibSmall")
+  @js.native
   val PenNibSmall: SFC[PenNibSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Phone")
+  @js.native
   val Phone: SFC[PhoneProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PhoneFilled")
+  @js.native
   val PhoneFilled: SFC[PhoneFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PhoneFilledSmall")
+  @js.native
   val PhoneFilledSmall: SFC[PhoneFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PhoneSmall")
+  @js.native
   val PhoneSmall: SFC[PhoneSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PhotoCamera")
+  @js.native
   val PhotoCamera: SFC[PhotoCameraProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PhotoCameraSmall")
+  @js.native
   val PhotoCameraSmall: SFC[PhotoCameraSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PieChart")
+  @js.native
   val PieChart: SFC[PieChartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PieChartSmall")
+  @js.native
   val PieChartSmall: SFC[PieChartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Pin")
+  @js.native
   val Pin: SFC[PinProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PinSmall")
+  @js.native
   val PinSmall: SFC[PinSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Pinterest")
+  @js.native
   val Pinterest: SFC[PinterestProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PinterestSmall")
+  @js.native
   val PinterestSmall: SFC[PinterestSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Play")
+  @js.native
   val Play: SFC[PlayProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PlayFilled")
+  @js.native
   val PlayFilled: SFC[PlayFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PlayFilledSmall")
+  @js.native
   val PlayFilledSmall: SFC[PlayFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PlaySmall")
+  @js.native
   val PlaySmall: SFC[PlaySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Premium")
+  @js.native
   val Premium: SFC[PremiumProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PremiumSmall")
+  @js.native
   val PremiumSmall: SFC[PremiumSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Preview")
+  @js.native
   val Preview: SFC[PreviewProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PreviewSmall")
+  @js.native
   val PreviewSmall: SFC[PreviewSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Print")
+  @js.native
   val Print: SFC[PrintProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PrintSmall")
+  @js.native
   val PrintSmall: SFC[PrintSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Promote")
+  @js.native
   val Promote: SFC[PromoteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PromoteFilled")
+  @js.native
   val PromoteFilled: SFC[PromoteFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PromoteFilledSmall")
+  @js.native
   val PromoteFilledSmall: SFC[PromoteFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PromoteSmall")
+  @js.native
   val PromoteSmall: SFC[PromoteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Public")
+  @js.native
   val Public: SFC[PublicProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "PublicSmall")
+  @js.native
   val PublicSmall: SFC[PublicSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RectangleLarge")
+  @js.native
   val RectangleLarge: SFC[RectangleLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RectangleLargeSmall")
+  @js.native
   val RectangleLargeSmall: SFC[RectangleLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Redo")
+  @js.native
   val Redo: SFC[RedoProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RedoSmall")
+  @js.native
   val RedoSmall: SFC[RedoSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Refresh")
+  @js.native
   val Refresh: SFC[RefreshProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RefreshSmall")
+  @js.native
   val RefreshSmall: SFC[RefreshSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Refund")
+  @js.native
   val Refund: SFC[RefundProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RefundSmall")
+  @js.native
   val RefundSmall: SFC[RefundSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Rename")
+  @js.native
   val Rename: SFC[RenameProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RenameSmall")
+  @js.native
   val RenameSmall: SFC[RenameSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Replace")
+  @js.native
   val Replace: SFC[ReplaceProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ReplaceSmall")
+  @js.native
   val ReplaceSmall: SFC[ReplaceSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Revert")
+  @js.native
   val Revert: SFC[RevertProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RevertReset")
+  @js.native
   val RevertReset: SFC[RevertResetProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RevertSmall")
+  @js.native
   val RevertSmall: SFC[RevertSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RotateLeft")
+  @js.native
   val RotateLeft: SFC[RotateLeftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RotateLeftSmall")
+  @js.native
   val RotateLeftSmall: SFC[RotateLeftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RotateRight")
+  @js.native
   val RotateRight: SFC[RotateRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "RotateRightSmall")
+  @js.native
   val RotateRightSmall: SFC[RotateRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Scenery")
+  @js.native
   val Scenery: SFC[SceneryProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ScenerySmall")
+  @js.native
   val ScenerySmall: SFC[ScenerySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Search")
+  @js.native
   val Search: SFC[SearchProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SearchSmall")
+  @js.native
   val SearchSmall: SFC[SearchSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Send")
+  @js.native
   val Send: SFC[SendProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SendSmall")
+  @js.native
   val SendSmall: SFC[SendSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SentenceCase")
+  @js.native
   val SentenceCase: SFC[SentenceCaseProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SentenceCaseSmall")
+  @js.native
   val SentenceCaseSmall: SFC[SentenceCaseSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Settings")
+  @js.native
   val Settings: SFC[SettingsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SettingsSmall")
+  @js.native
   val SettingsSmall: SFC[SettingsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Shadows")
+  @js.native
   val Shadows: SFC[ShadowsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ShadowsSmall")
+  @js.native
   val ShadowsSmall: SFC[ShadowsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Share")
+  @js.native
   val Share: SFC[ShareProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ShareSmall")
+  @js.native
   val ShareSmall: SFC[ShareSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Sharpness")
+  @js.native
   val Sharpness: SFC[SharpnessProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SharpnessSmall")
+  @js.native
   val SharpnessSmall: SFC[SharpnessSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Site")
+  @js.native
   val Site: SFC[SiteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteAdd")
+  @js.native
   val SiteAdd: SFC[SiteAddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteAddSmall")
+  @js.native
   val SiteAddSmall: SFC[SiteAddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteDuplicate")
+  @js.native
   val SiteDuplicate: SFC[SiteDuplicateProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteDuplicateSmall")
+  @js.native
   val SiteDuplicateSmall: SFC[SiteDuplicateSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteMove")
+  @js.native
   val SiteMove: SFC[SiteMoveProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteMoveSmall")
+  @js.native
   val SiteMoveSmall: SFC[SiteMoveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteSearch")
+  @js.native
   val SiteSearch: SFC[SiteSearchProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteSearchSmall")
+  @js.native
   val SiteSearchSmall: SFC[SiteSearchSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SiteSmall")
+  @js.native
   val SiteSmall: SFC[SiteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SizeAndRatio")
+  @js.native
   val SizeAndRatio: SFC[SizeAndRatioProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SizeAndRatioSmall")
+  @js.native
   val SizeAndRatioSmall: SFC[SizeAndRatioSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Smile")
+  @js.native
   val Smile: SFC[SmileProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SmileSmall")
+  @js.native
   val SmileSmall: SFC[SmileSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortAZ")
+  @js.native
   val SortAZ: SFC[SortAZProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortAZSmall")
+  @js.native
   val SortAZSmall: SFC[SortAZSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortAscending")
+  @js.native
   val SortAscending: SFC[SortAscendingProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortAscendingSmall")
+  @js.native
   val SortAscendingSmall: SFC[SortAscendingSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortDescending")
+  @js.native
   val SortDescending: SFC[SortDescendingProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortDescendingSmall")
+  @js.native
   val SortDescendingSmall: SFC[SortDescendingSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortZA")
+  @js.native
   val SortZA: SFC[SortZAProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SortZASmall")
+  @js.native
   val SortZASmall: SFC[SortZASmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Sound")
+  @js.native
   val Sound: SFC[SoundProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SoundCloud")
+  @js.native
   val SoundCloud: SFC[SoundCloudProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SoundCloudSmall")
+  @js.native
   val SoundCloudSmall: SFC[SoundCloudSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SoundOff")
+  @js.native
   val SoundOff: SFC[SoundOffProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SoundOffSmall")
+  @js.native
   val SoundOffSmall: SFC[SoundOffSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SoundSmall")
+  @js.native
   val SoundSmall: SFC[SoundSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SquareRatio")
+  @js.native
   val SquareRatio: SFC[SquareRatioProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SquareRatioChecked")
+  @js.native
   val SquareRatioChecked: SFC[SquareRatioCheckedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SquareRatioCheckedSmall")
+  @js.native
   val SquareRatioCheckedSmall: SFC[SquareRatioCheckedSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SquareRatioSmall")
+  @js.native
   val SquareRatioSmall: SFC[SquareRatioSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Star")
+  @js.native
   val Star: SFC[StarProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StarFilled")
+  @js.native
   val StarFilled: SFC[StarFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Statistics")
+  @js.native
   val Statistics: SFC[StatisticsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatisticsSmall")
+  @js.native
   val StatisticsSmall: SFC[StatisticsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusAlert")
+  @js.native
   val StatusAlert: SFC[StatusAlertProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusAlertFilled")
+  @js.native
   val StatusAlertFilled: SFC[StatusAlertFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusAlertFilledSmall")
+  @js.native
   val StatusAlertFilledSmall: SFC[StatusAlertFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusAlertPlain")
+  @js.native
   val StatusAlertPlain: SFC[StatusAlertPlainProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusAlertPlainSmall")
+  @js.native
   val StatusAlertPlainSmall: SFC[StatusAlertPlainSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusAlertSmall")
+  @js.native
   val StatusAlertSmall: SFC[StatusAlertSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusComplete")
+  @js.native
   val StatusComplete: SFC[StatusCompleteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusCompleteFilled")
+  @js.native
   val StatusCompleteFilled: SFC[StatusCompleteFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusCompleteFilledSmall")
+  @js.native
   val StatusCompleteFilledSmall: SFC[StatusCompleteFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusCompleteSmall")
+  @js.native
   val StatusCompleteSmall: SFC[StatusCompleteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusCompletetFilled")
+  @js.native
   val StatusCompletetFilled: SFC[StatusCompletetFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusStop")
+  @js.native
   val StatusStop: SFC[StatusStopProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusStopFilled")
+  @js.native
   val StatusStopFilled: SFC[StatusStopFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusStopFilledSmall")
+  @js.native
   val StatusStopFilledSmall: SFC[StatusStopFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusStopSmall")
+  @js.native
   val StatusStopSmall: SFC[StatusStopSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusWarning")
+  @js.native
   val StatusWarning: SFC[StatusWarningProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusWarningFilled")
+  @js.native
   val StatusWarningFilled: SFC[StatusWarningFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusWarningFilledSmall")
+  @js.native
   val StatusWarningFilledSmall: SFC[StatusWarningFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StatusWarningSmall")
+  @js.native
   val StatusWarningSmall: SFC[StatusWarningSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Stop")
+  @js.native
   val Stop: SFC[StopProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StopFilled")
+  @js.native
   val StopFilled: SFC[StopFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StopFilledSmall")
+  @js.native
   val StopFilledSmall: SFC[StopFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "StopSmall")
+  @js.native
   val StopSmall: SFC[StopSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Substract")
+  @js.native
   val Substract: SFC[SubstractProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "SubstractSmall")
+  @js.native
   val SubstractSmall: SFC[SubstractSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TShirt")
+  @js.native
   val TShirt: SFC[TShirtProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TShirtSmall")
+  @js.native
   val TShirtSmall: SFC[TShirtSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TableChart")
+  @js.native
   val TableChart: SFC[TableChartProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TableChartSmall")
+  @js.native
   val TableChartSmall: SFC[TableChartSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Tag")
+  @js.native
   val Tag: SFC[TagProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TagSmall")
+  @js.native
   val TagSmall: SFC[TagSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TaskAdd")
+  @js.native
   val TaskAdd: SFC[TaskAddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TaskAddSmall")
+  @js.native
   val TaskAddSmall: SFC[TaskAddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TaskArchiveSmall")
+  @js.native
   val TaskArchiveSmall: SFC[TaskArchiveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TaskComplete")
+  @js.native
   val TaskComplete: SFC[TaskCompleteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TaskCompleteSmall")
+  @js.native
   val TaskCompleteSmall: SFC[TaskCompleteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Temperature")
+  @js.native
   val Temperature: SFC[TemperatureProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TemperatureSmall")
+  @js.native
   val TemperatureSmall: SFC[TemperatureSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Template")
+  @js.native
   val Template: SFC[TemplateProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TemplateSmall")
+  @js.native
   val TemplateSmall: SFC[TemplateSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextAlignCenter")
+  @js.native
   val TextAlignCenter: SFC[TextAlignCenterProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextAlignCenterSmall")
+  @js.native
   val TextAlignCenterSmall: SFC[TextAlignCenterSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextAlignLeft")
+  @js.native
   val TextAlignLeft: SFC[TextAlignLeftProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextAlignLeftSmall")
+  @js.native
   val TextAlignLeftSmall: SFC[TextAlignLeftSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextAlignRight")
+  @js.native
   val TextAlignRight: SFC[TextAlignRightProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextAlignRightSmall")
+  @js.native
   val TextAlignRightSmall: SFC[TextAlignRightSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextJustify")
+  @js.native
   val TextJustify: SFC[TextJustifyProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TextJustifySmall")
+  @js.native
   val TextJustifySmall: SFC[TextJustifySmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ThumbsUp")
+  @js.native
   val ThumbsUp: SFC[ThumbsUpProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ThumbsUpFilled")
+  @js.native
   val ThumbsUpFilled: SFC[ThumbsUpFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ThumbsUpFilledSmall")
+  @js.native
   val ThumbsUpFilledSmall: SFC[ThumbsUpFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ThumbsUpSmall")
+  @js.native
   val ThumbsUpSmall: SFC[ThumbsUpSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Time")
+  @js.native
   val Time: SFC[TimeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TimeSmall")
+  @js.native
   val TimeSmall: SFC[TimeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Toolbox")
+  @js.native
   val Toolbox: SFC[ToolboxProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ToolboxSmall")
+  @js.native
   val ToolboxSmall: SFC[ToolboxSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Transfer")
+  @js.native
   val Transfer: SFC[TransferProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TransferSmall")
+  @js.native
   val TransferSmall: SFC[TransferSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TransformSmall")
+  @js.native
   val TransformSmall: SFC[TransformSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TriangleLarge")
+  @js.native
   val TriangleLarge: SFC[TriangleLargeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TriangleLargeSmall")
+  @js.native
   val TriangleLargeSmall: SFC[TriangleLargeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Twitter")
+  @js.native
   val Twitter: SFC[TwitterProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "TwitterSmall")
+  @js.native
   val TwitterSmall: SFC[TwitterSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Unarchive")
+  @js.native
   val Unarchive: SFC[UnarchiveProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UnarchiveSmall")
+  @js.native
   val UnarchiveSmall: SFC[UnarchiveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Undo")
+  @js.native
   val Undo: SFC[UndoProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UndoSmall")
+  @js.native
   val UndoSmall: SFC[UndoSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Union")
+  @js.native
   val Union: SFC[UnionProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UnionSmall")
+  @js.native
   val UnionSmall: SFC[UnionSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Unlink")
+  @js.native
   val Unlink: SFC[UnlinkProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UnlinkSmall")
+  @js.native
   val UnlinkSmall: SFC[UnlinkSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Upload")
+  @js.native
   val Upload: SFC[UploadProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UploadExport")
+  @js.native
   val UploadExport: SFC[UploadExportProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UploadExportSmall")
+  @js.native
   val UploadExportSmall: SFC[UploadExportSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UpperCase")
+  @js.native
   val UpperCase: SFC[UpperCaseProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UpperCaseSmall")
+  @js.native
   val UpperCaseSmall: SFC[UpperCaseSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "User")
+  @js.native
   val User: SFC[UserProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserAdd")
+  @js.native
   val UserAdd: SFC[UserAddProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserAddSmall")
+  @js.native
   val UserAddSmall: SFC[UserAddSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserBlock")
+  @js.native
   val UserBlock: SFC[UserBlockProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserBlockSmall")
+  @js.native
   val UserBlockSmall: SFC[UserBlockSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserJoin")
+  @js.native
   val UserJoin: SFC[UserJoinProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserJoinSmall")
+  @js.native
   val UserJoinSmall: SFC[UserJoinSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserLeave")
+  @js.native
   val UserLeave: SFC[UserLeaveProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserLeaveSmall")
+  @js.native
   val UserLeaveSmall: SFC[UserLeaveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserRemove")
+  @js.native
   val UserRemove: SFC[UserRemoveProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserRemoveSmall")
+  @js.native
   val UserRemoveSmall: SFC[UserRemoveSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UserSmall")
+  @js.native
   val UserSmall: SFC[UserSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Users")
+  @js.native
   val Users: SFC[UsersProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "UsersSmall")
+  @js.native
   val UsersSmall: SFC[UsersSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VerticalRatio")
+  @js.native
   val VerticalRatio: SFC[VerticalRatioProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VerticalRatioChecked")
+  @js.native
   val VerticalRatioChecked: SFC[VerticalRatioCheckedProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VerticalRatioCheckedSmall")
+  @js.native
   val VerticalRatioCheckedSmall: SFC[VerticalRatioCheckedSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VerticalRatioSmall")
+  @js.native
   val VerticalRatioSmall: SFC[VerticalRatioSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VideoCamera")
+  @js.native
   val VideoCamera: SFC[VideoCameraProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VideoCameraSmall")
+  @js.native
   val VideoCameraSmall: SFC[VideoCameraSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Vignette")
+  @js.native
   val Vignette: SFC[VignetteProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VignetteSmall")
+  @js.native
   val VignetteSmall: SFC[VignetteSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VisibileHidden")
+  @js.native
   val VisibileHidden: SFC[VisibileHiddenProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Visible")
+  @js.native
   val Visible: SFC[VisibleProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VisibleSmall")
+  @js.native
   val VisibleSmall: SFC[VisibleSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Volume")
+  @js.native
   val Volume: SFC[VolumeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "VolumeSmall")
+  @js.native
   val VolumeSmall: SFC[VolumeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Whatsapp")
+  @js.native
   val Whatsapp: SFC[WhatsappProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WhatsappSmall")
+  @js.native
   val WhatsappSmall: SFC[WhatsappSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixChat")
+  @js.native
   val WixChat: SFC[WixChatProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixChatFilled")
+  @js.native
   val WixChatFilled: SFC[WixChatFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixChatFilledSmall")
+  @js.native
   val WixChatFilledSmall: SFC[WixChatFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixChatSmall")
+  @js.native
   val WixChatSmall: SFC[WixChatSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixForms")
+  @js.native
   val WixForms: SFC[WixFormsProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixFormsFilled")
+  @js.native
   val WixFormsFilled: SFC[WixFormsFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixFormsFilledSmall")
+  @js.native
   val WixFormsFilledSmall: SFC[WixFormsFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixFormsSmall")
+  @js.native
   val WixFormsSmall: SFC[WixFormsSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixMarketplace")
+  @js.native
   val WixMarketplace: SFC[WixMarketplaceProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "WixMarketplaceSmall")
+  @js.native
   val WixMarketplaceSmall: SFC[WixMarketplaceSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "X")
+  @js.native
   val X: SFC[XProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YandexEn")
+  @js.native
   val YandexEn: SFC[YandexEnProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YandexEnSmall")
+  @js.native
   val YandexEnSmall: SFC[YandexEnSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YandexRu")
+  @js.native
   val YandexRu: SFC[YandexRuProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YandexRuSmall")
+  @js.native
   val YandexRuSmall: SFC[YandexRuSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "Youtube")
+  @js.native
   val Youtube: SFC[YoutubeProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YoutubeFilled")
+  @js.native
   val YoutubeFilled: SFC[YoutubeFilledProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YoutubeFilledSmall")
+  @js.native
   val YoutubeFilledSmall: SFC[YoutubeFilledSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "YoutubeSmall")
+  @js.native
   val YoutubeSmall: SFC[YoutubeSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ZoomIn")
+  @js.native
   val ZoomIn: SFC[ZoomInProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ZoomInSmall")
+  @js.native
   val ZoomInSmall: SFC[ZoomInSmallProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ZoomOut")
+  @js.native
   val ZoomOut: SFC[ZoomOutProps] = js.native
   
+  @JSImport("wix-ui-icons-common/dist/src", "ZoomOutSmall")
+  @js.native
   val ZoomOutSmall: SFC[ZoomOutSmallProps] = js.native
 }

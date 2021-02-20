@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicPKCS8HexResult extends js.Object {
+trait PublicPKCS8HexResult extends StObject {
   
   /** hexadecimal string of OID of asymmetric key algorithm */
   var algoid: String = js.native
@@ -25,27 +26,15 @@ object PublicPKCS8HexResult {
   }
   
   @scala.inline
-  implicit class PublicPKCS8HexResultOps[Self <: PublicPKCS8HexResult] (val x: Self) extends AnyVal {
+  implicit class PublicPKCS8HexResultMutableBuilder[Self <: PublicPKCS8HexResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgparam(value: String): Self = StObject.set(x, "algparam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlgoid(value: String): Self = this.set("algoid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlgparam(value: String): Self = this.set("algparam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

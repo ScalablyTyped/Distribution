@@ -1,15 +1,15 @@
 package typings.httpStatusCodes.reasonPhrasesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReasonPhrases extends js.Object
+sealed trait ReasonPhrases extends StObject
 @JSImport("http-status-codes/build/cjs/reason-phrases", "ReasonPhrases")
 @js.native
-object ReasonPhrases extends js.Object {
+object ReasonPhrases extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ReasonPhrases with String] = js.native
@@ -21,8 +21,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait ACCEPTED extends ReasonPhrases
-  /* "Accepted" */ @js.native
-  object ACCEPTED extends TopLevel[ACCEPTED with String]
+  /* "Accepted" */ val ACCEPTED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.ACCEPTED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.3
@@ -31,8 +30,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait BAD_GATEWAY extends ReasonPhrases
-  /* "Bad Gateway" */ @js.native
-  object BAD_GATEWAY extends TopLevel[BAD_GATEWAY with String]
+  /* "Bad Gateway" */ val BAD_GATEWAY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.BAD_GATEWAY with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.1
@@ -41,8 +39,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait BAD_REQUEST extends ReasonPhrases
-  /* "Bad Request" */ @js.native
-  object BAD_REQUEST extends TopLevel[BAD_REQUEST with String]
+  /* "Bad Request" */ val BAD_REQUEST: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.BAD_REQUEST with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.8
@@ -51,8 +48,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait CONFLICT extends ReasonPhrases
-  /* "Conflict" */ @js.native
-  object CONFLICT extends TopLevel[CONFLICT with String]
+  /* "Conflict" */ val CONFLICT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.CONFLICT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.2.1
@@ -61,8 +57,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait CONTINUE extends ReasonPhrases
-  /* "Continue" */ @js.native
-  object CONTINUE extends TopLevel[CONTINUE with String]
+  /* "Continue" */ val CONTINUE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.CONTINUE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.2
@@ -71,8 +66,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait CREATED extends ReasonPhrases
-  /* "Created" */ @js.native
-  object CREATED extends TopLevel[CREATED with String]
+  /* "Created" */ val CREATED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.CREATED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.14
@@ -81,8 +75,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait EXPECTATION_FAILED extends ReasonPhrases
-  /* "Expectation Failed" */ @js.native
-  object EXPECTATION_FAILED extends TopLevel[EXPECTATION_FAILED with String]
+  /* "Expectation Failed" */ val EXPECTATION_FAILED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.EXPECTATION_FAILED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.5
@@ -91,8 +84,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait FAILED_DEPENDENCY extends ReasonPhrases
-  /* "Failed Dependency" */ @js.native
-  object FAILED_DEPENDENCY extends TopLevel[FAILED_DEPENDENCY with String]
+  /* "Failed Dependency" */ val FAILED_DEPENDENCY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.FAILED_DEPENDENCY with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.3
@@ -101,8 +93,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait FORBIDDEN extends ReasonPhrases
-  /* "Forbidden" */ @js.native
-  object FORBIDDEN extends TopLevel[FORBIDDEN with String]
+  /* "Forbidden" */ val FORBIDDEN: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.FORBIDDEN with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.5
@@ -111,8 +102,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait GATEWAY_TIMEOUT extends ReasonPhrases
-  /* "Gateway Timeout" */ @js.native
-  object GATEWAY_TIMEOUT extends TopLevel[GATEWAY_TIMEOUT with String]
+  /* "Gateway Timeout" */ val GATEWAY_TIMEOUT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.GATEWAY_TIMEOUT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.9
@@ -121,8 +111,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait GONE extends ReasonPhrases
-  /* "Gone" */ @js.native
-  object GONE extends TopLevel[GONE with String]
+  /* "Gone" */ val GONE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.GONE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.6
@@ -131,8 +120,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait HTTP_VERSION_NOT_SUPPORTED extends ReasonPhrases
-  /* "HTTP Version Not Supported" */ @js.native
-  object HTTP_VERSION_NOT_SUPPORTED extends TopLevel[HTTP_VERSION_NOT_SUPPORTED with String]
+  /* "HTTP Version Not Supported" */ val HTTP_VERSION_NOT_SUPPORTED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.HTTP_VERSION_NOT_SUPPORTED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2324#section-2.3.2
@@ -141,8 +129,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait IM_A_TEAPOT extends ReasonPhrases
-  /* "I'm a teapot" */ @js.native
-  object IM_A_TEAPOT extends TopLevel[IM_A_TEAPOT with String]
+  /* "I'm a teapot" */ val IM_A_TEAPOT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.IM_A_TEAPOT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.6
@@ -151,8 +138,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait INSUFFICIENT_SPACE_ON_RESOURCE extends ReasonPhrases
-  /* "Insufficient Space on Resource" */ @js.native
-  object INSUFFICIENT_SPACE_ON_RESOURCE extends TopLevel[INSUFFICIENT_SPACE_ON_RESOURCE with String]
+  /* "Insufficient Space on Resource" */ val INSUFFICIENT_SPACE_ON_RESOURCE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.INSUFFICIENT_SPACE_ON_RESOURCE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.6
@@ -161,8 +147,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait INSUFFICIENT_STORAGE extends ReasonPhrases
-  /* "Insufficient Storage" */ @js.native
-  object INSUFFICIENT_STORAGE extends TopLevel[INSUFFICIENT_STORAGE with String]
+  /* "Insufficient Storage" */ val INSUFFICIENT_STORAGE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.INSUFFICIENT_STORAGE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.1
@@ -171,8 +156,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait INTERNAL_SERVER_ERROR extends ReasonPhrases
-  /* "Internal Server Error" */ @js.native
-  object INTERNAL_SERVER_ERROR extends TopLevel[INTERNAL_SERVER_ERROR with String]
+  /* "Internal Server Error" */ val INTERNAL_SERVER_ERROR: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.INTERNAL_SERVER_ERROR with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.10
@@ -181,8 +165,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait LENGTH_REQUIRED extends ReasonPhrases
-  /* "Length Required" */ @js.native
-  object LENGTH_REQUIRED extends TopLevel[LENGTH_REQUIRED with String]
+  /* "Length Required" */ val LENGTH_REQUIRED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.LENGTH_REQUIRED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.4
@@ -191,8 +174,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait LOCKED extends ReasonPhrases
-  /* "Locked" */ @js.native
-  object LOCKED extends TopLevel[LOCKED with String]
+  /* "Locked" */ val LOCKED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.LOCKED with String = js.native
   
   /**
     * @deprecated
@@ -202,8 +184,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait METHOD_FAILURE extends ReasonPhrases
-  /* "Method Failure" */ @js.native
-  object METHOD_FAILURE extends TopLevel[METHOD_FAILURE with String]
+  /* "Method Failure" */ val METHOD_FAILURE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.METHOD_FAILURE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.5
@@ -212,8 +193,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait METHOD_NOT_ALLOWED extends ReasonPhrases
-  /* "Method Not Allowed" */ @js.native
-  object METHOD_NOT_ALLOWED extends TopLevel[METHOD_NOT_ALLOWED with String]
+  /* "Method Not Allowed" */ val METHOD_NOT_ALLOWED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.METHOD_NOT_ALLOWED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.2
@@ -222,8 +202,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait MOVED_PERMANENTLY extends ReasonPhrases
-  /* "Moved Permanently" */ @js.native
-  object MOVED_PERMANENTLY extends TopLevel[MOVED_PERMANENTLY with String]
+  /* "Moved Permanently" */ val MOVED_PERMANENTLY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MOVED_PERMANENTLY with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.3
@@ -232,8 +211,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait MOVED_TEMPORARILY extends ReasonPhrases
-  /* "Moved Temporarily" */ @js.native
-  object MOVED_TEMPORARILY extends TopLevel[MOVED_TEMPORARILY with String]
+  /* "Moved Temporarily" */ val MOVED_TEMPORARILY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MOVED_TEMPORARILY with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.1
@@ -242,8 +220,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait MULTIPLE_CHOICES extends ReasonPhrases
-  /* "Multiple Choices" */ @js.native
-  object MULTIPLE_CHOICES extends TopLevel[MULTIPLE_CHOICES with String]
+  /* "Multiple Choices" */ val MULTIPLE_CHOICES: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MULTIPLE_CHOICES with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.2
@@ -252,8 +229,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait MULTI_STATUS extends ReasonPhrases
-  /* "Multi-Status" */ @js.native
-  object MULTI_STATUS extends TopLevel[MULTI_STATUS with String]
+  /* "Multi-Status" */ val MULTI_STATUS: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MULTI_STATUS with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-6
@@ -262,8 +238,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NETWORK_AUTHENTICATION_REQUIRED extends ReasonPhrases
-  /* "Network Authentication Required" */ @js.native
-  object NETWORK_AUTHENTICATION_REQUIRED extends TopLevel[NETWORK_AUTHENTICATION_REQUIRED with String]
+  /* "Network Authentication Required" */ val NETWORK_AUTHENTICATION_REQUIRED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NETWORK_AUTHENTICATION_REQUIRED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.4
@@ -272,8 +247,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NON_AUTHORITATIVE_INFORMATION extends ReasonPhrases
-  /* "Non Authoritative Information" */ @js.native
-  object NON_AUTHORITATIVE_INFORMATION extends TopLevel[NON_AUTHORITATIVE_INFORMATION with String]
+  /* "Non Authoritative Information" */ val NON_AUTHORITATIVE_INFORMATION: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NON_AUTHORITATIVE_INFORMATION with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.6
@@ -282,8 +256,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NOT_ACCEPTABLE extends ReasonPhrases
-  /* "Not Acceptable" */ @js.native
-  object NOT_ACCEPTABLE extends TopLevel[NOT_ACCEPTABLE with String]
+  /* "Not Acceptable" */ val NOT_ACCEPTABLE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NOT_ACCEPTABLE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.4
@@ -292,8 +265,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NOT_FOUND extends ReasonPhrases
-  /* "Not Found" */ @js.native
-  object NOT_FOUND extends TopLevel[NOT_FOUND with String]
+  /* "Not Found" */ val NOT_FOUND: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NOT_FOUND with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.2
@@ -302,8 +274,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NOT_IMPLEMENTED extends ReasonPhrases
-  /* "Not Implemented" */ @js.native
-  object NOT_IMPLEMENTED extends TopLevel[NOT_IMPLEMENTED with String]
+  /* "Not Implemented" */ val NOT_IMPLEMENTED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NOT_IMPLEMENTED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7232#section-4.1
@@ -312,8 +283,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NOT_MODIFIED extends ReasonPhrases
-  /* "Not Modified" */ @js.native
-  object NOT_MODIFIED extends TopLevel[NOT_MODIFIED with String]
+  /* "Not Modified" */ val NOT_MODIFIED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NOT_MODIFIED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.5
@@ -322,8 +292,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait NO_CONTENT extends ReasonPhrases
-  /* "No Content" */ @js.native
-  object NO_CONTENT extends TopLevel[NO_CONTENT with String]
+  /* "No Content" */ val NO_CONTENT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.NO_CONTENT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.1
@@ -336,8 +305,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait OK extends ReasonPhrases
-  /* "OK" */ @js.native
-  object OK extends TopLevel[OK with String]
+  /* "OK" */ val OK: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.OK with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7233#section-4.1
@@ -346,8 +314,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PARTIAL_CONTENT extends ReasonPhrases
-  /* "Partial Content" */ @js.native
-  object PARTIAL_CONTENT extends TopLevel[PARTIAL_CONTENT with String]
+  /* "Partial Content" */ val PARTIAL_CONTENT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PARTIAL_CONTENT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.2
@@ -356,8 +323,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PAYMENT_REQUIRED extends ReasonPhrases
-  /* "Payment Required" */ @js.native
-  object PAYMENT_REQUIRED extends TopLevel[PAYMENT_REQUIRED with String]
+  /* "Payment Required" */ val PAYMENT_REQUIRED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PAYMENT_REQUIRED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7538#section-3
@@ -366,8 +332,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PERMANENT_REDIRECT extends ReasonPhrases
-  /* "Permanent Redirect" */ @js.native
-  object PERMANENT_REDIRECT extends TopLevel[PERMANENT_REDIRECT with String]
+  /* "Permanent Redirect" */ val PERMANENT_REDIRECT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PERMANENT_REDIRECT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7232#section-4.2
@@ -376,8 +341,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PRECONDITION_FAILED extends ReasonPhrases
-  /* "Precondition Failed" */ @js.native
-  object PRECONDITION_FAILED extends TopLevel[PRECONDITION_FAILED with String]
+  /* "Precondition Failed" */ val PRECONDITION_FAILED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PRECONDITION_FAILED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-3
@@ -386,8 +350,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PRECONDITION_REQUIRED extends ReasonPhrases
-  /* "Precondition Required" */ @js.native
-  object PRECONDITION_REQUIRED extends TopLevel[PRECONDITION_REQUIRED with String]
+  /* "Precondition Required" */ val PRECONDITION_REQUIRED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PRECONDITION_REQUIRED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.1
@@ -396,8 +359,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PROCESSING extends ReasonPhrases
-  /* "Processing" */ @js.native
-  object PROCESSING extends TopLevel[PROCESSING with String]
+  /* "Processing" */ val PROCESSING: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PROCESSING with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7235#section-3.2
@@ -406,8 +368,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait PROXY_AUTHENTICATION_REQUIRED extends ReasonPhrases
-  /* "Proxy Authentication Required" */ @js.native
-  object PROXY_AUTHENTICATION_REQUIRED extends TopLevel[PROXY_AUTHENTICATION_REQUIRED with String]
+  /* "Proxy Authentication Required" */ val PROXY_AUTHENTICATION_REQUIRED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.PROXY_AUTHENTICATION_REQUIRED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7233#section-4.4
@@ -416,8 +377,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait REQUESTED_RANGE_NOT_SATISFIABLE extends ReasonPhrases
-  /* "Requested Range Not Satisfiable" */ @js.native
-  object REQUESTED_RANGE_NOT_SATISFIABLE extends TopLevel[REQUESTED_RANGE_NOT_SATISFIABLE with String]
+  /* "Requested Range Not Satisfiable" */ val REQUESTED_RANGE_NOT_SATISFIABLE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.REQUESTED_RANGE_NOT_SATISFIABLE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-5
@@ -426,8 +386,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait REQUEST_HEADER_FIELDS_TOO_LARGE extends ReasonPhrases
-  /* "Request Header Fields Too Large" */ @js.native
-  object REQUEST_HEADER_FIELDS_TOO_LARGE extends TopLevel[REQUEST_HEADER_FIELDS_TOO_LARGE with String]
+  /* "Request Header Fields Too Large" */ val REQUEST_HEADER_FIELDS_TOO_LARGE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.REQUEST_HEADER_FIELDS_TOO_LARGE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.7
@@ -436,8 +395,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait REQUEST_TIMEOUT extends ReasonPhrases
-  /* "Request Timeout" */ @js.native
-  object REQUEST_TIMEOUT extends TopLevel[REQUEST_TIMEOUT with String]
+  /* "Request Timeout" */ val REQUEST_TIMEOUT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.REQUEST_TIMEOUT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.11
@@ -446,8 +404,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait REQUEST_TOO_LONG extends ReasonPhrases
-  /* "Request Entity Too Large" */ @js.native
-  object REQUEST_TOO_LONG extends TopLevel[REQUEST_TOO_LONG with String]
+  /* "Request Entity Too Large" */ val REQUEST_TOO_LONG: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.REQUEST_TOO_LONG with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.12
@@ -456,8 +413,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait REQUEST_URI_TOO_LONG extends ReasonPhrases
-  /* "Request-URI Too Long" */ @js.native
-  object REQUEST_URI_TOO_LONG extends TopLevel[REQUEST_URI_TOO_LONG with String]
+  /* "Request-URI Too Long" */ val REQUEST_URI_TOO_LONG: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.REQUEST_URI_TOO_LONG with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.6
@@ -466,8 +422,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait RESET_CONTENT extends ReasonPhrases
-  /* "Reset Content" */ @js.native
-  object RESET_CONTENT extends TopLevel[RESET_CONTENT with String]
+  /* "Reset Content" */ val RESET_CONTENT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.RESET_CONTENT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.4
@@ -476,8 +431,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait SEE_OTHER extends ReasonPhrases
-  /* "See Other" */ @js.native
-  object SEE_OTHER extends TopLevel[SEE_OTHER with String]
+  /* "See Other" */ val SEE_OTHER: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.SEE_OTHER with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.4
@@ -486,8 +440,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait SERVICE_UNAVAILABLE extends ReasonPhrases
-  /* "Service Unavailable" */ @js.native
-  object SERVICE_UNAVAILABLE extends TopLevel[SERVICE_UNAVAILABLE with String]
+  /* "Service Unavailable" */ val SERVICE_UNAVAILABLE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.SERVICE_UNAVAILABLE with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.2.2
@@ -496,8 +449,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait SWITCHING_PROTOCOLS extends ReasonPhrases
-  /* "Switching Protocols" */ @js.native
-  object SWITCHING_PROTOCOLS extends TopLevel[SWITCHING_PROTOCOLS with String]
+  /* "Switching Protocols" */ val SWITCHING_PROTOCOLS: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.SWITCHING_PROTOCOLS with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.7
@@ -506,8 +458,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait TEMPORARY_REDIRECT extends ReasonPhrases
-  /* "Temporary Redirect" */ @js.native
-  object TEMPORARY_REDIRECT extends TopLevel[TEMPORARY_REDIRECT with String]
+  /* "Temporary Redirect" */ val TEMPORARY_REDIRECT: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.TEMPORARY_REDIRECT with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-4
@@ -516,8 +467,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait TOO_MANY_REQUESTS extends ReasonPhrases
-  /* "Too Many Requests" */ @js.native
-  object TOO_MANY_REQUESTS extends TopLevel[TOO_MANY_REQUESTS with String]
+  /* "Too Many Requests" */ val TOO_MANY_REQUESTS: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.TOO_MANY_REQUESTS with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7235#section-3.1
@@ -526,8 +476,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait UNAUTHORIZED extends ReasonPhrases
-  /* "Unauthorized" */ @js.native
-  object UNAUTHORIZED extends TopLevel[UNAUTHORIZED with String]
+  /* "Unauthorized" */ val UNAUTHORIZED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.UNAUTHORIZED with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7725
@@ -536,8 +485,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait UNAVAILABLE_FOR_LEGAL_REASONS extends ReasonPhrases
-  /* "Unavailable For Legal Reasons" */ @js.native
-  object UNAVAILABLE_FOR_LEGAL_REASONS extends TopLevel[UNAVAILABLE_FOR_LEGAL_REASONS with String]
+  /* "Unavailable For Legal Reasons" */ val UNAVAILABLE_FOR_LEGAL_REASONS: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.UNAVAILABLE_FOR_LEGAL_REASONS with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.3
@@ -546,8 +494,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait UNPROCESSABLE_ENTITY extends ReasonPhrases
-  /* "Unprocessable Entity" */ @js.native
-  object UNPROCESSABLE_ENTITY extends TopLevel[UNPROCESSABLE_ENTITY with String]
+  /* "Unprocessable Entity" */ val UNPROCESSABLE_ENTITY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.UNPROCESSABLE_ENTITY with String = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.13
@@ -556,8 +503,7 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait UNSUPPORTED_MEDIA_TYPE extends ReasonPhrases
-  /* "Unsupported Media Type" */ @js.native
-  object UNSUPPORTED_MEDIA_TYPE extends TopLevel[UNSUPPORTED_MEDIA_TYPE with String]
+  /* "Unsupported Media Type" */ val UNSUPPORTED_MEDIA_TYPE: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.UNSUPPORTED_MEDIA_TYPE with String = js.native
   
   /**
     * @deprecated
@@ -567,6 +513,5 @@ object ReasonPhrases extends js.Object {
     */
   @js.native
   sealed trait USE_PROXY extends ReasonPhrases
-  /* "Use Proxy" */ @js.native
-  object USE_PROXY extends TopLevel[USE_PROXY with String]
+  /* "Use Proxy" */ val USE_PROXY: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.USE_PROXY with String = js.native
 }

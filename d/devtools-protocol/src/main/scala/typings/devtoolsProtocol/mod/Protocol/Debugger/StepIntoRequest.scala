@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepIntoRequest extends js.Object {
+trait StepIntoRequest extends StObject {
   
   /**
     * Debugger will pause on the execution of the first async task which was scheduled
@@ -27,33 +28,21 @@ object StepIntoRequest {
   }
   
   @scala.inline
-  implicit class StepIntoRequestOps[Self <: StepIntoRequest] (val x: Self) extends AnyVal {
+  implicit class StepIntoRequestMutableBuilder[Self <: StepIntoRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakOnAsyncCall(value: Boolean): Self = StObject.set(x, "breakOnAsyncCall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakOnAsyncCallUndefined: Self = StObject.set(x, "breakOnAsyncCall", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipList(value: js.Array[LocationRange]): Self = StObject.set(x, "skipList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakOnAsyncCall(value: Boolean): Self = this.set("breakOnAsyncCall", value.asInstanceOf[js.Any])
+    def setSkipListUndefined: Self = StObject.set(x, "skipList", js.undefined)
     
     @scala.inline
-    def deleteBreakOnAsyncCall: Self = this.set("breakOnAsyncCall", js.undefined)
-    
-    @scala.inline
-    def setSkipListVarargs(value: LocationRange*): Self = this.set("skipList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkipList(value: js.Array[LocationRange]): Self = this.set("skipList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipList: Self = this.set("skipList", js.undefined)
+    def setSkipListVarargs(value: LocationRange*): Self = StObject.set(x, "skipList", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An event describing a message sent/received between Spans.
   */
 @js.native
-trait SchemaMessageEvent extends js.Object {
+trait SchemaMessageEvent extends StObject {
   
   /**
     * The number of compressed bytes sent or received. If missing assumed to be
@@ -42,42 +43,30 @@ object SchemaMessageEvent {
   }
   
   @scala.inline
-  implicit class SchemaMessageEventOps[Self <: SchemaMessageEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaMessageEventMutableBuilder[Self <: SchemaMessageEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressedSizeBytes(value: String): Self = StObject.set(x, "compressedSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressedSizeBytesUndefined: Self = StObject.set(x, "compressedSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressedSizeBytes(value: String): Self = this.set("compressedSizeBytes", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCompressedSizeBytes: Self = this.set("compressedSizeBytes", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setUncompressedSizeBytes(value: String): Self = StObject.set(x, "uncompressedSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUncompressedSizeBytes(value: String): Self = this.set("uncompressedSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUncompressedSizeBytes: Self = this.set("uncompressedSizeBytes", js.undefined)
+    def setUncompressedSizeBytesUndefined: Self = StObject.set(x, "uncompressedSizeBytes", js.undefined)
   }
 }

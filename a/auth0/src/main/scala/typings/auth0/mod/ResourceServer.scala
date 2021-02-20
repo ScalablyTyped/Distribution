@@ -5,12 +5,13 @@ import typings.auth0.auth0Strings.HS256
 import typings.auth0.auth0Strings.RS256
 import typings.auth0.auth0Strings.access_token
 import typings.auth0.auth0Strings.access_token_authz
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceServer extends js.Object {
+trait ResourceServer extends StObject {
   
   /**
     * Allows issuance of refresh tokens for this entity.
@@ -78,93 +79,81 @@ object ResourceServer {
   }
   
   @scala.inline
-  implicit class ResourceServerOps[Self <: ResourceServer] (val x: Self) extends AnyVal {
+  implicit class ResourceServerMutableBuilder[Self <: ResourceServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_offline_access(value: Boolean): Self = StObject.set(x, "allow_offline_access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_offline_accessUndefined: Self = StObject.set(x, "allow_offline_access", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnforce_policies(value: Boolean): Self = StObject.set(x, "enforce_policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_offline_access(value: Boolean): Self = this.set("allow_offline_access", value.asInstanceOf[js.Any])
+    def setEnforce_policiesUndefined: Self = StObject.set(x, "enforce_policies", js.undefined)
     
     @scala.inline
-    def deleteAllow_offline_access: Self = this.set("allow_offline_access", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforce_policies(value: Boolean): Self = this.set("enforce_policies", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnforce_policies: Self = this.set("enforce_policies", js.undefined)
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setScopes(value: js.Array[Description]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScopesVarargs(value: Description*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
     @scala.inline
-    def setScopesVarargs(value: Description*): Self = this.set("scopes", js.Array(value :_*))
+    def setSigning_alg(value: HS256 | RS256): Self = StObject.set(x, "signing_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopes(value: js.Array[Description]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    def setSigning_algUndefined: Self = StObject.set(x, "signing_alg", js.undefined)
     
     @scala.inline
-    def deleteScopes: Self = this.set("scopes", js.undefined)
+    def setSigning_secret(value: String): Self = StObject.set(x, "signing_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigning_alg(value: HS256 | RS256): Self = this.set("signing_alg", value.asInstanceOf[js.Any])
+    def setSigning_secretUndefined: Self = StObject.set(x, "signing_secret", js.undefined)
     
     @scala.inline
-    def deleteSigning_alg: Self = this.set("signing_alg", js.undefined)
+    def setSkip_consent_for_verifiable_first_party_clients(value: Boolean): Self = StObject.set(x, "skip_consent_for_verifiable_first_party_clients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigning_secret(value: String): Self = this.set("signing_secret", value.asInstanceOf[js.Any])
+    def setSkip_consent_for_verifiable_first_party_clientsUndefined: Self = StObject.set(x, "skip_consent_for_verifiable_first_party_clients", js.undefined)
     
     @scala.inline
-    def deleteSigning_secret: Self = this.set("signing_secret", js.undefined)
+    def setToken_dialect(value: access_token | access_token_authz): Self = StObject.set(x, "token_dialect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip_consent_for_verifiable_first_party_clients(value: Boolean): Self = this.set("skip_consent_for_verifiable_first_party_clients", value.asInstanceOf[js.Any])
+    def setToken_dialectUndefined: Self = StObject.set(x, "token_dialect", js.undefined)
     
     @scala.inline
-    def deleteSkip_consent_for_verifiable_first_party_clients: Self = this.set("skip_consent_for_verifiable_first_party_clients", js.undefined)
+    def setToken_lifetime(value: Double): Self = StObject.set(x, "token_lifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_dialect(value: access_token | access_token_authz): Self = this.set("token_dialect", value.asInstanceOf[js.Any])
+    def setToken_lifetimeUndefined: Self = StObject.set(x, "token_lifetime", js.undefined)
     
     @scala.inline
-    def deleteToken_dialect: Self = this.set("token_dialect", js.undefined)
+    def setToken_lifetime_for_web(value: Double): Self = StObject.set(x, "token_lifetime_for_web", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_lifetime(value: Double): Self = this.set("token_lifetime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken_lifetime: Self = this.set("token_lifetime", js.undefined)
-    
-    @scala.inline
-    def setToken_lifetime_for_web(value: Double): Self = this.set("token_lifetime_for_web", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken_lifetime_for_web: Self = this.set("token_lifetime_for_web", js.undefined)
+    def setToken_lifetime_for_webUndefined: Self = StObject.set(x, "token_lifetime_for_web", js.undefined)
   }
 }

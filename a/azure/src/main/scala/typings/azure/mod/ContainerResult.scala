@@ -1,12 +1,13 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "ContainerResult")
 @js.native
-class ContainerResult () extends js.Object {
+class ContainerResult () extends StObject {
   def this(name: String) = this()
   def this(name: String, publicAccessLevel: String) = this()
   
@@ -33,9 +34,9 @@ class ContainerResult () extends js.Object {
   var signedIdentifiers: js.Array[SignedIdentifier] = js.native
 }
 /* static members */
-@JSImport("azure", "ContainerResult")
-@js.native
-object ContainerResult extends js.Object {
+object ContainerResult {
   
+  @JSImport("azure", "ContainerResult.parse")
+  @js.native
   def parse(containerXml: js.Any): ContainerResult = js.native
 }

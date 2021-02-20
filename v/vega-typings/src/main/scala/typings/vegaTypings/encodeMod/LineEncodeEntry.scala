@@ -1,6 +1,7 @@
 package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.anon.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object LineEncodeEntry {
   }
   
   @scala.inline
-  implicit class LineEncodeEntryOps[Self <: LineEncodeEntry] (val x: Self) extends AnyVal {
+  implicit class LineEncodeEntryMutableBuilder[Self <: LineEncodeEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpolate(value: ProductionRule[ScaledValueRef[Interpolate]]): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterpolateVarargs(value: (Test with ScaledValueRef[Interpolate])*): Self = StObject.set(x, "interpolate", js.Array(value :_*))
     
     @scala.inline
-    def setInterpolateVarargs(value: (Test with ScaledValueRef[Interpolate])*): Self = this.set("interpolate", js.Array(value :_*))
+    def setTension(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolate(value: ProductionRule[ScaledValueRef[Interpolate]]): Self = this.set("interpolate", value.asInstanceOf[js.Any])
+    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
     @scala.inline
-    def deleteInterpolate: Self = this.set("interpolate", js.undefined)
-    
-    @scala.inline
-    def setTensionVarargs(value: (Test with NumericValueRef)*): Self = this.set("tension", js.Array(value :_*))
-    
-    @scala.inline
-    def setTension(value: ProductionRule[NumericValueRef]): Self = this.set("tension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTension: Self = this.set("tension", js.undefined)
+    def setTensionVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "tension", js.Array(value :_*))
   }
 }

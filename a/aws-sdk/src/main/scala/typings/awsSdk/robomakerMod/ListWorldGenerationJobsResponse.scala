@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWorldGenerationJobsResponse extends js.Object {
+trait ListWorldGenerationJobsResponse extends StObject {
   
   /**
     * If the previous paginated request did not return all of the remaining results, the response object's nextToken parameter value is set to a token. To retrieve the next set of results, call ListWorldGeneratorJobsRequest again and assign that token to the request object's nextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null. 
@@ -26,30 +27,18 @@ object ListWorldGenerationJobsResponse {
   }
   
   @scala.inline
-  implicit class ListWorldGenerationJobsResponseOps[Self <: ListWorldGenerationJobsResponse] (val x: Self) extends AnyVal {
+  implicit class ListWorldGenerationJobsResponseMutableBuilder[Self <: ListWorldGenerationJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorldGenerationJobSummaries(value: WorldGenerationJobSummaries): Self = StObject.set(x, "worldGenerationJobSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldGenerationJobSummariesVarargs(value: WorldGenerationJobSummary*): Self = this.set("worldGenerationJobSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorldGenerationJobSummaries(value: WorldGenerationJobSummaries): Self = this.set("worldGenerationJobSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setWorldGenerationJobSummariesVarargs(value: WorldGenerationJobSummary*): Self = StObject.set(x, "worldGenerationJobSummaries", js.Array(value :_*))
   }
 }

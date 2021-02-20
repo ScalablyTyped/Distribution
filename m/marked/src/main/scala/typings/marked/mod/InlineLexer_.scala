@@ -1,12 +1,13 @@
 package typings.marked.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "InlineLexer")
 @js.native
-class InlineLexer_ protected () extends js.Object {
+class InlineLexer_ protected () extends StObject {
   def this(links: js.Array[String]) = this()
   def this(links: js.Array[String], options: MarkedOptions) = this()
   
@@ -26,15 +27,29 @@ class InlineLexer_ protected () extends js.Object {
   
   def smartypants(text: String): String = js.native
 }
-/* static members */
-@JSImport("marked", "InlineLexer")
-@js.native
-object InlineLexer_ extends js.Object {
+object InlineLexer_ {
   
+  @JSImport("marked", "InlineLexer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("marked", "InlineLexer.escapes")
+  @js.native
   def escapes(text: String): String = js.native
   
+  /* static member */
+  @JSImport("marked", "InlineLexer.output")
+  @js.native
   def output(src: String, links: js.Array[String]): String = js.native
+  @JSImport("marked", "InlineLexer.output")
+  @js.native
   def output(src: String, links: js.Array[String], options: MarkedOptions): String = js.native
   
-  var rules: Rules = js.native
+  /* static member */
+  @JSImport("marked", "InlineLexer.rules")
+  @js.native
+  def rules: Rules = js.native
+  @scala.inline
+  def rules_=(x: Rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
 }

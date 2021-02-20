@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to spreadsheet compiler token interns. */
 @js.native
-trait XFormulaOpCodeMapper extends js.Object {
+trait XFormulaOpCodeMapper extends StObject {
   
   /**
     * OpCode value used for external Add-In functions.
@@ -55,30 +56,18 @@ object XFormulaOpCodeMapper {
   }
   
   @scala.inline
-  implicit class XFormulaOpCodeMapperOps[Self <: XFormulaOpCodeMapper] (val x: Self) extends AnyVal {
+  implicit class XFormulaOpCodeMapperMutableBuilder[Self <: XFormulaOpCodeMapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAvailableMappings(value: (Double, Double) => SafeArray[FormulaOpCodeMapEntry]): Self = StObject.set(x, "getAvailableMappings", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMappings(value: (SeqEquiv[String], Double) => SafeArray[FormulaToken]): Self = StObject.set(x, "getMappings", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpCodeExternal(value: Double): Self = StObject.set(x, "OpCodeExternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpCodeExternal(value: Double): Self = this.set("OpCodeExternal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpCodeUnknown(value: Double): Self = this.set("OpCodeUnknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAvailableMappings(value: (Double, Double) => SafeArray[FormulaOpCodeMapEntry]): Self = this.set("getAvailableMappings", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetMappings(value: (SeqEquiv[String], Double) => SafeArray[FormulaToken]): Self = this.set("getMappings", js.Any.fromFunction2(value))
+    def setOpCodeUnknown(value: Double): Self = StObject.set(x, "OpCodeUnknown", value.asInstanceOf[js.Any])
   }
 }

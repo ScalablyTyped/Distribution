@@ -1,6 +1,7 @@
 package typings.playcanvas.mod
 
 import typings.playcanvas.anon.App
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,10 +47,7 @@ class ScriptType protected ()
   extends typings.playcanvas.pc.ScriptType {
   def this(args: App) = this()
 }
-/* static members */
-@JSImport("playcanvas", "ScriptType")
-@js.native
-object ScriptType extends js.Object {
+object ScriptType {
   
   /**
     * The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}.
@@ -63,6 +61,9 @@ object ScriptType extends js.Object {
     *     default: 22.2
     * });
     */
+  /* static member */
+  @JSImport("playcanvas", "ScriptType.attributes")
+  @js.native
   val attributes: typings.playcanvas.pc.ScriptAttributes = js.native
   
   /**
@@ -80,10 +81,16 @@ object ScriptType extends js.Object {
     * });
     * @param methods - Object with methods, where key - is name of method, and value - is function.
     */
+  /* static member */
+  @JSImport("playcanvas", "ScriptType.extend")
+  @js.native
   def extend(methods: js.Any): Unit = js.native
   
   /**
     * Name of a Script Type
     */
+  /* static member */
+  @JSImport("playcanvas", "ScriptType.scriptName")
+  @js.native
   val scriptName: String | Null = js.native
 }

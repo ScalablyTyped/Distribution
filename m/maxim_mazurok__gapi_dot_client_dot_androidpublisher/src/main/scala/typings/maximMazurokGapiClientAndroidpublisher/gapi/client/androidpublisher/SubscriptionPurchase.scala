@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionPurchase extends js.Object {
+trait SubscriptionPurchase extends StObject {
   
   /** The acknowledgement state of the subscription product. Possible values are: 0. Yet to be acknowledged 1. Acknowledged */
   var acknowledgementState: js.UndefOr[Double] = js.native
@@ -136,192 +137,180 @@ object SubscriptionPurchase {
   }
   
   @scala.inline
-  implicit class SubscriptionPurchaseOps[Self <: SubscriptionPurchase] (val x: Self) extends AnyVal {
+  implicit class SubscriptionPurchaseMutableBuilder[Self <: SubscriptionPurchase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcknowledgementState(value: Double): Self = StObject.set(x, "acknowledgementState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcknowledgementStateUndefined: Self = StObject.set(x, "acknowledgementState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRenewing(value: Boolean): Self = StObject.set(x, "autoRenewing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcknowledgementState(value: Double): Self = this.set("acknowledgementState", value.asInstanceOf[js.Any])
+    def setAutoRenewingUndefined: Self = StObject.set(x, "autoRenewing", js.undefined)
     
     @scala.inline
-    def deleteAcknowledgementState: Self = this.set("acknowledgementState", js.undefined)
+    def setAutoResumeTimeMillis(value: String): Self = StObject.set(x, "autoResumeTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRenewing(value: Boolean): Self = this.set("autoRenewing", value.asInstanceOf[js.Any])
+    def setAutoResumeTimeMillisUndefined: Self = StObject.set(x, "autoResumeTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteAutoRenewing: Self = this.set("autoRenewing", js.undefined)
+    def setCancelReason(value: Double): Self = StObject.set(x, "cancelReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResumeTimeMillis(value: String): Self = this.set("autoResumeTimeMillis", value.asInstanceOf[js.Any])
+    def setCancelReasonUndefined: Self = StObject.set(x, "cancelReason", js.undefined)
     
     @scala.inline
-    def deleteAutoResumeTimeMillis: Self = this.set("autoResumeTimeMillis", js.undefined)
+    def setCancelSurveyResult(value: SubscriptionCancelSurveyResult): Self = StObject.set(x, "cancelSurveyResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelReason(value: Double): Self = this.set("cancelReason", value.asInstanceOf[js.Any])
+    def setCancelSurveyResultUndefined: Self = StObject.set(x, "cancelSurveyResult", js.undefined)
     
     @scala.inline
-    def deleteCancelReason: Self = this.set("cancelReason", js.undefined)
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelSurveyResult(value: SubscriptionCancelSurveyResult): Self = this.set("cancelSurveyResult", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def deleteCancelSurveyResult: Self = this.set("cancelSurveyResult", js.undefined)
+    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperPayload(value: String): Self = this.set("developerPayload", value.asInstanceOf[js.Any])
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def deleteDeveloperPayload: Self = this.set("developerPayload", js.undefined)
+    def setExpiryTimeMillis(value: String): Self = StObject.set(x, "expiryTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setExpiryTimeMillisUndefined: Self = StObject.set(x, "expiryTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    def setExternalAccountId(value: String): Self = StObject.set(x, "externalAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiryTimeMillis(value: String): Self = this.set("expiryTimeMillis", value.asInstanceOf[js.Any])
+    def setExternalAccountIdUndefined: Self = StObject.set(x, "externalAccountId", js.undefined)
     
     @scala.inline
-    def deleteExpiryTimeMillis: Self = this.set("expiryTimeMillis", js.undefined)
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalAccountId(value: String): Self = this.set("externalAccountId", value.asInstanceOf[js.Any])
+    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     @scala.inline
-    def deleteExternalAccountId: Self = this.set("externalAccountId", js.undefined)
+    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
     
     @scala.inline
-    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    def setIntroductoryPriceInfo(value: IntroductoryPriceInfo): Self = StObject.set(x, "introductoryPriceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    def setIntroductoryPriceInfoUndefined: Self = StObject.set(x, "introductoryPriceInfo", js.undefined)
     
     @scala.inline
-    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroductoryPriceInfo(value: IntroductoryPriceInfo): Self = this.set("introductoryPriceInfo", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIntroductoryPriceInfo: Self = this.set("introductoryPriceInfo", js.undefined)
+    def setLinkedPurchaseToken(value: String): Self = StObject.set(x, "linkedPurchaseToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLinkedPurchaseTokenUndefined: Self = StObject.set(x, "linkedPurchaseToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setObfuscatedExternalAccountId(value: String): Self = StObject.set(x, "obfuscatedExternalAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedPurchaseToken(value: String): Self = this.set("linkedPurchaseToken", value.asInstanceOf[js.Any])
+    def setObfuscatedExternalAccountIdUndefined: Self = StObject.set(x, "obfuscatedExternalAccountId", js.undefined)
     
     @scala.inline
-    def deleteLinkedPurchaseToken: Self = this.set("linkedPurchaseToken", js.undefined)
+    def setObfuscatedExternalProfileId(value: String): Self = StObject.set(x, "obfuscatedExternalProfileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObfuscatedExternalAccountId(value: String): Self = this.set("obfuscatedExternalAccountId", value.asInstanceOf[js.Any])
+    def setObfuscatedExternalProfileIdUndefined: Self = StObject.set(x, "obfuscatedExternalProfileId", js.undefined)
     
     @scala.inline
-    def deleteObfuscatedExternalAccountId: Self = this.set("obfuscatedExternalAccountId", js.undefined)
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObfuscatedExternalProfileId(value: String): Self = this.set("obfuscatedExternalProfileId", value.asInstanceOf[js.Any])
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
     @scala.inline
-    def deleteObfuscatedExternalProfileId: Self = this.set("obfuscatedExternalProfileId", js.undefined)
+    def setPaymentState(value: Double): Self = StObject.set(x, "paymentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    def setPaymentStateUndefined: Self = StObject.set(x, "paymentState", js.undefined)
     
     @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setPriceAmountMicros(value: String): Self = StObject.set(x, "priceAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentState(value: Double): Self = this.set("paymentState", value.asInstanceOf[js.Any])
+    def setPriceAmountMicrosUndefined: Self = StObject.set(x, "priceAmountMicros", js.undefined)
     
     @scala.inline
-    def deletePaymentState: Self = this.set("paymentState", js.undefined)
+    def setPriceChange(value: SubscriptionPriceChange): Self = StObject.set(x, "priceChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceAmountMicros(value: String): Self = this.set("priceAmountMicros", value.asInstanceOf[js.Any])
+    def setPriceChangeUndefined: Self = StObject.set(x, "priceChange", js.undefined)
     
     @scala.inline
-    def deletePriceAmountMicros: Self = this.set("priceAmountMicros", js.undefined)
+    def setPriceCurrencyCode(value: String): Self = StObject.set(x, "priceCurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceChange(value: SubscriptionPriceChange): Self = this.set("priceChange", value.asInstanceOf[js.Any])
+    def setPriceCurrencyCodeUndefined: Self = StObject.set(x, "priceCurrencyCode", js.undefined)
     
     @scala.inline
-    def deletePriceChange: Self = this.set("priceChange", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceCurrencyCode(value: String): Self = this.set("priceCurrencyCode", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deletePriceCurrencyCode: Self = this.set("priceCurrencyCode", js.undefined)
+    def setProfileName(value: String): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setPromotionCode(value: String): Self = StObject.set(x, "promotionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileName(value: String): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    def setPromotionCodeUndefined: Self = StObject.set(x, "promotionCode", js.undefined)
     
     @scala.inline
-    def deleteProfileName: Self = this.set("profileName", js.undefined)
+    def setPromotionType(value: Double): Self = StObject.set(x, "promotionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotionCode(value: String): Self = this.set("promotionCode", value.asInstanceOf[js.Any])
+    def setPromotionTypeUndefined: Self = StObject.set(x, "promotionType", js.undefined)
     
     @scala.inline
-    def deletePromotionCode: Self = this.set("promotionCode", js.undefined)
+    def setPurchaseType(value: Double): Self = StObject.set(x, "purchaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotionType(value: Double): Self = this.set("promotionType", value.asInstanceOf[js.Any])
+    def setPurchaseTypeUndefined: Self = StObject.set(x, "purchaseType", js.undefined)
     
     @scala.inline
-    def deletePromotionType: Self = this.set("promotionType", js.undefined)
+    def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseType(value: Double): Self = this.set("purchaseType", value.asInstanceOf[js.Any])
+    def setStartTimeMillisUndefined: Self = StObject.set(x, "startTimeMillis", js.undefined)
     
     @scala.inline
-    def deletePurchaseType: Self = this.set("purchaseType", js.undefined)
+    def setUserCancellationTimeMillis(value: String): Self = StObject.set(x, "userCancellationTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeMillis(value: String): Self = this.set("startTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeMillis: Self = this.set("startTimeMillis", js.undefined)
-    
-    @scala.inline
-    def setUserCancellationTimeMillis(value: String): Self = this.set("userCancellationTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserCancellationTimeMillis: Self = this.set("userCancellationTimeMillis", js.undefined)
+    def setUserCancellationTimeMillisUndefined: Self = StObject.set(x, "userCancellationTimeMillis", js.undefined)
   }
 }

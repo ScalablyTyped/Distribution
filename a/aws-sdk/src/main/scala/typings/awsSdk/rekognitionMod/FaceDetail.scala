@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaceDetail extends js.Object {
+trait FaceDetail extends StObject {
   
   /**
     * The estimated age range, in years, for the face. Low represents the lowest estimated age and High represents the highest estimated age.
@@ -91,114 +92,102 @@ object FaceDetail {
   }
   
   @scala.inline
-  implicit class FaceDetailOps[Self <: FaceDetail] (val x: Self) extends AnyVal {
+  implicit class FaceDetailMutableBuilder[Self <: FaceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgeRange(value: AgeRange): Self = StObject.set(x, "AgeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeRangeUndefined: Self = StObject.set(x, "AgeRange", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeard(value: Beard): Self = StObject.set(x, "Beard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeRange(value: AgeRange): Self = this.set("AgeRange", value.asInstanceOf[js.Any])
+    def setBeardUndefined: Self = StObject.set(x, "Beard", js.undefined)
     
     @scala.inline
-    def deleteAgeRange: Self = this.set("AgeRange", js.undefined)
+    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeard(value: Beard): Self = this.set("Beard", value.asInstanceOf[js.Any])
+    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
     @scala.inline
-    def deleteBeard: Self = this.set("Beard", js.undefined)
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    def setEmotions(value: Emotions): Self = StObject.set(x, "Emotions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setEmotionsUndefined: Self = StObject.set(x, "Emotions", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setEmotionsVarargs(value: Emotion*): Self = StObject.set(x, "Emotions", js.Array(value :_*))
     
     @scala.inline
-    def setEmotionsVarargs(value: Emotion*): Self = this.set("Emotions", js.Array(value :_*))
+    def setEyeglasses(value: Eyeglasses): Self = StObject.set(x, "Eyeglasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmotions(value: Emotions): Self = this.set("Emotions", value.asInstanceOf[js.Any])
+    def setEyeglassesUndefined: Self = StObject.set(x, "Eyeglasses", js.undefined)
     
     @scala.inline
-    def deleteEmotions: Self = this.set("Emotions", js.undefined)
+    def setEyesOpen(value: EyeOpen): Self = StObject.set(x, "EyesOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEyeglasses(value: Eyeglasses): Self = this.set("Eyeglasses", value.asInstanceOf[js.Any])
+    def setEyesOpenUndefined: Self = StObject.set(x, "EyesOpen", js.undefined)
     
     @scala.inline
-    def deleteEyeglasses: Self = this.set("Eyeglasses", js.undefined)
+    def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEyesOpen(value: EyeOpen): Self = this.set("EyesOpen", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "Gender", js.undefined)
     
     @scala.inline
-    def deleteEyesOpen: Self = this.set("EyesOpen", js.undefined)
+    def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: Gender): Self = this.set("Gender", value.asInstanceOf[js.Any])
+    def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
     
     @scala.inline
-    def deleteGender: Self = this.set("Gender", js.undefined)
+    def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
     
     @scala.inline
-    def setLandmarksVarargs(value: Landmark*): Self = this.set("Landmarks", js.Array(value :_*))
+    def setMouthOpen(value: MouthOpen): Self = StObject.set(x, "MouthOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarks(value: Landmarks): Self = this.set("Landmarks", value.asInstanceOf[js.Any])
+    def setMouthOpenUndefined: Self = StObject.set(x, "MouthOpen", js.undefined)
     
     @scala.inline
-    def deleteLandmarks: Self = this.set("Landmarks", js.undefined)
+    def setMustache(value: Mustache): Self = StObject.set(x, "Mustache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouthOpen(value: MouthOpen): Self = this.set("MouthOpen", value.asInstanceOf[js.Any])
+    def setMustacheUndefined: Self = StObject.set(x, "Mustache", js.undefined)
     
     @scala.inline
-    def deleteMouthOpen: Self = this.set("MouthOpen", js.undefined)
+    def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMustache(value: Mustache): Self = this.set("Mustache", value.asInstanceOf[js.Any])
+    def setPoseUndefined: Self = StObject.set(x, "Pose", js.undefined)
     
     @scala.inline
-    def deleteMustache: Self = this.set("Mustache", js.undefined)
+    def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPose(value: Pose): Self = this.set("Pose", value.asInstanceOf[js.Any])
+    def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
     
     @scala.inline
-    def deletePose: Self = this.set("Pose", js.undefined)
+    def setSmile(value: Smile): Self = StObject.set(x, "Smile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: ImageQuality): Self = this.set("Quality", value.asInstanceOf[js.Any])
+    def setSmileUndefined: Self = StObject.set(x, "Smile", js.undefined)
     
     @scala.inline
-    def deleteQuality: Self = this.set("Quality", js.undefined)
+    def setSunglasses(value: Sunglasses): Self = StObject.set(x, "Sunglasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmile(value: Smile): Self = this.set("Smile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmile: Self = this.set("Smile", js.undefined)
-    
-    @scala.inline
-    def setSunglasses(value: Sunglasses): Self = this.set("Sunglasses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSunglasses: Self = this.set("Sunglasses", js.undefined)
+    def setSunglassesUndefined: Self = StObject.set(x, "Sunglasses", js.undefined)
   }
 }

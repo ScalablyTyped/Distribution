@@ -6,6 +6,7 @@ import typings.std.Object
 import typings.std.PropertyKey
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,63 +62,51 @@ object MeshVertexAttributesProperties {
   }
   
   @scala.inline
-  implicit class MeshVertexAttributesPropertiesOps[Self <: MeshVertexAttributesProperties] (val x: Self) extends AnyVal {
+  implicit class MeshVertexAttributesPropertiesMutableBuilder[Self <: MeshVertexAttributesProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Uint8Array | js.Array[Double] | Uint8ClampedArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setNormal(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Uint8Array | js.Array[Double] | Uint8ClampedArray): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setNormalVarargs(value: Double*): Self = StObject.set(x, "normal", js.Array(value :_*))
     
     @scala.inline
-    def setNormalVarargs(value: Double*): Self = this.set("normal", js.Array(value :_*))
+    def setPosition(value: Float64Array | js.Array[Double] | Float32Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: Float32Array | js.Array[Double] | Float64Array): Self = this.set("normal", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteNormal: Self = this.set("normal", js.undefined)
+    def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
     
     @scala.inline
-    def setPositionVarargs(value: Double*): Self = this.set("position", js.Array(value :_*))
+    def setTangent(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Float64Array | js.Array[Double] | Float32Array): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTangentVarargs(value: Double*): Self = StObject.set(x, "tangent", js.Array(value :_*))
     
     @scala.inline
-    def setTangentVarargs(value: Double*): Self = this.set("tangent", js.Array(value :_*))
+    def setUv(value: Float32Array | js.Array[Double] | Float64Array): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTangent(value: Float32Array | js.Array[Double] | Float64Array): Self = this.set("tangent", value.asInstanceOf[js.Any])
+    def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
     
     @scala.inline
-    def deleteTangent: Self = this.set("tangent", js.undefined)
-    
-    @scala.inline
-    def setUvVarargs(value: Double*): Self = this.set("uv", js.Array(value :_*))
-    
-    @scala.inline
-    def setUv(value: Float32Array | js.Array[Double] | Float64Array): Self = this.set("uv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUv: Self = this.set("uv", js.undefined)
+    def setUvVarargs(value: Double*): Self = StObject.set(x, "uv", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertionOrderBudgetSegment extends js.Object {
+trait InsertionOrderBudgetSegment extends StObject {
   
   /**
     * Required. The budget amount the insertion order will spend for the given date_range. The amount is in micros. Must be greater than 0. For example, 500000000 represents 500 standard
@@ -38,42 +39,30 @@ object InsertionOrderBudgetSegment {
   }
   
   @scala.inline
-  implicit class InsertionOrderBudgetSegmentOps[Self <: InsertionOrderBudgetSegment] (val x: Self) extends AnyVal {
+  implicit class InsertionOrderBudgetSegmentMutableBuilder[Self <: InsertionOrderBudgetSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudgetAmountMicros(value: String): Self = StObject.set(x, "budgetAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetAmountMicrosUndefined: Self = StObject.set(x, "budgetAmountMicros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignBudgetId(value: String): Self = StObject.set(x, "campaignBudgetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetAmountMicros(value: String): Self = this.set("budgetAmountMicros", value.asInstanceOf[js.Any])
+    def setCampaignBudgetIdUndefined: Self = StObject.set(x, "campaignBudgetId", js.undefined)
     
     @scala.inline
-    def deleteBudgetAmountMicros: Self = this.set("budgetAmountMicros", js.undefined)
+    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignBudgetId(value: String): Self = this.set("campaignBudgetId", value.asInstanceOf[js.Any])
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def deleteCampaignBudgetId: Self = this.set("campaignBudgetId", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: DateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

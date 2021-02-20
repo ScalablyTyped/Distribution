@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateEndpointWeightsAndCapacitiesInput extends js.Object {
+trait UpdateEndpointWeightsAndCapacitiesInput extends StObject {
   
   /**
     * An object that provides new capacity and weight values for a variant.
@@ -26,27 +27,15 @@ object UpdateEndpointWeightsAndCapacitiesInput {
   }
   
   @scala.inline
-  implicit class UpdateEndpointWeightsAndCapacitiesInputOps[Self <: UpdateEndpointWeightsAndCapacitiesInput] (val x: Self) extends AnyVal {
+  implicit class UpdateEndpointWeightsAndCapacitiesInputMutableBuilder[Self <: UpdateEndpointWeightsAndCapacitiesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredWeightsAndCapacities(value: DesiredWeightAndCapacityList): Self = StObject.set(x, "DesiredWeightsAndCapacities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredWeightsAndCapacitiesVarargs(value: DesiredWeightAndCapacity*): Self = StObject.set(x, "DesiredWeightsAndCapacities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDesiredWeightsAndCapacitiesVarargs(value: DesiredWeightAndCapacity*): Self = this.set("DesiredWeightsAndCapacities", js.Array(value :_*))
-    
-    @scala.inline
-    def setDesiredWeightsAndCapacities(value: DesiredWeightAndCapacityList): Self = this.set("DesiredWeightsAndCapacities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.pixiSpine.global.PIXI.spine.core
 
 import typings.pixiSpine.PIXI.spine.core.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SkeletonClipping ()
   extends typings.pixiSpine.PIXI.spine.core.SkeletonClipping
-/* static members */
-@JSGlobal("PIXI.spine.core.SkeletonClipping")
-@js.native
-object SkeletonClipping extends js.Object {
+object SkeletonClipping {
   
+  /* static member */
+  @JSGlobal("PIXI.spine.core.SkeletonClipping.makeClockwise")
+  @js.native
   def makeClockwise(polygon: ArrayLike[Double]): Unit = js.native
 }

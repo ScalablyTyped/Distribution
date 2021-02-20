@@ -1,9 +1,8 @@
 package typings.antvDataSet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/data-set/lib/transform/reverse", JSImport.Namespace)
-@js.native
-object reverseMod extends js.Object
+object reverseMod

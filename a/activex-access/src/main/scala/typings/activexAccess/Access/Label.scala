@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Label extends js.Object {
+trait Label extends StObject {
   
   @JSName("Access.Label_typekey")
   var AccessDotLabel_typekey: Label = js.native

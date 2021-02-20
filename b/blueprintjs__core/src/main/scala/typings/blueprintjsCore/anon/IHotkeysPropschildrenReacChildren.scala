@@ -1,13 +1,14 @@
 package typings.blueprintjsCore.anon
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/components/hotkeys/hotkeysTypes.IHotkeysProps & {  children :react.react.ReactNode | undefined} */
 @js.native
-trait IHotkeysPropschildrenReacChildren extends js.Object {
+trait IHotkeysPropschildrenReacChildren extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -33,36 +34,24 @@ object IHotkeysPropschildrenReacChildren {
   }
   
   @scala.inline
-  implicit class IHotkeysPropschildrenReacChildrenOps[Self <: IHotkeysPropschildrenReacChildren] (val x: Self) extends AnyVal {
+  implicit class IHotkeysPropschildrenReacChildrenMutableBuilder[Self <: IHotkeysPropschildrenReacChildren] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

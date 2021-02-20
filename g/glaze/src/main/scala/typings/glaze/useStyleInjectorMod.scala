@@ -1,13 +1,14 @@
 package typings.glaze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("glaze/dist-types/useStyleInjector", JSImport.Namespace)
-@js.native
-object useStyleInjectorMod extends js.Object {
+object useStyleInjectorMod {
   
+  @JSImport("glaze/dist-types/useStyleInjector", "useStyleInjector")
+  @js.native
   def useStyleInjector(): js.Function4[
     /* identName */ String, 
     /* property */ String, 

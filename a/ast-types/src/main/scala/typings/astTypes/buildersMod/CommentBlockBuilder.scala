@@ -2,12 +2,13 @@ package typings.astTypes.buildersMod
 
 import typings.astTypes.anon.Leading
 import typings.astTypes.namedTypesMod.namedTypes.CommentBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentBlockBuilder extends js.Object {
+trait CommentBlockBuilder extends StObject {
   
   def apply(value: String): CommentBlock = js.native
   def apply(value: String, leading: js.UndefOr[scala.Nothing], trailing: Boolean): CommentBlock = js.native

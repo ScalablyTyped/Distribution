@@ -3,12 +3,13 @@ package typings.winrt.Windows.Media.MediaProperties
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMediaEncodingProfileStatics extends js.Object {
+trait IMediaEncodingProfileStatics extends StObject {
   
   def createFromFileAsync(file: IStorageFile): IAsyncOperation[MediaEncodingProfile] = js.native
   
@@ -41,39 +42,27 @@ object IMediaEncodingProfileStatics {
   }
   
   @scala.inline
-  implicit class IMediaEncodingProfileStaticsOps[Self <: IMediaEncodingProfileStatics] (val x: Self) extends AnyVal {
+  implicit class IMediaEncodingProfileStaticsMutableBuilder[Self <: IMediaEncodingProfileStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFromFileAsync(value: IStorageFile => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromFileAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFromStreamAsync(value: IRandomAccessStream => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromStreamAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateM4a(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createM4a", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateFromFileAsync(value: IStorageFile => IAsyncOperation[MediaEncodingProfile]): Self = this.set("createFromFileAsync", js.Any.fromFunction1(value))
+    def setCreateMp3(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createMp3", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateFromStreamAsync(value: IRandomAccessStream => IAsyncOperation[MediaEncodingProfile]): Self = this.set("createFromStreamAsync", js.Any.fromFunction1(value))
+    def setCreateMp4(value: VideoEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createMp4", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateM4a(value: AudioEncodingQuality => MediaEncodingProfile): Self = this.set("createM4a", js.Any.fromFunction1(value))
+    def setCreateWma(value: AudioEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createWma", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateMp3(value: AudioEncodingQuality => MediaEncodingProfile): Self = this.set("createMp3", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateMp4(value: VideoEncodingQuality => MediaEncodingProfile): Self = this.set("createMp4", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateWma(value: AudioEncodingQuality => MediaEncodingProfile): Self = this.set("createWma", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateWmv(value: VideoEncodingQuality => MediaEncodingProfile): Self = this.set("createWmv", js.Any.fromFunction1(value))
+    def setCreateWmv(value: VideoEncodingQuality => MediaEncodingProfile): Self = StObject.set(x, "createWmv", js.Any.fromFunction1(value))
   }
 }

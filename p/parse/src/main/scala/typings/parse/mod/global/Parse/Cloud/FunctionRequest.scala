@@ -2,12 +2,13 @@ package typings.parse.mod.global.Parse.Cloud
 
 import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionRequest[T /* <: Params */] extends js.Object {
+trait FunctionRequest[T /* <: Params */] extends StObject {
   
   var installationId: js.UndefOr[String] = js.native
   
@@ -26,39 +27,27 @@ object FunctionRequest {
   }
   
   @scala.inline
-  implicit class FunctionRequestOps[Self <: FunctionRequest[_], T /* <: Params */] (val x: Self with FunctionRequest[T]) extends AnyVal {
+  implicit class FunctionRequestMutableBuilder[Self <: FunctionRequest[_], T /* <: Params */] (val x: Self with FunctionRequest[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: T): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
     
     @scala.inline
-    def setInstallationId(value: String): Self = this.set("installationId", value.asInstanceOf[js.Any])
+    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstallationId: Self = this.set("installationId", js.undefined)
+    def setUser(value: User[Attributes]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster(value: Boolean): Self = this.set("master", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaster: Self = this.set("master", js.undefined)
-    
-    @scala.inline
-    def setUser(value: User[Attributes]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

@@ -1,14 +1,14 @@
 package typings.samchon.mod.templates
 
 import typings.samchon.invokeMod.Invoke
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon", "templates.slave")
-@js.native
-object slave extends js.Object {
+object slave {
   
+  @JSImport("samchon", "templates.slave.InvokeHistory")
   @js.native
   /**
     * Default Constructor.
@@ -23,6 +23,7 @@ object slave extends js.Object {
     def this(invoke: Invoke) = this()
   }
   
+  @JSImport("samchon", "templates.slave.PInvoke")
   @js.native
   class PInvoke protected ()
     extends typings.samchon.templatesMod.slave.PInvoke {
@@ -40,6 +41,7 @@ object slave extends js.Object {
     ) = this()
   }
   
+  @JSImport("samchon", "templates.slave.SlaveClient")
   @js.native
   /**
     * Default Constructor.
@@ -47,6 +49,7 @@ object slave extends js.Object {
   abstract class SlaveClient ()
     extends typings.samchon.templatesMod.slave.SlaveClient
   
+  @JSImport("samchon", "templates.slave.SlaveServer")
   @js.native
   /**
     * Default Constructor.
@@ -54,6 +57,7 @@ object slave extends js.Object {
   abstract class SlaveServer ()
     extends typings.samchon.templatesMod.slave.SlaveServer
   
+  @JSImport("samchon", "templates.slave.SlaveSystem")
   @js.native
   /**
     * Default Constructor.

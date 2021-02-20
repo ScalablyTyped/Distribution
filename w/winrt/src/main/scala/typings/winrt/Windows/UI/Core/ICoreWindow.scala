@@ -4,12 +4,13 @@ import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.System.VirtualKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICoreWindow extends js.Object {
+trait ICoreWindow extends StObject {
   
   def activate(): Unit = js.native
   
@@ -117,114 +118,102 @@ object ICoreWindow {
   }
   
   @scala.inline
-  implicit class ICoreWindowOps[Self <: ICoreWindow] (val x: Self) extends AnyVal {
+  implicit class ICoreWindowMutableBuilder[Self <: ICoreWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomationHostProvider(value: js.Any): Self = StObject.set(x, "automationHostProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: () => Unit): Self = this.set("activate", js.Any.fromFunction0(value))
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutomationHostProvider(value: js.Any): Self = this.set("automationHostProvider", value.asInstanceOf[js.Any])
+    def setCustomProperties(value: IPropertySet): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Rect): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setDispatcher(value: CoreDispatcher): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setFlowDirection(value: CoreWindowFlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomProperties(value: IPropertySet): Self = this.set("customProperties", value.asInstanceOf[js.Any])
+    def setGetAsyncKeyState(value: VirtualKey => CoreVirtualKeyStates): Self = StObject.set(x, "getAsyncKeyState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDispatcher(value: CoreDispatcher): Self = this.set("dispatcher", value.asInstanceOf[js.Any])
+    def setGetKeyState(value: VirtualKey => CoreVirtualKeyStates): Self = StObject.set(x, "getKeyState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlowDirection(value: CoreWindowFlowDirection): Self = this.set("flowDirection", value.asInstanceOf[js.Any])
+    def setIsInputEnabled(value: Boolean): Self = StObject.set(x, "isInputEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAsyncKeyState(value: VirtualKey => CoreVirtualKeyStates): Self = this.set("getAsyncKeyState", js.Any.fromFunction1(value))
+    def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetKeyState(value: VirtualKey => CoreVirtualKeyStates): Self = this.set("getKeyState", js.Any.fromFunction1(value))
+    def setOnautomationproviderrequested(value: js.Any): Self = StObject.set(x, "onautomationproviderrequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInputEnabled(value: Boolean): Self = this.set("isInputEnabled", value.asInstanceOf[js.Any])
+    def setOncharacterreceived(value: js.Any): Self = StObject.set(x, "oncharacterreceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnactivated(value: js.Any): Self = this.set("onactivated", value.asInstanceOf[js.Any])
+    def setOnclosed(value: js.Any): Self = StObject.set(x, "onclosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnautomationproviderrequested(value: js.Any): Self = this.set("onautomationproviderrequested", value.asInstanceOf[js.Any])
+    def setOninputenabled(value: js.Any): Self = StObject.set(x, "oninputenabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOncharacterreceived(value: js.Any): Self = this.set("oncharacterreceived", value.asInstanceOf[js.Any])
+    def setOnkeydown(value: js.Any): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnclosed(value: js.Any): Self = this.set("onclosed", value.asInstanceOf[js.Any])
+    def setOnkeyup(value: js.Any): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOninputenabled(value: js.Any): Self = this.set("oninputenabled", value.asInstanceOf[js.Any])
+    def setOnpointercapturelost(value: js.Any): Self = StObject.set(x, "onpointercapturelost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnkeydown(value: js.Any): Self = this.set("onkeydown", value.asInstanceOf[js.Any])
+    def setOnpointerentered(value: js.Any): Self = StObject.set(x, "onpointerentered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnkeyup(value: js.Any): Self = this.set("onkeyup", value.asInstanceOf[js.Any])
+    def setOnpointerexited(value: js.Any): Self = StObject.set(x, "onpointerexited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointercapturelost(value: js.Any): Self = this.set("onpointercapturelost", value.asInstanceOf[js.Any])
+    def setOnpointermoved(value: js.Any): Self = StObject.set(x, "onpointermoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointerentered(value: js.Any): Self = this.set("onpointerentered", value.asInstanceOf[js.Any])
+    def setOnpointerpressed(value: js.Any): Self = StObject.set(x, "onpointerpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointerexited(value: js.Any): Self = this.set("onpointerexited", value.asInstanceOf[js.Any])
+    def setOnpointerreleased(value: js.Any): Self = StObject.set(x, "onpointerreleased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointermoved(value: js.Any): Self = this.set("onpointermoved", value.asInstanceOf[js.Any])
+    def setOnpointerwheelchanged(value: js.Any): Self = StObject.set(x, "onpointerwheelchanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointerpressed(value: js.Any): Self = this.set("onpointerpressed", value.asInstanceOf[js.Any])
+    def setOnsizechanged(value: js.Any): Self = StObject.set(x, "onsizechanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointerreleased(value: js.Any): Self = this.set("onpointerreleased", value.asInstanceOf[js.Any])
+    def setOntouchhittesting(value: js.Any): Self = StObject.set(x, "ontouchhittesting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpointerwheelchanged(value: js.Any): Self = this.set("onpointerwheelchanged", value.asInstanceOf[js.Any])
+    def setOnvisibilitychanged(value: js.Any): Self = StObject.set(x, "onvisibilitychanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsizechanged(value: js.Any): Self = this.set("onsizechanged", value.asInstanceOf[js.Any])
+    def setPointerCursor(value: CoreCursor): Self = StObject.set(x, "pointerCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOntouchhittesting(value: js.Any): Self = this.set("ontouchhittesting", value.asInstanceOf[js.Any])
+    def setPointerPosition(value: Point): Self = StObject.set(x, "pointerPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnvisibilitychanged(value: js.Any): Self = this.set("onvisibilitychanged", value.asInstanceOf[js.Any])
+    def setReleasePointerCapture(value: () => Unit): Self = StObject.set(x, "releasePointerCapture", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPointerCursor(value: CoreCursor): Self = this.set("pointerCursor", value.asInstanceOf[js.Any])
+    def setSetPointerCapture(value: () => Unit): Self = StObject.set(x, "setPointerCapture", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPointerPosition(value: Point): Self = this.set("pointerPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleasePointerCapture(value: () => Unit): Self = this.set("releasePointerCapture", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPointerCapture(value: () => Unit): Self = this.set("setPointerCapture", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

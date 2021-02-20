@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object DiagramConnector {
   }
   
   @scala.inline
-  implicit class DiagramConnectorOps[Self <: DiagramConnector] (val x: Self) extends AnyVal {
+  implicit class DiagramConnectorMutableBuilder[Self <: DiagramConnector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromKey(value: js.Any): Self = StObject.set(x, "fromKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTexts(value: js.Array[String]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextsVarargs(value: String*): Self = StObject.set(x, "texts", js.Array(value :_*))
     
     @scala.inline
-    def setFromKey(value: js.Any): Self = this.set("fromKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextsVarargs(value: String*): Self = this.set("texts", js.Array(value :_*))
-    
-    @scala.inline
-    def setTexts(value: js.Array[String]): Self = this.set("texts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToKey(value: js.Any): Self = this.set("toKey", value.asInstanceOf[js.Any])
+    def setToKey(value: js.Any): Self = StObject.set(x, "toKey", value.asInstanceOf[js.Any])
   }
 }

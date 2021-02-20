@@ -2,16 +2,16 @@ package typings.classValidator
 
 import typings.classValidator.validationArgumentsMod.ValidationArguments
 import typings.classValidator.validationMetadataArgsMod.ValidationMetadataArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/metadata/ValidationMetadata", JSImport.Namespace)
-@js.native
-object validationMetadataMod extends js.Object {
+object validationMetadataMod {
   
+  @JSImport("class-validator/types/metadata/ValidationMetadata", "ValidationMetadata")
   @js.native
-  class ValidationMetadata protected () extends js.Object {
+  class ValidationMetadata protected () extends StObject {
     def this(args: ValidationMetadataArgs) = this()
     
     /**

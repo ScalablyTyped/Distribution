@@ -1,11 +1,12 @@
 package typings.browserfs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `0` extends js.Object {
+trait `0` extends StObject {
   
   var `0`: String = js.native
   
@@ -113,90 +114,78 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set1024(value: String): Self = StObject.set(x, "1024", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set0(value: String): Self = this.set("0", value.asInstanceOf[js.Any])
+    def set1025(value: String): Self = StObject.set(x, "1025", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: String): Self = this.set("1", value.asInstanceOf[js.Any])
+    def set1026(value: String): Self = StObject.set(x, "1026", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1024(value: String): Self = this.set("1024", value.asInstanceOf[js.Any])
+    def set1089(value: String): Self = StObject.set(x, "1089", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1025(value: String): Self = this.set("1025", value.asInstanceOf[js.Any])
+    def set1090(value: String): Self = StObject.set(x, "1090", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1026(value: String): Self = this.set("1026", value.asInstanceOf[js.Any])
+    def set1153(value: String): Self = StObject.set(x, "1153", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1089(value: String): Self = this.set("1089", value.asInstanceOf[js.Any])
+    def set1154(value: String): Self = StObject.set(x, "1154", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1090(value: String): Self = this.set("1090", value.asInstanceOf[js.Any])
+    def set1217(value: String): Self = StObject.set(x, "1217", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1153(value: String): Self = this.set("1153", value.asInstanceOf[js.Any])
+    def set1218(value: String): Self = StObject.set(x, "1218", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1154(value: String): Self = this.set("1154", value.asInstanceOf[js.Any])
+    def set129(value: String): Self = StObject.set(x, "129", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1217(value: String): Self = this.set("1217", value.asInstanceOf[js.Any])
+    def set193(value: String): Self = StObject.set(x, "193", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1218(value: String): Self = this.set("1218", value.asInstanceOf[js.Any])
+    def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set129(value: String): Self = this.set("129", value.asInstanceOf[js.Any])
+    def set4096(value: String): Self = StObject.set(x, "4096", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set193(value: String): Self = this.set("193", value.asInstanceOf[js.Any])
+    def set4098(value: String): Self = StObject.set(x, "4098", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set2(value: String): Self = this.set("2", value.asInstanceOf[js.Any])
+    def set514(value: String): Self = StObject.set(x, "514", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set4096(value: String): Self = this.set("4096", value.asInstanceOf[js.Any])
+    def set577(value: String): Self = StObject.set(x, "577", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set4098(value: String): Self = this.set("4098", value.asInstanceOf[js.Any])
+    def set578(value: String): Self = StObject.set(x, "578", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set514(value: String): Self = this.set("514", value.asInstanceOf[js.Any])
+    def set64(value: String): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set577(value: String): Self = this.set("577", value.asInstanceOf[js.Any])
+    def set65(value: String): Self = StObject.set(x, "65", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set578(value: String): Self = this.set("578", value.asInstanceOf[js.Any])
+    def set66(value: String): Self = StObject.set(x, "66", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set64(value: String): Self = this.set("64", value.asInstanceOf[js.Any])
+    def set705(value: String): Self = StObject.set(x, "705", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set65(value: String): Self = this.set("65", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set66(value: String): Self = this.set("66", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set705(value: String): Self = this.set("705", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set706(value: String): Self = this.set("706", value.asInstanceOf[js.Any])
+    def set706(value: String): Self = StObject.set(x, "706", value.asInstanceOf[js.Any])
   }
 }

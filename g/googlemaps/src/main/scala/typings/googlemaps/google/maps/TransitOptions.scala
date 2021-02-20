@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitOptions extends js.Object {
+trait TransitOptions extends StObject {
   
   var arrivalTime: js.UndefOr[Date] = js.native
   
@@ -25,45 +26,33 @@ object TransitOptions {
   }
   
   @scala.inline
-  implicit class TransitOptionsOps[Self <: TransitOptions] (val x: Self) extends AnyVal {
+  implicit class TransitOptionsMutableBuilder[Self <: TransitOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrivalTime(value: Date): Self = StObject.set(x, "arrivalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrivalTimeUndefined: Self = StObject.set(x, "arrivalTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepartureTime(value: Date): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrivalTime(value: Date): Self = this.set("arrivalTime", value.asInstanceOf[js.Any])
+    def setDepartureTimeUndefined: Self = StObject.set(x, "departureTime", js.undefined)
     
     @scala.inline
-    def deleteArrivalTime: Self = this.set("arrivalTime", js.undefined)
+    def setModes(value: js.Array[TransitMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartureTime(value: Date): Self = this.set("departureTime", value.asInstanceOf[js.Any])
+    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
     @scala.inline
-    def deleteDepartureTime: Self = this.set("departureTime", js.undefined)
+    def setModesVarargs(value: TransitMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
     @scala.inline
-    def setModesVarargs(value: TransitMode*): Self = this.set("modes", js.Array(value :_*))
+    def setRoutingPreference(value: TransitRoutePreference): Self = StObject.set(x, "routingPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModes(value: js.Array[TransitMode]): Self = this.set("modes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModes: Self = this.set("modes", js.undefined)
-    
-    @scala.inline
-    def setRoutingPreference(value: TransitRoutePreference): Self = this.set("routingPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutingPreference: Self = this.set("routingPreference", js.undefined)
+    def setRoutingPreferenceUndefined: Self = StObject.set(x, "routingPreference", js.undefined)
   }
 }

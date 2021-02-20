@@ -2,6 +2,7 @@ package typings.jointjs.mod.shapes
 
 import typings.jointjs.mod.attributes.SVGPolylineAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object SVGPolylineSelector {
   }
   
   @scala.inline
-  implicit class SVGPolylineSelectorOps[Self <: SVGPolylineSelector] (val x: Self) extends AnyVal {
+  implicit class SVGPolylineSelectorMutableBuilder[Self <: SVGPolylineSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolyline(value: SVGPolylineAttributes): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolyline(value: SVGPolylineAttributes): Self = this.set("polyline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolyline: Self = this.set("polyline", js.undefined)
+    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
   }
 }

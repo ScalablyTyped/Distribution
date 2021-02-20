@@ -1,16 +1,16 @@
 package typings.webcola
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcola/dist/src/descent", JSImport.Namespace)
-@js.native
-object descentMod extends js.Object {
+object descentMod {
   
+  @JSImport("webcola/dist/src/descent", "Descent")
   @js.native
-  class Descent protected () extends js.Object {
+  class Descent protected () extends StObject {
     def this(x: js.Array[js.Array[Double]], D: js.Array[js.Array[Double]]) = this()
     def this(x: js.Array[js.Array[Double]], D: js.Array[js.Array[Double]], G: js.Array[js.Array[Double]]) = this()
     
@@ -89,26 +89,56 @@ object descentMod extends js.Object {
     var xtmp: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Descent extends js.Object {
+  object Descent {
     
-    var copy: js.Any = js.native
+    @JSImport("webcola/dist/src/descent", "Descent")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("webcola/dist/src/descent", "Descent.copy")
+    @js.native
+    def copy: js.Any = js.native
+    @scala.inline
+    def copy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("copy")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webcola/dist/src/descent", "Descent.createSquareMatrix")
+    @js.native
     def createSquareMatrix(n: Double, f: js.Function2[/* i */ Double, /* j */ Double, Double]): js.Array[js.Array[Double]] = js.native
     
-    var dotProd: js.Any = js.native
+    @JSImport("webcola/dist/src/descent", "Descent.dotProd")
+    @js.native
+    def dotProd: js.Any = js.native
+    @scala.inline
+    def dotProd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotProd")(x.asInstanceOf[js.Any])
     
-    var mApply: js.Any = js.native
+    @JSImport("webcola/dist/src/descent", "Descent.mApply")
+    @js.native
+    def mApply: js.Any = js.native
+    @scala.inline
+    def mApply_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mApply")(x.asInstanceOf[js.Any])
     
-    var mid: js.Any = js.native
+    @JSImport("webcola/dist/src/descent", "Descent.mid")
+    @js.native
+    def mid: js.Any = js.native
+    @scala.inline
+    def mid_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mid")(x.asInstanceOf[js.Any])
     
-    var rightMultiply: js.Any = js.native
+    @JSImport("webcola/dist/src/descent", "Descent.rightMultiply")
+    @js.native
+    def rightMultiply: js.Any = js.native
+    @scala.inline
+    def rightMultiply_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightMultiply")(x.asInstanceOf[js.Any])
     
-    var zeroDistance: js.Any = js.native
+    @JSImport("webcola/dist/src/descent", "Descent.zeroDistance")
+    @js.native
+    def zeroDistance: js.Any = js.native
+    @scala.inline
+    def zeroDistance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zeroDistance")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("webcola/dist/src/descent", "Locks")
   @js.native
-  class Locks () extends js.Object {
+  class Locks () extends StObject {
     
     def add(id: Double, x: js.Array[Double]): Unit = js.native
     
@@ -122,8 +152,9 @@ object descentMod extends js.Object {
     var locks: NumberDictionary[js.Array[Double]] = js.native
   }
   
+  @JSImport("webcola/dist/src/descent", "PseudoRandom")
   @js.native
-  class PseudoRandom () extends js.Object {
+  class PseudoRandom () extends StObject {
     def this(seed: Double) = this()
     
     var a: js.Any = js.native

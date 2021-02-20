@@ -1,11 +1,12 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rule extends js.Object {
+trait Rule extends StObject {
   
   var all: js.UndefOr[js.Array[String]] = js.native
   
@@ -38,96 +39,84 @@ object Rule {
   }
   
   @scala.inline
-  implicit class RuleOps[Self <: Rule] (val x: Self) extends AnyVal {
+  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: js.Array[String]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllVarargs(value: String*): Self = StObject.set(x, "all", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setAny(value: js.Array[String]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllVarargs(value: String*): Self = this.set("all", js.Array(value :_*))
+    def setAnyUndefined: Self = StObject.set(x, "any", js.undefined)
     
     @scala.inline
-    def setAll(value: js.Array[String]): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setAnyVarargs(value: String*): Self = StObject.set(x, "any", js.Array(value :_*))
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnyVarargs(value: String*): Self = this.set("any", js.Array(value :_*))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setAny(value: js.Array[String]): Self = this.set("any", value.asInstanceOf[js.Any])
+    def setExcludeHidden(value: Boolean): Self = StObject.set(x, "excludeHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAny: Self = this.set("any", js.undefined)
+    def setExcludeHiddenUndefined: Self = StObject.set(x, "excludeHidden", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setImpact(value: ImpactValue): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeHidden(value: Boolean): Self = this.set("excludeHidden", value.asInstanceOf[js.Any])
+    def setImpactNull: Self = StObject.set(x, "impact", null)
     
     @scala.inline
-    def deleteExcludeHidden: Self = this.set("excludeHidden", js.undefined)
+    def setImpactUndefined: Self = StObject.set(x, "impact", js.undefined)
     
     @scala.inline
-    def setImpact(value: ImpactValue): Self = this.set("impact", value.asInstanceOf[js.Any])
+    def setMatches(value: String): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImpact: Self = this.set("impact", js.undefined)
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def setImpactNull: Self = this.set("impact", null)
+    def setNone(value: js.Array[String]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatches(value: String): Self = this.set("matches", value.asInstanceOf[js.Any])
+    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
     @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setNoneVarargs(value: String*): Self = StObject.set(x, "none", js.Array(value :_*))
     
     @scala.inline
-    def setNoneVarargs(value: String*): Self = this.set("none", js.Array(value :_*))
+    def setPageLevel(value: Boolean): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: js.Array[String]): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
     
     @scala.inline
-    def deleteNone: Self = this.set("none", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLevel(value: Boolean): Self = this.set("pageLevel", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deletePageLevel: Self = this.set("pageLevel", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

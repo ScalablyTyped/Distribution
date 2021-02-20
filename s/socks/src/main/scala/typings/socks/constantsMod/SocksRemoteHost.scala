@@ -1,5 +1,6 @@
 package typings.socks.constantsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a remote host
   */
 @js.native
-trait SocksRemoteHost extends js.Object {
+trait SocksRemoteHost extends StObject {
   
   var host: String = js.native
   
@@ -23,24 +24,12 @@ object SocksRemoteHost {
   }
   
   @scala.inline
-  implicit class SocksRemoteHostOps[Self <: SocksRemoteHost] (val x: Self) extends AnyVal {
+  implicit class SocksRemoteHostMutableBuilder[Self <: SocksRemoteHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

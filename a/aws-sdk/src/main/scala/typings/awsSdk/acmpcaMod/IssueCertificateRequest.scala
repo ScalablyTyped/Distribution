@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IssueCertificateRequest extends js.Object {
+trait IssueCertificateRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that was returned when you called CreateCertificateAuthority. This must be of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012  
@@ -46,42 +47,30 @@ object IssueCertificateRequest {
   }
   
   @scala.inline
-  implicit class IssueCertificateRequestOps[Self <: IssueCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class IssueCertificateRequestMutableBuilder[Self <: IssueCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsr(value: CsrBlob): Self = StObject.set(x, "Csr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
     
     @scala.inline
-    def setCsr(value: CsrBlob): Self = this.set("Csr", value.asInstanceOf[js.Any])
+    def setSigningAlgorithm(value: SigningAlgorithm): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningAlgorithm(value: SigningAlgorithm): Self = this.set("SigningAlgorithm", value.asInstanceOf[js.Any])
+    def setTemplateArn(value: Arn): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidity(value: Validity): Self = this.set("Validity", value.asInstanceOf[js.Any])
+    def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
     
     @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdempotencyToken: Self = this.set("IdempotencyToken", js.undefined)
-    
-    @scala.inline
-    def setTemplateArn(value: Arn): Self = this.set("TemplateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateArn: Self = this.set("TemplateArn", js.undefined)
+    def setValidity(value: Validity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
   }
 }

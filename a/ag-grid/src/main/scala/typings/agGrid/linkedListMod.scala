@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/misc/linkedList", JSImport.Namespace)
-@js.native
-object linkedListMod extends js.Object {
+object linkedListMod {
   
+  @JSImport("ag-grid/dist/lib/misc/linkedList", "LinkedList")
   @js.native
-  class LinkedList[T] () extends js.Object {
+  class LinkedList[T] () extends StObject {
     
     def add(item: T): Unit = js.native
     

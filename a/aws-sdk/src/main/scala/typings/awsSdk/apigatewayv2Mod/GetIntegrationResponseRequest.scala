@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetIntegrationResponseRequest extends js.Object {
+trait GetIntegrationResponseRequest extends StObject {
   
   /**
     * The API identifier.
@@ -31,27 +32,15 @@ object GetIntegrationResponseRequest {
   }
   
   @scala.inline
-  implicit class GetIntegrationResponseRequestOps[Self <: GetIntegrationResponseRequest] (val x: Self) extends AnyVal {
+  implicit class GetIntegrationResponseRequestMutableBuilder[Self <: GetIntegrationResponseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntegrationId(value: string): Self = this.set("IntegrationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntegrationResponseId(value: string): Self = this.set("IntegrationResponseId", value.asInstanceOf[js.Any])
+    def setIntegrationResponseId(value: string): Self = StObject.set(x, "IntegrationResponseId", value.asInstanceOf[js.Any])
   }
 }

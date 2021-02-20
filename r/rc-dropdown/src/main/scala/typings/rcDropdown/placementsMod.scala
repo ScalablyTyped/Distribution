@@ -1,27 +1,53 @@
 package typings.rcDropdown
 
 import typings.rcDropdown.anon.Offset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-dropdown/es/placements", JSImport.Namespace)
-@js.native
-object placementsMod extends js.Object {
+object placementsMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var bottomCenter: Offset = js.native
+    @JSImport("rc-dropdown/es/placements", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var bottomLeft: Offset = js.native
+    @JSImport("rc-dropdown/es/placements", "default.bottomCenter")
+    @js.native
+    def bottomCenter: Offset = js.native
+    @scala.inline
+    def bottomCenter_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomCenter")(x.asInstanceOf[js.Any])
     
-    var bottomRight: Offset = js.native
+    @JSImport("rc-dropdown/es/placements", "default.bottomLeft")
+    @js.native
+    def bottomLeft: Offset = js.native
+    @scala.inline
+    def bottomLeft_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomLeft")(x.asInstanceOf[js.Any])
     
-    var topCenter: Offset = js.native
+    @JSImport("rc-dropdown/es/placements", "default.bottomRight")
+    @js.native
+    def bottomRight: Offset = js.native
+    @scala.inline
+    def bottomRight_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomRight")(x.asInstanceOf[js.Any])
     
-    var topLeft: Offset = js.native
+    @JSImport("rc-dropdown/es/placements", "default.topCenter")
+    @js.native
+    def topCenter: Offset = js.native
+    @scala.inline
+    def topCenter_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topCenter")(x.asInstanceOf[js.Any])
     
-    var topRight: Offset = js.native
+    @JSImport("rc-dropdown/es/placements", "default.topLeft")
+    @js.native
+    def topLeft: Offset = js.native
+    @scala.inline
+    def topLeft_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topLeft")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-dropdown/es/placements", "default.topRight")
+    @js.native
+    def topRight: Offset = js.native
+    @scala.inline
+    def topRight_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRight")(x.asInstanceOf[js.Any])
   }
 }

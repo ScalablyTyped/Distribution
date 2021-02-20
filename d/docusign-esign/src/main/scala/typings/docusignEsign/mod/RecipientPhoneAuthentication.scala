@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientPhoneAuthentication extends js.Object {
+trait RecipientPhoneAuthentication extends StObject {
   
   /**
     * Boolean. When set to **true**, the recipient can supply a phone number their choice.
@@ -56,69 +57,57 @@ object RecipientPhoneAuthentication {
   }
   
   @scala.inline
-  implicit class RecipientPhoneAuthenticationOps[Self <: RecipientPhoneAuthentication] (val x: Self) extends AnyVal {
+  implicit class RecipientPhoneAuthenticationMutableBuilder[Self <: RecipientPhoneAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecipMayProvideNumber(value: String): Self = StObject.set(x, "recipMayProvideNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecipMayProvideNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recipMayProvideNumberMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipMayProvideNumberMetadataUndefined: Self = StObject.set(x, "recipMayProvideNumberMetadata", js.undefined)
     
     @scala.inline
-    def setRecipMayProvideNumber(value: String): Self = this.set("recipMayProvideNumber", value.asInstanceOf[js.Any])
+    def setRecipMayProvideNumberUndefined: Self = StObject.set(x, "recipMayProvideNumber", js.undefined)
     
     @scala.inline
-    def deleteRecipMayProvideNumber: Self = this.set("recipMayProvideNumber", js.undefined)
+    def setRecordVoicePrint(value: String): Self = StObject.set(x, "recordVoicePrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipMayProvideNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("recipMayProvideNumberMetadata", value.asInstanceOf[js.Any])
+    def setRecordVoicePrintMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recordVoicePrintMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipMayProvideNumberMetadata: Self = this.set("recipMayProvideNumberMetadata", js.undefined)
+    def setRecordVoicePrintMetadataUndefined: Self = StObject.set(x, "recordVoicePrintMetadata", js.undefined)
     
     @scala.inline
-    def setRecordVoicePrint(value: String): Self = this.set("recordVoicePrint", value.asInstanceOf[js.Any])
+    def setRecordVoicePrintUndefined: Self = StObject.set(x, "recordVoicePrint", js.undefined)
     
     @scala.inline
-    def deleteRecordVoicePrint: Self = this.set("recordVoicePrint", js.undefined)
+    def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordVoicePrintMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("recordVoicePrintMetadata", value.asInstanceOf[js.Any])
+    def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordVoicePrintMetadata: Self = this.set("recordVoicePrintMetadata", js.undefined)
+    def setSenderProvidedNumbersMetadataUndefined: Self = StObject.set(x, "senderProvidedNumbersMetadata", js.undefined)
     
     @scala.inline
-    def setSenderProvidedNumbersVarargs(value: String*): Self = this.set("senderProvidedNumbers", js.Array(value :_*))
+    def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
     
     @scala.inline
-    def setSenderProvidedNumbers(value: js.Array[String]): Self = this.set("senderProvidedNumbers", value.asInstanceOf[js.Any])
+    def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
     
     @scala.inline
-    def deleteSenderProvidedNumbers: Self = this.set("senderProvidedNumbers", js.undefined)
+    def setValidateRecipProvidedNumber(value: String): Self = StObject.set(x, "validateRecipProvidedNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
+    def setValidateRecipProvidedNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "validateRecipProvidedNumberMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSenderProvidedNumbersMetadata: Self = this.set("senderProvidedNumbersMetadata", js.undefined)
+    def setValidateRecipProvidedNumberMetadataUndefined: Self = StObject.set(x, "validateRecipProvidedNumberMetadata", js.undefined)
     
     @scala.inline
-    def setValidateRecipProvidedNumber(value: String): Self = this.set("validateRecipProvidedNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateRecipProvidedNumber: Self = this.set("validateRecipProvidedNumber", js.undefined)
-    
-    @scala.inline
-    def setValidateRecipProvidedNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("validateRecipProvidedNumberMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateRecipProvidedNumberMetadata: Self = this.set("validateRecipProvidedNumberMetadata", js.undefined)
+    def setValidateRecipProvidedNumberUndefined: Self = StObject.set(x, "validateRecipProvidedNumber", js.undefined)
   }
 }

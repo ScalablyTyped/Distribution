@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PositionSource extends js.Object
+sealed trait PositionSource extends StObject
 /** Indicates the source used to obtain a Geocoordinate . */
 @JSGlobal("Windows.Devices.Geolocation.PositionSource")
 @js.native
-object PositionSource extends js.Object {
+object PositionSource extends StObject {
   
   /** The position was obtained from cellular network data. */
   @js.native

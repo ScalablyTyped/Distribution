@@ -1,12 +1,13 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
 @js.native
-trait RangeUpdateData extends js.Object {
+trait RangeUpdateData extends StObject {
   
   /**
     *
@@ -51,42 +52,30 @@ object RangeUpdateData {
   }
   
   @scala.inline
-  implicit class RangeUpdateDataOps[Self <: RangeUpdateData] (val x: Self) extends AnyVal {
+  implicit class RangeUpdateDataMutableBuilder[Self <: RangeUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontUpdateData): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: String): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHyperlink: Self = this.set("hyperlink", js.undefined)
+    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = this.set("styleBuiltIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleBuiltIn: Self = this.set("styleBuiltIn", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

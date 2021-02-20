@@ -1,11 +1,12 @@
 package typings.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForRet extends js.Object {
+trait ForRet extends StObject {
   
   def in(expr: js.Any): ForExpression = js.native
   

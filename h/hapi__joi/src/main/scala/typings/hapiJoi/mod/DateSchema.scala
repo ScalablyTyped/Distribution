@@ -4,6 +4,7 @@ import typings.hapiJoi.hapiJoiStrings.javascript
 import typings.hapiJoi.hapiJoiStrings.now
 import typings.hapiJoi.hapiJoiStrings.unix
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

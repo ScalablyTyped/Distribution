@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This EncryptedMediaExtensions API interface is a read-only map of media key statuses by key IDs. */
 @js.native
-trait MediaKeyStatusMap extends js.Object {
+trait MediaKeyStatusMap extends StObject {
   
   def entries(): IterableIterator[js.Tuple2[BufferSource, MediaKeyStatus]] = js.native
   

@@ -1,5 +1,6 @@
 package typings.reactSketchapp.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactSketchapp.reactSketchappStrings.hidden
   - typings.reactSketchapp.reactSketchappStrings.scroll
 */
-trait Overflow extends js.Object
+trait Overflow extends StObject
 object Overflow {
   
   @scala.inline

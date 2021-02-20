@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait browserInfoOptions extends js.Object {
+trait browserInfoOptions extends StObject {
   
   var culture: js.Any = js.native
   
@@ -24,30 +25,18 @@ object browserInfoOptions {
   }
   
   @scala.inline
-  implicit class browserInfoOptionsOps[Self <: browserInfoOptions] (val x: Self) extends AnyVal {
+  implicit class browserInfoOptionsMutableBuilder[Self <: browserInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCulture(value: js.Any): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMSPointerEnabled(value: Boolean): Self = StObject.set(x, "isMSPointerEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: js.Any): Self = this.set("culture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMSPointerEnabled(value: Boolean): Self = this.set("isMSPointerEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

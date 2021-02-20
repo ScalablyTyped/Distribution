@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformSummary extends js.Object {
+trait TransformSummary extends StObject {
   
   /** Transform-specific display data. */
   var displayData: js.UndefOr[js.Array[DisplayData]] = js.native
@@ -34,63 +35,51 @@ object TransformSummary {
   }
   
   @scala.inline
-  implicit class TransformSummaryOps[Self <: TransformSummary] (val x: Self) extends AnyVal {
+  implicit class TransformSummaryMutableBuilder[Self <: TransformSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayData(value: js.Array[DisplayData]): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayDataVarargs(value: DisplayData*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayDataVarargs(value: DisplayData*): Self = this.set("displayData", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayData(value: js.Array[DisplayData]): Self = this.set("displayData", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisplayData: Self = this.set("displayData", js.undefined)
+    def setInputCollectionName(value: js.Array[String]): Self = StObject.set(x, "inputCollectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInputCollectionNameUndefined: Self = StObject.set(x, "inputCollectionName", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInputCollectionNameVarargs(value: String*): Self = StObject.set(x, "inputCollectionName", js.Array(value :_*))
     
     @scala.inline
-    def setInputCollectionNameVarargs(value: String*): Self = this.set("inputCollectionName", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputCollectionName(value: js.Array[String]): Self = this.set("inputCollectionName", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInputCollectionName: Self = this.set("inputCollectionName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOutputCollectionName(value: js.Array[String]): Self = StObject.set(x, "outputCollectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutputCollectionNameUndefined: Self = StObject.set(x, "outputCollectionName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOutputCollectionNameVarargs(value: String*): Self = this.set("outputCollectionName", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputCollectionName(value: js.Array[String]): Self = this.set("outputCollectionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputCollectionName: Self = this.set("outputCollectionName", js.undefined)
+    def setOutputCollectionNameVarargs(value: String*): Self = StObject.set(x, "outputCollectionName", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFlowLogsRequest extends js.Object {
+trait CreateFlowLogsRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
@@ -76,87 +77,75 @@ object CreateFlowLogsRequest {
   }
   
   @scala.inline
-  implicit class CreateFlowLogsRequestOps[Self <: CreateFlowLogsRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFlowLogsRequestMutableBuilder[Self <: CreateFlowLogsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliverLogsPermissionArn(value: String): Self = StObject.set(x, "DeliverLogsPermissionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdsVarargs(value: FlowLogResourceId*): Self = this.set("ResourceIds", js.Array(value :_*))
+    def setDeliverLogsPermissionArnUndefined: Self = StObject.set(x, "DeliverLogsPermissionArn", js.undefined)
     
     @scala.inline
-    def setResourceIds(value: FlowLogResourceIds): Self = this.set("ResourceIds", value.asInstanceOf[js.Any])
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: FlowLogsResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setTrafficType(value: TrafficType): Self = this.set("TrafficType", value.asInstanceOf[js.Any])
+    def setLogDestination(value: String): Self = StObject.set(x, "LogDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setLogDestinationType(value: LogDestinationType): Self = StObject.set(x, "LogDestinationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setLogDestinationTypeUndefined: Self = StObject.set(x, "LogDestinationType", js.undefined)
     
     @scala.inline
-    def setDeliverLogsPermissionArn(value: String): Self = this.set("DeliverLogsPermissionArn", value.asInstanceOf[js.Any])
+    def setLogDestinationUndefined: Self = StObject.set(x, "LogDestination", js.undefined)
     
     @scala.inline
-    def deleteDeliverLogsPermissionArn: Self = this.set("DeliverLogsPermissionArn", js.undefined)
+    def setLogFormat(value: String): Self = StObject.set(x, "LogFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setLogFormatUndefined: Self = StObject.set(x, "LogFormat", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setLogGroupName(value: String): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogDestination(value: String): Self = this.set("LogDestination", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
     @scala.inline
-    def deleteLogDestination: Self = this.set("LogDestination", js.undefined)
+    def setMaxAggregationInterval(value: Integer): Self = StObject.set(x, "MaxAggregationInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogDestinationType(value: LogDestinationType): Self = this.set("LogDestinationType", value.asInstanceOf[js.Any])
+    def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "MaxAggregationInterval", js.undefined)
     
     @scala.inline
-    def deleteLogDestinationType: Self = this.set("LogDestinationType", js.undefined)
+    def setResourceIds(value: FlowLogResourceIds): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogFormat(value: String): Self = this.set("LogFormat", value.asInstanceOf[js.Any])
+    def setResourceIdsVarargs(value: FlowLogResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteLogFormat: Self = this.set("LogFormat", js.undefined)
+    def setResourceType(value: FlowLogsResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: String): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
     @scala.inline
-    def setMaxAggregationInterval(value: Integer): Self = this.set("MaxAggregationInterval", value.asInstanceOf[js.Any])
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def deleteMaxAggregationInterval: Self = this.set("MaxAggregationInterval", js.undefined)
-    
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+    def setTrafficType(value: TrafficType): Self = StObject.set(x, "TrafficType", value.asInstanceOf[js.Any])
   }
 }

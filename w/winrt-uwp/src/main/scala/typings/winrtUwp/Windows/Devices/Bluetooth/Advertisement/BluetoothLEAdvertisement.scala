@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A representation of a Bluetooth LE advertisement payload. */
 @js.native
-trait BluetoothLEAdvertisement extends js.Object {
+trait BluetoothLEAdvertisement extends StObject {
   
   /** Gets the list of raw data sections. */
   var dataSections: IVector[BluetoothLEAdvertisementDataSection] = js.native
@@ -56,39 +57,27 @@ object BluetoothLEAdvertisement {
   }
   
   @scala.inline
-  implicit class BluetoothLEAdvertisementOps[Self <: BluetoothLEAdvertisement] (val x: Self) extends AnyVal {
+  implicit class BluetoothLEAdvertisementMutableBuilder[Self <: BluetoothLEAdvertisement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSections(value: IVector[BluetoothLEAdvertisementDataSection]): Self = StObject.set(x, "dataSections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: BluetoothLEAdvertisementFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetManufacturerDataByCompanyId(value: Double => IVectorView[BluetoothLEManufacturerData]): Self = StObject.set(x, "getManufacturerDataByCompanyId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataSections(value: IVector[BluetoothLEAdvertisementDataSection]): Self = this.set("dataSections", value.asInstanceOf[js.Any])
+    def setGetSectionsByType(value: Double => IVectorView[BluetoothLEAdvertisementDataSection]): Self = StObject.set(x, "getSectionsByType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlags(value: BluetoothLEAdvertisementFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetManufacturerDataByCompanyId(value: Double => IVectorView[BluetoothLEManufacturerData]): Self = this.set("getManufacturerDataByCompanyId", js.Any.fromFunction1(value))
+    def setManufacturerData(value: IVector[BluetoothLEManufacturerData]): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSectionsByType(value: Double => IVectorView[BluetoothLEAdvertisementDataSection]): Self = this.set("getSectionsByType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocalName(value: String): Self = this.set("localName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManufacturerData(value: IVector[BluetoothLEManufacturerData]): Self = this.set("manufacturerData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceUuids(value: IVector[String]): Self = this.set("serviceUuids", value.asInstanceOf[js.Any])
+    def setServiceUuids(value: IVector[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import typings.tensorflowTfjsConverter.compiledApiMod.SaverDef.CheckpointFormatVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISaverDef extends js.Object {
+trait ISaverDef extends StObject {
   
   /** SaverDef filenameTensorName */
   var filenameTensorName: js.UndefOr[String | Null] = js.native
@@ -38,81 +39,69 @@ object ISaverDef {
   }
   
   @scala.inline
-  implicit class ISaverDefOps[Self <: ISaverDef] (val x: Self) extends AnyVal {
+  implicit class ISaverDefMutableBuilder[Self <: ISaverDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilenameTensorName(value: String): Self = StObject.set(x, "filenameTensorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilenameTensorNameNull: Self = StObject.set(x, "filenameTensorName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilenameTensorNameUndefined: Self = StObject.set(x, "filenameTensorName", js.undefined)
     
     @scala.inline
-    def setFilenameTensorName(value: String): Self = this.set("filenameTensorName", value.asInstanceOf[js.Any])
+    def setKeepCheckpointEveryNHours(value: Double): Self = StObject.set(x, "keepCheckpointEveryNHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilenameTensorName: Self = this.set("filenameTensorName", js.undefined)
+    def setKeepCheckpointEveryNHoursNull: Self = StObject.set(x, "keepCheckpointEveryNHours", null)
     
     @scala.inline
-    def setFilenameTensorNameNull: Self = this.set("filenameTensorName", null)
+    def setKeepCheckpointEveryNHoursUndefined: Self = StObject.set(x, "keepCheckpointEveryNHours", js.undefined)
     
     @scala.inline
-    def setKeepCheckpointEveryNHours(value: Double): Self = this.set("keepCheckpointEveryNHours", value.asInstanceOf[js.Any])
+    def setMaxToKeep(value: Double): Self = StObject.set(x, "maxToKeep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepCheckpointEveryNHours: Self = this.set("keepCheckpointEveryNHours", js.undefined)
+    def setMaxToKeepNull: Self = StObject.set(x, "maxToKeep", null)
     
     @scala.inline
-    def setKeepCheckpointEveryNHoursNull: Self = this.set("keepCheckpointEveryNHours", null)
+    def setMaxToKeepUndefined: Self = StObject.set(x, "maxToKeep", js.undefined)
     
     @scala.inline
-    def setMaxToKeep(value: Double): Self = this.set("maxToKeep", value.asInstanceOf[js.Any])
+    def setRestoreOpName(value: String): Self = StObject.set(x, "restoreOpName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxToKeep: Self = this.set("maxToKeep", js.undefined)
+    def setRestoreOpNameNull: Self = StObject.set(x, "restoreOpName", null)
     
     @scala.inline
-    def setMaxToKeepNull: Self = this.set("maxToKeep", null)
+    def setRestoreOpNameUndefined: Self = StObject.set(x, "restoreOpName", js.undefined)
     
     @scala.inline
-    def setRestoreOpName(value: String): Self = this.set("restoreOpName", value.asInstanceOf[js.Any])
+    def setSaveTensorName(value: String): Self = StObject.set(x, "saveTensorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestoreOpName: Self = this.set("restoreOpName", js.undefined)
+    def setSaveTensorNameNull: Self = StObject.set(x, "saveTensorName", null)
     
     @scala.inline
-    def setRestoreOpNameNull: Self = this.set("restoreOpName", null)
+    def setSaveTensorNameUndefined: Self = StObject.set(x, "saveTensorName", js.undefined)
     
     @scala.inline
-    def setSaveTensorName(value: String): Self = this.set("saveTensorName", value.asInstanceOf[js.Any])
+    def setSharded(value: Boolean): Self = StObject.set(x, "sharded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSaveTensorName: Self = this.set("saveTensorName", js.undefined)
+    def setShardedNull: Self = StObject.set(x, "sharded", null)
     
     @scala.inline
-    def setSaveTensorNameNull: Self = this.set("saveTensorName", null)
+    def setShardedUndefined: Self = StObject.set(x, "sharded", js.undefined)
     
     @scala.inline
-    def setSharded(value: Boolean): Self = this.set("sharded", value.asInstanceOf[js.Any])
+    def setVersion(value: CheckpointFormatVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharded: Self = this.set("sharded", js.undefined)
+    def setVersionNull: Self = StObject.set(x, "version", null)
     
     @scala.inline
-    def setShardedNull: Self = this.set("sharded", null)
-    
-    @scala.inline
-    def setVersion(value: CheckpointFormatVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

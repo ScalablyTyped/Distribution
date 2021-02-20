@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,39 +135,27 @@ object XEmbedPersist {
   }
   
   @scala.inline
-  implicit class XEmbedPersistOps[Self <: XEmbedPersist] (val x: Self) extends AnyVal {
+  implicit class XEmbedPersistMutableBuilder[Self <: XEmbedPersist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntryName(value: String): Self = StObject.set(x, "EntryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEntryName(value: () => String): Self = StObject.set(x, "getEntryName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasEntry(value: () => Boolean): Self = StObject.set(x, "hasEntry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEntryName(value: String): Self = this.set("EntryName", value.asInstanceOf[js.Any])
+    def setSaveCompleted(value: Boolean => Unit): Self = StObject.set(x, "saveCompleted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEntryName(value: () => String): Self = this.set("getEntryName", js.Any.fromFunction0(value))
+    def setSetPersistentEntry(value: (XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "setPersistentEntry", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setHasEntry(value: () => Boolean): Self = this.set("hasEntry", js.Any.fromFunction0(value))
+    def setStoreAsEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeAsEntry", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSaveCompleted(value: Boolean => Unit): Self = this.set("saveCompleted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPersistentEntry(value: (XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = this.set("setPersistentEntry", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setStoreAsEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeAsEntry", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStoreToEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToEntry", js.Any.fromFunction4(value))
+    def setStoreToEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToEntry", js.Any.fromFunction4(value))
   }
 }

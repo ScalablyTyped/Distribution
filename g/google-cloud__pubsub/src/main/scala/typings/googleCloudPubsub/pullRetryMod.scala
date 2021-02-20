@@ -2,16 +2,17 @@ package typings.googleCloudPubsub
 
 import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.constantsMod.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@google-cloud/pubsub/build/src/pull-retry", JSImport.Namespace)
-@js.native
-object pullRetryMod extends js.Object {
+object pullRetryMod {
+  
+  @JSImport("@google-cloud/pubsub/build/src/pull-retry", "PullRetry")
   @js.native
-  class PullRetry () extends js.Object {
-    var failures: js.Any = js.native
+  class PullRetry () extends StObject {
+    
     /**
       * Generates a timeout that can be used for applying a backoff based on the
       * current number of failed requests.
@@ -21,8 +22,11 @@ object pullRetryMod extends js.Object {
       * @returns {number}
       */
     def createTimeout(): Double = js.native
+    
+    var failures: js.Any = js.native
+    
     /**
-      * Determines if a request status should be retried.
+      * Determines if a request grpc.status should be retried.
       *
       * Deadlines behave kind of unexpectedly on streams, rather than using it as
       * an indicator of when to give up trying to connect, it actually dictates
@@ -31,12 +35,13 @@ object pullRetryMod extends js.Object {
       * the server closing the stream or if we timed out waiting for a connection.
       *
       * @private
-      * @param {object} status The request status.
+      * @param {object} grpc.status The request grpc.status.
       * @returns {boolean}
       */
     def retry(err: StatusObject): Boolean = js.native
   }
   
+  @JSImport("@google-cloud/pubsub/build/src/pull-retry", "RETRY_CODES")
+  @js.native
   val RETRY_CODES: js.Array[Status] = js.native
 }
-

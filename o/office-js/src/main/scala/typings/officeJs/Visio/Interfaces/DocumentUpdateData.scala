@@ -1,12 +1,13 @@
 package typings.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
 @js.native
-trait DocumentUpdateData extends js.Object {
+trait DocumentUpdateData extends StObject {
   
   /**
     *
@@ -33,30 +34,18 @@ object DocumentUpdateData {
   }
   
   @scala.inline
-  implicit class DocumentUpdateDataOps[Self <: DocumentUpdateData] (val x: Self) extends AnyVal {
+  implicit class DocumentUpdateDataMutableBuilder[Self <: DocumentUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: ApplicationUpdateData): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setView(value: DocumentViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: ApplicationUpdateData): Self = this.set("application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplication: Self = this.set("application", js.undefined)
-    
-    @scala.inline
-    def setView(value: DocumentViewUpdateData): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

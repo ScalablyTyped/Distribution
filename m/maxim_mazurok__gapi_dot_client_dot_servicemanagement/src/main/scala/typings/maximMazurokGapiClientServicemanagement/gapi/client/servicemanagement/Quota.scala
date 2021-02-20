@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Quota extends js.Object {
+trait Quota extends StObject {
   
   /** List of `QuotaLimit` definitions for the service. */
   var limits: js.UndefOr[js.Array[QuotaLimit]] = js.native
@@ -22,36 +23,24 @@ object Quota {
   }
   
   @scala.inline
-  implicit class QuotaOps[Self <: Quota] (val x: Self) extends AnyVal {
+  implicit class QuotaMutableBuilder[Self <: Quota] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimits(value: js.Array[QuotaLimit]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitsVarargs(value: QuotaLimit*): Self = StObject.set(x, "limits", js.Array(value :_*))
     
     @scala.inline
-    def setLimitsVarargs(value: QuotaLimit*): Self = this.set("limits", js.Array(value :_*))
+    def setMetricRules(value: js.Array[MetricRule]): Self = StObject.set(x, "metricRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: js.Array[QuotaLimit]): Self = this.set("limits", value.asInstanceOf[js.Any])
+    def setMetricRulesUndefined: Self = StObject.set(x, "metricRules", js.undefined)
     
     @scala.inline
-    def deleteLimits: Self = this.set("limits", js.undefined)
-    
-    @scala.inline
-    def setMetricRulesVarargs(value: MetricRule*): Self = this.set("metricRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetricRules(value: js.Array[MetricRule]): Self = this.set("metricRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricRules: Self = this.set("metricRules", js.undefined)
+    def setMetricRulesVarargs(value: MetricRule*): Self = StObject.set(x, "metricRules", js.Array(value :_*))
   }
 }

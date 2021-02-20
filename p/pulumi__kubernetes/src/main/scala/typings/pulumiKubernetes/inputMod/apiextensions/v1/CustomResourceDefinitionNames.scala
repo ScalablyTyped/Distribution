@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceDefinitionNames indicates the names to serve this CustomResourceDefinition
   */
 @js.native
-trait CustomResourceDefinitionNames extends js.Object {
+trait CustomResourceDefinitionNames extends StObject {
   
   /**
     * categories is a list of grouped resources this custom resource belongs to (e.g. 'all'). This is published in API discovery documents, and used by clients to support invocations like `kubectl get all`.
@@ -50,54 +51,42 @@ object CustomResourceDefinitionNames {
   }
   
   @scala.inline
-  implicit class CustomResourceDefinitionNamesOps[Self <: CustomResourceDefinitionNames] (val x: Self) extends AnyVal {
+  implicit class CustomResourceDefinitionNamesMutableBuilder[Self <: CustomResourceDefinitionNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setKind(value: Input[String]): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlural(value: Input[String]): Self = this.set("plural", value.asInstanceOf[js.Any])
+    def setListKind(value: Input[String]): Self = StObject.set(x, "listKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: Input[String]*): Self = this.set("categories", js.Array(value :_*))
+    def setListKindUndefined: Self = StObject.set(x, "listKind", js.undefined)
     
     @scala.inline
-    def setCategories(value: Input[js.Array[Input[String]]]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setPlural(value: Input[String]): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setShortNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shortNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListKind(value: Input[String]): Self = this.set("listKind", value.asInstanceOf[js.Any])
+    def setShortNamesUndefined: Self = StObject.set(x, "shortNames", js.undefined)
     
     @scala.inline
-    def deleteListKind: Self = this.set("listKind", js.undefined)
+    def setShortNamesVarargs(value: Input[String]*): Self = StObject.set(x, "shortNames", js.Array(value :_*))
     
     @scala.inline
-    def setShortNamesVarargs(value: Input[String]*): Self = this.set("shortNames", js.Array(value :_*))
+    def setSingular(value: Input[String]): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortNames(value: Input[js.Array[Input[String]]]): Self = this.set("shortNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortNames: Self = this.set("shortNames", js.undefined)
-    
-    @scala.inline
-    def setSingular(value: Input[String]): Self = this.set("singular", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingular: Self = this.set("singular", js.undefined)
+    def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
   }
 }

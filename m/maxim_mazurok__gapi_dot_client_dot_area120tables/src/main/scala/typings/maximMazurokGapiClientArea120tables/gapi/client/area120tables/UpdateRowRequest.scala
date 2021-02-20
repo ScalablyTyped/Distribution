@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRowRequest extends js.Object {
+trait UpdateRowRequest extends StObject {
   
   /** Required. The row to update. */
   var row: js.UndefOr[Row] = js.native
@@ -25,36 +26,24 @@ object UpdateRowRequest {
   }
   
   @scala.inline
-  implicit class UpdateRowRequestOps[Self <: UpdateRowRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRowRequestMutableBuilder[Self <: UpdateRowRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow(value: Row): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
-    
-    @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

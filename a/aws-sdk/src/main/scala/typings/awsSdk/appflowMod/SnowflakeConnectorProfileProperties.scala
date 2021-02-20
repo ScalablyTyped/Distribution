@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnowflakeConnectorProfileProperties extends js.Object {
+trait SnowflakeConnectorProfileProperties extends StObject {
   
   /**
     *  The name of the account. 
@@ -51,51 +52,39 @@ object SnowflakeConnectorProfileProperties {
   }
   
   @scala.inline
-  implicit class SnowflakeConnectorProfilePropertiesOps[Self <: SnowflakeConnectorProfileProperties] (val x: Self) extends AnyVal {
+  implicit class SnowflakeConnectorProfilePropertiesMutableBuilder[Self <: SnowflakeConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: AccountName): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: Stage): Self = this.set("stage", value.asInstanceOf[js.Any])
+    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
     @scala.inline
-    def setWarehouse(value: Warehouse): Self = this.set("warehouse", value.asInstanceOf[js.Any])
+    def setPrivateLinkServiceName(value: PrivateLinkServiceName): Self = StObject.set(x, "privateLinkServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: AccountName): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setPrivateLinkServiceNameUndefined: Self = StObject.set(x, "privateLinkServiceName", js.undefined)
     
     @scala.inline
-    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
+    def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateLinkServiceName(value: PrivateLinkServiceName): Self = this.set("privateLinkServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateLinkServiceName: Self = this.set("privateLinkServiceName", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setWarehouse(value: Warehouse): Self = StObject.set(x, "warehouse", value.asInstanceOf[js.Any])
   }
 }

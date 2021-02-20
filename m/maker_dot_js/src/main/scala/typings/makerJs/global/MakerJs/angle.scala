@@ -3,13 +3,12 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.IPathArc
 import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.angle")
-@js.native
-object angle extends js.Object {
+object angle {
   
   /**
     * Mirror an angle on either or both x and y axes.
@@ -19,6 +18,8 @@ object angle extends js.Object {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored angle.
     */
+  @JSGlobal("MakerJs.angle.mirror")
+  @js.native
   def mirror(angleInDegrees: Double, mirrorX: Boolean, mirrorY: Boolean): Double = js.native
   
   /**
@@ -27,6 +28,8 @@ object angle extends js.Object {
     * @param angleInDegrees Angle in degrees.
     * @retiurns Same polar angle but not greater than 360 degrees.
     */
+  @JSGlobal("MakerJs.angle.noRevolutions")
+  @js.native
   def noRevolutions(angleInDegrees: Double): Double = js.native
   
   /**
@@ -35,6 +38,8 @@ object angle extends js.Object {
     * @param arc An arc path object.
     * @returns End angle of arc.
     */
+  @JSGlobal("MakerJs.angle.ofArcEnd")
+  @js.native
   def ofArcEnd(arc: IPathArc): Double = js.native
   
   /**
@@ -44,7 +49,11 @@ object angle extends js.Object {
     * @param ratio Optional number between 0 and 1 specifying percentage between start and end angles. Default is .5
     * @returns Middle angle of arc.
     */
+  @JSGlobal("MakerJs.angle.ofArcMiddle")
+  @js.native
   def ofArcMiddle(arc: IPathArc): Double = js.native
+  @JSGlobal("MakerJs.angle.ofArcMiddle")
+  @js.native
   def ofArcMiddle(arc: IPathArc, ratio: Double): Double = js.native
   
   /**
@@ -53,6 +62,8 @@ object angle extends js.Object {
     * @param arc The arc to measure.
     * @returns Angle of arc.
     */
+  @JSGlobal("MakerJs.angle.ofArcSpan")
+  @js.native
   def ofArcSpan(arc: IPathArc): Double = js.native
   
   /**
@@ -61,6 +72,8 @@ object angle extends js.Object {
     * @param line The line path to find the angle of.
     * @returns Angle of the line path, in degrees.
     */
+  @JSGlobal("MakerJs.angle.ofLineInDegrees")
+  @js.native
   def ofLineInDegrees(line: IPathLine): Double = js.native
   
   /**
@@ -70,6 +83,8 @@ object angle extends js.Object {
     * @param origin Point of origin of the angle.
     * @returns Angle of the line throught the point, in degrees.
     */
+  @JSGlobal("MakerJs.angle.ofPointInDegrees")
+  @js.native
   def ofPointInDegrees(origin: IPoint, pointToFindAngle: IPoint): Double = js.native
   
   /**
@@ -79,6 +94,8 @@ object angle extends js.Object {
     * @param origin Point of origin of the angle.
     * @returns Angle of the line throught the point, in radians.
     */
+  @JSGlobal("MakerJs.angle.ofPointInRadians")
+  @js.native
   def ofPointInRadians(origin: IPoint, pointToFindAngle: IPoint): Double = js.native
   
   /**
@@ -87,6 +104,8 @@ object angle extends js.Object {
     * @param angleInRadians Angle in radians.
     * @returns Angle in degrees.
     */
+  @JSGlobal("MakerJs.angle.toDegrees")
+  @js.native
   def toDegrees(angleInRadians: Double): Double = js.native
   
   /**
@@ -95,5 +114,7 @@ object angle extends js.Object {
     * @param angleInDegrees Angle in degrees.
     * @returns Angle in radians.
     */
+  @JSGlobal("MakerJs.angle.toRadians")
+  @js.native
   def toRadians(angleInDegrees: Double): Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokerInstance extends js.Object {
+trait BrokerInstance extends StObject {
   
   /**
     * The URL of the broker's Web Console.
@@ -31,39 +32,27 @@ object BrokerInstance {
   }
   
   @scala.inline
-  implicit class BrokerInstanceOps[Self <: BrokerInstance] (val x: Self) extends AnyVal {
+  implicit class BrokerInstanceMutableBuilder[Self <: BrokerInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsoleURL(value: string): Self = StObject.set(x, "ConsoleURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsoleURLUndefined: Self = StObject.set(x, "ConsoleURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsoleURL(value: string): Self = this.set("ConsoleURL", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def deleteConsoleURL: Self = this.set("ConsoleURL", js.undefined)
+    def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsVarargs(value: string*): Self = this.set("Endpoints", js.Array(value :_*))
+    def setIpAddress(value: string): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: listOfString): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
-    
-    @scala.inline
-    def setIpAddress(value: string): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartMediaInfoValueProperties extends js.Object {
+trait ChartMediaInfoValueProperties extends StObject {
   
   /**
     * An array of strings, with each string containing the name of a field to display in the chart.
@@ -44,48 +45,36 @@ object ChartMediaInfoValueProperties {
   }
   
   @scala.inline
-  implicit class ChartMediaInfoValuePropertiesOps[Self <: ChartMediaInfoValueProperties] (val x: Self) extends AnyVal {
+  implicit class ChartMediaInfoValuePropertiesMutableBuilder[Self <: ChartMediaInfoValueProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setNormalizeField(value: String): Self = StObject.set(x, "normalizeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setNormalizeFieldUndefined: Self = StObject.set(x, "normalizeField", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setSeries(value: js.Array[ChartMediaInfoValueSeriesProperties]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizeField(value: String): Self = this.set("normalizeField", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteNormalizeField: Self = this.set("normalizeField", js.undefined)
+    def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = this.set("series", js.Array(value :_*))
+    def setTooltipField(value: String): Self = StObject.set(x, "tooltipField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[ChartMediaInfoValueSeriesProperties]): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
-    
-    @scala.inline
-    def setTooltipField(value: String): Self = this.set("tooltipField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipField: Self = this.set("tooltipField", js.undefined)
+    def setTooltipFieldUndefined: Self = StObject.set(x, "tooltipField", js.undefined)
   }
 }

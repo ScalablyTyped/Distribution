@@ -4,25 +4,38 @@ import typings.slimerjs.slimerjsStrings.fs
 import typings.slimerjs.slimerjsStrings.system
 import typings.slimerjs.slimerjsStrings.webpage
 import typings.slimerjs.slimerjsStrings.webserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var phantom: Phantom = js.native
+  @JSGlobal("phantom")
+  @js.native
+  def phantom: Phantom = js.native
+  @scala.inline
+  def phantom_=(x: Phantom): Unit = js.Dynamic.global.updateDynamic("phantom")(x.asInstanceOf[js.Any])
   
+  @JSGlobal("require")
+  @js.native
   def require(module: js.Any): js.Any = js.native
-  @JSName("require")
+  @JSGlobal("require")
+  @js.native
   def require_fs(module: fs): FsModule = js.native
-  @JSName("require")
+  @JSGlobal("require")
+  @js.native
   def require_system(module: system): SystemModule = js.native
-  @JSName("require")
+  @JSGlobal("require")
+  @js.native
   def require_webpage(module: webpage): WebPageModule = js.native
-  @JSName("require")
+  @JSGlobal("require")
+  @js.native
   def require_webserver(module: webserver): WebServerModule = js.native
   
-  var slimer: Slimer = js.native
+  @JSGlobal("slimer")
+  @js.native
+  def slimer: Slimer = js.native
+  @scala.inline
+  def slimer_=(x: Slimer): Unit = js.Dynamic.global.updateDynamic("slimer")(x.asInstanceOf[js.Any])
 }

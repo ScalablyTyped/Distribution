@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Note extends js.Object {
+trait Note extends StObject {
   
   /** A note describing a package hosted by various package managers. */
   @JSName("package")
@@ -68,126 +69,114 @@ object Note {
   }
   
   @scala.inline
-  implicit class NoteOps[Self <: Note] (val x: Self) extends AnyVal {
+  implicit class NoteMutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestationAuthority(value: Authority): Self = StObject.set(x, "attestationAuthority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestationAuthorityUndefined: Self = StObject.set(x, "attestationAuthority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseImage(value: Basis): Self = StObject.set(x, "baseImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: Package): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setBaseImageUndefined: Self = StObject.set(x, "baseImage", js.undefined)
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestationAuthority(value: Authority): Self = this.set("attestationAuthority", value.asInstanceOf[js.Any])
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def deleteAttestationAuthority: Self = this.set("attestationAuthority", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseImage(value: Basis): Self = this.set("baseImage", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBaseImage: Self = this.set("baseImage", js.undefined)
+    def setDeployable(value: Deployable): Self = StObject.set(x, "deployable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: Build): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setDeployableUndefined: Self = StObject.set(x, "deployable", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setDiscovery(value: Discovery): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDiscoveryUndefined: Self = StObject.set(x, "discovery", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployable(value: Deployable): Self = this.set("deployable", value.asInstanceOf[js.Any])
+    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
     @scala.inline
-    def deleteDeployable: Self = this.set("deployable", js.undefined)
+    def setIntoto(value: InToto): Self = StObject.set(x, "intoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscovery(value: Discovery): Self = this.set("discovery", value.asInstanceOf[js.Any])
+    def setIntotoUndefined: Self = StObject.set(x, "intoto", js.undefined)
     
     @scala.inline
-    def deleteDiscovery: Self = this.set("discovery", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntoto(value: InToto): Self = this.set("intoto", value.asInstanceOf[js.Any])
+    def setLongDescriptionUndefined: Self = StObject.set(x, "longDescription", js.undefined)
     
     @scala.inline
-    def deleteIntoto: Self = this.set("intoto", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRelatedNoteNames(value: js.Array[String]): Self = StObject.set(x, "relatedNoteNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDescription(value: String): Self = this.set("longDescription", value.asInstanceOf[js.Any])
+    def setRelatedNoteNamesUndefined: Self = StObject.set(x, "relatedNoteNames", js.undefined)
     
     @scala.inline
-    def deleteLongDescription: Self = this.set("longDescription", js.undefined)
+    def setRelatedNoteNamesVarargs(value: String*): Self = StObject.set(x, "relatedNoteNames", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRelatedUrl(value: js.Array[RelatedUrl]): Self = StObject.set(x, "relatedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRelatedUrlUndefined: Self = StObject.set(x, "relatedUrl", js.undefined)
     
     @scala.inline
-    def setRelatedNoteNamesVarargs(value: String*): Self = this.set("relatedNoteNames", js.Array(value :_*))
+    def setRelatedUrlVarargs(value: RelatedUrl*): Self = StObject.set(x, "relatedUrl", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedNoteNames(value: js.Array[String]): Self = this.set("relatedNoteNames", value.asInstanceOf[js.Any])
+    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatedNoteNames: Self = this.set("relatedNoteNames", js.undefined)
+    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
     
     @scala.inline
-    def setRelatedUrlVarargs(value: RelatedUrl*): Self = this.set("relatedUrl", js.Array(value :_*))
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedUrl(value: js.Array[RelatedUrl]): Self = this.set("relatedUrl", value.asInstanceOf[js.Any])
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def deleteRelatedUrl: Self = this.set("relatedUrl", js.undefined)
+    def setVulnerability(value: Vulnerability): Self = StObject.set(x, "vulnerability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDescription(value: String): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
+    def setVulnerabilityUndefined: Self = StObject.set(x, "vulnerability", js.undefined)
     
     @scala.inline
-    def deleteShortDescription: Self = this.set("shortDescription", js.undefined)
+    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
-    
-    @scala.inline
-    def setVulnerability(value: Vulnerability): Self = this.set("vulnerability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVulnerability: Self = this.set("vulnerability", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

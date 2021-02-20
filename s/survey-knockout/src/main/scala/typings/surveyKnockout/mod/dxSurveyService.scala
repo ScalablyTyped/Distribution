@@ -2,13 +2,14 @@ package typings.surveyKnockout.mod
 
 import typings.std.File
 import typings.std.JSON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "dxSurveyService")
 @js.native
-class dxSurveyService () extends js.Object {
+class dxSurveyService () extends StObject {
   
   def getResult(
     resultId: String,
@@ -78,9 +79,15 @@ class dxSurveyService () extends js.Object {
   ): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "dxSurveyService")
-@js.native
-object dxSurveyService extends js.Object {
+object dxSurveyService {
   
-  var serviceUrl: String = js.native
+  @JSImport("survey-knockout", "dxSurveyService")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "dxSurveyService.serviceUrl")
+  @js.native
+  def serviceUrl: String = js.native
+  @scala.inline
+  def serviceUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceUrl")(x.asInstanceOf[js.Any])
 }

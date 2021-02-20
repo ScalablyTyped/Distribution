@@ -1,18 +1,20 @@
 package typings.reactNativeBcrypt
 
+import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-bcrypt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("react-native-bcrypt", JSImport.Default)
+  @js.native
   val default: ReactNativeBcrypt = js.native
   
   @js.native
-  trait ReactNativeBcrypt extends js.Object {
+  trait ReactNativeBcrypt extends StObject {
     
     /**
       * Asynchronously compares the given data against the given hash.
@@ -198,4 +200,9 @@ object mod extends js.Object {
     def setRandomFallback(): Unit = js.native
     def setRandomFallback(random: js.Function1[/* number */ Double, js.Array[Double]]): Unit = js.native
   }
+  
+  type _To = ReactNativeBcrypt
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: ReactNativeBcrypt = default
 }

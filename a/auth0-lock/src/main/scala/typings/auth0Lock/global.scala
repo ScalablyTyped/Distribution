@@ -1,19 +1,22 @@
 package typings.auth0Lock
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("Auth0Lock")
   @js.native
   class Auth0Lock protected () extends Auth0LockStatic {
     def this(clientId: String, domain: String) = this()
     def this(clientId: String, domain: String, options: Auth0LockConstructorOptions) = this()
   }
+  @JSGlobal("Auth0Lock")
   @js.native
-  object Auth0Lock extends TopLevel[Auth0LockStatic]
+  def Auth0Lock: Auth0LockStatic = js.native
+  @scala.inline
+  def Auth0Lock_=(x: Auth0LockStatic): Unit = js.Dynamic.global.updateDynamic("Auth0Lock")(x.asInstanceOf[js.Any])
 }

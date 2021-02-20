@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cache extends js.Object {
+trait Cache extends StObject {
   
   /**
     * State of a cache entry after the request.
@@ -33,42 +34,30 @@ object Cache {
   }
   
   @scala.inline
-  implicit class CacheOps[Self <: Cache] (val x: Self) extends AnyVal {
+  implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterRequest(value: CacheDetails): Self = StObject.set(x, "afterRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRequestNull: Self = StObject.set(x, "afterRequest", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
     
     @scala.inline
-    def setAfterRequest(value: CacheDetails): Self = this.set("afterRequest", value.asInstanceOf[js.Any])
+    def setBeforeRequest(value: CacheDetails): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterRequest: Self = this.set("afterRequest", js.undefined)
+    def setBeforeRequestNull: Self = StObject.set(x, "beforeRequest", null)
     
     @scala.inline
-    def setAfterRequestNull: Self = this.set("afterRequest", null)
+    def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
     
     @scala.inline
-    def setBeforeRequest(value: CacheDetails): Self = this.set("beforeRequest", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeRequest: Self = this.set("beforeRequest", js.undefined)
-    
-    @scala.inline
-    def setBeforeRequestNull: Self = this.set("beforeRequest", null)
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
   }
 }

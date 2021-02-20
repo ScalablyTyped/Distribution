@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRelayWebhook extends js.Object {
+trait UpdateRelayWebhook extends StObject {
   
   /** Authentication token to present in the X-MessageSystems-Webhook-Token header of POST requests to target */
   var auth_token: js.UndefOr[String] = js.native
@@ -28,39 +29,27 @@ object UpdateRelayWebhook {
   }
   
   @scala.inline
-  implicit class UpdateRelayWebhookOps[Self <: UpdateRelayWebhook] (val x: Self) extends AnyVal {
+  implicit class UpdateRelayWebhookMutableBuilder[Self <: UpdateRelayWebhook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatch(value: Match): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def setAuth_token(value: String): Self = this.set("auth_token", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuth_token: Self = this.set("auth_token", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMatch(value: Match): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.sharepoint.CUI
 
 import typings.microsoftAjax.Sys.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object Control {
   }
   
   @scala.inline
-  implicit class ControlOps[Self <: Control] (val x: Self) extends AnyVal {
+  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateComponentForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_enabled(value: () => Boolean): Self = StObject.set(x, "get_enabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateComponentForDisplayMode(value: String => js.Any): Self = this.set("createComponentForDisplayMode", js.Any.fromFunction1(value))
+    def setGet_root(value: () => Root): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_enabled(value: () => Boolean): Self = this.set("get_enabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_id(value: () => String): Self = this.set("get_id", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_root(value: () => Root): Self = this.set("get_root", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_enabled(value: Boolean => Boolean): Self = this.set("set_enabled", js.Any.fromFunction1(value))
+    def setSet_enabled(value: Boolean => Boolean): Self = StObject.set(x, "set_enabled", js.Any.fromFunction1(value))
   }
 }

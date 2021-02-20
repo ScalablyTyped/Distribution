@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureHelpProvider extends js.Object {
+trait SignatureHelpProvider extends StObject {
   
   /**
     * Provide help for the signature at the given position and document.
@@ -36,23 +37,11 @@ object SignatureHelpProvider {
   }
   
   @scala.inline
-  implicit class SignatureHelpProviderOps[Self <: SignatureHelpProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SignatureHelpProviderMutableBuilder[Self <: SignatureHelpProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setProvideSignatureHelp(
       value: (TextDocument, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelp]
-    ): Self = this.set("provideSignatureHelp", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "provideSignatureHelp", js.Any.fromFunction4(value))
   }
 }

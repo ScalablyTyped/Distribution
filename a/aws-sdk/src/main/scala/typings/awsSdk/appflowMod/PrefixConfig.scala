@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixConfig extends js.Object {
+trait PrefixConfig extends StObject {
   
   /**
     *  Determines the format of the prefix, and whether it applies to the file name, file path, or both. 
@@ -26,30 +27,18 @@ object PrefixConfig {
   }
   
   @scala.inline
-  implicit class PrefixConfigOps[Self <: PrefixConfig] (val x: Self) extends AnyVal {
+  implicit class PrefixConfigMutableBuilder[Self <: PrefixConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrefixFormat(value: PrefixFormat): Self = StObject.set(x, "prefixFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrefixFormatUndefined: Self = StObject.set(x, "prefixFormat", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixType(value: PrefixType): Self = StObject.set(x, "prefixType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixFormat(value: PrefixFormat): Self = this.set("prefixFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixFormat: Self = this.set("prefixFormat", js.undefined)
-    
-    @scala.inline
-    def setPrefixType(value: PrefixType): Self = this.set("prefixType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixType: Self = this.set("prefixType", js.undefined)
+    def setPrefixTypeUndefined: Self = StObject.set(x, "prefixType", js.undefined)
   }
 }

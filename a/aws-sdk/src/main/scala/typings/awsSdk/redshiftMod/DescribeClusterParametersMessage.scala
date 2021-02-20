@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeClusterParametersMessage extends js.Object {
+trait DescribeClusterParametersMessage extends StObject {
   
   /**
     * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeClusterParameters request exceed the value specified in MaxRecords, AWS returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
@@ -36,39 +37,27 @@ object DescribeClusterParametersMessage {
   }
   
   @scala.inline
-  implicit class DescribeClusterParametersMessageOps[Self <: DescribeClusterParametersMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeClusterParametersMessageMutableBuilder[Self <: DescribeClusterParametersMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterGroupName(value: String): Self = this.set("ParameterGroupName", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * table cell or returned from an SQL query.
   */
 @js.native
-trait SchemaType extends js.Object {
+trait SchemaType extends StObject {
   
   /**
     * If code == ARRAY, then `array_element_type` is the type of the array
@@ -37,36 +38,24 @@ object SchemaType {
   }
   
   @scala.inline
-  implicit class SchemaTypeOps[Self <: SchemaType] (val x: Self) extends AnyVal {
+  implicit class SchemaTypeMutableBuilder[Self <: SchemaType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayElementType(value: SchemaType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayElementTypeUndefined: Self = StObject.set(x, "arrayElementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayElementType(value: SchemaType): Self = this.set("arrayElementType", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteArrayElementType: Self = this.set("arrayElementType", js.undefined)
+    def setStructType(value: SchemaStructType): Self = StObject.set(x, "structType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setStructType(value: SchemaStructType): Self = this.set("structType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructType: Self = this.set("structType", js.undefined)
+    def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
   }
 }

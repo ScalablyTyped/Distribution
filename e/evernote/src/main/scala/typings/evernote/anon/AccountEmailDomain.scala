@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountEmailDomain extends js.Object {
+trait AccountEmailDomain extends StObject {
   
   var accountEmailDomain: js.UndefOr[String] = js.native
   
@@ -44,102 +45,90 @@ object AccountEmailDomain {
   }
   
   @scala.inline
-  implicit class AccountEmailDomainOps[Self <: AccountEmailDomain] (val x: Self) extends AnyVal {
+  implicit class AccountEmailDomainMutableBuilder[Self <: AccountEmailDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountEmailDomain(value: String): Self = StObject.set(x, "accountEmailDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountEmailDomainUndefined: Self = StObject.set(x, "accountEmailDomain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableFacebookSharing(value: Boolean): Self = StObject.set(x, "enableFacebookSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountEmailDomain(value: String): Self = this.set("accountEmailDomain", value.asInstanceOf[js.Any])
+    def setEnableFacebookSharingUndefined: Self = StObject.set(x, "enableFacebookSharing", js.undefined)
     
     @scala.inline
-    def deleteAccountEmailDomain: Self = this.set("accountEmailDomain", js.undefined)
+    def setEnableGiftSubscriptions(value: Boolean): Self = StObject.set(x, "enableGiftSubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFacebookSharing(value: Boolean): Self = this.set("enableFacebookSharing", value.asInstanceOf[js.Any])
+    def setEnableGiftSubscriptionsUndefined: Self = StObject.set(x, "enableGiftSubscriptions", js.undefined)
     
     @scala.inline
-    def deleteEnableFacebookSharing: Self = this.set("enableFacebookSharing", js.undefined)
+    def setEnableGoogle(value: Boolean): Self = StObject.set(x, "enableGoogle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableGiftSubscriptions(value: Boolean): Self = this.set("enableGiftSubscriptions", value.asInstanceOf[js.Any])
+    def setEnableGoogleUndefined: Self = StObject.set(x, "enableGoogle", js.undefined)
     
     @scala.inline
-    def deleteEnableGiftSubscriptions: Self = this.set("enableGiftSubscriptions", js.undefined)
+    def setEnableLinkedInSharing(value: Boolean): Self = StObject.set(x, "enableLinkedInSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableGoogle(value: Boolean): Self = this.set("enableGoogle", value.asInstanceOf[js.Any])
+    def setEnableLinkedInSharingUndefined: Self = StObject.set(x, "enableLinkedInSharing", js.undefined)
     
     @scala.inline
-    def deleteEnableGoogle: Self = this.set("enableGoogle", js.undefined)
+    def setEnablePublicNotebooks(value: Boolean): Self = StObject.set(x, "enablePublicNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLinkedInSharing(value: Boolean): Self = this.set("enableLinkedInSharing", value.asInstanceOf[js.Any])
+    def setEnablePublicNotebooksUndefined: Self = StObject.set(x, "enablePublicNotebooks", js.undefined)
     
     @scala.inline
-    def deleteEnableLinkedInSharing: Self = this.set("enableLinkedInSharing", js.undefined)
+    def setEnableSharedNotebooks(value: Boolean): Self = StObject.set(x, "enableSharedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePublicNotebooks(value: Boolean): Self = this.set("enablePublicNotebooks", value.asInstanceOf[js.Any])
+    def setEnableSharedNotebooksUndefined: Self = StObject.set(x, "enableSharedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteEnablePublicNotebooks: Self = this.set("enablePublicNotebooks", js.undefined)
+    def setEnableSingleNoteSharing(value: Boolean): Self = StObject.set(x, "enableSingleNoteSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSharedNotebooks(value: Boolean): Self = this.set("enableSharedNotebooks", value.asInstanceOf[js.Any])
+    def setEnableSingleNoteSharingUndefined: Self = StObject.set(x, "enableSingleNoteSharing", js.undefined)
     
     @scala.inline
-    def deleteEnableSharedNotebooks: Self = this.set("enableSharedNotebooks", js.undefined)
+    def setEnableSponsoredAccounts(value: Boolean): Self = StObject.set(x, "enableSponsoredAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSingleNoteSharing(value: Boolean): Self = this.set("enableSingleNoteSharing", value.asInstanceOf[js.Any])
+    def setEnableSponsoredAccountsUndefined: Self = StObject.set(x, "enableSponsoredAccounts", js.undefined)
     
     @scala.inline
-    def deleteEnableSingleNoteSharing: Self = this.set("enableSingleNoteSharing", js.undefined)
+    def setEnableSupportTickets(value: Boolean): Self = StObject.set(x, "enableSupportTickets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSponsoredAccounts(value: Boolean): Self = this.set("enableSponsoredAccounts", value.asInstanceOf[js.Any])
+    def setEnableSupportTicketsUndefined: Self = StObject.set(x, "enableSupportTickets", js.undefined)
     
     @scala.inline
-    def deleteEnableSponsoredAccounts: Self = this.set("enableSponsoredAccounts", js.undefined)
+    def setEnableTwitterSharing(value: Boolean): Self = StObject.set(x, "enableTwitterSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSupportTickets(value: Boolean): Self = this.set("enableSupportTickets", value.asInstanceOf[js.Any])
+    def setEnableTwitterSharingUndefined: Self = StObject.set(x, "enableTwitterSharing", js.undefined)
     
     @scala.inline
-    def deleteEnableSupportTickets: Self = this.set("enableSupportTickets", js.undefined)
+    def setMarketingUrl(value: String): Self = StObject.set(x, "marketingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTwitterSharing(value: Boolean): Self = this.set("enableTwitterSharing", value.asInstanceOf[js.Any])
+    def setMarketingUrlUndefined: Self = StObject.set(x, "marketingUrl", js.undefined)
     
     @scala.inline
-    def deleteEnableTwitterSharing: Self = this.set("enableTwitterSharing", js.undefined)
+    def setServiceHost(value: String): Self = StObject.set(x, "serviceHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketingUrl(value: String): Self = this.set("marketingUrl", value.asInstanceOf[js.Any])
+    def setServiceHostUndefined: Self = StObject.set(x, "serviceHost", js.undefined)
     
     @scala.inline
-    def deleteMarketingUrl: Self = this.set("marketingUrl", js.undefined)
+    def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceHost(value: String): Self = this.set("serviceHost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceHost: Self = this.set("serviceHost", js.undefined)
-    
-    @scala.inline
-    def setSupportUrl(value: String): Self = this.set("supportUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportUrl: Self = this.set("supportUrl", js.undefined)
+    def setSupportUrlUndefined: Self = StObject.set(x, "supportUrl", js.undefined)
   }
 }

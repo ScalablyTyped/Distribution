@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options to use when enqueuing messages. Attributes can be set before each queue.enqOne() or queue.enqMany().
   */
 @js.native
-trait EnqueueOptions extends js.Object {
+trait EnqueueOptions extends StObject {
   
   /** Celivery mode when enqueuing messages. It can be any one of the AQ_MSG_DELIV constants. */
   var deliveryMode: Double = js.native
@@ -28,27 +29,15 @@ object EnqueueOptions {
   }
   
   @scala.inline
-  implicit class EnqueueOptionsOps[Self <: EnqueueOptions] (val x: Self) extends AnyVal {
+  implicit class EnqueueOptionsMutableBuilder[Self <: EnqueueOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryMode(value: Double): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransformation(value: String): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeliveryMode(value: Double): Self = this.set("deliveryMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformation(value: String): Self = this.set("transformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibility(value: Double): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

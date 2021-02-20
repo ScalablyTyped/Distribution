@@ -1,5 +1,6 @@
 package typings.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a cell drag
   */
 @js.native
-trait CellDragEvent extends js.Object {
+trait CellDragEvent extends StObject {
   
   /**
     * The name of the column that was dragged.
@@ -39,30 +40,18 @@ object CellDragEvent {
   }
   
   @scala.inline
-  implicit class CellDragEventOps[Self <: CellDragEvent] (val x: Self) extends AnyVal {
+  implicit class CellDragEventMutableBuilder[Self <: CellDragEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellKey(value: String): Self = this.set("cellKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFromRow(value: Double): Self = this.set("fromRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToRow(value: Double): Self = this.set("toRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

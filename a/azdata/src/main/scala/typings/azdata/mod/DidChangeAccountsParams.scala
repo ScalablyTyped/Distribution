@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DidChangeAccountsParams extends js.Object {
+trait DidChangeAccountsParams extends StObject {
   
   // Updated accounts
   var accounts: js.Array[Account] = js.native
@@ -19,24 +20,12 @@ object DidChangeAccountsParams {
   }
   
   @scala.inline
-  implicit class DidChangeAccountsParamsOps[Self <: DidChangeAccountsParams] (val x: Self) extends AnyVal {
+  implicit class DidChangeAccountsParamsMutableBuilder[Self <: DidChangeAccountsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = this.set("accounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccounts(value: js.Array[Account]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
   }
 }

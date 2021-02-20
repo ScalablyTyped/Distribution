@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadLayerPartResponse extends js.Object {
+trait UploadLayerPartResponse extends StObject {
   
   /**
     * The integer value of the last byte received in the request.
@@ -36,42 +37,30 @@ object UploadLayerPartResponse {
   }
   
   @scala.inline
-  implicit class UploadLayerPartResponseOps[Self <: UploadLayerPartResponse] (val x: Self) extends AnyVal {
+  implicit class UploadLayerPartResponseMutableBuilder[Self <: UploadLayerPartResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastByteReceived(value: PartSize): Self = StObject.set(x, "lastByteReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastByteReceivedUndefined: Self = StObject.set(x, "lastByteReceived", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastByteReceived(value: PartSize): Self = this.set("lastByteReceived", value.asInstanceOf[js.Any])
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def deleteLastByteReceived: Self = this.set("lastByteReceived", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     
     @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
-    
-    @scala.inline
-    def setUploadId(value: UploadId): Self = this.set("uploadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadId: Self = this.set("uploadId", js.undefined)
+    def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
   }
 }

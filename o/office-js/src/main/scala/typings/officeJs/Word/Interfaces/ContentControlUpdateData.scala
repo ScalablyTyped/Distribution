@@ -4,13 +4,14 @@ import typings.officeJs.Word.ContentControlAppearance
 import typings.officeJs.officeJsStrings.BoundingBox
 import typings.officeJs.officeJsStrings.Hidden
 import typings.officeJs.officeJsStrings.Tags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
 @js.native
-trait ContentControlUpdateData extends js.Object {
+trait ContentControlUpdateData extends StObject {
   
   /**
     *
@@ -111,84 +112,72 @@ object ContentControlUpdateData {
   }
   
   @scala.inline
-  implicit class ContentControlUpdateDataOps[Self <: ContentControlUpdateData] (val x: Self) extends AnyVal {
+  implicit class ContentControlUpdateDataMutableBuilder[Self <: ContentControlUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppearance(value: ContentControlAppearance | BoundingBox | Tags | Hidden): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCannotDelete(value: Boolean): Self = StObject.set(x, "cannotDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearance(value: ContentControlAppearance | BoundingBox | Tags | Hidden): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setCannotDeleteUndefined: Self = StObject.set(x, "cannotDelete", js.undefined)
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setCannotEdit(value: Boolean): Self = StObject.set(x, "cannotEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCannotDelete(value: Boolean): Self = this.set("cannotDelete", value.asInstanceOf[js.Any])
+    def setCannotEditUndefined: Self = StObject.set(x, "cannotEdit", js.undefined)
     
     @scala.inline
-    def deleteCannotDelete: Self = this.set("cannotDelete", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCannotEdit(value: Boolean): Self = this.set("cannotEdit", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCannotEdit: Self = this.set("cannotEdit", js.undefined)
+    def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontUpdateData): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setRemoveWhenEdited(value: Boolean): Self = StObject.set(x, "removeWhenEdited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderText(value: String): Self = this.set("placeholderText", value.asInstanceOf[js.Any])
+    def setRemoveWhenEditedUndefined: Self = StObject.set(x, "removeWhenEdited", js.undefined)
     
     @scala.inline
-    def deletePlaceholderText: Self = this.set("placeholderText", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveWhenEdited(value: Boolean): Self = this.set("removeWhenEdited", value.asInstanceOf[js.Any])
+    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoveWhenEdited: Self = this.set("removeWhenEdited", js.undefined)
+    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = this.set("styleBuiltIn", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteStyleBuiltIn: Self = this.set("styleBuiltIn", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

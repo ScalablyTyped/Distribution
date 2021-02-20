@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxInboundRoutingExtension Class */
 @js.native
-trait FaxInboundRoutingExtension extends js.Object {
+trait FaxInboundRoutingExtension extends StObject {
   
   /** Is extension built in debug environment */
   val Debug: Boolean = js.native
@@ -68,54 +69,42 @@ object FaxInboundRoutingExtension {
   }
   
   @scala.inline
-  implicit class FaxInboundRoutingExtensionOps[Self <: FaxInboundRoutingExtension] (val x: Self) extends AnyVal {
+  implicit class FaxInboundRoutingExtensionMutableBuilder[Self <: FaxInboundRoutingExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: Boolean): Self = StObject.set(x, "Debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFAXCOMEXLibDotFaxInboundRoutingExtension_typekey(value: FaxInboundRoutingExtension): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRoutingExtension_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("Debug", value.asInstanceOf[js.Any])
+    def setImageName(value: String): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxInboundRoutingExtension_typekey(value: FaxInboundRoutingExtension): Self = this.set("FAXCOMEXLib.FaxInboundRoutingExtension_typekey", value.asInstanceOf[js.Any])
+    def setInitErrorCode(value: Double): Self = StObject.set(x, "InitErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("FriendlyName", value.asInstanceOf[js.Any])
+    def setMajorBuild(value: Double): Self = StObject.set(x, "MajorBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageName(value: String): Self = this.set("ImageName", value.asInstanceOf[js.Any])
+    def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitErrorCode(value: Double): Self = this.set("InitErrorCode", value.asInstanceOf[js.Any])
+    def setMethods(value: SafeArray[String]): Self = StObject.set(x, "Methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorBuild(value: Double): Self = this.set("MajorBuild", value.asInstanceOf[js.Any])
+    def setMinorBuild(value: Double): Self = StObject.set(x, "MinorBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: Double): Self = this.set("MajorVersion", value.asInstanceOf[js.Any])
+    def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: SafeArray[String]): Self = this.set("Methods", value.asInstanceOf[js.Any])
+    def setStatus(value: FAX_PROVIDER_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorBuild(value: Double): Self = this.set("MinorBuild", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinorVersion(value: Double): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: FAX_PROVIDER_STATUS_ENUM): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueName(value: String): Self = this.set("UniqueName", value.asInstanceOf[js.Any])
+    def setUniqueName(value: String): Self = StObject.set(x, "UniqueName", value.asInstanceOf[js.Any])
   }
 }

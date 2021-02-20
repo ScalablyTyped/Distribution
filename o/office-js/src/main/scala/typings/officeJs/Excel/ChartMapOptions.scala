@@ -21,6 +21,7 @@ import typings.officeJs.officeJsStrings.Robinson
 import typings.officeJs.officeJsStrings.ShowAll
 import typings.officeJs.officeJsStrings.State
 import typings.officeJs.officeJsStrings.World
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

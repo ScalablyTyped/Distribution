@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentCalendarSyncStatus extends js.Object
+sealed trait AppointmentCalendarSyncStatus extends StObject
 /** Specifies the current sync status of an AppointmentCalendar . */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentCalendarSyncStatus")
 @js.native
-object AppointmentCalendarSyncStatus extends js.Object {
+object AppointmentCalendarSyncStatus extends StObject {
   
   /** An authentication error occurred when trying to connect to the server. */
   @js.native

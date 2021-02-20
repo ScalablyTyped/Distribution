@@ -1,11 +1,12 @@
 package typings.dhtmlxgantt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttLocale extends js.Object {
+trait GanttLocale extends StObject {
   
   var date: GanttLocaleDate = js.native
   
@@ -20,24 +21,12 @@ object GanttLocale {
   }
   
   @scala.inline
-  implicit class GanttLocaleOps[Self <: GanttLocale] (val x: Self) extends AnyVal {
+  implicit class GanttLocaleMutableBuilder[Self <: GanttLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: GanttLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDate(value: GanttLocaleDate): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabels(value: GanttLocaleLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLabels(value: GanttLocaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
   }
 }

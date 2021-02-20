@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservedInstancesListing extends js.Object {
+trait ReservedInstancesListing extends StObject {
   
   /**
     * A unique, case-sensitive key supplied by the client to ensure that the request is idempotent. For more information, see Ensuring Idempotency.
@@ -66,87 +67,75 @@ object ReservedInstancesListing {
   }
   
   @scala.inline
-  implicit class ReservedInstancesListingOps[Self <: ReservedInstancesListing] (val x: Self) extends AnyVal {
+  implicit class ReservedInstancesListingMutableBuilder[Self <: ReservedInstancesListing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateDate(value: DateTime): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setInstanceCounts(value: InstanceCountList): Self = StObject.set(x, "InstanceCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: DateTime): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setInstanceCountsUndefined: Self = StObject.set(x, "InstanceCounts", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setInstanceCountsVarargs(value: InstanceCount*): Self = StObject.set(x, "InstanceCounts", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceCountsVarargs(value: InstanceCount*): Self = this.set("InstanceCounts", js.Array(value :_*))
+    def setPriceSchedules(value: PriceScheduleList): Self = StObject.set(x, "PriceSchedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCounts(value: InstanceCountList): Self = this.set("InstanceCounts", value.asInstanceOf[js.Any])
+    def setPriceSchedulesUndefined: Self = StObject.set(x, "PriceSchedules", js.undefined)
     
     @scala.inline
-    def deleteInstanceCounts: Self = this.set("InstanceCounts", js.undefined)
+    def setPriceSchedulesVarargs(value: PriceSchedule*): Self = StObject.set(x, "PriceSchedules", js.Array(value :_*))
     
     @scala.inline
-    def setPriceSchedulesVarargs(value: PriceSchedule*): Self = this.set("PriceSchedules", js.Array(value :_*))
+    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceSchedules(value: PriceScheduleList): Self = this.set("PriceSchedules", value.asInstanceOf[js.Any])
+    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
     
     @scala.inline
-    def deletePriceSchedules: Self = this.set("PriceSchedules", js.undefined)
+    def setReservedInstancesListingId(value: String): Self = StObject.set(x, "ReservedInstancesListingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstancesId(value: String): Self = this.set("ReservedInstancesId", value.asInstanceOf[js.Any])
+    def setReservedInstancesListingIdUndefined: Self = StObject.set(x, "ReservedInstancesListingId", js.undefined)
     
     @scala.inline
-    def deleteReservedInstancesId: Self = this.set("ReservedInstancesId", js.undefined)
+    def setStatus(value: ListingStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstancesListingId(value: String): Self = this.set("ReservedInstancesListingId", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReservedInstancesListingId: Self = this.set("ReservedInstancesListingId", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: ListingStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setUpdateDate(value: DateTime): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setUpdateDate(value: DateTime): Self = this.set("UpdateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDate: Self = this.set("UpdateDate", js.undefined)
+    def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }
 }

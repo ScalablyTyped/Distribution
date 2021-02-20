@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object ImageEditorImageRenderedEvent {
   }
   
   @scala.inline
-  implicit class ImageEditorImageRenderedEventOps[Self <: ImageEditorImageRenderedEvent] (val x: Self) extends AnyVal {
+  implicit class ImageEditorImageRenderedEventMutableBuilder[Self <: ImageEditorImageRenderedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvas(value: HTMLElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: HTMLElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
     
     @scala.inline
-    def deleteCanvas: Self = this.set("canvas", js.undefined)
+    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtx(value: js.Any): Self = this.set("ctx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCtx: Self = this.set("ctx", js.undefined)
-    
-    @scala.inline
-    def setImage(value: js.Any): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

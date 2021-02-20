@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,9 +49,7 @@ class ReflectionProbe protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "ReflectionProbe")
-@js.native
-object ReflectionProbe extends js.Object {
+object ReflectionProbe {
   
   /**
     * Parse the JSON representation of a reflection probe in order to recreate the reflection probe in the given scene.
@@ -59,5 +58,7 @@ object ReflectionProbe extends js.Object {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed reflection probe if successful
     */
+  @JSImport("babylonjs/index", "ReflectionProbe.Parse")
+  @js.native
   def Parse(parsedReflectionProbe: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = js.native
 }

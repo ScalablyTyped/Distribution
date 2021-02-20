@@ -5,19 +5,19 @@ import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceInput
 import typings.awsSdkClientCognitoIdentity.cognitoIdentityClientMod.ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.models0Mod.UntagResourceInput
 import typings.awsSdkClientCognitoIdentity.models0Mod.UntagResourceResponse
-import typings.awsSdkSmithyClient.commandMod.Command
+import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/commands/UntagResourceCommand", JSImport.Namespace)
-@js.native
-object untagResourceCommandMod extends js.Object {
+object untagResourceCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity/types/commands/UntagResourceCommand", "UntagResourceCommand")
   @js.native
   class UntagResourceCommand protected ()
     extends Command[

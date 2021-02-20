@@ -2,6 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.HTMLImageElement
 import typings.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
   **/
 @js.native
-trait StorageDataSource[T] extends js.Object {
+trait StorageDataSource[T] extends StObject {
   
   /**
     * Registers an event handler for the specified event.

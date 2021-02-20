@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,96 +101,84 @@ object ParamsResourceEventtagsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceEventtagsListOps[Self <: ParamsResourceEventtagsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceEventtagsListMutableBuilder[Self <: ParamsResourceEventtagsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdId(value: String): Self = this.set("adId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdId: Self = this.set("adId", js.undefined)
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setDefinitionsOnly(value: Boolean): Self = StObject.set(x, "definitionsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    def setDefinitionsOnlyUndefined: Self = StObject.set(x, "definitionsOnly", js.undefined)
     
     @scala.inline
-    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionsOnly(value: Boolean): Self = this.set("definitionsOnly", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDefinitionsOnly: Self = this.set("definitionsOnly", js.undefined)
+    def setEventTagTypes(value: js.Array[String]): Self = StObject.set(x, "eventTagTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEventTagTypesUndefined: Self = StObject.set(x, "eventTagTypes", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEventTagTypesVarargs(value: String*): Self = StObject.set(x, "eventTagTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEventTagTypesVarargs(value: String*): Self = this.set("eventTagTypes", js.Array(value :_*))
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTagTypes(value: js.Array[String]): Self = this.set("eventTagTypes", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteEventTagTypes: Self = this.set("eventTagTypes", js.undefined)
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
     @scala.inline
-    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortField: Self = this.set("sortField", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

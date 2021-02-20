@@ -1,13 +1,13 @@
 package typings.stripComments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("strip-comments/lib/Node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
   
+  @JSImport("strip-comments/lib/Node", "Block")
   @js.native
   class Block protected () extends Node {
     def this(node: Node) = this()
@@ -15,8 +15,9 @@ object nodeMod extends js.Object {
     def push(node: Node): Unit = js.native
   }
   
+  @JSImport("strip-comments/lib/Node", "Node")
   @js.native
-  class Node protected () extends js.Object {
+  class Node protected () extends StObject {
     def this(node: Node) = this()
     
     var `match`: Boolean = js.native

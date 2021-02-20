@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemovePermissionRequest extends js.Object {
+trait RemovePermissionRequest extends StObject {
   
   /**
     * The identification of the permission to remove. This is the label added using the  AddPermission  action.
@@ -26,24 +27,12 @@ object RemovePermissionRequest {
   }
   
   @scala.inline
-  implicit class RemovePermissionRequestOps[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
+  implicit class RemovePermissionRequestMutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueUrl(value: String): Self = this.set("QueueUrl", value.asInstanceOf[js.Any])
+    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

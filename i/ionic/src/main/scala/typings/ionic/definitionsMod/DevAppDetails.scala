@@ -1,12 +1,13 @@
 package typings.ionic.definitionsMod
 
 import typings.ionic.anon.Address
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevAppDetails extends js.Object {
+trait DevAppDetails extends StObject {
   
   var channel: js.UndefOr[String] = js.native
   
@@ -25,36 +26,24 @@ object DevAppDetails {
   }
   
   @scala.inline
-  implicit class DevAppDetailsOps[Self <: DevAppDetails] (val x: Self) extends AnyVal {
+  implicit class DevAppDetailsMutableBuilder[Self <: DevAppDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommPort(value: Double): Self = StObject.set(x, "commPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommPort(value: Double): Self = this.set("commPort", value.asInstanceOf[js.Any])
+    def setInterfaces(value: js.Array[Address]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfacesVarargs(value: Address*): Self = this.set("interfaces", js.Array(value :_*))
+    def setInterfacesVarargs(value: Address*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
     
     @scala.inline
-    def setInterfaces(value: js.Array[Address]): Self = this.set("interfaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

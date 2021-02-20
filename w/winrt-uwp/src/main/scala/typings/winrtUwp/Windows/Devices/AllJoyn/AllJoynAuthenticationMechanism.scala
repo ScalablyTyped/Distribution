@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AllJoynAuthenticationMechanism extends js.Object
+sealed trait AllJoynAuthenticationMechanism extends StObject
 /** Defines values used to indicate the mechanism used in authentication operations. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism")
 @js.native
-object AllJoynAuthenticationMechanism extends js.Object {
+object AllJoynAuthenticationMechanism extends StObject {
   
   /** ECDHE_ECDSA key exchange. */
   @js.native

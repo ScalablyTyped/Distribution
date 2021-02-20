@@ -1,6 +1,7 @@
 package typings.griddleReact.mod.components
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,39 +30,27 @@ object RowDefinitionProps {
   }
   
   @scala.inline
-  implicit class RowDefinitionPropsOps[Self <: RowDefinitionProps] (val x: Self) extends AnyVal {
+  implicit class RowDefinitionPropsMutableBuilder[Self <: RowDefinitionProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildColumnName(value: String): Self = StObject.set(x, "childColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildColumnNameUndefined: Self = StObject.set(x, "childColumnName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssClassName(value: String | (js.Function1[/* props */ js.Any, String])): Self = StObject.set(x, "cssClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildColumnName(value: String): Self = this.set("childColumnName", value.asInstanceOf[js.Any])
+    def setCssClassNameFunction1(value: /* props */ js.Any => String): Self = StObject.set(x, "cssClassName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteChildColumnName: Self = this.set("childColumnName", js.undefined)
+    def setCssClassNameUndefined: Self = StObject.set(x, "cssClassName", js.undefined)
     
     @scala.inline
-    def setCssClassNameFunction1(value: /* props */ js.Any => String): Self = this.set("cssClassName", js.Any.fromFunction1(value))
+    def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssClassName(value: String | (js.Function1[/* props */ js.Any, String])): Self = this.set("cssClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCssClassName: Self = this.set("cssClassName", js.undefined)
-    
-    @scala.inline
-    def setRowKey(value: String): Self = this.set("rowKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowKey: Self = this.set("rowKey", js.undefined)
+    def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
   }
 }

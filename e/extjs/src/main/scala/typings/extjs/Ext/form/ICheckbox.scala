@@ -2,6 +2,7 @@ package typings.extjs.Ext.form
 
 import typings.extjs.Ext.IElement
 import typings.extjs.Ext.form.field.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,156 +111,144 @@ object ICheckbox {
   }
   
   @scala.inline
-  implicit class ICheckboxOps[Self <: ICheckbox] (val x: Self) extends AnyVal {
+  implicit class ICheckboxMutableBuilder[Self <: ICheckbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterBoxLabelTextTpl(value: js.Any): Self = StObject.set(x, "afterBoxLabelTextTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterBoxLabelTextTplUndefined: Self = StObject.set(x, "afterBoxLabelTextTpl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterBoxLabelTpl(value: js.Any): Self = StObject.set(x, "afterBoxLabelTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterBoxLabelTextTpl(value: js.Any): Self = this.set("afterBoxLabelTextTpl", value.asInstanceOf[js.Any])
+    def setAfterBoxLabelTplUndefined: Self = StObject.set(x, "afterBoxLabelTpl", js.undefined)
     
     @scala.inline
-    def deleteAfterBoxLabelTextTpl: Self = this.set("afterBoxLabelTextTpl", js.undefined)
+    def setBeforeBoxLabelTextTpl(value: js.Any): Self = StObject.set(x, "beforeBoxLabelTextTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterBoxLabelTpl(value: js.Any): Self = this.set("afterBoxLabelTpl", value.asInstanceOf[js.Any])
+    def setBeforeBoxLabelTextTplUndefined: Self = StObject.set(x, "beforeBoxLabelTextTpl", js.undefined)
     
     @scala.inline
-    def deleteAfterBoxLabelTpl: Self = this.set("afterBoxLabelTpl", js.undefined)
+    def setBeforeBoxLabelTpl(value: js.Any): Self = StObject.set(x, "beforeBoxLabelTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeBoxLabelTextTpl(value: js.Any): Self = this.set("beforeBoxLabelTextTpl", value.asInstanceOf[js.Any])
+    def setBeforeBoxLabelTplUndefined: Self = StObject.set(x, "beforeBoxLabelTpl", js.undefined)
     
     @scala.inline
-    def deleteBeforeBoxLabelTextTpl: Self = this.set("beforeBoxLabelTextTpl", js.undefined)
+    def setBoxLabel(value: String): Self = StObject.set(x, "boxLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeBoxLabelTpl(value: js.Any): Self = this.set("beforeBoxLabelTpl", value.asInstanceOf[js.Any])
+    def setBoxLabelAlign(value: String): Self = StObject.set(x, "boxLabelAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeBoxLabelTpl: Self = this.set("beforeBoxLabelTpl", js.undefined)
+    def setBoxLabelAlignUndefined: Self = StObject.set(x, "boxLabelAlign", js.undefined)
     
     @scala.inline
-    def setBoxLabel(value: String): Self = this.set("boxLabel", value.asInstanceOf[js.Any])
+    def setBoxLabelAttrTpl(value: js.Any): Self = StObject.set(x, "boxLabelAttrTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxLabel: Self = this.set("boxLabel", js.undefined)
+    def setBoxLabelAttrTplUndefined: Self = StObject.set(x, "boxLabelAttrTpl", js.undefined)
     
     @scala.inline
-    def setBoxLabelAlign(value: String): Self = this.set("boxLabelAlign", value.asInstanceOf[js.Any])
+    def setBoxLabelCls(value: String): Self = StObject.set(x, "boxLabelCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxLabelAlign: Self = this.set("boxLabelAlign", js.undefined)
+    def setBoxLabelClsUndefined: Self = StObject.set(x, "boxLabelCls", js.undefined)
     
     @scala.inline
-    def setBoxLabelAttrTpl(value: js.Any): Self = this.set("boxLabelAttrTpl", value.asInstanceOf[js.Any])
+    def setBoxLabelEl(value: IElement): Self = StObject.set(x, "boxLabelEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxLabelAttrTpl: Self = this.set("boxLabelAttrTpl", js.undefined)
+    def setBoxLabelElUndefined: Self = StObject.set(x, "boxLabelEl", js.undefined)
     
     @scala.inline
-    def setBoxLabelCls(value: String): Self = this.set("boxLabelCls", value.asInstanceOf[js.Any])
+    def setBoxLabelUndefined: Self = StObject.set(x, "boxLabel", js.undefined)
     
     @scala.inline
-    def deleteBoxLabelCls: Self = this.set("boxLabelCls", js.undefined)
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxLabelEl(value: IElement): Self = this.set("boxLabelEl", value.asInstanceOf[js.Any])
+    def setCheckedCls(value: String): Self = StObject.set(x, "checkedCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxLabelEl: Self = this.set("boxLabelEl", js.undefined)
+    def setCheckedClsUndefined: Self = StObject.set(x, "checkedCls", js.undefined)
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setGetRawValue(value: () => Boolean): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckedCls(value: String): Self = this.set("checkedCls", value.asInstanceOf[js.Any])
+    def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
     
     @scala.inline
-    def deleteCheckedCls: Self = this.set("checkedCls", js.undefined)
+    def setGetValue(value: () => Boolean): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRawValue(value: () => Boolean): Self = this.set("getRawValue", js.Any.fromFunction0(value))
+    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
     @scala.inline
-    def deleteGetRawValue: Self = this.set("getRawValue", js.undefined)
+    def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValue(value: () => Boolean): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    def setInitValue(value: () => Unit): Self = StObject.set(x, "initValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHandler(value: js.Any): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
+    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitValue(value: () => Unit): Self = this.set("initValue", js.Any.fromFunction0(value))
+    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
     @scala.inline
-    def deleteInitValue: Self = this.set("initValue", js.undefined)
+    def setResetOriginalValue(value: /* fromBoxInGroup */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "resetOriginalValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    def setResetOriginalValueUndefined: Self = StObject.set(x, "resetOriginalValue", js.undefined)
     
     @scala.inline
-    def deleteInputValue: Self = this.set("inputValue", js.undefined)
+    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetOriginalValue(value: /* fromBoxInGroup */ js.UndefOr[js.Any] => Unit): Self = this.set("resetOriginalValue", js.Any.fromFunction1(value))
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteResetOriginalValue: Self = this.set("resetOriginalValue", js.undefined)
+    def setSetBoxLabel(value: /* boxLabel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setBoxLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScope(value: js.Any): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSetBoxLabelUndefined: Self = StObject.set(x, "setBoxLabel", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setSetRawValue(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBoxLabel(value: /* boxLabel */ js.UndefOr[String] => Unit): Self = this.set("setBoxLabel", js.Any.fromFunction1(value))
+    def setSetRawValueUndefined: Self = StObject.set(x, "setRawValue", js.undefined)
     
     @scala.inline
-    def deleteSetBoxLabel: Self = this.set("setBoxLabel", js.undefined)
+    def setSetReadOnly(value: /* readOnly */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRawValue(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = this.set("setRawValue", js.Any.fromFunction1(value))
+    def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
     @scala.inline
-    def deleteSetRawValue: Self = this.set("setRawValue", js.undefined)
+    def setSetValue(value: /* checked */ js.UndefOr[js.Any] => ICheckbox): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetReadOnly(value: /* readOnly */ js.UndefOr[js.Any] => Unit): Self = this.set("setReadOnly", js.Any.fromFunction1(value))
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
     @scala.inline
-    def deleteSetReadOnly: Self = this.set("setReadOnly", js.undefined)
+    def setUncheckedValue(value: String): Self = StObject.set(x, "uncheckedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValue(value: /* checked */ js.UndefOr[js.Any] => ICheckbox): Self = this.set("setValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
-    
-    @scala.inline
-    def setUncheckedValue(value: String): Self = this.set("uncheckedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUncheckedValue: Self = this.set("uncheckedValue", js.undefined)
+    def setUncheckedValueUndefined: Self = StObject.set(x, "uncheckedValue", js.undefined)
   }
 }

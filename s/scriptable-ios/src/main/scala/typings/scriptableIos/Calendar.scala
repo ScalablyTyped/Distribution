@@ -4,6 +4,7 @@ import typings.scriptableIos.scriptableIosStrings.busy
 import typings.scriptableIos.scriptableIosStrings.free
 import typings.scriptableIos.scriptableIosStrings.tentative
 import typings.scriptableIos.scriptableIosStrings.unavailable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/calendar
   */
 @js.native
-trait Calendar extends js.Object {
+trait Calendar extends StObject {
   
   /**
     * _Indicates whether items can be added, edited, and deleted in the calendar._

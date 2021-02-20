@@ -3,13 +3,14 @@ package typings.matterJs.mod
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Render")
 @js.native
-class Render () extends js.Object {
+class Render () extends StObject {
   
   /**
     * A `Bounds` object that specifies the drawing view region.
@@ -73,9 +74,7 @@ class Render () extends js.Object {
   var textures: js.Any = js.native
 }
 /* static members */
-@JSImport("matter-js", "Render")
-@js.native
-object Render extends js.Object {
+object Render {
   
   /**
     * Creates a new renderer. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -85,6 +84,8 @@ object Render extends js.Object {
     * @param {object} [options]
     * @return {render} A new renderer
     */
+  @JSImport("matter-js", "Render.create")
+  @js.native
   def create(options: IRenderDefinition): Render = js.native
   
   /**
@@ -92,6 +93,8 @@ object Render extends js.Object {
     * @method run
     * @param {render} render
     */
+  @JSImport("matter-js", "Render.run")
+  @js.native
   def run(render: Render): Unit = js.native
   
   /**
@@ -101,6 +104,8 @@ object Render extends js.Object {
     * @param {render} render
     * @param {number} pixelRatio
     */
+  @JSImport("matter-js", "Render.setPixelRatio")
+  @js.native
   def setPixelRatio(render: Render, pixelRatio: Double): Unit = js.native
   
   /**
@@ -108,6 +113,8 @@ object Render extends js.Object {
     * @method stop
     * @param {render} render
     */
+  @JSImport("matter-js", "Render.stop")
+  @js.native
   def stop(render: Render): Unit = js.native
   
   /**
@@ -116,5 +123,7 @@ object Render extends js.Object {
     * @method world
     * @param {engine} engine
     */
+  @JSImport("matter-js", "Render.world")
+  @js.native
   def world(render: Render): Unit = js.native
 }

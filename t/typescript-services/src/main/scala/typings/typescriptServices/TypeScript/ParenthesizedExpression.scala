@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,30 +46,18 @@ object ParenthesizedExpression {
   }
   
   @scala.inline
-  implicit class ParenthesizedExpressionOps[Self <: ParenthesizedExpression] (val x: Self) extends AnyVal {
+  implicit class ParenthesizedExpressionMutableBuilder[Self <: ParenthesizedExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
     
     @scala.inline
-    def setExpression(value: AST): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = this.set("openParenTrailingComments", js.Array(value :_*))
-    
-    @scala.inline
-    def setOpenParenTrailingComments(value: js.Array[Comment]): Self = this.set("openParenTrailingComments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

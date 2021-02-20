@@ -5,12 +5,13 @@ import typings.pgPromise.mod.errors.ParameterizedQueryError
 import typings.pgPromise.mod.errors.PreparedStatementError
 import typings.pgPromise.mod.errors.QueryFileError
 import typings.pgPromise.mod.errors.QueryResultError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeoferrors extends js.Object {
+trait Typeoferrors extends StObject {
   
   // ParameterizedQueryError interface;
   // API: http://vitaly-t.github.io/pg-promise/errors.ParameterizedQueryError.html
@@ -42,30 +43,18 @@ object Typeoferrors {
   }
   
   @scala.inline
-  implicit class TypeoferrorsOps[Self <: Typeoferrors] (val x: Self) extends AnyVal {
+  implicit class TypeoferrorsMutableBuilder[Self <: Typeoferrors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterizedQueryError(value: Instantiable0[ParameterizedQueryError]): Self = StObject.set(x, "ParameterizedQueryError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreparedStatementError(value: Instantiable0[PreparedStatementError]): Self = StObject.set(x, "PreparedStatementError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryFileError(value: Instantiable0[QueryFileError]): Self = StObject.set(x, "QueryFileError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterizedQueryError(value: Instantiable0[ParameterizedQueryError]): Self = this.set("ParameterizedQueryError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreparedStatementError(value: Instantiable0[PreparedStatementError]): Self = this.set("PreparedStatementError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryFileError(value: Instantiable0[QueryFileError]): Self = this.set("QueryFileError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryResultError(value: Instantiable0[QueryResultError]): Self = this.set("QueryResultError", value.asInstanceOf[js.Any])
+    def setQueryResultError(value: Instantiable0[QueryResultError]): Self = StObject.set(x, "QueryResultError", value.asInstanceOf[js.Any])
   }
 }

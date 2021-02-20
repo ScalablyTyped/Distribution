@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends js.Object {
+trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends StObject {
   
   /**
     * If true, billing address will be returned.
@@ -84,51 +85,39 @@ object GoogleActionsV2OrdersGoogleProvidedPaymentOptions {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersGoogleProvidedPaymentOptionsOps[Self <: GoogleActionsV2OrdersGoogleProvidedPaymentOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersGoogleProvidedPaymentOptionsMutableBuilder[Self <: GoogleActionsV2OrdersGoogleProvidedPaymentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddressRequired(value: Boolean): Self = StObject.set(x, "billingAddressRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressRequiredUndefined: Self = StObject.set(x, "billingAddressRequired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacilitationSpecification(value: String): Self = StObject.set(x, "facilitationSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddressRequired(value: Boolean): Self = this.set("billingAddressRequired", value.asInstanceOf[js.Any])
+    def setFacilitationSpecificationUndefined: Self = StObject.set(x, "facilitationSpecification", js.undefined)
     
     @scala.inline
-    def deleteBillingAddressRequired: Self = this.set("billingAddressRequired", js.undefined)
+    def setPrepaidCardDisallowed(value: Boolean): Self = StObject.set(x, "prepaidCardDisallowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacilitationSpecification(value: String): Self = this.set("facilitationSpecification", value.asInstanceOf[js.Any])
+    def setPrepaidCardDisallowedUndefined: Self = StObject.set(x, "prepaidCardDisallowed", js.undefined)
     
     @scala.inline
-    def deleteFacilitationSpecification: Self = this.set("facilitationSpecification", js.undefined)
+    def setSupportedCardNetworks(value: js.Array[GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks]): Self = StObject.set(x, "supportedCardNetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepaidCardDisallowed(value: Boolean): Self = this.set("prepaidCardDisallowed", value.asInstanceOf[js.Any])
+    def setSupportedCardNetworksUndefined: Self = StObject.set(x, "supportedCardNetworks", js.undefined)
     
     @scala.inline
-    def deletePrepaidCardDisallowed: Self = this.set("prepaidCardDisallowed", js.undefined)
+    def setSupportedCardNetworksVarargs(value: GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks*): Self = StObject.set(x, "supportedCardNetworks", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedCardNetworksVarargs(value: GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks*): Self = this.set("supportedCardNetworks", js.Array(value :_*))
+    def setTokenizationParameters(value: GoogleActionsV2OrdersPaymentMethodTokenizationParameters): Self = StObject.set(x, "tokenizationParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedCardNetworks(value: js.Array[GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks]): Self = this.set("supportedCardNetworks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedCardNetworks: Self = this.set("supportedCardNetworks", js.undefined)
-    
-    @scala.inline
-    def setTokenizationParameters(value: GoogleActionsV2OrdersPaymentMethodTokenizationParameters): Self = this.set("tokenizationParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenizationParameters: Self = this.set("tokenizationParameters", js.undefined)
+    def setTokenizationParametersUndefined: Self = StObject.set(x, "tokenizationParameters", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheDetails extends js.Object {
+trait CacheDetails extends StObject {
   
   /**  A comment provided by the user or the application */
   var comment: js.UndefOr[String] = js.native
@@ -41,39 +42,27 @@ object CacheDetails {
   }
   
   @scala.inline
-  implicit class CacheDetailsOps[Self <: CacheDetails] (val x: Self) extends AnyVal {
+  implicit class CacheDetailsMutableBuilder[Self <: CacheDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitCount(value: Double): Self = this.set("hitCount", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
     @scala.inline
-    def setLastAccess(value: String): Self = this.set("lastAccess", value.asInstanceOf[js.Any])
+    def setHitCount(value: Double): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
-    
-    @scala.inline
-    def setExpires(value: String): Self = this.set("expires", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setLastAccess(value: String): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
   }
 }

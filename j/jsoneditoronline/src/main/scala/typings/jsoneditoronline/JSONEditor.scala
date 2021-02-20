@@ -1,12 +1,13 @@
 package typings.jsoneditoronline
 
 import typings.jsoneditoronline.anon.AddEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditor extends js.Object {
+trait JSONEditor extends StObject {
   
   var Events: AddEventListener = js.native
   

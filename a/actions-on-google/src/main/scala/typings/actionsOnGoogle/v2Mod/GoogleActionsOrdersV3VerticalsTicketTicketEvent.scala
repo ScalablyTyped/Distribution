@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3VerticalsTicketTicketEvent extends js.Object {
+trait GoogleActionsOrdersV3VerticalsTicketTicketEvent extends StObject {
   
   /**
     * Description of the event.
@@ -64,75 +65,63 @@ object GoogleActionsOrdersV3VerticalsTicketTicketEvent {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsTicketTicketEventOps[Self <: GoogleActionsOrdersV3VerticalsTicketTicketEvent] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3VerticalsTicketTicketEventMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketTicketEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoorTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "doorTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDoorTimeUndefined: Self = StObject.set(x, "doorTime", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEndDate(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoorTime(value: GoogleActionsOrdersV3Time): Self = this.set("doorTime", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteDoorTime: Self = this.set("doorTime", js.undefined)
+    def setEventCharacters(value: js.Array[GoogleActionsOrdersV3VerticalsTicketEventCharacter]): Self = StObject.set(x, "eventCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: GoogleActionsOrdersV3Time): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setEventCharactersUndefined: Self = StObject.set(x, "eventCharacters", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setEventCharactersVarargs(value: GoogleActionsOrdersV3VerticalsTicketEventCharacter*): Self = StObject.set(x, "eventCharacters", js.Array(value :_*))
     
     @scala.inline
-    def setEventCharactersVarargs(value: GoogleActionsOrdersV3VerticalsTicketEventCharacter*): Self = this.set("eventCharacters", js.Array(value :_*))
+    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCharacters(value: js.Array[GoogleActionsOrdersV3VerticalsTicketEventCharacter]): Self = this.set("eventCharacters", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteEventCharacters: Self = this.set("eventCharacters", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setStartDate(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: GoogleActionsOrdersV3VerticalsTicketTicketEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: GoogleActionsOrdersV3Time): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsTicketTicketEventType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

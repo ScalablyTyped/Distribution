@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the reason why the VideoStabilizationEffect::Enabled property changed. */
 @JSGlobal("Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason")
 @js.native
-object VideoStabilizationEffectEnabledChangedReason extends js.Object {
+object VideoStabilizationEffectEnabledChangedReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

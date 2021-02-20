@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThermometerOption extends js.Object {
+trait ThermometerOption extends StObject {
   
   var controller: js.UndefOr[String] = js.native
   
@@ -24,39 +25,27 @@ object ThermometerOption {
   }
   
   @scala.inline
-  implicit class ThermometerOptionOps[Self <: ThermometerOption] (val x: Self) extends AnyVal {
+  implicit class ThermometerOptionMutableBuilder[Self <: ThermometerOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPin(value: String | Double): Self = this.set("pin", value.asInstanceOf[js.Any])
+    def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
     
     @scala.inline
-    def setController(value: String): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setPin(value: String | Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setToCelsius(value: /* val */ Double => Double): Self = StObject.set(x, "toCelsius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFreq(value: Double): Self = this.set("freq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFreq: Self = this.set("freq", js.undefined)
-    
-    @scala.inline
-    def setToCelsius(value: /* val */ Double => Double): Self = this.set("toCelsius", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToCelsius: Self = this.set("toCelsius", js.undefined)
+    def setToCelsiusUndefined: Self = StObject.set(x, "toCelsius", js.undefined)
   }
 }

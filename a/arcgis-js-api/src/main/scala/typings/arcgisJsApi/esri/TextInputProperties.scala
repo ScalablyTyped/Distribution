@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object TextInputProperties {
   }
   
   @scala.inline
-  implicit class TextInputPropertiesOps[Self <: TextInputProperties] (val x: Self) extends AnyVal {
+  implicit class TextInputPropertiesMutableBuilder[Self <: TextInputProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
-    
-    @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
   }
 }

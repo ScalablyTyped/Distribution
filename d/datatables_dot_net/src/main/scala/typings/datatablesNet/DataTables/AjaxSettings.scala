@@ -1,5 +1,6 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object AjaxSettings {
   }
   
   @scala.inline
-  implicit class AjaxSettingsOps[Self <: AjaxSettings] (val x: Self) extends AnyVal {
+  implicit class AjaxSettingsMutableBuilder[Self <: AjaxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSrc(value: String | (js.Function1[/* data */ js.Any, js.Array[_]])): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSrcFunction1(value: /* data */ js.Any => js.Array[_]): Self = StObject.set(x, "dataSrc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataSrcFunction1(value: /* data */ js.Any => js.Array[_]): Self = this.set("dataSrc", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDataSrc(value: String | (js.Function1[/* data */ js.Any, js.Array[_]])): Self = this.set("dataSrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSrc: Self = this.set("dataSrc", js.undefined)
+    def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
   }
 }

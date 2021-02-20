@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSessionResponse extends js.Object {
+trait GetSessionResponse extends StObject {
   
   /**
     * A list of active contexts for the session. A context can be set when an intent is fulfilled or by calling the PostContent, PostText, or PutSession operation. You can use a context to control the intents that can follow up an intent, or to modify the operation of your application.
@@ -41,54 +42,42 @@ object GetSessionResponse {
   }
   
   @scala.inline
-  implicit class GetSessionResponseOps[Self <: GetSessionResponse] (val x: Self) extends AnyVal {
+  implicit class GetSessionResponseMutableBuilder[Self <: GetSessionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
     
     @scala.inline
-    def setActiveContextsVarargs(value: ActiveContext*): Self = this.set("activeContexts", js.Array(value :_*))
+    def setDialogAction(value: DialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveContexts(value: ActiveContextsList): Self = this.set("activeContexts", value.asInstanceOf[js.Any])
+    def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
     
     @scala.inline
-    def deleteActiveContexts: Self = this.set("activeContexts", js.undefined)
+    def setRecentIntentSummaryView(value: IntentSummaryList): Self = StObject.set(x, "recentIntentSummaryView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogAction(value: DialogAction): Self = this.set("dialogAction", value.asInstanceOf[js.Any])
+    def setRecentIntentSummaryViewUndefined: Self = StObject.set(x, "recentIntentSummaryView", js.undefined)
     
     @scala.inline
-    def deleteDialogAction: Self = this.set("dialogAction", js.undefined)
+    def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = StObject.set(x, "recentIntentSummaryView", js.Array(value :_*))
     
     @scala.inline
-    def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = this.set("recentIntentSummaryView", js.Array(value :_*))
+    def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentIntentSummaryView(value: IntentSummaryList): Self = this.set("recentIntentSummaryView", value.asInstanceOf[js.Any])
+    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
     @scala.inline
-    def deleteRecentIntentSummaryView: Self = this.set("recentIntentSummaryView", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionAttributes(value: StringMap): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
-    
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

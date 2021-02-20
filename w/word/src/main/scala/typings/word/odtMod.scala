@@ -2,14 +2,14 @@ package typings.word
 
 import typings.cfb.mod.CFBContainer
 import typings.word.typesMod.WJSDoc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("word/dist/typings/codecs/ODT", JSImport.Namespace)
-@js.native
-object odtMod extends js.Object {
+object odtMod {
   
-  @JSName("parse_cfb")
+  @JSImport("word/dist/typings/codecs/ODT", "parse_cfb")
+  @js.native
   def parseCfb(file: CFBContainer): WJSDoc = js.native
 }

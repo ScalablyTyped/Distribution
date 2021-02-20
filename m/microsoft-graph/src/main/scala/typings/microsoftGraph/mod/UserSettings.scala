@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object UserSettings {
   }
   
   @scala.inline
-  implicit class UserSettingsOps[Self <: UserSettings] (val x: Self) extends AnyVal {
+  implicit class UserSettingsMutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributionToContentDiscoveryAsOrganizationDisabled(value: Boolean): Self = StObject.set(x, "contributionToContentDiscoveryAsOrganizationDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributionToContentDiscoveryAsOrganizationDisabledUndefined: Self = StObject.set(x, "contributionToContentDiscoveryAsOrganizationDisabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContributionToContentDiscoveryDisabled(value: Boolean): Self = StObject.set(x, "contributionToContentDiscoveryDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionToContentDiscoveryAsOrganizationDisabled(value: Boolean): Self = this.set("contributionToContentDiscoveryAsOrganizationDisabled", value.asInstanceOf[js.Any])
+    def setContributionToContentDiscoveryDisabledUndefined: Self = StObject.set(x, "contributionToContentDiscoveryDisabled", js.undefined)
     
     @scala.inline
-    def deleteContributionToContentDiscoveryAsOrganizationDisabled: Self = this.set("contributionToContentDiscoveryAsOrganizationDisabled", js.undefined)
+    def setShiftPreferences(value: NullableOption[ShiftPreferences]): Self = StObject.set(x, "shiftPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionToContentDiscoveryDisabled(value: Boolean): Self = this.set("contributionToContentDiscoveryDisabled", value.asInstanceOf[js.Any])
+    def setShiftPreferencesNull: Self = StObject.set(x, "shiftPreferences", null)
     
     @scala.inline
-    def deleteContributionToContentDiscoveryDisabled: Self = this.set("contributionToContentDiscoveryDisabled", js.undefined)
-    
-    @scala.inline
-    def setShiftPreferences(value: NullableOption[ShiftPreferences]): Self = this.set("shiftPreferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShiftPreferences: Self = this.set("shiftPreferences", js.undefined)
-    
-    @scala.inline
-    def setShiftPreferencesNull: Self = this.set("shiftPreferences", null)
+    def setShiftPreferencesUndefined: Self = StObject.set(x, "shiftPreferences", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.seen.mod
 
 import typings.std.Event
 import typings.std.EventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MouseEventOptions extends js.Object {
+trait MouseEventOptions extends StObject {
   
   var drag: js.UndefOr[EventListener] = js.native
   
@@ -32,60 +33,48 @@ object MouseEventOptions {
   }
   
   @scala.inline
-  implicit class MouseEventOptionsOps[Self <: MouseEventOptions] (val x: Self) extends AnyVal {
+  implicit class MouseEventOptionsMutableBuilder[Self <: MouseEventOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrag(value: /* evt */ Event => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragEnd(value: /* evt */ Event => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
     
     @scala.inline
-    def setDrag(value: /* evt */ Event => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragStart(value: /* evt */ Event => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDragEnd(value: /* evt */ Event => Unit): Self = this.set("dragEnd", js.Any.fromFunction1(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDragEnd: Self = this.set("dragEnd", js.undefined)
+    def setMouseDown(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragStart(value: /* evt */ Event => Unit): Self = this.set("dragStart", js.Any.fromFunction1(value))
+    def setMouseDownUndefined: Self = StObject.set(x, "mouseDown", js.undefined)
     
     @scala.inline
-    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    def setMouseMove(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseDown(value: /* evt */ Event => Unit): Self = this.set("mouseDown", js.Any.fromFunction1(value))
+    def setMouseMoveUndefined: Self = StObject.set(x, "mouseMove", js.undefined)
     
     @scala.inline
-    def deleteMouseDown: Self = this.set("mouseDown", js.undefined)
+    def setMouseUp(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseMove(value: /* evt */ Event => Unit): Self = this.set("mouseMove", js.Any.fromFunction1(value))
+    def setMouseUpUndefined: Self = StObject.set(x, "mouseUp", js.undefined)
     
     @scala.inline
-    def deleteMouseMove: Self = this.set("mouseMove", js.undefined)
+    def setMouseWheel(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseWheel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseUp(value: /* evt */ Event => Unit): Self = this.set("mouseUp", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteMouseUp: Self = this.set("mouseUp", js.undefined)
-    
-    @scala.inline
-    def setMouseWheel(value: /* evt */ Event => Unit): Self = this.set("mouseWheel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteMouseWheel: Self = this.set("mouseWheel", js.undefined)
+    def setMouseWheelUndefined: Self = StObject.set(x, "mouseWheel", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.anon.DragAxisDragPlaneNormal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +17,21 @@ class PointerDragBehavior ()
   def this(options: DragAxisDragPlaneNormal) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.PointerDragBehavior")
-@js.native
-object PointerDragBehavior extends js.Object {
+object PointerDragBehavior {
   
-  var _AnyMouseID: js.Any = js.native
+  @JSGlobal("BABYLON.PointerDragBehavior")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _planeScene: js.Any = js.native
+  @JSGlobal("BABYLON.PointerDragBehavior._AnyMouseID")
+  @js.native
+  def _AnyMouseID: js.Any = js.native
+  @scala.inline
+  def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("BABYLON.PointerDragBehavior._planeScene")
+  @js.native
+  def _planeScene: js.Any = js.native
+  @scala.inline
+  def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
 }

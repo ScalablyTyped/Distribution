@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/MergeCellsOutline", JSImport.Namespace)
-@js.native
-object mergeCellsOutlineMod extends js.Object {
+object mergeCellsOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/MergeCellsOutline", "MergeCellsOutline")
+  @js.native
   val MergeCellsOutline: IconDefinition = js.native
 }

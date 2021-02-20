@@ -1,5 +1,6 @@
 package typings.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object ReadThumbnailOptions {
   }
   
   @scala.inline
-  implicit class ReadThumbnailOptionsOps[Self <: ReadThumbnailOptions] (val x: Self) extends AnyVal {
+  implicit class ReadThumbnailOptionsMutableBuilder[Self <: ReadThumbnailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlob(value: Boolean): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayBuffer(value: Boolean): Self = this.set("arrayBuffer", value.asInstanceOf[js.Any])
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
     @scala.inline
-    def deleteArrayBuffer: Self = this.set("arrayBuffer", js.undefined)
+    def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: Boolean): Self = this.set("blob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
-    
-    @scala.inline
-    def setBuffer(value: Boolean): Self = this.set("buffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
   }
 }

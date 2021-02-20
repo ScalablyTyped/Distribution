@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the client-side equivalent of the DiagramCoordinates class.
   */
 @js.native
-trait ASPxClientDiagramCoordinates extends js.Object {
+trait ASPxClientDiagramCoordinates extends StObject {
   
   /**
     * Gets the value of the client-side axis instance. An ASPxClientAxisValue object that contains the information about the axis scale type and value.
@@ -100,60 +101,48 @@ object ASPxClientDiagramCoordinates {
   }
   
   @scala.inline
-  implicit class ASPxClientDiagramCoordinatesOps[Self <: ASPxClientDiagramCoordinates] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDiagramCoordinatesMutableBuilder[Self <: ASPxClientDiagramCoordinates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgumentScaleType(value: String): Self = StObject.set(x, "argumentScaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAxisValue(value: ASPxClientAxisBase => ASPxClientAxisValue): Self = this.set("GetAxisValue", js.Any.fromFunction1(value))
+    def setDateTimeArgument(value: Date): Self = StObject.set(x, "dateTimeArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("IsEmpty", js.Any.fromFunction0(value))
+    def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentScaleType(value: String): Self = this.set("argumentScaleType", value.asInstanceOf[js.Any])
+    def setGetAxisValue(value: ASPxClientAxisBase => ASPxClientAxisValue): Self = StObject.set(x, "GetAxisValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAxisX(value: ASPxClientAxisBase): Self = this.set("axisX", value.asInstanceOf[js.Any])
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAxisY(value: ASPxClientAxisBase): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    def setNumericalArgument(value: Double): Self = StObject.set(x, "numericalArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeArgument(value: Date): Self = this.set("dateTimeArgument", value.asInstanceOf[js.Any])
+    def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeValue(value: Date): Self = this.set("dateTimeValue", value.asInstanceOf[js.Any])
+    def setPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericalArgument(value: Double): Self = this.set("numericalArgument", value.asInstanceOf[js.Any])
+    def setQualitativeArgument(value: String): Self = StObject.set(x, "qualitativeArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericalValue(value: Double): Self = this.set("numericalValue", value.asInstanceOf[js.Any])
+    def setTimeSpanArgument(value: js.Any): Self = StObject.set(x, "timeSpanArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: ASPxClientXYDiagramPane): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualitativeArgument(value: String): Self = this.set("qualitativeArgument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSpanArgument(value: js.Any): Self = this.set("timeSpanArgument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSpanValue(value: js.Any): Self = this.set("timeSpanValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueScaleType(value: String): Self = this.set("valueScaleType", value.asInstanceOf[js.Any])
+    def setValueScaleType(value: String): Self = StObject.set(x, "valueScaleType", value.asInstanceOf[js.Any])
   }
 }

@@ -5,13 +5,14 @@ import typings.reactNavigation.anon.`0`
 import typings.reactNavigation.reactNavigationStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {jumpTo (routeName : string, key : string | undefined): void} */
 @js.native
-trait NavigationSwitchProp[State, Params] extends js.Object {
+trait NavigationSwitchProp[State, Params] extends StObject {
   
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   

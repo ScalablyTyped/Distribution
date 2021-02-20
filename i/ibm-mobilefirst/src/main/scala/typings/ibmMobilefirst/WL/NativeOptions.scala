@@ -1,11 +1,12 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeOptions extends js.Object {
+trait NativeOptions extends StObject {
   
   var autoSendLogs: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object NativeOptions {
   }
   
   @scala.inline
-  implicit class NativeOptionsOps[Self <: NativeOptions] (val x: Self) extends AnyVal {
+  implicit class NativeOptionsMutableBuilder[Self <: NativeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSendLogs(value: Boolean): Self = StObject.set(x, "autoSendLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSendLogsUndefined: Self = StObject.set(x, "autoSendLogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoUpdateConfig(value: Boolean): Self = StObject.set(x, "autoUpdateConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSendLogs(value: Boolean): Self = this.set("autoSendLogs", value.asInstanceOf[js.Any])
+    def setAutoUpdateConfigUndefined: Self = StObject.set(x, "autoUpdateConfig", js.undefined)
     
     @scala.inline
-    def deleteAutoSendLogs: Self = this.set("autoSendLogs", js.undefined)
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdateConfig(value: Boolean): Self = this.set("autoUpdateConfig", value.asInstanceOf[js.Any])
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdateConfig: Self = this.set("autoUpdateConfig", js.undefined)
+    def setFilters(value: Filter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Filter): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
-    
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
   }
 }

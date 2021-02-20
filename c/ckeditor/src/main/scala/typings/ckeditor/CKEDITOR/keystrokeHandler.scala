@@ -2,12 +2,13 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.ckeditor.CKEDITOR.dom.domObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait keystrokeHandler extends js.Object {
+trait keystrokeHandler extends StObject {
   
   def attach(domObject: domObject): Unit = js.native
   
@@ -28,27 +29,15 @@ object keystrokeHandler {
   }
   
   @scala.inline
-  implicit class keystrokeHandlerOps[Self <: keystrokeHandler] (val x: Self) extends AnyVal {
+  implicit class keystrokeHandlerMutableBuilder[Self <: keystrokeHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttach(value: domObject => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedKeystrokes(value: NumberDictionary[String | Boolean]): Self = StObject.set(x, "blockedKeystrokes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttach(value: domObject => Unit): Self = this.set("attach", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBlockedKeystrokes(value: NumberDictionary[String | Boolean]): Self = this.set("blockedKeystrokes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeystrokes(value: NumberDictionary[String | Boolean]): Self = this.set("keystrokes", value.asInstanceOf[js.Any])
+    def setKeystrokes(value: NumberDictionary[String | Boolean]): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
   }
 }

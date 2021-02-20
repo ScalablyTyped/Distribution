@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUserComment extends js.Object {
+trait SchemaUserComment extends StObject {
   
   /**
     * Integer Android SDK version of the user&#39;s device at the time the
@@ -85,90 +86,78 @@ object SchemaUserComment {
   }
   
   @scala.inline
-  implicit class SchemaUserCommentOps[Self <: SchemaUserComment] (val x: Self) extends AnyVal {
+  implicit class SchemaUserCommentMutableBuilder[Self <: SchemaUserComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidOsVersion(value: Double): Self = StObject.set(x, "androidOsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidOsVersionUndefined: Self = StObject.set(x, "androidOsVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppVersionCode(value: Double): Self = StObject.set(x, "appVersionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidOsVersion(value: Double): Self = this.set("androidOsVersion", value.asInstanceOf[js.Any])
+    def setAppVersionCodeUndefined: Self = StObject.set(x, "appVersionCode", js.undefined)
     
     @scala.inline
-    def deleteAndroidOsVersion: Self = this.set("androidOsVersion", js.undefined)
+    def setAppVersionName(value: String): Self = StObject.set(x, "appVersionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersionCode(value: Double): Self = this.set("appVersionCode", value.asInstanceOf[js.Any])
+    def setAppVersionNameUndefined: Self = StObject.set(x, "appVersionName", js.undefined)
     
     @scala.inline
-    def deleteAppVersionCode: Self = this.set("appVersionCode", js.undefined)
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersionName(value: String): Self = this.set("appVersionName", value.asInstanceOf[js.Any])
+    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppVersionName: Self = this.set("appVersionName", js.undefined)
+    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setLastModified(value: SchemaTimestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
+    def setOriginalText(value: String): Self = StObject.set(x, "originalText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: SchemaTimestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setOriginalTextUndefined: Self = StObject.set(x, "originalText", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setReviewerLanguage(value: String): Self = StObject.set(x, "reviewerLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalText(value: String): Self = this.set("originalText", value.asInstanceOf[js.Any])
+    def setReviewerLanguageUndefined: Self = StObject.set(x, "reviewerLanguage", js.undefined)
     
     @scala.inline
-    def deleteOriginalText: Self = this.set("originalText", js.undefined)
+    def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewerLanguage(value: String): Self = this.set("reviewerLanguage", value.asInstanceOf[js.Any])
+    def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
     
     @scala.inline
-    def deleteReviewerLanguage: Self = this.set("reviewerLanguage", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarRating(value: Double): Self = this.set("starRating", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteStarRating: Self = this.set("starRating", js.undefined)
+    def setThumbsDownCount(value: Double): Self = StObject.set(x, "thumbsDownCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setThumbsDownCountUndefined: Self = StObject.set(x, "thumbsDownCount", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setThumbsUpCount(value: Double): Self = StObject.set(x, "thumbsUpCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbsDownCount(value: Double): Self = this.set("thumbsDownCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbsDownCount: Self = this.set("thumbsDownCount", js.undefined)
-    
-    @scala.inline
-    def setThumbsUpCount(value: Double): Self = this.set("thumbsUpCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbsUpCount: Self = this.set("thumbsUpCount", js.undefined)
+    def setThumbsUpCountUndefined: Self = StObject.set(x, "thumbsUpCount", js.undefined)
   }
 }

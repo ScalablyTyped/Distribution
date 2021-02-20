@@ -1,5 +1,6 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object RefundResource {
   }
   
   @scala.inline
-  implicit class RefundResourceOps[Self <: RefundResource] (val x: Self) extends AnyVal {
+  implicit class RefundResourceMutableBuilder[Self <: RefundResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapture_id(value: String): Self = StObject.set(x, "capture_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapture_idUndefined: Self = StObject.set(x, "capture_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture_id(value: String): Self = this.set("capture_id", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCapture_id: Self = this.set("capture_id", js.undefined)
+    def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInvoice_numberUndefined: Self = StObject.set(x, "invoice_number", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoice_number(value: String): Self = this.set("invoice_number", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteInvoice_number: Self = this.set("invoice_number", js.undefined)
+    def setRefund_funding_type(value: String): Self = StObject.set(x, "refund_funding_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRefund_funding_typeUndefined: Self = StObject.set(x, "refund_funding_type", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setRefund_reason_code(value: String): Self = StObject.set(x, "refund_reason_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund_funding_type(value: String): Self = this.set("refund_funding_type", value.asInstanceOf[js.Any])
+    def setRefund_reason_codeUndefined: Self = StObject.set(x, "refund_reason_code", js.undefined)
     
     @scala.inline
-    def deleteRefund_funding_type: Self = this.set("refund_funding_type", js.undefined)
+    def setSale_id(value: String): Self = StObject.set(x, "sale_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefund_reason_code(value: String): Self = this.set("refund_reason_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefund_reason_code: Self = this.set("refund_reason_code", js.undefined)
-    
-    @scala.inline
-    def setSale_id(value: String): Self = this.set("sale_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSale_id: Self = this.set("sale_id", js.undefined)
+    def setSale_idUndefined: Self = StObject.set(x, "sale_id", js.undefined)
   }
 }

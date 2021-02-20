@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryAssociation extends js.Object {
+trait RepositoryAssociation extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) identifying the repository association.
@@ -66,78 +67,66 @@ object RepositoryAssociation {
   }
   
   @scala.inline
-  implicit class RepositoryAssociationOps[Self <: RepositoryAssociation] (val x: Self) extends AnyVal {
+  implicit class RepositoryAssociationMutableBuilder[Self <: RepositoryAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationArn(value: Arn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationArnUndefined: Self = StObject.set(x, "AssociationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationArn(value: Arn): Self = this.set("AssociationArn", value.asInstanceOf[js.Any])
+    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
     @scala.inline
-    def deleteAssociationArn: Self = this.set("AssociationArn", js.undefined)
+    def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setConnectionArnUndefined: Self = StObject.set(x, "ConnectionArn", js.undefined)
     
     @scala.inline
-    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionArn(value: ConnectionArn): Self = this.set("ConnectionArn", value.asInstanceOf[js.Any])
+    def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
     @scala.inline
-    def deleteConnectionArn: Self = this.set("ConnectionArn", js.undefined)
+    def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimeStamp(value: TimeStamp): Self = this.set("CreatedTimeStamp", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimeStamp: Self = this.set("CreatedTimeStamp", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTimeStamp(value: TimeStamp): Self = this.set("LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTimeStamp: Self = this.set("LastUpdatedTimeStamp", js.undefined)
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setState(value: RepositoryAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
     @scala.inline
-    def setState(value: RepositoryAssociationState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setStateReason(value: StateReason): Self = this.set("StateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateReason: Self = this.set("StateReason", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

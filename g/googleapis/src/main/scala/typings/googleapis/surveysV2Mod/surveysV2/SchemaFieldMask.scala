@@ -1,11 +1,12 @@
 package typings.googleapis.surveysV2Mod.surveysV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaFieldMask extends js.Object {
+trait SchemaFieldMask extends StObject {
   
   var fields: js.UndefOr[js.Array[SchemaFieldMask]] = js.native
   
@@ -20,33 +21,21 @@ object SchemaFieldMask {
   }
   
   @scala.inline
-  implicit class SchemaFieldMaskOps[Self <: SchemaFieldMask] (val x: Self) extends AnyVal {
+  implicit class SchemaFieldMaskMutableBuilder[Self <: SchemaFieldMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[SchemaFieldMask]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: SchemaFieldMask*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: SchemaFieldMask*): Self = this.set("fields", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[SchemaFieldMask]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

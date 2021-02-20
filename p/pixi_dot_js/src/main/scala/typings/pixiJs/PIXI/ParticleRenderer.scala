@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait ParticleRenderer extends js.Object {
+trait ParticleRenderer extends StObject {
   
   /**
     * Destroys the ParticleRenderer.
@@ -154,45 +155,33 @@ object ParticleRenderer {
   }
   
   @scala.inline
-  implicit class ParticleRendererOps[Self <: ParticleRenderer] (val x: Self) extends AnyVal {
+  implicit class ParticleRendererMutableBuilder[Self <: ParticleRenderer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRender(value: ParticleContainer => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: ParticleContainer => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    def setUploadPosition(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadPosition", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setShader(value: Shader): Self = this.set("shader", value.asInstanceOf[js.Any])
+    def setUploadRotation(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadRotation", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setState(value: State): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setUploadTint(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadTint", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setUploadPosition(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadPosition", js.Any.fromFunction6(value))
+    def setUploadUvs(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadUvs", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setUploadRotation(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadRotation", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setUploadTint(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadTint", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setUploadUvs(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadUvs", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setUploadVertices(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = this.set("uploadVertices", js.Any.fromFunction6(value))
+    def setUploadVertices(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadVertices", js.Any.fromFunction6(value))
   }
 }

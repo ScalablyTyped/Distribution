@@ -3,14 +3,14 @@ package typings.winrt.Windows.Storage
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IMapView
-import typings.winrt.Windows.Foundation.Collections.IObservableMap
+import typings.winrt.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationDataContainerSettings
-  extends IObservableMap[String, js.Any]
+trait ApplicationDataContainerSettings extends IPropertySet
 object ApplicationDataContainerSettings {
   
   @scala.inline

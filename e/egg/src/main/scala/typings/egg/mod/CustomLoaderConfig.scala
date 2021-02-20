@@ -3,13 +3,14 @@ package typings.egg.mod
 import typings.egg.eggStrings.app
 import typings.egg.eggStrings.ctx
 import typings.eggCore.anon.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent egg.egg.RemoveSpecProp<egg-core.egg-core.FileLoaderOption, 'inject' | 'target'> */
 @js.native
-trait CustomLoaderConfig extends js.Object {
+trait CustomLoaderConfig extends StObject {
   
   var call: js.UndefOr[Boolean] = js.native
   
@@ -46,87 +47,75 @@ object CustomLoaderConfig {
   }
   
   @scala.inline
-  implicit class CustomLoaderConfigOps[Self <: CustomLoaderConfig] (val x: Self) extends AnyVal {
+  implicit class CustomLoaderConfigMutableBuilder[Self <: CustomLoaderConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = StObject.set(x, "caseStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryVarargs(value: String*): Self = this.set("directory", js.Array(value :_*))
+    def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = StObject.set(x, "caseStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectory(value: String | js.Array[String]): Self = this.set("directory", value.asInstanceOf[js.Any])
+    def setCaseStyleUndefined: Self = StObject.set(x, "caseStyle", js.undefined)
     
     @scala.inline
-    def setCall(value: Boolean): Self = this.set("call", value.asInstanceOf[js.Any])
+    def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCall: Self = this.set("call", js.undefined)
+    def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
     
     @scala.inline
-    def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = this.set("caseStyle", js.Any.fromFunction1(value))
+    def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = this.set("caseStyle", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteCaseStyle: Self = this.set("caseStyle", js.undefined)
+    def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: /* obj */ js.Object => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreVarargs(value: String*): Self = this.set("ignore", js.Array(value :_*))
+    def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIgnore(value: String | js.Array[String]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setInject(value: ctx | app): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => _): Self = this.set("initializer", js.Any.fromFunction2(value))
+    def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
     
     @scala.inline
-    def deleteInitializer: Self = this.set("initializer", js.undefined)
+    def setLoadunit(value: Boolean): Self = StObject.set(x, "loadunit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInject(value: ctx | app): Self = this.set("inject", value.asInstanceOf[js.Any])
+    def setLoadunitUndefined: Self = StObject.set(x, "loadunit", js.undefined)
     
     @scala.inline
-    def deleteInject: Self = this.set("inject", js.undefined)
+    def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadunit(value: Boolean): Self = this.set("loadunit", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteLoadunit: Self = this.set("loadunit", js.undefined)
+    def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
     
     @scala.inline
-    def setMatchVarargs(value: String*): Self = this.set("match", js.Array(value :_*))
+    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: String | js.Array[String]): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
-    
-    @scala.inline
-    def setOverride(value: Boolean): Self = this.set("override", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverride: Self = this.set("override", js.undefined)
+    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
   }
 }

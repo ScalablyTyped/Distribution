@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Tree State
   */
 @js.native
-trait ITreeState extends js.Object {
+trait ITreeState extends StObject {
   
   //The currently loaded root node reference - depending on the section loaded this could be a section root or a normal root.
   //We keep this reference so we can lookup nodes to interact with in the UI via the tree service
@@ -26,24 +27,12 @@ object ITreeState {
   }
   
   @scala.inline
-  implicit class ITreeStateOps[Self <: ITreeState] (val x: Self) extends AnyVal {
+  implicit class ITreeStateMutableBuilder[Self <: ITreeState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentRootNode(value: js.Any): Self = StObject.set(x, "currentRootNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentRootNode(value: js.Any): Self = this.set("currentRootNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedNode(value: js.Any): Self = this.set("selectedNode", value.asInstanceOf[js.Any])
+    def setSelectedNode(value: js.Any): Self = StObject.set(x, "selectedNode", value.asInstanceOf[js.Any])
   }
 }

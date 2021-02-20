@@ -3,13 +3,14 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.webhookMod.WebhookFilter
 import typings.contentfulManagement.webhookMod.WebhookHeader
 import typings.contentfulManagement.webhookMod.WebhookTransformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/webhook.WebhookProps, 'sys'> */
 @js.native
-trait OmitWebhookPropssys extends js.Object {
+trait OmitWebhookPropssys extends StObject {
   
   var filters: js.UndefOr[js.Array[WebhookFilter]] = js.native
   
@@ -36,63 +37,51 @@ object OmitWebhookPropssys {
   }
   
   @scala.inline
-  implicit class OmitWebhookPropssysOps[Self <: OmitWebhookPropssys] (val x: Self) extends AnyVal {
+  implicit class OmitWebhookPropssysMutableBuilder[Self <: OmitWebhookPropssys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[WebhookFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: WebhookFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: WebhookHeader*): Self = this.set("headers", js.Array(value :_*))
+    def setHeaders(value: js.Array[WebhookHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[WebhookHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: WebhookHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setHttpBasicPassword(value: String): Self = StObject.set(x, "httpBasicPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicsVarargs(value: String*): Self = this.set("topics", js.Array(value :_*))
+    def setHttpBasicPasswordUndefined: Self = StObject.set(x, "httpBasicPassword", js.undefined)
     
     @scala.inline
-    def setTopics(value: js.Array[String]): Self = this.set("topics", value.asInstanceOf[js.Any])
+    def setHttpBasicUsername(value: String): Self = StObject.set(x, "httpBasicUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setHttpBasicUsernameUndefined: Self = StObject.set(x, "httpBasicUsername", js.undefined)
     
     @scala.inline
-    def setFiltersVarargs(value: WebhookFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[WebhookFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
     
     @scala.inline
-    def setHttpBasicPassword(value: String): Self = this.set("httpBasicPassword", value.asInstanceOf[js.Any])
+    def setTransformation(value: WebhookTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpBasicPassword: Self = this.set("httpBasicPassword", js.undefined)
+    def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
     
     @scala.inline
-    def setHttpBasicUsername(value: String): Self = this.set("httpBasicUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpBasicUsername: Self = this.set("httpBasicUsername", js.undefined)
-    
-    @scala.inline
-    def setTransformation(value: WebhookTransformation): Self = this.set("transformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformation: Self = this.set("transformation", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

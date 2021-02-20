@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFailureState extends js.Object {
+trait UpdateFailureState extends StObject {
   
   /** Details about the last failed update attempt. */
   var details: js.UndefOr[String] = js.native
@@ -30,40 +31,28 @@ object UpdateFailureState {
   }
   
   @scala.inline
-  implicit class UpdateFailureStateOps[Self <: UpdateFailureState] (val x: Self) extends AnyVal {
+  implicit class UpdateFailureStateMutableBuilder[Self <: UpdateFailureState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
     def setFailedConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState with TopLevel[js.Any]
-    ): Self = this.set("failedConfiguration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "failedConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailedConfiguration: Self = this.set("failedConfiguration", js.undefined)
+    def setFailedConfigurationUndefined: Self = StObject.set(x, "failedConfiguration", js.undefined)
     
     @scala.inline
-    def setLastUpdateAttempt(value: String): Self = this.set("lastUpdateAttempt", value.asInstanceOf[js.Any])
+    def setLastUpdateAttempt(value: String): Self = StObject.set(x, "lastUpdateAttempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdateAttempt: Self = this.set("lastUpdateAttempt", js.undefined)
+    def setLastUpdateAttemptUndefined: Self = StObject.set(x, "lastUpdateAttempt", js.undefined)
   }
 }

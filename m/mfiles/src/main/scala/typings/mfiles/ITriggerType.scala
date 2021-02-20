@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFTriggerType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITriggerType extends js.Object {
+trait ITriggerType extends StObject {
   
   def Clone(): ITriggerType = js.native
   
@@ -48,48 +49,36 @@ object ITriggerType {
   }
   
   @scala.inline
-  implicit class ITriggerTypeOps[Self <: ITriggerType] (val x: Self) extends AnyVal {
+  implicit class ITriggerTypeMutableBuilder[Self <: ITriggerType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ITriggerType): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaily(value: IDailyTrigger): Self = StObject.set(x, "Daily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonthlyDOW(value: IMonthlyDOWTrigger): Self = StObject.set(x, "MonthlyDOW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ITriggerType): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setMonthlyDate(value: IMonthlyDateTrigger): Self = StObject.set(x, "MonthlyDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaily(value: IDailyTrigger): Self = this.set("Daily", value.asInstanceOf[js.Any])
+    def setSetDailyTrigger(value: IDailyTrigger => Unit): Self = StObject.set(x, "SetDailyTrigger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMonthlyDOW(value: IMonthlyDOWTrigger): Self = this.set("MonthlyDOW", value.asInstanceOf[js.Any])
+    def setSetMonthlyDOW(value: IMonthlyDOWTrigger => Unit): Self = StObject.set(x, "SetMonthlyDOW", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMonthlyDate(value: IMonthlyDateTrigger): Self = this.set("MonthlyDate", value.asInstanceOf[js.Any])
+    def setSetMonthlyDate(value: IMonthlyDateTrigger => Unit): Self = StObject.set(x, "SetMonthlyDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDailyTrigger(value: IDailyTrigger => Unit): Self = this.set("SetDailyTrigger", js.Any.fromFunction1(value))
+    def setSetWeekly(value: IWeeklyTrigger => Unit): Self = StObject.set(x, "SetWeekly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMonthlyDOW(value: IMonthlyDOWTrigger => Unit): Self = this.set("SetMonthlyDOW", js.Any.fromFunction1(value))
+    def setType(value: MFTriggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetMonthlyDate(value: IMonthlyDateTrigger => Unit): Self = this.set("SetMonthlyDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetWeekly(value: IWeeklyTrigger => Unit): Self = this.set("SetWeekly", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setType(value: MFTriggerType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekly(value: IWeeklyTrigger): Self = this.set("Weekly", value.asInstanceOf[js.Any])
+    def setWeekly(value: IWeeklyTrigger): Self = StObject.set(x, "Weekly", value.asInstanceOf[js.Any])
   }
 }

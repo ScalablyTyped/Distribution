@@ -1,15 +1,15 @@
 package typings.webix.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderStack extends js.Object {
+trait RenderStack extends StObject {
   
   def customize(obj: js.Any): Unit = js.native
   
@@ -28,6 +28,3 @@ trait RenderStack extends js.Object {
   
   var types: StringDictionary[js.Any] = js.native
 }
-@JSImport("webix", "RenderStack")
-@js.native
-object RenderStack extends TopLevel[RenderStack]

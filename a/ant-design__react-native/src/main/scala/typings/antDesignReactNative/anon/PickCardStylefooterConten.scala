@@ -2,13 +2,14 @@ package typings.antDesignReactNative.anon
 
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@ant-design/react-native.@ant-design/react-native/lib/card/style.CardStyle, 'footerContent' | 'footerExtra' | 'footerWrap'> */
 @js.native
-trait PickCardStylefooterConten extends js.Object {
+trait PickCardStylefooterConten extends StObject {
   
   var footerContent: TextStyle = js.native
   
@@ -25,27 +26,15 @@ object PickCardStylefooterConten {
   }
   
   @scala.inline
-  implicit class PickCardStylefooterContenOps[Self <: PickCardStylefooterConten] (val x: Self) extends AnyVal {
+  implicit class PickCardStylefooterContenMutableBuilder[Self <: PickCardStylefooterConten] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFooterContent(value: TextStyle): Self = StObject.set(x, "footerContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFooterExtra(value: TextStyle): Self = StObject.set(x, "footerExtra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFooterContent(value: TextStyle): Self = this.set("footerContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFooterExtra(value: TextStyle): Self = this.set("footerExtra", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFooterWrap(value: ViewStyle): Self = this.set("footerWrap", value.asInstanceOf[js.Any])
+    def setFooterWrap(value: ViewStyle): Self = StObject.set(x, "footerWrap", value.asInstanceOf[js.Any])
   }
 }

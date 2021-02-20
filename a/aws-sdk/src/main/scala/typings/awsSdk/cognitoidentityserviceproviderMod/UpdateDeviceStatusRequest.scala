@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDeviceStatusRequest extends js.Object {
+trait UpdateDeviceStatusRequest extends StObject {
   
   /**
     * The access token.
@@ -31,30 +32,18 @@ object UpdateDeviceStatusRequest {
   }
   
   @scala.inline
-  implicit class UpdateDeviceStatusRequestOps[Self <: UpdateDeviceStatusRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDeviceStatusRequestMutableBuilder[Self <: UpdateDeviceStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceRememberedStatus(value: DeviceRememberedStatusType): Self = StObject.set(x, "DeviceRememberedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceKey(value: DeviceKeyType): Self = this.set("DeviceKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceRememberedStatus(value: DeviceRememberedStatusType): Self = this.set("DeviceRememberedStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceRememberedStatus: Self = this.set("DeviceRememberedStatus", js.undefined)
+    def setDeviceRememberedStatusUndefined: Self = StObject.set(x, "DeviceRememberedStatus", js.undefined)
   }
 }

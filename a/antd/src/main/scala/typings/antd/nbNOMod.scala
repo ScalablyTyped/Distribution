@@ -1,13 +1,20 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.generatePickerMod.PickerLocale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/calendar/locale/nb_NO", JSImport.Namespace)
-@js.native
-object nbNOMod extends js.Object {
+object nbNOMod extends Shortcut {
   
+  @JSImport("antd/lib/calendar/locale/nb_NO", JSImport.Default)
+  @js.native
   val default: PickerLocale = js.native
+  
+  type _To = PickerLocale
+  
+  /* This means you don't have to write `default`, but can instead just say `nbNOMod.foo` */
+  override def _to: PickerLocale = default
 }

@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorCode extends js.Object
+sealed trait ErrorCode extends StObject
 @JSGlobal("tableau.ErrorCode")
 @js.native
-object ErrorCode extends js.Object {
+object ErrorCode extends StObject {
   
   /** The browser is not capable of supporting the Tableau JavaScript API. */
   @js.native

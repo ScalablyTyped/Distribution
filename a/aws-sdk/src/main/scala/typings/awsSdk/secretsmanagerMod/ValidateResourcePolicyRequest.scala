@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateResourcePolicyRequest extends js.Object {
+trait ValidateResourcePolicyRequest extends StObject {
   
   /**
     * Identifies the Resource Policy attached to the secret.
@@ -26,27 +27,15 @@ object ValidateResourcePolicyRequest {
   }
   
   @scala.inline
-  implicit class ValidateResourcePolicyRequestOps[Self <: ValidateResourcePolicyRequest] (val x: Self) extends AnyVal {
+  implicit class ValidateResourcePolicyRequestMutableBuilder[Self <: ValidateResourcePolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = this.set("ResourcePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = this.set("SecretId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretId: Self = this.set("SecretId", js.undefined)
+    def setSecretIdUndefined: Self = StObject.set(x, "SecretId", js.undefined)
   }
 }

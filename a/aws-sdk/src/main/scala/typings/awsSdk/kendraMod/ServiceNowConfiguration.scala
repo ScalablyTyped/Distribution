@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceNowConfiguration extends js.Object {
+trait ServiceNowConfiguration extends StObject {
   
   /**
     * The ServiceNow instance that the data source connects to. The host endpoint should look like the following: {instance}.service-now.com. 
@@ -45,39 +46,27 @@ object ServiceNowConfiguration {
   }
   
   @scala.inline
-  implicit class ServiceNowConfigurationOps[Self <: ServiceNowConfiguration] (val x: Self) extends AnyVal {
+  implicit class ServiceNowConfigurationMutableBuilder[Self <: ServiceNowConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostUrl(value: ServiceNowHostUrl): Self = StObject.set(x, "HostUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKnowledgeArticleConfiguration(value: ServiceNowKnowledgeArticleConfiguration): Self = StObject.set(x, "KnowledgeArticleConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKnowledgeArticleConfigurationUndefined: Self = StObject.set(x, "KnowledgeArticleConfiguration", js.undefined)
     
     @scala.inline
-    def setHostUrl(value: ServiceNowHostUrl): Self = this.set("HostUrl", value.asInstanceOf[js.Any])
+    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    def setServiceCatalogConfiguration(value: ServiceNowServiceCatalogConfiguration): Self = StObject.set(x, "ServiceCatalogConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNowBuildVersion(value: ServiceNowBuildVersionType): Self = this.set("ServiceNowBuildVersion", value.asInstanceOf[js.Any])
+    def setServiceCatalogConfigurationUndefined: Self = StObject.set(x, "ServiceCatalogConfiguration", js.undefined)
     
     @scala.inline
-    def setKnowledgeArticleConfiguration(value: ServiceNowKnowledgeArticleConfiguration): Self = this.set("KnowledgeArticleConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKnowledgeArticleConfiguration: Self = this.set("KnowledgeArticleConfiguration", js.undefined)
-    
-    @scala.inline
-    def setServiceCatalogConfiguration(value: ServiceNowServiceCatalogConfiguration): Self = this.set("ServiceCatalogConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceCatalogConfiguration: Self = this.set("ServiceCatalogConfiguration", js.undefined)
+    def setServiceNowBuildVersion(value: ServiceNowBuildVersionType): Self = StObject.set(x, "ServiceNowBuildVersion", value.asInstanceOf[js.Any])
   }
 }

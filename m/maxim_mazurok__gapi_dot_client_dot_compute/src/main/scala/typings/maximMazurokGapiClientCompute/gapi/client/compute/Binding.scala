@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Binding extends js.Object {
+trait Binding extends StObject {
   
   var bindingId: js.UndefOr[String] = js.native
   
@@ -64,45 +65,33 @@ object Binding {
   }
   
   @scala.inline
-  implicit class BindingOps[Self <: Binding] (val x: Self) extends AnyVal {
+  implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindingId(value: String): Self = StObject.set(x, "bindingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingIdUndefined: Self = StObject.set(x, "bindingId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingId(value: String): Self = this.set("bindingId", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteBindingId: Self = this.set("bindingId", js.undefined)
+    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Expr): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembersVarargs(value: String*): Self = this.set("members", js.Array(value :_*))
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[String]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

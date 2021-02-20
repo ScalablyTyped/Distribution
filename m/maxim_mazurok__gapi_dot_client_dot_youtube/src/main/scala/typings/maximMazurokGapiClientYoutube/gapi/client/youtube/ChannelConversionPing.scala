@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelConversionPing extends js.Object {
+trait ChannelConversionPing extends StObject {
   
   /** Defines the context of the ping. */
   var context: js.UndefOr[String] = js.native
@@ -26,30 +27,18 @@ object ChannelConversionPing {
   }
   
   @scala.inline
-  implicit class ChannelConversionPingOps[Self <: ChannelConversionPing] (val x: Self) extends AnyVal {
+  implicit class ChannelConversionPingMutableBuilder[Self <: ChannelConversionPing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionUrl(value: String): Self = StObject.set(x, "conversionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setConversionUrl(value: String): Self = this.set("conversionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversionUrl: Self = this.set("conversionUrl", js.undefined)
+    def setConversionUrlUndefined: Self = StObject.set(x, "conversionUrl", js.undefined)
   }
 }

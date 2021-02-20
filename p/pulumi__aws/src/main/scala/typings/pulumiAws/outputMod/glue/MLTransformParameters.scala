@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MLTransformParameters extends js.Object {
+trait MLTransformParameters extends StObject {
   
   /**
     * The parameters for the find matches algorithm. see Find Matches Parameters.
@@ -26,24 +27,12 @@ object MLTransformParameters {
   }
   
   @scala.inline
-  implicit class MLTransformParametersOps[Self <: MLTransformParameters] (val x: Self) extends AnyVal {
+  implicit class MLTransformParametersMutableBuilder[Self <: MLTransformParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindMatchesParameters(value: MLTransformParametersFindMatchesParameters): Self = StObject.set(x, "findMatchesParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFindMatchesParameters(value: MLTransformParametersFindMatchesParameters): Self = this.set("findMatchesParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformType(value: String): Self = this.set("transformType", value.asInstanceOf[js.Any])
+    def setTransformType(value: String): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
   }
 }

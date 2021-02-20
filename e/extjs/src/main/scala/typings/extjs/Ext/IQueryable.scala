@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object IQueryable {
   }
   
   @scala.inline
-  implicit class IQueryableOps[Self <: IQueryable] (val x: Self) extends AnyVal {
+  implicit class IQueryableMutableBuilder[Self <: IQueryable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChild(value: /* selector */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDown(value: /* selector */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChild(value: /* selector */ js.UndefOr[js.Any] => _): Self = this.set("child", js.Any.fromFunction1(value))
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
-    def deleteChild: Self = this.set("child", js.undefined)
+    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDown(value: /* selector */ js.UndefOr[js.Any] => _): Self = this.set("down", js.Any.fromFunction1(value))
+    def setQueryBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setQueryById(value: /* id */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = this.set("query", js.Any.fromFunction1(value))
+    def setQueryByIdUndefined: Self = StObject.set(x, "queryById", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
     
     @scala.inline
-    def setQueryBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = this.set("queryBy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteQueryBy: Self = this.set("queryBy", js.undefined)
-    
-    @scala.inline
-    def setQueryById(value: /* id */ js.UndefOr[java.lang.String] => IComponent): Self = this.set("queryById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteQueryById: Self = this.set("queryById", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

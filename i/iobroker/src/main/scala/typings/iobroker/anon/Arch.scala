@@ -4,12 +4,13 @@ import typings.iobroker.iobrokerStrings.BE
 import typings.iobroker.iobrokerStrings.LE
 import typings.node.processMod.global.NodeJS.Platform
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arch extends js.Object {
+trait Arch extends StObject {
   
   var arch: ReturnType[js.Function0[String]] = js.native
   
@@ -43,39 +44,27 @@ object Arch {
   }
   
   @scala.inline
-  implicit class ArchOps[Self <: Arch] (val x: Self) extends AnyVal {
+  implicit class ArchMutableBuilder[Self <: Arch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArch(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndianness(value: ReturnType[js.Function0[BE | LE]]): Self = StObject.set(x, "endianness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArch(value: ReturnType[js.Function0[String]]): Self = this.set("arch", value.asInstanceOf[js.Any])
+    def setPlatform(value: ReturnType[js.Function0[Platform]]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndianness(value: ReturnType[js.Function0[BE | LE]]): Self = this.set("endianness", value.asInstanceOf[js.Any])
+    def setRelease(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setTmpdir(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: ReturnType[js.Function0[Platform]]): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelease(value: ReturnType[js.Function0[String]]): Self = this.set("release", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTmpdir(value: ReturnType[js.Function0[String]]): Self = this.set("tmpdir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ReturnType[js.Function0[String]]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

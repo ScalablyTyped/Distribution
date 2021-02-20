@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RectangleFillGradient extends js.Object {
+trait RectangleFillGradient extends StObject {
   
   var center: js.UndefOr[js.Any] = js.native
   
@@ -28,57 +29,45 @@ object RectangleFillGradient {
   }
   
   @scala.inline
-  implicit class RectangleFillGradientOps[Self <: RectangleFillGradient] (val x: Self) extends AnyVal {
+  implicit class RectangleFillGradientMutableBuilder[Self <: RectangleFillGradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: js.Any): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: js.Any): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setStops(value: js.Array[RectangleFillGradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: js.Any): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStopsVarargs(value: RectangleFillGradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
     @scala.inline
-    def setStopsVarargs(value: RectangleFillGradientStop*): Self = this.set("stops", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStops(value: js.Array[RectangleFillGradientStop]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

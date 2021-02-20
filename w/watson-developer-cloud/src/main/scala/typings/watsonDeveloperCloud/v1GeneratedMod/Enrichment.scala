@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enrichment. */
 @js.native
-trait Enrichment extends js.Object {
+trait Enrichment extends StObject {
   
   /** Describes what the enrichment step does. */
   var description: js.UndefOr[String] = js.native
@@ -38,51 +39,39 @@ object Enrichment {
   }
   
   @scala.inline
-  implicit class EnrichmentOps[Self <: Enrichment] (val x: Self) extends AnyVal {
+  implicit class EnrichmentMutableBuilder[Self <: Enrichment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination_field(value: String): Self = StObject.set(x, "destination_field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_field(value: String): Self = this.set("destination_field", value.asInstanceOf[js.Any])
+    def setEnrichment_name(value: String): Self = StObject.set(x, "enrichment_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrichment_name(value: String): Self = this.set("enrichment_name", value.asInstanceOf[js.Any])
+    def setIgnore_downstream_errors(value: Boolean): Self = StObject.set(x, "ignore_downstream_errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_field(value: String): Self = this.set("source_field", value.asInstanceOf[js.Any])
+    def setIgnore_downstream_errorsUndefined: Self = StObject.set(x, "ignore_downstream_errors", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setOptions(value: EnrichmentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setIgnore_downstream_errors(value: Boolean): Self = this.set("ignore_downstream_errors", value.asInstanceOf[js.Any])
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnore_downstream_errors: Self = this.set("ignore_downstream_errors", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def setOptions(value: EnrichmentOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setSource_field(value: String): Self = StObject.set(x, "source_field", value.asInstanceOf[js.Any])
   }
 }

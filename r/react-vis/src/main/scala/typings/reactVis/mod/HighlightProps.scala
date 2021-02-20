@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,96 +43,84 @@ object HighlightProps {
   }
   
   @scala.inline
-  implicit class HighlightPropsOps[Self <: HighlightProps] (val x: Self) extends AnyVal {
+  implicit class HighlightPropsMutableBuilder[Self <: HighlightProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableX(value: Boolean): Self = StObject.set(x, "enableX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrag(value: Boolean): Self = this.set("drag", value.asInstanceOf[js.Any])
+    def setEnableXUndefined: Self = StObject.set(x, "enableX", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setEnableY(value: Boolean): Self = StObject.set(x, "enableY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableX(value: Boolean): Self = this.set("enableX", value.asInstanceOf[js.Any])
+    def setEnableYUndefined: Self = StObject.set(x, "enableY", js.undefined)
     
     @scala.inline
-    def deleteEnableX: Self = this.set("enableX", js.undefined)
+    def setHighlightHeight(value: Double): Self = StObject.set(x, "highlightHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableY(value: Boolean): Self = this.set("enableY", value.asInstanceOf[js.Any])
+    def setHighlightHeightUndefined: Self = StObject.set(x, "highlightHeight", js.undefined)
     
     @scala.inline
-    def deleteEnableY: Self = this.set("enableY", js.undefined)
+    def setHighlightWidth(value: Double): Self = StObject.set(x, "highlightWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightHeight(value: Double): Self = this.set("highlightHeight", value.asInstanceOf[js.Any])
+    def setHighlightWidthUndefined: Self = StObject.set(x, "highlightWidth", js.undefined)
     
     @scala.inline
-    def deleteHighlightHeight: Self = this.set("highlightHeight", js.undefined)
+    def setHighlightX(value: String | Double): Self = StObject.set(x, "highlightX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightWidth(value: Double): Self = this.set("highlightWidth", value.asInstanceOf[js.Any])
+    def setHighlightXUndefined: Self = StObject.set(x, "highlightX", js.undefined)
     
     @scala.inline
-    def deleteHighlightWidth: Self = this.set("highlightWidth", js.undefined)
+    def setHighlightY(value: String | Double): Self = StObject.set(x, "highlightY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightX(value: String | Double): Self = this.set("highlightX", value.asInstanceOf[js.Any])
+    def setHighlightYUndefined: Self = StObject.set(x, "highlightY", js.undefined)
     
     @scala.inline
-    def deleteHighlightX: Self = this.set("highlightX", js.undefined)
+    def setOnBrush(value: /* area */ HighlightArea | Null => Unit): Self = StObject.set(x, "onBrush", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHighlightY(value: String | Double): Self = this.set("highlightY", value.asInstanceOf[js.Any])
+    def setOnBrushEnd(value: /* area */ HighlightArea | Null => Unit): Self = StObject.set(x, "onBrushEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHighlightY: Self = this.set("highlightY", js.undefined)
+    def setOnBrushEndUndefined: Self = StObject.set(x, "onBrushEnd", js.undefined)
     
     @scala.inline
-    def setOnBrush(value: /* area */ HighlightArea | Null => Unit): Self = this.set("onBrush", js.Any.fromFunction1(value))
+    def setOnBrushStart(value: /* area */ HighlightArea | Null => Unit): Self = StObject.set(x, "onBrushStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnBrush: Self = this.set("onBrush", js.undefined)
+    def setOnBrushStartUndefined: Self = StObject.set(x, "onBrushStart", js.undefined)
     
     @scala.inline
-    def setOnBrushEnd(value: /* area */ HighlightArea | Null => Unit): Self = this.set("onBrushEnd", js.Any.fromFunction1(value))
+    def setOnBrushUndefined: Self = StObject.set(x, "onBrush", js.undefined)
     
     @scala.inline
-    def deleteOnBrushEnd: Self = this.set("onBrushEnd", js.undefined)
+    def setOnDrag(value: /* area */ HighlightArea | Null => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBrushStart(value: /* area */ HighlightArea | Null => Unit): Self = this.set("onBrushStart", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: /* area */ HighlightArea | Null => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnBrushStart: Self = this.set("onBrushStart", js.undefined)
+    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDrag(value: /* area */ HighlightArea | Null => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnDragStart(value: /* area */ HighlightArea | Null => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: /* area */ HighlightArea | Null => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
-    
-    @scala.inline
-    def setOnDragStart(value: /* area */ HighlightArea | Null => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
   }
 }

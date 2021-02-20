@@ -2,12 +2,13 @@ package typings.openssiWebsdk.mod
 
 import typings.openssiWebsdk.anon.Attributes
 import typings.openssiWebsdk.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Credential extends js.Object {
+trait Credential extends StObject {
   
   var credential_definition_id: CredentialDefinitionID = js.native
   
@@ -48,51 +49,39 @@ object Credential {
   }
   
   @scala.inline
-  implicit class CredentialOps[Self <: Credential] (val x: Self) extends AnyVal {
+  implicit class CredentialMutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredential_definition_id(value: CredentialDefinitionID): Self = StObject.set(x, "credential_definition_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuer_did(value: DID): Self = StObject.set(x, "issuer_did", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential_definition_id(value: CredentialDefinitionID): Self = this.set("credential_definition_id", value.asInstanceOf[js.Any])
+    def setOffer(value: Attributes): Self = StObject.set(x, "offer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOfferUndefined: Self = StObject.set(x, "offer", js.undefined)
     
     @scala.inline
-    def setIssuer_did(value: DID): Self = this.set("issuer_did", value.asInstanceOf[js.Any])
+    def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: Properties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setSchema_name(value: String): Self = StObject.set(x, "schema_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema_name(value: String): Self = this.set("schema_name", value.asInstanceOf[js.Any])
+    def setSchema_version(value: String): Self = StObject.set(x, "schema_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema_version(value: String): Self = this.set("schema_version", value.asInstanceOf[js.Any])
+    def setState(value: CredentialState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: CredentialState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Name): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffer(value: Attributes): Self = this.set("offer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffer: Self = this.set("offer", js.undefined)
+    def setTo(value: Name): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseTableRowProps[D /* <: js.Object */] extends js.Object {
+trait UseTableRowProps[D /* <: js.Object */] extends StObject {
   
   var allCells: js.Array[Cell[D, _]] = js.native
   

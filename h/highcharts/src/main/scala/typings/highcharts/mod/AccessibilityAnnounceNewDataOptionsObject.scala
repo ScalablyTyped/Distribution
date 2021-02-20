@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityAnnounceNewDataOptionsObject extends js.Object {
+trait AccessibilityAnnounceNewDataOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Optional formatter callback for
@@ -59,44 +60,32 @@ object AccessibilityAnnounceNewDataOptionsObject {
   }
   
   @scala.inline
-  implicit class AccessibilityAnnounceNewDataOptionsObjectOps[Self <: AccessibilityAnnounceNewDataOptionsObject] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class AccessibilityAnnounceNewDataOptionsObjectMutableBuilder[Self <: AccessibilityAnnounceNewDataOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAnnouncementFormatter(
       value: (/* updatedSeries */ js.Array[Series], /* addedSeries */ js.UndefOr[Series], /* addedPoint */ js.UndefOr[Point]) => `false` | String
-    ): Self = this.set("announcementFormatter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "announcementFormatter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAnnouncementFormatter: Self = this.set("announcementFormatter", js.undefined)
+    def setAnnouncementFormatterUndefined: Self = StObject.set(x, "announcementFormatter", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setInterruptUser(value: Boolean): Self = this.set("interruptUser", value.asInstanceOf[js.Any])
+    def setInterruptUser(value: Boolean): Self = StObject.set(x, "interruptUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterruptUser: Self = this.set("interruptUser", js.undefined)
+    def setInterruptUserUndefined: Self = StObject.set(x, "interruptUser", js.undefined)
     
     @scala.inline
-    def setMinAnnounceInterval(value: Double): Self = this.set("minAnnounceInterval", value.asInstanceOf[js.Any])
+    def setMinAnnounceInterval(value: Double): Self = StObject.set(x, "minAnnounceInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinAnnounceInterval: Self = this.set("minAnnounceInterval", js.undefined)
+    def setMinAnnounceIntervalUndefined: Self = StObject.set(x, "minAnnounceInterval", js.undefined)
   }
 }

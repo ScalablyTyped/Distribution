@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object BaseElevationLayerProperties {
   }
   
   @scala.inline
-  implicit class BaseElevationLayerPropertiesOps[Self <: BaseElevationLayerProperties] (val x: Self) extends AnyVal {
+  implicit class BaseElevationLayerPropertiesMutableBuilder[Self <: BaseElevationLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
-    
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileInfo: Self = this.set("tileInfo", js.undefined)
+    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
   }
 }

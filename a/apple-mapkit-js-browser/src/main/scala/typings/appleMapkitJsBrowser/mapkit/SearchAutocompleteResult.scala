@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The result of an autocomplete query, including display lines and a coordinate.
   */
 @js.native
-trait SearchAutocompleteResult extends js.Object {
+trait SearchAutocompleteResult extends StObject {
   
   /**
     * The coordinate of the result, provided when it corresponds to a single place.
@@ -29,27 +30,15 @@ object SearchAutocompleteResult {
   }
   
   @scala.inline
-  implicit class SearchAutocompleteResultOps[Self <: SearchAutocompleteResult] (val x: Self) extends AnyVal {
+  implicit class SearchAutocompleteResultMutableBuilder[Self <: SearchAutocompleteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayLines(value: js.Array[String]): Self = StObject.set(x, "displayLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoordinate(value: Coordinate): Self = this.set("coordinate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayLinesVarargs(value: String*): Self = this.set("displayLines", js.Array(value :_*))
-    
-    @scala.inline
-    def setDisplayLines(value: js.Array[String]): Self = this.set("displayLines", value.asInstanceOf[js.Any])
+    def setDisplayLinesVarargs(value: String*): Self = StObject.set(x, "displayLines", js.Array(value :_*))
   }
 }

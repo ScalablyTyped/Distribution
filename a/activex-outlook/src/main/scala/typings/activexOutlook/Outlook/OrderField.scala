@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderField extends js.Object {
+trait OrderField extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -40,39 +41,27 @@ object OrderField {
   }
   
   @scala.inline
-  implicit class OrderFieldOps[Self <: OrderField] (val x: Self) extends AnyVal {
+  implicit class OrderFieldMutableBuilder[Self <: OrderField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDescending(value: Boolean): Self = StObject.set(x, "IsDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setOutlookDotOrderField_typekey(value: OrderField): Self = StObject.set(x, "Outlook.OrderField_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDescending(value: Boolean): Self = this.set("IsDescending", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOrderField_typekey(value: OrderField): Self = this.set("Outlook.OrderField_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewXMLSchemaName(value: String): Self = this.set("ViewXMLSchemaName", value.asInstanceOf[js.Any])
+    def setViewXMLSchemaName(value: String): Self = StObject.set(x, "ViewXMLSchemaName", value.asInstanceOf[js.Any])
   }
 }

@@ -16,6 +16,7 @@ import typings.ssh2Streams.mod.Stats
 import typings.ssh2Streams.mod.TransferOptions
 import typings.ssh2Streams.mod.WriteStreamOptions
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

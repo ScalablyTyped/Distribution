@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,84 +67,72 @@ object IHasOneAssociation {
   }
   
   @scala.inline
-  implicit class IHasOneAssociationOps[Self <: IHasOneAssociation] (val x: Self) extends AnyVal {
+  implicit class IHasOneAssociationMutableBuilder[Self <: IHasOneAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetForeignKey(value: () => String): Self = StObject.set(x, "getForeignKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForeignKey(value: String): Self = this.set("foreignKey", value.asInstanceOf[js.Any])
+    def setGetForeignKeyUndefined: Self = StObject.set(x, "getForeignKey", js.undefined)
     
     @scala.inline
-    def deleteForeignKey: Self = this.set("foreignKey", js.undefined)
+    def setGetGetterName(value: () => String): Self = StObject.set(x, "getGetterName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetForeignKey(value: () => String): Self = this.set("getForeignKey", js.Any.fromFunction0(value))
+    def setGetGetterNameUndefined: Self = StObject.set(x, "getGetterName", js.undefined)
     
     @scala.inline
-    def deleteGetForeignKey: Self = this.set("getForeignKey", js.undefined)
+    def setGetInstanceName(value: () => _): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGetterName(value: () => String): Self = this.set("getGetterName", js.Any.fromFunction0(value))
+    def setGetInstanceNameUndefined: Self = StObject.set(x, "getInstanceName", js.undefined)
     
     @scala.inline
-    def deleteGetGetterName: Self = this.set("getGetterName", js.undefined)
+    def setGetSetterName(value: () => String): Self = StObject.set(x, "getSetterName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInstanceName(value: () => _): Self = this.set("getInstanceName", js.Any.fromFunction0(value))
+    def setGetSetterNameUndefined: Self = StObject.set(x, "getSetterName", js.undefined)
     
     @scala.inline
-    def deleteGetInstanceName: Self = this.set("getInstanceName", js.undefined)
+    def setGetterName(value: String): Self = StObject.set(x, "getterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSetterName(value: () => String): Self = this.set("getSetterName", js.Any.fromFunction0(value))
+    def setGetterNameUndefined: Self = StObject.set(x, "getterName", js.undefined)
     
     @scala.inline
-    def deleteGetSetterName: Self = this.set("getSetterName", js.undefined)
+    def setSetForeignKey(value: /* foreignKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setForeignKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetterName(value: String): Self = this.set("getterName", value.asInstanceOf[js.Any])
+    def setSetForeignKeyUndefined: Self = StObject.set(x, "setForeignKey", js.undefined)
     
     @scala.inline
-    def deleteGetterName: Self = this.set("getterName", js.undefined)
+    def setSetGetterName(value: /* getterName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setGetterName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetForeignKey(value: /* foreignKey */ js.UndefOr[String] => Unit): Self = this.set("setForeignKey", js.Any.fromFunction1(value))
+    def setSetGetterNameUndefined: Self = StObject.set(x, "setGetterName", js.undefined)
     
     @scala.inline
-    def deleteSetForeignKey: Self = this.set("setForeignKey", js.undefined)
+    def setSetInstanceName(value: /* instanceName */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInstanceName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGetterName(value: /* getterName */ js.UndefOr[String] => Unit): Self = this.set("setGetterName", js.Any.fromFunction1(value))
+    def setSetInstanceNameUndefined: Self = StObject.set(x, "setInstanceName", js.undefined)
     
     @scala.inline
-    def deleteSetGetterName: Self = this.set("setGetterName", js.undefined)
+    def setSetSetterName(value: /* setterName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSetterName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInstanceName(value: /* instanceName */ js.UndefOr[js.Any] => Unit): Self = this.set("setInstanceName", js.Any.fromFunction1(value))
+    def setSetSetterNameUndefined: Self = StObject.set(x, "setSetterName", js.undefined)
     
     @scala.inline
-    def deleteSetInstanceName: Self = this.set("setInstanceName", js.undefined)
+    def setSetterName(value: String): Self = StObject.set(x, "setterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSetterName(value: /* setterName */ js.UndefOr[String] => Unit): Self = this.set("setSetterName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetSetterName: Self = this.set("setSetterName", js.undefined)
-    
-    @scala.inline
-    def setSetterName(value: String): Self = this.set("setterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetterName: Self = this.set("setterName", js.undefined)
+    def setSetterNameUndefined: Self = StObject.set(x, "setterName", js.undefined)
   }
 }

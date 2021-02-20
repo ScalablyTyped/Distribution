@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRenderingManagerAutoClearSetup extends js.Object {
+trait IRenderingManagerAutoClearSetup extends StObject {
   
   /**
     * Defines whether or not autoclear is enable.
@@ -31,27 +32,15 @@ object IRenderingManagerAutoClearSetup {
   }
   
   @scala.inline
-  implicit class IRenderingManagerAutoClearSetupOps[Self <: IRenderingManagerAutoClearSetup] (val x: Self) extends AnyVal {
+  implicit class IRenderingManagerAutoClearSetupMutableBuilder[Self <: IRenderingManagerAutoClearSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoClear(value: Boolean): Self = this.set("autoClear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepth(value: Boolean): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStencil(value: Boolean): Self = this.set("stencil", value.asInstanceOf[js.Any])
+    def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
   }
 }

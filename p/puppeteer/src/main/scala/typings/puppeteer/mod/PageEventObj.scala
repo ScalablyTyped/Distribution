@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageEventObj extends js.Object {
+trait PageEventObj extends StObject {
   
   /** Emitted when the page closes. */
   var close: js.UndefOr[scala.Nothing] = js.native
@@ -96,63 +97,51 @@ object PageEventObj {
   }
   
   @scala.inline
-  implicit class PageEventObjOps[Self <: PageEventObj] (val x: Self) extends AnyVal {
+  implicit class PageEventObjMutableBuilder[Self <: PageEventObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsole(value: ConsoleMessage): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsole(value: ConsoleMessage): Self = this.set("console", value.asInstanceOf[js.Any])
+    def setFrameattached(value: Frame): Self = StObject.set(x, "frameattached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialog(value: Dialog): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    def setFramedetached(value: Frame): Self = StObject.set(x, "framedetached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFramenavigated(value: Frame): Self = StObject.set(x, "framenavigated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameattached(value: Frame): Self = this.set("frameattached", value.asInstanceOf[js.Any])
+    def setMetrics(value: typings.puppeteer.anon.Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramedetached(value: Frame): Self = this.set("framedetached", value.asInstanceOf[js.Any])
+    def setPageerror(value: Error): Self = StObject.set(x, "pageerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramenavigated(value: Frame): Self = this.set("framenavigated", value.asInstanceOf[js.Any])
+    def setPopup(value: Page): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: typings.puppeteer.anon.Metrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageerror(value: Error): Self = this.set("pageerror", value.asInstanceOf[js.Any])
+    def setRequestfailed(value: Request): Self = StObject.set(x, "requestfailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: Page): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setRequestfinished(value: Request): Self = StObject.set(x, "requestfinished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestfailed(value: Request): Self = this.set("requestfailed", value.asInstanceOf[js.Any])
+    def setWorkercreated(value: Worker): Self = StObject.set(x, "workercreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestfinished(value: Request): Self = this.set("requestfinished", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: Response): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkercreated(value: Worker): Self = this.set("workercreated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerdestroyed(value: Worker): Self = this.set("workerdestroyed", value.asInstanceOf[js.Any])
+    def setWorkerdestroyed(value: Worker): Self = StObject.set(x, "workerdestroyed", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManifestParams extends js.Object {
+trait ManifestParams extends StObject {
   
   var appUrl: String = js.native
   
@@ -20,24 +21,12 @@ object ManifestParams {
   }
   
   @scala.inline
-  implicit class ManifestParamsOps[Self <: ManifestParams] (val x: Self) extends AnyVal {
+  implicit class ManifestParamsMutableBuilder[Self <: ManifestParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppUrl(value: String): Self = this.set("appUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

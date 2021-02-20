@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitConfigSourceRequest extends js.Object {
+trait SubmitConfigSourceRequest extends StObject {
   
   /** Required. The source configuration for the service. */
   var configSource: js.UndefOr[ConfigSource] = js.native
@@ -25,30 +26,18 @@ object SubmitConfigSourceRequest {
   }
   
   @scala.inline
-  implicit class SubmitConfigSourceRequestOps[Self <: SubmitConfigSourceRequest] (val x: Self) extends AnyVal {
+  implicit class SubmitConfigSourceRequestMutableBuilder[Self <: SubmitConfigSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigSource(value: ConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigSource(value: ConfigSource): Self = this.set("configSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigSource: Self = this.set("configSource", js.undefined)
-    
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

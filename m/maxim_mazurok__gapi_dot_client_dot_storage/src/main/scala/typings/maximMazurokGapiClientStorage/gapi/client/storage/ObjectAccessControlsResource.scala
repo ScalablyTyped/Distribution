@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientStorage.anon.BucketEntity
 import typings.maximMazurokGapiClientStorage.anon.FieldsGeneration
 import typings.maximMazurokGapiClientStorage.anon.GenerationKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectAccessControlsResource extends js.Object {
+trait ObjectAccessControlsResource extends StObject {
   
   /** Permanently deletes the ACL entry for the specified entity on the specified object. */
   def delete(): Request[Unit] = js.native

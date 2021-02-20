@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePublishingDestinationRequest extends js.Object {
+trait DescribePublishingDestinationRequest extends StObject {
   
   /**
     * The ID of the publishing destination to retrieve.
@@ -26,24 +27,12 @@ object DescribePublishingDestinationRequest {
   }
   
   @scala.inline
-  implicit class DescribePublishingDestinationRequestOps[Self <: DescribePublishingDestinationRequest] (val x: Self) extends AnyVal {
+  implicit class DescribePublishingDestinationRequestMutableBuilder[Self <: DescribePublishingDestinationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestinationId(value: String): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

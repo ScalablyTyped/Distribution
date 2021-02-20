@@ -3,12 +3,13 @@ package typings.auth0Lock
 import typings.auth0Lock.auth0LockStrings.forgotPassword
 import typings.auth0Lock.auth0LockStrings.login
 import typings.auth0Lock.auth0LockStrings.signUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0LockShowOptions extends js.Object {
+trait Auth0LockShowOptions extends StObject {
   
   var allowForgotPassword: js.UndefOr[Boolean] = js.native
   
@@ -37,75 +38,63 @@ object Auth0LockShowOptions {
   }
   
   @scala.inline
-  implicit class Auth0LockShowOptionsOps[Self <: Auth0LockShowOptions] (val x: Self) extends AnyVal {
+  implicit class Auth0LockShowOptionsMutableBuilder[Self <: Auth0LockShowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowForgotPassword(value: Boolean): Self = StObject.set(x, "allowForgotPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowForgotPasswordUndefined: Self = StObject.set(x, "allowForgotPassword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowLogin(value: Boolean): Self = StObject.set(x, "allowLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowForgotPassword(value: Boolean): Self = this.set("allowForgotPassword", value.asInstanceOf[js.Any])
+    def setAllowLoginUndefined: Self = StObject.set(x, "allowLogin", js.undefined)
     
     @scala.inline
-    def deleteAllowForgotPassword: Self = this.set("allowForgotPassword", js.undefined)
+    def setAllowSignUp(value: Boolean): Self = StObject.set(x, "allowSignUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowLogin(value: Boolean): Self = this.set("allowLogin", value.asInstanceOf[js.Any])
+    def setAllowSignUpUndefined: Self = StObject.set(x, "allowSignUp", js.undefined)
     
     @scala.inline
-    def deleteAllowLogin: Self = this.set("allowLogin", js.undefined)
+    def setAllowedConnections(value: js.Array[String]): Self = StObject.set(x, "allowedConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSignUp(value: Boolean): Self = this.set("allowSignUp", value.asInstanceOf[js.Any])
+    def setAllowedConnectionsUndefined: Self = StObject.set(x, "allowedConnections", js.undefined)
     
     @scala.inline
-    def deleteAllowSignUp: Self = this.set("allowSignUp", js.undefined)
+    def setAllowedConnectionsVarargs(value: String*): Self = StObject.set(x, "allowedConnections", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedConnectionsVarargs(value: String*): Self = this.set("allowedConnections", js.Array(value :_*))
+    def setAuth(value: Auth0LockAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedConnections(value: js.Array[String]): Self = this.set("allowedConnections", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAllowedConnections: Self = this.set("allowedConnections", js.undefined)
+    def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = StObject.set(x, "flashMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: Auth0LockAuthOptions): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setFlashMessageUndefined: Self = StObject.set(x, "flashMessage", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setInitialScreen(value: login | signUp | forgotPassword): Self = StObject.set(x, "initialScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = this.set("flashMessage", value.asInstanceOf[js.Any])
+    def setInitialScreenUndefined: Self = StObject.set(x, "initialScreen", js.undefined)
     
     @scala.inline
-    def deleteFlashMessage: Self = this.set("flashMessage", js.undefined)
+    def setLanguageDictionary(value: js.Any): Self = StObject.set(x, "languageDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialScreen(value: login | signUp | forgotPassword): Self = this.set("initialScreen", value.asInstanceOf[js.Any])
+    def setLanguageDictionaryUndefined: Self = StObject.set(x, "languageDictionary", js.undefined)
     
     @scala.inline
-    def deleteInitialScreen: Self = this.set("initialScreen", js.undefined)
+    def setRememberLastLogin(value: Boolean): Self = StObject.set(x, "rememberLastLogin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageDictionary(value: js.Any): Self = this.set("languageDictionary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageDictionary: Self = this.set("languageDictionary", js.undefined)
-    
-    @scala.inline
-    def setRememberLastLogin(value: Boolean): Self = this.set("rememberLastLogin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRememberLastLogin: Self = this.set("rememberLastLogin", js.undefined)
+    def setRememberLastLoginUndefined: Self = StObject.set(x, "rememberLastLogin", js.undefined)
   }
 }

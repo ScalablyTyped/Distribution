@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.data.proxy.IServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object IHttpProxy {
   }
   
   @scala.inline
-  implicit class IHttpProxyOps[Self <: IHttpProxy] (val x: Self) extends AnyVal {
+  implicit class IHttpProxyMutableBuilder[Self <: IHttpProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionMethods(value: js.Any): Self = this.set("actionMethods", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteActionMethods: Self = this.set("actionMethods", js.undefined)
+    def setGetMethod(value: /* request */ js.UndefOr[IRequest] => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMethod(value: /* request */ js.UndefOr[IRequest] => String): Self = this.set("getMethod", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetMethod: Self = this.set("getMethod", js.undefined)
-    
-    @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

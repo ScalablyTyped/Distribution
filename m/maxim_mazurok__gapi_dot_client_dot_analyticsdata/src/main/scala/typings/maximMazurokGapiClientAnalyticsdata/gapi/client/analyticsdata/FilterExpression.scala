@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterExpression extends js.Object {
+trait FilterExpression extends StObject {
   
   /** The FilterExpressions in and_group have an AND relationship. */
   var andGroup: js.UndefOr[FilterExpressionList] = js.native
@@ -28,42 +29,30 @@ object FilterExpression {
   }
   
   @scala.inline
-  implicit class FilterExpressionOps[Self <: FilterExpression] (val x: Self) extends AnyVal {
+  implicit class FilterExpressionMutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndGroup(value: FilterExpressionList): Self = StObject.set(x, "andGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndGroupUndefined: Self = StObject.set(x, "andGroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndGroup(value: FilterExpressionList): Self = this.set("andGroup", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteAndGroup: Self = this.set("andGroup", js.undefined)
+    def setNotExpression(value: FilterExpression): Self = StObject.set(x, "notExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: Filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setNotExpressionUndefined: Self = StObject.set(x, "notExpression", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setOrGroup(value: FilterExpressionList): Self = StObject.set(x, "orGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotExpression(value: FilterExpression): Self = this.set("notExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotExpression: Self = this.set("notExpression", js.undefined)
-    
-    @scala.inline
-    def setOrGroup(value: FilterExpressionList): Self = this.set("orGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrGroup: Self = this.set("orGroup", js.undefined)
+    def setOrGroupUndefined: Self = StObject.set(x, "orGroup", js.undefined)
   }
 }

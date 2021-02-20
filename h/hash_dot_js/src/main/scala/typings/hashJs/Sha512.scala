@@ -5,6 +5,7 @@ import typings.hashJs.hashJsNumbers.`128`
 import typings.hashJs.hashJsNumbers.`192`
 import typings.hashJs.hashJsNumbers.`512`
 import typings.hashJs.hashJsStrings.big
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

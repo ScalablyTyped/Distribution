@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceSnapshotInfo extends js.Object {
+trait InstanceSnapshotInfo extends StObject {
   
   /**
     * The blueprint ID from which the source instance (e.g., os_debian_8_3).
@@ -31,39 +32,27 @@ object InstanceSnapshotInfo {
   }
   
   @scala.inline
-  implicit class InstanceSnapshotInfoOps[Self <: InstanceSnapshotInfo] (val x: Self) extends AnyVal {
+  implicit class InstanceSnapshotInfoMutableBuilder[Self <: InstanceSnapshotInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromBlueprintId(value: NonEmptyString): Self = StObject.set(x, "fromBlueprintId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromBlueprintIdUndefined: Self = StObject.set(x, "fromBlueprintId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromBundleId(value: NonEmptyString): Self = StObject.set(x, "fromBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromBlueprintId(value: NonEmptyString): Self = this.set("fromBlueprintId", value.asInstanceOf[js.Any])
+    def setFromBundleIdUndefined: Self = StObject.set(x, "fromBundleId", js.undefined)
     
     @scala.inline
-    def deleteFromBlueprintId: Self = this.set("fromBlueprintId", js.undefined)
+    def setFromDiskInfo(value: DiskInfoList): Self = StObject.set(x, "fromDiskInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromBundleId(value: NonEmptyString): Self = this.set("fromBundleId", value.asInstanceOf[js.Any])
+    def setFromDiskInfoUndefined: Self = StObject.set(x, "fromDiskInfo", js.undefined)
     
     @scala.inline
-    def deleteFromBundleId: Self = this.set("fromBundleId", js.undefined)
-    
-    @scala.inline
-    def setFromDiskInfoVarargs(value: DiskInfo*): Self = this.set("fromDiskInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setFromDiskInfo(value: DiskInfoList): Self = this.set("fromDiskInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromDiskInfo: Self = this.set("fromDiskInfo", js.undefined)
+    def setFromDiskInfoVarargs(value: DiskInfo*): Self = StObject.set(x, "fromDiskInfo", js.Array(value :_*))
   }
 }

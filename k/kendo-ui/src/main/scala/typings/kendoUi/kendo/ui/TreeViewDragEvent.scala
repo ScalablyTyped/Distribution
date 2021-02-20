@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,54 +30,42 @@ object TreeViewDragEvent {
   }
   
   @scala.inline
-  implicit class TreeViewDragEventOps[Self <: TreeViewDragEvent] (val x: Self) extends AnyVal {
+  implicit class TreeViewDragEventMutableBuilder[Self <: TreeViewDragEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropTarget(value: Element): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropTarget(value: Element): Self = this.set("dropTarget", value.asInstanceOf[js.Any])
+    def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
     
     @scala.inline
-    def deleteDropTarget: Self = this.set("dropTarget", js.undefined)
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
     
     @scala.inline
-    def deletePageX: Self = this.set("pageX", js.undefined)
+    def setSetStatusClass(value: js.Function): Self = StObject.set(x, "setStatusClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setSetStatusClassUndefined: Self = StObject.set(x, "setStatusClass", js.undefined)
     
     @scala.inline
-    def deletePageY: Self = this.set("pageY", js.undefined)
+    def setSourceNode(value: Element): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStatusClass(value: js.Function): Self = this.set("setStatusClass", value.asInstanceOf[js.Any])
+    def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
     
     @scala.inline
-    def deleteSetStatusClass: Self = this.set("setStatusClass", js.undefined)
+    def setStatusClass(value: String): Self = StObject.set(x, "statusClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceNode(value: Element): Self = this.set("sourceNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceNode: Self = this.set("sourceNode", js.undefined)
-    
-    @scala.inline
-    def setStatusClass(value: String): Self = this.set("statusClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusClass: Self = this.set("statusClass", js.undefined)
+    def setStatusClassUndefined: Self = StObject.set(x, "statusClass", js.undefined)
   }
 }

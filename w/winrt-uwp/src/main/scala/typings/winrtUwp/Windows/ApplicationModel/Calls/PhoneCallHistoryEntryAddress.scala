@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Address book information for a contact used by PhoneCallHistoryEntry objects. */
 @js.native
-trait PhoneCallHistoryEntryAddress extends js.Object {
+trait PhoneCallHistoryEntryAddress extends StObject {
   
   /** Gets or sets the unique identifier for this contact. */
   var contactId: String = js.native
@@ -34,30 +35,18 @@ object PhoneCallHistoryEntryAddress {
   }
   
   @scala.inline
-  implicit class PhoneCallHistoryEntryAddressOps[Self <: PhoneCallHistoryEntryAddress] (val x: Self) extends AnyVal {
+  implicit class PhoneCallHistoryEntryAddressMutableBuilder[Self <: PhoneCallHistoryEntryAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawAddress(value: String): Self = StObject.set(x, "rawAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactId(value: String): Self = this.set("contactId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawAddress(value: String): Self = this.set("rawAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawAddressKind(value: PhoneCallHistoryEntryRawAddressKind): Self = this.set("rawAddressKind", value.asInstanceOf[js.Any])
+    def setRawAddressKind(value: PhoneCallHistoryEntryRawAddressKind): Self = StObject.set(x, "rawAddressKind", value.asInstanceOf[js.Any])
   }
 }

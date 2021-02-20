@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressComponent[T] extends js.Object {
+trait AddressComponent[T] extends StObject {
   
   /** is the full text description or name of the address component as returned by the Geocoder. */
   var long_name: String = js.native
@@ -29,30 +30,18 @@ object AddressComponent {
   }
   
   @scala.inline
-  implicit class AddressComponentOps[Self <: AddressComponent[_], T] (val x: Self with AddressComponent[T]) extends AnyVal {
+  implicit class AddressComponentMutableBuilder[Self <: AddressComponent[_], T] (val x: Self with AddressComponent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypes(value: js.Array[T]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLong_name(value: String): Self = this.set("long_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShort_name(value: String): Self = this.set("short_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypesVarargs(value: T*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[T]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: T*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

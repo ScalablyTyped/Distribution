@@ -5,12 +5,13 @@ import typings.nodeRedRuntime.anon.IdReq
 import typings.nodeRedRuntime.anon.Req
 import typings.nodeRedRuntime.anon.Rev
 import typings.nodeRedRuntime.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowsModule extends js.Object {
+trait FlowsModule extends StObject {
   
   /**
     * Adds a flow configuration
@@ -90,39 +91,27 @@ object FlowsModule {
   }
   
   @scala.inline
-  implicit class FlowsModuleOps[Self <: FlowsModule] (val x: Self) extends AnyVal {
+  implicit class FlowsModuleMutableBuilder[Self <: FlowsModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFlow(value: typings.nodeRedRuntime.anon.Flow => js.Promise[String]): Self = StObject.set(x, "addFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteFlow(value: IdReq => js.Promise[Unit]): Self = StObject.set(x, "deleteFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFlow(value: IdReq => js.Promise[Flow]): Self = StObject.set(x, "getFlow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFlow(value: typings.nodeRedRuntime.anon.Flow => js.Promise[String]): Self = this.set("addFlow", js.Any.fromFunction1(value))
+    def setGetFlows(value: Req => js.Promise[Flows]): Self = StObject.set(x, "getFlows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteFlow(value: IdReq => js.Promise[Unit]): Self = this.set("deleteFlow", js.Any.fromFunction1(value))
+    def setGetNodeCredentials(value: Type => js.Promise[js.Object]): Self = StObject.set(x, "getNodeCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFlow(value: IdReq => js.Promise[Flow]): Self = this.set("getFlow", js.Any.fromFunction1(value))
+    def setSetFlows(value: typings.nodeRedRuntime.anon.Flows => js.Promise[Rev]): Self = StObject.set(x, "setFlows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFlows(value: Req => js.Promise[Flows]): Self = this.set("getFlows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNodeCredentials(value: Type => js.Promise[js.Object]): Self = this.set("getNodeCredentials", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFlows(value: typings.nodeRedRuntime.anon.Flows => js.Promise[Rev]): Self = this.set("setFlows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateFlow(value: FlowId => js.Promise[String]): Self = this.set("updateFlow", js.Any.fromFunction1(value))
+    def setUpdateFlow(value: FlowId => js.Promise[String]): Self = StObject.set(x, "updateFlow", js.Any.fromFunction1(value))
   }
 }

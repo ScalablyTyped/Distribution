@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryDeletionStatusItem extends js.Object {
+trait InventoryDeletionStatusItem extends StObject {
   
   /**
     * The deletion ID returned by the DeleteInventory action.
@@ -51,60 +52,48 @@ object InventoryDeletionStatusItem {
   }
   
   @scala.inline
-  implicit class InventoryDeletionStatusItemOps[Self <: InventoryDeletionStatusItem] (val x: Self) extends AnyVal {
+  implicit class InventoryDeletionStatusItemMutableBuilder[Self <: InventoryDeletionStatusItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletionStartTime(value: InventoryDeletionStartTime): Self = StObject.set(x, "DeletionStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionId(value: UUID): Self = this.set("DeletionId", value.asInstanceOf[js.Any])
+    def setDeletionStartTimeUndefined: Self = StObject.set(x, "DeletionStartTime", js.undefined)
     
     @scala.inline
-    def deleteDeletionId: Self = this.set("DeletionId", js.undefined)
+    def setDeletionSummary(value: InventoryDeletionSummary): Self = StObject.set(x, "DeletionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionStartTime(value: InventoryDeletionStartTime): Self = this.set("DeletionStartTime", value.asInstanceOf[js.Any])
+    def setDeletionSummaryUndefined: Self = StObject.set(x, "DeletionSummary", js.undefined)
     
     @scala.inline
-    def deleteDeletionStartTime: Self = this.set("DeletionStartTime", js.undefined)
+    def setLastStatus(value: InventoryDeletionStatus): Self = StObject.set(x, "LastStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionSummary(value: InventoryDeletionSummary): Self = this.set("DeletionSummary", value.asInstanceOf[js.Any])
+    def setLastStatusMessage(value: InventoryDeletionLastStatusMessage): Self = StObject.set(x, "LastStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeletionSummary: Self = this.set("DeletionSummary", js.undefined)
+    def setLastStatusMessageUndefined: Self = StObject.set(x, "LastStatusMessage", js.undefined)
     
     @scala.inline
-    def setLastStatus(value: InventoryDeletionStatus): Self = this.set("LastStatus", value.asInstanceOf[js.Any])
+    def setLastStatusUndefined: Self = StObject.set(x, "LastStatus", js.undefined)
     
     @scala.inline
-    def deleteLastStatus: Self = this.set("LastStatus", js.undefined)
+    def setLastStatusUpdateTime(value: InventoryDeletionLastStatusUpdateTime): Self = StObject.set(x, "LastStatusUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusMessage(value: InventoryDeletionLastStatusMessage): Self = this.set("LastStatusMessage", value.asInstanceOf[js.Any])
+    def setLastStatusUpdateTimeUndefined: Self = StObject.set(x, "LastStatusUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteLastStatusMessage: Self = this.set("LastStatusMessage", js.undefined)
+    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusUpdateTime(value: InventoryDeletionLastStatusUpdateTime): Self = this.set("LastStatusUpdateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastStatusUpdateTime: Self = this.set("LastStatusUpdateTime", js.undefined)
-    
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
   }
 }

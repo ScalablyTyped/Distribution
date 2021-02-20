@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnclaimDeviceRequest extends js.Object {
+trait UnclaimDeviceRequest extends StObject {
   
   /** Required. The device ID returned by `ClaimDevice`. */
   var deviceId: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object UnclaimDeviceRequest {
   }
   
   @scala.inline
-  implicit class UnclaimDeviceRequestOps[Self <: UnclaimDeviceRequest] (val x: Self) extends AnyVal {
+  implicit class UnclaimDeviceRequestMutableBuilder[Self <: UnclaimDeviceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIdentifier(value: DeviceIdentifier): Self = this.set("deviceIdentifier", value.asInstanceOf[js.Any])
+    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
     
     @scala.inline
-    def deleteDeviceIdentifier: Self = this.set("deviceIdentifier", js.undefined)
+    def setVacationModeDays(value: Double): Self = StObject.set(x, "vacationModeDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
+    def setVacationModeDaysUndefined: Self = StObject.set(x, "vacationModeDays", js.undefined)
     
     @scala.inline
-    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+    def setVacationModeExpireTime(value: String): Self = StObject.set(x, "vacationModeExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVacationModeDays(value: Double): Self = this.set("vacationModeDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVacationModeDays: Self = this.set("vacationModeDays", js.undefined)
-    
-    @scala.inline
-    def setVacationModeExpireTime(value: String): Self = this.set("vacationModeExpireTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVacationModeExpireTime: Self = this.set("vacationModeExpireTime", js.undefined)
+    def setVacationModeExpireTimeUndefined: Self = StObject.set(x, "vacationModeExpireTime", js.undefined)
   }
 }

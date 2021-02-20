@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.iOS.LivePhoto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,45 +36,33 @@ object CameraMediaMultipleItemsType {
   }
   
   @scala.inline
-  implicit class CameraMediaMultipleItemsTypeOps[Self <: CameraMediaMultipleItemsType] (val x: Self) extends AnyVal {
+  implicit class CameraMediaMultipleItemsTypeMutableBuilder[Self <: CameraMediaMultipleItemsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImages(value: js.Array[CameraMediaItemType]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagesVarargs(value: CameraMediaItemType*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImagesVarargs(value: CameraMediaItemType*): Self = this.set("images", js.Array(value :_*))
+    def setLivePhotos(value: js.Array[LivePhoto]): Self = StObject.set(x, "livePhotos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[CameraMediaItemType]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setLivePhotosUndefined: Self = StObject.set(x, "livePhotos", js.undefined)
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setLivePhotosVarargs(value: LivePhoto*): Self = StObject.set(x, "livePhotos", js.Array(value :_*))
     
     @scala.inline
-    def setLivePhotosVarargs(value: LivePhoto*): Self = this.set("livePhotos", js.Array(value :_*))
+    def setVideos(value: js.Array[CameraMediaItemType]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLivePhotos(value: js.Array[LivePhoto]): Self = this.set("livePhotos", value.asInstanceOf[js.Any])
+    def setVideosUndefined: Self = StObject.set(x, "videos", js.undefined)
     
     @scala.inline
-    def deleteLivePhotos: Self = this.set("livePhotos", js.undefined)
-    
-    @scala.inline
-    def setVideosVarargs(value: CameraMediaItemType*): Self = this.set("videos", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideos(value: js.Array[CameraMediaItemType]): Self = this.set("videos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideos: Self = this.set("videos", js.undefined)
+    def setVideosVarargs(value: CameraMediaItemType*): Self = StObject.set(x, "videos", js.Array(value :_*))
   }
 }

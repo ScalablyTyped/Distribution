@@ -2,17 +2,17 @@ package typings.babylonjs
 
 import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.cameraInputsManagerMod.CameraInputsManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/arcRotateCameraInputsManager", JSImport.Namespace)
-@js.native
-object arcRotateCameraInputsManagerMod extends js.Object {
+object arcRotateCameraInputsManagerMod {
   
   /**
     * Interface representing an arc rotate camera inputs manager
     */
+  @JSImport("babylonjs/Cameras/arcRotateCameraInputsManager", "ArcRotateCameraInputsManager")
   @js.native
   class ArcRotateCameraInputsManager protected () extends CameraInputsManager[ArcRotateCamera] {
     /**

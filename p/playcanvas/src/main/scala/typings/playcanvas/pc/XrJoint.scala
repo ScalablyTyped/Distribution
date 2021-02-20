@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [finger] - Finger that joint is related to, can be null in case of wrist joint
   */
 @js.native
-trait XrJoint extends js.Object {
+trait XrJoint extends StObject {
   
   /**
     * Finger that joint relates to
@@ -79,45 +80,33 @@ object XrJoint {
   }
   
   @scala.inline
-  implicit class XrJointOps[Self <: XrJoint] (val x: Self) extends AnyVal {
+  implicit class XrJointMutableBuilder[Self <: XrJoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinger(value: XrFinger): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerNull: Self = StObject.set(x, "finger", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPosition(value: () => Vec3): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => Vec3): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setGetRotation(value: () => Quat): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRotation(value: () => Quat): Self = this.set("getRotation", js.Any.fromFunction0(value))
+    def setHand(value: XrHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHand(value: XrHand): Self = this.set("hand", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setTip(value: Boolean): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTip(value: Boolean): Self = this.set("tip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrist(value: Boolean): Self = this.set("wrist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinger(value: XrFinger): Self = this.set("finger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFingerNull: Self = this.set("finger", null)
+    def setWrist(value: Boolean): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
   }
 }

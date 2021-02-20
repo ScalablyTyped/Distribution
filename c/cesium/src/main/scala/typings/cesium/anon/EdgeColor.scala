@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.ClippingPlane
 import typings.cesium.mod.Matrix4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EdgeColor extends js.Object {
+trait EdgeColor extends StObject {
   
   var edgeColor: js.UndefOr[typings.cesium.mod.Color] = js.native
   
@@ -30,57 +31,45 @@ object EdgeColor {
   }
   
   @scala.inline
-  implicit class EdgeColorOps[Self <: EdgeColor] (val x: Self) extends AnyVal {
+  implicit class EdgeColorMutableBuilder[Self <: EdgeColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdgeColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgeColorUndefined: Self = StObject.set(x, "edgeColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeWidth(value: Double): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeColor(value: typings.cesium.mod.Color): Self = this.set("edgeColor", value.asInstanceOf[js.Any])
+    def setEdgeWidthUndefined: Self = StObject.set(x, "edgeWidth", js.undefined)
     
     @scala.inline
-    def deleteEdgeColor: Self = this.set("edgeColor", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeWidth(value: Double): Self = this.set("edgeWidth", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteEdgeWidth: Self = this.set("edgeWidth", js.undefined)
+    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setPlanes(value: js.Array[ClippingPlane]): Self = StObject.set(x, "planes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelMatrix(value: Matrix4): Self = this.set("modelMatrix", value.asInstanceOf[js.Any])
+    def setPlanesUndefined: Self = StObject.set(x, "planes", js.undefined)
     
     @scala.inline
-    def deleteModelMatrix: Self = this.set("modelMatrix", js.undefined)
+    def setPlanesVarargs(value: ClippingPlane*): Self = StObject.set(x, "planes", js.Array(value :_*))
     
     @scala.inline
-    def setPlanesVarargs(value: ClippingPlane*): Self = this.set("planes", js.Array(value :_*))
+    def setUnionClippingRegions(value: Boolean): Self = StObject.set(x, "unionClippingRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanes(value: js.Array[ClippingPlane]): Self = this.set("planes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanes: Self = this.set("planes", js.undefined)
-    
-    @scala.inline
-    def setUnionClippingRegions(value: Boolean): Self = this.set("unionClippingRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnionClippingRegions: Self = this.set("unionClippingRegions", js.undefined)
+    def setUnionClippingRegionsUndefined: Self = StObject.set(x, "unionClippingRegions", js.undefined)
   }
 }

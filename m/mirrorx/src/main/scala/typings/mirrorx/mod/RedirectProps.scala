@@ -2,12 +2,13 @@ package typings.mirrorx.mod
 
 import typings.history.mod.LocationDescriptor
 import typings.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedirectProps extends js.Object {
+trait RedirectProps extends StObject {
   
   var exact: js.UndefOr[Boolean] = js.native
   
@@ -30,51 +31,39 @@ object RedirectProps {
   }
   
   @scala.inline
-  implicit class RedirectPropsOps[Self <: RedirectProps] (val x: Self) extends AnyVal {
+  implicit class RedirectPropsMutableBuilder[Self <: RedirectProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: LocationDescriptor[LocationState]): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def setPush(value: Boolean): Self = this.set("push", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

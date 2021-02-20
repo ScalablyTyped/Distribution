@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileList extends js.Object {
+trait FileList extends StObject {
   
   /** The list of files. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. */
   var files: js.UndefOr[js.Array[File]] = js.native
@@ -35,45 +36,33 @@ object FileList {
   }
   
   @scala.inline
-  implicit class FileListOps[Self <: FileList] (val x: Self) extends AnyVal {
+  implicit class FileListMutableBuilder[Self <: FileList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: File*): Self = this.set("files", js.Array(value :_*))
+    def setIncompleteSearch(value: Boolean): Self = StObject.set(x, "incompleteSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[File]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setIncompleteSearchUndefined: Self = StObject.set(x, "incompleteSearch", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncompleteSearch(value: Boolean): Self = this.set("incompleteSearch", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIncompleteSearch: Self = this.set("incompleteSearch", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

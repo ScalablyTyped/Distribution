@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInView
 import typings.mfiles.MFiles.MFFolderDefType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFolderDef extends js.Object {
+trait IFolderDef extends StObject {
   
   def Clone(): IFolderDef = js.native
   

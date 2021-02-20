@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogImage")
 @js.native
-class CatalogImage () extends js.Object {
+class CatalogImage () extends StObject {
   
   /**
     * A caption that describes what is shown in the image. Displayed in the Square Online Store.

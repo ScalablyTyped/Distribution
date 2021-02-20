@@ -1,12 +1,13 @@
 package typings.spectacle.anon
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoFillHeight extends js.Object {
+trait AutoFillHeight extends StObject {
   
   var autoFillHeight: Boolean = js.native
   
@@ -33,60 +34,48 @@ object AutoFillHeight {
   }
   
   @scala.inline
-  implicit class AutoFillHeightOps[Self <: AutoFillHeight] (val x: Self) extends AnyVal {
+  implicit class AutoFillHeightMutableBuilder[Self <: AutoFillHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFillHeight(value: Boolean): Self = StObject.set(x, "autoFillHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setAutoFillHeight(value: Boolean): Self = this.set("autoFillHeight", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHighlightEnd(value: Double): Self = StObject.set(x, "highlightEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setHighlightEndUndefined: Self = StObject.set(x, "highlightEnd", js.undefined)
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setHighlightStart(value: Double): Self = StObject.set(x, "highlightStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setHighlightStartUndefined: Self = StObject.set(x, "highlightStart", js.undefined)
     
     @scala.inline
-    def setHighlightEnd(value: Double): Self = this.set("highlightEnd", value.asInstanceOf[js.Any])
+    def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightEnd: Self = this.set("highlightEnd", js.undefined)
+    def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     
     @scala.inline
-    def setHighlightStart(value: Double): Self = this.set("highlightStart", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlightStart: Self = this.set("highlightStart", js.undefined)
+    def setTheme(value: Plain): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentSize(value: Double): Self = this.set("indentSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndentSize: Self = this.set("indentSize", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: Plain): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlertOptions extends js.Object {
+trait AlertOptions extends StObject {
   
   /** @platform android */
   var cancelable: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object AlertOptions {
   }
   
   @scala.inline
-  implicit class AlertOptionsOps[Self <: AlertOptions] (val x: Self) extends AnyVal {
+  implicit class AlertOptionsMutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancelable: Self = this.set("cancelable", js.undefined)
-    
-    @scala.inline
-    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgnoreConstraints extends js.Object {
+trait IgnoreConstraints extends StObject {
   
   var ignoreConstraints: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object IgnoreConstraints {
   }
   
   @scala.inline
-  implicit class IgnoreConstraintsOps[Self <: IgnoreConstraints] (val x: Self) extends AnyVal {
+  implicit class IgnoreConstraintsMutableBuilder[Self <: IgnoreConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreConstraints(value: scala.Double): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeAll(value: scala.Double): Self = StObject.set(x, "includeAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeChildren(value: scala.Double): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreConstraints(value: scala.Double): Self = this.set("ignoreConstraints", value.asInstanceOf[js.Any])
+    def setIncludeSelf(value: scala.Double): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAll(value: scala.Double): Self = this.set("includeAll", value.asInstanceOf[js.Any])
+    def setIncludeSubTree(value: scala.Double): Self = StObject.set(x, "includeSubTree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeChildren(value: scala.Double): Self = this.set("includeChildren", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeSelf(value: scala.Double): Self = this.set("includeSelf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeSubTree(value: scala.Double): Self = this.set("includeSubTree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

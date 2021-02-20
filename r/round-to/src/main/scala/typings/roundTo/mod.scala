@@ -1,12 +1,11 @@
 package typings.roundTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("round-to", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Round the decimals with [`Math.round`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round).
@@ -22,6 +21,8 @@ object mod extends js.Object {
   	//=> 1200
   	```
   	*/
+  @JSImport("round-to", JSImport.Namespace)
+  @js.native
   def apply(number: Double, precision: Double): Double = js.native
   
   /**
@@ -35,6 +36,8 @@ object mod extends js.Object {
   	//=> 1.23
   	```
   	*/
+  @JSImport("round-to", "down")
+  @js.native
   def down(number: Double, precision: Double): Double = js.native
   
   /**
@@ -48,5 +51,7 @@ object mod extends js.Object {
   	//=> 1.24
   	```
   	*/
+  @JSImport("round-to", "up")
+  @js.native
   def up(number: Double, precision: Double): Double = js.native
 }

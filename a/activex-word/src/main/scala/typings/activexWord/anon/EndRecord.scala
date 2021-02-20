@@ -1,12 +1,13 @@
 package typings.activexWord.anon
 
 import typings.activexWord.Word.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndRecord extends js.Object {
+trait EndRecord extends StObject {
   
   var Cancel: Boolean = js.native
   
@@ -25,30 +26,18 @@ object EndRecord {
   }
   
   @scala.inline
-  implicit class EndRecordOps[Self <: EndRecord] (val x: Self) extends AnyVal {
+  implicit class EndRecordMutableBuilder[Self <: EndRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndRecord(value: Double): Self = StObject.set(x, "EndRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("Cancel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoc(value: Document): Self = this.set("Doc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndRecord(value: Double): Self = this.set("EndRecord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartRecord(value: Double): Self = this.set("StartRecord", value.asInstanceOf[js.Any])
+    def setStartRecord(value: Double): Self = StObject.set(x, "StartRecord", value.asInstanceOf[js.Any])
   }
 }

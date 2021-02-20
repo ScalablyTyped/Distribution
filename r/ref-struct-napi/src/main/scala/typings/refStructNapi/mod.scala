@@ -6,18 +6,28 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.refNapi.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ref-struct-napi", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+/** The struct type meta-constructor. */
+object mod {
   
+  @JSImport("ref-struct-napi", JSImport.Namespace)
+  @js.native
   def apply(): StructType = js.native
+  @JSImport("ref-struct-napi", JSImport.Namespace)
+  @js.native
   def apply(fields: js.UndefOr[scala.Nothing], opt: js.Object): StructType = js.native
+  @JSImport("ref-struct-napi", JSImport.Namespace)
+  @js.native
   def apply(fields: js.Array[_]): StructType = js.native
+  @JSImport("ref-struct-napi", JSImport.Namespace)
+  @js.native
   def apply(fields: js.Object): StructType = js.native
+  @JSImport("ref-struct-napi", JSImport.Namespace)
+  @js.native
   def apply(fields: js.Object, opt: js.Object): StructType = js.native
   
   /**

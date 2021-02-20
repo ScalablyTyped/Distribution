@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceServerScopeType extends js.Object {
+trait ResourceServerScopeType extends StObject {
   
   /**
     * A description of the scope.
@@ -26,24 +27,12 @@ object ResourceServerScopeType {
   }
   
   @scala.inline
-  implicit class ResourceServerScopeTypeOps[Self <: ResourceServerScopeType] (val x: Self) extends AnyVal {
+  implicit class ResourceServerScopeTypeMutableBuilder[Self <: ResourceServerScopeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScopeDescription(value: ResourceServerScopeDescriptionType): Self = StObject.set(x, "ScopeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScopeDescription(value: ResourceServerScopeDescriptionType): Self = this.set("ScopeDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeName(value: ResourceServerScopeNameType): Self = this.set("ScopeName", value.asInstanceOf[js.Any])
+    def setScopeName(value: ResourceServerScopeNameType): Self = StObject.set(x, "ScopeName", value.asInstanceOf[js.Any])
   }
 }

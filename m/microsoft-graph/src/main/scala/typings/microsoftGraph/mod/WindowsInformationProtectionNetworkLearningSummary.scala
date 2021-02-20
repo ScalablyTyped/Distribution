@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object WindowsInformationProtectionNetworkLearningSummary {
   }
   
   @scala.inline
-  implicit class WindowsInformationProtectionNetworkLearningSummaryOps[Self <: WindowsInformationProtectionNetworkLearningSummary] (val x: Self) extends AnyVal {
+  implicit class WindowsInformationProtectionNetworkLearningSummaryMutableBuilder[Self <: WindowsInformationProtectionNetworkLearningSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCount(value: Double): Self = this.set("deviceCount", value.asInstanceOf[js.Any])
+    def setUrlNull: Self = StObject.set(x, "url", null)
     
     @scala.inline
-    def deleteDeviceCount: Self = this.set("deviceCount", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: NullableOption[String]): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUrlNull: Self = this.set("url", null)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

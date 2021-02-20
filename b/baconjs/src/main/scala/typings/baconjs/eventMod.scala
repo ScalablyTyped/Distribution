@@ -1,37 +1,21 @@
 package typings.baconjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baconjs/types/event", JSImport.Namespace)
-@js.native
-object eventMod extends js.Object {
+object eventMod {
   
-  def endEvent(): End = js.native
+  @JSImport("baconjs/types/event", JSImport.Default)
+  @js.native
+  abstract class default[V] () extends Event[V]
   
-  def hasValue[V](e: Event[V]): /* is baconjs.baconjs/types/event.Value<V> */ Boolean = js.native
-  
-  def initialEvent[V](value: V): Initial[V] = js.native
-  
-  def isEnd[V](e: Event[V]): /* is baconjs.baconjs/types/event.End */ Boolean = js.native
-  
-  def isError[V](e: Event[V]): /* is baconjs.baconjs/types/event.Error */ Boolean = js.native
-  
-  def isEvent[V](e: js.Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = js.native
-  
-  def isInitial[V](e: Event[V]): /* is baconjs.baconjs/types/event.Initial<V> */ Boolean = js.native
-  
-  def isNext[V](e: Event[V]): /* is baconjs.baconjs/types/event.Next<V> */ Boolean = js.native
-  
-  def nextEvent[V](value: V): Next[V] = js.native
-  
-  def toEvent[V](x: V): Event[V] = js.native
-  def toEvent[V](x: Event[V]): Event[V] = js.native
-  
+  @JSImport("baconjs/types/event", "End")
   @js.native
   class End () extends NoValue
   
+  @JSImport("baconjs/types/event", "Error")
   @js.native
   class Error protected () extends NoValue {
     def this(error: js.Any) = this()
@@ -42,8 +26,9 @@ object eventMod extends js.Object {
     var error: js.Any = js.native
   }
   
+  @JSImport("baconjs/types/event", "Event")
   @js.native
-  abstract class Event[V] () extends js.Object {
+  abstract class Event[V] () extends StObject {
     
     /** @hidden */
     var _isEvent: Boolean = js.native
@@ -79,6 +64,7 @@ object eventMod extends js.Object {
     def toNext(): Event[V] = js.native
   }
   
+  @JSImport("baconjs/types/event", "Initial")
   @js.native
   class Initial[V] protected () extends Value[V] {
     def this(value: V) = this()
@@ -87,6 +73,7 @@ object eventMod extends js.Object {
     var _isInitial: Boolean = js.native
   }
   
+  @JSImport("baconjs/types/event", "Next")
   @js.native
   class Next[V] protected () extends Value[V] {
     def this(value: V) = this()
@@ -95,6 +82,7 @@ object eventMod extends js.Object {
     var _isNext: Boolean = js.native
   }
   
+  @JSImport("baconjs/types/event", "NoValue")
   @js.native
   abstract class NoValue ()
     extends Event[js.Any] {
@@ -103,6 +91,7 @@ object eventMod extends js.Object {
     def fmap[V2](f: js.Function): NoValue = js.native
   }
   
+  @JSImport("baconjs/types/event", "Value")
   @js.native
   abstract class Value[V] protected () extends Event[V] {
     def this(value: V) = this()
@@ -114,6 +103,46 @@ object eventMod extends js.Object {
     var value: V = js.native
   }
   
+  @JSImport("baconjs/types/event", "endEvent")
   @js.native
-  abstract class default[V] () extends Event[V]
+  def endEvent(): End = js.native
+  
+  @JSImport("baconjs/types/event", "hasValue")
+  @js.native
+  def hasValue[V](e: Event[V]): /* is baconjs.baconjs/types/event.Value<V> */ Boolean = js.native
+  
+  @JSImport("baconjs/types/event", "initialEvent")
+  @js.native
+  def initialEvent[V](value: V): Initial[V] = js.native
+  
+  @JSImport("baconjs/types/event", "isEnd")
+  @js.native
+  def isEnd[V](e: Event[V]): /* is baconjs.baconjs/types/event.End */ Boolean = js.native
+  
+  @JSImport("baconjs/types/event", "isError")
+  @js.native
+  def isError[V](e: Event[V]): /* is baconjs.baconjs/types/event.Error */ Boolean = js.native
+  
+  @JSImport("baconjs/types/event", "isEvent")
+  @js.native
+  def isEvent[V](e: js.Any): /* is baconjs.baconjs/types/event.Event<V> */ Boolean = js.native
+  
+  @JSImport("baconjs/types/event", "isInitial")
+  @js.native
+  def isInitial[V](e: Event[V]): /* is baconjs.baconjs/types/event.Initial<V> */ Boolean = js.native
+  
+  @JSImport("baconjs/types/event", "isNext")
+  @js.native
+  def isNext[V](e: Event[V]): /* is baconjs.baconjs/types/event.Next<V> */ Boolean = js.native
+  
+  @JSImport("baconjs/types/event", "nextEvent")
+  @js.native
+  def nextEvent[V](value: V): Next[V] = js.native
+  
+  @JSImport("baconjs/types/event", "toEvent")
+  @js.native
+  def toEvent[V](x: V): Event[V] = js.native
+  @JSImport("baconjs/types/event", "toEvent")
+  @js.native
+  def toEvent[V](x: Event[V]): Event[V] = js.native
 }

@@ -10,6 +10,7 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JWSResult
 import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - `KJUR.jws.JWSJS` - JWS JSON Serialization(JWSJS) class
   * - `KJUR.jws.IntDate` - UNIX origin time utility class
   */
-@JSGlobal("jsrsasign.KJUR.jws")
-@js.native
-object jws extends js.Object {
+object jws {
   
   /**
     * IntDate class for time representation for JSON Web Token(JWT)
@@ -33,8 +32,7 @@ object jws extends js.Object {
     * Utility class for IntDate which is integer representation of UNIX origin time
     * used in JSON Web Token(JWT).
     */
-  @js.native
-  object IntDate extends js.Object {
+  object IntDate {
     
     /**
       * get UNIX origin time from by string
@@ -53,6 +51,8 @@ object jws extends js.Object {
       * - number - UNIX origin time (seconds from 1970-01-01 00:00:00) (ex. 1377714748)
       *
       */
+    @JSGlobal("jsrsasign.KJUR.jws.IntDate.get")
+    @js.native
     def get(s: String): Double = js.native
     
     /**
@@ -63,6 +63,8 @@ object jws extends js.Object {
       * @example
       * KJUR.jws.IntDate.getNow() => 1478...
       */
+    @JSGlobal("jsrsasign.KJUR.jws.IntDate.getNow")
+    @js.native
     def getNow(): Double = js.native
     
     /**
@@ -82,6 +84,8 @@ object jws extends js.Object {
       * KJUR.jws.IntDate.getZulu("20151012125959Z") => 1478...
       * KJUR.jws.IntDate.getZulu("151012125959Z") => 1478...
       */
+    @JSGlobal("jsrsasign.KJUR.jws.IntDate.getZulu")
+    @js.native
     def getZulu(s: String): Double = js.native
     
     /**
@@ -93,6 +97,8 @@ object jws extends js.Object {
       * @example
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "2015 Oct ..."
       */
+    @JSGlobal("jsrsasign.KJUR.jws.IntDate.intDate2UTCString")
+    @js.native
     def intDate2UTCString(intDate: Double): String = js.native
     
     /**
@@ -104,6 +110,8 @@ object jws extends js.Object {
       * @example
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "20151012...Z"
       */
+    @JSGlobal("jsrsasign.KJUR.jws.IntDate.intDate2Zulu")
+    @js.native
     def intDate2Zulu(intDate: Double): String = js.native
   }
   
@@ -181,8 +189,7 @@ object jws extends js.Object {
     *   iss: ['http://foo.com']
     * });
     */
-  @js.native
-  object JWS extends js.Object {
+  object JWS {
     
     /**
       * get Encoed Signature Value from JWS string.
@@ -190,6 +197,8 @@ object jws extends js.Object {
       * @return string of Encoded Signature Value
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.getEncodedSignatureValueFromJWS")
+    @js.native
     def getEncodedSignatureValueFromJWS(sJWS: String): String = js.native
     
     /**
@@ -206,6 +215,8 @@ object jws extends js.Object {
       * jwk = {"kty":"RSA", "n":"0vx...", "e":"AQAB", ...};
       * thumbprint = KJUR.jws.JWS.getJWKthumbprint(jwk);
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.getJWKthumbprint")
+    @js.native
     def getJWKthumbprint(o: JsonWebKey): String = js.native
     
     /**
@@ -220,6 +231,8 @@ object jws extends js.Object {
       * KJUR.jws.JWS.inArray('a', ['b', 'c', 'a']) => true
       * KJUR.jws.JWS.inArray('a', ['b', 'c']) => false
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.inArray")
+    @js.native
     def inArray(item: String, a: js.Array[String]): Boolean = js.native
     
     /**
@@ -234,6 +247,8 @@ object jws extends js.Object {
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c', 'a']) => true
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c']) => false
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.includedArray")
+    @js.native
     def includedArray(a1: js.Array[String], a2: js.Array[String]): Boolean = js.native
     
     /**
@@ -243,10 +258,98 @@ object jws extends js.Object {
       * @param s JSON string
       * @return 1 or 0
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.isSafeJSONString")
+    @js.native
     def isSafeJSONString(s: String): `0` | `1` = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.isSafeJSONString")
+    @js.native
     def isSafeJSONString(s: String, h: js.UndefOr[scala.Nothing], p: String): `0` | `1` = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.isSafeJSONString")
+    @js.native
     def isSafeJSONString(s: String, h: js.Object): `0` | `1` = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.isSafeJSONString")
+    @js.native
     def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = js.native
+    
+    /** static associative array of general signature algorithm name from JWS algorithm name */
+    object jwsalg2sigalg {
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.ES256")
+      @js.native
+      def ES256: String = js.native
+      @scala.inline
+      def ES256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ES256")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.ES384")
+      @js.native
+      def ES384: String = js.native
+      @scala.inline
+      def ES384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ES384")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.HS256")
+      @js.native
+      def HS256: String = js.native
+      @scala.inline
+      def HS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS256")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.HS384")
+      @js.native
+      def HS384: String = js.native
+      @scala.inline
+      def HS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS384")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.HS512")
+      @js.native
+      def HS512: String = js.native
+      @scala.inline
+      def HS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS512")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.PS256")
+      @js.native
+      def PS256: String = js.native
+      @scala.inline
+      def PS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS256")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.PS384")
+      @js.native
+      def PS384: String = js.native
+      @scala.inline
+      def PS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS384")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.PS512")
+      @js.native
+      def PS512: String = js.native
+      @scala.inline
+      def PS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS512")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.RS256")
+      @js.native
+      def RS256: String = js.native
+      @scala.inline
+      def RS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS256")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.RS384")
+      @js.native
+      def RS384: String = js.native
+      @scala.inline
+      def RS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS384")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.RS512")
+      @js.native
+      def RS512: String = js.native
+      @scala.inline
+      def RS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS512")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("jsrsasign.KJUR.jws.JWS.jwsalg2sigalg.none")
+      @js.native
+      def none: String = js.native
+      @scala.inline
+      def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    }
     
     /**
       * parse header and payload of JWS signature
@@ -281,6 +384,8 @@ object jws extends js.Object {
       *   sigHex: "91f3cd..."
       * }
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.parse")
+    @js.native
     def parse(sJWS: String): JWSResult = js.native
     
     /**
@@ -289,7 +394,11 @@ object jws extends js.Object {
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       * @throws if JWS Header is a malformed JSON string.
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.parseJWS")
+    @js.native
     def parseJWS(sJWS: String): Unit = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.parseJWS")
+    @js.native
     def parseJWS(sJWS: String, sigValNotNeeded: Boolean): Unit = js.native
     
     /**
@@ -299,6 +408,8 @@ object jws extends js.Object {
       * @param s JSON string
       * @return JSON object or null
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.readSafeJSONString")
+    @js.native
     def readSafeJSONString(s: String): js.Object | Null = js.native
     
     /**
@@ -362,29 +473,77 @@ object jws extends js.Object {
       * // header and payload can be passed by both string and object
       * sJWS = KJUR.jws.JWS.sign(null, '{alg:"HS256",cty:"JWT"}', '{age:21}', "aaa");
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: String, spPayload: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: String, spPayload: String, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: String, spPayload: String, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: String, spPayload: js.Object): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: String, spPayload: js.Object, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: AlgString, spPayload: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: AlgString, spPayload: String, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: AlgString, spPayload: js.Object): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: String, spPayload: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: String, spPayload: String, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: String, spPayload: String, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: String, spPayload: js.Object): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: String, spPayload: js.Object, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: AlgString, spPayload: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: AlgString, spPayload: String, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: AlgString, spPayload: js.Object): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: String): String = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.sign")
+    @js.native
     def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = js.native
     
     /**
@@ -447,10 +606,20 @@ object jws extends js.Object {
       * var pubkey = KEYUTIL.getKey('-----BEGIN CERT...');
       * var isValid = KJUR.jws.JWS.verify('eyJh...', pubkey);
       */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verify")
+    @js.native
     def verify(sJWS: String, key: String): Boolean = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verify")
+    @js.native
     def verify(sJWS: String, key: String, acceptAlgs: js.Array[String]): Boolean = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verify")
+    @js.native
     def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verify")
+    @js.native
     def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verify")
+    @js.native
     def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = js.native
     
     /**
@@ -533,36 +702,11 @@ object jws extends js.Object {
       *   gracePeriod: 1 * 60 * 60 // accept 1 hour slow or fast
       * });
       */
-    def verifyJWT(sJWT: String, key: String): Boolean = js.native
-    def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = js.native
-    
-    /** static associative array of general signature algorithm name from JWS algorithm name */
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verifyJWT")
     @js.native
-    object jwsalg2sigalg extends js.Object {
-      
-      var ES256: String = js.native
-      
-      var ES384: String = js.native
-      
-      var HS256: String = js.native
-      
-      var HS384: String = js.native
-      
-      var HS512: String = js.native
-      
-      var PS256: String = js.native
-      
-      var PS384: String = js.native
-      
-      var PS512: String = js.native
-      
-      var RS256: String = js.native
-      
-      var RS384: String = js.native
-      
-      var RS512: String = js.native
-      
-      var none: String = js.native
-    }
+    def verifyJWT(sJWT: String, key: String): Boolean = js.native
+    @JSGlobal("jsrsasign.KJUR.jws.JWS.verifyJWT")
+    @js.native
+    def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = js.native
   }
 }

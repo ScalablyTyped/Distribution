@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExceptionRevokedEventDataType extends js.Object {
+trait ExceptionRevokedEventDataType extends StObject {
   
   /**
     * The id of revoked exception, as reported in <code>exceptionThrown</code>.
@@ -26,24 +27,12 @@ object ExceptionRevokedEventDataType {
   }
   
   @scala.inline
-  implicit class ExceptionRevokedEventDataTypeOps[Self <: ExceptionRevokedEventDataType] (val x: Self) extends AnyVal {
+  implicit class ExceptionRevokedEventDataTypeMutableBuilder[Self <: ExceptionRevokedEventDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptionId(value: Double): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExceptionId(value: Double): Self = this.set("exceptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

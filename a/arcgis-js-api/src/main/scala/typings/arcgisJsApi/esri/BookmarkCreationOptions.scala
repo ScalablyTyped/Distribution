@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,54 +65,42 @@ object BookmarkCreationOptions {
   }
   
   @scala.inline
-  implicit class BookmarkCreationOptionsOps[Self <: BookmarkCreationOptions] (val x: Self) extends AnyVal {
+  implicit class BookmarkCreationOptionsMutableBuilder[Self <: BookmarkCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureExtent(value: Boolean): Self = StObject.set(x, "captureExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureExtentUndefined: Self = StObject.set(x, "captureExtent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptureRotation(value: Boolean): Self = StObject.set(x, "captureRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureExtent(value: Boolean): Self = this.set("captureExtent", value.asInstanceOf[js.Any])
+    def setCaptureRotationUndefined: Self = StObject.set(x, "captureRotation", js.undefined)
     
     @scala.inline
-    def deleteCaptureExtent: Self = this.set("captureExtent", js.undefined)
+    def setCaptureScale(value: Boolean): Self = StObject.set(x, "captureScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureRotation(value: Boolean): Self = this.set("captureRotation", value.asInstanceOf[js.Any])
+    def setCaptureScaleUndefined: Self = StObject.set(x, "captureScale", js.undefined)
     
     @scala.inline
-    def deleteCaptureRotation: Self = this.set("captureRotation", js.undefined)
+    def setCaptureViewpoint(value: Boolean): Self = StObject.set(x, "captureViewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureScale(value: Boolean): Self = this.set("captureScale", value.asInstanceOf[js.Any])
+    def setCaptureViewpointUndefined: Self = StObject.set(x, "captureViewpoint", js.undefined)
     
     @scala.inline
-    def deleteCaptureScale: Self = this.set("captureScale", js.undefined)
+    def setScreenshotSettings(value: BookmarkCreationOptionsScreenshotSettings): Self = StObject.set(x, "screenshotSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureViewpoint(value: Boolean): Self = this.set("captureViewpoint", value.asInstanceOf[js.Any])
+    def setScreenshotSettingsUndefined: Self = StObject.set(x, "screenshotSettings", js.undefined)
     
     @scala.inline
-    def deleteCaptureViewpoint: Self = this.set("captureViewpoint", js.undefined)
+    def setTakeScreenshot(value: Boolean): Self = StObject.set(x, "takeScreenshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenshotSettings(value: BookmarkCreationOptionsScreenshotSettings): Self = this.set("screenshotSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenshotSettings: Self = this.set("screenshotSettings", js.undefined)
-    
-    @scala.inline
-    def setTakeScreenshot(value: Boolean): Self = this.set("takeScreenshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTakeScreenshot: Self = this.set("takeScreenshot", js.undefined)
+    def setTakeScreenshotUndefined: Self = StObject.set(x, "takeScreenshot", js.undefined)
   }
 }

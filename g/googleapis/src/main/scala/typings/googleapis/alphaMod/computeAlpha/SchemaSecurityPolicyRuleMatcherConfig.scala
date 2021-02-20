@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSecurityPolicyRuleMatcherConfig extends js.Object {
+trait SchemaSecurityPolicyRuleMatcherConfig extends StObject {
   
   /**
     * CIDR IP address range.  This field may only be specified when
@@ -33,45 +34,33 @@ object SchemaSecurityPolicyRuleMatcherConfig {
   }
   
   @scala.inline
-  implicit class SchemaSecurityPolicyRuleMatcherConfigOps[Self <: SchemaSecurityPolicyRuleMatcherConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityPolicyRuleMatcherConfigMutableBuilder[Self <: SchemaSecurityPolicyRuleMatcherConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestIpRanges(value: js.Array[String]): Self = StObject.set(x, "destIpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestIpRangesUndefined: Self = StObject.set(x, "destIpRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestIpRangesVarargs(value: String*): Self = StObject.set(x, "destIpRanges", js.Array(value :_*))
     
     @scala.inline
-    def setDestIpRangesVarargs(value: String*): Self = this.set("destIpRanges", js.Array(value :_*))
+    def setDestPorts(value: js.Array[SchemaSecurityPolicyRuleMatcherConfigDestinationPort]): Self = StObject.set(x, "destPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestIpRanges(value: js.Array[String]): Self = this.set("destIpRanges", value.asInstanceOf[js.Any])
+    def setDestPortsUndefined: Self = StObject.set(x, "destPorts", js.undefined)
     
     @scala.inline
-    def deleteDestIpRanges: Self = this.set("destIpRanges", js.undefined)
+    def setDestPortsVarargs(value: SchemaSecurityPolicyRuleMatcherConfigDestinationPort*): Self = StObject.set(x, "destPorts", js.Array(value :_*))
     
     @scala.inline
-    def setDestPortsVarargs(value: SchemaSecurityPolicyRuleMatcherConfigDestinationPort*): Self = this.set("destPorts", js.Array(value :_*))
+    def setSrcIpRanges(value: js.Array[String]): Self = StObject.set(x, "srcIpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestPorts(value: js.Array[SchemaSecurityPolicyRuleMatcherConfigDestinationPort]): Self = this.set("destPorts", value.asInstanceOf[js.Any])
+    def setSrcIpRangesUndefined: Self = StObject.set(x, "srcIpRanges", js.undefined)
     
     @scala.inline
-    def deleteDestPorts: Self = this.set("destPorts", js.undefined)
-    
-    @scala.inline
-    def setSrcIpRangesVarargs(value: String*): Self = this.set("srcIpRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setSrcIpRanges(value: js.Array[String]): Self = this.set("srcIpRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcIpRanges: Self = this.set("srcIpRanges", js.undefined)
+    def setSrcIpRangesVarargs(value: String*): Self = StObject.set(x, "srcIpRanges", js.Array(value :_*))
   }
 }

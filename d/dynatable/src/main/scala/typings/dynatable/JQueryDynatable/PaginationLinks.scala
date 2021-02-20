@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginationLinks extends js.Object {
+trait PaginationLinks extends StObject {
   
   /** Insert the pagination links inside the page */
   def attach(): Unit = js.native

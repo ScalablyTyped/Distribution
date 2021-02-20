@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProjectRequest extends js.Object {
+trait UpdateProjectRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
@@ -36,36 +37,24 @@ object UpdateProjectRequest {
   }
   
   @scala.inline
-  implicit class UpdateProjectRequestOps[Self <: UpdateProjectRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateProjectRequestMutableBuilder[Self <: UpdateProjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectDescription(value: Description): Self = StObject.set(x, "projectDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: ID): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setProjectDescriptionUndefined: Self = StObject.set(x, "projectDescription", js.undefined)
     
     @scala.inline
-    def setProjectName(value: Name): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
-    
-    @scala.inline
-    def setProjectDescription(value: Description): Self = this.set("projectDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectDescription: Self = this.set("projectDescription", js.undefined)
+    def setProjectName(value: Name): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

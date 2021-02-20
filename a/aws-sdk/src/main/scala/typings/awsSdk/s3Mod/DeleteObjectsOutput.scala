@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteObjectsOutput extends js.Object {
+trait DeleteObjectsOutput extends StObject {
   
   /**
     * Container element for a successful delete. It identifies the object that was successfully deleted.
@@ -28,42 +29,30 @@ object DeleteObjectsOutput {
   }
   
   @scala.inline
-  implicit class DeleteObjectsOutputOps[Self <: DeleteObjectsOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteObjectsOutputMutableBuilder[Self <: DeleteObjectsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: DeletedObjects): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletedVarargs(value: DeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedVarargs(value: DeletedObject*): Self = this.set("Deleted", js.Array(value :_*))
+    def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: DeletedObjects): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("Deleted", js.undefined)
+    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: Error*): Self = this.set("Errors", js.Array(value :_*))
+    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: Errors): Self = this.set("Errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("Errors", js.undefined)
-    
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

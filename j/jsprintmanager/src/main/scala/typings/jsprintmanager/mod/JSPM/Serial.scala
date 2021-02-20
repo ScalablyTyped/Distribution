@@ -1,103 +1,91 @@
 package typings.jsprintmanager.mod.JSPM
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsprintmanager", "JSPM.Serial")
-@js.native
-object Serial extends js.Object {
+object Serial {
   
   @js.native
-  sealed trait Handshake extends js.Object
+  sealed trait Handshake extends StObject
+  @JSImport("jsprintmanager", "JSPM.Serial.Handshake")
   @js.native
-  object Handshake extends js.Object {
+  object Handshake extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Handshake with Double] = js.native
     
     @js.native
     sealed trait None extends Handshake
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    /* 0 */ val None: typings.jsprintmanager.mod.JSPM.Serial.Handshake.None with Double = js.native
     
     @js.native
     sealed trait RequestToSend extends Handshake
-    /* 1 */ @js.native
-    object RequestToSend extends TopLevel[RequestToSend with Double]
+    /* 1 */ val RequestToSend: typings.jsprintmanager.mod.JSPM.Serial.Handshake.RequestToSend with Double = js.native
     
     @js.native
     sealed trait RequestToSendXOnXOff extends Handshake
-    /* 2 */ @js.native
-    object RequestToSendXOnXOff extends TopLevel[RequestToSendXOnXOff with Double]
+    /* 2 */ val RequestToSendXOnXOff: typings.jsprintmanager.mod.JSPM.Serial.Handshake.RequestToSendXOnXOff with Double = js.native
     
     @js.native
     sealed trait XOnXOff extends Handshake
-    /* 3 */ @js.native
-    object XOnXOff extends TopLevel[XOnXOff with Double]
+    /* 3 */ val XOnXOff: typings.jsprintmanager.mod.JSPM.Serial.Handshake.XOnXOff with Double = js.native
   }
   
   @js.native
-  sealed trait Parity extends js.Object
+  sealed trait Parity extends StObject
+  @JSImport("jsprintmanager", "JSPM.Serial.Parity")
   @js.native
-  object Parity extends js.Object {
+  object Parity extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Parity with Double] = js.native
     
     @js.native
     sealed trait Even extends Parity
-    /* 2 */ @js.native
-    object Even extends TopLevel[Even with Double]
+    /* 2 */ val Even: typings.jsprintmanager.mod.JSPM.Serial.Parity.Even with Double = js.native
     
     @js.native
     sealed trait Mark extends Parity
-    /* 3 */ @js.native
-    object Mark extends TopLevel[Mark with Double]
+    /* 3 */ val Mark: typings.jsprintmanager.mod.JSPM.Serial.Parity.Mark with Double = js.native
     
     @js.native
     sealed trait None extends Parity
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    /* 0 */ val None: typings.jsprintmanager.mod.JSPM.Serial.Parity.None with Double = js.native
     
     @js.native
     sealed trait Odd extends Parity
-    /* 1 */ @js.native
-    object Odd extends TopLevel[Odd with Double]
+    /* 1 */ val Odd: typings.jsprintmanager.mod.JSPM.Serial.Parity.Odd with Double = js.native
     
     @js.native
     sealed trait Space extends Parity
-    /* 4 */ @js.native
-    object Space extends TopLevel[Space with Double]
+    /* 4 */ val Space: typings.jsprintmanager.mod.JSPM.Serial.Parity.Space with Double = js.native
   }
   
   @js.native
-  sealed trait StopBits extends js.Object
+  sealed trait StopBits extends StObject
+  @JSImport("jsprintmanager", "JSPM.Serial.StopBits")
   @js.native
-  object StopBits extends js.Object {
+  object StopBits extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[StopBits with Double] = js.native
     
     @js.native
     sealed trait None extends StopBits
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    /* 0 */ val None: typings.jsprintmanager.mod.JSPM.Serial.StopBits.None with Double = js.native
     
     @js.native
     sealed trait One extends StopBits
-    /* 1 */ @js.native
-    object One extends TopLevel[One with Double]
+    /* 1 */ val One: typings.jsprintmanager.mod.JSPM.Serial.StopBits.One with Double = js.native
     
     @js.native
     sealed trait OnePointFive extends StopBits
-    /* 3 */ @js.native
-    object OnePointFive extends TopLevel[OnePointFive with Double]
+    /* 3 */ val OnePointFive: typings.jsprintmanager.mod.JSPM.Serial.StopBits.OnePointFive with Double = js.native
     
     @js.native
     sealed trait Two extends StopBits
-    /* 2 */ @js.native
-    object Two extends TopLevel[Two with Double]
+    /* 2 */ val Two: typings.jsprintmanager.mod.JSPM.Serial.StopBits.Two with Double = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.select2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Translation extends js.Object {
+trait Translation extends StObject {
   
   var errorLoading: js.UndefOr[js.Function0[String]] = js.native
   
@@ -30,60 +31,48 @@ object Translation {
   }
   
   @scala.inline
-  implicit class TranslationOps[Self <: Translation] (val x: Self) extends AnyVal {
+  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorLoading(value: () => String): Self = StObject.set(x, "errorLoading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorLoadingUndefined: Self = StObject.set(x, "errorLoading", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputTooLong(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "inputTooLong", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setErrorLoading(value: () => String): Self = this.set("errorLoading", js.Any.fromFunction0(value))
+    def setInputTooLongUndefined: Self = StObject.set(x, "inputTooLong", js.undefined)
     
     @scala.inline
-    def deleteErrorLoading: Self = this.set("errorLoading", js.undefined)
+    def setInputTooShort(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "inputTooShort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInputTooLong(value: /* arg */ TranslationArg => String): Self = this.set("inputTooLong", js.Any.fromFunction1(value))
+    def setInputTooShortUndefined: Self = StObject.set(x, "inputTooShort", js.undefined)
     
     @scala.inline
-    def deleteInputTooLong: Self = this.set("inputTooLong", js.undefined)
+    def setLoadingMore(value: () => String): Self = StObject.set(x, "loadingMore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInputTooShort(value: /* arg */ TranslationArg => String): Self = this.set("inputTooShort", js.Any.fromFunction1(value))
+    def setLoadingMoreUndefined: Self = StObject.set(x, "loadingMore", js.undefined)
     
     @scala.inline
-    def deleteInputTooShort: Self = this.set("inputTooShort", js.undefined)
+    def setMaximumSelected(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "maximumSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadingMore(value: () => String): Self = this.set("loadingMore", js.Any.fromFunction0(value))
+    def setMaximumSelectedUndefined: Self = StObject.set(x, "maximumSelected", js.undefined)
     
     @scala.inline
-    def deleteLoadingMore: Self = this.set("loadingMore", js.undefined)
+    def setNoResults(value: () => String): Self = StObject.set(x, "noResults", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaximumSelected(value: /* arg */ TranslationArg => String): Self = this.set("maximumSelected", js.Any.fromFunction1(value))
+    def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
     
     @scala.inline
-    def deleteMaximumSelected: Self = this.set("maximumSelected", js.undefined)
+    def setSearching(value: () => String): Self = StObject.set(x, "searching", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNoResults(value: () => String): Self = this.set("noResults", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteNoResults: Self = this.set("noResults", js.undefined)
-    
-    @scala.inline
-    def setSearching(value: () => String): Self = this.set("searching", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSearching: Self = this.set("searching", js.undefined)
+    def setSearchingUndefined: Self = StObject.set(x, "searching", js.undefined)
   }
 }

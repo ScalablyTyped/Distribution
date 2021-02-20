@@ -16,6 +16,7 @@ import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.integer
 import typings.std.Float32Array
 import typings.std.Uint32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

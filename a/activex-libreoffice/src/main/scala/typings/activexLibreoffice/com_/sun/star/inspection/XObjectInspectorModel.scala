@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.inspection
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait XObjectInspectorModel extends js.Object {
+trait XObjectInspectorModel extends StObject {
   
   /**
     * describes a set of factories for creating XPropertyHandlers
@@ -120,39 +121,27 @@ object XObjectInspectorModel {
   }
   
   @scala.inline
-  implicit class XObjectInspectorModelOps[Self <: XObjectInspectorModel] (val x: Self) extends AnyVal {
+  implicit class XObjectInspectorModelMutableBuilder[Self <: XObjectInspectorModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescribeCategories(value: () => SafeArray[PropertyCategoryDescriptor]): Self = StObject.set(x, "describeCategories", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPropertyOrderIndex(value: String => Double): Self = StObject.set(x, "getPropertyOrderIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandlerFactories(value: SafeArray[_]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlerFactories(value: SafeArray[_]): Self = this.set("HandlerFactories", value.asInstanceOf[js.Any])
+    def setHasHelpSection(value: Boolean): Self = StObject.set(x, "HasHelpSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasHelpSection(value: Boolean): Self = this.set("HasHelpSection", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
+    def setMaxHelpTextLines(value: Double): Self = StObject.set(x, "MaxHelpTextLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHelpTextLines(value: Double): Self = this.set("MaxHelpTextLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinHelpTextLines(value: Double): Self = this.set("MinHelpTextLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescribeCategories(value: () => SafeArray[PropertyCategoryDescriptor]): Self = this.set("describeCategories", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertyOrderIndex(value: String => Double): Self = this.set("getPropertyOrderIndex", js.Any.fromFunction1(value))
+    def setMinHelpTextLines(value: Double): Self = StObject.set(x, "MinHelpTextLines", value.asInstanceOf[js.Any])
   }
 }

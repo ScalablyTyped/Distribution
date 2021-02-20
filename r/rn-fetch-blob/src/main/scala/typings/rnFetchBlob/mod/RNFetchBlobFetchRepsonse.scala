@@ -1,11 +1,12 @@
 package typings.rnFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RNFetchBlobFetchRepsonse extends js.Object {
+trait RNFetchBlobFetchRepsonse extends StObject {
   
   def arrayBuffer(): js.Promise[js.Array[_]] = js.native
   
@@ -57,57 +58,45 @@ object RNFetchBlobFetchRepsonse {
   }
   
   @scala.inline
-  implicit class RNFetchBlobFetchRepsonseOps[Self <: RNFetchBlobFetchRepsonse] (val x: Self) extends AnyVal {
+  implicit class RNFetchBlobFetchRepsonseMutableBuilder[Self <: RNFetchBlobFetchRepsonse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayBuffer(value: () => js.Promise[js.Array[_]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlob(value: () => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayBuffer(value: () => js.Promise[js.Array[_]]): Self = this.set("arrayBuffer", js.Any.fromFunction0(value))
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: () => js.Promise[PolyfillBlob]): Self = this.set("blob", js.Any.fromFunction0(value))
+    def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBodyUsed(value: Boolean): Self = this.set("bodyUsed", value.asInstanceOf[js.Any])
+    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRawResp(value: () => js.Promise[FetchBlobResponse]): Self = StObject.set(x, "rawResp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setJson(value: () => js.Promise[_]): Self = this.set("json", js.Any.fromFunction0(value))
+    def setResp(value: FetchBlobResponse): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOk(value: Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
+    def setRnfbResp(value: FetchBlobResponse): Self = StObject.set(x, "rnfbResp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawResp(value: () => js.Promise[FetchBlobResponse]): Self = this.set("rawResp", js.Any.fromFunction0(value))
+    def setRnfbRespInfo(value: RNFetchBlobResponseInfo): Self = StObject.set(x, "rnfbRespInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResp(value: FetchBlobResponse): Self = this.set("resp", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRnfbResp(value: FetchBlobResponse): Self = this.set("rnfbResp", value.asInstanceOf[js.Any])
+    def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRnfbRespInfo(value: RNFetchBlobResponseInfo): Self = this.set("rnfbRespInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: () => js.Promise[String]): Self = this.set("text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

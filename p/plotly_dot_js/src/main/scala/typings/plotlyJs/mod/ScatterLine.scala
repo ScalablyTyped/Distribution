@@ -6,12 +6,13 @@ import typings.plotlyJs.plotlyJsStrings.linear
 import typings.plotlyJs.plotlyJsStrings.spline
 import typings.plotlyJs.plotlyJsStrings.vh
 import typings.plotlyJs.plotlyJsStrings.vhv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScatterLine extends js.Object {
+trait ScatterLine extends StObject {
   
   var color: Color = js.native
   
@@ -41,39 +42,27 @@ object ScatterLine {
   }
   
   @scala.inline
-  implicit class ScatterLineOps[Self <: ScatterLine] (val x: Self) extends AnyVal {
+  implicit class ScatterLineMutableBuilder[Self <: ScatterLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("color", js.Array(value :_*))
+    def setShape(value: linear | spline | hv | vh | hvh | vhv): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setSimplify(value: Boolean): Self = StObject.set(x, "simplify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: Dash): Self = this.set("dash", value.asInstanceOf[js.Any])
+    def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: linear | spline | hv | vh | hvh | vhv): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSimplify(value: Boolean): Self = this.set("simplify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmoothing(value: Double): Self = this.set("smoothing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,63 +170,51 @@ object ASPxClientDateEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientDateEditOps[Self <: ASPxClientDateEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDateEditMutableBuilder[Self <: ASPxClientDateEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarCellClick(value: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "CalendarCellClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarCustomDisabledDate(value: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "CalendarCustomDisabledDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "DateChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarCellClick(value: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientDateEdit]]): Self = this.set("CalendarCellClick", value.asInstanceOf[js.Any])
+    def setGetCalendar(value: () => ASPxClientCalendar): Self = StObject.set(x, "GetCalendar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalendarCustomDisabledDate(value: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientDateEdit]]): Self = this.set("CalendarCustomDisabledDate", value.asInstanceOf[js.Any])
+    def setGetDate(value: () => Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]): Self = this.set("DateChanged", value.asInstanceOf[js.Any])
+    def setGetMaxDate(value: () => Date): Self = StObject.set(x, "GetMaxDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCalendar(value: () => ASPxClientCalendar): Self = this.set("GetCalendar", js.Any.fromFunction0(value))
+    def setGetMinDate(value: () => Date): Self = StObject.set(x, "GetMinDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDate(value: () => Date): Self = this.set("GetDate", js.Any.fromFunction0(value))
+    def setGetRangeDayCount(value: () => Double): Self = StObject.set(x, "GetRangeDayCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxDate(value: () => Date): Self = this.set("GetMaxDate", js.Any.fromFunction0(value))
+    def setGetRangeLength(value: () => Double): Self = StObject.set(x, "GetRangeLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinDate(value: () => Date): Self = this.set("GetMinDate", js.Any.fromFunction0(value))
+    def setGetTimeEdit(value: () => ASPxClientTimeEdit): Self = StObject.set(x, "GetTimeEdit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRangeDayCount(value: () => Double): Self = this.set("GetRangeDayCount", js.Any.fromFunction0(value))
+    def setParseDate(value: ASPxClientEvent[ASPxClientParseDateEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "ParseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRangeLength(value: () => Double): Self = this.set("GetRangeLength", js.Any.fromFunction0(value))
+    def setSetDate(value: Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTimeEdit(value: () => ASPxClientTimeEdit): Self = this.set("GetTimeEdit", js.Any.fromFunction0(value))
+    def setSetMaxDate(value: Date => Unit): Self = StObject.set(x, "SetMaxDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseDate(value: ASPxClientEvent[ASPxClientParseDateEventHandler[ASPxClientDateEdit]]): Self = this.set("ParseDate", value.asInstanceOf[js.Any])
+    def setSetMinDate(value: Date => Unit): Self = StObject.set(x, "SetMinDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDate(value: Date => Unit): Self = this.set("SetDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMaxDate(value: Date => Unit): Self = this.set("SetMaxDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinDate(value: Date => Unit): Self = this.set("SetMinDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]): Self = this.set("TextChanged", value.asInstanceOf[js.Any])
+    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
   }
 }

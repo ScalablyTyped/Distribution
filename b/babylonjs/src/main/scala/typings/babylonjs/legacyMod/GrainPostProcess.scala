@@ -2,6 +2,7 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,11 +34,11 @@ class GrainPostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "GrainPostProcess")
-@js.native
-object GrainPostProcess extends js.Object {
+object GrainPostProcess {
   
   /** @hidden */
+  @JSImport("babylonjs/Legacy/legacy", "GrainPostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,

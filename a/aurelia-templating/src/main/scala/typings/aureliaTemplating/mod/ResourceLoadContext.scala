@@ -1,5 +1,6 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates an instance of ResourceLoadContext.
   */
-class ResourceLoadContext () extends js.Object {
+class ResourceLoadContext () extends StObject {
   
   /**
     * Tracks a dependency that is being loaded.

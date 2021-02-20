@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.JsGrid
 
 import typings.microsoftAjax.Sys.UI.DomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowHeaderState extends js.Object {
+trait RowHeaderState extends StObject {
   
   def GetId(): String = js.native
   
@@ -33,33 +34,21 @@ object RowHeaderState {
   }
   
   @scala.inline
-  implicit class RowHeaderStateOps[Self <: RowHeaderState] (val x: Self) extends AnyVal {
+  implicit class RowHeaderStateMutableBuilder[Self <: RowHeaderState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetImg(value: () => Image): Self = StObject.set(x, "GetImg", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOnClick(value: () => js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit]): Self = StObject.set(x, "GetOnClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("GetId", js.Any.fromFunction0(value))
+    def setGetPriority(value: () => RowHeaderStatePriorities): Self = StObject.set(x, "GetPriority", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImg(value: () => Image): Self = this.set("GetImg", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOnClick(value: () => js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit]): Self = this.set("GetOnClick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPriority(value: () => RowHeaderStatePriorities): Self = this.set("GetPriority", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTooltip(value: () => String): Self = this.set("GetTooltip", js.Any.fromFunction0(value))
+    def setGetTooltip(value: () => String): Self = StObject.set(x, "GetTooltip", js.Any.fromFunction0(value))
   }
 }

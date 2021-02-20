@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * documentation.
   */
 @js.native
-trait StringFilterBuilder extends js.Object {
+trait StringFilterBuilder extends StObject {
   
   def setCaseSensitive(caseSensitive: Boolean): StringFilterBuilder = js.native
   
@@ -36,27 +37,15 @@ object StringFilterBuilder {
   }
   
   @scala.inline
-  implicit class StringFilterBuilderOps[Self <: StringFilterBuilder] (val x: Self) extends AnyVal {
+  implicit class StringFilterBuilderMutableBuilder[Self <: StringFilterBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetCaseSensitive(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetMatchType(value: MatchType => StringFilterBuilder): Self = StObject.set(x, "setMatchType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetCaseSensitive(value: Boolean => StringFilterBuilder): Self = this.set("setCaseSensitive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMatchType(value: MatchType => StringFilterBuilder): Self = this.set("setMatchType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRealtimeTrigger(value: Boolean => StringFilterBuilder): Self = this.set("setRealtimeTrigger", js.Any.fromFunction1(value))
+    def setSetRealtimeTrigger(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setRealtimeTrigger", js.Any.fromFunction1(value))
   }
 }

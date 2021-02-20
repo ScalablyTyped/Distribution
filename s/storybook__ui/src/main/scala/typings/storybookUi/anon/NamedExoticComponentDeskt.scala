@@ -2,13 +2,14 @@ package typings.storybookUi.anon
 
 import typings.react.mod.ReactElement
 import typings.storybookUi.desktopMod.DesktopProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.NamedExoticComponent<@storybook/ui.@storybook/ui/dist/components/layout/desktop.DesktopProps> & {  displayName :string} */
 @js.native
-trait NamedExoticComponentDeskt extends js.Object {
+trait NamedExoticComponentDeskt extends StObject {
   
   /**
     * **NOTE**: Exotic components are not callable.

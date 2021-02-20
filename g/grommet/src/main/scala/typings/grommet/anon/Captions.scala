@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Captions extends js.Object {
+trait Captions extends StObject {
   
   var captions: js.UndefOr[`5`] = js.native
   
@@ -24,42 +25,30 @@ object Captions {
   }
   
   @scala.inline
-  implicit class CaptionsOps[Self <: Captions] (val x: Self) extends AnyVal {
+  implicit class CaptionsMutableBuilder[Self <: Captions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptions(value: `5`): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControls(value: `5`): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptions(value: `5`): Self = this.set("captions", value.asInstanceOf[js.Any])
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def deleteCaptions: Self = this.set("captions", js.undefined)
+    def setIcons(value: ClosedCaption): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: `5`): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setScrubber(value: `3`): Self = StObject.set(x, "scrubber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: ClosedCaption): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
-    
-    @scala.inline
-    def setScrubber(value: `3`): Self = this.set("scrubber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrubber: Self = this.set("scrubber", js.undefined)
+    def setScrubberUndefined: Self = StObject.set(x, "scrubber", js.undefined)
   }
 }

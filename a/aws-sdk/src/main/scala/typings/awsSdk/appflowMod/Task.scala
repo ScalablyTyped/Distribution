@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Task extends js.Object {
+trait Task extends StObject {
   
   /**
     *  The operation to be performed on the provided source fields. 
@@ -41,45 +42,33 @@ object Task {
   }
   
   @scala.inline
-  implicit class TaskOps[Self <: Task] (val x: Self) extends AnyVal {
+  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorOperator(value: ConnectorOperator): Self = StObject.set(x, "connectorOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorOperatorUndefined: Self = StObject.set(x, "connectorOperator", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationField(value: DestinationField): Self = StObject.set(x, "destinationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFieldsVarargs(value: String*): Self = this.set("sourceFields", js.Array(value :_*))
+    def setDestinationFieldUndefined: Self = StObject.set(x, "destinationField", js.undefined)
     
     @scala.inline
-    def setSourceFields(value: SourceFields): Self = this.set("sourceFields", value.asInstanceOf[js.Any])
+    def setSourceFields(value: SourceFields): Self = StObject.set(x, "sourceFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskType(value: TaskType): Self = this.set("taskType", value.asInstanceOf[js.Any])
+    def setSourceFieldsVarargs(value: String*): Self = StObject.set(x, "sourceFields", js.Array(value :_*))
     
     @scala.inline
-    def setConnectorOperator(value: ConnectorOperator): Self = this.set("connectorOperator", value.asInstanceOf[js.Any])
+    def setTaskProperties(value: TaskPropertiesMap): Self = StObject.set(x, "taskProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectorOperator: Self = this.set("connectorOperator", js.undefined)
+    def setTaskPropertiesUndefined: Self = StObject.set(x, "taskProperties", js.undefined)
     
     @scala.inline
-    def setDestinationField(value: DestinationField): Self = this.set("destinationField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationField: Self = this.set("destinationField", js.undefined)
-    
-    @scala.inline
-    def setTaskProperties(value: TaskPropertiesMap): Self = this.set("taskProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskProperties: Self = this.set("taskProperties", js.undefined)
+    def setTaskType(value: TaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
   }
 }

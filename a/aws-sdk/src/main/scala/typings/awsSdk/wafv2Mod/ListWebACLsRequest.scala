@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWebACLsRequest extends js.Object {
+trait ListWebACLsRequest extends StObject {
   
   /**
     * The maximum number of objects that you want AWS WAF to return for this request. If more objects are available, in the response, AWS WAF provides a NextMarker value that you can use in a subsequent call to get the next batch of objects.
@@ -31,33 +32,21 @@ object ListWebACLsRequest {
   }
   
   @scala.inline
-  implicit class ListWebACLsRequestOps[Self <: ListWebACLsRequest] (val x: Self) extends AnyVal {
+  implicit class ListWebACLsRequestMutableBuilder[Self <: ListWebACLsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def setLimit(value: PaginationLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

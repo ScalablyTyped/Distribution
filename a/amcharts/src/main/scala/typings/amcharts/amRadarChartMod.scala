@@ -1,16 +1,19 @@
 package typings.amcharts
 
-import typings.amcharts.amCoordinateChartMod.AmCoordinateChart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmRadarChart", JSImport.Namespace)
-@js.native
-object amRadarChartMod extends js.Object {
+object amRadarChartMod {
+  
+  @JSImport("amcharts/AmRadarChart", JSImport.Default)
+  @js.native
+  class default () extends AmRadarChart
   
   @js.native
-  trait AmRadarChart extends AmCoordinateChart {
+  trait AmRadarChart
+    extends typings.amcharts.amCoordinateChartMod.default {
     
     /**
       * Bottom margin of the chart.
@@ -37,7 +40,4 @@ object amRadarChartMod extends js.Object {
       */
     var radius: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends AmRadarChart
 }

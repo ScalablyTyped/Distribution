@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElevationAlongPathRequest extends js.Object {
+trait ElevationAlongPathRequest extends StObject {
   
   /**
     * defines a path on the earth for which to return elevation data.
@@ -28,27 +29,15 @@ object ElevationAlongPathRequest {
   }
   
   @scala.inline
-  implicit class ElevationAlongPathRequestOps[Self <: ElevationAlongPathRequest] (val x: Self) extends AnyVal {
+  implicit class ElevationAlongPathRequestMutableBuilder[Self <: ElevationAlongPathRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: js.Array[LatLng] | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPathVarargs(value: LatLng*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[LatLng] | String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
+    def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
   }
 }

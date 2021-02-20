@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Optional. Contains information about a button.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton extends StObject {
   
   /**
     * Optional. The text to send back to the Dialogflow API or a URI to open.
@@ -29,30 +30,18 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButtonOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButtonMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostback(value: String): Self = this.set("postback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostback: Self = this.set("postback", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

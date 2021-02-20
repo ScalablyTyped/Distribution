@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,33 +67,21 @@ object ASPxClientHtmlEditorImageDialog {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorImageDialogOps[Self <: ASPxClientHtmlEditorImageDialog] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorImageDialogMutableBuilder[Self <: ASPxClientHtmlEditorImageDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCreateThumbnailCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetCreateThumbnailCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDescriptionTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetDescriptionTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSizeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetSizeComboBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCreateThumbnailCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetCreateThumbnailCheckBox", js.Any.fromFunction0(value))
+    def setGetThumbnailNameTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetThumbnailNameTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescriptionTextBox(value: () => ASPxClientTextBox): Self = this.set("GetDescriptionTextBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSizeComboBox(value: () => ASPxClientComboBox): Self = this.set("GetSizeComboBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetThumbnailNameTextBox(value: () => ASPxClientTextBox): Self = this.set("GetThumbnailNameTextBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWrapTextCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetWrapTextCheckBox", js.Any.fromFunction0(value))
+    def setGetWrapTextCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetWrapTextCheckBox", js.Any.fromFunction0(value))
   }
 }

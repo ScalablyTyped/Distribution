@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * created using "WIA.CommonDialog" in a call to CreateObject or by dropping a CommonDialog on a form.
   */
 @js.native
-trait CommonDialog extends js.Object {
+trait CommonDialog extends StObject {
   
   /**
     * Displays one or more dialog boxes that enable the user to acquire an image from a hardware device for image acquisition and returns an ImageFile

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoTopicDetails extends js.Object {
+trait VideoTopicDetails extends StObject {
   
   /**
     * Similar to topic_id, except that these topics are merely relevant to the video. These are topics that may be mentioned in, or appear in the video. You can retrieve information about
@@ -31,45 +32,33 @@ object VideoTopicDetails {
   }
   
   @scala.inline
-  implicit class VideoTopicDetailsOps[Self <: VideoTopicDetails] (val x: Self) extends AnyVal {
+  implicit class VideoTopicDetailsMutableBuilder[Self <: VideoTopicDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelevantTopicIds(value: js.Array[String]): Self = StObject.set(x, "relevantTopicIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelevantTopicIdsUndefined: Self = StObject.set(x, "relevantTopicIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelevantTopicIdsVarargs(value: String*): Self = StObject.set(x, "relevantTopicIds", js.Array(value :_*))
     
     @scala.inline
-    def setRelevantTopicIdsVarargs(value: String*): Self = this.set("relevantTopicIds", js.Array(value :_*))
+    def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelevantTopicIds(value: js.Array[String]): Self = this.set("relevantTopicIds", value.asInstanceOf[js.Any])
+    def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
     
     @scala.inline
-    def deleteRelevantTopicIds: Self = this.set("relevantTopicIds", js.undefined)
+    def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
     
     @scala.inline
-    def setTopicCategoriesVarargs(value: String*): Self = this.set("topicCategories", js.Array(value :_*))
+    def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicCategories(value: js.Array[String]): Self = this.set("topicCategories", value.asInstanceOf[js.Any])
+    def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
     
     @scala.inline
-    def deleteTopicCategories: Self = this.set("topicCategories", js.undefined)
-    
-    @scala.inline
-    def setTopicIdsVarargs(value: String*): Self = this.set("topicIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopicIds(value: js.Array[String]): Self = this.set("topicIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicIds: Self = this.set("topicIds", js.undefined)
+    def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaActivity extends js.Object {
+trait LambdaActivity extends StObject {
   
   /**
     * The number of messages passed to the Lambda function for processing. The Lambda function must be able to process all of these messages within five minutes, which is the maximum timeout duration for Lambda functions.
@@ -36,33 +37,21 @@ object LambdaActivity {
   }
   
   @scala.inline
-  implicit class LambdaActivityOps[Self <: LambdaActivity] (val x: Self) extends AnyVal {
+  implicit class LambdaActivityMutableBuilder[Self <: LambdaActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: ActivityBatchSize): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLambdaName(value: LambdaName): Self = StObject.set(x, "lambdaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: ActivityBatchSize): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaName(value: LambdaName): Self = this.set("lambdaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: ActivityName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: ActivityName): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnomalousService extends js.Object {
+trait AnomalousService extends StObject {
   
   var ServiceId: js.UndefOr[typings.awsSdk.xrayMod.ServiceId] = js.native
 }
@@ -18,24 +19,12 @@ object AnomalousService {
   }
   
   @scala.inline
-  implicit class AnomalousServiceOps[Self <: AnomalousService] (val x: Self) extends AnyVal {
+  implicit class AnomalousServiceMutableBuilder[Self <: AnomalousService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceId(value: ServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceId(value: ServiceId): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceId: Self = this.set("ServiceId", js.undefined)
+    def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
   }
 }

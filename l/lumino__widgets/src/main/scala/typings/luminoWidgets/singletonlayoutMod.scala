@@ -1,17 +1,24 @@
 package typings.luminoWidgets
 
 import typings.luminoWidgets.layoutMod.Layout
+import typings.luminoWidgets.layoutMod.Layout.IOptions
 import typings.luminoWidgets.widgetMod.Widget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/widgets/types/singletonlayout", JSImport.Namespace)
-@js.native
-object singletonlayoutMod extends js.Object {
+object singletonlayoutMod {
   
+  @JSImport("@lumino/widgets/types/singletonlayout", "SingletonLayout")
   @js.native
+  /**
+    * Construct a new layout.
+    *
+    * @param options - The options for initializing the layout.
+    */
   class SingletonLayout () extends Layout {
+    def this(options: IOptions) = this()
     
     var _widget: js.Any = js.native
     

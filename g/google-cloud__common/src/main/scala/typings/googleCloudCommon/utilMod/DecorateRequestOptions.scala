@@ -2,6 +2,7 @@ package typings.googleCloudCommon.utilMod
 
 import typings.googleCloudCommon.serviceObjectMod.Interceptor
 import typings.teenyRequest.mod.CoreOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,60 +33,48 @@ object DecorateRequestOptions {
   }
   
   @scala.inline
-  implicit class DecorateRequestOptionsOps[Self <: DecorateRequestOptions] (val x: Self) extends AnyVal {
+  implicit class DecorateRequestOptionsMutableBuilder[Self <: DecorateRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPaginateVal(value: Boolean): Self = StObject.set(x, "autoPaginateVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setAutoPaginateValUndefined: Self = StObject.set(x, "autoPaginateVal", js.undefined)
     
     @scala.inline
-    def setAutoPaginate(value: Boolean): Self = this.set("autoPaginate", value.asInstanceOf[js.Any])
+    def setInterceptors_(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors_", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoPaginate: Self = this.set("autoPaginate", js.undefined)
+    def setInterceptors_Undefined: Self = StObject.set(x, "interceptors_", js.undefined)
     
     @scala.inline
-    def setAutoPaginateVal(value: Boolean): Self = this.set("autoPaginateVal", value.asInstanceOf[js.Any])
+    def setInterceptors_Varargs(value: Interceptor*): Self = StObject.set(x, "interceptors_", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoPaginateVal: Self = this.set("autoPaginateVal", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterceptors_Varargs(value: Interceptor*): Self = this.set("interceptors_", js.Array(value :_*))
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def setInterceptors_(value: js.Array[Interceptor]): Self = this.set("interceptors_", value.asInstanceOf[js.Any])
+    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterceptors_ : Self = this.set("interceptors_", js.undefined)
+    def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setShouldReturnStream(value: Boolean): Self = StObject.set(x, "shouldReturnStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setShouldReturnStreamUndefined: Self = StObject.set(x, "shouldReturnStream", js.undefined)
     
     @scala.inline
-    def setObjectMode(value: Boolean): Self = this.set("objectMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectMode: Self = this.set("objectMode", js.undefined)
-    
-    @scala.inline
-    def setShouldReturnStream(value: Boolean): Self = this.set("shouldReturnStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldReturnStream: Self = this.set("shouldReturnStream", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

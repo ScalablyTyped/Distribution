@@ -3,12 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.devextremeStrings.hide
 import typings.devextreme.devextremeStrings.none
 import typings.devextreme.mod.DevExpress.ui.format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlappingBehavior extends js.Object {
+trait OverlappingBehavior extends StObject {
   
   var customizeText: js.UndefOr[js.Function1[/* scaleValue */ ValueValueText, String]] = js.native
   
@@ -31,57 +32,45 @@ object OverlappingBehavior {
   }
   
   @scala.inline
-  implicit class OverlappingBehaviorOps[Self <: OverlappingBehavior] (val x: Self) extends AnyVal {
+  implicit class OverlappingBehaviorMutableBuilder[Self <: OverlappingBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomizeText(value: /* scaleValue */ ValueValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeText(value: /* scaleValue */ ValueValueText => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    def setOverlappingBehavior(value: hide | none): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setOverlappingBehaviorUndefined: Self = StObject.set(x, "overlappingBehavior", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setTopIndent(value: Double): Self = StObject.set(x, "topIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlappingBehavior(value: hide | none): Self = this.set("overlappingBehavior", value.asInstanceOf[js.Any])
+    def setTopIndentUndefined: Self = StObject.set(x, "topIndent", js.undefined)
     
     @scala.inline
-    def deleteOverlappingBehavior: Self = this.set("overlappingBehavior", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopIndent(value: Double): Self = this.set("topIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopIndent: Self = this.set("topIndent", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

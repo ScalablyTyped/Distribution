@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesPutItemInputMod.PutItemInput
 import typings.awsSdkClientDynamodbBrowser.typesPutItemOutputMod.PutItemOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/PutItemCommand", JSImport.Namespace)
-@js.native
-object putItemCommandMod extends js.Object {
+object putItemCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/PutItemCommand", "PutItemCommand")
   @js.native
   class PutItemCommand protected () extends Command[
           InputTypesUnion, 

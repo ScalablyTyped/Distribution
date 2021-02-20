@@ -20,13 +20,14 @@ import typings.marked.mod.Tokens.Strong
 import typings.marked.mod.Tokens.Table
 import typings.marked.mod.Tokens.Tag
 import typings.marked.mod.Tokens.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "Tokenizer")
 @js.native
-class Tokenizer () extends js.Object {
+class Tokenizer () extends StObject {
   def this(options: MarkedOptions) = this()
   
   def autolink(src: String, mangle: js.Function1[/* cap */ String, String]): Link = js.native

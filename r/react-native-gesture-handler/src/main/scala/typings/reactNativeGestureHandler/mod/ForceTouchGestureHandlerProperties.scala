@@ -1,5 +1,6 @@
 package typings.reactNativeGestureHandler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object ForceTouchGestureHandlerProperties {
   }
   
   @scala.inline
-  implicit class ForceTouchGestureHandlerPropertiesOps[Self <: ForceTouchGestureHandlerProperties] (val x: Self) extends AnyVal {
+  implicit class ForceTouchGestureHandlerPropertiesMutableBuilder[Self <: ForceTouchGestureHandlerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedbackOnActivation(value: Boolean): Self = StObject.set(x, "feedbackOnActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackOnActivationUndefined: Self = StObject.set(x, "feedbackOnActivation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackOnActivation(value: Boolean): Self = this.set("feedbackOnActivation", value.asInstanceOf[js.Any])
+    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
     
     @scala.inline
-    def deleteFeedbackOnActivation: Self = this.set("feedbackOnActivation", js.undefined)
+    def setMinForce(value: Double): Self = StObject.set(x, "minForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxForce(value: Double): Self = this.set("maxForce", value.asInstanceOf[js.Any])
+    def setMinForceUndefined: Self = StObject.set(x, "minForce", js.undefined)
     
     @scala.inline
-    def deleteMaxForce: Self = this.set("maxForce", js.undefined)
+    def setOnGestureEvent(value: /* event */ ForceTouchGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinForce(value: Double): Self = this.set("minForce", value.asInstanceOf[js.Any])
+    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
     @scala.inline
-    def deleteMinForce: Self = this.set("minForce", js.undefined)
+    def setOnHandlerStateChange(value: /* event */ ForceTouchGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGestureEvent(value: /* event */ ForceTouchGestureHandlerGestureEvent => Unit): Self = this.set("onGestureEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnGestureEvent: Self = this.set("onGestureEvent", js.undefined)
-    
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ ForceTouchGestureHandlerStateChangeEvent => Unit): Self = this.set("onHandlerStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHandlerStateChange: Self = this.set("onHandlerStateChange", js.undefined)
+    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

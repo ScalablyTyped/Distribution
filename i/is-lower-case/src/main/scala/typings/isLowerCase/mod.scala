@@ -1,12 +1,13 @@
 package typings.isLowerCase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-lower-case", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("is-lower-case", "isLowerCase")
+  @js.native
   def isLowerCase(input: String): Boolean = js.native
 }

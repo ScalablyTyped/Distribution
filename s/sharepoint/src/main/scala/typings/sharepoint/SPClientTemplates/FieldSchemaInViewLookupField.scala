@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,27 +50,15 @@ object FieldSchemaInViewLookupField {
   }
   
   @scala.inline
-  implicit class FieldSchemaInViewLookupFieldOps[Self <: FieldSchemaInViewLookupField] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInViewLookupFieldMutableBuilder[Self <: FieldSchemaInViewLookupField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispFormUrl(value: String): Self = StObject.set(x, "DispFormUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowMultipleValues(value: String): Self = this.set("AllowMultipleValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDispFormUrl(value: String): Self = this.set("DispFormUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasPrefix(value: String): Self = this.set("HasPrefix", value.asInstanceOf[js.Any])
+    def setHasPrefix(value: String): Self = StObject.set(x, "HasPrefix", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * offer several actions, each corresponding to a surround class or closure to extract into.
   */
 @js.native
-trait RefactorActionInfo extends js.Object {
+trait RefactorActionInfo extends StObject {
   
   /**
     * A description of this refactoring action to show to the user.
@@ -38,30 +39,18 @@ object RefactorActionInfo {
   }
   
   @scala.inline
-  implicit class RefactorActionInfoOps[Self <: RefactorActionInfo] (val x: Self) extends AnyVal {
+  implicit class RefactorActionInfoMutableBuilder[Self <: RefactorActionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotApplicableReason(value: java.lang.String): Self = StObject.set(x, "notApplicableReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: java.lang.String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotApplicableReason(value: java.lang.String): Self = this.set("notApplicableReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotApplicableReason: Self = this.set("notApplicableReason", js.undefined)
+    def setNotApplicableReasonUndefined: Self = StObject.set(x, "notApplicableReason", js.undefined)
   }
 }

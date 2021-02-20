@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,48 +50,36 @@ object LocationPosition {
   }
   
   @scala.inline
-  implicit class LocationPositionOps[Self <: LocationPosition] (val x: Self) extends AnyVal {
+  implicit class LocationPositionMutableBuilder[Self <: LocationPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: decimal): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatitude(value: decimal): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: decimal): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitude(value: decimal): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: decimal): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def set_altitude(value: Element): Self = StObject.set(x, "_altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_altitude(value: Element): Self = this.set("_altitude", value.asInstanceOf[js.Any])
+    def set_altitudeUndefined: Self = StObject.set(x, "_altitude", js.undefined)
     
     @scala.inline
-    def delete_altitude: Self = this.set("_altitude", js.undefined)
+    def set_latitude(value: Element): Self = StObject.set(x, "_latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_latitude(value: Element): Self = this.set("_latitude", value.asInstanceOf[js.Any])
+    def set_latitudeUndefined: Self = StObject.set(x, "_latitude", js.undefined)
     
     @scala.inline
-    def delete_latitude: Self = this.set("_latitude", js.undefined)
+    def set_longitude(value: Element): Self = StObject.set(x, "_longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_longitude(value: Element): Self = this.set("_longitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_longitude: Self = this.set("_longitude", js.undefined)
-    
-    @scala.inline
-    def setAltitude(value: decimal): Self = this.set("altitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def set_longitudeUndefined: Self = StObject.set(x, "_longitude", js.undefined)
   }
 }

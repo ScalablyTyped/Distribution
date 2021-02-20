@@ -1,5 +1,6 @@
 package typings.bootstrapTouchspin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TouchSpinOptions. All options are optional
   */
 @js.native
-trait TouchSpinOptions extends js.Object {
+trait TouchSpinOptions extends StObject {
   
   /**
     * Boost at every nth step.
@@ -125,144 +126,132 @@ object TouchSpinOptions {
   }
   
   @scala.inline
-  implicit class TouchSpinOptionsOps[Self <: TouchSpinOptions] (val x: Self) extends AnyVal {
+  implicit class TouchSpinOptionsMutableBuilder[Self <: TouchSpinOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoostat(value: Double): Self = StObject.set(x, "boostat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoostatUndefined: Self = StObject.set(x, "boostat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBooster(value: Boolean): Self = StObject.set(x, "booster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoostat(value: Double): Self = this.set("boostat", value.asInstanceOf[js.Any])
+    def setBoosterUndefined: Self = StObject.set(x, "booster", js.undefined)
     
     @scala.inline
-    def deleteBoostat: Self = this.set("boostat", js.undefined)
+    def setButtondown_class(value: String): Self = StObject.set(x, "buttondown_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooster(value: Boolean): Self = this.set("booster", value.asInstanceOf[js.Any])
+    def setButtondown_classUndefined: Self = StObject.set(x, "buttondown_class", js.undefined)
     
     @scala.inline
-    def deleteBooster: Self = this.set("booster", js.undefined)
+    def setButtonup_class(value: String): Self = StObject.set(x, "buttonup_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtondown_class(value: String): Self = this.set("buttondown_class", value.asInstanceOf[js.Any])
+    def setButtonup_classUndefined: Self = StObject.set(x, "buttonup_class", js.undefined)
     
     @scala.inline
-    def deleteButtondown_class: Self = this.set("buttondown_class", js.undefined)
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonup_class(value: String): Self = this.set("buttonup_class", value.asInstanceOf[js.Any])
+    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
     @scala.inline
-    def deleteButtonup_class: Self = this.set("buttonup_class", js.undefined)
+    def setForcestepdivisibility(value: String): Self = StObject.set(x, "forcestepdivisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    def setForcestepdivisibilityUndefined: Self = StObject.set(x, "forcestepdivisibility", js.undefined)
     
     @scala.inline
-    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    def setInitval(value: Double | String): Self = StObject.set(x, "initval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForcestepdivisibility(value: String): Self = this.set("forcestepdivisibility", value.asInstanceOf[js.Any])
+    def setInitvalUndefined: Self = StObject.set(x, "initval", js.undefined)
     
     @scala.inline
-    def deleteForcestepdivisibility: Self = this.set("forcestepdivisibility", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitval(value: Double | String): Self = this.set("initval", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteInitval: Self = this.set("initval", js.undefined)
+    def setMaxboostedstep(value: Double | Boolean): Self = StObject.set(x, "maxboostedstep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxboostedstepUndefined: Self = StObject.set(x, "maxboostedstep", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxboostedstep(value: Double | Boolean): Self = this.set("maxboostedstep", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMaxboostedstep: Self = this.set("maxboostedstep", js.undefined)
+    def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousewheel(value: Boolean): Self = this.set("mousewheel", value.asInstanceOf[js.Any])
+    def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
     
     @scala.inline
-    def deleteMousewheel: Self = this.set("mousewheel", js.undefined)
+    def setPostfix_extraclass(value: String): Self = StObject.set(x, "postfix_extraclass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostfix(value: String): Self = this.set("postfix", value.asInstanceOf[js.Any])
+    def setPostfix_extraclassUndefined: Self = StObject.set(x, "postfix_extraclass", js.undefined)
     
     @scala.inline
-    def deletePostfix: Self = this.set("postfix", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostfix_extraclass(value: String): Self = this.set("postfix_extraclass", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deletePostfix_extraclass: Self = this.set("postfix_extraclass", js.undefined)
+    def setPrefix_extraclass(value: String): Self = StObject.set(x, "prefix_extraclass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setPrefix_extraclassUndefined: Self = StObject.set(x, "prefix_extraclass", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix_extraclass(value: String): Self = this.set("prefix_extraclass", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deletePrefix_extraclass: Self = this.set("prefix_extraclass", js.undefined)
+    def setStepinterval(value: Double): Self = StObject.set(x, "stepinterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStepintervalUndefined: Self = StObject.set(x, "stepinterval", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepintervaldelay(value: Double): Self = StObject.set(x, "stepintervaldelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepinterval(value: Double): Self = this.set("stepinterval", value.asInstanceOf[js.Any])
+    def setStepintervaldelayUndefined: Self = StObject.set(x, "stepintervaldelay", js.undefined)
     
     @scala.inline
-    def deleteStepinterval: Self = this.set("stepinterval", js.undefined)
+    def setVerticalbuttons(value: Boolean): Self = StObject.set(x, "verticalbuttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepintervaldelay(value: Double): Self = this.set("stepintervaldelay", value.asInstanceOf[js.Any])
+    def setVerticalbuttonsUndefined: Self = StObject.set(x, "verticalbuttons", js.undefined)
     
     @scala.inline
-    def deleteStepintervaldelay: Self = this.set("stepintervaldelay", js.undefined)
+    def setVerticaldownclass(value: String): Self = StObject.set(x, "verticaldownclass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalbuttons(value: Boolean): Self = this.set("verticalbuttons", value.asInstanceOf[js.Any])
+    def setVerticaldownclassUndefined: Self = StObject.set(x, "verticaldownclass", js.undefined)
     
     @scala.inline
-    def deleteVerticalbuttons: Self = this.set("verticalbuttons", js.undefined)
+    def setVerticalupclass(value: String): Self = StObject.set(x, "verticalupclass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticaldownclass(value: String): Self = this.set("verticaldownclass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticaldownclass: Self = this.set("verticaldownclass", js.undefined)
-    
-    @scala.inline
-    def setVerticalupclass(value: String): Self = this.set("verticalupclass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalupclass: Self = this.set("verticalupclass", js.undefined)
+    def setVerticalupclassUndefined: Self = StObject.set(x, "verticalupclass", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentProcessorInformation extends js.Object {
+trait PaymentProcessorInformation extends StObject {
   
   /**
     * The mailing address associated with the payment processor.
@@ -31,36 +32,24 @@ object PaymentProcessorInformation {
   }
   
   @scala.inline
-  implicit class PaymentProcessorInformationOps[Self <: PaymentProcessorInformation] (val x: Self) extends AnyVal {
+  implicit class PaymentProcessorInformationMutableBuilder[Self <: PaymentProcessorInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingAgreementId(value: String): Self = StObject.set(x, "billingAgreementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: /* Contains address information. */ AddressInformation): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setBillingAgreementIdUndefined: Self = StObject.set(x, "billingAgreementId", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAgreementId(value: String): Self = this.set("billingAgreementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAgreementId: Self = this.set("billingAgreementId", js.undefined)
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

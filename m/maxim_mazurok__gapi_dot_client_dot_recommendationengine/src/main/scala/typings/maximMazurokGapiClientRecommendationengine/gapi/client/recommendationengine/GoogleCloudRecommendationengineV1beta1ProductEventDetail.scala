@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1ProductEventDetail extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1ProductEventDetail extends StObject {
   
   /**
     * Optional. The id or name of the associated shopping cart. This id is used to associate multiple items added or present in the cart before purchase. This can only be set for
@@ -50,60 +51,48 @@ object GoogleCloudRecommendationengineV1beta1ProductEventDetail {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductEventDetailOps[Self <: GoogleCloudRecommendationengineV1beta1ProductEventDetail] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1ProductEventDetailMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductEventDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCartId(value: String): Self = StObject.set(x, "cartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCartIdUndefined: Self = StObject.set(x, "cartId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCartId(value: String): Self = this.set("cartId", value.asInstanceOf[js.Any])
+    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     @scala.inline
-    def deleteCartId: Self = this.set("cartId", js.undefined)
+    def setPageCategories(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]): Self = StObject.set(x, "pageCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListId(value: String): Self = this.set("listId", value.asInstanceOf[js.Any])
+    def setPageCategoriesUndefined: Self = StObject.set(x, "pageCategories", js.undefined)
     
     @scala.inline
-    def deleteListId: Self = this.set("listId", js.undefined)
+    def setPageCategoriesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "pageCategories", js.Array(value :_*))
     
     @scala.inline
-    def setPageCategoriesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = this.set("pageCategories", js.Array(value :_*))
+    def setProductDetails(value: js.Array[GoogleCloudRecommendationengineV1beta1ProductDetail]): Self = StObject.set(x, "productDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageCategories(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]): Self = this.set("pageCategories", value.asInstanceOf[js.Any])
+    def setProductDetailsUndefined: Self = StObject.set(x, "productDetails", js.undefined)
     
     @scala.inline
-    def deletePageCategories: Self = this.set("pageCategories", js.undefined)
+    def setProductDetailsVarargs(value: GoogleCloudRecommendationengineV1beta1ProductDetail*): Self = StObject.set(x, "productDetails", js.Array(value :_*))
     
     @scala.inline
-    def setProductDetailsVarargs(value: GoogleCloudRecommendationengineV1beta1ProductDetail*): Self = this.set("productDetails", js.Array(value :_*))
+    def setPurchaseTransaction(value: GoogleCloudRecommendationengineV1beta1PurchaseTransaction): Self = StObject.set(x, "purchaseTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDetails(value: js.Array[GoogleCloudRecommendationengineV1beta1ProductDetail]): Self = this.set("productDetails", value.asInstanceOf[js.Any])
+    def setPurchaseTransactionUndefined: Self = StObject.set(x, "purchaseTransaction", js.undefined)
     
     @scala.inline
-    def deleteProductDetails: Self = this.set("productDetails", js.undefined)
+    def setSearchQuery(value: String): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseTransaction(value: GoogleCloudRecommendationengineV1beta1PurchaseTransaction): Self = this.set("purchaseTransaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseTransaction: Self = this.set("purchaseTransaction", js.undefined)
-    
-    @scala.inline
-    def setSearchQuery(value: String): Self = this.set("searchQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchQuery: Self = this.set("searchQuery", js.undefined)
+    def setSearchQueryUndefined: Self = StObject.set(x, "searchQuery", js.undefined)
   }
 }

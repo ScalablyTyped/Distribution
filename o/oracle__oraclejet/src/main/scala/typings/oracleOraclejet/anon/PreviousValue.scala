@@ -3,6 +3,7 @@ package typings.oracleOraclejet.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.oracleOraclejetStrings.external
 import typings.oracleOraclejet.oracleOraclejetStrings.internal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,30 +29,18 @@ object PreviousValue {
   }
   
   @scala.inline
-  implicit class PreviousValueOps[Self <: PreviousValue[_], V] (val x: Self with PreviousValue[V]) extends AnyVal {
+  implicit class PreviousValueMutableBuilder[Self <: PreviousValue[_], V] (val x: Self with PreviousValue[V]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviousValue(value: V): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubproperty(value: Dictkey): Self = StObject.set(x, "subproperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdatedFrom(value: external | internal): Self = StObject.set(x, "updatedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousValue(value: V): Self = this.set("previousValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubproperty(value: Dictkey): Self = this.set("subproperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedFrom(value: external | internal): Self = this.set("updatedFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: V): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

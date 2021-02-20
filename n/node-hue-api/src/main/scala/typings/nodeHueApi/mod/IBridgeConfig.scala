@@ -6,12 +6,13 @@ import typings.nodeHueApi.anon.Communication
 import typings.nodeHueApi.anon.Createdate
 import typings.nodeHueApi.anon.Errorcode
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBridgeConfig extends js.Object {
+trait IBridgeConfig extends StObject {
   
   var UTC: Date = js.native
   
@@ -97,96 +98,84 @@ object IBridgeConfig {
   }
   
   @scala.inline
-  implicit class IBridgeConfigOps[Self <: IBridgeConfig] (val x: Self) extends AnyVal {
+  implicit class IBridgeConfigMutableBuilder[Self <: IBridgeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiversion(value: String): Self = StObject.set(x, "apiversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackup(value: Errorcode): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBridgeid(value: String): Self = StObject.set(x, "bridgeid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUTC(value: Date): Self = this.set("UTC", value.asInstanceOf[js.Any])
+    def setDhcp(value: Boolean): Self = StObject.set(x, "dhcp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiversion(value: String): Self = this.set("apiversion", value.asInstanceOf[js.Any])
+    def setFactorynew(value: Boolean): Self = StObject.set(x, "factorynew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackup(value: Errorcode): Self = this.set("backup", value.asInstanceOf[js.Any])
+    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBridgeid(value: String): Self = this.set("bridgeid", value.asInstanceOf[js.Any])
+    def setIpaddress(value: String): Self = StObject.set(x, "ipaddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDhcp(value: Boolean): Self = this.set("dhcp", value.asInstanceOf[js.Any])
+    def setLinkbutton(value: Boolean): Self = StObject.set(x, "linkbutton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactorynew(value: Boolean): Self = this.set("factorynew", value.asInstanceOf[js.Any])
+    def setLocaltime(value: Date): Self = StObject.set(x, "localtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateway(value: String): Self = this.set("gateway", value.asInstanceOf[js.Any])
+    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpaddress(value: String): Self = this.set("ipaddress", value.asInstanceOf[js.Any])
+    def setModelid(value: String): Self = StObject.set(x, "modelid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkbutton(value: Boolean): Self = this.set("linkbutton", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaltime(value: Date): Self = this.set("localtime", value.asInstanceOf[js.Any])
+    def setNetmask(value: String): Self = StObject.set(x, "netmask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMac(value: String): Self = this.set("mac", value.asInstanceOf[js.Any])
+    def setPortalconnection(value: String): Self = StObject.set(x, "portalconnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelid(value: String): Self = this.set("modelid", value.asInstanceOf[js.Any])
+    def setPortalservices(value: Boolean): Self = StObject.set(x, "portalservices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPortalstate(value: Communication): Self = StObject.set(x, "portalstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetmask(value: String): Self = this.set("netmask", value.asInstanceOf[js.Any])
+    def setProxyaddress(value: String): Self = StObject.set(x, "proxyaddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalconnection(value: String): Self = this.set("portalconnection", value.asInstanceOf[js.Any])
+    def setProxyport(value: Double): Self = StObject.set(x, "proxyport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalservices(value: Boolean): Self = this.set("portalservices", value.asInstanceOf[js.Any])
+    def setReplacesbridgeid(value: String): Self = StObject.set(x, "replacesbridgeid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalstate(value: Communication): Self = this.set("portalstate", value.asInstanceOf[js.Any])
+    def setReplacesbridgeidUndefined: Self = StObject.set(x, "replacesbridgeid", js.undefined)
     
     @scala.inline
-    def setProxyaddress(value: String): Self = this.set("proxyaddress", value.asInstanceOf[js.Any])
+    def setSwupdate(value: Checkforupdate): Self = StObject.set(x, "swupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyport(value: Double): Self = this.set("proxyport", value.asInstanceOf[js.Any])
+    def setSwversion(value: String): Self = StObject.set(x, "swversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwupdate(value: Checkforupdate): Self = this.set("swupdate", value.asInstanceOf[js.Any])
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwversion(value: String): Self = this.set("swversion", value.asInstanceOf[js.Any])
+    def setUTC(value: Date): Self = StObject.set(x, "UTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setWhitelist(value: StringDictionary[Createdate]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhitelist(value: StringDictionary[Createdate]): Self = this.set("whitelist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZigbeechannel(value: Double): Self = this.set("zigbeechannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplacesbridgeid(value: String): Self = this.set("replacesbridgeid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacesbridgeid: Self = this.set("replacesbridgeid", js.undefined)
+    def setZigbeechannel(value: Double): Self = StObject.set(x, "zigbeechannel", value.asInstanceOf[js.Any])
   }
 }

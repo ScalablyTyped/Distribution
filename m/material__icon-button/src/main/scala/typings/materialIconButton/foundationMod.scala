@@ -2,17 +2,21 @@ package typings.materialIconButton
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialIconButton.adapterMod.MDCIconButtonToggleAdapter
-import typings.materialIconButton.anon.ARIALABEL
-import typings.materialIconButton.anon.ICONBUTTONON
 import typings.materialIconButton.anon.PartialMDCIconButtonToggl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/icon-button/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/icon-button/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCIconButtonToggleFoundation {
+    def this(adapter: PartialMDCIconButtonToggl) = this()
+  }
+  
+  @JSImport("@material/icon-button/foundation", "MDCIconButtonToggleFoundation")
   @js.native
   class MDCIconButtonToggleFoundation () extends MDCFoundation[MDCIconButtonToggleAdapter] {
     def this(adapter: PartialMDCIconButtonToggl) = this()
@@ -23,30 +27,5 @@ object foundationMod extends js.Object {
     
     def toggle(): Unit = js.native
     def toggle(isOn: Boolean): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCIconButtonToggleFoundation extends js.Object {
-    
-    def cssClasses: ICONBUTTONON = js.native
-    
-    def defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    
-    def strings: ARIALABEL = js.native
-  }
-  
-  @js.native
-  class default () extends MDCIconButtonToggleFoundation {
-    def this(adapter: PartialMDCIconButtonToggl) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: ICONBUTTONON = js.native
-    
-    def defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    
-    def strings: ARIALABEL = js.native
   }
 }

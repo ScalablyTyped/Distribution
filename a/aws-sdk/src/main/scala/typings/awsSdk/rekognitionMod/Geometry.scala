@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geometry extends js.Object {
+trait Geometry extends StObject {
   
   /**
     * An axis-aligned coarse representation of the detected item's location on the image.
@@ -26,33 +27,21 @@ object Geometry {
   }
   
   @scala.inline
-  implicit class GeometryOps[Self <: Geometry] (val x: Self) extends AnyVal {
+  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolygon(value: Polygon): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    def setPolygonUndefined: Self = StObject.set(x, "Polygon", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
-    
-    @scala.inline
-    def setPolygonVarargs(value: Point*): Self = this.set("Polygon", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolygon(value: Polygon): Self = this.set("Polygon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolygon: Self = this.set("Polygon", js.undefined)
+    def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value :_*))
   }
 }

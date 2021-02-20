@@ -1,11 +1,12 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableStyleProperties extends js.Object {
+trait TableStyleProperties extends StObject {
   
   /**
   	  * Alternate rows shown with background colour
@@ -48,48 +49,36 @@ object TableStyleProperties {
   }
   
   @scala.inline
-  implicit class TableStylePropertiesOps[Self <: TableStyleProperties] (val x: Self) extends AnyVal {
+  implicit class TableStylePropertiesMutableBuilder[Self <: TableStyleProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowColumnStripes(value: Boolean): Self = StObject.set(x, "showColumnStripes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowColumnStripesUndefined: Self = StObject.set(x, "showColumnStripes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowFirstColumn(value: Boolean): Self = StObject.set(x, "showFirstColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowColumnStripes(value: Boolean): Self = this.set("showColumnStripes", value.asInstanceOf[js.Any])
+    def setShowFirstColumnUndefined: Self = StObject.set(x, "showFirstColumn", js.undefined)
     
     @scala.inline
-    def deleteShowColumnStripes: Self = this.set("showColumnStripes", js.undefined)
+    def setShowLastColumn(value: Boolean): Self = StObject.set(x, "showLastColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFirstColumn(value: Boolean): Self = this.set("showFirstColumn", value.asInstanceOf[js.Any])
+    def setShowLastColumnUndefined: Self = StObject.set(x, "showLastColumn", js.undefined)
     
     @scala.inline
-    def deleteShowFirstColumn: Self = this.set("showFirstColumn", js.undefined)
+    def setShowRowStripes(value: Boolean): Self = StObject.set(x, "showRowStripes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLastColumn(value: Boolean): Self = this.set("showLastColumn", value.asInstanceOf[js.Any])
+    def setShowRowStripesUndefined: Self = StObject.set(x, "showRowStripes", js.undefined)
     
     @scala.inline
-    def deleteShowLastColumn: Self = this.set("showLastColumn", js.undefined)
+    def setTheme(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRowStripes(value: Boolean): Self = this.set("showRowStripes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowRowStripes: Self = this.set("showRowStripes", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ js.Any): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

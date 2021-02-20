@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConversionTask extends js.Object {
+trait ConversionTask extends StObject {
   
   /**
     * The ID of the conversion task.
@@ -51,63 +52,51 @@ object ConversionTask {
   }
   
   @scala.inline
-  implicit class ConversionTaskOps[Self <: ConversionTask] (val x: Self) extends AnyVal {
+  implicit class ConversionTaskMutableBuilder[Self <: ConversionTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionTaskId(value: String): Self = StObject.set(x, "ConversionTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionTaskIdUndefined: Self = StObject.set(x, "ConversionTaskId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationTime(value: String): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionTaskId(value: String): Self = this.set("ConversionTaskId", value.asInstanceOf[js.Any])
+    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
     @scala.inline
-    def deleteConversionTaskId: Self = this.set("ConversionTaskId", js.undefined)
+    def setImportInstance(value: ImportInstanceTaskDetails): Self = StObject.set(x, "ImportInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    def setImportInstanceUndefined: Self = StObject.set(x, "ImportInstance", js.undefined)
     
     @scala.inline
-    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    def setImportVolume(value: ImportVolumeTaskDetails): Self = StObject.set(x, "ImportVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportInstance(value: ImportInstanceTaskDetails): Self = this.set("ImportInstance", value.asInstanceOf[js.Any])
+    def setImportVolumeUndefined: Self = StObject.set(x, "ImportVolume", js.undefined)
     
     @scala.inline
-    def deleteImportInstance: Self = this.set("ImportInstance", js.undefined)
+    def setState(value: ConversionTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportVolume(value: ImportVolumeTaskDetails): Self = this.set("ImportVolume", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteImportVolume: Self = this.set("ImportVolume", js.undefined)
+    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ConversionTaskState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

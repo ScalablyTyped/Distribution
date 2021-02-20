@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.group
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

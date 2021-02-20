@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,39 +39,27 @@ object BaseLayerViewGL2DProperties {
   }
   
   @scala.inline
-  implicit class BaseLayerViewGL2DPropertiesOps[Self <: BaseLayerViewGL2DProperties] (val x: Self) extends AnyVal {
+  implicit class BaseLayerViewGL2DPropertiesMutableBuilder[Self <: BaseLayerViewGL2DProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: WebGLRenderingContext | js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTiles(value: js.Array[BaseLayerViewGL2DTile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: WebGLRenderingContext | js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setTilesVarargs(value: BaseLayerViewGL2DTile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
     
     @scala.inline
-    def setTilesVarargs(value: BaseLayerViewGL2DTile*): Self = this.set("tiles", js.Array(value :_*))
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiles(value: js.Array[BaseLayerViewGL2DTile]): Self = this.set("tiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiles: Self = this.set("tiles", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

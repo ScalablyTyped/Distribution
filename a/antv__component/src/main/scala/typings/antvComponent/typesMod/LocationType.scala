@@ -1,5 +1,6 @@
 package typings.antvComponent.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.antvComponent.antvComponentStrings.circle
   - typings.antvComponent.antvComponentStrings.none
 */
-trait LocationType extends js.Object
+trait LocationType extends StObject
 object LocationType {
   
   @scala.inline

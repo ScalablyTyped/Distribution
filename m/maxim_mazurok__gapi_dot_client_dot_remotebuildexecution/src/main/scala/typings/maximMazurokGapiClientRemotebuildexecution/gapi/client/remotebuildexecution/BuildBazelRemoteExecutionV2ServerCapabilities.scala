@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2ServerCapabilities extends js.Object {
+trait BuildBazelRemoteExecutionV2ServerCapabilities extends StObject {
   
   /** Capabilities of the remote cache system. */
   var cacheCapabilities: js.UndefOr[BuildBazelRemoteExecutionV2CacheCapabilities] = js.native
@@ -31,48 +32,36 @@ object BuildBazelRemoteExecutionV2ServerCapabilities {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ServerCapabilitiesOps[Self <: BuildBazelRemoteExecutionV2ServerCapabilities] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2ServerCapabilitiesMutableBuilder[Self <: BuildBazelRemoteExecutionV2ServerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheCapabilities(value: BuildBazelRemoteExecutionV2CacheCapabilities): Self = StObject.set(x, "cacheCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheCapabilitiesUndefined: Self = StObject.set(x, "cacheCapabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecatedApiVersion(value: BuildBazelSemverSemVer): Self = StObject.set(x, "deprecatedApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheCapabilities(value: BuildBazelRemoteExecutionV2CacheCapabilities): Self = this.set("cacheCapabilities", value.asInstanceOf[js.Any])
+    def setDeprecatedApiVersionUndefined: Self = StObject.set(x, "deprecatedApiVersion", js.undefined)
     
     @scala.inline
-    def deleteCacheCapabilities: Self = this.set("cacheCapabilities", js.undefined)
+    def setExecutionCapabilities(value: BuildBazelRemoteExecutionV2ExecutionCapabilities): Self = StObject.set(x, "executionCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedApiVersion(value: BuildBazelSemverSemVer): Self = this.set("deprecatedApiVersion", value.asInstanceOf[js.Any])
+    def setExecutionCapabilitiesUndefined: Self = StObject.set(x, "executionCapabilities", js.undefined)
     
     @scala.inline
-    def deleteDeprecatedApiVersion: Self = this.set("deprecatedApiVersion", js.undefined)
+    def setHighApiVersion(value: BuildBazelSemverSemVer): Self = StObject.set(x, "highApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionCapabilities(value: BuildBazelRemoteExecutionV2ExecutionCapabilities): Self = this.set("executionCapabilities", value.asInstanceOf[js.Any])
+    def setHighApiVersionUndefined: Self = StObject.set(x, "highApiVersion", js.undefined)
     
     @scala.inline
-    def deleteExecutionCapabilities: Self = this.set("executionCapabilities", js.undefined)
+    def setLowApiVersion(value: BuildBazelSemverSemVer): Self = StObject.set(x, "lowApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighApiVersion(value: BuildBazelSemverSemVer): Self = this.set("highApiVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighApiVersion: Self = this.set("highApiVersion", js.undefined)
-    
-    @scala.inline
-    def setLowApiVersion(value: BuildBazelSemverSemVer): Self = this.set("lowApiVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowApiVersion: Self = this.set("lowApiVersion", js.undefined)
+    def setLowApiVersionUndefined: Self = StObject.set(x, "lowApiVersion", js.undefined)
   }
 }

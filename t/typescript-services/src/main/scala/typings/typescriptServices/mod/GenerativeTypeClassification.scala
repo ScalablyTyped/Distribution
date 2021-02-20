@@ -1,12 +1,13 @@
 package typings.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "GenerativeTypeClassification")
 @js.native
-object GenerativeTypeClassification extends js.Object {
+object GenerativeTypeClassification extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescriptServices.TypeScript.GenerativeTypeClassification with Double] = js.native

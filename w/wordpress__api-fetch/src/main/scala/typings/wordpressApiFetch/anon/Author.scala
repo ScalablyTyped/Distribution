@@ -1,12 +1,13 @@
 package typings.wordpressApiFetch.anon
 
 import typings.wordpressApiFetch.wordpressApiFetchBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Author extends js.Object {
+trait Author extends StObject {
   
   var author: js.UndefOr[`true`] = js.native
   
@@ -39,84 +40,72 @@ object Author {
   }
   
   @scala.inline
-  implicit class AuthorOps[Self <: Author] (val x: Self) extends AnyVal {
+  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: `true`): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComments(value: `true`): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: `true`): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def `setCustom-fields`(value: `true`): Self = StObject.set(x, "custom-fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: `true`): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def `setCustom-fieldsUndefined`: Self = StObject.set(x, "custom-fields", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setEditor(value: `true`): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCustom-fields`(value: `true`): Self = this.set("custom-fields", value.asInstanceOf[js.Any])
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def `deleteCustom-fields`: Self = this.set("custom-fields", js.undefined)
+    def setExcerpt(value: `true`): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: `true`): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setExcerptUndefined: Self = StObject.set(x, "excerpt", js.undefined)
     
     @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
+    def `setPage-attributes`(value: `true`): Self = StObject.set(x, "page-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcerpt(value: `true`): Self = this.set("excerpt", value.asInstanceOf[js.Any])
+    def `setPage-attributesUndefined`: Self = StObject.set(x, "page-attributes", js.undefined)
     
     @scala.inline
-    def deleteExcerpt: Self = this.set("excerpt", js.undefined)
+    def `setPost-formats`(value: `true`): Self = StObject.set(x, "post-formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage-attributes`(value: `true`): Self = this.set("page-attributes", value.asInstanceOf[js.Any])
+    def `setPost-formatsUndefined`: Self = StObject.set(x, "post-formats", js.undefined)
     
     @scala.inline
-    def `deletePage-attributes`: Self = this.set("page-attributes", js.undefined)
+    def setRevisions(value: `true`): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPost-formats`(value: `true`): Self = this.set("post-formats", value.asInstanceOf[js.Any])
+    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
     @scala.inline
-    def `deletePost-formats`: Self = this.set("post-formats", js.undefined)
+    def setThumbnail(value: `true`): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisions(value: `true`): Self = this.set("revisions", value.asInstanceOf[js.Any])
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
     @scala.inline
-    def deleteRevisions: Self = this.set("revisions", js.undefined)
+    def setTitle(value: `true`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail(value: `true`): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setTrackbacks(value: `true`): Self = StObject.set(x, "trackbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: `true`): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTrackbacks(value: `true`): Self = this.set("trackbacks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackbacks: Self = this.set("trackbacks", js.undefined)
+    def setTrackbacksUndefined: Self = StObject.set(x, "trackbacks", js.undefined)
   }
 }

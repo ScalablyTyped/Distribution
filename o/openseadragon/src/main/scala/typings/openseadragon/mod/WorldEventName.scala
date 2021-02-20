@@ -1,5 +1,6 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openseadragon.openseadragonStrings.`metrics-change`
   - typings.openseadragon.openseadragonStrings.`remove-item`
 */
-trait WorldEventName extends js.Object
+trait WorldEventName extends StObject
 object WorldEventName {
   
   @scala.inline

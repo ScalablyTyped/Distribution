@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsEntry extends js.Object {
+trait DnsEntry extends StObject {
   
   /**
     * The DNS name.
@@ -26,30 +27,18 @@ object DnsEntry {
   }
   
   @scala.inline
-  implicit class DnsEntryOps[Self <: DnsEntry] (val x: Self) extends AnyVal {
+  implicit class DnsEntryMutableBuilder[Self <: DnsEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsName(value: String): Self = this.set("DnsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDnsName: Self = this.set("DnsName", js.undefined)
-    
-    @scala.inline
-    def setHostedZoneId(value: String): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
   }
 }

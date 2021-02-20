@@ -1,6 +1,7 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.LabIcon.IResolvable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A file type to associate with the renderer.
   */
 @js.native
-trait IFileType extends js.Object {
+trait IFileType extends StObject {
   
   /**
     * An optional display name for the file type.
@@ -68,69 +69,57 @@ object IFileType {
   }
   
   @scala.inline
-  implicit class IFileTypeOps[Self <: IFileType] (val x: Self) extends AnyVal {
+  implicit class IFileTypeMutableBuilder[Self <: IFileType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setFileFormat(value: String): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeTypesVarargs(value: String*): Self = this.set("mimeTypes", js.Array(value :_*))
+    def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
     
     @scala.inline
-    def setMimeTypes(value: js.Array[String]): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
+    def setIcon(value: IResolvable): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileFormat(value: String): Self = this.set("fileFormat", value.asInstanceOf[js.Any])
+    def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
     
     @scala.inline
-    def deleteFileFormat: Self = this.set("fileFormat", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: IResolvable): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconLabel(value: String): Self = this.set("iconLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconLabel: Self = this.set("iconLabel", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

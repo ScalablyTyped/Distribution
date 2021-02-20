@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Build extends js.Object {
+trait Build extends StObject {
   
   /** Required. Immutable. Version of the builder which produced this build. */
   var builderVersion: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object Build {
   }
   
   @scala.inline
-  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+  implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuilderVersion(value: String): Self = StObject.set(x, "builderVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuilderVersionUndefined: Self = StObject.set(x, "builderVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignature(value: BuildSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuilderVersion(value: String): Self = this.set("builderVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuilderVersion: Self = this.set("builderVersion", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: BuildSignature): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

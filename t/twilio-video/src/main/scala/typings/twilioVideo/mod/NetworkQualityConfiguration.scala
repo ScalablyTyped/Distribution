@@ -1,11 +1,12 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkQualityConfiguration extends js.Object {
+trait NetworkQualityConfiguration extends StObject {
   
   var local: js.UndefOr[NetworkQualityVerbosity] = js.native
   
@@ -20,30 +21,18 @@ object NetworkQualityConfiguration {
   }
   
   @scala.inline
-  implicit class NetworkQualityConfigurationOps[Self <: NetworkQualityConfiguration] (val x: Self) extends AnyVal {
+  implicit class NetworkQualityConfigurationMutableBuilder[Self <: NetworkQualityConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocal(value: NetworkQualityVerbosity): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemote(value: NetworkQualityVerbosity): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: NetworkQualityVerbosity): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
-    
-    @scala.inline
-    def setRemote(value: NetworkQualityVerbosity): Self = this.set("remote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemote: Self = this.set("remote", js.undefined)
+    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
   }
 }

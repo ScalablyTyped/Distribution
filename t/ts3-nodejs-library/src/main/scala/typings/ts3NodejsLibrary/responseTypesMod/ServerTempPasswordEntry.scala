@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object ServerTempPasswordEntry {
   }
   
   @scala.inline
-  implicit class ServerTempPasswordEntryOps[Self <: ServerTempPasswordEntry] (val x: Self) extends AnyVal {
+  implicit class ServerTempPasswordEntryMutableBuilder[Self <: ServerTempPasswordEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setPwClear(value: String): Self = StObject.set(x, "pwClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setTcid(value: String): Self = StObject.set(x, "tcid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPwClear(value: String): Self = this.set("pwClear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTcid(value: String): Self = this.set("tcid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.strongholdPayJs.mod.global.Stronghold
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var onError: js.UndefOr[OnError] = js.native
   
@@ -24,42 +25,30 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: /* error */ StrongholdPayError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEvent(value: /* event */ StrongholdMessageEvent => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: /* error */ StrongholdPayError => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnExit(value: () => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnEvent(value: /* event */ StrongholdMessageEvent => Unit): Self = this.set("onEvent", js.Any.fromFunction1(value))
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def deleteOnEvent: Self = this.set("onEvent", js.undefined)
+    def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnExit(value: () => Unit): Self = this.set("onExit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
-    
-    @scala.inline
-    def setOnReady(value: () => Unit): Self = this.set("onReady", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
   }
 }

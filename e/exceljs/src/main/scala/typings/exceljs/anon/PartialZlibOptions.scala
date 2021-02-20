@@ -4,13 +4,14 @@ import typings.exceljs.mod.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.std.ArrayBuffer
 import typings.std.DataView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.ZlibOptions> */
 @js.native
-trait PartialZlibOptions extends js.Object {
+trait PartialZlibOptions extends StObject {
   
   var chunkSize: js.UndefOr[Double] = js.native
   
@@ -37,66 +38,54 @@ object PartialZlibOptions {
   }
   
   @scala.inline
-  implicit class PartialZlibOptionsOps[Self <: PartialZlibOptions] (val x: Self) extends AnyVal {
+  implicit class PartialZlibOptionsMutableBuilder[Self <: PartialZlibOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
     @scala.inline
-    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = this.set("dictionary", value.asInstanceOf[js.Any])
+    def setFinishFlushUndefined: Self = StObject.set(x, "finishFlush", js.undefined)
     
     @scala.inline
-    def deleteDictionary: Self = this.set("dictionary", js.undefined)
+    def setFlush(value: Double): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishFlush(value: Double): Self = this.set("finishFlush", value.asInstanceOf[js.Any])
+    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
     @scala.inline
-    def deleteFinishFlush: Self = this.set("finishFlush", js.undefined)
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlush(value: Double): Self = this.set("flush", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteFlush: Self = this.set("flush", js.undefined)
+    def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemLevel(value: Double): Self = this.set("memLevel", value.asInstanceOf[js.Any])
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
     @scala.inline
-    def deleteMemLevel: Self = this.set("memLevel", js.undefined)
+    def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategy(value: Double): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
-    
-    @scala.inline
-    def setWindowBits(value: Double): Self = this.set("windowBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowBits: Self = this.set("windowBits", js.undefined)
+    def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
   }
 }

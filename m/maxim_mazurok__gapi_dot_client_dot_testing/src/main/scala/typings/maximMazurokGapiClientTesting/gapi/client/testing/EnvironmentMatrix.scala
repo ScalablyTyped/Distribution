@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentMatrix extends js.Object {
+trait EnvironmentMatrix extends StObject {
   
   /** A list of Android devices; the test will be run only on the specified devices. */
   var androidDeviceList: js.UndefOr[AndroidDeviceList] = js.native
@@ -25,36 +26,24 @@ object EnvironmentMatrix {
   }
   
   @scala.inline
-  implicit class EnvironmentMatrixOps[Self <: EnvironmentMatrix] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMatrixMutableBuilder[Self <: EnvironmentMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidDeviceList(value: AndroidDeviceList): Self = StObject.set(x, "androidDeviceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidDeviceListUndefined: Self = StObject.set(x, "androidDeviceList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidMatrix(value: AndroidMatrix): Self = StObject.set(x, "androidMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDeviceList(value: AndroidDeviceList): Self = this.set("androidDeviceList", value.asInstanceOf[js.Any])
+    def setAndroidMatrixUndefined: Self = StObject.set(x, "androidMatrix", js.undefined)
     
     @scala.inline
-    def deleteAndroidDeviceList: Self = this.set("androidDeviceList", js.undefined)
+    def setIosDeviceList(value: IosDeviceList): Self = StObject.set(x, "iosDeviceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidMatrix(value: AndroidMatrix): Self = this.set("androidMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroidMatrix: Self = this.set("androidMatrix", js.undefined)
-    
-    @scala.inline
-    def setIosDeviceList(value: IosDeviceList): Self = this.set("iosDeviceList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIosDeviceList: Self = this.set("iosDeviceList", js.undefined)
+    def setIosDeviceListUndefined: Self = StObject.set(x, "iosDeviceList", js.undefined)
   }
 }

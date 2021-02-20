@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualAuthenticatorOptions extends js.Object {
+trait VirtualAuthenticatorOptions extends StObject {
   
   /**
     * If set to true, tests of user presence will succeed immediately.
@@ -49,54 +50,42 @@ object VirtualAuthenticatorOptions {
   }
   
   @scala.inline
-  implicit class VirtualAuthenticatorOptionsOps[Self <: VirtualAuthenticatorOptions] (val x: Self) extends AnyVal {
+  implicit class VirtualAuthenticatorOptionsMutableBuilder[Self <: VirtualAuthenticatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticPresenceSimulation(value: Boolean): Self = StObject.set(x, "automaticPresenceSimulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticPresenceSimulationUndefined: Self = StObject.set(x, "automaticPresenceSimulation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasLargeBlob(value: Boolean): Self = StObject.set(x, "hasLargeBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: AuthenticatorProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setHasLargeBlobUndefined: Self = StObject.set(x, "hasLargeBlob", js.undefined)
     
     @scala.inline
-    def setTransport(value: AuthenticatorTransport): Self = this.set("transport", value.asInstanceOf[js.Any])
+    def setHasResidentKey(value: Boolean): Self = StObject.set(x, "hasResidentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticPresenceSimulation(value: Boolean): Self = this.set("automaticPresenceSimulation", value.asInstanceOf[js.Any])
+    def setHasResidentKeyUndefined: Self = StObject.set(x, "hasResidentKey", js.undefined)
     
     @scala.inline
-    def deleteAutomaticPresenceSimulation: Self = this.set("automaticPresenceSimulation", js.undefined)
+    def setHasUserVerification(value: Boolean): Self = StObject.set(x, "hasUserVerification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasLargeBlob(value: Boolean): Self = this.set("hasLargeBlob", value.asInstanceOf[js.Any])
+    def setHasUserVerificationUndefined: Self = StObject.set(x, "hasUserVerification", js.undefined)
     
     @scala.inline
-    def deleteHasLargeBlob: Self = this.set("hasLargeBlob", js.undefined)
+    def setIsUserVerified(value: Boolean): Self = StObject.set(x, "isUserVerified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasResidentKey(value: Boolean): Self = this.set("hasResidentKey", value.asInstanceOf[js.Any])
+    def setIsUserVerifiedUndefined: Self = StObject.set(x, "isUserVerified", js.undefined)
     
     @scala.inline
-    def deleteHasResidentKey: Self = this.set("hasResidentKey", js.undefined)
+    def setProtocol(value: AuthenticatorProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasUserVerification(value: Boolean): Self = this.set("hasUserVerification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasUserVerification: Self = this.set("hasUserVerification", js.undefined)
-    
-    @scala.inline
-    def setIsUserVerified(value: Boolean): Self = this.set("isUserVerified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsUserVerified: Self = this.set("isUserVerified", js.undefined)
+    def setTransport(value: AuthenticatorTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
   }
 }

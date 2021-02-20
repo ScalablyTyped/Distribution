@@ -1,12 +1,13 @@
 package typings.typescriptServices.TypeScript.Services
 
 import typings.typescriptServices.TypeScript.MemberName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeInfo extends js.Object {
+trait TypeInfo extends StObject {
   
   var docComment: String = js.native
   
@@ -36,36 +37,24 @@ object TypeInfo {
   }
   
   @scala.inline
-  implicit class TypeInfoOps[Self <: TypeInfo] (val x: Self) extends AnyVal {
+  implicit class TypeInfoMutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullSymbolName(value: String): Self = StObject.set(x, "fullSymbolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocComment(value: String): Self = this.set("docComment", value.asInstanceOf[js.Any])
+    def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullSymbolName(value: String): Self = this.set("fullSymbolName", value.asInstanceOf[js.Any])
+    def setMemberName(value: MemberName): Self = StObject.set(x, "memberName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLimChar(value: Double): Self = this.set("limChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemberName(value: MemberName): Self = this.set("memberName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinChar(value: Double): Self = this.set("minChar", value.asInstanceOf[js.Any])
+    def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
   }
 }

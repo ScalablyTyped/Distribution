@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferChangingEvent extends js.Object {
+trait BufferChangingEvent extends StObject {
   
   /** Range of the old text. */
   var oldRange: Range = js.native
@@ -19,21 +20,9 @@ object BufferChangingEvent {
   }
   
   @scala.inline
-  implicit class BufferChangingEventOps[Self <: BufferChangingEvent] (val x: Self) extends AnyVal {
+  implicit class BufferChangingEventMutableBuilder[Self <: BufferChangingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOldRange(value: Range): Self = this.set("oldRange", value.asInstanceOf[js.Any])
+    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
   }
 }

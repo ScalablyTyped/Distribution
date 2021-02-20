@@ -2,6 +2,7 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.openidClient.anon.Dictkey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,129 +58,117 @@ object UserinfoResponse {
   }
   
   @scala.inline
-  implicit class UserinfoResponseOps[Self <: UserinfoResponse] (val x: Self) extends AnyVal {
+  implicit class UserinfoResponseMutableBuilder[Self <: UserinfoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Dictkey): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBirthdate(value: String): Self = StObject.set(x, "birthdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: String): Self = this.set("sub", value.asInstanceOf[js.Any])
+    def setBirthdateUndefined: Self = StObject.set(x, "birthdate", js.undefined)
     
     @scala.inline
-    def setAddress(value: Dictkey): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setBirthdate(value: String): Self = this.set("birthdate", value.asInstanceOf[js.Any])
+    def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBirthdate: Self = this.set("birthdate", js.undefined)
+    def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
     
     @scala.inline
-    def setEmail_verified(value: Boolean): Self = this.set("email_verified", value.asInstanceOf[js.Any])
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail_verified: Self = this.set("email_verified", js.undefined)
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def setFamily_name(value: String): Self = this.set("family_name", value.asInstanceOf[js.Any])
+    def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFamily_name: Self = this.set("family_name", js.undefined)
+    def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setGiven_name(value: String): Self = this.set("given_name", value.asInstanceOf[js.Any])
+    def setMiddle_name(value: String): Self = StObject.set(x, "middle_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGiven_name: Self = this.set("given_name", js.undefined)
+    def setMiddle_nameUndefined: Self = StObject.set(x, "middle_name", js.undefined)
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMiddle_name(value: String): Self = this.set("middle_name", value.asInstanceOf[js.Any])
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMiddle_name: Self = this.set("middle_name", js.undefined)
+    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNickname: Self = this.set("nickname", js.undefined)
+    def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
     
     @scala.inline
-    def setPhone_number(value: String): Self = this.set("phone_number", value.asInstanceOf[js.Any])
+    def setPreferred_username(value: String): Self = StObject.set(x, "preferred_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhone_number: Self = this.set("phone_number", js.undefined)
+    def setPreferred_usernameUndefined: Self = StObject.set(x, "preferred_username", js.undefined)
     
     @scala.inline
-    def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePicture: Self = this.set("picture", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def setPreferred_username(value: String): Self = this.set("preferred_username", value.asInstanceOf[js.Any])
+    def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferred_username: Self = this.set("preferred_username", js.undefined)
+    def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_at(value: Double): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
     
     @scala.inline
-    def deleteUpdated_at: Self = this.set("updated_at", js.undefined)
+    def setZoneinfo(value: String): Self = StObject.set(x, "zoneinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
-    
-    @scala.inline
-    def setZoneinfo(value: String): Self = this.set("zoneinfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneinfo: Self = this.set("zoneinfo", js.undefined)
+    def setZoneinfoUndefined: Self = StObject.set(x, "zoneinfo", js.undefined)
   }
 }

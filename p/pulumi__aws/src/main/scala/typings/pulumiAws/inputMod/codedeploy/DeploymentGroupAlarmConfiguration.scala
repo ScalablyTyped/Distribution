@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codedeploy
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentGroupAlarmConfiguration extends js.Object {
+trait DeploymentGroupAlarmConfiguration extends StObject {
   
   /**
     * A list of alarms configured for the deployment group. _A maximum of 10 alarms can be added to a deployment group_.
@@ -34,39 +35,27 @@ object DeploymentGroupAlarmConfiguration {
   }
   
   @scala.inline
-  implicit class DeploymentGroupAlarmConfigurationOps[Self <: DeploymentGroupAlarmConfiguration] (val x: Self) extends AnyVal {
+  implicit class DeploymentGroupAlarmConfigurationMutableBuilder[Self <: DeploymentGroupAlarmConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarms(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlarmsVarargs(value: Input[String]*): Self = StObject.set(x, "alarms", js.Array(value :_*))
     
     @scala.inline
-    def setAlarmsVarargs(value: Input[String]*): Self = this.set("alarms", js.Array(value :_*))
+    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarms(value: Input[js.Array[Input[String]]]): Self = this.set("alarms", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteAlarms: Self = this.set("alarms", js.undefined)
+    def setIgnorePollAlarmFailure(value: Input[Boolean]): Self = StObject.set(x, "ignorePollAlarmFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setIgnorePollAlarmFailure(value: Input[Boolean]): Self = this.set("ignorePollAlarmFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnorePollAlarmFailure: Self = this.set("ignorePollAlarmFailure", js.undefined)
+    def setIgnorePollAlarmFailureUndefined: Self = StObject.set(x, "ignorePollAlarmFailure", js.undefined)
   }
 }

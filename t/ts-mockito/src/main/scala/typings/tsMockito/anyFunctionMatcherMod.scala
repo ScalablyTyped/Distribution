@@ -1,14 +1,14 @@
 package typings.tsMockito
 
 import typings.tsMockito.matcherMod.Matcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/matcher/type/AnyFunctionMatcher", JSImport.Namespace)
-@js.native
-object anyFunctionMatcherMod extends js.Object {
+object anyFunctionMatcherMod {
   
+  @JSImport("ts-mockito/lib/matcher/type/AnyFunctionMatcher", "AnyFunctionMatcher")
   @js.native
   class AnyFunctionMatcher () extends Matcher
 }

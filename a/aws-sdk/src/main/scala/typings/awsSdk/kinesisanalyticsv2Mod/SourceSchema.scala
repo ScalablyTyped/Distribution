@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceSchema extends js.Object {
+trait SourceSchema extends StObject {
   
   /**
     * A list of RecordColumn objects. 
@@ -31,33 +32,21 @@ object SourceSchema {
   }
   
   @scala.inline
-  implicit class SourceSchemaOps[Self <: SourceSchema] (val x: Self) extends AnyVal {
+  implicit class SourceSchemaMutableBuilder[Self <: SourceSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecordColumns(value: RecordColumns): Self = StObject.set(x, "RecordColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecordColumnsVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordEncoding(value: RecordEncoding): Self = StObject.set(x, "RecordEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordColumnsVarargs(value: RecordColumn*): Self = this.set("RecordColumns", js.Array(value :_*))
+    def setRecordEncodingUndefined: Self = StObject.set(x, "RecordEncoding", js.undefined)
     
     @scala.inline
-    def setRecordColumns(value: RecordColumns): Self = this.set("RecordColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordFormat(value: RecordFormat): Self = this.set("RecordFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordEncoding(value: RecordEncoding): Self = this.set("RecordEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordEncoding: Self = this.set("RecordEncoding", js.undefined)
+    def setRecordFormat(value: RecordFormat): Self = StObject.set(x, "RecordFormat", value.asInstanceOf[js.Any])
   }
 }

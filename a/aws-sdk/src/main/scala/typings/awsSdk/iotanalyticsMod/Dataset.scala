@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dataset extends js.Object {
+trait Dataset extends StObject {
   
   /**
     * The DatasetAction objects that automatically create the data set contents.
@@ -71,96 +72,84 @@ object Dataset {
   }
   
   @scala.inline
-  implicit class DatasetOps[Self <: Dataset] (val x: Self) extends AnyVal {
+  implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: DatasetActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: DatasetAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: DatasetAction*): Self = this.set("actions", js.Array(value :_*))
+    def setArn(value: DatasetArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: DatasetActions): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setContentDeliveryRules(value: DatasetContentDeliveryRules): Self = StObject.set(x, "contentDeliveryRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: DatasetArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setContentDeliveryRulesUndefined: Self = StObject.set(x, "contentDeliveryRules", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setContentDeliveryRulesVarargs(value: DatasetContentDeliveryRule*): Self = StObject.set(x, "contentDeliveryRules", js.Array(value :_*))
     
     @scala.inline
-    def setContentDeliveryRulesVarargs(value: DatasetContentDeliveryRule*): Self = this.set("contentDeliveryRules", js.Array(value :_*))
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDeliveryRules(value: DatasetContentDeliveryRules): Self = this.set("contentDeliveryRules", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteContentDeliveryRules: Self = this.set("contentDeliveryRules", js.undefined)
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setLateDataRules(value: LateDataRules): Self = StObject.set(x, "lateDataRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    def setLateDataRulesUndefined: Self = StObject.set(x, "lateDataRules", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    def setLateDataRulesVarargs(value: LateDataRule*): Self = StObject.set(x, "lateDataRules", js.Array(value :_*))
     
     @scala.inline
-    def setLateDataRulesVarargs(value: LateDataRule*): Self = this.set("lateDataRules", js.Array(value :_*))
+    def setName(value: DatasetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLateDataRules(value: LateDataRules): Self = this.set("lateDataRules", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLateDataRules: Self = this.set("lateDataRules", js.undefined)
+    def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DatasetName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStatus(value: DatasetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionPeriod(value: RetentionPeriod): Self = this.set("retentionPeriod", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRetentionPeriod: Self = this.set("retentionPeriod", js.undefined)
+    def setTriggers(value: DatasetTriggers): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DatasetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTriggersVarargs(value: DatasetTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
     
     @scala.inline
-    def setTriggersVarargs(value: DatasetTrigger*): Self = this.set("triggers", js.Array(value :_*))
+    def setVersioningConfiguration(value: VersioningConfiguration): Self = StObject.set(x, "versioningConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggers(value: DatasetTriggers): Self = this.set("triggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggers: Self = this.set("triggers", js.undefined)
-    
-    @scala.inline
-    def setVersioningConfiguration(value: VersioningConfiguration): Self = this.set("versioningConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersioningConfiguration: Self = this.set("versioningConfiguration", js.undefined)
+    def setVersioningConfigurationUndefined: Self = StObject.set(x, "versioningConfiguration", js.undefined)
   }
 }

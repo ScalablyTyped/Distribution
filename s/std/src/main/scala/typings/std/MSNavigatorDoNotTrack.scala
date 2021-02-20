@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MSNavigatorDoNotTrack extends js.Object {
+trait MSNavigatorDoNotTrack extends StObject {
   
   def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean = js.native
   
@@ -35,36 +36,24 @@ object MSNavigatorDoNotTrack {
   }
   
   @scala.inline
-  implicit class MSNavigatorDoNotTrackOps[Self <: MSNavigatorDoNotTrack] (val x: Self) extends AnyVal {
+  implicit class MSNavigatorDoNotTrackMutableBuilder[Self <: MSNavigatorDoNotTrack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmSiteSpecificTrackingException(value: ConfirmSiteSpecificExceptionsInformation => scala.Boolean): Self = StObject.set(x, "confirmSiteSpecificTrackingException", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmWebWideTrackingException(value: ExceptionInformation => scala.Boolean): Self = StObject.set(x, "confirmWebWideTrackingException", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveSiteSpecificTrackingException(value: ExceptionInformation => Unit): Self = StObject.set(x, "removeSiteSpecificTrackingException", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfirmSiteSpecificTrackingException(value: ConfirmSiteSpecificExceptionsInformation => scala.Boolean): Self = this.set("confirmSiteSpecificTrackingException", js.Any.fromFunction1(value))
+    def setRemoveWebWideTrackingException(value: ExceptionInformation => Unit): Self = StObject.set(x, "removeWebWideTrackingException", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConfirmWebWideTrackingException(value: ExceptionInformation => scala.Boolean): Self = this.set("confirmWebWideTrackingException", js.Any.fromFunction1(value))
+    def setStoreSiteSpecificTrackingException(value: StoreSiteSpecificExceptionsInformation => Unit): Self = StObject.set(x, "storeSiteSpecificTrackingException", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveSiteSpecificTrackingException(value: ExceptionInformation => Unit): Self = this.set("removeSiteSpecificTrackingException", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveWebWideTrackingException(value: ExceptionInformation => Unit): Self = this.set("removeWebWideTrackingException", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStoreSiteSpecificTrackingException(value: StoreSiteSpecificExceptionsInformation => Unit): Self = this.set("storeSiteSpecificTrackingException", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStoreWebWideTrackingException(value: StoreExceptionsInformation => Unit): Self = this.set("storeWebWideTrackingException", js.Any.fromFunction1(value))
+    def setStoreWebWideTrackingException(value: StoreExceptionsInformation => Unit): Self = StObject.set(x, "storeWebWideTrackingException", js.Any.fromFunction1(value))
   }
 }

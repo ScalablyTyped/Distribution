@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,21 +50,9 @@ object MultiFactorError {
   }
   
   @scala.inline
-  implicit class MultiFactorErrorOps[Self <: MultiFactorError] (val x: Self) extends AnyVal {
+  implicit class MultiFactorErrorMutableBuilder[Self <: MultiFactorError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolver(value: MultiFactorResolver): Self = this.set("resolver", value.asInstanceOf[js.Any])
+    def setResolver(value: MultiFactorResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
   }
 }

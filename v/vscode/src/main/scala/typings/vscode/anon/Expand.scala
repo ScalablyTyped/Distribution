@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expand extends js.Object {
+trait Expand extends StObject {
   
   var expand: js.UndefOr[Boolean | Double] = js.native
   
@@ -22,36 +23,24 @@ object Expand {
   }
   
   @scala.inline
-  implicit class ExpandOps[Self <: Expand] (val x: Self) extends AnyVal {
+  implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpand(value: Boolean | Double): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: Boolean | Double): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: Boolean): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

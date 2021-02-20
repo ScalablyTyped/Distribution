@@ -1,16 +1,16 @@
 package typings.classValidator
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/validation/ValidationError", JSImport.Namespace)
-@js.native
-object validationErrorMod extends js.Object {
+object validationErrorMod {
   
+  @JSImport("class-validator/types/validation/ValidationError", "ValidationError")
   @js.native
-  class ValidationError () extends js.Object {
+  class ValidationError () extends StObject {
     
     /**
       * Contains all nested validation errors of the property.

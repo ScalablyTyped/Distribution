@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUserPoolRequest extends js.Object {
+trait UpdateUserPoolRequest extends StObject {
   
   /**
     * Use this setting to define which verified available method a user can use to recover their password when they call ForgotPassword. It allows you to define a preferred method when a user has more than one method available. With this setting, SMS does not qualify for a valid password recovery mechanism if the user also has SMS MFA enabled. In the absence of this setting, Cognito uses the legacy behavior to determine the recovery method where SMS is preferred over email.
@@ -101,120 +102,108 @@ object UpdateUserPoolRequest {
   }
   
   @scala.inline
-  implicit class UpdateUserPoolRequestOps[Self <: UpdateUserPoolRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateUserPoolRequestMutableBuilder[Self <: UpdateUserPoolRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountRecoverySetting(value: AccountRecoverySettingType): Self = StObject.set(x, "AccountRecoverySetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountRecoverySettingUndefined: Self = StObject.set(x, "AccountRecoverySetting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminCreateUserConfig(value: AdminCreateUserConfigType): Self = StObject.set(x, "AdminCreateUserConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setAdminCreateUserConfigUndefined: Self = StObject.set(x, "AdminCreateUserConfig", js.undefined)
     
     @scala.inline
-    def setAccountRecoverySetting(value: AccountRecoverySettingType): Self = this.set("AccountRecoverySetting", value.asInstanceOf[js.Any])
+    def setAutoVerifiedAttributes(value: VerifiedAttributesListType): Self = StObject.set(x, "AutoVerifiedAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountRecoverySetting: Self = this.set("AccountRecoverySetting", js.undefined)
+    def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "AutoVerifiedAttributes", js.undefined)
     
     @scala.inline
-    def setAdminCreateUserConfig(value: AdminCreateUserConfigType): Self = this.set("AdminCreateUserConfig", value.asInstanceOf[js.Any])
+    def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = StObject.set(x, "AutoVerifiedAttributes", js.Array(value :_*))
     
     @scala.inline
-    def deleteAdminCreateUserConfig: Self = this.set("AdminCreateUserConfig", js.undefined)
+    def setDeviceConfiguration(value: DeviceConfigurationType): Self = StObject.set(x, "DeviceConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = this.set("AutoVerifiedAttributes", js.Array(value :_*))
+    def setDeviceConfigurationUndefined: Self = StObject.set(x, "DeviceConfiguration", js.undefined)
     
     @scala.inline
-    def setAutoVerifiedAttributes(value: VerifiedAttributesListType): Self = this.set("AutoVerifiedAttributes", value.asInstanceOf[js.Any])
+    def setEmailConfiguration(value: EmailConfigurationType): Self = StObject.set(x, "EmailConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoVerifiedAttributes: Self = this.set("AutoVerifiedAttributes", js.undefined)
+    def setEmailConfigurationUndefined: Self = StObject.set(x, "EmailConfiguration", js.undefined)
     
     @scala.inline
-    def setDeviceConfiguration(value: DeviceConfigurationType): Self = this.set("DeviceConfiguration", value.asInstanceOf[js.Any])
+    def setEmailVerificationMessage(value: EmailVerificationMessageType): Self = StObject.set(x, "EmailVerificationMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceConfiguration: Self = this.set("DeviceConfiguration", js.undefined)
+    def setEmailVerificationMessageUndefined: Self = StObject.set(x, "EmailVerificationMessage", js.undefined)
     
     @scala.inline
-    def setEmailConfiguration(value: EmailConfigurationType): Self = this.set("EmailConfiguration", value.asInstanceOf[js.Any])
+    def setEmailVerificationSubject(value: EmailVerificationSubjectType): Self = StObject.set(x, "EmailVerificationSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailConfiguration: Self = this.set("EmailConfiguration", js.undefined)
+    def setEmailVerificationSubjectUndefined: Self = StObject.set(x, "EmailVerificationSubject", js.undefined)
     
     @scala.inline
-    def setEmailVerificationMessage(value: EmailVerificationMessageType): Self = this.set("EmailVerificationMessage", value.asInstanceOf[js.Any])
+    def setLambdaConfig(value: LambdaConfigType): Self = StObject.set(x, "LambdaConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailVerificationMessage: Self = this.set("EmailVerificationMessage", js.undefined)
+    def setLambdaConfigUndefined: Self = StObject.set(x, "LambdaConfig", js.undefined)
     
     @scala.inline
-    def setEmailVerificationSubject(value: EmailVerificationSubjectType): Self = this.set("EmailVerificationSubject", value.asInstanceOf[js.Any])
+    def setMfaConfiguration(value: UserPoolMfaType): Self = StObject.set(x, "MfaConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailVerificationSubject: Self = this.set("EmailVerificationSubject", js.undefined)
+    def setMfaConfigurationUndefined: Self = StObject.set(x, "MfaConfiguration", js.undefined)
     
     @scala.inline
-    def setLambdaConfig(value: LambdaConfigType): Self = this.set("LambdaConfig", value.asInstanceOf[js.Any])
+    def setPolicies(value: UserPoolPolicyType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLambdaConfig: Self = this.set("LambdaConfig", js.undefined)
+    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
     @scala.inline
-    def setMfaConfiguration(value: UserPoolMfaType): Self = this.set("MfaConfiguration", value.asInstanceOf[js.Any])
+    def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsAuthenticationMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMfaConfiguration: Self = this.set("MfaConfiguration", js.undefined)
+    def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "SmsAuthenticationMessage", js.undefined)
     
     @scala.inline
-    def setPolicies(value: UserPoolPolicyType): Self = this.set("Policies", value.asInstanceOf[js.Any])
+    def setSmsConfiguration(value: SmsConfigurationType): Self = StObject.set(x, "SmsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicies: Self = this.set("Policies", js.undefined)
+    def setSmsConfigurationUndefined: Self = StObject.set(x, "SmsConfiguration", js.undefined)
     
     @scala.inline
-    def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = this.set("SmsAuthenticationMessage", value.asInstanceOf[js.Any])
+    def setSmsVerificationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsVerificationMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmsAuthenticationMessage: Self = this.set("SmsAuthenticationMessage", js.undefined)
+    def setSmsVerificationMessageUndefined: Self = StObject.set(x, "SmsVerificationMessage", js.undefined)
     
     @scala.inline
-    def setSmsConfiguration(value: SmsConfigurationType): Self = this.set("SmsConfiguration", value.asInstanceOf[js.Any])
+    def setUserPoolAddOns(value: UserPoolAddOnsType): Self = StObject.set(x, "UserPoolAddOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmsConfiguration: Self = this.set("SmsConfiguration", js.undefined)
+    def setUserPoolAddOnsUndefined: Self = StObject.set(x, "UserPoolAddOns", js.undefined)
     
     @scala.inline
-    def setSmsVerificationMessage(value: SmsVerificationMessageType): Self = this.set("SmsVerificationMessage", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmsVerificationMessage: Self = this.set("SmsVerificationMessage", js.undefined)
+    def setUserPoolTags(value: UserPoolTagsType): Self = StObject.set(x, "UserPoolTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolAddOns(value: UserPoolAddOnsType): Self = this.set("UserPoolAddOns", value.asInstanceOf[js.Any])
+    def setUserPoolTagsUndefined: Self = StObject.set(x, "UserPoolTags", js.undefined)
     
     @scala.inline
-    def deleteUserPoolAddOns: Self = this.set("UserPoolAddOns", js.undefined)
+    def setVerificationMessageTemplate(value: VerificationMessageTemplateType): Self = StObject.set(x, "VerificationMessageTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolTags(value: UserPoolTagsType): Self = this.set("UserPoolTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolTags: Self = this.set("UserPoolTags", js.undefined)
-    
-    @scala.inline
-    def setVerificationMessageTemplate(value: VerificationMessageTemplateType): Self = this.set("VerificationMessageTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationMessageTemplate: Self = this.set("VerificationMessageTemplate", js.undefined)
+    def setVerificationMessageTemplateUndefined: Self = StObject.set(x, "VerificationMessageTemplate", js.undefined)
   }
 }

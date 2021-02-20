@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledWindowExecution extends js.Object {
+trait ScheduledWindowExecution extends StObject {
   
   /**
     * The time, in ISO-8601 Extended format, that the maintenance window is scheduled to be run.
@@ -31,36 +32,24 @@ object ScheduledWindowExecution {
   }
   
   @scala.inline
-  implicit class ScheduledWindowExecutionOps[Self <: ScheduledWindowExecution] (val x: Self) extends AnyVal {
+  implicit class ScheduledWindowExecutionMutableBuilder[Self <: ScheduledWindowExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionTime(value: MaintenanceWindowStringDateTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: MaintenanceWindowName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTime(value: MaintenanceWindowStringDateTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteExecutionTime: Self = this.set("ExecutionTime", js.undefined)
+    def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: MaintenanceWindowName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("WindowId", js.undefined)
+    def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
   }
 }

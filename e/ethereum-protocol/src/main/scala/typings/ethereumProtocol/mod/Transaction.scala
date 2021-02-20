@@ -1,12 +1,13 @@
 package typings.ethereumProtocol.mod
 
 import typings.bignumberJs.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
   var blockHash: String | Null = js.native
   
@@ -47,63 +48,51 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockHashNull: Self = StObject.set(x, "blockHash", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setBlockNumberNull: Self = StObject.set(x, "blockNumber", null)
     
     @scala.inline
-    def setGas(value: Double): Self = this.set("gas", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGasPrice(value: default): Self = this.set("gasPrice", value.asInstanceOf[js.Any])
+    def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setGasPrice(value: default): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: Double): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: default): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setNonce(value: Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockHash(value: String): Self = this.set("blockHash", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockHashNull: Self = this.set("blockHash", null)
+    def setToNull: Self = StObject.set(x, "to", null)
     
     @scala.inline
-    def setBlockNumber(value: Double): Self = this.set("blockNumber", value.asInstanceOf[js.Any])
+    def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockNumberNull: Self = this.set("blockNumber", null)
+    def setTransactionIndexNull: Self = StObject.set(x, "transactionIndex", null)
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToNull: Self = this.set("to", null)
-    
-    @scala.inline
-    def setTransactionIndex(value: Double): Self = this.set("transactionIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionIndexNull: Self = this.set("transactionIndex", null)
+    def setValue(value: default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

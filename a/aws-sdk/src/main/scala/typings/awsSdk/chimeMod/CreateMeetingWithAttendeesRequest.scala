@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMeetingWithAttendeesRequest extends js.Object {
+trait CreateMeetingWithAttendeesRequest extends StObject {
   
   /**
     * The request containing the attendees to create.
@@ -48,63 +49,51 @@ object CreateMeetingWithAttendeesRequest {
   }
   
   @scala.inline
-  implicit class CreateMeetingWithAttendeesRequestOps[Self <: CreateMeetingWithAttendeesRequest] (val x: Self) extends AnyVal {
+  implicit class CreateMeetingWithAttendeesRequestMutableBuilder[Self <: CreateMeetingWithAttendeesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttendees(value: CreateMeetingWithAttendeesRequestItemList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttendeesVarargs(value: CreateAttendeeRequestItem*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttendeesVarargs(value: CreateAttendeeRequestItem*): Self = this.set("Attendees", js.Array(value :_*))
+    def setExternalMeetingId(value: ExternalMeetingIdType): Self = StObject.set(x, "ExternalMeetingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttendees(value: CreateMeetingWithAttendeesRequestItemList): Self = this.set("Attendees", value.asInstanceOf[js.Any])
+    def setExternalMeetingIdUndefined: Self = StObject.set(x, "ExternalMeetingId", js.undefined)
     
     @scala.inline
-    def deleteAttendees: Self = this.set("Attendees", js.undefined)
+    def setMediaRegion(value: String): Self = StObject.set(x, "MediaRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalMeetingId(value: ExternalMeetingIdType): Self = this.set("ExternalMeetingId", value.asInstanceOf[js.Any])
+    def setMediaRegionUndefined: Self = StObject.set(x, "MediaRegion", js.undefined)
     
     @scala.inline
-    def deleteExternalMeetingId: Self = this.set("ExternalMeetingId", js.undefined)
+    def setMeetingHostId(value: ExternalUserIdType): Self = StObject.set(x, "MeetingHostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaRegion(value: String): Self = this.set("MediaRegion", value.asInstanceOf[js.Any])
+    def setMeetingHostIdUndefined: Self = StObject.set(x, "MeetingHostId", js.undefined)
     
     @scala.inline
-    def deleteMediaRegion: Self = this.set("MediaRegion", js.undefined)
+    def setNotificationsConfiguration(value: MeetingNotificationConfiguration): Self = StObject.set(x, "NotificationsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeetingHostId(value: ExternalUserIdType): Self = this.set("MeetingHostId", value.asInstanceOf[js.Any])
+    def setNotificationsConfigurationUndefined: Self = StObject.set(x, "NotificationsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteMeetingHostId: Self = this.set("MeetingHostId", js.undefined)
+    def setTags(value: MeetingTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationsConfiguration(value: MeetingNotificationConfiguration): Self = this.set("NotificationsConfiguration", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteNotificationsConfiguration: Self = this.set("NotificationsConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: MeetingTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

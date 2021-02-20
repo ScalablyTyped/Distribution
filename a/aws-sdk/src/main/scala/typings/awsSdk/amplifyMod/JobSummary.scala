@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobSummary extends js.Object {
+trait JobSummary extends StObject {
   
   /**
     *  The commit ID from a third-party repository provider for the job. 
@@ -70,48 +71,36 @@ object JobSummary {
   }
   
   @scala.inline
-  implicit class JobSummaryOps[Self <: JobSummary] (val x: Self) extends AnyVal {
+  implicit class JobSummaryMutableBuilder[Self <: JobSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitTime(value: CommitTime): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitId(value: CommitId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitMessage(value: CommitMessage): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setCommitTime(value: CommitTime): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobArn(value: JobArn): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setJobType(value: JobType): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

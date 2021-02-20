@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigQueryDataSourceSpec extends js.Object {
+trait BigQueryDataSourceSpec extends StObject {
   
   /** The ID of a BigQuery enabled GCP project with a billing account attached. For any queries executed against the data source, the project is charged. */
   var projectId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object BigQueryDataSourceSpec {
   }
   
   @scala.inline
-  implicit class BigQueryDataSourceSpecOps[Self <: BigQueryDataSourceSpec] (val x: Self) extends AnyVal {
+  implicit class BigQueryDataSourceSpecMutableBuilder[Self <: BigQueryDataSourceSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuerySpec(value: BigQueryQuerySpec): Self = StObject.set(x, "querySpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setQuerySpecUndefined: Self = StObject.set(x, "querySpec", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setTableSpec(value: BigQueryTableSpec): Self = StObject.set(x, "tableSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuerySpec(value: BigQueryQuerySpec): Self = this.set("querySpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuerySpec: Self = this.set("querySpec", js.undefined)
-    
-    @scala.inline
-    def setTableSpec(value: BigQueryTableSpec): Self = this.set("tableSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableSpec: Self = this.set("tableSpec", js.undefined)
+    def setTableSpecUndefined: Self = StObject.set(x, "tableSpec", js.undefined)
   }
 }

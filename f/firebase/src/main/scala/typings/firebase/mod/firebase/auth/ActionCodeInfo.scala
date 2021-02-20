@@ -1,6 +1,7 @@
 package typings.firebase.mod.firebase.auth
 
 import typings.firebase.anon.Email
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A response from {@link firebase.auth.Auth.checkActionCode}.
   */
 @js.native
-trait ActionCodeInfo extends js.Object {
+trait ActionCodeInfo extends StObject {
   
   /**
     * The data associated with the action code.
@@ -56,9 +57,23 @@ trait ActionCodeInfo extends js.Object {
     */
   var operation: String = js.native
 }
-@JSImport("firebase", "firebase.auth.ActionCodeInfo")
-@js.native
-object ActionCodeInfo extends js.Object {
+object ActionCodeInfo {
+  
+  @scala.inline
+  def apply(data: Email, operation: String): ActionCodeInfo = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActionCodeInfo]
+  }
+  
+  @scala.inline
+  implicit class ActionCodeInfoMutableBuilder[Self <: ActionCodeInfo] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setData(value: Email): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+  }
   
   type Operation = String
 }

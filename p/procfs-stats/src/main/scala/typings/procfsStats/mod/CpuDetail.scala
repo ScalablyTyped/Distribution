@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CpuDetail extends js.Object {
+trait CpuDetail extends StObject {
   
   var guest: String = js.native
   
@@ -47,48 +48,36 @@ object CpuDetail {
   }
   
   @scala.inline
-  implicit class CpuDetailOps[Self <: CpuDetail] (val x: Self) extends AnyVal {
+  implicit class CpuDetailMutableBuilder[Self <: CpuDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGuest(value: String): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGuest_nice(value: String): Self = StObject.set(x, "guest_nice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdle(value: String): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuest(value: String): Self = this.set("guest", value.asInstanceOf[js.Any])
+    def setIowait(value: String): Self = StObject.set(x, "iowait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuest_nice(value: String): Self = this.set("guest_nice", value.asInstanceOf[js.Any])
+    def setIrq(value: String): Self = StObject.set(x, "irq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdle(value: String): Self = this.set("idle", value.asInstanceOf[js.Any])
+    def setNice(value: String): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIowait(value: String): Self = this.set("iowait", value.asInstanceOf[js.Any])
+    def setSoftirq(value: String): Self = StObject.set(x, "softirq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIrq(value: String): Self = this.set("irq", value.asInstanceOf[js.Any])
+    def setSteal(value: String): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNice(value: String): Self = this.set("nice", value.asInstanceOf[js.Any])
+    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftirq(value: String): Self = this.set("softirq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSteal(value: String): Self = this.set("steal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystem(value: String): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

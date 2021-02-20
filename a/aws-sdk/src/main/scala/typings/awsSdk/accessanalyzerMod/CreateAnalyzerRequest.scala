@@ -1,11 +1,12 @@
 package typings.awsSdk.accessanalyzerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAnalyzerRequest extends js.Object {
+trait CreateAnalyzerRequest extends StObject {
   
   /**
     * The name of the analyzer to create.
@@ -42,45 +43,33 @@ object CreateAnalyzerRequest {
   }
   
   @scala.inline
-  implicit class CreateAnalyzerRequestOps[Self <: CreateAnalyzerRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAnalyzerRequestMutableBuilder[Self <: CreateAnalyzerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveRules(value: InlineArchiveRulesList): Self = StObject.set(x, "archiveRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchiveRulesUndefined: Self = StObject.set(x, "archiveRules", js.undefined)
     
     @scala.inline
-    def setAnalyzerName(value: Name): Self = this.set("analyzerName", value.asInstanceOf[js.Any])
+    def setArchiveRulesVarargs(value: InlineArchiveRule*): Self = StObject.set(x, "archiveRules", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveRulesVarargs(value: InlineArchiveRule*): Self = this.set("archiveRules", js.Array(value :_*))
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def setArchiveRules(value: InlineArchiveRulesList): Self = this.set("archiveRules", value.asInstanceOf[js.Any])
+    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArchiveRules: Self = this.set("archiveRules", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

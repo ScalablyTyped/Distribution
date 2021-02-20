@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Database demote master request.
   */
 @js.native
-trait SchemaInstancesDemoteMasterRequest extends js.Object {
+trait SchemaInstancesDemoteMasterRequest extends StObject {
   
   /**
     * Contains details about the demoteMaster operation.
@@ -24,24 +25,12 @@ object SchemaInstancesDemoteMasterRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstancesDemoteMasterRequestOps[Self <: SchemaInstancesDemoteMasterRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstancesDemoteMasterRequestMutableBuilder[Self <: SchemaInstancesDemoteMasterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDemoteMasterContext(value: SchemaDemoteMasterContext): Self = StObject.set(x, "demoteMasterContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDemoteMasterContext(value: SchemaDemoteMasterContext): Self = this.set("demoteMasterContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDemoteMasterContext: Self = this.set("demoteMasterContext", js.undefined)
+    def setDemoteMasterContextUndefined: Self = StObject.set(x, "demoteMasterContext", js.undefined)
   }
 }

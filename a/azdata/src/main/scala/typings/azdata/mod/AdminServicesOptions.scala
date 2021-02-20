@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminServicesOptions extends js.Object {
+trait AdminServicesOptions extends StObject {
   
   var databaseFileInfoOptions: js.Array[ServiceOption] = js.native
   
@@ -26,36 +27,24 @@ object AdminServicesOptions {
   }
   
   @scala.inline
-  implicit class AdminServicesOptionsOps[Self <: AdminServicesOptions] (val x: Self) extends AnyVal {
+  implicit class AdminServicesOptionsMutableBuilder[Self <: AdminServicesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseFileInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseFileInfoOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseFileInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseFileInfoOptions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseInfoOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseFileInfoOptionsVarargs(value: ServiceOption*): Self = this.set("databaseFileInfoOptions", js.Array(value :_*))
+    def setDatabaseInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseInfoOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDatabaseFileInfoOptions(value: js.Array[ServiceOption]): Self = this.set("databaseFileInfoOptions", value.asInstanceOf[js.Any])
+    def setFileGroupInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "fileGroupInfoOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseInfoOptionsVarargs(value: ServiceOption*): Self = this.set("databaseInfoOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setDatabaseInfoOptions(value: js.Array[ServiceOption]): Self = this.set("databaseInfoOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileGroupInfoOptionsVarargs(value: ServiceOption*): Self = this.set("fileGroupInfoOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileGroupInfoOptions(value: js.Array[ServiceOption]): Self = this.set("fileGroupInfoOptions", value.asInstanceOf[js.Any])
+    def setFileGroupInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "fileGroupInfoOptions", js.Array(value :_*))
   }
 }

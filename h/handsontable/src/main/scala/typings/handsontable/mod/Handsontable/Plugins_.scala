@@ -35,12 +35,13 @@ import typings.handsontable.mod.Handsontable.plugins.ObserveChanges
 import typings.handsontable.mod.Handsontable.plugins.Search
 import typings.handsontable.mod.Handsontable.plugins.TouchScroll
 import typings.handsontable.mod.Handsontable.plugins.TrimRows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Plugins_ extends js.Object {
+trait Plugins_ extends StObject {
   
   var AutoColumnSize: typings.handsontable.mod.Handsontable.plugins.AutoColumnSize = js.native
   
@@ -157,123 +158,111 @@ object Plugins_ {
   }
   
   @scala.inline
-  implicit class Plugins_Ops[Self <: Plugins_] (val x: Self) extends AnyVal {
+  implicit class Plugins_MutableBuilder[Self <: Plugins_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoColumnSize(value: AutoColumnSize): Self = StObject.set(x, "AutoColumnSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRowSize(value: AutoRowSize): Self = StObject.set(x, "AutoRowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutofill(value: Autofill): Self = StObject.set(x, "Autofill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoColumnSize(value: AutoColumnSize): Self = this.set("AutoColumnSize", value.asInstanceOf[js.Any])
+    def setBasePlugin(value: Base): Self = StObject.set(x, "BasePlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRowSize(value: AutoRowSize): Self = this.set("AutoRowSize", value.asInstanceOf[js.Any])
+    def setBindRowsWithHeaders(value: BindRowsWithHeaders): Self = StObject.set(x, "BindRowsWithHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutofill(value: Autofill): Self = this.set("Autofill", value.asInstanceOf[js.Any])
+    def setCollapsibleColumns(value: CollapsibleColumns): Self = StObject.set(x, "CollapsibleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePlugin(value: Base): Self = this.set("BasePlugin", value.asInstanceOf[js.Any])
+    def setColumnSorting(value: ColumnSorting): Self = StObject.set(x, "ColumnSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindRowsWithHeaders(value: BindRowsWithHeaders): Self = this.set("BindRowsWithHeaders", value.asInstanceOf[js.Any])
+    def setColumnSummary(value: ColumnSummary): Self = StObject.set(x, "ColumnSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsibleColumns(value: CollapsibleColumns): Self = this.set("CollapsibleColumns", value.asInstanceOf[js.Any])
+    def setComments(value: Comments): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSorting(value: ColumnSorting): Self = this.set("ColumnSorting", value.asInstanceOf[js.Any])
+    def setContextMenu(value: ContextMenu): Self = StObject.set(x, "ContextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSummary(value: ColumnSummary): Self = this.set("ColumnSummary", value.asInstanceOf[js.Any])
+    def setCopyPaste(value: CopyPaste): Self = StObject.set(x, "CopyPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: Comments): Self = this.set("Comments", value.asInstanceOf[js.Any])
+    def setCustomBorders(value: CustomBorders): Self = StObject.set(x, "CustomBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenu(value: ContextMenu): Self = this.set("ContextMenu", value.asInstanceOf[js.Any])
+    def setDragToScroll(value: DragToScroll): Self = StObject.set(x, "DragToScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyPaste(value: CopyPaste): Self = this.set("CopyPaste", value.asInstanceOf[js.Any])
+    def setDropdownMenu(value: DropdownMenu): Self = StObject.set(x, "DropdownMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomBorders(value: CustomBorders): Self = this.set("CustomBorders", value.asInstanceOf[js.Any])
+    def setExportFile(value: ExportFile): Self = StObject.set(x, "ExportFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragToScroll(value: DragToScroll): Self = this.set("DragToScroll", value.asInstanceOf[js.Any])
+    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdownMenu(value: DropdownMenu): Self = this.set("DropdownMenu", value.asInstanceOf[js.Any])
+    def setFormulas(value: Formulas): Self = StObject.set(x, "Formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFile(value: ExportFile): Self = this.set("ExportFile", value.asInstanceOf[js.Any])
+    def setHeaderTooltips(value: HeaderTooltips): Self = StObject.set(x, "HeaderTooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Filters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setHiddenColumns(value: HiddenColumns): Self = StObject.set(x, "HiddenColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulas(value: Formulas): Self = this.set("Formulas", value.asInstanceOf[js.Any])
+    def setHiddenRows(value: HiddenRows): Self = StObject.set(x, "HiddenRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTooltips(value: HeaderTooltips): Self = this.set("HeaderTooltips", value.asInstanceOf[js.Any])
+    def setManualColumnFreeze(value: ManualColumnFreeze): Self = StObject.set(x, "ManualColumnFreeze", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenColumns(value: HiddenColumns): Self = this.set("HiddenColumns", value.asInstanceOf[js.Any])
+    def setManualColumnMove(value: ManualColumnMove): Self = StObject.set(x, "ManualColumnMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenRows(value: HiddenRows): Self = this.set("HiddenRows", value.asInstanceOf[js.Any])
+    def setManualColumnResize(value: ManualColumnResize): Self = StObject.set(x, "ManualColumnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualColumnFreeze(value: ManualColumnFreeze): Self = this.set("ManualColumnFreeze", value.asInstanceOf[js.Any])
+    def setManualRowMove(value: ManualRowMove): Self = StObject.set(x, "ManualRowMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualColumnMove(value: ManualColumnMove): Self = this.set("ManualColumnMove", value.asInstanceOf[js.Any])
+    def setManualRowResize(value: ManualRowResize): Self = StObject.set(x, "ManualRowResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualColumnResize(value: ManualColumnResize): Self = this.set("ManualColumnResize", value.asInstanceOf[js.Any])
+    def setMergeCells(value: MergeCells): Self = StObject.set(x, "MergeCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRowMove(value: ManualRowMove): Self = this.set("ManualRowMove", value.asInstanceOf[js.Any])
+    def setMultiColumnSorting(value: MultiColumnSorting): Self = StObject.set(x, "MultiColumnSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRowResize(value: ManualRowResize): Self = this.set("ManualRowResize", value.asInstanceOf[js.Any])
+    def setMultipleSelectionHandles(value: MultipleSelectionHandles): Self = StObject.set(x, "MultipleSelectionHandles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeCells(value: MergeCells): Self = this.set("MergeCells", value.asInstanceOf[js.Any])
+    def setNestedHeaders(value: NestedHeaders): Self = StObject.set(x, "NestedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiColumnSorting(value: MultiColumnSorting): Self = this.set("MultiColumnSorting", value.asInstanceOf[js.Any])
+    def setNestedRows(value: NestedRows): Self = StObject.set(x, "NestedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleSelectionHandles(value: MultipleSelectionHandles): Self = this.set("MultipleSelectionHandles", value.asInstanceOf[js.Any])
+    def setObserveChanges(value: ObserveChanges): Self = StObject.set(x, "ObserveChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedHeaders(value: NestedHeaders): Self = this.set("NestedHeaders", value.asInstanceOf[js.Any])
+    def setRegisterPlugin(value: (String, Instantiable) => Unit): Self = StObject.set(x, "registerPlugin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNestedRows(value: NestedRows): Self = this.set("NestedRows", value.asInstanceOf[js.Any])
+    def setSearch(value: Search): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserveChanges(value: ObserveChanges): Self = this.set("ObserveChanges", value.asInstanceOf[js.Any])
+    def setTouchScroll(value: TouchScroll): Self = StObject.set(x, "TouchScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: Search): Self = this.set("Search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchScroll(value: TouchScroll): Self = this.set("TouchScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrimRows(value: TrimRows): Self = this.set("TrimRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisterPlugin(value: (String, Instantiable) => Unit): Self = this.set("registerPlugin", js.Any.fromFunction2(value))
+    def setTrimRows(value: TrimRows): Self = StObject.set(x, "TrimRows", value.asInstanceOf[js.Any])
   }
 }

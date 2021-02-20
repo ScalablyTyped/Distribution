@@ -2,12 +2,13 @@ package typings.androiduix.android.view.animation
 
 import typings.androiduix.android.graphics.Matrix
 import typings.androiduix.java_.lang.StringBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transformation extends js.Object {
+trait Transformation extends StObject {
   
   def clear(): Unit = js.native
   

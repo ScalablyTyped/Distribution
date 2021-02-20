@@ -3,6 +3,7 @@ package typings.oracleOraclejet.ojbuttonMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.ojbuttonMod.ojMenuButton.ojAction
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +16,7 @@ trait ojMenuButton extends ojButton[ojMenuButtonSettableProperties] {
   
   def setProperties(properties: ojMenuButtonSettablePropertiesLenient): Unit = js.native
 }
-@JSImport("@oracle/oraclejet/ojbutton", "ojMenuButton")
-@js.native
-object ojMenuButton extends js.Object {
+object ojMenuButton {
   
   type ojAction = CustomEvent[StringDictionary[js.Any]]
 }

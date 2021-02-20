@@ -2,23 +2,42 @@ package typings.reactVirtualized
 
 import typings.reactVirtualized.anon.IsRowLoaded
 import typings.reactVirtualized.anon.MinimumBatchSize
+import typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoaderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-virtualized/dist/commonjs/InfiniteLoader", JSImport.Namespace)
-@js.native
-object infiniteLoaderMod extends js.Object {
+object infiniteLoaderMod {
   
+  @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader")
   @js.native
-  class InfiniteLoader ()
-    extends typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoader
+  class InfiniteLoader protected ()
+    extends typings.reactVirtualized.esInfiniteLoaderMod.InfiniteLoader {
+    def this(props: InfiniteLoaderProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InfiniteLoaderProps, context: js.Any) = this()
+  }
   /* static members */
-  @js.native
-  object InfiniteLoader extends js.Object {
+  object InfiniteLoader {
     
-    var defaultProps: MinimumBatchSize = js.native
+    @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var propTypes: IsRowLoaded = js.native
+    @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader.defaultProps")
+    @js.native
+    def defaultProps: MinimumBatchSize = js.native
+    @scala.inline
+    def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader.propTypes")
+    @js.native
+    def propTypes: IsRowLoaded = js.native
+    @scala.inline
+    def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

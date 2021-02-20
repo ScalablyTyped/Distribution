@@ -1,35 +1,33 @@
 package typings.reactPdf
 
 import typings.pdfjsDist.mod.PDFJSStatic
-import typings.react.mod.Component
-import typings.reactPdf.documentMod.Props
+import typings.reactPdf.documentMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-pdf/dist/esm/entry.webpack", JSImport.Namespace)
-@js.native
-object entryWebpackMod extends js.Object {
+object entryWebpackMod {
   
+  @JSImport("react-pdf/dist/esm/entry.webpack", "Document")
   @js.native
-  class Document ()
-    extends Component[Props, js.Object, js.Any]
+  class Document () extends default
   
+  @JSImport("react-pdf/dist/esm/entry.webpack", "Outline")
   @js.native
   class Outline ()
-    extends Component[typings.reactPdf.outlineMod.Props, js.Object, js.Any]
+    extends typings.reactPdf.outlineMod.default
   
+  @JSImport("react-pdf/dist/esm/entry.webpack", "Page")
   @js.native
   class Page ()
-    extends Component[typings.reactPdf.pageMod.Props, js.Object, js.Any]
+    extends typings.reactPdf.pageMod.default
   
-  @js.native
-  object pdfjs extends js.Object {
+  object pdfjs {
     
-    val PDFJS: PDFJSStatic = js.native
-    
+    @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.CMapCompressionType")
     @js.native
-    object CMapCompressionType extends js.Object {
+    object CMapCompressionType extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.CMapCompressionType with Double] = js.native
@@ -41,8 +39,13 @@ object entryWebpackMod extends js.Object {
       /* 2 */ val STREAM: typings.pdfjsDist.mod.CMapCompressionType.STREAM with Double = js.native
     }
     
+    @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.PDFJS")
     @js.native
-    object VerbosityLevel extends js.Object {
+    val PDFJS: PDFJSStatic = js.native
+    
+    @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.VerbosityLevel")
+    @js.native
+    object VerbosityLevel extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.VerbosityLevel with Double] = js.native

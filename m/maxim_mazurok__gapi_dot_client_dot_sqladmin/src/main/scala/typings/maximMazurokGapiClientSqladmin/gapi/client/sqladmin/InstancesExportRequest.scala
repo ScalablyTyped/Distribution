@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesExportRequest extends js.Object {
+trait InstancesExportRequest extends StObject {
   
   /** Contains details about the export operation. */
   var exportContext: js.UndefOr[ExportContext] = js.native
@@ -19,24 +20,12 @@ object InstancesExportRequest {
   }
   
   @scala.inline
-  implicit class InstancesExportRequestOps[Self <: InstancesExportRequest] (val x: Self) extends AnyVal {
+  implicit class InstancesExportRequestMutableBuilder[Self <: InstancesExportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportContext(value: ExportContext): Self = StObject.set(x, "exportContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExportContext(value: ExportContext): Self = this.set("exportContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportContext: Self = this.set("exportContext", js.undefined)
+    def setExportContextUndefined: Self = StObject.set(x, "exportContext", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.leaflet.mod
 
 import typings.leaflet.mod.DomEvent._PropagableEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,33 +32,21 @@ object LeafletEvent {
   }
   
   @scala.inline
-  implicit class LeafletEventOps[Self <: LeafletEvent] (val x: Self) extends AnyVal {
+  implicit class LeafletEventMutableBuilder[Self <: LeafletEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: js.Any): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropagatedFrom(value: js.Any): Self = StObject.set(x, "propagatedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceTarget(value: js.Any): Self = StObject.set(x, "sourceTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: js.Any): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagatedFrom(value: js.Any): Self = this.set("propagatedFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceTarget(value: js.Any): Self = this.set("sourceTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpRouteRuleMatch extends js.Object {
+trait HttpRouteRuleMatch extends StObject {
   
   /**
     * For satisfying the matchRule condition, the path of the request must exactly match the value specified in fullPathMatch after removing any query parameters and anchor that may be
@@ -68,69 +69,57 @@ object HttpRouteRuleMatch {
   }
   
   @scala.inline
-  implicit class HttpRouteRuleMatchOps[Self <: HttpRouteRuleMatch] (val x: Self) extends AnyVal {
+  implicit class HttpRouteRuleMatchMutableBuilder[Self <: HttpRouteRuleMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullPathMatch(value: String): Self = StObject.set(x, "fullPathMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullPathMatchUndefined: Self = StObject.set(x, "fullPathMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderMatches(value: js.Array[HttpHeaderMatch]): Self = StObject.set(x, "headerMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullPathMatch(value: String): Self = this.set("fullPathMatch", value.asInstanceOf[js.Any])
+    def setHeaderMatchesUndefined: Self = StObject.set(x, "headerMatches", js.undefined)
     
     @scala.inline
-    def deleteFullPathMatch: Self = this.set("fullPathMatch", js.undefined)
+    def setHeaderMatchesVarargs(value: HttpHeaderMatch*): Self = StObject.set(x, "headerMatches", js.Array(value :_*))
     
     @scala.inline
-    def setHeaderMatchesVarargs(value: HttpHeaderMatch*): Self = this.set("headerMatches", js.Array(value :_*))
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderMatches(value: js.Array[HttpHeaderMatch]): Self = this.set("headerMatches", value.asInstanceOf[js.Any])
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
     @scala.inline
-    def deleteHeaderMatches: Self = this.set("headerMatches", js.undefined)
+    def setMetadataFilters(value: js.Array[MetadataFilter]): Self = StObject.set(x, "metadataFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setMetadataFiltersUndefined: Self = StObject.set(x, "metadataFilters", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setMetadataFiltersVarargs(value: MetadataFilter*): Self = StObject.set(x, "metadataFilters", js.Array(value :_*))
     
     @scala.inline
-    def setMetadataFiltersVarargs(value: MetadataFilter*): Self = this.set("metadataFilters", js.Array(value :_*))
+    def setPrefixMatch(value: String): Self = StObject.set(x, "prefixMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataFilters(value: js.Array[MetadataFilter]): Self = this.set("metadataFilters", value.asInstanceOf[js.Any])
+    def setPrefixMatchUndefined: Self = StObject.set(x, "prefixMatch", js.undefined)
     
     @scala.inline
-    def deleteMetadataFilters: Self = this.set("metadataFilters", js.undefined)
+    def setQueryParameterMatches(value: js.Array[HttpQueryParameterMatch]): Self = StObject.set(x, "queryParameterMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixMatch(value: String): Self = this.set("prefixMatch", value.asInstanceOf[js.Any])
+    def setQueryParameterMatchesUndefined: Self = StObject.set(x, "queryParameterMatches", js.undefined)
     
     @scala.inline
-    def deletePrefixMatch: Self = this.set("prefixMatch", js.undefined)
+    def setQueryParameterMatchesVarargs(value: HttpQueryParameterMatch*): Self = StObject.set(x, "queryParameterMatches", js.Array(value :_*))
     
     @scala.inline
-    def setQueryParameterMatchesVarargs(value: HttpQueryParameterMatch*): Self = this.set("queryParameterMatches", js.Array(value :_*))
+    def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameterMatches(value: js.Array[HttpQueryParameterMatch]): Self = this.set("queryParameterMatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryParameterMatches: Self = this.set("queryParameterMatches", js.undefined)
-    
-    @scala.inline
-    def setRegexMatch(value: String): Self = this.set("regexMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexMatch: Self = this.set("regexMatch", js.undefined)
+    def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyBinding extends js.Object {
+trait PolicyBinding extends StObject {
   
   /**
     * Required. Member to bind the role with. See /iam/docs/reference/rest/v1/Policy#Binding for how to format each member. Eg. - user:myuser@mydomain.com -
@@ -28,30 +29,18 @@ object PolicyBinding {
   }
   
   @scala.inline
-  implicit class PolicyBindingOps[Self <: PolicyBinding] (val x: Self) extends AnyVal {
+  implicit class PolicyBindingMutableBuilder[Self <: PolicyBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMember(value: String): Self = this.set("member", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMember: Self = this.set("member", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

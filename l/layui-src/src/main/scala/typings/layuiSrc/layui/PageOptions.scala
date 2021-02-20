@@ -7,12 +7,13 @@ import typings.layuiSrc.layuiSrcStrings.page
 import typings.layuiSrc.layuiSrcStrings.prev
 import typings.layuiSrc.layuiSrcStrings.skip
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageOptions extends js.Object {
+trait PageOptions extends StObject {
   
   var count: js.UndefOr[Double] = js.native
   
@@ -52,108 +53,96 @@ object PageOptions {
   }
   
   @scala.inline
-  implicit class PageOptionsOps[Self <: PageOptions] (val x: Self) extends AnyVal {
+  implicit class PageOptionsMutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurr(value: Double): Self = StObject.set(x, "curr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCurrUndefined: Self = StObject.set(x, "curr", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurr(value: Double): Self = this.set("curr", value.asInstanceOf[js.Any])
+    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
     @scala.inline
-    def deleteCurr: Self = this.set("curr", js.undefined)
+    def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElem(value: String | HTMLElement): Self = this.set("elem", value.asInstanceOf[js.Any])
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
-    def deleteElem: Self = this.set("elem", js.undefined)
+    def setGroups(value: Double): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: String): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setHash(value: String | Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: Double): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setJump(value: (PageOptions, /* first */ Boolean) => Unit): Self = StObject.set(x, "jump", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHash(value: String | Boolean): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJump(value: (PageOptions, /* first */ Boolean) => Unit): Self = this.set("jump", js.Any.fromFunction2(value))
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteJump: Self = this.set("jump", js.undefined)
+    def setLayout(value: js.Array[count | prev | page | next | limit | skip]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: String): Self = this.set("last", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setLayoutVarargs(value: (count | prev | page | next | limit | skip)*): Self = StObject.set(x, "layout", js.Array(value :_*))
     
     @scala.inline
-    def setLayoutVarargs(value: (count | prev | page | next | limit | skip)*): Self = this.set("layout", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: js.Array[count | prev | page | next | limit | skip]): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLimits(value: js.Array[Double]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setLimitsVarargs(value: Double*): Self = StObject.set(x, "limits", js.Array(value :_*))
     
     @scala.inline
-    def setLimitsVarargs(value: Double*): Self = this.set("limits", js.Array(value :_*))
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: js.Array[Double]): Self = this.set("limits", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteLimits: Self = this.set("limits", js.undefined)
+    def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrev(value: String): Self = this.set("prev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

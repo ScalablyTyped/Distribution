@@ -2,12 +2,13 @@ package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.StackTrace
 import typings.node.inspectorMod.Runtime.StackTraceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PausedEventDataType extends js.Object {
+trait PausedEventDataType extends StObject {
   
   /**
     * Just scheduled async call will have this stack trace as parent stack during async execution. This field is available only after <code>Debugger.stepInto</code> call with <code>breakOnAsynCall</code> flag.
@@ -55,60 +56,48 @@ object PausedEventDataType {
   }
   
   @scala.inline
-  implicit class PausedEventDataTypeOps[Self <: PausedEventDataType] (val x: Self) extends AnyVal {
+  implicit class PausedEventDataTypeMutableBuilder[Self <: PausedEventDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncCallStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncCallStackTraceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncCallStackTraceIdUndefined: Self = StObject.set(x, "asyncCallStackTraceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallFramesVarargs(value: CallFrame*): Self = this.set("callFrames", js.Array(value :_*))
+    def setAsyncStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncStackTraceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallFrames(value: js.Array[CallFrame]): Self = this.set("callFrames", value.asInstanceOf[js.Any])
+    def setAsyncStackTraceIdUndefined: Self = StObject.set(x, "asyncStackTraceId", js.undefined)
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setAsyncStackTraceUndefined: Self = StObject.set(x, "asyncStackTrace", js.undefined)
     
     @scala.inline
-    def setAsyncCallStackTraceId(value: StackTraceId): Self = this.set("asyncCallStackTraceId", value.asInstanceOf[js.Any])
+    def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsyncCallStackTraceId: Self = this.set("asyncCallStackTraceId", js.undefined)
+    def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
     
     @scala.inline
-    def setAsyncStackTrace(value: StackTrace): Self = this.set("asyncStackTrace", value.asInstanceOf[js.Any])
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsyncStackTrace: Self = this.set("asyncStackTrace", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setAsyncStackTraceId(value: StackTraceId): Self = this.set("asyncStackTraceId", value.asInstanceOf[js.Any])
+    def setHitBreakpoints(value: js.Array[String]): Self = StObject.set(x, "hitBreakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsyncStackTraceId: Self = this.set("asyncStackTraceId", js.undefined)
+    def setHitBreakpointsUndefined: Self = StObject.set(x, "hitBreakpoints", js.undefined)
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHitBreakpointsVarargs(value: String*): Self = StObject.set(x, "hitBreakpoints", js.Array(value :_*))
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setHitBreakpointsVarargs(value: String*): Self = this.set("hitBreakpoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setHitBreakpoints(value: js.Array[String]): Self = this.set("hitBreakpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHitBreakpoints: Self = this.set("hitBreakpoints", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

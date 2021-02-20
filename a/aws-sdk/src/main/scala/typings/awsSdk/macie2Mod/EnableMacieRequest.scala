@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableMacieRequest extends js.Object {
+trait EnableMacieRequest extends StObject {
   
   /**
     * A unique, case-sensitive token that you provide to ensure the idempotency of the request.
@@ -31,36 +32,24 @@ object EnableMacieRequest {
   }
   
   @scala.inline
-  implicit class EnableMacieRequestOps[Self <: EnableMacieRequest] (val x: Self) extends AnyVal {
+  implicit class EnableMacieRequestMutableBuilder[Self <: EnableMacieRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = this.set("findingPublishingFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFindingPublishingFrequency: Self = this.set("findingPublishingFrequency", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: MacieStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

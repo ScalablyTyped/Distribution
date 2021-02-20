@@ -1,11 +1,12 @@
 package typings.messenger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessengerOptions extends js.Object {
+trait MessengerOptions extends StObject {
   
   /**
     * Extra classes to be appended to the container.
@@ -45,51 +46,39 @@ object MessengerOptions {
   }
   
   @scala.inline
-  implicit class MessengerOptionsOps[Self <: MessengerOptions] (val x: Self) extends AnyVal {
+  implicit class MessengerOptionsMutableBuilder[Self <: MessengerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraClasses(value: String): Self = StObject.set(x, "extraClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraClassesUndefined: Self = StObject.set(x, "extraClasses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraClasses(value: String): Self = this.set("extraClasses", value.asInstanceOf[js.Any])
+    def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
     @scala.inline
-    def deleteExtraClasses: Self = this.set("extraClasses", js.undefined)
+    def setMessageDefaults(value: MessageOptions): Self = StObject.set(x, "messageDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMessages(value: Double): Self = this.set("maxMessages", value.asInstanceOf[js.Any])
+    def setMessageDefaultsUndefined: Self = StObject.set(x, "messageDefaults", js.undefined)
     
     @scala.inline
-    def deleteMaxMessages: Self = this.set("maxMessages", js.undefined)
+    def setParentLocations(value: js.Array[String]): Self = StObject.set(x, "parentLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageDefaults(value: MessageOptions): Self = this.set("messageDefaults", value.asInstanceOf[js.Any])
+    def setParentLocationsUndefined: Self = StObject.set(x, "parentLocations", js.undefined)
     
     @scala.inline
-    def deleteMessageDefaults: Self = this.set("messageDefaults", js.undefined)
+    def setParentLocationsVarargs(value: String*): Self = StObject.set(x, "parentLocations", js.Array(value :_*))
     
     @scala.inline
-    def setParentLocationsVarargs(value: String*): Self = this.set("parentLocations", js.Array(value :_*))
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentLocations(value: js.Array[String]): Self = this.set("parentLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentLocations: Self = this.set("parentLocations", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

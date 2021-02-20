@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchSeleniumOptions extends js.Object {
+trait NightwatchSeleniumOptions extends StObject {
   
   /**
     * List of cli arguments to be passed to the Selenium process. Here you can set various options for browser drivers, such as:
@@ -72,39 +73,27 @@ object NightwatchSeleniumOptions {
   }
   
   @scala.inline
-  implicit class NightwatchSeleniumOptionsOps[Self <: NightwatchSeleniumOptions] (val x: Self) extends AnyVal {
+  implicit class NightwatchSeleniumOptionsMutableBuilder[Self <: NightwatchSeleniumOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCli_args(value: js.Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLog_path(value: String | Boolean): Self = StObject.set(x, "log_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCli_args(value: js.Any): Self = this.set("cli_args", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setServer_path(value: String): Self = StObject.set(x, "server_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog_path(value: String | Boolean): Self = this.set("log_path", value.asInstanceOf[js.Any])
+    def setStart_process(value: Boolean): Self = StObject.set(x, "start_process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServer_path(value: String): Self = this.set("server_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_process(value: Boolean): Self = this.set("start_process", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_session(value: Boolean): Self = this.set("start_session", value.asInstanceOf[js.Any])
+    def setStart_session(value: Boolean): Self = StObject.set(x, "start_session", value.asInstanceOf[js.Any])
   }
 }

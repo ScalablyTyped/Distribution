@@ -1,5 +1,6 @@
 package typings.arrayBinarysearchClosest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("array-binarysearch.closest", JSImport.Namespace)
 @js.native
-object arrayBinarysearchClosestRequire extends js.Object
+object arrayBinarysearchClosestRequire extends StObject

@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be one rule with this type of condition per policy.
   */
 @js.native
-trait SchemaApiLevelCondition extends js.Object {
+trait SchemaApiLevelCondition extends StObject {
   
   /**
     * The minimum desired Android Framework API level. If the device
@@ -28,24 +29,12 @@ object SchemaApiLevelCondition {
   }
   
   @scala.inline
-  implicit class SchemaApiLevelConditionOps[Self <: SchemaApiLevelCondition] (val x: Self) extends AnyVal {
+  implicit class SchemaApiLevelConditionMutableBuilder[Self <: SchemaApiLevelCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinApiLevel(value: Double): Self = StObject.set(x, "minApiLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinApiLevel(value: Double): Self = this.set("minApiLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinApiLevel: Self = this.set("minApiLevel", js.undefined)
+    def setMinApiLevelUndefined: Self = StObject.set(x, "minApiLevel", js.undefined)
   }
 }

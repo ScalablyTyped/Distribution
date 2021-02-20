@@ -1,12 +1,13 @@
 package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojnavigationlistMod.ojNavigationList.ItemContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Selectable[K, D] extends js.Object {
+trait Selectable[K, D] extends StObject {
   
   var renderer: js.UndefOr[(js.Function1[/* context */ ItemContext[K, D], Unit]) | Null] = js.native
   
@@ -21,36 +22,24 @@ object Selectable {
   }
   
   @scala.inline
-  implicit class SelectableOps[Self <: Selectable[_, _], K, D] (val x: Self with (Selectable[K, D])) extends AnyVal {
+  implicit class SelectableMutableBuilder[Self <: Selectable[_, _], K, D] (val x: Self with (Selectable[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRenderer(value: /* context */ ItemContext[K, D] => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRendererNull: Self = StObject.set(x, "renderer", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def setRenderer(value: /* context */ ItemContext[K, D] => Unit): Self = this.set("renderer", js.Any.fromFunction1(value))
+    def setSelectable(value: (js.Function1[/* context */ ItemContext[K, D], Boolean]) | Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setSelectableFunction1(value: /* context */ ItemContext[K, D] => Boolean): Self = StObject.set(x, "selectable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRendererNull: Self = this.set("renderer", null)
-    
-    @scala.inline
-    def setSelectableFunction1(value: /* context */ ItemContext[K, D] => Boolean): Self = this.set("selectable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectable(value: (js.Function1[/* context */ ItemContext[K, D], Boolean]) | Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
   }
 }

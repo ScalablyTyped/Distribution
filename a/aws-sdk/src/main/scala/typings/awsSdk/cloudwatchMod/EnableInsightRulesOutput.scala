@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableInsightRulesOutput extends js.Object {
+trait EnableInsightRulesOutput extends StObject {
   
   /**
     * An array listing the rules that could not be enabled. You cannot disable or enable built-in rules.
@@ -21,27 +22,15 @@ object EnableInsightRulesOutput {
   }
   
   @scala.inline
-  implicit class EnableInsightRulesOutputOps[Self <: EnableInsightRulesOutput] (val x: Self) extends AnyVal {
+  implicit class EnableInsightRulesOutputMutableBuilder[Self <: EnableInsightRulesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailures(value: BatchFailures): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailuresVarargs(value: PartialFailure*): Self = this.set("Failures", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailures(value: BatchFailures): Self = this.set("Failures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailures: Self = this.set("Failures", js.undefined)
+    def setFailuresVarargs(value: PartialFailure*): Self = StObject.set(x, "Failures", js.Array(value :_*))
   }
 }

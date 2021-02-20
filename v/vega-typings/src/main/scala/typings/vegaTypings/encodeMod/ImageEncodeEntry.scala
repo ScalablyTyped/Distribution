@@ -1,6 +1,7 @@
 package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.anon.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,54 +28,42 @@ object ImageEncodeEntry {
   }
   
   @scala.inline
-  implicit class ImageEncodeEntryOps[Self <: ImageEncodeEntry] (val x: Self) extends AnyVal {
+  implicit class ImageEncodeEntryMutableBuilder[Self <: ImageEncodeEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspect(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAspectVarargs(value: (Test with BooleanValueRef)*): Self = StObject.set(x, "aspect", js.Array(value :_*))
     
     @scala.inline
-    def setAspectVarargs(value: (Test with BooleanValueRef)*): Self = this.set("aspect", js.Array(value :_*))
+    def setBaseline(value: ProductionRule[ScaledValueRef[Baseline]]): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspect(value: ProductionRule[BooleanValueRef]): Self = this.set("aspect", value.asInstanceOf[js.Any])
+    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
     @scala.inline
-    def deleteAspect: Self = this.set("aspect", js.undefined)
+    def setBaselineVarargs(value: (Test with ScaledValueRef[Baseline])*): Self = StObject.set(x, "baseline", js.Array(value :_*))
     
     @scala.inline
-    def setBaselineVarargs(value: (Test with ScaledValueRef[Baseline])*): Self = this.set("baseline", js.Array(value :_*))
+    def setSmooth(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseline(value: ProductionRule[ScaledValueRef[Baseline]]): Self = this.set("baseline", value.asInstanceOf[js.Any])
+    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
     @scala.inline
-    def deleteBaseline: Self = this.set("baseline", js.undefined)
+    def setSmoothVarargs(value: (Test with BooleanValueRef)*): Self = StObject.set(x, "smooth", js.Array(value :_*))
     
     @scala.inline
-    def setSmoothVarargs(value: (Test with BooleanValueRef)*): Self = this.set("smooth", js.Array(value :_*))
+    def setUrl(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmooth(value: ProductionRule[BooleanValueRef]): Self = this.set("smooth", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteSmooth: Self = this.set("smooth", js.undefined)
-    
-    @scala.inline
-    def setUrlVarargs(value: (Test with StringValueRef)*): Self = this.set("url", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrl(value: ProductionRule[StringValueRef]): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "url", js.Array(value :_*))
   }
 }

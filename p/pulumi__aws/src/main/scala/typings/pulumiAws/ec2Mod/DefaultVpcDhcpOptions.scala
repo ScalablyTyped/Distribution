@@ -5,6 +5,7 @@ import typings.pulumiAws.defaultVpcDhcpOptionsMod.DefaultVpcDhcpOptionsState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class DefaultVpcDhcpOptions protected ()
   def this(name: String, args: DefaultVpcDhcpOptionsArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions")
-@js.native
-object DefaultVpcDhcpOptions extends js.Object {
+object DefaultVpcDhcpOptions {
   
   /**
     * Get an existing DefaultVpcDhcpOptions resource's state with the given name, ID, and optional extra
@@ -39,14 +38,24 @@ object DefaultVpcDhcpOptions extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.defaultVpcDhcpOptionsMod.DefaultVpcDhcpOptions = js.native
+  @JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.defaultVpcDhcpOptionsMod.DefaultVpcDhcpOptions = js.native
+  @JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions.get")
+  @js.native
   def get(name: String, id: Input[ID], state: DefaultVpcDhcpOptionsState): typings.pulumiAws.defaultVpcDhcpOptionsMod.DefaultVpcDhcpOptions = js.native
+  @JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions.get")
+  @js.native
   def get(name: String, id: Input[ID], state: DefaultVpcDhcpOptionsState, opts: CustomResourceOptions): typings.pulumiAws.defaultVpcDhcpOptionsMod.DefaultVpcDhcpOptions = js.native
   
   /**
     * Returns true if the given object is an instance of DefaultVpcDhcpOptions.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultVpcDhcpOptions.DefaultVpcDhcpOptions */ Boolean = js.native
 }

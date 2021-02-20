@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IFaxServer interface */
 @js.native
-trait IFaxServer extends js.Object {
+trait IFaxServer extends StObject {
   
   /** Version of the fax server API */
   val APIVersion: FAX_SERVER_APIVERSION_ENUM = js.native
@@ -129,96 +130,84 @@ object IFaxServer {
   }
   
   @scala.inline
-  implicit class IFaxServerOps[Self <: IFaxServer] (val x: Self) extends AnyVal {
+  implicit class IFaxServerMutableBuilder[Self <: IFaxServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPIVersion(value: FAX_SERVER_APIVERSION_ENUM): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivity(value: FaxActivity): Self = StObject.set(x, "Activity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnect(value: String => Unit): Self = StObject.set(x, "Connect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAPIVersion(value: FAX_SERVER_APIVERSION_ENUM): Self = this.set("APIVersion", value.asInstanceOf[js.Any])
+    def setDebug(value: Boolean): Self = StObject.set(x, "Debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivity(value: FaxActivity): Self = this.set("Activity", value.asInstanceOf[js.Any])
+    def setDisconnect(value: () => Unit): Self = StObject.set(x, "Disconnect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnect(value: String => Unit): Self = this.set("Connect", js.Any.fromFunction1(value))
+    def setFolders(value: FaxFolders): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("Debug", value.asInstanceOf[js.Any])
+    def setGetDeviceProviders(value: () => FaxDeviceProviders): Self = StObject.set(x, "GetDeviceProviders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisconnect(value: () => Unit): Self = this.set("Disconnect", js.Any.fromFunction0(value))
+    def setGetDevices(value: () => FaxDevices): Self = StObject.set(x, "GetDevices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFolders(value: FaxFolders): Self = this.set("Folders", value.asInstanceOf[js.Any])
+    def setGetExtensionProperty(value: String => js.Any): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDeviceProviders(value: () => FaxDeviceProviders): Self = this.set("GetDeviceProviders", js.Any.fromFunction0(value))
+    def setInboundRouting(value: FaxInboundRouting): Self = StObject.set(x, "InboundRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDevices(value: () => FaxDevices): Self = this.set("GetDevices", js.Any.fromFunction0(value))
+    def setListenToServerEvents(value: FAX_SERVER_EVENTS_TYPE_ENUM => Unit): Self = StObject.set(x, "ListenToServerEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetExtensionProperty(value: String => js.Any): Self = this.set("GetExtensionProperty", js.Any.fromFunction1(value))
+    def setLoggingOptions(value: FaxLoggingOptions): Self = StObject.set(x, "LoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundRouting(value: FaxInboundRouting): Self = this.set("InboundRouting", value.asInstanceOf[js.Any])
+    def setMajorBuild(value: Double): Self = StObject.set(x, "MajorBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListenToServerEvents(value: FAX_SERVER_EVENTS_TYPE_ENUM => Unit): Self = this.set("ListenToServerEvents", js.Any.fromFunction1(value))
+    def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingOptions(value: FaxLoggingOptions): Self = this.set("LoggingOptions", value.asInstanceOf[js.Any])
+    def setMinorBuild(value: Double): Self = StObject.set(x, "MinorBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorBuild(value: Double): Self = this.set("MajorBuild", value.asInstanceOf[js.Any])
+    def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: Double): Self = this.set("MajorVersion", value.asInstanceOf[js.Any])
+    def setOutboundRouting(value: FaxOutboundRouting): Self = StObject.set(x, "OutboundRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorBuild(value: Double): Self = this.set("MinorBuild", value.asInstanceOf[js.Any])
+    def setReceiptOptions(value: FaxReceiptOptions): Self = StObject.set(x, "ReceiptOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorVersion(value: Double): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
+    def setRegisterDeviceProvider(value: (String, String, String, String, Double) => Unit): Self = StObject.set(x, "RegisterDeviceProvider", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setOutboundRouting(value: FaxOutboundRouting): Self = this.set("OutboundRouting", value.asInstanceOf[js.Any])
+    def setRegisterInboundRoutingExtension(value: (String, String, String, js.Any) => Unit): Self = StObject.set(x, "RegisterInboundRoutingExtension", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setReceiptOptions(value: FaxReceiptOptions): Self = this.set("ReceiptOptions", value.asInstanceOf[js.Any])
+    def setRegisteredEvents(value: FAX_SERVER_EVENTS_TYPE_ENUM): Self = StObject.set(x, "RegisteredEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisterDeviceProvider(value: (String, String, String, String, Double) => Unit): Self = this.set("RegisterDeviceProvider", js.Any.fromFunction5(value))
+    def setSecurity(value: FaxSecurity): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisterInboundRoutingExtension(value: (String, String, String, js.Any) => Unit): Self = this.set("RegisterInboundRoutingExtension", js.Any.fromFunction4(value))
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredEvents(value: FAX_SERVER_EVENTS_TYPE_ENUM): Self = this.set("RegisteredEvents", value.asInstanceOf[js.Any])
+    def setSetExtensionProperty(value: (String, SafeArray[_]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSecurity(value: FaxSecurity): Self = this.set("Security", value.asInstanceOf[js.Any])
+    def setUnregisterDeviceProvider(value: String => Unit): Self = StObject.set(x, "UnregisterDeviceProvider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetExtensionProperty(value: (String, SafeArray[_]) => Unit): Self = this.set("SetExtensionProperty", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnregisterDeviceProvider(value: String => Unit): Self = this.set("UnregisterDeviceProvider", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnregisterInboundRoutingExtension(value: String => Unit): Self = this.set("UnregisterInboundRoutingExtension", js.Any.fromFunction1(value))
+    def setUnregisterInboundRoutingExtension(value: String => Unit): Self = StObject.set(x, "UnregisterInboundRoutingExtension", js.Any.fromFunction1(value))
   }
 }

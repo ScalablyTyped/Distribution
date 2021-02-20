@@ -2,16 +2,14 @@ package typings.phaser.global.Phaser
 
 import typings.phaser.Phaser.Types.Cameras.Controls.FixedKeyControlConfig
 import typings.phaser.Phaser.Types.Cameras.Controls.SmoothedKeyControlConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Cameras")
-@js.native
-object Cameras extends js.Object {
+object Cameras {
   
-  @js.native
-  object Controls extends js.Object {
+  object Controls {
     
     /**
       * A Fixed Key Camera Control.
@@ -31,6 +29,7 @@ object Cameras extends js.Object {
       * 
       * You must call the `update` method of this controller every frame.
       */
+    @JSGlobal("Phaser.Cameras.Controls.FixedKeyControl")
     @js.native
     class FixedKeyControl protected ()
       extends typings.phaser.Phaser.Cameras.Controls.FixedKeyControl {
@@ -65,6 +64,7 @@ object Cameras extends js.Object {
       * 
       * You must call the `update` method of this controller every frame.
       */
+    @JSGlobal("Phaser.Cameras.Controls.SmoothedKeyControl")
     @js.native
     class SmoothedKeyControl protected ()
       extends typings.phaser.Phaser.Cameras.Controls.SmoothedKeyControl {
@@ -76,8 +76,7 @@ object Cameras extends js.Object {
     }
   }
   
-  @js.native
-  object Scene2D extends js.Object {
+  object Scene2D {
     
     /**
       * A Base Camera class.
@@ -106,6 +105,7 @@ object Cameras extends js.Object {
       * you to isolate special effects as needed. Therefore the 'since' values for properties of this class relate
       * to when they were added to the Camera class.
       */
+    @JSGlobal("Phaser.Cameras.Scene2D.BaseCamera")
     @js.native
     class BaseCamera protected ()
       extends typings.phaser.Phaser.Cameras.Scene2D.BaseCamera {
@@ -141,6 +141,7 @@ object Cameras extends js.Object {
       * 
       * A Camera also has built-in special effects including Fade, Flash and Camera Shake.
       */
+    @JSGlobal("Phaser.Cameras.Scene2D.Camera")
     @js.native
     class Camera protected ()
       extends typings.phaser.Phaser.Cameras.Scene2D.Camera {
@@ -184,6 +185,7 @@ object Cameras extends js.Object {
       * 
       * A Camera also has built-in special effects including Fade, Flash, Camera Shake, Pan and Zoom.
       */
+    @JSGlobal("Phaser.Cameras.Scene2D.CameraManager")
     @js.native
     class CameraManager protected ()
       extends typings.phaser.Phaser.Cameras.Scene2D.CameraManager {
@@ -194,8 +196,7 @@ object Cameras extends js.Object {
       def this(scene: typings.phaser.Phaser.Scene) = this()
     }
     
-    @js.native
-    object Effects extends js.Object {
+    object Effects {
       
       /**
         * A Camera Fade effect.
@@ -208,6 +209,7 @@ object Cameras extends js.Object {
         * The effect will dispatch several events on the Camera itself and you can also specify an `onUpdate` callback,
         * which is invoked each frame for the duration of the effect, if required.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Effects.Fade")
       @js.native
       class Fade protected ()
         extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Fade {
@@ -229,6 +231,7 @@ object Cameras extends js.Object {
         * The effect will dispatch several events on the Camera itself and you can also specify an `onUpdate` callback,
         * which is invoked each frame for the duration of the effect, if required.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Effects.Flash")
       @js.native
       class Flash protected ()
         extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Flash {
@@ -251,6 +254,7 @@ object Cameras extends js.Object {
         * The effect will dispatch several events on the Camera itself and you can also specify an `onUpdate` callback,
         * which is invoked each frame for the duration of the effect if required.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Effects.Pan")
       @js.native
       class Pan protected ()
         extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Pan {
@@ -279,6 +283,7 @@ object Cameras extends js.Object {
         * The effect will dispatch several events on the Camera itself and you can also specify an `onUpdate` callback,
         * which is invoked each frame for the duration of the effect if required.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Effects.RotateTo")
       @js.native
       class RotateTo protected ()
         extends typings.phaser.Phaser.Cameras.Scene2D.Effects.RotateTo {
@@ -300,6 +305,7 @@ object Cameras extends js.Object {
         * The effect will dispatch several events on the Camera itself and you can also specify an `onUpdate` callback,
         * which is invoked each frame for the duration of the effect if required.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Effects.Shake")
       @js.native
       class Shake protected ()
         extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Shake {
@@ -318,6 +324,7 @@ object Cameras extends js.Object {
         * The effect will dispatch several events on the Camera itself and you can also specify an `onUpdate` callback,
         * which is invoked each frame for the duration of the effect if required.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Effects.Zoom")
       @js.native
       class Zoom protected ()
         extends typings.phaser.Phaser.Cameras.Scene2D.Effects.Zoom {
@@ -329,14 +336,15 @@ object Cameras extends js.Object {
       }
     }
     
-    @js.native
-    object Events extends js.Object {
+    object Events {
       
       /**
         * The Destroy Camera Event.
         * 
         * This event is dispatched by a Camera instance when it is destroyed by the Camera Manager.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.DESTROY")
+      @js.native
       val DESTROY: js.Any = js.native
       
       /**
@@ -346,6 +354,8 @@ object Cameras extends js.Object {
         * 
         * Listen to it from a Camera instance using `Camera.on('camerafadeincomplete', listener)`.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.FADE_IN_COMPLETE")
+      @js.native
       val FADE_IN_COMPLETE: js.Any = js.native
       
       /**
@@ -355,6 +365,8 @@ object Cameras extends js.Object {
         * 
         * Listen to it from a Camera instance using `Camera.on('camerafadeinstart', listener)`.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.FADE_IN_START")
+      @js.native
       val FADE_IN_START: js.Any = js.native
       
       /**
@@ -364,6 +376,8 @@ object Cameras extends js.Object {
         * 
         * Listen to it from a Camera instance using `Camera.on('camerafadeoutcomplete', listener)`.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE")
+      @js.native
       val FADE_OUT_COMPLETE: js.Any = js.native
       
       /**
@@ -373,6 +387,8 @@ object Cameras extends js.Object {
         * 
         * Listen to it from a Camera instance using `Camera.on('camerafadeoutstart', listener)`.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.FADE_OUT_START")
+      @js.native
       val FADE_OUT_START: js.Any = js.native
       
       /**
@@ -380,6 +396,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Flash Effect completes.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.FLASH_COMPLETE")
+      @js.native
       val FLASH_COMPLETE: js.Any = js.native
       
       /**
@@ -387,6 +405,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Flash Effect starts.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.FLASH_START")
+      @js.native
       val FLASH_START: js.Any = js.native
       
       /**
@@ -394,6 +414,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Pan Effect completes.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.PAN_COMPLETE")
+      @js.native
       val PAN_COMPLETE: js.Any = js.native
       
       /**
@@ -401,6 +423,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Pan Effect starts.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.PAN_START")
+      @js.native
       val PAN_START: js.Any = js.native
       
       /**
@@ -411,6 +435,8 @@ object Cameras extends js.Object {
         * 
         * Listen to it from a Camera instance using: `camera.on('postrender', listener)`.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.POST_RENDER")
+      @js.native
       val POST_RENDER: js.Any = js.native
       
       /**
@@ -421,6 +447,8 @@ object Cameras extends js.Object {
         * 
         * Listen to it from a Camera instance using: `camera.on('prerender', listener)`.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.PRE_RENDER")
+      @js.native
       val PRE_RENDER: js.Any = js.native
       
       /**
@@ -428,6 +456,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Rotate Effect completes.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.ROTATE_COMPLETE")
+      @js.native
       val ROTATE_COMPLETE: js.Any = js.native
       
       /**
@@ -435,6 +465,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Rotate Effect starts.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.ROTATE_START")
+      @js.native
       val ROTATE_START: js.Any = js.native
       
       /**
@@ -442,6 +474,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Shake Effect completes.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.SHAKE_COMPLETE")
+      @js.native
       val SHAKE_COMPLETE: js.Any = js.native
       
       /**
@@ -449,6 +483,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Shake Effect starts.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.SHAKE_START")
+      @js.native
       val SHAKE_START: js.Any = js.native
       
       /**
@@ -456,6 +492,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Zoom Effect completes.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.ZOOM_COMPLETE")
+      @js.native
       val ZOOM_COMPLETE: js.Any = js.native
       
       /**
@@ -463,6 +501,8 @@ object Cameras extends js.Object {
         * 
         * This event is dispatched by a Camera instance when the Zoom Effect starts.
         */
+      @JSGlobal("Phaser.Cameras.Scene2D.Events.ZOOM_START")
+      @js.native
       val ZOOM_START: js.Any = js.native
     }
   }

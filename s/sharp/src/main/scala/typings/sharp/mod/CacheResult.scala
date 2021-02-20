@@ -2,12 +2,13 @@ package typings.sharp.mod
 
 import typings.sharp.anon.Current
 import typings.sharp.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheResult extends js.Object {
+trait CacheResult extends StObject {
   
   var files: Max = js.native
   
@@ -24,27 +25,15 @@ object CacheResult {
   }
   
   @scala.inline
-  implicit class CacheResultOps[Self <: CacheResult] (val x: Self) extends AnyVal {
+  implicit class CacheResultMutableBuilder[Self <: CacheResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: Max): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: Max): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiles(value: Max): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItems(value: Max): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemory(value: Current): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setMemory(value: Current): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
   }
 }

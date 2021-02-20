@@ -61,12 +61,13 @@ import typings.semanticUiVisibility.semanticUiVisibilityStrings.throttle
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.transition
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.verbose
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.zIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def visibility(): JQuery = js.native
   def visibility(behavior: setting, name: `type`, value: js.UndefOr[scala.Nothing]): `false` | image | fixed = js.native

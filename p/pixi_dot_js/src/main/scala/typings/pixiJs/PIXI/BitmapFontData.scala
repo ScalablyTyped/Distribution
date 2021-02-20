@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait BitmapFontData extends js.Object {
+trait BitmapFontData extends StObject {
   
   /**
     * @member {PIXI.IBitmapFontDataChar[]} PIXI.BitmapFontData#char
@@ -58,48 +59,36 @@ object BitmapFontData {
   }
   
   @scala.inline
-  implicit class BitmapFontDataOps[Self <: BitmapFontData] (val x: Self) extends AnyVal {
+  implicit class BitmapFontDataMutableBuilder[Self <: BitmapFontData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChar(value: js.Array[IBitmapFontDataChar]): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharVarargs(value: IBitmapFontDataChar*): Self = StObject.set(x, "char", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommon(value: js.Array[IBitmapFontDataCommon]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharVarargs(value: IBitmapFontDataChar*): Self = this.set("char", js.Array(value :_*))
+    def setCommonVarargs(value: IBitmapFontDataCommon*): Self = StObject.set(x, "common", js.Array(value :_*))
     
     @scala.inline
-    def setChar(value: js.Array[IBitmapFontDataChar]): Self = this.set("char", value.asInstanceOf[js.Any])
+    def setInfo(value: js.Array[IBitmapFontDataInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonVarargs(value: IBitmapFontDataCommon*): Self = this.set("common", js.Array(value :_*))
+    def setInfoVarargs(value: IBitmapFontDataInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
     
     @scala.inline
-    def setCommon(value: js.Array[IBitmapFontDataCommon]): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setKerning(value: js.Array[IBitmapFontDataKerning]): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoVarargs(value: IBitmapFontDataInfo*): Self = this.set("info", js.Array(value :_*))
+    def setKerningVarargs(value: IBitmapFontDataKerning*): Self = StObject.set(x, "kerning", js.Array(value :_*))
     
     @scala.inline
-    def setInfo(value: js.Array[IBitmapFontDataInfo]): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setPage(value: js.Array[IBitmapFontDataPage]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKerningVarargs(value: IBitmapFontDataKerning*): Self = this.set("kerning", js.Array(value :_*))
-    
-    @scala.inline
-    def setKerning(value: js.Array[IBitmapFontDataKerning]): Self = this.set("kerning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageVarargs(value: IBitmapFontDataPage*): Self = this.set("page", js.Array(value :_*))
-    
-    @scala.inline
-    def setPage(value: js.Array[IBitmapFontDataPage]): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageVarargs(value: IBitmapFontDataPage*): Self = StObject.set(x, "page", js.Array(value :_*))
   }
 }

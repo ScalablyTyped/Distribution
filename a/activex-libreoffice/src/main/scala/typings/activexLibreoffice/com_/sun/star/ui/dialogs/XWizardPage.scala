@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,33 +69,21 @@ object XWizardPage {
   }
   
   @scala.inline
-  implicit class XWizardPageOps[Self <: XWizardPage] (val x: Self) extends AnyVal {
+  implicit class XWizardPageMutableBuilder[Self <: XWizardPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatePage(value: () => Unit): Self = StObject.set(x, "activatePage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanAdvance(value: () => Boolean): Self = StObject.set(x, "canAdvance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitPage(value: Double => Boolean): Self = StObject.set(x, "commitPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageId(value: Double): Self = this.set("PageId", value.asInstanceOf[js.Any])
+    def setPageId(value: Double): Self = StObject.set(x, "PageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindow(value: XWindow): Self = this.set("Window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivatePage(value: () => Unit): Self = this.set("activatePage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCanAdvance(value: () => Boolean): Self = this.set("canAdvance", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCommitPage(value: Double => Boolean): Self = this.set("commitPage", js.Any.fromFunction1(value))
+    def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

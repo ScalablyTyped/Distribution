@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait OutlineLoadOptions extends js.Object {
+trait OutlineLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -49,42 +50,30 @@ object OutlineLoadOptions {
   }
   
   @scala.inline
-  implicit class OutlineLoadOptionsOps[Self <: OutlineLoadOptions] (val x: Self) extends AnyVal {
+  implicit class OutlineLoadOptionsMutableBuilder[Self <: OutlineLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setPageContent(value: PageContentLoadOptions): Self = StObject.set(x, "pageContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPageContentUndefined: Self = StObject.set(x, "pageContent", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setParagraphs(value: ParagraphCollectionLoadOptions): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageContent(value: PageContentLoadOptions): Self = this.set("pageContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageContent: Self = this.set("pageContent", js.undefined)
-    
-    @scala.inline
-    def setParagraphs(value: ParagraphCollectionLoadOptions): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
   }
 }

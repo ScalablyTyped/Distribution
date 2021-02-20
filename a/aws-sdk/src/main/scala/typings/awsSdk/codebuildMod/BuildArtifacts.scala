@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildArtifacts extends js.Object {
+trait BuildArtifacts extends StObject {
   
   /**
     *  An identifier for this artifact definition. 
@@ -46,54 +47,42 @@ object BuildArtifacts {
   }
   
   @scala.inline
-  implicit class BuildArtifactsOps[Self <: BuildArtifacts] (val x: Self) extends AnyVal {
+  implicit class BuildArtifactsMutableBuilder[Self <: BuildArtifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactIdentifier(value: String): Self = this.set("artifactIdentifier", value.asInstanceOf[js.Any])
+    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
     @scala.inline
-    def deleteArtifactIdentifier: Self = this.set("artifactIdentifier", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionDisabled(value: WrapperBoolean): Self = this.set("encryptionDisabled", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteEncryptionDisabled: Self = this.set("encryptionDisabled", js.undefined)
+    def setMd5sum(value: String): Self = StObject.set(x, "md5sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMd5sumUndefined: Self = StObject.set(x, "md5sum", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setOverrideArtifactName(value: WrapperBoolean): Self = StObject.set(x, "overrideArtifactName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5sum(value: String): Self = this.set("md5sum", value.asInstanceOf[js.Any])
+    def setOverrideArtifactNameUndefined: Self = StObject.set(x, "overrideArtifactName", js.undefined)
     
     @scala.inline
-    def deleteMd5sum: Self = this.set("md5sum", js.undefined)
+    def setSha256sum(value: String): Self = StObject.set(x, "sha256sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideArtifactName(value: WrapperBoolean): Self = this.set("overrideArtifactName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideArtifactName: Self = this.set("overrideArtifactName", js.undefined)
-    
-    @scala.inline
-    def setSha256sum(value: String): Self = this.set("sha256sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSha256sum: Self = this.set("sha256sum", js.undefined)
+    def setSha256sumUndefined: Self = StObject.set(x, "sha256sum", js.undefined)
   }
 }

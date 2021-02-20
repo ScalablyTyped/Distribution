@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenericRevisionInfo extends js.Object {
+trait GenericRevisionInfo extends StObject {
   
   /**
     * The deployment groups for which this is the current target revision.
@@ -41,51 +42,39 @@ object GenericRevisionInfo {
   }
   
   @scala.inline
-  implicit class GenericRevisionInfoOps[Self <: GenericRevisionInfo] (val x: Self) extends AnyVal {
+  implicit class GenericRevisionInfoMutableBuilder[Self <: GenericRevisionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentGroups(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentGroupsUndefined: Self = StObject.set(x, "deploymentGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentGroupsVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroups", js.Array(value :_*))
     
     @scala.inline
-    def setDeploymentGroupsVarargs(value: DeploymentGroupName*): Self = this.set("deploymentGroups", js.Array(value :_*))
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentGroups(value: DeploymentGroupsList): Self = this.set("deploymentGroups", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeploymentGroups: Self = this.set("deploymentGroups", js.undefined)
+    def setFirstUsedTime(value: Timestamp): Self = StObject.set(x, "firstUsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFirstUsedTimeUndefined: Self = StObject.set(x, "firstUsedTime", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLastUsedTime(value: Timestamp): Self = StObject.set(x, "lastUsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstUsedTime(value: Timestamp): Self = this.set("firstUsedTime", value.asInstanceOf[js.Any])
+    def setLastUsedTimeUndefined: Self = StObject.set(x, "lastUsedTime", js.undefined)
     
     @scala.inline
-    def deleteFirstUsedTime: Self = this.set("firstUsedTime", js.undefined)
+    def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUsedTime(value: Timestamp): Self = this.set("lastUsedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUsedTime: Self = this.set("lastUsedTime", js.undefined)
-    
-    @scala.inline
-    def setRegisterTime(value: Timestamp): Self = this.set("registerTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisterTime: Self = this.set("registerTime", js.undefined)
+    def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
   }
 }

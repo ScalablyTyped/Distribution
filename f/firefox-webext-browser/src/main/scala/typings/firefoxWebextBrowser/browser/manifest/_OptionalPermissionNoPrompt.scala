@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.search
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.activeTab
 */
-trait _OptionalPermissionNoPrompt extends js.Object
+trait _OptionalPermissionNoPrompt extends StObject
 object _OptionalPermissionNoPrompt {
   
   @scala.inline

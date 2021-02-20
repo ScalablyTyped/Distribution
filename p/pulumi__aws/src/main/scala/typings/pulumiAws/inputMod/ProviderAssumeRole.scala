@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProviderAssumeRole extends js.Object {
+trait ProviderAssumeRole extends StObject {
   
   var durationSeconds: js.UndefOr[Input[Double]] = js.native
   
@@ -34,72 +35,60 @@ object ProviderAssumeRole {
   }
   
   @scala.inline
-  implicit class ProviderAssumeRoleOps[Self <: ProviderAssumeRole] (val x: Self) extends AnyVal {
+  implicit class ProviderAssumeRoleMutableBuilder[Self <: ProviderAssumeRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationSeconds(value: Input[Double]): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalId(value: Input[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: Input[Double]): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: Input[String]): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setPolicyArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setPolicyArnsUndefined: Self = StObject.set(x, "policyArns", js.undefined)
     
     @scala.inline
-    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setPolicyArnsVarargs(value: Input[String]*): Self = StObject.set(x, "policyArns", js.Array(value :_*))
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def setPolicyArnsVarargs(value: Input[String]*): Self = this.set("policyArns", js.Array(value :_*))
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArns(value: Input[js.Array[Input[String]]]): Self = this.set("policyArns", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def deletePolicyArns: Self = this.set("policyArns", js.undefined)
+    def setSessionName(value: Input[String]): Self = StObject.set(x, "sessionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setSessionNameUndefined: Self = StObject.set(x, "sessionName", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionName(value: Input[String]): Self = this.set("sessionName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSessionName: Self = this.set("sessionName", js.undefined)
+    def setTransitiveTagKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "transitiveTagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTransitiveTagKeysUndefined: Self = StObject.set(x, "transitiveTagKeys", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTransitiveTagKeysVarargs(value: Input[String]*): Self = this.set("transitiveTagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitiveTagKeys(value: Input[js.Array[Input[String]]]): Self = this.set("transitiveTagKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitiveTagKeys: Self = this.set("transitiveTagKeys", js.undefined)
+    def setTransitiveTagKeysVarargs(value: Input[String]*): Self = StObject.set(x, "transitiveTagKeys", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HarvestJob extends js.Object {
+trait HarvestJob extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) assigned to the HarvestJob.
@@ -62,72 +63,60 @@ object HarvestJob {
   }
   
   @scala.inline
-  implicit class HarvestJobOps[Self <: HarvestJob] (val x: Self) extends AnyVal {
+  implicit class HarvestJobMutableBuilder[Self <: HarvestJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: string): Self = this.set("ChannelId", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("ChannelId", js.undefined)
+    def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: string): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: string): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setOriginEndpointId(value: string): Self = StObject.set(x, "OriginEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setOriginEndpointIdUndefined: Self = StObject.set(x, "OriginEndpointId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setS3Destination(value: S3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginEndpointId(value: string): Self = this.set("OriginEndpointId", value.asInstanceOf[js.Any])
+    def setS3DestinationUndefined: Self = StObject.set(x, "S3Destination", js.undefined)
     
     @scala.inline
-    def deleteOriginEndpointId: Self = this.set("OriginEndpointId", js.undefined)
+    def setStartTime(value: string): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Destination(value: S3Destination): Self = this.set("S3Destination", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteS3Destination: Self = this.set("S3Destination", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: string): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "FileWindow")
 @js.native
-class FileWindow protected () extends js.Object {
+class FileWindow protected () extends StObject {
   def this(idxfile: js.Any, version: js.Any) = this()
   
   def close(): Unit = js.native

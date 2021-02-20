@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActualSignatureInfo extends js.Object {
+trait ActualSignatureInfo extends StObject {
   
   var currentParameter: Double = js.native
   
@@ -29,30 +30,18 @@ object ActualSignatureInfo {
   }
   
   @scala.inline
-  implicit class ActualSignatureInfoOps[Self <: ActualSignatureInfo] (val x: Self) extends AnyVal {
+  implicit class ActualSignatureInfoMutableBuilder[Self <: ActualSignatureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentParameter(value: Double): Self = StObject.set(x, "currentParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentParameterIsTypeParameter(value: Boolean): Self = StObject.set(x, "currentParameterIsTypeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterLimChar(value: Double): Self = StObject.set(x, "parameterLimChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentParameter(value: Double): Self = this.set("currentParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentParameterIsTypeParameter(value: Boolean): Self = this.set("currentParameterIsTypeParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterLimChar(value: Double): Self = this.set("parameterLimChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterMinChar(value: Double): Self = this.set("parameterMinChar", value.asInstanceOf[js.Any])
+    def setParameterMinChar(value: Double): Self = StObject.set(x, "parameterMinChar", value.asInstanceOf[js.Any])
   }
 }

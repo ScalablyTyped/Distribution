@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnResizedEventUIParam extends js.Object {
+trait ColumnResizedEventUIParam extends StObject {
   
   /**
     * Gets the resized column index.
@@ -41,48 +42,36 @@ object ColumnResizedEventUIParam {
   }
   
   @scala.inline
-  implicit class ColumnResizedEventUIParamOps[Self <: ColumnResizedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ColumnResizedEventUIParamMutableBuilder[Self <: ColumnResizedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setNewWidth(value: Double): Self = StObject.set(x, "newWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setNewWidthUndefined: Self = StObject.set(x, "newWidth", js.undefined)
     
     @scala.inline
-    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewWidth(value: Double): Self = this.set("newWidth", value.asInstanceOf[js.Any])
+    def setOriginalWidthUndefined: Self = StObject.set(x, "originalWidth", js.undefined)
     
     @scala.inline
-    def deleteNewWidth: Self = this.set("newWidth", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalWidth(value: Double): Self = this.set("originalWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalWidth: Self = this.set("originalWidth", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

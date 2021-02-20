@@ -3,6 +3,7 @@ package typings.activexMshtml.MSHTML
 import typings.activexMshtml.activexMshtmlNumbers.`0`
 import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
 import typings.activexMshtml.activexMshtmlNumbers.`65536`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`0`
   - typings.activexMshtml.activexMshtmlNumbers.`65536`
 */
-trait HTMLMaximizeFlag extends js.Object
+trait HTMLMaximizeFlag extends StObject
 object HTMLMaximizeFlag {
   
   @scala.inline

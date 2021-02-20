@@ -1,11 +1,12 @@
 package typings.vueNiceDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsFocus extends js.Object {
+trait IsFocus extends StObject {
   
   def date(newValue: typings.std.Date): Unit = js.native
   
@@ -20,24 +21,12 @@ object IsFocus {
   }
   
   @scala.inline
-  implicit class IsFocusOps[Self <: IsFocus] (val x: Self) extends AnyVal {
+  implicit class IsFocusMutableBuilder[Self <: IsFocus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: typings.std.Date => Unit): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDate(value: typings.std.Date => Unit): Self = this.set("date", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFocus(value: Boolean => Unit): Self = this.set("isFocus", js.Any.fromFunction1(value))
+    def setIsFocus(value: Boolean => Unit): Self = StObject.set(x, "isFocus", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPSetReferenceStatement extends js.Object {
+trait IPSetReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IPSet that this statement references.
@@ -26,27 +27,15 @@ object IPSetReferenceStatement {
   }
   
   @scala.inline
-  implicit class IPSetReferenceStatementOps[Self <: IPSetReferenceStatement] (val x: Self) extends AnyVal {
+  implicit class IPSetReferenceStatementMutableBuilder[Self <: IPSetReferenceStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIPSetForwardedIPConfig(value: IPSetForwardedIPConfig): Self = StObject.set(x, "IPSetForwardedIPConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setARN(value: ResourceArn): Self = this.set("ARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIPSetForwardedIPConfig(value: IPSetForwardedIPConfig): Self = this.set("IPSetForwardedIPConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIPSetForwardedIPConfig: Self = this.set("IPSetForwardedIPConfig", js.undefined)
+    def setIPSetForwardedIPConfigUndefined: Self = StObject.set(x, "IPSetForwardedIPConfig", js.undefined)
   }
 }

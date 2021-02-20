@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDataConfig extends js.Object {
+trait InputDataConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that uniquely identifies the permissions you've given Amazon Transcribe to access your Amazon S3 buckets containing your media files or text data.
@@ -31,30 +32,18 @@ object InputDataConfig {
   }
   
   @scala.inline
-  implicit class InputDataConfigOps[Self <: InputDataConfig] (val x: Self) extends AnyVal {
+  implicit class InputDataConfigMutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3Uri(value: Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTuningDataS3Uri(value: Uri): Self = StObject.set(x, "TuningDataS3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Uri(value: Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTuningDataS3Uri(value: Uri): Self = this.set("TuningDataS3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTuningDataS3Uri: Self = this.set("TuningDataS3Uri", js.undefined)
+    def setTuningDataS3UriUndefined: Self = StObject.set(x, "TuningDataS3Uri", js.undefined)
   }
 }

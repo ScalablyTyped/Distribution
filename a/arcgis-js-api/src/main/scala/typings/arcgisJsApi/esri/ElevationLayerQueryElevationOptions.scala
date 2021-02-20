@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,42 +52,30 @@ object ElevationLayerQueryElevationOptions {
   }
   
   @scala.inline
-  implicit class ElevationLayerQueryElevationOptionsOps[Self <: ElevationLayerQueryElevationOptions] (val x: Self) extends AnyVal {
+  implicit class ElevationLayerQueryElevationOptionsMutableBuilder[Self <: ElevationLayerQueryElevationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemResolution(value: Double | String): Self = this.set("demResolution", value.asInstanceOf[js.Any])
+    def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
     
     @scala.inline
-    def deleteDemResolution: Self = this.set("demResolution", js.undefined)
+    def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDataValue(value: Double): Self = this.set("noDataValue", value.asInstanceOf[js.Any])
+    def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
     
     @scala.inline
-    def deleteNoDataValue: Self = this.set("noDataValue", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnSampleInfo(value: Boolean): Self = this.set("returnSampleInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnSampleInfo: Self = this.set("returnSampleInfo", js.undefined)
-    
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

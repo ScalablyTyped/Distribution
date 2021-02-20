@@ -1,12 +1,13 @@
 package typings.jqueryCleditor
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryCLEditorButtonDefinitionEventData extends js.Object {
+trait JQueryCLEditorButtonDefinitionEventData extends StObject {
   
   var button: HTMLElement = js.native
   
@@ -42,42 +43,30 @@ object JQueryCLEditorButtonDefinitionEventData {
   }
   
   @scala.inline
-  implicit class JQueryCLEditorButtonDefinitionEventDataOps[Self <: JQueryCLEditorButtonDefinitionEventData] (val x: Self) extends AnyVal {
+  implicit class JQueryCLEditorButtonDefinitionEventDataMutableBuilder[Self <: JQueryCLEditorButtonDefinitionEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: HTMLElement): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setEditor(value: CLEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonName(value: String): Self = this.set("buttonName", value.asInstanceOf[js.Any])
+    def setPopup(value: HTMLElement): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setPopupName(value: String): Self = StObject.set(x, "popupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: CLEditor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setUseCSS(value: Boolean): Self = StObject.set(x, "useCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: HTMLElement): Self = this.set("popup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopupName(value: String): Self = this.set("popupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseCSS(value: Boolean): Self = this.set("useCSS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

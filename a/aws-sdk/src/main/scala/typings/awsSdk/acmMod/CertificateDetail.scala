@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateDetail extends js.Object {
+trait CertificateDetail extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the certificate. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
@@ -146,189 +147,177 @@ object CertificateDetail {
   }
   
   @scala.inline
-  implicit class CertificateDetailOps[Self <: CertificateDetail] (val x: Self) extends AnyVal {
+  implicit class CertificateDetailMutableBuilder[Self <: CertificateDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: Arn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: TStamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setDomainValidationOptions(value: DomainValidationList): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = this.set("DomainValidationOptions", js.Array(value :_*))
+    def setExtendedKeyUsages(value: ExtendedKeyUsageList): Self = StObject.set(x, "ExtendedKeyUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainValidationOptions(value: DomainValidationList): Self = this.set("DomainValidationOptions", value.asInstanceOf[js.Any])
+    def setExtendedKeyUsagesUndefined: Self = StObject.set(x, "ExtendedKeyUsages", js.undefined)
     
     @scala.inline
-    def deleteDomainValidationOptions: Self = this.set("DomainValidationOptions", js.undefined)
+    def setExtendedKeyUsagesVarargs(value: ExtendedKeyUsage*): Self = StObject.set(x, "ExtendedKeyUsages", js.Array(value :_*))
     
     @scala.inline
-    def setExtendedKeyUsagesVarargs(value: ExtendedKeyUsage*): Self = this.set("ExtendedKeyUsages", js.Array(value :_*))
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedKeyUsages(value: ExtendedKeyUsageList): Self = this.set("ExtendedKeyUsages", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteExtendedKeyUsages: Self = this.set("ExtendedKeyUsages", js.undefined)
+    def setImportedAt(value: TStamp): Self = StObject.set(x, "ImportedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setImportedAtUndefined: Self = StObject.set(x, "ImportedAt", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setInUseBy(value: InUseList): Self = StObject.set(x, "InUseBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedAt(value: TStamp): Self = this.set("ImportedAt", value.asInstanceOf[js.Any])
+    def setInUseByUndefined: Self = StObject.set(x, "InUseBy", js.undefined)
     
     @scala.inline
-    def deleteImportedAt: Self = this.set("ImportedAt", js.undefined)
+    def setInUseByVarargs(value: String*): Self = StObject.set(x, "InUseBy", js.Array(value :_*))
     
     @scala.inline
-    def setInUseByVarargs(value: String*): Self = this.set("InUseBy", js.Array(value :_*))
+    def setIssuedAt(value: TStamp): Self = StObject.set(x, "IssuedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInUseBy(value: InUseList): Self = this.set("InUseBy", value.asInstanceOf[js.Any])
+    def setIssuedAtUndefined: Self = StObject.set(x, "IssuedAt", js.undefined)
     
     @scala.inline
-    def deleteInUseBy: Self = this.set("InUseBy", js.undefined)
+    def setIssuer(value: String): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuedAt(value: TStamp): Self = this.set("IssuedAt", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
     
     @scala.inline
-    def deleteIssuedAt: Self = this.set("IssuedAt", js.undefined)
+    def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "KeyAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    def setKeyAlgorithmUndefined: Self = StObject.set(x, "KeyAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+    def setKeyUsages(value: KeyUsageList): Self = StObject.set(x, "KeyUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAlgorithm(value: KeyAlgorithm): Self = this.set("KeyAlgorithm", value.asInstanceOf[js.Any])
+    def setKeyUsagesUndefined: Self = StObject.set(x, "KeyUsages", js.undefined)
     
     @scala.inline
-    def deleteKeyAlgorithm: Self = this.set("KeyAlgorithm", js.undefined)
+    def setKeyUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "KeyUsages", js.Array(value :_*))
     
     @scala.inline
-    def setKeyUsagesVarargs(value: KeyUsage*): Self = this.set("KeyUsages", js.Array(value :_*))
+    def setNotAfter(value: TStamp): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyUsages(value: KeyUsageList): Self = this.set("KeyUsages", value.asInstanceOf[js.Any])
+    def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
     @scala.inline
-    def deleteKeyUsages: Self = this.set("KeyUsages", js.undefined)
+    def setNotBefore(value: TStamp): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfter(value: TStamp): Self = this.set("NotAfter", value.asInstanceOf[js.Any])
+    def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
     
     @scala.inline
-    def deleteNotAfter: Self = this.set("NotAfter", js.undefined)
+    def setOptions(value: CertificateOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotBefore(value: TStamp): Self = this.set("NotBefore", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     @scala.inline
-    def deleteNotBefore: Self = this.set("NotBefore", js.undefined)
+    def setRenewalEligibility(value: RenewalEligibility): Self = StObject.set(x, "RenewalEligibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: CertificateOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setRenewalEligibilityUndefined: Self = StObject.set(x, "RenewalEligibility", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("Options", js.undefined)
+    def setRenewalSummary(value: RenewalSummary): Self = StObject.set(x, "RenewalSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalEligibility(value: RenewalEligibility): Self = this.set("RenewalEligibility", value.asInstanceOf[js.Any])
+    def setRenewalSummaryUndefined: Self = StObject.set(x, "RenewalSummary", js.undefined)
     
     @scala.inline
-    def deleteRenewalEligibility: Self = this.set("RenewalEligibility", js.undefined)
+    def setRevocationReason(value: RevocationReason): Self = StObject.set(x, "RevocationReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalSummary(value: RenewalSummary): Self = this.set("RenewalSummary", value.asInstanceOf[js.Any])
+    def setRevocationReasonUndefined: Self = StObject.set(x, "RevocationReason", js.undefined)
     
     @scala.inline
-    def deleteRenewalSummary: Self = this.set("RenewalSummary", js.undefined)
+    def setRevokedAt(value: TStamp): Self = StObject.set(x, "RevokedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocationReason(value: RevocationReason): Self = this.set("RevocationReason", value.asInstanceOf[js.Any])
+    def setRevokedAtUndefined: Self = StObject.set(x, "RevokedAt", js.undefined)
     
     @scala.inline
-    def deleteRevocationReason: Self = this.set("RevocationReason", js.undefined)
+    def setSerial(value: String): Self = StObject.set(x, "Serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevokedAt(value: TStamp): Self = this.set("RevokedAt", value.asInstanceOf[js.Any])
+    def setSerialUndefined: Self = StObject.set(x, "Serial", js.undefined)
     
     @scala.inline
-    def deleteRevokedAt: Self = this.set("RevokedAt", js.undefined)
+    def setSignatureAlgorithm(value: String): Self = StObject.set(x, "SignatureAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerial(value: String): Self = this.set("Serial", value.asInstanceOf[js.Any])
+    def setSignatureAlgorithmUndefined: Self = StObject.set(x, "SignatureAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteSerial: Self = this.set("Serial", js.undefined)
+    def setStatus(value: CertificateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureAlgorithm(value: String): Self = this.set("SignatureAlgorithm", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSignatureAlgorithm: Self = this.set("SignatureAlgorithm", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: CertificateStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setSubjectAlternativeNames(value: DomainList): Self = StObject.set(x, "SubjectAlternativeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "SubjectAlternativeNames", js.undefined)
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = StObject.set(x, "SubjectAlternativeNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteSubject: Self = this.set("Subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
     @scala.inline
-    def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = this.set("SubjectAlternativeNames", js.Array(value :_*))
+    def setType(value: CertificateType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectAlternativeNames(value: DomainList): Self = this.set("SubjectAlternativeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectAlternativeNames: Self = this.set("SubjectAlternativeNames", js.undefined)
-    
-    @scala.inline
-    def setType(value: CertificateType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

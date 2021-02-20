@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminSetUserPasswordRequest extends js.Object {
+trait AdminSetUserPasswordRequest extends StObject {
   
   /**
     * The password for the user.
@@ -36,33 +37,21 @@ object AdminSetUserPasswordRequest {
   }
   
   @scala.inline
-  implicit class AdminSetUserPasswordRequestOps[Self <: AdminSetUserPasswordRequest] (val x: Self) extends AnyVal {
+  implicit class AdminSetUserPasswordRequestMutableBuilder[Self <: AdminSetUserPasswordRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: PasswordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermanent(value: BooleanType): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermanentUndefined: Self = StObject.set(x, "Permanent", js.undefined)
     
     @scala.inline
-    def setPassword(value: PasswordType): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermanent(value: BooleanType): Self = this.set("Permanent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermanent: Self = this.set("Permanent", js.undefined)
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,81 +150,69 @@ object IgGridFilteringColumnSetting {
   }
   
   @scala.inline
-  implicit class IgGridFilteringColumnSettingOps[Self <: IgGridFilteringColumnSetting] (val x: Self) extends AnyVal {
+  implicit class IgGridFilteringColumnSettingMutableBuilder[Self <: IgGridFilteringColumnSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFiltering(value: Boolean): Self = this.set("allowFiltering", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def deleteAllowFiltering: Self = this.set("allowFiltering", js.undefined)
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setCondition(value: String | Boolean): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setConditionList(value: js.Array[_]): Self = StObject.set(x, "conditionList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    def setConditionListUndefined: Self = StObject.set(x, "conditionList", js.undefined)
     
     @scala.inline
-    def setCondition(value: String | Boolean): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setConditionListVarargs(value: js.Any*): Self = StObject.set(x, "conditionList", js.Array(value :_*))
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def setConditionListVarargs(value: js.Any*): Self = this.set("conditionList", js.Array(value :_*))
+    def setCustomConditions(value: js.Any): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionList(value: js.Array[_]): Self = this.set("conditionList", value.asInstanceOf[js.Any])
+    def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
     
     @scala.inline
-    def deleteConditionList: Self = this.set("conditionList", js.undefined)
+    def setDefaultExpressions(value: IgGridFilteringColumnSettingDefaultExpressions): Self = StObject.set(x, "defaultExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomConditions(value: js.Any): Self = this.set("customConditions", value.asInstanceOf[js.Any])
+    def setDefaultExpressionsUndefined: Self = StObject.set(x, "defaultExpressions", js.undefined)
     
     @scala.inline
-    def deleteCustomConditions: Self = this.set("customConditions", js.undefined)
+    def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultExpressions(value: IgGridFilteringColumnSettingDefaultExpressions): Self = this.set("defaultExpressions", value.asInstanceOf[js.Any])
+    def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultExpressions: Self = this.set("defaultExpressions", js.undefined)
+    def setEditorProvider(value: js.Any): Self = StObject.set(x, "editorProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorOptions(value: js.Any): Self = this.set("editorOptions", value.asInstanceOf[js.Any])
+    def setEditorProviderUndefined: Self = StObject.set(x, "editorProvider", js.undefined)
     
     @scala.inline
-    def deleteEditorOptions: Self = this.set("editorOptions", js.undefined)
+    def setEditorType(value: String): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorProvider(value: js.Any): Self = this.set("editorProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditorProvider: Self = this.set("editorProvider", js.undefined)
-    
-    @scala.inline
-    def setEditorType(value: String): Self = this.set("editorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditorType: Self = this.set("editorType", js.undefined)
+    def setEditorTypeUndefined: Self = StObject.set(x, "editorType", js.undefined)
   }
 }

@@ -1,15 +1,12 @@
 package typings.babylonjs
 
 import typings.babylonjs.deviceEnumsMod.DeviceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/DeviceInput/InputDevices/deviceTypes", JSImport.Namespace)
-@js.native
-object deviceTypesMod extends js.Object {
-  
-  trait _DeviceInput[T /* <: DeviceType */] extends js.Object
+object deviceTypesMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.babylonjs.deviceEnumsMod.SwitchInput
@@ -19,4 +16,6 @@ object deviceTypesMod extends js.Object {
     - scala.Double
   */
   type DeviceInput[T /* <: DeviceType */] = _DeviceInput[T] | Double
+  
+  trait _DeviceInput[T /* <: DeviceType */] extends StObject
 }

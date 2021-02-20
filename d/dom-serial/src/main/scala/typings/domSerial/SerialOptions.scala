@@ -1,11 +1,12 @@
 package typings.domSerial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialOptions extends js.Object {
+trait SerialOptions extends StObject {
   
   var baudRate: Double = js.native
   
@@ -28,51 +29,39 @@ object SerialOptions {
   }
   
   @scala.inline
-  implicit class SerialOptionsOps[Self <: SerialOptions] (val x: Self) extends AnyVal {
+  implicit class SerialOptionsMutableBuilder[Self <: SerialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
     @scala.inline
-    def setBaudRate(value: Double): Self = this.set("baudRate", value.asInstanceOf[js.Any])
+    def setDataBits(value: Double): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferSize(value: Double): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
+    def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
     
     @scala.inline
-    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    def setFlowControl(value: FlowControlType): Self = StObject.set(x, "flowControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBits(value: Double): Self = this.set("dataBits", value.asInstanceOf[js.Any])
+    def setFlowControlUndefined: Self = StObject.set(x, "flowControl", js.undefined)
     
     @scala.inline
-    def deleteDataBits: Self = this.set("dataBits", js.undefined)
+    def setParity(value: ParityType): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowControl(value: FlowControlType): Self = this.set("flowControl", value.asInstanceOf[js.Any])
+    def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
     
     @scala.inline
-    def deleteFlowControl: Self = this.set("flowControl", js.undefined)
+    def setStopBits(value: Double): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParity(value: ParityType): Self = this.set("parity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParity: Self = this.set("parity", js.undefined)
-    
-    @scala.inline
-    def setStopBits(value: Double): Self = this.set("stopBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopBits: Self = this.set("stopBits", js.undefined)
+    def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
   }
 }

@@ -15,6 +15,7 @@ import typings.reactNative.reactNativeStrings.date
 import typings.reactNative.reactNativeStrings.datetime
 import typings.reactNative.reactNativeStrings.time
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,75 +90,63 @@ object DatePickerIOSProps {
   }
   
   @scala.inline
-  implicit class DatePickerIOSPropsOps[Self <: DatePickerIOSProps] (val x: Self) extends AnyVal {
+  implicit class DatePickerIOSPropsMutableBuilder[Self <: DatePickerIOSProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateNull: Self = StObject.set(x, "date", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setOnDateChange(value: Date => Unit): Self = this.set("onDateChange", js.Any.fromFunction1(value))
+    def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setInitialDateNull: Self = StObject.set(x, "initialDate", null)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
     
     @scala.inline
-    def setDateNull: Self = this.set("date", null)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDate(value: Date): Self = this.set("initialDate", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteInitialDate: Self = this.set("initialDate", js.undefined)
+    def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDateNull: Self = this.set("initialDate", null)
+    def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
     
     @scala.inline
-    def setMaximumDate(value: Date): Self = this.set("maximumDate", value.asInstanceOf[js.Any])
+    def setMinuteInterval(value: `1` | `2` | `3` | `4` | `5` | `6` | `10` | `12` | `15` | `20` | `30`): Self = StObject.set(x, "minuteInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumDate: Self = this.set("maximumDate", js.undefined)
+    def setMinuteIntervalUndefined: Self = StObject.set(x, "minuteInterval", js.undefined)
     
     @scala.inline
-    def setMinimumDate(value: Date): Self = this.set("minimumDate", value.asInstanceOf[js.Any])
+    def setMode(value: date | time | datetime): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumDate: Self = this.set("minimumDate", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setMinuteInterval(value: `1` | `2` | `3` | `4` | `5` | `6` | `10` | `12` | `15` | `20` | `30`): Self = this.set("minuteInterval", value.asInstanceOf[js.Any])
+    def setOnDateChange(value: Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMinuteInterval: Self = this.set("minuteInterval", js.undefined)
+    def setTimeZoneOffsetInMinutes(value: Double): Self = StObject.set(x, "timeZoneOffsetInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: date | time | datetime): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setTimeZoneOffsetInMinutes(value: Double): Self = this.set("timeZoneOffsetInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZoneOffsetInMinutes: Self = this.set("timeZoneOffsetInMinutes", js.undefined)
+    def setTimeZoneOffsetInMinutesUndefined: Self = StObject.set(x, "timeZoneOffsetInMinutes", js.undefined)
   }
 }

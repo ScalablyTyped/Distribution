@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatColorCriterionType extends js.Object
+sealed trait ConditionalFormatColorCriterionType extends StObject
 /**
   *
   * Represents the types of color criterion for conditional formatting.
@@ -14,7 +15,7 @@ sealed trait ConditionalFormatColorCriterionType extends js.Object
   */
 @JSGlobal("Excel.ConditionalFormatColorCriterionType")
 @js.native
-object ConditionalFormatColorCriterionType extends js.Object {
+object ConditionalFormatColorCriterionType extends StObject {
   
   @js.native
   sealed trait formula extends ConditionalFormatColorCriterionType

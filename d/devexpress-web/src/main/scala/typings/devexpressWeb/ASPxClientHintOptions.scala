@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The hint control's options.
   */
 @js.native
-trait ASPxClientHintOptions extends js.Object {
+trait ASPxClientHintOptions extends StObject {
   
   /**
     * Gets or sets a value that specifies whether to flip the hint to the opposite position relative to the target element.
@@ -158,87 +159,75 @@ object ASPxClientHintOptions {
   }
   
   @scala.inline
-  implicit class ASPxClientHintOptionsOps[Self <: ASPxClientHintOptions] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHintOptionsMutableBuilder[Self <: ASPxClientHintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFlip(value: Boolean): Self = StObject.set(x, "allowFlip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowShift(value: Boolean): Self = StObject.set(x, "allowShift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFlip(value: Boolean): Self = this.set("allowFlip", value.asInstanceOf[js.Any])
+    def setAppearAfter(value: Double): Self = StObject.set(x, "appearAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowShift(value: Boolean): Self = this.set("allowShift", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearAfter(value: Double): Self = this.set("appearAfter", value.asInstanceOf[js.Any])
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setContentAttribute(value: String): Self = StObject.set(x, "contentAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDisappearAfter(value: Double): Self = StObject.set(x, "disappearAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAttribute(value: String): Self = this.set("contentAttribute", value.asInstanceOf[js.Any])
+    def setHideNativeTooltipForNestedTitleAttributes(value: Boolean): Self = StObject.set(x, "hideNativeTooltipForNestedTitleAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisappearAfter(value: Double): Self = this.set("disappearAfter", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOnHiding(value: ASPxClientEvent[ASPxClientHintHidingEventHandler]): Self = StObject.set(x, "onHiding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideNativeTooltipForNestedTitleAttributes(value: Boolean): Self = this.set("hideNativeTooltipForNestedTitleAttributes", value.asInstanceOf[js.Any])
+    def setOnShowing(value: ASPxClientEvent[ASPxClientHintShowingEventHandler]): Self = StObject.set(x, "onShowing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHiding(value: ASPxClientEvent[ASPxClientHintHidingEventHandler]): Self = this.set("onHiding", value.asInstanceOf[js.Any])
+    def setShowCallout(value: Boolean): Self = StObject.set(x, "showCallout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShowing(value: ASPxClientEvent[ASPxClientHintShowingEventHandler]): Self = this.set("onShowing", value.asInstanceOf[js.Any])
+    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCallout(value: Boolean): Self = this.set("showCallout", value.asInstanceOf[js.Any])
+    def setTitleAttribute(value: String): Self = StObject.set(x, "titleAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTitle(value: Boolean): Self = this.set("showTitle", value.asInstanceOf[js.Any])
+    def setTriggerAction(value: String): Self = StObject.set(x, "triggerAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleAttribute(value: String): Self = this.set("titleAttribute", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerAction(value: String): Self = this.set("triggerAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

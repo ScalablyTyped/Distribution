@@ -2,12 +2,13 @@ package typings.cordovaPluginCanvascamera
 
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frame extends js.Object {
+trait Frame extends StObject {
   
   var dHeight: Double = js.native
   
@@ -55,54 +56,42 @@ object Frame {
   }
   
   @scala.inline
-  implicit class FrameOps[Self <: Frame] (val x: Self) extends AnyVal {
+  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDHeight(value: Double): Self = StObject.set(x, "dHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDWidth(value: Double): Self = StObject.set(x, "dWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDHeight(value: Double): Self = this.set("dHeight", value.asInstanceOf[js.Any])
+    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDWidth(value: Double): Self = this.set("dWidth", value.asInstanceOf[js.Any])
+    def setElement(value: HTMLCanvasElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    def setInitialize(value: () => Frame): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setElement(value: HTMLCanvasElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setRecycle(value: () => Unit): Self = StObject.set(x, "recycle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImage(value: HTMLImageElement): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setSHeight(value: Double): Self = StObject.set(x, "sHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: () => Frame): Self = this.set("initialize", js.Any.fromFunction0(value))
+    def setSWidth(value: Double): Self = StObject.set(x, "sWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecycle(value: () => Unit): Self = this.set("recycle", js.Any.fromFunction0(value))
+    def setSx(value: Double): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHeight(value: Double): Self = this.set("sHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSWidth(value: Double): Self = this.set("sWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSx(value: Double): Self = this.set("sx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSy(value: Double): Self = this.set("sy", value.asInstanceOf[js.Any])
+    def setSy(value: Double): Self = StObject.set(x, "sy", value.asInstanceOf[js.Any])
   }
 }

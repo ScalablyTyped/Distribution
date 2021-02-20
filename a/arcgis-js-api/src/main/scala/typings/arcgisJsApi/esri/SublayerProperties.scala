@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
 import typings.arcgisJsApi.arcgisJsApiStrings.hide
 import typings.arcgisJsApi.arcgisJsApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,138 +153,126 @@ object SublayerProperties {
   }
   
   @scala.inline
-  implicit class SublayerPropertiesOps[Self <: SublayerProperties] (val x: Self) extends AnyVal {
+  implicit class SublayerPropertiesMutableBuilder[Self <: SublayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionExpression(value: String): Self = this.set("definitionExpression", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDefinitionExpression: Self = this.set("definitionExpression", js.undefined)
+    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
     @scala.inline
-    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = this.set("labelingInfo", js.Array(value :_*))
+    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = this.set("labelingInfo", value.asInstanceOf[js.Any])
+    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
     @scala.inline
-    def deleteLabelingInfo: Self = this.set("labelingInfo", js.undefined)
+    def setLayer(value: MapImageLayerProperties | TileLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVisible(value: Boolean): Self = this.set("labelsVisible", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteLabelsVisible: Self = this.set("labelsVisible", js.undefined)
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: MapImageLayerProperties | TileLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setListMode(value: show | hide | `hide-children`): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
+    def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
     
     @scala.inline
-    def deleteLegendEnabled: Self = this.set("legendEnabled", js.undefined)
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListMode(value: show | hide | `hide-children`): Self = this.set("listMode", value.asInstanceOf[js.Any])
+    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
     @scala.inline
-    def deleteListMode: Self = this.set("listMode", js.undefined)
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
+    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
     @scala.inline
-    def deleteMaxScale: Self = this.set("maxScale", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMinScale: Self = this.set("minScale", js.undefined)
+    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
     @scala.inline
-    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
+    def setSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: RendererProperties): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def setSource(value: DynamicMapLayer | DynamicDataLayer): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSublayers(value: CollectionProperties[SublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setSublayersVarargs(value: SublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
     @scala.inline
-    def setSublayersVarargs(value: SublayerProperties*): Self = this.set("sublayers", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublayers(value: CollectionProperties[SublayerProperties]): Self = this.set("sublayers", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSublayers: Self = this.set("sublayers", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

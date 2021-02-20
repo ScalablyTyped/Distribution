@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataObject extends js.Object {
+trait DataObject extends StObject {
   
   def Clear(): Unit = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinuousBackupsDescription extends js.Object {
+trait ContinuousBackupsDescription extends StObject {
   
   /**
     *  ContinuousBackupsStatus can be one of the following states: ENABLED, DISABLED
@@ -26,27 +27,15 @@ object ContinuousBackupsDescription {
   }
   
   @scala.inline
-  implicit class ContinuousBackupsDescriptionOps[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
+  implicit class ContinuousBackupsDescriptionMutableBuilder[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuousBackupsStatus(value: ContinuousBackupsStatus): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPointInTimeRecoveryDescription(value: PointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContinuousBackupsStatus(value: ContinuousBackupsStatus): Self = this.set("ContinuousBackupsStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointInTimeRecoveryDescription(value: PointInTimeRecoveryDescription): Self = this.set("PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointInTimeRecoveryDescription: Self = this.set("PointInTimeRecoveryDescription", js.undefined)
+    def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/takeWhile", JSImport.Namespace)
-@js.native
-object operatorsTakeWhileMod extends js.Object {
+object operatorsTakeWhileMod {
   
+  @JSImport("rxjs/operators/takeWhile", "takeWhile")
+  @js.native
   def takeWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutCodeBindingRequest extends js.Object {
+trait PutCodeBindingRequest extends StObject {
   
   /**
     * The language of the code binding.
@@ -36,33 +37,21 @@ object PutCodeBindingRequest {
   }
   
   @scala.inline
-  implicit class PutCodeBindingRequestOps[Self <: PutCodeBindingRequest] (val x: Self) extends AnyVal {
+  implicit class PutCodeBindingRequestMutableBuilder[Self <: PutCodeBindingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: string): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: string): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaVersion(value: string): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
+    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
   }
 }

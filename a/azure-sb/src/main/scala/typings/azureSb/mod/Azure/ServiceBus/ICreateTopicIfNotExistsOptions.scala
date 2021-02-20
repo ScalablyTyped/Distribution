@@ -1,5 +1,6 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,33 +41,21 @@ object ICreateTopicIfNotExistsOptions {
   }
   
   @scala.inline
-  implicit class ICreateTopicIfNotExistsOptionsOps[Self <: ICreateTopicIfNotExistsOptions] (val x: Self) extends AnyVal {
+  implicit class ICreateTopicIfNotExistsOptionsMutableBuilder[Self <: ICreateTopicIfNotExistsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxCorrelationFiltersPerTopic(value: Double): Self = StObject.set(x, "MaxCorrelationFiltersPerTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = this.set("EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    def setMaxSqlFiltersPerTopic(value: Double): Self = StObject.set(x, "MaxSqlFiltersPerTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = this.set("EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxCorrelationFiltersPerTopic(value: Double): Self = this.set("MaxCorrelationFiltersPerTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxSqlFiltersPerTopic(value: Double): Self = this.set("MaxSqlFiltersPerTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxSubscriptionsPerTopic(value: Double): Self = this.set("MaxSubscriptionsPerTopic", value.asInstanceOf[js.Any])
+    def setMaxSubscriptionsPerTopic(value: Double): Self = StObject.set(x, "MaxSubscriptionsPerTopic", value.asInstanceOf[js.Any])
   }
 }

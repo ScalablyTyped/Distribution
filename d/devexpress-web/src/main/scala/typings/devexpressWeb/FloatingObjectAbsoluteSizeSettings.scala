@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains absolute size settings for floating objects.
   */
 @js.native
-trait FloatingObjectAbsoluteSizeSettings extends js.Object {
+trait FloatingObjectAbsoluteSizeSettings extends StObject {
   
   /**
     * Gets or sets a floating object's absolute height.
@@ -29,24 +30,12 @@ object FloatingObjectAbsoluteSizeSettings {
   }
   
   @scala.inline
-  implicit class FloatingObjectAbsoluteSizeSettingsOps[Self <: FloatingObjectAbsoluteSizeSettings] (val x: Self) extends AnyVal {
+  implicit class FloatingObjectAbsoluteSizeSettingsMutableBuilder[Self <: FloatingObjectAbsoluteSizeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteHeight(value: Double): Self = StObject.set(x, "absoluteHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbsoluteHeight(value: Double): Self = this.set("absoluteHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAbsoluteWidth(value: Double): Self = this.set("absoluteWidth", value.asInstanceOf[js.Any])
+    def setAbsoluteWidth(value: Double): Self = StObject.set(x, "absoluteWidth", value.asInstanceOf[js.Any])
   }
 }

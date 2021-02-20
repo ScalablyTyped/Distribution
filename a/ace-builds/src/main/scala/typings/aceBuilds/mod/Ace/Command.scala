@@ -1,12 +1,13 @@
 package typings.aceBuilds.mod.Ace
 
 import typings.aceBuilds.anon.Mac
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Command extends js.Object {
+trait Command extends StObject {
   
   var bindKey: js.UndefOr[String | Mac] = js.native
   

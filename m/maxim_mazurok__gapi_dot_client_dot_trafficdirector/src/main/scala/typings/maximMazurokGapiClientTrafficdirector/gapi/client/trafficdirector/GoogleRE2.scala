@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleRE2 extends js.Object {
+trait GoogleRE2 extends StObject {
   
   /**
     * This field controls the RE2 "program size" which is a rough estimate of how complex a compiled regex is to evaluate. A regex that has a program size greater than the configured
@@ -23,24 +24,12 @@ object GoogleRE2 {
   }
   
   @scala.inline
-  implicit class GoogleRE2Ops[Self <: GoogleRE2] (val x: Self) extends AnyVal {
+  implicit class GoogleRE2MutableBuilder[Self <: GoogleRE2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxProgramSize(value: Double): Self = StObject.set(x, "maxProgramSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxProgramSize(value: Double): Self = this.set("maxProgramSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxProgramSize: Self = this.set("maxProgramSize", js.undefined)
+    def setMaxProgramSizeUndefined: Self = StObject.set(x, "maxProgramSize", js.undefined)
   }
 }

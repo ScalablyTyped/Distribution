@@ -1,6 +1,7 @@
 package typings.expo.anon
 
 import typings.expo.appLoadingMod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,42 +26,30 @@ object AutoHideSplash {
   }
   
   @scala.inline
-  implicit class AutoHideSplashOps[Self <: AutoHideSplash] (val x: Self) extends AnyVal {
+  implicit class AutoHideSplashMutableBuilder[Self <: AutoHideSplash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoHideSplash(value: Boolean): Self = StObject.set(x, "autoHideSplash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoHideSplashUndefined: Self = StObject.set(x, "autoHideSplash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnError(value: /* error */ typings.std.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoHideSplash(value: Boolean): Self = this.set("autoHideSplash", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteAutoHideSplash: Self = this.set("autoHideSplash", js.undefined)
+    def setOnFinish(value: () => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* error */ typings.std.Error => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setStartAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnFinish(value: () => Unit): Self = this.set("onFinish", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnFinish: Self = this.set("onFinish", js.undefined)
-    
-    @scala.inline
-    def setStartAsync(value: () => js.Promise[Unit]): Self = this.set("startAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStartAsync: Self = this.set("startAsync", js.undefined)
+    def setStartAsyncUndefined: Self = StObject.set(x, "startAsync", js.undefined)
   }
 }

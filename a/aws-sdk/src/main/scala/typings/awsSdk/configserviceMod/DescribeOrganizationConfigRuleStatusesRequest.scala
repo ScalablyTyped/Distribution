@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOrganizationConfigRuleStatusesRequest extends js.Object {
+trait DescribeOrganizationConfigRuleStatusesRequest extends StObject {
   
   /**
     * The maximum number of OrganizationConfigRuleStatuses returned on each page. If you do no specify a number, AWS Config uses the default. The default is 100.
@@ -31,39 +32,27 @@ object DescribeOrganizationConfigRuleStatusesRequest {
   }
   
   @scala.inline
-  implicit class DescribeOrganizationConfigRuleStatusesRequestOps[Self <: DescribeOrganizationConfigRuleStatusesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeOrganizationConfigRuleStatusesRequestMutableBuilder[Self <: DescribeOrganizationConfigRuleStatusesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: CosmosPageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: CosmosPageLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setOrganizationConfigRuleNames(value: OrganizationConfigRuleNames): Self = StObject.set(x, "OrganizationConfigRuleNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOrganizationConfigRuleNamesUndefined: Self = StObject.set(x, "OrganizationConfigRuleNames", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = this.set("OrganizationConfigRuleNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrganizationConfigRuleNames(value: OrganizationConfigRuleNames): Self = this.set("OrganizationConfigRuleNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationConfigRuleNames: Self = this.set("OrganizationConfigRuleNames", js.undefined)
+    def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "OrganizationConfigRuleNames", js.Array(value :_*))
   }
 }

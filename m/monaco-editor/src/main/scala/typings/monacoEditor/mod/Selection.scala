@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,13 +51,13 @@ class Selection protected () extends Range {
   val selectionStartLineNumber: Double = js.native
 }
 /* static members */
-@JSImport("monaco-editor", "Selection")
-@js.native
-object Selection extends js.Object {
+object Selection {
   
   /**
     * Create with a direction.
     */
+  @JSImport("monaco-editor", "Selection.createWithDirection")
+  @js.native
   def createWithDirection(
     startLineNumber: Double,
     startColumn: Double,
@@ -68,26 +69,38 @@ object Selection extends js.Object {
   /**
     * Create a `Selection` from one or two positions
     */
+  @JSImport("monaco-editor", "Selection.fromPositions")
+  @js.native
   def fromPositions(start: IPosition): Selection = js.native
+  @JSImport("monaco-editor", "Selection.fromPositions")
+  @js.native
   def fromPositions(start: IPosition, end: IPosition): Selection = js.native
   
   /**
     * Test if `obj` is an `ISelection`.
     */
+  @JSImport("monaco-editor", "Selection.isISelection")
+  @js.native
   def isISelection(obj: js.Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = js.native
   
   /**
     * Create a `Selection` from an `ISelection`.
     */
+  @JSImport("monaco-editor", "Selection.liftSelection")
+  @js.native
   def liftSelection(sel: ISelection): Selection = js.native
   
   /**
     * `a` equals `b`.
     */
+  @JSImport("monaco-editor", "Selection.selectionsArrEqual")
+  @js.native
   def selectionsArrEqual(a: js.Array[ISelection], b: js.Array[ISelection]): Boolean = js.native
   
   /**
     * Test if the two selections are equal.
     */
+  @JSImport("monaco-editor", "Selection.selectionsEqual")
+  @js.native
   def selectionsEqual(a: ISelection, b: ISelection): Boolean = js.native
 }

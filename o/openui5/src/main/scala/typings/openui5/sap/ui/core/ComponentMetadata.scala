@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentMetadata extends js.Object {
+trait ComponentMetadata extends StObject {
   
   /**
     * Returns the name of the Component (which is the namespace only with the module name)

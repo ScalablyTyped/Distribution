@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimulationJobSummary extends js.Object {
+trait SimulationJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the simulation job.
@@ -51,69 +52,57 @@ object SimulationJobSummary {
   }
   
   @scala.inline
-  implicit class SimulationJobSummaryOps[Self <: SimulationJobSummary] (val x: Self) extends AnyVal {
+  implicit class SimulationJobSummaryMutableBuilder[Self <: SimulationJobSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceNames(value: DataSourceNames): Self = StObject.set(x, "dataSourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDataSourceNamesUndefined: Self = StObject.set(x, "dataSourceNames", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDataSourceNamesVarargs(value: Name*): Self = StObject.set(x, "dataSourceNames", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceNamesVarargs(value: Name*): Self = this.set("dataSourceNames", js.Array(value :_*))
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceNames(value: DataSourceNames): Self = this.set("dataSourceNames", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteDataSourceNames: Self = this.set("dataSourceNames", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setRobotApplicationNames(value: RobotApplicationNames): Self = StObject.set(x, "robotApplicationNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRobotApplicationNamesUndefined: Self = StObject.set(x, "robotApplicationNames", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRobotApplicationNamesVarargs(value: Name*): Self = StObject.set(x, "robotApplicationNames", js.Array(value :_*))
     
     @scala.inline
-    def setRobotApplicationNamesVarargs(value: Name*): Self = this.set("robotApplicationNames", js.Array(value :_*))
+    def setSimulationApplicationNames(value: SimulationApplicationNames): Self = StObject.set(x, "simulationApplicationNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRobotApplicationNames(value: RobotApplicationNames): Self = this.set("robotApplicationNames", value.asInstanceOf[js.Any])
+    def setSimulationApplicationNamesUndefined: Self = StObject.set(x, "simulationApplicationNames", js.undefined)
     
     @scala.inline
-    def deleteRobotApplicationNames: Self = this.set("robotApplicationNames", js.undefined)
+    def setSimulationApplicationNamesVarargs(value: Name*): Self = StObject.set(x, "simulationApplicationNames", js.Array(value :_*))
     
     @scala.inline
-    def setSimulationApplicationNamesVarargs(value: Name*): Self = this.set("simulationApplicationNames", js.Array(value :_*))
+    def setStatus(value: SimulationJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimulationApplicationNames(value: SimulationApplicationNames): Self = this.set("simulationApplicationNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimulationApplicationNames: Self = this.set("simulationApplicationNames", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SimulationJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

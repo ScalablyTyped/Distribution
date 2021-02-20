@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of a popup control's PopupWindow object.
   */
 @js.native
-trait ASPxClientPopupWindow extends js.Object {
+trait ASPxClientPopupWindow extends StObject {
   
   /**
     * Returns the URL pointing to the image displayed within the window footer.
@@ -116,63 +117,51 @@ object ASPxClientPopupWindow {
   }
   
   @scala.inline
-  implicit class ASPxClientPopupWindowOps[Self <: ASPxClientPopupWindow] (val x: Self) extends AnyVal {
+  implicit class ASPxClientPopupWindowMutableBuilder[Self <: ASPxClientPopupWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFooterImageUrl(value: () => String): Self = StObject.set(x, "GetFooterImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFooterNavigateUrl(value: () => String): Self = StObject.set(x, "GetFooterNavigateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFooterText(value: () => String): Self = StObject.set(x, "GetFooterText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFooterImageUrl(value: () => String): Self = this.set("GetFooterImageUrl", js.Any.fromFunction0(value))
+    def setGetHeaderImageUrl(value: () => String): Self = StObject.set(x, "GetHeaderImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFooterNavigateUrl(value: () => String): Self = this.set("GetFooterNavigateUrl", js.Any.fromFunction0(value))
+    def setGetHeaderNavigateUrl(value: () => String): Self = StObject.set(x, "GetHeaderNavigateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFooterText(value: () => String): Self = this.set("GetFooterText", js.Any.fromFunction0(value))
+    def setGetHeaderText(value: () => String): Self = StObject.set(x, "GetHeaderText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeaderImageUrl(value: () => String): Self = this.set("GetHeaderImageUrl", js.Any.fromFunction0(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHeaderNavigateUrl(value: () => String): Self = this.set("GetHeaderNavigateUrl", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHeaderText(value: () => String): Self = this.set("GetHeaderText", js.Any.fromFunction0(value))
+    def setPopupControl(value: ASPxClientPopupControl): Self = StObject.set(x, "popupControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFooterImageUrl(value: String => Unit): Self = this.set("SetFooterImageUrl", js.Any.fromFunction1(value))
+    def setSetFooterImageUrl(value: String => Unit): Self = StObject.set(x, "SetFooterImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFooterNavigateUrl(value: String => Unit): Self = this.set("SetFooterNavigateUrl", js.Any.fromFunction1(value))
+    def setSetFooterNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetFooterNavigateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFooterText(value: String => Unit): Self = this.set("SetFooterText", js.Any.fromFunction1(value))
+    def setSetFooterText(value: String => Unit): Self = StObject.set(x, "SetFooterText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeaderImageUrl(value: String => Unit): Self = this.set("SetHeaderImageUrl", js.Any.fromFunction1(value))
+    def setSetHeaderImageUrl(value: String => Unit): Self = StObject.set(x, "SetHeaderImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeaderNavigateUrl(value: String => Unit): Self = this.set("SetHeaderNavigateUrl", js.Any.fromFunction1(value))
+    def setSetHeaderNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetHeaderNavigateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeaderText(value: String => Unit): Self = this.set("SetHeaderText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopupControl(value: ASPxClientPopupControl): Self = this.set("popupControl", value.asInstanceOf[js.Any])
+    def setSetHeaderText(value: String => Unit): Self = StObject.set(x, "SetHeaderText", js.Any.fromFunction1(value))
   }
 }

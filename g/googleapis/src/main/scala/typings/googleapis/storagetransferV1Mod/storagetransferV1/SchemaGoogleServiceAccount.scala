@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google service account
   */
 @js.native
-trait SchemaGoogleServiceAccount extends js.Object {
+trait SchemaGoogleServiceAccount extends StObject {
   
   /**
     * Required.
@@ -24,24 +25,12 @@ object SchemaGoogleServiceAccount {
   }
   
   @scala.inline
-  implicit class SchemaGoogleServiceAccountOps[Self <: SchemaGoogleServiceAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleServiceAccountMutableBuilder[Self <: SchemaGoogleServiceAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountEmail(value: String): Self = this.set("accountEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountEmail: Self = this.set("accountEmail", js.undefined)
+    def setAccountEmailUndefined: Self = StObject.set(x, "accountEmail", js.undefined)
   }
 }

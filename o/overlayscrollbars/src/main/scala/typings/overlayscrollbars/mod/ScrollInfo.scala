@@ -1,12 +1,13 @@
 package typings.overlayscrollbars.mod
 
 import typings.overlayscrollbars.anon.XNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollInfo extends js.Object {
+trait ScrollInfo extends StObject {
   
   var handleLength: XNumber = js.native
   
@@ -48,48 +49,36 @@ object ScrollInfo {
   }
   
   @scala.inline
-  implicit class ScrollInfoOps[Self <: ScrollInfo] (val x: Self) extends AnyVal {
+  implicit class ScrollInfoMutableBuilder[Self <: ScrollInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleLength(value: XNumber): Self = StObject.set(x, "handleLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleLengthRatio(value: XNumber): Self = StObject.set(x, "handleLengthRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleOffset(value: XNumber): Self = StObject.set(x, "handleOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleLength(value: XNumber): Self = this.set("handleLength", value.asInstanceOf[js.Any])
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleLengthRatio(value: XNumber): Self = this.set("handleLengthRatio", value.asInstanceOf[js.Any])
+    def setIsRTLNormalized(value: Boolean): Self = StObject.set(x, "isRTLNormalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleOffset(value: XNumber): Self = this.set("handleOffset", value.asInstanceOf[js.Any])
+    def setMax(value: XNumber): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setPosition(value: XNumber): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTLNormalized(value: Boolean): Self = this.set("isRTLNormalized", value.asInstanceOf[js.Any])
+    def setRatio(value: XNumber): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: XNumber): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setSnappedHandleOffset(value: XNumber): Self = StObject.set(x, "snappedHandleOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: XNumber): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatio(value: XNumber): Self = this.set("ratio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnappedHandleOffset(value: XNumber): Self = this.set("snappedHandleOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackLength(value: XNumber): Self = this.set("trackLength", value.asInstanceOf[js.Any])
+    def setTrackLength(value: XNumber): Self = StObject.set(x, "trackLength", value.asInstanceOf[js.Any])
   }
 }

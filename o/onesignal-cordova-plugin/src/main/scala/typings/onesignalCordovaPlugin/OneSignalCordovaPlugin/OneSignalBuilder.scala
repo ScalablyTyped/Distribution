@@ -1,12 +1,13 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
 import typings.onesignalCordovaPlugin.anon.KOSSettingsKeyAutoPrompt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OneSignalBuilder extends js.Object {
+trait OneSignalBuilder extends StObject {
   
   def endInit(): Unit = js.native
   
@@ -33,33 +34,21 @@ object OneSignalBuilder {
   }
   
   @scala.inline
-  implicit class OneSignalBuilderOps[Self <: OneSignalBuilder] (val x: Self) extends AnyVal {
+  implicit class OneSignalBuilderMutableBuilder[Self <: OneSignalBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndInit(value: () => Unit): Self = StObject.set(x, "endInit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleNotificationOpened(value: js.Function1[/* json */ OSNotificationOpenedResult, Unit] => OneSignalBuilder): Self = StObject.set(x, "handleNotificationOpened", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleNotificationReceived(value: js.Function1[/* json */ OSNotification, Unit] => OneSignalBuilder): Self = StObject.set(x, "handleNotificationReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndInit(value: () => Unit): Self = this.set("endInit", js.Any.fromFunction0(value))
+    def setIOSSettings(value: KOSSettingsKeyAutoPrompt => OneSignalBuilder): Self = StObject.set(x, "iOSSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleNotificationOpened(value: js.Function1[/* json */ OSNotificationOpenedResult, Unit] => OneSignalBuilder): Self = this.set("handleNotificationOpened", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHandleNotificationReceived(value: js.Function1[/* json */ OSNotification, Unit] => OneSignalBuilder): Self = this.set("handleNotificationReceived", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIOSSettings(value: KOSSettingsKeyAutoPrompt => OneSignalBuilder): Self = this.set("iOSSettings", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInFocusDisplaying(value: OSDisplayType => OneSignalBuilder): Self = this.set("inFocusDisplaying", js.Any.fromFunction1(value))
+    def setInFocusDisplaying(value: OSDisplayType => OneSignalBuilder): Self = StObject.set(x, "inFocusDisplaying", js.Any.fromFunction1(value))
   }
 }

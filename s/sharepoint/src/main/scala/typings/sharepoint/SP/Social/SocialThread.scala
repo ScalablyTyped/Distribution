@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,51 +73,39 @@ object SocialThread {
   }
   
   @scala.inline
-  implicit class SocialThreadOps[Self <: SocialThread] (val x: Self) extends AnyVal {
+  implicit class SocialThreadMutableBuilder[Self <: SocialThread] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_actors(value: () => js.Array[SocialActor]): Self = StObject.set(x, "get_actors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_attributes(value: () => SocialThreadAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_actors(value: () => js.Array[SocialActor]): Self = this.set("get_actors", js.Any.fromFunction0(value))
+    def setGet_ownerIndex(value: () => Double): Self = StObject.set(x, "get_ownerIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_attributes(value: () => SocialThreadAttributes): Self = this.set("get_attributes", js.Any.fromFunction0(value))
+    def setGet_permalink(value: () => String): Self = StObject.set(x, "get_permalink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_id(value: () => String): Self = this.set("get_id", js.Any.fromFunction0(value))
+    def setGet_postReference(value: () => SocialPostReference): Self = StObject.set(x, "get_postReference", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_ownerIndex(value: () => Double): Self = this.set("get_ownerIndex", js.Any.fromFunction0(value))
+    def setGet_replies(value: () => js.Array[SocialPost]): Self = StObject.set(x, "get_replies", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_permalink(value: () => String): Self = this.set("get_permalink", js.Any.fromFunction0(value))
+    def setGet_rootPost(value: () => SocialPost): Self = StObject.set(x, "get_rootPost", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_postReference(value: () => SocialPostReference): Self = this.set("get_postReference", js.Any.fromFunction0(value))
+    def setGet_status(value: () => SocialStatusCode): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_replies(value: () => js.Array[SocialPost]): Self = this.set("get_replies", js.Any.fromFunction0(value))
+    def setGet_threadType(value: () => SocialThreadType): Self = StObject.set(x, "get_threadType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_rootPost(value: () => SocialPost): Self = this.set("get_rootPost", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_status(value: () => SocialStatusCode): Self = this.set("get_status", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_threadType(value: () => SocialThreadType): Self = this.set("get_threadType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_totalReplyCount(value: () => Double): Self = this.set("get_totalReplyCount", js.Any.fromFunction0(value))
+    def setGet_totalReplyCount(value: () => Double): Self = StObject.set(x, "get_totalReplyCount", js.Any.fromFunction0(value))
   }
 }

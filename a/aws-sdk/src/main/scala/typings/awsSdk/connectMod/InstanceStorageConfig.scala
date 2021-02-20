@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceStorageConfig extends js.Object {
+trait InstanceStorageConfig extends StObject {
   
   /**
     * The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.
@@ -46,51 +47,39 @@ object InstanceStorageConfig {
   }
   
   @scala.inline
-  implicit class InstanceStorageConfigOps[Self <: InstanceStorageConfig] (val x: Self) extends AnyVal {
+  implicit class InstanceStorageConfigMutableBuilder[Self <: InstanceStorageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKinesisFirehoseConfig(value: KinesisFirehoseConfig): Self = StObject.set(x, "KinesisFirehoseConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageType(value: StorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseConfigUndefined: Self = StObject.set(x, "KinesisFirehoseConfig", js.undefined)
     
     @scala.inline
-    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setKinesisStreamConfig(value: KinesisStreamConfig): Self = StObject.set(x, "KinesisStreamConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    def setKinesisStreamConfigUndefined: Self = StObject.set(x, "KinesisStreamConfig", js.undefined)
     
     @scala.inline
-    def setKinesisFirehoseConfig(value: KinesisFirehoseConfig): Self = this.set("KinesisFirehoseConfig", value.asInstanceOf[js.Any])
+    def setKinesisVideoStreamConfig(value: KinesisVideoStreamConfig): Self = StObject.set(x, "KinesisVideoStreamConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisFirehoseConfig: Self = this.set("KinesisFirehoseConfig", js.undefined)
+    def setKinesisVideoStreamConfigUndefined: Self = StObject.set(x, "KinesisVideoStreamConfig", js.undefined)
     
     @scala.inline
-    def setKinesisStreamConfig(value: KinesisStreamConfig): Self = this.set("KinesisStreamConfig", value.asInstanceOf[js.Any])
+    def setS3Config(value: S3Config): Self = StObject.set(x, "S3Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisStreamConfig: Self = this.set("KinesisStreamConfig", js.undefined)
+    def setS3ConfigUndefined: Self = StObject.set(x, "S3Config", js.undefined)
     
     @scala.inline
-    def setKinesisVideoStreamConfig(value: KinesisVideoStreamConfig): Self = this.set("KinesisVideoStreamConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisVideoStreamConfig: Self = this.set("KinesisVideoStreamConfig", js.undefined)
-    
-    @scala.inline
-    def setS3Config(value: S3Config): Self = this.set("S3Config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Config: Self = this.set("S3Config", js.undefined)
+    def setStorageType(value: StorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
   }
 }

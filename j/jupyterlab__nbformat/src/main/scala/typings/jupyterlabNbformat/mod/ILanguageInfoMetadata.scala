@@ -1,6 +1,7 @@
 package typings.jupyterlabNbformat.mod
 
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,45 +28,33 @@ object ILanguageInfoMetadata {
   }
   
   @scala.inline
-  implicit class ILanguageInfoMetadataOps[Self <: ILanguageInfoMetadata] (val x: Self) extends AnyVal {
+  implicit class ILanguageInfoMetadataMutableBuilder[Self <: ILanguageInfoMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodemirror_mode(value: String | PartialJSONObject): Self = StObject.set(x, "codemirror_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodemirror_modeUndefined: Self = StObject.set(x, "codemirror_mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile_extension(value: String): Self = StObject.set(x, "file_extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setFile_extensionUndefined: Self = StObject.set(x, "file_extension", js.undefined)
     
     @scala.inline
-    def setCodemirror_mode(value: String | PartialJSONObject): Self = this.set("codemirror_mode", value.asInstanceOf[js.Any])
+    def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodemirror_mode: Self = this.set("codemirror_mode", js.undefined)
+    def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
     
     @scala.inline
-    def setFile_extension(value: String): Self = this.set("file_extension", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_extension: Self = this.set("file_extension", js.undefined)
+    def setPygments_lexer(value: String): Self = StObject.set(x, "pygments_lexer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimetype(value: String): Self = this.set("mimetype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimetype: Self = this.set("mimetype", js.undefined)
-    
-    @scala.inline
-    def setPygments_lexer(value: String): Self = this.set("pygments_lexer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePygments_lexer: Self = this.set("pygments_lexer", js.undefined)
+    def setPygments_lexerUndefined: Self = StObject.set(x, "pygments_lexer", js.undefined)
   }
 }

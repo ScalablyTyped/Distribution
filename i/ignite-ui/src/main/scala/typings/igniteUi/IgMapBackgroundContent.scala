@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,54 +59,42 @@ object IgMapBackgroundContent {
   }
   
   @scala.inline
-  implicit class IgMapBackgroundContentOps[Self <: IgMapBackgroundContent] (val x: Self) extends AnyVal {
+  implicit class IgMapBackgroundContentMutableBuilder[Self <: IgMapBackgroundContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBingUrl(value: String): Self = StObject.set(x, "bingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBingUrlUndefined: Self = StObject.set(x, "bingUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBingUrl(value: String): Self = this.set("bingUrl", value.asInstanceOf[js.Any])
+    def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
     
     @scala.inline
-    def deleteBingUrl: Self = this.set("bingUrl", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagerySet(value: String): Self = this.set("imagerySet", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteImagerySet: Self = this.set("imagerySet", js.undefined)
+    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setTilePath(value: String): Self = StObject.set(x, "tilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: String): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def setTilePathUndefined: Self = StObject.set(x, "tilePath", js.undefined)
     
     @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilePath(value: String): Self = this.set("tilePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilePath: Self = this.set("tilePath", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RDSDatabase extends js.Object {
+trait RDSDatabase extends StObject {
   
   var DatabaseName: RDSDatabaseName = js.native
   
@@ -23,24 +24,12 @@ object RDSDatabase {
   }
   
   @scala.inline
-  implicit class RDSDatabaseOps[Self <: RDSDatabase] (val x: Self) extends AnyVal {
+  implicit class RDSDatabaseMutableBuilder[Self <: RDSDatabase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseName(value: RDSDatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatabaseName(value: RDSDatabaseName): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceIdentifier(value: RDSInstanceIdentifier): Self = this.set("InstanceIdentifier", value.asInstanceOf[js.Any])
+    def setInstanceIdentifier(value: RDSInstanceIdentifier): Self = StObject.set(x, "InstanceIdentifier", value.asInstanceOf[js.Any])
   }
 }

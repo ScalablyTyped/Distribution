@@ -1,5 +1,6 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.swiper.swiperStrings.beforeLoopFix
   - typings.swiper.swiperStrings.loopFix
 */
-trait CommonEvent extends js.Object
+trait CommonEvent extends StObject
 object CommonEvent {
   
   @scala.inline

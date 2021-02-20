@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceTableDetails extends js.Object {
+trait SourceTableDetails extends StObject {
   
   /**
     * Controls how you are charged for read and write throughput and how you manage capacity. This setting can be changed later.    PROVISIONED - Sets the read/write capacity mode to PROVISIONED. We recommend using PROVISIONED for predictable workloads.    PAY_PER_REQUEST - Sets the read/write capacity mode to PAY_PER_REQUEST. We recommend using PAY_PER_REQUEST for unpredictable workloads.   
@@ -67,60 +68,48 @@ object SourceTableDetails {
   }
   
   @scala.inline
-  implicit class SourceTableDetailsOps[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
+  implicit class SourceTableDetailsMutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedThroughput(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setTableCreationDateTime(value: TableCreationDateTime): Self = this.set("TableCreationDateTime", value.asInstanceOf[js.Any])
+    def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableId(value: TableId): Self = this.set("TableId", value.asInstanceOf[js.Any])
+    def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
     
     @scala.inline
-    def setBillingMode(value: BillingMode): Self = this.set("BillingMode", value.asInstanceOf[js.Any])
+    def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBillingMode: Self = this.set("BillingMode", js.undefined)
+    def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: ItemCount): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableArn(value: TableArn): Self = this.set("TableArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableArn: Self = this.set("TableArn", js.undefined)
-    
-    @scala.inline
-    def setTableSizeBytes(value: Long): Self = this.set("TableSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableSizeBytes: Self = this.set("TableSizeBytes", js.undefined)
+    def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
   }
 }

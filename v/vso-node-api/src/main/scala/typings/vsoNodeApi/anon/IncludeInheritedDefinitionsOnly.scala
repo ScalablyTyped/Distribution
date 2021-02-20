@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeInheritedDefinitionsOnly extends js.Object {
+trait IncludeInheritedDefinitionsOnly extends StObject {
   
   var includeInheritedDefinitionsOnly: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object IncludeInheritedDefinitionsOnly {
   }
   
   @scala.inline
-  implicit class IncludeInheritedDefinitionsOnlyOps[Self <: IncludeInheritedDefinitionsOnly] (val x: Self) extends AnyVal {
+  implicit class IncludeInheritedDefinitionsOnlyMutableBuilder[Self <: IncludeInheritedDefinitionsOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeLastUserAccess(value: scala.Double): Self = StObject.set(x, "includeLastUserAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeNonInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeNonInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeInheritedDefinitionsOnly(value: scala.Double): Self = this.set("includeInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
+    def setIncludeServices(value: scala.Double): Self = StObject.set(x, "includeServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLastUserAccess(value: scala.Double): Self = this.set("includeLastUserAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeNonInheritedDefinitionsOnly(value: scala.Double): Self = this.set("includeNonInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeServices(value: scala.Double): Self = this.set("includeServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

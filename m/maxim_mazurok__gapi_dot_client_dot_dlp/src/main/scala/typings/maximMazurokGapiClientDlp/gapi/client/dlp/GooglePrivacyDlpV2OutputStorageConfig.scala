@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2OutputStorageConfig extends js.Object {
+trait GooglePrivacyDlpV2OutputStorageConfig extends StObject {
   
   /**
     * Schema used for writing the findings for Inspect jobs. This field is only used for Inspect and must be unspecified for Risk jobs. Columns are derived from the `Finding` object. If
@@ -33,30 +34,18 @@ object GooglePrivacyDlpV2OutputStorageConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2OutputStorageConfigOps[Self <: GooglePrivacyDlpV2OutputStorageConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2OutputStorageConfigMutableBuilder[Self <: GooglePrivacyDlpV2OutputStorageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputSchema(value: String): Self = StObject.set(x, "outputSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputSchemaUndefined: Self = StObject.set(x, "outputSchema", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputSchema(value: String): Self = this.set("outputSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputSchema: Self = this.set("outputSchema", js.undefined)
-    
-    @scala.inline
-    def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

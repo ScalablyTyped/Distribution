@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCostCategoryDefinitionResponse extends js.Object {
+trait UpdateCostCategoryDefinitionResponse extends StObject {
   
   /**
     *  The unique identifier for your Cost Category. 
@@ -26,30 +27,18 @@ object UpdateCostCategoryDefinitionResponse {
   }
   
   @scala.inline
-  implicit class UpdateCostCategoryDefinitionResponseOps[Self <: UpdateCostCategoryDefinitionResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateCostCategoryDefinitionResponseMutableBuilder[Self <: UpdateCostCategoryDefinitionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectiveStart(value: ZonedDateTime): Self = StObject.set(x, "EffectiveStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostCategoryArn(value: Arn): Self = this.set("CostCategoryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCostCategoryArn: Self = this.set("CostCategoryArn", js.undefined)
-    
-    @scala.inline
-    def setEffectiveStart(value: ZonedDateTime): Self = this.set("EffectiveStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEffectiveStart: Self = this.set("EffectiveStart", js.undefined)
+    def setEffectiveStartUndefined: Self = StObject.set(x, "EffectiveStart", js.undefined)
   }
 }

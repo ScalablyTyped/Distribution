@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about a UI element of the Web Report Designer or Web Document Viewer.
   */
 @js.native
-trait ASPxReportUIElement extends js.Object {
+trait ASPxReportUIElement extends StObject {
   
   /**
     * Provides access to an element model.
@@ -29,24 +30,12 @@ object ASPxReportUIElement {
   }
   
   @scala.inline
-  implicit class ASPxReportUIElementOps[Self <: ASPxReportUIElement] (val x: Self) extends AnyVal {
+  implicit class ASPxReportUIElementMutableBuilder[Self <: ASPxReportUIElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateName(value: String): Self = this.set("templateName", value.asInstanceOf[js.Any])
+    def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

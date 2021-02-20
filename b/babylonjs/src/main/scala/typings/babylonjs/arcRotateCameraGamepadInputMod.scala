@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.cameraInputsManagerMod.ICameraInput
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/Inputs/arcRotateCameraGamepadInput", JSImport.Namespace)
-@js.native
-object arcRotateCameraGamepadInputMod extends js.Object {
+object arcRotateCameraGamepadInputMod {
   
+  @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraGamepadInput", "ArcRotateCameraGamepadInput")
   @js.native
   class ArcRotateCameraGamepadInput () extends ICameraInput[ArcRotateCamera] {
     

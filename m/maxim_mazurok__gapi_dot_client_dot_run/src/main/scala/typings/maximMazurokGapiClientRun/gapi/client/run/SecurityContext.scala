@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityContext extends js.Object {
+trait SecurityContext extends StObject {
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported The UID to run the entrypoint of the container process. Defaults to user specified in image
@@ -22,24 +23,12 @@ object SecurityContext {
   }
   
   @scala.inline
-  implicit class SecurityContextOps[Self <: SecurityContext] (val x: Self) extends AnyVal {
+  implicit class SecurityContextMutableBuilder[Self <: SecurityContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRunAsUser(value: Double): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRunAsUser(value: Double): Self = this.set("runAsUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunAsUser: Self = this.set("runAsUser", js.undefined)
+    def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
   }
 }

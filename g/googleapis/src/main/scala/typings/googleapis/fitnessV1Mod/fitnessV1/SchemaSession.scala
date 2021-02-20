@@ -1,5 +1,6 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * information.
   */
 @js.native
-trait SchemaSession extends js.Object {
+trait SchemaSession extends StObject {
   
   /**
     * Session active time. While start_time_millis and end_time_millis define
@@ -70,72 +71,60 @@ object SchemaSession {
   }
   
   @scala.inline
-  implicit class SchemaSessionOps[Self <: SchemaSession] (val x: Self) extends AnyVal {
+  implicit class SchemaSessionMutableBuilder[Self <: SchemaSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTimeMillis(value: String): Self = StObject.set(x, "activeTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTimeMillisUndefined: Self = StObject.set(x, "activeTimeMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityType(value: Double): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTimeMillis(value: String): Self = this.set("activeTimeMillis", value.asInstanceOf[js.Any])
+    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
     @scala.inline
-    def deleteActiveTimeMillis: Self = this.set("activeTimeMillis", js.undefined)
+    def setApplication(value: SchemaApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityType(value: Double): Self = this.set("activityType", value.asInstanceOf[js.Any])
+    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
     @scala.inline
-    def deleteActivityType: Self = this.set("activityType", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: SchemaApplication): Self = this.set("application", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteApplication: Self = this.set("application", js.undefined)
+    def setEndTimeMillis(value: String): Self = StObject.set(x, "endTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEndTimeMillisUndefined: Self = StObject.set(x, "endTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeMillis(value: String): Self = this.set("endTimeMillis", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEndTimeMillis: Self = this.set("endTimeMillis", js.undefined)
+    def setModifiedTimeMillis(value: String): Self = StObject.set(x, "modifiedTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setModifiedTimeMillisUndefined: Self = StObject.set(x, "modifiedTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTimeMillis(value: String): Self = this.set("modifiedTimeMillis", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModifiedTimeMillis: Self = this.set("modifiedTimeMillis", js.undefined)
+    def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setStartTimeMillis(value: String): Self = this.set("startTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeMillis: Self = this.set("startTimeMillis", js.undefined)
+    def setStartTimeMillisUndefined: Self = StObject.set(x, "startTimeMillis", js.undefined)
   }
 }

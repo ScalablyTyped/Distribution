@@ -1,5 +1,6 @@
 package typings.mithril.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,59 +51,47 @@ object ClassComponent {
   }
   
   @scala.inline
-  implicit class ClassComponentOps[Self <: ClassComponent[_], A] (val x: Self with ClassComponent[A]) extends AnyVal {
+  implicit class ClassComponentMutableBuilder[Self <: ClassComponent[_], A] (val x: Self with ClassComponent[A]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnbeforeremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Promise[_] | Unit): Self = StObject.set(x, "onbeforeremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setView(value: Vnode[A, ClassComponent[A]] => Children | Null | Unit): Self = this.set("view", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnbeforeremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Promise[_] | Unit): Self = this.set("onbeforeremove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnbeforeremove: Self = this.set("onbeforeremove", js.undefined)
+    def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
     
     @scala.inline
     def setOnbeforeupdate(
       value: (/* vnode */ Vnode[A, ClassComponent[A]], /* old */ VnodeDOM[A, ClassComponent[A]]) => Boolean | Unit
-    ): Self = this.set("onbeforeupdate", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onbeforeupdate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnbeforeupdate: Self = this.set("onbeforeupdate", js.undefined)
+    def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
     
     @scala.inline
-    def setOncreate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _): Self = this.set("oncreate", js.Any.fromFunction1(value))
+    def setOncreate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _): Self = StObject.set(x, "oncreate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOncreate: Self = this.set("oncreate", js.undefined)
+    def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
     
     @scala.inline
-    def setOninit(value: /* vnode */ Vnode[A, ClassComponent[A]] => _): Self = this.set("oninit", js.Any.fromFunction1(value))
+    def setOninit(value: /* vnode */ Vnode[A, ClassComponent[A]] => _): Self = StObject.set(x, "oninit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOninit: Self = this.set("oninit", js.undefined)
+    def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
     @scala.inline
-    def setOnremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _): Self = this.set("onremove", js.Any.fromFunction1(value))
+    def setOnremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnremove: Self = this.set("onremove", js.undefined)
+    def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
     
     @scala.inline
-    def setOnupdate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _): Self = this.set("onupdate", js.Any.fromFunction1(value))
+    def setOnupdate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => _): Self = StObject.set(x, "onupdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnupdate: Self = this.set("onupdate", js.undefined)
+    def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
+    
+    @scala.inline
+    def setView(value: Vnode[A, ClassComponent[A]] => Children | Null | Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

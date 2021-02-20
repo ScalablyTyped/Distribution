@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartialUpdateInstanceRequest extends js.Object {
+trait PartialUpdateInstanceRequest extends StObject {
   
   /** Required. The Instance which will (partially) replace the current value. */
   var instance: js.UndefOr[Instance] = js.native
@@ -22,30 +23,18 @@ object PartialUpdateInstanceRequest {
   }
   
   @scala.inline
-  implicit class PartialUpdateInstanceRequestOps[Self <: PartialUpdateInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class PartialUpdateInstanceRequestMutableBuilder[Self <: PartialUpdateInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: Instance): Self = this.set("instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRView extends js.Object {
+trait XRView extends StObject {
   
   val eye: XREye = js.native
   
@@ -32,36 +33,24 @@ object XRView {
   }
   
   @scala.inline
-  implicit class XRViewOps[Self <: XRView] (val x: Self) extends AnyVal {
+  implicit class XRViewMutableBuilder[Self <: XRView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEye(value: XREye): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectionMatrix(value: Float32Array): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecommendedViewportScale(value: Double): Self = StObject.set(x, "recommendedViewportScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEye(value: XREye): Self = this.set("eye", value.asInstanceOf[js.Any])
+    def setRecommendedViewportScaleUndefined: Self = StObject.set(x, "recommendedViewportScale", js.undefined)
     
     @scala.inline
-    def setProjectionMatrix(value: Float32Array): Self = this.set("projectionMatrix", value.asInstanceOf[js.Any])
+    def setRequestViewportScale(value: Double => Unit): Self = StObject.set(x, "requestViewportScale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestViewportScale(value: Double => Unit): Self = this.set("requestViewportScale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransform(value: XRRigidTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecommendedViewportScale(value: Double): Self = this.set("recommendedViewportScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendedViewportScale: Self = this.set("recommendedViewportScale", js.undefined)
+    def setTransform(value: XRRigidTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
   }
 }

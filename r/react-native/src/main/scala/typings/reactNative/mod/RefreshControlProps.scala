@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,60 +63,48 @@ object RefreshControlProps {
   }
   
   @scala.inline
-  implicit class RefreshControlPropsOps[Self <: RefreshControlProps] (val x: Self) extends AnyVal {
+  implicit class RefreshControlPropsMutableBuilder[Self <: RefreshControlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[ColorValue]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorsVarargs(value: ColorValue*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setRefreshing(value: Boolean): Self = this.set("refreshing", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsVarargs(value: ColorValue*): Self = this.set("colors", js.Array(value :_*))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setColors(value: js.Array[ColorValue]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setProgressBackgroundColor(value: ColorValue): Self = StObject.set(x, "progressBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setProgressBackgroundColorUndefined: Self = StObject.set(x, "progressBackgroundColor", js.undefined)
     
     @scala.inline
-    def setOnRefresh(value: () => Unit): Self = this.set("onRefresh", js.Any.fromFunction0(value))
+    def setProgressViewOffset(value: Double): Self = StObject.set(x, "progressViewOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnRefresh: Self = this.set("onRefresh", js.undefined)
+    def setProgressViewOffsetUndefined: Self = StObject.set(x, "progressViewOffset", js.undefined)
     
     @scala.inline
-    def setProgressBackgroundColor(value: ColorValue): Self = this.set("progressBackgroundColor", value.asInstanceOf[js.Any])
+    def setRefreshing(value: Boolean): Self = StObject.set(x, "refreshing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressBackgroundColor: Self = this.set("progressBackgroundColor", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressViewOffset(value: Double): Self = this.set("progressViewOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressViewOffset: Self = this.set("progressViewOffset", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

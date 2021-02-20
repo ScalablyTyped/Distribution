@@ -1,11 +1,12 @@
 package typings.dvtngJss
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSS extends js.Object {
+trait JSS extends StObject {
   
   /**
     * Retrieve all rules added via JSS, organized by selectors

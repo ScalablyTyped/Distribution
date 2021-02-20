@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssociatedAssetsRequest extends js.Object {
+trait ListAssociatedAssetsRequest extends StObject {
   
   /**
     * The ID of the asset to query.
@@ -41,45 +42,33 @@ object ListAssociatedAssetsRequest {
   }
   
   @scala.inline
-  implicit class ListAssociatedAssetsRequestOps[Self <: ListAssociatedAssetsRequest] (val x: Self) extends AnyVal {
+  implicit class ListAssociatedAssetsRequestMutableBuilder[Self <: ListAssociatedAssetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHierarchyId(value: ID): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHierarchyIdUndefined: Self = StObject.set(x, "hierarchyId", js.undefined)
     
     @scala.inline
-    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchyId(value: ID): Self = this.set("hierarchyId", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteHierarchyId: Self = this.set("hierarchyId", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setTraversalDirection(value: TraversalDirection): Self = StObject.set(x, "traversalDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setTraversalDirection(value: TraversalDirection): Self = this.set("traversalDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraversalDirection: Self = this.set("traversalDirection", js.undefined)
+    def setTraversalDirectionUndefined: Self = StObject.set(x, "traversalDirection", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,33 +58,21 @@ object FieldSchemaInViewUserField {
   }
   
   @scala.inline
-  implicit class FieldSchemaInViewUserFieldOps[Self <: FieldSchemaInViewUserField] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInViewUserFieldMutableBuilder[Self <: FieldSchemaInViewUserField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRender(value: String): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasPrefix(value: String): Self = StObject.set(x, "HasPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultipleValues(value: String): Self = this.set("AllowMultipleValues", value.asInstanceOf[js.Any])
+    def setHasUserLink(value: String): Self = StObject.set(x, "HasUserLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRender(value: String): Self = this.set("DefaultRender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasPrefix(value: String): Self = this.set("HasPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasUserLink(value: String): Self = this.set("HasUserLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImnHeader(value: String): Self = this.set("ImnHeader", value.asInstanceOf[js.Any])
+    def setImnHeader(value: String): Self = StObject.set(x, "ImnHeader", value.asInstanceOf[js.Any])
   }
 }

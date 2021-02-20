@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object CountryNamedLocation {
   }
   
   @scala.inline
-  implicit class CountryNamedLocationOps[Self <: CountryNamedLocation] (val x: Self) extends AnyVal {
+  implicit class CountryNamedLocationMutableBuilder[Self <: CountryNamedLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountriesAndRegions(value: js.Array[String]): Self = StObject.set(x, "countriesAndRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountriesAndRegionsUndefined: Self = StObject.set(x, "countriesAndRegions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountriesAndRegionsVarargs(value: String*): Self = StObject.set(x, "countriesAndRegions", js.Array(value :_*))
     
     @scala.inline
-    def setCountriesAndRegionsVarargs(value: String*): Self = this.set("countriesAndRegions", js.Array(value :_*))
+    def setIncludeUnknownCountriesAndRegions(value: Boolean): Self = StObject.set(x, "includeUnknownCountriesAndRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountriesAndRegions(value: js.Array[String]): Self = this.set("countriesAndRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountriesAndRegions: Self = this.set("countriesAndRegions", js.undefined)
-    
-    @scala.inline
-    def setIncludeUnknownCountriesAndRegions(value: Boolean): Self = this.set("includeUnknownCountriesAndRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUnknownCountriesAndRegions: Self = this.set("includeUnknownCountriesAndRegions", js.undefined)
+    def setIncludeUnknownCountriesAndRegionsUndefined: Self = StObject.set(x, "includeUnknownCountriesAndRegions", js.undefined)
   }
 }

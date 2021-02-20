@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorPickerMessages extends js.Object {
+trait ColorPickerMessages extends StObject {
   
   @JSName("apply")
   var apply: js.UndefOr[String] = js.native
@@ -23,36 +24,24 @@ object ColorPickerMessages {
   }
   
   @scala.inline
-  implicit class ColorPickerMessagesOps[Self <: ColorPickerMessages] (val x: Self) extends AnyVal {
+  implicit class ColorPickerMessagesMutableBuilder[Self <: ColorPickerMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApply(value: String): Self = this.set("apply", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
+    def setPreviewInput(value: String): Self = StObject.set(x, "previewInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
-    
-    @scala.inline
-    def setPreviewInput(value: String): Self = this.set("previewInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviewInput: Self = this.set("previewInput", js.undefined)
+    def setPreviewInputUndefined: Self = StObject.set(x, "previewInput", js.undefined)
   }
 }

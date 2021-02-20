@@ -1,12 +1,13 @@
 package typings.easyXapiSupertest.anon
 
 import typings.easyXapiSupertest.expressMod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dotfiles extends js.Object {
+trait Dotfiles extends StObject {
   
   /**
     * Set how "dotfiles" are treated when encountered. A dotfile is a file or directory that begins with a dot ("."). 
@@ -70,69 +71,57 @@ object Dotfiles {
   }
   
   @scala.inline
-  implicit class DotfilesOps[Self <: Dotfiles] (val x: Self) extends AnyVal {
+  implicit class DotfilesMutableBuilder[Self <: Dotfiles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDotfiles(value: String): Self = StObject.set(x, "dotfiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotfilesUndefined: Self = StObject.set(x, "dotfiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: Boolean): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotfiles(value: String): Self = this.set("dotfiles", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDotfiles: Self = this.set("dotfiles", js.undefined)
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: Boolean): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Boolean): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: Boolean): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
     @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRedirect(value: Boolean): Self = this.set("redirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirect: Self = this.set("redirect", js.undefined)
-    
-    @scala.inline
-    def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _): Self = this.set("setHeaders", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteSetHeaders: Self = this.set("setHeaders", js.undefined)
+    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
   }
 }

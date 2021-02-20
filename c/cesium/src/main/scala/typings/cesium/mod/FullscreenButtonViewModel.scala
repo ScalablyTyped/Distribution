@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "FullscreenButtonViewModel")
 @js.native
-class FullscreenButtonViewModel () extends js.Object {
+class FullscreenButtonViewModel () extends StObject {
   def this(fullscreenElement: String) = this()
   def this(fullscreenElement: Element) = this()
   

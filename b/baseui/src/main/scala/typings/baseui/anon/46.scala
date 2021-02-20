@@ -3,12 +3,13 @@ package typings.baseui.anon
 import typings.baseui.baseuiStrings.CI
 import typings.baseui.baseuiStrings.Plussign225
 import typings.baseui.baseuiStrings.`Côte dRightsinglequotationmarkIvoire`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `46` extends js.Object {
+trait `46` extends StObject {
   
   var dialCode: Plussign225 = js.native
   
@@ -25,27 +26,15 @@ object `46` {
   }
   
   @scala.inline
-  implicit class `46Ops`[Self <: `46`] (val x: Self) extends AnyVal {
+  implicit class `46MutableBuilder`[Self <: `46`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialCode(value: Plussign225): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: CI): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDialCode(value: Plussign225): Self = this.set("dialCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: CI): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: `Côte dRightsinglequotationmarkIvoire`): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: `Côte dRightsinglequotationmarkIvoire`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.sharepoint.SP.UserProfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PersonalSiteInstantiationState extends js.Object
+sealed trait PersonalSiteInstantiationState extends StObject
 /** Specifies an exception or status code for the state of a personal site instantiation. */
 @JSGlobal("SP.UserProfiles.PersonalSiteInstantiationState")
 @js.native
-object PersonalSiteInstantiationState extends js.Object {
+object PersonalSiteInstantiationState extends StObject {
   
   @js.native
   sealed trait created extends PersonalSiteInstantiationState

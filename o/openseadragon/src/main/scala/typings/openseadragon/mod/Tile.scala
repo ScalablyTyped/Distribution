@@ -3,13 +3,14 @@ package typings.openseadragon.mod
 import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Tile")
 @js.native
-class Tile protected () extends js.Object {
+class Tile protected () extends StObject {
   def this(
     level: Double,
     x: Double,

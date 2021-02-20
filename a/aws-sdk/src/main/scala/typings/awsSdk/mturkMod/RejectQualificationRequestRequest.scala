@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RejectQualificationRequestRequest extends js.Object {
+trait RejectQualificationRequestRequest extends StObject {
   
   /**
     *  The ID of the Qualification request, as returned by the ListQualificationRequests operation. 
@@ -26,27 +27,15 @@ object RejectQualificationRequestRequest {
   }
   
   @scala.inline
-  implicit class RejectQualificationRequestRequestOps[Self <: RejectQualificationRequestRequest] (val x: Self) extends AnyVal {
+  implicit class RejectQualificationRequestRequestMutableBuilder[Self <: RejectQualificationRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQualificationRequestId(value: String): Self = StObject.set(x, "QualificationRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQualificationRequestId(value: String): Self = this.set("QualificationRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("Reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("Reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

@@ -1,16 +1,16 @@
 package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsSuggestion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/response/suggestion", JSImport.Namespace)
-@js.native
-object suggestionMod extends js.Object {
+object suggestionMod {
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/suggestion", "Suggestions")
   @js.native
-  class Suggestions protected () extends js.Object {
+  class Suggestions protected () extends StObject {
     /**
       * @param suggestions Texts of the suggestions.
       * @public

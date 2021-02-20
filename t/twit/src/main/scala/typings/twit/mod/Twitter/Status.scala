@@ -5,12 +5,13 @@ import typings.twit.anon.Id
 import typings.twit.twitStrings.low
 import typings.twit.twitStrings.medium
 import typings.twit.twitStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Status extends js.Object {
+trait Status extends StObject {
   
   var annotations: js.UndefOr[js.Object] = js.native
   
@@ -106,219 +107,207 @@ object Status {
   }
   
   @scala.inline
-  implicit class StatusOps[Self <: Status] (val x: Self) extends AnyVal {
+  implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: js.Object): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContributors(value: js.Array[Contributors]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
     
     @scala.inline
-    def setEntities(value: Entities): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setContributorsVarargs(value: Contributors*): Self = StObject.set(x, "contributors", js.Array(value :_*))
     
     @scala.inline
-    def setFilter_level(value: none | low | medium): Self = this.set("filter_level", value.asInstanceOf[js.Any])
+    def setCoordinates(value: Point): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
     @scala.inline
-    def setId_str(value: String): Self = this.set("id_str", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_quote_status(value: String): Self = this.set("is_quote_status", value.asInstanceOf[js.Any])
+    def setCurrent_user_retweet(value: Id): Self = StObject.set(x, "current_user_retweet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetweet_count(value: Double): Self = this.set("retweet_count", value.asInstanceOf[js.Any])
+    def setCurrent_user_retweetUndefined: Self = StObject.set(x, "current_user_retweet", js.undefined)
     
     @scala.inline
-    def setRetweeted(value: Boolean): Self = this.set("retweeted", value.asInstanceOf[js.Any])
+    def setDisplay_text_range(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "display_text_range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruncated(value: Boolean): Self = this.set("truncated", value.asInstanceOf[js.Any])
+    def setDisplay_text_rangeUndefined: Self = StObject.set(x, "display_text_range", js.undefined)
     
     @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setEntities(value: Entities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Object): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setFavorite_count(value: Double): Self = StObject.set(x, "favorite_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setFavorite_countUndefined: Self = StObject.set(x, "favorite_count", js.undefined)
     
     @scala.inline
-    def setContributorsVarargs(value: Contributors*): Self = this.set("contributors", js.Array(value :_*))
+    def setFavorited(value: Boolean): Self = StObject.set(x, "favorited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributors(value: js.Array[Contributors]): Self = this.set("contributors", value.asInstanceOf[js.Any])
+    def setFavoritedUndefined: Self = StObject.set(x, "favorited", js.undefined)
     
     @scala.inline
-    def deleteContributors: Self = this.set("contributors", js.undefined)
+    def setFilter_level(value: none | low | medium): Self = StObject.set(x, "filter_level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: Point): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setFull_text(value: String): Self = StObject.set(x, "full_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
+    def setFull_textUndefined: Self = StObject.set(x, "full_text", js.undefined)
     
     @scala.inline
-    def setCurrent_user_retweet(value: Id): Self = this.set("current_user_retweet", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrent_user_retweet: Self = this.set("current_user_retweet", js.undefined)
+    def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_text_range(value: js.Tuple2[Double, Double]): Self = this.set("display_text_range", value.asInstanceOf[js.Any])
+    def setIn_reply_to_screen_name(value: String): Self = StObject.set(x, "in_reply_to_screen_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay_text_range: Self = this.set("display_text_range", js.undefined)
+    def setIn_reply_to_screen_nameUndefined: Self = StObject.set(x, "in_reply_to_screen_name", js.undefined)
     
     @scala.inline
-    def setFavorite_count(value: Double): Self = this.set("favorite_count", value.asInstanceOf[js.Any])
+    def setIn_reply_to_status_id(value: Double): Self = StObject.set(x, "in_reply_to_status_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFavorite_count: Self = this.set("favorite_count", js.undefined)
+    def setIn_reply_to_status_idUndefined: Self = StObject.set(x, "in_reply_to_status_id", js.undefined)
     
     @scala.inline
-    def setFavorited(value: Boolean): Self = this.set("favorited", value.asInstanceOf[js.Any])
+    def setIn_reply_to_status_id_str(value: String): Self = StObject.set(x, "in_reply_to_status_id_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFavorited: Self = this.set("favorited", js.undefined)
+    def setIn_reply_to_status_id_strUndefined: Self = StObject.set(x, "in_reply_to_status_id_str", js.undefined)
     
     @scala.inline
-    def setFull_text(value: String): Self = this.set("full_text", value.asInstanceOf[js.Any])
+    def setIn_reply_to_user_id(value: Double): Self = StObject.set(x, "in_reply_to_user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFull_text: Self = this.set("full_text", js.undefined)
+    def setIn_reply_to_user_idUndefined: Self = StObject.set(x, "in_reply_to_user_id", js.undefined)
     
     @scala.inline
-    def setIn_reply_to_screen_name(value: String): Self = this.set("in_reply_to_screen_name", value.asInstanceOf[js.Any])
+    def setIn_reply_to_user_id_str(value: String): Self = StObject.set(x, "in_reply_to_user_id_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIn_reply_to_screen_name: Self = this.set("in_reply_to_screen_name", js.undefined)
+    def setIn_reply_to_user_id_strUndefined: Self = StObject.set(x, "in_reply_to_user_id_str", js.undefined)
     
     @scala.inline
-    def setIn_reply_to_status_id(value: Double): Self = this.set("in_reply_to_status_id", value.asInstanceOf[js.Any])
+    def setIs_quote_status(value: String): Self = StObject.set(x, "is_quote_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIn_reply_to_status_id: Self = this.set("in_reply_to_status_id", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIn_reply_to_status_id_str(value: String): Self = this.set("in_reply_to_status_id_str", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteIn_reply_to_status_id_str: Self = this.set("in_reply_to_status_id_str", js.undefined)
+    def setMatching_rules(value: js.Array[MatchingRules]): Self = StObject.set(x, "matching_rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIn_reply_to_user_id(value: Double): Self = this.set("in_reply_to_user_id", value.asInstanceOf[js.Any])
+    def setMatching_rulesUndefined: Self = StObject.set(x, "matching_rules", js.undefined)
     
     @scala.inline
-    def deleteIn_reply_to_user_id: Self = this.set("in_reply_to_user_id", js.undefined)
+    def setMatching_rulesVarargs(value: MatchingRules*): Self = StObject.set(x, "matching_rules", js.Array(value :_*))
     
     @scala.inline
-    def setIn_reply_to_user_id_str(value: String): Self = this.set("in_reply_to_user_id_str", value.asInstanceOf[js.Any])
+    def setPlace(value: Place): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIn_reply_to_user_id_str: Self = this.set("in_reply_to_user_id_str", js.undefined)
+    def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setPossibly_sensitive(value: Boolean): Self = StObject.set(x, "possibly_sensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setPossibly_sensitiveUndefined: Self = StObject.set(x, "possibly_sensitive", js.undefined)
     
     @scala.inline
-    def setMatching_rulesVarargs(value: MatchingRules*): Self = this.set("matching_rules", js.Array(value :_*))
+    def setQuoted_status(value: Status): Self = StObject.set(x, "quoted_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatching_rules(value: js.Array[MatchingRules]): Self = this.set("matching_rules", value.asInstanceOf[js.Any])
+    def setQuoted_statusUndefined: Self = StObject.set(x, "quoted_status", js.undefined)
     
     @scala.inline
-    def deleteMatching_rules: Self = this.set("matching_rules", js.undefined)
+    def setQuoted_status_id(value: Double): Self = StObject.set(x, "quoted_status_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlace(value: Place): Self = this.set("place", value.asInstanceOf[js.Any])
+    def setQuoted_status_idUndefined: Self = StObject.set(x, "quoted_status_id", js.undefined)
     
     @scala.inline
-    def deletePlace: Self = this.set("place", js.undefined)
+    def setQuoted_status_id_str(value: String): Self = StObject.set(x, "quoted_status_id_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPossibly_sensitive(value: Boolean): Self = this.set("possibly_sensitive", value.asInstanceOf[js.Any])
+    def setQuoted_status_id_strUndefined: Self = StObject.set(x, "quoted_status_id_str", js.undefined)
     
     @scala.inline
-    def deletePossibly_sensitive: Self = this.set("possibly_sensitive", js.undefined)
+    def setRetweet_count(value: Double): Self = StObject.set(x, "retweet_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoted_status(value: Status): Self = this.set("quoted_status", value.asInstanceOf[js.Any])
+    def setRetweeted(value: Boolean): Self = StObject.set(x, "retweeted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuoted_status: Self = this.set("quoted_status", js.undefined)
+    def setRetweeted_status(value: Status): Self = StObject.set(x, "retweeted_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoted_status_id(value: Double): Self = this.set("quoted_status_id", value.asInstanceOf[js.Any])
+    def setRetweeted_statusUndefined: Self = StObject.set(x, "retweeted_status", js.undefined)
     
     @scala.inline
-    def deleteQuoted_status_id: Self = this.set("quoted_status_id", js.undefined)
+    def setScopes(value: js.Object): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoted_status_id_str(value: String): Self = this.set("quoted_status_id_str", value.asInstanceOf[js.Any])
+    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
     @scala.inline
-    def deleteQuoted_status_id_str: Self = this.set("quoted_status_id_str", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetweeted_status(value: Status): Self = this.set("retweeted_status", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteRetweeted_status: Self = this.set("retweeted_status", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopes(value: js.Object): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteScopes: Self = this.set("scopes", js.undefined)
+    def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setWithheld_copyright(value: Boolean): Self = StObject.set(x, "withheld_copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setWithheld_copyrightUndefined: Self = StObject.set(x, "withheld_copyright", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setWithheld_in_countries(value: js.Array[String]): Self = StObject.set(x, "withheld_in_countries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithheld_copyright(value: Boolean): Self = this.set("withheld_copyright", value.asInstanceOf[js.Any])
+    def setWithheld_in_countriesUndefined: Self = StObject.set(x, "withheld_in_countries", js.undefined)
     
     @scala.inline
-    def deleteWithheld_copyright: Self = this.set("withheld_copyright", js.undefined)
+    def setWithheld_in_countriesVarargs(value: String*): Self = StObject.set(x, "withheld_in_countries", js.Array(value :_*))
     
     @scala.inline
-    def setWithheld_in_countriesVarargs(value: String*): Self = this.set("withheld_in_countries", js.Array(value :_*))
+    def setWithheld_scope(value: String): Self = StObject.set(x, "withheld_scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithheld_in_countries(value: js.Array[String]): Self = this.set("withheld_in_countries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithheld_in_countries: Self = this.set("withheld_in_countries", js.undefined)
-    
-    @scala.inline
-    def setWithheld_scope(value: String): Self = this.set("withheld_scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithheld_scope: Self = this.set("withheld_scope", js.undefined)
+    def setWithheld_scopeUndefined: Self = StObject.set(x, "withheld_scope", js.undefined)
   }
 }

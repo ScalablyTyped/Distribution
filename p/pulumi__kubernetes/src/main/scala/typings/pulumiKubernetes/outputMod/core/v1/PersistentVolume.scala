@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
   */
 @js.native
-trait PersistentVolume extends js.Object {
+trait PersistentVolume extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
@@ -51,33 +52,21 @@ object PersistentVolume {
   }
   
   @scala.inline
-  implicit class PersistentVolumeOps[Self <: PersistentVolume] (val x: Self) extends AnyVal {
+  implicit class PersistentVolumeMutableBuilder[Self <: PersistentVolume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setSpec(value: PersistentVolumeSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolume): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpec(value: PersistentVolumeSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: PersistentVolumeStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: PersistentVolumeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

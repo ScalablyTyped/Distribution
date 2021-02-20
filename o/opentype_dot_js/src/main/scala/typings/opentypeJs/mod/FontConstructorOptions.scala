@@ -1,12 +1,13 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined opentype.js.opentype.js.FontConstructorOptionsBase & std.Partial<opentype.js.opentype.js.FontOptions> & {  glyphs :std.Array<opentype.js.opentype.js.Glyph>} */
 @js.native
-trait FontConstructorOptions extends js.Object {
+trait FontConstructorOptions extends StObject {
   
   var ascender: Double with js.UndefOr[Double] = js.native
   
@@ -70,141 +71,129 @@ object FontConstructorOptions {
   }
   
   @scala.inline
-  implicit class FontConstructorOptionsOps[Self <: FontConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class FontConstructorOptionsMutableBuilder[Self <: FontConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscender(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def setAscender(value: Double with js.UndefOr[Double]): Self = this.set("ascender", value.asInstanceOf[js.Any])
+    def setCreatedTimestamp(value: Double): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescender(value: Double with js.UndefOr[Double]): Self = this.set("descender", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
     
     @scala.inline
-    def setFamilyName(value: String with js.UndefOr[String]): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setDescender(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphsVarargs(value: Glyph*): Self = this.set("glyphs", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphs(value: js.Array[Glyph]): Self = this.set("glyphs", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setStyleName(value: String with js.UndefOr[String]): Self = this.set("styleName", value.asInstanceOf[js.Any])
+    def setDesigner(value: String): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitsPerEm(value: Double with js.UndefOr[Double]): Self = this.set("unitsPerEm", value.asInstanceOf[js.Any])
+    def setDesignerURL(value: String): Self = StObject.set(x, "designerURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setDesignerURLUndefined: Self = StObject.set(x, "designerURL", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setDesignerUndefined: Self = StObject.set(x, "designer", js.undefined)
     
     @scala.inline
-    def setCreatedTimestamp(value: Double): Self = this.set("createdTimestamp", value.asInstanceOf[js.Any])
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("createdTimestamp", js.undefined)
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFamilyName(value: String with js.UndefOr[String]): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFsSelection(value: String): Self = StObject.set(x, "fsSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesigner(value: String): Self = this.set("designer", value.asInstanceOf[js.Any])
+    def setFsSelectionUndefined: Self = StObject.set(x, "fsSelection", js.undefined)
     
     @scala.inline
-    def deleteDesigner: Self = this.set("designer", js.undefined)
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignerURL(value: String): Self = this.set("designerURL", value.asInstanceOf[js.Any])
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def deleteDesignerURL: Self = this.set("designerURL", js.undefined)
+    def setGlyphs(value: js.Array[Glyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsSelection(value: String): Self = this.set("fsSelection", value.asInstanceOf[js.Any])
+    def setLicenseURL(value: String): Self = StObject.set(x, "licenseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFsSelection: Self = this.set("fsSelection", js.undefined)
+    def setLicenseURLUndefined: Self = StObject.set(x, "licenseURL", js.undefined)
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
     @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setManufacturerURL(value: String): Self = StObject.set(x, "manufacturerURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicense: Self = this.set("license", js.undefined)
+    def setManufacturerURLUndefined: Self = StObject.set(x, "manufacturerURL", js.undefined)
     
     @scala.inline
-    def setLicenseURL(value: String): Self = this.set("licenseURL", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def deleteLicenseURL: Self = this.set("licenseURL", js.undefined)
+    def setPostScriptName(value: String): Self = StObject.set(x, "postScriptName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setPostScriptNameUndefined: Self = StObject.set(x, "postScriptName", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setStyleName(value: String with js.UndefOr[String]): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturerURL(value: String): Self = this.set("manufacturerURL", value.asInstanceOf[js.Any])
+    def setTrademark(value: String): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManufacturerURL: Self = this.set("manufacturerURL", js.undefined)
+    def setTrademarkUndefined: Self = StObject.set(x, "trademark", js.undefined)
     
     @scala.inline
-    def setPostScriptName(value: String): Self = this.set("postScriptName", value.asInstanceOf[js.Any])
+    def setUnitsPerEm(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePostScriptName: Self = this.set("postScriptName", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrademark(value: String): Self = this.set("trademark", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteTrademark: Self = this.set("trademark", js.undefined)
+    def setWeightClass(value: String): Self = StObject.set(x, "weightClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setWeightClassUndefined: Self = StObject.set(x, "weightClass", js.undefined)
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setWidthClass(value: String): Self = StObject.set(x, "widthClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeightClass(value: String): Self = this.set("weightClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightClass: Self = this.set("weightClass", js.undefined)
-    
-    @scala.inline
-    def setWidthClass(value: String): Self = this.set("widthClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthClass: Self = this.set("widthClass", js.undefined)
+    def setWidthClassUndefined: Self = StObject.set(x, "widthClass", js.undefined)
   }
 }

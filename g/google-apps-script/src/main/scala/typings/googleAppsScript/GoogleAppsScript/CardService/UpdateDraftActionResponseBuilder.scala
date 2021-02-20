@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A builder for UpdateDraftActionResponse objects.
   */
 @js.native
-trait UpdateDraftActionResponseBuilder extends js.Object {
+trait UpdateDraftActionResponseBuilder extends StObject {
   
   def build(): UpdateDraftActionResponse = js.native
   
@@ -26,24 +27,12 @@ object UpdateDraftActionResponseBuilder {
   }
   
   @scala.inline
-  implicit class UpdateDraftActionResponseBuilderOps[Self <: UpdateDraftActionResponseBuilder] (val x: Self) extends AnyVal {
+  implicit class UpdateDraftActionResponseBuilderMutableBuilder[Self <: UpdateDraftActionResponseBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => UpdateDraftActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuild(value: () => UpdateDraftActionResponse): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetUpdateDraftBodyAction(value: UpdateDraftBodyAction => UpdateDraftActionResponseBuilder): Self = this.set("setUpdateDraftBodyAction", js.Any.fromFunction1(value))
+    def setSetUpdateDraftBodyAction(value: UpdateDraftBodyAction => UpdateDraftActionResponseBuilder): Self = StObject.set(x, "setUpdateDraftBodyAction", js.Any.fromFunction1(value))
   }
 }

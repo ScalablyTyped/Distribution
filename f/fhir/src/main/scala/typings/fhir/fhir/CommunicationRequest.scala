@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -145,198 +146,186 @@ object CommunicationRequest {
   }
   
   @scala.inline
-  implicit class CommunicationRequestOps[Self <: CommunicationRequest] (val x: Self) extends AnyVal {
+  implicit class CommunicationRequestMutableBuilder[Self <: CommunicationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthoredOn(value: dateTime): Self = StObject.set(x, "authoredOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthoredOnUndefined: Self = StObject.set(x, "authoredOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setBasedOnUndefined: Self = StObject.set(x, "basedOn", js.undefined)
     
     @scala.inline
-    def set_authoredOn(value: Element): Self = this.set("_authoredOn", value.asInstanceOf[js.Any])
+    def setBasedOnVarargs(value: Reference*): Self = StObject.set(x, "basedOn", js.Array(value :_*))
     
     @scala.inline
-    def delete_authoredOn: Self = this.set("_authoredOn", js.undefined)
+    def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_occurrenceDateTime(value: Element): Self = this.set("_occurrenceDateTime", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def delete_occurrenceDateTime: Self = this.set("_occurrenceDateTime", js.undefined)
+    def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value :_*))
     
     @scala.inline
-    def set_priority(value: Element): Self = this.set("_priority", value.asInstanceOf[js.Any])
+    def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_priority: Self = this.set("_priority", js.undefined)
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setGroupIdentifier(value: Identifier): Self = StObject.set(x, "groupIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setGroupIdentifierUndefined: Self = StObject.set(x, "groupIdentifier", js.undefined)
     
     @scala.inline
-    def setAuthoredOn(value: dateTime): Self = this.set("authoredOn", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthoredOn: Self = this.set("authoredOn", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setBasedOnVarargs(value: Reference*): Self = this.set("basedOn", js.Array(value :_*))
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setBasedOn(value: js.Array[Reference]): Self = this.set("basedOn", value.asInstanceOf[js.Any])
+    def setMedium(value: js.Array[CodeableConcept]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBasedOn: Self = this.set("basedOn", js.undefined)
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def setCategoryVarargs(value: CodeableConcept*): Self = this.set("category", js.Array(value :_*))
+    def setMediumVarargs(value: CodeableConcept*): Self = StObject.set(x, "medium", js.Array(value :_*))
     
     @scala.inline
-    def setCategory(value: js.Array[CodeableConcept]): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setOccurrenceDateTime(value: dateTime): Self = StObject.set(x, "occurrenceDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIdentifier(value: Identifier): Self = this.set("groupIdentifier", value.asInstanceOf[js.Any])
+    def setOccurrenceDateTimeUndefined: Self = StObject.set(x, "occurrenceDateTime", js.undefined)
     
     @scala.inline
-    def deleteGroupIdentifier: Self = this.set("groupIdentifier", js.undefined)
+    def setOccurrencePeriod(value: Period): Self = StObject.set(x, "occurrencePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setOccurrencePeriodUndefined: Self = StObject.set(x, "occurrencePeriod", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPayload(value: js.Array[CommunicationRequestPayload]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def setMediumVarargs(value: CodeableConcept*): Self = this.set("medium", js.Array(value :_*))
+    def setPayloadVarargs(value: CommunicationRequestPayload*): Self = StObject.set(x, "payload", js.Array(value :_*))
     
     @scala.inline
-    def setMedium(value: js.Array[CodeableConcept]): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setPriority(value: code): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setReasonCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setReasonCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "reasonCode", js.Array(value :_*))
     
     @scala.inline
-    def setOccurrenceDateTime(value: dateTime): Self = this.set("occurrenceDateTime", value.asInstanceOf[js.Any])
+    def setReasonReference(value: js.Array[Reference]): Self = StObject.set(x, "reasonReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOccurrenceDateTime: Self = this.set("occurrenceDateTime", js.undefined)
+    def setReasonReferenceUndefined: Self = StObject.set(x, "reasonReference", js.undefined)
     
     @scala.inline
-    def setOccurrencePeriod(value: Period): Self = this.set("occurrencePeriod", value.asInstanceOf[js.Any])
+    def setReasonReferenceVarargs(value: Reference*): Self = StObject.set(x, "reasonReference", js.Array(value :_*))
     
     @scala.inline
-    def deleteOccurrencePeriod: Self = this.set("occurrencePeriod", js.undefined)
+    def setRecipient(value: js.Array[Reference]): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadVarargs(value: CommunicationRequestPayload*): Self = this.set("payload", js.Array(value :_*))
+    def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
     @scala.inline
-    def setPayload(value: js.Array[CommunicationRequestPayload]): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRecipientVarargs(value: Reference*): Self = StObject.set(x, "recipient", js.Array(value :_*))
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setReplaces(value: js.Array[Reference]): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: code): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setReplacesVarargs(value: Reference*): Self = StObject.set(x, "replaces", js.Array(value :_*))
     
     @scala.inline
-    def setReasonCodeVarargs(value: CodeableConcept*): Self = this.set("reasonCode", js.Array(value :_*))
+    def setRequester(value: CommunicationRequestRequester): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonCode(value: js.Array[CodeableConcept]): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    def setRequesterUndefined: Self = StObject.set(x, "requester", js.undefined)
     
     @scala.inline
-    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    def setSender(value: Reference): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonReferenceVarargs(value: Reference*): Self = this.set("reasonReference", js.Array(value :_*))
+    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
     @scala.inline
-    def setReasonReference(value: js.Array[Reference]): Self = this.set("reasonReference", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReasonReference: Self = this.set("reasonReference", js.undefined)
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientVarargs(value: Reference*): Self = this.set("recipient", js.Array(value :_*))
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setRecipient(value: js.Array[Reference]): Self = this.set("recipient", value.asInstanceOf[js.Any])
+    def setTopic(value: js.Array[Reference]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipient: Self = this.set("recipient", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def setReplacesVarargs(value: Reference*): Self = this.set("replaces", js.Array(value :_*))
+    def setTopicVarargs(value: Reference*): Self = StObject.set(x, "topic", js.Array(value :_*))
     
     @scala.inline
-    def setReplaces(value: js.Array[Reference]): Self = this.set("replaces", value.asInstanceOf[js.Any])
+    def set_authoredOn(value: Element): Self = StObject.set(x, "_authoredOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplaces: Self = this.set("replaces", js.undefined)
+    def set_authoredOnUndefined: Self = StObject.set(x, "_authoredOn", js.undefined)
     
     @scala.inline
-    def setRequester(value: CommunicationRequestRequester): Self = this.set("requester", value.asInstanceOf[js.Any])
+    def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequester: Self = this.set("requester", js.undefined)
+    def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
     
     @scala.inline
-    def setSender(value: Reference): Self = this.set("sender", value.asInstanceOf[js.Any])
+    def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSender: Self = this.set("sender", js.undefined)
+    def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setTopicVarargs(value: Reference*): Self = this.set("topic", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopic(value: js.Array[Reference]): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

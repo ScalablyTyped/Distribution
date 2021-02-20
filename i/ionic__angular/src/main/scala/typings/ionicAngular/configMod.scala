@@ -47,18 +47,16 @@ import typings.ionicAngular.ionicAngularStrings.swipeBackEnabled
 import typings.ionicAngular.ionicAngularStrings.tabButtonLayout
 import typings.ionicAngular.ionicAngularStrings.toastEnter
 import typings.ionicAngular.ionicAngularStrings.toastLeave
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/providers/config", JSImport.Namespace)
-@js.native
-object configMod extends js.Object {
+object configMod {
   
-  val ConfigToken: InjectionToken[js.Any] = js.native
-  
+  @JSImport("@ionic/angular/providers/config", "Config")
   @js.native
-  class Config () extends js.Object {
+  class Config () extends StObject {
     
     def get(
       key: /* keyof @ionic/core.@ionic/core/dist/types/utils/config.IonicConfig */ animated | rippleEffect | mode | hardwareBackButton | statusTap | backButtonIcon | backButtonText | backButtonDefaultHref | menuIcon | menuType | spinner | loadingSpinner | refreshingIcon | refreshingSpinner | infiniteLoadingSpinner | swipeBackEnabled | tabButtonLayout | navAnimation | actionSheetEnter | alertEnter | loadingEnter | modalEnter | popoverEnter | toastEnter | pickerEnter | actionSheetLeave | alertLeave | loadingLeave | modalLeave | popoverLeave | toastLeave | pickerLeave | experimentalTransitionShadow | sanitizerEnabled | keyboardHeight | inputShims | scrollPadding | inputBlurring | scrollAssist | hideCaretOnScroll | persistConfig | _forceStatusbarPadding | _testing | _zoneGate | _ael | _rel
@@ -92,4 +90,8 @@ object configMod extends js.Object {
       value: js.Any
     ): Unit = js.native
   }
+  
+  @JSImport("@ionic/angular/providers/config", "ConfigToken")
+  @js.native
+  val ConfigToken: InjectionToken[js.Any] = js.native
 }

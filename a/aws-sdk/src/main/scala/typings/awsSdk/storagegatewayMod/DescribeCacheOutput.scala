@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCacheOutput extends js.Object {
+trait DescribeCacheOutput extends StObject {
   
   /**
     * The amount of cache in bytes allocated to a gateway.
@@ -48,63 +49,51 @@ object DescribeCacheOutput {
   }
   
   @scala.inline
-  implicit class DescribeCacheOutputOps[Self <: DescribeCacheOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeCacheOutputMutableBuilder[Self <: DescribeCacheOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheAllocatedInBytes(value: long): Self = StObject.set(x, "CacheAllocatedInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheAllocatedInBytesUndefined: Self = StObject.set(x, "CacheAllocatedInBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheDirtyPercentage(value: double): Self = StObject.set(x, "CacheDirtyPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheAllocatedInBytes(value: long): Self = this.set("CacheAllocatedInBytes", value.asInstanceOf[js.Any])
+    def setCacheDirtyPercentageUndefined: Self = StObject.set(x, "CacheDirtyPercentage", js.undefined)
     
     @scala.inline
-    def deleteCacheAllocatedInBytes: Self = this.set("CacheAllocatedInBytes", js.undefined)
+    def setCacheHitPercentage(value: double): Self = StObject.set(x, "CacheHitPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheDirtyPercentage(value: double): Self = this.set("CacheDirtyPercentage", value.asInstanceOf[js.Any])
+    def setCacheHitPercentageUndefined: Self = StObject.set(x, "CacheHitPercentage", js.undefined)
     
     @scala.inline
-    def deleteCacheDirtyPercentage: Self = this.set("CacheDirtyPercentage", js.undefined)
+    def setCacheMissPercentage(value: double): Self = StObject.set(x, "CacheMissPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheHitPercentage(value: double): Self = this.set("CacheHitPercentage", value.asInstanceOf[js.Any])
+    def setCacheMissPercentageUndefined: Self = StObject.set(x, "CacheMissPercentage", js.undefined)
     
     @scala.inline
-    def deleteCacheHitPercentage: Self = this.set("CacheHitPercentage", js.undefined)
+    def setCacheUsedPercentage(value: double): Self = StObject.set(x, "CacheUsedPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheMissPercentage(value: double): Self = this.set("CacheMissPercentage", value.asInstanceOf[js.Any])
+    def setCacheUsedPercentageUndefined: Self = StObject.set(x, "CacheUsedPercentage", js.undefined)
     
     @scala.inline
-    def deleteCacheMissPercentage: Self = this.set("CacheMissPercentage", js.undefined)
+    def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheUsedPercentage(value: double): Self = this.set("CacheUsedPercentage", value.asInstanceOf[js.Any])
+    def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
     @scala.inline
-    def deleteCacheUsedPercentage: Self = this.set("CacheUsedPercentage", js.undefined)
+    def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
     
     @scala.inline
-    def setDiskIdsVarargs(value: DiskId*): Self = this.set("DiskIds", js.Array(value :_*))
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskIds(value: DiskIds): Self = this.set("DiskIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskIds: Self = this.set("DiskIds", js.undefined)
-    
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

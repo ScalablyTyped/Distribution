@@ -1,11 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowConfigurationOptions extends js.Object {
+trait WorkflowConfigurationOptions extends StObject {
   
   var taskRouting: js.UndefOr[TaskRoutingConfigurationOptions] = js.native
   
@@ -20,30 +21,18 @@ object WorkflowConfigurationOptions {
   }
   
   @scala.inline
-  implicit class WorkflowConfigurationOptionsOps[Self <: WorkflowConfigurationOptions] (val x: Self) extends AnyVal {
+  implicit class WorkflowConfigurationOptionsMutableBuilder[Self <: WorkflowConfigurationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTaskRouting(value: TaskRoutingConfigurationOptions): Self = StObject.set(x, "taskRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTaskRoutingUndefined: Self = StObject.set(x, "taskRouting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTask_routing(value: TaskRoutingConfigurationOptions): Self = StObject.set(x, "task_routing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskRouting(value: TaskRoutingConfigurationOptions): Self = this.set("taskRouting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskRouting: Self = this.set("taskRouting", js.undefined)
-    
-    @scala.inline
-    def setTask_routing(value: TaskRoutingConfigurationOptions): Self = this.set("task_routing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTask_routing: Self = this.set("task_routing", js.undefined)
+    def setTask_routingUndefined: Self = StObject.set(x, "task_routing", js.undefined)
   }
 }

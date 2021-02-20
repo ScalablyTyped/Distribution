@@ -1,41 +1,36 @@
 package typings.tizenTvWebapis.avplayMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AVPlayPlayerState extends js.Object
+sealed trait AVPlayPlayerState extends StObject
 @JSImport("tizen-tv-webapis/avplay", "AVPlayPlayerState")
 @js.native
-object AVPlayPlayerState extends js.Object {
+object AVPlayPlayerState extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AVPlayPlayerState with String] = js.native
   
   @js.native
   sealed trait IDLE extends AVPlayPlayerState
-  /* "IDLE" */ @js.native
-  object IDLE extends TopLevel[IDLE with String]
+  /* "IDLE" */ val IDLE: typings.tizenTvWebapis.avplayMod.AVPlayPlayerState.IDLE with String = js.native
   
   @js.native
   sealed trait NONE extends AVPlayPlayerState
-  /* "NONE" */ @js.native
-  object NONE extends TopLevel[NONE with String]
+  /* "NONE" */ val NONE: typings.tizenTvWebapis.avplayMod.AVPlayPlayerState.NONE with String = js.native
   
   @js.native
   sealed trait PAUSED extends AVPlayPlayerState
-  /* "PAUSED" */ @js.native
-  object PAUSED extends TopLevel[PAUSED with String]
+  /* "PAUSED" */ val PAUSED: typings.tizenTvWebapis.avplayMod.AVPlayPlayerState.PAUSED with String = js.native
   
   @js.native
   sealed trait PLAYING extends AVPlayPlayerState
-  /* "PLAYING" */ @js.native
-  object PLAYING extends TopLevel[PLAYING with String]
+  /* "PLAYING" */ val PLAYING: typings.tizenTvWebapis.avplayMod.AVPlayPlayerState.PLAYING with String = js.native
   
   @js.native
   sealed trait READY extends AVPlayPlayerState
-  /* "READY" */ @js.native
-  object READY extends TopLevel[READY with String]
+  /* "READY" */ val READY: typings.tizenTvWebapis.avplayMod.AVPlayPlayerState.READY with String = js.native
 }

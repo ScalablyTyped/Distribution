@@ -1,11 +1,12 @@
 package typings.three.webXRMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRRenderStateInit extends js.Object {
+trait XRRenderStateInit extends StObject {
   
   var baseLayer: js.UndefOr[XRWebGLLayer] = js.native
   
@@ -24,42 +25,30 @@ object XRRenderStateInit {
   }
   
   @scala.inline
-  implicit class XRRenderStateInitOps[Self <: XRRenderStateInit] (val x: Self) extends AnyVal {
+  implicit class XRRenderStateInitMutableBuilder[Self <: XRRenderStateInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseLayer(value: XRWebGLLayer): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseLayerUndefined: Self = StObject.set(x, "baseLayer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepthFar(value: Double): Self = StObject.set(x, "depthFar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLayer(value: XRWebGLLayer): Self = this.set("baseLayer", value.asInstanceOf[js.Any])
+    def setDepthFarUndefined: Self = StObject.set(x, "depthFar", js.undefined)
     
     @scala.inline
-    def deleteBaseLayer: Self = this.set("baseLayer", js.undefined)
+    def setDepthNear(value: Double): Self = StObject.set(x, "depthNear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthFar(value: Double): Self = this.set("depthFar", value.asInstanceOf[js.Any])
+    def setDepthNearUndefined: Self = StObject.set(x, "depthNear", js.undefined)
     
     @scala.inline
-    def deleteDepthFar: Self = this.set("depthFar", js.undefined)
+    def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthNear(value: Double): Self = this.set("depthNear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDepthNear: Self = this.set("depthNear", js.undefined)
-    
-    @scala.inline
-    def setInlineVerticalFieldOfView(value: Double): Self = this.set("inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineVerticalFieldOfView: Self = this.set("inlineVerticalFieldOfView", js.undefined)
+    def setInlineVerticalFieldOfViewUndefined: Self = StObject.set(x, "inlineVerticalFieldOfView", js.undefined)
   }
 }

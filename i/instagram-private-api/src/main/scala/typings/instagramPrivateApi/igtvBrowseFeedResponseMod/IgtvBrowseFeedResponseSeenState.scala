@@ -1,8 +1,9 @@
 package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvBrowseFeedResponseSeenState extends js.Object
+trait IgtvBrowseFeedResponseSeenState extends StObject

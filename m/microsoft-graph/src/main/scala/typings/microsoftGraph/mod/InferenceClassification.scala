@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object InferenceClassification {
   }
   
   @scala.inline
-  implicit class InferenceClassificationOps[Self <: InferenceClassification] (val x: Self) extends AnyVal {
+  implicit class InferenceClassificationMutableBuilder[Self <: InferenceClassification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverrides(value: NullableOption[js.Array[InferenceClassificationOverride]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverridesNull: Self = StObject.set(x, "overrides", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def setOverridesVarargs(value: InferenceClassificationOverride*): Self = this.set("overrides", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverrides(value: NullableOption[js.Array[InferenceClassificationOverride]]): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
-    
-    @scala.inline
-    def setOverridesNull: Self = this.set("overrides", null)
+    def setOverridesVarargs(value: InferenceClassificationOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

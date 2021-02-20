@@ -1,12 +1,13 @@
 package typings.hasura.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasuraMutationResponse[T /* <: Record[String, _] */] extends js.Object {
+trait HasuraMutationResponse[T /* <: Record[String, _] */] extends StObject {
   
   var affected_rows: js.UndefOr[Double] = js.native
   
@@ -21,30 +22,18 @@ object HasuraMutationResponse {
   }
   
   @scala.inline
-  implicit class HasuraMutationResponseOps[Self <: HasuraMutationResponse[_], T /* <: Record[String, _] */] (val x: Self with HasuraMutationResponse[T]) extends AnyVal {
+  implicit class HasuraMutationResponseMutableBuilder[Self <: HasuraMutationResponse[_], T /* <: Record[String, _] */] (val x: Self with HasuraMutationResponse[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffected_rows(value: Double): Self = StObject.set(x, "affected_rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffected_rowsUndefined: Self = StObject.set(x, "affected_rows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturning(value: js.Array[HasuraDataItem[T]]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturningVarargs(value: HasuraDataItem[T]*): Self = this.set("returning", js.Array(value :_*))
-    
-    @scala.inline
-    def setReturning(value: js.Array[HasuraDataItem[T]]): Self = this.set("returning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAffected_rows(value: Double): Self = this.set("affected_rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAffected_rows: Self = this.set("affected_rows", js.undefined)
+    def setReturningVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "returning", js.Array(value :_*))
   }
 }

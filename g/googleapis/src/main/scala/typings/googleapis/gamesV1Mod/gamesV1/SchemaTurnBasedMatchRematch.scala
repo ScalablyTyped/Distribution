@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a rematch response.
   */
 @js.native
-trait SchemaTurnBasedMatchRematch extends js.Object {
+trait SchemaTurnBasedMatchRematch extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -37,36 +38,24 @@ object SchemaTurnBasedMatchRematch {
   }
   
   @scala.inline
-  implicit class SchemaTurnBasedMatchRematchOps[Self <: SchemaTurnBasedMatchRematch] (val x: Self) extends AnyVal {
+  implicit class SchemaTurnBasedMatchRematchMutableBuilder[Self <: SchemaTurnBasedMatchRematch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousMatch(value: SchemaTurnBasedMatch): Self = StObject.set(x, "previousMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPreviousMatchUndefined: Self = StObject.set(x, "previousMatch", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRematch(value: SchemaTurnBasedMatch): Self = StObject.set(x, "rematch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousMatch(value: SchemaTurnBasedMatch): Self = this.set("previousMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousMatch: Self = this.set("previousMatch", js.undefined)
-    
-    @scala.inline
-    def setRematch(value: SchemaTurnBasedMatch): Self = this.set("rematch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRematch: Self = this.set("rematch", js.undefined)
+    def setRematchUndefined: Self = StObject.set(x, "rematch", js.undefined)
   }
 }

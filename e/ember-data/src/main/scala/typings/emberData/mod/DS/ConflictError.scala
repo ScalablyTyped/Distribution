@@ -1,6 +1,6 @@
 package typings.emberData.mod.DS
 
-import typings.emberObject.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,4 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.ConflictError")
 @js.native
-class ConflictError () extends default
+class ConflictError () extends AdapterError

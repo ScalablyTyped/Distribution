@@ -1,11 +1,12 @@
 package typings.uiGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBuildColumnsOptions extends js.Object {
+trait IBuildColumnsOptions extends StObject {
   
   var orderByColumnDefs: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object IBuildColumnsOptions {
   }
   
   @scala.inline
-  implicit class IBuildColumnsOptionsOps[Self <: IBuildColumnsOptions] (val x: Self) extends AnyVal {
+  implicit class IBuildColumnsOptionsMutableBuilder[Self <: IBuildColumnsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderByColumnDefs(value: Boolean): Self = StObject.set(x, "orderByColumnDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrderByColumnDefs(value: Boolean): Self = this.set("orderByColumnDefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderByColumnDefs: Self = this.set("orderByColumnDefs", js.undefined)
+    def setOrderByColumnDefsUndefined: Self = StObject.set(x, "orderByColumnDefs", js.undefined)
   }
 }

@@ -3,15 +3,15 @@ package typings.cuint
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable4
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cuint", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("cuint", "UINT32")
   @js.native
   class UINT32 protected () extends Uint {
     // called as a constructor:
@@ -21,9 +21,12 @@ object mod extends js.Object {
     def this(low: Double, high: Double) = this()
     def this(text: String, radix: Double) = this()
   }
+  @JSImport("cuint", "UINT32")
   @js.native
-  object UINT32 extends TopLevel[UintConstructor[Uint]]
+  val UINT32: UintConstructor[Uint] = js.native
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("cuint", "UINT64")
   @js.native
   class UINT64 protected () extends Uint {
     // called as a constructor:
@@ -35,11 +38,12 @@ object mod extends js.Object {
     // called as constructor:
     def this(a00: Double, a16: Double, a32: Double, a48: Double) = this()
   }
+  @JSImport("cuint", "UINT64")
   @js.native
-  object UINT64 extends TopLevel[Uint64Constructor[Uint]]
+  val UINT64: Uint64Constructor[Uint] = js.native
   
   @js.native
-  trait Uint extends js.Object {
+  trait Uint extends StObject {
     
     var _high: Double = js.native
     

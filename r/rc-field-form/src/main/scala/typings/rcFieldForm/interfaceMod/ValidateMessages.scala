@@ -4,18 +4,19 @@ import typings.rcFieldForm.anon.Array
 import typings.rcFieldForm.anon.Format
 import typings.rcFieldForm.anon.Len
 import typings.rcFieldForm.anon.Mismatch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateMessages extends js.Object {
+trait ValidateMessages extends StObject {
+  
+  var default: js.UndefOr[ValidateMessage] = js.native
   
   var array: js.UndefOr[Len] = js.native
   
   var date: js.UndefOr[Format] = js.native
-  
-  var default: js.UndefOr[ValidateMessage] = js.native
   
   var enum: js.UndefOr[ValidateMessage] = js.native
   
@@ -40,90 +41,78 @@ object ValidateMessages {
   }
   
   @scala.inline
-  implicit class ValidateMessagesOps[Self <: ValidateMessages] (val x: Self) extends AnyVal {
+  implicit class ValidateMessagesMutableBuilder[Self <: ValidateMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: Len): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: Format): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: Len): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setDefault(value: ValidateMessage): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Format): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDefaultFunction0(value: () => String): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setDefaultFunction0(value: () => String): Self = this.set("default", js.Any.fromFunction0(value))
+    def setEnum(value: ValidateMessage): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: ValidateMessage): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setEnumFunction0(value: () => String): Self = StObject.set(x, "enum", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
     @scala.inline
-    def setEnumFunction0(value: () => String): Self = this.set("enum", js.Any.fromFunction0(value))
+    def setNumber(value: Len): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnum(value: ValidateMessage): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteEnum: Self = this.set("enum", js.undefined)
+    def setPattern(value: Mismatch): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Len): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setRequired(value: ValidateMessage): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: Mismatch): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setRequiredFunction0(value: () => String): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setRequiredFunction0(value: () => String): Self = this.set("required", js.Any.fromFunction0(value))
+    def setString(value: Len): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: ValidateMessage): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setTypes(value: Array): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setString(value: Len): Self = this.set("string", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setWhitespace(value: ValidateMessage): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: Array): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setWhitespaceFunction0(value: () => String): Self = StObject.set(x, "whitespace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
-    
-    @scala.inline
-    def setWhitespaceFunction0(value: () => String): Self = this.set("whitespace", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWhitespace(value: ValidateMessage): Self = this.set("whitespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitespace: Self = this.set("whitespace", js.undefined)
+    def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }
 }

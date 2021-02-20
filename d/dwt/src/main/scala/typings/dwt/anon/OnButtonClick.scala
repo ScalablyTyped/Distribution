@@ -1,21 +1,22 @@
 package typings.dwt.anon
 
 import typings.dwt.dwtNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnButtonClick extends js.Object {
+trait OnButtonClick extends StObject {
   
-   // Example: 'pager'
+  // Example: 'pager'
   var iconClass: js.UndefOr[String] = js.native
   
   var location: js.UndefOr[String] = js.native
   
   var onButtonClick: js.UndefOr[String] = js.native
   
-   // Example: 'icon-pageEnd'
+  // Example: 'icon-pageEnd'
   var sequence: js.UndefOr[`5`] = js.native
   
   var visibility: js.UndefOr[Boolean] = js.native
@@ -29,48 +30,36 @@ object OnButtonClick {
   }
   
   @scala.inline
-  implicit class OnButtonClickOps[Self <: OnButtonClick] (val x: Self) extends AnyVal {
+  implicit class OnButtonClickMutableBuilder[Self <: OnButtonClick] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setOnButtonClick(value: String): Self = StObject.set(x, "onButtonClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOnButtonClickUndefined: Self = StObject.set(x, "onButtonClick", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setSequence(value: `5`): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnButtonClick(value: String): Self = this.set("onButtonClick", value.asInstanceOf[js.Any])
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     @scala.inline
-    def deleteOnButtonClick: Self = this.set("onButtonClick", js.undefined)
+    def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: `5`): Self = this.set("sequence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: Boolean): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

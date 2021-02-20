@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * accept a name or number.
   */
 @js.native
-trait SchemaIntOrString extends js.Object {
+trait SchemaIntOrString extends StObject {
   
   /**
     * The int value.
@@ -37,36 +38,24 @@ object SchemaIntOrString {
   }
   
   @scala.inline
-  implicit class SchemaIntOrStringOps[Self <: SchemaIntOrString] (val x: Self) extends AnyVal {
+  implicit class SchemaIntOrStringMutableBuilder[Self <: SchemaIntOrString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntVal(value: Double): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrVal(value: String): Self = StObject.set(x, "strVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntVal(value: Double): Self = this.set("intVal", value.asInstanceOf[js.Any])
+    def setStrValUndefined: Self = StObject.set(x, "strVal", js.undefined)
     
     @scala.inline
-    def deleteIntVal: Self = this.set("intVal", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrVal(value: String): Self = this.set("strVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrVal: Self = this.set("strVal", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

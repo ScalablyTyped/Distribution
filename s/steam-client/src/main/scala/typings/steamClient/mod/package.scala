@@ -1,5 +1,6 @@
 package typings.steamClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,4 +15,7 @@ package object mod {
     ], 
     scala.Unit
   ]
+  
+  @scala.inline
+  def servers: js.Array[typings.steamClient.mod.Server] = typings.steamClient.mod.^.asInstanceOf[js.Dynamic].selectDynamic("servers").asInstanceOf[js.Array[typings.steamClient.mod.Server]]
 }

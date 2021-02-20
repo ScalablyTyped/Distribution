@@ -1,12 +1,13 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.FilterOperators")
 @js.native
-object FilterOperators extends js.Object {
+object FilterOperators extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.FilterOperators with Double] = js.native

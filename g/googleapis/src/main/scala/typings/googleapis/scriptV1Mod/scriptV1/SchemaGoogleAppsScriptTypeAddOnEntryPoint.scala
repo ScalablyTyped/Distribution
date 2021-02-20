@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An add-on entry point.
   */
 @js.native
-trait SchemaGoogleAppsScriptTypeAddOnEntryPoint extends js.Object {
+trait SchemaGoogleAppsScriptTypeAddOnEntryPoint extends StObject {
   
   /**
     * The add-on&#39;s required list of supported container types.
@@ -49,54 +50,42 @@ object SchemaGoogleAppsScriptTypeAddOnEntryPoint {
   }
   
   @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeAddOnEntryPointOps[Self <: SchemaGoogleAppsScriptTypeAddOnEntryPoint] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleAppsScriptTypeAddOnEntryPointMutableBuilder[Self <: SchemaGoogleAppsScriptTypeAddOnEntryPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOnType(value: String): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnTypeUndefined: Self = StObject.set(x, "addOnType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnType(value: String): Self = this.set("addOnType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAddOnType: Self = this.set("addOnType", js.undefined)
+    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPostInstallTipUrl(value: String): Self = StObject.set(x, "postInstallTipUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpUrl(value: String): Self = this.set("helpUrl", value.asInstanceOf[js.Any])
+    def setPostInstallTipUrlUndefined: Self = StObject.set(x, "postInstallTipUrl", js.undefined)
     
     @scala.inline
-    def deleteHelpUrl: Self = this.set("helpUrl", js.undefined)
+    def setReportIssueUrl(value: String): Self = StObject.set(x, "reportIssueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostInstallTipUrl(value: String): Self = this.set("postInstallTipUrl", value.asInstanceOf[js.Any])
+    def setReportIssueUrlUndefined: Self = StObject.set(x, "reportIssueUrl", js.undefined)
     
     @scala.inline
-    def deletePostInstallTipUrl: Self = this.set("postInstallTipUrl", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportIssueUrl(value: String): Self = this.set("reportIssueUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportIssueUrl: Self = this.set("reportIssueUrl", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

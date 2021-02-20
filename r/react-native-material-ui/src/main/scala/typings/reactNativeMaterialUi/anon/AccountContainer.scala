@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.anon
 
 import typings.reactNativeMaterialUi.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountContainer extends js.Object {
+trait AccountContainer extends StObject {
   
   var accountContainer: js.UndefOr[ViewStyle] = js.native
   
@@ -29,72 +30,60 @@ object AccountContainer {
   }
   
   @scala.inline
-  implicit class AccountContainerOps[Self <: AccountContainer] (val x: Self) extends AnyVal {
+  implicit class AccountContainerMutableBuilder[Self <: AccountContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountContainer(value: ViewStyle): Self = StObject.set(x, "accountContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountContainerNull: Self = StObject.set(x, "accountContainer", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountContainerUndefined: Self = StObject.set(x, "accountContainer", js.undefined)
     
     @scala.inline
-    def setAccountContainer(value: ViewStyle): Self = this.set("accountContainer", value.asInstanceOf[js.Any])
+    def setActiveAvatarContainer(value: ViewStyle): Self = StObject.set(x, "activeAvatarContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountContainer: Self = this.set("accountContainer", js.undefined)
+    def setActiveAvatarContainerNull: Self = StObject.set(x, "activeAvatarContainer", null)
     
     @scala.inline
-    def setAccountContainerNull: Self = this.set("accountContainer", null)
+    def setActiveAvatarContainerUndefined: Self = StObject.set(x, "activeAvatarContainer", js.undefined)
     
     @scala.inline
-    def setActiveAvatarContainer(value: ViewStyle): Self = this.set("activeAvatarContainer", value.asInstanceOf[js.Any])
+    def setAvatarsContainer(value: ViewStyle): Self = StObject.set(x, "avatarsContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveAvatarContainer: Self = this.set("activeAvatarContainer", js.undefined)
+    def setAvatarsContainerNull: Self = StObject.set(x, "avatarsContainer", null)
     
     @scala.inline
-    def setActiveAvatarContainerNull: Self = this.set("activeAvatarContainer", null)
+    def setAvatarsContainerUndefined: Self = StObject.set(x, "avatarsContainer", js.undefined)
     
     @scala.inline
-    def setAvatarsContainer(value: ViewStyle): Self = this.set("avatarsContainer", value.asInstanceOf[js.Any])
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvatarsContainer: Self = this.set("avatarsContainer", js.undefined)
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def setAvatarsContainerNull: Self = this.set("avatarsContainer", null)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setInactiveAvatarContainer(value: ViewStyle): Self = StObject.set(x, "inactiveAvatarContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setInactiveAvatarContainerNull: Self = StObject.set(x, "inactiveAvatarContainer", null)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setInactiveAvatarContainerUndefined: Self = StObject.set(x, "inactiveAvatarContainer", js.undefined)
     
     @scala.inline
-    def setInactiveAvatarContainer(value: ViewStyle): Self = this.set("inactiveAvatarContainer", value.asInstanceOf[js.Any])
+    def setTopContainer(value: ViewStyle): Self = StObject.set(x, "topContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInactiveAvatarContainer: Self = this.set("inactiveAvatarContainer", js.undefined)
+    def setTopContainerNull: Self = StObject.set(x, "topContainer", null)
     
     @scala.inline
-    def setInactiveAvatarContainerNull: Self = this.set("inactiveAvatarContainer", null)
-    
-    @scala.inline
-    def setTopContainer(value: ViewStyle): Self = this.set("topContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopContainer: Self = this.set("topContainer", js.undefined)
-    
-    @scala.inline
-    def setTopContainerNull: Self = this.set("topContainer", null)
+    def setTopContainerUndefined: Self = StObject.set(x, "topContainer", js.undefined)
   }
 }

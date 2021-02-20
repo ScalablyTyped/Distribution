@@ -4,16 +4,18 @@ import typings.materialBase.componentMod.MDCComponent
 import typings.materialDialog.foundationMod.MDCDialogFoundation
 import typings.materialDialog.utilMod.MDCDialogFocusTrapFactory
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/dialog/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/dialog/component", "MDCDialog")
   @js.native
-  class MDCDialog () extends MDCComponent[MDCDialogFoundation] {
+  class MDCDialog protected () extends MDCComponent[MDCDialogFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCDialogFoundation, args: js.Any*) = this()
     
     def autoStackButtons: Boolean = js.native
     def autoStackButtons_=(autoStack: Boolean): Unit = js.native
@@ -37,9 +39,10 @@ object componentMod extends js.Object {
     def scrimClickAction_=(action: String): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCDialog extends js.Object {
+  object MDCDialog {
     
+    @JSImport("@material/dialog/component", "MDCDialog.attachTo")
+    @js.native
     def attachTo(root: Element): MDCDialog = js.native
   }
 }

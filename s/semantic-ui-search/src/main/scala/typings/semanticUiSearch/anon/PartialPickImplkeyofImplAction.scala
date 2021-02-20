@@ -1,12 +1,13 @@
 package typings.semanticUiSearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.FieldsSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.FieldsSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplAction extends js.Object {
+trait PartialPickImplkeyofImplAction extends StObject {
   
   var action: js.UndefOr[String] = js.native
   
@@ -39,84 +40,72 @@ object PartialPickImplkeyofImplAction {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplActionOps[Self <: PartialPickImplkeyofImplAction] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplActionMutableBuilder[Self <: PartialPickImplkeyofImplAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionTextUndefined: Self = StObject.set(x, "actionText", js.undefined)
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setActionURL(value: String): Self = StObject.set(x, "actionURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setActionURLUndefined: Self = StObject.set(x, "actionURL", js.undefined)
     
     @scala.inline
-    def setActionText(value: String): Self = this.set("actionText", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def deleteActionText: Self = this.set("actionText", js.undefined)
+    def setCategories(value: String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionURL(value: String): Self = this.set("actionURL", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def deleteActionURL: Self = this.set("actionURL", js.undefined)
+    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: String): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCategoryNameUndefined: Self = StObject.set(x, "categoryName", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setCategoryResults(value: String): Self = StObject.set(x, "categoryResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryName(value: String): Self = this.set("categoryName", value.asInstanceOf[js.Any])
+    def setCategoryResultsUndefined: Self = StObject.set(x, "categoryResults", js.undefined)
     
     @scala.inline
-    def deleteCategoryName: Self = this.set("categoryName", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryResults(value: String): Self = this.set("categoryResults", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCategoryResults: Self = this.set("categoryResults", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setResults(value: String): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: String): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

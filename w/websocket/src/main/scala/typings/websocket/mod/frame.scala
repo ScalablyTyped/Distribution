@@ -1,13 +1,14 @@
 package typings.websocket.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("websocket", "frame")
 @js.native
-class frame () extends js.Object {
+class frame () extends StObject {
   
   def addData(bufferList: IBufferList): Boolean = js.native
   

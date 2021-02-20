@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import typings.officeJs.anon.CellPropertiesFormatLoadOAutoIndent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,36 +49,24 @@ object ColumnPropertiesLoadOptions {
   }
   
   @scala.inline
-  implicit class ColumnPropertiesLoadOptionsOps[Self <: ColumnPropertiesLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ColumnPropertiesLoadOptionsMutableBuilder[Self <: ColumnPropertiesLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHidden(value: Boolean): Self = this.set("columnHidden", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnHidden: Self = this.set("columnHidden", js.undefined)
+    def setFormat(value: CellPropertiesFormatLoadOAutoIndent): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Boolean): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: CellPropertiesFormatLoadOAutoIndent): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

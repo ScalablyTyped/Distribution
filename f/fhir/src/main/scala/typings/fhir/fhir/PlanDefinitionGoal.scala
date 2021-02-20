@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,66 +55,54 @@ object PlanDefinitionGoal {
   }
   
   @scala.inline
-  implicit class PlanDefinitionGoalOps[Self <: PlanDefinitionGoal] (val x: Self) extends AnyVal {
+  implicit class PlanDefinitionGoalMutableBuilder[Self <: PlanDefinitionGoal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[CodeableConcept]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressesVarargs(value: CodeableConcept*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: CodeableConcept): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressesVarargs(value: CodeableConcept*): Self = this.set("addresses", js.Array(value :_*))
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def setAddresses(value: js.Array[CodeableConcept]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setDescription(value: CodeableConcept): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    def setDocumentation(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setDocumentationVarargs(value: RelatedArtifact*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentationVarargs(value: RelatedArtifact*): Self = this.set("documentation", js.Array(value :_*))
+    def setPriority(value: CodeableConcept): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: js.Array[RelatedArtifact]): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setStart(value: CodeableConcept): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: CodeableConcept): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setTarget(value: js.Array[PlanDefinitionGoalTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: CodeableConcept): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setTargetVarargs(value: PlanDefinitionGoalTarget*): Self = this.set("target", js.Array(value :_*))
-    
-    @scala.inline
-    def setTarget(value: js.Array[PlanDefinitionGoalTarget]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetVarargs(value: PlanDefinitionGoalTarget*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

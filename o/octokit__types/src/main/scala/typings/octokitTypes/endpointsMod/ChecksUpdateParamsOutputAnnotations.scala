@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.failure
 import typings.octokitTypes.octokitTypesStrings.notice
 import typings.octokitTypes.octokitTypesStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChecksUpdateParamsOutputAnnotations extends js.Object {
+trait ChecksUpdateParamsOutputAnnotations extends StObject {
   
   var annotation_level: notice | warning | failure = js.native
   
@@ -43,57 +44,45 @@ object ChecksUpdateParamsOutputAnnotations {
   }
   
   @scala.inline
-  implicit class ChecksUpdateParamsOutputAnnotationsOps[Self <: ChecksUpdateParamsOutputAnnotations] (val x: Self) extends AnyVal {
+  implicit class ChecksUpdateParamsOutputAnnotationsMutableBuilder[Self <: ChecksUpdateParamsOutputAnnotations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation_level(value: notice | warning | failure): Self = StObject.set(x, "annotation_level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_column(value: Double): Self = StObject.set(x, "end_column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd_columnUndefined: Self = StObject.set(x, "end_column", js.undefined)
     
     @scala.inline
-    def setAnnotation_level(value: notice | warning | failure): Self = this.set("annotation_level", value.asInstanceOf[js.Any])
+    def setEnd_line(value: Double): Self = StObject.set(x, "end_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_line(value: Double): Self = this.set("end_line", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRaw_details(value: String): Self = StObject.set(x, "raw_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_line(value: Double): Self = this.set("start_line", value.asInstanceOf[js.Any])
+    def setRaw_detailsUndefined: Self = StObject.set(x, "raw_details", js.undefined)
     
     @scala.inline
-    def setEnd_column(value: Double): Self = this.set("end_column", value.asInstanceOf[js.Any])
+    def setStart_column(value: Double): Self = StObject.set(x, "start_column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd_column: Self = this.set("end_column", js.undefined)
+    def setStart_columnUndefined: Self = StObject.set(x, "start_column", js.undefined)
     
     @scala.inline
-    def setRaw_details(value: String): Self = this.set("raw_details", value.asInstanceOf[js.Any])
+    def setStart_line(value: Double): Self = StObject.set(x, "start_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRaw_details: Self = this.set("raw_details", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_column(value: Double): Self = this.set("start_column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_column: Self = this.set("start_column", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

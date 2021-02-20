@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2RayCastInput extends js.Object {
+trait b2RayCastInput extends StObject {
   
   /**
     * Truncate the ray to reach up to this fraction from p1 to p2
@@ -32,27 +33,15 @@ object b2RayCastInput {
   }
   
   @scala.inline
-  implicit class b2RayCastInputOps[Self <: b2RayCastInput] (val x: Self) extends AnyVal {
+  implicit class b2RayCastInputMutableBuilder[Self <: b2RayCastInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxFraction(value: Double): Self = StObject.set(x, "maxFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setP1(value: b2Vec2): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxFraction(value: Double): Self = this.set("maxFraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP1(value: b2Vec2): Self = this.set("p1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP2(value: b2Vec2): Self = this.set("p2", value.asInstanceOf[js.Any])
+    def setP2(value: b2Vec2): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.stripeV3.stripe
 
 import typings.stripeV3.stripeV3Strings.list
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait List[T] extends js.Object {
+trait List[T] extends StObject {
   
   /**
     * An array containing the actual response elements, paginated by any request parameters.
@@ -38,33 +39,21 @@ object List {
   }
   
   @scala.inline
-  implicit class ListOps[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
+  implicit class ListMutableBuilder[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    def setObject(value: list): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHas_more(value: Boolean): Self = this.set("has_more", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: list): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

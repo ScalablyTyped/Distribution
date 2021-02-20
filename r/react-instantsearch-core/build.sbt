@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch-core"
-version := "6.3-dt-20200911Z-d64d8e"
+version := "6.3-dt-20200911Z-1cd6b9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "algolia__cache-common" % "4.8.0-d90ed9",
-  "org.scalablytyped" %%% "algolia__client-analytics" % "4.8.0-11c3f5",
-  "org.scalablytyped" %%% "algolia__client-common" % "4.8.0-3a6383",
-  "org.scalablytyped" %%% "algolia__client-recommendation" % "4.8.0-3595cc",
-  "org.scalablytyped" %%% "algolia__client-search" % "4.8.0-a6e45d",
-  "org.scalablytyped" %%% "algolia__logger-common" % "4.8.0-97ba34",
-  "org.scalablytyped" %%% "algolia__requester-common" % "4.8.0-88536f",
-  "org.scalablytyped" %%% "algolia__transporter" % "4.8.0-a32a08",
-  "org.scalablytyped" %%% "algoliasearch" % "4.8.0-8509ad",
-  "org.scalablytyped" %%% "algoliasearch-helper" % "3.3.2-07e46d",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
-  "org.scalablytyped" %%% "events" % "3.0-dt-20200515Z-d373f2",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "algolia__cache-common" % "4.8.0-f0cea6",
+  "org.scalablytyped" %%% "algolia__client-analytics" % "4.8.0-a75c9f",
+  "org.scalablytyped" %%% "algolia__client-common" % "4.8.0-28dcab",
+  "org.scalablytyped" %%% "algolia__client-recommendation" % "4.8.0-b57400",
+  "org.scalablytyped" %%% "algolia__client-search" % "4.8.0-69c03e",
+  "org.scalablytyped" %%% "algolia__logger-common" % "4.8.0-fdbb57",
+  "org.scalablytyped" %%% "algolia__requester-common" % "4.8.0-1c03c5",
+  "org.scalablytyped" %%% "algolia__transporter" % "4.8.0-c18b5b",
+  "org.scalablytyped" %%% "algoliasearch" % "4.8.0-488bff",
+  "org.scalablytyped" %%% "algoliasearch-helper" % "3.3.2-5e3c2d",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
+  "org.scalablytyped" %%% "events" % "3.0-dt-20200515Z-c21624",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

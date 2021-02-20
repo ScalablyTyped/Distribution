@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemApksListResponse extends js.Object {
+trait SystemApksListResponse extends StObject {
   
   /** All system APK variants created. */
   var variants: js.UndefOr[js.Array[Variant]] = js.native
@@ -19,27 +20,15 @@ object SystemApksListResponse {
   }
   
   @scala.inline
-  implicit class SystemApksListResponseOps[Self <: SystemApksListResponse] (val x: Self) extends AnyVal {
+  implicit class SystemApksListResponseMutableBuilder[Self <: SystemApksListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVariantsVarargs(value: Variant*): Self = this.set("variants", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariants(value: js.Array[Variant]): Self = this.set("variants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariants: Self = this.set("variants", js.undefined)
+    def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
   }
 }

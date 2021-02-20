@@ -5,13 +5,14 @@ import typings.angularCompiler.anon.ChangeDetection
 import typings.angularCompiler.anon.ComponentFactory
 import typings.angularCompiler.coreMod.ChangeDetectionStrategy
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
 @js.native
-class CompileDirectiveMetadata protected () extends js.Object {
+class CompileDirectiveMetadata protected () extends StObject {
   def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: ComponentFactory) = this()
   
   var changeDetection: ChangeDetectionStrategy | Null = js.native
@@ -59,10 +60,10 @@ class CompileDirectiveMetadata protected () extends js.Object {
   var viewQueries: js.Array[CompileQueryMetadata] = js.native
 }
 /* static members */
-@JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
-@js.native
-object CompileDirectiveMetadata extends js.Object {
+object CompileDirectiveMetadata {
   
+  @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata.create")
+  @js.native
   def create(
     hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: ChangeDetection
   ): CompileDirectiveMetadata = js.native

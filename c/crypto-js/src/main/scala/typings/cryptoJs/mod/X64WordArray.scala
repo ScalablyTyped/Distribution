@@ -1,5 +1,6 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An array of 64-bit words.
   */
 @js.native
-trait X64WordArray extends js.Object {
+trait X64WordArray extends StObject {
   
   /**
     * The number of significant bytes in this word array.
@@ -40,30 +41,18 @@ object X64WordArray {
   }
   
   @scala.inline
-  implicit class X64WordArrayOps[Self <: X64WordArray] (val x: Self) extends AnyVal {
+  implicit class X64WordArrayMutableBuilder[Self <: X64WordArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToX32(value: () => WordArray): Self = StObject.set(x, "toX32", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigBytes(value: Double): Self = this.set("sigBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToX32(value: () => WordArray): Self = this.set("toX32", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWordsVarargs(value: Double*): Self = this.set("words", js.Array(value :_*))
-    
-    @scala.inline
-    def setWords(value: js.Array[Double]): Self = this.set("words", value.asInstanceOf[js.Any])
+    def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

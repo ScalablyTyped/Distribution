@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOutboundCrossClusterSearchConnectionsResponse extends js.Object {
+trait DescribeOutboundCrossClusterSearchConnectionsResponse extends StObject {
   
   /**
     * Consists of list of OutboundCrossClusterSearchConnection matching the specified filter criteria.
@@ -26,33 +27,21 @@ object DescribeOutboundCrossClusterSearchConnectionsResponse {
   }
   
   @scala.inline
-  implicit class DescribeOutboundCrossClusterSearchConnectionsResponseOps[Self <: DescribeOutboundCrossClusterSearchConnectionsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeOutboundCrossClusterSearchConnectionsResponseMutableBuilder[Self <: DescribeOutboundCrossClusterSearchConnectionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrossClusterSearchConnections(value: OutboundCrossClusterSearchConnections): Self = StObject.set(x, "CrossClusterSearchConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossClusterSearchConnectionsUndefined: Self = StObject.set(x, "CrossClusterSearchConnections", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossClusterSearchConnectionsVarargs(value: OutboundCrossClusterSearchConnection*): Self = StObject.set(x, "CrossClusterSearchConnections", js.Array(value :_*))
     
     @scala.inline
-    def setCrossClusterSearchConnectionsVarargs(value: OutboundCrossClusterSearchConnection*): Self = this.set("CrossClusterSearchConnections", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossClusterSearchConnections(value: OutboundCrossClusterSearchConnections): Self = this.set("CrossClusterSearchConnections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossClusterSearchConnections: Self = this.set("CrossClusterSearchConnections", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

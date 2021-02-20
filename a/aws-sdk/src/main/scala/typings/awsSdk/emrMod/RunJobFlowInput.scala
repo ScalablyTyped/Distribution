@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunJobFlowInput extends js.Object {
+trait RunJobFlowInput extends StObject {
   
   /**
     * A JSON string for selecting additional features.
@@ -151,198 +152,186 @@ object RunJobFlowInput {
   }
   
   @scala.inline
-  implicit class RunJobFlowInputOps[Self <: RunJobFlowInput] (val x: Self) extends AnyVal {
+  implicit class RunJobFlowInputMutableBuilder[Self <: RunJobFlowInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalInfo(value: XmlString): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalInfoUndefined: Self = StObject.set(x, "AdditionalInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmiVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "AmiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: JobFlowInstancesConfig): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    def setAmiVersionUndefined: Self = StObject.set(x, "AmiVersion", js.undefined)
     
     @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setApplications(value: ApplicationList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalInfo(value: XmlString): Self = this.set("AdditionalInfo", value.asInstanceOf[js.Any])
+    def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
     @scala.inline
-    def deleteAdditionalInfo: Self = this.set("AdditionalInfo", js.undefined)
+    def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
     
     @scala.inline
-    def setAmiVersion(value: XmlStringMaxLen256): Self = this.set("AmiVersion", value.asInstanceOf[js.Any])
+    def setAutoScalingRole(value: XmlString): Self = StObject.set(x, "AutoScalingRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmiVersion: Self = this.set("AmiVersion", js.undefined)
+    def setAutoScalingRoleUndefined: Self = StObject.set(x, "AutoScalingRole", js.undefined)
     
     @scala.inline
-    def setApplicationsVarargs(value: Application*): Self = this.set("Applications", js.Array(value :_*))
+    def setBootstrapActions(value: BootstrapActionConfigList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplications(value: ApplicationList): Self = this.set("Applications", value.asInstanceOf[js.Any])
+    def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
     
     @scala.inline
-    def deleteApplications: Self = this.set("Applications", js.undefined)
+    def setBootstrapActionsVarargs(value: BootstrapActionConfig*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
     
     @scala.inline
-    def setAutoScalingRole(value: XmlString): Self = this.set("AutoScalingRole", value.asInstanceOf[js.Any])
+    def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoScalingRole: Self = this.set("AutoScalingRole", js.undefined)
+    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
     @scala.inline
-    def setBootstrapActionsVarargs(value: BootstrapActionConfig*): Self = this.set("BootstrapActions", js.Array(value :_*))
+    def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
     @scala.inline
-    def setBootstrapActions(value: BootstrapActionConfigList): Self = this.set("BootstrapActions", value.asInstanceOf[js.Any])
+    def setCustomAmiId(value: XmlStringMaxLen256): Self = StObject.set(x, "CustomAmiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootstrapActions: Self = this.set("BootstrapActions", js.undefined)
+    def setCustomAmiIdUndefined: Self = StObject.set(x, "CustomAmiId", js.undefined)
     
     @scala.inline
-    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    def setEbsRootVolumeSize(value: Integer): Self = StObject.set(x, "EbsRootVolumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    def setEbsRootVolumeSizeUndefined: Self = StObject.set(x, "EbsRootVolumeSize", js.undefined)
     
     @scala.inline
-    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    def setInstances(value: JobFlowInstancesConfig): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAmiId(value: XmlStringMaxLen256): Self = this.set("CustomAmiId", value.asInstanceOf[js.Any])
+    def setJobFlowRole(value: XmlString): Self = StObject.set(x, "JobFlowRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomAmiId: Self = this.set("CustomAmiId", js.undefined)
+    def setJobFlowRoleUndefined: Self = StObject.set(x, "JobFlowRole", js.undefined)
     
     @scala.inline
-    def setEbsRootVolumeSize(value: Integer): Self = this.set("EbsRootVolumeSize", value.asInstanceOf[js.Any])
+    def setKerberosAttributes(value: KerberosAttributes): Self = StObject.set(x, "KerberosAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEbsRootVolumeSize: Self = this.set("EbsRootVolumeSize", js.undefined)
+    def setKerberosAttributesUndefined: Self = StObject.set(x, "KerberosAttributes", js.undefined)
     
     @scala.inline
-    def setJobFlowRole(value: XmlString): Self = this.set("JobFlowRole", value.asInstanceOf[js.Any])
+    def setLogEncryptionKmsKeyId(value: XmlString): Self = StObject.set(x, "LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJobFlowRole: Self = this.set("JobFlowRole", js.undefined)
+    def setLogEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "LogEncryptionKmsKeyId", js.undefined)
     
     @scala.inline
-    def setKerberosAttributes(value: KerberosAttributes): Self = this.set("KerberosAttributes", value.asInstanceOf[js.Any])
+    def setLogUri(value: XmlString): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKerberosAttributes: Self = this.set("KerberosAttributes", js.undefined)
+    def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
     
     @scala.inline
-    def setLogEncryptionKmsKeyId(value: XmlString): Self = this.set("LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = StObject.set(x, "ManagedScalingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogEncryptionKmsKeyId: Self = this.set("LogEncryptionKmsKeyId", js.undefined)
+    def setManagedScalingPolicyUndefined: Self = StObject.set(x, "ManagedScalingPolicy", js.undefined)
     
     @scala.inline
-    def setLogUri(value: XmlString): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    def setNewSupportedProducts(value: NewSupportedProductsList): Self = StObject.set(x, "NewSupportedProducts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = this.set("ManagedScalingPolicy", value.asInstanceOf[js.Any])
+    def setNewSupportedProductsUndefined: Self = StObject.set(x, "NewSupportedProducts", js.undefined)
     
     @scala.inline
-    def deleteManagedScalingPolicy: Self = this.set("ManagedScalingPolicy", js.undefined)
+    def setNewSupportedProductsVarargs(value: SupportedProductConfig*): Self = StObject.set(x, "NewSupportedProducts", js.Array(value :_*))
     
     @scala.inline
-    def setNewSupportedProductsVarargs(value: SupportedProductConfig*): Self = this.set("NewSupportedProducts", js.Array(value :_*))
+    def setPlacementGroupConfigs(value: PlacementGroupConfigList): Self = StObject.set(x, "PlacementGroupConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSupportedProducts(value: NewSupportedProductsList): Self = this.set("NewSupportedProducts", value.asInstanceOf[js.Any])
+    def setPlacementGroupConfigsUndefined: Self = StObject.set(x, "PlacementGroupConfigs", js.undefined)
     
     @scala.inline
-    def deleteNewSupportedProducts: Self = this.set("NewSupportedProducts", js.undefined)
+    def setPlacementGroupConfigsVarargs(value: PlacementGroupConfig*): Self = StObject.set(x, "PlacementGroupConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setPlacementGroupConfigsVarargs(value: PlacementGroupConfig*): Self = this.set("PlacementGroupConfigs", js.Array(value :_*))
+    def setReleaseLabel(value: XmlStringMaxLen256): Self = StObject.set(x, "ReleaseLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementGroupConfigs(value: PlacementGroupConfigList): Self = this.set("PlacementGroupConfigs", value.asInstanceOf[js.Any])
+    def setReleaseLabelUndefined: Self = StObject.set(x, "ReleaseLabel", js.undefined)
     
     @scala.inline
-    def deletePlacementGroupConfigs: Self = this.set("PlacementGroupConfigs", js.undefined)
+    def setRepoUpgradeOnBoot(value: RepoUpgradeOnBoot): Self = StObject.set(x, "RepoUpgradeOnBoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseLabel(value: XmlStringMaxLen256): Self = this.set("ReleaseLabel", value.asInstanceOf[js.Any])
+    def setRepoUpgradeOnBootUndefined: Self = StObject.set(x, "RepoUpgradeOnBoot", js.undefined)
     
     @scala.inline
-    def deleteReleaseLabel: Self = this.set("ReleaseLabel", js.undefined)
+    def setScaleDownBehavior(value: ScaleDownBehavior): Self = StObject.set(x, "ScaleDownBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepoUpgradeOnBoot(value: RepoUpgradeOnBoot): Self = this.set("RepoUpgradeOnBoot", value.asInstanceOf[js.Any])
+    def setScaleDownBehaviorUndefined: Self = StObject.set(x, "ScaleDownBehavior", js.undefined)
     
     @scala.inline
-    def deleteRepoUpgradeOnBoot: Self = this.set("RepoUpgradeOnBoot", js.undefined)
+    def setSecurityConfiguration(value: XmlString): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleDownBehavior(value: ScaleDownBehavior): Self = this.set("ScaleDownBehavior", value.asInstanceOf[js.Any])
+    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
     
     @scala.inline
-    def deleteScaleDownBehavior: Self = this.set("ScaleDownBehavior", js.undefined)
+    def setServiceRole(value: XmlString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityConfiguration(value: XmlString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
     
     @scala.inline
-    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    def setStepConcurrencyLevel(value: Integer): Self = StObject.set(x, "StepConcurrencyLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRole(value: XmlString): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    def setStepConcurrencyLevelUndefined: Self = StObject.set(x, "StepConcurrencyLevel", js.undefined)
     
     @scala.inline
-    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    def setSteps(value: StepConfigList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepConcurrencyLevel(value: Integer): Self = this.set("StepConcurrencyLevel", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
     @scala.inline
-    def deleteStepConcurrencyLevel: Self = this.set("StepConcurrencyLevel", js.undefined)
+    def setStepsVarargs(value: StepConfig*): Self = StObject.set(x, "Steps", js.Array(value :_*))
     
     @scala.inline
-    def setStepsVarargs(value: StepConfig*): Self = this.set("Steps", js.Array(value :_*))
+    def setSupportedProducts(value: SupportedProductsList): Self = StObject.set(x, "SupportedProducts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: StepConfigList): Self = this.set("Steps", value.asInstanceOf[js.Any])
+    def setSupportedProductsUndefined: Self = StObject.set(x, "SupportedProducts", js.undefined)
     
     @scala.inline
-    def deleteSteps: Self = this.set("Steps", js.undefined)
+    def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = this.set("SupportedProducts", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedProducts(value: SupportedProductsList): Self = this.set("SupportedProducts", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSupportedProducts: Self = this.set("SupportedProducts", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVisibleToAllUsers(value: Boolean): Self = this.set("VisibleToAllUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleToAllUsers: Self = this.set("VisibleToAllUsers", js.undefined)
+    def setVisibleToAllUsersUndefined: Self = StObject.set(x, "VisibleToAllUsers", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITensor extends js.Object {
+trait ITensor extends StObject {
   
   /** Tensor boolVal */
   var boolVal: js.UndefOr[js.Array[Boolean] | Null] = js.native
@@ -56,162 +57,150 @@ object ITensor {
   }
   
   @scala.inline
-  implicit class ITensorOps[Self <: ITensor] (val x: Self) extends AnyVal {
+  implicit class ITensorMutableBuilder[Self <: ITensor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolVal(value: js.Array[Boolean]): Self = StObject.set(x, "boolVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValNull: Self = StObject.set(x, "boolVal", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoolValUndefined: Self = StObject.set(x, "boolVal", js.undefined)
     
     @scala.inline
-    def setBoolValVarargs(value: Boolean*): Self = this.set("boolVal", js.Array(value :_*))
+    def setBoolValVarargs(value: Boolean*): Self = StObject.set(x, "boolVal", js.Array(value :_*))
     
     @scala.inline
-    def setBoolVal(value: js.Array[Boolean]): Self = this.set("boolVal", value.asInstanceOf[js.Any])
+    def setDoubleVal(value: js.Array[Double]): Self = StObject.set(x, "doubleVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoolVal: Self = this.set("boolVal", js.undefined)
+    def setDoubleValNull: Self = StObject.set(x, "doubleVal", null)
     
     @scala.inline
-    def setBoolValNull: Self = this.set("boolVal", null)
+    def setDoubleValUndefined: Self = StObject.set(x, "doubleVal", js.undefined)
     
     @scala.inline
-    def setDoubleValVarargs(value: Double*): Self = this.set("doubleVal", js.Array(value :_*))
+    def setDoubleValVarargs(value: Double*): Self = StObject.set(x, "doubleVal", js.Array(value :_*))
     
     @scala.inline
-    def setDoubleVal(value: js.Array[Double]): Self = this.set("doubleVal", value.asInstanceOf[js.Any])
+    def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDoubleVal: Self = this.set("doubleVal", js.undefined)
+    def setDtypeNull: Self = StObject.set(x, "dtype", null)
     
     @scala.inline
-    def setDoubleValNull: Self = this.set("doubleVal", null)
+    def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
     
     @scala.inline
-    def setDtype(value: DataType): Self = this.set("dtype", value.asInstanceOf[js.Any])
+    def setFloatVal(value: js.Array[Double]): Self = StObject.set(x, "floatVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDtype: Self = this.set("dtype", js.undefined)
+    def setFloatValNull: Self = StObject.set(x, "floatVal", null)
     
     @scala.inline
-    def setDtypeNull: Self = this.set("dtype", null)
+    def setFloatValUndefined: Self = StObject.set(x, "floatVal", js.undefined)
     
     @scala.inline
-    def setFloatValVarargs(value: Double*): Self = this.set("floatVal", js.Array(value :_*))
+    def setFloatValVarargs(value: Double*): Self = StObject.set(x, "floatVal", js.Array(value :_*))
     
     @scala.inline
-    def setFloatVal(value: js.Array[Double]): Self = this.set("floatVal", value.asInstanceOf[js.Any])
+    def setInt64Val(value: js.Array[Double | String]): Self = StObject.set(x, "int64Val", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloatVal: Self = this.set("floatVal", js.undefined)
+    def setInt64ValNull: Self = StObject.set(x, "int64Val", null)
     
     @scala.inline
-    def setFloatValNull: Self = this.set("floatVal", null)
+    def setInt64ValUndefined: Self = StObject.set(x, "int64Val", js.undefined)
     
     @scala.inline
-    def setInt64ValVarargs(value: (Double | String)*): Self = this.set("int64Val", js.Array(value :_*))
+    def setInt64ValVarargs(value: (Double | String)*): Self = StObject.set(x, "int64Val", js.Array(value :_*))
     
     @scala.inline
-    def setInt64Val(value: js.Array[Double | String]): Self = this.set("int64Val", value.asInstanceOf[js.Any])
+    def setIntVal(value: js.Array[Double]): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInt64Val: Self = this.set("int64Val", js.undefined)
+    def setIntValNull: Self = StObject.set(x, "intVal", null)
     
     @scala.inline
-    def setInt64ValNull: Self = this.set("int64Val", null)
+    def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
     
     @scala.inline
-    def setIntValVarargs(value: Double*): Self = this.set("intVal", js.Array(value :_*))
+    def setIntValVarargs(value: Double*): Self = StObject.set(x, "intVal", js.Array(value :_*))
     
     @scala.inline
-    def setIntVal(value: js.Array[Double]): Self = this.set("intVal", value.asInstanceOf[js.Any])
+    def setScomplexVal(value: js.Array[Double]): Self = StObject.set(x, "scomplexVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntVal: Self = this.set("intVal", js.undefined)
+    def setScomplexValNull: Self = StObject.set(x, "scomplexVal", null)
     
     @scala.inline
-    def setIntValNull: Self = this.set("intVal", null)
+    def setScomplexValUndefined: Self = StObject.set(x, "scomplexVal", js.undefined)
     
     @scala.inline
-    def setScomplexValVarargs(value: Double*): Self = this.set("scomplexVal", js.Array(value :_*))
+    def setScomplexValVarargs(value: Double*): Self = StObject.set(x, "scomplexVal", js.Array(value :_*))
     
     @scala.inline
-    def setScomplexVal(value: js.Array[Double]): Self = this.set("scomplexVal", value.asInstanceOf[js.Any])
+    def setStringVal(value: js.Array[Uint8Array]): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScomplexVal: Self = this.set("scomplexVal", js.undefined)
+    def setStringValNull: Self = StObject.set(x, "stringVal", null)
     
     @scala.inline
-    def setScomplexValNull: Self = this.set("scomplexVal", null)
+    def setStringValUndefined: Self = StObject.set(x, "stringVal", js.undefined)
     
     @scala.inline
-    def setStringValVarargs(value: Uint8Array*): Self = this.set("stringVal", js.Array(value :_*))
+    def setStringValVarargs(value: Uint8Array*): Self = StObject.set(x, "stringVal", js.Array(value :_*))
     
     @scala.inline
-    def setStringVal(value: js.Array[Uint8Array]): Self = this.set("stringVal", value.asInstanceOf[js.Any])
+    def setTensorContent(value: Uint8Array): Self = StObject.set(x, "tensorContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStringVal: Self = this.set("stringVal", js.undefined)
+    def setTensorContentNull: Self = StObject.set(x, "tensorContent", null)
     
     @scala.inline
-    def setStringValNull: Self = this.set("stringVal", null)
+    def setTensorContentUndefined: Self = StObject.set(x, "tensorContent", js.undefined)
     
     @scala.inline
-    def setTensorContent(value: Uint8Array): Self = this.set("tensorContent", value.asInstanceOf[js.Any])
+    def setTensorShape(value: ITensorShape): Self = StObject.set(x, "tensorShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTensorContent: Self = this.set("tensorContent", js.undefined)
+    def setTensorShapeNull: Self = StObject.set(x, "tensorShape", null)
     
     @scala.inline
-    def setTensorContentNull: Self = this.set("tensorContent", null)
+    def setTensorShapeUndefined: Self = StObject.set(x, "tensorShape", js.undefined)
     
     @scala.inline
-    def setTensorShape(value: ITensorShape): Self = this.set("tensorShape", value.asInstanceOf[js.Any])
+    def setUint32Val(value: js.Array[Double]): Self = StObject.set(x, "uint32Val", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTensorShape: Self = this.set("tensorShape", js.undefined)
+    def setUint32ValNull: Self = StObject.set(x, "uint32Val", null)
     
     @scala.inline
-    def setTensorShapeNull: Self = this.set("tensorShape", null)
+    def setUint32ValUndefined: Self = StObject.set(x, "uint32Val", js.undefined)
     
     @scala.inline
-    def setUint32ValVarargs(value: Double*): Self = this.set("uint32Val", js.Array(value :_*))
+    def setUint32ValVarargs(value: Double*): Self = StObject.set(x, "uint32Val", js.Array(value :_*))
     
     @scala.inline
-    def setUint32Val(value: js.Array[Double]): Self = this.set("uint32Val", value.asInstanceOf[js.Any])
+    def setUint64Val(value: js.Array[Double | String]): Self = StObject.set(x, "uint64Val", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUint32Val: Self = this.set("uint32Val", js.undefined)
+    def setUint64ValNull: Self = StObject.set(x, "uint64Val", null)
     
     @scala.inline
-    def setUint32ValNull: Self = this.set("uint32Val", null)
+    def setUint64ValUndefined: Self = StObject.set(x, "uint64Val", js.undefined)
     
     @scala.inline
-    def setUint64ValVarargs(value: (Double | String)*): Self = this.set("uint64Val", js.Array(value :_*))
+    def setUint64ValVarargs(value: (Double | String)*): Self = StObject.set(x, "uint64Val", js.Array(value :_*))
     
     @scala.inline
-    def setUint64Val(value: js.Array[Double | String]): Self = this.set("uint64Val", value.asInstanceOf[js.Any])
+    def setVersionNumber(value: Double): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUint64Val: Self = this.set("uint64Val", js.undefined)
+    def setVersionNumberNull: Self = StObject.set(x, "versionNumber", null)
     
     @scala.inline
-    def setUint64ValNull: Self = this.set("uint64Val", null)
-    
-    @scala.inline
-    def setVersionNumber(value: Double): Self = this.set("versionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("versionNumber", js.undefined)
-    
-    @scala.inline
-    def setVersionNumberNull: Self = this.set("versionNumber", null)
+    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

@@ -1,16 +1,17 @@
 package typings.aframe.mod.THREE
 
-import typings.three.colorMod.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.SpotLight")
 @js.native
 class SpotLight protected ()
   extends typings.three.mod.SpotLight {
   def this(
-    color: js.UndefOr[Color | String | Double],
+    color: js.UndefOr[typings.three.colorMod.Color | String | Double],
     intensity: js.UndefOr[Double],
     distance: js.UndefOr[Double],
     angle: js.UndefOr[Double],

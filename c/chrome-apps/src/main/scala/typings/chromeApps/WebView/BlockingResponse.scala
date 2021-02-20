@@ -1,12 +1,13 @@
 package typings.chromeApps.WebView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns value for event handlers that have the 'blocking' extraInfoSpec applied. Allows the event handler to modify network requests. */
 @js.native
-trait BlockingResponse extends js.Object {
+trait BlockingResponse extends StObject {
   
   /**
     * Only used as a response to the onAuthRequired event.
@@ -54,54 +55,42 @@ object BlockingResponse {
   }
   
   @scala.inline
-  implicit class BlockingResponseOps[Self <: BlockingResponse] (val x: Self) extends AnyVal {
+  implicit class BlockingResponseMutableBuilder[Self <: BlockingResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthCredentials(value: AuthCredentials): Self = StObject.set(x, "authCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthCredentialsUndefined: Self = StObject.set(x, "authCredentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthCredentials(value: AuthCredentials): Self = this.set("authCredentials", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAuthCredentials: Self = this.set("authCredentials", js.undefined)
+    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectUrl(value: String): Self = this.set("redirectUrl", value.asInstanceOf[js.Any])
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def deleteRedirectUrl: Self = this.set("redirectUrl", js.undefined)
+    def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setRequestHeadersVarargs(value: HttpHeader*): Self = this.set("requestHeaders", js.Array(value :_*))
+    def setResponseHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeaders(value: js.Array[HttpHeader]): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
-    
-    @scala.inline
-    def setResponseHeadersVarargs(value: HttpHeader*): Self = this.set("responseHeaders", js.Array(value :_*))
-    
-    @scala.inline
-    def setResponseHeaders(value: js.Array[HttpHeader]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
+    def setResponseHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
   }
 }

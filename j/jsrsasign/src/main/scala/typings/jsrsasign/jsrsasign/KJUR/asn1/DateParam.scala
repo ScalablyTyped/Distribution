@@ -1,12 +1,13 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateParam extends js.Object {
+trait DateParam extends StObject {
   
   var date: Date = js.native
   
@@ -21,27 +22,15 @@ object DateParam {
   }
   
   @scala.inline
-  implicit class DateParamOps[Self <: DateParam] (val x: Self) extends AnyVal {
+  implicit class DateParamMutableBuilder[Self <: DateParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithMillis(value: Boolean): Self = StObject.set(x, "withMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWithMillis(value: Boolean): Self = this.set("withMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithMillis: Self = this.set("withMillis", js.undefined)
+    def setWithMillisUndefined: Self = StObject.set(x, "withMillis", js.undefined)
   }
 }

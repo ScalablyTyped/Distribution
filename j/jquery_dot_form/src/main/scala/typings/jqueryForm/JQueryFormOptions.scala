@@ -3,6 +3,7 @@ package typings.jqueryForm
 import typings.jquery.JQuery.AjaxSettings
 import typings.std.EventTarget
 import typings.std.ProgressEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,92 +55,80 @@ object JQueryFormOptions {
   }
   
   @scala.inline
-  implicit class JQueryFormOptionsOps[Self <: JQueryFormOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryFormOptionsMutableBuilder[Self <: JQueryFormOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeSerialize(value: (/* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSerialize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeSerializeUndefined: Self = StObject.set(x, "beforeSerialize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeSubmit(value: (/* formData */ js.Array[_], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBeforeSerialize(value: (/* $form */ JQuery, JQueryFormOptions) => Boolean): Self = this.set("beforeSerialize", js.Any.fromFunction2(value))
+    def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)
     
     @scala.inline
-    def deleteBeforeSerialize: Self = this.set("beforeSerialize", js.undefined)
+    def setClearForm(value: Boolean): Self = StObject.set(x, "clearForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSubmit(value: (/* formData */ js.Array[_], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = this.set("beforeSubmit", js.Any.fromFunction3(value))
+    def setClearFormUndefined: Self = StObject.set(x, "clearForm", js.undefined)
     
     @scala.inline
-    def deleteBeforeSubmit: Self = this.set("beforeSubmit", js.undefined)
+    def setForceSync(value: Boolean): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearForm(value: Boolean): Self = this.set("clearForm", value.asInstanceOf[js.Any])
+    def setForceSyncUndefined: Self = StObject.set(x, "forceSync", js.undefined)
     
     @scala.inline
-    def deleteClearForm: Self = this.set("clearForm", js.undefined)
+    def setIframe(value: Boolean): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceSync(value: Boolean): Self = this.set("forceSync", value.asInstanceOf[js.Any])
+    def setIframeSrc(value: String): Self = StObject.set(x, "iframeSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForceSync: Self = this.set("forceSync", js.undefined)
+    def setIframeSrcUndefined: Self = StObject.set(x, "iframeSrc", js.undefined)
     
     @scala.inline
-    def setIframe(value: Boolean): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    def setIframeTarget(value: js.Any): Self = StObject.set(x, "iframeTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIframe: Self = this.set("iframe", js.undefined)
+    def setIframeTargetUndefined: Self = StObject.set(x, "iframeTarget", js.undefined)
     
     @scala.inline
-    def setIframeSrc(value: String): Self = this.set("iframeSrc", value.asInstanceOf[js.Any])
+    def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
     
     @scala.inline
-    def deleteIframeSrc: Self = this.set("iframeSrc", js.undefined)
+    def setReplaceTarget(value: Boolean): Self = StObject.set(x, "replaceTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframeTarget(value: js.Any): Self = this.set("iframeTarget", value.asInstanceOf[js.Any])
+    def setReplaceTargetUndefined: Self = StObject.set(x, "replaceTarget", js.undefined)
     
     @scala.inline
-    def deleteIframeTarget: Self = this.set("iframeTarget", js.undefined)
+    def setResetForm(value: Boolean): Self = StObject.set(x, "resetForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceTarget(value: Boolean): Self = this.set("replaceTarget", value.asInstanceOf[js.Any])
+    def setResetFormUndefined: Self = StObject.set(x, "resetForm", js.undefined)
     
     @scala.inline
-    def deleteReplaceTarget: Self = this.set("replaceTarget", js.undefined)
+    def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetForm(value: Boolean): Self = this.set("resetForm", value.asInstanceOf[js.Any])
+    def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
     
     @scala.inline
-    def deleteResetForm: Self = this.set("resetForm", js.undefined)
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemantic(value: Boolean): Self = this.set("semantic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemantic: Self = this.set("semantic", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
     def setUploadProgress(
       value: (/* event */ ProgressEvent[EventTarget], /* position */ Double, /* total */ Double, /* percentComplete */ Double) => Unit
-    ): Self = this.set("uploadProgress", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "uploadProgress", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteUploadProgress: Self = this.set("uploadProgress", js.undefined)
+    def setUploadProgressUndefined: Self = StObject.set(x, "uploadProgress", js.undefined)
   }
 }

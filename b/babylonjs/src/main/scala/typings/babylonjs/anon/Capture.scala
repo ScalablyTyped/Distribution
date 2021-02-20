@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Capture extends js.Object {
+trait Capture extends StObject {
   
   var capture: String = js.native
   
@@ -24,33 +25,21 @@ object Capture {
   }
   
   @scala.inline
-  implicit class CaptureOps[Self <: Capture] (val x: Self) extends AnyVal {
+  implicit class CaptureMutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapture(value: String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureConstraint(value: Double): Self = StObject.set(x, "captureConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: String): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureConstraint(value: Double): Self = this.set("captureConstraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetsVarargs(value: String*): Self = this.set("targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: js.Array[String]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

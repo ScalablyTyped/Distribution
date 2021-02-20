@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartBuildInput extends js.Object {
+trait StartBuildInput extends StObject {
   
   /**
     * Build output artifact settings that override, for this build only, the latest ones already defined in the build project.
@@ -171,213 +172,201 @@ object StartBuildInput {
   }
   
   @scala.inline
-  implicit class StartBuildInputOps[Self <: StartBuildInput] (val x: Self) extends AnyVal {
+  implicit class StartBuildInputMutableBuilder[Self <: StartBuildInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactsOverride(value: ProjectArtifacts): Self = StObject.set(x, "artifactsOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsOverrideUndefined: Self = StObject.set(x, "artifactsOverride", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildStatusConfigOverride(value: BuildStatusConfig): Self = StObject.set(x, "buildStatusConfigOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectName(value: NonEmptyString): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    def setBuildStatusConfigOverrideUndefined: Self = StObject.set(x, "buildStatusConfigOverride", js.undefined)
     
     @scala.inline
-    def setArtifactsOverride(value: ProjectArtifacts): Self = this.set("artifactsOverride", value.asInstanceOf[js.Any])
+    def setBuildspecOverride(value: String): Self = StObject.set(x, "buildspecOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtifactsOverride: Self = this.set("artifactsOverride", js.undefined)
+    def setBuildspecOverrideUndefined: Self = StObject.set(x, "buildspecOverride", js.undefined)
     
     @scala.inline
-    def setBuildStatusConfigOverride(value: BuildStatusConfig): Self = this.set("buildStatusConfigOverride", value.asInstanceOf[js.Any])
+    def setCacheOverride(value: ProjectCache): Self = StObject.set(x, "cacheOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildStatusConfigOverride: Self = this.set("buildStatusConfigOverride", js.undefined)
+    def setCacheOverrideUndefined: Self = StObject.set(x, "cacheOverride", js.undefined)
     
     @scala.inline
-    def setBuildspecOverride(value: String): Self = this.set("buildspecOverride", value.asInstanceOf[js.Any])
+    def setCertificateOverride(value: String): Self = StObject.set(x, "certificateOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildspecOverride: Self = this.set("buildspecOverride", js.undefined)
+    def setCertificateOverrideUndefined: Self = StObject.set(x, "certificateOverride", js.undefined)
     
     @scala.inline
-    def setCacheOverride(value: ProjectCache): Self = this.set("cacheOverride", value.asInstanceOf[js.Any])
+    def setComputeTypeOverride(value: ComputeType): Self = StObject.set(x, "computeTypeOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheOverride: Self = this.set("cacheOverride", js.undefined)
+    def setComputeTypeOverrideUndefined: Self = StObject.set(x, "computeTypeOverride", js.undefined)
     
     @scala.inline
-    def setCertificateOverride(value: String): Self = this.set("certificateOverride", value.asInstanceOf[js.Any])
+    def setDebugSessionEnabled(value: WrapperBoolean): Self = StObject.set(x, "debugSessionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificateOverride: Self = this.set("certificateOverride", js.undefined)
+    def setDebugSessionEnabledUndefined: Self = StObject.set(x, "debugSessionEnabled", js.undefined)
     
     @scala.inline
-    def setComputeTypeOverride(value: ComputeType): Self = this.set("computeTypeOverride", value.asInstanceOf[js.Any])
+    def setEncryptionKeyOverride(value: NonEmptyString): Self = StObject.set(x, "encryptionKeyOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComputeTypeOverride: Self = this.set("computeTypeOverride", js.undefined)
+    def setEncryptionKeyOverrideUndefined: Self = StObject.set(x, "encryptionKeyOverride", js.undefined)
     
     @scala.inline
-    def setDebugSessionEnabled(value: WrapperBoolean): Self = this.set("debugSessionEnabled", value.asInstanceOf[js.Any])
+    def setEnvironmentTypeOverride(value: EnvironmentType): Self = StObject.set(x, "environmentTypeOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebugSessionEnabled: Self = this.set("debugSessionEnabled", js.undefined)
+    def setEnvironmentTypeOverrideUndefined: Self = StObject.set(x, "environmentTypeOverride", js.undefined)
     
     @scala.inline
-    def setEncryptionKeyOverride(value: NonEmptyString): Self = this.set("encryptionKeyOverride", value.asInstanceOf[js.Any])
+    def setEnvironmentVariablesOverride(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariablesOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionKeyOverride: Self = this.set("encryptionKeyOverride", js.undefined)
+    def setEnvironmentVariablesOverrideUndefined: Self = StObject.set(x, "environmentVariablesOverride", js.undefined)
     
     @scala.inline
-    def setEnvironmentTypeOverride(value: EnvironmentType): Self = this.set("environmentTypeOverride", value.asInstanceOf[js.Any])
+    def setEnvironmentVariablesOverrideVarargs(value: EnvironmentVariable*): Self = StObject.set(x, "environmentVariablesOverride", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnvironmentTypeOverride: Self = this.set("environmentTypeOverride", js.undefined)
+    def setGitCloneDepthOverride(value: GitCloneDepth): Self = StObject.set(x, "gitCloneDepthOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariablesOverrideVarargs(value: EnvironmentVariable*): Self = this.set("environmentVariablesOverride", js.Array(value :_*))
+    def setGitCloneDepthOverrideUndefined: Self = StObject.set(x, "gitCloneDepthOverride", js.undefined)
     
     @scala.inline
-    def setEnvironmentVariablesOverride(value: EnvironmentVariables): Self = this.set("environmentVariablesOverride", value.asInstanceOf[js.Any])
+    def setGitSubmodulesConfigOverride(value: GitSubmodulesConfig): Self = StObject.set(x, "gitSubmodulesConfigOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironmentVariablesOverride: Self = this.set("environmentVariablesOverride", js.undefined)
+    def setGitSubmodulesConfigOverrideUndefined: Self = StObject.set(x, "gitSubmodulesConfigOverride", js.undefined)
     
     @scala.inline
-    def setGitCloneDepthOverride(value: GitCloneDepth): Self = this.set("gitCloneDepthOverride", value.asInstanceOf[js.Any])
+    def setIdempotencyToken(value: String): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGitCloneDepthOverride: Self = this.set("gitCloneDepthOverride", js.undefined)
+    def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
     
     @scala.inline
-    def setGitSubmodulesConfigOverride(value: GitSubmodulesConfig): Self = this.set("gitSubmodulesConfigOverride", value.asInstanceOf[js.Any])
+    def setImageOverride(value: NonEmptyString): Self = StObject.set(x, "imageOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGitSubmodulesConfigOverride: Self = this.set("gitSubmodulesConfigOverride", js.undefined)
+    def setImageOverrideUndefined: Self = StObject.set(x, "imageOverride", js.undefined)
     
     @scala.inline
-    def setIdempotencyToken(value: String): Self = this.set("idempotencyToken", value.asInstanceOf[js.Any])
+    def setImagePullCredentialsTypeOverride(value: ImagePullCredentialsType): Self = StObject.set(x, "imagePullCredentialsTypeOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdempotencyToken: Self = this.set("idempotencyToken", js.undefined)
+    def setImagePullCredentialsTypeOverrideUndefined: Self = StObject.set(x, "imagePullCredentialsTypeOverride", js.undefined)
     
     @scala.inline
-    def setImageOverride(value: NonEmptyString): Self = this.set("imageOverride", value.asInstanceOf[js.Any])
+    def setInsecureSslOverride(value: WrapperBoolean): Self = StObject.set(x, "insecureSslOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageOverride: Self = this.set("imageOverride", js.undefined)
+    def setInsecureSslOverrideUndefined: Self = StObject.set(x, "insecureSslOverride", js.undefined)
     
     @scala.inline
-    def setImagePullCredentialsTypeOverride(value: ImagePullCredentialsType): Self = this.set("imagePullCredentialsTypeOverride", value.asInstanceOf[js.Any])
+    def setLogsConfigOverride(value: LogsConfig): Self = StObject.set(x, "logsConfigOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImagePullCredentialsTypeOverride: Self = this.set("imagePullCredentialsTypeOverride", js.undefined)
+    def setLogsConfigOverrideUndefined: Self = StObject.set(x, "logsConfigOverride", js.undefined)
     
     @scala.inline
-    def setInsecureSslOverride(value: WrapperBoolean): Self = this.set("insecureSslOverride", value.asInstanceOf[js.Any])
+    def setPrivilegedModeOverride(value: WrapperBoolean): Self = StObject.set(x, "privilegedModeOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsecureSslOverride: Self = this.set("insecureSslOverride", js.undefined)
+    def setPrivilegedModeOverrideUndefined: Self = StObject.set(x, "privilegedModeOverride", js.undefined)
     
     @scala.inline
-    def setLogsConfigOverride(value: LogsConfig): Self = this.set("logsConfigOverride", value.asInstanceOf[js.Any])
+    def setProjectName(value: NonEmptyString): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogsConfigOverride: Self = this.set("logsConfigOverride", js.undefined)
+    def setQueuedTimeoutInMinutesOverride(value: TimeOut): Self = StObject.set(x, "queuedTimeoutInMinutesOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilegedModeOverride(value: WrapperBoolean): Self = this.set("privilegedModeOverride", value.asInstanceOf[js.Any])
+    def setQueuedTimeoutInMinutesOverrideUndefined: Self = StObject.set(x, "queuedTimeoutInMinutesOverride", js.undefined)
     
     @scala.inline
-    def deletePrivilegedModeOverride: Self = this.set("privilegedModeOverride", js.undefined)
+    def setRegistryCredentialOverride(value: RegistryCredential): Self = StObject.set(x, "registryCredentialOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuedTimeoutInMinutesOverride(value: TimeOut): Self = this.set("queuedTimeoutInMinutesOverride", value.asInstanceOf[js.Any])
+    def setRegistryCredentialOverrideUndefined: Self = StObject.set(x, "registryCredentialOverride", js.undefined)
     
     @scala.inline
-    def deleteQueuedTimeoutInMinutesOverride: Self = this.set("queuedTimeoutInMinutesOverride", js.undefined)
+    def setReportBuildStatusOverride(value: WrapperBoolean): Self = StObject.set(x, "reportBuildStatusOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryCredentialOverride(value: RegistryCredential): Self = this.set("registryCredentialOverride", value.asInstanceOf[js.Any])
+    def setReportBuildStatusOverrideUndefined: Self = StObject.set(x, "reportBuildStatusOverride", js.undefined)
     
     @scala.inline
-    def deleteRegistryCredentialOverride: Self = this.set("registryCredentialOverride", js.undefined)
+    def setSecondaryArtifactsOverride(value: ProjectArtifactsList): Self = StObject.set(x, "secondaryArtifactsOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportBuildStatusOverride(value: WrapperBoolean): Self = this.set("reportBuildStatusOverride", value.asInstanceOf[js.Any])
+    def setSecondaryArtifactsOverrideUndefined: Self = StObject.set(x, "secondaryArtifactsOverride", js.undefined)
     
     @scala.inline
-    def deleteReportBuildStatusOverride: Self = this.set("reportBuildStatusOverride", js.undefined)
+    def setSecondaryArtifactsOverrideVarargs(value: ProjectArtifacts*): Self = StObject.set(x, "secondaryArtifactsOverride", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryArtifactsOverrideVarargs(value: ProjectArtifacts*): Self = this.set("secondaryArtifactsOverride", js.Array(value :_*))
+    def setSecondarySourcesOverride(value: ProjectSources): Self = StObject.set(x, "secondarySourcesOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryArtifactsOverride(value: ProjectArtifactsList): Self = this.set("secondaryArtifactsOverride", value.asInstanceOf[js.Any])
+    def setSecondarySourcesOverrideUndefined: Self = StObject.set(x, "secondarySourcesOverride", js.undefined)
     
     @scala.inline
-    def deleteSecondaryArtifactsOverride: Self = this.set("secondaryArtifactsOverride", js.undefined)
+    def setSecondarySourcesOverrideVarargs(value: ProjectSource*): Self = StObject.set(x, "secondarySourcesOverride", js.Array(value :_*))
     
     @scala.inline
-    def setSecondarySourcesOverrideVarargs(value: ProjectSource*): Self = this.set("secondarySourcesOverride", js.Array(value :_*))
+    def setSecondarySourcesVersionOverride(value: ProjectSecondarySourceVersions): Self = StObject.set(x, "secondarySourcesVersionOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondarySourcesOverride(value: ProjectSources): Self = this.set("secondarySourcesOverride", value.asInstanceOf[js.Any])
+    def setSecondarySourcesVersionOverrideUndefined: Self = StObject.set(x, "secondarySourcesVersionOverride", js.undefined)
     
     @scala.inline
-    def deleteSecondarySourcesOverride: Self = this.set("secondarySourcesOverride", js.undefined)
+    def setSecondarySourcesVersionOverrideVarargs(value: ProjectSourceVersion*): Self = StObject.set(x, "secondarySourcesVersionOverride", js.Array(value :_*))
     
     @scala.inline
-    def setSecondarySourcesVersionOverrideVarargs(value: ProjectSourceVersion*): Self = this.set("secondarySourcesVersionOverride", js.Array(value :_*))
+    def setServiceRoleOverride(value: NonEmptyString): Self = StObject.set(x, "serviceRoleOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondarySourcesVersionOverride(value: ProjectSecondarySourceVersions): Self = this.set("secondarySourcesVersionOverride", value.asInstanceOf[js.Any])
+    def setServiceRoleOverrideUndefined: Self = StObject.set(x, "serviceRoleOverride", js.undefined)
     
     @scala.inline
-    def deleteSecondarySourcesVersionOverride: Self = this.set("secondarySourcesVersionOverride", js.undefined)
+    def setSourceAuthOverride(value: SourceAuth): Self = StObject.set(x, "sourceAuthOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRoleOverride(value: NonEmptyString): Self = this.set("serviceRoleOverride", value.asInstanceOf[js.Any])
+    def setSourceAuthOverrideUndefined: Self = StObject.set(x, "sourceAuthOverride", js.undefined)
     
     @scala.inline
-    def deleteServiceRoleOverride: Self = this.set("serviceRoleOverride", js.undefined)
+    def setSourceLocationOverride(value: String): Self = StObject.set(x, "sourceLocationOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAuthOverride(value: SourceAuth): Self = this.set("sourceAuthOverride", value.asInstanceOf[js.Any])
+    def setSourceLocationOverrideUndefined: Self = StObject.set(x, "sourceLocationOverride", js.undefined)
     
     @scala.inline
-    def deleteSourceAuthOverride: Self = this.set("sourceAuthOverride", js.undefined)
+    def setSourceTypeOverride(value: SourceType): Self = StObject.set(x, "sourceTypeOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLocationOverride(value: String): Self = this.set("sourceLocationOverride", value.asInstanceOf[js.Any])
+    def setSourceTypeOverrideUndefined: Self = StObject.set(x, "sourceTypeOverride", js.undefined)
     
     @scala.inline
-    def deleteSourceLocationOverride: Self = this.set("sourceLocationOverride", js.undefined)
+    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTypeOverride(value: SourceType): Self = this.set("sourceTypeOverride", value.asInstanceOf[js.Any])
+    def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
     
     @scala.inline
-    def deleteSourceTypeOverride: Self = this.set("sourceTypeOverride", js.undefined)
+    def setTimeoutInMinutesOverride(value: TimeOut): Self = StObject.set(x, "timeoutInMinutesOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceVersion: Self = this.set("sourceVersion", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInMinutesOverride(value: TimeOut): Self = this.set("timeoutInMinutesOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInMinutesOverride: Self = this.set("timeoutInMinutesOverride", js.undefined)
+    def setTimeoutInMinutesOverrideUndefined: Self = StObject.set(x, "timeoutInMinutesOverride", js.undefined)
   }
 }

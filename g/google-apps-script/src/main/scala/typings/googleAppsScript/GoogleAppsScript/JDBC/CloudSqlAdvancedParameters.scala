@@ -1,13 +1,14 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** JdbcAdvancedParameters */
 @js.native
-trait CloudSqlAdvancedParameters extends js.Object {
+trait CloudSqlAdvancedParameters extends StObject {
   
   /** connection timeout in seconds */
   var connectTimeoutSeconds: js.UndefOr[Integer] = js.native
@@ -36,54 +37,42 @@ object CloudSqlAdvancedParameters {
   }
   
   @scala.inline
-  implicit class CloudSqlAdvancedParametersOps[Self <: CloudSqlAdvancedParameters] (val x: Self) extends AnyVal {
+  implicit class CloudSqlAdvancedParametersMutableBuilder[Self <: CloudSqlAdvancedParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectTimeoutSeconds(value: Integer): Self = StObject.set(x, "connectTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectTimeoutSecondsUndefined: Self = StObject.set(x, "connectTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeoutSeconds(value: Integer): Self = this.set("connectTimeoutSeconds", value.asInstanceOf[js.Any])
+    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeoutSeconds: Self = this.set("connectTimeoutSeconds", js.undefined)
+    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def deleteDatabase: Self = this.set("database", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setQueryTimeoutSeconds(value: Integer): Self = StObject.set(x, "queryTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setQueryTimeoutSecondsUndefined: Self = StObject.set(x, "queryTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryTimeoutSeconds(value: Integer): Self = this.set("queryTimeoutSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryTimeoutSeconds: Self = this.set("queryTimeoutSeconds", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

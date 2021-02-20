@@ -1,12 +1,13 @@
 package typings.ssUtils.ssutils
 
 import typings.std.HTMLFormElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BindFormOptions extends js.Object {
+trait BindFormOptions extends StObject {
   
   var complete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
   
@@ -27,48 +28,36 @@ object BindFormOptions {
   }
   
   @scala.inline
-  implicit class BindFormOptionsOps[Self <: BindFormOptions] (val x: Self) extends AnyVal {
+  implicit class BindFormOptionsMutableBuilder[Self <: BindFormOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* repeated */ js.Any => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setOnSubmitDisable(value: String): Self = StObject.set(x, "onSubmitDisable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setOnSubmitDisableUndefined: Self = StObject.set(x, "onSubmitDisable", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setValidate(value: /* form */ HTMLFormElement => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSubmitDisable(value: String): Self = this.set("onSubmitDisable", value.asInstanceOf[js.Any])
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteOnSubmitDisable: Self = this.set("onSubmitDisable", js.undefined)
+    def setValidation(value: ValidationOptional): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate(value: /* form */ HTMLFormElement => Boolean): Self = this.set("validate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
-    
-    @scala.inline
-    def setValidation(value: ValidationOptional): Self = this.set("validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidation: Self = this.set("validation", js.undefined)
+    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.azdata.mod.nb
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKernel extends js.Object {
+trait IKernel extends StObject {
   
   /**
     * Gets the full specification for this kernel, which can be serialized to

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.style
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see LineSpacingMode
   */
 @js.native
-trait LineSpacing extends js.Object {
+trait LineSpacing extends StObject {
   
   /** This value specifies the height in regard to **Mode** . */
   var Height: Double = js.native
@@ -26,24 +27,12 @@ object LineSpacing {
   }
   
   @scala.inline
-  implicit class LineSpacingOps[Self <: LineSpacing] (val x: Self) extends AnyVal {
+  implicit class LineSpacingMutableBuilder[Self <: LineSpacing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: Double): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

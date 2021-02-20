@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.OauthtokenParent
 import typings.maximMazurokGapiClientTagmanager.anon.PathPrettyPrint
 import typings.maximMazurokGapiClientTagmanager.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientTagmanager.anon.QuotaUserResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspacesResource extends js.Object {
+trait WorkspacesResource extends StObject {
   
   var built_in_variables: BuiltInVariablesResource = js.native
   

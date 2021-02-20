@@ -1,5 +1,6 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object Fraction {
   }
   
   @scala.inline
-  implicit class FractionOps[Self <: Fraction] (val x: Self) extends AnyVal {
+  implicit class FractionMutableBuilder[Self <: Fraction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setD(value: Double): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setN(value: Double): Self = this.set("n", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS(value: Double): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

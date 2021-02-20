@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevMode extends js.Object {
+trait DevMode extends StObject {
   
   var devMode: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object DevMode {
   }
   
   @scala.inline
-  implicit class DevModeOps[Self <: DevMode] (val x: Self) extends AnyVal {
+  implicit class DevModeMutableBuilder[Self <: DevMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathsToOpenVarargs(value: String*): Self = this.set("pathsToOpen", js.Array(value :_*))
+    def setNewWindowUndefined: Self = StObject.set(x, "newWindow", js.undefined)
     
     @scala.inline
-    def setPathsToOpen(value: js.Array[String]): Self = this.set("pathsToOpen", value.asInstanceOf[js.Any])
+    def setPathsToOpen(value: js.Array[String]): Self = StObject.set(x, "pathsToOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevMode(value: Boolean): Self = this.set("devMode", value.asInstanceOf[js.Any])
+    def setPathsToOpenVarargs(value: String*): Self = StObject.set(x, "pathsToOpen", js.Array(value :_*))
     
     @scala.inline
-    def deleteDevMode: Self = this.set("devMode", js.undefined)
+    def setSafeMode(value: Boolean): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewWindow(value: Boolean): Self = this.set("newWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewWindow: Self = this.set("newWindow", js.undefined)
-    
-    @scala.inline
-    def setSafeMode(value: Boolean): Self = this.set("safeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSafeMode: Self = this.set("safeMode", js.undefined)
+    def setSafeModeUndefined: Self = StObject.set(x, "safeMode", js.undefined)
   }
 }

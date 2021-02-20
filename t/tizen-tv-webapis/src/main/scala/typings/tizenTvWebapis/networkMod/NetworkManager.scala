@@ -5,12 +5,13 @@ import typings.tizenTvWebapis.anon.AUTO
 import typings.tizenTvWebapis.anon.CELLULAR
 import typings.tizenTvWebapis.anon.EAP
 import typings.tizenTvWebapis.anon.GATEWAYCONNECTED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkManager extends js.Object {
+trait NetworkManager extends StObject {
   
   var NetworkActiveConnectionType: CELLULAR = js.native
   
@@ -323,96 +324,84 @@ object NetworkManager {
   }
   
   @scala.inline
-  implicit class NetworkManagerOps[Self <: NetworkManager] (val x: Self) extends AnyVal {
+  implicit class NetworkManagerMutableBuilder[Self <: NetworkManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNetworkStateChangeListener(value: NetworkStateChangedCallback => Double): Self = StObject.set(x, "addNetworkStateChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckCurrentIpWith60Field(value: () => String): Self = StObject.set(x, "checkCurrentIpWith60Field", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveConnectionType(value: () => NetworkActiveConnectionType): Self = StObject.set(x, "getActiveConnectionType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNetworkActiveConnectionType(value: CELLULAR): Self = this.set("NetworkActiveConnectionType", value.asInstanceOf[js.Any])
+    def setGetCurrentDhcpOption60Field(value: () => String): Self = StObject.set(x, "getCurrentDhcpOption60Field", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNetworkIpMode(value: AUTO): Self = this.set("NetworkIpMode", value.asInstanceOf[js.Any])
+    def setGetDns(value: () => String): Self = StObject.set(x, "getDns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNetworkState(value: GATEWAYCONNECTED): Self = this.set("NetworkState", value.asInstanceOf[js.Any])
+    def setGetGateway(value: () => String): Self = StObject.set(x, "getGateway", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNetworkWiFiEncryptionType(value: AES): Self = this.set("NetworkWiFiEncryptionType", value.asInstanceOf[js.Any])
+    def setGetIp(value: () => String): Self = StObject.set(x, "getIp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNetworkWiFiSecurityMode(value: EAP): Self = this.set("NetworkWiFiSecurityMode", value.asInstanceOf[js.Any])
+    def setGetIpMode(value: () => NetworkIpMode): Self = StObject.set(x, "getIpMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddNetworkStateChangeListener(value: NetworkStateChangedCallback => Double): Self = this.set("addNetworkStateChangeListener", js.Any.fromFunction1(value))
+    def setGetMac(value: () => String): Self = StObject.set(x, "getMac", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckCurrentIpWith60Field(value: () => String): Self = this.set("checkCurrentIpWith60Field", js.Any.fromFunction0(value))
+    def setGetSecondaryDns(value: () => String): Self = StObject.set(x, "getSecondaryDns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveConnectionType(value: () => NetworkActiveConnectionType): Self = this.set("getActiveConnectionType", js.Any.fromFunction0(value))
+    def setGetSubnetMask(value: () => String): Self = StObject.set(x, "getSubnetMask", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentDhcpOption60Field(value: () => String): Self = this.set("getCurrentDhcpOption60Field", js.Any.fromFunction0(value))
+    def setGetTVName(value: () => String): Self = StObject.set(x, "getTVName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDns(value: () => String): Self = this.set("getDns", js.Any.fromFunction0(value))
+    def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGateway(value: () => String): Self = this.set("getGateway", js.Any.fromFunction0(value))
+    def setGetWiFiEncryptionType(value: () => NetworkWiFiEncryptionType): Self = StObject.set(x, "getWiFiEncryptionType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIp(value: () => String): Self = this.set("getIp", js.Any.fromFunction0(value))
+    def setGetWiFiSecurityMode(value: () => NetworkWiFiSecurityMode): Self = StObject.set(x, "getWiFiSecurityMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIpMode(value: () => NetworkIpMode): Self = this.set("getIpMode", js.Any.fromFunction0(value))
+    def setGetWiFiSignalStrengthLevel(value: () => Double): Self = StObject.set(x, "getWiFiSignalStrengthLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMac(value: () => String): Self = this.set("getMac", js.Any.fromFunction0(value))
+    def setGetWiFiSsid(value: () => String): Self = StObject.set(x, "getWiFiSsid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSecondaryDns(value: () => String): Self = this.set("getSecondaryDns", js.Any.fromFunction0(value))
+    def setIsConnectedToGateway(value: () => Boolean): Self = StObject.set(x, "isConnectedToGateway", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubnetMask(value: () => String): Self = this.set("getSubnetMask", js.Any.fromFunction0(value))
+    def setNetworkActiveConnectionType(value: CELLULAR): Self = StObject.set(x, "NetworkActiveConnectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTVName(value: () => String): Self = this.set("getTVName", js.Any.fromFunction0(value))
+    def setNetworkIpMode(value: AUTO): Self = StObject.set(x, "NetworkIpMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVersion(value: () => String): Self = this.set("getVersion", js.Any.fromFunction0(value))
+    def setNetworkState(value: GATEWAYCONNECTED): Self = StObject.set(x, "NetworkState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWiFiEncryptionType(value: () => NetworkWiFiEncryptionType): Self = this.set("getWiFiEncryptionType", js.Any.fromFunction0(value))
+    def setNetworkWiFiEncryptionType(value: AES): Self = StObject.set(x, "NetworkWiFiEncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWiFiSecurityMode(value: () => NetworkWiFiSecurityMode): Self = this.set("getWiFiSecurityMode", js.Any.fromFunction0(value))
+    def setNetworkWiFiSecurityMode(value: EAP): Self = StObject.set(x, "NetworkWiFiSecurityMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWiFiSignalStrengthLevel(value: () => Double): Self = this.set("getWiFiSignalStrengthLevel", js.Any.fromFunction0(value))
+    def setRemoveDhcpOption60Field(value: () => Unit): Self = StObject.set(x, "removeDhcpOption60Field", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetWiFiSsid(value: () => String): Self = this.set("getWiFiSsid", js.Any.fromFunction0(value))
+    def setRemoveNetworkStateChangeListener(value: Double => Unit): Self = StObject.set(x, "removeNetworkStateChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsConnectedToGateway(value: () => Boolean): Self = this.set("isConnectedToGateway", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveDhcpOption60Field(value: () => Unit): Self = this.set("removeDhcpOption60Field", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveNetworkStateChangeListener(value: Double => Unit): Self = this.set("removeNetworkStateChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDhcpOption60Field(value: String => Unit): Self = this.set("setDhcpOption60Field", js.Any.fromFunction1(value))
+    def setSetDhcpOption60Field(value: String => Unit): Self = StObject.set(x, "setDhcpOption60Field", js.Any.fromFunction1(value))
   }
 }

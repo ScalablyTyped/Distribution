@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiveChatPollItem extends js.Object {
+trait SchemaLiveChatPollItem extends StObject {
   
   /**
     * Plain text description of the item.
@@ -23,30 +24,18 @@ object SchemaLiveChatPollItem {
   }
   
   @scala.inline
-  implicit class SchemaLiveChatPollItemOps[Self <: SchemaLiveChatPollItem] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveChatPollItemMutableBuilder[Self <: SchemaLiveChatPollItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemId: Self = this.set("itemId", js.undefined)
+    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
   }
 }

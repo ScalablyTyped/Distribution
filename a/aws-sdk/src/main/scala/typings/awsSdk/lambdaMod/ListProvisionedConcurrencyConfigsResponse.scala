@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListProvisionedConcurrencyConfigsResponse extends js.Object {
+trait ListProvisionedConcurrencyConfigsResponse extends StObject {
   
   /**
     * The pagination token that's included if more results are available.
@@ -26,33 +27,21 @@ object ListProvisionedConcurrencyConfigsResponse {
   }
   
   @scala.inline
-  implicit class ListProvisionedConcurrencyConfigsResponseOps[Self <: ListProvisionedConcurrencyConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class ListProvisionedConcurrencyConfigsResponseMutableBuilder[Self <: ListProvisionedConcurrencyConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvisionedConcurrencyConfigs(value: ProvisionedConcurrencyConfigList): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: String): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setProvisionedConcurrencyConfigsUndefined: Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = this.set("ProvisionedConcurrencyConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setProvisionedConcurrencyConfigs(value: ProvisionedConcurrencyConfigList): Self = this.set("ProvisionedConcurrencyConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedConcurrencyConfigs: Self = this.set("ProvisionedConcurrencyConfigs", js.undefined)
+    def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.Array(value :_*))
   }
 }

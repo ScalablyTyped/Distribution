@@ -1,12 +1,13 @@
 package typings.nano.mod
 
 import typings.node.processMod.global.NodeJS.ReadStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentScope[D] extends js.Object {
+trait DocumentScope[D] extends StObject {
   
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#put--db-_design-ddoc-_update-func-docid
   def atomic[R](designname: String, updatename: String, docname: String): js.Promise[R] = js.native

@@ -1,5 +1,6 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,72 +83,60 @@ object FlashTextAttrs {
   }
   
   @scala.inline
-  implicit class FlashTextAttrsOps[Self <: FlashTextAttrs] (val x: Self) extends AnyVal {
+  implicit class FlashTextAttrsMutableBuilder[Self <: FlashTextAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasText(value: Boolean): Self = StObject.set(x, "aliasText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoKern(value: Boolean): Self = StObject.set(x, "autoKern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasText(value: Boolean): Self = this.set("aliasText", value.asInstanceOf[js.Any])
+    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setCharacterPosition(value: String): Self = StObject.set(x, "characterPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoKern(value: Boolean): Self = this.set("autoKern", value.asInstanceOf[js.Any])
+    def setCharacterSpacing(value: Double): Self = StObject.set(x, "characterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterPosition(value: String): Self = this.set("characterPosition", value.asInstanceOf[js.Any])
+    def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterSpacing(value: Double): Self = this.set("characterSpacing", value.asInstanceOf[js.Any])
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFace(value: String): Self = this.set("face", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: js.Any): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "leftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("leftMargin", value.asInstanceOf[js.Any])
+    def setRightMargin(value: Double): Self = StObject.set(x, "rightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setRotation(value: Boolean): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Double): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightMargin(value: Double): Self = this.set("rightMargin", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Boolean): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

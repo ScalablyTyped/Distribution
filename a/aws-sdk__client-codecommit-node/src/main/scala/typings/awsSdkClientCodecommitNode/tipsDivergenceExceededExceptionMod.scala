@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/TipsDivergenceExceededException", JSImport.Namespace)
-@js.native
-object tipsDivergenceExceededExceptionMod extends js.Object {
+object tipsDivergenceExceededExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/TipsDivergenceExceededException", "TipsDivergenceExceededException")
+  @js.native
   val TipsDivergenceExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

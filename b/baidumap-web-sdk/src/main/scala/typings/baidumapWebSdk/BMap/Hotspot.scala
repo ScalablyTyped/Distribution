@@ -1,5 +1,6 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object Hotspot {
   }
   
   @scala.inline
-  implicit class HotspotOps[Self <: Hotspot] (val x: Self) extends AnyVal {
+  implicit class HotspotMutableBuilder[Self <: Hotspot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUserData(value: () => js.Any): Self = StObject.set(x, "getUserData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => Point): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setSetPosition(value: Point => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserData(value: () => js.Any): Self = this.set("getUserData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPosition(value: Point => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUserData(value: js.Any => Unit): Self = this.set("setUserData", js.Any.fromFunction1(value))
+    def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "setUserData", js.Any.fromFunction1(value))
   }
 }

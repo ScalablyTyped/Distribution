@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsyncIterator[T, TReturn, TNext] extends js.Object {
+trait AsyncIterator[T, TReturn, TNext] extends StObject {
   
   // NOTE: 'next' is defined using a tuple to ensure we report the correct assignability errors in all places.
   def next(

@@ -2,12 +2,13 @@ package typings.rascal.mod
 
 import typings.rascal.rascalStrings.exponential
 import typings.rascal.rascalStrings.linear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryConfig extends js.Object {
+trait RetryConfig extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -28,48 +29,36 @@ object RetryConfig {
   }
   
   @scala.inline
-  implicit class RetryConfigOps[Self <: RetryConfig] (val x: Self) extends AnyVal {
+  implicit class RetryConfigMutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactor(value: Double): Self = this.set("factor", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteFactor: Self = this.set("factor", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setStrategy(value: exponential | linear): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: exponential | linear): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

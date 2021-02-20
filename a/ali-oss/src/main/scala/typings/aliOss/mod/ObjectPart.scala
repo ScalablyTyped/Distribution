@@ -1,13 +1,14 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectPart extends js.Object {
+trait ObjectPart extends StObject {
   
-   // {Date} Time when a part is uploaded.
+  // {Date} Time when a part is uploaded.
   var ETag: String = js.native
   
   var LastModified: js.Any = js.native
@@ -25,30 +26,18 @@ object ObjectPart {
   }
   
   @scala.inline
-  implicit class ObjectPartOps[Self <: ObjectPart] (val x: Self) extends AnyVal {
+  implicit class ObjectPartMutableBuilder[Self <: ObjectPart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastModified(value: js.Any): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartNumber(value: Double): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastModified(value: js.Any): Self = this.set("LastModified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartNumber(value: Double): Self = this.set("PartNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

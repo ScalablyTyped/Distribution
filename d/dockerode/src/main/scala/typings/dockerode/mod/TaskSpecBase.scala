@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskSpecBase extends js.Object {
+trait TaskSpecBase extends StObject {
   
   var ForceUpdate: js.UndefOr[Double] = js.native
   
@@ -31,63 +32,51 @@ object TaskSpecBase {
   }
   
   @scala.inline
-  implicit class TaskSpecBaseOps[Self <: TaskSpecBase] (val x: Self) extends AnyVal {
+  implicit class TaskSpecBaseMutableBuilder[Self <: TaskSpecBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceUpdate(value: Double): Self = StObject.set(x, "ForceUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceUpdateUndefined: Self = StObject.set(x, "ForceUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogDriver(value: Options): Self = StObject.set(x, "LogDriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceUpdate(value: Double): Self = this.set("ForceUpdate", value.asInstanceOf[js.Any])
+    def setLogDriverUndefined: Self = StObject.set(x, "LogDriver", js.undefined)
     
     @scala.inline
-    def deleteForceUpdate: Self = this.set("ForceUpdate", js.undefined)
+    def setNetworks(value: js.Array[NetworkAttachmentConfig]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogDriver(value: Options): Self = this.set("LogDriver", value.asInstanceOf[js.Any])
+    def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
     @scala.inline
-    def deleteLogDriver: Self = this.set("LogDriver", js.undefined)
+    def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value :_*))
     
     @scala.inline
-    def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = this.set("Networks", js.Array(value :_*))
+    def setPlacement(value: Placement): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworks(value: js.Array[NetworkAttachmentConfig]): Self = this.set("Networks", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
     
     @scala.inline
-    def deleteNetworks: Self = this.set("Networks", js.undefined)
+    def setResources(value: ResourceRequirements): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: Placement): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("Placement", js.undefined)
+    def setRestartPolicy(value: RestartPolicy): Self = StObject.set(x, "RestartPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: ResourceRequirements): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    def setRestartPolicyUndefined: Self = StObject.set(x, "RestartPolicy", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setRuntime(value: String): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartPolicy(value: RestartPolicy): Self = this.set("RestartPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestartPolicy: Self = this.set("RestartPolicy", js.undefined)
-    
-    @scala.inline
-    def setRuntime(value: String): Self = this.set("Runtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntime: Self = this.set("Runtime", js.undefined)
+    def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
   }
 }

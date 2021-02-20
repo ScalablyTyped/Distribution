@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorChangedEvent extends js.Object {
+trait EditorChangedEvent extends StObject {
   
   /** A Point representing the replacement extent. */
   var newExtent: Point = js.native
@@ -25,27 +26,15 @@ object EditorChangedEvent {
   }
   
   @scala.inline
-  implicit class EditorChangedEventOps[Self <: EditorChangedEvent] (val x: Self) extends AnyVal {
+  implicit class EditorChangedEventMutableBuilder[Self <: EditorChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewExtent(value: Point): Self = this.set("newExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldExtent(value: Point): Self = this.set("oldExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Point): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

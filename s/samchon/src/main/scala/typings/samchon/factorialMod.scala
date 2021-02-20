@@ -1,14 +1,14 @@
 package typings.samchon
 
 import typings.samchon.permutationMod.Permutation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/library/case_generators/Factorial", JSImport.Namespace)
-@js.native
-object factorialMod extends js.Object {
+object factorialMod {
   
+  @JSImport("samchon/library/case_generators/Factorial", "Factorial")
   @js.native
   class Factorial protected () extends Permutation {
     /**

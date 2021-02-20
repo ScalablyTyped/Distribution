@@ -5,12 +5,13 @@ import typings.browserfs.browserfsStrings.buffer
 import typings.browserfs.browserfsStrings.fs
 import typings.browserfs.browserfsStrings.path
 import typings.browserfs.browserfsStrings.process
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCall extends js.Object {
+trait FnCall extends StObject {
   
   def apply(module: String): js.Any = js.native
   def apply(module: bfs_utils): /* import warning: importer.ImportType#apply Failed type conversion: typeof BFSUtils */ js.Any = js.native

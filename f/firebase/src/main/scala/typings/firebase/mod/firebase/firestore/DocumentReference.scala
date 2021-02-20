@@ -2,12 +2,13 @@ package typings.firebase.mod.firebase.firestore
 
 import typings.firebase.anon.Error
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentReference[T] extends js.Object {
+trait DocumentReference[T] extends StObject {
   
   /**
     * Gets a `CollectionReference` instance that refers to the collection at

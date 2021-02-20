@@ -3,37 +3,106 @@ package typings.twemoji
 import typings.std.HTMLElement
 import typings.twemoji.anon.PartialParseObject
 import typings.twemoji.twemojiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twemoji", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("twemoji", "base")
+  @js.native
   val base: String = js.native
   
+  @JSImport("twemoji", "className")
+  @js.native
   val className: String = js.native
   
+  object convert {
+    
+    /**
+      * Given an HEX codepoint, returns UTF16 surrogate pairs.
+      *
+      * @param   codepoint string  generic codepoint, i.e. '1F4A9'
+      * @return  string  codepoint transformed into utf16 surrogates pair,
+      *          i.e. \\uD83D\\uDCA9
+      *
+      * @example
+      *  twemoji.convert.fromCodePoint('1f1e8');
+      *  // "\\ud83c\\udde8"
+      *
+      *  '1f1e8-1f1f3'.split('-').map(twemoji.convert.fromCodePoint).join('')
+      *  // "\\ud83c\\udde8\\ud83c\\uddf3"
+      */
+    @JSImport("twemoji", "convert.fromCodePoint")
+    @js.native
+    def fromCodePoint(codepoint: String): String = js.native
+    
+    /**
+      * Given UTF16 surrogate pairs, returns the equivalent HEX codepoint.
+      *
+      * @param   unicodeSurrogates   string  generic utf16 surrogates pair, i.e. \\uD83D\\uDCA9
+      * @param   sep                 string  optional separator for double code points, default='-'
+      * @return  string  utf16 transformed into codepoint, i.e. '1F4A9'
+      *
+      * @example
+      *  twemoji.convert.toCodePoint('\\ud83c\\udde8\\ud83c\\uddf3');
+      *  // "1f1e8-1f1f3"
+      *
+      *  twemoji.convert.toCodePoint('\\ud83c\\udde8\\ud83c\\uddf3', '~');
+      *  // "1f1e8~1f1f3"
+      */
+    @JSImport("twemoji", "convert.toCodePoint")
+    @js.native
+    def toCodePoint(unicodeSurrogates: String): String = js.native
+    @JSImport("twemoji", "convert.toCodePoint")
+    @js.native
+    def toCodePoint(unicodeSurrogates: String, sep: String): String = js.native
+  }
+  
+  @JSImport("twemoji", "ext")
+  @js.native
   val ext: String = js.native
   
+  @JSImport("twemoji", "onerror")
+  @js.native
   def onerror(): Unit = js.native
   
+  @JSImport("twemoji", "parse")
+  @js.native
   def parse(what: String): String = js.native
+  @JSImport("twemoji", "parse")
+  @js.native
   def parse(what: String, how: PartialParseObject): String = js.native
+  @JSImport("twemoji", "parse")
+  @js.native
   def parse(what: String, how: ParseCallback): String = js.native
+  @JSImport("twemoji", "parse")
+  @js.native
   def parse(what: HTMLElement): String = js.native
+  @JSImport("twemoji", "parse")
+  @js.native
   def parse(what: HTMLElement, how: PartialParseObject): String = js.native
+  @JSImport("twemoji", "parse")
+  @js.native
   def parse(what: HTMLElement, how: ParseCallback): String = js.native
   
+  @JSImport("twemoji", "replace")
+  @js.native
   def replace(text: String, callback: js.Function0[Unit]): String = js.native
   
+  @JSImport("twemoji", "size")
+  @js.native
   val size: String = js.native
   
+  @JSImport("twemoji", "test")
+  @js.native
   def test(text: String): Boolean = js.native
   
+  type ParseCallback = js.Function3[/* icon */ String, /* options */ js.Object, /* variant */ String, String | `false`]
+  
   @js.native
-  trait ParseObject extends js.Object {
+  trait ParseObject extends StObject {
     
     /**
       * The function to invoke in order to generate additional, custom attributes for the image tag.
@@ -82,43 +151,4 @@ object mod extends js.Object {
       */
     var size: String | Double = js.native
   }
-  
-  @js.native
-  object convert extends js.Object {
-    
-    /**
-      * Given an HEX codepoint, returns UTF16 surrogate pairs.
-      *
-      * @param   codepoint string  generic codepoint, i.e. '1F4A9'
-      * @return  string  codepoint transformed into utf16 surrogates pair,
-      *          i.e. \\uD83D\\uDCA9
-      *
-      * @example
-      *  twemoji.convert.fromCodePoint('1f1e8');
-      *  // "\\ud83c\\udde8"
-      *
-      *  '1f1e8-1f1f3'.split('-').map(twemoji.convert.fromCodePoint).join('')
-      *  // "\\ud83c\\udde8\\ud83c\\uddf3"
-      */
-    def fromCodePoint(codepoint: String): String = js.native
-    
-    /**
-      * Given UTF16 surrogate pairs, returns the equivalent HEX codepoint.
-      *
-      * @param   unicodeSurrogates   string  generic utf16 surrogates pair, i.e. \\uD83D\\uDCA9
-      * @param   sep                 string  optional separator for double code points, default='-'
-      * @return  string  utf16 transformed into codepoint, i.e. '1F4A9'
-      *
-      * @example
-      *  twemoji.convert.toCodePoint('\\ud83c\\udde8\\ud83c\\uddf3');
-      *  // "1f1e8-1f1f3"
-      *
-      *  twemoji.convert.toCodePoint('\\ud83c\\udde8\\ud83c\\uddf3', '~');
-      *  // "1f1e8~1f1f3"
-      */
-    def toCodePoint(unicodeSurrogates: String): String = js.native
-    def toCodePoint(unicodeSurrogates: String, sep: String): String = js.native
-  }
-  
-  type ParseCallback = js.Function3[/* icon */ String, /* options */ js.Object, /* variant */ String, String | `false`]
 }

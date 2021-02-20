@@ -1,11 +1,12 @@
 package typings.hystrixjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CircuitFactory_ extends js.Object {
+trait CircuitFactory_ extends StObject {
   
   def getCache(): js.Array[CircuitBreaker] = js.native
   
@@ -26,27 +27,15 @@ object CircuitFactory_ {
   }
   
   @scala.inline
-  implicit class CircuitFactory_Ops[Self <: CircuitFactory_] (val x: Self) extends AnyVal {
+  implicit class CircuitFactory_MutableBuilder[Self <: CircuitFactory_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCache(value: () => js.Array[CircuitBreaker]): Self = StObject.set(x, "getCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetOrCreate(value: CirctuiBreakerConfig => CircuitBreaker): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCache(value: () => js.Array[CircuitBreaker]): Self = this.set("getCache", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOrCreate(value: CirctuiBreakerConfig => CircuitBreaker): Self = this.set("getOrCreate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResetCache(value: () => Unit): Self = this.set("resetCache", js.Any.fromFunction0(value))
+    def setResetCache(value: () => Unit): Self = StObject.set(x, "resetCache", js.Any.fromFunction0(value))
   }
 }

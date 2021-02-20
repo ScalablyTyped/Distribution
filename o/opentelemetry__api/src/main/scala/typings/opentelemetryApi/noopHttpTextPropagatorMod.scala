@@ -2,16 +2,18 @@ package typings.opentelemetryApi
 
 import typings.opentelemetryApi.httpTextPropagatorMod.HttpTextPropagator
 import typings.opentelemetryContextBase.mod.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/context/propagation/NoopHttpTextPropagator", JSImport.Namespace)
-@js.native
-object noopHttpTextPropagatorMod extends js.Object {
+object noopHttpTextPropagatorMod {
   
+  @JSImport("@opentelemetry/api/build/src/context/propagation/NoopHttpTextPropagator", "NOOP_HTTP_TEXT_PROPAGATOR")
+  @js.native
   val NOOP_HTTP_TEXT_PROPAGATOR: NoopHttpTextPropagator = js.native
   
+  @JSImport("@opentelemetry/api/build/src/context/propagation/NoopHttpTextPropagator", "NoopHttpTextPropagator")
   @js.native
   class NoopHttpTextPropagator () extends HttpTextPropagator {
     

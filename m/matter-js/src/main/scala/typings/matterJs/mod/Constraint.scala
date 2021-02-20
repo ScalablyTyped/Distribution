@@ -1,12 +1,13 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Constraint")
 @js.native
-class Constraint () extends js.Object {
+class Constraint () extends StObject {
   
   /**
     * The first possible `Body` that this constraint is attached to.
@@ -112,9 +113,7 @@ class Constraint () extends js.Object {
   var `type`: String = js.native
 }
 /* static members */
-@JSImport("matter-js", "Constraint")
-@js.native
-object Constraint extends js.Object {
+object Constraint {
   
   /**
     * Creates a new constraint.
@@ -124,5 +123,7 @@ object Constraint extends js.Object {
     * @param {} options
     * @return {constraint} constraint
     */
+  @JSImport("matter-js", "Constraint.create")
+  @js.native
   def create(options: IConstraintDefinition): Constraint = js.native
 }

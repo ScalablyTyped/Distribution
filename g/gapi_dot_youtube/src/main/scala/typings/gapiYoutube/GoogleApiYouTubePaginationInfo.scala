@@ -1,12 +1,13 @@
 package typings.gapiYoutube
 
 import typings.gapiYoutube.anon.ResultsPerPage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiYouTubePaginationInfo[T] extends js.Object {
+trait GoogleApiYouTubePaginationInfo[T] extends StObject {
   
   /**
     * The ETag of the response.
@@ -54,39 +55,27 @@ object GoogleApiYouTubePaginationInfo {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubePaginationInfoOps[Self <: GoogleApiYouTubePaginationInfo[_], T] (val x: Self with GoogleApiYouTubePaginationInfo[T]) extends AnyVal {
+  implicit class GoogleApiYouTubePaginationInfoMutableBuilder[Self <: GoogleApiYouTubePaginationInfo[_], T] (val x: Self with GoogleApiYouTubePaginationInfo[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: T*): Self = this.set("items", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[T]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setPageInfo(value: ResultsPerPage): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageInfo(value: ResultsPerPage): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevPageToken(value: String): Self = this.set("prevPageToken", value.asInstanceOf[js.Any])
+    def setPrevPageToken(value: String): Self = StObject.set(x, "prevPageToken", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,7 @@ import typings.activexVbide.activexVbideNumbers.`6`
 import typings.activexVbide.activexVbideNumbers.`7`
 import typings.activexVbide.activexVbideNumbers.`8`
 import typings.activexVbide.activexVbideNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexVbide.activexVbideNumbers.`15`
   - typings.activexVbide.activexVbideNumbers.`3`
 */
-trait vbextWindowType extends js.Object
+trait vbextWindowType extends StObject
 object vbextWindowType {
   
   @scala.inline

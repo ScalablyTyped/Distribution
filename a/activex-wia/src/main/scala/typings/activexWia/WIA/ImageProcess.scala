@@ -1,12 +1,13 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ImageProcess object manages the filter chain. An ImageProcess object can be created using "WIA.ImageProcess" in a call to CreateObject. */
 @js.native
-trait ImageProcess extends js.Object {
+trait ImageProcess extends StObject {
   
   /** Takes the specified ImageFile and returns the new ImageFile with all the filters applied on success */
   def Apply(Source: ImageFile): ImageFile = js.native

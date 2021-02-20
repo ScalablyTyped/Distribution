@@ -1,12 +1,13 @@
 package typings.igniteUi
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellRightClickEventUIParam extends js.Object {
+trait CellRightClickEventUIParam extends StObject {
   
   /**
     * Gets a reference to cell DOM element.
@@ -52,60 +53,48 @@ object CellRightClickEventUIParam {
   }
   
   @scala.inline
-  implicit class CellRightClickEventUIParamOps[Self <: CellRightClickEventUIParam] (val x: Self) extends AnyVal {
+  implicit class CellRightClickEventUIParamMutableBuilder[Self <: CellRightClickEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellElement(value: Element): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellElement(value: Element): Self = this.set("cellElement", value.asInstanceOf[js.Any])
+    def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
     
     @scala.inline
-    def deleteCellElement: Self = this.set("cellElement", js.undefined)
+    def setColKey(value: String): Self = StObject.set(x, "colKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColIndex(value: Double): Self = this.set("colIndex", value.asInstanceOf[js.Any])
+    def setColKeyUndefined: Self = StObject.set(x, "colKey", js.undefined)
     
     @scala.inline
-    def deleteColIndex: Self = this.set("colIndex", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColKey(value: String): Self = this.set("colKey", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteColKey: Self = this.set("colKey", js.undefined)
+    def setRow(value: Element): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def setRow(value: Element): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRowKey(value: js.Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
-    
-    @scala.inline
-    def setRowKey(value: js.Any): Self = this.set("rowKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowKey: Self = this.set("rowKey", js.undefined)
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

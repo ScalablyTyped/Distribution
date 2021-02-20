@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAdexchangebuyer2.anon.Accesstoken
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.AccountId
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.Alt
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvitationsResource extends js.Object {
+trait InvitationsResource extends StObject {
   
   /** Creates and sends out an email invitation to access an Ad Exchange client buyer account. */
   def create(request: Accesstoken): Request[ClientUserInvitation] = js.native

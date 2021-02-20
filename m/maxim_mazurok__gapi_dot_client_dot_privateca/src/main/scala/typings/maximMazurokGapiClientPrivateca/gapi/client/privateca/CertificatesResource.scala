@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientPrivateca.anon.Key
 import typings.maximMazurokGapiClientPrivateca.anon.Name
 import typings.maximMazurokGapiClientPrivateca.anon.Parent
 import typings.maximMazurokGapiClientPrivateca.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificatesResource extends js.Object {
+trait CertificatesResource extends StObject {
   
   /** Create a new Certificate in a given Project, Location from a particular CertificateAuthority. */
   def create(request: CertificateId): Request[Certificate] = js.native

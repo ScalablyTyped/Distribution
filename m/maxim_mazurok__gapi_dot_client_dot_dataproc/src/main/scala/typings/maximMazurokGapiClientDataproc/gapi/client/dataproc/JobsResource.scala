@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientDataproc.anon.FieldsKey
 import typings.maximMazurokGapiClientDataproc.anon.JobId
 import typings.maximMazurokGapiClientDataproc.anon.JobStateMatcher
 import typings.maximMazurokGapiClientDataproc.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobsResource extends js.Object {
+trait JobsResource extends StObject {
   
   /**
     * Starts a job cancellation request. To access the job resource after cancellation, call regions/{region}/jobs.list

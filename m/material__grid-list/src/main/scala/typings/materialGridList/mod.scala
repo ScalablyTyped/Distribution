@@ -4,43 +4,66 @@ import typings.materialGridList.adapterMod.MDCGridListAdapter
 import typings.materialGridList.anon.PartialMDCGridListAdapter
 import typings.materialGridList.anon.TILESELECTOR
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/grid-list", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/grid-list", "MDCGridList")
   @js.native
-  class MDCGridList ()
-    extends typings.materialGridList.componentMod.MDCGridList
+  class MDCGridList protected ()
+    extends typings.materialGridList.componentMod.MDCGridList {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialGridList.foundationMod.MDCGridListFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCGridList extends js.Object {
+  object MDCGridList {
     
+    @JSImport("@material/grid-list", "MDCGridList.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = js.native
   }
   
+  @JSImport("@material/grid-list", "MDCGridListFoundation")
   @js.native
   class MDCGridListFoundation ()
     extends typings.materialGridList.foundationMod.MDCGridListFoundation {
     def this(adapter: PartialMDCGridListAdapter) = this()
   }
   /* static members */
-  @js.native
-  object MDCGridListFoundation extends js.Object {
+  object MDCGridListFoundation {
     
+    @JSImport("@material/grid-list", "MDCGridListFoundation.defaultAdapter")
+    @js.native
     val defaultAdapter: MDCGridListAdapter = js.native
     
+    @JSImport("@material/grid-list", "MDCGridListFoundation.strings")
+    @js.native
     val strings: TILESELECTOR = js.native
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var TILES_SELECTOR: String = js.native
+    @JSImport("@material/grid-list", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var TILE_SELECTOR: String = js.native
+    @JSImport("@material/grid-list", "strings.TILES_SELECTOR")
+    @js.native
+    def TILES_SELECTOR: String = js.native
+    @scala.inline
+    def TILES_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILES_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/grid-list", "strings.TILE_SELECTOR")
+    @js.native
+    def TILE_SELECTOR: String = js.native
+    @scala.inline
+    def TILE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILE_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Activity extends js.Object {
+trait Activity extends StObject {
   
   /**
     * The ID of the activity.
@@ -72,63 +73,51 @@ object Activity {
   }
   
   @scala.inline
-  implicit class ActivityOps[Self <: Activity] (val x: Self) extends AnyVal {
+  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityId(value: XmlString): Self = StObject.set(x, "ActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCause(value: XmlStringMaxLen1023): Self = StObject.set(x, "Cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityId(value: XmlString): Self = this.set("ActivityId", value.asInstanceOf[js.Any])
+    def setDescription(value: XmlString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCause(value: XmlStringMaxLen1023): Self = this.set("Cause", value.asInstanceOf[js.Any])
+    def setDetails(value: XmlString): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: TimestampType): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def setStatusCode(value: ScalingActivityStatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: XmlString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setProgress(value: Progress): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: XmlString): Self = this.set("Details", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
+    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: TimestampType): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setStatusCode(value: ScalingActivityStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setStatusMessage(value: XmlStringMaxLen255): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: Progress): Self = this.set("Progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("Progress", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: XmlStringMaxLen255): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
   }
 }

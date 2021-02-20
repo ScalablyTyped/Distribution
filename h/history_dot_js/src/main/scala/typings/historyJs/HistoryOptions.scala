@@ -1,11 +1,12 @@
 package typings.historyJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryOptions extends js.Object {
+trait HistoryOptions extends StObject {
   
   var busyDelay: js.UndefOr[Double] = js.native
   
@@ -36,78 +37,66 @@ object HistoryOptions {
   }
   
   @scala.inline
-  implicit class HistoryOptionsOps[Self <: HistoryOptions] (val x: Self) extends AnyVal {
+  implicit class HistoryOptionsMutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusyDelay(value: Double): Self = StObject.set(x, "busyDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusyDelayUndefined: Self = StObject.set(x, "busyDelay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusyDelay(value: Double): Self = this.set("busyDelay", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteBusyDelay: Self = this.set("busyDelay", js.undefined)
+    def setDelayInit(value: Double): Self = StObject.set(x, "delayInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDelayInitUndefined: Self = StObject.set(x, "delayInit", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setDisableSuid(value: Boolean): Self = StObject.set(x, "disableSuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayInit(value: Double): Self = this.set("delayInit", value.asInstanceOf[js.Any])
+    def setDisableSuidUndefined: Self = StObject.set(x, "disableSuid", js.undefined)
     
     @scala.inline
-    def deleteDelayInit: Self = this.set("delayInit", js.undefined)
+    def setDoubleCheckInterval(value: Double): Self = StObject.set(x, "doubleCheckInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSuid(value: Boolean): Self = this.set("disableSuid", value.asInstanceOf[js.Any])
+    def setDoubleCheckIntervalUndefined: Self = StObject.set(x, "doubleCheckInterval", js.undefined)
     
     @scala.inline
-    def deleteDisableSuid: Self = this.set("disableSuid", js.undefined)
+    def setHashChangeInterval(value: Double): Self = StObject.set(x, "hashChangeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleCheckInterval(value: Double): Self = this.set("doubleCheckInterval", value.asInstanceOf[js.Any])
+    def setHashChangeIntervalUndefined: Self = StObject.set(x, "hashChangeInterval", js.undefined)
     
     @scala.inline
-    def deleteDoubleCheckInterval: Self = this.set("doubleCheckInterval", js.undefined)
+    def setHtml4Mode(value: Boolean): Self = StObject.set(x, "html4Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashChangeInterval(value: Double): Self = this.set("hashChangeInterval", value.asInstanceOf[js.Any])
+    def setHtml4ModeUndefined: Self = StObject.set(x, "html4Mode", js.undefined)
     
     @scala.inline
-    def deleteHashChangeInterval: Self = this.set("hashChangeInterval", js.undefined)
+    def setInitialTitle(value: String): Self = StObject.set(x, "initialTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml4Mode(value: Boolean): Self = this.set("html4Mode", value.asInstanceOf[js.Any])
+    def setInitialTitleUndefined: Self = StObject.set(x, "initialTitle", js.undefined)
     
     @scala.inline
-    def deleteHtml4Mode: Self = this.set("html4Mode", js.undefined)
+    def setSafariPollInterval(value: Double): Self = StObject.set(x, "safariPollInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialTitle(value: String): Self = this.set("initialTitle", value.asInstanceOf[js.Any])
+    def setSafariPollIntervalUndefined: Self = StObject.set(x, "safariPollInterval", js.undefined)
     
     @scala.inline
-    def deleteInitialTitle: Self = this.set("initialTitle", js.undefined)
+    def setStoreInterval(value: Double): Self = StObject.set(x, "storeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafariPollInterval(value: Double): Self = this.set("safariPollInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSafariPollInterval: Self = this.set("safariPollInterval", js.undefined)
-    
-    @scala.inline
-    def setStoreInterval(value: Double): Self = this.set("storeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreInterval: Self = this.set("storeInterval", js.undefined)
+    def setStoreIntervalUndefined: Self = StObject.set(x, "storeInterval", js.undefined)
   }
 }

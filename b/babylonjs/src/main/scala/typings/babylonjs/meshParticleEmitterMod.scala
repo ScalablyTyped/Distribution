@@ -4,14 +4,14 @@ import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/EmitterTypes/meshParticleEmitter", JSImport.Namespace)
-@js.native
-object meshParticleEmitterMod extends js.Object {
+object meshParticleEmitterMod {
   
+  @JSImport("babylonjs/Particles/EmitterTypes/meshParticleEmitter", "MeshParticleEmitter")
   @js.native
   /**
     * Creates a new instance MeshParticleEmitter

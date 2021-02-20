@@ -8,6 +8,7 @@ import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.phaser.integer
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,27 +78,15 @@ object HTML5AudioFile {
   }
   
   @scala.inline
-  implicit class HTML5AudioFileOps[Self <: HTML5AudioFile] (val x: Self) extends AnyVal {
+  implicit class HTML5AudioFileMutableBuilder[Self <: HTML5AudioFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnLoad(value: () => Unit): Self = this.set("onLoad", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnProgress(value: () => Unit): Self = this.set("onProgress", js.Any.fromFunction0(value))
+    def setOnProgress(value: () => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction0(value))
   }
 }

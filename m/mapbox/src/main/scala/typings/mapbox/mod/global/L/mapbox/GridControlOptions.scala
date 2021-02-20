@@ -1,5 +1,6 @@
 package typings.mapbox.mod.global.L.mapbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object GridControlOptions {
   }
   
   @scala.inline
-  implicit class GridControlOptionsOps[Self <: GridControlOptions] (val x: Self) extends AnyVal {
+  implicit class GridControlOptionsMutableBuilder[Self <: GridControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteFollow: Self = this.set("follow", js.undefined)
+    def setPinnable(value: Boolean): Self = StObject.set(x, "pinnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Boolean): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPinnableUndefined: Self = StObject.set(x, "pinnable", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinnable(value: Boolean): Self = this.set("pinnable", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deletePinnable: Self = this.set("pinnable", js.undefined)
+    def setTouchTeaser(value: Boolean): Self = StObject.set(x, "touchTeaser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setTouchTeaser(value: Boolean): Self = this.set("touchTeaser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchTeaser: Self = this.set("touchTeaser", js.undefined)
+    def setTouchTeaserUndefined: Self = StObject.set(x, "touchTeaser", js.undefined)
   }
 }

@@ -7,12 +7,13 @@ import typings.chrome.chrome.declarativeContent.PageStateMatcher
 import typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
 import typings.chrome.chrome.declarativeContent.SetIcon
 import typings.chrome.chrome.declarativeContent.ShowPageAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofdeclarativeContent extends js.Object {
+trait TypeofdeclarativeContent extends StObject {
   
   var PageStateMatcher: Instantiable1[
     /* options */ PageStateMatcherProperties, 
@@ -45,33 +46,21 @@ object TypeofdeclarativeContent {
   }
   
   @scala.inline
-  implicit class TypeofdeclarativeContentOps[Self <: TypeofdeclarativeContent] (val x: Self) extends AnyVal {
+  implicit class TypeofdeclarativeContentMutableBuilder[Self <: TypeofdeclarativeContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnPageChanged(value: PageChangedEvent): Self = StObject.set(x, "onPageChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageStateMatcher(value: Instantiable1[/* options */ PageStateMatcherProperties, PageStateMatcher]): Self = StObject.set(x, "PageStateMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageStateMatcherProperties(value: Instantiable0[PageStateMatcherProperties]): Self = StObject.set(x, "PageStateMatcherProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStateMatcher(value: Instantiable1[/* options */ PageStateMatcherProperties, PageStateMatcher]): Self = this.set("PageStateMatcher", value.asInstanceOf[js.Any])
+    def setSetIcon(value: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon]): Self = StObject.set(x, "SetIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStateMatcherProperties(value: Instantiable0[PageStateMatcherProperties]): Self = this.set("PageStateMatcherProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetIcon(value: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon]): Self = this.set("SetIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowPageAction(value: Instantiable0[ShowPageAction]): Self = this.set("ShowPageAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnPageChanged(value: PageChangedEvent): Self = this.set("onPageChanged", value.asInstanceOf[js.Any])
+    def setShowPageAction(value: Instantiable0[ShowPageAction]): Self = StObject.set(x, "ShowPageAction", value.asInstanceOf[js.Any])
   }
 }

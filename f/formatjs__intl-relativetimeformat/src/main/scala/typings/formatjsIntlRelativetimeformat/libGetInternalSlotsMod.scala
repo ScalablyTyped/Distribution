@@ -2,13 +2,14 @@ package typings.formatjsIntlRelativetimeformat
 
 import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormat
 import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatInternal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/intl-relativetimeformat/lib/get_internal_slots", JSImport.Namespace)
-@js.native
-object libGetInternalSlotsMod extends js.Object {
+object libGetInternalSlotsMod {
   
+  @JSImport("@formatjs/intl-relativetimeformat/lib/get_internal_slots", JSImport.Default)
+  @js.native
   def default(x: RelativeTimeFormat): RelativeTimeFormatInternal = js.native
 }

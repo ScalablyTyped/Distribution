@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentColorProvider extends js.Object {
+trait DocumentColorProvider extends StObject {
   
   /**
     * Provide [representations](#ColorPresentation) for a color.
@@ -41,24 +42,12 @@ object DocumentColorProvider {
   }
   
   @scala.inline
-  implicit class DocumentColorProviderOps[Self <: DocumentColorProvider] (val x: Self) extends AnyVal {
+  implicit class DocumentColorProviderMutableBuilder[Self <: DocumentColorProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvideColorPresentations(value: (Color, Document, CancellationToken) => ProviderResult[js.Array[ColorPresentation]]): Self = StObject.set(x, "provideColorPresentations", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideColorPresentations(value: (Color, Document, CancellationToken) => ProviderResult[js.Array[ColorPresentation]]): Self = this.set("provideColorPresentations", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setProvideDocumentColors(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[ColorInformation]]): Self = this.set("provideDocumentColors", js.Any.fromFunction2(value))
+    def setProvideDocumentColors(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[ColorInformation]]): Self = StObject.set(x, "provideDocumentColors", js.Any.fromFunction2(value))
   }
 }

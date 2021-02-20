@@ -5,14 +5,14 @@ import typings.three.textureMod.Texture
 import typings.three.webGLRenderTargetMod.WebGLRenderTarget
 import typings.three.webGLRenderTargetMod.WebGLRenderTargetOptions
 import typings.three.webGLRendererMod.WebGLRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/WebGLCubeRenderTarget", JSImport.Namespace)
-@js.native
-object webGLCubeRenderTargetMod extends js.Object {
+object webGLCubeRenderTargetMod {
   
+  @JSImport("three/src/renderers/WebGLCubeRenderTarget", "WebGLCubeRenderTarget")
   @js.native
   class WebGLCubeRenderTarget protected () extends WebGLRenderTarget {
     def this(size: Double) = this()

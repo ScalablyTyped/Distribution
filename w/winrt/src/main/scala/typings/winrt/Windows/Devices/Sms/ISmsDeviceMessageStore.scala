@@ -4,12 +4,13 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISmsDeviceMessageStore extends js.Object {
+trait ISmsDeviceMessageStore extends StObject {
   
   def deleteMessageAsync(messageId: Double): IAsyncAction = js.native
   
@@ -36,33 +37,21 @@ object ISmsDeviceMessageStore {
   }
   
   @scala.inline
-  implicit class ISmsDeviceMessageStoreOps[Self <: ISmsDeviceMessageStore] (val x: Self) extends AnyVal {
+  implicit class ISmsDeviceMessageStoreMutableBuilder[Self <: ISmsDeviceMessageStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteMessageAsync(value: Double => IAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteMessagesAsync(value: SmsMessageFilter => IAsyncAction): Self = StObject.set(x, "deleteMessagesAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMessageAsync(value: Double => IAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteMessageAsync(value: Double => IAsyncAction): Self = this.set("deleteMessageAsync", js.Any.fromFunction1(value))
+    def setGetMessagesAsync(value: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteMessagesAsync(value: SmsMessageFilter => IAsyncAction): Self = this.set("deleteMessagesAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMessageAsync(value: Double => IAsyncOperation[ISmsMessage]): Self = this.set("getMessageAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMessagesAsync(value: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]): Self = this.set("getMessagesAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMaxMessages(value: Double): Self = this.set("maxMessages", value.asInstanceOf[js.Any])
+    def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
   }
 }

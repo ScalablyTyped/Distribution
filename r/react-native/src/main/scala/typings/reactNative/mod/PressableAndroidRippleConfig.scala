@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PressableAndroidRippleConfig extends js.Object {
+trait PressableAndroidRippleConfig extends StObject {
   
   var borderless: js.UndefOr[Null | Boolean] = js.native
   
@@ -22,45 +23,33 @@ object PressableAndroidRippleConfig {
   }
   
   @scala.inline
-  implicit class PressableAndroidRippleConfigOps[Self <: PressableAndroidRippleConfig] (val x: Self) extends AnyVal {
+  implicit class PressableAndroidRippleConfigMutableBuilder[Self <: PressableAndroidRippleConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderlessNull: Self = StObject.set(x, "borderless", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
     @scala.inline
-    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    def setColorNull: Self = StObject.set(x, "color", null)
     
     @scala.inline
-    def setBorderlessNull: Self = this.set("borderless", null)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setColor(value: ColorValue): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setRadiusNull: Self = StObject.set(x, "radius", null)
     
     @scala.inline
-    def setColorNull: Self = this.set("color", null)
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
-    
-    @scala.inline
-    def setRadiusNull: Self = this.set("radius", null)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

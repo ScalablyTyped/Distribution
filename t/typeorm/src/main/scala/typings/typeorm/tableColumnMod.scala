@@ -6,17 +6,22 @@ import typings.typeorm.typeormStrings.VIRTUAL
 import typings.typeorm.typeormStrings.increment
 import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.uuid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/schema-builder/table/TableColumn", JSImport.Namespace)
-@js.native
-object tableColumnMod extends js.Object {
+object tableColumnMod {
   
+  @JSImport("typeorm/browser/schema-builder/table/TableColumn", "TableColumn")
   @js.native
-  class TableColumn () extends js.Object {
+  class TableColumn () extends StObject {
     def this(options: TableColumnOptions) = this()
+    
+    /**
+      * Column's default value.
+      */
+    var default: js.UndefOr[js.Any] = js.native
     
     /**
       * Generated column expression. Supports only in MySQL.
@@ -37,11 +42,6 @@ object tableColumnMod extends js.Object {
       * Column's comment.
       */
     var comment: js.UndefOr[String] = js.native
-    
-    /**
-      * Column's default value.
-      */
-    var default: js.UndefOr[js.Any] = js.native
     
     /**
       * Array of possible enumerated values.

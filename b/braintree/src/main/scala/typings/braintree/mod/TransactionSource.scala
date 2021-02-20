@@ -1,5 +1,6 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.ControlPanel
   - typings.braintree.braintreeStrings.Recurring
 */
-trait TransactionSource extends js.Object
+trait TransactionSource extends StObject
 object TransactionSource {
   
   @scala.inline

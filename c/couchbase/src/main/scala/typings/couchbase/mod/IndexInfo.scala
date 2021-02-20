@@ -1,12 +1,13 @@
 package typings.couchbase.mod
 
 import typings.couchbase.couchbaseStrings.gsi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexInfo extends js.Object {
+trait IndexInfo extends StObject {
   
   /**
     * ID for the index.
@@ -74,48 +75,36 @@ object IndexInfo {
   }
   
   @scala.inline
-  implicit class IndexInfoOps[Self <: IndexInfo] (val x: Self) extends AnyVal {
+  implicit class IndexInfoMutableBuilder[Self <: IndexInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex_key(value: js.Array[String]): Self = StObject.set(x, "index_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex_keyVarargs(value: String*): Self = StObject.set(x, "index_key", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIs_primary(value: Boolean): Self = StObject.set(x, "is_primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex_keyVarargs(value: String*): Self = this.set("index_key", js.Array(value :_*))
+    def setKeyspace_id(value: String): Self = StObject.set(x, "keyspace_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex_key(value: js.Array[String]): Self = this.set("index_key", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_primary(value: Boolean): Self = this.set("is_primary", value.asInstanceOf[js.Any])
+    def setNamespace_id(value: String): Self = StObject.set(x, "namespace_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyspace_id(value: String): Self = this.set("keyspace_id", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStore_id(value: String): Self = StObject.set(x, "store_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace_id(value: String): Self = this.set("namespace_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStore_id(value: String): Self = this.set("store_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsing(value: gsi): Self = this.set("using", value.asInstanceOf[js.Any])
+    def setUsing(value: gsi): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
   }
 }

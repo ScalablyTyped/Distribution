@@ -1,12 +1,13 @@
 package typings.reactSpringShared
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-spring/shared/esm/deprecations", JSImport.Namespace)
-@js.native
-object esmDeprecationsMod extends js.Object {
+object esmDeprecationsMod {
   
+  @JSImport("@react-spring/shared/esm/deprecations", "deprecateInterpolate")
+  @js.native
   def deprecateInterpolate(): Unit = js.native
 }

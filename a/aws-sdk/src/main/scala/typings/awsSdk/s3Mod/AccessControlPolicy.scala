@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessControlPolicy extends js.Object {
+trait AccessControlPolicy extends StObject {
   
   /**
     * A list of grants.
@@ -26,33 +27,21 @@ object AccessControlPolicy {
   }
   
   @scala.inline
-  implicit class AccessControlPolicyOps[Self <: AccessControlPolicy] (val x: Self) extends AnyVal {
+  implicit class AccessControlPolicyMutableBuilder[Self <: AccessControlPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrants(value: Grants): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
     
     @scala.inline
-    def setGrantsVarargs(value: Grant*): Self = this.set("Grants", js.Array(value :_*))
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrants(value: Grants): Self = this.set("Grants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrants: Self = this.set("Grants", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
   }
 }

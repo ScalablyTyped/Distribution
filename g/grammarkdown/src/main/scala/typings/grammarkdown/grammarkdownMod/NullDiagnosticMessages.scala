@@ -1,5 +1,6 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class NullDiagnosticMessages () extends DiagnosticMessages
 /* static members */
-@JSImport("grammarkdown/dist/grammarkdown", "NullDiagnosticMessages")
-@js.native
-object NullDiagnosticMessages extends js.Object {
+object NullDiagnosticMessages {
   
-  var _instance: js.Any = js.native
+  @JSImport("grammarkdown/dist/grammarkdown", "NullDiagnosticMessages")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def instance: NullDiagnosticMessages = js.native
+  @JSImport("grammarkdown/dist/grammarkdown", "NullDiagnosticMessages._instance")
+  @js.native
+  def _instance: js.Any = js.native
+  @scala.inline
+  def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
 }

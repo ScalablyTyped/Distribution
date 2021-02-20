@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectTemplateSelectorItem extends js.Object {
+trait IObjectTemplateSelectorItem extends StObject {
   
   def GetClassID(): Double = js.native
   
@@ -47,48 +48,36 @@ object IObjectTemplateSelectorItem {
   }
   
   @scala.inline
-  implicit class IObjectTemplateSelectorItemOps[Self <: IObjectTemplateSelectorItem] (val x: Self) extends AnyVal {
+  implicit class IObjectTemplateSelectorItemMutableBuilder[Self <: IObjectTemplateSelectorItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClassID(value: () => Double): Self = StObject.set(x, "GetClassID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClassName(value: () => String): Self = StObject.set(x, "GetClassName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGroupID(value: () => Double): Self = StObject.set(x, "GetGroupID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClassID(value: () => Double): Self = this.set("GetClassID", js.Any.fromFunction0(value))
+    def setGetGroupName(value: () => String): Self = StObject.set(x, "GetGroupName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClassName(value: () => String): Self = this.set("GetClassName", js.Any.fromFunction0(value))
+    def setGetID(value: () => String): Self = StObject.set(x, "GetID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupID(value: () => Double): Self = this.set("GetGroupID", js.Any.fromFunction0(value))
+    def setGetIconURL(value: () => String): Self = StObject.set(x, "GetIconURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupName(value: () => String): Self = this.set("GetGroupName", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetID(value: () => String): Self = this.set("GetID", js.Any.fromFunction0(value))
+    def setGetTemplateID(value: () => Double): Self = StObject.set(x, "GetTemplateID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIconURL(value: () => String): Self = this.set("GetIconURL", js.Any.fromFunction0(value))
+    def setIsBlankItem(value: () => Boolean): Self = StObject.set(x, "IsBlankItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("GetName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTemplateID(value: () => Double): Self = this.set("GetTemplateID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsBlankItem(value: () => Boolean): Self = this.set("IsBlankItem", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsDefaultTemplateForClass(value: () => Boolean): Self = this.set("IsDefaultTemplateForClass", js.Any.fromFunction0(value))
+    def setIsDefaultTemplateForClass(value: () => Boolean): Self = StObject.set(x, "IsDefaultTemplateForClass", js.Any.fromFunction0(value))
   }
 }

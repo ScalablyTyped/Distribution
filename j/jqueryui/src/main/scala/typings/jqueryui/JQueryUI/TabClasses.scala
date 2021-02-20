@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabClasses extends js.Object {
+trait TabClasses extends StObject {
   
   var `ui-tabs`: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object TabClasses {
   }
   
   @scala.inline
-  implicit class TabClassesOps[Self <: TabClasses] (val x: Self) extends AnyVal {
+  implicit class TabClassesMutableBuilder[Self <: TabClasses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setUi-tabs`(value: String): Self = StObject.set(x, "ui-tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setUi-tabs-active`(value: String): Self = StObject.set(x, "ui-tabs-active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setUi-tabs-activeUndefined`: Self = StObject.set(x, "ui-tabs-active", js.undefined)
     
     @scala.inline
-    def `setUi-tabs`(value: String): Self = this.set("ui-tabs", value.asInstanceOf[js.Any])
+    def `setUi-tabs-anchor`(value: String): Self = StObject.set(x, "ui-tabs-anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-tabs`: Self = this.set("ui-tabs", js.undefined)
+    def `setUi-tabs-anchorUndefined`: Self = StObject.set(x, "ui-tabs-anchor", js.undefined)
     
     @scala.inline
-    def `setUi-tabs-active`(value: String): Self = this.set("ui-tabs-active", value.asInstanceOf[js.Any])
+    def `setUi-tabs-collapsible`(value: String): Self = StObject.set(x, "ui-tabs-collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-tabs-active`: Self = this.set("ui-tabs-active", js.undefined)
+    def `setUi-tabs-collapsibleUndefined`: Self = StObject.set(x, "ui-tabs-collapsible", js.undefined)
     
     @scala.inline
-    def `setUi-tabs-anchor`(value: String): Self = this.set("ui-tabs-anchor", value.asInstanceOf[js.Any])
+    def `setUi-tabs-loading`(value: String): Self = StObject.set(x, "ui-tabs-loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-tabs-anchor`: Self = this.set("ui-tabs-anchor", js.undefined)
+    def `setUi-tabs-loadingUndefined`: Self = StObject.set(x, "ui-tabs-loading", js.undefined)
     
     @scala.inline
-    def `setUi-tabs-collapsible`(value: String): Self = this.set("ui-tabs-collapsible", value.asInstanceOf[js.Any])
+    def `setUi-tabs-nav`(value: String): Self = StObject.set(x, "ui-tabs-nav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-tabs-collapsible`: Self = this.set("ui-tabs-collapsible", js.undefined)
+    def `setUi-tabs-navUndefined`: Self = StObject.set(x, "ui-tabs-nav", js.undefined)
     
     @scala.inline
-    def `setUi-tabs-loading`(value: String): Self = this.set("ui-tabs-loading", value.asInstanceOf[js.Any])
+    def `setUi-tabs-panel`(value: String): Self = StObject.set(x, "ui-tabs-panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-tabs-loading`: Self = this.set("ui-tabs-loading", js.undefined)
+    def `setUi-tabs-panelUndefined`: Self = StObject.set(x, "ui-tabs-panel", js.undefined)
     
     @scala.inline
-    def `setUi-tabs-nav`(value: String): Self = this.set("ui-tabs-nav", value.asInstanceOf[js.Any])
+    def `setUi-tabs-tab`(value: String): Self = StObject.set(x, "ui-tabs-tab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-tabs-nav`: Self = this.set("ui-tabs-nav", js.undefined)
+    def `setUi-tabs-tabUndefined`: Self = StObject.set(x, "ui-tabs-tab", js.undefined)
     
     @scala.inline
-    def `setUi-tabs-panel`(value: String): Self = this.set("ui-tabs-panel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-tabs-panel`: Self = this.set("ui-tabs-panel", js.undefined)
-    
-    @scala.inline
-    def `setUi-tabs-tab`(value: String): Self = this.set("ui-tabs-tab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-tabs-tab`: Self = this.set("ui-tabs-tab", js.undefined)
+    def `setUi-tabsUndefined`: Self = StObject.set(x, "ui-tabs", js.undefined)
   }
 }

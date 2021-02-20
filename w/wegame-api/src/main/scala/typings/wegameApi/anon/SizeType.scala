@@ -4,12 +4,13 @@ import typings.wegameApi.wegameApiStrings.album
 import typings.wegameApi.wegameApiStrings.camera
 import typings.wegameApi.wegameApiStrings.compressed
 import typings.wegameApi.wegameApiStrings.original
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizeType extends js.Object {
+trait SizeType extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -42,51 +43,39 @@ object SizeType {
   }
   
   @scala.inline
-  implicit class SizeTypeOps[Self <: SizeType] (val x: Self) extends AnyVal {
+  implicit class SizeTypeMutableBuilder[Self <: SizeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSizeTypeVarargs(value: (original | compressed)*): Self = this.set("sizeType", js.Array(value :_*))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setSizeType(value: (js.Array[original | compressed]) | (js.Tuple2[original, compressed])): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    def setSizeType(value: (js.Array[original | compressed]) | (js.Tuple2[original, compressed])): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTypeVarargs(value: (album | camera)*): Self = this.set("sourceType", js.Array(value :_*))
+    def setSizeTypeVarargs(value: (original | compressed)*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
     
     @scala.inline
-    def setSourceType(value: (js.Array[album | camera]) | (js.Tuple2[album, camera])): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    def setSourceType(value: (js.Array[album | camera]) | (js.Tuple2[album, camera])): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setSourceTypeVarargs(value: (album | camera)*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: /* res */ TempFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ TempFilePaths => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

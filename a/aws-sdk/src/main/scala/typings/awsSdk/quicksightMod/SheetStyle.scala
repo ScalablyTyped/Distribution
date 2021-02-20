@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SheetStyle extends js.Object {
+trait SheetStyle extends StObject {
   
   /**
     * The display options for tiles.
@@ -26,30 +27,18 @@ object SheetStyle {
   }
   
   @scala.inline
-  implicit class SheetStyleOps[Self <: SheetStyle] (val x: Self) extends AnyVal {
+  implicit class SheetStyleMutableBuilder[Self <: SheetStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTile(value: TileStyle): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTileLayout(value: TileLayoutStyle): Self = StObject.set(x, "TileLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTileLayoutUndefined: Self = StObject.set(x, "TileLayout", js.undefined)
     
     @scala.inline
-    def setTile(value: TileStyle): Self = this.set("Tile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTile: Self = this.set("Tile", js.undefined)
-    
-    @scala.inline
-    def setTileLayout(value: TileLayoutStyle): Self = this.set("TileLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileLayout: Self = this.set("TileLayout", js.undefined)
+    def setTileUndefined: Self = StObject.set(x, "Tile", js.undefined)
   }
 }

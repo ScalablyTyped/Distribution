@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object SpringJointData {
   }
   
   @scala.inline
-  implicit class SpringJointDataOps[Self <: SpringJointData] (val x: Self) extends AnyVal {
+  implicit class SpringJointDataMutableBuilder[Self <: SpringJointData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceApplicationCallback(value: () => Unit): Self = StObject.set(x, "forceApplicationCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceApplicationCallback(value: () => Unit): Self = this.set("forceApplicationCallback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
   }
 }

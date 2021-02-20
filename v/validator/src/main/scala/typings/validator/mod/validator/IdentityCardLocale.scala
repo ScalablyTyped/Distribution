@@ -1,5 +1,6 @@
 package typings.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.`he-IL`
   - typings.validator.validatorStrings.`zh-TW`
 */
-trait IdentityCardLocale extends js.Object
+trait IdentityCardLocale extends StObject
 object IdentityCardLocale {
   
   @scala.inline

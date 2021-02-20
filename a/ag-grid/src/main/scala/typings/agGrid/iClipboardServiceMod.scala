@@ -1,16 +1,15 @@
 package typings.agGrid
 
 import typings.agGrid.columnMod.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/interfaces/iClipboardService", JSImport.Namespace)
-@js.native
-object iClipboardServiceMod extends js.Object {
+object iClipboardServiceMod {
   
   @js.native
-  trait IClipboardService extends js.Object {
+  trait IClipboardService extends StObject {
     
     def copyRangeDown(): Unit = js.native
     

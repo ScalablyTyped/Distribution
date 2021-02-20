@@ -2,12 +2,13 @@ package typings.lyricist.mod
 
 import typings.lyricist.anon.Apipath
 import typings.lyricist.anon.Content
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescriptionAnnotation extends js.Object {
+trait DescriptionAnnotation extends StObject {
   
   var _type: String = js.native
   
@@ -64,69 +65,57 @@ object DescriptionAnnotation {
   }
   
   @scala.inline
-  implicit class DescriptionAnnotationOps[Self <: DescriptionAnnotation] (val x: Self) extends AnyVal {
+  implicit class DescriptionAnnotationMutableBuilder[Self <: DescriptionAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotatable(value: Apipath): Self = StObject.set(x, "annotatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def set_type(value: String): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setAnnotator_id(value: Double): Self = StObject.set(x, "annotator_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotatable(value: Apipath): Self = this.set("annotatable", value.asInstanceOf[js.Any])
+    def setAnnotator_login(value: String): Self = StObject.set(x, "annotator_login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsVarargs(value: Annotation*): Self = this.set("annotations", js.Array(value :_*))
+    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Array[Annotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotator_id(value: Double): Self = this.set("annotator_id", value.asInstanceOf[js.Any])
+    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotator_login(value: String): Self = this.set("annotator_login", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_path(value: String): Self = this.set("api_path", value.asInstanceOf[js.Any])
+    def setIs_description(value: Boolean): Self = StObject.set(x, "is_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassification(value: String): Self = this.set("classification", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: String): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setRange(value: Content): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSong_id(value: Double): Self = StObject.set(x, "song_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_description(value: Boolean): Self = this.set("is_description", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setVerified_annotator_ids(value: js.Array[_]): Self = StObject.set(x, "verified_annotator_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Content): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setVerified_annotator_idsVarargs(value: js.Any*): Self = StObject.set(x, "verified_annotator_ids", js.Array(value :_*))
     
     @scala.inline
-    def setSong_id(value: Double): Self = this.set("song_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified_annotator_idsVarargs(value: js.Any*): Self = this.set("verified_annotator_ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setVerified_annotator_ids(value: js.Array[_]): Self = this.set("verified_annotator_ids", value.asInstanceOf[js.Any])
+    def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
   }
 }

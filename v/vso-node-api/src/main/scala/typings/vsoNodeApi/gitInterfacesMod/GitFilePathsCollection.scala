@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitFilePathsCollection extends js.Object {
+trait GitFilePathsCollection extends StObject {
   
   var commitId: String = js.native
   
@@ -22,30 +23,18 @@ object GitFilePathsCollection {
   }
   
   @scala.inline
-  implicit class GitFilePathsCollectionOps[Self <: GitFilePathsCollection] (val x: Self) extends AnyVal {
+  implicit class GitFilePathsCollectionMutableBuilder[Self <: GitFilePathsCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
     @scala.inline
-    def setCommitId(value: String): Self = this.set("commitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationEffectReadOnly extends js.Object {
+trait AnimationEffectReadOnly extends StObject {
   
   def getComputedTiming(): ComputedTimingProperties = js.native
   
@@ -20,24 +21,12 @@ object AnimationEffectReadOnly {
   }
   
   @scala.inline
-  implicit class AnimationEffectReadOnlyOps[Self <: AnimationEffectReadOnly] (val x: Self) extends AnyVal {
+  implicit class AnimationEffectReadOnlyMutableBuilder[Self <: AnimationEffectReadOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetComputedTiming(value: () => ComputedTimingProperties): Self = StObject.set(x, "getComputedTiming", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetComputedTiming(value: () => ComputedTimingProperties): Self = this.set("getComputedTiming", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTiming(value: Double): Self = this.set("timing", value.asInstanceOf[js.Any])
+    def setTiming(value: Double): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
   }
 }

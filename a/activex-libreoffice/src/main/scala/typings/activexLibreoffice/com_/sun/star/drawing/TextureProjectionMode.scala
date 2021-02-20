@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
-trait TextureProjectionMode extends js.Object
+trait TextureProjectionMode extends StObject
 object TextureProjectionMode {
   
   /** This value specifies that the standard object projection method is used. */

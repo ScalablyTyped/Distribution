@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,11 @@ class Program ()
   def this(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], name: String) = this()
   def this(vertexSrc: String, fragmentSrc: String, name: String) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Program")
-@js.native
-object Program extends js.Object {
+object Program {
+  
+  @JSImport("pixi.js", "Program")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The default fragment shader source
@@ -34,7 +36,12 @@ object Program extends js.Object {
     * @constant
     * @member {string}
     */
-  var defaultFragmentSrc: String = js.native
+  /* static member */
+  @JSImport("pixi.js", "Program.defaultFragmentSrc")
+  @js.native
+  def defaultFragmentSrc: String = js.native
+  @scala.inline
+  def defaultFragmentSrc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFragmentSrc")(x.asInstanceOf[js.Any])
   
   /**
     * The default vertex shader source
@@ -43,7 +50,12 @@ object Program extends js.Object {
     * @constant
     * @member {string}
     */
-  var defaultVertexSrc: String = js.native
+  /* static member */
+  @JSImport("pixi.js", "Program.defaultVertexSrc")
+  @js.native
+  def defaultVertexSrc: String = js.native
+  @scala.inline
+  def defaultVertexSrc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertexSrc")(x.asInstanceOf[js.Any])
   
   /**
     * A short hand function to create a program based of a vertex and fragment shader
@@ -55,12 +67,29 @@ object Program extends js.Object {
     *
     * @returns {PIXI.Program} an shiny new Pixi shader!
     */
+  /* static member */
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: js.UndefOr[scala.Nothing], name: String): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: String): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], name: String): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Program = js.native
+  @JSImport("pixi.js", "Program.from")
+  @js.native
   def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = js.native
 }

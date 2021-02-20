@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlicerCaches extends js.Object {
+trait SlicerCaches extends StObject {
   
   def apply(Index: String): SlicerCache = js.native
   def apply(Index: Double): SlicerCache = js.native

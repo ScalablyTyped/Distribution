@@ -1,11 +1,12 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionMap[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait ActionMap[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var actions: js.Array[Action[TContext, TEvent]] = js.native
   
@@ -26,36 +27,24 @@ object ActionMap {
   }
   
   @scala.inline
-  implicit class ActionMapOps[Self <: ActionMap[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ActionMap[TContext, TEvent])) extends AnyVal {
+  implicit class ActionMapMutableBuilder[Self <: ActionMap[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (ActionMap[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnEntry(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "onEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = this.set("actions", js.Array(value :_*))
+    def setOnEntryVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onEntry", js.Array(value :_*))
     
     @scala.inline
-    def setActions(value: js.Array[Action[TContext, TEvent]]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setOnExit(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEntryVarargs(value: (Action[TContext, TEvent])*): Self = this.set("onEntry", js.Array(value :_*))
-    
-    @scala.inline
-    def setOnEntry(value: js.Array[Action[TContext, TEvent]]): Self = this.set("onEntry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnExitVarargs(value: (Action[TContext, TEvent])*): Self = this.set("onExit", js.Array(value :_*))
-    
-    @scala.inline
-    def setOnExit(value: js.Array[Action[TContext, TEvent]]): Self = this.set("onExit", value.asInstanceOf[js.Any])
+    def setOnExitVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "onExit", js.Array(value :_*))
   }
 }

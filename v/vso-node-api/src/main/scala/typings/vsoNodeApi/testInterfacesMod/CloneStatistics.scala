@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloneStatistics extends js.Object {
+trait CloneStatistics extends StObject {
   
   /**
     * Number of Requirments cloned so far.
@@ -47,33 +48,21 @@ object CloneStatistics {
   }
   
   @scala.inline
-  implicit class CloneStatisticsOps[Self <: CloneStatistics] (val x: Self) extends AnyVal {
+  implicit class CloneStatisticsMutableBuilder[Self <: CloneStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClonedRequirementsCount(value: Double): Self = StObject.set(x, "clonedRequirementsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClonedSharedStepsCount(value: Double): Self = StObject.set(x, "clonedSharedStepsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClonedTestCasesCount(value: Double): Self = StObject.set(x, "clonedTestCasesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClonedRequirementsCount(value: Double): Self = this.set("clonedRequirementsCount", value.asInstanceOf[js.Any])
+    def setTotalRequirementsCount(value: Double): Self = StObject.set(x, "totalRequirementsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClonedSharedStepsCount(value: Double): Self = this.set("clonedSharedStepsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClonedTestCasesCount(value: Double): Self = this.set("clonedTestCasesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalRequirementsCount(value: Double): Self = this.set("totalRequirementsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalTestCasesCount(value: Double): Self = this.set("totalTestCasesCount", value.asInstanceOf[js.Any])
+    def setTotalTestCasesCount(value: Double): Self = StObject.set(x, "totalTestCasesCount", value.asInstanceOf[js.Any])
   }
 }

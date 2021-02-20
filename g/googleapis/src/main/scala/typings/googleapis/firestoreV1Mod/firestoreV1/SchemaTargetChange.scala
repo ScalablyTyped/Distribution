@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Targets being watched have changed.
   */
 @js.native
-trait SchemaTargetChange extends js.Object {
+trait SchemaTargetChange extends StObject {
   
   /**
     * The error that resulted in this change, if applicable.
@@ -56,51 +57,39 @@ object SchemaTargetChange {
   }
   
   @scala.inline
-  implicit class SchemaTargetChangeOps[Self <: SchemaTargetChange] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetChangeMutableBuilder[Self <: SchemaTargetChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCause(value: SchemaStatus): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: SchemaStatus): Self = this.set("cause", value.asInstanceOf[js.Any])
+    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     @scala.inline
-    def deleteCause: Self = this.set("cause", js.undefined)
+    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
     @scala.inline
-    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    def setTargetChangeType(value: String): Self = StObject.set(x, "targetChangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    def setTargetChangeTypeUndefined: Self = StObject.set(x, "targetChangeType", js.undefined)
     
     @scala.inline
-    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    def setTargetIds(value: js.Array[Double]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetChangeType(value: String): Self = this.set("targetChangeType", value.asInstanceOf[js.Any])
+    def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
     @scala.inline
-    def deleteTargetChangeType: Self = this.set("targetChangeType", js.undefined)
-    
-    @scala.inline
-    def setTargetIdsVarargs(value: Double*): Self = this.set("targetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetIds(value: js.Array[Double]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+    def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.xy
 import typings.chartJs.chartJsStrings.y
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartHoverOptions extends js.Object {
+trait ChartHoverOptions extends StObject {
   
   var animationDuration: js.UndefOr[Double] = js.native
   
@@ -20,7 +21,12 @@ trait ChartHoverOptions extends js.Object {
   var mode: js.UndefOr[InteractionMode] = js.native
   
   var onHover: js.UndefOr[
-    js.ThisFunction2[/* this */ Chart, /* event */ MouseEvent, /* activeElements */ js.Array[js.Object], _]
+    js.ThisFunction2[
+      /* this */ typings.chartJs.mod.Chart, 
+      /* event */ MouseEvent, 
+      /* activeElements */ js.Array[js.Object], 
+      _
+    ]
   ] = js.native
 }
 object ChartHoverOptions {
@@ -32,50 +38,43 @@ object ChartHoverOptions {
   }
   
   @scala.inline
-  implicit class ChartHoverOptionsOps[Self <: ChartHoverOptions] (val x: Self) extends AnyVal {
+  implicit class ChartHoverOptionsMutableBuilder[Self <: ChartHoverOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: typings.chartJs.chartJsStrings.x | y | xy): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setIntersect(value: Boolean): Self = StObject.set(x, "intersect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: typings.chartJs.chartJsStrings.x | y | xy): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setIntersectUndefined: Self = StObject.set(x, "intersect", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setMode(value: InteractionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersect(value: Boolean): Self = this.set("intersect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntersect: Self = this.set("intersect", js.undefined)
-    
-    @scala.inline
-    def setMode(value: InteractionMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
     def setOnHover(
-      value: js.ThisFunction2[/* this */ Chart, /* event */ MouseEvent, /* activeElements */ js.Array[js.Object], _]
-    ): Self = this.set("onHover", value.asInstanceOf[js.Any])
+      value: js.ThisFunction2[
+          /* this */ typings.chartJs.mod.Chart, 
+          /* event */ MouseEvent, 
+          /* activeElements */ js.Array[js.Object], 
+          _
+        ]
+    ): Self = StObject.set(x, "onHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
   }
 }

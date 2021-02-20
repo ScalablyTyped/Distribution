@@ -2,12 +2,13 @@ package typings.uiGrid.mod
 
 import typings.angular.mod.IPromise
 import typings.uiGrid.anon.CanvasHeightChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridCoreApi[TEntity] extends js.Object {
+trait IGridCoreApi[TEntity] extends StObject {
   
   // Methods
   /**
@@ -163,7 +164,8 @@ trait IGridCoreApi[TEntity] extends js.Object {
     */
   def scrollTo(entity: TEntity, colDef: IColumnDefOf[TEntity]): Unit = js.native
   
-   /*A row entity can be anything?*/ /**
+  /*A row entity can be anything?*/
+  /**
     * Scrolls the grid to make a certain row and column combo visible,
     * in the case that it is not completely visible on the screen already.
     * @param {IGridRow} gridRow row to make visible

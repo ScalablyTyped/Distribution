@@ -1,5 +1,6 @@
 package typings.vueCompilerSfc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerSfc.vueCompilerSfcStrings.styl
   - typings.vueCompilerSfc.vueCompilerSfcStrings.stylus
 */
-trait PreprocessLang extends js.Object
+trait PreprocessLang extends StObject
 object PreprocessLang {
   
   @scala.inline

@@ -1,6 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,12 +19,12 @@ class PBRSpecularGlossinessMaterial protected ()
   def this(name: String, scene: Scene) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "PBRSpecularGlossinessMaterial")
-@js.native
-object PBRSpecularGlossinessMaterial extends js.Object {
+object PBRSpecularGlossinessMaterial {
   
   /**
     * Parses a JSON object correponding to the serialize function.
     */
+  @JSImport("babylonjs/Materials/index", "PBRSpecularGlossinessMaterial.Parse")
+  @js.native
   def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = js.native
 }

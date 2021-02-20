@@ -1,11 +1,12 @@
 package typings.chromeApps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLElementTagNameMap extends js.Object {
+trait HTMLElementTagNameMap extends StObject {
   
   var appview: HTMLAppViewElement = js.native
   
@@ -20,24 +21,12 @@ object HTMLElementTagNameMap {
   }
   
   @scala.inline
-  implicit class HTMLElementTagNameMapOps[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
+  implicit class HTMLElementTagNameMapMutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppview(value: HTMLAppViewElement): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppview(value: HTMLAppViewElement): Self = this.set("appview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebview(value: HTMLWebViewElement): Self = this.set("webview", value.asInstanceOf[js.Any])
+    def setWebview(value: HTMLWebViewElement): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
   }
 }

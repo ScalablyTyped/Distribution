@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityResponse extends js.Object {
+trait ActivityResponse extends StObject {
   
   /**
     * The unique identifier for the application that the campaign applies to.
@@ -81,87 +82,75 @@ object ActivityResponse {
   }
   
   @scala.inline
-  implicit class ActivityResponseOps[Self <: ActivityResponse] (val x: Self) extends AnyVal {
+  implicit class ActivityResponseMutableBuilder[Self <: ActivityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: string): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
     @scala.inline
-    def setCampaignId(value: string): Self = this.set("CampaignId", value.asInstanceOf[js.Any])
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setResult(value: string): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: string): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("End", js.undefined)
+    def setScheduledStart(value: string): Self = StObject.set(x, "ScheduledStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: string): Self = this.set("Result", value.asInstanceOf[js.Any])
+    def setScheduledStartUndefined: Self = StObject.set(x, "ScheduledStart", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("Result", js.undefined)
+    def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledStart(value: string): Self = this.set("ScheduledStart", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     
     @scala.inline
-    def deleteScheduledStart: Self = this.set("ScheduledStart", js.undefined)
+    def setState(value: string): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: string): Self = this.set("Start", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("Start", js.undefined)
+    def setSuccessfulEndpointCount(value: integer): Self = StObject.set(x, "SuccessfulEndpointCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: string): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setSuccessfulEndpointCountUndefined: Self = StObject.set(x, "SuccessfulEndpointCount", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTimezonesCompletedCount(value: integer): Self = StObject.set(x, "TimezonesCompletedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfulEndpointCount(value: integer): Self = this.set("SuccessfulEndpointCount", value.asInstanceOf[js.Any])
+    def setTimezonesCompletedCountUndefined: Self = StObject.set(x, "TimezonesCompletedCount", js.undefined)
     
     @scala.inline
-    def deleteSuccessfulEndpointCount: Self = this.set("SuccessfulEndpointCount", js.undefined)
+    def setTimezonesTotalCount(value: integer): Self = StObject.set(x, "TimezonesTotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezonesCompletedCount(value: integer): Self = this.set("TimezonesCompletedCount", value.asInstanceOf[js.Any])
+    def setTimezonesTotalCountUndefined: Self = StObject.set(x, "TimezonesTotalCount", js.undefined)
     
     @scala.inline
-    def deleteTimezonesCompletedCount: Self = this.set("TimezonesCompletedCount", js.undefined)
+    def setTotalEndpointCount(value: integer): Self = StObject.set(x, "TotalEndpointCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezonesTotalCount(value: integer): Self = this.set("TimezonesTotalCount", value.asInstanceOf[js.Any])
+    def setTotalEndpointCountUndefined: Self = StObject.set(x, "TotalEndpointCount", js.undefined)
     
     @scala.inline
-    def deleteTimezonesTotalCount: Self = this.set("TimezonesTotalCount", js.undefined)
+    def setTreatmentId(value: string): Self = StObject.set(x, "TreatmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalEndpointCount(value: integer): Self = this.set("TotalEndpointCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalEndpointCount: Self = this.set("TotalEndpointCount", js.undefined)
-    
-    @scala.inline
-    def setTreatmentId(value: string): Self = this.set("TreatmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreatmentId: Self = this.set("TreatmentId", js.undefined)
+    def setTreatmentIdUndefined: Self = StObject.set(x, "TreatmentId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMLConfig extends js.Object {
+trait AutoMLConfig extends StObject {
   
   /**
     * The metric to optimize.
@@ -26,33 +27,21 @@ object AutoMLConfig {
   }
   
   @scala.inline
-  implicit class AutoMLConfigOps[Self <: AutoMLConfig] (val x: Self) extends AnyVal {
+  implicit class AutoMLConfigMutableBuilder[Self <: AutoMLConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipeList(value: ArnList): Self = StObject.set(x, "recipeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setRecipeListUndefined: Self = StObject.set(x, "recipeList", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
-    
-    @scala.inline
-    def setRecipeListVarargs(value: Arn*): Self = this.set("recipeList", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecipeList(value: ArnList): Self = this.set("recipeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipeList: Self = this.set("recipeList", js.undefined)
+    def setRecipeListVarargs(value: Arn*): Self = StObject.set(x, "recipeList", js.Array(value :_*))
   }
 }

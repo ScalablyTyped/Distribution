@@ -3,12 +3,13 @@ package typings.puppeteer.mod
 import typings.puppeteer.anon.Delay
 import typings.puppeteer.anon.Text
 import typings.puppeteer.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Keyboard extends js.Object {
+trait Keyboard extends StObject {
   
   /**
     * Dispatches a keydown event.

@@ -1,11 +1,12 @@
 package typings.hammerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HammerManager extends js.Object {
+trait HammerManager extends StObject {
   
   def add(recogniser: js.Array[Recognizer]): Recognizer = js.native
   def add(recogniser: Recognizer): Recognizer = js.native

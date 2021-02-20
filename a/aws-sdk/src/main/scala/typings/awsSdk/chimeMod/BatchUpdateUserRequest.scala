@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUpdateUserRequest extends js.Object {
+trait BatchUpdateUserRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -26,27 +27,15 @@ object BatchUpdateUserRequest {
   }
   
   @scala.inline
-  implicit class BatchUpdateUserRequestOps[Self <: BatchUpdateUserRequest] (val x: Self) extends AnyVal {
+  implicit class BatchUpdateUserRequestMutableBuilder[Self <: BatchUpdateUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdateUserRequestItems(value: UpdateUserRequestItemList): Self = StObject.set(x, "UpdateUserRequestItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateUserRequestItemsVarargs(value: UpdateUserRequestItem*): Self = this.set("UpdateUserRequestItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdateUserRequestItems(value: UpdateUserRequestItemList): Self = this.set("UpdateUserRequestItems", value.asInstanceOf[js.Any])
+    def setUpdateUserRequestItemsVarargs(value: UpdateUserRequestItem*): Self = StObject.set(x, "UpdateUserRequestItems", js.Array(value :_*))
   }
 }

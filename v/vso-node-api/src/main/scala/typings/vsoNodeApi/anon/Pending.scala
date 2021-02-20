@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pending extends js.Object {
+trait Pending extends StObject {
   
   var approved: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object Pending {
   }
   
   @scala.inline
-  implicit class PendingOps[Self <: Pending] (val x: Self) extends AnyVal {
+  implicit class PendingMutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: scala.Double): Self = this.set("approved", value.asInstanceOf[js.Any])
+    def setReassigned(value: scala.Double): Self = StObject.set(x, "reassigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceled(value: scala.Double): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: scala.Double): Self = this.set("pending", value.asInstanceOf[js.Any])
+    def setSkipped(value: scala.Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReassigned(value: scala.Double): Self = this.set("reassigned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejected(value: scala.Double): Self = this.set("rejected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipped(value: scala.Double): Self = this.set("skipped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = this.set("undefined", value.asInstanceOf[js.Any])
+    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

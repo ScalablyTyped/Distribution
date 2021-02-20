@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceMonitoring extends js.Object {
+trait InstanceMonitoring extends StObject {
   
   /**
     * If true, detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
@@ -21,24 +22,12 @@ object InstanceMonitoring {
   }
   
   @scala.inline
-  implicit class InstanceMonitoringOps[Self <: InstanceMonitoring] (val x: Self) extends AnyVal {
+  implicit class InstanceMonitoringMutableBuilder[Self <: InstanceMonitoring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: MonitoringEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: MonitoringEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

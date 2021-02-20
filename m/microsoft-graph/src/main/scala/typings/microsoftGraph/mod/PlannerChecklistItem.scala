@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlannerChecklistItem extends js.Object {
+trait PlannerChecklistItem extends StObject {
   
   // Value is true if the item is checked and false otherwise.
   var isChecked: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -35,63 +36,51 @@ object PlannerChecklistItem {
   }
   
   @scala.inline
-  implicit class PlannerChecklistItemOps[Self <: PlannerChecklistItem] (val x: Self) extends AnyVal {
+  implicit class PlannerChecklistItemMutableBuilder[Self <: PlannerChecklistItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsChecked(value: NullableOption[Boolean]): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCheckedNull: Self = StObject.set(x, "isChecked", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
     
     @scala.inline
-    def setIsChecked(value: NullableOption[Boolean]): Self = this.set("isChecked", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsChecked: Self = this.set("isChecked", js.undefined)
+    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
     @scala.inline
-    def setIsCheckedNull: Self = this.set("isChecked", null)
+    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
     @scala.inline
-    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("lastModifiedBy", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setLastModifiedByNull: Self = this.set("lastModifiedBy", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
     @scala.inline
-    def setOrderHint(value: NullableOption[String]): Self = this.set("orderHint", value.asInstanceOf[js.Any])
+    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderHint: Self = this.set("orderHint", js.undefined)
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def setOrderHintNull: Self = this.set("orderHint", null)
-    
-    @scala.inline
-    def setTitle(value: NullableOption[String]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

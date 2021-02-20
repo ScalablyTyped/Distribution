@@ -6,18 +6,20 @@ import typings.blockingProxy.webdriverLoggerMod.WebDriverLogger
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blocking-proxy/built/lib/blockingproxy", JSImport.Namespace)
-@js.native
-object blockingproxyMod extends js.Object {
+object blockingproxyMod {
   
+  @JSImport("blocking-proxy/built/lib/blockingproxy", "BP_PREFIX")
+  @js.native
   val BP_PREFIX: /* "bpproxy" */ String = js.native
   
+  @JSImport("blocking-proxy/built/lib/blockingproxy", "BlockingProxy")
   @js.native
-  class BlockingProxy protected () extends js.Object {
+  class BlockingProxy protected () extends StObject {
     def this(seleniumAddress: String) = this()
     def this(seleniumAddress: String, highlightDelay: Double) = this()
     
@@ -57,12 +59,13 @@ object blockingproxyMod extends js.Object {
     var waitBarrier: AngularWaitBarrier = js.native
   }
   /* static members */
-  @js.native
-  object BlockingProxy extends js.Object {
+  object BlockingProxy {
     
     /**
       * This command is for the proxy server, not to be forwarded to Selenium.
       */
+    @JSImport("blocking-proxy/built/lib/blockingproxy", "BlockingProxy.isProxyCommand")
+    @js.native
     def isProxyCommand(commandPath: String): Boolean = js.native
   }
 }

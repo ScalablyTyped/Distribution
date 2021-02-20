@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object DecorationStyleEnumValues {
   }
   
   @scala.inline
-  implicit class DecorationStyleEnumValuesOps[Self <: DecorationStyleEnumValues] (val x: Self) extends AnyVal {
+  implicit class DecorationStyleEnumValuesMutableBuilder[Self <: DecorationStyleEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashed(value: DecorationStyle): Self = StObject.set(x, "Dashed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotted(value: DecorationStyle): Self = StObject.set(x, "Dotted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDouble(value: DecorationStyle): Self = StObject.set(x, "Double", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashed(value: DecorationStyle): Self = this.set("Dashed", value.asInstanceOf[js.Any])
+    def setSolid(value: DecorationStyle): Self = StObject.set(x, "Solid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotted(value: DecorationStyle): Self = this.set("Dotted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDouble(value: DecorationStyle): Self = this.set("Double", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSolid(value: DecorationStyle): Self = this.set("Solid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWavy(value: DecorationStyle): Self = this.set("Wavy", value.asInstanceOf[js.Any])
+    def setWavy(value: DecorationStyle): Self = StObject.set(x, "Wavy", value.asInstanceOf[js.Any])
   }
 }

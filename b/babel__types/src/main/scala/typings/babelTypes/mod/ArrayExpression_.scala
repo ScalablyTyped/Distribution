@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.ArrayExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object ArrayExpression_ {
   }
   
   @scala.inline
-  implicit class ArrayExpression_Ops[Self <: ArrayExpression_] (val x: Self) extends AnyVal {
+  implicit class ArrayExpression_MutableBuilder[Self <: ArrayExpression_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: js.Array[Null | Expression | SpreadElement_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[Null | Expression | SpreadElement_]): Self = this.set("elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ArrayExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ArrayExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

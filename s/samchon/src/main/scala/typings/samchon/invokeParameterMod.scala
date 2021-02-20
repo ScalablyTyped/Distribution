@@ -3,14 +3,14 @@ package typings.samchon
 import typings.samchon.entityMod.Entity
 import typings.std.Uint8Array
 import typings.sxml.mod.XML
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/protocol/invoke/InvokeParameter", JSImport.Namespace)
-@js.native
-object invokeParameterMod extends js.Object {
+object invokeParameterMod {
   
+  @JSImport("samchon/protocol/invoke/InvokeParameter", "InvokeParameter")
   @js.native
   /**
     * Default Constructor.

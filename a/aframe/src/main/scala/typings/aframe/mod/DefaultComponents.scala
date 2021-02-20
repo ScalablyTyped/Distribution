@@ -1,11 +1,12 @@
 package typings.aframe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultComponents extends js.Object {
+trait DefaultComponents extends StObject {
   
   var position: Component[Coordinate, System[_]] = js.native
   
@@ -26,27 +27,15 @@ object DefaultComponents {
   }
   
   @scala.inline
-  implicit class DefaultComponentsOps[Self <: DefaultComponents] (val x: Self) extends AnyVal {
+  implicit class DefaultComponentsMutableBuilder[Self <: DefaultComponents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: Component[Coordinate, System[_]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotation(value: Component[Coordinate, System[_]]): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPosition(value: Component[Coordinate, System[_]]): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotation(value: Component[Coordinate, System[_]]): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Component[Coordinate, System[_]]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScale(value: Component[Coordinate, System[_]]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

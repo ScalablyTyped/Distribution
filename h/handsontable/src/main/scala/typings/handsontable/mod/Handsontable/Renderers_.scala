@@ -7,17 +7,17 @@ import typings.handsontable.mod.Handsontable.renderers.Html
 import typings.handsontable.mod.Handsontable.renderers.Numeric
 import typings.handsontable.mod.Handsontable.renderers.Password
 import typings.handsontable.mod.Handsontable.renderers.Text
-import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLTableCellElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Renderers_ extends js.Object {
+trait Renderers_ extends StObject {
   
   def AutocompleteRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -26,7 +26,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def AutocompleteRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -38,7 +38,7 @@ trait Renderers_ extends js.Object {
   var AutocompleteRenderer_Original: Autocomplete = js.native
   
   def BaseRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -47,7 +47,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def BaseRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -59,7 +59,7 @@ trait Renderers_ extends js.Object {
   var BaseRenderer_Original: Base = js.native
   
   def CheckboxRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -68,7 +68,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def CheckboxRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -80,7 +80,7 @@ trait Renderers_ extends js.Object {
   var CheckboxRenderer_Original: Checkbox = js.native
   
   def DateRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -89,7 +89,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def DateRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -101,7 +101,7 @@ trait Renderers_ extends js.Object {
   var DateRenderer_Original: Autocomplete = js.native
   
   def DropdownRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -110,7 +110,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def DropdownRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -122,7 +122,7 @@ trait Renderers_ extends js.Object {
   var DropdownRenderer_Original: Autocomplete = js.native
   
   def HandsontableRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -131,7 +131,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def HandsontableRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -143,7 +143,7 @@ trait Renderers_ extends js.Object {
   var HandsontableRenderer_Original: Autocomplete = js.native
   
   def HtmlRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -152,7 +152,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def HtmlRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -164,7 +164,7 @@ trait Renderers_ extends js.Object {
   var HtmlRenderer_Original: Html = js.native
   
   def NumericRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -173,7 +173,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def NumericRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -185,7 +185,7 @@ trait Renderers_ extends js.Object {
   var NumericRenderer_Original: Numeric = js.native
   
   def PasswordRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -194,7 +194,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def PasswordRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -206,7 +206,7 @@ trait Renderers_ extends js.Object {
   var PasswordRenderer_Original: Password = js.native
   
   def TextRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -215,7 +215,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def TextRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -227,7 +227,7 @@ trait Renderers_ extends js.Object {
   var TextRenderer_Original: Text = js.native
   
   def TimeRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,
@@ -236,7 +236,7 @@ trait Renderers_ extends js.Object {
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
   def TimeRenderer(
-    instance: Core,
+    instance: typings.handsontable.mod._Handsontable.Core,
     TD: HTMLTableCellElement,
     row: Double,
     col: Double,

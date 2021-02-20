@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyEndpointMessage extends js.Object {
+trait ModifyEndpointMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the certificate used for SSL connection.
@@ -163,195 +164,183 @@ object ModifyEndpointMessage {
   }
   
   @scala.inline
-  implicit class ModifyEndpointMessageOps[Self <: ModifyEndpointMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyEndpointMessageMutableBuilder[Self <: ModifyEndpointMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointArn(value: String): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setDmsTransferSettings(value: DmsTransferSettings): Self = StObject.set(x, "DmsTransferSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    def setDmsTransferSettingsUndefined: Self = StObject.set(x, "DmsTransferSettings", js.undefined)
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setDocDbSettings(value: DocDbSettings): Self = StObject.set(x, "DocDbSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setDocDbSettingsUndefined: Self = StObject.set(x, "DocDbSettings", js.undefined)
     
     @scala.inline
-    def setDmsTransferSettings(value: DmsTransferSettings): Self = this.set("DmsTransferSettings", value.asInstanceOf[js.Any])
+    def setDynamoDbSettings(value: DynamoDbSettings): Self = StObject.set(x, "DynamoDbSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDmsTransferSettings: Self = this.set("DmsTransferSettings", js.undefined)
+    def setDynamoDbSettingsUndefined: Self = StObject.set(x, "DynamoDbSettings", js.undefined)
     
     @scala.inline
-    def setDocDbSettings(value: DocDbSettings): Self = this.set("DocDbSettings", value.asInstanceOf[js.Any])
+    def setElasticsearchSettings(value: ElasticsearchSettings): Self = StObject.set(x, "ElasticsearchSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocDbSettings: Self = this.set("DocDbSettings", js.undefined)
+    def setElasticsearchSettingsUndefined: Self = StObject.set(x, "ElasticsearchSettings", js.undefined)
     
     @scala.inline
-    def setDynamoDbSettings(value: DynamoDbSettings): Self = this.set("DynamoDbSettings", value.asInstanceOf[js.Any])
+    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamoDbSettings: Self = this.set("DynamoDbSettings", js.undefined)
+    def setEndpointIdentifier(value: String): Self = StObject.set(x, "EndpointIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchSettings(value: ElasticsearchSettings): Self = this.set("ElasticsearchSettings", value.asInstanceOf[js.Any])
+    def setEndpointIdentifierUndefined: Self = StObject.set(x, "EndpointIdentifier", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchSettings: Self = this.set("ElasticsearchSettings", js.undefined)
+    def setEndpointType(value: ReplicationEndpointTypeValue): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointIdentifier(value: String): Self = this.set("EndpointIdentifier", value.asInstanceOf[js.Any])
+    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
     @scala.inline
-    def deleteEndpointIdentifier: Self = this.set("EndpointIdentifier", js.undefined)
+    def setEngineName(value: String): Self = StObject.set(x, "EngineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointType(value: ReplicationEndpointTypeValue): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    def setEngineNameUndefined: Self = StObject.set(x, "EngineName", js.undefined)
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    def setExternalTableDefinition(value: String): Self = StObject.set(x, "ExternalTableDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    def setExternalTableDefinitionUndefined: Self = StObject.set(x, "ExternalTableDefinition", js.undefined)
     
     @scala.inline
-    def deleteEngineName: Self = this.set("EngineName", js.undefined)
+    def setExtraConnectionAttributes(value: String): Self = StObject.set(x, "ExtraConnectionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalTableDefinition(value: String): Self = this.set("ExternalTableDefinition", value.asInstanceOf[js.Any])
+    def setExtraConnectionAttributesUndefined: Self = StObject.set(x, "ExtraConnectionAttributes", js.undefined)
     
     @scala.inline
-    def deleteExternalTableDefinition: Self = this.set("ExternalTableDefinition", js.undefined)
+    def setIBMDb2Settings(value: IBMDb2Settings): Self = StObject.set(x, "IBMDb2Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraConnectionAttributes(value: String): Self = this.set("ExtraConnectionAttributes", value.asInstanceOf[js.Any])
+    def setIBMDb2SettingsUndefined: Self = StObject.set(x, "IBMDb2Settings", js.undefined)
     
     @scala.inline
-    def deleteExtraConnectionAttributes: Self = this.set("ExtraConnectionAttributes", js.undefined)
+    def setKafkaSettings(value: KafkaSettings): Self = StObject.set(x, "KafkaSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIBMDb2Settings(value: IBMDb2Settings): Self = this.set("IBMDb2Settings", value.asInstanceOf[js.Any])
+    def setKafkaSettingsUndefined: Self = StObject.set(x, "KafkaSettings", js.undefined)
     
     @scala.inline
-    def deleteIBMDb2Settings: Self = this.set("IBMDb2Settings", js.undefined)
+    def setKinesisSettings(value: KinesisSettings): Self = StObject.set(x, "KinesisSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKafkaSettings(value: KafkaSettings): Self = this.set("KafkaSettings", value.asInstanceOf[js.Any])
+    def setKinesisSettingsUndefined: Self = StObject.set(x, "KinesisSettings", js.undefined)
     
     @scala.inline
-    def deleteKafkaSettings: Self = this.set("KafkaSettings", js.undefined)
+    def setMicrosoftSQLServerSettings(value: MicrosoftSQLServerSettings): Self = StObject.set(x, "MicrosoftSQLServerSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisSettings(value: KinesisSettings): Self = this.set("KinesisSettings", value.asInstanceOf[js.Any])
+    def setMicrosoftSQLServerSettingsUndefined: Self = StObject.set(x, "MicrosoftSQLServerSettings", js.undefined)
     
     @scala.inline
-    def deleteKinesisSettings: Self = this.set("KinesisSettings", js.undefined)
+    def setMongoDbSettings(value: MongoDbSettings): Self = StObject.set(x, "MongoDbSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMicrosoftSQLServerSettings(value: MicrosoftSQLServerSettings): Self = this.set("MicrosoftSQLServerSettings", value.asInstanceOf[js.Any])
+    def setMongoDbSettingsUndefined: Self = StObject.set(x, "MongoDbSettings", js.undefined)
     
     @scala.inline
-    def deleteMicrosoftSQLServerSettings: Self = this.set("MicrosoftSQLServerSettings", js.undefined)
+    def setMySQLSettings(value: MySQLSettings): Self = StObject.set(x, "MySQLSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMongoDbSettings(value: MongoDbSettings): Self = this.set("MongoDbSettings", value.asInstanceOf[js.Any])
+    def setMySQLSettingsUndefined: Self = StObject.set(x, "MySQLSettings", js.undefined)
     
     @scala.inline
-    def deleteMongoDbSettings: Self = this.set("MongoDbSettings", js.undefined)
+    def setNeptuneSettings(value: NeptuneSettings): Self = StObject.set(x, "NeptuneSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMySQLSettings(value: MySQLSettings): Self = this.set("MySQLSettings", value.asInstanceOf[js.Any])
+    def setNeptuneSettingsUndefined: Self = StObject.set(x, "NeptuneSettings", js.undefined)
     
     @scala.inline
-    def deleteMySQLSettings: Self = this.set("MySQLSettings", js.undefined)
+    def setOracleSettings(value: OracleSettings): Self = StObject.set(x, "OracleSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeptuneSettings(value: NeptuneSettings): Self = this.set("NeptuneSettings", value.asInstanceOf[js.Any])
+    def setOracleSettingsUndefined: Self = StObject.set(x, "OracleSettings", js.undefined)
     
     @scala.inline
-    def deleteNeptuneSettings: Self = this.set("NeptuneSettings", js.undefined)
+    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOracleSettings(value: OracleSettings): Self = this.set("OracleSettings", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteOracleSettings: Self = this.set("OracleSettings", js.undefined)
+    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: SecretString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setPostgreSQLSettings(value: PostgreSQLSettings): Self = StObject.set(x, "PostgreSQLSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setPostgreSQLSettingsUndefined: Self = StObject.set(x, "PostgreSQLSettings", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setRedshiftSettings(value: RedshiftSettings): Self = StObject.set(x, "RedshiftSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostgreSQLSettings(value: PostgreSQLSettings): Self = this.set("PostgreSQLSettings", value.asInstanceOf[js.Any])
+    def setRedshiftSettingsUndefined: Self = StObject.set(x, "RedshiftSettings", js.undefined)
     
     @scala.inline
-    def deletePostgreSQLSettings: Self = this.set("PostgreSQLSettings", js.undefined)
+    def setS3Settings(value: S3Settings): Self = StObject.set(x, "S3Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftSettings(value: RedshiftSettings): Self = this.set("RedshiftSettings", value.asInstanceOf[js.Any])
+    def setS3SettingsUndefined: Self = StObject.set(x, "S3Settings", js.undefined)
     
     @scala.inline
-    def deleteRedshiftSettings: Self = this.set("RedshiftSettings", js.undefined)
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Settings(value: S3Settings): Self = this.set("S3Settings", value.asInstanceOf[js.Any])
+    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
     @scala.inline
-    def deleteS3Settings: Self = this.set("S3Settings", js.undefined)
+    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
     
     @scala.inline
-    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    def setSslMode(value: DmsSslModeValue): Self = StObject.set(x, "SslMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    def setSslModeUndefined: Self = StObject.set(x, "SslMode", js.undefined)
     
     @scala.inline
-    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
+    def setSybaseSettings(value: SybaseSettings): Self = StObject.set(x, "SybaseSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslMode(value: DmsSslModeValue): Self = this.set("SslMode", value.asInstanceOf[js.Any])
+    def setSybaseSettingsUndefined: Self = StObject.set(x, "SybaseSettings", js.undefined)
     
     @scala.inline
-    def deleteSslMode: Self = this.set("SslMode", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSybaseSettings(value: SybaseSettings): Self = this.set("SybaseSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSybaseSettings: Self = this.set("SybaseSettings", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

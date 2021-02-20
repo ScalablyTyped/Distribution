@@ -4,6 +4,7 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.after
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.before
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.end
 import typings.ckeditorCkeditor5Engine.mod.model.operation.Operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,36 +68,65 @@ class Position protected () extends _SchemaContextDefinition {
   
   def toJSON(): js.Object = js.native
 }
-/* static members */
-@JSImport("@ckeditor/ckeditor5-engine", "model.Position")
-@js.native
-object Position extends js.Object {
+object Position {
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAfter")
+  @js.native
   def createAfter(item: Item): Position = js.native
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt(itemOrPosition: Item): Unit = js.native
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt(itemOrPosition: Item, offset: Double): Unit = js.native
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt(itemOrPosition: Position): Unit = js.native
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt(itemOrPosition: Position, offset: Double): Unit = js.native
-  @JSName("createAt")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt_after(itemOrPosition: Item, offset: after): Unit = js.native
-  @JSName("createAt")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt_after(itemOrPosition: Position, offset: after): Unit = js.native
-  @JSName("createAt")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt_before(itemOrPosition: Item, offset: before): Unit = js.native
-  @JSName("createAt")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt_before(itemOrPosition: Position, offset: before): Unit = js.native
-  @JSName("createAt")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt_end(itemOrPosition: Item, offset: end): Unit = js.native
-  @JSName("createAt")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createAt")
+  @js.native
   def createAt_end(itemOrPosition: Position, offset: end): Unit = js.native
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createBefore")
+  @js.native
   def createBefore(item: Item): Position = js.native
   
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createFromParentAndOffset")
+  @js.native
   def createFromParentAndOffset(parent: DocumentFragment, offset: Double): Position = js.native
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createFromParentAndOffset")
+  @js.native
   def createFromParentAndOffset(parent: Element, offset: Double): Position = js.native
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.createFromPosition")
+  @js.native
   def createFromPosition(position: Position): Position = js.native
   
+  /* static member */
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Position.fromJSON")
+  @js.native
   def fromJSON(json: js.Object, doc: Document): Position = js.native
 }

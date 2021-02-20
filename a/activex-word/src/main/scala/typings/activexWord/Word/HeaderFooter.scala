@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderFooter extends js.Object {
+trait HeaderFooter extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -52,51 +53,39 @@ object HeaderFooter {
   }
   
   @scala.inline
-  implicit class HeaderFooterOps[Self <: HeaderFooter] (val x: Self) extends AnyVal {
+  implicit class HeaderFooterMutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setIndex(value: WdHeaderFooterIndex): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIsHeader(value: Boolean): Self = StObject.set(x, "IsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExists(value: Boolean): Self = this.set("Exists", value.asInstanceOf[js.Any])
+    def setLinkToPrevious(value: Boolean): Self = StObject.set(x, "LinkToPrevious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: WdHeaderFooterIndex): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setPageNumbers(value: PageNumbers): Self = StObject.set(x, "PageNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHeader(value: Boolean): Self = this.set("IsHeader", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkToPrevious(value: Boolean): Self = this.set("LinkToPrevious", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumbers(value: PageNumbers): Self = this.set("PageNumbers", value.asInstanceOf[js.Any])
+    def setShapes(value: Shapes): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShapes(value: Shapes): Self = this.set("Shapes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotHeaderFooter_typekey(value: HeaderFooter): Self = this.set("Word.HeaderFooter_typekey", value.asInstanceOf[js.Any])
+    def setWordDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "Word.HeaderFooter_typekey", value.asInstanceOf[js.Any])
   }
 }

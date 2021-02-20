@@ -1,6 +1,6 @@
 package typings.pulumiCloud.serviceMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +12,19 @@ trait SharedVolume extends Volume {
   
   var name: String = js.native
 }
-@JSImport("@pulumi/cloud/service", "SharedVolume")
-@js.native
-object SharedVolume extends TopLevel[SharedVolumeConstructor]
+object SharedVolume {
+  
+  @JSImport("@pulumi/cloud/service", "SharedVolume")
+  @js.native
+  val ^ : SharedVolumeConstructor = js.native
+  
+  @scala.inline
+  implicit class SharedVolumeMutableBuilder[Self <: SharedVolume] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setKind(value: typings.pulumiCloud.pulumiCloudStrings.SharedVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

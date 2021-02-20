@@ -4,12 +4,13 @@ import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.CreateOpts
 import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Create extends js.Object {
+trait Create extends StObject {
   
   /**
     * Create an inbound domain by providing an inbound domains object as the POST request body.

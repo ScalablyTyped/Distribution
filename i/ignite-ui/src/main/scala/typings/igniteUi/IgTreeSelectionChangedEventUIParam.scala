@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgTreeSelectionChangedEventUIParam extends js.Object {
+trait IgTreeSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the newly added nodes to the selection.
@@ -31,42 +32,30 @@ object IgTreeSelectionChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class IgTreeSelectionChangedEventUIParamOps[Self <: IgTreeSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class IgTreeSelectionChangedEventUIParamMutableBuilder[Self <: IgTreeSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewNodes(value: js.Array[_]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewNodesUndefined: Self = StObject.set(x, "newNodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewNodesVarargs(value: js.Any*): Self = StObject.set(x, "newNodes", js.Array(value :_*))
     
     @scala.inline
-    def setNewNodesVarargs(value: js.Any*): Self = this.set("newNodes", js.Array(value :_*))
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewNodes(value: js.Array[_]): Self = this.set("newNodes", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteNewNodes: Self = this.set("newNodes", js.undefined)
+    def setSelectedNodes(value: js.Array[_]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setSelectedNodesVarargs(value: js.Any*): Self = this.set("selectedNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedNodes(value: js.Array[_]): Self = this.set("selectedNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedNodes: Self = this.set("selectedNodes", js.undefined)
+    def setSelectedNodesVarargs(value: js.Any*): Self = StObject.set(x, "selectedNodes", js.Array(value :_*))
   }
 }

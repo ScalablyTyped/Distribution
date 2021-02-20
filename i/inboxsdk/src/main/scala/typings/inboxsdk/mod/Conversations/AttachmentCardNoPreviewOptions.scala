@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Conversations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentCardNoPreviewOptions extends js.Object {
+trait AttachmentCardNoPreviewOptions extends StObject {
   
   var buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor] = js.native
   
@@ -40,48 +41,36 @@ object AttachmentCardNoPreviewOptions {
   }
   
   @scala.inline
-  implicit class AttachmentCardNoPreviewOptionsOps[Self <: AttachmentCardNoPreviewOptions] (val x: Self) extends AnyVal {
+  implicit class AttachmentCardNoPreviewOptionsMutableBuilder[Self <: AttachmentCardNoPreviewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsVarargs(value: (DownloadButtonDescriptor | CustomButtonDescriptor)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonsVarargs(value: (DownloadButtonDescriptor | CustomButtonDescriptor)*): Self = this.set("buttons", js.Array(value :_*))
+    def setFileIconImageUrl(value: String): Self = StObject.set(x, "fileIconImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setFoldColor(value: String): Self = StObject.set(x, "foldColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFoldColorUndefined: Self = StObject.set(x, "foldColor", js.undefined)
     
     @scala.inline
-    def setFileIconImageUrl(value: String): Self = this.set("fileIconImageUrl", value.asInstanceOf[js.Any])
+    def setIconThumbnailUrl(value: String): Self = StObject.set(x, "iconThumbnailUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconThumbnailUrl(value: String): Self = this.set("iconThumbnailUrl", value.asInstanceOf[js.Any])
+    def setPreviewOnClick(value: PreviewClickEvent => Unit): Self = StObject.set(x, "previewOnClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreviewOnClick(value: PreviewClickEvent => Unit): Self = this.set("previewOnClick", js.Any.fromFunction1(value))
+    def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewUrl(value: String): Self = this.set("previewUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFoldColor(value: String): Self = this.set("foldColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFoldColor: Self = this.set("foldColor", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

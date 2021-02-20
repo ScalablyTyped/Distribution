@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemCollectionMetrics extends js.Object {
+trait ItemCollectionMetrics extends StObject {
   
   /**
     * The partition key value of the item collection. This value is the same as the partition key value of the item.
@@ -26,33 +27,21 @@ object ItemCollectionMetrics {
   }
   
   @scala.inline
-  implicit class ItemCollectionMetricsOps[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
+  implicit class ItemCollectionMetricsMutableBuilder[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = this.set("ItemCollectionKey", value.asInstanceOf[js.Any])
+    def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
     
     @scala.inline
-    def deleteItemCollectionKey: Self = this.set("ItemCollectionKey", js.undefined)
-    
-    @scala.inline
-    def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = this.set("SizeEstimateRangeGB", js.Array(value :_*))
-    
-    @scala.inline
-    def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = this.set("SizeEstimateRangeGB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeEstimateRangeGB: Self = this.set("SizeEstimateRangeGB", js.undefined)
+    def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
   }
 }

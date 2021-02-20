@@ -1,7 +1,6 @@
 package typings.ecol.mod
 
-import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.icontainerMod.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,55 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ListCollection[T] ()
   extends typings.ecol.listCollectionMod.ListCollection[T]
-@JSImport("ecol", "ListCollection")
-@js.native
-object ListCollection extends js.Object {
+object ListCollection {
   
-  val Event: Instantiable3[
-    /* type */ String, 
-    /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
-    /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
-    typings.ecol.collectionEventMod.CollectionEvent[
-      js.Object, 
-      IContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ], 
-      typings.tstl.icontainerMod.IContainer.Iterator[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ], 
-      typings.tstl.icontainerMod.IContainer.ReverseIterator[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
-    ]
-  ] = js.native
-  
-  /**
-    * Iterator of {@link List}
-    *
-    * @author Jeongho Nam - https://github.com/samchon
-    */
+  /* was `typeof CollectionEvent` */
+  @JSImport("ecol", "ListCollection.Event")
   @js.native
-  class Iterator[T] protected ()
-    extends typings.ecol.listCollectionMod.ListCollection.Iterator[T]
-  
-  /**
-    * Reverse iterator of {@link List}
-    *
-    * @author Jeongho Nam - https://github.com/samchon
-    */
-  @js.native
-  class ReverseIterator[T] ()
-    extends typings.ecol.listCollectionMod.ListCollection.ReverseIterator[T]
+  class Event[T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] protected ()
+    extends typings.ecol.listCollectionMod.ListCollection.Event[T, SourceT, IteratorT, ReverseT] {
+    def this(`type`: String, first: IteratorT, last: IteratorT) = this()
+  }
+  /* was `typeof CollectionEvent` */
+  object Event
 }

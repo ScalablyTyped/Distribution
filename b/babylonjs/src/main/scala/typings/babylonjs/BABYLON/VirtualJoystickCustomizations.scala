@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for VirtualJoystick
   */
 @js.native
-trait VirtualJoystickCustomizations extends js.Object {
+trait VirtualJoystickCustomizations extends StObject {
   
   /**
     * Defines whether or not the joystick container is always visible
@@ -67,51 +68,39 @@ object VirtualJoystickCustomizations {
   }
   
   @scala.inline
-  implicit class VirtualJoystickCustomizationsOps[Self <: VirtualJoystickCustomizations] (val x: Self) extends AnyVal {
+  implicit class VirtualJoystickCustomizationsMutableBuilder[Self <: VirtualJoystickCustomizations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysVisible(value: Boolean): Self = this.set("alwaysVisible", value.asInstanceOf[js.Any])
+    def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContainerSize(value: Double): Self = StObject.set(x, "containerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerSize(value: Double): Self = this.set("containerSize", value.asInstanceOf[js.Any])
+    def setLimitToContainer(value: Boolean): Self = StObject.set(x, "limitToContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitToContainer(value: Boolean): Self = this.set("limitToContainer", value.asInstanceOf[js.Any])
+    def setPosition(value: Y): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPuckSize(value: Double): Self = this.set("puckSize", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setContainerImage(value: String): Self = this.set("containerImage", value.asInstanceOf[js.Any])
+    def setPuckImage(value: String): Self = StObject.set(x, "puckImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerImage: Self = this.set("containerImage", js.undefined)
+    def setPuckImageUndefined: Self = StObject.set(x, "puckImage", js.undefined)
     
     @scala.inline
-    def setPosition(value: Y): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setPuckImage(value: String): Self = this.set("puckImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePuckImage: Self = this.set("puckImage", js.undefined)
+    def setPuckSize(value: Double): Self = StObject.set(x, "puckSize", value.asInstanceOf[js.Any])
   }
 }

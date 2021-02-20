@@ -1,6 +1,7 @@
 package typings.dynogels.mod.AWS
 
 import typings.awsSdk.metadataServiceMod.MetadataServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,18 @@ class MetadataService ()
   def this(options: MetadataServiceOptions) = this()
 }
 /* static members */
-@JSImport("dynogels", "AWS.MetadataService")
-@js.native
-object MetadataService extends js.Object {
+object MetadataService {
+  
+  @JSImport("dynogels", "AWS.MetadataService")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 169.254.169.254
     */
-  var host: String = js.native
+  @JSImport("dynogels", "AWS.MetadataService.host")
+  @js.native
+  def host: String = js.native
+  @scala.inline
+  def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
 }

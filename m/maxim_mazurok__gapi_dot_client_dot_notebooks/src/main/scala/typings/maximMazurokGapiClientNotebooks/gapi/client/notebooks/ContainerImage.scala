@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerImage extends js.Object {
+trait ContainerImage extends StObject {
   
   /** Required. The path to the container image repository. For example: `gcr.io/{project_id}/{image_name}` */
   var repository: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ContainerImage {
   }
   
   @scala.inline
-  implicit class ContainerImageOps[Self <: ContainerImage] (val x: Self) extends AnyVal {
+  implicit class ContainerImageMutableBuilder[Self <: ContainerImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: String): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

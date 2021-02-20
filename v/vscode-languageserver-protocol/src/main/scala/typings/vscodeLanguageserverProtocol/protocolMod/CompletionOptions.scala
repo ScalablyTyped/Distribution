@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object CompletionOptions {
   }
   
   @scala.inline
-  implicit class CompletionOptionsOps[Self <: CompletionOptions] (val x: Self) extends AnyVal {
+  implicit class CompletionOptionsMutableBuilder[Self <: CompletionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "allCommitCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllCommitCharactersUndefined: Self = StObject.set(x, "allCommitCharacters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllCommitCharactersVarargs(value: String*): Self = StObject.set(x, "allCommitCharacters", js.Array(value :_*))
     
     @scala.inline
-    def setAllCommitCharactersVarargs(value: String*): Self = this.set("allCommitCharacters", js.Array(value :_*))
+    def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllCommitCharacters(value: js.Array[String]): Self = this.set("allCommitCharacters", value.asInstanceOf[js.Any])
+    def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
     
     @scala.inline
-    def deleteAllCommitCharacters: Self = this.set("allCommitCharacters", js.undefined)
+    def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveProvider(value: Boolean): Self = this.set("resolveProvider", value.asInstanceOf[js.Any])
+    def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
     @scala.inline
-    def deleteResolveProvider: Self = this.set("resolveProvider", js.undefined)
-    
-    @scala.inline
-    def setTriggerCharactersVarargs(value: String*): Self = this.set("triggerCharacters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggerCharacters(value: js.Array[String]): Self = this.set("triggerCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerCharacters: Self = this.set("triggerCharacters", js.undefined)
+    def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
   }
 }

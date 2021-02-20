@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DataConfig extends js.Object {
+trait S3DataConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Key Management Service (KMS) key that Amazon Personalize uses to encrypt or decrypt the input and output files of a batch inference job.
@@ -26,27 +27,15 @@ object S3DataConfig {
   }
   
   @scala.inline
-  implicit class S3DataConfigOps[Self <: S3DataConfig] (val x: Self) extends AnyVal {
+  implicit class S3DataConfigMutableBuilder[Self <: S3DataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPath(value: S3Location): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    def setPath(value: S3Location): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

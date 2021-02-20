@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RebootBrokerRequest extends js.Object {
+trait RebootBrokerRequest extends StObject {
   
   /**
     * 
@@ -30,27 +31,15 @@ object RebootBrokerRequest {
   }
   
   @scala.inline
-  implicit class RebootBrokerRequestOps[Self <: RebootBrokerRequest] (val x: Self) extends AnyVal {
+  implicit class RebootBrokerRequestMutableBuilder[Self <: RebootBrokerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokerIds(value: listOfString): Self = StObject.set(x, "BrokerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokerIdsVarargs(value: string*): Self = StObject.set(x, "BrokerIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBrokerIdsVarargs(value: string*): Self = this.set("BrokerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setBrokerIds(value: listOfString): Self = this.set("BrokerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
   }
 }

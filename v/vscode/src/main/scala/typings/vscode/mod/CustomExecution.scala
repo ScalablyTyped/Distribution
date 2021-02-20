@@ -1,13 +1,14 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CustomExecution")
 @js.native
-class CustomExecution protected () extends js.Object {
+class CustomExecution protected () extends StObject {
   /**
     * Constructs a CustomExecution task object. The callback will be executed the task is run, at which point the
     * extension should return the Pseudoterminal it will "run in". The task should wait to do further execution until

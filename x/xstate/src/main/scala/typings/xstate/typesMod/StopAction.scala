@@ -2,6 +2,7 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.Id
 import typings.xstate.typesMod.ActionTypes.Stop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,27 +25,15 @@ object StopAction {
   }
   
   @scala.inline
-  implicit class StopActionOps[Self <: StopAction[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (StopAction[TContext, TEvent])) extends AnyVal {
+  implicit class StopActionMutableBuilder[Self <: StopAction[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (StopAction[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivity(value: String | Id | (Expr[TContext, TEvent, String | Id])): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityFunction2(value: (TContext, TEvent) => String | Id): Self = StObject.set(x, "activity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivityFunction2(value: (TContext, TEvent) => String | Id): Self = this.set("activity", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setActivity(value: String | Id | (Expr[TContext, TEvent, String | Id])): Self = this.set("activity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Stop): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CorsOptions extends js.Object {
+trait CorsOptions extends StObject {
   
   /**
     * Enable or disable cross-origin requests from IE9 and older where XDomainRequest must be used
@@ -37,36 +38,24 @@ object CorsOptions {
   }
   
   @scala.inline
-  implicit class CorsOptionsOps[Self <: CorsOptions] (val x: Self) extends AnyVal {
+  implicit class CorsOptionsMutableBuilder[Self <: CorsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowXdr(value: Boolean): Self = StObject.set(x, "allowXdr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowXdrUndefined: Self = StObject.set(x, "allowXdr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowXdr(value: Boolean): Self = this.set("allowXdr", value.asInstanceOf[js.Any])
+    def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
     
     @scala.inline
-    def deleteAllowXdr: Self = this.set("allowXdr", js.undefined)
+    def setSendCredentials(value: Boolean): Self = StObject.set(x, "sendCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpected(value: Boolean): Self = this.set("expected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpected: Self = this.set("expected", js.undefined)
-    
-    @scala.inline
-    def setSendCredentials(value: Boolean): Self = this.set("sendCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendCredentials: Self = this.set("sendCredentials", js.undefined)
+    def setSendCredentialsUndefined: Self = StObject.set(x, "sendCredentials", js.undefined)
   }
 }

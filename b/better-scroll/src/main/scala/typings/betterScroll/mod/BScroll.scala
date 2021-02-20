@@ -12,12 +12,13 @@ import typings.betterScroll.betterScrollStrings.scrollEnd
 import typings.betterScroll.betterScrollStrings.scrollStart
 import typings.betterScroll.betterScrollStrings.touchEnd
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BScroll extends js.Object {
+trait BScroll extends StObject {
   
   def destroy(): Unit = js.native
   

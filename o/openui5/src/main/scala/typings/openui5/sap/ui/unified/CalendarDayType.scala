@@ -1,17 +1,18 @@
 package typings.openui5.sap.ui.unified
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CalendarDayType extends js.Object
+sealed trait CalendarDayType extends StObject
 /**
   * Type of a calendar day used for visualization.
   */
 @JSGlobal("sap.ui.unified.CalendarDayType")
 @js.native
-object CalendarDayType extends js.Object {
+object CalendarDayType extends StObject {
   
   @js.native
   sealed trait None extends CalendarDayType

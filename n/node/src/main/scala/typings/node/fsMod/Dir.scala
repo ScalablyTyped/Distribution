@@ -1,13 +1,14 @@
 package typings.node.fsMod
 
 import typings.node.NodeJS.ErrnoException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "Dir")
 @js.native
-class Dir () extends js.Object {
+class Dir () extends StObject {
   
   /**
     * Asynchronously close the directory's underlying resource handle.

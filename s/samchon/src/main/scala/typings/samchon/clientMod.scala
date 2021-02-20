@@ -4,14 +4,14 @@ import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.serviceServiceMod.Service
 import typings.samchon.userMod.User
 import typings.samchon.webClientDriverMod.WebClientDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/service/Client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
+  @JSImport("samchon/templates/service/Client", "Client")
   @js.native
   abstract class Client protected () extends IProtocol {
     /**

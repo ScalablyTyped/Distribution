@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,66 +65,54 @@ object ParamsResourceProjectsDatabasesDocumentsPatch {
   }
   
   @scala.inline
-  implicit class ParamsResourceProjectsDatabasesDocumentsPatchOps[Self <: ParamsResourceProjectsDatabasesDocumentsPatch] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProjectsDatabasesDocumentsPatchMutableBuilder[Self <: ParamsResourceProjectsDatabasesDocumentsPatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentDocumentDotexists(value: Boolean): Self = StObject.set(x, "currentDocument.exists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCurrentDocumentDotexistsUndefined: Self = StObject.set(x, "currentDocument.exists", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setCurrentDocumentDotupdateTime(value: String): Self = StObject.set(x, "currentDocument.updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDocumentDotexists(value: Boolean): Self = this.set("currentDocument.exists", value.asInstanceOf[js.Any])
+    def setCurrentDocumentDotupdateTimeUndefined: Self = StObject.set(x, "currentDocument.updateTime", js.undefined)
     
     @scala.inline
-    def deleteCurrentDocumentDotexists: Self = this.set("currentDocument.exists", js.undefined)
+    def setMaskDotfieldPaths(value: js.Array[String]): Self = StObject.set(x, "mask.fieldPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDocumentDotupdateTime(value: String): Self = this.set("currentDocument.updateTime", value.asInstanceOf[js.Any])
+    def setMaskDotfieldPathsUndefined: Self = StObject.set(x, "mask.fieldPaths", js.undefined)
     
     @scala.inline
-    def deleteCurrentDocumentDotupdateTime: Self = this.set("currentDocument.updateTime", js.undefined)
+    def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value :_*))
     
     @scala.inline
-    def setMaskDotfieldPathsVarargs(value: String*): Self = this.set("mask.fieldPaths", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskDotfieldPaths(value: js.Array[String]): Self = this.set("mask.fieldPaths", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaskDotfieldPaths: Self = this.set("mask.fieldPaths", js.undefined)
+    def setRequestBody(value: SchemaDocument): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUpdateMaskDotfieldPaths(value: js.Array[String]): Self = StObject.set(x, "updateMask.fieldPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaDocument): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    def setUpdateMaskDotfieldPathsUndefined: Self = StObject.set(x, "updateMask.fieldPaths", js.undefined)
     
     @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setUpdateMaskDotfieldPathsVarargs(value: String*): Self = this.set("updateMask.fieldPaths", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdateMaskDotfieldPaths(value: js.Array[String]): Self = this.set("updateMask.fieldPaths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMaskDotfieldPaths: Self = this.set("updateMask.fieldPaths", js.undefined)
+    def setUpdateMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "updateMask.fieldPaths", js.Array(value :_*))
   }
 }

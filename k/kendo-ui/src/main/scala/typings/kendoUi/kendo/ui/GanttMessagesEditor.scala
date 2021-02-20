@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttMessagesEditor extends js.Object {
+trait GanttMessagesEditor extends StObject {
   
   var assignButton: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object GanttMessagesEditor {
   }
   
   @scala.inline
-  implicit class GanttMessagesEditorOps[Self <: GanttMessagesEditor] (val x: Self) extends AnyVal {
+  implicit class GanttMessagesEditorMutableBuilder[Self <: GanttMessagesEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignButton(value: String): Self = StObject.set(x, "assignButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignButtonUndefined: Self = StObject.set(x, "assignButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditorTitle(value: String): Self = StObject.set(x, "editorTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignButton(value: String): Self = this.set("assignButton", value.asInstanceOf[js.Any])
+    def setEditorTitleUndefined: Self = StObject.set(x, "editorTitle", js.undefined)
     
     @scala.inline
-    def deleteAssignButton: Self = this.set("assignButton", js.undefined)
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorTitle(value: String): Self = this.set("editorTitle", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteEditorTitle: Self = this.set("editorTitle", js.undefined)
+    def setPercentComplete(value: String): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setPlannedEnd(value: String): Self = StObject.set(x, "plannedEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: String): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setPlannedEndUndefined: Self = StObject.set(x, "plannedEnd", js.undefined)
     
     @scala.inline
-    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    def setPlannedStart(value: String): Self = StObject.set(x, "plannedStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlannedEnd(value: String): Self = this.set("plannedEnd", value.asInstanceOf[js.Any])
+    def setPlannedStartUndefined: Self = StObject.set(x, "plannedStart", js.undefined)
     
     @scala.inline
-    def deletePlannedEnd: Self = this.set("plannedEnd", js.undefined)
+    def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlannedStart(value: String): Self = this.set("plannedStart", value.asInstanceOf[js.Any])
+    def setResourcesEditorTitle(value: String): Self = StObject.set(x, "resourcesEditorTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlannedStart: Self = this.set("plannedStart", js.undefined)
+    def setResourcesEditorTitleUndefined: Self = StObject.set(x, "resourcesEditorTitle", js.undefined)
     
     @scala.inline
-    def setResources(value: String): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setResourcesHeader(value: String): Self = StObject.set(x, "resourcesHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setResourcesHeaderUndefined: Self = StObject.set(x, "resourcesHeader", js.undefined)
     
     @scala.inline
-    def setResourcesEditorTitle(value: String): Self = this.set("resourcesEditorTitle", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteResourcesEditorTitle: Self = this.set("resourcesEditorTitle", js.undefined)
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesHeader(value: String): Self = this.set("resourcesHeader", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteResourcesHeader: Self = this.set("resourcesHeader", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setUnitsHeader(value: String): Self = StObject.set(x, "unitsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUnitsHeader(value: String): Self = this.set("unitsHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitsHeader: Self = this.set("unitsHeader", js.undefined)
+    def setUnitsHeaderUndefined: Self = StObject.set(x, "unitsHeader", js.undefined)
   }
 }

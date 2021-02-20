@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsApiGatewayV2RouteSettings extends js.Object {
+trait AwsApiGatewayV2RouteSettings extends StObject {
   
   /**
     * Indicates whether data trace logging is enabled. Data trace logging affects the log entries that are pushed to CloudWatch Logs. Supported only for WebSocket APIs.
@@ -41,48 +42,36 @@ object AwsApiGatewayV2RouteSettings {
   }
   
   @scala.inline
-  implicit class AwsApiGatewayV2RouteSettingsOps[Self <: AwsApiGatewayV2RouteSettings] (val x: Self) extends AnyVal {
+  implicit class AwsApiGatewayV2RouteSettingsMutableBuilder[Self <: AwsApiGatewayV2RouteSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "DataTraceEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTraceEnabledUndefined: Self = StObject.set(x, "DataTraceEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailedMetricsEnabled(value: Boolean): Self = StObject.set(x, "DetailedMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTraceEnabled(value: Boolean): Self = this.set("DataTraceEnabled", value.asInstanceOf[js.Any])
+    def setDetailedMetricsEnabledUndefined: Self = StObject.set(x, "DetailedMetricsEnabled", js.undefined)
     
     @scala.inline
-    def deleteDataTraceEnabled: Self = this.set("DataTraceEnabled", js.undefined)
+    def setLoggingLevel(value: NonEmptyString): Self = StObject.set(x, "LoggingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailedMetricsEnabled(value: Boolean): Self = this.set("DetailedMetricsEnabled", value.asInstanceOf[js.Any])
+    def setLoggingLevelUndefined: Self = StObject.set(x, "LoggingLevel", js.undefined)
     
     @scala.inline
-    def deleteDetailedMetricsEnabled: Self = this.set("DetailedMetricsEnabled", js.undefined)
+    def setThrottlingBurstLimit(value: Integer): Self = StObject.set(x, "ThrottlingBurstLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingLevel(value: NonEmptyString): Self = this.set("LoggingLevel", value.asInstanceOf[js.Any])
+    def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "ThrottlingBurstLimit", js.undefined)
     
     @scala.inline
-    def deleteLoggingLevel: Self = this.set("LoggingLevel", js.undefined)
+    def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "ThrottlingRateLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottlingBurstLimit(value: Integer): Self = this.set("ThrottlingBurstLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottlingBurstLimit: Self = this.set("ThrottlingBurstLimit", js.undefined)
-    
-    @scala.inline
-    def setThrottlingRateLimit(value: Double): Self = this.set("ThrottlingRateLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottlingRateLimit: Self = this.set("ThrottlingRateLimit", js.undefined)
+    def setThrottlingRateLimitUndefined: Self = StObject.set(x, "ThrottlingRateLimit", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import typings.powerappsComponentFramework.ComponentFramework.FormattingApi.Types.DateTimeFieldBehavior
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for the context.formatting
   */
 @js.native
-trait Formatting extends js.Object {
+trait Formatting extends StObject {
   
   /**
     * Returns a formatted string that represents the currency value after being formatted.

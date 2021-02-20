@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object IgHierarchicalGridLocale {
   }
   
   @scala.inline
-  implicit class IgHierarchicalGridLocaleOps[Self <: IgHierarchicalGridLocale] (val x: Self) extends AnyVal {
+  implicit class IgHierarchicalGridLocaleMutableBuilder[Self <: IgHierarchicalGridLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseTooltip(value: String): Self = this.set("collapseTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollapseTooltip: Self = this.set("collapseTooltip", js.undefined)
-    
-    @scala.inline
-    def setExpandTooltip(value: String): Self = this.set("expandTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpandTooltip: Self = this.set("expandTooltip", js.undefined)
+    def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexShdocvw.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DwCount extends js.Object {
+trait DwCount extends StObject {
   
   val URL: js.Any = js.native
   
@@ -20,24 +21,12 @@ object DwCount {
   }
   
   @scala.inline
-  implicit class DwCountOps[Self <: DwCount] (val x: Self) extends AnyVal {
+  implicit class DwCountMutableBuilder[Self <: DwCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDwCount(value: Double): Self = StObject.set(x, "dwCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setURL(value: js.Any): Self = this.set("URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDwCount(value: Double): Self = this.set("dwCount", value.asInstanceOf[js.Any])
+    def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

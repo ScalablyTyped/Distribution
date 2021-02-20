@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Representation of a user, suitable for scripting.
   */
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   def getEmail(): String = js.native
   
@@ -23,24 +24,12 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEmail(value: () => String): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetEmail(value: () => String): Self = this.set("getEmail", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUserLoginId(value: () => String): Self = this.set("getUserLoginId", js.Any.fromFunction0(value))
+    def setGetUserLoginId(value: () => String): Self = StObject.set(x, "getUserLoginId", js.Any.fromFunction0(value))
   }
 }

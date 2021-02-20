@@ -1,19 +1,20 @@
 package typings.winrt.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Graphics.Printing.PrintQuality")
 @js.native
-object PrintQuality extends js.Object {
+object PrintQuality extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Printing.PrintQuality with Double] = js.native
   
-  /* 3 */ val automatic: typings.winrt.Windows.Graphics.Printing.PrintQuality.automatic with Double = js.native
-  
   /* 0 */ val default: typings.winrt.Windows.Graphics.Printing.PrintQuality.default with Double = js.native
+  
+  /* 3 */ val automatic: typings.winrt.Windows.Graphics.Printing.PrintQuality.automatic with Double = js.native
   
   /* 4 */ val draft: typings.winrt.Windows.Graphics.Printing.PrintQuality.draft with Double = js.native
   

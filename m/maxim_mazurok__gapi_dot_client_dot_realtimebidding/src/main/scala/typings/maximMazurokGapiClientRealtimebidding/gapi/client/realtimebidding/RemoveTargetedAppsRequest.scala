@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveTargetedAppsRequest extends js.Object {
+trait RemoveTargetedAppsRequest extends StObject {
   
   /**
     * A list of app IDs to stop targeting in the pretargeting configuration. These values will be removed from the list of targeted app IDs in
@@ -22,27 +23,15 @@ object RemoveTargetedAppsRequest {
   }
   
   @scala.inline
-  implicit class RemoveTargetedAppsRequestOps[Self <: RemoveTargetedAppsRequest] (val x: Self) extends AnyVal {
+  implicit class RemoveTargetedAppsRequestMutableBuilder[Self <: RemoveTargetedAppsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppIdsVarargs(value: String*): Self = this.set("appIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setAppIds(value: js.Array[String]): Self = this.set("appIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppIds: Self = this.set("appIds", js.undefined)
+    def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
   }
 }

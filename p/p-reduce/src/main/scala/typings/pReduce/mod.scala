@@ -1,13 +1,12 @@
 package typings.pReduce
 
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-reduce", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Reduce a list of values using promises into a promise for a value.
@@ -35,15 +34,23 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("p-reduce", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ReducedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     reducer: ReducerFunction[ValueType, ReducedValueType]
   ): js.Promise[ReducedValueType] = js.native
+  @JSImport("p-reduce", JSImport.Namespace)
+  @js.native
   def apply[ValueType, ReducedValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     reducer: ReducerFunction[ValueType, ReducedValueType],
     initialValue: ReducedValueType
   ): js.Promise[ReducedValueType] = js.native
+  
+  @JSImport("p-reduce", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function pReduce<ValueType, ReducedValueType = ValueType>(
@@ -52,7 +59,11 @@ object mod extends js.Object {
   // 	initialValue?: ReducedValueType
   // ): Promise<ReducedValueType>;
   // export = pReduce;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any = js.native
+  @JSImport("p-reduce", "default")
+  @js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any = js.native
+  @scala.inline
+  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReduce */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type ReducerFunction[ValueType, ReducedValueType] = js.Function3[
     /* previousValue */ ReducedValueType, 

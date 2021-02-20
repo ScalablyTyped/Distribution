@@ -3,6 +3,7 @@ package typings.weixinApp.wx
 import typings.weixinApp.weixinAppStrings.center
 import typings.weixinApp.weixinAppStrings.left
 import typings.weixinApp.weixinAppStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * context只是一个记录方法调用的容器，用于生成记录绘制行为的actions数组。context跟<canvas/>不存在对应关系，一个context生成画布的绘制动作数组可以应用于多个<canvas/>。
   */
 @js.native
-trait CanvasContext extends js.Object {
+trait CanvasContext extends StObject {
   
   /**
     * 创建一个颜色的渐变点。

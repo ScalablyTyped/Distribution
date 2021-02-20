@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt.grid
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object GridColumnEvent {
   }
   
   @scala.inline
-  implicit class GridColumnEventOps[Self <: GridColumnEvent] (val x: Self) extends AnyVal {
+  implicit class GridColumnEventMutableBuilder[Self <: GridColumnEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("ColumnIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewValue(value: js.Any): Self = this.set("NewValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldValue(value: js.Any): Self = this.set("OldValue", value.asInstanceOf[js.Any])
+    def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openfin.openfinStrings.`monitor-info-changed`
   - typings.openfin.openfinStrings.`session-changed`
 */
-trait OpenFinSystemEventType extends js.Object
+trait OpenFinSystemEventType extends StObject
 object OpenFinSystemEventType {
   
   @scala.inline

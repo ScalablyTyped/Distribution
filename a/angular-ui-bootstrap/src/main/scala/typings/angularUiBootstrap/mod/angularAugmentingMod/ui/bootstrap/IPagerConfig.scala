@@ -1,11 +1,12 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPagerConfig extends js.Object {
+trait IPagerConfig extends StObject {
   
   /**
     * Whether to align each link to the sides.
@@ -44,42 +45,30 @@ object IPagerConfig {
   }
   
   @scala.inline
-  implicit class IPagerConfigOps[Self <: IPagerConfig] (val x: Self) extends AnyVal {
+  implicit class IPagerConfigMutableBuilder[Self <: IPagerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Boolean): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Boolean): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsPerPage(value: Double): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
     @scala.inline
-    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextText(value: String): Self = this.set("nextText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextText: Self = this.set("nextText", js.undefined)
-    
-    @scala.inline
-    def setPreviousText(value: String): Self = this.set("previousText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousText: Self = this.set("previousText", js.undefined)
+    def setPreviousTextUndefined: Self = StObject.set(x, "previousText", js.undefined)
   }
 }

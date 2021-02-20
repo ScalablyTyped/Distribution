@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventUpdateRequest extends js.Object {
+trait EventUpdateRequest extends StObject {
   
   /** The ID of the event being modified in this update. */
   var definitionId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object EventUpdateRequest {
   }
   
   @scala.inline
-  implicit class EventUpdateRequestOps[Self <: EventUpdateRequest] (val x: Self) extends AnyVal {
+  implicit class EventUpdateRequestMutableBuilder[Self <: EventUpdateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: String): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDefinitionId: Self = this.set("definitionId", js.undefined)
+    def setUpdateCount(value: String): Self = StObject.set(x, "updateCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setUpdateCount(value: String): Self = this.set("updateCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateCount: Self = this.set("updateCount", js.undefined)
+    def setUpdateCountUndefined: Self = StObject.set(x, "updateCount", js.undefined)
   }
 }

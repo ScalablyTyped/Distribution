@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserContextDataType extends js.Object {
+trait UserContextDataType extends StObject {
   
   /**
     * Contextual data such as the user's device fingerprint, IP address, or location used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.
@@ -21,24 +22,12 @@ object UserContextDataType {
   }
   
   @scala.inline
-  implicit class UserContextDataTypeOps[Self <: UserContextDataType] (val x: Self) extends AnyVal {
+  implicit class UserContextDataTypeMutableBuilder[Self <: UserContextDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodedData(value: StringType): Self = StObject.set(x, "EncodedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncodedData(value: StringType): Self = this.set("EncodedData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncodedData: Self = this.set("EncodedData", js.undefined)
+    def setEncodedDataUndefined: Self = StObject.set(x, "EncodedData", js.undefined)
   }
 }

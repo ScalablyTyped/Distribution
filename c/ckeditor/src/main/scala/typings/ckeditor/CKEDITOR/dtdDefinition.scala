@@ -2,6 +2,7 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.ckeditorNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,66 +84,54 @@ object dtdDefinition {
   }
   
   @scala.inline
-  implicit class dtdDefinitionOps[Self <: dtdDefinition] (val x: Self) extends AnyVal {
+  implicit class dtdDefinitionMutableBuilder[Self <: dtdDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$block(value: StringDictionary[`1`]): Self = StObject.set(x, "$block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$blockLimit(value: StringDictionary[`1`]): Self = StObject.set(x, "$blockLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$cdata(value: StringDictionary[`1`]): Self = StObject.set(x, "$cdata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$block(value: StringDictionary[`1`]): Self = this.set("$block", value.asInstanceOf[js.Any])
+    def set$editable(value: StringDictionary[`1`]): Self = StObject.set(x, "$editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$blockLimit(value: StringDictionary[`1`]): Self = this.set("$blockLimit", value.asInstanceOf[js.Any])
+    def set$empty(value: StringDictionary[`1`]): Self = StObject.set(x, "$empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$cdata(value: StringDictionary[`1`]): Self = this.set("$cdata", value.asInstanceOf[js.Any])
+    def set$inline(value: StringDictionary[`1`]): Self = StObject.set(x, "$inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$editable(value: StringDictionary[`1`]): Self = this.set("$editable", value.asInstanceOf[js.Any])
+    def set$intermediate(value: StringDictionary[`1`]): Self = StObject.set(x, "$intermediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$empty(value: StringDictionary[`1`]): Self = this.set("$empty", value.asInstanceOf[js.Any])
+    def set$list(value: StringDictionary[`1`]): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$inline(value: StringDictionary[`1`]): Self = this.set("$inline", value.asInstanceOf[js.Any])
+    def set$listItem(value: StringDictionary[`1`]): Self = StObject.set(x, "$listItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$intermediate(value: StringDictionary[`1`]): Self = this.set("$intermediate", value.asInstanceOf[js.Any])
+    def set$nonBodyContent(value: StringDictionary[`1`]): Self = StObject.set(x, "$nonBodyContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$list(value: StringDictionary[`1`]): Self = this.set("$list", value.asInstanceOf[js.Any])
+    def set$nonEditable(value: StringDictionary[`1`]): Self = StObject.set(x, "$nonEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$listItem(value: StringDictionary[`1`]): Self = this.set("$listItem", value.asInstanceOf[js.Any])
+    def set$object(value: StringDictionary[`1`]): Self = StObject.set(x, "$object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nonBodyContent(value: StringDictionary[`1`]): Self = this.set("$nonBodyContent", value.asInstanceOf[js.Any])
+    def set$removeEmpty(value: StringDictionary[`1`]): Self = StObject.set(x, "$removeEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nonEditable(value: StringDictionary[`1`]): Self = this.set("$nonEditable", value.asInstanceOf[js.Any])
+    def set$tabIndex(value: StringDictionary[`1`]): Self = StObject.set(x, "$tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$object(value: StringDictionary[`1`]): Self = this.set("$object", value.asInstanceOf[js.Any])
+    def set$tableContent(value: StringDictionary[`1`]): Self = StObject.set(x, "$tableContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$removeEmpty(value: StringDictionary[`1`]): Self = this.set("$removeEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$tabIndex(value: StringDictionary[`1`]): Self = this.set("$tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$tableContent(value: StringDictionary[`1`]): Self = this.set("$tableContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$transparent(value: StringDictionary[`1`]): Self = this.set("$transparent", value.asInstanceOf[js.Any])
+    def set$transparent(value: StringDictionary[`1`]): Self = StObject.set(x, "$transparent", value.asInstanceOf[js.Any])
   }
 }

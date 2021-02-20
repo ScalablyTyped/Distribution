@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientObjectPrototype extends js.Object {
+trait ClientObjectPrototype extends StObject {
   
   def retrieve(): Unit = js.native
   def retrieve(propertyNames: js.Array[String]): Unit = js.native

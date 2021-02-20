@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Jitter extends js.Object {
+trait Jitter extends StObject {
   
   /**
     * To set the jitter width. 0 | .5 | 1 | 2 | ...
@@ -41,48 +42,36 @@ object Jitter {
   }
   
   @scala.inline
-  implicit class JitterOps[Self <: Jitter] (val x: Self) extends AnyVal {
+  implicit class JitterMutableBuilder[Self <: Jitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJitter(value: js.Any): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeanFactor(value: js.Any): Self = StObject.set(x, "meanFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJitter(value: js.Any): Self = this.set("jitter", value.asInstanceOf[js.Any])
+    def setMeanFactorUndefined: Self = StObject.set(x, "meanFactor", js.undefined)
     
     @scala.inline
-    def deleteJitter: Self = this.set("jitter", js.undefined)
+    def setRoundingFactor(value: js.Any): Self = StObject.set(x, "roundingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanFactor(value: js.Any): Self = this.set("meanFactor", value.asInstanceOf[js.Any])
+    def setRoundingFactorUndefined: Self = StObject.set(x, "roundingFactor", js.undefined)
     
     @scala.inline
-    def deleteMeanFactor: Self = this.set("meanFactor", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundingFactor(value: js.Any): Self = this.set("roundingFactor", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRoundingFactor: Self = this.set("roundingFactor", js.undefined)
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
   }
 }

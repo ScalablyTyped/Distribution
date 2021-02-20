@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.RevisionTag
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,24 +44,12 @@ object XDocumentRevisionListPersistence {
   }
   
   @scala.inline
-  implicit class XDocumentRevisionListPersistenceOps[Self <: XDocumentRevisionListPersistence] (val x: Self) extends AnyVal {
+  implicit class XDocumentRevisionListPersistenceMutableBuilder[Self <: XDocumentRevisionListPersistence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoad(value: XStorage => SafeArray[RevisionTag]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoad(value: XStorage => SafeArray[RevisionTag]): Self = this.set("load", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStore(value: (XStorage, SeqEquiv[RevisionTag]) => Unit): Self = this.set("store", js.Any.fromFunction2(value))
+    def setStore(value: (XStorage, SeqEquiv[RevisionTag]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
   }
 }

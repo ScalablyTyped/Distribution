@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopJobRunRequest extends js.Object {
+trait StopJobRunRequest extends StObject {
   
   /**
     * The name of the job to be stopped.
@@ -26,24 +27,12 @@ object StopJobRunRequest {
   }
   
   @scala.inline
-  implicit class StopJobRunRequestOps[Self <: StopJobRunRequest] (val x: Self) extends AnyVal {
+  implicit class StopJobRunRequestMutableBuilder[Self <: StopJobRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: JobName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunId(value: JobRunId): Self = this.set("RunId", value.asInstanceOf[js.Any])
+    def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

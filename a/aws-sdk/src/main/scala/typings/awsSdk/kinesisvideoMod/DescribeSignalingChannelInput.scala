@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSignalingChannelInput extends js.Object {
+trait DescribeSignalingChannelInput extends StObject {
   
   /**
     * The ARN of the signaling channel that you want to describe.
@@ -26,30 +27,18 @@ object DescribeSignalingChannelInput {
   }
   
   @scala.inline
-  implicit class DescribeSignalingChannelInputOps[Self <: DescribeSignalingChannelInput] (val x: Self) extends AnyVal {
+  implicit class DescribeSignalingChannelInputMutableBuilder[Self <: DescribeSignalingChannelInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelARNUndefined: Self = StObject.set(x, "ChannelARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelARN: Self = this.set("ChannelARN", js.undefined)
-    
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = this.set("ChannelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelName: Self = this.set("ChannelName", js.undefined)
+    def setChannelNameUndefined: Self = StObject.set(x, "ChannelName", js.undefined)
   }
 }

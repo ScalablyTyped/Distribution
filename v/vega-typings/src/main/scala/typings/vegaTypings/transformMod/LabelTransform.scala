@@ -7,6 +7,7 @@ import typings.vegaTypings.utilMod.Vector7
 import typings.vegaTypings.vegaTypingsStrings.begin
 import typings.vegaTypings.vegaTypingsStrings.end
 import typings.vegaTypings.vegaTypingsStrings.label
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,87 +47,75 @@ object LabelTransform {
   }
   
   @scala.inline
-  implicit class LabelTransformOps[Self <: LabelTransform] (val x: Self) extends AnyVal {
+  implicit class LabelTransformMutableBuilder[Self <: LabelTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: js.Array[String] | String | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorVarargs(value: String*): Self = StObject.set(x, "anchor", js.Array(value :_*))
     
     @scala.inline
-    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setAs(value: (Vector7[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: label): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def setAnchorVarargs(value: String*): Self = this.set("anchor", js.Array(value :_*))
+    def setAvoidBaseMark(value: Boolean | SignalRef): Self = StObject.set(x, "avoidBaseMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: js.Array[String] | String | SignalRef): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAvoidBaseMarkUndefined: Self = StObject.set(x, "avoidBaseMark", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setAvoidMarks(value: js.Array[String]): Self = StObject.set(x, "avoidMarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: (Vector7[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setAvoidMarksUndefined: Self = StObject.set(x, "avoidMarks", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setAvoidMarksVarargs(value: String*): Self = StObject.set(x, "avoidMarks", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidBaseMark(value: Boolean | SignalRef): Self = this.set("avoidBaseMark", value.asInstanceOf[js.Any])
+    def setLineAnchor(value: begin | end | SignalRef): Self = StObject.set(x, "lineAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvoidBaseMark: Self = this.set("avoidBaseMark", js.undefined)
+    def setLineAnchorUndefined: Self = StObject.set(x, "lineAnchor", js.undefined)
     
     @scala.inline
-    def setAvoidMarksVarargs(value: String*): Self = this.set("avoidMarks", js.Array(value :_*))
+    def setMarkIndex(value: Double): Self = StObject.set(x, "markIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidMarks(value: js.Array[String]): Self = this.set("avoidMarks", value.asInstanceOf[js.Any])
+    def setMarkIndexUndefined: Self = StObject.set(x, "markIndex", js.undefined)
     
     @scala.inline
-    def deleteAvoidMarks: Self = this.set("avoidMarks", js.undefined)
+    def setOffset(value: js.Array[Double] | Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineAnchor(value: begin | end | SignalRef): Self = this.set("lineAnchor", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLineAnchor: Self = this.set("lineAnchor", js.undefined)
+    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
     @scala.inline
-    def setMarkIndex(value: Double): Self = this.set("markIndex", value.asInstanceOf[js.Any])
+    def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkIndex: Self = this.set("markIndex", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
+    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Array[Double] | Double | SignalRef): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setPadding(value: Double | SignalRef): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Compare): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setType(value: label): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

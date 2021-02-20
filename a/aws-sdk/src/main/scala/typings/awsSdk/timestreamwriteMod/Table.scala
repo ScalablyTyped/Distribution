@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamwriteMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Table extends js.Object {
+trait Table extends StObject {
   
   /**
     * The Amazon Resource Name that uniquely identifies this table.
@@ -51,60 +52,48 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Date): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: ResourceName): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setRetentionProperties(value: RetentionProperties): Self = StObject.set(x, "RetentionProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: Date): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    def setRetentionPropertiesUndefined: Self = StObject.set(x, "RetentionProperties", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionProperties(value: RetentionProperties): Self = this.set("RetentionProperties", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteRetentionProperties: Self = this.set("RetentionProperties", js.undefined)
+    def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: ResourceName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
-    
-    @scala.inline
-    def setTableStatus(value: TableStatus): Self = this.set("TableStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStatus: Self = this.set("TableStatus", js.undefined)
+    def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
   }
 }

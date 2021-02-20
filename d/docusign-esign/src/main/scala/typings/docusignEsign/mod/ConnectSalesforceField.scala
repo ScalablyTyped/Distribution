@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectSalesforceField extends js.Object {
+trait ConnectSalesforceField extends StObject {
   
   var dsAttribute: js.UndefOr[String] = js.native
   
@@ -44,66 +45,54 @@ object ConnectSalesforceField {
   }
   
   @scala.inline
-  implicit class ConnectSalesforceFieldOps[Self <: ConnectSalesforceField] (val x: Self) extends AnyVal {
+  implicit class ConnectSalesforceFieldMutableBuilder[Self <: ConnectSalesforceField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDsAttribute(value: String): Self = StObject.set(x, "dsAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDsAttributeUndefined: Self = StObject.set(x, "dsAttribute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDsLink(value: String): Self = StObject.set(x, "dsLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsAttribute(value: String): Self = this.set("dsAttribute", value.asInstanceOf[js.Any])
+    def setDsLinkUndefined: Self = StObject.set(x, "dsLink", js.undefined)
     
     @scala.inline
-    def deleteDsAttribute: Self = this.set("dsAttribute", js.undefined)
+    def setDsNode(value: String): Self = StObject.set(x, "dsNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsLink(value: String): Self = this.set("dsLink", value.asInstanceOf[js.Any])
+    def setDsNodeUndefined: Self = StObject.set(x, "dsNode", js.undefined)
     
     @scala.inline
-    def deleteDsLink: Self = this.set("dsLink", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsNode(value: String): Self = this.set("dsNode", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDsNode: Self = this.set("dsNode", js.undefined)
+    def setSfField(value: String): Self = StObject.set(x, "sfField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSfFieldName(value: String): Self = StObject.set(x, "sfFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setSfFieldNameUndefined: Self = StObject.set(x, "sfFieldName", js.undefined)
     
     @scala.inline
-    def setSfField(value: String): Self = this.set("sfField", value.asInstanceOf[js.Any])
+    def setSfFieldUndefined: Self = StObject.set(x, "sfField", js.undefined)
     
     @scala.inline
-    def deleteSfField: Self = this.set("sfField", js.undefined)
+    def setSfFolder(value: String): Self = StObject.set(x, "sfFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSfFieldName(value: String): Self = this.set("sfFieldName", value.asInstanceOf[js.Any])
+    def setSfFolderUndefined: Self = StObject.set(x, "sfFolder", js.undefined)
     
     @scala.inline
-    def deleteSfFieldName: Self = this.set("sfFieldName", js.undefined)
+    def setSfLockedValue(value: String): Self = StObject.set(x, "sfLockedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSfFolder(value: String): Self = this.set("sfFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSfFolder: Self = this.set("sfFolder", js.undefined)
-    
-    @scala.inline
-    def setSfLockedValue(value: String): Self = this.set("sfLockedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSfLockedValue: Self = this.set("sfLockedValue", js.undefined)
+    def setSfLockedValueUndefined: Self = StObject.set(x, "sfLockedValue", js.undefined)
   }
 }

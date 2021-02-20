@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashFilter extends js.Object {
+trait FlashFilter extends StObject {
   
   var angle: Double = js.native
   
@@ -75,75 +76,63 @@ object FlashFilter {
   }
   
   @scala.inline
-  implicit class FlashFilterOps[Self <: FlashFilter] (val x: Self) extends AnyVal {
+  implicit class FlashFilterMutableBuilder[Self <: FlashFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurX(value: Double): Self = StObject.set(x, "blurX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlurY(value: Double): Self = StObject.set(x, "blurY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurX(value: Double): Self = this.set("blurX", value.asInstanceOf[js.Any])
+    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurY(value: Double): Self = this.set("blurY", value.asInstanceOf[js.Any])
+    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Double): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setHideObject(value: Boolean): Self = StObject.set(x, "hideObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setHighlightColor(value: js.Any): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideObject(value: Boolean): Self = this.set("hideObject", value.asInstanceOf[js.Any])
+    def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightColor(value: js.Any): Self = this.set("highlightColor", value.asInstanceOf[js.Any])
+    def setKnockout(value: Boolean): Self = StObject.set(x, "knockout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: Double): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInner(value: Boolean): Self = this.set("inner", value.asInstanceOf[js.Any])
+    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnockout(value: Boolean): Self = this.set("knockout", value.asInstanceOf[js.Any])
+    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShadowColor(value: js.Any): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: String): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: Double): Self = this.set("saturation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowColor(value: js.Any): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

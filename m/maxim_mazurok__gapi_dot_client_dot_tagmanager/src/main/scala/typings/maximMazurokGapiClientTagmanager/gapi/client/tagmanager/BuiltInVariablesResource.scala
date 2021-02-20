@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Parent
 import typings.maximMazurokGapiClientTagmanager.anon.PrettyPrint
 import typings.maximMazurokGapiClientTagmanager.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuiltInVariablesResource extends js.Object {
+trait BuiltInVariablesResource extends StObject {
   
   /** Creates one or more GTM Built-In Variables. */
   def create(): Request[CreateBuiltInVariableResponse] = js.native

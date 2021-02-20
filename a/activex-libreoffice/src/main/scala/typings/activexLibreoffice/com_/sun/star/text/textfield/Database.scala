@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import typings.activexLibreoffice.com_.sun.star.text.DependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.TextContentAnchorType
-import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
-import typings.activexLibreoffice.com_.sun.star.text.XDependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextField
   */
 @js.native
-trait Database
-  extends TextField_
-     with XDependentTextField {
+trait Database extends DependentTextField {
   
   /** contains the database content that was merged in the last database merge action. Initially it contains the column name in parenthesis (<>). */
   var Content: String = js.native
@@ -84,30 +82,18 @@ object Database {
   }
   
   @scala.inline
-  implicit class DatabaseOps[Self <: Database] (val x: Self) extends AnyVal {
+  implicit class DatabaseMutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataBaseFormat(value: Boolean): Self = StObject.set(x, "DataBaseFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = this.set("CurrentPresentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataBaseFormat(value: Boolean): Self = this.set("DataBaseFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
   }
 }

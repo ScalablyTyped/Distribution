@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1Catalog extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1Catalog extends StObject {
   
   /** Required. The catalog item level configuration. */
   var catalogItemLevelConfig: js.UndefOr[GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig] = js.native
@@ -28,42 +29,30 @@ object GoogleCloudRecommendationengineV1beta1Catalog {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CatalogOps[Self <: GoogleCloudRecommendationengineV1beta1Catalog] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1CatalogMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1Catalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogItemLevelConfig(value: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig): Self = StObject.set(x, "catalogItemLevelConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogItemLevelConfigUndefined: Self = StObject.set(x, "catalogItemLevelConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultEventStoreId(value: String): Self = StObject.set(x, "defaultEventStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogItemLevelConfig(value: GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig): Self = this.set("catalogItemLevelConfig", value.asInstanceOf[js.Any])
+    def setDefaultEventStoreIdUndefined: Self = StObject.set(x, "defaultEventStoreId", js.undefined)
     
     @scala.inline
-    def deleteCatalogItemLevelConfig: Self = this.set("catalogItemLevelConfig", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEventStoreId(value: String): Self = this.set("defaultEventStoreId", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDefaultEventStoreId: Self = this.set("defaultEventStoreId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

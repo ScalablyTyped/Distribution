@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpsItemResponse extends js.Object {
+trait GetOpsItemResponse extends StObject {
   
   /**
     * The OpsItem.
@@ -21,24 +22,12 @@ object GetOpsItemResponse {
   }
   
   @scala.inline
-  implicit class GetOpsItemResponseOps[Self <: GetOpsItemResponse] (val x: Self) extends AnyVal {
+  implicit class GetOpsItemResponseMutableBuilder[Self <: GetOpsItemResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpsItem(value: OpsItem): Self = StObject.set(x, "OpsItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpsItem(value: OpsItem): Self = this.set("OpsItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpsItem: Self = this.set("OpsItem", js.undefined)
+    def setOpsItemUndefined: Self = StObject.set(x, "OpsItem", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExceptionHandlingScope extends js.Object {
+trait ExceptionHandlingScope extends StObject {
   
   def get_errorMessage(): String = js.native
   
@@ -53,54 +54,42 @@ object ExceptionHandlingScope {
   }
   
   @scala.inline
-  implicit class ExceptionHandlingScopeOps[Self <: ExceptionHandlingScope] (val x: Self) extends AnyVal {
+  implicit class ExceptionHandlingScopeMutableBuilder[Self <: ExceptionHandlingScope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_hasException(value: () => Boolean): Self = StObject.set(x, "get_hasException", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_processed(value: () => Boolean): Self = StObject.set(x, "get_processed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_errorMessage(value: () => String): Self = this.set("get_errorMessage", js.Any.fromFunction0(value))
+    def setGet_serverErrorCode(value: () => Double): Self = StObject.set(x, "get_serverErrorCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_hasException(value: () => Boolean): Self = this.set("get_hasException", js.Any.fromFunction0(value))
+    def setGet_serverErrorDetails(value: () => js.Any): Self = StObject.set(x, "get_serverErrorDetails", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_processed(value: () => Boolean): Self = this.set("get_processed", js.Any.fromFunction0(value))
+    def setGet_serverErrorTypeName(value: () => String): Self = StObject.set(x, "get_serverErrorTypeName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_serverErrorCode(value: () => Double): Self = this.set("get_serverErrorCode", js.Any.fromFunction0(value))
+    def setGet_serverErrorValue(value: () => String): Self = StObject.set(x, "get_serverErrorValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_serverErrorDetails(value: () => js.Any): Self = this.set("get_serverErrorDetails", js.Any.fromFunction0(value))
+    def setGet_serverStackTrace(value: () => String): Self = StObject.set(x, "get_serverStackTrace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_serverErrorTypeName(value: () => String): Self = this.set("get_serverErrorTypeName", js.Any.fromFunction0(value))
+    def setStartCatch(value: () => js.Any): Self = StObject.set(x, "startCatch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_serverErrorValue(value: () => String): Self = this.set("get_serverErrorValue", js.Any.fromFunction0(value))
+    def setStartFinally(value: () => js.Any): Self = StObject.set(x, "startFinally", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_serverStackTrace(value: () => String): Self = this.set("get_serverStackTrace", js.Any.fromFunction0(value))
+    def setStartScope(value: () => js.Any): Self = StObject.set(x, "startScope", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStartCatch(value: () => js.Any): Self = this.set("startCatch", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartFinally(value: () => js.Any): Self = this.set("startFinally", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartScope(value: () => js.Any): Self = this.set("startScope", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartTry(value: () => js.Any): Self = this.set("startTry", js.Any.fromFunction0(value))
+    def setStartTry(value: () => js.Any): Self = StObject.set(x, "startTry", js.Any.fromFunction0(value))
   }
 }

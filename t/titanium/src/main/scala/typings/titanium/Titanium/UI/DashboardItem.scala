@@ -5,6 +5,7 @@ import typings.titanium.Titanium.Proxy
 import typings.titanium.titaniumStrings.click
 import typings.titanium.titaniumStrings.delete
 import typings.titanium.titaniumStrings.move
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

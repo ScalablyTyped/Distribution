@@ -8,12 +8,13 @@ import typings.vegaTypings.runtimeMod.Loader_
 import typings.vegaTypings.runtimeMod.LocaleFormatters
 import typings.vegaTypings.runtimeMod.TooltipHandler
 import typings.vegaUtil.mod.LoggerInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Background extends js.Object {
+trait Background extends StObject {
   
   var background: js.UndefOr[typings.vegaTypings.colorMod.Color] = js.native
   
@@ -46,86 +47,74 @@ object Background {
   }
   
   @scala.inline
-  implicit class BackgroundOps[Self <: Background] (val x: Self) extends AnyVal {
+  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: typings.vegaTypings.colorMod.Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBind(value: Element | String): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: typings.vegaTypings.colorMod.Color): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind(value: Element | String): Self = this.set("bind", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBind: Self = this.set("bind", js.undefined)
+    def setExpr(value: js.Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: Element | String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpr(value: js.Any): Self = this.set("expr", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteExpr: Self = this.set("expr", js.undefined)
+    def setLoader(value: Loader_): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: Boolean): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setLocale(value: LocaleFormatters): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: Loader_): Self = this.set("loader", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
+    def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: LocaleFormatters): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setLogger(value: LoggerInterface): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: Double): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setRenderer(value: Renderers): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: LoggerInterface): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
-    
-    @scala.inline
-    def setRenderer(value: Renderers): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
     def setTooltip(
       value: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit
-    ): Self = this.set("tooltip", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "tooltip", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

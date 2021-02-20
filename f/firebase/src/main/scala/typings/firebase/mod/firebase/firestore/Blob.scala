@@ -1,12 +1,13 @@
 package typings.firebase.mod.firebase.firestore
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Blob extends js.Object {
+trait Blob extends StObject {
   
   /**
     * Returns true if this `Blob` is equal to the provided one.
@@ -41,27 +42,15 @@ object Blob {
   }
   
   @scala.inline
-  implicit class BlobOps[Self <: Blob] (val x: Self) extends AnyVal {
+  implicit class BlobMutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEqual(value: Blob => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToBase64(value: () => String): Self = StObject.set(x, "toBase64", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsEqual(value: Blob => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToBase64(value: () => String): Self = this.set("toBase64", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToUint8Array(value: () => Uint8Array): Self = this.set("toUint8Array", js.Any.fromFunction0(value))
+    def setToUint8Array(value: () => Uint8Array): Self = StObject.set(x, "toUint8Array", js.Any.fromFunction0(value))
   }
 }

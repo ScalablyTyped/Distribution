@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataKeyValuePair extends js.Object {
+trait MetadataKeyValuePair extends StObject {
   
   /**
     * A metadata key.
@@ -26,30 +27,18 @@ object MetadataKeyValuePair {
   }
   
   @scala.inline
-  implicit class MetadataKeyValuePairOps[Self <: MetadataKeyValuePair] (val x: Self) extends AnyVal {
+  implicit class MetadataKeyValuePairMutableBuilder[Self <: MetadataKeyValuePair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadataKey(value: MetadataKeyString): Self = StObject.set(x, "MetadataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataKeyUndefined: Self = StObject.set(x, "MetadataKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataValue(value: MetadataValueString): Self = StObject.set(x, "MetadataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataKey(value: MetadataKeyString): Self = this.set("MetadataKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataKey: Self = this.set("MetadataKey", js.undefined)
-    
-    @scala.inline
-    def setMetadataValue(value: MetadataValueString): Self = this.set("MetadataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataValue: Self = this.set("MetadataValue", js.undefined)
+    def setMetadataValueUndefined: Self = StObject.set(x, "MetadataValue", js.undefined)
   }
 }

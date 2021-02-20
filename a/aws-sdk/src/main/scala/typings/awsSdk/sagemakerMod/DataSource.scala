@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends js.Object {
+trait DataSource extends StObject {
   
   /**
     * The file system that is associated with a channel.
@@ -26,30 +27,18 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSystemDataSource(value: FileSystemDataSource): Self = StObject.set(x, "FileSystemDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemDataSourceUndefined: Self = StObject.set(x, "FileSystemDataSource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3DataSource(value: S3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemDataSource(value: FileSystemDataSource): Self = this.set("FileSystemDataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileSystemDataSource: Self = this.set("FileSystemDataSource", js.undefined)
-    
-    @scala.inline
-    def setS3DataSource(value: S3DataSource): Self = this.set("S3DataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DataSource: Self = this.set("S3DataSource", js.undefined)
+    def setS3DataSourceUndefined: Self = StObject.set(x, "S3DataSource", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
 @js.native
-trait IOnChanges extends js.Object {
+trait IOnChanges extends StObject {
   
   /**
     * Called whenever one-way bindings are updated. The onChangesObj is a hash whose keys are the names of the bound
@@ -29,21 +30,9 @@ object IOnChanges {
   }
   
   @scala.inline
-  implicit class IOnChangesOps[Self <: IOnChanges] (val x: Self) extends AnyVal {
+  implicit class IOnChangesMutableBuilder[Self <: IOnChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$onChanges(value: IOnChangesObject => Unit): Self = this.set("$onChanges", js.Any.fromFunction1(value))
+    def set$onChanges(value: IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
   }
 }

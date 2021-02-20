@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolClientType extends js.Object {
+trait UserPoolClientType extends StObject {
   
   /**
     * The time limit, specified by tokenValidityUnits, defaulting to hours, after which the access token is no longer valid and cannot be used.
@@ -126,174 +127,162 @@ object UserPoolClientType {
   }
   
   @scala.inline
-  implicit class UserPoolClientTypeOps[Self <: UserPoolClientType] (val x: Self) extends AnyVal {
+  implicit class UserPoolClientTypeMutableBuilder[Self <: UserPoolClientType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessTokenValidity(value: AccessTokenValidityType): Self = StObject.set(x, "AccessTokenValidity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenValidityUndefined: Self = StObject.set(x, "AccessTokenValidity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedOAuthFlows(value: OAuthFlowsType): Self = StObject.set(x, "AllowedOAuthFlows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessTokenValidity(value: AccessTokenValidityType): Self = this.set("AccessTokenValidity", value.asInstanceOf[js.Any])
+    def setAllowedOAuthFlowsUndefined: Self = StObject.set(x, "AllowedOAuthFlows", js.undefined)
     
     @scala.inline
-    def deleteAccessTokenValidity: Self = this.set("AccessTokenValidity", js.undefined)
+    def setAllowedOAuthFlowsUserPoolClient(value: BooleanType): Self = StObject.set(x, "AllowedOAuthFlowsUserPoolClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOAuthFlowsVarargs(value: OAuthFlowType*): Self = this.set("AllowedOAuthFlows", js.Array(value :_*))
+    def setAllowedOAuthFlowsUserPoolClientUndefined: Self = StObject.set(x, "AllowedOAuthFlowsUserPoolClient", js.undefined)
     
     @scala.inline
-    def setAllowedOAuthFlows(value: OAuthFlowsType): Self = this.set("AllowedOAuthFlows", value.asInstanceOf[js.Any])
+    def setAllowedOAuthFlowsVarargs(value: OAuthFlowType*): Self = StObject.set(x, "AllowedOAuthFlows", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedOAuthFlows: Self = this.set("AllowedOAuthFlows", js.undefined)
+    def setAllowedOAuthScopes(value: ScopeListType): Self = StObject.set(x, "AllowedOAuthScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOAuthFlowsUserPoolClient(value: BooleanType): Self = this.set("AllowedOAuthFlowsUserPoolClient", value.asInstanceOf[js.Any])
+    def setAllowedOAuthScopesUndefined: Self = StObject.set(x, "AllowedOAuthScopes", js.undefined)
     
     @scala.inline
-    def deleteAllowedOAuthFlowsUserPoolClient: Self = this.set("AllowedOAuthFlowsUserPoolClient", js.undefined)
+    def setAllowedOAuthScopesVarargs(value: ScopeType*): Self = StObject.set(x, "AllowedOAuthScopes", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedOAuthScopesVarargs(value: ScopeType*): Self = this.set("AllowedOAuthScopes", js.Array(value :_*))
+    def setAnalyticsConfiguration(value: AnalyticsConfigurationType): Self = StObject.set(x, "AnalyticsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOAuthScopes(value: ScopeListType): Self = this.set("AllowedOAuthScopes", value.asInstanceOf[js.Any])
+    def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "AnalyticsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAllowedOAuthScopes: Self = this.set("AllowedOAuthScopes", js.undefined)
+    def setCallbackURLs(value: CallbackURLsListType): Self = StObject.set(x, "CallbackURLs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsConfiguration(value: AnalyticsConfigurationType): Self = this.set("AnalyticsConfiguration", value.asInstanceOf[js.Any])
+    def setCallbackURLsUndefined: Self = StObject.set(x, "CallbackURLs", js.undefined)
     
     @scala.inline
-    def deleteAnalyticsConfiguration: Self = this.set("AnalyticsConfiguration", js.undefined)
+    def setCallbackURLsVarargs(value: RedirectUrlType*): Self = StObject.set(x, "CallbackURLs", js.Array(value :_*))
     
     @scala.inline
-    def setCallbackURLsVarargs(value: RedirectUrlType*): Self = this.set("CallbackURLs", js.Array(value :_*))
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackURLs(value: CallbackURLsListType): Self = this.set("CallbackURLs", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def deleteCallbackURLs: Self = this.set("CallbackURLs", js.undefined)
+    def setClientName(value: ClientNameType): Self = StObject.set(x, "ClientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setClientNameUndefined: Self = StObject.set(x, "ClientName", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    def setClientSecret(value: ClientSecretType): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientName(value: ClientNameType): Self = this.set("ClientName", value.asInstanceOf[js.Any])
+    def setClientSecretUndefined: Self = StObject.set(x, "ClientSecret", js.undefined)
     
     @scala.inline
-    def deleteClientName: Self = this.set("ClientName", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSecret(value: ClientSecretType): Self = this.set("ClientSecret", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteClientSecret: Self = this.set("ClientSecret", js.undefined)
+    def setDefaultRedirectURI(value: RedirectUrlType): Self = StObject.set(x, "DefaultRedirectURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDefaultRedirectURIUndefined: Self = StObject.set(x, "DefaultRedirectURI", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setExplicitAuthFlows(value: ExplicitAuthFlowsListType): Self = StObject.set(x, "ExplicitAuthFlows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRedirectURI(value: RedirectUrlType): Self = this.set("DefaultRedirectURI", value.asInstanceOf[js.Any])
+    def setExplicitAuthFlowsUndefined: Self = StObject.set(x, "ExplicitAuthFlows", js.undefined)
     
     @scala.inline
-    def deleteDefaultRedirectURI: Self = this.set("DefaultRedirectURI", js.undefined)
+    def setExplicitAuthFlowsVarargs(value: ExplicitAuthFlowsType*): Self = StObject.set(x, "ExplicitAuthFlows", js.Array(value :_*))
     
     @scala.inline
-    def setExplicitAuthFlowsVarargs(value: ExplicitAuthFlowsType*): Self = this.set("ExplicitAuthFlows", js.Array(value :_*))
+    def setIdTokenValidity(value: IdTokenValidityType): Self = StObject.set(x, "IdTokenValidity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitAuthFlows(value: ExplicitAuthFlowsListType): Self = this.set("ExplicitAuthFlows", value.asInstanceOf[js.Any])
+    def setIdTokenValidityUndefined: Self = StObject.set(x, "IdTokenValidity", js.undefined)
     
     @scala.inline
-    def deleteExplicitAuthFlows: Self = this.set("ExplicitAuthFlows", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdTokenValidity(value: IdTokenValidityType): Self = this.set("IdTokenValidity", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteIdTokenValidity: Self = this.set("IdTokenValidity", js.undefined)
+    def setLogoutURLs(value: LogoutURLsListType): Self = StObject.set(x, "LogoutURLs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setLogoutURLsUndefined: Self = StObject.set(x, "LogoutURLs", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setLogoutURLsVarargs(value: RedirectUrlType*): Self = StObject.set(x, "LogoutURLs", js.Array(value :_*))
     
     @scala.inline
-    def setLogoutURLsVarargs(value: RedirectUrlType*): Self = this.set("LogoutURLs", js.Array(value :_*))
+    def setPreventUserExistenceErrors(value: PreventUserExistenceErrorTypes): Self = StObject.set(x, "PreventUserExistenceErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoutURLs(value: LogoutURLsListType): Self = this.set("LogoutURLs", value.asInstanceOf[js.Any])
+    def setPreventUserExistenceErrorsUndefined: Self = StObject.set(x, "PreventUserExistenceErrors", js.undefined)
     
     @scala.inline
-    def deleteLogoutURLs: Self = this.set("LogoutURLs", js.undefined)
+    def setReadAttributes(value: ClientPermissionListType): Self = StObject.set(x, "ReadAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventUserExistenceErrors(value: PreventUserExistenceErrorTypes): Self = this.set("PreventUserExistenceErrors", value.asInstanceOf[js.Any])
+    def setReadAttributesUndefined: Self = StObject.set(x, "ReadAttributes", js.undefined)
     
     @scala.inline
-    def deletePreventUserExistenceErrors: Self = this.set("PreventUserExistenceErrors", js.undefined)
+    def setReadAttributesVarargs(value: ClientPermissionType*): Self = StObject.set(x, "ReadAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setReadAttributesVarargs(value: ClientPermissionType*): Self = this.set("ReadAttributes", js.Array(value :_*))
+    def setRefreshTokenValidity(value: RefreshTokenValidityType): Self = StObject.set(x, "RefreshTokenValidity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAttributes(value: ClientPermissionListType): Self = this.set("ReadAttributes", value.asInstanceOf[js.Any])
+    def setRefreshTokenValidityUndefined: Self = StObject.set(x, "RefreshTokenValidity", js.undefined)
     
     @scala.inline
-    def deleteReadAttributes: Self = this.set("ReadAttributes", js.undefined)
+    def setSupportedIdentityProviders(value: SupportedIdentityProvidersListType): Self = StObject.set(x, "SupportedIdentityProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshTokenValidity(value: RefreshTokenValidityType): Self = this.set("RefreshTokenValidity", value.asInstanceOf[js.Any])
+    def setSupportedIdentityProvidersUndefined: Self = StObject.set(x, "SupportedIdentityProviders", js.undefined)
     
     @scala.inline
-    def deleteRefreshTokenValidity: Self = this.set("RefreshTokenValidity", js.undefined)
+    def setSupportedIdentityProvidersVarargs(value: ProviderNameType*): Self = StObject.set(x, "SupportedIdentityProviders", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedIdentityProvidersVarargs(value: ProviderNameType*): Self = this.set("SupportedIdentityProviders", js.Array(value :_*))
+    def setTokenValidityUnits(value: TokenValidityUnitsType): Self = StObject.set(x, "TokenValidityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedIdentityProviders(value: SupportedIdentityProvidersListType): Self = this.set("SupportedIdentityProviders", value.asInstanceOf[js.Any])
+    def setTokenValidityUnitsUndefined: Self = StObject.set(x, "TokenValidityUnits", js.undefined)
     
     @scala.inline
-    def deleteSupportedIdentityProviders: Self = this.set("SupportedIdentityProviders", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenValidityUnits(value: TokenValidityUnitsType): Self = this.set("TokenValidityUnits", value.asInstanceOf[js.Any])
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
     
     @scala.inline
-    def deleteTokenValidityUnits: Self = this.set("TokenValidityUnits", js.undefined)
+    def setWriteAttributes(value: ClientPermissionListType): Self = StObject.set(x, "WriteAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setWriteAttributesUndefined: Self = StObject.set(x, "WriteAttributes", js.undefined)
     
     @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
-    
-    @scala.inline
-    def setWriteAttributesVarargs(value: ClientPermissionType*): Self = this.set("WriteAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setWriteAttributes(value: ClientPermissionListType): Self = this.set("WriteAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteAttributes: Self = this.set("WriteAttributes", js.undefined)
+    def setWriteAttributesVarargs(value: ClientPermissionType*): Self = StObject.set(x, "WriteAttributes", js.Array(value :_*))
   }
 }

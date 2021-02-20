@@ -5,14 +5,14 @@ import typings.stormReactDiagrams.defaultLinkModelMod.DefaultLinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModelListener
 import typings.stormReactDiagrams.portModelMod.PortModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultPortModel", JSImport.Namespace)
-@js.native
-object defaultPortModelMod extends js.Object {
+object defaultPortModelMod {
   
+  @JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultPortModel", "DefaultPortModel")
   @js.native
   class DefaultPortModel protected () extends PortModel {
     def this(isInput: Boolean, name: String) = this()

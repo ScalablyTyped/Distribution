@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/hljs/haskell", JSImport.Namespace)
-@js.native
-object hljsHaskellMod extends js.Object {
+object hljsHaskellMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/hljs/haskell", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

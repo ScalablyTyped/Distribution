@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageCodePair extends js.Object {
+trait LanguageCodePair extends StObject {
   
   /** Required. The BCP-47 language code of the input text, for example, "en-US". Expected to be an exact match for GlossaryTerm.language_code. */
   var sourceLanguageCode: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object LanguageCodePair {
   }
   
   @scala.inline
-  implicit class LanguageCodePairOps[Self <: LanguageCodePair] (val x: Self) extends AnyVal {
+  implicit class LanguageCodePairMutableBuilder[Self <: LanguageCodePair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceLanguageCode(value: String): Self = StObject.set(x, "sourceLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceLanguageCodeUndefined: Self = StObject.set(x, "sourceLanguageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetLanguageCode(value: String): Self = StObject.set(x, "targetLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLanguageCode(value: String): Self = this.set("sourceLanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceLanguageCode: Self = this.set("sourceLanguageCode", js.undefined)
-    
-    @scala.inline
-    def setTargetLanguageCode(value: String): Self = this.set("targetLanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLanguageCode: Self = this.set("targetLanguageCode", js.undefined)
+    def setTargetLanguageCodeUndefined: Self = StObject.set(x, "targetLanguageCode", js.undefined)
   }
 }

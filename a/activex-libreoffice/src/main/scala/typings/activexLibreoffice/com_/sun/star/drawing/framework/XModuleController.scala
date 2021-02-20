@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * dlls). The path to the office configuration list is MultiPaneGUI/Framework/ResourceFactories in the Impress.xcu file.
   */
 @js.native
-trait XModuleController extends js.Object {
+trait XModuleController extends StObject {
   
   /** When the specified resource is requested for the first time then create a new instance of the associated factory service. */
   def requestResource(sResourceTypeURL: String): Unit = js.native
@@ -25,21 +26,9 @@ object XModuleController {
   }
   
   @scala.inline
-  implicit class XModuleControllerOps[Self <: XModuleController] (val x: Self) extends AnyVal {
+  implicit class XModuleControllerMutableBuilder[Self <: XModuleController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestResource(value: String => Unit): Self = this.set("requestResource", js.Any.fromFunction1(value))
+    def setRequestResource(value: String => Unit): Self = StObject.set(x, "requestResource", js.Any.fromFunction1(value))
   }
 }

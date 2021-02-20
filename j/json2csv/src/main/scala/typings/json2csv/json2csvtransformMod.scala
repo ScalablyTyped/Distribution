@@ -5,13 +5,21 @@ import typings.json2csv.json2csvbaseMod.json2csv.NormalizedFieldInfo
 import typings.json2csv.json2csvbaseMod.json2csv.Options
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("json2csv/JSON2CSVTransform", JSImport.Namespace)
-@js.native
-object json2csvtransformMod extends js.Object {
+object json2csvtransformMod {
+  
+  @JSImport("json2csv/JSON2CSVTransform", JSImport.Default)
+  @js.native
+  // implements JSON2CSVBase<T>
+  class default[T] () extends JSON2CSVTransform[T] {
+    def this(opts: Options[T]) = this()
+    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
+    def this(opts: Options[T], transformOpts: TransformOptions) = this()
+  }
   
   @js.native
   trait JSON2CSVTransform[T] extends Transform {
@@ -83,13 +91,5 @@ object json2csvtransformMod extends js.Object {
       * @param {object} data JSON object to be converted in a CSV row
       */
     /* protected */ def pushLine(data: T): Unit = js.native
-  }
-  
-  @js.native
-  // implements JSON2CSVBase<T>
-  class default[T] () extends JSON2CSVTransform[T] {
-    def this(opts: Options[T]) = this()
-    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
-    def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
 }

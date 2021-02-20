@@ -1,11 +1,12 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChamfer extends js.Object {
+trait IChamfer extends StObject {
   
   var quality: js.UndefOr[Double] = js.native
   
@@ -24,45 +25,33 @@ object IChamfer {
   }
   
   @scala.inline
-  implicit class IChamferOps[Self <: IChamfer] (val x: Self) extends AnyVal {
+  implicit class IChamferMutableBuilder[Self <: IChamfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQualityMax(value: Double): Self = StObject.set(x, "qualityMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQualityMaxUndefined: Self = StObject.set(x, "qualityMax", js.undefined)
     
     @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setQualityMin(value: Double): Self = StObject.set(x, "qualityMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setQualityMinUndefined: Self = StObject.set(x, "qualityMin", js.undefined)
     
     @scala.inline
-    def setQualityMax(value: Double): Self = this.set("qualityMax", value.asInstanceOf[js.Any])
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def deleteQualityMax: Self = this.set("qualityMax", js.undefined)
+    def setRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualityMin(value: Double): Self = this.set("qualityMin", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteQualityMin: Self = this.set("qualityMin", js.undefined)
-    
-    @scala.inline
-    def setRadiusVarargs(value: Double*): Self = this.set("radius", js.Array(value :_*))
-    
-    @scala.inline
-    def setRadius(value: Double | js.Array[Double]): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value :_*))
   }
 }

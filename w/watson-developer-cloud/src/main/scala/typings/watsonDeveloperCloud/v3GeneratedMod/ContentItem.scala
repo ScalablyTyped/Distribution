@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ContentItem. */
 @js.native
-trait ContentItem extends js.Object {
+trait ContentItem extends StObject {
   
   /** The content that is to be analyzed. The service supports up to 20 MB of content for all `ContentItem` objects combined. */
   var content: String = js.native
@@ -44,69 +45,57 @@ object ContentItem {
   }
   
   @scala.inline
-  implicit class ContentItemOps[Self <: ContentItem] (val x: Self) extends AnyVal {
+  implicit class ContentItemMutableBuilder[Self <: ContentItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContenttype(value: String): Self = StObject.set(x, "contenttype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContenttypeUndefined: Self = StObject.set(x, "contenttype", js.undefined)
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContenttype(value: String): Self = this.set("contenttype", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteContenttype: Self = this.set("contenttype", js.undefined)
+    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForward(value: Boolean): Self = this.set("forward", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteForward: Self = this.set("forward", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setParentid(value: String): Self = StObject.set(x, "parentid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setParentidUndefined: Self = StObject.set(x, "parentid", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setReply(value: Boolean): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentid(value: String): Self = this.set("parentid", value.asInstanceOf[js.Any])
+    def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
     
     @scala.inline
-    def deleteParentid: Self = this.set("parentid", js.undefined)
+    def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReply(value: Boolean): Self = this.set("reply", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReply: Self = this.set("reply", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: Double): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.historyJs
 
 import typings.historyJs.anon.HashChange
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/277
 // var Historyjs: Historyjs = <any>History;
 @js.native
-trait Historyjs extends js.Object {
+trait Historyjs extends StObject {
   
   var Adapter: HistoryAdapter = js.native
   

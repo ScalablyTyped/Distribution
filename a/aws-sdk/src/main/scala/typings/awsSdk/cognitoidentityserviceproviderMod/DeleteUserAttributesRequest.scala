@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteUserAttributesRequest extends js.Object {
+trait DeleteUserAttributesRequest extends StObject {
   
   /**
     * The access token used in the request to delete user attributes.
@@ -26,27 +27,15 @@ object DeleteUserAttributesRequest {
   }
   
   @scala.inline
-  implicit class DeleteUserAttributesRequestOps[Self <: DeleteUserAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteUserAttributesRequestMutableBuilder[Self <: DeleteUserAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserAttributeNames(value: AttributeNameListType): Self = StObject.set(x, "UserAttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserAttributeNamesVarargs(value: AttributeNameType*): Self = this.set("UserAttributeNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserAttributeNames(value: AttributeNameListType): Self = this.set("UserAttributeNames", value.asInstanceOf[js.Any])
+    def setUserAttributeNamesVarargs(value: AttributeNameType*): Self = StObject.set(x, "UserAttributeNames", js.Array(value :_*))
   }
 }

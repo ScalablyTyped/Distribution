@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conflict extends js.Object {
+trait Conflict extends StObject {
   
   var columns: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object Conflict {
   }
   
   @scala.inline
-  implicit class ConflictOps[Self <: Conflict] (val x: Self) extends AnyVal {
+  implicit class ConflictMutableBuilder[Self <: Conflict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConflict(value: String): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflict(value: String): Self = this.set("conflict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConflict: Self = this.set("conflict", js.undefined)
-    
-    @scala.inline
-    def setOverwrite(value: String): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

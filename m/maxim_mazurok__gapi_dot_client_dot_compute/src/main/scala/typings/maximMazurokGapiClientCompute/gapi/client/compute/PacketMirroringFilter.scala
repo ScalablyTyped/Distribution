@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PacketMirroringFilter extends js.Object {
+trait PacketMirroringFilter extends StObject {
   
   /**
     * Protocols that apply as filter on mirrored traffic. If no protocols are specified, all traffic that matches the specified CIDR ranges is mirrored. If neither cidrRanges nor
@@ -31,42 +32,30 @@ object PacketMirroringFilter {
   }
   
   @scala.inline
-  implicit class PacketMirroringFilterOps[Self <: PacketMirroringFilter] (val x: Self) extends AnyVal {
+  implicit class PacketMirroringFilterMutableBuilder[Self <: PacketMirroringFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrRanges(value: js.Array[String]): Self = StObject.set(x, "cidrRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrRangesUndefined: Self = StObject.set(x, "cidrRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrRangesVarargs(value: String*): Self = StObject.set(x, "cidrRanges", js.Array(value :_*))
     
     @scala.inline
-    def setIPProtocolsVarargs(value: String*): Self = this.set("IPProtocols", js.Array(value :_*))
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPProtocols(value: js.Array[String]): Self = this.set("IPProtocols", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteIPProtocols: Self = this.set("IPProtocols", js.undefined)
+    def setIPProtocols(value: js.Array[String]): Self = StObject.set(x, "IPProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrRangesVarargs(value: String*): Self = this.set("cidrRanges", js.Array(value :_*))
+    def setIPProtocolsUndefined: Self = StObject.set(x, "IPProtocols", js.undefined)
     
     @scala.inline
-    def setCidrRanges(value: js.Array[String]): Self = this.set("cidrRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCidrRanges: Self = this.set("cidrRanges", js.undefined)
-    
-    @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setIPProtocolsVarargs(value: String*): Self = StObject.set(x, "IPProtocols", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Core
 
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoaderConfig extends js.Object {
+trait LoaderConfig extends StObject {
   
   /**
     * Should the XHR request use async or not?
@@ -62,72 +63,60 @@ object LoaderConfig {
   }
   
   @scala.inline
-  implicit class LoaderConfigOps[Self <: LoaderConfig] (val x: Self) extends AnyVal {
+  implicit class LoaderConfigMutableBuilder[Self <: LoaderConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseURL(value: String): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def deleteBaseURL: Self = this.set("baseURL", js.undefined)
+    def setMaxParallelDownloads(value: integer): Self = StObject.set(x, "maxParallelDownloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setMaxParallelDownloadsUndefined: Self = StObject.set(x, "maxParallelDownloads", js.undefined)
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParallelDownloads(value: integer): Self = this.set("maxParallelDownloads", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteMaxParallelDownloads: Self = this.set("maxParallelDownloads", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: integer): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

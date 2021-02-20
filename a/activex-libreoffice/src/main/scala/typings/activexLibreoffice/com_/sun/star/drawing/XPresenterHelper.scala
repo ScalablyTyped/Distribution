@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import typings.activexLibreoffice.com_.sun.star.rendering.XSpriteCanvas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * As the presenter screen is no extension any more, this hack can go again; it just needs clean-up.
   */
 @js.native
-trait XPresenterHelper extends js.Object {
+trait XPresenterHelper extends StObject {
   
   /**
     * Capture the mouse so that no other window will receive mouse events. Note that this is a potentially dangerous method. Not calling releaseMouse
@@ -106,42 +107,30 @@ object XPresenterHelper {
   }
   
   @scala.inline
-  implicit class XPresenterHelperOps[Self <: XPresenterHelper] (val x: Self) extends AnyVal {
+  implicit class XPresenterHelperMutableBuilder[Self <: XPresenterHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureMouse(value: XWindow => Unit): Self = StObject.set(x, "captureMouse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateCanvas(value: (XWindow, Double, String) => XCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateSharedCanvas(value: (XSpriteCanvas, XWindow, XCanvas, XWindow, XWindow) => XCanvas): Self = StObject.set(x, "createSharedCanvas", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setCaptureMouse(value: XWindow => Unit): Self = this.set("captureMouse", js.Any.fromFunction1(value))
+    def setCreateWindow(value: (XWindow, Boolean, Boolean, Boolean, Boolean) => XWindow): Self = StObject.set(x, "createWindow", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setCreateCanvas(value: (XWindow, Double, String) => XCanvas): Self = this.set("createCanvas", js.Any.fromFunction3(value))
+    def setGetWindowExtentsRelative(value: (XWindow, XWindow) => Rectangle): Self = StObject.set(x, "getWindowExtentsRelative", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSharedCanvas(value: (XSpriteCanvas, XWindow, XCanvas, XWindow, XWindow) => XCanvas): Self = this.set("createSharedCanvas", js.Any.fromFunction5(value))
+    def setLoadBitmap(value: (String, XCanvas) => XBitmap): Self = StObject.set(x, "loadBitmap", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateWindow(value: (XWindow, Boolean, Boolean, Boolean, Boolean) => XWindow): Self = this.set("createWindow", js.Any.fromFunction5(value))
+    def setReleaseMouse(value: XWindow => Unit): Self = StObject.set(x, "releaseMouse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWindowExtentsRelative(value: (XWindow, XWindow) => Rectangle): Self = this.set("getWindowExtentsRelative", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLoadBitmap(value: (String, XCanvas) => XBitmap): Self = this.set("loadBitmap", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReleaseMouse(value: XWindow => Unit): Self = this.set("releaseMouse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToTop(value: XWindow => Unit): Self = this.set("toTop", js.Any.fromFunction1(value))
+    def setToTop(value: XWindow => Unit): Self = StObject.set(x, "toTop", js.Any.fromFunction1(value))
   }
 }

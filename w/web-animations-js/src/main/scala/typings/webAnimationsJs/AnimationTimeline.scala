@@ -1,12 +1,13 @@
 package typings.webAnimationsJs
 
 import typings.std.KeyframeEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationTimeline extends js.Object {
+trait AnimationTimeline extends StObject {
   
   val currentTime: Double | Null = js.native
   
@@ -23,30 +24,18 @@ object AnimationTimeline {
   }
   
   @scala.inline
-  implicit class AnimationTimelineOps[Self <: AnimationTimeline] (val x: Self) extends AnyVal {
+  implicit class AnimationTimelineMutableBuilder[Self <: AnimationTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAnimations(value: () => js.Array[Animation]): Self = StObject.set(x, "getAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnimations(value: () => js.Array[Animation]): Self = this.set("getAnimations", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPlay(value: KeyframeEffect => Animation): Self = this.set("play", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTimeNull: Self = this.set("currentTime", null)
+    def setPlay(value: KeyframeEffect => Animation): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
   }
 }

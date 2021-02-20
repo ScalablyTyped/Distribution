@@ -1,11 +1,12 @@
 package typings.jsuite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Iconfig extends js.Object {
+trait Iconfig extends StObject {
   
   var columns: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object Iconfig {
   }
   
   @scala.inline
-  implicit class IconfigOps[Self <: Iconfig] (val x: Self) extends AnyVal {
+  implicit class IconfigMutableBuilder[Self <: Iconfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFilterExpression(value: js.Any): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setFilterExpressionUndefined: Self = StObject.set(x, "filterExpression", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterExpression(value: js.Any): Self = this.set("filterExpression", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteFilterExpression: Self = this.set("filterExpression", js.undefined)
+    def setMaxUnitsUsage(value: Double): Self = StObject.set(x, "maxUnitsUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setMaxUnitsUsageUndefined: Self = StObject.set(x, "maxUnitsUsage", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setRecordType(value: String): Self = StObject.set(x, "recordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUnitsUsage(value: Double): Self = this.set("maxUnitsUsage", value.asInstanceOf[js.Any])
+    def setRecordTypeUndefined: Self = StObject.set(x, "recordType", js.undefined)
     
     @scala.inline
-    def deleteMaxUnitsUsage: Self = this.set("maxUnitsUsage", js.undefined)
+    def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordType(value: String): Self = this.set("recordType", value.asInstanceOf[js.Any])
+    def setSearchIdUndefined: Self = StObject.set(x, "searchId", js.undefined)
     
     @scala.inline
-    def deleteRecordType: Self = this.set("recordType", js.undefined)
+    def setSmartConvert(value: Boolean): Self = StObject.set(x, "smartConvert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchId(value: String): Self = this.set("searchId", value.asInstanceOf[js.Any])
+    def setSmartConvertUndefined: Self = StObject.set(x, "smartConvert", js.undefined)
     
     @scala.inline
-    def deleteSearchId: Self = this.set("searchId", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartConvert(value: Boolean): Self = this.set("smartConvert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmartConvert: Self = this.set("smartConvert", js.undefined)
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

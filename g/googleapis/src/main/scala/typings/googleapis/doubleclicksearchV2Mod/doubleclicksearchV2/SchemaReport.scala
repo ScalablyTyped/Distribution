@@ -1,6 +1,7 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
 import typings.googleapis.anon.ByteCount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * report files.
   */
 @js.native
-trait SchemaReport extends js.Object {
+trait SchemaReport extends StObject {
   
   /**
     * Asynchronous report only. Contains a list of generated report files once
@@ -75,78 +76,66 @@ object SchemaReport {
   }
   
   @scala.inline
-  implicit class SchemaReportOps[Self <: SchemaReport] (val x: Self) extends AnyVal {
+  implicit class SchemaReportMutableBuilder[Self <: SchemaReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: js.Array[ByteCount]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilesVarargs(value: ByteCount*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: ByteCount*): Self = this.set("files", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[ByteCount]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setIsReportReady(value: Boolean): Self = StObject.set(x, "isReportReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsReportReadyUndefined: Self = StObject.set(x, "isReportReady", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReportReady(value: Boolean): Self = this.set("isReportReady", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsReportReady: Self = this.set("isReportReady", js.undefined)
+    def setRequest(value: SchemaReportRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: SchemaReportRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRows(value: js.Array[SchemaReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setRowsVarargs(value: SchemaReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: SchemaReportRow*): Self = this.set("rows", js.Array(value :_*))
+    def setStatisticsCurrencyCode(value: String): Self = StObject.set(x, "statisticsCurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[SchemaReportRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setStatisticsCurrencyCodeUndefined: Self = StObject.set(x, "statisticsCurrencyCode", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setStatisticsTimeZone(value: String): Self = StObject.set(x, "statisticsTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticsCurrencyCode(value: String): Self = this.set("statisticsCurrencyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticsCurrencyCode: Self = this.set("statisticsCurrencyCode", js.undefined)
-    
-    @scala.inline
-    def setStatisticsTimeZone(value: String): Self = this.set("statisticsTimeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticsTimeZone: Self = this.set("statisticsTimeZone", js.undefined)
+    def setStatisticsTimeZoneUndefined: Self = StObject.set(x, "statisticsTimeZone", js.undefined)
   }
 }

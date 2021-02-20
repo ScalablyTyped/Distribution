@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogEntry extends js.Object {
+trait LogEntry extends StObject {
   
   /** Optional. Information about the HTTP request associated with this log entry, if applicable. */
   var httpRequest: js.UndefOr[HttpRequest] = js.native
@@ -118,132 +119,120 @@ object LogEntry {
   }
   
   @scala.inline
-  implicit class LogEntryOps[Self <: LogEntry] (val x: Self) extends AnyVal {
+  implicit class LogEntryMutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpRequest(value: HttpRequest): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertId(value: String): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequest(value: HttpRequest): Self = this.set("httpRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpRequest: Self = this.set("httpRequest", js.undefined)
-    
-    @scala.inline
-    def setInsertId(value: String): Self = this.set("insertId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertId: Self = this.set("insertId", js.undefined)
+    def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
     
     @scala.inline
     def setJsonPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry with TopLevel[js.Any]
-    ): Self = this.set("jsonPayload", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJsonPayload: Self = this.set("jsonPayload", js.undefined)
+    def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
+    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogName: Self = this.set("logName", js.undefined)
+    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
     @scala.inline
-    def setMetadata(value: MonitoredResourceMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: MonitoredResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setOperation(value: LogEntryOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setOperation(value: LogEntryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
     def setProtoPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry with TopLevel[js.Any]
-    ): Self = this.set("protoPayload", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtoPayload: Self = this.set("protoPayload", js.undefined)
+    def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)
     
     @scala.inline
-    def setReceiveTimestamp(value: String): Self = this.set("receiveTimestamp", value.asInstanceOf[js.Any])
+    def setReceiveTimestamp(value: String): Self = StObject.set(x, "receiveTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReceiveTimestamp: Self = this.set("receiveTimestamp", js.undefined)
+    def setReceiveTimestampUndefined: Self = StObject.set(x, "receiveTimestamp", js.undefined)
     
     @scala.inline
-    def setResource(value: MonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def setSourceLocation(value: LogEntrySourceLocation): Self = this.set("sourceLocation", value.asInstanceOf[js.Any])
+    def setSourceLocation(value: LogEntrySourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceLocation: Self = this.set("sourceLocation", js.undefined)
+    def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
     
     @scala.inline
-    def setSpanId(value: String): Self = this.set("spanId", value.asInstanceOf[js.Any])
+    def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpanId: Self = this.set("spanId", js.undefined)
+    def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
     @scala.inline
-    def setTextPayload(value: String): Self = this.set("textPayload", value.asInstanceOf[js.Any])
+    def setTextPayload(value: String): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextPayload: Self = this.set("textPayload", js.undefined)
+    def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def setTrace(value: String): Self = this.set("trace", value.asInstanceOf[js.Any])
+    def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
+    def setTraceSampled(value: Boolean): Self = StObject.set(x, "traceSampled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraceSampled(value: Boolean): Self = this.set("traceSampled", value.asInstanceOf[js.Any])
+    def setTraceSampledUndefined: Self = StObject.set(x, "traceSampled", js.undefined)
     
     @scala.inline
-    def deleteTraceSampled: Self = this.set("traceSampled", js.undefined)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

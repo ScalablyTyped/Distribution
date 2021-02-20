@@ -1,5 +1,6 @@
 package typings.rcFieldForm.interfaceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rcFieldForm.rcFieldFormStrings.hex
   - typings.rcFieldForm.rcFieldFormStrings.email
 */
-trait RuleType extends js.Object
+trait RuleType extends StObject
 object RuleType {
   
   @scala.inline

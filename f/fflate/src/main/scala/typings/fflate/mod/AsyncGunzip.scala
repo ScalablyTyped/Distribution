@@ -2,13 +2,14 @@ package typings.fflate.mod
 
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fflate", "AsyncGunzip")
 @js.native
-class AsyncGunzip protected () extends js.Object {
+class AsyncGunzip protected () extends StObject {
   /**
     * Creates an asynchronous GUNZIP stream
     * @param cb The callback to call whenever data is deflated

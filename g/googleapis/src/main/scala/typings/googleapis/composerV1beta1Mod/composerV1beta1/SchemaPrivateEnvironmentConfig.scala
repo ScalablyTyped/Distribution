@@ -1,5 +1,6 @@
 package typings.googleapis.composerV1beta1Mod.composerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * environment.
   */
 @js.native
-trait SchemaPrivateEnvironmentConfig extends js.Object {
+trait SchemaPrivateEnvironmentConfig extends StObject {
   
   /**
     * Optional. If `true`, a Private IP Cloud Composer environment is created.
@@ -32,30 +33,18 @@ object SchemaPrivateEnvironmentConfig {
   }
   
   @scala.inline
-  implicit class SchemaPrivateEnvironmentConfigOps[Self <: SchemaPrivateEnvironmentConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaPrivateEnvironmentConfigMutableBuilder[Self <: SchemaPrivateEnvironmentConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablePrivateEnvironment(value: Boolean): Self = StObject.set(x, "enablePrivateEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablePrivateEnvironmentUndefined: Self = StObject.set(x, "enablePrivateEnvironment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePrivateEnvironment(value: Boolean): Self = this.set("enablePrivateEnvironment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnablePrivateEnvironment: Self = this.set("enablePrivateEnvironment", js.undefined)
-    
-    @scala.inline
-    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = this.set("privateClusterConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateClusterConfig: Self = this.set("privateClusterConfig", js.undefined)
+    def setPrivateClusterConfigUndefined: Self = StObject.set(x, "privateClusterConfig", js.undefined)
   }
 }

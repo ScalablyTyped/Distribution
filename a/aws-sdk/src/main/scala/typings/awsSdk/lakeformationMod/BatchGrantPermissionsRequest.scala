@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGrantPermissionsRequest extends js.Object {
+trait BatchGrantPermissionsRequest extends StObject {
   
   /**
     * The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your AWS Lake Formation environment. 
@@ -26,30 +27,18 @@ object BatchGrantPermissionsRequest {
   }
   
   @scala.inline
-  implicit class BatchGrantPermissionsRequestOps[Self <: BatchGrantPermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGrantPermissionsRequestMutableBuilder[Self <: BatchGrantPermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: BatchPermissionsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntriesVarargs(value: BatchPermissionsRequestEntry*): Self = this.set("Entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: BatchPermissionsRequestEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    def setEntriesVarargs(value: BatchPermissionsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,15 +31,4 @@ class ^ protected () extends Board {
 }
 @JSImport("firmata", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  // TODO untested --- TWW
-  def decode(data: js.Array[Double]): js.Array[Double] = js.native
-  
-  // TODO untested --- TWW
-  def encode(data: js.Array[Double]): js.Array[Double] = js.native
-  
-  def isAcceptablePort(port: Port): Boolean = js.native
-  
-  def requestPort(callback: js.Function2[/* error */ js.Any, /* port */ Port, _]): Unit = js.native
-}
+object ^ extends StObject

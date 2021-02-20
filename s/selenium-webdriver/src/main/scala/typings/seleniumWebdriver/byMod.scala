@@ -3,16 +3,14 @@ package typings.seleniumWebdriver
 import typings.seleniumWebdriver.mod.Locator
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod._Locator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("selenium-webdriver/lib/by", JSImport.Namespace)
-@js.native
-object byMod extends js.Object {
+object byMod {
   
-  def checkedLocator(locator: Locator): By = js.native
-  
+  @JSImport("selenium-webdriver/lib/by", "By")
   @js.native
   class By protected () extends _Locator {
     /**
@@ -26,8 +24,7 @@ object byMod extends js.Object {
     var value: String = js.native
   }
   /* static members */
-  @js.native
-  object By extends js.Object {
+  object By {
     
     /**
       * Locates elements that have a specific class name.
@@ -37,6 +34,8 @@ object byMod extends js.Object {
       * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
       * @see http://www.w3.org/TR/CSS2/selector.html#class-html
       */
+    @JSImport("selenium-webdriver/lib/by", "By.className")
+    @js.native
     def className(name: String): By = js.native
     
     /**
@@ -46,6 +45,8 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       * @see http://www.w3.org/TR/CSS2/selector.html
       */
+    @JSImport("selenium-webdriver/lib/by", "By.css")
+    @js.native
     def css(selector: String): By = js.native
     
     /**
@@ -55,6 +56,8 @@ object byMod extends js.Object {
       * @param {string} id The ID to search for.
       * @return {!By} The new locator.
       */
+    @JSImport("selenium-webdriver/lib/by", "By.id")
+    @js.native
     def id(id: String): By = js.native
     
     /**
@@ -67,9 +70,11 @@ object byMod extends js.Object {
       * @return {function(!./WebDriver): !./Promise}
       *     A new JavaScript-based locator function.
       */
-    @JSName("js")
+    @JSImport("selenium-webdriver/lib/by", "By.js")
+    @js.native
     def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
-    @JSName("js")
+    @JSImport("selenium-webdriver/lib/by", "By.js")
+    @js.native
     def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
     
     /**
@@ -80,6 +85,8 @@ object byMod extends js.Object {
       * @param {string} text The link text to search for.
       * @return {!By} The new locator.
       */
+    @JSImport("selenium-webdriver/lib/by", "By.linkText")
+    @js.native
     def linkText(text: String): By = js.native
     
     /**
@@ -88,6 +95,8 @@ object byMod extends js.Object {
       * @param {string} name The name attribute to search for.
       * @return {!By} The new locator.
       */
+    @JSImport("selenium-webdriver/lib/by", "By.name")
+    @js.native
     def name(name: String): By = js.native
     
     /**
@@ -98,6 +107,8 @@ object byMod extends js.Object {
       * @param {string} text The substring to check for in a link's visible text.
       * @return {!By} The new locator.
       */
+    @JSImport("selenium-webdriver/lib/by", "By.partialLinkText")
+    @js.native
     def partialLinkText(text: String): By = js.native
     
     /**
@@ -107,6 +118,8 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       * @deprecated Use {@link By.css() By.css(tagName)} instead.
       */
+    @JSImport("selenium-webdriver/lib/by", "By.tagName")
+    @js.native
     def tagName(name: String): By = js.native
     
     /**
@@ -120,8 +133,14 @@ object byMod extends js.Object {
       * @return {!By} The new locator.
       * @see http://www.w3.org/TR/xpath/
       */
+    @JSImport("selenium-webdriver/lib/by", "By.xpath")
+    @js.native
     def xpath(xpath: String): By = js.native
   }
+  
+  @JSImport("selenium-webdriver/lib/by", "checkedLocator")
+  @js.native
+  def checkedLocator(locator: Locator): By = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.seleniumWebdriver.anon.ClassName
@@ -135,4 +154,61 @@ object byMod extends js.Object {
     - typings.seleniumWebdriver.anon.Xpath
   */
   trait ByHash extends _Locator
+  object ByHash {
+    
+    @scala.inline
+    def ClassName(className: String): typings.seleniumWebdriver.anon.ClassName = {
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.ClassName]
+    }
+    
+    @scala.inline
+    def Css(css: String): typings.seleniumWebdriver.anon.Css = {
+      val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.Css]
+    }
+    
+    @scala.inline
+    def Id(id: String): typings.seleniumWebdriver.anon.Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.Id]
+    }
+    
+    @scala.inline
+    def Js(js_ : String): typings.seleniumWebdriver.anon.Js = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.Js]
+    }
+    
+    @scala.inline
+    def LinkText(linkText: String): typings.seleniumWebdriver.anon.LinkText = {
+      val __obj = js.Dynamic.literal(linkText = linkText.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.LinkText]
+    }
+    
+    @scala.inline
+    def Name(name: String): typings.seleniumWebdriver.anon.Name = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.Name]
+    }
+    
+    @scala.inline
+    def PartialLinkText(partialLinkText: String): typings.seleniumWebdriver.anon.PartialLinkText = {
+      val __obj = js.Dynamic.literal(partialLinkText = partialLinkText.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.PartialLinkText]
+    }
+    
+    @scala.inline
+    def TagName(tagName: String): typings.seleniumWebdriver.anon.TagName = {
+      val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.TagName]
+    }
+    
+    @scala.inline
+    def Xpath(xpath: String): typings.seleniumWebdriver.anon.Xpath = {
+      val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.seleniumWebdriver.anon.Xpath]
+    }
+  }
 }

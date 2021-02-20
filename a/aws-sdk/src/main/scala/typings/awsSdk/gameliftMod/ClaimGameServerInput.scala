@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClaimGameServerInput extends js.Object {
+trait ClaimGameServerInput extends StObject {
   
   /**
     * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer. 
@@ -31,33 +32,21 @@ object ClaimGameServerInput {
   }
   
   @scala.inline
-  implicit class ClaimGameServerInputOps[Self <: ClaimGameServerInput] (val x: Self) extends AnyVal {
+  implicit class ClaimGameServerInputMutableBuilder[Self <: ClaimGameServerInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerData(value: GameServerData): Self = this.set("GameServerData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameServerData: Self = this.set("GameServerData", js.undefined)
-    
-    @scala.inline
-    def setGameServerId(value: GameServerId): Self = this.set("GameServerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameServerId: Self = this.set("GameServerId", js.undefined)
+    def setGameServerIdUndefined: Self = StObject.set(x, "GameServerId", js.undefined)
   }
 }

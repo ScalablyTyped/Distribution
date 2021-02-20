@@ -4,6 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.text.XFlatParagraph
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0.1
   */
 @js.native
-trait ProofreadingResult extends js.Object {
+trait ProofreadingResult extends StObject {
   
   var aDocumentIdentifier: String = js.native
   
@@ -55,48 +56,36 @@ object ProofreadingResult {
   }
   
   @scala.inline
-  implicit class ProofreadingResultOps[Self <: ProofreadingResult] (val x: Self) extends AnyVal {
+  implicit class ProofreadingResultMutableBuilder[Self <: ProofreadingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADocumentIdentifier(value: String): Self = StObject.set(x, "aDocumentIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAErrors(value: SafeArray[SingleProofreadingError]): Self = StObject.set(x, "aErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setALocale(value: Locale): Self = StObject.set(x, "aLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADocumentIdentifier(value: String): Self = this.set("aDocumentIdentifier", value.asInstanceOf[js.Any])
+    def setAProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "aProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAErrors(value: SafeArray[SingleProofreadingError]): Self = this.set("aErrors", value.asInstanceOf[js.Any])
+    def setAText(value: String): Self = StObject.set(x, "aText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALocale(value: Locale): Self = this.set("aLocale", value.asInstanceOf[js.Any])
+    def setNBehindEndOfSentencePosition(value: Double): Self = StObject.set(x, "nBehindEndOfSentencePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAProperties(value: SafeArray[PropertyValue]): Self = this.set("aProperties", value.asInstanceOf[js.Any])
+    def setNStartOfNextSentencePosition(value: Double): Self = StObject.set(x, "nStartOfNextSentencePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAText(value: String): Self = this.set("aText", value.asInstanceOf[js.Any])
+    def setNStartOfSentencePosition(value: Double): Self = StObject.set(x, "nStartOfSentencePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNBehindEndOfSentencePosition(value: Double): Self = this.set("nBehindEndOfSentencePosition", value.asInstanceOf[js.Any])
+    def setXFlatParagraph(value: XFlatParagraph): Self = StObject.set(x, "xFlatParagraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNStartOfNextSentencePosition(value: Double): Self = this.set("nStartOfNextSentencePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNStartOfSentencePosition(value: Double): Self = this.set("nStartOfSentencePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXFlatParagraph(value: XFlatParagraph): Self = this.set("xFlatParagraph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXProofreader(value: XProofreader): Self = this.set("xProofreader", value.asInstanceOf[js.Any])
+    def setXProofreader(value: XProofreader): Self = StObject.set(x, "xProofreader", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettlementTransaction extends js.Object {
+trait SettlementTransaction extends StObject {
   
   /** The amount for the transaction. */
   var amount: js.UndefOr[SettlementTransactionAmount] = js.native
@@ -28,42 +29,30 @@ object SettlementTransaction {
   }
   
   @scala.inline
-  implicit class SettlementTransactionOps[Self <: SettlementTransaction] (val x: Self) extends AnyVal {
+  implicit class SettlementTransactionMutableBuilder[Self <: SettlementTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: SettlementTransactionAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifiers(value: SettlementTransactionIdentifiers): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: SettlementTransactionAmount): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifiers(value: SettlementTransactionIdentifiers): Self = this.set("identifiers", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIdentifiers: Self = this.set("identifiers", js.undefined)
+    def setTransaction(value: SettlementTransactionTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: SettlementTransactionTransaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

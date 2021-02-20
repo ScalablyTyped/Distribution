@@ -10,14 +10,14 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/slider/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/slider/foundation", "MDCSliderFoundation")
   @js.native
   class MDCSliderFoundation () extends MDCFoundation[MDCSliderAdapter] {
     def this(adapter: PartialMDCSliderAdapter) = this()
@@ -121,11 +121,16 @@ object foundationMod extends js.Object {
     def setValueStart(valueStart: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCSliderFoundation extends js.Object {
+  object MDCSliderFoundation {
     
-    var SUPPORTS_POINTER_EVENTS: Boolean = js.native
+    @JSImport("@material/slider/foundation", "MDCSliderFoundation")
+    @js.native
+    val ^ : js.Any = js.native
     
-    def defaultAdapter: MDCSliderAdapter = js.native
+    @JSImport("@material/slider/foundation", "MDCSliderFoundation.SUPPORTS_POINTER_EVENTS")
+    @js.native
+    def SUPPORTS_POINTER_EVENTS: Boolean = js.native
+    @scala.inline
+    def SUPPORTS_POINTER_EVENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTS_POINTER_EVENTS")(x.asInstanceOf[js.Any])
   }
 }

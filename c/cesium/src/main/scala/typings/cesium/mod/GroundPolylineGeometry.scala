@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Loop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +19,19 @@ class GroundPolylineGeometry protected () extends Packable {
   
   var width: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "GroundPolylineGeometry")
-@js.native
-object GroundPolylineGeometry extends js.Object {
+object GroundPolylineGeometry {
   
+  /* static member */
+  @JSImport("cesium", "GroundPolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double]): GroundPolylineGeometry = js.native
+  @JSImport("cesium", "GroundPolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: GroundPolylineGeometry): GroundPolylineGeometry = js.native
+  @JSImport("cesium", "GroundPolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double): GroundPolylineGeometry = js.native
+  @JSImport("cesium", "GroundPolylineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: GroundPolylineGeometry): GroundPolylineGeometry = js.native
 }

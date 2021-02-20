@@ -2,6 +2,7 @@ package typings.grammarkdown.mod
 
 import typings.grammarkdown.tokensMod.SyntaxKind.CloseBraceToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBraceToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

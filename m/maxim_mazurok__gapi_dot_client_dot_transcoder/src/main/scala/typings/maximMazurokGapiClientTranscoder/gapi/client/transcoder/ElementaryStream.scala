@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElementaryStream extends js.Object {
+trait ElementaryStream extends StObject {
   
   /** Encoding of an audio stream. */
   var audioStream: js.UndefOr[AudioStream] = js.native
@@ -28,42 +29,30 @@ object ElementaryStream {
   }
   
   @scala.inline
-  implicit class ElementaryStreamOps[Self <: ElementaryStream] (val x: Self) extends AnyVal {
+  implicit class ElementaryStreamMutableBuilder[Self <: ElementaryStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioStream(value: AudioStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioStream(value: AudioStream): Self = this.set("audioStream", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteAudioStream: Self = this.set("audioStream", js.undefined)
+    def setTextStream(value: TextStream): Self = StObject.set(x, "textStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setTextStreamUndefined: Self = StObject.set(x, "textStream", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setVideoStream(value: VideoStream): Self = StObject.set(x, "videoStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStream(value: TextStream): Self = this.set("textStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStream: Self = this.set("textStream", js.undefined)
-    
-    @scala.inline
-    def setVideoStream(value: VideoStream): Self = this.set("videoStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoStream: Self = this.set("videoStream", js.undefined)
+    def setVideoStreamUndefined: Self = StObject.set(x, "videoStream", js.undefined)
   }
 }

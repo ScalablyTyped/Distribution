@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RateBasedRule extends js.Object {
+trait RateBasedRule extends StObject {
   
   /**
     * The Predicates object contains one Predicate element for each ByteMatchSet, IPSet, or SqlInjectionMatchSet object that you want to include in a RateBasedRule.
@@ -46,45 +47,33 @@ object RateBasedRule {
   }
   
   @scala.inline
-  implicit class RateBasedRuleOps[Self <: RateBasedRule] (val x: Self) extends AnyVal {
+  implicit class RateBasedRuleMutableBuilder[Self <: RateBasedRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchPredicates(value: Predicates): Self = StObject.set(x, "MatchPredicates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchPredicatesVarargs(value: Predicate*): Self = StObject.set(x, "MatchPredicates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchPredicatesVarargs(value: Predicate*): Self = this.set("MatchPredicates", js.Array(value :_*))
+    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
     @scala.inline
-    def setMatchPredicates(value: Predicates): Self = this.set("MatchPredicates", value.asInstanceOf[js.Any])
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateKey(value: RateKey): Self = this.set("RateKey", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setRateLimit(value: RateLimit): Self = this.set("RateLimit", value.asInstanceOf[js.Any])
+    def setRateKey(value: RateKey): Self = StObject.set(x, "RateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleId(value: ResourceId): Self = this.set("RuleId", value.asInstanceOf[js.Any])
+    def setRateLimit(value: RateLimit): Self = StObject.set(x, "RateLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricName: Self = this.set("MetricName", js.undefined)
-    
-    @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

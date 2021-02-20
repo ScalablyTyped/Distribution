@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,36 +42,24 @@ object AnimationStateAdapter {
   }
   
   @scala.inline
-  implicit class AnimationStateAdapterOps[Self <: AnimationStateAdapter] (val x: Self) extends AnyVal {
+  implicit class AnimationStateAdapterMutableBuilder[Self <: AnimationStateAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispose(value: TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: TrackEntry => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setEvent(value: (TrackEntry, Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDispose(value: TrackEntry => Unit): Self = this.set("dispose", js.Any.fromFunction1(value))
+    def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnd(value: TrackEntry => Unit): Self = this.set("end", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEvent(value: (TrackEntry, Event) => Unit): Self = this.set("event", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInterrupt(value: TrackEntry => Unit): Self = this.set("interrupt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStart(value: TrackEntry => Unit): Self = this.set("start", js.Any.fromFunction1(value))
+    def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

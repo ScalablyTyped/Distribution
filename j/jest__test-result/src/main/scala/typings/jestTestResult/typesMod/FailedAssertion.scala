@@ -1,11 +1,12 @@
 package typings.jestTestResult.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedAssertion extends js.Object {
+trait FailedAssertion extends StObject {
   
   var actual: js.UndefOr[js.Any] = js.native
   
@@ -34,72 +35,60 @@ object FailedAssertion {
   }
   
   @scala.inline
-  implicit class FailedAssertionOps[Self <: FailedAssertion] (val x: Self) extends AnyVal {
+  implicit class FailedAssertionMutableBuilder[Self <: FailedAssertion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActual(value: js.Any): Self = this.set("actual", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteActual: Self = this.set("actual", js.undefined)
+    def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: js.Any): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpected(value: js.Any): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
     
     @scala.inline
-    def deleteExpected: Self = this.set("expected", js.undefined)
+    def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNot(value: Boolean): Self = this.set("isNot", value.asInstanceOf[js.Any])
+    def setMatcherNameUndefined: Self = StObject.set(x, "matcherName", js.undefined)
     
     @scala.inline
-    def deleteIsNot: Self = this.set("isNot", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatcherName(value: String): Self = this.set("matcherName", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMatcherName: Self = this.set("matcherName", js.undefined)
+    def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPass(value: Boolean): Self = this.set("pass", value.asInstanceOf[js.Any])
+    def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
     
     @scala.inline
-    def deletePass: Self = this.set("pass", js.undefined)
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassed(value: Boolean): Self = this.set("passed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassed: Self = this.set("passed", js.undefined)
-    
-    @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

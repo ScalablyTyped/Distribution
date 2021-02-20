@@ -23,6 +23,7 @@ import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,16 +73,20 @@ class DateTimeType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MDateTimeType: MicroflowParameterBase = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType")
-@js.native
-object DateTimeType extends js.Object {
+object DateTimeType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.create")
+  @js.native
   def create(model: IModel): DateTimeType = js.native
   
   /**
@@ -92,6 +97,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInAppServiceActionParameterUnderParameterType")
+  @js.native
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): DateTimeType = js.native
   
   /**
@@ -102,6 +110,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInAppServiceActionUnderActionReturnType")
+  @js.native
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): DateTimeType = js.native
   
   /**
@@ -112,6 +123,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInConstantUnderType")
+  @js.native
   def createInConstantUnderType(container: Constant): DateTimeType = js.native
   
   /**
@@ -122,6 +136,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInCreateVariableActionUnderVariableType")
+  @js.native
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): DateTimeType = js.native
   
   /**
@@ -132,6 +149,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInDataSetColumnUnderColumnType")
+  @js.native
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): DateTimeType = js.native
   
   /**
@@ -142,6 +162,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInDataSetParameterUnderParameterType")
+  @js.native
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): DateTimeType = js.native
   
   /**
@@ -152,6 +175,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInDocumentTemplateParameterUnderParameterType")
+  @js.native
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): DateTimeType = js.native
   
   /**
@@ -162,6 +188,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.16.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInImportMappingUnderParameterType")
+  @js.native
   def createInImportMappingUnderParameterType(container: ImportMapping): DateTimeType = js.native
   
   /**
@@ -172,6 +201,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInMicroflowBaseUnderMicroflowReturnType")
+  @js.native
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): DateTimeType = js.native
   
   /**
@@ -182,6 +214,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInMicroflowParameterBaseUnderParameterType")
+  @js.native
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): DateTimeType = js.native
   
   /**
@@ -192,6 +227,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInMicroflowParameterObjectUnderVariableType")
+  @js.native
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): DateTimeType = js.native
   
   /**
@@ -202,6 +240,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInPublishedOperationUnderOperationReturnType")
+  @js.native
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): DateTimeType = js.native
   
   /**
@@ -212,6 +253,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInPublishedParameterUnderParameterType")
+  @js.native
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): DateTimeType = js.native
   
   /**
@@ -222,6 +266,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.17.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInRestOperationParameterUnderType")
+  @js.native
   def createInRestOperationParameterUnderType(container: RestOperationParameter): DateTimeType = js.native
   
   /**
@@ -232,6 +279,9 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInResultHandlingUnderVariableType")
+  @js.native
   def createInResultHandlingUnderVariableType(container: ResultHandling): DateTimeType = js.native
   
   /**
@@ -242,9 +292,22 @@ object DateTimeType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.createInValueMappingElementUnderType")
+  @js.native
   def createInValueMappingElementUnderType(container: ValueMappingElement): DateTimeType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamespacedDebugInput extends js.Object {
+trait NamespacedDebugInput extends StObject {
   
   /** Set of experiment names to be absolutely forced. These experiments will be forced without evaluating the conditions. */
   var absolutelyForcedExpNames: js.UndefOr[js.Array[String]] = js.native
@@ -88,137 +89,125 @@ object NamespacedDebugInput {
   }
   
   @scala.inline
-  implicit class NamespacedDebugInputOps[Self <: NamespacedDebugInput] (val x: Self) extends AnyVal {
+  implicit class NamespacedDebugInputMutableBuilder[Self <: NamespacedDebugInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutelyForcedExpNames(value: js.Array[String]): Self = StObject.set(x, "absolutelyForcedExpNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutelyForcedExpNamesUndefined: Self = StObject.set(x, "absolutelyForcedExpNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbsolutelyForcedExpNamesVarargs(value: String*): Self = StObject.set(x, "absolutelyForcedExpNames", js.Array(value :_*))
     
     @scala.inline
-    def setAbsolutelyForcedExpNamesVarargs(value: String*): Self = this.set("absolutelyForcedExpNames", js.Array(value :_*))
+    def setAbsolutelyForcedExpTags(value: js.Array[String]): Self = StObject.set(x, "absolutelyForcedExpTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutelyForcedExpNames(value: js.Array[String]): Self = this.set("absolutelyForcedExpNames", value.asInstanceOf[js.Any])
+    def setAbsolutelyForcedExpTagsUndefined: Self = StObject.set(x, "absolutelyForcedExpTags", js.undefined)
     
     @scala.inline
-    def deleteAbsolutelyForcedExpNames: Self = this.set("absolutelyForcedExpNames", js.undefined)
+    def setAbsolutelyForcedExpTagsVarargs(value: String*): Self = StObject.set(x, "absolutelyForcedExpTags", js.Array(value :_*))
     
     @scala.inline
-    def setAbsolutelyForcedExpTagsVarargs(value: String*): Self = this.set("absolutelyForcedExpTags", js.Array(value :_*))
+    def setAbsolutelyForcedExps(value: js.Array[Double]): Self = StObject.set(x, "absolutelyForcedExps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutelyForcedExpTags(value: js.Array[String]): Self = this.set("absolutelyForcedExpTags", value.asInstanceOf[js.Any])
+    def setAbsolutelyForcedExpsUndefined: Self = StObject.set(x, "absolutelyForcedExps", js.undefined)
     
     @scala.inline
-    def deleteAbsolutelyForcedExpTags: Self = this.set("absolutelyForcedExpTags", js.undefined)
+    def setAbsolutelyForcedExpsVarargs(value: Double*): Self = StObject.set(x, "absolutelyForcedExps", js.Array(value :_*))
     
     @scala.inline
-    def setAbsolutelyForcedExpsVarargs(value: Double*): Self = this.set("absolutelyForcedExps", js.Array(value :_*))
+    def setConditionallyForcedExpNames(value: js.Array[String]): Self = StObject.set(x, "conditionallyForcedExpNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutelyForcedExps(value: js.Array[Double]): Self = this.set("absolutelyForcedExps", value.asInstanceOf[js.Any])
+    def setConditionallyForcedExpNamesUndefined: Self = StObject.set(x, "conditionallyForcedExpNames", js.undefined)
     
     @scala.inline
-    def deleteAbsolutelyForcedExps: Self = this.set("absolutelyForcedExps", js.undefined)
+    def setConditionallyForcedExpNamesVarargs(value: String*): Self = StObject.set(x, "conditionallyForcedExpNames", js.Array(value :_*))
     
     @scala.inline
-    def setConditionallyForcedExpNamesVarargs(value: String*): Self = this.set("conditionallyForcedExpNames", js.Array(value :_*))
+    def setConditionallyForcedExpTags(value: js.Array[String]): Self = StObject.set(x, "conditionallyForcedExpTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionallyForcedExpNames(value: js.Array[String]): Self = this.set("conditionallyForcedExpNames", value.asInstanceOf[js.Any])
+    def setConditionallyForcedExpTagsUndefined: Self = StObject.set(x, "conditionallyForcedExpTags", js.undefined)
     
     @scala.inline
-    def deleteConditionallyForcedExpNames: Self = this.set("conditionallyForcedExpNames", js.undefined)
+    def setConditionallyForcedExpTagsVarargs(value: String*): Self = StObject.set(x, "conditionallyForcedExpTags", js.Array(value :_*))
     
     @scala.inline
-    def setConditionallyForcedExpTagsVarargs(value: String*): Self = this.set("conditionallyForcedExpTags", js.Array(value :_*))
+    def setConditionallyForcedExps(value: js.Array[Double]): Self = StObject.set(x, "conditionallyForcedExps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionallyForcedExpTags(value: js.Array[String]): Self = this.set("conditionallyForcedExpTags", value.asInstanceOf[js.Any])
+    def setConditionallyForcedExpsUndefined: Self = StObject.set(x, "conditionallyForcedExps", js.undefined)
     
     @scala.inline
-    def deleteConditionallyForcedExpTags: Self = this.set("conditionallyForcedExpTags", js.undefined)
+    def setConditionallyForcedExpsVarargs(value: Double*): Self = StObject.set(x, "conditionallyForcedExps", js.Array(value :_*))
     
     @scala.inline
-    def setConditionallyForcedExpsVarargs(value: Double*): Self = this.set("conditionallyForcedExps", js.Array(value :_*))
+    def setDisableAutomaticEnrollmentSelection(value: Boolean): Self = StObject.set(x, "disableAutomaticEnrollmentSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionallyForcedExps(value: js.Array[Double]): Self = this.set("conditionallyForcedExps", value.asInstanceOf[js.Any])
+    def setDisableAutomaticEnrollmentSelectionUndefined: Self = StObject.set(x, "disableAutomaticEnrollmentSelection", js.undefined)
     
     @scala.inline
-    def deleteConditionallyForcedExps: Self = this.set("conditionallyForcedExps", js.undefined)
+    def setDisableExpNames(value: js.Array[String]): Self = StObject.set(x, "disableExpNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAutomaticEnrollmentSelection(value: Boolean): Self = this.set("disableAutomaticEnrollmentSelection", value.asInstanceOf[js.Any])
+    def setDisableExpNamesUndefined: Self = StObject.set(x, "disableExpNames", js.undefined)
     
     @scala.inline
-    def deleteDisableAutomaticEnrollmentSelection: Self = this.set("disableAutomaticEnrollmentSelection", js.undefined)
+    def setDisableExpNamesVarargs(value: String*): Self = StObject.set(x, "disableExpNames", js.Array(value :_*))
     
     @scala.inline
-    def setDisableExpNamesVarargs(value: String*): Self = this.set("disableExpNames", js.Array(value :_*))
+    def setDisableExpTags(value: js.Array[String]): Self = StObject.set(x, "disableExpTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExpNames(value: js.Array[String]): Self = this.set("disableExpNames", value.asInstanceOf[js.Any])
+    def setDisableExpTagsUndefined: Self = StObject.set(x, "disableExpTags", js.undefined)
     
     @scala.inline
-    def deleteDisableExpNames: Self = this.set("disableExpNames", js.undefined)
+    def setDisableExpTagsVarargs(value: String*): Self = StObject.set(x, "disableExpTags", js.Array(value :_*))
     
     @scala.inline
-    def setDisableExpTagsVarargs(value: String*): Self = this.set("disableExpTags", js.Array(value :_*))
+    def setDisableExps(value: js.Array[Double]): Self = StObject.set(x, "disableExps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExpTags(value: js.Array[String]): Self = this.set("disableExpTags", value.asInstanceOf[js.Any])
+    def setDisableExpsUndefined: Self = StObject.set(x, "disableExps", js.undefined)
     
     @scala.inline
-    def deleteDisableExpTags: Self = this.set("disableExpTags", js.undefined)
+    def setDisableExpsVarargs(value: Double*): Self = StObject.set(x, "disableExps", js.Array(value :_*))
     
     @scala.inline
-    def setDisableExpsVarargs(value: Double*): Self = this.set("disableExps", js.Array(value :_*))
+    def setDisableManualEnrollmentSelection(value: Boolean): Self = StObject.set(x, "disableManualEnrollmentSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExps(value: js.Array[Double]): Self = this.set("disableExps", value.asInstanceOf[js.Any])
+    def setDisableManualEnrollmentSelectionUndefined: Self = StObject.set(x, "disableManualEnrollmentSelection", js.undefined)
     
     @scala.inline
-    def deleteDisableExps: Self = this.set("disableExps", js.undefined)
+    def setDisableOrganicSelection(value: Boolean): Self = StObject.set(x, "disableOrganicSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableManualEnrollmentSelection(value: Boolean): Self = this.set("disableManualEnrollmentSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableManualEnrollmentSelection: Self = this.set("disableManualEnrollmentSelection", js.undefined)
-    
-    @scala.inline
-    def setDisableOrganicSelection(value: Boolean): Self = this.set("disableOrganicSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableOrganicSelection: Self = this.set("disableOrganicSelection", js.undefined)
+    def setDisableOrganicSelectionUndefined: Self = StObject.set(x, "disableOrganicSelection", js.undefined)
     
     @scala.inline
     def setForcedFlags(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput with TopLevel[js.Any]
-    ): Self = this.set("forcedFlags", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "forcedFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForcedFlags: Self = this.set("forcedFlags", js.undefined)
+    def setForcedFlagsUndefined: Self = StObject.set(x, "forcedFlags", js.undefined)
     
     @scala.inline
     def setForcedRollouts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: boolean}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.NamespacedDebugInput with TopLevel[js.Any]
-    ): Self = this.set("forcedRollouts", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "forcedRollouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForcedRollouts: Self = this.set("forcedRollouts", js.undefined)
+    def setForcedRolloutsUndefined: Self = StObject.set(x, "forcedRollouts", js.undefined)
   }
 }

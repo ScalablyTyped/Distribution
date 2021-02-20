@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configuration extends js.Object {
+trait Configuration extends StObject {
   
   /**
     * The classification within a configuration.
@@ -31,39 +32,27 @@ object Configuration {
   }
   
   @scala.inline
-  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassification(value: String): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassificationUndefined: Self = StObject.set(x, "Classification", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassification(value: String): Self = this.set("Classification", value.asInstanceOf[js.Any])
+    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
     @scala.inline
-    def deleteClassification: Self = this.set("Classification", js.undefined)
+    def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    def setProperties(value: StringMap): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: StringMap): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("Properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutOrganizationConfigRuleResponse extends js.Object {
+trait PutOrganizationConfigRuleResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an organization config rule.
@@ -21,24 +22,12 @@ object PutOrganizationConfigRuleResponse {
   }
   
   @scala.inline
-  implicit class PutOrganizationConfigRuleResponseOps[Self <: PutOrganizationConfigRuleResponse] (val x: Self) extends AnyVal {
+  implicit class PutOrganizationConfigRuleResponseMutableBuilder[Self <: PutOrganizationConfigRuleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = this.set("OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationConfigRuleArn: Self = this.set("OrganizationConfigRuleArn", js.undefined)
+    def setOrganizationConfigRuleArnUndefined: Self = StObject.set(x, "OrganizationConfigRuleArn", js.undefined)
   }
 }

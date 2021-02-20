@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,30 +115,18 @@ object XDocumentRepository {
   }
   
   @scala.inline
-  implicit class XDocumentRepositoryOps[Self <: XDocumentRepository] (val x: Self) extends AnyVal {
+  implicit class XDocumentRepositoryMutableBuilder[Self <: XDocumentRepository] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetStatementRDFa(value: XMetadatable => Pair[SafeArray[Statement], Boolean]): Self = StObject.set(x, "getStatementRDFa", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetStatementsRDFa(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatementsRDFa", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveStatementRDFa(value: XMetadatable => Unit): Self = StObject.set(x, "removeStatementRDFa", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStatementRDFa(value: XMetadatable => Pair[SafeArray[Statement], Boolean]): Self = this.set("getStatementRDFa", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStatementsRDFa(value: (XResource, XURI, XNode) => XEnumeration): Self = this.set("getStatementsRDFa", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoveStatementRDFa(value: XMetadatable => Unit): Self = this.set("removeStatementRDFa", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStatementRDFa(value: (XResource, SeqEquiv[XURI], XMetadatable, String, XURI) => Unit): Self = this.set("setStatementRDFa", js.Any.fromFunction5(value))
+    def setSetStatementRDFa(value: (XResource, SeqEquiv[XURI], XMetadatable, String, XURI) => Unit): Self = StObject.set(x, "setStatementRDFa", js.Any.fromFunction5(value))
   }
 }

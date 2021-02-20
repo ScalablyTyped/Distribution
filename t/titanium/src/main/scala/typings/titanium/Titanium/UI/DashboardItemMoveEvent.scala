@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +30,15 @@ object DashboardItemMoveEvent {
   }
   
   @scala.inline
-  implicit class DashboardItemMoveEventOps[Self <: DashboardItemMoveEvent] (val x: Self) extends AnyVal {
+  implicit class DashboardItemMoveEventMutableBuilder[Self <: DashboardItemMoveEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: DashboardItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[DashboardItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItem(value: DashboardItem): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: DashboardItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[DashboardItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: DashboardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

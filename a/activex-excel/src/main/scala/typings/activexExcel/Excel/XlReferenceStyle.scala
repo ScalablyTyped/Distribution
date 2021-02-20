@@ -2,6 +2,7 @@ package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelNumbers.`-4150`
 import typings.activexExcel.activexExcelNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`1`
   - typings.activexExcel.activexExcelNumbers.`-4150`
 */
-trait XlReferenceStyle extends js.Object
+trait XlReferenceStyle extends StObject
 object XlReferenceStyle {
   
   @scala.inline

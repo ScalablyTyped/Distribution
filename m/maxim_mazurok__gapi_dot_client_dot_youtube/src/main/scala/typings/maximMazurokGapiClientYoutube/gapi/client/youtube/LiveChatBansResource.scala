@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.Alt
 import typings.maximMazurokGapiClientYoutube.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientYoutube.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveChatBansResource extends js.Object {
+trait LiveChatBansResource extends StObject {
   
   /** Deletes a chat ban. */
   def delete(): Request[Unit] = js.native

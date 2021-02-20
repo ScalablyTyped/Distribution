@@ -1,11 +1,12 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadonlyMap[K, V] extends js.Object {
+trait ReadonlyMap[K, V] extends StObject {
   
   /**
     * Returns an iterable of key, value pairs for every entry in the map.

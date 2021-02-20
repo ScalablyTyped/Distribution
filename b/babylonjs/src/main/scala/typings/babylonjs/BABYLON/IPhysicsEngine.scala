@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPhysicsEngine extends js.Object {
+trait IPhysicsEngine extends StObject {
   
   /**
     * Called by the scene. No need to call it.
@@ -156,72 +157,60 @@ object IPhysicsEngine {
   }
   
   @scala.inline
-  implicit class IPhysicsEngineOps[Self <: IPhysicsEngine] (val x: Self) extends AnyVal {
+  implicit class IPhysicsEngineMutableBuilder[Self <: IPhysicsEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "addImpostor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = StObject.set(x, "addJoint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_step(value: Double => Unit): Self = this.set("_step", js.Any.fromFunction1(value))
+    def setGetImpostorForPhysicsObject(value: IPhysicsEnabledObject => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorForPhysicsObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddImpostor(value: PhysicsImpostor => Unit): Self = this.set("addImpostor", js.Any.fromFunction1(value))
+    def setGetImpostorWithPhysicsBody(value: js.Any => Nullable[PhysicsImpostor]): Self = StObject.set(x, "getImpostorWithPhysicsBody", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = this.set("addJoint", js.Any.fromFunction3(value))
+    def setGetImpostors(value: () => js.Array[PhysicsImpostor]): Self = StObject.set(x, "getImpostors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setGetPhysicsPlugin(value: () => IPhysicsEnginePlugin): Self = StObject.set(x, "getPhysicsPlugin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImpostorForPhysicsObject(value: IPhysicsEnabledObject => Nullable[PhysicsImpostor]): Self = this.set("getImpostorForPhysicsObject", js.Any.fromFunction1(value))
+    def setGetPhysicsPluginName(value: () => String): Self = StObject.set(x, "getPhysicsPluginName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImpostorWithPhysicsBody(value: js.Any => Nullable[PhysicsImpostor]): Self = this.set("getImpostorWithPhysicsBody", js.Any.fromFunction1(value))
+    def setGetSubTimeStep(value: () => Double): Self = StObject.set(x, "getSubTimeStep", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetImpostors(value: () => js.Array[PhysicsImpostor]): Self = this.set("getImpostors", js.Any.fromFunction0(value))
+    def setGetTimeStep(value: () => Double): Self = StObject.set(x, "getTimeStep", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPhysicsPlugin(value: () => IPhysicsEnginePlugin): Self = this.set("getPhysicsPlugin", js.Any.fromFunction0(value))
+    def setGravity(value: Vector3): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPhysicsPluginName(value: () => String): Self = this.set("getPhysicsPluginName", js.Any.fromFunction0(value))
+    def setRaycast(value: (Vector3, Vector3) => PhysicsRaycastResult): Self = StObject.set(x, "raycast", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSubTimeStep(value: () => Double): Self = this.set("getSubTimeStep", js.Any.fromFunction0(value))
+    def setRemoveImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "removeImpostor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTimeStep(value: () => Double): Self = this.set("getTimeStep", js.Any.fromFunction0(value))
+    def setRemoveJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = StObject.set(x, "removeJoint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGravity(value: Vector3): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    def setSetGravity(value: Vector3 => Unit): Self = StObject.set(x, "setGravity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRaycast(value: (Vector3, Vector3) => PhysicsRaycastResult): Self = this.set("raycast", js.Any.fromFunction2(value))
+    def setSetSubTimeStep(value: Double => Unit): Self = StObject.set(x, "setSubTimeStep", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveImpostor(value: PhysicsImpostor => Unit): Self = this.set("removeImpostor", js.Any.fromFunction1(value))
+    def setSetTimeStep(value: Double => Unit): Self = StObject.set(x, "setTimeStep", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveJoint(value: (PhysicsImpostor, PhysicsImpostor, PhysicsJoint) => Unit): Self = this.set("removeJoint", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetGravity(value: Vector3 => Unit): Self = this.set("setGravity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubTimeStep(value: Double => Unit): Self = this.set("setSubTimeStep", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTimeStep(value: Double => Unit): Self = this.set("setTimeStep", js.Any.fromFunction1(value))
+    def set_step(value: Double => Unit): Self = StObject.set(x, "_step", js.Any.fromFunction1(value))
   }
 }

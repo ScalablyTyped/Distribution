@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMMatrix2DInit extends js.Object {
+trait DOMMatrix2DInit extends StObject {
   
   var a: js.UndefOr[Double] = js.native
   
@@ -40,90 +41,78 @@ object DOMMatrix2DInit {
   }
   
   @scala.inline
-  implicit class DOMMatrix2DInitOps[Self <: DOMMatrix2DInit] (val x: Self) extends AnyVal {
+  implicit class DOMMatrix2DInitMutableBuilder[Self <: DOMMatrix2DInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
     
     @scala.inline
-    def deleteA: Self = this.set("a", js.undefined)
+    def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
     @scala.inline
-    def deleteB: Self = this.set("b", js.undefined)
+    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: Double): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def deleteC: Self = this.set("c", js.undefined)
+    def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: Double): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: Double): Self = this.set("e", value.asInstanceOf[js.Any])
+    def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
     @scala.inline
-    def deleteE: Self = this.set("e", js.undefined)
+    def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF(value: Double): Self = this.set("f", value.asInstanceOf[js.Any])
+    def setM11Undefined: Self = StObject.set(x, "m11", js.undefined)
     
     @scala.inline
-    def deleteF: Self = this.set("f", js.undefined)
+    def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM11(value: Double): Self = this.set("m11", value.asInstanceOf[js.Any])
+    def setM12Undefined: Self = StObject.set(x, "m12", js.undefined)
     
     @scala.inline
-    def deleteM11: Self = this.set("m11", js.undefined)
+    def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM12(value: Double): Self = this.set("m12", value.asInstanceOf[js.Any])
+    def setM21Undefined: Self = StObject.set(x, "m21", js.undefined)
     
     @scala.inline
-    def deleteM12: Self = this.set("m12", js.undefined)
+    def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM21(value: Double): Self = this.set("m21", value.asInstanceOf[js.Any])
+    def setM22Undefined: Self = StObject.set(x, "m22", js.undefined)
     
     @scala.inline
-    def deleteM21: Self = this.set("m21", js.undefined)
+    def setM41(value: Double): Self = StObject.set(x, "m41", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM22(value: Double): Self = this.set("m22", value.asInstanceOf[js.Any])
+    def setM41Undefined: Self = StObject.set(x, "m41", js.undefined)
     
     @scala.inline
-    def deleteM22: Self = this.set("m22", js.undefined)
+    def setM42(value: Double): Self = StObject.set(x, "m42", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM41(value: Double): Self = this.set("m41", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteM41: Self = this.set("m41", js.undefined)
-    
-    @scala.inline
-    def setM42(value: Double): Self = this.set("m42", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteM42: Self = this.set("m42", js.undefined)
+    def setM42Undefined: Self = StObject.set(x, "m42", js.undefined)
   }
 }

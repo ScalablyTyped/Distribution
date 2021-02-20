@@ -1,16 +1,16 @@
 package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/stats/StatsCollection", JSImport.Namespace)
-@js.native
-object statsCollectionMod extends js.Object {
+object statsCollectionMod {
   
+  @JSImport("@firebase/database/dist/src/core/stats/StatsCollection", "StatsCollection")
   @js.native
-  class StatsCollection () extends js.Object {
+  class StatsCollection () extends StObject {
     
     var counters_ : js.Any = js.native
     

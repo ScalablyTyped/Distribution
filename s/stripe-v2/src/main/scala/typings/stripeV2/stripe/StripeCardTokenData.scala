@@ -1,11 +1,12 @@
 package typings.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeCardTokenData extends js.Object {
+trait StripeCardTokenData extends StObject {
   
   var address_city: js.UndefOr[String] = js.native
   
@@ -40,87 +41,75 @@ object StripeCardTokenData {
   }
   
   @scala.inline
-  implicit class StripeCardTokenDataOps[Self <: StripeCardTokenData] (val x: Self) extends AnyVal {
+  implicit class StripeCardTokenDataMutableBuilder[Self <: StripeCardTokenData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
     
     @scala.inline
-    def setAddress_city(value: String): Self = this.set("address_city", value.asInstanceOf[js.Any])
+    def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_city: Self = this.set("address_city", js.undefined)
+    def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
     
     @scala.inline
-    def setAddress_country(value: String): Self = this.set("address_country", value.asInstanceOf[js.Any])
+    def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_country: Self = this.set("address_country", js.undefined)
+    def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
     
     @scala.inline
-    def setAddress_line1(value: String): Self = this.set("address_line1", value.asInstanceOf[js.Any])
+    def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_line1: Self = this.set("address_line1", js.undefined)
+    def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
     
     @scala.inline
-    def setAddress_line2(value: String): Self = this.set("address_line2", value.asInstanceOf[js.Any])
+    def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_line2: Self = this.set("address_line2", js.undefined)
+    def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
     
     @scala.inline
-    def setAddress_state(value: String): Self = this.set("address_state", value.asInstanceOf[js.Any])
+    def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_state: Self = this.set("address_state", js.undefined)
+    def setCvcUndefined: Self = StObject.set(x, "cvc", js.undefined)
     
     @scala.inline
-    def setAddress_zip(value: String): Self = this.set("address_zip", value.asInstanceOf[js.Any])
+    def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress_zip: Self = this.set("address_zip", js.undefined)
+    def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
     
     @scala.inline
-    def setCvc(value: String): Self = this.set("cvc", value.asInstanceOf[js.Any])
+    def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCvc: Self = this.set("cvc", js.undefined)
+    def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
     
     @scala.inline
-    def setExp(value: String): Self = this.set("exp", value.asInstanceOf[js.Any])
+    def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExp: Self = this.set("exp", js.undefined)
+    def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
     
     @scala.inline
-    def setExp_month(value: Double): Self = this.set("exp_month", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExp_month: Self = this.set("exp_month", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setExp_year(value: Double): Self = this.set("exp_year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExp_year: Self = this.set("exp_year", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

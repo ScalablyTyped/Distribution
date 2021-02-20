@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorYAxisBreaksOptions extends js.Object {
+trait NavigatorYAxisBreaksOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) A number indicating how much space should
@@ -40,42 +41,30 @@ object NavigatorYAxisBreaksOptions {
   }
   
   @scala.inline
-  implicit class NavigatorYAxisBreaksOptionsOps[Self <: NavigatorYAxisBreaksOptions] (val x: Self) extends AnyVal {
+  implicit class NavigatorYAxisBreaksOptionsMutableBuilder[Self <: NavigatorYAxisBreaksOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakSizeUndefined: Self = StObject.set(x, "breakSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakSize(value: Double): Self = this.set("breakSize", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteBreakSize: Self = this.set("breakSize", js.undefined)
+    def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: Double): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
-    
-    @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

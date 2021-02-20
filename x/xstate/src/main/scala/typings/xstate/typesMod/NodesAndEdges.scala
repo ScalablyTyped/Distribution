@@ -2,12 +2,13 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.ContextAny
 import typings.xstate.stateNodeMod.StateNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var edges: js.Array[
     Edge[
@@ -37,28 +38,7 @@ object NodesAndEdges {
   }
   
   @scala.inline
-  implicit class NodesAndEdgesOps[Self <: NodesAndEdges[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (NodesAndEdges[TContext, TEvent])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEdgesVarargs(
-      value: (Edge[
-          TContext, 
-          TEvent, 
-          /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
-        ])*
-    ): Self = this.set("edges", js.Array(value :_*))
+  implicit class NodesAndEdgesMutableBuilder[Self <: NodesAndEdges[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (NodesAndEdges[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setEdges(
@@ -69,12 +49,21 @@ object NodesAndEdges {
             /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
           ]
         ]
-    ): Self = this.set("edges", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesVarargs(value: (StateNode[js.Any, js.Any, EventObject, ContextAny])*): Self = this.set("nodes", js.Array(value :_*))
+    def setEdgesVarargs(
+      value: (Edge[
+          TContext, 
+          TEvent, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
+        ])*
+    ): Self = StObject.set(x, "edges", js.Array(value :_*))
     
     @scala.inline
-    def setNodes(value: js.Array[StateNode[_, _, EventObject, ContextAny]]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setNodes(value: js.Array[StateNode[_, _, EventObject, ContextAny]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNodesVarargs(value: (StateNode[js.Any, js.Any, EventObject, ContextAny])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

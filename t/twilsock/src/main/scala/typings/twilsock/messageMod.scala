@@ -3,14 +3,14 @@ package typings.twilsock
 import typings.twilsock.abstractmessageMod.AbstractMessage
 import typings.twilsock.protocolMod.Protocol.MessageType
 import typings.twilsock.protocolMod.Protocol.Request
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/protocol/messages/message", JSImport.Namespace)
-@js.native
-object messageMod extends js.Object {
+object messageMod {
   
+  @JSImport("twilsock/lib/protocol/messages/message", "Message")
   @js.native
   class Message protected () extends AbstractMessage {
     def this(grant: String, contentType: String, request: Request) = this()

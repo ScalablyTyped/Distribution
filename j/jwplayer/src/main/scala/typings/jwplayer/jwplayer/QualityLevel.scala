@@ -4,12 +4,13 @@ import typings.jwplayer.jwplayerStrings.`initial choice`
 import typings.jwplayer.jwplayerStrings.api
 import typings.jwplayer.jwplayerStrings.auto
 import typings.jwplayer.jwplayerStrings.manual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QualityLevel extends js.Object {
+trait QualityLevel extends StObject {
   
   var level: Level = js.native
   
@@ -26,27 +27,15 @@ object QualityLevel {
   }
   
   @scala.inline
-  implicit class QualityLevelOps[Self <: QualityLevel] (val x: Self) extends AnyVal {
+  implicit class QualityLevelMutableBuilder[Self <: QualityLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLevel(value: Level): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: auto | manual): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: auto | api | (`initial choice`)): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: auto | api | (`initial choice`)): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

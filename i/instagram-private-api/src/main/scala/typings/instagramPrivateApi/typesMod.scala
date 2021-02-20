@@ -1,19 +1,21 @@
 package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.uploadVideoOptionsMod.SegmentDivider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
-  @js.native
-  object SEGMENT_DIVIDERS extends js.Object {
+  object SEGMENT_DIVIDERS {
     
+    @JSImport("instagram-private-api/dist/types", "SEGMENT_DIVIDERS.sectionSize")
+    @js.native
     def sectionSize(sectionSize: js.Any): SegmentDivider = js.native
     
+    @JSImport("instagram-private-api/dist/types", "SEGMENT_DIVIDERS.totalSections")
+    @js.native
     def totalSections(numSections: js.Any): SegmentDivider = js.native
   }
 }

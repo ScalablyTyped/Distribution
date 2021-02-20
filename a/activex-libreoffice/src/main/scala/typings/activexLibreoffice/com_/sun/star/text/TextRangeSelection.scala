@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextRangeSelection extends js.Object {
+trait TextRangeSelection extends StObject {
   
   var End: TextPosition = js.native
   
@@ -20,24 +21,12 @@ object TextRangeSelection {
   }
   
   @scala.inline
-  implicit class TextRangeSelectionOps[Self <: TextRangeSelection] (val x: Self) extends AnyVal {
+  implicit class TextRangeSelectionMutableBuilder[Self <: TextRangeSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: TextPosition): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnd(value: TextPosition): Self = this.set("End", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: TextPosition): Self = this.set("Start", value.asInstanceOf[js.Any])
+    def setStart(value: TextPosition): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

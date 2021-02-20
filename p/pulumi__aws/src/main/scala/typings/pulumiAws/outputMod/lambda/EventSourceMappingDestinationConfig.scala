@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.lambda
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventSourceMappingDestinationConfig extends js.Object {
+trait EventSourceMappingDestinationConfig extends StObject {
   
   /**
     * The destination configuration for failed invocations. Detailed below.
@@ -21,24 +22,12 @@ object EventSourceMappingDestinationConfig {
   }
   
   @scala.inline
-  implicit class EventSourceMappingDestinationConfigOps[Self <: EventSourceMappingDestinationConfig] (val x: Self) extends AnyVal {
+  implicit class EventSourceMappingDestinationConfigMutableBuilder[Self <: EventSourceMappingDestinationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnFailure(value: EventSourceMappingDestinationConfigOnFailure): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnFailure(value: EventSourceMappingDestinationConfigOnFailure): Self = this.set("onFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
   }
 }

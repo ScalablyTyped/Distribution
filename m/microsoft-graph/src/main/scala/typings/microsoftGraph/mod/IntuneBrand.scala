@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntuneBrand extends js.Object {
+trait IntuneBrand extends StObject {
   
   // Email address of the person/organization responsible for IT support.
   var contactITEmailAddress: js.UndefOr[NullableOption[String]] = js.native
@@ -58,135 +59,123 @@ object IntuneBrand {
   }
   
   @scala.inline
-  implicit class IntuneBrandOps[Self <: IntuneBrand] (val x: Self) extends AnyVal {
+  implicit class IntuneBrandMutableBuilder[Self <: IntuneBrand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactITEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "contactITEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactITEmailAddressNull: Self = StObject.set(x, "contactITEmailAddress", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactITEmailAddressUndefined: Self = StObject.set(x, "contactITEmailAddress", js.undefined)
     
     @scala.inline
-    def setContactITEmailAddress(value: NullableOption[String]): Self = this.set("contactITEmailAddress", value.asInstanceOf[js.Any])
+    def setContactITName(value: NullableOption[String]): Self = StObject.set(x, "contactITName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactITEmailAddress: Self = this.set("contactITEmailAddress", js.undefined)
+    def setContactITNameNull: Self = StObject.set(x, "contactITName", null)
     
     @scala.inline
-    def setContactITEmailAddressNull: Self = this.set("contactITEmailAddress", null)
+    def setContactITNameUndefined: Self = StObject.set(x, "contactITName", js.undefined)
     
     @scala.inline
-    def setContactITName(value: NullableOption[String]): Self = this.set("contactITName", value.asInstanceOf[js.Any])
+    def setContactITNotes(value: NullableOption[String]): Self = StObject.set(x, "contactITNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactITName: Self = this.set("contactITName", js.undefined)
+    def setContactITNotesNull: Self = StObject.set(x, "contactITNotes", null)
     
     @scala.inline
-    def setContactITNameNull: Self = this.set("contactITName", null)
+    def setContactITNotesUndefined: Self = StObject.set(x, "contactITNotes", js.undefined)
     
     @scala.inline
-    def setContactITNotes(value: NullableOption[String]): Self = this.set("contactITNotes", value.asInstanceOf[js.Any])
+    def setContactITPhoneNumber(value: NullableOption[String]): Self = StObject.set(x, "contactITPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactITNotes: Self = this.set("contactITNotes", js.undefined)
+    def setContactITPhoneNumberNull: Self = StObject.set(x, "contactITPhoneNumber", null)
     
     @scala.inline
-    def setContactITNotesNull: Self = this.set("contactITNotes", null)
+    def setContactITPhoneNumberUndefined: Self = StObject.set(x, "contactITPhoneNumber", js.undefined)
     
     @scala.inline
-    def setContactITPhoneNumber(value: NullableOption[String]): Self = this.set("contactITPhoneNumber", value.asInstanceOf[js.Any])
+    def setDarkBackgroundLogo(value: NullableOption[MimeContent]): Self = StObject.set(x, "darkBackgroundLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactITPhoneNumber: Self = this.set("contactITPhoneNumber", js.undefined)
+    def setDarkBackgroundLogoNull: Self = StObject.set(x, "darkBackgroundLogo", null)
     
     @scala.inline
-    def setContactITPhoneNumberNull: Self = this.set("contactITPhoneNumber", null)
+    def setDarkBackgroundLogoUndefined: Self = StObject.set(x, "darkBackgroundLogo", js.undefined)
     
     @scala.inline
-    def setDarkBackgroundLogo(value: NullableOption[MimeContent]): Self = this.set("darkBackgroundLogo", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDarkBackgroundLogo: Self = this.set("darkBackgroundLogo", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDarkBackgroundLogoNull: Self = this.set("darkBackgroundLogo", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setLightBackgroundLogo(value: NullableOption[MimeContent]): Self = StObject.set(x, "lightBackgroundLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setLightBackgroundLogoNull: Self = StObject.set(x, "lightBackgroundLogo", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setLightBackgroundLogoUndefined: Self = StObject.set(x, "lightBackgroundLogo", js.undefined)
     
     @scala.inline
-    def setLightBackgroundLogo(value: NullableOption[MimeContent]): Self = this.set("lightBackgroundLogo", value.asInstanceOf[js.Any])
+    def setOnlineSupportSiteName(value: NullableOption[String]): Self = StObject.set(x, "onlineSupportSiteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLightBackgroundLogo: Self = this.set("lightBackgroundLogo", js.undefined)
+    def setOnlineSupportSiteNameNull: Self = StObject.set(x, "onlineSupportSiteName", null)
     
     @scala.inline
-    def setLightBackgroundLogoNull: Self = this.set("lightBackgroundLogo", null)
+    def setOnlineSupportSiteNameUndefined: Self = StObject.set(x, "onlineSupportSiteName", js.undefined)
     
     @scala.inline
-    def setOnlineSupportSiteName(value: NullableOption[String]): Self = this.set("onlineSupportSiteName", value.asInstanceOf[js.Any])
+    def setOnlineSupportSiteUrl(value: NullableOption[String]): Self = StObject.set(x, "onlineSupportSiteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnlineSupportSiteName: Self = this.set("onlineSupportSiteName", js.undefined)
+    def setOnlineSupportSiteUrlNull: Self = StObject.set(x, "onlineSupportSiteUrl", null)
     
     @scala.inline
-    def setOnlineSupportSiteNameNull: Self = this.set("onlineSupportSiteName", null)
+    def setOnlineSupportSiteUrlUndefined: Self = StObject.set(x, "onlineSupportSiteUrl", js.undefined)
     
     @scala.inline
-    def setOnlineSupportSiteUrl(value: NullableOption[String]): Self = this.set("onlineSupportSiteUrl", value.asInstanceOf[js.Any])
+    def setPrivacyUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnlineSupportSiteUrl: Self = this.set("onlineSupportSiteUrl", js.undefined)
+    def setPrivacyUrlNull: Self = StObject.set(x, "privacyUrl", null)
     
     @scala.inline
-    def setOnlineSupportSiteUrlNull: Self = this.set("onlineSupportSiteUrl", null)
+    def setPrivacyUrlUndefined: Self = StObject.set(x, "privacyUrl", js.undefined)
     
     @scala.inline
-    def setPrivacyUrl(value: NullableOption[String]): Self = this.set("privacyUrl", value.asInstanceOf[js.Any])
+    def setShowDisplayNameNextToLogo(value: Boolean): Self = StObject.set(x, "showDisplayNameNextToLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivacyUrl: Self = this.set("privacyUrl", js.undefined)
+    def setShowDisplayNameNextToLogoUndefined: Self = StObject.set(x, "showDisplayNameNextToLogo", js.undefined)
     
     @scala.inline
-    def setPrivacyUrlNull: Self = this.set("privacyUrl", null)
+    def setShowLogo(value: Boolean): Self = StObject.set(x, "showLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDisplayNameNextToLogo(value: Boolean): Self = this.set("showDisplayNameNextToLogo", value.asInstanceOf[js.Any])
+    def setShowLogoUndefined: Self = StObject.set(x, "showLogo", js.undefined)
     
     @scala.inline
-    def deleteShowDisplayNameNextToLogo: Self = this.set("showDisplayNameNextToLogo", js.undefined)
+    def setShowNameNextToLogo(value: Boolean): Self = StObject.set(x, "showNameNextToLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLogo(value: Boolean): Self = this.set("showLogo", value.asInstanceOf[js.Any])
+    def setShowNameNextToLogoUndefined: Self = StObject.set(x, "showNameNextToLogo", js.undefined)
     
     @scala.inline
-    def deleteShowLogo: Self = this.set("showLogo", js.undefined)
+    def setThemeColor(value: NullableOption[RgbColor]): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNameNextToLogo(value: Boolean): Self = this.set("showNameNextToLogo", value.asInstanceOf[js.Any])
+    def setThemeColorNull: Self = StObject.set(x, "themeColor", null)
     
     @scala.inline
-    def deleteShowNameNextToLogo: Self = this.set("showNameNextToLogo", js.undefined)
-    
-    @scala.inline
-    def setThemeColor(value: NullableOption[RgbColor]): Self = this.set("themeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeColor: Self = this.set("themeColor", js.undefined)
-    
-    @scala.inline
-    def setThemeColorNull: Self = this.set("themeColor", null)
+    def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
   }
 }

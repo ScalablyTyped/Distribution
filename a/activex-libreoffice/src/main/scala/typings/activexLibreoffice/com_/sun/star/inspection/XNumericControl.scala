@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.beans.Optional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,33 +65,21 @@ object XNumericControl {
   }
   
   @scala.inline
-  implicit class XNumericControlOps[Self <: XNumericControl] (val x: Self) extends AnyVal {
+  implicit class XNumericControlMutableBuilder[Self <: XNumericControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayUnit(value: Double): Self = StObject.set(x, "DisplayUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxValue(value: Optional[Double]): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalDigits(value: Double): Self = this.set("DecimalDigits", value.asInstanceOf[js.Any])
+    def setMinValue(value: Optional[Double]): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayUnit(value: Double): Self = this.set("DisplayUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxValue(value: Optional[Double]): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinValue(value: Optional[Double]): Self = this.set("MinValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueUnit(value: Double): Self = this.set("ValueUnit", value.asInstanceOf[js.Any])
+    def setValueUnit(value: Double): Self = StObject.set(x, "ValueUnit", value.asInstanceOf[js.Any])
   }
 }

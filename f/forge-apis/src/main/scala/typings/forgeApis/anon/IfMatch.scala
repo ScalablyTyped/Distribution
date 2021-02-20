@@ -1,11 +1,12 @@
 package typings.forgeApis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IfMatch extends js.Object {
+trait IfMatch extends StObject {
   
   var contentDisposition: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object IfMatch {
   }
   
   @scala.inline
-  implicit class IfMatchOps[Self <: IfMatch] (val x: Self) extends AnyVal {
+  implicit class IfMatchMutableBuilder[Self <: IfMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDisposition(value: String): Self = this.set("contentDisposition", value.asInstanceOf[js.Any])
+    def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
     
     @scala.inline
-    def deleteContentDisposition: Self = this.set("contentDisposition", js.undefined)
+    def setXAdsRegion(value: String): Self = StObject.set(x, "xAdsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfMatch(value: String): Self = this.set("ifMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIfMatch: Self = this.set("ifMatch", js.undefined)
-    
-    @scala.inline
-    def setXAdsRegion(value: String): Self = this.set("xAdsRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAdsRegion: Self = this.set("xAdsRegion", js.undefined)
+    def setXAdsRegionUndefined: Self = StObject.set(x, "xAdsRegion", js.undefined)
   }
 }

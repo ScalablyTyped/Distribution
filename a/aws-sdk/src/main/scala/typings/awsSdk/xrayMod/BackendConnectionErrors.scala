@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendConnectionErrors extends js.Object {
+trait BackendConnectionErrors extends StObject {
   
   /**
     * 
@@ -46,54 +47,42 @@ object BackendConnectionErrors {
   }
   
   @scala.inline
-  implicit class BackendConnectionErrorsOps[Self <: BackendConnectionErrors] (val x: Self) extends AnyVal {
+  implicit class BackendConnectionErrorsMutableBuilder[Self <: BackendConnectionErrors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionRefusedCount(value: NullableInteger): Self = StObject.set(x, "ConnectionRefusedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionRefusedCountUndefined: Self = StObject.set(x, "ConnectionRefusedCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHTTPCode4XXCount(value: NullableInteger): Self = StObject.set(x, "HTTPCode4XXCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionRefusedCount(value: NullableInteger): Self = this.set("ConnectionRefusedCount", value.asInstanceOf[js.Any])
+    def setHTTPCode4XXCountUndefined: Self = StObject.set(x, "HTTPCode4XXCount", js.undefined)
     
     @scala.inline
-    def deleteConnectionRefusedCount: Self = this.set("ConnectionRefusedCount", js.undefined)
+    def setHTTPCode5XXCount(value: NullableInteger): Self = StObject.set(x, "HTTPCode5XXCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTTPCode4XXCount(value: NullableInteger): Self = this.set("HTTPCode4XXCount", value.asInstanceOf[js.Any])
+    def setHTTPCode5XXCountUndefined: Self = StObject.set(x, "HTTPCode5XXCount", js.undefined)
     
     @scala.inline
-    def deleteHTTPCode4XXCount: Self = this.set("HTTPCode4XXCount", js.undefined)
+    def setOtherCount(value: NullableInteger): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTTPCode5XXCount(value: NullableInteger): Self = this.set("HTTPCode5XXCount", value.asInstanceOf[js.Any])
+    def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
     
     @scala.inline
-    def deleteHTTPCode5XXCount: Self = this.set("HTTPCode5XXCount", js.undefined)
+    def setTimeoutCount(value: NullableInteger): Self = StObject.set(x, "TimeoutCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherCount(value: NullableInteger): Self = this.set("OtherCount", value.asInstanceOf[js.Any])
+    def setTimeoutCountUndefined: Self = StObject.set(x, "TimeoutCount", js.undefined)
     
     @scala.inline
-    def deleteOtherCount: Self = this.set("OtherCount", js.undefined)
+    def setUnknownHostCount(value: NullableInteger): Self = StObject.set(x, "UnknownHostCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutCount(value: NullableInteger): Self = this.set("TimeoutCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutCount: Self = this.set("TimeoutCount", js.undefined)
-    
-    @scala.inline
-    def setUnknownHostCount(value: NullableInteger): Self = this.set("UnknownHostCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownHostCount: Self = this.set("UnknownHostCount", js.undefined)
+    def setUnknownHostCountUndefined: Self = StObject.set(x, "UnknownHostCount", js.undefined)
   }
 }

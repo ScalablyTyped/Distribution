@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2UiElementsHtmlResponse extends js.Object {
+trait GoogleActionsV2UiElementsHtmlResponse extends StObject {
   
   /**
     * Provide an option so that mic won't be opened after this immersive
@@ -33,36 +34,24 @@ object GoogleActionsV2UiElementsHtmlResponse {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2UiElementsHtmlResponseOps[Self <: GoogleActionsV2UiElementsHtmlResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2UiElementsHtmlResponseMutableBuilder[Self <: GoogleActionsV2UiElementsHtmlResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuppressMic(value: Boolean): Self = StObject.set(x, "suppressMic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuppressMicUndefined: Self = StObject.set(x, "suppressMic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdatedState(value: ApiClientObjectMap[_]): Self = StObject.set(x, "updatedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressMic(value: Boolean): Self = this.set("suppressMic", value.asInstanceOf[js.Any])
+    def setUpdatedStateUndefined: Self = StObject.set(x, "updatedState", js.undefined)
     
     @scala.inline
-    def deleteSuppressMic: Self = this.set("suppressMic", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedState(value: ApiClientObjectMap[_]): Self = this.set("updatedState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedState: Self = this.set("updatedState", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

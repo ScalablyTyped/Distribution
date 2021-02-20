@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -128,303 +129,291 @@ object DriveItem {
   }
   
   @scala.inline
-  implicit class DriveItemOps[Self <: DriveItem] (val x: Self) extends AnyVal {
+  implicit class DriveItemMutableBuilder[Self <: DriveItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalytics(value: NullableOption[ItemAnalytics]): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsNull: Self = StObject.set(x, "analytics", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
     
     @scala.inline
-    def set_package(value: NullableOption[Package]): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setAudio(value: NullableOption[Audio]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setAudioNull: Self = StObject.set(x, "audio", null)
     
     @scala.inline
-    def set_packageNull: Self = this.set("package", null)
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def setAnalytics(value: NullableOption[ItemAnalytics]): Self = this.set("analytics", value.asInstanceOf[js.Any])
+    def setCTag(value: NullableOption[String]): Self = StObject.set(x, "cTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnalytics: Self = this.set("analytics", js.undefined)
+    def setCTagNull: Self = StObject.set(x, "cTag", null)
     
     @scala.inline
-    def setAnalyticsNull: Self = this.set("analytics", null)
+    def setCTagUndefined: Self = StObject.set(x, "cTag", js.undefined)
     
     @scala.inline
-    def setAudio(value: NullableOption[Audio]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setChildren(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setChildrenNull: Self = StObject.set(x, "children", null)
     
     @scala.inline
-    def setAudioNull: Self = this.set("audio", null)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setCTag(value: NullableOption[String]): Self = this.set("cTag", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: DriveItem*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def deleteCTag: Self = this.set("cTag", js.undefined)
+    def setContent(value: NullableOption[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCTagNull: Self = this.set("cTag", null)
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def setChildrenVarargs(value: DriveItem*): Self = this.set("children", js.Array(value :_*))
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setChildren(value: NullableOption[js.Array[DriveItem]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDeleted(value: NullableOption[Deleted]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDeletedNull: Self = StObject.set(x, "deleted", null)
     
     @scala.inline
-    def setChildrenNull: Self = this.set("children", null)
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def setContent(value: NullableOption[_]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setFile(value: NullableOption[File]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setFileNull: Self = StObject.set(x, "file", null)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = StObject.set(x, "fileSystemInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: NullableOption[Deleted]): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setFileSystemInfoNull: Self = StObject.set(x, "fileSystemInfo", null)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setFileSystemInfoUndefined: Self = StObject.set(x, "fileSystemInfo", js.undefined)
     
     @scala.inline
-    def setDeletedNull: Self = this.set("deleted", null)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setFile(value: NullableOption[File]): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFolder(value: NullableOption[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setFolderNull: Self = StObject.set(x, "folder", null)
     
     @scala.inline
-    def setFileNull: Self = this.set("file", null)
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = this.set("fileSystemInfo", value.asInstanceOf[js.Any])
+    def setImage(value: NullableOption[Image]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileSystemInfo: Self = this.set("fileSystemInfo", js.undefined)
+    def setImageNull: Self = StObject.set(x, "image", null)
     
     @scala.inline
-    def setFileSystemInfoNull: Self = this.set("fileSystemInfo", null)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def setFolder(value: NullableOption[Folder]): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setListItem(value: NullableOption[ListItem]): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setListItemNull: Self = StObject.set(x, "listItem", null)
     
     @scala.inline
-    def setFolderNull: Self = this.set("folder", null)
+    def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
     @scala.inline
-    def setImage(value: NullableOption[Image]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setLocation(value: NullableOption[GeoCoordinates]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setLocationNull: Self = StObject.set(x, "location", null)
     
     @scala.inline
-    def setImageNull: Self = this.set("image", null)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setListItem(value: NullableOption[ListItem]): Self = this.set("listItem", value.asInstanceOf[js.Any])
+    def setPendingOperations(value: NullableOption[PendingOperations]): Self = StObject.set(x, "pendingOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItem: Self = this.set("listItem", js.undefined)
+    def setPendingOperationsNull: Self = StObject.set(x, "pendingOperations", null)
     
     @scala.inline
-    def setListItemNull: Self = this.set("listItem", null)
+    def setPendingOperationsUndefined: Self = StObject.set(x, "pendingOperations", js.undefined)
     
     @scala.inline
-    def setLocation(value: NullableOption[GeoCoordinates]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPermissions(value: NullableOption[js.Array[Permission]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setPermissionsNull: Self = StObject.set(x, "permissions", null)
     
     @scala.inline
-    def setLocationNull: Self = this.set("location", null)
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def setPendingOperations(value: NullableOption[PendingOperations]): Self = this.set("pendingOperations", value.asInstanceOf[js.Any])
+    def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def deletePendingOperations: Self = this.set("pendingOperations", js.undefined)
+    def setPhoto(value: NullableOption[Photo]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingOperationsNull: Self = this.set("pendingOperations", null)
+    def setPhotoNull: Self = StObject.set(x, "photo", null)
     
     @scala.inline
-    def setPermissionsVarargs(value: Permission*): Self = this.set("permissions", js.Array(value :_*))
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def setPermissions(value: NullableOption[js.Array[Permission]]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setPublication(value: NullableOption[PublicationFacet]): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setPublicationNull: Self = StObject.set(x, "publication", null)
     
     @scala.inline
-    def setPermissionsNull: Self = this.set("permissions", null)
+    def setPublicationUndefined: Self = StObject.set(x, "publication", js.undefined)
     
     @scala.inline
-    def setPhoto(value: NullableOption[Photo]): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def setRemoteItem(value: NullableOption[RemoteItem]): Self = StObject.set(x, "remoteItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
+    def setRemoteItemNull: Self = StObject.set(x, "remoteItem", null)
     
     @scala.inline
-    def setPhotoNull: Self = this.set("photo", null)
+    def setRemoteItemUndefined: Self = StObject.set(x, "remoteItem", js.undefined)
     
     @scala.inline
-    def setPublication(value: NullableOption[PublicationFacet]): Self = this.set("publication", value.asInstanceOf[js.Any])
+    def setRoot(value: NullableOption[Root]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublication: Self = this.set("publication", js.undefined)
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setPublicationNull: Self = this.set("publication", null)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setRemoteItem(value: NullableOption[RemoteItem]): Self = this.set("remoteItem", value.asInstanceOf[js.Any])
+    def setSearchResult(value: NullableOption[SearchResult]): Self = StObject.set(x, "searchResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoteItem: Self = this.set("remoteItem", js.undefined)
+    def setSearchResultNull: Self = StObject.set(x, "searchResult", null)
     
     @scala.inline
-    def setRemoteItemNull: Self = this.set("remoteItem", null)
+    def setSearchResultUndefined: Self = StObject.set(x, "searchResult", js.undefined)
     
     @scala.inline
-    def setRoot(value: NullableOption[Root]): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setShared(value: NullableOption[Shared]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSharedNull: Self = StObject.set(x, "shared", null)
     
     @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def setSearchResult(value: NullableOption[SearchResult]): Self = this.set("searchResult", value.asInstanceOf[js.Any])
+    def setSharepointIds(value: NullableOption[SharepointIds]): Self = StObject.set(x, "sharepointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchResult: Self = this.set("searchResult", js.undefined)
+    def setSharepointIdsNull: Self = StObject.set(x, "sharepointIds", null)
     
     @scala.inline
-    def setSearchResultNull: Self = this.set("searchResult", null)
+    def setSharepointIdsUndefined: Self = StObject.set(x, "sharepointIds", js.undefined)
     
     @scala.inline
-    def setShared(value: NullableOption[Shared]): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setSizeNull: Self = StObject.set(x, "size", null)
     
     @scala.inline
-    def setSharedNull: Self = this.set("shared", null)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setSharepointIds(value: NullableOption[SharepointIds]): Self = this.set("sharepointIds", value.asInstanceOf[js.Any])
+    def setSpecialFolder(value: NullableOption[SpecialFolder]): Self = StObject.set(x, "specialFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharepointIds: Self = this.set("sharepointIds", js.undefined)
+    def setSpecialFolderNull: Self = StObject.set(x, "specialFolder", null)
     
     @scala.inline
-    def setSharepointIdsNull: Self = this.set("sharepointIds", null)
+    def setSpecialFolderUndefined: Self = StObject.set(x, "specialFolder", js.undefined)
     
     @scala.inline
-    def setSize(value: NullableOption[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: NullableOption[js.Array[Subscription]]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSubscriptionsNull: Self = StObject.set(x, "subscriptions", null)
     
     @scala.inline
-    def setSizeNull: Self = this.set("size", null)
+    def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
     @scala.inline
-    def setSpecialFolder(value: NullableOption[SpecialFolder]): Self = this.set("specialFolder", value.asInstanceOf[js.Any])
+    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
     
     @scala.inline
-    def deleteSpecialFolder: Self = this.set("specialFolder", js.undefined)
+    def setThumbnails(value: NullableOption[js.Array[ThumbnailSet]]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialFolderNull: Self = this.set("specialFolder", null)
+    def setThumbnailsNull: Self = StObject.set(x, "thumbnails", null)
     
     @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = this.set("subscriptions", js.Array(value :_*))
+    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
     @scala.inline
-    def setSubscriptions(value: NullableOption[js.Array[Subscription]]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
+    def setThumbnailsVarargs(value: ThumbnailSet*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
     
     @scala.inline
-    def deleteSubscriptions: Self = this.set("subscriptions", js.undefined)
+    def setVersions(value: NullableOption[js.Array[DriveItemVersion]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionsNull: Self = this.set("subscriptions", null)
+    def setVersionsNull: Self = StObject.set(x, "versions", null)
     
     @scala.inline
-    def setThumbnailsVarargs(value: ThumbnailSet*): Self = this.set("thumbnails", js.Array(value :_*))
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def setThumbnails(value: NullableOption[js.Array[ThumbnailSet]]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    def setVersionsVarargs(value: DriveItemVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
     @scala.inline
-    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    def setVideo(value: NullableOption[Video]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailsNull: Self = this.set("thumbnails", null)
+    def setVideoNull: Self = StObject.set(x, "video", null)
     
     @scala.inline
-    def setVersionsVarargs(value: DriveItemVersion*): Self = this.set("versions", js.Array(value :_*))
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def setVersions(value: NullableOption[js.Array[DriveItemVersion]]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setWebDavUrl(value: NullableOption[String]): Self = StObject.set(x, "webDavUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setWebDavUrlNull: Self = StObject.set(x, "webDavUrl", null)
     
     @scala.inline
-    def setVersionsNull: Self = this.set("versions", null)
+    def setWebDavUrlUndefined: Self = StObject.set(x, "webDavUrl", js.undefined)
     
     @scala.inline
-    def setVideo(value: NullableOption[Video]): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setWorkbook(value: NullableOption[Workbook]): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setWorkbookNull: Self = StObject.set(x, "workbook", null)
     
     @scala.inline
-    def setVideoNull: Self = this.set("video", null)
+    def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
     
     @scala.inline
-    def setWebDavUrl(value: NullableOption[String]): Self = this.set("webDavUrl", value.asInstanceOf[js.Any])
+    def set_package(value: NullableOption[Package]): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebDavUrl: Self = this.set("webDavUrl", js.undefined)
+    def set_packageNull: Self = StObject.set(x, "package", null)
     
     @scala.inline
-    def setWebDavUrlNull: Self = this.set("webDavUrl", null)
-    
-    @scala.inline
-    def setWorkbook(value: NullableOption[Workbook]): Self = this.set("workbook", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkbook: Self = this.set("workbook", js.undefined)
-    
-    @scala.inline
-    def setWorkbookNull: Self = this.set("workbook", null)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

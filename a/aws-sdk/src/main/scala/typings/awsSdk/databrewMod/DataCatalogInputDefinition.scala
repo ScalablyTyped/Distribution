@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataCatalogInputDefinition extends js.Object {
+trait DataCatalogInputDefinition extends StObject {
   
   /**
     * The unique identifier of the AWS account that holds the Data Catalog that stores the data.
@@ -36,36 +37,24 @@ object DataCatalogInputDefinition {
   }
   
   @scala.inline
-  implicit class DataCatalogInputDefinitionOps[Self <: DataCatalogInputDefinition] (val x: Self) extends AnyVal {
+  implicit class DataCatalogInputDefinitionMutableBuilder[Self <: DataCatalogInputDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogId): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseName(value: DatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: DatabaseName): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setTempDirectory(value: S3Location): Self = StObject.set(x, "TempDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogId(value: CatalogId): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
-    
-    @scala.inline
-    def setTempDirectory(value: S3Location): Self = this.set("TempDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTempDirectory: Self = this.set("TempDirectory", js.undefined)
+    def setTempDirectoryUndefined: Self = StObject.set(x, "TempDirectory", js.undefined)
   }
 }

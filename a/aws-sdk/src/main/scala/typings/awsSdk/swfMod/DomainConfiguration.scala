@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainConfiguration extends js.Object {
+trait DomainConfiguration extends StObject {
   
   /**
     * The retention period for workflow executions in this domain.
@@ -21,21 +22,9 @@ object DomainConfiguration {
   }
   
   @scala.inline
-  implicit class DomainConfigurationOps[Self <: DomainConfiguration] (val x: Self) extends AnyVal {
+  implicit class DomainConfigurationMutableBuilder[Self <: DomainConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = this.set("workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = StObject.set(x, "workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
   }
 }

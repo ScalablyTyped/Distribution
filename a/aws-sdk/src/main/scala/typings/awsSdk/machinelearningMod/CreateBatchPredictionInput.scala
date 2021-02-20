@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBatchPredictionInput extends js.Object {
+trait CreateBatchPredictionInput extends StObject {
   
   /**
     * The ID of the DataSource that points to the group of observations to predict.
@@ -46,36 +47,24 @@ object CreateBatchPredictionInput {
   }
   
   @scala.inline
-  implicit class CreateBatchPredictionInputOps[Self <: CreateBatchPredictionInput] (val x: Self) extends AnyVal {
+  implicit class CreateBatchPredictionInputMutableBuilder[Self <: CreateBatchPredictionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchPredictionDataSourceId(value: EntityId): Self = StObject.set(x, "BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchPredictionName(value: EntityName): Self = StObject.set(x, "BatchPredictionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchPredictionDataSourceId(value: EntityId): Self = this.set("BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
+    def setBatchPredictionNameUndefined: Self = StObject.set(x, "BatchPredictionName", js.undefined)
     
     @scala.inline
-    def setBatchPredictionId(value: EntityId): Self = this.set("BatchPredictionId", value.asInstanceOf[js.Any])
+    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputUri(value: S3Url): Self = this.set("OutputUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBatchPredictionName(value: EntityName): Self = this.set("BatchPredictionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchPredictionName: Self = this.set("BatchPredictionName", js.undefined)
+    def setOutputUri(value: S3Url): Self = StObject.set(x, "OutputUri", value.asInstanceOf[js.Any])
   }
 }

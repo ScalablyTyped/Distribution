@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexVideoSettings extends js.Object {
+trait MultiplexVideoSettings extends StObject {
   
   /**
     * The constant bitrate configuration for the video encode.
@@ -28,30 +29,18 @@ object MultiplexVideoSettings {
   }
   
   @scala.inline
-  implicit class MultiplexVideoSettingsOps[Self <: MultiplexVideoSettings] (val x: Self) extends AnyVal {
+  implicit class MultiplexVideoSettingsMutableBuilder[Self <: MultiplexVideoSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstantBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "ConstantBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstantBitrateUndefined: Self = StObject.set(x, "ConstantBitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatmuxSettings(value: MultiplexStatmuxVideoSettings): Self = StObject.set(x, "StatmuxSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantBitrate(value: integerMin100000Max100000000): Self = this.set("ConstantBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConstantBitrate: Self = this.set("ConstantBitrate", js.undefined)
-    
-    @scala.inline
-    def setStatmuxSettings(value: MultiplexStatmuxVideoSettings): Self = this.set("StatmuxSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatmuxSettings: Self = this.set("StatmuxSettings", js.undefined)
+    def setStatmuxSettingsUndefined: Self = StObject.set(x, "StatmuxSettings", js.undefined)
   }
 }

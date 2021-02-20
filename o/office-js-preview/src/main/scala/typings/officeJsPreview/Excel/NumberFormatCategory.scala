@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NumberFormatCategory extends js.Object
+sealed trait NumberFormatCategory extends StObject
 /**
   *
   * Represents a category of number formats.
@@ -14,7 +15,7 @@ sealed trait NumberFormatCategory extends js.Object
   */
 @JSGlobal("Excel.NumberFormatCategory")
 @js.native
-object NumberFormatCategory extends js.Object {
+object NumberFormatCategory extends StObject {
   
   /**
     * Accounting formats line up the currency symbols and decimal points in a column.

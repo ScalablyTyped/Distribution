@@ -1,6 +1,6 @@
 package typings.parse.mod.global.Parse
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +12,3 @@ trait Session[T /* <: Attributes */] extends Object[T] {
   
   def isCurrentSessionRevocable(): Boolean = js.native
 }
-@JSGlobal("Parse.Session")
-@js.native
-object Session extends TopLevel[SessionConstructor]

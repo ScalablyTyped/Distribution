@@ -6,12 +6,13 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`2`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`4`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AUTO extends js.Object {
+trait AUTO extends StObject {
   
   /**
     *  DHCP: Connected to wired or wireless IPv4 network through automatic IP configuration
@@ -52,36 +53,24 @@ object AUTO {
   }
   
   @scala.inline
-  implicit class AUTOOps[Self <: AUTO] (val x: Self) extends AnyVal {
+  implicit class AUTOMutableBuilder[Self <: AUTO] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAUTO(value: `3`): Self = StObject.set(x, "AUTO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDYNAMIC(value: `2`): Self = StObject.set(x, "DYNAMIC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFIXED(value: `4`): Self = StObject.set(x, "FIXED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUTO(value: `3`): Self = this.set("AUTO", value.asInstanceOf[js.Any])
+    def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDYNAMIC(value: `2`): Self = this.set("DYNAMIC", value.asInstanceOf[js.Any])
+    def setSTATIC(value: `1`): Self = StObject.set(x, "STATIC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFIXED(value: `4`): Self = this.set("FIXED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNONE(value: `0`): Self = this.set("NONE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTATIC(value: `1`): Self = this.set("STATIC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUNKNOWN(value: `5`): Self = this.set("UNKNOWN", value.asInstanceOf[js.Any])
+    def setUNKNOWN(value: `5`): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.cucumber.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scenario extends js.Object {
+trait Scenario extends StObject {
   
   var description: String = js.native
   
@@ -48,57 +49,45 @@ object Scenario {
   }
   
   @scala.inline
-  implicit class ScenarioOps[Self <: Scenario] (val x: Self) extends AnyVal {
+  implicit class ScenarioMutableBuilder[Self <: Scenario] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setException(value: Error): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setException(value: Error): Self = this.set("exception", value.asInstanceOf[js.Any])
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: Feature): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setLines(value: js.Array[Double]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    def setLinesVarargs(value: Double*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesVarargs(value: Double*): Self = this.set("lines", js.Array(value :_*))
+    def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines(value: js.Array[Double]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsVarargs(value: Step*): Self = this.set("steps", js.Array(value :_*))
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setSteps(value: js.Array[Step]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

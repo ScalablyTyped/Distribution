@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectDefinition extends js.Object {
+trait ObjectDefinition extends StObject {
   
   /**
     * Name for the object, which then defines its type. Item indexing requests should set the objectType field equal to this value. For example, if *name* is *Document*, then indexing
@@ -29,39 +30,27 @@ object ObjectDefinition {
   }
   
   @scala.inline
-  implicit class ObjectDefinitionOps[Self <: ObjectDefinition] (val x: Self) extends AnyVal {
+  implicit class ObjectDefinitionMutableBuilder[Self <: ObjectDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: ObjectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPropertyDefinitions(value: js.Array[PropertyDefinition]): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ObjectOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setPropertyDefinitionsVarargs(value: PropertyDefinition*): Self = this.set("propertyDefinitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPropertyDefinitions(value: js.Array[PropertyDefinition]): Self = this.set("propertyDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyDefinitions: Self = this.set("propertyDefinitions", js.undefined)
+    def setPropertyDefinitionsVarargs(value: PropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value :_*))
   }
 }

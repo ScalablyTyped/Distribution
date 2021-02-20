@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartTextVerticalAlignment extends js.Object
+sealed trait ChartTextVerticalAlignment extends StObject
 /**
   *
   * Represents the vertical alignment for the specified object.
@@ -14,7 +15,7 @@ sealed trait ChartTextVerticalAlignment extends js.Object
   */
 @JSGlobal("Excel.ChartTextVerticalAlignment")
 @js.native
-object ChartTextVerticalAlignment extends js.Object {
+object ChartTextVerticalAlignment extends StObject {
   
   @js.native
   sealed trait bottom extends ChartTextVerticalAlignment

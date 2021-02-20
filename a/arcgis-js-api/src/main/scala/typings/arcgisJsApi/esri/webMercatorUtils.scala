@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait webMercatorUtils extends js.Object {
+trait webMercatorUtils extends StObject {
   
   def canProject(source: js.Any, target: js.Any): Boolean = js.native
   def canProject(source: js.Any, target: SpatialReference): Boolean = js.native

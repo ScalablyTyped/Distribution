@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TickLabels extends js.Object {
+trait TickLabels extends StObject {
   
   var Alignment: Double = js.native
   
@@ -76,75 +77,63 @@ object TickLabels {
   }
   
   @scala.inline
-  implicit class TickLabelsOps[Self <: TickLabels] (val x: Self) extends AnyVal {
+  implicit class TickLabelsMutableBuilder[Self <: TickLabels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: Double): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutoScaleFont(value: js.Any): Self = this.set("AutoScaleFont", value.asInstanceOf[js.Any])
+    def setDepth(value: Double): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFont(value: ChartFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => js.Any): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("Depth", value.asInstanceOf[js.Any])
+    def setMultiLevel(value: Boolean): Self = StObject.set(x, "MultiLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: ChartFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiLevel(value: Boolean): Self = this.set("MultiLevel", value.asInstanceOf[js.Any])
+    def setNumberFormatLinked(value: Boolean): Self = StObject.set(x, "NumberFormatLinked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNumberFormatLocal(value: js.Any): Self = StObject.set(x, "NumberFormatLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: String): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatLinked(value: Boolean): Self = this.set("NumberFormatLinked", value.asInstanceOf[js.Any])
+    def setOrientation(value: XlTickLabelOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatLocal(value: js.Any): Self = this.set("NumberFormatLocal", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    def setPowerPointDotTickLabels_typekey(value: TickLabels): Self = StObject.set(x, "PowerPoint.TickLabels_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: XlTickLabelOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setReadingOrder(value: Double): Self = StObject.set(x, "ReadingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotTickLabels_typekey(value: TickLabels): Self = this.set("PowerPoint.TickLabels_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadingOrder(value: Double): Self = this.set("ReadingOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

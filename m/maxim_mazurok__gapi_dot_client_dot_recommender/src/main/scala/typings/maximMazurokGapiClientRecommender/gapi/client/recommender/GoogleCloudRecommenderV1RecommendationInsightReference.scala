@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommenderV1RecommendationInsightReference extends js.Object {
+trait GoogleCloudRecommenderV1RecommendationInsightReference extends StObject {
   
   /** Insight resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/insights/[INSIGHT_ID] */
   var insight: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudRecommenderV1RecommendationInsightReference {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommenderV1RecommendationInsightReferenceOps[Self <: GoogleCloudRecommenderV1RecommendationInsightReference] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommenderV1RecommendationInsightReferenceMutableBuilder[Self <: GoogleCloudRecommenderV1RecommendationInsightReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsight(value: String): Self = StObject.set(x, "insight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInsight(value: String): Self = this.set("insight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsight: Self = this.set("insight", js.undefined)
+    def setInsightUndefined: Self = StObject.set(x, "insight", js.undefined)
   }
 }

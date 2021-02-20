@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RejectedLogEventsInfo extends js.Object {
+trait RejectedLogEventsInfo extends StObject {
   
   /**
     * The expired log events.
@@ -31,36 +32,24 @@ object RejectedLogEventsInfo {
   }
   
   @scala.inline
-  implicit class RejectedLogEventsInfoOps[Self <: RejectedLogEventsInfo] (val x: Self) extends AnyVal {
+  implicit class RejectedLogEventsInfoMutableBuilder[Self <: RejectedLogEventsInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpiredLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "expiredLogEventEndIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiredLogEventEndIndexUndefined: Self = StObject.set(x, "expiredLogEventEndIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTooNewLogEventStartIndex(value: LogEventIndex): Self = StObject.set(x, "tooNewLogEventStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiredLogEventEndIndex(value: LogEventIndex): Self = this.set("expiredLogEventEndIndex", value.asInstanceOf[js.Any])
+    def setTooNewLogEventStartIndexUndefined: Self = StObject.set(x, "tooNewLogEventStartIndex", js.undefined)
     
     @scala.inline
-    def deleteExpiredLogEventEndIndex: Self = this.set("expiredLogEventEndIndex", js.undefined)
+    def setTooOldLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "tooOldLogEventEndIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooNewLogEventStartIndex(value: LogEventIndex): Self = this.set("tooNewLogEventStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooNewLogEventStartIndex: Self = this.set("tooNewLogEventStartIndex", js.undefined)
-    
-    @scala.inline
-    def setTooOldLogEventEndIndex(value: LogEventIndex): Self = this.set("tooOldLogEventEndIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooOldLogEventEndIndex: Self = this.set("tooOldLogEventEndIndex", js.undefined)
+    def setTooOldLogEventEndIndexUndefined: Self = StObject.set(x, "tooOldLogEventEndIndex", js.undefined)
   }
 }

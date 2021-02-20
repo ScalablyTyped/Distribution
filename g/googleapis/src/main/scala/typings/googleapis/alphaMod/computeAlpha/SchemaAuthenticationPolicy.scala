@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The authentication settings for the backend service.
   */
 @js.native
-trait SchemaAuthenticationPolicy extends js.Object {
+trait SchemaAuthenticationPolicy extends StObject {
   
   /**
     * List of authentication methods that can be used for origin
@@ -56,48 +57,36 @@ object SchemaAuthenticationPolicy {
   }
   
   @scala.inline
-  implicit class SchemaAuthenticationPolicyOps[Self <: SchemaAuthenticationPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthenticationPolicyMutableBuilder[Self <: SchemaAuthenticationPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrigins(value: js.Array[SchemaOriginAuthenticationMethod]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginsVarargs(value: SchemaOriginAuthenticationMethod*): Self = StObject.set(x, "origins", js.Array(value :_*))
     
     @scala.inline
-    def setOriginsVarargs(value: SchemaOriginAuthenticationMethod*): Self = this.set("origins", js.Array(value :_*))
+    def setPeers(value: js.Array[SchemaPeerAuthenticationMethod]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigins(value: js.Array[SchemaOriginAuthenticationMethod]): Self = this.set("origins", value.asInstanceOf[js.Any])
+    def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
     
     @scala.inline
-    def deleteOrigins: Self = this.set("origins", js.undefined)
+    def setPeersVarargs(value: SchemaPeerAuthenticationMethod*): Self = StObject.set(x, "peers", js.Array(value :_*))
     
     @scala.inline
-    def setPeersVarargs(value: SchemaPeerAuthenticationMethod*): Self = this.set("peers", js.Array(value :_*))
+    def setPrincipalBinding(value: String): Self = StObject.set(x, "principalBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeers(value: js.Array[SchemaPeerAuthenticationMethod]): Self = this.set("peers", value.asInstanceOf[js.Any])
+    def setPrincipalBindingUndefined: Self = StObject.set(x, "principalBinding", js.undefined)
     
     @scala.inline
-    def deletePeers: Self = this.set("peers", js.undefined)
+    def setServerTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "serverTlsContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalBinding(value: String): Self = this.set("principalBinding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalBinding: Self = this.set("principalBinding", js.undefined)
-    
-    @scala.inline
-    def setServerTlsContext(value: SchemaTlsContext): Self = this.set("serverTlsContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerTlsContext: Self = this.set("serverTlsContext", js.undefined)
+    def setServerTlsContextUndefined: Self = StObject.set(x, "serverTlsContext", js.undefined)
   }
 }

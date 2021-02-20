@@ -1,11 +1,12 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pattern6[T1, T2, T3, T4, T5, T6] extends js.Object {
+trait Pattern6[T1, T2, T3, T4, T5, T6] extends StObject {
   
   /**
     *  Creates a pattern that matches the current plan matches and when the specified observable sequences has an available value.
@@ -51,22 +52,10 @@ object Pattern6 {
   }
   
   @scala.inline
-  implicit class Pattern6Ops[Self <: Pattern6[_, _, _, _, _, _], T1, T2, T3, T4, T5, T6] (val x: Self with (Pattern6[T1, T2, T3, T4, T5, T6])) extends AnyVal {
+  implicit class Pattern6MutableBuilder[Self <: Pattern6[_, _, _, _, _, _], T1, T2, T3, T4, T5, T6] (val x: Self with (Pattern6[T1, T2, T3, T4, T5, T6])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnd(value: Observable[js.Any] => Pattern7[T1, T2, T3, T4, T5, T6, js.Any]): Self = this.set("and", js.Any.fromFunction1(value))
+    def setAnd(value: Observable[js.Any] => Pattern7[T1, T2, T3, T4, T5, T6, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
     def setThenDo(
@@ -79,6 +68,6 @@ object Pattern6 {
           /* item6 */ T6, 
           js.Any
         ] => Plan[js.Any]
-    ): Self = this.set("thenDo", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
   }
 }

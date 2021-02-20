@@ -1,11 +1,12 @@
 package typings.relayRuntime.relayStoreTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleImportPointer extends js.Object {
+trait ModuleImportPointer extends StObject {
   
   @JSName("$fragmentRefs")
   val $fragmentRefs: js.Any = js.native
@@ -23,33 +24,21 @@ object ModuleImportPointer {
   }
   
   @scala.inline
-  implicit class ModuleImportPointerOps[Self <: ModuleImportPointer] (val x: Self) extends AnyVal {
+  implicit class ModuleImportPointerMutableBuilder[Self <: ModuleImportPointer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$fragmentRefs(value: js.Any): Self = StObject.set(x, "$fragmentRefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__fragmentPropName(value: String): Self = StObject.set(x, "__fragmentPropName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set__fragmentPropNameNull: Self = StObject.set(x, "__fragmentPropName", null)
     
     @scala.inline
-    def set$fragmentRefs(value: js.Any): Self = this.set("$fragmentRefs", value.asInstanceOf[js.Any])
+    def set__fragmentPropNameUndefined: Self = StObject.set(x, "__fragmentPropName", js.undefined)
     
     @scala.inline
-    def set__module_component(value: js.Any): Self = this.set("__module_component", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set__fragmentPropName(value: String): Self = this.set("__fragmentPropName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__fragmentPropName: Self = this.set("__fragmentPropName", js.undefined)
-    
-    @scala.inline
-    def set__fragmentPropNameNull: Self = this.set("__fragmentPropName", null)
+    def set__module_component(value: js.Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
   }
 }

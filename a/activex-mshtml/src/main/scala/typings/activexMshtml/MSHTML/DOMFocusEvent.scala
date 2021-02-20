@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMFocusEvent extends js.Object {
+trait DOMFocusEvent extends StObject {
   
   @JSName("MSHTML.DOMFocusEvent_typekey")
   var MSHTMLDotDOMFocusEvent_typekey: DOMFocusEvent = js.native

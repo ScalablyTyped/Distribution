@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashInvokeArgsMap1x4 extends js.Object {
+trait LodashInvokeArgsMap1x4 extends StObject {
   
   def apply(methodNameOrMethod: __, args: js.Array[_]): LodashInvokeArgsMap1x6 = js.native
   def apply(methodName: String): LodashInvokeArgsMap1x5 = js.native

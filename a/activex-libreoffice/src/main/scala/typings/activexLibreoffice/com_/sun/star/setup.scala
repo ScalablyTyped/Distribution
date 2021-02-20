@@ -2,13 +2,12 @@ package typings.activexLibreoffice.com_.sun.star
 
 import typings.activexLibreoffice.com_.sun.star.container.XNameReplace
 import typings.activexLibreoffice.com_.sun.star.task.XJob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("com.sun.star.setup")
-@js.native
-object setup extends js.Object {
+object setup {
   
   /** @since LibreOffice 4.1 */
   type UpdateCheck = XJob

@@ -1,11 +1,12 @@
 package typings.lyricist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientTimestamps extends js.Object {
+trait ClientTimestamps extends StObject {
   
   var lyrics_updated_at: Double = js.native
   
@@ -20,24 +21,12 @@ object ClientTimestamps {
   }
   
   @scala.inline
-  implicit class ClientTimestampsOps[Self <: ClientTimestamps] (val x: Self) extends AnyVal {
+  implicit class ClientTimestampsMutableBuilder[Self <: ClientTimestamps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLyrics_updated_at(value: Double): Self = StObject.set(x, "lyrics_updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLyrics_updated_at(value: Double): Self = this.set("lyrics_updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_by_human_at(value: Double): Self = this.set("updated_by_human_at", value.asInstanceOf[js.Any])
+    def setUpdated_by_human_at(value: Double): Self = StObject.set(x, "updated_by_human_at", value.asInstanceOf[js.Any])
   }
 }

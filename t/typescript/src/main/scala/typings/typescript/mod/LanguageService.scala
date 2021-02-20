@@ -1,12 +1,13 @@
 package typings.typescript.mod
 
 import typings.typescript.anon.WithMetadataCompletionInf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageService extends js.Object {
+trait LanguageService extends StObject {
   
   def applyCodeActionCommand(action: js.Array[CodeActionCommand]): js.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
   def applyCodeActionCommand(action: js.Array[CodeActionCommand], formatSettings: FormatCodeSettings): js.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native

@@ -2,6 +2,7 @@ package typings.umbraco.umbraco.services
 
 import typings.angular.mod.IFormController
 import typings.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Some angular helper/extension methods
   */
 @js.native
-trait IAngularHelper extends js.Object {
+trait IAngularHelper extends StObject {
   
   /**
     * @ngdoc function
@@ -95,33 +96,21 @@ object IAngularHelper {
   }
   
   @scala.inline
-  implicit class IAngularHelperOps[Self <: IAngularHelper] (val x: Self) extends AnyVal {
+  implicit class IAngularHelperMutableBuilder[Self <: IAngularHelper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCurrentForm(value: IScope => js.Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNullForm(value: String => IFormController): Self = StObject.set(x, "getNullForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRequiredCurrentForm(value: IScope => js.Object): Self = StObject.set(x, "getRequiredCurrentForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentForm(value: IScope => js.Any): Self = this.set("getCurrentForm", js.Any.fromFunction1(value))
+    def setRejectedPromise(value: js.Object => Unit): Self = StObject.set(x, "rejectedPromise", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNullForm(value: String => IFormController): Self = this.set("getNullForm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRequiredCurrentForm(value: IScope => js.Object): Self = this.set("getRequiredCurrentForm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRejectedPromise(value: js.Object => Unit): Self = this.set("rejectedPromise", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSafeApply(value: (IScope, js.Function) => Unit): Self = this.set("safeApply", js.Any.fromFunction2(value))
+    def setSafeApply(value: (IScope, js.Function) => Unit): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
   }
 }

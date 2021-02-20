@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationOptions extends js.Object {
+trait NavigationOptions extends StObject {
   
   /**
     * CSS class name added to navigation button when it becomes disabled
@@ -53,48 +54,36 @@ object NavigationOptions {
   }
   
   @scala.inline
-  implicit class NavigationOptionsOps[Self <: NavigationOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledClass(value: String): Self = this.set("disabledClass", value.asInstanceOf[js.Any])
+    def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
     
     @scala.inline
-    def deleteDisabledClass: Self = this.set("disabledClass", js.undefined)
+    def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenClass(value: String): Self = this.set("hiddenClass", value.asInstanceOf[js.Any])
+    def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
     
     @scala.inline
-    def deleteHiddenClass: Self = this.set("hiddenClass", js.undefined)
+    def setNextEl(value: SelectableElement): Self = StObject.set(x, "nextEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOnClick(value: Boolean): Self = this.set("hideOnClick", value.asInstanceOf[js.Any])
+    def setNextElUndefined: Self = StObject.set(x, "nextEl", js.undefined)
     
     @scala.inline
-    def deleteHideOnClick: Self = this.set("hideOnClick", js.undefined)
+    def setPrevEl(value: SelectableElement): Self = StObject.set(x, "prevEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextEl(value: SelectableElement): Self = this.set("nextEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextEl: Self = this.set("nextEl", js.undefined)
-    
-    @scala.inline
-    def setPrevEl(value: SelectableElement): Self = this.set("prevEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevEl: Self = this.set("prevEl", js.undefined)
+    def setPrevElUndefined: Self = StObject.set(x, "prevEl", js.undefined)
   }
 }

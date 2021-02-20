@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerBackgroundColor extends js.Object {
+trait ContainerBackgroundColor extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ContainerBackgroundColor {
   }
   
   @scala.inline
-  implicit class ContainerBackgroundColorOps[Self <: ContainerBackgroundColor] (val x: Self) extends AnyVal {
+  implicit class ContainerBackgroundColorMutableBuilder[Self <: ContainerBackgroundColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerBackgroundColor(value: String): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
-    
-    @scala.inline
-    def setContainerBackgroundColor(value: String): Self = this.set("containerBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerBackgroundColor: Self = this.set("containerBackgroundColor", js.undefined)
+    def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
   }
 }

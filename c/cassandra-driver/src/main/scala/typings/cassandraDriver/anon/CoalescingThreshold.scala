@@ -1,11 +1,12 @@
 package typings.cassandraDriver.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoalescingThreshold extends js.Object {
+trait CoalescingThreshold extends StObject {
   
   var coalescingThreshold: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object CoalescingThreshold {
   }
   
   @scala.inline
-  implicit class CoalescingThresholdOps[Self <: CoalescingThreshold] (val x: Self) extends AnyVal {
+  implicit class CoalescingThresholdMutableBuilder[Self <: CoalescingThreshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoalescingThreshold(value: Double): Self = StObject.set(x, "coalescingThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoalescingThresholdUndefined: Self = StObject.set(x, "coalescingThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoalescingThreshold(value: Double): Self = this.set("coalescingThreshold", value.asInstanceOf[js.Any])
+    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
     @scala.inline
-    def deleteCoalescingThreshold: Self = this.set("coalescingThreshold", js.undefined)
+    def setDefunctReadTimeoutThreshold(value: Double): Self = StObject.set(x, "defunctReadTimeoutThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    def setDefunctReadTimeoutThresholdUndefined: Self = StObject.set(x, "defunctReadTimeoutThreshold", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefunctReadTimeoutThreshold(value: Double): Self = this.set("defunctReadTimeoutThreshold", value.asInstanceOf[js.Any])
+    def setKeepAliveDelay(value: Double): Self = StObject.set(x, "keepAliveDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefunctReadTimeoutThreshold: Self = this.set("defunctReadTimeoutThreshold", js.undefined)
+    def setKeepAliveDelayUndefined: Self = StObject.set(x, "keepAliveDelay", js.undefined)
     
     @scala.inline
-    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     @scala.inline
-    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAliveDelay(value: Double): Self = this.set("keepAliveDelay", value.asInstanceOf[js.Any])
+    def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
     
     @scala.inline
-    def deleteKeepAliveDelay: Self = this.set("keepAliveDelay", js.undefined)
+    def setTcpNoDelay(value: Boolean): Self = StObject.set(x, "tcpNoDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTimeout(value: Double): Self = this.set("readTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadTimeout: Self = this.set("readTimeout", js.undefined)
-    
-    @scala.inline
-    def setTcpNoDelay(value: Boolean): Self = this.set("tcpNoDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpNoDelay: Self = this.set("tcpNoDelay", js.undefined)
+    def setTcpNoDelayUndefined: Self = StObject.set(x, "tcpNoDelay", js.undefined)
   }
 }

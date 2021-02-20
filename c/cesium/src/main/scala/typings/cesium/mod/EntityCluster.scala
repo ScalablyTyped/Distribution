@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.ClusterBillboards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EntityCluster")
 @js.native
-class EntityCluster () extends js.Object {
+class EntityCluster () extends StObject {
   def this(options: ClusterBillboards) = this()
   
   var clusterBillboards: Boolean = js.native

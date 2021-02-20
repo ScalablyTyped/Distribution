@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,27 +48,15 @@ object EvolvingArrayType {
   }
   
   @scala.inline
-  implicit class EvolvingArrayTypeOps[Self <: EvolvingArrayType] (val x: Self) extends AnyVal {
+  implicit class EvolvingArrayTypeMutableBuilder[Self <: EvolvingArrayType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementType(value: Type): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalArrayType(value: Type): Self = StObject.set(x, "finalArrayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElementType(value: Type): Self = this.set("elementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinalArrayType(value: Type): Self = this.set("finalArrayType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalArrayType: Self = this.set("finalArrayType", js.undefined)
+    def setFinalArrayTypeUndefined: Self = StObject.set(x, "finalArrayType", js.undefined)
   }
 }

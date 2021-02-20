@@ -1,11 +1,12 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RESTAPIRequestBody[T] extends js.Object {
+trait RESTAPIRequestBody[T] extends StObject {
   
   val data: T = js.native
   
@@ -32,33 +33,21 @@ object RESTAPIRequestBody {
   }
   
   @scala.inline
-  implicit class RESTAPIRequestBodyOps[Self <: RESTAPIRequestBody[_], T] (val x: Self with RESTAPIRequestBody[T]) extends AnyVal {
+  implicit class RESTAPIRequestBodyMutableBuilder[Self <: RESTAPIRequestBody[_], T] (val x: Self with RESTAPIRequestBody[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataStream(value: js.Object): Self = StObject.set(x, "dataStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataString(value: String): Self = StObject.set(x, "dataString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataStream(value: js.Object): Self = this.set("dataStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataString(value: String): Self = this.set("dataString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasNext(value: () => Boolean): Self = this.set("hasNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNextEntry(value: () => js.Any): Self = this.set("nextEntry", js.Any.fromFunction0(value))
+    def setNextEntry(value: () => js.Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
   }
 }

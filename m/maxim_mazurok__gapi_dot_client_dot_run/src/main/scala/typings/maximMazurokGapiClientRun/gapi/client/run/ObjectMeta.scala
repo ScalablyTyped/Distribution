@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectMeta extends js.Object {
+trait ObjectMeta extends StObject {
   
   /**
     * (Optional) Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and
@@ -120,122 +121,110 @@ object ObjectMeta {
   }
   
   @scala.inline
-  implicit class ObjectMetaOps[Self <: ObjectMeta] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ObjectMetaMutableBuilder[Self <: ObjectMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta with TopLevel[js.Any]
-    ): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def setDeletionGracePeriodSeconds(value: Double): Self = this.set("deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
+    def setDeletionGracePeriodSeconds(value: Double): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeletionGracePeriodSeconds: Self = this.set("deletionGracePeriodSeconds", js.undefined)
+    def setDeletionGracePeriodSecondsUndefined: Self = StObject.set(x, "deletionGracePeriodSeconds", js.undefined)
     
     @scala.inline
-    def setDeletionTimestamp(value: String): Self = this.set("deletionTimestamp", value.asInstanceOf[js.Any])
+    def setDeletionTimestamp(value: String): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeletionTimestamp: Self = this.set("deletionTimestamp", js.undefined)
+    def setDeletionTimestampUndefined: Self = StObject.set(x, "deletionTimestamp", js.undefined)
     
     @scala.inline
-    def setFinalizersVarargs(value: String*): Self = this.set("finalizers", js.Array(value :_*))
+    def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalizers(value: js.Array[String]): Self = this.set("finalizers", value.asInstanceOf[js.Any])
+    def setFinalizersUndefined: Self = StObject.set(x, "finalizers", js.undefined)
     
     @scala.inline
-    def deleteFinalizers: Self = this.set("finalizers", js.undefined)
+    def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
     
     @scala.inline
-    def setGenerateName(value: String): Self = this.set("generateName", value.asInstanceOf[js.Any])
+    def setGenerateName(value: String): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerateName: Self = this.set("generateName", js.undefined)
+    def setGenerateNameUndefined: Self = StObject.set(x, "generateName", js.undefined)
     
     @scala.inline
-    def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeneration: Self = this.set("generation", js.undefined)
+    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def setOwnerReferencesVarargs(value: OwnerReference*): Self = this.set("ownerReferences", js.Array(value :_*))
+    def setOwnerReferences(value: js.Array[OwnerReference]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerReferences(value: js.Array[OwnerReference]): Self = this.set("ownerReferences", value.asInstanceOf[js.Any])
+    def setOwnerReferencesUndefined: Self = StObject.set(x, "ownerReferences", js.undefined)
     
     @scala.inline
-    def deleteOwnerReferences: Self = this.set("ownerReferences", js.undefined)
+    def setOwnerReferencesVarargs(value: OwnerReference*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
     
     @scala.inline
-    def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
+    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceVersion: Self = this.set("resourceVersion", js.undefined)
+    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUid: Self = this.set("uid", js.undefined)
+    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

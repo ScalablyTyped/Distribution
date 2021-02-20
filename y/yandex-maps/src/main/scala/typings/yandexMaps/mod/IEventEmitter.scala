@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEventEmitter extends js.Object {
+trait IEventEmitter extends StObject {
   
   var events: IEventManager[js.Object] = js.native
 }
@@ -18,21 +19,9 @@ object IEventEmitter {
   }
   
   @scala.inline
-  implicit class IEventEmitterOps[Self <: IEventEmitter] (val x: Self) extends AnyVal {
+  implicit class IEventEmitterMutableBuilder[Self <: IEventEmitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvents(value: IEventManager[js.Object]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setEvents(value: IEventManager[js.Object]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
   }
 }

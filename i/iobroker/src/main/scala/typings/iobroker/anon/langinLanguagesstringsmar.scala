@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ lang in iobroker.iobroker/objects.<global>.ioBroker.Languages ]:? string} & {  smartType :string | null | undefined,   byOn :string | null | undefined} */
 @js.native
-trait langinLanguagesstringsmar extends js.Object {
+trait langinLanguagesstringsmar extends StObject {
   
   /** Which value to set when the ON command is issued */
   var byOn: js.UndefOr[String | Null] = js.native
@@ -43,96 +44,84 @@ object langinLanguagesstringsmar {
   }
   
   @scala.inline
-  implicit class langinLanguagesstringsmarOps[Self <: langinLanguagesstringsmar] (val x: Self) extends AnyVal {
+  implicit class langinLanguagesstringsmarMutableBuilder[Self <: langinLanguagesstringsmar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByOn(value: String): Self = StObject.set(x, "byOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByOnNull: Self = StObject.set(x, "byOn", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByOnUndefined: Self = StObject.set(x, "byOn", js.undefined)
     
     @scala.inline
-    def setByOn(value: String): Self = this.set("byOn", value.asInstanceOf[js.Any])
+    def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteByOn: Self = this.set("byOn", js.undefined)
+    def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
     
     @scala.inline
-    def setByOnNull: Self = this.set("byOn", null)
+    def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDe(value: String): Self = this.set("de", value.asInstanceOf[js.Any])
+    def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
     
     @scala.inline
-    def deleteDe: Self = this.set("de", js.undefined)
+    def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEn(value: String): Self = this.set("en", value.asInstanceOf[js.Any])
+    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
     @scala.inline
-    def deleteEn: Self = this.set("en", js.undefined)
+    def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEs(value: String): Self = this.set("es", value.asInstanceOf[js.Any])
+    def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
     
     @scala.inline
-    def deleteEs: Self = this.set("es", js.undefined)
+    def setIt(value: String): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFr(value: String): Self = this.set("fr", value.asInstanceOf[js.Any])
+    def setItUndefined: Self = StObject.set(x, "it", js.undefined)
     
     @scala.inline
-    def deleteFr: Self = this.set("fr", js.undefined)
+    def setNl(value: String): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIt(value: String): Self = this.set("it", value.asInstanceOf[js.Any])
+    def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
     
     @scala.inline
-    def deleteIt: Self = this.set("it", js.undefined)
+    def setPl(value: String): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNl(value: String): Self = this.set("nl", value.asInstanceOf[js.Any])
+    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
     @scala.inline
-    def deleteNl: Self = this.set("nl", js.undefined)
+    def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPl(value: String): Self = this.set("pl", value.asInstanceOf[js.Any])
+    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
     @scala.inline
-    def deletePl: Self = this.set("pl", js.undefined)
+    def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPt(value: String): Self = this.set("pt", value.asInstanceOf[js.Any])
+    def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
     
     @scala.inline
-    def deletePt: Self = this.set("pt", js.undefined)
+    def setSmartType(value: String): Self = StObject.set(x, "smartType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRu(value: String): Self = this.set("ru", value.asInstanceOf[js.Any])
+    def setSmartTypeNull: Self = StObject.set(x, "smartType", null)
     
     @scala.inline
-    def deleteRu: Self = this.set("ru", js.undefined)
+    def setSmartTypeUndefined: Self = StObject.set(x, "smartType", js.undefined)
     
     @scala.inline
-    def setSmartType(value: String): Self = this.set("smartType", value.asInstanceOf[js.Any])
+    def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmartType: Self = this.set("smartType", js.undefined)
-    
-    @scala.inline
-    def setSmartTypeNull: Self = this.set("smartType", null)
-    
-    @scala.inline
-    def `setZh-cn`(value: String): Self = this.set("zh-cn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZh-cn`: Self = this.set("zh-cn", js.undefined)
+    def `setZh-cnUndefined`: Self = StObject.set(x, "zh-cn", js.undefined)
   }
 }

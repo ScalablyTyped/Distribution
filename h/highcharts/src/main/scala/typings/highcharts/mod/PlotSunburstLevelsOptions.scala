@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotSunburstLevelsOptions extends js.Object {
+trait PlotSunburstLevelsOptions extends StObject {
   
   /**
     * (Highcharts) Can set a `borderColor` on all points which lies on the same
@@ -72,75 +73,63 @@ object PlotSunburstLevelsOptions {
   }
   
   @scala.inline
-  implicit class PlotSunburstLevelsOptionsOps[Self <: PlotSunburstLevelsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotSunburstLevelsOptionsMutableBuilder[Self <: PlotSunburstLevelsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderDashStyle(value: DashStyleValue): Self = StObject.set(x, "borderDashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ColorString): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderDashStyleUndefined: Self = StObject.set(x, "borderDashStyle", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderDashStyle(value: DashStyleValue): Self = this.set("borderDashStyle", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderDashStyle: Self = this.set("borderDashStyle", js.undefined)
+    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColorVariation(value: PlotSunburstLevelsColorVariationOptions): Self = StObject.set(x, "colorVariation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorVariationUndefined: Self = StObject.set(x, "colorVariation", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDataLabels(value: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorVariation(value: PlotSunburstLevelsColorVariationOptions): Self = this.set("colorVariation", value.asInstanceOf[js.Any])
+    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     @scala.inline
-    def deleteColorVariation: Self = this.set("colorVariation", js.undefined)
+    def setDataLabelsVarargs(value: SeriesSunburstDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
     
     @scala.inline
-    def setDataLabelsVarargs(value: SeriesSunburstDataLabelsOptionsObject*): Self = this.set("dataLabels", js.Array(value :_*))
+    def setLevelSize(value: js.Object): Self = StObject.set(x, "levelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLabels(value: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject]): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    def setLevelSizeUndefined: Self = StObject.set(x, "levelSize", js.undefined)
     
     @scala.inline
-    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelSize(value: js.Object): Self = this.set("levelSize", value.asInstanceOf[js.Any])
+    def setRotationMode(value: String): Self = StObject.set(x, "rotationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevelSize: Self = this.set("levelSize", js.undefined)
+    def setRotationModeUndefined: Self = StObject.set(x, "rotationMode", js.undefined)
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
-    
-    @scala.inline
-    def setRotationMode(value: String): Self = this.set("rotationMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationMode: Self = this.set("rotationMode", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
   }
 }

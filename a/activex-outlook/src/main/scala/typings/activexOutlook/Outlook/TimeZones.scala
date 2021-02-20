@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeZones extends js.Object {
+trait TimeZones extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -47,45 +48,33 @@ object TimeZones {
   }
   
   @scala.inline
-  implicit class TimeZonesOps[Self <: TimeZones] (val x: Self) extends AnyVal {
+  implicit class TimeZonesMutableBuilder[Self <: TimeZones] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertTime(value: (VarDate, TimeZone, TimeZone) => VarDate): Self = StObject.set(x, "ConvertTime", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setCurrentTimeZone(value: TimeZone): Self = StObject.set(x, "CurrentTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertTime(value: (VarDate, TimeZone, TimeZone) => VarDate): Self = this.set("ConvertTime", js.Any.fromFunction3(value))
+    def setItem(value: js.Any => TimeZone): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setOutlookDotTimeZones_typekey(value: TimeZones): Self = StObject.set(x, "Outlook.TimeZones_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTimeZone(value: TimeZone): Self = this.set("CurrentTimeZone", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => TimeZone): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOutlookDotTimeZones_typekey(value: TimeZones): Self = this.set("Outlook.TimeZones_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

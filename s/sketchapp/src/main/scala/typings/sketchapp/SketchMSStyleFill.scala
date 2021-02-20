@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.styleFill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSStyleFill extends js.Object {
+trait SketchMSStyleFill extends StObject {
   
   var _class: styleFill = js.native
   
@@ -48,48 +49,36 @@ object SketchMSStyleFill {
   }
   
   @scala.inline
-  implicit class SketchMSStyleFillOps[Self <: SketchMSStyleFill] (val x: Self) extends AnyVal {
+  implicit class SketchMSStyleFillMutableBuilder[Self <: SketchMSStyleFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillType(value: Double): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: styleFill): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setGradient(value: SketchMSGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: SketchMSColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = this.set("contextSettings", value.asInstanceOf[js.Any])
+    def setNoiseIndex(value: Double): Self = StObject.set(x, "noiseIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillType(value: Double): Self = this.set("fillType", value.asInstanceOf[js.Any])
+    def setNoiseIntensity(value: Double): Self = StObject.set(x, "noiseIntensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: SketchMSGradient): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    def setPatternFillType(value: Double): Self = StObject.set(x, "patternFillType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Double): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setPatternTileScale(value: Double): Self = StObject.set(x, "patternTileScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoiseIndex(value: Double): Self = this.set("noiseIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoiseIntensity(value: Double): Self = this.set("noiseIntensity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatternFillType(value: Double): Self = this.set("patternFillType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatternTileScale(value: Double): Self = this.set("patternTileScale", value.asInstanceOf[js.Any])
+    def set_class(value: styleFill): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

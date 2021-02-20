@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * applied in a nested manner at runtime.
   */
 @js.native
-trait SchemaDeidentifyConfig extends js.Object {
+trait SchemaDeidentifyConfig extends StObject {
   
   /**
     * Configures de-id of application/DICOM content.
@@ -44,42 +45,30 @@ object SchemaDeidentifyConfig {
   }
   
   @scala.inline
-  implicit class SchemaDeidentifyConfigOps[Self <: SchemaDeidentifyConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaDeidentifyConfigMutableBuilder[Self <: SchemaDeidentifyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDicom(value: SchemaDicomConfig): Self = StObject.set(x, "dicom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDicomUndefined: Self = StObject.set(x, "dicom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFhir(value: SchemaFhirConfig): Self = StObject.set(x, "fhir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDicom(value: SchemaDicomConfig): Self = this.set("dicom", value.asInstanceOf[js.Any])
+    def setFhirUndefined: Self = StObject.set(x, "fhir", js.undefined)
     
     @scala.inline
-    def deleteDicom: Self = this.set("dicom", js.undefined)
+    def setImage(value: SchemaImageConfig): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFhir(value: SchemaFhirConfig): Self = this.set("fhir", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteFhir: Self = this.set("fhir", js.undefined)
+    def setText(value: SchemaTextConfig): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: SchemaImageConfig): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
-    
-    @scala.inline
-    def setText(value: SchemaTextConfig): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

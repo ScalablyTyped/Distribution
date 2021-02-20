@@ -3,18 +3,14 @@ package typings.raspiLed
 import typings.raspiLed.raspiLedNumbers.`0`
 import typings.raspiLed.raspiLedNumbers.`1`
 import typings.raspiPeripheral.mod.Peripheral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("raspi-led", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val OFF: /* 0 */ Double = js.native
-  
-  val ON: /* 1 */ Double = js.native
-  
+  @JSImport("raspi-led", "LED")
   @js.native
   class LED () extends Peripheral {
     
@@ -27,4 +23,12 @@ object mod extends js.Object {
     @JSName("write")
     def write_1(value: `1`): Unit = js.native
   }
+  
+  @JSImport("raspi-led", "OFF")
+  @js.native
+  val OFF: /* 0 */ Double = js.native
+  
+  @JSImport("raspi-led", "ON")
+  @js.native
+  val ON: /* 1 */ Double = js.native
 }

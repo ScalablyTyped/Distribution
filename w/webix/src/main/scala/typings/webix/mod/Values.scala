@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Values extends js.Object {
+trait Values extends StObject {
   
   def clear(): Unit = js.native
   
@@ -31,6 +31,3 @@ trait Values extends js.Object {
   def setValues(values: js.Any): Unit = js.native
   def setValues(values: js.Any, update: Boolean): Unit = js.native
 }
-@JSImport("webix", "Values")
-@js.native
-object Values extends TopLevel[Values]

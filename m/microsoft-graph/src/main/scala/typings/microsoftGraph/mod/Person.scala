@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,201 +78,189 @@ object Person {
   }
   
   @scala.inline
-  implicit class PersonOps[Self <: Person] (val x: Self) extends AnyVal {
+  implicit class PersonMutableBuilder[Self <: Person] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBirthday(value: NullableOption[String]): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBirthdayNull: Self = StObject.set(x, "birthday", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBirthdayUndefined: Self = StObject.set(x, "birthday", js.undefined)
     
     @scala.inline
-    def setBirthday(value: NullableOption[String]): Self = this.set("birthday", value.asInstanceOf[js.Any])
+    def setCompanyName(value: NullableOption[String]): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBirthday: Self = this.set("birthday", js.undefined)
+    def setCompanyNameNull: Self = StObject.set(x, "companyName", null)
     
     @scala.inline
-    def setBirthdayNull: Self = this.set("birthday", null)
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def setCompanyName(value: NullableOption[String]): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setDepartment(value: NullableOption[String]): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setDepartmentNull: Self = StObject.set(x, "department", null)
     
     @scala.inline
-    def setCompanyNameNull: Self = this.set("companyName", null)
+    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
     @scala.inline
-    def setDepartment(value: NullableOption[String]): Self = this.set("department", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDepartment: Self = this.set("department", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDepartmentNull: Self = this.set("department", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGivenName(value: NullableOption[String]): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setGivenNameNull: Self = StObject.set(x, "givenName", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
     
     @scala.inline
-    def setGivenName(value: NullableOption[String]): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    def setImAddress(value: NullableOption[String]): Self = StObject.set(x, "imAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    def setImAddressNull: Self = StObject.set(x, "imAddress", null)
     
     @scala.inline
-    def setGivenNameNull: Self = this.set("givenName", null)
+    def setImAddressUndefined: Self = StObject.set(x, "imAddress", js.undefined)
     
     @scala.inline
-    def setImAddress(value: NullableOption[String]): Self = this.set("imAddress", value.asInstanceOf[js.Any])
+    def setIsFavorite(value: NullableOption[Boolean]): Self = StObject.set(x, "isFavorite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImAddress: Self = this.set("imAddress", js.undefined)
+    def setIsFavoriteNull: Self = StObject.set(x, "isFavorite", null)
     
     @scala.inline
-    def setImAddressNull: Self = this.set("imAddress", null)
+    def setIsFavoriteUndefined: Self = StObject.set(x, "isFavorite", js.undefined)
     
     @scala.inline
-    def setIsFavorite(value: NullableOption[Boolean]): Self = this.set("isFavorite", value.asInstanceOf[js.Any])
+    def setJobTitle(value: NullableOption[String]): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsFavorite: Self = this.set("isFavorite", js.undefined)
+    def setJobTitleNull: Self = StObject.set(x, "jobTitle", null)
     
     @scala.inline
-    def setIsFavoriteNull: Self = this.set("isFavorite", null)
+    def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
     
     @scala.inline
-    def setJobTitle(value: NullableOption[String]): Self = this.set("jobTitle", value.asInstanceOf[js.Any])
+    def setOfficeLocation(value: NullableOption[String]): Self = StObject.set(x, "officeLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJobTitle: Self = this.set("jobTitle", js.undefined)
+    def setOfficeLocationNull: Self = StObject.set(x, "officeLocation", null)
     
     @scala.inline
-    def setJobTitleNull: Self = this.set("jobTitle", null)
+    def setOfficeLocationUndefined: Self = StObject.set(x, "officeLocation", js.undefined)
     
     @scala.inline
-    def setOfficeLocation(value: NullableOption[String]): Self = this.set("officeLocation", value.asInstanceOf[js.Any])
+    def setPersonNotes(value: NullableOption[String]): Self = StObject.set(x, "personNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOfficeLocation: Self = this.set("officeLocation", js.undefined)
+    def setPersonNotesNull: Self = StObject.set(x, "personNotes", null)
     
     @scala.inline
-    def setOfficeLocationNull: Self = this.set("officeLocation", null)
+    def setPersonNotesUndefined: Self = StObject.set(x, "personNotes", js.undefined)
     
     @scala.inline
-    def setPersonNotes(value: NullableOption[String]): Self = this.set("personNotes", value.asInstanceOf[js.Any])
+    def setPersonType(value: NullableOption[PersonType]): Self = StObject.set(x, "personType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersonNotes: Self = this.set("personNotes", js.undefined)
+    def setPersonTypeNull: Self = StObject.set(x, "personType", null)
     
     @scala.inline
-    def setPersonNotesNull: Self = this.set("personNotes", null)
+    def setPersonTypeUndefined: Self = StObject.set(x, "personType", js.undefined)
     
     @scala.inline
-    def setPersonType(value: NullableOption[PersonType]): Self = this.set("personType", value.asInstanceOf[js.Any])
+    def setPhones(value: NullableOption[js.Array[Phone]]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersonType: Self = this.set("personType", js.undefined)
+    def setPhonesNull: Self = StObject.set(x, "phones", null)
     
     @scala.inline
-    def setPersonTypeNull: Self = this.set("personType", null)
+    def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
     
     @scala.inline
-    def setPhonesVarargs(value: Phone*): Self = this.set("phones", js.Array(value :_*))
+    def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value :_*))
     
     @scala.inline
-    def setPhones(value: NullableOption[js.Array[Phone]]): Self = this.set("phones", value.asInstanceOf[js.Any])
+    def setPostalAddresses(value: NullableOption[js.Array[Location]]): Self = StObject.set(x, "postalAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhones: Self = this.set("phones", js.undefined)
+    def setPostalAddressesNull: Self = StObject.set(x, "postalAddresses", null)
     
     @scala.inline
-    def setPhonesNull: Self = this.set("phones", null)
+    def setPostalAddressesUndefined: Self = StObject.set(x, "postalAddresses", js.undefined)
     
     @scala.inline
-    def setPostalAddressesVarargs(value: Location*): Self = this.set("postalAddresses", js.Array(value :_*))
+    def setPostalAddressesVarargs(value: Location*): Self = StObject.set(x, "postalAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setPostalAddresses(value: NullableOption[js.Array[Location]]): Self = this.set("postalAddresses", value.asInstanceOf[js.Any])
+    def setProfession(value: NullableOption[String]): Self = StObject.set(x, "profession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePostalAddresses: Self = this.set("postalAddresses", js.undefined)
+    def setProfessionNull: Self = StObject.set(x, "profession", null)
     
     @scala.inline
-    def setPostalAddressesNull: Self = this.set("postalAddresses", null)
+    def setProfessionUndefined: Self = StObject.set(x, "profession", js.undefined)
     
     @scala.inline
-    def setProfession(value: NullableOption[String]): Self = this.set("profession", value.asInstanceOf[js.Any])
+    def setScoredEmailAddresses(value: NullableOption[js.Array[ScoredEmailAddress]]): Self = StObject.set(x, "scoredEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfession: Self = this.set("profession", js.undefined)
+    def setScoredEmailAddressesNull: Self = StObject.set(x, "scoredEmailAddresses", null)
     
     @scala.inline
-    def setProfessionNull: Self = this.set("profession", null)
+    def setScoredEmailAddressesUndefined: Self = StObject.set(x, "scoredEmailAddresses", js.undefined)
     
     @scala.inline
-    def setScoredEmailAddressesVarargs(value: ScoredEmailAddress*): Self = this.set("scoredEmailAddresses", js.Array(value :_*))
+    def setScoredEmailAddressesVarargs(value: ScoredEmailAddress*): Self = StObject.set(x, "scoredEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setScoredEmailAddresses(value: NullableOption[js.Array[ScoredEmailAddress]]): Self = this.set("scoredEmailAddresses", value.asInstanceOf[js.Any])
+    def setSurname(value: NullableOption[String]): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScoredEmailAddresses: Self = this.set("scoredEmailAddresses", js.undefined)
+    def setSurnameNull: Self = StObject.set(x, "surname", null)
     
     @scala.inline
-    def setScoredEmailAddressesNull: Self = this.set("scoredEmailAddresses", null)
+    def setSurnameUndefined: Self = StObject.set(x, "surname", js.undefined)
     
     @scala.inline
-    def setSurname(value: NullableOption[String]): Self = this.set("surname", value.asInstanceOf[js.Any])
+    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSurname: Self = this.set("surname", js.undefined)
+    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     @scala.inline
-    def setSurnameNull: Self = this.set("surname", null)
+    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
     
     @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
+    def setWebsites(value: NullableOption[js.Array[Website]]): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
+    def setWebsitesNull: Self = StObject.set(x, "websites", null)
     
     @scala.inline
-    def setUserPrincipalNameNull: Self = this.set("userPrincipalName", null)
+    def setWebsitesUndefined: Self = StObject.set(x, "websites", js.undefined)
     
     @scala.inline
-    def setWebsitesVarargs(value: Website*): Self = this.set("websites", js.Array(value :_*))
+    def setWebsitesVarargs(value: Website*): Self = StObject.set(x, "websites", js.Array(value :_*))
     
     @scala.inline
-    def setWebsites(value: NullableOption[js.Array[Website]]): Self = this.set("websites", value.asInstanceOf[js.Any])
+    def setYomiCompany(value: NullableOption[String]): Self = StObject.set(x, "yomiCompany", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebsites: Self = this.set("websites", js.undefined)
+    def setYomiCompanyNull: Self = StObject.set(x, "yomiCompany", null)
     
     @scala.inline
-    def setWebsitesNull: Self = this.set("websites", null)
-    
-    @scala.inline
-    def setYomiCompany(value: NullableOption[String]): Self = this.set("yomiCompany", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYomiCompany: Self = this.set("yomiCompany", js.undefined)
-    
-    @scala.inline
-    def setYomiCompanyNull: Self = this.set("yomiCompany", null)
+    def setYomiCompanyUndefined: Self = StObject.set(x, "yomiCompany", js.undefined)
   }
 }

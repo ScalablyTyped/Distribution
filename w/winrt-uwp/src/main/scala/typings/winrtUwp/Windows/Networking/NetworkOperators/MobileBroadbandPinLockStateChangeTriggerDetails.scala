@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network registration state change notification. */
 @js.native
-trait MobileBroadbandPinLockStateChangeTriggerDetails extends js.Object {
+trait MobileBroadbandPinLockStateChangeTriggerDetails extends StObject {
   
   /** Gets the collection of PIN lock state change details associated with a notification. */
   var pinLockStateChanges: IVectorView[MobileBroadbandPinLockStateChange] = js.native
@@ -21,21 +22,9 @@ object MobileBroadbandPinLockStateChangeTriggerDetails {
   }
   
   @scala.inline
-  implicit class MobileBroadbandPinLockStateChangeTriggerDetailsOps[Self <: MobileBroadbandPinLockStateChangeTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandPinLockStateChangeTriggerDetailsMutableBuilder[Self <: MobileBroadbandPinLockStateChangeTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPinLockStateChanges(value: IVectorView[MobileBroadbandPinLockStateChange]): Self = this.set("pinLockStateChanges", value.asInstanceOf[js.Any])
+    def setPinLockStateChanges(value: IVectorView[MobileBroadbandPinLockStateChange]): Self = StObject.set(x, "pinLockStateChanges", value.asInstanceOf[js.Any])
   }
 }

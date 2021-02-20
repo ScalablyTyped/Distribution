@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Etc1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasisTranscodeConfiguration extends js.Object {
+trait BasisTranscodeConfiguration extends StObject {
   
   /**
     * If mipmap levels should be loaded for transcoded images (Default: true)
@@ -32,36 +33,24 @@ object BasisTranscodeConfiguration {
   }
   
   @scala.inline
-  implicit class BasisTranscodeConfigurationOps[Self <: BasisTranscodeConfiguration] (val x: Self) extends AnyVal {
+  implicit class BasisTranscodeConfigurationMutableBuilder[Self <: BasisTranscodeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadMipmapLevels(value: Boolean): Self = StObject.set(x, "loadMipmapLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadMipmapLevelsUndefined: Self = StObject.set(x, "loadMipmapLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadSingleImage(value: Double): Self = StObject.set(x, "loadSingleImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadMipmapLevels(value: Boolean): Self = this.set("loadMipmapLevels", value.asInstanceOf[js.Any])
+    def setLoadSingleImageUndefined: Self = StObject.set(x, "loadSingleImage", js.undefined)
     
     @scala.inline
-    def deleteLoadMipmapLevels: Self = this.set("loadMipmapLevels", js.undefined)
+    def setSupportedCompressionFormats(value: Etc1): Self = StObject.set(x, "supportedCompressionFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadSingleImage(value: Double): Self = this.set("loadSingleImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadSingleImage: Self = this.set("loadSingleImage", js.undefined)
-    
-    @scala.inline
-    def setSupportedCompressionFormats(value: Etc1): Self = this.set("supportedCompressionFormats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedCompressionFormats: Self = this.set("supportedCompressionFormats", js.undefined)
+    def setSupportedCompressionFormatsUndefined: Self = StObject.set(x, "supportedCompressionFormats", js.undefined)
   }
 }

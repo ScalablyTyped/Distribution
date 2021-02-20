@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLTextArea extends js.Object {
+trait HTMLTextArea extends StObject {
   
   var Columns: Double = js.native
   
@@ -37,36 +38,24 @@ object HTMLTextArea {
   }
   
   @scala.inline
-  implicit class HTMLTextAreaOps[Self <: HTMLTextArea] (val x: Self) extends AnyVal {
+  implicit class HTMLTextAreaMutableBuilder[Self <: HTMLTextArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: Double): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSFormsDotHTMLTextArea_typekey(value: HTMLTextArea): Self = StObject.set(x, "MSForms.HTMLTextArea_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLName(value: String): Self = this.set("HTMLName", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSFormsDotHTMLTextArea_typekey(value: HTMLTextArea): Self = this.set("MSForms.HTMLTextArea_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("Rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordWrap(value: String): Self = this.set("WordWrap", value.asInstanceOf[js.Any])
+    def setWordWrap(value: String): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

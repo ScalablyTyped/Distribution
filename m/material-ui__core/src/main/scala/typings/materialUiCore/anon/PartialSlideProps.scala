@@ -5,13 +5,14 @@ import typings.materialUiCore.materialUiCoreStrings.left
 import typings.materialUiCore.materialUiCoreStrings.right
 import typings.materialUiCore.materialUiCoreStrings.up
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/Slide.SlideProps> */
 @js.native
-trait PartialSlideProps extends js.Object {
+trait PartialSlideProps extends StObject {
   
   var addEndListener: js.UndefOr[js.Any] = js.native
   
@@ -56,120 +57,108 @@ object PartialSlideProps {
   }
   
   @scala.inline
-  implicit class PartialSlidePropsOps[Self <: PartialSlideProps] (val x: Self) extends AnyVal {
+  implicit class PartialSlidePropsMutableBuilder[Self <: PartialSlideProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEndListener(value: js.Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddEndListenerUndefined: Self = StObject.set(x, "addEndListener", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEndListener(value: js.Any): Self = this.set("addEndListener", value.asInstanceOf[js.Any])
+    def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
     
     @scala.inline
-    def deleteAddEndListener: Self = this.set("addEndListener", js.undefined)
+    def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppear(value: Boolean): Self = this.set("appear", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteAppear: Self = this.set("appear", js.undefined)
+    def setEnter(value: Boolean): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: left | right | up | down): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnter(value: Boolean): Self = this.set("enter", value.asInstanceOf[js.Any])
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
     @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
+    def setIn(value: js.Any): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit(value: Boolean): Self = this.set("exit", value.asInstanceOf[js.Any])
+    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
     @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setMountOnEnter(value: js.Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIn(value: js.Any): Self = this.set("in", value.asInstanceOf[js.Any])
+    def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
     
     @scala.inline
-    def deleteIn: Self = this.set("in", js.undefined)
+    def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountOnEnter(value: js.Any): Self = this.set("mountOnEnter", value.asInstanceOf[js.Any])
+    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def deleteMountOnEnter: Self = this.set("mountOnEnter", js.undefined)
+    def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnter(value: js.Any): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
     
     @scala.inline
-    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEntered(value: js.Any): Self = this.set("onEntered", value.asInstanceOf[js.Any])
+    def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
     
     @scala.inline
-    def deleteOnEntered: Self = this.set("onEntered", js.undefined)
+    def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEntering(value: js.Any): Self = this.set("onEntering", value.asInstanceOf[js.Any])
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def deleteOnEntering: Self = this.set("onEntering", js.undefined)
+    def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExit(value: js.Any): Self = this.set("onExit", value.asInstanceOf[js.Any])
+    def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
     @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExited(value: js.Any): Self = this.set("onExited", value.asInstanceOf[js.Any])
+    def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
     
     @scala.inline
-    def deleteOnExited: Self = this.set("onExited", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExiting(value: js.Any): Self = this.set("onExiting", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteOnExiting: Self = this.set("onExiting", js.undefined)
+    def setTheme(value: typings.materialUiCore.createMuiThemeMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: typings.materialUiCore.createMuiThemeMod.Theme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setUnmountOnExit(value: js.Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: js.Any): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUnmountOnExit(value: js.Any): Self = this.set("unmountOnExit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmountOnExit: Self = this.set("unmountOnExit", js.undefined)
+    def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
   }
 }

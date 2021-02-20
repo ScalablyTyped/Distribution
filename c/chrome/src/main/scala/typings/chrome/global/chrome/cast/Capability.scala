@@ -1,12 +1,13 @@
 package typings.chrome.global.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.Capability")
 @js.native
-object Capability extends js.Object {
+object Capability extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.Capability with String] = js.native

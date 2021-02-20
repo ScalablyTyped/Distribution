@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityQuery extends js.Object {
+trait EntityQuery extends StObject {
   
   var entityManager: EntityManager = js.native
   
@@ -71,10 +72,10 @@ trait EntityQuery extends js.Object {
   def using(obj: QueryOptions): EntityQuery = js.native
   
   def where(anArray: IRecursiveArray[String | Double | FilterQueryOpSymbol | Predicate]): EntityQuery = js.native
-    // for any/all clauses
+  // for any/all clauses
   def where(predicate: FilterQueryOpSymbol): EntityQuery = js.native
   def where(predicate: Predicate): EntityQuery = js.native
-    // for any/all clauses
+  // for any/all clauses
   def where(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): EntityQuery = js.native
   def where(
     property: String,

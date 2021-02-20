@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsyncOperationNotFound extends js.Object {
+trait AsyncOperationNotFound extends StObject {
   
   var asyncOperationNotFound: scala.Double = js.native
   
@@ -47,48 +48,36 @@ object AsyncOperationNotFound {
   }
   
   @scala.inline
-  implicit class AsyncOperationNotFoundOps[Self <: AsyncOperationNotFound] (val x: Self) extends AnyVal {
+  implicit class AsyncOperationNotFoundMutableBuilder[Self <: AsyncOperationNotFound] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncOperationNotFound(value: scala.Double): Self = StObject.set(x, "asyncOperationNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateBranchPermissionRequired(value: scala.Double): Self = StObject.set(x, "createBranchPermissionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGitObjectTooLarge(value: scala.Double): Self = StObject.set(x, "gitObjectTooLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncOperationNotFound(value: scala.Double): Self = this.set("asyncOperationNotFound", value.asInstanceOf[js.Any])
+    def setInvalidRefName(value: scala.Double): Self = StObject.set(x, "invalidRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBranchPermissionRequired(value: scala.Double): Self = this.set("createBranchPermissionRequired", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitObjectTooLarge(value: scala.Double): Self = this.set("gitObjectTooLarge", value.asInstanceOf[js.Any])
+    def setOperationIndentityNotFound(value: scala.Double): Self = StObject.set(x, "operationIndentityNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidRefName(value: scala.Double): Self = this.set("invalidRefName", value.asInstanceOf[js.Any])
+    def setOther(value: scala.Double): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setRefNameConflict(value: scala.Double): Self = StObject.set(x, "refNameConflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationIndentityNotFound(value: scala.Double): Self = this.set("operationIndentityNotFound", value.asInstanceOf[js.Any])
+    def setTargetBranchDeleted(value: scala.Double): Self = StObject.set(x, "targetBranchDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: scala.Double): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefNameConflict(value: scala.Double): Self = this.set("refNameConflict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetBranchDeleted(value: scala.Double): Self = this.set("targetBranchDeleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritePermissionRequired(value: scala.Double): Self = this.set("writePermissionRequired", value.asInstanceOf[js.Any])
+    def setWritePermissionRequired(value: scala.Double): Self = StObject.set(x, "writePermissionRequired", value.asInstanceOf[js.Any])
   }
 }

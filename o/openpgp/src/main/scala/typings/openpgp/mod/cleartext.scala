@@ -3,34 +3,20 @@ package typings.openpgp.mod
 import typings.openpgp.anon.Keyid
 import typings.openpgp.mod.signature.Signature
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openpgp", "cleartext")
-@js.native
-object cleartext extends js.Object {
-  
-  /**
-    * Creates a new CleartextMessage object from text
-    * @param text
-    */
-  def fromText(text: String): CleartextMessage = js.native
-  
-  /**
-    * reads an OpenPGP cleartext signed message and returns a CleartextMessage object
-    * @param armoredText text to be parsed
-    * @returns new cleartext message object
-    */
-  def readArmored(armoredText: String): js.Promise[CleartextMessage] = js.native
-  def readArmored(armoredText: ReadableStream[String]): js.Promise[CleartextMessage] = js.native
+object cleartext {
   
   /**
     * Class that represents an OpenPGP cleartext signed message.
     * See {@link https://tools.ietf.org/html/rfc4880#section-7}
     */
+  @JSImport("openpgp", "cleartext.CleartextMessage")
   @js.native
-  class CleartextMessage protected () extends js.Object {
+  class CleartextMessage protected () extends StObject {
     /**
       * @param text The cleartext of the signed message
       * @param signature The detached signature or an empty signature for unsigned messages
@@ -91,4 +77,24 @@ object cleartext extends js.Object {
       */
     def verifyDetached(keys: js.Array[_], date: Date): js.Promise[js.Array[Keyid]] = js.native
   }
+  
+  /**
+    * Creates a new CleartextMessage object from text
+    * @param text
+    */
+  @JSImport("openpgp", "cleartext.fromText")
+  @js.native
+  def fromText(text: String): CleartextMessage = js.native
+  
+  /**
+    * reads an OpenPGP cleartext signed message and returns a CleartextMessage object
+    * @param armoredText text to be parsed
+    * @returns new cleartext message object
+    */
+  @JSImport("openpgp", "cleartext.readArmored")
+  @js.native
+  def readArmored(armoredText: String): js.Promise[CleartextMessage] = js.native
+  @JSImport("openpgp", "cleartext.readArmored")
+  @js.native
+  def readArmored(armoredText: ReadableStream[String]): js.Promise[CleartextMessage] = js.native
 }

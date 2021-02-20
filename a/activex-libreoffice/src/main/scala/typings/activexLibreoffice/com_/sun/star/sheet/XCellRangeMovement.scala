@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,30 +64,18 @@ object XCellRangeMovement {
   }
   
   @scala.inline
-  implicit class XCellRangeMovementOps[Self <: XCellRangeMovement] (val x: Self) extends AnyVal {
+  implicit class XCellRangeMovementMutableBuilder[Self <: XCellRangeMovement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "copyRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertCells(value: (CellRangeAddress, CellInsertMode) => Unit): Self = StObject.set(x, "insertCells", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoveRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "moveRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCopyRange(value: (CellAddress, CellRangeAddress) => Unit): Self = this.set("copyRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInsertCells(value: (CellRangeAddress, CellInsertMode) => Unit): Self = this.set("insertCells", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMoveRange(value: (CellAddress, CellRangeAddress) => Unit): Self = this.set("moveRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveRange(value: (CellRangeAddress, CellDeleteMode) => Unit): Self = this.set("removeRange", js.Any.fromFunction2(value))
+    def setRemoveRange(value: (CellRangeAddress, CellDeleteMode) => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction2(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait TableRowCollectionLoadOptions extends js.Object {
+trait TableRowCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -108,84 +109,72 @@ object TableRowCollectionLoadOptions {
   }
   
   @scala.inline
-  implicit class TableRowCollectionLoadOptionsOps[Self <: TableRowCollectionLoadOptions] (val x: Self) extends AnyVal {
+  implicit class TableRowCollectionLoadOptionsMutableBuilder[Self <: TableRowCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellCount(value: Boolean): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellCount(value: Boolean): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCellCount: Self = this.set("cellCount", js.undefined)
+    def setHorizontalAlignment(value: Boolean): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontLoadOptions): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setIsHeader(value: Boolean): Self = StObject.set(x, "isHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: Boolean): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setIsHeaderUndefined: Self = StObject.set(x, "isHeader", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHeader(value: Boolean): Self = this.set("isHeader", value.asInstanceOf[js.Any])
+    def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
     @scala.inline
-    def deleteIsHeader: Self = this.set("isHeader", js.undefined)
+    def setPreferredHeight(value: Boolean): Self = StObject.set(x, "preferredHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTable(value: TableLoadOptions): Self = this.set("parentTable", value.asInstanceOf[js.Any])
+    def setPreferredHeightUndefined: Self = StObject.set(x, "preferredHeight", js.undefined)
     
     @scala.inline
-    def deleteParentTable: Self = this.set("parentTable", js.undefined)
+    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredHeight(value: Boolean): Self = this.set("preferredHeight", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deletePreferredHeight: Self = this.set("preferredHeight", js.undefined)
+    def setShadingColor(value: Boolean): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Boolean): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
     
     @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadingColor(value: Boolean): Self = this.set("shadingColor", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteShadingColor: Self = this.set("shadingColor", js.undefined)
+    def setVerticalAlignment(value: Boolean): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: Boolean): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlignment(value: Boolean): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

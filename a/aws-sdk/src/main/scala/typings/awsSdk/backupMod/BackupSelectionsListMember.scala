@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupSelectionsListMember extends js.Object {
+trait BackupSelectionsListMember extends StObject {
   
   /**
     * Uniquely identifies a backup plan.
@@ -46,54 +47,42 @@ object BackupSelectionsListMember {
   }
   
   @scala.inline
-  implicit class BackupSelectionsListMemberOps[Self <: BackupSelectionsListMember] (val x: Self) extends AnyVal {
+  implicit class BackupSelectionsListMemberMutableBuilder[Self <: BackupSelectionsListMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorRequestId(value: String): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
     @scala.inline
-    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setSelectionIdUndefined: Self = StObject.set(x, "SelectionId", js.undefined)
     
     @scala.inline
-    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    def setSelectionName(value: BackupSelectionName): Self = StObject.set(x, "SelectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionId(value: String): Self = this.set("SelectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionId: Self = this.set("SelectionId", js.undefined)
-    
-    @scala.inline
-    def setSelectionName(value: BackupSelectionName): Self = this.set("SelectionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionName: Self = this.set("SelectionName", js.undefined)
+    def setSelectionNameUndefined: Self = StObject.set(x, "SelectionName", js.undefined)
   }
 }

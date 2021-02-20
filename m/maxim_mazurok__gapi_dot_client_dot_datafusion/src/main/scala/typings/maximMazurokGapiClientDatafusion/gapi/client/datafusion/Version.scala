@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatafusion.gapi.client.datafusion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Version extends js.Object {
+trait Version extends StObject {
   
   /** Represents a list of available feature names for a given version. */
   var availableFeatures: js.UndefOr[js.Array[String]] = js.native
@@ -25,39 +26,27 @@ object Version {
   }
   
   @scala.inline
-  implicit class VersionOps[Self <: Version] (val x: Self) extends AnyVal {
+  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableFeatures(value: js.Array[String]): Self = StObject.set(x, "availableFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableFeaturesUndefined: Self = StObject.set(x, "availableFeatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableFeaturesVarargs(value: String*): Self = StObject.set(x, "availableFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableFeaturesVarargs(value: String*): Self = this.set("availableFeatures", js.Array(value :_*))
+    def setDefaultVersion(value: Boolean): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableFeatures(value: js.Array[String]): Self = this.set("availableFeatures", value.asInstanceOf[js.Any])
+    def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
     @scala.inline
-    def deleteAvailableFeatures: Self = this.set("availableFeatures", js.undefined)
+    def setVersionNumber(value: String): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersion(value: Boolean): Self = this.set("defaultVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultVersion: Self = this.set("defaultVersion", js.undefined)
-    
-    @scala.inline
-    def setVersionNumber(value: String): Self = this.set("versionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("versionNumber", js.undefined)
+    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

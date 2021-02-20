@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WheelDeltaX extends js.Object {
+trait WheelDeltaX extends StObject {
   
   var wheelDeltaX: Double = js.native
   
@@ -22,27 +23,15 @@ object WheelDeltaX {
   }
   
   @scala.inline
-  implicit class WheelDeltaXOps[Self <: WheelDeltaX] (val x: Self) extends AnyVal {
+  implicit class WheelDeltaXMutableBuilder[Self <: WheelDeltaX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWheelDeltaX(value: Double): Self = StObject.set(x, "wheelDeltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWheelDeltaY(value: Double): Self = StObject.set(x, "wheelDeltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWheelDeltaX(value: Double): Self = this.set("wheelDeltaX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWheelDeltaY(value: Double): Self = this.set("wheelDeltaY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWheelDeltaZ(value: Double): Self = this.set("wheelDeltaZ", value.asInstanceOf[js.Any])
+    def setWheelDeltaZ(value: Double): Self = StObject.set(x, "wheelDeltaZ", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAnimationObject extends js.Object {
+trait ChartAnimationObject extends StObject {
   
   var currentStep: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object ChartAnimationObject {
   }
   
   @scala.inline
-  implicit class ChartAnimationObjectOps[Self <: ChartAnimationObject] (val x: Self) extends AnyVal {
+  implicit class ChartAnimationObjectMutableBuilder[Self <: ChartAnimationObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentStep(value: Double): Self = StObject.set(x, "currentStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentStepUndefined: Self = StObject.set(x, "currentStep", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStep(value: Double): Self = this.set("currentStep", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteCurrentStep: Self = this.set("currentStep", js.undefined)
+    def setNumSteps(value: Double): Self = StObject.set(x, "numSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: Easing): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setNumStepsUndefined: Self = StObject.set(x, "numSteps", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setOnAnimationComplete(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "onAnimationComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumSteps(value: Double): Self = this.set("numSteps", value.asInstanceOf[js.Any])
+    def setOnAnimationCompleteUndefined: Self = StObject.set(x, "onAnimationComplete", js.undefined)
     
     @scala.inline
-    def deleteNumSteps: Self = this.set("numSteps", js.undefined)
+    def setOnAnimationProgress(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "onAnimationProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationComplete(value: /* arg */ js.Any => Unit): Self = this.set("onAnimationComplete", js.Any.fromFunction1(value))
+    def setOnAnimationProgressUndefined: Self = StObject.set(x, "onAnimationProgress", js.undefined)
     
     @scala.inline
-    def deleteOnAnimationComplete: Self = this.set("onAnimationComplete", js.undefined)
+    def setRender(value: /* arg */ js.Any => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationProgress(value: /* arg */ js.Any => Unit): Self = this.set("onAnimationProgress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnAnimationProgress: Self = this.set("onAnimationProgress", js.undefined)
-    
-    @scala.inline
-    def setRender(value: /* arg */ js.Any => Unit): Self = this.set("render", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

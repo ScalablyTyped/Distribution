@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridCoordinate extends js.Object {
+trait GridCoordinate extends StObject {
   
   /** The column index of the coordinate. */
   var columnIndex: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object GridCoordinate {
   }
   
   @scala.inline
-  implicit class GridCoordinateOps[Self <: GridCoordinate] (val x: Self) extends AnyVal {
+  implicit class GridCoordinateMutableBuilder[Self <: GridCoordinate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
-    
-    @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

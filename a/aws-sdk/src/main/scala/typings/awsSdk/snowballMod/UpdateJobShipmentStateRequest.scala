@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJobShipmentStateRequest extends js.Object {
+trait UpdateJobShipmentStateRequest extends StObject {
   
   /**
     * The job ID of the job whose shipment date you want to update, for example JID123e4567-e89b-12d3-a456-426655440000.
@@ -26,24 +27,12 @@ object UpdateJobShipmentStateRequest {
   }
   
   @scala.inline
-  implicit class UpdateJobShipmentStateRequestOps[Self <: UpdateJobShipmentStateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJobShipmentStateRequestMutableBuilder[Self <: UpdateJobShipmentStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShipmentState(value: ShipmentState): Self = this.set("ShipmentState", value.asInstanceOf[js.Any])
+    def setShipmentState(value: ShipmentState): Self = StObject.set(x, "ShipmentState", value.asInstanceOf[js.Any])
   }
 }

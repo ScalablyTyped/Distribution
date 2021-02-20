@@ -11,13 +11,14 @@ import typings.reactNativeElements.reactNativeElementsStrings.error
 import typings.reactNativeElements.reactNativeElementsStrings.primary
 import typings.reactNativeElements.reactNativeElementsStrings.success
 import typings.reactNativeElements.reactNativeElementsStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.BadgeProps> */
 @js.native
-trait PartialBadgeProps extends js.Object {
+trait PartialBadgeProps extends StObject {
   
   var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
   
@@ -44,75 +45,63 @@ object PartialBadgeProps {
   }
   
   @scala.inline
-  implicit class PartialBadgePropsOps[Self <: PartialBadgeProps] (val x: Self) extends AnyVal {
+  implicit class PartialBadgePropsMutableBuilder[Self <: PartialBadgeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadgeStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "badgeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeStyleNull: Self = StObject.set(x, "badgeStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadgeStyleUndefined: Self = StObject.set(x, "badgeStyle", js.undefined)
     
     @scala.inline
-    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComponent: Self = this.set("Component", js.undefined)
+    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
     @scala.inline
-    def setBadgeStyle(value: StyleProp[ViewStyle]): Self = this.set("badgeStyle", value.asInstanceOf[js.Any])
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadgeStyle: Self = this.set("badgeStyle", js.undefined)
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def setBadgeStyleNull: Self = this.set("badgeStyle", null)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setStatus(value: primary | success | warning | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setTextProps(value: TextProperties): Self = StObject.set(x, "textProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: primary | success | warning | error): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTextPropsUndefined: Self = StObject.set(x, "textProps", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextProps(value: TextProperties): Self = this.set("textProps", value.asInstanceOf[js.Any])
+    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
     @scala.inline
-    def deleteTextProps: Self = this.set("textProps", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setValue(value: ReactNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
-    
-    @scala.inline
-    def setTextStyleNull: Self = this.set("textStyle", null)
-    
-    @scala.inline
-    def setValue(value: ReactNode): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

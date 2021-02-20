@@ -1,11 +1,12 @@
 package typings.awsSdkBuildTypes.customizationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Import extends js.Object {
+trait Import extends StObject {
   
   /**
     * The name of the package to import (as would be used with `npm install`).
@@ -29,24 +30,12 @@ object Import {
   }
   
   @scala.inline
-  implicit class ImportOps[Self <: Import] (val x: Self) extends AnyVal {
+  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

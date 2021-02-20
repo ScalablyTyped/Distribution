@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitGridOptions extends js.Object {
+trait UIkitGridOptions extends StObject {
   
   var `first-column`: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object UIkitGridOptions {
   }
   
   @scala.inline
-  implicit class UIkitGridOptionsOps[Self <: UIkitGridOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitGridOptionsMutableBuilder[Self <: UIkitGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setFirst-column`(value: String): Self = StObject.set(x, "first-column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFirst-columnUndefined`: Self = StObject.set(x, "first-column", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFirst-column`(value: String): Self = this.set("first-column", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def `deleteFirst-column`: Self = this.set("first-column", js.undefined)
+    def setMasonry(value: Boolean): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMasonryUndefined: Self = StObject.set(x, "masonry", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setParallax(value: Double): Self = StObject.set(x, "parallax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasonry(value: Boolean): Self = this.set("masonry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasonry: Self = this.set("masonry", js.undefined)
-    
-    @scala.inline
-    def setParallax(value: Double): Self = this.set("parallax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallax: Self = this.set("parallax", js.undefined)
+    def setParallaxUndefined: Self = StObject.set(x, "parallax", js.undefined)
   }
 }

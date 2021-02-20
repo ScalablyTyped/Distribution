@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GRPCHealthCheck extends js.Object {
+trait GRPCHealthCheck extends StObject {
   
   /**
     * The gRPC service name for the health check. This field is optional. The value of grpc_service_name has the following meanings by convention:
@@ -45,42 +46,30 @@ object GRPCHealthCheck {
   }
   
   @scala.inline
-  implicit class GRPCHealthCheckOps[Self <: GRPCHealthCheck] (val x: Self) extends AnyVal {
+  implicit class GRPCHealthCheckMutableBuilder[Self <: GRPCHealthCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrpcServiceName(value: String): Self = StObject.set(x, "grpcServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrpcServiceNameUndefined: Self = StObject.set(x, "grpcServiceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrpcServiceName(value: String): Self = this.set("grpcServiceName", value.asInstanceOf[js.Any])
+    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrpcServiceName: Self = this.set("grpcServiceName", js.undefined)
+    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
     
     @scala.inline
-    def setPortName(value: String): Self = this.set("portName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortName: Self = this.set("portName", js.undefined)
-    
-    @scala.inline
-    def setPortSpecification(value: String): Self = this.set("portSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortSpecification: Self = this.set("portSpecification", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

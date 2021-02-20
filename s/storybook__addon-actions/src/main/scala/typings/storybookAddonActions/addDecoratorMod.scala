@@ -1,12 +1,13 @@
 package typings.storybookAddonActions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-actions/dist/preset/addDecorator", JSImport.Namespace)
-@js.native
-object addDecoratorMod extends js.Object {
+object addDecoratorMod {
   
+  @JSImport("@storybook/addon-actions/dist/preset/addDecorator", "decorators")
+  @js.native
   val decorators: js.Array[js.Function1[/* args */ js.Any, js.Any]] = js.native
 }

@@ -1,15 +1,15 @@
 package typings.angularCompiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/selector", JSImport.Namespace)
-@js.native
-object selectorMod extends js.Object {
+object selectorMod {
   
+  @JSImport("@angular/compiler/src/selector", "CssSelector")
   @js.native
-  class CssSelector () extends js.Object {
+  class CssSelector () extends StObject {
     
     def addAttribute(name: String): Unit = js.native
     def addAttribute(name: String, value: String): Unit = js.native
@@ -48,14 +48,16 @@ object selectorMod extends js.Object {
     def setElement(element: String): Unit = js.native
   }
   /* static members */
-  @js.native
-  object CssSelector extends js.Object {
+  object CssSelector {
     
+    @JSImport("@angular/compiler/src/selector", "CssSelector.parse")
+    @js.native
     def parse(selector: String): js.Array[CssSelector] = js.native
   }
   
+  @JSImport("@angular/compiler/src/selector", "SelectorContext")
   @js.native
-  class SelectorContext[T] protected () extends js.Object {
+  class SelectorContext[T] protected () extends StObject {
     def this(selector: CssSelector, cbContext: T, listContext: SelectorListContext) = this()
     
     var cbContext: T = js.native
@@ -70,8 +72,9 @@ object selectorMod extends js.Object {
     var selector: CssSelector = js.native
   }
   
+  @JSImport("@angular/compiler/src/selector", "SelectorListContext")
   @js.native
-  class SelectorListContext protected () extends js.Object {
+  class SelectorListContext protected () extends StObject {
     def this(selectors: js.Array[CssSelector]) = this()
     
     var alreadyMatched: Boolean = js.native
@@ -79,8 +82,9 @@ object selectorMod extends js.Object {
     var selectors: js.Array[CssSelector] = js.native
   }
   
+  @JSImport("@angular/compiler/src/selector", "SelectorMatcher")
   @js.native
-  class SelectorMatcher[T] () extends js.Object {
+  class SelectorMatcher[T] () extends StObject {
     
     var _addPartial: js.Any = js.native
     
@@ -121,9 +125,10 @@ object selectorMod extends js.Object {
     def `match`(cssSelector: CssSelector, matchedCallback: js.Function2[/* c */ CssSelector, /* a */ T, Unit]): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object SelectorMatcher extends js.Object {
+  object SelectorMatcher {
     
+    @JSImport("@angular/compiler/src/selector", "SelectorMatcher.createNotMatcher")
+    @js.native
     def createNotMatcher(notSelectors: js.Array[CssSelector]): SelectorMatcher[Null] = js.native
   }
 }

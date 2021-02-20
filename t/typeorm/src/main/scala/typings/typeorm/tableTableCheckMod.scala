@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.metadataCheckMetadataMod.CheckMetadata
 import typings.typeorm.optionsTableCheckOptionsMod.TableCheckOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/schema-builder/table/TableCheck", JSImport.Namespace)
-@js.native
-object tableTableCheckMod extends js.Object {
+object tableTableCheckMod {
   
+  @JSImport("typeorm/schema-builder/table/TableCheck", "TableCheck")
   @js.native
-  class TableCheck protected () extends js.Object {
+  class TableCheck protected () extends StObject {
     def this(options: TableCheckOptions) = this()
     
     /**
@@ -30,12 +30,13 @@ object tableTableCheckMod extends js.Object {
     var name: js.UndefOr[String] = js.native
   }
   /* static members */
-  @js.native
-  object TableCheck extends js.Object {
+  object TableCheck {
     
     /**
       * Creates checks from the check metadata object.
       */
+    @JSImport("typeorm/schema-builder/table/TableCheck", "TableCheck.create")
+    @js.native
     def create(checkMetadata: CheckMetadata): TableCheck = js.native
   }
 }

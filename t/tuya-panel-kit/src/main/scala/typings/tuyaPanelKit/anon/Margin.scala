@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Margin extends js.Object {
+trait Margin extends StObject {
   
   var height: js.UndefOr[Double] = js.native
   
@@ -33,69 +34,57 @@ object Margin {
   }
   
   @scala.inline
-  implicit class MarginOps[Self <: Margin] (val x: Self) extends AnyVal {
+  implicit class MarginMutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setMarginVarargs(value: Double*): Self = this.set("margin", js.Array(value :_*))
+    def setOnThumbTintColor(value: String): Self = StObject.set(x, "onThumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double | js.Array[Double]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setOnThumbTintColorUndefined: Self = StObject.set(x, "onThumbTintColor", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setOnTintColor(value: String): Self = StObject.set(x, "onTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnThumbTintColor(value: String): Self = this.set("onThumbTintColor", value.asInstanceOf[js.Any])
+    def setOnTintColorUndefined: Self = StObject.set(x, "onTintColor", js.undefined)
     
     @scala.inline
-    def deleteOnThumbTintColor: Self = this.set("onThumbTintColor", js.undefined)
+    def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTintColor(value: String): Self = this.set("onTintColor", value.asInstanceOf[js.Any])
+    def setThumbSizeUndefined: Self = StObject.set(x, "thumbSize", js.undefined)
     
     @scala.inline
-    def deleteOnTintColor: Self = this.set("onTintColor", js.undefined)
+    def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbSize(value: Double): Self = this.set("thumbSize", value.asInstanceOf[js.Any])
+    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
     @scala.inline
-    def deleteThumbSize: Self = this.set("thumbSize", js.undefined)
+    def setTintColor(value: String | StringDictionary[String]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTintColor(value: String): Self = this.set("thumbTintColor", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deleteThumbTintColor: Self = this.set("thumbTintColor", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: String | StringDictionary[String]): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

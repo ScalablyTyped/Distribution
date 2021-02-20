@@ -10,6 +10,7 @@ import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Ascending
 import typings.officeJs.officeJsStrings.DataSourceOrder
 import typings.officeJs.officeJsStrings.Descending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

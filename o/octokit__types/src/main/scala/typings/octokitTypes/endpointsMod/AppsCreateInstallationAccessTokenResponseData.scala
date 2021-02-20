@@ -4,12 +4,13 @@ import typings.octokitTypes.anon.Allowmergecommit
 import typings.octokitTypes.anon.Contents
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsCreateInstallationAccessTokenResponseData extends js.Object {
+trait AppsCreateInstallationAccessTokenResponseData extends StObject {
   
   var expires_at: String = js.native
   
@@ -36,36 +37,24 @@ object AppsCreateInstallationAccessTokenResponseData {
   }
   
   @scala.inline
-  implicit class AppsCreateInstallationAccessTokenResponseDataOps[Self <: AppsCreateInstallationAccessTokenResponseData] (val x: Self) extends AnyVal {
+  implicit class AppsCreateInstallationAccessTokenResponseDataMutableBuilder[Self <: AppsCreateInstallationAccessTokenResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissions(value: Contents): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositories(value: js.Array[Allowmergecommit]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires_at(value: String): Self = this.set("expires_at", value.asInstanceOf[js.Any])
+    def setRepositoriesVarargs(value: Allowmergecommit*): Self = StObject.set(x, "repositories", js.Array(value :_*))
     
     @scala.inline
-    def setPermissions(value: Contents): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setRepository_selection(value: all | selected): Self = StObject.set(x, "repository_selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoriesVarargs(value: Allowmergecommit*): Self = this.set("repositories", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepositories(value: js.Array[Allowmergecommit]): Self = this.set("repositories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository_selection(value: all | selected): Self = this.set("repository_selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

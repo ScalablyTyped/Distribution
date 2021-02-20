@@ -3,6 +3,7 @@ package typings.typescript.mod
 import typings.typescript.mod.TypePredicateKind.AssertsIdentifier
 import typings.typescript.mod.TypePredicateKind.AssertsThis
 import typings.typescript.mod.TypePredicateKind.This
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.AssertsThisTypePredicate
   - typings.typescript.mod.AssertsIdentifierTypePredicate
 */
-trait TypePredicate extends js.Object
+trait TypePredicate extends StObject
 object TypePredicate {
   
   @scala.inline
-  def ThisTypePredicate(kind: This, `type`: Type): TypePredicate = {
+  def AssertsIdentifierTypePredicate(kind: AssertsIdentifier, parameterIndex: Double, parameterName: java.lang.String): typings.typescript.mod.AssertsIdentifierTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.typescript.mod.AssertsIdentifierTypePredicate]
+  }
+  
+  @scala.inline
+  def AssertsThisTypePredicate(kind: AssertsThis): typings.typescript.mod.AssertsThisTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
+    __obj.asInstanceOf[typings.typescript.mod.AssertsThisTypePredicate]
   }
   
   @scala.inline
@@ -29,21 +35,16 @@ object TypePredicate {
     parameterIndex: Double,
     parameterName: java.lang.String,
     `type`: Type
-  ): TypePredicate = {
+  ): typings.typescript.mod.IdentifierTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
+    __obj.asInstanceOf[typings.typescript.mod.IdentifierTypePredicate]
   }
   
   @scala.inline
-  def AssertsThisTypePredicate(kind: AssertsThis): TypePredicate = {
+  def ThisTypePredicate(kind: This, `type`: Type): typings.typescript.mod.ThisTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
-  }
-  
-  @scala.inline
-  def AssertsIdentifierTypePredicate(kind: AssertsIdentifier, parameterIndex: Double, parameterName: java.lang.String): TypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.typescript.mod.ThisTypePredicate]
   }
 }

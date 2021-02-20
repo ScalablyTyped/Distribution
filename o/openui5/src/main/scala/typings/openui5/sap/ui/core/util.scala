@@ -4,13 +4,12 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.model.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.util")
-@js.native
-object util extends js.Object {
+object util {
   
   @js.native
   trait Export extends Control {
@@ -545,8 +544,7 @@ object util extends js.Object {
     def stop(): Unit = js.native
   }
   
-  @js.native
-  object XMLPreprocessor extends js.Object {
+  object XMLPreprocessor {
     
     /**
       * Context interface provided by XML template processing as an additional firstargument to any
@@ -586,7 +584,7 @@ object util extends js.Object {
       * @resource sap/ui/core/util/XMLPreprocessor.js
       */
     @js.native
-    trait IContext extends js.Object {
+    trait IContext extends StObject {
       
       /**
         * Returns a context interface for the indicated part in case of the root formatterof a composite
@@ -636,8 +634,7 @@ object util extends js.Object {
     }
   }
   
-  @js.native
-  object serializer extends js.Object {
+  object serializer {
     
     @js.native
     trait HTMLViewSerializer extends EventProvider
@@ -651,8 +648,7 @@ object util extends js.Object {
     @js.native
     trait XMLViewSerializer extends EventProvider
     
-    @js.native
-    object delegate extends js.Object {
+    object delegate {
       
       @js.native
       trait Delegate extends EventProvider

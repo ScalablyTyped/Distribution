@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vec3 extends js.Object {
+trait Vec3 extends StObject {
   
   def almostEquals(v: Vec3): Boolean = js.native
   def almostEquals(v: Vec3, precision: Double): Boolean = js.native

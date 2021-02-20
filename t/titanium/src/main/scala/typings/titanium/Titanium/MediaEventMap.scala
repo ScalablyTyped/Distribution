@@ -1,6 +1,7 @@
 package typings.titanium.Titanium
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object MediaEventMap {
   }
   
   @scala.inline
-  implicit class MediaEventMapOps[Self <: MediaEventMap] (val x: Self) extends AnyVal {
+  implicit class MediaEventMapMutableBuilder[Self <: MediaEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCameraready(value: MediaCamerareadyEvent): Self = StObject.set(x, "cameraready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoutechange(value: MediaRoutechangeEvent): Self = StObject.set(x, "routechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCameraready(value: MediaCamerareadyEvent): Self = this.set("cameraready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutechange(value: MediaRoutechangeEvent): Self = this.set("routechange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: MediaVolumeEvent): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: MediaVolumeEvent): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

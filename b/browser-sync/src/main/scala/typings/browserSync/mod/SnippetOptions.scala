@@ -1,12 +1,13 @@
 package typings.browserSync.mod
 
 import typings.browserSync.anon.Fn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnippetOptions extends js.Object {
+trait SnippetOptions extends StObject {
   
   var async: js.UndefOr[Boolean] = js.native
   
@@ -25,48 +26,36 @@ object SnippetOptions {
   }
   
   @scala.inline
-  implicit class SnippetOptionsOps[Self <: SnippetOptions] (val x: Self) extends AnyVal {
+  implicit class SnippetOptionsMutableBuilder[Self <: SnippetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
     @scala.inline
-    def setBlacklistVarargs(value: String*): Self = this.set("blacklist", js.Array(value :_*))
+    def setRule(value: Fn): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlacklist(value: js.Array[String]): Self = this.set("blacklist", value.asInstanceOf[js.Any])
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def deleteBlacklist: Self = this.set("blacklist", js.undefined)
+    def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: Fn): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
     @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
-    
-    @scala.inline
-    def setWhitelistVarargs(value: String*): Self = this.set("whitelist", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelist(value: js.Array[String]): Self = this.set("whitelist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelist: Self = this.set("whitelist", js.undefined)
+    def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

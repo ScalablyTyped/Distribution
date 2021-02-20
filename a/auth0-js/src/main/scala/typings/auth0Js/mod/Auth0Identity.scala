@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0Identity extends js.Object {
+trait Auth0Identity extends StObject {
   
   var connection: String = js.native
   
@@ -24,30 +25,18 @@ object Auth0Identity {
   }
   
   @scala.inline
-  implicit class Auth0IdentityOps[Self <: Auth0Identity] (val x: Self) extends AnyVal {
+  implicit class Auth0IdentityMutableBuilder[Self <: Auth0Identity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSocial(value: Boolean): Self = StObject.set(x, "isSocial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSocial(value: Boolean): Self = this.set("isSocial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

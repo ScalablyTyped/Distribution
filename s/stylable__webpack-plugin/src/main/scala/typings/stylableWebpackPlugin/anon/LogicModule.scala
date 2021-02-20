@@ -1,12 +1,13 @@
 package typings.stylableWebpackPlugin.anon
 
 import typings.stylableWebpackPlugin.typesMod.StylableModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogicModule extends js.Object {
+trait LogicModule extends StObject {
   
   var logicModule: StylableModule = js.native
   
@@ -21,24 +22,12 @@ object LogicModule {
   }
   
   @scala.inline
-  implicit class LogicModuleOps[Self <: LogicModule] (val x: Self) extends AnyVal {
+  implicit class LogicModuleMutableBuilder[Self <: LogicModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogicModule(value: StylableModule): Self = StObject.set(x, "logicModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogicModule(value: StylableModule): Self = this.set("logicModule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStylableModule(value: StylableModule): Self = this.set("stylableModule", value.asInstanceOf[js.Any])
+    def setStylableModule(value: StylableModule): Self = StObject.set(x, "stylableModule", value.asInstanceOf[js.Any])
   }
 }

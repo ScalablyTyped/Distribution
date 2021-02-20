@@ -4,12 +4,13 @@ import typings.tryghostContentApi.anon.Browse
 import typings.tryghostContentApi.anon.BrowseBrowseFunction
 import typings.tryghostContentApi.anon.BrowseRead
 import typings.tryghostContentApi.anon.Read
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GhostAPI extends js.Object {
+trait GhostAPI extends StObject {
   
   var authors: Read = js.native
   
@@ -30,33 +31,21 @@ object GhostAPI {
   }
   
   @scala.inline
-  implicit class GhostAPIOps[Self <: GhostAPI] (val x: Self) extends AnyVal {
+  implicit class GhostAPIMutableBuilder[Self <: GhostAPI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthors(value: Read): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPages(value: Browse): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosts(value: Browse): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: Read): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setSettings(value: BrowseBrowseFunction): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: Browse): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosts(value: Browse): Self = this.set("posts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettings(value: BrowseBrowseFunction): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: BrowseRead): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTags(value: BrowseRead): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

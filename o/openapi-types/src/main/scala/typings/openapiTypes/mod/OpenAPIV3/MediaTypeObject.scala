@@ -1,12 +1,13 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaTypeObject extends js.Object {
+trait MediaTypeObject extends StObject {
   
   var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.native
   
@@ -25,42 +26,30 @@ object MediaTypeObject {
   }
   
   @scala.inline
-  implicit class MediaTypeObjectOps[Self <: MediaTypeObject] (val x: Self) extends AnyVal {
+  implicit class MediaTypeObjectMutableBuilder[Self <: MediaTypeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: StringDictionary[EncodingObject]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: StringDictionary[EncodingObject]): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExample(value: js.Any): Self = this.set("example", value.asInstanceOf[js.Any])
+    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
     @scala.inline
-    def deleteExample: Self = this.set("example", js.undefined)
+    def setSchema(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = this.set("examples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExamples: Self = this.set("examples", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: ReferenceObject | SchemaObject): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

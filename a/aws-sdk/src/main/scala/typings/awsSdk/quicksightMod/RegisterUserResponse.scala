@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterUserResponse extends js.Object {
+trait RegisterUserResponse extends StObject {
   
   /**
     * The AWS request ID for this operation.
@@ -36,42 +37,30 @@ object RegisterUserResponse {
   }
   
   @scala.inline
-  implicit class RegisterUserResponseOps[Self <: RegisterUserResponse] (val x: Self) extends AnyVal {
+  implicit class RegisterUserResponseMutableBuilder[Self <: RegisterUserResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUserInvitationUrl(value: String): Self = StObject.set(x, "UserInvitationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUserInvitationUrlUndefined: Self = StObject.set(x, "UserInvitationUrl", js.undefined)
     
     @scala.inline
-    def setUser(value: User): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
-    
-    @scala.inline
-    def setUserInvitationUrl(value: String): Self = this.set("UserInvitationUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInvitationUrl: Self = this.set("UserInvitationUrl", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

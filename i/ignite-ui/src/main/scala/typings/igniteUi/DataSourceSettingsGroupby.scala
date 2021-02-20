@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,57 +68,45 @@ object DataSourceSettingsGroupby {
   }
   
   @scala.inline
-  implicit class DataSourceSettingsGroupbyOps[Self <: DataSourceSettingsGroupby] (val x: Self) extends AnyVal {
+  implicit class DataSourceSettingsGroupbyMutableBuilder[Self <: DataSourceSettingsGroupby] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultCollapseState(value: Boolean): Self = StObject.set(x, "defaultCollapseState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCollapseStateUndefined: Self = StObject.set(x, "defaultCollapseState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupRecordKey(value: String): Self = StObject.set(x, "groupRecordKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCollapseState(value: Boolean): Self = this.set("defaultCollapseState", value.asInstanceOf[js.Any])
+    def setGroupRecordKeyUndefined: Self = StObject.set(x, "groupRecordKey", js.undefined)
     
     @scala.inline
-    def deleteDefaultCollapseState: Self = this.set("defaultCollapseState", js.undefined)
+    def setGroupSummaryRecordKey(value: String): Self = StObject.set(x, "groupSummaryRecordKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupRecordKey(value: String): Self = this.set("groupRecordKey", value.asInstanceOf[js.Any])
+    def setGroupSummaryRecordKeyUndefined: Self = StObject.set(x, "groupSummaryRecordKey", js.undefined)
     
     @scala.inline
-    def deleteGroupRecordKey: Self = this.set("groupRecordKey", js.undefined)
+    def setPagingMode(value: String): Self = StObject.set(x, "pagingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupSummaryRecordKey(value: String): Self = this.set("groupSummaryRecordKey", value.asInstanceOf[js.Any])
+    def setPagingModeUndefined: Self = StObject.set(x, "pagingMode", js.undefined)
     
     @scala.inline
-    def deleteGroupSummaryRecordKey: Self = this.set("groupSummaryRecordKey", js.undefined)
+    def setSummaries(value: js.Array[_]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagingMode(value: String): Self = this.set("pagingMode", value.asInstanceOf[js.Any])
+    def setSummariesPosition(value: String): Self = StObject.set(x, "summariesPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePagingMode: Self = this.set("pagingMode", js.undefined)
+    def setSummariesPositionUndefined: Self = StObject.set(x, "summariesPosition", js.undefined)
     
     @scala.inline
-    def setSummariesVarargs(value: js.Any*): Self = this.set("summaries", js.Array(value :_*))
+    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
     @scala.inline
-    def setSummaries(value: js.Array[_]): Self = this.set("summaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaries: Self = this.set("summaries", js.undefined)
-    
-    @scala.inline
-    def setSummariesPosition(value: String): Self = this.set("summariesPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummariesPosition: Self = this.set("summariesPosition", js.undefined)
+    def setSummariesVarargs(value: js.Any*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

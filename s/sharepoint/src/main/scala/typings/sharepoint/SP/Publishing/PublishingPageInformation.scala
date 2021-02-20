@@ -5,6 +5,7 @@ import typings.sharepoint.SP.Folder
 import typings.sharepoint.SP.ListItem
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,36 +46,24 @@ object PublishingPageInformation {
   }
   
   @scala.inline
-  implicit class PublishingPageInformationOps[Self <: PublishingPageInformation] (val x: Self) extends AnyVal {
+  implicit class PublishingPageInformationMutableBuilder[Self <: PublishingPageInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_folder(value: () => Folder): Self = StObject.set(x, "get_folder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_pageLayoutListItem(value: () => ListItem[_]): Self = StObject.set(x, "get_pageLayoutListItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_folder(value: () => Folder): Self = this.set("get_folder", js.Any.fromFunction0(value))
+    def setSet_folder(value: Folder => Folder): Self = StObject.set(x, "set_folder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_name(value: () => String): Self = this.set("get_name", js.Any.fromFunction0(value))
+    def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_pageLayoutListItem(value: () => ListItem[_]): Self = this.set("get_pageLayoutListItem", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_folder(value: Folder => Folder): Self = this.set("set_folder", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_name(value: String => String): Self = this.set("set_name", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_pageLayoutListItem(value: ListItem[_] => ListItem[_]): Self = this.set("set_pageLayoutListItem", js.Any.fromFunction1(value))
+    def setSet_pageLayoutListItem(value: ListItem[_] => ListItem[_]): Self = StObject.set(x, "set_pageLayoutListItem", js.Any.fromFunction1(value))
   }
 }

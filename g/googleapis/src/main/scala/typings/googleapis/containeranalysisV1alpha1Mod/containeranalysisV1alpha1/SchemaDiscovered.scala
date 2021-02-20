@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the scan status of a discovered resource.
   */
 @js.native
-trait SchemaDiscovered extends js.Object {
+trait SchemaDiscovered extends StObject {
   
   /**
     * The status of discovery for the resource.
@@ -42,42 +43,30 @@ object SchemaDiscovered {
   }
   
   @scala.inline
-  implicit class SchemaDiscoveredOps[Self <: SchemaDiscovered] (val x: Self) extends AnyVal {
+  implicit class SchemaDiscoveredMutableBuilder[Self <: SchemaDiscovered] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisStatus(value: String): Self = StObject.set(x, "analysisStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisStatusError(value: SchemaStatus): Self = StObject.set(x, "analysisStatusError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalysisStatusErrorUndefined: Self = StObject.set(x, "analysisStatusError", js.undefined)
     
     @scala.inline
-    def setAnalysisStatus(value: String): Self = this.set("analysisStatus", value.asInstanceOf[js.Any])
+    def setAnalysisStatusUndefined: Self = StObject.set(x, "analysisStatus", js.undefined)
     
     @scala.inline
-    def deleteAnalysisStatus: Self = this.set("analysisStatus", js.undefined)
+    def setContinuousAnalysis(value: String): Self = StObject.set(x, "continuousAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisStatusError(value: SchemaStatus): Self = this.set("analysisStatusError", value.asInstanceOf[js.Any])
+    def setContinuousAnalysisUndefined: Self = StObject.set(x, "continuousAnalysis", js.undefined)
     
     @scala.inline
-    def deleteAnalysisStatusError: Self = this.set("analysisStatusError", js.undefined)
+    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousAnalysis(value: String): Self = this.set("continuousAnalysis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContinuousAnalysis: Self = this.set("continuousAnalysis", js.undefined)
-    
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

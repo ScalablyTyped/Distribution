@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDBProxyTargetGroupsResponse extends js.Object {
+trait DescribeDBProxyTargetGroupsResponse extends StObject {
   
   /**
     *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
@@ -26,33 +27,21 @@ object DescribeDBProxyTargetGroupsResponse {
   }
   
   @scala.inline
-  implicit class DescribeDBProxyTargetGroupsResponseOps[Self <: DescribeDBProxyTargetGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDBProxyTargetGroupsResponseMutableBuilder[Self <: DescribeDBProxyTargetGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetGroups(value: TargetGroupList): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupsVarargs(value: DBProxyTargetGroup*): Self = this.set("TargetGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetGroups(value: TargetGroupList): Self = this.set("TargetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroups: Self = this.set("TargetGroups", js.undefined)
+    def setTargetGroupsVarargs(value: DBProxyTargetGroup*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
   }
 }

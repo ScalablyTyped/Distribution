@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceConnectorProfileProperties extends js.Object {
+trait SalesforceConnectorProfileProperties extends StObject {
   
   /**
     *  The location of the Salesforce resource. 
@@ -26,30 +27,18 @@ object SalesforceConnectorProfileProperties {
   }
   
   @scala.inline
-  implicit class SalesforceConnectorProfilePropertiesOps[Self <: SalesforceConnectorProfileProperties] (val x: Self) extends AnyVal {
+  implicit class SalesforceConnectorProfilePropertiesMutableBuilder[Self <: SalesforceConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceUrlUndefined: Self = StObject.set(x, "instanceUrl", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSandboxEnvironment(value: Boolean): Self = StObject.set(x, "isSandboxEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = this.set("instanceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceUrl: Self = this.set("instanceUrl", js.undefined)
-    
-    @scala.inline
-    def setIsSandboxEnvironment(value: Boolean): Self = this.set("isSandboxEnvironment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSandboxEnvironment: Self = this.set("isSandboxEnvironment", js.undefined)
+    def setIsSandboxEnvironmentUndefined: Self = StObject.set(x, "isSandboxEnvironment", js.undefined)
   }
 }

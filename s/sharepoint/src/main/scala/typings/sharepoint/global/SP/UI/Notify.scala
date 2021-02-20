@@ -2,20 +2,14 @@ package typings.sharepoint.global.SP.UI
 
 import typings.sharepoint.SPNotifications.ContainerID
 import typings.sharepoint.SPStatusNotificationData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.UI.Notify")
-@js.native
-object Notify extends js.Object {
+object Notify {
   
-  def addNotification(strHtml: String, bSticky: Boolean): String = js.native
-  
-  def removeNotification(nid: String): Unit = js.native
-  
-  def showLoadingNotification(bSticky: Boolean): String = js.native
-  
+  @JSGlobal("SP.UI.Notify.Notification")
   @js.native
   class Notification protected ()
     extends typings.sharepoint.SP.UI.Notify.Notification {
@@ -117,10 +111,23 @@ object Notify extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("SP.UI.Notify.NotificationContainer")
   @js.native
   class NotificationContainer protected ()
     extends typings.sharepoint.SP.UI.Notify.NotificationContainer {
     def this(id: Double, element: js.Any, layer: Double) = this()
     def this(id: Double, element: js.Any, layer: Double, notificationLimit: Double) = this()
   }
+  
+  @JSGlobal("SP.UI.Notify.addNotification")
+  @js.native
+  def addNotification(strHtml: String, bSticky: Boolean): String = js.native
+  
+  @JSGlobal("SP.UI.Notify.removeNotification")
+  @js.native
+  def removeNotification(nid: String): Unit = js.native
+  
+  @JSGlobal("SP.UI.Notify.showLoadingNotification")
+  @js.native
+  def showLoadingNotification(bSticky: Boolean): String = js.native
 }

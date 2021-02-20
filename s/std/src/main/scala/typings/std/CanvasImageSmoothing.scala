@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasImageSmoothing extends js.Object {
+trait CanvasImageSmoothing extends StObject {
   
   var imageSmoothingEnabled: scala.Boolean = js.native
   
@@ -20,24 +21,12 @@ object CanvasImageSmoothing {
   }
   
   @scala.inline
-  implicit class CanvasImageSmoothingOps[Self <: CanvasImageSmoothing] (val x: Self) extends AnyVal {
+  implicit class CanvasImageSmoothingMutableBuilder[Self <: CanvasImageSmoothing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageSmoothingEnabled(value: scala.Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImageSmoothingEnabled(value: scala.Boolean): Self = this.set("imageSmoothingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageSmoothingQuality(value: ImageSmoothingQuality): Self = this.set("imageSmoothingQuality", value.asInstanceOf[js.Any])
+    def setImageSmoothingQuality(value: ImageSmoothingQuality): Self = StObject.set(x, "imageSmoothingQuality", value.asInstanceOf[js.Any])
   }
 }

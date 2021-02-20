@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XHierarchicalPropertySetIn
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.util.XChangesBatch
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +28,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.util.XChangesBatch} . For elements of a **set** or a **group** no additional interfaces are supported.
   * @see ConfigurationProvider Root instances of this service can be requested from a ConfigurationProvider
   */
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+- typings.activexLibreoffice.com_.sun.star.container.XChild because Already inherited
+- typings.activexLibreoffice.com_.sun.star.beans.XPropertyWithState because Already inherited
+- typings.activexLibreoffice.com_.sun.star.beans.XProperty because Already inherited
+- typings.activexLibreoffice.com_.sun.star.container.XNamed because Already inherited
+- typings.activexLibreoffice.com_.sun.star.container.XHierarchicalName because Already inherited
+- typings.activexLibreoffice.com_.sun.star.lang.XLocalizable because Already inherited
+- typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier because Already inherited
+- typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
+- typings.activexLibreoffice.com_.sun.star.configuration.HierarchyElement because Already inherited
+- typings.activexLibreoffice.com_.sun.star.configuration.AccessRootElement because Already inherited
+- typings.activexLibreoffice.com_.sun.star.configuration.UpdateRootElement because var conflicts: Locale, Name, Parent. Inlined  */ @js.native
 trait ConfigurationUpdateAccess
   extends ConfigurationAccess
      with SetUpdate
+     with GroupUpdate
      with XChangesBatch {
   
   /**

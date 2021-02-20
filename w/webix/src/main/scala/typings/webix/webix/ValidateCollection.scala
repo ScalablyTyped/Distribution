@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateCollection extends js.Object {
+trait ValidateCollection extends StObject {
   
   def clearValidation(): Unit = js.native
   

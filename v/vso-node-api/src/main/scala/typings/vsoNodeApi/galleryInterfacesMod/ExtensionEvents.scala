@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionEvents extends js.Object {
+trait ExtensionEvents extends StObject {
   
   /**
     * Generic container for events data. The dictionary key denotes the type of event and the list contains properties related to that event
@@ -42,30 +43,18 @@ object ExtensionEvents {
   }
   
   @scala.inline
-  implicit class ExtensionEventsOps[Self <: ExtensionEvents] (val x: Self) extends AnyVal {
+  implicit class ExtensionEventsMutableBuilder[Self <: ExtensionEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: StringDictionary[js.Array[ExtensionEvent]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: StringDictionary[js.Array[ExtensionEvent]]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtensionId(value: String): Self = this.set("extensionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
   }
 }

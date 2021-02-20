@@ -1,13 +1,16 @@
 package typings.locutus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locutus/php/strings/sha1", JSImport.Namespace)
-@js.native
-object sha1Mod extends js.Object {
+object sha1Mod {
   
+  @JSImport("locutus/php/strings/sha1", JSImport.Namespace)
+  @js.native
   def apply(): js.Any = js.native
+  @JSImport("locutus/php/strings/sha1", JSImport.Namespace)
+  @js.native
   def apply(str: js.Any): js.Any = js.native
 }

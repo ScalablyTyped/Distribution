@@ -1,12 +1,13 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Management")
 @js.native
-class Management protected () extends js.Object {
+class Management protected () extends StObject {
   /**
     * Initialize your client class, by using a Non Interactive Client to fetch an access_token via the Client Credentials Grant.
     */

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,27 +74,15 @@ object XCommandProcessor {
   }
   
   @scala.inline
-  implicit class XCommandProcessorOps[Self <: XCommandProcessor] (val x: Self) extends AnyVal {
+  implicit class XCommandProcessorMutableBuilder[Self <: XCommandProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: Double => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateCommandIdentifier(value: () => Double): Self = StObject.set(x, "createCommandIdentifier", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbort(value: Double => Unit): Self = this.set("abort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateCommandIdentifier(value: () => Double): Self = this.set("createCommandIdentifier", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExecute(value: (Command, Double, XCommandEnvironment) => js.Any): Self = this.set("execute", js.Any.fromFunction3(value))
+    def setExecute(value: (Command, Double, XCommandEnvironment) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }
 }

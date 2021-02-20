@@ -1,61 +1,52 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnvironmentStatus extends js.Object
+sealed trait EnvironmentStatus extends StObject
 @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "EnvironmentStatus")
 @js.native
-object EnvironmentStatus extends js.Object {
+object EnvironmentStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnvironmentStatus with Double] = js.native
   
   @js.native
   sealed trait Canceled extends EnvironmentStatus
-  /* 8 */ @js.native
-  object Canceled extends TopLevel[Canceled with Double]
+  /* 8 */ val Canceled: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.Canceled with Double = js.native
   
   @js.native
   sealed trait InProgress extends EnvironmentStatus
-  /* 2 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 2 */ val InProgress: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.InProgress with Double = js.native
   
   @js.native
   sealed trait NotStarted extends EnvironmentStatus
-  /* 1 */ @js.native
-  object NotStarted extends TopLevel[NotStarted with Double]
+  /* 1 */ val NotStarted: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.NotStarted with Double = js.native
   
   @js.native
   sealed trait PartiallySucceeded extends EnvironmentStatus
-  /* 128 */ @js.native
-  object PartiallySucceeded extends TopLevel[PartiallySucceeded with Double]
+  /* 128 */ val PartiallySucceeded: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.PartiallySucceeded with Double = js.native
   
   @js.native
   sealed trait Queued extends EnvironmentStatus
-  /* 32 */ @js.native
-  object Queued extends TopLevel[Queued with Double]
+  /* 32 */ val Queued: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.Queued with Double = js.native
   
   @js.native
   sealed trait Rejected extends EnvironmentStatus
-  /* 16 */ @js.native
-  object Rejected extends TopLevel[Rejected with Double]
+  /* 16 */ val Rejected: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.Rejected with Double = js.native
   
   @js.native
   sealed trait Scheduled extends EnvironmentStatus
-  /* 64 */ @js.native
-  object Scheduled extends TopLevel[Scheduled with Double]
+  /* 64 */ val Scheduled: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.Scheduled with Double = js.native
   
   @js.native
   sealed trait Succeeded extends EnvironmentStatus
-  /* 4 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 4 */ val Succeeded: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.Succeeded with Double = js.native
   
   @js.native
   sealed trait Undefined extends EnvironmentStatus
-  /* 0 */ @js.native
-  object Undefined extends TopLevel[Undefined with Double]
+  /* 0 */ val Undefined: typings.vsoNodeApi.releaseInterfacesMod.EnvironmentStatus.Undefined with Double = js.native
 }

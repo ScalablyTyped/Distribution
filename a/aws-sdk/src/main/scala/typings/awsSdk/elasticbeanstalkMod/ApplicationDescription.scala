@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationDescription extends js.Object {
+trait ApplicationDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
@@ -56,72 +57,60 @@ object ApplicationDescription {
   }
   
   @scala.inline
-  implicit class ApplicationDescriptionOps[Self <: ApplicationDescription] (val x: Self) extends AnyVal {
+  implicit class ApplicationDescriptionMutableBuilder[Self <: ApplicationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationArn(value: ApplicationArn): Self = this.set("ApplicationArn", value.asInstanceOf[js.Any])
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def deleteApplicationArn: Self = this.set("ApplicationArn", js.undefined)
+    def setConfigurationTemplates(value: ConfigurationTemplateNamesList): Self = StObject.set(x, "ConfigurationTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setConfigurationTemplatesUndefined: Self = StObject.set(x, "ConfigurationTemplates", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = StObject.set(x, "ConfigurationTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = this.set("ConfigurationTemplates", js.Array(value :_*))
+    def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationTemplates(value: ConfigurationTemplateNamesList): Self = this.set("ConfigurationTemplates", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
     @scala.inline
-    def deleteConfigurationTemplates: Self = this.set("ConfigurationTemplates", js.undefined)
+    def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: CreationDate): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUpdated(value: UpdateDate): Self = this.set("DateUpdated", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDateUpdated: Self = this.set("DateUpdated", js.undefined)
+    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setResourceLifecycleConfigUndefined: Self = StObject.set(x, "ResourceLifecycleConfig", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setVersions(value: VersionLabelsList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = this.set("ResourceLifecycleConfig", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
     @scala.inline
-    def deleteResourceLifecycleConfig: Self = this.set("ResourceLifecycleConfig", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: VersionLabel*): Self = this.set("Versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: VersionLabelsList): Self = this.set("Versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("Versions", js.undefined)
+    def setVersionsVarargs(value: VersionLabel*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

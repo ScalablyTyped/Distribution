@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GattProtectionLevel extends js.Object
+sealed trait GattProtectionLevel extends StObject
 /** Represents the desired security level. */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel")
 @js.native
-object GattProtectionLevel extends js.Object {
+object GattProtectionLevel extends StObject {
   
   /** Require the link to be authenticated. */
   @js.native

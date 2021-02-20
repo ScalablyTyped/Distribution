@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Activity extends js.Object {
+trait Activity extends StObject {
   
   /**
     * Metadata of the commenting activity. This is an optional field and is filled for commenting activities.
@@ -61,72 +62,60 @@ object Activity {
   }
   
   @scala.inline
-  implicit class ActivityOps[Self <: Activity] (val x: Self) extends AnyVal {
+  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentMetadata(value: CommentMetadata): Self = StObject.set(x, "CommentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentMetadataUndefined: Self = StObject.set(x, "CommentMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitiator(value: UserMetadata): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentMetadata(value: CommentMetadata): Self = this.set("CommentMetadata", value.asInstanceOf[js.Any])
+    def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
     
     @scala.inline
-    def deleteCommentMetadata: Self = this.set("CommentMetadata", js.undefined)
+    def setIsIndirectActivity(value: BooleanType): Self = StObject.set(x, "IsIndirectActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiator(value: UserMetadata): Self = this.set("Initiator", value.asInstanceOf[js.Any])
+    def setIsIndirectActivityUndefined: Self = StObject.set(x, "IsIndirectActivity", js.undefined)
     
     @scala.inline
-    def deleteInitiator: Self = this.set("Initiator", js.undefined)
+    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIndirectActivity(value: BooleanType): Self = this.set("IsIndirectActivity", value.asInstanceOf[js.Any])
+    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
     @scala.inline
-    def deleteIsIndirectActivity: Self = this.set("IsIndirectActivity", js.undefined)
+    def setOriginalParent(value: ResourceMetadata): Self = StObject.set(x, "OriginalParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationId(value: IdType): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
+    def setOriginalParentUndefined: Self = StObject.set(x, "OriginalParent", js.undefined)
     
     @scala.inline
-    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
+    def setParticipants(value: Participants): Self = StObject.set(x, "Participants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalParent(value: ResourceMetadata): Self = this.set("OriginalParent", value.asInstanceOf[js.Any])
+    def setParticipantsUndefined: Self = StObject.set(x, "Participants", js.undefined)
     
     @scala.inline
-    def deleteOriginalParent: Self = this.set("OriginalParent", js.undefined)
+    def setResourceMetadata(value: ResourceMetadata): Self = StObject.set(x, "ResourceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipants(value: Participants): Self = this.set("Participants", value.asInstanceOf[js.Any])
+    def setResourceMetadataUndefined: Self = StObject.set(x, "ResourceMetadata", js.undefined)
     
     @scala.inline
-    def deleteParticipants: Self = this.set("Participants", js.undefined)
+    def setTimeStamp(value: TimestampType): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceMetadata(value: ResourceMetadata): Self = this.set("ResourceMetadata", value.asInstanceOf[js.Any])
+    def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
     
     @scala.inline
-    def deleteResourceMetadata: Self = this.set("ResourceMetadata", js.undefined)
+    def setType(value: ActivityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: TimestampType): Self = this.set("TimeStamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeStamp: Self = this.set("TimeStamp", js.undefined)
-    
-    @scala.inline
-    def setType(value: ActivityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

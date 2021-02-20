@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageProperties extends js.Object {
+trait PageProperties extends StObject {
   
   /**
     * The color scheme of the page. If unset, the color scheme is inherited from a parent page. If the page has no parent, the color scheme uses a default Slides color scheme, matching
@@ -30,30 +31,18 @@ object PageProperties {
   }
   
   @scala.inline
-  implicit class PagePropertiesOps[Self <: PageProperties] (val x: Self) extends AnyVal {
+  implicit class PagePropertiesMutableBuilder[Self <: PageProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageBackgroundFill(value: PageBackgroundFill): Self = StObject.set(x, "pageBackgroundFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScheme(value: ColorScheme): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
-    
-    @scala.inline
-    def setPageBackgroundFill(value: PageBackgroundFill): Self = this.set("pageBackgroundFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageBackgroundFill: Self = this.set("pageBackgroundFill", js.undefined)
+    def setPageBackgroundFillUndefined: Self = StObject.set(x, "pageBackgroundFill", js.undefined)
   }
 }

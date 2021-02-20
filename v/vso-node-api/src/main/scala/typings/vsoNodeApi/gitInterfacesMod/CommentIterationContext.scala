@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentIterationContext extends js.Object {
+trait CommentIterationContext extends StObject {
   
   /**
     * The iteration of the file on the left side of the diff when the thread was created. If this value is equal to SecondComparingIteration, then this version is the common commit between the source and target branches of the pull request.
@@ -26,24 +27,12 @@ object CommentIterationContext {
   }
   
   @scala.inline
-  implicit class CommentIterationContextOps[Self <: CommentIterationContext] (val x: Self) extends AnyVal {
+  implicit class CommentIterationContextMutableBuilder[Self <: CommentIterationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirstComparingIteration(value: Double): Self = this.set("firstComparingIteration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondComparingIteration(value: Double): Self = this.set("secondComparingIteration", value.asInstanceOf[js.Any])
+    def setSecondComparingIteration(value: Double): Self = StObject.set(x, "secondComparingIteration", value.asInstanceOf[js.Any])
   }
 }

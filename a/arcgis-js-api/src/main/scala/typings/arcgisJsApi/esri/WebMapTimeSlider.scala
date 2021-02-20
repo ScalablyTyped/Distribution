@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,54 +65,42 @@ object WebMapTimeSlider {
   }
   
   @scala.inline
-  implicit class WebMapTimeSliderOps[Self <: WebMapTimeSlider] (val x: Self) extends AnyVal {
+  implicit class WebMapTimeSliderMutableBuilder[Self <: WebMapTimeSlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentTimeExtent(value: TimeExtent): Self = StObject.set(x, "currentTimeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentTimeExtentUndefined: Self = StObject.set(x, "currentTimeExtent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullTimeExtent(value: TimeExtent): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTimeExtent(value: TimeExtent): Self = this.set("currentTimeExtent", value.asInstanceOf[js.Any])
+    def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
     
     @scala.inline
-    def deleteCurrentTimeExtent: Self = this.set("currentTimeExtent", js.undefined)
+    def setNumStops(value: Double): Self = StObject.set(x, "numStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullTimeExtent(value: TimeExtent): Self = this.set("fullTimeExtent", value.asInstanceOf[js.Any])
+    def setNumStopsUndefined: Self = StObject.set(x, "numStops", js.undefined)
     
     @scala.inline
-    def deleteFullTimeExtent: Self = this.set("fullTimeExtent", js.undefined)
+    def setNumThumbs(value: Double): Self = StObject.set(x, "numThumbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumStops(value: Double): Self = this.set("numStops", value.asInstanceOf[js.Any])
+    def setNumThumbsUndefined: Self = StObject.set(x, "numThumbs", js.undefined)
     
     @scala.inline
-    def deleteNumStops: Self = this.set("numStops", js.undefined)
+    def setStopDelay(value: Double): Self = StObject.set(x, "stopDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumThumbs(value: Double): Self = this.set("numThumbs", value.asInstanceOf[js.Any])
+    def setStopDelayUndefined: Self = StObject.set(x, "stopDelay", js.undefined)
     
     @scala.inline
-    def deleteNumThumbs: Self = this.set("numThumbs", js.undefined)
+    def setStopInterval(value: TimeInterval): Self = StObject.set(x, "stopInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopDelay(value: Double): Self = this.set("stopDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopDelay: Self = this.set("stopDelay", js.undefined)
-    
-    @scala.inline
-    def setStopInterval(value: TimeInterval): Self = this.set("stopInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopInterval: Self = this.set("stopInterval", js.undefined)
+    def setStopIntervalUndefined: Self = StObject.set(x, "stopInterval", js.undefined)
   }
 }

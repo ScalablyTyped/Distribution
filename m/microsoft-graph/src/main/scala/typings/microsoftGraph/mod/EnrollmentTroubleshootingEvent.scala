@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,84 +49,72 @@ object EnrollmentTroubleshootingEvent {
   }
   
   @scala.inline
-  implicit class EnrollmentTroubleshootingEventOps[Self <: EnrollmentTroubleshootingEvent] (val x: Self) extends AnyVal {
+  implicit class EnrollmentTroubleshootingEventMutableBuilder[Self <: EnrollmentTroubleshootingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def setDeviceId(value: NullableOption[String]): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setEnrollmentType(value: DeviceEnrollmentType): Self = StObject.set(x, "enrollmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setEnrollmentTypeUndefined: Self = StObject.set(x, "enrollmentType", js.undefined)
     
     @scala.inline
-    def setDeviceIdNull: Self = this.set("deviceId", null)
+    def setFailureCategory(value: DeviceEnrollmentFailureReason): Self = StObject.set(x, "failureCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrollmentType(value: DeviceEnrollmentType): Self = this.set("enrollmentType", value.asInstanceOf[js.Any])
+    def setFailureCategoryUndefined: Self = StObject.set(x, "failureCategory", js.undefined)
     
     @scala.inline
-    def deleteEnrollmentType: Self = this.set("enrollmentType", js.undefined)
+    def setFailureReason(value: NullableOption[String]): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCategory(value: DeviceEnrollmentFailureReason): Self = this.set("failureCategory", value.asInstanceOf[js.Any])
+    def setFailureReasonNull: Self = StObject.set(x, "failureReason", null)
     
     @scala.inline
-    def deleteFailureCategory: Self = this.set("failureCategory", js.undefined)
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def setFailureReason(value: NullableOption[String]): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setManagedDeviceIdentifier(value: NullableOption[String]): Self = StObject.set(x, "managedDeviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setManagedDeviceIdentifierNull: Self = StObject.set(x, "managedDeviceIdentifier", null)
     
     @scala.inline
-    def setFailureReasonNull: Self = this.set("failureReason", null)
+    def setManagedDeviceIdentifierUndefined: Self = StObject.set(x, "managedDeviceIdentifier", js.undefined)
     
     @scala.inline
-    def setManagedDeviceIdentifier(value: NullableOption[String]): Self = this.set("managedDeviceIdentifier", value.asInstanceOf[js.Any])
+    def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagedDeviceIdentifier: Self = this.set("managedDeviceIdentifier", js.undefined)
+    def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
     
     @scala.inline
-    def setManagedDeviceIdentifierNull: Self = this.set("managedDeviceIdentifier", null)
+    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
     
     @scala.inline
-    def setOperatingSystem(value: NullableOption[String]): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
+    def setOsVersion(value: NullableOption[String]): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperatingSystem: Self = this.set("operatingSystem", js.undefined)
+    def setOsVersionNull: Self = StObject.set(x, "osVersion", null)
     
     @scala.inline
-    def setOperatingSystemNull: Self = this.set("operatingSystem", null)
+    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
     @scala.inline
-    def setOsVersion(value: NullableOption[String]): Self = this.set("osVersion", value.asInstanceOf[js.Any])
+    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOsVersion: Self = this.set("osVersion", js.undefined)
+    def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     @scala.inline
-    def setOsVersionNull: Self = this.set("osVersion", null)
-    
-    @scala.inline
-    def setUserId(value: NullableOption[String]): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
-    
-    @scala.inline
-    def setUserIdNull: Self = this.set("userId", null)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.al
   - typings.fridaGum.fridaGumStrings.nv
 */
-trait Arm64ConditionCode extends js.Object
+trait Arm64ConditionCode extends StObject
 object Arm64ConditionCode {
   
   @scala.inline

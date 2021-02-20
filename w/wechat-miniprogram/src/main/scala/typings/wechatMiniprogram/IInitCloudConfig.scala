@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram
 
 import typings.wechatMiniprogram.anon.Database
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInitCloudConfig extends js.Object {
+trait IInitCloudConfig extends StObject {
   
   var env: js.UndefOr[String | Database] = js.native
   
@@ -21,30 +22,18 @@ object IInitCloudConfig {
   }
   
   @scala.inline
-  implicit class IInitCloudConfigOps[Self <: IInitCloudConfig] (val x: Self) extends AnyVal {
+  implicit class IInitCloudConfigMutableBuilder[Self <: IInitCloudConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnv(value: String | Database): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTraceUser(value: Boolean): Self = StObject.set(x, "traceUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: String | Database): Self = this.set("env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
-    
-    @scala.inline
-    def setTraceUser(value: Boolean): Self = this.set("traceUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceUser: Self = this.set("traceUser", js.undefined)
+    def setTraceUserUndefined: Self = StObject.set(x, "traceUser", js.undefined)
   }
 }

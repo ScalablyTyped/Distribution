@@ -3,12 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.GroupsLinks
 import typings.nodeRedEditorClient.anon.LinksNodes
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nodes extends js.Object {
+trait Nodes extends StObject {
   
   def add(n: js.Object): Unit = js.native
   
@@ -239,11 +240,7 @@ trait Nodes extends js.Object {
     * @param def The node definition contains all of the information about the node
     * needed by the editor.
     */
-  def registerType[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](
-    nt: String,
-     // tslint:disable-line:no-unnecessary-generics
-  `def`: NodeDef[TProps, TCreds, TInstProps]
-  ): Unit = js.native
+  def registerType[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](nt: String, `def`: NodeDef[TProps, TCreds, TInstProps]): Unit = js.native
   /**
     * Registers a node with the editor.     *
     * @param nt The node type is used throughout the editor to identify the node. It must

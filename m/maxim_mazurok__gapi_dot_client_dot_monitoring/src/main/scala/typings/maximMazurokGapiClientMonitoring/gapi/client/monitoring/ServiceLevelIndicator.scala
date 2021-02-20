@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceLevelIndicator extends js.Object {
+trait ServiceLevelIndicator extends StObject {
   
   /** Basic SLI on a well-known service type. */
   var basicSli: js.UndefOr[BasicSli] = js.native
@@ -25,36 +26,24 @@ object ServiceLevelIndicator {
   }
   
   @scala.inline
-  implicit class ServiceLevelIndicatorOps[Self <: ServiceLevelIndicator] (val x: Self) extends AnyVal {
+  implicit class ServiceLevelIndicatorMutableBuilder[Self <: ServiceLevelIndicator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasicSli(value: BasicSli): Self = StObject.set(x, "basicSli", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasicSliUndefined: Self = StObject.set(x, "basicSli", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestBased(value: RequestBasedSli): Self = StObject.set(x, "requestBased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicSli(value: BasicSli): Self = this.set("basicSli", value.asInstanceOf[js.Any])
+    def setRequestBasedUndefined: Self = StObject.set(x, "requestBased", js.undefined)
     
     @scala.inline
-    def deleteBasicSli: Self = this.set("basicSli", js.undefined)
+    def setWindowsBased(value: WindowsBasedSli): Self = StObject.set(x, "windowsBased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBased(value: RequestBasedSli): Self = this.set("requestBased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBased: Self = this.set("requestBased", js.undefined)
-    
-    @scala.inline
-    def setWindowsBased(value: WindowsBasedSli): Self = this.set("windowsBased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsBased: Self = this.set("windowsBased", js.undefined)
+    def setWindowsBasedUndefined: Self = StObject.set(x, "windowsBased", js.undefined)
   }
 }

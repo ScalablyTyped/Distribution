@@ -1,11 +1,12 @@
 package typings.cookieJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UtilStatic extends js.Object {
+trait UtilStatic extends StObject {
   
   def decode(value: String): String = js.native
   
@@ -38,39 +39,27 @@ object UtilStatic {
   }
   
   @scala.inline
-  implicit class UtilStaticOps[Self <: UtilStatic] (val x: Self) extends AnyVal {
+  implicit class UtilStaticMutableBuilder[Self <: UtilStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetKeys(value: js.Object => js.Array[_]): Self = StObject.set(x, "getKeys", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDecode(value: String => String): Self = this.set("decode", js.Any.fromFunction1(value))
+    def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEncode(value: String => String): Self = this.set("encode", js.Any.fromFunction1(value))
+    def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeys(value: js.Object => js.Array[_]): Self = this.set("getKeys", js.Any.fromFunction1(value))
+    def setRetrieve(value: (String, String) => String): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsArray(value: js.Any => Boolean): Self = this.set("isArray", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsObject(value: js.Any => Boolean): Self = this.set("isObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRetrieve(value: (String, String) => String): Self = this.set("retrieve", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setToArray(value: /* repeated */ js.Any => js.Array[_]): Self = this.set("toArray", js.Any.fromFunction1(value))
+    def setToArray(value: /* repeated */ js.Any => js.Array[_]): Self = StObject.set(x, "toArray", js.Any.fromFunction1(value))
   }
 }

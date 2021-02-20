@@ -1,13 +1,14 @@
 package typings.lyricist.mod
 
 import typings.lyricist.anon.Hot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Search ================================================
 @js.native
-trait SearchResult extends js.Object {
+trait SearchResult extends StObject {
   
   var annotation_count: Double = js.native
   
@@ -66,69 +67,57 @@ object SearchResult {
   }
   
   @scala.inline
-  implicit class SearchResultOps[Self <: SearchResult] (val x: Self) extends AnyVal {
+  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFull_title(value: String): Self = StObject.set(x, "full_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation_count(value: Double): Self = this.set("annotation_count", value.asInstanceOf[js.Any])
+    def setHeader_image_thumbnail_url(value: String): Self = StObject.set(x, "header_image_thumbnail_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_path(value: String): Self = this.set("api_path", value.asInstanceOf[js.Any])
+    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull_title(value: String): Self = this.set("full_title", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader_image_thumbnail_url(value: String): Self = this.set("header_image_thumbnail_url", value.asInstanceOf[js.Any])
+    def setLyrics_owner_id(value: Double): Self = StObject.set(x, "lyrics_owner_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader_image_url(value: String): Self = this.set("header_image_url", value.asInstanceOf[js.Any])
+    def setLyrics_state(value: String): Self = StObject.set(x, "lyrics_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLyrics_owner_id(value: Double): Self = this.set("lyrics_owner_id", value.asInstanceOf[js.Any])
+    def setPrimary_artist(value: ArtistBrief): Self = StObject.set(x, "primary_artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLyrics_state(value: String): Self = this.set("lyrics_state", value.asInstanceOf[js.Any])
+    def setPyongs_count(value: js.Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPyongs_countUndefined: Self = StObject.set(x, "pyongs_count", js.undefined)
     
     @scala.inline
-    def setPrimary_artist(value: ArtistBrief): Self = this.set("primary_artist", value.asInstanceOf[js.Any])
+    def setSong_art_image_thumbnail_url(value: String): Self = StObject.set(x, "song_art_image_thumbnail_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSong_art_image_thumbnail_url(value: String): Self = this.set("song_art_image_thumbnail_url", value.asInstanceOf[js.Any])
+    def setStats(value: Hot): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStats(value: Hot): Self = this.set("stats", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle_with_featured(value: String): Self = StObject.set(x, "title_with_featured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle_with_featured(value: String): Self = this.set("title_with_featured", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPyongs_count(value: js.Any): Self = this.set("pyongs_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePyongs_count: Self = this.set("pyongs_count", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

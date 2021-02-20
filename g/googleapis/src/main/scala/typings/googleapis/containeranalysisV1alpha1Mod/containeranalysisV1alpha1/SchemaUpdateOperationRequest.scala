@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for updating an existing operation
   */
 @js.native
-trait SchemaUpdateOperationRequest extends js.Object {
+trait SchemaUpdateOperationRequest extends StObject {
   
   /**
     * The operation to create.
@@ -29,30 +30,18 @@ object SchemaUpdateOperationRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateOperationRequestOps[Self <: SchemaUpdateOperationRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateOperationRequestMutableBuilder[Self <: SchemaUpdateOperationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: SchemaOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

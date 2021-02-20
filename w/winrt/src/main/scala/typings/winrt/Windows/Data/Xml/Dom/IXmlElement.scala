@@ -1,5 +1,6 @@
 package typings.winrt.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,57 +84,45 @@ object IXmlElement {
   }
   
   @scala.inline
-  implicit class IXmlElementOps[Self <: IXmlElement] (val x: Self) extends AnyVal {
+  implicit class IXmlElementMutableBuilder[Self <: IXmlElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAttributeNS(value: (js.Any, String) => String): Self = StObject.set(x, "getAttributeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAttributeNode(value: String => XmlAttribute): Self = StObject.set(x, "getAttributeNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAttribute(value: String => String): Self = this.set("getAttribute", js.Any.fromFunction1(value))
+    def setGetAttributeNodeNS(value: (js.Any, String) => XmlAttribute): Self = StObject.set(x, "getAttributeNodeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAttributeNS(value: (js.Any, String) => String): Self = this.set("getAttributeNS", js.Any.fromFunction2(value))
+    def setGetElementsByTagName(value: String => XmlNodeList): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAttributeNode(value: String => XmlAttribute): Self = this.set("getAttributeNode", js.Any.fromFunction1(value))
+    def setRemoveAttribute(value: String => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAttributeNodeNS(value: (js.Any, String) => XmlAttribute): Self = this.set("getAttributeNodeNS", js.Any.fromFunction2(value))
+    def setRemoveAttributeNS(value: (js.Any, String) => Unit): Self = StObject.set(x, "removeAttributeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetElementsByTagName(value: String => XmlNodeList): Self = this.set("getElementsByTagName", js.Any.fromFunction1(value))
+    def setRemoveAttributeNode(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "removeAttributeNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAttribute(value: String => Unit): Self = this.set("removeAttribute", js.Any.fromFunction1(value))
+    def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveAttributeNS(value: (js.Any, String) => Unit): Self = this.set("removeAttributeNS", js.Any.fromFunction2(value))
+    def setSetAttributeNS(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "setAttributeNS", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemoveAttributeNode(value: XmlAttribute => XmlAttribute): Self = this.set("removeAttributeNode", js.Any.fromFunction1(value))
+    def setSetAttributeNode(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "setAttributeNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAttribute(value: (String, String) => Unit): Self = this.set("setAttribute", js.Any.fromFunction2(value))
+    def setSetAttributeNodeNS(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "setAttributeNodeNS", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAttributeNS(value: (js.Any, String, String) => Unit): Self = this.set("setAttributeNS", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetAttributeNode(value: XmlAttribute => XmlAttribute): Self = this.set("setAttributeNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAttributeNodeNS(value: XmlAttribute => XmlAttribute): Self = this.set("setAttributeNodeNS", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

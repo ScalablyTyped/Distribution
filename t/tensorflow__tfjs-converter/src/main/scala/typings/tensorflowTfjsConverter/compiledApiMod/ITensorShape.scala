@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
 import typings.tensorflowTfjsConverter.compiledApiMod.TensorShape.IDim
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITensorShape extends js.Object {
+trait ITensorShape extends StObject {
   
   /** TensorShape dim */
   var dim: js.UndefOr[js.Array[IDim] | Null] = js.native
@@ -23,39 +24,27 @@ object ITensorShape {
   }
   
   @scala.inline
-  implicit class ITensorShapeOps[Self <: ITensorShape] (val x: Self) extends AnyVal {
+  implicit class ITensorShapeMutableBuilder[Self <: ITensorShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDim(value: js.Array[IDim]): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimNull: Self = StObject.set(x, "dim", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
     
     @scala.inline
-    def setDimVarargs(value: IDim*): Self = this.set("dim", js.Array(value :_*))
+    def setDimVarargs(value: IDim*): Self = StObject.set(x, "dim", js.Array(value :_*))
     
     @scala.inline
-    def setDim(value: js.Array[IDim]): Self = this.set("dim", value.asInstanceOf[js.Any])
+    def setUnknownRank(value: Boolean): Self = StObject.set(x, "unknownRank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDim: Self = this.set("dim", js.undefined)
+    def setUnknownRankNull: Self = StObject.set(x, "unknownRank", null)
     
     @scala.inline
-    def setDimNull: Self = this.set("dim", null)
-    
-    @scala.inline
-    def setUnknownRank(value: Boolean): Self = this.set("unknownRank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownRank: Self = this.set("unknownRank", js.undefined)
-    
-    @scala.inline
-    def setUnknownRankNull: Self = this.set("unknownRank", null)
+    def setUnknownRankUndefined: Self = StObject.set(x, "unknownRank", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.chromeApps.chrome.gcm.GcmError
 import typings.chromeApps.chrome.gcm.IncomingMessage
 import typings.chromeApps.chrome.gcm.OutgoingMessage
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofgcm extends js.Object {
+trait Typeofgcm extends StObject {
   
   /**
     * The maximum size (in bytes) of all key/value pairs in a message.
@@ -72,39 +73,27 @@ object Typeofgcm {
   }
   
   @scala.inline
-  implicit class TypeofgcmOps[Self <: Typeofgcm] (val x: Self) extends AnyVal {
+  implicit class TypeofgcmMutableBuilder[Self <: Typeofgcm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMAX_MESSAGE_SIZE(value: integer): Self = StObject.set(x, "MAX_MESSAGE_SIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnMessage(value: Event[js.Function1[/* message */ IncomingMessage, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMessagesDeleted(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onMessagesDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAX_MESSAGE_SIZE(value: integer): Self = this.set("MAX_MESSAGE_SIZE", value.asInstanceOf[js.Any])
+    def setOnSendError(value: Event[js.Function1[/* error */ GcmError, Unit]]): Self = StObject.set(x, "onSendError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMessage(value: Event[js.Function1[/* message */ IncomingMessage, Unit]]): Self = this.set("onMessage", value.asInstanceOf[js.Any])
+    def setRegister(value: (js.Array[String], js.Function1[/* registrationId */ String, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnMessagesDeleted(value: Event[js.Function0[Unit]]): Self = this.set("onMessagesDeleted", value.asInstanceOf[js.Any])
+    def setSend(value: (OutgoingMessage, js.Function1[/* messageId */ String, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnSendError(value: Event[js.Function1[/* error */ GcmError, Unit]]): Self = this.set("onSendError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegister(value: (js.Array[String], js.Function1[/* registrationId */ String, Unit]) => Unit): Self = this.set("register", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSend(value: (OutgoingMessage, js.Function1[/* messageId */ String, Unit]) => Unit): Self = this.set("send", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnregister(value: js.Function0[Unit] => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
+    def setUnregister(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
   }
 }

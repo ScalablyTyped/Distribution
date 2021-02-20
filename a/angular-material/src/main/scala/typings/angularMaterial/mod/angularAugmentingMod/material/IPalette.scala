@@ -1,11 +1,12 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPalette extends js.Object {
+trait IPalette extends StObject {
   
   var `0`: js.UndefOr[String] = js.native
   
@@ -54,141 +55,129 @@ object IPalette {
   }
   
   @scala.inline
-  implicit class IPaletteOps[Self <: IPalette] (val x: Self) extends AnyVal {
+  implicit class IPaletteMutableBuilder[Self <: IPalette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set0Undefined: Self = StObject.set(x, "0", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set0(value: String): Self = this.set("0", value.asInstanceOf[js.Any])
+    def set100Undefined: Self = StObject.set(x, "100", js.undefined)
     
     @scala.inline
-    def delete0: Self = this.set("0", js.undefined)
+    def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set100(value: String): Self = this.set("100", value.asInstanceOf[js.Any])
+    def set200Undefined: Self = StObject.set(x, "200", js.undefined)
     
     @scala.inline
-    def delete100: Self = this.set("100", js.undefined)
+    def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set200(value: String): Self = this.set("200", value.asInstanceOf[js.Any])
+    def set300Undefined: Self = StObject.set(x, "300", js.undefined)
     
     @scala.inline
-    def delete200: Self = this.set("200", js.undefined)
+    def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set300(value: String): Self = this.set("300", value.asInstanceOf[js.Any])
+    def set400Undefined: Self = StObject.set(x, "400", js.undefined)
     
     @scala.inline
-    def delete300: Self = this.set("300", js.undefined)
+    def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set400(value: String): Self = this.set("400", value.asInstanceOf[js.Any])
+    def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete400: Self = this.set("400", js.undefined)
+    def set500Undefined: Self = StObject.set(x, "500", js.undefined)
     
     @scala.inline
-    def set50(value: String): Self = this.set("50", value.asInstanceOf[js.Any])
+    def set50Undefined: Self = StObject.set(x, "50", js.undefined)
     
     @scala.inline
-    def delete50: Self = this.set("50", js.undefined)
+    def set600(value: String): Self = StObject.set(x, "600", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set500(value: String): Self = this.set("500", value.asInstanceOf[js.Any])
+    def set600Undefined: Self = StObject.set(x, "600", js.undefined)
     
     @scala.inline
-    def delete500: Self = this.set("500", js.undefined)
+    def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set600(value: String): Self = this.set("600", value.asInstanceOf[js.Any])
+    def set700Undefined: Self = StObject.set(x, "700", js.undefined)
     
     @scala.inline
-    def delete600: Self = this.set("600", js.undefined)
+    def set800(value: String): Self = StObject.set(x, "800", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set700(value: String): Self = this.set("700", value.asInstanceOf[js.Any])
+    def set800Undefined: Self = StObject.set(x, "800", js.undefined)
     
     @scala.inline
-    def delete700: Self = this.set("700", js.undefined)
+    def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set800(value: String): Self = this.set("800", value.asInstanceOf[js.Any])
+    def set900Undefined: Self = StObject.set(x, "900", js.undefined)
     
     @scala.inline
-    def delete800: Self = this.set("800", js.undefined)
+    def setA100(value: String): Self = StObject.set(x, "A100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set900(value: String): Self = this.set("900", value.asInstanceOf[js.Any])
+    def setA100Undefined: Self = StObject.set(x, "A100", js.undefined)
     
     @scala.inline
-    def delete900: Self = this.set("900", js.undefined)
+    def setA200(value: String): Self = StObject.set(x, "A200", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA100(value: String): Self = this.set("A100", value.asInstanceOf[js.Any])
+    def setA200Undefined: Self = StObject.set(x, "A200", js.undefined)
     
     @scala.inline
-    def deleteA100: Self = this.set("A100", js.undefined)
+    def setA400(value: String): Self = StObject.set(x, "A400", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA200(value: String): Self = this.set("A200", value.asInstanceOf[js.Any])
+    def setA400Undefined: Self = StObject.set(x, "A400", js.undefined)
     
     @scala.inline
-    def deleteA200: Self = this.set("A200", js.undefined)
+    def setA700(value: String): Self = StObject.set(x, "A700", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA400(value: String): Self = this.set("A400", value.asInstanceOf[js.Any])
+    def setA700Undefined: Self = StObject.set(x, "A700", js.undefined)
     
     @scala.inline
-    def deleteA400: Self = this.set("A400", js.undefined)
+    def setContrastDarkColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastDarkColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA700(value: String): Self = this.set("A700", value.asInstanceOf[js.Any])
+    def setContrastDarkColorsUndefined: Self = StObject.set(x, "contrastDarkColors", js.undefined)
     
     @scala.inline
-    def deleteA700: Self = this.set("A700", js.undefined)
+    def setContrastDarkColorsVarargs(value: String*): Self = StObject.set(x, "contrastDarkColors", js.Array(value :_*))
     
     @scala.inline
-    def setContrastDarkColorsVarargs(value: String*): Self = this.set("contrastDarkColors", js.Array(value :_*))
+    def setContrastDefaultColor(value: String): Self = StObject.set(x, "contrastDefaultColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrastDarkColors(value: String | js.Array[String]): Self = this.set("contrastDarkColors", value.asInstanceOf[js.Any])
+    def setContrastDefaultColorUndefined: Self = StObject.set(x, "contrastDefaultColor", js.undefined)
     
     @scala.inline
-    def deleteContrastDarkColors: Self = this.set("contrastDarkColors", js.undefined)
+    def setContrastLightColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastLightColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrastDefaultColor(value: String): Self = this.set("contrastDefaultColor", value.asInstanceOf[js.Any])
+    def setContrastLightColorsUndefined: Self = StObject.set(x, "contrastLightColors", js.undefined)
     
     @scala.inline
-    def deleteContrastDefaultColor: Self = this.set("contrastDefaultColor", js.undefined)
+    def setContrastLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastLightColors", js.Array(value :_*))
     
     @scala.inline
-    def setContrastLightColorsVarargs(value: String*): Self = this.set("contrastLightColors", js.Array(value :_*))
+    def setContrastStrongLightColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastStrongLightColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrastLightColors(value: String | js.Array[String]): Self = this.set("contrastLightColors", value.asInstanceOf[js.Any])
+    def setContrastStrongLightColorsUndefined: Self = StObject.set(x, "contrastStrongLightColors", js.undefined)
     
     @scala.inline
-    def deleteContrastLightColors: Self = this.set("contrastLightColors", js.undefined)
-    
-    @scala.inline
-    def setContrastStrongLightColorsVarargs(value: String*): Self = this.set("contrastStrongLightColors", js.Array(value :_*))
-    
-    @scala.inline
-    def setContrastStrongLightColors(value: String | js.Array[String]): Self = this.set("contrastStrongLightColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContrastStrongLightColors: Self = this.set("contrastStrongLightColors", js.undefined)
+    def setContrastStrongLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastStrongLightColors", js.Array(value :_*))
   }
 }

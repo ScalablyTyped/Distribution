@@ -1,5 +1,6 @@
 package typings.googleCloudStorage.fileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleCloudStorage.googleCloudStorageStrings.projectPrivate
   - typings.googleCloudStorage.googleCloudStorageStrings.publicRead
 */
-trait PredefinedAcl extends js.Object
+trait PredefinedAcl extends StObject
 object PredefinedAcl {
   
   @scala.inline

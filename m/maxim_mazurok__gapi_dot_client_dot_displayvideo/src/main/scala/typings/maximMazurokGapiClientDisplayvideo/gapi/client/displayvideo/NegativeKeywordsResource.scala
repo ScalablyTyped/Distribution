@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.KeywordValue
 import typings.maximMazurokGapiClientDisplayvideo.anon.NegativeKeywordListId
 import typings.maximMazurokGapiClientDisplayvideo.anon.NegativeKeywordListIdOauthtoken
 import typings.maximMazurokGapiClientDisplayvideo.anon.PageTokenPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NegativeKeywordsResource extends js.Object {
+trait NegativeKeywordsResource extends StObject {
   
   def bulkEdit(request: KeyNegativeKeywordListId, body: BulkEditNegativeKeywordsRequest): Request[BulkEditNegativeKeywordsResponse] = js.native
   /**

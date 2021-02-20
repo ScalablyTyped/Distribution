@@ -2,13 +2,14 @@ package typings.semanticUiCheckbox.anon
 
 import typings.semanticUiCheckbox.semanticUiCheckboxBooleans.`false`
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, 'beforeChecked'> */
 @js.native
-trait PickImplbeforeChecked extends js.Object {
+trait PickImplbeforeChecked extends StObject {
   
   def beforeChecked(): Unit | `false` = js.native
   @JSName("beforeChecked")

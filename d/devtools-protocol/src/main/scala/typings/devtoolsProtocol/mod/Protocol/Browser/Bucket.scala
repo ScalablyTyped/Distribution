@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bucket extends js.Object {
+trait Bucket extends StObject {
   
   /**
     * Number of samples.
@@ -32,27 +33,15 @@ object Bucket {
   }
   
   @scala.inline
-  implicit class BucketOps[Self <: Bucket] (val x: Self) extends AnyVal {
+  implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHigh(value: integer): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCount(value: integer): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHigh(value: integer): Self = this.set("high", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLow(value: integer): Self = this.set("low", value.asInstanceOf[js.Any])
+    def setLow(value: integer): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.DiameterZ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SphereBuilder ()
   extends typings.babylonjs.BABYLON.SphereBuilder
 /* static members */
-@JSGlobal("BABYLON.SphereBuilder")
-@js.native
-object SphereBuilder extends js.Object {
+object SphereBuilder {
   
   /**
     * Creates a sphere mesh
@@ -31,6 +30,10 @@ object SphereBuilder extends js.Object {
     * @returns the sphere mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#sphere
     */
+  @JSGlobal("BABYLON.SphereBuilder.CreateSphere")
+  @js.native
   def CreateSphere(name: String, options: DiameterZ): typings.babylonjs.BABYLON.Mesh = js.native
+  @JSGlobal("BABYLON.SphereBuilder.CreateSphere")
+  @js.native
   def CreateSphere(name: String, options: DiameterZ, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }

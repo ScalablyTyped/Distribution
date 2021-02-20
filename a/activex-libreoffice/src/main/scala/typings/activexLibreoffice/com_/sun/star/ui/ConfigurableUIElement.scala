@@ -4,11 +4,9 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.frame.XFrame
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
-import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
-import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait ConfigurableUIElement
-  extends XUIElement
-     with XInitialization
-     with XUpdatable
-     with XComponent
+  extends UIElement
      with XUIElementSettings {
   
   /**
@@ -67,24 +62,12 @@ object ConfigurableUIElement {
   }
   
   @scala.inline
-  implicit class ConfigurableUIElementOps[Self <: ConfigurableUIElement] (val x: Self) extends AnyVal {
+  implicit class ConfigurableUIElementMutableBuilder[Self <: ConfigurableUIElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSource(value: XUIConfigurationManager): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationSource(value: XUIConfigurationManager): Self = this.set("ConfigurationSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("Persistent", value.asInstanceOf[js.Any])
+    def setPersistent(value: Boolean): Self = StObject.set(x, "Persistent", value.asInstanceOf[js.Any])
   }
 }

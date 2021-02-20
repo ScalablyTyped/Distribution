@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * at GitHub.
   */
 @js.native
-trait SchemaEphemeralIdRegistration extends js.Object {
+trait SchemaEphemeralIdRegistration extends StObject {
   
   /**
     * The beacon&#39;s public key used for the Elliptic curve Diffie-Hellman
@@ -87,54 +88,42 @@ object SchemaEphemeralIdRegistration {
   }
   
   @scala.inline
-  implicit class SchemaEphemeralIdRegistrationOps[Self <: SchemaEphemeralIdRegistration] (val x: Self) extends AnyVal {
+  implicit class SchemaEphemeralIdRegistrationMutableBuilder[Self <: SchemaEphemeralIdRegistration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeaconEcdhPublicKey(value: String): Self = StObject.set(x, "beaconEcdhPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeaconEcdhPublicKeyUndefined: Self = StObject.set(x, "beaconEcdhPublicKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeaconIdentityKey(value: String): Self = StObject.set(x, "beaconIdentityKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconEcdhPublicKey(value: String): Self = this.set("beaconEcdhPublicKey", value.asInstanceOf[js.Any])
+    def setBeaconIdentityKeyUndefined: Self = StObject.set(x, "beaconIdentityKey", js.undefined)
     
     @scala.inline
-    def deleteBeaconEcdhPublicKey: Self = this.set("beaconEcdhPublicKey", js.undefined)
+    def setInitialClockValue(value: String): Self = StObject.set(x, "initialClockValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconIdentityKey(value: String): Self = this.set("beaconIdentityKey", value.asInstanceOf[js.Any])
+    def setInitialClockValueUndefined: Self = StObject.set(x, "initialClockValue", js.undefined)
     
     @scala.inline
-    def deleteBeaconIdentityKey: Self = this.set("beaconIdentityKey", js.undefined)
+    def setInitialEid(value: String): Self = StObject.set(x, "initialEid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialClockValue(value: String): Self = this.set("initialClockValue", value.asInstanceOf[js.Any])
+    def setInitialEidUndefined: Self = StObject.set(x, "initialEid", js.undefined)
     
     @scala.inline
-    def deleteInitialClockValue: Self = this.set("initialClockValue", js.undefined)
+    def setRotationPeriodExponent(value: Double): Self = StObject.set(x, "rotationPeriodExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialEid(value: String): Self = this.set("initialEid", value.asInstanceOf[js.Any])
+    def setRotationPeriodExponentUndefined: Self = StObject.set(x, "rotationPeriodExponent", js.undefined)
     
     @scala.inline
-    def deleteInitialEid: Self = this.set("initialEid", js.undefined)
+    def setServiceEcdhPublicKey(value: String): Self = StObject.set(x, "serviceEcdhPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationPeriodExponent(value: Double): Self = this.set("rotationPeriodExponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationPeriodExponent: Self = this.set("rotationPeriodExponent", js.undefined)
-    
-    @scala.inline
-    def setServiceEcdhPublicKey(value: String): Self = this.set("serviceEcdhPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceEcdhPublicKey: Self = this.set("serviceEcdhPublicKey", js.undefined)
+    def setServiceEcdhPublicKeyUndefined: Self = StObject.set(x, "serviceEcdhPublicKey", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.googleCloudStorage.fileMod
 
 import typings.googleCloudStorage.anon.Max
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSignedPolicyOptions extends js.Object {
+trait GetSignedPolicyOptions extends StObject {
   
   var acl: js.UndefOr[String] = js.native
   
@@ -33,63 +34,51 @@ object GetSignedPolicyOptions {
   }
   
   @scala.inline
-  implicit class GetSignedPolicyOptionsOps[Self <: GetSignedPolicyOptions] (val x: Self) extends AnyVal {
+  implicit class GetSignedPolicyOptionsMutableBuilder[Self <: GetSignedPolicyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLengthRange(value: Max): Self = StObject.set(x, "contentLengthRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: String | Double | Date): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setContentLengthRangeUndefined: Self = StObject.set(x, "contentLengthRange", js.undefined)
     
     @scala.inline
-    def setAcl(value: String): Self = this.set("acl", value.asInstanceOf[js.Any])
+    def setEquals_(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcl: Self = this.set("acl", js.undefined)
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def setContentLengthRange(value: Max): Self = this.set("contentLengthRange", value.asInstanceOf[js.Any])
+    def setEquals_Varargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "equals", js.Array(value :_*))
     
     @scala.inline
-    def deleteContentLengthRange: Self = this.set("contentLengthRange", js.undefined)
+    def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqualsVarargs(value: (js.Array[String] | String)*): Self = this.set("equals", js.Array(value :_*))
+    def setStartsWith(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: js.Array[js.Array[String] | String]): Self = this.set("equals", value.asInstanceOf[js.Any])
+    def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setStartsWithVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "startsWith", js.Array(value :_*))
     
     @scala.inline
-    def setStartsWithVarargs(value: (js.Array[String] | String)*): Self = this.set("startsWith", js.Array(value :_*))
+    def setSuccessRedirect(value: String): Self = StObject.set(x, "successRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartsWith(value: js.Array[js.Array[String] | String]): Self = this.set("startsWith", value.asInstanceOf[js.Any])
+    def setSuccessRedirectUndefined: Self = StObject.set(x, "successRedirect", js.undefined)
     
     @scala.inline
-    def deleteStartsWith: Self = this.set("startsWith", js.undefined)
+    def setSuccessStatus(value: String): Self = StObject.set(x, "successStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessRedirect(value: String): Self = this.set("successRedirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessRedirect: Self = this.set("successRedirect", js.undefined)
-    
-    @scala.inline
-    def setSuccessStatus(value: String): Self = this.set("successStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessStatus: Self = this.set("successStatus", js.undefined)
+    def setSuccessStatusUndefined: Self = StObject.set(x, "successStatus", js.undefined)
   }
 }

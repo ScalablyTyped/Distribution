@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestRepositoryTriggersInput extends js.Object {
+trait TestRepositoryTriggersInput extends StObject {
   
   /**
     * The name of the repository in which to test the triggers.
@@ -26,27 +27,15 @@ object TestRepositoryTriggersInput {
   }
   
   @scala.inline
-  implicit class TestRepositoryTriggersInputOps[Self <: TestRepositoryTriggersInput] (val x: Self) extends AnyVal {
+  implicit class TestRepositoryTriggersInputMutableBuilder[Self <: TestRepositoryTriggersInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggers(value: RepositoryTriggersList): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggersVarargs(value: RepositoryTrigger*): Self = this.set("triggers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggers(value: RepositoryTriggersList): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    def setTriggersVarargs(value: RepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
   }
 }

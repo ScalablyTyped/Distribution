@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   */
 @js.native
-trait MultiFactorResolver extends js.Object {
+trait MultiFactorResolver extends StObject {
   
   /**
     * The Auth instance used to sign in with the first factor.
@@ -121,33 +122,21 @@ object MultiFactorResolver {
   }
   
   @scala.inline
-  implicit class MultiFactorResolverOps[Self <: MultiFactorResolver] (val x: Self) extends AnyVal {
+  implicit class MultiFactorResolverMutableBuilder[Self <: MultiFactorResolver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHints(value: js.Array[MultiFactorInfo]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHintsVarargs(value: MultiFactorInfo*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
     @scala.inline
-    def setAuth(value: Auth): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setResolveSignIn(value: MultiFactorAssertion => js.Promise[UserCredential]): Self = StObject.set(x, "resolveSignIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHintsVarargs(value: MultiFactorInfo*): Self = this.set("hints", js.Array(value :_*))
-    
-    @scala.inline
-    def setHints(value: js.Array[MultiFactorInfo]): Self = this.set("hints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolveSignIn(value: MultiFactorAssertion => js.Promise[UserCredential]): Self = this.set("resolveSignIn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSession(value: MultiFactorSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

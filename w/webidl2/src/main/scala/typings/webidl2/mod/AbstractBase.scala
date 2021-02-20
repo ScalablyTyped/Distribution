@@ -1,11 +1,12 @@
 package typings.webidl2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbstractBase extends js.Object {
+trait AbstractBase extends StObject {
   
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttribute] = js.native
@@ -25,36 +26,24 @@ object AbstractBase {
   }
   
   @scala.inline
-  implicit class AbstractBaseOps[Self <: AbstractBase] (val x: Self) extends AnyVal {
+  implicit class AbstractBaseMutableBuilder[Self <: AbstractBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtAttrs(value: js.Array[ExtendedAttribute]): Self = StObject.set(x, "extAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtAttrsVarargs(value: ExtendedAttribute*): Self = StObject.set(x, "extAttrs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: AbstractBase): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtAttrsVarargs(value: ExtendedAttribute*): Self = this.set("extAttrs", js.Array(value :_*))
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setExtAttrs(value: js.Array[ExtendedAttribute]): Self = this.set("extAttrs", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: AbstractBase): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNull: Self = this.set("parent", null)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeNull: Self = StObject.set(x, "type", null)
   }
 }

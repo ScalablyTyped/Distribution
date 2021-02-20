@@ -1,12 +1,13 @@
 package typings.bmapgl.anon
 
 import typings.bmapgl.BMapGL.HotspotOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spots extends js.Object {
+trait Spots extends StObject {
   
   var spots: HotspotOptions = js.native
   
@@ -24,27 +25,15 @@ object Spots {
   }
   
   @scala.inline
-  implicit class SpotsOps[Self <: Spots] (val x: Self) extends AnyVal {
+  implicit class SpotsMutableBuilder[Self <: Spots] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpots(value: HotspotOptions): Self = StObject.set(x, "spots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSpots(value: HotspotOptions): Self = this.set("spots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

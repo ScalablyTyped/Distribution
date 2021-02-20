@@ -1,12 +1,13 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 4. Operating System
 @js.native
-trait OsData extends js.Object {
+trait OsData extends StObject {
   
   var arch: String = js.native
   
@@ -57,57 +58,45 @@ object OsData {
   }
   
   @scala.inline
-  implicit class OsDataOps[Self <: OsData] (val x: Self) extends AnyVal {
+  implicit class OsDataMutableBuilder[Self <: OsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArch(value: String): Self = this.set("arch", value.asInstanceOf[js.Any])
+    def setCodepage(value: String): Self = StObject.set(x, "codepage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: String): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setDistro(value: String): Self = StObject.set(x, "distro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodename(value: String): Self = this.set("codename", value.asInstanceOf[js.Any])
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodepage(value: String): Self = this.set("codepage", value.asInstanceOf[js.Any])
+    def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistro(value: String): Self = this.set("distro", value.asInstanceOf[js.Any])
+    def setLogofile(value: String): Self = StObject.set(x, "logofile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernel(value: String): Self = this.set("kernel", value.asInstanceOf[js.Any])
+    def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogofile(value: String): Self = this.set("logofile", value.asInstanceOf[js.Any])
+    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setServicepack(value: String): Self = StObject.set(x, "servicepack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: String): Self = this.set("release", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerial(value: String): Self = this.set("serial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServicepack(value: String): Self = this.set("servicepack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUefi(value: Boolean): Self = this.set("uefi", value.asInstanceOf[js.Any])
+    def setUefi(value: Boolean): Self = StObject.set(x, "uefi", value.asInstanceOf[js.Any])
   }
 }

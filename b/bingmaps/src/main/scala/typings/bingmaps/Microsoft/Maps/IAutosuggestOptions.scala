@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAutosuggestOptions extends js.Object {
+trait IAutosuggestOptions extends StObject {
   
   /** Specifies if street address suggestions should be returned. Default: true */
   var addressSuggestions: js.UndefOr[Boolean] = js.native
@@ -58,72 +59,60 @@ object IAutosuggestOptions {
   }
   
   @scala.inline
-  implicit class IAutosuggestOptionsOps[Self <: IAutosuggestOptions] (val x: Self) extends AnyVal {
+  implicit class IAutosuggestOptionsMutableBuilder[Self <: IAutosuggestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressSuggestions(value: Boolean): Self = StObject.set(x, "addressSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressSuggestionsUndefined: Self = StObject.set(x, "addressSuggestions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoDetectLocation(value: Boolean): Self = StObject.set(x, "autoDetectLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressSuggestions(value: Boolean): Self = this.set("addressSuggestions", value.asInstanceOf[js.Any])
+    def setAutoDetectLocationUndefined: Self = StObject.set(x, "autoDetectLocation", js.undefined)
     
     @scala.inline
-    def deleteAddressSuggestions: Self = this.set("addressSuggestions", js.undefined)
+    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDetectLocation(value: Boolean): Self = this.set("autoDetectLocation", value.asInstanceOf[js.Any])
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def deleteAutoDetectLocation: Self = this.set("autoDetectLocation", js.undefined)
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: LocationRect): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPlaceSuggestions(value: Boolean): Self = StObject.set(x, "placeSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPlaceSuggestionsUndefined: Self = StObject.set(x, "placeSuggestions", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setUseMapView(value: Boolean): Self = StObject.set(x, "useMapView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceSuggestions(value: Boolean): Self = this.set("placeSuggestions", value.asInstanceOf[js.Any])
+    def setUseMapViewUndefined: Self = StObject.set(x, "useMapView", js.undefined)
     
     @scala.inline
-    def deletePlaceSuggestions: Self = this.set("placeSuggestions", js.undefined)
+    def setUserLocation(value: Location): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMapView(value: Boolean): Self = this.set("useMapView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMapView: Self = this.set("useMapView", js.undefined)
-    
-    @scala.inline
-    def setUserLocation(value: Location): Self = this.set("userLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserLocation: Self = this.set("userLocation", js.undefined)
+    def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
   }
 }

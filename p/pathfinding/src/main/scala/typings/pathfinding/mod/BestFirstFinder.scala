@@ -1,12 +1,10 @@
 package typings.pathfinding.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BestFirstFinder extends AStarFinder
-@JSImport("pathfinding", "BestFirstFinder")
-@js.native
-object BestFirstFinder extends TopLevel[BestFirstFinder]
+trait BestFirstFinder
+  extends typings.pathfinding.mod.AStarFinder

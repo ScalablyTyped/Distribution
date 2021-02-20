@@ -10,6 +10,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.rectangle
 import typings.oracleOraclejet.oracleOraclejetStrings.rectangleRounded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,93 +53,81 @@ object ojDiagramLinkSettableProperties {
   }
   
   @scala.inline
-  implicit class ojDiagramLinkSettablePropertiesOps[Self <: ojDiagramLinkSettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojDiagramLinkSettablePropertiesMutableBuilder[Self <: ojDiagramLinkSettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setEndConnectorType(value: arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded): Self = StObject.set(x, "endConnectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndNode(value: js.Any): Self = this.set("endNode", value.asInstanceOf[js.Any])
+    def setEndConnectorTypeUndefined: Self = StObject.set(x, "endConnectorType", js.undefined)
     
     @scala.inline
-    def setStartNode(value: js.Any): Self = this.set("startNode", value.asInstanceOf[js.Any])
+    def setEndNode(value: js.Any): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndConnectorType(value: arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded): Self = this.set("endConnectorType", value.asInstanceOf[js.Any])
+    def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
     
     @scala.inline
-    def deleteEndConnectorType: Self = this.set("endConnectorType", js.undefined)
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSelectable(value: auto | off): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyleNull: Self = this.set("labelStyle", null)
+    def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
     
     @scala.inline
-    def setSelectable(value: auto | off): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setStartConnectorType(value: arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded): Self = StObject.set(x, "startConnectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setStartConnectorTypeUndefined: Self = StObject.set(x, "startConnectorType", js.undefined)
     
     @scala.inline
-    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    def setStartNode(value: js.Any): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartConnectorType(value: arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded): Self = this.set("startConnectorType", value.asInstanceOf[js.Any])
+    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
     @scala.inline
-    def deleteStartConnectorType: Self = this.set("startConnectorType", js.undefined)
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
     
     @scala.inline
-    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

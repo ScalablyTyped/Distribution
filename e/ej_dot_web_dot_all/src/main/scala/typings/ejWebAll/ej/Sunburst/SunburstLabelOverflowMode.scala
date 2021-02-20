@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej.Sunburst
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstLabelOverflowMode extends js.Object
+sealed trait SunburstLabelOverflowMode extends StObject
 @JSGlobal("ej.Sunburst.SunburstLabelOverflowMode")
 @js.native
-object SunburstLabelOverflowMode extends js.Object {
+object SunburstLabelOverflowMode extends StObject {
   
   //string
   @js.native

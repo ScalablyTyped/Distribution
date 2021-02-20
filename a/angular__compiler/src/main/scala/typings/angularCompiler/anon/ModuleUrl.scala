@@ -1,11 +1,12 @@
 package typings.angularCompiler.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleUrl extends js.Object {
+trait ModuleUrl extends StObject {
   
   var moduleUrl: js.UndefOr[String] = js.native
   
@@ -22,42 +23,30 @@ object ModuleUrl {
   }
   
   @scala.inline
-  implicit class ModuleUrlOps[Self <: ModuleUrl] (val x: Self) extends AnyVal {
+  implicit class ModuleUrlMutableBuilder[Self <: ModuleUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModuleUrl(value: String): Self = StObject.set(x, "moduleUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModuleUrlUndefined: Self = StObject.set(x, "moduleUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleUrl(value: String): Self = this.set("moduleUrl", value.asInstanceOf[js.Any])
+    def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
     @scala.inline
-    def deleteModuleUrl: Self = this.set("moduleUrl", js.undefined)
+    def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
     
     @scala.inline
-    def setStyleUrlsVarargs(value: String*): Self = this.set("styleUrls", js.Array(value :_*))
+    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleUrls(value: js.Array[String]): Self = this.set("styleUrls", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteStyleUrls: Self = this.set("styleUrls", js.undefined)
-    
-    @scala.inline
-    def setStylesVarargs(value: String*): Self = this.set("styles", js.Array(value :_*))
-    
-    @scala.inline
-    def setStyles(value: js.Array[String]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

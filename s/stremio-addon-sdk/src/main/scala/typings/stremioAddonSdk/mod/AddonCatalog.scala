@@ -1,5 +1,6 @@
 package typings.stremioAddonSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used as a response for defineResourceHandler.
   */
 @js.native
-trait AddonCatalog extends js.Object {
+trait AddonCatalog extends StObject {
   
   /**
     * Object representing the addon's Manifest Object.
@@ -34,27 +35,15 @@ object AddonCatalog {
   }
   
   @scala.inline
-  implicit class AddonCatalogOps[Self <: AddonCatalog] (val x: Self) extends AnyVal {
+  implicit class AddonCatalogMutableBuilder[Self <: AddonCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManifest(value: Manifest): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransportName(value: String): Self = StObject.set(x, "transportName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setManifest(value: Manifest): Self = this.set("manifest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportName(value: String): Self = this.set("transportName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportUrl(value: String): Self = this.set("transportUrl", value.asInstanceOf[js.Any])
+    def setTransportUrl(value: String): Self = StObject.set(x, "transportUrl", value.asInstanceOf[js.Any])
   }
 }

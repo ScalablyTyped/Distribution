@@ -7,12 +7,13 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.Contacts.b2ContactEdge
 import typings.box2d.Box2D.Dynamics.Controllers.b2ControllerEdge
 import typings.box2d.Box2D.Dynamics.Joints.b2JointEdge
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2Body extends js.Object {
+trait b2Body extends StObject {
   
   /**
     * Apply a force at a world point. If the force is not applied at the center of mass, it will generate a torque and affect the angular velocity. This wakes up the body.

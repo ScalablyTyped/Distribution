@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cache extends js.Object {
+trait Cache extends StObject {
   
   var async: js.UndefOr[Boolean] = js.native
   
@@ -32,66 +33,54 @@ object Cache {
   }
   
   @scala.inline
-  implicit class CacheOps[Self <: Cache] (val x: Self) extends AnyVal {
+  implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: js.Any): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMaxRetryDelay(value: Double): Self = StObject.set(x, "maxRetryDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setMaxRetryDelayUndefined: Self = StObject.set(x, "maxRetryDelay", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetryDelay(value: Double): Self = this.set("maxRetryDelay", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deleteMaxRetryDelay: Self = this.set("maxRetryDelay", js.undefined)
+    def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry(value: Boolean): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

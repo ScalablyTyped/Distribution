@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait GetDataResponse extends js.Object {
+trait GetDataResponse extends StObject {
   
   def addAllRows(rows: js.Array[js.Array[String]]): GetDataResponse = js.native
   
@@ -50,33 +51,21 @@ object GetDataResponse {
   }
   
   @scala.inline
-  implicit class GetDataResponseOps[Self <: GetDataResponse] (val x: Self) extends AnyVal {
+  implicit class GetDataResponseMutableBuilder[Self <: GetDataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAllRows(value: js.Array[js.Array[String]] => GetDataResponse): Self = StObject.set(x, "addAllRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRow(value: js.Array[String] => GetDataResponse): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddAllRows(value: js.Array[js.Array[String]] => GetDataResponse): Self = this.set("addAllRows", js.Any.fromFunction1(value))
+    def setSetFields(value: Fields => GetDataResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRow(value: js.Array[String] => GetDataResponse): Self = this.set("addRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBuild(value: () => js.Any): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFields(value: Fields => GetDataResponse): Self = this.set("setFields", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFiltersApplied(value: Boolean => GetDataResponse): Self = this.set("setFiltersApplied", js.Any.fromFunction1(value))
+    def setSetFiltersApplied(value: Boolean => GetDataResponse): Self = StObject.set(x, "setFiltersApplied", js.Any.fromFunction1(value))
   }
 }

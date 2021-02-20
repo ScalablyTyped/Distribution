@@ -1,12 +1,13 @@
 package typings.plotlyJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Camera> */
 @js.native
-trait PartialCamera extends js.Object {
+trait PartialCamera extends StObject {
   
   var center: js.UndefOr[PartialPoint] = js.native
   
@@ -23,36 +24,24 @@ object PartialCamera {
   }
   
   @scala.inline
-  implicit class PartialCameraOps[Self <: PartialCamera] (val x: Self) extends AnyVal {
+  implicit class PartialCameraMutableBuilder[Self <: PartialCamera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: PartialPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEye(value: PartialPoint): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: PartialPoint): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setEyeUndefined: Self = StObject.set(x, "eye", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setUp(value: PartialPoint): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEye(value: PartialPoint): Self = this.set("eye", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEye: Self = this.set("eye", js.undefined)
-    
-    @scala.inline
-    def setUp(value: PartialPoint): Self = this.set("up", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUp: Self = this.set("up", js.undefined)
+    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }
 }

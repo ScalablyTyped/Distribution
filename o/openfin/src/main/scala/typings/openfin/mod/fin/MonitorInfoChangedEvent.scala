@@ -6,6 +6,7 @@ import typings.openfin.monitorMod.TaskBar
 import typings.openfin.openfinStrings.`monitor-info-changed`
 import typings.openfin.openfinStrings.system
 import typings.openfin.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object MonitorInfoChangedEvent {
   }
   
   @scala.inline
-  implicit class MonitorInfoChangedEventOps[Self <: MonitorInfoChangedEvent] (val x: Self) extends AnyVal {
+  implicit class MonitorInfoChangedEventMutableBuilder[Self <: MonitorInfoChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTopic(value: system): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `monitor-info-changed`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `monitor-info-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

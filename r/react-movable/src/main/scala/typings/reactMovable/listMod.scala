@@ -4,8 +4,8 @@ import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
 import typings.react.mod.WheelEvent
+import typings.reactMovable.anon.Canceled
 import typings.reactMovable.anon.InitialX
-import typings.reactMovable.anon.LockVertically
 import typings.reactMovable.anon.ScrollingSpeed
 import typings.reactMovable.typesMod.IProps
 import typings.reactMovable.typesMod.TEvent
@@ -14,13 +14,52 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-movable/lib/List", JSImport.Namespace)
-@js.native
-object listMod extends js.Object {
+object listMod {
+  
+  @JSImport("react-movable/lib/List", JSImport.Default)
+  @js.native
+  class default[Value] protected () extends List[Value] {
+    def this(props: IProps[Value]) = this()
+  }
+  object default {
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("react-movable/lib/List", "default.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-movable/lib/List", "default.defaultProps.lockVertically")
+      @js.native
+      def lockVertically: Boolean = js.native
+      @scala.inline
+      def lockVertically_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lockVertically")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-movable/lib/List", "default.defaultProps.removableByMove")
+      @js.native
+      def removableByMove: Boolean = js.native
+      @scala.inline
+      def removableByMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removableByMove")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-movable/lib/List", "default.defaultProps.transitionDuration")
+      @js.native
+      def transitionDuration: Double = js.native
+      @scala.inline
+      def transitionDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionDuration")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-movable/lib/List", "default.defaultProps.voiceover")
+      @js.native
+      def voiceover: Canceled = js.native
+      @scala.inline
+      def voiceover_=(x: Canceled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voiceover")(x.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait List[Value]
@@ -102,16 +141,5 @@ object listMod extends js.Object {
     var state_List: InitialX = js.native
     
     var topOffsets: js.Array[Double] = js.native
-  }
-  
-  @js.native
-  class default[Value] protected () extends List[Value] {
-    def this(props: IProps[Value]) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: LockVertically = js.native
   }
 }

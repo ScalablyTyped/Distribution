@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The syntax analysis request message.
   */
 @js.native
-trait SchemaAnalyzeSyntaxRequest extends js.Object {
+trait SchemaAnalyzeSyntaxRequest extends StObject {
   
   /**
     * Input document.
@@ -29,30 +30,18 @@ object SchemaAnalyzeSyntaxRequest {
   }
   
   @scala.inline
-  implicit class SchemaAnalyzeSyntaxRequestOps[Self <: SchemaAnalyzeSyntaxRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAnalyzeSyntaxRequestMutableBuilder[Self <: SchemaAnalyzeSyntaxRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: SchemaDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: SchemaDocument): Self = this.set("document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
-    
-    @scala.inline
-    def setEncodingType(value: String): Self = this.set("encodingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncodingType: Self = this.set("encodingType", js.undefined)
+    def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
   }
 }

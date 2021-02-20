@@ -1,16 +1,15 @@
 package typings.qlikVisualizationextensions
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BookmarkAPI")
-@js.native
-object BookmarkAPI extends js.Object {
+object BookmarkAPI {
   
   @js.native
-  trait IBookmark extends js.Object {
+  trait IBookmark extends StObject {
     
     /**
       * Applies a bookmark.

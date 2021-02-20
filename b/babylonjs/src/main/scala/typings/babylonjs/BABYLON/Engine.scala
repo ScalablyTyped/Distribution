@@ -13,6 +13,7 @@ import typings.std.PointerEvent
 import typings.std.WebGLBuffer
 import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

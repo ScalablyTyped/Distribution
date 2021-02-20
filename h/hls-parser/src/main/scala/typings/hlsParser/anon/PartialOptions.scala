@@ -1,12 +1,13 @@
 package typings.hlsParser.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<hls-parser.hls-parser.Options> */
 @js.native
-trait PartialOptions extends js.Object {
+trait PartialOptions extends StObject {
   
   var strictMode: js.UndefOr[Boolean] = js.native
 }
@@ -19,24 +20,12 @@ object PartialOptions {
   }
   
   @scala.inline
-  implicit class PartialOptionsOps[Self <: PartialOptions] (val x: Self) extends AnyVal {
+  implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStrictMode(value: Boolean): Self = this.set("strictMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictMode: Self = this.set("strictMode", js.undefined)
+    def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
   }
 }

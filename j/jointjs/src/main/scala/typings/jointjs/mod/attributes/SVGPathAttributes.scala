@@ -1,5 +1,6 @@
 package typings.jointjs.mod.attributes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object SVGPathAttributes {
   }
   
   @scala.inline
-  implicit class SVGPathAttributesOps[Self <: SVGPathAttributes] (val x: Self) extends AnyVal {
+  implicit class SVGPathAttributesMutableBuilder[Self <: SVGPathAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setPath-length`(value: Double): Self = StObject.set(x, "path-length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def `setPath-lengthUndefined`: Self = StObject.set(x, "path-length", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setPathLength(value: Double): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPath-length`(value: Double): Self = this.set("path-length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePath-length`: Self = this.set("path-length", js.undefined)
-    
-    @scala.inline
-    def setPathLength(value: Double): Self = this.set("pathLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathLength: Self = this.set("pathLength", js.undefined)
+    def setPathLengthUndefined: Self = StObject.set(x, "pathLength", js.undefined)
   }
 }

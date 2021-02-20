@@ -6,12 +6,13 @@ import typings.hapiHapi.hapiHapiStrings.form
 import typings.hapiHapi.hapiHapiStrings.iron
 import typings.hapiHapi.hapiHapiStrings.none_
 import typings.hapiHapi.mod.SameSitePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encoding extends js.Object {
+trait Encoding extends StObject {
   
   var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.native
   
@@ -34,54 +35,42 @@ object Encoding {
   }
   
   @scala.inline
-  implicit class EncodingOps[Self <: Encoding] (val x: Self) extends AnyVal {
+  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: none_ | base64 | base64json | form | iron): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: none_ | base64 | base64json | form | iron): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreErrors(value: Boolean): Self = this.set("ignoreErrors", value.asInstanceOf[js.Any])
+    def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
     
     @scala.inline
-    def deleteIgnoreErrors: Self = this.set("ignoreErrors", js.undefined)
+    def setIsSameSite(value: SameSitePolicy): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHttpOnly(value: Boolean): Self = this.set("isHttpOnly", value.asInstanceOf[js.Any])
+    def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
     
     @scala.inline
-    def deleteIsHttpOnly: Self = this.set("isHttpOnly", js.undefined)
+    def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSameSite(value: SameSitePolicy): Self = this.set("isSameSite", value.asInstanceOf[js.Any])
+    def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
     
     @scala.inline
-    def deleteIsSameSite: Self = this.set("isSameSite", js.undefined)
+    def setStrictHeader(value: Boolean): Self = StObject.set(x, "strictHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSecure(value: Boolean): Self = this.set("isSecure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSecure: Self = this.set("isSecure", js.undefined)
-    
-    @scala.inline
-    def setStrictHeader(value: Boolean): Self = this.set("strictHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictHeader: Self = this.set("strictHeader", js.undefined)
+    def setStrictHeaderUndefined: Self = StObject.set(x, "strictHeader", js.undefined)
   }
 }

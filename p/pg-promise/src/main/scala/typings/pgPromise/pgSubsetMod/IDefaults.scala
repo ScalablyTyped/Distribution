@@ -1,11 +1,12 @@
 package typings.pgPromise.pgSubsetMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDefaults extends js.Object {
+trait IDefaults extends StObject {
   
   var application_name: String = js.native
   
@@ -93,75 +94,63 @@ object IDefaults {
   }
   
   @scala.inline
-  implicit class IDefaultsOps[Self <: IDefaults] (val x: Self) extends AnyVal {
+  implicit class IDefaultsMutableBuilder[Self <: IDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient_encoding(value: String): Self = StObject.set(x, "client_encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication_name(value: String): Self = this.set("application_name", value.asInstanceOf[js.Any])
+    def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_encoding(value: String): Self = this.set("client_encoding", value.asInstanceOf[js.Any])
+    def setFallback_application_name(value: String): Self = StObject.set(x, "fallback_application_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionString(value: String): Self = this.set("connectionString", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setKeepalives(value: Double): Self = StObject.set(x, "keepalives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback_application_name(value: String): Self = this.set("fallback_application_name", value.asInstanceOf[js.Any])
+    def setKeepalives_idle(value: Double): Self = StObject.set(x, "keepalives_idle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepalives(value: Double): Self = this.set("keepalives", value.asInstanceOf[js.Any])
+    def setParseInputDatesAsUTC(value: Boolean): Self = StObject.set(x, "parseInputDatesAsUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepalives_idle(value: Double): Self = this.set("keepalives_idle", value.asInstanceOf[js.Any])
+    def setPassword(value: DynamicPassword): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setPasswordFunction0(value: () => js.Promise[String] | String): Self = StObject.set(x, "password", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParseInputDatesAsUTC(value: Boolean): Self = this.set("parseInputDatesAsUTC", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordFunction0(value: () => js.Promise[String] | String): Self = this.set("password", js.Any.fromFunction0(value))
+    def setQuery_timeout(value: Boolean | Double): Self = StObject.set(x, "query_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: DynamicPassword): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setSsl(value: Boolean | ISSLConfig): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery_timeout(value: Boolean | Double): Self = this.set("query_timeout", value.asInstanceOf[js.Any])
+    def setStatement_timeout(value: Boolean | Double): Self = StObject.set(x, "statement_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsl(value: Boolean | ISSLConfig): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatement_timeout(value: Boolean | Double): Self = this.set("statement_timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

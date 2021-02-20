@@ -1,11 +1,12 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Touch extends js.Object {
+trait Touch extends StObject {
   
   var clientX: Double = js.native
   
@@ -26,33 +27,21 @@ object Touch {
   }
   
   @scala.inline
-  implicit class TouchOps[Self <: Touch] (val x: Self) extends AnyVal {
+  implicit class TouchMutableBuilder[Self <: Touch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientX(value: Double): Self = this.set("clientX", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientY(value: Double): Self = this.set("clientY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentifier(value: Double): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFSearchFlags
 import typings.mfiles.MFiles.MFViewFlag
 import typings.mfiles.MFiles.MFViewType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IView extends js.Object {
+trait IView extends StObject {
   
   var AccessControlList: IAccessControlList = js.native
   
@@ -77,75 +78,63 @@ object IView {
   }
   
   @scala.inline
-  implicit class IViewOps[Self <: IView] (val x: Self) extends AnyVal {
+  implicit class IViewMutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IView): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloneFrom(value: IView => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setCommon(value: Boolean): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IView): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneFrom(value: IView => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: Boolean): Self = this.set("Common", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGUID(value: String): Self = this.set("GUID", value.asInstanceOf[js.Any])
+    def setLevels(value: IExpressionExs): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasParent(value: Boolean): Self = this.set("HasParent", value.asInstanceOf[js.Any])
+    def setLookInAllVersions(value: Boolean): Self = StObject.set(x, "LookInAllVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: IExpressionExs): Self = this.set("Levels", value.asInstanceOf[js.Any])
+    def setParent(value: Double): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookInAllVersions(value: Boolean): Self = this.set("LookInAllVersions", value.asInstanceOf[js.Any])
+    def setReturnLatestVisibleVersion(value: Boolean): Self = StObject.set(x, "ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSearchConditions(value: ISearchConditions): Self = StObject.set(x, "SearchConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Double): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSearchDef(value: ISearchDef): Self = StObject.set(x, "SearchDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnLatestVisibleVersion(value: Boolean): Self = this.set("ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
+    def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchConditions(value: ISearchConditions): Self = this.set("SearchConditions", value.asInstanceOf[js.Any])
+    def setViewFlags(value: MFViewFlag): Self = StObject.set(x, "ViewFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchDef(value: ISearchDef): Self = this.set("SearchDef", value.asInstanceOf[js.Any])
+    def setViewLocation(value: IViewLocation): Self = StObject.set(x, "ViewLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchFlags(value: MFSearchFlags): Self = this.set("SearchFlags", value.asInstanceOf[js.Any])
+    def setViewType(value: MFViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewFlags(value: MFViewFlag): Self = this.set("ViewFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewLocation(value: IViewLocation): Self = this.set("ViewLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewType(value: MFViewType): Self = this.set("ViewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationValue extends js.Object {
+trait ReservationValue extends StObject {
   
   /**
     * The hourly rate of the reservation.
@@ -31,36 +32,24 @@ object ReservationValue {
   }
   
   @scala.inline
-  implicit class ReservationValueOps[Self <: ReservationValue] (val x: Self) extends AnyVal {
+  implicit class ReservationValueMutableBuilder[Self <: ReservationValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHourlyPrice(value: String): Self = StObject.set(x, "HourlyPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHourlyPriceUndefined: Self = StObject.set(x, "HourlyPrice", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemainingTotalValue(value: String): Self = StObject.set(x, "RemainingTotalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyPrice(value: String): Self = this.set("HourlyPrice", value.asInstanceOf[js.Any])
+    def setRemainingTotalValueUndefined: Self = StObject.set(x, "RemainingTotalValue", js.undefined)
     
     @scala.inline
-    def deleteHourlyPrice: Self = this.set("HourlyPrice", js.undefined)
+    def setRemainingUpfrontValue(value: String): Self = StObject.set(x, "RemainingUpfrontValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingTotalValue(value: String): Self = this.set("RemainingTotalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemainingTotalValue: Self = this.set("RemainingTotalValue", js.undefined)
-    
-    @scala.inline
-    def setRemainingUpfrontValue(value: String): Self = this.set("RemainingUpfrontValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemainingUpfrontValue: Self = this.set("RemainingUpfrontValue", js.undefined)
+    def setRemainingUpfrontValueUndefined: Self = StObject.set(x, "RemainingUpfrontValue", js.undefined)
   }
 }

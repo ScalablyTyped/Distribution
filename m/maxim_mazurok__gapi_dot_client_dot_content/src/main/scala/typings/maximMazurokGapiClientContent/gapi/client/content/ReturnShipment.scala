@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnShipment extends js.Object {
+trait ReturnShipment extends StObject {
   
   /** The date of creation of the shipment, in ISO 8601 format. */
   var creationDate: js.UndefOr[String] = js.native
@@ -37,63 +38,51 @@ object ReturnShipment {
   }
   
   @scala.inline
-  implicit class ReturnShipmentOps[Self <: ReturnShipment] (val x: Self) extends AnyVal {
+  implicit class ReturnShipmentMutableBuilder[Self <: ReturnShipment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliveryDate(value: String): Self = StObject.set(x, "deliveryDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: String): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDeliveryDateUndefined: Self = StObject.set(x, "deliveryDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setReturnMethodType(value: String): Self = StObject.set(x, "returnMethodType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryDate(value: String): Self = this.set("deliveryDate", value.asInstanceOf[js.Any])
+    def setReturnMethodTypeUndefined: Self = StObject.set(x, "returnMethodType", js.undefined)
     
     @scala.inline
-    def deleteDeliveryDate: Self = this.set("deliveryDate", js.undefined)
+    def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnMethodType(value: String): Self = this.set("returnMethodType", value.asInstanceOf[js.Any])
+    def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
     
     @scala.inline
-    def deleteReturnMethodType: Self = this.set("returnMethodType", js.undefined)
+    def setShipmentTrackingInfos(value: js.Array[ShipmentTrackingInfo]): Self = StObject.set(x, "shipmentTrackingInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipmentId(value: String): Self = this.set("shipmentId", value.asInstanceOf[js.Any])
+    def setShipmentTrackingInfosUndefined: Self = StObject.set(x, "shipmentTrackingInfos", js.undefined)
     
     @scala.inline
-    def deleteShipmentId: Self = this.set("shipmentId", js.undefined)
+    def setShipmentTrackingInfosVarargs(value: ShipmentTrackingInfo*): Self = StObject.set(x, "shipmentTrackingInfos", js.Array(value :_*))
     
     @scala.inline
-    def setShipmentTrackingInfosVarargs(value: ShipmentTrackingInfo*): Self = this.set("shipmentTrackingInfos", js.Array(value :_*))
+    def setShippingDate(value: String): Self = StObject.set(x, "shippingDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipmentTrackingInfos(value: js.Array[ShipmentTrackingInfo]): Self = this.set("shipmentTrackingInfos", value.asInstanceOf[js.Any])
+    def setShippingDateUndefined: Self = StObject.set(x, "shippingDate", js.undefined)
     
     @scala.inline
-    def deleteShipmentTrackingInfos: Self = this.set("shipmentTrackingInfos", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingDate(value: String): Self = this.set("shippingDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingDate: Self = this.set("shippingDate", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

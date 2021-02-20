@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsResult extends js.Object {
+trait DirectionsResult extends StObject {
   
   var geocoded_waypoints: js.Array[DirectionsGeocodedWaypoint] = js.native
   
@@ -20,30 +21,18 @@ object DirectionsResult {
   }
   
   @scala.inline
-  implicit class DirectionsResultOps[Self <: DirectionsResult] (val x: Self) extends AnyVal {
+  implicit class DirectionsResultMutableBuilder[Self <: DirectionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeocoded_waypoints(value: js.Array[DirectionsGeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeocoded_waypointsVarargs(value: DirectionsGeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocoded_waypointsVarargs(value: DirectionsGeocodedWaypoint*): Self = this.set("geocoded_waypoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setGeocoded_waypoints(value: js.Array[DirectionsGeocodedWaypoint]): Self = this.set("geocoded_waypoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutesVarargs(value: DirectionsRoute*): Self = this.set("routes", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutes(value: js.Array[DirectionsRoute]): Self = this.set("routes", value.asInstanceOf[js.Any])
+    def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
   }
 }

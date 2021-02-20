@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIdentityPoliciesResponse extends js.Object {
+trait ListIdentityPoliciesResponse extends StObject {
   
   /**
     * A list of names of policies that apply to the specified identity.
@@ -21,24 +22,12 @@ object ListIdentityPoliciesResponse {
   }
   
   @scala.inline
-  implicit class ListIdentityPoliciesResponseOps[Self <: ListIdentityPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class ListIdentityPoliciesResponseMutableBuilder[Self <: ListIdentityPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyNames(value: PolicyNameList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyNamesVarargs(value: PolicyName*): Self = this.set("PolicyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyNames(value: PolicyNameList): Self = this.set("PolicyNames", value.asInstanceOf[js.Any])
+    def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

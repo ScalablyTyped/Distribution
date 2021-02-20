@@ -7,12 +7,13 @@ import typings.astTypes.kindsMod.JSXMemberExpressionKind
 import typings.astTypes.kindsMod.JSXNamespacedNameKind
 import typings.astTypes.kindsMod.JSXSpreadAttributeKind
 import typings.astTypes.namedTypesMod.namedTypes.JSXOpeningElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSXOpeningElementBuilder extends js.Object {
+trait JSXOpeningElementBuilder extends StObject {
   
   def apply(name: JSXIdentifierKind): JSXOpeningElement = js.native
   def apply(name: JSXIdentifierKind, attributes: js.UndefOr[scala.Nothing], selfClosing: Boolean): JSXOpeningElement = js.native

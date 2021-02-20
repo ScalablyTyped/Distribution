@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BandwidthRateLimitInterval extends js.Object {
+trait BandwidthRateLimitInterval extends StObject {
   
   /**
     *  The average download rate limit component of the bandwidth rate limit interval, in bits per second. This field does not appear in the response if the download rate limit is not set. 
@@ -57,48 +58,36 @@ object BandwidthRateLimitInterval {
   }
   
   @scala.inline
-  implicit class BandwidthRateLimitIntervalOps[Self <: BandwidthRateLimitInterval] (val x: Self) extends AnyVal {
+  implicit class BandwidthRateLimitIntervalMutableBuilder[Self <: BandwidthRateLimitInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysOfWeekVarargs(value: DayOfWeek*): Self = this.set("DaysOfWeek", js.Array(value :_*))
+    def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", js.undefined)
     
     @scala.inline
-    def setDaysOfWeek(value: DaysOfWeek): Self = this.set("DaysOfWeek", value.asInstanceOf[js.Any])
+    def setDaysOfWeek(value: DaysOfWeek): Self = StObject.set(x, "DaysOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndHourOfDay(value: HourOfDay): Self = this.set("EndHourOfDay", value.asInstanceOf[js.Any])
+    def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "DaysOfWeek", js.Array(value :_*))
     
     @scala.inline
-    def setEndMinuteOfHour(value: MinuteOfHour): Self = this.set("EndMinuteOfHour", value.asInstanceOf[js.Any])
+    def setEndHourOfDay(value: HourOfDay): Self = StObject.set(x, "EndHourOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHourOfDay(value: HourOfDay): Self = this.set("StartHourOfDay", value.asInstanceOf[js.Any])
+    def setEndMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "EndMinuteOfHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMinuteOfHour(value: MinuteOfHour): Self = this.set("StartMinuteOfHour", value.asInstanceOf[js.Any])
+    def setStartHourOfDay(value: HourOfDay): Self = StObject.set(x, "StartHourOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = this.set("AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAverageDownloadRateLimitInBitsPerSec: Self = this.set("AverageDownloadRateLimitInBitsPerSec", js.undefined)
-    
-    @scala.inline
-    def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = this.set("AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAverageUploadRateLimitInBitsPerSec: Self = this.set("AverageUploadRateLimitInBitsPerSec", js.undefined)
+    def setStartMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "StartMinuteOfHour", value.asInstanceOf[js.Any])
   }
 }

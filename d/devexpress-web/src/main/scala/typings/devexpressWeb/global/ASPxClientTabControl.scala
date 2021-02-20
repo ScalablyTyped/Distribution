@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientTabControl ()
   extends typings.devexpressWeb.ASPxClientTabControlBase
-/* static members */
-@JSGlobal("ASPxClientTabControl")
-@js.native
-object ASPxClientTabControl extends js.Object {
+object ASPxClientTabControl {
   
   /**
     * Converts the specified object to the ASPxClientTabControl type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientTabControl.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTabControl = js.native
 }

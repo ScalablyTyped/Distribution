@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFastSnapshotRestoresResult extends js.Object {
+trait DescribeFastSnapshotRestoresResult extends StObject {
   
   /**
     * Information about the state of fast snapshot restores.
@@ -26,33 +27,21 @@ object DescribeFastSnapshotRestoresResult {
   }
   
   @scala.inline
-  implicit class DescribeFastSnapshotRestoresResultOps[Self <: DescribeFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
+  implicit class DescribeFastSnapshotRestoresResultMutableBuilder[Self <: DescribeFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFastSnapshotRestores(value: DescribeFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "FastSnapshotRestores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFastSnapshotRestoresUndefined: Self = StObject.set(x, "FastSnapshotRestores", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFastSnapshotRestoresVarargs(value: DescribeFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "FastSnapshotRestores", js.Array(value :_*))
     
     @scala.inline
-    def setFastSnapshotRestoresVarargs(value: DescribeFastSnapshotRestoreSuccessItem*): Self = this.set("FastSnapshotRestores", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastSnapshotRestores(value: DescribeFastSnapshotRestoreSuccessSet): Self = this.set("FastSnapshotRestores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFastSnapshotRestores: Self = this.set("FastSnapshotRestores", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

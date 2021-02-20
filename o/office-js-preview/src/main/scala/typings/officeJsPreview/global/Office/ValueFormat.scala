@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.ValueFormat")
 @js.native
-object ValueFormat extends js.Object {
+object ValueFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.ValueFormat with Double] = js.native

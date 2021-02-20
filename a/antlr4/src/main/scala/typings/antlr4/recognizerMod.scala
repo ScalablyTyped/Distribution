@@ -4,16 +4,16 @@ import typings.antlr4.errorListenerMod.ErrorListener
 import typings.antlr4.errorListenerMod.ProxyErrorListener
 import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.tokenMod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/Recognizer", JSImport.Namespace)
-@js.native
-object recognizerMod extends js.Object {
+object recognizerMod {
   
+  @JSImport("antlr4/Recognizer", "Recognizer")
   @js.native
-  class Recognizer () extends js.Object {
+  class Recognizer () extends StObject {
     
     def addErrorListener(listener: ErrorListener): Unit = js.native
     

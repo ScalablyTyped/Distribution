@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Media extends js.Object {
+trait Media extends StObject {
   
   def getDimensions(): MediaDimensions = js.native
   
@@ -47,48 +48,36 @@ object Media {
   }
   
   @scala.inline
-  implicit class MediaOps[Self <: Media] (val x: Self) extends AnyVal {
+  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDimensions(value: () => MediaDimensions): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFileSize(value: () => Double): Self = StObject.set(x, "getFileSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDimensions(value: () => MediaDimensions): Self = this.set("getDimensions", js.Any.fromFunction0(value))
+    def setGetMimeType(value: () => String): Self = StObject.set(x, "getMimeType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFileSize(value: () => Double): Self = this.set("getFileSize", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetReferenceId(value: () => String): Self = StObject.set(x, "getReferenceId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMimeType(value: () => String): Self = this.set("getMimeType", js.Any.fromFunction0(value))
+    def setGetSourceUrl(value: () => String): Self = StObject.set(x, "getSourceUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetType(value: () => MediaType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetReferenceId(value: () => String): Self = this.set("getReferenceId", js.Any.fromFunction0(value))
+    def setGetUrls(value: () => MediaUrls): Self = StObject.set(x, "getUrls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSourceUrl(value: () => String): Self = this.set("getSourceUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => MediaType): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUrls(value: () => MediaUrls): Self = this.set("getUrls", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetYouTubeVideoId(value: () => String | Unit): Self = this.set("getYouTubeVideoId", js.Any.fromFunction0(value))
+    def setGetYouTubeVideoId(value: () => String | Unit): Self = StObject.set(x, "getYouTubeVideoId", js.Any.fromFunction0(value))
   }
 }

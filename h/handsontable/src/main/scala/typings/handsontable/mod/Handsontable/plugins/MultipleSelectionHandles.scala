@@ -4,6 +4,7 @@ import typings.handsontable.mod.Handsontable.wot.CellCoords
 import typings.handsontable.mod.Handsontable.wot.CellRange
 import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,36 +58,24 @@ object MultipleSelectionHandles {
   }
   
   @scala.inline
-  implicit class MultipleSelectionHandlesOps[Self <: MultipleSelectionHandles] (val x: Self) extends AnyVal {
+  implicit class MultipleSelectionHandlesMutableBuilder[Self <: MultipleSelectionHandles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragged(value: js.Array[_]): Self = StObject.set(x, "dragged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraggedVarargs(value: js.Any*): Self = StObject.set(x, "dragged", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggedVarargs(value: js.Any*): Self = this.set("dragged", js.Array(value :_*))
+    def setGetCurrentRangeCoords(value: (CellRange, CellCoords, String, String, String) => js.Object): Self = StObject.set(x, "getCurrentRangeCoords", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setDragged(value: js.Array[_]): Self = this.set("dragged", value.asInstanceOf[js.Any])
+    def setIsDragged(value: () => Boolean): Self = StObject.set(x, "isDragged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCurrentRangeCoords(value: (CellRange, CellCoords, String, String, String) => js.Object): Self = this.set("getCurrentRangeCoords", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setIsDragged(value: () => Boolean): Self = this.set("isDragged", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLastSetCell(value: HTMLElement | Unit): Self = this.set("lastSetCell", value.asInstanceOf[js.Any])
+    def setLastSetCell(value: HTMLElement | Unit): Self = StObject.set(x, "lastSetCell", value.asInstanceOf[js.Any])
   }
 }

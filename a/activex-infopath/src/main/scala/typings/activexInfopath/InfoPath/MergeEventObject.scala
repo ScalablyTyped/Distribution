@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeEventObject extends js.Object {
+trait MergeEventObject extends StObject {
   
   val Count: Double = js.native
   
@@ -41,39 +42,27 @@ object MergeEventObject {
   }
   
   @scala.inline
-  implicit class MergeEventObjectOps[Self <: MergeEventObject] (val x: Self) extends AnyVal {
+  implicit class MergeEventObjectMutableBuilder[Self <: MergeEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setInfoPathDotMergeEventObject_typekey(value: MergeEventObject): Self = StObject.set(x, "InfoPath.MergeEventObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = this.set("DOM", value.asInstanceOf[js.Any])
+    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotMergeEventObject_typekey(value: MergeEventObject): Self = this.set("InfoPath.MergeEventObject_typekey", value.asInstanceOf[js.Any])
+    def setRollBack(value: Boolean): Self = StObject.set(x, "RollBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnStatus(value: Boolean): Self = this.set("ReturnStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRollBack(value: Boolean): Self = this.set("RollBack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = this.set("XDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

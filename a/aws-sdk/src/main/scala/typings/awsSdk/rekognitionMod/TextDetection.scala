@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDetection extends js.Object {
+trait TextDetection extends StObject {
   
   /**
     * The confidence that Amazon Rekognition has in the accuracy of the detected text and the accuracy of the geometry points around the detected text.
@@ -46,54 +47,42 @@ object TextDetection {
   }
   
   @scala.inline
-  implicit class TextDetectionOps[Self <: TextDetection] (val x: Self) extends AnyVal {
+  implicit class TextDetectionMutableBuilder[Self <: TextDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectedText(value: String): Self = StObject.set(x, "DetectedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setDetectedTextUndefined: Self = StObject.set(x, "DetectedText", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setGeometry(value: Geometry): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedText(value: String): Self = this.set("DetectedText", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "Geometry", js.undefined)
     
     @scala.inline
-    def deleteDetectedText: Self = this.set("DetectedText", js.undefined)
+    def setId(value: UInteger): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: Geometry): Self = this.set("Geometry", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("Geometry", js.undefined)
+    def setParentId(value: UInteger): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: UInteger): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setType(value: TextTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: UInteger): Self = this.set("ParentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentId: Self = this.set("ParentId", js.undefined)
-    
-    @scala.inline
-    def setType(value: TextTypes): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

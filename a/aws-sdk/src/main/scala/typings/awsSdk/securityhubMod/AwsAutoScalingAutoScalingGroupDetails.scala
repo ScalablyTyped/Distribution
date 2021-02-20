@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsAutoScalingAutoScalingGroupDetails extends js.Object {
+trait AwsAutoScalingAutoScalingGroupDetails extends StObject {
   
   /**
     * Indicates when the auto scaling group was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
@@ -41,51 +42,39 @@ object AwsAutoScalingAutoScalingGroupDetails {
   }
   
   @scala.inline
-  implicit class AwsAutoScalingAutoScalingGroupDetailsOps[Self <: AwsAutoScalingAutoScalingGroupDetails] (val x: Self) extends AnyVal {
+  implicit class AwsAutoScalingAutoScalingGroupDetailsMutableBuilder[Self <: AwsAutoScalingAutoScalingGroupDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTime(value: NonEmptyString): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthCheckGracePeriod(value: Integer): Self = StObject.set(x, "HealthCheckGracePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: NonEmptyString): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setHealthCheckGracePeriodUndefined: Self = StObject.set(x, "HealthCheckGracePeriod", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setHealthCheckType(value: NonEmptyString): Self = StObject.set(x, "HealthCheckType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckGracePeriod(value: Integer): Self = this.set("HealthCheckGracePeriod", value.asInstanceOf[js.Any])
+    def setHealthCheckTypeUndefined: Self = StObject.set(x, "HealthCheckType", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckGracePeriod: Self = this.set("HealthCheckGracePeriod", js.undefined)
+    def setLaunchConfigurationName(value: NonEmptyString): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckType(value: NonEmptyString): Self = this.set("HealthCheckType", value.asInstanceOf[js.Any])
+    def setLaunchConfigurationNameUndefined: Self = StObject.set(x, "LaunchConfigurationName", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckType: Self = this.set("HealthCheckType", js.undefined)
+    def setLoadBalancerNames(value: StringList): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchConfigurationName(value: NonEmptyString): Self = this.set("LaunchConfigurationName", value.asInstanceOf[js.Any])
+    def setLoadBalancerNamesUndefined: Self = StObject.set(x, "LoadBalancerNames", js.undefined)
     
     @scala.inline
-    def deleteLaunchConfigurationName: Self = this.set("LaunchConfigurationName", js.undefined)
-    
-    @scala.inline
-    def setLoadBalancerNamesVarargs(value: NonEmptyString*): Self = this.set("LoadBalancerNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setLoadBalancerNames(value: StringList): Self = this.set("LoadBalancerNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerNames: Self = this.set("LoadBalancerNames", js.undefined)
+    def setLoadBalancerNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
   }
 }

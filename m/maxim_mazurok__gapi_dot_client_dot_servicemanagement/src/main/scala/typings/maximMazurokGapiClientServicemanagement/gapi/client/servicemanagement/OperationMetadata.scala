@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationMetadata extends js.Object {
+trait OperationMetadata extends StObject {
   
   /** Percentage of completion of this operation, ranging from 0 to 100. */
   var progressPercentage: js.UndefOr[Double] = js.native
@@ -28,48 +29,36 @@ object OperationMetadata {
   }
   
   @scala.inline
-  implicit class OperationMetadataOps[Self <: OperationMetadata] (val x: Self) extends AnyVal {
+  implicit class OperationMetadataMutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgressPercentage(value: Double): Self = StObject.set(x, "progressPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgressPercentageUndefined: Self = StObject.set(x, "progressPercentage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressPercentage(value: Double): Self = this.set("progressPercentage", value.asInstanceOf[js.Any])
+    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
     @scala.inline
-    def deleteProgressPercentage: Self = this.set("progressPercentage", js.undefined)
+    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
     
     @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = this.set("resourceNames", js.Array(value :_*))
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = this.set("resourceNames", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteResourceNames: Self = this.set("resourceNames", js.undefined)
+    def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setStepsVarargs(value: Step*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[Step]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

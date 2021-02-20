@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LDAPSSettingInfo extends js.Object {
+trait LDAPSSettingInfo extends StObject {
   
   /**
     * The state of the LDAPS settings.
@@ -31,36 +32,24 @@ object LDAPSSettingInfo {
   }
   
   @scala.inline
-  implicit class LDAPSSettingInfoOps[Self <: LDAPSSettingInfo] (val x: Self) extends AnyVal {
+  implicit class LDAPSSettingInfoMutableBuilder[Self <: LDAPSSettingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLDAPSStatus(value: LDAPSStatus): Self = StObject.set(x, "LDAPSStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLDAPSStatusReason(value: LDAPSStatusReason): Self = StObject.set(x, "LDAPSStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLDAPSStatusReasonUndefined: Self = StObject.set(x, "LDAPSStatusReason", js.undefined)
     
     @scala.inline
-    def setLDAPSStatus(value: LDAPSStatus): Self = this.set("LDAPSStatus", value.asInstanceOf[js.Any])
+    def setLDAPSStatusUndefined: Self = StObject.set(x, "LDAPSStatus", js.undefined)
     
     @scala.inline
-    def deleteLDAPSStatus: Self = this.set("LDAPSStatus", js.undefined)
+    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLDAPSStatusReason(value: LDAPSStatusReason): Self = this.set("LDAPSStatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLDAPSStatusReason: Self = this.set("LDAPSStatusReason", js.undefined)
-    
-    @scala.inline
-    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = this.set("LastUpdatedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedDateTime: Self = this.set("LastUpdatedDateTime", js.undefined)
+    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
   }
 }

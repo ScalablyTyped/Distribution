@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEffectCreationOptions extends js.Object {
+trait IEffectCreationOptions extends StObject {
   
   /**
     * Atrributes that will be used in the shader.
@@ -87,102 +88,90 @@ object IEffectCreationOptions {
   }
   
   @scala.inline
-  implicit class IEffectCreationOptionsOps[Self <: IEffectCreationOptions] (val x: Self) extends AnyVal {
+  implicit class IEffectCreationOptionsMutableBuilder[Self <: IEffectCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefines(value: js.Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    def setFallbacks(value: Nullable[IEffectFallbacks]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setFallbacksNull: Self = StObject.set(x, "fallbacks", null)
     
     @scala.inline
-    def setDefines(value: js.Any): Self = this.set("defines", value.asInstanceOf[js.Any])
+    def setIndexParameters(value: js.Any): Self = StObject.set(x, "indexParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplersVarargs(value: String*): Self = this.set("samplers", js.Array(value :_*))
+    def setIndexParametersUndefined: Self = StObject.set(x, "indexParameters", js.undefined)
     
     @scala.inline
-    def setSamplers(value: js.Array[String]): Self = this.set("samplers", value.asInstanceOf[js.Any])
+    def setMaxSimultaneousLights(value: Double): Self = StObject.set(x, "maxSimultaneousLights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniformBuffersNamesVarargs(value: String*): Self = this.set("uniformBuffersNames", js.Array(value :_*))
+    def setMaxSimultaneousLightsUndefined: Self = StObject.set(x, "maxSimultaneousLights", js.undefined)
     
     @scala.inline
-    def setUniformBuffersNames(value: js.Array[String]): Self = this.set("uniformBuffersNames", value.asInstanceOf[js.Any])
+    def setMultiTarget(value: Boolean): Self = StObject.set(x, "multiTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniformsNamesVarargs(value: String*): Self = this.set("uniformsNames", js.Array(value :_*))
+    def setMultiTargetUndefined: Self = StObject.set(x, "multiTarget", js.undefined)
     
     @scala.inline
-    def setUniformsNames(value: js.Array[String]): Self = this.set("uniformsNames", value.asInstanceOf[js.Any])
+    def setOnCompiled(value: /* effect */ Effect => Unit): Self = StObject.set(x, "onCompiled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFallbacks(value: Nullable[IEffectFallbacks]): Self = this.set("fallbacks", value.asInstanceOf[js.Any])
+    def setOnCompiledNull: Self = StObject.set(x, "onCompiled", null)
     
     @scala.inline
-    def setFallbacksNull: Self = this.set("fallbacks", null)
+    def setOnError(value: (/* effect */ Effect, /* errors */ String) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIndexParameters(value: js.Any): Self = this.set("indexParameters", value.asInstanceOf[js.Any])
+    def setOnErrorNull: Self = StObject.set(x, "onError", null)
     
     @scala.inline
-    def deleteIndexParameters: Self = this.set("indexParameters", js.undefined)
+    def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMaxSimultaneousLights(value: Double): Self = this.set("maxSimultaneousLights", value.asInstanceOf[js.Any])
+    def setProcessFinalCodeNull: Self = StObject.set(x, "processFinalCode", null)
     
     @scala.inline
-    def deleteMaxSimultaneousLights: Self = this.set("maxSimultaneousLights", js.undefined)
+    def setProcessFinalCodeUndefined: Self = StObject.set(x, "processFinalCode", js.undefined)
     
     @scala.inline
-    def setMultiTarget(value: Boolean): Self = this.set("multiTarget", value.asInstanceOf[js.Any])
+    def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiTarget: Self = this.set("multiTarget", js.undefined)
+    def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
     
     @scala.inline
-    def setOnCompiled(value: /* effect */ Effect => Unit): Self = this.set("onCompiled", js.Any.fromFunction1(value))
+    def setTransformFeedbackVaryings(value: Nullable[js.Array[String]]): Self = StObject.set(x, "transformFeedbackVaryings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCompiledNull: Self = this.set("onCompiled", null)
+    def setTransformFeedbackVaryingsNull: Self = StObject.set(x, "transformFeedbackVaryings", null)
     
     @scala.inline
-    def setOnError(value: (/* effect */ Effect, /* errors */ String) => Unit): Self = this.set("onError", js.Any.fromFunction2(value))
+    def setTransformFeedbackVaryingsUndefined: Self = StObject.set(x, "transformFeedbackVaryings", js.undefined)
     
     @scala.inline
-    def setOnErrorNull: Self = this.set("onError", null)
+    def setTransformFeedbackVaryingsVarargs(value: String*): Self = StObject.set(x, "transformFeedbackVaryings", js.Array(value :_*))
     
     @scala.inline
-    def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = this.set("processFinalCode", js.Any.fromFunction2(value))
+    def setUniformBuffersNames(value: js.Array[String]): Self = StObject.set(x, "uniformBuffersNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessFinalCode: Self = this.set("processFinalCode", js.undefined)
+    def setUniformBuffersNamesVarargs(value: String*): Self = StObject.set(x, "uniformBuffersNames", js.Array(value :_*))
     
     @scala.inline
-    def setProcessFinalCodeNull: Self = this.set("processFinalCode", null)
+    def setUniformsNames(value: js.Array[String]): Self = StObject.set(x, "uniformsNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformFeedbackVaryingsVarargs(value: String*): Self = this.set("transformFeedbackVaryings", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransformFeedbackVaryings(value: Nullable[js.Array[String]]): Self = this.set("transformFeedbackVaryings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformFeedbackVaryings: Self = this.set("transformFeedbackVaryings", js.undefined)
-    
-    @scala.inline
-    def setTransformFeedbackVaryingsNull: Self = this.set("transformFeedbackVaryings", null)
+    def setUniformsNamesVarargs(value: String*): Self = StObject.set(x, "uniformsNames", js.Array(value :_*))
   }
 }

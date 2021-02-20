@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Androidrelease extends js.Object {
+trait Androidrelease extends StObject {
   
   var android_release: String = js.native
   
@@ -24,30 +25,18 @@ object Androidrelease {
   }
   
   @scala.inline
-  implicit class AndroidreleaseOps[Self <: Androidrelease] (val x: Self) extends AnyVal {
+  implicit class AndroidreleaseMutableBuilder[Self <: Androidrelease] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid_release(value: String): Self = StObject.set(x, "android_release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroid_version(value: String): Self = StObject.set(x, "android_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid_release(value: String): Self = this.set("android_release", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAndroid_version(value: String): Self = this.set("android_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

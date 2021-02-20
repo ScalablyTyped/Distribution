@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccountAttributesResult extends js.Object {
+trait DescribeAccountAttributesResult extends StObject {
   
   /**
     * The Elastic Beanstalk resource quotas associated with the calling AWS account.
@@ -21,24 +22,12 @@ object DescribeAccountAttributesResult {
   }
   
   @scala.inline
-  implicit class DescribeAccountAttributesResultOps[Self <: DescribeAccountAttributesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeAccountAttributesResultMutableBuilder[Self <: DescribeAccountAttributesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceQuotas(value: ResourceQuotas): Self = StObject.set(x, "ResourceQuotas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceQuotas(value: ResourceQuotas): Self = this.set("ResourceQuotas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceQuotas: Self = this.set("ResourceQuotas", js.undefined)
+    def setResourceQuotasUndefined: Self = StObject.set(x, "ResourceQuotas", js.undefined)
   }
 }

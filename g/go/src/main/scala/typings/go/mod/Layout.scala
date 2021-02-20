@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a minimal layout that only positions Nodes that do not have a location.
   */
-class Layout () extends js.Object {
+class Layout () extends StObject {
   
   /**Gets or sets the top-left point for where the graph should be positioned when laid out.*/
   var arrangementOrigin: Point = js.native

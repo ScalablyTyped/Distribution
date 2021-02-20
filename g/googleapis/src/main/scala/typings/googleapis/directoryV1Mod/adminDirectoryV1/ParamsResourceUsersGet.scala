@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,48 +47,36 @@ object ParamsResourceUsersGet {
   }
   
   @scala.inline
-  implicit class ParamsResourceUsersGetOps[Self <: ParamsResourceUsersGet] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceUsersGetMutableBuilder[Self <: ParamsResourceUsersGet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomFieldMask(value: String): Self = StObject.set(x, "customFieldMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCustomFieldMaskUndefined: Self = StObject.set(x, "customFieldMask", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFieldMask(value: String): Self = this.set("customFieldMask", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteCustomFieldMask: Self = this.set("customFieldMask", js.undefined)
+    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setViewType(value: String): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserKey(value: String): Self = this.set("userKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserKey: Self = this.set("userKey", js.undefined)
-    
-    @scala.inline
-    def setViewType(value: String): Self = this.set("viewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewType: Self = this.set("viewType", js.undefined)
+    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

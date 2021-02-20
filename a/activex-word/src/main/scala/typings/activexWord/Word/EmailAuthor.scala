@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailAuthor extends js.Object {
+trait EmailAuthor extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -34,33 +35,21 @@ object EmailAuthor {
   }
   
   @scala.inline
-  implicit class EmailAuthorOps[Self <: EmailAuthor] (val x: Self) extends AnyVal {
+  implicit class EmailAuthorMutableBuilder[Self <: EmailAuthor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setStyle(value: Style): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: Style): Self = this.set("Style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotEmailAuthor_typekey(value: EmailAuthor): Self = this.set("Word.EmailAuthor_typekey", value.asInstanceOf[js.Any])
+    def setWordDotEmailAuthor_typekey(value: EmailAuthor): Self = StObject.set(x, "Word.EmailAuthor_typekey", value.asInstanceOf[js.Any])
   }
 }

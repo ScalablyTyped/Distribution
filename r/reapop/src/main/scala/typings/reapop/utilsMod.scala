@@ -1,19 +1,15 @@
 package typings.reapop
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reapop/dist/utils", JSImport.Namespace)
-@js.native
-object utilsMod extends js.Object {
+object utilsMod {
   
-  def clone[T /* <: js.Any */](origObject: T): T = js.native
-  
-  def isObject(value: js.Any): Boolean = js.native
-  
+  @JSImport("reapop/dist/utils", "Timer")
   @js.native
-  class Timer protected () extends js.Object {
+  class Timer protected () extends StObject {
     def this(delay: Double, callback: js.Function1[/* repeated */ js.Any, _]) = this()
     
     var callback: js.Any = js.native
@@ -28,4 +24,12 @@ object utilsMod extends js.Object {
     
     var timerId: js.Any = js.native
   }
+  
+  @JSImport("reapop/dist/utils", "clone")
+  @js.native
+  def clone_[T /* <: js.Any */](origObject: T): T = js.native
+  
+  @JSImport("reapop/dist/utils", "isObject")
+  @js.native
+  def isObject(value: js.Any): Boolean = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `TransformationResultCode` and error details occurred.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2SummaryResult extends js.Object {
+trait SchemaGooglePrivacyDlpV2SummaryResult extends StObject {
   
   var code: js.UndefOr[String] = js.native
   
@@ -30,36 +31,24 @@ object SchemaGooglePrivacyDlpV2SummaryResult {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2SummaryResultOps[Self <: SchemaGooglePrivacyDlpV2SummaryResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2SummaryResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2SummaryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

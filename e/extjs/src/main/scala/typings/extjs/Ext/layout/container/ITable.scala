@@ -1,5 +1,6 @@
 package typings.extjs.Ext.layout.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,62 +56,50 @@ object ITable {
   }
   
   @scala.inline
-  implicit class ITableOps[Self <: ITable] (val x: Self) extends AnyVal {
+  implicit class ITableMutableBuilder[Self <: ITable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setFinalizeLayout(value: () => Unit): Self = StObject.set(x, "finalizeLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
-    
-    @scala.inline
-    def setFinalizeLayout(value: () => Unit): Self = this.set("finalizeLayout", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteFinalizeLayout: Self = this.set("finalizeLayout", js.undefined)
+    def setFinalizeLayoutUndefined: Self = StObject.set(x, "finalizeLayout", js.undefined)
     
     @scala.inline
     def setIsValidParent(
       value: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* rowIdx */ js.UndefOr[js.Any], /* cellIdx */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("isValidParent", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "isValidParent", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteIsValidParent: Self = this.set("isValidParent", js.undefined)
+    def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
     
     @scala.inline
-    def setTableAttrs(value: js.Any): Self = this.set("tableAttrs", value.asInstanceOf[js.Any])
+    def setTableAttrs(value: js.Any): Self = StObject.set(x, "tableAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableAttrs: Self = this.set("tableAttrs", js.undefined)
+    def setTableAttrsUndefined: Self = StObject.set(x, "tableAttrs", js.undefined)
     
     @scala.inline
-    def setTdAttrs(value: js.Any): Self = this.set("tdAttrs", value.asInstanceOf[js.Any])
+    def setTdAttrs(value: js.Any): Self = StObject.set(x, "tdAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTdAttrs: Self = this.set("tdAttrs", js.undefined)
+    def setTdAttrsUndefined: Self = StObject.set(x, "tdAttrs", js.undefined)
     
     @scala.inline
-    def setTrAttrs(value: js.Any): Self = this.set("trAttrs", value.asInstanceOf[js.Any])
+    def setTrAttrs(value: js.Any): Self = StObject.set(x, "trAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrAttrs: Self = this.set("trAttrs", js.undefined)
+    def setTrAttrsUndefined: Self = StObject.set(x, "trAttrs", js.undefined)
   }
 }

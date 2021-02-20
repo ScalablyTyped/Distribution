@@ -1,12 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/ListDeadLetterSourceQueuesOutput", JSImport.Namespace)
-@js.native
-object listDeadLetterSourceQueuesOutputMod extends js.Object {
+object listDeadLetterSourceQueuesOutputMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/model/ListDeadLetterSourceQueuesOutput", "ListDeadLetterSourceQueuesOutput")
+  @js.native
   val ListDeadLetterSourceQueuesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

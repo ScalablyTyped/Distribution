@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the AdvancedPhotoCapture::OptionalReferencePhotoCaptured event. */
 @js.native
-trait OptionalReferencePhotoCapturedEventArgs extends js.Object {
+trait OptionalReferencePhotoCapturedEventArgs extends StObject {
   
   /** Gets the app-defined context object associated with the advanced photo capture operation, if one was provided in the call to AdvancedPhotoCapture::CaptureAsync(Object) . */
   var context: js.Any = js.native
@@ -23,24 +24,12 @@ object OptionalReferencePhotoCapturedEventArgs {
   }
   
   @scala.inline
-  implicit class OptionalReferencePhotoCapturedEventArgsOps[Self <: OptionalReferencePhotoCapturedEventArgs] (val x: Self) extends AnyVal {
+  implicit class OptionalReferencePhotoCapturedEventArgsMutableBuilder[Self <: OptionalReferencePhotoCapturedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrame(value: CapturedFrame): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }
 }

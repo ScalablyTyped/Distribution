@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,51 +125,39 @@ object ChartStatistics {
   }
   
   @scala.inline
-  implicit class ChartStatisticsOps[Self <: ChartStatistics] (val x: Self) extends AnyVal {
+  implicit class ChartStatisticsMutableBuilder[Self <: ChartStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstantErrorHigh(value: Double): Self = StObject.set(x, "ConstantErrorHigh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstantErrorLow(value: Double): Self = StObject.set(x, "ConstantErrorLow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorBarRangeNegative(value: String): Self = StObject.set(x, "ErrorBarRangeNegative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantErrorHigh(value: Double): Self = this.set("ConstantErrorHigh", value.asInstanceOf[js.Any])
+    def setErrorBarRangePositive(value: String): Self = StObject.set(x, "ErrorBarRangePositive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantErrorLow(value: Double): Self = this.set("ConstantErrorLow", value.asInstanceOf[js.Any])
+    def setErrorBarStyle(value: Double): Self = StObject.set(x, "ErrorBarStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorBarRangeNegative(value: String): Self = this.set("ErrorBarRangeNegative", value.asInstanceOf[js.Any])
+    def setErrorCategory(value: ChartErrorCategory): Self = StObject.set(x, "ErrorCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorBarRangePositive(value: String): Self = this.set("ErrorBarRangePositive", value.asInstanceOf[js.Any])
+    def setErrorIndicator(value: ChartErrorIndicatorType): Self = StObject.set(x, "ErrorIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorBarStyle(value: Double): Self = this.set("ErrorBarStyle", value.asInstanceOf[js.Any])
+    def setErrorMargin(value: Double): Self = StObject.set(x, "ErrorMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCategory(value: ChartErrorCategory): Self = this.set("ErrorCategory", value.asInstanceOf[js.Any])
+    def setMeanValue(value: Boolean): Self = StObject.set(x, "MeanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorIndicator(value: ChartErrorIndicatorType): Self = this.set("ErrorIndicator", value.asInstanceOf[js.Any])
+    def setPercentageError(value: Double): Self = StObject.set(x, "PercentageError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMargin(value: Double): Self = this.set("ErrorMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeanValue(value: Boolean): Self = this.set("MeanValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPercentageError(value: Double): Self = this.set("PercentageError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegressionCurves(value: ChartRegressionCurveType): Self = this.set("RegressionCurves", value.asInstanceOf[js.Any])
+    def setRegressionCurves(value: ChartRegressionCurveType): Self = StObject.set(x, "RegressionCurves", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.geometry
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait AffineMatrix3D extends js.Object {
+trait AffineMatrix3D extends StObject {
   
   var m00: Double = js.native
   
@@ -76,54 +77,42 @@ object AffineMatrix3D {
   }
   
   @scala.inline
-  implicit class AffineMatrix3DOps[Self <: AffineMatrix3D] (val x: Self) extends AnyVal {
+  implicit class AffineMatrix3DMutableBuilder[Self <: AffineMatrix3D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setM01(value: Double): Self = StObject.set(x, "m01", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setM02(value: Double): Self = StObject.set(x, "m02", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM00(value: Double): Self = this.set("m00", value.asInstanceOf[js.Any])
+    def setM03(value: Double): Self = StObject.set(x, "m03", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM01(value: Double): Self = this.set("m01", value.asInstanceOf[js.Any])
+    def setM10(value: Double): Self = StObject.set(x, "m10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM02(value: Double): Self = this.set("m02", value.asInstanceOf[js.Any])
+    def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM03(value: Double): Self = this.set("m03", value.asInstanceOf[js.Any])
+    def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM10(value: Double): Self = this.set("m10", value.asInstanceOf[js.Any])
+    def setM13(value: Double): Self = StObject.set(x, "m13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM11(value: Double): Self = this.set("m11", value.asInstanceOf[js.Any])
+    def setM20(value: Double): Self = StObject.set(x, "m20", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM12(value: Double): Self = this.set("m12", value.asInstanceOf[js.Any])
+    def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM13(value: Double): Self = this.set("m13", value.asInstanceOf[js.Any])
+    def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM20(value: Double): Self = this.set("m20", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM21(value: Double): Self = this.set("m21", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM22(value: Double): Self = this.set("m22", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM23(value: Double): Self = this.set("m23", value.asInstanceOf[js.Any])
+    def setM23(value: Double): Self = StObject.set(x, "m23", value.asInstanceOf[js.Any])
   }
 }

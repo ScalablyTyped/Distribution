@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * generates the schema.
   */
 @js.native
-trait SchemaSchemaConfig extends js.Object {
+trait SchemaSchemaConfig extends StObject {
   
   /**
     * The depth for all recursive structures in the output analytics schema.
@@ -35,30 +36,18 @@ object SchemaSchemaConfig {
   }
   
   @scala.inline
-  implicit class SchemaSchemaConfigOps[Self <: SchemaSchemaConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSchemaConfigMutableBuilder[Self <: SchemaSchemaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecursiveStructureDepth(value: String): Self = StObject.set(x, "recursiveStructureDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursiveStructureDepthUndefined: Self = StObject.set(x, "recursiveStructureDepth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaType(value: String): Self = StObject.set(x, "schemaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursiveStructureDepth(value: String): Self = this.set("recursiveStructureDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursiveStructureDepth: Self = this.set("recursiveStructureDepth", js.undefined)
-    
-    @scala.inline
-    def setSchemaType(value: String): Self = this.set("schemaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaType: Self = this.set("schemaType", js.undefined)
+    def setSchemaTypeUndefined: Self = StObject.set(x, "schemaType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPoliciesRequest extends js.Object {
+trait ListPoliciesRequest extends StObject {
   
   /**
     * Use this parameter only when paginating results and only after you receive a response indicating that the results are truncated. Set it to the value of the Marker element in the response that you received to indicate where the next call should start.
@@ -46,54 +47,42 @@ object ListPoliciesRequest {
   }
   
   @scala.inline
-  implicit class ListPoliciesRequestOps[Self <: ListPoliciesRequest] (val x: Self) extends AnyVal {
+  implicit class ListPoliciesRequestMutableBuilder[Self <: ListPoliciesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setOnlyAttached(value: booleanType): Self = StObject.set(x, "OnlyAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setOnlyAttachedUndefined: Self = StObject.set(x, "OnlyAttached", js.undefined)
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setPathPrefix(value: policyPathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyAttached(value: booleanType): Self = this.set("OnlyAttached", value.asInstanceOf[js.Any])
+    def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
     
     @scala.inline
-    def deleteOnlyAttached: Self = this.set("OnlyAttached", js.undefined)
+    def setPolicyUsageFilter(value: PolicyUsageType): Self = StObject.set(x, "PolicyUsageFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPrefix(value: policyPathType): Self = this.set("PathPrefix", value.asInstanceOf[js.Any])
+    def setPolicyUsageFilterUndefined: Self = StObject.set(x, "PolicyUsageFilter", js.undefined)
     
     @scala.inline
-    def deletePathPrefix: Self = this.set("PathPrefix", js.undefined)
+    def setScope(value: policyScopeType): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyUsageFilter(value: PolicyUsageType): Self = this.set("PolicyUsageFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyUsageFilter: Self = this.set("PolicyUsageFilter", js.undefined)
-    
-    @scala.inline
-    def setScope(value: policyScopeType): Self = this.set("Scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("Scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
   }
 }

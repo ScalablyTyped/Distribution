@@ -1,17 +1,19 @@
 package typings.reactAmplitude
 
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-amplitude", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("react-amplitude", JSImport.Default)
+  @js.native
   val default: AmplitudeInstance = js.native
   
   @js.native
-  trait AmplitudeInstance extends js.Object {
+  trait AmplitudeInstance extends StObject {
     
     def amplitude(): Unit = js.native
     
@@ -47,4 +49,9 @@ object mod extends js.Object {
     
     def setUserProperties(userProps: js.Any): Unit = js.native
   }
+  
+  type _To = AmplitudeInstance
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: AmplitudeInstance = default
 }

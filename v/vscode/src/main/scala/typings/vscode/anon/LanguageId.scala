@@ -2,6 +2,7 @@ package typings.vscode.anon
 
 import typings.vscode.mod.ConfigurationScope
 import typings.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object LanguageId {
   }
   
   @scala.inline
-  implicit class LanguageIdOps[Self <: LanguageId] (val x: Self) extends AnyVal {
+  implicit class LanguageIdMutableBuilder[Self <: LanguageId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguageId(value: String): Self = this.set("languageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

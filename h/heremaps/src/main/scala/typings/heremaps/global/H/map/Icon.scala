@@ -3,6 +3,7 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Icon.Options
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,15 +27,14 @@ class Icon protected ()
   def this(bitmap: HTMLCanvasElement, opt_options: Options) = this()
   def this(bitmap: HTMLImageElement, opt_options: Options) = this()
 }
-@JSGlobal("H.map.Icon")
-@js.native
-object Icon extends js.Object {
+object Icon {
   
   /**
     * The state types of an Icon
     */
+  @JSGlobal("H.map.Icon.State")
   @js.native
-  object State extends js.Object {
+  object State extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.map.Icon.State with Double] = js.native

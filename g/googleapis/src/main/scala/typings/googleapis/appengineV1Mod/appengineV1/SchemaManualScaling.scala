@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1Mod.appengineV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * complex initialization and rely on the state of its memory over time.
   */
 @js.native
-trait SchemaManualScaling extends js.Object {
+trait SchemaManualScaling extends StObject {
   
   /**
     * Number of instances to assign to the service at the start. This number
@@ -28,24 +29,12 @@ object SchemaManualScaling {
   }
   
   @scala.inline
-  implicit class SchemaManualScalingOps[Self <: SchemaManualScaling] (val x: Self) extends AnyVal {
+  implicit class SchemaManualScalingMutableBuilder[Self <: SchemaManualScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstances(value: Double): Self = this.set("instances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
   }
 }

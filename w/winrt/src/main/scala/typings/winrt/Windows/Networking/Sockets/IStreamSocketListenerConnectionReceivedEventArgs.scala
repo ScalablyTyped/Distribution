@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStreamSocketListenerConnectionReceivedEventArgs extends js.Object {
+trait IStreamSocketListenerConnectionReceivedEventArgs extends StObject {
   
   var socket: StreamSocket = js.native
 }
@@ -18,21 +19,9 @@ object IStreamSocketListenerConnectionReceivedEventArgs {
   }
   
   @scala.inline
-  implicit class IStreamSocketListenerConnectionReceivedEventArgsOps[Self <: IStreamSocketListenerConnectionReceivedEventArgs] (val x: Self) extends AnyVal {
+  implicit class IStreamSocketListenerConnectionReceivedEventArgsMutableBuilder[Self <: IStreamSocketListenerConnectionReceivedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSocket(value: StreamSocket): Self = this.set("socket", value.asInstanceOf[js.Any])
+    def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }
 }

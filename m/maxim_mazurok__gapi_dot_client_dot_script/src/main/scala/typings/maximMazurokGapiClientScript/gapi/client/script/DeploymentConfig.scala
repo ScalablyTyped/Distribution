@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentConfig extends js.Object {
+trait DeploymentConfig extends StObject {
   
   /** The description for this deployment. */
   var description: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object DeploymentConfig {
   }
   
   @scala.inline
-  implicit class DeploymentConfigOps[Self <: DeploymentConfig] (val x: Self) extends AnyVal {
+  implicit class DeploymentConfigMutableBuilder[Self <: DeploymentConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManifestFileName(value: String): Self = StObject.set(x, "manifestFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setManifestFileNameUndefined: Self = StObject.set(x, "manifestFileName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestFileName(value: String): Self = this.set("manifestFileName", value.asInstanceOf[js.Any])
+    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
     
     @scala.inline
-    def deleteManifestFileName: Self = this.set("manifestFileName", js.undefined)
+    def setVersionNumber(value: Double): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: String): Self = this.set("scriptId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptId: Self = this.set("scriptId", js.undefined)
-    
-    @scala.inline
-    def setVersionNumber(value: Double): Self = this.set("versionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("versionNumber", js.undefined)
+    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

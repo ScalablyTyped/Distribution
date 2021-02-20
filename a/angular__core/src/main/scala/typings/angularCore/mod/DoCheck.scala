@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoCheck extends js.Object {
+trait DoCheck extends StObject {
   
   /**
     * A callback method that performs change-detection, invoked
@@ -25,21 +26,9 @@ object DoCheck {
   }
   
   @scala.inline
-  implicit class DoCheckOps[Self <: DoCheck] (val x: Self) extends AnyVal {
+  implicit class DoCheckMutableBuilder[Self <: DoCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNgDoCheck(value: () => Unit): Self = this.set("ngDoCheck", js.Any.fromFunction0(value))
+    def setNgDoCheck(value: () => Unit): Self = StObject.set(x, "ngDoCheck", js.Any.fromFunction0(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,36 +52,24 @@ object XDDELink {
   }
   
   @scala.inline
-  implicit class XDDELinkOps[Self <: XDDELink] (val x: Self) extends AnyVal {
+  implicit class XDDELinkMutableBuilder[Self <: XDDELink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: String): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetApplication(value: () => String): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItem(value: () => String): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: String): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setGetTopic(value: () => String): Self = StObject.set(x, "getTopic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setItem(value: String): Self = this.set("Item", value.asInstanceOf[js.Any])
+    def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("Topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetApplication(value: () => String): Self = this.set("getApplication", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetItem(value: () => String): Self = this.set("getItem", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTopic(value: () => String): Self = this.set("getTopic", js.Any.fromFunction0(value))
+    def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
   }
 }

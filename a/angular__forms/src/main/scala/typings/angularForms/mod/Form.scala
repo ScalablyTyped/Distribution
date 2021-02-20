@@ -1,11 +1,12 @@
 package typings.angularForms.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Form extends js.Object {
+trait Form extends StObject {
   
   /**
     * @description
@@ -81,39 +82,27 @@ object Form {
   }
   
   @scala.inline
-  implicit class FormOps[Self <: Form] (val x: Self) extends AnyVal {
+  implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddControl(value: NgControl => Unit): Self = StObject.set(x, "addControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFormGroup(value: AbstractFormGroupDirective => Unit): Self = StObject.set(x, "addFormGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetControl(value: NgControl => FormControl): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddControl(value: NgControl => Unit): Self = this.set("addControl", js.Any.fromFunction1(value))
+    def setGetFormGroup(value: AbstractFormGroupDirective => FormGroup): Self = StObject.set(x, "getFormGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFormGroup(value: AbstractFormGroupDirective => Unit): Self = this.set("addFormGroup", js.Any.fromFunction1(value))
+    def setRemoveControl(value: NgControl => Unit): Self = StObject.set(x, "removeControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetControl(value: NgControl => FormControl): Self = this.set("getControl", js.Any.fromFunction1(value))
+    def setRemoveFormGroup(value: AbstractFormGroupDirective => Unit): Self = StObject.set(x, "removeFormGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormGroup(value: AbstractFormGroupDirective => FormGroup): Self = this.set("getFormGroup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveControl(value: NgControl => Unit): Self = this.set("removeControl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveFormGroup(value: AbstractFormGroupDirective => Unit): Self = this.set("removeFormGroup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateModel(value: (NgControl, js.Any) => Unit): Self = this.set("updateModel", js.Any.fromFunction2(value))
+    def setUpdateModel(value: (NgControl, js.Any) => Unit): Self = StObject.set(x, "updateModel", js.Any.fromFunction2(value))
   }
 }

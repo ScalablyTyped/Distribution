@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EdgeWeightedDigraph extends js.Object {
+trait EdgeWeightedDigraph extends StObject {
   
   def add(start: Double, end: Double, weight: Double): Unit = js.native
   
@@ -22,27 +23,15 @@ object EdgeWeightedDigraph {
   }
   
   @scala.inline
-  implicit class EdgeWeightedDigraphOps[Self <: EdgeWeightedDigraph] (val x: Self) extends AnyVal {
+  implicit class EdgeWeightedDigraphMutableBuilder[Self <: EdgeWeightedDigraph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setE(value: () => Double): Self = StObject.set(x, "e", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdd(value: (Double, Double, Double) => Unit): Self = this.set("add", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setE(value: () => Double): Self = this.set("e", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setV(value: () => Double): Self = this.set("v", js.Any.fromFunction0(value))
+    def setV(value: () => Double): Self = StObject.set(x, "v", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.roslib.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionName extends js.Object {
+trait ActionName extends StObject {
   
   var actionName: java.lang.String = js.native
   
@@ -29,30 +30,18 @@ object ActionName {
   }
   
   @scala.inline
-  implicit class ActionNameOps[Self <: ActionName] (val x: Self) extends AnyVal {
+  implicit class ActionNameMutableBuilder[Self <: ActionName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: java.lang.String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerName(value: java.lang.String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: java.lang.String): Self = this.set("actionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRos(value: typings.roslib.mod.Ros): Self = this.set("ros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerName(value: java.lang.String): Self = this.set("serverName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

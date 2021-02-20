@@ -2,6 +2,7 @@ package typings.mqttPacket.mod
 
 import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.suback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object ISubackPacket {
   }
   
   @scala.inline
-  implicit class ISubackPacketOps[Self <: ISubackPacket] (val x: Self) extends AnyVal {
+  implicit class ISubackPacketMutableBuilder[Self <: ISubackPacket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: suback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGranted(value: js.Array[Double | js.Object]): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantedVarargs(value: (Double | js.Object)*): Self = StObject.set(x, "granted", js.Array(value :_*))
     
     @scala.inline
-    def setCmd(value: suback): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantedVarargs(value: (Double | js.Object)*): Self = this.set("granted", js.Array(value :_*))
-    
-    @scala.inline
-    def setGranted(value: js.Array[Double | js.Object]): Self = this.set("granted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: ReasonString): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

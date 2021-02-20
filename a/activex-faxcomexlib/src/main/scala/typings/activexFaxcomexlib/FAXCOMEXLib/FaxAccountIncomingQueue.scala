@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccountIncomingQueue Class */
 @js.native
-trait FaxAccountIncomingQueue extends js.Object {
+trait FaxAccountIncomingQueue extends StObject {
   
   @JSName("FAXCOMEXLib.FaxAccountIncomingQueue_typekey")
   var FAXCOMEXLibDotFaxAccountIncomingQueue_typekey: FaxAccountIncomingQueue = js.native
@@ -31,27 +32,15 @@ object FaxAccountIncomingQueue {
   }
   
   @scala.inline
-  implicit class FaxAccountIncomingQueueOps[Self <: FaxAccountIncomingQueue] (val x: Self) extends AnyVal {
+  implicit class FaxAccountIncomingQueueMutableBuilder[Self <: FaxAccountIncomingQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFAXCOMEXLibDotFaxAccountIncomingQueue_typekey(value: FaxAccountIncomingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountIncomingQueue_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetJob(value: String => FaxIncomingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFAXCOMEXLibDotFaxAccountIncomingQueue_typekey(value: FaxAccountIncomingQueue): Self = this.set("FAXCOMEXLib.FaxAccountIncomingQueue_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetJob(value: String => FaxIncomingJob): Self = this.set("GetJob", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetJobs(value: () => FaxIncomingJobs): Self = this.set("GetJobs", js.Any.fromFunction0(value))
+    def setGetJobs(value: () => FaxIncomingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
   }
 }

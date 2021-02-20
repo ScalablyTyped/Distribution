@@ -1,11 +1,12 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Faicon extends js.Object {
+trait Faicon extends StObject {
   
   /** Icon name for FontAwesome */
   var `fa-icon`: js.UndefOr[String] = js.native
@@ -30,48 +31,36 @@ object Faicon {
   }
   
   @scala.inline
-  implicit class FaiconOps[Self <: Faicon] (val x: Self) extends AnyVal {
+  implicit class FaiconMutableBuilder[Self <: Faicon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setFa-icon`(value: String): Self = StObject.set(x, "fa-icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setFa-iconUndefined`: Self = StObject.set(x, "fa-icon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreConfigUpdate(value: Boolean): Self = StObject.set(x, "ignoreConfigUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFa-icon`(value: String): Self = this.set("fa-icon", value.asInstanceOf[js.Any])
+    def setIgnoreConfigUpdateUndefined: Self = StObject.set(x, "ignoreConfigUpdate", js.undefined)
     
     @scala.inline
-    def `deleteFa-icon`: Self = this.set("fa-icon", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreConfigUpdate(value: Boolean): Self = this.set("ignoreConfigUpdate", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteIgnoreConfigUpdate: Self = this.set("ignoreConfigUpdate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSingleton(value: Boolean): Self = this.set("singleton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleton: Self = this.set("singleton", js.undefined)
+    def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
   }
 }

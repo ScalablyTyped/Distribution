@@ -6,16 +6,16 @@ import typings.three.lightMod.Light
 import typings.three.sceneMod.Scene
 import typings.three.webGLObjectsMod.WebGLObjects
 import typings.three.webGLRendererMod.WebGLRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLShadowMap", JSImport.Namespace)
-@js.native
-object webGLShadowMapMod extends js.Object {
+object webGLShadowMapMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLShadowMap", "WebGLShadowMap")
   @js.native
-  class WebGLShadowMap protected () extends js.Object {
+  class WebGLShadowMap protected () extends StObject {
     def this(_renderer: WebGLRenderer, _objects: WebGLObjects, maxTextureSize: Double) = this()
     
     /**

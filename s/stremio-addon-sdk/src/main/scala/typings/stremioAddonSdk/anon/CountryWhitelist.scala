@@ -1,11 +1,12 @@
 package typings.stremioAddonSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CountryWhitelist extends js.Object {
+trait CountryWhitelist extends StObject {
   
   /**
     * Hints it's restricted to particular countries.
@@ -50,45 +51,33 @@ object CountryWhitelist {
   }
   
   @scala.inline
-  implicit class CountryWhitelistOps[Self <: CountryWhitelist] (val x: Self) extends AnyVal {
+  implicit class CountryWhitelistMutableBuilder[Self <: CountryWhitelist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryWhitelist(value: js.Array[String]): Self = StObject.set(x, "countryWhitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryWhitelistUndefined: Self = StObject.set(x, "countryWhitelist", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryWhitelistVarargs(value: String*): Self = StObject.set(x, "countryWhitelist", js.Array(value :_*))
     
     @scala.inline
-    def setCountryWhitelistVarargs(value: String*): Self = this.set("countryWhitelist", js.Array(value :_*))
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryWhitelist(value: js.Array[String]): Self = this.set("countryWhitelist", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteCountryWhitelist: Self = this.set("countryWhitelist", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setNotWebReady(value: Boolean): Self = StObject.set(x, "notWebReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setNotWebReady(value: Boolean): Self = this.set("notWebReady", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotWebReady: Self = this.set("notWebReady", js.undefined)
+    def setNotWebReadyUndefined: Self = StObject.set(x, "notWebReady", js.undefined)
   }
 }

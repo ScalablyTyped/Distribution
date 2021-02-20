@@ -1,11 +1,12 @@
 package typings.yup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocaleObject extends js.Object {
+trait LocaleObject extends StObject {
   
   var array: js.UndefOr[ArrayLocale] = js.native
   
@@ -30,60 +31,48 @@ object LocaleObject {
   }
   
   @scala.inline
-  implicit class LocaleObjectOps[Self <: LocaleObject] (val x: Self) extends AnyVal {
+  implicit class LocaleObjectMutableBuilder[Self <: LocaleObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: ArrayLocale): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoolean(value: js.Object): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: ArrayLocale): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
     @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setDate(value: DateLocale): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: js.Object): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    def setMixed(value: MixedLocale): Self = StObject.set(x, "mixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: DateLocale): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setMixedUndefined: Self = StObject.set(x, "mixed", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setNumber(value: NumberLocale): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixed(value: MixedLocale): Self = this.set("mixed", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMixed: Self = this.set("mixed", js.undefined)
+    def setObject(value: ObjectLocale): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: NumberLocale): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setString(value: StringLocale): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: ObjectLocale): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
-    
-    @scala.inline
-    def setString(value: StringLocale): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

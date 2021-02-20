@@ -1,6 +1,7 @@
 package typings.vegaTypings.scaleMod
 
 import typings.vegaTypings.signalMod.SignalRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,54 +28,42 @@ object ContinuousScale {
   }
   
   @scala.inline
-  implicit class ContinuousScaleOps[Self <: ContinuousScale] (val x: Self) extends AnyVal {
+  implicit class ContinuousScaleMutableBuilder[Self <: ContinuousScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
     @scala.inline
-    def setBinsVarargs(value: (Double | SignalRef)*): Self = this.set("bins", js.Array(value :_*))
+    def setClamp(value: Boolean | SignalRef): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBins(value: ScaleBins): Self = this.set("bins", value.asInstanceOf[js.Any])
+    def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
     
     @scala.inline
-    def deleteBins: Self = this.set("bins", js.undefined)
+    def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClamp(value: Boolean | SignalRef): Self = this.set("clamp", value.asInstanceOf[js.Any])
+    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
     @scala.inline
-    def deleteClamp: Self = this.set("clamp", js.undefined)
+    def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolate(value: ScaleInterpolate): Self = this.set("interpolate", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteInterpolate: Self = this.set("interpolate", js.undefined)
+    def setRange(value: RangeScheme): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double | SignalRef): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = this.set("range", js.Array(value :_*))
-    
-    @scala.inline
-    def setRange(value: RangeScheme): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
   }
 }

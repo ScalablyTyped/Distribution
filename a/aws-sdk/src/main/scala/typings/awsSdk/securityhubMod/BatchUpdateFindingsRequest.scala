@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUpdateFindingsRequest extends js.Object {
+trait BatchUpdateFindingsRequest extends StObject {
   
   /**
     * The updated value for the finding confidence. Confidence is defined as the likelihood that a finding accurately identifies the behavior or issue that it was intended to identify. Confidence is scored on a 0-100 basis using a ratio scale, where 0 means zero percent confidence and 100 means 100 percent confidence.
@@ -63,84 +64,72 @@ object BatchUpdateFindingsRequest {
   }
   
   @scala.inline
-  implicit class BatchUpdateFindingsRequestOps[Self <: BatchUpdateFindingsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchUpdateFindingsRequestMutableBuilder[Self <: BatchUpdateFindingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: RatioScale): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriticality(value: RatioScale): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = this.set("FindingIdentifiers", js.Array(value :_*))
+    def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
     
     @scala.inline
-    def setFindingIdentifiers(value: AwsSecurityFindingIdentifierList): Self = this.set("FindingIdentifiers", value.asInstanceOf[js.Any])
+    def setFindingIdentifiers(value: AwsSecurityFindingIdentifierList): Self = StObject.set(x, "FindingIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: RatioScale): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "FindingIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriticality(value: RatioScale): Self = this.set("Criticality", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
     
     @scala.inline
-    def deleteCriticality: Self = this.set("Criticality", js.undefined)
+    def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: NoteUpdate): Self = this.set("Note", value.asInstanceOf[js.Any])
+    def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("Note", js.undefined)
+    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = this.set("RelatedFindings", js.Array(value :_*))
+    def setSeverity(value: SeverityUpdate): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedFindings(value: RelatedFindingList): Self = this.set("RelatedFindings", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
     @scala.inline
-    def deleteRelatedFindings: Self = this.set("RelatedFindings", js.undefined)
+    def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: SeverityUpdate): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "Types", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
     
     @scala.inline
-    def setTypesVarargs(value: NonEmptyString*): Self = this.set("Types", js.Array(value :_*))
+    def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: TypeList): Self = this.set("Types", value.asInstanceOf[js.Any])
+    def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
     
     @scala.inline
-    def deleteTypes: Self = this.set("Types", js.undefined)
+    def setVerificationState(value: VerificationState): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDefinedFields(value: FieldMap): Self = this.set("UserDefinedFields", value.asInstanceOf[js.Any])
+    def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
     
     @scala.inline
-    def deleteUserDefinedFields: Self = this.set("UserDefinedFields", js.undefined)
+    def setWorkflow(value: WorkflowUpdate): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerificationState(value: VerificationState): Self = this.set("VerificationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationState: Self = this.set("VerificationState", js.undefined)
-    
-    @scala.inline
-    def setWorkflow(value: WorkflowUpdate): Self = this.set("Workflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflow: Self = this.set("Workflow", js.undefined)
+    def setWorkflowUndefined: Self = StObject.set(x, "Workflow", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IamPolicySearchResult extends js.Object {
+trait IamPolicySearchResult extends StObject {
   
   /** Explanation about the IAM policy search result. It contains additional information to explain why the search result matches the query. */
   var explanation: js.UndefOr[Explanation] = js.native
@@ -41,42 +42,30 @@ object IamPolicySearchResult {
   }
   
   @scala.inline
-  implicit class IamPolicySearchResultOps[Self <: IamPolicySearchResult] (val x: Self) extends AnyVal {
+  implicit class IamPolicySearchResultMutableBuilder[Self <: IamPolicySearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplanation(value: Explanation): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanation(value: Explanation): Self = this.set("explanation", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deleteExplanation: Self = this.set("explanation", js.undefined)
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: Policy): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

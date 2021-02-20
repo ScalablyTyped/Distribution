@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Value extends js.Object {
+trait Value extends StObject {
   
   /** An array value. Cannot directly contain another array value, though can contain an map which contains another array. */
   var arrayValue: js.UndefOr[ArrayValue] = js.native
@@ -49,84 +50,72 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueOps[Self <: Value] (val x: Self) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayValue(value: ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayValueUndefined: Self = StObject.set(x, "arrayValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayValue(value: ArrayValue): Self = this.set("arrayValue", value.asInstanceOf[js.Any])
+    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     @scala.inline
-    def deleteArrayValue: Self = this.set("arrayValue", js.undefined)
+    def setBytesValue(value: String): Self = StObject.set(x, "bytesValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    def setBytesValueUndefined: Self = StObject.set(x, "bytesValue", js.undefined)
     
     @scala.inline
-    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesValue(value: String): Self = this.set("bytesValue", value.asInstanceOf[js.Any])
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
     @scala.inline
-    def deleteBytesValue: Self = this.set("bytesValue", js.undefined)
+    def setGeoPointValue(value: LatLng): Self = StObject.set(x, "geoPointValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    def setGeoPointValueUndefined: Self = StObject.set(x, "geoPointValue", js.undefined)
     
     @scala.inline
-    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoPointValue(value: LatLng): Self = this.set("geoPointValue", value.asInstanceOf[js.Any])
+    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
     @scala.inline
-    def deleteGeoPointValue: Self = this.set("geoPointValue", js.undefined)
+    def setMapValue(value: MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValue(value: String): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    def setMapValueUndefined: Self = StObject.set(x, "mapValue", js.undefined)
     
     @scala.inline
-    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    def setNullValue(value: String): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapValue(value: MapValue): Self = this.set("mapValue", value.asInstanceOf[js.Any])
+    def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
     
     @scala.inline
-    def deleteMapValue: Self = this.set("mapValue", js.undefined)
+    def setReferenceValue(value: String): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullValue(value: String): Self = this.set("nullValue", value.asInstanceOf[js.Any])
+    def setReferenceValueUndefined: Self = StObject.set(x, "referenceValue", js.undefined)
     
     @scala.inline
-    def deleteNullValue: Self = this.set("nullValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceValue(value: String): Self = this.set("referenceValue", value.asInstanceOf[js.Any])
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     @scala.inline
-    def deleteReferenceValue: Self = this.set("referenceValue", js.undefined)
+    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
-    
-    @scala.inline
-    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
+    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for the PullBatch method.
   */
 @js.native
-trait SchemaPullBatchRequest extends js.Object {
+trait SchemaPullBatchRequest extends StObject {
   
   /**
     * The maximum number of PubsubEvents returned for this request. The Pub/Sub
@@ -39,36 +40,24 @@ object SchemaPullBatchRequest {
   }
   
   @scala.inline
-  implicit class SchemaPullBatchRequestOps[Self <: SchemaPullBatchRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaPullBatchRequestMutableBuilder[Self <: SchemaPullBatchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxEvents(value: Double): Self = StObject.set(x, "maxEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxEventsUndefined: Self = StObject.set(x, "maxEvents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEvents(value: Double): Self = this.set("maxEvents", value.asInstanceOf[js.Any])
+    def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
     
     @scala.inline
-    def deleteMaxEvents: Self = this.set("maxEvents", js.undefined)
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnImmediately(value: Boolean): Self = this.set("returnImmediately", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnImmediately: Self = this.set("returnImmediately", js.undefined)
-    
-    @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

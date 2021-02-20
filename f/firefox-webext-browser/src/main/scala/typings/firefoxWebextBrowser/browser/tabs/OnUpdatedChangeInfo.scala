@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Lists the changes to the state of the tab that was updated. */
 @js.native
-trait OnUpdatedChangeInfo extends js.Object {
+trait OnUpdatedChangeInfo extends StObject {
   
   /** The tab's new attention state. */
   var attention: js.UndefOr[Boolean] = js.native
@@ -59,90 +60,78 @@ object OnUpdatedChangeInfo {
   }
   
   @scala.inline
-  implicit class OnUpdatedChangeInfoOps[Self <: OnUpdatedChangeInfo] (val x: Self) extends AnyVal {
+  implicit class OnUpdatedChangeInfoMutableBuilder[Self <: OnUpdatedChangeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttentionUndefined: Self = StObject.set(x, "attention", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttention(value: Boolean): Self = this.set("attention", value.asInstanceOf[js.Any])
+    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
     @scala.inline
-    def deleteAttention: Self = this.set("attention", js.undefined)
+    def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudible(value: Boolean): Self = this.set("audible", value.asInstanceOf[js.Any])
+    def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
     
     @scala.inline
-    def deleteAudible: Self = this.set("audible", js.undefined)
+    def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscarded(value: Boolean): Self = this.set("discarded", value.asInstanceOf[js.Any])
+    def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
     
     @scala.inline
-    def deleteDiscarded: Self = this.set("discarded", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavIconUrl(value: String): Self = this.set("favIconUrl", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteFavIconUrl: Self = this.set("favIconUrl", js.undefined)
+    def setIsArticle(value: Boolean): Self = StObject.set(x, "isArticle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIsArticleUndefined: Self = StObject.set(x, "isArticle", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setMutedInfo(value: MutedInfo): Self = StObject.set(x, "mutedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsArticle(value: Boolean): Self = this.set("isArticle", value.asInstanceOf[js.Any])
+    def setMutedInfoUndefined: Self = StObject.set(x, "mutedInfo", js.undefined)
     
     @scala.inline
-    def deleteIsArticle: Self = this.set("isArticle", js.undefined)
+    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutedInfo(value: MutedInfo): Self = this.set("mutedInfo", value.asInstanceOf[js.Any])
+    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
     @scala.inline
-    def deleteMutedInfo: Self = this.set("mutedInfo", js.undefined)
+    def setSharingState(value: SharingState): Self = StObject.set(x, "sharingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setSharingStateUndefined: Self = StObject.set(x, "sharingState", js.undefined)
     
     @scala.inline
-    def deletePinned: Self = this.set("pinned", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingState(value: SharingState): Self = this.set("sharingState", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSharingState: Self = this.set("sharingState", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

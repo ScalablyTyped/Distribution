@@ -1,11 +1,12 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxVideoOptions extends js.Object {
+trait FancyBoxVideoOptions extends StObject {
   
   var autoStart: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object FancyBoxVideoOptions {
   }
   
   @scala.inline
-  implicit class FancyBoxVideoOptionsOps[Self <: FancyBoxVideoOptions] (val x: Self) extends AnyVal {
+  implicit class FancyBoxVideoOptionsMutableBuilder[Self <: FancyBoxVideoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setTpl(value: String): Self = this.set("tpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

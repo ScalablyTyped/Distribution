@@ -1,6 +1,7 @@
 package typings.ckeditor.global.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class event ()
   extends typings.ckeditor.CKEDITOR.event
-/* static members */
-@JSGlobal("CKEDITOR.event")
-@js.native
-object event extends js.Object {
+object event {
   
+  @JSGlobal("CKEDITOR.event")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("CKEDITOR.event.implementOn")
+  @js.native
   def implementOn(targetObject: StringDictionary[js.Any]): Unit = js.native
   
-  var useCapture: Boolean = js.native
+  /* static member */
+  @JSGlobal("CKEDITOR.event.useCapture")
+  @js.native
+  def useCapture: Boolean = js.native
+  @scala.inline
+  def useCapture_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useCapture")(x.asInstanceOf[js.Any])
 }

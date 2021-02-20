@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathMat extends js.Object {
+trait OMathMat extends StObject {
   
   var Align: WdOMathVertAlignType = js.native
   
@@ -61,60 +62,48 @@ object OMathMat {
   }
   
   @scala.inline
-  implicit class OMathMatOps[Self <: OMathMat] (val x: Self) extends AnyVal {
+  implicit class OMathMatMutableBuilder[Self <: OMathMat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCell(value: (Double, Double) => OMath): Self = StObject.set(x, "Cell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAlign(value: WdOMathVertAlignType): Self = this.set("Align", value.asInstanceOf[js.Any])
+    def setColGap(value: Double): Self = StObject.set(x, "ColGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setColGapRule(value: WdOMathSpacingRule): Self = StObject.set(x, "ColGapRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: (Double, Double) => OMath): Self = this.set("Cell", js.Any.fromFunction2(value))
+    def setColSpacing(value: Double): Self = StObject.set(x, "ColSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColGap(value: Double): Self = this.set("ColGap", value.asInstanceOf[js.Any])
+    def setCols(value: OMathMatCols): Self = StObject.set(x, "Cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColGapRule(value: WdOMathSpacingRule): Self = this.set("ColGapRule", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColSpacing(value: Double): Self = this.set("ColSpacing", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: OMathMatCols): Self = this.set("Cols", value.asInstanceOf[js.Any])
+    def setPlcHoldHidden(value: Boolean): Self = StObject.set(x, "PlcHoldHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRowSpacingRule(value: WdOMathSpacingRule): Self = StObject.set(x, "RowSpacingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlcHoldHidden(value: Boolean): Self = this.set("PlcHoldHidden", value.asInstanceOf[js.Any])
+    def setRows(value: OMathMatRows): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSpacing(value: Double): Self = this.set("RowSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowSpacingRule(value: WdOMathSpacingRule): Self = this.set("RowSpacingRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRows(value: OMathMatRows): Self = this.set("Rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathMat_typekey(value: OMathMat): Self = this.set("Word.OMathMat_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathMat_typekey(value: OMathMat): Self = StObject.set(x, "Word.OMathMat_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteApprovalRuleTemplateOutput extends js.Object {
+trait DeleteApprovalRuleTemplateOutput extends StObject {
   
   /**
     * The system-generated ID of the deleted approval rule template. If the template has been previously deleted, the only response is a 200 OK.
@@ -21,21 +22,9 @@ object DeleteApprovalRuleTemplateOutput {
   }
   
   @scala.inline
-  implicit class DeleteApprovalRuleTemplateOutputOps[Self <: DeleteApprovalRuleTemplateOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteApprovalRuleTemplateOutputMutableBuilder[Self <: DeleteApprovalRuleTemplateOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApprovalRuleTemplateId(value: ApprovalRuleTemplateId): Self = this.set("approvalRuleTemplateId", value.asInstanceOf[js.Any])
+    def setApprovalRuleTemplateId(value: ApprovalRuleTemplateId): Self = StObject.set(x, "approvalRuleTemplateId", value.asInstanceOf[js.Any])
   }
 }

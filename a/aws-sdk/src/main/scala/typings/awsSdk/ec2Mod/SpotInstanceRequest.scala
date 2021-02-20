@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotInstanceRequest extends js.Object {
+trait SpotInstanceRequest extends StObject {
   
   /**
     * If you specified a duration and your Spot Instance request was fulfilled, this is the fixed hourly price in effect for the Spot Instance while it runs.
@@ -111,135 +112,123 @@ object SpotInstanceRequest {
   }
   
   @scala.inline
-  implicit class SpotInstanceRequestOps[Self <: SpotInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class SpotInstanceRequestMutableBuilder[Self <: SpotInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualBlockHourlyPrice(value: String): Self = StObject.set(x, "ActualBlockHourlyPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualBlockHourlyPriceUndefined: Self = StObject.set(x, "ActualBlockHourlyPrice", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZoneGroup(value: String): Self = StObject.set(x, "AvailabilityZoneGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualBlockHourlyPrice(value: String): Self = this.set("ActualBlockHourlyPrice", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneGroupUndefined: Self = StObject.set(x, "AvailabilityZoneGroup", js.undefined)
     
     @scala.inline
-    def deleteActualBlockHourlyPrice: Self = this.set("ActualBlockHourlyPrice", js.undefined)
+    def setBlockDurationMinutes(value: Integer): Self = StObject.set(x, "BlockDurationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZoneGroup(value: String): Self = this.set("AvailabilityZoneGroup", value.asInstanceOf[js.Any])
+    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "BlockDurationMinutes", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZoneGroup: Self = this.set("AvailabilityZoneGroup", js.undefined)
+    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDurationMinutes(value: Integer): Self = this.set("BlockDurationMinutes", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def deleteBlockDurationMinutes: Self = this.set("BlockDurationMinutes", js.undefined)
+    def setFault(value: SpotInstanceStateFault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFault(value: SpotInstanceStateFault): Self = this.set("Fault", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteFault: Self = this.set("Fault", js.undefined)
+    def setInstanceInterruptionBehavior(value: InstanceInterruptionBehavior): Self = StObject.set(x, "InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "InstanceInterruptionBehavior", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setLaunchGroup(value: String): Self = StObject.set(x, "LaunchGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceInterruptionBehavior(value: InstanceInterruptionBehavior): Self = this.set("InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    def setLaunchGroupUndefined: Self = StObject.set(x, "LaunchGroup", js.undefined)
     
     @scala.inline
-    def deleteInstanceInterruptionBehavior: Self = this.set("InstanceInterruptionBehavior", js.undefined)
+    def setLaunchSpecification(value: LaunchSpecification): Self = StObject.set(x, "LaunchSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchGroup(value: String): Self = this.set("LaunchGroup", value.asInstanceOf[js.Any])
+    def setLaunchSpecificationUndefined: Self = StObject.set(x, "LaunchSpecification", js.undefined)
     
     @scala.inline
-    def deleteLaunchGroup: Self = this.set("LaunchGroup", js.undefined)
+    def setLaunchedAvailabilityZone(value: String): Self = StObject.set(x, "LaunchedAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchSpecification(value: LaunchSpecification): Self = this.set("LaunchSpecification", value.asInstanceOf[js.Any])
+    def setLaunchedAvailabilityZoneUndefined: Self = StObject.set(x, "LaunchedAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteLaunchSpecification: Self = this.set("LaunchSpecification", js.undefined)
+    def setProductDescription(value: RIProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchedAvailabilityZone(value: String): Self = this.set("LaunchedAvailabilityZone", value.asInstanceOf[js.Any])
+    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
     @scala.inline
-    def deleteLaunchedAvailabilityZone: Self = this.set("LaunchedAvailabilityZone", js.undefined)
+    def setSpotInstanceRequestId(value: String): Self = StObject.set(x, "SpotInstanceRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDescription(value: RIProductDescription): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    def setSpotInstanceRequestIdUndefined: Self = StObject.set(x, "SpotInstanceRequestId", js.undefined)
     
     @scala.inline
-    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    def setSpotPrice(value: String): Self = StObject.set(x, "SpotPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotInstanceRequestId(value: String): Self = this.set("SpotInstanceRequestId", value.asInstanceOf[js.Any])
+    def setSpotPriceUndefined: Self = StObject.set(x, "SpotPrice", js.undefined)
     
     @scala.inline
-    def deleteSpotInstanceRequestId: Self = this.set("SpotInstanceRequestId", js.undefined)
+    def setState(value: SpotInstanceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotPrice(value: String): Self = this.set("SpotPrice", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSpotPrice: Self = this.set("SpotPrice", js.undefined)
+    def setStatus(value: SpotInstanceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: SpotInstanceState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SpotInstanceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setType(value: SpotInstanceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setValidFrom(value: DateTime): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: SpotInstanceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidFrom(value: DateTime): Self = this.set("ValidFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidFrom: Self = this.set("ValidFrom", js.undefined)
-    
-    @scala.inline
-    def setValidUntil(value: DateTime): Self = this.set("ValidUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidUntil: Self = this.set("ValidUntil", js.undefined)
+    def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }
 }

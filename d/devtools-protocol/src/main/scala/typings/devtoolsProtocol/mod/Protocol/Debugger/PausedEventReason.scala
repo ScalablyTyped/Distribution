@@ -7,6 +7,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.exception
 import typings.devtoolsProtocol.devtoolsProtocolStrings.instrumentation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.promiseRejection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.promiseRejection
   - typings.devtoolsProtocol.devtoolsProtocolStrings.XHR
 */
-trait PausedEventReason extends js.Object
+trait PausedEventReason extends StObject
 object PausedEventReason {
   
   @scala.inline

@@ -1,18 +1,20 @@
 package typings.animationFrame
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("AnimationFrame")
   @js.native
   class AnimationFrame ()
     extends typings.animationFrame.AnimationFrame
+  @JSGlobal("AnimationFrame")
   @js.native
-  object AnimationFrame
-    extends TopLevel[typings.animationFrame.AnimationFrame]
+  def AnimationFrame: typings.animationFrame.AnimationFrame = js.native
+  @scala.inline
+  def AnimationFrame_=(x: typings.animationFrame.AnimationFrame): Unit = js.Dynamic.global.updateDynamic("AnimationFrame")(x.asInstanceOf[js.Any])
 }

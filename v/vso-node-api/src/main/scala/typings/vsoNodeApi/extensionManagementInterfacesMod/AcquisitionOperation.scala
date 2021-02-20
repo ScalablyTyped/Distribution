@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcquisitionOperation extends js.Object {
+trait AcquisitionOperation extends StObject {
   
   /**
     * State of the the AcquisitionOperation for the current user
@@ -41,33 +42,21 @@ object AcquisitionOperation {
   }
   
   @scala.inline
-  implicit class AcquisitionOperationOps[Self <: AcquisitionOperation] (val x: Self) extends AnyVal {
+  implicit class AcquisitionOperationMutableBuilder[Self <: AcquisitionOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperationState(value: AcquisitionOperationState): Self = StObject.set(x, "operationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationType(value: AcquisitionOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationState(value: AcquisitionOperationState): Self = this.set("operationState", value.asInstanceOf[js.Any])
+    def setReasons(value: js.Array[AcquisitionOperationDisallowReason]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: AcquisitionOperationType): Self = this.set("operationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReasonsVarargs(value: AcquisitionOperationDisallowReason*): Self = this.set("reasons", js.Array(value :_*))
-    
-    @scala.inline
-    def setReasons(value: js.Array[AcquisitionOperationDisallowReason]): Self = this.set("reasons", value.asInstanceOf[js.Any])
+    def setReasonsVarargs(value: AcquisitionOperationDisallowReason*): Self = StObject.set(x, "reasons", js.Array(value :_*))
   }
 }

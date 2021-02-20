@@ -1,11 +1,12 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Success extends js.Object {
+trait Success extends StObject {
   
   var success: js.UndefOr[Percent] = js.native
   
@@ -20,30 +21,18 @@ object Success {
   }
   
   @scala.inline
-  implicit class SuccessOps[Self <: Success] (val x: Self) extends AnyVal {
+  implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccess(value: Percent): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessPercent(value: Double): Self = StObject.set(x, "successPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessPercentUndefined: Self = StObject.set(x, "successPercent", js.undefined)
     
     @scala.inline
-    def setSuccess(value: Percent): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setSuccessPercent(value: Double): Self = this.set("successPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessPercent: Self = this.set("successPercent", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

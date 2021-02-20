@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object univariateColorSizeCreateVisualVariablesParamsColorOptions {
   }
   
   @scala.inline
-  implicit class univariateColorSizeCreateVisualVariablesParamsColorOptionsOps[Self <: univariateColorSizeCreateVisualVariablesParamsColorOptions] (val x: Self) extends AnyVal {
+  implicit class univariateColorSizeCreateVisualVariablesParamsColorOptionsMutableBuilder[Self <: univariateColorSizeCreateVisualVariablesParamsColorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegendOptions(value: univariateColorSizeCreateVisualVariablesParamsColorOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScheme(value: ColorScheme): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendOptions(value: univariateColorSizeCreateVisualVariablesParamsColorOptionsLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

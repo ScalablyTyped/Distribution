@@ -1,5 +1,6 @@
 package typings.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,24 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebaseAuthTypes.mod.PhoneMultiFactorEnrollInfoOptions
   - typings.firebaseAuthTypes.mod.PhoneMultiFactorSignInInfoOptions
 */
-trait PhoneInfoOptions extends js.Object
+trait PhoneInfoOptions extends StObject
 object PhoneInfoOptions {
   
   @scala.inline
-  def PhoneSingleFactorInfoOptions(phoneNumber: String): PhoneInfoOptions = {
-    val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhoneInfoOptions]
-  }
-  
-  @scala.inline
-  def PhoneMultiFactorEnrollInfoOptions(phoneNumber: String, session: MultiFactorSession): PhoneInfoOptions = {
+  def PhoneMultiFactorEnrollInfoOptions(phoneNumber: String, session: MultiFactorSession): typings.firebaseAuthTypes.mod.PhoneMultiFactorEnrollInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhoneInfoOptions]
+    __obj.asInstanceOf[typings.firebaseAuthTypes.mod.PhoneMultiFactorEnrollInfoOptions]
   }
   
   @scala.inline
-  def PhoneMultiFactorSignInInfoOptions(session: MultiFactorSession): PhoneInfoOptions = {
+  def PhoneMultiFactorSignInInfoOptions(session: MultiFactorSession): typings.firebaseAuthTypes.mod.PhoneMultiFactorSignInInfoOptions = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PhoneInfoOptions]
+    __obj.asInstanceOf[typings.firebaseAuthTypes.mod.PhoneMultiFactorSignInInfoOptions]
+  }
+  
+  @scala.inline
+  def PhoneSingleFactorInfoOptions(phoneNumber: String): typings.firebaseAuthTypes.mod.PhoneSingleFactorInfoOptions = {
+    val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.firebaseAuthTypes.mod.PhoneSingleFactorInfoOptions]
   }
 }

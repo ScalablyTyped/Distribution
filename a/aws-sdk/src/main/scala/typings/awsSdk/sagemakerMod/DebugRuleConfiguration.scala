@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugRuleConfiguration extends js.Object {
+trait DebugRuleConfiguration extends StObject {
   
   /**
     * The instance type to deploy for a training job.
@@ -51,54 +52,42 @@ object DebugRuleConfiguration {
   }
   
   @scala.inline
-  implicit class DebugRuleConfigurationOps[Self <: DebugRuleConfiguration] (val x: Self) extends AnyVal {
+  implicit class DebugRuleConfigurationMutableBuilder[Self <: DebugRuleConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: ProcessingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleConfigurationName(value: RuleConfigurationName): Self = this.set("RuleConfigurationName", value.asInstanceOf[js.Any])
+    def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
     
     @scala.inline
-    def setRuleEvaluatorImage(value: AlgorithmImage): Self = this.set("RuleEvaluatorImage", value.asInstanceOf[js.Any])
+    def setRuleConfigurationName(value: RuleConfigurationName): Self = StObject.set(x, "RuleConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: ProcessingInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setRuleEvaluatorImage(value: AlgorithmImage): Self = StObject.set(x, "RuleEvaluatorImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setRuleParameters(value: RuleParameters): Self = StObject.set(x, "RuleParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPath(value: DirectoryPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
+    def setRuleParametersUndefined: Self = StObject.set(x, "RuleParameters", js.undefined)
     
     @scala.inline
-    def deleteLocalPath: Self = this.set("LocalPath", js.undefined)
+    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleParameters(value: RuleParameters): Self = this.set("RuleParameters", value.asInstanceOf[js.Any])
+    def setS3OutputPathUndefined: Self = StObject.set(x, "S3OutputPath", js.undefined)
     
     @scala.inline
-    def deleteRuleParameters: Self = this.set("RuleParameters", js.undefined)
+    def setVolumeSizeInGB(value: OptionalVolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = this.set("S3OutputPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3OutputPath: Self = this.set("S3OutputPath", js.undefined)
-    
-    @scala.inline
-    def setVolumeSizeInGB(value: OptionalVolumeSizeInGB): Self = this.set("VolumeSizeInGB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSizeInGB: Self = this.set("VolumeSizeInGB", js.undefined)
+    def setVolumeSizeInGBUndefined: Self = StObject.set(x, "VolumeSizeInGB", js.undefined)
   }
 }

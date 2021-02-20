@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTrialComponentsResponse extends js.Object {
+trait ListTrialComponentsResponse extends StObject {
   
   /**
     * A token for getting the next set of components, if there are any.
@@ -26,33 +27,21 @@ object ListTrialComponentsResponse {
   }
   
   @scala.inline
-  implicit class ListTrialComponentsResponseOps[Self <: ListTrialComponentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListTrialComponentsResponseMutableBuilder[Self <: ListTrialComponentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrialComponentSummaries(value: TrialComponentSummaries): Self = StObject.set(x, "TrialComponentSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTrialComponentSummariesUndefined: Self = StObject.set(x, "TrialComponentSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTrialComponentSummariesVarargs(value: TrialComponentSummary*): Self = this.set("TrialComponentSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrialComponentSummaries(value: TrialComponentSummaries): Self = this.set("TrialComponentSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialComponentSummaries: Self = this.set("TrialComponentSummaries", js.undefined)
+    def setTrialComponentSummariesVarargs(value: TrialComponentSummary*): Self = StObject.set(x, "TrialComponentSummaries", js.Array(value :_*))
   }
 }

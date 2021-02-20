@@ -1,6 +1,7 @@
 package typings.pixiJs.mod
 
 import typings.pixiJs.PIXI.ILoaderPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,10 +65,11 @@ class Loader ()
   def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Loader")
-@js.native
-object Loader extends js.Object {
+object Loader {
+  
+  @JSImport("pixi.js", "Loader")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adds a Loader plugin for the global shared loader and all
@@ -79,6 +81,9 @@ object Loader extends js.Object {
     * @param {PIXI.ILoaderPlugin} plugin - The plugin to add
     * @return {PIXI.Loader} Reference to PIXI.Loader for chaining
     */
+  /* static member */
+  @JSImport("pixi.js", "Loader.registerPlugin")
+  @js.native
   def registerPlugin(plugin: ILoaderPlugin): typings.pixiJs.PIXI.Loader = js.native
   
   /**
@@ -88,5 +93,10 @@ object Loader extends js.Object {
     * @static
     * @memberof PIXI.Loader
     */
-  var shared: typings.pixiJs.PIXI.Loader = js.native
+  /* static member */
+  @JSImport("pixi.js", "Loader.shared")
+  @js.native
+  def shared: typings.pixiJs.PIXI.Loader = js.native
+  @scala.inline
+  def shared_=(x: typings.pixiJs.PIXI.Loader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
 }

@@ -3,16 +3,16 @@ package typings.firebaseStorage
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/implementation/blob", JSImport.Namespace)
-@js.native
-object blobMod extends js.Object {
+object blobMod {
   
+  @JSImport("@firebase/storage/dist/src/implementation/blob", "FbsBlob")
   @js.native
-  class FbsBlob protected () extends js.Object {
+  class FbsBlob protected () extends StObject {
     def this(data: ArrayBuffer) = this()
     def this(data: Blob) = this()
     def this(data: Uint8Array) = this()
@@ -35,9 +35,10 @@ object blobMod extends js.Object {
     def uploadData(): Blob | Uint8Array = js.native
   }
   /* static members */
-  @js.native
-  object FbsBlob extends js.Object {
+  object FbsBlob {
     
+    @JSImport("@firebase/storage/dist/src/implementation/blob", "FbsBlob.getBlob")
+    @js.native
     def getBlob(args: (String | FbsBlob)*): FbsBlob | Null = js.native
   }
 }

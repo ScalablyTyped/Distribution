@@ -1,11 +1,12 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFPageProxy extends js.Object {
+trait PDFPageProxy extends StObject {
   
   /**
     * marked as future feature
@@ -84,51 +85,39 @@ object PDFPageProxy {
   }
   
   @scala.inline
-  implicit class PDFPageProxyOps[Self <: PDFPageProxy] (val x: Self) extends AnyVal {
+  implicit class PDFPageProxyMutableBuilder[Self <: PDFPageProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAnnotations(value: () => PDFPromise[PDFAnnotations]): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTextContent(value: () => PDFPromise[TextContent]): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetViewport(value: ViewportParameters => PDFPageViewport): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAnnotations(value: () => PDFPromise[PDFAnnotations]): Self = this.set("getAnnotations", js.Any.fromFunction0(value))
+    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTextContent(value: () => PDFPromise[TextContent]): Self = this.set("getTextContent", js.Any.fromFunction0(value))
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetViewport(value: ViewportParameters => PDFPageViewport): Self = this.set("getViewport", js.Any.fromFunction1(value))
+    def setRef(value: PDFRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageIndex(value: Double): Self = this.set("pageIndex", value.asInstanceOf[js.Any])
+    def setRender(value: PDFRenderParams => PDFRenderTask): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: PDFRef): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setView(value: js.Array[Double]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: PDFRenderParams => PDFRenderTask): Self = this.set("render", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewVarargs(value: Double*): Self = this.set("view", js.Array(value :_*))
-    
-    @scala.inline
-    def setView(value: js.Array[Double]): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setViewVarargs(value: Double*): Self = StObject.set(x, "view", js.Array(value :_*))
   }
 }

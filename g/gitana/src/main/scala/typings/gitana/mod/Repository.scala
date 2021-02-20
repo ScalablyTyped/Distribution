@@ -1,5 +1,6 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,16 +89,30 @@ class Repository protected () extends AbstractRepositoryObject {
   
   def startMerge(sourceBranchId: String, targetBranchId: String, callback: js.Any): js.Any = js.native
 }
-/* static members */
-@JSImport("gitana", "Repository")
-@js.native
-object Repository extends js.Object {
+object Repository {
   
+  /* static member */
+  @JSImport("gitana", "Repository.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "Repository.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "Repository.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "Repository.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "Repository.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

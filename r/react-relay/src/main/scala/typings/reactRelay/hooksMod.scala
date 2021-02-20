@@ -39,25 +39,36 @@ import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-relay/hooks", JSImport.Namespace)
-@js.native
-object hooksMod extends js.Object {
+object hooksMod {
   
+  @JSImport("react-relay/hooks", "EntryPointContainer")
+  @js.native
   def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[_] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = js.native
   
+  @JSImport("react-relay/hooks", "MatchContainer")
+  @js.native
   def MatchContainer[TProps, TFallback](props: MatchContainerProps[TProps, TFallback]): ElementType[TProps] | TFallback | Null = js.native
   
+  @JSImport("react-relay/hooks", "ProfilerContext")
+  @js.native
   val ProfilerContext: Context[ProfilerContextType] = js.native
   
+  @JSImport("react-relay/hooks", "RelayEnvironmentProvider")
+  @js.native
   def RelayEnvironmentProvider(props: Props): ReactElement = js.native
   
+  @JSImport("react-relay/hooks", "fetchQuery")
+  @js.native
   def fetchQuery[TQuery /* <: OperationType */](environment: Environment, query: GraphQLTaggedNode, variables: VariablesOf[TQuery]): Observable[
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
+  @JSImport("react-relay/hooks", "fetchQuery")
+  @js.native
   def fetchQuery[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
@@ -67,19 +78,27 @@ object hooksMod extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
   
+  @JSImport("react-relay/hooks", "graphql")
+  @js.native
   def graphql(strings: js.Any): GraphQLTaggedNode = js.native
   
+  @JSImport("react-relay/hooks", "loadEntryPoint")
+  @js.native
   def loadEntryPoint[TEntryPoint](
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, _]]],
     entryPoint: TEntryPoint,
     entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]
   ): PreloadedEntryPoint[GetEntryPointComponentFromEntryPoint[TEntryPoint]] = js.native
   
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: VariablesOf[TQuery]
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
@@ -87,12 +106,16 @@ object hooksMod extends js.Object {
     options: js.UndefOr[scala.Nothing],
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: VariablesOf[TQuery],
     options: LoadQueryOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
@@ -100,7 +123,11 @@ object hooksMod extends js.Object {
     options: LoadQueryOptions,
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](environment: Environment, preloadableRequest: GraphQLTaggedNode, variables: VariablesOf[TQuery]): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: GraphQLTaggedNode,
@@ -108,12 +135,16 @@ object hooksMod extends js.Object {
     options: js.UndefOr[scala.Nothing],
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: GraphQLTaggedNode,
     variables: VariablesOf[TQuery],
     options: LoadQueryOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSImport("react-relay/hooks", "loadQuery")
+  @js.native
   def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, _]] */](
     environment: Environment,
     preloadableRequest: GraphQLTaggedNode,
@@ -122,72 +153,122 @@ object hooksMod extends js.Object {
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
   
+  @JSImport("react-relay/hooks", "useBlockingPaginationFragment")
+  @js.native
   def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
+  @JSImport("react-relay/hooks", "useBlockingPaginationFragment")
+  @js.native
   def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
+  @JSImport("react-relay/hooks", "useBlockingPaginationFragment")
+  @js.native
   def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
+  @JSImport("react-relay/hooks", "useBlockingPaginationFragment")
+  @js.native
   def useBlockingPaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: Null, componentDisplayName: String): // tslint:disable-next-line no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
   
+  @JSImport("react-relay/hooks", "useEntryPointLoader")
+  @js.native
   def useEntryPointLoader[TEntryPoint](
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, _]]],
     entryPoint: TEntryPoint
   ): UseEntryPointLoaderHookType[TEntryPoint] = js.native
   
+  @JSImport("react-relay/hooks", "useFragment")
+  @js.native
   def useFragment[TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode): (KeyTypeData[TKey, _]) | Null = js.native
+  @JSImport("react-relay/hooks", "useFragment")
+  @js.native
   def useFragment[TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (KeyTypeData[TKey, _]) | Null = js.native
-  @JSName("useFragment")
+  @JSImport("react-relay/hooks", "useFragment")
+  @js.native
   def useFragment_TKey_ArrayKeyTypeWildcard[TKey /* <: ArrayKeyType[_] */](fragmentInput: GraphQLTaggedNode): (ArrayKeyTypeData[TKey, _]) | Null = js.native
-  @JSName("useFragment")
+  @JSImport("react-relay/hooks", "useFragment")
+  @js.native
   def useFragment_TKey_ArrayKeyTypeWildcard[TKey /* <: ArrayKeyType[_] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (ArrayKeyTypeData[TKey, _]) | Null = js.native
-  @JSName("useFragment")
+  @JSImport("react-relay/hooks", "useFragment")
+  @js.native
   def useFragment_TKey_ArrayKeyTypeWildcard_ArrayKeyTypeData[TKey /* <: ArrayKeyType[_] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ArrayKeyTypeData[TKey, _] = js.native
-  @JSName("useFragment")
+  @JSImport("react-relay/hooks", "useFragment")
+  @js.native
   def useFragment_TKey_KeyTypeWildcard_KeyTypeData[TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): KeyTypeData[TKey, _] = js.native
   
+  @JSImport("react-relay/hooks", "useLazyLoadQuery")
+  @js.native
   def useLazyLoadQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: VariablesOf[TQuery]): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  @JSImport("react-relay/hooks", "useLazyLoadQuery")
+  @js.native
   def useLazyLoadQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: VariablesOf[TQuery], options: FetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   
+  @JSImport("react-relay/hooks", "useMutation")
+  @js.native
   def useMutation[TMutation /* <: MutationParameters */](mutation: GraphQLTaggedNode): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = js.native
+  @JSImport("react-relay/hooks", "useMutation")
+  @js.native
   def useMutation[TMutation /* <: MutationParameters */](
     mutation: GraphQLTaggedNode,
     commitMutationFn: js.Function2[/* environment */ Environment, /* config */ MutationConfig[TMutation], Disposable]
   ): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = js.native
   
+  @JSImport("react-relay/hooks", "usePaginationFragment")
+  @js.native
   def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
   ReturnType[TQuery, TKey | Null, (KeyTypeData[TKey, _]) | Null] = js.native
+  @JSImport("react-relay/hooks", "usePaginationFragment")
+  @js.native
   def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
   ReturnType[TQuery, TKey | Null, (KeyTypeData[TKey, _]) | Null] = js.native
   
+  @JSImport("react-relay/hooks", "usePreloadedQuery")
+  @js.native
   def usePreloadedQuery[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
     preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, _]]]
   ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  @JSImport("react-relay/hooks", "usePreloadedQuery")
+  @js.native
   def usePreloadedQuery[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
     preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, _]]],
     options: UNSTABLErenderPolicy
   ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   
+  @JSImport("react-relay/hooks", "useQueryLoader")
+  @js.native
   def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: PreloadableConcreteRequest[TQuery]): useQueryLoaderHookType[TQuery] = js.native
+  @JSImport("react-relay/hooks", "useQueryLoader")
+  @js.native
   def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: GraphQLTaggedNode): useQueryLoaderHookType[TQuery] = js.native
   
+  @JSImport("react-relay/hooks", "useRefetchableFragment")
+  @js.native
   def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
   typings.reactRelay.useRefetchableFragmentMod.ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
+  @JSImport("react-relay/hooks", "useRefetchableFragment")
+  @js.native
   def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: KeyType[_] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
   typings.reactRelay.useRefetchableFragmentMod.ReturnTypeNode[TQuery, TKey, (KeyTypeData[TKey, _]) | Null] = js.native
   
+  @JSImport("react-relay/hooks", "useRelayEnvironment")
+  @js.native
   def useRelayEnvironment(): typings.relayRuntime.mod.Environment = js.native
   
+  @JSImport("react-relay/hooks", "useSubscribeToInvalidationState")
+  @js.native
   def useSubscribeToInvalidationState(dataIDs: js.Array[DataID], callback: js.Function0[Unit]): Disposable = js.native
   
+  @JSImport("react-relay/hooks", "useSubscription")
+  @js.native
   def useSubscription[TSubscriptionPayload /* <: OperationType */](
     // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
   // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscriptionPayload]
   ): Unit = js.native
+  @JSImport("react-relay/hooks", "useSubscription")
+  @js.native
   def useSubscription[TSubscriptionPayload /* <: OperationType */](
     // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
   // tslint:disable-next-line no-unnecessary-generics

@@ -1,12 +1,13 @@
 package typings.libp2pGossipsub.anon
 
 import typings.libp2pGossipsub.interfacesMod.DuplexIterableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stream extends js.Object {
+trait Stream extends StObject {
   
   var protocol: String = js.native
   
@@ -21,24 +22,12 @@ object Stream {
   }
   
   @scala.inline
-  implicit class StreamOps[Self <: Stream] (val x: Self) extends AnyVal {
+  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStream(value: DuplexIterableStream[_, _, _]): Self = this.set("stream", value.asInstanceOf[js.Any])
+    def setStream(value: DuplexIterableStream[_, _, _]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.node.anon
 
 import typings.node.NodeJS.ErrnoException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofresolveNs extends js.Object {
+trait TypeofresolveNs extends StObject {
   
   def apply(
     hostname: String,

@@ -2,6 +2,7 @@ package typings.activexWia.WIA
 
 import typings.std.SafeArray
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * created using "WIA.Vector" in a call to CreateObject.
   */
 @js.native
-trait Vector[TItem] extends js.Object {
+trait Vector[TItem] extends StObject {
   
   /** Returns the specified item in the vector by position */
   def apply(Index: Double): TItem = js.native

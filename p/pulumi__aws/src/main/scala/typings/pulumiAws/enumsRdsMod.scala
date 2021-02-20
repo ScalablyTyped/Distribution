@@ -68,13 +68,12 @@ import typings.pulumiAws.pulumiAwsStrings.parallelquery
 import typings.pulumiAws.pulumiAwsStrings.provisioned
 import typings.pulumiAws.pulumiAwsStrings.serverless
 import typings.pulumiAws.pulumiAwsStrings.standard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/types/enums/rds", JSImport.Namespace)
-@js.native
-object enumsRdsMod extends js.Object {
+object enumsRdsMod {
   
   /* Inlined { readonly Provisioned :'provisioned',  readonly Serverless :'serverless',  readonly ParallelQuery :'parallelquery',  readonly Global :'global'}[keyof { readonly Provisioned :'provisioned',  readonly Serverless :'serverless',  readonly ParallelQuery :'parallelquery',  readonly Global :'global'}] */
   /* Rewritten from type alias, can be one of: 
@@ -83,16 +82,23 @@ object enumsRdsMod extends js.Object {
     - typings.pulumiAws.pulumiAwsStrings.parallelquery
     - typings.pulumiAws.pulumiAwsStrings.global
   */
-  trait EngineMode extends js.Object
-  @js.native
-  object EngineMode extends js.Object {
+  trait EngineMode extends StObject
+  object EngineMode {
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineMode.Global")
+    @js.native
     val Global: global = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineMode.ParallelQuery")
+    @js.native
     val ParallelQuery: parallelquery = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineMode.Provisioned")
+    @js.native
     val Provisioned: provisioned = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineMode.Serverless")
+    @js.native
     val Serverless: serverless = js.native
   }
   
@@ -102,14 +108,19 @@ object enumsRdsMod extends js.Object {
     - typings.pulumiAws.pulumiAwsStrings.`aurora-mysql`
     - typings.pulumiAws.pulumiAwsStrings.`aurora-postgresql`
   */
-  trait EngineType extends js.Object
-  @js.native
-  object EngineType extends js.Object {
+  trait EngineType extends StObject
+  object EngineType {
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineType.Aurora")
+    @js.native
     val Aurora: aurora = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineType.AuroraMysql")
+    @js.native
     val AuroraMysql: `aurora-mysql` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "EngineType.AuroraPostgresql")
+    @js.native
     val AuroraPostgresql: `aurora-postgresql` = js.native
   }
   
@@ -174,127 +185,244 @@ object enumsRdsMod extends js.Object {
     - typings.pulumiAws.pulumiAwsStrings.dbDotm4Dotlarge
     - typings.pulumiAws.pulumiAwsStrings.dbDotm5Dot24xlarge
   */
-  trait InstanceType extends js.Object
-  @js.native
-  object InstanceType extends js.Object {
+  trait InstanceType extends StObject
+  object InstanceType {
     
-    val M1_Large: dbDotm1Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M1_Large")
+    @js.native
+    val M1Large: dbDotm1Dotlarge = js.native
     
-    val M1_Medium: dbDotm1Dotmedium = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M1_Medium")
+    @js.native
+    val M1Medium: dbDotm1Dotmedium = js.native
     
-    val M1_Small: dbDotm1Dotsmall = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M1_Small")
+    @js.native
+    val M1Small: dbDotm1Dotsmall = js.native
     
-    val M1_XLarge: dbDotm1Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M1_XLarge")
+    @js.native
+    val M1XLarge: dbDotm1Dotxlarge = js.native
     
-    val M2_2XLarge: dbDotm2Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M2_2XLarge")
+    @js.native
+    val M22XLarge: dbDotm2Dot2xlarge = js.native
     
-    val M2_4XLarge: dbDotm2Dot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M2_4XLarge")
+    @js.native
+    val M24XLarge: dbDotm2Dot4xlarge = js.native
     
-    val M2_XLarge: dbDotm2Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M2_XLarge")
+    @js.native
+    val M2XLarge: dbDotm2Dotxlarge = js.native
     
-    val M3_2XLarge: dbDotm3Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M3_2XLarge")
+    @js.native
+    val M32XLarge: dbDotm3Dot2xlarge = js.native
     
-    val M3_Large: dbDotm3Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M3_Large")
+    @js.native
+    val M3Large: dbDotm3Dotlarge = js.native
     
-    val M3_Medium: dbDotm3Dotmedium = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M3_Medium")
+    @js.native
+    val M3Medium: dbDotm3Dotmedium = js.native
     
-    val M3_XLarge: dbDotm3Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M3_XLarge")
+    @js.native
+    val M3XLarge: dbDotm3Dotxlarge = js.native
     
-    val M4_10XLarge: dbDotm4Dot10xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M4_10XLarge")
+    @js.native
+    val M410XLarge: dbDotm4Dot10xlarge = js.native
     
-    val M4_16XLarge: dbDotm4Dot10xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M4_16XLarge")
+    @js.native
+    val M416XLarge: dbDotm4Dot10xlarge = js.native
     
-    val M4_2XLarge: dbDotm4Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M4_2XLarge")
+    @js.native
+    val M42XLarge: dbDotm4Dot2xlarge = js.native
     
-    val M4_4XLarge: dbDotm4Dot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M4_4XLarge")
+    @js.native
+    val M44XLarge: dbDotm4Dot4xlarge = js.native
     
-    val M4_Large: dbDotm4Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M4_Large")
+    @js.native
+    val M4Large: dbDotm4Dotlarge = js.native
     
-    val M4_XLarge: dbDotm4Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M4_XLarge")
+    @js.native
+    val M4XLarge: dbDotm4Dotxlarge = js.native
     
-    val M5_12XLarge: dbDotm5Dot12xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M5_12XLarge")
+    @js.native
+    val M512XLarge: dbDotm5Dot12xlarge = js.native
     
-    val M5_24XLarge: dbDotm5Dot24xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M5_24XLarge")
+    @js.native
+    val M524XLarge: dbDotm5Dot24xlarge = js.native
     
-    val M5_2XLarge: dbDotm5Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M5_2XLarge")
+    @js.native
+    val M52XLarge: dbDotm5Dot2xlarge = js.native
     
-    val M5_4XLarge: dbDotm5Dot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M5_4XLarge")
+    @js.native
+    val M54XLarge: dbDotm5Dot4xlarge = js.native
     
-    val M5_Large: dbDotm5Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M5_Large")
+    @js.native
+    val M5Large: dbDotm5Dotlarge = js.native
     
-    val M5_XLarge: dbDotm5Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.M5_XLarge")
+    @js.native
+    val M5XLarge: dbDotm5Dotxlarge = js.native
     
-    val R3_2XLarge: dbDotr3Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R3_2XLarge")
+    @js.native
+    val R32XLarge: dbDotr3Dot2xlarge = js.native
     
-    val R3_4XLarge: dbDotr3Dot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R3_4XLarge")
+    @js.native
+    val R34XLarge: dbDotr3Dot4xlarge = js.native
     
-    val R3_8XLarge: dbDotr3Dot8xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R3_8XLarge")
+    @js.native
+    val R38XLarge: dbDotr3Dot8xlarge = js.native
     
-    val R3_Large: dbDotr3Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R3_Large")
+    @js.native
+    val R3Large: dbDotr3Dotlarge = js.native
     
-    val R3_XLarge: dbDotr3Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R3_XLarge")
+    @js.native
+    val R3XLarge: dbDotr3Dotxlarge = js.native
     
-    val R4_16XLarge: dbDotr4Dot16xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R4_16XLarge")
+    @js.native
+    val R416XLarge: dbDotr4Dot16xlarge = js.native
     
-    val R4_2XLarge: dbDotr4Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R4_2XLarge")
+    @js.native
+    val R42XLarge: dbDotr4Dot2xlarge = js.native
     
-    val R4_4XLarge: dbDotr4Dot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R4_4XLarge")
+    @js.native
+    val R44XLarge: dbDotr4Dot4xlarge = js.native
     
-    val R4_8XLarge: dbDotr4Dot8xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R4_8XLarge")
+    @js.native
+    val R48XLarge: dbDotr4Dot8xlarge = js.native
     
-    val R4_Large: dbDotr4Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R4_Large")
+    @js.native
+    val R4Large: dbDotr4Dotlarge = js.native
     
-    val R4_XLarge: dbDotr4Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R4_XLarge")
+    @js.native
+    val R4XLarge: dbDotr4Dotxlarge = js.native
     
-    val R5_12XLarge: dbDotr5Dot12xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R5_12XLarge")
+    @js.native
+    val R512XLarge: dbDotr5Dot12xlarge = js.native
     
-    val R5_24XLarge: dbDotr5Dot24xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R5_24XLarge")
+    @js.native
+    val R524XLarge: dbDotr5Dot24xlarge = js.native
     
-    val R5_2XLarge: dbDotr5Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R5_2XLarge")
+    @js.native
+    val R52XLarge: dbDotr5Dot2xlarge = js.native
     
-    val R5_4XLarge: dbDotr5Dot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R5_4XLarge")
+    @js.native
+    val R54XLarge: dbDotr5Dot4xlarge = js.native
     
-    val R5_Large: dbDotr5Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R5_Large")
+    @js.native
+    val R5Large: dbDotr5Dotlarge = js.native
     
-    val R5_XLarge: dbDotr5Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.R5_XLarge")
+    @js.native
+    val R5XLarge: dbDotr5Dotxlarge = js.native
     
-    val T2_2XLarge: dbDott2Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T2_2XLarge")
+    @js.native
+    val T22XLarge: dbDott2Dot2xlarge = js.native
     
-    val T2_Large: dbDott2Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T2_Large")
+    @js.native
+    val T2Large: dbDott2Dotlarge = js.native
     
-    val T2_Medium: dbDott2Dotmedium = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T2_Medium")
+    @js.native
+    val T2Medium: dbDott2Dotmedium = js.native
     
-    val T2_Micro: dbDott2Dotmicro = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T2_Micro")
+    @js.native
+    val T2Micro: dbDott2Dotmicro = js.native
     
-    val T2_Small: dbDott2Dotsmall = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T2_Small")
+    @js.native
+    val T2Small: dbDott2Dotsmall = js.native
     
-    val T2_XLarge: dbDott2Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T2_XLarge")
+    @js.native
+    val T2XLarge: dbDott2Dotxlarge = js.native
     
-    val T3_2XLarge: dbDott3Dot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T3_2XLarge")
+    @js.native
+    val T32XLarge: dbDott3Dot2xlarge = js.native
     
-    val T3_Large: dbDott3Dotlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T3_Large")
+    @js.native
+    val T3Large: dbDott3Dotlarge = js.native
     
-    val T3_Medium: dbDott3Dotmedium = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T3_Medium")
+    @js.native
+    val T3Medium: dbDott3Dotmedium = js.native
     
-    val T3_Micro: dbDott3Dotmicro = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T3_Micro")
+    @js.native
+    val T3Micro: dbDott3Dotmicro = js.native
     
-    val T3_Small: dbDott3Dotsmall = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T3_Small")
+    @js.native
+    val T3Small: dbDott3Dotsmall = js.native
     
-    val T3_XLarge: dbDott3Dotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.T3_XLarge")
+    @js.native
+    val T3XLarge: dbDott3Dotxlarge = js.native
     
-    val X1E_2XLarge: dbDotx1eDot2xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1_16XLarge")
+    @js.native
+    val X116XLarge: dbDotx1Dot16xlarge = js.native
     
-    val X1E_32XLarge: dbDotx1eDot32xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1_32XLarge")
+    @js.native
+    val X132XLarge: dbDotx1Dot32xlarge = js.native
     
-    val X1E_4XLarge: dbDotx1eDot4xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1E_2XLarge")
+    @js.native
+    val X1E2XLarge: dbDotx1eDot2xlarge = js.native
     
-    val X1E_8XLarge: dbDotx1eDot8xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1E_32XLarge")
+    @js.native
+    val X1E32XLarge: dbDotx1eDot32xlarge = js.native
     
-    val X1E_XLarge: dbDotx1eDotxlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1E_4XLarge")
+    @js.native
+    val X1E4XLarge: dbDotx1eDot4xlarge = js.native
     
-    val X1_16XLarge: dbDotx1Dot16xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1E_8XLarge")
+    @js.native
+    val X1E8XLarge: dbDotx1eDot8xlarge = js.native
     
-    val X1_32XLarge: dbDotx1Dot32xlarge = js.native
+    @JSImport("@pulumi/aws/types/enums/rds", "InstanceType.X1E_XLarge")
+    @js.native
+    val X1EXLarge: dbDotx1eDotxlarge = js.native
   }
   
   /* Inlined { readonly Standard :'standard',  readonly GP2 :'gp2',  readonly IO1 :'io1'}[keyof { readonly Standard :'standard',  readonly GP2 :'gp2',  readonly IO1 :'io1'}] */
@@ -303,14 +431,19 @@ object enumsRdsMod extends js.Object {
     - typings.pulumiAws.pulumiAwsStrings.gp2
     - typings.pulumiAws.pulumiAwsStrings.io1
   */
-  trait StorageType extends js.Object
-  @js.native
-  object StorageType extends js.Object {
+  trait StorageType extends StObject
+  object StorageType {
     
+    @JSImport("@pulumi/aws/types/enums/rds", "StorageType.GP2")
+    @js.native
     val GP2: gp2 = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "StorageType.IO1")
+    @js.native
     val IO1: io1 = js.native
     
+    @JSImport("@pulumi/aws/types/enums/rds", "StorageType.Standard")
+    @js.native
     val Standard: standard = js.native
   }
 }

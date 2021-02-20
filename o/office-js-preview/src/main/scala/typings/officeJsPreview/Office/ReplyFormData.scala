@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
   */
 @js.native
-trait ReplyFormData extends js.Object {
+trait ReplyFormData extends StObject {
   
   /**
     * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
@@ -41,45 +42,33 @@ object ReplyFormData {
   }
   
   @scala.inline
-  implicit class ReplyFormDataOps[Self <: ReplyFormData] (val x: Self) extends AnyVal {
+  implicit class ReplyFormDataMutableBuilder[Self <: ReplyFormData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: js.Array[ReplyFormAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: ReplyFormAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: ReplyFormAttachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setCallback(value: /* asyncResult */ AsyncResult[_] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttachments(value: js.Array[ReplyFormAttachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setHtmlBody(value: String): Self = StObject.set(x, "htmlBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* asyncResult */ AsyncResult[_] => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setHtmlBodyUndefined: Self = StObject.set(x, "htmlBody", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setOptions(value: AsyncContextOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlBody(value: String): Self = this.set("htmlBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlBody: Self = this.set("htmlBody", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: AsyncContextOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response containing the current state of the specified test matrix.
   */
 @js.native
-trait SchemaCancelTestMatrixResponse extends js.Object {
+trait SchemaCancelTestMatrixResponse extends StObject {
   
   /**
     * The current rolled-up state of the test matrix. If this state is already
@@ -25,24 +26,12 @@ object SchemaCancelTestMatrixResponse {
   }
   
   @scala.inline
-  implicit class SchemaCancelTestMatrixResponseOps[Self <: SchemaCancelTestMatrixResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCancelTestMatrixResponseMutableBuilder[Self <: SchemaCancelTestMatrixResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTestState(value: String): Self = this.set("testState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestState: Self = this.set("testState", js.undefined)
+    def setTestStateUndefined: Self = StObject.set(x, "testState", js.undefined)
   }
 }

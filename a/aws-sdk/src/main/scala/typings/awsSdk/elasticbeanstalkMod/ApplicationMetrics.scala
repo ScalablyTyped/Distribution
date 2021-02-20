@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationMetrics extends js.Object {
+trait ApplicationMetrics extends StObject {
   
   /**
     * The amount of time that the metrics cover (usually 10 seconds). For example, you might have 5 requests (request_count) within the most recent time slice of 10 seconds (duration).
@@ -36,42 +37,30 @@ object ApplicationMetrics {
   }
   
   @scala.inline
-  implicit class ApplicationMetricsOps[Self <: ApplicationMetrics] (val x: Self) extends AnyVal {
+  implicit class ApplicationMetricsMutableBuilder[Self <: ApplicationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: NullableInteger): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatency(value: Latency): Self = StObject.set(x, "Latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: NullableInteger): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setLatencyUndefined: Self = StObject.set(x, "Latency", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setRequestCount(value: RequestCount): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Latency): Self = this.set("Latency", value.asInstanceOf[js.Any])
+    def setRequestCountUndefined: Self = StObject.set(x, "RequestCount", js.undefined)
     
     @scala.inline
-    def deleteLatency: Self = this.set("Latency", js.undefined)
+    def setStatusCodes(value: StatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCount(value: RequestCount): Self = this.set("RequestCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestCount: Self = this.set("RequestCount", js.undefined)
-    
-    @scala.inline
-    def setStatusCodes(value: StatusCodes): Self = this.set("StatusCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCodes: Self = this.set("StatusCodes", js.undefined)
+    def setStatusCodesUndefined: Self = StObject.set(x, "StatusCodes", js.undefined)
   }
 }

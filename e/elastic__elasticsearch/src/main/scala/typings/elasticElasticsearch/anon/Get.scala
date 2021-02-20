@@ -8,12 +8,13 @@ import typings.elasticElasticsearch.transportMod.RequestBody
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
 import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Get extends js.Object {
+trait Get extends StObject {
   
   def delete[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def delete[TResponse, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native

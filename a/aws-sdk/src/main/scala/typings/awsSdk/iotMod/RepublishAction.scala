@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepublishAction extends js.Object {
+trait RepublishAction extends StObject {
   
   /**
     * The Quality of Service (QoS) level to use when republishing messages. The default value is 0.
@@ -31,30 +32,18 @@ object RepublishAction {
   }
   
   @scala.inline
-  implicit class RepublishActionOps[Self <: RepublishAction] (val x: Self) extends AnyVal {
+  implicit class RepublishActionMutableBuilder[Self <: RepublishAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQos(value: Qos): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: TopicPattern): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQos(value: Qos): Self = this.set("qos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQos: Self = this.set("qos", js.undefined)
+    def setTopic(value: TopicPattern): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

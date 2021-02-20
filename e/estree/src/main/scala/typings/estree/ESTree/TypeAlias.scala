@@ -1,12 +1,13 @@
 package typings.estree.ESTree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration * / any */ @js.native
-trait TypeAlias extends js.Object {
+trait TypeAlias extends StObject {
   
   var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any = js.native
   
@@ -26,35 +27,23 @@ object TypeAlias {
   }
   
   @scala.inline
-  implicit class TypeAliasOps[Self <: TypeAlias] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TypeAliasMutableBuilder[Self <: TypeAlias] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
-    ): Self = this.set("id", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: FlowTypeAnnotation): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setRight(value: FlowTypeAnnotation): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
+    def setTypeParameters(value: TypeParameterDeclaration): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
+    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
     @scala.inline
-    def setTypeParametersNull: Self = this.set("typeParameters", null)
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

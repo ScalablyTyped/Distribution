@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SliderClasses extends js.Object {
+trait SliderClasses extends StObject {
   
   var `ui-slider`: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object SliderClasses {
   }
   
   @scala.inline
-  implicit class SliderClassesOps[Self <: SliderClasses] (val x: Self) extends AnyVal {
+  implicit class SliderClassesMutableBuilder[Self <: SliderClasses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setUi-slider`(value: String): Self = StObject.set(x, "ui-slider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setUi-slider-handle`(value: String): Self = StObject.set(x, "ui-slider-handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setUi-slider-handleUndefined`: Self = StObject.set(x, "ui-slider-handle", js.undefined)
     
     @scala.inline
-    def `setUi-slider`(value: String): Self = this.set("ui-slider", value.asInstanceOf[js.Any])
+    def `setUi-slider-horizontal`(value: String): Self = StObject.set(x, "ui-slider-horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-slider`: Self = this.set("ui-slider", js.undefined)
+    def `setUi-slider-horizontalUndefined`: Self = StObject.set(x, "ui-slider-horizontal", js.undefined)
     
     @scala.inline
-    def `setUi-slider-handle`(value: String): Self = this.set("ui-slider-handle", value.asInstanceOf[js.Any])
+    def `setUi-slider-range`(value: String): Self = StObject.set(x, "ui-slider-range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-slider-handle`: Self = this.set("ui-slider-handle", js.undefined)
+    def `setUi-slider-range-max`(value: String): Self = StObject.set(x, "ui-slider-range-max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUi-slider-horizontal`(value: String): Self = this.set("ui-slider-horizontal", value.asInstanceOf[js.Any])
+    def `setUi-slider-range-maxUndefined`: Self = StObject.set(x, "ui-slider-range-max", js.undefined)
     
     @scala.inline
-    def `deleteUi-slider-horizontal`: Self = this.set("ui-slider-horizontal", js.undefined)
+    def `setUi-slider-range-min`(value: String): Self = StObject.set(x, "ui-slider-range-min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUi-slider-range`(value: String): Self = this.set("ui-slider-range", value.asInstanceOf[js.Any])
+    def `setUi-slider-range-minUndefined`: Self = StObject.set(x, "ui-slider-range-min", js.undefined)
     
     @scala.inline
-    def `deleteUi-slider-range`: Self = this.set("ui-slider-range", js.undefined)
+    def `setUi-slider-rangeUndefined`: Self = StObject.set(x, "ui-slider-range", js.undefined)
     
     @scala.inline
-    def `setUi-slider-range-max`(value: String): Self = this.set("ui-slider-range-max", value.asInstanceOf[js.Any])
+    def `setUi-slider-vertical`(value: String): Self = StObject.set(x, "ui-slider-vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-slider-range-max`: Self = this.set("ui-slider-range-max", js.undefined)
+    def `setUi-slider-verticalUndefined`: Self = StObject.set(x, "ui-slider-vertical", js.undefined)
     
     @scala.inline
-    def `setUi-slider-range-min`(value: String): Self = this.set("ui-slider-range-min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-slider-range-min`: Self = this.set("ui-slider-range-min", js.undefined)
-    
-    @scala.inline
-    def `setUi-slider-vertical`(value: String): Self = this.set("ui-slider-vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-slider-vertical`: Self = this.set("ui-slider-vertical", js.undefined)
+    def `setUi-sliderUndefined`: Self = StObject.set(x, "ui-slider", js.undefined)
   }
 }

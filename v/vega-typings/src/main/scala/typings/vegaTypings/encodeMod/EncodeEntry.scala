@@ -5,6 +5,7 @@ import typings.vegaTypings.anon.Test
 import typings.vegaTypings.configMod.Cursor
 import typings.vegaTypings.configMod.StrokeCap
 import typings.vegaTypings.configMod.StrokeJoin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,261 +95,249 @@ object EncodeEntry {
   }
   
   @scala.inline
-  implicit class EncodeEntryOps[Self <: EncodeEntry] (val x: Self) extends AnyVal {
+  implicit class EncodeEntryMutableBuilder[Self <: EncodeEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAria(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaRole(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAriaRoleDescription(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaVarargs(value: (Test with BooleanValueRef)*): Self = this.set("aria", js.Array(value :_*))
+    def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
     
     @scala.inline
-    def setAria(value: ProductionRule[BooleanValueRef]): Self = this.set("aria", value.asInstanceOf[js.Any])
+    def setAriaRoleDescriptionVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "ariaRoleDescription", js.Array(value :_*))
     
     @scala.inline
-    def deleteAria: Self = this.set("aria", js.undefined)
+    def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
     
     @scala.inline
-    def setAriaRoleVarargs(value: (Test with StringValueRef)*): Self = this.set("ariaRole", js.Array(value :_*))
+    def setAriaRoleVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "ariaRole", js.Array(value :_*))
     
     @scala.inline
-    def setAriaRole(value: ProductionRule[StringValueRef]): Self = this.set("ariaRole", value.asInstanceOf[js.Any])
+    def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     
     @scala.inline
-    def deleteAriaRole: Self = this.set("ariaRole", js.undefined)
+    def setAriaVarargs(value: (Test with BooleanValueRef)*): Self = StObject.set(x, "aria", js.Array(value :_*))
     
     @scala.inline
-    def setAriaRoleDescriptionVarargs(value: (Test with StringValueRef)*): Self = this.set("ariaRoleDescription", js.Array(value :_*))
+    def setBlend(value: ProductionRule[ScaledValueRef[Blend]]): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaRoleDescription(value: ProductionRule[StringValueRef]): Self = this.set("ariaRoleDescription", value.asInstanceOf[js.Any])
+    def setBlendUndefined: Self = StObject.set(x, "blend", js.undefined)
     
     @scala.inline
-    def deleteAriaRoleDescription: Self = this.set("ariaRoleDescription", js.undefined)
+    def setBlendVarargs(value: (Test with ScaledValueRef[Blend])*): Self = StObject.set(x, "blend", js.Array(value :_*))
     
     @scala.inline
-    def setBlendVarargs(value: (Test with ScaledValueRef[Blend])*): Self = this.set("blend", js.Array(value :_*))
+    def setCursor(value: ProductionRule[ScaledValueRef[Cursor]]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlend(value: ProductionRule[ScaledValueRef[Blend]]): Self = this.set("blend", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteBlend: Self = this.set("blend", js.undefined)
+    def setCursorVarargs(value: (Test with ScaledValueRef[Cursor])*): Self = StObject.set(x, "cursor", js.Array(value :_*))
     
     @scala.inline
-    def setCursorVarargs(value: (Test with ScaledValueRef[Cursor])*): Self = this.set("cursor", js.Array(value :_*))
+    def setDescription(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: ProductionRule[ScaledValueRef[Cursor]]): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setDescriptionVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "description", js.Array(value :_*))
     
     @scala.inline
-    def setDescriptionVarargs(value: (Test with StringValueRef)*): Self = this.set("description", js.Array(value :_*))
+    def setFill(value: ProductionRule[ColorValueRef]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ProductionRule[StringValueRef]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFillOpacity(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def setFillVarargs(value: (Test with ColorValueRef)*): Self = this.set("fill", js.Array(value :_*))
+    def setFillOpacityVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "fillOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setFill(value: ProductionRule[ColorValueRef]): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillVarargs(value: (Test with ColorValueRef)*): Self = StObject.set(x, "fill", js.Array(value :_*))
     
     @scala.inline
-    def setFillOpacityVarargs(value: (Test with NumericValueRef)*): Self = this.set("fillOpacity", js.Array(value :_*))
+    def setHeight(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: ProductionRule[NumericValueRef]): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setHeightVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "height", js.Array(value :_*))
     
     @scala.inline
-    def setHeightVarargs(value: (Test with NumericValueRef)*): Self = this.set("height", js.Array(value :_*))
+    def setOpacity(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: ProductionRule[NumericValueRef]): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOpacityVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "opacity", js.Array(value :_*))
     
     @scala.inline
-    def setOpacityVarargs(value: (Test with NumericValueRef)*): Self = this.set("opacity", js.Array(value :_*))
+    def setStroke(value: ProductionRule[ColorValueRef]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: ProductionRule[NumericValueRef]): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setStrokeCap(value: ProductionRule[ScaledValueRef[StrokeCap]]): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
     
     @scala.inline
-    def setStrokeVarargs(value: (Test with ColorValueRef)*): Self = this.set("stroke", js.Array(value :_*))
+    def setStrokeCapVarargs(value: (Test with ScaledValueRef[StrokeCap])*): Self = StObject.set(x, "strokeCap", js.Array(value :_*))
     
     @scala.inline
-    def setStroke(value: ProductionRule[ColorValueRef]): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStrokeDash(value: ProductionRule[ScaledValueRef[js.Array[Double]]]): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeDashOffset(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeCapVarargs(value: (Test with ScaledValueRef[StrokeCap])*): Self = this.set("strokeCap", js.Array(value :_*))
+    def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
     
     @scala.inline
-    def setStrokeCap(value: ProductionRule[ScaledValueRef[StrokeCap]]): Self = this.set("strokeCap", value.asInstanceOf[js.Any])
+    def setStrokeDashOffsetVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "strokeDashOffset", js.Array(value :_*))
     
     @scala.inline
-    def deleteStrokeCap: Self = this.set("strokeCap", js.undefined)
+    def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
     @scala.inline
-    def setStrokeDashVarargs(value: (Test with ScaledValueRef[js.Array[Double]])*): Self = this.set("strokeDash", js.Array(value :_*))
+    def setStrokeDashVarargs(value: (Test with ScaledValueRef[js.Array[Double]])*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeDash(value: ProductionRule[ScaledValueRef[js.Array[Double]]]): Self = this.set("strokeDash", value.asInstanceOf[js.Any])
+    def setStrokeJoin(value: ProductionRule[ScaledValueRef[StrokeJoin]]): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDash: Self = this.set("strokeDash", js.undefined)
+    def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
     
     @scala.inline
-    def setStrokeDashOffsetVarargs(value: (Test with NumericValueRef)*): Self = this.set("strokeDashOffset", js.Array(value :_*))
+    def setStrokeJoinVarargs(value: (Test with ScaledValueRef[StrokeJoin])*): Self = StObject.set(x, "strokeJoin", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeDashOffset(value: ProductionRule[NumericValueRef]): Self = this.set("strokeDashOffset", value.asInstanceOf[js.Any])
+    def setStrokeMiterLimit(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeDashOffset: Self = this.set("strokeDashOffset", js.undefined)
+    def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
     
     @scala.inline
-    def setStrokeJoinVarargs(value: (Test with ScaledValueRef[StrokeJoin])*): Self = this.set("strokeJoin", js.Array(value :_*))
+    def setStrokeMiterLimitVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "strokeMiterLimit", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeJoin(value: ProductionRule[ScaledValueRef[StrokeJoin]]): Self = this.set("strokeJoin", value.asInstanceOf[js.Any])
+    def setStrokeOpacity(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeJoin: Self = this.set("strokeJoin", js.undefined)
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def setStrokeMiterLimitVarargs(value: (Test with NumericValueRef)*): Self = this.set("strokeMiterLimit", js.Array(value :_*))
+    def setStrokeOpacityVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeMiterLimit(value: ProductionRule[NumericValueRef]): Self = this.set("strokeMiterLimit", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteStrokeMiterLimit: Self = this.set("strokeMiterLimit", js.undefined)
+    def setStrokeVarargs(value: (Test with ColorValueRef)*): Self = StObject.set(x, "stroke", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeOpacityVarargs(value: (Test with NumericValueRef)*): Self = this.set("strokeOpacity", js.Array(value :_*))
+    def setStrokeWidth(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeOpacity(value: ProductionRule[NumericValueRef]): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    def setStrokeWidthVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeWidthVarargs(value: (Test with NumericValueRef)*): Self = this.set("strokeWidth", js.Array(value :_*))
+    def setTooltip(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: ProductionRule[NumericValueRef]): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setTooltipVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "tooltip", js.Array(value :_*))
     
     @scala.inline
-    def setTooltipVarargs(value: (Test with StringValueRef)*): Self = this.set("tooltip", js.Array(value :_*))
+    def setWidth(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: ProductionRule[StringValueRef]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setWidthVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "width", js.Array(value :_*))
     
     @scala.inline
-    def setWidthVarargs(value: (Test with NumericValueRef)*): Self = this.set("width", js.Array(value :_*))
+    def setX(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: ProductionRule[NumericValueRef]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setX2(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
     @scala.inline
-    def setXVarargs(value: (Test with NumericValueRef)*): Self = this.set("x", js.Array(value :_*))
+    def setX2Varargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "x2", js.Array(value :_*))
     
     @scala.inline
-    def setX(value: ProductionRule[NumericValueRef]): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "x", js.Array(value :_*))
     
     @scala.inline
-    def setX2Varargs(value: (Test with NumericValueRef)*): Self = this.set("x2", js.Array(value :_*))
+    def setXc(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "xc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: ProductionRule[NumericValueRef]): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setXcUndefined: Self = StObject.set(x, "xc", js.undefined)
     
     @scala.inline
-    def deleteX2: Self = this.set("x2", js.undefined)
+    def setXcVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "xc", js.Array(value :_*))
     
     @scala.inline
-    def setXcVarargs(value: (Test with NumericValueRef)*): Self = this.set("xc", js.Array(value :_*))
+    def setY(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXc(value: ProductionRule[NumericValueRef]): Self = this.set("xc", value.asInstanceOf[js.Any])
+    def setY2(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteXc: Self = this.set("xc", js.undefined)
+    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     
     @scala.inline
-    def setYVarargs(value: (Test with NumericValueRef)*): Self = this.set("y", js.Array(value :_*))
+    def setY2Varargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "y2", js.Array(value :_*))
     
     @scala.inline
-    def setY(value: ProductionRule[NumericValueRef]): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "y", js.Array(value :_*))
     
     @scala.inline
-    def setY2Varargs(value: (Test with NumericValueRef)*): Self = this.set("y2", js.Array(value :_*))
+    def setYc(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "yc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY2(value: ProductionRule[NumericValueRef]): Self = this.set("y2", value.asInstanceOf[js.Any])
+    def setYcUndefined: Self = StObject.set(x, "yc", js.undefined)
     
     @scala.inline
-    def deleteY2: Self = this.set("y2", js.undefined)
+    def setYcVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "yc", js.Array(value :_*))
     
     @scala.inline
-    def setYcVarargs(value: (Test with NumericValueRef)*): Self = this.set("yc", js.Array(value :_*))
+    def setZindex(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYc(value: ProductionRule[NumericValueRef]): Self = this.set("yc", value.asInstanceOf[js.Any])
+    def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     
     @scala.inline
-    def deleteYc: Self = this.set("yc", js.undefined)
-    
-    @scala.inline
-    def setZindexVarargs(value: (Test with NumericValueRef)*): Self = this.set("zindex", js.Array(value :_*))
-    
-    @scala.inline
-    def setZindex(value: ProductionRule[NumericValueRef]): Self = this.set("zindex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZindex: Self = this.set("zindex", js.undefined)
+    def setZindexVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "zindex", js.Array(value :_*))
   }
 }

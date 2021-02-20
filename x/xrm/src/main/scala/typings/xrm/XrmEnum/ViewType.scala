@@ -2,6 +2,7 @@ package typings.xrm.XrmEnum
 
 import typings.xrm.xrmNumbers.`1039`
 import typings.xrm.xrmNumbers.`4230`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmNumbers.`1039`
   - typings.xrm.xrmNumbers.`4230`
 */
-trait ViewType extends js.Object
+trait ViewType extends StObject
 object ViewType {
   
   @scala.inline

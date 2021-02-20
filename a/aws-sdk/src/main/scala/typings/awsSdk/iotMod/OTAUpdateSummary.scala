@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OTAUpdateSummary extends js.Object {
+trait OTAUpdateSummary extends StObject {
   
   /**
     * The date when the OTA update was created.
@@ -31,36 +32,24 @@ object OTAUpdateSummary {
   }
   
   @scala.inline
-  implicit class OTAUpdateSummaryOps[Self <: OTAUpdateSummary] (val x: Self) extends AnyVal {
+  implicit class OTAUpdateSummaryMutableBuilder[Self <: OTAUpdateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOtaUpdateArn(value: OTAUpdateArn): Self = StObject.set(x, "otaUpdateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setOtaUpdateArnUndefined: Self = StObject.set(x, "otaUpdateArn", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaUpdateArn(value: OTAUpdateArn): Self = this.set("otaUpdateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtaUpdateArn: Self = this.set("otaUpdateArn", js.undefined)
-    
-    @scala.inline
-    def setOtaUpdateId(value: OTAUpdateId): Self = this.set("otaUpdateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtaUpdateId: Self = this.set("otaUpdateId", js.undefined)
+    def setOtaUpdateIdUndefined: Self = StObject.set(x, "otaUpdateId", js.undefined)
   }
 }

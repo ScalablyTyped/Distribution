@@ -1,12 +1,13 @@
 package typings.httperr.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpErr extends js.Object {
+trait HttpErr extends StObject {
   
   /**
     *  Creates an Error object. The new keyword is optional.

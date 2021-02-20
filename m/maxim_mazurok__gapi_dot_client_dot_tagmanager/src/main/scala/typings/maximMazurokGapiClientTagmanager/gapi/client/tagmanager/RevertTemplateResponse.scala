@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevertTemplateResponse extends js.Object {
+trait RevertTemplateResponse extends StObject {
   
   /**
     * Template as it appears in the latest container version since the last workspace synchronization operation. If no template is present, that means the template was deleted in the
@@ -22,24 +23,12 @@ object RevertTemplateResponse {
   }
   
   @scala.inline
-  implicit class RevertTemplateResponseOps[Self <: RevertTemplateResponse] (val x: Self) extends AnyVal {
+  implicit class RevertTemplateResponseMutableBuilder[Self <: RevertTemplateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTemplate(value: CustomTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTemplate(value: CustomTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

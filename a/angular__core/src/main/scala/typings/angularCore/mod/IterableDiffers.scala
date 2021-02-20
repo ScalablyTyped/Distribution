@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "IterableDiffers")
 @js.native
-class IterableDiffers protected () extends js.Object {
+class IterableDiffers protected () extends StObject {
   def this(factories: js.Array[IterableDifferFactory]) = this()
   
   /**
@@ -17,11 +18,13 @@ class IterableDiffers protected () extends js.Object {
   def find(iterable: js.Any): IterableDifferFactory = js.native
 }
 /* static members */
-@JSImport("@angular/core", "IterableDiffers")
-@js.native
-object IterableDiffers extends js.Object {
+object IterableDiffers {
   
+  @JSImport("@angular/core", "IterableDiffers.create")
+  @js.native
   def create(factories: js.Array[IterableDifferFactory]): IterableDiffers = js.native
+  @JSImport("@angular/core", "IterableDiffers.create")
+  @js.native
   def create(factories: js.Array[IterableDifferFactory], parent: IterableDiffers): IterableDiffers = js.native
   
   /**
@@ -44,5 +47,7 @@ object IterableDiffers extends js.Object {
     * })
     * ```
     */
+  @JSImport("@angular/core", "IterableDiffers.extend")
+  @js.native
   def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = js.native
 }

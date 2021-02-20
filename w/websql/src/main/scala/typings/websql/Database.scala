@@ -1,5 +1,6 @@
 package typings.websql
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * postflight operation
   */
 @js.native
-trait Database extends js.Object {
+trait Database extends StObject {
   
   /** The changeVersion() method allows scripts to atomically verify the version number and change
     * it at the same time as doing a schema update. When the method is invoked, it must immediately

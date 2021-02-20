@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Globalization.NumberFormatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Rounds numbers to a specified increment. */
 @js.native
-trait IncrementNumberRounder extends js.Object {
+trait IncrementNumberRounder extends StObject {
   
   /** Gets or sets the increment this IncrementNumberRounder object uses for rounding. */
   var increment: Double = js.native
@@ -74,42 +75,30 @@ object IncrementNumberRounder {
   }
   
   @scala.inline
-  implicit class IncrementNumberRounderOps[Self <: IncrementNumberRounder] (val x: Self) extends AnyVal {
+  implicit class IncrementNumberRounderMutableBuilder[Self <: IncrementNumberRounder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoundDouble(value: Double => Double): Self = StObject.set(x, "roundDouble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoundInt32(value: Double => Double): Self = StObject.set(x, "roundInt32", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
+    def setRoundInt64(value: Double => Double): Self = StObject.set(x, "roundInt64", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundDouble(value: Double => Double): Self = this.set("roundDouble", js.Any.fromFunction1(value))
+    def setRoundSingle(value: Double => Double): Self = StObject.set(x, "roundSingle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundInt32(value: Double => Double): Self = this.set("roundInt32", js.Any.fromFunction1(value))
+    def setRoundUInt32(value: Double => Double): Self = StObject.set(x, "roundUInt32", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundInt64(value: Double => Double): Self = this.set("roundInt64", js.Any.fromFunction1(value))
+    def setRoundUInt64(value: Double => Double): Self = StObject.set(x, "roundUInt64", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundSingle(value: Double => Double): Self = this.set("roundSingle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoundUInt32(value: Double => Double): Self = this.set("roundUInt32", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoundUInt64(value: Double => Double): Self = this.set("roundUInt64", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoundingAlgorithm(value: RoundingAlgorithm): Self = this.set("roundingAlgorithm", value.asInstanceOf[js.Any])
+    def setRoundingAlgorithm(value: RoundingAlgorithm): Self = StObject.set(x, "roundingAlgorithm", value.asInstanceOf[js.Any])
   }
 }

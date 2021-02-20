@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,24 +38,12 @@ object XAutoStylesSupplier {
   }
   
   @scala.inline
-  implicit class XAutoStylesSupplierOps[Self <: XAutoStylesSupplier] (val x: Self) extends AnyVal {
+  implicit class XAutoStylesSupplierMutableBuilder[Self <: XAutoStylesSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoStyles(value: XAutoStyles): Self = StObject.set(x, "AutoStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoStyles(value: XAutoStyles): Self = this.set("AutoStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAutoStyles(value: () => XAutoStyles): Self = this.set("getAutoStyles", js.Any.fromFunction0(value))
+    def setGetAutoStyles(value: () => XAutoStyles): Self = StObject.set(x, "getAutoStyles", js.Any.fromFunction0(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.ipp.mod
 
 import typings.ipp.ippStrings.none
 import typings.ipp.ippStrings.standard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobAccontingSheets extends js.Object {
+trait JobAccontingSheets extends StObject {
   
   var `job-accounting-output-bin`: js.UndefOr[OutputBin] = js.native
   
@@ -26,42 +27,30 @@ object JobAccontingSheets {
   }
   
   @scala.inline
-  implicit class JobAccontingSheetsOps[Self <: JobAccontingSheets] (val x: Self) extends AnyVal {
+  implicit class JobAccontingSheetsMutableBuilder[Self <: JobAccontingSheets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setJob-accounting-output-bin`(value: OutputBin): Self = StObject.set(x, "job-accounting-output-bin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setJob-accounting-output-binUndefined`: Self = StObject.set(x, "job-accounting-output-bin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setJob-accounting-sheets-type`(value: none | standard): Self = StObject.set(x, "job-accounting-sheets-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-accounting-output-bin`(value: OutputBin): Self = this.set("job-accounting-output-bin", value.asInstanceOf[js.Any])
+    def `setJob-accounting-sheets-typeUndefined`: Self = StObject.set(x, "job-accounting-sheets-type", js.undefined)
     
     @scala.inline
-    def `deleteJob-accounting-output-bin`: Self = this.set("job-accounting-output-bin", js.undefined)
+    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-accounting-sheets-type`(value: none | standard): Self = this.set("job-accounting-sheets-type", value.asInstanceOf[js.Any])
+    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-accounting-sheets-type`: Self = this.set("job-accounting-sheets-type", js.undefined)
+    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
     @scala.inline
-    def setMedia(value: Media): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
-    
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = this.set("media-col", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMedia-col`: Self = this.set("media-col", js.undefined)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

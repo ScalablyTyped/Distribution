@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteTableColumnRequest extends js.Object {
+trait DeleteTableColumnRequest extends StObject {
   
   /**
     * The reference table cell location from which a column will be deleted. The column this cell spans will be deleted. If this is a merged cell, multiple columns will be deleted. If no
@@ -25,30 +26,18 @@ object DeleteTableColumnRequest {
   }
   
   @scala.inline
-  implicit class DeleteTableColumnRequestOps[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteTableColumnRequestMutableBuilder[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellLocation(value: TableCellLocation): Self = this.set("cellLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCellLocation: Self = this.set("cellLocation", js.undefined)
-    
-    @scala.inline
-    def setTableObjectId(value: String): Self = this.set("tableObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableObjectId: Self = this.set("tableObjectId", js.undefined)
+    def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
   }
 }

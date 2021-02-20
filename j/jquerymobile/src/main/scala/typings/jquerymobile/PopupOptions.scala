@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopupOptions extends js.Object {
+trait PopupOptions extends StObject {
   
   var corners: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object PopupOptions {
   }
   
   @scala.inline
-  implicit class PopupOptionsOps[Self <: PopupOptions] (val x: Self) extends AnyVal {
+  implicit class PopupOptionsMutableBuilder[Self <: PopupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorners(value: Boolean): Self = this.set("corners", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def deleteCorners: Self = this.set("corners", js.undefined)
+    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: Boolean): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setOverlayTheme(value: String): Self = StObject.set(x, "overlayTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
+    def setOverlayThemeUndefined: Self = StObject.set(x, "overlayTheme", js.undefined)
     
     @scala.inline
-    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
+    def setPositionTo(value: String): Self = StObject.set(x, "positionTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayTheme(value: String): Self = this.set("overlayTheme", value.asInstanceOf[js.Any])
+    def setPositionToUndefined: Self = StObject.set(x, "positionTo", js.undefined)
     
     @scala.inline
-    def deleteOverlayTheme: Self = this.set("overlayTheme", js.undefined)
+    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionTo(value: String): Self = this.set("positionTo", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deletePositionTo: Self = this.set("positionTo", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setTolerance(value: String): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTolerance(value: String): Self = this.set("tolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
-    
-    @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

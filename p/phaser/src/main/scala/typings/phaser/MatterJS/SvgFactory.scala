@@ -1,12 +1,13 @@
 package typings.phaser.MatterJS
 
 import typings.std.SVGPathElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SvgFactory extends js.Object {
+trait SvgFactory extends StObject {
   
   /**
     * Converts an SVG path into an array of vector points.
@@ -29,21 +30,9 @@ object SvgFactory {
   }
   
   @scala.inline
-  implicit class SvgFactoryOps[Self <: SvgFactory] (val x: Self) extends AnyVal {
+  implicit class SvgFactoryMutableBuilder[Self <: SvgFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPathToVertices(value: (SVGPathElement, Double) => js.Array[Vector]): Self = this.set("pathToVertices", js.Any.fromFunction2(value))
+    def setPathToVertices(value: (SVGPathElement, Double) => js.Array[Vector]): Self = StObject.set(x, "pathToVertices", js.Any.fromFunction2(value))
   }
 }

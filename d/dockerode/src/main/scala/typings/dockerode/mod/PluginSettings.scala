@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginSettings extends js.Object {
+trait PluginSettings extends StObject {
   
   var Args: js.Array[String] = js.native
   
@@ -29,42 +30,30 @@ object PluginSettings {
   }
   
   @scala.inline
-  implicit class PluginSettingsOps[Self <: PluginSettings] (val x: Self) extends AnyVal {
+  implicit class PluginSettingsMutableBuilder[Self <: PluginSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevices(value: js.Array[PluginDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("Args", js.Array(value :_*))
+    def setDevicesVarargs(value: PluginDevice*): Self = StObject.set(x, "Devices", js.Array(value :_*))
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("Args", value.asInstanceOf[js.Any])
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicesVarargs(value: PluginDevice*): Self = this.set("Devices", js.Array(value :_*))
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
     
     @scala.inline
-    def setDevices(value: js.Array[PluginDevice]): Self = this.set("Devices", value.asInstanceOf[js.Any])
+    def setMounts(value: js.Array[PluginMount]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("Env", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("Env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMountsVarargs(value: PluginMount*): Self = this.set("Mounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setMounts(value: js.Array[PluginMount]): Self = this.set("Mounts", value.asInstanceOf[js.Any])
+    def setMountsVarargs(value: PluginMount*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
   }
 }

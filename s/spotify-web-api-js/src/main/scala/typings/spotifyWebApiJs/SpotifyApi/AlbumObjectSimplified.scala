@@ -1,6 +1,7 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.album
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [album object (simplified)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
   */
 @js.native
-trait AlbumObjectSimplified extends js.Object {
+trait AlbumObjectSimplified extends StObject {
   
   var album_type: String = js.native
   
@@ -49,54 +50,42 @@ object AlbumObjectSimplified {
   }
   
   @scala.inline
-  implicit class AlbumObjectSimplifiedOps[Self <: AlbumObjectSimplified] (val x: Self) extends AnyVal {
+  implicit class AlbumObjectSimplifiedMutableBuilder[Self <: AlbumObjectSimplified] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbum_type(value: String): Self = StObject.set(x, "album_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
     
     @scala.inline
-    def setAlbum_type(value: String): Self = this.set("album_type", value.asInstanceOf[js.Any])
+    def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
     
     @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = this.set("external_urls", value.asInstanceOf[js.Any])
+    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = this.set("images", js.Array(value :_*))
+    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: album): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAvailable_marketsVarargs(value: String*): Self = this.set("available_markets", js.Array(value :_*))
-    
-    @scala.inline
-    def setAvailable_markets(value: js.Array[String]): Self = this.set("available_markets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailable_markets: Self = this.set("available_markets", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

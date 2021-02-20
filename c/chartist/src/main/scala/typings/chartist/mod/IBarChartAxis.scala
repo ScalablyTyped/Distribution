@@ -1,12 +1,13 @@
 package typings.chartist.mod
 
 import typings.chartist.anon.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBarChartAxis extends js.Object {
+trait IBarChartAxis extends StObject {
   
   var labelInterpolationFnc: js.UndefOr[js.Function] = js.native
   
@@ -33,66 +34,54 @@ object IBarChartAxis {
   }
   
   @scala.inline
-  implicit class IBarChartAxisOps[Self <: IBarChartAxis] (val x: Self) extends AnyVal {
+  implicit class IBarChartAxisMutableBuilder[Self <: IBarChartAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelInterpolationFnc(value: js.Function): Self = StObject.set(x, "labelInterpolationFnc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelInterpolationFncUndefined: Self = StObject.set(x, "labelInterpolationFnc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelOffset(value: Y): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInterpolationFnc(value: js.Function): Self = this.set("labelInterpolationFnc", value.asInstanceOf[js.Any])
+    def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
     
     @scala.inline
-    def deleteLabelInterpolationFnc: Self = this.set("labelInterpolationFnc", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOffset(value: Y): Self = this.set("labelOffset", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLabelOffset: Self = this.set("labelOffset", js.undefined)
+    def setOnlyInteger(value: Boolean): Self = StObject.set(x, "onlyInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOnlyIntegerUndefined: Self = StObject.set(x, "onlyInteger", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyInteger(value: Boolean): Self = this.set("onlyInteger", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOnlyInteger: Self = this.set("onlyInteger", js.undefined)
+    def setScaleMinSpace(value: Double): Self = StObject.set(x, "scaleMinSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setScaleMinSpaceUndefined: Self = StObject.set(x, "scaleMinSpace", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShowGrid(value: Boolean): Self = StObject.set(x, "showGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleMinSpace(value: Double): Self = this.set("scaleMinSpace", value.asInstanceOf[js.Any])
+    def setShowGridUndefined: Self = StObject.set(x, "showGrid", js.undefined)
     
     @scala.inline
-    def deleteScaleMinSpace: Self = this.set("scaleMinSpace", js.undefined)
+    def setShowLabel(value: Boolean): Self = StObject.set(x, "showLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGrid(value: Boolean): Self = this.set("showGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowGrid: Self = this.set("showGrid", js.undefined)
-    
-    @scala.inline
-    def setShowLabel(value: Boolean): Self = this.set("showLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowLabel: Self = this.set("showLabel", js.undefined)
+    def setShowLabelUndefined: Self = StObject.set(x, "showLabel", js.undefined)
   }
 }

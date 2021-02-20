@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.middle
   - typings.highcharts.highchartsStrings.top
 */
-trait VerticalAlignValue extends js.Object
+trait VerticalAlignValue extends StObject
 object VerticalAlignValue {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.status
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.title
 */
-trait UpdatePropertyName extends js.Object
+trait UpdatePropertyName extends StObject
 object UpdatePropertyName {
   
   @scala.inline

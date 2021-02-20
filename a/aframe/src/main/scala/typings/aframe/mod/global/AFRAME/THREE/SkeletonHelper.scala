@@ -1,13 +1,14 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
-import typings.three.object3DMod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.SkeletonHelper")
 @js.native
 class SkeletonHelper protected ()
   extends typings.three.mod.SkeletonHelper {
-  def this(`object`: Object3D) = this()
+  def this(`object`: typings.three.object3DMod.Object3D) = this()
 }

@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "ScaleModes")
 @js.native
-object ScaleModes extends js.Object {
+object ScaleModes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.phaser.Phaser.ScaleModes with Double] = js.native

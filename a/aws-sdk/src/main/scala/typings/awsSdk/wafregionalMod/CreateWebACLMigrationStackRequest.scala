@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWebACLMigrationStackRequest extends js.Object {
+trait CreateWebACLMigrationStackRequest extends StObject {
   
   /**
     * Indicates whether to exclude entities that can't be migrated or to stop the migration. Set this to true to ignore unsupported entities in the web ACL during the migration. Otherwise, if AWS WAF encounters unsupported entities, it stops the process and throws an exception. 
@@ -31,27 +32,15 @@ object CreateWebACLMigrationStackRequest {
   }
   
   @scala.inline
-  implicit class CreateWebACLMigrationStackRequestOps[Self <: CreateWebACLMigrationStackRequest] (val x: Self) extends AnyVal {
+  implicit class CreateWebACLMigrationStackRequestMutableBuilder[Self <: CreateWebACLMigrationStackRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreUnsupportedType(value: IgnoreUnsupportedType): Self = StObject.set(x, "IgnoreUnsupportedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIgnoreUnsupportedType(value: IgnoreUnsupportedType): Self = this.set("IgnoreUnsupportedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebACLId(value: ResourceId): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
+    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

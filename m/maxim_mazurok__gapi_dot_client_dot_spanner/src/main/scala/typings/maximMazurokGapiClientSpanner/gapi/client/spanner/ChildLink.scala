@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChildLink extends js.Object {
+trait ChildLink extends StObject {
   
   /** The node to which the link points. */
   var childIndex: js.UndefOr[Double] = js.native
@@ -32,36 +33,24 @@ object ChildLink {
   }
   
   @scala.inline
-  implicit class ChildLinkOps[Self <: ChildLink] (val x: Self) extends AnyVal {
+  implicit class ChildLinkMutableBuilder[Self <: ChildLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildIndexUndefined: Self = StObject.set(x, "childIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildIndex(value: Double): Self = this.set("childIndex", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteChildIndex: Self = this.set("childIndex", js.undefined)
+    def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVariable(value: String): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

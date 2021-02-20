@@ -1,5 +1,6 @@
 package typings.libsodiumWrappers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.libsodiumWrappers.libsodiumWrappersStrings.ed25519
   - typings.libsodiumWrappers.libsodiumWrappersStrings.x25519
 */
-trait KeyType extends js.Object
+trait KeyType extends StObject
 object KeyType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFile.gapi.client.file
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBackupsResponse extends js.Object {
+trait ListBackupsResponse extends StObject {
   
   /**
     * A list of backups in the project for the specified location. If the {location} value in the request is "-", the response contains a list of backups from all locations. If any
@@ -28,42 +29,30 @@ object ListBackupsResponse {
   }
   
   @scala.inline
-  implicit class ListBackupsResponseOps[Self <: ListBackupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListBackupsResponseMutableBuilder[Self <: ListBackupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackups(value: js.Array[Backup]): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "backups", js.Array(value :_*))
     
     @scala.inline
-    def setBackupsVarargs(value: Backup*): Self = this.set("backups", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackups(value: js.Array[Backup]): Self = this.set("backups", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteBackups: Self = this.set("backups", js.undefined)
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

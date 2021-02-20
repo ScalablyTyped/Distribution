@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveSchemaVersionMetadataResponse extends js.Object {
+trait RemoveSchemaVersionMetadataResponse extends StObject {
   
   /**
     * The latest version of the schema.
@@ -56,66 +57,54 @@ object RemoveSchemaVersionMetadataResponse {
   }
   
   @scala.inline
-  implicit class RemoveSchemaVersionMetadataResponseOps[Self <: RemoveSchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
+  implicit class RemoveSchemaVersionMetadataResponseMutableBuilder[Self <: RemoveSchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatestVersion(value: LatestSchemaVersionBoolean): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestVersionUndefined: Self = StObject.set(x, "LatestVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataKey(value: MetadataKeyString): Self = StObject.set(x, "MetadataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestVersion(value: LatestSchemaVersionBoolean): Self = this.set("LatestVersion", value.asInstanceOf[js.Any])
+    def setMetadataKeyUndefined: Self = StObject.set(x, "MetadataKey", js.undefined)
     
     @scala.inline
-    def deleteLatestVersion: Self = this.set("LatestVersion", js.undefined)
+    def setMetadataValue(value: MetadataValueString): Self = StObject.set(x, "MetadataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataKey(value: MetadataKeyString): Self = this.set("MetadataKey", value.asInstanceOf[js.Any])
+    def setMetadataValueUndefined: Self = StObject.set(x, "MetadataValue", js.undefined)
     
     @scala.inline
-    def deleteMetadataKey: Self = this.set("MetadataKey", js.undefined)
+    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataValue(value: MetadataValueString): Self = this.set("MetadataValue", value.asInstanceOf[js.Any])
+    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
     @scala.inline
-    def deleteMetadataValue: Self = this.set("MetadataValue", js.undefined)
+    def setSchemaArn(value: GlueResourceArn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
     @scala.inline
-    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
+    def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaArn(value: GlueResourceArn): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
+    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
     @scala.inline
-    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaName(value: SchemaRegistryNameString): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
     
     @scala.inline
-    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
+    def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = this.set("SchemaVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersionId: Self = this.set("SchemaVersionId", js.undefined)
-    
-    @scala.inline
-    def setVersionNumber(value: VersionLongNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

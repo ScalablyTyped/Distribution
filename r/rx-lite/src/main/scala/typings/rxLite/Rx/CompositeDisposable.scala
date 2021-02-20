@@ -1,6 +1,7 @@
 package typings.rxLite.Rx
 
 import typings.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,33 +35,21 @@ object CompositeDisposable {
   }
   
   @scala.inline
-  implicit class CompositeDisposableOps[Self <: CompositeDisposable] (val x: Self) extends AnyVal {
+  implicit class CompositeDisposableMutableBuilder[Self <: CompositeDisposable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: IDisposable => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: IDisposable => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setRemove(value: IDisposable => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDisposed(value: Boolean): Self = this.set("isDisposed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: IDisposable => Boolean): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToArray(value: () => js.Array[IDisposable]): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Array[IDisposable]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

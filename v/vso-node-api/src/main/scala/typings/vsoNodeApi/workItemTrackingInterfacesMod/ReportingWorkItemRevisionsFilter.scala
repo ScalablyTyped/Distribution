@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportingWorkItemRevisionsFilter extends js.Object {
+trait ReportingWorkItemRevisionsFilter extends StObject {
   
   /**
     * A list of fields to return in work item revisions. Omit this parameter to get all reportable fields.
@@ -53,42 +54,30 @@ object ReportingWorkItemRevisionsFilter {
   }
   
   @scala.inline
-  implicit class ReportingWorkItemRevisionsFilterOps[Self <: ReportingWorkItemRevisionsFilter] (val x: Self) extends AnyVal {
+  implicit class ReportingWorkItemRevisionsFilterMutableBuilder[Self <: ReportingWorkItemRevisionsFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setIncludeIdentityRef(value: Boolean): Self = StObject.set(x, "includeIdentityRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIncludeLatestOnly(value: Boolean): Self = StObject.set(x, "includeLatestOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDeleted(value: Boolean): Self = this.set("includeDeleted", value.asInstanceOf[js.Any])
+    def setIncludeTagRef(value: Boolean): Self = StObject.set(x, "includeTagRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeIdentityRef(value: Boolean): Self = this.set("includeIdentityRef", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLatestOnly(value: Boolean): Self = this.set("includeLatestOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeTagRef(value: Boolean): Self = this.set("includeTagRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

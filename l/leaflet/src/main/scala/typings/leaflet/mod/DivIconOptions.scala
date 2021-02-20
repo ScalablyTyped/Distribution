@@ -2,6 +2,7 @@ package typings.leaflet.mod
 
 import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object DivIconOptions {
   }
   
   @scala.inline
-  implicit class DivIconOptionsOps[Self <: DivIconOptions] (val x: Self) extends AnyVal {
+  implicit class DivIconOptionsMutableBuilder[Self <: DivIconOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgPos(value: PointExpression): Self = StObject.set(x, "bgPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgPosUndefined: Self = StObject.set(x, "bgPos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: String | HTMLElement | `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgPos(value: PointExpression): Self = this.set("bgPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBgPos: Self = this.set("bgPos", js.undefined)
-    
-    @scala.inline
-    def setHtml(value: String | HTMLElement | `false`): Self = this.set("html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
   }
 }

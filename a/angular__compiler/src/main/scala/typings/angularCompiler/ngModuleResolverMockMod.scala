@@ -4,14 +4,14 @@ import typings.angularCompiler.coreMod.NgModule
 import typings.angularCompiler.coreMod.Type
 import typings.angularCompiler.mod.CompileReflector
 import typings.angularCompiler.mod.NgModuleResolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/testing/src/ng_module_resolver_mock", JSImport.Namespace)
-@js.native
-object ngModuleResolverMockMod extends js.Object {
+object ngModuleResolverMockMod {
   
+  @JSImport("@angular/compiler/testing/src/ng_module_resolver_mock", "MockNgModuleResolver")
   @js.native
   class MockNgModuleResolver protected () extends NgModuleResolver {
     def this(reflector: CompileReflector) = this()

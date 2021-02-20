@@ -3,12 +3,13 @@ package typings.vegaTypings.markMod
 import typings.vegaTypings.onTriggerMod.OnMarkTrigger
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.transformMod.Transforms
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseMark extends js.Object {
+trait BaseMark extends StObject {
   
   var aria: js.UndefOr[Boolean] = js.native
   
@@ -45,105 +46,93 @@ object BaseMark {
   }
   
   @scala.inline
-  implicit class BaseMarkOps[Self <: BaseMark] (val x: Self) extends AnyVal {
+  implicit class BaseMarkMutableBuilder[Self <: BaseMark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClip(value: Clip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAria(value: Boolean): Self = this.set("aria", value.asInstanceOf[js.Any])
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     @scala.inline
-    def deleteAria: Self = this.set("aria", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClip(value: Clip): Self = this.set("clip", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setFrom(value: From): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInteractive(value: Boolean | SignalRef): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: From): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractive(value: Boolean | SignalRef): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOn(value: js.Array[OnMarkTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnVarargs(value: OnMarkTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
     
     @scala.inline
-    def setOnVarargs(value: OnMarkTrigger*): Self = this.set("on", js.Array(value :_*))
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: js.Array[OnMarkTrigger]): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteOn: Self = this.set("on", js.undefined)
+    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: Compare): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
     
     @scala.inline
-    def setStyleVarargs(value: String*): Self = this.set("style", js.Array(value :_*))
+    def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String | js.Array[String]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
     @scala.inline
-    def setTransformVarargs(value: Transforms*): Self = this.set("transform", js.Array(value :_*))
+    def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: js.Array[Transforms]): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
-    
-    @scala.inline
-    def setZindex(value: Double): Self = this.set("zindex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZindex: Self = this.set("zindex", js.undefined)
+    def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
   }
 }

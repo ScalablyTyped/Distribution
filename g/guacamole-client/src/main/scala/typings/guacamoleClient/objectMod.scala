@@ -4,16 +4,16 @@ import typings.guacamoleClient.clientMod.Client
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.guacamoleClient.outputStreamMod.OutputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/Object", JSImport.Namespace)
-@js.native
-object objectMod extends js.Object {
+object objectMod {
   
+  @JSImport("guacamole-client/lib/Object", "Object")
   @js.native
-  class Object protected () extends js.Object {
+  class Object protected () extends StObject {
     /**
       * @param client The client owning this object.
       * @param index The index of this object.
@@ -72,13 +72,14 @@ object objectMod extends js.Object {
     def requestInputStream(name: String, bodyCallback: js.Function2[/* stream */ InputStream, /* mimetype */ Mimetype, Unit]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Object extends js.Object {
+  object Object {
     
     /**
       * The reserved name denoting the root stream of any object. The contents of
       * the root stream MUST be a JSON map of stream name to mimetype.
       */
+    @JSImport("guacamole-client/lib/Object", "Object.ROOT_STREAM")
+    @js.native
     val ROOT_STREAM: String = js.native
     
     /**
@@ -86,6 +87,8 @@ object objectMod extends js.Object {
       * to their corresponding mimetype. The root stream of a Guacamole.Object MUST
       * have this mimetype.
       */
+    @JSImport("guacamole-client/lib/Object", "Object.STREAM_INDEX_MIMETYPE")
+    @js.native
     val STREAM_INDEX_MIMETYPE: String = js.native
   }
 }

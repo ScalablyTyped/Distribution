@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeTransferRule extends js.Object {
+trait EnvelopeTransferRule extends StObject {
   
   /**
     * When set to **true**, the original owner is added as a carbon copy recipient after envelope transfer. The default value is **false**.
@@ -70,78 +71,66 @@ object EnvelopeTransferRule {
   }
   
   @scala.inline
-  implicit class EnvelopeTransferRuleOps[Self <: EnvelopeTransferRule] (val x: Self) extends AnyVal {
+  implicit class EnvelopeTransferRuleMutableBuilder[Self <: EnvelopeTransferRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarbonCopyOriginalOwner(value: String): Self = StObject.set(x, "carbonCopyOriginalOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarbonCopyOriginalOwnerUndefined: Self = StObject.set(x, "carbonCopyOriginalOwner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarbonCopyOriginalOwner(value: String): Self = this.set("carbonCopyOriginalOwner", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteCarbonCopyOriginalOwner: Self = this.set("carbonCopyOriginalOwner", js.undefined)
+    def setEnvelopeTransferRuleId(value: String): Self = StObject.set(x, "envelopeTransferRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: String): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnvelopeTransferRuleIdUndefined: Self = StObject.set(x, "envelopeTransferRuleId", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeTransferRuleId(value: String): Self = this.set("envelopeTransferRuleId", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeTransferRuleId: Self = this.set("envelopeTransferRuleId", js.undefined)
+    def setFromGroup(value: /* This object contains information about a group. */ Group): Self = StObject.set(x, "fromGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setFromGroupUndefined: Self = StObject.set(x, "fromGroup", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setFromUser(value: UserInformation): Self = StObject.set(x, "fromUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromGroup(value: /* This object contains information about a group. */ Group): Self = this.set("fromGroup", value.asInstanceOf[js.Any])
+    def setFromUserUndefined: Self = StObject.set(x, "fromUser", js.undefined)
     
     @scala.inline
-    def deleteFromGroup: Self = this.set("fromGroup", js.undefined)
+    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromUser(value: UserInformation): Self = this.set("fromUser", value.asInstanceOf[js.Any])
+    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
     @scala.inline
-    def deleteFromUser: Self = this.set("fromUser", js.undefined)
+    def setModifiedUser(value: UserInformation): Self = StObject.set(x, "modifiedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedDate(value: String): Self = this.set("modifiedDate", value.asInstanceOf[js.Any])
+    def setModifiedUserUndefined: Self = StObject.set(x, "modifiedUser", js.undefined)
     
     @scala.inline
-    def deleteModifiedDate: Self = this.set("modifiedDate", js.undefined)
+    def setToFolder(value: /* This object contains details about a folder. */ Folder): Self = StObject.set(x, "toFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedUser(value: UserInformation): Self = this.set("modifiedUser", value.asInstanceOf[js.Any])
+    def setToFolderUndefined: Self = StObject.set(x, "toFolder", js.undefined)
     
     @scala.inline
-    def deleteModifiedUser: Self = this.set("modifiedUser", js.undefined)
+    def setToUser(value: UserInformation): Self = StObject.set(x, "toUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToFolder(value: /* This object contains details about a folder. */ Folder): Self = this.set("toFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToFolder: Self = this.set("toFolder", js.undefined)
-    
-    @scala.inline
-    def setToUser(value: UserInformation): Self = this.set("toUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToUser: Self = this.set("toUser", js.undefined)
+    def setToUserUndefined: Self = StObject.set(x, "toUser", js.undefined)
   }
 }

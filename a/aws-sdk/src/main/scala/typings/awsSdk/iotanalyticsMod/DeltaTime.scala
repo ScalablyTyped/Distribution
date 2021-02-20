@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeltaTime extends js.Object {
+trait DeltaTime extends StObject {
   
   /**
     * The number of seconds of estimated in-flight lag time of message data. When you create dataset contents using message data from a specified timeframe, some message data might still be in flight when processing begins, and so do not arrive in time to be processed. Use this field to make allowances for the in flight time of your message data, so that data not processed from a previous timeframe is included with the next timeframe. Otherwise, missed message data would be excluded from processing during the next timeframe too, because its timestamp places it within the previous timeframe.
@@ -26,24 +27,12 @@ object DeltaTime {
   }
   
   @scala.inline
-  implicit class DeltaTimeOps[Self <: DeltaTime] (val x: Self) extends AnyVal {
+  implicit class DeltaTimeMutableBuilder[Self <: DeltaTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffsetSeconds(value: OffsetSeconds): Self = StObject.set(x, "offsetSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOffsetSeconds(value: OffsetSeconds): Self = this.set("offsetSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeExpression(value: TimeExpression): Self = this.set("timeExpression", value.asInstanceOf[js.Any])
+    def setTimeExpression(value: TimeExpression): Self = StObject.set(x, "timeExpression", value.asInstanceOf[js.Any])
   }
 }

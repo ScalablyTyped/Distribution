@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   /** The HTTP response status code, such as `200` and `404`. */
   var code: js.UndefOr[String] = js.native
@@ -36,46 +37,34 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Response with TopLevel[js.Any]
-    ): Self = this.set("headers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

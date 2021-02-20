@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   /**
     * A unique identifier you create for this user, such as "user342" or "asset#44418". Do not use personally identifiable information (PII) for this property. Must always be set for
@@ -46,54 +47,42 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdentifier(value: String): Self = this.set("accountIdentifier", value.asInstanceOf[js.Any])
+    def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
     
     @scala.inline
-    def deleteAccountIdentifier: Self = this.set("accountIdentifier", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountType(value: String): Self = this.set("accountType", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteAccountType: Self = this.set("accountType", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagementType(value: String): Self = this.set("managementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagementType: Self = this.set("managementType", js.undefined)
-    
-    @scala.inline
-    def setPrimaryEmail(value: String): Self = this.set("primaryEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryEmail: Self = this.set("primaryEmail", js.undefined)
+    def setPrimaryEmailUndefined: Self = StObject.set(x, "primaryEmail", js.undefined)
   }
 }

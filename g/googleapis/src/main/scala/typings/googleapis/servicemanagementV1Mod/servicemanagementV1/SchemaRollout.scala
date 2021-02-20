@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service config, and then create a Rollout to push the service config.
   */
 @js.native
-trait SchemaRollout extends js.Object {
+trait SchemaRollout extends StObject {
   
   /**
     * Creation time of the rollout. Readonly.
@@ -66,60 +67,48 @@ object SchemaRollout {
   }
   
   @scala.inline
-  implicit class SchemaRolloutOps[Self <: SchemaRollout] (val x: Self) extends AnyVal {
+  implicit class SchemaRolloutMutableBuilder[Self <: SchemaRollout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDeleteServiceStrategy(value: SchemaDeleteServiceStrategy): Self = StObject.set(x, "deleteServiceStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: String): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setDeleteServiceStrategyUndefined: Self = StObject.set(x, "deleteServiceStrategy", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setRolloutId(value: String): Self = StObject.set(x, "rolloutId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteServiceStrategy(value: SchemaDeleteServiceStrategy): Self = this.set("deleteServiceStrategy", value.asInstanceOf[js.Any])
+    def setRolloutIdUndefined: Self = StObject.set(x, "rolloutId", js.undefined)
     
     @scala.inline
-    def deleteDeleteServiceStrategy: Self = this.set("deleteServiceStrategy", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolloutId(value: String): Self = this.set("rolloutId", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     @scala.inline
-    def deleteRolloutId: Self = this.set("rolloutId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setTrafficPercentStrategy(value: SchemaTrafficPercentStrategy): Self = StObject.set(x, "trafficPercentStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTrafficPercentStrategy(value: SchemaTrafficPercentStrategy): Self = this.set("trafficPercentStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficPercentStrategy: Self = this.set("trafficPercentStrategy", js.undefined)
+    def setTrafficPercentStrategyUndefined: Self = StObject.set(x, "trafficPercentStrategy", js.undefined)
   }
 }

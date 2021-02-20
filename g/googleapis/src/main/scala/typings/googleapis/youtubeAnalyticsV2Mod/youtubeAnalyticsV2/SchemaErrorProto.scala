@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes one specific error.
   */
 @js.native
-trait SchemaErrorProto extends js.Object {
+trait SchemaErrorProto extends StObject {
   
   /**
     * Error arguments, to be used when building user-friendly error messages
@@ -67,63 +68,51 @@ object SchemaErrorProto {
   }
   
   @scala.inline
-  implicit class SchemaErrorProtoOps[Self <: SchemaErrorProto] (val x: Self) extends AnyVal {
+  implicit class SchemaErrorProtoMutableBuilder[Self <: SchemaErrorProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: js.Array[String]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value :_*))
     
     @scala.inline
-    def setArgumentVarargs(value: String*): Self = this.set("argument", js.Array(value :_*))
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgument(value: js.Array[String]): Self = this.set("argument", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteArgument: Self = this.set("argument", js.undefined)
+    def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugInfo(value: String): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    def setExternalErrorMessage(value: String): Self = StObject.set(x, "externalErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setExternalErrorMessageUndefined: Self = StObject.set(x, "externalErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalErrorMessage(value: String): Self = this.set("externalErrorMessage", value.asInstanceOf[js.Any])
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalErrorMessage: Self = this.set("externalErrorMessage", js.undefined)
+    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

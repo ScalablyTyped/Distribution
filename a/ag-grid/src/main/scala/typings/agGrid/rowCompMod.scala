@@ -10,14 +10,14 @@ import typings.agGrid.rowContainerComponentMod.RowContainerComponent
 import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/rowComp", JSImport.Namespace)
-@js.native
-object rowCompMod extends js.Object {
+object rowCompMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/rowComp", "LoadingCellRenderer")
   @js.native
   class LoadingCellRenderer () extends Component {
     
@@ -33,12 +33,20 @@ object rowCompMod extends js.Object {
     def refresh(params: js.Any): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object LoadingCellRenderer extends js.Object {
+  object LoadingCellRenderer {
     
-    var TEMPLATE: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "LoadingCellRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "LoadingCellRenderer.TEMPLATE")
+    @js.native
+    def TEMPLATE: js.Any = js.native
+    @scala.inline
+    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp")
   @js.native
   class RowComp protected () extends Component {
     def this(
@@ -317,23 +325,58 @@ object rowCompMod extends js.Object {
     var useAnimationFrameForCreate: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object RowComp extends js.Object {
+  object RowComp {
     
-    var DETAIL_CELL_RENDERER: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DETAIL_CELL_RENDERER_COMP_NAME: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.DETAIL_CELL_RENDERER")
+    @js.native
+    def DETAIL_CELL_RENDERER: js.Any = js.native
+    @scala.inline
+    def DETAIL_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DETAIL_CELL_RENDERER")(x.asInstanceOf[js.Any])
     
-    var DOM_DATA_KEY_RENDERED_ROW: String = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.DETAIL_CELL_RENDERER_COMP_NAME")
+    @js.native
+    def DETAIL_CELL_RENDERER_COMP_NAME: js.Any = js.native
+    @scala.inline
+    def DETAIL_CELL_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DETAIL_CELL_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
     
-    var FULL_WIDTH_CELL_RENDERER: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.DOM_DATA_KEY_RENDERED_ROW")
+    @js.native
+    def DOM_DATA_KEY_RENDERED_ROW: String = js.native
+    @scala.inline
+    def DOM_DATA_KEY_RENDERED_ROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_RENDERED_ROW")(x.asInstanceOf[js.Any])
     
-    var GROUP_ROW_RENDERER: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.FULL_WIDTH_CELL_RENDERER")
+    @js.native
+    def FULL_WIDTH_CELL_RENDERER: js.Any = js.native
+    @scala.inline
+    def FULL_WIDTH_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL_WIDTH_CELL_RENDERER")(x.asInstanceOf[js.Any])
     
-    var GROUP_ROW_RENDERER_COMP_NAME: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.GROUP_ROW_RENDERER")
+    @js.native
+    def GROUP_ROW_RENDERER: js.Any = js.native
+    @scala.inline
+    def GROUP_ROW_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ROW_RENDERER")(x.asInstanceOf[js.Any])
     
-    var LOADING_CELL_RENDERER: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.GROUP_ROW_RENDERER_COMP_NAME")
+    @js.native
+    def GROUP_ROW_RENDERER_COMP_NAME: js.Any = js.native
+    @scala.inline
+    def GROUP_ROW_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ROW_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
     
-    var LOADING_CELL_RENDERER_COMP_NAME: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.LOADING_CELL_RENDERER")
+    @js.native
+    def LOADING_CELL_RENDERER: js.Any = js.native
+    @scala.inline
+    def LOADING_CELL_RENDERER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_CELL_RENDERER")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ag-grid/dist/lib/rendering/rowComp", "RowComp.LOADING_CELL_RENDERER_COMP_NAME")
+    @js.native
+    def LOADING_CELL_RENDERER_COMP_NAME: js.Any = js.native
+    @scala.inline
+    def LOADING_CELL_RENDERER_COMP_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_CELL_RENDERER_COMP_NAME")(x.asInstanceOf[js.Any])
   }
 }

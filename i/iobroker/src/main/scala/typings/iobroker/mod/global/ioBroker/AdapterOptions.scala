@@ -2,12 +2,13 @@ package typings.iobroker.mod.global.ioBroker
 
 import typings.iobroker.objectsMod.global.ioBroker.Object
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdapterOptions extends js.Object {
+trait AdapterOptions extends StObject {
   
   /** provide alternative global configuration for the adapter. Default: null */
   var config: js.UndefOr[js.Any] = js.native
@@ -69,117 +70,105 @@ object AdapterOptions {
   }
   
   @scala.inline
-  implicit class AdapterOptionsOps[Self <: AdapterOptions] (val x: Self) extends AnyVal {
+  implicit class AdapterOptionsMutableBuilder[Self <: AdapterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
     
     @scala.inline
-    def setConfig(value: js.Any): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setError(value: /* err */ Error => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setDirname(value: String): Self = this.set("dirname", value.asInstanceOf[js.Any])
+    def setInstance(value: Double): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirname: Self = this.set("dirname", js.undefined)
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def setError(value: /* err */ Error => Boolean): Self = this.set("error", js.Any.fromFunction1(value))
+    def setLogTransporter(value: Boolean): Self = StObject.set(x, "logTransporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLogTransporterUndefined: Self = StObject.set(x, "logTransporter", js.undefined)
     
     @scala.inline
-    def setInstance(value: Double): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setMessage(value: /* obj */ Message => Unit | js.Promise[Unit]): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setLogTransporter(value: Boolean): Self = this.set("logTransporter", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogTransporter: Self = this.set("logTransporter", js.undefined)
+    def setNoNamespace(value: Boolean): Self = StObject.set(x, "noNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: /* obj */ Message => Unit | js.Promise[Unit]): Self = this.set("message", js.Any.fromFunction1(value))
+    def setNoNamespaceUndefined: Self = StObject.set(x, "noNamespace", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setObjectChange(value: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "objectChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNoNamespace(value: Boolean): Self = this.set("noNamespace", value.asInstanceOf[js.Any])
+    def setObjectChangeUndefined: Self = StObject.set(x, "objectChange", js.undefined)
     
     @scala.inline
-    def deleteNoNamespace: Self = this.set("noNamespace", js.undefined)
+    def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectChange(value: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit]): Self = this.set("objectChange", js.Any.fromFunction2(value))
+    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
     @scala.inline
-    def deleteObjectChange: Self = this.set("objectChange", js.undefined)
+    def setReady(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setObjects(value: Boolean): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def deleteObjects: Self = this.set("objects", js.undefined)
+    def setStateChange(value: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "stateChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReady(value: () => Unit | js.Promise[Unit]): Self = this.set("ready", js.Any.fromFunction0(value))
+    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setStates(value: Boolean): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChange(value: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit]): Self = this.set("stateChange", js.Any.fromFunction2(value))
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def deleteStateChange: Self = this.set("stateChange", js.undefined)
+    def setStrictObjectChecks(value: Boolean): Self = StObject.set(x, "strictObjectChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStates(value: Boolean): Self = this.set("states", value.asInstanceOf[js.Any])
+    def setStrictObjectChecksUndefined: Self = StObject.set(x, "strictObjectChecks", js.undefined)
     
     @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setSystemConfig(value: Boolean): Self = StObject.set(x, "systemConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictObjectChecks(value: Boolean): Self = this.set("strictObjectChecks", value.asInstanceOf[js.Any])
+    def setSystemConfigUndefined: Self = StObject.set(x, "systemConfig", js.undefined)
     
     @scala.inline
-    def deleteStrictObjectChecks: Self = this.set("strictObjectChecks", js.undefined)
+    def setUnload(value: /* callback */ EmptyCallback => Unit | js.Promise[Unit]): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSystemConfig(value: Boolean): Self = this.set("systemConfig", value.asInstanceOf[js.Any])
+    def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
     
     @scala.inline
-    def deleteSystemConfig: Self = this.set("systemConfig", js.undefined)
+    def setUseFormatDate(value: Boolean): Self = StObject.set(x, "useFormatDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnload(value: /* callback */ EmptyCallback => Unit | js.Promise[Unit]): Self = this.set("unload", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUnload: Self = this.set("unload", js.undefined)
-    
-    @scala.inline
-    def setUseFormatDate(value: Boolean): Self = this.set("useFormatDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFormatDate: Self = this.set("useFormatDate", js.undefined)
+    def setUseFormatDateUndefined: Self = StObject.set(x, "useFormatDate", js.undefined)
   }
 }

@@ -7,12 +7,13 @@ import typings.arangodb.anon.Domain
 import typings.arangodb.anon.LastModified
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   def attachment(): this.type = js.native
   def attachment(filename: String): this.type = js.native

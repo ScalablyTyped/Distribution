@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvitationParticipantInfo extends js.Object {
+trait InvitationParticipantInfo extends StObject {
   
   // The identitySet associated with this invitation.
   var identity: js.UndefOr[IdentitySet] = js.native
@@ -25,33 +26,21 @@ object InvitationParticipantInfo {
   }
   
   @scala.inline
-  implicit class InvitationParticipantInfoOps[Self <: InvitationParticipantInfo] (val x: Self) extends AnyVal {
+  implicit class InvitationParticipantInfoMutableBuilder[Self <: InvitationParticipantInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplacesCallId(value: NullableOption[String]): Self = StObject.set(x, "replacesCallId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: IdentitySet): Self = this.set("identity", value.asInstanceOf[js.Any])
+    def setReplacesCallIdNull: Self = StObject.set(x, "replacesCallId", null)
     
     @scala.inline
-    def deleteIdentity: Self = this.set("identity", js.undefined)
-    
-    @scala.inline
-    def setReplacesCallId(value: NullableOption[String]): Self = this.set("replacesCallId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacesCallId: Self = this.set("replacesCallId", js.undefined)
-    
-    @scala.inline
-    def setReplacesCallIdNull: Self = this.set("replacesCallId", null)
+    def setReplacesCallIdUndefined: Self = StObject.set(x, "replacesCallId", js.undefined)
   }
 }

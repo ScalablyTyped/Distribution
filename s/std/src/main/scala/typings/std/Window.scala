@@ -33,6 +33,7 @@ import typings.std.stdStrings.vrdisplayfocus
 import typings.std.stdStrings.vrdisplaypointerrestricted
 import typings.std.stdStrings.vrdisplaypointerunrestricted
 import typings.std.stdStrings.vrdisplaypresentchange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

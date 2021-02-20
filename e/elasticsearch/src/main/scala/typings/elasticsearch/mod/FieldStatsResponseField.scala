@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldStatsResponseField extends js.Object {
+trait FieldStatsResponseField extends StObject {
   
   var density: Double = js.native
   
@@ -44,45 +45,33 @@ object FieldStatsResponseField {
   }
   
   @scala.inline
-  implicit class FieldStatsResponseFieldOps[Self <: FieldStatsResponseField] (val x: Self) extends AnyVal {
+  implicit class FieldStatsResponseFieldMutableBuilder[Self <: FieldStatsResponseField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_aggregatable(value: String): Self = StObject.set(x, "is_aggregatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setIs_searchable(value: String): Self = StObject.set(x, "is_searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_count(value: Double): Self = this.set("doc_count", value.asInstanceOf[js.Any])
+    def setMax_doc(value: Double): Self = StObject.set(x, "max_doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_aggregatable(value: String): Self = this.set("is_aggregatable", value.asInstanceOf[js.Any])
+    def setMax_value(value: js.Any): Self = StObject.set(x, "max_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_searchable(value: String): Self = this.set("is_searchable", value.asInstanceOf[js.Any])
+    def setMin_value(value: js.Any): Self = StObject.set(x, "min_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_doc(value: Double): Self = this.set("max_doc", value.asInstanceOf[js.Any])
+    def setSum_doc_freq(value: Double): Self = StObject.set(x, "sum_doc_freq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_value(value: js.Any): Self = this.set("max_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin_value(value: js.Any): Self = this.set("min_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSum_doc_freq(value: Double): Self = this.set("sum_doc_freq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSum_total_term_freq(value: Double): Self = this.set("sum_total_term_freq", value.asInstanceOf[js.Any])
+    def setSum_total_term_freq(value: Double): Self = StObject.set(x, "sum_total_term_freq", value.asInstanceOf[js.Any])
   }
 }

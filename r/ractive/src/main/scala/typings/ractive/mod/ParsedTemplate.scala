@@ -1,12 +1,13 @@
 package typings.ractive.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParsedTemplate extends js.Object {
+trait ParsedTemplate extends StObject {
   
   /** If csp mode was used to parse, the map of expression string -> expression functions. */
   var e: js.UndefOr[StringDictionary[js.Function]] = js.native
@@ -29,39 +30,27 @@ object ParsedTemplate {
   }
   
   @scala.inline
-  implicit class ParsedTemplateOps[Self <: ParsedTemplate] (val x: Self) extends AnyVal {
+  implicit class ParsedTemplateMutableBuilder[Self <: ParsedTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setE(value: StringDictionary[js.Function]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP(value: StringDictionary[js.Array[_]]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTVarargs(value: js.Any*): Self = this.set("t", js.Array(value :_*))
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def setT(value: js.Array[_]): Self = this.set("t", value.asInstanceOf[js.Any])
+    def setT(value: js.Array[_]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: Double): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setTVarargs(value: js.Any*): Self = StObject.set(x, "t", js.Array(value :_*))
     
     @scala.inline
-    def setE(value: StringDictionary[js.Function]): Self = this.set("e", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteE: Self = this.set("e", js.undefined)
-    
-    @scala.inline
-    def setP(value: StringDictionary[js.Array[_]]): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

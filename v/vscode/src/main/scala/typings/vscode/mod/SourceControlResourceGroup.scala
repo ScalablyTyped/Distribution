@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceControlResourceGroup extends js.Object {
+trait SourceControlResourceGroup extends StObject {
   
   /**
     * Dispose this source control resource group.
@@ -48,39 +49,27 @@ object SourceControlResourceGroup {
   }
   
   @scala.inline
-  implicit class SourceControlResourceGroupOps[Self <: SourceControlResourceGroup] (val x: Self) extends AnyVal {
+  implicit class SourceControlResourceGroupMutableBuilder[Self <: SourceControlResourceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideWhenEmpty(value: Boolean): Self = StObject.set(x, "hideWhenEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideWhenEmptyUndefined: Self = StObject.set(x, "hideWhenEmpty", js.undefined)
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setResourceStates(value: js.Array[SourceControlResourceState]): Self = StObject.set(x, "resourceStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceStatesVarargs(value: SourceControlResourceState*): Self = this.set("resourceStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceStates(value: js.Array[SourceControlResourceState]): Self = this.set("resourceStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHideWhenEmpty(value: Boolean): Self = this.set("hideWhenEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideWhenEmpty: Self = this.set("hideWhenEmpty", js.undefined)
+    def setResourceStatesVarargs(value: SourceControlResourceState*): Self = StObject.set(x, "resourceStates", js.Array(value :_*))
   }
 }

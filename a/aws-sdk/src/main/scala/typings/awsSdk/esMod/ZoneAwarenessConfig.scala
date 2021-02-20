@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoneAwarenessConfig extends js.Object {
+trait ZoneAwarenessConfig extends StObject {
   
   /**
     * An integer value to indicate the number of availability zones for a domain when zone awareness is enabled. This should be equal to number of subnets if VPC endpoints is enabled
@@ -21,24 +22,12 @@ object ZoneAwarenessConfig {
   }
   
   @scala.inline
-  implicit class ZoneAwarenessConfigOps[Self <: ZoneAwarenessConfig] (val x: Self) extends AnyVal {
+  implicit class ZoneAwarenessConfigMutableBuilder[Self <: ZoneAwarenessConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZoneCount(value: IntegerClass): Self = StObject.set(x, "AvailabilityZoneCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAvailabilityZoneCount(value: IntegerClass): Self = this.set("AvailabilityZoneCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailabilityZoneCount: Self = this.set("AvailabilityZoneCount", js.undefined)
+    def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "AvailabilityZoneCount", js.undefined)
   }
 }

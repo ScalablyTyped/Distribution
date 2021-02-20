@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class PivotChart protected ()
   extends typings.ejWebAll.ej.PivotChart {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.PivotChart.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.PivotChart.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.PivotChart")
-@js.native
-object PivotChart extends js.Object {
+object PivotChart {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.PivotChart = js.native
-  
+  @JSGlobal("ej.PivotChart")
   @js.native
-  object ChartTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.PivotChart.ChartTypes")
+  @js.native
+  object ChartTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotChart.ChartTypes with Double] = js.native
@@ -64,4 +63,18 @@ object PivotChart extends js.Object {
     
     /* 5 */ val StepLine: typings.ejWebAll.ej.PivotChart.ChartTypes.StepLine with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.PivotChart.Locale")
+  @js.native
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("ej.PivotChart.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.PivotChart = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.PivotChart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

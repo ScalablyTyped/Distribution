@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintViewModelProperties extends js.Object {
+trait PrintViewModelProperties extends StObject {
   
   /**
     * Specify the print output file format(s) that the user can select based on the options available from the print service.
@@ -58,60 +59,48 @@ object PrintViewModelProperties {
   }
   
   @scala.inline
-  implicit class PrintViewModelPropertiesOps[Self <: PrintViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class PrintViewModelPropertiesMutableBuilder[Self <: PrintViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedFormats(value: String | js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedFormatsVarargs(value: String*): Self = this.set("allowedFormats", js.Array(value :_*))
+    def setAllowedLayouts(value: String | js.Array[String]): Self = StObject.set(x, "allowedLayouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedFormats(value: String | js.Array[String]): Self = this.set("allowedFormats", value.asInstanceOf[js.Any])
+    def setAllowedLayoutsUndefined: Self = StObject.set(x, "allowedLayouts", js.undefined)
     
     @scala.inline
-    def deleteAllowedFormats: Self = this.set("allowedFormats", js.undefined)
+    def setAllowedLayoutsVarargs(value: String*): Self = StObject.set(x, "allowedLayouts", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedLayoutsVarargs(value: String*): Self = this.set("allowedLayouts", js.Array(value :_*))
+    def setPrintServiceUrl(value: String): Self = StObject.set(x, "printServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedLayouts(value: String | js.Array[String]): Self = this.set("allowedLayouts", value.asInstanceOf[js.Any])
+    def setPrintServiceUrlUndefined: Self = StObject.set(x, "printServiceUrl", js.undefined)
     
     @scala.inline
-    def deleteAllowedLayouts: Self = this.set("allowedLayouts", js.undefined)
+    def setScaleEnabled(value: Boolean): Self = StObject.set(x, "scaleEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintServiceUrl(value: String): Self = this.set("printServiceUrl", value.asInstanceOf[js.Any])
+    def setScaleEnabledUndefined: Self = StObject.set(x, "scaleEnabled", js.undefined)
     
     @scala.inline
-    def deletePrintServiceUrl: Self = this.set("printServiceUrl", js.undefined)
+    def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleEnabled(value: Boolean): Self = this.set("scaleEnabled", value.asInstanceOf[js.Any])
+    def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
     
     @scala.inline
-    def deleteScaleEnabled: Self = this.set("scaleEnabled", js.undefined)
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDelay(value: Double): Self = this.set("updateDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDelay: Self = this.set("updateDelay", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

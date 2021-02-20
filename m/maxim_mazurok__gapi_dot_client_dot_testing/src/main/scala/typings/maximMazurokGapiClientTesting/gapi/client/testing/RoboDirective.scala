@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoboDirective extends js.Object {
+trait RoboDirective extends StObject {
   
   /** Required. The type of action that Robo should perform on the specified element. */
   var actionType: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object RoboDirective {
   }
   
   @scala.inline
-  implicit class RoboDirectiveOps[Self <: RoboDirective] (val x: Self) extends AnyVal {
+  implicit class RoboDirectiveMutableBuilder[Self <: RoboDirective] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputText(value: String): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: String): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setInputTextUndefined: Self = StObject.set(x, "inputText", js.undefined)
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputText(value: String): Self = this.set("inputText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputText: Self = this.set("inputText", js.undefined)
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

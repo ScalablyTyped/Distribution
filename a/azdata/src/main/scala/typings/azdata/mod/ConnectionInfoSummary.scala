@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionInfoSummary extends js.Object {
+trait ConnectionInfoSummary extends StObject {
   
   /**
     * connection id returned from service host.
@@ -59,39 +60,27 @@ object ConnectionInfoSummary {
   }
   
   @scala.inline
-  implicit class ConnectionInfoSummaryOps[Self <: ConnectionInfoSummary] (val x: Self) extends AnyVal {
+  implicit class ConnectionInfoSummaryMutableBuilder[Self <: ConnectionInfoSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionSummary(value: ConnectionSummary): Self = StObject.set(x, "connectionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: String): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    def setErrorNumber(value: Double): Self = StObject.set(x, "errorNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionSummary(value: ConnectionSummary): Self = this.set("connectionSummary", value.asInstanceOf[js.Any])
+    def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorNumber(value: Double): Self = this.set("errorNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessages(value: String): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerUri(value: String): Self = this.set("ownerUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerInfo(value: ServerInfo): Self = this.set("serverInfo", value.asInstanceOf[js.Any])
+    def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
   }
 }

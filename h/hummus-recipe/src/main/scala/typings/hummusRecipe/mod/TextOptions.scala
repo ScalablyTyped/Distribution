@@ -1,11 +1,12 @@
 package typings.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextOptions extends js.Object {
+trait TextOptions extends StObject {
   
   var align: js.UndefOr[String] = js.native
   
@@ -38,90 +39,78 @@ object TextOptions {
   }
   
   @scala.inline
-  implicit class TextOptionsOps[Self <: TextOptions] (val x: Self) extends AnyVal {
+  implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | js.Array[Double]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: Boolean): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setRotationOrigin(value: js.Array[Double]): Self = StObject.set(x, "rotationOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRotationOriginUndefined: Self = StObject.set(x, "rotationOrigin", js.undefined)
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setRotationOriginVarargs(value: Double*): Self = StObject.set(x, "rotationOrigin", js.Array(value :_*))
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def setRotationOriginVarargs(value: Double*): Self = this.set("rotationOrigin", js.Array(value :_*))
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationOrigin(value: js.Array[Double]): Self = this.set("rotationOrigin", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRotationOrigin: Self = this.set("rotationOrigin", js.undefined)
+    def setStrikeOut(value: Boolean): Self = StObject.set(x, "strikeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStrikeOutUndefined: Self = StObject.set(x, "strikeOut", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTextBox(value: TextBox): Self = StObject.set(x, "textBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeOut(value: Boolean): Self = this.set("strikeOut", value.asInstanceOf[js.Any])
+    def setTextBoxUndefined: Self = StObject.set(x, "textBox", js.undefined)
     
     @scala.inline
-    def deleteStrikeOut: Self = this.set("strikeOut", js.undefined)
+    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBox(value: TextBox): Self = this.set("textBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextBox: Self = this.set("textBox", js.undefined)
-    
-    @scala.inline
-    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

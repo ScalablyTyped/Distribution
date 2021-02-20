@@ -1,5 +1,6 @@
 package typings.emberData.mod.DS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.BuildURLMixin")
 @js.native
-class BuildURLMixin () extends js.Object {
+class BuildURLMixin () extends StObject {
   
   /**
     * Builds a URL for a given type and optional ID.

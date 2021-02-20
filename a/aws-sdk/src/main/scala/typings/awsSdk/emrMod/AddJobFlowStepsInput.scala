@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddJobFlowStepsInput extends js.Object {
+trait AddJobFlowStepsInput extends StObject {
   
   /**
     * A string that uniquely identifies the job flow. This identifier is returned by RunJobFlow and can also be obtained from ListClusters. 
@@ -26,27 +27,15 @@ object AddJobFlowStepsInput {
   }
   
   @scala.inline
-  implicit class AddJobFlowStepsInputOps[Self <: AddJobFlowStepsInput] (val x: Self) extends AnyVal {
+  implicit class AddJobFlowStepsInputMutableBuilder[Self <: AddJobFlowStepsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSteps(value: StepConfigList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobFlowId(value: XmlStringMaxLen256): Self = this.set("JobFlowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepsVarargs(value: StepConfig*): Self = this.set("Steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: StepConfigList): Self = this.set("Steps", value.asInstanceOf[js.Any])
+    def setStepsVarargs(value: StepConfig*): Self = StObject.set(x, "Steps", js.Array(value :_*))
   }
 }

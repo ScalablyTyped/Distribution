@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,33 +78,21 @@ object XLayerImporter {
   }
   
   @scala.inline
-  implicit class XLayerImporterOps[Self <: XLayerImporter] (val x: Self) extends AnyVal {
+  implicit class XLayerImporterMutableBuilder[Self <: XLayerImporter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTargetBackend(value: () => XBackend): Self = StObject.set(x, "getTargetBackend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportLayer(value: XLayer => Unit): Self = StObject.set(x, "importLayer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImportLayerForEntity(value: (XLayer, String) => Unit): Self = StObject.set(x, "importLayerForEntity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTargetBackend(value: XBackend): Self = this.set("TargetBackend", value.asInstanceOf[js.Any])
+    def setSetTargetBackend(value: XBackend => Unit): Self = StObject.set(x, "setTargetBackend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTargetBackend(value: () => XBackend): Self = this.set("getTargetBackend", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setImportLayer(value: XLayer => Unit): Self = this.set("importLayer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setImportLayerForEntity(value: (XLayer, String) => Unit): Self = this.set("importLayerForEntity", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetTargetBackend(value: XBackend => Unit): Self = this.set("setTargetBackend", js.Any.fromFunction1(value))
+    def setTargetBackend(value: XBackend): Self = StObject.set(x, "TargetBackend", value.asInstanceOf[js.Any])
   }
 }

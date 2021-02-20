@@ -1,11 +1,12 @@
 package typings.nyaapi.mod.si
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadData extends js.Object {
+trait UploadData extends StObject {
   
   var anonymous: Boolean = js.native
   
@@ -50,51 +51,39 @@ object UploadData {
   }
   
   @scala.inline
-  implicit class UploadDataOps[Self <: UploadData] (val x: Self) extends AnyVal {
+  implicit class UploadDataMutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnonymous(value: Boolean): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: Boolean): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: String): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setInformation(value: String): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setRemake(value: Boolean): Self = StObject.set(x, "remake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInformation(value: String): Self = this.set("information", value.asInstanceOf[js.Any])
+    def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemake(value: Boolean): Self = this.set("remake", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTorrent(value: String): Self = this.set("torrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrusted(value: Boolean): Self = this.set("trusted", value.asInstanceOf[js.Any])
+    def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
   }
 }

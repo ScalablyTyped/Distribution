@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Base")
 @js.native
-class Base () extends js.Object {
+class Base () extends StObject {
   
   /* protected */ def AddLocStringToUsedLocales(locStr: LocalizableString, locales: js.Array[String]): Unit = js.native
   
@@ -205,16 +206,30 @@ class Base () extends js.Object {
   /* protected */ def updateBindings(propertyName: String, value: js.Any): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "Base")
-@js.native
-object Base extends js.Object {
+object Base {
   
-  var commentPrefix: String = js.native
+  @JSImport("survey-knockout", "Base")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("survey-knockout", "Base.commentPrefix")
+  @js.native
+  def commentPrefix: String = js.native
+  @scala.inline
+  def commentPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("commentPrefix")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "Base.createItemValue")
+  @js.native
   def createItemValue(item: js.Any): js.Any = js.native
+  @JSImport("survey-knockout", "Base.createItemValue")
+  @js.native
   def createItemValue(item: js.Any, `type`: String): js.Any = js.native
   
+  @JSImport("survey-knockout", "Base.isSurveyElement")
+  @js.native
   def isSurveyElement(`val`: js.Any): Boolean = js.native
   
+  @JSImport("survey-knockout", "Base.itemValueLocStrChanged")
+  @js.native
   def itemValueLocStrChanged(arr: js.Array[_]): Unit = js.native
 }

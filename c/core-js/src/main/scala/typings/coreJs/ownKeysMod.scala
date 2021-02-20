@@ -1,12 +1,15 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/reflect/own-keys", JSImport.Namespace)
-@js.native
-object ownKeysMod
-  extends TopLevel[js.Function1[/* target */ js.Any, Array[PropertyKey]]]
+object ownKeysMod {
+  
+  /* was `typeof core.Reflect.ownKeys` */
+  @JSImport("core-js/fn/reflect/own-keys", JSImport.Namespace)
+  @js.native
+  def apply(target: js.Any): Array[PropertyKey] = js.native
+}

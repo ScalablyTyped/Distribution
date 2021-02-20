@@ -1,5 +1,6 @@
 package typings.webResourceInliner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("web-resource-inliner", JSImport.Namespace)
 @js.native
-object webResourceInlinerRequire extends js.Object
+object webResourceInlinerRequire extends StObject

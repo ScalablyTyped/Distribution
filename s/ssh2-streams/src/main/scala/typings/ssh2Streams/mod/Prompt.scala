@@ -1,11 +1,12 @@
 package typings.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prompt extends js.Object {
+trait Prompt extends StObject {
   
   var echo: js.UndefOr[Boolean] = js.native
   
@@ -20,27 +21,15 @@ object Prompt {
   }
   
   @scala.inline
-  implicit class PromptOps[Self <: Prompt] (val x: Self) extends AnyVal {
+  implicit class PromptMutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEcho(value: Boolean): Self = this.set("echo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEcho: Self = this.set("echo", js.undefined)
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
   }
 }

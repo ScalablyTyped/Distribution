@@ -1,34 +1,38 @@
 package typings.postmark
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/models/client/Errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
   
+  @JSImport("postmark/dist/client/models/client/Errors", "ApiInputError")
   @js.native
   class ApiInputError protected () extends HttpError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
+  @JSImport("postmark/dist/client/models/client/Errors", "HttpError")
   @js.native
   class HttpError protected () extends PostmarkError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
+  @JSImport("postmark/dist/client/models/client/Errors", "InternalServerError")
   @js.native
   class InternalServerError protected () extends HttpError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
+  @JSImport("postmark/dist/client/models/client/Errors", "InvalidAPIKeyError")
   @js.native
   class InvalidAPIKeyError protected () extends HttpError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
+  @JSImport("postmark/dist/client/models/client/Errors", "PostmarkError")
   @js.native
   class PostmarkError protected () extends Error {
     def this(message: String) = this()
@@ -43,11 +47,13 @@ object errorsMod extends js.Object {
     var statusCode: Double = js.native
   }
   
+  @JSImport("postmark/dist/client/models/client/Errors", "ServiceUnavailablerError")
   @js.native
   class ServiceUnavailablerError protected () extends HttpError {
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   
+  @JSImport("postmark/dist/client/models/client/Errors", "UnknownError")
   @js.native
   class UnknownError protected () extends HttpError {
     def this(message: String, code: Double, statusCode: Double) = this()

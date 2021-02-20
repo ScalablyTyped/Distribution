@@ -1,17 +1,14 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("OffscreenCanvas")
 @js.native
 class OffscreenCanvas protected ()
   extends typings.std.OffscreenCanvas {
   def this(width: Double, height: Double) = this()
 }
-@JSGlobal("OffscreenCanvas")
-@js.native
-object OffscreenCanvas
-  extends Instantiable2[/* width */ Double, /* height */ Double, typings.std.OffscreenCanvas]

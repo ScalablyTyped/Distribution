@@ -1,12 +1,13 @@
 package typings.playable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/utils/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
+  @JSImport("playable/dist/src/utils/promise", "isPromiseAvailable")
+  @js.native
   val isPromiseAvailable: Boolean = js.native
 }

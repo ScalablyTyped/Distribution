@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SiteSettings extends js.Object {
+trait SiteSettings extends StObject {
   
   /** Whether active view creatives are disabled for this site. */
   var activeViewOptOut: js.UndefOr[Boolean] = js.native
@@ -45,54 +46,42 @@ object SiteSettings {
   }
   
   @scala.inline
-  implicit class SiteSettingsOps[Self <: SiteSettings] (val x: Self) extends AnyVal {
+  implicit class SiteSettingsMutableBuilder[Self <: SiteSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdBlockingOptOut(value: Boolean): Self = StObject.set(x, "adBlockingOptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveViewOptOut(value: Boolean): Self = this.set("activeViewOptOut", value.asInstanceOf[js.Any])
+    def setAdBlockingOptOutUndefined: Self = StObject.set(x, "adBlockingOptOut", js.undefined)
     
     @scala.inline
-    def deleteActiveViewOptOut: Self = this.set("activeViewOptOut", js.undefined)
+    def setDisableNewCookie(value: Boolean): Self = StObject.set(x, "disableNewCookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdBlockingOptOut(value: Boolean): Self = this.set("adBlockingOptOut", value.asInstanceOf[js.Any])
+    def setDisableNewCookieUndefined: Self = StObject.set(x, "disableNewCookie", js.undefined)
     
     @scala.inline
-    def deleteAdBlockingOptOut: Self = this.set("adBlockingOptOut", js.undefined)
+    def setTagSetting(value: TagSetting): Self = StObject.set(x, "tagSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableNewCookie(value: Boolean): Self = this.set("disableNewCookie", value.asInstanceOf[js.Any])
+    def setTagSettingUndefined: Self = StObject.set(x, "tagSetting", js.undefined)
     
     @scala.inline
-    def deleteDisableNewCookie: Self = this.set("disableNewCookie", js.undefined)
+    def setVideoActiveViewOptOutTemplate(value: Boolean): Self = StObject.set(x, "videoActiveViewOptOutTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSetting(value: TagSetting): Self = this.set("tagSetting", value.asInstanceOf[js.Any])
+    def setVideoActiveViewOptOutTemplateUndefined: Self = StObject.set(x, "videoActiveViewOptOutTemplate", js.undefined)
     
     @scala.inline
-    def deleteTagSetting: Self = this.set("tagSetting", js.undefined)
+    def setVpaidAdapterChoiceTemplate(value: String): Self = StObject.set(x, "vpaidAdapterChoiceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoActiveViewOptOutTemplate(value: Boolean): Self = this.set("videoActiveViewOptOutTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoActiveViewOptOutTemplate: Self = this.set("videoActiveViewOptOutTemplate", js.undefined)
-    
-    @scala.inline
-    def setVpaidAdapterChoiceTemplate(value: String): Self = this.set("vpaidAdapterChoiceTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpaidAdapterChoiceTemplate: Self = this.set("vpaidAdapterChoiceTemplate", js.undefined)
+    def setVpaidAdapterChoiceTemplateUndefined: Self = StObject.set(x, "vpaidAdapterChoiceTemplate", js.undefined)
   }
 }

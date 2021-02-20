@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Media.Protection
 
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMediaProtectionManager extends js.Object {
+trait IMediaProtectionManager extends StObject {
   
   var oncomponentloadfailed: js.Any = js.native
   
@@ -30,30 +31,18 @@ object IMediaProtectionManager {
   }
   
   @scala.inline
-  implicit class IMediaProtectionManagerOps[Self <: IMediaProtectionManager] (val x: Self) extends AnyVal {
+  implicit class IMediaProtectionManagerMutableBuilder[Self <: IMediaProtectionManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOncomponentloadfailed(value: js.Any): Self = StObject.set(x, "oncomponentloadfailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnrebootneeded(value: js.Any): Self = StObject.set(x, "onrebootneeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnservicerequested(value: js.Any): Self = StObject.set(x, "onservicerequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOncomponentloadfailed(value: js.Any): Self = this.set("oncomponentloadfailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnrebootneeded(value: js.Any): Self = this.set("onrebootneeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnservicerequested(value: js.Any): Self = this.set("onservicerequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

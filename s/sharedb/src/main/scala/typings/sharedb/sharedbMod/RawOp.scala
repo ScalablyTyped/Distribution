@@ -1,11 +1,12 @@
 package typings.sharedb.sharedbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawOp extends js.Object {
+trait RawOp extends StObject {
   
   var c: String = js.native
   
@@ -28,36 +29,24 @@ object RawOp {
   }
   
   @scala.inline
-  implicit class RawOpOps[Self <: RawOp] (val x: Self) extends AnyVal {
+  implicit class RawOpMutableBuilder[Self <: RawOp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setM(value: js.Any): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: String): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setSeq(value: Double): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: js.Any): Self = this.set("m", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeq(value: Double): Self = this.set("seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV(value: Double): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

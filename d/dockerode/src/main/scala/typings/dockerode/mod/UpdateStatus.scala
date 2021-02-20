@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateStatus extends js.Object {
+trait UpdateStatus extends StObject {
   
   var CompletedAt: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object UpdateStatus {
   }
   
   @scala.inline
-  implicit class UpdateStatusOps[Self <: UpdateStatus] (val x: Self) extends AnyVal {
+  implicit class UpdateStatusMutableBuilder[Self <: UpdateStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedAt(value: String): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedAtUndefined: Self = StObject.set(x, "CompletedAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedAt(value: String): Self = this.set("CompletedAt", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteCompletedAt: Self = this.set("CompletedAt", js.undefined)
+    def setStartedAt(value: String): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setState(value: UpdateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedAt(value: String): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
-    
-    @scala.inline
-    def setState(value: UpdateState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

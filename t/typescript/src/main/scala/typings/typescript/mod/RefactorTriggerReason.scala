@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.typescriptStrings.`implicit`
   - typings.typescript.typescriptStrings.invoked
 */
-trait RefactorTriggerReason extends js.Object
+trait RefactorTriggerReason extends StObject
 object RefactorTriggerReason {
   
   @scala.inline

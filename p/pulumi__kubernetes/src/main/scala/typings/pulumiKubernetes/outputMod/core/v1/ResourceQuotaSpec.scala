@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ResourceQuotaSpec defines the desired hard limits to enforce for Quota.
   */
 @js.native
-trait ResourceQuotaSpec extends js.Object {
+trait ResourceQuotaSpec extends StObject {
   
   /**
     * hard is the set of desired hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/
@@ -35,30 +36,18 @@ object ResourceQuotaSpec {
   }
   
   @scala.inline
-  implicit class ResourceQuotaSpecOps[Self <: ResourceQuotaSpec] (val x: Self) extends AnyVal {
+  implicit class ResourceQuotaSpecMutableBuilder[Self <: ResourceQuotaSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHard(value: StringDictionary[String]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScopeSelector(value: ScopeSelector): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHard(value: StringDictionary[String]): Self = this.set("hard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeSelector(value: ScopeSelector): Self = this.set("scopeSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = this.set("scopes", js.Array(value :_*))
-    
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchmakingConfiguration extends js.Object {
+trait MatchmakingConfiguration extends StObject {
   
   /**
     * A flag that indicates whether a match that was created with this configuration must be accepted by the matched players. To require acceptance, set to TRUE.
@@ -96,120 +97,108 @@ object MatchmakingConfiguration {
   }
   
   @scala.inline
-  implicit class MatchmakingConfigurationOps[Self <: MatchmakingConfiguration] (val x: Self) extends AnyVal {
+  implicit class MatchmakingConfigurationMutableBuilder[Self <: MatchmakingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptanceRequired(value: BooleanModel): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptanceRequiredUndefined: Self = StObject.set(x, "AcceptanceRequired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptanceTimeoutSeconds(value: MatchmakingAcceptanceTimeoutInteger): Self = StObject.set(x, "AcceptanceTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptanceRequired(value: BooleanModel): Self = this.set("AcceptanceRequired", value.asInstanceOf[js.Any])
+    def setAcceptanceTimeoutSecondsUndefined: Self = StObject.set(x, "AcceptanceTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def deleteAcceptanceRequired: Self = this.set("AcceptanceRequired", js.undefined)
+    def setAdditionalPlayerCount(value: WholeNumber): Self = StObject.set(x, "AdditionalPlayerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptanceTimeoutSeconds(value: MatchmakingAcceptanceTimeoutInteger): Self = this.set("AcceptanceTimeoutSeconds", value.asInstanceOf[js.Any])
+    def setAdditionalPlayerCountUndefined: Self = StObject.set(x, "AdditionalPlayerCount", js.undefined)
     
     @scala.inline
-    def deleteAcceptanceTimeoutSeconds: Self = this.set("AcceptanceTimeoutSeconds", js.undefined)
+    def setBackfillMode(value: BackfillMode): Self = StObject.set(x, "BackfillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalPlayerCount(value: WholeNumber): Self = this.set("AdditionalPlayerCount", value.asInstanceOf[js.Any])
+    def setBackfillModeUndefined: Self = StObject.set(x, "BackfillMode", js.undefined)
     
     @scala.inline
-    def deleteAdditionalPlayerCount: Self = this.set("AdditionalPlayerCount", js.undefined)
+    def setConfigurationArn(value: MatchmakingConfigurationArn): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfillMode(value: BackfillMode): Self = this.set("BackfillMode", value.asInstanceOf[js.Any])
+    def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
     
     @scala.inline
-    def deleteBackfillMode: Self = this.set("BackfillMode", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationArn(value: MatchmakingConfigurationArn): Self = this.set("ConfigurationArn", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteConfigurationArn: Self = this.set("ConfigurationArn", js.undefined)
+    def setCustomEventData(value: CustomEventData): Self = StObject.set(x, "CustomEventData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCustomEventDataUndefined: Self = StObject.set(x, "CustomEventData", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomEventData(value: CustomEventData): Self = this.set("CustomEventData", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCustomEventData: Self = this.set("CustomEventData", js.undefined)
+    def setGameProperties(value: GamePropertyList): Self = StObject.set(x, "GameProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
     
     @scala.inline
-    def setGamePropertiesVarargs(value: GameProperty*): Self = this.set("GameProperties", js.Array(value :_*))
+    def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameProperties(value: GamePropertyList): Self = this.set("GameProperties", value.asInstanceOf[js.Any])
+    def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
     
     @scala.inline
-    def deleteGameProperties: Self = this.set("GameProperties", js.undefined)
+    def setGameSessionQueueArns(value: QueueArnsList): Self = StObject.set(x, "GameSessionQueueArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionData(value: GameSessionData): Self = this.set("GameSessionData", value.asInstanceOf[js.Any])
+    def setGameSessionQueueArnsUndefined: Self = StObject.set(x, "GameSessionQueueArns", js.undefined)
     
     @scala.inline
-    def deleteGameSessionData: Self = this.set("GameSessionData", js.undefined)
+    def setGameSessionQueueArnsVarargs(value: ArnStringModel*): Self = StObject.set(x, "GameSessionQueueArns", js.Array(value :_*))
     
     @scala.inline
-    def setGameSessionQueueArnsVarargs(value: ArnStringModel*): Self = this.set("GameSessionQueueArns", js.Array(value :_*))
+    def setName(value: MatchmakingIdStringModel): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionQueueArns(value: QueueArnsList): Self = this.set("GameSessionQueueArns", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteGameSessionQueueArns: Self = this.set("GameSessionQueueArns", js.undefined)
+    def setNotificationTarget(value: SnsArnStringModel): Self = StObject.set(x, "NotificationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: MatchmakingIdStringModel): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNotificationTargetUndefined: Self = StObject.set(x, "NotificationTarget", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRequestTimeoutSeconds(value: MatchmakingRequestTimeoutInteger): Self = StObject.set(x, "RequestTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationTarget(value: SnsArnStringModel): Self = this.set("NotificationTarget", value.asInstanceOf[js.Any])
+    def setRequestTimeoutSecondsUndefined: Self = StObject.set(x, "RequestTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def deleteNotificationTarget: Self = this.set("NotificationTarget", js.undefined)
+    def setRuleSetArn(value: MatchmakingRuleSetArn): Self = StObject.set(x, "RuleSetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTimeoutSeconds(value: MatchmakingRequestTimeoutInteger): Self = this.set("RequestTimeoutSeconds", value.asInstanceOf[js.Any])
+    def setRuleSetArnUndefined: Self = StObject.set(x, "RuleSetArn", js.undefined)
     
     @scala.inline
-    def deleteRequestTimeoutSeconds: Self = this.set("RequestTimeoutSeconds", js.undefined)
+    def setRuleSetName(value: MatchmakingIdStringModel): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleSetArn(value: MatchmakingRuleSetArn): Self = this.set("RuleSetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleSetArn: Self = this.set("RuleSetArn", js.undefined)
-    
-    @scala.inline
-    def setRuleSetName(value: MatchmakingIdStringModel): Self = this.set("RuleSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleSetName: Self = this.set("RuleSetName", js.undefined)
+    def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
   }
 }

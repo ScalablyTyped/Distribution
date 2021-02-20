@@ -1,6 +1,7 @@
 package typings.sparqljs.mod
 
 import typings.sparqljs.sparqljsStrings.aggregate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,33 +30,21 @@ object AggregateExpression {
   }
   
   @scala.inline
-  implicit class AggregateExpressionOps[Self <: AggregateExpression] (val x: Self) extends AnyVal {
+  implicit class AggregateExpressionMutableBuilder[Self <: AggregateExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregation(value: String): Self = this.set("aggregation", value.asInstanceOf[js.Any])
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
     @scala.inline
-    def setExpression(value: Expression): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: aggregate): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setType(value: aggregate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

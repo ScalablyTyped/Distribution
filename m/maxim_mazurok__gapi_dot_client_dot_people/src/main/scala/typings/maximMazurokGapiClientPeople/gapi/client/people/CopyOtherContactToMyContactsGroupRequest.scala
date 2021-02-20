@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyOtherContactToMyContactsGroupRequest extends js.Object {
+trait CopyOtherContactToMyContactsGroupRequest extends StObject {
   
   /** Required. A field mask to restrict which fields are copied into the new contact. Valid values are: * emailAddresses * names * phoneNumbers */
   var copyMask: js.UndefOr[String] = js.native
@@ -30,39 +31,27 @@ object CopyOtherContactToMyContactsGroupRequest {
   }
   
   @scala.inline
-  implicit class CopyOtherContactToMyContactsGroupRequestOps[Self <: CopyOtherContactToMyContactsGroupRequest] (val x: Self) extends AnyVal {
+  implicit class CopyOtherContactToMyContactsGroupRequestMutableBuilder[Self <: CopyOtherContactToMyContactsGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyMask(value: String): Self = StObject.set(x, "copyMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyMaskUndefined: Self = StObject.set(x, "copyMask", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadMask(value: String): Self = StObject.set(x, "readMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyMask(value: String): Self = this.set("copyMask", value.asInstanceOf[js.Any])
+    def setReadMaskUndefined: Self = StObject.set(x, "readMask", js.undefined)
     
     @scala.inline
-    def deleteCopyMask: Self = this.set("copyMask", js.undefined)
+    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadMask(value: String): Self = this.set("readMask", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteReadMask: Self = this.set("readMask", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: String*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[String]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

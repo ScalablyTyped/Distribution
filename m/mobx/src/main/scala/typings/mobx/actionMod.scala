@@ -2,25 +2,34 @@ package typings.mobx
 
 import typings.mobx.coreActionMod.IAction
 import typings.std.PropertyDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx/lib/api/action", JSImport.Namespace)
-@js.native
-object actionMod extends js.Object {
+object actionMod {
   
+  @JSImport("mobx/lib/api/action", "action")
+  @js.native
   val action: IActionFactory = js.native
   
+  @JSImport("mobx/lib/api/action", "defineBoundAction")
+  @js.native
   def defineBoundAction(target: js.Any, propertyName: String, fn: js.Function): Unit = js.native
   
+  @JSImport("mobx/lib/api/action", "isAction")
+  @js.native
   def isAction(thing: js.Any): Boolean = js.native
   
+  @JSImport("mobx/lib/api/action", "runInAction")
+  @js.native
   def runInAction[T](block: js.Function0[T]): T = js.native
+  @JSImport("mobx/lib/api/action", "runInAction")
+  @js.native
   def runInAction[T](name: String, block: js.Function0[T]): T = js.native
   
   @js.native
-  trait IActionFactory extends js.Object {
+  trait IActionFactory extends StObject {
     
     def apply(customName: String): js.Function3[
         /* target */ js.Object, 

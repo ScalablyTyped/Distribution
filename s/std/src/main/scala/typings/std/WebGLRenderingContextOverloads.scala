@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGLRenderingContextOverloads extends js.Object {
+trait WebGLRenderingContextOverloads extends StObject {
   
   def bufferData(target: GLenum, data: Null, usage: GLenum): Unit = js.native
   def bufferData(target: GLenum, data: BufferSource, usage: GLenum): Unit = js.native

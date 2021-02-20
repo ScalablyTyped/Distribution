@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsteriskPing extends js.Object {
+trait AsteriskPing extends StObject {
   
   /**
     * Asterisk id info.
@@ -31,27 +32,15 @@ object AsteriskPing {
   }
   
   @scala.inline
-  implicit class AsteriskPingOps[Self <: AsteriskPing] (val x: Self) extends AnyVal {
+  implicit class AsteriskPingMutableBuilder[Self <: AsteriskPing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsterisk_id(value: String): Self = StObject.set(x, "asterisk_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPing(value: String): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsterisk_id(value: String): Self = this.set("asterisk_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPing(value: String): Self = this.set("ping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

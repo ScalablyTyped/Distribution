@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationLink extends js.Object {
+trait LocationLink extends StObject {
   
   /**
     * Span of the origin of this link.
@@ -33,9 +34,13 @@ trait LocationLink extends js.Object {
     */
   var targetUri: DocumentUri = js.native
 }
-@JSImport("vscode-languageserver-types", "LocationLink")
-@js.native
-object LocationLink extends js.Object {
+object LocationLink {
+  
+  @scala.inline
+  def apply(targetRange: Range, targetSelectionRange: Range, targetUri: DocumentUri): LocationLink = {
+    val __obj = js.Dynamic.literal(targetRange = targetRange.asInstanceOf[js.Any], targetSelectionRange = targetSelectionRange.asInstanceOf[js.Any], targetUri = targetUri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationLink]
+  }
   
   /**
     * Creates a LocationLink literal.
@@ -44,7 +49,11 @@ object LocationLink extends js.Object {
     * @param targetSelectionRange The span of the symbol definition at the target.
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
+  @JSImport("vscode-languageserver-types", "LocationLink.create")
+  @js.native
   def create(targetUri: DocumentUri, targetRange: Range, targetSelectionRange: Range): LocationLink = js.native
+  @JSImport("vscode-languageserver-types", "LocationLink.create")
+  @js.native
   def create(
     targetUri: DocumentUri,
     targetRange: Range,
@@ -55,5 +64,26 @@ object LocationLink extends js.Object {
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */
+  @JSImport("vscode-languageserver-types", "LocationLink.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = js.native
+  
+  @scala.inline
+  implicit class LocationLinkMutableBuilder[Self <: LocationLink] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
+    
+    @scala.inline
+    def setTargetRange(value: Range): Self = StObject.set(x, "targetRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTargetSelectionRange(value: Range): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTargetUri(value: DocumentUri): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
+  }
 }

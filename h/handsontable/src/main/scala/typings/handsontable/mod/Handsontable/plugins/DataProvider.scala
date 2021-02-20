@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProvider extends js.Object {
+trait DataProvider extends StObject {
   
   var changes: js.Object = js.native
   
@@ -57,57 +58,45 @@ object DataProvider {
   }
   
   @scala.inline
-  implicit class DataProviderOps[Self <: DataProvider] (val x: Self) extends AnyVal {
+  implicit class DataProviderMutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanges(value: js.Object): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearChanges(value: () => Unit): Self = StObject.set(x, "clearChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectChanges(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "collectChanges", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setChanges(value: js.Object): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearChanges(value: () => Unit): Self = this.set("clearChanges", js.Any.fromFunction0(value))
+    def setGetDataAtCell(value: (Double, Double) => js.Any): Self = StObject.set(x, "getDataAtCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCollectChanges(value: (Double, Double, js.Any) => Unit): Self = this.set("collectChanges", js.Any.fromFunction3(value))
+    def setGetDataByRange(value: (Double, Double, Double, Double) => js.Array[_]): Self = StObject.set(x, "getDataByRange", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetRawDataAtCell(value: (Double, Double) => js.Any): Self = StObject.set(x, "getRawDataAtCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDataAtCell(value: (Double, Double) => js.Any): Self = this.set("getDataAtCell", js.Any.fromFunction2(value))
+    def setGetRawDataByRange(value: (Double, Double, Double, Double) => js.Array[_]): Self = StObject.set(x, "getRawDataByRange", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetDataByRange(value: (Double, Double, Double, Double) => js.Array[_]): Self = this.set("getDataByRange", js.Any.fromFunction4(value))
+    def setGetSourceDataAtCell(value: (Double, Double) => js.Any): Self = StObject.set(x, "getSourceDataAtCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRawDataAtCell(value: (Double, Double) => js.Any): Self = this.set("getRawDataAtCell", js.Any.fromFunction2(value))
+    def setGetSourceDataByRange(value: (Double, Double, Double, Double) => js.Array[_]): Self = StObject.set(x, "getSourceDataByRange", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetRawDataByRange(value: (Double, Double, Double, Double) => js.Array[_]): Self = this.set("getRawDataByRange", js.Any.fromFunction4(value))
+    def setHot(value: Core): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSourceDataAtCell(value: (Double, Double) => js.Any): Self = this.set("getSourceDataAtCell", js.Any.fromFunction2(value))
+    def setIsInDataRange(value: (Double, Double) => Boolean): Self = StObject.set(x, "isInDataRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSourceDataByRange(value: (Double, Double, Double, Double) => js.Array[_]): Self = this.set("getSourceDataByRange", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setHot(value: Core): Self = this.set("hot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsInDataRange(value: (Double, Double) => Boolean): Self = this.set("isInDataRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateSourceData(value: (Double, Double, js.Any) => Unit): Self = this.set("updateSourceData", js.Any.fromFunction3(value))
+    def setUpdateSourceData(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "updateSourceData", js.Any.fromFunction3(value))
   }
 }

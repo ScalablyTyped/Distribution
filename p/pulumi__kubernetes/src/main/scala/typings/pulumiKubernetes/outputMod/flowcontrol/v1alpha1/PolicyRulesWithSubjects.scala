@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.flowcontrol.v1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PolicyRulesWithSubjects prescribes a test that applies to a request to an apiserver. The test considers the subject making the request, the verb being requested, and the resource to be acted upon. This PolicyRulesWithSubjects matches a request if and only if both (a) at least one member of subjects matches the request and (b) at least one member of resourceRules or nonResourceRules matches the request.
   */
 @js.native
-trait PolicyRulesWithSubjects extends js.Object {
+trait PolicyRulesWithSubjects extends StObject {
   
   /**
     * `nonResourceRules` is a list of NonResourcePolicyRules that identify matching requests according to their verb and the target non-resource URL.
@@ -38,36 +39,24 @@ object PolicyRulesWithSubjects {
   }
   
   @scala.inline
-  implicit class PolicyRulesWithSubjectsOps[Self <: PolicyRulesWithSubjects] (val x: Self) extends AnyVal {
+  implicit class PolicyRulesWithSubjectsMutableBuilder[Self <: PolicyRulesWithSubjects] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonResourceRules(value: js.Array[NonResourcePolicyRule]): Self = StObject.set(x, "nonResourceRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonResourceRulesVarargs(value: NonResourcePolicyRule*): Self = StObject.set(x, "nonResourceRules", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceRules(value: js.Array[ResourcePolicyRule]): Self = StObject.set(x, "resourceRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonResourceRulesVarargs(value: NonResourcePolicyRule*): Self = this.set("nonResourceRules", js.Array(value :_*))
+    def setResourceRulesVarargs(value: ResourcePolicyRule*): Self = StObject.set(x, "resourceRules", js.Array(value :_*))
     
     @scala.inline
-    def setNonResourceRules(value: js.Array[NonResourcePolicyRule]): Self = this.set("nonResourceRules", value.asInstanceOf[js.Any])
+    def setSubjects(value: js.Array[Subject]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRulesVarargs(value: ResourcePolicyRule*): Self = this.set("resourceRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceRules(value: js.Array[ResourcePolicyRule]): Self = this.set("resourceRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubjectsVarargs(value: Subject*): Self = this.set("subjects", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubjects(value: js.Array[Subject]): Self = this.set("subjects", value.asInstanceOf[js.Any])
+    def setSubjectsVarargs(value: Subject*): Self = StObject.set(x, "subjects", js.Array(value :_*))
   }
 }

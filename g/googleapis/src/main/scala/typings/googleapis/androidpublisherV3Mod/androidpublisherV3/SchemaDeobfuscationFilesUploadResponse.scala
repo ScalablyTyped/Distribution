@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDeobfuscationFilesUploadResponse extends js.Object {
+trait SchemaDeobfuscationFilesUploadResponse extends StObject {
   
   var deobfuscationFile: js.UndefOr[SchemaDeobfuscationFile] = js.native
 }
@@ -18,24 +19,12 @@ object SchemaDeobfuscationFilesUploadResponse {
   }
   
   @scala.inline
-  implicit class SchemaDeobfuscationFilesUploadResponseOps[Self <: SchemaDeobfuscationFilesUploadResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDeobfuscationFilesUploadResponseMutableBuilder[Self <: SchemaDeobfuscationFilesUploadResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeobfuscationFile(value: SchemaDeobfuscationFile): Self = StObject.set(x, "deobfuscationFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeobfuscationFile(value: SchemaDeobfuscationFile): Self = this.set("deobfuscationFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeobfuscationFile: Self = this.set("deobfuscationFile", js.undefined)
+    def setDeobfuscationFileUndefined: Self = StObject.set(x, "deobfuscationFile", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.vscodeLanguageclient.clientMod
 
 import typings.vscode.mod.FileSystemWatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SynchronizeOptions extends js.Object {
+trait SynchronizeOptions extends StObject {
   
   /**
     * The configuration sections to synchronize. Pushing settings from the
@@ -33,36 +34,24 @@ object SynchronizeOptions {
   }
   
   @scala.inline
-  implicit class SynchronizeOptionsOps[Self <: SynchronizeOptions] (val x: Self) extends AnyVal {
+  implicit class SynchronizeOptionsMutableBuilder[Self <: SynchronizeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSection(value: String | js.Array[String]): Self = StObject.set(x, "configurationSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSectionUndefined: Self = StObject.set(x, "configurationSection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationSectionVarargs(value: String*): Self = StObject.set(x, "configurationSection", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationSectionVarargs(value: String*): Self = this.set("configurationSection", js.Array(value :_*))
+    def setFileEvents(value: FileSystemWatcher | js.Array[FileSystemWatcher]): Self = StObject.set(x, "fileEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSection(value: String | js.Array[String]): Self = this.set("configurationSection", value.asInstanceOf[js.Any])
+    def setFileEventsUndefined: Self = StObject.set(x, "fileEvents", js.undefined)
     
     @scala.inline
-    def deleteConfigurationSection: Self = this.set("configurationSection", js.undefined)
-    
-    @scala.inline
-    def setFileEventsVarargs(value: FileSystemWatcher*): Self = this.set("fileEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileEvents(value: FileSystemWatcher | js.Array[FileSystemWatcher]): Self = this.set("fileEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileEvents: Self = this.set("fileEvents", js.undefined)
+    def setFileEventsVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "fileEvents", js.Array(value :_*))
   }
 }

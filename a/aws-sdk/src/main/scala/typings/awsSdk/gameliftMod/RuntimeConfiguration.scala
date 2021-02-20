@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuntimeConfiguration extends js.Object {
+trait RuntimeConfiguration extends StObject {
   
   /**
     * The maximum amount of time (in seconds) that a game session can remain in status ACTIVATING. If the game session is not active before the timeout, activation is terminated and the game session status is changed to TERMINATED.
@@ -31,39 +32,27 @@ object RuntimeConfiguration {
   }
   
   @scala.inline
-  implicit class RuntimeConfigurationOps[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
+  implicit class RuntimeConfigurationMutableBuilder[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSessionActivationTimeoutSeconds(value: GameSessionActivationTimeoutSeconds): Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameSessionActivationTimeoutSecondsUndefined: Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxConcurrentGameSessionActivations(value: MaxConcurrentGameSessionActivations): Self = StObject.set(x, "MaxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionActivationTimeoutSeconds(value: GameSessionActivationTimeoutSeconds): Self = this.set("GameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
+    def setMaxConcurrentGameSessionActivationsUndefined: Self = StObject.set(x, "MaxConcurrentGameSessionActivations", js.undefined)
     
     @scala.inline
-    def deleteGameSessionActivationTimeoutSeconds: Self = this.set("GameSessionActivationTimeoutSeconds", js.undefined)
+    def setServerProcesses(value: ServerProcessList): Self = StObject.set(x, "ServerProcesses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentGameSessionActivations(value: MaxConcurrentGameSessionActivations): Self = this.set("MaxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
+    def setServerProcessesUndefined: Self = StObject.set(x, "ServerProcesses", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentGameSessionActivations: Self = this.set("MaxConcurrentGameSessionActivations", js.undefined)
-    
-    @scala.inline
-    def setServerProcessesVarargs(value: ServerProcess*): Self = this.set("ServerProcesses", js.Array(value :_*))
-    
-    @scala.inline
-    def setServerProcesses(value: ServerProcessList): Self = this.set("ServerProcesses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerProcesses: Self = this.set("ServerProcesses", js.undefined)
+    def setServerProcessesVarargs(value: ServerProcess*): Self = StObject.set(x, "ServerProcesses", js.Array(value :_*))
   }
 }

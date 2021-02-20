@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PurchaseReservedCacheNodesOfferingMessage extends js.Object {
+trait PurchaseReservedCacheNodesOfferingMessage extends StObject {
   
   /**
     * The number of cache node instances to reserve. Default: 1 
@@ -31,33 +32,21 @@ object PurchaseReservedCacheNodesOfferingMessage {
   }
   
   @scala.inline
-  implicit class PurchaseReservedCacheNodesOfferingMessageOps[Self <: PurchaseReservedCacheNodesOfferingMessage] (val x: Self) extends AnyVal {
+  implicit class PurchaseReservedCacheNodesOfferingMessageMutableBuilder[Self <: PurchaseReservedCacheNodesOfferingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheNodeCount(value: IntegerOptional): Self = StObject.set(x, "CacheNodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheNodeCountUndefined: Self = StObject.set(x, "CacheNodeCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedCacheNodeId(value: String): Self = StObject.set(x, "ReservedCacheNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedCacheNodesOfferingId(value: String): Self = this.set("ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
+    def setReservedCacheNodeIdUndefined: Self = StObject.set(x, "ReservedCacheNodeId", js.undefined)
     
     @scala.inline
-    def setCacheNodeCount(value: IntegerOptional): Self = this.set("CacheNodeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheNodeCount: Self = this.set("CacheNodeCount", js.undefined)
-    
-    @scala.inline
-    def setReservedCacheNodeId(value: String): Self = this.set("ReservedCacheNodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedCacheNodeId: Self = this.set("ReservedCacheNodeId", js.undefined)
+    def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.keymaster
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Keymaster extends js.Object {
+trait Keymaster extends StObject {
   
   def apply(key: String, callback: KeyHandler): Unit = js.native
   def apply(key: String, scope: String, callback: KeyHandler): Unit = js.native

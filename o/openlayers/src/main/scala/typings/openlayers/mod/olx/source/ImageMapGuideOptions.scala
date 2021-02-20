@@ -4,12 +4,13 @@ import typings.openlayers.mod.GlobalObject
 import typings.openlayers.mod.Image
 import typings.openlayers.mod.ImageLoadFunctionType
 import typings.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageMapGuideOptions extends js.Object {
+trait ImageMapGuideOptions extends StObject {
   
   var displayDpi: js.UndefOr[Double] = js.native
   
@@ -40,81 +41,69 @@ object ImageMapGuideOptions {
   }
   
   @scala.inline
-  implicit class ImageMapGuideOptionsOps[Self <: ImageMapGuideOptions] (val x: Self) extends AnyVal {
+  implicit class ImageMapGuideOptionsMutableBuilder[Self <: ImageMapGuideOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayDpi(value: Double): Self = StObject.set(x, "displayDpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayDpiUndefined: Self = StObject.set(x, "displayDpi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidpi(value: Boolean): Self = StObject.set(x, "hidpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDpi(value: Double): Self = this.set("displayDpi", value.asInstanceOf[js.Any])
+    def setHidpiUndefined: Self = StObject.set(x, "hidpi", js.undefined)
     
     @scala.inline
-    def deleteDisplayDpi: Self = this.set("displayDpi", js.undefined)
+    def setImageLoadFunction(value: (/* image */ Image, /* url */ String) => Unit): Self = StObject.set(x, "imageLoadFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHidpi(value: Boolean): Self = this.set("hidpi", value.asInstanceOf[js.Any])
+    def setImageLoadFunctionUndefined: Self = StObject.set(x, "imageLoadFunction", js.undefined)
     
     @scala.inline
-    def deleteHidpi: Self = this.set("hidpi", js.undefined)
+    def setMetersPerUnit(value: Double): Self = StObject.set(x, "metersPerUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLoadFunction(value: (/* image */ Image, /* url */ String) => Unit): Self = this.set("imageLoadFunction", js.Any.fromFunction2(value))
+    def setMetersPerUnitUndefined: Self = StObject.set(x, "metersPerUnit", js.undefined)
     
     @scala.inline
-    def deleteImageLoadFunction: Self = this.set("imageLoadFunction", js.undefined)
+    def setParams(value: GlobalObject): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetersPerUnit(value: Double): Self = this.set("metersPerUnit", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteMetersPerUnit: Self = this.set("metersPerUnit", js.undefined)
+    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: GlobalObject): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
     @scala.inline
-    def deleteRatio: Self = this.set("ratio", js.undefined)
+    def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
     
     @scala.inline
-    def setResolutionsVarargs(value: Double*): Self = this.set("resolutions", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutions(value: js.Array[Double]): Self = this.set("resolutions", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteResolutions: Self = this.set("resolutions", js.undefined)
+    def setUseOverlay(value: Boolean): Self = StObject.set(x, "useOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUseOverlay(value: Boolean): Self = this.set("useOverlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseOverlay: Self = this.set("useOverlay", js.undefined)
+    def setUseOverlayUndefined: Self = StObject.set(x, "useOverlay", js.undefined)
   }
 }

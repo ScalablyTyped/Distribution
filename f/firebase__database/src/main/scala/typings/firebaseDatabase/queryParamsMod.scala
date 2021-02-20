@@ -3,16 +3,16 @@ package typings.firebaseDatabase
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeFilterMod.NodeFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/QueryParams", JSImport.Namespace)
-@js.native
-object queryParamsMod extends js.Object {
+object queryParamsMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams")
   @js.native
-  class QueryParams () extends js.Object {
+  class QueryParams () extends StObject {
     
     /**
       * @return {!QueryParams}
@@ -174,14 +174,15 @@ object queryParamsMod extends js.Object {
     var viewFrom_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object QueryParams extends js.Object {
+  object QueryParams {
     
     /**
       * Default, empty query parameters
       * @type {!QueryParams}
       * @const
       */
+    @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams.DEFAULT")
+    @js.native
     val DEFAULT: QueryParams = js.native
     
     /**
@@ -190,6 +191,8 @@ object queryParamsMod extends js.Object {
       * @enum {string}
       * @private
       */
+    @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams.REST_QUERY_CONSTANTS_")
+    @js.native
     val REST_QUERY_CONSTANTS_ : js.Any = js.native
     
     /**
@@ -198,6 +201,8 @@ object queryParamsMod extends js.Object {
       * @enum {string}
       * @private
       */
+    @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams.WIRE_PROTOCOL_CONSTANTS_")
+    @js.native
     val WIRE_PROTOCOL_CONSTANTS_ : js.Any = js.native
   }
 }

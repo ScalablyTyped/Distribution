@@ -1,11 +1,12 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeRaws extends js.Object {
+trait NodeRaws extends StObject {
   
   /**
     * The space symbols after the last child of the node to the end of
@@ -59,66 +60,54 @@ object NodeRaws {
   }
   
   @scala.inline
-  implicit class NodeRawsOps[Self <: NodeRaws] (val x: Self) extends AnyVal {
+  implicit class NodeRawsMutableBuilder[Self <: NodeRaws] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterName(value: String): Self = StObject.set(x, "afterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterNameUndefined: Self = StObject.set(x, "afterName", js.undefined)
     
     @scala.inline
-    def setAfter(value: String): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterName(value: String): Self = this.set("afterName", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfterName: Self = this.set("afterName", js.undefined)
+    def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: String): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setImportant(value: String): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBetween(value: String): Self = this.set("between", value.asInstanceOf[js.Any])
+    def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
     
     @scala.inline
-    def deleteBetween: Self = this.set("between", js.undefined)
+    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportant(value: String): Self = this.set("important", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteImportant: Self = this.set("important", js.undefined)
+    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setSemicolon(value: Boolean): Self = StObject.set(x, "semicolon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: String): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
-    
-    @scala.inline
-    def setSemicolon(value: Boolean): Self = this.set("semicolon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemicolon: Self = this.set("semicolon", js.undefined)
+    def setSemicolonUndefined: Self = StObject.set(x, "semicolon", js.undefined)
   }
 }

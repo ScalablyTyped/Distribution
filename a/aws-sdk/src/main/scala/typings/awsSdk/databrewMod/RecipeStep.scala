@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipeStep extends js.Object {
+trait RecipeStep extends StObject {
   
   /**
     * The particular action to be performed in the recipe step.
@@ -26,30 +27,18 @@ object RecipeStep {
   }
   
   @scala.inline
-  implicit class RecipeStepOps[Self <: RecipeStep] (val x: Self) extends AnyVal {
+  implicit class RecipeStepMutableBuilder[Self <: RecipeStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: RecipeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionExpressions(value: ConditionExpressionList): Self = StObject.set(x, "ConditionExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionExpressionsUndefined: Self = StObject.set(x, "ConditionExpressions", js.undefined)
     
     @scala.inline
-    def setAction(value: RecipeAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConditionExpressionsVarargs(value: ConditionExpression*): Self = this.set("ConditionExpressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditionExpressions(value: ConditionExpressionList): Self = this.set("ConditionExpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditionExpressions: Self = this.set("ConditionExpressions", js.undefined)
+    def setConditionExpressionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "ConditionExpressions", js.Array(value :_*))
   }
 }

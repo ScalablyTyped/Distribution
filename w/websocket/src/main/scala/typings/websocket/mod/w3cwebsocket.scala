@@ -6,13 +6,14 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Error
 import typings.websocket.websocketStrings.arraybuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("websocket", "w3cwebsocket")
 @js.native
-class w3cwebsocket protected () extends js.Object {
+class w3cwebsocket protected () extends StObject {
   def this(url: String) = this()
   def this(url: String, protocols: String) = this()
   def this(url: String, protocols: js.Array[String]) = this()
@@ -367,15 +368,33 @@ class w3cwebsocket protected () extends js.Object {
   var url: String = js.native
 }
 /* static members */
-@JSImport("websocket", "w3cwebsocket")
-@js.native
-object w3cwebsocket extends js.Object {
+object w3cwebsocket {
   
-  var CLOSED: Double = js.native
+  @JSImport("websocket", "w3cwebsocket")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var CLOSING: Double = js.native
+  @JSImport("websocket", "w3cwebsocket.CLOSED")
+  @js.native
+  def CLOSED: Double = js.native
+  @scala.inline
+  def CLOSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
   
-  var CONNECTING: Double = js.native
+  @JSImport("websocket", "w3cwebsocket.CLOSING")
+  @js.native
+  def CLOSING: Double = js.native
+  @scala.inline
+  def CLOSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
   
-  var OPEN: Double = js.native
+  @JSImport("websocket", "w3cwebsocket.CONNECTING")
+  @js.native
+  def CONNECTING: Double = js.native
+  @scala.inline
+  def CONNECTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("websocket", "w3cwebsocket.OPEN")
+  @js.native
+  def OPEN: Double = js.native
+  @scala.inline
+  def OPEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
 }

@@ -2,13 +2,14 @@ package typings.jsrsasign.jsrsasign
 
 import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tom Wu's RSA Key class and extension */
 @js.native
-trait RSAKey extends js.Object {
+trait RSAKey extends StObject {
   
   /**
     * read an ASN.1 hexadecimal string of X.509 RSA public key certificate
@@ -73,39 +74,27 @@ object RSAKey {
   }
   
   @scala.inline
-  implicit class RSAKeyOps[Self <: RSAKey] (val x: Self) extends AnyVal {
+  implicit class RSAKeyMutableBuilder[Self <: RSAKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadCertPubKeyHex(value: (String, Double) => Unit): Self = StObject.set(x, "readCertPubKeyHex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadPKCS5PrvKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS5PrvKeyHex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadPKCS5PubKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS5PubKeyHex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadCertPubKeyHex(value: (String, Double) => Unit): Self = this.set("readCertPubKeyHex", js.Any.fromFunction2(value))
+    def setReadPKCS8PrvKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS8PrvKeyHex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadPKCS5PrvKeyHex(value: String => Unit): Self = this.set("readPKCS5PrvKeyHex", js.Any.fromFunction1(value))
+    def setReadPKCS8PubKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS8PubKeyHex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadPKCS5PubKeyHex(value: String => Unit): Self = this.set("readPKCS5PubKeyHex", js.Any.fromFunction1(value))
+    def setReadPrivateKeyFromPEMString(value: String => Unit): Self = StObject.set(x, "readPrivateKeyFromPEMString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadPKCS8PrvKeyHex(value: String => Unit): Self = this.set("readPKCS8PrvKeyHex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadPKCS8PubKeyHex(value: String => Unit): Self = this.set("readPKCS8PubKeyHex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadPrivateKeyFromPEMString(value: String => Unit): Self = this.set("readPrivateKeyFromPEMString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVerify(value: (String, String) => `0` | `1`): Self = this.set("verify", js.Any.fromFunction2(value))
+    def setVerify(value: (String, String) => `0` | `1`): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
   }
 }

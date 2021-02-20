@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesDeleteFileInputMod.DeleteFileInpu
 import typings.awsSdkClientCodecommitNode.typesDeleteFileOutputMod.DeleteFileOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/DeleteFileCommand", JSImport.Namespace)
-@js.native
-object deleteFileCommandMod extends js.Object {
+object deleteFileCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/DeleteFileCommand", "DeleteFileCommand")
   @js.native
   class DeleteFileCommand protected () extends Command[
           InputTypesUnion, 

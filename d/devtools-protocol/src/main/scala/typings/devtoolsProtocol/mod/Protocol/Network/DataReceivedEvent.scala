@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataReceivedEvent extends js.Object {
+trait DataReceivedEvent extends StObject {
   
   /**
     * Data chunk length.
@@ -37,30 +38,18 @@ object DataReceivedEvent {
   }
   
   @scala.inline
-  implicit class DataReceivedEventOps[Self <: DataReceivedEvent] (val x: Self) extends AnyVal {
+  implicit class DataReceivedEventMutableBuilder[Self <: DataReceivedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLength(value: integer): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodedDataLength(value: integer): Self = StObject.set(x, "encodedDataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLength(value: integer): Self = this.set("dataLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncodedDataLength(value: integer): Self = this.set("encodedDataLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

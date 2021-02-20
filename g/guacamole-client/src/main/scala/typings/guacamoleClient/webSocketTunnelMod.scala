@@ -1,14 +1,14 @@
 package typings.guacamoleClient
 
 import typings.guacamoleClient.tunnelMod.Tunnel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/WebSocketTunnel", JSImport.Namespace)
-@js.native
-object webSocketTunnelMod extends js.Object {
+object webSocketTunnelMod {
   
+  @JSImport("guacamole-client/lib/WebSocketTunnel", "WebSocketTunnel")
   @js.native
   class WebSocketTunnel protected () extends Tunnel {
     /**

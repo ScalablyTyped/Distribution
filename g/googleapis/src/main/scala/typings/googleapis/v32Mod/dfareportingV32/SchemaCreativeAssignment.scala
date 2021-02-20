@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creative Assignment.
   */
 @js.native
-trait SchemaCreativeAssignment extends js.Object {
+trait SchemaCreativeAssignment extends StObject {
   
   /**
     * Whether this creative assignment is active. When true, the creative will
@@ -102,105 +103,93 @@ object SchemaCreativeAssignment {
   }
   
   @scala.inline
-  implicit class SchemaCreativeAssignmentOps[Self <: SchemaCreativeAssignment] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeAssignmentMutableBuilder[Self <: SchemaCreativeAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyEventTags(value: Boolean): Self = StObject.set(x, "applyEventTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setApplyEventTagsUndefined: Self = StObject.set(x, "applyEventTags", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setClickThroughUrl(value: SchemaClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyEventTags(value: Boolean): Self = this.set("applyEventTags", value.asInstanceOf[js.Any])
+    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
     @scala.inline
-    def deleteApplyEventTags: Self = this.set("applyEventTags", js.undefined)
+    def setCompanionCreativeOverrides(value: js.Array[SchemaCompanionClickThroughOverride]): Self = StObject.set(x, "companionCreativeOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrl(value: SchemaClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    def setCompanionCreativeOverridesUndefined: Self = StObject.set(x, "companionCreativeOverrides", js.undefined)
     
     @scala.inline
-    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
+    def setCompanionCreativeOverridesVarargs(value: SchemaCompanionClickThroughOverride*): Self = StObject.set(x, "companionCreativeOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setCompanionCreativeOverridesVarargs(value: SchemaCompanionClickThroughOverride*): Self = this.set("companionCreativeOverrides", js.Array(value :_*))
+    def setCreativeGroupAssignments(value: js.Array[SchemaCreativeGroupAssignment]): Self = StObject.set(x, "creativeGroupAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanionCreativeOverrides(value: js.Array[SchemaCompanionClickThroughOverride]): Self = this.set("companionCreativeOverrides", value.asInstanceOf[js.Any])
+    def setCreativeGroupAssignmentsUndefined: Self = StObject.set(x, "creativeGroupAssignments", js.undefined)
     
     @scala.inline
-    def deleteCompanionCreativeOverrides: Self = this.set("companionCreativeOverrides", js.undefined)
+    def setCreativeGroupAssignmentsVarargs(value: SchemaCreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setCreativeGroupAssignmentsVarargs(value: SchemaCreativeGroupAssignment*): Self = this.set("creativeGroupAssignments", js.Array(value :_*))
+    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeGroupAssignments(value: js.Array[SchemaCreativeGroupAssignment]): Self = this.set("creativeGroupAssignments", value.asInstanceOf[js.Any])
+    def setCreativeIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "creativeIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreativeGroupAssignments: Self = this.set("creativeGroupAssignments", js.undefined)
+    def setCreativeIdDimensionValueUndefined: Self = StObject.set(x, "creativeIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
+    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     @scala.inline
-    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeIdDimensionValue(value: SchemaDimensionValue): Self = this.set("creativeIdDimensionValue", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreativeIdDimensionValue: Self = this.set("creativeIdDimensionValue", js.undefined)
+    def setRichMediaExitOverrides(value: js.Array[SchemaRichMediaExitOverride]): Self = StObject.set(x, "richMediaExitOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setRichMediaExitOverridesUndefined: Self = StObject.set(x, "richMediaExitOverrides", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setRichMediaExitOverridesVarargs(value: SchemaRichMediaExitOverride*): Self = StObject.set(x, "richMediaExitOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setRichMediaExitOverridesVarargs(value: SchemaRichMediaExitOverride*): Self = this.set("richMediaExitOverrides", js.Array(value :_*))
+    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRichMediaExitOverrides(value: js.Array[SchemaRichMediaExitOverride]): Self = this.set("richMediaExitOverrides", value.asInstanceOf[js.Any])
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     @scala.inline
-    def deleteRichMediaExitOverrides: Self = this.set("richMediaExitOverrides", js.undefined)
+    def setSslCompliant(value: Boolean): Self = StObject.set(x, "sslCompliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: Double): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setSslCompliantUndefined: Self = StObject.set(x, "sslCompliant", js.undefined)
     
     @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

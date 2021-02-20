@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsMeasureTypeOptions extends js.Object {
+trait AnnotationsMeasureTypeOptions extends StObject {
   
   var background: js.UndefOr[AnnotationsMeasureTypeBackgroundOptions] = js.native
   
@@ -57,75 +58,63 @@ object AnnotationsMeasureTypeOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsMeasureTypeOptionsOps[Self <: AnnotationsMeasureTypeOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsMeasureTypeOptionsMutableBuilder[Self <: AnnotationsMeasureTypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: AnnotationsMeasureTypeBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrosshairX(value: AnnotationsMeasureTypeCrosshairXOptions): Self = StObject.set(x, "crosshairX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: AnnotationsMeasureTypeBackgroundOptions): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setCrosshairXUndefined: Self = StObject.set(x, "crosshairX", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setCrosshairY(value: AnnotationsMeasureTypeCrosshairYOptions): Self = StObject.set(x, "crosshairY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairX(value: AnnotationsMeasureTypeCrosshairXOptions): Self = this.set("crosshairX", value.asInstanceOf[js.Any])
+    def setCrosshairYUndefined: Self = StObject.set(x, "crosshairY", js.undefined)
     
     @scala.inline
-    def deleteCrosshairX: Self = this.set("crosshairX", js.undefined)
+    def setLabel(value: AnnotationsMeasureTypeLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairY(value: AnnotationsMeasureTypeCrosshairYOptions): Self = this.set("crosshairY", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteCrosshairY: Self = this.set("crosshairY", js.undefined)
+    def setLine(value: AnnotationsMeasureTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: AnnotationsMeasureTypeLabelOptions): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setPoints(value: js.Array[AnnotationsMeasureTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: AnnotationsMeasureTypeLineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setPointsVarargs(value: AnnotationsMeasureTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: AnnotationsMeasureTypePointsOptions*): Self = this.set("points", js.Array(value :_*))
+    def setSelectType(value: String): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[AnnotationsMeasureTypePointsOptions]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setSelectTypeUndefined: Self = StObject.set(x, "selectType", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectType(value: String): Self = this.set("selectType", value.asInstanceOf[js.Any])
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def deleteSelectType: Self = this.set("selectType", js.undefined)
+    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
-    
-    @scala.inline
-    def setYAxis(value: Double): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies errors related to MediaStreamSource . */
 @JSGlobal("Windows.Media.Core.MediaStreamSourceErrorStatus")
 @js.native
-object MediaStreamSourceErrorStatus extends js.Object {
+object MediaStreamSourceErrorStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Core.MediaStreamSourceErrorStatus with Double] = js.native

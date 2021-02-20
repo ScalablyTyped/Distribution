@@ -14,23 +14,22 @@ import typings.tsMockito.argCaptorMod.ArgCaptor8
 import typings.tsMockito.argCaptorMod.ArgCaptor9
 import typings.tsMockito.methodStubSetterMod.MethodStubSetter
 import typings.tsMockito.methodStubVerificatorMod.MethodStubVerificator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Fn0 extends js.Object {
+  trait Fn0 extends StObject {
     
     def apply[T](method: T): MethodStubSetter[T, Unit, Error] = js.native
     def apply[T](method: js.Promise[T]): MethodStubSetter[js.Promise[T], T, Error] = js.native
   }
   
   @js.native
-  trait Fn1 extends js.Object {
+  trait Fn1 extends StObject {
     
     def apply[T0](method: js.Function1[/* a */ T0, _]): ArgCaptor1[T0] = js.native
     def apply[T0, T1](method: js.Function2[/* a */ T0, /* b */ T1, _]): ArgCaptor2[T0, T1] = js.native
@@ -86,13 +85,13 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply[T](expectedValue: T): T = js.native
   }
   
   @js.native
-  trait FnCallClazz extends js.Object {
+  trait FnCallClazz extends StObject {
     
     def apply[T](): T = js.native
     def apply[T](clazz: js.Function with js.Object): T = js.native
@@ -101,19 +100,19 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallExpectedClass extends js.Object {
+  trait FnCallExpectedClass extends StObject {
     
     def apply[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): js.Any = js.native
   }
   
   @js.native
-  trait FnCallMethod extends js.Object {
+  trait FnCallMethod extends StObject {
     
     def apply[T](method: T): MethodStubVerificator[T] = js.native
   }
   
   @js.native
-  trait FnCallMockedValues extends js.Object {
+  trait FnCallMockedValues extends StObject {
     
     def apply[T](mockedValues: T*): Unit = js.native
   }

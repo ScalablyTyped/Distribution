@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartMatchBackfillInput extends js.Object {
+trait StartMatchBackfillInput extends StObject {
   
   /**
     * Name of the matchmaker to use for this request. You can use either the configuration name or ARN value. The ARN of the matchmaker that was used with the original game session is listed in the GameSession object, MatchmakerData property.
@@ -40,36 +41,24 @@ object StartMatchBackfillInput {
   }
   
   @scala.inline
-  implicit class StartMatchBackfillInputOps[Self <: StartMatchBackfillInput] (val x: Self) extends AnyVal {
+  implicit class StartMatchBackfillInputMutableBuilder[Self <: StartMatchBackfillInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationName(value: MatchmakingConfigurationName): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameSessionArn(value: ArnStringModel): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationName(value: MatchmakingConfigurationName): Self = this.set("ConfigurationName", value.asInstanceOf[js.Any])
+    def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
     
     @scala.inline
-    def setGameSessionArn(value: ArnStringModel): Self = this.set("GameSessionArn", value.asInstanceOf[js.Any])
+    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayersVarargs(value: Player*): Self = this.set("Players", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlayers(value: PlayerList): Self = this.set("Players", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = this.set("TicketId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicketId: Self = this.set("TicketId", js.undefined)
+    def setTicketIdUndefined: Self = StObject.set(x, "TicketId", js.undefined)
   }
 }

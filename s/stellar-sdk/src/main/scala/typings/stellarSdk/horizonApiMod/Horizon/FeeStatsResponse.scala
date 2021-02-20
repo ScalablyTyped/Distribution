@@ -1,11 +1,12 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeeStatsResponse extends js.Object {
+trait FeeStatsResponse extends StObject {
   
   var fee_charged: FeeDistribution = js.native
   
@@ -32,33 +33,21 @@ object FeeStatsResponse {
   }
   
   @scala.inline
-  implicit class FeeStatsResponseOps[Self <: FeeStatsResponse] (val x: Self) extends AnyVal {
+  implicit class FeeStatsResponseMutableBuilder[Self <: FeeStatsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFee_charged(value: FeeDistribution): Self = StObject.set(x, "fee_charged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLast_ledger(value: String): Self = StObject.set(x, "last_ledger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast_ledger_base_fee(value: String): Self = StObject.set(x, "last_ledger_base_fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee_charged(value: FeeDistribution): Self = this.set("fee_charged", value.asInstanceOf[js.Any])
+    def setLedger_capacity_usage(value: String): Self = StObject.set(x, "ledger_capacity_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_ledger(value: String): Self = this.set("last_ledger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_ledger_base_fee(value: String): Self = this.set("last_ledger_base_fee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLedger_capacity_usage(value: String): Self = this.set("ledger_capacity_usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax_fee(value: FeeDistribution): Self = this.set("max_fee", value.asInstanceOf[js.Any])
+    def setMax_fee(value: FeeDistribution): Self = StObject.set(x, "max_fee", value.asInstanceOf[js.Any])
   }
 }

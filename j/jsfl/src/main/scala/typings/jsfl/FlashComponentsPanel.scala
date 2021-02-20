@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashComponentsPanel extends js.Object {
+trait FlashComponentsPanel extends StObject {
   
   def addItemToDocument(): js.Any = js.native
   
@@ -20,24 +21,12 @@ object FlashComponentsPanel {
   }
   
   @scala.inline
-  implicit class FlashComponentsPanelOps[Self <: FlashComponentsPanel] (val x: Self) extends AnyVal {
+  implicit class FlashComponentsPanelMutableBuilder[Self <: FlashComponentsPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddItemToDocument(value: () => js.Any): Self = StObject.set(x, "addItemToDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddItemToDocument(value: () => js.Any): Self = this.set("addItemToDocument", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReload(value: () => js.Any): Self = this.set("reload", js.Any.fromFunction0(value))
+    def setReload(value: () => js.Any): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
   }
 }

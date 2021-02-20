@@ -1,5 +1,6 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cookieclicker.cookieclickerStrings.shadow
   - typings.cookieclicker.cookieclickerStrings.dungeon
 */
-trait AchievementPool extends js.Object
+trait AchievementPool extends StObject
 object AchievementPool {
   
   @scala.inline

@@ -2,12 +2,13 @@ package typings.evernote.anon
 
 import typings.evernote.mod.Types.NoteAttributes
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attributes extends js.Object {
+trait Attributes extends StObject {
   
   var attributes: js.UndefOr[NoteAttributes] = js.native
   
@@ -42,93 +43,81 @@ object Attributes {
   }
   
   @scala.inline
-  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: NoteAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: NoteAttributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLength(value: Double): Self = this.set("contentLength", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteContentLength: Self = this.set("contentLength", js.undefined)
+    def setDeleted(value: Timestamp): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Timestamp): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setLargestResourceMime(value: String): Self = StObject.set(x, "largestResourceMime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setLargestResourceMimeUndefined: Self = StObject.set(x, "largestResourceMime", js.undefined)
     
     @scala.inline
-    def deleteGuid: Self = this.set("guid", js.undefined)
+    def setLargestResourceSize(value: Double): Self = StObject.set(x, "largestResourceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargestResourceMime(value: String): Self = this.set("largestResourceMime", value.asInstanceOf[js.Any])
+    def setLargestResourceSizeUndefined: Self = StObject.set(x, "largestResourceSize", js.undefined)
     
     @scala.inline
-    def deleteLargestResourceMime: Self = this.set("largestResourceMime", js.undefined)
+    def setNotebookGuid(value: String): Self = StObject.set(x, "notebookGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargestResourceSize(value: Double): Self = this.set("largestResourceSize", value.asInstanceOf[js.Any])
+    def setNotebookGuidUndefined: Self = StObject.set(x, "notebookGuid", js.undefined)
     
     @scala.inline
-    def deleteLargestResourceSize: Self = this.set("largestResourceSize", js.undefined)
+    def setTagGuids(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "tagGuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookGuid(value: String): Self = this.set("notebookGuid", value.asInstanceOf[js.Any])
+    def setTagGuidsUndefined: Self = StObject.set(x, "tagGuids", js.undefined)
     
     @scala.inline
-    def deleteNotebookGuid: Self = this.set("notebookGuid", js.undefined)
+    def setTagGuidsVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "tagGuids", js.Array(value :_*))
     
     @scala.inline
-    def setTagGuidsVarargs(value: typings.evernote.mod.Types.Guid*): Self = this.set("tagGuids", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagGuids(value: js.Array[typings.evernote.mod.Types.Guid]): Self = this.set("tagGuids", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTagGuids: Self = this.set("tagGuids", js.undefined)
+    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = this.set("updateSequenceNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSequenceNum: Self = this.set("updateSequenceNum", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

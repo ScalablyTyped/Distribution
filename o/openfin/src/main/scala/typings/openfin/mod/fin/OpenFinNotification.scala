@@ -1,5 +1,6 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Notifications are a child or your application that are controlled by the runtime.
   */
 @js.native
-trait OpenFinNotification extends js.Object {
+trait OpenFinNotification extends StObject {
   
   /**
     * Closes the notification.

@@ -1,12 +1,13 @@
 package typings.handlebars
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logger extends js.Object {
+trait Logger extends StObject {
   
   var DEBUG: Double = js.native
   
@@ -39,39 +40,27 @@ object Logger {
   }
   
   @scala.inline
-  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEBUG(value: Double): Self = this.set("DEBUG", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: Double): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setLog(value: (Double, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setINFO(value: Double): Self = this.set("INFO", value.asInstanceOf[js.Any])
+    def setMethodMap(value: NumberDictionary[String]): Self = StObject.set(x, "methodMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWARN(value: Double): Self = this.set("WARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLog(value: (Double, String) => Unit): Self = this.set("log", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMethodMap(value: NumberDictionary[String]): Self = this.set("methodMap", value.asInstanceOf[js.Any])
+    def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
   }
 }

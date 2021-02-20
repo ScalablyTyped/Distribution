@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceDetails extends js.Object {
+trait InstanceDetails extends StObject {
   
   /**
     * The Amazon EC2 instances that AWS recommends that you purchase.
@@ -41,48 +42,36 @@ object InstanceDetails {
   }
   
   @scala.inline
-  implicit class InstanceDetailsOps[Self <: InstanceDetails] (val x: Self) extends AnyVal {
+  implicit class InstanceDetailsMutableBuilder[Self <: InstanceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEC2InstanceDetails(value: EC2InstanceDetails): Self = StObject.set(x, "EC2InstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEC2InstanceDetailsUndefined: Self = StObject.set(x, "EC2InstanceDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setESInstanceDetails(value: ESInstanceDetails): Self = StObject.set(x, "ESInstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEC2InstanceDetails(value: EC2InstanceDetails): Self = this.set("EC2InstanceDetails", value.asInstanceOf[js.Any])
+    def setESInstanceDetailsUndefined: Self = StObject.set(x, "ESInstanceDetails", js.undefined)
     
     @scala.inline
-    def deleteEC2InstanceDetails: Self = this.set("EC2InstanceDetails", js.undefined)
+    def setElastiCacheInstanceDetails(value: ElastiCacheInstanceDetails): Self = StObject.set(x, "ElastiCacheInstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setESInstanceDetails(value: ESInstanceDetails): Self = this.set("ESInstanceDetails", value.asInstanceOf[js.Any])
+    def setElastiCacheInstanceDetailsUndefined: Self = StObject.set(x, "ElastiCacheInstanceDetails", js.undefined)
     
     @scala.inline
-    def deleteESInstanceDetails: Self = this.set("ESInstanceDetails", js.undefined)
+    def setRDSInstanceDetails(value: RDSInstanceDetails): Self = StObject.set(x, "RDSInstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElastiCacheInstanceDetails(value: ElastiCacheInstanceDetails): Self = this.set("ElastiCacheInstanceDetails", value.asInstanceOf[js.Any])
+    def setRDSInstanceDetailsUndefined: Self = StObject.set(x, "RDSInstanceDetails", js.undefined)
     
     @scala.inline
-    def deleteElastiCacheInstanceDetails: Self = this.set("ElastiCacheInstanceDetails", js.undefined)
+    def setRedshiftInstanceDetails(value: RedshiftInstanceDetails): Self = StObject.set(x, "RedshiftInstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRDSInstanceDetails(value: RDSInstanceDetails): Self = this.set("RDSInstanceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRDSInstanceDetails: Self = this.set("RDSInstanceDetails", js.undefined)
-    
-    @scala.inline
-    def setRedshiftInstanceDetails(value: RedshiftInstanceDetails): Self = this.set("RedshiftInstanceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedshiftInstanceDetails: Self = this.set("RedshiftInstanceDetails", js.undefined)
+    def setRedshiftInstanceDetailsUndefined: Self = StObject.set(x, "RedshiftInstanceDetails", js.undefined)
   }
 }

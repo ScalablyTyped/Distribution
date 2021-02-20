@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Loader.FileTypes
 
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScenePluginFileConfig extends js.Object {
+trait ScenePluginFileConfig extends StObject {
   
   /**
     * The default file extension to use if no url is provided.
@@ -47,51 +48,39 @@ object ScenePluginFileConfig {
   }
   
   @scala.inline
-  implicit class ScenePluginFileConfigOps[Self <: ScenePluginFileConfig] (val x: Self) extends AnyVal {
+  implicit class ScenePluginFileConfigMutableBuilder[Self <: ScenePluginFileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setSceneKey(value: String): Self = StObject.set(x, "sceneKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setSceneKeyUndefined: Self = StObject.set(x, "sceneKey", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSceneKey(value: String): Self = this.set("sceneKey", value.asInstanceOf[js.Any])
+    def setSystemKeyUndefined: Self = StObject.set(x, "systemKey", js.undefined)
     
     @scala.inline
-    def deleteSceneKey: Self = this.set("sceneKey", js.undefined)
+    def setUrl(value: String | js.Function): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteSystemKey: Self = this.set("systemKey", js.undefined)
+    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String | js.Function): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = this.set("xhrSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhrSettings: Self = this.set("xhrSettings", js.undefined)
+    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

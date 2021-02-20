@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderRoundingAdjustment")
 @js.native
-class OrderRoundingAdjustment () extends js.Object {
+class OrderRoundingAdjustment () extends StObject {
   
   /**
     * Actual rounding adjustment amount.

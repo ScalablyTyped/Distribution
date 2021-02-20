@@ -1,6 +1,7 @@
 package typings.reactMdForm.typesMod
 
 import typings.reactMdForm.reactMdFormStrings.decrement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,24 +25,12 @@ object SliderDecrementAction {
   }
   
   @scala.inline
-  implicit class SliderDecrementActionOps[Self <: SliderDecrementAction] (val x: Self) extends AnyVal {
+  implicit class SliderDecrementActionMutableBuilder[Self <: SliderDecrementAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: decrement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: decrement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

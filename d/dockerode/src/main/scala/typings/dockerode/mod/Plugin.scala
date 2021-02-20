@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dockerode", "Plugin")
 @js.native
-class Plugin protected () extends js.Object {
+class Plugin protected () extends StObject {
   def this(modem: js.Any, name: String) = this()
   def this(modem: js.Any, name: String, remote: js.Any) = this()
   

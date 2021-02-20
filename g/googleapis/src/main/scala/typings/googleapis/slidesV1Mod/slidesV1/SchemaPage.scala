@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A page in a presentation.
   */
 @js.native
-trait SchemaPage extends js.Object {
+trait SchemaPage extends StObject {
   
   /**
     * Layout specific properties. Only set if page_type = LAYOUT.
@@ -75,75 +76,63 @@ object SchemaPage {
   }
   
   @scala.inline
-  implicit class SchemaPageOps[Self <: SchemaPage] (val x: Self) extends AnyVal {
+  implicit class SchemaPageMutableBuilder[Self <: SchemaPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayoutProperties(value: SchemaLayoutProperties): Self = StObject.set(x, "layoutProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutPropertiesUndefined: Self = StObject.set(x, "layoutProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasterProperties(value: SchemaMasterProperties): Self = StObject.set(x, "masterProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutProperties(value: SchemaLayoutProperties): Self = this.set("layoutProperties", value.asInstanceOf[js.Any])
+    def setMasterPropertiesUndefined: Self = StObject.set(x, "masterProperties", js.undefined)
     
     @scala.inline
-    def deleteLayoutProperties: Self = this.set("layoutProperties", js.undefined)
+    def setNotesProperties(value: SchemaNotesProperties): Self = StObject.set(x, "notesProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterProperties(value: SchemaMasterProperties): Self = this.set("masterProperties", value.asInstanceOf[js.Any])
+    def setNotesPropertiesUndefined: Self = StObject.set(x, "notesProperties", js.undefined)
     
     @scala.inline
-    def deleteMasterProperties: Self = this.set("masterProperties", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotesProperties(value: SchemaNotesProperties): Self = this.set("notesProperties", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteNotesProperties: Self = this.set("notesProperties", js.undefined)
+    def setPageElements(value: js.Array[SchemaPageElement]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setPageElementsUndefined: Self = StObject.set(x, "pageElements", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setPageElementsVarargs(value: SchemaPageElement*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
     
     @scala.inline
-    def setPageElementsVarargs(value: SchemaPageElement*): Self = this.set("pageElements", js.Array(value :_*))
+    def setPageProperties(value: SchemaPageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageElements(value: js.Array[SchemaPageElement]): Self = this.set("pageElements", value.asInstanceOf[js.Any])
+    def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
     
     @scala.inline
-    def deletePageElements: Self = this.set("pageElements", js.undefined)
+    def setPageType(value: String): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageProperties(value: SchemaPageProperties): Self = this.set("pageProperties", value.asInstanceOf[js.Any])
+    def setPageTypeUndefined: Self = StObject.set(x, "pageType", js.undefined)
     
     @scala.inline
-    def deletePageProperties: Self = this.set("pageProperties", js.undefined)
+    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageType(value: String): Self = this.set("pageType", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     @scala.inline
-    def deletePageType: Self = this.set("pageType", js.undefined)
+    def setSlideProperties(value: SchemaSlideProperties): Self = StObject.set(x, "slideProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
-    
-    @scala.inline
-    def setSlideProperties(value: SchemaSlideProperties): Self = this.set("slideProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideProperties: Self = this.set("slideProperties", js.undefined)
+    def setSlidePropertiesUndefined: Self = StObject.set(x, "slideProperties", js.undefined)
   }
 }

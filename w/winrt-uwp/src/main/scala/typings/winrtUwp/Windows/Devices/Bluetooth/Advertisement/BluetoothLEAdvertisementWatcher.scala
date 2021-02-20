@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.received
 import typings.winrtUwp.winrtUwpStrings.stopped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object to receive Bluetooth Low Energy (LE) advertisements. */
 @js.native
-trait BluetoothLEAdvertisementWatcher extends js.Object {
+trait BluetoothLEAdvertisementWatcher extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

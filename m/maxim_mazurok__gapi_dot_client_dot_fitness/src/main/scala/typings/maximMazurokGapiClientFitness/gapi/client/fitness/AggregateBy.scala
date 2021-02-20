@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregateBy extends js.Object {
+trait AggregateBy extends StObject {
   
   /**
     * A data source ID to aggregate. Only data from the specified data source ID will be included in the aggregation. If specified, this data source must exist; the OAuth scopes in the
@@ -30,30 +31,18 @@ object AggregateBy {
   }
   
   @scala.inline
-  implicit class AggregateByOps[Self <: AggregateBy] (val x: Self) extends AnyVal {
+  implicit class AggregateByMutableBuilder[Self <: AggregateBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
-    
-    @scala.inline
-    def setDataTypeName(value: String): Self = this.set("dataTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataTypeName: Self = this.set("dataTypeName", js.undefined)
+    def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceConnectorProperties extends js.Object {
+trait SourceConnectorProperties extends StObject {
   
   /**
     *  Specifies the information that is required for querying Amplitude. 
@@ -86,102 +87,90 @@ object SourceConnectorProperties {
   }
   
   @scala.inline
-  implicit class SourceConnectorPropertiesOps[Self <: SourceConnectorProperties] (val x: Self) extends AnyVal {
+  implicit class SourceConnectorPropertiesMutableBuilder[Self <: SourceConnectorProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmplitude(value: AmplitudeSourceProperties): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatadog(value: DatadogSourceProperties): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmplitude(value: AmplitudeSourceProperties): Self = this.set("Amplitude", value.asInstanceOf[js.Any])
+    def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
     
     @scala.inline
-    def deleteAmplitude: Self = this.set("Amplitude", js.undefined)
+    def setDynatrace(value: DynatraceSourceProperties): Self = StObject.set(x, "Dynatrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatadog(value: DatadogSourceProperties): Self = this.set("Datadog", value.asInstanceOf[js.Any])
+    def setDynatraceUndefined: Self = StObject.set(x, "Dynatrace", js.undefined)
     
     @scala.inline
-    def deleteDatadog: Self = this.set("Datadog", js.undefined)
+    def setGoogleAnalytics(value: GoogleAnalyticsSourceProperties): Self = StObject.set(x, "GoogleAnalytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynatrace(value: DynatraceSourceProperties): Self = this.set("Dynatrace", value.asInstanceOf[js.Any])
+    def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
     @scala.inline
-    def deleteDynatrace: Self = this.set("Dynatrace", js.undefined)
+    def setInforNexus(value: InforNexusSourceProperties): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAnalytics(value: GoogleAnalyticsSourceProperties): Self = this.set("GoogleAnalytics", value.asInstanceOf[js.Any])
+    def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
     
     @scala.inline
-    def deleteGoogleAnalytics: Self = this.set("GoogleAnalytics", js.undefined)
+    def setMarketo(value: MarketoSourceProperties): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInforNexus(value: InforNexusSourceProperties): Self = this.set("InforNexus", value.asInstanceOf[js.Any])
+    def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
     
     @scala.inline
-    def deleteInforNexus: Self = this.set("InforNexus", js.undefined)
+    def setS3(value: S3SourceProperties): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketo(value: MarketoSourceProperties): Self = this.set("Marketo", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
     @scala.inline
-    def deleteMarketo: Self = this.set("Marketo", js.undefined)
+    def setSalesforce(value: SalesforceSourceProperties): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3(value: S3SourceProperties): Self = this.set("S3", value.asInstanceOf[js.Any])
+    def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
     
     @scala.inline
-    def deleteS3: Self = this.set("S3", js.undefined)
+    def setServiceNow(value: ServiceNowSourceProperties): Self = StObject.set(x, "ServiceNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforce(value: SalesforceSourceProperties): Self = this.set("Salesforce", value.asInstanceOf[js.Any])
+    def setServiceNowUndefined: Self = StObject.set(x, "ServiceNow", js.undefined)
     
     @scala.inline
-    def deleteSalesforce: Self = this.set("Salesforce", js.undefined)
+    def setSingular(value: SingularSourceProperties): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNow(value: ServiceNowSourceProperties): Self = this.set("ServiceNow", value.asInstanceOf[js.Any])
+    def setSingularUndefined: Self = StObject.set(x, "Singular", js.undefined)
     
     @scala.inline
-    def deleteServiceNow: Self = this.set("ServiceNow", js.undefined)
+    def setSlack(value: SlackSourceProperties): Self = StObject.set(x, "Slack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingular(value: SingularSourceProperties): Self = this.set("Singular", value.asInstanceOf[js.Any])
+    def setSlackUndefined: Self = StObject.set(x, "Slack", js.undefined)
     
     @scala.inline
-    def deleteSingular: Self = this.set("Singular", js.undefined)
+    def setTrendmicro(value: TrendmicroSourceProperties): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlack(value: SlackSourceProperties): Self = this.set("Slack", value.asInstanceOf[js.Any])
+    def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
     
     @scala.inline
-    def deleteSlack: Self = this.set("Slack", js.undefined)
+    def setVeeva(value: VeevaSourceProperties): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrendmicro(value: TrendmicroSourceProperties): Self = this.set("Trendmicro", value.asInstanceOf[js.Any])
+    def setVeevaUndefined: Self = StObject.set(x, "Veeva", js.undefined)
     
     @scala.inline
-    def deleteTrendmicro: Self = this.set("Trendmicro", js.undefined)
+    def setZendesk(value: ZendeskSourceProperties): Self = StObject.set(x, "Zendesk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVeeva(value: VeevaSourceProperties): Self = this.set("Veeva", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVeeva: Self = this.set("Veeva", js.undefined)
-    
-    @scala.inline
-    def setZendesk(value: ZendeskSourceProperties): Self = this.set("Zendesk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZendesk: Self = this.set("Zendesk", js.undefined)
+    def setZendeskUndefined: Self = StObject.set(x, "Zendesk", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerSelectOptions extends js.Object {
+trait SchedulerSelectOptions extends StObject {
   
   var end: js.UndefOr[Date] = js.native
   
@@ -27,54 +28,42 @@ object SchedulerSelectOptions {
   }
   
   @scala.inline
-  implicit class SchedulerSelectOptionsOps[Self <: SchedulerSelectOptions] (val x: Self) extends AnyVal {
+  implicit class SchedulerSelectOptionsMutableBuilder[Self <: SchedulerSelectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: js.Array[_ | SchedulerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Date): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setEventsVarargs(value: (js.Any | SchedulerEvent)*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: (js.Any | SchedulerEvent)*): Self = this.set("events", js.Array(value :_*))
+    def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[_ | SchedulerEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setResources(value: js.Array[_]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAllDay(value: Boolean): Self = this.set("isAllDay", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteIsAllDay: Self = this.set("isAllDay", js.undefined)
+    def setResourcesVarargs(value: js.Any*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: js.Any*): Self = this.set("resources", js.Array(value :_*))
+    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[_]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
-    
-    @scala.inline
-    def setStart(value: Date): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

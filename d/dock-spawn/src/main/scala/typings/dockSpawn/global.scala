@@ -3,17 +3,16 @@ package typings.dockSpawn
 import typings.dockSpawn.dockspawn.TabStripDirection
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object dockspawn extends js.Object {
+  object dockspawn {
     
+    @JSGlobal("dockspawn.Dialog")
     @js.native
     class Dialog protected ()
       extends typings.dockSpawn.dockspawn.Dialog {
@@ -22,10 +21,11 @@ object global extends js.Object {
         dockManager: typings.dockSpawn.dockspawn.DockManager
       ) = this()
     }
-    /* static members */
-    @js.native
-    object Dialog extends js.Object {
+    object Dialog {
       
+      /* static member */
+      @JSGlobal("dockspawn.Dialog.fromElement")
+      @js.native
       def fromElement(id: String, dockManager: typings.dockSpawn.dockspawn.DockManager): typings.dockSpawn.dockspawn.Dialog = js.native
     }
     
@@ -34,22 +34,26 @@ object global extends js.Object {
       * It owns an HTMLDivElement inside which all panels are docked.
       * Initially the document manager takes up the central space and acts as the root node.
       */
+    @JSGlobal("dockspawn.DockManager")
     @js.native
     class DockManager protected ()
       extends typings.dockSpawn.dockspawn.DockManager {
       def this(element: HTMLDivElement) = this()
     }
     
+    @JSGlobal("dockspawn.DockManagerContext")
     @js.native
     class DockManagerContext protected ()
       extends typings.dockSpawn.dockspawn.DockManagerContext {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
     }
     
+    @JSGlobal("dockspawn.DockModel")
     @js.native
     class DockModel ()
       extends typings.dockSpawn.dockspawn.DockModel
     
+    @JSGlobal("dockspawn.DockNode")
     @js.native
     class DockNode protected ()
       extends typings.dockSpawn.dockspawn.DockNode {
@@ -61,12 +65,14 @@ object global extends js.Object {
       * This is where more important panels are placed (e.g. the text editor in an IDE,
       * 3D view in a modelling package etc
       */
+    @JSGlobal("dockspawn.DocumentManagerContainer")
     @js.native
     class DocumentManagerContainer protected ()
       extends typings.dockSpawn.dockspawn.DocumentManagerContainer {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
     }
     
+    @JSGlobal("dockspawn.FillDockContainer")
     @js.native
     class FillDockContainer protected ()
       extends typings.dockSpawn.dockspawn.FillDockContainer {
@@ -74,6 +80,7 @@ object global extends js.Object {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager, tabStripDirection: TabStripDirection) = this()
     }
     
+    @JSGlobal("dockspawn.PanelContainer")
     @js.native
     class PanelContainer protected ()
       extends typings.dockSpawn.dockspawn.PanelContainer {
@@ -85,6 +92,7 @@ object global extends js.Object {
       * Tab Host control contains tabs known as TabPages.
       * The tab strip can be aligned in different orientations
       */
+    @JSGlobal("dockspawn.TabHost")
     @js.native
     class TabHost ()
       extends typings.dockSpawn.dockspawn.TabHost {
@@ -93,14 +101,16 @@ object global extends js.Object {
       def this(tabStripDirection: TabStripDirection, displayCloseButton: Boolean) = this()
     }
     
+    @JSGlobal("dockspawn.TabPage")
     @js.native
     class TabPage protected ()
       extends typings.dockSpawn.dockspawn.TabPage {
       def this(host: typings.dockSpawn.dockspawn.TabHost, container: typings.dockSpawn.dockspawn.PanelContainer) = this()
     }
     
+    @JSGlobal("dockspawn.TabStripDirection")
     @js.native
-    object TabStripDirection extends js.Object {
+    object TabStripDirection extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.dockSpawn.dockspawn.TabStripDirection with Double] = js.native

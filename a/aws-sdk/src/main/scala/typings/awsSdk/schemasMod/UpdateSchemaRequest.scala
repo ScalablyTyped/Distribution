@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSchemaRequest extends js.Object {
+trait UpdateSchemaRequest extends StObject {
   
   /**
     * The ID of the client token.
@@ -46,48 +47,36 @@ object UpdateSchemaRequest {
   }
   
   @scala.inline
-  implicit class UpdateSchemaRequestOps[Self <: UpdateSchemaRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateSchemaRequestMutableBuilder[Self <: UpdateSchemaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientTokenId(value: stringMin0Max36): Self = StObject.set(x, "ClientTokenId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenIdUndefined: Self = StObject.set(x, "ClientTokenId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: stringMin1Max100000): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
     @scala.inline
-    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTokenId(value: stringMin0Max36): Self = this.set("ClientTokenId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteClientTokenId: Self = this.set("ClientTokenId", js.undefined)
+    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: stringMin1Max100000): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: stringMin0Max256): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

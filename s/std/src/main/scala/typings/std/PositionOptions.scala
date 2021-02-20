@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionOptions extends js.Object {
+trait PositionOptions extends StObject {
   
   var enableHighAccuracy: js.UndefOr[scala.Boolean] = js.native
   
@@ -22,36 +23,24 @@ object PositionOptions {
   }
   
   @scala.inline
-  implicit class PositionOptionsOps[Self <: PositionOptions] (val x: Self) extends AnyVal {
+  implicit class PositionOptionsMutableBuilder[Self <: PositionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableHighAccuracy(value: scala.Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHighAccuracy(value: scala.Boolean): Self = this.set("enableHighAccuracy", value.asInstanceOf[js.Any])
+    def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
     
     @scala.inline
-    def deleteEnableHighAccuracy: Self = this.set("enableHighAccuracy", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumAge(value: Double): Self = this.set("maximumAge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumAge: Self = this.set("maximumAge", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

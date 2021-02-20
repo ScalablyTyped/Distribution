@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,11 +57,11 @@ class PlaneDragGizmo protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "PlaneDragGizmo")
-@js.native
-object PlaneDragGizmo extends js.Object {
+object PlaneDragGizmo {
   
   /** @hidden */
+  @JSImport("babylonjs", "PlaneDragGizmo._CreatePlane")
+  @js.native
   def _CreatePlane(
     scene: typings.babylonjs.sceneMod.Scene,
     material: typings.babylonjs.standardMaterialMod.StandardMaterial

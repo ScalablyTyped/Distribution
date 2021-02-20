@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1AutomatedStoppingConfig extends js.Object {
+trait GoogleCloudMlV1AutomatedStoppingConfig extends StObject {
   
   var decayCurveStoppingConfig: js.UndefOr[GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig] = js.native
   
@@ -20,30 +21,18 @@ object GoogleCloudMlV1AutomatedStoppingConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1AutomatedStoppingConfigOps[Self <: GoogleCloudMlV1AutomatedStoppingConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1AutomatedStoppingConfigMutableBuilder[Self <: GoogleCloudMlV1AutomatedStoppingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecayCurveStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig): Self = StObject.set(x, "decayCurveStoppingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecayCurveStoppingConfigUndefined: Self = StObject.set(x, "decayCurveStoppingConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedianAutomatedStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig): Self = StObject.set(x, "medianAutomatedStoppingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecayCurveStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig): Self = this.set("decayCurveStoppingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecayCurveStoppingConfig: Self = this.set("decayCurveStoppingConfig", js.undefined)
-    
-    @scala.inline
-    def setMedianAutomatedStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig): Self = this.set("medianAutomatedStoppingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedianAutomatedStoppingConfig: Self = this.set("medianAutomatedStoppingConfig", js.undefined)
+    def setMedianAutomatedStoppingConfigUndefined: Self = StObject.set(x, "medianAutomatedStoppingConfig", js.undefined)
   }
 }

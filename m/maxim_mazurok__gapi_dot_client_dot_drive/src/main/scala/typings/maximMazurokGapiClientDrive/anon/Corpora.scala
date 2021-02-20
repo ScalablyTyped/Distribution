@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Corpora extends js.Object {
+trait Corpora extends StObject {
   
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.native
@@ -88,144 +89,132 @@ object Corpora {
   }
   
   @scala.inline
-  implicit class CorporaOps[Self <: Corpora] (val x: Self) extends AnyVal {
+  implicit class CorporaMutableBuilder[Self <: Corpora] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorpora(value: String): Self = StObject.set(x, "corpora", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setCorporaUndefined: Self = StObject.set(x, "corpora", js.undefined)
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorpora(value: String): Self = this.set("corpora", value.asInstanceOf[js.Any])
+    def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
     @scala.inline
-    def deleteCorpora: Self = this.set("corpora", js.undefined)
+    def setDriveId(value: String): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorpus(value: String): Self = this.set("corpus", value.asInstanceOf[js.Any])
+    def setDriveIdUndefined: Self = StObject.set(x, "driveId", js.undefined)
     
     @scala.inline
-    def deleteCorpus: Self = this.set("corpus", js.undefined)
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveId(value: String): Self = this.set("driveId", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteDriveId: Self = this.set("driveId", js.undefined)
+    def setIncludeItemsFromAllDrives(value: Boolean): Self = StObject.set(x, "includeItemsFromAllDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIncludeItemsFromAllDrivesUndefined: Self = StObject.set(x, "includeItemsFromAllDrives", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeItemsFromAllDrives(value: Boolean): Self = this.set("includeItemsFromAllDrives", value.asInstanceOf[js.Any])
+    def setIncludePermissionsForViewUndefined: Self = StObject.set(x, "includePermissionsForView", js.undefined)
     
     @scala.inline
-    def deleteIncludeItemsFromAllDrives: Self = this.set("includeItemsFromAllDrives", js.undefined)
+    def setIncludeTeamDriveItems(value: Boolean): Self = StObject.set(x, "includeTeamDriveItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePermissionsForView(value: String): Self = this.set("includePermissionsForView", value.asInstanceOf[js.Any])
+    def setIncludeTeamDriveItemsUndefined: Self = StObject.set(x, "includeTeamDriveItems", js.undefined)
     
     @scala.inline
-    def deleteIncludePermissionsForView: Self = this.set("includePermissionsForView", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTeamDriveItems(value: Boolean): Self = this.set("includeTeamDriveItems", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteIncludeTeamDriveItems: Self = this.set("includeTeamDriveItems", js.undefined)
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setSpaces(value: String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaces(value: String): Self = this.set("spaces", value.asInstanceOf[js.Any])
+    def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     @scala.inline
-    def deleteSpaces: Self = this.set("spaces", js.undefined)
+    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsAllDrives(value: Boolean): Self = this.set("supportsAllDrives", value.asInstanceOf[js.Any])
+    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
     @scala.inline
-    def deleteSupportsAllDrives: Self = this.set("supportsAllDrives", js.undefined)
+    def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
     
     @scala.inline
-    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamDriveId(value: String): Self = this.set("teamDriveId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamDriveId: Self = this.set("teamDriveId", js.undefined)
-    
-    @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
   }
 }

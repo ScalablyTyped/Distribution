@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAnalysisSchemesRequest extends js.Object {
+trait DescribeAnalysisSchemesRequest extends StObject {
   
   /**
     * The analysis schemes you want to describe.
@@ -31,36 +32,24 @@ object DescribeAnalysisSchemesRequest {
   }
   
   @scala.inline
-  implicit class DescribeAnalysisSchemesRequestOps[Self <: DescribeAnalysisSchemesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAnalysisSchemesRequestMutableBuilder[Self <: DescribeAnalysisSchemesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisSchemeNames(value: StandardNameList): Self = StObject.set(x, "AnalysisSchemeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisSchemeNamesUndefined: Self = StObject.set(x, "AnalysisSchemeNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalysisSchemeNamesVarargs(value: StandardName*): Self = StObject.set(x, "AnalysisSchemeNames", js.Array(value :_*))
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisSchemeNamesVarargs(value: StandardName*): Self = this.set("AnalysisSchemeNames", js.Array(value :_*))
+    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
     @scala.inline
-    def setAnalysisSchemeNames(value: StandardNameList): Self = this.set("AnalysisSchemeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnalysisSchemeNames: Self = this.set("AnalysisSchemeNames", js.undefined)
-    
-    @scala.inline
-    def setDeployed(value: Boolean): Self = this.set("Deployed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeployed: Self = this.set("Deployed", js.undefined)
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

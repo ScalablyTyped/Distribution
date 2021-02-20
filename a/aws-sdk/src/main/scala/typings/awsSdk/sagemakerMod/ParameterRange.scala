@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterRange extends js.Object {
+trait ParameterRange extends StObject {
   
   /**
     * A CategoricalParameterRangeSpecification object that defines the possible values for a categorical hyperparameter.
@@ -31,36 +32,24 @@ object ParameterRange {
   }
   
   @scala.inline
-  implicit class ParameterRangeOps[Self <: ParameterRange] (val x: Self) extends AnyVal {
+  implicit class ParameterRangeMutableBuilder[Self <: ParameterRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalParameterRangeSpecification(value: CategoricalParameterRangeSpecification): Self = StObject.set(x, "CategoricalParameterRangeSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalParameterRangeSpecificationUndefined: Self = StObject.set(x, "CategoricalParameterRangeSpecification", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuousParameterRangeSpecification(value: ContinuousParameterRangeSpecification): Self = StObject.set(x, "ContinuousParameterRangeSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalParameterRangeSpecification(value: CategoricalParameterRangeSpecification): Self = this.set("CategoricalParameterRangeSpecification", value.asInstanceOf[js.Any])
+    def setContinuousParameterRangeSpecificationUndefined: Self = StObject.set(x, "ContinuousParameterRangeSpecification", js.undefined)
     
     @scala.inline
-    def deleteCategoricalParameterRangeSpecification: Self = this.set("CategoricalParameterRangeSpecification", js.undefined)
+    def setIntegerParameterRangeSpecification(value: IntegerParameterRangeSpecification): Self = StObject.set(x, "IntegerParameterRangeSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousParameterRangeSpecification(value: ContinuousParameterRangeSpecification): Self = this.set("ContinuousParameterRangeSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContinuousParameterRangeSpecification: Self = this.set("ContinuousParameterRangeSpecification", js.undefined)
-    
-    @scala.inline
-    def setIntegerParameterRangeSpecification(value: IntegerParameterRangeSpecification): Self = this.set("IntegerParameterRangeSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegerParameterRangeSpecification: Self = this.set("IntegerParameterRangeSpecification", js.undefined)
+    def setIntegerParameterRangeSpecificationUndefined: Self = StObject.set(x, "IntegerParameterRangeSpecification", js.undefined)
   }
 }

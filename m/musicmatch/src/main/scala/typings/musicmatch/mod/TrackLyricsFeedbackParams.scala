@@ -6,12 +6,13 @@ import typings.musicmatch.musicmatchStrings.wrong_attribution
 import typings.musicmatch.musicmatchStrings.wrong_formatting
 import typings.musicmatch.musicmatchStrings.wrong_lyrics
 import typings.musicmatch.musicmatchStrings.wrong_verses
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackLyricsFeedbackParams extends js.Object {
+trait TrackLyricsFeedbackParams extends StObject {
   
   var feedback: js.UndefOr[
     wrong_lyrics | wrong_attribution | bad_characters | lines_too_long | wrong_verses | wrong_formatting
@@ -30,38 +31,26 @@ object TrackLyricsFeedbackParams {
   }
   
   @scala.inline
-  implicit class TrackLyricsFeedbackParamsOps[Self <: TrackLyricsFeedbackParams] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TrackLyricsFeedbackParamsMutableBuilder[Self <: TrackLyricsFeedbackParams] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setFeedback(
       value: wrong_lyrics | wrong_attribution | bad_characters | lines_too_long | wrong_verses | wrong_formatting
-    ): Self = this.set("feedback", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeedback: Self = this.set("feedback", js.undefined)
+    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
     @scala.inline
-    def setLyrics_id(value: Double): Self = this.set("lyrics_id", value.asInstanceOf[js.Any])
+    def setLyrics_id(value: Double): Self = StObject.set(x, "lyrics_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLyrics_id: Self = this.set("lyrics_id", js.undefined)
+    def setLyrics_idUndefined: Self = StObject.set(x, "lyrics_id", js.undefined)
     
     @scala.inline
-    def setTrack_id(value: Double): Self = this.set("track_id", value.asInstanceOf[js.Any])
+    def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrack_id: Self = this.set("track_id", js.undefined)
+    def setTrack_idUndefined: Self = StObject.set(x, "track_id", js.undefined)
   }
 }

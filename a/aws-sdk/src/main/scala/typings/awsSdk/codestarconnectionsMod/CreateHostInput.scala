@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarconnectionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateHostInput extends js.Object {
+trait CreateHostInput extends StObject {
   
   /**
     * The name of the host to be created. The name must be unique in the calling AWS account.
@@ -36,33 +37,21 @@ object CreateHostInput {
   }
   
   @scala.inline
-  implicit class CreateHostInputOps[Self <: CreateHostInput] (val x: Self) extends AnyVal {
+  implicit class CreateHostInputMutableBuilder[Self <: CreateHostInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProviderEndpoint(value: Url): Self = StObject.set(x, "ProviderEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: HostName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderEndpoint(value: Url): Self = this.set("ProviderEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVpcConfiguration(value: VpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

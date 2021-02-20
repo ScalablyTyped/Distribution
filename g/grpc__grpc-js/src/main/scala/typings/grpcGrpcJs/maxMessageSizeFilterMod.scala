@@ -4,14 +4,14 @@ import typings.grpcGrpcJs.callStreamMod.Call
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.filterMod.BaseFilter
 import typings.grpcGrpcJs.filterMod.FilterFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/max-message-size-filter", JSImport.Namespace)
-@js.native
-object maxMessageSizeFilterMod extends js.Object {
+object maxMessageSizeFilterMod {
   
+  @JSImport("@grpc/grpc-js/build/src/max-message-size-filter", "MaxMessageSizeFilter")
   @js.native
   class MaxMessageSizeFilter protected () extends BaseFilter {
     def this(options: ChannelOptions, callStream: Call) = this()
@@ -25,6 +25,7 @@ object maxMessageSizeFilterMod extends js.Object {
     val options: js.Any = js.native
   }
   
+  @JSImport("@grpc/grpc-js/build/src/max-message-size-filter", "MaxMessageSizeFilterFactory")
   @js.native
   class MaxMessageSizeFilterFactory protected () extends FilterFactory[MaxMessageSizeFilter] {
     def this(options: ChannelOptions) = this()

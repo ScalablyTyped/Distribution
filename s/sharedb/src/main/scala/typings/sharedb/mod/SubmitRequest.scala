@@ -1,12 +1,13 @@
 package typings.sharedb.mod
 
 import typings.sharedb.sharedbMod.Snapshot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubmitRequest extends js.Object {
+trait SubmitRequest extends StObject {
   
   var channels: js.Array[String] | Null = js.native
   
@@ -54,84 +55,72 @@ object SubmitRequest {
   }
   
   @scala.inline
-  implicit class SubmitRequestOps[Self <: SubmitRequest] (val x: Self) extends AnyVal {
+  implicit class SubmitRequestMutableBuilder[Self <: SubmitRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsNull: Self = StObject.set(x, "channels", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setCollection(value: String): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOp(value: CreateOp | DeleteOp | EditOp): Self = this.set("op", value.asInstanceOf[js.Any])
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpsVarargs(value: typings.sharedb.sharedbMod.Op*): Self = this.set("ops", js.Array(value :_*))
+    def setMaxRetriesNull: Self = StObject.set(x, "maxRetries", null)
     
     @scala.inline
-    def setOps(value: js.Array[typings.sharedb.sharedbMod.Op]): Self = this.set("ops", value.asInstanceOf[js.Any])
+    def setOp(value: CreateOp | DeleteOp | EditOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOps(value: js.Array[typings.sharedb.sharedbMod.Op]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    def setOpsVarargs(value: typings.sharedb.sharedbMod.Op*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def setChannelsNull: Self = this.set("channels", null)
+    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setSaveMilestoneSnapshot(value: Boolean): Self = StObject.set(x, "saveMilestoneSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetriesNull: Self = this.set("maxRetries", null)
+    def setSaveMilestoneSnapshotNull: Self = StObject.set(x, "saveMilestoneSnapshot", null)
     
     @scala.inline
-    def setProjection(value: Projection): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
     
     @scala.inline
-    def setSaveMilestoneSnapshot(value: Boolean): Self = this.set("saveMilestoneSnapshot", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveMilestoneSnapshotNull: Self = this.set("saveMilestoneSnapshot", null)
+    def setSuppressPublish(value: Boolean): Self = StObject.set(x, "suppressPublish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: Snapshot): Self = this.set("snapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshotNull: Self = this.set("snapshot", null)
-    
-    @scala.inline
-    def setSuppressPublish(value: Boolean): Self = this.set("suppressPublish", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuppressPublishNull: Self = this.set("suppressPublish", null)
+    def setSuppressPublishNull: Self = StObject.set(x, "suppressPublish", null)
   }
 }

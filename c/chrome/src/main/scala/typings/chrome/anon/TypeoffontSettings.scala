@@ -11,12 +11,13 @@ import typings.chrome.chrome.fontSettings.FontSizeDetails
 import typings.chrome.chrome.fontSettings.MinimumFontSizeChangedEvent
 import typings.chrome.chrome.fontSettings.SetFontDetails
 import typings.chrome.chrome.fontSettings.SetFontSizeDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeoffontSettings extends js.Object {
+trait TypeoffontSettings extends StObject {
   
   def clearDefaultFixedFontSize(details: js.Object): Unit = js.native
   def clearDefaultFixedFontSize(details: js.Object, callback: js.Function): Unit = js.native

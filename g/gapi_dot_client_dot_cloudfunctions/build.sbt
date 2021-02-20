@@ -1,10 +1,10 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_cloudfunctions"
-version := "1.0-dt-20201116Z-57c8d8"
+version := "1.0-dt-20201116Z-371a82"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvBrowseFeedResponseBadging extends js.Object {
+trait IgtvBrowseFeedResponseBadging extends StObject {
   
   var ids: js.Array[_] = js.native
   
@@ -20,30 +21,18 @@ object IgtvBrowseFeedResponseBadging {
   }
   
   @scala.inline
-  implicit class IgtvBrowseFeedResponseBadgingOps[Self <: IgtvBrowseFeedResponseBadging] (val x: Self) extends AnyVal {
+  implicit class IgtvBrowseFeedResponseBadgingMutableBuilder[Self <: IgtvBrowseFeedResponseBadging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIds(value: js.Array[_]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdsVarargs(value: js.Any*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: js.Any*): Self = this.set("ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setIds(value: js.Array[_]): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

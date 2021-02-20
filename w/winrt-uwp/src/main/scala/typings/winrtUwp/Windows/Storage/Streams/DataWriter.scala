@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Storage.Streams
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Writes data to an output stream. */
 @js.native
-trait DataWriter extends js.Object {
+trait DataWriter extends StObject {
   
   /** Gets or sets the byte order of the data in the output stream. */
   var byteOrder: ByteOrder = js.native

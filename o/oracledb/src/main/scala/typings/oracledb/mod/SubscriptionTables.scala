@@ -1,6 +1,7 @@
 package typings.oracledb.mod
 
 import typings.oracledb.anon.Operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object specifying which tables were affected by a subscription's notification.
   */
 @js.native
-trait SubscriptionTables extends js.Object {
+trait SubscriptionTables extends StObject {
   
   /** Name of the table which was modified in some way. */
   var name: String = js.native
@@ -35,33 +36,21 @@ object SubscriptionTables {
   }
   
   @scala.inline
-  implicit class SubscriptionTablesOps[Self <: SubscriptionTables] (val x: Self) extends AnyVal {
+  implicit class SubscriptionTablesMutableBuilder[Self <: SubscriptionTables] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperation(value: Double): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRows(value: js.Array[Operation]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def setOperation(value: Double): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsVarargs(value: Operation*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[Operation]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsVarargs(value: Operation*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

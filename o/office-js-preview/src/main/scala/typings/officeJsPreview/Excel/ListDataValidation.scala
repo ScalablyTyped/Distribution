@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait ListDataValidation extends js.Object {
+trait ListDataValidation extends StObject {
   
   /**
     *
@@ -39,24 +40,12 @@ object ListDataValidation {
   }
   
   @scala.inline
-  implicit class ListDataValidationOps[Self <: ListDataValidation] (val x: Self) extends AnyVal {
+  implicit class ListDataValidationMutableBuilder[Self <: ListDataValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInCellDropDown(value: Boolean): Self = StObject.set(x, "inCellDropDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInCellDropDown(value: Boolean): Self = this.set("inCellDropDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String | Range): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String | Range): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

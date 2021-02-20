@@ -20,14 +20,14 @@ import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import typings.uirouterCore.uirouterCoreStrings.SameAsCurrent
 import typings.uirouterCore.uirouterCoreStrings.SameAsPending
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/transition/transition", JSImport.Namespace)
-@js.native
-object transitionTransitionMod extends js.Object {
+object transitionTransitionMod {
   
+  @JSImport("@uirouter/core/lib/transition/transition", "Transition")
   @js.native
   class Transition protected () extends IHookRegistry {
     /**
@@ -567,10 +567,17 @@ object transitionTransitionMod extends js.Object {
     def views(pathname: String, state: StateObject): js.Array[ViewConfig] = js.native
   }
   /* static members */
-  @js.native
-  object Transition extends js.Object {
+  object Transition {
+    
+    @JSImport("@uirouter/core/lib/transition/transition", "Transition")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** @internal */
-    var diToken: TypeofTransition = js.native
+    @JSImport("@uirouter/core/lib/transition/transition", "Transition.diToken")
+    @js.native
+    def diToken: TypeofTransition = js.native
+    @scala.inline
+    def diToken_=(x: TypeofTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diToken")(x.asInstanceOf[js.Any])
   }
 }

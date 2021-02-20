@@ -6,6 +6,7 @@ import typings.nwJs.nwJsStrings.namechanged
 import typings.nwJs.nwJsStrings.orderchanged
 import typings.nwJs.nwJsStrings.removed
 import typings.nwJs.nwJsStrings.thumbnailchanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,16 +4,16 @@ import typings.inversify.interfacesMod.interfaces.Container
 import typings.inversifyRestifyUtils.interfacesMod.interfaces.ConfigFunction
 import typings.restify.mod.Server
 import typings.restify.mod.ServerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-restify-utils/dts/server", JSImport.Namespace)
-@js.native
-object serverMod extends js.Object {
+object serverMod {
   
+  @JSImport("inversify-restify-utils/dts/server", "InversifyRestifyServer")
   @js.native
-  class InversifyRestifyServer protected () extends js.Object {
+  class InversifyRestifyServer protected () extends StObject {
     def this(container: Container) = this()
     def this(
       container: Container,

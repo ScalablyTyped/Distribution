@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Presents an item._
   * @see https://docs.scriptable.app/quicklook
   */
-@JSGlobal("QuickLook")
-@js.native
-object QuickLook extends js.Object {
+object QuickLook {
   
   /**
     * _Presents the item._
@@ -20,6 +19,10 @@ object QuickLook extends js.Object {
     * @param fullscreen - Optional. Set to true to present the item in fullscreen. This only has an effect when used within the app. Defaults to false.
     * @see https://docs.scriptable.app/quicklook/#present
     */
+  @JSGlobal("QuickLook.present")
+  @js.native
   def present(item: js.Any): js.Promise[Unit] = js.native
+  @JSGlobal("QuickLook.present")
+  @js.native
   def present(item: js.Any, fullscreen: Boolean): js.Promise[Unit] = js.native
 }

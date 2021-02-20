@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesGetItemInputMod.GetItemInput
 import typings.awsSdkClientDynamodbBrowser.typesGetItemOutputMod.GetItemOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/GetItemCommand", JSImport.Namespace)
-@js.native
-object getItemCommandMod extends js.Object {
+object getItemCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/GetItemCommand", "GetItemCommand")
   @js.native
   class GetItemCommand protected () extends Command[
           InputTypesUnion, 

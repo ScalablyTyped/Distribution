@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext.draw
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,72 +73,60 @@ object IColor {
   }
   
   @scala.inline
-  implicit class IColorOps[Self <: IColor] (val x: Self) extends AnyVal {
+  implicit class IColorMutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDarker(value: /* factor */ js.UndefOr[Double] => IColor): Self = StObject.set(x, "createDarker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDarkerUndefined: Self = StObject.set(x, "createDarker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateLighter(value: /* factor */ js.UndefOr[Double] => IColor): Self = StObject.set(x, "createLighter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateDarker(value: /* factor */ js.UndefOr[Double] => IColor): Self = this.set("createDarker", js.Any.fromFunction1(value))
+    def setCreateLighterUndefined: Self = StObject.set(x, "createLighter", js.undefined)
     
     @scala.inline
-    def deleteCreateDarker: Self = this.set("createDarker", js.undefined)
+    def setGetGrayscale(value: () => Double): Self = StObject.set(x, "getGrayscale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateLighter(value: /* factor */ js.UndefOr[Double] => IColor): Self = this.set("createLighter", js.Any.fromFunction1(value))
+    def setGetGrayscaleUndefined: Self = StObject.set(x, "getGrayscale", js.undefined)
     
     @scala.inline
-    def deleteCreateLighter: Self = this.set("createLighter", js.undefined)
+    def setGetHSL(value: /* target */ js.UndefOr[Array] => Array): Self = StObject.set(x, "getHSL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGrayscale(value: () => Double): Self = this.set("getGrayscale", js.Any.fromFunction0(value))
+    def setGetHSLUndefined: Self = StObject.set(x, "getHSL", js.undefined)
     
     @scala.inline
-    def deleteGetGrayscale: Self = this.set("getGrayscale", js.undefined)
+    def setLightnessFactor(value: Double): Self = StObject.set(x, "lightnessFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHSL(value: /* target */ js.UndefOr[Array] => Array): Self = this.set("getHSL", js.Any.fromFunction1(value))
+    def setLightnessFactorUndefined: Self = StObject.set(x, "lightnessFactor", js.undefined)
     
     @scala.inline
-    def deleteGetHSL: Self = this.set("getHSL", js.undefined)
+    def setSetFromString(value: /* str */ js.UndefOr[String] => _): Self = StObject.set(x, "setFromString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLightnessFactor(value: Double): Self = this.set("lightnessFactor", value.asInstanceOf[js.Any])
+    def setSetFromStringUndefined: Self = StObject.set(x, "setFromString", js.undefined)
     
     @scala.inline
-    def deleteLightnessFactor: Self = this.set("lightnessFactor", js.undefined)
+    def setSetHSL(value: (/* h */ js.UndefOr[Double], /* s */ js.UndefOr[Double], /* l */ js.UndefOr[Double]) => _): Self = StObject.set(x, "setHSL", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetFromString(value: /* str */ js.UndefOr[String] => _): Self = this.set("setFromString", js.Any.fromFunction1(value))
+    def setSetHSLUndefined: Self = StObject.set(x, "setHSL", js.undefined)
     
     @scala.inline
-    def deleteSetFromString: Self = this.set("setFromString", js.undefined)
+    def setToHex(value: /* color */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHSL(value: (/* h */ js.UndefOr[Double], /* s */ js.UndefOr[Double], /* l */ js.UndefOr[Double]) => _): Self = this.set("setHSL", js.Any.fromFunction3(value))
+    def setToHexUndefined: Self = StObject.set(x, "toHex", js.undefined)
     
     @scala.inline
-    def deleteSetHSL: Self = this.set("setHSL", js.undefined)
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToHex(value: /* color */ js.UndefOr[js.Any] => String): Self = this.set("toHex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToHex: Self = this.set("toHex", js.undefined)
-    
-    @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
   }
 }

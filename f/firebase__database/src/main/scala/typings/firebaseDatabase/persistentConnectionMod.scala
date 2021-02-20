@@ -3,14 +3,14 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.serverActionsMod.ServerActions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/PersistentConnection", JSImport.Namespace)
-@js.native
-object persistentConnectionMod extends js.Object {
+object persistentConnectionMod {
   
+  @JSImport("@firebase/database/dist/src/core/PersistentConnection", "PersistentConnection")
   @js.native
   class PersistentConnection protected () extends ServerActions {
     /**
@@ -179,16 +179,31 @@ object persistentConnectionMod extends js.Object {
     var visible_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object PersistentConnection extends js.Object {
+  object PersistentConnection {
+    
+    @JSImport("@firebase/database/dist/src/core/PersistentConnection", "PersistentConnection")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Counter for number of connections created. Mainly used for tagging in the logs
       */
-    var nextConnectionId_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/PersistentConnection", "PersistentConnection.nextConnectionId_")
+    @js.native
+    def nextConnectionId_ : js.Any = js.native
+    @scala.inline
+    def nextConnectionId__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextConnectionId_")(x.asInstanceOf[js.Any])
     
-    var nextPersistentConnectionId_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/PersistentConnection", "PersistentConnection.nextPersistentConnectionId_")
+    @js.native
+    def nextPersistentConnectionId_ : js.Any = js.native
+    @scala.inline
+    def nextPersistentConnectionId__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextPersistentConnectionId_")(x.asInstanceOf[js.Any])
     
-    var warnOnListenWarnings_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/PersistentConnection", "PersistentConnection.warnOnListenWarnings_")
+    @js.native
+    def warnOnListenWarnings_ : js.Any = js.native
+    @scala.inline
+    def warnOnListenWarnings__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warnOnListenWarnings_")(x.asInstanceOf[js.Any])
   }
 }

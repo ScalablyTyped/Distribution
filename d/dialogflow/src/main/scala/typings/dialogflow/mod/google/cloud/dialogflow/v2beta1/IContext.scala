@@ -1,32 +1,60 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import typings.dialogflow.mod.google.protobuf.IStruct
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Context. */
-trait IContext extends js.Object {
+@js.native
+trait IContext extends StObject {
+  
   /** Context lifespanCount */
-  var lifespanCount: js.UndefOr[Double | Null] = js.undefined
+  var lifespanCount: js.UndefOr[Double | Null] = js.native
+  
   /** Context name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
+  
   /** Context parameters */
-  var parameters: js.UndefOr[IStruct | Null] = js.undefined
+  var parameters: js.UndefOr[IStruct | Null] = js.native
 }
-
 object IContext {
+  
   @scala.inline
-  def apply(
-    lifespanCount: js.UndefOr[Null | Double] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined,
-    parameters: js.UndefOr[Null | IStruct] = js.undefined
-  ): IContext = {
+  def apply(): IContext = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lifespanCount)) __obj.updateDynamic("lifespanCount")(lifespanCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameters)) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContext]
   }
+  
+  @scala.inline
+  implicit class IContextMutableBuilder[Self <: IContext] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLifespanCountNull: Self = StObject.set(x, "lifespanCount", null)
+    
+    @scala.inline
+    def setLifespanCountUndefined: Self = StObject.set(x, "lifespanCount", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setParameters(value: IStruct): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParametersNull: Self = StObject.set(x, "parameters", null)
+    
+    @scala.inline
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+  }
 }
-

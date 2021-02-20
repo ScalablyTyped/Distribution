@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BacklogConfiguration extends js.Object {
+trait BacklogConfiguration extends StObject {
   
   /**
     * Behavior/type field mapping
@@ -62,51 +63,39 @@ object BacklogConfiguration {
   }
   
   @scala.inline
-  implicit class BacklogConfigurationOps[Self <: BacklogConfiguration] (val x: Self) extends AnyVal {
+  implicit class BacklogConfigurationMutableBuilder[Self <: BacklogConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacklogFields(value: BacklogFields): Self = StObject.set(x, "backlogFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBugsBehavior(value: BugsBehavior): Self = StObject.set(x, "bugsBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHiddenBacklogs(value: js.Array[String]): Self = StObject.set(x, "hiddenBacklogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBacklogFields(value: BacklogFields): Self = this.set("backlogFields", value.asInstanceOf[js.Any])
+    def setHiddenBacklogsVarargs(value: String*): Self = StObject.set(x, "hiddenBacklogs", js.Array(value :_*))
     
     @scala.inline
-    def setBugsBehavior(value: BugsBehavior): Self = this.set("bugsBehavior", value.asInstanceOf[js.Any])
+    def setPortfolioBacklogs(value: js.Array[BacklogLevelConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenBacklogsVarargs(value: String*): Self = this.set("hiddenBacklogs", js.Array(value :_*))
+    def setPortfolioBacklogsVarargs(value: BacklogLevelConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
     
     @scala.inline
-    def setHiddenBacklogs(value: js.Array[String]): Self = this.set("hiddenBacklogs", value.asInstanceOf[js.Any])
+    def setRequirementBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioBacklogsVarargs(value: BacklogLevelConfiguration*): Self = this.set("portfolioBacklogs", js.Array(value :_*))
+    def setTaskBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "taskBacklog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioBacklogs(value: js.Array[BacklogLevelConfiguration]): Self = this.set("portfolioBacklogs", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirementBacklog(value: BacklogLevelConfiguration): Self = this.set("requirementBacklog", value.asInstanceOf[js.Any])
+    def setWorkItemTypeMappedStates(value: js.Array[WorkItemTypeStateInfo]): Self = StObject.set(x, "workItemTypeMappedStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskBacklog(value: BacklogLevelConfiguration): Self = this.set("taskBacklog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemTypeMappedStatesVarargs(value: WorkItemTypeStateInfo*): Self = this.set("workItemTypeMappedStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItemTypeMappedStates(value: js.Array[WorkItemTypeStateInfo]): Self = this.set("workItemTypeMappedStates", value.asInstanceOf[js.Any])
+    def setWorkItemTypeMappedStatesVarargs(value: WorkItemTypeStateInfo*): Self = StObject.set(x, "workItemTypeMappedStates", js.Array(value :_*))
   }
 }

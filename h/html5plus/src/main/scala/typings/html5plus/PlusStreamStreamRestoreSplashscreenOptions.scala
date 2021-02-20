@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
 @js.native
-trait PlusStreamStreamRestoreSplashscreenOptions extends js.Object {
+trait PlusStreamStreamRestoreSplashscreenOptions extends StObject {
   
   /**
     * 是否自动关闭启动界面
@@ -39,30 +40,18 @@ object PlusStreamStreamRestoreSplashscreenOptions {
   }
   
   @scala.inline
-  implicit class PlusStreamStreamRestoreSplashscreenOptionsOps[Self <: PlusStreamStreamRestoreSplashscreenOptions] (val x: Self) extends AnyVal {
+  implicit class PlusStreamStreamRestoreSplashscreenOptionsMutableBuilder[Self <: PlusStreamStreamRestoreSplashscreenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoclose(value: Boolean): Self = this.set("autoclose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoclose: Self = this.set("autoclose", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

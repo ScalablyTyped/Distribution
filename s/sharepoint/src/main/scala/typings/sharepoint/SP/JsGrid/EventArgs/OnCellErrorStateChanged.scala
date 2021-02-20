@@ -1,6 +1,7 @@
 package typings.sharepoint.SP.JsGrid.EventArgs
 
 import typings.sharepoint.SP.JsGrid.IEventArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object OnCellErrorStateChanged {
   }
   
   @scala.inline
-  implicit class OnCellErrorStateChangedOps[Self <: OnCellErrorStateChanged] (val x: Self) extends AnyVal {
+  implicit class OnCellErrorStateChangedMutableBuilder[Self <: OnCellErrorStateChanged] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBAddingError(value: Boolean): Self = StObject.set(x, "bAddingError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBCellCurrentlyHasError(value: Boolean): Self = StObject.set(x, "bCellCurrentlyHasError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBCellHadError(value: Boolean): Self = StObject.set(x, "bCellHadError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBAddingError(value: Boolean): Self = this.set("bAddingError", value.asInstanceOf[js.Any])
+    def setErrorId(value: Double): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCellCurrentlyHasError(value: Boolean): Self = this.set("bCellCurrentlyHasError", value.asInstanceOf[js.Any])
+    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBCellHadError(value: Boolean): Self = this.set("bCellHadError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorId(value: Double): Self = this.set("errorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldKey(value: String): Self = this.set("fieldKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordKey(value: Double): Self = this.set("recordKey", value.asInstanceOf[js.Any])
+    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

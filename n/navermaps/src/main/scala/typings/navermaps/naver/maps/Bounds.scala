@@ -1,5 +1,6 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.navermaps.naver.maps.PointBounds
   - typings.navermaps.naver.maps.LatLngBounds
 */
-trait Bounds extends js.Object
+trait Bounds extends StObject

@@ -1,5 +1,6 @@
 package typings.bingmaps.global.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,11 @@ class DrawingTools protected ()
     */
   def this(map: typings.bingmaps.Microsoft.Maps.Map) = this()
 }
-@JSGlobal("Microsoft.Maps.DrawingTools")
-@js.native
-object DrawingTools extends js.Object {
+object DrawingTools {
   
+  @JSGlobal("Microsoft.Maps.DrawingTools.DrawingBarAction")
   @js.native
-  object DrawingBarAction extends js.Object {
+  object DrawingBarAction extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction with Double] = js.native
@@ -48,8 +48,9 @@ object DrawingTools extends js.Object {
     /* 10 */ val styleShapes: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.styleShapes with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.DrawingTools.DrawingMode")
   @js.native
-  object DrawingMode extends js.Object {
+  object DrawingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode with Double] = js.native
@@ -67,8 +68,9 @@ object DrawingTools extends js.Object {
     /* 5 */ val pushpin: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.pushpin with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.DrawingTools.ShapeType")
   @js.native
-  object ShapeType extends js.Object {
+  object ShapeType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType with Double] = js.native

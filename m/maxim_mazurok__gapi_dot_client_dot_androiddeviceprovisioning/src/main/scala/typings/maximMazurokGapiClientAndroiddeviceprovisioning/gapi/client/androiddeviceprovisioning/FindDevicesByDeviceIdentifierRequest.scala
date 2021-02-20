@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindDevicesByDeviceIdentifierRequest extends js.Object {
+trait FindDevicesByDeviceIdentifierRequest extends StObject {
   
   /** Required. Required. The device identifier to search for. */
   var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.native
@@ -25,36 +26,24 @@ object FindDevicesByDeviceIdentifierRequest {
   }
   
   @scala.inline
-  implicit class FindDevicesByDeviceIdentifierRequestOps[Self <: FindDevicesByDeviceIdentifierRequest] (val x: Self) extends AnyVal {
+  implicit class FindDevicesByDeviceIdentifierRequestMutableBuilder[Self <: FindDevicesByDeviceIdentifierRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIdentifier(value: DeviceIdentifier): Self = this.set("deviceIdentifier", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteDeviceIdentifier: Self = this.set("deviceIdentifier", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
-    
-    @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

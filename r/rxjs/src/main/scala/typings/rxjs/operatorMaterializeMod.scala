@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/materialize", JSImport.Namespace)
-@js.native
-object operatorMaterializeMod extends js.Object {
+object operatorMaterializeMod {
   
+  @JSImport("rxjs/operator/materialize", "materialize")
+  @js.native
   def materialize[T](): js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,132 +74,120 @@ object TodoTask {
   }
   
   @scala.inline
-  implicit class TodoTaskOps[Self <: TodoTask] (val x: Self) extends AnyVal {
+  implicit class TodoTaskMutableBuilder[Self <: TodoTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyLastModifiedDateTime(value: String): Self = StObject.set(x, "bodyLastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyLastModifiedDateTimeUndefined: Self = StObject.set(x, "bodyLastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setBody(value: NullableOption[ItemBody]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBodyNull: Self = StObject.set(x, "body", null)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBodyNull: Self = this.set("body", null)
+    def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyLastModifiedDateTime(value: String): Self = this.set("bodyLastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
     
     @scala.inline
-    def deleteBodyLastModifiedDateTime: Self = this.set("bodyLastModifiedDateTime", js.undefined)
+    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
     @scala.inline
-    def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("completedDateTime", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompletedDateTime: Self = this.set("completedDateTime", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCompletedDateTimeNull: Self = this.set("completedDateTime", null)
+    def setDueDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
     
     @scala.inline
-    def setDueDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("dueDateTime", value.asInstanceOf[js.Any])
+    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDueDateTime: Self = this.set("dueDateTime", js.undefined)
+    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     @scala.inline
-    def setDueDateTimeNull: Self = this.set("dueDateTime", null)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setImportance(value: Importance): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def setExtensionsNull: Self = this.set("extensions", null)
+    def setIsReminderOn(value: Boolean): Self = StObject.set(x, "isReminderOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: Importance): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setIsReminderOnUndefined: Self = StObject.set(x, "isReminderOn", js.undefined)
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReminderOn(value: Boolean): Self = this.set("isReminderOn", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def deleteIsReminderOn: Self = this.set("isReminderOn", js.undefined)
+    def setLinkedResources(value: NullableOption[js.Array[LinkedResource]]): Self = StObject.set(x, "linkedResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setLinkedResourcesNull: Self = StObject.set(x, "linkedResources", null)
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setLinkedResourcesUndefined: Self = StObject.set(x, "linkedResources", js.undefined)
     
     @scala.inline
-    def setLinkedResourcesVarargs(value: LinkedResource*): Self = this.set("linkedResources", js.Array(value :_*))
+    def setLinkedResourcesVarargs(value: LinkedResource*): Self = StObject.set(x, "linkedResources", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedResources(value: NullableOption[js.Array[LinkedResource]]): Self = this.set("linkedResources", value.asInstanceOf[js.Any])
+    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkedResources: Self = this.set("linkedResources", js.undefined)
+    def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
     
     @scala.inline
-    def setLinkedResourcesNull: Self = this.set("linkedResources", null)
+    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
     @scala.inline
-    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = this.set("recurrence", value.asInstanceOf[js.Any])
+    def setReminderDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "reminderDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrence: Self = this.set("recurrence", js.undefined)
+    def setReminderDateTimeNull: Self = StObject.set(x, "reminderDateTime", null)
     
     @scala.inline
-    def setRecurrenceNull: Self = this.set("recurrence", null)
+    def setReminderDateTimeUndefined: Self = StObject.set(x, "reminderDateTime", js.undefined)
     
     @scala.inline
-    def setReminderDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("reminderDateTime", value.asInstanceOf[js.Any])
+    def setStatus(value: TaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReminderDateTime: Self = this.set("reminderDateTime", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setReminderDateTimeNull: Self = this.set("reminderDateTime", null)
+    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TaskStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: NullableOption[String]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

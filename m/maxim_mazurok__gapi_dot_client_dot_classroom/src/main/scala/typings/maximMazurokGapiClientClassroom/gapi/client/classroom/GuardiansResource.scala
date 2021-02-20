@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientClassroom.anon.GuardianId
 import typings.maximMazurokGapiClientClassroom.anon.PageToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GuardiansResource extends js.Object {
+trait GuardiansResource extends StObject {
   
   /**
     * Deletes a guardian. The guardian will no longer receive guardian notifications and the guardian will no longer be accessible via the API. This method returns the following error

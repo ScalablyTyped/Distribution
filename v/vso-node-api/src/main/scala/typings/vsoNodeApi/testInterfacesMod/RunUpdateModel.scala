@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunUpdateModel extends js.Object {
+trait RunUpdateModel extends StObject {
   
   var build: ShallowReference = js.native
   
@@ -89,93 +90,81 @@ object RunUpdateModel {
   }
   
   @scala.inline
-  implicit class RunUpdateModelOps[Self <: RunUpdateModel] (val x: Self) extends AnyVal {
+  implicit class RunUpdateModelMutableBuilder[Self <: RunUpdateModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildDropLocation(value: String): Self = StObject.set(x, "buildDropLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildFlavor(value: String): Self = StObject.set(x, "buildFlavor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: ShallowReference): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setBuildPlatform(value: String): Self = StObject.set(x, "buildPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildDropLocation(value: String): Self = this.set("buildDropLocation", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildFlavor(value: String): Self = this.set("buildFlavor", value.asInstanceOf[js.Any])
+    def setCompletedDate(value: String): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildPlatform(value: String): Self = this.set("buildPlatform", value.asInstanceOf[js.Any])
+    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDeleteInProgressResults(value: Boolean): Self = StObject.set(x, "deleteInProgressResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDate(value: String): Self = this.set("completedDate", value.asInstanceOf[js.Any])
+    def setDtlAutEnvironment(value: ShallowReference): Self = StObject.set(x, "dtlAutEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: String): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setDtlEnvironment(value: ShallowReference): Self = StObject.set(x, "dtlEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteInProgressResults(value: Boolean): Self = this.set("deleteInProgressResults", value.asInstanceOf[js.Any])
+    def setDtlEnvironmentDetails(value: DtlEnvironmentDetails): Self = StObject.set(x, "dtlEnvironmentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtlAutEnvironment(value: ShallowReference): Self = this.set("dtlAutEnvironment", value.asInstanceOf[js.Any])
+    def setDueDate(value: String): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtlEnvironment(value: ShallowReference): Self = this.set("dtlEnvironment", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtlEnvironmentDetails(value: DtlEnvironmentDetails): Self = this.set("dtlEnvironmentDetails", value.asInstanceOf[js.Any])
+    def setIteration(value: String): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueDate(value: String): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    def setLogEntries(value: js.Array[TestMessageLogDetails]): Self = StObject.set(x, "logEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setLogEntriesVarargs(value: TestMessageLogDetails*): Self = StObject.set(x, "logEntries", js.Array(value :_*))
     
     @scala.inline
-    def setIteration(value: String): Self = this.set("iteration", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEntriesVarargs(value: TestMessageLogDetails*): Self = this.set("logEntries", js.Array(value :_*))
+    def setReleaseEnvironmentUri(value: String): Self = StObject.set(x, "releaseEnvironmentUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEntries(value: js.Array[TestMessageLogDetails]): Self = this.set("logEntries", value.asInstanceOf[js.Any])
+    def setReleaseUri(value: String): Self = StObject.set(x, "releaseUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSourceWorkflow(value: String): Self = StObject.set(x, "sourceWorkflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseEnvironmentUri(value: String): Self = this.set("releaseEnvironmentUri", value.asInstanceOf[js.Any])
+    def setStartedDate(value: String): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseUri(value: String): Self = this.set("releaseUri", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceWorkflow(value: String): Self = this.set("sourceWorkflow", value.asInstanceOf[js.Any])
+    def setSubstate(value: TestRunSubstate): Self = StObject.set(x, "substate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedDate(value: String): Self = this.set("startedDate", value.asInstanceOf[js.Any])
+    def setTestEnvironmentId(value: String): Self = StObject.set(x, "testEnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubstate(value: TestRunSubstate): Self = this.set("substate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestEnvironmentId(value: String): Self = this.set("testEnvironmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSettings(value: ShallowReference): Self = this.set("testSettings", value.asInstanceOf[js.Any])
+    def setTestSettings(value: ShallowReference): Self = StObject.set(x, "testSettings", value.asInstanceOf[js.Any])
   }
 }

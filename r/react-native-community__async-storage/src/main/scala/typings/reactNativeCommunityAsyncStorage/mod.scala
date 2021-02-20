@@ -1,21 +1,25 @@
 package typings.reactNativeCommunityAsyncStorage
 
+import org.scalablytyped.runtime.Shortcut
 import typings.reactNativeCommunityAsyncStorage.anon.GetItem
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-native-community/async-storage", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("@react-native-community/async-storage", JSImport.Default)
+  @js.native
   val default: AsyncStorageStatic = js.native
   
+  @JSImport("@react-native-community/async-storage", "useAsyncStorage")
+  @js.native
   def useAsyncStorage(key: String): GetItem = js.native
   
   @js.native
-  trait AsyncStorageStatic extends js.Object {
+  trait AsyncStorageStatic extends StObject {
     
     /**
       * Erases all AsyncStorage for all clients, libraries, etc. You probably don't want to call this.
@@ -99,4 +103,9 @@ object mod extends js.Object {
     def setItem(key: String, value: String): js.Promise[Unit] = js.native
     def setItem(key: String, value: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): js.Promise[Unit] = js.native
   }
+  
+  type _To = AsyncStorageStatic
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: AsyncStorageStatic = default
 }

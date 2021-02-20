@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceSearchResponse extends js.Object {
+trait PlaceSearchResponse extends StObject {
   
   /**
     * When the Google Places service returns a status code other than `OK`, there may be an additional `error_message` field
@@ -49,39 +50,27 @@ object PlaceSearchResponse {
   }
   
   @scala.inline
-  implicit class PlaceSearchResponseOps[Self <: PlaceSearchResponse] (val x: Self) extends AnyVal {
+  implicit class PlaceSearchResponseMutableBuilder[Self <: PlaceSearchResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
     
     @scala.inline
-    def setError_message(value: String): Self = this.set("error_message", value.asInstanceOf[js.Any])
+    def setNext_page_token(value: String): Self = StObject.set(x, "next_page_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_attributionsVarargs(value: String*): Self = this.set("html_attributions", js.Array(value :_*))
+    def setResults(value: js.Array[PlaceSearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_attributions(value: js.Array[String]): Self = this.set("html_attributions", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: PlaceSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setNext_page_token(value: String): Self = this.set("next_page_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: PlaceSearchResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[PlaceSearchResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: SearchResponseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: SearchResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

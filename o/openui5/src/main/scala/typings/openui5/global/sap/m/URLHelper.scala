@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.m.URLHelper")
-@js.native
-object URLHelper extends js.Object {
+object URLHelper {
   
   /**
     * Adds an event registration for redirect.
@@ -14,7 +13,11 @@ object URLHelper extends js.Object {
     * @param oListener The object, that wants to be notified, when the event occurs.
     * @returns sap.m.URLHelper instance
     */
+  @JSGlobal("sap.m.URLHelper.attachRedirect")
+  @js.native
   def attachRedirect(fnFunction: js.Any): js.Any = js.native
+  @JSGlobal("sap.m.URLHelper.attachRedirect")
+  @js.native
   def attachRedirect(fnFunction: js.Any, oListener: js.Any): js.Any = js.native
   
   /**
@@ -23,7 +26,11 @@ object URLHelper extends js.Object {
     * @param oListener The object, that wants to be notified, when the event occurs.
     * @returns sap.m.URLHelper instance
     */
+  @JSGlobal("sap.m.URLHelper.detachRedirect")
+  @js.native
   def detachRedirect(fnFunction: js.Any): js.Any = js.native
+  @JSGlobal("sap.m.URLHelper.detachRedirect")
+  @js.native
   def detachRedirect(fnFunction: js.Any, oListener: js.Any): js.Any = js.native
   
   /**
@@ -35,7 +42,11 @@ object URLHelper extends js.Object {
     * @param sBCC Blind carbon copy email address
     * @returns Email URI scheme
     */
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(
     sEmail: String,
     sSubject: js.UndefOr[scala.Nothing],
@@ -43,7 +54,11 @@ object URLHelper extends js.Object {
     sCC: js.UndefOr[scala.Nothing],
     sBCC: String
   ): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: js.UndefOr[scala.Nothing], sCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(
     sEmail: String,
     sSubject: js.UndefOr[scala.Nothing],
@@ -51,7 +66,11 @@ object URLHelper extends js.Object {
     sCC: String,
     sBCC: String
   ): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(
     sEmail: String,
     sSubject: js.UndefOr[scala.Nothing],
@@ -59,9 +78,17 @@ object URLHelper extends js.Object {
     sCC: js.UndefOr[scala.Nothing],
     sBCC: String
   ): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String, sBCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(
     sEmail: String,
     sSubject: String,
@@ -69,11 +96,23 @@ object URLHelper extends js.Object {
     sCC: js.UndefOr[scala.Nothing],
     sBCC: String
   ): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String, sBCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: js.UndefOr[scala.Nothing], sBCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: String): String = js.native
+  @JSGlobal("sap.m.URLHelper.normalizeEmail")
+  @js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: String, sBCC: String): String = js.native
   
   /**
@@ -81,6 +120,8 @@ object URLHelper extends js.Object {
     * @param sTel Telephone number
     * @returns SMS URI scheme
     */
+  @JSGlobal("sap.m.URLHelper.normalizeSms")
+  @js.native
   def normalizeSms(sTel: String): String = js.native
   
   /**
@@ -88,6 +129,8 @@ object URLHelper extends js.Object {
     * @param sTel Telephone number
     * @returns Telephone URI scheme
     */
+  @JSGlobal("sap.m.URLHelper.normalizeTel")
+  @js.native
   def normalizeTel(sTel: String): String = js.native
   
   /**
@@ -99,7 +142,11 @@ object URLHelper extends js.Object {
     * (because of a known system restriction on cross-window communications). Use sap.m.Link instead (with
     * blank target) if you necessarily need to open URL in a new window.
     */
+  @JSGlobal("sap.m.URLHelper.redirect")
+  @js.native
   def redirect(sURL: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.redirect")
+  @js.native
   def redirect(sURL: String, bNewWindow: Boolean): Unit = js.native
   
   /**
@@ -110,7 +157,11 @@ object URLHelper extends js.Object {
     * @param sCC Carbon Copy email address
     * @param sBCC Blind carbon copy email address
     */
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(
     sEmail: String,
     sSubject: js.UndefOr[scala.Nothing],
@@ -118,7 +169,11 @@ object URLHelper extends js.Object {
     sCC: js.UndefOr[scala.Nothing],
     sBCC: String
   ): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: js.UndefOr[scala.Nothing], sCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(
     sEmail: String,
     sSubject: js.UndefOr[scala.Nothing],
@@ -126,7 +181,11 @@ object URLHelper extends js.Object {
     sCC: String,
     sBCC: String
   ): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(
     sEmail: String,
     sSubject: js.UndefOr[scala.Nothing],
@@ -134,9 +193,17 @@ object URLHelper extends js.Object {
     sCC: js.UndefOr[scala.Nothing],
     sBCC: String
   ): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String, sBCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(
     sEmail: String,
     sSubject: String,
@@ -144,22 +211,38 @@ object URLHelper extends js.Object {
     sCC: js.UndefOr[scala.Nothing],
     sBCC: String
   ): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String, sBCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: js.UndefOr[scala.Nothing], sBCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: String): Unit = js.native
+  @JSGlobal("sap.m.URLHelper.triggerEmail")
+  @js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: String, sBCC: String): Unit = js.native
   
   /**
     * Trigger SMS application to send SMS to given telephone number.
     * @param sTel Telephone number
     */
+  @JSGlobal("sap.m.URLHelper.triggerSms")
+  @js.native
   def triggerSms(sTel: String): Unit = js.native
   
   /**
     * Trigger telephone to call given telephone number.
     * @param sTel Telephone number
     */
+  @JSGlobal("sap.m.URLHelper.triggerTel")
+  @js.native
   def triggerTel(sTel: String): Unit = js.native
 }

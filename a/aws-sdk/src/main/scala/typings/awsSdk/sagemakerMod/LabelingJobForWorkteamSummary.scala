@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelingJobForWorkteamSummary extends js.Object {
+trait LabelingJobForWorkteamSummary extends StObject {
   
   /**
     * The date and time that the labeling job was created.
@@ -46,45 +47,33 @@ object LabelingJobForWorkteamSummary {
   }
   
   @scala.inline
-  implicit class LabelingJobForWorkteamSummaryOps[Self <: LabelingJobForWorkteamSummary] (val x: Self) extends AnyVal {
+  implicit class LabelingJobForWorkteamSummaryMutableBuilder[Self <: LabelingJobForWorkteamSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobReferenceCode(value: JobReferenceCode): Self = StObject.set(x, "JobReferenceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelCounters(value: LabelCountersForWorkteam): Self = StObject.set(x, "LabelCounters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLabelCountersUndefined: Self = StObject.set(x, "LabelCounters", js.undefined)
     
     @scala.inline
-    def setJobReferenceCode(value: JobReferenceCode): Self = this.set("JobReferenceCode", value.asInstanceOf[js.Any])
+    def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkRequesterAccountId(value: AccountId): Self = this.set("WorkRequesterAccountId", value.asInstanceOf[js.Any])
+    def setLabelingJobNameUndefined: Self = StObject.set(x, "LabelingJobName", js.undefined)
     
     @scala.inline
-    def setLabelCounters(value: LabelCountersForWorkteam): Self = this.set("LabelCounters", value.asInstanceOf[js.Any])
+    def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelCounters: Self = this.set("LabelCounters", js.undefined)
+    def setNumberOfHumanWorkersPerDataObjectUndefined: Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", js.undefined)
     
     @scala.inline
-    def setLabelingJobName(value: LabelingJobName): Self = this.set("LabelingJobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelingJobName: Self = this.set("LabelingJobName", js.undefined)
-    
-    @scala.inline
-    def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = this.set("NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfHumanWorkersPerDataObject: Self = this.set("NumberOfHumanWorkersPerDataObject", js.undefined)
+    def setWorkRequesterAccountId(value: AccountId): Self = StObject.set(x, "WorkRequesterAccountId", value.asInstanceOf[js.Any])
   }
 }

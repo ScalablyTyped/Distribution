@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarginYProps[TLength] extends js.Object {
+trait MarginYProps[TLength] extends StObject {
   
   val my: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object MarginYProps {
   }
   
   @scala.inline
-  implicit class MarginYPropsOps[Self <: MarginYProps[_], TLength] (val x: Self with MarginYProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMyVarargs(value: js.Any*): Self = this.set("my", js.Array(value :_*))
+  implicit class MarginYPropsMutableBuilder[Self <: MarginYProps[_], TLength] (val x: Self with MarginYProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setMy(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
         ]
-    ): Self = this.set("my", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMy: Self = this.set("my", js.undefined)
+    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+    
+    @scala.inline
+    def setMyVarargs(value: js.Any*): Self = StObject.set(x, "my", js.Array(value :_*))
   }
 }

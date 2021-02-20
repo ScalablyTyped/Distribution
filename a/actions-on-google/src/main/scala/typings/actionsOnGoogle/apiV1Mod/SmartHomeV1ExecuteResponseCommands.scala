@@ -2,12 +2,13 @@ package typings.actionsOnGoogle.apiV1Mod
 
 import typings.actionsOnGoogle.anon.TypeChallengeType
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1ExecuteResponseCommands extends js.Object {
+trait SmartHomeV1ExecuteResponseCommands extends StObject {
   
   var challengeNeeded: js.UndefOr[TypeChallengeType] = js.native
   
@@ -30,51 +31,39 @@ object SmartHomeV1ExecuteResponseCommands {
   }
   
   @scala.inline
-  implicit class SmartHomeV1ExecuteResponseCommandsOps[Self <: SmartHomeV1ExecuteResponseCommands] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1ExecuteResponseCommandsMutableBuilder[Self <: SmartHomeV1ExecuteResponseCommands] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeNeeded(value: TypeChallengeType): Self = StObject.set(x, "challengeNeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengeNeededUndefined: Self = StObject.set(x, "challengeNeeded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setDebugStringUndefined: Self = StObject.set(x, "debugString", js.undefined)
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setErrorCode(value: SmartHomeV1ExecuteErrors): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SmartHomeV1ExecuteStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def setChallengeNeeded(value: TypeChallengeType): Self = this.set("challengeNeeded", value.asInstanceOf[js.Any])
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChallengeNeeded: Self = this.set("challengeNeeded", js.undefined)
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setDebugString(value: String): Self = this.set("debugString", value.asInstanceOf[js.Any])
+    def setStates(value: ApiClientObjectMap[_]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebugString: Self = this.set("debugString", js.undefined)
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def setErrorCode(value: SmartHomeV1ExecuteErrors): Self = this.set("errorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
-    
-    @scala.inline
-    def setStates(value: ApiClientObjectMap[_]): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setStatus(value: SmartHomeV1ExecuteStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

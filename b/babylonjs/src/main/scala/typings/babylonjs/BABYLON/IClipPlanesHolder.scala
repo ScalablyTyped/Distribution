@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClipPlanesHolder extends js.Object {
+trait IClipPlanesHolder extends StObject {
   
   /**
     * Gets or sets the active clipplane 1
@@ -46,54 +47,42 @@ object IClipPlanesHolder {
   }
   
   @scala.inline
-  implicit class IClipPlanesHolderOps[Self <: IClipPlanesHolder] (val x: Self) extends AnyVal {
+  implicit class IClipPlanesHolderMutableBuilder[Self <: IClipPlanesHolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClipPlane(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClipPlane2(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClipPlane2Null: Self = StObject.set(x, "clipPlane2", null)
     
     @scala.inline
-    def setClipPlane(value: Nullable[Plane]): Self = this.set("clipPlane", value.asInstanceOf[js.Any])
+    def setClipPlane3(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPlaneNull: Self = this.set("clipPlane", null)
+    def setClipPlane3Null: Self = StObject.set(x, "clipPlane3", null)
     
     @scala.inline
-    def setClipPlane2(value: Nullable[Plane]): Self = this.set("clipPlane2", value.asInstanceOf[js.Any])
+    def setClipPlane4(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPlane2Null: Self = this.set("clipPlane2", null)
+    def setClipPlane4Null: Self = StObject.set(x, "clipPlane4", null)
     
     @scala.inline
-    def setClipPlane3(value: Nullable[Plane]): Self = this.set("clipPlane3", value.asInstanceOf[js.Any])
+    def setClipPlane5(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPlane3Null: Self = this.set("clipPlane3", null)
+    def setClipPlane5Null: Self = StObject.set(x, "clipPlane5", null)
     
     @scala.inline
-    def setClipPlane4(value: Nullable[Plane]): Self = this.set("clipPlane4", value.asInstanceOf[js.Any])
+    def setClipPlane6(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPlane4Null: Self = this.set("clipPlane4", null)
+    def setClipPlane6Null: Self = StObject.set(x, "clipPlane6", null)
     
     @scala.inline
-    def setClipPlane5(value: Nullable[Plane]): Self = this.set("clipPlane5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClipPlane5Null: Self = this.set("clipPlane5", null)
-    
-    @scala.inline
-    def setClipPlane6(value: Nullable[Plane]): Self = this.set("clipPlane6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClipPlane6Null: Self = this.set("clipPlane6", null)
+    def setClipPlaneNull: Self = StObject.set(x, "clipPlane", null)
   }
 }

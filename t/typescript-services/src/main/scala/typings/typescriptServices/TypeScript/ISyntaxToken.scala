@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,57 +84,45 @@ object ISyntaxToken {
   }
   
   @scala.inline
-  implicit class ISyntaxTokenOps[Self <: ISyntaxToken] (val x: Self) extends AnyVal {
+  implicit class ISyntaxTokenMutableBuilder[Self <: ISyntaxToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasLeadingComment(value: () => Boolean): Self = StObject.set(x, "hasLeadingComment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasLeadingNewLine(value: () => Boolean): Self = StObject.set(x, "hasLeadingNewLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasLeadingSkippedText(value: () => Boolean): Self = StObject.set(x, "hasLeadingSkippedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLeadingComment(value: () => Boolean): Self = this.set("hasLeadingComment", js.Any.fromFunction0(value))
+    def setHasLeadingTrivia(value: () => Boolean): Self = StObject.set(x, "hasLeadingTrivia", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLeadingNewLine(value: () => Boolean): Self = this.set("hasLeadingNewLine", js.Any.fromFunction0(value))
+    def setHasSkippedToken(value: () => Boolean): Self = StObject.set(x, "hasSkippedToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLeadingSkippedText(value: () => Boolean): Self = this.set("hasLeadingSkippedText", js.Any.fromFunction0(value))
+    def setHasTrailingComment(value: () => Boolean): Self = StObject.set(x, "hasTrailingComment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLeadingTrivia(value: () => Boolean): Self = this.set("hasLeadingTrivia", js.Any.fromFunction0(value))
+    def setHasTrailingNewLine(value: () => Boolean): Self = StObject.set(x, "hasTrailingNewLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasSkippedToken(value: () => Boolean): Self = this.set("hasSkippedToken", js.Any.fromFunction0(value))
+    def setHasTrailingSkippedText(value: () => Boolean): Self = StObject.set(x, "hasTrailingSkippedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasTrailingComment(value: () => Boolean): Self = this.set("hasTrailingComment", js.Any.fromFunction0(value))
+    def setHasTrailingTrivia(value: () => Boolean): Self = StObject.set(x, "hasTrailingTrivia", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasTrailingNewLine(value: () => Boolean): Self = this.set("hasTrailingNewLine", js.Any.fromFunction0(value))
+    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasTrailingSkippedText(value: () => Boolean): Self = this.set("hasTrailingSkippedText", js.Any.fromFunction0(value))
+    def setTokenKind(value: SyntaxKind): Self = StObject.set(x, "tokenKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasTrailingTrivia(value: () => Boolean): Self = this.set("hasTrailingTrivia", js.Any.fromFunction0(value))
+    def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setText(value: () => String): Self = this.set("text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTokenKind(value: SyntaxKind): Self = this.set("tokenKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: () => js.Any): Self = this.set("value", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValueText(value: () => String): Self = this.set("valueText", js.Any.fromFunction0(value))
+    def setValueText(value: () => String): Self = StObject.set(x, "valueText", js.Any.fromFunction0(value))
   }
 }

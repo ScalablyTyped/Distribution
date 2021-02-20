@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest extends js.Object {
+trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest extends StObject {
   
   /** Specifies the instance to update. */
   var instance: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] = js.native
@@ -32,42 +33,30 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequestOps[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequestMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaUpdateInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoggingEnabled(value: Boolean): Self = StObject.set(x, "loggingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setLoggingEnabledUndefined: Self = StObject.set(x, "loggingEnabled", js.undefined)
     
     @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingEnabled(value: Boolean): Self = this.set("loggingEnabled", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLoggingEnabled: Self = this.set("loggingEnabled", js.undefined)
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

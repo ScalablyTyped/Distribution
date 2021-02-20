@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2.data
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,36 +52,24 @@ object XLabeledDataSequence {
   }
   
   @scala.inline
-  implicit class XLabeledDataSequenceOps[Self <: XLabeledDataSequence] (val x: Self) extends AnyVal {
+  implicit class XLabeledDataSequenceMutableBuilder[Self <: XLabeledDataSequence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLabel(value: () => XDataSequence): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetValues(value: () => XDataSequence): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: XDataSequence): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: XDataSequence): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setSetLabel(value: XDataSequence => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValues(value: XDataSequence): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setSetValues(value: XDataSequence => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLabel(value: () => XDataSequence): Self = this.set("getLabel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValues(value: () => XDataSequence): Self = this.set("getValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLabel(value: XDataSequence => Unit): Self = this.set("setLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValues(value: XDataSequence => Unit): Self = this.set("setValues", js.Any.fromFunction1(value))
+    def setValues(value: XDataSequence): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

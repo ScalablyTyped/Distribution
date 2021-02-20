@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The result of updating an embedded object&#39;s position.
   */
 @js.native
-trait SchemaUpdateEmbeddedObjectPositionResponse extends js.Object {
+trait SchemaUpdateEmbeddedObjectPositionResponse extends StObject {
   
   /**
     * The new position of the embedded object.
@@ -24,24 +25,12 @@ object SchemaUpdateEmbeddedObjectPositionResponse {
   }
   
   @scala.inline
-  implicit class SchemaUpdateEmbeddedObjectPositionResponseOps[Self <: SchemaUpdateEmbeddedObjectPositionResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateEmbeddedObjectPositionResponseMutableBuilder[Self <: SchemaUpdateEmbeddedObjectPositionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: SchemaEmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPosition(value: SchemaEmbeddedObjectPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

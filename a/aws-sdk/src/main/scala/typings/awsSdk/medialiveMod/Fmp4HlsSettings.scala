@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fmp4HlsSettings extends js.Object {
+trait Fmp4HlsSettings extends StObject {
   
   /**
     * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
@@ -31,36 +32,24 @@ object Fmp4HlsSettings {
   }
   
   @scala.inline
-  implicit class Fmp4HlsSettingsOps[Self <: Fmp4HlsSettings] (val x: Self) extends AnyVal {
+  implicit class Fmp4HlsSettingsMutableBuilder[Self <: Fmp4HlsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioRenditionSetsUndefined: Self = StObject.set(x, "AudioRenditionSets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNielsenId3Behavior(value: Fmp4NielsenId3Behavior): Self = StObject.set(x, "NielsenId3Behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioRenditionSets(value: string): Self = this.set("AudioRenditionSets", value.asInstanceOf[js.Any])
+    def setNielsenId3BehaviorUndefined: Self = StObject.set(x, "NielsenId3Behavior", js.undefined)
     
     @scala.inline
-    def deleteAudioRenditionSets: Self = this.set("AudioRenditionSets", js.undefined)
+    def setTimedMetadataBehavior(value: Fmp4TimedMetadataBehavior): Self = StObject.set(x, "TimedMetadataBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNielsenId3Behavior(value: Fmp4NielsenId3Behavior): Self = this.set("NielsenId3Behavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNielsenId3Behavior: Self = this.set("NielsenId3Behavior", js.undefined)
-    
-    @scala.inline
-    def setTimedMetadataBehavior(value: Fmp4TimedMetadataBehavior): Self = this.set("TimedMetadataBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedMetadataBehavior: Self = this.set("TimedMetadataBehavior", js.undefined)
+    def setTimedMetadataBehaviorUndefined: Self = StObject.set(x, "TimedMetadataBehavior", js.undefined)
   }
 }

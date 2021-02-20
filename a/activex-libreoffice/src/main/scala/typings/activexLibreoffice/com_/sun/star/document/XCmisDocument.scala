@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,51 +64,39 @@ object XCmisDocument {
   }
   
   @scala.inline
-  implicit class XCmisDocumentOps[Self <: XCmisDocument] (val x: Self) extends AnyVal {
+  implicit class XCmisDocumentMutableBuilder[Self <: XCmisDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllVersions(value: SafeArray[CmisVersion]): Self = StObject.set(x, "AllVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanCancelCheckOut(value: () => Boolean): Self = StObject.set(x, "canCancelCheckOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanCheckIn(value: () => Boolean): Self = StObject.set(x, "canCheckIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllVersions(value: SafeArray[CmisVersion]): Self = this.set("AllVersions", value.asInstanceOf[js.Any])
+    def setCanCheckOut(value: () => Boolean): Self = StObject.set(x, "canCheckOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCmisProperties(value: SafeArray[CmisProperty]): Self = this.set("CmisProperties", value.asInstanceOf[js.Any])
+    def setCancelCheckOut(value: () => Unit): Self = StObject.set(x, "cancelCheckOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanCancelCheckOut(value: () => Boolean): Self = this.set("canCancelCheckOut", js.Any.fromFunction0(value))
+    def setCheckIn(value: (Boolean, String) => Unit): Self = StObject.set(x, "checkIn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCanCheckIn(value: () => Boolean): Self = this.set("canCheckIn", js.Any.fromFunction0(value))
+    def setCheckOut(value: () => Unit): Self = StObject.set(x, "checkOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanCheckOut(value: () => Boolean): Self = this.set("canCheckOut", js.Any.fromFunction0(value))
+    def setCmisProperties(value: SafeArray[CmisProperty]): Self = StObject.set(x, "CmisProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelCheckOut(value: () => Unit): Self = this.set("cancelCheckOut", js.Any.fromFunction0(value))
+    def setGetAllVersions(value: () => SafeArray[CmisVersion]): Self = StObject.set(x, "getAllVersions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckIn(value: (Boolean, String) => Unit): Self = this.set("checkIn", js.Any.fromFunction2(value))
+    def setIsVersionable(value: () => Boolean): Self = StObject.set(x, "isVersionable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckOut(value: () => Unit): Self = this.set("checkOut", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAllVersions(value: () => SafeArray[CmisVersion]): Self = this.set("getAllVersions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsVersionable(value: () => Boolean): Self = this.set("isVersionable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateCmisProperties(value: SeqEquiv[CmisProperty] => Unit): Self = this.set("updateCmisProperties", js.Any.fromFunction1(value))
+    def setUpdateCmisProperties(value: SeqEquiv[CmisProperty] => Unit): Self = StObject.set(x, "updateCmisProperties", js.Any.fromFunction1(value))
   }
 }

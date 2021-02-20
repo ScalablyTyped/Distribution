@@ -1,11 +1,12 @@
 package typings.activexDao.DAO
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Relation extends js.Object {
+trait Relation extends StObject {
   
   var Attributes: RelationAttributeEnum = js.native
   

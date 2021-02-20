@@ -1,12 +1,13 @@
 package typings.angularCompiler.anon
 
 import typings.angularCompiler.tagsMod.TagContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClosedByChildren extends js.Object {
+trait ClosedByChildren extends StObject {
   
   var closedByChildren: js.UndefOr[js.Array[String]] = js.native
   
@@ -31,63 +32,51 @@ object ClosedByChildren {
   }
   
   @scala.inline
-  implicit class ClosedByChildrenOps[Self <: ClosedByChildren] (val x: Self) extends AnyVal {
+  implicit class ClosedByChildrenMutableBuilder[Self <: ClosedByChildren] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosedByChildren(value: js.Array[String]): Self = StObject.set(x, "closedByChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosedByChildrenUndefined: Self = StObject.set(x, "closedByChildren", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosedByChildrenVarargs(value: String*): Self = StObject.set(x, "closedByChildren", js.Array(value :_*))
     
     @scala.inline
-    def setClosedByChildrenVarargs(value: String*): Self = this.set("closedByChildren", js.Array(value :_*))
+    def setClosedByParent(value: Boolean): Self = StObject.set(x, "closedByParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedByChildren(value: js.Array[String]): Self = this.set("closedByChildren", value.asInstanceOf[js.Any])
+    def setClosedByParentUndefined: Self = StObject.set(x, "closedByParent", js.undefined)
     
     @scala.inline
-    def deleteClosedByChildren: Self = this.set("closedByChildren", js.undefined)
+    def setContentType(value: TagContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedByParent(value: Boolean): Self = this.set("closedByParent", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteClosedByParent: Self = this.set("closedByParent", js.undefined)
+    def setIgnoreFirstLf(value: Boolean): Self = StObject.set(x, "ignoreFirstLf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: TagContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setIgnoreFirstLfUndefined: Self = StObject.set(x, "ignoreFirstLf", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setImplicitNamespacePrefix(value: String): Self = StObject.set(x, "implicitNamespacePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreFirstLf(value: Boolean): Self = this.set("ignoreFirstLf", value.asInstanceOf[js.Any])
+    def setImplicitNamespacePrefixUndefined: Self = StObject.set(x, "implicitNamespacePrefix", js.undefined)
     
     @scala.inline
-    def deleteIgnoreFirstLf: Self = this.set("ignoreFirstLf", js.undefined)
+    def setIsVoid(value: Boolean): Self = StObject.set(x, "isVoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicitNamespacePrefix(value: String): Self = this.set("implicitNamespacePrefix", value.asInstanceOf[js.Any])
+    def setIsVoidUndefined: Self = StObject.set(x, "isVoid", js.undefined)
     
     @scala.inline
-    def deleteImplicitNamespacePrefix: Self = this.set("implicitNamespacePrefix", js.undefined)
+    def setPreventNamespaceInheritance(value: Boolean): Self = StObject.set(x, "preventNamespaceInheritance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVoid(value: Boolean): Self = this.set("isVoid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsVoid: Self = this.set("isVoid", js.undefined)
-    
-    @scala.inline
-    def setPreventNamespaceInheritance(value: Boolean): Self = this.set("preventNamespaceInheritance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventNamespaceInheritance: Self = this.set("preventNamespaceInheritance", js.undefined)
+    def setPreventNamespaceInheritanceUndefined: Self = StObject.set(x, "preventNamespaceInheritance", js.undefined)
   }
 }

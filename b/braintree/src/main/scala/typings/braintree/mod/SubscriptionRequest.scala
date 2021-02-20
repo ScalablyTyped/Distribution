@@ -4,12 +4,13 @@ import typings.braintree.anon.Add
 import typings.braintree.anon.DoNotInheritAddOnsOrDiscounts
 import typings.braintree.anon.Remove
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionRequest extends js.Object {
+trait SubscriptionRequest extends StObject {
   
   var addOns: js.UndefOr[Add] = js.native
   
@@ -54,114 +55,102 @@ object SubscriptionRequest {
   }
   
   @scala.inline
-  implicit class SubscriptionRequestOps[Self <: SubscriptionRequest] (val x: Self) extends AnyVal {
+  implicit class SubscriptionRequestMutableBuilder[Self <: SubscriptionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOns(value: Add): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingDayOfMonth(value: Double): Self = StObject.set(x, "billingDayOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodToken(value: String): Self = this.set("paymentMethodToken", value.asInstanceOf[js.Any])
+    def setBillingDayOfMonthUndefined: Self = StObject.set(x, "billingDayOfMonth", js.undefined)
     
     @scala.inline
-    def setPlanId(value: String): Self = this.set("planId", value.asInstanceOf[js.Any])
+    def setDescriptor(value: Descriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOns(value: Add): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
     
     @scala.inline
-    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    def setDiscounts(value: Remove): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingDayOfMonth(value: Double): Self = this.set("billingDayOfMonth", value.asInstanceOf[js.Any])
+    def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
     @scala.inline
-    def deleteBillingDayOfMonth: Self = this.set("billingDayOfMonth", js.undefined)
+    def setFirstBillingDate(value: Date): Self = StObject.set(x, "firstBillingDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptor(value: Descriptor): Self = this.set("descriptor", value.asInstanceOf[js.Any])
+    def setFirstBillingDateUndefined: Self = StObject.set(x, "firstBillingDate", js.undefined)
     
     @scala.inline
-    def deleteDescriptor: Self = this.set("descriptor", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscounts(value: Remove): Self = this.set("discounts", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDiscounts: Self = this.set("discounts", js.undefined)
+    def setMerchantAccountId(value: String): Self = StObject.set(x, "merchantAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstBillingDate(value: Date): Self = this.set("firstBillingDate", value.asInstanceOf[js.Any])
+    def setMerchantAccountIdUndefined: Self = StObject.set(x, "merchantAccountId", js.undefined)
     
     @scala.inline
-    def deleteFirstBillingDate: Self = this.set("firstBillingDate", js.undefined)
+    def setNeverExpires(value: Boolean): Self = StObject.set(x, "neverExpires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNeverExpiresUndefined: Self = StObject.set(x, "neverExpires", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNumberOfBillingCycles(value: Double): Self = StObject.set(x, "numberOfBillingCycles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantAccountId(value: String): Self = this.set("merchantAccountId", value.asInstanceOf[js.Any])
+    def setNumberOfBillingCyclesUndefined: Self = StObject.set(x, "numberOfBillingCycles", js.undefined)
     
     @scala.inline
-    def deleteMerchantAccountId: Self = this.set("merchantAccountId", js.undefined)
+    def setOptions(value: DoNotInheritAddOnsOrDiscounts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeverExpires(value: Boolean): Self = this.set("neverExpires", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteNeverExpires: Self = this.set("neverExpires", js.undefined)
+    def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfBillingCycles(value: Double): Self = this.set("numberOfBillingCycles", value.asInstanceOf[js.Any])
+    def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
     
     @scala.inline
-    def deleteNumberOfBillingCycles: Self = this.set("numberOfBillingCycles", js.undefined)
+    def setPaymentMethodToken(value: String): Self = StObject.set(x, "paymentMethodToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: DoNotInheritAddOnsOrDiscounts): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodNonce(value: String): Self = this.set("paymentMethodNonce", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deletePaymentMethodNonce: Self = this.set("paymentMethodNonce", js.undefined)
+    def setTrialDuration(value: Double): Self = StObject.set(x, "trialDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setTrialDurationUndefined: Self = StObject.set(x, "trialDuration", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setTrialDurationUnit(value: String): Self = StObject.set(x, "trialDurationUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrialDuration(value: Double): Self = this.set("trialDuration", value.asInstanceOf[js.Any])
+    def setTrialDurationUnitUndefined: Self = StObject.set(x, "trialDurationUnit", js.undefined)
     
     @scala.inline
-    def deleteTrialDuration: Self = this.set("trialDuration", js.undefined)
+    def setTrialPeriod(value: Boolean): Self = StObject.set(x, "trialPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrialDurationUnit(value: String): Self = this.set("trialDurationUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialDurationUnit: Self = this.set("trialDurationUnit", js.undefined)
-    
-    @scala.inline
-    def setTrialPeriod(value: Boolean): Self = this.set("trialPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialPeriod: Self = this.set("trialPeriod", js.undefined)
+    def setTrialPeriodUndefined: Self = StObject.set(x, "trialPeriod", js.undefined)
   }
 }

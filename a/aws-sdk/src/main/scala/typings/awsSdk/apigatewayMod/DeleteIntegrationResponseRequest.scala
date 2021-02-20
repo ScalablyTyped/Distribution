@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteIntegrationResponseRequest extends js.Object {
+trait DeleteIntegrationResponseRequest extends StObject {
   
   /**
     * [Required] Specifies a delete integration response request's HTTP method.
@@ -36,30 +37,18 @@ object DeleteIntegrationResponseRequest {
   }
   
   @scala.inline
-  implicit class DeleteIntegrationResponseRequestOps[Self <: DeleteIntegrationResponseRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteIntegrationResponseRequestMutableBuilder[Self <: DeleteIntegrationResponseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

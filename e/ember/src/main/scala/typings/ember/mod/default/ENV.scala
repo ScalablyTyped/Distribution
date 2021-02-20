@@ -1,30 +1,54 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember", "ENV")
-@js.native
-object ENV extends js.Object {
+object ENV {
   
+  object EXTEND_PROTOTYPES {
+    
+    @JSImport("ember", "default.ENV.EXTEND_PROTOTYPES")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ember", "default.ENV.EXTEND_PROTOTYPES.Array")
+    @js.native
+    def Array: Boolean = js.native
+    @scala.inline
+    def Array_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Array")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ember", "default.ENV.EXTEND_PROTOTYPES.Function")
+    @js.native
+    def Function: Boolean = js.native
+    @scala.inline
+    def Function_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Function")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ember", "default.ENV.EXTEND_PROTOTYPES.String")
+    @js.native
+    def String: Boolean = js.native
+    @scala.inline
+    def String_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("ember", "default.ENV.LOG_BINDINGS")
+  @js.native
   val LOG_BINDINGS: Boolean = js.native
   
+  @JSImport("ember", "default.ENV.LOG_STACKTRACE_ON_DEPRECATION")
+  @js.native
   val LOG_STACKTRACE_ON_DEPRECATION: Boolean = js.native
   
+  @JSImport("ember", "default.ENV.LOG_VERSION")
+  @js.native
   val LOG_VERSION: Boolean = js.native
   
+  @JSImport("ember", "default.ENV.MODEL_FACTORY_INJECTIONS")
+  @js.native
   val MODEL_FACTORY_INJECTIONS: Boolean = js.native
   
-  val RAISE_ON_DEPRECATION: Boolean = js.native
-  
+  @JSImport("ember", "default.ENV.RAISE_ON_DEPRECATION")
   @js.native
-  object EXTEND_PROTOTYPES extends js.Object {
-    
-    var Array: Boolean = js.native
-    
-    var Function: Boolean = js.native
-    
-    var String: Boolean = js.native
-  }
+  val RAISE_ON_DEPRECATION: Boolean = js.native
 }

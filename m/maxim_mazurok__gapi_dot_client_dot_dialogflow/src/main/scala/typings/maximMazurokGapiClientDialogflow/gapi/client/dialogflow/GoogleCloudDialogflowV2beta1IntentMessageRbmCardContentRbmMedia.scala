@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia extends js.Object {
+trait GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia extends StObject {
   
   /**
     * Required. Publicly reachable URI of the file. The RBM platform determines the MIME type of the file from the content-type field in the HTTP headers when the platform fetches the
@@ -34,36 +35,24 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMediaOps[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMediaMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileUri(value: String): Self = this.set("fileUri", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFileUri: Self = this.set("fileUri", js.undefined)
+    def setThumbnailUri(value: String): Self = StObject.set(x, "thumbnailUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setThumbnailUri(value: String): Self = this.set("thumbnailUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailUri: Self = this.set("thumbnailUri", js.undefined)
+    def setThumbnailUriUndefined: Self = StObject.set(x, "thumbnailUri", js.undefined)
   }
 }

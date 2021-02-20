@@ -5,20 +5,20 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ViewProps
 import typings.reactNativeGestureHandler.mod.PanGestureHandlerProperties
 import typings.reactNativeGestureHandler.mod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandlerNative", JSImport.Namespace)
-@js.native
-object gestureHandlerNativeMod extends js.Object {
+object gestureHandlerNativeMod {
   
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandlerNative", "GestureHandlerRootView")
+  @js.native
   val GestureHandlerRootView: ComponentType[ViewProps] = js.native
   
-  def PanGestureHandler(props: PanGestureHandlerProperties): Element = js.native
-  
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandlerNative", "GestureState")
   @js.native
-  object GestureState extends js.Object {
+  object GestureState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[State with Double] = js.native
@@ -35,4 +35,8 @@ object gestureHandlerNativeMod extends js.Object {
     
     /* 0 */ val UNDETERMINED: typings.reactNativeGestureHandler.mod.State.UNDETERMINED with Double = js.native
   }
+  
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandlerNative", "PanGestureHandler")
+  @js.native
+  def PanGestureHandler(props: PanGestureHandlerProperties): Element = js.native
 }

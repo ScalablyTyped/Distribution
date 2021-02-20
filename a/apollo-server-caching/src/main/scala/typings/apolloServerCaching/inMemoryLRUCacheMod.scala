@@ -3,14 +3,14 @@ package typings.apolloServerCaching
 import typings.apolloServerCaching.anon.MaxSize
 import typings.apolloServerCaching.anon.Ttl
 import typings.apolloServerCaching.keyValueCacheMod.TestableKeyValueCache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("apollo-server-caching/dist/InMemoryLRUCache", JSImport.Namespace)
-@js.native
-object inMemoryLRUCacheMod extends js.Object {
+object inMemoryLRUCacheMod {
   
+  @JSImport("apollo-server-caching/dist/InMemoryLRUCache", "InMemoryLRUCache")
   @js.native
   class InMemoryLRUCache[V] () extends TestableKeyValueCache[V] {
     def this(hasMaxSizeSizeCalculatorOnDispose: MaxSize[V]) = this()

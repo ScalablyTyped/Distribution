@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderLineItemShippingDetailsMethod extends js.Object {
+trait OrderLineItemShippingDetailsMethod extends StObject {
   
   /** The carrier for the shipping. Optional. See `shipments[].carrier` for a list of acceptable values. */
   var carrier: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object OrderLineItemShippingDetailsMethod {
   }
   
   @scala.inline
-  implicit class OrderLineItemShippingDetailsMethodOps[Self <: OrderLineItemShippingDetailsMethod] (val x: Self) extends AnyVal {
+  implicit class OrderLineItemShippingDetailsMethodMutableBuilder[Self <: OrderLineItemShippingDetailsMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDaysInTransit(value: Double): Self = StObject.set(x, "maxDaysInTransit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    def setMaxDaysInTransitUndefined: Self = StObject.set(x, "maxDaysInTransit", js.undefined)
     
     @scala.inline
-    def deleteCarrier: Self = this.set("carrier", js.undefined)
+    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDaysInTransit(value: Double): Self = this.set("maxDaysInTransit", value.asInstanceOf[js.Any])
+    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
     @scala.inline
-    def deleteMaxDaysInTransit: Self = this.set("maxDaysInTransit", js.undefined)
+    def setMinDaysInTransit(value: Double): Self = StObject.set(x, "minDaysInTransit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodName(value: String): Self = this.set("methodName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethodName: Self = this.set("methodName", js.undefined)
-    
-    @scala.inline
-    def setMinDaysInTransit(value: Double): Self = this.set("minDaysInTransit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinDaysInTransit: Self = this.set("minDaysInTransit", js.undefined)
+    def setMinDaysInTransitUndefined: Self = StObject.set(x, "minDaysInTransit", js.undefined)
   }
 }

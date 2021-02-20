@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2TimespanConfig extends js.Object {
+trait GooglePrivacyDlpV2TimespanConfig extends StObject {
   
   /**
     * When the job is started by a JobTrigger we will automatically figure out a valid start_time to avoid scanning files that have not been modified since the last time the JobTrigger
@@ -37,42 +38,30 @@ object GooglePrivacyDlpV2TimespanConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2TimespanConfigOps[Self <: GooglePrivacyDlpV2TimespanConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2TimespanConfigMutableBuilder[Self <: GooglePrivacyDlpV2TimespanConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableAutoPopulationOfTimespanConfig(value: Boolean): Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableAutoPopulationOfTimespanConfigUndefined: Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoPopulationOfTimespanConfig(value: Boolean): Self = this.set("enableAutoPopulationOfTimespanConfig", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoPopulationOfTimespanConfig: Self = this.set("enableAutoPopulationOfTimespanConfig", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setTimestampField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "timestampField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setTimestampField(value: GooglePrivacyDlpV2FieldId): Self = this.set("timestampField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampField: Self = this.set("timestampField", js.undefined)
+    def setTimestampFieldUndefined: Self = StObject.set(x, "timestampField", js.undefined)
   }
 }

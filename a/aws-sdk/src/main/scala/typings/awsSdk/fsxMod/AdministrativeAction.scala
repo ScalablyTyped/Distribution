@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdministrativeAction extends js.Object {
+trait AdministrativeAction extends StObject {
   
   var AdministrativeActionType: js.UndefOr[typings.awsSdk.fsxMod.AdministrativeActionType] = js.native
   
@@ -40,54 +41,42 @@ object AdministrativeAction {
   }
   
   @scala.inline
-  implicit class AdministrativeActionOps[Self <: AdministrativeAction] (val x: Self) extends AnyVal {
+  implicit class AdministrativeActionMutableBuilder[Self <: AdministrativeAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrativeActionType(value: AdministrativeActionType): Self = StObject.set(x, "AdministrativeActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministrativeActionTypeUndefined: Self = StObject.set(x, "AdministrativeActionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureDetails(value: AdministrativeActionFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeActionType(value: AdministrativeActionType): Self = this.set("AdministrativeActionType", value.asInstanceOf[js.Any])
+    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
     @scala.inline
-    def deleteAdministrativeActionType: Self = this.set("AdministrativeActionType", js.undefined)
+    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDetails(value: AdministrativeActionFailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
     @scala.inline
-    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    def setRequestTime(value: RequestTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     
     @scala.inline
-    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTime(value: RequestTime): Self = this.set("RequestTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRequestTime: Self = this.set("RequestTime", js.undefined)
+    def setTargetFileSystemValues(value: FileSystem): Self = StObject.set(x, "TargetFileSystemValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTargetFileSystemValues(value: FileSystem): Self = this.set("TargetFileSystemValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetFileSystemValues: Self = this.set("TargetFileSystemValues", js.undefined)
+    def setTargetFileSystemValuesUndefined: Self = StObject.set(x, "TargetFileSystemValues", js.undefined)
   }
 }

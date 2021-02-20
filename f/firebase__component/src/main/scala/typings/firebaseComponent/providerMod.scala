@@ -5,16 +5,16 @@ import typings.firebaseComponent.anon.Optional
 import typings.firebaseComponent.componentContainerMod.ComponentContainer
 import typings.firebaseComponent.componentMod.Component
 import typings.firebaseComponent.typesMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/component/dist/src/provider", JSImport.Namespace)
-@js.native
-object providerMod extends js.Object {
+object providerMod {
   
+  @JSImport("@firebase/component/dist/src/provider", "Provider")
   @js.native
-  class Provider[T /* <: Name */] protected () extends js.Object {
+  class Provider[T /* <: Name */] protected () extends StObject {
     def this(name: T, container: ComponentContainer) = this()
     
     def clearInstance(): Unit = js.native

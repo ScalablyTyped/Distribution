@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureTile extends js.Object {
+trait FeatureTile extends StObject {
   
   /** The global tile coordinates that uniquely identify this tile. */
   var coordinates: js.UndefOr[TileCoordinates] = js.native
@@ -41,60 +42,48 @@ object FeatureTile {
   }
   
   @scala.inline
-  implicit class FeatureTileOps[Self <: FeatureTile] (val x: Self) extends AnyVal {
+  implicit class FeatureTileMutableBuilder[Self <: FeatureTile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinates(value: TileCoordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: TileCoordinates): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
+    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = this.set("features", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setProviders(value: js.Array[ProviderInfo]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProvidersVarargs(value: ProviderInfo*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setProvidersVarargs(value: ProviderInfo*): Self = this.set("providers", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[ProviderInfo]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteProviders: Self = this.set("providers", js.undefined)
+    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

@@ -7,16 +7,16 @@ import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.namingStrategyInterfaceMod.NamingStrategyInterface
 import typings.typeorm.onDeleteTypeMod.OnDeleteType
 import typings.typeorm.onUpdateTypeMod.OnUpdateType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata/ForeignKeyMetadata", JSImport.Namespace)
-@js.native
-object foreignKeyMetadataMod extends js.Object {
+object foreignKeyMetadataMod {
   
+  @JSImport("typeorm/browser/metadata/ForeignKeyMetadata", "ForeignKeyMetadata")
   @js.native
-  class ForeignKeyMetadata protected () extends js.Object {
+  class ForeignKeyMetadata protected () extends StObject {
     def this(options: Columns) = this()
     
     /**

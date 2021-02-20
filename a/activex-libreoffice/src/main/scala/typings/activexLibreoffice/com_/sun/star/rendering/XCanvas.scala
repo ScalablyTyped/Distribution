@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.geometry.XMapping2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -370,82 +371,70 @@ object XCanvas {
   }
   
   @scala.inline
-  implicit class XCanvasOps[Self <: XCanvas] (val x: Self) extends AnyVal {
+  implicit class XCanvasMutableBuilder[Self <: XCanvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFont(value: (FontRequest, SeqEquiv[PropertyValue], Matrix2D) => XCanvasFont): Self = StObject.set(x, "createFont", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: XGraphicDevice): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: XGraphicDevice): Self = this.set("Device", value.asInstanceOf[js.Any])
+    def setDrawBezier(value: (RealBezierSegment2D, RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawBezier", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setDrawBitmap(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawBitmap", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreateFont(value: (FontRequest, SeqEquiv[PropertyValue], Matrix2D) => XCanvasFont): Self = this.set("createFont", js.Any.fromFunction3(value))
+    def setDrawBitmapModulated(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawBitmapModulated", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDrawBezier(value: (RealBezierSegment2D, RealPoint2D, ViewState, RenderState) => Unit): Self = this.set("drawBezier", js.Any.fromFunction4(value))
+    def setDrawLine(value: (RealPoint2D, RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawLine", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDrawBitmap(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = this.set("drawBitmap", js.Any.fromFunction3(value))
+    def setDrawPoint(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = StObject.set(x, "drawPoint", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDrawBitmapModulated(value: (XBitmap, ViewState, RenderState) => XCachedPrimitive): Self = this.set("drawBitmapModulated", js.Any.fromFunction3(value))
+    def setDrawPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawPolyPolygon", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDrawLine(value: (RealPoint2D, RealPoint2D, ViewState, RenderState) => Unit): Self = this.set("drawLine", js.Any.fromFunction4(value))
+    def setDrawText(value: (StringContext, XCanvasFont, ViewState, RenderState, Double) => XCachedPrimitive): Self = StObject.set(x, "drawText", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setDrawPoint(value: (RealPoint2D, ViewState, RenderState) => Unit): Self = this.set("drawPoint", js.Any.fromFunction3(value))
+    def setDrawTextLayout(value: (XTextLayout, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "drawTextLayout", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDrawPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = this.set("drawPolyPolygon", js.Any.fromFunction3(value))
+    def setFillPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = StObject.set(x, "fillPolyPolygon", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDrawText(value: (StringContext, XCanvasFont, ViewState, RenderState, Double) => XCachedPrimitive): Self = this.set("drawText", js.Any.fromFunction5(value))
+    def setFillTextureMappedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], XMapping2D) => XCachedPrimitive): Self = StObject.set(x, "fillTextureMappedPolyPolygon", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setDrawTextLayout(value: (XTextLayout, ViewState, RenderState) => XCachedPrimitive): Self = this.set("drawTextLayout", js.Any.fromFunction3(value))
+    def setFillTexturedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture]) => XCachedPrimitive): Self = StObject.set(x, "fillTexturedPolyPolygon", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setFillPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState) => XCachedPrimitive): Self = this.set("fillPolyPolygon", js.Any.fromFunction3(value))
+    def setGetDevice(value: () => XGraphicDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFillTextureMappedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], XMapping2D) => XCachedPrimitive): Self = this.set("fillTextureMappedPolyPolygon", js.Any.fromFunction5(value))
+    def setQueryAvailableFonts(value: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo]): Self = StObject.set(x, "queryAvailableFonts", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFillTexturedPolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture]) => XCachedPrimitive): Self = this.set("fillTexturedPolyPolygon", js.Any.fromFunction4(value))
+    def setQueryStrokeShapes(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D): Self = StObject.set(x, "queryStrokeShapes", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetDevice(value: () => XGraphicDevice): Self = this.set("getDevice", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryAvailableFonts(value: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo]): Self = this.set("queryAvailableFonts", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setQueryStrokeShapes(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D): Self = this.set("queryStrokeShapes", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStrokePolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive): Self = this.set("strokePolyPolygon", js.Any.fromFunction4(value))
+    def setStrokePolyPolygon(value: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive): Self = StObject.set(x, "strokePolyPolygon", js.Any.fromFunction4(value))
     
     @scala.inline
     def setStrokeTextureMappedPolyPolygon(
       value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], XMapping2D, StrokeAttributes) => XCachedPrimitive
-    ): Self = this.set("strokeTextureMappedPolyPolygon", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "strokeTextureMappedPolyPolygon", js.Any.fromFunction6(value))
     
     @scala.inline
     def setStrokeTexturedPolyPolygon(
       value: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture], StrokeAttributes) => XCachedPrimitive
-    ): Self = this.set("strokeTexturedPolyPolygon", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "strokeTexturedPolyPolygon", js.Any.fromFunction5(value))
   }
 }

@@ -3,22 +3,23 @@ package typings.akuminaCore.mod.Digispace
 import typings.akuminaCore.igetlistrequestMod.IGetListRequest
 import typings.akuminaCore.isavepagewidgetrequestMod.ISavePageWidgetRequest
 import typings.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("akumina-core", "Digispace.Data")
-@js.native
-object Data extends js.Object {
+object Data {
   
+  @JSImport("akumina-core", "Digispace.Data.CacheManager")
   @js.native
-  class CacheManager () extends js.Object {
+  class CacheManager () extends StObject {
     
     def cachedScript(Token: String): js.Any = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.DataFactory")
   @js.native
-  class DataFactory () extends js.Object {
+  class DataFactory () extends StObject {
     def this(legacyMode: Boolean) = this()
     
     /**
@@ -221,14 +222,16 @@ object Data extends js.Object {
     def UserPermissionsForListItem(pageTypeList: String, pageId: String): JQueryDeferred[_] = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.Graph")
   @js.native
-  class Graph () extends js.Object {
+  class Graph () extends StObject {
     
     def GetProfilePicture(email: String, flag: Boolean): js.Promise[_] = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.Groups")
   @js.native
-  class Groups () extends js.Object {
+  class Groups () extends StObject {
     
     def GetGraphDataWithFullUrl(url: String, param: js.Any): js.Promise[_] = js.native
     
@@ -237,8 +240,9 @@ object Data extends js.Object {
     def GetGroupForPage(pageId: String): JQueryDeferred[_] = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.Interchange")
   @js.native
-  class Interchange () extends js.Object {
+  class Interchange () extends StObject {
     
     /* Added */
     // CanUserSetItemPermissions(referenceList: string): JQueryDeferred<any>;
@@ -445,14 +449,16 @@ object Data extends js.Object {
     def ValidateAkToken(): JQueryDeferred[_] = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.LanguageManager")
   @js.native
-  class LanguageManager () extends js.Object {
+  class LanguageManager () extends StObject {
     
     def GetDefaultLanguage(): js.Any = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.PageManager")
   @js.native
-  class PageManager () extends js.Object {
+  class PageManager () extends StObject {
     
     /**
       * Add Page for groups
@@ -733,8 +739,9 @@ object Data extends js.Object {
     def getGrid(): js.Array[_] = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.PersonaManager")
   @js.native
-  class PersonaManager () extends js.Object {
+  class PersonaManager () extends StObject {
     
     /** Get array of Lists with persona enabled
       */
@@ -753,11 +760,13 @@ object Data extends js.Object {
     def IsPersonaFilteringOn(request: js.Any): js.Any = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.RestSharepoint")
   @js.native
-  class RestSharepoint () extends js.Object
+  class RestSharepoint () extends StObject
   
+  @JSImport("akumina-core", "Digispace.Data.SharePoint")
   @js.native
-  class SharePoint () extends js.Object {
+  class SharePoint () extends StObject {
     
     /**
       * Create new list item
@@ -831,14 +840,16 @@ object Data extends js.Object {
     def UpdatePageUrlsItem(pageObject: js.Any, pageId: String, pageTypeList: String): JQueryDeferred[_] = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.WidgetFactory")
   @js.native
-  class WidgetFactory () extends js.Object {
+  class WidgetFactory () extends StObject {
     
     def UpdatePageWidgetInstancesCache(model: js.Any): js.Any = js.native
   }
   
+  @JSImport("akumina-core", "Digispace.Data.WidgetManager")
   @js.native
-  class WidgetManager () extends js.Object {
+  class WidgetManager () extends StObject {
     
     /** Add dashboard widget instance */
     def AddDashboardWidgetInstance(dashboardWidgetTitle: String, widgetInstance: js.Any): JQueryDeferred[_] = js.native

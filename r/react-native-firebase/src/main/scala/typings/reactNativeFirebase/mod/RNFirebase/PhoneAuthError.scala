@@ -1,11 +1,12 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneAuthError extends js.Object {
+trait PhoneAuthError extends StObject {
   
   var code: String | Null = js.native
   
@@ -24,39 +25,27 @@ object PhoneAuthError {
   }
   
   @scala.inline
-  implicit class PhoneAuthErrorOps[Self <: PhoneAuthError] (val x: Self) extends AnyVal {
+  implicit class PhoneAuthErrorMutableBuilder[Self <: PhoneAuthError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeNull: Self = StObject.set(x, "code", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerificationId(value: String): Self = this.set("verificationId", value.asInstanceOf[js.Any])
+    def setMessageNull: Self = StObject.set(x, "message", null)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeNull: Self = this.set("code", null)
+    def setStackNull: Self = StObject.set(x, "stack", null)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageNull: Self = this.set("message", null)
-    
-    @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackNull: Self = this.set("stack", null)
+    def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
   }
 }

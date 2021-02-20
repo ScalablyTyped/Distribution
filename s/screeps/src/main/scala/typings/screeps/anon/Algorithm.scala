@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.FindClosestByPathAlgorithm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Algorithm extends js.Object {
+trait Algorithm extends StObject {
   
   var algorithm: js.UndefOr[FindClosestByPathAlgorithm] = js.native
 }
@@ -19,24 +20,12 @@ object Algorithm {
   }
   
   @scala.inline
-  implicit class AlgorithmOps[Self <: Algorithm] (val x: Self) extends AnyVal {
+  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: FindClosestByPathAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlgorithm(value: FindClosestByPathAlgorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
   }
 }

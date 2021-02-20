@@ -5,12 +5,13 @@ import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.back
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.data
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.file
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.front
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasCameraOptions extends js.Object {
+trait CanvasCameraOptions extends StObject {
   
   /**
     * String, optional, default: file, file to use files for rendering (lower CPU / higher storage) or data to use base64 jpg data for rendering (higher cpu / lower storage).
@@ -70,84 +71,72 @@ object CanvasCameraOptions {
   }
   
   @scala.inline
-  implicit class CanvasCameraOptionsOps[Self <: CanvasCameraOptions] (val x: Self) extends AnyVal {
+  implicit class CanvasCameraOptionsMutableBuilder[Self <: CanvasCameraOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCameraFacing(value: front | back): Self = StObject.set(x, "cameraFacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraFacingUndefined: Self = StObject.set(x, "cameraFacing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanvas(value: Height): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraFacing(value: front | back): Self = this.set("cameraFacing", value.asInstanceOf[js.Any])
+    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
     @scala.inline
-    def deleteCameraFacing: Self = this.set("cameraFacing", js.undefined)
+    def setCapture(value: Height): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: Height): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def deleteCanvas: Self = this.set("canvas", js.undefined)
+    def setFlashMode(value: Boolean): Self = StObject.set(x, "flashMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Height): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setFlashModeUndefined: Self = StObject.set(x, "flashMode", js.undefined)
     
     @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
+    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashMode(value: Boolean): Self = this.set("flashMode", value.asInstanceOf[js.Any])
+    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
     @scala.inline
-    def deleteFlashMode: Self = this.set("flashMode", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFps: Self = this.set("fps", js.undefined)
+    def setOnAfterDraw(value: /* frame */ js.UndefOr[Frame] => Unit): Self = StObject.set(x, "onAfterDraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOnAfterDrawUndefined: Self = StObject.set(x, "onAfterDraw", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOnBeforeDraw(value: /* frame */ js.UndefOr[Frame] => Unit): Self = StObject.set(x, "onBeforeDraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAfterDraw(value: /* frame */ js.UndefOr[Frame] => Unit): Self = this.set("onAfterDraw", js.Any.fromFunction1(value))
+    def setOnBeforeDrawUndefined: Self = StObject.set(x, "onBeforeDraw", js.undefined)
     
     @scala.inline
-    def deleteOnAfterDraw: Self = this.set("onAfterDraw", js.undefined)
+    def setThumbnailRatio(value: Double): Self = StObject.set(x, "thumbnailRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBeforeDraw(value: /* frame */ js.UndefOr[Frame] => Unit): Self = this.set("onBeforeDraw", js.Any.fromFunction1(value))
+    def setThumbnailRatioUndefined: Self = StObject.set(x, "thumbnailRatio", js.undefined)
     
     @scala.inline
-    def deleteOnBeforeDraw: Self = this.set("onBeforeDraw", js.undefined)
+    def setUse(value: file | data): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailRatio(value: Double): Self = this.set("thumbnailRatio", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def deleteThumbnailRatio: Self = this.set("thumbnailRatio", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse(value: file | data): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

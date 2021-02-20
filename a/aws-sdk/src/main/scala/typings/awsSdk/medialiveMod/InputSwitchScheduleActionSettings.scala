@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputSwitchScheduleActionSettings extends js.Object {
+trait InputSwitchScheduleActionSettings extends StObject {
   
   /**
     * The name of the input attachment (not the name of the input!) to switch to. The name is specified in the channel configuration.
@@ -31,36 +32,24 @@ object InputSwitchScheduleActionSettings {
   }
   
   @scala.inline
-  implicit class InputSwitchScheduleActionSettingsOps[Self <: InputSwitchScheduleActionSettings] (val x: Self) extends AnyVal {
+  implicit class InputSwitchScheduleActionSettingsMutableBuilder[Self <: InputSwitchScheduleActionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputAttachmentNameReference(value: string): Self = StObject.set(x, "InputAttachmentNameReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputClippingSettings(value: InputClippingSettings): Self = StObject.set(x, "InputClippingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputClippingSettingsUndefined: Self = StObject.set(x, "InputClippingSettings", js.undefined)
     
     @scala.inline
-    def setInputAttachmentNameReference(value: string): Self = this.set("InputAttachmentNameReference", value.asInstanceOf[js.Any])
+    def setUrlPath(value: listOfString): Self = StObject.set(x, "UrlPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputClippingSettings(value: InputClippingSettings): Self = this.set("InputClippingSettings", value.asInstanceOf[js.Any])
+    def setUrlPathUndefined: Self = StObject.set(x, "UrlPath", js.undefined)
     
     @scala.inline
-    def deleteInputClippingSettings: Self = this.set("InputClippingSettings", js.undefined)
-    
-    @scala.inline
-    def setUrlPathVarargs(value: string*): Self = this.set("UrlPath", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlPath(value: listOfString): Self = this.set("UrlPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlPath: Self = this.set("UrlPath", js.undefined)
+    def setUrlPathVarargs(value: string*): Self = StObject.set(x, "UrlPath", js.Array(value :_*))
   }
 }

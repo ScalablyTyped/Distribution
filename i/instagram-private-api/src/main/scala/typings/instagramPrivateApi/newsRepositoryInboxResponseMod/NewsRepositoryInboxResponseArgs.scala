@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewsRepositoryInboxResponseArgs extends js.Object {
+trait NewsRepositoryInboxResponseArgs extends StObject {
   
   var actions: js.UndefOr[js.Array[String]] = js.native
   
@@ -64,165 +65,153 @@ object NewsRepositoryInboxResponseArgs {
   }
   
   @scala.inline
-  implicit class NewsRepositoryInboxResponseArgsOps[Self <: NewsRepositoryInboxResponseArgs] (val x: Self) extends AnyVal {
+  implicit class NewsRepositoryInboxResponseArgsMutableBuilder[Self <: NewsRepositoryInboxResponseArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setClicked(value: Boolean): Self = this.set("clicked", value.asInstanceOf[js.Any])
+    def setAymt_channel_id(value: String): Self = StObject.set(x, "aymt_channel_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setAymt_channel_idUndefined: Self = StObject.set(x, "aymt_channel_id", js.undefined)
     
     @scala.inline
-    def setTuuid(value: String): Self = this.set("tuuid", value.asInstanceOf[js.Any])
+    def setAymt_notif_id(value: String): Self = StObject.set(x, "aymt_notif_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setAymt_notif_idUndefined: Self = StObject.set(x, "aymt_notif_id", js.undefined)
     
     @scala.inline
-    def setActions(value: js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setAymt_notif_type(value: String): Self = StObject.set(x, "aymt_notif_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setAymt_notif_typeUndefined: Self = StObject.set(x, "aymt_notif_type", js.undefined)
     
     @scala.inline
-    def setAymt_channel_id(value: String): Self = this.set("aymt_channel_id", value.asInstanceOf[js.Any])
+    def setClicked(value: Boolean): Self = StObject.set(x, "clicked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAymt_channel_id: Self = this.set("aymt_channel_id", js.undefined)
+    def setComment_id(value: String): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAymt_notif_id(value: String): Self = this.set("aymt_notif_id", value.asInstanceOf[js.Any])
+    def setComment_idUndefined: Self = StObject.set(x, "comment_id", js.undefined)
     
     @scala.inline
-    def deleteAymt_notif_id: Self = this.set("aymt_notif_id", js.undefined)
+    def setComment_ids(value: js.Array[String]): Self = StObject.set(x, "comment_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAymt_notif_type(value: String): Self = this.set("aymt_notif_type", value.asInstanceOf[js.Any])
+    def setComment_idsUndefined: Self = StObject.set(x, "comment_ids", js.undefined)
     
     @scala.inline
-    def deleteAymt_notif_type: Self = this.set("aymt_notif_type", js.undefined)
+    def setComment_idsVarargs(value: String*): Self = StObject.set(x, "comment_ids", js.Array(value :_*))
     
     @scala.inline
-    def setComment_id(value: String): Self = this.set("comment_id", value.asInstanceOf[js.Any])
+    def setComment_notif_type(value: String): Self = StObject.set(x, "comment_notif_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment_id: Self = this.set("comment_id", js.undefined)
+    def setComment_notif_typeUndefined: Self = StObject.set(x, "comment_notif_type", js.undefined)
     
     @scala.inline
-    def setComment_idsVarargs(value: String*): Self = this.set("comment_ids", js.Array(value :_*))
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_ids(value: js.Array[String]): Self = this.set("comment_ids", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteComment_ids: Self = this.set("comment_ids", js.undefined)
+    def setHashtag_follow(value: NewsRepositoryInboxResponseHashtagFollow): Self = StObject.set(x, "hashtag_follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_notif_type(value: String): Self = this.set("comment_notif_type", value.asInstanceOf[js.Any])
+    def setHashtag_followUndefined: Self = StObject.set(x, "hashtag_follow", js.undefined)
     
     @scala.inline
-    def deleteComment_notif_type: Self = this.set("comment_notif_type", js.undefined)
+    def setIcon_url(value: String): Self = StObject.set(x, "icon_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setIcon_urlUndefined: Self = StObject.set(x, "icon_url", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashtag_follow(value: NewsRepositoryInboxResponseHashtagFollow): Self = this.set("hashtag_follow", value.asInstanceOf[js.Any])
+    def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
     
     @scala.inline
-    def deleteHashtag_follow: Self = this.set("hashtag_follow", js.undefined)
+    def setLinks(value: js.Array[NewsRepositoryInboxResponseLinksItem]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_url(value: String): Self = this.set("icon_url", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteIcon_url: Self = this.set("icon_url", js.undefined)
+    def setLinksVarargs(value: NewsRepositoryInboxResponseLinksItem*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setLatest_reel_media(value: Double): Self = this.set("latest_reel_media", value.asInstanceOf[js.Any])
+    def setMedia(value: js.Array[NewsRepositoryInboxResponseMediaItem]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatest_reel_media: Self = this.set("latest_reel_media", js.undefined)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def setLinksVarargs(value: NewsRepositoryInboxResponseLinksItem*): Self = this.set("links", js.Array(value :_*))
+    def setMediaVarargs(value: NewsRepositoryInboxResponseMediaItem*): Self = StObject.set(x, "media", js.Array(value :_*))
     
     @scala.inline
-    def setLinks(value: js.Array[NewsRepositoryInboxResponseLinksItem]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setProfile_id(value: Double): Self = StObject.set(x, "profile_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setProfile_idUndefined: Self = StObject.set(x, "profile_id", js.undefined)
     
     @scala.inline
-    def setMediaVarargs(value: NewsRepositoryInboxResponseMediaItem*): Self = this.set("media", js.Array(value :_*))
+    def setProfile_image(value: String): Self = StObject.set(x, "profile_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: js.Array[NewsRepositoryInboxResponseMediaItem]): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setProfile_imageUndefined: Self = StObject.set(x, "profile_image", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setProfile_image_destination(value: String): Self = StObject.set(x, "profile_image_destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_id(value: Double): Self = this.set("profile_id", value.asInstanceOf[js.Any])
+    def setProfile_image_destinationUndefined: Self = StObject.set(x, "profile_image_destination", js.undefined)
     
     @scala.inline
-    def deleteProfile_id: Self = this.set("profile_id", js.undefined)
+    def setProfile_name(value: String): Self = StObject.set(x, "profile_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_image(value: String): Self = this.set("profile_image", value.asInstanceOf[js.Any])
+    def setProfile_nameUndefined: Self = StObject.set(x, "profile_name", js.undefined)
     
     @scala.inline
-    def deleteProfile_image: Self = this.set("profile_image", js.undefined)
+    def setRich_text(value: String): Self = StObject.set(x, "rich_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_image_destination(value: String): Self = this.set("profile_image_destination", value.asInstanceOf[js.Any])
+    def setRich_textUndefined: Self = StObject.set(x, "rich_text", js.undefined)
     
     @scala.inline
-    def deleteProfile_image_destination: Self = this.set("profile_image_destination", js.undefined)
+    def setSecond_profile_id(value: Double): Self = StObject.set(x, "second_profile_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_name(value: String): Self = this.set("profile_name", value.asInstanceOf[js.Any])
+    def setSecond_profile_idUndefined: Self = StObject.set(x, "second_profile_id", js.undefined)
     
     @scala.inline
-    def deleteProfile_name: Self = this.set("profile_name", js.undefined)
+    def setSecond_profile_image(value: String): Self = StObject.set(x, "second_profile_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRich_text(value: String): Self = this.set("rich_text", value.asInstanceOf[js.Any])
+    def setSecond_profile_imageUndefined: Self = StObject.set(x, "second_profile_image", js.undefined)
     
     @scala.inline
-    def deleteRich_text: Self = this.set("rich_text", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecond_profile_id(value: Double): Self = this.set("second_profile_id", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSecond_profile_id: Self = this.set("second_profile_id", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecond_profile_image(value: String): Self = this.set("second_profile_image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecond_profile_image: Self = this.set("second_profile_image", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTuuid(value: String): Self = StObject.set(x, "tuuid", value.asInstanceOf[js.Any])
   }
 }

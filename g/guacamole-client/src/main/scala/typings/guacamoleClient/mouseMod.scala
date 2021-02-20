@@ -3,16 +3,16 @@ package typings.guacamoleClient
 import typings.guacamoleClient.mouseMod.Mouse.State
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/Mouse", JSImport.Namespace)
-@js.native
-object mouseMod extends js.Object {
+object mouseMod {
   
+  @JSImport("guacamole-client/lib/Mouse", "Mouse")
   @js.native
-  class Mouse protected () extends js.Object {
+  class Mouse protected () extends StObject {
     /**
       * @param element The Element to use to provide mouse events.
       */
@@ -61,11 +61,11 @@ object mouseMod extends js.Object {
       */
     var onmouseup: Null | (js.Function1[/* state */ State, Unit]) = js.native
   }
-  @js.native
-  object Mouse extends js.Object {
+  object Mouse {
     
+    @JSImport("guacamole-client/lib/Mouse", "Mouse.GuacTouchDevice")
     @js.native
-    class GuacTouchDevice protected () extends js.Object {
+    class GuacTouchDevice protected () extends StObject {
       /**
         * @param element The Element to use to provide touch events.
         */
@@ -125,8 +125,9 @@ object mouseMod extends js.Object {
       var scrollThreshold: Double = js.native
     }
     
+    @JSImport("guacamole-client/lib/Mouse", "Mouse.State")
     @js.native
-    class State protected () extends js.Object {
+    class State protected () extends StObject {
       /**
         * @param x The X position of the mouse pointer in pixels.
         * @param y The Y position of the mouse pointer in pixels.
@@ -191,11 +192,22 @@ object mouseMod extends js.Object {
       var y: Double = js.native
     }
     
+    @JSImport("guacamole-client/lib/Mouse", "Mouse.Touchpad")
     @js.native
-    class Touchpad () extends GuacTouchDevice
+    class Touchpad protected () extends GuacTouchDevice {
+      /**
+        * @param element The Element to use to provide touch events.
+        */
+      def this(element: HTMLElement) = this()
+    }
     
+    @JSImport("guacamole-client/lib/Mouse", "Mouse.Touchscreen")
     @js.native
-    class Touchscreen () extends GuacTouchDevice {
+    class Touchscreen protected () extends GuacTouchDevice {
+      /**
+        * @param element The Element to use to provide touch events.
+        */
+      def this(element: HTMLElement) = this()
       
       /**
         * The amount of time a press must be held for long press to be

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMProgressEvent extends js.Object {
+trait DOMProgressEvent extends StObject {
   
   @JSName("MSHTML.DOMProgressEvent_typekey")
   var MSHTMLDotDOMProgressEvent_typekey: DOMProgressEvent = js.native
@@ -87,78 +88,66 @@ object DOMProgressEvent {
   }
   
   @scala.inline
-  implicit class DOMProgressEventOps[Self <: DOMProgressEvent] (val x: Self) extends AnyVal {
+  implicit class DOMProgressEventMutableBuilder[Self <: DOMProgressEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotDOMProgressEvent_typekey(value: DOMProgressEvent): Self = this.set("MSHTML.DOMProgressEvent_typekey", value.asInstanceOf[js.Any])
+    def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelBubble(value: Boolean): Self = this.set("cancelBubble", value.asInstanceOf[js.Any])
+    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
+    def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCurrentTarget(value: IEventTarget): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
+    def setInitProgressEvent(value: (String, Boolean, Boolean, Boolean, Double, Double) => Unit): Self = StObject.set(x, "initProgressEvent", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = this.set("defaultPrevented", value.asInstanceOf[js.Any])
+    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPhase(value: Double): Self = this.set("eventPhase", value.asInstanceOf[js.Any])
+    def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = this.set("initEvent", js.Any.fromFunction3(value))
+    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitProgressEvent(value: (String, Boolean, Boolean, Boolean, Double, Double) => Unit): Self = this.set("initProgressEvent", js.Any.fromFunction6(value))
+    def setMSHTMLDotDOMProgressEvent_typekey(value: DOMProgressEvent): Self = StObject.set(x, "MSHTML.DOMProgressEvent_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTrusted(value: Boolean): Self = this.set("isTrusted", value.asInstanceOf[js.Any])
+    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLengthComputable(value: Boolean): Self = this.set("lengthComputable", value.asInstanceOf[js.Any])
+    def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: Double): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
+    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSrcElement(value: IHTMLElement): Self = this.set("srcElement", value.asInstanceOf[js.Any])
+    def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopImmediatePropagation(value: () => Unit): Self = this.set("stopImmediatePropagation", js.Any.fromFunction0(value))
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopPropagation(value: () => Unit): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: IEventTarget): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

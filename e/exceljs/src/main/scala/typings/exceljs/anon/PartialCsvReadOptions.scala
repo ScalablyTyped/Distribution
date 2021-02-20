@@ -1,12 +1,13 @@
 package typings.exceljs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CsvReadOptions> */
 @js.native
-trait PartialCsvReadOptions extends js.Object {
+trait PartialCsvReadOptions extends StObject {
   
   var dateFormats: js.UndefOr[js.Array[String]] = js.native
   
@@ -25,45 +26,33 @@ object PartialCsvReadOptions {
   }
   
   @scala.inline
-  implicit class PartialCsvReadOptionsOps[Self <: PartialCsvReadOptions] (val x: Self) extends AnyVal {
+  implicit class PartialCsvReadOptionsMutableBuilder[Self <: PartialCsvReadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatsUndefined: Self = StObject.set(x, "dateFormats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
     
     @scala.inline
-    def setDateFormatsVarargs(value: String*): Self = this.set("dateFormats", js.Array(value :_*))
+    def setMap(value: (/* value */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDateFormats(value: js.Array[String]): Self = this.set("dateFormats", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteDateFormats: Self = this.set("dateFormats", js.undefined)
+    def setParserOptions(value: PartialFastCsvParserOptio): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: (/* value */ js.Any, /* index */ Double) => _): Self = this.set("map", js.Any.fromFunction2(value))
+    def setParserOptionsUndefined: Self = StObject.set(x, "parserOptions", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParserOptions(value: PartialFastCsvParserOptio): Self = this.set("parserOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParserOptions: Self = this.set("parserOptions", js.undefined)
-    
-    @scala.inline
-    def setSheetName(value: String): Self = this.set("sheetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetName: Self = this.set("sheetName", js.undefined)
+    def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
   }
 }

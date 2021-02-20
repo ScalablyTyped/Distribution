@@ -1,6 +1,7 @@
 package typings.awsSdk.stsMod
 
 import typings.awsSdk.temporaryCredentialsMod.TemporaryCredentials.TemporaryCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,36 +33,24 @@ object GetSessionTokenRequest {
   }
   
   @scala.inline
-  implicit class GetSessionTokenRequestOps[Self <: GetSessionTokenRequest] (val x: Self) extends AnyVal {
+  implicit class GetSessionTokenRequestMutableBuilder[Self <: GetSessionTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationSeconds(value: durationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationSeconds(value: durationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    def setTokenCode(value: tokenCodeType): Self = StObject.set(x, "TokenCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
-    
-    @scala.inline
-    def setTokenCode(value: tokenCodeType): Self = this.set("TokenCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenCode: Self = this.set("TokenCode", js.undefined)
+    def setTokenCodeUndefined: Self = StObject.set(x, "TokenCode", js.undefined)
   }
 }

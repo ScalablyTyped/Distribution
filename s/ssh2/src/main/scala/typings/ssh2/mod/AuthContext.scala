@@ -1,5 +1,6 @@
 package typings.ssh2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ssh2.mod.PasswordAuthContext
   - typings.ssh2.mod.NoneAuthContext
 */
-trait AuthContext extends js.Object
+trait AuthContext extends StObject

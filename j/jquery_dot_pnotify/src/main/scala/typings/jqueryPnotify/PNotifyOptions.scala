@@ -2,12 +2,13 @@ package typings.jqueryPnotify
 
 import typings.jqueryPnotify.anon.Closerhover
 import typings.jqueryPnotify.anon.Nonblock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PNotifyOptions extends js.Object {
+trait PNotifyOptions extends StObject {
   
   /**
     * Additional classes to be added to the notice. (For custom styling.)
@@ -158,192 +159,180 @@ object PNotifyOptions {
   }
   
   @scala.inline
-  implicit class PNotifyOptionsOps[Self <: PNotifyOptions] (val x: Self) extends AnyVal {
+  implicit class PNotifyOptionsMutableBuilder[Self <: PNotifyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddclass(value: String): Self = StObject.set(x, "addclass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddclassUndefined: Self = StObject.set(x, "addclass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimate_speed(value: String): Self = StObject.set(x, "animate_speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddclass(value: String): Self = this.set("addclass", value.asInstanceOf[js.Any])
+    def setAnimate_speedUndefined: Self = StObject.set(x, "animate_speed", js.undefined)
     
     @scala.inline
-    def deleteAddclass: Self = this.set("addclass", js.undefined)
+    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate_speed(value: String): Self = this.set("animate_speed", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAnimate_speed: Self = this.set("animate_speed", js.undefined)
+    def setAuto_display(value: Boolean): Self = StObject.set(x, "auto_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAuto_displayUndefined: Self = StObject.set(x, "auto_display", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setButtons(value: Closerhover): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto_display(value: Boolean): Self = this.set("auto_display", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteAuto_display: Self = this.set("auto_display", js.undefined)
+    def setConfirm(value: PNotifyconfirm): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: Closerhover): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setCornerclass(value: String): Self = StObject.set(x, "cornerclass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirm(value: PNotifyconfirm): Self = this.set("confirm", value.asInstanceOf[js.Any])
+    def setCornerclassUndefined: Self = StObject.set(x, "cornerclass", js.undefined)
     
     @scala.inline
-    def deleteConfirm: Self = this.set("confirm", js.undefined)
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerclass(value: String): Self = this.set("cornerclass", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteCornerclass: Self = this.set("cornerclass", js.undefined)
+    def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: Boolean): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: Boolean): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setInsert_brs(value: Boolean): Self = StObject.set(x, "insert_brs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: js.Any): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setInsert_brsUndefined: Self = StObject.set(x, "insert_brs", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLabels(value: PNotifyLabel): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert_brs(value: Boolean): Self = this.set("insert_brs", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteInsert_brs: Self = this.set("insert_brs", js.undefined)
+    def setMaxonscreen(value: Double): Self = StObject.set(x, "maxonscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: PNotifyLabel): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMaxonscreenUndefined: Self = StObject.set(x, "maxonscreen", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMin_height(value: String): Self = StObject.set(x, "min_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxonscreen(value: Double): Self = this.set("maxonscreen", value.asInstanceOf[js.Any])
+    def setMin_heightUndefined: Self = StObject.set(x, "min_height", js.undefined)
     
     @scala.inline
-    def deleteMaxonscreen: Self = this.set("maxonscreen", js.undefined)
+    def setMouse_reset(value: Boolean): Self = StObject.set(x, "mouse_reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_height(value: String): Self = this.set("min_height", value.asInstanceOf[js.Any])
+    def setMouse_resetUndefined: Self = StObject.set(x, "mouse_reset", js.undefined)
     
     @scala.inline
-    def deleteMin_height: Self = this.set("min_height", js.undefined)
+    def setNonblock(value: Nonblock): Self = StObject.set(x, "nonblock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse_reset(value: Boolean): Self = this.set("mouse_reset", value.asInstanceOf[js.Any])
+    def setNonblockUndefined: Self = StObject.set(x, "nonblock", js.undefined)
     
     @scala.inline
-    def deleteMouse_reset: Self = this.set("mouse_reset", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonblock(value: Nonblock): Self = this.set("nonblock", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteNonblock: Self = this.set("nonblock", js.undefined)
+    def setPosition_animate_speed(value: Double): Self = StObject.set(x, "position_animate_speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPosition_animate_speedUndefined: Self = StObject.set(x, "position_animate_speed", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition_animate_speed(value: Double): Self = this.set("position_animate_speed", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deletePosition_animate_speed: Self = this.set("position_animate_speed", js.undefined)
+    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: Boolean): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setStack(value: PNotifyStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setStyling(value: StylingOptions): Self = StObject.set(x, "styling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: PNotifyStack): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setStylingUndefined: Self = StObject.set(x, "styling", js.undefined)
     
     @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setText(value: String | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyling(value: StylingOptions): Self = this.set("styling", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteStyling: Self = this.set("styling", js.undefined)
+    def setText_escape(value: Boolean): Self = StObject.set(x, "text_escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | Boolean): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText_escapeUndefined: Self = StObject.set(x, "text_escape", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTitle(value: String | Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText_escape(value: Boolean): Self = this.set("text_escape", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteText_escape: Self = this.set("text_escape", js.undefined)
+    def setTitle_escape(value: Boolean): Self = StObject.set(x, "title_escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String | Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle_escapeUndefined: Self = StObject.set(x, "title_escape", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: NoticeTypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle_escape(value: Boolean): Self = this.set("title_escape", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTitle_escape: Self = this.set("title_escape", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: NoticeTypeOptions): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

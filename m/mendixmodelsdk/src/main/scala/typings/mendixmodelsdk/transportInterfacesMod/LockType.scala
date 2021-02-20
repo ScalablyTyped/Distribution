@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mendixmodelsdk.mendixmodelsdkStrings.switch
   - typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc`
 */
-trait LockType extends js.Object
+trait LockType extends StObject
 object LockType {
   
   @scala.inline

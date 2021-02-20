@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPrincipalPoliciesResponse extends js.Object {
+trait ListPrincipalPoliciesResponse extends StObject {
   
   /**
     * The marker for the next set of results, or null if there are no additional results.
@@ -26,33 +27,21 @@ object ListPrincipalPoliciesResponse {
   }
   
   @scala.inline
-  implicit class ListPrincipalPoliciesResponseOps[Self <: ListPrincipalPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class ListPrincipalPoliciesResponseMutableBuilder[Self <: ListPrincipalPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicies(value: Policies): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("nextMarker", js.undefined)
-    
-    @scala.inline
-    def setPoliciesVarargs(value: Policy*): Self = this.set("policies", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicies(value: Policies): Self = this.set("policies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicies: Self = this.set("policies", js.undefined)
+    def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

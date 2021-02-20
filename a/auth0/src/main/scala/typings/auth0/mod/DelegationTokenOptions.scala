@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DelegationTokenOptions extends js.Object {
+trait DelegationTokenOptions extends StObject {
   
   var api_type: String = js.native
   
@@ -26,33 +27,21 @@ object DelegationTokenOptions {
   }
   
   @scala.inline
-  implicit class DelegationTokenOptionsOps[Self <: DelegationTokenOptions] (val x: Self) extends AnyVal {
+  implicit class DelegationTokenOptionsMutableBuilder[Self <: DelegationTokenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_type(value: String): Self = StObject.set(x, "api_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_type(value: String): Self = this.set("api_type", value.asInstanceOf[js.Any])
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrant_type(value: String): Self = this.set("grant_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId_token(value: String): Self = this.set("id_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

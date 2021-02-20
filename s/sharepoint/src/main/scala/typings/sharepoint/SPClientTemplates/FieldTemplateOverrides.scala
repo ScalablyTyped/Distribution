@@ -1,11 +1,12 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldTemplateOverrides extends js.Object {
+trait FieldTemplateOverrides extends StObject {
   
   /** Defines templates for rendering the field on a display form. */
   var DisplayForm: js.UndefOr[FieldInFormCallback] = js.native
@@ -28,42 +29,30 @@ object FieldTemplateOverrides {
   }
   
   @scala.inline
-  implicit class FieldTemplateOverridesOps[Self <: FieldTemplateOverrides] (val x: Self) extends AnyVal {
+  implicit class FieldTemplateOverridesMutableBuilder[Self <: FieldTemplateOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "DisplayForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFormUndefined: Self = StObject.set(x, "DisplayForm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "EditForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplayForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = this.set("DisplayForm", js.Any.fromFunction1(value))
+    def setEditFormUndefined: Self = StObject.set(x, "EditForm", js.undefined)
     
     @scala.inline
-    def deleteDisplayForm: Self = this.set("DisplayForm", js.undefined)
+    def setNewForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "NewForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEditForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = this.set("EditForm", js.Any.fromFunction1(value))
+    def setNewFormUndefined: Self = StObject.set(x, "NewForm", js.undefined)
     
     @scala.inline
-    def deleteEditForm: Self = this.set("EditForm", js.undefined)
+    def setView(value: /* renderContext */ RenderContextFieldInView => String): Self = StObject.set(x, "View", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = this.set("NewForm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteNewForm: Self = this.set("NewForm", js.undefined)
-    
-    @scala.inline
-    def setView(value: /* renderContext */ RenderContextFieldInView => String): Self = this.set("View", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteView: Self = this.set("View", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
   }
 }

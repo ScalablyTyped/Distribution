@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.HashMap
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,42 +54,30 @@ object SceneViewConstraints {
   }
   
   @scala.inline
-  implicit class SceneViewConstraintsOps[Self <: SceneViewConstraints] (val x: Self) extends AnyVal {
+  implicit class SceneViewConstraintsMutableBuilder[Self <: SceneViewConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: SceneViewConstraintsAltitude): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClipDistance(value: SceneViewConstraintsClipDistance): Self = StObject.set(x, "clipDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: SceneViewConstraintsAltitude): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setClipDistanceUndefined: Self = StObject.set(x, "clipDistance", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setCollision(value: SceneViewConstraintsCollision): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipDistance(value: SceneViewConstraintsClipDistance): Self = this.set("clipDistance", value.asInstanceOf[js.Any])
+    def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
     @scala.inline
-    def deleteClipDistance: Self = this.set("clipDistance", js.undefined)
+    def setTilt(value: SceneViewConstraintsTilt): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollision(value: SceneViewConstraintsCollision): Self = this.set("collision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollision: Self = this.set("collision", js.undefined)
-    
-    @scala.inline
-    def setTilt(value: SceneViewConstraintsTilt): Self = this.set("tilt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilt: Self = this.set("tilt", js.undefined)
+    def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
   }
 }

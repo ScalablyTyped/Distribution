@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedImagePermissions extends js.Object {
+trait SharedImagePermissions extends StObject {
   
   /**
     * Describes the permissions for a shared image.
@@ -26,24 +27,12 @@ object SharedImagePermissions {
   }
   
   @scala.inline
-  implicit class SharedImagePermissionsOps[Self <: SharedImagePermissions] (val x: Self) extends AnyVal {
+  implicit class SharedImagePermissionsMutableBuilder[Self <: SharedImagePermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "imagePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImagePermissions(value: ImagePermissions): Self = this.set("imagePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedAccountId(value: AwsAccountId): Self = this.set("sharedAccountId", value.asInstanceOf[js.Any])
+    def setSharedAccountId(value: AwsAccountId): Self = StObject.set(x, "sharedAccountId", value.asInstanceOf[js.Any])
   }
 }

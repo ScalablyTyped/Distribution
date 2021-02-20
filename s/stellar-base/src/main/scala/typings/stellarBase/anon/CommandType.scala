@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.Curve25519Public
 import typings.stellarBase.xdrMod.xdr.SurveyMessageCommandType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandType extends js.Object {
+trait CommandType extends StObject {
   
   var commandType: SurveyMessageCommandType = js.native
   
@@ -34,33 +35,21 @@ object CommandType {
   }
   
   @scala.inline
-  implicit class CommandTypeOps[Self <: CommandType] (val x: Self) extends AnyVal {
+  implicit class CommandTypeMutableBuilder[Self <: CommandType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandType(value: SurveyMessageCommandType): Self = StObject.set(x, "commandType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionKey(value: Curve25519Public): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLedgerNum(value: Double): Self = StObject.set(x, "ledgerNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandType(value: SurveyMessageCommandType): Self = this.set("commandType", value.asInstanceOf[js.Any])
+    def setSurveyedPeerId(value: typings.stellarBase.xdrMod.xdr.NodeId): Self = StObject.set(x, "surveyedPeerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionKey(value: Curve25519Public): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLedgerNum(value: Double): Self = this.set("ledgerNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurveyedPeerId(value: typings.stellarBase.xdrMod.xdr.NodeId): Self = this.set("surveyedPeerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurveyorPeerId(value: typings.stellarBase.xdrMod.xdr.NodeId): Self = this.set("surveyorPeerId", value.asInstanceOf[js.Any])
+    def setSurveyorPeerId(value: typings.stellarBase.xdrMod.xdr.NodeId): Self = StObject.set(x, "surveyorPeerId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,16 +1,16 @@
 package typings.three
 
 import typings.three.vector2Mod.Vector2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Box2", JSImport.Namespace)
-@js.native
-object box2Mod extends js.Object {
+object box2Mod {
   
+  @JSImport("three/src/math/Box2", "Box2")
   @js.native
-  class Box2 () extends js.Object {
+  class Box2 () extends StObject {
     def this(min: Vector2) = this()
     def this(min: js.UndefOr[scala.Nothing], max: Vector2) = this()
     def this(min: Vector2, max: Vector2) = this()

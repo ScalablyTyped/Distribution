@@ -1,5 +1,6 @@
 package typings.jsonSchemaTyped.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsonSchemaTyped.jsonSchemaTypedStrings.`ietf-token`
   - typings.jsonSchemaTyped.jsonSchemaTypedStrings.`x-token`
 */
-trait JSONSchemaContentEncodingName extends js.Object
+trait JSONSchemaContentEncodingName extends StObject
 object JSONSchemaContentEncodingName {
   
   @scala.inline

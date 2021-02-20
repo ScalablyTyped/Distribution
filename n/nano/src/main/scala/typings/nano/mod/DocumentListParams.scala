@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/bulk-api.html#get--db-_all_docs
 @js.native
-trait DocumentListParams extends js.Object {
+trait DocumentListParams extends StObject {
   
   // Includes conflicts information in response. Ignored if include_docs isn’t true. Default is false.
   var conflicts: js.UndefOr[Boolean] = js.native
@@ -67,117 +68,105 @@ object DocumentListParams {
   }
   
   @scala.inline
-  implicit class DocumentListParamsOps[Self <: DocumentListParams] (val x: Self) extends AnyVal {
+  implicit class DocumentListParamsMutableBuilder[Self <: DocumentListParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflicts(value: Boolean): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
     @scala.inline
-    def deleteConflicts: Self = this.set("conflicts", js.undefined)
+    def setEnd_key(value: String): Self = StObject.set(x, "end_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescending(value: Boolean): Self = this.set("descending", value.asInstanceOf[js.Any])
+    def setEnd_keyUndefined: Self = StObject.set(x, "end_key", js.undefined)
     
     @scala.inline
-    def deleteDescending: Self = this.set("descending", js.undefined)
+    def setEnd_key_doc_id(value: String): Self = StObject.set(x, "end_key_doc_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_key(value: String): Self = this.set("end_key", value.asInstanceOf[js.Any])
+    def setEnd_key_doc_idUndefined: Self = StObject.set(x, "end_key_doc_id", js.undefined)
     
     @scala.inline
-    def deleteEnd_key: Self = this.set("end_key", js.undefined)
+    def setEndkey(value: String): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_key_doc_id(value: String): Self = this.set("end_key_doc_id", value.asInstanceOf[js.Any])
+    def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
     
     @scala.inline
-    def deleteEnd_key_doc_id: Self = this.set("end_key_doc_id", js.undefined)
+    def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndkey(value: String): Self = this.set("endkey", value.asInstanceOf[js.Any])
+    def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
     
     @scala.inline
-    def deleteEndkey: Self = this.set("endkey", js.undefined)
+    def setInclusive_end(value: Boolean): Self = StObject.set(x, "inclusive_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_docs(value: Boolean): Self = this.set("include_docs", value.asInstanceOf[js.Any])
+    def setInclusive_endUndefined: Self = StObject.set(x, "inclusive_end", js.undefined)
     
     @scala.inline
-    def deleteInclude_docs: Self = this.set("include_docs", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclusive_end(value: Boolean): Self = this.set("inclusive_end", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteInclusive_end: Self = this.set("inclusive_end", js.undefined)
+    def setKeys(value: String | js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: String | js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setStale(value: String): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setStart_key(value: String): Self = StObject.set(x, "start_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStale(value: String): Self = this.set("stale", value.asInstanceOf[js.Any])
+    def setStart_keyUndefined: Self = StObject.set(x, "start_key", js.undefined)
     
     @scala.inline
-    def deleteStale: Self = this.set("stale", js.undefined)
+    def setStart_key_doc_id(value: String): Self = StObject.set(x, "start_key_doc_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_key(value: String): Self = this.set("start_key", value.asInstanceOf[js.Any])
+    def setStart_key_doc_idUndefined: Self = StObject.set(x, "start_key_doc_id", js.undefined)
     
     @scala.inline
-    def deleteStart_key: Self = this.set("start_key", js.undefined)
+    def setStartkey(value: String): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_key_doc_id(value: String): Self = this.set("start_key_doc_id", value.asInstanceOf[js.Any])
+    def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
     
     @scala.inline
-    def deleteStart_key_doc_id: Self = this.set("start_key_doc_id", js.undefined)
+    def setUpdate_seq(value: Boolean): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartkey(value: String): Self = this.set("startkey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartkey: Self = this.set("startkey", js.undefined)
-    
-    @scala.inline
-    def setUpdate_seq(value: Boolean): Self = this.set("update_seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate_seq: Self = this.set("update_seq", js.undefined)
+    def setUpdate_seqUndefined: Self = StObject.set(x, "update_seq", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,33 +47,21 @@ object XStyle {
   }
   
   @scala.inline
-  implicit class XStyleOps[Self <: XStyle] (val x: Self) extends AnyVal {
+  implicit class XStyleMutableBuilder[Self <: XStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetParentStyle(value: () => String): Self = StObject.set(x, "getParentStyle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInUse(value: () => Boolean): Self = StObject.set(x, "isInUse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsUserDefined(value: () => Boolean): Self = StObject.set(x, "isUserDefined", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParentStyle(value: String): Self = this.set("ParentStyle", value.asInstanceOf[js.Any])
+    def setParentStyle(value: String): Self = StObject.set(x, "ParentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetParentStyle(value: () => String): Self = this.set("getParentStyle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsInUse(value: () => Boolean): Self = this.set("isInUse", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsUserDefined(value: () => Boolean): Self = this.set("isUserDefined", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetParentStyle(value: String => Unit): Self = this.set("setParentStyle", js.Any.fromFunction1(value))
+    def setSetParentStyle(value: String => Unit): Self = StObject.set(x, "setParentStyle", js.Any.fromFunction1(value))
   }
 }

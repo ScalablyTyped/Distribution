@@ -2,12 +2,13 @@ package typings.novaEditorNode
 
 import typings.novaEditorNode.anon.CURRENT
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystem extends js.Object {
+trait FileSystem extends StObject {
   
   var CURRENT: FileSystemBitField = js.native
   

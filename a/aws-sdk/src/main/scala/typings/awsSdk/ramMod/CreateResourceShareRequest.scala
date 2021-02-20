@@ -1,11 +1,12 @@
 package typings.awsSdk.ramMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateResourceShareRequest extends js.Object {
+trait CreateResourceShareRequest extends StObject {
   
   /**
     * Indicates whether principals outside your AWS organization can be associated with a resource share.
@@ -51,69 +52,57 @@ object CreateResourceShareRequest {
   }
   
   @scala.inline
-  implicit class CreateResourceShareRequestOps[Self <: CreateResourceShareRequest] (val x: Self) extends AnyVal {
+  implicit class CreateResourceShareRequestMutableBuilder[Self <: CreateResourceShareRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowExternalPrincipals(value: Boolean): Self = StObject.set(x, "allowExternalPrincipals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowExternalPrincipalsUndefined: Self = StObject.set(x, "allowExternalPrincipals", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def setAllowExternalPrincipals(value: Boolean): Self = this.set("allowExternalPrincipals", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowExternalPrincipals: Self = this.set("allowExternalPrincipals", js.undefined)
+    def setPermissionArns(value: PermissionArnList): Self = StObject.set(x, "permissionArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setPermissionArnsUndefined: Self = StObject.set(x, "permissionArns", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setPermissionArnsVarargs(value: String*): Self = StObject.set(x, "permissionArns", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionArnsVarargs(value: String*): Self = this.set("permissionArns", js.Array(value :_*))
+    def setPrincipals(value: PrincipalArnOrIdList): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionArns(value: PermissionArnList): Self = this.set("permissionArns", value.asInstanceOf[js.Any])
+    def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
     @scala.inline
-    def deletePermissionArns: Self = this.set("permissionArns", js.undefined)
+    def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
     
     @scala.inline
-    def setPrincipalsVarargs(value: String*): Self = this.set("principals", js.Array(value :_*))
+    def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipals(value: PrincipalArnOrIdList): Self = this.set("principals", value.asInstanceOf[js.Any])
+    def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
     
     @scala.inline
-    def deletePrincipals: Self = this.set("principals", js.undefined)
+    def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
     
     @scala.inline
-    def setResourceArnsVarargs(value: String*): Self = this.set("resourceArns", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArns(value: ResourceArnList): Self = this.set("resourceArns", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteResourceArns: Self = this.set("resourceArns", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

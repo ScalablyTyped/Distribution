@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides options for how a dialog is displayed.
   */
 @js.native
-trait DialogOptions extends js.Object {
+trait DialogOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -50,48 +51,36 @@ object DialogOptions {
   }
   
   @scala.inline
-  implicit class DialogOptionsOps[Self <: DialogOptions] (val x: Self) extends AnyVal {
+  implicit class DialogOptionsMutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayInIframe(value: Boolean): Self = StObject.set(x, "displayInIframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    def setDisplayInIframeUndefined: Self = StObject.set(x, "displayInIframe", js.undefined)
     
     @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayInIframe(value: Boolean): Self = this.set("displayInIframe", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDisplayInIframe: Self = this.set("displayInIframe", js.undefined)
+    def setPromptBeforeOpen(value: Boolean): Self = StObject.set(x, "promptBeforeOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPromptBeforeOpenUndefined: Self = StObject.set(x, "promptBeforeOpen", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromptBeforeOpen(value: Boolean): Self = this.set("promptBeforeOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromptBeforeOpen: Self = this.set("promptBeforeOpen", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

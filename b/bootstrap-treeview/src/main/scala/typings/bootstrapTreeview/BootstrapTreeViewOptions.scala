@@ -1,11 +1,12 @@
 package typings.bootstrapTreeview
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapTreeViewOptions extends js.Object {
+trait BootstrapTreeViewOptions extends StObject {
   
   var backColor: js.UndefOr[String] = js.native
   
@@ -86,231 +87,219 @@ object BootstrapTreeViewOptions {
   }
   
   @scala.inline
-  implicit class BootstrapTreeViewOptionsOps[Self <: BootstrapTreeViewOptions] (val x: Self) extends AnyVal {
+  implicit class BootstrapTreeViewOptionsMutableBuilder[Self <: BootstrapTreeViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: String): Self = this.set("backColor", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBackColor: Self = this.set("backColor", js.undefined)
+    def setCheckedIcon(value: String): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setCollapseIcon(value: String): Self = StObject.set(x, "collapseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedIcon(value: String): Self = this.set("checkedIcon", value.asInstanceOf[js.Any])
+    def setCollapseIconUndefined: Self = StObject.set(x, "collapseIcon", js.undefined)
     
     @scala.inline
-    def deleteCheckedIcon: Self = this.set("checkedIcon", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseIcon(value: String): Self = this.set("collapseIcon", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCollapseIcon: Self = this.set("collapseIcon", js.undefined)
+    def setData(value: js.Array[BootstrapTreeViewNodeData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDataVarargs(value: BootstrapTreeViewNodeData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: BootstrapTreeViewNodeData*): Self = this.set("data", js.Array(value :_*))
+    def setEmptyIcon(value: String): Self = StObject.set(x, "emptyIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[BootstrapTreeViewNodeData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEmptyIconUndefined: Self = StObject.set(x, "emptyIcon", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEnableLinks(value: Boolean): Self = StObject.set(x, "enableLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyIcon(value: String): Self = this.set("emptyIcon", value.asInstanceOf[js.Any])
+    def setEnableLinksUndefined: Self = StObject.set(x, "enableLinks", js.undefined)
     
     @scala.inline
-    def deleteEmptyIcon: Self = this.set("emptyIcon", js.undefined)
+    def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLinks(value: Boolean): Self = this.set("enableLinks", value.asInstanceOf[js.Any])
+    def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
     
     @scala.inline
-    def deleteEnableLinks: Self = this.set("enableLinks", js.undefined)
+    def setHighlightSearchResults(value: Boolean): Self = StObject.set(x, "highlightSearchResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandIcon(value: String): Self = this.set("expandIcon", value.asInstanceOf[js.Any])
+    def setHighlightSearchResultsUndefined: Self = StObject.set(x, "highlightSearchResults", js.undefined)
     
     @scala.inline
-    def deleteExpandIcon: Self = this.set("expandIcon", js.undefined)
+    def setHighlightSelected(value: Boolean): Self = StObject.set(x, "highlightSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightSearchResults(value: Boolean): Self = this.set("highlightSearchResults", value.asInstanceOf[js.Any])
+    def setHighlightSelectedUndefined: Self = StObject.set(x, "highlightSelected", js.undefined)
     
     @scala.inline
-    def deleteHighlightSearchResults: Self = this.set("highlightSearchResults", js.undefined)
+    def setLevels(value: Double): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightSelected(value: Boolean): Self = this.set("highlightSelected", value.asInstanceOf[js.Any])
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def deleteHighlightSelected: Self = this.set("highlightSelected", js.undefined)
+    def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: Double): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setNodeIcon(value: String): Self = StObject.set(x, "nodeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiSelect(value: Boolean): Self = this.set("multiSelect", value.asInstanceOf[js.Any])
+    def setNodeIconUndefined: Self = StObject.set(x, "nodeIcon", js.undefined)
     
     @scala.inline
-    def deleteMultiSelect: Self = this.set("multiSelect", js.undefined)
+    def setOnNodeChecked(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeChecked", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeIcon(value: String): Self = this.set("nodeIcon", value.asInstanceOf[js.Any])
+    def setOnNodeCheckedUndefined: Self = StObject.set(x, "onNodeChecked", js.undefined)
     
     @scala.inline
-    def deleteNodeIcon: Self = this.set("nodeIcon", js.undefined)
+    def setOnNodeCollapsed(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeCollapsed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeChecked(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeChecked", js.Any.fromFunction2(value))
+    def setOnNodeCollapsedUndefined: Self = StObject.set(x, "onNodeCollapsed", js.undefined)
     
     @scala.inline
-    def deleteOnNodeChecked: Self = this.set("onNodeChecked", js.undefined)
+    def setOnNodeDisabled(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeDisabled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeCollapsed(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeCollapsed", js.Any.fromFunction2(value))
+    def setOnNodeDisabledUndefined: Self = StObject.set(x, "onNodeDisabled", js.undefined)
     
     @scala.inline
-    def deleteOnNodeCollapsed: Self = this.set("onNodeCollapsed", js.undefined)
+    def setOnNodeEnabled(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeEnabled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeDisabled(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeDisabled", js.Any.fromFunction2(value))
+    def setOnNodeEnabledUndefined: Self = StObject.set(x, "onNodeEnabled", js.undefined)
     
     @scala.inline
-    def deleteOnNodeDisabled: Self = this.set("onNodeDisabled", js.undefined)
+    def setOnNodeExpanded(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeExpanded", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeEnabled(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeEnabled", js.Any.fromFunction2(value))
+    def setOnNodeExpandedUndefined: Self = StObject.set(x, "onNodeExpanded", js.undefined)
     
     @scala.inline
-    def deleteOnNodeEnabled: Self = this.set("onNodeEnabled", js.undefined)
+    def setOnNodeSelected(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeSelected", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeExpanded(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeExpanded", js.Any.fromFunction2(value))
+    def setOnNodeSelectedUndefined: Self = StObject.set(x, "onNodeSelected", js.undefined)
     
     @scala.inline
-    def deleteOnNodeExpanded: Self = this.set("onNodeExpanded", js.undefined)
+    def setOnNodeUnchecked(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeUnchecked", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeSelected(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeSelected", js.Any.fromFunction2(value))
+    def setOnNodeUncheckedUndefined: Self = StObject.set(x, "onNodeUnchecked", js.undefined)
     
     @scala.inline
-    def deleteOnNodeSelected: Self = this.set("onNodeSelected", js.undefined)
+    def setOnNodeUnselected(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeUnselected", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeUnchecked(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeUnchecked", js.Any.fromFunction2(value))
+    def setOnNodeUnselectedUndefined: Self = StObject.set(x, "onNodeUnselected", js.undefined)
     
     @scala.inline
-    def deleteOnNodeUnchecked: Self = this.set("onNodeUnchecked", js.undefined)
+    def setOnSearchCleared(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onSearchCleared", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNodeUnselected(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onNodeUnselected", js.Any.fromFunction2(value))
+    def setOnSearchClearedUndefined: Self = StObject.set(x, "onSearchCleared", js.undefined)
     
     @scala.inline
-    def deleteOnNodeUnselected: Self = this.set("onNodeUnselected", js.undefined)
+    def setOnSearchComplete(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnSearchCleared(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onSearchCleared", js.Any.fromFunction2(value))
+    def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
     
     @scala.inline
-    def deleteOnSearchCleared: Self = this.set("onSearchCleared", js.undefined)
+    def setOnhoverColor(value: String): Self = StObject.set(x, "onhoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSearchComplete(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = this.set("onSearchComplete", js.Any.fromFunction2(value))
+    def setOnhoverColorUndefined: Self = StObject.set(x, "onhoverColor", js.undefined)
     
     @scala.inline
-    def deleteOnSearchComplete: Self = this.set("onSearchComplete", js.undefined)
+    def setSearchResultBackColor(value: String): Self = StObject.set(x, "searchResultBackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnhoverColor(value: String): Self = this.set("onhoverColor", value.asInstanceOf[js.Any])
+    def setSearchResultBackColorUndefined: Self = StObject.set(x, "searchResultBackColor", js.undefined)
     
     @scala.inline
-    def deleteOnhoverColor: Self = this.set("onhoverColor", js.undefined)
+    def setSearchResultColor(value: String): Self = StObject.set(x, "searchResultColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchResultBackColor(value: String): Self = this.set("searchResultBackColor", value.asInstanceOf[js.Any])
+    def setSearchResultColorUndefined: Self = StObject.set(x, "searchResultColor", js.undefined)
     
     @scala.inline
-    def deleteSearchResultBackColor: Self = this.set("searchResultBackColor", js.undefined)
+    def setSelectedBackColor(value: String): Self = StObject.set(x, "selectedBackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchResultColor(value: String): Self = this.set("searchResultColor", value.asInstanceOf[js.Any])
+    def setSelectedBackColorUndefined: Self = StObject.set(x, "selectedBackColor", js.undefined)
     
     @scala.inline
-    def deleteSearchResultColor: Self = this.set("searchResultColor", js.undefined)
+    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedBackColor(value: String): Self = this.set("selectedBackColor", value.asInstanceOf[js.Any])
+    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
     @scala.inline
-    def deleteSelectedBackColor: Self = this.set("selectedBackColor", js.undefined)
+    def setSelectedIcon(value: String): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedColor(value: String): Self = this.set("selectedColor", value.asInstanceOf[js.Any])
+    def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
     
     @scala.inline
-    def deleteSelectedColor: Self = this.set("selectedColor", js.undefined)
+    def setShowBorder(value: Boolean): Self = StObject.set(x, "showBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedIcon(value: String): Self = this.set("selectedIcon", value.asInstanceOf[js.Any])
+    def setShowBorderUndefined: Self = StObject.set(x, "showBorder", js.undefined)
     
     @scala.inline
-    def deleteSelectedIcon: Self = this.set("selectedIcon", js.undefined)
+    def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBorder(value: Boolean): Self = this.set("showBorder", value.asInstanceOf[js.Any])
+    def setShowCheckboxUndefined: Self = StObject.set(x, "showCheckbox", js.undefined)
     
     @scala.inline
-    def deleteShowBorder: Self = this.set("showBorder", js.undefined)
+    def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCheckbox(value: Boolean): Self = this.set("showCheckbox", value.asInstanceOf[js.Any])
+    def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
     
     @scala.inline
-    def deleteShowCheckbox: Self = this.set("showCheckbox", js.undefined)
+    def setShowTags(value: Boolean): Self = StObject.set(x, "showTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIcon(value: Boolean): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    def setShowTagsUndefined: Self = StObject.set(x, "showTags", js.undefined)
     
     @scala.inline
-    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    def setUncheckedIcon(value: Boolean): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTags(value: Boolean): Self = this.set("showTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowTags: Self = this.set("showTags", js.undefined)
-    
-    @scala.inline
-    def setUncheckedIcon(value: Boolean): Self = this.set("uncheckedIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUncheckedIcon: Self = this.set("uncheckedIcon", js.undefined)
+    def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
   }
 }

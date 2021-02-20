@@ -1,11 +1,12 @@
 package typings.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptOptions extends js.Object {
+trait EncryptOptions extends StObject {
   
   var ownerPassword: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object EncryptOptions {
   }
   
   @scala.inline
-  implicit class EncryptOptionsOps[Self <: EncryptOptions] (val x: Self) extends AnyVal {
+  implicit class EncryptOptionsMutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerPassword(value: String): Self = this.set("ownerPassword", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteOwnerPassword: Self = this.set("ownerPassword", js.undefined)
+    def setUserProtectionFlag(value: Double): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUserProtectionFlag(value: Double): Self = this.set("userProtectionFlag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProtectionFlag: Self = this.set("userProtectionFlag", js.undefined)
+    def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
   }
 }

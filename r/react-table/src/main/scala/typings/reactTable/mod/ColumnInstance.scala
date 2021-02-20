@@ -3,6 +3,7 @@ package typings.reactTable.mod
 import typings.react.mod.ReactNode
 import typings.reactTable.reactTableStrings.Footer
 import typings.reactTable.reactTableStrings.Header
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent react-table.react-table.ColumnInterfaceBasedOnValue<D, any> */
 /* Inlined parent react-table.react-table.UseTableColumnProps<D> */
 @js.native
-trait ColumnInstance[D /* <: js.Object */] extends js.Object {
+trait ColumnInstance[D /* <: js.Object */] extends StObject {
   
   var Cell: js.UndefOr[Renderer[CellProps[D, _]]] = js.native
   
@@ -27,13 +28,13 @@ trait ColumnInstance[D /* <: js.Object */] extends js.Object {
   def getHeaderProps(): TableHeaderProps = js.native
   def getHeaderProps(propGetter: HeaderPropGetter[D]): TableHeaderProps = js.native
   
-   // not documented
+  // not documented
   def getToggleHiddenProps(): js.Any = js.native
   def getToggleHiddenProps(userProps: js.Any): js.Any = js.native
   
   var id: IdType[D] = js.native
   
-   // not documented
+  // not documented
   var index: Double = js.native
   
   var isVisible: Boolean = js.native
@@ -44,7 +45,7 @@ trait ColumnInstance[D /* <: js.Object */] extends js.Object {
   
   var parent: ColumnInstance[D] = js.native
   
-   // not documented
+  // not documented
   var placeholderOf: js.UndefOr[ColumnInstance[js.Object]] = js.native
   
   def render(`type`: String): ReactNode = js.native

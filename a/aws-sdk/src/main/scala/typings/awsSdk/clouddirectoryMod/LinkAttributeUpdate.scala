@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkAttributeUpdate extends js.Object {
+trait LinkAttributeUpdate extends StObject {
   
   /**
     * The action to perform as part of the attribute update.
@@ -26,30 +27,18 @@ object LinkAttributeUpdate {
   }
   
   @scala.inline
-  implicit class LinkAttributeUpdateOps[Self <: LinkAttributeUpdate] (val x: Self) extends AnyVal {
+  implicit class LinkAttributeUpdateMutableBuilder[Self <: LinkAttributeUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeAction(value: LinkAttributeAction): Self = StObject.set(x, "AttributeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeActionUndefined: Self = StObject.set(x, "AttributeAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeKey(value: AttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeAction(value: LinkAttributeAction): Self = this.set("AttributeAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeAction: Self = this.set("AttributeAction", js.undefined)
-    
-    @scala.inline
-    def setAttributeKey(value: AttributeKey): Self = this.set("AttributeKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeKey: Self = this.set("AttributeKey", js.undefined)
+    def setAttributeKeyUndefined: Self = StObject.set(x, "AttributeKey", js.undefined)
   }
 }

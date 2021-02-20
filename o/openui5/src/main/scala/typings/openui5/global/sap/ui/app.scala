@@ -1,14 +1,14 @@
 package typings.openui5.global.sap.ui
 
 import typings.openui5.sap.ui.base.ManagedObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.app")
-@js.native
-object app extends js.Object {
+object app {
   
+  @JSGlobal("sap.ui.app.Application")
   @js.native
   abstract class Application protected ()
     extends typings.openui5.sap.ui.app.Application {
@@ -28,6 +28,7 @@ object app extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.app.MockServer")
   @js.native
   abstract class MockServer protected () extends ManagedObject {
     /**

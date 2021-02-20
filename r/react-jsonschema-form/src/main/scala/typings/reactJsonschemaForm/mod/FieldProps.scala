@@ -72,6 +72,7 @@ import typings.reactJsonschemaForm.reactJsonschemaFormStrings.url
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.vertical
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.yes
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListLabelingJobsForWorkteamRequest extends js.Object {
+trait ListLabelingJobsForWorkteamRequest extends StObject {
   
   /**
     * A filter that returns only labeling jobs created after the specified time (timestamp).
@@ -56,63 +57,51 @@ object ListLabelingJobsForWorkteamRequest {
   }
   
   @scala.inline
-  implicit class ListLabelingJobsForWorkteamRequestOps[Self <: ListLabelingJobsForWorkteamRequest] (val x: Self) extends AnyVal {
+  implicit class ListLabelingJobsForWorkteamRequestMutableBuilder[Self <: ListLabelingJobsForWorkteamRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
     @scala.inline
-    def setCreationTimeAfter(value: Timestamp): Self = this.set("CreationTimeAfter", value.asInstanceOf[js.Any])
+    def setJobReferenceCodeContains(value: JobReferenceCodeContains): Self = StObject.set(x, "JobReferenceCodeContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTimeAfter: Self = this.set("CreationTimeAfter", js.undefined)
+    def setJobReferenceCodeContainsUndefined: Self = StObject.set(x, "JobReferenceCodeContains", js.undefined)
     
     @scala.inline
-    def setCreationTimeBefore(value: Timestamp): Self = this.set("CreationTimeBefore", value.asInstanceOf[js.Any])
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTimeBefore: Self = this.set("CreationTimeBefore", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setJobReferenceCodeContains(value: JobReferenceCodeContains): Self = this.set("JobReferenceCodeContains", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJobReferenceCodeContains: Self = this.set("JobReferenceCodeContains", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setSortBy(value: ListLabelingJobsForWorkteamSortByOptions): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
     @scala.inline
-    def setSortBy(value: ListLabelingJobsForWorkteamSortByOptions): Self = this.set("SortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("SortBy", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

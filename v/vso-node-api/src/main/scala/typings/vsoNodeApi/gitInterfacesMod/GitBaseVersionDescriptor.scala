@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object GitBaseVersionDescriptor {
   }
   
   @scala.inline
-  implicit class GitBaseVersionDescriptorOps[Self <: GitBaseVersionDescriptor] (val x: Self) extends AnyVal {
+  implicit class GitBaseVersionDescriptorMutableBuilder[Self <: GitBaseVersionDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseVersion(value: String): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "baseVersionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaseVersion(value: String): Self = this.set("baseVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseVersionOptions(value: GitVersionOptions): Self = this.set("baseVersionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBaseVersionType(value: GitVersionType): Self = this.set("baseVersionType", value.asInstanceOf[js.Any])
+    def setBaseVersionType(value: GitVersionType): Self = StObject.set(x, "baseVersionType", value.asInstanceOf[js.Any])
   }
 }

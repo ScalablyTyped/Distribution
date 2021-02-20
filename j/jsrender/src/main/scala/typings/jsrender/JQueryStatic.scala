@@ -8,13 +8,14 @@ import typings.jsrender.JsViews.TemplateRender
 import typings.jsrender.JsViews.TemplateSetter
 import typings.jsrender.JsViews.Templates
 import typings.jsrender.JsViews.Views
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ********************************** JsRender **********************************
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   /* var htmlString = $.render.templateName(data, myHelpersObject); // Render named template */
   var render: StringDictionary[TemplateRender] = js.native
@@ -41,7 +42,7 @@ trait JQueryStatic extends js.Object {
   def templates(markupOrSelectorOrOptions: String, parentTmpl: Template): Template = js.native
   def templates(markupOrSelectorOrOptions: TemplateOptions): Template = js.native
   def templates(markupOrSelectorOrOptions: TemplateOptions, parentTmpl: Template): Template = js.native
-   // named item
+  // named item
   /* $.templates(...) or $.templates.templateName: Compile/get template */
   def templates(namedItems: Hash[TemplateSetter]): Views = js.native
   def templates(namedItems: Hash[TemplateSetter], parentTmpl: Template): Views = js.native

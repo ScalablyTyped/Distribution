@@ -2,6 +2,7 @@ package typings.oracledb.mod
 
 import typings.node.Buffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides connection credentials and connection-specific configuration properties.
   */
 @js.native
-trait ConnectionAttributes extends js.Object {
+trait ConnectionAttributes extends StObject {
   
   /**
     * An alias of connectionString. Only one of the properties should be used.
@@ -135,114 +136,102 @@ object ConnectionAttributes {
   }
   
   @scala.inline
-  implicit class ConnectionAttributesOps[Self <: ConnectionAttributes] (val x: Self) extends AnyVal {
+  implicit class ConnectionAttributesMutableBuilder[Self <: ConnectionAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectStringUndefined: Self = StObject.set(x, "connectString", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectString(value: String): Self = this.set("connectString", value.asInstanceOf[js.Any])
+    def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
     
     @scala.inline
-    def deleteConnectString: Self = this.set("connectString", js.undefined)
+    def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionString(value: String): Self = this.set("connectionString", value.asInstanceOf[js.Any])
+    def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
     
     @scala.inline
-    def deleteConnectionString: Self = this.set("connectionString", js.undefined)
+    def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdition(value: String): Self = this.set("edition", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEdition: Self = this.set("edition", js.undefined)
+    def setExternalAuth(value: Boolean): Self = StObject.set(x, "externalAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: Boolean): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setExternalAuthUndefined: Self = StObject.set(x, "externalAuth", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setMatchAny(value: Boolean): Self = StObject.set(x, "matchAny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalAuth(value: Boolean): Self = this.set("externalAuth", value.asInstanceOf[js.Any])
+    def setMatchAnyUndefined: Self = StObject.set(x, "matchAny", js.undefined)
     
     @scala.inline
-    def deleteExternalAuth: Self = this.set("externalAuth", js.undefined)
+    def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchAny(value: Boolean): Self = this.set("matchAny", value.asInstanceOf[js.Any])
+    def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
     
     @scala.inline
-    def deleteMatchAny: Self = this.set("matchAny", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPassword(value: String): Self = this.set("newPassword", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteNewPassword: Self = this.set("newPassword", js.undefined)
+    def setPoolAlias(value: String): Self = StObject.set(x, "poolAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPoolAliasUndefined: Self = StObject.set(x, "poolAlias", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPrivilege(value: Double): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolAlias(value: String): Self = this.set("poolAlias", value.asInstanceOf[js.Any])
+    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
     @scala.inline
-    def deletePoolAlias: Self = this.set("poolAlias", js.undefined)
+    def setShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "shardingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilege(value: Double): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    def setShardingKeyUndefined: Self = StObject.set(x, "shardingKey", js.undefined)
     
     @scala.inline
-    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    def setShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "shardingKey", js.Array(value :_*))
     
     @scala.inline
-    def setShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = this.set("shardingKey", js.Array(value :_*))
+    def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = this.set("shardingKey", value.asInstanceOf[js.Any])
+    def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
     
     @scala.inline
-    def deleteShardingKey: Self = this.set("shardingKey", js.undefined)
+    def setSuperShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = StObject.set(x, "superShardingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStmtCacheSize(value: Double): Self = this.set("stmtCacheSize", value.asInstanceOf[js.Any])
+    def setSuperShardingKeyUndefined: Self = StObject.set(x, "superShardingKey", js.undefined)
     
     @scala.inline
-    def deleteStmtCacheSize: Self = this.set("stmtCacheSize", js.undefined)
+    def setSuperShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = StObject.set(x, "superShardingKey", js.Array(value :_*))
     
     @scala.inline
-    def setSuperShardingKeyVarargs(value: (String | Double | Date | Buffer)*): Self = this.set("superShardingKey", js.Array(value :_*))
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperShardingKey(value: js.Array[String | Double | Date | Buffer]): Self = this.set("superShardingKey", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteSuperShardingKey: Self = this.set("superShardingKey", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

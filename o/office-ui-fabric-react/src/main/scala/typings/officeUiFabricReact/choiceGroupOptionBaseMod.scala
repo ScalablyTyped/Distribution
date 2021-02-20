@@ -3,14 +3,14 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.anon.PartialIChoiceGroupOption
 import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.base", JSImport.Namespace)
-@js.native
-object choiceGroupOptionBaseMod extends js.Object {
+object choiceGroupOptionBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.base", "ChoiceGroupOptionBase")
   @js.native
   class ChoiceGroupOptionBase protected ()
     extends Component[IChoiceGroupOptionProps, js.Object, js.Any] {
@@ -29,9 +29,16 @@ object choiceGroupOptionBaseMod extends js.Object {
     var _onRenderLabel: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object ChoiceGroupOptionBase extends js.Object {
+  object ChoiceGroupOptionBase {
     
-    var defaultProps: PartialIChoiceGroupOption = js.native
+    @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.base", "ChoiceGroupOptionBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.base", "ChoiceGroupOptionBase.defaultProps")
+    @js.native
+    def defaultProps: PartialIChoiceGroupOption = js.native
+    @scala.inline
+    def defaultProps_=(x: PartialIChoiceGroupOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

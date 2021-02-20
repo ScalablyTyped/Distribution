@@ -4,6 +4,7 @@ import typings.relayRuntime.relayConcreteNodeMod.RequestParameters
 import typings.relayRuntime.relayRuntimeStrings.executeDotstart
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object Readonlynameexecutestartt {
   }
   
   @scala.inline
-  implicit class ReadonlynameexecutestarttOps[Self <: Readonlynameexecutestartt] (val x: Self) extends AnyVal {
+  implicit class ReadonlynameexecutestarttMutableBuilder[Self <: Readonlynameexecutestartt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: executeDotstart): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParams(value: RequestParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: executeDotstart): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParams(value: RequestParameters): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionID(value: Double): Self = this.set("transactionID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

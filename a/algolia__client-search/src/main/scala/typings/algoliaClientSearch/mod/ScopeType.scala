@@ -1,5 +1,6 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms
   - typings.algoliaClientSearch.algoliaClientSearchStrings.rules
 */
-trait ScopeType extends js.Object
+trait ScopeType extends StObject
 object ScopeType {
   
   @scala.inline

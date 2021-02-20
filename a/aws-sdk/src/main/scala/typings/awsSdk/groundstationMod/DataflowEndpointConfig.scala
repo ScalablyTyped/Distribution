@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataflowEndpointConfig extends js.Object {
+trait DataflowEndpointConfig extends StObject {
   
   /**
     * Name of a dataflow endpoint.
@@ -26,27 +27,15 @@ object DataflowEndpointConfig {
   }
   
   @scala.inline
-  implicit class DataflowEndpointConfigOps[Self <: DataflowEndpointConfig] (val x: Self) extends AnyVal {
+  implicit class DataflowEndpointConfigMutableBuilder[Self <: DataflowEndpointConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataflowEndpointName(value: String): Self = StObject.set(x, "dataflowEndpointName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataflowEndpointRegion(value: String): Self = StObject.set(x, "dataflowEndpointRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataflowEndpointName(value: String): Self = this.set("dataflowEndpointName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataflowEndpointRegion(value: String): Self = this.set("dataflowEndpointRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataflowEndpointRegion: Self = this.set("dataflowEndpointRegion", js.undefined)
+    def setDataflowEndpointRegionUndefined: Self = StObject.set(x, "dataflowEndpointRegion", js.undefined)
   }
 }

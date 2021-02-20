@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/VideoCameraAddOutline", JSImport.Namespace)
-@js.native
-object videoCameraAddOutlineMod extends js.Object {
+object videoCameraAddOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/VideoCameraAddOutline", "VideoCameraAddOutline")
+  @js.native
   val VideoCameraAddOutline: IconDefinition = js.native
 }

@@ -1,13 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/mergeScan", JSImport.Namespace)
-@js.native
-object operatorsMergeScanMod extends js.Object {
+object operatorsMergeScanMod {
   
+  @JSImport("rxjs/operators/mergeScan", "mergeScan")
+  @js.native
   def mergeScan[T, R](
     accumulator: js.Function2[
       /* acc */ R, 
@@ -16,6 +17,8 @@ object operatorsMergeScanMod extends js.Object {
     ],
     seed: R
   ): js.Any = js.native
+  @JSImport("rxjs/operators/mergeScan", "mergeScan")
+  @js.native
   def mergeScan[T, R](
     accumulator: js.Function2[
       /* acc */ R, 

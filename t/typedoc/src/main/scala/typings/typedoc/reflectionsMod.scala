@@ -2,34 +2,45 @@ package typings.typedoc
 
 import typings.typedoc.abstractMod.ReflectionKind
 import typings.typedoc.modelsTypesMod.TypeParameterType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/reflections", JSImport.Namespace)
-@js.native
-object reflectionsMod extends js.Object {
+object reflectionsMod {
   
-  def splitUnquotedString(input: String, delimiter: String): js.Array[String] = js.native
-  
+  @JSImport("typedoc/dist/lib/models/reflections", "ContainerReflection")
   @js.native
-  class ContainerReflection ()
-    extends typings.typedoc.containerMod.ContainerReflection
+  class ContainerReflection protected ()
+    extends typings.typedoc.containerMod.ContainerReflection {
+    def this(name: String, kind: ReflectionKind) = this()
+    def this(name: String, kind: ReflectionKind, parent: typings.typedoc.abstractMod.Reflection) = this()
+  }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "DeclarationReflection")
   @js.native
-  class DeclarationReflection ()
-    extends typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
+  class DeclarationReflection protected ()
+    extends typings.typedoc.reflectionsDeclarationMod.DeclarationReflection {
+    def this(name: String, kind: ReflectionKind) = this()
+    def this(name: String, kind: ReflectionKind, parent: typings.typedoc.abstractMod.Reflection) = this()
+  }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "ParameterReflection")
   @js.native
-  class ParameterReflection ()
-    extends typings.typedoc.reflectionsParameterMod.ParameterReflection
+  class ParameterReflection protected ()
+    extends typings.typedoc.reflectionsParameterMod.ParameterReflection {
+    def this(name: String, kind: ReflectionKind) = this()
+    def this(name: String, kind: ReflectionKind, parent: typings.typedoc.abstractMod.Reflection) = this()
+  }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "ProjectReflection")
   @js.native
   class ProjectReflection protected ()
     extends typings.typedoc.projectMod.ProjectReflection {
     def this(name: String) = this()
   }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "ReferenceReflection")
   @js.native
   class ReferenceReflection protected ()
     extends typings.typedoc.reflectionsReferenceMod.ReferenceReflection {
@@ -44,6 +55,7 @@ object reflectionsMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "Reflection")
   @js.native
   abstract class Reflection protected ()
     extends typings.typedoc.abstractMod.Reflection {
@@ -51,8 +63,9 @@ object reflectionsMod extends js.Object {
     def this(name: String, kind: ReflectionKind, parent: typings.typedoc.abstractMod.Reflection) = this()
   }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "ReflectionFlag")
   @js.native
-  object ReflectionFlag extends js.Object {
+  object ReflectionFlag extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.abstractMod.ReflectionFlag with Double] = js.native
@@ -90,12 +103,14 @@ object reflectionsMod extends js.Object {
     /* 8 */ val Static: typings.typedoc.abstractMod.ReflectionFlag.Static with Double = js.native
   }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "ReflectionFlags")
   @js.native
   class ReflectionFlags ()
     extends typings.typedoc.abstractMod.ReflectionFlags
   
+  @JSImport("typedoc/dist/lib/models/reflections", "ReflectionKind")
   @js.native
-  object ReflectionKind extends js.Object {
+  object ReflectionKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.abstractMod.ReflectionKind with Double] = js.native
@@ -167,12 +182,17 @@ object reflectionsMod extends js.Object {
     /* 1056 */ val VariableOrProperty: typings.typedoc.abstractMod.ReflectionKind.VariableOrProperty with Double = js.native
   }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "SignatureReflection")
   @js.native
-  class SignatureReflection ()
-    extends typings.typedoc.reflectionsSignatureMod.SignatureReflection
+  class SignatureReflection protected ()
+    extends typings.typedoc.reflectionsSignatureMod.SignatureReflection {
+    def this(name: String, kind: ReflectionKind) = this()
+    def this(name: String, kind: ReflectionKind, parent: typings.typedoc.abstractMod.Reflection) = this()
+  }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "TraverseProperty")
   @js.native
-  object TraverseProperty extends js.Object {
+  object TraverseProperty extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.typedoc.abstractMod.TraverseProperty with Double] = js.native
@@ -194,10 +214,15 @@ object reflectionsMod extends js.Object {
     /* 3 */ val TypeParameter: typings.typedoc.abstractMod.TraverseProperty.TypeParameter with Double = js.native
   }
   
+  @JSImport("typedoc/dist/lib/models/reflections", "TypeParameterReflection")
   @js.native
   class TypeParameterReflection protected ()
     extends typings.typedoc.reflectionsTypeParameterMod.TypeParameterReflection {
     def this(`type`: TypeParameterType) = this()
     def this(`type`: TypeParameterType, parent: typings.typedoc.abstractMod.Reflection) = this()
   }
+  
+  @JSImport("typedoc/dist/lib/models/reflections", "splitUnquotedString")
+  @js.native
+  def splitUnquotedString(input: String, delimiter: String): js.Array[String] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseParticleSystem extends js.Object {
+trait BaseParticleSystem extends StObject {
   
   var _alphaRemapGradients: Nullable[js.Array[FactorGradient]] = js.native
   

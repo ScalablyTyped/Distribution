@@ -1,5 +1,6 @@
 package typings.algoliaTransporter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.algoliaTransporter.algoliaTransporterNumbers.`2`
   - typings.algoliaTransporter.algoliaTransporterNumbers.`3`
 */
-trait HostStatusType extends js.Object
+trait HostStatusType extends StObject
 object HostStatusType {
   
   @scala.inline

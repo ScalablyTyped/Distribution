@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDomainRequest extends js.Object {
+trait UpdateDomainRequest extends StObject {
   
   /**
     * A collection of settings.
@@ -26,27 +27,15 @@ object UpdateDomainRequest {
   }
   
   @scala.inline
-  implicit class UpdateDomainRequestOps[Self <: UpdateDomainRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDomainRequestMutableBuilder[Self <: UpdateDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultUserSettings(value: UserSettings): Self = StObject.set(x, "DefaultUserSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUserSettingsUndefined: Self = StObject.set(x, "DefaultUserSettings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultUserSettings(value: UserSettings): Self = this.set("DefaultUserSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultUserSettings: Self = this.set("DefaultUserSettings", js.undefined)
+    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
   }
 }

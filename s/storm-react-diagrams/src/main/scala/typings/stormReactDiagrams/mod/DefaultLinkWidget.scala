@@ -1,6 +1,7 @@
 package typings.stormReactDiagrams.mod
 
 import typings.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class DefaultLinkWidget protected ()
   def this(props: DefaultLinkProps) = this()
 }
 /* static members */
-@JSImport("storm-react-diagrams", "DefaultLinkWidget")
-@js.native
-object DefaultLinkWidget extends js.Object {
+object DefaultLinkWidget {
   
-  var defaultProps: DefaultLinkProps = js.native
+  @JSImport("storm-react-diagrams", "DefaultLinkWidget")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("storm-react-diagrams", "DefaultLinkWidget.defaultProps")
+  @js.native
+  def defaultProps: DefaultLinkProps = js.native
+  @scala.inline
+  def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -33,6 +33,7 @@ import typings.officeJs.officeJsStrings.Vertical
 import typings.officeJs.officeJsStrings.Vertical270
 import typings.officeJs.officeJsStrings.WordArtVertical
 import typings.officeJs.officeJsStrings.WordArtVerticalRTL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

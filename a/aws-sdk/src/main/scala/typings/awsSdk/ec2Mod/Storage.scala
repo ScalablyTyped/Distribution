@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Storage extends js.Object {
+trait Storage extends StObject {
   
   /**
     * An Amazon S3 storage location.
@@ -21,24 +22,12 @@ object Storage {
   }
   
   @scala.inline
-  implicit class StorageOps[Self <: Storage] (val x: Self) extends AnyVal {
+  implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3(value: S3Storage): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3(value: S3Storage): Self = this.set("S3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3: Self = this.set("S3", js.undefined)
+    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
   }
 }

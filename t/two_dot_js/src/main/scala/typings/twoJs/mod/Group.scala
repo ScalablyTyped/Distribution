@@ -1,5 +1,6 @@
 package typings.twoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,10 +54,10 @@ class Group () extends Object {
   
   var translation: Vector = js.native
 }
-/* static members */
-@JSImport("two.js", "Group")
-@js.native
-object Group extends js.Object {
+object Group {
   
+  /* static member */
+  @JSImport("two.js", "Group.MakeObservable")
+  @js.native
   def MakeObservable(obj: js.Any): js.Any = js.native
 }

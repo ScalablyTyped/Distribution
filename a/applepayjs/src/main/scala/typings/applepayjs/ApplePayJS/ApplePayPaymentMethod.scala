@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A dictionary that describes an Apple Pay payment card.
   */
 @js.native
-trait ApplePayPaymentMethod extends js.Object {
+trait ApplePayPaymentMethod extends StObject {
   
   /**
     * A string, suitable for display, that describes the card.
@@ -45,30 +46,18 @@ object ApplePayPaymentMethod {
   }
   
   @scala.inline
-  implicit class ApplePayPaymentMethodOps[Self <: ApplePayPaymentMethod] (val x: Self) extends AnyVal {
+  implicit class ApplePayPaymentMethodMutableBuilder[Self <: ApplePayPaymentMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentPass(value: ApplePayPaymentPass): Self = StObject.set(x, "paymentPass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaymentPass(value: ApplePayPaymentPass): Self = this.set("paymentPass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ApplePayPaymentMethodType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ApplePayPaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

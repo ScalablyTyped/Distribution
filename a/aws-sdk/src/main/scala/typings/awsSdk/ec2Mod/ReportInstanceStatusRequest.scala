@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportInstanceStatusRequest extends js.Object {
+trait ReportInstanceStatusRequest extends StObject {
   
   /**
     * Descriptive text about the health state of your instance.
@@ -51,57 +52,45 @@ object ReportInstanceStatusRequest {
   }
   
   @scala.inline
-  implicit class ReportInstanceStatusRequestOps[Self <: ReportInstanceStatusRequest] (val x: Self) extends AnyVal {
+  implicit class ReportInstanceStatusRequestMutableBuilder[Self <: ReportInstanceStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesVarargs(value: InstanceId*): Self = this.set("Instances", js.Array(value :_*))
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setInstances(value: InstanceIdStringList): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonCodesVarargs(value: ReportInstanceReasonCodes*): Self = this.set("ReasonCodes", js.Array(value :_*))
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def setReasonCodes(value: ReasonCodesList): Self = this.set("ReasonCodes", value.asInstanceOf[js.Any])
+    def setInstances(value: InstanceIdStringList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ReportStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setInstancesVarargs(value: InstanceId*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setReasonCodes(value: ReasonCodesList): Self = StObject.set(x, "ReasonCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setReasonCodesVarargs(value: ReportInstanceReasonCodes*): Self = StObject.set(x, "ReasonCodes", js.Array(value :_*))
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def setEndTime(value: DateTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStatus(value: ReportStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

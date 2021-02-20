@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A banded (alternating colors) range in a sheet.
   */
 @js.native
-trait SchemaBandedRange extends js.Object {
+trait SchemaBandedRange extends StObject {
   
   /**
     * The id of the banded range.
@@ -43,42 +44,30 @@ object SchemaBandedRange {
   }
   
   @scala.inline
-  implicit class SchemaBandedRangeOps[Self <: SchemaBandedRange] (val x: Self) extends AnyVal {
+  implicit class SchemaBandedRangeMutableBuilder[Self <: SchemaBandedRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnProperties(value: SchemaBandingProperties): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandedRangeId(value: Double): Self = this.set("bandedRangeId", value.asInstanceOf[js.Any])
+    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
     @scala.inline
-    def deleteBandedRangeId: Self = this.set("bandedRangeId", js.undefined)
+    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnProperties(value: SchemaBandingProperties): Self = this.set("columnProperties", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteColumnProperties: Self = this.set("columnProperties", js.undefined)
+    def setRowProperties(value: SchemaBandingProperties): Self = StObject.set(x, "rowProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setRowProperties(value: SchemaBandingProperties): Self = this.set("rowProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowProperties: Self = this.set("rowProperties", js.undefined)
+    def setRowPropertiesUndefined: Self = StObject.set(x, "rowProperties", js.undefined)
   }
 }

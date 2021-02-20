@@ -1,11 +1,12 @@
 package typings.jupyterlabServices.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Targetname extends js.Object {
+trait Targetname extends StObject {
   
   /**
     * The comm target name to filter returned comms
@@ -21,24 +22,12 @@ object Targetname {
   }
   
   @scala.inline
-  implicit class TargetnameOps[Self <: Targetname] (val x: Self) extends AnyVal {
+  implicit class TargetnameMutableBuilder[Self <: Targetname] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTarget_name(value: String): Self = StObject.set(x, "target_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTarget_name(value: String): Self = this.set("target_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget_name: Self = this.set("target_name", js.undefined)
+    def setTarget_nameUndefined: Self = StObject.set(x, "target_name", js.undefined)
   }
 }

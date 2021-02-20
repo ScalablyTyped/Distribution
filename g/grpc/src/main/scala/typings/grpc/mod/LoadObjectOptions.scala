@@ -3,12 +3,13 @@ package typings.grpc.mod
 import typings.grpc.grpcNumbers.`5`
 import typings.grpc.grpcNumbers.`6`
 import typings.grpc.grpcStrings.detect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadObjectOptions extends js.Object {
+trait LoadObjectOptions extends StObject {
   
   /**
     * Deserialize bytes values as base64 strings instead of Buffers.
@@ -55,48 +56,36 @@ object LoadObjectOptions {
   }
   
   @scala.inline
-  implicit class LoadObjectOptionsOps[Self <: LoadObjectOptions] (val x: Self) extends AnyVal {
+  implicit class LoadObjectOptionsMutableBuilder[Self <: LoadObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryAsBase64(value: Boolean): Self = StObject.set(x, "binaryAsBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryAsBase64Undefined: Self = StObject.set(x, "binaryAsBase64", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryAsBase64(value: Boolean): Self = this.set("binaryAsBase64", value.asInstanceOf[js.Any])
+    def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
     
     @scala.inline
-    def deleteBinaryAsBase64: Self = this.set("binaryAsBase64", js.undefined)
+    def setEnumsAsStrings(value: Boolean): Self = StObject.set(x, "enumsAsStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedArgumentOrder(value: Boolean): Self = this.set("deprecatedArgumentOrder", value.asInstanceOf[js.Any])
+    def setEnumsAsStringsUndefined: Self = StObject.set(x, "enumsAsStrings", js.undefined)
     
     @scala.inline
-    def deleteDeprecatedArgumentOrder: Self = this.set("deprecatedArgumentOrder", js.undefined)
+    def setLongsAsStrings(value: Boolean): Self = StObject.set(x, "longsAsStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumsAsStrings(value: Boolean): Self = this.set("enumsAsStrings", value.asInstanceOf[js.Any])
+    def setLongsAsStringsUndefined: Self = StObject.set(x, "longsAsStrings", js.undefined)
     
     @scala.inline
-    def deleteEnumsAsStrings: Self = this.set("enumsAsStrings", js.undefined)
+    def setProtobufjsVersion(value: `5` | `6` | detect): Self = StObject.set(x, "protobufjsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongsAsStrings(value: Boolean): Self = this.set("longsAsStrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongsAsStrings: Self = this.set("longsAsStrings", js.undefined)
-    
-    @scala.inline
-    def setProtobufjsVersion(value: `5` | `6` | detect): Self = this.set("protobufjsVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtobufjsVersion: Self = this.set("protobufjsVersion", js.undefined)
+    def setProtobufjsVersionUndefined: Self = StObject.set(x, "protobufjsVersion", js.undefined)
   }
 }

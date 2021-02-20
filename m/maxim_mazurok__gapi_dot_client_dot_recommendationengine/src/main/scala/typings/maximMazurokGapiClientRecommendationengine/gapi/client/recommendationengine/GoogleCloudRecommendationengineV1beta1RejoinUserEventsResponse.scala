@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse extends StObject {
   
   /** Number of user events that were joined with latest catalog items. */
   var rejoinedUserEventsCount: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponseOps[Self <: GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRejoinedUserEventsCount(value: String): Self = StObject.set(x, "rejoinedUserEventsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRejoinedUserEventsCount(value: String): Self = this.set("rejoinedUserEventsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejoinedUserEventsCount: Self = this.set("rejoinedUserEventsCount", js.undefined)
+    def setRejoinedUserEventsCountUndefined: Self = StObject.set(x, "rejoinedUserEventsCount", js.undefined)
   }
 }

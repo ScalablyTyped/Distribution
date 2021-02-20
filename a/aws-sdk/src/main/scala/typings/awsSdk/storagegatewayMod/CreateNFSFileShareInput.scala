@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNFSFileShareInput extends js.Object {
+trait CreateNFSFileShareInput extends StObject {
   
   /**
     * Refresh cache information.
@@ -106,120 +107,108 @@ object CreateNFSFileShareInput {
   }
   
   @scala.inline
-  implicit class CreateNFSFileShareInputOps[Self <: CreateNFSFileShareInput] (val x: Self) extends AnyVal {
+  implicit class CreateNFSFileShareInputMutableBuilder[Self <: CreateNFSFileShareInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheAttributes(value: CacheAttributes): Self = StObject.set(x, "CacheAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheAttributesUndefined: Self = StObject.set(x, "CacheAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientList(value: FileShareClientList): Self = StObject.set(x, "ClientList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setClientListUndefined: Self = StObject.set(x, "ClientList", js.undefined)
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setClientListVarargs(value: IPV4AddressCIDR*): Self = StObject.set(x, "ClientList", js.Array(value :_*))
     
     @scala.inline
-    def setLocationARN(value: LocationARN): Self = this.set("LocationARN", value.asInstanceOf[js.Any])
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setDefaultStorageClass(value: StorageClass): Self = StObject.set(x, "DefaultStorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheAttributes(value: CacheAttributes): Self = this.set("CacheAttributes", value.asInstanceOf[js.Any])
+    def setDefaultStorageClassUndefined: Self = StObject.set(x, "DefaultStorageClass", js.undefined)
     
     @scala.inline
-    def deleteCacheAttributes: Self = this.set("CacheAttributes", js.undefined)
+    def setFileShareName(value: FileShareName): Self = StObject.set(x, "FileShareName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientListVarargs(value: IPV4AddressCIDR*): Self = this.set("ClientList", js.Array(value :_*))
+    def setFileShareNameUndefined: Self = StObject.set(x, "FileShareName", js.undefined)
     
     @scala.inline
-    def setClientList(value: FileShareClientList): Self = this.set("ClientList", value.asInstanceOf[js.Any])
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientList: Self = this.set("ClientList", js.undefined)
+    def setGuessMIMETypeEnabled(value: Boolean): Self = StObject.set(x, "GuessMIMETypeEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultStorageClass(value: StorageClass): Self = this.set("DefaultStorageClass", value.asInstanceOf[js.Any])
+    def setGuessMIMETypeEnabledUndefined: Self = StObject.set(x, "GuessMIMETypeEnabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultStorageClass: Self = this.set("DefaultStorageClass", js.undefined)
+    def setKMSEncrypted(value: Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileShareName(value: FileShareName): Self = this.set("FileShareName", value.asInstanceOf[js.Any])
+    def setKMSEncryptedUndefined: Self = StObject.set(x, "KMSEncrypted", js.undefined)
     
     @scala.inline
-    def deleteFileShareName: Self = this.set("FileShareName", js.undefined)
+    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuessMIMETypeEnabled(value: Boolean): Self = this.set("GuessMIMETypeEnabled", value.asInstanceOf[js.Any])
+    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
     @scala.inline
-    def deleteGuessMIMETypeEnabled: Self = this.set("GuessMIMETypeEnabled", js.undefined)
+    def setLocationARN(value: LocationARN): Self = StObject.set(x, "LocationARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    def setNFSFileShareDefaults(value: NFSFileShareDefaults): Self = StObject.set(x, "NFSFileShareDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    def setNFSFileShareDefaultsUndefined: Self = StObject.set(x, "NFSFileShareDefaults", js.undefined)
     
     @scala.inline
-    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    def setNotificationPolicy(value: NotificationPolicy): Self = StObject.set(x, "NotificationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    def setNotificationPolicyUndefined: Self = StObject.set(x, "NotificationPolicy", js.undefined)
     
     @scala.inline
-    def setNFSFileShareDefaults(value: NFSFileShareDefaults): Self = this.set("NFSFileShareDefaults", value.asInstanceOf[js.Any])
+    def setObjectACL(value: ObjectACL): Self = StObject.set(x, "ObjectACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNFSFileShareDefaults: Self = this.set("NFSFileShareDefaults", js.undefined)
+    def setObjectACLUndefined: Self = StObject.set(x, "ObjectACL", js.undefined)
     
     @scala.inline
-    def setNotificationPolicy(value: NotificationPolicy): Self = this.set("NotificationPolicy", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationPolicy: Self = this.set("NotificationPolicy", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "ReadOnly", js.undefined)
     
     @scala.inline
-    def setObjectACL(value: ObjectACL): Self = this.set("ObjectACL", value.asInstanceOf[js.Any])
+    def setRequesterPays(value: Boolean): Self = StObject.set(x, "RequesterPays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectACL: Self = this.set("ObjectACL", js.undefined)
+    def setRequesterPaysUndefined: Self = StObject.set(x, "RequesterPays", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("ReadOnly", js.undefined)
+    def setSquash(value: Squash): Self = StObject.set(x, "Squash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterPays(value: Boolean): Self = this.set("RequesterPays", value.asInstanceOf[js.Any])
+    def setSquashUndefined: Self = StObject.set(x, "Squash", js.undefined)
     
     @scala.inline
-    def deleteRequesterPays: Self = this.set("RequesterPays", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSquash(value: Squash): Self = this.set("Squash", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSquash: Self = this.set("Squash", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

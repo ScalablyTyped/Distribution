@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesGetServiceGraphOutputMod.GetServiceGrap
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/GetServiceGraphCommand", JSImport.Namespace)
-@js.native
-object getServiceGraphCommandMod extends js.Object {
+object getServiceGraphCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/GetServiceGraphCommand", "GetServiceGraphCommand")
   @js.native
   class GetServiceGraphCommand protected () extends Command[
           InputTypesUnion, 

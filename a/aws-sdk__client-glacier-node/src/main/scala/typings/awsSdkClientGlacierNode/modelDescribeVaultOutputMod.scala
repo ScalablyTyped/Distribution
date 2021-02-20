@@ -1,13 +1,13 @@
 package typings.awsSdkClientGlacierNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/model/_DescribeVaultOutput", JSImport.Namespace)
-@js.native
-object modelDescribeVaultOutputMod extends js.Object {
+object modelDescribeVaultOutputMod {
   
-  @JSName("_DescribeVaultOutput")
+  @JSImport("@aws-sdk/client-glacier-node/model/_DescribeVaultOutput", "_DescribeVaultOutput")
+  @js.native
   val DescribeVaultOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

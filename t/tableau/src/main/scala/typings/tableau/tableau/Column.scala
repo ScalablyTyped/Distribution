@@ -1,11 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column extends js.Object {
+trait Column extends StObject {
   
   /** The data type of the column. Possible values are float, integer, string, boolean, date, and datetime. */
   def getDataType(): String = js.native
@@ -33,30 +34,18 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDataType(value: () => String): Self = StObject.set(x, "getDataType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataType(value: () => String): Self = this.set("getDataType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFieldName(value: () => String): Self = this.set("getFieldName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIndex(value: () => Double): Self = this.set("getIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsReferenced(value: () => Boolean): Self = this.set("getIsReferenced", js.Any.fromFunction0(value))
+    def setGetIsReferenced(value: () => Boolean): Self = StObject.set(x, "getIsReferenced", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message containing connection draining configuration.
   */
 @js.native
-trait SchemaConnectionDraining extends js.Object {
+trait SchemaConnectionDraining extends StObject {
   
   /**
     * Time for which instance will be drained (not accept new connections, but
@@ -25,24 +26,12 @@ object SchemaConnectionDraining {
   }
   
   @scala.inline
-  implicit class SchemaConnectionDrainingOps[Self <: SchemaConnectionDraining] (val x: Self) extends AnyVal {
+  implicit class SchemaConnectionDrainingMutableBuilder[Self <: SchemaConnectionDraining] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrainingTimeoutSec(value: Double): Self = StObject.set(x, "drainingTimeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDrainingTimeoutSec(value: Double): Self = this.set("drainingTimeoutSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDrainingTimeoutSec: Self = this.set("drainingTimeoutSec", js.undefined)
+    def setDrainingTimeoutSecUndefined: Self = StObject.set(x, "drainingTimeoutSec", js.undefined)
   }
 }

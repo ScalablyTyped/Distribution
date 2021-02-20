@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCompute.anon.RequestIdResourceTargetSslProx
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetSslProxy
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetSslProxyUserIp
 import typings.maximMazurokGapiClientCompute.anon.TargetSslProxyUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetSslProxiesResource extends js.Object {
+trait TargetSslProxiesResource extends StObject {
   
   /** Deletes the specified TargetSslProxy resource. */
   def delete(): Request[Operation] = js.native

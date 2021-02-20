@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetUserEndpointsInputMod.GetUser
 import typings.awsSdkClientPinpointBrowser.typesGetUserEndpointsOutputMod.GetUserEndpointsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetUserEndpointsCommand", JSImport.Namespace)
-@js.native
-object getUserEndpointsCommandMod extends js.Object {
+object getUserEndpointsCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetUserEndpointsCommand", "GetUserEndpointsCommand")
   @js.native
   class GetUserEndpointsCommand protected () extends Command[
           InputTypesUnion, 

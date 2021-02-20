@@ -2,12 +2,13 @@ package typings.azdata.mod.nb
 
 import typings.azdata.mod.IConnectionProfile
 import typings.vscode.mod.ViewColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookShowOptions extends js.Object {
+trait NotebookShowOptions extends StObject {
   
   /**
     * Optional profile indicating the initial connection to use for this editor
@@ -63,66 +64,54 @@ object NotebookShowOptions {
   }
   
   @scala.inline
-  implicit class NotebookShowOptionsOps[Self <: NotebookShowOptions] (val x: Self) extends AnyVal {
+  implicit class NotebookShowOptionsMutableBuilder[Self <: NotebookShowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionProfileUndefined: Self = StObject.set(x, "connectionProfile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultKernel(value: IKernelSpec): Self = StObject.set(x, "defaultKernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionProfile(value: IConnectionProfile): Self = this.set("connectionProfile", value.asInstanceOf[js.Any])
+    def setDefaultKernelUndefined: Self = StObject.set(x, "defaultKernel", js.undefined)
     
     @scala.inline
-    def deleteConnectionProfile: Self = this.set("connectionProfile", js.undefined)
+    def setInitialContent(value: INotebookContents | String): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultKernel(value: IKernelSpec): Self = this.set("defaultKernel", value.asInstanceOf[js.Any])
+    def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
     
     @scala.inline
-    def deleteDefaultKernel: Self = this.set("defaultKernel", js.undefined)
+    def setInitialDirtyState(value: Boolean): Self = StObject.set(x, "initialDirtyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialContent(value: INotebookContents | String): Self = this.set("initialContent", value.asInstanceOf[js.Any])
+    def setInitialDirtyStateUndefined: Self = StObject.set(x, "initialDirtyState", js.undefined)
     
     @scala.inline
-    def deleteInitialContent: Self = this.set("initialContent", js.undefined)
+    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDirtyState(value: Boolean): Self = this.set("initialDirtyState", value.asInstanceOf[js.Any])
+    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
     @scala.inline
-    def deleteInitialDirtyState: Self = this.set("initialDirtyState", js.undefined)
+    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveFocus(value: Boolean): Self = this.set("preserveFocus", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deletePreserveFocus: Self = this.set("preserveFocus", js.undefined)
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderId: Self = this.set("providerId", js.undefined)
-    
-    @scala.inline
-    def setViewColumn(value: ViewColumn): Self = this.set("viewColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewColumn: Self = this.set("viewColumn", js.undefined)
+    def setViewColumnUndefined: Self = StObject.set(x, "viewColumn", js.undefined)
   }
 }

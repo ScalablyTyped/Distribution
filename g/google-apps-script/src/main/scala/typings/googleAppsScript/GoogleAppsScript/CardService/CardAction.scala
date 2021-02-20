@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setOnClickAction(action);
   */
 @js.native
-trait CardAction extends js.Object {
+trait CardAction extends StObject {
   
   def setAuthorizationAction(action: AuthorizationAction): CardAction = js.native
   
@@ -45,36 +46,24 @@ object CardAction {
   }
   
   @scala.inline
-  implicit class CardActionOps[Self <: CardAction] (val x: Self) extends AnyVal {
+  implicit class CardActionMutableBuilder[Self <: CardAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetAuthorizationAction(value: AuthorizationAction => CardAction): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetComposeAction(value: (Action, ComposedEmailType) => CardAction): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetOnClickAction(value: Action => CardAction): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAuthorizationAction(value: AuthorizationAction => CardAction): Self = this.set("setAuthorizationAction", js.Any.fromFunction1(value))
+    def setSetOnClickOpenLinkAction(value: Action => CardAction): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetComposeAction(value: (Action, ComposedEmailType) => CardAction): Self = this.set("setComposeAction", js.Any.fromFunction2(value))
+    def setSetOpenLink(value: OpenLink => CardAction): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOnClickAction(value: Action => CardAction): Self = this.set("setOnClickAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOnClickOpenLinkAction(value: Action => CardAction): Self = this.set("setOnClickOpenLinkAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => CardAction): Self = this.set("setOpenLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetText(value: String => CardAction): Self = this.set("setText", js.Any.fromFunction1(value))
+    def setSetText(value: String => CardAction): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.std
 
 import typings.std.stdStrings.readonly_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.readwrite
   - typings.std.stdStrings.versionchange
 */
-trait IDBTransactionMode extends js.Object
+trait IDBTransactionMode extends StObject
 object IDBTransactionMode {
   
   @scala.inline

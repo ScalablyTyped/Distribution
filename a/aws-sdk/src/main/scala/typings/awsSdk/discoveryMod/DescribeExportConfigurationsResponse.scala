@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeExportConfigurationsResponse extends js.Object {
+trait DescribeExportConfigurationsResponse extends StObject {
   
   /**
     * 
@@ -26,33 +27,21 @@ object DescribeExportConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class DescribeExportConfigurationsResponseOps[Self <: DescribeExportConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeExportConfigurationsResponseMutableBuilder[Self <: DescribeExportConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportsInfo(value: ExportsInfo): Self = StObject.set(x, "exportsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportsInfoUndefined: Self = StObject.set(x, "exportsInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportsInfoVarargs(value: ExportInfo*): Self = StObject.set(x, "exportsInfo", js.Array(value :_*))
     
     @scala.inline
-    def setExportsInfoVarargs(value: ExportInfo*): Self = this.set("exportsInfo", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportsInfo(value: ExportsInfo): Self = this.set("exportsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportsInfo: Self = this.set("exportsInfo", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

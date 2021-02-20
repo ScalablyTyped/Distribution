@@ -1,5 +1,6 @@
 package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Template to map fields of ApplicationDataTransfer resource.
   */
 @js.native
-trait SchemaApplicationDataTransfer extends js.Object {
+trait SchemaApplicationDataTransfer extends StObject {
   
   /**
     * The application&#39;s ID.
@@ -35,39 +36,27 @@ object SchemaApplicationDataTransfer {
   }
   
   @scala.inline
-  implicit class SchemaApplicationDataTransferOps[Self <: SchemaApplicationDataTransfer] (val x: Self) extends AnyVal {
+  implicit class SchemaApplicationDataTransferMutableBuilder[Self <: SchemaApplicationDataTransfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = StObject.set(x, "applicationTransferParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setApplicationTransferParamsUndefined: Self = StObject.set(x, "applicationTransferParams", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    def setApplicationTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = StObject.set(x, "applicationTransferParams", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = this.set("applicationTransferParams", js.Array(value :_*))
+    def setApplicationTransferStatus(value: String): Self = StObject.set(x, "applicationTransferStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = this.set("applicationTransferParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationTransferParams: Self = this.set("applicationTransferParams", js.undefined)
-    
-    @scala.inline
-    def setApplicationTransferStatus(value: String): Self = this.set("applicationTransferStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationTransferStatus: Self = this.set("applicationTransferStatus", js.undefined)
+    def setApplicationTransferStatusUndefined: Self = StObject.set(x, "applicationTransferStatus", js.undefined)
   }
 }

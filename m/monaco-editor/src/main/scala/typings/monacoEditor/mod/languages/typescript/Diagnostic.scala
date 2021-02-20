@@ -4,6 +4,7 @@ import typings.monacoEditor.monacoEditorNumbers.`0`
 import typings.monacoEditor.monacoEditorNumbers.`1`
 import typings.monacoEditor.monacoEditorNumbers.`2`
 import typings.monacoEditor.monacoEditorNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,39 +28,27 @@ object Diagnostic {
   }
   
   @scala.inline
-  implicit class DiagnosticOps[Self <: Diagnostic] (val x: Self) extends AnyVal {
+  implicit class DiagnosticMutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedInformation(value: js.Array[DiagnosticRelatedInformation]): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = this.set("relatedInformation", js.Array(value :_*))
+    def setReportsUnnecessary(value: js.Object): Self = StObject.set(x, "reportsUnnecessary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedInformation(value: js.Array[DiagnosticRelatedInformation]): Self = this.set("relatedInformation", value.asInstanceOf[js.Any])
+    def setReportsUnnecessaryUndefined: Self = StObject.set(x, "reportsUnnecessary", js.undefined)
     
     @scala.inline
-    def deleteRelatedInformation: Self = this.set("relatedInformation", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportsUnnecessary(value: js.Object): Self = this.set("reportsUnnecessary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportsUnnecessary: Self = this.set("reportsUnnecessary", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

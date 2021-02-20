@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateClientVpnEndpointResult extends js.Object {
+trait CreateClientVpnEndpointResult extends StObject {
   
   /**
     * The ID of the Client VPN endpoint.
@@ -31,36 +32,24 @@ object CreateClientVpnEndpointResult {
   }
   
   @scala.inline
-  implicit class CreateClientVpnEndpointResultOps[Self <: CreateClientVpnEndpointResult] (val x: Self) extends AnyVal {
+  implicit class CreateClientVpnEndpointResultMutableBuilder[Self <: CreateClientVpnEndpointResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpnEndpointId(value: String): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
     @scala.inline
-    def deleteClientVpnEndpointId: Self = this.set("ClientVpnEndpointId", js.undefined)
+    def setStatus(value: ClientVpnEndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsName(value: String): Self = this.set("DnsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDnsName: Self = this.set("DnsName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ClientVpnEndpointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.IEntityTickingArea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The tick world component is a read-only component that allows users to access the ticking areas on entities as well as the ticking area's data.
   */
 @js.native
-trait ITickWorldComponent extends js.Object {
+trait ITickWorldComponent extends StObject {
   
   /**
     * distance_to_players
@@ -45,30 +46,18 @@ object ITickWorldComponent {
   }
   
   @scala.inline
-  implicit class ITickWorldComponentOps[Self <: ITickWorldComponent] (val x: Self) extends AnyVal {
+  implicit class ITickWorldComponentMutableBuilder[Self <: ITickWorldComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance_to_players(value: Double): Self = StObject.set(x, "distance_to_players", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNever_despawn(value: Boolean): Self = StObject.set(x, "never_despawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance_to_players(value: Double): Self = this.set("distance_to_players", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNever_despawn(value: Boolean): Self = this.set("never_despawn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicking_area(value: IEntityTickingArea): Self = this.set("ticking_area", value.asInstanceOf[js.Any])
+    def setTicking_area(value: IEntityTickingArea): Self = StObject.set(x, "ticking_area", value.asInstanceOf[js.Any])
   }
 }

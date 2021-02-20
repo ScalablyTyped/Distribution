@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
   */
 @js.native
-trait PlusUploaderUploadOptions extends js.Object {
+trait PlusUploaderUploadOptions extends StObject {
   
   /**
     * 上传任务每次上传的文件块大小（仅在支持断点续传的服务有效）
@@ -70,54 +71,42 @@ object PlusUploaderUploadOptions {
   }
   
   @scala.inline
-  implicit class PlusUploaderUploadOptionsOps[Self <: PlusUploaderUploadOptions] (val x: Self) extends AnyVal {
+  implicit class PlusUploaderUploadOptionsMutableBuilder[Self <: PlusUploaderUploadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksizeUndefined: Self = StObject.set(x, "blocksize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksize(value: Double): Self = this.set("blocksize", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteBlocksize: Self = this.set("blocksize", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
     
     @scala.inline
-    def setRetry(value: Double): Self = this.set("retry", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryInterval(value: Double): Self = this.set("retryInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryInterval: Self = this.set("retryInterval", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

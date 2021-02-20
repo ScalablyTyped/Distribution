@@ -1,11 +1,12 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Check extends js.Object {
+trait Check extends StObject {
   
   var after: js.UndefOr[js.Function | String] = js.native
   
@@ -28,48 +29,36 @@ object Check {
   }
   
   @scala.inline
-  implicit class CheckOps[Self <: Check] (val x: Self) extends AnyVal {
+  implicit class CheckMutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: js.Function | String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluate(value: js.Function | String): Self = this.set("evaluate", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setEvaluate(value: js.Function | String): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: js.Function | String): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setMatches(value: String): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatches(value: String): Self = this.set("matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AzureRestApiRequestModel extends js.Object {
+trait AzureRestApiRequestModel extends StObject {
   
   /**
     * Gets or sets the Asset details
@@ -72,45 +73,33 @@ object AzureRestApiRequestModel {
   }
   
   @scala.inline
-  implicit class AzureRestApiRequestModelOps[Self <: AzureRestApiRequestModel] (val x: Self) extends AnyVal {
+  implicit class AzureRestApiRequestModelMutableBuilder[Self <: AzureRestApiRequestModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "assetDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetVersion(value: Double): Self = StObject.set(x, "assetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetDetails(value: AssetDetails): Self = this.set("assetDetails", value.asInstanceOf[js.Any])
+    def setCustomerSupportEmail(value: String): Self = StObject.set(x, "customerSupportEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: String): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setIntegrationContactEmail(value: String): Self = StObject.set(x, "integrationContactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetVersion(value: Double): Self = this.set("assetVersion", value.asInstanceOf[js.Any])
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerSupportEmail(value: String): Self = this.set("customerSupportEmail", value.asInstanceOf[js.Any])
+    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationContactEmail(value: String): Self = this.set("integrationContactEmail", value.asInstanceOf[js.Any])
+    def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlanId(value: String): Self = this.set("planId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherId(value: String): Self = this.set("publisherId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

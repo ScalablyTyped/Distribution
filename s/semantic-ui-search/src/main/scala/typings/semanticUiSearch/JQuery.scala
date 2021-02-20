@@ -67,12 +67,13 @@ import typings.semanticUiSearch.semanticUiSearchStrings.source
 import typings.semanticUiSearch.semanticUiSearchStrings.templates
 import typings.semanticUiSearch.semanticUiSearchStrings.transition
 import typings.semanticUiSearch.semanticUiSearchStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def search(): JQuery = js.native
   def search(behavior: setting, name: `type`, value: js.UndefOr[scala.Nothing]): String = js.native

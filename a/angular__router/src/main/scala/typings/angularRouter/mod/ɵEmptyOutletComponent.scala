@@ -1,5 +1,6 @@
 package typings.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,4 +16,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@angular/router", "\u0275EmptyOutletComponent")
 @js.native
-class ɵEmptyOutletComponent () extends js.Object
+class ɵEmptyOutletComponent () extends StObject

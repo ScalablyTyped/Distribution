@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportWorkspaceImageResult extends js.Object {
+trait ImportWorkspaceImageResult extends StObject {
   
   /**
     * The identifier of the WorkSpace image.
@@ -21,24 +22,12 @@ object ImportWorkspaceImageResult {
   }
   
   @scala.inline
-  implicit class ImportWorkspaceImageResultOps[Self <: ImportWorkspaceImageResult] (val x: Self) extends AnyVal {
+  implicit class ImportWorkspaceImageResultMutableBuilder[Self <: ImportWorkspaceImageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
   }
 }

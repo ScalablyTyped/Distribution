@@ -1,5 +1,6 @@
 package typings.naverWhale.global.whale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  "notifications"
   * @since Chrome 28.
   */
-@JSGlobal("chrome.notifications")
-@js.native
-object notifications extends js.Object
+object notifications

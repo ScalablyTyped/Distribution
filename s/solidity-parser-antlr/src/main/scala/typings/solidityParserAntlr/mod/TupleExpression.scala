@@ -1,5 +1,6 @@
 package typings.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object TupleExpression {
   }
   
   @scala.inline
-  implicit class TupleExpressionOps[Self <: TupleExpression] (val x: Self) extends AnyVal {
+  implicit class TupleExpressionMutableBuilder[Self <: TupleExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: js.Array[Expression]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsVarargs(value: Expression*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsVarargs(value: Expression*): Self = this.set("components", js.Array(value :_*))
-    
-    @scala.inline
-    def setComponents(value: js.Array[Expression]): Self = this.set("components", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsArray(value: Boolean): Self = this.set("isArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactJoyride.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locale extends js.Object {
+trait Locale extends StObject {
   
   var back: js.UndefOr[ReactNode] = js.native
   
@@ -29,54 +30,42 @@ object Locale {
   }
   
   @scala.inline
-  implicit class LocaleOps[Self <: Locale] (val x: Self) extends AnyVal {
+  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: ReactNode): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: ReactNode): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: ReactNode): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteBack: Self = this.set("back", js.undefined)
+    def setLast(value: ReactNode): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: ReactNode): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setNext(value: ReactNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: ReactNode): Self = this.set("last", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setOpen(value: ReactNode): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: ReactNode): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setSkip(value: ReactNode): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: ReactNode): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
-    
-    @scala.inline
-    def setSkip(value: ReactNode): Self = this.set("skip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
   }
 }

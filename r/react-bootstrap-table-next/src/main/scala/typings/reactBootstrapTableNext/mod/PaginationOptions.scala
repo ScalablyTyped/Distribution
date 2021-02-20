@@ -2,13 +2,14 @@ package typings.reactBootstrapTableNext.mod
 
 import typings.react.mod.global.JSX.Element
 import typings.reactBootstrapTableNext.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  custom :boolean,   page :number,   sizePerPage :number,   totalSize :number,   pageStartIndex :number,   paginationSize :number,   showTotal :boolean,   sizePerPageList :std.Array<number> | std.Array<{  text :string,   value :number}>,   withFirstAndLast :boolean,   alwaysShowAllBtns :boolean,   firstPageText :string | react.react.<global>.JSX.Element,   prePageText :string | react.react.<global>.JSX.Element,   nextPageText :string | react.react.<global>.JSX.Element,   lastPageText :string | react.react.<global>.JSX.Element,   nextPageTitle :string,   prePageTitle :string,   firstPageTitle :string,   lastPageTitle :string,   hideSizePerPage :boolean,   hidePageListOnlyOnePage :boolean, pageButtonRenderer (options : react-bootstrap-table-next.react-bootstrap-table-next.PageButtonRendererOptions): react.react.<global>.JSX.Element, onPageChange (page : number, sizePerPage : number): void, onSizePerPageChange (page : number, sizePerPage : number): void, pageListRenderer (options : react-bootstrap-table-next.react-bootstrap-table-next.PageListRendererOptions): react.react.<global>.JSX.Element, sizePerPageRenderer (options : react-bootstrap-table-next.react-bootstrap-table-next.SizePerPageRendererOptions): react.react.<global>.JSX.Element, sizePerPageOptionRenderer (options : react-bootstrap-table-next.react-bootstrap-table-next.SizePerPageOptionRendererOptions): react.react.<global>.JSX.Element, paginationTotalRenderer (from : number, to : number, size : number): react.react.<global>.JSX.Element}> */
 @js.native
-trait PaginationOptions extends js.Object {
+trait PaginationOptions extends StObject {
   
   var alwaysShowAllBtns: js.UndefOr[Boolean] = js.native
   
@@ -73,183 +74,171 @@ object PaginationOptions {
   }
   
   @scala.inline
-  implicit class PaginationOptionsOps[Self <: PaginationOptions] (val x: Self) extends AnyVal {
+  implicit class PaginationOptionsMutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysShowAllBtns(value: Boolean): Self = StObject.set(x, "alwaysShowAllBtns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysShowAllBtnsUndefined: Self = StObject.set(x, "alwaysShowAllBtns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysShowAllBtns(value: Boolean): Self = this.set("alwaysShowAllBtns", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def deleteAlwaysShowAllBtns: Self = this.set("alwaysShowAllBtns", js.undefined)
+    def setFirstPageText(value: String | Element): Self = StObject.set(x, "firstPageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Boolean): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setFirstPageTextUndefined: Self = StObject.set(x, "firstPageText", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setFirstPageTitle(value: String): Self = StObject.set(x, "firstPageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageText(value: String | Element): Self = this.set("firstPageText", value.asInstanceOf[js.Any])
+    def setFirstPageTitleUndefined: Self = StObject.set(x, "firstPageTitle", js.undefined)
     
     @scala.inline
-    def deleteFirstPageText: Self = this.set("firstPageText", js.undefined)
+    def setHidePageListOnlyOnePage(value: Boolean): Self = StObject.set(x, "hidePageListOnlyOnePage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageTitle(value: String): Self = this.set("firstPageTitle", value.asInstanceOf[js.Any])
+    def setHidePageListOnlyOnePageUndefined: Self = StObject.set(x, "hidePageListOnlyOnePage", js.undefined)
     
     @scala.inline
-    def deleteFirstPageTitle: Self = this.set("firstPageTitle", js.undefined)
+    def setHideSizePerPage(value: Boolean): Self = StObject.set(x, "hideSizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidePageListOnlyOnePage(value: Boolean): Self = this.set("hidePageListOnlyOnePage", value.asInstanceOf[js.Any])
+    def setHideSizePerPageUndefined: Self = StObject.set(x, "hideSizePerPage", js.undefined)
     
     @scala.inline
-    def deleteHidePageListOnlyOnePage: Self = this.set("hidePageListOnlyOnePage", js.undefined)
+    def setLastPageText(value: String | Element): Self = StObject.set(x, "lastPageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSizePerPage(value: Boolean): Self = this.set("hideSizePerPage", value.asInstanceOf[js.Any])
+    def setLastPageTextUndefined: Self = StObject.set(x, "lastPageText", js.undefined)
     
     @scala.inline
-    def deleteHideSizePerPage: Self = this.set("hideSizePerPage", js.undefined)
+    def setLastPageTitle(value: String): Self = StObject.set(x, "lastPageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPageText(value: String | Element): Self = this.set("lastPageText", value.asInstanceOf[js.Any])
+    def setLastPageTitleUndefined: Self = StObject.set(x, "lastPageTitle", js.undefined)
     
     @scala.inline
-    def deleteLastPageText: Self = this.set("lastPageText", js.undefined)
+    def setNextPageText(value: String | Element): Self = StObject.set(x, "nextPageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPageTitle(value: String): Self = this.set("lastPageTitle", value.asInstanceOf[js.Any])
+    def setNextPageTextUndefined: Self = StObject.set(x, "nextPageText", js.undefined)
     
     @scala.inline
-    def deleteLastPageTitle: Self = this.set("lastPageTitle", js.undefined)
+    def setNextPageTitle(value: String): Self = StObject.set(x, "nextPageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageText(value: String | Element): Self = this.set("nextPageText", value.asInstanceOf[js.Any])
+    def setNextPageTitleUndefined: Self = StObject.set(x, "nextPageTitle", js.undefined)
     
     @scala.inline
-    def deleteNextPageText: Self = this.set("nextPageText", js.undefined)
+    def setOnPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNextPageTitle(value: String): Self = this.set("nextPageTitle", value.asInstanceOf[js.Any])
+    def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
     
     @scala.inline
-    def deleteNextPageTitle: Self = this.set("nextPageTitle", js.undefined)
+    def setOnSizePerPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = StObject.set(x, "onSizePerPageChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = this.set("onPageChange", js.Any.fromFunction2(value))
+    def setOnSizePerPageChangeUndefined: Self = StObject.set(x, "onSizePerPageChange", js.undefined)
     
     @scala.inline
-    def deleteOnPageChange: Self = this.set("onPageChange", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSizePerPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = this.set("onSizePerPageChange", js.Any.fromFunction2(value))
+    def setPageButtonRenderer(value: /* options */ PageButtonRendererOptions => Element): Self = StObject.set(x, "pageButtonRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSizePerPageChange: Self = this.set("onSizePerPageChange", js.undefined)
+    def setPageButtonRendererUndefined: Self = StObject.set(x, "pageButtonRenderer", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageListRenderer(value: /* options */ PageListRendererOptions => Element): Self = StObject.set(x, "pageListRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setPageListRendererUndefined: Self = StObject.set(x, "pageListRenderer", js.undefined)
     
     @scala.inline
-    def setPageButtonRenderer(value: /* options */ PageButtonRendererOptions => Element): Self = this.set("pageButtonRenderer", js.Any.fromFunction1(value))
+    def setPageStartIndex(value: Double): Self = StObject.set(x, "pageStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageButtonRenderer: Self = this.set("pageButtonRenderer", js.undefined)
+    def setPageStartIndexUndefined: Self = StObject.set(x, "pageStartIndex", js.undefined)
     
     @scala.inline
-    def setPageListRenderer(value: /* options */ PageListRendererOptions => Element): Self = this.set("pageListRenderer", js.Any.fromFunction1(value))
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deletePageListRenderer: Self = this.set("pageListRenderer", js.undefined)
+    def setPaginationSize(value: Double): Self = StObject.set(x, "paginationSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStartIndex(value: Double): Self = this.set("pageStartIndex", value.asInstanceOf[js.Any])
+    def setPaginationSizeUndefined: Self = StObject.set(x, "paginationSize", js.undefined)
     
     @scala.inline
-    def deletePageStartIndex: Self = this.set("pageStartIndex", js.undefined)
+    def setPaginationTotalRenderer(value: (/* from */ Double, /* to */ Double, /* size */ Double) => Element): Self = StObject.set(x, "paginationTotalRenderer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPaginationSize(value: Double): Self = this.set("paginationSize", value.asInstanceOf[js.Any])
+    def setPaginationTotalRendererUndefined: Self = StObject.set(x, "paginationTotalRenderer", js.undefined)
     
     @scala.inline
-    def deletePaginationSize: Self = this.set("paginationSize", js.undefined)
+    def setPrePageText(value: String | Element): Self = StObject.set(x, "prePageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationTotalRenderer(value: (/* from */ Double, /* to */ Double, /* size */ Double) => Element): Self = this.set("paginationTotalRenderer", js.Any.fromFunction3(value))
+    def setPrePageTextUndefined: Self = StObject.set(x, "prePageText", js.undefined)
     
     @scala.inline
-    def deletePaginationTotalRenderer: Self = this.set("paginationTotalRenderer", js.undefined)
+    def setPrePageTitle(value: String): Self = StObject.set(x, "prePageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrePageText(value: String | Element): Self = this.set("prePageText", value.asInstanceOf[js.Any])
+    def setPrePageTitleUndefined: Self = StObject.set(x, "prePageTitle", js.undefined)
     
     @scala.inline
-    def deletePrePageText: Self = this.set("prePageText", js.undefined)
+    def setShowTotal(value: Boolean): Self = StObject.set(x, "showTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrePageTitle(value: String): Self = this.set("prePageTitle", value.asInstanceOf[js.Any])
+    def setShowTotalUndefined: Self = StObject.set(x, "showTotal", js.undefined)
     
     @scala.inline
-    def deletePrePageTitle: Self = this.set("prePageTitle", js.undefined)
+    def setSizePerPage(value: Double): Self = StObject.set(x, "sizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTotal(value: Boolean): Self = this.set("showTotal", value.asInstanceOf[js.Any])
+    def setSizePerPageList(value: js.Array[Double | Text]): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowTotal: Self = this.set("showTotal", js.undefined)
+    def setSizePerPageListUndefined: Self = StObject.set(x, "sizePerPageList", js.undefined)
     
     @scala.inline
-    def setSizePerPage(value: Double): Self = this.set("sizePerPage", value.asInstanceOf[js.Any])
+    def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
     
     @scala.inline
-    def deleteSizePerPage: Self = this.set("sizePerPage", js.undefined)
+    def setSizePerPageOptionRenderer(value: /* options */ SizePerPageOptionRendererOptions => Element): Self = StObject.set(x, "sizePerPageOptionRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSizePerPageListVarargs(value: (Double | Text)*): Self = this.set("sizePerPageList", js.Array(value :_*))
+    def setSizePerPageOptionRendererUndefined: Self = StObject.set(x, "sizePerPageOptionRenderer", js.undefined)
     
     @scala.inline
-    def setSizePerPageList(value: js.Array[Double | Text]): Self = this.set("sizePerPageList", value.asInstanceOf[js.Any])
+    def setSizePerPageRenderer(value: /* options */ SizePerPageRendererOptions => Element): Self = StObject.set(x, "sizePerPageRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSizePerPageList: Self = this.set("sizePerPageList", js.undefined)
+    def setSizePerPageRendererUndefined: Self = StObject.set(x, "sizePerPageRenderer", js.undefined)
     
     @scala.inline
-    def setSizePerPageOptionRenderer(value: /* options */ SizePerPageOptionRendererOptions => Element): Self = this.set("sizePerPageOptionRenderer", js.Any.fromFunction1(value))
+    def setSizePerPageUndefined: Self = StObject.set(x, "sizePerPage", js.undefined)
     
     @scala.inline
-    def deleteSizePerPageOptionRenderer: Self = this.set("sizePerPageOptionRenderer", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizePerPageRenderer(value: /* options */ SizePerPageRendererOptions => Element): Self = this.set("sizePerPageRenderer", js.Any.fromFunction1(value))
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
     @scala.inline
-    def deleteSizePerPageRenderer: Self = this.set("sizePerPageRenderer", js.undefined)
+    def setWithFirstAndLast(value: Boolean): Self = StObject.set(x, "withFirstAndLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
-    
-    @scala.inline
-    def setWithFirstAndLast(value: Boolean): Self = this.set("withFirstAndLast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithFirstAndLast: Self = this.set("withFirstAndLast", js.undefined)
+    def setWithFirstAndLastUndefined: Self = StObject.set(x, "withFirstAndLast", js.undefined)
   }
 }

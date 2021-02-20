@@ -6,6 +6,7 @@ import typings.antvComponent.antvComponentStrings.downward
 import typings.antvComponent.antvComponentStrings.upward
 import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.BBox
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,57 +56,45 @@ object DataMarkerAnnotationCfg {
   }
   
   @scala.inline
-  implicit class DataMarkerAnnotationCfgOps[Self <: DataMarkerAnnotationCfg] (val x: Self) extends AnyVal {
+  implicit class DataMarkerAnnotationCfgMutableBuilder[Self <: DataMarkerAnnotationCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAdjust(value: Boolean): Self = StObject.set(x, "autoAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoAdjustUndefined: Self = StObject.set(x, "autoAdjust", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordBBox(value: BBox): Self = StObject.set(x, "coordBBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: DataMarkerTextCfg): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setCoordBBoxUndefined: Self = StObject.set(x, "coordBBox", js.undefined)
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setDirection(value: upward | downward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setAutoAdjust(value: Boolean): Self = this.set("autoAdjust", value.asInstanceOf[js.Any])
+    def setLine(value: DisplayLength): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoAdjust: Self = this.set("autoAdjust", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def setCoordBBox(value: BBox): Self = this.set("coordBBox", value.asInstanceOf[js.Any])
+    def setPoint(value: DisplayStyle): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoordBBox: Self = this.set("coordBBox", js.undefined)
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def setDirection(value: upward | downward): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setText(value: DataMarkerTextCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: DisplayLength): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
-    
-    @scala.inline
-    def setPoint(value: DisplayStyle): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

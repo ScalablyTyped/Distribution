@@ -8,6 +8,7 @@ import typings.mfiles.mfilesNumbers.`32`
 import typings.mfiles.mfilesNumbers.`4`
 import typings.mfiles.mfilesNumbers.`64`
 import typings.mfiles.mfilesNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`64`
   - typings.mfiles.mfilesNumbers.`125`
 */
-trait MFTriggerWeekDay extends js.Object
+trait MFTriggerWeekDay extends StObject
 object MFTriggerWeekDay {
   
   @scala.inline

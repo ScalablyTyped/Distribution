@@ -1,6 +1,7 @@
 package typings.postcss.mod
 
 import typings.postcss.postcssBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the source CSS.
   */
 @js.native
-trait Input extends js.Object {
+trait Input extends StObject {
   
   /**
     * The absolute path to the CSS source file defined with the "from" option.
@@ -57,42 +58,30 @@ object Input {
   }
   
   @scala.inline
-  implicit class InputOps[Self <: Input] (val x: Self) extends AnyVal {
+  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setHasBOM(value: Boolean): Self = StObject.set(x, "hasBOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBOM(value: Boolean): Self = this.set("hasBOM", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: PreviousMap): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setOrigin(value: (Double, Double) => InputOrigin | `false`): Self = this.set("origin", js.Any.fromFunction2(value))
+    def setMap(value: PreviousMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOrigin(value: (Double, Double) => InputOrigin | `false`): Self = StObject.set(x, "origin", js.Any.fromFunction2(value))
   }
 }

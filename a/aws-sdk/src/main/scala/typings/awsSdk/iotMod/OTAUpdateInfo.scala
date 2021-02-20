@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OTAUpdateInfo extends js.Object {
+trait OTAUpdateInfo extends StObject {
   
   /**
     * A collection of name/value pairs
@@ -96,123 +97,111 @@ object OTAUpdateInfo {
   }
   
   @scala.inline
-  implicit class OTAUpdateInfoOps[Self <: OTAUpdateInfo] (val x: Self) extends AnyVal {
+  implicit class OTAUpdateInfoMutableBuilder[Self <: OTAUpdateInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalParameters(value: AdditionalParameterMap): Self = StObject.set(x, "additionalParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalParametersUndefined: Self = StObject.set(x, "additionalParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsIotJobArn(value: AwsIotJobArn): Self = StObject.set(x, "awsIotJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalParameters(value: AdditionalParameterMap): Self = this.set("additionalParameters", value.asInstanceOf[js.Any])
+    def setAwsIotJobArnUndefined: Self = StObject.set(x, "awsIotJobArn", js.undefined)
     
     @scala.inline
-    def deleteAdditionalParameters: Self = this.set("additionalParameters", js.undefined)
+    def setAwsIotJobId(value: AwsIotJobId): Self = StObject.set(x, "awsIotJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIotJobArn(value: AwsIotJobArn): Self = this.set("awsIotJobArn", value.asInstanceOf[js.Any])
+    def setAwsIotJobIdUndefined: Self = StObject.set(x, "awsIotJobId", js.undefined)
     
     @scala.inline
-    def deleteAwsIotJobArn: Self = this.set("awsIotJobArn", js.undefined)
+    def setAwsJobExecutionsRolloutConfig(value: AwsJobExecutionsRolloutConfig): Self = StObject.set(x, "awsJobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIotJobId(value: AwsIotJobId): Self = this.set("awsIotJobId", value.asInstanceOf[js.Any])
+    def setAwsJobExecutionsRolloutConfigUndefined: Self = StObject.set(x, "awsJobExecutionsRolloutConfig", js.undefined)
     
     @scala.inline
-    def deleteAwsIotJobId: Self = this.set("awsIotJobId", js.undefined)
+    def setAwsJobPresignedUrlConfig(value: AwsJobPresignedUrlConfig): Self = StObject.set(x, "awsJobPresignedUrlConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsJobExecutionsRolloutConfig(value: AwsJobExecutionsRolloutConfig): Self = this.set("awsJobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
+    def setAwsJobPresignedUrlConfigUndefined: Self = StObject.set(x, "awsJobPresignedUrlConfig", js.undefined)
     
     @scala.inline
-    def deleteAwsJobExecutionsRolloutConfig: Self = this.set("awsJobExecutionsRolloutConfig", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsJobPresignedUrlConfig(value: AwsJobPresignedUrlConfig): Self = this.set("awsJobPresignedUrlConfig", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteAwsJobPresignedUrlConfig: Self = this.set("awsJobPresignedUrlConfig", js.undefined)
+    def setDescription(value: OTAUpdateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: OTAUpdateDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorInfo(value: ErrorInfo): Self = this.set("errorInfo", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteErrorInfo: Self = this.set("errorInfo", js.undefined)
+    def setOtaUpdateArn(value: OTAUpdateArn): Self = StObject.set(x, "otaUpdateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setOtaUpdateArnUndefined: Self = StObject.set(x, "otaUpdateArn", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setOtaUpdateFiles(value: OTAUpdateFiles): Self = StObject.set(x, "otaUpdateFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaUpdateArn(value: OTAUpdateArn): Self = this.set("otaUpdateArn", value.asInstanceOf[js.Any])
+    def setOtaUpdateFilesUndefined: Self = StObject.set(x, "otaUpdateFiles", js.undefined)
     
     @scala.inline
-    def deleteOtaUpdateArn: Self = this.set("otaUpdateArn", js.undefined)
+    def setOtaUpdateFilesVarargs(value: OTAUpdateFile*): Self = StObject.set(x, "otaUpdateFiles", js.Array(value :_*))
     
     @scala.inline
-    def setOtaUpdateFilesVarargs(value: OTAUpdateFile*): Self = this.set("otaUpdateFiles", js.Array(value :_*))
+    def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaUpdateFiles(value: OTAUpdateFiles): Self = this.set("otaUpdateFiles", value.asInstanceOf[js.Any])
+    def setOtaUpdateIdUndefined: Self = StObject.set(x, "otaUpdateId", js.undefined)
     
     @scala.inline
-    def deleteOtaUpdateFiles: Self = this.set("otaUpdateFiles", js.undefined)
+    def setOtaUpdateStatus(value: OTAUpdateStatus): Self = StObject.set(x, "otaUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaUpdateId(value: OTAUpdateId): Self = this.set("otaUpdateId", value.asInstanceOf[js.Any])
+    def setOtaUpdateStatusUndefined: Self = StObject.set(x, "otaUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteOtaUpdateId: Self = this.set("otaUpdateId", js.undefined)
+    def setProtocols(value: Protocols): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaUpdateStatus(value: OTAUpdateStatus): Self = this.set("otaUpdateStatus", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def deleteOtaUpdateStatus: Self = this.set("otaUpdateStatus", js.undefined)
+    def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
     @scala.inline
-    def setProtocolsVarargs(value: Protocol*): Self = this.set("protocols", js.Array(value :_*))
+    def setTargetSelection(value: TargetSelection): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: Protocols): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    def setTargetSelectionUndefined: Self = StObject.set(x, "targetSelection", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    def setTargets(value: Targets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSelection(value: TargetSelection): Self = this.set("targetSelection", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def deleteTargetSelection: Self = this.set("targetSelection", js.undefined)
-    
-    @scala.inline
-    def setTargetsVarargs(value: Target*): Self = this.set("targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: Targets): Self = this.set("targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
+    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

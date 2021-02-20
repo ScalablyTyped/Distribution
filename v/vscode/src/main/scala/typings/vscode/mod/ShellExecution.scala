@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "ShellExecution")
 @js.native
-class ShellExecution protected () extends js.Object {
+class ShellExecution protected () extends StObject {
   /**
     * Creates a shell execution with a full command line.
     *

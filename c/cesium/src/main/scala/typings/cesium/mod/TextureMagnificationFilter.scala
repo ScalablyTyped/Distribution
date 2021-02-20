@@ -1,26 +1,24 @@
 package typings.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureMagnificationFilter extends js.Object
+sealed trait TextureMagnificationFilter extends StObject
 @JSImport("cesium", "TextureMagnificationFilter")
 @js.native
-object TextureMagnificationFilter extends js.Object {
+object TextureMagnificationFilter extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextureMagnificationFilter with Double] = js.native
   
   @js.native
   sealed trait LINEAR extends TextureMagnificationFilter
-  /* 0 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
+  /* 0 */ val LINEAR: typings.cesium.mod.TextureMagnificationFilter.LINEAR with Double = js.native
   
   @js.native
   sealed trait NEAREST extends TextureMagnificationFilter
-  /* 1 */ @js.native
-  object NEAREST extends TopLevel[NEAREST with Double]
+  /* 1 */ val NEAREST: typings.cesium.mod.TextureMagnificationFilter.NEAREST with Double = js.native
 }

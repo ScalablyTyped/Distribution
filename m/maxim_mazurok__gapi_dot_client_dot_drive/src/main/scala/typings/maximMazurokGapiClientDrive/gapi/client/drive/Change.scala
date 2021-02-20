@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Change extends js.Object {
+trait Change extends StObject {
   
   /** The type of the change. Possible values are file and drive. */
   var changeType: js.UndefOr[String] = js.native
@@ -49,84 +50,72 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeOps[Self <: Change] (val x: Self) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrive(value: Drive): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: String): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setDriveId(value: String): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChangeType: Self = this.set("changeType", js.undefined)
+    def setDriveIdUndefined: Self = StObject.set(x, "driveId", js.undefined)
     
     @scala.inline
-    def setDrive(value: Drive): Self = this.set("drive", value.asInstanceOf[js.Any])
+    def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     @scala.inline
-    def deleteDrive: Self = this.set("drive", js.undefined)
+    def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveId(value: String): Self = this.set("driveId", value.asInstanceOf[js.Any])
+    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDriveId: Self = this.set("driveId", js.undefined)
+    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
     @scala.inline
-    def setFile(value: File): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFileId: Self = this.set("fileId", js.undefined)
+    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setTeamDrive(value: TeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoved(value: Boolean): Self = this.set("removed", value.asInstanceOf[js.Any])
+    def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoved: Self = this.set("removed", js.undefined)
+    def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
     
     @scala.inline
-    def setTeamDrive(value: TeamDrive): Self = this.set("teamDrive", value.asInstanceOf[js.Any])
+    def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
     
     @scala.inline
-    def deleteTeamDrive: Self = this.set("teamDrive", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeamDriveId(value: String): Self = this.set("teamDriveId", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteTeamDriveId: Self = this.set("teamDriveId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

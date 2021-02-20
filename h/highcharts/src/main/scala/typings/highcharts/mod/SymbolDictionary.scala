@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,54 +31,42 @@ object SymbolDictionary {
   }
   
   @scala.inline
-  implicit class SymbolDictionaryOps[Self <: SymbolDictionary] (val x: Self) extends AnyVal {
+  implicit class SymbolDictionaryMutableBuilder[Self <: SymbolDictionary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArc(value: js.Function): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallout(value: js.Function): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArc(value: js.Function): Self = this.set("arc", value.asInstanceOf[js.Any])
+    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
     @scala.inline
-    def deleteArc: Self = this.set("arc", js.undefined)
+    def setCircle(value: js.Function): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallout(value: js.Function): Self = this.set("callout", value.asInstanceOf[js.Any])
+    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
     @scala.inline
-    def deleteCallout: Self = this.set("callout", js.undefined)
+    def setDiamond(value: js.Function): Self = StObject.set(x, "diamond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: js.Function): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setDiamondUndefined: Self = StObject.set(x, "diamond", js.undefined)
     
     @scala.inline
-    def deleteCircle: Self = this.set("circle", js.undefined)
+    def setSquare(value: js.Function): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiamond(value: js.Function): Self = this.set("diamond", value.asInstanceOf[js.Any])
+    def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
     
     @scala.inline
-    def deleteDiamond: Self = this.set("diamond", js.undefined)
+    def setTriangle(value: js.Function): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSquare(value: js.Function): Self = this.set("square", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSquare: Self = this.set("square", js.undefined)
-    
-    @scala.inline
-    def setTriangle(value: js.Function): Self = this.set("triangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriangle: Self = this.set("triangle", js.undefined)
+    def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
   }
 }

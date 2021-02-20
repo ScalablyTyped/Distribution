@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings that relate to the ASPxClientUploadControl.ValidationErrorOccurred client event.
   */
 @js.native
-trait ASPxClientUploadControlValidationSettings extends js.Object {
+trait ASPxClientUploadControlValidationSettings extends StObject {
   
   /**
     * Gets the allowed file extensions.
@@ -44,36 +45,24 @@ object ASPxClientUploadControlValidationSettings {
   }
   
   @scala.inline
-  implicit class ASPxClientUploadControlValidationSettingsOps[Self <: ASPxClientUploadControlValidationSettings] (val x: Self) extends AnyVal {
+  implicit class ASPxClientUploadControlValidationSettingsMutableBuilder[Self <: ASPxClientUploadControlValidationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidFileNameCharacters(value: js.Array[String]): Self = StObject.set(x, "invalidFileNameCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedFileExtensionsVarargs(value: String*): Self = this.set("allowedFileExtensions", js.Array(value :_*))
+    def setInvalidFileNameCharactersVarargs(value: String*): Self = StObject.set(x, "invalidFileNameCharacters", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedFileExtensions(value: js.Array[String]): Self = this.set("allowedFileExtensions", value.asInstanceOf[js.Any])
+    def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidFileNameCharactersVarargs(value: String*): Self = this.set("invalidFileNameCharacters", js.Array(value :_*))
-    
-    @scala.inline
-    def setInvalidFileNameCharacters(value: js.Array[String]): Self = this.set("invalidFileNameCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxFileCount(value: Double): Self = this.set("maxFileCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
+    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
   }
 }

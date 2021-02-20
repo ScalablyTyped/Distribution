@@ -3,6 +3,7 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
 import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
 import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
   - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
 */
-trait OSNotificationPermission extends js.Object
+trait OSNotificationPermission extends StObject
 object OSNotificationPermission {
   
   @scala.inline

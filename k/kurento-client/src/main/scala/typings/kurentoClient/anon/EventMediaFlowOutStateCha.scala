@@ -4,13 +4,14 @@ import typings.kurentoClient.kurentoClientStrings.MediaFlowOutStateChange
 import typings.kurentoClient.mod.MediaFlowState
 import typings.kurentoClient.mod.MediaType
 import typings.kurentoClient.mod.Tag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'MediaFlowOutStateChange', {  state :kurento-client.kurento-client.MediaFlowState,   mediaType :kurento-client.kurento-client.MediaType,   padName :string}> */
 @js.native
-trait EventMediaFlowOutStateCha extends js.Object {
+trait EventMediaFlowOutStateCha extends StObject {
   
   var mediaType: MediaType = js.native
   
@@ -47,45 +48,33 @@ object EventMediaFlowOutStateCha {
   }
   
   @scala.inline
-  implicit class EventMediaFlowOutStateChaOps[Self <: EventMediaFlowOutStateCha] (val x: Self) extends AnyVal {
+  implicit class EventMediaFlowOutStateChaMutableBuilder[Self <: EventMediaFlowOutStateCha] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPadName(value: String): Self = StObject.set(x, "padName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: MediaType): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setState(value: MediaFlowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadName(value: String): Self = this.set("padName", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setState(value: MediaFlowState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestampMillis(value: String): Self = this.set("timestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MediaFlowOutStateChange): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MediaFlowOutStateChange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

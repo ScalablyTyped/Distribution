@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,33 +93,21 @@ object GetReference {
   }
   
   @scala.inline
-  implicit class GetReferenceOps[Self <: GetReference] (val x: Self) extends AnyVal {
+  implicit class GetReferenceMutableBuilder[Self <: GetReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReferenceFieldPart(value: Double): Self = StObject.set(x, "ReferenceFieldPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferenceFieldSource(value: Double): Self = StObject.set(x, "ReferenceFieldSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPresentation(value: String): Self = this.set("CurrentPresentation", value.asInstanceOf[js.Any])
+    def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceFieldPart(value: Double): Self = this.set("ReferenceFieldPart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceFieldSource(value: Double): Self = this.set("ReferenceFieldSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceNumber(value: Double): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceName(value: String): Self = this.set("SourceName", value.asInstanceOf[js.Any])
+    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertySelectorType extends js.Object
+sealed trait PropertySelectorType extends StObject
 @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "PropertySelectorType")
 @js.native
-object PropertySelectorType extends js.Object {
+object PropertySelectorType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PropertySelectorType with Double] = js.native
   
   @js.native
   sealed trait Exclusion extends PropertySelectorType
-  /* 1 */ @js.native
-  object Exclusion extends TopLevel[Exclusion with Double]
+  /* 1 */ val Exclusion: typings.vsoNodeApi.releaseInterfacesMod.PropertySelectorType.Exclusion with Double = js.native
   
   @js.native
   sealed trait Inclusion extends PropertySelectorType
-  /* 0 */ @js.native
-  object Inclusion extends TopLevel[Inclusion with Double]
+  /* 0 */ val Inclusion: typings.vsoNodeApi.releaseInterfacesMod.PropertySelectorType.Inclusion with Double = js.native
 }

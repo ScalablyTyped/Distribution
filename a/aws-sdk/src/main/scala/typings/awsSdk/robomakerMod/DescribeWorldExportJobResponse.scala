@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorldExportJobResponse extends js.Object {
+trait DescribeWorldExportJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the world export job.
@@ -63,81 +64,69 @@ object DescribeWorldExportJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeWorldExportJobResponseOps[Self <: DescribeWorldExportJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeWorldExportJobResponseMutableBuilder[Self <: DescribeWorldExportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setFailureCode(value: WorldExportJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: WorldExportJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setIamRole(value: IamRole): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRole(value: IamRole): Self = this.set("iamRole", value.asInstanceOf[js.Any])
+    def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
     
     @scala.inline
-    def deleteIamRole: Self = this.set("iamRole", js.undefined)
+    def setStatus(value: WorldExportJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputLocation(value: OutputLocation): Self = this.set("outputLocation", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteOutputLocation: Self = this.set("outputLocation", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: WorldExportJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setWorlds(value: Arns): Self = StObject.set(x, "worlds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setWorldsUndefined: Self = StObject.set(x, "worlds", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setWorldsVarargs(value: Arn*): Self = this.set("worlds", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorlds(value: Arns): Self = this.set("worlds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorlds: Self = this.set("worlds", js.undefined)
+    def setWorldsVarargs(value: Arn*): Self = StObject.set(x, "worlds", js.Array(value :_*))
   }
 }

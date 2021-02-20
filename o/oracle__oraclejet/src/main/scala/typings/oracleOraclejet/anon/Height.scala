@@ -3,12 +3,13 @@ package typings.oracleOraclejet.anon
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.HeaderContext
 import typings.oracleOraclejet.oracleOraclejetStrings.disable
 import typings.oracleOraclejet.oracleOraclejetStrings.enable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Height[K, D] extends js.Object {
+trait Height[K, D] extends StObject {
   
   var height: enable | disable = js.native
   
@@ -23,33 +24,21 @@ object Height {
   }
   
   @scala.inline
-  implicit class HeightOps[Self <: Height[_, _], K, D] (val x: Self with (Height[K, D])) extends AnyVal {
+  implicit class HeightMutableBuilder[Self <: Height[_, _], K, D] (val x: Self with (Height[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: enable | disable): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWidth(value: (js.Function1[/* context */ HeaderContext[K, D], String]) | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidthFunction1(value: /* context */ HeaderContext[K, D] => String): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: enable | disable): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setWidthNull: Self = StObject.set(x, "width", null)
     
     @scala.inline
-    def setWidthFunction1(value: /* context */ HeaderContext[K, D] => String): Self = this.set("width", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWidth(value: (js.Function1[/* context */ HeaderContext[K, D], String]) | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

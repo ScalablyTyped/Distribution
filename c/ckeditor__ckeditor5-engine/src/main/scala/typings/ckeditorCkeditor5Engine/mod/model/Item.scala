@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ckeditorCkeditor5Engine.mod.model.Node
   - typings.ckeditorCkeditor5Engine.mod.model.TextProxy
 */
-trait Item extends js.Object
+trait Item extends StObject

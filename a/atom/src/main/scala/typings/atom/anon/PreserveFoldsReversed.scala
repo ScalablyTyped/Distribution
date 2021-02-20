@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreserveFoldsReversed extends js.Object {
+trait PreserveFoldsReversed extends StObject {
   
   var autoscroll: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object PreserveFoldsReversed {
   }
   
   @scala.inline
-  implicit class PreserveFoldsReversedOps[Self <: PreserveFoldsReversed] (val x: Self) extends AnyVal {
+  implicit class PreserveFoldsReversedMutableBuilder[Self <: PreserveFoldsReversed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscrollUndefined: Self = StObject.set(x, "autoscroll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreserveFolds(value: Boolean): Self = StObject.set(x, "preserveFolds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscroll(value: Boolean): Self = this.set("autoscroll", value.asInstanceOf[js.Any])
+    def setPreserveFoldsUndefined: Self = StObject.set(x, "preserveFolds", js.undefined)
     
     @scala.inline
-    def deleteAutoscroll: Self = this.set("autoscroll", js.undefined)
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveFolds(value: Boolean): Self = this.set("preserveFolds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveFolds: Self = this.set("preserveFolds", js.undefined)
-    
-    @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReversed: Self = this.set("reversed", js.undefined)
+    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

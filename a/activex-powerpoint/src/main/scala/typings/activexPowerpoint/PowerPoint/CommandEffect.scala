@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandEffect extends js.Object {
+trait CommandEffect extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -37,36 +38,24 @@ object CommandEffect {
   }
   
   @scala.inline
-  implicit class CommandEffectOps[Self <: CommandEffect] (val x: Self) extends AnyVal {
+  implicit class CommandEffectMutableBuilder[Self <: CommandEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setPowerPointDotCommandEffect_typekey(value: CommandEffect): Self = StObject.set(x, "PowerPoint.CommandEffect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotCommandEffect_typekey(value: CommandEffect): Self = this.set("PowerPoint.CommandEffect_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MsoAnimCommandType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBookmark(value: String): Self = this.set("bookmark", value.asInstanceOf[js.Any])
+    def setType(value: MsoAnimCommandType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

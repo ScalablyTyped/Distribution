@@ -1,5 +1,6 @@
 package typings.stripe.mod.charges
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.stripeStrings.card
   - typings.stripe.stripeStrings.stripe_account
 */
-trait IPaymentMethodType extends js.Object
+trait IPaymentMethodType extends StObject
 object IPaymentMethodType {
   
   @scala.inline

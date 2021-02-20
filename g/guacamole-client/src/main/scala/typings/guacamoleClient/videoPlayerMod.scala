@@ -4,16 +4,16 @@ import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.guacamoleClient.visibleLayerMod.VisibleLayer
 import typings.std.MimeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/VideoPlayer", JSImport.Namespace)
-@js.native
-object videoPlayerMod extends js.Object {
+object videoPlayerMod {
   
+  @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer")
   @js.native
-  class VideoPlayer () extends js.Object {
+  class VideoPlayer () extends StObject {
     
     /**
       * Notifies this Guacamole.VideoPlayer that all video up to the current
@@ -24,8 +24,7 @@ object videoPlayerMod extends js.Object {
     def sync(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object VideoPlayer extends js.Object {
+  object VideoPlayer {
     
     /**
       * Returns an instance of Guacamole.VideoPlayer providing support for the given
@@ -41,6 +40,8 @@ object videoPlayerMod extends js.Object {
       * reading from the given stream, or null if support for the given mimetype
       * is absent.
       */
+    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer.getInstance")
+    @js.native
     def getInstance(stream: InputStream, layer: VisibleLayer, mimetype: MimeType): VideoPlayer | Null = js.native
     
     /**
@@ -52,6 +53,8 @@ object videoPlayerMod extends js.Object {
       * @returns A list of all mimetypes supported by any built-in Guacamole.VideoPlayer,
       * excluding any parameters.
       */
+    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer.getSupportedTypes")
+    @js.native
     def getSupportedTypes(): js.Array[Mimetype] = js.native
     
     /**
@@ -61,6 +64,8 @@ object videoPlayerMod extends js.Object {
       * @param mimetype The mimetype to check.
       * @returns true if the given mimetype is supported by any built-in Guacamole.VideoPlayer, false otherwise.
       */
+    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer.isSupportedType")
+    @js.native
     def isSupportedType(mimetype: MimeType): Boolean = js.native
   }
 }

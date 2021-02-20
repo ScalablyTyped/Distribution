@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDiscovererRequest extends js.Object {
+trait CreateDiscovererRequest extends StObject {
   
   /**
     * A description for the discoverer.
@@ -31,33 +32,21 @@ object CreateDiscovererRequest {
   }
   
   @scala.inline
-  implicit class CreateDiscovererRequestOps[Self <: CreateDiscovererRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDiscovererRequestMutableBuilder[Self <: CreateDiscovererRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceArn(value: stringMin20Max1600): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: stringMin20Max1600): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: stringMin0Max256): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

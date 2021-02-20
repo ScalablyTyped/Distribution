@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Engines/depthTextureCreationOptions", JSImport.Namespace)
-@js.native
-object depthTextureCreationOptionsMod extends js.Object {
+object depthTextureCreationOptionsMod {
   
+  @JSImport("babylonjs/Engines/depthTextureCreationOptions", "DepthTextureCreationOptions")
   @js.native
-  class DepthTextureCreationOptions () extends js.Object {
+  class DepthTextureCreationOptions () extends StObject {
     
     /** Specifies whether or not bilinear filtering is enable on the texture */
     var bilinearFiltering: js.UndefOr[Boolean] = js.native

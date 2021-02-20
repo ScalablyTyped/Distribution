@@ -2,14 +2,14 @@ package typings.nodegit
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodegit.oidMod.Oid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/blame-options", JSImport.Namespace)
-@js.native
-object blameOptionsMod extends js.Object {
+object blameOptionsMod {
   
+  @JSImport("nodegit/blame-options", "BlameOptions")
   @js.native
   class BlameOptions ()
     extends /* key */ StringDictionary[js.Any] {

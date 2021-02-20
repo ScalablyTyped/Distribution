@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvalidStep extends js.Object {
+trait InvalidStep extends StObject {
   
   var invalidStep: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object InvalidStep {
   }
   
   @scala.inline
-  implicit class InvalidStepOps[Self <: InvalidStep] (val x: Self) extends AnyVal {
+  implicit class InvalidStepMutableBuilder[Self <: InvalidStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidStep(value: String): Self = StObject.set(x, "invalidStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidStepUndefined: Self = StObject.set(x, "invalidStep", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxMin(value: String): Self = StObject.set(x, "maxMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidStep(value: String): Self = this.set("invalidStep", value.asInstanceOf[js.Any])
+    def setMaxMinUndefined: Self = StObject.set(x, "maxMin", js.undefined)
     
     @scala.inline
-    def deleteInvalidStep: Self = this.set("invalidStep", js.undefined)
+    def setNoValue(value: String): Self = StObject.set(x, "noValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMin(value: String): Self = this.set("maxMin", value.asInstanceOf[js.Any])
+    def setNoValueUndefined: Self = StObject.set(x, "noValue", js.undefined)
     
     @scala.inline
-    def deleteMaxMin: Self = this.set("maxMin", js.undefined)
+    def setOptionNum(value: String): Self = StObject.set(x, "optionNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoValue(value: String): Self = this.set("noValue", value.asInstanceOf[js.Any])
+    def setOptionNumUndefined: Self = StObject.set(x, "optionNum", js.undefined)
     
     @scala.inline
-    def deleteNoValue: Self = this.set("noValue", js.undefined)
+    def setValueRange(value: String): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionNum(value: String): Self = this.set("optionNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionNum: Self = this.set("optionNum", js.undefined)
-    
-    @scala.inline
-    def setValueRange(value: String): Self = this.set("valueRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueRange: Self = this.set("valueRange", js.undefined)
+    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
   }
 }

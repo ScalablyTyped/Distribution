@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRealtimeEndpointOutput extends js.Object {
+trait DeleteRealtimeEndpointOutput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the MLModel. This value should be identical to the value of the MLModelId in the request.
@@ -26,30 +27,18 @@ object DeleteRealtimeEndpointOutput {
   }
   
   @scala.inline
-  implicit class DeleteRealtimeEndpointOutputOps[Self <: DeleteRealtimeEndpointOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteRealtimeEndpointOutputMutableBuilder[Self <: DeleteRealtimeEndpointOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRealtimeEndpointInfo(value: RealtimeEndpointInfo): Self = StObject.set(x, "RealtimeEndpointInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMLModelId: Self = this.set("MLModelId", js.undefined)
-    
-    @scala.inline
-    def setRealtimeEndpointInfo(value: RealtimeEndpointInfo): Self = this.set("RealtimeEndpointInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealtimeEndpointInfo: Self = this.set("RealtimeEndpointInfo", js.undefined)
+    def setRealtimeEndpointInfoUndefined: Self = StObject.set(x, "RealtimeEndpointInfo", js.undefined)
   }
 }

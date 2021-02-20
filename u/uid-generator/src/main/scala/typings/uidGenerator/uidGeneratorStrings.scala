@@ -1,50 +1,44 @@
 package typings.uidGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uidGeneratorStrings {
   
+  @js.native
+  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ` extends StObject
   @scala.inline
   def `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ` = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".asInstanceOf[`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`]
   
+  @js.native
+  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz` extends StObject
   @scala.inline
   def `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz` = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".asInstanceOf[`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`]
   
+  @js.native
+  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde` extends StObject
   @scala.inline
   def `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde`: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde` = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-._~".asInstanceOf[`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde`]
   
+  @js.native
+  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde` extends StObject
   @scala.inline
   def `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde`: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde` = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!'()*-._~".asInstanceOf[`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde`]
   
+  @js.native
+  sealed trait `0123456789abcdef` extends StObject
   @scala.inline
   def `0123456789abcdef`: `0123456789abcdef` = "0123456789abcdef".asInstanceOf[`0123456789abcdef`]
   
+  @js.native
+  sealed trait `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` extends StObject
   @scala.inline
   def `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`: `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz".asInstanceOf[`123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`]
   
+  @js.native
+  sealed trait `ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde` extends StObject
   @scala.inline
   def `ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde`: `ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde` = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~".asInstanceOf[`ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde`]
-  
-  @js.native
-  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ` extends js.Object
-  
-  @js.native
-  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz` extends js.Object
-  
-  @js.native
-  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde` extends js.Object
-  
-  @js.native
-  sealed trait `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde` extends js.Object
-  
-  @js.native
-  sealed trait `0123456789abcdef` extends js.Object
-  
-  @js.native
-  sealed trait `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` extends js.Object
-  
-  @js.native
-  sealed trait `ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde` extends js.Object
 }

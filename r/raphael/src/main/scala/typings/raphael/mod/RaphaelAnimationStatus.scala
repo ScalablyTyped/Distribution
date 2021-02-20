@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelAnimationStatus extends js.Object {
+trait RaphaelAnimationStatus extends StObject {
   
   /** The animation to which the status applies. */
   var anim: RaphaelAnimation = js.native
@@ -22,24 +23,12 @@ object RaphaelAnimationStatus {
   }
   
   @scala.inline
-  implicit class RaphaelAnimationStatusOps[Self <: RaphaelAnimationStatus] (val x: Self) extends AnyVal {
+  implicit class RaphaelAnimationStatusMutableBuilder[Self <: RaphaelAnimationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnim(value: RaphaelAnimation): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnim(value: RaphaelAnimation): Self = this.set("anim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

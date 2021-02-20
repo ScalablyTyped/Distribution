@@ -1,12 +1,13 @@
 package typings.antDesignReactNative.anon
 
 import typings.reactNative.mod.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionTextActiveOpacity extends js.Object {
+trait ActionTextActiveOpacity extends StObject {
   
   var WrapComponent: View = js.native
   
@@ -48,48 +49,36 @@ object ActionTextActiveOpacity {
   }
   
   @scala.inline
-  implicit class ActionTextActiveOpacityOps[Self <: ActionTextActiveOpacity] (val x: Self) extends AnyVal {
+  implicit class ActionTextActiveOpacityMutableBuilder[Self <: ActionTextActiveOpacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapComponent(value: View): Self = this.set("WrapComponent", value.asInstanceOf[js.Any])
+    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionTextActiveOpacity(value: Double): Self = this.set("actionTextActiveOpacity", value.asInstanceOf[js.Any])
+    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActionTextUnderlayColor(value: String): Self = this.set("actionTextUnderlayColor", value.asInstanceOf[js.Any])
+    def setOnOk(value: js.Any => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDismissText(value: String): Self = this.set("dismissText", value.asInstanceOf[js.Any])
+    def setOnVisibleChange(value: js.Any => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOkText(value: String): Self = this.set("okText", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOk(value: js.Any => Unit): Self = this.set("onOk", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnVisibleChange(value: js.Any => Unit): Self = this.set("onVisibleChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerType(value: String): Self = this.set("triggerType", value.asInstanceOf[js.Any])
+    def setWrapComponent(value: View): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
   }
 }

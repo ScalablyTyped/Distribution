@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tab extends js.Object {
+trait Tab extends StObject {
   
   /** Whether the tab is active in its window. (Does not necessarily mean the window is focused.) */
   var active: Boolean = js.native
@@ -112,165 +113,153 @@ object Tab {
   }
   
   @scala.inline
-  implicit class TabOps[Self <: Tab] (val x: Self) extends AnyVal {
+  implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttentionUndefined: Self = StObject.set(x, "attention", js.undefined)
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlighted(value: Boolean): Self = this.set("highlighted", value.asInstanceOf[js.Any])
+    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
     @scala.inline
-    def setIncognito(value: Boolean): Self = this.set("incognito", value.asInstanceOf[js.Any])
+    def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
     
     @scala.inline
-    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttention(value: Boolean): Self = this.set("attention", value.asInstanceOf[js.Any])
+    def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
     
     @scala.inline
-    def deleteAttention: Self = this.set("attention", js.undefined)
+    def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudible(value: Boolean): Self = this.set("audible", value.asInstanceOf[js.Any])
+    def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
     
     @scala.inline
-    def deleteAudible: Self = this.set("audible", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieStoreId(value: String): Self = this.set("cookieStoreId", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCookieStoreId: Self = this.set("cookieStoreId", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscarded(value: Boolean): Self = this.set("discarded", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteDiscarded: Self = this.set("discarded", js.undefined)
+    def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavIconUrl(value: String): Self = this.set("favIconUrl", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFavIconUrl: Self = this.set("favIconUrl", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIsArticle(value: Boolean): Self = StObject.set(x, "isArticle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setIsArticleUndefined: Self = StObject.set(x, "isArticle", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsInReaderMode(value: Boolean): Self = StObject.set(x, "isInReaderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsInReaderModeUndefined: Self = StObject.set(x, "isInReaderMode", js.undefined)
     
     @scala.inline
-    def setIsArticle(value: Boolean): Self = this.set("isArticle", value.asInstanceOf[js.Any])
+    def setLastAccessed(value: Double): Self = StObject.set(x, "lastAccessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsArticle: Self = this.set("isArticle", js.undefined)
+    def setLastAccessedUndefined: Self = StObject.set(x, "lastAccessed", js.undefined)
     
     @scala.inline
-    def setIsInReaderMode(value: Boolean): Self = this.set("isInReaderMode", value.asInstanceOf[js.Any])
+    def setMutedInfo(value: MutedInfo): Self = StObject.set(x, "mutedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsInReaderMode: Self = this.set("isInReaderMode", js.undefined)
+    def setMutedInfoUndefined: Self = StObject.set(x, "mutedInfo", js.undefined)
     
     @scala.inline
-    def setLastAccessed(value: Double): Self = this.set("lastAccessed", value.asInstanceOf[js.Any])
+    def setOpenerTabId(value: Double): Self = StObject.set(x, "openerTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastAccessed: Self = this.set("lastAccessed", js.undefined)
+    def setOpenerTabIdUndefined: Self = StObject.set(x, "openerTabId", js.undefined)
     
     @scala.inline
-    def setMutedInfo(value: MutedInfo): Self = this.set("mutedInfo", value.asInstanceOf[js.Any])
+    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMutedInfo: Self = this.set("mutedInfo", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenerTabId(value: Double): Self = this.set("openerTabId", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteOpenerTabId: Self = this.set("openerTabId", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSharingState(value: SharingState): Self = StObject.set(x, "sharingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSharingStateUndefined: Self = StObject.set(x, "sharingState", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingState(value: SharingState): Self = this.set("sharingState", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSharingState: Self = this.set("sharingState", js.undefined)
+    def setSuccessorTabId(value: Double): Self = StObject.set(x, "successorTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSuccessorTabIdUndefined: Self = StObject.set(x, "successorTabId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessorTabId(value: Double): Self = this.set("successorTabId", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSuccessorTabId: Self = this.set("successorTabId", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWindowId(value: Double): Self = this.set("windowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("windowId", js.undefined)
+    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
   }
 }

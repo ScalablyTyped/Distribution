@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Double")
 @js.native
-class Double protected () extends js.Object {
+class Double protected () extends StObject {
   /**
     * A Double Attribute.
     * @param name The logical name of the attribute.

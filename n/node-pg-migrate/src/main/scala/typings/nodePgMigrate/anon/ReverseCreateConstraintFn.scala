@@ -3,12 +3,13 @@ package typings.nodePgMigrate.anon
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.tablesTypesMod.ConstraintOptions
 import typings.nodePgMigrate.tablesTypesMod.CreateConstraintFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateConstraintFn extends js.Object {
+trait ReverseCreateConstraintFn extends StObject {
   
   def reverse(
     tableName: typings.nodePgMigrate.generalTypesMod.Name,

@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object SurfaceMouseleaveEvent {
   }
   
   @scala.inline
-  implicit class SurfaceMouseleaveEventOps[Self <: SurfaceMouseleaveEvent] (val x: Self) extends AnyVal {
+  implicit class SurfaceMouseleaveEventMutableBuilder[Self <: SurfaceMouseleaveEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: Element): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
-    
-    @scala.inline
-    def setOriginalEvent(value: js.Any): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
+    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }
 }

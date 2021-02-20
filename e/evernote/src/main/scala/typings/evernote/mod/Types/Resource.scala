@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.AlternateData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.Resource")
 @js.native
-class Resource () extends js.Object {
+class Resource () extends StObject {
   def this(args: AlternateData) = this()
   
   var active: js.UndefOr[Boolean] = js.native

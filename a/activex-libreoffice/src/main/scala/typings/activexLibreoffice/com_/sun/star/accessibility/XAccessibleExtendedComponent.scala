@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.awt.XFont
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,36 +101,24 @@ object XAccessibleExtendedComponent {
   }
   
   @scala.inline
-  implicit class XAccessibleExtendedComponentOps[Self <: XAccessibleExtendedComponent] (val x: Self) extends AnyVal {
+  implicit class XAccessibleExtendedComponentMutableBuilder[Self <: XAccessibleExtendedComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFont(value: XFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFont(value: () => XFont): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTitledBorderText(value: () => String): Self = StObject.set(x, "getTitledBorderText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFont(value: XFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setGetToolTipText(value: () => String): Self = StObject.set(x, "getToolTipText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTitledBorderText(value: String): Self = this.set("TitledBorderText", value.asInstanceOf[js.Any])
+    def setTitledBorderText(value: String): Self = StObject.set(x, "TitledBorderText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolTipText(value: String): Self = this.set("ToolTipText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetFont(value: () => XFont): Self = this.set("getFont", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTitledBorderText(value: () => String): Self = this.set("getTitledBorderText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetToolTipText(value: () => String): Self = this.set("getToolTipText", js.Any.fromFunction0(value))
+    def setToolTipText(value: String): Self = StObject.set(x, "ToolTipText", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.miniprogram
 
 import typings.miniprogram.anon.Success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,111 +112,99 @@ object AddPhoneContactArgs {
   }
   
   @scala.inline
-  implicit class AddPhoneContactArgsOps[Self <: AddPhoneContactArgs] (val x: Self) extends AnyVal {
+  implicit class AddPhoneContactArgsMutableBuilder[Self <: AddPhoneContactArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressCity(value: String): Self = StObject.set(x, "addressCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressCountry(value: String): Self = StObject.set(x, "addressCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressPostalCode(value: String): Self = StObject.set(x, "addressPostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressCity(value: String): Self = this.set("addressCity", value.asInstanceOf[js.Any])
+    def setAddressState(value: String): Self = StObject.set(x, "addressState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressCountry(value: String): Self = this.set("addressCountry", value.asInstanceOf[js.Any])
+    def setAddressStreet(value: String): Self = StObject.set(x, "addressStreet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressPostalCode(value: String): Self = this.set("addressPostalCode", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressState(value: String): Self = this.set("addressState", value.asInstanceOf[js.Any])
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressStreet(value: String): Self = this.set("addressStreet", value.asInstanceOf[js.Any])
+    def setHomeAddressCity(value: String): Self = StObject.set(x, "homeAddressCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setHomeAddressCountry(value: String): Self = StObject.set(x, "homeAddressCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    def setHomeAddressPostalCode(value: String): Self = StObject.set(x, "homeAddressPostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeAddressCity(value: String): Self = this.set("homeAddressCity", value.asInstanceOf[js.Any])
+    def setHomeAddressState(value: String): Self = StObject.set(x, "homeAddressState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeAddressCountry(value: String): Self = this.set("homeAddressCountry", value.asInstanceOf[js.Any])
+    def setHomeAddressStreet(value: String): Self = StObject.set(x, "homeAddressStreet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeAddressPostalCode(value: String): Self = this.set("homeAddressPostalCode", value.asInstanceOf[js.Any])
+    def setHomeFaxNumber(value: String): Self = StObject.set(x, "homeFaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeAddressState(value: String): Self = this.set("homeAddressState", value.asInstanceOf[js.Any])
+    def setHomePhoneNumber(value: String): Self = StObject.set(x, "homePhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeAddressStreet(value: String): Self = this.set("homeAddressStreet", value.asInstanceOf[js.Any])
+    def setHostNumber(value: String): Self = StObject.set(x, "hostNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeFaxNumber(value: String): Self = this.set("homeFaxNumber", value.asInstanceOf[js.Any])
+    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomePhoneNumber(value: String): Self = this.set("homePhoneNumber", value.asInstanceOf[js.Any])
+    def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostNumber(value: String): Self = this.set("hostNumber", value.asInstanceOf[js.Any])
+    def setMobilePhoneNumber(value: String): Self = StObject.set(x, "mobilePhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    def setNickName(value: String): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
+    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobilePhoneNumber(value: String): Self = this.set("mobilePhoneNumber", value.asInstanceOf[js.Any])
+    def setPhotoFilePath(value: String): Self = StObject.set(x, "photoFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickName(value: String): Self = this.set("nickName", value.asInstanceOf[js.Any])
+    def setRemark(value: String): Self = StObject.set(x, "remark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoFilePath(value: String): Self = this.set("photoFilePath", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemark(value: String): Self = this.set("remark", value.asInstanceOf[js.Any])
+    def setWorkAddressCity(value: String): Self = StObject.set(x, "workAddressCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setWorkAddressCountry(value: String): Self = StObject.set(x, "workAddressCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWorkAddressPostalCode(value: String): Self = StObject.set(x, "workAddressPostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkAddressCity(value: String): Self = this.set("workAddressCity", value.asInstanceOf[js.Any])
+    def setWorkAddressState(value: String): Self = StObject.set(x, "workAddressState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkAddressCountry(value: String): Self = this.set("workAddressCountry", value.asInstanceOf[js.Any])
+    def setWorkAddressStreet(value: String): Self = StObject.set(x, "workAddressStreet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkAddressPostalCode(value: String): Self = this.set("workAddressPostalCode", value.asInstanceOf[js.Any])
+    def setWorkFaxNumber(value: String): Self = StObject.set(x, "workFaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkAddressState(value: String): Self = this.set("workAddressState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkAddressStreet(value: String): Self = this.set("workAddressStreet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkFaxNumber(value: String): Self = this.set("workFaxNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkPhoneNumber(value: String): Self = this.set("workPhoneNumber", value.asInstanceOf[js.Any])
+    def setWorkPhoneNumber(value: String): Self = StObject.set(x, "workPhoneNumber", value.asInstanceOf[js.Any])
   }
 }

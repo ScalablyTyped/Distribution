@@ -1,11 +1,12 @@
 package typings.jsforce.metadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMetadataResult extends js.Object {
+trait DescribeMetadataResult extends StObject {
   
   var metadataObjects: js.Array[MetadataObject] = js.native
   
@@ -29,33 +30,21 @@ object DescribeMetadataResult {
   }
   
   @scala.inline
-  implicit class DescribeMetadataResultOps[Self <: DescribeMetadataResult] (val x: Self) extends AnyVal {
+  implicit class DescribeMetadataResultMutableBuilder[Self <: DescribeMetadataResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadataObjects(value: js.Array[MetadataObject]): Self = StObject.set(x, "metadataObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataObjectsVarargs(value: MetadataObject*): Self = StObject.set(x, "metadataObjects", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganizationNamespace(value: String): Self = StObject.set(x, "organizationNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataObjectsVarargs(value: MetadataObject*): Self = this.set("metadataObjects", js.Array(value :_*))
+    def setPartialSaveAllowed(value: Boolean): Self = StObject.set(x, "partialSaveAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataObjects(value: js.Array[MetadataObject]): Self = this.set("metadataObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganizationNamespace(value: String): Self = this.set("organizationNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartialSaveAllowed(value: Boolean): Self = this.set("partialSaveAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestRequired(value: Boolean): Self = this.set("testRequired", value.asInstanceOf[js.Any])
+    def setTestRequired(value: Boolean): Self = StObject.set(x, "testRequired", value.asInstanceOf[js.Any])
   }
 }

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task for performing media processing. */
 @js.native
-trait MediaProcessingTrigger extends js.Object {
+trait MediaProcessingTrigger extends StObject {
   
   /**
     * Triggers the background task and returns a MediaProcessingTriggerResult indicating success or failure of the trigger request.

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoxModel extends js.Object {
+trait BoxModel extends StObject {
   
   /**
     * Border box
@@ -52,54 +53,42 @@ object BoxModel {
   }
   
   @scala.inline
-  implicit class BoxModelOps[Self <: BoxModel] (val x: Self) extends AnyVal {
+  implicit class BoxModelMutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: Quad): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderVarargs(value: Double*): Self = StObject.set(x, "border", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: Quad): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderVarargs(value: Double*): Self = this.set("border", js.Array(value :_*))
+    def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setBorder(value: Quad): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVarargs(value: Double*): Self = this.set("content", js.Array(value :_*))
+    def setMargin(value: Quad): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Quad): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setHeight(value: integer): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPadding(value: Quad): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginVarargs(value: Double*): Self = this.set("margin", js.Array(value :_*))
+    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setMargin(value: Quad): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setShapeOutside(value: ShapeOutsideInfo): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
+    def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
     
     @scala.inline
-    def setPadding(value: Quad): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: integer): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShapeOutside(value: ShapeOutsideInfo): Self = this.set("shapeOutside", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapeOutside: Self = this.set("shapeOutside", js.undefined)
+    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

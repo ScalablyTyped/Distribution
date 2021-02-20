@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a location that may contain latitude and longitude data or venue data. */
 @js.native
-trait Geoposition extends js.Object {
+trait Geoposition extends StObject {
   
   /** Unsupported API. */
   var civicAddress: CivicAddress = js.native
@@ -26,27 +27,15 @@ object Geoposition {
   }
   
   @scala.inline
-  implicit class GeopositionOps[Self <: Geoposition] (val x: Self) extends AnyVal {
+  implicit class GeopositionMutableBuilder[Self <: Geoposition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCivicAddress(value: CivicAddress): Self = StObject.set(x, "civicAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinate(value: Geocoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCivicAddress(value: CivicAddress): Self = this.set("civicAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCoordinate(value: Geocoordinate): Self = this.set("coordinate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVenueData(value: VenueData): Self = this.set("venueData", value.asInstanceOf[js.Any])
+    def setVenueData(value: VenueData): Self = StObject.set(x, "venueData", value.asInstanceOf[js.Any])
   }
 }

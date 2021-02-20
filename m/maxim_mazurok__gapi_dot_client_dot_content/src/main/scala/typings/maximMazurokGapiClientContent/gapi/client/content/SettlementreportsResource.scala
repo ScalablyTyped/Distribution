@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientContent.anon.SettlementId
 import typings.maximMazurokGapiClientContent.anon.TransferEndDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettlementreportsResource extends js.Object {
+trait SettlementreportsResource extends StObject {
   
   /** Retrieves a settlement report from your Merchant Center account. */
   def get(): Request[SettlementReport] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EC2Specification extends js.Object {
+trait EC2Specification extends StObject {
   
   /**
     * Whether you want a recommendation for standard or convertible reservations.
@@ -21,24 +22,12 @@ object EC2Specification {
   }
   
   @scala.inline
-  implicit class EC2SpecificationOps[Self <: EC2Specification] (val x: Self) extends AnyVal {
+  implicit class EC2SpecificationMutableBuilder[Self <: EC2Specification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOfferingClass(value: OfferingClass): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOfferingClass(value: OfferingClass): Self = this.set("OfferingClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferingClass: Self = this.set("OfferingClass", js.undefined)
+    def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
   }
 }

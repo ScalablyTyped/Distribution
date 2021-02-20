@@ -1,5 +1,6 @@
 package typings.extjs.Ext.form
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object IRadioGroup {
   }
   
   @scala.inline
-  implicit class IRadioGroupOps[Self <: IRadioGroup] (val x: Self) extends AnyVal {
+  implicit class IRadioGroupMutableBuilder[Self <: IRadioGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckChange(value: () => Unit): Self = StObject.set(x, "checkChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => ICheckboxGroup): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckChange(value: () => Unit): Self = this.set("checkChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteCheckChange: Self = this.set("checkChange", js.undefined)
-    
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => ICheckboxGroup): Self = this.set("setValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }
 }

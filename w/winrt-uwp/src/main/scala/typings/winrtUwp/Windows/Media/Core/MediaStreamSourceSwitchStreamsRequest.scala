@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an object to be used by the MediaStreamSource.SwitchStreamsRequest event to provide information to the application. */
 @js.native
-trait MediaStreamSourceSwitchStreamsRequest extends js.Object {
+trait MediaStreamSourceSwitchStreamsRequest extends StObject {
   
   /**
     * Defers completing the MediaStreamSource.SwitchStreamsRequested event.
@@ -33,27 +34,15 @@ object MediaStreamSourceSwitchStreamsRequest {
   }
   
   @scala.inline
-  implicit class MediaStreamSourceSwitchStreamsRequestOps[Self <: MediaStreamSourceSwitchStreamsRequest] (val x: Self) extends AnyVal {
+  implicit class MediaStreamSourceSwitchStreamsRequestMutableBuilder[Self <: MediaStreamSourceSwitchStreamsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDeferral(value: () => MediaStreamSourceSwitchStreamsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "newStreamDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDeferral(value: () => MediaStreamSourceSwitchStreamsRequestDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNewStreamDescriptor(value: IMediaStreamDescriptor): Self = this.set("newStreamDescriptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldStreamDescriptor(value: IMediaStreamDescriptor): Self = this.set("oldStreamDescriptor", value.asInstanceOf[js.Any])
+    def setOldStreamDescriptor(value: IMediaStreamDescriptor): Self = StObject.set(x, "oldStreamDescriptor", value.asInstanceOf[js.Any])
   }
 }

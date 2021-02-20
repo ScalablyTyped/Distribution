@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,27 +56,15 @@ object XSingletonTypeDescription2 {
   }
   
   @scala.inline
-  implicit class XSingletonTypeDescription2Ops[Self <: XSingletonTypeDescription2] (val x: Self) extends AnyVal {
+  implicit class XSingletonTypeDescription2MutableBuilder[Self <: XSingletonTypeDescription2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterface(value: XTypeDescription): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInterface(value: XTypeDescription): Self = this.set("Interface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetInterface(value: () => XTypeDescription): Self = this.set("getInterface", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsInterfaceBased(value: () => Boolean): Self = this.set("isInterfaceBased", js.Any.fromFunction0(value))
+    def setIsInterfaceBased(value: () => Boolean): Self = StObject.set(x, "isInterfaceBased", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartActivityStreamRequest extends js.Object {
+trait StartActivityStreamRequest extends StObject {
   
   /**
     * Specifies whether or not the database activity stream is to start as soon as possible, regardless of the maintenance window for the database.
@@ -36,33 +37,21 @@ object StartActivityStreamRequest {
   }
   
   @scala.inline
-  implicit class StartActivityStreamRequestOps[Self <: StartActivityStreamRequest] (val x: Self) extends AnyVal {
+  implicit class StartActivityStreamRequestMutableBuilder[Self <: StartActivityStreamRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyImmediately(value: BooleanOptional): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setMode(value: ActivityStreamMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ActivityStreamMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplyImmediately(value: BooleanOptional): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplyImmediately: Self = this.set("ApplyImmediately", js.undefined)
+    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.beans
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a pair of two strings. */
 @js.native
-trait StringPair extends js.Object {
+trait StringPair extends StObject {
   
   /** specifies the first of the two strings. */
   var First: String = js.native
@@ -23,24 +24,12 @@ object StringPair {
   }
   
   @scala.inline
-  implicit class StringPairOps[Self <: StringPair] (val x: Self) extends AnyVal {
+  implicit class StringPairMutableBuilder[Self <: StringPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst(value: String): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirst(value: String): Self = this.set("First", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond(value: String): Self = this.set("Second", value.asInstanceOf[js.Any])
+    def setSecond(value: String): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
   }
 }

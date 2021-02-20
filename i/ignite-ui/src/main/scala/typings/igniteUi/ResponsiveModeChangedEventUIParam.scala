@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveModeChangedEventUIParam extends js.Object {
+trait ResponsiveModeChangedEventUIParam extends StObject {
   
   /**
     * Gets the newly assumed mode.
@@ -31,36 +32,24 @@ object ResponsiveModeChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class ResponsiveModeChangedEventUIParamOps[Self <: ResponsiveModeChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ResponsiveModeChangedEventUIParamMutableBuilder[Self <: ResponsiveModeChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setPreviousMode(value: String): Self = StObject.set(x, "previousMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setPreviousMode(value: String): Self = this.set("previousMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousMode: Self = this.set("previousMode", js.undefined)
+    def setPreviousModeUndefined: Self = StObject.set(x, "previousMode", js.undefined)
   }
 }

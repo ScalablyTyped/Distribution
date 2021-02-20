@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dynamic Link event stat.
   */
 @js.native
-trait SchemaDynamicLinkEventStat extends js.Object {
+trait SchemaDynamicLinkEventStat extends StObject {
   
   /**
     * The number of times this event occurred.
@@ -34,36 +35,24 @@ object SchemaDynamicLinkEventStat {
   }
   
   @scala.inline
-  implicit class SchemaDynamicLinkEventStatOps[Self <: SchemaDynamicLinkEventStat] (val x: Self) extends AnyVal {
+  implicit class SchemaDynamicLinkEventStatMutableBuilder[Self <: SchemaDynamicLinkEventStat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
-    
-    @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

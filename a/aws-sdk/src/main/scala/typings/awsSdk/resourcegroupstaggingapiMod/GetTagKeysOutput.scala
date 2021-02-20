@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTagKeysOutput extends js.Object {
+trait GetTagKeysOutput extends StObject {
   
   /**
     * A string that indicates that the response contains more data than can be returned in a single response. To receive additional data, specify this string for the PaginationToken value in a subsequent request.
@@ -26,33 +27,21 @@ object GetTagKeysOutput {
   }
   
   @scala.inline
-  implicit class GetTagKeysOutputOps[Self <: GetTagKeysOutput] (val x: Self) extends AnyVal {
+  implicit class GetTagKeysOutputMutableBuilder[Self <: GetTagKeysOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
     @scala.inline
-    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
-    
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = this.set("TagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = this.set("TagKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagKeys: Self = this.set("TagKeys", js.undefined)
+    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "JsonObject")
 @js.native
-class JsonObject () extends js.Object {
+class JsonObject () extends StObject {
   
   var errors: js.Array[JsonError] = js.native
   
@@ -28,9 +29,9 @@ class JsonObject () extends js.Object {
   /* protected */ def valueToObj(value: js.Any, obj: js.Any, property: JsonObjectProperty): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "JsonObject")
-@js.native
-object JsonObject extends js.Object {
+object JsonObject {
   
+  @JSImport("survey-knockout", "JsonObject.metaData")
+  @js.native
   val metaData: JsonMetadata = js.native
 }

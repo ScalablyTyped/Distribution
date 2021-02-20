@@ -1,11 +1,12 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICompiledExpression extends js.Object {
+trait ICompiledExpression extends StObject {
   
   def apply(context: js.Any): js.Any = js.native
   def apply(context: js.Any, locals: js.Any): js.Any = js.native

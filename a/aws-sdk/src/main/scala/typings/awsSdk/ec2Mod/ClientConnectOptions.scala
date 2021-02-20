@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConnectOptions extends js.Object {
+trait ClientConnectOptions extends StObject {
   
   /**
     * Indicates whether client connect options are enabled. The default is false (not enabled).
@@ -26,30 +27,18 @@ object ClientConnectOptions {
   }
   
   @scala.inline
-  implicit class ClientConnectOptionsOps[Self <: ClientConnectOptions] (val x: Self) extends AnyVal {
+  implicit class ClientConnectOptionsMutableBuilder[Self <: ClientConnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
-    
-    @scala.inline
-    def setLambdaFunctionArn(value: String): Self = this.set("LambdaFunctionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambdaFunctionArn: Self = this.set("LambdaFunctionArn", js.undefined)
+    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
   }
 }

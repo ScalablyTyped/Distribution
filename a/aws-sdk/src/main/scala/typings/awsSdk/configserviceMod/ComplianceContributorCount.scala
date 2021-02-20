@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceContributorCount extends js.Object {
+trait ComplianceContributorCount extends StObject {
   
   /**
     * Indicates whether the maximum count is reached.
@@ -26,30 +27,18 @@ object ComplianceContributorCount {
   }
   
   @scala.inline
-  implicit class ComplianceContributorCountOps[Self <: ComplianceContributorCount] (val x: Self) extends AnyVal {
+  implicit class ComplianceContributorCountMutableBuilder[Self <: ComplianceContributorCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapExceeded(value: Boolean): Self = StObject.set(x, "CapExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapExceededUndefined: Self = StObject.set(x, "CapExceeded", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCappedCount(value: Integer): Self = StObject.set(x, "CappedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapExceeded(value: Boolean): Self = this.set("CapExceeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapExceeded: Self = this.set("CapExceeded", js.undefined)
-    
-    @scala.inline
-    def setCappedCount(value: Integer): Self = this.set("CappedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCappedCount: Self = this.set("CappedCount", js.undefined)
+    def setCappedCountUndefined: Self = StObject.set(x, "CappedCount", js.undefined)
   }
 }

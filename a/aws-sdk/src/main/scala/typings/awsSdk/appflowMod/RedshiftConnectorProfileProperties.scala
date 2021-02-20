@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftConnectorProfileProperties extends js.Object {
+trait RedshiftConnectorProfileProperties extends StObject {
   
   /**
     *  A name for the associated Amazon S3 bucket. 
@@ -36,33 +37,21 @@ object RedshiftConnectorProfileProperties {
   }
   
   @scala.inline
-  implicit class RedshiftConnectorProfilePropertiesOps[Self <: RedshiftConnectorProfileProperties] (val x: Self) extends AnyVal {
+  implicit class RedshiftConnectorProfilePropertiesMutableBuilder[Self <: RedshiftConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
     @scala.inline
-    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setDatabaseUrl(value: DatabaseUrl): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseUrl(value: DatabaseUrl): Self = this.set("databaseUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

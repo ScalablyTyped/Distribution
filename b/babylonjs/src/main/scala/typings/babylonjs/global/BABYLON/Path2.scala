@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class Path2 protected ()
   def this(x: Double, y: Double) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Path2")
-@js.native
-object Path2 extends js.Object {
+object Path2 {
   
   /**
     * Creates a new path starting from an x and y position
@@ -26,5 +25,7 @@ object Path2 extends js.Object {
     * @param y starting y value
     * @returns a new Path2 starting at the coordinates (x, y).
     */
+  @JSGlobal("BABYLON.Path2.StartingAt")
+  @js.native
   def StartingAt(x: Double, y: Double): typings.babylonjs.BABYLON.Path2 = js.native
 }

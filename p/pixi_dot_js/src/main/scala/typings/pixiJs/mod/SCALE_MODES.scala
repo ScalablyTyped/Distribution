@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("pixi.js", "SCALE_MODES")
 @js.native
-object SCALE_MODES extends js.Object {
+object SCALE_MODES extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.SCALE_MODES with Double] = js.native

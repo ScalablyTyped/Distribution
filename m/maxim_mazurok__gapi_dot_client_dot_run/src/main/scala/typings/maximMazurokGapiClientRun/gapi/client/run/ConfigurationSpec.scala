@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationSpec extends js.Object {
+trait ConfigurationSpec extends StObject {
   
   /** Template holds the latest specification for the Revision to be stamped out. */
   var template: js.UndefOr[RevisionTemplate] = js.native
@@ -19,24 +20,12 @@ object ConfigurationSpec {
   }
   
   @scala.inline
-  implicit class ConfigurationSpecOps[Self <: ConfigurationSpec] (val x: Self) extends AnyVal {
+  implicit class ConfigurationSpecMutableBuilder[Self <: ConfigurationSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTemplate(value: RevisionTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTemplate(value: RevisionTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

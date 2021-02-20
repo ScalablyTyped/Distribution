@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionSignaturePayloadTaggedTransaction extends js.Object {
+trait TransactionSignaturePayloadTaggedTransaction extends StObject {
   
   def feeBump(): FeeBumpTransaction = js.native
   def feeBump(value: FeeBumpTransaction): FeeBumpTransaction = js.native

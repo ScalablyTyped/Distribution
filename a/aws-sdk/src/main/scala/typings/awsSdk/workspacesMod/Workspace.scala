@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Workspace extends js.Object {
+trait Workspace extends StObject {
   
   /**
     * The identifier of the bundle used to create the WorkSpace.
@@ -91,111 +92,99 @@ object Workspace {
   }
   
   @scala.inline
-  implicit class WorkspaceOps[Self <: Workspace] (val x: Self) extends AnyVal {
+  implicit class WorkspaceMutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    def setComputerNameUndefined: Self = StObject.set(x, "ComputerName", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputerName(value: ComputerName): Self = this.set("ComputerName", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteComputerName: Self = this.set("ComputerName", js.undefined)
+    def setErrorCode(value: WorkspaceErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setErrorMessage(value: Description): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: WorkspaceErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: Description): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setModificationStates(value: ModificationStateList): Self = StObject.set(x, "ModificationStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: IpAddress): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    def setModificationStatesUndefined: Self = StObject.set(x, "ModificationStates", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    def setModificationStatesVarargs(value: ModificationState*): Self = StObject.set(x, "ModificationStates", js.Array(value :_*))
     
     @scala.inline
-    def setModificationStatesVarargs(value: ModificationState*): Self = this.set("ModificationStates", js.Array(value :_*))
+    def setRootVolumeEncryptionEnabled(value: BooleanObject): Self = StObject.set(x, "RootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModificationStates(value: ModificationStateList): Self = this.set("ModificationStates", value.asInstanceOf[js.Any])
+    def setRootVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "RootVolumeEncryptionEnabled", js.undefined)
     
     @scala.inline
-    def deleteModificationStates: Self = this.set("ModificationStates", js.undefined)
+    def setState(value: WorkspaceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootVolumeEncryptionEnabled(value: BooleanObject): Self = this.set("RootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteRootVolumeEncryptionEnabled: Self = this.set("RootVolumeEncryptionEnabled", js.undefined)
+    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: WorkspaceState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setUserVolumeEncryptionEnabled(value: BooleanObject): Self = StObject.set(x, "UserVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "UserVolumeEncryptionEnabled", js.undefined)
     
     @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setVolumeEncryptionKey(value: VolumeEncryptionKey): Self = StObject.set(x, "VolumeEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserVolumeEncryptionEnabled(value: BooleanObject): Self = this.set("UserVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+    def setVolumeEncryptionKeyUndefined: Self = StObject.set(x, "VolumeEncryptionKey", js.undefined)
     
     @scala.inline
-    def deleteUserVolumeEncryptionEnabled: Self = this.set("UserVolumeEncryptionEnabled", js.undefined)
+    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeEncryptionKey(value: VolumeEncryptionKey): Self = this.set("VolumeEncryptionKey", value.asInstanceOf[js.Any])
+    def setWorkspaceIdUndefined: Self = StObject.set(x, "WorkspaceId", js.undefined)
     
     @scala.inline
-    def deleteVolumeEncryptionKey: Self = this.set("VolumeEncryptionKey", js.undefined)
+    def setWorkspaceProperties(value: WorkspaceProperties): Self = StObject.set(x, "WorkspaceProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = this.set("WorkspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceId: Self = this.set("WorkspaceId", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceProperties(value: WorkspaceProperties): Self = this.set("WorkspaceProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceProperties: Self = this.set("WorkspaceProperties", js.undefined)
+    def setWorkspacePropertiesUndefined: Self = StObject.set(x, "WorkspaceProperties", js.undefined)
   }
 }

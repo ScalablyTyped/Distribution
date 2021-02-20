@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartParallelAxesLabelsLevelsOptions extends js.Object {
+trait ChartParallelAxesLabelsLevelsOptions extends StObject {
   
   /**
     * (Gantt) Specify the level which the options within this object applies
@@ -24,30 +25,18 @@ object ChartParallelAxesLabelsLevelsOptions {
   }
   
   @scala.inline
-  implicit class ChartParallelAxesLabelsLevelsOptionsOps[Self <: ChartParallelAxesLabelsLevelsOptions] (val x: Self) extends AnyVal {
+  implicit class ChartParallelAxesLabelsLevelsOptionsMutableBuilder[Self <: ChartParallelAxesLabelsLevelsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

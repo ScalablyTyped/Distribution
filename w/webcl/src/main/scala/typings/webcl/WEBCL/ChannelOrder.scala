@@ -13,6 +13,7 @@ import typings.webcl.webclNumbers.`0x10B9`
 import typings.webcl.webclNumbers.`0x10BA`
 import typings.webcl.webclNumbers.`0x10BB`
 import typings.webcl.webclNumbers.`0x10BC`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x10BB`
   - typings.webcl.webclNumbers.`0x10BC`
 */
-trait ChannelOrder extends js.Object
+trait ChannelOrder extends StObject
 object ChannelOrder {
   
   @scala.inline

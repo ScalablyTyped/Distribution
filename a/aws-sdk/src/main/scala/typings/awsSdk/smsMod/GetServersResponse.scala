@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServersResponse extends js.Object {
+trait GetServersResponse extends StObject {
   
   /**
     * The time when the server was last modified.
@@ -36,45 +37,33 @@ object GetServersResponse {
   }
   
   @scala.inline
-  implicit class GetServersResponseOps[Self <: GetServersResponse] (val x: Self) extends AnyVal {
+  implicit class GetServersResponseMutableBuilder[Self <: GetServersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastModifiedOnUndefined: Self = StObject.set(x, "lastModifiedOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedOn(value: Timestamp): Self = this.set("lastModifiedOn", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedOn: Self = this.set("lastModifiedOn", js.undefined)
+    def setServerCatalogStatus(value: ServerCatalogStatus): Self = StObject.set(x, "serverCatalogStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setServerCatalogStatusUndefined: Self = StObject.set(x, "serverCatalogStatus", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setServerList(value: ServerList): Self = StObject.set(x, "serverList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCatalogStatus(value: ServerCatalogStatus): Self = this.set("serverCatalogStatus", value.asInstanceOf[js.Any])
+    def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
     
     @scala.inline
-    def deleteServerCatalogStatus: Self = this.set("serverCatalogStatus", js.undefined)
-    
-    @scala.inline
-    def setServerListVarargs(value: Server*): Self = this.set("serverList", js.Array(value :_*))
-    
-    @scala.inline
-    def setServerList(value: ServerList): Self = this.set("serverList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerList: Self = this.set("serverList", js.undefined)
+    def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
   }
 }

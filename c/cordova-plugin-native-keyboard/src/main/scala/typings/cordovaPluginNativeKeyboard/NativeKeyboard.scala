@@ -1,11 +1,12 @@
 package typings.cordovaPluginNativeKeyboard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeKeyboard extends js.Object {
+trait NativeKeyboard extends StObject {
   
   /**
     * It's likely your app only has 1 one page where you want to show the messenger,

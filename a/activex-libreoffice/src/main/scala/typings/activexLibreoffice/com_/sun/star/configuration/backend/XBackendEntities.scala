@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,36 +85,24 @@ object XBackendEntities {
   }
   
   @scala.inline
-  implicit class XBackendEntitiesOps[Self <: XBackendEntities] (val x: Self) extends AnyVal {
+  implicit class XBackendEntitiesMutableBuilder[Self <: XBackendEntities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminEntity(value: String): Self = StObject.set(x, "AdminEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAdminEntity(value: () => String): Self = StObject.set(x, "getAdminEntity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOwnerEntity(value: () => String): Self = StObject.set(x, "getOwnerEntity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdminEntity(value: String): Self = this.set("AdminEntity", value.asInstanceOf[js.Any])
+    def setIsEqualEntity(value: (String, String) => Boolean): Self = StObject.set(x, "isEqualEntity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOwnerEntity(value: String): Self = this.set("OwnerEntity", value.asInstanceOf[js.Any])
+    def setOwnerEntity(value: String): Self = StObject.set(x, "OwnerEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAdminEntity(value: () => String): Self = this.set("getAdminEntity", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOwnerEntity(value: () => String): Self = this.set("getOwnerEntity", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsEqualEntity(value: (String, String) => Boolean): Self = this.set("isEqualEntity", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSupportsEntity(value: String => Boolean): Self = this.set("supportsEntity", js.Any.fromFunction1(value))
+    def setSupportsEntity(value: String => Boolean): Self = StObject.set(x, "supportsEntity", js.Any.fromFunction1(value))
   }
 }

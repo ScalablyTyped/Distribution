@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationControlOptions extends js.Object {
+trait NavigationControlOptions extends StObject {
   
   var anchor: js.UndefOr[ControlAnchor] = js.native
   
@@ -26,48 +27,36 @@ object NavigationControlOptions {
   }
   
   @scala.inline
-  implicit class NavigationControlOptionsOps[Self <: NavigationControlOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationControlOptionsMutableBuilder[Self <: NavigationControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableGeolocation(value: Boolean): Self = StObject.set(x, "enableGeolocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: ControlAnchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setEnableGeolocationUndefined: Self = StObject.set(x, "enableGeolocation", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableGeolocation(value: Boolean): Self = this.set("enableGeolocation", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteEnableGeolocation: Self = this.set("enableGeolocation", js.undefined)
+    def setShowZoomInfo(value: Boolean): Self = StObject.set(x, "showZoomInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Size): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setShowZoomInfoUndefined: Self = StObject.set(x, "showZoomInfo", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setType(value: NavigationControlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowZoomInfo(value: Boolean): Self = this.set("showZoomInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowZoomInfo: Self = this.set("showZoomInfo", js.undefined)
-    
-    @scala.inline
-    def setType(value: NavigationControlType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

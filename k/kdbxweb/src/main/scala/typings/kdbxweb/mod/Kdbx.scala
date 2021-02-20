@@ -3,13 +3,14 @@ package typings.kdbxweb.mod
 import typings.std.ArrayBuffer
 import typings.std.Date
 import typings.std.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Kdbx")
 @js.native
-class Kdbx () extends js.Object {
+class Kdbx () extends StObject {
   
   def addDeletedObject(uuid: KdbxUuid, dt: Date): Unit = js.native
   
@@ -67,13 +68,17 @@ class Kdbx () extends js.Object {
   var xml: Document = js.native
 }
 /* static members */
-@JSImport("kdbxweb", "Kdbx")
-@js.native
-object Kdbx extends js.Object {
+object Kdbx {
   
+  @JSImport("kdbxweb", "Kdbx.create")
+  @js.native
   def create(credentials: Credentials, name: String): Kdbx = js.native
   
+  @JSImport("kdbxweb", "Kdbx.load")
+  @js.native
   def load(data: ArrayBuffer, credentials: Credentials): js.Promise[Kdbx] = js.native
   
+  @JSImport("kdbxweb", "Kdbx.loadXml")
+  @js.native
   def loadXml(data: String, credentials: Credentials): js.Promise[Kdbx] = js.native
 }

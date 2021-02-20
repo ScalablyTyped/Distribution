@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactWriteItem extends js.Object {
+trait TransactWriteItem extends StObject {
   
   /**
     * A request to perform a check item operation.
@@ -36,42 +37,30 @@ object TransactWriteItem {
   }
   
   @scala.inline
-  implicit class TransactWriteItemOps[Self <: TransactWriteItem] (val x: Self) extends AnyVal {
+  implicit class TransactWriteItemMutableBuilder[Self <: TransactWriteItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionCheck(value: ConditionCheck): Self = StObject.set(x, "ConditionCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionCheckUndefined: Self = StObject.set(x, "ConditionCheck", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: Delete): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionCheck(value: ConditionCheck): Self = this.set("ConditionCheck", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
     
     @scala.inline
-    def deleteConditionCheck: Self = this.set("ConditionCheck", js.undefined)
+    def setPut(value: Put): Self = StObject.set(x, "Put", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Delete): Self = this.set("Delete", value.asInstanceOf[js.Any])
+    def setPutUndefined: Self = StObject.set(x, "Put", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("Delete", js.undefined)
+    def setUpdate(value: Update): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPut(value: Put): Self = this.set("Put", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePut: Self = this.set("Put", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: Update): Self = this.set("Update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("Update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
   }
 }

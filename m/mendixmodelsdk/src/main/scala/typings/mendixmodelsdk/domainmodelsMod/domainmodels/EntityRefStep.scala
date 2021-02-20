@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,16 +42,20 @@ class EntityRefStep protected () extends Element[IModel] {
   
   def destinationEntity_=(newValue: IEntity): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityRefStep")
-@js.native
-object EntityRefStep extends js.Object {
+object EntityRefStep {
+  
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityRefStep")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new EntityRefStep instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityRefStep.create")
+  @js.native
   def create(model: IModel): EntityRefStep = js.native
   
   /**
@@ -61,9 +66,22 @@ object EntityRefStep extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityRefStep.createIn")
+  @js.native
   def createIn(container: IndirectEntityRef): EntityRefStep = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityRefStep.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityRefStep.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

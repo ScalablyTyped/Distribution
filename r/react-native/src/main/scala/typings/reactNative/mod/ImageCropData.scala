@@ -5,12 +5,13 @@ import typings.reactNative.anon.X
 import typings.reactNative.reactNativeStrings.contain
 import typings.reactNative.reactNativeStrings.cover
 import typings.reactNative.reactNativeStrings.stretch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageCropData extends js.Object {
+trait ImageCropData extends StObject {
   
   /**
     * (Optional) size to scale the cropped image to.
@@ -44,36 +45,24 @@ object ImageCropData {
   }
   
   @scala.inline
-  implicit class ImageCropDataOps[Self <: ImageCropData] (val x: Self) extends AnyVal {
+  implicit class ImageCropDataMutableBuilder[Self <: ImageCropData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplaySize(value: Height): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplaySizeUndefined: Self = StObject.set(x, "displaySize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: X): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: X): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setResizeMode(value: contain | cover | stretch): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Height): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
     
     @scala.inline
-    def setDisplaySize(value: Height): Self = this.set("displaySize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplaySize: Self = this.set("displaySize", js.undefined)
-    
-    @scala.inline
-    def setResizeMode(value: contain | cover | stretch): Self = this.set("resizeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeMode: Self = this.set("resizeMode", js.undefined)
+    def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

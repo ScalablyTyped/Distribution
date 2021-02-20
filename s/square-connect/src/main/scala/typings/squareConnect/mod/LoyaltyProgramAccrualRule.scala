@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyProgramAccrualRule")
 @js.native
-class LoyaltyProgramAccrualRule () extends js.Object {
+class LoyaltyProgramAccrualRule () extends StObject {
   
   /**
     * The type of the accrual rule that defines how buyers can earn points.

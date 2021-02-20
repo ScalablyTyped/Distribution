@@ -1,12 +1,13 @@
 package typings.typeorm.typingsMod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerOptions extends js.Object {
+trait ServerOptions extends StObject {
   
   /**
     * Ensure we check server identify during SSL, set to false to disable checking. Only works for Node 0.12.x or higher. You can pass in a boolean or your own checkServerIdentity override function.
@@ -72,87 +73,75 @@ object ServerOptions {
   }
   
   @scala.inline
-  implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckServerIdentity(value: Boolean | js.Function): Self = StObject.set(x, "checkServerIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoolSize(value: scala.Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckServerIdentity(value: Boolean | js.Function): Self = this.set("checkServerIdentity", value.asInstanceOf[js.Any])
+    def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
     
     @scala.inline
-    def deleteCheckServerIdentity: Self = this.set("checkServerIdentity", js.undefined)
+    def setReconnectInterval(value: scala.Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolSize(value: scala.Double): Self = this.set("poolSize", value.asInstanceOf[js.Any])
+    def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
     
     @scala.inline
-    def deletePoolSize: Self = this.set("poolSize", js.undefined)
+    def setReconnectTries(value: scala.Double): Self = StObject.set(x, "reconnectTries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReconnectInterval(value: scala.Double): Self = this.set("reconnectInterval", value.asInstanceOf[js.Any])
+    def setReconnectTriesUndefined: Self = StObject.set(x, "reconnectTries", js.undefined)
     
     @scala.inline
-    def deleteReconnectInterval: Self = this.set("reconnectInterval", js.undefined)
+    def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReconnectTries(value: scala.Double): Self = this.set("reconnectTries", value.asInstanceOf[js.Any])
+    def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
     
     @scala.inline
-    def deleteReconnectTries: Self = this.set("reconnectTries", js.undefined)
+    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketOptions(value: SocketOptions): Self = this.set("socketOptions", value.asInstanceOf[js.Any])
+    def setSslCA(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSocketOptions: Self = this.set("socketOptions", js.undefined)
+    def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
     
     @scala.inline
-    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    def setSslCAVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCA", js.Array(value :_*))
     
     @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setSslCert(value: Buffer | String): Self = StObject.set(x, "sslCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCAVarargs(value: (Buffer | String)*): Self = this.set("sslCA", js.Array(value :_*))
+    def setSslCertUndefined: Self = StObject.set(x, "sslCert", js.undefined)
     
     @scala.inline
-    def setSslCA(value: js.Array[Buffer | String]): Self = this.set("sslCA", value.asInstanceOf[js.Any])
+    def setSslKey(value: Buffer | String): Self = StObject.set(x, "sslKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSslCA: Self = this.set("sslCA", js.undefined)
+    def setSslKeyUndefined: Self = StObject.set(x, "sslKey", js.undefined)
     
     @scala.inline
-    def setSslCert(value: Buffer | String): Self = this.set("sslCert", value.asInstanceOf[js.Any])
+    def setSslPass(value: Buffer | String): Self = StObject.set(x, "sslPass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSslCert: Self = this.set("sslCert", js.undefined)
+    def setSslPassUndefined: Self = StObject.set(x, "sslPass", js.undefined)
     
     @scala.inline
-    def setSslKey(value: Buffer | String): Self = this.set("sslKey", value.asInstanceOf[js.Any])
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def deleteSslKey: Self = this.set("sslKey", js.undefined)
+    def setSslValidate(value: js.Object): Self = StObject.set(x, "sslValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslPass(value: Buffer | String): Self = this.set("sslPass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslPass: Self = this.set("sslPass", js.undefined)
-    
-    @scala.inline
-    def setSslValidate(value: js.Object): Self = this.set("sslValidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslValidate: Self = this.set("sslValidate", js.undefined)
+    def setSslValidateUndefined: Self = StObject.set(x, "sslValidate", js.undefined)
   }
 }

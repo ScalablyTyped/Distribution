@@ -3,6 +3,7 @@ package typings.activexShdocvw.SHDocVw
 import typings.activexShdocvw.activexShdocvwNumbers.`0`
 import typings.activexShdocvw.activexShdocvwNumbers.`1`
 import typings.activexShdocvw.activexShdocvwNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShdocvw.activexShdocvwNumbers.`1`
   - typings.activexShdocvw.activexShdocvwNumbers.`3`
 */
-trait RefreshConstants extends js.Object
+trait RefreshConstants extends StObject
 object RefreshConstants {
   
   @scala.inline

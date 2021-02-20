@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventQueue extends js.Object {
+trait EventQueue extends StObject {
   
   var animState: AnimationState = js.native
   
@@ -53,57 +54,45 @@ object EventQueue {
   }
   
   @scala.inline
-  implicit class EventQueueOps[Self <: EventQueue] (val x: Self) extends AnyVal {
+  implicit class EventQueueMutableBuilder[Self <: EventQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimState(value: AnimationState): Self = StObject.set(x, "animState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimState(value: AnimationState): Self = this.set("animState", value.asInstanceOf[js.Any])
+    def setDeprecateStuff(value: () => Boolean): Self = StObject.set(x, "deprecateStuff", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setDispose(value: TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: TrackEntry => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setDrain(value: () => Unit): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeprecateStuff(value: () => Boolean): Self = this.set("deprecateStuff", js.Any.fromFunction0(value))
+    def setDrainDisabled(value: Boolean): Self = StObject.set(x, "drainDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: TrackEntry => Unit): Self = this.set("dispose", js.Any.fromFunction1(value))
+    def setEnd(value: TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrain(value: () => Unit): Self = this.set("drain", js.Any.fromFunction0(value))
+    def setEvent(value: (TrackEntry, Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDrainDisabled(value: Boolean): Self = this.set("drainDisabled", value.asInstanceOf[js.Any])
+    def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnd(value: TrackEntry => Unit): Self = this.set("end", js.Any.fromFunction1(value))
+    def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: (TrackEntry, Event) => Unit): Self = this.set("event", js.Any.fromFunction2(value))
+    def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
     @scala.inline
-    def setInterrupt(value: TrackEntry => Unit): Self = this.set("interrupt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setObjectsVarargs(value: js.Any*): Self = this.set("objects", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjects(value: js.Array[_]): Self = this.set("objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: TrackEntry => Unit): Self = this.set("start", js.Any.fromFunction1(value))
+    def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

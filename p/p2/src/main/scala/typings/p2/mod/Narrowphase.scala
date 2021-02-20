@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Narrowphase")
 @js.native
-class Narrowphase () extends js.Object {
+class Narrowphase () extends StObject {
   
   def bodiesOverlap(bodyA: Body, bodyB: Body): Boolean = js.native
   def bodiesOverlap(bodyA: Body, bodyB: Body, checkCollisionMasks: Boolean): Boolean = js.native

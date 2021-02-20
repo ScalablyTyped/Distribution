@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoLocation extends js.Object {
+trait GeoLocation extends StObject {
   
   /**
     * The latitude information of the remote IP address.
@@ -26,30 +27,18 @@ object GeoLocation {
   }
   
   @scala.inline
-  implicit class GeoLocationOps[Self <: GeoLocation] (val x: Self) extends AnyVal {
+  implicit class GeoLocationMutableBuilder[Self <: GeoLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLat(value: Double): Self = StObject.set(x, "Lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatUndefined: Self = StObject.set(x, "Lat", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLon(value: Double): Self = StObject.set(x, "Lon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: Double): Self = this.set("Lat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLat: Self = this.set("Lat", js.undefined)
-    
-    @scala.inline
-    def setLon(value: Double): Self = this.set("Lon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLon: Self = this.set("Lon", js.undefined)
+    def setLonUndefined: Self = StObject.set(x, "Lon", js.undefined)
   }
 }

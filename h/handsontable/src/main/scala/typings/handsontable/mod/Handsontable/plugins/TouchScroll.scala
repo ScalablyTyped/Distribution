@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,33 +43,21 @@ object TouchScroll {
   }
   
   @scala.inline
-  implicit class TouchScrollOps[Self <: TouchScroll] (val x: Self) extends AnyVal {
+  implicit class TouchScrollMutableBuilder[Self <: TouchScroll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClones(value: js.Array[_]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClonesVarargs(value: js.Any*): Self = StObject.set(x, "clones", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLockedCollection(value: Boolean): Self = StObject.set(x, "lockedCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClonesVarargs(value: js.Any*): Self = this.set("clones", js.Array(value :_*))
+    def setScrollbars(value: js.Array[_]): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClones(value: js.Array[_]): Self = this.set("clones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLockedCollection(value: Boolean): Self = this.set("lockedCollection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollbarsVarargs(value: js.Any*): Self = this.set("scrollbars", js.Array(value :_*))
-    
-    @scala.inline
-    def setScrollbars(value: js.Array[_]): Self = this.set("scrollbars", value.asInstanceOf[js.Any])
+    def setScrollbarsVarargs(value: js.Any*): Self = StObject.set(x, "scrollbars", js.Array(value :_*))
   }
 }

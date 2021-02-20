@@ -2,12 +2,13 @@ package typings.nano.mod
 
 import typings.nano.anon.Disable
 import typings.node.processMod.global.NodeJS.ReadStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseScope extends js.Object {
+trait DatabaseScope extends StObject {
   
   // http://docs.couchdb.org/en/latest/api/database/changes.html#get--db-_changes
   def changes(name: String): js.Promise[DatabaseChangesResponse] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateStackResult extends js.Object {
+trait UpdateStackResult extends StObject {
   
   /**
     * Information about the stack.
@@ -21,24 +22,12 @@ object UpdateStackResult {
   }
   
   @scala.inline
-  implicit class UpdateStackResultOps[Self <: UpdateStackResult] (val x: Self) extends AnyVal {
+  implicit class UpdateStackResultMutableBuilder[Self <: UpdateStackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStack(value: Stack): Self = StObject.set(x, "Stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStack(value: Stack): Self = this.set("Stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("Stack", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "Stack", js.undefined)
   }
 }

@@ -2,16 +2,13 @@ package typings.dynatable.JQueryDynatable
 
 import typings.dynatable.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dynatable extends js.Object {
-  
-  /** The `element` encapsulated inside a jQuery object */
-  @JSName("$element")
-  var $element: JQuery = js.native
+trait Dynatable extends StObject {
   
   /**
     * Initialize Dynatable plugin
@@ -20,6 +17,10 @@ trait Dynatable extends js.Object {
     */
   def apply(): JQuery = js.native
   def apply(options: Options): JQuery = js.native
+  
+  /** The `element` encapsulated inside a jQuery object */
+  @JSName("$element")
+  var $element: JQuery = js.native
   
   /** The `dom` API */
   var dom: DOM = js.native

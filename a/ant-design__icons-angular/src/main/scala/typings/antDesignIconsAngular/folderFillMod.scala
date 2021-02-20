@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/fill/FolderFill", JSImport.Namespace)
-@js.native
-object folderFillMod extends js.Object {
+object folderFillMod {
   
+  @JSImport("@ant-design/icons-angular/icons/fill/FolderFill", "FolderFill")
+  @js.native
   val FolderFill: IconDefinition = js.native
 }

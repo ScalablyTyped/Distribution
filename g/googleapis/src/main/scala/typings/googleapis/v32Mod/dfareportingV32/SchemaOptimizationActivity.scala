@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creative optimization activity.
   */
 @js.native
-trait SchemaOptimizationActivity extends js.Object {
+trait SchemaOptimizationActivity extends StObject {
   
   /**
     * Floodlight activity ID of this optimization activity. This is a required
@@ -38,36 +39,24 @@ object SchemaOptimizationActivity {
   }
   
   @scala.inline
-  implicit class SchemaOptimizationActivityOps[Self <: SchemaOptimizationActivity] (val x: Self) extends AnyVal {
+  implicit class SchemaOptimizationActivityMutableBuilder[Self <: SchemaOptimizationActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloodlightActivityIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "floodlightActivityIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloodlightActivityIdDimensionValueUndefined: Self = StObject.set(x, "floodlightActivityIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setFloodlightActivityId(value: String): Self = this.set("floodlightActivityId", value.asInstanceOf[js.Any])
+    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityId: Self = this.set("floodlightActivityId", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityIdDimensionValue(value: SchemaDimensionValue): Self = this.set("floodlightActivityIdDimensionValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloodlightActivityIdDimensionValue: Self = this.set("floodlightActivityIdDimensionValue", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

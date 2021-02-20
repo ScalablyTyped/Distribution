@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.KeyEvent
 import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,42 +154,30 @@ object XAcceleratorConfiguration {
   }
   
   @scala.inline
-  implicit class XAcceleratorConfigurationOps[Self <: XAcceleratorConfiguration] (val x: Self) extends AnyVal {
+  implicit class XAcceleratorConfigurationMutableBuilder[Self <: XAcceleratorConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllKeyEvents(value: SafeArray[KeyEvent]): Self = StObject.set(x, "AllKeyEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllKeyEvents(value: () => SafeArray[KeyEvent]): Self = StObject.set(x, "getAllKeyEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCommandByKeyEvent(value: KeyEvent => String): Self = StObject.set(x, "getCommandByKeyEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllKeyEvents(value: SafeArray[KeyEvent]): Self = this.set("AllKeyEvents", value.asInstanceOf[js.Any])
+    def setGetKeyEventsByCommand(value: String => SafeArray[KeyEvent]): Self = StObject.set(x, "getKeyEventsByCommand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllKeyEvents(value: () => SafeArray[KeyEvent]): Self = this.set("getAllKeyEvents", js.Any.fromFunction0(value))
+    def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[_]): Self = StObject.set(x, "getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCommandByKeyEvent(value: KeyEvent => String): Self = this.set("getCommandByKeyEvent", js.Any.fromFunction1(value))
+    def setRemoveCommandFromAllKeyEvents(value: String => Unit): Self = StObject.set(x, "removeCommandFromAllKeyEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetKeyEventsByCommand(value: String => SafeArray[KeyEvent]): Self = this.set("getKeyEventsByCommand", js.Any.fromFunction1(value))
+    def setRemoveKeyEvent(value: KeyEvent => Unit): Self = StObject.set(x, "removeKeyEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[_]): Self = this.set("getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveCommandFromAllKeyEvents(value: String => Unit): Self = this.set("removeCommandFromAllKeyEvents", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveKeyEvent(value: KeyEvent => Unit): Self = this.set("removeKeyEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetKeyEvent(value: (KeyEvent, String) => Unit): Self = this.set("setKeyEvent", js.Any.fromFunction2(value))
+    def setSetKeyEvent(value: (KeyEvent, String) => Unit): Self = StObject.set(x, "setKeyEvent", js.Any.fromFunction2(value))
   }
 }

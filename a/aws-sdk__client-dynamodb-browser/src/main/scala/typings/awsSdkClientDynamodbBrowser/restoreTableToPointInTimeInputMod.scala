@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/RestoreTableToPointInTimeInput", JSImport.Namespace)
-@js.native
-object restoreTableToPointInTimeInputMod extends js.Object {
+object restoreTableToPointInTimeInputMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/RestoreTableToPointInTimeInput", "RestoreTableToPointInTimeInput")
+  @js.native
   val RestoreTableToPointInTimeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

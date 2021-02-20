@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpCheck extends js.Object {
+trait HttpCheck extends StObject {
   
   /** The authentication information. Optional when creating an HTTP check; defaults to empty. */
   var authInfo: js.UndefOr[BasicAuthentication] = js.native
@@ -76,82 +77,70 @@ object HttpCheck {
   }
   
   @scala.inline
-  implicit class HttpCheckOps[Self <: HttpCheck] (val x: Self) extends AnyVal {
+  implicit class HttpCheckMutableBuilder[Self <: HttpCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthInfo(value: BasicAuthentication): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthInfo(value: BasicAuthentication): Self = this.set("authInfo", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteAuthInfo: Self = this.set("authInfo", js.undefined)
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
-    
-    @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck with TopLevel[js.Any]
-    ): Self = this.set("headers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setMaskHeaders(value: Boolean): Self = this.set("maskHeaders", value.asInstanceOf[js.Any])
+    def setMaskHeaders(value: Boolean): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskHeaders: Self = this.set("maskHeaders", js.undefined)
+    def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setRequestMethod(value: String): Self = this.set("requestMethod", value.asInstanceOf[js.Any])
+    def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestMethod: Self = this.set("requestMethod", js.undefined)
+    def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
     
     @scala.inline
-    def setUseSsl(value: Boolean): Self = this.set("useSsl", value.asInstanceOf[js.Any])
+    def setUseSsl(value: Boolean): Self = StObject.set(x, "useSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseSsl: Self = this.set("useSsl", js.undefined)
+    def setUseSslUndefined: Self = StObject.set(x, "useSsl", js.undefined)
     
     @scala.inline
-    def setValidateSsl(value: Boolean): Self = this.set("validateSsl", value.asInstanceOf[js.Any])
+    def setValidateSsl(value: Boolean): Self = StObject.set(x, "validateSsl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidateSsl: Self = this.set("validateSsl", js.undefined)
+    def setValidateSslUndefined: Self = StObject.set(x, "validateSsl", js.undefined)
   }
 }

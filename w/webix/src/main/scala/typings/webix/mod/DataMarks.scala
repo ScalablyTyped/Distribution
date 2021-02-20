@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataMarks extends js.Object {
+trait DataMarks extends StObject {
   
   def addCss(id: String, css: String): Unit = js.native
   def addCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -24,6 +24,3 @@ trait DataMarks extends js.Object {
   def removeCss(id: Double, css: String): Unit = js.native
   def removeCss(id: Double, css: String, silent: Boolean): Unit = js.native
 }
-@JSImport("webix", "DataMarks")
-@js.native
-object DataMarks extends TopLevel[DataMarks]

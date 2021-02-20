@@ -5,6 +5,7 @@ import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
 import typings.androiduix.android.widget.ListView.FixedViewInfo
 import typings.androiduix.java_.util.ArrayList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,51 +69,39 @@ object HeaderViewListAdapter {
   }
   
   @scala.inline
-  implicit class HeaderViewListAdapterOps[Self <: HeaderViewListAdapter] (val x: Self) extends AnyVal {
+  implicit class HeaderViewListAdapterMutableBuilder[Self <: HeaderViewListAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreAllListInfosSelectable(value: js.Any => js.Any): Self = StObject.set(x, "areAllListInfosSelectable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFilter(value: () => js.Any): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFootersCount(value: () => Double): Self = StObject.set(x, "getFootersCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAreAllListInfosSelectable(value: js.Any => js.Any): Self = this.set("areAllListInfosSelectable", js.Any.fromFunction1(value))
+    def setGetHeadersCount(value: () => Double): Self = StObject.set(x, "getHeadersCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilter(value: () => js.Any): Self = this.set("getFilter", js.Any.fromFunction0(value))
+    def setMAdapter(value: js.Any): Self = StObject.set(x, "mAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFootersCount(value: () => Double): Self = this.set("getFootersCount", js.Any.fromFunction0(value))
+    def setMAreAllFixedViewsSelectable(value: Boolean): Self = StObject.set(x, "mAreAllFixedViewsSelectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHeadersCount(value: () => Double): Self = this.set("getHeadersCount", js.Any.fromFunction0(value))
+    def setMFooterViewInfos(value: ArrayList[FixedViewInfo]): Self = StObject.set(x, "mFooterViewInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAdapter(value: js.Any): Self = this.set("mAdapter", value.asInstanceOf[js.Any])
+    def setMHeaderViewInfos(value: ArrayList[FixedViewInfo]): Self = StObject.set(x, "mHeaderViewInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAreAllFixedViewsSelectable(value: Boolean): Self = this.set("mAreAllFixedViewsSelectable", value.asInstanceOf[js.Any])
+    def setMIsFilterable(value: js.Any): Self = StObject.set(x, "mIsFilterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMFooterViewInfos(value: ArrayList[FixedViewInfo]): Self = this.set("mFooterViewInfos", value.asInstanceOf[js.Any])
+    def setRemoveFooter(value: View => Boolean): Self = StObject.set(x, "removeFooter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMHeaderViewInfos(value: ArrayList[FixedViewInfo]): Self = this.set("mHeaderViewInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMIsFilterable(value: js.Any): Self = this.set("mIsFilterable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveFooter(value: View => Boolean): Self = this.set("removeFooter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveHeader(value: View => Boolean): Self = this.set("removeHeader", js.Any.fromFunction1(value))
+    def setRemoveHeader(value: View => Boolean): Self = StObject.set(x, "removeHeader", js.Any.fromFunction1(value))
   }
 }

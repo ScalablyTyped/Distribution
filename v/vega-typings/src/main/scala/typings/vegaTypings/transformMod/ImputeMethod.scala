@@ -1,5 +1,6 @@
 package typings.vegaTypings.transformMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.min
   - typings.vegaTypings.vegaTypingsStrings.mean
 */
-trait ImputeMethod extends js.Object
+trait ImputeMethod extends StObject
 object ImputeMethod {
   
   @scala.inline

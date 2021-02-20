@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayersMixin extends js.Object {
+trait LayersMixin extends StObject {
   
   def add(layer: js.Promise[_]): Unit = js.native
   def add(layer: js.Promise[_], index: Double): Unit = js.native

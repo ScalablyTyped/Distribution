@@ -1,11 +1,12 @@
 package typings.knockoutPostbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutObservable[T] extends js.Object {
+trait KnockoutObservable[T] extends StObject {
   
   def publishOn(topic: String): KnockoutObservable[T] = js.native
   def publishOn(

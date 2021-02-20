@@ -1,6 +1,7 @@
 package typings.cannon.CANNON
 
 import typings.cannon.anon.Broadphaser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

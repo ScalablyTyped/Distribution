@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.completed
 import typings.winrtUwp.winrtUwpStrings.progress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a background task that has been registered with the system. */
 @js.native
-trait BackgroundTaskRegistration extends js.Object {
+trait BackgroundTaskRegistration extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

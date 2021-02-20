@@ -4,41 +4,16 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Touch
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/dragAndDrop/dragService", JSImport.Namespace)
-@js.native
-object dragServiceMod extends js.Object {
+object dragServiceMod {
   
+  @JSImport("ag-grid/dist/lib/dragAndDrop/dragService", "DragService")
   @js.native
-  trait DragListenerParams extends js.Object {
-    
-    /** After how many pixels of dragging should the drag operation start. Default is 4px. */
-    var dragStartPixels: js.UndefOr[Double] = js.native
-    
-    /** Dom element to add the drag handling to */
-    var eElement: HTMLElement = js.native
-    
-    /** Callback for drag starting */
-    def onDragStart(mouseEvent: MouseEvent): Unit = js.native
-    def onDragStart(mouseEvent: Touch): Unit = js.native
-    
-    /** Callback for drag stopping */
-    def onDragStop(mouseEvent: MouseEvent): Unit = js.native
-    def onDragStop(mouseEvent: Touch): Unit = js.native
-    
-    /** Callback for mouse move while dragging */
-    def onDragging(mouseEvent: MouseEvent): Unit = js.native
-    def onDragging(mouseEvent: Touch): Unit = js.native
-    
-    /** Some places may wish to ignore certain events, eg range selection ignores shift clicks */
-    var skipMouseEvent: js.UndefOr[js.Function1[/* mouseEvent */ MouseEvent, Boolean]] = js.native
-  }
-  
-  @js.native
-  class DragService () extends js.Object {
+  class DragService () extends StObject {
     
     def addDragSource(params: DragListenerParams): Unit = js.native
     def addDragSource(params: DragListenerParams, includeTouch: Boolean): Unit = js.native
@@ -109,5 +84,30 @@ object dragServiceMod extends js.Object {
     var touchLastTime: js.Any = js.native
     
     var touchStart: js.Any = js.native
+  }
+  
+  @js.native
+  trait DragListenerParams extends StObject {
+    
+    /** After how many pixels of dragging should the drag operation start. Default is 4px. */
+    var dragStartPixels: js.UndefOr[Double] = js.native
+    
+    /** Dom element to add the drag handling to */
+    var eElement: HTMLElement = js.native
+    
+    /** Callback for drag starting */
+    def onDragStart(mouseEvent: MouseEvent): Unit = js.native
+    def onDragStart(mouseEvent: Touch): Unit = js.native
+    
+    /** Callback for drag stopping */
+    def onDragStop(mouseEvent: MouseEvent): Unit = js.native
+    def onDragStop(mouseEvent: Touch): Unit = js.native
+    
+    /** Callback for mouse move while dragging */
+    def onDragging(mouseEvent: MouseEvent): Unit = js.native
+    def onDragging(mouseEvent: Touch): Unit = js.native
+    
+    /** Some places may wish to ignore certain events, eg range selection ignores shift clicks */
+    var skipMouseEvent: js.UndefOr[js.Function1[/* mouseEvent */ MouseEvent, Boolean]] = js.native
   }
 }

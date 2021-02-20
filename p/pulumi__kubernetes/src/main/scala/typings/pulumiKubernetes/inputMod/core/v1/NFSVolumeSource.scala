@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.
   */
 @js.native
-trait NFSVolumeSource extends js.Object {
+trait NFSVolumeSource extends StObject {
   
   /**
     * Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
@@ -35,30 +36,18 @@ object NFSVolumeSource {
   }
   
   @scala.inline
-  implicit class NFSVolumeSourceOps[Self <: NFSVolumeSource] (val x: Self) extends AnyVal {
+  implicit class NFSVolumeSourceMutableBuilder[Self <: NFSVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServer(value: Input[String]): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setServer(value: Input[String]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }
 }

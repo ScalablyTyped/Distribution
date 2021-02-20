@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Plays audio from a file in Telephony Gateway.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends StObject {
   
   /**
     * Required. URI to a Google Cloud Storage object containing the audio to
@@ -34,24 +35,12 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudioOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudioMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudioUri(value: String): Self = this.set("audioUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudioUri: Self = this.set("audioUri", js.undefined)
+    def setAudioUriUndefined: Self = StObject.set(x, "audioUri", js.undefined)
   }
 }

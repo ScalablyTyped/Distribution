@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulesSourceList extends js.Object {
+trait RulesSourceList extends StObject {
   
   /**
     * Whether you want to allow or deny access to the domains in your target list.
@@ -31,33 +32,21 @@ object RulesSourceList {
   }
   
   @scala.inline
-  implicit class RulesSourceListOps[Self <: RulesSourceList] (val x: Self) extends AnyVal {
+  implicit class RulesSourceListMutableBuilder[Self <: RulesSourceList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneratedRulesType(value: GeneratedRulesType): Self = StObject.set(x, "GeneratedRulesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetTypes(value: TargetTypes): Self = StObject.set(x, "TargetTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetTypesVarargs(value: TargetType*): Self = StObject.set(x, "TargetTypes", js.Array(value :_*))
     
     @scala.inline
-    def setGeneratedRulesType(value: GeneratedRulesType): Self = this.set("GeneratedRulesType", value.asInstanceOf[js.Any])
+    def setTargets(value: RuleTargets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetTypesVarargs(value: TargetType*): Self = this.set("TargetTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetTypes(value: TargetTypes): Self = this.set("TargetTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetsVarargs(value: CollectionMemberString*): Self = this.set("Targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: RuleTargets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    def setTargetsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

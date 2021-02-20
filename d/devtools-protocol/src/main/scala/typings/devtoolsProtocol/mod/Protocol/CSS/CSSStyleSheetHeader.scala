@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSSStyleSheetHeader extends js.Object {
+trait CSSStyleSheetHeader extends StObject {
   
   /**
     * Denotes whether the stylesheet is disabled.
@@ -122,78 +123,66 @@ object CSSStyleSheetHeader {
   }
   
   @scala.inline
-  implicit class CSSStyleSheetHeaderOps[Self <: CSSStyleSheetHeader] (val x: Self) extends AnyVal {
+  implicit class CSSStyleSheetHeaderMutableBuilder[Self <: CSSStyleSheetHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setHasSourceURL(value: Boolean): Self = StObject.set(x, "hasSourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setHasSourceURLUndefined: Self = StObject.set(x, "hasSourceURL", js.undefined)
     
     @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setIsConstructed(value: Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConstructed(value: Boolean): Self = this.set("isConstructed", value.asInstanceOf[js.Any])
+    def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInline(value: Boolean): Self = this.set("isInline", value.asInstanceOf[js.Any])
+    def setIsMutable(value: Boolean): Self = StObject.set(x, "isMutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMutable(value: Boolean): Self = this.set("isMutable", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: StyleSheetOrigin): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setOwnerNode(value: BackendNodeId): Self = StObject.set(x, "ownerNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
+    def setOwnerNodeUndefined: Self = StObject.set(x, "ownerNode", js.undefined)
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setSourceMapURL(value: String): Self = StObject.set(x, "sourceMapURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLine(value: Double): Self = this.set("startLine", value.asInstanceOf[js.Any])
+    def setSourceMapURLUndefined: Self = StObject.set(x, "sourceMapURL", js.undefined)
     
     @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = this.set("styleSheetId", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSourceURL(value: Boolean): Self = this.set("hasSourceURL", value.asInstanceOf[js.Any])
+    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasSourceURL: Self = this.set("hasSourceURL", js.undefined)
+    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerNode(value: BackendNodeId): Self = this.set("ownerNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerNode: Self = this.set("ownerNode", js.undefined)
-    
-    @scala.inline
-    def setSourceMapURL(value: String): Self = this.set("sourceMapURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMapURL: Self = this.set("sourceMapURL", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

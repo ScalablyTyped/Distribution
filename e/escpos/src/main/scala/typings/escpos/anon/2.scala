@@ -8,12 +8,13 @@ import typings.escpos.escposStrings.Space
 import typings.escpos.escposStrings.`0`
 import typings.escpos.escposStrings.`@`
 import typings.escpos.escposStrings.p_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `2` extends js.Object {
+trait `2` extends StObject {
   
   var `1`: Null = js.native
   
@@ -48,42 +49,30 @@ object `2` {
   }
   
   @scala.inline
-  implicit class `2Ops`[Self <: `2`] (val x: Self) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: Null): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set2(value: Datalinkescape): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set3(value: Space): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: Null): Self = this.set("1", value.asInstanceOf[js.Any])
+    def set4(value: `0`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set2(value: Datalinkescape): Self = this.set("2", value.asInstanceOf[js.Any])
+    def set5(value: `@`): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set3(value: Space): Self = this.set("3", value.asInstanceOf[js.Any])
+    def set6(value: P): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set4(value: `0`): Self = this.set("4", value.asInstanceOf[js.Any])
+    def set7(value: Graveaccent): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set5(value: `@`): Self = this.set("5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set6(value: P): Self = this.set("6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set7(value: Graveaccent): Self = this.set("7", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set8(value: p_): Self = this.set("8", value.asInstanceOf[js.Any])
+    def set8(value: p_): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
   }
 }

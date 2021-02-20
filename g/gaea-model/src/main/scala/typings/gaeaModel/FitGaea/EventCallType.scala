@@ -1,11 +1,12 @@
 package typings.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventCallType extends js.Object {
+trait EventCallType extends StObject {
   
   // 调用函数名称
   var functionName: String = js.native
@@ -22,30 +23,18 @@ object EventCallType {
   }
   
   @scala.inline
-  implicit class EventCallTypeOps[Self <: EventCallType] (val x: Self) extends AnyVal {
+  implicit class EventCallTypeMutableBuilder[Self <: EventCallType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParam(value: js.Array[EventCallTypeParam]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     @scala.inline
-    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParamVarargs(value: EventCallTypeParam*): Self = this.set("param", js.Array(value :_*))
-    
-    @scala.inline
-    def setParam(value: js.Array[EventCallTypeParam]): Self = this.set("param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def setParamVarargs(value: EventCallTypeParam*): Self = StObject.set(x, "param", js.Array(value :_*))
   }
 }

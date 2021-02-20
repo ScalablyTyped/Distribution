@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateSubnetsResponse extends js.Object {
+trait DisassociateSubnetsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the firewall.
@@ -36,45 +37,33 @@ object DisassociateSubnetsResponse {
   }
   
   @scala.inline
-  implicit class DisassociateSubnetsResponseOps[Self <: DisassociateSubnetsResponse] (val x: Self) extends AnyVal {
+  implicit class DisassociateSubnetsResponseMutableBuilder[Self <: DisassociateSubnetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = this.set("FirewallArn", value.asInstanceOf[js.Any])
+    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
     @scala.inline
-    def deleteFirewallArn: Self = this.set("FirewallArn", js.undefined)
+    def setSubnetMappings(value: SubnetMappings): Self = StObject.set(x, "SubnetMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallName(value: ResourceName): Self = this.set("FirewallName", value.asInstanceOf[js.Any])
+    def setSubnetMappingsUndefined: Self = StObject.set(x, "SubnetMappings", js.undefined)
     
     @scala.inline
-    def deleteFirewallName: Self = this.set("FirewallName", js.undefined)
+    def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetMappingsVarargs(value: SubnetMapping*): Self = this.set("SubnetMappings", js.Array(value :_*))
+    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetMappings(value: SubnetMappings): Self = this.set("SubnetMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetMappings: Self = this.set("SubnetMappings", js.undefined)
-    
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = this.set("UpdateToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateToken: Self = this.set("UpdateToken", js.undefined)
+    def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

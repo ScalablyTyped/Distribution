@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlgorithmValidationSpecification extends js.Object {
+trait AlgorithmValidationSpecification extends StObject {
   
   /**
     * An array of AlgorithmValidationProfile objects, each of which specifies a training job and batch transform job that Amazon SageMaker runs to validate your algorithm.
@@ -26,27 +27,15 @@ object AlgorithmValidationSpecification {
   }
   
   @scala.inline
-  implicit class AlgorithmValidationSpecificationOps[Self <: AlgorithmValidationSpecification] (val x: Self) extends AnyVal {
+  implicit class AlgorithmValidationSpecificationMutableBuilder[Self <: AlgorithmValidationSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValidationProfiles(value: AlgorithmValidationProfiles): Self = StObject.set(x, "ValidationProfiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValidationProfilesVarargs(value: AlgorithmValidationProfile*): Self = StObject.set(x, "ValidationProfiles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValidationProfilesVarargs(value: AlgorithmValidationProfile*): Self = this.set("ValidationProfiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationProfiles(value: AlgorithmValidationProfiles): Self = this.set("ValidationProfiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationRole(value: RoleArn): Self = this.set("ValidationRole", value.asInstanceOf[js.Any])
+    def setValidationRole(value: RoleArn): Self = StObject.set(x, "ValidationRole", value.asInstanceOf[js.Any])
   }
 }

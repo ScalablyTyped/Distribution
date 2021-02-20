@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to provide the details about a change to the properties of a phone line. */
 @js.native
-trait PhoneLineChangedTriggerDetails extends js.Object {
+trait PhoneLineChangedTriggerDetails extends StObject {
   
   /** Gets a PhoneLineChangeKind value that indicates if the phone line was added, removed, or changed. */
   var changeType: PhoneLineChangeKind = js.native
@@ -34,27 +35,15 @@ object PhoneLineChangedTriggerDetails {
   }
   
   @scala.inline
-  implicit class PhoneLineChangedTriggerDetailsOps[Self <: PhoneLineChangedTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class PhoneLineChangedTriggerDetailsMutableBuilder[Self <: PhoneLineChangedTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: PhoneLineChangeKind): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasLinePropertyChanged(value: PhoneLineProperties => Boolean): Self = StObject.set(x, "hasLinePropertyChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeType(value: PhoneLineChangeKind): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasLinePropertyChanged(value: PhoneLineProperties => Boolean): Self = this.set("hasLinePropertyChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLineId(value: String): Self = this.set("lineId", value.asInstanceOf[js.Any])
+    def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
   }
 }

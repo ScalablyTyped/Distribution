@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Code extends js.Object {
+trait Code extends StObject {
   
   /** 统计用区划代码 当 mode = region 时有效 (最低基础库: 1.4.0) */
   var code: js.Tuple3[String, String, String] = js.native
@@ -37,30 +38,18 @@ object Code {
   }
   
   @scala.inline
-  implicit class CodeOps[Self <: Code] (val x: Self) extends AnyVal {
+  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: String | js.Array[Double] | (js.Tuple3[String, String, String])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: js.Tuple3[String, String, String]): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostcode(value: String): Self = this.set("postcode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: String | js.Array[Double] | (js.Tuple3[String, String, String])): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

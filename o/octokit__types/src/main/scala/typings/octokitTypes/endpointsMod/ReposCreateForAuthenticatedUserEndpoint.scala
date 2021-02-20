@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.`private`
 import typings.octokitTypes.octokitTypesStrings.internal
 import typings.octokitTypes.octokitTypesStrings.public
 import typings.octokitTypes.octokitTypesStrings.visibility
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCreateForAuthenticatedUserEndpoint extends js.Object {
+trait ReposCreateForAuthenticatedUserEndpoint extends StObject {
   
   /**
     * Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
@@ -108,117 +109,105 @@ object ReposCreateForAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCreateForAuthenticatedUserEndpointOps[Self <: ReposCreateForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCreateForAuthenticatedUserEndpointMutableBuilder[Self <: ReposCreateForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_merge_commit(value: Boolean): Self = StObject.set(x, "allow_merge_commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_merge_commitUndefined: Self = StObject.set(x, "allow_merge_commit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_rebase_merge(value: Boolean): Self = StObject.set(x, "allow_rebase_merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAllow_rebase_mergeUndefined: Self = StObject.set(x, "allow_rebase_merge", js.undefined)
     
     @scala.inline
-    def setAllow_merge_commit(value: Boolean): Self = this.set("allow_merge_commit", value.asInstanceOf[js.Any])
+    def setAllow_squash_merge(value: Boolean): Self = StObject.set(x, "allow_squash_merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow_merge_commit: Self = this.set("allow_merge_commit", js.undefined)
+    def setAllow_squash_mergeUndefined: Self = StObject.set(x, "allow_squash_merge", js.undefined)
     
     @scala.inline
-    def setAllow_rebase_merge(value: Boolean): Self = this.set("allow_rebase_merge", value.asInstanceOf[js.Any])
+    def setAuto_init(value: Boolean): Self = StObject.set(x, "auto_init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow_rebase_merge: Self = this.set("allow_rebase_merge", js.undefined)
+    def setAuto_initUndefined: Self = StObject.set(x, "auto_init", js.undefined)
     
     @scala.inline
-    def setAllow_squash_merge(value: Boolean): Self = this.set("allow_squash_merge", value.asInstanceOf[js.Any])
+    def setDelete_branch_on_merge(value: Boolean): Self = StObject.set(x, "delete_branch_on_merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow_squash_merge: Self = this.set("allow_squash_merge", js.undefined)
+    def setDelete_branch_on_mergeUndefined: Self = StObject.set(x, "delete_branch_on_merge", js.undefined)
     
     @scala.inline
-    def setAuto_init(value: Boolean): Self = this.set("auto_init", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuto_init: Self = this.set("auto_init", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDelete_branch_on_merge(value: Boolean): Self = this.set("delete_branch_on_merge", value.asInstanceOf[js.Any])
+    def setGitignore_template(value: String): Self = StObject.set(x, "gitignore_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelete_branch_on_merge: Self = this.set("delete_branch_on_merge", js.undefined)
+    def setGitignore_templateUndefined: Self = StObject.set(x, "gitignore_template", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHas_issues(value: Boolean): Self = StObject.set(x, "has_issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHas_issuesUndefined: Self = StObject.set(x, "has_issues", js.undefined)
     
     @scala.inline
-    def setGitignore_template(value: String): Self = this.set("gitignore_template", value.asInstanceOf[js.Any])
+    def setHas_projects(value: Boolean): Self = StObject.set(x, "has_projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGitignore_template: Self = this.set("gitignore_template", js.undefined)
+    def setHas_projectsUndefined: Self = StObject.set(x, "has_projects", js.undefined)
     
     @scala.inline
-    def setHas_issues(value: Boolean): Self = this.set("has_issues", value.asInstanceOf[js.Any])
+    def setHas_wiki(value: Boolean): Self = StObject.set(x, "has_wiki", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_issues: Self = this.set("has_issues", js.undefined)
+    def setHas_wikiUndefined: Self = StObject.set(x, "has_wiki", js.undefined)
     
     @scala.inline
-    def setHas_projects(value: Boolean): Self = this.set("has_projects", value.asInstanceOf[js.Any])
+    def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_projects: Self = this.set("has_projects", js.undefined)
+    def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
     @scala.inline
-    def setHas_wiki(value: Boolean): Self = this.set("has_wiki", value.asInstanceOf[js.Any])
+    def setIs_template(value: Boolean): Self = StObject.set(x, "is_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_wiki: Self = this.set("has_wiki", js.undefined)
+    def setIs_templateUndefined: Self = StObject.set(x, "is_template", js.undefined)
     
     @scala.inline
-    def setHomepage(value: String): Self = this.set("homepage", value.asInstanceOf[js.Any])
+    def setLicense_template(value: String): Self = StObject.set(x, "license_template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHomepage: Self = this.set("homepage", js.undefined)
+    def setLicense_templateUndefined: Self = StObject.set(x, "license_template", js.undefined)
     
     @scala.inline
-    def setIs_template(value: Boolean): Self = this.set("is_template", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_template: Self = this.set("is_template", js.undefined)
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense_template(value: String): Self = this.set("license_template", value.asInstanceOf[js.Any])
+    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
     @scala.inline
-    def deleteLicense_template: Self = this.set("license_template", js.undefined)
+    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
+    def setTeam_idUndefined: Self = StObject.set(x, "team_id", js.undefined)
     
     @scala.inline
-    def deletePrivate: Self = this.set("private", js.undefined)
+    def setVisibility(value: public | `private` | visibility | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeam_id(value: Double): Self = this.set("team_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeam_id: Self = this.set("team_id", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: public | `private` | visibility | internal): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

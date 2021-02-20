@@ -1,6 +1,7 @@
 package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Collection.ItemCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Holds information about the current user settings.
   */
 @js.native
-trait UserSettings extends js.Object {
+trait UserSettings extends StObject {
   
   /**
     * Returns the date formatting information for the current user.
@@ -108,66 +109,54 @@ object UserSettings {
   }
   
   @scala.inline
-  implicit class UserSettingsOps[Self <: UserSettings] (val x: Self) extends AnyVal {
+  implicit class UserSettingsMutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormattingInfo(value: DateFormattingInfo): Self = StObject.set(x, "dateFormattingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultDashboardId(value: String): Self = StObject.set(x, "defaultDashboardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTimeZoneOffsetMinutes(value: () => Double): Self = StObject.set(x, "getTimeZoneOffsetMinutes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDateFormattingInfo(value: DateFormattingInfo): Self = this.set("dateFormattingInfo", value.asInstanceOf[js.Any])
+    def setIsGuidedHelpEnabled(value: Boolean): Self = StObject.set(x, "isGuidedHelpEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDashboardId(value: String): Self = this.set("defaultDashboardId", value.asInstanceOf[js.Any])
+    def setIsHighContrastEnabled(value: Boolean): Self = StObject.set(x, "isHighContrastEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTimeZoneOffsetMinutes(value: () => Double): Self = this.set("getTimeZoneOffsetMinutes", js.Any.fromFunction0(value))
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGuidedHelpEnabled(value: Boolean): Self = this.set("isGuidedHelpEnabled", value.asInstanceOf[js.Any])
+    def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHighContrastEnabled(value: Boolean): Self = this.set("isHighContrastEnabled", value.asInstanceOf[js.Any])
+    def setRoles(value: ItemCollection[LookupValue]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setSecurityRolePrivileges(value: js.Array[String]): Self = StObject.set(x, "securityRolePrivileges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageId(value: Double): Self = this.set("languageId", value.asInstanceOf[js.Any])
+    def setSecurityRolePrivilegesVarargs(value: String*): Self = StObject.set(x, "securityRolePrivileges", js.Array(value :_*))
     
     @scala.inline
-    def setRoles(value: ItemCollection[LookupValue]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    def setSecurityRoles(value: js.Array[String]): Self = StObject.set(x, "securityRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityRolePrivilegesVarargs(value: String*): Self = this.set("securityRolePrivileges", js.Array(value :_*))
+    def setSecurityRolesVarargs(value: String*): Self = StObject.set(x, "securityRoles", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityRolePrivileges(value: js.Array[String]): Self = this.set("securityRolePrivileges", value.asInstanceOf[js.Any])
+    def setTransactionCurrency(value: LookupValue): Self = StObject.set(x, "transactionCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityRolesVarargs(value: String*): Self = this.set("securityRoles", js.Array(value :_*))
+    def setTransactionCurrencyId(value: String): Self = StObject.set(x, "transactionCurrencyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityRoles(value: js.Array[String]): Self = this.set("securityRoles", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionCurrency(value: LookupValue): Self = this.set("transactionCurrency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionCurrencyId(value: String): Self = this.set("transactionCurrencyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideScopedEvaluator extends js.Object {
+trait GlideScopedEvaluator extends StObject {
   
   /**
     * Evaluates a script from a GlideRecord field.

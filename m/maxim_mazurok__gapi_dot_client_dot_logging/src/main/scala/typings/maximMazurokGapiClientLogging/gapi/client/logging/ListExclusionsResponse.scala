@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListExclusionsResponse extends js.Object {
+trait ListExclusionsResponse extends StObject {
   
   /** A list of exclusions. */
   var exclusions: js.UndefOr[js.Array[LogExclusion]] = js.native
@@ -25,33 +26,21 @@ object ListExclusionsResponse {
   }
   
   @scala.inline
-  implicit class ListExclusionsResponseOps[Self <: ListExclusionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListExclusionsResponseMutableBuilder[Self <: ListExclusionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusions(value: js.Array[LogExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusionsVarargs(value: LogExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
     @scala.inline
-    def setExclusionsVarargs(value: LogExclusion*): Self = this.set("exclusions", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusions(value: js.Array[LogExclusion]): Self = this.set("exclusions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusions: Self = this.set("exclusions", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

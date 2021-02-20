@@ -1,16 +1,14 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.mod.util.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "option")
-@js.native
-object option extends js.Object {
+object option {
   
-  val presetStorage: Storage = js.native
-  
+  @JSImport("yandex-maps", "option.Manager")
   @js.native
   class Manager () extends IOptionManager {
     def this(options: js.Object) = this()
@@ -128,4 +126,8 @@ object option extends js.Object {
     
     def unsetAll(): this.type = js.native
   }
+  
+  @JSImport("yandex-maps", "option.presetStorage")
+  @js.native
+  val presetStorage: Storage = js.native
 }

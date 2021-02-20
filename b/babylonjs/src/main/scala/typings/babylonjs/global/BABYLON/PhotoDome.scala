@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +10,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class PhotoDome ()
   extends typings.babylonjs.BABYLON.PhotoDome
 /* static members */
-@JSGlobal("BABYLON.PhotoDome")
-@js.native
-object PhotoDome extends js.Object {
+object PhotoDome {
   
   /**
     * Define the image as a Monoscopic panoramic 360 image.
     */
+  @JSGlobal("BABYLON.PhotoDome.MODE_MONOSCOPIC")
+  @js.native
   val MODE_MONOSCOPIC: Double = js.native
   
   /**
     * Define the image as a Stereoscopic Side by Side panoramic 360 image.
     */
+  @JSGlobal("BABYLON.PhotoDome.MODE_SIDEBYSIDE")
+  @js.native
   val MODE_SIDEBYSIDE: Double = js.native
   
   /**
     * Define the image as a Stereoscopic TopBottom/OverUnder panoramic 360 image.
     */
+  @JSGlobal("BABYLON.PhotoDome.MODE_TOPBOTTOM")
+  @js.native
   val MODE_TOPBOTTOM: Double = js.native
 }

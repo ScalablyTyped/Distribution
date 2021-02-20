@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,54 +116,42 @@ object XUnionTypeDescription {
   }
   
   @scala.inline
-  implicit class XUnionTypeDescriptionOps[Self <: XUnionTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XUnionTypeDescriptionMutableBuilder[Self <: XUnionTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultDiscriminant(value: js.Any): Self = StObject.set(x, "DefaultDiscriminant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultMemberType(value: XTypeDescription): Self = StObject.set(x, "DefaultMemberType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscriminantType(value: XTypeDescription): Self = StObject.set(x, "DiscriminantType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDiscriminant(value: js.Any): Self = this.set("DefaultDiscriminant", value.asInstanceOf[js.Any])
+    def setDiscriminants(value: SafeArray[_]): Self = StObject.set(x, "Discriminants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMemberType(value: XTypeDescription): Self = this.set("DefaultMemberType", value.asInstanceOf[js.Any])
+    def setGetDefaultDiscriminant(value: () => js.Any): Self = StObject.set(x, "getDefaultDiscriminant", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDiscriminantType(value: XTypeDescription): Self = this.set("DiscriminantType", value.asInstanceOf[js.Any])
+    def setGetDefaultMemberType(value: () => XTypeDescription): Self = StObject.set(x, "getDefaultMemberType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDiscriminants(value: SafeArray[_]): Self = this.set("Discriminants", value.asInstanceOf[js.Any])
+    def setGetDiscriminantType(value: () => XTypeDescription): Self = StObject.set(x, "getDiscriminantType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMemberNames(value: SafeArray[String]): Self = this.set("MemberNames", value.asInstanceOf[js.Any])
+    def setGetDiscriminants(value: () => SafeArray[_]): Self = StObject.set(x, "getDiscriminants", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMemberTypes(value: SafeArray[XTypeDescription]): Self = this.set("MemberTypes", value.asInstanceOf[js.Any])
+    def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultDiscriminant(value: () => js.Any): Self = this.set("getDefaultDiscriminant", js.Any.fromFunction0(value))
+    def setGetMemberTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getMemberTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultMemberType(value: () => XTypeDescription): Self = this.set("getDefaultMemberType", js.Any.fromFunction0(value))
+    def setMemberNames(value: SafeArray[String]): Self = StObject.set(x, "MemberNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDiscriminantType(value: () => XTypeDescription): Self = this.set("getDiscriminantType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetDiscriminants(value: () => SafeArray[_]): Self = this.set("getDiscriminants", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMemberNames(value: () => SafeArray[String]): Self = this.set("getMemberNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMemberTypes(value: () => SafeArray[XTypeDescription]): Self = this.set("getMemberTypes", js.Any.fromFunction0(value))
+    def setMemberTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "MemberTypes", value.asInstanceOf[js.Any])
   }
 }

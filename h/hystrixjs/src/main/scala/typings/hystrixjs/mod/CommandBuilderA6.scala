@@ -1,12 +1,13 @@
 package typings.hystrixjs.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandBuilderA6[R, T, U, V, W, X, Y] extends js.Object {
+trait CommandBuilderA6[R, T, U, V, W, X, Y] extends StObject {
   
   def build(): CommandA6[R, T, U, V, W, X, Y] = js.native
   
@@ -68,70 +69,58 @@ object CommandBuilderA6 {
   }
   
   @scala.inline
-  implicit class CommandBuilderA6Ops[Self <: CommandBuilderA6[_, _, _, _, _, _, _], R, T, U, V, W, X, Y] (val x: Self with (CommandBuilderA6[R, T, U, V, W, X, Y])) extends AnyVal {
+  implicit class CommandBuilderA6MutableBuilder[Self <: CommandBuilderA6[_, _, _, _, _, _, _], R, T, U, V, W, X, Y] (val x: Self with (CommandBuilderA6[R, T, U, V, W, X, Y])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => CommandA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircuitBreakerErrorThresholdPercentage(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCircuitBreakerForceClosed(value: Boolean => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "circuitBreakerForceClosed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuild(value: () => CommandA6[R, T, U, V, W, X, Y]): Self = this.set("build", js.Any.fromFunction0(value))
+    def setCircuitBreakerForceOpened(value: Boolean => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "circuitBreakerForceOpened", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCircuitBreakerErrorThresholdPercentage(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("circuitBreakerErrorThresholdPercentage", js.Any.fromFunction1(value))
+    def setCircuitBreakerRequestVolumeThreshold(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "circuitBreakerRequestVolumeThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCircuitBreakerForceClosed(value: Boolean => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("circuitBreakerForceClosed", js.Any.fromFunction1(value))
+    def setCircuitBreakerSleepWindowInMilliseconds(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCircuitBreakerForceOpened(value: Boolean => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("circuitBreakerForceOpened", js.Any.fromFunction1(value))
+    def setContext(value: js.Any => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCircuitBreakerRequestVolumeThreshold(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("circuitBreakerRequestVolumeThreshold", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCircuitBreakerSleepWindowInMilliseconds(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setContext(value: js.Any => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("context", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setErrorHandler(value: js.Function1[/* error */ js.Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("errorHandler", js.Any.fromFunction1(value))
+    def setErrorHandler(value: js.Function1[/* error */ js.Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFallbackTo(
       value: js.Function2[/* error */ Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
-    ): Self = this.set("fallbackTo", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPercentileWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("percentileWindowLength", js.Any.fromFunction1(value))
+    def setPercentileWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "percentileWindowLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPercentileWindowNumberOfBuckets(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("percentileWindowNumberOfBuckets", js.Any.fromFunction1(value))
+    def setPercentileWindowNumberOfBuckets(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "percentileWindowNumberOfBuckets", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestVolumeRejectionThreshold(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("requestVolumeRejectionThreshold", js.Any.fromFunction1(value))
+    def setRequestVolumeRejectionThreshold(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "requestVolumeRejectionThreshold", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRun(
       value: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
-    ): Self = this.set("run", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStatisticalWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("statisticalWindowLength", js.Any.fromFunction1(value))
+    def setStatisticalWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "statisticalWindowLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStatisticalWindowNumberOfBuckets(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("statisticalWindowNumberOfBuckets", js.Any.fromFunction1(value))
+    def setStatisticalWindowNumberOfBuckets(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "statisticalWindowNumberOfBuckets", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTimeout(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = this.set("timeout", js.Any.fromFunction1(value))
+    def setTimeout(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "timeout", js.Any.fromFunction1(value))
   }
 }

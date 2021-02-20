@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contact extends js.Object {
+trait Contact extends StObject {
   
   var first_name: String = js.native
   
@@ -26,42 +27,30 @@ object Contact {
   }
   
   @scala.inline
-  implicit class ContactOps[Self <: Contact] (val x: Self) extends AnyVal {
+  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
     @scala.inline
-    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone_number(value: String): Self = this.set("phone_number", value.asInstanceOf[js.Any])
+    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
     
     @scala.inline
-    def deleteLast_name: Self = this.set("last_name", js.undefined)
+    def setVcard(value: String): Self = StObject.set(x, "vcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_id(value: Double): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
-    
-    @scala.inline
-    def setVcard(value: String): Self = this.set("vcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVcard: Self = this.set("vcard", js.undefined)
+    def setVcardUndefined: Self = StObject.set(x, "vcard", js.undefined)
   }
 }

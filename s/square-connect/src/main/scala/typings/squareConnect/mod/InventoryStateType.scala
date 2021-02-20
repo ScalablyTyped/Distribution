@@ -1,5 +1,6 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.squareConnect.squareConnectStrings.WASTE
   - typings.squareConnect.squareConnectStrings.UNLINKED_RETURN
 */
-trait InventoryStateType extends js.Object
+trait InventoryStateType extends StObject
 object InventoryStateType {
   
   @scala.inline

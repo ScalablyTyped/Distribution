@@ -1,12 +1,13 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tuplet extends js.Object {
+trait Tuplet extends StObject {
   
   def attach(): Unit = js.native
   
@@ -54,54 +55,42 @@ object Tuplet {
   }
   
   @scala.inline
-  implicit class TupletOps[Self <: Tuplet] (val x: Self) extends AnyVal {
+  implicit class TupletMutableBuilder[Self <: Tuplet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttach(value: () => Unit): Self = this.set("attach", js.Any.fromFunction0(value))
+    def setGetBeatsOccupied(value: () => Double): Self = StObject.set(x, "getBeatsOccupied", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
+    def setGetNoteCount(value: () => Double): Self = StObject.set(x, "getNoteCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDraw(value: () => Unit): Self = this.set("draw", js.Any.fromFunction0(value))
+    def setGetNotes(value: () => js.Array[StaveNote]): Self = StObject.set(x, "getNotes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBeatsOccupied(value: () => Double): Self = this.set("getBeatsOccupied", js.Any.fromFunction0(value))
+    def setResolveGlyphs(value: () => Unit): Self = StObject.set(x, "resolveGlyphs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNoteCount(value: () => Double): Self = this.set("getNoteCount", js.Any.fromFunction0(value))
+    def setSetBeatsOccupied(value: Double => Unit): Self = StObject.set(x, "setBeatsOccupied", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNotes(value: () => js.Array[StaveNote]): Self = this.set("getNotes", js.Any.fromFunction0(value))
+    def setSetBracketed(value: Boolean => Tuplet): Self = StObject.set(x, "setBracketed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResolveGlyphs(value: () => Unit): Self = this.set("resolveGlyphs", js.Any.fromFunction0(value))
+    def setSetContext(value: IRenderContext => Tuplet): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBeatsOccupied(value: Double => Unit): Self = this.set("setBeatsOccupied", js.Any.fromFunction1(value))
+    def setSetRatioed(value: Boolean => Tuplet): Self = StObject.set(x, "setRatioed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBracketed(value: Boolean => Tuplet): Self = this.set("setBracketed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetContext(value: IRenderContext => Tuplet): Self = this.set("setContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRatioed(value: Boolean => Tuplet): Self = this.set("setRatioed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTupletLocation(value: Double => Tuplet): Self = this.set("setTupletLocation", js.Any.fromFunction1(value))
+    def setSetTupletLocation(value: Double => Tuplet): Self = StObject.set(x, "setTupletLocation", js.Any.fromFunction1(value))
   }
 }

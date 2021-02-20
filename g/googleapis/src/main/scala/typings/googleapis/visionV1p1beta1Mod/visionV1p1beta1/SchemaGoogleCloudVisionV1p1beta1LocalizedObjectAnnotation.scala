@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Set of detected objects with bounding boxes.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation extends js.Object {
+trait SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation extends StObject {
   
   /**
     * Image region to which this object belongs. This must be populated.
@@ -46,48 +47,36 @@ object SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotationOps[Self <: SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotationMutableBuilder[Self <: SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p1beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMid: Self = this.set("mid", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

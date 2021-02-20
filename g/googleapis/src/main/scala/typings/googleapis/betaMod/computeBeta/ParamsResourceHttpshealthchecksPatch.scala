@@ -3,6 +3,7 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,48 +54,36 @@ object ParamsResourceHttpshealthchecksPatch {
   }
   
   @scala.inline
-  implicit class ParamsResourceHttpshealthchecksPatchOps[Self <: ParamsResourceHttpshealthchecksPatch] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceHttpshealthchecksPatchMutableBuilder[Self <: ParamsResourceHttpshealthchecksPatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpsHealthCheck(value: String): Self = StObject.set(x, "httpsHealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setHttpsHealthCheckUndefined: Self = StObject.set(x, "httpsHealthCheck", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpsHealthCheck(value: String): Self = this.set("httpsHealthCheck", value.asInstanceOf[js.Any])
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def deleteHttpsHealthCheck: Self = this.set("httpsHealthCheck", js.undefined)
+    def setRequestBody(value: SchemaHttpsHealthCheck): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaHttpsHealthCheck): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

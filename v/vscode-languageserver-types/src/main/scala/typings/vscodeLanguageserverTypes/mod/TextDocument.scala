@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocument extends js.Object {
+trait TextDocument extends StObject {
   
   /**
     * Get the text of this document. A substring can be retrieved by
@@ -72,10 +73,10 @@ trait TextDocument extends js.Object {
     */
   val version: Double = js.native
 }
-@JSImport("vscode-languageserver-types", "TextDocument")
-@js.native
-object TextDocument extends js.Object {
+object TextDocument {
   
+  @JSImport("vscode-languageserver-types", "TextDocument.applyEdits")
+  @js.native
   def applyEdits(document: TextDocument, edits: js.Array[TextEdit]): String = js.native
   
   /**
@@ -84,10 +85,14 @@ object TextDocument extends js.Object {
     * @param languageId  The document's language Id.
     * @param content The document's content.
     */
+  @JSImport("vscode-languageserver-types", "TextDocument.create")
+  @js.native
   def create(uri: DocumentUri, languageId: String, version: Double, content: String): TextDocument = js.native
   
   /**
     * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
     */
+  @JSImport("vscode-languageserver-types", "TextDocument.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = js.native
 }

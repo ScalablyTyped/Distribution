@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.CallbackFiel
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.FieldsKey
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.PageToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomersResource extends js.Object {
+trait CustomersResource extends StObject {
   
   var configurations: ConfigurationsResource = js.native
   

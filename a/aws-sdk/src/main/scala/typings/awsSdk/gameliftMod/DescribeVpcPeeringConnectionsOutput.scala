@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpcPeeringConnectionsOutput extends js.Object {
+trait DescribeVpcPeeringConnectionsOutput extends StObject {
   
   /**
     * A collection of VPC peering connection records that match the request.
@@ -21,27 +22,15 @@ object DescribeVpcPeeringConnectionsOutput {
   }
   
   @scala.inline
-  implicit class DescribeVpcPeeringConnectionsOutputOps[Self <: DescribeVpcPeeringConnectionsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeVpcPeeringConnectionsOutputMutableBuilder[Self <: DescribeVpcPeeringConnectionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpcPeeringConnections(value: VpcPeeringConnectionList): Self = StObject.set(x, "VpcPeeringConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVpcPeeringConnectionsUndefined: Self = StObject.set(x, "VpcPeeringConnections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpcPeeringConnectionsVarargs(value: VpcPeeringConnection*): Self = this.set("VpcPeeringConnections", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcPeeringConnections(value: VpcPeeringConnectionList): Self = this.set("VpcPeeringConnections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcPeeringConnections: Self = this.set("VpcPeeringConnections", js.undefined)
+    def setVpcPeeringConnectionsVarargs(value: VpcPeeringConnection*): Self = StObject.set(x, "VpcPeeringConnections", js.Array(value :_*))
   }
 }

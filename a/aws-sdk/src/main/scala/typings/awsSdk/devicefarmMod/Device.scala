@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /**
     * The device's ARN.
@@ -121,147 +122,135 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailability(value: DeviceAvailability): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: DeviceAvailability): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
     @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
+    def setCpu(value: CPU): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
     @scala.inline
-    def deleteCarrier: Self = this.set("carrier", js.undefined)
+    def setFleetName(value: String): Self = StObject.set(x, "fleetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: CPU): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setFleetNameUndefined: Self = StObject.set(x, "fleetName", js.undefined)
     
     @scala.inline
-    def deleteCpu: Self = this.set("cpu", js.undefined)
+    def setFleetType(value: String): Self = StObject.set(x, "fleetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetName(value: String): Self = this.set("fleetName", value.asInstanceOf[js.Any])
+    def setFleetTypeUndefined: Self = StObject.set(x, "fleetType", js.undefined)
     
     @scala.inline
-    def deleteFleetName: Self = this.set("fleetName", js.undefined)
+    def setFormFactor(value: DeviceFormFactor): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetType(value: String): Self = this.set("fleetType", value.asInstanceOf[js.Any])
+    def setFormFactorUndefined: Self = StObject.set(x, "formFactor", js.undefined)
     
     @scala.inline
-    def deleteFleetType: Self = this.set("fleetType", js.undefined)
+    def setHeapSize(value: Long): Self = StObject.set(x, "heapSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormFactor(value: DeviceFormFactor): Self = this.set("formFactor", value.asInstanceOf[js.Any])
+    def setHeapSizeUndefined: Self = StObject.set(x, "heapSize", js.undefined)
     
     @scala.inline
-    def deleteFormFactor: Self = this.set("formFactor", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeapSize(value: Long): Self = this.set("heapSize", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteHeapSize: Self = this.set("heapSize", js.undefined)
+    def setInstances(value: DeviceInstances): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setInstancesVarargs(value: DeviceInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesVarargs(value: DeviceInstance*): Self = this.set("instances", js.Array(value :_*))
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: DeviceInstances): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setMemory(value: Long): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory(value: Long): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setModelId(value: String): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelId(value: String): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModelId: Self = this.set("modelId", js.undefined)
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlatform(value: DevicePlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteOs: Self = this.set("os", js.undefined)
+    def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: DevicePlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setRemoteAccessEnabled(value: Boolean): Self = StObject.set(x, "remoteAccessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadio(value: String): Self = this.set("radio", value.asInstanceOf[js.Any])
+    def setRemoteAccessEnabledUndefined: Self = StObject.set(x, "remoteAccessEnabled", js.undefined)
     
     @scala.inline
-    def deleteRadio: Self = this.set("radio", js.undefined)
+    def setRemoteDebugEnabled(value: Boolean): Self = StObject.set(x, "remoteDebugEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAccessEnabled(value: Boolean): Self = this.set("remoteAccessEnabled", value.asInstanceOf[js.Any])
+    def setRemoteDebugEnabledUndefined: Self = StObject.set(x, "remoteDebugEnabled", js.undefined)
     
     @scala.inline
-    def deleteRemoteAccessEnabled: Self = this.set("remoteAccessEnabled", js.undefined)
+    def setResolution(value: Resolution): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteDebugEnabled(value: Boolean): Self = this.set("remoteDebugEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteDebugEnabled: Self = this.set("remoteDebugEnabled", js.undefined)
-    
-    @scala.inline
-    def setResolution(value: Resolution): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

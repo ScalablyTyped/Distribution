@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,33 +53,21 @@ object ConfigurationChangeEvent {
   }
   
   @scala.inline
-  implicit class ConfigurationChangeEventOps[Self <: ConfigurationChangeEvent] (val x: Self) extends AnyVal {
+  implicit class ConfigurationChangeEventMutableBuilder[Self <: ConfigurationChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: XConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceObject(value: XInterface): Self = StObject.set(x, "ResourceObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: XConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: XResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceObject(value: XInterface): Self = this.set("ResourceObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    def setUserData(value: js.Any): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
   }
 }

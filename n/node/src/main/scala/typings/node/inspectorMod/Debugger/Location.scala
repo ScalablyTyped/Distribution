@@ -1,6 +1,7 @@
 package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.ScriptId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Location in the source code.
   */
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   /**
     * Column number in the script (0-based).
@@ -35,30 +36,18 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnNumber(value: Double): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnNumber: Self = this.set("columnNumber", js.undefined)
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }
 }

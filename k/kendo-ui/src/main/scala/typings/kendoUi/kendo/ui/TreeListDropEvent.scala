@@ -2,6 +2,7 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.TreeListModel
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,48 +29,36 @@ object TreeListDropEvent {
   }
   
   @scala.inline
-  implicit class TreeListDropEventOps[Self <: TreeListDropEvent] (val x: Self) extends AnyVal {
+  implicit class TreeListDropEventMutableBuilder[Self <: TreeListDropEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: TreeListModel): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropTarget(value: Element): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: TreeListModel): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setSetValid(value: Boolean): Self = StObject.set(x, "setValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropTarget(value: Element): Self = this.set("dropTarget", value.asInstanceOf[js.Any])
+    def setSetValidUndefined: Self = StObject.set(x, "setValid", js.undefined)
     
     @scala.inline
-    def deleteDropTarget: Self = this.set("dropTarget", js.undefined)
+    def setSource(value: TreeListModel): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValid(value: Boolean): Self = this.set("setValid", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSetValid: Self = this.set("setValid", js.undefined)
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: TreeListModel): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

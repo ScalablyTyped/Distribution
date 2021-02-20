@@ -2,12 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentAttempt extends js.Object {
+trait DeploymentAttempt extends StObject {
   
   var attempt: Double = js.native
   
@@ -88,87 +89,75 @@ object DeploymentAttempt {
   }
   
   @scala.inline
-  implicit class DeploymentAttemptOps[Self <: DeploymentAttempt] (val x: Self) extends AnyVal {
+  implicit class DeploymentAttemptMutableBuilder[Self <: DeploymentAttempt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentId(value: Double): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorLog(value: String): Self = StObject.set(x, "errorLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttempt(value: Double): Self = this.set("attempt", value.asInstanceOf[js.Any])
+    def setHasStarted(value: Boolean): Self = StObject.set(x, "hasStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: Double): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorLog(value: String): Self = this.set("errorLog", value.asInstanceOf[js.Any])
+    def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasStarted(value: Boolean): Self = this.set("hasStarted", value.asInstanceOf[js.Any])
+    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setJob(value: ReleaseTask): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = this.set("issues", js.Array(value :_*))
+    def setLastModifiedBy(value: IdentityRef): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: js.Array[Issue]): Self = this.set("issues", value.asInstanceOf[js.Any])
+    def setLastModifiedOn(value: Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob(value: ReleaseTask): Self = this.set("job", value.asInstanceOf[js.Any])
+    def setOperationStatus(value: DeploymentOperationStatus): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBy(value: IdentityRef): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setPostDeploymentGates(value: ReleaseGates): Self = StObject.set(x, "postDeploymentGates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedOn(value: Date): Self = this.set("lastModifiedOn", value.asInstanceOf[js.Any])
+    def setPreDeploymentGates(value: ReleaseGates): Self = StObject.set(x, "preDeploymentGates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationStatus(value: DeploymentOperationStatus): Self = this.set("operationStatus", value.asInstanceOf[js.Any])
+    def setQueuedOn(value: Date): Self = StObject.set(x, "queuedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostDeploymentGates(value: ReleaseGates): Self = this.set("postDeploymentGates", value.asInstanceOf[js.Any])
+    def setReason(value: DeploymentReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreDeploymentGates(value: ReleaseGates): Self = this.set("preDeploymentGates", value.asInstanceOf[js.Any])
+    def setReleaseDeployPhases(value: js.Array[ReleaseDeployPhase]): Self = StObject.set(x, "releaseDeployPhases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuedOn(value: Date): Self = this.set("queuedOn", value.asInstanceOf[js.Any])
+    def setReleaseDeployPhasesVarargs(value: ReleaseDeployPhase*): Self = StObject.set(x, "releaseDeployPhases", js.Array(value :_*))
     
     @scala.inline
-    def setReason(value: DeploymentReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDeployPhasesVarargs(value: ReleaseDeployPhase*): Self = this.set("releaseDeployPhases", js.Array(value :_*))
+    def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDeployPhases(value: js.Array[ReleaseDeployPhase]): Self = this.set("releaseDeployPhases", value.asInstanceOf[js.Any])
+    def setRunPlanId(value: String): Self = StObject.set(x, "runPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
+    def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedFor(value: IdentityRef): Self = this.set("requestedFor", value.asInstanceOf[js.Any])
+    def setTasks(value: js.Array[ReleaseTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunPlanId(value: String): Self = this.set("runPlanId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: DeploymentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTasksVarargs(value: ReleaseTask*): Self = this.set("tasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTasks(value: js.Array[ReleaseTask]): Self = this.set("tasks", value.asInstanceOf[js.Any])
+    def setTasksVarargs(value: ReleaseTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.XCell
 import typings.activexLibreoffice.com_.sun.star.table.XCellRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,36 +77,24 @@ object XSheetCellCursor {
   }
   
   @scala.inline
-  implicit class XSheetCellCursorOps[Self <: XSheetCellCursor] (val x: Self) extends AnyVal {
+  implicit class XSheetCellCursorMutableBuilder[Self <: XSheetCellCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseToCurrentArray(value: () => Unit): Self = StObject.set(x, "collapseToCurrentArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseToCurrentRegion(value: () => Unit): Self = StObject.set(x, "collapseToCurrentRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapseToMergedArea(value: () => Unit): Self = StObject.set(x, "collapseToMergedArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapseToCurrentArray(value: () => Unit): Self = this.set("collapseToCurrentArray", js.Any.fromFunction0(value))
+    def setCollapseToSize(value: (Double, Double) => Unit): Self = StObject.set(x, "collapseToSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCollapseToCurrentRegion(value: () => Unit): Self = this.set("collapseToCurrentRegion", js.Any.fromFunction0(value))
+    def setExpandToEntireColumns(value: () => Unit): Self = StObject.set(x, "expandToEntireColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapseToMergedArea(value: () => Unit): Self = this.set("collapseToMergedArea", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCollapseToSize(value: (Double, Double) => Unit): Self = this.set("collapseToSize", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setExpandToEntireColumns(value: () => Unit): Self = this.set("expandToEntireColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExpandToEntireRows(value: () => Unit): Self = this.set("expandToEntireRows", js.Any.fromFunction0(value))
+    def setExpandToEntireRows(value: () => Unit): Self = StObject.set(x, "expandToEntireRows", js.Any.fromFunction0(value))
   }
 }

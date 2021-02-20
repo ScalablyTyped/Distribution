@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Field extends js.Object {
+trait Field extends StObject {
   
   /**
     * The field identifier.
@@ -31,33 +32,21 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldOps[Self <: Field] (val x: Self) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: fieldNameString): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRefValue(value: fieldNameString): Self = StObject.set(x, "refValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefValueUndefined: Self = StObject.set(x, "refValue", js.undefined)
     
     @scala.inline
-    def setKey(value: fieldNameString): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setStringValue(value: fieldStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefValue(value: fieldNameString): Self = this.set("refValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefValue: Self = this.set("refValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: fieldStringValue): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

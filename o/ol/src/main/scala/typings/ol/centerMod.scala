@@ -1,13 +1,14 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/center", JSImport.Namespace)
-@js.native
-object centerMod extends js.Object {
+object centerMod {
   
+  @JSImport("ol/geom/flat/center", "linearRingss")
+  @js.native
   def linearRingss(
     flatCoordinates: js.Array[Double],
     offset: Double,

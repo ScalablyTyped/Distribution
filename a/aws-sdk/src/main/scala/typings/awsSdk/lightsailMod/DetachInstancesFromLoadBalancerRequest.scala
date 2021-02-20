@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetachInstancesFromLoadBalancerRequest extends js.Object {
+trait DetachInstancesFromLoadBalancerRequest extends StObject {
   
   /**
     * An array of strings containing the names of the instances you want to detach from the load balancer.
@@ -26,27 +27,15 @@ object DetachInstancesFromLoadBalancerRequest {
   }
   
   @scala.inline
-  implicit class DetachInstancesFromLoadBalancerRequestOps[Self <: DetachInstancesFromLoadBalancerRequest] (val x: Self) extends AnyVal {
+  implicit class DetachInstancesFromLoadBalancerRequestMutableBuilder[Self <: DetachInstancesFromLoadBalancerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceNames(value: ResourceNameList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceNamesVarargs(value: ResourceName*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceNamesVarargs(value: ResourceName*): Self = this.set("instanceNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceNames(value: ResourceNameList): Self = this.set("instanceNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }
 }

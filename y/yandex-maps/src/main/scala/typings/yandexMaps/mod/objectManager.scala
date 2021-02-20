@@ -1,17 +1,17 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.mod.option.Manager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "objectManager")
-@js.native
-object objectManager extends js.Object {
+object objectManager {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IEventEmitter because Already inherited
-  - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @js.native
+  - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "objectManager.ObjectCollection")
+  @js.native
   class ObjectCollection () extends ICollection {
     
     def getById(): js.Object | Null = js.native

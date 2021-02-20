@@ -1,11 +1,12 @@
 package typings.hopscotch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HopscotchStatic extends js.Object {
+trait HopscotchStatic extends StObject {
   
   /**
     * Sets options for running the tour.

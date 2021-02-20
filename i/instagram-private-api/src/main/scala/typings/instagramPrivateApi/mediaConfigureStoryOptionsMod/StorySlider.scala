@@ -1,6 +1,7 @@
 package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
 import typings.instagramPrivateApi.instagramPrivateApiBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object StorySlider {
   }
   
   @scala.inline
-  implicit class StorySliderOps[Self <: StorySlider] (val x: Self) extends AnyVal {
+  implicit class StorySliderMutableBuilder[Self <: StorySlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground_color(value: String): Self = this.set("background_color", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmoji(value: String): Self = this.set("emoji", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIs_sticker(value: `true`): Self = this.set("is_sticker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_color(value: String): Self = this.set("text_color", value.asInstanceOf[js.Any])
+    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
   }
 }

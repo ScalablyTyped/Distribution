@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Created
 import typings.octokitTypes.anon.Display
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseData extends js.Object {
+trait EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseData extends StObject {
   
   var displayName: String = js.native
   
@@ -37,42 +38,30 @@ object EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseData {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseDataOps[Self <: EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseData] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseDataMutableBuilder[Self <: EnterpriseAdminUpdateAttributeForEnterpriseGroupResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMembers(value: js.Array[Display]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setMembersVarargs(value: Display*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMeta(value: Created): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembersVarargs(value: Display*): Self = this.set("members", js.Array(value :_*))
+    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[Display]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: Created): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = this.set("schemas", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
   }
 }

@@ -3,12 +3,13 @@ package typings.relayRuntime.relayStoreTypesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.relayRecordStateMod.RecordState
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordSource extends js.Object {
+trait RecordSource extends StObject {
   
   def get(dataID: DataID): js.UndefOr[Record | Null] = js.native
   
@@ -38,36 +39,24 @@ object RecordSource {
   }
   
   @scala.inline
-  implicit class RecordSourceOps[Self <: RecordSource] (val x: Self) extends AnyVal {
+  implicit class RecordSourceMutableBuilder[Self <: RecordSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: DataID => js.UndefOr[Record | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRecordIDs(value: () => js.Array[DataID]): Self = StObject.set(x, "getRecordIDs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStatus(value: DataID => RecordState): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: DataID => js.UndefOr[Record | Null]): Self = this.set("get", js.Any.fromFunction1(value))
+    def setHas(value: DataID => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRecordIDs(value: () => js.Array[DataID]): Self = this.set("getRecordIDs", js.Any.fromFunction0(value))
+    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStatus(value: DataID => RecordState): Self = this.set("getStatus", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHas(value: DataID => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToJSON(value: () => StringDictionary[Record]): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => StringDictionary[Record]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

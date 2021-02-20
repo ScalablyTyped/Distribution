@@ -532,12 +532,13 @@ import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestInterfaceMod.RequestInterface
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.octokitTypes.routeMod.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Paginate extends js.Object {
+trait Paginate extends StObject {
   
   /**
     * Paginate a request using endpoint options

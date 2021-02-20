@@ -5,14 +5,14 @@ import typings.typesettable.anon.KinIYAlignnumber
 import typings.typesettable.contextsMod.IPenFactoryContext
 import typings.typesettable.measurersMod.AbstractMeasurer
 import typings.typesettable.wrappersMod.Wrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/writers", JSImport.Namespace)
-@js.native
-object writersMod extends js.Object {
+object writersMod {
   
+  @JSImport("typesettable/build/src/writers", "Writer")
   @js.native
   class Writer protected ()
     extends typings.typesettable.writerMod.Writer {
@@ -20,13 +20,28 @@ object writersMod extends js.Object {
     def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[_], _wrapper: Wrapper) = this()
   }
   /* static members */
-  @js.native
-  object Writer extends js.Object {
+  object Writer {
     
-    var SupportedRotation: js.Any = js.native
+    @JSImport("typesettable/build/src/writers", "Writer")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var XOffsetFactor: KinIXAlignnumber = js.native
+    @JSImport("typesettable/build/src/writers", "Writer.SupportedRotation")
+    @js.native
+    def SupportedRotation: js.Any = js.native
+    @scala.inline
+    def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
     
-    var YOffsetFactor: KinIYAlignnumber = js.native
+    @JSImport("typesettable/build/src/writers", "Writer.XOffsetFactor")
+    @js.native
+    def XOffsetFactor: KinIXAlignnumber = js.native
+    @scala.inline
+    def XOffsetFactor_=(x: KinIXAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XOffsetFactor")(x.asInstanceOf[js.Any])
+    
+    @JSImport("typesettable/build/src/writers", "Writer.YOffsetFactor")
+    @js.native
+    def YOffsetFactor: KinIYAlignnumber = js.native
+    @scala.inline
+    def YOffsetFactor_=(x: KinIYAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOffsetFactor")(x.asInstanceOf[js.Any])
   }
 }

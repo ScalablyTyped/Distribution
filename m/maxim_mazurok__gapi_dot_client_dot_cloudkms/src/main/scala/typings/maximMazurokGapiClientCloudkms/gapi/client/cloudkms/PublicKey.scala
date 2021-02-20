@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicKey extends js.Object {
+trait PublicKey extends StObject {
   
   /** The Algorithm associated with this key. */
   var algorithm: js.UndefOr[String] = js.native
@@ -36,42 +37,30 @@ object PublicKey {
   }
   
   @scala.inline
-  implicit class PublicKeyOps[Self <: PublicKey] (val x: Self) extends AnyVal {
+  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPemCrc32c(value: String): Self = StObject.set(x, "pemCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPemCrc32cUndefined: Self = StObject.set(x, "pemCrc32c", js.undefined)
     
     @scala.inline
-    def setPem(value: String): Self = this.set("pem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePem: Self = this.set("pem", js.undefined)
-    
-    @scala.inline
-    def setPemCrc32c(value: String): Self = this.set("pemCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePemCrc32c: Self = this.set("pemCrc32c", js.undefined)
+    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
   }
 }

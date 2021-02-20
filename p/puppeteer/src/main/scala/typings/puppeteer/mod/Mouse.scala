@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.puppeteer.anon.Steps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mouse extends js.Object {
+trait Mouse extends StObject {
   
   /**
     * Shortcut for `mouse.move`, `mouse.down` and `mouse.up`.

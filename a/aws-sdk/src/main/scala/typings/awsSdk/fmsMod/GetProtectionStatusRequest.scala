@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProtectionStatusRequest extends js.Object {
+trait GetProtectionStatusRequest extends StObject {
   
   /**
     * The end of the time period to query for the attacks. This is a timestamp type. The request syntax listing indicates a number type because the default used by AWS Firewall Manager is Unix time in seconds. However, any valid timestamp format is allowed.
@@ -46,51 +47,39 @@ object GetProtectionStatusRequest {
   }
   
   @scala.inline
-  implicit class GetProtectionStatusRequestOps[Self <: GetProtectionStatusRequest] (val x: Self) extends AnyVal {
+  implicit class GetProtectionStatusRequestMutableBuilder[Self <: GetProtectionStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: TimeStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyId(value: PolicyId): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setEndTime(value: TimeStamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "MemberAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setMemberAccountIdUndefined: Self = StObject.set(x, "MemberAccountId", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: PaginationMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMemberAccountId(value: AWSAccountId): Self = this.set("MemberAccountId", value.asInstanceOf[js.Any])
+    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemberAccountId: Self = this.set("MemberAccountId", js.undefined)
+    def setStartTime(value: TimeStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: TimeStamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

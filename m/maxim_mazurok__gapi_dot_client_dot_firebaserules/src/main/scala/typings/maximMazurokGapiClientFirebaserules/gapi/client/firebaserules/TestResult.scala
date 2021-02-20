@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResult extends js.Object {
+trait TestResult extends StObject {
   
   /**
     * Debug messages related to test execution issues encountered during evaluation. Debug messages may be related to too many or too few invocations of function mocks or to runtime
@@ -49,66 +50,54 @@ object TestResult {
   }
   
   @scala.inline
-  implicit class TestResultOps[Self <: TestResult] (val x: Self) extends AnyVal {
+  implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebugMessages(value: js.Array[String]): Self = StObject.set(x, "debugMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugMessagesUndefined: Self = StObject.set(x, "debugMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugMessagesVarargs(value: String*): Self = StObject.set(x, "debugMessages", js.Array(value :_*))
     
     @scala.inline
-    def setDebugMessagesVarargs(value: String*): Self = this.set("debugMessages", js.Array(value :_*))
+    def setErrorPosition(value: SourcePosition): Self = StObject.set(x, "errorPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugMessages(value: js.Array[String]): Self = this.set("debugMessages", value.asInstanceOf[js.Any])
+    def setErrorPositionUndefined: Self = StObject.set(x, "errorPosition", js.undefined)
     
     @scala.inline
-    def deleteDebugMessages: Self = this.set("debugMessages", js.undefined)
+    def setExpressionReports(value: js.Array[ExpressionReport]): Self = StObject.set(x, "expressionReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorPosition(value: SourcePosition): Self = this.set("errorPosition", value.asInstanceOf[js.Any])
+    def setExpressionReportsUndefined: Self = StObject.set(x, "expressionReports", js.undefined)
     
     @scala.inline
-    def deleteErrorPosition: Self = this.set("errorPosition", js.undefined)
+    def setExpressionReportsVarargs(value: ExpressionReport*): Self = StObject.set(x, "expressionReports", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionReportsVarargs(value: ExpressionReport*): Self = this.set("expressionReports", js.Array(value :_*))
+    def setFunctionCalls(value: js.Array[FunctionCall]): Self = StObject.set(x, "functionCalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionReports(value: js.Array[ExpressionReport]): Self = this.set("expressionReports", value.asInstanceOf[js.Any])
+    def setFunctionCallsUndefined: Self = StObject.set(x, "functionCalls", js.undefined)
     
     @scala.inline
-    def deleteExpressionReports: Self = this.set("expressionReports", js.undefined)
+    def setFunctionCallsVarargs(value: FunctionCall*): Self = StObject.set(x, "functionCalls", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionCallsVarargs(value: FunctionCall*): Self = this.set("functionCalls", js.Array(value :_*))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionCalls(value: js.Array[FunctionCall]): Self = this.set("functionCalls", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteFunctionCalls: Self = this.set("functionCalls", js.undefined)
+    def setVisitedExpressions(value: js.Array[VisitedExpression]): Self = StObject.set(x, "visitedExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setVisitedExpressionsUndefined: Self = StObject.set(x, "visitedExpressions", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setVisitedExpressionsVarargs(value: VisitedExpression*): Self = this.set("visitedExpressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisitedExpressions(value: js.Array[VisitedExpression]): Self = this.set("visitedExpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisitedExpressions: Self = this.set("visitedExpressions", js.undefined)
+    def setVisitedExpressionsVarargs(value: VisitedExpression*): Self = StObject.set(x, "visitedExpressions", js.Array(value :_*))
   }
 }

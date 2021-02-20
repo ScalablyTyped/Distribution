@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAddress extends js.Object {
+trait IAddress extends StObject {
   
   /**
     * The street line of an address. The addressLine property is the most precise, official line for an address relative to the postal agency
@@ -55,42 +56,30 @@ object IAddress {
   }
   
   @scala.inline
-  implicit class IAddressOps[Self <: IAddress] (val x: Self) extends AnyVal {
+  implicit class IAddressMutableBuilder[Self <: IAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressLine(value: String): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryRegion(value: String): Self = StObject.set(x, "countryRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressLine(value: String): Self = this.set("addressLine", value.asInstanceOf[js.Any])
+    def setCountryRegionISO2(value: String): Self = StObject.set(x, "countryRegionISO2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminDistrict(value: String): Self = this.set("adminDistrict", value.asInstanceOf[js.Any])
+    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryRegion(value: String): Self = this.set("countryRegion", value.asInstanceOf[js.Any])
+    def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryRegionISO2(value: String): Self = this.set("countryRegionISO2", value.asInstanceOf[js.Any])
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistrict(value: String): Self = this.set("district", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormattedAddress(value: String): Self = this.set("formattedAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
   }
 }

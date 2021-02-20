@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestIdentityProviderResponse extends js.Object {
+trait TestIdentityProviderResponse extends StObject {
   
   /**
     * A message that indicates whether the test was successful or not.
@@ -36,36 +37,24 @@ object TestIdentityProviderResponse {
   }
   
   @scala.inline
-  implicit class TestIdentityProviderResponseOps[Self <: TestIdentityProviderResponse] (val x: Self) extends AnyVal {
+  implicit class TestIdentityProviderResponseMutableBuilder[Self <: TestIdentityProviderResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponse(value: Response): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: StatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
     
     @scala.inline
-    def setUrl(value: Url): Self = this.set("Url", value.asInstanceOf[js.Any])
+    def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
-    
-    @scala.inline
-    def setResponse(value: Response): Self = this.set("Response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("Response", js.undefined)
+    def setUrl(value: Url): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsymmetricSignResponse extends js.Object {
+trait AsymmetricSignResponse extends StObject {
   
   /** The resource name of the CryptoKeyVersion used for signing. Check this field to verify that the intended resource was used for signing. NOTE: This field is in Beta. */
   var name: js.UndefOr[String] = js.native
@@ -38,42 +39,30 @@ object AsymmetricSignResponse {
   }
   
   @scala.inline
-  implicit class AsymmetricSignResponseOps[Self <: AsymmetricSignResponse] (val x: Self) extends AnyVal {
+  implicit class AsymmetricSignResponseMutableBuilder[Self <: AsymmetricSignResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSignatureCrc32c(value: String): Self = StObject.set(x, "signatureCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSignatureCrc32cUndefined: Self = StObject.set(x, "signatureCrc32c", js.undefined)
     
     @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setVerifiedDigestCrc32c(value: Boolean): Self = StObject.set(x, "verifiedDigestCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureCrc32c(value: String): Self = this.set("signatureCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureCrc32c: Self = this.set("signatureCrc32c", js.undefined)
-    
-    @scala.inline
-    def setVerifiedDigestCrc32c(value: Boolean): Self = this.set("verifiedDigestCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifiedDigestCrc32c: Self = this.set("verifiedDigestCrc32c", js.undefined)
+    def setVerifiedDigestCrc32cUndefined: Self = StObject.set(x, "verifiedDigestCrc32c", js.undefined)
   }
 }

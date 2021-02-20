@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SiteVideoSettings extends js.Object {
+trait SiteVideoSettings extends StObject {
   
   /** Settings for the companion creatives of video creatives served to this site. */
   var companionSettings: js.UndefOr[SiteCompanionSetting] = js.native
@@ -37,60 +38,48 @@ object SiteVideoSettings {
   }
   
   @scala.inline
-  implicit class SiteVideoSettingsOps[Self <: SiteVideoSettings] (val x: Self) extends AnyVal {
+  implicit class SiteVideoSettingsMutableBuilder[Self <: SiteVideoSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanionSettings(value: SiteCompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanionSettingsUndefined: Self = StObject.set(x, "companionSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanionSettings(value: SiteCompanionSetting): Self = this.set("companionSettings", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteCompanionSettings: Self = this.set("companionSettings", js.undefined)
+    def setObaEnabled(value: Boolean): Self = StObject.set(x, "obaEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setObaEnabledUndefined: Self = StObject.set(x, "obaEnabled", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setObaSettings(value: ObaIcon): Self = StObject.set(x, "obaSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObaEnabled(value: Boolean): Self = this.set("obaEnabled", value.asInstanceOf[js.Any])
+    def setObaSettingsUndefined: Self = StObject.set(x, "obaSettings", js.undefined)
     
     @scala.inline
-    def deleteObaEnabled: Self = this.set("obaEnabled", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObaSettings(value: ObaIcon): Self = this.set("obaSettings", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteObaSettings: Self = this.set("obaSettings", js.undefined)
+    def setSkippableSettings(value: SiteSkippableSetting): Self = StObject.set(x, "skippableSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setSkippableSettingsUndefined: Self = StObject.set(x, "skippableSettings", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setTranscodeSettings(value: SiteTranscodeSetting): Self = StObject.set(x, "transcodeSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkippableSettings(value: SiteSkippableSetting): Self = this.set("skippableSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkippableSettings: Self = this.set("skippableSettings", js.undefined)
-    
-    @scala.inline
-    def setTranscodeSettings(value: SiteTranscodeSetting): Self = this.set("transcodeSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscodeSettings: Self = this.set("transcodeSettings", js.undefined)
+    def setTranscodeSettingsUndefined: Self = StObject.set(x, "transcodeSettings", js.undefined)
   }
 }

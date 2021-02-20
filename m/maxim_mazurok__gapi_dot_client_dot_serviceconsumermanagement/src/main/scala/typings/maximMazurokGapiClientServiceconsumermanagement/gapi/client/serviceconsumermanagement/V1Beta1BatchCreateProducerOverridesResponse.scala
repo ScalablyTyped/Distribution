@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V1Beta1BatchCreateProducerOverridesResponse extends js.Object {
+trait V1Beta1BatchCreateProducerOverridesResponse extends StObject {
   
   /** The overrides that were created. */
   var overrides: js.UndefOr[js.Array[V1Beta1QuotaOverride]] = js.native
@@ -19,27 +20,15 @@ object V1Beta1BatchCreateProducerOverridesResponse {
   }
   
   @scala.inline
-  implicit class V1Beta1BatchCreateProducerOverridesResponseOps[Self <: V1Beta1BatchCreateProducerOverridesResponse] (val x: Self) extends AnyVal {
+  implicit class V1Beta1BatchCreateProducerOverridesResponseMutableBuilder[Self <: V1Beta1BatchCreateProducerOverridesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverrides(value: js.Array[V1Beta1QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverridesVarargs(value: V1Beta1QuotaOverride*): Self = this.set("overrides", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverrides(value: js.Array[V1Beta1QuotaOverride]): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setOverridesVarargs(value: V1Beta1QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

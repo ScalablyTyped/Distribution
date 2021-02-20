@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties for music information that is displayed by the SystemMediaTransportControlsDisplayUpdater class. */
 @js.native
-trait MusicDisplayProperties extends js.Object {
+trait MusicDisplayProperties extends StObject {
   
   /** Gets or sets the name of the album artist. */
   var albumArtist: String = js.native
@@ -43,36 +44,24 @@ object MusicDisplayProperties {
   }
   
   @scala.inline
-  implicit class MusicDisplayPropertiesOps[Self <: MusicDisplayProperties] (val x: Self) extends AnyVal {
+  implicit class MusicDisplayPropertiesMutableBuilder[Self <: MusicDisplayProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumTitle(value: String): Self = StObject.set(x, "albumTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArtist(value: String): Self = this.set("albumArtist", value.asInstanceOf[js.Any])
+    def setGenres(value: IVector[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumTitle(value: String): Self = this.set("albumTitle", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtist(value: String): Self = this.set("artist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGenres(value: IVector[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackNumber(value: Double): Self = this.set("trackNumber", value.asInstanceOf[js.Any])
+    def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Script
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait StateTokenBuilder extends js.Object {
+trait StateTokenBuilder extends StObject {
   
   def createToken(): String = js.native
   
@@ -47,30 +48,18 @@ object StateTokenBuilder {
   }
   
   @scala.inline
-  implicit class StateTokenBuilderOps[Self <: StateTokenBuilder] (val x: Self) extends AnyVal {
+  implicit class StateTokenBuilderMutableBuilder[Self <: StateTokenBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateToken(value: () => String): Self = StObject.set(x, "createToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithArgument(value: (String, String) => StateTokenBuilder): Self = StObject.set(x, "withArgument", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithMethod(value: String => StateTokenBuilder): Self = StObject.set(x, "withMethod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateToken(value: () => String): Self = this.set("createToken", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWithArgument(value: (String, String) => StateTokenBuilder): Self = this.set("withArgument", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWithMethod(value: String => StateTokenBuilder): Self = this.set("withMethod", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithTimeout(value: Integer => StateTokenBuilder): Self = this.set("withTimeout", js.Any.fromFunction1(value))
+    def setWithTimeout(value: Integer => StateTokenBuilder): Self = StObject.set(x, "withTimeout", js.Any.fromFunction1(value))
   }
 }

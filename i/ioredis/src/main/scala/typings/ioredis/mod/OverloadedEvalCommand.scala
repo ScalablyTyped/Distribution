@@ -1,11 +1,12 @@
 package typings.ioredis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverloadedEvalCommand[T, U] extends js.Object {
+trait OverloadedEvalCommand[T, U] extends StObject {
   
   // This overload exists specifically to retain compatibility to `redlock`
   // All arguments are by default flattened, declaring all possible permuatations

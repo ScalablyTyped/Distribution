@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesTagResourceInputMod.TagResourceI
 import typings.awsSdkClientDynamodbBrowser.typesTagResourceOutputMod.TagResourceOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/TagResourceCommand", JSImport.Namespace)
-@js.native
-object tagResourceCommandMod extends js.Object {
+object tagResourceCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/TagResourceCommand", "TagResourceCommand")
   @js.native
   class TagResourceCommand protected () extends Command[
           InputTypesUnion, 

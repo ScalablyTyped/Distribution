@@ -1,17 +1,19 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.restrictActionRepositoryRestrictResponseMod.RestrictActionRepositoryRestrictResponseRootObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/restrict-action.repository", JSImport.Namespace)
-@js.native
-object restrictActionRepositoryMod extends js.Object {
+object restrictActionRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/restrict-action.repository", "RestrictActionRepository")
   @js.native
-  class RestrictActionRepository () extends Repository {
+  class RestrictActionRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def restrict(targetUserId: String): js.Promise[RestrictActionRepositoryRestrictResponseRootObject] = js.native
     def restrict(targetUserId: Double): js.Promise[RestrictActionRepositoryRestrictResponseRootObject] = js.native

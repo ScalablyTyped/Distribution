@@ -1,13 +1,14 @@
 package typings.ipfsHttpServer.anon
 
 import typings.debug.mod.Debugger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined debug.debug.Debugger & {  error :debug.debug.Debugger} */
 @js.native
-trait DebuggererrorDebugger extends js.Object {
+trait DebuggererrorDebugger extends StObject {
   
   def apply(formatter: js.Any, args: js.Any*): Unit = js.native
   

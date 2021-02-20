@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraMediaTypeObject extends js.Object {
+trait CameraMediaTypeObject extends StObject {
   
   var ALLMEDIA: Double = js.native
   
@@ -22,27 +23,15 @@ object CameraMediaTypeObject {
   }
   
   @scala.inline
-  implicit class CameraMediaTypeObjectOps[Self <: CameraMediaTypeObject] (val x: Self) extends AnyVal {
+  implicit class CameraMediaTypeObjectMutableBuilder[Self <: CameraMediaTypeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALLMEDIA(value: Double): Self = StObject.set(x, "ALLMEDIA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPICTURE(value: Double): Self = StObject.set(x, "PICTURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setALLMEDIA(value: Double): Self = this.set("ALLMEDIA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPICTURE(value: Double): Self = this.set("PICTURE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVIDEO(value: Double): Self = this.set("VIDEO", value.asInstanceOf[js.Any])
+    def setVIDEO(value: Double): Self = StObject.set(x, "VIDEO", value.asInstanceOf[js.Any])
   }
 }

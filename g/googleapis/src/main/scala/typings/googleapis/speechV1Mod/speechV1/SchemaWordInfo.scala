@@ -1,5 +1,6 @@
 package typings.googleapis.speechV1Mod.speechV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Word-specific information for recognized words.
   */
 @js.native
-trait SchemaWordInfo extends js.Object {
+trait SchemaWordInfo extends StObject {
   
   /**
     * Output only. Time offset relative to the beginning of the audio, and
@@ -40,36 +41,24 @@ object SchemaWordInfo {
   }
   
   @scala.inline
-  implicit class SchemaWordInfoOps[Self <: SchemaWordInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaWordInfoMutableBuilder[Self <: SchemaWordInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord: Self = this.set("word", js.undefined)
+    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

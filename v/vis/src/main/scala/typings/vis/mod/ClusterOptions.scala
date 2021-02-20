@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOptions extends js.Object {
+trait ClusterOptions extends StObject {
   
   /**
     * Optional.
@@ -61,44 +62,32 @@ object ClusterOptions {
   }
   
   @scala.inline
-  implicit class ClusterOptionsOps[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+  implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterEdgeProperties(value: EdgeOptions): Self = StObject.set(x, "clusterEdgeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterEdgePropertiesUndefined: Self = StObject.set(x, "clusterEdgeProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterNodeProperties(value: NodeOptions): Self = StObject.set(x, "clusterNodeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterEdgeProperties(value: EdgeOptions): Self = this.set("clusterEdgeProperties", value.asInstanceOf[js.Any])
+    def setClusterNodePropertiesUndefined: Self = StObject.set(x, "clusterNodeProperties", js.undefined)
     
     @scala.inline
-    def deleteClusterEdgeProperties: Self = this.set("clusterEdgeProperties", js.undefined)
+    def setJoinCondition(value: /* nodeOptions */ js.Any => Boolean): Self = StObject.set(x, "joinCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClusterNodeProperties(value: NodeOptions): Self = this.set("clusterNodeProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterNodeProperties: Self = this.set("clusterNodeProperties", js.undefined)
-    
-    @scala.inline
-    def setJoinCondition(value: /* nodeOptions */ js.Any => Boolean): Self = this.set("joinCondition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteJoinCondition: Self = this.set("joinCondition", js.undefined)
+    def setJoinConditionUndefined: Self = StObject.set(x, "joinCondition", js.undefined)
     
     @scala.inline
     def setProcessProperties(
       value: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[_], /* childEdgesOptions */ js.Array[_]) => _
-    ): Self = this.set("processProperties", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "processProperties", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteProcessProperties: Self = this.set("processProperties", js.undefined)
+    def setProcessPropertiesUndefined: Self = StObject.set(x, "processProperties", js.undefined)
   }
 }

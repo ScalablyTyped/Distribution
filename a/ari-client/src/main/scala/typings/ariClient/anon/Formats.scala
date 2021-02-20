@@ -1,11 +1,12 @@
 package typings.ariClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Formats extends js.Object {
+trait Formats extends StObject {
   
   var app: String = js.native
   
@@ -28,48 +29,36 @@ object Formats {
   }
   
   @scala.inline
-  implicit class FormatsOps[Self <: Formats] (val x: Self) extends AnyVal {
+  implicit class FormatsMutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
     
     @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setFormats(value: String): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppArgs(value: String): Self = this.set("appArgs", value.asInstanceOf[js.Any])
+    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
     @scala.inline
-    def deleteAppArgs: Self = this.set("appArgs", js.undefined)
+    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: String): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setOriginatorUndefined: Self = StObject.set(x, "originator", js.undefined)
     
     @scala.inline
-    def deleteFormats: Self = this.set("formats", js.undefined)
+    def setOtherChannelId(value: String): Self = StObject.set(x, "otherChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginator(value: String): Self = this.set("originator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginator: Self = this.set("originator", js.undefined)
-    
-    @scala.inline
-    def setOtherChannelId(value: String): Self = this.set("otherChannelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtherChannelId: Self = this.set("otherChannelId", js.undefined)
+    def setOtherChannelIdUndefined: Self = StObject.set(x, "otherChannelId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePlayerSessionOutput extends js.Object {
+trait CreatePlayerSessionOutput extends StObject {
   
   /**
     * Object that describes the newly created player session record.
@@ -21,24 +22,12 @@ object CreatePlayerSessionOutput {
   }
   
   @scala.inline
-  implicit class CreatePlayerSessionOutputOps[Self <: CreatePlayerSessionOutput] (val x: Self) extends AnyVal {
+  implicit class CreatePlayerSessionOutputMutableBuilder[Self <: CreatePlayerSessionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlayerSession(value: PlayerSession): Self = StObject.set(x, "PlayerSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlayerSession(value: PlayerSession): Self = this.set("PlayerSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerSession: Self = this.set("PlayerSession", js.undefined)
+    def setPlayerSessionUndefined: Self = StObject.set(x, "PlayerSession", js.undefined)
   }
 }

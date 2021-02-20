@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +30,4 @@ package object Controls {
     - typings.xrm.Xrm.Controls.ControlQuickFormType
   */
   type ControlType = typings.xrm.Xrm.Controls._ControlType | typings.xrm.Xrm.Controls.ControlQuickFormType
-  
-  type Grid = typings.xrm.Xrm.Controls.Grid_
 }

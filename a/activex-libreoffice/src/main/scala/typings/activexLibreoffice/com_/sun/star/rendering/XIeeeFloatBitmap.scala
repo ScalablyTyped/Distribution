@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.IntegerRectangle2D
 import typings.activexLibreoffice.com_.sun.star.geometry.IntegerSize2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,24 +70,12 @@ object XIeeeFloatBitmap {
   }
   
   @scala.inline
-  implicit class XIeeeFloatBitmapOps[Self <: XIeeeFloatBitmap] (val x: Self) extends AnyVal {
+  implicit class XIeeeFloatBitmapMutableBuilder[Self <: XIeeeFloatBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetData(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetData(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit): Self = this.set("setData", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetPixel(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerPoint2D) => Unit): Self = this.set("setPixel", js.Any.fromFunction3(value))
+    def setSetPixel(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerPoint2D) => Unit): Self = StObject.set(x, "setPixel", js.Any.fromFunction3(value))
   }
 }

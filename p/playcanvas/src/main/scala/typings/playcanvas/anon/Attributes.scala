@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attributes extends js.Object {
+trait Attributes extends StObject {
   
   var attributes: js.Any = js.native
   
@@ -24,33 +25,21 @@ object Attributes {
   }
   
   @scala.inline
-  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFshader(value: String): Self = StObject.set(x, "fshader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseTransformFeedback(value: Boolean): Self = StObject.set(x, "useTransformFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setUseTransformFeedbackUndefined: Self = StObject.set(x, "useTransformFeedback", js.undefined)
     
     @scala.inline
-    def setFshader(value: String): Self = this.set("fshader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVshader(value: String): Self = this.set("vshader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseTransformFeedback(value: Boolean): Self = this.set("useTransformFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTransformFeedback: Self = this.set("useTransformFeedback", js.undefined)
+    def setVshader(value: String): Self = StObject.set(x, "vshader", value.asInstanceOf[js.Any])
   }
 }

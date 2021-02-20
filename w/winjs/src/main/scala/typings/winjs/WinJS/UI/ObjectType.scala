@@ -1,17 +1,18 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ObjectType extends js.Object
+sealed trait ObjectType extends StObject
 /**
   * Describes the type of object in a ListView.
   **/
 @JSGlobal("WinJS.UI.ObjectType")
 @js.native
-object ObjectType extends js.Object {
+object ObjectType extends StObject {
   
   /**
     * The object is the footer for the list.

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.rooftop
 import typings.arcgisJsApi.arcgisJsApiStrings.street
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,69 +75,57 @@ object LocatorSearchSourceProperties {
   }
   
   @scala.inline
-  implicit class LocatorSearchSourcePropertiesOps[Self <: LocatorSearchSourceProperties] (val x: Self) extends AnyVal {
+  implicit class LocatorSearchSourcePropertiesMutableBuilder[Self <: LocatorSearchSourceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setDefaultZoomScale(value: Double): Self = StObject.set(x, "defaultZoomScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setDefaultZoomScaleUndefined: Self = StObject.set(x, "defaultZoomScale", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setLocationType(value: rooftop | street): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultZoomScale(value: Double): Self = this.set("defaultZoomScale", value.asInstanceOf[js.Any])
+    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
     @scala.inline
-    def deleteDefaultZoomScale: Self = this.set("defaultZoomScale", js.undefined)
+    def setLocator(value: LocatorProperties): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: rooftop | street): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
     
     @scala.inline
-    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocator(value: LocatorProperties): Self = this.set("locator", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocator: Self = this.set("locator", js.undefined)
+    def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSearchTemplateUndefined: Self = StObject.set(x, "searchTemplate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSingleLineFieldName(value: String): Self = StObject.set(x, "singleLineFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchTemplate(value: String): Self = this.set("searchTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchTemplate: Self = this.set("searchTemplate", js.undefined)
-    
-    @scala.inline
-    def setSingleLineFieldName(value: String): Self = this.set("singleLineFieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleLineFieldName: Self = this.set("singleLineFieldName", js.undefined)
+    def setSingleLineFieldNameUndefined: Self = StObject.set(x, "singleLineFieldName", js.undefined)
   }
 }

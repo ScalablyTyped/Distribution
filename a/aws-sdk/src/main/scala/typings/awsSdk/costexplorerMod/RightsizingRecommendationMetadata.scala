@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RightsizingRecommendationMetadata extends js.Object {
+trait RightsizingRecommendationMetadata extends StObject {
   
   /**
     *  The timestamp for when AWS made this recommendation.
@@ -31,36 +32,24 @@ object RightsizingRecommendationMetadata {
   }
   
   @scala.inline
-  implicit class RightsizingRecommendationMetadataOps[Self <: RightsizingRecommendationMetadata] (val x: Self) extends AnyVal {
+  implicit class RightsizingRecommendationMetadataMutableBuilder[Self <: RightsizingRecommendationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerationTimestampUndefined: Self = StObject.set(x, "GenerationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerationTimestamp(value: GenericString): Self = this.set("GenerationTimestamp", value.asInstanceOf[js.Any])
+    def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
     
     @scala.inline
-    def deleteGenerationTimestamp: Self = this.set("GenerationTimestamp", js.undefined)
+    def setRecommendationId(value: GenericString): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = this.set("LookbackPeriodInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLookbackPeriodInDays: Self = this.set("LookbackPeriodInDays", js.undefined)
-    
-    @scala.inline
-    def setRecommendationId(value: GenericString): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
+    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.stylus.anon
 
 import typings.stylus.mod.Stylus.Nodes.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinenoSegments extends js.Object {
+trait LinenoSegments extends StObject {
   
   var __type: String = js.native
   
@@ -39,45 +40,33 @@ object LinenoSegments {
   }
   
   @scala.inline
-  implicit class LinenoSegmentsOps[Self <: LinenoSegments] (val x: Self) extends AnyVal {
+  implicit class LinenoSegmentsMutableBuilder[Self <: LinenoSegments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__type(value: String): Self = this.set("__type", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineno(value: Double): Self = this.set("lineno", value.asInstanceOf[js.Any])
+    def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: Node*): Self = this.set("segments", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[Node]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlock: Self = this.set("block", js.undefined)
+    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

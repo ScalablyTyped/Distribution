@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object Route {
   }
   
   @scala.inline
-  implicit class RouteOps[Self <: Route] (val x: Self) extends AnyVal {
+  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoute(value: RegExp): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCallback(value: String => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoute(value: RegExp): Self = this.set("route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorksWith(value: String => Unit): Self = this.set("worksWith", js.Any.fromFunction1(value))
+    def setWorksWith(value: String => Unit): Self = StObject.set(x, "worksWith", js.Any.fromFunction1(value))
   }
 }

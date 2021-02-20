@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryExecuteSubsetParams extends js.Object {
+trait QueryExecuteSubsetParams extends StObject {
   
   var batchIndex: Double = js.native
   
@@ -32,33 +33,21 @@ object QueryExecuteSubsetParams {
   }
   
   @scala.inline
-  implicit class QueryExecuteSubsetParamsOps[Self <: QueryExecuteSubsetParams] (val x: Self) extends AnyVal {
+  implicit class QueryExecuteSubsetParamsMutableBuilder[Self <: QueryExecuteSubsetParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchIndex(value: Double): Self = StObject.set(x, "batchIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultSetIndex(value: Double): Self = StObject.set(x, "resultSetIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchIndex(value: Double): Self = this.set("batchIndex", value.asInstanceOf[js.Any])
+    def setRowsCount(value: Double): Self = StObject.set(x, "rowsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerUri(value: String): Self = this.set("ownerUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultSetIndex(value: Double): Self = this.set("resultSetIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsCount(value: Double): Self = this.set("rowsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsStartIndex(value: Double): Self = this.set("rowsStartIndex", value.asInstanceOf[js.Any])
+    def setRowsStartIndex(value: Double): Self = StObject.set(x, "rowsStartIndex", value.asInstanceOf[js.Any])
   }
 }

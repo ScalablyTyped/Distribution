@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The result of adding a new protected range.
   */
 @js.native
-trait SchemaAddProtectedRangeResponse extends js.Object {
+trait SchemaAddProtectedRangeResponse extends StObject {
   
   /**
     * The newly added protected range.
@@ -24,24 +25,12 @@ object SchemaAddProtectedRangeResponse {
   }
   
   @scala.inline
-  implicit class SchemaAddProtectedRangeResponseOps[Self <: SchemaAddProtectedRangeResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAddProtectedRangeResponseMutableBuilder[Self <: SchemaAddProtectedRangeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtectedRange(value: SchemaProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProtectedRange(value: SchemaProtectedRange): Self = this.set("protectedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtectedRange: Self = this.set("protectedRange", js.undefined)
+    def setProtectedRangeUndefined: Self = StObject.set(x, "protectedRange", js.undefined)
   }
 }

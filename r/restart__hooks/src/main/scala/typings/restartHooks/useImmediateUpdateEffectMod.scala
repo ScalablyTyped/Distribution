@@ -2,13 +2,12 @@ package typings.restartHooks
 
 import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@restart/hooks/cjs/useImmediateUpdateEffect", JSImport.Namespace)
-@js.native
-object useImmediateUpdateEffectMod extends js.Object {
+object useImmediateUpdateEffectMod {
   
   /**
     * An _immediate_ effect that runs an effect callback when its dependency array
@@ -26,5 +25,7 @@ object useImmediateUpdateEffectMod extends js.Object {
     *
     * @category effects
     */
+  @JSImport("@restart/hooks/cjs/useImmediateUpdateEffect", JSImport.Default)
+  @js.native
   def default(effect: EffectCallback, deps: DependencyList): Unit = js.native
 }

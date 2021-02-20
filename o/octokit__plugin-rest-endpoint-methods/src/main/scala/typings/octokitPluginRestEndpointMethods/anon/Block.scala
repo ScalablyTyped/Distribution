@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Block extends js.Object {
+trait Block extends StObject {
   
   var addEmailForAuthenticated: `1068` = js.native
   
@@ -113,114 +114,102 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEmailForAuthenticated(value: `1068`): Self = StObject.set(x, "addEmailForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlock(value: `1069`): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckBlocked(value: `1070`): Self = StObject.set(x, "checkBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEmailForAuthenticated(value: `1068`): Self = this.set("addEmailForAuthenticated", value.asInstanceOf[js.Any])
+    def setCheckFollowingForUser(value: `1071`): Self = StObject.set(x, "checkFollowingForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: `1069`): Self = this.set("block", value.asInstanceOf[js.Any])
+    def setCheckPersonIsFollowedByAuthenticated(value: `1072`): Self = StObject.set(x, "checkPersonIsFollowedByAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckBlocked(value: `1070`): Self = this.set("checkBlocked", value.asInstanceOf[js.Any])
+    def setCreateGpgKeyForAuthenticated(value: `1073`): Self = StObject.set(x, "createGpgKeyForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckFollowingForUser(value: `1071`): Self = this.set("checkFollowingForUser", value.asInstanceOf[js.Any])
+    def setCreatePublicSshKeyForAuthenticated(value: `1074`): Self = StObject.set(x, "createPublicSshKeyForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckPersonIsFollowedByAuthenticated(value: `1072`): Self = this.set("checkPersonIsFollowedByAuthenticated", value.asInstanceOf[js.Any])
+    def setDeleteEmailForAuthenticated(value: `1075`): Self = StObject.set(x, "deleteEmailForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateGpgKeyForAuthenticated(value: `1073`): Self = this.set("createGpgKeyForAuthenticated", value.asInstanceOf[js.Any])
+    def setDeleteGpgKeyForAuthenticated(value: `1076`): Self = StObject.set(x, "deleteGpgKeyForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatePublicSshKeyForAuthenticated(value: `1074`): Self = this.set("createPublicSshKeyForAuthenticated", value.asInstanceOf[js.Any])
+    def setDeletePublicSshKeyForAuthenticated(value: `1077`): Self = StObject.set(x, "deletePublicSshKeyForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteEmailForAuthenticated(value: `1075`): Self = this.set("deleteEmailForAuthenticated", value.asInstanceOf[js.Any])
+    def setFollow(value: `1078`): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteGpgKeyForAuthenticated(value: `1076`): Self = this.set("deleteGpgKeyForAuthenticated", value.asInstanceOf[js.Any])
+    def setGetAuthenticated(value: `1079`): Self = StObject.set(x, "getAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePublicSshKeyForAuthenticated(value: `1077`): Self = this.set("deletePublicSshKeyForAuthenticated", value.asInstanceOf[js.Any])
+    def setGetByUsername(value: `1080`): Self = StObject.set(x, "getByUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: `1078`): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def setGetContextForUser(value: `1081`): Self = StObject.set(x, "getContextForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAuthenticated(value: `1079`): Self = this.set("getAuthenticated", value.asInstanceOf[js.Any])
+    def setGetGpgKeyForAuthenticated(value: `1082`): Self = StObject.set(x, "getGpgKeyForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetByUsername(value: `1080`): Self = this.set("getByUsername", value.asInstanceOf[js.Any])
+    def setGetPublicSshKeyForAuthenticated(value: `1083`): Self = StObject.set(x, "getPublicSshKeyForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetContextForUser(value: `1081`): Self = this.set("getContextForUser", value.asInstanceOf[js.Any])
+    def setList(value: `1084`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetGpgKeyForAuthenticated(value: `1082`): Self = this.set("getGpgKeyForAuthenticated", value.asInstanceOf[js.Any])
+    def setListBlockedByAuthenticated(value: `1085`): Self = StObject.set(x, "listBlockedByAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPublicSshKeyForAuthenticated(value: `1083`): Self = this.set("getPublicSshKeyForAuthenticated", value.asInstanceOf[js.Any])
+    def setListEmailsForAuthenticated(value: `1086`): Self = StObject.set(x, "listEmailsForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: `1084`): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setListFollowedByAuthenticated(value: `1087`): Self = StObject.set(x, "listFollowedByAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListBlockedByAuthenticated(value: `1085`): Self = this.set("listBlockedByAuthenticated", value.asInstanceOf[js.Any])
+    def setListFollowersForAuthenticatedUser(value: `1088`): Self = StObject.set(x, "listFollowersForAuthenticatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEmailsForAuthenticated(value: `1086`): Self = this.set("listEmailsForAuthenticated", value.asInstanceOf[js.Any])
+    def setListFollowersForUser(value: `1089`): Self = StObject.set(x, "listFollowersForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListFollowedByAuthenticated(value: `1087`): Self = this.set("listFollowedByAuthenticated", value.asInstanceOf[js.Any])
+    def setListFollowingForUser(value: `1090`): Self = StObject.set(x, "listFollowingForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListFollowersForAuthenticatedUser(value: `1088`): Self = this.set("listFollowersForAuthenticatedUser", value.asInstanceOf[js.Any])
+    def setListGpgKeysForAuthenticated(value: `1091`): Self = StObject.set(x, "listGpgKeysForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListFollowersForUser(value: `1089`): Self = this.set("listFollowersForUser", value.asInstanceOf[js.Any])
+    def setListGpgKeysForUser(value: `1092`): Self = StObject.set(x, "listGpgKeysForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListFollowingForUser(value: `1090`): Self = this.set("listFollowingForUser", value.asInstanceOf[js.Any])
+    def setListPublicEmailsForAuthenticated(value: `1093`): Self = StObject.set(x, "listPublicEmailsForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListGpgKeysForAuthenticated(value: `1091`): Self = this.set("listGpgKeysForAuthenticated", value.asInstanceOf[js.Any])
+    def setListPublicKeysForUser(value: `1094`): Self = StObject.set(x, "listPublicKeysForUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListGpgKeysForUser(value: `1092`): Self = this.set("listGpgKeysForUser", value.asInstanceOf[js.Any])
+    def setListPublicSshKeysForAuthenticated(value: `1095`): Self = StObject.set(x, "listPublicSshKeysForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicEmailsForAuthenticated(value: `1093`): Self = this.set("listPublicEmailsForAuthenticated", value.asInstanceOf[js.Any])
+    def setSetPrimaryEmailVisibilityForAuthenticated(value: `1096`): Self = StObject.set(x, "setPrimaryEmailVisibilityForAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicKeysForUser(value: `1094`): Self = this.set("listPublicKeysForUser", value.asInstanceOf[js.Any])
+    def setUnblock(value: `1097`): Self = StObject.set(x, "unblock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPublicSshKeysForAuthenticated(value: `1095`): Self = this.set("listPublicSshKeysForAuthenticated", value.asInstanceOf[js.Any])
+    def setUnfollow(value: `1098`): Self = StObject.set(x, "unfollow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPrimaryEmailVisibilityForAuthenticated(value: `1096`): Self = this.set("setPrimaryEmailVisibilityForAuthenticated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnblock(value: `1097`): Self = this.set("unblock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnfollow(value: `1098`): Self = this.set("unfollow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateAuthenticated(value: `1099`): Self = this.set("updateAuthenticated", value.asInstanceOf[js.Any])
+    def setUpdateAuthenticated(value: `1099`): Self = StObject.set(x, "updateAuthenticated", value.asInstanceOf[js.Any])
   }
 }

@@ -1,8 +1,9 @@
 package typings.kendoUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryAjaxSettings extends js.Object
+trait JQueryAjaxSettings extends StObject

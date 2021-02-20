@@ -1,11 +1,12 @@
 package typings.knockoutAmdHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutAMDModule extends js.Object {
+trait KnockoutAMDModule extends StObject {
   
   var baseDir: String = js.native
   
@@ -24,30 +25,18 @@ object KnockoutAMDModule {
   }
   
   @scala.inline
-  implicit class KnockoutAMDModuleOps[Self <: KnockoutAMDModule] (val x: Self) extends AnyVal {
+  implicit class KnockoutAMDModuleMutableBuilder[Self <: KnockoutAMDModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisposeMethod(value: String): Self = StObject.set(x, "disposeMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitializer(value: String): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseDir(value: String): Self = this.set("baseDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisposeMethod(value: String): Self = this.set("disposeMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitializer(value: String): Self = this.set("initializer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateProperty(value: String): Self = this.set("templateProperty", value.asInstanceOf[js.Any])
+    def setTemplateProperty(value: String): Self = StObject.set(x, "templateProperty", value.asInstanceOf[js.Any])
   }
 }

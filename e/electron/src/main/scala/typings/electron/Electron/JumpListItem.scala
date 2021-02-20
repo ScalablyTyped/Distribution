@@ -3,12 +3,13 @@ package typings.electron.Electron
 import typings.electron.electronStrings.file
 import typings.electron.electronStrings.separator
 import typings.electron.electronStrings.task
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JumpListItem extends js.Object {
+trait JumpListItem extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/jump-list-item
   /**
@@ -74,72 +75,60 @@ object JumpListItem {
   }
   
   @scala.inline
-  implicit class JumpListItemOps[Self <: JumpListItem] (val x: Self) extends AnyVal {
+  implicit class JumpListItemMutableBuilder[Self <: JumpListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: String): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setIconIndex(value: Double): Self = StObject.set(x, "iconIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIconIndexUndefined: Self = StObject.set(x, "iconIndex", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconIndex(value: Double): Self = this.set("iconIndex", value.asInstanceOf[js.Any])
+    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
     
     @scala.inline
-    def deleteIconIndex: Self = this.set("iconIndex", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconPath(value: String): Self = this.set("iconPath", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteIconPath: Self = this.set("iconPath", js.undefined)
+    def setProgram(value: String): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgram(value: String): Self = this.set("program", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteProgram: Self = this.set("program", js.undefined)
+    def setType(value: task | separator | file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: task | separator | file): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWorkingDirectory(value: String): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

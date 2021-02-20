@@ -1,11 +1,12 @@
 package typings.objectPathImmutable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WrappedObject[T] extends js.Object {
+trait WrappedObject[T] extends StObject {
   
   def assign(): WrappedObject[T] = js.native
   def assign(path: js.UndefOr[Path], source: js.Any): WrappedObject[T] = js.native

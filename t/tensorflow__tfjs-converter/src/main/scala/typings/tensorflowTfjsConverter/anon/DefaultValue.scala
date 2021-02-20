@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsConverter.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultValue extends js.Object {
+trait DefaultValue extends StObject {
   
   var defaultValue: AnyOf = js.native
   
@@ -29,36 +30,24 @@ object DefaultValue {
   }
   
   @scala.inline
-  implicit class DefaultValueOps[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: AnyOf): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: Type): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: Type): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: AnyOf): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setNotSupported(value: Type): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Type): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setStart(value: Type): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Type): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotSupported(value: Type): Self = this.set("notSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Type): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Ref): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

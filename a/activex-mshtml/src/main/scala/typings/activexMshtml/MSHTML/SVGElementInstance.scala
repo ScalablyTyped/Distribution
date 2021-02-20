@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGElementInstance extends js.Object {
+trait SVGElementInstance extends StObject {
   
   @JSName("MSHTML.SVGElementInstance_typekey")
   var MSHTMLDotSVGElementInstance_typekey: SVGElementInstance = js.native
@@ -55,54 +56,42 @@ object SVGElementInstance {
   }
   
   @scala.inline
-  implicit class SVGElementInstanceOps[Self <: SVGElementInstance] (val x: Self) extends AnyVal {
+  implicit class SVGElementInstanceMutableBuilder[Self <: SVGElementInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildNodes(value: ISVGElementInstanceList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorrespondingElement(value: ISVGElement): Self = StObject.set(x, "correspondingElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotSVGElementInstance_typekey(value: SVGElementInstance): Self = this.set("MSHTML.SVGElementInstance_typekey", value.asInstanceOf[js.Any])
+    def setCorrespondingUseElement(value: ISVGUseElement): Self = StObject.set(x, "correspondingUseElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = this.set("addEventListener", js.Any.fromFunction3(value))
+    def setDispatchEvent(value: IDOMEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildNodes(value: ISVGElementInstanceList): Self = this.set("childNodes", value.asInstanceOf[js.Any])
+    def setFirstChild(value: ISVGElementInstance): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrespondingElement(value: ISVGElement): Self = this.set("correspondingElement", value.asInstanceOf[js.Any])
+    def setLastChild(value: ISVGElementInstance): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrespondingUseElement(value: ISVGUseElement): Self = this.set("correspondingUseElement", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGElementInstance_typekey(value: SVGElementInstance): Self = StObject.set(x, "MSHTML.SVGElementInstance_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatchEvent(value: IDOMEvent => Boolean): Self = this.set("dispatchEvent", js.Any.fromFunction1(value))
+    def setNextSibling(value: ISVGElementInstance): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstChild(value: ISVGElementInstance): Self = this.set("firstChild", value.asInstanceOf[js.Any])
+    def setParentNode(value: ISVGElementInstance): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChild(value: ISVGElementInstance): Self = this.set("lastChild", value.asInstanceOf[js.Any])
+    def setPreviousSibling(value: ISVGElementInstance): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextSibling(value: ISVGElementInstance): Self = this.set("nextSibling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNode(value: ISVGElementInstance): Self = this.set("parentNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousSibling(value: ISVGElementInstance): Self = this.set("previousSibling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction3(value))
+    def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

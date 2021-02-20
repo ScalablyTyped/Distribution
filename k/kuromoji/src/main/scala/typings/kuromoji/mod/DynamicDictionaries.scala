@@ -2,12 +2,13 @@ package typings.kuromoji.mod
 
 import typings.doublearray.doublearray.DoubleArray
 import typings.std.Int32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicDictionaries extends js.Object {
+trait DynamicDictionaries extends StObject {
   
   var connection_costs: ConnectionCosts = js.native
   
@@ -34,33 +35,21 @@ object DynamicDictionaries {
   }
   
   @scala.inline
-  implicit class DynamicDictionariesOps[Self <: DynamicDictionaries] (val x: Self) extends AnyVal {
+  implicit class DynamicDictionariesMutableBuilder[Self <: DynamicDictionaries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection_costs(value: ConnectionCosts): Self = StObject.set(x, "connection_costs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadTrie(value: (Int32Array, Int32Array) => DynamicDictionaries): Self = StObject.set(x, "loadTrie", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection_costs(value: ConnectionCosts): Self = this.set("connection_costs", value.asInstanceOf[js.Any])
+    def setTrie(value: DoubleArray): Self = StObject.set(x, "trie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadTrie(value: (Int32Array, Int32Array) => DynamicDictionaries): Self = this.set("loadTrie", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setToken_info_dictionary(value: TokenInfoDictionary): Self = this.set("token_info_dictionary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrie(value: DoubleArray): Self = this.set("trie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown_dictionary(value: UnknownDictionary): Self = this.set("unknown_dictionary", value.asInstanceOf[js.Any])
+    def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
   }
 }

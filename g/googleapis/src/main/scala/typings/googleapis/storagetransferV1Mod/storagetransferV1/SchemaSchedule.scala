@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Transfers can be scheduled to recur or to run just once.
   */
 @js.native
-trait SchemaSchedule extends js.Object {
+trait SchemaSchedule extends StObject {
   
   /**
     * The last day the recurring transfer will be run. If `scheduleEndDate` is
@@ -43,36 +44,24 @@ object SchemaSchedule {
   }
   
   @scala.inline
-  implicit class SchemaScheduleOps[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
+  implicit class SchemaScheduleMutableBuilder[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScheduleEndDate(value: SchemaDate): Self = StObject.set(x, "scheduleEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScheduleEndDateUndefined: Self = StObject.set(x, "scheduleEndDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduleStartDate(value: SchemaDate): Self = StObject.set(x, "scheduleStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleEndDate(value: SchemaDate): Self = this.set("scheduleEndDate", value.asInstanceOf[js.Any])
+    def setScheduleStartDateUndefined: Self = StObject.set(x, "scheduleStartDate", js.undefined)
     
     @scala.inline
-    def deleteScheduleEndDate: Self = this.set("scheduleEndDate", js.undefined)
+    def setStartTimeOfDay(value: SchemaTimeOfDay): Self = StObject.set(x, "startTimeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleStartDate(value: SchemaDate): Self = this.set("scheduleStartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleStartDate: Self = this.set("scheduleStartDate", js.undefined)
-    
-    @scala.inline
-    def setStartTimeOfDay(value: SchemaTimeOfDay): Self = this.set("startTimeOfDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeOfDay: Self = this.set("startTimeOfDay", js.undefined)
+    def setStartTimeOfDayUndefined: Self = StObject.set(x, "startTimeOfDay", js.undefined)
   }
 }

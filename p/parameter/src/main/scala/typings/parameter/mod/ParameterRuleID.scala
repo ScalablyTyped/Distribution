@@ -2,6 +2,7 @@ package typings.parameter.mod
 
 import typings.parameter.parameterStrings.id
 import typings.parameter.parameterStrings.idQuestionmark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object ParameterRuleID {
   }
   
   @scala.inline
-  implicit class ParameterRuleIDOps[Self <: ParameterRuleID] (val x: Self) extends AnyVal {
+  implicit class ParameterRuleIDMutableBuilder[Self <: ParameterRuleID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: id | idQuestionmark): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    def setType(value: id | idQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesDeleteTableInputMod.DeleteTableI
 import typings.awsSdkClientDynamodbBrowser.typesDeleteTableOutputMod.DeleteTableOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/DeleteTableCommand", JSImport.Namespace)
-@js.native
-object deleteTableCommandMod extends js.Object {
+object deleteTableCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/DeleteTableCommand", "DeleteTableCommand")
   @js.native
   class DeleteTableCommand protected () extends Command[
           InputTypesUnion, 

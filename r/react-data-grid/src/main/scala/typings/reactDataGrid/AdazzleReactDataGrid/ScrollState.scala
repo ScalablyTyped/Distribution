@@ -1,11 +1,12 @@
 package typings.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollState extends js.Object {
+trait ScrollState extends StObject {
   
   var colOverscanEndIdx: Double = js.native
   
@@ -59,60 +60,48 @@ object ScrollState {
   }
   
   @scala.inline
-  implicit class ScrollStateOps[Self <: ScrollState] (val x: Self) extends AnyVal {
+  implicit class ScrollStateMutableBuilder[Self <: ScrollState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColOverscanEndIdx(value: Double): Self = StObject.set(x, "colOverscanEndIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColOverscanStartIdx(value: Double): Self = StObject.set(x, "colOverscanStartIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColVisibleEndIdx(value: Double): Self = StObject.set(x, "colVisibleEndIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColOverscanEndIdx(value: Double): Self = this.set("colOverscanEndIdx", value.asInstanceOf[js.Any])
+    def setColVisibleStartIdx(value: Double): Self = StObject.set(x, "colVisibleStartIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColOverscanStartIdx(value: Double): Self = this.set("colOverscanStartIdx", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColVisibleEndIdx(value: Double): Self = this.set("colVisibleEndIdx", value.asInstanceOf[js.Any])
+    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColVisibleStartIdx(value: Double): Self = this.set("colVisibleStartIdx", value.asInstanceOf[js.Any])
+    def setLastFrozenColumnIndex(value: Double): Self = StObject.set(x, "lastFrozenColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setRowOverscanEndIdx(value: Double): Self = StObject.set(x, "rowOverscanEndIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
+    def setRowOverscanStartIdx(value: Double): Self = StObject.set(x, "rowOverscanStartIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFrozenColumnIndex(value: Double): Self = this.set("lastFrozenColumnIndex", value.asInstanceOf[js.Any])
+    def setRowVisibleEndIdx(value: Double): Self = StObject.set(x, "rowVisibleEndIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowOverscanEndIdx(value: Double): Self = this.set("rowOverscanEndIdx", value.asInstanceOf[js.Any])
+    def setRowVisibleStartIdx(value: Double): Self = StObject.set(x, "rowVisibleStartIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowOverscanStartIdx(value: Double): Self = this.set("rowOverscanStartIdx", value.asInstanceOf[js.Any])
+    def setScrollDirection(value: SCROLL_DIRECTION): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowVisibleEndIdx(value: Double): Self = this.set("rowVisibleEndIdx", value.asInstanceOf[js.Any])
+    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowVisibleStartIdx(value: Double): Self = this.set("rowVisibleStartIdx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollDirection(value: SCROLL_DIRECTION): Self = this.set("scrollDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

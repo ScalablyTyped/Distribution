@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostContentRequest extends js.Object {
+trait PostContentRequest extends StObject {
   
   /**
     *  You pass this value as the Accept HTTP header.   The message Amazon Lex returns in the response can be either text or speech based on the Accept HTTP header value in the request.     If the value is text/plain; charset=utf-8, Amazon Lex returns text in the response.     If the value begins with audio/, Amazon Lex returns speech in the response. Amazon Lex uses Amazon Polly to generate the speech (using the configuration you specified in the Accept header). For example, if you specify audio/mpeg as the value, Amazon Lex returns speech in the MPEG format.   If the value is audio/pcm, the speech returned is audio/pcm in 16-bit, little endian format.    The following are the accepted values:   audio/mpeg   audio/ogg   audio/pcm   text/plain; charset=utf-8   audio/ * (defaults to mpeg)    
@@ -67,57 +68,45 @@ object PostContentRequest {
   }
   
   @scala.inline
-  implicit class PostContentRequestOps[Self <: PostContentRequest] (val x: Self) extends AnyVal {
+  implicit class PostContentRequestMutableBuilder[Self <: PostContentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: Accept): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: HttpContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStream(value: BlobStream): Self = this.set("inputStream", value.asInstanceOf[js.Any])
+    def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setInputStream(value: BlobStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: Accept): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setRequestAttributes(value: AttributesString): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
     
     @scala.inline
-    def setActiveContexts(value: ActiveContextsString): Self = this.set("activeContexts", value.asInstanceOf[js.Any])
+    def setSessionAttributes(value: AttributesString): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveContexts: Self = this.set("activeContexts", js.undefined)
+    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
     @scala.inline
-    def setRequestAttributes(value: AttributesString): Self = this.set("requestAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestAttributes: Self = this.set("requestAttributes", js.undefined)
-    
-    @scala.inline
-    def setSessionAttributes(value: AttributesString): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

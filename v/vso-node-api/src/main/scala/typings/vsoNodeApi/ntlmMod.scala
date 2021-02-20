@@ -1,14 +1,14 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/handlers/ntlm", JSImport.Namespace)
-@js.native
-object ntlmMod extends js.Object {
+object ntlmMod {
   
+  @JSImport("vso-node-api/handlers/ntlm", "NtlmCredentialHandler")
   @js.native
   class NtlmCredentialHandler protected () extends IRequestHandler {
     def this(username: String, password: String) = this()

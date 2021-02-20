@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMetricDataInput extends js.Object {
+trait GetMetricDataInput extends StObject {
   
   /**
     * The time stamp indicating the latest data to be returned. The value specified is exclusive; results include data points up to the specified time stamp. For better performance, specify StartTime and EndTime values that align with the value of the metric's Period and sync up with the beginning and end of an hour. For example, if the Period of a metric is 5 minutes, specifying 12:05 or 12:30 as EndTime can get a faster response from CloudWatch than setting 12:07 or 12:29 as the EndTime.
@@ -46,48 +47,36 @@ object GetMetricDataInput {
   }
   
   @scala.inline
-  implicit class GetMetricDataInputOps[Self <: GetMetricDataInput] (val x: Self) extends AnyVal {
+  implicit class GetMetricDataInputMutableBuilder[Self <: GetMetricDataInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDatapoints(value: GetMetricDataMaxDatapoints): Self = StObject.set(x, "MaxDatapoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDatapointsUndefined: Self = StObject.set(x, "MaxDatapoints", js.undefined)
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setMetricDataQueries(value: MetricDataQueries): Self = StObject.set(x, "MetricDataQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricDataQueriesVarargs(value: MetricDataQuery*): Self = this.set("MetricDataQueries", js.Array(value :_*))
+    def setMetricDataQueriesVarargs(value: MetricDataQuery*): Self = StObject.set(x, "MetricDataQueries", js.Array(value :_*))
     
     @scala.inline
-    def setMetricDataQueries(value: MetricDataQueries): Self = this.set("MetricDataQueries", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxDatapoints(value: GetMetricDataMaxDatapoints): Self = this.set("MaxDatapoints", value.asInstanceOf[js.Any])
+    def setScanBy(value: ScanBy): Self = StObject.set(x, "ScanBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxDatapoints: Self = this.set("MaxDatapoints", js.undefined)
+    def setScanByUndefined: Self = StObject.set(x, "ScanBy", js.undefined)
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setScanBy(value: ScanBy): Self = this.set("ScanBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanBy: Self = this.set("ScanBy", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeParameterGroupsRequest extends js.Object {
+trait DescribeParameterGroupsRequest extends StObject {
   
   /**
     * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved. The value for MaxResults must be between 20 and 100.
@@ -31,39 +32,27 @@ object DescribeParameterGroupsRequest {
   }
   
   @scala.inline
-  implicit class DescribeParameterGroupsRequestOps[Self <: DescribeParameterGroupsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeParameterGroupsRequestMutableBuilder[Self <: DescribeParameterGroupsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: IntegerOptional): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setParameterGroupNames(value: ParameterGroupNameList): Self = StObject.set(x, "ParameterGroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setParameterGroupNamesUndefined: Self = StObject.set(x, "ParameterGroupNames", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setParameterGroupNamesVarargs(value: String*): Self = this.set("ParameterGroupNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameterGroupNames(value: ParameterGroupNameList): Self = this.set("ParameterGroupNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterGroupNames: Self = this.set("ParameterGroupNames", js.undefined)
+    def setParameterGroupNamesVarargs(value: String*): Self = StObject.set(x, "ParameterGroupNames", js.Array(value :_*))
   }
 }

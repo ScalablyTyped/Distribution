@@ -14,6 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

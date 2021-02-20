@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyzeEntitySentimentResponse extends js.Object {
+trait AnalyzeEntitySentimentResponse extends StObject {
   
   /** The recognized entities in the input document with associated sentiments. */
   var entities: js.UndefOr[js.Array[Entity]] = js.native
@@ -25,33 +26,21 @@ object AnalyzeEntitySentimentResponse {
   }
   
   @scala.inline
-  implicit class AnalyzeEntitySentimentResponseOps[Self <: AnalyzeEntitySentimentResponse] (val x: Self) extends AnyVal {
+  implicit class AnalyzeEntitySentimentResponseMutableBuilder[Self <: AnalyzeEntitySentimentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = this.set("entities", js.Array(value :_*))
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

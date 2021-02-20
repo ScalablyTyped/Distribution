@@ -21,12 +21,13 @@ import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
 import typings.ionicCore.mod.Color
 import typings.std.HTMLTextAreaElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonTextarea extends js.Object {
+trait IonTextarea extends StObject {
   
   /**
     * If `true`, the element height will increase based on the value.
@@ -177,132 +178,120 @@ object IonTextarea {
   }
   
   @scala.inline
-  implicit class IonTextareaOps[Self <: IonTextarea] (val x: Self) extends AnyVal {
+  implicit class IonTextareaMutableBuilder[Self <: IonTextarea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoGrow(value: Boolean): Self = StObject.set(x, "autoGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocapitalize(value: String): Self = StObject.set(x, "autocapitalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoGrow(value: Boolean): Self = this.set("autoGrow", value.asInstanceOf[js.Any])
+    def setClearOnEdit(value: Boolean): Self = StObject.set(x, "clearOnEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutocapitalize(value: String): Self = this.set("autocapitalize", value.asInstanceOf[js.Any])
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutofocus(value: Boolean): Self = this.set("autofocus", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setClearOnEdit(value: Boolean): Self = this.set("clearOnEdit", value.asInstanceOf[js.Any])
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebounce(value: Double): Self = this.set("debounce", value.asInstanceOf[js.Any])
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFireFocusEvents(value: Boolean): Self = this.set("fireFocusEvents", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInputElement(value: () => js.Promise[HTMLTextAreaElement]): Self = this.set("getInputElement", js.Any.fromFunction0(value))
+    def setEnterkeyhint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterkeyhint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEnterkeyhintUndefined: Self = StObject.set(x, "enterkeyhint", js.undefined)
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setFireFocusEvents(value: Boolean): Self = StObject.set(x, "fireFocusEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setGetInputElement(value: () => js.Promise[HTMLTextAreaElement]): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetBlur(value: () => js.Promise[Unit]): Self = this.set("setBlur", js.Any.fromFunction0(value))
+    def setInputmode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFocus(value: () => js.Promise[Unit]): Self = this.set("setFocus", js.Any.fromFunction0(value))
+    def setInputmodeUndefined: Self = StObject.set(x, "inputmode", js.undefined)
     
     @scala.inline
-    def setSpellcheck(value: Boolean): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setMinlength(value: Double): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    def setMinlengthUndefined: Self = StObject.set(x, "minlength", js.undefined)
     
     @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
+    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterkeyhint(value: enter | done | go | next | previous | search | send): Self = this.set("enterkeyhint", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteEnterkeyhint: Self = this.set("enterkeyhint", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputmode(value: none | text | tel | url | email | numeric | decimal | search): Self = this.set("inputmode", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputmode: Self = this.set("inputmode", js.undefined)
+    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
     @scala.inline
-    def setMaxlength(value: Double): Self = this.set("maxlength", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteMaxlength: Self = this.set("maxlength", js.undefined)
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinlength(value: Double): Self = this.set("minlength", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinlength: Self = this.set("minlength", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSetBlur(value: () => js.Promise[Unit]): Self = StObject.set(x, "setBlur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setSetFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderNull: Self = this.set("placeholder", null)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setWrap(value: hard | soft | off): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
-    
-    @scala.inline
-    def setWrap(value: hard | soft | off): Self = this.set("wrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrap: Self = this.set("wrap", js.undefined)
+    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

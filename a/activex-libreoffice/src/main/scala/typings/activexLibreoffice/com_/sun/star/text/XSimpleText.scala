@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,30 +69,18 @@ object XSimpleText {
   }
   
   @scala.inline
-  implicit class XSimpleTextOps[Self <: XSimpleText] (val x: Self) extends AnyVal {
+  implicit class XSimpleTextMutableBuilder[Self <: XSimpleText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTextCursor(value: () => XTextCursor): Self = StObject.set(x, "createTextCursor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTextCursorByRange(value: XTextRange => XTextCursor): Self = StObject.set(x, "createTextCursorByRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertControlCharacter(value: (XTextRange, Double, Boolean) => Unit): Self = StObject.set(x, "insertControlCharacter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreateTextCursor(value: () => XTextCursor): Self = this.set("createTextCursor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateTextCursorByRange(value: XTextRange => XTextCursor): Self = this.set("createTextCursorByRange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertControlCharacter(value: (XTextRange, Double, Boolean) => Unit): Self = this.set("insertControlCharacter", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setInsertString(value: (XTextRange, String, Boolean) => Unit): Self = this.set("insertString", js.Any.fromFunction3(value))
+    def setInsertString(value: (XTextRange, String, Boolean) => Unit): Self = StObject.set(x, "insertString", js.Any.fromFunction3(value))
   }
 }

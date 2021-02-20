@@ -1,13 +1,14 @@
 package typings.diff.mod
 
 import typings.diff.anon.ArrayOptionsanyanyPartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("diff", "Diff")
 @js.native
-class Diff () extends js.Object {
+class Diff () extends StObject {
   
   def castInput(value: js.Any): js.Any = js.native
   

@@ -2,6 +2,7 @@ package typings.phaser.mod
 
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IPair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Resolver ()
   extends typings.phaser.MatterJS.Resolver
-/* static members */
-@JSImport("matter", "Resolver")
-@js.native
-object Resolver extends js.Object {
+object Resolver {
   
   /**
     * Apply position resolution.
     * @method postSolvePosition
     * @param {body[]} bodies
     */
+  /* static member */
+  @JSImport("matter", "Resolver.postSolvePosition")
+  @js.native
   def postSolvePosition(bodies: js.Array[BodyType]): Unit = js.native
   
   /**
@@ -32,6 +33,9 @@ object Resolver extends js.Object {
     * @method preSolvePosition
     * @param {pair[]} pairs
     */
+  /* static member */
+  @JSImport("matter", "Resolver.preSolvePosition")
+  @js.native
   def preSolvePosition(pairs: js.Array[IPair]): Unit = js.native
   
   /**
@@ -39,6 +43,9 @@ object Resolver extends js.Object {
     * @method preSolveVelocity
     * @param {pair[]} pairs
     */
+  /* static member */
+  @JSImport("matter", "Resolver.preSolveVelocity")
+  @js.native
   def preSolveVelocity(pairs: js.Array[IPair]): Unit = js.native
   
   /**
@@ -48,6 +55,9 @@ object Resolver extends js.Object {
     * @param {body[]} bodies
     * @param {number} timeScale
     */
+  /* static member */
+  @JSImport("matter", "Resolver.solvePosition")
+  @js.native
   def solvePosition(pairs: js.Array[IPair], bodies: js.Array[BodyType], timeScale: Double): Unit = js.native
   
   /**
@@ -56,5 +66,8 @@ object Resolver extends js.Object {
     * @param {pair[]} pairs
     * @param {number} timeScale
     */
+  /* static member */
+  @JSImport("matter", "Resolver.solveVelocity")
+  @js.native
   def solveVelocity(pairs: js.Array[IPair], timeScale: Double): Unit = js.native
 }

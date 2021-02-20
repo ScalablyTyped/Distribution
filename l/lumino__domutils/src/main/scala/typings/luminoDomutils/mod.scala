@@ -5,27 +5,26 @@ import typings.luminoDomutils.elementMod.ElementExt.ISizeLimits
 import typings.std.Element
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/domutils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object ClipboardExt extends js.Object {
+  object ClipboardExt {
     
     /**
       * Copy text to the system clipboard.
       *
       * @param text - The text to copy to the clipboard.
       */
+    @JSImport("@lumino/domutils", "ClipboardExt.copyText")
+    @js.native
     def copyText(text: String): Unit = js.native
   }
   
-  @js.native
-  object ElementExt extends js.Object {
+  object ElementExt {
     
     /**
       * Compute the box sizing for an element.
@@ -34,6 +33,8 @@ object mod extends js.Object {
       *
       * @returns The box sizing data for the specified element.
       */
+    @JSImport("@lumino/domutils", "ElementExt.boxSizing")
+    @js.native
     def boxSizing(element: Element): IBoxSizing = js.native
     
     /**
@@ -47,6 +48,8 @@ object mod extends js.Object {
       *
       * @returns Whether the point is within the given element.
       */
+    @JSImport("@lumino/domutils", "ElementExt.hitTest")
+    @js.native
     def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = js.native
     
     /**
@@ -65,6 +68,8 @@ object mod extends js.Object {
       * within the visible area, no scrolling will take place. Otherwise,
       * the nearest edges of the area and element are aligned.
       */
+    @JSImport("@lumino/domutils", "ElementExt.scrollIntoViewIfNeeded")
+    @js.native
     def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = js.native
     
     /**
@@ -74,30 +79,39 @@ object mod extends js.Object {
       *
       * @returns The size limit data for the specified element.
       */
+    @JSImport("@lumino/domutils", "ElementExt.sizeLimits")
+    @js.native
     def sizeLimits(element: Element): ISizeLimits = js.native
   }
   
-  @js.native
-  object Platform extends js.Object {
+  object Platform {
     
     /**
       * A flag indicating whether the browser is Edge.
       */
+    @JSImport("@lumino/domutils", "Platform.IS_EDGE")
+    @js.native
     val IS_EDGE: Boolean = js.native
     
     /**
       * A flag indicating whether the browser is IE.
       */
+    @JSImport("@lumino/domutils", "Platform.IS_IE")
+    @js.native
     val IS_IE: Boolean = js.native
     
     /**
       * A flag indicating whether the platform is Mac.
       */
+    @JSImport("@lumino/domutils", "Platform.IS_MAC")
+    @js.native
     val IS_MAC: Boolean = js.native
     
     /**
       * A flag indicating whether the platform is Windows.
       */
+    @JSImport("@lumino/domutils", "Platform.IS_WIN")
+    @js.native
     val IS_WIN: Boolean = js.native
     
     /**
@@ -111,12 +125,15 @@ object mod extends js.Object {
       * On Mac the `accel` key is the command key. On all other
       * platforms the `accel` key is the control key.
       */
+    @JSImport("@lumino/domutils", "Platform.accelKey")
+    @js.native
     def accelKey(event: KeyboardEvent): Boolean = js.native
+    @JSImport("@lumino/domutils", "Platform.accelKey")
+    @js.native
     def accelKey(event: MouseEvent): Boolean = js.native
   }
   
-  @js.native
-  object Selector extends js.Object {
+  object Selector {
     
     /**
       * Calculate the specificity of a single CSS selector.
@@ -143,6 +160,8 @@ object mod extends js.Object {
       * The computed result is cached, so subsequent calculations for the
       * same selector are extremely fast.
       */
+    @JSImport("@lumino/domutils", "Selector.calculateSpecificity")
+    @js.native
     def calculateSpecificity(selector: String): Double = js.native
     
     /**
@@ -156,6 +175,8 @@ object mod extends js.Object {
       * The computed result is cached, so subsequent tests for the same
       * selector are extremely fast.
       */
+    @JSImport("@lumino/domutils", "Selector.isValid")
+    @js.native
     def isValid(selector: String): Boolean = js.native
     
     /**
@@ -171,6 +192,8 @@ object mod extends js.Object {
       * This function uses the builtin browser capabilities when possible,
       * falling back onto a document query otherwise.
       */
+    @JSImport("@lumino/domutils", "Selector.matches")
+    @js.native
     def matches(element: Element, selector: String): Boolean = js.native
   }
 }

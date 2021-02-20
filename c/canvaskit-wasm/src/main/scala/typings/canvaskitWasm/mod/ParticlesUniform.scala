@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticlesUniform extends js.Object {
+trait ParticlesUniform extends StObject {
   
   var columns: Double = js.native
   
@@ -23,27 +24,15 @@ object ParticlesUniform {
   }
   
   @scala.inline
-  implicit class ParticlesUniformOps[Self <: ParticlesUniform] (val x: Self) extends AnyVal {
+  implicit class ParticlesUniformMutableBuilder[Self <: ParticlesUniform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlot(value: Double): Self = this.set("slot", value.asInstanceOf[js.Any])
+    def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
   }
 }

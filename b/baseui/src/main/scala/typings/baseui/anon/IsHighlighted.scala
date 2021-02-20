@@ -1,11 +1,12 @@
 package typings.baseui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsHighlighted extends js.Object {
+trait IsHighlighted extends StObject {
   
   @JSName("$disabled")
   var $disabled: Boolean = js.native
@@ -25,27 +26,15 @@ object IsHighlighted {
   }
   
   @scala.inline
-  implicit class IsHighlightedOps[Self <: IsHighlighted] (val x: Self) extends AnyVal {
+  implicit class IsHighlightedMutableBuilder[Self <: IsHighlighted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$disabled(value: Boolean): Self = this.set("$disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$isHighlighted(value: Boolean): Self = this.set("$isHighlighted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$selected(value: Boolean): Self = this.set("$selected", value.asInstanceOf[js.Any])
+    def set$selected(value: Boolean): Self = StObject.set(x, "$selected", value.asInstanceOf[js.Any])
   }
 }

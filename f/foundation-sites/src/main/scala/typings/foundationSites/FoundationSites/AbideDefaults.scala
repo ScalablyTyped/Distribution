@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbideDefaults extends js.Object {
+trait AbideDefaults extends StObject {
   
   var formErrorClass: String = js.native
   
@@ -44,45 +45,33 @@ object AbideDefaults {
   }
   
   @scala.inline
-  implicit class AbideDefaultsOps[Self <: AbideDefaults] (val x: Self) extends AnyVal {
+  implicit class AbideDefaultsMutableBuilder[Self <: AbideDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormErrorClass(value: String): Self = StObject.set(x, "formErrorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormErrorSelector(value: String): Self = StObject.set(x, "formErrorSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputErrorClass(value: String): Self = StObject.set(x, "inputErrorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormErrorClass(value: String): Self = this.set("formErrorClass", value.asInstanceOf[js.Any])
+    def setLabelErrorClass(value: String): Self = StObject.set(x, "labelErrorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormErrorSelector(value: String): Self = this.set("formErrorSelector", value.asInstanceOf[js.Any])
+    def setLiveValidate(value: Boolean): Self = StObject.set(x, "liveValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputErrorClass(value: String): Self = this.set("inputErrorClass", value.asInstanceOf[js.Any])
+    def setPatterns(value: IAbidePatterns): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelErrorClass(value: String): Self = this.set("labelErrorClass", value.asInstanceOf[js.Any])
+    def setValidateOn(value: String): Self = StObject.set(x, "validateOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveValidate(value: Boolean): Self = this.set("liveValidate", value.asInstanceOf[js.Any])
+    def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatterns(value: IAbidePatterns): Self = this.set("patterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateOn(value: String): Self = this.set("validateOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateOnBlur(value: Boolean): Self = this.set("validateOnBlur", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidators(value: js.Any): Self = this.set("validators", value.asInstanceOf[js.Any])
+    def setValidators(value: js.Any): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
   }
 }

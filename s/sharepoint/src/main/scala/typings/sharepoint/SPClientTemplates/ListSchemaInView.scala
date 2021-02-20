@@ -1,6 +1,7 @@
 package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +78,7 @@ trait ListSchemaInView extends ListSchema {
   
   var SelectedID: String = js.native
   
-   // number
+  // number
   var ShowWebPart: String = js.native
   
   /** Either "1" or undefined. */
@@ -96,10 +97,10 @@ trait ListSchemaInView extends ListSchema {
   /** Server relative path to "/_layouts/userdisp.aspx" in the current web */
   var UserDispUrl: String = js.native
   
-   // number
+  // number
   var UserVanilla: js.Any = js.native
   
-   // number
+  // number
   var Userid: String = js.native
   
   /** Guid of the view */
@@ -167,135 +168,123 @@ object ListSchemaInView {
   }
   
   @scala.inline
-  implicit class ListSchemaInViewOps[Self <: ListSchemaInView] (val x: Self) extends AnyVal {
+  implicit class ListSchemaInViewMutableBuilder[Self <: ListSchemaInView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregate(value: StringDictionary[String]): Self = StObject.set(x, "Aggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapse(value: String): Self = StObject.set(x, "Collapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultItemOpen(value: String): Self = StObject.set(x, "DefaultItemOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregate(value: StringDictionary[String]): Self = this.set("Aggregate", value.asInstanceOf[js.Any])
+    def setDirection(value: String): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapse(value: String): Self = this.set("Collapse", value.asInstanceOf[js.Any])
+    def setEffectivePresenceEnabled(value: String): Self = StObject.set(x, "EffectivePresenceEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultItemOpen(value: String): Self = this.set("DefaultItemOpen", value.asInstanceOf[js.Any])
+    def setFieldSortParam(value: String): Self = StObject.set(x, "FieldSortParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Any): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectivePresenceEnabled(value: String): Self = this.set("EffectivePresenceEnabled", value.asInstanceOf[js.Any])
+    def setForceCheckout(value: String): Self = StObject.set(x, "ForceCheckout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldSortParam(value: String): Self = this.set("FieldSortParam", value.asInstanceOf[js.Any])
+    def setGroup1(value: String): Self = StObject.set(x, "group1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Any): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setGroup2(value: String): Self = StObject.set(x, "group2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceCheckout(value: String): Self = this.set("ForceCheckout", value.asInstanceOf[js.Any])
+    def setHasTitle(value: String): Self = StObject.set(x, "HasTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasTitle(value: String): Self = this.set("HasTitle", value.asInstanceOf[js.Any])
+    def setHttpVDir(value: String): Self = StObject.set(x, "HttpVDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpVDir(value: String): Self = this.set("HttpVDir", value.asInstanceOf[js.Any])
+    def setInplaceSearchEnabled(value: String): Self = StObject.set(x, "InplaceSearchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInplaceSearchEnabled(value: String): Self = this.set("InplaceSearchEnabled", value.asInstanceOf[js.Any])
+    def setIsDocLib(value: String): Self = StObject.set(x, "IsDocLib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDocLib(value: String): Self = this.set("IsDocLib", value.asInstanceOf[js.Any])
+    def setLCID(value: String): Self = StObject.set(x, "LCID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLCID(value: String): Self = this.set("LCID", value.asInstanceOf[js.Any])
+    def setListRight_AddListItems(value: String): Self = StObject.set(x, "ListRight_AddListItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListRight_AddListItems(value: String): Self = this.set("ListRight_AddListItems", value.asInstanceOf[js.Any])
+    def setNoListItem(value: String): Self = StObject.set(x, "NoListItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoListItem(value: String): Self = this.set("NoListItem", value.asInstanceOf[js.Any])
+    def setNoListItemHowTo(value: String): Self = StObject.set(x, "NoListItemHowTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoListItemHowTo(value: String): Self = this.set("NoListItemHowTo", value.asInstanceOf[js.Any])
+    def setPagePath(value: String): Self = StObject.set(x, "PagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagePath(value: String): Self = this.set("PagePath", value.asInstanceOf[js.Any])
+    def setParentHierarchyDisplayField(value: String): Self = StObject.set(x, "ParentHierarchyDisplayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentHierarchyDisplayField(value: String): Self = this.set("ParentHierarchyDisplayField", value.asInstanceOf[js.Any])
+    def setPresenceAlt(value: String): Self = StObject.set(x, "PresenceAlt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresenceAlt(value: String): Self = this.set("PresenceAlt", value.asInstanceOf[js.Any])
+    def setPropertyBag(value: StringDictionary[String]): Self = StObject.set(x, "PropertyBag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyBag(value: StringDictionary[String]): Self = this.set("PropertyBag", value.asInstanceOf[js.Any])
+    def setRenderSaveAsNewViewButton(value: String): Self = StObject.set(x, "RenderSaveAsNewViewButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderSaveAsNewViewButton(value: String): Self = this.set("RenderSaveAsNewViewButton", value.asInstanceOf[js.Any])
+    def setRenderViewSelectorPivotMenu(value: String): Self = StObject.set(x, "RenderViewSelectorPivotMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderViewSelectorPivotMenu(value: String): Self = this.set("RenderViewSelectorPivotMenu", value.asInstanceOf[js.Any])
+    def setRenderViewSelectorPivotMenuAsync(value: String): Self = StObject.set(x, "RenderViewSelectorPivotMenuAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderViewSelectorPivotMenuAsync(value: String): Self = this.set("RenderViewSelectorPivotMenuAsync", value.asInstanceOf[js.Any])
+    def setRootFolderParam(value: String): Self = StObject.set(x, "RootFolderParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootFolderParam(value: String): Self = this.set("RootFolderParam", value.asInstanceOf[js.Any])
+    def setSelectedID(value: String): Self = StObject.set(x, "SelectedID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedID(value: String): Self = this.set("SelectedID", value.asInstanceOf[js.Any])
+    def setShowWebPart(value: String): Self = StObject.set(x, "ShowWebPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWebPart(value: String): Self = this.set("ShowWebPart", value.asInstanceOf[js.Any])
+    def setStrikeThroughOnCompletedEnabled(value: String): Self = StObject.set(x, "StrikeThroughOnCompletedEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeThroughOnCompletedEnabled(value: String): Self = this.set("StrikeThroughOnCompletedEnabled", value.asInstanceOf[js.Any])
+    def setTabularView(value: String): Self = StObject.set(x, "TabularView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabularView(value: String): Self = this.set("TabularView", value.asInstanceOf[js.Any])
+    def setToolbar(value: String): Self = StObject.set(x, "Toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: String): Self = this.set("Toolbar", value.asInstanceOf[js.Any])
+    def setUIVersion(value: String): Self = StObject.set(x, "UIVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUIVersion(value: String): Self = this.set("UIVersion", value.asInstanceOf[js.Any])
+    def setUseParentHierarchy(value: String): Self = StObject.set(x, "UseParentHierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseParentHierarchy(value: String): Self = this.set("UseParentHierarchy", value.asInstanceOf[js.Any])
+    def setUserDispUrl(value: String): Self = StObject.set(x, "UserDispUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDispUrl(value: String): Self = this.set("UserDispUrl", value.asInstanceOf[js.Any])
+    def setUserVanilla(value: js.Any): Self = StObject.set(x, "UserVanilla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserVanilla(value: js.Any): Self = this.set("UserVanilla", value.asInstanceOf[js.Any])
+    def setUserid(value: String): Self = StObject.set(x, "Userid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserid(value: String): Self = this.set("Userid", value.asInstanceOf[js.Any])
+    def setView(value: String): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: String): Self = this.set("View", value.asInstanceOf[js.Any])
+    def setViewSelectorPivotMenuOptions(value: String): Self = StObject.set(x, "ViewSelectorPivotMenuOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewSelectorPivotMenuOptions(value: String): Self = this.set("ViewSelectorPivotMenuOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewSelector_ViewParameters(value: String): Self = this.set("ViewSelector_ViewParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroup1(value: String): Self = this.set("group1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroup2(value: String): Self = this.set("group2", value.asInstanceOf[js.Any])
+    def setViewSelector_ViewParameters(value: String): Self = StObject.set(x, "ViewSelector_ViewParameters", value.asInstanceOf[js.Any])
   }
 }

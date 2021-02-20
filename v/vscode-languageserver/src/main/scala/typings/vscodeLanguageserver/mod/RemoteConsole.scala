@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteConsole extends js.Object {
+trait RemoteConsole extends StObject {
   
   /**
     * The connection this remote is attached to.
@@ -55,33 +56,21 @@ object RemoteConsole {
   }
   
   @scala.inline
-  implicit class RemoteConsoleOps[Self <: RemoteConsole] (val x: Self) extends AnyVal {
+  implicit class RemoteConsoleMutableBuilder[Self <: RemoteConsole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnection(value: IConnection): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: String => Unit): Self = this.set("error", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInfo(value: String => Unit): Self = this.set("info", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLog(value: String => Unit): Self = this.set("log", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWarn(value: String => Unit): Self = this.set("warn", js.Any.fromFunction1(value))
+    def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

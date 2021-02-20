@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,93 +81,81 @@ object ImplementationGuidePage {
   }
   
   @scala.inline
-  implicit class ImplementationGuidePageOps[Self <: ImplementationGuidePage] (val x: Self) extends AnyVal {
+  implicit class ImplementationGuidePageMutableBuilder[Self <: ImplementationGuidePage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: code): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: code): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: code): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPage(value: js.Array[ImplementationGuidePage]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: uri): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setPageVarargs(value: ImplementationGuidePage*): Self = StObject.set(x, "page", js.Array(value :_*))
     
     @scala.inline
-    def set_format(value: Element): Self = this.set("_format", value.asInstanceOf[js.Any])
+    def setSource(value: uri): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_format: Self = this.set("_format", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_kind(value: Element): Self = this.set("_kind", value.asInstanceOf[js.Any])
+    def setType(value: js.Array[code]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_kind: Self = this.set("_kind", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def set_packageVarargs(value: (Element | String)*): Self = this.set("package", js.Array(value :_*))
+    def setTypeVarargs(value: code*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def set_package(value: js.Array[Element | String]): Self = this.set("package", value.asInstanceOf[js.Any])
+    def set_format(value: Element): Self = StObject.set(x, "_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def set_formatUndefined: Self = StObject.set(x, "_format", js.undefined)
     
     @scala.inline
-    def set_source(value: Element): Self = this.set("_source", value.asInstanceOf[js.Any])
+    def set_kind(value: Element): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_source: Self = this.set("_source", js.undefined)
+    def set_kindUndefined: Self = StObject.set(x, "_kind", js.undefined)
     
     @scala.inline
-    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    def set_package(value: js.Array[Element | String]): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_title: Self = this.set("_title", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     
     @scala.inline
-    def set_typeVarargs(value: Element*): Self = this.set("_type", js.Array(value :_*))
+    def set_packageVarargs(value: (Element | String)*): Self = StObject.set(x, "package", js.Array(value :_*))
     
     @scala.inline
-    def set_type(value: js.Array[Element]): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_source(value: Element): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
     @scala.inline
-    def setFormat(value: code): Self = this.set("format", value.asInstanceOf[js.Any])
+    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
     @scala.inline
-    def setPageVarargs(value: ImplementationGuidePage*): Self = this.set("page", js.Array(value :_*))
+    def set_type(value: js.Array[Element]): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: js.Array[ImplementationGuidePage]): Self = this.set("page", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: code*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[code]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_typeVarargs(value: Element*): Self = StObject.set(x, "_type", js.Array(value :_*))
   }
 }

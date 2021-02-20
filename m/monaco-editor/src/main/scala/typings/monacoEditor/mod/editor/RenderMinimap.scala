@@ -1,31 +1,28 @@
 package typings.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RenderMinimap extends js.Object
+sealed trait RenderMinimap extends StObject
 @JSImport("monaco-editor", "editor.RenderMinimap")
 @js.native
-object RenderMinimap extends js.Object {
+object RenderMinimap extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RenderMinimap with Double] = js.native
   
   @js.native
   sealed trait Blocks extends RenderMinimap
-  /* 2 */ @js.native
-  object Blocks extends TopLevel[Blocks with Double]
+  /* 2 */ val Blocks: typings.monacoEditor.mod.editor.RenderMinimap.Blocks with Double = js.native
   
   @js.native
   sealed trait None extends RenderMinimap
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.monacoEditor.mod.editor.RenderMinimap.None with Double = js.native
   
   @js.native
   sealed trait Text extends RenderMinimap
-  /* 1 */ @js.native
-  object Text extends TopLevel[Text with Double]
+  /* 1 */ val Text: typings.monacoEditor.mod.editor.RenderMinimap.Text with Double = js.native
 }

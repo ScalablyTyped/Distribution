@@ -1,21 +1,26 @@
 package typings.caseless
 
 import typings.caseless.caselessBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("caseless", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("caseless", JSImport.Namespace)
+  @js.native
   def apply(): Caseless = js.native
+  @JSImport("caseless", JSImport.Namespace)
+  @js.native
   def apply(dict: RawDict): Caseless = js.native
   
+  @JSImport("caseless", "httpify")
+  @js.native
   def httpify(resp: js.Object, headers: RawDict): Caseless = js.native
   
   @js.native
-  trait Caseless extends js.Object {
+  trait Caseless extends StObject {
     
     def del(name: KeyType): Boolean = js.native
     
@@ -31,7 +36,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Httpified extends js.Object {
+  trait Httpified extends StObject {
     
     def getHeader(name: KeyType): js.UndefOr[ValueType] = js.native
     

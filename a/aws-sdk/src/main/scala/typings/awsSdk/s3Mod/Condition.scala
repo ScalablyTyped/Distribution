@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Condition extends js.Object {
+trait Condition extends StObject {
   
   /**
     * The HTTP error code when the redirect is applied. In the event of an error, if the error code equals this value, then the specified redirect is applied. Required when parent element Condition is specified and sibling KeyPrefixEquals is not specified. If both are specified, then both must be true for the redirect to be applied.
@@ -26,30 +27,18 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpErrorCodeReturnedEquals(value: HttpErrorCodeReturnedEquals): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpErrorCodeReturnedEqualsUndefined: Self = StObject.set(x, "HttpErrorCodeReturnedEquals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPrefixEquals(value: KeyPrefixEquals): Self = StObject.set(x, "KeyPrefixEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpErrorCodeReturnedEquals(value: HttpErrorCodeReturnedEquals): Self = this.set("HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpErrorCodeReturnedEquals: Self = this.set("HttpErrorCodeReturnedEquals", js.undefined)
-    
-    @scala.inline
-    def setKeyPrefixEquals(value: KeyPrefixEquals): Self = this.set("KeyPrefixEquals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPrefixEquals: Self = this.set("KeyPrefixEquals", js.undefined)
+    def setKeyPrefixEqualsUndefined: Self = StObject.set(x, "KeyPrefixEquals", js.undefined)
   }
 }

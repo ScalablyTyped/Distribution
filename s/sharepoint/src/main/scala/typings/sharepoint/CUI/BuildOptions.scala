@@ -1,11 +1,12 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildOptions extends js.Object {
+trait BuildOptions extends StObject {
   
   var attachToDOM: Boolean = js.native
   
@@ -38,45 +39,33 @@ object BuildOptions {
   }
   
   @scala.inline
-  implicit class BuildOptionsOps[Self <: BuildOptions] (val x: Self) extends AnyVal {
+  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachToDOM(value: Boolean): Self = StObject.set(x, "attachToDOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataExtensions(value: js.Array[_]): Self = StObject.set(x, "dataExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachToDOM(value: Boolean): Self = this.set("attachToDOM", value.asInstanceOf[js.Any])
+    def setDataExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "dataExtensions", js.Array(value :_*))
     
     @scala.inline
-    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    def setFixedPositioningEnabled(value: Boolean): Self = StObject.set(x, "fixedPositioningEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExtensionsVarargs(value: js.Any*): Self = this.set("dataExtensions", js.Array(value :_*))
+    def setLazyMenuInit(value: Boolean): Self = StObject.set(x, "lazyMenuInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExtensions(value: js.Array[_]): Self = this.set("dataExtensions", value.asInstanceOf[js.Any])
+    def setTrimmedIds(value: js.Array[String]): Self = StObject.set(x, "trimmedIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedPositioningEnabled(value: Boolean): Self = this.set("fixedPositioningEnabled", value.asInstanceOf[js.Any])
+    def setTrimmedIdsVarargs(value: String*): Self = StObject.set(x, "trimmedIds", js.Array(value :_*))
     
     @scala.inline
-    def setLazyMenuInit(value: Boolean): Self = this.set("lazyMenuInit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrimmedIdsVarargs(value: String*): Self = this.set("trimmedIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrimmedIds(value: js.Array[String]): Self = this.set("trimmedIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateServerRendering(value: Boolean): Self = this.set("validateServerRendering", value.asInstanceOf[js.Any])
+    def setValidateServerRendering(value: Boolean): Self = StObject.set(x, "validateServerRendering", value.asInstanceOf[js.Any])
   }
 }

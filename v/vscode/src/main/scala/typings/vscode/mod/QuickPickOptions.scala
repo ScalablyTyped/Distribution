@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuickPickOptions extends js.Object {
+trait QuickPickOptions extends StObject {
   
   /**
     * An optional flag to make the picker accept multiple selections, if true the result is an array of picks.
@@ -46,54 +47,42 @@ object QuickPickOptions {
   }
   
   @scala.inline
-  implicit class QuickPickOptionsOps[Self <: QuickPickOptions] (val x: Self) extends AnyVal {
+  implicit class QuickPickOptionsMutableBuilder[Self <: QuickPickOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanPickMany(value: Boolean): Self = StObject.set(x, "canPickMany", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanPickManyUndefined: Self = StObject.set(x, "canPickMany", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPickMany(value: Boolean): Self = this.set("canPickMany", value.asInstanceOf[js.Any])
+    def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
     
     @scala.inline
-    def deleteCanPickMany: Self = this.set("canPickMany", js.undefined)
+    def setMatchOnDescription(value: Boolean): Self = StObject.set(x, "matchOnDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreFocusOut(value: Boolean): Self = this.set("ignoreFocusOut", value.asInstanceOf[js.Any])
+    def setMatchOnDescriptionUndefined: Self = StObject.set(x, "matchOnDescription", js.undefined)
     
     @scala.inline
-    def deleteIgnoreFocusOut: Self = this.set("ignoreFocusOut", js.undefined)
+    def setMatchOnDetail(value: Boolean): Self = StObject.set(x, "matchOnDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchOnDescription(value: Boolean): Self = this.set("matchOnDescription", value.asInstanceOf[js.Any])
+    def setMatchOnDetailUndefined: Self = StObject.set(x, "matchOnDetail", js.undefined)
     
     @scala.inline
-    def deleteMatchOnDescription: Self = this.set("matchOnDescription", js.undefined)
+    def setOnDidSelectItem(value: /* item */ QuickPickItem | String => _): Self = StObject.set(x, "onDidSelectItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatchOnDetail(value: Boolean): Self = this.set("matchOnDetail", value.asInstanceOf[js.Any])
+    def setOnDidSelectItemUndefined: Self = StObject.set(x, "onDidSelectItem", js.undefined)
     
     @scala.inline
-    def deleteMatchOnDetail: Self = this.set("matchOnDetail", js.undefined)
+    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDidSelectItem(value: /* item */ QuickPickItem | String => _): Self = this.set("onDidSelectItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDidSelectItem: Self = this.set("onDidSelectItem", js.undefined)
-    
-    @scala.inline
-    def setPlaceHolder(value: String): Self = this.set("placeHolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceHolder: Self = this.set("placeHolder", js.undefined)
+    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
   }
 }

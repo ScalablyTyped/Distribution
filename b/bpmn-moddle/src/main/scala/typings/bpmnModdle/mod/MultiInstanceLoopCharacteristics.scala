@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,51 +54,39 @@ object MultiInstanceLoopCharacteristics {
   }
   
   @scala.inline
-  implicit class MultiInstanceLoopCharacteristicsOps[Self <: MultiInstanceLoopCharacteristics] (val x: Self) extends AnyVal {
+  implicit class MultiInstanceLoopCharacteristicsMutableBuilder[Self <: MultiInstanceLoopCharacteristics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: MultiInstanceBehaviour): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionCondition(value: Expression): Self = StObject.set(x, "completionCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplexBehaviorDefinition(value: ComplexBehaviorDefinition): Self = StObject.set(x, "complexBehaviorDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: MultiInstanceBehaviour): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    def setInputDataItem(value: DataInput): Self = StObject.set(x, "inputDataItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionCondition(value: Expression): Self = this.set("completionCondition", value.asInstanceOf[js.Any])
+    def setIsSequential(value: Boolean): Self = StObject.set(x, "isSequential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplexBehaviorDefinition(value: ComplexBehaviorDefinition): Self = this.set("complexBehaviorDefinition", value.asInstanceOf[js.Any])
+    def setLoopCardinality(value: Expression): Self = StObject.set(x, "loopCardinality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDataItem(value: DataInput): Self = this.set("inputDataItem", value.asInstanceOf[js.Any])
+    def setLoopDataInputRef(value: ItemAwareElement): Self = StObject.set(x, "loopDataInputRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSequential(value: Boolean): Self = this.set("isSequential", value.asInstanceOf[js.Any])
+    def setLoopDataOutputRef(value: ItemAwareElement): Self = StObject.set(x, "loopDataOutputRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopCardinality(value: Expression): Self = this.set("loopCardinality", value.asInstanceOf[js.Any])
+    def setNoneBehaviorEventRef(value: EventDefinition): Self = StObject.set(x, "noneBehaviorEventRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopDataInputRef(value: ItemAwareElement): Self = this.set("loopDataInputRef", value.asInstanceOf[js.Any])
+    def setOneBehaviorEventRef(value: EventDefinition): Self = StObject.set(x, "oneBehaviorEventRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopDataOutputRef(value: ItemAwareElement): Self = this.set("loopDataOutputRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoneBehaviorEventRef(value: EventDefinition): Self = this.set("noneBehaviorEventRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneBehaviorEventRef(value: EventDefinition): Self = this.set("oneBehaviorEventRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputDataItem(value: DataOutput): Self = this.set("outputDataItem", value.asInstanceOf[js.Any])
+    def setOutputDataItem(value: DataOutput): Self = StObject.set(x, "outputDataItem", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WRAP_MODES extends js.Object
+sealed trait WRAP_MODES extends StObject
 /**
   * The wrap modes that are supported by pixi.
   *
@@ -26,7 +27,7 @@ sealed trait WRAP_MODES extends js.Object
   */
 @JSGlobal("PIXI.WRAP_MODES")
 @js.native
-object WRAP_MODES extends js.Object {
+object WRAP_MODES extends StObject {
   
   @js.native
   sealed trait CLAMP extends WRAP_MODES

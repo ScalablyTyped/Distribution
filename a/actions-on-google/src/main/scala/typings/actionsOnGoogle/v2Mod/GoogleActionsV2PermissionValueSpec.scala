@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2PermissionValueSpec extends js.Object {
+trait GoogleActionsV2PermissionValueSpec extends StObject {
   
   /**
     * The context why agent needs to request permission.
@@ -31,39 +32,27 @@ object GoogleActionsV2PermissionValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2PermissionValueSpecOps[Self <: GoogleActionsV2PermissionValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2PermissionValueSpecMutableBuilder[Self <: GoogleActionsV2PermissionValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptContext(value: String): Self = StObject.set(x, "optContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptContextUndefined: Self = StObject.set(x, "optContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissions(value: js.Array[GoogleActionsV2PermissionValueSpecPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptContext(value: String): Self = this.set("optContext", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteOptContext: Self = this.set("optContext", js.undefined)
+    def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = this.set("permissions", js.Array(value :_*))
+    def setUpdatePermissionValueSpec(value: GoogleActionsV2UpdatePermissionValueSpec): Self = StObject.set(x, "updatePermissionValueSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: js.Array[GoogleActionsV2PermissionValueSpecPermissions]): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
-    
-    @scala.inline
-    def setUpdatePermissionValueSpec(value: GoogleActionsV2UpdatePermissionValueSpec): Self = this.set("updatePermissionValueSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatePermissionValueSpec: Self = this.set("updatePermissionValueSpec", js.undefined)
+    def setUpdatePermissionValueSpecUndefined: Self = StObject.set(x, "updatePermissionValueSpec", js.undefined)
   }
 }

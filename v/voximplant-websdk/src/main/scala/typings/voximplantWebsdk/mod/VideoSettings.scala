@@ -1,5 +1,6 @@
 package typings.voximplantWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *    WebRTC Video Settings (aka Constraints)
   */
 @js.native
-trait VideoSettings extends js.Object {
+trait VideoSettings extends StObject {
   
   /**
     * The exact aspect ratio (width in pixels divided by height in pixels, represented as a double rounded to the tenth decimal place) or aspect ratio range
@@ -64,72 +65,60 @@ object VideoSettings {
   }
   
   @scala.inline
-  implicit class VideoSettingsOps[Self <: VideoSettings] (val x: Self) extends AnyVal {
+  implicit class VideoSettingsMutableBuilder[Self <: VideoSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: Double | js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: Double | js.Any): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setFacingMode(value: String | js.Any): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setFrameRate(value: Double | js.Any): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacingMode(value: String | js.Any): Self = this.set("facingMode", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def deleteFacingMode: Self = this.set("facingMode", js.undefined)
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Double | js.Any): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setHeight(value: Double | js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setMandatory(value: js.Object): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOptional(value: js.Object): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatory(value: js.Object): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     @scala.inline
-    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    def setWidth(value: Double | js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: js.Object): Self = this.set("optional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptional: Self = this.set("optional", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

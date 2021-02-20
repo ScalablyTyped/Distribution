@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Storage
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a write transaction for a random-access stream. */
 @js.native
-trait StorageStreamTransaction extends js.Object {
+trait StorageStreamTransaction extends StObject {
   
   /** Releases system resources that are exposed by the stream, indicating that the data request is complete. */
   def close(): Unit = js.native
@@ -31,27 +32,15 @@ object StorageStreamTransaction {
   }
   
   @scala.inline
-  implicit class StorageStreamTransactionOps[Self <: StorageStreamTransaction] (val x: Self) extends AnyVal {
+  implicit class StorageStreamTransactionMutableBuilder[Self <: StorageStreamTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCommitAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("commitAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStream(value: IRandomAccessStream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Relocates machine code for arm.
   */
 @js.native
-trait ThumbRelocator extends js.Object {
+trait ThumbRelocator extends StObject {
   
   /**
     * Copies out the next buffered instruction without advancing the
@@ -106,57 +107,45 @@ object ThumbRelocator {
   }
   
   @scala.inline
-  implicit class ThumbRelocatorOps[Self <: ThumbRelocator] (val x: Self) extends AnyVal {
+  implicit class ThumbRelocatorMutableBuilder[Self <: ThumbRelocator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyOne(value: () => Boolean): Self = StObject.set(x, "copyOne", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEob(value: Boolean): Self = StObject.set(x, "eob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyOne(value: () => Boolean): Self = this.set("copyOne", js.Any.fromFunction0(value))
+    def setEoi(value: Boolean): Self = StObject.set(x, "eoi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setInput(value: Instruction): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEob(value: Boolean): Self = this.set("eob", value.asInstanceOf[js.Any])
+    def setInputNull: Self = StObject.set(x, "input", null)
     
     @scala.inline
-    def setEoi(value: Boolean): Self = this.set("eoi", value.asInstanceOf[js.Any])
+    def setPeekNextWriteInsn(value: () => Instruction | Null): Self = StObject.set(x, "peekNextWriteInsn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPeekNextWriteInsn(value: () => Instruction | Null): Self = this.set("peekNextWriteInsn", js.Any.fromFunction0(value))
+    def setPeekNextWriteSource(value: () => NativePointer): Self = StObject.set(x, "peekNextWriteSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPeekNextWriteSource(value: () => NativePointer): Self = this.set("peekNextWriteSource", js.Any.fromFunction0(value))
+    def setReadOne(value: () => Double): Self = StObject.set(x, "readOne", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadOne(value: () => Double): Self = this.set("readOne", js.Any.fromFunction0(value))
+    def setReset(value: (NativePointerValue, ThumbWriter) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReset(value: (NativePointerValue, ThumbWriter) => Unit): Self = this.set("reset", js.Any.fromFunction2(value))
+    def setSkipOne(value: () => Unit): Self = StObject.set(x, "skipOne", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSkipOne(value: () => Unit): Self = this.set("skipOne", js.Any.fromFunction0(value))
+    def setWriteAll(value: () => Unit): Self = StObject.set(x, "writeAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWriteAll(value: () => Unit): Self = this.set("writeAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWriteOne(value: () => Boolean): Self = this.set("writeOne", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInput(value: Instruction): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputNull: Self = this.set("input", null)
+    def setWriteOne(value: () => Boolean): Self = StObject.set(x, "writeOne", js.Any.fromFunction0(value))
   }
 }

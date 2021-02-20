@@ -1,5 +1,6 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.algoliaClientSearch.algoliaClientSearchStrings.none
   - typings.algoliaClientSearch.algoliaClientSearchStrings.stopIfEnoughMatches
 */
-trait StrategyType extends js.Object
+trait StrategyType extends StObject
 object StrategyType {
   
   @scala.inline

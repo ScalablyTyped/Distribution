@@ -1,6 +1,7 @@
 package typings.ionic.definitionsMod
 
 import typings.ionic.ionicStrings.react
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,42 +28,30 @@ object ReactBuildOptions {
   }
   
   @scala.inline
-  implicit class ReactBuildOptionsOps[Self <: ReactBuildOptions] (val x: Self) extends AnyVal {
+  implicit class ReactBuildOptionsMutableBuilder[Self <: ReactBuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineRuntimeChunk(value: Boolean): Self = StObject.set(x, "inlineRuntimeChunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCi(value: Boolean): Self = this.set("ci", value.asInstanceOf[js.Any])
+    def setInlineRuntimeChunkUndefined: Self = StObject.set(x, "inlineRuntimeChunk", js.undefined)
     
     @scala.inline
-    def deleteCi: Self = this.set("ci", js.undefined)
+    def setPublicUrl(value: String): Self = StObject.set(x, "publicUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineRuntimeChunk(value: Boolean): Self = this.set("inlineRuntimeChunk", value.asInstanceOf[js.Any])
+    def setPublicUrlUndefined: Self = StObject.set(x, "publicUrl", js.undefined)
     
     @scala.inline
-    def deleteInlineRuntimeChunk: Self = this.set("inlineRuntimeChunk", js.undefined)
+    def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicUrl(value: String): Self = this.set("publicUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicUrl: Self = this.set("publicUrl", js.undefined)
-    
-    @scala.inline
-    def setSourceMap(value: Boolean): Self = this.set("sourceMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMap: Self = this.set("sourceMap", js.undefined)
+    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
   }
 }

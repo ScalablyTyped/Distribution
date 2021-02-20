@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestInterceptedEvent extends js.Object {
+trait RequestInterceptedEvent extends StObject {
   
   /**
     * Details of the Authorization Challenge encountered. If this is set then
@@ -89,75 +90,63 @@ object RequestInterceptedEvent {
   }
   
   @scala.inline
-  implicit class RequestInterceptedEventOps[Self <: RequestInterceptedEvent] (val x: Self) extends AnyVal {
+  implicit class RequestInterceptedEventMutableBuilder[Self <: RequestInterceptedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterceptionId(value: InterceptionId): Self = this.set("interceptionId", value.asInstanceOf[js.Any])
+    def setIsDownload(value: Boolean): Self = StObject.set(x, "isDownload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNavigationRequest(value: Boolean): Self = this.set("isNavigationRequest", value.asInstanceOf[js.Any])
+    def setIsDownloadUndefined: Self = StObject.set(x, "isDownload", js.undefined)
     
     @scala.inline
-    def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setIsNavigationRequest(value: Boolean): Self = StObject.set(x, "isNavigationRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthChallenge(value: AuthChallenge): Self = this.set("authChallenge", value.asInstanceOf[js.Any])
+    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
     @scala.inline
-    def deleteAuthChallenge: Self = this.set("authChallenge", js.undefined)
+    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDownload(value: Boolean): Self = this.set("isDownload", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDownload: Self = this.set("isDownload", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     @scala.inline
-    def setRedirectUrl(value: String): Self = this.set("redirectUrl", value.asInstanceOf[js.Any])
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedirectUrl: Self = this.set("redirectUrl", js.undefined)
+    def setResponseErrorReason(value: ErrorReason): Self = StObject.set(x, "responseErrorReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setResponseErrorReasonUndefined: Self = StObject.set(x, "responseErrorReason", js.undefined)
     
     @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setResponseHeaders(value: Headers): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseErrorReason(value: ErrorReason): Self = this.set("responseErrorReason", value.asInstanceOf[js.Any])
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def deleteResponseErrorReason: Self = this.set("responseErrorReason", js.undefined)
+    def setResponseStatusCode(value: integer): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseHeaders(value: Headers): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
-    
-    @scala.inline
-    def setResponseStatusCode(value: integer): Self = this.set("responseStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseStatusCode: Self = this.set("responseStatusCode", js.undefined)
+    def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
   }
 }

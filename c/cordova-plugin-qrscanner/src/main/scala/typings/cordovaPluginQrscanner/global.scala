@@ -1,12 +1,15 @@
 package typings.cordovaPluginQrscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var QRScanner: typings.cordovaPluginQrscanner.QRScanner = js.native
+  @JSGlobal("QRScanner")
+  @js.native
+  def QRScanner: typings.cordovaPluginQrscanner.QRScanner = js.native
+  @scala.inline
+  def QRScanner_=(x: QRScanner): Unit = js.Dynamic.global.updateDynamic("QRScanner")(x.asInstanceOf[js.Any])
 }

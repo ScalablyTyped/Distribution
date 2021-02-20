@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html)
   */
 @js.native
-trait symbologyDotDensity extends js.Object {
+trait symbologyDotDensity extends StObject {
   
   /**
     * Clones a dot density scheme object.
@@ -54,30 +55,18 @@ object symbologyDotDensity {
   }
   
   @scala.inline
-  implicit class symbologyDotDensityOps[Self <: symbologyDotDensity] (val x: Self) extends AnyVal {
+  implicit class symbologyDotDensityMutableBuilder[Self <: symbologyDotDensity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneScheme(value: DotDensityScheme => DotDensityScheme): Self = StObject.set(x, "cloneScheme", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSchemeByName(value: dotDensityGetSchemeByNameParams => DotDensityScheme): Self = StObject.set(x, "getSchemeByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSchemes(value: dotDensityGetSchemesParams => DotDensitySchemes): Self = StObject.set(x, "getSchemes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloneScheme(value: DotDensityScheme => DotDensityScheme): Self = this.set("cloneScheme", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSchemeByName(value: dotDensityGetSchemeByNameParams => DotDensityScheme): Self = this.set("getSchemeByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSchemes(value: dotDensityGetSchemesParams => DotDensitySchemes): Self = this.set("getSchemes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSchemesByTag(value: dotDensityGetSchemesByTagParams => js.Array[DotDensityScheme]): Self = this.set("getSchemesByTag", js.Any.fromFunction1(value))
+    def setGetSchemesByTag(value: dotDensityGetSchemesByTagParams => js.Array[DotDensityScheme]): Self = StObject.set(x, "getSchemesByTag", js.Any.fromFunction1(value))
   }
 }

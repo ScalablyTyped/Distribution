@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a physics radial explosion event
   */
 @js.native
-trait PhysicsRadialExplosionEvent extends js.Object {
+trait PhysicsRadialExplosionEvent extends StObject {
   
   var _dataFetched: js.Any = js.native
   

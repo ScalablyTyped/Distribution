@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object BootstrapClientEditEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapClientEditEventMapOps[Self <: BootstrapClientEditEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapClientEditEventMapMutableBuilder[Self <: BootstrapClientEditEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidation(value: EditValidationEventArgs): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGotFocus(value: EventArgs): Self = this.set("gotFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLostFocus(value: EventArgs): Self = this.set("lostFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidation(value: EditValidationEventArgs): Self = this.set("validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueChanged(value: ProcessingModeEventArgs): Self = this.set("valueChanged", value.asInstanceOf[js.Any])
+    def setValueChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
   }
 }

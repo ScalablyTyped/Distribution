@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionGroup extends js.Object {
+trait OptionGroup extends StObject {
   
   @JSName("Access.OptionGroup_typekey")
   var AccessDotOptionGroup_typekey: OptionGroup = js.native

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineRecord extends js.Object {
+trait TimelineRecord extends StObject {
   
   var _links: js.Any = js.native
   
@@ -151,90 +152,78 @@ object TimelineRecord {
   }
   
   @scala.inline
-  implicit class TimelineRecordOps[Self <: TimelineRecord] (val x: Self) extends AnyVal {
+  implicit class TimelineRecordMutableBuilder[Self <: TimelineRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeId(value: Double): Self = StObject.set(x, "changeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentOperation(value: String): Self = StObject.set(x, "currentOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetails(value: TimelineReference): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeId(value: Double): Self = this.set("changeId", value.asInstanceOf[js.Any])
+    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentOperation(value: String): Self = this.set("currentOperation", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: TimelineReference): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: Double): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
     @scala.inline
-    def setFinishTime(value: Date): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    def setLastModified(value: Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLog(value: BuildLogReference): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = this.set("issues", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: js.Array[Issue]): Self = this.set("issues", value.asInstanceOf[js.Any])
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: Date): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: BuildLogReference): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: Double): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setState(value: TimelineRecordState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: TaskResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setTask(value: TaskReference): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCode(value: String): Self = this.set("resultCode", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: TimelineRecordState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTask(value: TaskReference): Self = this.set("task", value.asInstanceOf[js.Any])
+    def setWorkerName(value: String): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningCount(value: Double): Self = this.set("warningCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerName(value: String): Self = this.set("workerName", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

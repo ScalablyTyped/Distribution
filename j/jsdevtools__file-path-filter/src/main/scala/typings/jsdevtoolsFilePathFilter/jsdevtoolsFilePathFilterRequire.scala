@@ -1,5 +1,6 @@
 package typings.jsdevtoolsFilePathFilter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@jsdevtools/file-path-filter", JSImport.Namespace)
 @js.native
-object jsdevtoolsFilePathFilterRequire extends js.Object
+object jsdevtoolsFilePathFilterRequire extends StObject

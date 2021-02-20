@@ -2,16 +2,15 @@ package typings.materialMenu
 
 import typings.materialMenu.typesMod.MDCMenuItemEventDetail
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/menu/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   @js.native
-  trait MDCMenuAdapter extends js.Object {
+  trait MDCMenuAdapter extends StObject {
     
     /**
       * Adds an attribute, with value, to the element at the index provided.

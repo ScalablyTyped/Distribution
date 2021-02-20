@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackPack extends js.Object {
+trait StackPack extends StObject {
   
   /** The stack pack advice strings. */
   var descriptions: js.UndefOr[
@@ -33,46 +34,34 @@ object StackPack {
   }
   
   @scala.inline
-  implicit class StackPackOps[Self <: StackPack] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class StackPackMutableBuilder[Self <: StackPack] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDescriptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack with TopLevel[js.Any]
-    ): Self = this.set("descriptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescriptions: Self = this.set("descriptions", js.undefined)
+    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
     @scala.inline
-    def setIconDataURL(value: String): Self = this.set("iconDataURL", value.asInstanceOf[js.Any])
+    def setIconDataURL(value: String): Self = StObject.set(x, "iconDataURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconDataURL: Self = this.set("iconDataURL", js.undefined)
+    def setIconDataURLUndefined: Self = StObject.set(x, "iconDataURL", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

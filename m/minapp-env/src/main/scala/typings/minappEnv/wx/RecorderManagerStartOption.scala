@@ -20,12 +20,13 @@ import typings.minappEnv.minappEnvStrings.mic
 import typings.minappEnv.minappEnvStrings.mp3
 import typings.minappEnv.minappEnvStrings.voice_communication
 import typings.minappEnv.minappEnvStrings.voice_recognition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecorderManagerStartOption extends js.Object {
+trait RecorderManagerStartOption extends StObject {
   
   /** 指定录音的音频输入源，可通过 [wx.getAvailableAudioSources()](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/wx.getAvailableAudioSources.html) 获取当前可用的音频源
     *
@@ -91,60 +92,48 @@ object RecorderManagerStartOption {
   }
   
   @scala.inline
-  implicit class RecorderManagerStartOptionOps[Self <: RecorderManagerStartOption] (val x: Self) extends AnyVal {
+  implicit class RecorderManagerStartOptionMutableBuilder[Self <: RecorderManagerStartOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioSource(value: auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioSourceUndefined: Self = StObject.set(x, "audioSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioSource(value: auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition): Self = this.set("audioSource", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteAudioSource: Self = this.set("audioSource", js.undefined)
+    def setEncodeBitRate(value: Double): Self = StObject.set(x, "encodeBitRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEncodeBitRateUndefined: Self = StObject.set(x, "encodeBitRate", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFormat(value: mp3 | aac): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodeBitRate(value: Double): Self = this.set("encodeBitRate", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEncodeBitRate: Self = this.set("encodeBitRate", js.undefined)
+    def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: mp3 | aac): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFrameSizeUndefined: Self = StObject.set(x, "frameSize", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setNumberOfChannels(value: `1` | `2`): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameSize(value: Double): Self = this.set("frameSize", value.asInstanceOf[js.Any])
+    def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
     
     @scala.inline
-    def deleteFrameSize: Self = this.set("frameSize", js.undefined)
+    def setSampleRate(value: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000`): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfChannels(value: `1` | `2`): Self = this.set("numberOfChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfChannels: Self = this.set("numberOfChannels", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000`): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
   }
 }

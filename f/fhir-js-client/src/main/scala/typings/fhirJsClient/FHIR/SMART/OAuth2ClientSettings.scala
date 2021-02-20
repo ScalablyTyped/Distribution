@@ -1,5 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Client or application specific settings provided on the FHIR server during the client/application registration.
   */
 @js.native
-trait OAuth2ClientSettings extends js.Object {
+trait OAuth2ClientSettings extends StObject {
   
   /**
     * Unique ID representing the client or application
@@ -44,45 +45,33 @@ object OAuth2ClientSettings {
   }
   
   @scala.inline
-  implicit class OAuth2ClientSettingsOps[Self <: OAuth2ClientSettings] (val x: Self) extends AnyVal {
+  implicit class OAuth2ClientSettingsMutableBuilder[Self <: OAuth2ClientSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

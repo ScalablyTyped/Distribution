@@ -1,5 +1,6 @@
 package typings.xregexp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xregexp.xregexpStrings.`8`
   - typings.xregexp.xregexpStrings.`9`
 */
-trait TokenFlagNUMBER extends js.Object
+trait TokenFlagNUMBER extends StObject
 object TokenFlagNUMBER {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetrieveEnvironmentInfoResultMessage extends js.Object {
+trait RetrieveEnvironmentInfoResultMessage extends StObject {
   
   /**
     *  The EnvironmentInfoDescription of the environment. 
@@ -21,27 +22,15 @@ object RetrieveEnvironmentInfoResultMessage {
   }
   
   @scala.inline
-  implicit class RetrieveEnvironmentInfoResultMessageOps[Self <: RetrieveEnvironmentInfoResultMessage] (val x: Self) extends AnyVal {
+  implicit class RetrieveEnvironmentInfoResultMessageMutableBuilder[Self <: RetrieveEnvironmentInfoResultMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentInfo(value: EnvironmentInfoDescriptionList): Self = StObject.set(x, "EnvironmentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentInfoUndefined: Self = StObject.set(x, "EnvironmentInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnvironmentInfoVarargs(value: EnvironmentInfoDescription*): Self = this.set("EnvironmentInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnvironmentInfo(value: EnvironmentInfoDescriptionList): Self = this.set("EnvironmentInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironmentInfo: Self = this.set("EnvironmentInfo", js.undefined)
+    def setEnvironmentInfoVarargs(value: EnvironmentInfoDescription*): Self = StObject.set(x, "EnvironmentInfo", js.Array(value :_*))
   }
 }

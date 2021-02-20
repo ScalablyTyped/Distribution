@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,102 +81,90 @@ object Provenance {
   }
   
   @scala.inline
-  implicit class ProvenanceOps[Self <: Provenance] (val x: Self) extends AnyVal {
+  implicit class ProvenanceMutableBuilder[Self <: Provenance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivity(value: Coding): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgent(value: js.Array[ProvenanceAgent]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentVarargs(value: ProvenanceAgent*): Self = this.set("agent", js.Array(value :_*))
+    def setAgentVarargs(value: ProvenanceAgent*): Self = StObject.set(x, "agent", js.Array(value :_*))
     
     @scala.inline
-    def setAgent(value: js.Array[ProvenanceAgent]): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setEntity(value: js.Array[ProvenanceEntity]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecorded(value: instant): Self = this.set("recorded", value.asInstanceOf[js.Any])
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def setTargetVarargs(value: Reference*): Self = this.set("target", js.Array(value :_*))
+    def setEntityVarargs(value: ProvenanceEntity*): Self = StObject.set(x, "entity", js.Array(value :_*))
     
     @scala.inline
-    def setTarget(value: js.Array[Reference]): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setLocation(value: Reference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_policyVarargs(value: Element*): Self = this.set("_policy", js.Array(value :_*))
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set_policy(value: js.Array[Element]): Self = this.set("_policy", value.asInstanceOf[js.Any])
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_policy: Self = this.set("_policy", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def set_recorded(value: Element): Self = this.set("_recorded", value.asInstanceOf[js.Any])
+    def setPolicy(value: js.Array[uri]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_recorded: Self = this.set("_recorded", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def setActivity(value: Coding): Self = this.set("activity", value.asInstanceOf[js.Any])
+    def setPolicyVarargs(value: uri*): Self = StObject.set(x, "policy", js.Array(value :_*))
     
     @scala.inline
-    def deleteActivity: Self = this.set("activity", js.undefined)
+    def setReason(value: js.Array[Coding]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityVarargs(value: ProvenanceEntity*): Self = this.set("entity", js.Array(value :_*))
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def setEntity(value: js.Array[ProvenanceEntity]): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setReasonVarargs(value: Coding*): Self = StObject.set(x, "reason", js.Array(value :_*))
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
+    def setRecorded(value: instant): Self = StObject.set(x, "recorded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setSignature(value: js.Array[Signature]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setSignatureVarargs(value: Signature*): Self = StObject.set(x, "signature", js.Array(value :_*))
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setTarget(value: js.Array[Reference]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyVarargs(value: uri*): Self = this.set("policy", js.Array(value :_*))
+    def setTargetVarargs(value: Reference*): Self = StObject.set(x, "target", js.Array(value :_*))
     
     @scala.inline
-    def setPolicy(value: js.Array[uri]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def set_policy(value: js.Array[Element]): Self = StObject.set(x, "_policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def set_policyUndefined: Self = StObject.set(x, "_policy", js.undefined)
     
     @scala.inline
-    def setReasonVarargs(value: Coding*): Self = this.set("reason", js.Array(value :_*))
+    def set_policyVarargs(value: Element*): Self = StObject.set(x, "_policy", js.Array(value :_*))
     
     @scala.inline
-    def setReason(value: js.Array[Coding]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def set_recorded(value: Element): Self = StObject.set(x, "_recorded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setSignatureVarargs(value: Signature*): Self = this.set("signature", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignature(value: js.Array[Signature]): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def set_recordedUndefined: Self = StObject.set(x, "_recorded", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A channel resource contains information about a YouTube channel.
   */
 @js.native
-trait SchemaChannel extends js.Object {
+trait SchemaChannel extends StObject {
   
   /**
     * The auditionDetails object encapsulates channel data that is relevant for
@@ -100,102 +101,90 @@ object SchemaChannel {
   }
   
   @scala.inline
-  implicit class SchemaChannelOps[Self <: SchemaChannel] (val x: Self) extends AnyVal {
+  implicit class SchemaChannelMutableBuilder[Self <: SchemaChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditDetails(value: SchemaChannelAuditDetails): Self = StObject.set(x, "auditDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditDetailsUndefined: Self = StObject.set(x, "auditDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrandingSettings(value: SchemaChannelBrandingSettings): Self = StObject.set(x, "brandingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditDetails(value: SchemaChannelAuditDetails): Self = this.set("auditDetails", value.asInstanceOf[js.Any])
+    def setBrandingSettingsUndefined: Self = StObject.set(x, "brandingSettings", js.undefined)
     
     @scala.inline
-    def deleteAuditDetails: Self = this.set("auditDetails", js.undefined)
+    def setContentDetails(value: SchemaChannelContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandingSettings(value: SchemaChannelBrandingSettings): Self = this.set("brandingSettings", value.asInstanceOf[js.Any])
+    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
     @scala.inline
-    def deleteBrandingSettings: Self = this.set("brandingSettings", js.undefined)
+    def setContentOwnerDetails(value: SchemaChannelContentOwnerDetails): Self = StObject.set(x, "contentOwnerDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: SchemaChannelContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setContentOwnerDetailsUndefined: Self = StObject.set(x, "contentOwnerDetails", js.undefined)
     
     @scala.inline
-    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    def setConversionPings(value: SchemaChannelConversionPings): Self = StObject.set(x, "conversionPings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentOwnerDetails(value: SchemaChannelContentOwnerDetails): Self = this.set("contentOwnerDetails", value.asInstanceOf[js.Any])
+    def setConversionPingsUndefined: Self = StObject.set(x, "conversionPings", js.undefined)
     
     @scala.inline
-    def deleteContentOwnerDetails: Self = this.set("contentOwnerDetails", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionPings(value: SchemaChannelConversionPings): Self = this.set("conversionPings", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteConversionPings: Self = this.set("conversionPings", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setInvideoPromotion(value: SchemaInvideoPromotion): Self = StObject.set(x, "invideoPromotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInvideoPromotionUndefined: Self = StObject.set(x, "invideoPromotion", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvideoPromotion(value: SchemaInvideoPromotion): Self = this.set("invideoPromotion", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInvideoPromotion: Self = this.set("invideoPromotion", js.undefined)
+    def setLocalizations(value: StringDictionary[SchemaChannelLocalization]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSnippet(value: SchemaChannelSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizations(value: StringDictionary[SchemaChannelLocalization]): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    def setStatistics(value: SchemaChannelStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: SchemaChannelSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setStatus(value: SchemaChannelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: SchemaChannelStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setTopicDetails(value: SchemaChannelTopicDetails): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SchemaChannelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTopicDetails(value: SchemaChannelTopicDetails): Self = this.set("topicDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicDetails: Self = this.set("topicDetails", js.undefined)
+    def setTopicDetailsUndefined: Self = StObject.set(x, "topicDetails", js.undefined)
   }
 }

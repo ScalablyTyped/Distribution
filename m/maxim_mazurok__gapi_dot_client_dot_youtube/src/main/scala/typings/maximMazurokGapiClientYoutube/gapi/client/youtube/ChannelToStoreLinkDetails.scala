@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelToStoreLinkDetails extends js.Object {
+trait ChannelToStoreLinkDetails extends StObject {
   
   /** Name of the store. */
   var storeName: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ChannelToStoreLinkDetails {
   }
   
   @scala.inline
-  implicit class ChannelToStoreLinkDetailsOps[Self <: ChannelToStoreLinkDetails] (val x: Self) extends AnyVal {
+  implicit class ChannelToStoreLinkDetailsMutableBuilder[Self <: ChannelToStoreLinkDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreName(value: String): Self = this.set("storeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreName: Self = this.set("storeName", js.undefined)
-    
-    @scala.inline
-    def setStoreUrl(value: String): Self = this.set("storeUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreUrl: Self = this.set("storeUrl", js.undefined)
+    def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
   }
 }

@@ -9,13 +9,14 @@ import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Lights
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Priority
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Progress
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Visibility
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.AndroidNotification")
 @js.native
-class AndroidNotification () extends js.Object {
+class AndroidNotification () extends StObject {
   
   var actions: js.UndefOr[js.Array[Action]] = js.native
   

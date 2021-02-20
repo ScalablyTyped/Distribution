@@ -1,11 +1,12 @@
 package typings.filepond.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePondSvgIconProps extends js.Object {
+trait FilePondSvgIconProps extends StObject {
   
   /**
     * The icon used for done.
@@ -46,48 +47,36 @@ object FilePondSvgIconProps {
   }
   
   @scala.inline
-  implicit class FilePondSvgIconPropsOps[Self <: FilePondSvgIconProps] (val x: Self) extends AnyVal {
+  implicit class FilePondSvgIconPropsMutableBuilder[Self <: FilePondSvgIconProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconDone(value: String): Self = StObject.set(x, "iconDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconDoneUndefined: Self = StObject.set(x, "iconDone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconProcess(value: String): Self = StObject.set(x, "iconProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconDone(value: String): Self = this.set("iconDone", value.asInstanceOf[js.Any])
+    def setIconProcessUndefined: Self = StObject.set(x, "iconProcess", js.undefined)
     
     @scala.inline
-    def deleteIconDone: Self = this.set("iconDone", js.undefined)
+    def setIconRemove(value: String): Self = StObject.set(x, "iconRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconProcess(value: String): Self = this.set("iconProcess", value.asInstanceOf[js.Any])
+    def setIconRemoveUndefined: Self = StObject.set(x, "iconRemove", js.undefined)
     
     @scala.inline
-    def deleteIconProcess: Self = this.set("iconProcess", js.undefined)
+    def setIconRetry(value: String): Self = StObject.set(x, "iconRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconRemove(value: String): Self = this.set("iconRemove", value.asInstanceOf[js.Any])
+    def setIconRetryUndefined: Self = StObject.set(x, "iconRetry", js.undefined)
     
     @scala.inline
-    def deleteIconRemove: Self = this.set("iconRemove", js.undefined)
+    def setIconUndo(value: String): Self = StObject.set(x, "iconUndo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconRetry(value: String): Self = this.set("iconRetry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconRetry: Self = this.set("iconRetry", js.undefined)
-    
-    @scala.inline
-    def setIconUndo(value: String): Self = this.set("iconUndo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconUndo: Self = this.set("iconUndo", js.undefined)
+    def setIconUndoUndefined: Self = StObject.set(x, "iconUndo", js.undefined)
   }
 }

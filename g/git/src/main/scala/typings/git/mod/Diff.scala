@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Diff")
 @js.native
-class Diff protected () extends js.Object {
+class Diff protected () extends StObject {
   def this(
     repo: js.Any,
     aPath: js.Any,
@@ -41,9 +42,9 @@ class Diff protected () extends js.Object {
   var repo: js.Any = js.native
 }
 /* static members */
-@JSImport("git", "Diff")
-@js.native
-object Diff extends js.Object {
+object Diff {
   
+  @JSImport("git", "Diff.list_from_string")
+  @js.native
   def list_from_string(repo: js.Any, text: js.Any, callback: js.Function): Unit = js.native
 }

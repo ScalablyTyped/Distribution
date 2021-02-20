@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object FeatureLayerCapabilitiesAttachment {
   }
   
   @scala.inline
-  implicit class FeatureLayerCapabilitiesAttachmentOps[Self <: FeatureLayerCapabilitiesAttachment] (val x: Self) extends AnyVal {
+  implicit class FeatureLayerCapabilitiesAttachmentMutableBuilder[Self <: FeatureLayerCapabilitiesAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportsContentType(value: Boolean): Self = StObject.set(x, "supportsContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsExifInfo(value: Boolean): Self = StObject.set(x, "supportsExifInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsKeywords(value: Boolean): Self = StObject.set(x, "supportsKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsContentType(value: Boolean): Self = this.set("supportsContentType", value.asInstanceOf[js.Any])
+    def setSupportsName(value: Boolean): Self = StObject.set(x, "supportsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsExifInfo(value: Boolean): Self = this.set("supportsExifInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsKeywords(value: Boolean): Self = this.set("supportsKeywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsName(value: Boolean): Self = this.set("supportsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsSize(value: Boolean): Self = this.set("supportsSize", value.asInstanceOf[js.Any])
+    def setSupportsSize(value: Boolean): Self = StObject.set(x, "supportsSize", value.asInstanceOf[js.Any])
   }
 }

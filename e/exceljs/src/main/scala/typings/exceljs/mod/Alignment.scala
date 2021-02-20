@@ -13,12 +13,13 @@ import typings.exceljs.exceljsStrings.right
 import typings.exceljs.exceljsStrings.rtl
 import typings.exceljs.exceljsStrings.top
 import typings.exceljs.exceljsStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alignment extends js.Object {
+trait Alignment extends StObject {
   
   var horizontal: left | center | right | fill | justify | centerContinuous | distributed = js.native
   
@@ -51,39 +52,27 @@ object Alignment {
   }
   
   @scala.inline
-  implicit class AlignmentOps[Self <: Alignment] (val x: Self) extends AnyVal {
+  implicit class AlignmentMutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontal(value: left | center | right | fill | justify | centerContinuous | distributed): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadingOrder(value: rtl | ltr): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: left | center | right | fill | justify | centerContinuous | distributed): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setTextRotation(value: Double | vertical): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingOrder(value: rtl | ltr): Self = this.set("readingOrder", value.asInstanceOf[js.Any])
+    def setVertical(value: top | middle | bottom | distributed | justify): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShrinkToFit(value: Boolean): Self = this.set("shrinkToFit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextRotation(value: Double | vertical): Self = this.set("textRotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertical(value: top | middle | bottom | distributed | justify): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapText(value: Boolean): Self = this.set("wrapText", value.asInstanceOf[js.Any])
+    def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
   }
 }

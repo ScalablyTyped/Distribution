@@ -1,11 +1,12 @@
 package typings.jaegerClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReporterConfig extends js.Object {
+trait ReporterConfig extends StObject {
   
   var agentHost: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object ReporterConfig {
   }
   
   @scala.inline
-  implicit class ReporterConfigOps[Self <: ReporterConfig] (val x: Self) extends AnyVal {
+  implicit class ReporterConfigMutableBuilder[Self <: ReporterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentHost(value: String): Self = StObject.set(x, "agentHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentHostUndefined: Self = StObject.set(x, "agentHost", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentPort(value: Double): Self = StObject.set(x, "agentPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentHost(value: String): Self = this.set("agentHost", value.asInstanceOf[js.Any])
+    def setAgentPortUndefined: Self = StObject.set(x, "agentPort", js.undefined)
     
     @scala.inline
-    def deleteAgentHost: Self = this.set("agentHost", js.undefined)
+    def setCollectorEndpoint(value: String): Self = StObject.set(x, "collectorEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentPort(value: Double): Self = this.set("agentPort", value.asInstanceOf[js.Any])
+    def setCollectorEndpointUndefined: Self = StObject.set(x, "collectorEndpoint", js.undefined)
     
     @scala.inline
-    def deleteAgentPort: Self = this.set("agentPort", js.undefined)
+    def setFlushIntervalMs(value: Double): Self = StObject.set(x, "flushIntervalMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectorEndpoint(value: String): Self = this.set("collectorEndpoint", value.asInstanceOf[js.Any])
+    def setFlushIntervalMsUndefined: Self = StObject.set(x, "flushIntervalMs", js.undefined)
     
     @scala.inline
-    def deleteCollectorEndpoint: Self = this.set("collectorEndpoint", js.undefined)
+    def setLogSpans(value: Boolean): Self = StObject.set(x, "logSpans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushIntervalMs(value: Double): Self = this.set("flushIntervalMs", value.asInstanceOf[js.Any])
+    def setLogSpansUndefined: Self = StObject.set(x, "logSpans", js.undefined)
     
     @scala.inline
-    def deleteFlushIntervalMs: Self = this.set("flushIntervalMs", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogSpans(value: Boolean): Self = this.set("logSpans", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteLogSpans: Self = this.set("logSpans", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

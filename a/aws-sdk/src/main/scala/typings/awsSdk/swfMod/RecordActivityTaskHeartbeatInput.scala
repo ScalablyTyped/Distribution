@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordActivityTaskHeartbeatInput extends js.Object {
+trait RecordActivityTaskHeartbeatInput extends StObject {
   
   /**
     * If specified, contains details about the progress of the task.
@@ -26,27 +27,15 @@ object RecordActivityTaskHeartbeatInput {
   }
   
   @scala.inline
-  implicit class RecordActivityTaskHeartbeatInputOps[Self <: RecordActivityTaskHeartbeatInput] (val x: Self) extends AnyVal {
+  implicit class RecordActivityTaskHeartbeatInputMutableBuilder[Self <: RecordActivityTaskHeartbeatInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: LimitedData): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetails(value: LimitedData): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

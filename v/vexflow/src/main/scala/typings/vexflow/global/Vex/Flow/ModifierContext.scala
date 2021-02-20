@@ -1,5 +1,6 @@
 package typings.vexflow.global.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ModifierContext ()
   extends typings.vexflow.Vex.Flow.ModifierContext
-/* static members */
-@JSGlobal("Vex.Flow.ModifierContext")
-@js.native
-object ModifierContext extends js.Object {
+object ModifierContext {
   
-  var DEBUG: Boolean = js.native
+  @JSGlobal("Vex.Flow.ModifierContext")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Vex.Flow.ModifierContext.DEBUG")
+  @js.native
+  def DEBUG: Boolean = js.native
+  @scala.inline
+  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
 }

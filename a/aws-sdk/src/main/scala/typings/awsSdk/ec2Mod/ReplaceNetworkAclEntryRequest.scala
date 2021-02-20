@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplaceNetworkAclEntryRequest extends js.Object {
+trait ReplaceNetworkAclEntryRequest extends StObject {
   
   /**
     * The IPv4 network range to allow or deny, in CIDR notation (for example 172.16.0.0/24).
@@ -72,63 +73,51 @@ object ReplaceNetworkAclEntryRequest {
   }
   
   @scala.inline
-  implicit class ReplaceNetworkAclEntryRequestOps[Self <: ReplaceNetworkAclEntryRequest] (val x: Self) extends AnyVal {
+  implicit class ReplaceNetworkAclEntryRequestMutableBuilder[Self <: ReplaceNetworkAclEntryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgress(value: Boolean): Self = this.set("Egress", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setNetworkAclId(value: NetworkAclId): Self = this.set("NetworkAclId", value.asInstanceOf[js.Any])
+    def setEgress(value: Boolean): Self = StObject.set(x, "Egress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setIcmpTypeCode(value: IcmpTypeCode): Self = StObject.set(x, "IcmpTypeCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleAction(value: RuleAction): Self = this.set("RuleAction", value.asInstanceOf[js.Any])
+    def setIcmpTypeCodeUndefined: Self = StObject.set(x, "IcmpTypeCode", js.undefined)
     
     @scala.inline
-    def setRuleNumber(value: Integer): Self = this.set("RuleNumber", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlockUndefined: Self = StObject.set(x, "Ipv6CidrBlock", js.undefined)
     
     @scala.inline
-    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPortRange(value: PortRange): Self = StObject.set(x, "PortRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPortRangeUndefined: Self = StObject.set(x, "PortRange", js.undefined)
     
     @scala.inline
-    def setIcmpTypeCode(value: IcmpTypeCode): Self = this.set("IcmpTypeCode", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcmpTypeCode: Self = this.set("IcmpTypeCode", js.undefined)
+    def setRuleAction(value: RuleAction): Self = StObject.set(x, "RuleAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6CidrBlock(value: String): Self = this.set("Ipv6CidrBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6CidrBlock: Self = this.set("Ipv6CidrBlock", js.undefined)
-    
-    @scala.inline
-    def setPortRange(value: PortRange): Self = this.set("PortRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortRange: Self = this.set("PortRange", js.undefined)
+    def setRuleNumber(value: Integer): Self = StObject.set(x, "RuleNumber", value.asInstanceOf[js.Any])
   }
 }

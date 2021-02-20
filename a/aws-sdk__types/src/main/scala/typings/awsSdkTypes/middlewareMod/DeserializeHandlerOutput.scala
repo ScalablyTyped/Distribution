@@ -1,11 +1,12 @@
 package typings.awsSdkTypes.middlewareMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeserializeHandlerOutput[Output /* <: js.Object */] extends js.Object {
+trait DeserializeHandlerOutput[Output /* <: js.Object */] extends StObject {
   
   var output: js.UndefOr[Output] = js.native
   
@@ -28,27 +29,15 @@ object DeserializeHandlerOutput {
   }
   
   @scala.inline
-  implicit class DeserializeHandlerOutputOps[Self <: DeserializeHandlerOutput[_], Output /* <: js.Object */] (val x: Self with DeserializeHandlerOutput[Output]) extends AnyVal {
+  implicit class DeserializeHandlerOutputMutableBuilder[Self <: DeserializeHandlerOutput[_], Output /* <: js.Object */] (val x: Self with DeserializeHandlerOutput[Output]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResponse(value: js.Any): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutput(value: Output): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

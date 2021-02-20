@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BalloonCheckboxes extends js.Object {
+trait BalloonCheckboxes extends StObject {
   
   def apply(Index: Double): BalloonCheckbox = js.native
   

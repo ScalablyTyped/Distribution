@@ -1,6 +1,7 @@
 package typings.grpc.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   These options only have any effect when passed at the beginning of
   *   a client request.
   */
-class Metadata () extends js.Object {
+class Metadata () extends StObject {
   def this(options: MetadataOptions) = this()
   
   /**

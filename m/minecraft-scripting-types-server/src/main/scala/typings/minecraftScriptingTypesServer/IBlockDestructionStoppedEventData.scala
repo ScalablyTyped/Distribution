@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.VectorXYZ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever a player stops destroying a block.
   */
 @js.native
-trait IBlockDestructionStoppedEventData extends js.Object {
+trait IBlockDestructionStoppedEventData extends StObject {
   
   /**
     * The position of the block that was being destroyed
@@ -36,27 +37,15 @@ object IBlockDestructionStoppedEventData {
   }
   
   @scala.inline
-  implicit class IBlockDestructionStoppedEventDataOps[Self <: IBlockDestructionStoppedEventData] (val x: Self) extends AnyVal {
+  implicit class IBlockDestructionStoppedEventDataMutableBuilder[Self <: IBlockDestructionStoppedEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestruction_progress(value: Double): Self = StObject.set(x, "destruction_progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = this.set("block_position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestruction_progress(value: Double): Self = this.set("destruction_progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayer(value: IEntity): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

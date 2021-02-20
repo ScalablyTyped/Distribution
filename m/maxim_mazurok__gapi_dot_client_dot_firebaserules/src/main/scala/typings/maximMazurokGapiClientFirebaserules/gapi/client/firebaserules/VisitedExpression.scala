@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VisitedExpression extends js.Object {
+trait VisitedExpression extends StObject {
   
   /** Position in the `Source` or `Ruleset` where an expression was visited. */
   var sourcePosition: js.UndefOr[SourcePosition] = js.native
@@ -22,30 +23,18 @@ object VisitedExpression {
   }
   
   @scala.inline
-  implicit class VisitedExpressionOps[Self <: VisitedExpression] (val x: Self) extends AnyVal {
+  implicit class VisitedExpressionMutableBuilder[Self <: VisitedExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePosition(value: SourcePosition): Self = this.set("sourcePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePosition: Self = this.set("sourcePosition", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

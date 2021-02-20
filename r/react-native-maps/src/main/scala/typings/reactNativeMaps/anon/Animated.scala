@@ -1,12 +1,13 @@
 package typings.reactNativeMaps.anon
 
 import typings.reactNativeMaps.mod.EdgePadding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animated extends js.Object {
+trait Animated extends StObject {
   
   var animated: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object Animated {
   }
   
   @scala.inline
-  implicit class AnimatedOps[Self <: Animated] (val x: Self) extends AnyVal {
+  implicit class AnimatedMutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgePadding(value: EdgePadding): Self = StObject.set(x, "edgePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
-    
-    @scala.inline
-    def setEdgePadding(value: EdgePadding): Self = this.set("edgePadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdgePadding: Self = this.set("edgePadding", js.undefined)
+    def setEdgePaddingUndefined: Self = StObject.set(x, "edgePadding", js.undefined)
   }
 }

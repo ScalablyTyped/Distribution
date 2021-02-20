@@ -1,5 +1,6 @@
 package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a number format resource.
   */
 @js.native
-trait SchemaGamesNumberFormatConfiguration extends js.Object {
+trait SchemaGamesNumberFormatConfiguration extends StObject {
   
   /**
     * The curreny code string. Only used for CURRENCY format type.
@@ -46,42 +47,30 @@ object SchemaGamesNumberFormatConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaGamesNumberFormatConfigurationOps[Self <: SchemaGamesNumberFormatConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaGamesNumberFormatConfigurationMutableBuilder[Self <: SchemaGamesNumberFormatConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumDecimalPlaces(value: Double): Self = StObject.set(x, "numDecimalPlaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setNumDecimalPlacesUndefined: Self = StObject.set(x, "numDecimalPlaces", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumDecimalPlaces(value: Double): Self = this.set("numDecimalPlaces", value.asInstanceOf[js.Any])
+    def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
     
     @scala.inline
-    def deleteNumDecimalPlaces: Self = this.set("numDecimalPlaces", js.undefined)
+    def setSuffix(value: SchemaGamesNumberAffixConfiguration): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatType(value: String): Self = this.set("numberFormatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberFormatType: Self = this.set("numberFormatType", js.undefined)
-    
-    @scala.inline
-    def setSuffix(value: SchemaGamesNumberAffixConfiguration): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

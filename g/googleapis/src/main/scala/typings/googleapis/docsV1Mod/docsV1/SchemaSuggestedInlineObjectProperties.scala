@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A suggested change to InlineObjectProperties.
   */
 @js.native
-trait SchemaSuggestedInlineObjectProperties extends js.Object {
+trait SchemaSuggestedInlineObjectProperties extends StObject {
   
   /**
     * An InlineObjectProperties that only includes the changes made in this
@@ -33,30 +34,18 @@ object SchemaSuggestedInlineObjectProperties {
   }
   
   @scala.inline
-  implicit class SchemaSuggestedInlineObjectPropertiesOps[Self <: SchemaSuggestedInlineObjectProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaSuggestedInlineObjectPropertiesMutableBuilder[Self <: SchemaSuggestedInlineObjectProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInlineObjectProperties(value: SchemaInlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInlineObjectPropertiesSuggestionState(value: SchemaInlineObjectPropertiesSuggestionState): Self = StObject.set(x, "inlineObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "inlineObjectPropertiesSuggestionState", js.undefined)
     
     @scala.inline
-    def setInlineObjectProperties(value: SchemaInlineObjectProperties): Self = this.set("inlineObjectProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineObjectProperties: Self = this.set("inlineObjectProperties", js.undefined)
-    
-    @scala.inline
-    def setInlineObjectPropertiesSuggestionState(value: SchemaInlineObjectPropertiesSuggestionState): Self = this.set("inlineObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineObjectPropertiesSuggestionState: Self = this.set("inlineObjectPropertiesSuggestionState", js.undefined)
+    def setInlineObjectPropertiesUndefined: Self = StObject.set(x, "inlineObjectProperties", js.undefined)
   }
 }

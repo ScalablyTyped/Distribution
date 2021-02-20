@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowInfo extends js.Object {
+trait RowInfo extends StObject {
   
   /**
     * The number of rows that were not ingested.
@@ -26,30 +27,18 @@ object RowInfo {
   }
   
   @scala.inline
-  implicit class RowInfoOps[Self <: RowInfo] (val x: Self) extends AnyVal {
+  implicit class RowInfoMutableBuilder[Self <: RowInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRowsDropped(value: long): Self = StObject.set(x, "RowsDropped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowsDroppedUndefined: Self = StObject.set(x, "RowsDropped", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowsIngested(value: long): Self = StObject.set(x, "RowsIngested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsDropped(value: long): Self = this.set("RowsDropped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsDropped: Self = this.set("RowsDropped", js.undefined)
-    
-    @scala.inline
-    def setRowsIngested(value: long): Self = this.set("RowsIngested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsIngested: Self = this.set("RowsIngested", js.undefined)
+    def setRowsIngestedUndefined: Self = StObject.set(x, "RowsIngested", js.undefined)
   }
 }

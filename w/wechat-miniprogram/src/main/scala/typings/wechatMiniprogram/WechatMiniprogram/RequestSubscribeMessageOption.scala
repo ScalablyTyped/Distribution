@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestSubscribeMessageOption extends js.Object {
+trait RequestSubscribeMessageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[RequestSubscribeMessageCompleteCallback] = js.native
@@ -28,42 +29,30 @@ object RequestSubscribeMessageOption {
   }
   
   @scala.inline
-  implicit class RequestSubscribeMessageOptionOps[Self <: RequestSubscribeMessageOption] (val x: Self) extends AnyVal {
+  implicit class RequestSubscribeMessageOptionMutableBuilder[Self <: RequestSubscribeMessageOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: /* result */ RequestSubscribeMessageFailCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTmplIdsVarargs(value: js.Any*): Self = this.set("tmplIds", js.Array(value :_*))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setTmplIds(value: js.Array[_]): Self = this.set("tmplIds", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* result */ RequestSubscribeMessageSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setTmplIds(value: js.Array[_]): Self = StObject.set(x, "tmplIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* result */ RequestSubscribeMessageFailCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ RequestSubscribeMessageSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTmplIdsVarargs(value: js.Any*): Self = StObject.set(x, "tmplIds", js.Array(value :_*))
   }
 }

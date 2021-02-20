@@ -1,12 +1,13 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaModel extends js.Object {
+trait SchemaModel extends StObject {
   
   /**
     * Output only. The time when this model was created, in millisecs since the
@@ -100,105 +101,93 @@ object SchemaModel {
   }
   
   @scala.inline
-  implicit class SchemaModelOps[Self <: SchemaModel] (val x: Self) extends AnyVal {
+  implicit class SchemaModelMutableBuilder[Self <: SchemaModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setFeatureColumns(value: js.Array[SchemaStandardSqlField]): Self = StObject.set(x, "featureColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setFeatureColumnsUndefined: Self = StObject.set(x, "featureColumns", js.undefined)
     
     @scala.inline
-    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    def setFeatureColumnsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "featureColumns", js.Array(value :_*))
     
     @scala.inline
-    def setFeatureColumnsVarargs(value: SchemaStandardSqlField*): Self = this.set("featureColumns", js.Array(value :_*))
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureColumns(value: js.Array[SchemaStandardSqlField]): Self = this.set("featureColumns", value.asInstanceOf[js.Any])
+    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     @scala.inline
-    def deleteFeatureColumns: Self = this.set("featureColumns", js.undefined)
+    def setLabelColumns(value: js.Array[SchemaStandardSqlField]): Self = StObject.set(x, "labelColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setLabelColumnsUndefined: Self = StObject.set(x, "labelColumns", js.undefined)
     
     @scala.inline
-    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    def setLabelColumnsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "labelColumns", js.Array(value :_*))
     
     @scala.inline
-    def setLabelColumnsVarargs(value: SchemaStandardSqlField*): Self = this.set("labelColumns", js.Array(value :_*))
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColumns(value: js.Array[SchemaStandardSqlField]): Self = this.set("labelColumns", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteLabelColumns: Self = this.set("labelColumns", js.undefined)
+    def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    def setModelReference(value: SchemaModelReference): Self = StObject.set(x, "modelReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setModelReferenceUndefined: Self = StObject.set(x, "modelReference", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setModelType(value: String): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelReference(value: SchemaModelReference): Self = this.set("modelReference", value.asInstanceOf[js.Any])
+    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
     @scala.inline
-    def deleteModelReference: Self = this.set("modelReference", js.undefined)
+    def setTrainingRuns(value: js.Array[SchemaTrainingRun]): Self = StObject.set(x, "trainingRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelType(value: String): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
     
     @scala.inline
-    def deleteModelType: Self = this.set("modelType", js.undefined)
-    
-    @scala.inline
-    def setTrainingRunsVarargs(value: SchemaTrainingRun*): Self = this.set("trainingRuns", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrainingRuns(value: js.Array[SchemaTrainingRun]): Self = this.set("trainingRuns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingRuns: Self = this.set("trainingRuns", js.undefined)
+    def setTrainingRunsVarargs(value: SchemaTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
   }
 }

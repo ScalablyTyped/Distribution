@@ -12,19 +12,19 @@ import typings.handsontable.mod.Handsontable._editors.Numeric
 import typings.handsontable.mod.Handsontable._editors.Password
 import typings.handsontable.mod.Handsontable._editors.Select
 import typings.handsontable.mod.Handsontable._editors.Text
-import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLTableCellElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editors extends js.Object {
+trait Editors extends StObject {
   
   var AutocompleteEditor: Instantiable0[Autocomplete] = js.native
   
   var BaseEditor: Instantiable6[
-    /* hotInstance */ Core, 
+    /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
     /* row */ Double, 
     /* col */ Double, 
     /* prop */ String | Double, 
@@ -54,7 +54,7 @@ trait Editors extends js.Object {
   var TimeEditor: Instantiable0[Text] = js.native
   
   def getEditor(editorName: String): Instantiable6[
-    /* hotInstance */ Core, 
+    /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
     /* row */ Double, 
     /* col */ Double, 
     /* prop */ String | Double, 
@@ -66,7 +66,7 @@ trait Editors extends js.Object {
   def registerEditor(
     editorName: String,
     editorClass: Instantiable6[
-      /* hotInstance */ Core, 
+      /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
       /* row */ Double, 
       /* col */ Double, 
       /* prop */ String | Double, 
@@ -82,7 +82,7 @@ object Editors {
   def apply(
     AutocompleteEditor: Instantiable0[Autocomplete],
     BaseEditor: Instantiable6[
-      /* hotInstance */ Core, 
+      /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
       /* row */ Double, 
       /* col */ Double, 
       /* prop */ String | Double, 
@@ -101,7 +101,7 @@ object Editors {
     TextEditor: Instantiable0[Text],
     TimeEditor: Instantiable0[Text],
     getEditor: String => Instantiable6[
-      /* hotInstance */ Core, 
+      /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
       /* row */ Double, 
       /* col */ Double, 
       /* prop */ String | Double, 
@@ -110,7 +110,7 @@ object Editors {
       Base
     ],
     registerEditor: (String, Instantiable6[
-      /* hotInstance */ Core, 
+      /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
       /* row */ Double, 
       /* col */ Double, 
       /* prop */ String | Double, 
@@ -124,27 +124,15 @@ object Editors {
   }
   
   @scala.inline
-  implicit class EditorsOps[Self <: Editors] (val x: Self) extends AnyVal {
+  implicit class EditorsMutableBuilder[Self <: Editors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutocompleteEditor(value: Instantiable0[Autocomplete]): Self = this.set("AutocompleteEditor", value.asInstanceOf[js.Any])
+    def setAutocompleteEditor(value: Instantiable0[Autocomplete]): Self = StObject.set(x, "AutocompleteEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBaseEditor(
       value: Instantiable6[
-          /* hotInstance */ Core, 
+          /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
           /* row */ Double, 
           /* col */ Double, 
           /* prop */ String | Double, 
@@ -152,42 +140,21 @@ object Editors {
           /* cellProperties */ CellProperties, 
           Base
         ]
-    ): Self = this.set("BaseEditor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "BaseEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxEditor(value: Instantiable0[Checkbox]): Self = this.set("CheckboxEditor", value.asInstanceOf[js.Any])
+    def setCheckboxEditor(value: Instantiable0[Checkbox]): Self = StObject.set(x, "CheckboxEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateEditor(value: Instantiable0[Date]): Self = this.set("DateEditor", value.asInstanceOf[js.Any])
+    def setDateEditor(value: Instantiable0[Date]): Self = StObject.set(x, "DateEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdownEditor(value: Instantiable0[Dropdown]): Self = this.set("DropdownEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandsontableEditor(value: Instantiable0[typings.handsontable.mod.Handsontable._editors.Handsontable]): Self = this.set("HandsontableEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMobileEditor(value: Instantiable0[Mobile]): Self = this.set("MobileEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumericEditor(value: Instantiable0[Numeric]): Self = this.set("NumericEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPasswordEditor(value: Instantiable0[Password]): Self = this.set("PasswordEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectEditor(value: Instantiable0[Select]): Self = this.set("SelectEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextEditor(value: Instantiable0[Text]): Self = this.set("TextEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeEditor(value: Instantiable0[Text]): Self = this.set("TimeEditor", value.asInstanceOf[js.Any])
+    def setDropdownEditor(value: Instantiable0[Dropdown]): Self = StObject.set(x, "DropdownEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetEditor(
       value: String => Instantiable6[
-          /* hotInstance */ Core, 
+          /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
           /* row */ Double, 
           /* col */ Double, 
           /* prop */ String | Double, 
@@ -195,12 +162,24 @@ object Editors {
           /* cellProperties */ CellProperties, 
           Base
         ]
-    ): Self = this.set("getEditor", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setHandsontableEditor(value: Instantiable0[typings.handsontable.mod.Handsontable._editors.Handsontable]): Self = StObject.set(x, "HandsontableEditor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMobileEditor(value: Instantiable0[Mobile]): Self = StObject.set(x, "MobileEditor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNumericEditor(value: Instantiable0[Numeric]): Self = StObject.set(x, "NumericEditor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPasswordEditor(value: Instantiable0[Password]): Self = StObject.set(x, "PasswordEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRegisterEditor(
       value: (String, Instantiable6[
-          /* hotInstance */ Core, 
+          /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
           /* row */ Double, 
           /* col */ Double, 
           /* prop */ String | Double, 
@@ -208,6 +187,15 @@ object Editors {
           /* cellProperties */ CellProperties, 
           Base
         ]) => Unit
-    ): Self = this.set("registerEditor", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "registerEditor", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setSelectEditor(value: Instantiable0[Select]): Self = StObject.set(x, "SelectEditor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTextEditor(value: Instantiable0[Text]): Self = StObject.set(x, "TextEditor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTimeEditor(value: Instantiable0[Text]): Self = StObject.set(x, "TimeEditor", value.asInstanceOf[js.Any])
   }
 }

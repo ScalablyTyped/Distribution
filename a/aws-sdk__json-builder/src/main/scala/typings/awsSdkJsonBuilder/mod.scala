@@ -2,17 +2,17 @@ package typings.awsSdkJsonBuilder
 
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/json-builder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializer * / any */ @js.native
-  class JsonBuilder protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializer * / any */ @JSImport("@aws-sdk/json-builder", "JsonBuilder")
+  @js.native
+  class JsonBuilder protected () extends StObject {
     def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
     
     val base64Encoder: js.Any = js.native

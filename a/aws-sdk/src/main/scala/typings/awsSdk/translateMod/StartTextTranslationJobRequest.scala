@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartTextTranslationJobRequest extends js.Object {
+trait StartTextTranslationJobRequest extends StObject {
   
   /**
     * A unique identifier for the request. This token is auto-generated when using the Amazon Translate SDK.
@@ -63,54 +64,42 @@ object StartTextTranslationJobRequest {
   }
   
   @scala.inline
-  implicit class StartTextTranslationJobRequestOps[Self <: StartTextTranslationJobRequest] (val x: Self) extends AnyVal {
+  implicit class StartTextTranslationJobRequestMutableBuilder[Self <: StartTextTranslationJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientTokenString): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    def setTargetLanguageCodes(value: TargetLanguageCodeStringList): Self = StObject.set(x, "TargetLanguageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = this.set("TargetLanguageCodes", js.Array(value :_*))
+    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value :_*))
     
     @scala.inline
-    def setTargetLanguageCodes(value: TargetLanguageCodeStringList): Self = this.set("TargetLanguageCodes", value.asInstanceOf[js.Any])
+    def setTerminologyNames(value: ResourceNameList): Self = StObject.set(x, "TerminologyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setTerminologyNamesUndefined: Self = StObject.set(x, "TerminologyNames", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
-    
-    @scala.inline
-    def setTerminologyNamesVarargs(value: ResourceName*): Self = this.set("TerminologyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerminologyNames(value: ResourceNameList): Self = this.set("TerminologyNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminologyNames: Self = this.set("TerminologyNames", js.undefined)
+    def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value :_*))
   }
 }

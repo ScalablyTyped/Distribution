@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccessPointsOutput extends js.Object {
+trait DescribeAccessPointsOutput extends StObject {
   
   /**
     * Information about the load balancers.
@@ -26,33 +27,21 @@ object DescribeAccessPointsOutput {
   }
   
   @scala.inline
-  implicit class DescribeAccessPointsOutputOps[Self <: DescribeAccessPointsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeAccessPointsOutputMutableBuilder[Self <: DescribeAccessPointsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancerDescriptions(value: LoadBalancerDescriptions): Self = StObject.set(x, "LoadBalancerDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadBalancerDescriptionsUndefined: Self = StObject.set(x, "LoadBalancerDescriptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = StObject.set(x, "LoadBalancerDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = this.set("LoadBalancerDescriptions", js.Array(value :_*))
+    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerDescriptions(value: LoadBalancerDescriptions): Self = this.set("LoadBalancerDescriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerDescriptions: Self = this.set("LoadBalancerDescriptions", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.glaze.glazeStrings.Dot05em
 import typings.glaze.glazeStrings.Dot1em
 import typings.glaze.glazeStrings.`-0Dot025em`
 import typings.glaze.glazeStrings.`-0Dot05em`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Normal extends js.Object {
+trait Normal extends StObject {
   
   val normal: typings.glaze.glazeNumbers.`0` = js.native
   
@@ -40,36 +41,24 @@ object Normal {
   }
   
   @scala.inline
-  implicit class NormalOps[Self <: Normal] (val x: Self) extends AnyVal {
+  implicit class NormalMutableBuilder[Self <: Normal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormal(value: typings.glaze.glazeNumbers.`0`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTight(value: `-0Dot025em`): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTighter(value: `-0Dot05em`): Self = StObject.set(x, "tighter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: typings.glaze.glazeNumbers.`0`): Self = this.set("normal", value.asInstanceOf[js.Any])
+    def setWide(value: Dot025em): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTight(value: `-0Dot025em`): Self = this.set("tight", value.asInstanceOf[js.Any])
+    def setWider(value: Dot05em): Self = StObject.set(x, "wider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTighter(value: `-0Dot05em`): Self = this.set("tighter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWide(value: Dot025em): Self = this.set("wide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWider(value: Dot05em): Self = this.set("wider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidest(value: Dot1em): Self = this.set("widest", value.asInstanceOf[js.Any])
+    def setWidest(value: Dot1em): Self = StObject.set(x, "widest", value.asInstanceOf[js.Any])
   }
 }

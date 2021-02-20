@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetAction extends js.Object {
+trait DatasetAction extends StObject {
   
   /**
     * The name of the data set action by which data set contents are automatically created.
@@ -31,36 +32,24 @@ object DatasetAction {
   }
   
   @scala.inline
-  implicit class DatasetActionOps[Self <: DatasetAction] (val x: Self) extends AnyVal {
+  implicit class DatasetActionMutableBuilder[Self <: DatasetAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerAction(value: ContainerDatasetAction): Self = StObject.set(x, "containerAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: DatasetActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setContainerActionUndefined: Self = StObject.set(x, "containerAction", js.undefined)
     
     @scala.inline
-    def deleteActionName: Self = this.set("actionName", js.undefined)
+    def setQueryAction(value: SqlQueryDatasetAction): Self = StObject.set(x, "queryAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerAction(value: ContainerDatasetAction): Self = this.set("containerAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerAction: Self = this.set("containerAction", js.undefined)
-    
-    @scala.inline
-    def setQueryAction(value: SqlQueryDatasetAction): Self = this.set("queryAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryAction: Self = this.set("queryAction", js.undefined)
+    def setQueryActionUndefined: Self = StObject.set(x, "queryAction", js.undefined)
   }
 }

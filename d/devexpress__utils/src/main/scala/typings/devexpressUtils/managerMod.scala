@@ -5,16 +5,16 @@ import typings.devexpressUtils.numberMod.NumberFormatter
 import typings.devexpressUtils.optionsMod.IFormattersOptions
 import typings.devexpressUtils.stringMod.StringFormatter
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/formatters/manager", JSImport.Namespace)
-@js.native
-object managerMod extends js.Object {
+object managerMod {
   
+  @JSImport("@devexpress/utils/lib/formatters/manager", "SimpleFormattersManager")
   @js.native
-  class SimpleFormattersManager protected () extends js.Object {
+  class SimpleFormattersManager protected () extends StObject {
     def this(options: IFormattersOptions) = this()
     
     var dateFormatter: DateFormatter = js.native

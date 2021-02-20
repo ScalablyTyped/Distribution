@@ -5,14 +5,14 @@ import typings.node.Buffer
 import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/hash-stream-node/dist/cjs/hash-calculator", JSImport.Namespace)
-@js.native
-object hashCalculatorMod extends js.Object {
+object hashCalculatorMod {
   
+  @JSImport("@aws-sdk/hash-stream-node/dist/cjs/hash-calculator", "HashCalculator")
   @js.native
   class HashCalculator protected () extends Writable {
     def this(hash: Hash) = this()

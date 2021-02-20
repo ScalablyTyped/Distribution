@@ -13,12 +13,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bias[T /* <: Tensor3D | Tensor4D */] extends js.Object {
+trait Bias[T /* <: Tensor3D | Tensor4D */] extends StObject {
   
   var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.native
   
@@ -54,75 +55,63 @@ object Bias {
   }
   
   @scala.inline
-  implicit class BiasOps[Self <: Bias[_], T /* <: Tensor3D | Tensor4D */] (val x: Self with Bias[T]) extends AnyVal {
+  implicit class BiasMutableBuilder[Self <: Bias[_], T /* <: Tensor3D | Tensor4D */] (val x: Self with Bias[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterVarargs(value: Uint8Array*): Self = this.set("filter", js.Array(value :_*))
+    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
     @scala.inline
-    def setFilter(value: Tensor4D | TensorLike): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
     
     @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = this.set("pad", value.asInstanceOf[js.Any])
+    def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = this.set("strides", value.asInstanceOf[js.Any])
+    def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
     
     @scala.inline
-    def setXVarargs(value: Uint8Array*): Self = this.set("x", js.Array(value :_*))
+    def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: T | TensorLike): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setDilationsUndefined: Self = StObject.set(x, "dilations", js.undefined)
     
     @scala.inline
-    def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = this.set("activation", value.asInstanceOf[js.Any])
+    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivation: Self = this.set("activation", js.undefined)
+    def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
     
     @scala.inline
-    def setBiasVarargs(value: Uint8Array*): Self = this.set("bias", js.Array(value :_*))
+    def setFilter(value: Tensor4D | TensorLike): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBias(value: Tensor[Rank] | TensorLike): Self = this.set("bias", value.asInstanceOf[js.Any])
+    def setFilterVarargs(value: Uint8Array*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def deleteBias: Self = this.set("bias", js.undefined)
+    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormat(value: NHWC | NCHW): Self = this.set("dataFormat", value.asInstanceOf[js.Any])
+    def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFormat: Self = this.set("dataFormat", js.undefined)
+    def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     
     @scala.inline
-    def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = this.set("dilations", value.asInstanceOf[js.Any])
+    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDilations: Self = this.set("dilations", js.undefined)
+    def setX(value: T | TensorLike): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = this.set("dimRoundingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimRoundingMode: Self = this.set("dimRoundingMode", js.undefined)
-    
-    @scala.inline
-    def setPreluActivationWeights(value: Tensor[Rank]): Self = this.set("preluActivationWeights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreluActivationWeights: Self = this.set("preluActivationWeights", js.undefined)
+    def setXVarargs(value: Uint8Array*): Self = StObject.set(x, "x", js.Array(value :_*))
   }
 }

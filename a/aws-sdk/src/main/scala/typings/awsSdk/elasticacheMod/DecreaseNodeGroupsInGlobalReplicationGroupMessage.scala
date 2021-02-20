@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecreaseNodeGroupsInGlobalReplicationGroupMessage extends js.Object {
+trait DecreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
   
   /**
     * Indicates that the shard reconfiguration process begins immediately. At present, the only permitted value for this parameter is true. 
@@ -41,45 +42,33 @@ object DecreaseNodeGroupsInGlobalReplicationGroupMessage {
   }
   
   @scala.inline
-  implicit class DecreaseNodeGroupsInGlobalReplicationGroupMessageOps[Self <: DecreaseNodeGroupsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  implicit class DecreaseNodeGroupsInGlobalReplicationGroupMessageMutableBuilder[Self <: DecreaseNodeGroupsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalNodeGroupsToRemove(value: GlobalNodeGroupIdList): Self = StObject.set(x, "GlobalNodeGroupsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalNodeGroupsToRemoveUndefined: Self = StObject.set(x, "GlobalNodeGroupsToRemove", js.undefined)
     
     @scala.inline
-    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    def setGlobalNodeGroupsToRemoveVarargs(value: String*): Self = StObject.set(x, "GlobalNodeGroupsToRemove", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    def setGlobalNodeGroupsToRetain(value: GlobalNodeGroupIdList): Self = StObject.set(x, "GlobalNodeGroupsToRetain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupCount(value: Integer): Self = this.set("NodeGroupCount", value.asInstanceOf[js.Any])
+    def setGlobalNodeGroupsToRetainUndefined: Self = StObject.set(x, "GlobalNodeGroupsToRetain", js.undefined)
     
     @scala.inline
-    def setGlobalNodeGroupsToRemoveVarargs(value: String*): Self = this.set("GlobalNodeGroupsToRemove", js.Array(value :_*))
+    def setGlobalNodeGroupsToRetainVarargs(value: String*): Self = StObject.set(x, "GlobalNodeGroupsToRetain", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalNodeGroupsToRemove(value: GlobalNodeGroupIdList): Self = this.set("GlobalNodeGroupsToRemove", value.asInstanceOf[js.Any])
+    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalNodeGroupsToRemove: Self = this.set("GlobalNodeGroupsToRemove", js.undefined)
-    
-    @scala.inline
-    def setGlobalNodeGroupsToRetainVarargs(value: String*): Self = this.set("GlobalNodeGroupsToRetain", js.Array(value :_*))
-    
-    @scala.inline
-    def setGlobalNodeGroupsToRetain(value: GlobalNodeGroupIdList): Self = this.set("GlobalNodeGroupsToRetain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalNodeGroupsToRetain: Self = this.set("GlobalNodeGroupsToRetain", js.undefined)
+    def setNodeGroupCount(value: Integer): Self = StObject.set(x, "NodeGroupCount", value.asInstanceOf[js.Any])
   }
 }

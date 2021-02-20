@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAppsScript.googleAppsScriptStrings.REGEXP_PARTIAL_MATCH
   - typings.googleAppsScript.googleAppsScriptStrings.REGEXP_EXACT_MATCH
 */
-trait RegexpOperator extends js.Object
+trait RegexpOperator extends StObject
 object RegexpOperator {
   
   @scala.inline

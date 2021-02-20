@@ -1,11 +1,12 @@
 package typings.postal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConfiguration extends js.Object {
+trait IConfiguration extends StObject {
   
   var DEFAULT_CHANNEL: String = js.native
   
@@ -22,27 +23,15 @@ object IConfiguration {
   }
   
   @scala.inline
-  implicit class IConfigurationOps[Self <: IConfiguration] (val x: Self) extends AnyVal {
+  implicit class IConfigurationMutableBuilder[Self <: IConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDEFAULT_CHANNEL(value: String): Self = StObject.set(x, "DEFAULT_CHANNEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDEFAULT_CHANNEL(value: String): Self = this.set("DEFAULT_CHANNEL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSYSTEM_CHANNEL(value: String): Self = this.set("SYSTEM_CHANNEL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolver(value: IResolver): Self = this.set("resolver", value.asInstanceOf[js.Any])
+    def setSYSTEM_CHANNEL(value: String): Self = StObject.set(x, "SYSTEM_CHANNEL", value.asInstanceOf[js.Any])
   }
 }

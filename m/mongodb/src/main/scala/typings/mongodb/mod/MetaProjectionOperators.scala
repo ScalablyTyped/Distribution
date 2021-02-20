@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mongodbStrings.textScore
   - typings.mongodb.mongodbStrings.indexKey
 */
-trait MetaProjectionOperators extends js.Object
+trait MetaProjectionOperators extends StObject
 object MetaProjectionOperators {
   
   @scala.inline

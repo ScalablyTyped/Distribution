@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SphericalHarmonics extends js.Object {
+trait SphericalHarmonics extends StObject {
   
   /**
     * Adds a light to the spherical harmonics
@@ -129,63 +130,51 @@ object SphericalHarmonics {
   }
   
   @scala.inline
-  implicit class SphericalHarmonicsOps[Self <: SphericalHarmonics] (val x: Self) extends AnyVal {
+  implicit class SphericalHarmonicsMutableBuilder[Self <: SphericalHarmonics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLight(value: (Vector3, Color3, Double) => Unit): Self = StObject.set(x, "addLight", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertIncidentRadianceToIrradiance(value: () => Unit): Self = StObject.set(x, "convertIncidentRadianceToIrradiance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertIrradianceToLambertianRadiance(value: () => Unit): Self = StObject.set(x, "convertIrradianceToLambertianRadiance", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddLight(value: (Vector3, Color3, Double) => Unit): Self = this.set("addLight", js.Any.fromFunction3(value))
+    def setL00(value: Vector3): Self = StObject.set(x, "l00", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertIncidentRadianceToIrradiance(value: () => Unit): Self = this.set("convertIncidentRadianceToIrradiance", js.Any.fromFunction0(value))
+    def setL10(value: Vector3): Self = StObject.set(x, "l10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertIrradianceToLambertianRadiance(value: () => Unit): Self = this.set("convertIrradianceToLambertianRadiance", js.Any.fromFunction0(value))
+    def setL11(value: Vector3): Self = StObject.set(x, "l11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL00(value: Vector3): Self = this.set("l00", value.asInstanceOf[js.Any])
+    def setL1_1(value: Vector3): Self = StObject.set(x, "l1_1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL10(value: Vector3): Self = this.set("l10", value.asInstanceOf[js.Any])
+    def setL20(value: Vector3): Self = StObject.set(x, "l20", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL11(value: Vector3): Self = this.set("l11", value.asInstanceOf[js.Any])
+    def setL21(value: Vector3): Self = StObject.set(x, "l21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL1_1(value: Vector3): Self = this.set("l1_1", value.asInstanceOf[js.Any])
+    def setL22(value: Vector3): Self = StObject.set(x, "l22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL20(value: Vector3): Self = this.set("l20", value.asInstanceOf[js.Any])
+    def setL2_1(value: Vector3): Self = StObject.set(x, "l2_1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL21(value: Vector3): Self = this.set("l21", value.asInstanceOf[js.Any])
+    def setL2_2(value: Vector3): Self = StObject.set(x, "l2_2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL22(value: Vector3): Self = this.set("l22", value.asInstanceOf[js.Any])
+    def setPreScaleForRendering(value: () => Unit): Self = StObject.set(x, "preScaleForRendering", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setL2_1(value: Vector3): Self = this.set("l2_1", value.asInstanceOf[js.Any])
+    def setPreScaled(value: Boolean): Self = StObject.set(x, "preScaled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL2_2(value: Vector3): Self = this.set("l2_2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreScaleForRendering(value: () => Unit): Self = this.set("preScaleForRendering", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreScaled(value: Boolean): Self = this.set("preScaled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleInPlace(value: Double => Unit): Self = this.set("scaleInPlace", js.Any.fromFunction1(value))
+    def setScaleInPlace(value: Double => Unit): Self = StObject.set(x, "scaleInPlace", js.Any.fromFunction1(value))
   }
 }

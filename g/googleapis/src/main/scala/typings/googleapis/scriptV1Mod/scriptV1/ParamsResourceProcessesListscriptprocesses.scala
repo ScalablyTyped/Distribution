@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,93 +92,81 @@ object ParamsResourceProcessesListscriptprocesses {
   }
   
   @scala.inline
-  implicit class ParamsResourceProcessesListscriptprocessesOps[Self <: ParamsResourceProcessesListscriptprocesses] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProcessesListscriptprocessesMutableBuilder[Self <: ParamsResourceProcessesListscriptprocesses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setScriptProcessFilterDotdeploymentId(value: String): Self = StObject.set(x, "scriptProcessFilter.deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: String): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDotdeploymentIdUndefined: Self = StObject.set(x, "scriptProcessFilter.deploymentId", js.undefined)
     
     @scala.inline
-    def deleteScriptId: Self = this.set("scriptId", js.undefined)
+    def setScriptProcessFilterDotendTime(value: String): Self = StObject.set(x, "scriptProcessFilter.endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptProcessFilterDotdeploymentId(value: String): Self = this.set("scriptProcessFilter.deploymentId", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDotendTimeUndefined: Self = StObject.set(x, "scriptProcessFilter.endTime", js.undefined)
     
     @scala.inline
-    def deleteScriptProcessFilterDotdeploymentId: Self = this.set("scriptProcessFilter.deploymentId", js.undefined)
+    def setScriptProcessFilterDotfunctionName(value: String): Self = StObject.set(x, "scriptProcessFilter.functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptProcessFilterDotendTime(value: String): Self = this.set("scriptProcessFilter.endTime", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDotfunctionNameUndefined: Self = StObject.set(x, "scriptProcessFilter.functionName", js.undefined)
     
     @scala.inline
-    def deleteScriptProcessFilterDotendTime: Self = this.set("scriptProcessFilter.endTime", js.undefined)
+    def setScriptProcessFilterDotstartTime(value: String): Self = StObject.set(x, "scriptProcessFilter.startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptProcessFilterDotfunctionName(value: String): Self = this.set("scriptProcessFilter.functionName", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDotstartTimeUndefined: Self = StObject.set(x, "scriptProcessFilter.startTime", js.undefined)
     
     @scala.inline
-    def deleteScriptProcessFilterDotfunctionName: Self = this.set("scriptProcessFilter.functionName", js.undefined)
+    def setScriptProcessFilterDotstatuses(value: js.Array[String]): Self = StObject.set(x, "scriptProcessFilter.statuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptProcessFilterDotstartTime(value: String): Self = this.set("scriptProcessFilter.startTime", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDotstatusesUndefined: Self = StObject.set(x, "scriptProcessFilter.statuses", js.undefined)
     
     @scala.inline
-    def deleteScriptProcessFilterDotstartTime: Self = this.set("scriptProcessFilter.startTime", js.undefined)
+    def setScriptProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.statuses", js.Array(value :_*))
     
     @scala.inline
-    def setScriptProcessFilterDotstatusesVarargs(value: String*): Self = this.set("scriptProcessFilter.statuses", js.Array(value :_*))
+    def setScriptProcessFilterDottypes(value: js.Array[String]): Self = StObject.set(x, "scriptProcessFilter.types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptProcessFilterDotstatuses(value: js.Array[String]): Self = this.set("scriptProcessFilter.statuses", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDottypesUndefined: Self = StObject.set(x, "scriptProcessFilter.types", js.undefined)
     
     @scala.inline
-    def deleteScriptProcessFilterDotstatuses: Self = this.set("scriptProcessFilter.statuses", js.undefined)
+    def setScriptProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.types", js.Array(value :_*))
     
     @scala.inline
-    def setScriptProcessFilterDottypesVarargs(value: String*): Self = this.set("scriptProcessFilter.types", js.Array(value :_*))
+    def setScriptProcessFilterDotuserAccessLevels(value: js.Array[String]): Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptProcessFilterDottypes(value: js.Array[String]): Self = this.set("scriptProcessFilter.types", value.asInstanceOf[js.Any])
+    def setScriptProcessFilterDotuserAccessLevelsUndefined: Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", js.undefined)
     
     @scala.inline
-    def deleteScriptProcessFilterDottypes: Self = this.set("scriptProcessFilter.types", js.undefined)
-    
-    @scala.inline
-    def setScriptProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = this.set("scriptProcessFilter.userAccessLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setScriptProcessFilterDotuserAccessLevels(value: js.Array[String]): Self = this.set("scriptProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptProcessFilterDotuserAccessLevels: Self = this.set("scriptProcessFilter.userAccessLevels", js.undefined)
+    def setScriptProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "scriptProcessFilter.userAccessLevels", js.Array(value :_*))
   }
 }

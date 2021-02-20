@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editor extends js.Object {
+trait Editor extends StObject {
   
   var editor: typings.ace.AceAjax.Editor | GetText = js.native
   
@@ -36,51 +37,39 @@ object Editor {
   }
   
   @scala.inline
-  implicit class EditorOps[Self <: Editor] (val x: Self) extends AnyVal {
+  implicit class EditorMutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditor(value: typings.ace.AceAjax.Editor | GetText): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementPrefix(value: String): Self = StObject.set(x, "elementPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementPrefixUndefined: Self = StObject.set(x, "elementPrefix", js.undefined)
     
     @scala.inline
-    def setEditor(value: typings.ace.AceAjax.Editor | GetText): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementPrefix(value: String): Self = this.set("elementPrefix", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteElementPrefix: Self = this.set("elementPrefix", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: String): Self = this.set("ext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExt: Self = this.set("ext", js.undefined)
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

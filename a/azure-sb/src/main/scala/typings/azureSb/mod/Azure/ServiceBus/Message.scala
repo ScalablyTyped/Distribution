@@ -1,11 +1,12 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   var body: String = js.native
   
@@ -24,39 +25,27 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokerProperties(value: BrokerProperties): Self = StObject.set(x, "brokerProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrokerPropertiesUndefined: Self = StObject.set(x, "brokerProperties", js.undefined)
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerProperties(value: BrokerProperties): Self = this.set("brokerProperties", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteBrokerProperties: Self = this.set("brokerProperties", js.undefined)
+    def setCustomProperties(value: Dictionary[_]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
-    
-    @scala.inline
-    def setCustomProperties(value: Dictionary[_]): Self = this.set("customProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomProperties: Self = this.set("customProperties", js.undefined)
+    def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
   }
 }

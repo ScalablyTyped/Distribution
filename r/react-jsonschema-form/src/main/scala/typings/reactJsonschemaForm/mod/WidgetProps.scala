@@ -70,13 +70,14 @@ import typings.reactJsonschemaForm.reactJsonschemaFormStrings.url
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.vertical
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.yes
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus'>> */
 @js.native
-trait WidgetProps extends js.Object {
+trait WidgetProps extends StObject {
   
   var about: js.UndefOr[String] = js.native
   

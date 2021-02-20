@@ -1,11 +1,12 @@
 package typings.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDevice extends js.Object {
+trait IDevice extends StObject {
   
   var isChrome: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object IDevice {
   }
   
   @scala.inline
-  implicit class IDeviceOps[Self <: IDevice] (val x: Self) extends AnyVal {
+  implicit class IDeviceMutableBuilder[Self <: IDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsChrome(value: Boolean): Self = this.set("isChrome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsChrome: Self = this.set("isChrome", js.undefined)
-    
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
   }
 }

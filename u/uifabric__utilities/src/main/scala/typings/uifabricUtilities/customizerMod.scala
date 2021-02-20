@@ -2,17 +2,23 @@ package typings.uifabricUtilities
 
 import typings.react.mod.Component
 import typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/customizations/Customizer", JSImport.Namespace)
-@js.native
-object customizerMod extends js.Object {
+object customizerMod {
   
+  @JSImport("@uifabric/utilities/lib/customizations/Customizer", "Customizer")
   @js.native
-  class Customizer ()
+  class Customizer protected ()
     extends Component[ICustomizerProps, js.Object, js.Any] {
+    def this(props: ICustomizerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ICustomizerProps, context: js.Any) = this()
     
     var _onCustomizationChange: js.Any = js.native
     

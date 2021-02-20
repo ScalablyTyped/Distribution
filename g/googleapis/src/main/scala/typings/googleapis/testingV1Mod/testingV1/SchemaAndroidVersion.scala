@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A version of the Android OS.
   */
 @js.native
-trait SchemaAndroidVersion extends js.Object {
+trait SchemaAndroidVersion extends StObject {
   
   /**
     * The API level for this Android version. Examples: 18, 19.
@@ -58,63 +59,51 @@ object SchemaAndroidVersion {
   }
   
   @scala.inline
-  implicit class SchemaAndroidVersionOps[Self <: SchemaAndroidVersion] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidVersionMutableBuilder[Self <: SchemaAndroidVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiLevelUndefined: Self = StObject.set(x, "apiLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeName(value: String): Self = StObject.set(x, "codeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiLevel(value: Double): Self = this.set("apiLevel", value.asInstanceOf[js.Any])
+    def setCodeNameUndefined: Self = StObject.set(x, "codeName", js.undefined)
     
     @scala.inline
-    def deleteApiLevel: Self = this.set("apiLevel", js.undefined)
+    def setDistribution(value: SchemaDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeName(value: String): Self = this.set("codeName", value.asInstanceOf[js.Any])
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def deleteCodeName: Self = this.set("codeName", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: SchemaDistribution): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setReleaseDate(value: SchemaDate): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDate(value: SchemaDate): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteReleaseDate: Self = this.set("releaseDate", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setVersionString(value: String): Self = this.set("versionString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionString: Self = this.set("versionString", js.undefined)
+    def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
   }
 }

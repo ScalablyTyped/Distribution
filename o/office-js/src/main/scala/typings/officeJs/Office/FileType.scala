@@ -1,18 +1,19 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileType extends js.Object
+sealed trait FileType extends StObject
 /**
   * Specifies the format in which to return the document.
   *
   */
 @JSGlobal("Office.FileType")
 @js.native
-object FileType extends js.Object {
+object FileType extends StObject {
   
   /**
     * Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.

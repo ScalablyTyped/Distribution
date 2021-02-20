@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestGridSession extends js.Object {
+trait TestGridSession extends StObject {
   
   /**
     * The ARN of the session.
@@ -46,54 +47,42 @@ object TestGridSession {
   }
   
   @scala.inline
-  implicit class TestGridSessionOps[Self <: TestGridSession] (val x: Self) extends AnyVal {
+  implicit class TestGridSessionMutableBuilder[Self <: TestGridSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: DeviceFarmArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingMinutes(value: Double): Self = StObject.set(x, "billingMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: DeviceFarmArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setBillingMinutesUndefined: Self = StObject.set(x, "billingMinutes", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingMinutes(value: Double): Self = this.set("billingMinutes", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteBillingMinutes: Self = this.set("billingMinutes", js.undefined)
+    def setEnded(value: DateTime): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: DateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setSeleniumProperties(value: String): Self = StObject.set(x, "seleniumProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnded(value: DateTime): Self = this.set("ended", value.asInstanceOf[js.Any])
+    def setSeleniumPropertiesUndefined: Self = StObject.set(x, "seleniumProperties", js.undefined)
     
     @scala.inline
-    def deleteEnded: Self = this.set("ended", js.undefined)
+    def setStatus(value: TestGridSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeleniumProperties(value: String): Self = this.set("seleniumProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeleniumProperties: Self = this.set("seleniumProperties", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: TestGridSessionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

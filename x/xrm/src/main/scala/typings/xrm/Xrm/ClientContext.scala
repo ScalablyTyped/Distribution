@@ -1,6 +1,7 @@
 package typings.xrm.Xrm
 
 import typings.xrm.XrmEnum.ClientFormFactor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for the client context.
   */
 @js.native
-trait ClientContext extends js.Object {
+trait ClientContext extends StObject {
   
   /**
     * Returns a value to indicate which client the script is executing in.
@@ -47,30 +48,18 @@ object ClientContext {
   }
   
   @scala.inline
-  implicit class ClientContextOps[Self <: ClientContext] (val x: Self) extends AnyVal {
+  implicit class ClientContextMutableBuilder[Self <: ClientContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClient(value: () => Client): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClientState(value: () => ClientState): Self = StObject.set(x, "getClientState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFormFactor(value: () => ClientFormFactor): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClient(value: () => Client): Self = this.set("getClient", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetClientState(value: () => ClientState): Self = this.set("getClientState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFormFactor(value: () => ClientFormFactor): Self = this.set("getFormFactor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = this.set("isOffline", js.Any.fromFunction0(value))
+    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
   }
 }

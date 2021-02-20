@@ -2,13 +2,38 @@ package typings.playable
 
 import typings.playable.anon.Engine
 import typings.playable.pictureInPictureTypesMod.IPictureInPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", JSImport.Namespace)
-@js.native
-object pictureInPictureMod extends js.Object {
+object pictureInPictureMod {
+  
+  @JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", JSImport.Default)
+  @js.native
+  class default protected () extends PictureInPicture {
+    def this(hasEventEmitterEngine: Engine) = this()
+  }
+  object default {
+    
+    @JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", "default.dependencies")
+    @js.native
+    def dependencies: js.Array[String] = js.native
+    @scala.inline
+    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", "default.moduleName")
+    @js.native
+    def moduleName: String = js.native
+    @scala.inline
+    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait PictureInPicture extends IPictureInPicture {
@@ -31,18 +56,5 @@ object pictureInPictureMod extends js.Object {
       */
     @JSName("isInPictureInPicture")
     def isInPictureInPicture_MPictureInPicture: Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends PictureInPicture {
-    def this(hasEventEmitterEngine: Engine) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var dependencies: js.Array[String] = js.native
-    
-    var moduleName: String = js.native
   }
 }

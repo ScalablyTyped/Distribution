@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRealtimeLogConfigsResult extends js.Object {
+trait ListRealtimeLogConfigsResult extends StObject {
   
   /**
     * A list of real-time log configurations.
@@ -21,24 +22,12 @@ object ListRealtimeLogConfigsResult {
   }
   
   @scala.inline
-  implicit class ListRealtimeLogConfigsResultOps[Self <: ListRealtimeLogConfigsResult] (val x: Self) extends AnyVal {
+  implicit class ListRealtimeLogConfigsResultMutableBuilder[Self <: ListRealtimeLogConfigsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRealtimeLogConfigs(value: RealtimeLogConfigs): Self = StObject.set(x, "RealtimeLogConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRealtimeLogConfigs(value: RealtimeLogConfigs): Self = this.set("RealtimeLogConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealtimeLogConfigs: Self = this.set("RealtimeLogConfigs", js.undefined)
+    def setRealtimeLogConfigsUndefined: Self = StObject.set(x, "RealtimeLogConfigs", js.undefined)
   }
 }

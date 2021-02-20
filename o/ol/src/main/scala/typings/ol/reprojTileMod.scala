@@ -2,24 +2,14 @@ package typings.ol
 
 import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/reproj/Tile", JSImport.Namespace)
-@js.native
-object reprojTileMod extends js.Object {
+object reprojTileMod {
   
-  @js.native
-  trait ReprojTile
-    extends typings.ol.olTileMod.default {
-    
-    /**
-      * Get the HTML Canvas element for this tile.
-      */
-    def getImage(): HTMLCanvasElement = js.native
-  }
-  
+  @JSImport("ol/reproj/Tile", JSImport.Default)
   @js.native
   class default protected () extends ReprojTile {
     def this(
@@ -136,4 +126,14 @@ object reprojTileMod extends js.Object {
     /* p3 */ Double, 
     typings.ol.olTileMod.default
   ]
+  
+  @js.native
+  trait ReprojTile
+    extends typings.ol.olTileMod.default {
+    
+    /**
+      * Get the HTML Canvas element for this tile.
+      */
+    def getImage(): HTMLCanvasElement = js.native
+  }
 }

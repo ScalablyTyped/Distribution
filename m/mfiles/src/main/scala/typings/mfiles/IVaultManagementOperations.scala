@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultManagementOperations extends js.Object {
+trait IVaultManagementOperations extends StObject {
   
   def ArchiveOldVersions(ArchiveOldVersionsJob: IArchiveOldVersionsJob): Unit = js.native
   
@@ -56,57 +57,45 @@ object IVaultManagementOperations {
   }
   
   @scala.inline
-  implicit class IVaultManagementOperationsOps[Self <: IVaultManagementOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultManagementOperationsMutableBuilder[Self <: IVaultManagementOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveOldVersions(value: IArchiveOldVersionsJob => Unit): Self = StObject.set(x, "ArchiveOldVersions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportContent(value: IExportContentJob => Unit): Self = StObject.set(x, "ExportContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEventHandlers(value: () => IEventHandlers): Self = StObject.set(x, "GetEventHandlers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArchiveOldVersions(value: IArchiveOldVersionsJob => Unit): Self = this.set("ArchiveOldVersions", js.Any.fromFunction1(value))
+    def setGetVaultProperties(value: () => IVaultProperties): Self = StObject.set(x, "GetVaultProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportContent(value: IExportContentJob => Unit): Self = this.set("ExportContent", js.Any.fromFunction1(value))
+    def setImportContent(value: IImportContentJob => Unit): Self = StObject.set(x, "ImportContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEventHandlers(value: () => IEventHandlers): Self = this.set("GetEventHandlers", js.Any.fromFunction0(value))
+    def setImportContentAsync(value: IImportContentJob => Double): Self = StObject.set(x, "ImportContentAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVaultProperties(value: () => IVaultProperties): Self = this.set("GetVaultProperties", js.Any.fromFunction0(value))
+    def setIsAsyncJobRunning(value: Double => Boolean): Self = StObject.set(x, "IsAsyncJobRunning", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImportContent(value: IImportContentJob => Unit): Self = this.set("ImportContent", js.Any.fromFunction1(value))
+    def setPreviewImportContent(value: (IImportContentJob, String) => Unit): Self = StObject.set(x, "PreviewImportContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setImportContentAsync(value: IImportContentJob => Double): Self = this.set("ImportContentAsync", js.Any.fromFunction1(value))
+    def setRebuildFullTextSearchIndex(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "RebuildFullTextSearchIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsAsyncJobRunning(value: Double => Boolean): Self = this.set("IsAsyncJobRunning", js.Any.fromFunction1(value))
+    def setSetEventHandlers(value: IEventHandlers => Unit): Self = StObject.set(x, "SetEventHandlers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreviewImportContent(value: (IImportContentJob, String) => Unit): Self = this.set("PreviewImportContent", js.Any.fromFunction2(value))
+    def setUpdateVaultProperties(value: (IVaultProperties, Boolean) => Unit): Self = StObject.set(x, "UpdateVaultProperties", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRebuildFullTextSearchIndex(value: (Boolean, Boolean) => Unit): Self = this.set("RebuildFullTextSearchIndex", js.Any.fromFunction2(value))
+    def setVerifyVault(value: IVerifyVaultJob => IVerifyVaultJobOutput): Self = StObject.set(x, "VerifyVault", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEventHandlers(value: IEventHandlers => Unit): Self = this.set("SetEventHandlers", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateVaultProperties(value: (IVaultProperties, Boolean) => Unit): Self = this.set("UpdateVaultProperties", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVerifyVault(value: IVerifyVaultJob => IVerifyVaultJobOutput): Self = this.set("VerifyVault", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWaitAsyncJob(value: Double => Unit): Self = this.set("WaitAsyncJob", js.Any.fromFunction1(value))
+    def setWaitAsyncJob(value: Double => Unit): Self = StObject.set(x, "WaitAsyncJob", js.Any.fromFunction1(value))
   }
 }

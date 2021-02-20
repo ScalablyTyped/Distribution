@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultUpdateRequestModel extends js.Object {
+trait ResultUpdateRequestModel extends StObject {
   
   var actionResultDeletes: js.Array[TestActionResultModel] = js.native
   
@@ -32,45 +33,33 @@ object ResultUpdateRequestModel {
   }
   
   @scala.inline
-  implicit class ResultUpdateRequestModelOps[Self <: ResultUpdateRequestModel] (val x: Self) extends AnyVal {
+  implicit class ResultUpdateRequestModelMutableBuilder[Self <: ResultUpdateRequestModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionResultDeletes(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResultDeletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionResultDeletesVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResultDeletes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionResults(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionResultDeletesVarargs(value: TestActionResultModel*): Self = this.set("actionResultDeletes", js.Array(value :_*))
+    def setActionResultsVarargs(value: TestActionResultModel*): Self = StObject.set(x, "actionResults", js.Array(value :_*))
     
     @scala.inline
-    def setActionResultDeletes(value: js.Array[TestActionResultModel]): Self = this.set("actionResultDeletes", value.asInstanceOf[js.Any])
+    def setParameterDeletes(value: js.Array[TestResultParameterModel]): Self = StObject.set(x, "parameterDeletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionResultsVarargs(value: TestActionResultModel*): Self = this.set("actionResults", js.Array(value :_*))
+    def setParameterDeletesVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameterDeletes", js.Array(value :_*))
     
     @scala.inline
-    def setActionResults(value: js.Array[TestActionResultModel]): Self = this.set("actionResults", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[TestResultParameterModel]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterDeletesVarargs(value: TestResultParameterModel*): Self = this.set("parameterDeletes", js.Array(value :_*))
+    def setParametersVarargs(value: TestResultParameterModel*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParameterDeletes(value: js.Array[TestResultParameterModel]): Self = this.set("parameterDeletes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParametersVarargs(value: TestResultParameterModel*): Self = this.set("parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: js.Array[TestResultParameterModel]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestCaseResult(value: TestCaseResultUpdateModel): Self = this.set("testCaseResult", value.asInstanceOf[js.Any])
+    def setTestCaseResult(value: TestCaseResultUpdateModel): Self = StObject.set(x, "testCaseResult", value.asInstanceOf[js.Any])
   }
 }

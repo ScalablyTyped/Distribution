@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "NodeVisitor")
 @js.native
-abstract class NodeVisitor () extends js.Object {
+abstract class NodeVisitor () extends StObject {
   
   def visit[T /* <: Node2[SyntaxKind] */](): js.UndefOr[T] = js.native
   def visit[T /* <: Node2[SyntaxKind] */](node: T): T = js.native

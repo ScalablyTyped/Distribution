@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAttributesRequest extends js.Object {
+trait ListAttributesRequest extends StObject {
   
   /**
     * The name of the attribute with which to filter the results. 
@@ -46,51 +47,39 @@ object ListAttributesRequest {
   }
   
   @scala.inline
-  implicit class ListAttributesRequestOps[Self <: ListAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class ListAttributesRequestMutableBuilder[Self <: ListAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: TargetType): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def setAttributeValue(value: String): Self = this.set("attributeValue", value.asInstanceOf[js.Any])
+    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeValue: Self = this.set("attributeValue", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

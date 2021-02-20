@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocumentChangeEvent[T] extends js.Object {
+trait TextDocumentChangeEvent[T] extends StObject {
   
   /**
     * The document that has changed.
@@ -21,21 +22,9 @@ object TextDocumentChangeEvent {
   }
   
   @scala.inline
-  implicit class TextDocumentChangeEventOps[Self <: TextDocumentChangeEvent[_], T] (val x: Self with TextDocumentChangeEvent[T]) extends AnyVal {
+  implicit class TextDocumentChangeEventMutableBuilder[Self <: TextDocumentChangeEvent[_], T] (val x: Self with TextDocumentChangeEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocument(value: T): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

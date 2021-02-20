@@ -14,12 +14,13 @@ import typings.maximMazurokGapiClientCompute.anon.RequestIdSourceImage
 import typings.maximMazurokGapiClientCompute.anon.ResourceUserIp
 import typings.maximMazurokGapiClientCompute.anon.SourceImage
 import typings.maximMazurokGapiClientCompute.anon.UserIpZone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisksResource extends js.Object {
+trait DisksResource extends StObject {
   
   def addResourcePolicies(request: AltDisk, body: DisksAddResourcePoliciesRequest): Request[Operation] = js.native
   /** Adds existing resource policies to a disk. You can only add one policy which will be applied to this disk for scheduling snapshot creation. */

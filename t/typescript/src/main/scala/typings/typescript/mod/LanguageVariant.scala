@@ -1,26 +1,24 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LanguageVariant extends js.Object
+sealed trait LanguageVariant extends StObject
 @JSImport("typescript", "LanguageVariant")
 @js.native
-object LanguageVariant extends js.Object {
+object LanguageVariant extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LanguageVariant with Double] = js.native
   
   @js.native
   sealed trait JSX extends LanguageVariant
-  /* 1 */ @js.native
-  object JSX extends TopLevel[JSX with Double]
+  /* 1 */ val JSX: typings.typescript.mod.LanguageVariant.JSX with Double = js.native
   
   @js.native
   sealed trait Standard extends LanguageVariant
-  /* 0 */ @js.native
-  object Standard extends TopLevel[Standard with Double]
+  /* 0 */ val Standard: typings.typescript.mod.LanguageVariant.Standard with Double = js.native
 }

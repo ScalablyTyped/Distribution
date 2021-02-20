@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket control data on a StreamWebSocket object. */
 @js.native
-trait StreamWebSocketControl extends js.Object {
+trait StreamWebSocketControl extends StObject {
   
   /** A value that indicates whether the Nagle algorithm is used on a StreamWebSocket object. */
   var noDelay: Boolean = js.native
@@ -40,33 +41,21 @@ object StreamWebSocketControl {
   }
   
   @scala.inline
-  implicit class StreamWebSocketControlOps[Self <: StreamWebSocketControl] (val x: Self) extends AnyVal {
+  implicit class StreamWebSocketControlMutableBuilder[Self <: StreamWebSocketControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDelay(value: Boolean): Self = this.set("noDelay", value.asInstanceOf[js.Any])
+    def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutboundBufferSizeInBytes(value: Double): Self = this.set("outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProxyCredential(value: PasswordCredential): Self = this.set("proxyCredential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerCredential(value: PasswordCredential): Self = this.set("serverCredential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedProtocols(value: IVector[String]): Self = this.set("supportedProtocols", value.asInstanceOf[js.Any])
+    def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
   }
 }

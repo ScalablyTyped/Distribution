@@ -7,28 +7,18 @@ import typings.protractor.browserMod.ProtractorBrowser
 import typings.protractor.locatorsMod.Locator
 import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod.WebElementPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/element", JSImport.Namespace)
-@js.native
-object elementMod extends js.Object {
+object elementMod {
   
-  @JSName("build$")
-  var build: js.Function2[
-    /* element */ ElementHelper, 
-    /* by */ TypeofBy, 
-    js.Function1[/* selector */ String, ElementFinder]
-  ] = js.native
+  @JSImport("protractor/built/element", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSName("build$$")
-  var build$: js.Function2[
-    /* element */ ElementHelper, 
-    /* by */ TypeofBy, 
-    js.Function1[/* selector */ String, ElementArrayFinder]
-  ] = js.native
-  
+  @JSImport("protractor/built/element", "ElementArrayFinder")
   @js.native
   class ElementArrayFinder protected () extends WebdriverWebElement {
     def this(browser_ : ProtractorBrowser) = this()
@@ -580,6 +570,7 @@ object elementMod extends js.Object {
     def toElementFinder_(): ElementFinder = js.native
   }
   
+  @JSImport("protractor/built/element", "ElementFinder")
   @js.native
   class ElementFinder protected () extends WebdriverWebElement {
     def this(browser_ : ProtractorBrowser, elementArrayFinder: ElementArrayFinder) = this()
@@ -833,15 +824,53 @@ object elementMod extends js.Object {
       ] = js.native
   }
   /* static members */
-  @js.native
-  object ElementFinder extends js.Object {
+  object ElementFinder {
     
+    @JSImport("protractor/built/element", "ElementFinder.fromWebElement_")
+    @js.native
     def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement): ElementFinder = js.native
+    @JSImport("protractor/built/element", "ElementFinder.fromWebElement_")
+    @js.native
     def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement, locator: Locator): ElementFinder = js.native
   }
   
+  @JSImport("protractor/built/element", "WebdriverWebElement")
   @js.native
   class WebdriverWebElement ()
     extends WebElement
        with /* key */ StringDictionary[js.Any]
+  
+  @JSImport("protractor/built/element", "build$")
+  @js.native
+  def build: js.Function2[
+    /* element */ ElementHelper, 
+    /* by */ TypeofBy, 
+    js.Function1[/* selector */ String, ElementFinder]
+  ] = js.native
+  
+  @JSImport("protractor/built/element", "build$$")
+  @js.native
+  def build$: js.Function2[
+    /* element */ ElementHelper, 
+    /* by */ TypeofBy, 
+    js.Function1[/* selector */ String, ElementArrayFinder]
+  ] = js.native
+  
+  @scala.inline
+  def build$_=(
+    x: js.Function2[
+      /* element */ ElementHelper, 
+      /* by */ TypeofBy, 
+      js.Function1[/* selector */ String, ElementArrayFinder]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("build$$")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def build_=(
+    x: js.Function2[
+      /* element */ ElementHelper, 
+      /* by */ TypeofBy, 
+      js.Function1[/* selector */ String, ElementFinder]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("build$")(x.asInstanceOf[js.Any])
 }

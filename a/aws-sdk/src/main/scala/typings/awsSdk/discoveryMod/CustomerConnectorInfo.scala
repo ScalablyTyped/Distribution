@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerConnectorInfo extends js.Object {
+trait CustomerConnectorInfo extends StObject {
   
   /**
     * Number of active discovery connectors.
@@ -59,39 +60,27 @@ object CustomerConnectorInfo {
   }
   
   @scala.inline
-  implicit class CustomerConnectorInfoOps[Self <: CustomerConnectorInfo] (val x: Self) extends AnyVal {
+  implicit class CustomerConnectorInfoMutableBuilder[Self <: CustomerConnectorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveConnectors(value: Integer): Self = StObject.set(x, "activeConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlackListedConnectors(value: Integer): Self = StObject.set(x, "blackListedConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthyConnectors(value: Integer): Self = StObject.set(x, "healthyConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveConnectors(value: Integer): Self = this.set("activeConnectors", value.asInstanceOf[js.Any])
+    def setShutdownConnectors(value: Integer): Self = StObject.set(x, "shutdownConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackListedConnectors(value: Integer): Self = this.set("blackListedConnectors", value.asInstanceOf[js.Any])
+    def setTotalConnectors(value: Integer): Self = StObject.set(x, "totalConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyConnectors(value: Integer): Self = this.set("healthyConnectors", value.asInstanceOf[js.Any])
+    def setUnhealthyConnectors(value: Integer): Self = StObject.set(x, "unhealthyConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShutdownConnectors(value: Integer): Self = this.set("shutdownConnectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalConnectors(value: Integer): Self = this.set("totalConnectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnhealthyConnectors(value: Integer): Self = this.set("unhealthyConnectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknownConnectors(value: Integer): Self = this.set("unknownConnectors", value.asInstanceOf[js.Any])
+    def setUnknownConnectors(value: Integer): Self = StObject.set(x, "unknownConnectors", value.asInstanceOf[js.Any])
   }
 }

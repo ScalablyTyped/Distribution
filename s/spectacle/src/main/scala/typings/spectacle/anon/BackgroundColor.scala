@@ -3,12 +3,13 @@ package typings.spectacle.anon
 import typings.react.mod.ReactNode
 import typings.spectacle.mod.TemplateFn
 import typings.spectacle.mod.TransitionEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundColor extends js.Object {
+trait BackgroundColor extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -41,84 +42,72 @@ object BackgroundColor {
   }
   
   @scala.inline
-  implicit class BackgroundColorOps[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImage(value: String): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
     
     @scala.inline
-    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    def setBackgroundPosition(value: String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundOpacity(value: Double): Self = this.set("backgroundOpacity", value.asInstanceOf[js.Any])
+    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
     @scala.inline
-    def deleteBackgroundOpacity: Self = this.set("backgroundOpacity", js.undefined)
+    def setBackgroundRepeat(value: String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundPosition(value: String): Self = this.set("backgroundPosition", value.asInstanceOf[js.Any])
+    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
     @scala.inline
-    def deleteBackgroundPosition: Self = this.set("backgroundPosition", js.undefined)
+    def setBackgroundSize(value: String): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundRepeat(value: String): Self = this.set("backgroundRepeat", value.asInstanceOf[js.Any])
+    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
     @scala.inline
-    def deleteBackgroundRepeat: Self = this.set("backgroundRepeat", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundSize(value: String): Self = this.set("backgroundSize", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteBackgroundSize: Self = this.set("backgroundSize", js.undefined)
+    def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setTemplate(value: /* options */ CurrentSlide => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScaleRatio(value: Double): Self = this.set("scaleRatio", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteScaleRatio: Self = this.set("scaleRatio", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: /* options */ CurrentSlide => ReactNode): Self = this.set("template", js.Any.fromFunction1(value))
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTransitionEffect(value: TransitionEffect): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
-    
-    @scala.inline
-    def setTransitionEffect(value: TransitionEffect): Self = this.set("transitionEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionEffect: Self = this.set("transitionEffect", js.undefined)
+    def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
   }
 }

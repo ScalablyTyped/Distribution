@@ -14,6 +14,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u32
 import typings.arcgisJsApi.arcgisJsApiStrings.u4
 import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

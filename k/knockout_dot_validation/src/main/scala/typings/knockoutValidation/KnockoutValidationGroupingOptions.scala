@@ -1,11 +1,12 @@
 package typings.knockoutValidation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutValidationGroupingOptions extends js.Object {
+trait KnockoutValidationGroupingOptions extends StObject {
   
   /**
     * indicates whether to walk the ViewModel (or object)
@@ -34,36 +35,24 @@ object KnockoutValidationGroupingOptions {
   }
   
   @scala.inline
-  implicit class KnockoutValidationGroupingOptionsOps[Self <: KnockoutValidationGroupingOptions] (val x: Self) extends AnyVal {
+  implicit class KnockoutValidationGroupingOptionsMutableBuilder[Self <: KnockoutValidationGroupingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeep(value: Boolean): Self = this.set("deep", value.asInstanceOf[js.Any])
+    def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
     
     @scala.inline
-    def deleteDeep: Self = this.set("deep", js.undefined)
+    def setObservable(value: Boolean): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLive: Self = this.set("live", js.undefined)
-    
-    @scala.inline
-    def setObservable(value: Boolean): Self = this.set("observable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObservable: Self = this.set("observable", js.undefined)
+    def setObservableUndefined: Self = StObject.set(x, "observable", js.undefined)
   }
 }

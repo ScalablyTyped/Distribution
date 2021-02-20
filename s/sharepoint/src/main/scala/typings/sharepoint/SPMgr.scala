@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.SPClientTemplates.FieldSchema
 import typings.sharepoint.SPClientTemplates.ListSchema
 import typings.sharepoint.SPClientTemplates.RenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SPMgr extends js.Object {
+trait SPMgr extends StObject {
   
   def NewGroup(listItem: StringDictionary[js.Any], fieldName: String): Boolean = js.native
   
@@ -43,30 +44,18 @@ object SPMgr {
   }
   
   @scala.inline
-  implicit class SPMgrOps[Self <: SPMgr] (val x: Self) extends AnyVal {
+  implicit class SPMgrMutableBuilder[Self <: SPMgr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewGroup(value: (StringDictionary[js.Any], String) => Boolean): Self = StObject.set(x, "NewGroup", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenderField(value: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderField", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderFieldByName(value: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setNewGroup(value: (StringDictionary[js.Any], String) => Boolean): Self = this.set("NewGroup", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRenderField(value: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String): Self = this.set("RenderField", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setRenderFieldByName(value: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String): Self = this.set("RenderFieldByName", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setRenderHeader(value: (RenderContext, FieldSchema) => String): Self = this.set("RenderHeader", js.Any.fromFunction2(value))
+    def setRenderHeader(value: (RenderContext, FieldSchema) => String): Self = StObject.set(x, "RenderHeader", js.Any.fromFunction2(value))
   }
 }

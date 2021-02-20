@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccountCredentials extends js.Object {
+trait ServiceAccountCredentials extends StObject {
   
   /**
     * @description
@@ -28,24 +29,12 @@ object ServiceAccountCredentials {
   }
   
   @scala.inline
-  implicit class ServiceAccountCredentialsOps[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
+  implicit class ServiceAccountCredentialsMutableBuilder[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClient_email(value: String): Self = this.set("client_email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate_key(value: String): Self = this.set("private_key", value.asInstanceOf[js.Any])
+    def setPrivate_key(value: String): Self = StObject.set(x, "private_key", value.asInstanceOf[js.Any])
   }
 }

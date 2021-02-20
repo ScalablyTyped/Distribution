@@ -1,22 +1,33 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Precondition extends js.Object {
+@js.native
+trait Precondition extends StObject {
+  
   /**
     * If set, the last update time to enforce.
     */
-  val lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  val lastUpdateTime: js.UndefOr[Timestamp] = js.native
 }
-
 object Precondition {
+  
   @scala.inline
-  def apply(lastUpdateTime: Timestamp = null): Precondition = {
+  def apply(): Precondition = {
     val __obj = js.Dynamic.literal()
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Precondition]
   }
+  
+  @scala.inline
+  implicit class PreconditionMutableBuilder[Self <: Precondition] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+  }
 }
-

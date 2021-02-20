@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,17 +38,19 @@ class CommandRunAfterTestCaseHook () extends ICommandRunAfterTestCaseHook {
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-/* static members */
-@JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook")
-@js.native
-object CommandRunAfterTestCaseHook extends js.Object {
+object CommandRunAfterTestCaseHook {
   
   /**
     * Creates a new CommandRunAfterTestCaseHook instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandRunAfterTestCaseHook instance
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.create")
+  @js.native
   def create(): CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.create")
+  @js.native
   def create(properties: ICommandRunAfterTestCaseHook): CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -58,9 +61,18 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Reader): CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Reader, length: Double): CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Uint8Array): CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -70,7 +82,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): CommandRunAfterTestCaseHook = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -79,7 +96,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.encode")
+  @js.native
   def encode(message: ICommandRunAfterTestCaseHook): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.encode")
+  @js.native
   def encode(message: ICommandRunAfterTestCaseHook, writer: Writer): Writer = js.native
   
   /**
@@ -88,7 +110,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ICommandRunAfterTestCaseHook): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ICommandRunAfterTestCaseHook, writer: Writer): Writer = js.native
   
   /**
@@ -96,6 +123,9 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param object Plain object
     * @returns CommandRunAfterTestCaseHook
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): CommandRunAfterTestCaseHook = js.native
   
   /**
@@ -104,7 +134,12 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.toObject")
+  @js.native
   def toObject(message: CommandRunAfterTestCaseHook): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.toObject")
+  @js.native
   def toObject(message: CommandRunAfterTestCaseHook, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -112,5 +147,8 @@ object CommandRunAfterTestCaseHook extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandRunAfterTestCaseHook.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

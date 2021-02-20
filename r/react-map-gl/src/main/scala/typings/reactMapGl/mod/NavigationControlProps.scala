@@ -1,5 +1,6 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,66 +33,54 @@ object NavigationControlProps {
   }
   
   @scala.inline
-  implicit class NavigationControlPropsOps[Self <: NavigationControlProps] (val x: Self) extends AnyVal {
+  implicit class NavigationControlPropsMutableBuilder[Self <: NavigationControlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompassLabel(value: String): Self = StObject.set(x, "compassLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCompassLabelUndefined: Self = StObject.set(x, "compassLabel", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompassLabel(value: String): Self = this.set("compassLabel", value.asInstanceOf[js.Any])
+    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
     @scala.inline
-    def deleteCompassLabel: Self = this.set("compassLabel", js.undefined)
+    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = this.set("onViewStateChange", js.Any.fromFunction1(value))
+    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
     @scala.inline
-    def deleteOnViewStateChange: Self = this.set("onViewStateChange", js.undefined)
+    def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = this.set("onViewportChange", js.Any.fromFunction1(value))
+    def setShowCompassUndefined: Self = StObject.set(x, "showCompass", js.undefined)
     
     @scala.inline
-    def deleteOnViewportChange: Self = this.set("onViewportChange", js.undefined)
+    def setShowZoom(value: Boolean): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCompass(value: Boolean): Self = this.set("showCompass", value.asInstanceOf[js.Any])
+    def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
     
     @scala.inline
-    def deleteShowCompass: Self = this.set("showCompass", js.undefined)
+    def setZoomInLabel(value: String): Self = StObject.set(x, "zoomInLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowZoom(value: Boolean): Self = this.set("showZoom", value.asInstanceOf[js.Any])
+    def setZoomInLabelUndefined: Self = StObject.set(x, "zoomInLabel", js.undefined)
     
     @scala.inline
-    def deleteShowZoom: Self = this.set("showZoom", js.undefined)
+    def setZoomOutLabel(value: String): Self = StObject.set(x, "zoomOutLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomInLabel(value: String): Self = this.set("zoomInLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomInLabel: Self = this.set("zoomInLabel", js.undefined)
-    
-    @scala.inline
-    def setZoomOutLabel(value: String): Self = this.set("zoomOutLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOutLabel: Self = this.set("zoomOutLabel", js.undefined)
+    def setZoomOutLabelUndefined: Self = StObject.set(x, "zoomOutLabel", js.undefined)
   }
 }

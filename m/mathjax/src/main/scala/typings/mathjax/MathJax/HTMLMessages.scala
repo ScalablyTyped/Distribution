@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLMessages extends js.Object {
+trait HTMLMessages extends StObject {
   
   /*The message used for when MathJax must use image fonts rather than local or web-based fonts (for those
     * browsers that don’t handle the @font-face CSS directive).
@@ -31,45 +32,33 @@ object HTMLMessages {
   }
   
   @scala.inline
-  implicit class HTMLMessagesOps[Self <: HTMLMessages] (val x: Self) extends AnyVal {
+  implicit class HTMLMessagesMutableBuilder[Self <: HTMLMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageFonts(value: js.Array[_]): Self = StObject.set(x, "imageFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageFontsUndefined: Self = StObject.set(x, "imageFonts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageFontsVarargs(value: js.Any*): Self = StObject.set(x, "imageFonts", js.Array(value :_*))
     
     @scala.inline
-    def setImageFontsVarargs(value: js.Any*): Self = this.set("imageFonts", js.Array(value :_*))
+    def setNoFonts(value: js.Array[_]): Self = StObject.set(x, "noFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageFonts(value: js.Array[_]): Self = this.set("imageFonts", value.asInstanceOf[js.Any])
+    def setNoFontsUndefined: Self = StObject.set(x, "noFonts", js.undefined)
     
     @scala.inline
-    def deleteImageFonts: Self = this.set("imageFonts", js.undefined)
+    def setNoFontsVarargs(value: js.Any*): Self = StObject.set(x, "noFonts", js.Array(value :_*))
     
     @scala.inline
-    def setNoFontsVarargs(value: js.Any*): Self = this.set("noFonts", js.Array(value :_*))
+    def setWebFont(value: js.Array[_]): Self = StObject.set(x, "webFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoFonts(value: js.Array[_]): Self = this.set("noFonts", value.asInstanceOf[js.Any])
+    def setWebFontUndefined: Self = StObject.set(x, "webFont", js.undefined)
     
     @scala.inline
-    def deleteNoFonts: Self = this.set("noFonts", js.undefined)
-    
-    @scala.inline
-    def setWebFontVarargs(value: js.Any*): Self = this.set("webFont", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebFont(value: js.Array[_]): Self = this.set("webFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebFont: Self = this.set("webFont", js.undefined)
+    def setWebFontVarargs(value: js.Any*): Self = StObject.set(x, "webFont", js.Array(value :_*))
   }
 }

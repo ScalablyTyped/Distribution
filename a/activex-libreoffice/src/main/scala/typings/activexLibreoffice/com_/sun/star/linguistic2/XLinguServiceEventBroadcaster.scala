@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.linguistic2
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,24 +48,12 @@ object XLinguServiceEventBroadcaster {
   }
   
   @scala.inline
-  implicit class XLinguServiceEventBroadcasterOps[Self <: XLinguServiceEventBroadcaster] (val x: Self) extends AnyVal {
+  implicit class XLinguServiceEventBroadcasterMutableBuilder[Self <: XLinguServiceEventBroadcaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = StObject.set(x, "addLinguServiceEventListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = this.set("addLinguServiceEventListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = this.set("removeLinguServiceEventListener", js.Any.fromFunction1(value))
+    def setRemoveLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = StObject.set(x, "removeLinguServiceEventListener", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewAccountSummary extends js.Object {
+trait NewAccountSummary extends StObject {
   
   /**
     * The account ID associated with the envelope.
@@ -51,60 +52,48 @@ object NewAccountSummary {
   }
   
   @scala.inline
-  implicit class NewAccountSummaryOps[Self <: NewAccountSummary] (val x: Self) extends AnyVal {
+  implicit class NewAccountSummaryMutableBuilder[Self <: NewAccountSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdGuid(value: String): Self = StObject.set(x, "accountIdGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdGuidUndefined: Self = StObject.set(x, "accountIdGuid", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIdGuid(value: String): Self = this.set("accountIdGuid", value.asInstanceOf[js.Any])
+    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
     @scala.inline
-    def deleteAccountIdGuid: Self = this.set("accountIdGuid", js.undefined)
+    def setApiPassword(value: String): Self = StObject.set(x, "apiPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setApiPasswordUndefined: Self = StObject.set(x, "apiPassword", js.undefined)
     
     @scala.inline
-    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiPassword(value: String): Self = this.set("apiPassword", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def deleteApiPassword: Self = this.set("apiPassword", js.undefined)
+    def setBillingPlanPreview(value: /* Information used to provide a preview of a billing plan. */ BillingPlanPreview): Self = StObject.set(x, "billingPlanPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setBillingPlanPreviewUndefined: Self = StObject.set(x, "billingPlanPreview", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingPlanPreview(value: /* Information used to provide a preview of a billing plan. */ BillingPlanPreview): Self = this.set("billingPlanPreview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingPlanPreview: Self = this.set("billingPlanPreview", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

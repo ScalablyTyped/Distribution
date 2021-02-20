@@ -1,14 +1,14 @@
 package typings.merklePatriciaTree
 
 import typings.merklePatriciaTree.dbMod.DB
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merkle-patricia-tree/dist/scratch", JSImport.Namespace)
-@js.native
-object scratchMod extends js.Object {
+object scratchMod {
   
+  @JSImport("merkle-patricia-tree/dist/scratch", "ScratchDB")
   @js.native
   class ScratchDB protected () extends DB {
     def this(upstreamDB: DB) = this()

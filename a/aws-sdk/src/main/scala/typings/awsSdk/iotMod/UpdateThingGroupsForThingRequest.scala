@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateThingGroupsForThingRequest extends js.Object {
+trait UpdateThingGroupsForThingRequest extends StObject {
   
   /**
     * Override dynamic thing groups with static thing groups when 10-group limit is reached. If a thing belongs to 10 thing groups, and one or more of those groups are dynamic thing groups, adding a thing to a static group removes the thing from the last dynamic group.
@@ -36,48 +37,36 @@ object UpdateThingGroupsForThingRequest {
   }
   
   @scala.inline
-  implicit class UpdateThingGroupsForThingRequestOps[Self <: UpdateThingGroupsForThingRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateThingGroupsForThingRequestMutableBuilder[Self <: UpdateThingGroupsForThingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = StObject.set(x, "overrideDynamicGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverrideDynamicGroupsUndefined: Self = StObject.set(x, "overrideDynamicGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThingGroupsToAdd(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = this.set("overrideDynamicGroups", value.asInstanceOf[js.Any])
+    def setThingGroupsToAddUndefined: Self = StObject.set(x, "thingGroupsToAdd", js.undefined)
     
     @scala.inline
-    def deleteOverrideDynamicGroups: Self = this.set("overrideDynamicGroups", js.undefined)
+    def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = this.set("thingGroupsToAdd", js.Array(value :_*))
+    def setThingGroupsToRemove(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupsToAdd(value: ThingGroupList): Self = this.set("thingGroupsToAdd", value.asInstanceOf[js.Any])
+    def setThingGroupsToRemoveUndefined: Self = StObject.set(x, "thingGroupsToRemove", js.undefined)
     
     @scala.inline
-    def deleteThingGroupsToAdd: Self = this.set("thingGroupsToAdd", js.undefined)
+    def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToRemove", js.Array(value :_*))
     
     @scala.inline
-    def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = this.set("thingGroupsToRemove", js.Array(value :_*))
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupsToRemove(value: ThingGroupList): Self = this.set("thingGroupsToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingGroupsToRemove: Self = this.set("thingGroupsToRemove", js.undefined)
-    
-    @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingName: Self = this.set("thingName", js.undefined)
+    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogInfoResponseLimits")
 @js.native
-class CatalogInfoResponseLimits () extends js.Object {
+class CatalogInfoResponseLimits () extends StObject {
   
   /**
     * The maximum number of object IDs that may be included in a single `/v2/catalog/batch-delete` request.

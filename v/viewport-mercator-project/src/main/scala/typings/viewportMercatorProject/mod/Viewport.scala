@@ -1,12 +1,13 @@
 package typings.viewportMercatorProject.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("viewport-mercator-project", "Viewport")
 @js.native
-class Viewport () extends js.Object {
+class Viewport () extends StObject {
   def this(opts: ViewportOptions) = this()
   
   def equals(viewport: Viewport): Boolean = js.native

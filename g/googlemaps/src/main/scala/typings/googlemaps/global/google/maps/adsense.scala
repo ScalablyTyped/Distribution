@@ -2,17 +2,17 @@ package typings.googlemaps.global.google.maps
 
 import typings.googlemaps.google.maps.adsense.AdUnitOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@JSGlobal("google.maps.adsense")
-@js.native
-object adsense extends js.Object {
+object adsense {
   
+  @JSGlobal("google.maps.adsense.AdFormat")
   @js.native
-  object AdFormat extends js.Object {
+  object AdFormat extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.adsense.AdFormat with String] = js.native
@@ -54,6 +54,7 @@ object adsense extends js.Object {
     /* "200x90_0ads_al" */ val X_LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.X_LARGE_VERTICAL_LINK_UNIT with String = js.native
   }
   
+  @JSGlobal("google.maps.adsense.AdUnit")
   @js.native
   class AdUnit protected ()
     extends typings.googlemaps.google.maps.adsense.AdUnit {

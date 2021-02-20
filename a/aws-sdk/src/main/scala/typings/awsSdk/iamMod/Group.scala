@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends js.Object {
+trait Group extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) specifying the group. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
@@ -41,33 +42,21 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupId(value: idType): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupId(value: idType): Self = this.set("GroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

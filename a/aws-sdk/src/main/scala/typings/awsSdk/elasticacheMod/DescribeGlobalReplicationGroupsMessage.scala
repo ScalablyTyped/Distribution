@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGlobalReplicationGroupsMessage extends js.Object {
+trait DescribeGlobalReplicationGroupsMessage extends StObject {
   
   /**
     * The name of the Global Datastore
@@ -36,42 +37,30 @@ object DescribeGlobalReplicationGroupsMessage {
   }
   
   @scala.inline
-  implicit class DescribeGlobalReplicationGroupsMessageOps[Self <: DescribeGlobalReplicationGroupsMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeGlobalReplicationGroupsMessageMutableBuilder[Self <: DescribeGlobalReplicationGroupsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalReplicationGroupIdUndefined: Self = StObject.set(x, "GlobalReplicationGroupId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteGlobalReplicationGroupId: Self = this.set("GlobalReplicationGroupId", js.undefined)
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setShowMemberInfo(value: BooleanOptional): Self = StObject.set(x, "ShowMemberInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
-    
-    @scala.inline
-    def setShowMemberInfo(value: BooleanOptional): Self = this.set("ShowMemberInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowMemberInfo: Self = this.set("ShowMemberInfo", js.undefined)
+    def setShowMemberInfoUndefined: Self = StObject.set(x, "ShowMemberInfo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pollyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LexiconAttributes extends js.Object {
+trait LexiconAttributes extends StObject {
   
   /**
     * Phonetic alphabet used in the lexicon. Valid values are ipa and x-sampa.
@@ -46,54 +47,42 @@ object LexiconAttributes {
   }
   
   @scala.inline
-  implicit class LexiconAttributesOps[Self <: LexiconAttributes] (val x: Self) extends AnyVal {
+  implicit class LexiconAttributesMutableBuilder[Self <: LexiconAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphabet(value: Alphabet): Self = StObject.set(x, "Alphabet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphabetUndefined: Self = StObject.set(x, "Alphabet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphabet(value: Alphabet): Self = this.set("Alphabet", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteAlphabet: Self = this.set("Alphabet", js.undefined)
+    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setLexemesCount(value: LexemesCount): Self = StObject.set(x, "LexemesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setLexemesCountUndefined: Self = StObject.set(x, "LexemesCount", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setLexiconArn(value: LexiconArn): Self = StObject.set(x, "LexiconArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLexemesCount(value: LexemesCount): Self = this.set("LexemesCount", value.asInstanceOf[js.Any])
+    def setLexiconArnUndefined: Self = StObject.set(x, "LexiconArn", js.undefined)
     
     @scala.inline
-    def deleteLexemesCount: Self = this.set("LexemesCount", js.undefined)
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLexiconArn(value: LexiconArn): Self = this.set("LexiconArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLexiconArn: Self = this.set("LexiconArn", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

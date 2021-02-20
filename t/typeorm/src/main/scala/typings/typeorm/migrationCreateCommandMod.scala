@@ -1,16 +1,16 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/commands/MigrationCreateCommand", JSImport.Namespace)
-@js.native
-object migrationCreateCommandMod extends js.Object {
+object migrationCreateCommandMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @js.native
-  class MigrationCreateCommand () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @JSImport("typeorm/commands/MigrationCreateCommand", "MigrationCreateCommand")
+  @js.native
+  class MigrationCreateCommand () extends StObject {
     
     var aliases: String = js.native
     
@@ -27,12 +27,13 @@ object migrationCreateCommandMod extends js.Object {
     ): js.Promise[Unit] = js.native
   }
   /* static members */
-  @js.native
-  object MigrationCreateCommand extends js.Object {
+  object MigrationCreateCommand {
     
     /**
       * Gets contents of the migration file.
       */
-    /* protected */ def getTemplate(name: String, timestamp: Double): String = js.native
+    @JSImport("typeorm/commands/MigrationCreateCommand", "MigrationCreateCommand.getTemplate")
+    @js.native
+    def getTemplate(name: String, timestamp: Double): String = js.native
   }
 }

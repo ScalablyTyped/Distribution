@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeConsumerDisclosures extends js.Object {
+trait EnvelopeConsumerDisclosures extends StObject {
   
   /**
     * The GUID of the account associated with the consumer disclosure.
@@ -286,214 +287,202 @@ object EnvelopeConsumerDisclosures {
   }
   
   @scala.inline
-  implicit class EnvelopeConsumerDisclosuresOps[Self <: EnvelopeConsumerDisclosures] (val x: Self) extends AnyVal {
+  implicit class EnvelopeConsumerDisclosuresMutableBuilder[Self <: EnvelopeConsumerDisclosures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountEsignId(value: String): Self = StObject.set(x, "accountEsignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountEsignIdUndefined: Self = StObject.set(x, "accountEsignId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountEsignId(value: String): Self = this.set("accountEsignId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountEsignId: Self = this.set("accountEsignId", js.undefined)
-    
-    @scala.inline
-    def setAllowCDWithdraw(value: String): Self = this.set("allowCDWithdraw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowCDWithdraw: Self = this.set("allowCDWithdraw", js.undefined)
+    def setAllowCDWithdraw(value: String): Self = StObject.set(x, "allowCDWithdraw", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAllowCDWithdrawMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("allowCDWithdrawMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "allowCDWithdrawMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowCDWithdrawMetadata: Self = this.set("allowCDWithdrawMetadata", js.undefined)
+    def setAllowCDWithdrawMetadataUndefined: Self = StObject.set(x, "allowCDWithdrawMetadata", js.undefined)
     
     @scala.inline
-    def setChangeEmail(value: String): Self = this.set("changeEmail", value.asInstanceOf[js.Any])
+    def setAllowCDWithdrawUndefined: Self = StObject.set(x, "allowCDWithdraw", js.undefined)
     
     @scala.inline
-    def deleteChangeEmail: Self = this.set("changeEmail", js.undefined)
+    def setChangeEmail(value: String): Self = StObject.set(x, "changeEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeEmailOther(value: String): Self = this.set("changeEmailOther", value.asInstanceOf[js.Any])
+    def setChangeEmailOther(value: String): Self = StObject.set(x, "changeEmailOther", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChangeEmailOther: Self = this.set("changeEmailOther", js.undefined)
+    def setChangeEmailOtherUndefined: Self = StObject.set(x, "changeEmailOther", js.undefined)
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setChangeEmailUndefined: Self = StObject.set(x, "changeEmail", js.undefined)
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyPhone(value: String): Self = this.set("companyPhone", value.asInstanceOf[js.Any])
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def deleteCompanyPhone: Self = this.set("companyPhone", js.undefined)
+    def setCompanyPhone(value: String): Self = StObject.set(x, "companyPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyCostPerPage(value: String): Self = this.set("copyCostPerPage", value.asInstanceOf[js.Any])
+    def setCompanyPhoneUndefined: Self = StObject.set(x, "companyPhone", js.undefined)
     
     @scala.inline
-    def deleteCopyCostPerPage: Self = this.set("copyCostPerPage", js.undefined)
+    def setCopyCostPerPage(value: String): Self = StObject.set(x, "copyCostPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyFeeCollectionMethod(value: String): Self = this.set("copyFeeCollectionMethod", value.asInstanceOf[js.Any])
+    def setCopyCostPerPageUndefined: Self = StObject.set(x, "copyCostPerPage", js.undefined)
     
     @scala.inline
-    def deleteCopyFeeCollectionMethod: Self = this.set("copyFeeCollectionMethod", js.undefined)
+    def setCopyFeeCollectionMethod(value: String): Self = StObject.set(x, "copyFeeCollectionMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyRequestEmail(value: String): Self = this.set("copyRequestEmail", value.asInstanceOf[js.Any])
+    def setCopyFeeCollectionMethodUndefined: Self = StObject.set(x, "copyFeeCollectionMethod", js.undefined)
     
     @scala.inline
-    def deleteCopyRequestEmail: Self = this.set("copyRequestEmail", js.undefined)
+    def setCopyRequestEmail(value: String): Self = StObject.set(x, "copyRequestEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: String): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setCopyRequestEmailUndefined: Self = StObject.set(x, "copyRequestEmail", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableEsign(value: String): Self = this.set("enableEsign", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def deleteEnableEsign: Self = this.set("enableEsign", js.undefined)
+    def setEnableEsign(value: String): Self = StObject.set(x, "enableEsign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEsignAgreement(value: String): Self = this.set("esignAgreement", value.asInstanceOf[js.Any])
+    def setEnableEsignUndefined: Self = StObject.set(x, "enableEsign", js.undefined)
     
     @scala.inline
-    def deleteEsignAgreement: Self = this.set("esignAgreement", js.undefined)
+    def setEsignAgreement(value: String): Self = StObject.set(x, "esignAgreement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEsignText(value: String): Self = this.set("esignText", value.asInstanceOf[js.Any])
+    def setEsignAgreementUndefined: Self = StObject.set(x, "esignAgreement", js.undefined)
     
     @scala.inline
-    def deleteEsignText: Self = this.set("esignText", js.undefined)
+    def setEsignText(value: String): Self = StObject.set(x, "esignText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setEsignTextUndefined: Self = StObject.set(x, "esignText", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMustAgreeToEsign(value: String): Self = this.set("mustAgreeToEsign", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteMustAgreeToEsign: Self = this.set("mustAgreeToEsign", js.undefined)
+    def setMustAgreeToEsign(value: String): Self = StObject.set(x, "mustAgreeToEsign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdfId(value: String): Self = this.set("pdfId", value.asInstanceOf[js.Any])
+    def setMustAgreeToEsignUndefined: Self = StObject.set(x, "mustAgreeToEsign", js.undefined)
     
     @scala.inline
-    def deletePdfId: Self = this.set("pdfId", js.undefined)
+    def setPdfId(value: String): Self = StObject.set(x, "pdfId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBrand(value: String): Self = this.set("useBrand", value.asInstanceOf[js.Any])
+    def setPdfIdUndefined: Self = StObject.set(x, "pdfId", js.undefined)
     
     @scala.inline
-    def deleteUseBrand: Self = this.set("useBrand", js.undefined)
+    def setUseBrand(value: String): Self = StObject.set(x, "useBrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseConsumerDisclosureWithinAccount(value: String): Self = this.set("useConsumerDisclosureWithinAccount", value.asInstanceOf[js.Any])
+    def setUseBrandUndefined: Self = StObject.set(x, "useBrand", js.undefined)
     
     @scala.inline
-    def deleteUseConsumerDisclosureWithinAccount: Self = this.set("useConsumerDisclosureWithinAccount", js.undefined)
+    def setUseConsumerDisclosureWithinAccount(value: String): Self = StObject.set(x, "useConsumerDisclosureWithinAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUseConsumerDisclosureWithinAccountMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("useConsumerDisclosureWithinAccountMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "useConsumerDisclosureWithinAccountMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseConsumerDisclosureWithinAccountMetadata: Self = this.set("useConsumerDisclosureWithinAccountMetadata", js.undefined)
+    def setUseConsumerDisclosureWithinAccountMetadataUndefined: Self = StObject.set(x, "useConsumerDisclosureWithinAccountMetadata", js.undefined)
     
     @scala.inline
-    def setWithdrawAddressLine1(value: String): Self = this.set("withdrawAddressLine1", value.asInstanceOf[js.Any])
+    def setUseConsumerDisclosureWithinAccountUndefined: Self = StObject.set(x, "useConsumerDisclosureWithinAccount", js.undefined)
     
     @scala.inline
-    def deleteWithdrawAddressLine1: Self = this.set("withdrawAddressLine1", js.undefined)
+    def setWithdrawAddressLine1(value: String): Self = StObject.set(x, "withdrawAddressLine1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawAddressLine2(value: String): Self = this.set("withdrawAddressLine2", value.asInstanceOf[js.Any])
+    def setWithdrawAddressLine1Undefined: Self = StObject.set(x, "withdrawAddressLine1", js.undefined)
     
     @scala.inline
-    def deleteWithdrawAddressLine2: Self = this.set("withdrawAddressLine2", js.undefined)
+    def setWithdrawAddressLine2(value: String): Self = StObject.set(x, "withdrawAddressLine2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawByEmail(value: String): Self = this.set("withdrawByEmail", value.asInstanceOf[js.Any])
+    def setWithdrawAddressLine2Undefined: Self = StObject.set(x, "withdrawAddressLine2", js.undefined)
     
     @scala.inline
-    def deleteWithdrawByEmail: Self = this.set("withdrawByEmail", js.undefined)
+    def setWithdrawByEmail(value: String): Self = StObject.set(x, "withdrawByEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawByMail(value: String): Self = this.set("withdrawByMail", value.asInstanceOf[js.Any])
+    def setWithdrawByEmailUndefined: Self = StObject.set(x, "withdrawByEmail", js.undefined)
     
     @scala.inline
-    def deleteWithdrawByMail: Self = this.set("withdrawByMail", js.undefined)
+    def setWithdrawByMail(value: String): Self = StObject.set(x, "withdrawByMail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawByPhone(value: String): Self = this.set("withdrawByPhone", value.asInstanceOf[js.Any])
+    def setWithdrawByMailUndefined: Self = StObject.set(x, "withdrawByMail", js.undefined)
     
     @scala.inline
-    def deleteWithdrawByPhone: Self = this.set("withdrawByPhone", js.undefined)
+    def setWithdrawByPhone(value: String): Self = StObject.set(x, "withdrawByPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawCity(value: String): Self = this.set("withdrawCity", value.asInstanceOf[js.Any])
+    def setWithdrawByPhoneUndefined: Self = StObject.set(x, "withdrawByPhone", js.undefined)
     
     @scala.inline
-    def deleteWithdrawCity: Self = this.set("withdrawCity", js.undefined)
+    def setWithdrawCity(value: String): Self = StObject.set(x, "withdrawCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawConsequences(value: String): Self = this.set("withdrawConsequences", value.asInstanceOf[js.Any])
+    def setWithdrawCityUndefined: Self = StObject.set(x, "withdrawCity", js.undefined)
     
     @scala.inline
-    def deleteWithdrawConsequences: Self = this.set("withdrawConsequences", js.undefined)
+    def setWithdrawConsequences(value: String): Self = StObject.set(x, "withdrawConsequences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawEmail(value: String): Self = this.set("withdrawEmail", value.asInstanceOf[js.Any])
+    def setWithdrawConsequencesUndefined: Self = StObject.set(x, "withdrawConsequences", js.undefined)
     
     @scala.inline
-    def deleteWithdrawEmail: Self = this.set("withdrawEmail", js.undefined)
+    def setWithdrawEmail(value: String): Self = StObject.set(x, "withdrawEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawOther(value: String): Self = this.set("withdrawOther", value.asInstanceOf[js.Any])
+    def setWithdrawEmailUndefined: Self = StObject.set(x, "withdrawEmail", js.undefined)
     
     @scala.inline
-    def deleteWithdrawOther: Self = this.set("withdrawOther", js.undefined)
+    def setWithdrawOther(value: String): Self = StObject.set(x, "withdrawOther", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawPhone(value: String): Self = this.set("withdrawPhone", value.asInstanceOf[js.Any])
+    def setWithdrawOtherUndefined: Self = StObject.set(x, "withdrawOther", js.undefined)
     
     @scala.inline
-    def deleteWithdrawPhone: Self = this.set("withdrawPhone", js.undefined)
+    def setWithdrawPhone(value: String): Self = StObject.set(x, "withdrawPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawPostalCode(value: String): Self = this.set("withdrawPostalCode", value.asInstanceOf[js.Any])
+    def setWithdrawPhoneUndefined: Self = StObject.set(x, "withdrawPhone", js.undefined)
     
     @scala.inline
-    def deleteWithdrawPostalCode: Self = this.set("withdrawPostalCode", js.undefined)
+    def setWithdrawPostalCode(value: String): Self = StObject.set(x, "withdrawPostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithdrawState(value: String): Self = this.set("withdrawState", value.asInstanceOf[js.Any])
+    def setWithdrawPostalCodeUndefined: Self = StObject.set(x, "withdrawPostalCode", js.undefined)
     
     @scala.inline
-    def deleteWithdrawState: Self = this.set("withdrawState", js.undefined)
+    def setWithdrawState(value: String): Self = StObject.set(x, "withdrawState", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWithdrawStateUndefined: Self = StObject.set(x, "withdrawState", js.undefined)
   }
 }

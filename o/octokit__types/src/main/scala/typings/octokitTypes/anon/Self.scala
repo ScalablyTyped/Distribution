@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Self extends js.Object {
+trait Self extends StObject {
   
   var html: String = js.native
   
@@ -20,24 +21,12 @@ object Self {
   }
   
   @scala.inline
-  implicit class SelfOps[Self_ <: Self] (val x: Self_) extends AnyVal {
+  implicit class SelfMutableBuilder[Self_ <: Self] (val x: Self_) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self_ = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self_]
+    def setHtml(value: String): Self_ = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self_ with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self_ with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self_ = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHtml(value: String): Self_ = this.set("html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelf(value: String): Self_ = this.set("self", value.asInstanceOf[js.Any])
+    def setSelf(value: String): Self_ = StObject.set(x, "self", value.asInstanceOf[js.Any])
   }
 }

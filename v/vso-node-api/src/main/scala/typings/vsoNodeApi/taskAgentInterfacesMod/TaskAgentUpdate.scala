@@ -2,12 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskAgentUpdate extends js.Object {
+trait TaskAgentUpdate extends StObject {
   
   /**
     * The current state of this agent update
@@ -49,33 +50,21 @@ object TaskAgentUpdate {
   }
   
   @scala.inline
-  implicit class TaskAgentUpdateOps[Self <: TaskAgentUpdate] (val x: Self) extends AnyVal {
+  implicit class TaskAgentUpdateMutableBuilder[Self <: TaskAgentUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestTime(value: Date): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentState(value: String): Self = this.set("currentState", value.asInstanceOf[js.Any])
+    def setSourceVersion(value: PackageVersion): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTime(value: Date): Self = this.set("requestTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceVersion(value: PackageVersion): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetVersion(value: PackageVersion): Self = this.set("targetVersion", value.asInstanceOf[js.Any])
+    def setTargetVersion(value: PackageVersion): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
   }
 }

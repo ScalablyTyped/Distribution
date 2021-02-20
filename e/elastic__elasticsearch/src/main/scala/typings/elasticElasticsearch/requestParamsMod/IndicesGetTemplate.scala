@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,51 +27,39 @@ object IndicesGetTemplate {
   }
   
   @scala.inline
-  implicit class IndicesGetTemplateOps[Self <: IndicesGetTemplate] (val x: Self) extends AnyVal {
+  implicit class IndicesGetTemplateMutableBuilder[Self <: IndicesGetTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlat_settings(value: Boolean): Self = StObject.set(x, "flat_settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlat_settingsUndefined: Self = StObject.set(x, "flat_settings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInclude_type_name(value: Boolean): Self = StObject.set(x, "include_type_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlat_settings(value: Boolean): Self = this.set("flat_settings", value.asInstanceOf[js.Any])
+    def setInclude_type_nameUndefined: Self = StObject.set(x, "include_type_name", js.undefined)
     
     @scala.inline
-    def deleteFlat_settings: Self = this.set("flat_settings", js.undefined)
+    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_type_name(value: Boolean): Self = this.set("include_type_name", value.asInstanceOf[js.Any])
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def deleteInclude_type_name: Self = this.set("include_type_name", js.undefined)
+    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
     @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
+    def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_timeout(value: String): Self = this.set("master_timeout", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaster_timeout: Self = this.set("master_timeout", js.undefined)
-    
-    @scala.inline
-    def setNameVarargs(value: String*): Self = this.set("name", js.Array(value :_*))
-    
-    @scala.inline
-    def setName(value: String | js.Array[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

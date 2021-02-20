@@ -2,40 +2,84 @@ package typings.dialogflow.mod.google.longrunning
 
 import typings.dialogflow.mod.google.protobuf.IAny
 import typings.dialogflow.mod.google.rpc.IStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an Operation. */
-trait IOperation extends js.Object {
+@js.native
+trait IOperation extends StObject {
+  
   /** Operation done */
-  var done: js.UndefOr[Boolean | Null] = js.undefined
+  var done: js.UndefOr[Boolean | Null] = js.native
+  
   /** Operation error */
-  var error: js.UndefOr[IStatus | Null] = js.undefined
+  var error: js.UndefOr[IStatus | Null] = js.native
+  
   /** Operation metadata */
-  var metadata: js.UndefOr[IAny | Null] = js.undefined
+  var metadata: js.UndefOr[IAny | Null] = js.native
+  
   /** Operation name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
+  
   /** Operation response */
-  var response: js.UndefOr[IAny | Null] = js.undefined
+  var response: js.UndefOr[IAny | Null] = js.native
 }
-
 object IOperation {
+  
   @scala.inline
-  def apply(
-    done: js.UndefOr[Null | Boolean] = js.undefined,
-    error: js.UndefOr[Null | IStatus] = js.undefined,
-    metadata: js.UndefOr[Null | IAny] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined,
-    response: js.UndefOr[Null | IAny] = js.undefined
-  ): IOperation = {
+  def apply(): IOperation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(response)) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOperation]
   }
+  
+  @scala.inline
+  implicit class IOperationMutableBuilder[Self <: IOperation] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDoneNull: Self = StObject.set(x, "done", null)
+    
+    @scala.inline
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    
+    @scala.inline
+    def setError(value: IStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setErrorNull: Self = StObject.set(x, "error", null)
+    
+    @scala.inline
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    @scala.inline
+    def setMetadata(value: IAny): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMetadataNull: Self = StObject.set(x, "metadata", null)
+    
+    @scala.inline
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setResponse(value: IAny): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResponseNull: Self = StObject.set(x, "response", null)
+    
+    @scala.inline
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+  }
 }
-

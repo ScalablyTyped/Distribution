@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSimulationJobBatchRequest extends js.Object {
+trait StartSimulationJobBatchRequest extends StObject {
   
   /**
     * The batch policy.
@@ -36,42 +37,30 @@ object StartSimulationJobBatchRequest {
   }
   
   @scala.inline
-  implicit class StartSimulationJobBatchRequestOps[Self <: StartSimulationJobBatchRequest] (val x: Self) extends AnyVal {
+  implicit class StartSimulationJobBatchRequestMutableBuilder[Self <: StartSimulationJobBatchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchPolicy(value: BatchPolicy): Self = StObject.set(x, "batchPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchPolicyUndefined: Self = StObject.set(x, "batchPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = this.set("createSimulationJobRequests", js.Array(value :_*))
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def setCreateSimulationJobRequests(value: CreateSimulationJobRequests): Self = this.set("createSimulationJobRequests", value.asInstanceOf[js.Any])
+    def setCreateSimulationJobRequests(value: CreateSimulationJobRequests): Self = StObject.set(x, "createSimulationJobRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchPolicy(value: BatchPolicy): Self = this.set("batchPolicy", value.asInstanceOf[js.Any])
+    def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "createSimulationJobRequests", js.Array(value :_*))
     
     @scala.inline
-    def deleteBatchPolicy: Self = this.set("batchPolicy", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

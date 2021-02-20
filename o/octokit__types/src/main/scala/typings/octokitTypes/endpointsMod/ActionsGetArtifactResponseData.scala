@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsGetArtifactResponseData extends js.Object {
+trait ActionsGetArtifactResponseData extends StObject {
   
   var archive_download_url: String = js.native
   
@@ -44,45 +45,33 @@ object ActionsGetArtifactResponseData {
   }
   
   @scala.inline
-  implicit class ActionsGetArtifactResponseDataOps[Self <: ActionsGetArtifactResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsGetArtifactResponseDataMutableBuilder[Self <: ActionsGetArtifactResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchive_download_url(value: String): Self = StObject.set(x, "archive_download_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchive_download_url(value: String): Self = this.set("archive_download_url", value.asInstanceOf[js.Any])
+    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired(value: Boolean): Self = this.set("expired", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires_at(value: String): Self = this.set("expires_at", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSize_in_bytes(value: Double): Self = StObject.set(x, "size_in_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize_in_bytes(value: Double): Self = this.set("size_in_bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

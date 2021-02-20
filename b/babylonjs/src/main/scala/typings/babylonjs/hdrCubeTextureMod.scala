@@ -6,14 +6,14 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/hdrCubeTexture", JSImport.Namespace)
-@js.native
-object hdrCubeTextureMod extends js.Object {
+object hdrCubeTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture")
   @js.native
   class HDRCubeTexture protected () extends BaseTexture {
     /**
@@ -109,8 +109,11 @@ object hdrCubeTextureMod extends js.Object {
     var url: String = js.native
   }
   /* static members */
-  @js.native
-  object HDRCubeTexture extends js.Object {
+  object HDRCubeTexture {
+    
+    @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parses a JSON representation of an HDR Texture in order to create the texture
@@ -119,8 +122,14 @@ object hdrCubeTextureMod extends js.Object {
       * @param rootUrl Define the root url in case we need to load relative dependencies
       * @returns the newly created texture after parsing
       */
+    @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture.Parse")
+    @js.native
     def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[HDRCubeTexture] = js.native
     
-    var _facesMapping: js.Any = js.native
+    @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture._facesMapping")
+    @js.native
+    def _facesMapping: js.Any = js.native
+    @scala.inline
+    def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
   }
 }

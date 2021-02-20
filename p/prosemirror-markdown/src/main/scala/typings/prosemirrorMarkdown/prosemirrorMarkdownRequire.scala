@@ -1,5 +1,6 @@
 package typings.prosemirrorMarkdown
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("prosemirror-markdown", JSImport.Namespace)
 @js.native
-object prosemirrorMarkdownRequire extends js.Object
+object prosemirrorMarkdownRequire extends StObject

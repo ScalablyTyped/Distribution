@@ -1,13 +1,14 @@
 package typings.jssip.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jssip", "NameAddrHeader")
 @js.native
-class NameAddrHeader protected () extends js.Object {
+class NameAddrHeader protected () extends StObject {
   def this(uri: URI) = this()
   def this(uri: URI, display_name: String) = this()
   def this(uri: URI, display_name: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]) = this()
@@ -27,9 +28,9 @@ class NameAddrHeader protected () extends js.Object {
   
   var uri: URI = js.native
 }
-@JSImport("jssip", "NameAddrHeader")
-@js.native
-object NameAddrHeader extends js.Object {
+object NameAddrHeader {
   
+  @JSImport("jssip", "NameAddrHeader.parse")
+  @js.native
   def parse(nameAddrHeader: String): NameAddrHeader = js.native
 }

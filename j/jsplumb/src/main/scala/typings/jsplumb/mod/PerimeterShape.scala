@@ -1,5 +1,6 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsplumb.jsplumbStrings.Rectangle
   - typings.jsplumb.jsplumbStrings.Square
 */
-trait PerimeterShape extends js.Object
+trait PerimeterShape extends StObject
 object PerimeterShape {
   
   @scala.inline

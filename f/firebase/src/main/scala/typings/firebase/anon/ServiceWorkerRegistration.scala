@@ -1,11 +1,12 @@
 package typings.firebase.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceWorkerRegistration extends js.Object {
+trait ServiceWorkerRegistration extends StObject {
   
   var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.native
   
@@ -20,30 +21,18 @@ object ServiceWorkerRegistration {
   }
   
   @scala.inline
-  implicit class ServiceWorkerRegistrationOps[Self <: ServiceWorkerRegistration] (val x: Self) extends AnyVal {
+  implicit class ServiceWorkerRegistrationMutableBuilder[Self <: ServiceWorkerRegistration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceWorkerRegistration(value: typings.std.ServiceWorkerRegistration): Self = StObject.set(x, "serviceWorkerRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceWorkerRegistrationUndefined: Self = StObject.set(x, "serviceWorkerRegistration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVapidKey(value: String): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceWorkerRegistration(value: typings.std.ServiceWorkerRegistration): Self = this.set("serviceWorkerRegistration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceWorkerRegistration: Self = this.set("serviceWorkerRegistration", js.undefined)
-    
-    @scala.inline
-    def setVapidKey(value: String): Self = this.set("vapidKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVapidKey: Self = this.set("vapidKey", js.undefined)
+    def setVapidKeyUndefined: Self = StObject.set(x, "vapidKey", js.undefined)
   }
 }

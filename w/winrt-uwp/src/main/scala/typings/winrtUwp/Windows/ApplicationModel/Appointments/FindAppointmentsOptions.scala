@@ -1,20 +1,24 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of options that modifies a query for appointments. */
 @js.native
-trait FindAppointmentsOptions extends js.Object {
+trait FindAppointmentsOptions extends StObject {
   
   var calendarIds: js.Any = js.native
   
-   /* unmapped type */ var fetchProperties: js.Any = js.native
+  /* unmapped type */
+  var fetchProperties: js.Any = js.native
   
-   /* unmapped type */ var includeHidden: js.Any = js.native
+  /* unmapped type */
+  var includeHidden: js.Any = js.native
   
-   /* unmapped type */ var maxCount: js.Any = js.native
+  /* unmapped type */
+  var maxCount: js.Any = js.native
 }
 object FindAppointmentsOptions {
   
@@ -25,30 +29,18 @@ object FindAppointmentsOptions {
   }
   
   @scala.inline
-  implicit class FindAppointmentsOptionsOps[Self <: FindAppointmentsOptions] (val x: Self) extends AnyVal {
+  implicit class FindAppointmentsOptionsMutableBuilder[Self <: FindAppointmentsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarIds(value: js.Any): Self = StObject.set(x, "calendarIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchProperties(value: js.Any): Self = StObject.set(x, "fetchProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeHidden(value: js.Any): Self = StObject.set(x, "includeHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarIds(value: js.Any): Self = this.set("calendarIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFetchProperties(value: js.Any): Self = this.set("fetchProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeHidden(value: js.Any): Self = this.set("includeHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxCount(value: js.Any): Self = this.set("maxCount", value.asInstanceOf[js.Any])
+    def setMaxCount(value: js.Any): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
   }
 }

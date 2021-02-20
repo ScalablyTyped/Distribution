@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonMaxSuppressionV4Attrs extends js.Object {
+trait NonMaxSuppressionV4Attrs extends StObject {
   
   var iouThreshold: Double = js.native
   
@@ -24,30 +25,18 @@ object NonMaxSuppressionV4Attrs {
   }
   
   @scala.inline
-  implicit class NonMaxSuppressionV4AttrsOps[Self <: NonMaxSuppressionV4Attrs] (val x: Self) extends AnyVal {
+  implicit class NonMaxSuppressionV4AttrsMutableBuilder[Self <: NonMaxSuppressionV4Attrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxOutputSize(value: Double): Self = StObject.set(x, "maxOutputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPadToMaxOutputSize(value: Boolean): Self = StObject.set(x, "padToMaxOutputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIouThreshold(value: Double): Self = this.set("iouThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxOutputSize(value: Double): Self = this.set("maxOutputSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPadToMaxOutputSize(value: Boolean): Self = this.set("padToMaxOutputSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScoreThreshold(value: Double): Self = this.set("scoreThreshold", value.asInstanceOf[js.Any])
+    def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
   }
 }

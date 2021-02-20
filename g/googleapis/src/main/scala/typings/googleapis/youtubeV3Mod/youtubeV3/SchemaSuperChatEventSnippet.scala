@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSuperChatEventSnippet extends js.Object {
+trait SchemaSuperChatEventSnippet extends StObject {
   
   /**
     * The purchase amount, in micros of the purchase currency. e.g., 1 is
@@ -82,90 +83,78 @@ object SchemaSuperChatEventSnippet {
   }
   
   @scala.inline
-  implicit class SchemaSuperChatEventSnippetOps[Self <: SchemaSuperChatEventSnippet] (val x: Self) extends AnyVal {
+  implicit class SchemaSuperChatEventSnippetMutableBuilder[Self <: SchemaSuperChatEventSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmountMicros(value: String): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountMicrosUndefined: Self = StObject.set(x, "amountMicros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmountMicros(value: String): Self = this.set("amountMicros", value.asInstanceOf[js.Any])
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def deleteAmountMicros: Self = this.set("amountMicros", js.undefined)
+    def setCommentText(value: String): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentText(value: String): Self = this.set("commentText", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteCommentText: Self = this.set("commentText", js.undefined)
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setDisplayString(value: String): Self = StObject.set(x, "displayString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setDisplayStringUndefined: Self = StObject.set(x, "displayString", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setIsSuperChatForGood(value: Boolean): Self = StObject.set(x, "isSuperChatForGood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayString(value: String): Self = this.set("displayString", value.asInstanceOf[js.Any])
+    def setIsSuperChatForGoodUndefined: Self = StObject.set(x, "isSuperChatForGood", js.undefined)
     
     @scala.inline
-    def deleteDisplayString: Self = this.set("displayString", js.undefined)
+    def setIsSuperStickerEvent(value: Boolean): Self = StObject.set(x, "isSuperStickerEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuperChatForGood(value: Boolean): Self = this.set("isSuperChatForGood", value.asInstanceOf[js.Any])
+    def setIsSuperStickerEventUndefined: Self = StObject.set(x, "isSuperStickerEvent", js.undefined)
     
     @scala.inline
-    def deleteIsSuperChatForGood: Self = this.set("isSuperChatForGood", js.undefined)
+    def setMessageType(value: Double): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSuperStickerEvent(value: Boolean): Self = this.set("isSuperStickerEvent", value.asInstanceOf[js.Any])
+    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
     @scala.inline
-    def deleteIsSuperStickerEvent: Self = this.set("isSuperStickerEvent", js.undefined)
+    def setNonprofit(value: SchemaNonprofit): Self = StObject.set(x, "nonprofit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: Double): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setNonprofitUndefined: Self = StObject.set(x, "nonprofit", js.undefined)
     
     @scala.inline
-    def deleteMessageType: Self = this.set("messageType", js.undefined)
+    def setSuperStickerMetadata(value: SchemaSuperStickerMetadata): Self = StObject.set(x, "superStickerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonprofit(value: SchemaNonprofit): Self = this.set("nonprofit", value.asInstanceOf[js.Any])
+    def setSuperStickerMetadataUndefined: Self = StObject.set(x, "superStickerMetadata", js.undefined)
     
     @scala.inline
-    def deleteNonprofit: Self = this.set("nonprofit", js.undefined)
+    def setSupporterDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "supporterDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperStickerMetadata(value: SchemaSuperStickerMetadata): Self = this.set("superStickerMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperStickerMetadata: Self = this.set("superStickerMetadata", js.undefined)
-    
-    @scala.inline
-    def setSupporterDetails(value: SchemaChannelProfileDetails): Self = this.set("supporterDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupporterDetails: Self = this.set("supporterDetails", js.undefined)
+    def setSupporterDetailsUndefined: Self = StObject.set(x, "supporterDetails", js.undefined)
   }
 }

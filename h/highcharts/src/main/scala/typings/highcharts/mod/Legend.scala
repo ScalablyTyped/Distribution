@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Legend")
 @js.native
-class Legend protected () extends js.Object {
+class Legend protected () extends StObject {
   /**
     * The overview of the chart's series. The legend object is instanciated
     * internally in the chart constructor, and is available from the

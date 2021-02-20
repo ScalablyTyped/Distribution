@@ -1,12 +1,13 @@
 package typings.select2.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Select2RequireConfig extends js.Object {
+trait Select2RequireConfig extends StObject {
   
   var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
   
@@ -25,45 +26,33 @@ object Select2RequireConfig {
   }
   
   @scala.inline
-  implicit class Select2RequireConfigOps[Self <: Select2RequireConfig] (val x: Self) extends AnyVal {
+  implicit class Select2RequireConfigMutableBuilder[Self <: Select2RequireConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: StringDictionary[js.Object]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* repeated */ js.Any => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: StringDictionary[js.Object]): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setDepsVarargs(value: String*): Self = this.set("deps", js.Array(value :_*))
+    def setMap(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeps(value: js.Array[String]): Self = this.set("deps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeps: Self = this.set("deps", js.undefined)
-    
-    @scala.inline
-    def setMap(value: StringDictionary[StringDictionary[String]]): Self = this.set("map", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
   }
 }

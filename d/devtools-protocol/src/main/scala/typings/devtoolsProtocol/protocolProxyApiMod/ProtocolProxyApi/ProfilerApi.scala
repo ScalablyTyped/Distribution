@@ -15,12 +15,13 @@ import typings.devtoolsProtocol.mod.Protocol.Profiler.StartPreciseCoverageRespon
 import typings.devtoolsProtocol.mod.Protocol.Profiler.StopResponse
 import typings.devtoolsProtocol.mod.Protocol.Profiler.TakePreciseCoverageResponse
 import typings.devtoolsProtocol.mod.Protocol.Profiler.TakeTypeProfileResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProfilerApi extends js.Object {
+trait ProfilerApi extends StObject {
   
   def disable(): js.Promise[Unit] = js.native
   

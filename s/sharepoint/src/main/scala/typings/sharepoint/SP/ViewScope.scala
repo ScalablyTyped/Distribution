@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewScope extends js.Object
+sealed trait ViewScope extends StObject
 @JSGlobal("SP.ViewScope")
 @js.native
-object ViewScope extends js.Object {
+object ViewScope extends StObject {
   
   @js.native
   sealed trait defaultValue extends ViewScope

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2HybridInspectStatistics extends js.Object {
+trait GooglePrivacyDlpV2HybridInspectStatistics extends StObject {
   
   /** The number of hybrid inspection requests aborted because the job ran out of quota or was ended before they could be processed. */
   var abortedCount: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object GooglePrivacyDlpV2HybridInspectStatistics {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2HybridInspectStatisticsOps[Self <: GooglePrivacyDlpV2HybridInspectStatistics] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2HybridInspectStatisticsMutableBuilder[Self <: GooglePrivacyDlpV2HybridInspectStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortedCount(value: String): Self = StObject.set(x, "abortedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortedCountUndefined: Self = StObject.set(x, "abortedCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPendingCount(value: String): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortedCount(value: String): Self = this.set("abortedCount", value.asInstanceOf[js.Any])
+    def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
     
     @scala.inline
-    def deleteAbortedCount: Self = this.set("abortedCount", js.undefined)
+    def setProcessedCount(value: String): Self = StObject.set(x, "processedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingCount(value: String): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
-    
-    @scala.inline
-    def setProcessedCount(value: String): Self = this.set("processedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessedCount: Self = this.set("processedCount", js.undefined)
+    def setProcessedCountUndefined: Self = StObject.set(x, "processedCount", js.undefined)
   }
 }

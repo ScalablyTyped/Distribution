@@ -1,10 +1,20 @@
 package typings.orientjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  /**
+    * A lightweight definiton for orientjs module, Official node.js driver for OrientDB.
+    *
+    * @param {orientjs.ServerConfig} config
+    * @returns {orientjs.OServer}
+    */
+  @scala.inline
+  def apply(config: typings.orientjs.mod.ServerConfig): typings.orientjs.mod.OServer = typings.orientjs.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.orientjs.mod.OServer]
   
   type BinaryRecord = typings.orientjs.mod.ORecord with typings.node.Buffer
   

@@ -1,11 +1,12 @@
 package typings.postmark.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryMessage extends js.Object {
+trait DeliveryMessage extends StObject {
   
   var DeliveryMessage: String = js.native
   
@@ -22,27 +23,15 @@ object DeliveryMessage {
   }
   
   @scala.inline
-  implicit class DeliveryMessageOps[Self <: DeliveryMessage] (val x: Self) extends AnyVal {
+  implicit class DeliveryMessageMutableBuilder[Self <: DeliveryMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryMessage(value: String): Self = StObject.set(x, "DeliveryMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationIP(value: String): Self = StObject.set(x, "DestinationIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeliveryMessage(value: String): Self = this.set("DeliveryMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationIP(value: String): Self = this.set("DestinationIP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationServer(value: String): Self = this.set("DestinationServer", value.asInstanceOf[js.Any])
+    def setDestinationServer(value: String): Self = StObject.set(x, "DestinationServer", value.asInstanceOf[js.Any])
   }
 }

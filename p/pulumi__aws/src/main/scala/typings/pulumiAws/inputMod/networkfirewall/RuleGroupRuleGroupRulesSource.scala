@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.networkfirewall
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRulesSource extends js.Object {
+trait RuleGroupRuleGroupRulesSource extends StObject {
   
   /**
     * A configuration block containing **stateful** inspection criteria for a domain list rule group. See Rules Source List below for details.
@@ -37,45 +38,33 @@ object RuleGroupRuleGroupRulesSource {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceOps[Self <: RuleGroupRuleGroupRulesSource] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupRulesSourceMutableBuilder[Self <: RuleGroupRuleGroupRulesSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRulesSourceList(value: Input[RuleGroupRuleGroupRulesSourceRulesSourceList]): Self = StObject.set(x, "rulesSourceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRulesSourceListUndefined: Self = StObject.set(x, "rulesSourceList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRulesString(value: Input[String]): Self = StObject.set(x, "rulesString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesSourceList(value: Input[RuleGroupRuleGroupRulesSourceRulesSourceList]): Self = this.set("rulesSourceList", value.asInstanceOf[js.Any])
+    def setRulesStringUndefined: Self = StObject.set(x, "rulesString", js.undefined)
     
     @scala.inline
-    def deleteRulesSourceList: Self = this.set("rulesSourceList", js.undefined)
+    def setStatefulRules(value: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRule]]]): Self = StObject.set(x, "statefulRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesString(value: Input[String]): Self = this.set("rulesString", value.asInstanceOf[js.Any])
+    def setStatefulRulesUndefined: Self = StObject.set(x, "statefulRules", js.undefined)
     
     @scala.inline
-    def deleteRulesString: Self = this.set("rulesString", js.undefined)
+    def setStatefulRulesVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatefulRule]*): Self = StObject.set(x, "statefulRules", js.Array(value :_*))
     
     @scala.inline
-    def setStatefulRulesVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatefulRule]*): Self = this.set("statefulRules", js.Array(value :_*))
+    def setStatelessRulesAndCustomActions(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions]): Self = StObject.set(x, "statelessRulesAndCustomActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatefulRules(value: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRule]]]): Self = this.set("statefulRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatefulRules: Self = this.set("statefulRules", js.undefined)
-    
-    @scala.inline
-    def setStatelessRulesAndCustomActions(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions]): Self = this.set("statelessRulesAndCustomActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatelessRulesAndCustomActions: Self = this.set("statelessRulesAndCustomActions", js.undefined)
+    def setStatelessRulesAndCustomActionsUndefined: Self = StObject.set(x, "statelessRulesAndCustomActions", js.undefined)
   }
 }

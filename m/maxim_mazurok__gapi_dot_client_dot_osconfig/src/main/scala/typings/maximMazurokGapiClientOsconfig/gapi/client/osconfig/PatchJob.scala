@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchJob extends js.Object {
+trait PatchJob extends StObject {
   
   /** Time this patch job was created. */
   var createTime: js.UndefOr[String] = js.native
@@ -61,108 +62,96 @@ object PatchJob {
   }
   
   @scala.inline
-  implicit class PatchJobOps[Self <: PatchJob] (val x: Self) extends AnyVal {
+  implicit class PatchJobMutableBuilder[Self <: PatchJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setInstanceDetailsSummary(value: PatchJobInstanceDetailsSummary): Self = StObject.set(x, "instanceDetailsSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setInstanceDetailsSummaryUndefined: Self = StObject.set(x, "instanceDetailsSummary", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setInstanceFilter(value: PatchInstanceFilter): Self = StObject.set(x, "instanceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceDetailsSummary(value: PatchJobInstanceDetailsSummary): Self = this.set("instanceDetailsSummary", value.asInstanceOf[js.Any])
+    def setInstanceFilterUndefined: Self = StObject.set(x, "instanceFilter", js.undefined)
     
     @scala.inline
-    def deleteInstanceDetailsSummary: Self = this.set("instanceDetailsSummary", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFilter(value: PatchInstanceFilter): Self = this.set("instanceFilter", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstanceFilter: Self = this.set("instanceFilter", js.undefined)
+    def setPatchConfig(value: PatchConfig): Self = StObject.set(x, "patchConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPatchConfigUndefined: Self = StObject.set(x, "patchConfig", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPatchDeployment(value: String): Self = StObject.set(x, "patchDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchConfig(value: PatchConfig): Self = this.set("patchConfig", value.asInstanceOf[js.Any])
+    def setPatchDeploymentUndefined: Self = StObject.set(x, "patchDeployment", js.undefined)
     
     @scala.inline
-    def deletePatchConfig: Self = this.set("patchConfig", js.undefined)
+    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchDeployment(value: String): Self = this.set("patchDeployment", value.asInstanceOf[js.Any])
+    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     @scala.inline
-    def deletePatchDeployment: Self = this.set("patchDeployment", js.undefined)
+    def setRollout(value: PatchRollout): Self = StObject.set(x, "rollout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: Double): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setRolloutUndefined: Self = StObject.set(x, "rollout", js.undefined)
     
     @scala.inline
-    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollout(value: PatchRollout): Self = this.set("rollout", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteRollout: Self = this.set("rollout", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

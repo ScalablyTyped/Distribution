@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A response message for Capabilities.GetCapabilities.
   */
 @js.native
-trait SchemaBuildBazelRemoteExecutionV2ServerCapabilities extends js.Object {
+trait SchemaBuildBazelRemoteExecutionV2ServerCapabilities extends StObject {
   
   /**
     * Capabilities of the remote cache system.
@@ -44,48 +45,36 @@ object SchemaBuildBazelRemoteExecutionV2ServerCapabilities {
   }
   
   @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ServerCapabilitiesOps[Self <: SchemaBuildBazelRemoteExecutionV2ServerCapabilities] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildBazelRemoteExecutionV2ServerCapabilitiesMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ServerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheCapabilities(value: SchemaBuildBazelRemoteExecutionV2CacheCapabilities): Self = StObject.set(x, "cacheCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheCapabilitiesUndefined: Self = StObject.set(x, "cacheCapabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecatedApiVersion(value: SchemaBuildBazelSemverSemVer): Self = StObject.set(x, "deprecatedApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheCapabilities(value: SchemaBuildBazelRemoteExecutionV2CacheCapabilities): Self = this.set("cacheCapabilities", value.asInstanceOf[js.Any])
+    def setDeprecatedApiVersionUndefined: Self = StObject.set(x, "deprecatedApiVersion", js.undefined)
     
     @scala.inline
-    def deleteCacheCapabilities: Self = this.set("cacheCapabilities", js.undefined)
+    def setExecutionCapabilities(value: SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities): Self = StObject.set(x, "executionCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedApiVersion(value: SchemaBuildBazelSemverSemVer): Self = this.set("deprecatedApiVersion", value.asInstanceOf[js.Any])
+    def setExecutionCapabilitiesUndefined: Self = StObject.set(x, "executionCapabilities", js.undefined)
     
     @scala.inline
-    def deleteDeprecatedApiVersion: Self = this.set("deprecatedApiVersion", js.undefined)
+    def setHighApiVersion(value: SchemaBuildBazelSemverSemVer): Self = StObject.set(x, "highApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionCapabilities(value: SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities): Self = this.set("executionCapabilities", value.asInstanceOf[js.Any])
+    def setHighApiVersionUndefined: Self = StObject.set(x, "highApiVersion", js.undefined)
     
     @scala.inline
-    def deleteExecutionCapabilities: Self = this.set("executionCapabilities", js.undefined)
+    def setLowApiVersion(value: SchemaBuildBazelSemverSemVer): Self = StObject.set(x, "lowApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighApiVersion(value: SchemaBuildBazelSemverSemVer): Self = this.set("highApiVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighApiVersion: Self = this.set("highApiVersion", js.undefined)
-    
-    @scala.inline
-    def setLowApiVersion(value: SchemaBuildBazelSemverSemVer): Self = this.set("lowApiVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowApiVersion: Self = this.set("lowApiVersion", js.undefined)
+    def setLowApiVersionUndefined: Self = StObject.set(x, "lowApiVersion", js.undefined)
   }
 }

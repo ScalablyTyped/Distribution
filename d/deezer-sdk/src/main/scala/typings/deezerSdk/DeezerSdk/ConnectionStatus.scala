@@ -1,5 +1,6 @@
 package typings.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.deezerSdk.deezerSdkStrings.unknown
   - typings.deezerSdk.deezerSdkStrings.not_authorized
 */
-trait ConnectionStatus extends js.Object
+trait ConnectionStatus extends StObject
 object ConnectionStatus {
   
   @scala.inline

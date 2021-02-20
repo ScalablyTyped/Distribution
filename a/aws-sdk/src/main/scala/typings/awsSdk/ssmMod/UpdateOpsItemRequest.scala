@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateOpsItemRequest extends js.Object {
+trait UpdateOpsItemRequest extends StObject {
   
   /**
     * Specify a new category for an OpsItem.
@@ -71,90 +72,78 @@ object UpdateOpsItemRequest {
   }
   
   @scala.inline
-  implicit class UpdateOpsItemRequestOps[Self <: UpdateOpsItemRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateOpsItemRequestMutableBuilder[Self <: UpdateOpsItemRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: OpsItemCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: OpsItemDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpsItemId(value: OpsItemId): Self = this.set("OpsItemId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCategory(value: OpsItemCategory): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setNotifications(value: OpsItemNotifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
     @scala.inline
-    def setDescription(value: OpsItemDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setNotificationsVarargs(value: OpsItemNotification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOperationalData(value: OpsItemOperationalData): Self = StObject.set(x, "OperationalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationsVarargs(value: OpsItemNotification*): Self = this.set("Notifications", js.Array(value :_*))
+    def setOperationalDataToDelete(value: OpsItemOpsDataKeysList): Self = StObject.set(x, "OperationalDataToDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifications(value: OpsItemNotifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    def setOperationalDataToDeleteUndefined: Self = StObject.set(x, "OperationalDataToDelete", js.undefined)
     
     @scala.inline
-    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+    def setOperationalDataToDeleteVarargs(value: String*): Self = StObject.set(x, "OperationalDataToDelete", js.Array(value :_*))
     
     @scala.inline
-    def setOperationalData(value: OpsItemOperationalData): Self = this.set("OperationalData", value.asInstanceOf[js.Any])
+    def setOperationalDataUndefined: Self = StObject.set(x, "OperationalData", js.undefined)
     
     @scala.inline
-    def deleteOperationalData: Self = this.set("OperationalData", js.undefined)
+    def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationalDataToDeleteVarargs(value: String*): Self = this.set("OperationalDataToDelete", js.Array(value :_*))
+    def setPriority(value: OpsItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationalDataToDelete(value: OpsItemOpsDataKeysList): Self = this.set("OperationalDataToDelete", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def deleteOperationalDataToDelete: Self = this.set("OperationalDataToDelete", js.undefined)
+    def setRelatedOpsItems(value: RelatedOpsItems): Self = StObject.set(x, "RelatedOpsItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: OpsItemPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setRelatedOpsItemsUndefined: Self = StObject.set(x, "RelatedOpsItems", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
+    def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = StObject.set(x, "RelatedOpsItems", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = this.set("RelatedOpsItems", js.Array(value :_*))
+    def setSeverity(value: OpsItemSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedOpsItems(value: RelatedOpsItems): Self = this.set("RelatedOpsItems", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
     @scala.inline
-    def deleteRelatedOpsItems: Self = this.set("RelatedOpsItems", js.undefined)
+    def setStatus(value: OpsItemStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: OpsItemSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setTitle(value: OpsItemTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: OpsItemStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: OpsItemTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

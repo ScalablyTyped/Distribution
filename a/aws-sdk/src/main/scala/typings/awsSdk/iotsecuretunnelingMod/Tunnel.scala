@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsecuretunnelingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tunnel extends js.Object {
+trait Tunnel extends StObject {
   
   /**
     * The time when the tunnel was created.
@@ -71,87 +72,75 @@ object Tunnel {
   }
   
   @scala.inline
-  implicit class TunnelOps[Self <: Tunnel] (val x: Self) extends AnyVal {
+  implicit class TunnelMutableBuilder[Self <: Tunnel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: DateType): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: DateType): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDestinationConnectionState(value: ConnectionState): Self = StObject.set(x, "destinationConnectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationConfig(value: DestinationConfig): Self = this.set("destinationConfig", value.asInstanceOf[js.Any])
+    def setDestinationConnectionStateUndefined: Self = StObject.set(x, "destinationConnectionState", js.undefined)
     
     @scala.inline
-    def deleteDestinationConfig: Self = this.set("destinationConfig", js.undefined)
+    def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationConnectionState(value: ConnectionState): Self = this.set("destinationConnectionState", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteDestinationConnectionState: Self = this.set("destinationConnectionState", js.undefined)
+    def setSourceConnectionState(value: ConnectionState): Self = StObject.set(x, "sourceConnectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setSourceConnectionStateUndefined: Self = StObject.set(x, "sourceConnectionState", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setStatus(value: TunnelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceConnectionState(value: ConnectionState): Self = this.set("sourceConnectionState", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSourceConnectionState: Self = this.set("sourceConnectionState", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TunnelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTimeoutConfigUndefined: Self = StObject.set(x, "timeoutConfig", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTunnelArn(value: TunnelArn): Self = StObject.set(x, "tunnelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutConfig(value: TimeoutConfig): Self = this.set("timeoutConfig", value.asInstanceOf[js.Any])
+    def setTunnelArnUndefined: Self = StObject.set(x, "tunnelArn", js.undefined)
     
     @scala.inline
-    def deleteTimeoutConfig: Self = this.set("timeoutConfig", js.undefined)
+    def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnelArn(value: TunnelArn): Self = this.set("tunnelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelArn: Self = this.set("tunnelArn", js.undefined)
-    
-    @scala.inline
-    def setTunnelId(value: TunnelId): Self = this.set("tunnelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnelId: Self = this.set("tunnelId", js.undefined)
+    def setTunnelIdUndefined: Self = StObject.set(x, "tunnelId", js.undefined)
   }
 }

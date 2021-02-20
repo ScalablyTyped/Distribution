@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelTimerDecisionAttributes extends js.Object {
+trait CancelTimerDecisionAttributes extends StObject {
   
   /**
     *  The unique ID of the timer to cancel.
@@ -21,21 +22,9 @@ object CancelTimerDecisionAttributes {
   }
   
   @scala.inline
-  implicit class CancelTimerDecisionAttributesOps[Self <: CancelTimerDecisionAttributes] (val x: Self) extends AnyVal {
+  implicit class CancelTimerDecisionAttributesMutableBuilder[Self <: CancelTimerDecisionAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimerId(value: TimerId): Self = this.set("timerId", value.asInstanceOf[js.Any])
+    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

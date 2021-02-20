@@ -3,16 +3,16 @@ package typings.angularCompiler
 import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.coreMod.Pipe
 import typings.angularCompiler.coreMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/pipe_resolver", JSImport.Namespace)
-@js.native
-object pipeResolverMod extends js.Object {
+object pipeResolverMod {
   
+  @JSImport("@angular/compiler/src/pipe_resolver", "PipeResolver")
   @js.native
-  class PipeResolver protected () extends js.Object {
+  class PipeResolver protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
     var _reflector: js.Any = js.native

@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,4 @@ class ^ protected () extends TextToSpeechV1 {
 }
 @JSImport("watson-developer-cloud/text-to-speech/v1-generated", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var URL: String = js.native
-}
+object ^ extends StObject

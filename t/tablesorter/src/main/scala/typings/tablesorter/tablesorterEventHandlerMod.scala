@@ -1,13 +1,12 @@
 package typings.tablesorter
 
 import typings.jquery.JQuery.TriggeredEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/System/TablesorterEventHandler", JSImport.Namespace)
-@js.native
-object tablesorterEventHandlerMod extends js.Object {
+object tablesorterEventHandlerMod {
   
   type TablesorterEventHandler[TElement] = js.Function2[
     /* eventArgs */ TriggeredEvent[TElement, Null, TElement, TElement], 

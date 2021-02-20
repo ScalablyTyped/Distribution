@@ -8,14 +8,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/blurPostProcess", JSImport.Namespace)
-@js.native
-object blurPostProcessMod extends js.Object {
+object blurPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/blurPostProcess", "BlurPostProcess")
   @js.native
   class BlurPostProcess protected () extends PostProcess {
     /**
@@ -133,10 +133,11 @@ object blurPostProcessMod extends js.Object {
     ): Unit = js.native
   }
   /* static members */
-  @js.native
-  object BlurPostProcess extends js.Object {
+  object BlurPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/blurPostProcess", "BlurPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[BlurPostProcess] = js.native
   }
 }

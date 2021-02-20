@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Camera extends js.Object {
+trait Camera extends StObject {
   
   /**
     *   Sets a camera's position and orientation. This is
@@ -93,42 +94,30 @@ object Camera {
   }
   
   @scala.inline
-  implicit class CameraOps[Self <: Camera] (val x: Self) extends AnyVal {
+  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: () => Unit): Self = StObject.set(x, "camera", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLookAt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "lookAt", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMove(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCamera(value: () => Unit): Self = this.set("camera", js.Any.fromFunction0(value))
+    def setOrtho(value: () => Unit): Self = StObject.set(x, "ortho", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLookAt(value: (Double, Double, Double) => Unit): Self = this.set("lookAt", js.Any.fromFunction3(value))
+    def setPan(value: Double => Unit): Self = StObject.set(x, "pan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMove(value: (Double, Double, Double) => Unit): Self = this.set("move", js.Any.fromFunction3(value))
+    def setPerspective(value: () => Unit): Self = StObject.set(x, "perspective", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOrtho(value: () => Unit): Self = this.set("ortho", js.Any.fromFunction0(value))
+    def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPan(value: Double => Unit): Self = this.set("pan", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPerspective(value: () => Unit): Self = this.set("perspective", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPosition(value: (Double, Double, Double) => Unit): Self = this.set("setPosition", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setTilt(value: Double => Unit): Self = this.set("tilt", js.Any.fromFunction1(value))
+    def setTilt(value: Double => Unit): Self = StObject.set(x, "tilt", js.Any.fromFunction1(value))
   }
 }

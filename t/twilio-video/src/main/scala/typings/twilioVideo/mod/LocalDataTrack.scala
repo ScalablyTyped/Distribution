@@ -5,6 +5,7 @@ import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.twilioVideo.mod.Track.ID
 import typings.twilioVideo.twilioVideoStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

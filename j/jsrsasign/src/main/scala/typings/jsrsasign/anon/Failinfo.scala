@@ -3,12 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Failinfo extends js.Object {
+trait Failinfo extends StObject {
   
   var failinfo: js.UndefOr[NameParam | IntegerParam] = js.native
   
@@ -25,33 +26,21 @@ object Failinfo {
   }
   
   @scala.inline
-  implicit class FailinfoOps[Self <: Failinfo] (val x: Self) extends AnyVal {
+  implicit class FailinfoMutableBuilder[Self <: Failinfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailinfo(value: NameParam | IntegerParam): Self = StObject.set(x, "failinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailinfoUndefined: Self = StObject.set(x, "failinfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatstr(value: ArrayParam[String]): Self = StObject.set(x, "statstr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: NameParam): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatstrUndefined: Self = StObject.set(x, "statstr", js.undefined)
     
     @scala.inline
-    def setFailinfo(value: NameParam | IntegerParam): Self = this.set("failinfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailinfo: Self = this.set("failinfo", js.undefined)
-    
-    @scala.inline
-    def setStatstr(value: ArrayParam[String]): Self = this.set("statstr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatstr: Self = this.set("statstr", js.undefined)
+    def setStatus(value: NameParam): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

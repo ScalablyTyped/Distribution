@@ -5,12 +5,13 @@ import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetGithubActionsBillingOrg extends js.Object {
+trait GetGithubActionsBillingOrg extends StObject {
   
   /**
     * **Warning:** The Billing API is currently in public beta and subject to change.

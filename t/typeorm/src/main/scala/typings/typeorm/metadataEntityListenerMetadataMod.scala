@@ -5,16 +5,16 @@ import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.typesEventListenerTypesMod.EventListenerType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata/EntityListenerMetadata", JSImport.Namespace)
-@js.native
-object metadataEntityListenerMetadataMod extends js.Object {
+object metadataEntityListenerMetadataMod {
   
+  @JSImport("typeorm/metadata/EntityListenerMetadata", "EntityListenerMetadata")
   @js.native
-  class EntityListenerMetadata protected () extends js.Object {
+  class EntityListenerMetadata protected () extends StObject {
     def this(options: EmbeddedMetadataEntityMetadata) = this()
     
     /**

@@ -1,5 +1,6 @@
 package typings.tizenCommonWeb.systeminfoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,39 +62,27 @@ object SystemInfoDisplay {
   }
   
   @scala.inline
-  implicit class SystemInfoDisplayOps[Self <: SystemInfoDisplay] (val x: Self) extends AnyVal {
+  implicit class SystemInfoDisplayMutableBuilder[Self <: SystemInfoDisplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotsPerInchHeight(value: Double): Self = StObject.set(x, "dotsPerInchHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDotsPerInchWidth(value: Double): Self = StObject.set(x, "dotsPerInchWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setPhysicalHeight(value: Double): Self = StObject.set(x, "physicalHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotsPerInchHeight(value: Double): Self = this.set("dotsPerInchHeight", value.asInstanceOf[js.Any])
+    def setPhysicalWidth(value: Double): Self = StObject.set(x, "physicalWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotsPerInchWidth(value: Double): Self = this.set("dotsPerInchWidth", value.asInstanceOf[js.Any])
+    def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalHeight(value: Double): Self = this.set("physicalHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhysicalWidth(value: Double): Self = this.set("physicalWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolutionHeight(value: Double): Self = this.set("resolutionHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolutionWidth(value: Double): Self = this.set("resolutionWidth", value.asInstanceOf[js.Any])
+    def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,42 +60,30 @@ object XDocumentHandler {
   }
   
   @scala.inline
-  implicit class XDocumentHandlerOps[Self <: XDocumentHandler] (val x: Self) extends AnyVal {
+  implicit class XDocumentHandlerMutableBuilder[Self <: XDocumentHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndElement(value: String => Unit): Self = StObject.set(x, "endElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCharacters(value: String => Unit): Self = this.set("characters", js.Any.fromFunction1(value))
+    def setIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "ignorableWhitespace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndDocument(value: () => Unit): Self = this.set("endDocument", js.Any.fromFunction0(value))
+    def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEndElement(value: String => Unit): Self = this.set("endElement", js.Any.fromFunction1(value))
+    def setSetDocumentLocator(value: XLocator => Unit): Self = StObject.set(x, "setDocumentLocator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIgnorableWhitespace(value: String => Unit): Self = this.set("ignorableWhitespace", js.Any.fromFunction1(value))
+    def setStartDocument(value: () => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProcessingInstruction(value: (String, String) => Unit): Self = this.set("processingInstruction", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDocumentLocator(value: XLocator => Unit): Self = this.set("setDocumentLocator", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartDocument(value: () => Unit): Self = this.set("startDocument", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartElement(value: (String, XAttributeList) => Unit): Self = this.set("startElement", js.Any.fromFunction2(value))
+    def setStartElement(value: (String, XAttributeList) => Unit): Self = StObject.set(x, "startElement", js.Any.fromFunction2(value))
   }
 }

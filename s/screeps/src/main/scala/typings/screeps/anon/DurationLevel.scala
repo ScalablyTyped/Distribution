@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.screepsStrings.operator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurationLevel extends js.Object {
+trait DurationLevel extends StObject {
   
   var className: operator = js.native
   
@@ -60,25 +61,13 @@ object DurationLevel {
   }
   
   @scala.inline
-  implicit class DurationLevelOps[Self <: DurationLevel] (val x: Self) extends AnyVal {
+  implicit class DurationLevelMutableBuilder[Self <: DurationLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClassName(value: operator): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCooldown(value: typings.screeps.screepsNumbers.`5`): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setCooldown(value: typings.screeps.screepsNumbers.`5`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDuration(
@@ -89,7 +78,7 @@ object DurationLevel {
           typings.screeps.screepsNumbers.`4`, 
           typings.screeps.screepsNumbers.`5`
         ]
-    ): Self = this.set("duration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLevel(
@@ -100,12 +89,12 @@ object DurationLevel {
           typings.screeps.screepsNumbers.`14`, 
           typings.screeps.screepsNumbers.`22`
         ]
-    ): Self = this.set("level", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOps(value: typings.screeps.screepsNumbers.`10`): Self = this.set("ops", value.asInstanceOf[js.Any])
+    def setOps(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: typings.screeps.screepsNumbers.`20`): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRange(value: typings.screeps.screepsNumbers.`20`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

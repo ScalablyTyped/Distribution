@@ -1,6 +1,7 @@
 package typings.easeljs.createjs
 
 import typings.createjsLib.createjs.EventDispatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -322,7 +323,7 @@ trait SpriteSheetBuilder extends EventDispatcher {
   
   var spriteSheet: SpriteSheet = js.native
   
-   // throw error
+  // throw error
   def stopAsync(): Unit = js.native
   
   var timeSlice: Double = js.native

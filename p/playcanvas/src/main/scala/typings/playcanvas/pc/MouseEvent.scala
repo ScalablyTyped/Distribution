@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param event - The original browser event that fired.
   */
 @js.native
-trait MouseEvent extends js.Object {
+trait MouseEvent extends StObject {
   
   /**
     * True if the alt key was pressed when this event was fired.
@@ -117,54 +118,42 @@ object MouseEvent {
   }
   
   @scala.inline
-  implicit class MouseEventOps[Self <: MouseEvent] (val x: Self) extends AnyVal {
+  implicit class MouseEventMutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: Element): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: MouseEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setWheelDelta(value: Double): Self = StObject.set(x, "wheelDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaKey(value: Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWheelDelta(value: Double): Self = this.set("wheelDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalDialogButtonApplyClickEventUIParam extends js.Object {
+trait ModalDialogButtonApplyClickEventUIParam extends StObject {
   
   /**
     * Gets the array of column layouts.
@@ -41,57 +42,45 @@ object ModalDialogButtonApplyClickEventUIParam {
   }
   
   @scala.inline
-  implicit class ModalDialogButtonApplyClickEventUIParamOps[Self <: ModalDialogButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ModalDialogButtonApplyClickEventUIParamMutableBuilder[Self <: ModalDialogButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupedColumnLayouts(value: js.Array[_]): Self = StObject.set(x, "groupedColumnLayouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupedColumnLayoutsUndefined: Self = StObject.set(x, "groupedColumnLayouts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupedColumnLayoutsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumnLayouts", js.Array(value :_*))
     
     @scala.inline
-    def setGroupedColumnLayoutsVarargs(value: js.Any*): Self = this.set("groupedColumnLayouts", js.Array(value :_*))
+    def setGroupedColumns(value: js.Array[_]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupedColumnLayouts(value: js.Array[_]): Self = this.set("groupedColumnLayouts", value.asInstanceOf[js.Any])
+    def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
     
     @scala.inline
-    def deleteGroupedColumnLayouts: Self = this.set("groupedColumnLayouts", js.undefined)
+    def setGroupedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
     
     @scala.inline
-    def setGroupedColumnsVarargs(value: js.Any*): Self = this.set("groupedColumns", js.Array(value :_*))
+    def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupedColumns(value: js.Array[_]): Self = this.set("groupedColumns", value.asInstanceOf[js.Any])
+    def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
     @scala.inline
-    def deleteGroupedColumns: Self = this.set("groupedColumns", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalDialogElement(value: String): Self = this.set("modalDialogElement", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteModalDialogElement: Self = this.set("modalDialogElement", js.undefined)
+    def setSortingExpr(value: js.Array[_]): Self = StObject.set(x, "sortingExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSortingExprUndefined: Self = StObject.set(x, "sortingExpr", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setSortingExprVarargs(value: js.Any*): Self = this.set("sortingExpr", js.Array(value :_*))
-    
-    @scala.inline
-    def setSortingExpr(value: js.Array[_]): Self = this.set("sortingExpr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortingExpr: Self = this.set("sortingExpr", js.undefined)
+    def setSortingExprVarargs(value: js.Any*): Self = StObject.set(x, "sortingExpr", js.Array(value :_*))
   }
 }

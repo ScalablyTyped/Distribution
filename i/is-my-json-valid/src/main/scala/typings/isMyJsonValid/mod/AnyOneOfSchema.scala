@@ -1,5 +1,6 @@
 package typings.isMyJsonValid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object AnyOneOfSchema {
   }
   
   @scala.inline
-  implicit class AnyOneOfSchemaOps[Self <: AnyOneOfSchema] (val x: Self) extends AnyVal {
+  implicit class AnyOneOfSchemaMutableBuilder[Self <: AnyOneOfSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOneOf(value: js.Array[AnySchema]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOneOfVarargs(value: AnySchema*): Self = this.set("oneOf", js.Array(value :_*))
-    
-    @scala.inline
-    def setOneOf(value: js.Array[AnySchema]): Self = this.set("oneOf", value.asInstanceOf[js.Any])
+    def setOneOfVarargs(value: AnySchema*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllHeaders(value: () => Headers): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHeader(value: js.Any => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAllHeaders(value: () => Headers): Self = this.set("getAllHeaders", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetHeader(value: js.Any => String): Self = this.set("getHeader", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetHeaderNames(value: () => js.Array[String]): Self = this.set("getHeaderNames", js.Any.fromFunction0(value))
+    def setGetHeaderNames(value: () => js.Array[String]): Self = StObject.set(x, "getHeaderNames", js.Any.fromFunction0(value))
   }
 }

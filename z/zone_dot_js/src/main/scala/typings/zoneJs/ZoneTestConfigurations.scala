@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * importing `zone-testing.js` to change `zone-testing.js` default behaviors in the test runner.
   */
 @js.native
-trait ZoneTestConfigurations extends js.Object {
+trait ZoneTestConfigurations extends StObject {
   
   /**
     * Disable the Jasmine integration.
@@ -191,54 +192,42 @@ object ZoneTestConfigurations {
   }
   
   @scala.inline
-  implicit class ZoneTestConfigurationsOps[Self <: ZoneTestConfigurations] (val x: Self) extends AnyVal {
+  implicit class ZoneTestConfigurationsMutableBuilder[Self <: ZoneTestConfigurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set__Zone_disable_jasmine(value: Boolean): Self = StObject.set(x, "__Zone_disable_jasmine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__Zone_disable_jasmineUndefined: Self = StObject.set(x, "__Zone_disable_jasmine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set__Zone_disable_jest(value: Boolean): Self = StObject.set(x, "__Zone_disable_jest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_jasmine(value: Boolean): Self = this.set("__Zone_disable_jasmine", value.asInstanceOf[js.Any])
+    def set__Zone_disable_jestUndefined: Self = StObject.set(x, "__Zone_disable_jest", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_jasmine: Self = this.set("__Zone_disable_jasmine", js.undefined)
+    def set__Zone_disable_mocha(value: Boolean): Self = StObject.set(x, "__Zone_disable_mocha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_jest(value: Boolean): Self = this.set("__Zone_disable_jest", value.asInstanceOf[js.Any])
+    def set__Zone_disable_mochaUndefined: Self = StObject.set(x, "__Zone_disable_mocha", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_jest: Self = this.set("__Zone_disable_jest", js.undefined)
+    def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched(value: Boolean): Self = StObject.set(x, "__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_mocha(value: Boolean): Self = this.set("__Zone_disable_mocha", value.asInstanceOf[js.Any])
+    def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatchedUndefined: Self = StObject.set(x, "__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_mocha: Self = this.set("__Zone_disable_mocha", js.undefined)
+    def set__zone_symbol__fakeAsyncDisablePatchingClock(value: Boolean): Self = StObject.set(x, "__zone_symbol__fakeAsyncDisablePatchingClock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched(value: Boolean): Self = this.set("__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", value.asInstanceOf[js.Any])
+    def set__zone_symbol__fakeAsyncDisablePatchingClockUndefined: Self = StObject.set(x, "__zone_symbol__fakeAsyncDisablePatchingClock", js.undefined)
     
     @scala.inline
-    def delete__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched: Self = this.set("__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", js.undefined)
+    def set__zone_symbol__supportWaitUnResolvedChainedPromise(value: Boolean): Self = StObject.set(x, "__zone_symbol__supportWaitUnResolvedChainedPromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__zone_symbol__fakeAsyncDisablePatchingClock(value: Boolean): Self = this.set("__zone_symbol__fakeAsyncDisablePatchingClock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__zone_symbol__fakeAsyncDisablePatchingClock: Self = this.set("__zone_symbol__fakeAsyncDisablePatchingClock", js.undefined)
-    
-    @scala.inline
-    def set__zone_symbol__supportWaitUnResolvedChainedPromise(value: Boolean): Self = this.set("__zone_symbol__supportWaitUnResolvedChainedPromise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__zone_symbol__supportWaitUnResolvedChainedPromise: Self = this.set("__zone_symbol__supportWaitUnResolvedChainedPromise", js.undefined)
+    def set__zone_symbol__supportWaitUnResolvedChainedPromiseUndefined: Self = StObject.set(x, "__zone_symbol__supportWaitUnResolvedChainedPromise", js.undefined)
   }
 }

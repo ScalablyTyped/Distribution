@@ -1,11 +1,12 @@
 package typings.akamaiEdgeworkers.streamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadableStreamDefaultController[R] extends js.Object {
+trait ReadableStreamDefaultController[R] extends StObject {
   
   def close(): Unit = js.native
   

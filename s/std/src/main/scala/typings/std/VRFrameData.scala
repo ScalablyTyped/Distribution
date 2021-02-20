@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebVR API interface represents all the information needed to render a single frame of a VR scene; constructed by VRDisplay.getFrameData(). */
 @js.native
-trait VRFrameData extends js.Object {
+trait VRFrameData extends StObject {
   
   val leftProjectionMatrix: Float32Array = js.native
   
@@ -36,36 +37,24 @@ object VRFrameData {
   }
   
   @scala.inline
-  implicit class VRFrameDataOps[Self <: VRFrameData] (val x: Self) extends AnyVal {
+  implicit class VRFrameDataMutableBuilder[Self <: VRFrameData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftProjectionMatrix(value: Float32Array): Self = StObject.set(x, "leftProjectionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftViewMatrix(value: Float32Array): Self = StObject.set(x, "leftViewMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPose(value: VRPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftProjectionMatrix(value: Float32Array): Self = this.set("leftProjectionMatrix", value.asInstanceOf[js.Any])
+    def setRightProjectionMatrix(value: Float32Array): Self = StObject.set(x, "rightProjectionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftViewMatrix(value: Float32Array): Self = this.set("leftViewMatrix", value.asInstanceOf[js.Any])
+    def setRightViewMatrix(value: Float32Array): Self = StObject.set(x, "rightViewMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPose(value: VRPose): Self = this.set("pose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightProjectionMatrix(value: Float32Array): Self = this.set("rightProjectionMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightViewMatrix(value: Float32Array): Self = this.set("rightViewMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

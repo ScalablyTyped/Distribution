@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRAnchor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRAnchor extends js.Object {
+trait IWebXRAnchor extends StObject {
   
   /**
     * if defined, this object will be constantly updated by the anchor's position and rotation
@@ -42,36 +43,24 @@ object IWebXRAnchor {
   }
   
   @scala.inline
-  implicit class IWebXRAnchorOps[Self <: IWebXRAnchor] (val x: Self) extends AnyVal {
+  implicit class IWebXRAnchorMutableBuilder[Self <: IWebXRAnchor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedNode(value: TransformNode): Self = StObject.set(x, "attachedNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedNodeUndefined: Self = StObject.set(x, "attachedNode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformationMatrix(value: Matrix): Self = this.set("transformationMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXrAnchor(value: XRAnchor): Self = this.set("xrAnchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttachedNode(value: TransformNode): Self = this.set("attachedNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachedNode: Self = this.set("attachedNode", js.undefined)
+    def setXrAnchor(value: XRAnchor): Self = StObject.set(x, "xrAnchor", value.asInstanceOf[js.Any])
   }
 }

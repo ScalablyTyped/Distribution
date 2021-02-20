@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;My name is Jake.&quot; becomes &quot;My name is .&quot;
   */
 @js.native
-trait SchemaRedactConfig extends js.Object
+trait SchemaRedactConfig extends StObject

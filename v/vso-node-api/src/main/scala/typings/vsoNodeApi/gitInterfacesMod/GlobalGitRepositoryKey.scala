@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalGitRepositoryKey extends js.Object {
+trait GlobalGitRepositoryKey extends StObject {
   
   /**
     * Team Project Collection ID of the collection for the repository.
@@ -31,27 +32,15 @@ object GlobalGitRepositoryKey {
   }
   
   @scala.inline
-  implicit class GlobalGitRepositoryKeyOps[Self <: GlobalGitRepositoryKey] (val x: Self) extends AnyVal {
+  implicit class GlobalGitRepositoryKeyMutableBuilder[Self <: GlobalGitRepositoryKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollectionId(value: String): Self = this.set("collectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryId(value: String): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
   }
 }

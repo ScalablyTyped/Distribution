@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BitMatrix extends js.Object {
+trait BitMatrix extends StObject {
   
   val Dimension: Double = js.native
   
@@ -53,51 +54,39 @@ object BitMatrix {
   }
   
   @scala.inline
-  implicit class BitMatrixOps[Self <: BitMatrix] (val x: Self) extends AnyVal {
+  implicit class BitMatrixMutableBuilder[Self <: BitMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBits(value: js.Array[Double]): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitsVarargs(value: Double*): Self = StObject.set(x, "bits", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDimension(value: Double): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setFlip(value: (Double, Double) => Unit): Self = StObject.set(x, "flip", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setGet_Renamed(value: (Double, Double) => Boolean): Self = StObject.set(x, "get_Renamed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBitsVarargs(value: Double*): Self = this.set("bits", js.Array(value :_*))
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBits(value: js.Array[Double]): Self = this.set("bits", value.asInstanceOf[js.Any])
+    def setRowSize(value: Double): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setSetRegion(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setFlip(value: (Double, Double) => Unit): Self = this.set("flip", js.Any.fromFunction2(value))
+    def setSet_Renamed(value: (Double, Double) => Unit): Self = StObject.set(x, "set_Renamed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGet_Renamed(value: (Double, Double) => Boolean): Self = this.set("get_Renamed", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRowSize(value: Double): Self = this.set("rowSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetRegion(value: (Double, Double, Double, Double) => Unit): Self = this.set("setRegion", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSet_Renamed(value: (Double, Double) => Unit): Self = this.set("set_Renamed", js.Any.fromFunction2(value))
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

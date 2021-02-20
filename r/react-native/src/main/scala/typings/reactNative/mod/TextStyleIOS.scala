@@ -7,6 +7,7 @@ import typings.reactNative.reactNativeStrings.double
 import typings.reactNative.reactNativeStrings.ltr
 import typings.reactNative.reactNativeStrings.rtl
 import typings.reactNative.reactNativeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,51 +34,39 @@ object TextStyleIOS {
   }
   
   @scala.inline
-  implicit class TextStyleIOSOps[Self <: TextStyleIOS] (val x: Self) extends AnyVal {
+  implicit class TextStyleIOSMutableBuilder[Self <: TextStyleIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontVariant(value: js.Array[FontVariant]): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontVariantVarargs(value: FontVariant*): Self = StObject.set(x, "fontVariant", js.Array(value :_*))
     
     @scala.inline
-    def setFontVariantVarargs(value: FontVariant*): Self = this.set("fontVariant", js.Array(value :_*))
+    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariant(value: js.Array[FontVariant]): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
+    def setTextDecorationColor(value: ColorValue): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setTextDecorationStyle(value: solid | double | dotted | dashed): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationColor(value: ColorValue): Self = this.set("textDecorationColor", value.asInstanceOf[js.Any])
+    def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
     
     @scala.inline
-    def deleteTextDecorationColor: Self = this.set("textDecorationColor", js.undefined)
+    def setWritingDirection(value: auto | ltr | rtl): Self = StObject.set(x, "writingDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationStyle(value: solid | double | dotted | dashed): Self = this.set("textDecorationStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDecorationStyle: Self = this.set("textDecorationStyle", js.undefined)
-    
-    @scala.inline
-    def setWritingDirection(value: auto | ltr | rtl): Self = this.set("writingDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritingDirection: Self = this.set("writingDirection", js.undefined)
+    def setWritingDirectionUndefined: Self = StObject.set(x, "writingDirection", js.undefined)
   }
 }

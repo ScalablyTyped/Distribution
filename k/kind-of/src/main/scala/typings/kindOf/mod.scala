@@ -50,40 +50,95 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import typings.std.WeakMap
 import typings.std.WeakSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kind-of", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: js.UndefOr[scala.Nothing]): undefined = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: String): string = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: js.Any): String = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: js.Array[_]): array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: js.Function1[/* repeated */ js.Any, _]): function | generatorfunction = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: js.Promise[_]): promise = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: js.Symbol): symbol = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Boolean): boolean = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Double): number = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Null): `null` = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Buffer): buffer = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Date): date = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Error): error = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Float32Array): float32array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Float64Array): float64array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Int16Array): int16array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Int32Array): int32array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Int8Array): int8array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Iterator[_, _, js.UndefOr[scala.Nothing]]): generator | stringiterator | arrayiterator | mapiterator | setiterator = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Map[_, _]): map = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: RegExp): regexp = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Set[_]): set = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Uint16Array): uint16array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Uint32Array): uint32array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Uint8Array): uint8array = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: Uint8ClampedArray): uint8clampedarray = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: WeakMap[_, _]): weakmap = js.native
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
   def apply(thing: WeakSet[_]): weakset = js.native
 }

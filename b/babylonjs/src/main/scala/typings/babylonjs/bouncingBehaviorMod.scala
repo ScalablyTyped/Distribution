@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.easingMod.BackEase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", JSImport.Namespace)
-@js.native
-object bouncingBehaviorMod extends js.Object {
+object bouncingBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior")
   @js.native
   class BouncingBehavior () extends Behavior[ArcRotateCamera] {
     
@@ -85,17 +85,28 @@ object bouncingBehaviorMod extends js.Object {
     var upperRadiusTransitionRange: Double = js.native
   }
   /* static members */
-  @js.native
-  object BouncingBehavior extends js.Object {
+  object BouncingBehavior {
+    
+    @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The easing function used by animations
       */
-    var EasingFunction: BackEase = js.native
+    @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior.EasingFunction")
+    @js.native
+    def EasingFunction: BackEase = js.native
+    @scala.inline
+    def EasingFunction_=(x: BackEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
     
     /**
       * The easing mode used by animations
       */
-    var EasingMode: Double = js.native
+    @JSImport("babylonjs/Behaviors/Cameras/bouncingBehavior", "BouncingBehavior.EasingMode")
+    @js.native
+    def EasingMode: Double = js.native
+    @scala.inline
+    def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
   }
 }

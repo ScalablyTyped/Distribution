@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCertificateAuthorityAuditReportResponse extends js.Object {
+trait CreateCertificateAuthorityAuditReportResponse extends StObject {
   
   /**
     * An alphanumeric string that contains a report identifier.
@@ -26,30 +27,18 @@ object CreateCertificateAuthorityAuditReportResponse {
   }
   
   @scala.inline
-  implicit class CreateCertificateAuthorityAuditReportResponseOps[Self <: CreateCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
+  implicit class CreateCertificateAuthorityAuditReportResponseMutableBuilder[Self <: CreateCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditReportId(value: AuditReportId): Self = StObject.set(x, "AuditReportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditReportIdUndefined: Self = StObject.set(x, "AuditReportId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditReportId(value: AuditReportId): Self = this.set("AuditReportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuditReportId: Self = this.set("AuditReportId", js.undefined)
-    
-    @scala.inline
-    def setS3Key(value: S3Key): Self = this.set("S3Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

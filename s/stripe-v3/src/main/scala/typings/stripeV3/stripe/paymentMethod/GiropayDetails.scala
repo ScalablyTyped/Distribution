@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe.paymentMethod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GiropayDetails extends js.Object {
+trait GiropayDetails extends StObject {
   
   var bank_code: String = js.native
   
@@ -24,30 +25,18 @@ object GiropayDetails {
   }
   
   @scala.inline
-  implicit class GiropayDetailsOps[Self <: GiropayDetails] (val x: Self) extends AnyVal {
+  implicit class GiropayDetailsMutableBuilder[Self <: GiropayDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBank_code(value: String): Self = StObject.set(x, "bank_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBic(value: String): Self = StObject.set(x, "bic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBank_code(value: String): Self = this.set("bank_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBank_name(value: String): Self = this.set("bank_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBic(value: String): Self = this.set("bic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified_name(value: String): Self = this.set("verified_name", value.asInstanceOf[js.Any])
+    def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
   }
 }

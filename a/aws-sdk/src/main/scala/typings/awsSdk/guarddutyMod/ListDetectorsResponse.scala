@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDetectorsResponse extends js.Object {
+trait ListDetectorsResponse extends StObject {
   
   /**
     * A list of detector IDs.
@@ -26,30 +27,18 @@ object ListDetectorsResponse {
   }
   
   @scala.inline
-  implicit class ListDetectorsResponseOps[Self <: ListDetectorsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDetectorsResponseMutableBuilder[Self <: ListDetectorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorIds(value: DetectorIds): Self = StObject.set(x, "DetectorIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectorIdsVarargs(value: DetectorId*): Self = StObject.set(x, "DetectorIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorIdsVarargs(value: DetectorId*): Self = this.set("DetectorIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setDetectorIds(value: DetectorIds): Self = this.set("DetectorIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

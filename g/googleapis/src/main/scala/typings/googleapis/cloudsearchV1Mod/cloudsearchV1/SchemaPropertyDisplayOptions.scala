@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The display options for a property.
   */
 @js.native
-trait SchemaPropertyDisplayOptions extends js.Object {
+trait SchemaPropertyDisplayOptions extends StObject {
   
   /**
     * The user friendly label for the property that will be used if the
@@ -33,24 +34,12 @@ object SchemaPropertyDisplayOptions {
   }
   
   @scala.inline
-  implicit class SchemaPropertyDisplayOptionsOps[Self <: SchemaPropertyDisplayOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaPropertyDisplayOptionsMutableBuilder[Self <: SchemaPropertyDisplayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayLabel(value: String): Self = this.set("displayLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayLabel: Self = this.set("displayLabel", js.undefined)
+    def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
   }
 }

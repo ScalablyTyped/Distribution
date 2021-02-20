@@ -1,6 +1,7 @@
 package typings.athenajs.mod
 
 import typings.athenajs.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates the FX class, adding the linear easing
   */
-class _FX () extends js.Object {
+class _FX () extends StObject {
   
   /**
     * Add a new easing function for other objects to use

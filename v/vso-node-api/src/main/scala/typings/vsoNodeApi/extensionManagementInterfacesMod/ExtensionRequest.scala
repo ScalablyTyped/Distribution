@@ -2,12 +2,13 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionRequest extends js.Object {
+trait ExtensionRequest extends StObject {
   
   /**
     * Required message supplied if the request is rejected
@@ -61,39 +62,27 @@ object ExtensionRequest {
   }
   
   @scala.inline
-  implicit class ExtensionRequestOps[Self <: ExtensionRequest] (val x: Self) extends AnyVal {
+  implicit class ExtensionRequestMutableBuilder[Self <: ExtensionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRejectMessage(value: String): Self = StObject.set(x, "rejectMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestDate(value: Date): Self = StObject.set(x, "requestDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestMessage(value: String): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectMessage(value: String): Self = this.set("rejectMessage", value.asInstanceOf[js.Any])
+    def setRequestState(value: ExtensionRequestState): Self = StObject.set(x, "requestState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDate(value: Date): Self = this.set("requestDate", value.asInstanceOf[js.Any])
+    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMessage(value: String): Self = this.set("requestMessage", value.asInstanceOf[js.Any])
+    def setResolveDate(value: Date): Self = StObject.set(x, "resolveDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestState(value: ExtensionRequestState): Self = this.set("requestState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolveDate(value: Date): Self = this.set("resolveDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedBy(value: IdentityRef): Self = this.set("resolvedBy", value.asInstanceOf[js.Any])
+    def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
   }
 }

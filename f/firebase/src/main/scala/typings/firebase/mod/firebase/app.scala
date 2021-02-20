@@ -10,13 +10,12 @@ import typings.firebase.mod.firebase.messaging.Messaging
 import typings.firebase.mod.firebase.performance.Performance
 import typings.firebase.mod.firebase.remoteConfig.RemoteConfig
 import typings.firebase.mod.firebase.storage.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firebase.app")
-@js.native
-object app extends js.Object {
+object app {
   
   /**
     * A Firebase App holds the initialization information for a collection of
@@ -27,7 +26,7 @@ object app extends js.Object {
     *
     */
   @js.native
-  trait App extends js.Object {
+  trait App extends StObject {
     
     /**
       * Gets the {@link firebase.analytics.Analytics `Analytics`} service for the

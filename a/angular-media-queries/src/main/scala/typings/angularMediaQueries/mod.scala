@@ -1,20 +1,18 @@
 package typings.angularMediaQueries
 
 import typings.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("angular", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object matchmedia extends js.Object {
+  object matchmedia {
     
     @js.native
-    trait IScreenSize extends js.Object {
+    trait IScreenSize extends StObject {
       
       def is(list: String): Boolean = js.native
       def is(list: js.Array[String]): Boolean = js.native

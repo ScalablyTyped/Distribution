@@ -1,11 +1,12 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   /**
     * Notification that trying to move a channel to another Stasis application failed.

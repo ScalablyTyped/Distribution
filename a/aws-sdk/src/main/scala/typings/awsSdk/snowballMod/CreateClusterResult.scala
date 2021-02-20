@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateClusterResult extends js.Object {
+trait CreateClusterResult extends StObject {
   
   /**
     * The automatically generated ID for a cluster.
@@ -21,24 +22,12 @@ object CreateClusterResult {
   }
   
   @scala.inline
-  implicit class CreateClusterResultOps[Self <: CreateClusterResult] (val x: Self) extends AnyVal {
+  implicit class CreateClusterResultMutableBuilder[Self <: CreateClusterResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
   }
 }

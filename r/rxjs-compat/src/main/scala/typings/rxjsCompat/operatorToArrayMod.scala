@@ -1,12 +1,13 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/toArray", JSImport.Namespace)
-@js.native
-object operatorToArrayMod extends js.Object {
+object operatorToArrayMod {
   
+  @JSImport("rxjs-compat/operator/toArray", "toArray")
+  @js.native
   def toArray[T](): js.Any = js.native
 }

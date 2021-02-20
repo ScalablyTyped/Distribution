@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMMarkerGraphic extends js.Object {
+trait CIMMarkerGraphic extends StObject {
   
   /**
     * The geometry of the marker.
@@ -39,45 +40,33 @@ object CIMMarkerGraphic {
   }
   
   @scala.inline
-  implicit class CIMMarkerGraphicOps[Self <: CIMMarkerGraphic] (val x: Self) extends AnyVal {
+  implicit class CIMMarkerGraphicMutableBuilder[Self <: CIMMarkerGraphic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometry(value: ExternalReferenceGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
     @scala.inline
-    def setGeometry(value: ExternalReferenceGeometry): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setSymbol(value: CIMSymbolType): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def setPrimitiveName(value: String): Self = this.set("primitiveName", value.asInstanceOf[js.Any])
+    def setTextString(value: String): Self = StObject.set(x, "textString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimitiveName: Self = this.set("primitiveName", js.undefined)
+    def setTextStringUndefined: Self = StObject.set(x, "textString", js.undefined)
     
     @scala.inline
-    def setSymbol(value: CIMSymbolType): Self = this.set("symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
-    
-    @scala.inline
-    def setTextString(value: String): Self = this.set("textString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextString: Self = this.set("textString", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

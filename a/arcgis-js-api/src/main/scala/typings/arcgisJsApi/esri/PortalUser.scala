@@ -9,6 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.org_publisher
 import typings.arcgisJsApi.arcgisJsApiStrings.org_user
 import typings.arcgisJsApi.arcgisJsApiStrings.public
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

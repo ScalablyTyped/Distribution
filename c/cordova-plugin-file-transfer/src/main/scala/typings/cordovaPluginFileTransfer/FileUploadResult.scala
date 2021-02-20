@@ -1,12 +1,13 @@
 package typings.cordovaPluginFileTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A FileUploadResult object is passed to the success callback of the FileTransfer object's upload() method. */
 @js.native
-trait FileUploadResult extends js.Object {
+trait FileUploadResult extends StObject {
   
   /** The number of bytes sent to the server as part of the upload. */
   var bytesSent: Double = js.native
@@ -29,30 +30,18 @@ object FileUploadResult {
   }
   
   @scala.inline
-  implicit class FileUploadResultOps[Self <: FileUploadResult] (val x: Self) extends AnyVal {
+  implicit class FileUploadResultMutableBuilder[Self <: FileUploadResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseCode(value: Double): Self = this.set("responseCode", value.asInstanceOf[js.Any])
+    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
   }
 }

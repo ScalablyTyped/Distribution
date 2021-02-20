@@ -1,5 +1,6 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.weappApi.weappApiStrings.front
   - typings.weappApi.weappApiStrings.back
 */
-trait CameraDevice extends js.Object
+trait CameraDevice extends StObject
 object CameraDevice {
   
   @scala.inline

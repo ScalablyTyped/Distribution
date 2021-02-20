@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpgradeHistoryEntry extends js.Object {
+trait UpgradeHistoryEntry extends StObject {
   
   /** The container image before this instance upgrade. */
   var containerImage: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object UpgradeHistoryEntry {
   }
   
   @scala.inline
-  implicit class UpgradeHistoryEntryOps[Self <: UpgradeHistoryEntry] (val x: Self) extends AnyVal {
+  implicit class UpgradeHistoryEntryMutableBuilder[Self <: UpgradeHistoryEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerImage(value: String): Self = this.set("containerImage", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteContainerImage: Self = this.set("containerImage", js.undefined)
+    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
     @scala.inline
-    def deleteFramework: Self = this.set("framework", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: String): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSnapshot: Self = this.set("snapshot", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVmImage(value: String): Self = this.set("vmImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmImage: Self = this.set("vmImage", js.undefined)
+    def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
   }
 }

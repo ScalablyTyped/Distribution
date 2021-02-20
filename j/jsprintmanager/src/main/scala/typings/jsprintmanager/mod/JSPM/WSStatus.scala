@@ -1,36 +1,32 @@
 package typings.jsprintmanager.mod.JSPM
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WSStatus extends js.Object
+sealed trait WSStatus extends StObject
 @JSImport("jsprintmanager", "JSPM.WSStatus")
 @js.native
-object WSStatus extends js.Object {
+object WSStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WSStatus with Double] = js.native
   
   @js.native
   sealed trait BlackListed extends WSStatus
-  /* 2 */ @js.native
-  object BlackListed extends TopLevel[BlackListed with Double]
+  /* 2 */ val BlackListed: typings.jsprintmanager.mod.JSPM.WSStatus.BlackListed with Double = js.native
   
   @js.native
   sealed trait Closed extends WSStatus
-  /* 1 */ @js.native
-  object Closed extends TopLevel[Closed with Double]
+  /* 1 */ val Closed: typings.jsprintmanager.mod.JSPM.WSStatus.Closed with Double = js.native
   
   @js.native
   sealed trait Open extends WSStatus
-  /* 0 */ @js.native
-  object Open extends TopLevel[Open with Double]
+  /* 0 */ val Open: typings.jsprintmanager.mod.JSPM.WSStatus.Open with Double = js.native
   
   @js.native
   sealed trait WaitingForUserResponse extends WSStatus
-  /* 3 */ @js.native
-  object WaitingForUserResponse extends TopLevel[WaitingForUserResponse with Double]
+  /* 3 */ val WaitingForUserResponse: typings.jsprintmanager.mod.JSPM.WSStatus.WaitingForUserResponse with Double = js.native
 }

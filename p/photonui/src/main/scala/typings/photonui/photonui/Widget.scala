@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ trait Widget extends Base {
   
   def addClass(className: String): Unit = js.native
   
-   // readonly
+  // readonly
   var contextMenu: PopupWindow = js.native
   
   var contextMenuName: String = js.native
@@ -23,17 +24,17 @@ trait Widget extends Base {
   
   var html: HTMLElement = js.native
   
-   // readonly
+  // readonly
   var layoutOptions: StringDictionary[js.Any] = js.native
   
   var name: String = js.native
   
-   // readonly
+  // readonly
   var offsetHeight: Double = js.native
   
   var offsetWidth: Double = js.native
   
-   // readonly
+  // readonly
   var parent: Widget = js.native
   
   var parentName: String = js.native
@@ -78,69 +79,57 @@ object Widget {
   }
   
   @scala.inline
-  implicit class WidgetOps[Self <: Widget] (val x: Self) extends AnyVal {
+  implicit class WidgetMutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextMenu(value: PopupWindow): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutePosition(value: X): Self = this.set("absolutePosition", value.asInstanceOf[js.Any])
+    def setContextMenuName(value: String): Self = StObject.set(x, "contextMenuName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddClass(value: String => Unit): Self = this.set("addClass", js.Any.fromFunction1(value))
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContextMenu(value: PopupWindow): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    def setHtml(value: HTMLElement): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuName(value: String): Self = this.set("contextMenuName", value.asInstanceOf[js.Any])
+    def setLayoutOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: HTMLElement): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setOffsetHeight(value: Double): Self = StObject.set(x, "offsetHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutOptions(value: StringDictionary[js.Any]): Self = this.set("layoutOptions", value.asInstanceOf[js.Any])
+    def setOffsetWidth(value: Double): Self = StObject.set(x, "offsetWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParent(value: Widget): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetHeight(value: Double): Self = this.set("offsetHeight", value.asInstanceOf[js.Any])
+    def setParentName(value: String): Self = StObject.set(x, "parentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetWidth(value: Double): Self = this.set("offsetWidth", value.asInstanceOf[js.Any])
+    def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: Widget): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParentName(value: String): Self = this.set("parentName", value.asInstanceOf[js.Any])
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveClass(value: String => Unit): Self = this.set("removeClass", js.Any.fromFunction1(value))
+    def setUnparent(value: () => Unit): Self = StObject.set(x, "unparent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnparent(value: () => Unit): Self = this.set("unparent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.webcl.webclNumbers.`0x0`
 import typings.webcl.webclNumbers.`0x1`
 import typings.webcl.webclNumbers.`0x2`
 import typings.webcl.webclNumbers.`0x3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x2`
   - typings.webcl.webclNumbers.`0x3`
 */
-trait CommandExecutionStatus extends js.Object
+trait CommandExecutionStatus extends StObject
 object CommandExecutionStatus {
   
   @scala.inline

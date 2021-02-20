@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagnosticMessage extends js.Object {
+trait DiagnosticMessage extends StObject {
   
   var category: DiagnosticCategory = js.native
   
@@ -28,42 +29,30 @@ object DiagnosticMessage {
   }
   
   @scala.inline
-  implicit class DiagnosticMessageOps[Self <: DiagnosticMessage] (val x: Self) extends AnyVal {
+  implicit class DiagnosticMessageMutableBuilder[Self <: DiagnosticMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: DiagnosticCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: java.lang.String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: DiagnosticCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setReportsDeprecated(value: js.Object): Self = StObject.set(x, "reportsDeprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: java.lang.String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setReportsDeprecatedUndefined: Self = StObject.set(x, "reportsDeprecated", js.undefined)
     
     @scala.inline
-    def setMessage(value: java.lang.String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setReportsUnnecessary(value: js.Object): Self = StObject.set(x, "reportsUnnecessary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportsDeprecated(value: js.Object): Self = this.set("reportsDeprecated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportsDeprecated: Self = this.set("reportsDeprecated", js.undefined)
-    
-    @scala.inline
-    def setReportsUnnecessary(value: js.Object): Self = this.set("reportsUnnecessary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportsUnnecessary: Self = this.set("reportsUnnecessary", js.undefined)
+    def setReportsUnnecessaryUndefined: Self = StObject.set(x, "reportsUnnecessary", js.undefined)
   }
 }

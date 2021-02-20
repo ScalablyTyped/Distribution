@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single symbol representation.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1Symbol extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1Symbol extends StObject {
   
   /**
     * The bounding box for the symbol. The vertices are in the order of
@@ -46,42 +47,30 @@ object SchemaGoogleCloudVisionV1p3beta1Symbol {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1SymbolOps[Self <: SchemaGoogleCloudVisionV1p3beta1Symbol] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1SymbolMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1Symbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    def setProperty(value: SchemaGoogleCloudVisionV1p3beta1TextAnnotationTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: SchemaGoogleCloudVisionV1p3beta1TextAnnotationTextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

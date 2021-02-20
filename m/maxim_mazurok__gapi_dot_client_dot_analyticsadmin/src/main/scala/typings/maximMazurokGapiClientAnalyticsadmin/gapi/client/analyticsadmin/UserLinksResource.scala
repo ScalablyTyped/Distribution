@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientAnalyticsadmin.anon.Oauthtoken
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PageSize
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.Parent
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserLinksResource extends js.Object {
+trait UserLinksResource extends StObject {
   
   /**
     * Lists all user links on an account or property, including implicit ones that come from effective permissions granted by groups or organization admin roles. If a returned user link

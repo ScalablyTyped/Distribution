@@ -5,13 +5,31 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.LayoutData
 import typings.openui5.sap.ui.core.Title
 import typings.openui5.sap.ui.core.Toolbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.layout.form")
-@js.native
-object form extends js.Object {
+object form {
+  
+  @js.native
+  sealed trait SimpleFormLayout extends StObject
+  /**
+    * Available <code>FormLayouts</code> used to render a <code>SimpleForm</code>.
+    */
+  @JSGlobal("sap.ui.layout.form.SimpleFormLayout")
+  @js.native
+  object SimpleFormLayout extends StObject {
+    
+    @js.native
+    sealed trait GridLayout extends SimpleFormLayout
+    
+    @js.native
+    sealed trait ResponsiveGridLayout extends SimpleFormLayout
+    
+    @js.native
+    sealed trait ResponsiveLayout extends SimpleFormLayout
+  }
   
   @js.native
   trait Form extends Control {
@@ -1636,23 +1654,5 @@ object form extends js.Object {
       * @returns Reference to <code>this</code> in order to allow method chaining
       */
     def setWidth(sWidth: js.Any): SimpleForm = js.native
-  }
-  
-  @js.native
-  sealed trait SimpleFormLayout extends js.Object
-  /**
-    * Available <code>FormLayouts</code> used to render a <code>SimpleForm</code>.
-    */
-  @js.native
-  object SimpleFormLayout extends js.Object {
-    
-    @js.native
-    sealed trait GridLayout extends SimpleFormLayout
-    
-    @js.native
-    sealed trait ResponsiveGridLayout extends SimpleFormLayout
-    
-    @js.native
-    sealed trait ResponsiveLayout extends SimpleFormLayout
   }
 }

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem extends js.Object {
+trait HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem extends StObject {
   
   var max_id: Null = js.native
   
@@ -29,33 +30,21 @@ object HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItemOps[Self <: HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItemMutableBuilder[Self <: HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParticipants(value: js.Array[HighlightsRepositoryEditReelResponseParticipantsItem]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_id(value: Null): Self = this.set("max_id", value.asInstanceOf[js.Any])
+    def setParticipantsVarargs(value: HighlightsRepositoryEditReelResponseParticipantsItem*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
     @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParticipantsVarargs(value: HighlightsRepositoryEditReelResponseParticipantsItem*): Self = this.set("participants", js.Array(value :_*))
-    
-    @scala.inline
-    def setParticipants(value: js.Array[HighlightsRepositoryEditReelResponseParticipantsItem]): Self = this.set("participants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuiz_id(value: String): Self = this.set("quiz_id", value.asInstanceOf[js.Any])
+    def setQuiz_id(value: String): Self = StObject.set(x, "quiz_id", value.asInstanceOf[js.Any])
   }
 }

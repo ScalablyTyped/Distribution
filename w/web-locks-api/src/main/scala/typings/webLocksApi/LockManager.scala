@@ -1,11 +1,12 @@
 package typings.webLocksApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LockManager extends js.Object {
+trait LockManager extends StObject {
   
   def query(): js.Promise[LockManagerSnapshot] = js.native
   

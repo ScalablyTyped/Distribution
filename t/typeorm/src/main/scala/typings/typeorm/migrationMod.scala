@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.migrationInterfaceMod.MigrationInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/migration/Migration", JSImport.Namespace)
-@js.native
-object migrationMod extends js.Object {
+object migrationMod {
   
+  @JSImport("typeorm/browser/migration/Migration", "Migration")
   @js.native
-  class Migration protected () extends js.Object {
+  class Migration protected () extends StObject {
     def this(id: js.UndefOr[scala.Nothing], timestamp: Double, name: String) = this()
     def this(id: Double, timestamp: Double, name: String) = this()
     def this(id: js.UndefOr[scala.Nothing], timestamp: Double, name: String, instance: MigrationInterface) = this()

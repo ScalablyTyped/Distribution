@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,16 +52,20 @@ class PageClientAction protected () extends ClientAction {
     */
   def pagesForSpecializations: IList[PageForSpecialization] = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction")
-@js.native
-object PageClientAction extends js.Object {
+object PageClientAction {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new PageClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.create")
+  @js.native
   def create(model: IModel): PageClientAction = js.native
   
   /**
@@ -68,6 +73,9 @@ object PageClientAction extends js.Object {
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent ActionButton element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInActionButtonUnderAction")
+  @js.native
   def createInActionButtonUnderAction(container: ActionButton): PageClientAction = js.native
   
   /**
@@ -75,6 +83,9 @@ object PageClientAction extends js.Object {
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent ActionItem element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInActionItemUnderAction")
+  @js.native
   def createInActionItemUnderAction(container: ActionItem): PageClientAction = js.native
   
   /**
@@ -85,6 +96,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAssociationWidgetUnderOnChangeAction")
+  @js.native
   def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): PageClientAction = js.native
   
   /**
@@ -95,6 +109,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAttributeWidgetUnderOnChangeAction")
+  @js.native
   def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): PageClientAction = js.native
   
   /**
@@ -105,6 +122,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAttributeWidgetUnderOnEnterAction")
+  @js.native
   def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): PageClientAction = js.native
   
   /**
@@ -115,6 +135,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInAttributeWidgetUnderOnLeaveAction")
+  @js.native
   def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): PageClientAction = js.native
   
   /**
@@ -125,6 +148,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 to 8.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInBottomBarItemUnderAction")
+  @js.native
   def createInBottomBarItemUnderAction(container: BottomBarItem): PageClientAction = js.native
   
   /**
@@ -135,6 +161,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.6.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInDataViewActionButtonUnderAction")
+  @js.native
   def createInDataViewActionButtonUnderAction(container: DataViewActionButton): PageClientAction = js.native
   
   /**
@@ -145,6 +174,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.3.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInDivContainerUnderOnClickAction")
+  @js.native
   def createInDivContainerUnderOnClickAction(container: DivContainer): PageClientAction = js.native
   
   /**
@@ -155,6 +187,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.18.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInDynamicImageViewerUnderClickAction")
+  @js.native
   def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): PageClientAction = js.native
   
   /**
@@ -162,6 +197,9 @@ object PageClientAction extends js.Object {
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent GridActionButton element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInGridActionButtonUnderAction")
+  @js.native
   def createInGridActionButtonUnderAction(container: GridActionButton): PageClientAction = js.native
   
   /**
@@ -169,6 +207,9 @@ object PageClientAction extends js.Object {
     * The new PageClientAction will be automatically stored in the 'clickAction' property
     * of the parent ListView element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInListViewUnderClickAction")
+  @js.native
   def createInListViewUnderClickAction(container: ListView): PageClientAction = js.native
   
   /**
@@ -179,6 +220,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInListViewUnderPullDownAction")
+  @js.native
   def createInListViewUnderPullDownAction(container: ListView): PageClientAction = js.native
   
   /**
@@ -186,6 +230,9 @@ object PageClientAction extends js.Object {
     * The new PageClientAction will be automatically stored in the 'action' property
     * of the parent menus.MenuItem element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInMenuItemUnderAction")
+  @js.native
   def createInMenuItemUnderAction(container: MenuItem): PageClientAction = js.native
   
   /**
@@ -196,6 +243,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+  @js.native
   def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): PageClientAction = js.native
   
   /**
@@ -203,6 +253,9 @@ object PageClientAction extends js.Object {
     * The new PageClientAction will be automatically stored in the 'clickAction' property
     * of the parent StaticImageViewer element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInStaticImageViewerUnderClickAction")
+  @js.native
   def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): PageClientAction = js.native
   
   /**
@@ -213,6 +266,9 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.7.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInTextBoxUnderOnEnterKeyPressAction")
+  @js.native
   def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): PageClientAction = js.native
   
   /**
@@ -223,9 +279,22 @@ object PageClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.19.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.createInWidgetValueUnderAction")
+  @js.native
   def createInWidgetValueUnderAction(container: WidgetValue): PageClientAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageClientAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

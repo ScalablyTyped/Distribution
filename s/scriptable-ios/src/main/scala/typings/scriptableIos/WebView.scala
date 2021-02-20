@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/webview/#-new-webview
   */
 @js.native
-trait WebView extends js.Object {
+trait WebView extends StObject {
   
   /**
     * _Evaluates JavaScript in the web view._

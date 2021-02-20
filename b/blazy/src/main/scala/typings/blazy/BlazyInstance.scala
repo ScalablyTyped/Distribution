@@ -4,12 +4,13 @@ import typings.std.Element
 import typings.std.HTMLCollection
 import typings.std.HTMLElement
 import typings.std.NodeList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlazyInstance extends js.Object {
+trait BlazyInstance extends StObject {
   
   /**
     * Unbind events and resets image array.

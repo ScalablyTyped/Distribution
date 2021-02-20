@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceGoalBidStrategy extends js.Object {
+trait PerformanceGoalBidStrategy extends StObject {
   
   /** The ID of the Custom Bidding Algorithm used by this strategy. Only applicable when performance_goal_type is set to `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CUSTOM_ALGO`. */
   var customBiddingAlgorithmId: js.UndefOr[String] = js.native
@@ -44,42 +45,30 @@ object PerformanceGoalBidStrategy {
   }
   
   @scala.inline
-  implicit class PerformanceGoalBidStrategyOps[Self <: PerformanceGoalBidStrategy] (val x: Self) extends AnyVal {
+  implicit class PerformanceGoalBidStrategyMutableBuilder[Self <: PerformanceGoalBidStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomBiddingAlgorithmIdUndefined: Self = StObject.set(x, "customBiddingAlgorithmId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAverageCpmBidAmountMicros(value: String): Self = StObject.set(x, "maxAverageCpmBidAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomBiddingAlgorithmId(value: String): Self = this.set("customBiddingAlgorithmId", value.asInstanceOf[js.Any])
+    def setMaxAverageCpmBidAmountMicrosUndefined: Self = StObject.set(x, "maxAverageCpmBidAmountMicros", js.undefined)
     
     @scala.inline
-    def deleteCustomBiddingAlgorithmId: Self = this.set("customBiddingAlgorithmId", js.undefined)
+    def setPerformanceGoalAmountMicros(value: String): Self = StObject.set(x, "performanceGoalAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAverageCpmBidAmountMicros(value: String): Self = this.set("maxAverageCpmBidAmountMicros", value.asInstanceOf[js.Any])
+    def setPerformanceGoalAmountMicrosUndefined: Self = StObject.set(x, "performanceGoalAmountMicros", js.undefined)
     
     @scala.inline
-    def deleteMaxAverageCpmBidAmountMicros: Self = this.set("maxAverageCpmBidAmountMicros", js.undefined)
+    def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceGoalAmountMicros(value: String): Self = this.set("performanceGoalAmountMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceGoalAmountMicros: Self = this.set("performanceGoalAmountMicros", js.undefined)
-    
-    @scala.inline
-    def setPerformanceGoalType(value: String): Self = this.set("performanceGoalType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceGoalType: Self = this.set("performanceGoalType", js.undefined)
+    def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
   }
 }

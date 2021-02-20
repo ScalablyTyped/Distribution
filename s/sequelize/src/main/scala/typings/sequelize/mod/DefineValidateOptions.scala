@@ -14,6 +14,7 @@ import typings.sequelize.sequelizeNumbers.`4`
 import typings.sequelize.sequelizeNumbers.`5`
 import typings.sequelize.sequelizeStrings.all
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -219,227 +220,215 @@ object DefineValidateOptions {
   }
   
   @scala.inline
-  implicit class DefineValidateOptionsOps[Self <: DefineValidateOptions] (val x: Self) extends AnyVal {
+  implicit class DefineValidateOptionsMutableBuilder[Self <: DefineValidateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: String | MsgString): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEquals_(value: String | MsgString): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: String | MsgString): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setIs(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: String | MsgString): Self = this.set("equals", value.asInstanceOf[js.Any])
+    def setIsAfter(value: String | ArgsString): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
     
     @scala.inline
-    def setIsVarargs(value: (String | RegExp)*): Self = this.set("is", js.Array(value :_*))
+    def setIsAlpha(value: Boolean | MsgString): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = this.set("is", value.asInstanceOf[js.Any])
+    def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
     
     @scala.inline
-    def deleteIs: Self = this.set("is", js.undefined)
+    def setIsAlphanumeric(value: Boolean | MsgString): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAfter(value: String | ArgsString): Self = this.set("isAfter", value.asInstanceOf[js.Any])
+    def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
     
     @scala.inline
-    def deleteIsAfter: Self = this.set("isAfter", js.undefined)
+    def setIsArray(value: Boolean | ArgsBoolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAlpha(value: Boolean | MsgString): Self = this.set("isAlpha", value.asInstanceOf[js.Any])
+    def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
     
     @scala.inline
-    def deleteIsAlpha: Self = this.set("isAlpha", js.undefined)
+    def setIsBefore(value: String | ArgsString): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAlphanumeric(value: Boolean | MsgString): Self = this.set("isAlphanumeric", value.asInstanceOf[js.Any])
+    def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
     
     @scala.inline
-    def deleteIsAlphanumeric: Self = this.set("isAlphanumeric", js.undefined)
+    def setIsCreditCard(value: Boolean | ArgsBoolean): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsArray(value: Boolean | ArgsBoolean): Self = this.set("isArray", value.asInstanceOf[js.Any])
+    def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
     
     @scala.inline
-    def deleteIsArray: Self = this.set("isArray", js.undefined)
+    def setIsDate(value: Boolean | ArgsBoolean): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBefore(value: String | ArgsString): Self = this.set("isBefore", value.asInstanceOf[js.Any])
+    def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
     
     @scala.inline
-    def deleteIsBefore: Self = this.set("isBefore", js.undefined)
+    def setIsDecimal(value: Boolean | MsgString): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCreditCard(value: Boolean | ArgsBoolean): Self = this.set("isCreditCard", value.asInstanceOf[js.Any])
+    def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
     
     @scala.inline
-    def deleteIsCreditCard: Self = this.set("isCreditCard", js.undefined)
+    def setIsEmail(value: Boolean | MsgString): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDate(value: Boolean | ArgsBoolean): Self = this.set("isDate", value.asInstanceOf[js.Any])
+    def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
     
     @scala.inline
-    def deleteIsDate: Self = this.set("isDate", js.undefined)
+    def setIsFloat(value: Boolean | MsgString): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDecimal(value: Boolean | MsgString): Self = this.set("isDecimal", value.asInstanceOf[js.Any])
+    def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
     
     @scala.inline
-    def deleteIsDecimal: Self = this.set("isDecimal", js.undefined)
+    def setIsIP(value: Boolean | MsgString): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmail(value: Boolean | MsgString): Self = this.set("isEmail", value.asInstanceOf[js.Any])
+    def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
     
     @scala.inline
-    def deleteIsEmail: Self = this.set("isEmail", js.undefined)
+    def setIsIPv4(value: Boolean | MsgString): Self = StObject.set(x, "isIPv4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFloat(value: Boolean | MsgString): Self = this.set("isFloat", value.asInstanceOf[js.Any])
+    def setIsIPv4Undefined: Self = StObject.set(x, "isIPv4", js.undefined)
     
     @scala.inline
-    def deleteIsFloat: Self = this.set("isFloat", js.undefined)
+    def setIsIPv6(value: Boolean | MsgString): Self = StObject.set(x, "isIPv6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIP(value: Boolean | MsgString): Self = this.set("isIP", value.asInstanceOf[js.Any])
+    def setIsIPv6Undefined: Self = StObject.set(x, "isIPv6", js.undefined)
     
     @scala.inline
-    def deleteIsIP: Self = this.set("isIP", js.undefined)
+    def setIsIn(value: js.Array[js.Array[String]] | ArgsMsg): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIPv4(value: Boolean | MsgString): Self = this.set("isIPv4", value.asInstanceOf[js.Any])
+    def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
     
     @scala.inline
-    def deleteIsIPv4: Self = this.set("isIPv4", js.undefined)
+    def setIsInVarargs(value: js.Array[String]*): Self = StObject.set(x, "isIn", js.Array(value :_*))
     
     @scala.inline
-    def setIsIPv6(value: Boolean | MsgString): Self = this.set("isIPv6", value.asInstanceOf[js.Any])
+    def setIsInt(value: Boolean | MsgString): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsIPv6: Self = this.set("isIPv6", js.undefined)
+    def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
     
     @scala.inline
-    def setIsInVarargs(value: js.Array[String]*): Self = this.set("isIn", js.Array(value :_*))
+    def setIsLowercase(value: Boolean | MsgString): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIn(value: js.Array[js.Array[String]] | ArgsMsg): Self = this.set("isIn", value.asInstanceOf[js.Any])
+    def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
     
     @scala.inline
-    def deleteIsIn: Self = this.set("isIn", js.undefined)
+    def setIsNull(value: Boolean | MsgString): Self = StObject.set(x, "isNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInt(value: Boolean | MsgString): Self = this.set("isInt", value.asInstanceOf[js.Any])
+    def setIsNullUndefined: Self = StObject.set(x, "isNull", js.undefined)
     
     @scala.inline
-    def deleteIsInt: Self = this.set("isInt", js.undefined)
+    def setIsNumeric(value: Boolean | MsgString): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLowercase(value: Boolean | MsgString): Self = this.set("isLowercase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsLowercase: Self = this.set("isLowercase", js.undefined)
-    
-    @scala.inline
-    def setIsNull(value: Boolean | MsgString): Self = this.set("isNull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsNull: Self = this.set("isNull", js.undefined)
-    
-    @scala.inline
-    def setIsNumeric(value: Boolean | MsgString): Self = this.set("isNumeric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsNumeric: Self = this.set("isNumeric", js.undefined)
+    def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
     
     @scala.inline
     def setIsUUID(
       value: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber
-    ): Self = this.set("isUUID", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsUUID: Self = this.set("isUUID", js.undefined)
+    def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
     
     @scala.inline
-    def setIsUppercase(value: Boolean | MsgString): Self = this.set("isUppercase", value.asInstanceOf[js.Any])
+    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
     @scala.inline
-    def deleteIsUppercase: Self = this.set("isUppercase", js.undefined)
+    def setIsUppercase(value: Boolean | MsgString): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUrl(value: Boolean | MsgString): Self = this.set("isUrl", value.asInstanceOf[js.Any])
+    def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
     
     @scala.inline
-    def deleteIsUrl: Self = this.set("isUrl", js.undefined)
+    def setIsUrl(value: Boolean | MsgString): Self = StObject.set(x, "isUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLen(value: (js.Tuple2[Double, Double]) | `1`): Self = this.set("len", value.asInstanceOf[js.Any])
+    def setIsUrlUndefined: Self = StObject.set(x, "isUrl", js.undefined)
     
     @scala.inline
-    def deleteLen: Self = this.set("len", js.undefined)
+    def setIsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "is", js.Array(value :_*))
     
     @scala.inline
-    def setMax(value: Double | ArgsNumber): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setLen(value: (js.Tuple2[Double, Double]) | `1`): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
     
     @scala.inline
-    def setMin(value: Double | ArgsNumber): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMax(value: Double | ArgsNumber): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setNotVarargs(value: (String | RegExp)*): Self = this.set("not", js.Array(value :_*))
+    def setMin(value: Double | ArgsNumber): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNot(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = this.set("not", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteNot: Self = this.set("not", js.undefined)
+    def setNot(value: String | (js.Array[String | RegExp]) | RegExp | Args): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotContainsVarargs(value: String*): Self = this.set("notContains", js.Array(value :_*))
+    def setNotContains(value: js.Array[String] | String | ArgsMsgString): Self = StObject.set(x, "notContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotContains(value: js.Array[String] | String | ArgsMsgString): Self = this.set("notContains", value.asInstanceOf[js.Any])
+    def setNotContainsUndefined: Self = StObject.set(x, "notContains", js.undefined)
     
     @scala.inline
-    def deleteNotContains: Self = this.set("notContains", js.undefined)
+    def setNotContainsVarargs(value: String*): Self = StObject.set(x, "notContains", js.Array(value :_*))
     
     @scala.inline
-    def setNotEmpty(value: Boolean | MsgString): Self = this.set("notEmpty", value.asInstanceOf[js.Any])
+    def setNotEmpty(value: Boolean | MsgString): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotEmpty: Self = this.set("notEmpty", js.undefined)
+    def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
     
     @scala.inline
-    def setNotInVarargs(value: js.Array[String]*): Self = this.set("notIn", js.Array(value :_*))
+    def setNotIn(value: js.Array[js.Array[String]] | ArgsMsg): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotIn(value: js.Array[js.Array[String]] | ArgsMsg): Self = this.set("notIn", value.asInstanceOf[js.Any])
+    def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
     @scala.inline
-    def deleteNotIn: Self = this.set("notIn", js.undefined)
+    def setNotInVarargs(value: js.Array[String]*): Self = StObject.set(x, "notIn", js.Array(value :_*))
     
     @scala.inline
-    def setNotNull(value: Boolean | MsgString): Self = this.set("notNull", value.asInstanceOf[js.Any])
+    def setNotNull(value: Boolean | MsgString): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotNull: Self = this.set("notNull", js.undefined)
+    def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+    
+    @scala.inline
+    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+    
+    @scala.inline
+    def setNotVarargs(value: (String | RegExp)*): Self = StObject.set(x, "not", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Collection")
 @js.native
-class Collection[T] protected () extends js.Object {
+class Collection[T] protected () extends StObject {
   /**
     * A Collection for a specified type.
     * @param type The function that specifies the type.

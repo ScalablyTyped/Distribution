@@ -1,6 +1,7 @@
 package typings.nodeRsa.mod
 
 import typings.nodeRsa.nodeRsaStrings.pkcs1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object AdvancedSigningSchemePKCS1 {
   }
   
   @scala.inline
-  implicit class AdvancedSigningSchemePKCS1Ops[Self <: AdvancedSigningSchemePKCS1] (val x: Self) extends AnyVal {
+  implicit class AdvancedSigningSchemePKCS1MutableBuilder[Self <: AdvancedSigningSchemePKCS1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHash(value: HashingAlgorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheme(value: pkcs1): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setScheme(value: pkcs1): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

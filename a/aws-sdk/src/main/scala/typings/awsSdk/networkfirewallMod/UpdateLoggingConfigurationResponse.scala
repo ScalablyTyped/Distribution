@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateLoggingConfigurationResponse extends js.Object {
+trait UpdateLoggingConfigurationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the firewall.
@@ -28,36 +29,24 @@ object UpdateLoggingConfigurationResponse {
   }
   
   @scala.inline
-  implicit class UpdateLoggingConfigurationResponseOps[Self <: UpdateLoggingConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateLoggingConfigurationResponseMutableBuilder[Self <: UpdateLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = this.set("FirewallArn", value.asInstanceOf[js.Any])
+    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
     @scala.inline
-    def deleteFirewallArn: Self = this.set("FirewallArn", js.undefined)
+    def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallName(value: ResourceName): Self = this.set("FirewallName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirewallName: Self = this.set("FirewallName", js.undefined)
-    
-    @scala.inline
-    def setLoggingConfiguration(value: LoggingConfiguration): Self = this.set("LoggingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingConfiguration: Self = this.set("LoggingConfiguration", js.undefined)
+    def setLoggingConfigurationUndefined: Self = StObject.set(x, "LoggingConfiguration", js.undefined)
   }
 }

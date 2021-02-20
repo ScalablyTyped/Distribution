@@ -1,141 +1,116 @@
 package typings.kythe.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeKind extends js.Object
+sealed trait NodeKind extends StObject
 @JSImport("kythe", "NodeKind")
 @js.native
-object NodeKind extends js.Object {
+object NodeKind extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NodeKind with String] = js.native
   
   @js.native
   sealed trait ABS extends NodeKind
-  /* "abs" */ @js.native
-  object ABS extends TopLevel[ABS with String]
+  /* "abs" */ val ABS: typings.kythe.mod.NodeKind.ABS with String = js.native
   
   @js.native
   sealed trait ABSVAR extends NodeKind
-  /* "absvar" */ @js.native
-  object ABSVAR extends TopLevel[ABSVAR with String]
+  /* "absvar" */ val ABSVAR: typings.kythe.mod.NodeKind.ABSVAR with String = js.native
   
   @js.native
   sealed trait ANCHOR extends NodeKind
-  /* "anchor" */ @js.native
-  object ANCHOR extends TopLevel[ANCHOR with String]
+  /* "anchor" */ val ANCHOR: typings.kythe.mod.NodeKind.ANCHOR with String = js.native
   
   @js.native
   sealed trait CONSTANT extends NodeKind
-  /* "constant" */ @js.native
-  object CONSTANT extends TopLevel[CONSTANT with String]
+  /* "constant" */ val CONSTANT: typings.kythe.mod.NodeKind.CONSTANT with String = js.native
   
   @js.native
   sealed trait DIAGNOSTIC extends NodeKind
-  /* "diagnostic" */ @js.native
-  object DIAGNOSTIC extends TopLevel[DIAGNOSTIC with String]
+  /* "diagnostic" */ val DIAGNOSTIC: typings.kythe.mod.NodeKind.DIAGNOSTIC with String = js.native
   
   @js.native
   sealed trait DOC extends NodeKind
-  /* "doc" */ @js.native
-  object DOC extends TopLevel[DOC with String]
+  /* "doc" */ val DOC: typings.kythe.mod.NodeKind.DOC with String = js.native
   
   @js.native
   sealed trait FILE extends NodeKind
-  /* "file" */ @js.native
-  object FILE extends TopLevel[FILE with String]
+  /* "file" */ val FILE: typings.kythe.mod.NodeKind.FILE with String = js.native
   
   @js.native
   sealed trait FUNCTION extends NodeKind
-  /* "function" */ @js.native
-  object FUNCTION extends TopLevel[FUNCTION with String]
+  /* "function" */ val FUNCTION: typings.kythe.mod.NodeKind.FUNCTION with String = js.native
   
   @js.native
   sealed trait INTERFACE extends NodeKind
-  /* "interface" */ @js.native
-  object INTERFACE extends TopLevel[INTERFACE with String]
+  /* "interface" */ val INTERFACE: typings.kythe.mod.NodeKind.INTERFACE with String = js.native
   
   @js.native
   sealed trait LOOKUP extends NodeKind
-  /* "lookup" */ @js.native
-  object LOOKUP extends TopLevel[LOOKUP with String]
+  /* "lookup" */ val LOOKUP: typings.kythe.mod.NodeKind.LOOKUP with String = js.native
   
   @js.native
   sealed trait MACRO extends NodeKind
-  /* "macro" */ @js.native
-  object MACRO extends TopLevel[MACRO with String]
+  /* "macro" */ val MACRO: typings.kythe.mod.NodeKind.MACRO with String = js.native
   
   @js.native
   sealed trait META extends NodeKind
-  /* "meta" */ @js.native
-  object META extends TopLevel[META with String]
+  /* "meta" */ val META: typings.kythe.mod.NodeKind.META with String = js.native
   
   @js.native
   sealed trait NAME extends NodeKind
-  /* "name" */ @js.native
-  object NAME extends TopLevel[NAME with String]
+  /* "name" */ val NAME: typings.kythe.mod.NodeKind.NAME with String = js.native
   
   @js.native
   sealed trait PACKAGE extends NodeKind
-  /* "package" */ @js.native
-  object PACKAGE extends TopLevel[PACKAGE with String]
+  /* "package" */ val PACKAGE: typings.kythe.mod.NodeKind.PACKAGE with String = js.native
   
   @js.native
   sealed trait PROCESS extends NodeKind
-  /* "process" */ @js.native
-  object PROCESS extends TopLevel[PROCESS with String]
+  /* "process" */ val PROCESS: typings.kythe.mod.NodeKind.PROCESS with String = js.native
   
   @js.native
   sealed trait RECORD extends NodeKind
-  /* "record" */ @js.native
-  object RECORD extends TopLevel[RECORD with String]
+  /* "record" */ val RECORD: typings.kythe.mod.NodeKind.RECORD with String = js.native
   
   @js.native
   sealed trait SUM extends NodeKind
-  /* "sum" */ @js.native
-  object SUM extends TopLevel[SUM with String]
+  /* "sum" */ val SUM: typings.kythe.mod.NodeKind.SUM with String = js.native
   
   @js.native
   sealed trait SYMBOL extends NodeKind
-  /* "symbol" */ @js.native
-  object SYMBOL extends TopLevel[SYMBOL with String]
+  /* "symbol" */ val SYMBOL: typings.kythe.mod.NodeKind.SYMBOL with String = js.native
   
   @js.native
   sealed trait TALIAS extends NodeKind
-  /* "talias" */ @js.native
-  object TALIAS extends TopLevel[TALIAS with String]
+  /* "talias" */ val TALIAS: typings.kythe.mod.NodeKind.TALIAS with String = js.native
   
   @js.native
   sealed trait TAPP extends NodeKind
-  /* "tapp" */ @js.native
-  object TAPP extends TopLevel[TAPP with String]
+  /* "tapp" */ val TAPP: typings.kythe.mod.NodeKind.TAPP with String = js.native
   
   @js.native
   sealed trait TBUILTIN extends NodeKind
-  /* "tbuiltin" */ @js.native
-  object TBUILTIN extends TopLevel[TBUILTIN with String]
+  /* "tbuiltin" */ val TBUILTIN: typings.kythe.mod.NodeKind.TBUILTIN with String = js.native
   
   @js.native
   sealed trait TNOMINAL extends NodeKind
-  /* "tnominal" */ @js.native
-  object TNOMINAL extends TopLevel[TNOMINAL with String]
+  /* "tnominal" */ val TNOMINAL: typings.kythe.mod.NodeKind.TNOMINAL with String = js.native
   
   @js.native
   sealed trait TSIGMA extends NodeKind
-  /* "tsigma" */ @js.native
-  object TSIGMA extends TopLevel[TSIGMA with String]
+  /* "tsigma" */ val TSIGMA: typings.kythe.mod.NodeKind.TSIGMA with String = js.native
   
   @js.native
   sealed trait VARIABLE extends NodeKind
-  /* "variable" */ @js.native
-  object VARIABLE extends TopLevel[VARIABLE with String]
+  /* "variable" */ val VARIABLE: typings.kythe.mod.NodeKind.VARIABLE with String = js.native
   
   @js.native
   sealed trait VCS extends NodeKind
-  /* "vcs" */ @js.native
-  object VCS extends TopLevel[VCS with String]
+  /* "vcs" */ val VCS: typings.kythe.mod.NodeKind.VCS with String = js.native
 }

@@ -22,6 +22,7 @@ import typings.antvG2.antvG2Strings.theme
 import typings.antvG2.antvG2Strings.tree
 import typings.antvG2.antvG2Strings.width
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

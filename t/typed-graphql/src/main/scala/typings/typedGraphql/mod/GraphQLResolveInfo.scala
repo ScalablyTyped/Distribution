@@ -1,12 +1,13 @@
 package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphQLResolveInfo extends js.Object {
+trait GraphQLResolveInfo extends StObject {
   
   var fieldASTs: js.Array[Field] = js.native
   
@@ -45,48 +46,36 @@ object GraphQLResolveInfo {
   }
   
   @scala.inline
-  implicit class GraphQLResolveInfoOps[Self <: GraphQLResolveInfo] (val x: Self) extends AnyVal {
+  implicit class GraphQLResolveInfoMutableBuilder[Self <: GraphQLResolveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldASTs(value: js.Array[Field]): Self = StObject.set(x, "fieldASTs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldASTsVarargs(value: Field*): Self = StObject.set(x, "fieldASTs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldASTsVarargs(value: Field*): Self = this.set("fieldASTs", js.Array(value :_*))
+    def setFragments(value: StringDictionary[FragmentDefinition]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldASTs(value: js.Array[Field]): Self = this.set("fieldASTs", value.asInstanceOf[js.Any])
+    def setOperation(value: OperationDefinition): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setParentType(value: GraphQLCompositeType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragments(value: StringDictionary[FragmentDefinition]): Self = this.set("fragments", value.asInstanceOf[js.Any])
+    def setReturnType(value: GraphQLOutputType): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: OperationDefinition): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setRootValue(value: js.Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentType(value: GraphQLCompositeType): Self = this.set("parentType", value.asInstanceOf[js.Any])
+    def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnType(value: GraphQLOutputType): Self = this.set("returnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootValue(value: js.Any): Self = this.set("rootValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: GraphQLSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableValues(value: StringDictionary[js.Any]): Self = this.set("variableValues", value.asInstanceOf[js.Any])
+    def setVariableValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
   }
 }

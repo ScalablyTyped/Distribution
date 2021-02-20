@@ -1,5 +1,6 @@
 package typings.web3CoreSubscriptions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("web3-core-subscriptions", JSImport.Namespace)
 @js.native
-object web3CoreSubscriptionsRequire extends js.Object
+object web3CoreSubscriptionsRequire extends StObject

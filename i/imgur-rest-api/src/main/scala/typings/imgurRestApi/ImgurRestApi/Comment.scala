@@ -1,11 +1,12 @@
 package typings.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   var album_cover: String = js.native
   
@@ -61,69 +62,57 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbum_cover(value: String): Self = StObject.set(x, "album_cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbum_cover(value: String): Self = this.set("album_cover", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[Comment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: Comment*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setAuthor_id(value: Double): Self = this.set("author_id", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: Comment*): Self = this.set("children", js.Array(value :_*))
+    def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[Comment]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDowns(value: Double): Self = StObject.set(x, "downs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetime(value: Double): Self = this.set("datetime", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setImage_id(value: String): Self = StObject.set(x, "image_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDowns(value: Double): Self = this.set("downs", value.asInstanceOf[js.Any])
+    def setOn_album(value: Boolean): Self = StObject.set(x, "on_album", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_id(value: String): Self = this.set("image_id", value.asInstanceOf[js.Any])
+    def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_album(value: Boolean): Self = this.set("on_album", value.asInstanceOf[js.Any])
+    def setUps(value: Double): Self = StObject.set(x, "ups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent_id(value: Double): Self = this.set("parent_id", value.asInstanceOf[js.Any])
+    def setVote(value: String): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: Double): Self = this.set("points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUps(value: Double): Self = this.set("ups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVote(value: String): Self = this.set("vote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVote: Self = this.set("vote", js.undefined)
+    def setVoteUndefined: Self = StObject.set(x, "vote", js.undefined)
   }
 }

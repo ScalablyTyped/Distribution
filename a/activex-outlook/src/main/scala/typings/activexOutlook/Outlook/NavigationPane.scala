@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationPane extends js.Object {
+trait NavigationPane extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -46,45 +47,33 @@ object NavigationPane {
   }
   
   @scala.inline
-  implicit class NavigationPaneOps[Self <: NavigationPane] (val x: Self) extends AnyVal {
+  implicit class NavigationPaneMutableBuilder[Self <: NavigationPane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentModule(value: NavigationModule): Self = StObject.set(x, "CurrentModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDisplayedModuleCount(value: Double): Self = StObject.set(x, "DisplayedModuleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "IsCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentModule(value: NavigationModule): Self = this.set("CurrentModule", value.asInstanceOf[js.Any])
+    def setModules(value: NavigationModules): Self = StObject.set(x, "Modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayedModuleCount(value: Double): Self = this.set("DisplayedModuleCount", value.asInstanceOf[js.Any])
+    def setOutlookDotNavigationPane_typekey(value: NavigationPane): Self = StObject.set(x, "Outlook.NavigationPane_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCollapsed(value: Boolean): Self = this.set("IsCollapsed", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModules(value: NavigationModules): Self = this.set("Modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlookDotNavigationPane_typekey(value: NavigationPane): Self = this.set("Outlook.NavigationPane_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

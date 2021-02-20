@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,18 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Mat4 ()
   extends typings.playcanvas.pc.Mat4
-/* static members */
-@JSImport("playcanvas", "Mat4")
-@js.native
-object Mat4 extends js.Object {
+object Mat4 {
   
   /**
     * A constant matrix set to the identity.
     */
+  /* static member */
+  @JSImport("playcanvas", "Mat4.IDENTITY")
+  @js.native
   val IDENTITY: typings.playcanvas.pc.Mat4 = js.native
   
   /**
     * A constant matrix with all elements set to 0.
     */
+  /* static member */
+  @JSImport("playcanvas", "Mat4.ZERO")
+  @js.native
   val ZERO: typings.playcanvas.pc.Mat4 = js.native
 }

@@ -6,16 +6,16 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.rayMod.Ray
 import typings.babylonjs.spriteMod.Sprite
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Collisions/pickingInfo", JSImport.Namespace)
-@js.native
-object pickingInfoMod extends js.Object {
+object pickingInfoMod {
   
+  @JSImport("babylonjs/Collisions/pickingInfo", "PickingInfo")
   @js.native
-  class PickingInfo () extends js.Object {
+  class PickingInfo () extends StObject {
     
     /** @hidden */
     var _pickingUnavailable: Boolean = js.native

@@ -4,14 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ionicCore.routeInterfaceMod.NavigationHookCallback
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/route/route", JSImport.Namespace)
-@js.native
-object routeMod extends js.Object {
+object routeMod {
   
+  @JSImport("@ionic/core/dist/types/components/route/route", "Route")
   @js.native
   class Route () extends ComponentInterface {
     

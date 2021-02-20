@@ -13,12 +13,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.percent
 import typings.arcgisJsApi.arcgisJsApiStrings.ratio
 import typings.arcgisJsApi.arcgisJsApiStrings.seconds
 import typings.arcgisJsApi.arcgisJsApiStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthoringInfoVisualVariableProperties extends js.Object {
+trait AuthoringInfoVisualVariableProperties extends StObject {
   
   /**
     * If an age or timeline renderer was generated, indicates the end time of the visualization.
@@ -94,74 +95,62 @@ object AuthoringInfoVisualVariableProperties {
   }
   
   @scala.inline
-  implicit class AuthoringInfoVisualVariablePropertiesOps[Self <: AuthoringInfoVisualVariableProperties] (val x: Self) extends AnyVal {
+  implicit class AuthoringInfoVisualVariablePropertiesMutableBuilder[Self <: AuthoringInfoVisualVariableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String | Double): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setMaxSliderValue(value: Double): Self = StObject.set(x, "maxSliderValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setMaxSliderValueUndefined: Self = StObject.set(x, "maxSliderValue", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setMinSliderValue(value: Double): Self = StObject.set(x, "minSliderValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSliderValue(value: Double): Self = this.set("maxSliderValue", value.asInstanceOf[js.Any])
+    def setMinSliderValueUndefined: Self = StObject.set(x, "minSliderValue", js.undefined)
     
     @scala.inline
-    def deleteMaxSliderValue: Self = this.set("maxSliderValue", js.undefined)
+    def setStartTime(value: String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSliderValue(value: Double): Self = this.set("minSliderValue", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteMinSliderValue: Self = this.set("minSliderValue", js.undefined)
+    def setStyle(value: percent | `percent-of-total` | ratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String | Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTheme(value: `above-and-below` | `centered-on` | extremes | `high-to-low`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: percent | `percent-of-total` | ratio): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: `above-and-below` | `centered-on` | extremes | `high-to-low`): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
     def setType(
       value: typings.arcgisJsApi.arcgisJsApiStrings.color | typings.arcgisJsApi.arcgisJsApiStrings.size | typings.arcgisJsApi.arcgisJsApiStrings.opacity
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUnits(value: seconds | minutes | hours | days | months | years): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setUnits(value: seconds | minutes | hours | days | months | years): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

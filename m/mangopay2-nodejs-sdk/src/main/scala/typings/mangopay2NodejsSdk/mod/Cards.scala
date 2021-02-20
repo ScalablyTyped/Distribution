@@ -4,13 +4,14 @@ import typings.mangopay2NodejsSdk.mod.card.CardData
 import typings.mangopay2NodejsSdk.mod.card.UpdateCard
 import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.CardPreAuthorizationData
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Cards")
 @js.native
-class Cards () extends js.Object {
+class Cards () extends StObject {
   
   /**
     * Get card

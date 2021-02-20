@@ -2,12 +2,13 @@ package typings.orientjs.mod
 
 import typings.orientjs.anon.Max
 import typings.orientjs.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrientDBClientConfig extends js.Object {
+trait OrientDBClientConfig extends StObject {
   
   var host: js.UndefOr[String] = js.native
   
@@ -30,57 +31,45 @@ object OrientDBClientConfig {
   }
   
   @scala.inline
-  implicit class OrientDBClientConfigOps[Self <: OrientDBClientConfig] (val x: Self) extends AnyVal {
+  implicit class OrientDBClientConfigMutableBuilder[Self <: OrientDBClientConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPool(value: Max): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: js.Any): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: Max): Self = this.set("pool", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePool: Self = this.set("pool", js.undefined)
+    def setServers(value: js.Array[OServerConfig]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setServersVarargs(value: OServerConfig*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
     @scala.inline
-    def setServersVarargs(value: OServerConfig*): Self = this.set("servers", js.Array(value :_*))
+    def setSubscribePool(value: `0`): Self = StObject.set(x, "subscribePool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServers(value: js.Array[OServerConfig]): Self = this.set("servers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServers: Self = this.set("servers", js.undefined)
-    
-    @scala.inline
-    def setSubscribePool(value: `0`): Self = this.set("subscribePool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribePool: Self = this.set("subscribePool", js.undefined)
+    def setSubscribePoolUndefined: Self = StObject.set(x, "subscribePool", js.undefined)
   }
 }

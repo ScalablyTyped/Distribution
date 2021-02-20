@@ -1,5 +1,6 @@
 package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A description of a label.
   */
 @js.native
-trait SchemaLabelDescriptor extends js.Object {
+trait SchemaLabelDescriptor extends StObject {
   
   /**
     * A human-readable description for the label.
@@ -34,36 +35,24 @@ object SchemaLabelDescriptor {
   }
   
   @scala.inline
-  implicit class SchemaLabelDescriptorOps[Self <: SchemaLabelDescriptor] (val x: Self) extends AnyVal {
+  implicit class SchemaLabelDescriptorMutableBuilder[Self <: SchemaLabelDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueType: Self = this.set("valueType", js.undefined)
+    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

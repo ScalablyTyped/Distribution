@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetContainerServiceMetricDataRequest extends js.Object {
+trait GetContainerServiceMetricDataRequest extends StObject {
   
   /**
     * The end time of the time period.
@@ -53,39 +54,27 @@ object GetContainerServiceMetricDataRequest {
   }
   
   @scala.inline
-  implicit class GetContainerServiceMetricDataRequestOps[Self <: GetContainerServiceMetricDataRequest] (val x: Self) extends AnyVal {
+  implicit class GetContainerServiceMetricDataRequestMutableBuilder[Self <: GetContainerServiceMetricDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricName(value: ContainerServiceMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: IsoDate): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: ContainerServiceMetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: MetricPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setStatistics(value: MetricStatisticList): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: IsoDate): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatisticsVarargs(value: MetricStatistic*): Self = this.set("statistics", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatistics(value: MetricStatisticList): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
   }
 }

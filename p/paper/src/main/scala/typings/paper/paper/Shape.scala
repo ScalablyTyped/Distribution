@@ -1,5 +1,6 @@
 package typings.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,9 +40,7 @@ trait Shape extends Item {
     */
   var `type`: String = js.native
 }
-@JSGlobal("paper.Shape")
-@js.native
-object Shape extends js.Object {
+object Shape {
   
   type Circle = Shape
   

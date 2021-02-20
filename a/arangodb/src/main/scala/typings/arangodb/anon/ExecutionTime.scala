@@ -1,11 +1,12 @@
 package typings.arangodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionTime extends js.Object {
+trait ExecutionTime extends StObject {
   
   var executionTime: Double = js.native
   
@@ -41,42 +42,30 @@ object ExecutionTime {
   }
   
   @scala.inline
-  implicit class ExecutionTimeOps[Self <: ExecutionTime] (val x: Self) extends AnyVal {
+  implicit class ExecutionTimeMutableBuilder[Self <: ExecutionTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionTime(value: Double): Self = StObject.set(x, "executionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltered(value: Double): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullCount(value: Double): Self = StObject.set(x, "fullCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTime(value: Double): Self = this.set("executionTime", value.asInstanceOf[js.Any])
+    def setHttpRequests(value: Double): Self = StObject.set(x, "httpRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltered(value: Double): Self = this.set("filtered", value.asInstanceOf[js.Any])
+    def setScannedFull(value: Double): Self = StObject.set(x, "scannedFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullCount(value: Double): Self = this.set("fullCount", value.asInstanceOf[js.Any])
+    def setScannedIndex(value: Double): Self = StObject.set(x, "scannedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequests(value: Double): Self = this.set("httpRequests", value.asInstanceOf[js.Any])
+    def setWritesExecuted(value: Double): Self = StObject.set(x, "writesExecuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScannedFull(value: Double): Self = this.set("scannedFull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScannedIndex(value: Double): Self = this.set("scannedIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritesExecuted(value: Double): Self = this.set("writesExecuted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritesIgnored(value: Double): Self = this.set("writesIgnored", value.asInstanceOf[js.Any])
+    def setWritesIgnored(value: Double): Self = StObject.set(x, "writesIgnored", value.asInstanceOf[js.Any])
   }
 }

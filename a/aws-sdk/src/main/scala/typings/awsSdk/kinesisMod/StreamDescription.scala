@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamDescription extends js.Object {
+trait StreamDescription extends StObject {
   
   /**
     * The server-side encryption type used on the stream. This parameter can be one of the following values:    NONE: Do not encrypt the records in the stream.    KMS: Use server-side encryption on the records in the stream using a customer-managed AWS KMS key.  
@@ -75,60 +76,48 @@ object StreamDescription {
   }
   
   @scala.inline
-  implicit class StreamDescriptionOps[Self <: StreamDescription] (val x: Self) extends AnyVal {
+  implicit class StreamDescriptionMutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnhancedMonitoring(value: EnhancedMonitoringList): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = this.set("EnhancedMonitoring", js.Array(value :_*))
+    def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
     
     @scala.inline
-    def setEnhancedMonitoring(value: EnhancedMonitoringList): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    def setHasMoreShards(value: BooleanObject): Self = StObject.set(x, "HasMoreShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMoreShards(value: BooleanObject): Self = this.set("HasMoreShards", value.asInstanceOf[js.Any])
+    def setKeyId(value: KeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionPeriodHours(value: RetentionPeriodHours): Self = this.set("RetentionPeriodHours", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def setShardsVarargs(value: Shard*): Self = this.set("Shards", js.Array(value :_*))
+    def setRetentionPeriodHours(value: RetentionPeriodHours): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShards(value: ShardList): Self = this.set("Shards", value.asInstanceOf[js.Any])
+    def setShards(value: ShardList): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamARN(value: StreamARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
     
     @scala.inline
-    def setStreamCreationTimestamp(value: Timestamp): Self = this.set("StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    def setStreamCreationTimestamp(value: Timestamp): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamStatus(value: StreamStatus): Self = this.set("StreamStatus", value.asInstanceOf[js.Any])
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
-    
-    @scala.inline
-    def setKeyId(value: KeyId): Self = this.set("KeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setStreamStatus(value: StreamStatus): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
   }
 }

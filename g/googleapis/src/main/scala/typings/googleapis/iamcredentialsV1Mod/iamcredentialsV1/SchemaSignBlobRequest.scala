@@ -1,11 +1,12 @@
 package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSignBlobRequest extends js.Object {
+trait SchemaSignBlobRequest extends StObject {
   
   /**
     * The sequence of service accounts in a delegation chain. Each service
@@ -34,33 +35,21 @@ object SchemaSignBlobRequest {
   }
   
   @scala.inline
-  implicit class SchemaSignBlobRequestOps[Self <: SchemaSignBlobRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSignBlobRequestMutableBuilder[Self <: SchemaSignBlobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
     
     @scala.inline
-    def setDelegatesVarargs(value: String*): Self = this.set("delegates", js.Array(value :_*))
+    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegates(value: js.Array[String]): Self = this.set("delegates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelegates: Self = this.set("delegates", js.undefined)
-    
-    @scala.inline
-    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

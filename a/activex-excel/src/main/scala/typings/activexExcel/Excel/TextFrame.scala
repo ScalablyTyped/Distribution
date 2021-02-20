@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.activexOffice.Office.MsoTextOrientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextFrame extends js.Object {
+trait TextFrame extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   

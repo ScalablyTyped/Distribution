@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkImageFilterFactory extends js.Object {
+trait SkImageFilterFactory extends StObject {
   
   /**
     * Create a filter that blurs its input by the separate X and Y sigmas. The provided tile mode

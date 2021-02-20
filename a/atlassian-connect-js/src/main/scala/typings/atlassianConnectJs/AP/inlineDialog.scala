@@ -1,5 +1,6 @@
 package typings.atlassianConnectJs.AP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Inline dialogs can be shown via a web item target.
   */
-@JSGlobal("AP.inlineDialog")
-@js.native
-object inlineDialog extends js.Object
+object inlineDialog

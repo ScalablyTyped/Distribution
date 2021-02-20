@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadialGradientColorObject extends js.Object {
+trait RadialGradientColorObject extends StObject {
   
   /**
     * Center horizontal position relative to the shape. Float ranges 0-1.
@@ -31,27 +32,15 @@ object RadialGradientColorObject {
   }
   
   @scala.inline
-  implicit class RadialGradientColorObjectOps[Self <: RadialGradientColorObject] (val x: Self) extends AnyVal {
+  implicit class RadialGradientColorObjectMutableBuilder[Self <: RadialGradientColorObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCx(value: Double): Self = this.set("cx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCy(value: Double): Self = this.set("cy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.jqueryTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePickerHour extends js.Object {
+trait TimePickerHour extends StObject {
   
   /** last displayed hour */
   var ends: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object TimePickerHour {
   }
   
   @scala.inline
-  implicit class TimePickerHourOps[Self <: TimePickerHour] (val x: Self) extends AnyVal {
+  implicit class TimePickerHourMutableBuilder[Self <: TimePickerHour] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnds(value: Double): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStarts(value: Double): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnds(value: Double): Self = this.set("ends", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnds: Self = this.set("ends", js.undefined)
-    
-    @scala.inline
-    def setStarts(value: Double): Self = this.set("starts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarts: Self = this.set("starts", js.undefined)
+    def setStartsUndefined: Self = StObject.set(x, "starts", js.undefined)
   }
 }

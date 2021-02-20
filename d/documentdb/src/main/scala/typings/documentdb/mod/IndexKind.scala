@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.documentdb.documentdbStrings.Range
   - typings.documentdb.documentdbStrings.Spatial
 */
-trait IndexKind extends js.Object
+trait IndexKind extends StObject
 object IndexKind {
   
   @scala.inline

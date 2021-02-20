@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object XClassifiedObject {
   }
   
   @scala.inline
-  implicit class XClassifiedObjectOps[Self <: XClassifiedObject] (val x: Self) extends AnyVal {
+  implicit class XClassifiedObjectMutableBuilder[Self <: XClassifiedObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassID(value: SafeArray[Double]): Self = StObject.set(x, "ClassID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetClassID(value: () => SafeArray[Double]): Self = StObject.set(x, "getClassID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClassID(value: SafeArray[Double]): Self = this.set("ClassID", value.asInstanceOf[js.Any])
+    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("ClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetClassID(value: () => SafeArray[Double]): Self = this.set("getClassID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetClassName(value: () => String): Self = this.set("getClassName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetClassInfo(value: (SeqEquiv[Double], String) => Unit): Self = this.set("setClassInfo", js.Any.fromFunction2(value))
+    def setSetClassInfo(value: (SeqEquiv[Double], String) => Unit): Self = StObject.set(x, "setClassInfo", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLocationOption extends js.Object {
+trait GetLocationOption extends StObject {
   
   /** 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度
     *
@@ -43,60 +44,48 @@ object GetLocationOption {
   }
   
   @scala.inline
-  implicit class GetLocationOptionOps[Self <: GetLocationOption] (val x: Self) extends AnyVal {
+  implicit class GetLocationOptionMutableBuilder[Self <: GetLocationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: String): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAltitude(value: String): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setHighAccuracyExpireTime(value: Double): Self = StObject.set(x, "highAccuracyExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setHighAccuracyExpireTimeUndefined: Self = StObject.set(x, "highAccuracyExpireTime", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setIsHighAccuracy(value: Boolean): Self = StObject.set(x, "isHighAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighAccuracyExpireTime(value: Double): Self = this.set("highAccuracyExpireTime", value.asInstanceOf[js.Any])
+    def setIsHighAccuracyUndefined: Self = StObject.set(x, "isHighAccuracy", js.undefined)
     
     @scala.inline
-    def deleteHighAccuracyExpireTime: Self = this.set("highAccuracyExpireTime", js.undefined)
+    def setSuccess(value: /* result */ GetLocationSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsHighAccuracy(value: Boolean): Self = this.set("isHighAccuracy", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteIsHighAccuracy: Self = this.set("isHighAccuracy", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* result */ GetLocationSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

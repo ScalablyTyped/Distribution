@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportInfo extends js.Object {
+trait ExportInfo extends StObject {
   
   /**
     * A URL for an Amazon S3 bucket where you can review the exported data. The URL is displayed only if the export succeeded.
@@ -61,54 +62,42 @@ object ExportInfo {
   }
   
   @scala.inline
-  implicit class ExportInfoOps[Self <: ExportInfo] (val x: Self) extends AnyVal {
+  implicit class ExportInfoMutableBuilder[Self <: ExportInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationsDownloadUrl(value: ConfigurationsDownloadUrl): Self = StObject.set(x, "configurationsDownloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationsDownloadUrlUndefined: Self = StObject.set(x, "configurationsDownloadUrl", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = this.set("exportId", value.asInstanceOf[js.Any])
+    def setExportRequestTime(value: ExportRequestTime): Self = StObject.set(x, "exportRequestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportRequestTime(value: ExportRequestTime): Self = this.set("exportRequestTime", value.asInstanceOf[js.Any])
+    def setExportStatus(value: ExportStatus): Self = StObject.set(x, "exportStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportStatus(value: ExportStatus): Self = this.set("exportStatus", value.asInstanceOf[js.Any])
+    def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: ExportStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
     
     @scala.inline
-    def setConfigurationsDownloadUrl(value: ConfigurationsDownloadUrl): Self = this.set("configurationsDownloadUrl", value.asInstanceOf[js.Any])
+    def setRequestedEndTime(value: TimeStamp): Self = StObject.set(x, "requestedEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigurationsDownloadUrl: Self = this.set("configurationsDownloadUrl", js.undefined)
+    def setRequestedEndTimeUndefined: Self = StObject.set(x, "requestedEndTime", js.undefined)
     
     @scala.inline
-    def setIsTruncated(value: Boolean): Self = this.set("isTruncated", value.asInstanceOf[js.Any])
+    def setRequestedStartTime(value: TimeStamp): Self = StObject.set(x, "requestedStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTruncated: Self = this.set("isTruncated", js.undefined)
+    def setRequestedStartTimeUndefined: Self = StObject.set(x, "requestedStartTime", js.undefined)
     
     @scala.inline
-    def setRequestedEndTime(value: TimeStamp): Self = this.set("requestedEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedEndTime: Self = this.set("requestedEndTime", js.undefined)
-    
-    @scala.inline
-    def setRequestedStartTime(value: TimeStamp): Self = this.set("requestedStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedStartTime: Self = this.set("requestedStartTime", js.undefined)
+    def setStatusMessage(value: ExportStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

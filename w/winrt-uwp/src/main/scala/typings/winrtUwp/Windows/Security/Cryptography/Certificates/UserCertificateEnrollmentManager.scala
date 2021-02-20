@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to certificate creation, import, and enrollment methods. */
 @js.native
-trait UserCertificateEnrollmentManager extends js.Object {
+trait UserCertificateEnrollmentManager extends StObject {
   
   /**
     * Asynchronously creates a PKCS #10 certificate request based on properties specified in a CertificateRequestProperties object.

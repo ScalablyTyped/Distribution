@@ -3,14 +3,14 @@ package typings.samchon
 import typings.samchon.invokeHistoryMod.InvokeHistory
 import typings.samchon.invokeMod.Invoke
 import typings.samchon.slaveSystemMod.SlaveSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/slave/PInvoke", JSImport.Namespace)
-@js.native
-object pinvokeMod extends js.Object {
+object pinvokeMod {
   
+  @JSImport("samchon/templates/slave/PInvoke", "PInvoke")
   @js.native
   class PInvoke protected () extends Invoke {
     /**

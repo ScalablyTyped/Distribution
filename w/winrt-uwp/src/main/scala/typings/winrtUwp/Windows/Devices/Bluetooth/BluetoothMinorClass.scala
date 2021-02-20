@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothMinorClass extends js.Object
+sealed trait BluetoothMinorClass extends StObject
 /** Indicates the Minor Class code of the device. These are interpreted in the context of the Major Class codes. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothMinorClass")
 @js.native
-object BluetoothMinorClass extends js.Object {
+object BluetoothMinorClass extends StObject {
   
   /** A camcorder. */
   @js.native

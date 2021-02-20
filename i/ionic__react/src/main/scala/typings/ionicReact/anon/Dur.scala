@@ -1,11 +1,12 @@
 package typings.ionicReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dur extends js.Object {
+trait Dur extends StObject {
   
   var dur: js.UndefOr[Double] = js.native
   
@@ -24,33 +25,21 @@ object Dur {
   }
   
   @scala.inline
-  implicit class DurOps[Self <: Dur] (val x: Self) extends AnyVal {
+  implicit class DurMutableBuilder[Self <: Dur] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurUndefined: Self = StObject.set(x, "dur", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayTo(value: typings.ionicReact.ionicReactNumbers.`0` | typings.ionicReact.ionicReactNumbers.`1`): Self = StObject.set(x, "playTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setPlayToUndefined: Self = StObject.set(x, "playTo", js.undefined)
     
     @scala.inline
-    def setDur(value: Double): Self = this.set("dur", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDur: Self = this.set("dur", js.undefined)
-    
-    @scala.inline
-    def setPlayTo(value: typings.ionicReact.ionicReactNumbers.`0` | typings.ionicReact.ionicReactNumbers.`1`): Self = this.set("playTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayTo: Self = this.set("playTo", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

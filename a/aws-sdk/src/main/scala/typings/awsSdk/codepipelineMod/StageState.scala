@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StageState extends js.Object {
+trait StageState extends StObject {
   
   /**
     * The state of the stage.
@@ -38,51 +39,39 @@ object StageState {
   }
   
   @scala.inline
-  implicit class StageStateOps[Self <: StageState] (val x: Self) extends AnyVal {
+  implicit class StageStateMutableBuilder[Self <: StageState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionStates(value: ActionStateList): Self = StObject.set(x, "actionStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionStatesUndefined: Self = StObject.set(x, "actionStates", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionStatesVarargs(value: ActionState*): Self = StObject.set(x, "actionStates", js.Array(value :_*))
     
     @scala.inline
-    def setActionStatesVarargs(value: ActionState*): Self = this.set("actionStates", js.Array(value :_*))
+    def setInboundExecution(value: StageExecution): Self = StObject.set(x, "inboundExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionStates(value: ActionStateList): Self = this.set("actionStates", value.asInstanceOf[js.Any])
+    def setInboundExecutionUndefined: Self = StObject.set(x, "inboundExecution", js.undefined)
     
     @scala.inline
-    def deleteActionStates: Self = this.set("actionStates", js.undefined)
+    def setInboundTransitionState(value: TransitionState): Self = StObject.set(x, "inboundTransitionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundExecution(value: StageExecution): Self = this.set("inboundExecution", value.asInstanceOf[js.Any])
+    def setInboundTransitionStateUndefined: Self = StObject.set(x, "inboundTransitionState", js.undefined)
     
     @scala.inline
-    def deleteInboundExecution: Self = this.set("inboundExecution", js.undefined)
+    def setLatestExecution(value: StageExecution): Self = StObject.set(x, "latestExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundTransitionState(value: TransitionState): Self = this.set("inboundTransitionState", value.asInstanceOf[js.Any])
+    def setLatestExecutionUndefined: Self = StObject.set(x, "latestExecution", js.undefined)
     
     @scala.inline
-    def deleteInboundTransitionState: Self = this.set("inboundTransitionState", js.undefined)
+    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestExecution(value: StageExecution): Self = this.set("latestExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestExecution: Self = this.set("latestExecution", js.undefined)
-    
-    @scala.inline
-    def setStageName(value: StageName): Self = this.set("stageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageName: Self = this.set("stageName", js.undefined)
+    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
   }
 }

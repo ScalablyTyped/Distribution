@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectOffsetTangentMethod extends js.Object
+sealed trait GeometricEffectOffsetTangentMethod extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectOffsetTangentMethod")
 @js.native
-object GeometricEffectOffsetTangentMethod extends js.Object {
+object GeometricEffectOffsetTangentMethod extends StObject {
   
   /**
     * BeginningOfLine - the tangent offset is applied from the beginning of the line.

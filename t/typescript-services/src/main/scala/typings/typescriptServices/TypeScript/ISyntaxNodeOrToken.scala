@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,27 +46,15 @@ object ISyntaxNodeOrToken {
   }
   
   @scala.inline
-  implicit class ISyntaxNodeOrTokenOps[Self <: ISyntaxNodeOrToken] (val x: Self) extends AnyVal {
+  implicit class ISyntaxNodeOrTokenMutableBuilder[Self <: ISyntaxNodeOrToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: ISyntaxVisitor => js.Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithLeadingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withLeadingTrivia", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccept(value: ISyntaxVisitor => js.Any): Self = this.set("accept", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithLeadingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = this.set("withLeadingTrivia", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithTrailingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = this.set("withTrailingTrivia", js.Any.fromFunction1(value))
+    def setWithTrailingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withTrailingTrivia", js.Any.fromFunction1(value))
   }
 }

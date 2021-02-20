@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Assistant output to be rendered or processed by the client. */
 @js.native
-trait MessageOutput extends js.Object {
+trait MessageOutput extends StObject {
   
   /** An array of objects describing any actions requested by the dialog node. */
   var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.native
@@ -35,66 +36,54 @@ object MessageOutput {
   }
   
   @scala.inline
-  implicit class MessageOutputOps[Self <: MessageOutput] (val x: Self) extends AnyVal {
+  implicit class MessageOutputMutableBuilder[Self <: MessageOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: DialogNodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: DialogNodeAction*): Self = this.set("actions", js.Array(value :_*))
+    def setDebug(value: MessageOutputDebug): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[DialogNodeAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: MessageOutputDebug): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setEntitiesVarargs(value: RuntimeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: RuntimeEntity*): Self = this.set("entities", js.Array(value :_*))
+    def setGeneric(value: js.Array[DialogRuntimeResponseGeneric]): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Array[RuntimeEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setGenericVarargs(value: DialogRuntimeResponseGeneric*): Self = StObject.set(x, "generic", js.Array(value :_*))
     
     @scala.inline
-    def setGenericVarargs(value: DialogRuntimeResponseGeneric*): Self = this.set("generic", js.Array(value :_*))
+    def setIntents(value: js.Array[RuntimeIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneric(value: js.Array[DialogRuntimeResponseGeneric]): Self = this.set("generic", value.asInstanceOf[js.Any])
+    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
     @scala.inline
-    def deleteGeneric: Self = this.set("generic", js.undefined)
+    def setIntentsVarargs(value: RuntimeIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
     @scala.inline
-    def setIntentsVarargs(value: RuntimeIntent*): Self = this.set("intents", js.Array(value :_*))
+    def setUser_defined(value: js.Object): Self = StObject.set(x, "user_defined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntents(value: js.Array[RuntimeIntent]): Self = this.set("intents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntents: Self = this.set("intents", js.undefined)
-    
-    @scala.inline
-    def setUser_defined(value: js.Object): Self = this.set("user_defined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_defined: Self = this.set("user_defined", js.undefined)
+    def setUser_definedUndefined: Self = StObject.set(x, "user_defined", js.undefined)
   }
 }

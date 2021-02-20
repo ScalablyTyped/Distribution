@@ -1,11 +1,12 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideEmailOutbound extends js.Object {
+trait GlideEmailOutbound extends StObject {
   
   def addAddress(`type`: String, address: String, displayName: String): Unit = js.native
   
@@ -35,36 +36,24 @@ object GlideEmailOutbound {
   }
   
   @scala.inline
-  implicit class GlideEmailOutboundOps[Self <: GlideEmailOutbound] (val x: Self) extends AnyVal {
+  implicit class GlideEmailOutboundMutableBuilder[Self <: GlideEmailOutbound] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAddress(value: (String, String, String) => Unit): Self = StObject.set(x, "addAddress", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetBody(value: String => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAddress(value: (String, String, String) => Unit): Self = this.set("addAddress", js.Any.fromFunction3(value))
+    def setSetFrom(value: String => Unit): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSubject(value: () => String): Self = this.set("getSubject", js.Any.fromFunction0(value))
+    def setSetReplyTo(value: String => Unit): Self = StObject.set(x, "setReplyTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBody(value: String => Unit): Self = this.set("setBody", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFrom(value: String => Unit): Self = this.set("setFrom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetReplyTo(value: String => Unit): Self = this.set("setReplyTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubject(value: String => Unit): Self = this.set("setSubject", js.Any.fromFunction1(value))
+    def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
   }
 }

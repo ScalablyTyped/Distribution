@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscontextmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GcpUserAccessBinding extends js.Object {
+trait GcpUserAccessBinding extends StObject {
   
   /**
     * Required. Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example:
@@ -35,39 +36,27 @@ object GcpUserAccessBinding {
   }
   
   @scala.inline
-  implicit class GcpUserAccessBindingOps[Self <: GcpUserAccessBinding] (val x: Self) extends AnyVal {
+  implicit class GcpUserAccessBindingMutableBuilder[Self <: GcpUserAccessBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
     @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = this.set("accessLevels", js.Array(value :_*))
+    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = this.set("accessLevels", value.asInstanceOf[js.Any])
+    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
     
     @scala.inline
-    def deleteAccessLevels: Self = this.set("accessLevels", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupKey(value: String): Self = this.set("groupKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupKey: Self = this.set("groupKey", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

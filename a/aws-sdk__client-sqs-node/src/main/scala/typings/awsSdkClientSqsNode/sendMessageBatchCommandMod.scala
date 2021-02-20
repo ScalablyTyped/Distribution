@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesSendMessageBatchInputMod.SendMessageBatc
 import typings.awsSdkClientSqsNode.typesSendMessageBatchOutputMod.SendMessageBatchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/SendMessageBatchCommand", JSImport.Namespace)
-@js.native
-object sendMessageBatchCommandMod extends js.Object {
+object sendMessageBatchCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/SendMessageBatchCommand", "SendMessageBatchCommand")
   @js.native
   class SendMessageBatchCommand protected () extends Command[
           InputTypesUnion, 

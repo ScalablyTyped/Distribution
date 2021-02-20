@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCompareCommitsEndpoint extends js.Object {
+trait ReposCompareCommitsEndpoint extends StObject {
   
   var base: String = js.native
   
@@ -24,30 +25,18 @@ object ReposCompareCommitsEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCompareCommitsEndpointOps[Self <: ReposCompareCommitsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCompareCommitsEndpointMutableBuilder[Self <: ReposCompareCommitsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHead(value: String): Self = this.set("head", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

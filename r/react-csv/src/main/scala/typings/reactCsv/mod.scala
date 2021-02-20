@@ -1,21 +1,19 @@
 package typings.reactCsv
 
-import typings.react.mod.Component
-import typings.reactCsv.downloadMod.DownloadPropTypes
-import typings.reactCsv.linkMod.LinkProps
+import typings.reactCsv.downloadMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-csv", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-csv", "CSVDownload")
   @js.native
-  class CSVDownload ()
-    extends Component[DownloadPropTypes, js.Object, js.Any]
+  class CSVDownload () extends default
   
+  @JSImport("react-csv", "CSVLink")
   @js.native
   class CSVLink ()
-    extends Component[LinkProps, js.Object, js.Any]
+    extends typings.reactCsv.linkMod.default
 }

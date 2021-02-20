@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Input
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SynthesizeTapGestureRequest extends js.Object {
+trait SynthesizeTapGestureRequest extends StObject {
   
   /**
     * Duration between touchdown and touchup events in ms (default: 50).
@@ -43,42 +44,30 @@ object SynthesizeTapGestureRequest {
   }
   
   @scala.inline
-  implicit class SynthesizeTapGestureRequestOps[Self <: SynthesizeTapGestureRequest] (val x: Self) extends AnyVal {
+  implicit class SynthesizeTapGestureRequestMutableBuilder[Self <: SynthesizeTapGestureRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setGestureSourceTypeUndefined: Self = StObject.set(x, "gestureSourceType", js.undefined)
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setTapCount(value: integer): Self = StObject.set(x, "tapCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: integer): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setTapCountUndefined: Self = StObject.set(x, "tapCount", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureSourceType(value: GestureSourceType): Self = this.set("gestureSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGestureSourceType: Self = this.set("gestureSourceType", js.undefined)
-    
-    @scala.inline
-    def setTapCount(value: integer): Self = this.set("tapCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapCount: Self = this.set("tapCount", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

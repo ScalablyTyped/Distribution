@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountStatusProducts extends js.Object {
+trait AccountStatusProducts extends StObject {
   
   /** The channel the data applies to. Acceptable values are: - "`local`" - "`online`" */
   var channel: js.UndefOr[String] = js.native
@@ -31,51 +32,39 @@ object AccountStatusProducts {
   }
   
   @scala.inline
-  implicit class AccountStatusProductsOps[Self <: AccountStatusProducts] (val x: Self) extends AnyVal {
+  implicit class AccountStatusProductsMutableBuilder[Self <: AccountStatusProducts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setItemLevelIssues(value: js.Array[AccountStatusItemLevelIssue]): Self = StObject.set(x, "itemLevelIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setItemLevelIssuesUndefined: Self = StObject.set(x, "itemLevelIssues", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setItemLevelIssuesVarargs(value: AccountStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value :_*))
     
     @scala.inline
-    def setItemLevelIssuesVarargs(value: AccountStatusItemLevelIssue*): Self = this.set("itemLevelIssues", js.Array(value :_*))
+    def setStatistics(value: AccountStatusStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemLevelIssues(value: js.Array[AccountStatusItemLevelIssue]): Self = this.set("itemLevelIssues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemLevelIssues: Self = this.set("itemLevelIssues", js.undefined)
-    
-    @scala.inline
-    def setStatistics(value: AccountStatusStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
   }
 }

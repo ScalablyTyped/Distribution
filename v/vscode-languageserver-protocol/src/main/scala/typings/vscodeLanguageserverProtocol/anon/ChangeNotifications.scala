@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeNotifications extends js.Object {
+trait ChangeNotifications extends StObject {
   
   /**
     * Whether the server wants to receive workspace folder
@@ -32,30 +33,18 @@ object ChangeNotifications {
   }
   
   @scala.inline
-  implicit class ChangeNotificationsOps[Self <: ChangeNotifications] (val x: Self) extends AnyVal {
+  implicit class ChangeNotificationsMutableBuilder[Self <: ChangeNotifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeNotifications(value: String | Boolean): Self = StObject.set(x, "changeNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeNotificationsUndefined: Self = StObject.set(x, "changeNotifications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeNotifications(value: String | Boolean): Self = this.set("changeNotifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeNotifications: Self = this.set("changeNotifications", js.undefined)
-    
-    @scala.inline
-    def setSupported(value: Boolean): Self = this.set("supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupported: Self = this.set("supported", js.undefined)
+    def setSupportedUndefined: Self = StObject.set(x, "supported", js.undefined)
   }
 }

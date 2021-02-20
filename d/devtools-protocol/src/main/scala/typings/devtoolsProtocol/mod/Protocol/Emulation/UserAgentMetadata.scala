@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAgentMetadata extends js.Object {
+trait UserAgentMetadata extends StObject {
   
   var architecture: String = js.native
   
@@ -38,42 +39,30 @@ object UserAgentMetadata {
   }
   
   @scala.inline
-  implicit class UserAgentMetadataOps[Self <: UserAgentMetadata] (val x: Self) extends AnyVal {
+  implicit class UserAgentMetadataMutableBuilder[Self <: UserAgentMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrands(value: js.Array[UserAgentBrandVersion]): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrandsVarargs(value: UserAgentBrandVersion*): Self = StObject.set(x, "brands", js.Array(value :_*))
     
     @scala.inline
-    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    def setFullVersion(value: String): Self = StObject.set(x, "fullVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandsVarargs(value: UserAgentBrandVersion*): Self = this.set("brands", js.Array(value :_*))
+    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrands(value: js.Array[UserAgentBrandVersion]): Self = this.set("brands", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullVersion(value: String): Self = this.set("fullVersion", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: Boolean): Self = this.set("mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
   }
 }

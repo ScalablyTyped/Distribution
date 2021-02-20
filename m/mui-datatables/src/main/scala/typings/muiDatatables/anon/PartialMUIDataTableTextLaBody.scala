@@ -1,12 +1,13 @@
 package typings.muiDatatables.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabels> */
 @js.native
-trait PartialMUIDataTableTextLaBody extends js.Object {
+trait PartialMUIDataTableTextLaBody extends StObject {
   
   var body: js.UndefOr[PartialMUIDataTableTextLa] = js.native
   
@@ -29,54 +30,42 @@ object PartialMUIDataTableTextLaBody {
   }
   
   @scala.inline
-  implicit class PartialMUIDataTableTextLaBodyOps[Self <: PartialMUIDataTableTextLaBody] (val x: Self) extends AnyVal {
+  implicit class PartialMUIDataTableTextLaBodyMutableBuilder[Self <: PartialMUIDataTableTextLaBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: PartialMUIDataTableTextLa): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: PartialMUIDataTableTextLaAll): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: PartialMUIDataTableTextLa): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setPagination(value: PartialMUIDataTableTextLaDisplayRows): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: PartialMUIDataTableTextLaAll): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setSelectedRows(value: PartialMUIDataTableTextLaDelete): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: PartialMUIDataTableTextLaDisplayRows): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("pagination", js.undefined)
+    def setToolbar(value: PartialMUIDataTableTextLaDownloadCsv): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedRows(value: PartialMUIDataTableTextLaDelete): Self = this.set("selectedRows", value.asInstanceOf[js.Any])
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteSelectedRows: Self = this.set("selectedRows", js.undefined)
+    def setViewColumns(value: PartialMUIDataTableTextLaTitle): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: PartialMUIDataTableTextLaDownloadCsv): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
-    
-    @scala.inline
-    def setViewColumns(value: PartialMUIDataTableTextLaTitle): Self = this.set("viewColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewColumns: Self = this.set("viewColumns", js.undefined)
+    def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
   }
 }

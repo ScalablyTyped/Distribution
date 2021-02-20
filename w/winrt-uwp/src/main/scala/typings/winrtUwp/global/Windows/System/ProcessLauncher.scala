@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ProcessLauncher ()
   extends typings.winrtUwp.Windows.System.ProcessLauncher
-/* static members */
-@JSGlobal("Windows.System.ProcessLauncher")
-@js.native
-object ProcessLauncher extends js.Object {
+object ProcessLauncher {
   
-  var runToCompletionAsync: js.Any = js.native
+  @JSGlobal("Windows.System.ProcessLauncher")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Windows.System.ProcessLauncher.runToCompletionAsync")
+  @js.native
+  def runToCompletionAsync: js.Any = js.native
+  @scala.inline
+  def runToCompletionAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runToCompletionAsync")(x.asInstanceOf[js.Any])
 }

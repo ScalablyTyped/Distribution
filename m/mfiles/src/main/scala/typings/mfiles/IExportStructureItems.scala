@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExportStructureItems extends js.Object {
+trait IExportStructureItems extends StObject {
   
   def Add(Index: Double, ExportStructureItem: IExportStructureItem): Unit = js.native
   

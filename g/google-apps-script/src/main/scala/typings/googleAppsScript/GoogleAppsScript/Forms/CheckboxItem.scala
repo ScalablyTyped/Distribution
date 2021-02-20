@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .showOtherOption(true);
   */
 @js.native
-trait CheckboxItem extends js.Object {
+trait CheckboxItem extends StObject {
   
   def clearValidation(): CheckboxItem = js.native
   

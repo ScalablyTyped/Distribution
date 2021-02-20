@@ -1,5 +1,6 @@
 package typings.reachRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reachRouter.reachRouterStrings.PUSH
   - typings.reachRouter.reachRouterStrings.POP
 */
-trait HistoryActionType extends js.Object
+trait HistoryActionType extends StObject
 object HistoryActionType {
   
   @scala.inline

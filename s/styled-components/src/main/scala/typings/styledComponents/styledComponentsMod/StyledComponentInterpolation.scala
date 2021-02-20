@@ -1,5 +1,6 @@
 package typings.styledComponents.styledComponentsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +22,10 @@ object StyledComponentInterpolation {
       js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
       _ | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
-  ): StyledComponentInterpolation = {
+  ): typings.styledComponents.anon.PickStyledComponentBasean = {
     val __obj = js.Dynamic.literal(withComponent = js.Any.fromFunction1(withComponent))
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StyledComponentInterpolation]
+    __obj.asInstanceOf[typings.styledComponents.anon.PickStyledComponentBasean]
   }
   
   @scala.inline
@@ -36,9 +37,9 @@ object StyledComponentInterpolation {
       js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
       scala.Nothing | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
-  ): StyledComponentInterpolation = {
+  ): typings.styledComponents.anon.PickStyledComponentBaseanDefaultProps = {
     val __obj = js.Dynamic.literal(withComponent = js.Any.fromFunction1(withComponent))
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StyledComponentInterpolation]
+    __obj.asInstanceOf[typings.styledComponents.anon.PickStyledComponentBaseanDefaultProps]
   }
 }

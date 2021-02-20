@@ -1,14 +1,14 @@
 package typings.guacamoleClient
 
 import typings.guacamoleClient.tunnelMod.Tunnel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/ChainedTunnel", JSImport.Namespace)
-@js.native
-object chainedTunnelMod extends js.Object {
+object chainedTunnelMod {
   
+  @JSImport("guacamole-client/lib/ChainedTunnel", "ChainedTunnel")
   @js.native
   class ChainedTunnel protected () extends Tunnel {
     /**

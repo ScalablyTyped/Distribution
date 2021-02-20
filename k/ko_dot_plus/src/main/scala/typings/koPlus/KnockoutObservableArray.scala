@@ -1,5 +1,6 @@
 package typings.koPlus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see https://github.com/stevegreatrex/ko.plus#properties-and-functions
 //
 @js.native
-trait KnockoutObservableArray[T] extends js.Object {
+trait KnockoutObservableArray[T] extends StObject {
   
   def setSourceKey(key: String): Unit = js.native
   
@@ -31,31 +32,19 @@ object KnockoutObservableArray {
   }
   
   @scala.inline
-  implicit class KnockoutObservableArrayOps[Self <: KnockoutObservableArray[_], T] (val x: Self with KnockoutObservableArray[T]) extends AnyVal {
+  implicit class KnockoutObservableArrayMutableBuilder[Self <: KnockoutObservableArray[_], T] (val x: Self with KnockoutObservableArray[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetSourceKey(value: String => Unit): Self = this.set("setSourceKey", js.Any.fromFunction1(value))
+    def setSetSourceKey(value: String => Unit): Self = StObject.set(x, "setSourceKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSortDescending(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("sortDescending", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSortKey(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
-    ): Self = this.set("sortKey", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
   }
 }

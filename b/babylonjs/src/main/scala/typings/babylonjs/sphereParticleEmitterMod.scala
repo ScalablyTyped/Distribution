@@ -4,14 +4,14 @@ import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.particleMod.Particle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/EmitterTypes/sphereParticleEmitter", JSImport.Namespace)
-@js.native
-object sphereParticleEmitterMod extends js.Object {
+object sphereParticleEmitterMod {
   
+  @JSImport("babylonjs/Particles/EmitterTypes/sphereParticleEmitter", "SphereDirectedParticleEmitter")
   @js.native
   /**
     * Creates a new instance SphereDirectedParticleEmitter
@@ -96,6 +96,7 @@ object sphereParticleEmitterMod extends js.Object {
     def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit = js.native
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/sphereParticleEmitter", "SphereParticleEmitter")
   @js.native
   /**
     * Creates a new instance SphereParticleEmitter

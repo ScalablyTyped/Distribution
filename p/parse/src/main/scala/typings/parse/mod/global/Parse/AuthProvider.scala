@@ -1,5 +1,6 @@
 package typings.parse.mod.global.Parse
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://parseplatform.org/Parse-SDK-JS/api/master/AuthProvider.html
   */
 @js.native
-trait AuthProvider extends js.Object {
+trait AuthProvider extends StObject {
   
   /**
     * Called when _linkWith isn't passed authData. Handle your own authentication here.
@@ -40,33 +41,21 @@ object AuthProvider {
   }
   
   @scala.inline
-  implicit class AuthProviderOps[Self <: AuthProvider] (val x: Self) extends AnyVal {
+  implicit class AuthProviderMutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticate(value: () => Unit): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeauthenticate(value: () => Unit): Self = StObject.set(x, "deauthenticate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeauthenticateUndefined: Self = StObject.set(x, "deauthenticate", js.undefined)
     
     @scala.inline
-    def setAuthenticate(value: () => Unit): Self = this.set("authenticate", js.Any.fromFunction0(value))
+    def setGetAuthType(value: () => String): Self = StObject.set(x, "getAuthType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAuthType(value: () => String): Self = this.set("getAuthType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRestoreAuthentication(value: () => Boolean): Self = this.set("restoreAuthentication", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDeauthenticate(value: () => Unit): Self = this.set("deauthenticate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteDeauthenticate: Self = this.set("deauthenticate", js.undefined)
+    def setRestoreAuthentication(value: () => Boolean): Self = StObject.set(x, "restoreAuthentication", js.Any.fromFunction0(value))
   }
 }

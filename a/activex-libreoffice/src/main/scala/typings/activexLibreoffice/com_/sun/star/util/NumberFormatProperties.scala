@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see NumberFormatter
   */
 @js.native
-trait NumberFormatProperties extends js.Object {
+trait NumberFormatProperties extends StObject {
   
   /** contains a comment regarding the number format for display to the user. */
   var Comment: String = js.native
@@ -36,30 +37,18 @@ object NumberFormatProperties {
   }
   
   @scala.inline
-  implicit class NumberFormatPropertiesOps[Self <: NumberFormatProperties] (val x: Self) extends AnyVal {
+  implicit class NumberFormatPropertiesMutableBuilder[Self <: NumberFormatProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatString(value: String): Self = StObject.set(x, "FormatString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormatString(value: String): Self = this.set("FormatString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

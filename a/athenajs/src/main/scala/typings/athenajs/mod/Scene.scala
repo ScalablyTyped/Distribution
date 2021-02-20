@@ -1,13 +1,14 @@
 package typings.athenajs.mod
 
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Scene")
 @js.native
-class Scene () extends js.Object {
+class Scene () extends StObject {
   def this(options: SceneOptions) = this()
   
   def addObject(`object`: js.Array[Drawable]): Scene = js.native

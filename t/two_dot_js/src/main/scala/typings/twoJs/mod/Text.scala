@@ -1,5 +1,6 @@
 package typings.twoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,10 +52,10 @@ class Text protected () extends Object {
   
   var weight: Double | String = js.native
 }
-/* static members */
-@JSImport("two.js", "Text")
-@js.native
-object Text extends js.Object {
+object Text {
   
+  /* static member */
+  @JSImport("two.js", "Text.MakeObservable")
+  @js.native
   def MakeObservable(obj: js.Any): js.Any = js.native
 }

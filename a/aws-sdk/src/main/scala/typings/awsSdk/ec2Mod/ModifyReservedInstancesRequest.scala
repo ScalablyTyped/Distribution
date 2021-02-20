@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyReservedInstancesRequest extends js.Object {
+trait ModifyReservedInstancesRequest extends StObject {
   
   /**
     * A unique, case-sensitive token you provide to ensure idempotency of your modification request. For more information, see Ensuring Idempotency.
@@ -34,36 +35,24 @@ object ModifyReservedInstancesRequest {
   }
   
   @scala.inline
-  implicit class ModifyReservedInstancesRequestOps[Self <: ModifyReservedInstancesRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyReservedInstancesRequestMutableBuilder[Self <: ModifyReservedInstancesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedInstancesIds(value: ReservedInstancesIdStringList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstancesIdsVarargs(value: ReservationId*): Self = this.set("ReservedInstancesIds", js.Array(value :_*))
+    def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
     
     @scala.inline
-    def setReservedInstancesIds(value: ReservedInstancesIdStringList): Self = this.set("ReservedInstancesIds", value.asInstanceOf[js.Any])
+    def setTargetConfigurations(value: ReservedInstancesConfigurationList): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetConfigurationsVarargs(value: ReservedInstancesConfiguration*): Self = this.set("TargetConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetConfigurations(value: ReservedInstancesConfigurationList): Self = this.set("TargetConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setTargetConfigurationsVarargs(value: ReservedInstancesConfiguration*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
   }
 }

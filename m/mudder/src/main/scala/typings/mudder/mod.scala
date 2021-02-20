@@ -3,24 +3,16 @@ package typings.mudder
 import typings.mudder.anon.Carry
 import typings.std.Map
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mudder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val alphabet: SymbolTable = js.native
-  
-  val base36: SymbolTable = js.native
-  
-  val base62: SymbolTable = js.native
-  
-  def longLinspace(a: js.Array[Double], b: js.Array[Double], base: Double, N: Double, M: Double): js.Array[Carry] = js.native
-  
+  @JSImport("mudder", "SymbolTable")
   @js.native
-  class SymbolTable protected () extends js.Object {
+  class SymbolTable protected () extends StObject {
     def this(symbols: String) = this()
     def this(symbols: js.Array[String]) = this()
     def this(symbols: String, map: Map[String, Double]) = this()
@@ -67,4 +59,20 @@ object mod extends js.Object {
     
     var sym2num: Map[String, Double] = js.native
   }
+  
+  @JSImport("mudder", "alphabet")
+  @js.native
+  val alphabet: SymbolTable = js.native
+  
+  @JSImport("mudder", "base36")
+  @js.native
+  val base36: SymbolTable = js.native
+  
+  @JSImport("mudder", "base62")
+  @js.native
+  val base62: SymbolTable = js.native
+  
+  @JSImport("mudder", "longLinspace")
+  @js.native
+  def longLinspace(a: js.Array[Double], b: js.Array[Double], base: Double, N: Double, M: Double): js.Array[Carry] = js.native
 }

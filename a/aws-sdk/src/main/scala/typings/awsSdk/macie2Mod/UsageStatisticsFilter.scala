@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageStatisticsFilter extends js.Object {
+trait UsageStatisticsFilter extends StObject {
   
   /**
     * The operator to use in the condition. If the value for the key property is accountId, this value must be CONTAINS. If the value for the key property is any other supported field, this value can be EQ, GT, GTE, LT, LTE, or NE.
@@ -31,39 +32,27 @@ object UsageStatisticsFilter {
   }
   
   @scala.inline
-  implicit class UsageStatisticsFilterOps[Self <: UsageStatisticsFilter] (val x: Self) extends AnyVal {
+  implicit class UsageStatisticsFilterMutableBuilder[Self <: UsageStatisticsFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparator(value: UsageStatisticsFilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: UsageStatisticsFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparator(value: UsageStatisticsFilterComparator): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteComparator: Self = this.set("comparator", js.undefined)
+    def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: UsageStatisticsFilterKey): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: string*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: listOfString): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

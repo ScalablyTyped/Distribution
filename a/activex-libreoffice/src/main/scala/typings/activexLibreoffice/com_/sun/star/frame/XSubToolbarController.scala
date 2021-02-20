@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,33 +68,21 @@ object XSubToolbarController {
   }
   
   @scala.inline
-  implicit class XSubToolbarControllerOps[Self <: XSubToolbarController] (val x: Self) extends AnyVal {
+  implicit class XSubToolbarControllerMutableBuilder[Self <: XSubToolbarController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionSelected(value: String => Unit): Self = StObject.set(x, "functionSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSubToolbarName(value: () => String): Self = StObject.set(x, "getSubToolbarName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpensSubToolbar(value: () => Boolean): Self = StObject.set(x, "opensSubToolbar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSubToolbarName(value: String): Self = this.set("SubToolbarName", value.asInstanceOf[js.Any])
+    def setSubToolbarName(value: String): Self = StObject.set(x, "SubToolbarName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionSelected(value: String => Unit): Self = this.set("functionSelected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSubToolbarName(value: () => String): Self = this.set("getSubToolbarName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpensSubToolbar(value: () => Boolean): Self = this.set("opensSubToolbar", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateImage(value: () => Unit): Self = this.set("updateImage", js.Any.fromFunction0(value))
+    def setUpdateImage(value: () => Unit): Self = StObject.set(x, "updateImage", js.Any.fromFunction0(value))
   }
 }

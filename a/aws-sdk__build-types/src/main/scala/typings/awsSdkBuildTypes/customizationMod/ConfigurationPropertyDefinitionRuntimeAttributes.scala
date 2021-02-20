@@ -1,11 +1,18 @@
 package typings.awsSdkBuildTypes.customizationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationPropertyDefinitionRuntimeAttributes extends js.Object {
+trait ConfigurationPropertyDefinitionRuntimeAttributes extends StObject {
+  
+  /**
+    * The default (if any) to use should the user not supply a value for this
+    * property.
+    */
+  var default: js.UndefOr[DefaultValue | DefaultProvider] = js.native
   
   /**
     * A string containing a valid TypeScript expression that evaluates to a
@@ -21,12 +28,6 @@ trait ConfigurationPropertyDefinitionRuntimeAttributes extends js.Object {
     */
   @JSName("apply")
   var apply: js.UndefOr[String] = js.native
-  
-  /**
-    * The default (if any) to use should the user not supply a value for this
-    * property.
-    */
-  var default: js.UndefOr[DefaultValue | DefaultProvider] = js.native
   
   /**
     * Packages that must be imported to use this configuration property.
@@ -65,48 +66,36 @@ object ConfigurationPropertyDefinitionRuntimeAttributes {
   }
   
   @scala.inline
-  implicit class ConfigurationPropertyDefinitionRuntimeAttributesOps[Self <: ConfigurationPropertyDefinitionRuntimeAttributes] (val x: Self) extends AnyVal {
+  implicit class ConfigurationPropertyDefinitionRuntimeAttributesMutableBuilder[Self <: ConfigurationPropertyDefinitionRuntimeAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: DefaultValue | DefaultProvider): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setApply(value: String): Self = this.set("apply", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def setDefault(value: DefaultValue | DefaultProvider): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setNormalize(value: String): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsVarargs(value: Import*): Self = this.set("imports", js.Array(value :_*))
+    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def setImports(value: js.Array[Import]): Self = this.set("imports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
-    
-    @scala.inline
-    def setNormalize(value: String): Self = this.set("normalize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalize: Self = this.set("normalize", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
   }
 }

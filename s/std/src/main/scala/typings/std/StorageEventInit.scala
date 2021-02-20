@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,60 +27,48 @@ object StorageEventInit {
   }
   
   @scala.inline
-  implicit class StorageEventInitOps[Self <: StorageEventInit] (val x: Self) extends AnyVal {
+  implicit class StorageEventInitMutableBuilder[Self <: StorageEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: java.lang.String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: java.lang.String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setNewValue(value: java.lang.String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setNewValueNull: Self = StObject.set(x, "newValue", null)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
     @scala.inline
-    def setNewValue(value: java.lang.String): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setOldValue(value: java.lang.String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNewValue: Self = this.set("newValue", js.undefined)
+    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
     @scala.inline
-    def setNewValueNull: Self = this.set("newValue", null)
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
     @scala.inline
-    def setOldValue(value: java.lang.String): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    def setStorageArea(value: Storage): Self = StObject.set(x, "storageArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
+    def setStorageAreaNull: Self = StObject.set(x, "storageArea", null)
     
     @scala.inline
-    def setOldValueNull: Self = this.set("oldValue", null)
+    def setStorageAreaUndefined: Self = StObject.set(x, "storageArea", js.undefined)
     
     @scala.inline
-    def setStorageArea(value: Storage): Self = this.set("storageArea", value.asInstanceOf[js.Any])
+    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStorageArea: Self = this.set("storageArea", js.undefined)
-    
-    @scala.inline
-    def setStorageAreaNull: Self = this.set("storageArea", null)
-    
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactNativeFirebase.mod.RNFirebase
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,33 +24,21 @@ object NativeError {
   }
   
   @scala.inline
-  implicit class NativeErrorOps[Self <: NativeError] (val x: Self) extends AnyVal {
+  implicit class NativeErrorMutableBuilder[Self <: NativeError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNativeErrorCode(value: String): Self = StObject.set(x, "nativeErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNativeErrorCodeUndefined: Self = StObject.set(x, "nativeErrorCode", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setNativeErrorMessage(value: String): Self = StObject.set(x, "nativeErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeErrorCode(value: String): Self = this.set("nativeErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNativeErrorCode: Self = this.set("nativeErrorCode", js.undefined)
-    
-    @scala.inline
-    def setNativeErrorMessage(value: String): Self = this.set("nativeErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNativeErrorMessage: Self = this.set("nativeErrorMessage", js.undefined)
+    def setNativeErrorMessageUndefined: Self = StObject.set(x, "nativeErrorMessage", js.undefined)
   }
 }

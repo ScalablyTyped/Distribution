@@ -2,13 +2,14 @@ package typings.browserfs.zipFSMod
 
 import typings.node.Buffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "CentralDirectory")
 @js.native
-class CentralDirectory protected () extends js.Object {
+class CentralDirectory protected () extends StObject {
   def this(zipData: Buffer, data: Buffer) = this()
   
   var _filename: js.Any = js.native

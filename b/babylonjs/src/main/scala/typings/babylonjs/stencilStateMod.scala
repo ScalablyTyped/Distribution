@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/States/stencilState", JSImport.Namespace)
-@js.native
-object stencilStateMod extends js.Object {
+object stencilStateMod {
   
+  @JSImport("babylonjs/States/stencilState", "StencilState")
   @js.native
-  class StencilState () extends js.Object {
+  class StencilState () extends StObject {
     
     var _isStencilFuncDirty: js.Any = js.native
     
@@ -68,16 +68,21 @@ object stencilStateMod extends js.Object {
     def stencilTest_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object StencilState extends js.Object {
+  object StencilState {
     
     /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will always pass. i.e. Pixels will be drawn in the order they are drawn */
+    @JSImport("babylonjs/States/stencilState", "StencilState.ALWAYS")
+    @js.native
     val ALWAYS: Double = js.native
     
     /** Passed to stencilOperation to specify that stencil value must be kept */
+    @JSImport("babylonjs/States/stencilState", "StencilState.KEEP")
+    @js.native
     val KEEP: Double = js.native
     
     /** Passed to stencilOperation to specify that stencil value must be replaced */
+    @JSImport("babylonjs/States/stencilState", "StencilState.REPLACE")
+    @js.native
     val REPLACE: Double = js.native
   }
 }

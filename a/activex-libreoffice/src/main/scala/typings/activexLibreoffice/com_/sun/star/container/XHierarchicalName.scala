@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.container
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object XHierarchicalName {
   }
   
   @scala.inline
-  implicit class XHierarchicalNameOps[Self <: XHierarchicalName] (val x: Self) extends AnyVal {
+  implicit class XHierarchicalNameMutableBuilder[Self <: XHierarchicalName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComposeHierarchicalName(value: String => String): Self = StObject.set(x, "composeHierarchicalName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHierarchicalName(value: () => String): Self = StObject.set(x, "getHierarchicalName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHierarchicalName(value: String): Self = this.set("HierarchicalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComposeHierarchicalName(value: String => String): Self = this.set("composeHierarchicalName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetHierarchicalName(value: () => String): Self = this.set("getHierarchicalName", js.Any.fromFunction0(value))
+    def setHierarchicalName(value: String): Self = StObject.set(x, "HierarchicalName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProgramOptions extends js.Object {
+trait CreateProgramOptions extends StObject {
   
   var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
   
@@ -28,57 +29,45 @@ object CreateProgramOptions {
   }
   
   @scala.inline
-  implicit class CreateProgramOptionsOps[Self <: CreateProgramOptions] (val x: Self) extends AnyVal {
+  implicit class CreateProgramOptionsMutableBuilder[Self <: CreateProgramOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigFileParsingDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "configFileParsingDiagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigFileParsingDiagnosticsUndefined: Self = StObject.set(x, "configFileParsingDiagnostics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigFileParsingDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "configFileParsingDiagnostics", js.Array(value :_*))
     
     @scala.inline
-    def setOptions(value: CompilerOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setHost(value: CompilerHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootNamesVarargs(value: java.lang.String*): Self = this.set("rootNames", js.Array(value :_*))
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setRootNames(value: js.Array[java.lang.String]): Self = this.set("rootNames", value.asInstanceOf[js.Any])
+    def setOldProgram(value: Program): Self = StObject.set(x, "oldProgram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigFileParsingDiagnosticsVarargs(value: Diagnostic*): Self = this.set("configFileParsingDiagnostics", js.Array(value :_*))
+    def setOldProgramUndefined: Self = StObject.set(x, "oldProgram", js.undefined)
     
     @scala.inline
-    def setConfigFileParsingDiagnostics(value: js.Array[Diagnostic]): Self = this.set("configFileParsingDiagnostics", value.asInstanceOf[js.Any])
+    def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigFileParsingDiagnostics: Self = this.set("configFileParsingDiagnostics", js.undefined)
+    def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: CompilerHost): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setProjectReferencesUndefined: Self = StObject.set(x, "projectReferences", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value :_*))
     
     @scala.inline
-    def setOldProgram(value: Program): Self = this.set("oldProgram", value.asInstanceOf[js.Any])
+    def setRootNames(value: js.Array[java.lang.String]): Self = StObject.set(x, "rootNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOldProgram: Self = this.set("oldProgram", js.undefined)
-    
-    @scala.inline
-    def setProjectReferencesVarargs(value: ProjectReference*): Self = this.set("projectReferences", js.Array(value :_*))
-    
-    @scala.inline
-    def setProjectReferences(value: js.Array[ProjectReference]): Self = this.set("projectReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectReferences: Self = this.set("projectReferences", js.undefined)
+    def setRootNamesVarargs(value: java.lang.String*): Self = StObject.set(x, "rootNames", js.Array(value :_*))
   }
 }

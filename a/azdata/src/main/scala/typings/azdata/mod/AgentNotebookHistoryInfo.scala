@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,33 +50,21 @@ object AgentNotebookHistoryInfo {
   }
   
   @scala.inline
-  implicit class AgentNotebookHistoryInfoOps[Self <: AgentNotebookHistoryInfo] (val x: Self) extends AnyVal {
+  implicit class AgentNotebookHistoryInfoMutableBuilder[Self <: AgentNotebookHistoryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaterializedNotebookDeleted(value: Boolean): Self = StObject.set(x, "materializedNotebookDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaterializedNotebookErrorInfo(value: String): Self = StObject.set(x, "materializedNotebookErrorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaterializedNotebookId(value: Double): Self = StObject.set(x, "materializedNotebookId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterializedNotebookDeleted(value: Boolean): Self = this.set("materializedNotebookDeleted", value.asInstanceOf[js.Any])
+    def setMaterializedNotebookName(value: String): Self = StObject.set(x, "materializedNotebookName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterializedNotebookErrorInfo(value: String): Self = this.set("materializedNotebookErrorInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterializedNotebookId(value: Double): Self = this.set("materializedNotebookId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterializedNotebookName(value: String): Self = this.set("materializedNotebookName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterializedNotebookPin(value: Boolean): Self = this.set("materializedNotebookPin", value.asInstanceOf[js.Any])
+    def setMaterializedNotebookPin(value: Boolean): Self = StObject.set(x, "materializedNotebookPin", value.asInstanceOf[js.Any])
   }
 }

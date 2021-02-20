@@ -1,12 +1,13 @@
 package typings.jstree
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStaticDefaultsCoreKeyboard extends js.Object {
+trait JSTreeStaticDefaultsCoreKeyboard extends StObject {
   
   @JSName("*")
   def Asterisk(e: Event): Unit = js.native
@@ -51,48 +52,36 @@ object JSTreeStaticDefaultsCoreKeyboard {
   }
   
   @scala.inline
-  implicit class JSTreeStaticDefaultsCoreKeyboardOps[Self <: JSTreeStaticDefaultsCoreKeyboard] (val x: Self) extends AnyVal {
+  implicit class JSTreeStaticDefaultsCoreKeyboardMutableBuilder[Self <: JSTreeStaticDefaultsCoreKeyboard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsterisk(value: Event => Unit): Self = StObject.set(x, "*", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setCtrl-space`(value: Event => Unit): Self = StObject.set(x, "ctrl-space", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDown(value: Event => Unit): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAsterisk(value: Event => Unit): Self = this.set("*", js.Any.fromFunction1(value))
+    def setEnd(value: Event => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setCtrl-space`(value: Event => Unit): Self = this.set("ctrl-space", js.Any.fromFunction1(value))
+    def setEnter(value: Event => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDown(value: Event => Unit): Self = this.set("down", js.Any.fromFunction1(value))
+    def setF2(value: Event => Unit): Self = StObject.set(x, "f2", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnd(value: Event => Unit): Self = this.set("end", js.Any.fromFunction1(value))
+    def setHome(value: Event => Unit): Self = StObject.set(x, "home", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnter(value: Event => Unit): Self = this.set("enter", js.Any.fromFunction1(value))
+    def setLeft(value: Event => Unit): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setF2(value: Event => Unit): Self = this.set("f2", js.Any.fromFunction1(value))
+    def setRight(value: Event => Unit): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHome(value: Event => Unit): Self = this.set("home", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLeft(value: Event => Unit): Self = this.set("left", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRight(value: Event => Unit): Self = this.set("right", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUp(value: Event => Unit): Self = this.set("up", js.Any.fromFunction1(value))
+    def setUp(value: Event => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
   }
 }

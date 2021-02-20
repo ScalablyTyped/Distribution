@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InstallOptions extends js.Object
+sealed trait InstallOptions extends StObject
 @JSGlobal("Windows.Security.Cryptography.Certificates.InstallOptions")
 @js.native
-object InstallOptions extends js.Object {
+object InstallOptions extends StObject {
   
   @js.native
   sealed trait deleteExpired extends InstallOptions

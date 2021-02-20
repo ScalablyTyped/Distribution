@@ -1,12 +1,13 @@
 package typings.ariClient.anon
 
 import typings.ariClient.mod.Containers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Body extends js.Object {
+trait Body extends StObject {
   
   var body: js.UndefOr[String] = js.native
   
@@ -25,36 +26,24 @@ object Body {
   }
   
   @scala.inline
-  implicit class BodyOps[Self <: Body] (val x: Self) extends AnyVal {
+  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
-    
-    @scala.inline
-    def setVariables(value: Containers): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

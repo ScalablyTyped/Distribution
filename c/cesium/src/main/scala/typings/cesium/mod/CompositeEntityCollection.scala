@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CompositeEntityCollection")
 @js.native
-class CompositeEntityCollection () extends js.Object {
+class CompositeEntityCollection () extends StObject {
   def this(collections: js.Array[EntityCollection]) = this()
   
   def addCollection(collection: EntityCollection): Unit = js.native

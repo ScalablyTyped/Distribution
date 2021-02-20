@@ -1,6 +1,7 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Password
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,78 +34,66 @@ object UrlDefinition {
   }
   
   @scala.inline
-  implicit class UrlDefinitionOps[Self <: UrlDefinition] (val x: Self) extends AnyVal {
+  implicit class UrlDefinitionMutableBuilder[Self <: UrlDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: Password): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setHost(value: js.Array[String] | String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setHostVarargs(value: String*): Self = StObject.set(x, "host", js.Array(value :_*))
     
     @scala.inline
-    def setHostVarargs(value: String*): Self = this.set("host", js.Array(value :_*))
+    def setPath(value: js.Array[String] | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: js.Array[String] | String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setPathVarargs(value: String*): Self = this.set("path", js.Array(value :_*))
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[String] | String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setQuery(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setQueryVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "query", js.Array(value :_*))
     
     @scala.inline
-    def setQueryVarargs(value: QueryParamDefinition*): Self = this.set("query", js.Array(value :_*))
+    def setVariable(value: js.Array[VariableDefinition]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setVariableVarargs(value: VariableDefinition*): Self = this.set("variable", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariable(value: js.Array[VariableDefinition]): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def setVariableVarargs(value: VariableDefinition*): Self = StObject.set(x, "variable", js.Array(value :_*))
   }
 }

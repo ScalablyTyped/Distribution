@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProjectRequest extends js.Object {
+trait UpdateProjectRequest extends StObject {
   
   /**
     * The name of the project to be updated.
@@ -28,30 +29,18 @@ object UpdateProjectRequest {
   }
   
   @scala.inline
-  implicit class UpdateProjectRequestOps[Self <: UpdateProjectRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateProjectRequestMutableBuilder[Self <: UpdateProjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSample(value: Sample): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProjectName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSample(value: Sample): Self = this.set("Sample", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSample: Self = this.set("Sample", js.undefined)
+    def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.strict
   - typings.microsoftGraph.microsoftGraphStrings.moderate
 */
-trait SafeSearchFilterType extends js.Object
+trait SafeSearchFilterType extends StObject
 object SafeSearchFilterType {
   
   @scala.inline

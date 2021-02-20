@@ -1,11 +1,12 @@
 package typings.es6Shim
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegExp extends js.Object {
+trait RegExp extends StObject {
   
   /**
     * Returns a string indicating the flags of the regular expression in question. This field is read-only.
@@ -30,21 +31,9 @@ object RegExp {
   }
   
   @scala.inline
-  implicit class RegExpOps[Self <: RegExp] (val x: Self) extends AnyVal {
+  implicit class RegExpMutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlags(value: java.lang.String): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setFlags(value: java.lang.String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

@@ -1,61 +1,52 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTLanguage extends js.Object
+sealed trait EnumDWTLanguage extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_Language")
 @js.native
-object EnumDWTLanguage extends js.Object {
+object EnumDWTLanguage extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTLanguage with Double] = js.native
   
   @js.native
   sealed trait Arabic extends EnumDWTLanguage
-  /* 2 */ @js.native
-  object Arabic extends TopLevel[Arabic with Double]
+  /* 2 */ val Arabic: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.Arabic with Double = js.native
   
   @js.native
   sealed trait Chinese extends EnumDWTLanguage
-  /* 8 */ @js.native
-  object Chinese extends TopLevel[Chinese with Double]
+  /* 8 */ val Chinese: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.Chinese with Double = js.native
   
   @js.native
   sealed trait English extends EnumDWTLanguage
-  /* 0 */ @js.native
-  object English extends TopLevel[English with Double]
+  /* 0 */ val English: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.English with Double = js.native
   
   @js.native
   sealed trait French extends EnumDWTLanguage
-  /* 1 */ @js.native
-  object French extends TopLevel[French with Double]
+  /* 1 */ val French: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.French with Double = js.native
   
   @js.native
   sealed trait German extends EnumDWTLanguage
-  /* 5 */ @js.native
-  object German extends TopLevel[German with Double]
+  /* 5 */ val German: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.German with Double = js.native
   
   @js.native
   sealed trait Italian extends EnumDWTLanguage
-  /* 6 */ @js.native
-  object Italian extends TopLevel[Italian with Double]
+  /* 6 */ val Italian: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.Italian with Double = js.native
   
   @js.native
   sealed trait Portuguese extends EnumDWTLanguage
-  /* 4 */ @js.native
-  object Portuguese extends TopLevel[Portuguese with Double]
+  /* 4 */ val Portuguese: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.Portuguese with Double = js.native
   
   @js.native
   sealed trait Russian extends EnumDWTLanguage
-  /* 7 */ @js.native
-  object Russian extends TopLevel[Russian with Double]
+  /* 7 */ val Russian: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.Russian with Double = js.native
   
   @js.native
   sealed trait Spanish extends EnumDWTLanguage
-  /* 3 */ @js.native
-  object Spanish extends TopLevel[Spanish with Double]
+  /* 3 */ val Spanish: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage.Spanish with Double = js.native
 }

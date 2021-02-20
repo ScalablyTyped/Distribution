@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,228 +74,216 @@ object Call {
   }
   
   @scala.inline
-  implicit class CallOps[Self <: Call] (val x: Self) extends AnyVal {
+  implicit class CallMutableBuilder[Self <: Call] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallChainId(value: NullableOption[String]): Self = StObject.set(x, "callChainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallChainIdNull: Self = StObject.set(x, "callChainId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallChainIdUndefined: Self = StObject.set(x, "callChainId", js.undefined)
     
     @scala.inline
-    def setCallChainId(value: NullableOption[String]): Self = this.set("callChainId", value.asInstanceOf[js.Any])
+    def setCallOptions(value: NullableOption[CallOptions]): Self = StObject.set(x, "callOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallChainId: Self = this.set("callChainId", js.undefined)
+    def setCallOptionsNull: Self = StObject.set(x, "callOptions", null)
     
     @scala.inline
-    def setCallChainIdNull: Self = this.set("callChainId", null)
+    def setCallOptionsUndefined: Self = StObject.set(x, "callOptions", js.undefined)
     
     @scala.inline
-    def setCallOptions(value: NullableOption[CallOptions]): Self = this.set("callOptions", value.asInstanceOf[js.Any])
+    def setCallRoutes(value: NullableOption[js.Array[CallRoute]]): Self = StObject.set(x, "callRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallOptions: Self = this.set("callOptions", js.undefined)
+    def setCallRoutesNull: Self = StObject.set(x, "callRoutes", null)
     
     @scala.inline
-    def setCallOptionsNull: Self = this.set("callOptions", null)
+    def setCallRoutesUndefined: Self = StObject.set(x, "callRoutes", js.undefined)
     
     @scala.inline
-    def setCallRoutesVarargs(value: CallRoute*): Self = this.set("callRoutes", js.Array(value :_*))
+    def setCallRoutesVarargs(value: CallRoute*): Self = StObject.set(x, "callRoutes", js.Array(value :_*))
     
     @scala.inline
-    def setCallRoutes(value: NullableOption[js.Array[CallRoute]]): Self = this.set("callRoutes", value.asInstanceOf[js.Any])
+    def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallRoutes: Self = this.set("callRoutes", js.undefined)
+    def setCallbackUriUndefined: Self = StObject.set(x, "callbackUri", js.undefined)
     
     @scala.inline
-    def setCallRoutesNull: Self = this.set("callRoutes", null)
+    def setChatInfo(value: NullableOption[ChatInfo]): Self = StObject.set(x, "chatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackUri(value: String): Self = this.set("callbackUri", value.asInstanceOf[js.Any])
+    def setChatInfoNull: Self = StObject.set(x, "chatInfo", null)
     
     @scala.inline
-    def deleteCallbackUri: Self = this.set("callbackUri", js.undefined)
+    def setChatInfoUndefined: Self = StObject.set(x, "chatInfo", js.undefined)
     
     @scala.inline
-    def setChatInfo(value: NullableOption[ChatInfo]): Self = this.set("chatInfo", value.asInstanceOf[js.Any])
+    def setDirection(value: NullableOption[CallDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChatInfo: Self = this.set("chatInfo", js.undefined)
+    def setDirectionNull: Self = StObject.set(x, "direction", null)
     
     @scala.inline
-    def setChatInfoNull: Self = this.set("chatInfo", null)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setDirection(value: NullableOption[CallDirection]): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setIncomingContext(value: NullableOption[IncomingContext]): Self = StObject.set(x, "incomingContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setIncomingContextNull: Self = StObject.set(x, "incomingContext", null)
     
     @scala.inline
-    def setDirectionNull: Self = this.set("direction", null)
+    def setIncomingContextUndefined: Self = StObject.set(x, "incomingContext", js.undefined)
     
     @scala.inline
-    def setIncomingContext(value: NullableOption[IncomingContext]): Self = this.set("incomingContext", value.asInstanceOf[js.Any])
+    def setMediaConfig(value: NullableOption[MediaConfig]): Self = StObject.set(x, "mediaConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncomingContext: Self = this.set("incomingContext", js.undefined)
+    def setMediaConfigNull: Self = StObject.set(x, "mediaConfig", null)
     
     @scala.inline
-    def setIncomingContextNull: Self = this.set("incomingContext", null)
+    def setMediaConfigUndefined: Self = StObject.set(x, "mediaConfig", js.undefined)
     
     @scala.inline
-    def setMediaConfig(value: NullableOption[MediaConfig]): Self = this.set("mediaConfig", value.asInstanceOf[js.Any])
+    def setMediaState(value: NullableOption[CallMediaState]): Self = StObject.set(x, "mediaState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaConfig: Self = this.set("mediaConfig", js.undefined)
+    def setMediaStateNull: Self = StObject.set(x, "mediaState", null)
     
     @scala.inline
-    def setMediaConfigNull: Self = this.set("mediaConfig", null)
+    def setMediaStateUndefined: Self = StObject.set(x, "mediaState", js.undefined)
     
     @scala.inline
-    def setMediaState(value: NullableOption[CallMediaState]): Self = this.set("mediaState", value.asInstanceOf[js.Any])
+    def setMeetingInfo(value: NullableOption[MeetingInfo]): Self = StObject.set(x, "meetingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaState: Self = this.set("mediaState", js.undefined)
+    def setMeetingInfoNull: Self = StObject.set(x, "meetingInfo", null)
     
     @scala.inline
-    def setMediaStateNull: Self = this.set("mediaState", null)
+    def setMeetingInfoUndefined: Self = StObject.set(x, "meetingInfo", js.undefined)
     
     @scala.inline
-    def setMeetingInfo(value: NullableOption[MeetingInfo]): Self = this.set("meetingInfo", value.asInstanceOf[js.Any])
+    def setMyParticipantId(value: NullableOption[String]): Self = StObject.set(x, "myParticipantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeetingInfo: Self = this.set("meetingInfo", js.undefined)
+    def setMyParticipantIdNull: Self = StObject.set(x, "myParticipantId", null)
     
     @scala.inline
-    def setMeetingInfoNull: Self = this.set("meetingInfo", null)
+    def setMyParticipantIdUndefined: Self = StObject.set(x, "myParticipantId", js.undefined)
     
     @scala.inline
-    def setMyParticipantId(value: NullableOption[String]): Self = this.set("myParticipantId", value.asInstanceOf[js.Any])
+    def setOperations(value: NullableOption[js.Array[CommsOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMyParticipantId: Self = this.set("myParticipantId", js.undefined)
+    def setOperationsNull: Self = StObject.set(x, "operations", null)
     
     @scala.inline
-    def setMyParticipantIdNull: Self = this.set("myParticipantId", null)
+    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
     @scala.inline
-    def setOperationsVarargs(value: CommsOperation*): Self = this.set("operations", js.Array(value :_*))
+    def setOperationsVarargs(value: CommsOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
     @scala.inline
-    def setOperations(value: NullableOption[js.Array[CommsOperation]]): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setParticipants(value: NullableOption[js.Array[Participant]]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperations: Self = this.set("operations", js.undefined)
+    def setParticipantsNull: Self = StObject.set(x, "participants", null)
     
     @scala.inline
-    def setOperationsNull: Self = this.set("operations", null)
+    def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
     @scala.inline
-    def setParticipantsVarargs(value: Participant*): Self = this.set("participants", js.Array(value :_*))
+    def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
     @scala.inline
-    def setParticipants(value: NullableOption[js.Array[Participant]]): Self = this.set("participants", value.asInstanceOf[js.Any])
+    def setRequestedModalities(value: NullableOption[js.Array[Modality]]): Self = StObject.set(x, "requestedModalities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParticipants: Self = this.set("participants", js.undefined)
+    def setRequestedModalitiesNull: Self = StObject.set(x, "requestedModalities", null)
     
     @scala.inline
-    def setParticipantsNull: Self = this.set("participants", null)
+    def setRequestedModalitiesUndefined: Self = StObject.set(x, "requestedModalities", js.undefined)
     
     @scala.inline
-    def setRequestedModalitiesVarargs(value: Modality*): Self = this.set("requestedModalities", js.Array(value :_*))
+    def setRequestedModalitiesVarargs(value: Modality*): Self = StObject.set(x, "requestedModalities", js.Array(value :_*))
     
     @scala.inline
-    def setRequestedModalities(value: NullableOption[js.Array[Modality]]): Self = this.set("requestedModalities", value.asInstanceOf[js.Any])
+    def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestedModalities: Self = this.set("requestedModalities", js.undefined)
+    def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
     
     @scala.inline
-    def setRequestedModalitiesNull: Self = this.set("requestedModalities", null)
+    def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
     
     @scala.inline
-    def setResultInfo(value: NullableOption[ResultInfo]): Self = this.set("resultInfo", value.asInstanceOf[js.Any])
+    def setSource(value: NullableOption[ParticipantInfo]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResultInfo: Self = this.set("resultInfo", js.undefined)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setResultInfoNull: Self = this.set("resultInfo", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setSource(value: NullableOption[ParticipantInfo]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setState(value: NullableOption[CallState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setStateNull: Self = StObject.set(x, "state", null)
     
     @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setState(value: NullableOption[CallState]): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setSubjectNull: Self = StObject.set(x, "subject", null)
     
     @scala.inline
-    def setStateNull: Self = this.set("state", null)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setSubject(value: NullableOption[String]): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTargets(value: NullableOption[js.Array[InvitationParticipantInfo]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setTargetsNull: Self = StObject.set(x, "targets", null)
     
     @scala.inline
-    def setSubjectNull: Self = this.set("subject", null)
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def setTargetsVarargs(value: InvitationParticipantInfo*): Self = this.set("targets", js.Array(value :_*))
+    def setTargetsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
     @scala.inline
-    def setTargets(value: NullableOption[js.Array[InvitationParticipantInfo]]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
+    def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
     
     @scala.inline
-    def setTargetsNull: Self = this.set("targets", null)
+    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
     @scala.inline
-    def setTenantId(value: NullableOption[String]): Self = this.set("tenantId", value.asInstanceOf[js.Any])
+    def setToneInfo(value: NullableOption[ToneInfo]): Self = StObject.set(x, "toneInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTenantId: Self = this.set("tenantId", js.undefined)
+    def setToneInfoNull: Self = StObject.set(x, "toneInfo", null)
     
     @scala.inline
-    def setTenantIdNull: Self = this.set("tenantId", null)
+    def setToneInfoUndefined: Self = StObject.set(x, "toneInfo", js.undefined)
     
     @scala.inline
-    def setToneInfo(value: NullableOption[ToneInfo]): Self = this.set("toneInfo", value.asInstanceOf[js.Any])
+    def setTranscription(value: NullableOption[CallTranscriptionInfo]): Self = StObject.set(x, "transcription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToneInfo: Self = this.set("toneInfo", js.undefined)
+    def setTranscriptionNull: Self = StObject.set(x, "transcription", null)
     
     @scala.inline
-    def setToneInfoNull: Self = this.set("toneInfo", null)
-    
-    @scala.inline
-    def setTranscription(value: NullableOption[CallTranscriptionInfo]): Self = this.set("transcription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscription: Self = this.set("transcription", js.undefined)
-    
-    @scala.inline
-    def setTranscriptionNull: Self = this.set("transcription", null)
+    def setTranscriptionUndefined: Self = StObject.set(x, "transcription", js.undefined)
   }
 }

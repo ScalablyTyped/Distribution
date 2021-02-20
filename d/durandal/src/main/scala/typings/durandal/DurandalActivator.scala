@@ -1,12 +1,13 @@
 package typings.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<T> * / any */ @js.native
-trait DurandalActivator[T] extends js.Object {
+trait DurandalActivator[T] extends StObject {
   
   /**
     * Activates the activator, in its current state.

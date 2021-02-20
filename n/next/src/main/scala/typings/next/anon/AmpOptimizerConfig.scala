@@ -3,12 +3,13 @@ package typings.next.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.apiUtilsMod.ApiPreviewProps
 import typings.next.fontUtilsMod.FontManifest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmpOptimizerConfig extends js.Object {
+trait AmpOptimizerConfig extends StObject {
   
   var ampOptimizerConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
   
@@ -66,102 +67,90 @@ object AmpOptimizerConfig {
   }
   
   @scala.inline
-  implicit class AmpOptimizerConfigOps[Self <: AmpOptimizerConfig] (val x: Self) extends AnyVal {
+  implicit class AmpOptimizerConfigMutableBuilder[Self <: AmpOptimizerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmpOptimizerConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "ampOptimizerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmpOptimizerConfigUndefined: Self = StObject.set(x, "ampOptimizerConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
     
     @scala.inline
-    def setBuildId(value: String): Self = this.set("buildId", value.asInstanceOf[js.Any])
+    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalBase(value: String): Self = this.set("canonicalBase", value.asInstanceOf[js.Any])
+    def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontManifestVarargs(value: Content*): Self = this.set("fontManifest", js.Array(value :_*))
+    def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontManifest(value: FontManifest): Self = this.set("fontManifest", value.asInstanceOf[js.Any])
+    def setCustomServer(value: Boolean): Self = StObject.set(x, "customServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateEtags(value: Boolean): Self = this.set("generateEtags", value.asInstanceOf[js.Any])
+    def setCustomServerUndefined: Self = StObject.set(x, "customServer", js.undefined)
     
     @scala.inline
-    def setImages(value: String): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeFonts(value: Boolean): Self = this.set("optimizeFonts", value.asInstanceOf[js.Any])
+    def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
     
     @scala.inline
-    def setOptimizeImages(value: Boolean): Self = this.set("optimizeImages", value.asInstanceOf[js.Any])
+    def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoweredByHeader(value: Boolean): Self = this.set("poweredByHeader", value.asInstanceOf[js.Any])
+    def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
     
     @scala.inline
-    def setPreviewProps(value: ApiPreviewProps): Self = this.set("previewProps", value.asInstanceOf[js.Any])
+    def setFontManifest(value: FontManifest): Self = StObject.set(x, "fontManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpOptimizerConfig(value: StringDictionary[js.Any]): Self = this.set("ampOptimizerConfig", value.asInstanceOf[js.Any])
+    def setFontManifestVarargs(value: Content*): Self = StObject.set(x, "fontManifest", js.Array(value :_*))
     
     @scala.inline
-    def deleteAmpOptimizerConfig: Self = this.set("ampOptimizerConfig", js.undefined)
+    def setGenerateEtags(value: Boolean): Self = StObject.set(x, "generateEtags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetPrefix(value: String): Self = this.set("assetPrefix", value.asInstanceOf[js.Any])
+    def setImages(value: String): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssetPrefix: Self = this.set("assetPrefix", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomServer(value: Boolean): Self = this.set("customServer", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteCustomServer: Self = this.set("customServer", js.undefined)
+    def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLocale(value: String): Self = this.set("defaultLocale", value.asInstanceOf[js.Any])
+    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
     @scala.inline
-    def deleteDefaultLocale: Self = this.set("defaultLocale", js.undefined)
+    def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
     @scala.inline
-    def setDev(value: Boolean): Self = this.set("dev", value.asInstanceOf[js.Any])
+    def setOptimizeFonts(value: Boolean): Self = StObject.set(x, "optimizeFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDev: Self = this.set("dev", js.undefined)
+    def setOptimizeImages(value: Boolean): Self = StObject.set(x, "optimizeImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPoweredByHeader(value: Boolean): Self = StObject.set(x, "poweredByHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPreviewProps(value: ApiPreviewProps): Self = StObject.set(x, "previewProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalesVarargs(value: String*): Self = this.set("locales", js.Array(value :_*))
+    def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocales(value: js.Array[String]): Self = this.set("locales", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocales: Self = this.set("locales", js.undefined)
-    
-    @scala.inline
-    def setRuntimeConfig(value: StringDictionary[js.Any]): Self = this.set("runtimeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeConfig: Self = this.set("runtimeConfig", js.undefined)
+    def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
   }
 }

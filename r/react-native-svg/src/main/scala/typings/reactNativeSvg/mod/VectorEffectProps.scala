@@ -5,12 +5,13 @@ import typings.reactNativeSvg.reactNativeSvgStrings.inherit
 import typings.reactNativeSvg.reactNativeSvgStrings.nonScalingStroke
 import typings.reactNativeSvg.reactNativeSvgStrings.none
 import typings.reactNativeSvg.reactNativeSvgStrings.uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VectorEffectProps extends js.Object {
+trait VectorEffectProps extends StObject {
   
   var vectorEffect: js.UndefOr[
     none | `non-scaling-stroke` | nonScalingStroke | typings.reactNativeSvg.reactNativeSvgStrings.default | inherit | uri
@@ -25,26 +26,14 @@ object VectorEffectProps {
   }
   
   @scala.inline
-  implicit class VectorEffectPropsOps[Self <: VectorEffectProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class VectorEffectPropsMutableBuilder[Self <: VectorEffectProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setVectorEffect(
       value: none | `non-scaling-stroke` | nonScalingStroke | typings.reactNativeSvg.reactNativeSvgStrings.default | inherit | uri
-    ): Self = this.set("vectorEffect", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVectorEffect: Self = this.set("vectorEffect", js.undefined)
+    def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyTrafficMirrorFilterRuleResult extends js.Object {
+trait ModifyTrafficMirrorFilterRuleResult extends StObject {
   
   /**
     * Modifies a Traffic Mirror rule.
@@ -21,24 +22,12 @@ object ModifyTrafficMirrorFilterRuleResult {
   }
   
   @scala.inline
-  implicit class ModifyTrafficMirrorFilterRuleResultOps[Self <: ModifyTrafficMirrorFilterRuleResult] (val x: Self) extends AnyVal {
+  implicit class ModifyTrafficMirrorFilterRuleResultMutableBuilder[Self <: ModifyTrafficMirrorFilterRuleResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrafficMirrorFilterRule(value: TrafficMirrorFilterRule): Self = StObject.set(x, "TrafficMirrorFilterRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrafficMirrorFilterRule(value: TrafficMirrorFilterRule): Self = this.set("TrafficMirrorFilterRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficMirrorFilterRule: Self = this.set("TrafficMirrorFilterRule", js.undefined)
+    def setTrafficMirrorFilterRuleUndefined: Self = StObject.set(x, "TrafficMirrorFilterRule", js.undefined)
   }
 }

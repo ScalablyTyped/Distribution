@@ -1,12 +1,13 @@
 package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrosshairsRegion extends js.Object {
+trait CrosshairsRegion extends StObject {
   
   var animate: Boolean = js.native
   
@@ -123,121 +124,109 @@ object CrosshairsRegion {
   }
   
   @scala.inline
-  implicit class CrosshairsRegionOps[Self <: CrosshairsRegion] (val x: Self) extends AnyVal {
+  implicit class CrosshairsRegionMutableBuilder[Self <: CrosshairsRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateOption(value: Appear): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateOption(value: Appear): Self = this.set("animateOption", value.asInstanceOf[js.Any])
+    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setCrosshairs(value: js.Any): Self = StObject.set(x, "crosshairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClassName(value: String): Self = this.set("containerClassName", value.asInstanceOf[js.Any])
+    def setCrosshairsRegion(value: js.Any): Self = StObject.set(x, "crosshairsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerTpl(value: String): Self = this.set("containerTpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrosshairs(value: js.Any): Self = this.set("crosshairs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrosshairsRegion(value: js.Any): Self = this.set("crosshairsRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomContent(value: js.Any): Self = this.set("customContent", value.asInstanceOf[js.Any])
+    def setCustomContent(value: js.Any): Self = StObject.set(x, "customContent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaultStyles(
       value: StringDictionary[
           BorderRadius | BoxShadow | Float | LineHeight | ListStyleType | Margin | MarginBottom | MarginLeft
         ]
-    ): Self = this.set("defaultStyles", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomStyles(value: js.Any): Self = this.set("domStyles", value.asInstanceOf[js.Any])
+    def setDomStyles(value: js.Any): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemTpl(value: String): Self = this.set("itemTpl", value.asInstanceOf[js.Any])
+    def setItemTpl(value: String): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: js.Any): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTitle(value: Boolean): Self = this.set("showTitle", value.asInstanceOf[js.Any])
+    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: js.Any): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateAutoRender(value: Boolean): Self = this.set("updateAutoRender", value.asInstanceOf[js.Any])
+    def setUpdateAutoRender(value: Boolean): Self = StObject.set(x, "updateAutoRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXCrosshairTpl(value: String): Self = this.set("xCrosshairTpl", value.asInstanceOf[js.Any])
+    def setXCrosshairTpl(value: String): Self = StObject.set(x, "xCrosshairTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYCrosshairTpl(value: String): Self = this.set("yCrosshairTpl", value.asInstanceOf[js.Any])
+    def setYCrosshairTpl(value: String): Self = StObject.set(x, "yCrosshairTpl", value.asInstanceOf[js.Any])
   }
 }

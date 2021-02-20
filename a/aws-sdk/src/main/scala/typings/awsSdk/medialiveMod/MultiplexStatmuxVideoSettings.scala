@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexStatmuxVideoSettings extends js.Object {
+trait MultiplexStatmuxVideoSettings extends StObject {
   
   /**
     * Maximum statmux bitrate.
@@ -31,36 +32,24 @@ object MultiplexStatmuxVideoSettings {
   }
   
   @scala.inline
-  implicit class MultiplexStatmuxVideoSettingsOps[Self <: MultiplexStatmuxVideoSettings] (val x: Self) extends AnyVal {
+  implicit class MultiplexStatmuxVideoSettingsMutableBuilder[Self <: MultiplexStatmuxVideoSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinimumBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumBitrate(value: integerMin100000Max100000000): Self = this.set("MaximumBitrate", value.asInstanceOf[js.Any])
+    def setMinimumBitrateUndefined: Self = StObject.set(x, "MinimumBitrate", js.undefined)
     
     @scala.inline
-    def deleteMaximumBitrate: Self = this.set("MaximumBitrate", js.undefined)
+    def setPriority(value: integerMinNegative5Max5): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumBitrate(value: integerMin100000Max100000000): Self = this.set("MinimumBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumBitrate: Self = this.set("MinimumBitrate", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: integerMinNegative5Max5): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
   }
 }

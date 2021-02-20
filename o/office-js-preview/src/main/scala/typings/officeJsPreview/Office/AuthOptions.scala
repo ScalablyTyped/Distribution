@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
   */
 @js.native
-trait AuthOptions extends js.Object {
+trait AuthOptions extends StObject {
   
   /**
     * Allows Office to get an access token silently or through interactive consent, if one is required. Default value is `false`.
@@ -70,60 +71,48 @@ object AuthOptions {
   }
   
   @scala.inline
-  implicit class AuthOptionsOps[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowConsentPrompt(value: Boolean): Self = StObject.set(x, "allowConsentPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowConsentPromptUndefined: Self = StObject.set(x, "allowConsentPrompt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowSignInPrompt(value: Boolean): Self = StObject.set(x, "allowSignInPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowConsentPrompt(value: Boolean): Self = this.set("allowConsentPrompt", value.asInstanceOf[js.Any])
+    def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
     
     @scala.inline
-    def deleteAllowConsentPrompt: Self = this.set("allowConsentPrompt", js.undefined)
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSignInPrompt(value: Boolean): Self = this.set("allowSignInPrompt", value.asInstanceOf[js.Any])
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def deleteAllowSignInPrompt: Self = this.set("allowSignInPrompt", js.undefined)
+    def setAuthChallenge(value: String): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
     
     @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    def setForMSGraphAccess(value: Boolean): Self = StObject.set(x, "forMSGraphAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthChallenge(value: String): Self = this.set("authChallenge", value.asInstanceOf[js.Any])
+    def setForMSGraphAccessUndefined: Self = StObject.set(x, "forMSGraphAccess", js.undefined)
     
     @scala.inline
-    def deleteAuthChallenge: Self = this.set("authChallenge", js.undefined)
+    def setForceAddAccount(value: Boolean): Self = StObject.set(x, "forceAddAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForMSGraphAccess(value: Boolean): Self = this.set("forMSGraphAccess", value.asInstanceOf[js.Any])
+    def setForceAddAccountUndefined: Self = StObject.set(x, "forceAddAccount", js.undefined)
     
     @scala.inline
-    def deleteForMSGraphAccess: Self = this.set("forMSGraphAccess", js.undefined)
+    def setForceConsent(value: Boolean): Self = StObject.set(x, "forceConsent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceAddAccount(value: Boolean): Self = this.set("forceAddAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceAddAccount: Self = this.set("forceAddAccount", js.undefined)
-    
-    @scala.inline
-    def setForceConsent(value: Boolean): Self = this.set("forceConsent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceConsent: Self = this.set("forceConsent", js.undefined)
+    def setForceConsentUndefined: Self = StObject.set(x, "forceConsent", js.undefined)
   }
 }

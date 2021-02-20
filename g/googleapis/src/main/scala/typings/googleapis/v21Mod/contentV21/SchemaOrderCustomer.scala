@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderCustomer extends js.Object {
+trait SchemaOrderCustomer extends StObject {
   
   /**
     * Full name of the customer.
@@ -26,30 +27,18 @@ object SchemaOrderCustomer {
   }
   
   @scala.inline
-  implicit class SchemaOrderCustomerOps[Self <: SchemaOrderCustomer] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderCustomerMutableBuilder[Self <: SchemaOrderCustomer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarketingRightsInfo(value: SchemaOrderCustomerMarketingRightsInfo): Self = StObject.set(x, "marketingRightsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
-    
-    @scala.inline
-    def setMarketingRightsInfo(value: SchemaOrderCustomerMarketingRightsInfo): Self = this.set("marketingRightsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarketingRightsInfo: Self = this.set("marketingRightsInfo", js.undefined)
+    def setMarketingRightsInfoUndefined: Self = StObject.set(x, "marketingRightsInfo", js.undefined)
   }
 }

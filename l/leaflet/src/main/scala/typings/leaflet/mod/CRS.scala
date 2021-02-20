@@ -1,11 +1,12 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CRS extends js.Object {
+trait CRS extends StObject {
   
   var code: js.UndefOr[String] = js.native
   
@@ -35,19 +36,29 @@ trait CRS extends js.Object {
   
   def zoom(scale: Double): Double = js.native
 }
-@JSImport("leaflet", "CRS")
-@js.native
-object CRS extends js.Object {
+object CRS {
   
+  @JSImport("leaflet", "CRS.EPSG3395")
+  @js.native
   val EPSG3395: CRS = js.native
   
+  @JSImport("leaflet", "CRS.EPSG3857")
+  @js.native
   val EPSG3857: CRS = js.native
   
+  @JSImport("leaflet", "CRS.EPSG4326")
+  @js.native
   val EPSG4326: CRS = js.native
   
+  @JSImport("leaflet", "CRS.EPSG900913")
+  @js.native
   val EPSG900913: CRS = js.native
   
+  @JSImport("leaflet", "CRS.Earth")
+  @js.native
   val Earth: CRS = js.native
   
+  @JSImport("leaflet", "CRS.Simple")
+  @js.native
   val Simple: CRS = js.native
 }

@@ -7,6 +7,7 @@ import typings.googleapis.anon.MetricNames
 import typings.googleapis.anon.OverlapMetricNames
 import typings.googleapis.anon.ReachByFrequencyMetricNames
 import typings.googleapis.anon.ReportProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Report resource.
   */
 @js.native
-trait SchemaReport extends js.Object {
+trait SchemaReport extends StObject {
   
   /**
     * The account ID to which this report belongs.
@@ -124,126 +125,114 @@ object SchemaReport {
   }
   
   @scala.inline
-  implicit class SchemaReportOps[Self <: SchemaReport] (val x: Self) extends AnyVal {
+  implicit class SchemaReportMutableBuilder[Self <: SchemaReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriteria(value: MetricNames): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setCrossDimensionReachCriteria(value: OverlapMetricNames): Self = StObject.set(x, "crossDimensionReachCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: MetricNames): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setCrossDimensionReachCriteriaUndefined: Self = StObject.set(x, "crossDimensionReachCriteria", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setDelivery(value: Message): Self = StObject.set(x, "delivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossDimensionReachCriteria(value: OverlapMetricNames): Self = this.set("crossDimensionReachCriteria", value.asInstanceOf[js.Any])
+    def setDeliveryUndefined: Self = StObject.set(x, "delivery", js.undefined)
     
     @scala.inline
-    def deleteCrossDimensionReachCriteria: Self = this.set("crossDimensionReachCriteria", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelivery(value: Message): Self = this.set("delivery", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDelivery: Self = this.set("delivery", js.undefined)
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setFloodlightCriteria(value: ReportProperties): Self = StObject.set(x, "floodlightCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setFloodlightCriteriaUndefined: Self = StObject.set(x, "floodlightCriteria", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightCriteria(value: ReportProperties): Self = this.set("floodlightCriteria", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFloodlightCriteria: Self = this.set("floodlightCriteria", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    def setOwnerProfileId(value: String): Self = StObject.set(x, "ownerProfileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerProfileIdUndefined: Self = StObject.set(x, "ownerProfileId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPathToConversionCriteria(value: CustomFloodlightVariables): Self = StObject.set(x, "pathToConversionCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerProfileId(value: String): Self = this.set("ownerProfileId", value.asInstanceOf[js.Any])
+    def setPathToConversionCriteriaUndefined: Self = StObject.set(x, "pathToConversionCriteria", js.undefined)
     
     @scala.inline
-    def deleteOwnerProfileId: Self = this.set("ownerProfileId", js.undefined)
+    def setReachCriteria(value: ReachByFrequencyMetricNames): Self = StObject.set(x, "reachCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathToConversionCriteria(value: CustomFloodlightVariables): Self = this.set("pathToConversionCriteria", value.asInstanceOf[js.Any])
+    def setReachCriteriaUndefined: Self = StObject.set(x, "reachCriteria", js.undefined)
     
     @scala.inline
-    def deletePathToConversionCriteria: Self = this.set("pathToConversionCriteria", js.undefined)
+    def setSchedule(value: Active): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReachCriteria(value: ReachByFrequencyMetricNames): Self = this.set("reachCriteria", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteReachCriteria: Self = this.set("reachCriteria", js.undefined)
+    def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: Active): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubAccountId(value: String): Self = this.set("subAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubAccountId: Self = this.set("subAccountId", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

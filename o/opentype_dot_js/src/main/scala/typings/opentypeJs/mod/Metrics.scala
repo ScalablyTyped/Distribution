@@ -1,11 +1,12 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metrics extends js.Object {
+trait Metrics extends StObject {
   
   var leftSideBearing: Double = js.native
   
@@ -28,39 +29,27 @@ object Metrics {
   }
   
   @scala.inline
-  implicit class MetricsOps[Self <: Metrics] (val x: Self) extends AnyVal {
+  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftSideBearing(value: Double): Self = StObject.set(x, "leftSideBearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRightSideBearing(value: Double): Self = StObject.set(x, "rightSideBearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightSideBearingUndefined: Self = StObject.set(x, "rightSideBearing", js.undefined)
     
     @scala.inline
-    def setLeftSideBearing(value: Double): Self = this.set("leftSideBearing", value.asInstanceOf[js.Any])
+    def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXMax(value: Double): Self = this.set("xMax", value.asInstanceOf[js.Any])
+    def setXMin(value: Double): Self = StObject.set(x, "xMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXMin(value: Double): Self = this.set("xMin", value.asInstanceOf[js.Any])
+    def setYMax(value: Double): Self = StObject.set(x, "yMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYMax(value: Double): Self = this.set("yMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYMin(value: Double): Self = this.set("yMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightSideBearing(value: Double): Self = this.set("rightSideBearing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightSideBearing: Self = this.set("rightSideBearing", js.undefined)
+    def setYMin(value: Double): Self = StObject.set(x, "yMin", value.asInstanceOf[js.Any])
   }
 }

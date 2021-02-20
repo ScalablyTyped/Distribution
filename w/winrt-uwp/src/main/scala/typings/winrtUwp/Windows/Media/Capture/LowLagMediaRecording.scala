@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Media.Devices.MediaCapturePauseBehavior
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for taking a low lag media recording. */
 @js.native
-trait LowLagMediaRecording extends js.Object {
+trait LowLagMediaRecording extends StObject {
   
   /**
     * Asynchronously releases the LowLagMediaRecording object and resources used by the media recording operation.
@@ -56,33 +57,21 @@ object LowLagMediaRecording {
   }
   
   @scala.inline
-  implicit class LowLagMediaRecordingOps[Self <: LowLagMediaRecording] (val x: Self) extends AnyVal {
+  implicit class LowLagMediaRecordingMutableBuilder[Self <: LowLagMediaRecording] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPauseAsync(value: MediaCapturePauseBehavior => IPromiseWithIAsyncAction): Self = StObject.set(x, "pauseAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResumeAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "resumeAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("finishAsync", js.Any.fromFunction0(value))
+    def setStartAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPauseAsync(value: MediaCapturePauseBehavior => IPromiseWithIAsyncAction): Self = this.set("pauseAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResumeAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("resumeAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("startAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("stopAsync", js.Any.fromFunction0(value))
+    def setStopAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
   }
 }

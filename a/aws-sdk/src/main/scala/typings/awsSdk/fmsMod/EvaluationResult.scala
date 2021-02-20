@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluationResult extends js.Object {
+trait EvaluationResult extends StObject {
   
   /**
     * Describes an AWS account's compliance with the AWS Firewall Manager policy.
@@ -31,36 +32,24 @@ object EvaluationResult {
   }
   
   @scala.inline
-  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+  implicit class EvaluationResultMutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceStatus(value: PolicyComplianceStatusType): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationLimitExceeded(value: Boolean): Self = StObject.set(x, "EvaluationLimitExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceStatus(value: PolicyComplianceStatusType): Self = this.set("ComplianceStatus", value.asInstanceOf[js.Any])
+    def setEvaluationLimitExceededUndefined: Self = StObject.set(x, "EvaluationLimitExceeded", js.undefined)
     
     @scala.inline
-    def deleteComplianceStatus: Self = this.set("ComplianceStatus", js.undefined)
+    def setViolatorCount(value: ResourceCount): Self = StObject.set(x, "ViolatorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationLimitExceeded(value: Boolean): Self = this.set("EvaluationLimitExceeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluationLimitExceeded: Self = this.set("EvaluationLimitExceeded", js.undefined)
-    
-    @scala.inline
-    def setViolatorCount(value: ResourceCount): Self = this.set("ViolatorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolatorCount: Self = this.set("ViolatorCount", js.undefined)
+    def setViolatorCountUndefined: Self = StObject.set(x, "ViolatorCount", js.undefined)
   }
 }

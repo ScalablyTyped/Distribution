@@ -1,11 +1,12 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwitchDefault extends js.Object {
+trait SwitchDefault extends StObject {
   
   /**
     * the alternative schema type if no cases matched.
@@ -22,24 +23,12 @@ object SwitchDefault {
   }
   
   @scala.inline
-  implicit class SwitchDefaultOps[Self <: SwitchDefault] (val x: Self) extends AnyVal {
+  implicit class SwitchDefaultMutableBuilder[Self <: SwitchDefault] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOtherwise(value: SchemaLike): Self = this.set("otherwise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOtherwiseNull: Self = this.set("otherwise", null)
+    def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
   }
 }

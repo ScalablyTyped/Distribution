@@ -1,11 +1,12 @@
 package typings.stylus.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Eot extends js.Object {
+trait Eot extends StObject {
   
   @JSName(".eot")
   var Doteot: String = js.native
@@ -57,42 +58,30 @@ object Eot {
   }
   
   @scala.inline
-  implicit class EotOps[Self <: Eot] (val x: Self) extends AnyVal {
+  implicit class EotMutableBuilder[Self <: Eot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoteot(value: String): Self = StObject.set(x, ".eot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotgif(value: String): Self = StObject.set(x, ".gif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDotjpeg(value: String): Self = StObject.set(x, ".jpeg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoteot(value: String): Self = this.set(".eot", value.asInstanceOf[js.Any])
+    def setDotjpg(value: String): Self = StObject.set(x, ".jpg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotgif(value: String): Self = this.set(".gif", value.asInstanceOf[js.Any])
+    def setDotpng(value: String): Self = StObject.set(x, ".png", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotjpeg(value: String): Self = this.set(".jpeg", value.asInstanceOf[js.Any])
+    def setDotsvg(value: String): Self = StObject.set(x, ".svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotjpg(value: String): Self = this.set(".jpg", value.asInstanceOf[js.Any])
+    def setDotttf(value: String): Self = StObject.set(x, ".ttf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotpng(value: String): Self = this.set(".png", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDotsvg(value: String): Self = this.set(".svg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDotttf(value: String): Self = this.set(".ttf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDotwoff(value: String): Self = this.set(".woff", value.asInstanceOf[js.Any])
+    def setDotwoff(value: String): Self = StObject.set(x, ".woff", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.oracledb.mod
 
 import typings.node.streamMod.Readable
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connection extends js.Object {
+trait Connection extends StObject {
   
   /**
     * The action attribute for end-to-end application tracing.

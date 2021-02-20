@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object IntegratedMeshLayerProperties {
   }
   
   @scala.inline
-  implicit class IntegratedMeshLayerPropertiesOps[Self <: IntegratedMeshLayerProperties] (val x: Self) extends AnyVal {
+  implicit class IntegratedMeshLayerPropertiesMutableBuilder[Self <: IntegratedMeshLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElevationInfo(value: IntegratedMeshLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifications(value: SceneModificationsProperties): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevationInfo(value: IntegratedMeshLayerElevationInfo): Self = this.set("elevationInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElevationInfo: Self = this.set("elevationInfo", js.undefined)
-    
-    @scala.inline
-    def setModifications(value: SceneModificationsProperties): Self = this.set("modifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifications: Self = this.set("modifications", js.undefined)
+    def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
   }
 }

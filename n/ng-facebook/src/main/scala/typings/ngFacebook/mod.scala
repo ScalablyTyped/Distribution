@@ -16,20 +16,20 @@ import typings.facebookJsSdk.facebook.SendDialogParams
 import typings.facebookJsSdk.facebook.ShareDialogParams
 import typings.facebookJsSdk.facebook.ShareOpenGraphDialogParams
 import typings.ngFacebook.anon.PartialInitParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("angular", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object ngFacebook extends js.Object {
+  object ngFacebook {
+    
+    type FBUIParams = ShareDialogParams | ShareOpenGraphDialogParams | AddPageTabDialogParams | GameRequestDialogParams | SendDialogParams | PayDialogParams | PaymentsLiteDialogParams | LiveDialogParams | CreateOfferDialogParams | LeadgenDialogParams | InstantExperiencesAdsDialogParams | InstantExperiencesPreviewDialogParams | CollectionAdsDialogParams
     
     @js.native
-    trait IFacebookProvider extends js.Object {
+    trait IFacebookProvider extends StObject {
       
       def getAppId(): String = js.native
       
@@ -50,7 +50,7 @@ object mod extends js.Object {
     }
     
     @js.native
-    trait IFacebookService extends js.Object {
+    trait IFacebookService extends StObject {
       
       def api(path: String): IPromise[js.Object] = js.native
       def api(path: String, method: String): IPromise[js.Object] = js.native
@@ -85,7 +85,5 @@ object mod extends js.Object {
       
       def ui(params: FBUIParams): IPromise[_] = js.native
     }
-    
-    type FBUIParams = ShareDialogParams | ShareOpenGraphDialogParams | AddPageTabDialogParams | GameRequestDialogParams | SendDialogParams | PayDialogParams | PaymentsLiteDialogParams | LiveDialogParams | CreateOfferDialogParams | LeadgenDialogParams | InstantExperiencesAdsDialogParams | InstantExperiencesPreviewDialogParams | CollectionAdsDialogParams
   }
 }

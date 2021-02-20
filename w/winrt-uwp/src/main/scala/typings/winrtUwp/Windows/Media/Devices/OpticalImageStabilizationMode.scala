@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OpticalImageStabilizationMode extends js.Object
+sealed trait OpticalImageStabilizationMode extends StObject
 /** Defines the optical image stabilization modes. */
 @JSGlobal("Windows.Media.Devices.OpticalImageStabilizationMode")
 @js.native
-object OpticalImageStabilizationMode extends js.Object {
+object OpticalImageStabilizationMode extends StObject {
   
   /** The system dynamically enables optical image stabilization when appropriate. */
   @js.native

@@ -2,13 +2,14 @@ package typings.chayns
 
 import typings.chayns.chayns.dialog.dateType
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.dialog.date()
 @js.native
-trait DialogDateConfig extends js.Object {
+trait DialogDateConfig extends StObject {
   
   var dateType: typings.chayns.chayns.dialog.dateType = js.native
   
@@ -27,39 +28,27 @@ object DialogDateConfig {
   }
   
   @scala.inline
-  implicit class DialogDateConfigOps[Self <: DialogDateConfig] (val x: Self) extends AnyVal {
+  implicit class DialogDateConfigMutableBuilder[Self <: DialogDateConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateType(value: dateType): Self = StObject.set(x, "dateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
     @scala.inline
-    def setDateType(value: dateType): Self = this.set("dateType", value.asInstanceOf[js.Any])
+    def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
     @scala.inline
-    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    def setPreSelect(value: Date): Self = StObject.set(x, "preSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinDate: Self = this.set("minDate", js.undefined)
-    
-    @scala.inline
-    def setPreSelect(value: Date): Self = this.set("preSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreSelect: Self = this.set("preSelect", js.undefined)
+    def setPreSelectUndefined: Self = StObject.set(x, "preSelect", js.undefined)
   }
 }

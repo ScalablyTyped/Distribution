@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tray extends js.Object {
+trait Tray extends StObject {
   
   def close(): Unit = js.native
   def close(done: js.Function0[Unit]): Unit = js.native

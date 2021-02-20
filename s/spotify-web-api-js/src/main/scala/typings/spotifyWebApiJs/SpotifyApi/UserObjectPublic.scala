@@ -1,6 +1,7 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.user
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
 @js.native
-trait UserObjectPublic extends js.Object {
+trait UserObjectPublic extends StObject {
   
   var display_name: js.UndefOr[String] = js.native
   
@@ -38,54 +39,42 @@ object UserObjectPublic {
   }
   
   @scala.inline
-  implicit class UserObjectPublicOps[Self <: UserObjectPublic] (val x: Self) extends AnyVal {
+  implicit class UserObjectPublicMutableBuilder[Self <: UserObjectPublic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = this.set("external_urls", value.asInstanceOf[js.Any])
+    def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setFollowersUndefined: Self = StObject.set(x, "followers", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: user): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteDisplay_name: Self = this.set("display_name", js.undefined)
+    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setFollowers(value: FollowersObject): Self = this.set("followers", value.asInstanceOf[js.Any])
+    def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFollowers: Self = this.set("followers", js.undefined)
-    
-    @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = this.set("images", js.Array(value :_*))
-    
-    @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = this.set("images", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

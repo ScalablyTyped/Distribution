@@ -1,11 +1,12 @@
 package typings.node.dnsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LookupOptions extends js.Object {
+trait LookupOptions extends StObject {
   
   var all: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object LookupOptions {
   }
   
   @scala.inline
-  implicit class LookupOptionsOps[Self <: LookupOptions] (val x: Self) extends AnyVal {
+  implicit class LookupOptionsMutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: Double): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setVerbatim(value: Boolean): Self = StObject.set(x, "verbatim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHints(value: Double): Self = this.set("hints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHints: Self = this.set("hints", js.undefined)
-    
-    @scala.inline
-    def setVerbatim(value: Boolean): Self = this.set("verbatim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbatim: Self = this.set("verbatim", js.undefined)
+    def setVerbatimUndefined: Self = StObject.set(x, "verbatim", js.undefined)
   }
 }

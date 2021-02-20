@@ -2,12 +2,13 @@ package typings.reactNavigationStack.vendorTypesMod
 
 import typings.reactNavigationStack.anon.Data
 import typings.reactNavigationStack.anon.DataUndefined
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackNavigationEventMap extends js.Object {
+trait StackNavigationEventMap extends StObject {
   
   /**
     * Event which fires when navigation gesture is canceled.
@@ -49,33 +50,21 @@ object StackNavigationEventMap {
   }
   
   @scala.inline
-  implicit class StackNavigationEventMapOps[Self <: StackNavigationEventMap] (val x: Self) extends AnyVal {
+  implicit class StackNavigationEventMapMutableBuilder[Self <: StackNavigationEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGestureCancel(value: DataUndefined): Self = StObject.set(x, "gestureCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGestureEnd(value: DataUndefined): Self = StObject.set(x, "gestureEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGestureStart(value: DataUndefined): Self = StObject.set(x, "gestureStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureCancel(value: DataUndefined): Self = this.set("gestureCancel", value.asInstanceOf[js.Any])
+    def setTransitionEnd(value: Data): Self = StObject.set(x, "transitionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureEnd(value: DataUndefined): Self = this.set("gestureEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGestureStart(value: DataUndefined): Self = this.set("gestureStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionEnd(value: Data): Self = this.set("transitionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionStart(value: Data): Self = this.set("transitionStart", value.asInstanceOf[js.Any])
+    def setTransitionStart(value: Data): Self = StObject.set(x, "transitionStart", value.asInstanceOf[js.Any])
   }
 }

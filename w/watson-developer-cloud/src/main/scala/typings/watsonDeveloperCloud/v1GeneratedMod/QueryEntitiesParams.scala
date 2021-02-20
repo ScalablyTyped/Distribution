@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `queryEntities` operation. */
 @js.native
-trait QueryEntitiesParams extends js.Object {
+trait QueryEntitiesParams extends StObject {
   
   /** The ID of the collection. */
   var collection_id: String = js.native
@@ -42,66 +43,54 @@ object QueryEntitiesParams {
   }
   
   @scala.inline
-  implicit class QueryEntitiesParamsOps[Self <: QueryEntitiesParams] (val x: Self) extends AnyVal {
+  implicit class QueryEntitiesParamsMutableBuilder[Self <: QueryEntitiesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: QueryEntitiesContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setCollection_id(value: String): Self = this.set("collection_id", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment_id(value: String): Self = this.set("environment_id", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setContext(value: QueryEntitiesContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setEntity(value: QueryEntitiesEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setEvidence_count(value: Double): Self = StObject.set(x, "evidence_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: QueryEntitiesEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setEvidence_countUndefined: Self = StObject.set(x, "evidence_count", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
+    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvidence_count(value: Double): Self = this.set("evidence_count", value.asInstanceOf[js.Any])
+    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
     @scala.inline
-    def deleteEvidence_count: Self = this.set("evidence_count", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: String): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFeature: Self = this.set("feature", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

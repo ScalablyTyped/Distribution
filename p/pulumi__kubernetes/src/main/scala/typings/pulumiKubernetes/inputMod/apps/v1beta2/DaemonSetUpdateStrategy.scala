@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apps.v1beta2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DaemonSetUpdateStrategy is a struct used to control the update strategy for a DaemonSet.
   */
 @js.native
-trait DaemonSetUpdateStrategy extends js.Object {
+trait DaemonSetUpdateStrategy extends StObject {
   
   /**
     * Rolling update config params. Present only if type = "RollingUpdate".
@@ -30,30 +31,18 @@ object DaemonSetUpdateStrategy {
   }
   
   @scala.inline
-  implicit class DaemonSetUpdateStrategyOps[Self <: DaemonSetUpdateStrategy] (val x: Self) extends AnyVal {
+  implicit class DaemonSetUpdateStrategyMutableBuilder[Self <: DaemonSetUpdateStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRollingUpdate(value: Input[RollingUpdateDaemonSet]): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRollingUpdateUndefined: Self = StObject.set(x, "rollingUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollingUpdate(value: Input[RollingUpdateDaemonSet]): Self = this.set("rollingUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollingUpdate: Self = this.set("rollingUpdate", js.undefined)
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

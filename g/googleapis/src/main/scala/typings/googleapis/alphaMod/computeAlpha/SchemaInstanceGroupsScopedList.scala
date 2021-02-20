@@ -1,12 +1,13 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupsScopedList extends js.Object {
+trait SchemaInstanceGroupsScopedList extends StObject {
   
   /**
     * [Output Only] The list of instance groups that are contained in this
@@ -29,33 +30,21 @@ object SchemaInstanceGroupsScopedList {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupsScopedListOps[Self <: SchemaInstanceGroupsScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupsScopedListMutableBuilder[Self <: SchemaInstanceGroupsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceGroups(value: js.Array[SchemaInstanceGroup]): Self = StObject.set(x, "instanceGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceGroupsUndefined: Self = StObject.set(x, "instanceGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceGroupsVarargs(value: SchemaInstanceGroup*): Self = StObject.set(x, "instanceGroups", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceGroupsVarargs(value: SchemaInstanceGroup*): Self = this.set("instanceGroups", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroups(value: js.Array[SchemaInstanceGroup]): Self = this.set("instanceGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceGroups: Self = this.set("instanceGroups", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

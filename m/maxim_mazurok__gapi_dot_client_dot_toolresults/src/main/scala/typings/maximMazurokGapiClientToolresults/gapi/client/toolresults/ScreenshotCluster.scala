@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScreenshotCluster extends js.Object {
+trait ScreenshotCluster extends StObject {
   
   /** A string that describes the activity of every screen in the cluster. */
   var activity: js.UndefOr[String] = js.native
@@ -31,45 +32,33 @@ object ScreenshotCluster {
   }
   
   @scala.inline
-  implicit class ScreenshotClusterOps[Self <: ScreenshotCluster] (val x: Self) extends AnyVal {
+  implicit class ScreenshotClusterMutableBuilder[Self <: ScreenshotCluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivity(value: String): Self = this.set("activity", value.asInstanceOf[js.Any])
+    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     @scala.inline
-    def deleteActivity: Self = this.set("activity", js.undefined)
+    def setKeyScreen(value: Screen): Self = StObject.set(x, "keyScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    def setKeyScreenUndefined: Self = StObject.set(x, "keyScreen", js.undefined)
     
     @scala.inline
-    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    def setScreens(value: js.Array[Screen]): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyScreen(value: Screen): Self = this.set("keyScreen", value.asInstanceOf[js.Any])
+    def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
     
     @scala.inline
-    def deleteKeyScreen: Self = this.set("keyScreen", js.undefined)
-    
-    @scala.inline
-    def setScreensVarargs(value: Screen*): Self = this.set("screens", js.Array(value :_*))
-    
-    @scala.inline
-    def setScreens(value: js.Array[Screen]): Self = this.set("screens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreens: Self = this.set("screens", js.undefined)
+    def setScreensVarargs(value: Screen*): Self = StObject.set(x, "screens", js.Array(value :_*))
   }
 }

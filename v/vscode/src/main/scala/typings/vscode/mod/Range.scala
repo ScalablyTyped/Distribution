@@ -1,13 +1,14 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.End
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Range")
 @js.native
-class Range protected () extends js.Object {
+class Range protected () extends StObject {
   /**
     * Create a new range from two positions. If `start` is not
     * before or equal to `end`, the values will be swapped.

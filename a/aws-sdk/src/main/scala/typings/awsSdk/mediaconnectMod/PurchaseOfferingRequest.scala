@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PurchaseOfferingRequest extends js.Object {
+trait PurchaseOfferingRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the offering.
@@ -31,27 +32,15 @@ object PurchaseOfferingRequest {
   }
   
   @scala.inline
-  implicit class PurchaseOfferingRequestOps[Self <: PurchaseOfferingRequest] (val x: Self) extends AnyVal {
+  implicit class PurchaseOfferingRequestMutableBuilder[Self <: PurchaseOfferingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReservationName(value: string): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOfferingArn(value: string): Self = this.set("OfferingArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReservationName(value: string): Self = this.set("ReservationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: string): Self = this.set("Start", value.asInstanceOf[js.Any])
+    def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

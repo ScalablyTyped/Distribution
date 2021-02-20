@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRevealOptions extends js.Object {
+trait IRevealOptions extends StObject {
   
   var animationIn: js.UndefOr[String] = js.native
   
@@ -44,102 +45,90 @@ object IRevealOptions {
   }
   
   @scala.inline
-  implicit class IRevealOptionsOps[Self <: IRevealOptions] (val x: Self) extends AnyVal {
+  implicit class IRevealOptionsMutableBuilder[Self <: IRevealOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationIn(value: String): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationOut(value: String): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationIn(value: String): Self = this.set("animationIn", value.asInstanceOf[js.Any])
+    def setAnimationOutUndefined: Self = StObject.set(x, "animationOut", js.undefined)
     
     @scala.inline
-    def deleteAnimationIn: Self = this.set("animationIn", js.undefined)
+    def setBtmOffsetPct(value: Double): Self = StObject.set(x, "btmOffsetPct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOut(value: String): Self = this.set("animationOut", value.asInstanceOf[js.Any])
+    def setBtmOffsetPctUndefined: Self = StObject.set(x, "btmOffsetPct", js.undefined)
     
     @scala.inline
-    def deleteAnimationOut: Self = this.set("animationOut", js.undefined)
+    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtmOffsetPct(value: Double): Self = this.set("btmOffsetPct", value.asInstanceOf[js.Any])
+    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
     @scala.inline
-    def deleteBtmOffsetPct: Self = this.set("btmOffsetPct", js.undefined)
+    def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
     
     @scala.inline
-    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    def setDeepLink(value: Boolean): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnEsc(value: Boolean): Self = this.set("closeOnEsc", value.asInstanceOf[js.Any])
+    def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
     
     @scala.inline
-    def deleteCloseOnEsc: Self = this.set("closeOnEsc", js.undefined)
+    def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepLink(value: Boolean): Self = this.set("deepLink", value.asInstanceOf[js.Any])
+    def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
     @scala.inline
-    def deleteDeepLink: Self = this.set("deepLink", js.undefined)
+    def setHOffset(value: Double): Self = StObject.set(x, "hOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullScreen(value: Boolean): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setHOffsetUndefined: Self = StObject.set(x, "hOffset", js.undefined)
     
     @scala.inline
-    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHOffset(value: Double): Self = this.set("hOffset", value.asInstanceOf[js.Any])
+    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
     @scala.inline
-    def deleteHOffset: Self = this.set("hOffset", js.undefined)
+    def setMultipleOpened(value: Boolean): Self = StObject.set(x, "multipleOpened", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    def setMultipleOpenedUndefined: Self = StObject.set(x, "multipleOpened", js.undefined)
     
     @scala.inline
-    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleOpened(value: Boolean): Self = this.set("multipleOpened", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteMultipleOpened: Self = this.set("multipleOpened", js.undefined)
+    def setResetOnClose(value: Boolean): Self = StObject.set(x, "resetOnClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: Boolean): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setResetOnCloseUndefined: Self = StObject.set(x, "resetOnClose", js.undefined)
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetOnClose(value: Boolean): Self = this.set("resetOnClose", value.asInstanceOf[js.Any])
+    def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     
     @scala.inline
-    def deleteResetOnClose: Self = this.set("resetOnClose", js.undefined)
+    def setVOffset(value: Double): Self = StObject.set(x, "vOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDelay(value: Double): Self = this.set("showDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowDelay: Self = this.set("showDelay", js.undefined)
-    
-    @scala.inline
-    def setVOffset(value: Double): Self = this.set("vOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVOffset: Self = this.set("vOffset", js.undefined)
+    def setVOffsetUndefined: Self = StObject.set(x, "vOffset", js.undefined)
   }
 }

@@ -1,13 +1,12 @@
 package typings.typeorm
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/common/ObjectLiteral", JSImport.Namespace)
-@js.native
-object objectLiteralMod extends js.Object {
+object objectLiteralMod {
   
   type ObjectLiteral = StringDictionary[js.Any]
 }

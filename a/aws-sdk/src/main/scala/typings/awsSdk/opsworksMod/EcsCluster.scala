@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EcsCluster extends js.Object {
+trait EcsCluster extends StObject {
   
   /**
     * The cluster's ARN.
@@ -36,42 +37,30 @@ object EcsCluster {
   }
   
   @scala.inline
-  implicit class EcsClusterOps[Self <: EcsCluster] (val x: Self) extends AnyVal {
+  implicit class EcsClusterMutableBuilder[Self <: EcsCluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEcsClusterArnUndefined: Self = StObject.set(x, "EcsClusterArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEcsClusterName(value: String): Self = StObject.set(x, "EcsClusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcsClusterArn(value: String): Self = this.set("EcsClusterArn", value.asInstanceOf[js.Any])
+    def setEcsClusterNameUndefined: Self = StObject.set(x, "EcsClusterName", js.undefined)
     
     @scala.inline
-    def deleteEcsClusterArn: Self = this.set("EcsClusterArn", js.undefined)
+    def setRegisteredAt(value: DateTime): Self = StObject.set(x, "RegisteredAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcsClusterName(value: String): Self = this.set("EcsClusterName", value.asInstanceOf[js.Any])
+    def setRegisteredAtUndefined: Self = StObject.set(x, "RegisteredAt", js.undefined)
     
     @scala.inline
-    def deleteEcsClusterName: Self = this.set("EcsClusterName", js.undefined)
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredAt(value: DateTime): Self = this.set("RegisteredAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisteredAt: Self = this.set("RegisteredAt", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import typings.kendoUi.kendo.dataviz.map.layer.Shape
 import typings.kendoUi.kendo.drawing.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object MapShapeCreatedEvent {
   }
   
   @scala.inline
-  implicit class MapShapeCreatedEventOps[Self <: MapShapeCreatedEvent] (val x: Self) extends AnyVal {
+  implicit class MapShapeCreatedEventMutableBuilder[Self <: MapShapeCreatedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: Shape): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: Shape): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setShape(value: Element): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalEvent(value: js.Any): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
-    
-    @scala.inline
-    def setShape(value: Element): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
   }
 }

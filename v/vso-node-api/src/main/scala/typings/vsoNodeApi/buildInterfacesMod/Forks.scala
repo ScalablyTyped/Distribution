@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Forks extends js.Object {
+trait Forks extends StObject {
   
   /**
     * Indicates whether a build should use secrets when building forks of the selected repository.
@@ -26,24 +27,12 @@ object Forks {
   }
   
   @scala.inline
-  implicit class ForksOps[Self <: Forks] (val x: Self) extends AnyVal {
+  implicit class ForksMutableBuilder[Self <: Forks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSecrets(value: Boolean): Self = StObject.set(x, "allowSecrets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowSecrets(value: Boolean): Self = this.set("allowSecrets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

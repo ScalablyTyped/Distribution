@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebACL extends js.Object {
+trait WebACL extends StObject {
   
   /**
     * The action to perform if none of the Rules contained in the WebACL match. The action is specified by the WafAction object.
@@ -46,48 +47,36 @@ object WebACL {
   }
   
   @scala.inline
-  implicit class WebACLOps[Self <: WebACL] (val x: Self) extends AnyVal {
+  implicit class WebACLMutableBuilder[Self <: WebACL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAction(value: WafAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
     @scala.inline
-    def setDefaultAction(value: WafAction): Self = this.set("DefaultAction", value.asInstanceOf[js.Any])
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesVarargs(value: ActivatedRule*): Self = this.set("Rules", js.Array(value :_*))
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setRules(value: ActivatedRules): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    def setRules(value: ActivatedRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebACLId(value: ResourceId): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    def setWebACLArnUndefined: Self = StObject.set(x, "WebACLArn", js.undefined)
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setWebACLArn(value: ResourceArn): Self = this.set("WebACLArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebACLArn: Self = this.set("WebACLArn", js.undefined)
+    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

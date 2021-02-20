@@ -1,11 +1,12 @@
 package typings.awsSdk.ebsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Block extends js.Object {
+trait Block extends StObject {
   
   /**
     * The block index.
@@ -26,30 +27,18 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIndexUndefined: Self = StObject.set(x, "BlockIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockToken(value: BlockToken): Self = StObject.set(x, "BlockToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockIndex(value: BlockIndex): Self = this.set("BlockIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockIndex: Self = this.set("BlockIndex", js.undefined)
-    
-    @scala.inline
-    def setBlockToken(value: BlockToken): Self = this.set("BlockToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockToken: Self = this.set("BlockToken", js.undefined)
+    def setBlockTokenUndefined: Self = StObject.set(x, "BlockToken", js.undefined)
   }
 }

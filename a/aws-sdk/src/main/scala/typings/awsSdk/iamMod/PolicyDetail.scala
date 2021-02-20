@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyDetail extends js.Object {
+trait PolicyDetail extends StObject {
   
   /**
     * The policy document.
@@ -26,30 +27,18 @@ object PolicyDetail {
   }
   
   @scala.inline
-  implicit class PolicyDetailOps[Self <: PolicyDetail] (val x: Self) extends AnyVal {
+  implicit class PolicyDetailMutableBuilder[Self <: PolicyDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyDocument(value: policyDocumentType): Self = StObject.set(x, "PolicyDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyDocumentUndefined: Self = StObject.set(x, "PolicyDocument", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyDocument(value: policyDocumentType): Self = this.set("PolicyDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyDocument: Self = this.set("PolicyDocument", js.undefined)
-    
-    @scala.inline
-    def setPolicyName(value: policyNameType): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyName: Self = this.set("PolicyName", js.undefined)
+    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cluster extends js.Object {
+trait Cluster extends StObject {
   
   /**
     * A boolean value that, if true, indicates that major version upgrades will be applied automatically to the cluster during the maintenance window. 
@@ -251,324 +252,312 @@ object Cluster {
   }
   
   @scala.inline
-  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+  implicit class ClusterMutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowVersionUpgrade(value: Boolean): Self = StObject.set(x, "AllowVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowVersionUpgradeUndefined: Self = StObject.set(x, "AllowVersionUpgrade", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomatedSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowVersionUpgrade(value: Boolean): Self = this.set("AllowVersionUpgrade", value.asInstanceOf[js.Any])
+    def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteAllowVersionUpgrade: Self = this.set("AllowVersionUpgrade", js.undefined)
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedSnapshotRetentionPeriod(value: Integer): Self = this.set("AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAutomatedSnapshotRetentionPeriod: Self = this.set("AutomatedSnapshotRetentionPeriod", js.undefined)
+    def setClusterAvailabilityStatus(value: String): Self = StObject.set(x, "ClusterAvailabilityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setClusterAvailabilityStatusUndefined: Self = StObject.set(x, "ClusterAvailabilityStatus", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterAvailabilityStatus(value: String): Self = this.set("ClusterAvailabilityStatus", value.asInstanceOf[js.Any])
+    def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
     
     @scala.inline
-    def deleteClusterAvailabilityStatus: Self = this.set("ClusterAvailabilityStatus", js.undefined)
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterCreateTime(value: TStamp): Self = this.set("ClusterCreateTime", value.asInstanceOf[js.Any])
+    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
     @scala.inline
-    def deleteClusterCreateTime: Self = this.set("ClusterCreateTime", js.undefined)
+    def setClusterNamespaceArn(value: String): Self = StObject.set(x, "ClusterNamespaceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setClusterNamespaceArnUndefined: Self = StObject.set(x, "ClusterNamespaceArn", js.undefined)
     
     @scala.inline
-    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    def setClusterNodes(value: ClusterNodesList): Self = StObject.set(x, "ClusterNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterNamespaceArn(value: String): Self = this.set("ClusterNamespaceArn", value.asInstanceOf[js.Any])
+    def setClusterNodesUndefined: Self = StObject.set(x, "ClusterNodes", js.undefined)
     
     @scala.inline
-    def deleteClusterNamespaceArn: Self = this.set("ClusterNamespaceArn", js.undefined)
+    def setClusterNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "ClusterNodes", js.Array(value :_*))
     
     @scala.inline
-    def setClusterNodesVarargs(value: ClusterNode*): Self = this.set("ClusterNodes", js.Array(value :_*))
+    def setClusterParameterGroups(value: ClusterParameterGroupStatusList): Self = StObject.set(x, "ClusterParameterGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterNodes(value: ClusterNodesList): Self = this.set("ClusterNodes", value.asInstanceOf[js.Any])
+    def setClusterParameterGroupsUndefined: Self = StObject.set(x, "ClusterParameterGroups", js.undefined)
     
     @scala.inline
-    def deleteClusterNodes: Self = this.set("ClusterNodes", js.undefined)
+    def setClusterParameterGroupsVarargs(value: ClusterParameterGroupStatus*): Self = StObject.set(x, "ClusterParameterGroups", js.Array(value :_*))
     
     @scala.inline
-    def setClusterParameterGroupsVarargs(value: ClusterParameterGroupStatus*): Self = this.set("ClusterParameterGroups", js.Array(value :_*))
+    def setClusterPublicKey(value: String): Self = StObject.set(x, "ClusterPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterParameterGroups(value: ClusterParameterGroupStatusList): Self = this.set("ClusterParameterGroups", value.asInstanceOf[js.Any])
+    def setClusterPublicKeyUndefined: Self = StObject.set(x, "ClusterPublicKey", js.undefined)
     
     @scala.inline
-    def deleteClusterParameterGroups: Self = this.set("ClusterParameterGroups", js.undefined)
+    def setClusterRevisionNumber(value: String): Self = StObject.set(x, "ClusterRevisionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterPublicKey(value: String): Self = this.set("ClusterPublicKey", value.asInstanceOf[js.Any])
+    def setClusterRevisionNumberUndefined: Self = StObject.set(x, "ClusterRevisionNumber", js.undefined)
     
     @scala.inline
-    def deleteClusterPublicKey: Self = this.set("ClusterPublicKey", js.undefined)
+    def setClusterSecurityGroups(value: ClusterSecurityGroupMembershipList): Self = StObject.set(x, "ClusterSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterRevisionNumber(value: String): Self = this.set("ClusterRevisionNumber", value.asInstanceOf[js.Any])
+    def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteClusterRevisionNumber: Self = this.set("ClusterRevisionNumber", js.undefined)
+    def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroupMembership*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroupMembership*): Self = this.set("ClusterSecurityGroups", js.Array(value :_*))
+    def setClusterSnapshotCopyStatus(value: ClusterSnapshotCopyStatus): Self = StObject.set(x, "ClusterSnapshotCopyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSecurityGroups(value: ClusterSecurityGroupMembershipList): Self = this.set("ClusterSecurityGroups", value.asInstanceOf[js.Any])
+    def setClusterSnapshotCopyStatusUndefined: Self = StObject.set(x, "ClusterSnapshotCopyStatus", js.undefined)
     
     @scala.inline
-    def deleteClusterSecurityGroups: Self = this.set("ClusterSecurityGroups", js.undefined)
+    def setClusterStatus(value: String): Self = StObject.set(x, "ClusterStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSnapshotCopyStatus(value: ClusterSnapshotCopyStatus): Self = this.set("ClusterSnapshotCopyStatus", value.asInstanceOf[js.Any])
+    def setClusterStatusUndefined: Self = StObject.set(x, "ClusterStatus", js.undefined)
     
     @scala.inline
-    def deleteClusterSnapshotCopyStatus: Self = this.set("ClusterSnapshotCopyStatus", js.undefined)
+    def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "ClusterSubnetGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterStatus(value: String): Self = this.set("ClusterStatus", value.asInstanceOf[js.Any])
+    def setClusterSubnetGroupNameUndefined: Self = StObject.set(x, "ClusterSubnetGroupName", js.undefined)
     
     @scala.inline
-    def deleteClusterStatus: Self = this.set("ClusterStatus", js.undefined)
+    def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSubnetGroupName(value: String): Self = this.set("ClusterSubnetGroupName", value.asInstanceOf[js.Any])
+    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
     @scala.inline
-    def deleteClusterSubnetGroupName: Self = this.set("ClusterSubnetGroupName", js.undefined)
+    def setDBName(value: String): Self = StObject.set(x, "DBName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
+    def setDBNameUndefined: Self = StObject.set(x, "DBName", js.undefined)
     
     @scala.inline
-    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
+    def setDataTransferProgress(value: DataTransferProgress): Self = StObject.set(x, "DataTransferProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBName(value: String): Self = this.set("DBName", value.asInstanceOf[js.Any])
+    def setDataTransferProgressUndefined: Self = StObject.set(x, "DataTransferProgress", js.undefined)
     
     @scala.inline
-    def deleteDBName: Self = this.set("DBName", js.undefined)
+    def setDeferredMaintenanceWindows(value: DeferredMaintenanceWindowsList): Self = StObject.set(x, "DeferredMaintenanceWindows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTransferProgress(value: DataTransferProgress): Self = this.set("DataTransferProgress", value.asInstanceOf[js.Any])
+    def setDeferredMaintenanceWindowsUndefined: Self = StObject.set(x, "DeferredMaintenanceWindows", js.undefined)
     
     @scala.inline
-    def deleteDataTransferProgress: Self = this.set("DataTransferProgress", js.undefined)
+    def setDeferredMaintenanceWindowsVarargs(value: DeferredMaintenanceWindow*): Self = StObject.set(x, "DeferredMaintenanceWindows", js.Array(value :_*))
     
     @scala.inline
-    def setDeferredMaintenanceWindowsVarargs(value: DeferredMaintenanceWindow*): Self = this.set("DeferredMaintenanceWindows", js.Array(value :_*))
+    def setElasticIpStatus(value: ElasticIpStatus): Self = StObject.set(x, "ElasticIpStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferredMaintenanceWindows(value: DeferredMaintenanceWindowsList): Self = this.set("DeferredMaintenanceWindows", value.asInstanceOf[js.Any])
+    def setElasticIpStatusUndefined: Self = StObject.set(x, "ElasticIpStatus", js.undefined)
     
     @scala.inline
-    def deleteDeferredMaintenanceWindows: Self = this.set("DeferredMaintenanceWindows", js.undefined)
+    def setElasticResizeNumberOfNodeOptions(value: String): Self = StObject.set(x, "ElasticResizeNumberOfNodeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticIpStatus(value: ElasticIpStatus): Self = this.set("ElasticIpStatus", value.asInstanceOf[js.Any])
+    def setElasticResizeNumberOfNodeOptionsUndefined: Self = StObject.set(x, "ElasticResizeNumberOfNodeOptions", js.undefined)
     
     @scala.inline
-    def deleteElasticIpStatus: Self = this.set("ElasticIpStatus", js.undefined)
+    def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticResizeNumberOfNodeOptions(value: String): Self = this.set("ElasticResizeNumberOfNodeOptions", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     @scala.inline
-    def deleteElasticResizeNumberOfNodeOptions: Self = this.set("ElasticResizeNumberOfNodeOptions", js.undefined)
+    def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    def setEnhancedVpcRouting(value: Boolean): Self = StObject.set(x, "EnhancedVpcRouting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: Endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setEnhancedVpcRoutingUndefined: Self = StObject.set(x, "EnhancedVpcRouting", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setExpectedNextSnapshotScheduleTime(value: TStamp): Self = StObject.set(x, "ExpectedNextSnapshotScheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedVpcRouting(value: Boolean): Self = this.set("EnhancedVpcRouting", value.asInstanceOf[js.Any])
+    def setExpectedNextSnapshotScheduleTimeStatus(value: String): Self = StObject.set(x, "ExpectedNextSnapshotScheduleTimeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnhancedVpcRouting: Self = this.set("EnhancedVpcRouting", js.undefined)
+    def setExpectedNextSnapshotScheduleTimeStatusUndefined: Self = StObject.set(x, "ExpectedNextSnapshotScheduleTimeStatus", js.undefined)
     
     @scala.inline
-    def setExpectedNextSnapshotScheduleTime(value: TStamp): Self = this.set("ExpectedNextSnapshotScheduleTime", value.asInstanceOf[js.Any])
+    def setExpectedNextSnapshotScheduleTimeUndefined: Self = StObject.set(x, "ExpectedNextSnapshotScheduleTime", js.undefined)
     
     @scala.inline
-    def deleteExpectedNextSnapshotScheduleTime: Self = this.set("ExpectedNextSnapshotScheduleTime", js.undefined)
+    def setHsmStatus(value: HsmStatus): Self = StObject.set(x, "HsmStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedNextSnapshotScheduleTimeStatus(value: String): Self = this.set("ExpectedNextSnapshotScheduleTimeStatus", value.asInstanceOf[js.Any])
+    def setHsmStatusUndefined: Self = StObject.set(x, "HsmStatus", js.undefined)
     
     @scala.inline
-    def deleteExpectedNextSnapshotScheduleTimeStatus: Self = this.set("ExpectedNextSnapshotScheduleTimeStatus", js.undefined)
+    def setIamRoles(value: ClusterIamRoleList): Self = StObject.set(x, "IamRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmStatus(value: HsmStatus): Self = this.set("HsmStatus", value.asInstanceOf[js.Any])
+    def setIamRolesUndefined: Self = StObject.set(x, "IamRoles", js.undefined)
     
     @scala.inline
-    def deleteHsmStatus: Self = this.set("HsmStatus", js.undefined)
+    def setIamRolesVarargs(value: ClusterIamRole*): Self = StObject.set(x, "IamRoles", js.Array(value :_*))
     
     @scala.inline
-    def setIamRolesVarargs(value: ClusterIamRole*): Self = this.set("IamRoles", js.Array(value :_*))
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoles(value: ClusterIamRoleList): Self = this.set("IamRoles", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteIamRoles: Self = this.set("IamRoles", js.undefined)
+    def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setManualSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceTrackName(value: String): Self = this.set("MaintenanceTrackName", value.asInstanceOf[js.Any])
+    def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceTrackName: Self = this.set("MaintenanceTrackName", js.undefined)
+    def setMasterUsername(value: String): Self = StObject.set(x, "MasterUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualSnapshotRetentionPeriod(value: Integer): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    def setMasterUsernameUndefined: Self = StObject.set(x, "MasterUsername", js.undefined)
     
     @scala.inline
-    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
+    def setModifyStatus(value: String): Self = StObject.set(x, "ModifyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUsername(value: String): Self = this.set("MasterUsername", value.asInstanceOf[js.Any])
+    def setModifyStatusUndefined: Self = StObject.set(x, "ModifyStatus", js.undefined)
     
     @scala.inline
-    def deleteMasterUsername: Self = this.set("MasterUsername", js.undefined)
+    def setNextMaintenanceWindowStartTime(value: TStamp): Self = StObject.set(x, "NextMaintenanceWindowStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyStatus(value: String): Self = this.set("ModifyStatus", value.asInstanceOf[js.Any])
+    def setNextMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "NextMaintenanceWindowStartTime", js.undefined)
     
     @scala.inline
-    def deleteModifyStatus: Self = this.set("ModifyStatus", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMaintenanceWindowStartTime(value: TStamp): Self = this.set("NextMaintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
     @scala.inline
-    def deleteNextMaintenanceWindowStartTime: Self = this.set("NextMaintenanceWindowStartTime", js.undefined)
+    def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
     
     @scala.inline
-    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    def setPendingActions(value: PendingActionsList): Self = StObject.set(x, "PendingActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfNodes(value: Integer): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
+    def setPendingActionsUndefined: Self = StObject.set(x, "PendingActions", js.undefined)
     
     @scala.inline
-    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    def setPendingActionsVarargs(value: String*): Self = StObject.set(x, "PendingActions", js.Array(value :_*))
     
     @scala.inline
-    def setPendingActionsVarargs(value: String*): Self = this.set("PendingActions", js.Array(value :_*))
+    def setPendingModifiedValues(value: PendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingActions(value: PendingActionsList): Self = this.set("PendingActions", value.asInstanceOf[js.Any])
+    def setPendingModifiedValuesUndefined: Self = StObject.set(x, "PendingModifiedValues", js.undefined)
     
     @scala.inline
-    def deletePendingActions: Self = this.set("PendingActions", js.undefined)
+    def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingModifiedValues(value: PendingModifiedValues): Self = this.set("PendingModifiedValues", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def deletePendingModifiedValues: Self = this.set("PendingModifiedValues", js.undefined)
+    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
     
     @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    def setResizeInfo(value: ResizeInfo): Self = StObject.set(x, "ResizeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    def setResizeInfoUndefined: Self = StObject.set(x, "ResizeInfo", js.undefined)
     
     @scala.inline
-    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    def setRestoreStatus(value: RestoreStatus): Self = StObject.set(x, "RestoreStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeInfo(value: ResizeInfo): Self = this.set("ResizeInfo", value.asInstanceOf[js.Any])
+    def setRestoreStatusUndefined: Self = StObject.set(x, "RestoreStatus", js.undefined)
     
     @scala.inline
-    def deleteResizeInfo: Self = this.set("ResizeInfo", js.undefined)
+    def setSnapshotScheduleIdentifier(value: String): Self = StObject.set(x, "SnapshotScheduleIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestoreStatus(value: RestoreStatus): Self = this.set("RestoreStatus", value.asInstanceOf[js.Any])
+    def setSnapshotScheduleIdentifierUndefined: Self = StObject.set(x, "SnapshotScheduleIdentifier", js.undefined)
     
     @scala.inline
-    def deleteRestoreStatus: Self = this.set("RestoreStatus", js.undefined)
+    def setSnapshotScheduleState(value: ScheduleState): Self = StObject.set(x, "SnapshotScheduleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotScheduleIdentifier(value: String): Self = this.set("SnapshotScheduleIdentifier", value.asInstanceOf[js.Any])
+    def setSnapshotScheduleStateUndefined: Self = StObject.set(x, "SnapshotScheduleState", js.undefined)
     
     @scala.inline
-    def deleteSnapshotScheduleIdentifier: Self = this.set("SnapshotScheduleIdentifier", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotScheduleState(value: ScheduleState): Self = this.set("SnapshotScheduleState", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSnapshotScheduleState: Self = this.set("SnapshotScheduleState", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = StObject.set(x, "VpcSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
-    
-    @scala.inline
-    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = this.set("VpcSecurityGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = this.set("VpcSecurityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSecurityGroups: Self = this.set("VpcSecurityGroups", js.undefined)
+    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
   }
 }

@@ -1,12 +1,15 @@
 package typings.uniq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var uniq: Uniq = js.native
+  @JSGlobal("uniq")
+  @js.native
+  def uniq: Uniq = js.native
+  @scala.inline
+  def uniq_=(x: Uniq): Unit = js.Dynamic.global.updateDynamic("uniq")(x.asInstanceOf[js.Any])
 }

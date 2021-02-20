@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateEnvironmentMessage extends js.Object {
+trait TerminateEnvironmentMessage extends StObject {
   
   /**
     * The ID of the environment to terminate.  Condition: You must specify either this or an EnvironmentName, or both. If you do not specify either, AWS Elastic Beanstalk returns MissingRequiredParameter error. 
@@ -36,42 +37,30 @@ object TerminateEnvironmentMessage {
   }
   
   @scala.inline
-  implicit class TerminateEnvironmentMessageOps[Self <: TerminateEnvironmentMessage] (val x: Self) extends AnyVal {
+  implicit class TerminateEnvironmentMessageMutableBuilder[Self <: TerminateEnvironmentMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    def setForceTerminate(value: ForceTerminate): Self = StObject.set(x, "ForceTerminate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    def setForceTerminateUndefined: Self = StObject.set(x, "ForceTerminate", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    def setTerminateResources(value: TerminateEnvironmentResources): Self = StObject.set(x, "TerminateResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceTerminate(value: ForceTerminate): Self = this.set("ForceTerminate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceTerminate: Self = this.set("ForceTerminate", js.undefined)
-    
-    @scala.inline
-    def setTerminateResources(value: TerminateEnvironmentResources): Self = this.set("TerminateResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateResources: Self = this.set("TerminateResources", js.undefined)
+    def setTerminateResourcesUndefined: Self = StObject.set(x, "TerminateResources", js.undefined)
   }
 }

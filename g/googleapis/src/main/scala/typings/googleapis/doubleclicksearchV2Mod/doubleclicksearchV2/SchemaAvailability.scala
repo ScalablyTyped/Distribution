@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A message containing availability data relevant to DoubleClick Search.
   */
 @js.native
-trait SchemaAvailability extends js.Object {
+trait SchemaAvailability extends StObject {
   
   /**
     * DS advertiser ID.
@@ -53,54 +54,42 @@ object SchemaAvailability {
   }
   
   @scala.inline
-  implicit class SchemaAvailabilityOps[Self <: SchemaAvailability] (val x: Self) extends AnyVal {
+  implicit class SchemaAvailabilityMutableBuilder[Self <: SchemaAvailability] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setAvailabilityTimestamp(value: String): Self = StObject.set(x, "availabilityTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgencyId(value: String): Self = this.set("agencyId", value.asInstanceOf[js.Any])
+    def setAvailabilityTimestampUndefined: Self = StObject.set(x, "availabilityTimestamp", js.undefined)
     
     @scala.inline
-    def deleteAgencyId: Self = this.set("agencyId", js.undefined)
+    def setSegmentationId(value: String): Self = StObject.set(x, "segmentationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityTimestamp(value: String): Self = this.set("availabilityTimestamp", value.asInstanceOf[js.Any])
+    def setSegmentationIdUndefined: Self = StObject.set(x, "segmentationId", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityTimestamp: Self = this.set("availabilityTimestamp", js.undefined)
+    def setSegmentationName(value: String): Self = StObject.set(x, "segmentationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationId(value: String): Self = this.set("segmentationId", value.asInstanceOf[js.Any])
+    def setSegmentationNameUndefined: Self = StObject.set(x, "segmentationName", js.undefined)
     
     @scala.inline
-    def deleteSegmentationId: Self = this.set("segmentationId", js.undefined)
+    def setSegmentationType(value: String): Self = StObject.set(x, "segmentationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentationName(value: String): Self = this.set("segmentationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentationName: Self = this.set("segmentationName", js.undefined)
-    
-    @scala.inline
-    def setSegmentationType(value: String): Self = this.set("segmentationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentationType: Self = this.set("segmentationType", js.undefined)
+    def setSegmentationTypeUndefined: Self = StObject.set(x, "segmentationType", js.undefined)
   }
 }

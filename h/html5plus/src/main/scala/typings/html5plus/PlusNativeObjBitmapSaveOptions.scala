@@ -2,6 +2,7 @@ package typings.html5plus
 
 import typings.html5plus.html5plusStrings.jpg
 import typings.html5plus.html5plusStrings.png
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjBitmapSaveOptions extends js.Object {
+trait PlusNativeObjBitmapSaveOptions extends StObject {
   
   /**
     * 指定裁剪区域保存图片
@@ -61,42 +62,30 @@ object PlusNativeObjBitmapSaveOptions {
   }
   
   @scala.inline
-  implicit class PlusNativeObjBitmapSaveOptionsOps[Self <: PlusNativeObjBitmapSaveOptions] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjBitmapSaveOptionsMutableBuilder[Self <: PlusNativeObjBitmapSaveOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClip(value: PlusNativeObjRect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: jpg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClip(value: PlusNativeObjRect): Self = this.set("clip", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteClip: Self = this.set("clip", js.undefined)
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: jpg | png): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
-    
-    @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

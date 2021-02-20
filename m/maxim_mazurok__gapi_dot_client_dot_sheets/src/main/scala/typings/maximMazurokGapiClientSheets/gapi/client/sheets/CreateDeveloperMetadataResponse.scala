@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeveloperMetadataResponse extends js.Object {
+trait CreateDeveloperMetadataResponse extends StObject {
   
   /** The developer metadata that was created. */
   var developerMetadata: js.UndefOr[DeveloperMetadata] = js.native
@@ -19,24 +20,12 @@ object CreateDeveloperMetadataResponse {
   }
   
   @scala.inline
-  implicit class CreateDeveloperMetadataResponseOps[Self <: CreateDeveloperMetadataResponse] (val x: Self) extends AnyVal {
+  implicit class CreateDeveloperMetadataResponseMutableBuilder[Self <: CreateDeveloperMetadataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeveloperMetadata(value: DeveloperMetadata): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
   }
 }

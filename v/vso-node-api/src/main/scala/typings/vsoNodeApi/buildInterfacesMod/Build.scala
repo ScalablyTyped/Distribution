@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Build extends js.Object {
+trait Build extends StObject {
   
   var _links: js.Any = js.native
   
@@ -261,156 +262,144 @@ object Build {
   }
   
   @scala.inline
-  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+  implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildNumberRevision(value: Double): Self = StObject.set(x, "buildNumberRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: BuildController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setDefinition(value: DefinitionReference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildNumber(value: String): Self = this.set("buildNumber", value.asInstanceOf[js.Any])
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildNumberRevision(value: Double): Self = this.set("buildNumberRevision", value.asInstanceOf[js.Any])
+    def setDeletedBy(value: IdentityRef): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: BuildController): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setDeletedDate(value: Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: DefinitionReference): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setDeletedReason(value: String): Self = StObject.set(x, "deletedReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedBy(value: IdentityRef): Self = this.set("deletedBy", value.asInstanceOf[js.Any])
+    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedDate(value: Date): Self = this.set("deletedDate", value.asInstanceOf[js.Any])
+    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedReason(value: String): Self = this.set("deletedReason", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = this.set("demands", js.Array(value :_*))
+    def setKeepForever(value: Boolean): Self = StObject.set(x, "keepForever", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = this.set("demands", value.asInstanceOf[js.Any])
+    def setLastChangedBy(value: IdentityRef): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTime(value: Date): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    def setLastChangedDate(value: Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLogs(value: BuildLogReference): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepForever(value: Boolean): Self = this.set("keepForever", value.asInstanceOf[js.Any])
+    def setOrchestrationPlan(value: TaskOrchestrationPlanReference): Self = StObject.set(x, "orchestrationPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChangedBy(value: IdentityRef): Self = this.set("lastChangedBy", value.asInstanceOf[js.Any])
+    def setParameters(value: String): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChangedDate(value: Date): Self = this.set("lastChangedDate", value.asInstanceOf[js.Any])
+    def setPlans(value: js.Array[TaskOrchestrationPlanReference]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: BuildLogReference): Self = this.set("logs", value.asInstanceOf[js.Any])
+    def setPlansVarargs(value: TaskOrchestrationPlanReference*): Self = StObject.set(x, "plans", js.Array(value :_*))
     
     @scala.inline
-    def setOrchestrationPlan(value: TaskOrchestrationPlanReference): Self = this.set("orchestrationPlan", value.asInstanceOf[js.Any])
+    def setPriority(value: QueuePriority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: String): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlansVarargs(value: TaskOrchestrationPlanReference*): Self = this.set("plans", js.Array(value :_*))
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlans(value: js.Array[TaskOrchestrationPlanReference]): Self = this.set("plans", value.asInstanceOf[js.Any])
+    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: QueuePriority): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setQueueOptions(value: QueueOptions): Self = StObject.set(x, "queueOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: String): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: AgentPoolQueue): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setReason(value: BuildReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueOptions(value: QueueOptions): Self = this.set("queueOptions", value.asInstanceOf[js.Any])
+    def setRepository(value: BuildRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuePosition(value: Double): Self = this.set("queuePosition", value.asInstanceOf[js.Any])
+    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueTime(value: Date): Self = this.set("queueTime", value.asInstanceOf[js.Any])
+    def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: BuildReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setResult(value: BuildResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: BuildRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setRetainedByRelease(value: Boolean): Self = StObject.set(x, "retainedByRelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
+    def setSourceBranch(value: String): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedFor(value: IdentityRef): Self = this.set("requestedFor", value.asInstanceOf[js.Any])
+    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: BuildResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainedByRelease(value: Boolean): Self = this.set("retainedByRelease", value.asInstanceOf[js.Any])
+    def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBranch(value: String): Self = this.set("sourceBranch", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTriggerInfo(value: StringDictionary[String]): Self = StObject.set(x, "triggerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: BuildStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setValidationResults(value: js.Array[BuildRequestValidationResult]): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerInfo(value: StringDictionary[String]): Self = this.set("triggerInfo", value.asInstanceOf[js.Any])
+    def setValidationResultsVarargs(value: BuildRequestValidationResult*): Self = StObject.set(x, "validationResults", js.Array(value :_*))
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationResultsVarargs(value: BuildRequestValidationResult*): Self = this.set("validationResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationResults(value: js.Array[BuildRequestValidationResult]): Self = this.set("validationResults", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

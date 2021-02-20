@@ -1,11 +1,12 @@
 package typings.kolite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirtyFlagResult extends js.Object {
+trait DirtyFlagResult extends StObject {
   
   def forceDirty(): Unit = js.native
   
@@ -26,29 +27,17 @@ object DirtyFlagResult {
   }
   
   @scala.inline
-  implicit class DirtyFlagResultOps[Self <: DirtyFlagResult] (val x: Self) extends AnyVal {
+  implicit class DirtyFlagResultMutableBuilder[Self <: DirtyFlagResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForceDirty(value: () => Unit): Self = this.set("forceDirty", js.Any.fromFunction0(value))
+    def setForceDirty(value: () => Unit): Self = StObject.set(x, "forceDirty", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsDirty(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
-    ): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

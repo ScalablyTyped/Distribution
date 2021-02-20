@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SamplesGenerator extends js.Object {
+trait SamplesGenerator extends StObject {
   
   var allowDuplicates: Boolean | Null = js.native
   

@@ -6,6 +6,7 @@ import typings.pubnub.anon.DataEventType
 import typings.pubnub.anon.DataId
 import typings.pubnub.anon.DataIdEvent
 import typings.pubnub.anon.DataUuid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,42 +19,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pubnub.mod.SetMembershipEvent[MembershipCustom]
   - typings.pubnub.mod.RemoveMembershipEvent
 */
-trait ObjectsEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */] extends js.Object
+trait ObjectsEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */] extends StObject
 object ObjectsEvent {
   
   @scala.inline
-  def SetMembershipEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */](channel: String, message: DataChannel[MembershipCustom], timetoken: Double): ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom] = {
+  def RemoveChannelMetadataEvent(channel: String, message: DataIdEvent, timetoken: Double): typings.pubnub.mod.RemoveChannelMetadataEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom]]
+    __obj.asInstanceOf[typings.pubnub.mod.RemoveChannelMetadataEvent]
   }
   
   @scala.inline
-  def SetUUIDMetadataEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */](channel: String, message: DataEventType[UUIDCustom], timetoken: Double): ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom] = {
+  def RemoveMembershipEvent(channel: String, message: DataUuid, timetoken: Double): typings.pubnub.mod.RemoveMembershipEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom]]
+    __obj.asInstanceOf[typings.pubnub.mod.RemoveMembershipEvent]
   }
   
   @scala.inline
-  def RemoveMembershipEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */](channel: String, message: DataUuid, timetoken: Double): ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom] = {
+  def RemoveUUIDMetadataEvent(channel: String, message: DataId, timetoken: Double): typings.pubnub.mod.RemoveUUIDMetadataEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom]]
+    __obj.asInstanceOf[typings.pubnub.mod.RemoveUUIDMetadataEvent]
   }
   
   @scala.inline
-  def RemoveUUIDMetadataEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */](channel: String, message: DataId, timetoken: Double): ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom] = {
+  def SetChannelMetadataEvent[ChannelCustom /* <: ObjectCustom */](channel: String, message: DataChannelMetadataObject[ChannelCustom], timetoken: Double): typings.pubnub.mod.SetChannelMetadataEvent[ChannelCustom] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom]]
+    __obj.asInstanceOf[typings.pubnub.mod.SetChannelMetadataEvent[ChannelCustom]]
   }
   
   @scala.inline
-  def RemoveChannelMetadataEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */](channel: String, message: DataIdEvent, timetoken: Double): ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom] = {
+  def SetMembershipEvent[MembershipCustom /* <: ObjectCustom */](channel: String, message: DataChannel[MembershipCustom], timetoken: Double): typings.pubnub.mod.SetMembershipEvent[MembershipCustom] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom]]
+    __obj.asInstanceOf[typings.pubnub.mod.SetMembershipEvent[MembershipCustom]]
   }
   
   @scala.inline
-  def SetChannelMetadataEvent[UUIDCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */, MembershipCustom /* <: ObjectCustom */](channel: String, message: DataChannelMetadataObject[ChannelCustom], timetoken: Double): ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom] = {
+  def SetUUIDMetadataEvent[UUIDCustom /* <: ObjectCustom */](channel: String, message: DataEventType[UUIDCustom], timetoken: Double): typings.pubnub.mod.SetUUIDMetadataEvent[UUIDCustom] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectsEvent[UUIDCustom, ChannelCustom, MembershipCustom]]
+    __obj.asInstanceOf[typings.pubnub.mod.SetUUIDMetadataEvent[UUIDCustom]]
   }
 }

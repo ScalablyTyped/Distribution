@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents settings for a FocusControl object. */
 @js.native
-trait FocusSettings extends js.Object {
+trait FocusSettings extends StObject {
   
   /** Gets or sets a value indicating the auto focus range setting. */
   var autoFocusRange: AutoFocusRange = js.native
@@ -42,36 +43,24 @@ object FocusSettings {
   }
   
   @scala.inline
-  implicit class FocusSettingsOps[Self <: FocusSettings] (val x: Self) extends AnyVal {
+  implicit class FocusSettingsMutableBuilder[Self <: FocusSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocusRange(value: AutoFocusRange): Self = StObject.set(x, "autoFocusRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableDriverFallback(value: Boolean): Self = StObject.set(x, "disableDriverFallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: ManualFocusDistance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocusRange(value: AutoFocusRange): Self = this.set("autoFocusRange", value.asInstanceOf[js.Any])
+    def setMode(value: FocusMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDriverFallback(value: Boolean): Self = this.set("disableDriverFallback", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: ManualFocusDistance): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: FocusMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaitForFocus(value: Boolean): Self = this.set("waitForFocus", value.asInstanceOf[js.Any])
+    def setWaitForFocus(value: Boolean): Self = StObject.set(x, "waitForFocus", value.asInstanceOf[js.Any])
   }
 }

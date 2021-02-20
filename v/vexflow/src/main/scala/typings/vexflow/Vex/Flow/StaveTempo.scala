@@ -2,6 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.anon.Bpm
 import typings.vexflow.anon.GetContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,30 +43,18 @@ object StaveTempo {
   }
   
   @scala.inline
-  implicit class StaveTempoOps[Self <: StaveTempo] (val x: Self) extends AnyVal {
+  implicit class StaveTempoMutableBuilder[Self <: StaveTempo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraw(value: (Stave, Double) => StaveTempo): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetShiftX(value: Double => StaveTempo): Self = StObject.set(x, "setShiftX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetShiftY(value: Double => StaveTempo): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraw(value: (Stave, Double) => StaveTempo): Self = this.set("draw", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetShiftX(value: Double => StaveTempo): Self = this.set("setShiftX", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetShiftY(value: Double => StaveTempo): Self = this.set("setShiftY", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTempo(value: Bpm => StaveTempo): Self = this.set("setTempo", js.Any.fromFunction1(value))
+    def setSetTempo(value: Bpm => StaveTempo): Self = StObject.set(x, "setTempo", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommitResponse extends js.Object {
+trait CommitResponse extends StObject {
   
   /** The time at which the commit occurred. Any read with an equal or greater `read_time` is guaranteed to see the effects of the commit. */
   var commitTime: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object CommitResponse {
   }
   
   @scala.inline
-  implicit class CommitResponseOps[Self <: CommitResponse] (val x: Self) extends AnyVal {
+  implicit class CommitResponseMutableBuilder[Self <: CommitResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitTime(value: String): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
     @scala.inline
-    def deleteCommitTime: Self = this.set("commitTime", js.undefined)
-    
-    @scala.inline
-    def setWriteResultsVarargs(value: WriteResult*): Self = this.set("writeResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setWriteResults(value: js.Array[WriteResult]): Self = this.set("writeResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteResults: Self = this.set("writeResults", js.undefined)
+    def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
   }
 }

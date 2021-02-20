@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketLogging extends js.Object {
+trait BucketLogging extends StObject {
   
   /**
     * The name of the bucket that will receive the log objects.
@@ -27,27 +28,15 @@ object BucketLogging {
   }
   
   @scala.inline
-  implicit class BucketLoggingOps[Self <: BucketLogging] (val x: Self) extends AnyVal {
+  implicit class BucketLoggingMutableBuilder[Self <: BucketLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetBucket(value: Input[String]): Self = StObject.set(x, "targetBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetPrefix(value: Input[String]): Self = StObject.set(x, "targetPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetBucket(value: Input[String]): Self = this.set("targetBucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetPrefix(value: Input[String]): Self = this.set("targetPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetPrefix: Self = this.set("targetPrefix", js.undefined)
+    def setTargetPrefixUndefined: Self = StObject.set(x, "targetPrefix", js.undefined)
   }
 }

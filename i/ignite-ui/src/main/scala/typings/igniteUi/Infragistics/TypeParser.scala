@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeParser extends js.Object {
+trait TypeParser extends StObject {
   
   def empty(): Unit = js.native
   
@@ -46,42 +47,30 @@ object TypeParser {
   }
   
   @scala.inline
-  implicit class TypeParserOps[Self <: TypeParser] (val x: Self) extends AnyVal {
+  implicit class TypeParserMutableBuilder[Self <: TypeParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsNullOrUndefined(value: js.Object => Unit): Self = StObject.set(x, "isNullOrUndefined", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNum(value: () => Unit): Self = StObject.set(x, "num", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEmpty(value: () => Unit): Self = this.set("empty", js.Any.fromFunction0(value))
+    def setToBool(value: js.Object => Unit): Self = StObject.set(x, "toBool", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNullOrUndefined(value: js.Object => Unit): Self = this.set("isNullOrUndefined", js.Any.fromFunction1(value))
+    def setToDate(value: js.Object => Unit): Self = StObject.set(x, "toDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNum(value: () => Unit): Self = this.set("num", js.Any.fromFunction0(value))
+    def setToNumber(value: js.Object => Unit): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToBool(value: js.Object => Unit): Self = this.set("toBool", js.Any.fromFunction1(value))
+    def setToStr(value: js.Object => Unit): Self = StObject.set(x, "toStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToDate(value: js.Object => Unit): Self = this.set("toDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToNumber(value: js.Object => Unit): Self = this.set("toNumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToStr(value: js.Object => Unit): Self = this.set("toStr", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToTime(value: js.Object => Unit): Self = this.set("toTime", js.Any.fromFunction1(value))
+    def setToTime(value: js.Object => Unit): Self = StObject.set(x, "toTime", js.Any.fromFunction1(value))
   }
 }

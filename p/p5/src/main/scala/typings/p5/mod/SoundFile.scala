@@ -2,12 +2,13 @@ package typings.p5.mod
 
 import typings.std.Blob
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoundFile extends js.Object {
+trait SoundFile extends StObject {
   
   /**
     *   Schedule events to trigger every time a

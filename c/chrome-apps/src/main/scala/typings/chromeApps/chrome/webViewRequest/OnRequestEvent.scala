@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides the Declarative Event API consisting of addRules, removeRules, and getRules.
   */
 @js.native
-trait OnRequestEvent extends js.Object {
+trait OnRequestEvent extends StObject {
   
   /**
     * Registers rules to handle events.

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriveExportOptions extends js.Object {
+trait DriveExportOptions extends StObject {
   
   /** Set to true to include access level information for users with indirect access to files. */
   var includeAccessInfo: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object DriveExportOptions {
   }
   
   @scala.inline
-  implicit class DriveExportOptionsOps[Self <: DriveExportOptions] (val x: Self) extends AnyVal {
+  implicit class DriveExportOptionsMutableBuilder[Self <: DriveExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeAccessInfo(value: Boolean): Self = StObject.set(x, "includeAccessInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeAccessInfo(value: Boolean): Self = this.set("includeAccessInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeAccessInfo: Self = this.set("includeAccessInfo", js.undefined)
+    def setIncludeAccessInfoUndefined: Self = StObject.set(x, "includeAccessInfo", js.undefined)
   }
 }

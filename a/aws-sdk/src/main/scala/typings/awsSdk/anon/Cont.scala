@@ -5,12 +5,13 @@ import typings.awsSdk.s3Mod.EndEvent
 import typings.awsSdk.s3Mod.ProgressEvent
 import typings.awsSdk.s3Mod.RecordsEvent
 import typings.awsSdk.s3Mod.StatsEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cont extends js.Object {
+trait Cont extends StObject {
   
   var Cont: js.UndefOr[ContinuationEvent] = js.native
   
@@ -31,48 +32,36 @@ object Cont {
   }
   
   @scala.inline
-  implicit class ContOps[Self <: Cont] (val x: Self) extends AnyVal {
+  implicit class ContMutableBuilder[Self <: Cont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCont(value: ContinuationEvent): Self = StObject.set(x, "Cont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContUndefined: Self = StObject.set(x, "Cont", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: EndEvent): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCont(value: ContinuationEvent): Self = this.set("Cont", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
     @scala.inline
-    def deleteCont: Self = this.set("Cont", js.undefined)
+    def setProgress(value: ProgressEvent): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: EndEvent): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("End", js.undefined)
+    def setRecords(value: RecordsEvent): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: ProgressEvent): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("Progress", js.undefined)
+    def setStats(value: StatsEvent): Self = StObject.set(x, "Stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecords(value: RecordsEvent): Self = this.set("Records", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecords: Self = this.set("Records", js.undefined)
-    
-    @scala.inline
-    def setStats(value: StatsEvent): Self = this.set("Stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStats: Self = this.set("Stats", js.undefined)
+    def setStatsUndefined: Self = StObject.set(x, "Stats", js.undefined)
   }
 }

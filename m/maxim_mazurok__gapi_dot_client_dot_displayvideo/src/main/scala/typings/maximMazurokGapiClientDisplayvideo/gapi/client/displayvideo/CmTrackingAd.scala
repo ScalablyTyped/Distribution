@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CmTrackingAd extends js.Object {
+trait CmTrackingAd extends StObject {
   
   /** The ad ID of the campaign manager 360 tracking Ad. */
   var cmAdId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object CmTrackingAd {
   }
   
   @scala.inline
-  implicit class CmTrackingAdOps[Self <: CmTrackingAd] (val x: Self) extends AnyVal {
+  implicit class CmTrackingAdMutableBuilder[Self <: CmTrackingAd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmAdId(value: String): Self = StObject.set(x, "cmAdId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmAdIdUndefined: Self = StObject.set(x, "cmAdId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCmCreativeId(value: String): Self = StObject.set(x, "cmCreativeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmAdId(value: String): Self = this.set("cmAdId", value.asInstanceOf[js.Any])
+    def setCmCreativeIdUndefined: Self = StObject.set(x, "cmCreativeId", js.undefined)
     
     @scala.inline
-    def deleteCmAdId: Self = this.set("cmAdId", js.undefined)
+    def setCmPlacementId(value: String): Self = StObject.set(x, "cmPlacementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmCreativeId(value: String): Self = this.set("cmCreativeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCmCreativeId: Self = this.set("cmCreativeId", js.undefined)
-    
-    @scala.inline
-    def setCmPlacementId(value: String): Self = this.set("cmPlacementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCmPlacementId: Self = this.set("cmPlacementId", js.undefined)
+    def setCmPlacementIdUndefined: Self = StObject.set(x, "cmPlacementId", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.konva.anon
 import typings.konva.containerMod.Container
 import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelativeTo extends js.Object {
+trait RelativeTo extends StObject {
   
   var relativeTo: js.UndefOr[Container[Node[NodeConfig]]] = js.native
   
@@ -27,42 +28,30 @@ object RelativeTo {
   }
   
   @scala.inline
-  implicit class RelativeToOps[Self <: RelativeTo] (val x: Self) extends AnyVal {
+  implicit class RelativeToMutableBuilder[Self <: RelativeTo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelativeTo(value: Container[Node[NodeConfig]]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipShadow(value: Boolean): Self = StObject.set(x, "skipShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeTo(value: Container[Node[NodeConfig]]): Self = this.set("relativeTo", value.asInstanceOf[js.Any])
+    def setSkipShadowUndefined: Self = StObject.set(x, "skipShadow", js.undefined)
     
     @scala.inline
-    def deleteRelativeTo: Self = this.set("relativeTo", js.undefined)
+    def setSkipStroke(value: Boolean): Self = StObject.set(x, "skipStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipShadow(value: Boolean): Self = this.set("skipShadow", value.asInstanceOf[js.Any])
+    def setSkipStrokeUndefined: Self = StObject.set(x, "skipStroke", js.undefined)
     
     @scala.inline
-    def deleteSkipShadow: Self = this.set("skipShadow", js.undefined)
+    def setSkipTransform(value: Boolean): Self = StObject.set(x, "skipTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipStroke(value: Boolean): Self = this.set("skipStroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipStroke: Self = this.set("skipStroke", js.undefined)
-    
-    @scala.inline
-    def setSkipTransform(value: Boolean): Self = this.set("skipTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipTransform: Self = this.set("skipTransform", js.undefined)
+    def setSkipTransformUndefined: Self = StObject.set(x, "skipTransform", js.undefined)
   }
 }

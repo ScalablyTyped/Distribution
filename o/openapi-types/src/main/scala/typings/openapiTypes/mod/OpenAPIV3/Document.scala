@@ -1,5 +1,6 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,85 +42,73 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: ComponentsObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalDocs(value: ExternalDocumentationObject): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: InfoObject): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
     
     @scala.inline
-    def setOpenapi(value: String): Self = this.set("openapi", value.asInstanceOf[js.Any])
+    def setInfo(value: InfoObject): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaths(value: PathsObject): Self = this.set("paths", value.asInstanceOf[js.Any])
+    def setOpenapi(value: String): Self = StObject.set(x, "openapi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: ComponentsObject): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setPaths(value: PathsObject): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
+    def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalDocs(value: ExternalDocumentationObject): Self = this.set("externalDocs", value.asInstanceOf[js.Any])
+    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
     @scala.inline
-    def deleteExternalDocs: Self = this.set("externalDocs", js.undefined)
+    def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityVarargs(value: SecurityRequirementObject*): Self = this.set("security", js.Array(value :_*))
+    def setServers(value: js.Array[ServerObject]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurity(value: js.Array[SecurityRequirementObject]): Self = this.set("security", value.asInstanceOf[js.Any])
+    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
     @scala.inline
-    def deleteSecurity: Self = this.set("security", js.undefined)
+    def setServersVarargs(value: ServerObject*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
     @scala.inline
-    def setServersVarargs(value: ServerObject*): Self = this.set("servers", js.Array(value :_*))
+    def setTags(value: js.Array[TagObject]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServers(value: js.Array[ServerObject]): Self = this.set("servers", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteServers: Self = this.set("servers", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: TagObject*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[TagObject]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def `setX-express-openapi-additional-middlewareVarargs`(value: (js.Function3[js.Any, js.Any, js.Any, js.Promise[Unit] | Unit])*): Self = this.set("x-express-openapi-additional-middleware", js.Array(value :_*))
+    def setTagsVarargs(value: TagObject*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
     def `setX-express-openapi-additional-middleware`(
       value: js.Array[
           js.Function3[/* request */ _, /* response */ _, /* next */ _, js.Promise[Unit] | Unit]
         ]
-    ): Self = this.set("x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteX-express-openapi-additional-middleware`: Self = this.set("x-express-openapi-additional-middleware", js.undefined)
+    def `setX-express-openapi-additional-middlewareUndefined`: Self = StObject.set(x, "x-express-openapi-additional-middleware", js.undefined)
     
     @scala.inline
-    def `setX-express-openapi-validation-strict`(value: Boolean): Self = this.set("x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
+    def `setX-express-openapi-additional-middlewareVarargs`(value: (js.Function3[js.Any, js.Any, js.Any, js.Promise[Unit] | Unit])*): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
     
     @scala.inline
-    def `deleteX-express-openapi-validation-strict`: Self = this.set("x-express-openapi-validation-strict", js.undefined)
+    def `setX-express-openapi-validation-strict`(value: Boolean): Self = StObject.set(x, "x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-express-openapi-validation-strictUndefined`: Self = StObject.set(x, "x-express-openapi-validation-strict", js.undefined)
   }
 }

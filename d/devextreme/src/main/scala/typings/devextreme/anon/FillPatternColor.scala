@@ -32,12 +32,13 @@ import typings.devextreme.devextremeStrings.top
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelDataGridCell
 import typings.devextreme.mod.DevExpress.exporter.ExcelFont
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FillPatternColor extends js.Object {
+trait FillPatternColor extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.native
   
@@ -74,86 +75,74 @@ object FillPatternColor {
   }
   
   @scala.inline
-  implicit class FillPatternColorOps[Self <: FillPatternColor] (val x: Self) extends AnyVal {
+  implicit class FillPatternColorMutableBuilder[Self <: FillPatternColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setFillPatternColor(value: String): Self = StObject.set(x, "fillPatternColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxDataGrid): Self = this.set("component", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
-    
-    @scala.inline
-    def setFillPatternColor(value: String): Self = this.set("fillPatternColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillPatternColor: Self = this.set("fillPatternColor", js.undefined)
+    def setFillPatternColorUndefined: Self = StObject.set(x, "fillPatternColor", js.undefined)
     
     @scala.inline
     def setFillPatternType(
       value: darkDown | darkGray | darkGrid | darkHorizontal | darkTrellis | darkUp | darkVertical | gray0625 | gray125 | lightDown | lightGray | lightGrid | lightHorizontal | lightTrellis | lightUp | lightVertical | mediumGray | none | solid
-    ): Self = this.set("fillPatternType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fillPatternType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillPatternType: Self = this.set("fillPatternType", js.undefined)
+    def setFillPatternTypeUndefined: Self = StObject.set(x, "fillPatternType", js.undefined)
     
     @scala.inline
-    def setFont(value: ExcelFont): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFont(value: ExcelFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setGridCell(value: ExcelDataGridCell): Self = this.set("gridCell", value.asInstanceOf[js.Any])
+    def setGridCell(value: ExcelDataGridCell): Self = StObject.set(x, "gridCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridCell: Self = this.set("gridCell", js.undefined)
+    def setGridCellUndefined: Self = StObject.set(x, "gridCell", js.undefined)
     
     @scala.inline
-    def setHorizontalAlignment(value: center | centerContinuous | distributed | fill | general | justify | left | right): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setHorizontalAlignment(value: center | centerContinuous | distributed | fill | general | justify | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: String): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def setValue(value: String | Double | typings.std.Date): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String | Double | typings.std.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setVerticalAlignment(value: bottom | center | distributed | justify | top): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    def setVerticalAlignment(value: bottom | center | distributed | justify | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def setWrapTextEnabled(value: Boolean): Self = this.set("wrapTextEnabled", value.asInstanceOf[js.Any])
+    def setWrapTextEnabled(value: Boolean): Self = StObject.set(x, "wrapTextEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrapTextEnabled: Self = this.set("wrapTextEnabled", js.undefined)
+    def setWrapTextEnabledUndefined: Self = StObject.set(x, "wrapTextEnabled", js.undefined)
   }
 }

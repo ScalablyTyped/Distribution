@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expirations extends js.Object {
+trait Expirations extends StObject {
   
   /**
     * An integer specifying the number of days that a sent envelope remains active before it expires. A negative number in a response indicates that the envelope has already expired.
@@ -33,36 +34,24 @@ object Expirations {
   }
   
   @scala.inline
-  implicit class ExpirationsOps[Self <: Expirations] (val x: Self) extends AnyVal {
+  implicit class ExpirationsMutableBuilder[Self <: Expirations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpireAfter(value: String): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpireEnabled(value: String): Self = StObject.set(x, "expireEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireAfter(value: String): Self = this.set("expireAfter", value.asInstanceOf[js.Any])
+    def setExpireEnabledUndefined: Self = StObject.set(x, "expireEnabled", js.undefined)
     
     @scala.inline
-    def deleteExpireAfter: Self = this.set("expireAfter", js.undefined)
+    def setExpireWarn(value: String): Self = StObject.set(x, "expireWarn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireEnabled(value: String): Self = this.set("expireEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpireEnabled: Self = this.set("expireEnabled", js.undefined)
-    
-    @scala.inline
-    def setExpireWarn(value: String): Self = this.set("expireWarn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpireWarn: Self = this.set("expireWarn", js.undefined)
+    def setExpireWarnUndefined: Self = StObject.set(x, "expireWarn", js.undefined)
   }
 }

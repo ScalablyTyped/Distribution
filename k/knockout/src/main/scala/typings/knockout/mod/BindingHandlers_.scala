@@ -21,6 +21,7 @@ import typings.knockout.anon.`6`
 import typings.knockout.anon.`7`
 import typings.knockout.anon.`8`
 import typings.knockout.anon.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,105 +138,93 @@ object BindingHandlers_ {
   }
   
   @scala.inline
-  implicit class BindingHandlers_Ops[Self <: BindingHandlers_] (val x: Self) extends AnyVal {
+  implicit class BindingHandlers_MutableBuilder[Self <: BindingHandlers_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttr(value: `2`): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecked(value: AfterInit): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedValue(value: Update): Self = StObject.set(x, "checkedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttr(value: `2`): Self = this.set("attr", value.asInstanceOf[js.Any])
+    def setClass(value: `0`): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: AfterInit): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setClick(value: `7`): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedValue(value: Update): Self = this.set("checkedValue", value.asInstanceOf[js.Any])
+    def setComponent(value: `12`): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: `0`): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setCss(value: `1`): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: `7`): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDisable(value: Update): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: `12`): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setEnable(value: Update): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: `1`): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setEvent(value: `6`): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Update): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setForeach(value: `3`): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Update): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setHasFocus(value: InitUpdate): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: `6`): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setHidden(value: Update): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeach(value: `3`): Self = this.set("foreach", value.asInstanceOf[js.Any])
+    def setHtml(value: Init): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasFocus(value: InitUpdate): Self = this.set("hasFocus", value.asInstanceOf[js.Any])
+    def setIf(value: `4`): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Update): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIfnot(value: `4`): Self = StObject.set(x, "ifnot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: Init): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setLet(value: `5`): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIf(value: `4`): Self = this.set("if", value.asInstanceOf[js.Any])
+    def setOptions(value: `9`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfnot(value: `4`): Self = this.set("ifnot", value.asInstanceOf[js.Any])
+    def setSelectedOptions(value: AfterInitUpdate): Self = StObject.set(x, "selectedOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLet(value: `5`): Self = this.set("let", value.asInstanceOf[js.Any])
+    def setStyle(value: `2`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: `9`): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSubmit(value: `7`): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedOptions(value: AfterInitUpdate): Self = this.set("selectedOptions", value.asInstanceOf[js.Any])
+    def setTemplate(value: `11`): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: `2`): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setText(value: Init): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmit(value: `7`): Self = this.set("submit", value.asInstanceOf[js.Any])
+    def setTextInput(value: `8`): Self = StObject.set(x, "textInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: `11`): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setUniqueName(value: `10`): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Init): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setUsing(value: `4`): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextInput(value: `8`): Self = this.set("textInput", value.asInstanceOf[js.Any])
+    def setValue(value: After): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueName(value: `10`): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
+    def setVisible(value: Update): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsing(value: `4`): Self = this.set("using", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: After): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Update): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWith(value: `4`): Self = this.set("with", value.asInstanceOf[js.Any])
+    def setWith(value: `4`): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
   }
 }

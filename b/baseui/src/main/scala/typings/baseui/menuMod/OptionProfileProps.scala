@@ -4,6 +4,7 @@ import typings.baseui.anon.Body
 import typings.baseui.anon.ListItemProfile
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,54 +43,42 @@ object OptionProfileProps {
   }
   
   @scala.inline
-  implicit class OptionProfilePropsOps[Self <: OptionProfileProps] (val x: Self) extends AnyVal {
+  implicit class OptionProfilePropsMutableBuilder[Self <: OptionProfileProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$isHighlightedUndefined: Self = StObject.set(x, "$isHighlighted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChildMenu(value: /* item */ js.Any => ReactNode): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProfileItemImg(value: js.Any => String | ComponentType[_]): Self = this.set("getProfileItemImg", js.Any.fromFunction1(value))
+    def setGetChildMenuUndefined: Self = StObject.set(x, "getChildMenu", js.undefined)
     
     @scala.inline
-    def setGetProfileItemImgText(value: js.Any => String): Self = this.set("getProfileItemImgText", js.Any.fromFunction1(value))
+    def setGetProfileItemImg(value: js.Any => String | ComponentType[_]): Self = StObject.set(x, "getProfileItemImg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProfileItemLabels(value: js.Any => Body): Self = this.set("getProfileItemLabels", js.Any.fromFunction1(value))
+    def setGetProfileItemImgText(value: js.Any => String): Self = StObject.set(x, "getProfileItemImgText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setGetProfileItemLabels(value: js.Any => Body): Self = StObject.set(x, "getProfileItemLabels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set$isHighlighted(value: Boolean): Self = this.set("$isHighlighted", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$isHighlighted: Self = this.set("$isHighlighted", js.undefined)
+    def setOverrides(value: ListItemProfile): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetChildMenu(value: /* item */ js.Any => ReactNode): Self = this.set("getChildMenu", js.Any.fromFunction1(value))
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def deleteGetChildMenu: Self = this.set("getChildMenu", js.undefined)
+    def setResetMenu(value: () => Unit): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOverrides(value: ListItemProfile): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
-    
-    @scala.inline
-    def setResetMenu(value: () => Unit): Self = this.set("resetMenu", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteResetMenu: Self = this.set("resetMenu", js.undefined)
+    def setResetMenuUndefined: Self = StObject.set(x, "resetMenu", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionState extends js.Object {
+trait ActionState extends StObject {
   
   /**
     * The name of the action.
@@ -41,48 +42,36 @@ object ActionState {
   }
   
   @scala.inline
-  implicit class ActionStateOps[Self <: ActionState] (val x: Self) extends AnyVal {
+  implicit class ActionStateMutableBuilder[Self <: ActionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentRevision(value: ActionRevision): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: ActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setCurrentRevisionUndefined: Self = StObject.set(x, "currentRevision", js.undefined)
     
     @scala.inline
-    def deleteActionName: Self = this.set("actionName", js.undefined)
+    def setEntityUrl(value: Url): Self = StObject.set(x, "entityUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRevision(value: ActionRevision): Self = this.set("currentRevision", value.asInstanceOf[js.Any])
+    def setEntityUrlUndefined: Self = StObject.set(x, "entityUrl", js.undefined)
     
     @scala.inline
-    def deleteCurrentRevision: Self = this.set("currentRevision", js.undefined)
+    def setLatestExecution(value: ActionExecution): Self = StObject.set(x, "latestExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityUrl(value: Url): Self = this.set("entityUrl", value.asInstanceOf[js.Any])
+    def setLatestExecutionUndefined: Self = StObject.set(x, "latestExecution", js.undefined)
     
     @scala.inline
-    def deleteEntityUrl: Self = this.set("entityUrl", js.undefined)
+    def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestExecution(value: ActionExecution): Self = this.set("latestExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestExecution: Self = this.set("latestExecution", js.undefined)
-    
-    @scala.inline
-    def setRevisionUrl(value: Url): Self = this.set("revisionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionUrl: Self = this.set("revisionUrl", js.undefined)
+    def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
   }
 }

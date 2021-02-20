@@ -1,6 +1,7 @@
 package typings.baiduApp.swan
 
 import typings.baiduApp.anon.Padding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * mapContext 通过 mapId 跟一个 <map/> 组件绑定，通过它可以操作对应的 <map/> 组件。
   */
 @js.native
-trait MapContext extends js.Object {
+trait MapContext extends StObject {
   
   /**
     * 获取当前地图中心的经纬度，返回的是 gcj02 坐标系，可以用于 swan.openLocation
@@ -42,33 +43,21 @@ object MapContext {
   }
   
   @scala.inline
-  implicit class MapContextOps[Self <: MapContext] (val x: Self) extends AnyVal {
+  implicit class MapContextMutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCenterLocation(value: GetCenterLocationOptions => OpenLocationOptions): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRegion(value: GetRegionOptions => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludePoints(value: Padding => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCenterLocation(value: GetCenterLocationOptions => OpenLocationOptions): Self = this.set("getCenterLocation", js.Any.fromFunction1(value))
+    def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRegion(value: GetRegionOptions => Unit): Self = this.set("getRegion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIncludePoints(value: Padding => Unit): Self = this.set("includePoints", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMoveToLocation(value: () => Unit): Self = this.set("moveToLocation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTranslateMarker(value: TranslateMarkerOptions => Unit): Self = this.set("translateMarker", js.Any.fromFunction1(value))
+    def setTranslateMarker(value: TranslateMarkerOptions => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If this property is applied to a graphic object, then this object will correct these values if necessary.
   */
 @js.native
-trait GraphicCrop extends js.Object {
+trait GraphicCrop extends StObject {
   
   /** contains the bottom value to cut (if negative) or to extend (if positive) */
   var Bottom: Double = js.native
@@ -36,30 +37,18 @@ object GraphicCrop {
   }
   
   @scala.inline
-  implicit class GraphicCropOps[Self <: GraphicCrop] (val x: Self) extends AnyVal {
+  implicit class GraphicCropMutableBuilder[Self <: GraphicCrop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: Double): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRight(value: Double): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Double): Self = this.set("Bottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeft(value: Double): Self = this.set("Left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight(value: Double): Self = this.set("Right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("Top", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
   }
 }

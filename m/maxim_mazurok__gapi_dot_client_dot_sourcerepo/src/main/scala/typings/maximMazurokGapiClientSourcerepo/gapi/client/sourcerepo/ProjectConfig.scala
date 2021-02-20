@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectConfig extends js.Object {
+trait ProjectConfig extends StObject {
   
   /** Reject a Git push that contains a private key. */
   var enablePrivateKeyCheck: js.UndefOr[Boolean] = js.native
@@ -30,40 +31,28 @@ object ProjectConfig {
   }
   
   @scala.inline
-  implicit class ProjectConfigOps[Self <: ProjectConfig] (val x: Self) extends AnyVal {
+  implicit class ProjectConfigMutableBuilder[Self <: ProjectConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablePrivateKeyCheck(value: Boolean): Self = StObject.set(x, "enablePrivateKeyCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablePrivateKeyCheckUndefined: Self = StObject.set(x, "enablePrivateKeyCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePrivateKeyCheck(value: Boolean): Self = this.set("enablePrivateKeyCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnablePrivateKeyCheck: Self = this.set("enablePrivateKeyCheck", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
     def setPubsubConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
       */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig with TopLevel[js.Any]
-    ): Self = this.set("pubsubConfigs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePubsubConfigs: Self = this.set("pubsubConfigs", js.undefined)
+    def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * completed.
   */
 @js.native
-trait SchemaSourceOperationResponse extends js.Object {
+trait SchemaSourceOperationResponse extends StObject {
   
   /**
     * A response to a request to get metadata about a source.
@@ -31,30 +32,18 @@ object SchemaSourceOperationResponse {
   }
   
   @scala.inline
-  implicit class SchemaSourceOperationResponseOps[Self <: SchemaSourceOperationResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceOperationResponseMutableBuilder[Self <: SchemaSourceOperationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMetadata(value: SchemaSourceGetMetadataResponse): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSplit(value: SchemaSourceSplitResponse): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMetadata(value: SchemaSourceGetMetadataResponse): Self = this.set("getMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGetMetadata: Self = this.set("getMetadata", js.undefined)
-    
-    @scala.inline
-    def setSplit(value: SchemaSourceSplitResponse): Self = this.set("split", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplit: Self = this.set("split", js.undefined)
+    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
   }
 }

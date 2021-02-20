@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientSecretmanager.anon.Callback
 import typings.maximMazurokGapiClientSecretmanager.anon.Fields
 import typings.maximMazurokGapiClientSecretmanager.anon.Key
 import typings.maximMazurokGapiClientSecretmanager.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionsResource extends js.Object {
+trait VersionsResource extends StObject {
   
   /** Accesses a SecretVersion. This call returns the secret data. `projects/∗/secrets/∗/versions/latest` is an alias to the `latest` SecretVersion. */
   def access(): Request[AccessSecretVersionResponse] = js.native

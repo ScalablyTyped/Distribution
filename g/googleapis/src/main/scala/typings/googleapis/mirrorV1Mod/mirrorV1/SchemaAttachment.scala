@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * timeline item.
   */
 @js.native
-trait SchemaAttachment extends js.Object {
+trait SchemaAttachment extends StObject {
   
   /**
     * The MIME type of the attachment.
@@ -42,42 +43,30 @@ object SchemaAttachment {
   }
   
   @scala.inline
-  implicit class SchemaAttachmentOps[Self <: SchemaAttachment] (val x: Self) extends AnyVal {
+  implicit class SchemaAttachmentMutableBuilder[Self <: SchemaAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setIsProcessingContent(value: Boolean): Self = StObject.set(x, "isProcessingContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setIsProcessingContent(value: Boolean): Self = this.set("isProcessingContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsProcessingContent: Self = this.set("isProcessingContent", js.undefined)
+    def setIsProcessingContentUndefined: Self = StObject.set(x, "isProcessingContent", js.undefined)
   }
 }

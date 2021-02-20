@@ -1,11 +1,12 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphQLResult extends js.Object {
+trait GraphQLResult extends StObject {
   
   var data: js.UndefOr[js.Any] = js.native
   
@@ -20,33 +21,21 @@ object GraphQLResult {
   }
   
   @scala.inline
-  implicit class GraphQLResultOps[Self <: GraphQLResult] (val x: Self) extends AnyVal {
+  implicit class GraphQLResultMutableBuilder[Self <: GraphQLResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrors(value: js.Array[GraphQLError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setErrorsVarargs(value: GraphQLError*): Self = this.set("errors", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrors(value: js.Array[GraphQLError]): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setErrorsVarargs(value: GraphQLError*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

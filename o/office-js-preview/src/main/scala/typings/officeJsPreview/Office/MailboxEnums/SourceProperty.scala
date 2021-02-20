@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SourceProperty extends js.Object
+sealed trait SourceProperty extends StObject
 /**
   * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
   *
@@ -17,7 +18,7 @@ sealed trait SourceProperty extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.SourceProperty")
 @js.native
-object SourceProperty extends js.Object {
+object SourceProperty extends StObject {
   
   /**
     * The source of the data is from the body of the item.

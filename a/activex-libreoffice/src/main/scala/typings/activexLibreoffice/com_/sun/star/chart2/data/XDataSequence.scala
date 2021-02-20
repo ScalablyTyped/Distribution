@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2.data
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,36 +78,24 @@ object XDataSequence {
   }
   
   @scala.inline
-  implicit class XDataSequenceOps[Self <: XDataSequence] (val x: Self) extends AnyVal {
+  implicit class XDataSequenceMutableBuilder[Self <: XDataSequence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: SafeArray[_]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerateLabel(value: LabelOrigin => SafeArray[String]): Self = StObject.set(x, "generateLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetData(value: () => SafeArray[_]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: SafeArray[_]): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setGetNumberFormatKeyByIndex(value: Double => Double): Self = StObject.set(x, "getNumberFormatKeyByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSourceRangeRepresentation(value: String): Self = this.set("SourceRangeRepresentation", value.asInstanceOf[js.Any])
+    def setGetSourceRangeRepresentation(value: () => String): Self = StObject.set(x, "getSourceRangeRepresentation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGenerateLabel(value: LabelOrigin => SafeArray[String]): Self = this.set("generateLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetData(value: () => SafeArray[_]): Self = this.set("getData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNumberFormatKeyByIndex(value: Double => Double): Self = this.set("getNumberFormatKeyByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSourceRangeRepresentation(value: () => String): Self = this.set("getSourceRangeRepresentation", js.Any.fromFunction0(value))
+    def setSourceRangeRepresentation(value: String): Self = StObject.set(x, "SourceRangeRepresentation", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchJobInstanceDetailsSummary extends js.Object {
+trait PatchJobInstanceDetailsSummary extends StObject {
   
   /** Number of instances that have acked and will start shortly. */
   var ackedInstanceCount: js.UndefOr[String] = js.native
@@ -61,108 +62,96 @@ object PatchJobInstanceDetailsSummary {
   }
   
   @scala.inline
-  implicit class PatchJobInstanceDetailsSummaryOps[Self <: PatchJobInstanceDetailsSummary] (val x: Self) extends AnyVal {
+  implicit class PatchJobInstanceDetailsSummaryMutableBuilder[Self <: PatchJobInstanceDetailsSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckedInstanceCount(value: String): Self = StObject.set(x, "ackedInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckedInstanceCountUndefined: Self = StObject.set(x, "ackedInstanceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyingPatchesInstanceCount(value: String): Self = StObject.set(x, "applyingPatchesInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckedInstanceCount(value: String): Self = this.set("ackedInstanceCount", value.asInstanceOf[js.Any])
+    def setApplyingPatchesInstanceCountUndefined: Self = StObject.set(x, "applyingPatchesInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteAckedInstanceCount: Self = this.set("ackedInstanceCount", js.undefined)
+    def setDownloadingPatchesInstanceCount(value: String): Self = StObject.set(x, "downloadingPatchesInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyingPatchesInstanceCount(value: String): Self = this.set("applyingPatchesInstanceCount", value.asInstanceOf[js.Any])
+    def setDownloadingPatchesInstanceCountUndefined: Self = StObject.set(x, "downloadingPatchesInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteApplyingPatchesInstanceCount: Self = this.set("applyingPatchesInstanceCount", js.undefined)
+    def setFailedInstanceCount(value: String): Self = StObject.set(x, "failedInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadingPatchesInstanceCount(value: String): Self = this.set("downloadingPatchesInstanceCount", value.asInstanceOf[js.Any])
+    def setFailedInstanceCountUndefined: Self = StObject.set(x, "failedInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteDownloadingPatchesInstanceCount: Self = this.set("downloadingPatchesInstanceCount", js.undefined)
+    def setInactiveInstanceCount(value: String): Self = StObject.set(x, "inactiveInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedInstanceCount(value: String): Self = this.set("failedInstanceCount", value.asInstanceOf[js.Any])
+    def setInactiveInstanceCountUndefined: Self = StObject.set(x, "inactiveInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteFailedInstanceCount: Self = this.set("failedInstanceCount", js.undefined)
+    def setNoAgentDetectedInstanceCount(value: String): Self = StObject.set(x, "noAgentDetectedInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactiveInstanceCount(value: String): Self = this.set("inactiveInstanceCount", value.asInstanceOf[js.Any])
+    def setNoAgentDetectedInstanceCountUndefined: Self = StObject.set(x, "noAgentDetectedInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteInactiveInstanceCount: Self = this.set("inactiveInstanceCount", js.undefined)
+    def setNotifiedInstanceCount(value: String): Self = StObject.set(x, "notifiedInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoAgentDetectedInstanceCount(value: String): Self = this.set("noAgentDetectedInstanceCount", value.asInstanceOf[js.Any])
+    def setNotifiedInstanceCountUndefined: Self = StObject.set(x, "notifiedInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteNoAgentDetectedInstanceCount: Self = this.set("noAgentDetectedInstanceCount", js.undefined)
+    def setPendingInstanceCount(value: String): Self = StObject.set(x, "pendingInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifiedInstanceCount(value: String): Self = this.set("notifiedInstanceCount", value.asInstanceOf[js.Any])
+    def setPendingInstanceCountUndefined: Self = StObject.set(x, "pendingInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteNotifiedInstanceCount: Self = this.set("notifiedInstanceCount", js.undefined)
+    def setPostPatchStepInstanceCount(value: String): Self = StObject.set(x, "postPatchStepInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingInstanceCount(value: String): Self = this.set("pendingInstanceCount", value.asInstanceOf[js.Any])
+    def setPostPatchStepInstanceCountUndefined: Self = StObject.set(x, "postPatchStepInstanceCount", js.undefined)
     
     @scala.inline
-    def deletePendingInstanceCount: Self = this.set("pendingInstanceCount", js.undefined)
+    def setPrePatchStepInstanceCount(value: String): Self = StObject.set(x, "prePatchStepInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostPatchStepInstanceCount(value: String): Self = this.set("postPatchStepInstanceCount", value.asInstanceOf[js.Any])
+    def setPrePatchStepInstanceCountUndefined: Self = StObject.set(x, "prePatchStepInstanceCount", js.undefined)
     
     @scala.inline
-    def deletePostPatchStepInstanceCount: Self = this.set("postPatchStepInstanceCount", js.undefined)
+    def setRebootingInstanceCount(value: String): Self = StObject.set(x, "rebootingInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrePatchStepInstanceCount(value: String): Self = this.set("prePatchStepInstanceCount", value.asInstanceOf[js.Any])
+    def setRebootingInstanceCountUndefined: Self = StObject.set(x, "rebootingInstanceCount", js.undefined)
     
     @scala.inline
-    def deletePrePatchStepInstanceCount: Self = this.set("prePatchStepInstanceCount", js.undefined)
+    def setStartedInstanceCount(value: String): Self = StObject.set(x, "startedInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRebootingInstanceCount(value: String): Self = this.set("rebootingInstanceCount", value.asInstanceOf[js.Any])
+    def setStartedInstanceCountUndefined: Self = StObject.set(x, "startedInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteRebootingInstanceCount: Self = this.set("rebootingInstanceCount", js.undefined)
+    def setSucceededInstanceCount(value: String): Self = StObject.set(x, "succeededInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedInstanceCount(value: String): Self = this.set("startedInstanceCount", value.asInstanceOf[js.Any])
+    def setSucceededInstanceCountUndefined: Self = StObject.set(x, "succeededInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteStartedInstanceCount: Self = this.set("startedInstanceCount", js.undefined)
+    def setSucceededRebootRequiredInstanceCount(value: String): Self = StObject.set(x, "succeededRebootRequiredInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceededInstanceCount(value: String): Self = this.set("succeededInstanceCount", value.asInstanceOf[js.Any])
+    def setSucceededRebootRequiredInstanceCountUndefined: Self = StObject.set(x, "succeededRebootRequiredInstanceCount", js.undefined)
     
     @scala.inline
-    def deleteSucceededInstanceCount: Self = this.set("succeededInstanceCount", js.undefined)
+    def setTimedOutInstanceCount(value: String): Self = StObject.set(x, "timedOutInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceededRebootRequiredInstanceCount(value: String): Self = this.set("succeededRebootRequiredInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSucceededRebootRequiredInstanceCount: Self = this.set("succeededRebootRequiredInstanceCount", js.undefined)
-    
-    @scala.inline
-    def setTimedOutInstanceCount(value: String): Self = this.set("timedOutInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedOutInstanceCount: Self = this.set("timedOutInstanceCount", js.undefined)
+    def setTimedOutInstanceCountUndefined: Self = StObject.set(x, "timedOutInstanceCount", js.undefined)
   }
 }

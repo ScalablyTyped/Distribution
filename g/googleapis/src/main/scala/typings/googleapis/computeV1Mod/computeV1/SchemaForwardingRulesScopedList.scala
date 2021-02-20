@@ -1,12 +1,13 @@
 package typings.googleapis.computeV1Mod.computeV1
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaForwardingRulesScopedList extends js.Object {
+trait SchemaForwardingRulesScopedList extends StObject {
   
   /**
     * A list of forwarding rules contained in this scope.
@@ -28,33 +29,21 @@ object SchemaForwardingRulesScopedList {
   }
   
   @scala.inline
-  implicit class SchemaForwardingRulesScopedListOps[Self <: SchemaForwardingRulesScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaForwardingRulesScopedListMutableBuilder[Self <: SchemaForwardingRulesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardingRules(value: js.Array[SchemaForwardingRule]): Self = StObject.set(x, "forwardingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForwardingRulesUndefined: Self = StObject.set(x, "forwardingRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForwardingRulesVarargs(value: SchemaForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value :_*))
     
     @scala.inline
-    def setForwardingRulesVarargs(value: SchemaForwardingRule*): Self = this.set("forwardingRules", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardingRules(value: js.Array[SchemaForwardingRule]): Self = this.set("forwardingRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardingRules: Self = this.set("forwardingRules", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

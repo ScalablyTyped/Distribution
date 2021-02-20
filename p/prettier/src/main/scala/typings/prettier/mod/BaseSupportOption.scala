@@ -1,12 +1,13 @@
 package typings.prettier.mod
 
 import typings.prettier.prettierBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseSupportOption[Type /* <: SupportOptionType */] extends js.Object {
+trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
   
   var category: String = js.native
   
@@ -45,39 +46,27 @@ object BaseSupportOption {
   }
   
   @scala.inline
-  implicit class BaseSupportOptionOps[Self <: BaseSupportOption[_], Type /* <: SupportOptionType */] (val x: Self with BaseSupportOption[Type]) extends AnyVal {
+  implicit class BaseSupportOptionMutableBuilder[Self <: BaseSupportOption[_], Type /* <: SupportOptionType */] (val x: Self with BaseSupportOption[Type]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeprecated(value: `true` | String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecated(value: `true` | String): Self = this.set("deprecated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

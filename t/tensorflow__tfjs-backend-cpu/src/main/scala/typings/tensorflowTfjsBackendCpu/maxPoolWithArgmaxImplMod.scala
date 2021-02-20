@@ -6,14 +6,15 @@ import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPoolWithArgmax_impl", JSImport.Namespace)
-@js.native
-object maxPoolWithArgmaxImplMod extends js.Object {
+object maxPoolWithArgmaxImplMod {
   
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MaxPoolWithArgmax_impl", "maxPoolWithArgmaxImpl")
+  @js.native
   def maxPoolWithArgmaxImpl(
     xValues: TypedArray,
     xShape: js.Array[Double],

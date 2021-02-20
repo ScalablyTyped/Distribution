@@ -1,14 +1,15 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateTimeCalendarType extends js.Object
+sealed trait DateTimeCalendarType extends StObject
 @JSGlobal("SPClientTemplates.DateTimeCalendarType")
 @js.native
-object DateTimeCalendarType extends js.Object {
+object DateTimeCalendarType extends StObject {
   
   @js.native
   sealed trait ChineseLunar extends DateTimeCalendarType

@@ -1,5 +1,6 @@
 package typings.otplibPresetV11
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object TotpOptionsInterface {
   }
   
   @scala.inline
-  implicit class TotpOptionsInterfaceOps[Self <: TotpOptionsInterface] (val x: Self) extends AnyVal {
+  implicit class TotpOptionsInterfaceMutableBuilder[Self <: TotpOptionsInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEpoch(value: js.Any): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpoch(value: js.Any): Self = this.set("epoch", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteEpoch: Self = this.set("epoch", js.undefined)
+    def setWindow(value: Double | js.Array[Double]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setWindowVarargs(value: Double*): Self = this.set("window", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindow(value: Double | js.Array[Double]): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowVarargs(value: Double*): Self = StObject.set(x, "window", js.Array(value :_*))
   }
 }

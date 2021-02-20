@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.attempt
   - typings.microsoftGraph.microsoftGraphStrings.require
 */
-trait FirewallCertificateRevocationListCheckMethodType extends js.Object
+trait FirewallCertificateRevocationListCheckMethodType extends StObject
 object FirewallCertificateRevocationListCheckMethodType {
   
   @scala.inline

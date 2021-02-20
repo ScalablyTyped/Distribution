@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAggregationAuthorizationResponse extends js.Object {
+trait PutAggregationAuthorizationResponse extends StObject {
   
   /**
     * Returns an AggregationAuthorization object. 
@@ -21,24 +22,12 @@ object PutAggregationAuthorizationResponse {
   }
   
   @scala.inline
-  implicit class PutAggregationAuthorizationResponseOps[Self <: PutAggregationAuthorizationResponse] (val x: Self) extends AnyVal {
+  implicit class PutAggregationAuthorizationResponseMutableBuilder[Self <: PutAggregationAuthorizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationAuthorization(value: AggregationAuthorization): Self = StObject.set(x, "AggregationAuthorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAggregationAuthorization(value: AggregationAuthorization): Self = this.set("AggregationAuthorization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationAuthorization: Self = this.set("AggregationAuthorization", js.undefined)
+    def setAggregationAuthorizationUndefined: Self = StObject.set(x, "AggregationAuthorization", js.undefined)
   }
 }

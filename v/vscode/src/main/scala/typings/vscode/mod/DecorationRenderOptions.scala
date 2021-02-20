@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,48 +44,36 @@ object DecorationRenderOptions {
   }
   
   @scala.inline
-  implicit class DecorationRenderOptionsOps[Self <: DecorationRenderOptions] (val x: Self) extends AnyVal {
+  implicit class DecorationRenderOptionsMutableBuilder[Self <: DecorationRenderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDark(value: ThemableDecorationRenderOptions): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsWholeLine(value: Boolean): Self = StObject.set(x, "isWholeLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: ThemableDecorationRenderOptions): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setIsWholeLineUndefined: Self = StObject.set(x, "isWholeLine", js.undefined)
     
     @scala.inline
-    def deleteDark: Self = this.set("dark", js.undefined)
+    def setLight(value: ThemableDecorationRenderOptions): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWholeLine(value: Boolean): Self = this.set("isWholeLine", value.asInstanceOf[js.Any])
+    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
     @scala.inline
-    def deleteIsWholeLine: Self = this.set("isWholeLine", js.undefined)
+    def setOverviewRulerLane(value: OverviewRulerLane): Self = StObject.set(x, "overviewRulerLane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLight(value: ThemableDecorationRenderOptions): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setOverviewRulerLaneUndefined: Self = StObject.set(x, "overviewRulerLane", js.undefined)
     
     @scala.inline
-    def deleteLight: Self = this.set("light", js.undefined)
+    def setRangeBehavior(value: DecorationRangeBehavior): Self = StObject.set(x, "rangeBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverviewRulerLane(value: OverviewRulerLane): Self = this.set("overviewRulerLane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverviewRulerLane: Self = this.set("overviewRulerLane", js.undefined)
-    
-    @scala.inline
-    def setRangeBehavior(value: DecorationRangeBehavior): Self = this.set("rangeBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeBehavior: Self = this.set("rangeBehavior", js.undefined)
+    def setRangeBehaviorUndefined: Self = StObject.set(x, "rangeBehavior", js.undefined)
   }
 }

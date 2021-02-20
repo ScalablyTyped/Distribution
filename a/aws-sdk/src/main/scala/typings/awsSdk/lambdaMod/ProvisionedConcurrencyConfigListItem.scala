@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisionedConcurrencyConfigListItem extends js.Object {
+trait ProvisionedConcurrencyConfigListItem extends StObject {
   
   /**
     * The amount of provisioned concurrency allocated.
@@ -51,60 +52,48 @@ object ProvisionedConcurrencyConfigListItem {
   }
   
   @scala.inline
-  implicit class ProvisionedConcurrencyConfigListItemOps[Self <: ProvisionedConcurrencyConfigListItem] (val x: Self) extends AnyVal {
+  implicit class ProvisionedConcurrencyConfigListItemMutableBuilder[Self <: ProvisionedConcurrencyConfigListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocatedProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = StObject.set(x, "AllocatedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocatedProvisionedConcurrentExecutionsUndefined: Self = StObject.set(x, "AllocatedProvisionedConcurrentExecutions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = StObject.set(x, "AvailableProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = this.set("AllocatedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    def setAvailableProvisionedConcurrentExecutionsUndefined: Self = StObject.set(x, "AvailableProvisionedConcurrentExecutions", js.undefined)
     
     @scala.inline
-    def deleteAllocatedProvisionedConcurrentExecutions: Self = this.set("AllocatedProvisionedConcurrentExecutions", js.undefined)
+    def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = this.set("AvailableProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
     
     @scala.inline
-    def deleteAvailableProvisionedConcurrentExecutions: Self = this.set("AvailableProvisionedConcurrentExecutions", js.undefined)
+    def setLastModified(value: Timestamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionArn(value: FunctionArn): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
     @scala.inline
-    def deleteFunctionArn: Self = this.set("FunctionArn", js.undefined)
+    def setRequestedProvisionedConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "RequestedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: Timestamp): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setRequestedProvisionedConcurrentExecutionsUndefined: Self = StObject.set(x, "RequestedProvisionedConcurrentExecutions", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setStatus(value: ProvisionedConcurrencyStatusEnum): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedProvisionedConcurrentExecutions(value: PositiveInteger): Self = this.set("RequestedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    def setStatusReason(value: String): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestedProvisionedConcurrentExecutions: Self = this.set("RequestedProvisionedConcurrentExecutions", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
     @scala.inline
-    def setStatus(value: ProvisionedConcurrencyStatusEnum): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusReason(value: String): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

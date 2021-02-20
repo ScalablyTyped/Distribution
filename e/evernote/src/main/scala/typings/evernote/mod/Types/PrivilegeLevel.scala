@@ -1,46 +1,40 @@
 package typings.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrivilegeLevel extends js.Object
+sealed trait PrivilegeLevel extends StObject
 @JSImport("evernote", "Types.PrivilegeLevel")
 @js.native
-object PrivilegeLevel extends js.Object {
+object PrivilegeLevel extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrivilegeLevel with Double] = js.native
   
   @js.native
   sealed trait ADMIN extends PrivilegeLevel
-  /* 9 */ @js.native
-  object ADMIN extends TopLevel[ADMIN with Double]
+  /* 9 */ val ADMIN: typings.evernote.mod.Types.PrivilegeLevel.ADMIN with Double = js.native
   
   @js.native
   sealed trait MANAGER extends PrivilegeLevel
-  /* 7 */ @js.native
-  object MANAGER extends TopLevel[MANAGER with Double]
+  /* 7 */ val MANAGER: typings.evernote.mod.Types.PrivilegeLevel.MANAGER with Double = js.native
   
   @js.native
   sealed trait NORMAL extends PrivilegeLevel
-  /* 1 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
+  /* 1 */ val NORMAL: typings.evernote.mod.Types.PrivilegeLevel.NORMAL with Double = js.native
   
   @js.native
   sealed trait PREMIUM extends PrivilegeLevel
-  /* 3 */ @js.native
-  object PREMIUM extends TopLevel[PREMIUM with Double]
+  /* 3 */ val PREMIUM: typings.evernote.mod.Types.PrivilegeLevel.PREMIUM with Double = js.native
   
   @js.native
   sealed trait SUPPORT extends PrivilegeLevel
-  /* 8 */ @js.native
-  object SUPPORT extends TopLevel[SUPPORT with Double]
+  /* 8 */ val SUPPORT: typings.evernote.mod.Types.PrivilegeLevel.SUPPORT with Double = js.native
   
   @js.native
   sealed trait VIP extends PrivilegeLevel
-  /* 5 */ @js.native
-  object VIP extends TopLevel[VIP with Double]
+  /* 5 */ val VIP: typings.evernote.mod.Types.PrivilegeLevel.VIP with Double = js.native
 }

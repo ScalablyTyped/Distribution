@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAssetPropertyValueHistoryRequest extends js.Object {
+trait GetAssetPropertyValueHistoryRequest extends StObject {
   
   /**
     * The ID of the asset.
@@ -61,75 +62,63 @@ object GetAssetPropertyValueHistoryRequest {
   }
   
   @scala.inline
-  implicit class GetAssetPropertyValueHistoryRequestOps[Self <: GetAssetPropertyValueHistoryRequest] (val x: Self) extends AnyVal {
+  implicit class GetAssetPropertyValueHistoryRequestMutableBuilder[Self <: GetAssetPropertyValueHistoryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDate(value: Timestamp): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Timestamp): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAlias(value: AssetPropertyAlias): Self = this.set("propertyAlias", value.asInstanceOf[js.Any])
+    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
     @scala.inline
-    def deletePropertyAlias: Self = this.set("propertyAlias", js.undefined)
+    def setQualities(value: Qualities): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyId(value: ID): Self = this.set("propertyId", value.asInstanceOf[js.Any])
+    def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
     
     @scala.inline
-    def deletePropertyId: Self = this.set("propertyId", js.undefined)
+    def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value :_*))
     
     @scala.inline
-    def setQualitiesVarargs(value: Quality*): Self = this.set("qualities", js.Array(value :_*))
+    def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualities(value: Qualities): Self = this.set("qualities", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteQualities: Self = this.set("qualities", js.undefined)
+    def setTimeOrdering(value: TimeOrdering): Self = StObject.set(x, "timeOrdering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: Timestamp): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
-    
-    @scala.inline
-    def setTimeOrdering(value: TimeOrdering): Self = this.set("timeOrdering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeOrdering: Self = this.set("timeOrdering", js.undefined)
+    def setTimeOrderingUndefined: Self = StObject.set(x, "timeOrdering", js.undefined)
   }
 }

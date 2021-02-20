@@ -8,12 +8,13 @@ import typings.xterm.xtermStrings.none
 import typings.xterm.xtermStrings.shift
 import typings.xterm.xtermStrings.sound
 import typings.xterm.xtermStrings.underline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITerminalOptions extends js.Object {
+trait ITerminalOptions extends StObject {
   
   /**
     * Whether to allow the use of proposed API. When false, any usage of APIs
@@ -248,228 +249,216 @@ object ITerminalOptions {
   }
   
   @scala.inline
-  implicit class ITerminalOptionsOps[Self <: ITerminalOptions] (val x: Self) extends AnyVal {
+  implicit class ITerminalOptionsMutableBuilder[Self <: ITerminalOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowProposedApi(value: Boolean): Self = StObject.set(x, "allowProposedApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowProposedApiUndefined: Self = StObject.set(x, "allowProposedApi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowTransparency(value: Boolean): Self = StObject.set(x, "allowTransparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowProposedApi(value: Boolean): Self = this.set("allowProposedApi", value.asInstanceOf[js.Any])
+    def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
     
     @scala.inline
-    def deleteAllowProposedApi: Self = this.set("allowProposedApi", js.undefined)
+    def setBellSound(value: String): Self = StObject.set(x, "bellSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTransparency(value: Boolean): Self = this.set("allowTransparency", value.asInstanceOf[js.Any])
+    def setBellSoundUndefined: Self = StObject.set(x, "bellSound", js.undefined)
     
     @scala.inline
-    def deleteAllowTransparency: Self = this.set("allowTransparency", js.undefined)
+    def setBellStyle(value: none | sound): Self = StObject.set(x, "bellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBellSound(value: String): Self = this.set("bellSound", value.asInstanceOf[js.Any])
+    def setBellStyleUndefined: Self = StObject.set(x, "bellStyle", js.undefined)
     
     @scala.inline
-    def deleteBellSound: Self = this.set("bellSound", js.undefined)
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBellStyle(value: none | sound): Self = this.set("bellStyle", value.asInstanceOf[js.Any])
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def deleteBellStyle: Self = this.set("bellStyle", js.undefined)
+    def setConvertEol(value: Boolean): Self = StObject.set(x, "convertEol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    def setConvertEolUndefined: Self = StObject.set(x, "convertEol", js.undefined)
     
     @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
+    def setCursorBlink(value: Boolean): Self = StObject.set(x, "cursorBlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertEol(value: Boolean): Self = this.set("convertEol", value.asInstanceOf[js.Any])
+    def setCursorBlinkUndefined: Self = StObject.set(x, "cursorBlink", js.undefined)
     
     @scala.inline
-    def deleteConvertEol: Self = this.set("convertEol", js.undefined)
+    def setCursorStyle(value: block | underline | bar): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorBlink(value: Boolean): Self = this.set("cursorBlink", value.asInstanceOf[js.Any])
+    def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
     
     @scala.inline
-    def deleteCursorBlink: Self = this.set("cursorBlink", js.undefined)
+    def setCursorWidth(value: Double): Self = StObject.set(x, "cursorWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorStyle(value: block | underline | bar): Self = this.set("cursorStyle", value.asInstanceOf[js.Any])
+    def setCursorWidthUndefined: Self = StObject.set(x, "cursorWidth", js.undefined)
     
     @scala.inline
-    def deleteCursorStyle: Self = this.set("cursorStyle", js.undefined)
+    def setDisableStdin(value: Boolean): Self = StObject.set(x, "disableStdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorWidth(value: Double): Self = this.set("cursorWidth", value.asInstanceOf[js.Any])
+    def setDisableStdinUndefined: Self = StObject.set(x, "disableStdin", js.undefined)
     
     @scala.inline
-    def deleteCursorWidth: Self = this.set("cursorWidth", js.undefined)
+    def setDrawBoldTextInBrightColors(value: Boolean): Self = StObject.set(x, "drawBoldTextInBrightColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStdin(value: Boolean): Self = this.set("disableStdin", value.asInstanceOf[js.Any])
+    def setDrawBoldTextInBrightColorsUndefined: Self = StObject.set(x, "drawBoldTextInBrightColors", js.undefined)
     
     @scala.inline
-    def deleteDisableStdin: Self = this.set("disableStdin", js.undefined)
+    def setFastScrollModifier(value: alt | ctrl | shift): Self = StObject.set(x, "fastScrollModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBoldTextInBrightColors(value: Boolean): Self = this.set("drawBoldTextInBrightColors", value.asInstanceOf[js.Any])
+    def setFastScrollModifierUndefined: Self = StObject.set(x, "fastScrollModifier", js.undefined)
     
     @scala.inline
-    def deleteDrawBoldTextInBrightColors: Self = this.set("drawBoldTextInBrightColors", js.undefined)
+    def setFastScrollSensitivity(value: Double): Self = StObject.set(x, "fastScrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastScrollModifier(value: alt | ctrl | shift): Self = this.set("fastScrollModifier", value.asInstanceOf[js.Any])
+    def setFastScrollSensitivityUndefined: Self = StObject.set(x, "fastScrollSensitivity", js.undefined)
     
     @scala.inline
-    def deleteFastScrollModifier: Self = this.set("fastScrollModifier", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastScrollSensitivity(value: Double): Self = this.set("fastScrollSensitivity", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteFastScrollSensitivity: Self = this.set("fastScrollSensitivity", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontWeightBold(value: FontWeight): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontWeightBoldUndefined: Self = StObject.set(x, "fontWeightBold", js.undefined)
     
     @scala.inline
-    def setFontWeight(value: FontWeight): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeightBold(value: FontWeight): Self = this.set("fontWeightBold", value.asInstanceOf[js.Any])
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def deleteFontWeightBold: Self = this.set("fontWeightBold", js.undefined)
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setLinkTooltipHoverDuration(value: Double): Self = StObject.set(x, "linkTooltipHoverDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLinkTooltipHoverDurationUndefined: Self = StObject.set(x, "linkTooltipHoverDuration", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkTooltipHoverDuration(value: Double): Self = this.set("linkTooltipHoverDuration", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteLinkTooltipHoverDuration: Self = this.set("linkTooltipHoverDuration", js.undefined)
+    def setMacOptionClickForcesSelection(value: Boolean): Self = StObject.set(x, "macOptionClickForcesSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: LogLevel): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setMacOptionClickForcesSelectionUndefined: Self = StObject.set(x, "macOptionClickForcesSelection", js.undefined)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setMacOptionIsMeta(value: Boolean): Self = StObject.set(x, "macOptionIsMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacOptionClickForcesSelection(value: Boolean): Self = this.set("macOptionClickForcesSelection", value.asInstanceOf[js.Any])
+    def setMacOptionIsMetaUndefined: Self = StObject.set(x, "macOptionIsMeta", js.undefined)
     
     @scala.inline
-    def deleteMacOptionClickForcesSelection: Self = this.set("macOptionClickForcesSelection", js.undefined)
+    def setMinimumContrastRatio(value: Double): Self = StObject.set(x, "minimumContrastRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacOptionIsMeta(value: Boolean): Self = this.set("macOptionIsMeta", value.asInstanceOf[js.Any])
+    def setMinimumContrastRatioUndefined: Self = StObject.set(x, "minimumContrastRatio", js.undefined)
     
     @scala.inline
-    def deleteMacOptionIsMeta: Self = this.set("macOptionIsMeta", js.undefined)
+    def setRendererType(value: RendererType): Self = StObject.set(x, "rendererType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumContrastRatio(value: Double): Self = this.set("minimumContrastRatio", value.asInstanceOf[js.Any])
+    def setRendererTypeUndefined: Self = StObject.set(x, "rendererType", js.undefined)
     
     @scala.inline
-    def deleteMinimumContrastRatio: Self = this.set("minimumContrastRatio", js.undefined)
+    def setRightClickSelectsWord(value: Boolean): Self = StObject.set(x, "rightClickSelectsWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendererType(value: RendererType): Self = this.set("rendererType", value.asInstanceOf[js.Any])
+    def setRightClickSelectsWordUndefined: Self = StObject.set(x, "rightClickSelectsWord", js.undefined)
     
     @scala.inline
-    def deleteRendererType: Self = this.set("rendererType", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightClickSelectsWord(value: Boolean): Self = this.set("rightClickSelectsWord", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRightClickSelectsWord: Self = this.set("rightClickSelectsWord", js.undefined)
+    def setScreenReaderMode(value: Boolean): Self = StObject.set(x, "screenReaderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setScreenReaderModeUndefined: Self = StObject.set(x, "screenReaderMode", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenReaderMode(value: Boolean): Self = this.set("screenReaderMode", value.asInstanceOf[js.Any])
+    def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
     
     @scala.inline
-    def deleteScreenReaderMode: Self = this.set("screenReaderMode", js.undefined)
+    def setScrollback(value: Double): Self = StObject.set(x, "scrollback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSensitivity(value: Double): Self = this.set("scrollSensitivity", value.asInstanceOf[js.Any])
+    def setScrollbackUndefined: Self = StObject.set(x, "scrollback", js.undefined)
     
     @scala.inline
-    def deleteScrollSensitivity: Self = this.set("scrollSensitivity", js.undefined)
+    def setTabStopWidth(value: Double): Self = StObject.set(x, "tabStopWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollback(value: Double): Self = this.set("scrollback", value.asInstanceOf[js.Any])
+    def setTabStopWidthUndefined: Self = StObject.set(x, "tabStopWidth", js.undefined)
     
     @scala.inline
-    def deleteScrollback: Self = this.set("scrollback", js.undefined)
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabStopWidth(value: Double): Self = this.set("tabStopWidth", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTabStopWidth: Self = this.set("tabStopWidth", js.undefined)
+    def setWindowOptions(value: IWindowOptions): Self = StObject.set(x, "windowOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setWindowOptionsUndefined: Self = StObject.set(x, "windowOptions", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setWindowsMode(value: Boolean): Self = StObject.set(x, "windowsMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowOptions(value: IWindowOptions): Self = this.set("windowOptions", value.asInstanceOf[js.Any])
+    def setWindowsModeUndefined: Self = StObject.set(x, "windowsMode", js.undefined)
     
     @scala.inline
-    def deleteWindowOptions: Self = this.set("windowOptions", js.undefined)
+    def setWordSeparator(value: String): Self = StObject.set(x, "wordSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowsMode(value: Boolean): Self = this.set("windowsMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsMode: Self = this.set("windowsMode", js.undefined)
-    
-    @scala.inline
-    def setWordSeparator(value: String): Self = this.set("wordSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordSeparator: Self = this.set("wordSeparator", js.undefined)
+    def setWordSeparatorUndefined: Self = StObject.set(x, "wordSeparator", js.undefined)
   }
 }

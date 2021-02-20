@@ -1,13 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/expand", JSImport.Namespace)
-@js.native
-object operatorExpandMod extends js.Object {
+object operatorExpandMod {
   
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand[T](
     project: js.Function2[
       /* value */ T, 
@@ -15,6 +16,8 @@ object operatorExpandMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand[T](
     project: js.Function2[
       /* value */ T, 
@@ -24,6 +27,8 @@ object operatorExpandMod extends js.Object {
     concurrent: js.UndefOr[scala.Nothing],
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand[T](
     project: js.Function2[
       /* value */ T, 
@@ -32,6 +37,8 @@ object operatorExpandMod extends js.Object {
     ],
     concurrent: Double
   ): js.Any = js.native
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand[T](
     project: js.Function2[
       /* value */ T, 
@@ -41,7 +48,8 @@ object operatorExpandMod extends js.Object {
     concurrent: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
-  @JSName("expand")
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand_TR[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -49,7 +57,8 @@ object operatorExpandMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
     ]
   ): js.Any = js.native
-  @JSName("expand")
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand_TR[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -59,7 +68,8 @@ object operatorExpandMod extends js.Object {
     concurrent: js.UndefOr[scala.Nothing],
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
-  @JSName("expand")
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand_TR[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -68,7 +78,8 @@ object operatorExpandMod extends js.Object {
     ],
     concurrent: Double
   ): js.Any = js.native
-  @JSName("expand")
+  @JSImport("rxjs/operator/expand", "expand")
+  @js.native
   def expand_TR[T, R](
     project: js.Function2[
       /* value */ T, 

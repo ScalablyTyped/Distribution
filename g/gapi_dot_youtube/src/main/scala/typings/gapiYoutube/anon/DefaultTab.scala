@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultTab extends js.Object {
+trait DefaultTab extends StObject {
   
   /**
     * The content tab that users should display by default when viewers arrive at your channel page.
@@ -83,54 +84,42 @@ object DefaultTab {
   }
   
   @scala.inline
-  implicit class DefaultTabOps[Self <: DefaultTab] (val x: Self) extends AnyVal {
+  implicit class DefaultTabMutableBuilder[Self <: DefaultTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultTab(value: String): Self = StObject.set(x, "defaultTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturedChannelsTitle(value: String): Self = StObject.set(x, "featuredChannelsTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTab(value: String): Self = this.set("defaultTab", value.asInstanceOf[js.Any])
+    def setFeaturedChannelsUrls(value: js.Array[String]): Self = StObject.set(x, "featuredChannelsUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFeaturedChannelsUrlsVarargs(value: String*): Self = StObject.set(x, "featuredChannelsUrls", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturedChannelsTitle(value: String): Self = this.set("featuredChannelsTitle", value.asInstanceOf[js.Any])
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedChannelsUrlsVarargs(value: String*): Self = this.set("featuredChannelsUrls", js.Array(value :_*))
+    def setModerateComments(value: Boolean): Self = StObject.set(x, "moderateComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedChannelsUrls(value: js.Array[String]): Self = this.set("featuredChannelsUrls", value.asInstanceOf[js.Any])
+    def setShowBrowseView(value: Boolean): Self = StObject.set(x, "showBrowseView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setShowRelatedChannels(value: Boolean): Self = StObject.set(x, "showRelatedChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerateComments(value: Boolean): Self = this.set("moderateComments", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBrowseView(value: Boolean): Self = this.set("showBrowseView", value.asInstanceOf[js.Any])
+    def setTrackingAnalyticsAccountId(value: String): Self = StObject.set(x, "trackingAnalyticsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRelatedChannels(value: Boolean): Self = this.set("showRelatedChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackingAnalyticsAccountId(value: String): Self = this.set("trackingAnalyticsAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnsubscribedTrailer(value: String): Self = this.set("unsubscribedTrailer", value.asInstanceOf[js.Any])
+    def setUnsubscribedTrailer(value: String): Self = StObject.set(x, "unsubscribedTrailer", value.asInstanceOf[js.Any])
   }
 }

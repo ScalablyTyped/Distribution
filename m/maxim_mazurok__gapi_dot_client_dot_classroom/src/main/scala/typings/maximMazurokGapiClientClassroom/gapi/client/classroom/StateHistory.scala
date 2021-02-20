@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateHistory extends js.Object {
+trait StateHistory extends StObject {
   
   /** The teacher or student who made the change. */
   var actorUserId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object StateHistory {
   }
   
   @scala.inline
-  implicit class StateHistoryOps[Self <: StateHistory] (val x: Self) extends AnyVal {
+  implicit class StateHistoryMutableBuilder[Self <: StateHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActorUserId(value: String): Self = this.set("actorUserId", value.asInstanceOf[js.Any])
+    def setStateTimestamp(value: String): Self = StObject.set(x, "stateTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActorUserId: Self = this.set("actorUserId", js.undefined)
+    def setStateTimestampUndefined: Self = StObject.set(x, "stateTimestamp", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setStateTimestamp(value: String): Self = this.set("stateTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateTimestamp: Self = this.set("stateTimestamp", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

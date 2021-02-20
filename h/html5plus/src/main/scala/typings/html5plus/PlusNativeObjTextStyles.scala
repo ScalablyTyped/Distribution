@@ -11,6 +11,7 @@ import typings.html5plus.html5plusStrings.normal
 import typings.html5plus.html5plusStrings.nowrap
 import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.underline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjTextStyles extends js.Object {
+trait PlusNativeObjTextStyles extends StObject {
   
   /**
     * 水平对齐方式
@@ -187,96 +188,84 @@ object PlusNativeObjTextStyles {
   }
   
   @scala.inline
-  implicit class PlusNativeObjTextStylesOps[Self <: PlusNativeObjTextStyles] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjTextStylesMutableBuilder[Self <: PlusNativeObjTextStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setDecoration(value: none | underline | `line-through`): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecoration(value: none | underline | `line-through`): Self = this.set("decoration", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def deleteDecoration: Self = this.set("decoration", js.undefined)
+    def setFontSrc(value: String): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setLineSpacing(value: String): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSrc(value: String): Self = this.set("fontSrc", value.asInstanceOf[js.Any])
+    def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
     
     @scala.inline
-    def deleteFontSrc: Self = this.set("fontSrc", js.undefined)
+    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: String): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLineSpacing: Self = this.set("lineSpacing", js.undefined)
+    def setOverflow(value: clip): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: clip): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setStyle(value: normal | italic): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: normal | italic): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWeight(value: normal | bold): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setWhiteSpace(value: nowrap | normal): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight(value: normal | bold): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
-    
-    @scala.inline
-    def setWhiteSpace(value: nowrap | normal): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhiteSpace: Self = this.set("whiteSpace", js.undefined)
+    def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
   }
 }

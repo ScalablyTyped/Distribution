@@ -1,11 +1,12 @@
 package typings.reactWeui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeftBtn extends js.Object {
+trait LeftBtn extends StObject {
   
   var leftBtn: String = js.native
   
@@ -20,24 +21,12 @@ object LeftBtn {
   }
   
   @scala.inline
-  implicit class LeftBtnOps[Self <: LeftBtn] (val x: Self) extends AnyVal {
+  implicit class LeftBtnMutableBuilder[Self <: LeftBtn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftBtn(value: String): Self = StObject.set(x, "leftBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLeftBtn(value: String): Self = this.set("leftBtn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightBtn(value: String): Self = this.set("rightBtn", value.asInstanceOf[js.Any])
+    def setRightBtn(value: String): Self = StObject.set(x, "rightBtn", value.asInstanceOf[js.Any])
   }
 }

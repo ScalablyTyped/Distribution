@@ -1,6 +1,7 @@
 package typings.fabric.fabricImplMod
 
 import typings.std.HTMLTextAreaElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,132 +128,120 @@ object ITextOptions {
   }
   
   @scala.inline
-  implicit class ITextOptionsOps[Self <: ITextOptions] (val x: Self) extends AnyVal {
+  implicit class ITextOptionsMutableBuilder[Self <: ITextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaching(value: Boolean): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachingUndefined: Self = StObject.set(x, "caching", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtrlKeysMapDown(value: js.Any): Self = StObject.set(x, "ctrlKeysMapDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaching(value: Boolean): Self = this.set("caching", value.asInstanceOf[js.Any])
+    def setCtrlKeysMapDownUndefined: Self = StObject.set(x, "ctrlKeysMapDown", js.undefined)
     
     @scala.inline
-    def deleteCaching: Self = this.set("caching", js.undefined)
+    def setCtrlKeysMapUp(value: js.Any): Self = StObject.set(x, "ctrlKeysMapUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlKeysMapDown(value: js.Any): Self = this.set("ctrlKeysMapDown", value.asInstanceOf[js.Any])
+    def setCtrlKeysMapUpUndefined: Self = StObject.set(x, "ctrlKeysMapUp", js.undefined)
     
     @scala.inline
-    def deleteCtrlKeysMapDown: Self = this.set("ctrlKeysMapDown", js.undefined)
+    def setCursorColor(value: String): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlKeysMapUp(value: js.Any): Self = this.set("ctrlKeysMapUp", value.asInstanceOf[js.Any])
+    def setCursorColorUndefined: Self = StObject.set(x, "cursorColor", js.undefined)
     
     @scala.inline
-    def deleteCtrlKeysMapUp: Self = this.set("ctrlKeysMapUp", js.undefined)
+    def setCursorDelay(value: Double): Self = StObject.set(x, "cursorDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorColor(value: String): Self = this.set("cursorColor", value.asInstanceOf[js.Any])
+    def setCursorDelayUndefined: Self = StObject.set(x, "cursorDelay", js.undefined)
     
     @scala.inline
-    def deleteCursorColor: Self = this.set("cursorColor", js.undefined)
+    def setCursorDuration(value: Double): Self = StObject.set(x, "cursorDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorDelay(value: Double): Self = this.set("cursorDelay", value.asInstanceOf[js.Any])
+    def setCursorDurationUndefined: Self = StObject.set(x, "cursorDuration", js.undefined)
     
     @scala.inline
-    def deleteCursorDelay: Self = this.set("cursorDelay", js.undefined)
+    def setCursorWidth(value: Double): Self = StObject.set(x, "cursorWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorDuration(value: Double): Self = this.set("cursorDuration", value.asInstanceOf[js.Any])
+    def setCursorWidthUndefined: Self = StObject.set(x, "cursorWidth", js.undefined)
     
     @scala.inline
-    def deleteCursorDuration: Self = this.set("cursorDuration", js.undefined)
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorWidth(value: Double): Self = this.set("cursorWidth", value.asInstanceOf[js.Any])
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteCursorWidth: Self = this.set("cursorWidth", js.undefined)
+    def setEditingBorderColor(value: String): Self = StObject.set(x, "editingBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setEditingBorderColorUndefined: Self = StObject.set(x, "editingBorderColor", js.undefined)
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setHiddenTextarea(value: HTMLTextAreaElement): Self = StObject.set(x, "hiddenTextarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditingBorderColor(value: String): Self = this.set("editingBorderColor", value.asInstanceOf[js.Any])
+    def setHiddenTextareaUndefined: Self = StObject.set(x, "hiddenTextarea", js.undefined)
     
     @scala.inline
-    def deleteEditingBorderColor: Self = this.set("editingBorderColor", js.undefined)
+    def setInCompositionMode(value: Boolean): Self = StObject.set(x, "inCompositionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenTextarea(value: HTMLTextAreaElement): Self = this.set("hiddenTextarea", value.asInstanceOf[js.Any])
+    def setInCompositionModeUndefined: Self = StObject.set(x, "inCompositionMode", js.undefined)
     
     @scala.inline
-    def deleteHiddenTextarea: Self = this.set("hiddenTextarea", js.undefined)
+    def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInCompositionMode(value: Boolean): Self = this.set("inCompositionMode", value.asInstanceOf[js.Any])
+    def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
     
     @scala.inline
-    def deleteInCompositionMode: Self = this.set("inCompositionMode", js.undefined)
+    def setKeysMap(value: js.Any): Self = StObject.set(x, "keysMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEditing(value: Boolean): Self = this.set("isEditing", value.asInstanceOf[js.Any])
+    def setKeysMapUndefined: Self = StObject.set(x, "keysMap", js.undefined)
     
     @scala.inline
-    def deleteIsEditing: Self = this.set("isEditing", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeysMap(value: js.Any): Self = this.set("keysMap", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteKeysMap: Self = this.set("keysMap", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSelectionColor(value: String): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionColor(value: String): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    def setSelectionEndUndefined: Self = StObject.set(x, "selectionEnd", js.undefined)
     
     @scala.inline
-    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionEnd(value: Double): Self = this.set("selectionEnd", value.asInstanceOf[js.Any])
+    def setSelectionStartUndefined: Self = StObject.set(x, "selectionStart", js.undefined)
     
     @scala.inline
-    def deleteSelectionEnd: Self = this.set("selectionEnd", js.undefined)
+    def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionStart(value: Double): Self = this.set("selectionStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionStart: Self = this.set("selectionStart", js.undefined)
-    
-    @scala.inline
-    def setUseNative(value: Boolean): Self = this.set("useNative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNative: Self = this.set("useNative", js.undefined)
+    def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
   }
 }

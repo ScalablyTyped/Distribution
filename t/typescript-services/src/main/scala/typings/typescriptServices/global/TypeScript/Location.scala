@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,12 @@ class Location protected ()
     length: Double
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.Location")
-@js.native
-object Location extends js.Object {
+object Location {
   
-  def equals(
+  /* static member */
+  @JSGlobal("TypeScript.Location.equals")
+  @js.native
+  def equals_(
     location1: typings.typescriptServices.TypeScript.Location,
     location2: typings.typescriptServices.TypeScript.Location
   ): Boolean = js.native

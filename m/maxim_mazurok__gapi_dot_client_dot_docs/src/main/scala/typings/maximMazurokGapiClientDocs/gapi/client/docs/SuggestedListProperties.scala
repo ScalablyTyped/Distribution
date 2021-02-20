@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestedListProperties extends js.Object {
+trait SuggestedListProperties extends StObject {
   
   /**
     * A ListProperties that only includes the changes made in this suggestion. This can be used along with the list_properties_suggestion_state to see which fields have changed and their
@@ -25,30 +26,18 @@ object SuggestedListProperties {
   }
   
   @scala.inline
-  implicit class SuggestedListPropertiesOps[Self <: SuggestedListProperties] (val x: Self) extends AnyVal {
+  implicit class SuggestedListPropertiesMutableBuilder[Self <: SuggestedListProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListPropertiesSuggestionState(value: ListPropertiesSuggestionState): Self = StObject.set(x, "listPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListPropertiesSuggestionStateUndefined: Self = StObject.set(x, "listPropertiesSuggestionState", js.undefined)
     
     @scala.inline
-    def setListProperties(value: ListProperties): Self = this.set("listProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListProperties: Self = this.set("listProperties", js.undefined)
-    
-    @scala.inline
-    def setListPropertiesSuggestionState(value: ListPropertiesSuggestionState): Self = this.set("listPropertiesSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListPropertiesSuggestionState: Self = this.set("listPropertiesSuggestionState", js.undefined)
+    def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
   }
 }

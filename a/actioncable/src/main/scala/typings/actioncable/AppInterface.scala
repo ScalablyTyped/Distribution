@@ -2,12 +2,13 @@ package typings.actioncable
 
 import typings.actioncable.ActionCable.Cable
 import typings.actioncable.ActionCable.Channel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppInterface extends js.Object {
+trait AppInterface extends StObject {
   
   var cable: js.UndefOr[Cable] = js.native
   
@@ -22,30 +23,18 @@ object AppInterface {
   }
   
   @scala.inline
-  implicit class AppInterfaceOps[Self <: AppInterface] (val x: Self) extends AnyVal {
+  implicit class AppInterfaceMutableBuilder[Self <: AppInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCable(value: Cable): Self = StObject.set(x, "cable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCableUndefined: Self = StObject.set(x, "cable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetwork(value: Channel): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCable(value: Cable): Self = this.set("cable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCable: Self = this.set("cable", js.undefined)
-    
-    @scala.inline
-    def setNetwork(value: Channel): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,60 +60,48 @@ object GraphDefinitionLinkTargetCompartment {
   }
   
   @scala.inline
-  implicit class GraphDefinitionLinkTargetCompartmentOps[Self <: GraphDefinitionLinkTargetCompartment] (val x: Self) extends AnyVal {
+  implicit class GraphDefinitionLinkTargetCompartmentMutableBuilder[Self <: GraphDefinitionLinkTargetCompartment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: code): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setRule(value: code): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_expression(value: Element): Self = this.set("_expression", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def delete_expression: Self = this.set("_expression", js.undefined)
+    def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_rule(value: Element): Self = this.set("_rule", value.asInstanceOf[js.Any])
+    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
     
     @scala.inline
-    def delete_rule: Self = this.set("_rule", js.undefined)
+    def set_rule(value: Element): Self = StObject.set(x, "_rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def set_ruleUndefined: Self = StObject.set(x, "_rule", js.undefined)
   }
 }

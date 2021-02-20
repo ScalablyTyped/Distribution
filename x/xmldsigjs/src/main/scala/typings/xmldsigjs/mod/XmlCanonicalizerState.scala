@@ -1,12 +1,13 @@
 package typings.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "XmlCanonicalizerState")
 @js.native
-object XmlCanonicalizerState extends js.Object {
+object XmlCanonicalizerState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.xmldsigjs.canonicalizerMod.XmlCanonicalizerState with Double] = js.native

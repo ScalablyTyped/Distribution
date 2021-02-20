@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,69 +62,57 @@ object AccessibilityProps {
   }
   
   @scala.inline
-  implicit class AccessibilityPropsOps[Self <: AccessibilityProps] (val x: Self) extends AnyVal {
+  implicit class AccessibilityPropsMutableBuilder[Self <: AccessibilityProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
     
     @scala.inline
-    def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = this.set("accessibilityActions", js.Array(value :_*))
+    def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = this.set("accessibilityActions", value.asInstanceOf[js.Any])
+    def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityActions: Self = this.set("accessibilityActions", js.undefined)
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityHint(value: String): Self = this.set("accessibilityHint", value.asInstanceOf[js.Any])
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityHint: Self = this.set("accessibilityHint", js.undefined)
+    def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityRole(value: AccessibilityRole): Self = this.set("accessibilityRole", value.asInstanceOf[js.Any])
+    def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityRole: Self = this.set("accessibilityRole", js.undefined)
+    def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityState(value: AccessibilityState): Self = this.set("accessibilityState", value.asInstanceOf[js.Any])
+    def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityState: Self = this.set("accessibilityState", js.undefined)
+    def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityValue(value: AccessibilityValue): Self = this.set("accessibilityValue", value.asInstanceOf[js.Any])
+    def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityValue: Self = this.set("accessibilityValue", js.undefined)
+    def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessible(value: Boolean): Self = this.set("accessible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessible: Self = this.set("accessible", js.undefined)
-    
-    @scala.inline
-    def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = this.set("onAccessibilityAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnAccessibilityAction: Self = this.set("onAccessibilityAction", js.undefined)
+    def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
   }
 }

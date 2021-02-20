@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyVpnTunnelOptionsRequest extends js.Object {
+trait ModifyVpnTunnelOptionsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -40,33 +41,21 @@ object ModifyVpnTunnelOptionsRequest {
   }
   
   @scala.inline
-  implicit class ModifyVpnTunnelOptionsRequestOps[Self <: ModifyVpnTunnelOptionsRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyVpnTunnelOptionsRequestMutableBuilder[Self <: ModifyVpnTunnelOptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTunnelOptions(value: ModifyVpnTunnelOptionsSpecification): Self = StObject.set(x, "TunnelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnelOptions(value: ModifyVpnTunnelOptionsSpecification): Self = this.set("TunnelOptions", value.asInstanceOf[js.Any])
+    def setVpnConnectionId(value: VpnConnectionId): Self = StObject.set(x, "VpnConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpnConnectionId(value: VpnConnectionId): Self = this.set("VpnConnectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVpnTunnelOutsideIpAddress(value: String): Self = this.set("VpnTunnelOutsideIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setVpnTunnelOutsideIpAddress(value: String): Self = StObject.set(x, "VpnTunnelOutsideIpAddress", value.asInstanceOf[js.Any])
   }
 }

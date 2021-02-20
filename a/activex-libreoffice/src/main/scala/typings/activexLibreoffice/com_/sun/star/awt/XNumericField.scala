@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,87 +116,75 @@ object XNumericField {
   }
   
   @scala.inline
-  implicit class XNumericFieldOps[Self <: XNumericField] (val x: Self) extends AnyVal {
+  implicit class XNumericFieldMutableBuilder[Self <: XNumericField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: Double): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDecimalDigits(value: () => Double): Self = StObject.set(x, "getDecimalDigits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecimalDigits(value: Double): Self = this.set("DecimalDigits", value.asInstanceOf[js.Any])
+    def setGetFirst(value: () => Double): Self = StObject.set(x, "getFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirst(value: Double): Self = this.set("First", value.asInstanceOf[js.Any])
+    def setGetLast(value: () => Double): Self = StObject.set(x, "getLast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLast(value: Double): Self = this.set("Last", value.asInstanceOf[js.Any])
+    def setGetMax(value: () => Double): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("Max", value.asInstanceOf[js.Any])
+    def setGetMin(value: () => Double): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("Min", value.asInstanceOf[js.Any])
+    def setGetSpinSize(value: () => Double): Self = StObject.set(x, "getSpinSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpinSize(value: Double): Self = this.set("SpinSize", value.asInstanceOf[js.Any])
+    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setIsStrictFormat(value: () => Boolean): Self = StObject.set(x, "isStrictFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDecimalDigits(value: () => Double): Self = this.set("getDecimalDigits", js.Any.fromFunction0(value))
+    def setLast(value: Double): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFirst(value: () => Double): Self = this.set("getFirst", js.Any.fromFunction0(value))
+    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLast(value: () => Double): Self = this.set("getLast", js.Any.fromFunction0(value))
+    def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMax(value: () => Double): Self = this.set("getMax", js.Any.fromFunction0(value))
+    def setSetDecimalDigits(value: Double => Unit): Self = StObject.set(x, "setDecimalDigits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMin(value: () => Double): Self = this.set("getMin", js.Any.fromFunction0(value))
+    def setSetFirst(value: Double => Unit): Self = StObject.set(x, "setFirst", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSpinSize(value: () => Double): Self = this.set("getSpinSize", js.Any.fromFunction0(value))
+    def setSetLast(value: Double => Unit): Self = StObject.set(x, "setLast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValue(value: () => Double): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setSetMax(value: Double => Unit): Self = StObject.set(x, "setMax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsStrictFormat(value: () => Boolean): Self = this.set("isStrictFormat", js.Any.fromFunction0(value))
+    def setSetMin(value: Double => Unit): Self = StObject.set(x, "setMin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDecimalDigits(value: Double => Unit): Self = this.set("setDecimalDigits", js.Any.fromFunction1(value))
+    def setSetSpinSize(value: Double => Unit): Self = StObject.set(x, "setSpinSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFirst(value: Double => Unit): Self = this.set("setFirst", js.Any.fromFunction1(value))
+    def setSetStrictFormat(value: Boolean => Unit): Self = StObject.set(x, "setStrictFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLast(value: Double => Unit): Self = this.set("setLast", js.Any.fromFunction1(value))
+    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMax(value: Double => Unit): Self = this.set("setMax", js.Any.fromFunction1(value))
+    def setSpinSize(value: Double): Self = StObject.set(x, "SpinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetMin(value: Double => Unit): Self = this.set("setMin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSpinSize(value: Double => Unit): Self = this.set("setSpinSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStrictFormat(value: Boolean => Unit): Self = this.set("setStrictFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

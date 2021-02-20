@@ -2,6 +2,7 @@ package typings.oracledb.mod
 
 import typings.oracledb.anon.TypeClass
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since 4.0
   */
 @js.native
-trait BaseDBObject[T] extends js.Object {
+trait BaseDBObject[T] extends StObject {
   
   /**
     * Add the given value to the end of the collection.
@@ -131,84 +132,72 @@ object BaseDBObject {
   }
   
   @scala.inline
-  implicit class BaseDBObjectOps[Self <: BaseDBObject[_], T] (val x: Self with BaseDBObject[T]) extends AnyVal {
+  implicit class BaseDBObjectMutableBuilder[Self <: BaseDBObject[_], T] (val x: Self with BaseDBObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: T => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributes(value: Record[String, TypeClass[T]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteElement(value: Double => Unit): Self = StObject.set(x, "deleteElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppend(value: T => Unit): Self = this.set("append", js.Any.fromFunction1(value))
+    def setElementType(value: Double): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Record[String, TypeClass[T]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setElementTypeClass(value: DBObjectClass[T]): Self = StObject.set(x, "elementTypeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteElement(value: Double => Unit): Self = this.set("deleteElement", js.Any.fromFunction1(value))
+    def setElementTypeName(value: String): Self = StObject.set(x, "elementTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementType(value: Double): Self = this.set("elementType", value.asInstanceOf[js.Any])
+    def setFqn(value: String): Self = StObject.set(x, "fqn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementTypeClass(value: DBObjectClass[T]): Self = this.set("elementTypeClass", value.asInstanceOf[js.Any])
+    def setGetElement(value: Double => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElementTypeName(value: String): Self = this.set("elementTypeName", value.asInstanceOf[js.Any])
+    def setGetFirstIndex(value: () => Double): Self = StObject.set(x, "getFirstIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFqn(value: String): Self = this.set("fqn", value.asInstanceOf[js.Any])
+    def setGetKeys(value: () => js.Array[Double | (/* keyof T */ String)]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElement(value: Double => js.Any): Self = this.set("getElement", js.Any.fromFunction1(value))
+    def setGetLastIndex(value: () => Double): Self = StObject.set(x, "getLastIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFirstIndex(value: () => Double): Self = this.set("getFirstIndex", js.Any.fromFunction0(value))
+    def setGetNextIndex(value: () => Double): Self = StObject.set(x, "getNextIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeys(value: () => js.Array[Double | (/* keyof T */ String)]): Self = this.set("getKeys", js.Any.fromFunction0(value))
+    def setGetPrevIndex(value: () => Double): Self = StObject.set(x, "getPrevIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLastIndex(value: () => Double): Self = this.set("getLastIndex", js.Any.fromFunction0(value))
+    def setGetValues(value: () => js.Array[T]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNextIndex(value: () => Double): Self = this.set("getNextIndex", js.Any.fromFunction0(value))
+    def setHasElement(value: () => Boolean): Self = StObject.set(x, "hasElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPrevIndex(value: () => Double): Self = this.set("getPrevIndex", js.Any.fromFunction0(value))
+    def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValues(value: () => js.Array[T]): Self = this.set("getValues", js.Any.fromFunction0(value))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasElement(value: () => Boolean): Self = this.set("hasElement", js.Any.fromFunction0(value))
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def setIsCollection(value: Boolean): Self = this.set("isCollection", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSetElement(value: (Double, T) => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetElement(value: (Double, T) => Unit): Self = this.set("setElement", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTrim(value: Double => Unit): Self = this.set("trim", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setTrim(value: Double => Unit): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
   }
 }

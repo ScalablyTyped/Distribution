@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,9 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * document.body.appendChild(app.view);
   * @namespace PIXI.filters
   */
-@JSImport("pixi.js", "filters")
-@js.native
-object filters extends js.Object {
+object filters {
   
   /**
     * Simplest filter - applies alpha.
@@ -52,6 +51,7 @@ object filters extends js.Object {
     * @extends PIXI.Filter
     * @memberof PIXI.filters
     */
+  @JSImport("pixi.js", "filters.AlphaFilter")
   @js.native
   class AlphaFilter ()
     extends typings.pixiJs.PIXI.filters.AlphaFilter {
@@ -67,6 +67,7 @@ object filters extends js.Object {
     * @extends PIXI.Filter
     * @memberof PIXI.filters
     */
+  @JSImport("pixi.js", "filters.BlurFilter")
   @js.native
   class BlurFilter ()
     extends typings.pixiJs.PIXI.filters.BlurFilter {
@@ -114,6 +115,7 @@ object filters extends js.Object {
     * @extends PIXI.Filter
     * @memberof PIXI.filters
     */
+  @JSImport("pixi.js", "filters.BlurFilterPass")
   @js.native
   class BlurFilterPass protected ()
     extends typings.pixiJs.PIXI.filters.BlurFilterPass {
@@ -197,6 +199,7 @@ object filters extends js.Object {
     * @extends PIXI.Filter
     * @memberof PIXI.filters
     */
+  @JSImport("pixi.js", "filters.ColorMatrixFilter")
   @js.native
   class ColorMatrixFilter ()
     extends typings.pixiJs.PIXI.filters.ColorMatrixFilter
@@ -219,6 +222,7 @@ object filters extends js.Object {
     * @extends PIXI.Filter
     * @memberof PIXI.filters
     */
+  @JSImport("pixi.js", "filters.DisplacementFilter")
   @js.native
   class DisplacementFilter protected ()
     extends typings.pixiJs.PIXI.filters.DisplacementFilter {
@@ -237,6 +241,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     *
     */
+  @JSImport("pixi.js", "filters.FXAAFilter")
   @js.native
   class FXAAFilter ()
     extends typings.pixiJs.PIXI.filters.FXAAFilter
@@ -248,6 +253,7 @@ object filters extends js.Object {
     * @extends PIXI.Filter
     * @memberof PIXI.filters
     */
+  @JSImport("pixi.js", "filters.NoiseFilter")
   @js.native
   class NoiseFilter ()
     extends typings.pixiJs.PIXI.filters.NoiseFilter {

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchApplication
   */
 @js.native
-trait SchemaSearchApplication extends js.Object {
+trait SchemaSearchApplication extends StObject {
   
   /**
     * Retrictions applied to the configurations. The maximum number of elements
@@ -64,78 +65,66 @@ object SchemaSearchApplication {
   }
   
   @scala.inline
-  implicit class SchemaSearchApplicationOps[Self <: SchemaSearchApplication] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchApplicationMutableBuilder[Self <: SchemaSearchApplication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceRestrictions(value: js.Array[SchemaDataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = this.set("dataSourceRestrictions", js.Array(value :_*))
+    def setDefaultFacetOptions(value: js.Array[SchemaFacetOptions]): Self = StObject.set(x, "defaultFacetOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceRestrictions(value: js.Array[SchemaDataSourceRestriction]): Self = this.set("dataSourceRestrictions", value.asInstanceOf[js.Any])
+    def setDefaultFacetOptionsUndefined: Self = StObject.set(x, "defaultFacetOptions", js.undefined)
     
     @scala.inline
-    def deleteDataSourceRestrictions: Self = this.set("dataSourceRestrictions", js.undefined)
+    def setDefaultFacetOptionsVarargs(value: SchemaFacetOptions*): Self = StObject.set(x, "defaultFacetOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultFacetOptionsVarargs(value: SchemaFacetOptions*): Self = this.set("defaultFacetOptions", js.Array(value :_*))
+    def setDefaultSortOptions(value: SchemaSortOptions): Self = StObject.set(x, "defaultSortOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFacetOptions(value: js.Array[SchemaFacetOptions]): Self = this.set("defaultFacetOptions", value.asInstanceOf[js.Any])
+    def setDefaultSortOptionsUndefined: Self = StObject.set(x, "defaultSortOptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultFacetOptions: Self = this.set("defaultFacetOptions", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSortOptions(value: SchemaSortOptions): Self = this.set("defaultSortOptions", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDefaultSortOptions: Self = this.set("defaultSortOptions", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
     
     @scala.inline
-    def setOperationIdsVarargs(value: String*): Self = this.set("operationIds", js.Array(value :_*))
+    def setScoringConfig(value: SchemaScoringConfig): Self = StObject.set(x, "scoringConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationIds(value: js.Array[String]): Self = this.set("operationIds", value.asInstanceOf[js.Any])
+    def setScoringConfigUndefined: Self = StObject.set(x, "scoringConfig", js.undefined)
     
     @scala.inline
-    def deleteOperationIds: Self = this.set("operationIds", js.undefined)
+    def setSourceConfig(value: js.Array[SchemaSourceConfig]): Self = StObject.set(x, "sourceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoringConfig(value: SchemaScoringConfig): Self = this.set("scoringConfig", value.asInstanceOf[js.Any])
+    def setSourceConfigUndefined: Self = StObject.set(x, "sourceConfig", js.undefined)
     
     @scala.inline
-    def deleteScoringConfig: Self = this.set("scoringConfig", js.undefined)
-    
-    @scala.inline
-    def setSourceConfigVarargs(value: SchemaSourceConfig*): Self = this.set("sourceConfig", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceConfig(value: js.Array[SchemaSourceConfig]): Self = this.set("sourceConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceConfig: Self = this.set("sourceConfig", js.undefined)
+    def setSourceConfigVarargs(value: SchemaSourceConfig*): Self = StObject.set(x, "sourceConfig", js.Array(value :_*))
   }
 }

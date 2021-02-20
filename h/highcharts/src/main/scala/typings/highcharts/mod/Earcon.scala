@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * one or more instruments playing a predefined sound.
   */
 @js.native
-trait Earcon extends js.Object {
+trait Earcon extends StObject {
   
   /**
     * Cancel any current sonification of the Earcon. Calls onEnd functions.

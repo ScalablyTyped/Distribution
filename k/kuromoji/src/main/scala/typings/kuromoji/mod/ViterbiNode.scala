@@ -1,11 +1,12 @@
 package typings.kuromoji.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViterbiNode extends js.Object {
+trait ViterbiNode extends StObject {
   
   var cost: Double = js.native
   
@@ -48,48 +49,36 @@ object ViterbiNode {
   }
   
   @scala.inline
-  implicit class ViterbiNodeOps[Self <: ViterbiNode] (val x: Self) extends AnyVal {
+  implicit class ViterbiNodeMutableBuilder[Self <: ViterbiNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeft_id(value: Double): Self = StObject.set(x, "left_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: Double): Self = this.set("cost", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft_id(value: Double): Self = this.set("left_id", value.asInstanceOf[js.Any])
+    def setPrev(value: ViterbiNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setRight_id(value: Double): Self = StObject.set(x, "right_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShortest_cost(value: Double): Self = StObject.set(x, "shortest_cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrev(value: ViterbiNode): Self = this.set("prev", value.asInstanceOf[js.Any])
+    def setStart_pos(value: Double): Self = StObject.set(x, "start_pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight_id(value: Double): Self = this.set("right_id", value.asInstanceOf[js.Any])
+    def setSurface_form(value: String): Self = StObject.set(x, "surface_form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortest_cost(value: Double): Self = this.set("shortest_cost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_pos(value: Double): Self = this.set("start_pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurface_form(value: String): Self = this.set("surface_form", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

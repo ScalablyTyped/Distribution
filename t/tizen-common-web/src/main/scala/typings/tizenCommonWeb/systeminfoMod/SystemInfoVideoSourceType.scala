@@ -1,61 +1,52 @@
 package typings.tizenCommonWeb.systeminfoMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemInfoVideoSourceType extends js.Object
+sealed trait SystemInfoVideoSourceType extends StObject
 @JSImport("tizen-common-web/systeminfo", "SystemInfoVideoSourceType")
 @js.native
-object SystemInfoVideoSourceType extends js.Object {
+object SystemInfoVideoSourceType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SystemInfoVideoSourceType with String] = js.native
   
   @js.native
   sealed trait AV extends SystemInfoVideoSourceType
-  /* "AV" */ @js.native
-  object AV extends TopLevel[AV with String]
+  /* "AV" */ val AV: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.AV with String = js.native
   
   @js.native
   sealed trait COMP extends SystemInfoVideoSourceType
-  /* "COMP" */ @js.native
-  object COMP extends TopLevel[COMP with String]
+  /* "COMP" */ val COMP: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.COMP with String = js.native
   
   @js.native
   sealed trait DVI extends SystemInfoVideoSourceType
-  /* "DVI" */ @js.native
-  object DVI extends TopLevel[DVI with String]
+  /* "DVI" */ val DVI: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.DVI with String = js.native
   
   @js.native
   sealed trait HDMI extends SystemInfoVideoSourceType
-  /* "HDMI" */ @js.native
-  object HDMI extends TopLevel[HDMI with String]
+  /* "HDMI" */ val HDMI: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.HDMI with String = js.native
   
   @js.native
   sealed trait MEDIA extends SystemInfoVideoSourceType
-  /* "MEDIA" */ @js.native
-  object MEDIA extends TopLevel[MEDIA with String]
+  /* "MEDIA" */ val MEDIA: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.MEDIA with String = js.native
   
   @js.native
   sealed trait PC extends SystemInfoVideoSourceType
-  /* "PC" */ @js.native
-  object PC extends TopLevel[PC with String]
+  /* "PC" */ val PC: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.PC with String = js.native
   
   @js.native
   sealed trait SCART extends SystemInfoVideoSourceType
-  /* "SCART" */ @js.native
-  object SCART extends TopLevel[SCART with String]
+  /* "SCART" */ val SCART: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.SCART with String = js.native
   
   @js.native
   sealed trait SVIDEO extends SystemInfoVideoSourceType
-  /* "SVIDEO" */ @js.native
-  object SVIDEO extends TopLevel[SVIDEO with String]
+  /* "SVIDEO" */ val SVIDEO: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.SVIDEO with String = js.native
   
   @js.native
   sealed trait TV extends SystemInfoVideoSourceType
-  /* "TV" */ @js.native
-  object TV extends TopLevel[TV with String]
+  /* "TV" */ val TV: typings.tizenCommonWeb.systeminfoMod.SystemInfoVideoSourceType.TV with String = js.native
 }

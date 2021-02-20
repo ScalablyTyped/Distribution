@@ -1,5 +1,6 @@
 package typings.googleapis.chatV1Mod.chatV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A widget is a UI element that presents texts, images, etc.
   */
 @js.native
-trait SchemaWidgetMarkup extends js.Object {
+trait SchemaWidgetMarkup extends StObject {
   
   /**
     * A list of buttons. Buttons is also oneof data and only one of these
@@ -40,45 +41,33 @@ object SchemaWidgetMarkup {
   }
   
   @scala.inline
-  implicit class SchemaWidgetMarkupOps[Self <: SchemaWidgetMarkup] (val x: Self) extends AnyVal {
+  implicit class SchemaWidgetMarkupMutableBuilder[Self <: SchemaWidgetMarkup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[SchemaButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonsVarargs(value: SchemaButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: SchemaButton*): Self = this.set("buttons", js.Array(value :_*))
+    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[SchemaButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setKeyValue(value: SchemaKeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: SchemaImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setTextParagraph(value: SchemaTextParagraph): Self = StObject.set(x, "textParagraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyValue(value: SchemaKeyValue): Self = this.set("keyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
-    
-    @scala.inline
-    def setTextParagraph(value: SchemaTextParagraph): Self = this.set("textParagraph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextParagraph: Self = this.set("textParagraph", js.undefined)
+    def setTextParagraphUndefined: Self = StObject.set(x, "textParagraph", js.undefined)
   }
 }

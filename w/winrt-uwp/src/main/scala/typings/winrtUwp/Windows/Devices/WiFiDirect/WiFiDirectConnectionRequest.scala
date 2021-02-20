@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A Wi-FI Direct connection request received by a WiFiDirectConnectionListener . */
 @js.native
-trait WiFiDirectConnectionRequest extends js.Object {
+trait WiFiDirectConnectionRequest extends StObject {
   
   /** Closes the WiFiDirectConnectionRequest object. */
   def close(): Unit = js.native
@@ -24,24 +25,12 @@ object WiFiDirectConnectionRequest {
   }
   
   @scala.inline
-  implicit class WiFiDirectConnectionRequestOps[Self <: WiFiDirectConnectionRequest] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectConnectionRequestMutableBuilder[Self <: WiFiDirectConnectionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDeviceInformation(value: DeviceInformation): Self = this.set("deviceInformation", value.asInstanceOf[js.Any])
+    def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
   }
 }

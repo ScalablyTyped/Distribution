@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -202,10 +203,7 @@ class Attribute protected ()
   ) = this()
   def this(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double, start: Double) = this()
 }
-/* static members */
-@JSGlobal("PIXI.Attribute")
-@js.native
-object Attribute extends js.Object {
+object Attribute {
   
   /**
     * Helper function that creates an Attribute based on the information provided
@@ -219,7 +217,12 @@ object Attribute extends js.Object {
     *
     * @returns {PIXI.Attribute} A new {@link PIXI.Attribute} based on the information provided
     */
+  /* static member */
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: js.UndefOr[scala.Nothing],
@@ -227,12 +230,16 @@ object Attribute extends js.Object {
     `type`: js.UndefOr[scala.Nothing],
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: js.UndefOr[scala.Nothing],
     normalized: js.UndefOr[scala.Nothing],
     `type`: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: js.UndefOr[scala.Nothing],
@@ -240,7 +247,11 @@ object Attribute extends js.Object {
     `type`: Double,
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: js.UndefOr[scala.Nothing], normalized: Boolean): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: js.UndefOr[scala.Nothing],
@@ -248,7 +259,11 @@ object Attribute extends js.Object {
     `type`: js.UndefOr[scala.Nothing],
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: js.UndefOr[scala.Nothing], normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: js.UndefOr[scala.Nothing],
@@ -256,7 +271,11 @@ object Attribute extends js.Object {
     `type`: Double,
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: Double): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: Double,
@@ -264,7 +283,11 @@ object Attribute extends js.Object {
     `type`: js.UndefOr[scala.Nothing],
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: Double, normalized: js.UndefOr[scala.Nothing], `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: Double,
@@ -272,7 +295,11 @@ object Attribute extends js.Object {
     `type`: Double,
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: Double, normalized: Boolean): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(
     buffer: String,
     size: Double,
@@ -280,6 +307,10 @@ object Attribute extends js.Object {
     `type`: js.UndefOr[scala.Nothing],
     stride: Double
   ): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: Double, normalized: Boolean, `type`: Double): typings.pixiJs.PIXI.Attribute = js.native
+  @JSGlobal("PIXI.Attribute.from")
+  @js.native
   def from(buffer: String, size: Double, normalized: Boolean, `type`: Double, stride: Double): typings.pixiJs.PIXI.Attribute = js.native
 }

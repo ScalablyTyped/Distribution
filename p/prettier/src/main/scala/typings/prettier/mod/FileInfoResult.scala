@@ -1,11 +1,12 @@
 package typings.prettier.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileInfoResult extends js.Object {
+trait FileInfoResult extends StObject {
   
   var ignored: Boolean = js.native
   
@@ -20,27 +21,15 @@ object FileInfoResult {
   }
   
   @scala.inline
-  implicit class FileInfoResultOps[Self <: FileInfoResult] (val x: Self) extends AnyVal {
+  implicit class FileInfoResultMutableBuilder[Self <: FileInfoResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInferredParser(value: String): Self = StObject.set(x, "inferredParser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIgnored(value: Boolean): Self = this.set("ignored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInferredParser(value: String): Self = this.set("inferredParser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInferredParserNull: Self = this.set("inferredParser", null)
+    def setInferredParserNull: Self = StObject.set(x, "inferredParser", null)
   }
 }

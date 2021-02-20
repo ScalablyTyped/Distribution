@@ -4,12 +4,13 @@ import typings.chrome.chrome.tabCapture.CaptureInfo
 import typings.chrome.chrome.tabCapture.CaptureOptions
 import typings.chrome.chrome.tabCapture.CaptureStatusChangedEvent
 import typings.std.MediaStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeoftabCapture extends js.Object {
+trait TypeoftabCapture extends StObject {
   
   def capture(options: CaptureOptions, callback: js.Function1[/* stream */ MediaStream | Null, Unit]): Unit = js.native
   
@@ -30,27 +31,15 @@ object TypeoftabCapture {
   }
   
   @scala.inline
-  implicit class TypeoftabCaptureOps[Self <: TypeoftabCapture] (val x: Self) extends AnyVal {
+  implicit class TypeoftabCaptureMutableBuilder[Self <: TypeoftabCapture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapture(value: (CaptureOptions, js.Function1[/* stream */ MediaStream | Null, Unit]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCapturedTabs(value: js.Function1[/* result */ js.Array[CaptureInfo], Unit] => Unit): Self = StObject.set(x, "getCapturedTabs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCapture(value: (CaptureOptions, js.Function1[/* stream */ MediaStream | Null, Unit]) => Unit): Self = this.set("capture", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetCapturedTabs(value: js.Function1[/* result */ js.Array[CaptureInfo], Unit] => Unit): Self = this.set("getCapturedTabs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnStatusChanged(value: CaptureStatusChangedEvent): Self = this.set("onStatusChanged", value.asInstanceOf[js.Any])
+    def setOnStatusChanged(value: CaptureStatusChangedEvent): Self = StObject.set(x, "onStatusChanged", value.asInstanceOf[js.Any])
   }
 }

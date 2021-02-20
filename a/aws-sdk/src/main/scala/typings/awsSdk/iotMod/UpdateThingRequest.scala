@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateThingRequest extends js.Object {
+trait UpdateThingRequest extends StObject {
   
   /**
     * A list of thing attributes, a JSON string containing name-value pairs. For example:  {\"attributes\":{\"name1\":\"value2\"}}  This data is used to add new attributes or update existing attributes.
@@ -41,45 +42,33 @@ object UpdateThingRequest {
   }
   
   @scala.inline
-  implicit class UpdateThingRequestOps[Self <: UpdateThingRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateThingRequestMutableBuilder[Self <: UpdateThingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributePayloadUndefined: Self = StObject.set(x, "attributePayload", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
     
     @scala.inline
-    def setAttributePayload(value: AttributePayload): Self = this.set("attributePayload", value.asInstanceOf[js.Any])
+    def setRemoveThingType(value: RemoveThingType): Self = StObject.set(x, "removeThingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributePayload: Self = this.set("attributePayload", js.undefined)
+    def setRemoveThingTypeUndefined: Self = StObject.set(x, "removeThingType", js.undefined)
     
     @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveThingType(value: RemoveThingType): Self = this.set("removeThingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveThingType: Self = this.set("removeThingType", js.undefined)
-    
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
   }
 }

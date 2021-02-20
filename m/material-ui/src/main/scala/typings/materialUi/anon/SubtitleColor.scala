@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubtitleColor extends js.Object {
+trait SubtitleColor extends StObject {
   
   var fontWeight: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object SubtitleColor {
   }
   
   @scala.inline
-  implicit class SubtitleColorOps[Self <: SubtitleColor] (val x: Self) extends AnyVal {
+  implicit class SubtitleColorMutableBuilder[Self <: SubtitleColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleColor(value: String): Self = this.set("subtitleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitleColor: Self = this.set("subtitleColor", js.undefined)
-    
-    @scala.inline
-    def setTitleColor(value: String): Self = this.set("titleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleColor: Self = this.set("titleColor", js.undefined)
+    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
   }
 }

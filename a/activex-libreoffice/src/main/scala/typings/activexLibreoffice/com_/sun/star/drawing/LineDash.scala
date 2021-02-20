@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link LineDash} defines a non-continuous line. */
 @js.native
-trait LineDash extends js.Object {
+trait LineDash extends StObject {
   
   /** This is the length of a single dash. */
   var DashLen: Double = js.native
@@ -35,36 +36,24 @@ object LineDash {
   }
   
   @scala.inline
-  implicit class LineDashOps[Self <: LineDash] (val x: Self) extends AnyVal {
+  implicit class LineDashMutableBuilder[Self <: LineDash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashLen(value: Double): Self = StObject.set(x, "DashLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashes(value: Double): Self = StObject.set(x, "Dashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashLen(value: Double): Self = this.set("DashLen", value.asInstanceOf[js.Any])
+    def setDotLen(value: Double): Self = StObject.set(x, "DotLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashes(value: Double): Self = this.set("Dashes", value.asInstanceOf[js.Any])
+    def setDots(value: Double): Self = StObject.set(x, "Dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("Distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDotLen(value: Double): Self = this.set("DotLen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDots(value: Double): Self = this.set("Dots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: DashStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setStyle(value: DashStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

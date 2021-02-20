@@ -1,31 +1,62 @@
 package typings.googleGax.operationsMod.google.protobuf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EnumOptions. */
-trait IEnumOptions extends js.Object {
+@js.native
+trait IEnumOptions extends StObject {
+  
   /** EnumOptions allowAlias */
-  var allowAlias: js.UndefOr[Boolean | Null] = js.undefined
+  var allowAlias: js.UndefOr[Boolean | Null] = js.native
+  
   /** EnumOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
+  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  
   /** EnumOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
 }
-
 object IEnumOptions {
+  
   @scala.inline
-  def apply(
-    allowAlias: js.UndefOr[Null | Boolean] = js.undefined,
-    deprecated: js.UndefOr[Null | Boolean] = js.undefined,
-    uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined
-  ): IEnumOptions = {
+  def apply(): IEnumOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAlias)) __obj.updateDynamic("allowAlias")(allowAlias.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnumOptions]
   }
+  
+  @scala.inline
+  implicit class IEnumOptionsMutableBuilder[Self <: IEnumOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAllowAlias(value: Boolean): Self = StObject.set(x, "allowAlias", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAllowAliasNull: Self = StObject.set(x, "allowAlias", null)
+    
+    @scala.inline
+    def setAllowAliasUndefined: Self = StObject.set(x, "allowAlias", js.undefined)
+    
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
+    
+    @scala.inline
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    
+    @scala.inline
+    def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
+    
+    @scala.inline
+    def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
+    
+    @scala.inline
+    def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+  }
 }
-

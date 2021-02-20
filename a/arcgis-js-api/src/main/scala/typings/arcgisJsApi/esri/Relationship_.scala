@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`one-to-many`
 import typings.arcgisJsApi.arcgisJsApiStrings.`one-to-one`
 import typings.arcgisJsApi.arcgisJsApiStrings.destination
 import typings.arcgisJsApi.arcgisJsApiStrings.origin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

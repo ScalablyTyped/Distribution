@@ -1,11 +1,12 @@
 package typings.node.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Strings extends js.Object {
+trait Strings extends StObject {
   
   /**
     * If set to false any calls to eval or function constructors (Function, GeneratorFunction, etc)
@@ -29,30 +30,18 @@ object Strings {
   }
   
   @scala.inline
-  implicit class StringsOps[Self <: Strings] (val x: Self) extends AnyVal {
+  implicit class StringsMutableBuilder[Self <: Strings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWasm(value: Boolean): Self = StObject.set(x, "wasm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrings(value: Boolean): Self = this.set("strings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
-    
-    @scala.inline
-    def setWasm(value: Boolean): Self = this.set("wasm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWasm: Self = this.set("wasm", js.undefined)
+    def setWasmUndefined: Self = StObject.set(x, "wasm", js.undefined)
   }
 }

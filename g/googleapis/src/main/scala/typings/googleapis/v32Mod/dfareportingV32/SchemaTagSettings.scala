@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dynamic and Image Tag Settings.
   */
 @js.native
-trait SchemaTagSettings extends js.Object {
+trait SchemaTagSettings extends StObject {
   
   /**
     * Whether dynamic floodlight tags are enabled.
@@ -29,30 +30,18 @@ object SchemaTagSettings {
   }
   
   @scala.inline
-  implicit class SchemaTagSettingsOps[Self <: SchemaTagSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaTagSettingsMutableBuilder[Self <: SchemaTagSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicTagEnabledUndefined: Self = StObject.set(x, "dynamicTagEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageTagEnabled(value: Boolean): Self = StObject.set(x, "imageTagEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicTagEnabled(value: Boolean): Self = this.set("dynamicTagEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicTagEnabled: Self = this.set("dynamicTagEnabled", js.undefined)
-    
-    @scala.inline
-    def setImageTagEnabled(value: Boolean): Self = this.set("imageTagEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageTagEnabled: Self = this.set("imageTagEnabled", js.undefined)
+    def setImageTagEnabledUndefined: Self = StObject.set(x, "imageTagEnabled", js.undefined)
   }
 }

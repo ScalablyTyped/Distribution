@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Avatarurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsCreateFromManifestResponseData extends js.Object {
+trait AppsCreateFromManifestResponseData extends StObject {
   
   var client_id: String = js.native
   
@@ -57,57 +58,45 @@ object AppsCreateFromManifestResponseData {
   }
   
   @scala.inline
-  implicit class AppsCreateFromManifestResponseDataOps[Self <: AppsCreateFromManifestResponseData] (val x: Self) extends AnyVal {
+  implicit class AppsCreateFromManifestResponseDataMutableBuilder[Self <: AppsCreateFromManifestResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_url(value: String): Self = this.set("external_url", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Avatarurl): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPem(value: String): Self = this.set("pem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebhook_secret(value: String): Self = this.set("webhook_secret", value.asInstanceOf[js.Any])
+    def setWebhook_secret(value: String): Self = StObject.set(x, "webhook_secret", value.asInstanceOf[js.Any])
   }
 }

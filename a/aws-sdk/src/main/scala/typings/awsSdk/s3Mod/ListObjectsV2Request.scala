@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListObjectsV2Request extends js.Object {
+trait ListObjectsV2Request extends StObject {
   
   /**
     * Bucket name to list.  When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide. When using this API with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this operation using S3 on Outposts through the AWS SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using S3 on Outposts in the Amazon Simple Storage Service Developer Guide.
@@ -66,75 +67,63 @@ object ListObjectsV2Request {
   }
   
   @scala.inline
-  implicit class ListObjectsV2RequestOps[Self <: ListObjectsV2Request] (val x: Self) extends AnyVal {
+  implicit class ListObjectsV2RequestMutableBuilder[Self <: ListObjectsV2Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    def setFetchOwner(value: FetchOwner): Self = StObject.set(x, "FetchOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    def setFetchOwnerUndefined: Self = StObject.set(x, "FetchOwner", js.undefined)
     
     @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setMaxKeys(value: MaxKeys): Self = StObject.set(x, "MaxKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchOwner(value: FetchOwner): Self = this.set("FetchOwner", value.asInstanceOf[js.Any])
+    def setMaxKeysUndefined: Self = StObject.set(x, "MaxKeys", js.undefined)
     
     @scala.inline
-    def deleteFetchOwner: Self = this.set("FetchOwner", js.undefined)
+    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxKeys(value: MaxKeys): Self = this.set("MaxKeys", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteMaxKeys: Self = this.set("MaxKeys", js.undefined)
+    def setRequestPayer(value: RequestPayer): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    def setStartAfter(value: StartAfter): Self = StObject.set(x, "StartAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
-    
-    @scala.inline
-    def setStartAfter(value: StartAfter): Self = this.set("StartAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAfter: Self = this.set("StartAfter", js.undefined)
+    def setStartAfterUndefined: Self = StObject.set(x, "StartAfter", js.undefined)
   }
 }

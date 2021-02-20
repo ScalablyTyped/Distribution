@@ -1,14 +1,14 @@
 package typings.asana.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asana", "errors")
-@js.native
-object errors extends js.Object {
+object errors {
   
+  @JSImport("asana", "errors.AsanaError")
   @js.native
   class AsanaError protected () extends Error {
     /**
@@ -22,6 +22,7 @@ object errors extends js.Object {
     var value: js.Any = js.native
   }
   
+  @JSImport("asana", "errors.Forbidden")
   @js.native
   class Forbidden protected () extends AsanaError {
     /**
@@ -31,6 +32,7 @@ object errors extends js.Object {
     def this(value: js.Any) = this()
   }
   
+  @JSImport("asana", "errors.InvalidRequest")
   @js.native
   class InvalidRequest protected () extends AsanaError {
     /**
@@ -40,6 +42,7 @@ object errors extends js.Object {
     def this(value: js.Any) = this()
   }
   
+  @JSImport("asana", "errors.NoAuthorization")
   @js.native
   class NoAuthorization protected () extends AsanaError {
     /**
@@ -49,6 +52,7 @@ object errors extends js.Object {
     def this(value: js.Any) = this()
   }
   
+  @JSImport("asana", "errors.NotFound")
   @js.native
   class NotFound protected () extends AsanaError {
     /**
@@ -58,6 +62,7 @@ object errors extends js.Object {
     def this(value: js.Any) = this()
   }
   
+  @JSImport("asana", "errors.RateLimitEnforced")
   @js.native
   class RateLimitEnforced protected () extends AsanaError {
     /**
@@ -67,6 +72,7 @@ object errors extends js.Object {
     def this(value: js.Any) = this()
   }
   
+  @JSImport("asana", "errors.ServerError")
   @js.native
   class ServerError protected () extends AsanaError {
     /**

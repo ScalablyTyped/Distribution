@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesGetFileInputMod.GetFileInput
 import typings.awsSdkClientCodecommitNode.typesGetFileOutputMod.GetFileOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/GetFileCommand", JSImport.Namespace)
-@js.native
-object getFileCommandMod extends js.Object {
+object getFileCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/GetFileCommand", "GetFileCommand")
   @js.native
   class GetFileCommand protected () extends Command[
           InputTypesUnion, 

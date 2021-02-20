@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.IExpressionSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,10 @@ class MemberAccessExpressionSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.MemberAccessExpressionSyntax")
-@js.native
-object MemberAccessExpressionSyntax extends js.Object {
+object MemberAccessExpressionSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.MemberAccessExpressionSyntax.create1")
+  @js.native
   def create1(expression: IExpressionSyntax, name: ISyntaxToken): typings.typescriptServices.TypeScript.MemberAccessExpressionSyntax = js.native
 }

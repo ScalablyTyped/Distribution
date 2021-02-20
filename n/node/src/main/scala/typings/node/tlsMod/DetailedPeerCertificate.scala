@@ -2,6 +2,7 @@ package typings.node.tlsMod
 
 import typings.node.Buffer
 import typings.node.NodeJS.Dict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,21 +36,9 @@ object DetailedPeerCertificate {
   }
   
   @scala.inline
-  implicit class DetailedPeerCertificateOps[Self <: DetailedPeerCertificate] (val x: Self) extends AnyVal {
+  implicit class DetailedPeerCertificateMutableBuilder[Self <: DetailedPeerCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIssuerCertificate(value: DetailedPeerCertificate): Self = this.set("issuerCertificate", value.asInstanceOf[js.Any])
+    def setIssuerCertificate(value: DetailedPeerCertificate): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
   }
 }

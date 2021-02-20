@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishingStitching extends js.Object {
+trait FinishingStitching extends StObject {
   
   var `stitching-angle`: js.UndefOr[Double] = js.native
   
@@ -26,51 +27,39 @@ object FinishingStitching {
   }
   
   @scala.inline
-  implicit class FinishingStitchingOps[Self <: FinishingStitching] (val x: Self) extends AnyVal {
+  implicit class FinishingStitchingMutableBuilder[Self <: FinishingStitching] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setStitching-angle`(value: Double): Self = StObject.set(x, "stitching-angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setStitching-angleUndefined`: Self = StObject.set(x, "stitching-angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setStitching-locations`(value: js.Array[Double]): Self = StObject.set(x, "stitching-locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStitching-angle`(value: Double): Self = this.set("stitching-angle", value.asInstanceOf[js.Any])
+    def `setStitching-locationsUndefined`: Self = StObject.set(x, "stitching-locations", js.undefined)
     
     @scala.inline
-    def `deleteStitching-angle`: Self = this.set("stitching-angle", js.undefined)
+    def `setStitching-locationsVarargs`(value: Double*): Self = StObject.set(x, "stitching-locations", js.Array(value :_*))
     
     @scala.inline
-    def `setStitching-locationsVarargs`(value: Double*): Self = this.set("stitching-locations", js.Array(value :_*))
+    def `setStitching-method`(value: StitchingMethod): Self = StObject.set(x, "stitching-method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStitching-locations`(value: js.Array[Double]): Self = this.set("stitching-locations", value.asInstanceOf[js.Any])
+    def `setStitching-methodUndefined`: Self = StObject.set(x, "stitching-method", js.undefined)
     
     @scala.inline
-    def `deleteStitching-locations`: Self = this.set("stitching-locations", js.undefined)
+    def `setStitching-offset`(value: Double): Self = StObject.set(x, "stitching-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStitching-method`(value: StitchingMethod): Self = this.set("stitching-method", value.asInstanceOf[js.Any])
+    def `setStitching-offsetUndefined`: Self = StObject.set(x, "stitching-offset", js.undefined)
     
     @scala.inline
-    def `deleteStitching-method`: Self = this.set("stitching-method", js.undefined)
+    def `setStitching-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "stitching-reference-edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStitching-offset`(value: Double): Self = this.set("stitching-offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteStitching-offset`: Self = this.set("stitching-offset", js.undefined)
-    
-    @scala.inline
-    def `setStitching-reference-edge`(value: ReferenceEdge): Self = this.set("stitching-reference-edge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteStitching-reference-edge`: Self = this.set("stitching-reference-edge", js.undefined)
+    def `setStitching-reference-edgeUndefined`: Self = StObject.set(x, "stitching-reference-edge", js.undefined)
   }
 }

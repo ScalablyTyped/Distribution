@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectNumber extends js.Object {
+trait ProjectNumber extends StObject {
   
   var projectNumber: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ProjectNumber {
   }
   
   @scala.inline
-  implicit class ProjectNumberOps[Self <: ProjectNumber] (val x: Self) extends AnyVal {
+  implicit class ProjectNumberMutableBuilder[Self <: ProjectNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectNumber(value: String): Self = this.set("projectNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectNumber: Self = this.set("projectNumber", js.undefined)
-    
-    @scala.inline
-    def setTeam(value: String): Self = this.set("team", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeam: Self = this.set("team", js.undefined)
+    def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
   }
 }

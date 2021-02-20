@@ -2,12 +2,13 @@ package typings.screeps.anon
 
 import typings.screeps.screepsStrings.LH
 import typings.screeps.screepsStrings.LO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait O extends js.Object {
+trait O extends StObject {
   
   var H: LH = js.native
   
@@ -24,27 +25,15 @@ object O {
   }
   
   @scala.inline
-  implicit class OOps[Self <: O] (val x: Self) extends AnyVal {
+  implicit class OMutableBuilder[Self <: O] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setH(value: LH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setO(value: LO): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setH(value: LH): Self = this.set("H", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setO(value: LO): Self = this.set("O", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setU(value: typings.screeps.screepsStrings.UL): Self = this.set("U", value.asInstanceOf[js.Any])
+    def setU(value: typings.screeps.screepsStrings.UL): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
   }
 }

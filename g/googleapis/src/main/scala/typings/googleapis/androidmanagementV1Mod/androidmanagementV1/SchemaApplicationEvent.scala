@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An app-related event.
   */
 @js.native
-trait SchemaApplicationEvent extends js.Object {
+trait SchemaApplicationEvent extends StObject {
   
   /**
     * The creation time of the event.
@@ -29,30 +30,18 @@ object SchemaApplicationEvent {
   }
   
   @scala.inline
-  implicit class SchemaApplicationEventOps[Self <: SchemaApplicationEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaApplicationEventMutableBuilder[Self <: SchemaApplicationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
-    
-    @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
   }
 }

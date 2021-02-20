@@ -4,12 +4,13 @@ import typings.openlayers.mod.DragBoxEndConditionType
 import typings.openlayers.mod.EventsConditionType
 import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.Pixel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragBoxOptions extends js.Object {
+trait DragBoxOptions extends StObject {
   
   var boxEndCondition: js.UndefOr[DragBoxEndConditionType] = js.native
   
@@ -28,42 +29,30 @@ object DragBoxOptions {
   }
   
   @scala.inline
-  implicit class DragBoxOptionsOps[Self <: DragBoxOptions] (val x: Self) extends AnyVal {
+  implicit class DragBoxOptionsMutableBuilder[Self <: DragBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxEndCondition(value: (/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel) => Boolean): Self = StObject.set(x, "boxEndCondition", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoxEndConditionUndefined: Self = StObject.set(x, "boxEndCondition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxEndCondition(value: (/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel) => Boolean): Self = this.set("boxEndCondition", js.Any.fromFunction3(value))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBoxEndCondition: Self = this.set("boxEndCondition", js.undefined)
+    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setMinArea(value: Double): Self = StObject.set(x, "minArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("condition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
-    
-    @scala.inline
-    def setMinArea(value: Double): Self = this.set("minArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinArea: Self = this.set("minArea", js.undefined)
+    def setMinAreaUndefined: Self = StObject.set(x, "minArea", js.undefined)
   }
 }

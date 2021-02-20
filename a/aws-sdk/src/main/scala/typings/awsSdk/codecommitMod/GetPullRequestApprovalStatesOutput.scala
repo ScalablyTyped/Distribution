@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPullRequestApprovalStatesOutput extends js.Object {
+trait GetPullRequestApprovalStatesOutput extends StObject {
   
   /**
     * Information about users who have approved the pull request.
@@ -21,27 +22,15 @@ object GetPullRequestApprovalStatesOutput {
   }
   
   @scala.inline
-  implicit class GetPullRequestApprovalStatesOutputOps[Self <: GetPullRequestApprovalStatesOutput] (val x: Self) extends AnyVal {
+  implicit class GetPullRequestApprovalStatesOutputMutableBuilder[Self <: GetPullRequestApprovalStatesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovals(value: ApprovalList): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalsUndefined: Self = StObject.set(x, "approvals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApprovalsVarargs(value: Approval*): Self = this.set("approvals", js.Array(value :_*))
-    
-    @scala.inline
-    def setApprovals(value: ApprovalList): Self = this.set("approvals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovals: Self = this.set("approvals", js.undefined)
+    def setApprovalsVarargs(value: Approval*): Self = StObject.set(x, "approvals", js.Array(value :_*))
   }
 }

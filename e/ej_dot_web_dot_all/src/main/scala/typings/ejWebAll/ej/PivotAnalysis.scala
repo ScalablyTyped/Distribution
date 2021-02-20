@@ -1,17 +1,17 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.PivotAnalysis")
-@js.native
-object PivotAnalysis extends js.Object {
+object PivotAnalysis {
   
   @js.native
-  sealed trait FilterType extends js.Object
+  sealed trait FilterType extends StObject
+  @JSGlobal("ej.PivotAnalysis.FilterType")
   @js.native
-  object FilterType extends js.Object {
+  object FilterType extends StObject {
     
     //Excludes the specified values among the members of the field.
     @js.native
@@ -23,9 +23,10 @@ object PivotAnalysis extends js.Object {
   }
   
   @js.native
-  sealed trait SortOrder extends js.Object
+  sealed trait SortOrder extends StObject
+  @JSGlobal("ej.PivotAnalysis.SortOrder")
   @js.native
-  object SortOrder extends js.Object {
+  object SortOrder extends StObject {
     
     //Sorts the members of the field in ascending order.
     @js.native
@@ -41,9 +42,10 @@ object PivotAnalysis extends js.Object {
   }
   
   @js.native
-  sealed trait SummaryType extends js.Object
+  sealed trait SummaryType extends StObject
+  @JSGlobal("ej.PivotAnalysis.SummaryType")
   @js.native
-  object SummaryType extends js.Object {
+  object SummaryType extends StObject {
     
     //Displays the average of all values as the summaries.
     @js.native

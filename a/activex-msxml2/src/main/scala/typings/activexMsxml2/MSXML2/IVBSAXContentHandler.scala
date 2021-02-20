@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXContentHandler interface */
 @js.native
-trait IVBSAXContentHandler extends js.Object {
+trait IVBSAXContentHandler extends StObject {
   
   @JSName("MSXML2.IVBSAXContentHandler_typekey")
   var MSXML2DotIVBSAXContentHandler_typekey: IVBSAXContentHandler = js.native
@@ -67,54 +68,42 @@ object IVBSAXContentHandler {
   }
   
   @scala.inline
-  implicit class IVBSAXContentHandlerOps[Self <: IVBSAXContentHandler] (val x: Self) extends AnyVal {
+  implicit class IVBSAXContentHandlerMutableBuilder[Self <: IVBSAXContentHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentLocator(value: IVBSAXLocator): Self = StObject.set(x, "documentLocator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMSXML2DotIVBSAXContentHandler_typekey(value: IVBSAXContentHandler): Self = this.set("MSXML2.IVBSAXContentHandler_typekey", value.asInstanceOf[js.Any])
+    def setEndElement(value: (String, String, String) => Unit): Self = StObject.set(x, "endElement", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCharacters(value: String => Unit): Self = this.set("characters", js.Any.fromFunction1(value))
+    def setEndPrefixMapping(value: String => Unit): Self = StObject.set(x, "endPrefixMapping", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDocumentLocator(value: IVBSAXLocator): Self = this.set("documentLocator", value.asInstanceOf[js.Any])
+    def setIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "ignorableWhitespace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndDocument(value: () => Unit): Self = this.set("endDocument", js.Any.fromFunction0(value))
+    def setMSXML2DotIVBSAXContentHandler_typekey(value: IVBSAXContentHandler): Self = StObject.set(x, "MSXML2.IVBSAXContentHandler_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndElement(value: (String, String, String) => Unit): Self = this.set("endElement", js.Any.fromFunction3(value))
+    def setProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEndPrefixMapping(value: String => Unit): Self = this.set("endPrefixMapping", js.Any.fromFunction1(value))
+    def setSkippedEntity(value: String => Unit): Self = StObject.set(x, "skippedEntity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIgnorableWhitespace(value: String => Unit): Self = this.set("ignorableWhitespace", js.Any.fromFunction1(value))
+    def setStartDocument(value: () => Unit): Self = StObject.set(x, "startDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProcessingInstruction(value: (String, String) => Unit): Self = this.set("processingInstruction", js.Any.fromFunction2(value))
+    def setStartElement(value: (String, String, String, IVBSAXAttributes) => Unit): Self = StObject.set(x, "startElement", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSkippedEntity(value: String => Unit): Self = this.set("skippedEntity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartDocument(value: () => Unit): Self = this.set("startDocument", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartElement(value: (String, String, String, IVBSAXAttributes) => Unit): Self = this.set("startElement", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStartPrefixMapping(value: (String, String) => Unit): Self = this.set("startPrefixMapping", js.Any.fromFunction2(value))
+    def setStartPrefixMapping(value: (String, String) => Unit): Self = StObject.set(x, "startPrefixMapping", js.Any.fromFunction2(value))
   }
 }

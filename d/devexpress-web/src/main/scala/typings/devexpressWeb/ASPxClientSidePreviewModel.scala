@@ -1,12 +1,13 @@
 package typings.devexpressWeb
 
 import typings.jquery.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxClientSidePreviewModel extends js.Object {
+trait ASPxClientSidePreviewModel extends StObject {
   
   def Close(): Unit = js.native
   

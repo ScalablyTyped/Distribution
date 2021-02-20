@@ -1,13 +1,14 @@
 package typings.marked.mod
 
 import typings.marked.markedNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "Parser")
 @js.native
-class Parser_ () extends js.Object {
+class Parser_ () extends StObject {
   def this(options: MarkedOptions) = this()
   
   def next(): Token = js.native
@@ -30,11 +31,13 @@ class Parser_ () extends js.Object {
   
   var tokens: TokensList = js.native
 }
-/* static members */
-@JSImport("marked", "Parser")
-@js.native
-object Parser_ extends js.Object {
+object Parser_ {
   
+  /* static member */
+  @JSImport("marked", "Parser.parse")
+  @js.native
   def parse(src: TokensList): String = js.native
+  @JSImport("marked", "Parser.parse")
+  @js.native
   def parse(src: TokensList, options: MarkedOptions): String = js.native
 }

@@ -5,16 +5,19 @@ import org.scalablytyped.runtime.TopLevel
 import typings.styledComponents.styledComponentsMod.FlattenInterpolation
 import typings.styledComponents.styledComponentsMod.ThemeProps
 import typings.styledComponents.styledComponentsMod.ThemedStyledProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("styled-theming", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("styled-theming", JSImport.Namespace)
+  @js.native
   def apply(name: String, values: ThemeMap): ThemeSet = js.native
   
+  @JSImport("styled-theming", "variants")
+  @js.native
   def variants[TProp /* <: String */, TVariant /* <: String */](name: String, prop: TProp, values: VariantMap[TVariant]): VariantSet[TProp, TVariant] = js.native
   
   type ThemeMap = StringDictionary[ThemeValue]

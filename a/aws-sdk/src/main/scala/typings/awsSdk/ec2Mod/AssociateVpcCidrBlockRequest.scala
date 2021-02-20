@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateVpcCidrBlockRequest extends js.Object {
+trait AssociateVpcCidrBlockRequest extends StObject {
   
   /**
     * Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IPv6 addresses, or the size of the CIDR block.
@@ -46,51 +47,39 @@ object AssociateVpcCidrBlockRequest {
   }
   
   @scala.inline
-  implicit class AssociateVpcCidrBlockRequestOps[Self <: AssociateVpcCidrBlockRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateVpcCidrBlockRequestMutableBuilder[Self <: AssociateVpcCidrBlockRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmazonProvidedIpv6CidrBlock(value: Boolean): Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmazonProvidedIpv6CidrBlockUndefined: Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
     @scala.inline
-    def setAmazonProvidedIpv6CidrBlock(value: Boolean): Self = this.set("AmazonProvidedIpv6CidrBlock", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmazonProvidedIpv6CidrBlock: Self = this.set("AmazonProvidedIpv6CidrBlock", js.undefined)
+    def setIpv6CidrBlockNetworkBorderGroup(value: String): Self = StObject.set(x, "Ipv6CidrBlockNetworkBorderGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlockNetworkBorderGroupUndefined: Self = StObject.set(x, "Ipv6CidrBlockNetworkBorderGroup", js.undefined)
     
     @scala.inline
-    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    def setIpv6CidrBlockUndefined: Self = StObject.set(x, "Ipv6CidrBlock", js.undefined)
     
     @scala.inline
-    def setIpv6CidrBlock(value: String): Self = this.set("Ipv6CidrBlock", value.asInstanceOf[js.Any])
+    def setIpv6Pool(value: Ipv6PoolEc2Id): Self = StObject.set(x, "Ipv6Pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIpv6CidrBlock: Self = this.set("Ipv6CidrBlock", js.undefined)
+    def setIpv6PoolUndefined: Self = StObject.set(x, "Ipv6Pool", js.undefined)
     
     @scala.inline
-    def setIpv6CidrBlockNetworkBorderGroup(value: String): Self = this.set("Ipv6CidrBlockNetworkBorderGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6CidrBlockNetworkBorderGroup: Self = this.set("Ipv6CidrBlockNetworkBorderGroup", js.undefined)
-    
-    @scala.inline
-    def setIpv6Pool(value: Ipv6PoolEc2Id): Self = this.set("Ipv6Pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6Pool: Self = this.set("Ipv6Pool", js.undefined)
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

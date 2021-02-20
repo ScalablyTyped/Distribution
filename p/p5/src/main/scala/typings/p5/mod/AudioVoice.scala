@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioVoice extends js.Object {
+trait AudioVoice extends StObject {
   
   /**
     *   Connect to p5 objects or Web Audio Nodes
@@ -26,24 +27,12 @@ object AudioVoice {
   }
   
   @scala.inline
-  implicit class AudioVoiceOps[Self <: AudioVoice] (val x: Self) extends AnyVal {
+  implicit class AudioVoiceMutableBuilder[Self <: AudioVoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnect(value: js.Object => Unit): Self = this.set("connect", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = this.set("disconnect", js.Any.fromFunction0(value))
+    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
   }
 }

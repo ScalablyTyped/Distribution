@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPropertiesReturnType extends js.Object {
+trait GetPropertiesReturnType extends StObject {
   
   /**
     * Exception details.
@@ -31,39 +32,27 @@ object GetPropertiesReturnType {
   }
   
   @scala.inline
-  implicit class GetPropertiesReturnTypeOps[Self <: GetPropertiesReturnType] (val x: Self) extends AnyVal {
+  implicit class GetPropertiesReturnTypeMutableBuilder[Self <: GetPropertiesReturnType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternalProperties(value: js.Array[InternalPropertyDescriptor]): Self = StObject.set(x, "internalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultVarargs(value: PropertyDescriptor*): Self = this.set("result", js.Array(value :_*))
+    def setInternalPropertiesUndefined: Self = StObject.set(x, "internalProperties", js.undefined)
     
     @scala.inline
-    def setResult(value: js.Array[PropertyDescriptor]): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value :_*))
     
     @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = this.set("exceptionDetails", value.asInstanceOf[js.Any])
+    def setResult(value: js.Array[PropertyDescriptor]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExceptionDetails: Self = this.set("exceptionDetails", js.undefined)
-    
-    @scala.inline
-    def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = this.set("internalProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setInternalProperties(value: js.Array[InternalPropertyDescriptor]): Self = this.set("internalProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInternalProperties: Self = this.set("internalProperties", js.undefined)
+    def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

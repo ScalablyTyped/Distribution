@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDrive.anon.IncludeDeleted
 import typings.maximMazurokGapiClientDrive.anon.Oauthtoken
 import typings.maximMazurokGapiClientDrive.anon.PageSize
 import typings.maximMazurokGapiClientDrive.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentsResource extends js.Object {
+trait CommentsResource extends StObject {
   
   /** Creates a new comment on a file. */
   def create(request: FileId): Request[Comment] = js.native

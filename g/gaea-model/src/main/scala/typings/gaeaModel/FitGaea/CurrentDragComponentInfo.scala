@@ -7,12 +7,13 @@ import typings.gaeaModel.gaeaModelStrings.`new`
 import typings.gaeaModel.gaeaModelStrings.combo
 import typings.gaeaModel.gaeaModelStrings.viewport
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentDragComponentInfo extends js.Object {
+trait CurrentDragComponentInfo extends StObject {
   
   var comboInfo: js.UndefOr[Source] = js.native
   
@@ -39,45 +40,33 @@ object CurrentDragComponentInfo {
   }
   
   @scala.inline
-  implicit class CurrentDragComponentInfoOps[Self <: CurrentDragComponentInfo] (val x: Self) extends AnyVal {
+  implicit class CurrentDragComponentInfoMutableBuilder[Self <: CurrentDragComponentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComboInfo(value: Source): Self = StObject.set(x, "comboInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComboInfoUndefined: Self = StObject.set(x, "comboInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragStartIndex(value: Double): Self = StObject.set(x, "dragStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStartIndex(value: Double): Self = this.set("dragStartIndex", value.asInstanceOf[js.Any])
+    def setDragStartParentElement(value: HTMLElement): Self = StObject.set(x, "dragStartParentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStartParentElement(value: HTMLElement): Self = this.set("dragStartParentElement", value.asInstanceOf[js.Any])
+    def setNewInfo(value: UniqueKey): Self = StObject.set(x, "newInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `new` | combo | viewport): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNewInfoUndefined: Self = StObject.set(x, "newInfo", js.undefined)
     
     @scala.inline
-    def setComboInfo(value: Source): Self = this.set("comboInfo", value.asInstanceOf[js.Any])
+    def setType(value: `new` | combo | viewport): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComboInfo: Self = this.set("comboInfo", js.undefined)
+    def setViewportInfo(value: MapUniqueKey): Self = StObject.set(x, "viewportInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewInfo(value: UniqueKey): Self = this.set("newInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewInfo: Self = this.set("newInfo", js.undefined)
-    
-    @scala.inline
-    def setViewportInfo(value: MapUniqueKey): Self = this.set("viewportInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewportInfo: Self = this.set("viewportInfo", js.undefined)
+    def setViewportInfoUndefined: Self = StObject.set(x, "viewportInfo", js.undefined)
   }
 }

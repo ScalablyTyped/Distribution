@@ -1,16 +1,13 @@
 package typings.playable
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/utils/environment-detection", JSImport.Namespace)
-@js.native
-object environmentDetectionMod extends js.Object {
+object environmentDetectionMod {
   
-  val isBrowser: Boolean = js.native
-  
+  @JSImport("playable/dist/src/utils/environment-detection", "isBrowser")
   @js.native
-  object NativeEnvironmentSupport extends /* format */ StringDictionary[Boolean]
+  val isBrowser: Boolean = js.native
 }

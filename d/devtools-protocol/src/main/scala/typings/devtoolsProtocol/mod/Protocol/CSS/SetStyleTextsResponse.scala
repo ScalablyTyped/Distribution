@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetStyleTextsResponse extends js.Object {
+trait SetStyleTextsResponse extends StObject {
   
   /**
     * The resulting styles after modification.
@@ -21,24 +22,12 @@ object SetStyleTextsResponse {
   }
   
   @scala.inline
-  implicit class SetStyleTextsResponseOps[Self <: SetStyleTextsResponse] (val x: Self) extends AnyVal {
+  implicit class SetStyleTextsResponseMutableBuilder[Self <: SetStyleTextsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyles(value: js.Array[CSSStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylesVarargs(value: CSSStyle*): Self = this.set("styles", js.Array(value :_*))
-    
-    @scala.inline
-    def setStyles(value: js.Array[CSSStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStylesVarargs(value: CSSStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

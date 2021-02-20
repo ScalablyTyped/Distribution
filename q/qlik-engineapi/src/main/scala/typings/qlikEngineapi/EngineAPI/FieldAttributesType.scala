@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.TS
   - typings.qlikEngineapi.qlikEngineapiStrings.IV
 */
-trait FieldAttributesType extends js.Object
+trait FieldAttributesType extends StObject
 object FieldAttributesType {
   
   @scala.inline

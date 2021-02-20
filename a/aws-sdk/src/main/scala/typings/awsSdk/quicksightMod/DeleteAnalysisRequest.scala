@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteAnalysisRequest extends js.Object {
+trait DeleteAnalysisRequest extends StObject {
   
   /**
     * The ID of the analysis that you're deleting.
@@ -36,36 +37,24 @@ object DeleteAnalysisRequest {
   }
   
   @scala.inline
-  implicit class DeleteAnalysisRequestOps[Self <: DeleteAnalysisRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteAnalysisRequestMutableBuilder[Self <: DeleteAnalysisRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceDeleteWithoutRecovery(value: scala.Boolean): Self = StObject.set(x, "ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisId(value: RestrictiveResourceId): Self = this.set("AnalysisId", value.asInstanceOf[js.Any])
+    def setForceDeleteWithoutRecoveryUndefined: Self = StObject.set(x, "ForceDeleteWithoutRecovery", js.undefined)
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setRecoveryWindowInDays(value: RecoveryWindowInDays): Self = StObject.set(x, "RecoveryWindowInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceDeleteWithoutRecovery(value: scala.Boolean): Self = this.set("ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceDeleteWithoutRecovery: Self = this.set("ForceDeleteWithoutRecovery", js.undefined)
-    
-    @scala.inline
-    def setRecoveryWindowInDays(value: RecoveryWindowInDays): Self = this.set("RecoveryWindowInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryWindowInDays: Self = this.set("RecoveryWindowInDays", js.undefined)
+    def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "RecoveryWindowInDays", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,10 @@ class FunctionPropertyAssignmentSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "FunctionPropertyAssignmentSyntax")
-@js.native
-object FunctionPropertyAssignmentSyntax extends js.Object {
+object FunctionPropertyAssignmentSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "FunctionPropertyAssignmentSyntax.create1")
+  @js.native
   def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.FunctionPropertyAssignmentSyntax = js.native
 }

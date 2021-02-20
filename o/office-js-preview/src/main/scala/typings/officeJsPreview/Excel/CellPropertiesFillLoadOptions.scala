@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait CellPropertiesFillLoadOptions extends js.Object {
+trait CellPropertiesFillLoadOptions extends StObject {
   
   /**
     *
@@ -62,48 +63,36 @@ object CellPropertiesFillLoadOptions {
   }
   
   @scala.inline
-  implicit class CellPropertiesFillLoadOptionsOps[Self <: CellPropertiesFillLoadOptions] (val x: Self) extends AnyVal {
+  implicit class CellPropertiesFillLoadOptionsMutableBuilder[Self <: CellPropertiesFillLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Boolean): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPatternColor(value: Boolean): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
     
     @scala.inline
-    def setPattern(value: Boolean): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setPatternTintAndShade(value: Boolean): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
     
     @scala.inline
-    def setPatternColor(value: Boolean): Self = this.set("patternColor", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deletePatternColor: Self = this.set("patternColor", js.undefined)
+    def setTintAndShade(value: Boolean): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternTintAndShade(value: Boolean): Self = this.set("patternTintAndShade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatternTintAndShade: Self = this.set("patternTintAndShade", js.undefined)
-    
-    @scala.inline
-    def setTintAndShade(value: Boolean): Self = this.set("tintAndShade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintAndShade: Self = this.set("tintAndShade", js.undefined)
+    def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
   }
 }

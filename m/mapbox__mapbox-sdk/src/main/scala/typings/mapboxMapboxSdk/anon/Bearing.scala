@@ -2,12 +2,13 @@ package typings.mapboxMapboxSdk.anon
 
 import typings.mapboxGl.mod.LngLatLike
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bearing extends js.Object {
+trait Bearing extends StObject {
   
   var bearing: js.UndefOr[Double] = js.native
   
@@ -26,36 +27,24 @@ object Bearing {
   }
   
   @scala.inline
-  implicit class BearingOps[Self <: Bearing] (val x: Self) extends AnyVal {
+  implicit class BearingMutableBuilder[Self <: Bearing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordinates(value: LngLatLike | auto): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: LngLatLike | auto): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBearing: Self = this.set("bearing", js.undefined)
-    
-    @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

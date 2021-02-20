@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisPlotLinePathOptionsObject extends js.Object {
+trait AxisPlotLinePathOptionsObject extends StObject {
   
   /**
     * Used in Highstock. When `true`, plot paths (crosshair, plotLines,
@@ -56,60 +57,48 @@ object AxisPlotLinePathOptionsObject {
   }
   
   @scala.inline
-  implicit class AxisPlotLinePathOptionsObjectOps[Self <: AxisPlotLinePathOptionsObject] (val x: Self) extends AnyVal {
+  implicit class AxisPlotLinePathOptionsObjectMutableBuilder[Self <: AxisPlotLinePathOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcrossPanesUndefined: Self = StObject.set(x, "acrossPanes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean | String): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcrossPanes(value: Boolean): Self = this.set("acrossPanes", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteAcrossPanes: Self = this.set("acrossPanes", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean | String): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setOld(value: Boolean): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOld(value: Boolean): Self = this.set("old", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deleteOld: Self = this.set("old", js.undefined)
+    def setTranslatedValue(value: Double): Self = StObject.set(x, "translatedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setTranslatedValueUndefined: Self = StObject.set(x, "translatedValue", js.undefined)
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslatedValue(value: Double): Self = this.set("translatedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslatedValue: Self = this.set("translatedValue", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,33 +36,21 @@ object Operation {
   }
   
   @scala.inline
-  implicit class OperationOps[Self <: Operation] (val x: Self) extends AnyVal {
+  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorRef(value: ErrorElement): Self = StObject.set(x, "errorRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImplementationRef(value: String): Self = StObject.set(x, "implementationRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInMessageRef(value: Message): Self = StObject.set(x, "inMessageRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorRef(value: ErrorElement): Self = this.set("errorRef", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementationRef(value: String): Self = this.set("implementationRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInMessageRef(value: Message): Self = this.set("inMessageRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutMessageRef(value: Message): Self = this.set("outMessageRef", value.asInstanceOf[js.Any])
+    def setOutMessageRef(value: Message): Self = StObject.set(x, "outMessageRef", value.asInstanceOf[js.Any])
   }
 }

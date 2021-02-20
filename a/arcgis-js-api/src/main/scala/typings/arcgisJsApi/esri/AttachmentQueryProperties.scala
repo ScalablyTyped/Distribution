@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentQueryProperties extends js.Object {
+trait AttachmentQueryProperties extends StObject {
   
   /**
     * The file format that is supported by query attachment.
@@ -93,99 +94,87 @@ object AttachmentQueryProperties {
   }
   
   @scala.inline
-  implicit class AttachmentQueryPropertiesOps[Self <: AttachmentQueryProperties] (val x: Self) extends AnyVal {
+  implicit class AttachmentQueryPropertiesMutableBuilder[Self <: AttachmentQueryProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentTypes(value: js.Array[String]): Self = StObject.set(x, "attachmentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentTypesUndefined: Self = StObject.set(x, "attachmentTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentTypesVarargs(value: String*): Self = StObject.set(x, "attachmentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentTypesVarargs(value: String*): Self = this.set("attachmentTypes", js.Array(value :_*))
+    def setAttachmentsWhere(value: String): Self = StObject.set(x, "attachmentsWhere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentTypes(value: js.Array[String]): Self = this.set("attachmentTypes", value.asInstanceOf[js.Any])
+    def setAttachmentsWhereUndefined: Self = StObject.set(x, "attachmentsWhere", js.undefined)
     
     @scala.inline
-    def deleteAttachmentTypes: Self = this.set("attachmentTypes", js.undefined)
+    def setGlobalIds(value: js.Array[Double]): Self = StObject.set(x, "globalIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsWhere(value: String): Self = this.set("attachmentsWhere", value.asInstanceOf[js.Any])
+    def setGlobalIdsUndefined: Self = StObject.set(x, "globalIds", js.undefined)
     
     @scala.inline
-    def deleteAttachmentsWhere: Self = this.set("attachmentsWhere", js.undefined)
+    def setGlobalIdsVarargs(value: Double*): Self = StObject.set(x, "globalIds", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalIdsVarargs(value: Double*): Self = this.set("globalIds", js.Array(value :_*))
+    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalIds(value: js.Array[Double]): Self = this.set("globalIds", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteGlobalIds: Self = this.set("globalIds", js.undefined)
+    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum(value: Double): Self = this.set("num", value.asInstanceOf[js.Any])
+    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
     @scala.inline
-    def deleteNum: Self = this.set("num", js.undefined)
+    def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
     @scala.inline
-    def setObjectIdsVarargs(value: Double*): Self = this.set("objectIds", js.Array(value :_*))
+    def setReturnMetadata(value: Boolean): Self = StObject.set(x, "returnMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIds(value: js.Array[Double]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
+    def setReturnMetadataUndefined: Self = StObject.set(x, "returnMetadata", js.undefined)
     
     @scala.inline
-    def deleteObjectIds: Self = this.set("objectIds", js.undefined)
+    def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnMetadata(value: Boolean): Self = this.set("returnMetadata", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteReturnMetadata: Self = this.set("returnMetadata", js.undefined)
+    def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
     
     @scala.inline
-    def setSizeVarargs(value: Double*): Self = this.set("size", js.Array(value :_*))
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: js.Array[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "Tenant")
 @js.native
-class Tenant protected () extends js.Object {
+class Tenant protected () extends StObject {
   def this(registrar: js.Any, `object`: js.Any) = this()
   
   def attach(attachmentId: js.Any, contentType: js.Any, data: js.Any): js.Any = js.native
@@ -59,16 +60,30 @@ class Tenant protected () extends js.Object {
   
   def unattach(attachmentId: js.Any): js.Any = js.native
 }
-/* static members */
-@JSImport("gitana", "Tenant")
-@js.native
-object Tenant extends js.Object {
+object Tenant {
   
+  /* static member */
+  @JSImport("gitana", "Tenant.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "Tenant.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "Tenant.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "Tenant.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "Tenant.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

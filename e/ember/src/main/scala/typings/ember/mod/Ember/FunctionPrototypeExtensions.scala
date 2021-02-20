@@ -1,11 +1,12 @@
 package typings.ember.mod.Ember
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionPrototypeExtensions extends js.Object {
+trait FunctionPrototypeExtensions extends StObject {
   
   /**
     * The `observes` extension of Javascript's Function prototype is available
@@ -41,27 +42,15 @@ object FunctionPrototypeExtensions {
   }
   
   @scala.inline
-  implicit class FunctionPrototypeExtensionsOps[Self <: FunctionPrototypeExtensions] (val x: Self) extends AnyVal {
+  implicit class FunctionPrototypeExtensionsMutableBuilder[Self <: FunctionPrototypeExtensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObserves(value: /* repeated */ java.lang.String => FunctionPrototypeExtensions): Self = StObject.set(x, "observes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOn(value: /* repeated */ java.lang.String => FunctionPrototypeExtensions): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObserves(value: /* repeated */ java.lang.String => FunctionPrototypeExtensions): Self = this.set("observes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn(value: /* repeated */ java.lang.String => FunctionPrototypeExtensions): Self = this.set("on", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProperty(value: /* repeated */ java.lang.String => ComputedProperty[_, _]): Self = this.set("property", js.Any.fromFunction1(value))
+    def setProperty(value: /* repeated */ java.lang.String => ComputedProperty[_, _]): Self = StObject.set(x, "property", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and ParagraphStyle from these named styles.
   */
 @js.native
-trait SchemaNamedStyles extends js.Object {
+trait SchemaNamedStyles extends StObject {
   
   /**
     * The named styles.  There is an entry for each of the possible named style
@@ -26,27 +27,15 @@ object SchemaNamedStyles {
   }
   
   @scala.inline
-  implicit class SchemaNamedStylesOps[Self <: SchemaNamedStyles] (val x: Self) extends AnyVal {
+  implicit class SchemaNamedStylesMutableBuilder[Self <: SchemaNamedStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyles(value: js.Array[SchemaNamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylesVarargs(value: SchemaNamedStyle*): Self = this.set("styles", js.Array(value :_*))
-    
-    @scala.inline
-    def setStyles(value: js.Array[SchemaNamedStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesVarargs(value: SchemaNamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

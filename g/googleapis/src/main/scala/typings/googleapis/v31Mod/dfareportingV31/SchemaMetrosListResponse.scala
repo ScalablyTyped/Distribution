@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metro List Response
   */
 @js.native
-trait SchemaMetrosListResponse extends js.Object {
+trait SchemaMetrosListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -30,33 +31,21 @@ object SchemaMetrosListResponse {
   }
   
   @scala.inline
-  implicit class SchemaMetrosListResponseOps[Self <: SchemaMetrosListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaMetrosListResponseMutableBuilder[Self <: SchemaMetrosListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetros(value: js.Array[SchemaMetro]): Self = StObject.set(x, "metros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setMetrosVarargs(value: SchemaMetro*): Self = this.set("metros", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetros(value: js.Array[SchemaMetro]): Self = this.set("metros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetros: Self = this.set("metros", js.undefined)
+    def setMetrosVarargs(value: SchemaMetro*): Self = StObject.set(x, "metros", js.Array(value :_*))
   }
 }

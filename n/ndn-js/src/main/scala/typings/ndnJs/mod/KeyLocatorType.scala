@@ -1,12 +1,13 @@
 package typings.ndnJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "KeyLocatorType")
 @js.native
-object KeyLocatorType extends js.Object {
+object KeyLocatorType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ndnJs.signatureMod.KeyLocatorType with Double] = js.native

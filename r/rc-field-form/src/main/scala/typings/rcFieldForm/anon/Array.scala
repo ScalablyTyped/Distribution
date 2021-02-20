@@ -1,12 +1,13 @@
 package typings.rcFieldForm.anon
 
 import typings.rcFieldForm.interfaceMod.ValidateMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array extends js.Object {
+trait Array extends StObject {
   
   var array: js.UndefOr[ValidateMessage] = js.native
   
@@ -43,135 +44,123 @@ object Array {
   }
   
   @scala.inline
-  implicit class ArrayOps[Self <: Array] (val x: Self) extends AnyVal {
+  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: ValidateMessage): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayFunction0(value: () => String): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def setArrayFunction0(value: () => String): Self = this.set("array", js.Any.fromFunction0(value))
+    def setBoolean(value: ValidateMessage): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: ValidateMessage): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setBooleanFunction0(value: () => String): Self = StObject.set(x, "boolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
     @scala.inline
-    def setBooleanFunction0(value: () => String): Self = this.set("boolean", js.Any.fromFunction0(value))
+    def setDate(value: ValidateMessage): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: ValidateMessage): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setDateFunction0(value: () => String): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setDateFunction0(value: () => String): Self = this.set("date", js.Any.fromFunction0(value))
+    def setEmail(value: ValidateMessage): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: ValidateMessage): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setEmailFunction0(value: () => String): Self = StObject.set(x, "email", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setEmailFunction0(value: () => String): Self = this.set("email", js.Any.fromFunction0(value))
+    def setFloat(value: ValidateMessage): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: ValidateMessage): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFloatFunction0(value: () => String): Self = StObject.set(x, "float", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
     @scala.inline
-    def setFloatFunction0(value: () => String): Self = this.set("float", js.Any.fromFunction0(value))
+    def setHex(value: ValidateMessage): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloat(value: ValidateMessage): Self = this.set("float", value.asInstanceOf[js.Any])
+    def setHexFunction0(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFloat: Self = this.set("float", js.undefined)
+    def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
     
     @scala.inline
-    def setHexFunction0(value: () => String): Self = this.set("hex", js.Any.fromFunction0(value))
+    def setInteger(value: ValidateMessage): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHex(value: ValidateMessage): Self = this.set("hex", value.asInstanceOf[js.Any])
+    def setIntegerFunction0(value: () => String): Self = StObject.set(x, "integer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHex: Self = this.set("hex", js.undefined)
+    def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
     @scala.inline
-    def setIntegerFunction0(value: () => String): Self = this.set("integer", js.Any.fromFunction0(value))
+    def setMethod(value: ValidateMessage): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteger(value: ValidateMessage): Self = this.set("integer", value.asInstanceOf[js.Any])
+    def setMethodFunction0(value: () => String): Self = StObject.set(x, "method", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteInteger: Self = this.set("integer", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setMethodFunction0(value: () => String): Self = this.set("method", js.Any.fromFunction0(value))
+    def setNumber(value: ValidateMessage): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: ValidateMessage): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setNumberFunction0(value: () => String): Self = StObject.set(x, "number", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def setNumberFunction0(value: () => String): Self = this.set("number", js.Any.fromFunction0(value))
+    def setObject(value: ValidateMessage): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: ValidateMessage): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setObjectFunction0(value: () => String): Self = StObject.set(x, "object", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def setObjectFunction0(value: () => String): Self = this.set("object", js.Any.fromFunction0(value))
+    def setRegexp(value: ValidateMessage): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: ValidateMessage): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setRegexpFunction0(value: () => String): Self = StObject.set(x, "regexp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
     @scala.inline
-    def setRegexpFunction0(value: () => String): Self = this.set("regexp", js.Any.fromFunction0(value))
+    def setString(value: ValidateMessage): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexp(value: ValidateMessage): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setStringFunction0(value: () => String): Self = StObject.set(x, "string", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRegexp: Self = this.set("regexp", js.undefined)
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
     @scala.inline
-    def setStringFunction0(value: () => String): Self = this.set("string", js.Any.fromFunction0(value))
+    def setUrl(value: ValidateMessage): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setString(value: ValidateMessage): Self = this.set("string", value.asInstanceOf[js.Any])
+    def setUrlFunction0(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
-    
-    @scala.inline
-    def setUrlFunction0(value: () => String): Self = this.set("url", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUrl(value: ValidateMessage): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

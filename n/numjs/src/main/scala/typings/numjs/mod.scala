@@ -12,147 +12,426 @@ import typings.std.Int8Array
 import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("numjs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("numjs", "abs")
+  @js.native
   def abs[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "add")
+  @js.native
   def add[T](a: NjParam[T], b: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](start: Double): NdArray[T] = js.native
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](start: Double, stop: js.UndefOr[scala.Nothing], dtype: NdType[T]): NdArray[T] = js.native
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](start: Double, stop: Double): NdArray[T] = js.native
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](start: Double, stop: Double, dtype: NdType[T]): NdArray[T] = js.native
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](start: Double, stop: Double, step: Double): NdArray[T] = js.native
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](start: Double, stop: Double, step: Double, dtype: NdType[T]): NdArray[T] = js.native
+  @JSImport("numjs", "arange")
+  @js.native
   def arange[T](stop: Double, dtype: NdType[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "arccos")
+  @js.native
   def arccos[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "arcsin")
+  @js.native
   def arcsin[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "arctan")
+  @js.native
   def arctan[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "array")
+  @js.native
   def array[T](arr: NjArray[T]): NdArray[T] = js.native
+  @JSImport("numjs", "array")
+  @js.native
   def array[T](arr: NjArray[T], dtype: DataType): NdArray[T] = js.native
   
+  @JSImport("numjs", "broadcast")
+  @js.native
   def broadcast[T, U](shape1: js.Array[T], shape2: js.Array[U]): js.Array[T | U] = js.native
   
+  @JSImport("numjs", "clip")
+  @js.native
   def clip[T](x: NjParam[T]): NdArray[T] = js.native
+  @JSImport("numjs", "clip")
+  @js.native
   def clip[T](x: NjParam[T], min: js.UndefOr[scala.Nothing], max: Double): NdArray[T] = js.native
+  @JSImport("numjs", "clip")
+  @js.native
   def clip[T](x: NjParam[T], min: Double): NdArray[T] = js.native
+  @JSImport("numjs", "clip")
+  @js.native
   def clip[T](x: NjParam[T], min: Double, max: Double): NdArray[T] = js.native
   
+  @JSImport("numjs", "concatenate")
+  @js.native
   def concatenate[T](arrays: NjArray[T]*): NdArray[T] = js.native
   
+  @JSImport("numjs", "convolve")
+  @js.native
   def convolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "cos")
+  @js.native
   def cos[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "diag")
+  @js.native
   def diag[T](x: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "divide")
+  @js.native
   def divide[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "dot")
+  @js.native
   def dot[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "empty")
+  @js.native
   def empty[T](shape: Double): NdArray[T] = js.native
+  @JSImport("numjs", "empty")
+  @js.native
   def empty[T](shape: Double, dtype: NdType[T]): NdArray[T] = js.native
+  @JSImport("numjs", "empty")
+  @js.native
   def empty[T](shape: NdArrayData[T]): NdArray[T] = js.native
+  @JSImport("numjs", "empty")
+  @js.native
   def empty[T](shape: NdArrayData[T], dtype: NdType[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "equal")
+  @js.native
   def equal[T](a: NjArray[T], b: NjArray[T]): Boolean = js.native
   
+  object errors {
+    
+    @JSImport("numjs", "errors.ConfigError")
+    @js.native
+    def ConfigError(): Error = js.native
+    @JSImport("numjs", "errors.ConfigError")
+    @js.native
+    def ConfigError(message: String): Error = js.native
+    
+    @JSImport("numjs", "errors.NotImplementedError")
+    @js.native
+    def NotImplementedError(): Error = js.native
+    @JSImport("numjs", "errors.NotImplementedError")
+    @js.native
+    def NotImplementedError(message: String): Error = js.native
+    
+    @JSImport("numjs", "errors.ValueError")
+    @js.native
+    def ValueError(): Error = js.native
+    @JSImport("numjs", "errors.ValueError")
+    @js.native
+    def ValueError(message: String): Error = js.native
+  }
+  
+  @JSImport("numjs", "exp")
+  @js.native
   def exp[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "fft")
+  @js.native
   def fft[T](x: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "fftconvolve")
+  @js.native
   def fftconvolve[T](a: NjArray[T], b: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "flatten")
+  @js.native
   def flatten[T](array: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "float32")
+  @js.native
   def float32[T](arr: NjArray[T]): NjArray[Float32Array] = js.native
   
+  @JSImport("numjs", "float64")
+  @js.native
   def float64[T](arr: NjArray[T]): NjArray[Float64Array] = js.native
   
+  @JSImport("numjs", "getRawData")
+  @js.native
   def getRawData[T](array: NdArrayData[T]): Uint8Array = js.native
   
+  @JSImport("numjs", "identity")
+  @js.native
   def identity[T](n: T): NdArray[T] = js.native
+  @JSImport("numjs", "identity")
+  @js.native
   def identity[T](n: T, dtype: DataType): NdArray[T] = js.native
   
+  @JSImport("numjs", "ifft")
+  @js.native
   def ifft[T](x: NjArray[T]): NdArray[T] = js.native
   
+  object images {
+    
+    @JSImport("numjs", "images.areaSum")
+    @js.native
+    def areaSum[T](h0: Double, w0: Double, H: Double, W: Double, SAT: NdArray[T]): Double = js.native
+    
+    @JSImport("numjs", "images.areaValue")
+    @js.native
+    def areaValue[T](img: NdArray[T]): Double = js.native
+    
+    object data {
+      
+      /**  28x28 grayscale image with an handwritten digit extracted from MNIST database */
+      @JSImport("numjs", "images.data.digit")
+      @js.native
+      val digit: NdArray[Double] = js.native
+      
+      /** 28x28 grayscale image with an handwritten digit extracted from MNIST database */
+      @JSImport("numjs", "images.data.five")
+      @js.native
+      val five: NdArray[Double] = js.native
+      
+      /**
+        * The standard, yet sometimes controversial
+        * Lena test image was scanned from the November 1972 edition of
+        * Playboy magazine. From an image processing perspective, this image
+        * is useful because it contains smooth, textured, shaded as well as
+        * detail areas.
+        */
+      @JSImport("numjs", "images.data.lena")
+      @js.native
+      val lena: NdArray[Double] = js.native
+      
+      /**
+        * The standard, yet sometimes
+        * controversial Lena test image was scanned from the November 1972
+        * edition of Playboy magazine. From an image processing perspective,
+        * this image is useful because it contains smooth, textured, shaded as
+        * well as detail areas.
+        */
+      @JSImport("numjs", "images.data.lenna")
+      @js.native
+      val lenna: NdArray[Double] = js.native
+      
+      /**
+        * This low-contrast image of the surface of
+        * the moon is useful for illustrating histogram equalization and
+        * contrast stretching.
+        */
+      @JSImport("numjs", "images.data.moon")
+      @js.native
+      val moon: NdArray[Double] = js.native
+      
+      /** 300x600 COLOR image representing Node.js's logo */
+      @JSImport("numjs", "images.data.node")
+      @js.native
+      val node: NdArray[Double] = js.native
+    }
+    
+    @JSImport("numjs", "images.flip")
+    @js.native
+    def flip[T, O](img: NdArray[T]): NdArray[O] = js.native
+    
+    @JSImport("numjs", "images.read")
+    @js.native
+    def read(input: String): NdArray[Uint8Array] = js.native
+    
+    @JSImport("numjs", "images.resize")
+    @js.native
+    def resize[T](img: NdArray[T], height: Double, width: Double): NdArray[Uint8Array] = js.native
+    
+    @JSImport("numjs", "images.rgb2gray")
+    @js.native
+    def rgb2gray[T](img: NdArray[T]): NdArray[Uint8Array] = js.native
+    
+    @JSImport("numjs", "images.sat")
+    @js.native
+    def sat[T](img: NdArray[T]): NdArray[Uint32Array] = js.native
+    
+    @JSImport("numjs", "images.save")
+    @js.native
+    def save[T](img: NdArray[T], dest: String): Unit = js.native
+    
+    @JSImport("numjs", "images.scharr")
+    @js.native
+    def scharr[T](img: NdArray[T]): NdArray[Float32Array] = js.native
+    
+    @JSImport("numjs", "images.sobel")
+    @js.native
+    def sobel[T](img: NdArray[T]): NdArray[Float32Array] = js.native
+    
+    @JSImport("numjs", "images.ssat")
+    @js.native
+    def ssat[T](img: NdArray[T]): NdArray[Uint32Array] = js.native
+  }
+  
+  @JSImport("numjs", "int16")
+  @js.native
   def int16[T](arr: NjArray[T]): NjArray[Int16Array] = js.native
   
+  @JSImport("numjs", "int32")
+  @js.native
   def int32[T](arr: NjArray[T]): NjArray[Int32Array] = js.native
   
+  @JSImport("numjs", "int8")
+  @js.native
   def int8[T](arr: NjArray[T]): NjArray[Int8Array] = js.native
   
+  @JSImport("numjs", "max")
+  @js.native
   def max[T](x: NjParam[T]): T = js.native
   
+  @JSImport("numjs", "mean")
+  @js.native
   def mean[T](x: NjParam[T]): T = js.native
   
+  @JSImport("numjs", "min")
+  @js.native
   def min[T](x: NjParam[T]): T = js.native
   
+  @JSImport("numjs", "multiply")
+  @js.native
   def multiply[T](a: NjArray[T], b: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "negative")
+  @js.native
   def negative[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "ones")
+  @js.native
   def ones[T](shape: Double): NdArray[T] = js.native
+  @JSImport("numjs", "ones")
+  @js.native
   def ones[T](shape: Double, dtype: DataType): NdArray[T] = js.native
+  @JSImport("numjs", "ones")
+  @js.native
   def ones[T](shape: NdArrayData[T]): NdArray[T] = js.native
+  @JSImport("numjs", "ones")
+  @js.native
   def ones[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = js.native
   
+  @JSImport("numjs", "power")
+  @js.native
   def power[T](x1: NjParam[T], x2: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "random")
+  @js.native
   def random[T](): NdArray[T] = js.native
+  @JSImport("numjs", "random")
+  @js.native
   def random[T](shape: Double): NdArray[T] = js.native
+  @JSImport("numjs", "random")
+  @js.native
   def random[T](shape: NdArrayData[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "reshape")
+  @js.native
   def reshape[T](array: NjArray[T], shape: NdArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "round")
+  @js.native
   def round[T](x: NjArray[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "setRawData")
+  @js.native
   def setRawData[T](array: NdArrayData[T], data: NdArrayData[T]): Uint8Array = js.native
   
+  @JSImport("numjs", "sigmoid")
+  @js.native
   def sigmoid[T](x: NjParam[T]): NdArray[T] = js.native
+  @JSImport("numjs", "sigmoid")
+  @js.native
   def sigmoid[T](x: NjParam[T], t: Double): NdArray[T] = js.native
   
+  @JSImport("numjs", "sin")
+  @js.native
   def sin[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "softmax")
+  @js.native
   def softmax[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "sqrt")
+  @js.native
   def sqrt[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "stack")
+  @js.native
   def stack[T](arrays: js.Array[NdArray[T]]): NdArray[T] = js.native
+  @JSImport("numjs", "stack")
+  @js.native
   def stack[T](arrays: js.Array[NdArray[T]], axis: Double): NdArray[T] = js.native
   
+  @JSImport("numjs", "std")
+  @js.native
   def std[T](x: NjParam[T]): T = js.native
   
+  @JSImport("numjs", "subtract")
+  @js.native
   def subtract[T](a: NjParam[T], b: NjParam[T]): T = js.native
   
+  @JSImport("numjs", "sum")
+  @js.native
   def sum[T](x: NjParam[T]): T = js.native
   
+  @JSImport("numjs", "tan")
+  @js.native
   def tan[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "tanh")
+  @js.native
   def tanh[T](x: NjParam[T]): NdArray[T] = js.native
   
+  @JSImport("numjs", "transpose")
+  @js.native
   def transpose[T](x: NjParam[T]): NdArray[T] = js.native
+  @JSImport("numjs", "transpose")
+  @js.native
   def transpose[T](x: NjParam[T], axes: Double): NdArray[T] = js.native
   
+  @JSImport("numjs", "uint16")
+  @js.native
   def uint16[T](arr: NjArray[T]): NjArray[Uint16Array] = js.native
   
+  @JSImport("numjs", "uint32")
+  @js.native
   def uint32[T](arr: NjArray[T]): NjArray[Uint32Array] = js.native
   
+  @JSImport("numjs", "uint8")
+  @js.native
   def uint8[T](arr: NjArray[T]): NjArray[Uint8Array] = js.native
   
+  @JSImport("numjs", "zeros")
+  @js.native
   def zeros[T](shape: Double): NdArray[T] = js.native
+  @JSImport("numjs", "zeros")
+  @js.native
   def zeros[T](shape: Double, dtype: DataType): NdArray[T] = js.native
+  @JSImport("numjs", "zeros")
+  @js.native
   def zeros[T](shape: NdArrayData[T]): NdArray[T] = js.native
+  @JSImport("numjs", "zeros")
+  @js.native
   def zeros[T](shape: NdArrayData[T], dtype: DataType): NdArray[T] = js.native
   
   @js.native
@@ -305,83 +584,6 @@ object mod extends js.Object {
       */
     def transpose(): NdArray[T] = js.native
     def transpose(args: js.Array[Double]): NdArray[T] = js.native
-  }
-  
-  @js.native
-  object errors extends js.Object {
-    
-    def ConfigError(): Error = js.native
-    def ConfigError(message: String): Error = js.native
-    
-    def NotImplementedError(): Error = js.native
-    def NotImplementedError(message: String): Error = js.native
-    
-    def ValueError(): Error = js.native
-    def ValueError(message: String): Error = js.native
-  }
-  
-  @js.native
-  object images extends js.Object {
-    
-    def areaSum[T](h0: Double, w0: Double, H: Double, W: Double, SAT: NdArray[T]): Double = js.native
-    
-    def areaValue[T](img: NdArray[T]): Double = js.native
-    
-    def flip[T, O](img: NdArray[T]): NdArray[O] = js.native
-    
-    def read(input: String): NdArray[Uint8Array] = js.native
-    
-    def resize[T](img: NdArray[T], height: Double, width: Double): NdArray[Uint8Array] = js.native
-    
-    def rgb2gray[T](img: NdArray[T]): NdArray[Uint8Array] = js.native
-    
-    def sat[T](img: NdArray[T]): NdArray[Uint32Array] = js.native
-    
-    def save[T](img: NdArray[T], dest: String): Unit = js.native
-    
-    def scharr[T](img: NdArray[T]): NdArray[Float32Array] = js.native
-    
-    def sobel[T](img: NdArray[T]): NdArray[Float32Array] = js.native
-    
-    def ssat[T](img: NdArray[T]): NdArray[Uint32Array] = js.native
-    
-    @js.native
-    object data extends js.Object {
-      
-      /**  28x28 grayscale image with an handwritten digit extracted from MNIST database */
-      val digit: NdArray[Double] = js.native
-      
-      /** 28x28 grayscale image with an handwritten digit extracted from MNIST database */
-      val five: NdArray[Double] = js.native
-      
-      /**
-        * The standard, yet sometimes controversial
-        * Lena test image was scanned from the November 1972 edition of
-        * Playboy magazine. From an image processing perspective, this image
-        * is useful because it contains smooth, textured, shaded as well as
-        * detail areas.
-        */
-      val lena: NdArray[Double] = js.native
-      
-      /**
-        * The standard, yet sometimes
-        * controversial Lena test image was scanned from the November 1972
-        * edition of Playboy magazine. From an image processing perspective,
-        * this image is useful because it contains smooth, textured, shaded as
-        * well as detail areas.
-        */
-      val lenna: NdArray[Double] = js.native
-      
-      /**
-        * This low-contrast image of the surface of
-        * the moon is useful for illustrating histogram equalization and
-        * contrast stretching.
-        */
-      val moon: NdArray[Double] = js.native
-      
-      /** 300x600 COLOR image representing Node.js's logo */
-      val node: NdArray[Double] = js.native
-    }
   }
   
   type NdArrayData[T] = Data[T]

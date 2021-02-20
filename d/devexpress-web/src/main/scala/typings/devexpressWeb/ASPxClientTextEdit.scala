@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,51 +126,39 @@ object ASPxClientTextEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientTextEditOps[Self <: ASPxClientTextEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTextEditMutableBuilder[Self <: ASPxClientTextEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCaretPosition(value: () => Double): Self = StObject.set(x, "GetCaretPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyDown(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCaretPosition(value: () => Double): Self = this.set("GetCaretPosition", js.Any.fromFunction0(value))
+    def setKeyPress(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
+    def setKeyUp(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyDown(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = this.set("KeyDown", value.asInstanceOf[js.Any])
+    def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKeyPress(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = this.set("KeyPress", value.asInstanceOf[js.Any])
+    def setSetCaretPosition(value: Double => Unit): Self = StObject.set(x, "SetCaretPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyUp(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = this.set("KeyUp", value.asInstanceOf[js.Any])
+    def setSetSelection(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "SetSelection", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSelectAll(value: () => Unit): Self = this.set("SelectAll", js.Any.fromFunction0(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCaretPosition(value: Double => Unit): Self = this.set("SetCaretPosition", js.Any.fromFunction1(value))
+    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSelection(value: (Double, Double, Boolean) => Unit): Self = this.set("SetSelection", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("SetText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]]): Self = this.set("TextChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserInput(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]]): Self = this.set("UserInput", value.asInstanceOf[js.Any])
+    def setUserInput(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "UserInput", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateOrderRequest")
 @js.native
-class CreateOrderRequest () extends js.Object {
+class CreateOrderRequest () extends StObject {
   
   /**
     * A value you specify that uniquely identifies this order among orders you've created.

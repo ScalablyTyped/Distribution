@@ -1,11 +1,12 @@
 package typings.firebase.mod.firebase.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldValue extends js.Object {
+trait FieldValue extends StObject {
   
   /**
     * Returns true if this `FieldValue` is equal to the provided one.
@@ -24,21 +25,9 @@ object FieldValue {
   }
   
   @scala.inline
-  implicit class FieldValueOps[Self <: FieldValue] (val x: Self) extends AnyVal {
+  implicit class FieldValueMutableBuilder[Self <: FieldValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsEqual(value: FieldValue => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    def setIsEqual(value: FieldValue => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
   }
 }

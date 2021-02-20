@@ -1,6 +1,7 @@
 package typings.tuyaPanelKit.stackTypesMod
 
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tuyaPanelKit.tuyaPanelKitStrings.screen
   - typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 */
-trait StackHeaderMode extends js.Object
+trait StackHeaderMode extends StObject
 object StackHeaderMode {
   
   @scala.inline

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.Network.ResourceType
 import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrameResource extends js.Object {
+trait FrameResource extends StObject {
   
   /**
     * True if the resource was canceled during loading.
@@ -54,51 +55,39 @@ object FrameResource {
   }
   
   @scala.inline
-  implicit class FrameResourceOps[Self <: FrameResource] (val x: Self) extends AnyVal {
+  implicit class FrameResourceMutableBuilder[Self <: FrameResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSize(value: Double): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setContentSizeUndefined: Self = StObject.set(x, "contentSize", js.undefined)
     
     @scala.inline
-    def setType(value: ResourceType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
     @scala.inline
-    def setCanceled(value: Boolean): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setLastModified(value: TimeSinceEpoch): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanceled: Self = this.set("canceled", js.undefined)
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def setContentSize(value: Double): Self = this.set("contentSize", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentSize: Self = this.set("contentSize", js.undefined)
+    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: Boolean): Self = this.set("failed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailed: Self = this.set("failed", js.undefined)
-    
-    @scala.inline
-    def setLastModified(value: TimeSinceEpoch): Self = this.set("lastModified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

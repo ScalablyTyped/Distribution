@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.documentData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSDocument extends js.Object {
+trait SketchMSDocument extends StObject {
   
   var _class: documentData = js.native
   
@@ -51,60 +52,48 @@ object SketchMSDocument {
   }
   
   @scala.inline
-  implicit class SketchMSDocumentOps[Self <: SketchMSDocument] (val x: Self) extends AnyVal {
+  implicit class SketchMSDocumentMutableBuilder[Self <: SketchMSDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: SketchMSDocumentAssets): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSpace(value: Double): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: documentData): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setDo_objectID(value: String): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: SketchMSDocumentAssets): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setForeignSymbols(value: js.Array[SketchMSImmutableForeignSymbol]): Self = StObject.set(x, "foreignSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: Double): Self = this.set("colorSpace", value.asInstanceOf[js.Any])
+    def setForeignSymbolsVarargs(value: SketchMSImmutableForeignSymbol*): Self = StObject.set(x, "foreignSymbols", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentPageIndex(value: Double): Self = this.set("currentPageIndex", value.asInstanceOf[js.Any])
+    def setForeignTextStyles(value: js.Array[_]): Self = StObject.set(x, "foreignTextStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDo_objectID(value: String): Self = this.set("do_objectID", value.asInstanceOf[js.Any])
+    def setForeignTextStylesVarargs(value: js.Any*): Self = StObject.set(x, "foreignTextStyles", js.Array(value :_*))
     
     @scala.inline
-    def setForeignSymbolsVarargs(value: SketchMSImmutableForeignSymbol*): Self = this.set("foreignSymbols", js.Array(value :_*))
+    def setLayerStyles(value: SketchMSSharedStyleContainer): Self = StObject.set(x, "layerStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignSymbols(value: js.Array[SketchMSImmutableForeignSymbol]): Self = this.set("foreignSymbols", value.asInstanceOf[js.Any])
+    def setLayerSymbols(value: SketchMSSymbolContainers): Self = StObject.set(x, "layerSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignTextStylesVarargs(value: js.Any*): Self = this.set("foreignTextStyles", js.Array(value :_*))
+    def setLayerTextStyles(value: SketchMSSharedTextStyleContainer): Self = StObject.set(x, "layerTextStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignTextStyles(value: js.Array[_]): Self = this.set("foreignTextStyles", value.asInstanceOf[js.Any])
+    def setPages(value: js.Array[SketchMSPageReference]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerStyles(value: SketchMSSharedStyleContainer): Self = this.set("layerStyles", value.asInstanceOf[js.Any])
+    def setPagesVarargs(value: SketchMSPageReference*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def setLayerSymbols(value: SketchMSSymbolContainers): Self = this.set("layerSymbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayerTextStyles(value: SketchMSSharedTextStyleContainer): Self = this.set("layerTextStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagesVarargs(value: SketchMSPageReference*): Self = this.set("pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPages(value: js.Array[SketchMSPageReference]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def set_class(value: documentData): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

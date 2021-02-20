@@ -4,18 +4,16 @@ import typings.builderUtil.mod.DebugLogger
 import typings.builderUtil.mod.ExtraSpawnOptions
 import typings.node.childProcessMod.ExecFileOptions
 import typings.node.childProcessMod.SpawnOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/vm/vm", JSImport.Namespace)
-@js.native
-object vmMod extends js.Object {
+object vmMod {
   
-  def getWindowsVm(debugLogger: DebugLogger): js.Promise[VmManager] = js.native
-  
+  @JSImport("app-builder-lib/out/vm/vm", "VmManager")
   @js.native
-  class VmManager () extends js.Object {
+  class VmManager () extends StObject {
     
     def exec(file: String, args: js.Array[String]): js.Promise[String] = js.native
     def exec(file: String, args: js.Array[String], options: js.UndefOr[scala.Nothing], isLogOutIfDebug: Boolean): js.Promise[String] = js.native
@@ -36,4 +34,8 @@ object vmMod extends js.Object {
     
     def toVmFile(file: String): String = js.native
   }
+  
+  @JSImport("app-builder-lib/out/vm/vm", "getWindowsVm")
+  @js.native
+  def getWindowsVm(debugLogger: DebugLogger): js.Promise[VmManager] = js.native
 }

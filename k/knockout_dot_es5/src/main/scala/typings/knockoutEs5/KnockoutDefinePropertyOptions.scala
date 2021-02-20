@@ -1,11 +1,12 @@
 package typings.knockoutEs5
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutDefinePropertyOptions extends js.Object {
+trait KnockoutDefinePropertyOptions extends StObject {
   
   def get(): js.Any = js.native
   
@@ -20,27 +21,15 @@ object KnockoutDefinePropertyOptions {
   }
   
   @scala.inline
-  implicit class KnockoutDefinePropertyOptionsOps[Self <: KnockoutDefinePropertyOptions] (val x: Self) extends AnyVal {
+  implicit class KnockoutDefinePropertyOptionsMutableBuilder[Self <: KnockoutDefinePropertyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSet(value: /* value */ js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: () => js.Any): Self = this.set("get", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: /* value */ js.Any => Unit): Self = this.set("set", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

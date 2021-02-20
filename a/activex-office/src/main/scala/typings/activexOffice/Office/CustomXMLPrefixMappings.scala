@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomXMLPrefixMappings extends js.Object {
+trait CustomXMLPrefixMappings extends StObject {
   
   def apply(Index: String): CustomXMLPrefixMapping = js.native
   def apply(Index: Double): CustomXMLPrefixMapping = js.native

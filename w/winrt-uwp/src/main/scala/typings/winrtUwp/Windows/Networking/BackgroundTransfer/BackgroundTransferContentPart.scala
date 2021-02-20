@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 
 import typings.winrtUwp.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a content part of a multi-part transfer request. Each BackgroundTransferContentPart object can represent either a single string of text content or a single file payload, but not both. */
 @js.native
-trait BackgroundTransferContentPart extends js.Object {
+trait BackgroundTransferContentPart extends StObject {
   
   /**
     * Sets the source file for a BackgroundTransferContentPart containing the file for upload.
@@ -37,27 +38,15 @@ object BackgroundTransferContentPart {
   }
   
   @scala.inline
-  implicit class BackgroundTransferContentPartOps[Self <: BackgroundTransferContentPart] (val x: Self) extends AnyVal {
+  implicit class BackgroundTransferContentPartMutableBuilder[Self <: BackgroundTransferContentPart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetFile(value: IStorageFile => Unit): Self = StObject.set(x, "setFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetFile(value: IStorageFile => Unit): Self = this.set("setFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = this.set("setHeader", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
 import typings.elasticsearch.anon.Bulk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReindexResponseBase extends js.Object {
+trait ReindexResponseBase extends StObject {
   
   var batches: Double = js.native
   
@@ -48,48 +49,36 @@ object ReindexResponseBase {
   }
   
   @scala.inline
-  implicit class ReindexResponseBaseOps[Self <: ReindexResponseBase] (val x: Self) extends AnyVal {
+  implicit class ReindexResponseBaseMutableBuilder[Self <: ReindexResponseBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatches(value: Double): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoops(value: Double): Self = StObject.set(x, "noops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatches(value: Double): Self = this.set("batches", value.asInstanceOf[js.Any])
+    def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Double): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setRetries(value: Bulk): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoops(value: Double): Self = this.set("noops", value.asInstanceOf[js.Any])
+    def setThrottled_millis(value: Double): Self = StObject.set(x, "throttled_millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequests_per_second(value: Double): Self = this.set("requests_per_second", value.asInstanceOf[js.Any])
+    def setThrottled_until_millis(value: Double): Self = StObject.set(x, "throttled_until_millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Bulk): Self = this.set("retries", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottled_millis(value: Double): Self = this.set("throttled_millis", value.asInstanceOf[js.Any])
+    def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottled_until_millis(value: Double): Self = this.set("throttled_until_millis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated(value: Double): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion_conflicts(value: Double): Self = this.set("version_conflicts", value.asInstanceOf[js.Any])
+    def setVersion_conflicts(value: Double): Self = StObject.set(x, "version_conflicts", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaAction extends js.Object {
+trait LambdaAction extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Lambda function. An example of an AWS Lambda function ARN is arn:aws:lambda:us-west-2:account-id:function:MyFunction. For more information about AWS Lambda, see the AWS Lambda Developer Guide.
@@ -31,33 +32,21 @@ object LambdaAction {
   }
   
   @scala.inline
-  implicit class LambdaActionOps[Self <: LambdaAction] (val x: Self) extends AnyVal {
+  implicit class LambdaActionMutableBuilder[Self <: LambdaAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionArn(value: AmazonResourceName): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvocationType(value: InvocationType): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
     
     @scala.inline
-    def setFunctionArn(value: AmazonResourceName): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvocationType(value: InvocationType): Self = this.set("InvocationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvocationType: Self = this.set("InvocationType", js.undefined)
-    
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

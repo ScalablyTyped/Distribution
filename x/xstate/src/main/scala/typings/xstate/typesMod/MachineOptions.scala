@@ -3,12 +3,13 @@ package typings.xstate.typesMod
 import typings.std.Record
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateNodeMod.StateNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MachineOptions[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait MachineOptions[TContext, TEvent /* <: EventObject */] extends StObject {
   
   /**
     * @private
@@ -45,45 +46,33 @@ object MachineOptions {
   }
   
   @scala.inline
-  implicit class MachineOptionsOps[Self <: MachineOptions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (MachineOptions[TContext, TEvent])) extends AnyVal {
+  implicit class MachineOptionsMutableBuilder[Self <: MachineOptions[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (MachineOptions[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionFunctionMap[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivities(value: Record[String, ActivityConfig[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelays(value: DelayFunctionMap[TContext, TEvent]): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: ActionFunctionMap[TContext, TEvent]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setGuards(value: Record[String, ConditionPredicate[TContext, TEvent]]): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivities(value: Record[String, ActivityConfig[TContext, TEvent]]): Self = this.set("activities", value.asInstanceOf[js.Any])
+    def setServices(value: Record[String, ServiceConfig[TContext, TEvent]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelays(value: DelayFunctionMap[TContext, TEvent]): Self = this.set("delays", value.asInstanceOf[js.Any])
+    def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuards(value: Record[String, ConditionPredicate[TContext, TEvent]]): Self = this.set("guards", value.asInstanceOf[js.Any])
+    def set_keyUndefined: Self = StObject.set(x, "_key", js.undefined)
     
     @scala.inline
-    def setServices(value: Record[String, ServiceConfig[TContext, TEvent]]): Self = this.set("services", value.asInstanceOf[js.Any])
+    def set_parent(value: StateNode[TContext, _, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_key(value: String): Self = this.set("_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_key: Self = this.set("_key", js.undefined)
-    
-    @scala.inline
-    def set_parent(value: StateNode[TContext, _, TEvent, ContextTContext[TContext]]): Self = this.set("_parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_parent: Self = this.set("_parent", js.undefined)
+    def set_parentUndefined: Self = StObject.set(x, "_parent", js.undefined)
   }
 }

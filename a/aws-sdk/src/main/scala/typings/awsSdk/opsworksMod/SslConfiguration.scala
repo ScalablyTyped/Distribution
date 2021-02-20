@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslConfiguration extends js.Object {
+trait SslConfiguration extends StObject {
   
   /**
     * The contents of the certificate's domain.crt file.
@@ -31,30 +32,18 @@ object SslConfiguration {
   }
   
   @scala.inline
-  implicit class SslConfigurationOps[Self <: SslConfiguration] (val x: Self) extends AnyVal {
+  implicit class SslConfigurationMutableBuilder[Self <: SslConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: String): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChain(value: String): Self = StObject.set(x, "Chain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChainUndefined: Self = StObject.set(x, "Chain", js.undefined)
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("Certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivateKey(value: String): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChain(value: String): Self = this.set("Chain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChain: Self = this.set("Chain", js.undefined)
+    def setPrivateKey(value: String): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
   }
 }

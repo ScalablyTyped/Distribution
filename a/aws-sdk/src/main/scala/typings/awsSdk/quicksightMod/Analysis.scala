@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Analysis extends js.Object {
+trait Analysis extends StObject {
   
   /**
     * The ID of the analysis.
@@ -66,87 +67,75 @@ object Analysis {
   }
   
   @scala.inline
-  implicit class AnalysisOps[Self <: Analysis] (val x: Self) extends AnyVal {
+  implicit class AnalysisMutableBuilder[Self <: Analysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisIdUndefined: Self = StObject.set(x, "AnalysisId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisId(value: RestrictiveResourceId): Self = this.set("AnalysisId", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def deleteAnalysisId: Self = this.set("AnalysisId", js.undefined)
+    def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDataSetArns(value: DataSetArnsList): Self = StObject.set(x, "DataSetArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: Timestamp_): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDataSetArnsUndefined: Self = StObject.set(x, "DataSetArns", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setDataSetArnsVarargs(value: Arn*): Self = StObject.set(x, "DataSetArns", js.Array(value :_*))
     
     @scala.inline
-    def setDataSetArnsVarargs(value: Arn*): Self = this.set("DataSetArns", js.Array(value :_*))
+    def setErrors(value: AnalysisErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSetArns(value: DataSetArnsList): Self = this.set("DataSetArns", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
     @scala.inline
-    def deleteDataSetArns: Self = this.set("DataSetArns", js.undefined)
+    def setErrorsVarargs(value: AnalysisError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: AnalysisError*): Self = this.set("Errors", js.Array(value :_*))
+    def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: AnalysisErrorList): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("Errors", js.undefined)
+    def setName(value: AnalysisName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: Timestamp_): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setSheets(value: SheetList): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AnalysisName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
     
     @scala.inline
-    def setSheetsVarargs(value: Sheet*): Self = this.set("Sheets", js.Array(value :_*))
+    def setStatus(value: ResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: SheetList): Self = this.set("Sheets", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSheets: Self = this.set("Sheets", js.undefined)
+    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ResourceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setThemeArn(value: Arn): Self = this.set("ThemeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeArn: Self = this.set("ThemeArn", js.undefined)
+    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMonarchLanguage extends js.Object {
+trait IMonarchLanguage extends StObject {
   
   /**
     * for example [['{','}','delimiter.curly']]
@@ -52,60 +53,48 @@ object IMonarchLanguage {
   }
   
   @scala.inline
-  implicit class IMonarchLanguageOps[Self <: IMonarchLanguage] (val x: Self) extends AnyVal {
+  implicit class IMonarchLanguageMutableBuilder[Self <: IMonarchLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrackets(value: js.Array[IMonarchLanguageBracket]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBracketsVarargs(value: IMonarchLanguageBracket*): Self = StObject.set(x, "brackets", js.Array(value :_*))
     
     @scala.inline
-    def setTokenizer(value: StringDictionary[js.Array[IMonarchLanguageRule]]): Self = this.set("tokenizer", value.asInstanceOf[js.Any])
+    def setDefaultToken(value: String): Self = StObject.set(x, "defaultToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBracketsVarargs(value: IMonarchLanguageBracket*): Self = this.set("brackets", js.Array(value :_*))
+    def setDefaultTokenUndefined: Self = StObject.set(x, "defaultToken", js.undefined)
     
     @scala.inline
-    def setBrackets(value: js.Array[IMonarchLanguageBracket]): Self = this.set("brackets", value.asInstanceOf[js.Any])
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrackets: Self = this.set("brackets", js.undefined)
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
     @scala.inline
-    def setDefaultToken(value: String): Self = this.set("defaultToken", value.asInstanceOf[js.Any])
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultToken: Self = this.set("defaultToken", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setTokenPostfix(value: String): Self = StObject.set(x, "tokenPostfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setTokenPostfixUndefined: Self = StObject.set(x, "tokenPostfix", js.undefined)
     
     @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTokenizer(value: StringDictionary[js.Array[IMonarchLanguageRule]]): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenPostfix(value: String): Self = this.set("tokenPostfix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenPostfix: Self = this.set("tokenPostfix", js.undefined)
-    
-    @scala.inline
-    def setUnicode(value: Boolean): Self = this.set("unicode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnicode: Self = this.set("unicode", js.undefined)
+    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchAllIamPoliciesResponse extends js.Object {
+trait SearchAllIamPoliciesResponse extends StObject {
   
   /** Set if there are more results than those appearing in this response; to get the next set of results, call this method again, using this value as the `page_token`. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object SearchAllIamPoliciesResponse {
   }
   
   @scala.inline
-  implicit class SearchAllIamPoliciesResponseOps[Self <: SearchAllIamPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchAllIamPoliciesResponseMutableBuilder[Self <: SearchAllIamPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[IamPolicySearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: IamPolicySearchResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[IamPolicySearchResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: IamPolicySearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

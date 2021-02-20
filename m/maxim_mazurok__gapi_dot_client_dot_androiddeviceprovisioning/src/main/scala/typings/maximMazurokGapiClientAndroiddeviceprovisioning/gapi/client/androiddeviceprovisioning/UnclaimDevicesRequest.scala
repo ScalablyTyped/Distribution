@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnclaimDevicesRequest extends js.Object {
+trait UnclaimDevicesRequest extends StObject {
   
   /** Required. The list of devices to unclaim. */
   var unclaims: js.UndefOr[js.Array[PartnerUnclaim]] = js.native
@@ -19,27 +20,15 @@ object UnclaimDevicesRequest {
   }
   
   @scala.inline
-  implicit class UnclaimDevicesRequestOps[Self <: UnclaimDevicesRequest] (val x: Self) extends AnyVal {
+  implicit class UnclaimDevicesRequestMutableBuilder[Self <: UnclaimDevicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnclaims(value: js.Array[PartnerUnclaim]): Self = StObject.set(x, "unclaims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnclaimsUndefined: Self = StObject.set(x, "unclaims", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUnclaimsVarargs(value: PartnerUnclaim*): Self = this.set("unclaims", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnclaims(value: js.Array[PartnerUnclaim]): Self = this.set("unclaims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnclaims: Self = this.set("unclaims", js.undefined)
+    def setUnclaimsVarargs(value: PartnerUnclaim*): Self = StObject.set(x, "unclaims", js.Array(value :_*))
   }
 }

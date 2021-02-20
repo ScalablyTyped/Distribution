@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachOpts extends js.Object {
+trait AttachOpts extends StObject {
   
   /** If the target anchor is already occupied, this instance will be moved to the end of the queue to occupy it, meaning that all of the other attached instances will need to be detached before this one can occupy the anchor. */
   var append: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object AttachOpts {
   }
   
   @scala.inline
-  implicit class AttachOptsOps[Self <: AttachOpts] (val x: Self) extends AnyVal {
+  implicit class AttachOptsMutableBuilder[Self <: AttachOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertAt(value: Double): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppend(value: Boolean): Self = this.set("append", value.asInstanceOf[js.Any])
+    def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertAt(value: Double): Self = this.set("insertAt", value.asInstanceOf[js.Any])
+    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
     
     @scala.inline
-    def deleteInsertAt: Self = this.set("insertAt", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepend(value: Boolean): Self = this.set("prepend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrepend: Self = this.set("prepend", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

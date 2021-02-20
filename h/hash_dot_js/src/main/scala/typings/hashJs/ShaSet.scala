@@ -1,11 +1,12 @@
 package typings.hashJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShaSet extends js.Object {
+trait ShaSet extends StObject {
   
   def sha1(): Sha1 = js.native
   @JSName("sha1")

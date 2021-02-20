@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2DialogSpec extends js.Object {
+trait GoogleActionsV2DialogSpec extends StObject {
   
   /**
     * Holds helper specific dialog specs if any. For example:
@@ -23,24 +24,12 @@ object GoogleActionsV2DialogSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2DialogSpecOps[Self <: GoogleActionsV2DialogSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2DialogSpecMutableBuilder[Self <: GoogleActionsV2DialogSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = this.set("extension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
   }
 }

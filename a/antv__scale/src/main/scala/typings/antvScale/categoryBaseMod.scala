@@ -1,12 +1,19 @@
 package typings.antvScale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/category/base", JSImport.Namespace)
-@js.native
-object categoryBaseMod extends js.Object {
+object categoryBaseMod {
+  
+  /**
+    * 分类度量
+    * @class
+    */
+  @JSImport("@antv/scale/lib/category/base", JSImport.Default)
+  @js.native
+  class default () extends Category
   
   /**
     * 分类度量
@@ -21,11 +28,4 @@ object categoryBaseMod extends js.Object {
     @JSName("isCategory")
     val isCategory_Category: Boolean = js.native
   }
-  
-  /**
-    * 分类度量
-    * @class
-    */
-  @js.native
-  class default () extends Category
 }

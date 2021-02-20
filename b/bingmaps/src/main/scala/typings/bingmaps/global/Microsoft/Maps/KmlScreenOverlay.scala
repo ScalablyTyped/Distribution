@@ -2,6 +2,7 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.IKmlScreenOverlayOptions
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

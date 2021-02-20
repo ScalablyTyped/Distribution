@@ -1,11 +1,12 @@
 package typings.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Flow extends js.Object {
+trait Flow extends StObject {
   
   /**
     * @returns {String} The URL used to authorize the user for the app.
@@ -29,24 +30,12 @@ object Flow {
   }
   
   @scala.inline
-  implicit class FlowOps[Self <: Flow] (val x: Self) extends AnyVal {
+  implicit class FlowMutableBuilder[Self <: Flow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizeUrl(value: () => String): Self = StObject.set(x, "authorizeUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthorizeUrl(value: () => String): Self = this.set("authorizeUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRun(value: () => Unit): Self = this.set("run", js.Any.fromFunction0(value))
+    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }
 }

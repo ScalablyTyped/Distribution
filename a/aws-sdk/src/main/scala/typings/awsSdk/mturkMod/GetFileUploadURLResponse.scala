@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFileUploadURLResponse extends js.Object {
+trait GetFileUploadURLResponse extends StObject {
   
   /**
     *  A temporary URL for the file that the Worker uploaded for the answer. 
@@ -21,24 +22,12 @@ object GetFileUploadURLResponse {
   }
   
   @scala.inline
-  implicit class GetFileUploadURLResponseOps[Self <: GetFileUploadURLResponse] (val x: Self) extends AnyVal {
+  implicit class GetFileUploadURLResponseMutableBuilder[Self <: GetFileUploadURLResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileUploadURL(value: String): Self = StObject.set(x, "FileUploadURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileUploadURL(value: String): Self = this.set("FileUploadURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileUploadURL: Self = this.set("FileUploadURL", js.undefined)
+    def setFileUploadURLUndefined: Self = StObject.set(x, "FileUploadURL", js.undefined)
   }
 }

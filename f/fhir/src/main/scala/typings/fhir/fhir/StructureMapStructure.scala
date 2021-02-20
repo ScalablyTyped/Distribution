@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,60 +60,48 @@ object StructureMapStructure {
   }
   
   @scala.inline
-  implicit class StructureMapStructureOps[Self <: StructureMapStructure] (val x: Self) extends AnyVal {
+  implicit class StructureMapStructureMutableBuilder[Self <: StructureMapStructure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_alias(value: Element): Self = this.set("_alias", value.asInstanceOf[js.Any])
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_alias: Self = this.set("_alias", js.undefined)
+    def set_alias(value: Element): Self = StObject.set(x, "_alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def set_aliasUndefined: Self = StObject.set(x, "_alias", js.undefined)
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def delete_mode: Self = this.set("_mode", js.undefined)
+    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
-    
-    @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

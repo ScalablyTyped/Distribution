@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,84 +97,72 @@ object IgPivotView {
   }
   
   @scala.inline
-  implicit class IgPivotViewOps[Self <: IgPivotView] (val x: Self) extends AnyVal {
+  implicit class IgPivotViewMutableBuilder[Self <: IgPivotView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSelectorOptions(value: IgPivotViewDataSelectorOptions): Self = StObject.set(x, "dataSelectorOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSelectorOptionsUndefined: Self = StObject.set(x, "dataSelectorOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSelectorPanel(value: IgPivotViewDataSelectorPanel): Self = StObject.set(x, "dataSelectorPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSelectorOptions(value: IgPivotViewDataSelectorOptions): Self = this.set("dataSelectorOptions", value.asInstanceOf[js.Any])
+    def setDataSelectorPanelUndefined: Self = StObject.set(x, "dataSelectorPanel", js.undefined)
     
     @scala.inline
-    def deleteDataSelectorOptions: Self = this.set("dataSelectorOptions", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSelectorPanel(value: IgPivotViewDataSelectorPanel): Self = this.set("dataSelectorPanel", value.asInstanceOf[js.Any])
+    def setDataSourceOptions(value: IgPivotViewDataSourceOptions): Self = StObject.set(x, "dataSourceOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSelectorPanel: Self = this.set("dataSelectorPanel", js.undefined)
+    def setDataSourceOptionsUndefined: Self = StObject.set(x, "dataSourceOptions", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceOptions(value: IgPivotViewDataSourceOptions): Self = this.set("dataSourceOptions", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDataSourceOptions: Self = this.set("dataSourceOptions", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPivotGridOptions(value: IgPivotViewPivotGridOptions): Self = StObject.set(x, "pivotGridOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPivotGridOptionsUndefined: Self = StObject.set(x, "pivotGridOptions", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPivotGridPanel(value: IgPivotViewPivotGridPanel): Self = StObject.set(x, "pivotGridPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotGridOptions(value: IgPivotViewPivotGridOptions): Self = this.set("pivotGridOptions", value.asInstanceOf[js.Any])
+    def setPivotGridPanelUndefined: Self = StObject.set(x, "pivotGridPanel", js.undefined)
     
     @scala.inline
-    def deletePivotGridOptions: Self = this.set("pivotGridOptions", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotGridPanel(value: IgPivotViewPivotGridPanel): Self = this.set("pivotGridPanel", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deletePivotGridPanel: Self = this.set("pivotGridPanel", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

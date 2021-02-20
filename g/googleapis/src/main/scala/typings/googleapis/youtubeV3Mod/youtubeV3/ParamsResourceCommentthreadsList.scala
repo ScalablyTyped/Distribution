@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,90 +103,78 @@ object ParamsResourceCommentthreadsList {
   }
   
   @scala.inline
-  implicit class ParamsResourceCommentthreadsListOps[Self <: ParamsResourceCommentthreadsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceCommentthreadsListMutableBuilder[Self <: ParamsResourceCommentthreadsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllThreadsRelatedToChannelId(value: String): Self = StObject.set(x, "allThreadsRelatedToChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllThreadsRelatedToChannelIdUndefined: Self = StObject.set(x, "allThreadsRelatedToChannelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllThreadsRelatedToChannelId(value: String): Self = this.set("allThreadsRelatedToChannelId", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAllThreadsRelatedToChannelId: Self = this.set("allThreadsRelatedToChannelId", js.undefined)
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModerationStatus(value: String): Self = StObject.set(x, "moderationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setModerationStatusUndefined: Self = StObject.set(x, "moderationStatus", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerationStatus(value: String): Self = this.set("moderationStatus", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteModerationStatus: Self = this.set("moderationStatus", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setSearchTerms(value: String): Self = StObject.set(x, "searchTerms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    def setSearchTermsUndefined: Self = StObject.set(x, "searchTerms", js.undefined)
     
     @scala.inline
-    def deletePart: Self = this.set("part", js.undefined)
+    def setTextFormat(value: String): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchTerms(value: String): Self = this.set("searchTerms", value.asInstanceOf[js.Any])
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
     
     @scala.inline
-    def deleteSearchTerms: Self = this.set("searchTerms", js.undefined)
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFormat(value: String): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
-    
-    @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

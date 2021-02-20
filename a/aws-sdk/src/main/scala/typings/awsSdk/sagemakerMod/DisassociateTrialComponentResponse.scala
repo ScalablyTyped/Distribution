@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateTrialComponentResponse extends js.Object {
+trait DisassociateTrialComponentResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the trial.
@@ -26,30 +27,18 @@ object DisassociateTrialComponentResponse {
   }
   
   @scala.inline
-  implicit class DisassociateTrialComponentResponseOps[Self <: DisassociateTrialComponentResponse] (val x: Self) extends AnyVal {
+  implicit class DisassociateTrialComponentResponseMutableBuilder[Self <: DisassociateTrialComponentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrialArnUndefined: Self = StObject.set(x, "TrialArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrialArn(value: TrialArn): Self = this.set("TrialArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialArn: Self = this.set("TrialArn", js.undefined)
-    
-    @scala.inline
-    def setTrialComponentArn(value: TrialComponentArn): Self = this.set("TrialComponentArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialComponentArn: Self = this.set("TrialComponentArn", js.undefined)
+    def setTrialComponentArnUndefined: Self = StObject.set(x, "TrialComponentArn", js.undefined)
   }
 }

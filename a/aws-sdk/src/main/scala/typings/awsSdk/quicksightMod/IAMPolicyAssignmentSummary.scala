@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAMPolicyAssignmentSummary extends js.Object {
+trait IAMPolicyAssignmentSummary extends StObject {
   
   /**
     * Assignment name.
@@ -26,30 +27,18 @@ object IAMPolicyAssignmentSummary {
   }
   
   @scala.inline
-  implicit class IAMPolicyAssignmentSummaryOps[Self <: IAMPolicyAssignmentSummary] (val x: Self) extends AnyVal {
+  implicit class IAMPolicyAssignmentSummaryMutableBuilder[Self <: IAMPolicyAssignmentSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssignmentName: Self = this.set("AssignmentName", js.undefined)
-    
-    @scala.inline
-    def setAssignmentStatus(value: AssignmentStatus): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
   }
 }

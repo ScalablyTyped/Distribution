@@ -1,17 +1,19 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents when and how often an appointment occurs. */
 @js.native
-trait AppointmentRecurrence extends js.Object {
+trait AppointmentRecurrence extends StObject {
   
   var calendarIdentifier: js.Any = js.native
   
-   /* unmapped type */ /** Gets or sets the day on which an appointment occurs. Day is of type UInt32 , has a default value of 1, and can be a value from 1 to 31. */
+  /* unmapped type */
+  /** Gets or sets the day on which an appointment occurs. Day is of type UInt32 , has a default value of 1, and can be a value from 1 to 31. */
   var day: Double = js.native
   
   /** Gets or sets a combination of AppointmentDaysOfWeek -typed values for all the days of the week on which an appointment occurs. */
@@ -62,51 +64,39 @@ object AppointmentRecurrence {
   }
   
   @scala.inline
-  implicit class AppointmentRecurrenceOps[Self <: AppointmentRecurrence] (val x: Self) extends AnyVal {
+  implicit class AppointmentRecurrenceMutableBuilder[Self <: AppointmentRecurrence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarIdentifier(value: js.Any): Self = StObject.set(x, "calendarIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDaysOfWeek(value: AppointmentDaysOfWeek): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarIdentifier(value: js.Any): Self = this.set("calendarIdentifier", value.asInstanceOf[js.Any])
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: Double): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysOfWeek(value: AppointmentDaysOfWeek): Self = this.set("daysOfWeek", value.asInstanceOf[js.Any])
+    def setOccurrences(value: Double): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setRecurrenceType(value: RecurrenceType): Self = StObject.set(x, "recurrenceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: Double): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrences(value: Double): Self = this.set("occurrences", value.asInstanceOf[js.Any])
+    def setUnit(value: AppointmentRecurrenceUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceType(value: RecurrenceType): Self = this.set("recurrenceType", value.asInstanceOf[js.Any])
+    def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: AppointmentRecurrenceUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUntil(value: Date): Self = this.set("until", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekOfMonth(value: AppointmentWeekOfMonth): Self = this.set("weekOfMonth", value.asInstanceOf[js.Any])
+    def setWeekOfMonth(value: AppointmentWeekOfMonth): Self = StObject.set(x, "weekOfMonth", value.asInstanceOf[js.Any])
   }
 }

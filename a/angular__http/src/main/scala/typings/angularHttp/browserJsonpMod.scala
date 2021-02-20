@@ -1,17 +1,15 @@
 package typings.angularHttp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/backends/browser_jsonp", JSImport.Namespace)
-@js.native
-object browserJsonpMod extends js.Object {
+object browserJsonpMod {
   
-  val JSONP_HOME: /* "__ng_jsonp__" */ String = js.native
-  
+  @JSImport("@angular/http/src/backends/browser_jsonp", "BrowserJsonp")
   @js.native
-  class BrowserJsonp () extends js.Object {
+  class BrowserJsonp () extends StObject {
     
     def build(url: String): js.Any = js.native
     
@@ -27,4 +25,8 @@ object browserJsonpMod extends js.Object {
     
     def send(node: js.Any): Unit = js.native
   }
+  
+  @JSImport("@angular/http/src/backends/browser_jsonp", "JSONP_HOME")
+  @js.native
+  val JSONP_HOME: /* "__ng_jsonp__" */ String = js.native
 }

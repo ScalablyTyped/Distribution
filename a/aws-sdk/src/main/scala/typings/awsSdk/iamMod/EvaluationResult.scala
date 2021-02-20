@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluationResult extends js.Object {
+trait EvaluationResult extends StObject {
   
   /**
     * The name of the API operation tested on the indicated resource.
@@ -61,75 +62,63 @@ object EvaluationResult {
   }
   
   @scala.inline
-  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+  implicit class EvaluationResultMutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvalActionName(value: ActionNameType): Self = StObject.set(x, "EvalActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvalDecision(value: PolicyEvaluationDecisionType): Self = StObject.set(x, "EvalDecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvalDecisionDetails(value: EvalDecisionDetailsType): Self = StObject.set(x, "EvalDecisionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvalActionName(value: ActionNameType): Self = this.set("EvalActionName", value.asInstanceOf[js.Any])
+    def setEvalDecisionDetailsUndefined: Self = StObject.set(x, "EvalDecisionDetails", js.undefined)
     
     @scala.inline
-    def setEvalDecision(value: PolicyEvaluationDecisionType): Self = this.set("EvalDecision", value.asInstanceOf[js.Any])
+    def setEvalResourceName(value: ResourceNameType): Self = StObject.set(x, "EvalResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvalDecisionDetails(value: EvalDecisionDetailsType): Self = this.set("EvalDecisionDetails", value.asInstanceOf[js.Any])
+    def setEvalResourceNameUndefined: Self = StObject.set(x, "EvalResourceName", js.undefined)
     
     @scala.inline
-    def deleteEvalDecisionDetails: Self = this.set("EvalDecisionDetails", js.undefined)
+    def setMatchedStatements(value: StatementListType): Self = StObject.set(x, "MatchedStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvalResourceName(value: ResourceNameType): Self = this.set("EvalResourceName", value.asInstanceOf[js.Any])
+    def setMatchedStatementsUndefined: Self = StObject.set(x, "MatchedStatements", js.undefined)
     
     @scala.inline
-    def deleteEvalResourceName: Self = this.set("EvalResourceName", js.undefined)
+    def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value :_*))
     
     @scala.inline
-    def setMatchedStatementsVarargs(value: Statement*): Self = this.set("MatchedStatements", js.Array(value :_*))
+    def setMissingContextValues(value: ContextKeyNamesResultListType): Self = StObject.set(x, "MissingContextValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedStatements(value: StatementListType): Self = this.set("MatchedStatements", value.asInstanceOf[js.Any])
+    def setMissingContextValuesUndefined: Self = StObject.set(x, "MissingContextValues", js.undefined)
     
     @scala.inline
-    def deleteMatchedStatements: Self = this.set("MatchedStatements", js.undefined)
+    def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value :_*))
     
     @scala.inline
-    def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = this.set("MissingContextValues", js.Array(value :_*))
+    def setOrganizationsDecisionDetail(value: OrganizationsDecisionDetail): Self = StObject.set(x, "OrganizationsDecisionDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingContextValues(value: ContextKeyNamesResultListType): Self = this.set("MissingContextValues", value.asInstanceOf[js.Any])
+    def setOrganizationsDecisionDetailUndefined: Self = StObject.set(x, "OrganizationsDecisionDetail", js.undefined)
     
     @scala.inline
-    def deleteMissingContextValues: Self = this.set("MissingContextValues", js.undefined)
+    def setPermissionsBoundaryDecisionDetail(value: PermissionsBoundaryDecisionDetail): Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationsDecisionDetail(value: OrganizationsDecisionDetail): Self = this.set("OrganizationsDecisionDetail", value.asInstanceOf[js.Any])
+    def setPermissionsBoundaryDecisionDetailUndefined: Self = StObject.set(x, "PermissionsBoundaryDecisionDetail", js.undefined)
     
     @scala.inline
-    def deleteOrganizationsDecisionDetail: Self = this.set("OrganizationsDecisionDetail", js.undefined)
+    def setResourceSpecificResults(value: ResourceSpecificResultListType): Self = StObject.set(x, "ResourceSpecificResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsBoundaryDecisionDetail(value: PermissionsBoundaryDecisionDetail): Self = this.set("PermissionsBoundaryDecisionDetail", value.asInstanceOf[js.Any])
+    def setResourceSpecificResultsUndefined: Self = StObject.set(x, "ResourceSpecificResults", js.undefined)
     
     @scala.inline
-    def deletePermissionsBoundaryDecisionDetail: Self = this.set("PermissionsBoundaryDecisionDetail", js.undefined)
-    
-    @scala.inline
-    def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = this.set("ResourceSpecificResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceSpecificResults(value: ResourceSpecificResultListType): Self = this.set("ResourceSpecificResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceSpecificResults: Self = this.set("ResourceSpecificResults", js.undefined)
+    def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = StObject.set(x, "ResourceSpecificResults", js.Array(value :_*))
   }
 }

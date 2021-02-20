@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapDetailsDto extends js.Object {
+trait MapDetailsDto extends StObject {
   
   var image: ImageDto = js.native
   
@@ -24,33 +25,21 @@ object MapDetailsDto {
   }
   
   @scala.inline
-  implicit class MapDetailsDtoOps[Self <: MapDetailsDto] (val x: Self) extends AnyVal {
+  implicit class MapDetailsDtoMutableBuilder[Self <: MapDetailsDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapName(value: String): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageDto): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setUnpurchasableItemList(value: js.Array[Double]): Self = StObject.set(x, "unpurchasableItemList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapId(value: Double): Self = this.set("mapId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapName(value: String): Self = this.set("mapName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnpurchasableItemListVarargs(value: Double*): Self = this.set("unpurchasableItemList", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnpurchasableItemList(value: js.Array[Double]): Self = this.set("unpurchasableItemList", value.asInstanceOf[js.Any])
+    def setUnpurchasableItemListVarargs(value: Double*): Self = StObject.set(x, "unpurchasableItemList", js.Array(value :_*))
   }
 }

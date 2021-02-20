@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A saved column
   */
 @js.native
-trait SchemaSavedColumn extends js.Object {
+trait SchemaSavedColumn extends StObject {
   
   /**
     * Identifies this as a SavedColumn resource. Value: the fixed string
@@ -35,36 +36,24 @@ object SchemaSavedColumn {
   }
   
   @scala.inline
-  implicit class SchemaSavedColumnOps[Self <: SchemaSavedColumn] (val x: Self) extends AnyVal {
+  implicit class SchemaSavedColumnMutableBuilder[Self <: SchemaSavedColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSavedColumnName(value: String): Self = StObject.set(x, "savedColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSavedColumnNameUndefined: Self = StObject.set(x, "savedColumnName", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavedColumnName(value: String): Self = this.set("savedColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavedColumnName: Self = this.set("savedColumnName", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

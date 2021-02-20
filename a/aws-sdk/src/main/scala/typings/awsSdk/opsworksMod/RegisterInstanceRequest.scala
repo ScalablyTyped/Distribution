@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterInstanceRequest extends js.Object {
+trait RegisterInstanceRequest extends StObject {
   
   /**
     * The instance's hostname.
@@ -51,57 +52,45 @@ object RegisterInstanceRequest {
   }
   
   @scala.inline
-  implicit class RegisterInstanceRequestOps[Self <: RegisterInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterInstanceRequestMutableBuilder[Self <: RegisterInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceIdentity(value: InstanceIdentity): Self = StObject.set(x, "InstanceIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setInstanceIdentityUndefined: Self = StObject.set(x, "InstanceIdentity", js.undefined)
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("Hostname", value.asInstanceOf[js.Any])
+    def setPrivateIp(value: String): Self = StObject.set(x, "PrivateIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostname: Self = this.set("Hostname", js.undefined)
+    def setPrivateIpUndefined: Self = StObject.set(x, "PrivateIp", js.undefined)
     
     @scala.inline
-    def setInstanceIdentity(value: InstanceIdentity): Self = this.set("InstanceIdentity", value.asInstanceOf[js.Any])
+    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstanceIdentity: Self = this.set("InstanceIdentity", js.undefined)
+    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
     
     @scala.inline
-    def setPrivateIp(value: String): Self = this.set("PrivateIp", value.asInstanceOf[js.Any])
+    def setRsaPublicKey(value: String): Self = StObject.set(x, "RsaPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivateIp: Self = this.set("PrivateIp", js.undefined)
+    def setRsaPublicKeyFingerprint(value: String): Self = StObject.set(x, "RsaPublicKeyFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    def setRsaPublicKeyFingerprintUndefined: Self = StObject.set(x, "RsaPublicKeyFingerprint", js.undefined)
     
     @scala.inline
-    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+    def setRsaPublicKeyUndefined: Self = StObject.set(x, "RsaPublicKey", js.undefined)
     
     @scala.inline
-    def setRsaPublicKey(value: String): Self = this.set("RsaPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRsaPublicKey: Self = this.set("RsaPublicKey", js.undefined)
-    
-    @scala.inline
-    def setRsaPublicKeyFingerprint(value: String): Self = this.set("RsaPublicKeyFingerprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRsaPublicKeyFingerprint: Self = this.set("RsaPublicKeyFingerprint", js.undefined)
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

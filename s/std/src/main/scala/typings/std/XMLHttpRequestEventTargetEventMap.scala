@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLHttpRequestEventTargetEventMap extends js.Object {
+trait XMLHttpRequestEventTargetEventMap extends StObject {
   
   var abort: ProgressEvent[XMLHttpRequestEventTarget] = js.native
   
@@ -38,39 +39,27 @@ object XMLHttpRequestEventTargetEventMap {
   }
   
   @scala.inline
-  implicit class XMLHttpRequestEventTargetEventMapOps[Self <: XMLHttpRequestEventTargetEventMap] (val x: Self) extends AnyVal {
+  implicit class XMLHttpRequestEventTargetEventMapMutableBuilder[Self <: XMLHttpRequestEventTargetEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoad(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbort(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("abort", value.asInstanceOf[js.Any])
+    def setLoadend(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "loadend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setLoadstart(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setProgress(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadend(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("loadend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadstart(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("loadstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgress(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

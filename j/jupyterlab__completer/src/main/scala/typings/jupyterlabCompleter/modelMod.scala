@@ -6,14 +6,14 @@ import typings.jupyterlabCompleter.widgetMod.Completer.ITextState
 import typings.jupyterlabCompleter.widgetMod.Completer.TypeMap
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoSignaling.mod.ISignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/completer/lib/model", JSImport.Namespace)
-@js.native
-object modelMod extends js.Object {
+object modelMod {
   
+  @JSImport("@jupyterlab/completer/lib/model", "CompleterModel")
   @js.native
   class CompleterModel () extends IModel {
     

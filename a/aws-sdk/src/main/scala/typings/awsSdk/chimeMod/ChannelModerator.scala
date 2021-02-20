@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelModerator extends js.Object {
+trait ChannelModerator extends StObject {
   
   /**
     * The ARN of the moderator's channel.
@@ -36,42 +37,30 @@ object ChannelModerator {
   }
   
   @scala.inline
-  implicit class ChannelModeratorOps[Self <: ChannelModerator] (val x: Self) extends AnyVal {
+  implicit class ChannelModeratorMutableBuilder[Self <: ChannelModerator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: Identity): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelArn(value: ChimeArn): Self = this.set("ChannelArn", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def deleteChannelArn: Self = this.set("ChannelArn", js.undefined)
+    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: Identity): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setModerator(value: Identity): Self = StObject.set(x, "Moderator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
-    
-    @scala.inline
-    def setModerator(value: Identity): Self = this.set("Moderator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModerator: Self = this.set("Moderator", js.undefined)
+    def setModeratorUndefined: Self = StObject.set(x, "Moderator", js.undefined)
   }
 }

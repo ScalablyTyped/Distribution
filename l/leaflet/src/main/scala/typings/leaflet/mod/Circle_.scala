@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,6 @@ class Circle_[P] protected () extends CircleMarker_[P] {
   def this(latlng: LatLngExpression, radius: Double) = this()
   def this(latlng: LatLngExpression, radius: Double, options: CircleMarkerOptions) = this()
   
-   // deprecated!
+  // deprecated!
   def getBounds(): LatLngBounds_ = js.native
 }

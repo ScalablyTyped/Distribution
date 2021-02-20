@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides read and write access to image properties and metadata. */
 @js.native
-trait BitmapProperties extends js.Object {
+trait BitmapProperties extends StObject {
   
   /**
     * Asynchronously retrieves one or more bitmap properties.
@@ -38,24 +39,12 @@ object BitmapProperties {
   }
   
   @scala.inline
-  implicit class BitmapPropertiesOps[Self <: BitmapProperties] (val x: Self) extends AnyVal {
+  implicit class BitmapPropertiesMutableBuilder[Self <: BitmapProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = this.set("getPropertiesAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPropertiesAsync(value: IIterable[IKeyValuePair[_, _]] => IPromiseWithIAsyncAction): Self = this.set("setPropertiesAsync", js.Any.fromFunction1(value))
+    def setSetPropertiesAsync(value: IIterable[IKeyValuePair[_, _]] => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
   }
 }

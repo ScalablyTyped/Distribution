@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for SubmitConfigSource method.
   */
 @js.native
-trait SchemaSubmitConfigSourceRequest extends js.Object {
+trait SchemaSubmitConfigSourceRequest extends StObject {
   
   /**
     * The source configuration for the service.
@@ -31,30 +32,18 @@ object SchemaSubmitConfigSourceRequest {
   }
   
   @scala.inline
-  implicit class SchemaSubmitConfigSourceRequestOps[Self <: SchemaSubmitConfigSourceRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSubmitConfigSourceRequestMutableBuilder[Self <: SchemaSubmitConfigSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigSource(value: SchemaConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigSourceUndefined: Self = StObject.set(x, "configSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigSource(value: SchemaConfigSource): Self = this.set("configSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigSource: Self = this.set("configSource", js.undefined)
-    
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

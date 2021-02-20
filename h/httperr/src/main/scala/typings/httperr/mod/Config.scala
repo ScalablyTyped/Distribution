@@ -1,13 +1,14 @@
 package typings.httperr.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Configuration object for constructing HttpErrors. */
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   /**
     *  The methods allowed for this URL.
@@ -55,63 +56,51 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedVarargs(value: String*): Self = this.set("allowed", js.Array(value :_*))
+    def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed(value: js.Array[String]): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     @scala.inline
-    def deleteAllowed: Self = this.set("allowed", js.undefined)
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: Error): Self = this.set("cause", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def deleteCause: Self = this.set("cause", js.undefined)
+    def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: js.Any): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRetryAfter(value: js.Any): Self = StObject.set(x, "retryAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Any): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setRetryAfter(value: js.Any): Self = this.set("retryAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryAfter: Self = this.set("retryAfter", js.undefined)
+    def setRetryAfterUndefined: Self = StObject.set(x, "retryAfter", js.undefined)
   }
 }

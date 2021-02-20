@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Browserdownloadurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposUpdateReleaseResponseData extends js.Object {
+trait ReposUpdateReleaseResponseData extends StObject {
   
   var assets: js.Array[Browserdownloadurl] = js.native
   
@@ -73,75 +74,63 @@ object ReposUpdateReleaseResponseData {
   }
   
   @scala.inline
-  implicit class ReposUpdateReleaseResponseDataOps[Self <: ReposUpdateReleaseResponseData] (val x: Self) extends AnyVal {
+  implicit class ReposUpdateReleaseResponseDataMutableBuilder[Self <: ReposUpdateReleaseResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: js.Array[Browserdownloadurl]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsVarargs(value: Browserdownloadurl*): Self = StObject.set(x, "assets", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssets_url(value: String): Self = StObject.set(x, "assets_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetsVarargs(value: Browserdownloadurl*): Self = this.set("assets", js.Array(value :_*))
+    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: js.Array[Browserdownloadurl]): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets_url(value: String): Self = this.set("assets_url", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: Avatarurl): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraft(value: Boolean): Self = this.set("draft", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPrerelease(value: Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrerelease(value: Boolean): Self = this.set("prerelease", value.asInstanceOf[js.Any])
+    def setTarball_url(value: String): Self = StObject.set(x, "tarball_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished_at(value: String): Self = this.set("published_at", value.asInstanceOf[js.Any])
+    def setTarget_commitish(value: String): Self = StObject.set(x, "target_commitish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag_name(value: String): Self = this.set("tag_name", value.asInstanceOf[js.Any])
+    def setUpload_url(value: String): Self = StObject.set(x, "upload_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarball_url(value: String): Self = this.set("tarball_url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_commitish(value: String): Self = this.set("target_commitish", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpload_url(value: String): Self = this.set("upload_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZipball_url(value: String): Self = this.set("zipball_url", value.asInstanceOf[js.Any])
+    def setZipball_url(value: String): Self = StObject.set(x, "zipball_url", value.asInstanceOf[js.Any])
   }
 }

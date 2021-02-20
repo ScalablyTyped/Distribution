@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeStore extends js.Object {
+trait TreeStore extends StObject {
   
   def add(obj: js.Any): String = js.native
   def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native

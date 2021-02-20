@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A response message for ContentAddressableStorage.GetTree.
   */
 @js.native
-trait SchemaBuildBazelRemoteExecutionV2GetTreeResponse extends js.Object {
+trait SchemaBuildBazelRemoteExecutionV2GetTreeResponse extends StObject {
   
   /**
     * The directories descended from the requested root.
@@ -31,33 +32,21 @@ object SchemaBuildBazelRemoteExecutionV2GetTreeResponse {
   }
   
   @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2GetTreeResponseOps[Self <: SchemaBuildBazelRemoteExecutionV2GetTreeResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildBazelRemoteExecutionV2GetTreeResponseMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2GetTreeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: js.Array[SchemaBuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = this.set("directories", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: js.Array[SchemaBuildBazelRemoteExecutionV2Directory]): Self = this.set("directories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectories: Self = this.set("directories", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

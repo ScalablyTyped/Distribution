@@ -3,12 +3,13 @@ package typings.googleCloudStorage.bucketMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudStorage.anon.StorageClass
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecycleRule extends js.Object {
+trait LifecycleRule extends StObject {
   
   var action: StorageClass | String = js.native
   
@@ -25,30 +26,18 @@ object LifecycleRule {
   }
   
   @scala.inline
-  implicit class LifecycleRuleOps[Self <: LifecycleRule] (val x: Self) extends AnyVal {
+  implicit class LifecycleRuleMutableBuilder[Self <: LifecycleRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: StorageClass | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCondition(value: StringDictionary[Boolean | Date | Double | String]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: StorageClass | String): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCondition(value: StringDictionary[Boolean | Date | Double | String]): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageClass(value: String): Self = this.set("storageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
   }
 }

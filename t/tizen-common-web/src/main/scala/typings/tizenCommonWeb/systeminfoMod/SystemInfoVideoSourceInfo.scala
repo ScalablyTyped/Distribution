@@ -9,12 +9,13 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.PC
 import typings.tizenCommonWeb.tizenCommonWebStrings.SCART
 import typings.tizenCommonWeb.tizenCommonWebStrings.SVIDEO
 import typings.tizenCommonWeb.tizenCommonWebStrings.TV
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemInfoVideoSourceInfo extends js.Object {
+trait SystemInfoVideoSourceInfo extends StObject {
   
   /**
     * Represents the input number of the input source.
@@ -50,30 +51,18 @@ object SystemInfoVideoSourceInfo {
   }
   
   @scala.inline
-  implicit class SystemInfoVideoSourceInfoOps[Self <: SystemInfoVideoSourceInfo] (val x: Self) extends AnyVal {
+  implicit class SystemInfoVideoSourceInfoMutableBuilder[Self <: SystemInfoVideoSourceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignal(value: Boolean): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignal(value: Boolean): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setType(value: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

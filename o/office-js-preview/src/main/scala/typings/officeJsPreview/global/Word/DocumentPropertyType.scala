@@ -1,5 +1,6 @@
 package typings.officeJsPreview.global.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Word.DocumentPropertyType")
 @js.native
-object DocumentPropertyType extends js.Object {
+object DocumentPropertyType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Word.DocumentPropertyType with String] = js.native

@@ -3,15 +3,18 @@ package typings.sudoPrompt
 import typings.node.Buffer
 import typings.std.Error
 import typings.sudoPrompt.anon.Env
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sudo-prompt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("sudo-prompt", "exec")
+  @js.native
   def exec(cmd: String): Unit = js.native
+  @JSImport("sudo-prompt", "exec")
+  @js.native
   def exec(
     cmd: String,
     options: js.UndefOr[scala.Nothing],
@@ -22,6 +25,8 @@ object mod extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  @JSImport("sudo-prompt", "exec")
+  @js.native
   def exec(
     cmd: String,
     options: js.Function3[
@@ -31,6 +36,8 @@ object mod extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  @JSImport("sudo-prompt", "exec")
+  @js.native
   def exec(
     cmd: String,
     options: js.Function3[
@@ -46,7 +53,11 @@ object mod extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  @JSImport("sudo-prompt", "exec")
+  @js.native
   def exec(cmd: String, options: Env): Unit = js.native
+  @JSImport("sudo-prompt", "exec")
+  @js.native
   def exec(
     cmd: String,
     options: Env,

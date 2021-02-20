@@ -1,11 +1,12 @@
 package typings.reactNativeGoby.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadProgress extends js.Object {
+trait DownloadProgress extends StObject {
   
   /**
     * The number of bytes downloaded thus far.
@@ -26,24 +27,12 @@ object DownloadProgress {
   }
   
   @scala.inline
-  implicit class DownloadProgressOps[Self <: DownloadProgress] (val x: Self) extends AnyVal {
+  implicit class DownloadProgressMutableBuilder[Self <: DownloadProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReceivedBytes(value: Double): Self = StObject.set(x, "receivedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReceivedBytes(value: Double): Self = this.set("receivedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytes(value: Double): Self = this.set("totalBytes", value.asInstanceOf[js.Any])
+    def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
   }
 }

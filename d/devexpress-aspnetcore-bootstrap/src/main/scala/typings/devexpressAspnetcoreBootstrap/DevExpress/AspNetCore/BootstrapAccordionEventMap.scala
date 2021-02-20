@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object BootstrapAccordionEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapAccordionEventMapOps[Self <: BootstrapAccordionEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapAccordionEventMapMutableBuilder[Self <: BootstrapAccordionEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = this.set("beginCallback", value.asInstanceOf[js.Any])
+    def setExpandedChanged(value: AccordionGroupEventArgs): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = this.set("callbackError", value.asInstanceOf[js.Any])
+    def setExpandedChanging(value: AccordionGroupCancelEventArgs): Self = StObject.set(x, "expandedChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = this.set("endCallback", value.asInstanceOf[js.Any])
+    def setHeaderClick(value: AccordionGroupClickEventArgs): Self = StObject.set(x, "headerClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedChanged(value: AccordionGroupEventArgs): Self = this.set("expandedChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpandedChanging(value: AccordionGroupCancelEventArgs): Self = this.set("expandedChanging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderClick(value: AccordionGroupClickEventArgs): Self = this.set("headerClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemClick(value: AccordionItemEventArgs): Self = this.set("itemClick", value.asInstanceOf[js.Any])
+    def setItemClick(value: AccordionItemEventArgs): Self = StObject.set(x, "itemClick", value.asInstanceOf[js.Any])
   }
 }

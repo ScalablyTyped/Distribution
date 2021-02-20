@@ -23,12 +23,13 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import typings.std.Map
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Commands extends js.Object {
+trait Commands extends StObject {
   
   def append(key: KeyType, value: ValueType): js.Promise[Double] = js.native
   def append(key: KeyType, value: ValueType, callback: Callback[Double]): Unit = js.native

@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposTransferEndpoint extends js.Object {
+trait ReposTransferEndpoint extends StObject {
   
   /**
     * **Required:** The username or organization name the repository will be transferred to.
@@ -30,39 +31,27 @@ object ReposTransferEndpoint {
   }
   
   @scala.inline
-  implicit class ReposTransferEndpointOps[Self <: ReposTransferEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposTransferEndpointMutableBuilder[Self <: ReposTransferEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNew_owner(value: String): Self = StObject.set(x, "new_owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNew_ownerUndefined: Self = StObject.set(x, "new_owner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setTeam_ids(value: js.Array[Double]): Self = StObject.set(x, "team_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_owner(value: String): Self = this.set("new_owner", value.asInstanceOf[js.Any])
+    def setTeam_idsUndefined: Self = StObject.set(x, "team_ids", js.undefined)
     
     @scala.inline
-    def deleteNew_owner: Self = this.set("new_owner", js.undefined)
-    
-    @scala.inline
-    def setTeam_idsVarargs(value: Double*): Self = this.set("team_ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setTeam_ids(value: js.Array[Double]): Self = this.set("team_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeam_ids: Self = this.set("team_ids", js.undefined)
+    def setTeam_idsVarargs(value: Double*): Self = StObject.set(x, "team_ids", js.Array(value :_*))
   }
 }

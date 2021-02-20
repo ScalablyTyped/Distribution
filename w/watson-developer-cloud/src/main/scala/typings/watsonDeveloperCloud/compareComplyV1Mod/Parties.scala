@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A party and its corresponding role, including address and contact information if identified. */
 @js.native
-trait Parties extends js.Object {
+trait Parties extends StObject {
   
   /** List of the party's address or addresses. */
   var addresses: js.UndefOr[js.Array[Address]] = js.native
@@ -32,54 +33,42 @@ object Parties {
   }
   
   @scala.inline
-  implicit class PartiesOps[Self <: Parties] (val x: Self) extends AnyVal {
+  implicit class PartiesMutableBuilder[Self <: Parties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressesVarargs(value: Address*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def setAddressesVarargs(value: Address*): Self = this.set("addresses", js.Array(value :_*))
+    def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: js.Array[Address]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
     @scala.inline
-    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
     
     @scala.inline
-    def setContactsVarargs(value: Contact*): Self = this.set("contacts", js.Array(value :_*))
+    def setImportance(value: String): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContacts(value: js.Array[Contact]): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def deleteContacts: Self = this.set("contacts", js.undefined)
+    def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: String): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParty(value: String): Self = this.set("party", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParty: Self = this.set("party", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

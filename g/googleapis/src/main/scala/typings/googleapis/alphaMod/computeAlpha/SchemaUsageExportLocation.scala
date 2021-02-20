@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains bucket_name and report_name prefix.
   */
 @js.native
-trait SchemaUsageExportLocation extends js.Object {
+trait SchemaUsageExportLocation extends StObject {
   
   /**
     * The name of an existing bucket in Cloud Storage where the usage report
@@ -39,30 +40,18 @@ object SchemaUsageExportLocation {
   }
   
   @scala.inline
-  implicit class SchemaUsageExportLocationOps[Self <: SchemaUsageExportLocation] (val x: Self) extends AnyVal {
+  implicit class SchemaUsageExportLocationMutableBuilder[Self <: SchemaUsageExportLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportNamePrefix(value: String): Self = StObject.set(x, "reportNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
-    
-    @scala.inline
-    def setReportNamePrefix(value: String): Self = this.set("reportNamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportNamePrefix: Self = this.set("reportNamePrefix", js.undefined)
+    def setReportNamePrefixUndefined: Self = StObject.set(x, "reportNamePrefix", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestionProto extends js.Object {
+trait SuggestionProto extends StObject {
   
   /** Reference to a help center article concerning this type of suggestion. Always set. */
   var helpUrl: js.UndefOr[String] = js.native
@@ -52,78 +53,66 @@ object SuggestionProto {
   }
   
   @scala.inline
-  implicit class SuggestionProtoOps[Self <: SuggestionProto] (val x: Self) extends AnyVal {
+  implicit class SuggestionProtoMutableBuilder[Self <: SuggestionProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongMessage(value: SafeHtmlProto): Self = StObject.set(x, "longMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpUrl(value: String): Self = this.set("helpUrl", value.asInstanceOf[js.Any])
+    def setLongMessageUndefined: Self = StObject.set(x, "longMessage", js.undefined)
     
     @scala.inline
-    def deleteHelpUrl: Self = this.set("helpUrl", js.undefined)
+    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongMessage(value: SafeHtmlProto): Self = this.set("longMessage", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteLongMessage: Self = this.set("longMessage", js.undefined)
+    def setPseudoResourceId(value: String): Self = StObject.set(x, "pseudoResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setPseudoResourceIdUndefined: Self = StObject.set(x, "pseudoResourceId", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setRegion(value: RegionProto): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudoResourceId(value: String): Self = this.set("pseudoResourceId", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePseudoResourceId: Self = this.set("pseudoResourceId", js.undefined)
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: RegionProto): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setSecondaryPriority(value: Double): Self = StObject.set(x, "secondaryPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenId(value: String): Self = this.set("screenId", value.asInstanceOf[js.Any])
+    def setSecondaryPriorityUndefined: Self = StObject.set(x, "secondaryPriority", js.undefined)
     
     @scala.inline
-    def deleteScreenId: Self = this.set("screenId", js.undefined)
+    def setShortMessage(value: SafeHtmlProto): Self = StObject.set(x, "shortMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryPriority(value: Double): Self = this.set("secondaryPriority", value.asInstanceOf[js.Any])
+    def setShortMessageUndefined: Self = StObject.set(x, "shortMessage", js.undefined)
     
     @scala.inline
-    def deleteSecondaryPriority: Self = this.set("secondaryPriority", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortMessage(value: SafeHtmlProto): Self = this.set("shortMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortMessage: Self = this.set("shortMessage", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

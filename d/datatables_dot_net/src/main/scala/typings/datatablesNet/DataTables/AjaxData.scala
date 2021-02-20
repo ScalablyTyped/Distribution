@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AjaxData extends js.Object {
+trait AjaxData extends StObject {
   
   var data: js.Any = js.native
   
@@ -26,45 +27,33 @@ object AjaxData {
   }
   
   @scala.inline
-  implicit class AjaxDataOps[Self <: AjaxData] (val x: Self) extends AnyVal {
+  implicit class AjaxDataMutableBuilder[Self <: AjaxData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraw(value: Double): Self = this.set("draw", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDraw: Self = this.set("draw", js.undefined)
+    def setRecordsFiltered(value: Double): Self = StObject.set(x, "recordsFiltered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setRecordsFilteredUndefined: Self = StObject.set(x, "recordsFiltered", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsFiltered(value: Double): Self = this.set("recordsFiltered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordsFiltered: Self = this.set("recordsFiltered", js.undefined)
-    
-    @scala.inline
-    def setRecordsTotal(value: Double): Self = this.set("recordsTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordsTotal: Self = this.set("recordsTotal", js.undefined)
+    def setRecordsTotalUndefined: Self = StObject.set(x, "recordsTotal", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoolValue extends js.Object {
+trait BoolValue extends StObject {
   
   var boolValue: js.UndefOr[Boolean] = js.native
   
@@ -28,60 +29,48 @@ object BoolValue {
   }
   
   @scala.inline
-  implicit class BoolValueOps[Self <: BoolValue] (val x: Self) extends AnyVal {
+  implicit class BoolValueMutableBuilder[Self <: BoolValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setMultiIntValue(value: js.Array[String]): Self = StObject.set(x, "multiIntValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntValue(value: String): Self = this.set("intValue", value.asInstanceOf[js.Any])
+    def setMultiIntValueUndefined: Self = StObject.set(x, "multiIntValue", js.undefined)
     
     @scala.inline
-    def deleteIntValue: Self = this.set("intValue", js.undefined)
+    def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value :_*))
     
     @scala.inline
-    def setMultiIntValueVarargs(value: String*): Self = this.set("multiIntValue", js.Array(value :_*))
+    def setMultiValue(value: js.Array[String]): Self = StObject.set(x, "multiValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiIntValue(value: js.Array[String]): Self = this.set("multiIntValue", value.asInstanceOf[js.Any])
+    def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
     
     @scala.inline
-    def deleteMultiIntValue: Self = this.set("multiIntValue", js.undefined)
+    def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueVarargs(value: String*): Self = this.set("multiValue", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiValue(value: js.Array[String]): Self = this.set("multiValue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMultiValue: Self = this.set("multiValue", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

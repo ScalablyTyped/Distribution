@@ -1,5 +1,6 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactSketchapp.reactSketchappStrings.left
   - typings.reactSketchapp.reactSketchappStrings.right
 */
-trait Side extends js.Object
+trait Side extends StObject
 object Side {
   
   @scala.inline

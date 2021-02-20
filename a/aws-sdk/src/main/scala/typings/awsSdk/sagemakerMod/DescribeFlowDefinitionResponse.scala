@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFlowDefinitionResponse extends js.Object {
+trait DescribeFlowDefinitionResponse extends StObject {
   
   /**
     * The timestamp when the flow definition was created.
@@ -74,57 +75,45 @@ object DescribeFlowDefinitionResponse {
   }
   
   @scala.inline
-  implicit class DescribeFlowDefinitionResponseOps[Self <: DescribeFlowDefinitionResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeFlowDefinitionResponseMutableBuilder[Self <: DescribeFlowDefinitionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = this.set("FlowDefinitionArn", value.asInstanceOf[js.Any])
+    def setFlowDefinitionName(value: FlowDefinitionName): Self = StObject.set(x, "FlowDefinitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDefinitionName(value: FlowDefinitionName): Self = this.set("FlowDefinitionName", value.asInstanceOf[js.Any])
+    def setFlowDefinitionStatus(value: FlowDefinitionStatus): Self = StObject.set(x, "FlowDefinitionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDefinitionStatus(value: FlowDefinitionStatus): Self = this.set("FlowDefinitionStatus", value.asInstanceOf[js.Any])
+    def setHumanLoopActivationConfig(value: HumanLoopActivationConfig): Self = StObject.set(x, "HumanLoopActivationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanLoopConfig(value: HumanLoopConfig): Self = this.set("HumanLoopConfig", value.asInstanceOf[js.Any])
+    def setHumanLoopActivationConfigUndefined: Self = StObject.set(x, "HumanLoopActivationConfig", js.undefined)
     
     @scala.inline
-    def setOutputConfig(value: FlowDefinitionOutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setHumanLoopRequestSource(value: HumanLoopRequestSource): Self = StObject.set(x, "HumanLoopRequestSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setHumanLoopRequestSourceUndefined: Self = StObject.set(x, "HumanLoopRequestSource", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setOutputConfig(value: FlowDefinitionOutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanLoopActivationConfig(value: HumanLoopActivationConfig): Self = this.set("HumanLoopActivationConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanLoopActivationConfig: Self = this.set("HumanLoopActivationConfig", js.undefined)
-    
-    @scala.inline
-    def setHumanLoopRequestSource(value: HumanLoopRequestSource): Self = this.set("HumanLoopRequestSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanLoopRequestSource: Self = this.set("HumanLoopRequestSource", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -8,13 +8,14 @@ import typings.winrtUwp.winrtUwpStrings.querysubmitted
 import typings.winrtUwp.winrtUwpStrings.resultsuggestionchosen
 import typings.winrtUwp.winrtUwpStrings.suggestionsrequested
 import typings.winrtUwp.winrtUwpStrings.visibilitychanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents and manages the search pane that opens when a user activates the Search charm. The search pane provides a consistent, touch-friendly search box and optional search suggestions. */
 @js.native
-trait SearchPane extends js.Object {
+trait SearchPane extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

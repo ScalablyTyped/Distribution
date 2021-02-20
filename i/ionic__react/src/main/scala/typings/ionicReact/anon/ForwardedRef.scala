@@ -2,12 +2,13 @@ package typings.ionicReact.anon
 
 import typings.ionicReact.createControllerComponentMod.OverlayBase
 import typings.react.mod.RefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardedRef[OverlayType /* <: OverlayBase */] extends js.Object {
+trait ForwardedRef[OverlayType /* <: OverlayBase */] extends StObject {
   
   var forwardedRef: js.UndefOr[RefObject[OverlayType]] = js.native
 }
@@ -20,24 +21,12 @@ object ForwardedRef {
   }
   
   @scala.inline
-  implicit class ForwardedRefOps[Self <: ForwardedRef[_], OverlayType /* <: OverlayBase */] (val x: Self with ForwardedRef[OverlayType]) extends AnyVal {
+  implicit class ForwardedRefMutableBuilder[Self <: ForwardedRef[_], OverlayType /* <: OverlayBase */] (val x: Self with ForwardedRef[OverlayType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardedRef(value: RefObject[OverlayType]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForwardedRef(value: RefObject[OverlayType]): Self = this.set("forwardedRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardedRef: Self = this.set("forwardedRef", js.undefined)
+    def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
   }
 }

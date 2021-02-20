@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Progress extends js.Object {
+trait Progress extends StObject {
   
   /**
     * The current number of uncompressed object bytes processed.
@@ -31,36 +32,24 @@ object Progress {
   }
   
   @scala.inline
-  implicit class ProgressOps[Self <: Progress] (val x: Self) extends AnyVal {
+  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesProcessed(value: BytesProcessed): Self = StObject.set(x, "BytesProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesProcessedUndefined: Self = StObject.set(x, "BytesProcessed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesReturned(value: BytesReturned): Self = StObject.set(x, "BytesReturned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesProcessed(value: BytesProcessed): Self = this.set("BytesProcessed", value.asInstanceOf[js.Any])
+    def setBytesReturnedUndefined: Self = StObject.set(x, "BytesReturned", js.undefined)
     
     @scala.inline
-    def deleteBytesProcessed: Self = this.set("BytesProcessed", js.undefined)
+    def setBytesScanned(value: BytesScanned): Self = StObject.set(x, "BytesScanned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesReturned(value: BytesReturned): Self = this.set("BytesReturned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytesReturned: Self = this.set("BytesReturned", js.undefined)
-    
-    @scala.inline
-    def setBytesScanned(value: BytesScanned): Self = this.set("BytesScanned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytesScanned: Self = this.set("BytesScanned", js.undefined)
+    def setBytesScannedUndefined: Self = StObject.set(x, "BytesScanned", js.undefined)
   }
 }

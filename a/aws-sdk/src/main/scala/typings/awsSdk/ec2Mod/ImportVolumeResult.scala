@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportVolumeResult extends js.Object {
+trait ImportVolumeResult extends StObject {
   
   /**
     * Information about the conversion task.
@@ -21,24 +22,12 @@ object ImportVolumeResult {
   }
   
   @scala.inline
-  implicit class ImportVolumeResultOps[Self <: ImportVolumeResult] (val x: Self) extends AnyVal {
+  implicit class ImportVolumeResultMutableBuilder[Self <: ImportVolumeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConversionTask(value: ConversionTask): Self = this.set("ConversionTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversionTask: Self = this.set("ConversionTask", js.undefined)
+    def setConversionTaskUndefined: Self = StObject.set(x, "ConversionTask", js.undefined)
   }
 }

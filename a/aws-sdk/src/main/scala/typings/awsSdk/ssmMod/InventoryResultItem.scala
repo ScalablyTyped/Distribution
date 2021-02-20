@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryResultItem extends js.Object {
+trait InventoryResultItem extends StObject {
   
   /**
     * The time inventory item data was captured.
@@ -45,42 +46,30 @@ object InventoryResultItem {
   }
   
   @scala.inline
-  implicit class InventoryResultItemOps[Self <: InventoryResultItem] (val x: Self) extends AnyVal {
+  implicit class InventoryResultItemMutableBuilder[Self <: InventoryResultItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureTime(value: InventoryItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureTimeUndefined: Self = StObject.set(x, "CaptureTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: InventoryItemEntryList): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVarargs(value: InventoryItemEntry*): Self = this.set("Content", js.Array(value :_*))
+    def setContentHash(value: InventoryItemContentHash): Self = StObject.set(x, "ContentHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: InventoryItemEntryList): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setContentHashUndefined: Self = StObject.set(x, "ContentHash", js.undefined)
     
     @scala.inline
-    def setSchemaVersion(value: InventoryItemSchemaVersion): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    def setContentVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
     
     @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    def setSchemaVersion(value: InventoryItemSchemaVersion): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureTime(value: InventoryItemCaptureTime): Self = this.set("CaptureTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaptureTime: Self = this.set("CaptureTime", js.undefined)
-    
-    @scala.inline
-    def setContentHash(value: InventoryItemContentHash): Self = this.set("ContentHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentHash: Self = this.set("ContentHash", js.undefined)
+    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }
 }

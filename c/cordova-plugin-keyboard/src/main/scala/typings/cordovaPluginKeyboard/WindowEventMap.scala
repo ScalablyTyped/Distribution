@@ -1,12 +1,13 @@
 package typings.cordovaPluginKeyboard
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowEventMap extends js.Object {
+trait WindowEventMap extends StObject {
   
   /**
     * This event is fired when the keyboard is fully closed.
@@ -48,33 +49,21 @@ object WindowEventMap {
   }
   
   @scala.inline
-  implicit class WindowEventMapOps[Self <: WindowEventMap] (val x: Self) extends AnyVal {
+  implicit class WindowEventMapMutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyboardDidHide(value: Event): Self = StObject.set(x, "keyboardDidHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyboardDidShow(value: Event): Self = StObject.set(x, "keyboardDidShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyboardHeightWillChange(value: CordovaKeyboardEvent): Self = StObject.set(x, "keyboardHeightWillChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardDidHide(value: Event): Self = this.set("keyboardDidHide", value.asInstanceOf[js.Any])
+    def setKeyboardWillHide(value: Event): Self = StObject.set(x, "keyboardWillHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardDidShow(value: Event): Self = this.set("keyboardDidShow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyboardHeightWillChange(value: CordovaKeyboardEvent): Self = this.set("keyboardHeightWillChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyboardWillHide(value: Event): Self = this.set("keyboardWillHide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyboardWillShow(value: Event): Self = this.set("keyboardWillShow", value.asInstanceOf[js.Any])
+    def setKeyboardWillShow(value: Event): Self = StObject.set(x, "keyboardWillShow", value.asInstanceOf[js.Any])
   }
 }

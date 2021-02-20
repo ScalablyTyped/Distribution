@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TelemetryConfiguration extends js.Object {
+trait TelemetryConfiguration extends StObject {
   
   /**
     * Synchronization status of the device reported configuration with the desired configuration.
@@ -26,27 +27,15 @@ object TelemetryConfiguration {
   }
   
   @scala.inline
-  implicit class TelemetryConfigurationOps[Self <: TelemetryConfiguration] (val x: Self) extends AnyVal {
+  implicit class TelemetryConfigurationMutableBuilder[Self <: TelemetryConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSyncStatus(value: ConfigurationSyncStatus): Self = StObject.set(x, "ConfigurationSyncStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSyncStatusUndefined: Self = StObject.set(x, "ConfigurationSyncStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTelemetry(value: Telemetry): Self = this.set("Telemetry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfigurationSyncStatus(value: ConfigurationSyncStatus): Self = this.set("ConfigurationSyncStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationSyncStatus: Self = this.set("ConfigurationSyncStatus", js.undefined)
+    def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
   }
 }

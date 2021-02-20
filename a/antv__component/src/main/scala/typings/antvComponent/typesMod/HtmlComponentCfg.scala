@@ -1,6 +1,7 @@
 package typings.antvComponent.typesMod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,36 +34,24 @@ object HtmlComponentCfg {
   }
   
   @scala.inline
-  implicit class HtmlComponentCfgOps[Self <: HtmlComponentCfg] (val x: Self) extends AnyVal {
+  implicit class HtmlComponentCfgMutableBuilder[Self <: HtmlComponentCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: HTMLElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomStyles(value: LooseObject): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: HTMLElement | String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDomStylesUndefined: Self = StObject.set(x, "domStyles", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomStyles(value: LooseObject): Self = this.set("domStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomStyles: Self = this.set("domStyles", js.undefined)
-    
-    @scala.inline
-    def setParent(value: HTMLElement | String): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

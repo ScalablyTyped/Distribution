@@ -1,11 +1,12 @@
 package typings.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonDomSettings extends js.Object {
+trait ButtonDomSettings extends StObject {
   
   var button: js.UndefOr[ButtonDomButtomButton] = js.native
   
@@ -26,48 +27,36 @@ object ButtonDomSettings {
   }
   
   @scala.inline
-  implicit class ButtonDomSettingsOps[Self <: ButtonDomSettings] (val x: Self) extends AnyVal {
+  implicit class ButtonDomSettingsMutableBuilder[Self <: ButtonDomSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: ButtonDomButtomButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonContainer(value: ButtonDomButtomCommon): Self = StObject.set(x, "buttonContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonContainerUndefined: Self = StObject.set(x, "buttonContainer", js.undefined)
     
     @scala.inline
-    def setButton(value: ButtonDomButtomButton): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setButtonLiner(value: ButtonDomButtomCommon): Self = StObject.set(x, "buttonLiner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setButtonLinerUndefined: Self = StObject.set(x, "buttonLiner", js.undefined)
     
     @scala.inline
-    def setButtonContainer(value: ButtonDomButtomCommon): Self = this.set("buttonContainer", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteButtonContainer: Self = this.set("buttonContainer", js.undefined)
+    def setCollection(value: ButtonDomButtomCommon): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonLiner(value: ButtonDomButtomCommon): Self = this.set("buttonLiner", value.asInstanceOf[js.Any])
+    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
     @scala.inline
-    def deleteButtonLiner: Self = this.set("buttonLiner", js.undefined)
+    def setContainer(value: ButtonDomButtomCommon): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: ButtonDomButtomCommon): Self = this.set("collection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollection: Self = this.set("collection", js.undefined)
-    
-    @scala.inline
-    def setContainer(value: ButtonDomButtomCommon): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
   }
 }

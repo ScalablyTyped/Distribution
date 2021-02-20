@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateConfigurationSetTrackingOptionsRequest extends js.Object {
+trait UpdateConfigurationSetTrackingOptionsRequest extends StObject {
   
   /**
     * The name of the configuration set for which you want to update the custom tracking domain.
@@ -23,24 +24,12 @@ object UpdateConfigurationSetTrackingOptionsRequest {
   }
   
   @scala.inline
-  implicit class UpdateConfigurationSetTrackingOptionsRequestOps[Self <: UpdateConfigurationSetTrackingOptionsRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateConfigurationSetTrackingOptionsRequestMutableBuilder[Self <: UpdateConfigurationSetTrackingOptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackingOptions(value: TrackingOptions): Self = this.set("TrackingOptions", value.asInstanceOf[js.Any])
+    def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
   }
 }

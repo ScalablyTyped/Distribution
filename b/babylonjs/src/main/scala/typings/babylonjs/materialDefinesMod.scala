@@ -1,14 +1,14 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/materialDefines", JSImport.Namespace)
-@js.native
-object materialDefinesMod extends js.Object {
+object materialDefinesMod {
   
+  @JSImport("babylonjs/Materials/materialDefines", "MaterialDefines")
   @js.native
   class MaterialDefines ()
     extends /* id */ StringDictionary[js.Any] {

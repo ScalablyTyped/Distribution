@@ -2,14 +2,14 @@ package typings.imageQ.mod
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.arrayMod.ErrorDiffusionArrayKernel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q", "image")
-@js.native
-object image extends js.Object {
+object image {
   
+  @JSImport("image-q", "image.ErrorDiffusionArray")
   @js.native
   class ErrorDiffusionArray protected ()
     extends typings.imageQ.imageMod.ErrorDiffusionArray {
@@ -61,8 +61,9 @@ object image extends js.Object {
     ) = this()
   }
   
+  @JSImport("image-q", "image.ErrorDiffusionArrayKernel")
   @js.native
-  object ErrorDiffusionArrayKernel extends js.Object {
+  object ErrorDiffusionArrayKernel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.imageQ.arrayMod.ErrorDiffusionArrayKernel with Double] = js.native
@@ -86,6 +87,7 @@ object image extends js.Object {
     /* 7 */ val TwoSierra: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.TwoSierra with Double = js.native
   }
   
+  @JSImport("image-q", "image.ErrorDiffusionRiemersma")
   @js.native
   class ErrorDiffusionRiemersma protected ()
     extends typings.imageQ.imageMod.ErrorDiffusionRiemersma {
@@ -103,6 +105,7 @@ object image extends js.Object {
     ) = this()
   }
   
+  @JSImport("image-q", "image.NearestColor")
   @js.native
   class NearestColor protected ()
     extends typings.imageQ.imageMod.NearestColor {

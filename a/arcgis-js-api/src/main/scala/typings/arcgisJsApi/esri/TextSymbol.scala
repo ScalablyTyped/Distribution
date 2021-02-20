@@ -9,6 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.middle
 import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

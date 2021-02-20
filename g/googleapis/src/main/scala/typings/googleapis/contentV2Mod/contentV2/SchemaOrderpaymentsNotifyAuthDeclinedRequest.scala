@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderpaymentsNotifyAuthDeclinedRequest extends js.Object {
+trait SchemaOrderpaymentsNotifyAuthDeclinedRequest extends StObject {
   
   /**
     * Reason why payment authorization was declined.
@@ -21,24 +22,12 @@ object SchemaOrderpaymentsNotifyAuthDeclinedRequest {
   }
   
   @scala.inline
-  implicit class SchemaOrderpaymentsNotifyAuthDeclinedRequestOps[Self <: SchemaOrderpaymentsNotifyAuthDeclinedRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderpaymentsNotifyAuthDeclinedRequestMutableBuilder[Self <: SchemaOrderpaymentsNotifyAuthDeclinedRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclineReason(value: String): Self = StObject.set(x, "declineReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeclineReason(value: String): Self = this.set("declineReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeclineReason: Self = this.set("declineReason", js.undefined)
+    def setDeclineReasonUndefined: Self = StObject.set(x, "declineReason", js.undefined)
   }
 }

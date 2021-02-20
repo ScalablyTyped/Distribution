@@ -3,12 +3,13 @@ package typings.cassandraDriver.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.cassandraDriver.typesMod.types.Uuid
 import typings.cassandraDriver.typesMod.types.consistencies
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AchievedConsistency extends js.Object {
+trait AchievedConsistency extends StObject {
   
   var achievedConsistency: consistencies = js.native
   
@@ -41,42 +42,30 @@ object AchievedConsistency {
   }
   
   @scala.inline
-  implicit class AchievedConsistencyOps[Self <: AchievedConsistency] (val x: Self) extends AnyVal {
+  implicit class AchievedConsistencyMutableBuilder[Self <: AchievedConsistency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAchievedConsistency(value: consistencies): Self = StObject.set(x, "achievedConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomPayload(value: js.Any): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueriedHost(value: String): Self = StObject.set(x, "queriedHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAchievedConsistency(value: consistencies): Self = this.set("achievedConsistency", value.asInstanceOf[js.Any])
+    def setSpeculativeExecutions(value: Double): Self = StObject.set(x, "speculativeExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomPayload(value: js.Any): Self = this.set("customPayload", value.asInstanceOf[js.Any])
+    def setTraceId(value: Uuid): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueriedHost(value: String): Self = this.set("queriedHost", value.asInstanceOf[js.Any])
+    def setTriedHosts(value: StringDictionary[js.Any]): Self = StObject.set(x, "triedHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeculativeExecutions(value: Double): Self = this.set("speculativeExecutions", value.asInstanceOf[js.Any])
+    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraceId(value: Uuid): Self = this.set("traceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriedHosts(value: StringDictionary[js.Any]): Self = this.set("triedHosts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateForecastExportJobResponse extends js.Object {
+trait CreateForecastExportJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the export job.
@@ -21,24 +22,12 @@ object CreateForecastExportJobResponse {
   }
   
   @scala.inline
-  implicit class CreateForecastExportJobResponseOps[Self <: CreateForecastExportJobResponse] (val x: Self) extends AnyVal {
+  implicit class CreateForecastExportJobResponseMutableBuilder[Self <: CreateForecastExportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForecastExportJobArn(value: Arn): Self = StObject.set(x, "ForecastExportJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForecastExportJobArn(value: Arn): Self = this.set("ForecastExportJobArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForecastExportJobArn: Self = this.set("ForecastExportJobArn", js.undefined)
+    def setForecastExportJobArnUndefined: Self = StObject.set(x, "ForecastExportJobArn", js.undefined)
   }
 }

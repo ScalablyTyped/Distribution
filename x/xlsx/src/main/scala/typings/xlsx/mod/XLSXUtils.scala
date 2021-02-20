@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XLSXUtils extends js.Object {
+trait XLSXUtils extends StObject {
   
   def aoa_to_sheet(data: js.Array[js.Array[_]]): WorkSheet = js.native
   def aoa_to_sheet(data: js.Array[js.Array[_]], opts: AOA2SheetOpts): WorkSheet = js.native

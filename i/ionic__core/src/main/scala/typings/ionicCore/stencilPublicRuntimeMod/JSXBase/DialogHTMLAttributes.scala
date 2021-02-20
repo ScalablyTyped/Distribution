@@ -1,6 +1,7 @@
 package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object DialogHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DialogHTMLAttributesOps[Self <: DialogHTMLAttributes[_], T] (val x: Self with DialogHTMLAttributes[T]) extends AnyVal {
+  implicit class DialogHTMLAttributesMutableBuilder[Self <: DialogHTMLAttributes[_], T] (val x: Self with DialogHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnClose(value: /* event */ Event => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: /* event */ Event => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setReturnValue(value: String): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
-    
-    @scala.inline
-    def setReturnValue(value: String): Self = this.set("returnValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnValue: Self = this.set("returnValue", js.undefined)
+    def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
   }
 }

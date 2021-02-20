@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemPrice extends js.Object {
+trait ItemPrice extends StObject {
   
   var buying: Double = js.native
   
@@ -22,30 +23,18 @@ object ItemPrice {
   }
   
   @scala.inline
-  implicit class ItemPriceOps[Self <: ItemPrice] (val x: Self) extends AnyVal {
+  implicit class ItemPriceMutableBuilder[Self <: ItemPrice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuying(value: Double): Self = StObject.set(x, "buying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
     
     @scala.inline
-    def setBuying(value: Double): Self = this.set("buying", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGamesVarargs(value: String*): Self = this.set("games", js.Array(value :_*))
-    
-    @scala.inline
-    def setGames(value: js.Array[String]): Self = this.set("games", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelling(value: Double): Self = this.set("selling", value.asInstanceOf[js.Any])
+    def setSelling(value: Double): Self = StObject.set(x, "selling", value.asInstanceOf[js.Any])
   }
 }

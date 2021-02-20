@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object IdentityManagerSetRedirectionHandlerHandlerFunction {
   }
   
   @scala.inline
-  implicit class IdentityManagerSetRedirectionHandlerHandlerFunctionOps[Self <: IdentityManagerSetRedirectionHandlerHandlerFunction] (val x: Self) extends AnyVal {
+  implicit class IdentityManagerSetRedirectionHandlerHandlerFunctionMutableBuilder[Self <: IdentityManagerSetRedirectionHandlerHandlerFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReturnUrlParamName(value: String): Self = StObject.set(x, "returnUrlParamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceUrl(value: String): Self = this.set("resourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnUrlParamName(value: String): Self = this.set("returnUrlParamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerInfo(value: ServerInfo): Self = this.set("serverInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignInPage(value: String): Self = this.set("signInPage", value.asInstanceOf[js.Any])
+    def setSignInPage(value: String): Self = StObject.set(x, "signInPage", value.asInstanceOf[js.Any])
   }
 }

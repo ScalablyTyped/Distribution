@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataClasses extends js.Object
+sealed trait DataClasses extends StObject
 /** Describes the cellular data services supported by a mobile broadband network device. */
 @JSGlobal("Windows.Networking.NetworkOperators.DataClasses")
 @js.native
-object DataClasses extends js.Object {
+object DataClasses extends StObject {
   
   /** The device supports the 1xEV-DO data service implemented by CDMA providers. */
   @js.native

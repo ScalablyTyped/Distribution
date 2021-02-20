@@ -1,11 +1,12 @@
 package typings.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartialRight extends js.Object {
+trait PartialRight extends StObject {
   
   def apply(func: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   def apply[R](func: Function0[R]): Function0[R] = js.native

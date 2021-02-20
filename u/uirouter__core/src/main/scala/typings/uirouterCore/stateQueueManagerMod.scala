@@ -7,14 +7,14 @@ import typings.uirouterCore.stateBuilderMod.StateBuilder
 import typings.uirouterCore.stateInterfaceMod._StateDeclaration
 import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.stateRegistryMod.StateRegistryListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/state/stateQueueManager", JSImport.Namespace)
-@js.native
-object stateQueueManagerMod extends js.Object {
+object stateQueueManagerMod {
   
+  @JSImport("@uirouter/core/lib/state/stateQueueManager", "StateQueueManager")
   @js.native
   class StateQueueManager protected () extends Disposable {
     def this(

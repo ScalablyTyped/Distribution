@@ -1,12 +1,13 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // utilities/Typeinfo.js
 @js.native
-trait TypeInfo extends js.Object {
+trait TypeInfo extends StObject {
   
   def enter(node: Node): Unit = js.native
   
@@ -42,42 +43,30 @@ object TypeInfo {
   }
   
   @scala.inline
-  implicit class TypeInfoOps[Self <: TypeInfo] (val x: Self) extends AnyVal {
+  implicit class TypeInfoMutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnter(value: Node => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetArgument(value: () => GraphQLArgument): Self = StObject.set(x, "getArgument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDirective(value: () => GraphQLDirective): Self = StObject.set(x, "getDirective", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnter(value: Node => Unit): Self = this.set("enter", js.Any.fromFunction1(value))
+    def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = StObject.set(x, "getFieldDef", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArgument(value: () => GraphQLArgument): Self = this.set("getArgument", js.Any.fromFunction0(value))
+    def setGetInputType(value: () => GraphQLInputType): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDirective(value: () => GraphQLDirective): Self = this.set("getDirective", js.Any.fromFunction0(value))
+    def setGetParentType(value: () => GraphQLCompositeType): Self = StObject.set(x, "getParentType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = this.set("getFieldDef", js.Any.fromFunction0(value))
+    def setGetType(value: () => GraphQLOutputType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInputType(value: () => GraphQLInputType): Self = this.set("getInputType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParentType(value: () => GraphQLCompositeType): Self = this.set("getParentType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => GraphQLOutputType): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLeave(value: Node => Unit): Self = this.set("leave", js.Any.fromFunction1(value))
+    def setLeave(value: Node => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
   }
 }

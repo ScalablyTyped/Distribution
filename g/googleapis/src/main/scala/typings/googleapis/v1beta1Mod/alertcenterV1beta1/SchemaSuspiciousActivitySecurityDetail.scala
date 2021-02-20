@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Detailed information of a single MDM suspicious activity event.
   */
 @js.native
-trait SchemaSuspiciousActivitySecurityDetail extends js.Object {
+trait SchemaSuspiciousActivitySecurityDetail extends StObject {
   
   /**
     * Required. The device ID.
@@ -64,72 +65,60 @@ object SchemaSuspiciousActivitySecurityDetail {
   }
   
   @scala.inline
-  implicit class SchemaSuspiciousActivitySecurityDetailOps[Self <: SchemaSuspiciousActivitySecurityDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaSuspiciousActivitySecurityDetailMutableBuilder[Self <: SchemaSuspiciousActivitySecurityDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceModel(value: String): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setDeviceModelUndefined: Self = StObject.set(x, "deviceModel", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setDeviceProperty(value: String): Self = StObject.set(x, "deviceProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceModel(value: String): Self = this.set("deviceModel", value.asInstanceOf[js.Any])
+    def setDevicePropertyUndefined: Self = StObject.set(x, "deviceProperty", js.undefined)
     
     @scala.inline
-    def deleteDeviceModel: Self = this.set("deviceModel", js.undefined)
+    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceProperty(value: String): Self = this.set("deviceProperty", value.asInstanceOf[js.Any])
+    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
     @scala.inline
-    def deleteDeviceProperty: Self = this.set("deviceProperty", js.undefined)
+    def setIosVendorId(value: String): Self = StObject.set(x, "iosVendorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    def setIosVendorIdUndefined: Self = StObject.set(x, "iosVendorId", js.undefined)
     
     @scala.inline
-    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosVendorId(value: String): Self = this.set("iosVendorId", value.asInstanceOf[js.Any])
+    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
     @scala.inline
-    def deleteIosVendorId: Self = this.set("iosVendorId", js.undefined)
+    def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValue(value: String): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
     @scala.inline
-    def deleteNewValue: Self = this.set("newValue", js.undefined)
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldValue(value: String): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
     @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
-    
-    @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
   }
 }

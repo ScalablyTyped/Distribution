@@ -1,13 +1,14 @@
 package typings.canvasjs.mod
 
 import typings.canvasjs.anon.FileName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("canvasjs", "Chart")
 @js.native
-class Chart protected () extends js.Object {
+class Chart protected () extends StObject {
   /**
     * Initializes a new instance of CanvasJS Chart.
     * @param containerId the DOM ID of the location where the chart is to be rendered

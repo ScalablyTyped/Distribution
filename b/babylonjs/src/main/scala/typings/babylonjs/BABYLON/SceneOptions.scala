@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneOptions extends js.Object {
+trait SceneOptions extends StObject {
   
   /**
     * Defines that each mesh of the scene should keep up-to-date a map of referencing cloned meshes for fast diposing
@@ -37,42 +38,30 @@ object SceneOptions {
   }
   
   @scala.inline
-  implicit class SceneOptionsOps[Self <: SceneOptions] (val x: Self) extends AnyVal {
+  implicit class SceneOptionsMutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUseClonedMeshMap(value: Boolean): Self = StObject.set(x, "useClonedMeshMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUseClonedMeshMapUndefined: Self = StObject.set(x, "useClonedMeshMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseGeometryUniqueIdsMap(value: Boolean): Self = StObject.set(x, "useGeometryUniqueIdsMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseClonedMeshMap(value: Boolean): Self = this.set("useClonedMeshMap", value.asInstanceOf[js.Any])
+    def setUseGeometryUniqueIdsMapUndefined: Self = StObject.set(x, "useGeometryUniqueIdsMap", js.undefined)
     
     @scala.inline
-    def deleteUseClonedMeshMap: Self = this.set("useClonedMeshMap", js.undefined)
+    def setUseMaterialMeshMap(value: Boolean): Self = StObject.set(x, "useMaterialMeshMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseGeometryUniqueIdsMap(value: Boolean): Self = this.set("useGeometryUniqueIdsMap", value.asInstanceOf[js.Any])
+    def setUseMaterialMeshMapUndefined: Self = StObject.set(x, "useMaterialMeshMap", js.undefined)
     
     @scala.inline
-    def deleteUseGeometryUniqueIdsMap: Self = this.set("useGeometryUniqueIdsMap", js.undefined)
+    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMaterialMeshMap(value: Boolean): Self = this.set("useMaterialMeshMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMaterialMeshMap: Self = this.set("useMaterialMeshMap", js.undefined)
-    
-    @scala.inline
-    def setVirtual(value: Boolean): Self = this.set("virtual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtual: Self = this.set("virtual", js.undefined)
+    def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
   }
 }

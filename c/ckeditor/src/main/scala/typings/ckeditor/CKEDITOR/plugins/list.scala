@@ -1,11 +1,12 @@
 package typings.ckeditor.CKEDITOR.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait list extends js.Object {
+trait list extends StObject {
   
   def arrayToList(listArray: js.Any, database: js.Any, paragraphMode: js.Any, dir: js.Any): Unit = js.native
   
@@ -29,24 +30,12 @@ object list {
   }
   
   @scala.inline
-  implicit class listOps[Self <: list] (val x: Self) extends AnyVal {
+  implicit class listMutableBuilder[Self <: list] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayToList(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "arrayToList", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArrayToList(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("arrayToList", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setListToArray(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("listToArray", js.Any.fromFunction5(value))
+    def setListToArray(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "listToArray", js.Any.fromFunction5(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAccountLabelsResponse extends js.Object {
+trait ListAccountLabelsResponse extends StObject {
   
   /** The labels from the specified account. */
   var accountLabels: js.UndefOr[js.Array[AccountLabel]] = js.native
@@ -22,33 +23,21 @@ object ListAccountLabelsResponse {
   }
   
   @scala.inline
-  implicit class ListAccountLabelsResponseOps[Self <: ListAccountLabelsResponse] (val x: Self) extends AnyVal {
+  implicit class ListAccountLabelsResponseMutableBuilder[Self <: ListAccountLabelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountLabels(value: js.Array[AccountLabel]): Self = StObject.set(x, "accountLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountLabelsUndefined: Self = StObject.set(x, "accountLabels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountLabelsVarargs(value: AccountLabel*): Self = StObject.set(x, "accountLabels", js.Array(value :_*))
     
     @scala.inline
-    def setAccountLabelsVarargs(value: AccountLabel*): Self = this.set("accountLabels", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountLabels(value: js.Array[AccountLabel]): Self = this.set("accountLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountLabels: Self = this.set("accountLabels", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

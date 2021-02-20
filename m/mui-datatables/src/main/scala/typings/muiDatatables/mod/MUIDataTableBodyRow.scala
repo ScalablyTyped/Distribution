@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableBodyRow extends js.Object {
+trait MUIDataTableBodyRow extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -26,45 +27,33 @@ object MUIDataTableBodyRow {
   }
   
   @scala.inline
-  implicit class MUIDataTableBodyRowOps[Self <: MUIDataTableBodyRow] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableBodyRowMutableBuilder[Self <: MUIDataTableBodyRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setOnClick(value: /* args */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setRowSelected(value: Boolean): Self = StObject.set(x, "rowSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: /* args */ js.Any => _): Self = this.set("onClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
-    
-    @scala.inline
-    def setRowSelected(value: Boolean): Self = this.set("rowSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowSelected: Self = this.set("rowSelected", js.undefined)
+    def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
   }
 }

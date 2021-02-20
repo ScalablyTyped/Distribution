@@ -5,14 +5,14 @@ import typings.pulumiKubernetes.v1CustomResourceDefinitionMod.CustomResourceDefi
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/apiextensions/v1", JSImport.Namespace)
-@js.native
-object apiextensionsV1Mod extends js.Object {
+object apiextensionsV1Mod {
   
+  @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinition")
   @js.native
   class CustomResourceDefinition protected ()
     extends typings.pulumiKubernetes.v1CustomResourceDefinitionMod.CustomResourceDefinition {
@@ -29,8 +29,7 @@ object apiextensionsV1Mod extends js.Object {
     def this(name: String, args: CustomResourceDefinitionArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object CustomResourceDefinition extends js.Object {
+  object CustomResourceDefinition {
     
     /**
       * Get an existing CustomResourceDefinition resource's state with the given name, ID, and optional extra
@@ -40,16 +39,23 @@ object apiextensionsV1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinition.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
+    @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinition.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
     
     /**
       * Returns true if the given object is an instance of CustomResourceDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinition.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1/customResourceDefinition.CustomResourceDefinition */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinitionList")
   @js.native
   class CustomResourceDefinitionList protected ()
     extends typings.pulumiKubernetes.v1CustomResourceDefinitionListMod.CustomResourceDefinitionList {
@@ -66,8 +72,7 @@ object apiextensionsV1Mod extends js.Object {
     def this(name: String, args: CustomResourceDefinitionListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object CustomResourceDefinitionList extends js.Object {
+  object CustomResourceDefinitionList {
     
     /**
       * Get an existing CustomResourceDefinitionList resource's state with the given name, ID, and optional extra
@@ -77,13 +82,19 @@ object apiextensionsV1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinitionList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
+    @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinitionList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
     
     /**
       * Returns true if the given object is an instance of CustomResourceDefinitionList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/apiextensions/v1", "CustomResourceDefinitionList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean = js.native
   }
 }

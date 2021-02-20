@@ -1,6 +1,7 @@
 package typings.cytoscape.mod
 
 import typings.cytoscape.cytoscapeStrings.breadthfirst
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object BreadthFirstLayoutOptions {
   }
   
   @scala.inline
-  implicit class BreadthFirstLayoutOptionsOps[Self <: BreadthFirstLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class BreadthFirstLayoutOptionsMutableBuilder[Self <: BreadthFirstLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximalAdjustments(value: Double): Self = StObject.set(x, "maximalAdjustments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: Boolean): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setName(value: breadthfirst): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirected(value: Boolean): Self = this.set("directed", value.asInstanceOf[js.Any])
+    def setRoots(value: String): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximalAdjustments(value: Double): Self = this.set("maximalAdjustments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: breadthfirst): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoots(value: String): Self = this.set("roots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoots: Self = this.set("roots", js.undefined)
+    def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
   }
 }

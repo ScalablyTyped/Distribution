@@ -5,14 +5,14 @@ import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.interfacesMod.IRangeProjector
 import typings.plottable.plotMod.Plot
 import typings.plottable.scaleMod.Scale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/xyPlot", JSImport.Namespace)
-@js.native
-object xyPlotMod extends js.Object {
+object xyPlotMod {
   
+  @JSImport("plottable/build/src/plots/xyPlot", "XYPlot")
   @js.native
   /**
     * An XYPlot is a Plot that displays data along two primary directions, X and Y.
@@ -141,11 +141,22 @@ object xyPlotMod extends js.Object {
     def y(y: IAccessor[Y], yScale: Scale[Y, Double], postScale: IRangeProjector[Double]): this.type = js.native
   }
   /* static members */
-  @js.native
-  object XYPlot extends js.Object {
+  object XYPlot {
     
-    var _X_KEY: String = js.native
+    @JSImport("plottable/build/src/plots/xyPlot", "XYPlot")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _Y_KEY: String = js.native
+    @JSImport("plottable/build/src/plots/xyPlot", "XYPlot._X_KEY")
+    @js.native
+    def _X_KEY: String = js.native
+    @scala.inline
+    def _X_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X_KEY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/plots/xyPlot", "XYPlot._Y_KEY")
+    @js.native
+    def _Y_KEY: String = js.native
+    @scala.inline
+    def _Y_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y_KEY")(x.asInstanceOf[js.Any])
   }
 }

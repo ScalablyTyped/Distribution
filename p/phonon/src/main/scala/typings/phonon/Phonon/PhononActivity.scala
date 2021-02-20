@@ -1,11 +1,12 @@
 package typings.phonon.Phonon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhononActivity extends js.Object {
+trait PhononActivity extends StObject {
   
   def onClose(): Unit = js.native
   def onClose(callback: js.Function1[/* self */ PhononOnCloseObject, Unit]): Unit = js.native

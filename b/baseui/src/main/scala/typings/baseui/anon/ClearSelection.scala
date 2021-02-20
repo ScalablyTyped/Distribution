@@ -4,12 +4,13 @@ import typings.baseui.dataTableMod.RowT
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearSelection extends js.Object {
+trait ClearSelection extends StObject {
   
   def clearSelection(): js.Any = js.native
   
@@ -30,30 +31,18 @@ object ClearSelection {
   }
   
   @scala.inline
-  implicit class ClearSelectionOps[Self <: ClearSelection] (val x: Self) extends AnyVal {
+  implicit class ClearSelectionMutableBuilder[Self <: ClearSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearSelection(value: () => js.Any): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelection(value: js.Array[RowT]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearSelection(value: () => js.Any): Self = this.set("clearSelection", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionVarargs(value: RowT*): Self = this.set("selection", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelection(value: js.Array[RowT]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelectionVarargs(value: RowT*): Self = StObject.set(x, "selection", js.Array(value :_*))
   }
 }

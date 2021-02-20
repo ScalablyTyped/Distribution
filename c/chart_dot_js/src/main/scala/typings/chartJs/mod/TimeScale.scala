@@ -1,5 +1,6 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,93 +41,81 @@ object TimeScale {
   }
   
   @scala.inline
-  implicit class TimeScaleOps[Self <: TimeScale] (val x: Self) extends AnyVal {
+  implicit class TimeScaleMutableBuilder[Self <: TimeScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapters(value: DateAdapterOptions): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdaptersUndefined: Self = StObject.set(x, "adapters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayFormats(value: TimeDisplayFormat): Self = StObject.set(x, "displayFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdapters(value: DateAdapterOptions): Self = this.set("adapters", value.asInstanceOf[js.Any])
+    def setDisplayFormatsUndefined: Self = StObject.set(x, "displayFormats", js.undefined)
     
     @scala.inline
-    def deleteAdapters: Self = this.set("adapters", js.undefined)
+    def setIsoWeekday(value: Boolean): Self = StObject.set(x, "isoWeekday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFormats(value: TimeDisplayFormat): Self = this.set("displayFormats", value.asInstanceOf[js.Any])
+    def setIsoWeekdayUndefined: Self = StObject.set(x, "isoWeekday", js.undefined)
     
     @scala.inline
-    def deleteDisplayFormats: Self = this.set("displayFormats", js.undefined)
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeekday(value: Boolean): Self = this.set("isoWeekday", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIsoWeekday: Self = this.set("isoWeekday", js.undefined)
+    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMinUnit(value: TimeUnit): Self = StObject.set(x, "minUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinUnitUndefined: Self = StObject.set(x, "minUnit", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setParser(value: String | (js.Function1[/* arg */ js.Any, _])): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinUnit(value: TimeUnit): Self = this.set("minUnit", value.asInstanceOf[js.Any])
+    def setParserFunction1(value: /* arg */ js.Any => _): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMinUnit: Self = this.set("minUnit", js.undefined)
+    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
     @scala.inline
-    def setParserFunction1(value: /* arg */ js.Any => _): Self = this.set("parser", js.Any.fromFunction1(value))
+    def setRound(value: TimeUnit): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParser(value: String | (js.Function1[/* arg */ js.Any, _])): Self = this.set("parser", value.asInstanceOf[js.Any])
+    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
     @scala.inline
-    def deleteParser: Self = this.set("parser", js.undefined)
+    def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRound(value: TimeUnit): Self = this.set("round", value.asInstanceOf[js.Any])
+    def setStepSizeUndefined: Self = StObject.set(x, "stepSize", js.undefined)
     
     @scala.inline
-    def deleteRound: Self = this.set("round", js.undefined)
+    def setTooltipFormat(value: String): Self = StObject.set(x, "tooltipFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepSize(value: Double): Self = this.set("stepSize", value.asInstanceOf[js.Any])
+    def setTooltipFormatUndefined: Self = StObject.set(x, "tooltipFormat", js.undefined)
     
     @scala.inline
-    def deleteStepSize: Self = this.set("stepSize", js.undefined)
+    def setUnit(value: TimeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipFormat(value: String): Self = this.set("tooltipFormat", value.asInstanceOf[js.Any])
+    def setUnitStepSize(value: Double): Self = StObject.set(x, "unitStepSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltipFormat: Self = this.set("tooltipFormat", js.undefined)
+    def setUnitStepSizeUndefined: Self = StObject.set(x, "unitStepSize", js.undefined)
     
     @scala.inline
-    def setUnit(value: TimeUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setUnitStepSize(value: Double): Self = this.set("unitStepSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitStepSize: Self = this.set("unitStepSize", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.webappsecCredentialManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object SiteBoundCredential {
   }
   
   @scala.inline
-  implicit class SiteBoundCredentialOps[Self <: SiteBoundCredential] (val x: Self) extends AnyVal {
+  implicit class SiteBoundCredentialMutableBuilder[Self <: SiteBoundCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconURL(value: String): Self = StObject.set(x, "iconURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconURLNull: Self = StObject.set(x, "iconURL", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconURL(value: String): Self = this.set("iconURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconURLNull: Self = this.set("iconURL", null)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setNameNull: Self = StObject.set(x, "name", null)
   }
 }

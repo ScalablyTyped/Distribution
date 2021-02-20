@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeReturnShippingLabelResult extends js.Object {
+trait DescribeReturnShippingLabelResult extends StObject {
   
   /**
     * The expiration date of the current return shipping label.
@@ -26,30 +27,18 @@ object DescribeReturnShippingLabelResult {
   }
   
   @scala.inline
-  implicit class DescribeReturnShippingLabelResultOps[Self <: DescribeReturnShippingLabelResult] (val x: Self) extends AnyVal {
+  implicit class DescribeReturnShippingLabelResultMutableBuilder[Self <: DescribeReturnShippingLabelResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: ShippingLabelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ShippingLabelStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -11,6 +11,7 @@ import typings.googleapis.anon.MaxAgeSeconds
 import typings.googleapis.anon.RequesterPays
 import typings.googleapis.anon.Rule
 import typings.googleapis.anon.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A bucket.
   */
 @js.native
-trait SchemaBucket extends js.Object {
+trait SchemaBucket extends StObject {
   
   /**
     * Access controls on the bucket.
@@ -189,177 +190,165 @@ object SchemaBucket {
   }
   
   @scala.inline
-  implicit class SchemaBucketOps[Self <: SchemaBucket] (val x: Self) extends AnyVal {
+  implicit class SchemaBucketMutableBuilder[Self <: SchemaBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: js.Array[SchemaBucketAccessControl]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAclVarargs(value: SchemaBucketAccessControl*): Self = StObject.set(x, "acl", js.Array(value :_*))
     
     @scala.inline
-    def setAclVarargs(value: SchemaBucketAccessControl*): Self = this.set("acl", js.Array(value :_*))
+    def setBilling(value: RequesterPays): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcl(value: js.Array[SchemaBucketAccessControl]): Self = this.set("acl", value.asInstanceOf[js.Any])
+    def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
     
     @scala.inline
-    def deleteAcl: Self = this.set("acl", js.undefined)
+    def setCors(value: js.Array[MaxAgeSeconds]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling(value: RequesterPays): Self = this.set("billing", value.asInstanceOf[js.Any])
+    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
     @scala.inline
-    def deleteBilling: Self = this.set("billing", js.undefined)
+    def setCorsVarargs(value: MaxAgeSeconds*): Self = StObject.set(x, "cors", js.Array(value :_*))
     
     @scala.inline
-    def setCorsVarargs(value: MaxAgeSeconds*): Self = this.set("cors", js.Array(value :_*))
+    def setDefaultEventBasedHold(value: Boolean): Self = StObject.set(x, "defaultEventBasedHold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCors(value: js.Array[MaxAgeSeconds]): Self = this.set("cors", value.asInstanceOf[js.Any])
+    def setDefaultEventBasedHoldUndefined: Self = StObject.set(x, "defaultEventBasedHold", js.undefined)
     
     @scala.inline
-    def deleteCors: Self = this.set("cors", js.undefined)
+    def setDefaultObjectAcl(value: js.Array[SchemaObjectAccessControl]): Self = StObject.set(x, "defaultObjectAcl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEventBasedHold(value: Boolean): Self = this.set("defaultEventBasedHold", value.asInstanceOf[js.Any])
+    def setDefaultObjectAclUndefined: Self = StObject.set(x, "defaultObjectAcl", js.undefined)
     
     @scala.inline
-    def deleteDefaultEventBasedHold: Self = this.set("defaultEventBasedHold", js.undefined)
+    def setDefaultObjectAclVarargs(value: SchemaObjectAccessControl*): Self = StObject.set(x, "defaultObjectAcl", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultObjectAclVarargs(value: SchemaObjectAccessControl*): Self = this.set("defaultObjectAcl", js.Array(value :_*))
+    def setEncryption(value: DefaultKmsKeyName): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultObjectAcl(value: js.Array[SchemaObjectAccessControl]): Self = this.set("defaultObjectAcl", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
     @scala.inline
-    def deleteDefaultObjectAcl: Self = this.set("defaultObjectAcl", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: DefaultKmsKeyName): Self = this.set("encryption", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("encryption", js.undefined)
+    def setIamConfiguration(value: BucketPolicyOnly): Self = StObject.set(x, "iamConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIamConfigurationUndefined: Self = StObject.set(x, "iamConfiguration", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamConfiguration(value: BucketPolicyOnly): Self = this.set("iamConfiguration", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIamConfiguration: Self = this.set("iamConfiguration", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLifecycle(value: Rule): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: Rule): Self = this.set("lifecycle", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLifecycle: Self = this.set("lifecycle", js.undefined)
+    def setLogging(value: LogBucket): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: LogBucket): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setMetagenerationUndefined: Self = StObject.set(x, "metageneration", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetageneration(value: String): Self = this.set("metageneration", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMetageneration: Self = this.set("metageneration", js.undefined)
+    def setOwner(value: Entity): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Entity): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRetentionPolicy(value: EffectiveTime): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectNumber(value: String): Self = this.set("projectNumber", value.asInstanceOf[js.Any])
+    def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
     
     @scala.inline
-    def deleteProjectNumber: Self = this.set("projectNumber", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionPolicy(value: EffectiveTime): Self = this.set("retentionPolicy", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRetentionPolicy: Self = this.set("retentionPolicy", js.undefined)
+    def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: String): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
     
     @scala.inline
-    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeCreated(value: String): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+    def setVersioning(value: `9`): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setWebsite(value: MainPageSuffix): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersioning(value: `9`): Self = this.set("versioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersioning: Self = this.set("versioning", js.undefined)
-    
-    @scala.inline
-    def setWebsite(value: MainPageSuffix): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

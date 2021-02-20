@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockToolsGuiDefinitionsMeasureOptions extends js.Object {
+trait StockToolsGuiDefinitionsMeasureOptions extends StObject {
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
@@ -28,45 +29,33 @@ object StockToolsGuiDefinitionsMeasureOptions {
   }
   
   @scala.inline
-  implicit class StockToolsGuiDefinitionsMeasureOptionsOps[Self <: StockToolsGuiDefinitionsMeasureOptions] (val x: Self) extends AnyVal {
+  implicit class StockToolsGuiDefinitionsMeasureOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsMeasureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setMeasureX(value: StockToolsGuiDefinitionsMeasureMeasureXOptions): Self = StObject.set(x, "measureX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setMeasureXUndefined: Self = StObject.set(x, "measureX", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setMeasureXY(value: StockToolsGuiDefinitionsMeasureMeasureXYOptions): Self = StObject.set(x, "measureXY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureX(value: StockToolsGuiDefinitionsMeasureMeasureXOptions): Self = this.set("measureX", value.asInstanceOf[js.Any])
+    def setMeasureXYUndefined: Self = StObject.set(x, "measureXY", js.undefined)
     
     @scala.inline
-    def deleteMeasureX: Self = this.set("measureX", js.undefined)
+    def setMeasureY(value: StockToolsGuiDefinitionsMeasureMeasureYOptions): Self = StObject.set(x, "measureY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureXY(value: StockToolsGuiDefinitionsMeasureMeasureXYOptions): Self = this.set("measureXY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasureXY: Self = this.set("measureXY", js.undefined)
-    
-    @scala.inline
-    def setMeasureY(value: StockToolsGuiDefinitionsMeasureMeasureYOptions): Self = this.set("measureY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasureY: Self = this.set("measureY", js.undefined)
+    def setMeasureYUndefined: Self = StObject.set(x, "measureY", js.undefined)
   }
 }

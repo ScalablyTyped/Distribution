@@ -1,11 +1,12 @@
 package typings.sketchapp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSArtboard extends js.Object {
+trait SketchMSArtboard extends StObject {
   
   var backgroundColor: SketchMSColor = js.native
   
@@ -32,57 +33,45 @@ object SketchMSArtboard {
   }
   
   @scala.inline
-  implicit class SketchMSArtboardOps[Self <: SketchMSArtboard] (val x: Self) extends AnyVal {
+  implicit class SketchMSArtboardMutableBuilder[Self <: SketchMSArtboard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: SketchMSColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: SketchMSRect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasBackgroundColor(value: Boolean): Self = StObject.set(x, "hasBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: SketchMSColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setHorizontalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "horizontalRulerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: SketchMSRect): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setHorizontalRulerDataUndefined: Self = StObject.set(x, "horizontalRulerData", js.undefined)
     
     @scala.inline
-    def setHasBackgroundColor(value: Boolean): Self = this.set("hasBackgroundColor", value.asInstanceOf[js.Any])
+    def setIncludeBackgroundColorInExport(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalRulerData(value: SketchMSRulerData): Self = this.set("horizontalRulerData", value.asInstanceOf[js.Any])
+    def setIncludeBackgroundColorInExportUndefined: Self = StObject.set(x, "includeBackgroundColorInExport", js.undefined)
     
     @scala.inline
-    def deleteHorizontalRulerData: Self = this.set("horizontalRulerData", js.undefined)
+    def setIncludeInCloudUpload(value: Boolean): Self = StObject.set(x, "includeInCloudUpload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBackgroundColorInExport(value: Boolean): Self = this.set("includeBackgroundColorInExport", value.asInstanceOf[js.Any])
+    def setIncludeInCloudUploadUndefined: Self = StObject.set(x, "includeInCloudUpload", js.undefined)
     
     @scala.inline
-    def deleteIncludeBackgroundColorInExport: Self = this.set("includeBackgroundColorInExport", js.undefined)
+    def setIsFlowHome(value: Boolean): Self = StObject.set(x, "isFlowHome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeInCloudUpload(value: Boolean): Self = this.set("includeInCloudUpload", value.asInstanceOf[js.Any])
+    def setIsFlowHomeUndefined: Self = StObject.set(x, "isFlowHome", js.undefined)
     
     @scala.inline
-    def deleteIncludeInCloudUpload: Self = this.set("includeInCloudUpload", js.undefined)
+    def setVerticalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "verticalRulerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFlowHome(value: Boolean): Self = this.set("isFlowHome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFlowHome: Self = this.set("isFlowHome", js.undefined)
-    
-    @scala.inline
-    def setVerticalRulerData(value: SketchMSRulerData): Self = this.set("verticalRulerData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalRulerData: Self = this.set("verticalRulerData", js.undefined)
+    def setVerticalRulerDataUndefined: Self = StObject.set(x, "verticalRulerData", js.undefined)
   }
 }

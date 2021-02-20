@@ -14,13 +14,19 @@ import typings.vsoNodeApi.workItemTrackingProcessInterfacesMod.UpdateProcessMode
 import typings.vsoNodeApi.workItemTrackingProcessInterfacesMod.WorkItemBehavior
 import typings.vsoNodeApi.workItemTrackingProcessInterfacesMod.WorkItemStateResultModel
 import typings.vsoNodeApi.workItemTrackingProcessInterfacesMod.WorkItemTypeModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/WorkItemTrackingProcessApi", JSImport.Namespace)
-@js.native
-object workItemTrackingProcessApiMod extends js.Object {
+object workItemTrackingProcessApiMod {
+  
+  @JSImport("vso-node-api/WorkItemTrackingProcessApi", "WorkItemTrackingProcessApi")
+  @js.native
+  class WorkItemTrackingProcessApi protected () extends IWorkItemTrackingProcessApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait IWorkItemTrackingProcessApi extends ClientApiBase {
@@ -66,11 +72,5 @@ object workItemTrackingProcessApiMod extends js.Object {
     def updateProcess(updateRequest: UpdateProcessModel, processTypeId: String): js.Promise[ProcessModel] = js.native
     
     def updateWorkItemTypeRule(fieldRule: FieldRuleModel, processId: String, witRefName: String, ruleId: String): js.Promise[FieldRuleModel] = js.native
-  }
-  
-  @js.native
-  class WorkItemTrackingProcessApi protected () extends IWorkItemTrackingProcessApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

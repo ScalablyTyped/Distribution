@@ -1,11 +1,12 @@
 package typings.plupload
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait pluploadFilters extends js.Object {
+trait pluploadFilters extends StObject {
   
   var max_file_size: js.UndefOr[Double | String] = js.native
   
@@ -22,39 +23,27 @@ object pluploadFilters {
   }
   
   @scala.inline
-  implicit class pluploadFiltersOps[Self <: pluploadFilters] (val x: Self) extends AnyVal {
+  implicit class pluploadFiltersMutableBuilder[Self <: pluploadFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax_file_size(value: Double | String): Self = StObject.set(x, "max_file_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax_file_sizeUndefined: Self = StObject.set(x, "max_file_size", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMime_types(value: js.Array[pluploadFiltersMimeTypes]): Self = StObject.set(x, "mime_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_file_size(value: Double | String): Self = this.set("max_file_size", value.asInstanceOf[js.Any])
+    def setMime_typesUndefined: Self = StObject.set(x, "mime_types", js.undefined)
     
     @scala.inline
-    def deleteMax_file_size: Self = this.set("max_file_size", js.undefined)
+    def setMime_typesVarargs(value: pluploadFiltersMimeTypes*): Self = StObject.set(x, "mime_types", js.Array(value :_*))
     
     @scala.inline
-    def setMime_typesVarargs(value: pluploadFiltersMimeTypes*): Self = this.set("mime_types", js.Array(value :_*))
+    def setPrevent_duplicates(value: Boolean): Self = StObject.set(x, "prevent_duplicates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime_types(value: js.Array[pluploadFiltersMimeTypes]): Self = this.set("mime_types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMime_types: Self = this.set("mime_types", js.undefined)
-    
-    @scala.inline
-    def setPrevent_duplicates(value: Boolean): Self = this.set("prevent_duplicates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevent_duplicates: Self = this.set("prevent_duplicates", js.undefined)
+    def setPrevent_duplicatesUndefined: Self = StObject.set(x, "prevent_duplicates", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A custom menu item that can be presented to the user by a timeline item.
   */
 @js.native
-trait SchemaMenuItem extends js.Object {
+trait SchemaMenuItem extends StObject {
   
   /**
     * Controls the behavior when the user picks the menu option. Allowed values
@@ -89,57 +90,45 @@ object SchemaMenuItem {
   }
   
   @scala.inline
-  implicit class SchemaMenuItemOps[Self <: SchemaMenuItem] (val x: Self) extends AnyVal {
+  implicit class SchemaMenuItemMutableBuilder[Self <: SchemaMenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextual_command(value: String): Self = StObject.set(x, "contextual_command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setContextual_commandUndefined: Self = StObject.set(x, "contextual_command", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextual_command(value: String): Self = this.set("contextual_command", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteContextual_command: Self = this.set("contextual_command", js.undefined)
+    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRemoveWhenSelected(value: Boolean): Self = StObject.set(x, "removeWhenSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRemoveWhenSelectedUndefined: Self = StObject.set(x, "removeWhenSelected", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setValues(value: js.Array[SchemaMenuValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveWhenSelected(value: Boolean): Self = this.set("removeWhenSelected", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteRemoveWhenSelected: Self = this.set("removeWhenSelected", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: SchemaMenuValue*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[SchemaMenuValue]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: SchemaMenuValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

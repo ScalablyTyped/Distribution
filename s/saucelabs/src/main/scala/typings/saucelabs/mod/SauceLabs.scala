@@ -15,12 +15,13 @@ import typings.saucelabs.anon.Subaccounts
 import typings.saucelabs.saucelabsStrings.all
 import typings.saucelabs.saucelabsStrings.appium_
 import typings.saucelabs.saucelabsStrings.webdriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SauceLabs extends js.Object {
+trait SauceLabs extends StObject {
   
   /**
     * Sets a reset point market at job_id, previous jobs will not be taken into account in calculating baseline

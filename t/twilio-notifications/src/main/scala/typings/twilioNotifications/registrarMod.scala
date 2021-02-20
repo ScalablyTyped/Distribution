@@ -3,17 +3,17 @@ package typings.twilioNotifications
 import typings.node.eventsMod.EventEmitter
 import typings.twilioNotifications.connectorMod.ChannelType
 import typings.twilioNotifications.connectorMod.Connector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-notifications/lib/registrar", JSImport.Namespace)
-@js.native
-object registrarMod extends js.Object {
+object registrarMod {
   
   /**
     * Provides an interface to the ERS registrar
     */
+  @JSImport("twilio-notifications/lib/registrar", "Registrar")
   @js.native
   class Registrar protected () extends EventEmitter {
     /**

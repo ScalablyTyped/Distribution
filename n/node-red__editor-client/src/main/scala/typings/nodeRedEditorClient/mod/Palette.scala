@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.anon.Label
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Palette extends js.Object {
+trait Palette extends StObject {
   
   def add(nt: String, `def`: js.Object): Unit = js.native
   
@@ -42,42 +43,30 @@ object Palette {
   }
   
   @scala.inline
-  implicit class PaletteOps[Self <: Palette] (val x: Self) extends AnyVal {
+  implicit class PaletteMutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditor(value: PaletteEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCategories(value: () => js.Array[Label]): Self = StObject.set(x, "getCategories", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: (String, js.Object) => Unit): Self = this.set("add", js.Any.fromFunction2(value))
+    def setHide(value: String => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEditor(value: PaletteEditor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCategories(value: () => js.Array[Label]): Self = this.set("getCategories", js.Any.fromFunction0(value))
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: String => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShow(value: String => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

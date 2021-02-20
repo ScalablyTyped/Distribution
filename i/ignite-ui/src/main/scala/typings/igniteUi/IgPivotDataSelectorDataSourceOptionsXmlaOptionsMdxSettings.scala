@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,60 +52,48 @@ object IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettings {
   }
   
   @scala.inline
-  implicit class IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettingsOps[Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettings] (val x: Self) extends AnyVal {
+  implicit class IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettingsMutableBuilder[Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCalculatedMembersOnColumns(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddCalculatedMembersOnColumnsUndefined: Self = StObject.set(x, "addCalculatedMembersOnColumns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddCalculatedMembersOnRows(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddCalculatedMembersOnColumns(value: Boolean): Self = this.set("addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
+    def setAddCalculatedMembersOnRowsUndefined: Self = StObject.set(x, "addCalculatedMembersOnRows", js.undefined)
     
     @scala.inline
-    def deleteAddCalculatedMembersOnColumns: Self = this.set("addCalculatedMembersOnColumns", js.undefined)
+    def setDimensionPropertiesOnColumns(value: js.Array[_]): Self = StObject.set(x, "dimensionPropertiesOnColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddCalculatedMembersOnRows(value: Boolean): Self = this.set("addCalculatedMembersOnRows", value.asInstanceOf[js.Any])
+    def setDimensionPropertiesOnColumnsUndefined: Self = StObject.set(x, "dimensionPropertiesOnColumns", js.undefined)
     
     @scala.inline
-    def deleteAddCalculatedMembersOnRows: Self = this.set("addCalculatedMembersOnRows", js.undefined)
+    def setDimensionPropertiesOnColumnsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionPropertiesOnColumns", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionPropertiesOnColumnsVarargs(value: js.Any*): Self = this.set("dimensionPropertiesOnColumns", js.Array(value :_*))
+    def setDimensionPropertiesOnRows(value: js.Array[_]): Self = StObject.set(x, "dimensionPropertiesOnRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionPropertiesOnColumns(value: js.Array[_]): Self = this.set("dimensionPropertiesOnColumns", value.asInstanceOf[js.Any])
+    def setDimensionPropertiesOnRowsUndefined: Self = StObject.set(x, "dimensionPropertiesOnRows", js.undefined)
     
     @scala.inline
-    def deleteDimensionPropertiesOnColumns: Self = this.set("dimensionPropertiesOnColumns", js.undefined)
+    def setDimensionPropertiesOnRowsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionPropertiesOnRows", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionPropertiesOnRowsVarargs(value: js.Any*): Self = this.set("dimensionPropertiesOnRows", js.Array(value :_*))
+    def setNonEmptyOnColumns(value: Boolean): Self = StObject.set(x, "nonEmptyOnColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionPropertiesOnRows(value: js.Array[_]): Self = this.set("dimensionPropertiesOnRows", value.asInstanceOf[js.Any])
+    def setNonEmptyOnColumnsUndefined: Self = StObject.set(x, "nonEmptyOnColumns", js.undefined)
     
     @scala.inline
-    def deleteDimensionPropertiesOnRows: Self = this.set("dimensionPropertiesOnRows", js.undefined)
+    def setNonEmptyOnRows(value: Boolean): Self = StObject.set(x, "nonEmptyOnRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonEmptyOnColumns(value: Boolean): Self = this.set("nonEmptyOnColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonEmptyOnColumns: Self = this.set("nonEmptyOnColumns", js.undefined)
-    
-    @scala.inline
-    def setNonEmptyOnRows(value: Boolean): Self = this.set("nonEmptyOnRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonEmptyOnRows: Self = this.set("nonEmptyOnRows", js.undefined)
+    def setNonEmptyOnRowsUndefined: Self = StObject.set(x, "nonEmptyOnRows", js.undefined)
   }
 }

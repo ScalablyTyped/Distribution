@@ -1,11 +1,12 @@
 package typings.awsSdk.signerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningConfigurationOverrides extends js.Object {
+trait SigningConfigurationOverrides extends StObject {
   
   /**
     * A specified override of the default encryption algorithm that is used in a code signing job.
@@ -26,30 +27,18 @@ object SigningConfigurationOverrides {
   }
   
   @scala.inline
-  implicit class SigningConfigurationOverridesOps[Self <: SigningConfigurationOverrides] (val x: Self) extends AnyVal {
+  implicit class SigningConfigurationOverridesMutableBuilder[Self <: SigningConfigurationOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionAlgorithm(value: EncryptionAlgorithm): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionAlgorithm(value: EncryptionAlgorithm): Self = this.set("encryptionAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionAlgorithm: Self = this.set("encryptionAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setHashAlgorithm(value: HashAlgorithm): Self = this.set("hashAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHashAlgorithm: Self = this.set("hashAlgorithm", js.undefined)
+    def setHashAlgorithmUndefined: Self = StObject.set(x, "hashAlgorithm", js.undefined)
   }
 }

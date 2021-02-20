@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("PIXI.MASK_TYPES")
 @js.native
-object MASK_TYPES extends js.Object {
+object MASK_TYPES extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.MASK_TYPES with Double] = js.native

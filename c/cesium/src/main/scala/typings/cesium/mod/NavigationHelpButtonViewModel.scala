@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "NavigationHelpButtonViewModel")
 @js.native
-class NavigationHelpButtonViewModel () extends js.Object {
+class NavigationHelpButtonViewModel () extends StObject {
   
   var command: Command = js.native
   

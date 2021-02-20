@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubIncrement extends js.Object {
+trait SubIncrement extends StObject {
   
   /** should contain nothing for **auto** , or an integer value for an explicit interval count. */
   var IntervalCount: js.Any = js.native
@@ -22,24 +23,12 @@ object SubIncrement {
   }
   
   @scala.inline
-  implicit class SubIncrementOps[Self <: SubIncrement] (val x: Self) extends AnyVal {
+  implicit class SubIncrementMutableBuilder[Self <: SubIncrement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntervalCount(value: js.Any): Self = StObject.set(x, "IntervalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIntervalCount(value: js.Any): Self = this.set("IntervalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostEquidistant(value: js.Any): Self = this.set("PostEquidistant", value.asInstanceOf[js.Any])
+    def setPostEquidistant(value: js.Any): Self = StObject.set(x, "PostEquidistant", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageItem extends js.Object {
+trait StorageItem extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -71,69 +72,57 @@ object StorageItem {
   }
   
   @scala.inline
-  implicit class StorageItemOps[Self <: StorageItem] (val x: Self) extends AnyVal {
+  implicit class StorageItemMutableBuilder[Self <: StorageItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachments(value: Attachments): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Attachments): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    def setCreationTime(value: VarDate): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setCreator(value: String): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreationTime(value: VarDate): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setEntryID(value: String): Self = StObject.set(x, "EntryID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: String): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLastModificationTime(value: VarDate): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setOutlookDotStorageItem_typekey(value: StorageItem): Self = StObject.set(x, "Outlook.StorageItem_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryID(value: String): Self = this.set("EntryID", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModificationTime(value: VarDate): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotStorageItem_typekey(value: StorageItem): Self = this.set("Outlook.StorageItem_typekey", value.asInstanceOf[js.Any])
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAccessor(value: PropertyAccessor): Self = this.set("PropertyAccessor", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserProperties(value: UserProperties): Self = this.set("UserProperties", value.asInstanceOf[js.Any])
+    def setUserProperties(value: UserProperties): Self = StObject.set(x, "UserProperties", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Update the properties of a TableCell.
   */
 @js.native
-trait SchemaUpdateTableCellPropertiesRequest extends js.Object {
+trait SchemaUpdateTableCellPropertiesRequest extends StObject {
   
   /**
     * The fields that should be updated.  At least one field must be specified.
@@ -47,42 +48,30 @@ object SchemaUpdateTableCellPropertiesRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateTableCellPropertiesRequestOps[Self <: SchemaUpdateTableCellPropertiesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateTableCellPropertiesRequestMutableBuilder[Self <: SchemaUpdateTableCellPropertiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setTableCellProperties(value: SchemaTableCellProperties): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setTableRange(value: SchemaTableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableCellProperties(value: SchemaTableCellProperties): Self = this.set("tableCellProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellProperties: Self = this.set("tableCellProperties", js.undefined)
-    
-    @scala.inline
-    def setTableRange(value: SchemaTableRange): Self = this.set("tableRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRange: Self = this.set("tableRange", js.undefined)
+    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
   }
 }

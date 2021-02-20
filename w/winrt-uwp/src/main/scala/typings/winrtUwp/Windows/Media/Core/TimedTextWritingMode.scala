@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedTextWritingMode extends js.Object
+sealed trait TimedTextWritingMode extends StObject
 /** Specifies the direction timed text is written. */
 @JSGlobal("Windows.Media.Core.TimedTextWritingMode")
 @js.native
-object TimedTextWritingMode extends js.Object {
+object TimedTextWritingMode extends StObject {
   
   /** Text is written from left to right within a line. Lines are written top to bottom. */
   @js.native

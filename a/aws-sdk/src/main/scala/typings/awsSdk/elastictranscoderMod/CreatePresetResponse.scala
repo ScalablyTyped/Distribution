@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePresetResponse extends js.Object {
+trait CreatePresetResponse extends StObject {
   
   /**
     * A section of the response body that provides information about the preset that is created.
@@ -26,30 +27,18 @@ object CreatePresetResponse {
   }
   
   @scala.inline
-  implicit class CreatePresetResponseOps[Self <: CreatePresetResponse] (val x: Self) extends AnyVal {
+  implicit class CreatePresetResponseMutableBuilder[Self <: CreatePresetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreset(value: Preset): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarning(value: String): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreset(value: Preset): Self = this.set("Preset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreset: Self = this.set("Preset", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: String): Self = this.set("Warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("Warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

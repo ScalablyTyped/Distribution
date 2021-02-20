@@ -7,6 +7,7 @@ import typings.activexOffice.activexOfficeNumbers.`4`
 import typings.activexOffice.activexOfficeNumbers.`5`
 import typings.activexOffice.activexOfficeNumbers.`6`
 import typings.activexOffice.activexOfficeNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`0`
   - typings.activexOffice.activexOfficeNumbers.`3`
 */
-trait MsoIconType extends js.Object
+trait MsoIconType extends StObject
 object MsoIconType {
   
   @scala.inline

@@ -1,41 +1,36 @@
 package typings.openfin.shapesPlatformMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WindowCreationReason extends js.Object
+sealed trait WindowCreationReason extends StObject
 @JSImport("openfin/_v2/shapes/Platform", "WindowCreationReason")
 @js.native
-object WindowCreationReason extends js.Object {
+object WindowCreationReason extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WindowCreationReason with String] = js.native
   
   @js.native
   sealed trait APICall extends WindowCreationReason
-  /* "api-call" */ @js.native
-  object APICall extends TopLevel[APICall with String]
+  /* "api-call" */ val APICall: typings.openfin.shapesPlatformMod.WindowCreationReason.APICall with String = js.native
   
   @js.native
   sealed trait AppCreation extends WindowCreationReason
-  /* "app-creation" */ @js.native
-  object AppCreation extends TopLevel[AppCreation with String]
+  /* "app-creation" */ val AppCreation: typings.openfin.shapesPlatformMod.WindowCreationReason.AppCreation with String = js.native
   
   @js.native
   sealed trait CreateViewWithoutTarget extends WindowCreationReason
-  /* "create-view-without-target" */ @js.native
-  object CreateViewWithoutTarget extends TopLevel[CreateViewWithoutTarget with String]
+  /* "create-view-without-target" */ val CreateViewWithoutTarget: typings.openfin.shapesPlatformMod.WindowCreationReason.CreateViewWithoutTarget with String = js.native
   
   @js.native
   sealed trait Restore extends WindowCreationReason
-  /* "restore" */ @js.native
-  object Restore extends TopLevel[Restore with String]
+  /* "restore" */ val Restore: typings.openfin.shapesPlatformMod.WindowCreationReason.Restore with String = js.native
   
   @js.native
   sealed trait Tearout extends WindowCreationReason
-  /* "tearout" */ @js.native
-  object Tearout extends TopLevel[Tearout with String]
+  /* "tearout" */ val Tearout: typings.openfin.shapesPlatformMod.WindowCreationReason.Tearout with String = js.native
 }

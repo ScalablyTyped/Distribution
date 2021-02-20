@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/InvalidSourceCommitSpecifierException", JSImport.Namespace)
-@js.native
-object invalidSourceCommitSpecifierExceptionMod extends js.Object {
+object invalidSourceCommitSpecifierExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/InvalidSourceCommitSpecifierException", "InvalidSourceCommitSpecifierException")
+  @js.native
   val InvalidSourceCommitSpecifierException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

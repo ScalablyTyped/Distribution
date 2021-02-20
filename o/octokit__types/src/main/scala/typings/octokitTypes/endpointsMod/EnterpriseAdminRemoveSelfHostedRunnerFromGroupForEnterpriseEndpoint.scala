@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint extends js.Object {
+trait EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
@@ -31,27 +32,15 @@ object EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpointOps[Self <: EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnterprise(value: String): Self = this.set("enterprise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = this.set("runner_group_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunner_id(value: Double): Self = this.set("runner_id", value.asInstanceOf[js.Any])
+    def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
   }
 }

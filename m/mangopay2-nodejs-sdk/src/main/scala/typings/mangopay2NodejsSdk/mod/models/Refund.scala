@@ -3,6 +3,7 @@ package typings.mangopay2NodejsSdk.mod.models
 import typings.mangopay2NodejsSdk.mod.refund.CreatePayInRefund
 import typings.mangopay2NodejsSdk.mod.refund.CreateTransferRefund
 import typings.mangopay2NodejsSdk.mod.refund.RefundData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

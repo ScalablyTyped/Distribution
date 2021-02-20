@@ -4,13 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains all information about the requested context menu. */
 @js.native
-trait ContextMenuExecuteEvent extends js.Object {
+trait ContextMenuExecuteEvent extends StObject {
   
   /** enables the access to the menu content. The implementing object has to support the service {@link com.sun.star.ui.ActionTriggerContainer} ; */
   var ActionTriggerContainer: XIndexContainer = js.native
@@ -38,30 +39,18 @@ object ContextMenuExecuteEvent {
   }
   
   @scala.inline
-  implicit class ContextMenuExecuteEventOps[Self <: ContextMenuExecuteEvent] (val x: Self) extends AnyVal {
+  implicit class ContextMenuExecuteEventMutableBuilder[Self <: ContextMenuExecuteEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionTriggerContainer(value: XIndexContainer): Self = StObject.set(x, "ActionTriggerContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutePosition(value: Point): Self = StObject.set(x, "ExecutePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelection(value: XSelectionSupplier): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionTriggerContainer(value: XIndexContainer): Self = this.set("ActionTriggerContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecutePosition(value: Point): Self = this.set("ExecutePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelection(value: XSelectionSupplier): Self = this.set("Selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceWindow(value: XWindow): Self = this.set("SourceWindow", value.asInstanceOf[js.Any])
+    def setSourceWindow(value: XWindow): Self = StObject.set(x, "SourceWindow", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Fibre Channel volume. Fibre Channel volumes can only be mounted as read/write once. Fibre Channel volumes support ownership management and SELinux relabeling.
   */
 @js.native
-trait FCVolumeSource extends js.Object {
+trait FCVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
@@ -50,39 +51,27 @@ object FCVolumeSource {
   }
   
   @scala.inline
-  implicit class FCVolumeSourceOps[Self <: FCVolumeSource] (val x: Self) extends AnyVal {
+  implicit class FCVolumeSourceMutableBuilder[Self <: FCVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLun(value: Double): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: String): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setTargetWWNs(value: js.Array[String]): Self = StObject.set(x, "targetWWNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLun(value: Double): Self = this.set("lun", value.asInstanceOf[js.Any])
+    def setTargetWWNsVarargs(value: String*): Self = StObject.set(x, "targetWWNs", js.Array(value :_*))
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setWwids(value: js.Array[String]): Self = StObject.set(x, "wwids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetWWNsVarargs(value: String*): Self = this.set("targetWWNs", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetWWNs(value: js.Array[String]): Self = this.set("targetWWNs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWwidsVarargs(value: String*): Self = this.set("wwids", js.Array(value :_*))
-    
-    @scala.inline
-    def setWwids(value: js.Array[String]): Self = this.set("wwids", value.asInstanceOf[js.Any])
+    def setWwidsVarargs(value: String*): Self = StObject.set(x, "wwids", js.Array(value :_*))
   }
 }

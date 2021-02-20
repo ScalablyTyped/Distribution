@@ -10,13 +10,14 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<react-calendar-timeline.react-calendar-timeline.ItemRendererGetItemPropsReturnType, 'key' | 'ref'>> */
 @js.native
-trait GetItemsProps extends js.Object {
+trait GetItemsProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -43,66 +44,54 @@ object GetItemsProps {
   }
   
   @scala.inline
-  implicit class GetItemsPropsOps[Self <: GetItemsProps] (val x: Self) extends AnyVal {
+  implicit class GetItemsPropsMutableBuilder[Self <: GetItemsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnContextMenu(value: SyntheticEvent[Element, Event] => scala.Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOnDoubleClick(value: MouseEvent[Element, NativeMouseEvent] => scala.Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnContextMenu(value: SyntheticEvent[Element, Event] => scala.Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
     @scala.inline
-    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => scala.Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDoubleClick(value: MouseEvent[Element, NativeMouseEvent] => scala.Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    def setOnMouseUp(value: MouseEvent[Element, NativeMouseEvent] => scala.Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => scala.Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setOnTouchEnd(value: TouchEvent[Element] => scala.Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseUp(value: MouseEvent[Element, NativeMouseEvent] => scala.Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     @scala.inline
-    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    def setOnTouchStart(value: TouchEvent[Element] => scala.Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchEnd(value: TouchEvent[Element] => scala.Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
     @scala.inline
-    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTouchStart(value: TouchEvent[Element] => scala.Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

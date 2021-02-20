@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeArgumentInferenceContext extends js.Object {
+trait TypeArgumentInferenceContext extends StObject {
   
   def _finalizeInferredTypeArguments(): js.Array[PullTypeSymbol] = js.native
   
@@ -59,63 +60,51 @@ object TypeArgumentInferenceContext {
   }
   
   @scala.inline
-  implicit class TypeArgumentInferenceContextOps[Self <: TypeArgumentInferenceContext] (val x: Self) extends AnyVal {
+  implicit class TypeArgumentInferenceContextMutableBuilder[Self <: TypeArgumentInferenceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCandidateForInference(value: (PullTypeParameterSymbol, PullTypeSymbol) => Unit): Self = StObject.set(x, "addCandidateForInference", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddInferenceRoot(value: PullTypeParameterSymbol => Unit): Self = StObject.set(x, "addInferenceRoot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlreadyRelatingTypes(value: (PullTypeSymbol, PullTypeSymbol) => Boolean): Self = StObject.set(x, "alreadyRelatingTypes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_finalizeInferredTypeArguments(value: () => js.Array[PullTypeSymbol]): Self = this.set("_finalizeInferredTypeArguments", js.Any.fromFunction0(value))
+    def setCandidateCache(value: js.Array[CandidateInferenceInfo]): Self = StObject.set(x, "candidateCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddCandidateForInference(value: (PullTypeParameterSymbol, PullTypeSymbol) => Unit): Self = this.set("addCandidateForInference", js.Any.fromFunction2(value))
+    def setCandidateCacheVarargs(value: CandidateInferenceInfo*): Self = StObject.set(x, "candidateCache", js.Array(value :_*))
     
     @scala.inline
-    def setAddInferenceRoot(value: PullTypeParameterSymbol => Unit): Self = this.set("addInferenceRoot", js.Any.fromFunction1(value))
+    def setContext(value: PullTypeResolutionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlreadyRelatingTypes(value: (PullTypeSymbol, PullTypeSymbol) => Boolean): Self = this.set("alreadyRelatingTypes", js.Any.fromFunction2(value))
+    def setFixTypeParameter(value: PullTypeParameterSymbol => Unit): Self = StObject.set(x, "fixTypeParameter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCandidateCacheVarargs(value: CandidateInferenceInfo*): Self = this.set("candidateCache", js.Array(value :_*))
+    def setGetInferenceInfo(value: PullTypeParameterSymbol => CandidateInferenceInfo): Self = StObject.set(x, "getInferenceInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCandidateCache(value: js.Array[CandidateInferenceInfo]): Self = this.set("candidateCache", value.asInstanceOf[js.Any])
+    def setInferTypeArguments(value: () => js.Array[PullTypeSymbol]): Self = StObject.set(x, "inferTypeArguments", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContext(value: PullTypeResolutionContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setInferenceCache(value: IBitMatrix): Self = StObject.set(x, "inferenceCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixTypeParameter(value: PullTypeParameterSymbol => Unit): Self = this.set("fixTypeParameter", js.Any.fromFunction1(value))
+    def setIsInvocationInferenceContext(value: () => Boolean): Self = StObject.set(x, "isInvocationInferenceContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInferenceInfo(value: PullTypeParameterSymbol => CandidateInferenceInfo): Self = this.set("getInferenceInfo", js.Any.fromFunction1(value))
+    def setResetRelationshipCache(value: () => Unit): Self = StObject.set(x, "resetRelationshipCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInferTypeArguments(value: () => js.Array[PullTypeSymbol]): Self = this.set("inferTypeArguments", js.Any.fromFunction0(value))
+    def setResolver(value: PullTypeResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInferenceCache(value: IBitMatrix): Self = this.set("inferenceCache", value.asInstanceOf[js.Any])
+    def setSignatureBeingInferred(value: PullSignatureSymbol): Self = StObject.set(x, "signatureBeingInferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInvocationInferenceContext(value: () => Boolean): Self = this.set("isInvocationInferenceContext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResetRelationshipCache(value: () => Unit): Self = this.set("resetRelationshipCache", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResolver(value: PullTypeResolver): Self = this.set("resolver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureBeingInferred(value: PullSignatureSymbol): Self = this.set("signatureBeingInferred", value.asInstanceOf[js.Any])
+    def set_finalizeInferredTypeArguments(value: () => js.Array[PullTypeSymbol]): Self = StObject.set(x, "_finalizeInferredTypeArguments", js.Any.fromFunction0(value))
   }
 }

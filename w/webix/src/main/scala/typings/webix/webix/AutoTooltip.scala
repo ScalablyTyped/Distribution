@@ -2,12 +2,13 @@ package typings.webix.webix
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoTooltip extends js.Object {
+trait AutoTooltip extends StObject {
   
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
@@ -31,27 +32,15 @@ object AutoTooltip {
   }
   
   @scala.inline
-  implicit class AutoTooltipOps[Self <: AutoTooltip] (val x: Self) extends AnyVal {
+  implicit class AutoTooltipMutableBuilder[Self <: AutoTooltip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$tooltipIn(value: HTMLElement => HTMLElement): Self = StObject.set(x, "$tooltipIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$tooltipMove(value: (HTMLElement, Event, String) => Unit): Self = StObject.set(x, "$tooltipMove", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$tooltipIn(value: HTMLElement => HTMLElement): Self = this.set("$tooltipIn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def set$tooltipMove(value: (HTMLElement, Event, String) => Unit): Self = this.set("$tooltipMove", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def set$tooltipOut(value: Unit): Self = this.set("$tooltipOut", value.asInstanceOf[js.Any])
+    def set$tooltipOut(value: Unit): Self = StObject.set(x, "$tooltipOut", value.asInstanceOf[js.Any])
   }
 }

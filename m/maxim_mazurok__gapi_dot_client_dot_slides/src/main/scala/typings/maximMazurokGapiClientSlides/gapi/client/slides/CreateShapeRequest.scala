@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateShapeRequest extends js.Object {
+trait CreateShapeRequest extends StObject {
   
   /** The element properties for the shape. */
   var elementProperties: js.UndefOr[PageElementProperties] = js.native
@@ -29,36 +30,24 @@ object CreateShapeRequest {
   }
   
   @scala.inline
-  implicit class CreateShapeRequestOps[Self <: CreateShapeRequest] (val x: Self) extends AnyVal {
+  implicit class CreateShapeRequestMutableBuilder[Self <: CreateShapeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementProperties(value: PageElementProperties): Self = this.set("elementProperties", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteElementProperties: Self = this.set("elementProperties", js.undefined)
+    def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setShapeType(value: String): Self = this.set("shapeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapeType: Self = this.set("shapeType", js.undefined)
+    def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
   }
 }

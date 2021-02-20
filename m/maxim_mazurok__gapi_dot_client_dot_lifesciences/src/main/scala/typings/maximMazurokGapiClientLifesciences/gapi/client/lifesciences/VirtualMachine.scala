@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualMachine extends js.Object {
+trait VirtualMachine extends StObject {
   
   /** The list of accelerators to attach to the VM. */
   var accelerators: js.UndefOr[js.Array[Accelerator]] = js.native
@@ -90,118 +91,106 @@ object VirtualMachine {
   }
   
   @scala.inline
-  implicit class VirtualMachineOps[Self <: VirtualMachine] (val x: Self) extends AnyVal {
+  implicit class VirtualMachineMutableBuilder[Self <: VirtualMachine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerators(value: js.Array[Accelerator]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
     
     @scala.inline
-    def setAcceleratorsVarargs(value: Accelerator*): Self = this.set("accelerators", js.Array(value :_*))
+    def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerators(value: js.Array[Accelerator]): Self = this.set("accelerators", value.asInstanceOf[js.Any])
+    def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteAccelerators: Self = this.set("accelerators", js.undefined)
+    def setBootImage(value: String): Self = StObject.set(x, "bootImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootDiskSizeGb(value: Double): Self = this.set("bootDiskSizeGb", value.asInstanceOf[js.Any])
+    def setBootImageUndefined: Self = StObject.set(x, "bootImage", js.undefined)
     
     @scala.inline
-    def deleteBootDiskSizeGb: Self = this.set("bootDiskSizeGb", js.undefined)
+    def setCpuPlatform(value: String): Self = StObject.set(x, "cpuPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootImage(value: String): Self = this.set("bootImage", value.asInstanceOf[js.Any])
+    def setCpuPlatformUndefined: Self = StObject.set(x, "cpuPlatform", js.undefined)
     
     @scala.inline
-    def deleteBootImage: Self = this.set("bootImage", js.undefined)
+    def setDisks(value: js.Array[Disk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuPlatform(value: String): Self = this.set("cpuPlatform", value.asInstanceOf[js.Any])
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def deleteCpuPlatform: Self = this.set("cpuPlatform", js.undefined)
+    def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
     @scala.inline
-    def setDisksVarargs(value: Disk*): Self = this.set("disks", js.Array(value :_*))
+    def setDockerCacheImages(value: js.Array[String]): Self = StObject.set(x, "dockerCacheImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: js.Array[Disk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    def setDockerCacheImagesUndefined: Self = StObject.set(x, "dockerCacheImages", js.undefined)
     
     @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
+    def setDockerCacheImagesVarargs(value: String*): Self = StObject.set(x, "dockerCacheImages", js.Array(value :_*))
     
     @scala.inline
-    def setDockerCacheImagesVarargs(value: String*): Self = this.set("dockerCacheImages", js.Array(value :_*))
+    def setEnableStackdriverMonitoring(value: Boolean): Self = StObject.set(x, "enableStackdriverMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerCacheImages(value: js.Array[String]): Self = this.set("dockerCacheImages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDockerCacheImages: Self = this.set("dockerCacheImages", js.undefined)
-    
-    @scala.inline
-    def setEnableStackdriverMonitoring(value: Boolean): Self = this.set("enableStackdriverMonitoring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableStackdriverMonitoring: Self = this.set("enableStackdriverMonitoring", js.undefined)
+    def setEnableStackdriverMonitoringUndefined: Self = StObject.set(x, "enableStackdriverMonitoring", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def setNetwork(value: Network): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def setNvidiaDriverVersion(value: String): Self = this.set("nvidiaDriverVersion", value.asInstanceOf[js.Any])
+    def setNvidiaDriverVersion(value: String): Self = StObject.set(x, "nvidiaDriverVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNvidiaDriverVersion: Self = this.set("nvidiaDriverVersion", js.undefined)
+    def setNvidiaDriverVersionUndefined: Self = StObject.set(x, "nvidiaDriverVersion", js.undefined)
     
     @scala.inline
-    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
+    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
     
     @scala.inline
-    def setServiceAccount(value: ServiceAccount): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def setVolumesVarargs(value: Volume*): Self = this.set("volumes", js.Array(value :_*))
+    def setVolumes(value: js.Array[Volume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumes(value: js.Array[Volume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stack[T] extends js.Object {
+trait Stack[T] extends StObject {
   
   var N: js.Any = js.native
   

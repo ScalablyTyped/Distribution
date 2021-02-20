@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.applepayjs.applepayjsStrings.supportsCredit
   - typings.applepayjs.applepayjsStrings.supportsDebit
 */
-trait ApplePayMerchantCapability extends js.Object
+trait ApplePayMerchantCapability extends StObject
 object ApplePayMerchantCapability {
   
   @scala.inline

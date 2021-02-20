@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeySet extends js.Object {
+trait KeySet extends StObject {
   
   /**
     * For convenience `all` can be set to `true` to indicate that this `KeySet` matches all keys in the table or index. Note that any keys specified in `keys` or `ranges` are only yielded
@@ -31,42 +32,30 @@ object KeySet {
   }
   
   @scala.inline
-  implicit class KeySetOps[Self <: KeySet] (val x: Self) extends AnyVal {
+  implicit class KeySetMutableBuilder[Self <: KeySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: js.Array[js.Array[_]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setKeysVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: js.Array[js.Any]*): Self = this.set("keys", js.Array(value :_*))
+    def setRanges(value: js.Array[KeyRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: js.Array[js.Array[_]]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
-    
-    @scala.inline
-    def setRangesVarargs(value: KeyRange*): Self = this.set("ranges", js.Array(value :_*))
-    
-    @scala.inline
-    def setRanges(value: js.Array[KeyRange]): Self = this.set("ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setRangesVarargs(value: KeyRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

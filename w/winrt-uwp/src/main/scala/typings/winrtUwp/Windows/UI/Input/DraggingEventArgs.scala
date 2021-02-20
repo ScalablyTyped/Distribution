@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.UI.Input
 
 import typings.winrtUwp.Windows.Devices.Input.PointerDeviceType
 import typings.winrtUwp.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the Dragging event. */
 @js.native
-trait DraggingEventArgs extends js.Object {
+trait DraggingEventArgs extends StObject {
   
   /** Gets the state of the Dragging event. */
   var draggingState: DraggingState = js.native
@@ -28,27 +29,15 @@ object DraggingEventArgs {
   }
   
   @scala.inline
-  implicit class DraggingEventArgsOps[Self <: DraggingEventArgs] (val x: Self) extends AnyVal {
+  implicit class DraggingEventArgsMutableBuilder[Self <: DraggingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraggingState(value: DraggingState): Self = StObject.set(x, "draggingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDraggingState(value: DraggingState): Self = this.set("draggingState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = this.set("pointerDeviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Point): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Availability
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Entity")
 @js.native
-class Entity () extends js.Object {
+class Entity () extends StObject {
   def this(options: Availability) = this()
   
   def addProperty(propertyName: String): Unit = js.native

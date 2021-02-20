@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOptions extends js.Object {
+trait ClusterOptions extends StObject {
   
   var clusters: js.Array[ClusterType] = js.native
   
@@ -20,30 +21,18 @@ object ClusterOptions {
   }
   
   @scala.inline
-  implicit class ClusterOptionsOps[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+  implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusters(value: js.Array[ClusterType]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClustersVarargs(value: ClusterType*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClustersVarargs(value: ClusterType*): Self = this.set("clusters", js.Array(value :_*))
-    
-    @scala.inline
-    def setClusters(value: js.Array[ClusterType]): Self = this.set("clusters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchedule(value: String): Self = this.set("schedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }
 }

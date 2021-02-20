@@ -8,13 +8,12 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`4`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`5`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("array.prototype.flat/implementation", JSImport.Namespace)
-@js.native
-object implementationMod extends js.Object {
+object implementationMod {
   
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -22,7 +21,11 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply(receiver: ReadonlyArray[_]): Array[_] = js.native
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply(receiver: ReadonlyArray[_], depth: Double): Array[_] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -30,6 +33,8 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -37,7 +42,11 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[U]]]]]]], depth: `6`): Array[U] = js.native
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -45,7 +54,11 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](receiver: ReadonlyArray[U], depth: `0`): Array[U] = js.native
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](receiver: ReadonlyArray[Array[U] | ReadonlyArray[U]], depth: `1`): Array[U] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
@@ -53,6 +66,8 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](
     receiver: ReadonlyArray[
       (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
@@ -65,6 +80,8 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](
     receiver: ReadonlyArray[
       (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[
@@ -79,6 +96,8 @@ object implementationMod extends js.Object {
     *
     * @param depth The maximum recursion depth
     */
+  @JSImport("array.prototype.flat/implementation", JSImport.Namespace)
+  @js.native
   def apply[U](
     receiver: ReadonlyArray[
       (Array[

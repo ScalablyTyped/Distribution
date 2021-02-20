@@ -19,16 +19,16 @@ import typings.agGrid.loadingOverlayComponentMod.ILoadingOverlayComp
 import typings.agGrid.noRowsOverlayComponentMod.INoRowsOverlayComp
 import typings.agGrid.overlayWrapperComponentMod.IOverlayWrapperComp
 import typings.agGrid.utilsMod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/components/framework/componentRecipes", JSImport.Namespace)
-@js.native
-object componentRecipesMod extends js.Object {
+object componentRecipesMod {
   
+  @JSImport("ag-grid/dist/lib/components/framework/componentRecipes", "ComponentRecipes")
   @js.native
-  class ComponentRecipes () extends js.Object {
+  class ComponentRecipes () extends StObject {
     
     var columnApi: js.Any = js.native
     
@@ -71,9 +71,16 @@ object componentRecipesMod extends js.Object {
     def newOverlayWrapperComponent(): IOverlayWrapperComp = js.native
   }
   /* static members */
-  @js.native
-  object ComponentRecipes extends js.Object {
+  object ComponentRecipes {
     
-    var filterToFloatingFilterNames: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/components/framework/componentRecipes", "ComponentRecipes")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/components/framework/componentRecipes", "ComponentRecipes.filterToFloatingFilterNames")
+    @js.native
+    def filterToFloatingFilterNames: js.Any = js.native
+    @scala.inline
+    def filterToFloatingFilterNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filterToFloatingFilterNames")(x.asInstanceOf[js.Any])
   }
 }

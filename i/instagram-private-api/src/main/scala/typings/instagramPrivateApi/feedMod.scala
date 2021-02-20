@@ -2,19 +2,21 @@ package typings.instagramPrivateApi
 
 import typings.chance.Chance.Chance
 import typings.instagramPrivateApi.anon.PartialAttemptOptionsany
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.rxjs.mod.Observable_
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/core/feed", JSImport.Namespace)
-@js.native
-object feedMod extends js.Object {
+object feedMod {
   
+  @JSImport("instagram-private-api/dist/core/feed", "Feed")
   @js.native
-  abstract class Feed[Response, Item] () extends Repository {
+  abstract class Feed[Response, Item] protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     var attemptOptions: PartialAttemptOptionsany = js.native
     

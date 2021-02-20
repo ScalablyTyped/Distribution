@@ -1,11 +1,12 @@
 package typings.meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactiveDict extends js.Object {
+trait ReactiveDict extends StObject {
   
   def all(): EJSONable = js.native
   

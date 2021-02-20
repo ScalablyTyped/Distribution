@@ -2,19 +2,18 @@ package typings.winrtUwp.global.Windows.UI
 
 import typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationEffect
 import typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core")
-@js.native
-object Core extends js.Object {
+object Core {
   
   /** The classes and their properties that are exposed through this namespace retrieve the raw scaling, translation, and opacity parameters used in Windows animations. These parameters include such metrics as the animation type, stagger delay, z-order, duration, initial and final opacity, initial and final scale factors, and cubic Bezier control points, among others. This information enables developers of apps and application frameworks to create custom animations that are consistent with both Windows itself and with other apps that use Windows animations. */
-  @js.native
-  object AnimationMetrics extends js.Object {
+  object AnimationMetrics {
     
     /** Exposes a collection of individual animation effects that are performed on a specific target to make up a complete Windows opacity, scaling, or translation animation. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationDescription")
     @js.native
     class AnimationDescription protected ()
       extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationDescription {
@@ -27,8 +26,9 @@ object Core extends js.Object {
     }
     
     /** Specifies an animation. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffect")
     @js.native
-    object AnimationEffect extends js.Object {
+    object AnimationEffect extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationEffect with Double] = js.native
@@ -107,8 +107,9 @@ object Core extends js.Object {
     }
     
     /** Specifies a participant in an animation. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffectTarget")
     @js.native
-    object AnimationEffectTarget extends js.Object {
+    object AnimationEffectTarget extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -157,18 +158,21 @@ object Core extends js.Object {
     }
     
     /** Provides methods that enable you to retrieve the parameters of an opacity (fade in or fade out) animation. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.OpacityAnimation")
     @js.native
     abstract class OpacityAnimation ()
       extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.OpacityAnimation
     
     /** Provides methods that enable you to retrieve animation property values that are common to all property animation types . */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimation")
     @js.native
     abstract class PropertyAnimation ()
       extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimation
     
     /** Specifies the animation type represented by a PropertyAnimation object. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimationType")
     @js.native
-    object PropertyAnimationType extends js.Object {
+    object PropertyAnimationType extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -183,19 +187,22 @@ object Core extends js.Object {
     }
     
     /** Provides methods that enable you to retrieve the parameters for a scaling (growing or shrinking) animation. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.ScaleAnimation")
     @js.native
     abstract class ScaleAnimation ()
       extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.ScaleAnimation
     
     /** Provides methods that enable you to retrieve the parameters for a translation (move to a new location) animation. */
+    @JSGlobal("Windows.UI.Core.AnimationMetrics.TranslationAnimation")
     @js.native
     abstract class TranslationAnimation ()
       extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.TranslationAnimation
   }
   
   /** Defines constants that specify whether the back button is shown in the system UI. */
+  @JSGlobal("Windows.UI.Core.AppViewBackButtonVisibility")
   @js.native
-  object AppViewBackButtonVisibility extends js.Object {
+  object AppViewBackButtonVisibility extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Core.AppViewBackButtonVisibility with Double] = js.native
@@ -206,22 +213,25 @@ object Core extends js.Object {
   }
   
   /** Provides event data for the SystemNavigationManager.BackRequested event. */
+  @JSGlobal("Windows.UI.Core.BackRequestedEventArgs")
   @js.native
   abstract class BackRequestedEventArgs ()
     extends typings.winrtUwp.Windows.UI.Core.BackRequestedEventArgs
   
   /** Provides a way for an app to respond to system provided back-navigation events. */
+  @JSGlobal("Windows.UI.Core.SystemNavigationManager")
   @js.native
   abstract class SystemNavigationManager ()
     extends typings.winrtUwp.Windows.UI.Core.SystemNavigationManager
-  /* static members */
-  @js.native
-  object SystemNavigationManager extends js.Object {
+  object SystemNavigationManager {
     
     /**
       * Returns the SystemNavigationManager object associated with the current window.
       * @return The SystemNavigationManager object associated with the current window.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.Core.SystemNavigationManager.getForCurrentView")
+    @js.native
     def getForCurrentView(): typings.winrtUwp.Windows.UI.Core.SystemNavigationManager = js.native
   }
 }

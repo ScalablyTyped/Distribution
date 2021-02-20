@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ionic.ionicStrings.react
   - typings.ionic.ionicStrings.vue
 */
-trait ProjectType extends js.Object
+trait ProjectType extends StObject
 object ProjectType {
   
   @scala.inline

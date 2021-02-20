@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIdentitiesInput extends js.Object {
+trait ListIdentitiesInput extends StObject {
   
   /**
     * An optional boolean parameter that allows you to hide disabled identities. If omitted, the ListIdentities API will include disabled identities in the response.
@@ -36,36 +37,24 @@ object ListIdentitiesInput {
   }
   
   @scala.inline
-  implicit class ListIdentitiesInputOps[Self <: ListIdentitiesInput] (val x: Self) extends AnyVal {
+  implicit class ListIdentitiesInputMutableBuilder[Self <: ListIdentitiesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideDisabled(value: HideDisabled): Self = StObject.set(x, "HideDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideDisabledUndefined: Self = StObject.set(x, "HideDisabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    def setMaxResults(value: QueryLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: QueryLimit): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDisabled(value: HideDisabled): Self = this.set("HideDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideDisabled: Self = this.set("HideDisabled", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

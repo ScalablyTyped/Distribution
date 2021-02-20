@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationErrorsEntry extends js.Object {
+trait ValidationErrorsEntry extends StObject {
   
   /**
     * Checks the name of the policy.
@@ -26,30 +27,18 @@ object ValidationErrorsEntry {
   }
   
   @scala.inline
-  implicit class ValidationErrorsEntryOps[Self <: ValidationErrorsEntry] (val x: Self) extends AnyVal {
+  implicit class ValidationErrorsEntryMutableBuilder[Self <: ValidationErrorsEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckName(value: NameType): Self = StObject.set(x, "CheckName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckNameUndefined: Self = StObject.set(x, "CheckName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckName(value: NameType): Self = this.set("CheckName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckName: Self = this.set("CheckName", js.undefined)
-    
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }
 }

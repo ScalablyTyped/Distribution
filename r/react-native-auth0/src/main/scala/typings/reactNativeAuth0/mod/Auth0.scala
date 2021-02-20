@@ -1,11 +1,12 @@
 package typings.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0 extends js.Object {
+trait Auth0 extends StObject {
   
   var auth: Auth = js.native
   
@@ -22,27 +23,15 @@ object Auth0 {
   }
   
   @scala.inline
-  implicit class Auth0Ops[Self <: Auth0] (val x: Self) extends AnyVal {
+  implicit class Auth0MutableBuilder[Self <: Auth0] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUsers(value: String => Users_): Self = StObject.set(x, "users", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuth(value: Auth): Self = this.set("auth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsers(value: String => Users_): Self = this.set("users", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWebAuth(value: WebAuth): Self = this.set("webAuth", value.asInstanceOf[js.Any])
+    def setWebAuth(value: WebAuth): Self = StObject.set(x, "webAuth", value.asInstanceOf[js.Any])
   }
 }

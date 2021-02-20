@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrequencyCap extends js.Object {
+trait FrequencyCap extends StObject {
   
   /** The maximum number of times a user may be shown with the same ad during this period. Must be greater than 0. Applicable when unlimited is `false`. */
   var maxImpressions: js.UndefOr[Double] = js.native
@@ -32,42 +33,30 @@ object FrequencyCap {
   }
   
   @scala.inline
-  implicit class FrequencyCapOps[Self <: FrequencyCap] (val x: Self) extends AnyVal {
+  implicit class FrequencyCapMutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeUnit(value: String): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxImpressions(value: Double): Self = this.set("maxImpressions", value.asInstanceOf[js.Any])
+    def setTimeUnitCount(value: Double): Self = StObject.set(x, "timeUnitCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxImpressions: Self = this.set("maxImpressions", js.undefined)
+    def setTimeUnitCountUndefined: Self = StObject.set(x, "timeUnitCount", js.undefined)
     
     @scala.inline
-    def setTimeUnit(value: String): Self = this.set("timeUnit", value.asInstanceOf[js.Any])
+    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     
     @scala.inline
-    def deleteTimeUnit: Self = this.set("timeUnit", js.undefined)
+    def setUnlimited(value: Boolean): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeUnitCount(value: Double): Self = this.set("timeUnitCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeUnitCount: Self = this.set("timeUnitCount", js.undefined)
-    
-    @scala.inline
-    def setUnlimited(value: Boolean): Self = this.set("unlimited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlimited: Self = this.set("unlimited", js.undefined)
+    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

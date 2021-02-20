@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceMatrixRowElement extends js.Object {
+trait DistanceMatrixRowElement extends StObject {
   
   /**
     * The total distance of this route, expressed in meters (`value`) and as `text`.
@@ -56,33 +57,21 @@ object DistanceMatrixRowElement {
   }
   
   @scala.inline
-  implicit class DistanceMatrixRowElementOps[Self <: DistanceMatrixRowElement] (val x: Self) extends AnyVal {
+  implicit class DistanceMatrixRowElementMutableBuilder[Self <: DistanceMatrixRowElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration_in_traffic(value: Duration): Self = StObject.set(x, "duration_in_traffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Distance): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setFare(value: TransitFare): Self = StObject.set(x, "fare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Duration): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDuration_in_traffic(value: Duration): Self = this.set("duration_in_traffic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFare(value: TransitFare): Self = this.set("fare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: DistanceMatrixResponseElementLevelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: DistanceMatrixResponseElementLevelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

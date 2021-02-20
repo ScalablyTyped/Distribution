@@ -3,12 +3,13 @@ package typings.algoliaTransporter.mod
 import typings.algoliaCacheCommon.mod.Cache
 import typings.algoliaLoggerCommon.mod.Logger
 import typings.algoliaRequesterCommon.mod.Requester
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransporterOptions extends js.Object {
+trait TransporterOptions extends StObject {
   
   /**
     * The headers used by the requester. The transporter
@@ -94,51 +95,39 @@ object TransporterOptions {
   }
   
   @scala.inline
-  implicit class TransporterOptionsOps[Self <: TransporterOptions] (val x: Self) extends AnyVal {
+  implicit class TransporterOptionsMutableBuilder[Self <: TransporterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHosts(value: js.Array[HostOptions]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostsCache(value: Cache): Self = StObject.set(x, "hostsCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
     @scala.inline
-    def setHostsVarargs(value: HostOptions*): Self = this.set("hosts", js.Array(value :_*))
+    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: js.Array[HostOptions]): Self = this.set("hosts", value.asInstanceOf[js.Any])
+    def setQueryParameters(value: QueryParameters): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostsCache(value: Cache): Self = this.set("hostsCache", value.asInstanceOf[js.Any])
+    def setRequester(value: Requester): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setRequestsCache(value: Cache): Self = StObject.set(x, "requestsCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: QueryParameters): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
+    def setResponsesCache(value: Cache): Self = StObject.set(x, "responsesCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequester(value: Requester): Self = this.set("requester", value.asInstanceOf[js.Any])
+    def setTimeouts(value: Timeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestsCache(value: Cache): Self = this.set("requestsCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponsesCache(value: Cache): Self = this.set("responsesCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeouts(value: Timeouts): Self = this.set("timeouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserAgent(value: UserAgent): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    def setUserAgent(value: UserAgent): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
   }
 }

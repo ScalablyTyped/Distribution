@@ -1,6 +1,7 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CanvasContext extends IRenderContext {
   
-   //inconsistent name: x -> x2, y -> y2
+  //inconsistent name: x -> x2, y -> y2
   @JSName("arc")
   def arc_Unit(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, antiClockwise: Boolean): Unit = js.native
   

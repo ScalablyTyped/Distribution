@@ -6,14 +6,14 @@ import typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatchFileSystem
 import typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.Watchpack
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/watch/InclusiveNodeWatchFileSystem", JSImport.Namespace)
-@js.native
-object inclusiveNodeWatchFileSystemMod extends js.Object {
+object inclusiveNodeWatchFileSystemMod {
   
+  @JSImport("fork-ts-checker-webpack-plugin/lib/watch/InclusiveNodeWatchFileSystem", "InclusiveNodeWatchFileSystem")
   @js.native
   class InclusiveNodeWatchFileSystem protected () extends WatchFileSystem {
     def this(watchFileSystem: WatchFileSystem, pluginState: ForkTsCheckerWebpackPluginState) = this()

@@ -1,5 +1,6 @@
 package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gdata
   */
 @js.native
-trait SchemaGdataObjectId extends js.Object {
+trait SchemaGdataObjectId extends StObject {
   
   /**
     * gdata
@@ -34,36 +35,24 @@ object SchemaGdataObjectId {
   }
   
   @scala.inline
-  implicit class SchemaGdataObjectIdOps[Self <: SchemaGdataObjectId] (val x: Self) extends AnyVal {
+  implicit class SchemaGdataObjectIdMutableBuilder[Self <: SchemaGdataObjectId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
     @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneration(value: String): Self = this.set("generation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneration: Self = this.set("generation", js.undefined)
-    
-    @scala.inline
-    def setObjectName(value: String): Self = this.set("objectName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectName: Self = this.set("objectName", js.undefined)
+    def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
   }
 }

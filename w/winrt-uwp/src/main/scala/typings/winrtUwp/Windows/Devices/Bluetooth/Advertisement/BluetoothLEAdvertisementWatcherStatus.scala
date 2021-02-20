@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothLEAdvertisementWatcherStatus extends js.Object
+sealed trait BluetoothLEAdvertisementWatcherStatus extends StObject
 /** Represents the possible states of the BluetoothLEAdvertisementWatcher . */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStatus")
 @js.native
-object BluetoothLEAdvertisementWatcherStatus extends js.Object {
+object BluetoothLEAdvertisementWatcherStatus extends StObject {
   
   /** An error occurred during transition or scanning that stopped the watcher due to an error. */
   @js.native

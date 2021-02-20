@@ -10,13 +10,14 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement
 import typings.std.MouseEvent
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Select/Select.SelectProps> */
 @js.native
-trait WeakValidationMapSelectPr extends js.Object {
+trait WeakValidationMapSelectPr extends StObject {
   
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
   
@@ -95,97 +96,85 @@ object WeakValidationMapSelectPr {
   }
   
   @scala.inline
-  implicit class WeakValidationMapSelectPrOps[Self <: WeakValidationMapSelectPr] (val x: Self) extends AnyVal {
+  implicit class WeakValidationMapSelectPrMutableBuilder[Self <: WeakValidationMapSelectPr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompact(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompact(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     
     @scala.inline
-    def deleteCompact: Self = this.set("compact", js.undefined)
+    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    def setEmptyAriaLabel(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "emptyAriaLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setEmptyAriaLabelUndefined: Self = StObject.set(x, "emptyAriaLabel", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFormMessageProps(value: Validator[js.UndefOr[Null | (Record[String, _])]]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyAriaLabel(value: Validator[js.UndefOr[Null | String]]): Self = this.set("emptyAriaLabel", value.asInstanceOf[js.Any])
+    def setFormMessagePropsUndefined: Self = StObject.set(x, "formMessageProps", js.undefined)
     
     @scala.inline
-    def deleteEmptyAriaLabel: Self = this.set("emptyAriaLabel", js.undefined)
+    def setId(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormMessageProps(value: Validator[js.UndefOr[Null | (Record[String, _])]]): Self = this.set("formMessageProps", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFormMessageProps: Self = this.set("formMessageProps", js.undefined)
+    def setIncludeEmptyOption(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "includeEmptyOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Validator[js.UndefOr[Null | String]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIncludeEmptyOptionUndefined: Self = StObject.set(x, "includeEmptyOption", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInnerRefClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "innerRefClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeEmptyOption(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("includeEmptyOption", value.asInstanceOf[js.Any])
+    def setInnerRefClassNameUndefined: Self = StObject.set(x, "innerRefClassName", js.undefined)
     
     @scala.inline
-    def deleteIncludeEmptyOption: Self = this.set("includeEmptyOption", js.undefined)
+    def setListClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRefClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("innerRefClassName", value.asInstanceOf[js.Any])
+    def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
     
     @scala.inline
-    def deleteInnerRefClassName: Self = this.set("innerRefClassName", js.undefined)
+    def setListItemClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "listItemClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("listClassName", value.asInstanceOf[js.Any])
+    def setListItemClassNameUndefined: Self = StObject.set(x, "listItemClassName", js.undefined)
     
     @scala.inline
-    def deleteListClassName: Self = this.set("listClassName", js.undefined)
+    def setListItemTextClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "listItemTextClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListItemClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("listItemClassName", value.asInstanceOf[js.Any])
+    def setListItemTextClassNameUndefined: Self = StObject.set(x, "listItemTextClassName", js.undefined)
     
     @scala.inline
-    def deleteListItemClassName: Self = this.set("listItemClassName", js.undefined)
+    def setOnBlur(value: Validator[js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]) | Null]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListItemTextClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("listItemTextClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListItemTextClassName: Self = this.set("listItemTextClassName", js.undefined)
-    
-    @scala.inline
-    def setOnBlur(value: Validator[js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]) | Null]]): Self = this.set("onBlur", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
     def setOnClick(
@@ -194,10 +183,10 @@ object WeakValidationMapSelectPr {
             (js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]) | Null
           ]
         ]
-    ): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
     def setOnSelect(
@@ -210,69 +199,69 @@ object WeakValidationMapSelectPr {
             ]) | Null
           ]
         ]
-    ): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def setOptions(value: Validator[js.UndefOr[js.Array[Option] | Null]]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: Validator[js.UndefOr[js.Array[Option] | Null]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setPopperClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("popperClassName", value.asInstanceOf[js.Any])
+    def setPopperClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "popperClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopperClassName: Self = this.set("popperClassName", js.undefined)
+    def setPopperClassNameUndefined: Self = StObject.set(x, "popperClassName", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setReferenceClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("referenceClassName", value.asInstanceOf[js.Any])
+    def setReferenceClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "referenceClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferenceClassName: Self = this.set("referenceClassName", js.undefined)
+    def setReferenceClassNameUndefined: Self = StObject.set(x, "referenceClassName", js.undefined)
     
     @scala.inline
-    def setSelectedKey(value: Validator[js.UndefOr[Null | String]]): Self = this.set("selectedKey", value.asInstanceOf[js.Any])
+    def setSelectedKey(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedKey: Self = this.set("selectedKey", js.undefined)
+    def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
     
     @scala.inline
-    def setTextContentClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("textContentClassName", value.asInstanceOf[js.Any])
+    def setTextContentClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "textContentClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextContentClassName: Self = this.set("textContentClassName", js.undefined)
+    def setTextContentClassNameUndefined: Self = StObject.set(x, "textContentClassName", js.undefined)
     
     @scala.inline
-    def setTriggerClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("triggerClassName", value.asInstanceOf[js.Any])
+    def setTriggerClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "triggerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTriggerClassName: Self = this.set("triggerClassName", js.undefined)
+    def setTriggerClassNameUndefined: Self = StObject.set(x, "triggerClassName", js.undefined)
     
     @scala.inline
-    def setValidationState(value: Validator[js.UndefOr[Null | State]]): Self = this.set("validationState", value.asInstanceOf[js.Any])
+    def setValidationState(value: Validator[js.UndefOr[Null | State]]): Self = StObject.set(x, "validationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidationState: Self = this.set("validationState", js.undefined)
+    def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     
     @scala.inline
-    def setWrapperProps(value: Validator[js.UndefOr[Null | (Record[String, _])]]): Self = this.set("wrapperProps", value.asInstanceOf[js.Any])
+    def setWrapperProps(value: Validator[js.UndefOr[Null | (Record[String, _])]]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrapperProps: Self = this.set("wrapperProps", js.undefined)
+    def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)
   }
 }

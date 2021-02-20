@@ -1,6 +1,7 @@
 package typings.qlikEngineapi.EngineAPI
 
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,36 +87,24 @@ object IVariable {
   }
   
   @scala.inline
-  implicit class IVariableOps[Self <: IVariable] (val x: Self) extends AnyVal {
+  implicit class IVariableMutableBuilder[Self <: IVariable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceContent(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "forceContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContent(value: () => js.Promise[IAlfaNumString]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNxProperties(value: () => js.Promise[INxVariableProperties]): Self = StObject.set(x, "getNxProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceContent(value: (String, Double) => js.Promise[Unit]): Self = this.set("forceContent", js.Any.fromFunction2(value))
+    def setGetRawContent(value: () => js.Promise[String]): Self = StObject.set(x, "getRawContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContent(value: () => js.Promise[IAlfaNumString]): Self = this.set("getContent", js.Any.fromFunction0(value))
+    def setSetContent(value: (String, Boolean) => js.Promise[Boolean]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNxProperties(value: () => js.Promise[INxVariableProperties]): Self = this.set("getNxProperties", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRawContent(value: () => js.Promise[String]): Self = this.set("getRawContent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetContent(value: (String, Boolean) => js.Promise[Boolean]): Self = this.set("setContent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetNxProperties(value: INxVariableProperties => js.Promise[Unit]): Self = this.set("setNxProperties", js.Any.fromFunction1(value))
+    def setSetNxProperties(value: INxVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setNxProperties", js.Any.fromFunction1(value))
   }
 }

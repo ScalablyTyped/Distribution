@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart.series
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -128,168 +129,156 @@ object IPolar {
   }
   
   @scala.inline
-  implicit class IPolarOps[Self <: IPolar] (val x: Self) extends AnyVal {
+  implicit class IPolarMutableBuilder[Self <: IPolar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Array): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCenter(value: () => Array): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenter(value: Array): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setGetCenterUndefined: Self = StObject.set(x, "getCenter", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setGetOffsetX(value: () => Double): Self = StObject.set(x, "getOffsetX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenter(value: () => Array): Self = this.set("getCenter", js.Any.fromFunction0(value))
+    def setGetOffsetXUndefined: Self = StObject.set(x, "getOffsetX", js.undefined)
     
     @scala.inline
-    def deleteGetCenter: Self = this.set("getCenter", js.undefined)
+    def setGetOffsetY(value: () => Double): Self = StObject.set(x, "getOffsetY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOffsetX(value: () => Double): Self = this.set("getOffsetX", js.Any.fromFunction0(value))
+    def setGetOffsetYUndefined: Self = StObject.set(x, "getOffsetY", js.undefined)
     
     @scala.inline
-    def deleteGetOffsetX: Self = this.set("getOffsetX", js.undefined)
+    def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOffsetY(value: () => Double): Self = this.set("getOffsetY", js.Any.fromFunction0(value))
+    def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
     
     @scala.inline
-    def deleteGetOffsetY: Self = this.set("getOffsetY", js.undefined)
+    def setGetRotation(value: () => Double): Self = StObject.set(x, "getRotation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRadius(value: () => Double): Self = this.set("getRadius", js.Any.fromFunction0(value))
+    def setGetRotationUndefined: Self = StObject.set(x, "getRotation", js.undefined)
     
     @scala.inline
-    def deleteGetRadius: Self = this.set("getRadius", js.undefined)
+    def setGetXAxis(value: () => _): Self = StObject.set(x, "getXAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRotation(value: () => Double): Self = this.set("getRotation", js.Any.fromFunction0(value))
+    def setGetXAxisUndefined: Self = StObject.set(x, "getXAxis", js.undefined)
     
     @scala.inline
-    def deleteGetRotation: Self = this.set("getRotation", js.undefined)
+    def setGetXField(value: () => String): Self = StObject.set(x, "getXField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetXAxis(value: () => _): Self = this.set("getXAxis", js.Any.fromFunction0(value))
+    def setGetXFieldUndefined: Self = StObject.set(x, "getXField", js.undefined)
     
     @scala.inline
-    def deleteGetXAxis: Self = this.set("getXAxis", js.undefined)
+    def setGetYAxis(value: () => _): Self = StObject.set(x, "getYAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetXField(value: () => String): Self = this.set("getXField", js.Any.fromFunction0(value))
+    def setGetYAxisUndefined: Self = StObject.set(x, "getYAxis", js.undefined)
     
     @scala.inline
-    def deleteGetXField: Self = this.set("getXField", js.undefined)
+    def setGetYField(value: () => String): Self = StObject.set(x, "getYField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetYAxis(value: () => _): Self = this.set("getYAxis", js.Any.fromFunction0(value))
+    def setGetYFieldUndefined: Self = StObject.set(x, "getYField", js.undefined)
     
     @scala.inline
-    def deleteGetYAxis: Self = this.set("getYAxis", js.undefined)
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetYField(value: () => String): Self = this.set("getYField", js.Any.fromFunction0(value))
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteGetYField: Self = this.set("getYField", js.undefined)
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSetCenterUndefined: Self = StObject.set(x, "setCenter", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setSetOffsetX(value: /* offsetX */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setOffsetX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = this.set("setCenter", js.Any.fromFunction1(value))
+    def setSetOffsetXUndefined: Self = StObject.set(x, "setOffsetX", js.undefined)
     
     @scala.inline
-    def deleteSetCenter: Self = this.set("setCenter", js.undefined)
+    def setSetOffsetY(value: /* offsetY */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setOffsetY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOffsetX(value: /* offsetX */ js.UndefOr[Double] => Unit): Self = this.set("setOffsetX", js.Any.fromFunction1(value))
+    def setSetOffsetYUndefined: Self = StObject.set(x, "setOffsetY", js.undefined)
     
     @scala.inline
-    def deleteSetOffsetX: Self = this.set("setOffsetX", js.undefined)
+    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOffsetY(value: /* offsetY */ js.UndefOr[Double] => Unit): Self = this.set("setOffsetY", js.Any.fromFunction1(value))
+    def setSetRadiusUndefined: Self = StObject.set(x, "setRadius", js.undefined)
     
     @scala.inline
-    def deleteSetOffsetY: Self = this.set("setOffsetY", js.undefined)
+    def setSetRotation(value: /* rotation */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = this.set("setRadius", js.Any.fromFunction1(value))
+    def setSetRotationUndefined: Self = StObject.set(x, "setRotation", js.undefined)
     
     @scala.inline
-    def deleteSetRadius: Self = this.set("setRadius", js.undefined)
+    def setSetXAxis(value: /* xAxis */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setXAxis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRotation(value: /* rotation */ js.UndefOr[Double] => Unit): Self = this.set("setRotation", js.Any.fromFunction1(value))
+    def setSetXAxisUndefined: Self = StObject.set(x, "setXAxis", js.undefined)
     
     @scala.inline
-    def deleteSetRotation: Self = this.set("setRotation", js.undefined)
+    def setSetXField(value: /* xField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setXField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetXAxis(value: /* xAxis */ js.UndefOr[js.Any] => Unit): Self = this.set("setXAxis", js.Any.fromFunction1(value))
+    def setSetXFieldUndefined: Self = StObject.set(x, "setXField", js.undefined)
     
     @scala.inline
-    def deleteSetXAxis: Self = this.set("setXAxis", js.undefined)
+    def setSetYAxis(value: /* yAxis */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setYAxis", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetXField(value: /* xField */ js.UndefOr[String] => Unit): Self = this.set("setXField", js.Any.fromFunction1(value))
+    def setSetYAxisUndefined: Self = StObject.set(x, "setYAxis", js.undefined)
     
     @scala.inline
-    def deleteSetXField: Self = this.set("setXField", js.undefined)
+    def setSetYField(value: /* yField */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setYField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetYAxis(value: /* yAxis */ js.UndefOr[js.Any] => Unit): Self = this.set("setYAxis", js.Any.fromFunction1(value))
+    def setSetYFieldUndefined: Self = StObject.set(x, "setYField", js.undefined)
     
     @scala.inline
-    def deleteSetYAxis: Self = this.set("setYAxis", js.undefined)
+    def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetYField(value: /* yField */ js.UndefOr[String] => Unit): Self = this.set("setYField", js.Any.fromFunction1(value))
+    def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
     
     @scala.inline
-    def deleteSetYField: Self = this.set("setYField", js.undefined)
+    def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXField(value: String): Self = this.set("xField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXField: Self = this.set("xField", js.undefined)
-    
-    @scala.inline
-    def setYField(value: String): Self = this.set("yField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYField: Self = this.set("yField", js.undefined)
+    def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +23,16 @@ class PopoutMenu protected ()
     closeIconWidth: Double
   ) = this()
 }
-/* static members */
-@JSGlobal("SP.UI.PopoutMenu")
-@js.native
-object PopoutMenu extends js.Object {
+object PopoutMenu {
   
+  /* static member */
+  @JSGlobal("SP.UI.PopoutMenu.closeActivePopoutMenuInstance")
+  @js.native
   def closeActivePopoutMenuInstance(): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.UI.PopoutMenu.createPopoutMenuInstanceAndLaunch")
+  @js.native
   def createPopoutMenuInstanceAndLaunch(
     anchorId: String,
     menuId: String,

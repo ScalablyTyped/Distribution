@@ -1,12 +1,13 @@
 package typings.typedoc.schemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ReflectionFlags, 'isPrivate' | 'isProtected' | 'isPublic' | 'isStatic' | 'isExported' | 'isExternal' | 'isOptional' | 'isRest' | 'hasExportAssignment' | 'isConstructorProperty' | 'isAbstract' | 'isConst' | 'isLet'>> */
 @js.native
-trait ReflectionFlags extends js.Object {
+trait ReflectionFlags extends StObject {
   
   var hasExportAssignment: js.UndefOr[ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]] = js.native
   
@@ -43,174 +44,162 @@ object ReflectionFlags {
   }
   
   @scala.inline
-  implicit class ReflectionFlagsOps[Self <: ReflectionFlags] (val x: Self) extends AnyVal {
+  implicit class ReflectionFlagsMutableBuilder[Self <: ReflectionFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasExportAssignment(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "hasExportAssignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasExportAssignmentFunction0(value: () => Boolean): Self = StObject.set(x, "hasExportAssignment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasExportAssignmentUndefined: Self = StObject.set(x, "hasExportAssignment", js.undefined)
     
     @scala.inline
-    def setHasExportAssignmentVarargs(value: _ModelToObject[js.Any]*): Self = this.set("hasExportAssignment", js.Array(value :_*))
+    def setHasExportAssignmentVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "hasExportAssignment", js.Array(value :_*))
     
     @scala.inline
-    def setHasExportAssignmentFunction0(value: () => Boolean): Self = this.set("hasExportAssignment", js.Any.fromFunction0(value))
+    def setIsAbstract(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isAbstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasExportAssignment(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("hasExportAssignment", value.asInstanceOf[js.Any])
+    def setIsAbstractFunction0(value: () => Boolean): Self = StObject.set(x, "isAbstract", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHasExportAssignment: Self = this.set("hasExportAssignment", js.undefined)
+    def setIsAbstractUndefined: Self = StObject.set(x, "isAbstract", js.undefined)
     
     @scala.inline
-    def setIsAbstractVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isAbstract", js.Array(value :_*))
+    def setIsAbstractVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isAbstract", js.Array(value :_*))
     
     @scala.inline
-    def setIsAbstractFunction0(value: () => Boolean): Self = this.set("isAbstract", js.Any.fromFunction0(value))
+    def setIsConst(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isConst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAbstract(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isAbstract", value.asInstanceOf[js.Any])
+    def setIsConstFunction0(value: () => Boolean): Self = StObject.set(x, "isConst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsAbstract: Self = this.set("isAbstract", js.undefined)
+    def setIsConstUndefined: Self = StObject.set(x, "isConst", js.undefined)
     
     @scala.inline
-    def setIsConstVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isConst", js.Array(value :_*))
+    def setIsConstVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isConst", js.Array(value :_*))
     
     @scala.inline
-    def setIsConstFunction0(value: () => Boolean): Self = this.set("isConst", js.Any.fromFunction0(value))
+    def setIsConstructorProperty(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isConstructorProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConst(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isConst", value.asInstanceOf[js.Any])
+    def setIsConstructorPropertyFunction0(value: () => Boolean): Self = StObject.set(x, "isConstructorProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsConst: Self = this.set("isConst", js.undefined)
+    def setIsConstructorPropertyUndefined: Self = StObject.set(x, "isConstructorProperty", js.undefined)
     
     @scala.inline
-    def setIsConstructorPropertyVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isConstructorProperty", js.Array(value :_*))
+    def setIsConstructorPropertyVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isConstructorProperty", js.Array(value :_*))
     
     @scala.inline
-    def setIsConstructorPropertyFunction0(value: () => Boolean): Self = this.set("isConstructorProperty", js.Any.fromFunction0(value))
+    def setIsExported(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isExported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConstructorProperty(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isConstructorProperty", value.asInstanceOf[js.Any])
+    def setIsExportedFunction0(value: () => Boolean): Self = StObject.set(x, "isExported", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsConstructorProperty: Self = this.set("isConstructorProperty", js.undefined)
+    def setIsExportedUndefined: Self = StObject.set(x, "isExported", js.undefined)
     
     @scala.inline
-    def setIsExportedVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isExported", js.Array(value :_*))
+    def setIsExportedVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isExported", js.Array(value :_*))
     
     @scala.inline
-    def setIsExportedFunction0(value: () => Boolean): Self = this.set("isExported", js.Any.fromFunction0(value))
+    def setIsExternal(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExported(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isExported", value.asInstanceOf[js.Any])
+    def setIsExternalFunction0(value: () => Boolean): Self = StObject.set(x, "isExternal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsExported: Self = this.set("isExported", js.undefined)
+    def setIsExternalUndefined: Self = StObject.set(x, "isExternal", js.undefined)
     
     @scala.inline
-    def setIsExternalVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isExternal", js.Array(value :_*))
+    def setIsExternalVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isExternal", js.Array(value :_*))
     
     @scala.inline
-    def setIsExternalFunction0(value: () => Boolean): Self = this.set("isExternal", js.Any.fromFunction0(value))
+    def setIsLet(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isLet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExternal(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isExternal", value.asInstanceOf[js.Any])
+    def setIsLetFunction0(value: () => Boolean): Self = StObject.set(x, "isLet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsExternal: Self = this.set("isExternal", js.undefined)
+    def setIsLetUndefined: Self = StObject.set(x, "isLet", js.undefined)
     
     @scala.inline
-    def setIsLetVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isLet", js.Array(value :_*))
+    def setIsLetVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isLet", js.Array(value :_*))
     
     @scala.inline
-    def setIsLetFunction0(value: () => Boolean): Self = this.set("isLet", js.Any.fromFunction0(value))
+    def setIsOptional(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLet(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isLet", value.asInstanceOf[js.Any])
+    def setIsOptionalFunction0(value: () => Boolean): Self = StObject.set(x, "isOptional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsLet: Self = this.set("isLet", js.undefined)
+    def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
     
     @scala.inline
-    def setIsOptionalVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isOptional", js.Array(value :_*))
+    def setIsOptionalVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isOptional", js.Array(value :_*))
     
     @scala.inline
-    def setIsOptionalFunction0(value: () => Boolean): Self = this.set("isOptional", js.Any.fromFunction0(value))
+    def setIsPrivate(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOptional(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isOptional", value.asInstanceOf[js.Any])
+    def setIsPrivateFunction0(value: () => Boolean): Self = StObject.set(x, "isPrivate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsOptional: Self = this.set("isOptional", js.undefined)
+    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
     @scala.inline
-    def setIsPrivateVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isPrivate", js.Array(value :_*))
+    def setIsPrivateVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isPrivate", js.Array(value :_*))
     
     @scala.inline
-    def setIsPrivateFunction0(value: () => Boolean): Self = this.set("isPrivate", js.Any.fromFunction0(value))
+    def setIsProtected(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrivate(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isPrivate", value.asInstanceOf[js.Any])
+    def setIsProtectedFunction0(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsPrivate: Self = this.set("isPrivate", js.undefined)
+    def setIsProtectedUndefined: Self = StObject.set(x, "isProtected", js.undefined)
     
     @scala.inline
-    def setIsProtectedVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isProtected", js.Array(value :_*))
+    def setIsProtectedVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isProtected", js.Array(value :_*))
     
     @scala.inline
-    def setIsProtectedFunction0(value: () => Boolean): Self = this.set("isProtected", js.Any.fromFunction0(value))
+    def setIsPublic(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsProtected(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isProtected", value.asInstanceOf[js.Any])
+    def setIsPublicFunction0(value: () => Boolean): Self = StObject.set(x, "isPublic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsProtected: Self = this.set("isProtected", js.undefined)
+    def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
     
     @scala.inline
-    def setIsPublicVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isPublic", js.Array(value :_*))
+    def setIsPublicVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isPublic", js.Array(value :_*))
     
     @scala.inline
-    def setIsPublicFunction0(value: () => Boolean): Self = this.set("isPublic", js.Any.fromFunction0(value))
+    def setIsRest(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isRest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPublic(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    def setIsRestFunction0(value: () => Boolean): Self = StObject.set(x, "isRest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    def setIsRestUndefined: Self = StObject.set(x, "isRest", js.undefined)
     
     @scala.inline
-    def setIsRestVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isRest", js.Array(value :_*))
+    def setIsRestVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isRest", js.Array(value :_*))
     
     @scala.inline
-    def setIsRestFunction0(value: () => Boolean): Self = this.set("isRest", js.Any.fromFunction0(value))
+    def setIsStatic(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRest(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isRest", value.asInstanceOf[js.Any])
+    def setIsStaticFunction0(value: () => Boolean): Self = StObject.set(x, "isStatic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsRest: Self = this.set("isRest", js.undefined)
+    def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
     
     @scala.inline
-    def setIsStaticVarargs(value: _ModelToObject[js.Any]*): Self = this.set("isStatic", js.Array(value :_*))
-    
-    @scala.inline
-    def setIsStaticFunction0(value: () => Boolean): Self = this.set("isStatic", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsStatic(value: ModelToObject[js.Function0[Boolean]] | js.Function0[Boolean]): Self = this.set("isStatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStatic: Self = this.set("isStatic", js.undefined)
+    def setIsStaticVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "isStatic", js.Array(value :_*))
   }
 }

@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientCloudkms.anon.UpdateMask
 import typings.maximMazurokGapiClientCloudkms.anon.UploadType
 import typings.maximMazurokGapiClientCloudkms.anon.Uploadprotocol
 import typings.maximMazurokGapiClientCloudkms.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CryptoKeysResource extends js.Object {
+trait CryptoKeysResource extends StObject {
   
   /** Create a new CryptoKey within a KeyRing. CryptoKey.purpose and CryptoKey.version_template.algorithm are required. */
   def create(request: CryptoKeyId): Request[CryptoKey] = js.native

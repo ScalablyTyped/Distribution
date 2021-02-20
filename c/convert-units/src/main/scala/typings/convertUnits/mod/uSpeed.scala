@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Frequency
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.mSlashs
   - typings.convertUnits.convertUnitsStrings.kmSlashh
@@ -11,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.knot
   - typings.convertUnits.convertUnitsStrings.ftSlashs
 */
-trait uSpeed extends js.Object
+trait uSpeed extends StObject
 object uSpeed {
   
   @scala.inline

@@ -11,12 +11,13 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.std.HTMLAnchorElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDecoration extends js.Object {
+trait TextDecoration extends StObject {
   
   var extend: js.UndefOr[
     ExtendType[
@@ -42,19 +43,21 @@ object TextDecoration {
   }
   
   @scala.inline
-  implicit class TextDecorationOps[Self <: TextDecoration] (val x: Self) extends AnyVal {
+  implicit class TextDecorationMutableBuilder[Self <: TextDecoration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtend(
+      value: ExtendType[
+          PropsOf[
+            FC[
+              AnchorProps with (Omit[
+                DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
+                color
+              ])
+            ]
+          ]
+        ]
+    ): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtendFunction1(
@@ -77,29 +80,15 @@ object TextDecoration {
             ]
           ]
         ]
-    ): Self = this.set("extend", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtend(
-      value: ExtendType[
-          PropsOf[
-            FC[
-              AnchorProps with (Omit[
-                DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
-                color
-              ])
-            ]
-          ]
-        ]
-    ): Self = this.set("extend", value.asInstanceOf[js.Any])
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
+    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecoration(value: String): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
   }
 }

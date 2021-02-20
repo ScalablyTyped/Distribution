@@ -15,6 +15,7 @@ import typings.chromeApps.chrome.webViewRequest.RequestMatcherFields
 import typings.chromeApps.chrome.webViewRequest.ResponseCookie
 import typings.chromeApps.chrome.webViewRequest.SendMessageParams
 import typings.chromeApps.chrome.webViewRequest.SetRequestHeaderParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,14 +30,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description
   * Use the *chrome.webViewRequest* API to intercept, block, or modify requests in-flight.
   */
-@JSGlobal("chrome.webViewRequest")
-@js.native
-object webViewRequest extends js.Object {
+object webViewRequest {
   
   /**
     * Adds a cookie to the request or overrides a cookie, in case another cookie of the same name exists already.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
     */
+  @JSGlobal("chrome.webViewRequest.AddRequestCookie")
   @js.native
   class AddRequestCookie protected ()
     extends typings.chromeApps.chrome.webViewRequest.AddRequestCookie {
@@ -47,6 +47,7 @@ object webViewRequest extends js.Object {
     * Adds a cookie to the response or overrides a cookie, in case another cookie of the same name exists already.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
     */
+  @JSGlobal("chrome.webViewRequest.AddResponseCookie")
   @js.native
   class AddResponseCookie protected ()
     extends typings.chromeApps.chrome.webViewRequest.AddResponseCookie {
@@ -59,6 +60,7 @@ object webViewRequest extends js.Object {
     * you need to first remove and then add a new
     * response header in order to replace one.
     */
+  @JSGlobal("chrome.webViewRequest.AddResponseHeader")
   @js.native
   class AddResponseHeader protected ()
     extends typings.chromeApps.chrome.webViewRequest.AddResponseHeader {
@@ -66,6 +68,7 @@ object webViewRequest extends js.Object {
   }
   
   /** Declarative event action that cancels a network request. */
+  @JSGlobal("chrome.webViewRequest.CancelRequest")
   @js.native
   class CancelRequest ()
     extends typings.chromeApps.chrome.webViewRequest.CancelRequest
@@ -74,6 +77,7 @@ object webViewRequest extends js.Object {
     * Edits one or more cookies of request.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
     */
+  @JSGlobal("chrome.webViewRequest.EditRequestCookie")
   @js.native
   class EditRequestCookie protected ()
     extends typings.chromeApps.chrome.webViewRequest.EditRequestCookie {
@@ -89,6 +93,7 @@ object webViewRequest extends js.Object {
     * Edits one or more cookies of response.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
     */
+  @JSGlobal("chrome.webViewRequest.EditResponseCookie")
   @js.native
   class EditResponseCookie protected ()
     extends typings.chromeApps.chrome.webViewRequest.EditResponseCookie {
@@ -102,6 +107,7 @@ object webViewRequest extends js.Object {
   /**
     * Masks all rules that match the specified criteria.
     */
+  @JSGlobal("chrome.webViewRequest.IgnoreRules")
   @js.native
   class IgnoreRules protected ()
     extends typings.chromeApps.chrome.webViewRequest.IgnoreRules {
@@ -113,6 +119,7 @@ object webViewRequest extends js.Object {
     * The regular expressions use the RE2 syntax.
     * @see[RE2 syntax]{@link https://github.com/google/re2/blob/master/doc/syntax.txt}
     */
+  @JSGlobal("chrome.webViewRequest.RedirectByRegEx")
   @js.native
   class RedirectByRegEx protected ()
     extends typings.chromeApps.chrome.webViewRequest.RedirectByRegEx {
@@ -120,6 +127,7 @@ object webViewRequest extends js.Object {
   }
   
   /** Declarative event action that redirects a network request.  */
+  @JSGlobal("chrome.webViewRequest.RedirectRequest")
   @js.native
   class RedirectRequest protected ()
     extends typings.chromeApps.chrome.webViewRequest.RedirectRequest {
@@ -127,11 +135,13 @@ object webViewRequest extends js.Object {
   }
   
   /** Declarative event action that redirects a network request to an empty document. */
+  @JSGlobal("chrome.webViewRequest.RedirectToEmptyDocument")
   @js.native
   class RedirectToEmptyDocument ()
     extends typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument
   
   /** Declarative event action that redirects a network request to a transparent image. */
+  @JSGlobal("chrome.webViewRequest.RedirectToTransparentImage")
   @js.native
   class RedirectToTransparentImage ()
     extends typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage
@@ -140,6 +150,7 @@ object webViewRequest extends js.Object {
     * Removes one or more cookies of request.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
     */
+  @JSGlobal("chrome.webViewRequest.RemoveRequestCookie")
   @js.native
   class RemoveRequestCookie protected ()
     extends typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie {
@@ -152,6 +163,7 @@ object webViewRequest extends js.Object {
     * the same header name on the same request.
     * Each request header name occurs only once in each request.
     */
+  @JSGlobal("chrome.webViewRequest.RemoveRequestHeader")
   @js.native
   class RemoveRequestHeader protected ()
     extends typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader {
@@ -162,6 +174,7 @@ object webViewRequest extends js.Object {
     * Removes one or more cookies of response.
     * Note that it is preferred to use the Cookies API because this is computationally less expensive.
     */
+  @JSGlobal("chrome.webViewRequest.RemoveResponseCookie")
   @js.native
   class RemoveResponseCookie protected ()
     extends typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie {
@@ -171,6 +184,7 @@ object webViewRequest extends js.Object {
   /**
     * Removes all response headers of the specified names and values.
     */
+  @JSGlobal("chrome.webViewRequest.RemoveResponseHeader")
   @js.native
   class RemoveResponseHeader protected ()
     extends typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader {
@@ -180,6 +194,7 @@ object webViewRequest extends js.Object {
   /**
     * @description Matches network events by various criteria.
     */
+  @JSGlobal("chrome.webViewRequest.RequestMatcher")
   @js.native
   class RequestMatcher ()
     extends typings.chromeApps.chrome.webViewRequest.RequestMatcher {
@@ -189,6 +204,7 @@ object webViewRequest extends js.Object {
   /**
     * Triggers the webviewWebRequest.*OnMessageEvent* event which are used in webviews.
     */
+  @JSGlobal("chrome.webViewRequest.SendMessageToExtension")
   @js.native
   class SendMessageToExtension protected ()
     extends typings.chromeApps.chrome.webViewRequest.SendMessageToExtension {
@@ -201,6 +217,7 @@ object webViewRequest extends js.Object {
     * Header name comparison is always case-insensitive.
     * Each request header name occurs only once in each request.
     */
+  @JSGlobal("chrome.webViewRequest.SetRequestHeader")
   @js.native
   class SetRequestHeader protected ()
     extends typings.chromeApps.chrome.webViewRequest.SetRequestHeader {

@@ -1,11 +1,12 @@
 package typings.expoLocation.locationTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationGeocodedLocation extends js.Object {
+trait LocationGeocodedLocation extends StObject {
   
   var accuracy: js.UndefOr[Double] = js.native
   
@@ -24,36 +25,24 @@ object LocationGeocodedLocation {
   }
   
   @scala.inline
-  implicit class LocationGeocodedLocationOps[Self <: LocationGeocodedLocation] (val x: Self) extends AnyVal {
+  implicit class LocationGeocodedLocationMutableBuilder[Self <: LocationGeocodedLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
-    
-    @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

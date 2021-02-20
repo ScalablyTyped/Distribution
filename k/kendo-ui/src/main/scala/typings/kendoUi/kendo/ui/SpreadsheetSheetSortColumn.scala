@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpreadsheetSheetSortColumn extends js.Object {
+trait SpreadsheetSheetSortColumn extends StObject {
   
   var ascending: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object SpreadsheetSheetSortColumn {
   }
   
   @scala.inline
-  implicit class SpreadsheetSheetSortColumnOps[Self <: SpreadsheetSheetSortColumn] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetSheetSortColumnMutableBuilder[Self <: SpreadsheetSheetSortColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscending(value: Boolean): Self = this.set("ascending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

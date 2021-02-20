@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateApiKeyResponse extends js.Object {
+trait CreateApiKeyResponse extends StObject {
   
   // the API key that was created
   var data: js.UndefOr[ApiKey] = js.native
@@ -19,24 +20,12 @@ object CreateApiKeyResponse {
   }
   
   @scala.inline
-  implicit class CreateApiKeyResponseOps[Self <: CreateApiKeyResponse] (val x: Self) extends AnyVal {
+  implicit class CreateApiKeyResponseMutableBuilder[Self <: CreateApiKeyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: ApiKey): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: ApiKey): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

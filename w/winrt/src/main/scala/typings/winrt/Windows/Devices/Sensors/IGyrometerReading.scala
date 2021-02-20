@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Devices.Sensors
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGyrometerReading extends js.Object {
+trait IGyrometerReading extends StObject {
   
   var angularVelocityX: Double = js.native
   
@@ -25,30 +26,18 @@ object IGyrometerReading {
   }
   
   @scala.inline
-  implicit class IGyrometerReadingOps[Self <: IGyrometerReading] (val x: Self) extends AnyVal {
+  implicit class IGyrometerReadingMutableBuilder[Self <: IGyrometerReading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngularVelocityX(value: Double): Self = StObject.set(x, "angularVelocityX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngularVelocityY(value: Double): Self = StObject.set(x, "angularVelocityY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngularVelocityZ(value: Double): Self = StObject.set(x, "angularVelocityZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularVelocityX(value: Double): Self = this.set("angularVelocityX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAngularVelocityY(value: Double): Self = this.set("angularVelocityY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAngularVelocityZ(value: Double): Self = this.set("angularVelocityZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

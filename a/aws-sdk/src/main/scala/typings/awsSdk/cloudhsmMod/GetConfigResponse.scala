@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConfigResponse extends js.Object {
+trait GetConfigResponse extends StObject {
   
   /**
     * The certificate file containing the server.pem files of the HSMs.
@@ -31,36 +32,24 @@ object GetConfigResponse {
   }
   
   @scala.inline
-  implicit class GetConfigResponseOps[Self <: GetConfigResponse] (val x: Self) extends AnyVal {
+  implicit class GetConfigResponseMutableBuilder[Self <: GetConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigCred(value: String): Self = StObject.set(x, "ConfigCred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigCredUndefined: Self = StObject.set(x, "ConfigCred", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigFile(value: String): Self = StObject.set(x, "ConfigFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigCred(value: String): Self = this.set("ConfigCred", value.asInstanceOf[js.Any])
+    def setConfigFileUndefined: Self = StObject.set(x, "ConfigFile", js.undefined)
     
     @scala.inline
-    def deleteConfigCred: Self = this.set("ConfigCred", js.undefined)
+    def setConfigType(value: String): Self = StObject.set(x, "ConfigType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigFile(value: String): Self = this.set("ConfigFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigFile: Self = this.set("ConfigFile", js.undefined)
-    
-    @scala.inline
-    def setConfigType(value: String): Self = this.set("ConfigType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigType: Self = this.set("ConfigType", js.undefined)
+    def setConfigTypeUndefined: Self = StObject.set(x, "ConfigType", js.undefined)
   }
 }

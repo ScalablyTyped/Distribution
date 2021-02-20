@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes a change made to a configuration.
   */
 @js.native
-trait SchemaMutationRecord extends js.Object {
+trait SchemaMutationRecord extends StObject {
   
   /**
     * When the change occurred.
@@ -29,30 +30,18 @@ object SchemaMutationRecord {
   }
   
   @scala.inline
-  implicit class SchemaMutationRecordOps[Self <: SchemaMutationRecord] (val x: Self) extends AnyVal {
+  implicit class SchemaMutationRecordMutableBuilder[Self <: SchemaMutationRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMutateTime(value: String): Self = StObject.set(x, "mutateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMutateTimeUndefined: Self = StObject.set(x, "mutateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMutatedBy(value: String): Self = StObject.set(x, "mutatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutateTime(value: String): Self = this.set("mutateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutateTime: Self = this.set("mutateTime", js.undefined)
-    
-    @scala.inline
-    def setMutatedBy(value: String): Self = this.set("mutatedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutatedBy: Self = this.set("mutatedBy", js.undefined)
+    def setMutatedByUndefined: Self = StObject.set(x, "mutatedBy", js.undefined)
   }
 }

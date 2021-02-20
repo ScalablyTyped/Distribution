@@ -3,6 +3,7 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.HorizontalAlign
 import typings.openui5.sap.ui.core.TitleLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

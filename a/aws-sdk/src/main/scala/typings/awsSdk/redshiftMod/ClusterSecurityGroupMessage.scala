@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterSecurityGroupMessage extends js.Object {
+trait ClusterSecurityGroupMessage extends StObject {
   
   /**
     * A list of ClusterSecurityGroup instances. 
@@ -26,33 +27,21 @@ object ClusterSecurityGroupMessage {
   }
   
   @scala.inline
-  implicit class ClusterSecurityGroupMessageOps[Self <: ClusterSecurityGroupMessage] (val x: Self) extends AnyVal {
+  implicit class ClusterSecurityGroupMessageMutableBuilder[Self <: ClusterSecurityGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterSecurityGroups(value: ClusterSecurityGroups): Self = StObject.set(x, "ClusterSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroup*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroup*): Self = this.set("ClusterSecurityGroups", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSecurityGroups(value: ClusterSecurityGroups): Self = this.set("ClusterSecurityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterSecurityGroups: Self = this.set("ClusterSecurityGroups", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

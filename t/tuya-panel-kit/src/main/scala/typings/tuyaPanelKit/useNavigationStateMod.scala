@@ -2,14 +2,15 @@ package typings.tuyaPanelKit
 
 import typings.tuyaPanelKit.routersTypesMod.NavigationState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tuya-panel-kit/@react-navigation/core/useNavigationState", JSImport.Namespace)
-@js.native
-object useNavigationStateMod extends js.Object {
+object useNavigationStateMod {
   
+  @JSImport("tuya-panel-kit/@react-navigation/core/useNavigationState", JSImport.Default)
+  @js.native
   def default[T](selector: Selector[T]): T = js.native
   
   // tslint:disable-next-line strict-export-declare-modifiers

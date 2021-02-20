@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisionedBandwidth extends js.Object {
+trait ProvisionedBandwidth extends StObject {
   
   /**
     * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
@@ -41,48 +42,36 @@ object ProvisionedBandwidth {
   }
   
   @scala.inline
-  implicit class ProvisionedBandwidthOps[Self <: ProvisionedBandwidth] (val x: Self) extends AnyVal {
+  implicit class ProvisionedBandwidthMutableBuilder[Self <: ProvisionedBandwidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvisionTime(value: DateTime): Self = StObject.set(x, "ProvisionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvisionTimeUndefined: Self = StObject.set(x, "ProvisionTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvisioned(value: String): Self = StObject.set(x, "Provisioned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionTime(value: DateTime): Self = this.set("ProvisionTime", value.asInstanceOf[js.Any])
+    def setProvisionedUndefined: Self = StObject.set(x, "Provisioned", js.undefined)
     
     @scala.inline
-    def deleteProvisionTime: Self = this.set("ProvisionTime", js.undefined)
+    def setRequestTime(value: DateTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioned(value: String): Self = this.set("Provisioned", value.asInstanceOf[js.Any])
+    def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     
     @scala.inline
-    def deleteProvisioned: Self = this.set("Provisioned", js.undefined)
+    def setRequested(value: String): Self = StObject.set(x, "Requested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTime(value: DateTime): Self = this.set("RequestTime", value.asInstanceOf[js.Any])
+    def setRequestedUndefined: Self = StObject.set(x, "Requested", js.undefined)
     
     @scala.inline
-    def deleteRequestTime: Self = this.set("RequestTime", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequested(value: String): Self = this.set("Requested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequested: Self = this.set("Requested", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

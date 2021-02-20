@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionOriginGroup extends js.Object {
+trait DistributionOriginGroup extends StObject {
   
   /**
     * The failover criteria for when to failover to the secondary origin
@@ -36,30 +37,18 @@ object DistributionOriginGroup {
   }
   
   @scala.inline
-  implicit class DistributionOriginGroupOps[Self <: DistributionOriginGroup] (val x: Self) extends AnyVal {
+  implicit class DistributionOriginGroupMutableBuilder[Self <: DistributionOriginGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailoverCriteria(value: Input[DistributionOriginGroupFailoverCriteria]): Self = StObject.set(x, "failoverCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembers(value: Input[js.Array[Input[DistributionOriginGroupMember]]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembersVarargs(value: Input[DistributionOriginGroupMember]*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setFailoverCriteria(value: Input[DistributionOriginGroupFailoverCriteria]): Self = this.set("failoverCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMembersVarargs(value: Input[DistributionOriginGroupMember]*): Self = this.set("members", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembers(value: Input[js.Array[Input[DistributionOriginGroupMember]]]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginId(value: Input[String]): Self = this.set("originId", value.asInstanceOf[js.Any])
+    def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
   }
 }

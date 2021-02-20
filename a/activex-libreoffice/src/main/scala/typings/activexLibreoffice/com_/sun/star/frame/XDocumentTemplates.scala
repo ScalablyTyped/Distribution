@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,48 +124,36 @@ object XDocumentTemplates {
   }
   
   @scala.inline
-  implicit class XDocumentTemplatesOps[Self <: XDocumentTemplates] (val x: Self) extends AnyVal {
+  implicit class XDocumentTemplatesMutableBuilder[Self <: XDocumentTemplates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddGroup(value: String => Boolean): Self = StObject.set(x, "addGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddTemplate(value: (String, String, String) => Boolean): Self = StObject.set(x, "addTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: XContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setGetContent(value: () => XContent): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddGroup(value: String => Boolean): Self = this.set("addGroup", js.Any.fromFunction1(value))
+    def setRemoveGroup(value: String => Boolean): Self = StObject.set(x, "removeGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTemplate(value: (String, String, String) => Boolean): Self = this.set("addTemplate", js.Any.fromFunction3(value))
+    def setRemoveTemplate(value: (String, String) => Boolean): Self = StObject.set(x, "removeTemplate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetContent(value: () => XContent): Self = this.set("getContent", js.Any.fromFunction0(value))
+    def setRenameGroup(value: (String, String) => Boolean): Self = StObject.set(x, "renameGroup", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveGroup(value: String => Boolean): Self = this.set("removeGroup", js.Any.fromFunction1(value))
+    def setRenameTemplate(value: (String, String, String) => Boolean): Self = StObject.set(x, "renameTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemoveTemplate(value: (String, String) => Boolean): Self = this.set("removeTemplate", js.Any.fromFunction2(value))
+    def setStoreTemplate(value: (String, String, XStorable) => Boolean): Self = StObject.set(x, "storeTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRenameGroup(value: (String, String) => Boolean): Self = this.set("renameGroup", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRenameTemplate(value: (String, String, String) => Boolean): Self = this.set("renameTemplate", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setStoreTemplate(value: (String, String, XStorable) => Boolean): Self = this.set("storeTemplate", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

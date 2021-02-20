@@ -1,11 +1,12 @@
 package typings.jest.mod.jest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Describe extends js.Object {
+trait Describe extends StObject {
   
   def apply(name: String, fn: EmptyFunction): Unit = js.native
   def apply(name: js.Function, fn: EmptyFunction): Unit = js.native

@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClockCircleColor extends js.Object {
+trait ClockCircleColor extends StObject {
   
   var accentColor: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object ClockCircleColor {
   }
   
   @scala.inline
-  implicit class ClockCircleColorOps[Self <: ClockCircleColor] (val x: Self) extends AnyVal {
+  implicit class ClockCircleColorMutableBuilder[Self <: ClockCircleColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClockCircleColor(value: String): Self = StObject.set(x, "clockCircleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccentColor(value: String): Self = this.set("accentColor", value.asInstanceOf[js.Any])
+    def setClockCircleColorUndefined: Self = StObject.set(x, "clockCircleColor", js.undefined)
     
     @scala.inline
-    def deleteAccentColor: Self = this.set("accentColor", js.undefined)
+    def setClockColor(value: String): Self = StObject.set(x, "clockColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockCircleColor(value: String): Self = this.set("clockCircleColor", value.asInstanceOf[js.Any])
+    def setClockColorUndefined: Self = StObject.set(x, "clockColor", js.undefined)
     
     @scala.inline
-    def deleteClockCircleColor: Self = this.set("clockCircleColor", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockColor(value: String): Self = this.set("clockColor", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClockColor: Self = this.set("clockColor", js.undefined)
+    def setHeaderColor(value: String): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setSelectColor(value: String): Self = StObject.set(x, "selectColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderColor(value: String): Self = this.set("headerColor", value.asInstanceOf[js.Any])
+    def setSelectColorUndefined: Self = StObject.set(x, "selectColor", js.undefined)
     
     @scala.inline
-    def deleteHeaderColor: Self = this.set("headerColor", js.undefined)
+    def setSelectTextColor(value: String): Self = StObject.set(x, "selectTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectColor(value: String): Self = this.set("selectColor", value.asInstanceOf[js.Any])
+    def setSelectTextColorUndefined: Self = StObject.set(x, "selectTextColor", js.undefined)
     
     @scala.inline
-    def deleteSelectColor: Self = this.set("selectColor", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectTextColor(value: String): Self = this.set("selectTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectTextColor: Self = this.set("selectTextColor", js.undefined)
-    
-    @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

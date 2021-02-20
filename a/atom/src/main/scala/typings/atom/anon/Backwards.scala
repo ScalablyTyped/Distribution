@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Backwards extends js.Object {
+trait Backwards extends StObject {
   
   var backwards: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object Backwards {
   }
   
   @scala.inline
-  implicit class BackwardsOps[Self <: Backwards] (val x: Self) extends AnyVal {
+  implicit class BackwardsMutableBuilder[Self <: Backwards] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackwards(value: Boolean): Self = this.set("backwards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackwards: Self = this.set("backwards", js.undefined)
+    def setBackwardsUndefined: Self = StObject.set(x, "backwards", js.undefined)
   }
 }

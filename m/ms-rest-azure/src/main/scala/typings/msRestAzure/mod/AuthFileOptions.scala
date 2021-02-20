@@ -1,11 +1,12 @@
 package typings.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthFileOptions extends js.Object {
+trait AuthFileOptions extends StObject {
   
   /**
     * @prop {string} [filePath] Absolute file path to the auth file. If not provided 
@@ -28,30 +29,18 @@ object AuthFileOptions {
   }
   
   @scala.inline
-  implicit class AuthFileOptionsOps[Self <: AuthFileOptions] (val x: Self) extends AnyVal {
+  implicit class AuthFileOptionsMutableBuilder[Self <: AuthFileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscriptionEnvVariableName(value: String): Self = StObject.set(x, "subscriptionEnvVariableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionEnvVariableName(value: String): Self = this.set("subscriptionEnvVariableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionEnvVariableName: Self = this.set("subscriptionEnvVariableName", js.undefined)
+    def setSubscriptionEnvVariableNameUndefined: Self = StObject.set(x, "subscriptionEnvVariableName", js.undefined)
   }
 }

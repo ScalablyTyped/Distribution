@@ -1,12 +1,13 @@
 package typings.nodePgMigrate.anon
 
 import typings.nodePgMigrate.tablesTypesMod.RenameColumnFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseRenameColumnFn extends js.Object {
+trait ReverseRenameColumnFn extends StObject {
   
   def reverse(
     tableName: typings.nodePgMigrate.generalTypesMod.Name,

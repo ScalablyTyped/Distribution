@@ -1,57 +1,119 @@
 package typings.reactNativeVectorIcons
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.Component
 import typings.reactNativeVectorIcons.iconMod.Icon
 import typings.reactNativeVectorIcons.iconMod.IconButtonProps
+import typings.reactNativeVectorIcons.iconMod.IconProps
 import typings.reactNativeVectorIcons.iconMod.ImageSource
 import typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
 import typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-vector-icons/Zocial", JSImport.Namespace)
-@js.native
-object zocialMod extends js.Object {
+object zocialMod {
   
+  @JSImport("react-native-vector-icons/Zocial", JSImport.Default)
   @js.native
-  class default () extends Icon
+  class default protected () extends Icon {
+    def this(props: IconProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IconProps, context: js.Any) = this()
+  }
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("react-native-vector-icons/Zocial", "default.Button")
+    @js.native
+    class Button protected ()
+      extends typings.reactNativeVectorIcons.iconMod.Icon.Button {
+      def this(props: IconButtonProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: IconButtonProps, context: js.Any) = this()
+    }
+    
+    @JSImport("react-native-vector-icons/Zocial", "default.TabBarItem")
+    @js.native
+    class TabBarItem protected ()
+      extends typings.reactNativeVectorIcons.iconMod.Icon.TabBarItem {
+      def this(props: TabBarItemIOSProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: TabBarItemIOSProps, context: js.Any) = this()
+    }
+    
+    @JSImport("react-native-vector-icons/Zocial", "default.TabBarItemIOS")
+    @js.native
+    class TabBarItemIOS protected ()
+      extends typings.reactNativeVectorIcons.iconMod.Icon.TabBarItemIOS {
+      def this(props: TabBarItemIOSProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: TabBarItemIOSProps, context: js.Any) = this()
+    }
+    
+    @JSImport("react-native-vector-icons/Zocial", "default.ToolbarAndroid")
+    @js.native
+    class ToolbarAndroid protected ()
+      extends typings.reactNativeVectorIcons.iconMod.Icon.ToolbarAndroid {
+      def this(props: ToolbarAndroidProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: ToolbarAndroidProps, context: js.Any) = this()
+    }
+    
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSource")
+    @js.native
     def getImageSource(name: String): js.Promise[ImageSource] = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSource")
+    @js.native
     def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String): js.Promise[ImageSource] = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSource")
+    @js.native
     def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSource")
+    @js.native
     def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
     
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSourceSync")
+    @js.native
     def getImageSourceSync(name: String): ImageSource = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSourceSync")
+    @js.native
     def getImageSourceSync(name: String, size: js.UndefOr[scala.Nothing], color: String): ImageSource = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSourceSync")
+    @js.native
     def getImageSourceSync(name: String, size: Double): ImageSource = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.getImageSourceSync")
+    @js.native
     def getImageSourceSync(name: String, size: Double, color: String): ImageSource = js.native
     
+    @JSImport("react-native-vector-icons/Zocial", "default.getRawGlyphMap")
+    @js.native
     def getRawGlyphMap(): StringDictionary[Double] = js.native
     
+    @JSImport("react-native-vector-icons/Zocial", "default.hasIcon")
+    @js.native
     def hasIcon(name: String): Boolean = js.native
     
+    @JSImport("react-native-vector-icons/Zocial", "default.loadFont")
+    @js.native
     def loadFont(): js.Promise[Unit] = js.native
+    @JSImport("react-native-vector-icons/Zocial", "default.loadFont")
+    @js.native
     def loadFont(file: String): js.Promise[Unit] = js.native
-    
-    @js.native
-    class Button ()
-      extends Component[IconButtonProps, js.Any, js.Any]
-    
-    @js.native
-    class TabBarItem ()
-      extends Component[TabBarItemIOSProps, js.Any, js.Any]
-    
-    @js.native
-    class TabBarItemIOS ()
-      extends Component[TabBarItemIOSProps, js.Any, js.Any]
-    
-    @js.native
-    class ToolbarAndroid ()
-      extends Component[ToolbarAndroidProps, js.Any, js.Any]
   }
 }

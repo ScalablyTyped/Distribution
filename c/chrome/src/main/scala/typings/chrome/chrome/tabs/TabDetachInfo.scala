@@ -1,11 +1,12 @@
 package typings.chrome.chrome.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabDetachInfo extends js.Object {
+trait TabDetachInfo extends StObject {
   
   var oldPosition: Double = js.native
   
@@ -20,24 +21,12 @@ object TabDetachInfo {
   }
   
   @scala.inline
-  implicit class TabDetachInfoOps[Self <: TabDetachInfo] (val x: Self) extends AnyVal {
+  implicit class TabDetachInfoMutableBuilder[Self <: TabDetachInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOldPosition(value: Double): Self = this.set("oldPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldWindowId(value: Double): Self = this.set("oldWindowId", value.asInstanceOf[js.Any])
+    def setOldWindowId(value: Double): Self = StObject.set(x, "oldWindowId", value.asInstanceOf[js.Any])
   }
 }

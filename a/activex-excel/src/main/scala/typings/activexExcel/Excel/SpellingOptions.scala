@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpellingOptions extends js.Object {
+trait SpellingOptions extends StObject {
   
   var ArabicModes: XlArabicModes = js.native
   
@@ -79,78 +80,66 @@ object SpellingOptions {
   }
   
   @scala.inline
-  implicit class SpellingOptionsOps[Self <: SpellingOptions] (val x: Self) extends AnyVal {
+  implicit class SpellingOptionsMutableBuilder[Self <: SpellingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArabicModes(value: XlArabicModes): Self = StObject.set(x, "ArabicModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArabicStrictAlefHamza(value: Boolean): Self = StObject.set(x, "ArabicStrictAlefHamza", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArabicStrictFinalYaa(value: Boolean): Self = StObject.set(x, "ArabicStrictFinalYaa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArabicModes(value: XlArabicModes): Self = this.set("ArabicModes", value.asInstanceOf[js.Any])
+    def setArabicStrictTaaMarboota(value: Boolean): Self = StObject.set(x, "ArabicStrictTaaMarboota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArabicStrictAlefHamza(value: Boolean): Self = this.set("ArabicStrictAlefHamza", value.asInstanceOf[js.Any])
+    def setBrazilReform(value: XlPortugueseReform): Self = StObject.set(x, "BrazilReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArabicStrictFinalYaa(value: Boolean): Self = this.set("ArabicStrictFinalYaa", value.asInstanceOf[js.Any])
+    def setDictLang(value: Double): Self = StObject.set(x, "DictLang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArabicStrictTaaMarboota(value: Boolean): Self = this.set("ArabicStrictTaaMarboota", value.asInstanceOf[js.Any])
+    def setExcelDotSpellingOptions_typekey(value: SpellingOptions): Self = StObject.set(x, "Excel.SpellingOptions_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrazilReform(value: XlPortugueseReform): Self = this.set("BrazilReform", value.asInstanceOf[js.Any])
+    def setGermanPostReform(value: Boolean): Self = StObject.set(x, "GermanPostReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictLang(value: Double): Self = this.set("DictLang", value.asInstanceOf[js.Any])
+    def setHebrewModes(value: XlHebrewModes): Self = StObject.set(x, "HebrewModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSpellingOptions_typekey(value: SpellingOptions): Self = this.set("Excel.SpellingOptions_typekey", value.asInstanceOf[js.Any])
+    def setIgnoreCaps(value: Boolean): Self = StObject.set(x, "IgnoreCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGermanPostReform(value: Boolean): Self = this.set("GermanPostReform", value.asInstanceOf[js.Any])
+    def setIgnoreFileNames(value: Boolean): Self = StObject.set(x, "IgnoreFileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHebrewModes(value: XlHebrewModes): Self = this.set("HebrewModes", value.asInstanceOf[js.Any])
+    def setIgnoreMixedDigits(value: Boolean): Self = StObject.set(x, "IgnoreMixedDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCaps(value: Boolean): Self = this.set("IgnoreCaps", value.asInstanceOf[js.Any])
+    def setKoreanCombineAux(value: Boolean): Self = StObject.set(x, "KoreanCombineAux", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreFileNames(value: Boolean): Self = this.set("IgnoreFileNames", value.asInstanceOf[js.Any])
+    def setKoreanProcessCompound(value: Boolean): Self = StObject.set(x, "KoreanProcessCompound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreMixedDigits(value: Boolean): Self = this.set("IgnoreMixedDigits", value.asInstanceOf[js.Any])
+    def setKoreanUseAutoChangeList(value: Boolean): Self = StObject.set(x, "KoreanUseAutoChangeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKoreanCombineAux(value: Boolean): Self = this.set("KoreanCombineAux", value.asInstanceOf[js.Any])
+    def setPortugalReform(value: XlPortugueseReform): Self = StObject.set(x, "PortugalReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKoreanProcessCompound(value: Boolean): Self = this.set("KoreanProcessCompound", value.asInstanceOf[js.Any])
+    def setRussianStrictE(value: Boolean): Self = StObject.set(x, "RussianStrictE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKoreanUseAutoChangeList(value: Boolean): Self = this.set("KoreanUseAutoChangeList", value.asInstanceOf[js.Any])
+    def setSpanishModes(value: XlSpanishModes): Self = StObject.set(x, "SpanishModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortugalReform(value: XlPortugueseReform): Self = this.set("PortugalReform", value.asInstanceOf[js.Any])
+    def setSuggestMainOnly(value: Boolean): Self = StObject.set(x, "SuggestMainOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRussianStrictE(value: Boolean): Self = this.set("RussianStrictE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpanishModes(value: XlSpanishModes): Self = this.set("SpanishModes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestMainOnly(value: Boolean): Self = this.set("SuggestMainOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDict(value: String): Self = this.set("UserDict", value.asInstanceOf[js.Any])
+    def setUserDict(value: String): Self = StObject.set(x, "UserDict", value.asInstanceOf[js.Any])
   }
 }

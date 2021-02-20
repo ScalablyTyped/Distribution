@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMeetingResponseType extends js.Object
+sealed trait EmailMeetingResponseType extends StObject
 /** Defines the type of response to a meeting request. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMeetingResponseType")
 @js.native
-object EmailMeetingResponseType extends js.Object {
+object EmailMeetingResponseType extends StObject {
   
   /** The meeting was accepted. */
   @js.native

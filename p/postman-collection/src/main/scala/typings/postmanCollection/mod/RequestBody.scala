@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.File
 import typings.postmanCollection.anon.SrcString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,15 @@ class RequestBody protected () extends PropertyBase[RequestBodyDefinition] {
   var urlencoded: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.native
 }
 /* static members */
-@JSImport("postman-collection", "RequestBody")
-@js.native
-object RequestBody extends js.Object {
+object RequestBody {
   
-  var MODES: File = js.native
+  @JSImport("postman-collection", "RequestBody")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("postman-collection", "RequestBody.MODES")
+  @js.native
+  def MODES: File = js.native
+  @scala.inline
+  def MODES_=(x: File): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODES")(x.asInstanceOf[js.Any])
 }

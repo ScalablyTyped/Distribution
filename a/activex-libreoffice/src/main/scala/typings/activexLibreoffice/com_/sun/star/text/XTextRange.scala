@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,42 +64,30 @@ object XTextRange {
   }
   
   @scala.inline
-  implicit class XTextRangeOps[Self <: XTextRange] (val x: Self) extends AnyVal {
+  implicit class XTextRangeMutableBuilder[Self <: XTextRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: XTextRange): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEnd(value: () => XTextRange): Self = StObject.set(x, "getEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStart(value: () => XTextRange): Self = StObject.set(x, "getStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnd(value: XTextRange): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStart(value: XTextRange): Self = this.set("Start", value.asInstanceOf[js.Any])
+    def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setString(value: String): Self = this.set("String", value.asInstanceOf[js.Any])
+    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnd(value: () => XTextRange): Self = this.set("getEnd", js.Any.fromFunction0(value))
+    def setStart(value: XTextRange): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStart(value: () => XTextRange): Self = this.set("getStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetString(value: () => String): Self = this.set("getString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetText(value: () => XText): Self = this.set("getText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetString(value: String => Unit): Self = this.set("setString", js.Any.fromFunction1(value))
+    def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
   }
 }

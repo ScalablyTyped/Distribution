@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.sequence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,26 +53,14 @@ object XTextConvert {
   }
   
   @scala.inline
-  implicit class XTextConvertOps[Self <: XTextConvert] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class XTextConvertMutableBuilder[Self <: XTextConvert] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setConvertToTable(
       value: (SeqEquiv[SeqEquiv[sequence[XTextRange]]], SeqEquiv[SeqEquiv[PropertyValues]], SeqEquiv[PropertyValues], PropertyValues) => XTextTable
-    ): Self = this.set("convertToTable", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "convertToTable", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setConvertToTextFrame(value: (XTextRange, XTextRange, PropertyValues) => XTextContent): Self = this.set("convertToTextFrame", js.Any.fromFunction3(value))
+    def setConvertToTextFrame(value: (XTextRange, XTextRange, PropertyValues) => XTextContent): Self = StObject.set(x, "convertToTextFrame", js.Any.fromFunction3(value))
   }
 }

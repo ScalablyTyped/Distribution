@@ -1,12 +1,13 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   /**
     *  Default coercion throws.
@@ -79,57 +80,45 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoerce(value: Node => Node): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEval(value: () => Node): Self = StObject.set(x, "eval", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCoerce(value: Node => Node): Self = this.set("coerce", js.Any.fromFunction1(value))
+    def setFilename(value: java.lang.String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setFirst(value: Node): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEval(value: () => Node): Self = this.set("eval", js.Any.fromFunction0(value))
+    def setHash(value: java.lang.String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: java.lang.String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Node): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setNodeName(value: java.lang.String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: java.lang.String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setOperate(value: (java.lang.String, Node) => Node): Self = StObject.set(x, "operate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLineno(value: Double): Self = this.set("lineno", value.asInstanceOf[js.Any])
+    def setShouldCoerce(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "shouldCoerce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNodeName(value: java.lang.String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setToBoolean(value: () => Boolean): Self = StObject.set(x, "toBoolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOperate(value: (java.lang.String, Node) => Node): Self = this.set("operate", js.Any.fromFunction2(value))
+    def setToExpression(value: () => Expression): Self = StObject.set(x, "toExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShouldCoerce(value: java.lang.String => scala.Boolean): Self = this.set("shouldCoerce", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToBoolean(value: () => Boolean): Self = this.set("toBoolean", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToExpression(value: () => Expression): Self = this.set("toExpression", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToJSON(value: () => Column): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => Column): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

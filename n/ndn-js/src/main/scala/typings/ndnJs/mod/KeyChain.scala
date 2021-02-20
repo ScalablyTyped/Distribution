@@ -1,5 +1,6 @@
 package typings.ndnJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,9 @@ class KeyChain ()
   def this(pibLocator: String, tpmLocator: String, allowReset: Boolean) = this()
 }
 /* static members */
-@JSImport("ndn-js", "KeyChain")
-@js.native
-object KeyChain extends js.Object {
+object KeyChain {
   
+  @JSImport("ndn-js", "KeyChain.getDefaultKeyParams")
+  @js.native
   def getDefaultKeyParams(): typings.ndnJs.keyChainMod.KeyParams = js.native
 }

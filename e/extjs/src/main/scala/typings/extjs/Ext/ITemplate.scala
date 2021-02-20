@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -140,106 +141,94 @@ object ITemplate {
   }
   
   @scala.inline
-  implicit class ITemplateOps[Self <: ITemplate] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ITemplateMutableBuilder[Self <: ITemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAppend(
       value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("append", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "append", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def setApply(value: /* values */ js.UndefOr[js.Any] => java.lang.String): Self = this.set("apply", js.Any.fromFunction1(value))
+    def setApply(value: /* values */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
+    def setApplyOut(value: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array]) => Array): Self = StObject.set(x, "applyOut", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApplyOut(value: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array]) => Array): Self = this.set("applyOut", js.Any.fromFunction2(value))
+    def setApplyOutUndefined: Self = StObject.set(x, "applyOut", js.undefined)
     
     @scala.inline
-    def deleteApplyOut: Self = this.set("applyOut", js.undefined)
+    def setApplyTemplate(value: /* values */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "applyTemplate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplyTemplate(value: /* values */ js.UndefOr[js.Any] => java.lang.String): Self = this.set("applyTemplate", js.Any.fromFunction1(value))
+    def setApplyTemplateUndefined: Self = StObject.set(x, "applyTemplate", js.undefined)
     
     @scala.inline
-    def deleteApplyTemplate: Self = this.set("applyTemplate", js.undefined)
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def setCompile(value: () => ITemplate): Self = this.set("compile", js.Any.fromFunction0(value))
+    def setCompile(value: () => ITemplate): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteCompile: Self = this.set("compile", js.undefined)
+    def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
     
     @scala.inline
-    def setCompiled(value: Boolean): Self = this.set("compiled", value.asInstanceOf[js.Any])
+    def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompiled: Self = this.set("compiled", js.undefined)
+    def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
     
     @scala.inline
-    def setDisableFormats(value: Boolean): Self = this.set("disableFormats", value.asInstanceOf[js.Any])
+    def setDisableFormats(value: Boolean): Self = StObject.set(x, "disableFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableFormats: Self = this.set("disableFormats", js.undefined)
+    def setDisableFormatsUndefined: Self = StObject.set(x, "disableFormats", js.undefined)
     
     @scala.inline
     def setInsertAfter(
       value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertAfter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
     @scala.inline
     def setInsertBefore(
       value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertBefore", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
     @scala.inline
     def setInsertFirst(
       value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertFirst", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertFirst", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertFirst: Self = this.set("insertFirst", js.undefined)
+    def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
     
     @scala.inline
-    def setIsTemplate(value: Boolean): Self = this.set("isTemplate", value.asInstanceOf[js.Any])
+    def setIsTemplate(value: Boolean): Self = StObject.set(x, "isTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTemplate: Self = this.set("isTemplate", js.undefined)
+    def setIsTemplateUndefined: Self = StObject.set(x, "isTemplate", js.undefined)
     
     @scala.inline
     def setOverwrite(
       value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("overwrite", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "overwrite", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def setSet(value: (/* html */ js.UndefOr[java.lang.String], /* compile */ js.UndefOr[Boolean]) => ITemplate): Self = this.set("set", js.Any.fromFunction2(value))
+    def setSet(value: (/* html */ js.UndefOr[java.lang.String], /* compile */ js.UndefOr[Boolean]) => ITemplate): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

@@ -5,16 +5,26 @@ import typings.playable.adaptersTypesMod.IPlaybackAdapterClass
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.PlayableMediaSource
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/playback-engine/output/native/adapters-strategy", JSImport.Namespace)
-@js.native
-object adaptersStrategyMod extends js.Object {
+object adaptersStrategyMod {
+  
+  @JSImport("playable/dist/src/modules/playback-engine/output/native/adapters-strategy", JSImport.Default)
+  @js.native
+  class default protected () extends AdaptersStrategy {
+    def this(eventEmitter: IEventEmitter, video: HTMLVideoElement) = this()
+    def this(
+      eventEmitter: IEventEmitter,
+      video: HTMLVideoElement,
+      playbackAdapters: js.Array[IPlaybackAdapterClass]
+    ) = this()
+  }
   
   @js.native
-  trait AdaptersStrategy extends js.Object {
+  trait AdaptersStrategy extends StObject {
     
     var _attachedAdapter: js.Any = js.native
     
@@ -39,15 +49,5 @@ object adaptersStrategyMod extends js.Object {
     def connectAdapter(src: PlayableMediaSource): Unit = js.native
     
     def destroy(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends AdaptersStrategy {
-    def this(eventEmitter: IEventEmitter, video: HTMLVideoElement) = this()
-    def this(
-      eventEmitter: IEventEmitter,
-      video: HTMLVideoElement,
-      playbackAdapters: js.Array[IPlaybackAdapterClass]
-    ) = this()
   }
 }

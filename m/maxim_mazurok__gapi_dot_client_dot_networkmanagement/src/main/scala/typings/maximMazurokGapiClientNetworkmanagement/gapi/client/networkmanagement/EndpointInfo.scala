@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointInfo extends js.Object {
+trait EndpointInfo extends StObject {
   
   /** Destination IP address. */
   var destinationIp: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object EndpointInfo {
   }
   
   @scala.inline
-  implicit class EndpointInfoOps[Self <: EndpointInfo] (val x: Self) extends AnyVal {
+  implicit class EndpointInfoMutableBuilder[Self <: EndpointInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationIp(value: String): Self = StObject.set(x, "destinationIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationIpUndefined: Self = StObject.set(x, "destinationIp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationNetworkUri(value: String): Self = StObject.set(x, "destinationNetworkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationIp(value: String): Self = this.set("destinationIp", value.asInstanceOf[js.Any])
+    def setDestinationNetworkUriUndefined: Self = StObject.set(x, "destinationNetworkUri", js.undefined)
     
     @scala.inline
-    def deleteDestinationIp: Self = this.set("destinationIp", js.undefined)
+    def setDestinationPort(value: Double): Self = StObject.set(x, "destinationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationNetworkUri(value: String): Self = this.set("destinationNetworkUri", value.asInstanceOf[js.Any])
+    def setDestinationPortUndefined: Self = StObject.set(x, "destinationPort", js.undefined)
     
     @scala.inline
-    def deleteDestinationNetworkUri: Self = this.set("destinationNetworkUri", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationPort(value: Double): Self = this.set("destinationPort", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteDestinationPort: Self = this.set("destinationPort", js.undefined)
+    def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setSourceNetworkUri(value: String): Self = StObject.set(x, "sourceNetworkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIp(value: String): Self = this.set("sourceIp", value.asInstanceOf[js.Any])
+    def setSourceNetworkUriUndefined: Self = StObject.set(x, "sourceNetworkUri", js.undefined)
     
     @scala.inline
-    def deleteSourceIp: Self = this.set("sourceIp", js.undefined)
+    def setSourcePort(value: Double): Self = StObject.set(x, "sourcePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceNetworkUri(value: String): Self = this.set("sourceNetworkUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceNetworkUri: Self = this.set("sourceNetworkUri", js.undefined)
-    
-    @scala.inline
-    def setSourcePort(value: Double): Self = this.set("sourcePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePort: Self = this.set("sourcePort", js.undefined)
+    def setSourcePortUndefined: Self = StObject.set(x, "sourcePort", js.undefined)
   }
 }

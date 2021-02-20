@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.lessThan
   - typings.exceljs.exceljsStrings.between
 */
-trait CellIsOperators extends js.Object
+trait CellIsOperators extends StObject
 object CellIsOperators {
   
   @scala.inline

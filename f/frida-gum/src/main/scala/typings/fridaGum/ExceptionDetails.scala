@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExceptionDetails extends js.Object {
+trait ExceptionDetails extends StObject {
   
   /**
     * Address where the exception occurred.
@@ -46,36 +47,24 @@ object ExceptionDetails {
   }
   
   @scala.inline
-  implicit class ExceptionDetailsOps[Self <: ExceptionDetails] (val x: Self) extends AnyVal {
+  implicit class ExceptionDetailsMutableBuilder[Self <: ExceptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemory(value: ExceptionMemoryDetails): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: NativePointer): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
     @scala.inline
-    def setContext(value: CpuContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setNativeContext(value: NativePointer): Self = StObject.set(x, "nativeContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeContext(value: NativePointer): Self = this.set("nativeContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ExceptionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemory(value: ExceptionMemoryDetails): Self = this.set("memory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setType(value: ExceptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

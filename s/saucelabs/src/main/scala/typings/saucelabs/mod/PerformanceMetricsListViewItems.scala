@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,78 +39,66 @@ object PerformanceMetricsListViewItems {
   }
   
   @scala.inline
-  implicit class PerformanceMetricsListViewItemsOps[Self <: PerformanceMetricsListViewItems] (val x: Self) extends AnyVal {
+  implicit class PerformanceMetricsListViewItemsMutableBuilder[Self <: PerformanceMetricsListViewItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJob_creation_time(value: String): Self = StObject.set(x, "job_creation_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setJob_creation_timeUndefined: Self = StObject.set(x, "job_creation_time", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob_creation_time(value: String): Self = this.set("job_creation_time", value.asInstanceOf[js.Any])
+    def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
     
     @scala.inline
-    def deleteJob_creation_time: Self = this.set("job_creation_time", js.undefined)
+    def setJob_name_hash(value: String): Self = StObject.set(x, "job_name_hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob_id(value: String): Self = this.set("job_id", value.asInstanceOf[js.Any])
+    def setJob_name_hashUndefined: Self = StObject.set(x, "job_name_hash", js.undefined)
     
     @scala.inline
-    def deleteJob_id: Self = this.set("job_id", js.undefined)
+    def setJob_owner(value: String): Self = StObject.set(x, "job_owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob_name_hash(value: String): Self = this.set("job_name_hash", value.asInstanceOf[js.Any])
+    def setJob_ownerUndefined: Self = StObject.set(x, "job_owner", js.undefined)
     
     @scala.inline
-    def deleteJob_name_hash: Self = this.set("job_name_hash", js.undefined)
+    def setLoad_id(value: String): Self = StObject.set(x, "load_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJob_owner(value: String): Self = this.set("job_owner", value.asInstanceOf[js.Any])
+    def setLoad_idUndefined: Self = StObject.set(x, "load_id", js.undefined)
     
     @scala.inline
-    def deleteJob_owner: Self = this.set("job_owner", js.undefined)
+    def setLoader_id(value: String): Self = StObject.set(x, "loader_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad_id(value: String): Self = this.set("load_id", value.asInstanceOf[js.Any])
+    def setLoader_idUndefined: Self = StObject.set(x, "loader_id", js.undefined)
     
     @scala.inline
-    def deleteLoad_id: Self = this.set("load_id", js.undefined)
+    def setMetric_data(value: PerformanceMetricsDetails): Self = StObject.set(x, "metric_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader_id(value: String): Self = this.set("loader_id", value.asInstanceOf[js.Any])
+    def setMetric_dataUndefined: Self = StObject.set(x, "metric_data", js.undefined)
     
     @scala.inline
-    def deleteLoader_id: Self = this.set("loader_id", js.undefined)
+    def setOrder_index(value: Double): Self = StObject.set(x, "order_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetric_data(value: PerformanceMetricsDetails): Self = this.set("metric_data", value.asInstanceOf[js.Any])
+    def setOrder_indexUndefined: Self = StObject.set(x, "order_index", js.undefined)
     
     @scala.inline
-    def deleteMetric_data: Self = this.set("metric_data", js.undefined)
+    def setPage_url(value: String): Self = StObject.set(x, "page_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder_index(value: Double): Self = this.set("order_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder_index: Self = this.set("order_index", js.undefined)
-    
-    @scala.inline
-    def setPage_url(value: String): Self = this.set("page_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage_url: Self = this.set("page_url", js.undefined)
+    def setPage_urlUndefined: Self = StObject.set(x, "page_url", js.undefined)
   }
 }

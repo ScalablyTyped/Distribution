@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,30 +77,18 @@ object XDataPilotTable2 {
   }
   
   @scala.inline
-  implicit class XDataPilotTable2Ops[Self <: XDataPilotTable2] (val x: Self) extends AnyVal {
+  implicit class XDataPilotTable2MutableBuilder[Self <: XDataPilotTable2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[_]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetOutputRangeByType(value: Double => CellRangeAddress): Self = StObject.set(x, "getOutputRangeByType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPositionData(value: CellAddress => DataPilotTablePositionData): Self = StObject.set(x, "getPositionData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[_]]): Self = this.set("getDrillDownData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetOutputRangeByType(value: Double => CellRangeAddress): Self = this.set("getOutputRangeByType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPositionData(value: CellAddress => DataPilotTablePositionData): Self = this.set("getPositionData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertDrillDownSheet(value: CellAddress => Unit): Self = this.set("insertDrillDownSheet", js.Any.fromFunction1(value))
+    def setInsertDrillDownSheet(value: CellAddress => Unit): Self = StObject.set(x, "insertDrillDownSheet", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,75 +44,63 @@ object WindowsUniversalAppX {
   }
   
   @scala.inline
-  implicit class WindowsUniversalAppXOps[Self <: WindowsUniversalAppX] (val x: Self) extends AnyVal {
+  implicit class WindowsUniversalAppXMutableBuilder[Self <: WindowsUniversalAppX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicableArchitectures(value: WindowsArchitecture): Self = StObject.set(x, "applicableArchitectures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicableArchitecturesUndefined: Self = StObject.set(x, "applicableArchitectures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicableDeviceTypes(value: WindowsDeviceType): Self = StObject.set(x, "applicableDeviceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableArchitectures(value: WindowsArchitecture): Self = this.set("applicableArchitectures", value.asInstanceOf[js.Any])
+    def setApplicableDeviceTypesUndefined: Self = StObject.set(x, "applicableDeviceTypes", js.undefined)
     
     @scala.inline
-    def deleteApplicableArchitectures: Self = this.set("applicableArchitectures", js.undefined)
+    def setIdentityName(value: NullableOption[String]): Self = StObject.set(x, "identityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableDeviceTypes(value: WindowsDeviceType): Self = this.set("applicableDeviceTypes", value.asInstanceOf[js.Any])
+    def setIdentityNameNull: Self = StObject.set(x, "identityName", null)
     
     @scala.inline
-    def deleteApplicableDeviceTypes: Self = this.set("applicableDeviceTypes", js.undefined)
+    def setIdentityNameUndefined: Self = StObject.set(x, "identityName", js.undefined)
     
     @scala.inline
-    def setIdentityName(value: NullableOption[String]): Self = this.set("identityName", value.asInstanceOf[js.Any])
+    def setIdentityPublisherHash(value: String): Self = StObject.set(x, "identityPublisherHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentityName: Self = this.set("identityName", js.undefined)
+    def setIdentityPublisherHashUndefined: Self = StObject.set(x, "identityPublisherHash", js.undefined)
     
     @scala.inline
-    def setIdentityNameNull: Self = this.set("identityName", null)
+    def setIdentityResourceIdentifier(value: NullableOption[String]): Self = StObject.set(x, "identityResourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPublisherHash(value: String): Self = this.set("identityPublisherHash", value.asInstanceOf[js.Any])
+    def setIdentityResourceIdentifierNull: Self = StObject.set(x, "identityResourceIdentifier", null)
     
     @scala.inline
-    def deleteIdentityPublisherHash: Self = this.set("identityPublisherHash", js.undefined)
+    def setIdentityResourceIdentifierUndefined: Self = StObject.set(x, "identityResourceIdentifier", js.undefined)
     
     @scala.inline
-    def setIdentityResourceIdentifier(value: NullableOption[String]): Self = this.set("identityResourceIdentifier", value.asInstanceOf[js.Any])
+    def setIdentityVersion(value: NullableOption[String]): Self = StObject.set(x, "identityVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentityResourceIdentifier: Self = this.set("identityResourceIdentifier", js.undefined)
+    def setIdentityVersionNull: Self = StObject.set(x, "identityVersion", null)
     
     @scala.inline
-    def setIdentityResourceIdentifierNull: Self = this.set("identityResourceIdentifier", null)
+    def setIdentityVersionUndefined: Self = StObject.set(x, "identityVersion", js.undefined)
     
     @scala.inline
-    def setIdentityVersion(value: NullableOption[String]): Self = this.set("identityVersion", value.asInstanceOf[js.Any])
+    def setIsBundle(value: Boolean): Self = StObject.set(x, "isBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentityVersion: Self = this.set("identityVersion", js.undefined)
+    def setIsBundleUndefined: Self = StObject.set(x, "isBundle", js.undefined)
     
     @scala.inline
-    def setIdentityVersionNull: Self = this.set("identityVersion", null)
+    def setMinimumSupportedOperatingSystem(value: WindowsMinimumOperatingSystem): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBundle(value: Boolean): Self = this.set("isBundle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsBundle: Self = this.set("isBundle", js.undefined)
-    
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: WindowsMinimumOperatingSystem): Self = this.set("minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumSupportedOperatingSystem: Self = this.set("minimumSupportedOperatingSystem", js.undefined)
+    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
   }
 }

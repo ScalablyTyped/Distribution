@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.CategoryId
 import typings.maximMazurokGapiClientYoutube.anon.Part
 import typings.maximMazurokGapiClientYoutube.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelsResource extends js.Object {
+trait ChannelsResource extends StObject {
   
   /** Retrieves a list of resources, possibly filtered. */
   def list(): Request[ChannelListResponse] = js.native

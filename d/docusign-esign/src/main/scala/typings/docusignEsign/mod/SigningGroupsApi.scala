@@ -1,12 +1,13 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "SigningGroupsApi")
 @js.native
-class SigningGroupsApi protected () extends js.Object {
+class SigningGroupsApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def createList(accountId: String): js.Promise[SigningGroupInformation] = js.native

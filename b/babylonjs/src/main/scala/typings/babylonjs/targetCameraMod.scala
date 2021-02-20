@@ -7,14 +7,14 @@ import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/targetCamera", JSImport.Namespace)
-@js.native
-object targetCameraMod extends js.Object {
+object targetCameraMod {
   
+  @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera")
   @js.native
   class TargetCamera protected () extends Camera {
     /**
@@ -178,13 +178,28 @@ object targetCameraMod extends js.Object {
     var updateUpVectorFromRotation: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object TargetCamera extends js.Object {
+  object TargetCamera {
     
-    var _RigCamTransformMatrix: js.Any = js.native
+    @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _TargetFocalPoint: js.Any = js.native
+    @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._RigCamTransformMatrix")
+    @js.native
+    def _RigCamTransformMatrix: js.Any = js.native
+    @scala.inline
+    def _RigCamTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RigCamTransformMatrix")(x.asInstanceOf[js.Any])
     
-    var _TargetTransformMatrix: js.Any = js.native
+    @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._TargetFocalPoint")
+    @js.native
+    def _TargetFocalPoint: js.Any = js.native
+    @scala.inline
+    def _TargetFocalPoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetFocalPoint")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Cameras/targetCamera", "TargetCamera._TargetTransformMatrix")
+    @js.native
+    def _TargetTransformMatrix: js.Any = js.native
+    @scala.inline
+    def _TargetTransformMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TargetTransformMatrix")(x.asInstanceOf[js.Any])
   }
 }

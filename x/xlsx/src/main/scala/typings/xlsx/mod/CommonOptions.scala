@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonOptions extends js.Object {
+trait CommonOptions extends StObject {
   
   /**
     * If true, throw errors when features are not understood
@@ -55,54 +56,42 @@ object CommonOptions {
   }
   
   @scala.inline
-  implicit class CommonOptionsOps[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookVBA(value: Boolean): Self = StObject.set(x, "bookVBA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookVBAUndefined: Self = StObject.set(x, "bookVBA", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellDates(value: Boolean): Self = StObject.set(x, "cellDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWTF(value: Boolean): Self = this.set("WTF", value.asInstanceOf[js.Any])
+    def setCellDatesUndefined: Self = StObject.set(x, "cellDates", js.undefined)
     
     @scala.inline
-    def deleteWTF: Self = this.set("WTF", js.undefined)
+    def setCellStyles(value: Boolean): Self = StObject.set(x, "cellStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookVBA(value: Boolean): Self = this.set("bookVBA", value.asInstanceOf[js.Any])
+    def setCellStylesUndefined: Self = StObject.set(x, "cellStyles", js.undefined)
     
     @scala.inline
-    def deleteBookVBA: Self = this.set("bookVBA", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellDates(value: Boolean): Self = this.set("cellDates", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteCellDates: Self = this.set("cellDates", js.undefined)
+    def setSheetStubs(value: Boolean): Self = StObject.set(x, "sheetStubs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellStyles(value: Boolean): Self = this.set("cellStyles", value.asInstanceOf[js.Any])
+    def setSheetStubsUndefined: Self = StObject.set(x, "sheetStubs", js.undefined)
     
     @scala.inline
-    def deleteCellStyles: Self = this.set("cellStyles", js.undefined)
+    def setWTF(value: Boolean): Self = StObject.set(x, "WTF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setSheetStubs(value: Boolean): Self = this.set("sheetStubs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetStubs: Self = this.set("sheetStubs", js.undefined)
+    def setWTFUndefined: Self = StObject.set(x, "WTF", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object userIdnumberundefinedBase {
   }
   
   @scala.inline
-  implicit class userIdnumberundefinedBaseOps[Self <: userIdnumberundefinedBase] (val x: Self) extends AnyVal {
+  implicit class userIdnumberundefinedBaseMutableBuilder[Self <: userIdnumberundefinedBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSudo(value: String | Double): Self = this.set("sudo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSudo: Self = this.set("sudo", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: Double): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

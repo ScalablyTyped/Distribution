@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BacklogLevel extends js.Object {
+trait BacklogLevel extends StObject {
   
   /**
     * Reference name of the corresponding WIT category
@@ -41,36 +42,24 @@ object BacklogLevel {
   }
   
   @scala.inline
-  implicit class BacklogLevelOps[Self <: BacklogLevel] (val x: Self) extends AnyVal {
+  implicit class BacklogLevelMutableBuilder[Self <: BacklogLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryReferenceName(value: String): Self = StObject.set(x, "categoryReferenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPluralName(value: String): Self = StObject.set(x, "pluralName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkItemStates(value: js.Array[String]): Self = StObject.set(x, "workItemStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryReferenceName(value: String): Self = this.set("categoryReferenceName", value.asInstanceOf[js.Any])
+    def setWorkItemStatesVarargs(value: String*): Self = StObject.set(x, "workItemStates", js.Array(value :_*))
     
     @scala.inline
-    def setPluralName(value: String): Self = this.set("pluralName", value.asInstanceOf[js.Any])
+    def setWorkItemTypes(value: js.Array[String]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItemStatesVarargs(value: String*): Self = this.set("workItemStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItemStates(value: js.Array[String]): Self = this.set("workItemStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemTypesVarargs(value: String*): Self = this.set("workItemTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItemTypes(value: js.Array[String]): Self = this.set("workItemTypes", value.asInstanceOf[js.Any])
+    def setWorkItemTypesVarargs(value: String*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
   }
 }

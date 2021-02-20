@@ -1,11 +1,12 @@
 package typings.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricsCallbackOptions extends js.Object {
+trait MetricsCallbackOptions extends StObject {
   
   /**
     * If this value is set, err will be a corresponding `RequestCloseError` or `RequestAbortedError`.
@@ -77,57 +78,45 @@ object MetricsCallbackOptions {
   }
   
   @scala.inline
-  implicit class MetricsCallbackOptionsOps[Self <: MetricsCallbackOptions] (val x: Self) extends AnyVal {
+  implicit class MetricsCallbackOptionsMutableBuilder[Self <: MetricsCallbackOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionStateUndefined: Self = StObject.set(x, "connectionState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInflightRequests(value: Double): Self = StObject.set(x, "inflightRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInflightRequests(value: Double): Self = this.set("inflightRequests", value.asInstanceOf[js.Any])
+    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Double): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPreLatency(value: Double): Self = StObject.set(x, "preLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setPreLatencyNull: Self = StObject.set(x, "preLatency", null)
     
     @scala.inline
-    def setTotalLatency(value: Double): Self = this.set("totalLatency", value.asInstanceOf[js.Any])
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnfinishedRequests(value: Double): Self = this.set("unfinishedRequests", value.asInstanceOf[js.Any])
+    def setTotalLatency(value: Double): Self = StObject.set(x, "totalLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionState(value: TMetricsCallback): Self = this.set("connectionState", value.asInstanceOf[js.Any])
+    def setUnfinishedRequests(value: Double): Self = StObject.set(x, "unfinishedRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectionState: Self = this.set("connectionState", js.undefined)
+    def setUseLatency(value: Double): Self = StObject.set(x, "useLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreLatency(value: Double): Self = this.set("preLatency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreLatencyNull: Self = this.set("preLatency", null)
-    
-    @scala.inline
-    def setUseLatency(value: Double): Self = this.set("useLatency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseLatencyNull: Self = this.set("useLatency", null)
+    def setUseLatencyNull: Self = StObject.set(x, "useLatency", null)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormField extends js.Object {
+trait FormField extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -94,93 +95,81 @@ object FormField {
   }
   
   @scala.inline
-  implicit class FormFieldOps[Self <: FormField] (val x: Self) extends AnyVal {
+  implicit class FormFieldMutableBuilder[Self <: FormField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateOnExit(value: Boolean): Self = StObject.set(x, "CalculateOnExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckBox(value: CheckBox): Self = StObject.set(x, "CheckBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateOnExit(value: Boolean): Self = this.set("CalculateOnExit", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckBox(value: CheckBox): Self = this.set("CheckBox", value.asInstanceOf[js.Any])
+    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: () => Unit): Self = this.set("Copy", js.Any.fromFunction0(value))
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDropDown(value: DropDown): Self = StObject.set(x, "DropDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCut(value: () => Unit): Self = this.set("Cut", js.Any.fromFunction0(value))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setEntryMacro(value: String): Self = StObject.set(x, "EntryMacro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDown(value: DropDown): Self = this.set("DropDown", value.asInstanceOf[js.Any])
+    def setExitMacro(value: String): Self = StObject.set(x, "ExitMacro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryMacro(value: String): Self = this.set("EntryMacro", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitMacro(value: String): Self = this.set("ExitMacro", value.asInstanceOf[js.Any])
+    def setNext(value: FormField): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setOwnHelp(value: Boolean): Self = StObject.set(x, "OwnHelp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnStatus(value: Boolean): Self = StObject.set(x, "OwnStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: FormField): Self = this.set("Next", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnHelp(value: Boolean): Self = this.set("OwnHelp", value.asInstanceOf[js.Any])
+    def setPrevious(value: FormField): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnStatus(value: Boolean): Self = this.set("OwnStatus", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious(value: FormField): Self = this.set("Previous", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setStatusText(value: String): Self = StObject.set(x, "StatusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: String): Self = this.set("Result", value.asInstanceOf[js.Any])
+    def setTextInput(value: TextInput): Self = StObject.set(x, "TextInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setType(value: WdFieldType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusText(value: String): Self = this.set("StatusText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextInput(value: TextInput): Self = this.set("TextInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WdFieldType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotFormField_typekey(value: FormField): Self = this.set("Word.FormField_typekey", value.asInstanceOf[js.Any])
+    def setWordDotFormField_typekey(value: FormField): Self = StObject.set(x, "Word.FormField_typekey", value.asInstanceOf[js.Any])
   }
 }

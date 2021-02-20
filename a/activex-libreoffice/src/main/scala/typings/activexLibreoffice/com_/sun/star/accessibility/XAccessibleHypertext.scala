@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,30 +94,18 @@ object XAccessibleHypertext {
   }
   
   @scala.inline
-  implicit class XAccessibleHypertextOps[Self <: XAccessibleHypertext] (val x: Self) extends AnyVal {
+  implicit class XAccessibleHypertextMutableBuilder[Self <: XAccessibleHypertext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHyperLink(value: Double => XAccessibleHyperlink): Self = StObject.set(x, "getHyperLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHyperLinkCount(value: () => Double): Self = StObject.set(x, "getHyperLinkCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHyperLinkIndex(value: Double => Double): Self = StObject.set(x, "getHyperLinkIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHyperLinkCount(value: Double): Self = this.set("HyperLinkCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetHyperLink(value: Double => XAccessibleHyperlink): Self = this.set("getHyperLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetHyperLinkCount(value: () => Double): Self = this.set("getHyperLinkCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetHyperLinkIndex(value: Double => Double): Self = this.set("getHyperLinkIndex", js.Any.fromFunction1(value))
+    def setHyperLinkCount(value: Double): Self = StObject.set(x, "HyperLinkCount", value.asInstanceOf[js.Any])
   }
 }

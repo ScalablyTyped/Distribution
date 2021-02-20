@@ -1,12 +1,13 @@
 package typings.ejWebAll.ej
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait globalize extends js.Object {
+trait globalize extends StObject {
   
   def addCulture(name: String): Unit = js.native
   def addCulture(name: String, culture: js.Any): Unit = js.native

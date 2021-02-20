@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Member extends js.Object {
+trait Member extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -41,48 +42,36 @@ object Member {
   }
   
   @scala.inline
-  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: SensitiveString): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setFullName(value: SensitiveString): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: SensitiveString): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setFullNameUndefined: Self = StObject.set(x, "FullName", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("Email", js.undefined)
+    def setMemberId(value: NonEmptyString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: SensitiveString): Self = this.set("FullName", value.asInstanceOf[js.Any])
+    def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
     @scala.inline
-    def deleteFullName: Self = this.set("FullName", js.undefined)
+    def setMemberType(value: MemberType): Self = StObject.set(x, "MemberType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberId(value: NonEmptyString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberId: Self = this.set("MemberId", js.undefined)
-    
-    @scala.inline
-    def setMemberType(value: MemberType): Self = this.set("MemberType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberType: Self = this.set("MemberType", js.undefined)
+    def setMemberTypeUndefined: Self = StObject.set(x, "MemberType", js.undefined)
   }
 }

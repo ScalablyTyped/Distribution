@@ -1,11 +1,12 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gitana extends js.Object {
+trait Gitana extends StObject {
   
   def ajax(
     method: js.Any,
@@ -107,84 +108,72 @@ object Gitana {
   }
   
   @scala.inline
-  implicit class GitanaOps[Self <: Gitana] (val x: Self) extends AnyVal {
+  implicit class GitanaMutableBuilder[Self <: Gitana] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjax(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ajax", js.Any.fromFunction7(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBase(value: () => Unit): Self = StObject.set(x, "base", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAjax(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("ajax", js.Any.fromFunction7(value))
+    def setClearAuthentication(value: () => Unit): Self = StObject.set(x, "clearAuthentication", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAuthenticate(value: (js.Any, js.Any) => js.Any): Self = this.set("authenticate", js.Any.fromFunction2(value))
+    def setDefaultFailureCallback(value: js.Any => Unit): Self = StObject.set(x, "defaultFailureCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBase(value: () => Unit): Self = this.set("base", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearAuthentication(value: () => Unit): Self = this.set("clearAuthentication", js.Any.fromFunction0(value))
+    def setGetApplicationInfo(value: () => js.Any): Self = StObject.set(x, "getApplicationInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultFailureCallback(value: js.Any => Unit): Self = this.set("defaultFailureCallback", js.Any.fromFunction1(value))
+    def setGetAuthInfo(value: () => js.Any): Self = StObject.set(x, "getAuthInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetFactory(value: () => js.Any): Self = StObject.set(x, "getFactory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetApplicationInfo(value: () => js.Any): Self = this.set("getApplicationInfo", js.Any.fromFunction0(value))
+    def setGetLocale(value: () => js.Any): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAuthInfo(value: () => js.Any): Self = this.set("getAuthInfo", js.Any.fromFunction0(value))
+    def setGetStackInfo(value: () => js.Any): Self = StObject.set(x, "getStackInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFactory(value: () => js.Any): Self = this.set("getFactory", js.Any.fromFunction0(value))
+    def setGitanaDelete(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaDelete", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetLocale(value: () => js.Any): Self = this.set("getLocale", js.Any.fromFunction0(value))
+    def setGitanaDownload(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaDownload", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetStackInfo(value: () => js.Any): Self = this.set("getStackInfo", js.Any.fromFunction0(value))
+    def setGitanaGet(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaGet", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGitanaDelete(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaDelete", js.Any.fromFunction4(value))
+    def setGitanaPatch(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaPatch", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGitanaDownload(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaDownload", js.Any.fromFunction4(value))
+    def setGitanaPost(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaPost", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGitanaGet(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaGet", js.Any.fromFunction5(value))
+    def setGitanaPut(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaPut", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGitanaPatch(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaPatch", js.Any.fromFunction5(value))
+    def setGitanaRequest(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaRequest", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setGitanaPost(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaPost", js.Any.fromFunction5(value))
+    def setGitanaUpload(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "gitanaUpload", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setGitanaPut(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaPut", js.Any.fromFunction5(value))
+    def setRefreshAuthentication(value: js.Any => Unit): Self = StObject.set(x, "refreshAuthentication", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGitanaRequest(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaRequest", js.Any.fromFunction8(value))
+    def setReloadAuthInfo(value: js.Any => Unit): Self = StObject.set(x, "reloadAuthInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGitanaUpload(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("gitanaUpload", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setRefreshAuthentication(value: js.Any => Unit): Self = this.set("refreshAuthentication", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReloadAuthInfo(value: js.Any => Unit): Self = this.set("reloadAuthInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocale(value: js.Any => Unit): Self = this.set("setLocale", js.Any.fromFunction1(value))
+    def setSetLocale(value: js.Any => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
   }
 }

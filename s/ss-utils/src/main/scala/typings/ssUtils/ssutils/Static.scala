@@ -2,12 +2,13 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Static extends js.Object {
+trait Static extends StObject {
   
   def clearAdjacentError(): Unit = js.native
   

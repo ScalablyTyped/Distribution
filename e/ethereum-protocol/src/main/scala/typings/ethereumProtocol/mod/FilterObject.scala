@@ -1,11 +1,12 @@
 package typings.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterObject extends js.Object {
+trait FilterObject extends StObject {
   
   var address: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object FilterObject {
   }
   
   @scala.inline
-  implicit class FilterObjectOps[Self <: FilterObject] (val x: Self) extends AnyVal {
+  implicit class FilterObjectMutableBuilder[Self <: FilterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromBlock(value: Double | String): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setToBlock(value: Double | String): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromBlock(value: Double | String): Self = this.set("fromBlock", value.asInstanceOf[js.Any])
+    def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
     
     @scala.inline
-    def deleteFromBlock: Self = this.set("fromBlock", js.undefined)
+    def setTopics(value: js.Array[LogTopic]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToBlock(value: Double | String): Self = this.set("toBlock", value.asInstanceOf[js.Any])
+    def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
     @scala.inline
-    def deleteToBlock: Self = this.set("toBlock", js.undefined)
-    
-    @scala.inline
-    def setTopicsVarargs(value: LogTopic*): Self = this.set("topics", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopics(value: js.Array[LogTopic]): Self = this.set("topics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopics: Self = this.set("topics", js.undefined)
+    def setTopicsVarargs(value: LogTopic*): Self = StObject.set(x, "topics", js.Array(value :_*))
   }
 }

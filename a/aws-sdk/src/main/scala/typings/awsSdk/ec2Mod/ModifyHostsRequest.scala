@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyHostsRequest extends js.Object {
+trait ModifyHostsRequest extends StObject {
   
   /**
     * Specify whether to enable or disable auto-placement.
@@ -41,48 +42,36 @@ object ModifyHostsRequest {
   }
   
   @scala.inline
-  implicit class ModifyHostsRequestOps[Self <: ModifyHostsRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyHostsRequestMutableBuilder[Self <: ModifyHostsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPlacement(value: AutoPlacement): Self = StObject.set(x, "AutoPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPlacementUndefined: Self = StObject.set(x, "AutoPlacement", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostIdsVarargs(value: DedicatedHostId*): Self = this.set("HostIds", js.Array(value :_*))
+    def setHostIdsVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
     
     @scala.inline
-    def setHostIds(value: RequestHostIdList): Self = this.set("HostIds", value.asInstanceOf[js.Any])
+    def setHostRecovery(value: HostRecovery): Self = StObject.set(x, "HostRecovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlacement(value: AutoPlacement): Self = this.set("AutoPlacement", value.asInstanceOf[js.Any])
+    def setHostRecoveryUndefined: Self = StObject.set(x, "HostRecovery", js.undefined)
     
     @scala.inline
-    def deleteAutoPlacement: Self = this.set("AutoPlacement", js.undefined)
+    def setInstanceFamily(value: String): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostRecovery(value: HostRecovery): Self = this.set("HostRecovery", value.asInstanceOf[js.Any])
+    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
     @scala.inline
-    def deleteHostRecovery: Self = this.set("HostRecovery", js.undefined)
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFamily(value: String): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceFamily: Self = this.set("InstanceFamily", js.undefined)
-    
-    @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
   }
 }

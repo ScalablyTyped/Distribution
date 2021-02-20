@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqsParameters extends js.Object {
+trait SqsParameters extends StObject {
   
   /**
     * The FIFO message group ID to use as the target.
@@ -21,24 +22,12 @@ object SqsParameters {
   }
   
   @scala.inline
-  implicit class SqsParametersOps[Self <: SqsParameters] (val x: Self) extends AnyVal {
+  implicit class SqsParametersMutableBuilder[Self <: SqsParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageGroupId(value: MessageGroupId): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageGroupId(value: MessageGroupId): Self = this.set("MessageGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageGroupId: Self = this.set("MessageGroupId", js.undefined)
+    def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
   }
 }

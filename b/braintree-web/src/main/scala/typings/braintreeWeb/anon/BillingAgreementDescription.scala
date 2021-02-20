@@ -1,12 +1,13 @@
 package typings.braintreeWeb.anon
 
 import typings.braintreeWeb.paypalMod.PayPalShippingAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingAgreementDescription extends js.Object {
+trait BillingAgreementDescription extends StObject {
   
   var amount: js.UndefOr[String | Double] = js.native
   
@@ -41,87 +42,75 @@ object BillingAgreementDescription {
   }
   
   @scala.inline
-  implicit class BillingAgreementDescriptionOps[Self <: BillingAgreementDescription] (val x: Self) extends AnyVal {
+  implicit class BillingAgreementDescriptionMutableBuilder[Self <: BillingAgreementDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingAgreementDescription(value: String): Self = StObject.set(x, "billingAgreementDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlow(value: String): Self = this.set("flow", value.asInstanceOf[js.Any])
+    def setBillingAgreementDescriptionUndefined: Self = StObject.set(x, "billingAgreementDescription", js.undefined)
     
     @scala.inline
-    def setAmount(value: String | Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def setBillingAgreementDescription(value: String): Self = this.set("billingAgreementDescription", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBillingAgreementDescription: Self = this.set("billingAgreementDescription", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setEnableShippingAddress(value: Boolean): Self = StObject.set(x, "enableShippingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setEnableShippingAddressUndefined: Self = StObject.set(x, "enableShippingAddress", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFlow(value: String): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableShippingAddress(value: Boolean): Self = this.set("enableShippingAddress", value.asInstanceOf[js.Any])
+    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
     @scala.inline
-    def deleteEnableShippingAddress: Self = this.set("enableShippingAddress", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteIntent: Self = this.set("intent", js.undefined)
+    def setOfferCredit(value: Boolean): Self = StObject.set(x, "offerCredit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setOfferCreditUndefined: Self = StObject.set(x, "offerCredit", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setShippingAddressEditable(value: Boolean): Self = StObject.set(x, "shippingAddressEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferCredit(value: Boolean): Self = this.set("offerCredit", value.asInstanceOf[js.Any])
+    def setShippingAddressEditableUndefined: Self = StObject.set(x, "shippingAddressEditable", js.undefined)
     
     @scala.inline
-    def deleteOfferCredit: Self = this.set("offerCredit", js.undefined)
+    def setShippingAddressOverride(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddressOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingAddressEditable(value: Boolean): Self = this.set("shippingAddressEditable", value.asInstanceOf[js.Any])
+    def setShippingAddressOverrideUndefined: Self = StObject.set(x, "shippingAddressOverride", js.undefined)
     
     @scala.inline
-    def deleteShippingAddressEditable: Self = this.set("shippingAddressEditable", js.undefined)
+    def setUseraction(value: String): Self = StObject.set(x, "useraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingAddressOverride(value: PayPalShippingAddress): Self = this.set("shippingAddressOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShippingAddressOverride: Self = this.set("shippingAddressOverride", js.undefined)
-    
-    @scala.inline
-    def setUseraction(value: String): Self = this.set("useraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseraction: Self = this.set("useraction", js.undefined)
+    def setUseractionUndefined: Self = StObject.set(x, "useraction", js.undefined)
   }
 }

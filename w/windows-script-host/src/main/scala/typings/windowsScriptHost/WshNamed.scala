@@ -1,5 +1,6 @@
 package typings.windowsScriptHost
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that enumerating over this object returns the **names** of the arguments, not the values
   */
 @js.native
-trait WshNamed extends js.Object {
+trait WshNamed extends StObject {
   
   def apply(name: String): String = js.native
   

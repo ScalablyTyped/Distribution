@@ -12,12 +12,13 @@ import typings.std.OffscreenCanvasRenderingContext2D
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderbuffer
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternalTexture extends js.Object {
+trait InternalTexture extends StObject {
   
   /** @hidden */
   var _MSAAFramebuffer: Nullable[WebGLFramebuffer] = js.native

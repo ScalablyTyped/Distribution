@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackspaceLabel extends js.Object {
+trait BackspaceLabel extends StObject {
   
   /** 退格 */
   var backspaceLabel: String = js.native
@@ -25,27 +26,15 @@ object BackspaceLabel {
   }
   
   @scala.inline
-  implicit class BackspaceLabelOps[Self <: BackspaceLabel] (val x: Self) extends AnyVal {
+  implicit class BackspaceLabelMutableBuilder[Self <: BackspaceLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackspaceLabel(value: String): Self = StObject.set(x, "backspaceLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelKeyboardLabel(value: String): Self = StObject.set(x, "cancelKeyboardLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackspaceLabel(value: String): Self = this.set("backspaceLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCancelKeyboardLabel(value: String): Self = this.set("cancelKeyboardLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfirmLabel(value: String): Self = this.set("confirmLabel", value.asInstanceOf[js.Any])
+    def setConfirmLabel(value: String): Self = StObject.set(x, "confirmLabel", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InAppPurchasesFound extends js.Object {
+trait InAppPurchasesFound extends StObject {
   
   /** The total number of in-app purchases flows explored: how many times the robo tries to buy a SKU. */
   var inAppPurchasesFlowsExplored: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object InAppPurchasesFound {
   }
   
   @scala.inline
-  implicit class InAppPurchasesFoundOps[Self <: InAppPurchasesFound] (val x: Self) extends AnyVal {
+  implicit class InAppPurchasesFoundMutableBuilder[Self <: InAppPurchasesFound] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInAppPurchasesFlowsExplored(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsExplored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInAppPurchasesFlowsExploredUndefined: Self = StObject.set(x, "inAppPurchasesFlowsExplored", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInAppPurchasesFlowsStarted(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAppPurchasesFlowsExplored(value: Double): Self = this.set("inAppPurchasesFlowsExplored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInAppPurchasesFlowsExplored: Self = this.set("inAppPurchasesFlowsExplored", js.undefined)
-    
-    @scala.inline
-    def setInAppPurchasesFlowsStarted(value: Double): Self = this.set("inAppPurchasesFlowsStarted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInAppPurchasesFlowsStarted: Self = this.set("inAppPurchasesFlowsStarted", js.undefined)
+    def setInAppPurchasesFlowsStartedUndefined: Self = StObject.set(x, "inAppPurchasesFlowsStarted", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.backlogJs.mod.Option.Project
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostStarParams extends js.Object {
+trait PostStarParams extends StObject {
   
   var commentId: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object PostStarParams {
   }
   
   @scala.inline
-  implicit class PostStarParamsOps[Self <: PostStarParams] (val x: Self) extends AnyVal {
+  implicit class PostStarParamsMutableBuilder[Self <: PostStarParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentId(value: Double): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssueId(value: Double): Self = StObject.set(x, "issueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentId(value: Double): Self = this.set("commentId", value.asInstanceOf[js.Any])
+    def setIssueIdUndefined: Self = StObject.set(x, "issueId", js.undefined)
     
     @scala.inline
-    def deleteCommentId: Self = this.set("commentId", js.undefined)
+    def setPullRequestCommentId(value: Double): Self = StObject.set(x, "pullRequestCommentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueId(value: Double): Self = this.set("issueId", value.asInstanceOf[js.Any])
+    def setPullRequestCommentIdUndefined: Self = StObject.set(x, "pullRequestCommentId", js.undefined)
     
     @scala.inline
-    def deleteIssueId: Self = this.set("issueId", js.undefined)
+    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestCommentId(value: Double): Self = this.set("pullRequestCommentId", value.asInstanceOf[js.Any])
+    def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
     
     @scala.inline
-    def deletePullRequestCommentId: Self = this.set("pullRequestCommentId", js.undefined)
+    def setWikiId(value: Double): Self = StObject.set(x, "wikiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestId(value: Double): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePullRequestId: Self = this.set("pullRequestId", js.undefined)
-    
-    @scala.inline
-    def setWikiId(value: Double): Self = this.set("wikiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWikiId: Self = this.set("wikiId", js.undefined)
+    def setWikiIdUndefined: Self = StObject.set(x, "wikiId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharedb.sharedbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sharedb.sharedbStrings.`ot-text-tp2`
   - typings.sharedb.sharedbStrings.`rich-text`
 */
-trait OTType extends js.Object
+trait OTType extends StObject
 object OTType {
   
   @scala.inline

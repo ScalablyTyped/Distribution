@@ -17,20 +17,21 @@ import typings.meteorDburlesCollectionHelpers.mod.Data
 import typings.meteorDburlesCollectionHelpers.mod.Full
 import typings.meteorDburlesCollectionHelpers.mod.Helpers
 import typings.meteorDburlesCollectionHelpers.mod.PartialHelpers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Cursor<T> and Collection<T> are pulled from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/meteor/mongo.d.ts
+// and should be kept in sync with any changes to it
+// only modified properties are included
 /* augmented module */
-@JSImport("meteor/mongo", JSImport.Namespace)
-@js.native
-object mongoMod extends js.Object {
+object mongoMod {
   
-  @js.native
-  object Mongo extends js.Object {
+  object Mongo {
     
     @js.native
-    trait Collection[T] extends js.Object {
+    trait Collection[T] extends StObject {
       
       // modifications:
       // - replaced T with Full<T> & T everywhere Collection._transform is applied
@@ -181,7 +182,7 @@ object mongoMod extends js.Object {
     // modifications: replaced T with Full<T> & T everywhere Collection._transform is applied
     // note: it's not applied for observeChanges; however, ObserveChangesCallbacks uses Partial<T> anyway
     @js.native
-    trait Cursor[T] extends js.Object {
+    trait Cursor[T] extends StObject {
       
       def fetch(): js.Array[Full[T] with T] = js.native
       

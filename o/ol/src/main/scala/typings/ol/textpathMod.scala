@@ -1,14 +1,15 @@
 package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/textpath", JSImport.Namespace)
-@js.native
-object textpathMod extends js.Object {
+object textpathMod {
   
+  @JSImport("ol/geom/flat/textpath", "drawTextOnPath")
+  @js.native
   def drawTextOnPath(
     flatCoordinates: js.Array[Double],
     offset: Double,

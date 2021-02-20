@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetObjectAclOutput extends js.Object {
+trait GetObjectAclOutput extends StObject {
   
   /**
     * A list of grants.
@@ -28,39 +29,27 @@ object GetObjectAclOutput {
   }
   
   @scala.inline
-  implicit class GetObjectAclOutputOps[Self <: GetObjectAclOutput] (val x: Self) extends AnyVal {
+  implicit class GetObjectAclOutputMutableBuilder[Self <: GetObjectAclOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrants(value: Grants): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
     
     @scala.inline
-    def setGrantsVarargs(value: Grant*): Self = this.set("Grants", js.Array(value :_*))
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrants(value: Grants): Self = this.set("Grants", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteGrants: Self = this.set("Grants", js.undefined)
+    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
-    
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

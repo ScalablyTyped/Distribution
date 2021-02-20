@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Pressed
 import typings.babylonjs.anon.Pulse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMinimalMotionControllerObject extends js.Object {
+trait IMinimalMotionControllerObject extends StObject {
   
   /**
     * Available axes of this controller
@@ -33,39 +34,27 @@ object IMinimalMotionControllerObject {
   }
   
   @scala.inline
-  implicit class IMinimalMotionControllerObjectOps[Self <: IMinimalMotionControllerObject] (val x: Self) extends AnyVal {
+  implicit class IMinimalMotionControllerObjectMutableBuilder[Self <: IMinimalMotionControllerObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: js.Array[Pressed]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxesVarargs(value: Double*): Self = this.set("axes", js.Array(value :_*))
+    def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setAxes(value: js.Array[Double]): Self = this.set("axes", value.asInstanceOf[js.Any])
+    def setHapticActuators(value: js.Array[Pulse]): Self = StObject.set(x, "hapticActuators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonsVarargs(value: Pressed*): Self = this.set("buttons", js.Array(value :_*))
+    def setHapticActuatorsUndefined: Self = StObject.set(x, "hapticActuators", js.undefined)
     
     @scala.inline
-    def setButtons(value: js.Array[Pressed]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHapticActuatorsVarargs(value: Pulse*): Self = this.set("hapticActuators", js.Array(value :_*))
-    
-    @scala.inline
-    def setHapticActuators(value: js.Array[Pulse]): Self = this.set("hapticActuators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHapticActuators: Self = this.set("hapticActuators", js.undefined)
+    def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value :_*))
   }
 }

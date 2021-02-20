@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigQueryOptions extends js.Object {
+trait BigQueryOptions extends StObject {
   
   /**
     * Optional. Whether to use BigQuery's partition tables (https://cloud.google.com/bigquery/docs/partitioned-tables). By default, Logging creates dated tables based on the log entries'
@@ -30,30 +31,18 @@ object BigQueryOptions {
   }
   
   @scala.inline
-  implicit class BigQueryOptionsOps[Self <: BigQueryOptions] (val x: Self) extends AnyVal {
+  implicit class BigQueryOptionsMutableBuilder[Self <: BigQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUsePartitionedTables(value: Boolean): Self = StObject.set(x, "usePartitionedTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUsePartitionedTablesUndefined: Self = StObject.set(x, "usePartitionedTables", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsesTimestampColumnPartitioning(value: Boolean): Self = StObject.set(x, "usesTimestampColumnPartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsePartitionedTables(value: Boolean): Self = this.set("usePartitionedTables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePartitionedTables: Self = this.set("usePartitionedTables", js.undefined)
-    
-    @scala.inline
-    def setUsesTimestampColumnPartitioning(value: Boolean): Self = this.set("usesTimestampColumnPartitioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsesTimestampColumnPartitioning: Self = this.set("usesTimestampColumnPartitioning", js.undefined)
+    def setUsesTimestampColumnPartitioningUndefined: Self = StObject.set(x, "usesTimestampColumnPartitioning", js.undefined)
   }
 }

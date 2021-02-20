@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,63 +41,51 @@ object Win32LobAppFileSystemRule {
   }
   
   @scala.inline
-  implicit class Win32LobAppFileSystemRuleOps[Self <: Win32LobAppFileSystemRule] (val x: Self) extends AnyVal {
+  implicit class Win32LobAppFileSystemRuleMutableBuilder[Self <: Win32LobAppFileSystemRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheck32BitOn64System(value: Boolean): Self = StObject.set(x, "check32BitOn64System", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheck32BitOn64SystemUndefined: Self = StObject.set(x, "check32BitOn64System", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck32BitOn64System(value: Boolean): Self = this.set("check32BitOn64System", value.asInstanceOf[js.Any])
+    def setComparisonValueNull: Self = StObject.set(x, "comparisonValue", null)
     
     @scala.inline
-    def deleteCheck32BitOn64System: Self = this.set("check32BitOn64System", js.undefined)
+    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
     @scala.inline
-    def setComparisonValue(value: NullableOption[String]): Self = this.set("comparisonValue", value.asInstanceOf[js.Any])
+    def setFileOrFolderName(value: NullableOption[String]): Self = StObject.set(x, "fileOrFolderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComparisonValue: Self = this.set("comparisonValue", js.undefined)
+    def setFileOrFolderNameNull: Self = StObject.set(x, "fileOrFolderName", null)
     
     @scala.inline
-    def setComparisonValueNull: Self = this.set("comparisonValue", null)
+    def setFileOrFolderNameUndefined: Self = StObject.set(x, "fileOrFolderName", js.undefined)
     
     @scala.inline
-    def setFileOrFolderName(value: NullableOption[String]): Self = this.set("fileOrFolderName", value.asInstanceOf[js.Any])
+    def setOperationType(value: Win32LobAppFileSystemOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileOrFolderName: Self = this.set("fileOrFolderName", js.undefined)
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def setFileOrFolderNameNull: Self = this.set("fileOrFolderName", null)
+    def setOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: Win32LobAppFileSystemOperationType): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: Win32LobAppRuleOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setPathNull: Self = StObject.set(x, "path", null)
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
-    
-    @scala.inline
-    def setPath(value: NullableOption[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setPathNull: Self = this.set("path", null)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -9,36 +9,12 @@ import typings.openlayers.mod.olx.render.ToContextOptions
 import typings.openlayers.mod.render.canvas.Immediate
 import typings.openlayers.mod.style.Style
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "render")
-@js.native
-object render extends js.Object {
-  
-  /**
-    * Binds a Canvas Immediate API to a canvas context, to allow drawing geometries
-    * to the context's canvas.
-    *
-    * The units for geometry coordinates are css pixels relative to the top left
-    * corner of the canvas element.
-    * ```js
-    * var canvas = document.createElement('canvas');
-    * var render = ol.render.toContext(canvas.getContext('2d'),
-    *     { size: [100, 100] });
-    * render.setFillStrokeStyle(new ol.style.Fill({ color: blue }));
-    * render.drawPolygon(
-    *     new ol.geom.Polygon([[[0, 0], [100, 100], [100, 0], [0, 0]]]));
-    * ```
-    *
-    * @param context Canvas context.
-    * @param opt_options Options.
-    * @return Canvas Immediate.
-    * @api
-    */
-  def toContext(context: CanvasRenderingContext2D): Immediate = js.native
-  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = js.native
+object render {
   
   /**
     * @param type Type.
@@ -47,6 +23,7 @@ object render extends js.Object {
     * @param opt_context Context.
     * @param opt_glContext WebGL Context.
     */
+  @JSImport("openlayers", "render.Event")
   @js.native
   class Event protected ()
     extends typings.openlayers.mod.events.Event {
@@ -180,8 +157,9 @@ object render extends js.Object {
     * @param ends Ends or Endss.
     * @param properties Properties.
     */
+  @JSImport("openlayers", "render.Feature")
   @js.native
-  class Feature protected () extends js.Object {
+  class Feature protected () extends StObject {
     /**
       * Lightweight, read-only, {@link ol.Feature} and {@link ol.geom.Geometry} like
       * structure, optimized for rendering and styling. Geometry access through the
@@ -244,6 +222,7 @@ object render extends js.Object {
     * @api
     */
   /* tslint:disable-next-line:no-unnecessary-class */
+  @JSImport("openlayers", "render.VectorContext")
   @js.native
   /**
     * Context for drawing geometries.  A vector context is available on render
@@ -251,10 +230,9 @@ object render extends js.Object {
     * @struct
     * @api
     */
-  class VectorContext () extends js.Object
+  class VectorContext () extends StObject
   
-  @js.native
-  object canvas extends js.Object {
+  object canvas {
     
     /**
       * @classdesc
@@ -272,6 +250,7 @@ object render extends js.Object {
       * @param viewRotation View rotation.
       * @struct
       */
+    @JSImport("openlayers", "render.canvas.Immediate")
     @js.native
     class Immediate protected () extends VectorContext {
       /**
@@ -339,6 +318,33 @@ object render extends js.Object {
       def setStyle(style: Style): Unit = js.native
     }
   }
+  
+  /**
+    * Binds a Canvas Immediate API to a canvas context, to allow drawing geometries
+    * to the context's canvas.
+    *
+    * The units for geometry coordinates are css pixels relative to the top left
+    * corner of the canvas element.
+    * ```js
+    * var canvas = document.createElement('canvas');
+    * var render = ol.render.toContext(canvas.getContext('2d'),
+    *     { size: [100, 100] });
+    * render.setFillStrokeStyle(new ol.style.Fill({ color: blue }));
+    * render.drawPolygon(
+    *     new ol.geom.Polygon([[[0, 0], [100, 100], [100, 0], [0, 0]]]));
+    * ```
+    *
+    * @param context Canvas context.
+    * @param opt_options Options.
+    * @return Canvas Immediate.
+    * @api
+    */
+  @JSImport("openlayers", "render.toContext")
+  @js.native
+  def toContext(context: CanvasRenderingContext2D): Immediate = js.native
+  @JSImport("openlayers", "render.toContext")
+  @js.native
+  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = js.native
   
   type EventType = String
 }

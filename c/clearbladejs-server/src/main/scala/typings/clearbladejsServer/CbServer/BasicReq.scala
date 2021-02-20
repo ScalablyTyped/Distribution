@@ -1,12 +1,13 @@
 package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasicReq extends js.Object {
+trait BasicReq extends StObject {
   
   val isLogging: Boolean = js.native
   
@@ -39,39 +40,27 @@ object BasicReq {
   }
   
   @scala.inline
-  implicit class BasicReqOps[Self <: BasicReq] (val x: Self) extends AnyVal {
+  implicit class BasicReqMutableBuilder[Self <: BasicReq] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLogging(value: Boolean): Self = StObject.set(x, "isLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLogging(value: Boolean): Self = this.set("isLogging", value.asInstanceOf[js.Any])
+    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
+    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemSecret(value: String): Self = this.set("systemSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserToken(value: String): Self = this.set("userToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserid(value: String): Self = this.set("userid", value.asInstanceOf[js.Any])
+    def setUserid(value: String): Self = StObject.set(x, "userid", value.asInstanceOf[js.Any])
   }
 }

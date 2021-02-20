@@ -1,11 +1,12 @@
 package typings.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProducerOptions extends js.Object {
+trait ProducerOptions extends StObject {
   
   var ackTimeoutMs: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object ProducerOptions {
   }
   
   @scala.inline
-  implicit class ProducerOptionsOps[Self <: ProducerOptions] (val x: Self) extends AnyVal {
+  implicit class ProducerOptionsMutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAckTimeoutMs(value: Double): Self = StObject.set(x, "ackTimeoutMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckTimeoutMsUndefined: Self = StObject.set(x, "ackTimeoutMs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionerType(value: Double): Self = StObject.set(x, "partitionerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAckTimeoutMs(value: Double): Self = this.set("ackTimeoutMs", value.asInstanceOf[js.Any])
+    def setPartitionerTypeUndefined: Self = StObject.set(x, "partitionerType", js.undefined)
     
     @scala.inline
-    def deleteAckTimeoutMs: Self = this.set("ackTimeoutMs", js.undefined)
+    def setRequireAcks(value: Double): Self = StObject.set(x, "requireAcks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionerType(value: Double): Self = this.set("partitionerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionerType: Self = this.set("partitionerType", js.undefined)
-    
-    @scala.inline
-    def setRequireAcks(value: Double): Self = this.set("requireAcks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireAcks: Self = this.set("requireAcks", js.undefined)
+    def setRequireAcksUndefined: Self = StObject.set(x, "requireAcks", js.undefined)
   }
 }

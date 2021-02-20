@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotValue extends js.Object {
+trait PivotValue extends StObject {
   
   /**
     * If specified, indicates that pivot values should be displayed as the result of a calculation with another pivot value. For example, if calculated_display_type is specified as
@@ -41,54 +42,42 @@ object PivotValue {
   }
   
   @scala.inline
-  implicit class PivotValueOps[Self <: PivotValue] (val x: Self) extends AnyVal {
+  implicit class PivotValueMutableBuilder[Self <: PivotValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculatedDisplayType(value: String): Self = StObject.set(x, "calculatedDisplayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculatedDisplayTypeUndefined: Self = StObject.set(x, "calculatedDisplayType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculatedDisplayType(value: String): Self = this.set("calculatedDisplayType", value.asInstanceOf[js.Any])
+    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
     @scala.inline
-    def deleteCalculatedDisplayType: Self = this.set("calculatedDisplayType", js.undefined)
+    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = this.set("dataSourceColumnReference", value.asInstanceOf[js.Any])
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def deleteDataSourceColumnReference: Self = this.set("dataSourceColumnReference", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setSourceColumnOffset(value: Double): Self = StObject.set(x, "sourceColumnOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSourceColumnOffsetUndefined: Self = StObject.set(x, "sourceColumnOffset", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSummarizeFunction(value: String): Self = StObject.set(x, "summarizeFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceColumnOffset(value: Double): Self = this.set("sourceColumnOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceColumnOffset: Self = this.set("sourceColumnOffset", js.undefined)
-    
-    @scala.inline
-    def setSummarizeFunction(value: String): Self = this.set("summarizeFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummarizeFunction: Self = this.set("summarizeFunction", js.undefined)
+    def setSummarizeFunctionUndefined: Self = StObject.set(x, "summarizeFunction", js.undefined)
   }
 }

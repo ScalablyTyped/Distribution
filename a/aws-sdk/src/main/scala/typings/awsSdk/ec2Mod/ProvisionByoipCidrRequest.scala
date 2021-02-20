@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisionByoipCidrRequest extends js.Object {
+trait ProvisionByoipCidrRequest extends StObject {
   
   /**
     * The public IPv4 or IPv6 address range, in CIDR notation. The most specific IPv4 prefix that you can specify is /24. The most specific IPv6 prefix you can specify is /56. The address range cannot overlap with another address range that you've brought to this or another Region.
@@ -46,54 +47,42 @@ object ProvisionByoipCidrRequest {
   }
   
   @scala.inline
-  implicit class ProvisionByoipCidrRequestOps[Self <: ProvisionByoipCidrRequest] (val x: Self) extends AnyVal {
+  implicit class ProvisionByoipCidrRequestMutableBuilder[Self <: ProvisionByoipCidrRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = StObject.set(x, "CidrAuthorizationContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrAuthorizationContextUndefined: Self = StObject.set(x, "CidrAuthorizationContext", js.undefined)
     
     @scala.inline
-    def setCidr(value: String): Self = this.set("Cidr", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = this.set("CidrAuthorizationContext", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCidrAuthorizationContext: Self = this.set("CidrAuthorizationContext", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setPoolTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "PoolTagSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPoolTagSpecificationsUndefined: Self = StObject.set(x, "PoolTagSpecifications", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "PoolTagSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("PoolTagSpecifications", js.Array(value :_*))
+    def setPubliclyAdvertisable(value: Boolean): Self = StObject.set(x, "PubliclyAdvertisable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolTagSpecifications(value: TagSpecificationList): Self = this.set("PoolTagSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoolTagSpecifications: Self = this.set("PoolTagSpecifications", js.undefined)
-    
-    @scala.inline
-    def setPubliclyAdvertisable(value: Boolean): Self = this.set("PubliclyAdvertisable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePubliclyAdvertisable: Self = this.set("PubliclyAdvertisable", js.undefined)
+    def setPubliclyAdvertisableUndefined: Self = StObject.set(x, "PubliclyAdvertisable", js.undefined)
   }
 }

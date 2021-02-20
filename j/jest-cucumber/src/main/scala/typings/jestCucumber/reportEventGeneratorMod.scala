@@ -1,16 +1,16 @@
 package typings.jestCucumber
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-cucumber/dist/src/reporting/report-event-generation/ReportEventGenerator", JSImport.Namespace)
-@js.native
-object reportEventGeneratorMod extends js.Object {
+object reportEventGeneratorMod {
   
+  @JSImport("jest-cucumber/dist/src/reporting/report-event-generation/ReportEventGenerator", "ReportEventGenerator")
   @js.native
-  class ReportEventGenerator () extends js.Object {
+  class ReportEventGenerator () extends StObject {
     
     var calculateTotalDuration: js.Any = js.native
     

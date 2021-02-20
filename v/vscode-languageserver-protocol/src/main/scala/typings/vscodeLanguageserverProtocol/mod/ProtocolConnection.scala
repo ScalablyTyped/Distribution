@@ -11,12 +11,13 @@ import typings.vscodeJsonrpc.mod.RequestHandler
 import typings.vscodeJsonrpc.mod.RequestHandler0
 import typings.vscodeJsonrpc.mod.TraceOptions
 import typings.vscodeJsonrpc.mod.Tracer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtocolConnection extends js.Object {
+trait ProtocolConnection extends StObject {
   
   /**
     * Actively disposes the connection.

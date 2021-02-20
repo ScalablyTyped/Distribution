@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/PauseOutline", JSImport.Namespace)
-@js.native
-object pauseOutlineMod extends js.Object {
+object pauseOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/PauseOutline", "PauseOutline")
+  @js.native
   val PauseOutline: IconDefinition = js.native
 }

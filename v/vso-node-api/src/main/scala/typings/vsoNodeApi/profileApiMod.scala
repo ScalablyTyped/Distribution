@@ -11,13 +11,19 @@ import typings.vsoNodeApi.profileInterfacesMod.ProfileRegions
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/ProfileApi", JSImport.Namespace)
-@js.native
-object profileApiMod extends js.Object {
+object profileApiMod {
+  
+  @JSImport("vso-node-api/ProfileApi", "ProfileApi")
+  @js.native
+  class ProfileApi protected () extends IProfileApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait IProfileApi extends ClientApiBase {
@@ -375,11 +381,5 @@ object profileApiMod extends js.Object {
     def setProfileAttributes(attributesCollection: VssJsonCollectionWrapperV[js.Array[ProfileAttributeBase[_]]], id: String): js.Promise[Unit] = js.native
     
     def updateProfile(profile: Profile, id: String): js.Promise[Unit] = js.native
-  }
-  
-  @js.native
-  class ProfileApi protected () extends IProfileApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

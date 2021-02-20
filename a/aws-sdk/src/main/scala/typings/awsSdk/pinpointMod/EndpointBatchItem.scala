@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointBatchItem extends js.Object {
+trait EndpointBatchItem extends StObject {
   
   /**
     * The destination address for messages or push notifications that you send to the endpoint. The address varies by channel. For a push-notification channel, use the token provided by the push notification service, such as an Apple Push Notification service (APNs) device token or a Firebase Cloud Messaging (FCM) registration token. For the SMS channel, use a phone number in E.164 format, such as +12065550100. For the email channel, use an email address.
@@ -76,90 +77,78 @@ object EndpointBatchItem {
   }
   
   @scala.inline
-  implicit class EndpointBatchItemOps[Self <: EndpointBatchItem] (val x: Self) extends AnyVal {
+  implicit class EndpointBatchItemMutableBuilder[Self <: EndpointBatchItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: MapOfListOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: string): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("Address", js.undefined)
+    def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: MapOfListOfString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setDemographic(value: EndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelType(value: ChannelType): Self = this.set("ChannelType", value.asInstanceOf[js.Any])
+    def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
     
     @scala.inline
-    def deleteChannelType: Self = this.set("ChannelType", js.undefined)
+    def setEffectiveDate(value: string): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemographic(value: EndpointDemographic): Self = this.set("Demographic", value.asInstanceOf[js.Any])
+    def setEffectiveDateUndefined: Self = StObject.set(x, "EffectiveDate", js.undefined)
     
     @scala.inline
-    def deleteDemographic: Self = this.set("Demographic", js.undefined)
+    def setEndpointStatus(value: string): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveDate(value: string): Self = this.set("EffectiveDate", value.asInstanceOf[js.Any])
+    def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
     
     @scala.inline
-    def deleteEffectiveDate: Self = this.set("EffectiveDate", js.undefined)
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointStatus(value: string): Self = this.set("EndpointStatus", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEndpointStatus: Self = this.set("EndpointStatus", js.undefined)
+    def setLocation(value: EndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setMetrics(value: MapOfDouble): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: EndpointLocation): Self = this.set("Location", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
+    def setOptOut(value: string): Self = StObject.set(x, "OptOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: MapOfDouble): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    def setOptOutUndefined: Self = StObject.set(x, "OptOut", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptOut(value: string): Self = this.set("OptOut", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deleteOptOut: Self = this.set("OptOut", js.undefined)
+    def setUser(value: EndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: string): Self = this.set("RequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
-    
-    @scala.inline
-    def setUser(value: EndpointUser): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.angularCore.anon
 
 import typings.typescript.mod.CallExpression
 import typings.typescript.mod.ObjectLiteralExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveParameter extends js.Object {
+trait RemoveParameter extends StObject {
   
   var removeParameter: js.Array[CallExpression] = js.native
   
@@ -22,30 +23,18 @@ object RemoveParameter {
   }
   
   @scala.inline
-  implicit class RemoveParameterOps[Self <: RemoveParameter] (val x: Self) extends AnyVal {
+  implicit class RemoveParameterMutableBuilder[Self <: RemoveParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoveParameter(value: js.Array[CallExpression]): Self = StObject.set(x, "removeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveParameterVarargs(value: CallExpression*): Self = StObject.set(x, "removeParameter", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveProperty(value: js.Array[ObjectLiteralExpression]): Self = StObject.set(x, "removeProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveParameterVarargs(value: CallExpression*): Self = this.set("removeParameter", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveParameter(value: js.Array[CallExpression]): Self = this.set("removeParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovePropertyVarargs(value: ObjectLiteralExpression*): Self = this.set("removeProperty", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveProperty(value: js.Array[ObjectLiteralExpression]): Self = this.set("removeProperty", value.asInstanceOf[js.Any])
+    def setRemovePropertyVarargs(value: ObjectLiteralExpression*): Self = StObject.set(x, "removeProperty", js.Array(value :_*))
   }
 }

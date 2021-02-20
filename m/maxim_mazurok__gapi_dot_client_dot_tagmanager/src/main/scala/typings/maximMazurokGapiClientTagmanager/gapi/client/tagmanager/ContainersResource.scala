@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.ParentPrettyPrint
 import typings.maximMazurokGapiClientTagmanager.anon.ResourceUploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainersResource extends js.Object {
+trait ContainersResource extends StObject {
   
   def create(request: Alt, body: Container): Request[Container] = js.native
   /** Creates a Container. */

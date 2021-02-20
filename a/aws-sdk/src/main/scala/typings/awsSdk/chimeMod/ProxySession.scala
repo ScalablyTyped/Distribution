@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxySession extends js.Object {
+trait ProxySession extends StObject {
   
   /**
     * The proxy session capabilities.
@@ -81,102 +82,90 @@ object ProxySession {
   }
   
   @scala.inline
-  implicit class ProxySessionOps[Self <: ProxySession] (val x: Self) extends AnyVal {
+  implicit class ProxySessionMutableBuilder[Self <: ProxySession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: CapabilityList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: CapabilityList): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setEndedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "EndedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setEndedTimestampUndefined: Self = StObject.set(x, "EndedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setExpiryMinutes(value: PositiveInteger): Self = StObject.set(x, "ExpiryMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndedTimestamp(value: Iso8601Timestamp): Self = this.set("EndedTimestamp", value.asInstanceOf[js.Any])
+    def setExpiryMinutesUndefined: Self = StObject.set(x, "ExpiryMinutes", js.undefined)
     
     @scala.inline
-    def deleteEndedTimestamp: Self = this.set("EndedTimestamp", js.undefined)
+    def setGeoMatchLevel(value: GeoMatchLevel): Self = StObject.set(x, "GeoMatchLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiryMinutes(value: PositiveInteger): Self = this.set("ExpiryMinutes", value.asInstanceOf[js.Any])
+    def setGeoMatchLevelUndefined: Self = StObject.set(x, "GeoMatchLevel", js.undefined)
     
     @scala.inline
-    def deleteExpiryMinutes: Self = this.set("ExpiryMinutes", js.undefined)
+    def setGeoMatchParams(value: GeoMatchParams): Self = StObject.set(x, "GeoMatchParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoMatchLevel(value: GeoMatchLevel): Self = this.set("GeoMatchLevel", value.asInstanceOf[js.Any])
+    def setGeoMatchParamsUndefined: Self = StObject.set(x, "GeoMatchParams", js.undefined)
     
     @scala.inline
-    def deleteGeoMatchLevel: Self = this.set("GeoMatchLevel", js.undefined)
+    def setName(value: String128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoMatchParams(value: GeoMatchParams): Self = this.set("GeoMatchParams", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteGeoMatchParams: Self = this.set("GeoMatchParams", js.undefined)
+    def setNumberSelectionBehavior(value: NumberSelectionBehavior): Self = StObject.set(x, "NumberSelectionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String128): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNumberSelectionBehaviorUndefined: Self = StObject.set(x, "NumberSelectionBehavior", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setParticipants(value: Participants): Self = StObject.set(x, "Participants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberSelectionBehavior(value: NumberSelectionBehavior): Self = this.set("NumberSelectionBehavior", value.asInstanceOf[js.Any])
+    def setParticipantsUndefined: Self = StObject.set(x, "Participants", js.undefined)
     
     @scala.inline
-    def deleteNumberSelectionBehavior: Self = this.set("NumberSelectionBehavior", js.undefined)
+    def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "Participants", js.Array(value :_*))
     
     @scala.inline
-    def setParticipantsVarargs(value: Participant*): Self = this.set("Participants", js.Array(value :_*))
+    def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipants(value: Participants): Self = this.set("Participants", value.asInstanceOf[js.Any])
+    def setProxySessionIdUndefined: Self = StObject.set(x, "ProxySessionId", js.undefined)
     
     @scala.inline
-    def deleteParticipants: Self = this.set("Participants", js.undefined)
+    def setStatus(value: ProxySessionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxySessionId(value: NonEmptyString128): Self = this.set("ProxySessionId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteProxySessionId: Self = this.set("ProxySessionId", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ProxySessionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
-    
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString128): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceConnectorId: Self = this.set("VoiceConnectorId", js.undefined)
+    def setVoiceConnectorIdUndefined: Self = StObject.set(x, "VoiceConnectorId", js.undefined)
   }
 }

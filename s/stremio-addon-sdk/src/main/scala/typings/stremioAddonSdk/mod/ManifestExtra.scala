@@ -1,11 +1,12 @@
 package typings.stremioAddonSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManifestExtra extends js.Object {
+trait ManifestExtra extends StObject {
   
   /**
     * Set to true if this property must always be passed.
@@ -48,42 +49,30 @@ object ManifestExtra {
   }
   
   @scala.inline
-  implicit class ManifestExtraOps[Self <: ManifestExtra] (val x: Self) extends AnyVal {
+  implicit class ManifestExtraMutableBuilder[Self <: ManifestExtra] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: Extra): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Extra): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRequired(value: Boolean): Self = this.set("isRequired", value.asInstanceOf[js.Any])
+    def setOptionsLimit(value: Double): Self = StObject.set(x, "optionsLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRequired: Self = this.set("isRequired", js.undefined)
+    def setOptionsLimitUndefined: Self = StObject.set(x, "optionsLimit", js.undefined)
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setOptions(value: js.Array[String]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setOptionsLimit(value: Double): Self = this.set("optionsLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionsLimit: Self = this.set("optionsLimit", js.undefined)
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

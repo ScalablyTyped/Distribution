@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object TabStripContentLoadEvent {
   }
   
   @scala.inline
-  implicit class TabStripContentLoadEventOps[Self <: TabStripContentLoadEvent] (val x: Self) extends AnyVal {
+  implicit class TabStripContentLoadEventMutableBuilder[Self <: TabStripContentLoadEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentElement(value: Element): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentElement(value: Element): Self = this.set("contentElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentElement: Self = this.set("contentElement", js.undefined)
-    
-    @scala.inline
-    def setItem(value: Element): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

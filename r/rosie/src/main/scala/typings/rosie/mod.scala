@@ -3,18 +3,29 @@ package typings.rosie
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rosie", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var Factory: IFactoryStatic = js.native
+  @JSImport("rosie", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rosie", "Factory")
+  @js.native
+  class Factory[T] () extends IFactory[T]
+  @JSImport("rosie", "Factory")
+  @js.native
+  def Factory: IFactoryStatic = js.native
+  @scala.inline
+  def Factory_=(x: IFactoryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Factory")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait IFactory[T] extends js.Object {
+  trait IFactory[T] extends StObject {
     
     /**
       * Sets a post-processor callback that will receive built objects and the

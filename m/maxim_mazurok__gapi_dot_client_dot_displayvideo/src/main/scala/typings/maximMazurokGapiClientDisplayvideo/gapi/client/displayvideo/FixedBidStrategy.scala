@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FixedBidStrategy extends js.Object {
+trait FixedBidStrategy extends StObject {
   
   /**
     * The fixed bid amount, in micros of the advertiser's currency. For insertion order entity, bid_amount_micros should be set as 0. For line item entity, bid_amount_micros must be
@@ -23,24 +24,12 @@ object FixedBidStrategy {
   }
   
   @scala.inline
-  implicit class FixedBidStrategyOps[Self <: FixedBidStrategy] (val x: Self) extends AnyVal {
+  implicit class FixedBidStrategyMutableBuilder[Self <: FixedBidStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBidAmountMicros(value: String): Self = StObject.set(x, "bidAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBidAmountMicros(value: String): Self = this.set("bidAmountMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBidAmountMicros: Self = this.set("bidAmountMicros", js.undefined)
+    def setBidAmountMicrosUndefined: Self = StObject.set(x, "bidAmountMicros", js.undefined)
   }
 }

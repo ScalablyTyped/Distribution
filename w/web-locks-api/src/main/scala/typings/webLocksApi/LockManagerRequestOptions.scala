@@ -3,12 +3,13 @@ package typings.webLocksApi
 import typings.std.AbortSignal
 import typings.webLocksApi.webLocksApiStrings.exclusive
 import typings.webLocksApi.webLocksApiStrings.shared
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LockManagerRequestOptions extends js.Object {
+trait LockManagerRequestOptions extends StObject {
   
   var ifAvailable: js.UndefOr[Boolean] = js.native
   
@@ -27,42 +28,30 @@ object LockManagerRequestOptions {
   }
   
   @scala.inline
-  implicit class LockManagerRequestOptionsOps[Self <: LockManagerRequestOptions] (val x: Self) extends AnyVal {
+  implicit class LockManagerRequestOptionsMutableBuilder[Self <: LockManagerRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIfAvailable(value: Boolean): Self = StObject.set(x, "ifAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIfAvailableUndefined: Self = StObject.set(x, "ifAvailable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: exclusive | shared): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfAvailable(value: Boolean): Self = this.set("ifAvailable", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteIfAvailable: Self = this.set("ifAvailable", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: exclusive | shared): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSteal(value: Boolean): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
-    
-    @scala.inline
-    def setSteal(value: Boolean): Self = this.set("steal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteal: Self = this.set("steal", js.undefined)
+    def setStealUndefined: Self = StObject.set(x, "steal", js.undefined)
   }
 }

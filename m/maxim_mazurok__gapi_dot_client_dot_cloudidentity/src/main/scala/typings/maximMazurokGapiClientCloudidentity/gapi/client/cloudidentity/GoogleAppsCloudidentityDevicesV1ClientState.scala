@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAppsCloudidentityDevicesV1ClientState extends js.Object {
+trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
   
   /** The caller can specify asset tags for this resource */
   var assetTags: js.UndefOr[js.Array[String]] = js.native
@@ -70,97 +71,85 @@ object GoogleAppsCloudidentityDevicesV1ClientState {
   }
   
   @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1ClientStateOps[Self <: GoogleAppsCloudidentityDevicesV1ClientState] (val x: Self) extends AnyVal {
+  implicit class GoogleAppsCloudidentityDevicesV1ClientStateMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ClientState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetTags(value: js.Array[String]): Self = StObject.set(x, "assetTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTagsUndefined: Self = StObject.set(x, "assetTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetTagsVarargs(value: String*): Self = StObject.set(x, "assetTags", js.Array(value :_*))
     
     @scala.inline
-    def setAssetTagsVarargs(value: String*): Self = this.set("assetTags", js.Array(value :_*))
+    def setComplianceState(value: String): Self = StObject.set(x, "complianceState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetTags(value: js.Array[String]): Self = this.set("assetTags", value.asInstanceOf[js.Any])
+    def setComplianceStateUndefined: Self = StObject.set(x, "complianceState", js.undefined)
     
     @scala.inline
-    def deleteAssetTags: Self = this.set("assetTags", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceState(value: String): Self = this.set("complianceState", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteComplianceState: Self = this.set("complianceState", js.undefined)
+    def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCustomIdUndefined: Self = StObject.set(x, "customId", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomId(value: String): Self = this.set("customId", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteCustomId: Self = this.set("customId", js.undefined)
+    def setHealthScore(value: String): Self = StObject.set(x, "healthScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
-    
-    @scala.inline
-    def setHealthScore(value: String): Self = this.set("healthScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthScore: Self = this.set("healthScore", js.undefined)
+    def setHealthScoreUndefined: Self = StObject.set(x, "healthScore", js.undefined)
     
     @scala.inline
     def setKeyValuePairs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
       */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState with TopLevel[js.Any]
-    ): Self = this.set("keyValuePairs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "keyValuePairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyValuePairs: Self = this.set("keyValuePairs", js.undefined)
+    def setKeyValuePairsUndefined: Self = StObject.set(x, "keyValuePairs", js.undefined)
     
     @scala.inline
-    def setLastUpdateTime(value: String): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
     @scala.inline
-    def setManaged(value: String): Self = this.set("managed", value.asInstanceOf[js.Any])
+    def setManaged(value: String): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManaged: Self = this.set("managed", js.undefined)
+    def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOwnerType(value: String): Self = this.set("ownerType", value.asInstanceOf[js.Any])
+    def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwnerType: Self = this.set("ownerType", js.undefined)
+    def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
     
     @scala.inline
-    def setScoreReason(value: String): Self = this.set("scoreReason", value.asInstanceOf[js.Any])
+    def setScoreReason(value: String): Self = StObject.set(x, "scoreReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScoreReason: Self = this.set("scoreReason", js.undefined)
+    def setScoreReasonUndefined: Self = StObject.set(x, "scoreReason", js.undefined)
   }
 }

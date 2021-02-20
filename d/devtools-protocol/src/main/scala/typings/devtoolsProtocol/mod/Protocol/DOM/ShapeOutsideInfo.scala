@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeOutsideInfo extends js.Object {
+trait ShapeOutsideInfo extends StObject {
   
   /**
     * Shape bounds
@@ -31,36 +32,24 @@ object ShapeOutsideInfo {
   }
   
   @scala.inline
-  implicit class ShapeOutsideInfoOps[Self <: ShapeOutsideInfo] (val x: Self) extends AnyVal {
+  implicit class ShapeOutsideInfoMutableBuilder[Self <: ShapeOutsideInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Quad): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarginShape(value: js.Array[_]): Self = StObject.set(x, "marginShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
+    def setMarginShapeVarargs(value: js.Any*): Self = StObject.set(x, "marginShape", js.Array(value :_*))
     
     @scala.inline
-    def setBounds(value: Quad): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setShape(value: js.Array[_]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginShapeVarargs(value: js.Any*): Self = this.set("marginShape", js.Array(value :_*))
-    
-    @scala.inline
-    def setMarginShape(value: js.Array[_]): Self = this.set("marginShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShapeVarargs(value: js.Any*): Self = this.set("shape", js.Array(value :_*))
-    
-    @scala.inline
-    def setShape(value: js.Array[_]): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setShapeVarargs(value: js.Any*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

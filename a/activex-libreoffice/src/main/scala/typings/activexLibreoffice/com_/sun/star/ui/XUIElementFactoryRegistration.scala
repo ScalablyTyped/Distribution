@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,33 +77,21 @@ object XUIElementFactoryRegistration {
   }
   
   @scala.inline
-  implicit class XUIElementFactoryRegistrationOps[Self <: XUIElementFactoryRegistration] (val x: Self) extends AnyVal {
+  implicit class XUIElementFactoryRegistrationMutableBuilder[Self <: XUIElementFactoryRegistration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeregisterFactory(value: (String, String, String) => Unit): Self = StObject.set(x, "deregisterFactory", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFactory(value: (String, String) => XUIElementFactory): Self = StObject.set(x, "getFactory", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRegisteredFactories(value: () => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getRegisteredFactories", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRegisteredFactories(value: SafeArray[SafeArray[PropertyValue]]): Self = this.set("RegisteredFactories", value.asInstanceOf[js.Any])
+    def setRegisterFactory(value: (String, String, String, String) => Unit): Self = StObject.set(x, "registerFactory", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDeregisterFactory(value: (String, String, String) => Unit): Self = this.set("deregisterFactory", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetFactory(value: (String, String) => XUIElementFactory): Self = this.set("getFactory", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetRegisteredFactories(value: () => SafeArray[SafeArray[PropertyValue]]): Self = this.set("getRegisteredFactories", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegisterFactory(value: (String, String, String, String) => Unit): Self = this.set("registerFactory", js.Any.fromFunction4(value))
+    def setRegisteredFactories(value: SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "RegisteredFactories", value.asInstanceOf[js.Any])
   }
 }

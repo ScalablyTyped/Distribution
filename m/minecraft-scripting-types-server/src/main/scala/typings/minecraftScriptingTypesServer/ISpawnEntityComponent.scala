@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.MinecraftFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Controls the entity's ability to spawn an entity or an item. This is similar to the chicken's ability to lay eggs after a set amount of time.
   */
 @js.native
-trait ISpawnEntityComponent extends js.Object {
+trait ISpawnEntityComponent extends StObject {
   
   /**
     * If present, the specified entity will only spawn if the filter evaluates to true
@@ -95,54 +96,42 @@ object ISpawnEntityComponent {
   }
   
   @scala.inline
-  implicit class ISpawnEntityComponentOps[Self <: ISpawnEntityComponent] (val x: Self) extends AnyVal {
+  implicit class ISpawnEntityComponentMutableBuilder[Self <: ISpawnEntityComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax_wait_time(value: Double): Self = StObject.set(x, "max_wait_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_wait_time(value: Double): Self = this.set("max_wait_time", value.asInstanceOf[js.Any])
+    def setMin_wait_time(value: Double): Self = StObject.set(x, "min_wait_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_wait_time(value: Double): Self = this.set("min_wait_time", value.asInstanceOf[js.Any])
+    def setNum_to_spawn(value: Double): Self = StObject.set(x, "num_to_spawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_to_spawn(value: Double): Self = this.set("num_to_spawn", value.asInstanceOf[js.Any])
+    def setShould_leash(value: Boolean): Self = StObject.set(x, "should_leash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShould_leash(value: Boolean): Self = this.set("should_leash", value.asInstanceOf[js.Any])
+    def setSingle_use(value: Boolean): Self = StObject.set(x, "single_use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingle_use(value: Boolean): Self = this.set("single_use", value.asInstanceOf[js.Any])
+    def setSpawn_entity(value: String): Self = StObject.set(x, "spawn_entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_entity(value: String): Self = this.set("spawn_entity", value.asInstanceOf[js.Any])
+    def setSpawn_event(value: String): Self = StObject.set(x, "spawn_event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_event(value: String): Self = this.set("spawn_event", value.asInstanceOf[js.Any])
+    def setSpawn_item(value: String): Self = StObject.set(x, "spawn_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_item(value: String): Self = this.set("spawn_item", value.asInstanceOf[js.Any])
+    def setSpawn_method(value: String): Self = StObject.set(x, "spawn_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpawn_method(value: String): Self = this.set("spawn_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpawn_sound(value: String): Self = this.set("spawn_sound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilters(value: MinecraftFilter): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setSpawn_sound(value: String): Self = StObject.set(x, "spawn_sound", value.asInstanceOf[js.Any])
   }
 }

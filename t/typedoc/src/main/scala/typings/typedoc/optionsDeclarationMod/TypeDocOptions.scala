@@ -2,13 +2,14 @@ package typings.typedoc.optionsDeclarationMod
 
 import typings.std.Exclude
 import typings.typedoc.anon.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in keyof typedoc.typedoc/dist/lib/utils/options/declaration.TypeDocOptionMap ]: typedoc.typedoc/dist/lib/utils/options/declaration.TypeDocOptionMap[K] extends std.Record<string, infer U>? std.Exclude<U, string> | keyof typedoc.typedoc/dist/lib/utils/options/declaration.TypeDocOptionMap[K] : typedoc.typedoc/dist/lib/utils/options/declaration.TypeDocOptionMap[K]} */
 @js.native
-trait TypeDocOptions extends js.Object {
+trait TypeDocOptions extends StObject {
   
   var categorizeByGroup: js.UndefOr[Boolean | (Exclude[_, String]) | js.Any] = js.native
   
@@ -97,273 +98,261 @@ object TypeDocOptions {
   }
   
   @scala.inline
-  implicit class TypeDocOptionsOps[Self <: TypeDocOptions] (val x: Self) extends AnyVal {
+  implicit class TypeDocOptionsMutableBuilder[Self <: TypeDocOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategorizeByGroup(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "categorizeByGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategorizeByGroupUndefined: Self = StObject.set(x, "categorizeByGroup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryOrder(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "categoryOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategorizeByGroup(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("categorizeByGroup", value.asInstanceOf[js.Any])
+    def setCategoryOrderUndefined: Self = StObject.set(x, "categoryOrder", js.undefined)
     
     @scala.inline
-    def deleteCategorizeByGroup: Self = this.set("categorizeByGroup", js.undefined)
+    def setCategoryOrderVarargs(value: String*): Self = StObject.set(x, "categoryOrder", js.Array(value :_*))
     
     @scala.inline
-    def setCategoryOrderVarargs(value: String*): Self = this.set("categoryOrder", js.Array(value :_*))
+    def setDefaultCategory(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "defaultCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryOrder(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("categoryOrder", value.asInstanceOf[js.Any])
+    def setDefaultCategoryUndefined: Self = StObject.set(x, "defaultCategory", js.undefined)
     
     @scala.inline
-    def deleteCategoryOrder: Self = this.set("categoryOrder", js.undefined)
+    def setDisableOutputCheck(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "disableOutputCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCategory(value: String | (Exclude[_, String]) | js.Any): Self = this.set("defaultCategory", value.asInstanceOf[js.Any])
+    def setDisableOutputCheckUndefined: Self = StObject.set(x, "disableOutputCheck", js.undefined)
     
     @scala.inline
-    def deleteDefaultCategory: Self = this.set("defaultCategory", js.undefined)
+    def setDisableSources(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "disableSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableOutputCheck(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("disableOutputCheck", value.asInstanceOf[js.Any])
+    def setDisableSourcesUndefined: Self = StObject.set(x, "disableSources", js.undefined)
     
     @scala.inline
-    def deleteDisableOutputCheck: Self = this.set("disableOutputCheck", js.undefined)
+    def setEntryPoint(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSources(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("disableSources", value.asInstanceOf[js.Any])
+    def setEntryPointUndefined: Self = StObject.set(x, "entryPoint", js.undefined)
     
     @scala.inline
-    def deleteDisableSources: Self = this.set("disableSources", js.undefined)
+    def setExclude(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPoint(value: String | (Exclude[_, String]) | js.Any): Self = this.set("entryPoint", value.asInstanceOf[js.Any])
+    def setExcludeExternals(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "excludeExternals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntryPoint: Self = this.set("entryPoint", js.undefined)
+    def setExcludeExternalsUndefined: Self = StObject.set(x, "excludeExternals", js.undefined)
     
     @scala.inline
-    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    def setExcludeNotDocumented(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "excludeNotDocumented", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setExcludeNotDocumentedUndefined: Self = StObject.set(x, "excludeNotDocumented", js.undefined)
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setExcludeNotExported(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "excludeNotExported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeExternals(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("excludeExternals", value.asInstanceOf[js.Any])
+    def setExcludeNotExportedUndefined: Self = StObject.set(x, "excludeNotExported", js.undefined)
     
     @scala.inline
-    def deleteExcludeExternals: Self = this.set("excludeExternals", js.undefined)
+    def setExcludePrivate(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "excludePrivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeNotDocumented(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("excludeNotDocumented", value.asInstanceOf[js.Any])
+    def setExcludePrivateUndefined: Self = StObject.set(x, "excludePrivate", js.undefined)
     
     @scala.inline
-    def deleteExcludeNotDocumented: Self = this.set("excludeNotDocumented", js.undefined)
+    def setExcludeProtected(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "excludeProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeNotExported(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("excludeNotExported", value.asInstanceOf[js.Any])
+    def setExcludeProtectedUndefined: Self = StObject.set(x, "excludeProtected", js.undefined)
     
     @scala.inline
-    def deleteExcludeNotExported: Self = this.set("excludeNotExported", js.undefined)
+    def setExcludeTags(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludePrivate(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("excludePrivate", value.asInstanceOf[js.Any])
+    def setExcludeTagsUndefined: Self = StObject.set(x, "excludeTags", js.undefined)
     
     @scala.inline
-    def deleteExcludePrivate: Self = this.set("excludePrivate", js.undefined)
+    def setExcludeTagsVarargs(value: String*): Self = StObject.set(x, "excludeTags", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeProtected(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("excludeProtected", value.asInstanceOf[js.Any])
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def deleteExcludeProtected: Self = this.set("excludeProtected", js.undefined)
+    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeTagsVarargs(value: String*): Self = this.set("excludeTags", js.Array(value :_*))
+    def setExternalPattern(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "externalPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeTags(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("excludeTags", value.asInstanceOf[js.Any])
+    def setExternalPatternUndefined: Self = StObject.set(x, "externalPattern", js.undefined)
     
     @scala.inline
-    def deleteExcludeTags: Self = this.set("excludeTags", js.undefined)
+    def setExternalPatternVarargs(value: String*): Self = StObject.set(x, "externalPattern", js.Array(value :_*))
     
     @scala.inline
-    def setExternalPatternVarargs(value: String*): Self = this.set("externalPattern", js.Array(value :_*))
+    def setGaID(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "gaID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalPattern(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("externalPattern", value.asInstanceOf[js.Any])
+    def setGaIDUndefined: Self = StObject.set(x, "gaID", js.undefined)
     
     @scala.inline
-    def deleteExternalPattern: Self = this.set("externalPattern", js.undefined)
+    def setGaSite(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "gaSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGaID(value: String | (Exclude[_, String]) | js.Any): Self = this.set("gaID", value.asInstanceOf[js.Any])
+    def setGaSiteUndefined: Self = StObject.set(x, "gaSite", js.undefined)
     
     @scala.inline
-    def deleteGaID: Self = this.set("gaID", js.undefined)
+    def setGitRemote(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "gitRemote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGaSite(value: String | (Exclude[_, String]) | js.Any): Self = this.set("gaSite", value.asInstanceOf[js.Any])
+    def setGitRemoteUndefined: Self = StObject.set(x, "gitRemote", js.undefined)
     
     @scala.inline
-    def deleteGaSite: Self = this.set("gaSite", js.undefined)
+    def setGitRevision(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "gitRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitRemote(value: String | (Exclude[_, String]) | js.Any): Self = this.set("gitRemote", value.asInstanceOf[js.Any])
+    def setGitRevisionUndefined: Self = StObject.set(x, "gitRevision", js.undefined)
     
     @scala.inline
-    def deleteGitRemote: Self = this.set("gitRemote", js.undefined)
+    def setHelp(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitRevision(value: String | (Exclude[_, String]) | js.Any): Self = this.set("gitRevision", value.asInstanceOf[js.Any])
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def deleteGitRevision: Self = this.set("gitRevision", js.undefined)
+    def setHideGenerator(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "hideGenerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setHideGeneratorUndefined: Self = StObject.set(x, "hideGenerator", js.undefined)
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setIgnoreCompilerErrors(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "ignoreCompilerErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideGenerator(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("hideGenerator", value.asInstanceOf[js.Any])
+    def setIgnoreCompilerErrorsUndefined: Self = StObject.set(x, "ignoreCompilerErrors", js.undefined)
     
     @scala.inline
-    def deleteHideGenerator: Self = this.set("hideGenerator", js.undefined)
+    def setIncludeDeclarations(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "includeDeclarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCompilerErrors(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("ignoreCompilerErrors", value.asInstanceOf[js.Any])
+    def setIncludeDeclarationsUndefined: Self = StObject.set(x, "includeDeclarations", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCompilerErrors: Self = this.set("ignoreCompilerErrors", js.undefined)
+    def setIncludeVersion(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "includeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDeclarations(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("includeDeclarations", value.asInstanceOf[js.Any])
+    def setIncludeVersionUndefined: Self = StObject.set(x, "includeVersion", js.undefined)
     
     @scala.inline
-    def deleteIncludeDeclarations: Self = this.set("includeDeclarations", js.undefined)
+    def setIncludes(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeVersion(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("includeVersion", value.asInstanceOf[js.Any])
+    def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
     @scala.inline
-    def deleteIncludeVersion: Self = this.set("includeVersion", js.undefined)
+    def setInputFiles(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludes(value: String | (Exclude[_, String]) | js.Any): Self = this.set("includes", value.asInstanceOf[js.Any])
+    def setInputFilesUndefined: Self = StObject.set(x, "inputFiles", js.undefined)
     
     @scala.inline
-    def deleteIncludes: Self = this.set("includes", js.undefined)
+    def setInputFilesVarargs(value: String*): Self = StObject.set(x, "inputFiles", js.Array(value :_*))
     
     @scala.inline
-    def setInputFilesVarargs(value: String*): Self = this.set("inputFiles", js.Array(value :_*))
+    def setJson(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFiles(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("inputFiles", value.asInstanceOf[js.Any])
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
     @scala.inline
-    def deleteInputFiles: Self = this.set("inputFiles", js.undefined)
+    def setListInvalidSymbolLinks(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "listInvalidSymbolLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: String | (Exclude[_, String]) | js.Any): Self = this.set("json", value.asInstanceOf[js.Any])
+    def setListInvalidSymbolLinksUndefined: Self = StObject.set(x, "listInvalidSymbolLinks", js.undefined)
     
     @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setLogger(value: js.Any | (Exclude[_, String])): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListInvalidSymbolLinks(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("listInvalidSymbolLinks", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteListInvalidSymbolLinks: Self = this.set("listInvalidSymbolLinks", js.undefined)
+    def setMedia(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: js.Any | (Exclude[_, String])): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setMode(value: File | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: String | (Exclude[_, String]) | js.Any): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setName(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: File | (Exclude[_, String]) | js.Any): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setOptions(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String | (Exclude[_, String]) | js.Any): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOut(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: String | (Exclude[_, String]) | js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setPlugin(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOut(value: String | (Exclude[_, String]) | js.Any): Self = this.set("out", value.asInstanceOf[js.Any])
+    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
     @scala.inline
-    def deleteOut: Self = this.set("out", js.undefined)
+    def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
     
     @scala.inline
-    def setPluginVarargs(value: String*): Self = this.set("plugin", js.Array(value :_*))
+    def setReadme(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugin(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("plugin", value.asInstanceOf[js.Any])
+    def setReadmeUndefined: Self = StObject.set(x, "readme", js.undefined)
     
     @scala.inline
-    def deletePlugin: Self = this.set("plugin", js.undefined)
+    def setTheme(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadme(value: String | (Exclude[_, String]) | js.Any): Self = this.set("readme", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteReadme: Self = this.set("readme", js.undefined)
+    def setToc(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String | (Exclude[_, String]) | js.Any): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTocUndefined: Self = StObject.set(x, "toc", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setTocVarargs(value: String*): Self = StObject.set(x, "toc", js.Array(value :_*))
     
     @scala.inline
-    def setTocVarargs(value: String*): Self = this.set("toc", js.Array(value :_*))
+    def setTsconfig(value: String | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToc(value: js.Array[String] | (Exclude[_, String]) | js.Any): Self = this.set("toc", value.asInstanceOf[js.Any])
+    def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
     
     @scala.inline
-    def deleteToc: Self = this.set("toc", js.undefined)
+    def setVersion(value: Boolean | (Exclude[_, String]) | js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTsconfig(value: String | (Exclude[_, String]) | js.Any): Self = this.set("tsconfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTsconfig: Self = this.set("tsconfig", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Boolean | (Exclude[_, String]) | js.Any): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

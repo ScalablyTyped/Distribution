@@ -2,6 +2,7 @@ package typings.knuddelsUserappsApi.mod.global
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.knuddelsUserappsApi.mod.KnuddelsEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 * @see https://developer.knuddels.de/docs/classes/App.html
 	 */
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#property_chatCommands
@@ -181,170 +182,158 @@ object App {
   }
   
   @scala.inline
-  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChatCommands(
       value: StringDictionary[
           js.Function3[/* user */ User, /* params */ java.lang.String, /* command */ java.lang.String, Unit]
         ]
-    ): Self = this.set("chatCommands", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "chatCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChatCommands: Self = this.set("chatCommands", js.undefined)
+    def setChatCommandsUndefined: Self = StObject.set(x, "chatCommands", js.undefined)
     
     @scala.inline
-    def setMayJoinChannel(value: /* user */ User => ChannelJoinPermission): Self = this.set("mayJoinChannel", js.Any.fromFunction1(value))
+    def setMayJoinChannel(value: /* user */ User => ChannelJoinPermission): Self = StObject.set(x, "mayJoinChannel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMayJoinChannel: Self = this.set("mayJoinChannel", js.undefined)
+    def setMayJoinChannelUndefined: Self = StObject.set(x, "mayJoinChannel", js.undefined)
     
     @scala.inline
-    def setMayShowPublicActionMessage(value: /* publicActionMessage */ PublicActionMessage => Boolean): Self = this.set("mayShowPublicActionMessage", js.Any.fromFunction1(value))
+    def setMayShowPublicActionMessage(value: /* publicActionMessage */ PublicActionMessage => Boolean): Self = StObject.set(x, "mayShowPublicActionMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMayShowPublicActionMessage: Self = this.set("mayShowPublicActionMessage", js.undefined)
+    def setMayShowPublicActionMessageUndefined: Self = StObject.set(x, "mayShowPublicActionMessage", js.undefined)
     
     @scala.inline
-    def setMayShowPublicMessage(value: /* publicMessage */ PublicMessage => Boolean): Self = this.set("mayShowPublicMessage", js.Any.fromFunction1(value))
+    def setMayShowPublicMessage(value: /* publicMessage */ PublicMessage => Boolean): Self = StObject.set(x, "mayShowPublicMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMayShowPublicMessage: Self = this.set("mayShowPublicMessage", js.undefined)
+    def setMayShowPublicMessageUndefined: Self = StObject.set(x, "mayShowPublicMessage", js.undefined)
     
     @scala.inline
-    def setMayUserDice(value: (/* user */ User, /* diceConfig */ DiceConfiguration) => Boolean): Self = this.set("mayUserDice", js.Any.fromFunction2(value))
+    def setMayUserDice(value: (/* user */ User, /* diceConfig */ DiceConfiguration) => Boolean): Self = StObject.set(x, "mayUserDice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteMayUserDice: Self = this.set("mayUserDice", js.undefined)
+    def setMayUserDiceUndefined: Self = StObject.set(x, "mayUserDice", js.undefined)
     
     @scala.inline
     def setOnAccountChangedKnuddelAmount(
       value: (/* user */ User, /* knuddelAccount */ KnuddelAccount, /* oldKnuddelAmount */ KnuddelAmount, /* newKnuddelAmount */ KnuddelAmount) => Unit
-    ): Self = this.set("onAccountChangedKnuddelAmount", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onAccountChangedKnuddelAmount", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnAccountChangedKnuddelAmount: Self = this.set("onAccountChangedKnuddelAmount", js.undefined)
+    def setOnAccountChangedKnuddelAmountUndefined: Self = StObject.set(x, "onAccountChangedKnuddelAmount", js.undefined)
     
     @scala.inline
     def setOnAccountReceivedKnuddel(
       value: (/* sender */ User, /* receiver */ BotUser, /* knuddelAmount */ KnuddelAmount, /* transferReason */ java.lang.String, /* knuddelAccount */ KnuddelAccount) => Unit
-    ): Self = this.set("onAccountReceivedKnuddel", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "onAccountReceivedKnuddel", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteOnAccountReceivedKnuddel: Self = this.set("onAccountReceivedKnuddel", js.undefined)
+    def setOnAccountReceivedKnuddelUndefined: Self = StObject.set(x, "onAccountReceivedKnuddel", js.undefined)
     
     @scala.inline
     def setOnAppEventReceived(
       value: (/* appInstance */ AppInstance, /* type */ java.lang.String, /* data */ KnuddelsEvent) => Unit
-    ): Self = this.set("onAppEventReceived", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onAppEventReceived", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnAppEventReceived: Self = this.set("onAppEventReceived", js.undefined)
+    def setOnAppEventReceivedUndefined: Self = StObject.set(x, "onAppEventReceived", js.undefined)
     
     @scala.inline
-    def setOnAppStart(value: () => Unit): Self = this.set("onAppStart", js.Any.fromFunction0(value))
+    def setOnAppStart(value: () => Unit): Self = StObject.set(x, "onAppStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnAppStart: Self = this.set("onAppStart", js.undefined)
+    def setOnAppStartUndefined: Self = StObject.set(x, "onAppStart", js.undefined)
     
     @scala.inline
-    def setOnBeforeKnuddelReceived(value: /* knuddelTransfer */ KnuddelTransfer => Unit): Self = this.set("onBeforeKnuddelReceived", js.Any.fromFunction1(value))
+    def setOnBeforeKnuddelReceived(value: /* knuddelTransfer */ KnuddelTransfer => Unit): Self = StObject.set(x, "onBeforeKnuddelReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnBeforeKnuddelReceived: Self = this.set("onBeforeKnuddelReceived", js.undefined)
+    def setOnBeforeKnuddelReceivedUndefined: Self = StObject.set(x, "onBeforeKnuddelReceived", js.undefined)
     
     @scala.inline
-    def setOnDeveloperCommand(value: (/* user */ User, /* params */ java.lang.String) => Unit): Self = this.set("onDeveloperCommand", js.Any.fromFunction2(value))
+    def setOnDeveloperCommand(value: (/* user */ User, /* params */ java.lang.String) => Unit): Self = StObject.set(x, "onDeveloperCommand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDeveloperCommand: Self = this.set("onDeveloperCommand", js.undefined)
+    def setOnDeveloperCommandUndefined: Self = StObject.set(x, "onDeveloperCommand", js.undefined)
     
     @scala.inline
     def setOnEventReceived(
       value: (/* user */ User, /* type */ java.lang.String, /* data */ KnuddelsEvent, /* appContentSession */ AppContentSession) => Unit
-    ): Self = this.set("onEventReceived", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onEventReceived", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnEventReceived: Self = this.set("onEventReceived", js.undefined)
+    def setOnEventReceivedUndefined: Self = StObject.set(x, "onEventReceived", js.undefined)
     
     @scala.inline
     def setOnKnuddelReceived(
       value: (/* sender */ User, /* receiver */ BotUser, /* knuddelAmount */ KnuddelAmount, /* transferReason */ java.lang.String) => Unit
-    ): Self = this.set("onKnuddelReceived", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onKnuddelReceived", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnKnuddelReceived: Self = this.set("onKnuddelReceived", js.undefined)
+    def setOnKnuddelReceivedUndefined: Self = StObject.set(x, "onKnuddelReceived", js.undefined)
     
     @scala.inline
-    def setOnPrepareShutdown(value: /* secondsTillShutdown */ Double => Unit): Self = this.set("onPrepareShutdown", js.Any.fromFunction1(value))
+    def setOnPrepareShutdown(value: /* secondsTillShutdown */ Double => Unit): Self = StObject.set(x, "onPrepareShutdown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPrepareShutdown: Self = this.set("onPrepareShutdown", js.undefined)
+    def setOnPrepareShutdownUndefined: Self = StObject.set(x, "onPrepareShutdown", js.undefined)
     
     @scala.inline
-    def setOnPrivateMessage(value: /* privateMessage */ PrivateMessage => Unit): Self = this.set("onPrivateMessage", js.Any.fromFunction1(value))
+    def setOnPrivateMessage(value: /* privateMessage */ PrivateMessage => Unit): Self = StObject.set(x, "onPrivateMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPrivateMessage: Self = this.set("onPrivateMessage", js.undefined)
+    def setOnPrivateMessageUndefined: Self = StObject.set(x, "onPrivateMessage", js.undefined)
     
     @scala.inline
-    def setOnPublicActionMessage(value: /* publicActionMessage */ PublicActionMessage => Unit): Self = this.set("onPublicActionMessage", js.Any.fromFunction1(value))
+    def setOnPublicActionMessage(value: /* publicActionMessage */ PublicActionMessage => Unit): Self = StObject.set(x, "onPublicActionMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPublicActionMessage: Self = this.set("onPublicActionMessage", js.undefined)
+    def setOnPublicActionMessageUndefined: Self = StObject.set(x, "onPublicActionMessage", js.undefined)
     
     @scala.inline
-    def setOnPublicEventMessage(value: /* publicEventMessage */ PublicEventMessage => Unit): Self = this.set("onPublicEventMessage", js.Any.fromFunction1(value))
+    def setOnPublicEventMessage(value: /* publicEventMessage */ PublicEventMessage => Unit): Self = StObject.set(x, "onPublicEventMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPublicEventMessage: Self = this.set("onPublicEventMessage", js.undefined)
+    def setOnPublicEventMessageUndefined: Self = StObject.set(x, "onPublicEventMessage", js.undefined)
     
     @scala.inline
-    def setOnPublicMessage(value: /* publicMessage */ PublicMessage => Unit): Self = this.set("onPublicMessage", js.Any.fromFunction1(value))
+    def setOnPublicMessage(value: /* publicMessage */ PublicMessage => Unit): Self = StObject.set(x, "onPublicMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPublicMessage: Self = this.set("onPublicMessage", js.undefined)
+    def setOnPublicMessageUndefined: Self = StObject.set(x, "onPublicMessage", js.undefined)
     
     @scala.inline
-    def setOnShutdown(value: () => Unit): Self = this.set("onShutdown", js.Any.fromFunction0(value))
+    def setOnShutdown(value: () => Unit): Self = StObject.set(x, "onShutdown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnShutdown: Self = this.set("onShutdown", js.undefined)
+    def setOnShutdownUndefined: Self = StObject.set(x, "onShutdown", js.undefined)
     
     @scala.inline
-    def setOnUserDeleted(value: (/* userId */ Double, /* userPersistence */ UserPersistence) => Unit): Self = this.set("onUserDeleted", js.Any.fromFunction2(value))
+    def setOnUserDeleted(value: (/* userId */ Double, /* userPersistence */ UserPersistence) => Unit): Self = StObject.set(x, "onUserDeleted", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnUserDeleted: Self = this.set("onUserDeleted", js.undefined)
+    def setOnUserDeletedUndefined: Self = StObject.set(x, "onUserDeleted", js.undefined)
     
     @scala.inline
-    def setOnUserDiced(value: /* diceEvent */ DiceEvent => Unit): Self = this.set("onUserDiced", js.Any.fromFunction1(value))
+    def setOnUserDiced(value: /* diceEvent */ DiceEvent => Unit): Self = StObject.set(x, "onUserDiced", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUserDiced: Self = this.set("onUserDiced", js.undefined)
+    def setOnUserDicedUndefined: Self = StObject.set(x, "onUserDiced", js.undefined)
     
     @scala.inline
-    def setOnUserJoined(value: /* user */ User => Unit): Self = this.set("onUserJoined", js.Any.fromFunction1(value))
+    def setOnUserJoined(value: /* user */ User => Unit): Self = StObject.set(x, "onUserJoined", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUserJoined: Self = this.set("onUserJoined", js.undefined)
+    def setOnUserJoinedUndefined: Self = StObject.set(x, "onUserJoined", js.undefined)
     
     @scala.inline
-    def setOnUserLeft(value: /* user */ User => Unit): Self = this.set("onUserLeft", js.Any.fromFunction1(value))
+    def setOnUserLeft(value: /* user */ User => Unit): Self = StObject.set(x, "onUserLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUserLeft: Self = this.set("onUserLeft", js.undefined)
+    def setOnUserLeftUndefined: Self = StObject.set(x, "onUserLeft", js.undefined)
   }
 }

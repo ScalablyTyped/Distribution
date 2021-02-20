@@ -2,13 +2,12 @@ package typings.rdfExt
 
 import typings.rdfExt.anon.TermType
 import typings.rdfJs.mod.BlankNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdf-ext/lib/BlankNode", JSImport.Namespace)
-@js.native
-object blankNodeMod extends js.Object {
+object blankNodeMod {
   
   @js.native
   trait BlankNodeExt extends BlankNode {

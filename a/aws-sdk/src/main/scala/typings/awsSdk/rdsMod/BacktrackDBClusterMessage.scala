@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BacktrackDBClusterMessage extends js.Object {
+trait BacktrackDBClusterMessage extends StObject {
   
   /**
     * The timestamp of the time to backtrack the DB cluster to, specified in ISO 8601 format. For more information about ISO 8601, see the ISO8601 Wikipedia page.   If the specified time isn't a consistent time for the DB cluster, Aurora automatically chooses the nearest possible consistent time for the DB cluster.  Constraints:   Must contain a valid ISO 8601 timestamp.   Can't contain a timestamp set in the future.   Example: 2017-07-08T18:00Z 
@@ -36,36 +37,24 @@ object BacktrackDBClusterMessage {
   }
   
   @scala.inline
-  implicit class BacktrackDBClusterMessageOps[Self <: BacktrackDBClusterMessage] (val x: Self) extends AnyVal {
+  implicit class BacktrackDBClusterMessageMutableBuilder[Self <: BacktrackDBClusterMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacktrackTo(value: TStamp): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: BooleanOptional): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBacktrackTo(value: TStamp): Self = this.set("BacktrackTo", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
     @scala.inline
-    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    def setUseEarliestTimeOnPointInTimeUnavailable(value: BooleanOptional): Self = StObject.set(x, "UseEarliestTimeOnPointInTimeUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: BooleanOptional): Self = this.set("Force", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce: Self = this.set("Force", js.undefined)
-    
-    @scala.inline
-    def setUseEarliestTimeOnPointInTimeUnavailable(value: BooleanOptional): Self = this.set("UseEarliestTimeOnPointInTimeUnavailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseEarliestTimeOnPointInTimeUnavailable: Self = this.set("UseEarliestTimeOnPointInTimeUnavailable", js.undefined)
+    def setUseEarliestTimeOnPointInTimeUnavailableUndefined: Self = StObject.set(x, "UseEarliestTimeOnPointInTimeUnavailable", js.undefined)
   }
 }

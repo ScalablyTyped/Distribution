@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Event objects from the user's friend's calendars.
   */
 @js.native
-trait IEvent extends js.Object {
+trait IEvent extends StObject {
   
   /**
     * The user's availability status for the event. Valid values are:
@@ -146,66 +147,54 @@ object IEvent {
   }
   
   @scala.inline
-  implicit class IEventOps[Self <: IEvent] (val x: Self) extends AnyVal {
+  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: String): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar_id(value: String): Self = this.set("calendar_id", value.asInstanceOf[js.Any])
+    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_time(value: String): Self = this.set("created_time", value.asInstanceOf[js.Any])
+    def setFrom(value: IUserInfo): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: String): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setIs_all_day_event(value: Boolean): Self = StObject.set(x, "is_all_day_event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: IUserInfo): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setIs_recurrent(value: Boolean): Self = StObject.set(x, "is_recurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_all_day_event(value: Boolean): Self = this.set("is_all_day_event", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_recurrent(value: Boolean): Self = this.set("is_recurrent", value.asInstanceOf[js.Any])
+    def setRecurrence(value: String): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setReminder_time(value: Double): Self = StObject.set(x, "reminder_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrence(value: String): Self = this.set("recurrence", value.asInstanceOf[js.Any])
+    def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminder_time(value: Double): Self = this.set("reminder_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_time(value: String): Self = this.set("updated_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

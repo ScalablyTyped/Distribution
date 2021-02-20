@@ -1,12 +1,13 @@
 package typings.wordpressBlocks.anon
 
 import typings.wordpressBlocks.wordpressBlocksStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultType extends js.Object {
+trait DefaultType extends StObject {
   
   var default: js.UndefOr[String] = js.native
   
@@ -22,27 +23,15 @@ object DefaultType {
   }
   
   @scala.inline
-  implicit class DefaultTypeOps[Self <: DefaultType] (val x: Self) extends AnyVal {
+  implicit class DefaultTypeMutableBuilder[Self <: DefaultType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: string): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

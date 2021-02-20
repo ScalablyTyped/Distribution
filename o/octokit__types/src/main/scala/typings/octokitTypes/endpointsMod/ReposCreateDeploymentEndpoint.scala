@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCreateDeploymentEndpoint extends js.Object {
+trait ReposCreateDeploymentEndpoint extends StObject {
   
   /**
     * Attempts to automatically merge the default branch into the requested ref, if it's behind the default branch.
@@ -67,78 +68,66 @@ object ReposCreateDeploymentEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCreateDeploymentEndpointOps[Self <: ReposCreateDeploymentEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCreateDeploymentEndpointMutableBuilder[Self <: ReposCreateDeploymentEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto_merge(value: Boolean): Self = StObject.set(x, "auto_merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuto_mergeUndefined: Self = StObject.set(x, "auto_merge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def setAuto_merge(value: Boolean): Self = this.set("auto_merge", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuto_merge: Self = this.set("auto_merge", js.undefined)
+    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setProduction_environment(value: Boolean): Self = StObject.set(x, "production_environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: String): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setProduction_environmentUndefined: Self = StObject.set(x, "production_environment", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: js.Any): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setRequired_contexts(value: js.Array[String]): Self = StObject.set(x, "required_contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduction_environment(value: Boolean): Self = this.set("production_environment", value.asInstanceOf[js.Any])
+    def setRequired_contextsUndefined: Self = StObject.set(x, "required_contexts", js.undefined)
     
     @scala.inline
-    def deleteProduction_environment: Self = this.set("production_environment", js.undefined)
+    def setRequired_contextsVarargs(value: String*): Self = StObject.set(x, "required_contexts", js.Array(value :_*))
     
     @scala.inline
-    def setRequired_contextsVarargs(value: String*): Self = this.set("required_contexts", js.Array(value :_*))
+    def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired_contexts(value: js.Array[String]): Self = this.set("required_contexts", value.asInstanceOf[js.Any])
+    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
     
     @scala.inline
-    def deleteRequired_contexts: Self = this.set("required_contexts", js.undefined)
+    def setTransient_environment(value: Boolean): Self = StObject.set(x, "transient_environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTask(value: String): Self = this.set("task", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTask: Self = this.set("task", js.undefined)
-    
-    @scala.inline
-    def setTransient_environment(value: Boolean): Self = this.set("transient_environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransient_environment: Self = this.set("transient_environment", js.undefined)
+    def setTransient_environmentUndefined: Self = StObject.set(x, "transient_environment", js.undefined)
   }
 }

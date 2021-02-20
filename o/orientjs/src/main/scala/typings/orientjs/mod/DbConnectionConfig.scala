@@ -1,11 +1,12 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DbConnectionConfig extends js.Object {
+trait DbConnectionConfig extends StObject {
   
   var forcePrepare: js.UndefOr[Boolean] = js.native
   
@@ -38,87 +39,75 @@ object DbConnectionConfig {
   }
   
   @scala.inline
-  implicit class DbConnectionConfigOps[Self <: DbConnectionConfig] (val x: Self) extends AnyVal {
+  implicit class DbConnectionConfigMutableBuilder[Self <: DbConnectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForcePrepare(value: Boolean): Self = StObject.set(x, "forcePrepare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForcePrepareUndefined: Self = StObject.set(x, "forcePrepare", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForcePrepare(value: Boolean): Self = this.set("forcePrepare", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteForcePrepare: Self = this.set("forcePrepare", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServer(value: OServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setSessionId(value: Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: OServer): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: Double): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: String): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteStorage: Self = this.set("storage", js.undefined)
+    def setTransformers(value: js.Array[js.Function1[/* item */ ORecord, _]]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: js.Any): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
     
     @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTransformersVarargs(value: (js.Function1[/* item */ ORecord, js.Any])*): Self = StObject.set(x, "transformers", js.Array(value :_*))
     
     @scala.inline
-    def setTransformersVarargs(value: (js.Function1[/* item */ ORecord, js.Any])*): Self = this.set("transformers", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformers(value: js.Array[js.Function1[/* item */ ORecord, _]]): Self = this.set("transformers", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTransformers: Self = this.set("transformers", js.undefined)
+    def setUseToken(value: Boolean): Self = StObject.set(x, "useToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUseTokenUndefined: Self = StObject.set(x, "useToken", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseToken(value: Boolean): Self = this.set("useToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseToken: Self = this.set("useToken", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

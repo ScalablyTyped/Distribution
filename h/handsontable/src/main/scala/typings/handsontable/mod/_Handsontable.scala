@@ -305,17 +305,16 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.RegExp
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>; // TS >= 2.8
-@JSImport("handsontable", "_Handsontable")
-@js.native
-object _Handsontable extends js.Object {
+object _Handsontable {
   
   @js.native
-  trait Core extends js.Object {
+  trait Core extends StObject {
     
     def addHook(
       key: afterModifyTransformEnd,

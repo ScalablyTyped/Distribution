@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,54 +50,42 @@ object DeviceMetricCalibration {
   }
   
   @scala.inline
-  implicit class DeviceMetricCalibrationOps[Self <: DeviceMetricCalibration] (val x: Self) extends AnyVal {
+  implicit class DeviceMetricCalibrationMutableBuilder[Self <: DeviceMetricCalibration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: code): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTime(value: instant): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_state(value: Element): Self = this.set("_state", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def delete_state: Self = this.set("_state", js.undefined)
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_time(value: Element): Self = this.set("_time", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def delete_time: Self = this.set("_time", js.undefined)
+    def set_state(value: Element): Self = StObject.set(x, "_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_stateUndefined: Self = StObject.set(x, "_state", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: code): Self = this.set("state", value.asInstanceOf[js.Any])
+    def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: instant): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

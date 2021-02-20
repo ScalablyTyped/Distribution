@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/arcTan2Block", JSImport.Namespace)
-@js.native
-object arcTan2BlockMod extends js.Object {
+object arcTan2BlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/arcTan2Block", "ArcTan2Block")
   @js.native
   class ArcTan2Block protected () extends NodeMaterialBlock {
     /**

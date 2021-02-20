@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/is-iterable", JSImport.Namespace)
-@js.native
-object isIterableMod
-  extends TopLevel[js.Function1[/* target */ js.Any, Boolean]]
+object isIterableMod {
+  
+  /* was `typeof core.isIterable` */
+  @JSImport("core-js/fn/is-iterable", JSImport.Namespace)
+  @js.native
+  def apply(value: js.Any): Boolean = js.native
+}

@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeComplianceByResourceResponse extends js.Object {
+trait DescribeComplianceByResourceResponse extends StObject {
   
   /**
     * Indicates whether the specified AWS resource complies with all of the AWS Config rules that evaluate it.
@@ -26,33 +27,21 @@ object DescribeComplianceByResourceResponse {
   }
   
   @scala.inline
-  implicit class DescribeComplianceByResourceResponseOps[Self <: DescribeComplianceByResourceResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeComplianceByResourceResponseMutableBuilder[Self <: DescribeComplianceByResourceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceByResources(value: ComplianceByResources): Self = StObject.set(x, "ComplianceByResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceByResourcesUndefined: Self = StObject.set(x, "ComplianceByResources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceByResourcesVarargs(value: ComplianceByResource*): Self = StObject.set(x, "ComplianceByResources", js.Array(value :_*))
     
     @scala.inline
-    def setComplianceByResourcesVarargs(value: ComplianceByResource*): Self = this.set("ComplianceByResources", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceByResources(value: ComplianceByResources): Self = this.set("ComplianceByResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceByResources: Self = this.set("ComplianceByResources", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

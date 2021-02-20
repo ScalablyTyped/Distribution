@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1StudyConfigParameterSpec extends js.Object {
+trait GoogleCloudMlV1StudyConfigParameterSpec extends StObject {
   
   /** The value spec for a 'CATEGORICAL' parameter. */
   var categoricalValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec] = js.native
@@ -49,87 +50,75 @@ object GoogleCloudMlV1StudyConfigParameterSpec {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1StudyConfigParameterSpecOps[Self <: GoogleCloudMlV1StudyConfigParameterSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1StudyConfigParameterSpecMutableBuilder[Self <: GoogleCloudMlV1StudyConfigParameterSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec): Self = StObject.set(x, "categoricalValueSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalValueSpecUndefined: Self = StObject.set(x, "categoricalValueSpec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildParameterSpecs(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = StObject.set(x, "childParameterSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec): Self = this.set("categoricalValueSpec", value.asInstanceOf[js.Any])
+    def setChildParameterSpecsUndefined: Self = StObject.set(x, "childParameterSpecs", js.undefined)
     
     @scala.inline
-    def deleteCategoricalValueSpec: Self = this.set("categoricalValueSpec", js.undefined)
+    def setChildParameterSpecsVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "childParameterSpecs", js.Array(value :_*))
     
     @scala.inline
-    def setChildParameterSpecsVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = this.set("childParameterSpecs", js.Array(value :_*))
+    def setDiscreteValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecDiscreteValueSpec): Self = StObject.set(x, "discreteValueSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildParameterSpecs(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = this.set("childParameterSpecs", value.asInstanceOf[js.Any])
+    def setDiscreteValueSpecUndefined: Self = StObject.set(x, "discreteValueSpec", js.undefined)
     
     @scala.inline
-    def deleteChildParameterSpecs: Self = this.set("childParameterSpecs", js.undefined)
+    def setDoubleValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec): Self = StObject.set(x, "doubleValueSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscreteValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecDiscreteValueSpec): Self = this.set("discreteValueSpec", value.asInstanceOf[js.Any])
+    def setDoubleValueSpecUndefined: Self = StObject.set(x, "doubleValueSpec", js.undefined)
     
     @scala.inline
-    def deleteDiscreteValueSpec: Self = this.set("discreteValueSpec", js.undefined)
+    def setIntegerValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec): Self = StObject.set(x, "integerValueSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec): Self = this.set("doubleValueSpec", value.asInstanceOf[js.Any])
+    def setIntegerValueSpecUndefined: Self = StObject.set(x, "integerValueSpec", js.undefined)
     
     @scala.inline
-    def deleteDoubleValueSpec: Self = this.set("doubleValueSpec", js.undefined)
+    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec): Self = this.set("integerValueSpec", value.asInstanceOf[js.Any])
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def deleteIntegerValueSpec: Self = this.set("integerValueSpec", js.undefined)
+    def setParentCategoricalValues(value: GoogleCloudMlV1StudyConfigParameterSpecMatchingParentCategoricalValueSpec): Self = StObject.set(x, "parentCategoricalValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: String): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def setParentCategoricalValuesUndefined: Self = StObject.set(x, "parentCategoricalValues", js.undefined)
     
     @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
+    def setParentDiscreteValues(value: GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec): Self = StObject.set(x, "parentDiscreteValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentCategoricalValues(value: GoogleCloudMlV1StudyConfigParameterSpecMatchingParentCategoricalValueSpec): Self = this.set("parentCategoricalValues", value.asInstanceOf[js.Any])
+    def setParentDiscreteValuesUndefined: Self = StObject.set(x, "parentDiscreteValues", js.undefined)
     
     @scala.inline
-    def deleteParentCategoricalValues: Self = this.set("parentCategoricalValues", js.undefined)
+    def setParentIntValues(value: GoogleCloudMlV1StudyConfigParameterSpecMatchingParentIntValueSpec): Self = StObject.set(x, "parentIntValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentDiscreteValues(value: GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec): Self = this.set("parentDiscreteValues", value.asInstanceOf[js.Any])
+    def setParentIntValuesUndefined: Self = StObject.set(x, "parentIntValues", js.undefined)
     
     @scala.inline
-    def deleteParentDiscreteValues: Self = this.set("parentDiscreteValues", js.undefined)
+    def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentIntValues(value: GoogleCloudMlV1StudyConfigParameterSpecMatchingParentIntValueSpec): Self = this.set("parentIntValues", value.asInstanceOf[js.Any])
+    def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
     
     @scala.inline
-    def deleteParentIntValues: Self = this.set("parentIntValues", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleType(value: String): Self = this.set("scaleType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleType: Self = this.set("scaleType", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

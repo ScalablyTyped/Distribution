@@ -1,11 +1,12 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RESTAPIResponse extends js.Object {
+trait RESTAPIResponse extends StObject {
   
   def getStreamWriter(): RESTAPIResponseStream = js.native
   
@@ -41,42 +42,30 @@ object RESTAPIResponse {
   }
   
   @scala.inline
-  implicit class RESTAPIResponseOps[Self <: RESTAPIResponse] (val x: Self) extends AnyVal {
+  implicit class RESTAPIResponseMutableBuilder[Self <: RESTAPIResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = this.set("getStreamWriter", js.Any.fromFunction0(value))
+    def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBody(value: js.Any => Unit): Self = this.set("setBody", js.Any.fromFunction1(value))
+    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetContentType(value: String => Unit): Self = this.set("setContentType", js.Any.fromFunction1(value))
+    def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetError(value: js.Any => Unit): Self = this.set("setError", js.Any.fromFunction1(value))
+    def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = this.set("setHeader", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetHeaders(value: js.Any => Unit): Self = this.set("setHeaders", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocation(value: String => Unit): Self = this.set("setLocation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStatus(value: Double => Unit): Self = this.set("setStatus", js.Any.fromFunction1(value))
+    def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
   }
 }

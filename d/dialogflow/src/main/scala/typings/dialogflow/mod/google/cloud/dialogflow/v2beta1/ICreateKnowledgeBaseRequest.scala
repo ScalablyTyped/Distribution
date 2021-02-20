@@ -1,27 +1,47 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CreateKnowledgeBaseRequest. */
-trait ICreateKnowledgeBaseRequest extends js.Object {
+@js.native
+trait ICreateKnowledgeBaseRequest extends StObject {
+  
   /** CreateKnowledgeBaseRequest knowledgeBase */
-  var knowledgeBase: js.UndefOr[IKnowledgeBase | Null] = js.undefined
+  var knowledgeBase: js.UndefOr[IKnowledgeBase | Null] = js.native
+  
   /** CreateKnowledgeBaseRequest parent */
-  var parent: js.UndefOr[String | Null] = js.undefined
+  var parent: js.UndefOr[String | Null] = js.native
 }
-
 object ICreateKnowledgeBaseRequest {
+  
   @scala.inline
-  def apply(
-    knowledgeBase: js.UndefOr[Null | IKnowledgeBase] = js.undefined,
-    parent: js.UndefOr[Null | String] = js.undefined
-  ): ICreateKnowledgeBaseRequest = {
+  def apply(): ICreateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(knowledgeBase)) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateKnowledgeBaseRequest]
   }
+  
+  @scala.inline
+  implicit class ICreateKnowledgeBaseRequestMutableBuilder[Self <: ICreateKnowledgeBaseRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setKnowledgeBase(value: IKnowledgeBase): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKnowledgeBaseNull: Self = StObject.set(x, "knowledgeBase", null)
+    
+    @scala.inline
+    def setKnowledgeBaseUndefined: Self = StObject.set(x, "knowledgeBase", js.undefined)
+    
+    @scala.inline
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParentNull: Self = StObject.set(x, "parent", null)
+    
+    @scala.inline
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+  }
 }
-

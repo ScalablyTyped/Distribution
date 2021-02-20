@@ -1,6 +1,7 @@
 package typings.chartist.mod
 
 import typings.chartist.chartistStrings.grid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,45 +47,33 @@ object IChartDrawGridData {
   }
   
   @scala.inline
-  implicit class IChartDrawGridDataOps[Self <: IChartDrawGridData] (val x: Self) extends AnyVal {
+  implicit class IChartDrawGridDataMutableBuilder[Self <: IChartDrawGridData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: IChartAxis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElement(value: IChartistSvg): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: IChartistSvg): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: IChartAxis): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: IChartistSvg): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setType(value: grid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: IChartistSvg): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: grid): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: Double): Self = this.set("x1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX2(value: Double): Self = this.set("x2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY2(value: Double): Self = this.set("y2", value.asInstanceOf[js.Any])
+    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftdataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatementData extends js.Object {
+trait StatementData extends StObject {
   
   /**
     * The date and time (UTC) the statement was created. 
@@ -51,57 +52,45 @@ object StatementData {
   }
   
   @scala.inline
-  implicit class StatementDataOps[Self <: StatementData] (val x: Self) extends AnyVal {
+  implicit class StatementDataMutableBuilder[Self <: StatementData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: UUID): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setQueryString(value: StatementString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: StatementString): Self = this.set("QueryString", value.asInstanceOf[js.Any])
+    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
     @scala.inline
-    def deleteQueryString: Self = this.set("QueryString", js.undefined)
+    def setStatementName(value: StatementNameString): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    def setStatementNameUndefined: Self = StObject.set(x, "StatementName", js.undefined)
     
     @scala.inline
-    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
+    def setStatus(value: StatusString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatementName(value: StatementNameString): Self = this.set("StatementName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatementName: Self = this.set("StatementName", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StatusString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

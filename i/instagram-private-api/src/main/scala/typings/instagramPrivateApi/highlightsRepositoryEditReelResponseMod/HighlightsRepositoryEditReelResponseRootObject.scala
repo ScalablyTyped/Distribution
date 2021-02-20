@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryEditReelResponseRootObject extends js.Object {
+trait HighlightsRepositoryEditReelResponseRootObject extends StObject {
   
   var reel: HighlightsRepositoryEditReelResponseReel = js.native
   
@@ -20,24 +21,12 @@ object HighlightsRepositoryEditReelResponseRootObject {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseRootObjectOps[Self <: HighlightsRepositoryEditReelResponseRootObject] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryEditReelResponseRootObjectMutableBuilder[Self <: HighlightsRepositoryEditReelResponseRootObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReel(value: HighlightsRepositoryEditReelResponseReel): Self = StObject.set(x, "reel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReel(value: HighlightsRepositoryEditReelResponseReel): Self = this.set("reel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Created
 import typings.octokitTypes.anon.FamilyName
 import typings.octokitTypes.anon.Primary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScimProvisionAndInviteUserResponseData extends js.Object {
+trait ScimProvisionAndInviteUserResponseData extends StObject {
   
   var active: Boolean = js.native
   
@@ -44,48 +45,36 @@ object ScimProvisionAndInviteUserResponseData {
   }
   
   @scala.inline
-  implicit class ScimProvisionAndInviteUserResponseDataOps[Self <: ScimProvisionAndInviteUserResponseData] (val x: Self) extends AnyVal {
+  implicit class ScimProvisionAndInviteUserResponseDataMutableBuilder[Self <: ScimProvisionAndInviteUserResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmails(value: js.Array[Primary]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailsVarargs(value: Primary*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailsVarargs(value: Primary*): Self = this.set("emails", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[Primary]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setMeta(value: Created): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: Created): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: FamilyName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = this.set("schemas", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = this.set("schemas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

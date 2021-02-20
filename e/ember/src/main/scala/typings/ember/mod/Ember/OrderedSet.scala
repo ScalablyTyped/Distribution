@@ -1,5 +1,6 @@
 package typings.ember.mod.Ember
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember", "Ember.OrderedSet")
 @js.native
-class OrderedSet () extends js.Object {
+class OrderedSet () extends StObject {
   
   def add(obj: js.Any): Unit = js.native
   
@@ -26,12 +27,12 @@ class OrderedSet () extends js.Object {
   
   def isEmpty(): Boolean = js.native
   
-  def toArray(): Array[_] = js.native
+  def toArray(): typings.ember.mod.Ember.Array[_] = js.native
 }
-/* static members */
-@JSImport("ember", "Ember.OrderedSet")
-@js.native
-object OrderedSet extends js.Object {
+object OrderedSet {
   
+  /* static member */
+  @JSImport("ember", "Ember.OrderedSet.create")
+  @js.native
   def create(): OrderedSet = js.native
 }

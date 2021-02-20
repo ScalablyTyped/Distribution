@@ -1,11 +1,12 @@
 package typings.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferChangeParam extends js.Object {
+trait BufferChangeParam extends StObject {
   
   var bufferPercent: Double = js.native
   
@@ -24,30 +25,18 @@ object BufferChangeParam {
   }
   
   @scala.inline
-  implicit class BufferChangeParamOps[Self <: BufferChangeParam] (val x: Self) extends AnyVal {
+  implicit class BufferChangeParamMutableBuilder[Self <: BufferChangeParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferPercent(value: Double): Self = StObject.set(x, "bufferPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferPercent(value: Double): Self = this.set("bufferPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

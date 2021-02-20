@@ -1,6 +1,5 @@
 package typings.fridaGum.global
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fridaGum.AnyFunction
 import typings.fridaGum.EnumerateCallbacks
 import typings.fridaGum.NativeFunctionOptions
@@ -18,21 +17,61 @@ import typings.fridaGum.ObjC.ProtocolSpec
 import typings.fridaGum.ObjC.ProxyConstructor
 import typings.fridaGum.ObjC.ProxyData
 import typings.fridaGum.ObjC.ProxySpec
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ObjC")
-@js.native
-object ObjC extends js.Object {
+object ObjC {
+  
+  /**
+    * Dynamically generated language binding for any Objective-C block.
+    *
+    * Also supports implementing a block from scratch by passing in an
+    * implementation.
+    */
+  @JSGlobal("ObjC.Block")
+  @js.native
+  class Block protected ()
+    extends typings.fridaGum.ObjC.Block {
+    def this(target: typings.fridaGum.NativePointer) = this()
+    def this(target: MethodSpec[BlockImplementation]) = this()
+    def this(target: typings.fridaGum.NativePointer, options: NativeFunctionOptions) = this()
+    def this(target: MethodSpec[BlockImplementation], options: NativeFunctionOptions) = this()
+  }
+  
+  /**
+    * Dynamically generated wrapper for any Objective-C instance, class, or meta-class.
+    */
+  @JSGlobal("ObjC.Object")
+  @js.native
+  class Object protected ()
+    extends typings.fridaGum.ObjC.Object {
+    def this(handle: typings.fridaGum.NativePointer) = this()
+    def this(handle: typings.fridaGum.NativePointer, protocol: typings.fridaGum.ObjC.Protocol) = this()
+  }
+  
+  /**
+    * Dynamically generated language binding for any Objective-C protocol.
+    */
+  @JSGlobal("ObjC.Protocol")
+  @js.native
+  class Protocol protected ()
+    extends typings.fridaGum.ObjC.Protocol {
+    def this(handle: typings.fridaGum.NativePointer) = this()
+  }
   
   // tslint:disable:no-unnecessary-qualifier
   /**
     * Whether the current process has an Objective-C runtime loaded. Do not invoke any other ObjC properties or
     * methods unless this is the case.
     */
+  @JSGlobal("ObjC.available")
+  @js.native
   val available: Boolean = js.native
   
+  @JSGlobal("ObjC.bind")
+  @js.native
   def bind(obj: typings.fridaGum.NativePointer, data: InstanceData): Unit = js.native
   /**
     * Binds some JavaScript data to an Objective-C instance.
@@ -40,8 +79,12 @@ object ObjC extends js.Object {
     * @param obj Objective-C instance to bind data to.
     * @param data Data to bind.
     */
+  @JSGlobal("ObjC.bind")
+  @js.native
   def bind(obj: typings.fridaGum.ObjC.Object, data: InstanceData): Unit = js.native
   
+  @JSGlobal("ObjC.choose")
+  @js.native
   def choose(specifier: ChooseSpecifier, callbacks: EnumerateCallbacks[typings.fridaGum.ObjC.Object]): Unit = js.native
   
   /**
@@ -49,6 +92,8 @@ object ObjC extends js.Object {
     *
     * @param specifier What kind of objects to look for.
     */
+  @JSGlobal("ObjC.chooseSync")
+  @js.native
   def chooseSync(specifier: ChooseSpecifier): js.Array[typings.fridaGum.ObjC.Object] = js.native
   
   /**
@@ -56,6 +101,8 @@ object ObjC extends js.Object {
     *
     * @param callbacks Object with callbacks.
     */
+  @JSGlobal("ObjC.enumerateLoadedClasses")
+  @js.native
   def enumerateLoadedClasses(callbacks: EnumerateLoadedClassesCallbacks): Unit = js.native
   /**
     * Enumerates loaded classes.
@@ -63,6 +110,8 @@ object ObjC extends js.Object {
     * @param options Options customizing the enumeration.
     * @param callbacks Object with callbacks.
     */
+  @JSGlobal("ObjC.enumerateLoadedClasses")
+  @js.native
   def enumerateLoadedClasses(options: EnumerateLoadedClassesOptions, callbacks: EnumerateLoadedClassesCallbacks): Unit = js.native
   
   /**
@@ -70,15 +119,23 @@ object ObjC extends js.Object {
     *
     * @param options Options customizing the enumeration.
     */
+  @JSGlobal("ObjC.enumerateLoadedClassesSync")
+  @js.native
   def enumerateLoadedClassesSync(): EnumerateLoadedClassesResult = js.native
+  @JSGlobal("ObjC.enumerateLoadedClassesSync")
+  @js.native
   def enumerateLoadedClassesSync(options: EnumerateLoadedClassesOptions): EnumerateLoadedClassesResult = js.native
   
+  @JSGlobal("ObjC.getBoundData")
+  @js.native
   def getBoundData(obj: typings.fridaGum.NativePointer): js.Any = js.native
   /**
     * Looks up previously bound data from an Objective-C object.
     *
     * @param obj Objective-C instance to look up data for.
     */
+  @JSGlobal("ObjC.getBoundData")
+  @js.native
   def getBoundData(obj: typings.fridaGum.ObjC.Object): js.Any = js.native
   
   /**
@@ -88,11 +145,15 @@ object ObjC extends js.Object {
     * @param method Method to implement.
     * @param fn Implementation.
     */
+  @JSGlobal("ObjC.implement")
+  @js.native
   def implement(method: ObjectMethod, fn: AnyFunction): typings.fridaGum.NativeCallback = js.native
   
   /**
     * GCD queue of the main thread.
     */
+  @JSGlobal("ObjC.mainQueue")
+  @js.native
   val mainQueue: typings.fridaGum.NativePointer = js.native
   
   /**
@@ -100,6 +161,8 @@ object ObjC extends js.Object {
     *
     * @param spec Class specification.
     */
+  @JSGlobal("ObjC.registerClass")
+  @js.native
   def registerClass(spec: ClassSpec[InstanceData, typings.fridaGum.ObjC.Object, typings.fridaGum.ObjC.Object]): typings.fridaGum.ObjC.Object = js.native
   
   /**
@@ -107,6 +170,8 @@ object ObjC extends js.Object {
     *
     * @param spec Protocol specification.
     */
+  @JSGlobal("ObjC.registerProtocol")
+  @js.native
   def registerProtocol(spec: ProtocolSpec): typings.fridaGum.ObjC.Protocol = js.native
   
   /**
@@ -114,6 +179,8 @@ object ObjC extends js.Object {
     *
     * @param spec Proxy specification.
     */
+  @JSGlobal("ObjC.registerProxy")
+  @js.native
   def registerProxy(spec: ProxySpec[ProxyData, typings.fridaGum.ObjC.Object, typings.fridaGum.ObjC.Object]): ProxyConstructor = js.native
   
   /**
@@ -132,6 +199,8 @@ object ObjC extends js.Object {
     * @param queue GCD queue to schedule `work` on.
     * @param work Function to call on the specified `queue`.
     */
+  @JSGlobal("ObjC.schedule")
+  @js.native
   def schedule(queue: NativePointerValue, work: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -139,6 +208,8 @@ object ObjC extends js.Object {
     *
     * @param name Name to turn into a selector.
     */
+  @JSGlobal("ObjC.selector")
+  @js.native
   def selector(name: String): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -146,56 +217,26 @@ object ObjC extends js.Object {
     *
     * @param sel Selector to turn into a string.
     */
+  @JSGlobal("ObjC.selectorAsString")
+  @js.native
   def selectorAsString(sel: NativePointerValue): String = js.native
   
+  @JSGlobal("ObjC.unbind")
+  @js.native
   def unbind(obj: typings.fridaGum.NativePointer): Unit = js.native
   /**
     * Unbinds previously associated JavaScript data from an Objective-C instance.
     *
     * @param obj Objective-C instance to unbind data from.
     */
+  @JSGlobal("ObjC.unbind")
+  @js.native
   def unbind(obj: typings.fridaGum.ObjC.Object): Unit = js.native
-  
-  /**
-    * Dynamically generated language binding for any Objective-C block.
-    *
-    * Also supports implementing a block from scratch by passing in an
-    * implementation.
-    */
-  @js.native
-  class Block protected ()
-    extends typings.fridaGum.ObjC.Block {
-    def this(target: typings.fridaGum.NativePointer) = this()
-    def this(target: MethodSpec[BlockImplementation]) = this()
-    def this(target: typings.fridaGum.NativePointer, options: NativeFunctionOptions) = this()
-    def this(target: MethodSpec[BlockImplementation], options: NativeFunctionOptions) = this()
-  }
-  
-  /**
-    * Dynamically generated wrapper for any Objective-C instance, class, or meta-class.
-    */
-  @js.native
-  class Object protected ()
-    extends typings.fridaGum.ObjC.Object {
-    def this(handle: typings.fridaGum.NativePointer) = this()
-    def this(handle: typings.fridaGum.NativePointer, protocol: typings.fridaGum.ObjC.Protocol) = this()
-  }
-  
-  /**
-    * Dynamically generated language binding for any Objective-C protocol.
-    */
-  @js.native
-  class Protocol protected ()
-    extends typings.fridaGum.ObjC.Protocol {
-    def this(handle: typings.fridaGum.NativePointer) = this()
-  }
   
   /**
     * Direct access to a big portion of the Objective-C runtime API.
     */
-  @js.native
   object api
-    extends /* name */ StringDictionary[js.Any]
   
   /**
     * Dynamically generated bindings for each of the currently registered classes.
@@ -215,14 +256,10 @@ object ObjC extends js.Object {
     *
     * Note the underscore after the method name.
     */
-  @js.native
   object classes
-    extends /* name */ StringDictionary[typings.fridaGum.ObjC.Object]
   
   /**
     * Dynamically generated bindings for each of the currently registered protocols.
     */
-  @js.native
   object protocols
-    extends /* name */ StringDictionary[typings.fridaGum.ObjC.Protocol]
 }

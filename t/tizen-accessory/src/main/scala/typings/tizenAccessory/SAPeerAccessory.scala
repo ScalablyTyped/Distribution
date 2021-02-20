@@ -1,11 +1,12 @@
 package typings.tizenAccessory
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SAPeerAccessory extends js.Object {
+trait SAPeerAccessory extends StObject {
   
   val accessoryId: String = js.native
   
@@ -35,36 +36,24 @@ object SAPeerAccessory {
   }
   
   @scala.inline
-  implicit class SAPeerAccessoryOps[Self <: SAPeerAccessory] (val x: Self) extends AnyVal {
+  implicit class SAPeerAccessoryMutableBuilder[Self <: SAPeerAccessory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessoryId(value: String): Self = StObject.set(x, "accessoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceAddress(value: String): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessoryId(value: String): Self = this.set("accessoryId", value.asInstanceOf[js.Any])
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceAddress(value: String): Self = this.set("deviceAddress", value.asInstanceOf[js.Any])
+    def setTransportType(value: String): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportType(value: String): Self = this.set("transportType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendorId(value: String): Self = this.set("vendorId", value.asInstanceOf[js.Any])
+    def setVendorId(value: String): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

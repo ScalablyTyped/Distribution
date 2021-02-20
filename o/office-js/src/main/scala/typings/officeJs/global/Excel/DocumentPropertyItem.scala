@@ -1,5 +1,6 @@
 package typings.officeJs.global.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.DocumentPropertyItem")
 @js.native
-object DocumentPropertyItem extends js.Object {
+object DocumentPropertyItem extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Excel.DocumentPropertyItem with String] = js.native

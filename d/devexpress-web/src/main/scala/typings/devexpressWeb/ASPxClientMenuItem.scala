@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the menu's MenuItem object.
   */
 @js.native
-trait ASPxClientMenuItem extends js.Object {
+trait ASPxClientMenuItem extends StObject {
   
   /**
     * Indicates whether the menu item is checked.
@@ -148,78 +149,66 @@ object ASPxClientMenuItem {
   }
   
   @scala.inline
-  implicit class ASPxClientMenuItemOps[Self <: ASPxClientMenuItem] (val x: Self) extends AnyVal {
+  implicit class ASPxClientMenuItemMutableBuilder[Self <: ASPxClientMenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChecked(value: () => Boolean): Self = this.set("GetChecked", js.Any.fromFunction0(value))
+    def setGetItem(value: Double => ASPxClientMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("GetEnabled", js.Any.fromFunction0(value))
+    def setGetItemByName(value: String => ASPxClientMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetImageUrl(value: () => String): Self = this.set("GetImageUrl", js.Any.fromFunction0(value))
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItem(value: Double => ASPxClientMenuItem): Self = this.set("GetItem", js.Any.fromFunction1(value))
+    def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemByName(value: String => ASPxClientMenuItem): Self = this.set("GetItemByName", js.Any.fromFunction1(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("GetItemCount", js.Any.fromFunction0(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNavigateUrl(value: () => String): Self = this.set("GetNavigateUrl", js.Any.fromFunction0(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
+    def setIndexPath(value: String): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("GetVisible", js.Any.fromFunction0(value))
+    def setMenu(value: ASPxClientMenuBase): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetChecked(value: Boolean => Unit): Self = this.set("SetChecked", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("SetEnabled", js.Any.fromFunction1(value))
+    def setParent(value: ASPxClientMenuItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = this.set("SetImageUrl", js.Any.fromFunction1(value))
+    def setSetChecked(value: Boolean => Unit): Self = StObject.set(x, "SetChecked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNavigateUrl(value: String => Unit): Self = this.set("SetNavigateUrl", js.Any.fromFunction1(value))
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("SetText", js.Any.fromFunction1(value))
+    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("SetVisible", js.Any.fromFunction1(value))
+    def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexPath(value: String): Self = this.set("indexPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMenu(value: ASPxClientMenuBase): Self = this.set("menu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: ASPxClientMenuItem): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

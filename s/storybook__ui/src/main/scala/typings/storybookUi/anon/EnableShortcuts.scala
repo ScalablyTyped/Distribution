@@ -4,12 +4,13 @@ import typings.downshift.mod.GetItemPropsOptions
 import typings.downshift.mod.GetMenuPropsOptions
 import typings.downshift.mod.GetPropsCommonOptions
 import typings.storybookUi.sidebarTypesMod.DownshiftItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableShortcuts extends js.Object {
+trait EnableShortcuts extends StObject {
   
   def closeMenu(): Unit = js.native
   def closeMenu(cb: js.Function0[Unit]): Unit = js.native

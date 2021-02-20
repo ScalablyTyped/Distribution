@@ -1,11 +1,12 @@
 package typings.nodeFibers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fiber extends js.Object {
+trait Fiber extends StObject {
   
   def reset(): js.Any = js.native
   

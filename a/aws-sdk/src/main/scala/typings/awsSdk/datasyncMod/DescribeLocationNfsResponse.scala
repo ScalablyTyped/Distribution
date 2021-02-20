@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLocationNfsResponse extends js.Object {
+trait DescribeLocationNfsResponse extends StObject {
   
   /**
     * The time that the NFS location was created.
@@ -38,48 +39,36 @@ object DescribeLocationNfsResponse {
   }
   
   @scala.inline
-  implicit class DescribeLocationNfsResponseOps[Self <: DescribeLocationNfsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLocationNfsResponseMutableBuilder[Self <: DescribeLocationNfsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
     @scala.inline
-    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+    def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
     
     @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setOnPremConfig(value: OnPremConfig): Self = StObject.set(x, "OnPremConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountOptions(value: NfsMountOptions): Self = this.set("MountOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountOptions: Self = this.set("MountOptions", js.undefined)
-    
-    @scala.inline
-    def setOnPremConfig(value: OnPremConfig): Self = this.set("OnPremConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnPremConfig: Self = this.set("OnPremConfig", js.undefined)
+    def setOnPremConfigUndefined: Self = StObject.set(x, "OnPremConfig", js.undefined)
   }
 }

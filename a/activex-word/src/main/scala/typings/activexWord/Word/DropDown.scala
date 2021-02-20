@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropDown extends js.Object {
+trait DropDown extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -43,42 +44,30 @@ object DropDown {
   }
   
   @scala.inline
-  implicit class DropDownOps[Self <: DropDown] (val x: Self) extends AnyVal {
+  implicit class DropDownMutableBuilder[Self <: DropDown] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: Double): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setListEntries(value: ListEntries): Self = StObject.set(x, "ListEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Double): Self = this.set("Default", value.asInstanceOf[js.Any])
+    def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEntries(value: ListEntries): Self = this.set("ListEntries", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("Valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotDropDown_typekey(value: DropDown): Self = this.set("Word.DropDown_typekey", value.asInstanceOf[js.Any])
+    def setWordDotDropDown_typekey(value: DropDown): Self = StObject.set(x, "Word.DropDown_typekey", value.asInstanceOf[js.Any])
   }
 }

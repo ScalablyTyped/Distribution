@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", JSImport.Namespace)
-@js.native
-object personaBaseMod extends js.Object {
+object personaBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", "PersonaBase")
   @js.native
   class PersonaBase protected ()
     extends Component[IPersonaProps, js.Object, js.Any] {
@@ -39,9 +39,16 @@ object personaBaseMod extends js.Object {
     var _renderElement: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object PersonaBase extends js.Object {
+  object PersonaBase {
     
-    var defaultProps: IPersonaProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", "PersonaBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", "PersonaBase.defaultProps")
+    @js.native
+    def defaultProps: IPersonaProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

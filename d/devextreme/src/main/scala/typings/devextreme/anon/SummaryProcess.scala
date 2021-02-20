@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SummaryProcess extends js.Object {
+trait SummaryProcess extends StObject {
   
   var summaryProcess: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object SummaryProcess {
   }
   
   @scala.inline
-  implicit class SummaryProcessOps[Self <: SummaryProcess] (val x: Self) extends AnyVal {
+  implicit class SummaryProcessMutableBuilder[Self <: SummaryProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSummaryProcessUndefined: Self = StObject.set(x, "summaryProcess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalValue(value: js.Any): Self = StObject.set(x, "totalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryProcess(value: String): Self = this.set("summaryProcess", value.asInstanceOf[js.Any])
+    def setTotalValueUndefined: Self = StObject.set(x, "totalValue", js.undefined)
     
     @scala.inline
-    def deleteSummaryProcess: Self = this.set("summaryProcess", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalValue(value: js.Any): Self = this.set("totalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalValue: Self = this.set("totalValue", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

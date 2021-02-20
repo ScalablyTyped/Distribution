@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/MenuList/MenuList.MenuListClassKey>> */
 @js.native
-trait PartialClassNameMapMenuLi extends js.Object {
+trait PartialClassNameMapMenuLi extends StObject {
   
   var dense: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialClassNameMapMenuLi {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapMenuLiOps[Self <: PartialClassNameMapMenuLi] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapMenuLiMutableBuilder[Self <: PartialClassNameMapMenuLi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDense(value: String): Self = this.set("dense", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteDense: Self = this.set("dense", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSubheader(value: String): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setSubheader(value: String): Self = this.set("subheader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubheader: Self = this.set("subheader", js.undefined)
+    def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/uitablecell
   */
 @js.native
-trait UITableCell extends js.Object {
+trait UITableCell extends StObject {
   
   /**
     * _Center aligns content._
@@ -114,48 +115,36 @@ object UITableCell {
   }
   
   @scala.inline
-  implicit class UITableCellOps[Self <: UITableCell] (val x: Self) extends AnyVal {
+  implicit class UITableCellMutableBuilder[Self <: UITableCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterAligned(value: () => Unit): Self = StObject.set(x, "centerAligned", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissOnTap(value: Boolean): Self = StObject.set(x, "dismissOnTap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftAligned(value: () => Unit): Self = StObject.set(x, "leftAligned", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenterAligned(value: () => Unit): Self = this.set("centerAligned", js.Any.fromFunction0(value))
+    def setOnTap(value: () => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDismissOnTap(value: Boolean): Self = this.set("dismissOnTap", value.asInstanceOf[js.Any])
+    def setRightAligned(value: () => Unit): Self = StObject.set(x, "rightAligned", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLeftAligned(value: () => Unit): Self = this.set("leftAligned", js.Any.fromFunction0(value))
+    def setSubtitleColor(value: Color): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTap(value: () => Unit): Self = this.set("onTap", js.Any.fromFunction0(value))
+    def setSubtitleFont(value: Font): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightAligned(value: () => Unit): Self = this.set("rightAligned", js.Any.fromFunction0(value))
+    def setTitleColor(value: Color): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleColor(value: Color): Self = this.set("subtitleColor", value.asInstanceOf[js.Any])
+    def setTitleFont(value: Font): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleFont(value: Font): Self = this.set("subtitleFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleColor(value: Color): Self = this.set("titleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleFont(value: Font): Self = this.set("titleFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthWeight(value: Double): Self = this.set("widthWeight", value.asInstanceOf[js.Any])
+    def setWidthWeight(value: Double): Self = StObject.set(x, "widthWeight", value.asInstanceOf[js.Any])
   }
 }

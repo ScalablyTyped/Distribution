@@ -1,11 +1,12 @@
 package typings.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpsertRetInsertRetUpdateRet extends js.Object {
+trait UpsertRetInsertRetUpdateRet extends StObject {
   
   def in(inCollection: js.Any): UpsertExpression = js.native
   

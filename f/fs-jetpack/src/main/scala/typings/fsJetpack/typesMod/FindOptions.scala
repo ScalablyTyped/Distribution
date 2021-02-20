@@ -1,11 +1,12 @@
 package typings.fsJetpack.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindOptions extends js.Object {
+trait FindOptions extends StObject {
   
   var directories: js.UndefOr[Boolean] = js.native
   
@@ -26,51 +27,39 @@ object FindOptions {
   }
   
   @scala.inline
-  implicit class FindOptionsOps[Self <: FindOptions] (val x: Self) extends AnyVal {
+  implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: Boolean): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: Boolean): Self = this.set("directories", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteDirectories: Self = this.set("directories", js.undefined)
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: Boolean): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setMatching(value: String | js.Array[String]): Self = StObject.set(x, "matching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
     
     @scala.inline
-    def setMatchingVarargs(value: String*): Self = this.set("matching", js.Array(value :_*))
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatching(value: String | js.Array[String]): Self = this.set("matching", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatching: Self = this.set("matching", js.undefined)
-    
-    @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

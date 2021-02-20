@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDatabaseRequest extends js.Object {
+trait DeleteDatabaseRequest extends StObject {
   
   /**
     * Database name.
@@ -26,24 +27,12 @@ object DeleteDatabaseRequest {
   }
   
   @scala.inline
-  implicit class DeleteDatabaseRequestOps[Self <: DeleteDatabaseRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteDatabaseRequestMutableBuilder[Self <: DeleteDatabaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = this.set("securityOrigin", value.asInstanceOf[js.Any])
+    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
   }
 }

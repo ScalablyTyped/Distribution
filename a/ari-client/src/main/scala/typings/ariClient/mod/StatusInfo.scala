@@ -1,12 +1,13 @@
 package typings.ariClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusInfo extends js.Object {
+trait StatusInfo extends StObject {
   
   /**
     * Time when Asterisk was last reloaded.
@@ -27,24 +28,12 @@ object StatusInfo {
   }
   
   @scala.inline
-  implicit class StatusInfoOps[Self <: StatusInfo] (val x: Self) extends AnyVal {
+  implicit class StatusInfoMutableBuilder[Self <: StatusInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLast_reload_time(value: Date): Self = StObject.set(x, "last_reload_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLast_reload_time(value: Date): Self = this.set("last_reload_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartup_time(value: Date): Self = this.set("startup_time", value.asInstanceOf[js.Any])
+    def setStartup_time(value: Date): Self = StObject.set(x, "startup_time", value.asInstanceOf[js.Any])
   }
 }

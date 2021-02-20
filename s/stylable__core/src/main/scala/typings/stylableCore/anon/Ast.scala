@@ -1,12 +1,13 @@
 package typings.stylableCore.anon
 
 import typings.stylableCore.stylableValueParsersMod.ExtendsValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ast extends js.Object {
+trait Ast extends StObject {
   
   var ast: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify postcssValueParser.ParsedValue */ js.Any = js.native
   
@@ -24,29 +25,17 @@ object Ast {
   }
   
   @scala.inline
-  implicit class AstOps[Self <: Ast] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class AstMutableBuilder[Self <: Ast] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAst(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify postcssValueParser.ParsedValue */ js.Any
-    ): Self = this.set("ast", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: ExtendsValue*): Self = this.set("types", js.Array(value :_*))
+    def setTypes(value: js.Array[ExtendsValue]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: js.Array[ExtendsValue]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: ExtendsValue*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

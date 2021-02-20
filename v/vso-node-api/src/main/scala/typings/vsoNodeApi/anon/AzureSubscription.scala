@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AzureSubscription extends js.Object {
+trait AzureSubscription extends StObject {
   
   var azureSubscription: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object AzureSubscription {
   }
   
   @scala.inline
-  implicit class AzureSubscriptionOps[Self <: AzureSubscription] (val x: Self) extends AnyVal {
+  implicit class AzureSubscriptionMutableBuilder[Self <: AzureSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAzureSubscription(value: scala.Double): Self = StObject.set(x, "azureSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChef(value: scala.Double): Self = StObject.set(x, "chef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureSubscription(value: scala.Double): Self = this.set("azureSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChef(value: scala.Double): Self = this.set("chef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: scala.Double): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGeneric(value: scala.Double): Self = this.set("generic", value.asInstanceOf[js.Any])
+    def setGeneric(value: scala.Double): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvBrowseFeedResponseRootObject extends js.Object {
+trait IgtvBrowseFeedResponseRootObject extends StObject {
   
   var badging: IgtvBrowseFeedResponseBadging = js.native
   
@@ -47,54 +48,42 @@ object IgtvBrowseFeedResponseRootObject {
   }
   
   @scala.inline
-  implicit class IgtvBrowseFeedResponseRootObjectOps[Self <: IgtvBrowseFeedResponseRootObject] (val x: Self) extends AnyVal {
+  implicit class IgtvBrowseFeedResponseRootObjectMutableBuilder[Self <: IgtvBrowseFeedResponseRootObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadging(value: IgtvBrowseFeedResponseBadging): Self = StObject.set(x, "badging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBanner_token(value: String): Self = StObject.set(x, "banner_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowse_items(value: js.Array[IgtvBrowseFeedResponseBrowseItemsItem]): Self = StObject.set(x, "browse_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadging(value: IgtvBrowseFeedResponseBadging): Self = this.set("badging", value.asInstanceOf[js.Any])
+    def setBrowse_itemsVarargs(value: IgtvBrowseFeedResponseBrowseItemsItem*): Self = StObject.set(x, "browse_items", js.Array(value :_*))
     
     @scala.inline
-    def setBanner_token(value: String): Self = this.set("banner_token", value.asInstanceOf[js.Any])
+    def setChannels(value: js.Array[IgtvBrowseFeedResponseChannelsItem]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowse_itemsVarargs(value: IgtvBrowseFeedResponseBrowseItemsItem*): Self = this.set("browse_items", js.Array(value :_*))
+    def setChannelsVarargs(value: IgtvBrowseFeedResponseChannelsItem*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setBrowse_items(value: js.Array[IgtvBrowseFeedResponseBrowseItemsItem]): Self = this.set("browse_items", value.asInstanceOf[js.Any])
+    def setComposer(value: IgtvBrowseFeedResponseComposer): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: IgtvBrowseFeedResponseChannelsItem*): Self = this.set("channels", js.Array(value :_*))
+    def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[IgtvBrowseFeedResponseChannelsItem]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposer(value: IgtvBrowseFeedResponseComposer): Self = this.set("composer", value.asInstanceOf[js.Any])
+    def setMy_channel(value: IgtvBrowseFeedResponseMyChannel): Self = StObject.set(x, "my_channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_id(value: String): Self = this.set("max_id", value.asInstanceOf[js.Any])
+    def setSeen_state(value: IgtvBrowseFeedResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMy_channel(value: IgtvBrowseFeedResponseMyChannel): Self = this.set("my_channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeen_state(value: IgtvBrowseFeedResponseSeenState): Self = this.set("seen_state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

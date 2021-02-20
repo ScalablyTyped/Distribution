@@ -1,15 +1,13 @@
 package typings.blazorJavascriptInterop
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object DotNet extends js.Object {
+  object DotNet {
     
     /**
       * Invokes the specified .NET public method synchronously. Not all hosting scenarios support
@@ -20,6 +18,8 @@ object global extends js.Object {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns The result of the operation.
       */
+    @JSGlobal("DotNet.invokeMethod")
+    @js.native
     def invokeMethod[T](assemblyName: String, methodIdentifier: String, args: js.Any*): T = js.native
     
     /**
@@ -30,6 +30,8 @@ object global extends js.Object {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns A promise representing the result of the operation.
       */
+    @JSGlobal("DotNet.invokeMethodAsync")
+    @js.native
     def invokeMethodAsync[T](assemblyName: String, methodIdentifier: String, args: js.Any*): js.Promise[T] = js.native
   }
 }

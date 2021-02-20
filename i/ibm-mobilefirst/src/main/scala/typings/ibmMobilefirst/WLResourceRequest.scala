@@ -2,12 +2,13 @@ package typings.ibmMobilefirst
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WLResourceRequest extends js.Object {
+trait WLResourceRequest extends StObject {
   
   def addHeader(name: String, value: String): Unit = js.native
   def addHeader(name: String, value: Boolean): Unit = js.native
@@ -23,7 +24,7 @@ trait WLResourceRequest extends js.Object {
   
   def getQueryParameters(): js.Any = js.native
   
-   // JSON
+  // JSON
   def getTimeout(): Double = js.native
   
   def getUrl(): String = js.native

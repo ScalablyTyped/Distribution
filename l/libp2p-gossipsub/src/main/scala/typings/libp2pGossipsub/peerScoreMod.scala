@@ -10,16 +10,16 @@ import typings.node.NodeJS.Timeout
 import typings.std.Map
 import typings.std.Set
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-gossipsub/src/score/peer-score", JSImport.Namespace)
-@js.native
-object peerScoreMod extends js.Object {
+object peerScoreMod {
   
+  @JSImport("libp2p-gossipsub/src/score/peer-score", "PeerScore")
   @js.native
-  class PeerScore protected () extends js.Object {
+  class PeerScore protected () extends StObject {
     def this(params: PeerScoreParams, connectionManager: ConnectionManager, msgId: MessageIdFunction) = this()
     
     var _backgroundInterval: js.UndefOr[Timeout] = js.native

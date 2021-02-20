@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotDimensionHeader extends js.Object {
+trait PivotDimensionHeader extends StObject {
   
   /** Values of multiple dimensions in a pivot. */
   var dimensionValues: js.UndefOr[js.Array[DimensionValue]] = js.native
@@ -19,27 +20,15 @@ object PivotDimensionHeader {
   }
   
   @scala.inline
-  implicit class PivotDimensionHeaderOps[Self <: PivotDimensionHeader] (val x: Self) extends AnyVal {
+  implicit class PivotDimensionHeaderMutableBuilder[Self <: PivotDimensionHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionValues(value: js.Array[DimensionValue]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimensionValuesVarargs(value: DimensionValue*): Self = this.set("dimensionValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setDimensionValues(value: js.Array[DimensionValue]): Self = this.set("dimensionValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionValues: Self = this.set("dimensionValues", js.undefined)
+    def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
   }
 }

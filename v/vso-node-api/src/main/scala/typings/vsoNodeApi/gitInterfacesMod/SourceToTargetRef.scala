@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceToTargetRef extends js.Object {
+trait SourceToTargetRef extends StObject {
   
   /**
     * The source ref to copy. For example, refs/heads/master.
@@ -26,24 +27,12 @@ object SourceToTargetRef {
   }
   
   @scala.inline
-  implicit class SourceToTargetRefOps[Self <: SourceToTargetRef] (val x: Self) extends AnyVal {
+  implicit class SourceToTargetRefMutableBuilder[Self <: SourceToTargetRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceRef(value: String): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceRef(value: String): Self = this.set("sourceRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetRef(value: String): Self = this.set("targetRef", value.asInstanceOf[js.Any])
+    def setTargetRef(value: String): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

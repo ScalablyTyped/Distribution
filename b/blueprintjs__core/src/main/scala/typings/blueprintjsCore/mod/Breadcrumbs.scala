@@ -1,18 +1,29 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialIBreadcrumbsProps
+import typings.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Breadcrumbs")
 @js.native
-class Breadcrumbs ()
-  extends typings.blueprintjsCore.componentsMod.Breadcrumbs
+class Breadcrumbs protected ()
+  extends typings.blueprintjsCore.componentsMod.Breadcrumbs {
+  def this(props: IBreadcrumbsProps) = this()
+  def this(props: IBreadcrumbsProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("@blueprintjs/core", "Breadcrumbs")
-@js.native
-object Breadcrumbs extends js.Object {
+object Breadcrumbs {
   
-  var defaultProps: PartialIBreadcrumbsProps = js.native
+  @JSImport("@blueprintjs/core", "Breadcrumbs")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Breadcrumbs.defaultProps")
+  @js.native
+  def defaultProps: PartialIBreadcrumbsProps = js.native
+  @scala.inline
+  def defaultProps_=(x: PartialIBreadcrumbsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

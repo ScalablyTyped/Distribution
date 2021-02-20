@@ -8,12 +8,13 @@ import typings.openlayers.mod.ImageLoadFunctionType
 import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.Size
 import typings.openlayers.mod.olx.LogoOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageStaticOptions extends js.Object {
+trait ImageStaticOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   
@@ -40,63 +41,51 @@ object ImageStaticOptions {
   }
   
   @scala.inline
-  implicit class ImageStaticOptionsOps[Self <: ImageStaticOptions] (val x: Self) extends AnyVal {
+  implicit class ImageStaticOptionsMutableBuilder[Self <: ImageStaticOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
     @scala.inline
-    def setImageExtent(value: Extent_): Self = this.set("imageExtent", value.asInstanceOf[js.Any])
+    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    def setImageExtent(value: Extent_): Self = StObject.set(x, "imageExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    def setImageLoadFunction(value: (/* image */ Image, /* url */ String) => Unit): Self = StObject.set(x, "imageLoadFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    def setImageLoadFunctionUndefined: Self = StObject.set(x, "imageLoadFunction", js.undefined)
     
     @scala.inline
-    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
     
     @scala.inline
-    def setImageLoadFunction(value: (/* image */ Image, /* url */ String) => Unit): Self = this.set("imageLoadFunction", js.Any.fromFunction2(value))
+    def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageLoadFunction: Self = this.set("imageLoadFunction", js.undefined)
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def setImageSize(value: Size): Self = this.set("imageSize", value.asInstanceOf[js.Any])
+    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageSize: Self = this.set("imageSize", js.undefined)
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def setLogo(value: String | LogoOptions): Self = this.set("logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
-    
-    @scala.inline
-    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProximityObject extends js.Object {
+trait ProximityObject extends StObject {
   
   var address: js.UndefOr[AddressObject] = js.native
   
@@ -28,42 +29,30 @@ object ProximityObject {
   }
   
   @scala.inline
-  implicit class ProximityObjectOps[Self <: ProximityObject] (val x: Self) extends AnyVal {
+  implicit class ProximityObjectMutableBuilder[Self <: ProximityObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: AddressObject): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setBidModifierUndefined: Self = StObject.set(x, "bidModifier", js.undefined)
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusUnits(value: RadiusUnits): Self = this.set("radiusUnits", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: AddressObject): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
-    
-    @scala.inline
-    def setBidModifier(value: Double): Self = this.set("bidModifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBidModifier: Self = this.set("bidModifier", js.undefined)
+    def setRadiusUnits(value: RadiusUnits): Self = StObject.set(x, "radiusUnits", value.asInstanceOf[js.Any])
   }
 }

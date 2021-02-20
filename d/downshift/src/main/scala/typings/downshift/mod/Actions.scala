@@ -1,12 +1,13 @@
 package typings.downshift.mod
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Actions[Item] extends js.Object {
+trait Actions[Item] extends StObject {
   
   def clearItems(): Unit = js.native
   

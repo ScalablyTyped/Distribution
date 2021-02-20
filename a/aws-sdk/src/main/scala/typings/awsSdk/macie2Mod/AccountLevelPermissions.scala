@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountLevelPermissions extends js.Object {
+trait AccountLevelPermissions extends StObject {
   
   /**
     * The block public access settings for the bucket.
@@ -21,24 +22,12 @@ object AccountLevelPermissions {
   }
   
   @scala.inline
-  implicit class AccountLevelPermissionsOps[Self <: AccountLevelPermissions] (val x: Self) extends AnyVal {
+  implicit class AccountLevelPermissionsMutableBuilder[Self <: AccountLevelPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockPublicAccess(value: BlockPublicAccess): Self = StObject.set(x, "blockPublicAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlockPublicAccess(value: BlockPublicAccess): Self = this.set("blockPublicAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockPublicAccess: Self = this.set("blockPublicAccess", js.undefined)
+    def setBlockPublicAccessUndefined: Self = StObject.set(x, "blockPublicAccess", js.undefined)
   }
 }

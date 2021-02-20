@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionNotification extends js.Object {
+trait ConnectionNotification extends StObject {
   
   /**
     * The events for the notification. Valid values are Accept, Connect, Delete, and Reject.
@@ -51,63 +52,51 @@ object ConnectionNotification {
   }
   
   @scala.inline
-  implicit class ConnectionNotificationOps[Self <: ConnectionNotification] (val x: Self) extends AnyVal {
+  implicit class ConnectionNotificationMutableBuilder[Self <: ConnectionNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionEvents(value: ValueStringList): Self = StObject.set(x, "ConnectionEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionEventsUndefined: Self = StObject.set(x, "ConnectionEvents", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionEventsVarargs(value: String*): Self = StObject.set(x, "ConnectionEvents", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionEventsVarargs(value: String*): Self = this.set("ConnectionEvents", js.Array(value :_*))
+    def setConnectionNotificationArn(value: String): Self = StObject.set(x, "ConnectionNotificationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionEvents(value: ValueStringList): Self = this.set("ConnectionEvents", value.asInstanceOf[js.Any])
+    def setConnectionNotificationArnUndefined: Self = StObject.set(x, "ConnectionNotificationArn", js.undefined)
     
     @scala.inline
-    def deleteConnectionEvents: Self = this.set("ConnectionEvents", js.undefined)
+    def setConnectionNotificationId(value: String): Self = StObject.set(x, "ConnectionNotificationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionNotificationArn(value: String): Self = this.set("ConnectionNotificationArn", value.asInstanceOf[js.Any])
+    def setConnectionNotificationIdUndefined: Self = StObject.set(x, "ConnectionNotificationId", js.undefined)
     
     @scala.inline
-    def deleteConnectionNotificationArn: Self = this.set("ConnectionNotificationArn", js.undefined)
+    def setConnectionNotificationState(value: ConnectionNotificationState): Self = StObject.set(x, "ConnectionNotificationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionNotificationId(value: String): Self = this.set("ConnectionNotificationId", value.asInstanceOf[js.Any])
+    def setConnectionNotificationStateUndefined: Self = StObject.set(x, "ConnectionNotificationState", js.undefined)
     
     @scala.inline
-    def deleteConnectionNotificationId: Self = this.set("ConnectionNotificationId", js.undefined)
+    def setConnectionNotificationType(value: ConnectionNotificationType): Self = StObject.set(x, "ConnectionNotificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionNotificationState(value: ConnectionNotificationState): Self = this.set("ConnectionNotificationState", value.asInstanceOf[js.Any])
+    def setConnectionNotificationTypeUndefined: Self = StObject.set(x, "ConnectionNotificationType", js.undefined)
     
     @scala.inline
-    def deleteConnectionNotificationState: Self = this.set("ConnectionNotificationState", js.undefined)
+    def setServiceId(value: String): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionNotificationType(value: ConnectionNotificationType): Self = this.set("ConnectionNotificationType", value.asInstanceOf[js.Any])
+    def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
     
     @scala.inline
-    def deleteConnectionNotificationType: Self = this.set("ConnectionNotificationType", js.undefined)
+    def setVpcEndpointId(value: String): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: String): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceId: Self = this.set("ServiceId", js.undefined)
-    
-    @scala.inline
-    def setVpcEndpointId(value: String): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+    def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
   }
 }

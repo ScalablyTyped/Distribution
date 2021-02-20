@@ -2,6 +2,7 @@ package typings.babylonjs.postProcessesIndexMod
 
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

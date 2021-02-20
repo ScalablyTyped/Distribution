@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandProcessor
   */
 @js.native
-trait OpenCommandArgument extends js.Object {
+trait OpenCommandArgument extends StObject {
   
   /**
     * A mode.
@@ -49,30 +50,18 @@ object OpenCommandArgument {
   }
   
   @scala.inline
-  implicit class OpenCommandArgumentOps[Self <: OpenCommandArgument] (val x: Self) extends AnyVal {
+  implicit class OpenCommandArgumentMutableBuilder[Self <: OpenCommandArgument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Double): Self = this.set("Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: SafeArray[Property]): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSink(value: XInterface): Self = this.set("Sink", value.asInstanceOf[js.Any])
+    def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
   }
 }

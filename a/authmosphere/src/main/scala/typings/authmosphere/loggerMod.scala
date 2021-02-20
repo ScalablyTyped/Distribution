@@ -1,55 +1,50 @@
 package typings.authmosphere
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("authmosphere/lib/src/types/Logger", JSImport.Namespace)
-@js.native
-object loggerMod extends js.Object {
+object loggerMod {
   
   @js.native
-  sealed trait LogLevel extends js.Object
+  sealed trait LogLevel extends StObject
+  @JSImport("authmosphere/lib/src/types/Logger", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LogLevel with String] = js.native
     
     @js.native
     sealed trait debug extends LogLevel
-    /* "debug" */ @js.native
-    object debug extends TopLevel[debug with String]
+    /* "debug" */ val debug: typings.authmosphere.loggerMod.LogLevel.debug with String = js.native
     
     @js.native
     sealed trait error extends LogLevel
-    /* "error" */ @js.native
-    object error extends TopLevel[error with String]
+    /* "error" */ val error: typings.authmosphere.loggerMod.LogLevel.error with String = js.native
     
     @js.native
     sealed trait fatal extends LogLevel
-    /* "fatal" */ @js.native
-    object fatal extends TopLevel[fatal with String]
+    /* "fatal" */ val fatal: typings.authmosphere.loggerMod.LogLevel.fatal with String = js.native
     
     @js.native
     sealed trait info extends LogLevel
-    /* "info" */ @js.native
-    object info extends TopLevel[info with String]
+    /* "info" */ val info: typings.authmosphere.loggerMod.LogLevel.info with String = js.native
     
     @js.native
     sealed trait trace extends LogLevel
-    /* "trace" */ @js.native
-    object trace extends TopLevel[trace with String]
+    /* "trace" */ val trace: typings.authmosphere.loggerMod.LogLevel.trace with String = js.native
     
     @js.native
     sealed trait warn extends LogLevel
-    /* "warn" */ @js.native
-    object warn extends TopLevel[warn with String]
+    /* "warn" */ val warn: typings.authmosphere.loggerMod.LogLevel.warn with String = js.native
   }
   
+  type LogFunction = js.Function2[/* message */ String, /* error */ js.UndefOr[js.Any], Unit]
+  
   @js.native
-  trait Logger extends js.Object {
+  trait Logger extends StObject {
     
     def debug(message: String): Unit = js.native
     def debug(message: String, error: js.Any): Unit = js.native
@@ -81,6 +76,4 @@ object loggerMod extends js.Object {
     @JSName("warn")
     var warn_Original: LogFunction = js.native
   }
-  
-  type LogFunction = js.Function2[/* message */ String, /* error */ js.UndefOr[js.Any], Unit]
 }

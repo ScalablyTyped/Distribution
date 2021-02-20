@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Zone&#39;s boundaries.
   */
 @js.native
-trait SchemaZoneBoundary extends js.Object {
+trait SchemaZoneBoundary extends StObject {
   
   /**
     * The conditions that, when conjoined, make up the boundary.
@@ -30,36 +31,24 @@ object SchemaZoneBoundary {
   }
   
   @scala.inline
-  implicit class SchemaZoneBoundaryOps[Self <: SchemaZoneBoundary] (val x: Self) extends AnyVal {
+  implicit class SchemaZoneBoundaryMutableBuilder[Self <: SchemaZoneBoundary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: js.Array[SchemaCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionVarargs(value: SchemaCondition*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
     @scala.inline
-    def setConditionVarargs(value: SchemaCondition*): Self = this.set("condition", js.Array(value :_*))
+    def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: js.Array[SchemaCondition]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
-    
-    @scala.inline
-    def setCustomEvaluationTriggerIdVarargs(value: String*): Self = this.set("customEvaluationTriggerId", js.Array(value :_*))
-    
-    @scala.inline
-    def setCustomEvaluationTriggerId(value: js.Array[String]): Self = this.set("customEvaluationTriggerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomEvaluationTriggerId: Self = this.set("customEvaluationTriggerId", js.undefined)
+    def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
   }
 }

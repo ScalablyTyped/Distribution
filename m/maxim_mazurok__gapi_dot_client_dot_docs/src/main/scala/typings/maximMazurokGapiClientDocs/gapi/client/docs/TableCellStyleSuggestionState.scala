@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableCellStyleSuggestionState extends js.Object {
+trait TableCellStyleSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to background_color. */
   var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
@@ -52,90 +53,78 @@ object TableCellStyleSuggestionState {
   }
   
   @scala.inline
-  implicit class TableCellStyleSuggestionStateOps[Self <: TableCellStyleSuggestionState] (val x: Self) extends AnyVal {
+  implicit class TableCellStyleSuggestionStateMutableBuilder[Self <: TableCellStyleSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorSuggested(value: Boolean): Self = this.set("backgroundColorSuggested", value.asInstanceOf[js.Any])
+    def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorSuggested: Self = this.set("backgroundColorSuggested", js.undefined)
+    def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomSuggested(value: Boolean): Self = this.set("borderBottomSuggested", value.asInstanceOf[js.Any])
+    def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomSuggested: Self = this.set("borderBottomSuggested", js.undefined)
+    def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeftSuggested(value: Boolean): Self = this.set("borderLeftSuggested", value.asInstanceOf[js.Any])
+    def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
     
     @scala.inline
-    def deleteBorderLeftSuggested: Self = this.set("borderLeftSuggested", js.undefined)
+    def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRightSuggested(value: Boolean): Self = this.set("borderRightSuggested", value.asInstanceOf[js.Any])
+    def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
     
     @scala.inline
-    def deleteBorderRightSuggested: Self = this.set("borderRightSuggested", js.undefined)
+    def setColumnSpanSuggested(value: Boolean): Self = StObject.set(x, "columnSpanSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopSuggested(value: Boolean): Self = this.set("borderTopSuggested", value.asInstanceOf[js.Any])
+    def setColumnSpanSuggestedUndefined: Self = StObject.set(x, "columnSpanSuggested", js.undefined)
     
     @scala.inline
-    def deleteBorderTopSuggested: Self = this.set("borderTopSuggested", js.undefined)
+    def setContentAlignmentSuggested(value: Boolean): Self = StObject.set(x, "contentAlignmentSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSpanSuggested(value: Boolean): Self = this.set("columnSpanSuggested", value.asInstanceOf[js.Any])
+    def setContentAlignmentSuggestedUndefined: Self = StObject.set(x, "contentAlignmentSuggested", js.undefined)
     
     @scala.inline
-    def deleteColumnSpanSuggested: Self = this.set("columnSpanSuggested", js.undefined)
+    def setPaddingBottomSuggested(value: Boolean): Self = StObject.set(x, "paddingBottomSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAlignmentSuggested(value: Boolean): Self = this.set("contentAlignmentSuggested", value.asInstanceOf[js.Any])
+    def setPaddingBottomSuggestedUndefined: Self = StObject.set(x, "paddingBottomSuggested", js.undefined)
     
     @scala.inline
-    def deleteContentAlignmentSuggested: Self = this.set("contentAlignmentSuggested", js.undefined)
+    def setPaddingLeftSuggested(value: Boolean): Self = StObject.set(x, "paddingLeftSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBottomSuggested(value: Boolean): Self = this.set("paddingBottomSuggested", value.asInstanceOf[js.Any])
+    def setPaddingLeftSuggestedUndefined: Self = StObject.set(x, "paddingLeftSuggested", js.undefined)
     
     @scala.inline
-    def deletePaddingBottomSuggested: Self = this.set("paddingBottomSuggested", js.undefined)
+    def setPaddingRightSuggested(value: Boolean): Self = StObject.set(x, "paddingRightSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingLeftSuggested(value: Boolean): Self = this.set("paddingLeftSuggested", value.asInstanceOf[js.Any])
+    def setPaddingRightSuggestedUndefined: Self = StObject.set(x, "paddingRightSuggested", js.undefined)
     
     @scala.inline
-    def deletePaddingLeftSuggested: Self = this.set("paddingLeftSuggested", js.undefined)
+    def setPaddingTopSuggested(value: Boolean): Self = StObject.set(x, "paddingTopSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingRightSuggested(value: Boolean): Self = this.set("paddingRightSuggested", value.asInstanceOf[js.Any])
+    def setPaddingTopSuggestedUndefined: Self = StObject.set(x, "paddingTopSuggested", js.undefined)
     
     @scala.inline
-    def deletePaddingRightSuggested: Self = this.set("paddingRightSuggested", js.undefined)
+    def setRowSpanSuggested(value: Boolean): Self = StObject.set(x, "rowSpanSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingTopSuggested(value: Boolean): Self = this.set("paddingTopSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingTopSuggested: Self = this.set("paddingTopSuggested", js.undefined)
-    
-    @scala.inline
-    def setRowSpanSuggested(value: Boolean): Self = this.set("rowSpanSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowSpanSuggested: Self = this.set("rowSpanSuggested", js.undefined)
+    def setRowSpanSuggestedUndefined: Self = StObject.set(x, "rowSpanSuggested", js.undefined)
   }
 }

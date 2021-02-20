@@ -1,6 +1,7 @@
 package typings.durandal
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires knockout
   * @requires jquery
   */
-@JSImport("plugins/router", JSImport.Namespace)
-@js.native
-object routerMod extends TopLevel[DurandalRootRouter]
+object routerMod extends Shortcut {
+  
+  @JSImport("plugins/router", JSImport.Namespace)
+  @js.native
+  val ^ : DurandalRootRouter = js.native
+  
+  type _To = DurandalRootRouter
+  
+  /* This means you don't have to write `^`, but can instead just say `routerMod.foo` */
+  override def _to: DurandalRootRouter = ^
+}

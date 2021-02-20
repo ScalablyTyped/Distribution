@@ -3,12 +3,13 @@ package typings.atom.mod
 import typings.atom.atomStrings.in
 import typings.atom.atomStrings.out
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tooltip extends js.Object {
+trait Tooltip extends StObject {
   
   def disable(): Unit = js.native
   
@@ -58,60 +59,48 @@ object Tooltip {
   }
   
   @scala.inline
-  implicit class TooltipOps[Self <: Tooltip] (val x: Self) extends AnyVal {
+  implicit class TooltipMutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setGetArrowElement(value: () => HTMLElement): Self = StObject.set(x, "getArrowElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setGetTooltipElement(value: () => HTMLElement): Self = StObject.set(x, "getTooltipElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArrowElement(value: () => HTMLElement): Self = this.set("getArrowElement", js.Any.fromFunction0(value))
+    def setHoverState(value: in | out): Self = StObject.set(x, "hoverState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setHoverStateNull: Self = StObject.set(x, "hoverState", null)
     
     @scala.inline
-    def setGetTooltipElement(value: () => HTMLElement): Self = this.set("getTooltipElement", js.Any.fromFunction0(value))
+    def setOptions(value: TooltipOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: TooltipOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRecalculatePosition(value: () => Unit): Self = StObject.set(x, "recalculatePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRecalculatePosition(value: () => Unit): Self = this.set("recalculatePosition", js.Any.fromFunction0(value))
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggleEnabled(value: () => Unit): Self = this.set("toggleEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHoverState(value: in | out): Self = this.set("hoverState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHoverStateNull: Self = this.set("hoverState", null)
+    def setToggleEnabled(value: () => Unit): Self = StObject.set(x, "toggleEnabled", js.Any.fromFunction0(value))
   }
 }

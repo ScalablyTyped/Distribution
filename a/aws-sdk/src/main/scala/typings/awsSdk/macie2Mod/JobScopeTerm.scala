@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobScopeTerm extends js.Object {
+trait JobScopeTerm extends StObject {
   
   /**
     * A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job.
@@ -26,30 +27,18 @@ object JobScopeTerm {
   }
   
   @scala.inline
-  implicit class JobScopeTermOps[Self <: JobScopeTerm] (val x: Self) extends AnyVal {
+  implicit class JobScopeTermMutableBuilder[Self <: JobScopeTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSimpleScopeTerm(value: SimpleScopeTerm): Self = StObject.set(x, "simpleScopeTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSimpleScopeTermUndefined: Self = StObject.set(x, "simpleScopeTerm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagScopeTerm(value: TagScopeTerm): Self = StObject.set(x, "tagScopeTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimpleScopeTerm(value: SimpleScopeTerm): Self = this.set("simpleScopeTerm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimpleScopeTerm: Self = this.set("simpleScopeTerm", js.undefined)
-    
-    @scala.inline
-    def setTagScopeTerm(value: TagScopeTerm): Self = this.set("tagScopeTerm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagScopeTerm: Self = this.set("tagScopeTerm", js.undefined)
+    def setTagScopeTermUndefined: Self = StObject.set(x, "tagScopeTerm", js.undefined)
   }
 }

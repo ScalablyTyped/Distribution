@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopOverOptions extends js.Object {
+trait PopOverOptions extends StObject {
   
   var close: js.UndefOr[js.Function1[/* e */ PopOverCloseEvent, Unit]] = js.native
   
@@ -26,48 +27,36 @@ object PopOverOptions {
   }
   
   @scala.inline
-  implicit class PopOverOptionsOps[Self <: PopOverOptions] (val x: Self) extends AnyVal {
+  implicit class PopOverOptionsMutableBuilder[Self <: PopOverOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: /* e */ PopOverCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: /* e */ PopOverCloseEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setOpen(value: /* e */ PopOverOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPane(value: PopOverPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: /* e */ PopOverOpenEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setPopup(value: PopOverPopup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: PopOverPane): Self = this.set("pane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
-    
-    @scala.inline
-    def setPopup(value: PopOverPopup): Self = this.set("popup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopup: Self = this.set("popup", js.undefined)
+    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
   }
 }

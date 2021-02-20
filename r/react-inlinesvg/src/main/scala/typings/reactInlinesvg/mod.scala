@@ -1,20 +1,38 @@
 package typings.reactInlinesvg
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactInlinesvg.anon.CacheRequests
 import typings.reactInlinesvg.typesMod.Props
 import typings.reactInlinesvg.typesMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-inlinesvg", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("react-inlinesvg", JSImport.Default)
+  @js.native
+  class default protected () extends InlineSVG {
+    def this(props: Props) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-inlinesvg", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-inlinesvg", "default.defaultProps")
+    @js.native
+    def defaultProps: CacheRequests = js.native
+    @scala.inline
+    def defaultProps_=(x: CacheRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait InlineSVG
-    extends Component[Props, State, js.Any] {
+    extends PureComponent[Props, State, js.Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MInlineSVG(): Unit = js.native
@@ -46,16 +64,5 @@ object mod extends js.Object {
     var request: js.Any = js.native
     
     var updateSVGAttributes: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends InlineSVG {
-    def this(props: Props) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: CacheRequests = js.native
   }
 }

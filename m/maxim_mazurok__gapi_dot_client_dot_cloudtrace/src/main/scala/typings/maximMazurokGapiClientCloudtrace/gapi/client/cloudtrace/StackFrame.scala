@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackFrame extends js.Object {
+trait StackFrame extends StObject {
   
   /** The column number where the function call appears, if available. This is important in JavaScript because of its anonymous functions. */
   var columnNumber: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object StackFrame {
   }
   
   @scala.inline
-  implicit class StackFrameOps[Self <: StackFrame] (val x: Self) extends AnyVal {
+  implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNumber(value: String): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileName(value: TruncatableString): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNumber(value: String): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteColumnNumber: Self = this.set("columnNumber", js.undefined)
+    def setFunctionName(value: TruncatableString): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: TruncatableString): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setLineNumber(value: String): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: TruncatableString): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    def setLoadModule(value: Module): Self = StObject.set(x, "loadModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: String): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    def setLoadModuleUndefined: Self = StObject.set(x, "loadModule", js.undefined)
     
     @scala.inline
-    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+    def setOriginalFunctionName(value: TruncatableString): Self = StObject.set(x, "originalFunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadModule(value: Module): Self = this.set("loadModule", value.asInstanceOf[js.Any])
+    def setOriginalFunctionNameUndefined: Self = StObject.set(x, "originalFunctionName", js.undefined)
     
     @scala.inline
-    def deleteLoadModule: Self = this.set("loadModule", js.undefined)
+    def setSourceVersion(value: TruncatableString): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalFunctionName(value: TruncatableString): Self = this.set("originalFunctionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalFunctionName: Self = this.set("originalFunctionName", js.undefined)
-    
-    @scala.inline
-    def setSourceVersion(value: TruncatableString): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceVersion: Self = this.set("sourceVersion", js.undefined)
+    def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
   }
 }

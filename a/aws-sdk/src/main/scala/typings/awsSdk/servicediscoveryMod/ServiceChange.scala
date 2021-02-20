@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceChange extends js.Object {
+trait ServiceChange extends StObject {
   
   /**
     * A description for the service.
@@ -28,36 +29,24 @@ object ServiceChange {
   }
   
   @scala.inline
-  implicit class ServiceChangeOps[Self <: ServiceChange] (val x: Self) extends AnyVal {
+  implicit class ServiceChangeMutableBuilder[Self <: ServiceChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsConfig(value: DnsConfigChange): Self = StObject.set(x, "DnsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ResourceDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDnsConfigUndefined: Self = StObject.set(x, "DnsConfig", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsConfig(value: DnsConfigChange): Self = this.set("DnsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDnsConfig: Self = this.set("DnsConfig", js.undefined)
-    
-    @scala.inline
-    def setHealthCheckConfig(value: HealthCheckConfig): Self = this.set("HealthCheckConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheckConfig: Self = this.set("HealthCheckConfig", js.undefined)
+    def setHealthCheckConfigUndefined: Self = StObject.set(x, "HealthCheckConfig", js.undefined)
   }
 }

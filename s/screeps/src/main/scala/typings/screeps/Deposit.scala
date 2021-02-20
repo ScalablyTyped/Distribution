@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object Deposit {
   }
   
   @scala.inline
-  implicit class DepositOps[Self <: Deposit] (val x: Self) extends AnyVal {
+  implicit class DepositMutableBuilder[Self <: Deposit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepositType(value: DepositConstant): Self = StObject.set(x, "depositType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Id[Deposit]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldown(value: Double): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setLastCooldown(value: Double): Self = StObject.set(x, "lastCooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepositType(value: DepositConstant): Self = this.set("depositType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Id[Deposit]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastCooldown(value: Double): Self = this.set("lastCooldown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = this.set("ticksToDecay", value.asInstanceOf[js.Any])
+    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

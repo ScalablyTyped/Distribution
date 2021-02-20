@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/_NonKeyAttributeNameList", JSImport.Namespace)
-@js.native
-object nonKeyAttributeNameListMod extends js.Object {
+object nonKeyAttributeNameListMod {
   
-  @JSName("_NonKeyAttributeNameList")
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/_NonKeyAttributeNameList", "_NonKeyAttributeNameList")
+  @js.native
   val NonKeyAttributeNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

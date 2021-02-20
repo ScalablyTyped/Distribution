@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Transaction
   */
 @js.native
-trait TransactionStatic extends js.Object {
+trait TransactionStatic extends StObject {
   
   /**
     * Isolations levels can be set per-transaction by passing `options.isolationLevel` to
@@ -130,27 +131,15 @@ object TransactionStatic {
   }
   
   @scala.inline
-  implicit class TransactionStaticOps[Self <: TransactionStatic] (val x: Self) extends AnyVal {
+  implicit class TransactionStaticMutableBuilder[Self <: TransactionStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setISOLATION_LEVELS(value: TransactionIsolationLevels): Self = StObject.set(x, "ISOLATION_LEVELS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setISOLATION_LEVELS(value: TransactionIsolationLevels): Self = this.set("ISOLATION_LEVELS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLOCK(value: TransactionLock): Self = this.set("LOCK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTYPES(value: TransactionTypes): Self = this.set("TYPES", value.asInstanceOf[js.Any])
+    def setTYPES(value: TransactionTypes): Self = StObject.set(x, "TYPES", value.asInstanceOf[js.Any])
   }
 }

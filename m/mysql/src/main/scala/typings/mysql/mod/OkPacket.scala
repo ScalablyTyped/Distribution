@@ -1,11 +1,12 @@
 package typings.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OkPacket extends js.Object {
+trait OkPacket extends StObject {
   
   /**
     * The number of affected rows from an insert, update, or delete statement.
@@ -51,48 +52,36 @@ object OkPacket {
   }
   
   @scala.inline
-  implicit class OkPacketOps[Self <: OkPacket] (val x: Self) extends AnyVal {
+  implicit class OkPacketMutableBuilder[Self <: OkPacket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedRows(value: Double): Self = StObject.set(x, "changedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectedRows(value: Double): Self = this.set("affectedRows", value.asInstanceOf[js.Any])
+    def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedRows(value: Double): Self = this.set("changedRows", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldCount(value: Double): Self = this.set("fieldCount", value.asInstanceOf[js.Any])
+    def setProtocol41(value: Boolean): Self = StObject.set(x, "protocol41", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertId(value: Double): Self = this.set("insertId", value.asInstanceOf[js.Any])
+    def setServerStatus(value: Double): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setServerStatusUndefined: Self = StObject.set(x, "serverStatus", js.undefined)
     
     @scala.inline
-    def setProtocol41(value: Boolean): Self = this.set("protocol41", value.asInstanceOf[js.Any])
+    def setWarningCount(value: Double): Self = StObject.set(x, "warningCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerStatus(value: Double): Self = this.set("serverStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerStatus: Self = this.set("serverStatus", js.undefined)
-    
-    @scala.inline
-    def setWarningCount(value: Double): Self = this.set("warningCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningCount: Self = this.set("warningCount", js.undefined)
+    def setWarningCountUndefined: Self = StObject.set(x, "warningCount", js.undefined)
   }
 }

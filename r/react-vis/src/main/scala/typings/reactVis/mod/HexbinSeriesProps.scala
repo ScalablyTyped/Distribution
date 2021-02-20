@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object HexbinSeriesProps {
   }
   
   @scala.inline
-  implicit class HexbinSeriesPropsOps[Self <: HexbinSeriesProps] (val x: Self) extends AnyVal {
+  implicit class HexbinSeriesPropsMutableBuilder[Self <: HexbinSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeHexagonsWithCount(value: Boolean): Self = StObject.set(x, "sizeHexagonsWithCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSizeHexagonsWithCountUndefined: Self = StObject.set(x, "sizeHexagonsWithCount", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeHexagonsWithCount(value: Boolean): Self = this.set("sizeHexagonsWithCount", value.asInstanceOf[js.Any])
+    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
     @scala.inline
-    def deleteSizeHexagonsWithCount: Self = this.set("sizeHexagonsWithCount", js.undefined)
+    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXOffset(value: Double): Self = this.set("xOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXOffset: Self = this.set("xOffset", js.undefined)
-    
-    @scala.inline
-    def setYOffset(value: Double): Self = this.set("yOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOffset: Self = this.set("yOffset", js.undefined)
+    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

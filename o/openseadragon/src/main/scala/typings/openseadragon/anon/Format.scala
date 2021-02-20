@@ -1,11 +1,12 @@
 package typings.openseadragon.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Format extends js.Object {
+trait Format extends StObject {
   
   var Format: String = js.native
   
@@ -28,39 +29,27 @@ object Format {
   }
   
   @scala.inline
-  implicit class FormatOps[Self <: Format] (val x: Self) extends AnyVal {
+  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverlap(value: String): Self = StObject.set(x, "Overlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: Width): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setTileSize(value: String): Self = StObject.set(x, "TileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlap(value: String): Self = this.set("Overlap", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Width): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileSize(value: String): Self = this.set("TileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlns(value: String): Self = this.set("xmlns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlns: Self = this.set("xmlns", js.undefined)
+    def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
   }
 }

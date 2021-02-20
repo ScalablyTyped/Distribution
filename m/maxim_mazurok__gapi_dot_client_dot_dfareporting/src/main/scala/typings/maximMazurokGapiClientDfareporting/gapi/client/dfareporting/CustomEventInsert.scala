@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomEventInsert extends js.Object {
+trait CustomEventInsert extends StObject {
   
   /** Campaign Manager dimensions associated with the event. */
   var cmDimensions: js.UndefOr[CampaignManagerIds] = js.native
@@ -37,54 +38,42 @@ object CustomEventInsert {
   }
   
   @scala.inline
-  implicit class CustomEventInsertOps[Self <: CustomEventInsert] (val x: Self) extends AnyVal {
+  implicit class CustomEventInsertMutableBuilder[Self <: CustomEventInsert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmDimensions(value: CampaignManagerIds): Self = StObject.set(x, "cmDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmDimensionsUndefined: Self = StObject.set(x, "cmDimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDv3Dimensions(value: DV3Ids): Self = StObject.set(x, "dv3Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmDimensions(value: CampaignManagerIds): Self = this.set("cmDimensions", value.asInstanceOf[js.Any])
+    def setDv3DimensionsUndefined: Self = StObject.set(x, "dv3Dimensions", js.undefined)
     
     @scala.inline
-    def deleteCmDimensions: Self = this.set("cmDimensions", js.undefined)
+    def setInsertEventType(value: String): Self = StObject.set(x, "insertEventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDv3Dimensions(value: DV3Ids): Self = this.set("dv3Dimensions", value.asInstanceOf[js.Any])
+    def setInsertEventTypeUndefined: Self = StObject.set(x, "insertEventType", js.undefined)
     
     @scala.inline
-    def deleteDv3Dimensions: Self = this.set("dv3Dimensions", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertEventType(value: String): Self = this.set("insertEventType", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInsertEventType: Self = this.set("insertEventType", js.undefined)
+    def setMatchId(value: String): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMatchIdUndefined: Self = StObject.set(x, "matchId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMobileDeviceId(value: String): Self = StObject.set(x, "mobileDeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchId(value: String): Self = this.set("matchId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchId: Self = this.set("matchId", js.undefined)
-    
-    @scala.inline
-    def setMobileDeviceId(value: String): Self = this.set("mobileDeviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobileDeviceId: Self = this.set("mobileDeviceId", js.undefined)
+    def setMobileDeviceIdUndefined: Self = StObject.set(x, "mobileDeviceId", js.undefined)
   }
 }

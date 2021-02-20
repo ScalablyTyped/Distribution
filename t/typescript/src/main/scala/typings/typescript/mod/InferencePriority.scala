@@ -1,81 +1,68 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InferencePriority extends js.Object
+sealed trait InferencePriority extends StObject
 @JSImport("typescript", "InferencePriority")
 @js.native
-object InferencePriority extends js.Object {
+object InferencePriority extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InferencePriority with Double] = js.native
   
   @js.native
   sealed trait AlwaysStrict extends InferencePriority
-  /* 512 */ @js.native
-  object AlwaysStrict extends TopLevel[AlwaysStrict with Double]
+  /* 512 */ val AlwaysStrict: typings.typescript.mod.InferencePriority.AlwaysStrict with Double = js.native
   
   @js.native
   sealed trait Circularity extends InferencePriority
-  /* -1 */ @js.native
-  object Circularity extends TopLevel[Circularity with Double]
+  /* -1 */ val Circularity: typings.typescript.mod.InferencePriority.Circularity with Double = js.native
   
   @js.native
   sealed trait ContravariantConditional extends InferencePriority
-  /* 32 */ @js.native
-  object ContravariantConditional extends TopLevel[ContravariantConditional with Double]
+  /* 32 */ val ContravariantConditional: typings.typescript.mod.InferencePriority.ContravariantConditional with Double = js.native
   
   @js.native
   sealed trait HomomorphicMappedType extends InferencePriority
-  /* 4 */ @js.native
-  object HomomorphicMappedType extends TopLevel[HomomorphicMappedType with Double]
+  /* 4 */ val HomomorphicMappedType: typings.typescript.mod.InferencePriority.HomomorphicMappedType with Double = js.native
   
   @js.native
   sealed trait LiteralKeyof extends InferencePriority
-  /* 128 */ @js.native
-  object LiteralKeyof extends TopLevel[LiteralKeyof with Double]
+  /* 128 */ val LiteralKeyof: typings.typescript.mod.InferencePriority.LiteralKeyof with Double = js.native
   
   @js.native
   sealed trait MappedTypeConstraint extends InferencePriority
-  /* 16 */ @js.native
-  object MappedTypeConstraint extends TopLevel[MappedTypeConstraint with Double]
+  /* 16 */ val MappedTypeConstraint: typings.typescript.mod.InferencePriority.MappedTypeConstraint with Double = js.native
   
   @js.native
   sealed trait MaxValue extends InferencePriority
-  /* 1024 */ @js.native
-  object MaxValue extends TopLevel[MaxValue with Double]
+  /* 1024 */ val MaxValue: typings.typescript.mod.InferencePriority.MaxValue with Double = js.native
   
   @js.native
   sealed trait NakedTypeVariable extends InferencePriority
-  /* 1 */ @js.native
-  object NakedTypeVariable extends TopLevel[NakedTypeVariable with Double]
+  /* 1 */ val NakedTypeVariable: typings.typescript.mod.InferencePriority.NakedTypeVariable with Double = js.native
   
   @js.native
   sealed trait NoConstraints extends InferencePriority
-  /* 256 */ @js.native
-  object NoConstraints extends TopLevel[NoConstraints with Double]
+  /* 256 */ val NoConstraints: typings.typescript.mod.InferencePriority.NoConstraints with Double = js.native
   
   @js.native
   sealed trait PartialHomomorphicMappedType extends InferencePriority
-  /* 8 */ @js.native
-  object PartialHomomorphicMappedType extends TopLevel[PartialHomomorphicMappedType with Double]
+  /* 8 */ val PartialHomomorphicMappedType: typings.typescript.mod.InferencePriority.PartialHomomorphicMappedType with Double = js.native
   
   @js.native
   sealed trait PriorityImpliesCombination extends InferencePriority
-  /* 208 */ @js.native
-  object PriorityImpliesCombination extends TopLevel[PriorityImpliesCombination with Double]
+  /* 208 */ val PriorityImpliesCombination: typings.typescript.mod.InferencePriority.PriorityImpliesCombination with Double = js.native
   
   @js.native
   sealed trait ReturnType extends InferencePriority
-  /* 64 */ @js.native
-  object ReturnType extends TopLevel[ReturnType with Double]
+  /* 64 */ val ReturnType: typings.typescript.mod.InferencePriority.ReturnType with Double = js.native
   
   @js.native
   sealed trait SpeculativeTuple extends InferencePriority
-  /* 2 */ @js.native
-  object SpeculativeTuple extends TopLevel[SpeculativeTuple with Double]
+  /* 2 */ val SpeculativeTuple: typings.typescript.mod.InferencePriority.SpeculativeTuple with Double = js.native
 }

@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.ParentGuid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.Tag")
 @js.native
-class Tag () extends js.Object {
+class Tag () extends StObject {
   def this(args: ParentGuid) = this()
   
   var guid: js.UndefOr[Guid] = js.native

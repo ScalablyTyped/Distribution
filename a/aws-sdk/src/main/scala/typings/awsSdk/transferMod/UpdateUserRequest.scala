@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUserRequest extends js.Object {
+trait UpdateUserRequest extends StObject {
   
   /**
     * Specifies the landing directory (folder) for a user when they log in to the server using their file transfer protocol client. An example is your-Amazon-S3-bucket-name&gt;/home/username.
@@ -51,57 +52,45 @@ object UpdateUserRequest {
   }
   
   @scala.inline
-  implicit class UpdateUserRequestOps[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateUserRequestMutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHomeDirectory(value: HomeDirectory): Self = StObject.set(x, "HomeDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHomeDirectoryMappings(value: HomeDirectoryMappings): Self = StObject.set(x, "HomeDirectoryMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHomeDirectoryMappingsUndefined: Self = StObject.set(x, "HomeDirectoryMappings", js.undefined)
     
     @scala.inline
-    def setServerId(value: ServerId): Self = this.set("ServerId", value.asInstanceOf[js.Any])
+    def setHomeDirectoryMappingsVarargs(value: HomeDirectoryMapEntry*): Self = StObject.set(x, "HomeDirectoryMappings", js.Array(value :_*))
     
     @scala.inline
-    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setHomeDirectoryType(value: HomeDirectoryType): Self = StObject.set(x, "HomeDirectoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDirectory(value: HomeDirectory): Self = this.set("HomeDirectory", value.asInstanceOf[js.Any])
+    def setHomeDirectoryTypeUndefined: Self = StObject.set(x, "HomeDirectoryType", js.undefined)
     
     @scala.inline
-    def deleteHomeDirectory: Self = this.set("HomeDirectory", js.undefined)
+    def setHomeDirectoryUndefined: Self = StObject.set(x, "HomeDirectory", js.undefined)
     
     @scala.inline
-    def setHomeDirectoryMappingsVarargs(value: HomeDirectoryMapEntry*): Self = this.set("HomeDirectoryMappings", js.Array(value :_*))
+    def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDirectoryMappings(value: HomeDirectoryMappings): Self = this.set("HomeDirectoryMappings", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def deleteHomeDirectoryMappings: Self = this.set("HomeDirectoryMappings", js.undefined)
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDirectoryType(value: HomeDirectoryType): Self = this.set("HomeDirectoryType", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteHomeDirectoryType: Self = this.set("HomeDirectoryType", js.undefined)
+    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: Policy): Self = this.set("Policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
-    
-    @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

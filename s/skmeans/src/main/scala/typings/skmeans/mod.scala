@@ -1,12 +1,11 @@
 package typings.skmeans
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("skmeans", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Calculates unidimiensional and multidimensional k-means clustering on data.
@@ -17,7 +16,11 @@ object mod extends js.Object {
     * @param iterations Maximum number of iterations. If not provided, it will be set to 10000.
     * @param distance Custom distance function. Takes two points as arguments and returns a scalar number.
     */
+  @JSImport("skmeans", JSImport.Namespace)
+  @js.native
   def apply(data: js.Array[js.Array[Double] | Double], k: Double): Data = js.native
+  @JSImport("skmeans", JSImport.Namespace)
+  @js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
@@ -25,12 +28,16 @@ object mod extends js.Object {
     iterations: js.UndefOr[scala.Nothing],
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = js.native
+  @JSImport("skmeans", JSImport.Namespace)
+  @js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: js.UndefOr[CentroidValues],
     iterations: Double
   ): Data = js.native
+  @JSImport("skmeans", JSImport.Namespace)
+  @js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
@@ -38,6 +45,8 @@ object mod extends js.Object {
     iterations: Double,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = js.native
+  @JSImport("skmeans", JSImport.Namespace)
+  @js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
@@ -45,10 +54,19 @@ object mod extends js.Object {
     iterations: Null,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = js.native
+  @JSImport("skmeans", JSImport.Namespace)
+  @js.native
   def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = js.native
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.skmeans.skmeansStrings.kmrand
+    - typings.skmeans.skmeansStrings.kmpp
+    - scala.Null
+  */
+  type CentroidValues = _CentroidValues | Null
+  
   @js.native
-  trait Data extends js.Object {
+  trait Data extends StObject {
     
     var centroids: Double = js.native
     
@@ -62,12 +80,5 @@ object mod extends js.Object {
     def test(x: Double, point: js.Function2[/* x1 */ Double, /* x2 */ Double, Double]): Unit = js.native
   }
   
-  trait _CentroidValues extends js.Object
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.skmeans.skmeansStrings.kmrand
-    - typings.skmeans.skmeansStrings.kmpp
-    - scala.Null
-  */
-  type CentroidValues = _CentroidValues | Null
+  trait _CentroidValues extends StObject
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration of a App Engine backend.
   */
 @js.native
-trait SchemaBackendServiceAppEngineBackend extends js.Object {
+trait SchemaBackendServiceAppEngineBackend extends StObject {
   
   /**
     * Optional. App Engine app service name.
@@ -36,36 +37,24 @@ object SchemaBackendServiceAppEngineBackend {
   }
   
   @scala.inline
-  implicit class SchemaBackendServiceAppEngineBackendOps[Self <: SchemaBackendServiceAppEngineBackend] (val x: Self) extends AnyVal {
+  implicit class SchemaBackendServiceAppEngineBackendMutableBuilder[Self <: SchemaBackendServiceAppEngineBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngineService(value: String): Self = StObject.set(x, "appEngineService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineServiceUndefined: Self = StObject.set(x, "appEngineService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetProject(value: String): Self = StObject.set(x, "targetProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngineService(value: String): Self = this.set("appEngineService", value.asInstanceOf[js.Any])
+    def setTargetProjectUndefined: Self = StObject.set(x, "targetProject", js.undefined)
     
     @scala.inline
-    def deleteAppEngineService: Self = this.set("appEngineService", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetProject(value: String): Self = this.set("targetProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetProject: Self = this.set("targetProject", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

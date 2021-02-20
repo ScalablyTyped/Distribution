@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredictorExecution extends js.Object {
+trait PredictorExecution extends StObject {
   
   /**
     * The ARN of the algorithm used to test the predictor.
@@ -26,33 +27,21 @@ object PredictorExecution {
   }
   
   @scala.inline
-  implicit class PredictorExecutionOps[Self <: PredictorExecution] (val x: Self) extends AnyVal {
+  implicit class PredictorExecutionMutableBuilder[Self <: PredictorExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmArnUndefined: Self = StObject.set(x, "AlgorithmArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestWindows(value: TestWindowDetails): Self = StObject.set(x, "TestWindows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmArn(value: Arn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    def setTestWindowsUndefined: Self = StObject.set(x, "TestWindows", js.undefined)
     
     @scala.inline
-    def deleteAlgorithmArn: Self = this.set("AlgorithmArn", js.undefined)
-    
-    @scala.inline
-    def setTestWindowsVarargs(value: TestWindowSummary*): Self = this.set("TestWindows", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestWindows(value: TestWindowDetails): Self = this.set("TestWindows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestWindows: Self = this.set("TestWindows", js.undefined)
+    def setTestWindowsVarargs(value: TestWindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value :_*))
   }
 }

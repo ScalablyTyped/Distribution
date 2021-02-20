@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -221,78 +222,66 @@ object XResultSet {
   }
   
   @scala.inline
-  implicit class XResultSetOps[Self <: XResultSet] (val x: Self) extends AnyVal {
+  implicit class XResultSetMutableBuilder[Self <: XResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolute(value: Double => Boolean): Self = StObject.set(x, "absolute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterLast(value: () => Unit): Self = StObject.set(x, "afterLast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeFirst(value: () => Unit): Self = StObject.set(x, "beforeFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRow(value: Double): Self = this.set("Row", value.asInstanceOf[js.Any])
+    def setFirst(value: () => Boolean): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStatement(value: XInterface): Self = this.set("Statement", value.asInstanceOf[js.Any])
+    def setGetRow(value: () => Double): Self = StObject.set(x, "getRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAbsolute(value: Double => Boolean): Self = this.set("absolute", js.Any.fromFunction1(value))
+    def setGetStatement(value: () => XInterface): Self = StObject.set(x, "getStatement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAfterLast(value: () => Unit): Self = this.set("afterLast", js.Any.fromFunction0(value))
+    def setIsAfterLast(value: () => Boolean): Self = StObject.set(x, "isAfterLast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeforeFirst(value: () => Unit): Self = this.set("beforeFirst", js.Any.fromFunction0(value))
+    def setIsBeforeFirst(value: () => Boolean): Self = StObject.set(x, "isBeforeFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirst(value: () => Boolean): Self = this.set("first", js.Any.fromFunction0(value))
+    def setIsFirst(value: () => Boolean): Self = StObject.set(x, "isFirst", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRow(value: () => Double): Self = this.set("getRow", js.Any.fromFunction0(value))
+    def setIsLast(value: () => Boolean): Self = StObject.set(x, "isLast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStatement(value: () => XInterface): Self = this.set("getStatement", js.Any.fromFunction0(value))
+    def setLast(value: () => Boolean): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAfterLast(value: () => Boolean): Self = this.set("isAfterLast", js.Any.fromFunction0(value))
+    def setNext(value: () => Boolean): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBeforeFirst(value: () => Boolean): Self = this.set("isBeforeFirst", js.Any.fromFunction0(value))
+    def setPrevious(value: () => Boolean): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFirst(value: () => Boolean): Self = this.set("isFirst", js.Any.fromFunction0(value))
+    def setRefreshRow(value: () => Unit): Self = StObject.set(x, "refreshRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsLast(value: () => Boolean): Self = this.set("isLast", js.Any.fromFunction0(value))
+    def setRelative(value: Double => Boolean): Self = StObject.set(x, "relative", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLast(value: () => Boolean): Self = this.set("last", js.Any.fromFunction0(value))
+    def setRow(value: Double): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: () => Boolean): Self = this.set("next", js.Any.fromFunction0(value))
+    def setRowDeleted(value: () => Boolean): Self = StObject.set(x, "rowDeleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrevious(value: () => Boolean): Self = this.set("previous", js.Any.fromFunction0(value))
+    def setRowInserted(value: () => Boolean): Self = StObject.set(x, "rowInserted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRefreshRow(value: () => Unit): Self = this.set("refreshRow", js.Any.fromFunction0(value))
+    def setRowUpdated(value: () => Boolean): Self = StObject.set(x, "rowUpdated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRelative(value: Double => Boolean): Self = this.set("relative", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowDeleted(value: () => Boolean): Self = this.set("rowDeleted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRowInserted(value: () => Boolean): Self = this.set("rowInserted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRowUpdated(value: () => Boolean): Self = this.set("rowUpdated", js.Any.fromFunction0(value))
+    def setStatement(value: XInterface): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
   }
 }

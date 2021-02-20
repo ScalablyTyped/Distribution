@@ -2,13 +2,16 @@ package typings.antdMobileRn
 
 import typings.antdMobileRn.anon.ValueString
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/search-bar/demo/basic.native", JSImport.Namespace)
-@js.native
-object searchBarDemoBasicNativeMod extends js.Object {
+object searchBarDemoBasicNativeMod {
+  
+  @JSImport("antd-mobile-rn/lib/search-bar/demo/basic.native", JSImport.Default)
+  @js.native
+  class default () extends SearchBarDemo
   
   @js.native
   trait SearchBarDemo
@@ -21,7 +24,4 @@ object searchBarDemoBasicNativeMod extends js.Object {
     @JSName("state")
     var state_SearchBarDemo: ValueString = js.native
   }
-  
-  @js.native
-  class default () extends SearchBarDemo
 }

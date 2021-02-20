@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileGroupSettings extends js.Object {
+trait FileGroupSettings extends StObject {
   
   /**
     * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
@@ -26,30 +27,18 @@ object FileGroupSettings {
   }
   
   @scala.inline
-  implicit class FileGroupSettingsOps[Self <: FileGroupSettings] (val x: Self) extends AnyVal {
+  implicit class FileGroupSettingsMutableBuilder[Self <: FileGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
     @scala.inline
-    def setDestination(value: stringPatternS3): Self = this.set("Destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination: Self = this.set("Destination", js.undefined)
-    
-    @scala.inline
-    def setDestinationSettings(value: DestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
   }
 }

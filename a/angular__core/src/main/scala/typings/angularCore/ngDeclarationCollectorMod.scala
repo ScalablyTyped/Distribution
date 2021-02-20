@@ -5,26 +5,16 @@ import typings.std.Set
 import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", JSImport.Namespace)
-@js.native
-object ngDeclarationCollectorMod extends js.Object {
+object ngDeclarationCollectorMod {
   
-  def getNgClassDecorators(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[NgDecorator] = js.native
-  
-  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
-  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = js.native
-  
-  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
-  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = js.native
-  
-  def hasNgDeclarationDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
-  
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "NgDeclarationCollector")
   @js.native
-  class NgDeclarationCollector protected () extends js.Object {
+  class NgDeclarationCollector protected () extends StObject {
     def this(
       typeChecker: TypeChecker,
       evaluator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialEvaluator */ js.Any
@@ -49,4 +39,26 @@ object ngDeclarationCollectorMod extends js.Object {
     
     def visitNode(node: Node): Unit = js.native
   }
+  
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "getNgClassDecorators")
+  @js.native
+  def getNgClassDecorators(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[NgDecorator] = js.native
+  
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasDirectiveDecorator")
+  @js.native
+  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasDirectiveDecorator")
+  @js.native
+  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = js.native
+  
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasInjectableDecorator")
+  @js.native
+  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasInjectableDecorator")
+  @js.native
+  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = js.native
+  
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasNgDeclarationDecorator")
+  @js.native
+  def hasNgDeclarationDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
 }

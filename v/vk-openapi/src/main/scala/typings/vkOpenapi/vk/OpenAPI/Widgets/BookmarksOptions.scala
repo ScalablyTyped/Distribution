@@ -5,12 +5,13 @@ import typings.vkOpenapi.vkOpenapiNumbers.`20`
 import typings.vkOpenapi.vkOpenapiNumbers.`22`
 import typings.vkOpenapi.vkOpenapiNumbers.`24`
 import typings.vkOpenapi.vkOpenapiNumbers.`30`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BookmarksOptions extends js.Object {
+trait BookmarksOptions extends StObject {
   
   var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.native
   
@@ -25,30 +26,18 @@ object BookmarksOptions {
   }
   
   @scala.inline
-  implicit class BookmarksOptionsOps[Self <: BookmarksOptions] (val x: Self) extends AnyVal {
+  implicit class BookmarksOptionsMutableBuilder[Self <: BookmarksOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

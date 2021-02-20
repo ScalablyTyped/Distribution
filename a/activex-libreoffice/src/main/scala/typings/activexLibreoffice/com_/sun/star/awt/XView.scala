@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,39 +72,27 @@ object XView {
   }
   
   @scala.inline
-  implicit class XViewOps[Self <: XView] (val x: Self) extends AnyVal {
+  implicit class XViewMutableBuilder[Self <: XView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGraphics(value: () => XGraphics): Self = StObject.set(x, "getGraphics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGraphics(value: XGraphics): Self = this.set("Graphics", value.asInstanceOf[js.Any])
+    def setGraphics(value: XGraphics): Self = StObject.set(x, "Graphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSetGraphics(value: XGraphics => Boolean): Self = StObject.set(x, "setGraphics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraw(value: (Double, Double) => Unit): Self = this.set("draw", js.Any.fromFunction2(value))
+    def setSetZoom(value: (Double, Double) => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetGraphics(value: () => XGraphics): Self = this.set("getGraphics", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSize(value: () => Size): Self = this.set("getSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetGraphics(value: XGraphics => Boolean): Self = this.set("setGraphics", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetZoom(value: (Double, Double) => Unit): Self = this.set("setZoom", js.Any.fromFunction2(value))
+    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

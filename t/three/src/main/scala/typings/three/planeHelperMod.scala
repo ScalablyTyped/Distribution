@@ -5,14 +5,14 @@ import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import typings.three.planeMod.Plane
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/helpers/PlaneHelper", JSImport.Namespace)
-@js.native
-object planeHelperMod extends js.Object {
+object planeHelperMod {
   
+  @JSImport("three/src/helpers/PlaneHelper", "PlaneHelper")
   @js.native
   class PlaneHelper protected ()
     extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {

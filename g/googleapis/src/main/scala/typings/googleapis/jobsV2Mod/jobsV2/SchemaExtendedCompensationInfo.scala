@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Deprecated. Use CompensationInfo.  Describes job compensation.
   */
 @js.native
-trait SchemaExtendedCompensationInfo extends js.Object {
+trait SchemaExtendedCompensationInfo extends StObject {
   
   /**
     * Output only.  Annualized base compensation range.
@@ -58,57 +59,45 @@ object SchemaExtendedCompensationInfo {
   }
   
   @scala.inline
-  implicit class SchemaExtendedCompensationInfoOps[Self <: SchemaExtendedCompensationInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaExtendedCompensationInfoMutableBuilder[Self <: SchemaExtendedCompensationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnualizedBaseCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnualizedBaseCompensationRangeUndefined: Self = StObject.set(x, "annualizedBaseCompensationRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnualizedBaseCompensationUnspecified(value: Boolean): Self = StObject.set(x, "annualizedBaseCompensationUnspecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnualizedBaseCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = this.set("annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
+    def setAnnualizedBaseCompensationUnspecifiedUndefined: Self = StObject.set(x, "annualizedBaseCompensationUnspecified", js.undefined)
     
     @scala.inline
-    def deleteAnnualizedBaseCompensationRange: Self = this.set("annualizedBaseCompensationRange", js.undefined)
+    def setAnnualizedTotalCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnualizedBaseCompensationUnspecified(value: Boolean): Self = this.set("annualizedBaseCompensationUnspecified", value.asInstanceOf[js.Any])
+    def setAnnualizedTotalCompensationRangeUndefined: Self = StObject.set(x, "annualizedTotalCompensationRange", js.undefined)
     
     @scala.inline
-    def deleteAnnualizedBaseCompensationUnspecified: Self = this.set("annualizedBaseCompensationUnspecified", js.undefined)
+    def setAnnualizedTotalCompensationUnspecified(value: Boolean): Self = StObject.set(x, "annualizedTotalCompensationUnspecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnualizedTotalCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = this.set("annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
+    def setAnnualizedTotalCompensationUnspecifiedUndefined: Self = StObject.set(x, "annualizedTotalCompensationUnspecified", js.undefined)
     
     @scala.inline
-    def deleteAnnualizedTotalCompensationRange: Self = this.set("annualizedTotalCompensationRange", js.undefined)
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnualizedTotalCompensationUnspecified(value: Boolean): Self = this.set("annualizedTotalCompensationUnspecified", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteAnnualizedTotalCompensationUnspecified: Self = this.set("annualizedTotalCompensationUnspecified", js.undefined)
+    def setEntries(value: js.Array[SchemaExtendedCompensationInfoCompensationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
-    
-    @scala.inline
-    def setEntriesVarargs(value: SchemaExtendedCompensationInfoCompensationEntry*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[SchemaExtendedCompensationInfoCompensationEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setEntriesVarargs(value: SchemaExtendedCompensationInfoCompensationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

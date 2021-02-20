@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsInstanceUpgradeableResponse extends js.Object {
+trait IsInstanceUpgradeableResponse extends StObject {
   
   /** Additional information about upgrade. */
   var upgradeInfo: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object IsInstanceUpgradeableResponse {
   }
   
   @scala.inline
-  implicit class IsInstanceUpgradeableResponseOps[Self <: IsInstanceUpgradeableResponse] (val x: Self) extends AnyVal {
+  implicit class IsInstanceUpgradeableResponseMutableBuilder[Self <: IsInstanceUpgradeableResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpgradeInfo(value: String): Self = StObject.set(x, "upgradeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpgradeInfoUndefined: Self = StObject.set(x, "upgradeInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpgradeVersion(value: String): Self = StObject.set(x, "upgradeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpgradeInfo(value: String): Self = this.set("upgradeInfo", value.asInstanceOf[js.Any])
+    def setUpgradeVersionUndefined: Self = StObject.set(x, "upgradeVersion", js.undefined)
     
     @scala.inline
-    def deleteUpgradeInfo: Self = this.set("upgradeInfo", js.undefined)
+    def setUpgradeable(value: Boolean): Self = StObject.set(x, "upgradeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpgradeVersion(value: String): Self = this.set("upgradeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeVersion: Self = this.set("upgradeVersion", js.undefined)
-    
-    @scala.inline
-    def setUpgradeable(value: Boolean): Self = this.set("upgradeable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeable: Self = this.set("upgradeable", js.undefined)
+    def setUpgradeableUndefined: Self = StObject.set(x, "upgradeable", js.undefined)
   }
 }

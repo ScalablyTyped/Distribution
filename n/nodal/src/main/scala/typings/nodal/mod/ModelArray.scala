@@ -1,6 +1,7 @@
 package typings.nodal.mod
 
 import typings.nodal.anon.TypeofModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +30,9 @@ class ModelArray[T] protected () extends ItemArray[T] {
   def toObject(): js.Any = js.native
 }
 /* static members */
-@JSImport("nodal", "ModelArray")
-@js.native
-object ModelArray extends js.Object {
+object ModelArray {
   
+  @JSImport("nodal", "ModelArray.from")
+  @js.native
   def from[T](arr: js.Array[Model]): ModelArray[T] = js.native
 }

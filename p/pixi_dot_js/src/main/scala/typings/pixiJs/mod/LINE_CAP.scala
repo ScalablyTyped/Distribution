@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("pixi.js", "LINE_CAP")
 @js.native
-object LINE_CAP extends js.Object {
+object LINE_CAP extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_CAP with Double] = js.native

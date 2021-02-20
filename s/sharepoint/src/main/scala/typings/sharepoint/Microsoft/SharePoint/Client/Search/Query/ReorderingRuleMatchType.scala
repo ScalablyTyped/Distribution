@@ -1,14 +1,15 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReorderingRuleMatchType extends js.Object
+sealed trait ReorderingRuleMatchType extends StObject
 @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType")
 @js.native
-object ReorderingRuleMatchType extends js.Object {
+object ReorderingRuleMatchType extends StObject {
   
   @js.native
   sealed trait contentTypeIs extends ReorderingRuleMatchType

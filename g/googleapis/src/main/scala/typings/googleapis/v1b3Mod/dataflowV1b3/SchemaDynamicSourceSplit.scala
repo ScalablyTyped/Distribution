@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * current task&#39;s input.
   */
 @js.native
-trait SchemaDynamicSourceSplit extends js.Object {
+trait SchemaDynamicSourceSplit extends StObject {
   
   /**
     * Primary part (continued to be processed by worker). Specified relative to
@@ -33,30 +34,18 @@ object SchemaDynamicSourceSplit {
   }
   
   @scala.inline
-  implicit class SchemaDynamicSourceSplitOps[Self <: SchemaDynamicSourceSplit] (val x: Self) extends AnyVal {
+  implicit class SchemaDynamicSourceSplitMutableBuilder[Self <: SchemaDynamicSourceSplit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimary(value: SchemaDerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResidual(value: SchemaDerivedSource): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: SchemaDerivedSource): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
-    
-    @scala.inline
-    def setResidual(value: SchemaDerivedSource): Self = this.set("residual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResidual: Self = this.set("residual", js.undefined)
+    def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
   }
 }

@@ -53,6 +53,7 @@ import typings.activexWord.activexWordNumbers.`900`
 import typings.activexWord.activexWordNumbers.`925`
 import typings.activexWord.activexWordNumbers.`950`
 import typings.activexWord.activexWordNumbers.`975`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,7 +113,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`1000`
   - typings.activexWord.activexWordNumbers.`-8`
 */
-trait WdTextureIndex extends js.Object
+trait WdTextureIndex extends StObject
 object WdTextureIndex {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBootstrapBrokersResponse extends js.Object {
+trait GetBootstrapBrokersResponse extends StObject {
   
   /**
     * 
@@ -37,36 +38,24 @@ object GetBootstrapBrokersResponse {
   }
   
   @scala.inline
-  implicit class GetBootstrapBrokersResponseOps[Self <: GetBootstrapBrokersResponse] (val x: Self) extends AnyVal {
+  implicit class GetBootstrapBrokersResponseMutableBuilder[Self <: GetBootstrapBrokersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBootstrapBrokerString(value: string): Self = StObject.set(x, "BootstrapBrokerString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBootstrapBrokerStringSaslScram(value: string): Self = StObject.set(x, "BootstrapBrokerStringSaslScram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBootstrapBrokerStringSaslScramUndefined: Self = StObject.set(x, "BootstrapBrokerStringSaslScram", js.undefined)
     
     @scala.inline
-    def setBootstrapBrokerString(value: string): Self = this.set("BootstrapBrokerString", value.asInstanceOf[js.Any])
+    def setBootstrapBrokerStringTls(value: string): Self = StObject.set(x, "BootstrapBrokerStringTls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootstrapBrokerString: Self = this.set("BootstrapBrokerString", js.undefined)
+    def setBootstrapBrokerStringTlsUndefined: Self = StObject.set(x, "BootstrapBrokerStringTls", js.undefined)
     
     @scala.inline
-    def setBootstrapBrokerStringSaslScram(value: string): Self = this.set("BootstrapBrokerStringSaslScram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBootstrapBrokerStringSaslScram: Self = this.set("BootstrapBrokerStringSaslScram", js.undefined)
-    
-    @scala.inline
-    def setBootstrapBrokerStringTls(value: string): Self = this.set("BootstrapBrokerStringTls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBootstrapBrokerStringTls: Self = this.set("BootstrapBrokerStringTls", js.undefined)
+    def setBootstrapBrokerStringUndefined: Self = StObject.set(x, "BootstrapBrokerString", js.undefined)
   }
 }

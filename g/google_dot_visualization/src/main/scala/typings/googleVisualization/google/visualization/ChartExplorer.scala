@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartExplorer extends js.Object {
+trait ChartExplorer extends StObject {
   
   var actions: js.UndefOr[js.Array[String]] = js.native
   
@@ -28,57 +29,45 @@ object ChartExplorer {
   }
   
   @scala.inline
-  implicit class ChartExplorerOps[Self <: ChartExplorer] (val x: Self) extends AnyVal {
+  implicit class ChartExplorerMutableBuilder[Self <: ChartExplorer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setKeepInBounds(value: Boolean): Self = StObject.set(x, "keepInBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setKeepInBoundsUndefined: Self = StObject.set(x, "keepInBounds", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setMaxZoomIn(value: Double): Self = StObject.set(x, "maxZoomIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepInBounds(value: Boolean): Self = this.set("keepInBounds", value.asInstanceOf[js.Any])
+    def setMaxZoomInUndefined: Self = StObject.set(x, "maxZoomIn", js.undefined)
     
     @scala.inline
-    def deleteKeepInBounds: Self = this.set("keepInBounds", js.undefined)
+    def setMaxZoomOut(value: Double): Self = StObject.set(x, "maxZoomOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomIn(value: Double): Self = this.set("maxZoomIn", value.asInstanceOf[js.Any])
+    def setMaxZoomOutUndefined: Self = StObject.set(x, "maxZoomOut", js.undefined)
     
     @scala.inline
-    def deleteMaxZoomIn: Self = this.set("maxZoomIn", js.undefined)
+    def setZoomDelta(value: Double): Self = StObject.set(x, "zoomDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomOut(value: Double): Self = this.set("maxZoomOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxZoomOut: Self = this.set("maxZoomOut", js.undefined)
-    
-    @scala.inline
-    def setZoomDelta(value: Double): Self = this.set("zoomDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomDelta: Self = this.set("zoomDelta", js.undefined)
+    def setZoomDeltaUndefined: Self = StObject.set(x, "zoomDelta", js.undefined)
   }
 }

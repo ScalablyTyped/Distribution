@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest extends js.Object {
+trait GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest extends StObject {
   
   /**
     * Optional. If set, then email the new users notifying them that they've been granted permissions to the resource. Regardless of whether this is set or not, notify_new_user field
@@ -25,33 +26,21 @@ object GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest {
   }
   
   @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequestOps[Self <: GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotifyNewUsers(value: Boolean): Self = StObject.set(x, "notifyNewUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyNewUsersUndefined: Self = StObject.set(x, "notifyNewUsers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequests(value: js.Array[GoogleAnalyticsAdminV1alphaCreateUserLinkRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyNewUsers(value: Boolean): Self = this.set("notifyNewUsers", value.asInstanceOf[js.Any])
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def deleteNotifyNewUsers: Self = this.set("notifyNewUsers", js.undefined)
-    
-    @scala.inline
-    def setRequestsVarargs(value: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest*): Self = this.set("requests", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequests(value: js.Array[GoogleAnalyticsAdminV1alphaCreateUserLinkRequest]): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
+    def setRequestsVarargs(value: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

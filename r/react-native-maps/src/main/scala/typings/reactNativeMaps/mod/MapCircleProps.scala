@@ -1,6 +1,7 @@
 package typings.reactNativeMaps.mod
 
 import typings.reactNative.mod.ViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,87 +42,75 @@ object MapCircleProps {
   }
   
   @scala.inline
-  implicit class MapCirclePropsOps[Self <: MapCircleProps] (val x: Self) extends AnyVal {
+  implicit class MapCirclePropsMutableBuilder[Self <: MapCircleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: LatLng): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def setCenter(value: LatLng): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setLineCap(value: LineCapType): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
     @scala.inline
-    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setLineDashPattern(value: js.Array[Double]): Self = StObject.set(x, "lineDashPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setLineDashPatternUndefined: Self = StObject.set(x, "lineDashPattern", js.undefined)
     
     @scala.inline
-    def setLineCap(value: LineCapType): Self = this.set("lineCap", value.asInstanceOf[js.Any])
+    def setLineDashPatternVarargs(value: Double*): Self = StObject.set(x, "lineDashPattern", js.Array(value :_*))
     
     @scala.inline
-    def deleteLineCap: Self = this.set("lineCap", js.undefined)
+    def setLineDashPhase(value: Double): Self = StObject.set(x, "lineDashPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDashPatternVarargs(value: Double*): Self = this.set("lineDashPattern", js.Array(value :_*))
+    def setLineDashPhaseUndefined: Self = StObject.set(x, "lineDashPhase", js.undefined)
     
     @scala.inline
-    def setLineDashPattern(value: js.Array[Double]): Self = this.set("lineDashPattern", value.asInstanceOf[js.Any])
+    def setLineJoin(value: LineJoinType): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineDashPattern: Self = this.set("lineDashPattern", js.undefined)
+    def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
     @scala.inline
-    def setLineDashPhase(value: Double): Self = this.set("lineDashPhase", value.asInstanceOf[js.Any])
+    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineDashPhase: Self = this.set("lineDashPhase", js.undefined)
+    def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
     
     @scala.inline
-    def setLineJoin(value: LineJoinType): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    def setOnPress(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLineJoin: Self = this.set("lineJoin", js.undefined)
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMiterLimit: Self = this.set("miterLimit", js.undefined)
+    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: /* event */ MapEvent[js.Object] => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicySummary extends js.Object {
+trait PolicySummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the specified policy.
@@ -46,54 +47,42 @@ object PolicySummary {
   }
   
   @scala.inline
-  implicit class PolicySummaryOps[Self <: PolicySummary] (val x: Self) extends AnyVal {
+  implicit class PolicySummaryMutableBuilder[Self <: PolicySummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyArn(value: ResourceArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArn(value: ResourceArn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
     @scala.inline
-    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+    def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyId(value: PolicyId): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
+    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
     
     @scala.inline
-    def deletePolicyId: Self = this.set("PolicyId", js.undefined)
+    def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyName(value: ResourceName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    def setRemediationEnabledUndefined: Self = StObject.set(x, "RemediationEnabled", js.undefined)
     
     @scala.inline
-    def deletePolicyName: Self = this.set("PolicyName", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemediationEnabled(value: Boolean): Self = this.set("RemediationEnabled", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteRemediationEnabled: Self = this.set("RemediationEnabled", js.undefined)
+    def setSecurityServiceType(value: SecurityServiceType): Self = StObject.set(x, "SecurityServiceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
-    
-    @scala.inline
-    def setSecurityServiceType(value: SecurityServiceType): Self = this.set("SecurityServiceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityServiceType: Self = this.set("SecurityServiceType", js.undefined)
+    def setSecurityServiceTypeUndefined: Self = StObject.set(x, "SecurityServiceType", js.undefined)
   }
 }

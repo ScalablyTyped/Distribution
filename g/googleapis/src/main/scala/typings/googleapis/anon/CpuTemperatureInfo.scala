@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CpuTemperatureInfo extends js.Object {
+trait CpuTemperatureInfo extends StObject {
   
   var cpuTemperatureInfo: js.UndefOr[js.Array[Label]] = js.native
   
@@ -22,42 +23,30 @@ object CpuTemperatureInfo {
   }
   
   @scala.inline
-  implicit class CpuTemperatureInfoOps[Self <: CpuTemperatureInfo] (val x: Self) extends AnyVal {
+  implicit class CpuTemperatureInfoMutableBuilder[Self <: CpuTemperatureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuTemperatureInfo(value: js.Array[Label]): Self = StObject.set(x, "cpuTemperatureInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuTemperatureInfoUndefined: Self = StObject.set(x, "cpuTemperatureInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpuTemperatureInfoVarargs(value: Label*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value :_*))
     
     @scala.inline
-    def setCpuTemperatureInfoVarargs(value: Label*): Self = this.set("cpuTemperatureInfo", js.Array(value :_*))
+    def setCpuUtilizationPercentageInfo(value: js.Array[Double]): Self = StObject.set(x, "cpuUtilizationPercentageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuTemperatureInfo(value: js.Array[Label]): Self = this.set("cpuTemperatureInfo", value.asInstanceOf[js.Any])
+    def setCpuUtilizationPercentageInfoUndefined: Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.undefined)
     
     @scala.inline
-    def deleteCpuTemperatureInfo: Self = this.set("cpuTemperatureInfo", js.undefined)
+    def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value :_*))
     
     @scala.inline
-    def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = this.set("cpuUtilizationPercentageInfo", js.Array(value :_*))
+    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuUtilizationPercentageInfo(value: js.Array[Double]): Self = this.set("cpuUtilizationPercentageInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCpuUtilizationPercentageInfo: Self = this.set("cpuUtilizationPercentageInfo", js.undefined)
-    
-    @scala.inline
-    def setReportTime(value: String): Self = this.set("reportTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportTime: Self = this.set("reportTime", js.undefined)
+    def setReportTimeUndefined: Self = StObject.set(x, "reportTime", js.undefined)
   }
 }

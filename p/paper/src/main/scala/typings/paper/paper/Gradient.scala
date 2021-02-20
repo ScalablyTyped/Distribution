@@ -1,5 +1,6 @@
 package typings.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Gradient object.
   */
 @js.native
-trait Gradient extends js.Object {
+trait Gradient extends StObject {
   
   /** 
     * Checks whether the gradient is equal to the supplied gradient.
@@ -30,36 +31,25 @@ trait Gradient extends js.Object {
 object Gradient {
   
   @scala.inline
-  def apply(equals: Gradient => Boolean, radial: Boolean, stops: js.Array[GradientStop]): Gradient = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), radial = radial.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+  def apply(equals_ : Gradient => Boolean, radial: Boolean, stops: js.Array[GradientStop]): Gradient = {
+    val __obj = js.Dynamic.literal(radial = radial.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Gradient]
   }
   
   @scala.inline
-  implicit class GradientOps[Self <: Gradient] (val x: Self) extends AnyVal {
+  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquals_(value: Gradient => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRadial(value: Boolean): Self = StObject.set(x, "radial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: Gradient => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRadial(value: Boolean): Self = this.set("radial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopsVarargs(value: GradientStop*): Self = this.set("stops", js.Array(value :_*))
-    
-    @scala.inline
-    def setStops(value: js.Array[GradientStop]): Self = this.set("stops", value.asInstanceOf[js.Any])
+    def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

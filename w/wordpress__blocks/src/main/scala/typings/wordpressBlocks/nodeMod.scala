@@ -4,13 +4,12 @@ import typings.react.mod.ReactChild
 import typings.react.mod.global.JSX.Element
 import typings.std.Node
 import typings.std.ParentNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/blocks/api/node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
   
   /**
     * Object of utility functions used in managing block attribute values of
@@ -21,8 +20,7 @@ object nodeMod extends js.Object {
     * @deprecated since 4.0. The `node` source should not be used, and can be
     *             replaced by the `html` source.
     */
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /**
       * Given a DOM Element or Text node, returns an equivalent block node. Throws
@@ -32,6 +30,8 @@ object nodeMod extends js.Object {
       *
       * @param domNode - DOM node to convert.
       */
+    @JSImport("@wordpress/blocks/api/node", "default.fromDOM")
+    @js.native
     def fromDOM(domNode: Node): Element = js.native
     
     /**
@@ -41,26 +41,31 @@ object nodeMod extends js.Object {
       * @param node - Block node to test
       * @param type - Node to type to test against.
       */
-    @JSName("isNodeOfType")
+    @JSImport("@wordpress/blocks/api/node", "default.isNodeOfType")
+    @js.native
     def isNodeOfType_type(
       node: Element,
       `type`: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ReactElement['type'] */ js.Any
     ): Boolean = js.native
     
     /**
-      * Given a selector, returns an hpq matcher generating a WPBlockNode value
+      * Given a selector, returns an hpq matcher generating a WPBlockChildren value
       * matching the selector result.
+      *
+      * @param selector - DOM selector.
       */
-    val matcher: js.Function1[
-        /* selector */ String, 
-        js.Function1[/* domNode */ Node with ParentNode, js.Array[ReactChild]]
-      ] = js.native
+    /* was `typeof children.matcher` */
+    @JSImport("@wordpress/blocks/api/node", "default.matcher")
+    @js.native
+    def matcher(selector: String): js.Function1[/* domNode */ Node with ParentNode, js.Array[ReactChild]] = js.native
     
     /**
       * Given a block node, returns its HTML string representation.
       *
       * @param node - Block node to convert to string.
       */
+    @JSImport("@wordpress/blocks/api/node", "default.toHTML")
+    @js.native
     def toHTML(node: ReactChild): String = js.native
   }
   
@@ -73,6 +78,5 @@ object nodeMod extends js.Object {
     * @deprecated since 4.0. The `node` source should not be used, and can be
     *             replaced by the `html` source.
     */
-  @js.native
-  object node extends js.Object
+  object node
 }

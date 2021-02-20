@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImageScannerColorMode extends js.Object
+sealed trait ImageScannerColorMode extends StObject
 /** Specifies the color modes for the scan source. */
 @JSGlobal("Windows.Devices.Scanners.ImageScannerColorMode")
 @js.native
-object ImageScannerColorMode extends js.Object {
+object ImageScannerColorMode extends StObject {
   
   /** The device automatically detects the right color mode based on the scan content. In this case the decision between color, grayscale and black and white for example relies on the device, and not the app. */
   @js.native

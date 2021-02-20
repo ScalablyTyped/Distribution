@@ -1,11 +1,12 @@
 package typings.ionicCore.componentsMod.Components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonRefresher extends js.Object {
+trait IonRefresher extends StObject {
   
   /**
     * Changes the refresher's state from `refreshing` to `cancelling`.
@@ -71,45 +72,33 @@ object IonRefresher {
   }
   
   @scala.inline
-  implicit class IonRefresherOps[Self <: IonRefresher] (val x: Self) extends AnyVal {
+  implicit class IonRefresherMutableBuilder[Self <: IonRefresher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseDuration(value: String): Self = StObject.set(x, "closeDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => js.Promise[Unit]): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancel(value: () => js.Promise[Unit]): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseDuration(value: String): Self = this.set("closeDuration", value.asInstanceOf[js.Any])
+    def setGetProgress(value: () => js.Promise[Double]): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => js.Promise[Unit]): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setPullFactor(value: Double): Self = StObject.set(x, "pullFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setPullMax(value: Double): Self = StObject.set(x, "pullMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetProgress(value: () => js.Promise[Double]): Self = this.set("getProgress", js.Any.fromFunction0(value))
+    def setPullMin(value: Double): Self = StObject.set(x, "pullMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullFactor(value: Double): Self = this.set("pullFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPullMax(value: Double): Self = this.set("pullMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPullMin(value: Double): Self = this.set("pullMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapbackDuration(value: String): Self = this.set("snapbackDuration", value.asInstanceOf[js.Any])
+    def setSnapbackDuration(value: String): Self = StObject.set(x, "snapbackDuration", value.asInstanceOf[js.Any])
   }
 }

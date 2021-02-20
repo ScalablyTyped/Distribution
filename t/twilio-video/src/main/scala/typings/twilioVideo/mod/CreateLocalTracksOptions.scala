@@ -1,11 +1,12 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLocalTracksOptions extends js.Object {
+trait CreateLocalTracksOptions extends StObject {
   
   var audio: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.native
   
@@ -22,36 +23,24 @@ object CreateLocalTracksOptions {
   }
   
   @scala.inline
-  implicit class CreateLocalTracksOptionsOps[Self <: CreateLocalTracksOptions] (val x: Self) extends AnyVal {
+  implicit class CreateLocalTracksOptionsMutableBuilder[Self <: CreateLocalTracksOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Boolean | CreateLocalTrackOptions): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Boolean | CreateLocalTrackOptions): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setVideo(value: Boolean | CreateLocalTrackOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: LogLevel | LogLevels): Self = this.set("logLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
-    
-    @scala.inline
-    def setVideo(value: Boolean | CreateLocalTrackOptions): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

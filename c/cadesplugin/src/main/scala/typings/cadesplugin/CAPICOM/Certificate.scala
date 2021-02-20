@@ -2,12 +2,13 @@ package typings.cadesplugin.CAPICOM
 
 import typings.cadesplugin.CADESCommon.ValuesOf
 import typings.cadesplugin.CADESCommon.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificate extends js.Object {
+trait Certificate extends StObject {
   
   def Display(): Unit = js.native
   
@@ -58,57 +59,45 @@ object Certificate {
   }
   
   @scala.inline
-  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: () => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExport(value: ValuesOf[CAPICOM_ENCODING_TYPE] => String): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInfo(value: CAPICOM_CERT_INFO_TYPE => String): Self = StObject.set(x, "GetInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplay(value: () => Unit): Self = this.set("Display", js.Any.fromFunction0(value))
+    def setHasPrivateKey(value: () => Boolean): Self = StObject.set(x, "HasPrivateKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExport(value: ValuesOf[CAPICOM_ENCODING_TYPE] => String): Self = this.set("Export", js.Any.fromFunction1(value))
+    def setIsValid(value: () => CertificateStatus): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInfo(value: CAPICOM_CERT_INFO_TYPE => String): Self = this.set("GetInfo", js.Any.fromFunction1(value))
+    def setIssuerName(value: String): Self = StObject.set(x, "IssuerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPrivateKey(value: () => Boolean): Self = this.set("HasPrivateKey", js.Any.fromFunction0(value))
+    def setPublicKey(value: () => PublicKey): Self = StObject.set(x, "PublicKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsValid(value: () => CertificateStatus): Self = this.set("IsValid", js.Any.fromFunction0(value))
+    def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerName(value: String): Self = this.set("IssuerName", value.asInstanceOf[js.Any])
+    def setSubjectName(value: String): Self = StObject.set(x, "SubjectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKey(value: () => PublicKey): Self = this.set("PublicKey", js.Any.fromFunction0(value))
+    def setThumbprint(value: String): Self = StObject.set(x, "Thumbprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setValidFromDate(value: VarDate): Self = StObject.set(x, "ValidFromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectName(value: String): Self = this.set("SubjectName", value.asInstanceOf[js.Any])
+    def setValidToDate(value: VarDate): Self = StObject.set(x, "ValidToDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbprint(value: String): Self = this.set("Thumbprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidFromDate(value: VarDate): Self = this.set("ValidFromDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidToDate(value: VarDate): Self = this.set("ValidToDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

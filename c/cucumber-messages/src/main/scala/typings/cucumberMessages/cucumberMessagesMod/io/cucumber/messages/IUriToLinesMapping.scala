@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UriToLinesMapping. */
 @js.native
-trait IUriToLinesMapping extends js.Object {
+trait IUriToLinesMapping extends StObject {
   
   /** UriToLinesMapping absolutePath */
   var absolutePath: js.UndefOr[String | Null] = js.native
@@ -27,43 +28,31 @@ object IUriToLinesMapping {
   }
   
   @scala.inline
-  implicit class IUriToLinesMappingOps[Self <: IUriToLinesMapping] (val x: Self) extends AnyVal {
+  implicit class IUriToLinesMappingMutableBuilder[Self <: IUriToLinesMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePathNull: Self = StObject.set(x, "absolutePath", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbsolutePath(value: String): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
-    
-    @scala.inline
-    def setAbsolutePathNull: Self = this.set("absolutePath", null)
-    
-    @scala.inline
-    def setLinesVarargs(value: (Double | js.Any)*): Self = this.set("lines", js.Array(value :_*))
+    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
     @scala.inline
     def setLines(
       value: js.Array[
           Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
         ]
-    ): Self = this.set("lines", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLines: Self = this.set("lines", js.undefined)
+    def setLinesNull: Self = StObject.set(x, "lines", null)
     
     @scala.inline
-    def setLinesNull: Self = this.set("lines", null)
+    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    
+    @scala.inline
+    def setLinesVarargs(value: (Double | js.Any)*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

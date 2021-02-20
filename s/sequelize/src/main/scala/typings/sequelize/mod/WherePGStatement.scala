@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Nested where Postgre Statement
   */
 @js.native
-trait WherePGStatement extends js.Object {
+trait WherePGStatement extends StObject {
   
   @JSName("$all")
   var $all: js.Array[String | Double] = js.native
@@ -25,30 +26,18 @@ object WherePGStatement {
   }
   
   @scala.inline
-  implicit class WherePGStatementOps[Self <: WherePGStatement] (val x: Self) extends AnyVal {
+  implicit class WherePGStatementMutableBuilder[Self <: WherePGStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: js.Array[String | Double]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allVarargs(value: (String | Double)*): Self = StObject.set(x, "$all", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$any(value: js.Array[String | Double]): Self = StObject.set(x, "$any", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$allVarargs(value: (String | Double)*): Self = this.set("$all", js.Array(value :_*))
-    
-    @scala.inline
-    def set$all(value: js.Array[String | Double]): Self = this.set("$all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$anyVarargs(value: (String | Double)*): Self = this.set("$any", js.Array(value :_*))
-    
-    @scala.inline
-    def set$any(value: js.Array[String | Double]): Self = this.set("$any", value.asInstanceOf[js.Any])
+    def set$anyVarargs(value: (String | Double)*): Self = StObject.set(x, "$any", js.Array(value :_*))
   }
 }

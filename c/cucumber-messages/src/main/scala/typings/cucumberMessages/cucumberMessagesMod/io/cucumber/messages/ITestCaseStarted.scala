@@ -1,13 +1,14 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCaseStarted.IPlatform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestCaseStarted. */
 @js.native
-trait ITestCaseStarted extends js.Object {
+trait ITestCaseStarted extends StObject {
   
   /**
     * The first attempt should have value 0, and for each retry the value
@@ -39,63 +40,51 @@ object ITestCaseStarted {
   }
   
   @scala.inline
-  implicit class ITestCaseStartedOps[Self <: ITestCaseStarted] (val x: Self) extends AnyVal {
+  implicit class ITestCaseStartedMutableBuilder[Self <: ITestCaseStarted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptNull: Self = StObject.set(x, "attempt", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttemptUndefined: Self = StObject.set(x, "attempt", js.undefined)
     
     @scala.inline
-    def setAttempt(value: Double): Self = this.set("attempt", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttempt: Self = this.set("attempt", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setAttemptNull: Self = this.set("attempt", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPlatform(value: IPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPlatformNull: Self = StObject.set(x, "platform", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def setPlatform(value: IPlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
     
     @scala.inline
-    def setPlatformNull: Self = this.set("platform", null)
+    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
     
     @scala.inline
-    def setTestCaseId(value: String): Self = this.set("testCaseId", value.asInstanceOf[js.Any])
+    def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTestCaseId: Self = this.set("testCaseId", js.undefined)
+    def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     @scala.inline
-    def setTestCaseIdNull: Self = this.set("testCaseId", null)
-    
-    @scala.inline
-    def setTimestamp(value: ITimestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTimestampNull: Self = this.set("timestamp", null)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

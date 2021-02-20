@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3ReferenceDataSource extends js.Object {
+trait S3ReferenceDataSource extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the S3 bucket.
@@ -31,27 +32,15 @@ object S3ReferenceDataSource {
   }
   
   @scala.inline
-  implicit class S3ReferenceDataSourceOps[Self <: S3ReferenceDataSource] (val x: Self) extends AnyVal {
+  implicit class S3ReferenceDataSourceMutableBuilder[Self <: S3ReferenceDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileKey(value: FileKey): Self = this.set("FileKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceRoleARN(value: RoleARN): Self = this.set("ReferenceRoleARN", value.asInstanceOf[js.Any])
+    def setReferenceRoleARN(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARN", value.asInstanceOf[js.Any])
   }
 }

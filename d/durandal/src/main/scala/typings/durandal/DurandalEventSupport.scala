@@ -1,11 +1,12 @@
 package typings.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalEventSupport[T] extends js.Object {
+trait DurandalEventSupport[T] extends StObject {
   
   /**
     * Removes the callbacks for the specified events.

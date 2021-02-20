@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait BorderBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The border-bottom CSS property sets an element's bottom border. It's a shorthand for
@@ -24,30 +25,18 @@ object BorderBottomProps {
   }
   
   @scala.inline
-  implicit class BorderBottomPropsOps[Self <: BorderBottomProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderBottomProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderBottomPropsMutableBuilder[Self <: BorderBottomProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderBottomProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderBottomNull: Self = StObject.set(x, "borderBottom", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
     @scala.inline
-    def setBorderBottomVarargs(value: (TVal | Null)*): Self = this.set("borderBottom", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderBottom(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
-    
-    @scala.inline
-    def setBorderBottomNull: Self = this.set("borderBottom", null)
+    def setBorderBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
   }
 }

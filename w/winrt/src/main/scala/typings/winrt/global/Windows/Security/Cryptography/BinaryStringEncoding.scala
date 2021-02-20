@@ -1,12 +1,13 @@
 package typings.winrt.global.Windows.Security.Cryptography
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Security.Cryptography.BinaryStringEncoding")
 @js.native
-object BinaryStringEncoding extends js.Object {
+object BinaryStringEncoding extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrt.Windows.Security.Cryptography.BinaryStringEncoding with Double] = js.native

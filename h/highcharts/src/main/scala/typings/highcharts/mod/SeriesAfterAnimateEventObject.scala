@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.afterAnimate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesAfterAnimateEventObject extends js.Object {
+trait SeriesAfterAnimateEventObject extends StObject {
   
   /**
     * Animated series.
@@ -28,24 +29,12 @@ object SeriesAfterAnimateEventObject {
   }
   
   @scala.inline
-  implicit class SeriesAfterAnimateEventObjectOps[Self <: SeriesAfterAnimateEventObject] (val x: Self) extends AnyVal {
+  implicit class SeriesAfterAnimateEventObjectMutableBuilder[Self <: SeriesAfterAnimateEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTarget(value: Series): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: afterAnimate): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: afterAnimate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

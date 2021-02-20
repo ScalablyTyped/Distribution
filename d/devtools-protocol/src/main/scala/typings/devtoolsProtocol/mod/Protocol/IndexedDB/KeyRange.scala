@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyRange extends js.Object {
+trait KeyRange extends StObject {
   
   /**
     * Lower bound.
@@ -36,36 +37,24 @@ object KeyRange {
   }
   
   @scala.inline
-  implicit class KeyRangeOps[Self <: KeyRange] (val x: Self) extends AnyVal {
+  implicit class KeyRangeMutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLower(value: Key): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowerOpen(value: Boolean): Self = StObject.set(x, "lowerOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
     @scala.inline
-    def setLowerOpen(value: Boolean): Self = this.set("lowerOpen", value.asInstanceOf[js.Any])
+    def setUpper(value: Key): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpperOpen(value: Boolean): Self = this.set("upperOpen", value.asInstanceOf[js.Any])
+    def setUpperOpen(value: Boolean): Self = StObject.set(x, "upperOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLower(value: Key): Self = this.set("lower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLower: Self = this.set("lower", js.undefined)
-    
-    @scala.inline
-    def setUpper(value: Key): Self = this.set("upper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpper: Self = this.set("upper", js.undefined)
+    def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceGoal extends js.Object {
+trait PerformanceGoal extends StObject {
   
   /**
     * The goal amount, in micros of the advertiser's currency. Applicable when performance_goal_type is one of: * `PERFORMANCE_GOAL_TYPE_CPM` * `PERFORMANCE_GOAL_TYPE_CPC` *
@@ -37,42 +38,30 @@ object PerformanceGoal {
   }
   
   @scala.inline
-  implicit class PerformanceGoalOps[Self <: PerformanceGoal] (val x: Self) extends AnyVal {
+  implicit class PerformanceGoalMutableBuilder[Self <: PerformanceGoal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPerformanceGoalAmountMicros(value: String): Self = StObject.set(x, "performanceGoalAmountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPerformanceGoalAmountMicrosUndefined: Self = StObject.set(x, "performanceGoalAmountMicros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerformanceGoalPercentageMicros(value: String): Self = StObject.set(x, "performanceGoalPercentageMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceGoalAmountMicros(value: String): Self = this.set("performanceGoalAmountMicros", value.asInstanceOf[js.Any])
+    def setPerformanceGoalPercentageMicrosUndefined: Self = StObject.set(x, "performanceGoalPercentageMicros", js.undefined)
     
     @scala.inline
-    def deletePerformanceGoalAmountMicros: Self = this.set("performanceGoalAmountMicros", js.undefined)
+    def setPerformanceGoalString(value: String): Self = StObject.set(x, "performanceGoalString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceGoalPercentageMicros(value: String): Self = this.set("performanceGoalPercentageMicros", value.asInstanceOf[js.Any])
+    def setPerformanceGoalStringUndefined: Self = StObject.set(x, "performanceGoalString", js.undefined)
     
     @scala.inline
-    def deletePerformanceGoalPercentageMicros: Self = this.set("performanceGoalPercentageMicros", js.undefined)
+    def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceGoalString(value: String): Self = this.set("performanceGoalString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceGoalString: Self = this.set("performanceGoalString", js.undefined)
-    
-    @scala.inline
-    def setPerformanceGoalType(value: String): Self = this.set("performanceGoalType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceGoalType: Self = this.set("performanceGoalType", js.undefined)
+    def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
   }
 }

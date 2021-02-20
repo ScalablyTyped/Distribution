@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LRNAttrs extends js.Object {
+trait LRNAttrs extends StObject {
   
   var alpha: Double = js.native
   
@@ -24,30 +25,18 @@ object LRNAttrs {
   }
   
   @scala.inline
-  implicit class LRNAttrsOps[Self <: LRNAttrs] (val x: Self) extends AnyVal {
+  implicit class LRNAttrsMutableBuilder[Self <: LRNAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBias(value: Double): Self = this.set("bias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepthRadius(value: Double): Self = this.set("depthRadius", value.asInstanceOf[js.Any])
+    def setDepthRadius(value: Double): Self = StObject.set(x, "depthRadius", value.asInstanceOf[js.Any])
   }
 }

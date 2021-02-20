@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DelegationOptions extends js.Object {
+trait DelegationOptions extends StObject {
   
   var api_type: js.UndefOr[String] = js.native
   
@@ -30,57 +31,45 @@ object DelegationOptions {
   }
   
   @scala.inline
-  implicit class DelegationOptionsOps[Self <: DelegationOptions] (val x: Self) extends AnyVal {
+  implicit class DelegationOptionsMutableBuilder[Self <: DelegationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_type(value: String): Self = StObject.set(x, "api_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApi_typeUndefined: Self = StObject.set(x, "api_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrant_type(value: String): Self = this.set("grant_type", value.asInstanceOf[js.Any])
+    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     @scala.inline
-    def setApi_type(value: String): Self = this.set("api_type", value.asInstanceOf[js.Any])
+    def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApi_type: Self = this.set("api_type", js.undefined)
+    def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
     
     @scala.inline
-    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token(value: String): Self = this.set("id_token", value.asInstanceOf[js.Any])
+    def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
     
     @scala.inline
-    def deleteId_token: Self = this.set("id_token", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh_token(value: String): Self = this.set("refresh_token", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteRefresh_token: Self = this.set("refresh_token", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

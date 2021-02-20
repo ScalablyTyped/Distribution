@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,36 +121,24 @@ object XMultiLayerStratum {
   }
   
   @scala.inline
-  implicit class XMultiLayerStratumOps[Self <: XMultiLayerStratum] (val x: Self) extends AnyVal {
+  implicit class XMultiLayerStratumMutableBuilder[Self <: XMultiLayerStratum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLayer(value: (String, String) => XLayer): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLayers(value: (SeqEquiv[String], String) => SafeArray[XLayer]): Self = StObject.set(x, "getLayers", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMultipleLayers(value: (SeqEquiv[String], SeqEquiv[String]) => SafeArray[XLayer]): Self = StObject.set(x, "getMultipleLayers", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLayer(value: (String, String) => XLayer): Self = this.set("getLayer", js.Any.fromFunction2(value))
+    def setGetUpdatableLayer(value: String => XUpdatableLayer): Self = StObject.set(x, "getUpdatableLayer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLayers(value: (SeqEquiv[String], String) => SafeArray[XLayer]): Self = this.set("getLayers", js.Any.fromFunction2(value))
+    def setGetUpdateLayerId(value: (String, String) => String): Self = StObject.set(x, "getUpdateLayerId", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetMultipleLayers(value: (SeqEquiv[String], SeqEquiv[String]) => SafeArray[XLayer]): Self = this.set("getMultipleLayers", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetUpdatableLayer(value: String => XUpdatableLayer): Self = this.set("getUpdatableLayer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetUpdateLayerId(value: (String, String) => String): Self = this.set("getUpdateLayerId", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setListLayerIds(value: (String, String) => SafeArray[String]): Self = this.set("listLayerIds", js.Any.fromFunction2(value))
+    def setListLayerIds(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "listLayerIds", js.Any.fromFunction2(value))
   }
 }

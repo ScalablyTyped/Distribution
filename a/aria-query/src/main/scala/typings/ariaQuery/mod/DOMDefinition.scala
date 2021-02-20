@@ -1,11 +1,12 @@
 package typings.ariaQuery.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMDefinition extends js.Object {
+trait DOMDefinition extends StObject {
   
   var interactive: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object DOMDefinition {
   }
   
   @scala.inline
-  implicit class DOMDefinitionOps[Self <: DOMDefinition] (val x: Self) extends AnyVal {
+  implicit class DOMDefinitionMutableBuilder[Self <: DOMDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInteractive: Self = this.set("interactive", js.undefined)
-    
-    @scala.inline
-    def setReserved(value: Boolean): Self = this.set("reserved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReserved: Self = this.set("reserved", js.undefined)
+    def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
   }
 }

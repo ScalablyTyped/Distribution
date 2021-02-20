@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object OrgTeamConcurrencyValues {
   }
   
   @scala.inline
-  implicit class OrgTeamConcurrencyValuesOps[Self <: OrgTeamConcurrencyValues] (val x: Self) extends AnyVal {
+  implicit class OrgTeamConcurrencyValuesMutableBuilder[Self <: OrgTeamConcurrencyValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowed(value: ConcurrencyValues): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrent(value: ConcurrencyValues): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed(value: ConcurrencyValues): Self = this.set("allowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowed: Self = this.set("allowed", js.undefined)
-    
-    @scala.inline
-    def setCurrent(value: ConcurrencyValues): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrent: Self = this.set("current", js.undefined)
+    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
   }
 }

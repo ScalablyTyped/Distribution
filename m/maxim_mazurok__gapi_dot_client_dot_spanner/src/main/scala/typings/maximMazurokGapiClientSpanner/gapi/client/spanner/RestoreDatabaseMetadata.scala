@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreDatabaseMetadata extends js.Object {
+trait RestoreDatabaseMetadata extends StObject {
   
   /** Information about the backup used to restore the database. */
   var backupInfo: js.UndefOr[BackupInfo] = js.native
@@ -44,54 +45,42 @@ object RestoreDatabaseMetadata {
   }
   
   @scala.inline
-  implicit class RestoreDatabaseMetadataOps[Self <: RestoreDatabaseMetadata] (val x: Self) extends AnyVal {
+  implicit class RestoreDatabaseMetadataMutableBuilder[Self <: RestoreDatabaseMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupInfoUndefined: Self = StObject.set(x, "backupInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupInfo(value: BackupInfo): Self = this.set("backupInfo", value.asInstanceOf[js.Any])
+    def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
     
     @scala.inline
-    def deleteBackupInfo: Self = this.set("backupInfo", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTime(value: String): Self = this.set("cancelTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCancelTime: Self = this.set("cancelTime", js.undefined)
+    def setOptimizeDatabaseOperationName(value: String): Self = StObject.set(x, "optimizeDatabaseOperationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptimizeDatabaseOperationNameUndefined: Self = StObject.set(x, "optimizeDatabaseOperationName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeDatabaseOperationName(value: String): Self = this.set("optimizeDatabaseOperationName", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteOptimizeDatabaseOperationName: Self = this.set("optimizeDatabaseOperationName", js.undefined)
+    def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: OperationProgress): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
-    
-    @scala.inline
-    def setSourceType(value: String): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.lodash.fpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashMergeAll extends js.Object {
+trait LodashMergeAll extends StObject {
   
   def apply(`object`: js.Array[_]): js.Any = js.native
   def apply[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject with TSource = js.native

@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrtUwp.Windows.Foundation.AsyncStatus
 import typings.winrtUwp.Windows.Foundation.IAsyncOperation
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports the retrieval of a message from the SMS message store. */
 @js.native
-trait GetSmsMessageOperation extends js.Object {
+trait GetSmsMessageOperation extends StObject {
   
   /** Cancels the asynchronous SMS message retrieval operation. */
   def cancel(): Unit = js.native

@@ -4,6 +4,7 @@ import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +27,11 @@ class InternalTexture protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "InternalTexture")
-@js.native
-object InternalTexture extends js.Object {
+object InternalTexture {
   
   /** @hidden */
+  @JSImport("babylonjs/Materials/index", "InternalTexture._UpdateRGBDAsync")
+  @js.native
   def _UpdateRGBDAsync(
     internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
     data: js.Array[js.Array[ArrayBufferView]],

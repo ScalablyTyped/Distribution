@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOriginRequestPoliciesResult extends js.Object {
+trait ListOriginRequestPoliciesResult extends StObject {
   
   /**
     * A list of origin request policies.
@@ -21,24 +22,12 @@ object ListOriginRequestPoliciesResult {
   }
   
   @scala.inline
-  implicit class ListOriginRequestPoliciesResultOps[Self <: ListOriginRequestPoliciesResult] (val x: Self) extends AnyVal {
+  implicit class ListOriginRequestPoliciesResultMutableBuilder[Self <: ListOriginRequestPoliciesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginRequestPolicyList(value: OriginRequestPolicyList): Self = StObject.set(x, "OriginRequestPolicyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOriginRequestPolicyList(value: OriginRequestPolicyList): Self = this.set("OriginRequestPolicyList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginRequestPolicyList: Self = this.set("OriginRequestPolicyList", js.undefined)
+    def setOriginRequestPolicyListUndefined: Self = StObject.set(x, "OriginRequestPolicyList", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectoryLimits extends js.Object {
+trait DirectoryLimits extends StObject {
   
   /**
     * The current number of cloud directories in the Region.
@@ -61,72 +62,60 @@ object DirectoryLimits {
   }
   
   @scala.inline
-  implicit class DirectoryLimitsOps[Self <: DirectoryLimits] (val x: Self) extends AnyVal {
+  implicit class DirectoryLimitsMutableBuilder[Self <: DirectoryLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudOnlyDirectoriesCurrentCount(value: Limit): Self = StObject.set(x, "CloudOnlyDirectoriesCurrentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudOnlyDirectoriesCurrentCountUndefined: Self = StObject.set(x, "CloudOnlyDirectoriesCurrentCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudOnlyDirectoriesLimit(value: Limit): Self = StObject.set(x, "CloudOnlyDirectoriesLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudOnlyDirectoriesCurrentCount(value: Limit): Self = this.set("CloudOnlyDirectoriesCurrentCount", value.asInstanceOf[js.Any])
+    def setCloudOnlyDirectoriesLimitReached(value: CloudOnlyDirectoriesLimitReached): Self = StObject.set(x, "CloudOnlyDirectoriesLimitReached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudOnlyDirectoriesCurrentCount: Self = this.set("CloudOnlyDirectoriesCurrentCount", js.undefined)
+    def setCloudOnlyDirectoriesLimitReachedUndefined: Self = StObject.set(x, "CloudOnlyDirectoriesLimitReached", js.undefined)
     
     @scala.inline
-    def setCloudOnlyDirectoriesLimit(value: Limit): Self = this.set("CloudOnlyDirectoriesLimit", value.asInstanceOf[js.Any])
+    def setCloudOnlyDirectoriesLimitUndefined: Self = StObject.set(x, "CloudOnlyDirectoriesLimit", js.undefined)
     
     @scala.inline
-    def deleteCloudOnlyDirectoriesLimit: Self = this.set("CloudOnlyDirectoriesLimit", js.undefined)
+    def setCloudOnlyMicrosoftADCurrentCount(value: Limit): Self = StObject.set(x, "CloudOnlyMicrosoftADCurrentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudOnlyDirectoriesLimitReached(value: CloudOnlyDirectoriesLimitReached): Self = this.set("CloudOnlyDirectoriesLimitReached", value.asInstanceOf[js.Any])
+    def setCloudOnlyMicrosoftADCurrentCountUndefined: Self = StObject.set(x, "CloudOnlyMicrosoftADCurrentCount", js.undefined)
     
     @scala.inline
-    def deleteCloudOnlyDirectoriesLimitReached: Self = this.set("CloudOnlyDirectoriesLimitReached", js.undefined)
+    def setCloudOnlyMicrosoftADLimit(value: Limit): Self = StObject.set(x, "CloudOnlyMicrosoftADLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudOnlyMicrosoftADCurrentCount(value: Limit): Self = this.set("CloudOnlyMicrosoftADCurrentCount", value.asInstanceOf[js.Any])
+    def setCloudOnlyMicrosoftADLimitReached(value: CloudOnlyDirectoriesLimitReached): Self = StObject.set(x, "CloudOnlyMicrosoftADLimitReached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudOnlyMicrosoftADCurrentCount: Self = this.set("CloudOnlyMicrosoftADCurrentCount", js.undefined)
+    def setCloudOnlyMicrosoftADLimitReachedUndefined: Self = StObject.set(x, "CloudOnlyMicrosoftADLimitReached", js.undefined)
     
     @scala.inline
-    def setCloudOnlyMicrosoftADLimit(value: Limit): Self = this.set("CloudOnlyMicrosoftADLimit", value.asInstanceOf[js.Any])
+    def setCloudOnlyMicrosoftADLimitUndefined: Self = StObject.set(x, "CloudOnlyMicrosoftADLimit", js.undefined)
     
     @scala.inline
-    def deleteCloudOnlyMicrosoftADLimit: Self = this.set("CloudOnlyMicrosoftADLimit", js.undefined)
+    def setConnectedDirectoriesCurrentCount(value: Limit): Self = StObject.set(x, "ConnectedDirectoriesCurrentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudOnlyMicrosoftADLimitReached(value: CloudOnlyDirectoriesLimitReached): Self = this.set("CloudOnlyMicrosoftADLimitReached", value.asInstanceOf[js.Any])
+    def setConnectedDirectoriesCurrentCountUndefined: Self = StObject.set(x, "ConnectedDirectoriesCurrentCount", js.undefined)
     
     @scala.inline
-    def deleteCloudOnlyMicrosoftADLimitReached: Self = this.set("CloudOnlyMicrosoftADLimitReached", js.undefined)
+    def setConnectedDirectoriesLimit(value: Limit): Self = StObject.set(x, "ConnectedDirectoriesLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedDirectoriesCurrentCount(value: Limit): Self = this.set("ConnectedDirectoriesCurrentCount", value.asInstanceOf[js.Any])
+    def setConnectedDirectoriesLimitReached(value: ConnectedDirectoriesLimitReached): Self = StObject.set(x, "ConnectedDirectoriesLimitReached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectedDirectoriesCurrentCount: Self = this.set("ConnectedDirectoriesCurrentCount", js.undefined)
+    def setConnectedDirectoriesLimitReachedUndefined: Self = StObject.set(x, "ConnectedDirectoriesLimitReached", js.undefined)
     
     @scala.inline
-    def setConnectedDirectoriesLimit(value: Limit): Self = this.set("ConnectedDirectoriesLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectedDirectoriesLimit: Self = this.set("ConnectedDirectoriesLimit", js.undefined)
-    
-    @scala.inline
-    def setConnectedDirectoriesLimitReached(value: ConnectedDirectoriesLimitReached): Self = this.set("ConnectedDirectoriesLimitReached", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectedDirectoriesLimitReached: Self = this.set("ConnectedDirectoriesLimitReached", js.undefined)
+    def setConnectedDirectoriesLimitUndefined: Self = StObject.set(x, "ConnectedDirectoriesLimit", js.undefined)
   }
 }

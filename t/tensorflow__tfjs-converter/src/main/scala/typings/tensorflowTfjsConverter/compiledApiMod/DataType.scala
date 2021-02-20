@@ -1,161 +1,132 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataType extends js.Object
+sealed trait DataType extends StObject
 @JSImport("@tensorflow/tfjs-converter/dist/data/compiled_api", "DataType")
 @js.native
-object DataType extends js.Object {
+object DataType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DataType with Double] = js.native
   
   @js.native
   sealed trait DT_BFLOAT16 extends DataType
-  /* 14 */ @js.native
-  object DT_BFLOAT16 extends TopLevel[DT_BFLOAT16 with Double]
+  /* 14 */ val DT_BFLOAT16: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_BFLOAT16 with Double = js.native
   
   @js.native
   sealed trait DT_BFLOAT16_REF extends DataType
-  /* 114 */ @js.native
-  object DT_BFLOAT16_REF extends TopLevel[DT_BFLOAT16_REF with Double]
+  /* 114 */ val DT_BFLOAT16_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_BFLOAT16_REF with Double = js.native
   
   @js.native
   sealed trait DT_BOOL extends DataType
-  /* 10 */ @js.native
-  object DT_BOOL extends TopLevel[DT_BOOL with Double]
+  /* 10 */ val DT_BOOL: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_BOOL with Double = js.native
   
   @js.native
   sealed trait DT_BOOL_REF extends DataType
-  /* 110 */ @js.native
-  object DT_BOOL_REF extends TopLevel[DT_BOOL_REF with Double]
+  /* 110 */ val DT_BOOL_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_BOOL_REF with Double = js.native
   
   @js.native
   sealed trait DT_COMPLEX64 extends DataType
-  /* 8 */ @js.native
-  object DT_COMPLEX64 extends TopLevel[DT_COMPLEX64 with Double]
+  /* 8 */ val DT_COMPLEX64: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_COMPLEX64 with Double = js.native
   
   @js.native
   sealed trait DT_COMPLEX64_REF extends DataType
-  /* 108 */ @js.native
-  object DT_COMPLEX64_REF extends TopLevel[DT_COMPLEX64_REF with Double]
+  /* 108 */ val DT_COMPLEX64_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_COMPLEX64_REF with Double = js.native
   
   @js.native
   sealed trait DT_DOUBLE extends DataType
-  /* 2 */ @js.native
-  object DT_DOUBLE extends TopLevel[DT_DOUBLE with Double]
+  /* 2 */ val DT_DOUBLE: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_DOUBLE with Double = js.native
   
   @js.native
   sealed trait DT_DOUBLE_REF extends DataType
-  /* 102 */ @js.native
-  object DT_DOUBLE_REF extends TopLevel[DT_DOUBLE_REF with Double]
+  /* 102 */ val DT_DOUBLE_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_DOUBLE_REF with Double = js.native
   
   @js.native
   sealed trait DT_FLOAT extends DataType
-  /* 1 */ @js.native
-  object DT_FLOAT extends TopLevel[DT_FLOAT with Double]
+  /* 1 */ val DT_FLOAT: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_FLOAT with Double = js.native
   
   @js.native
   sealed trait DT_FLOAT_REF extends DataType
-  /* 101 */ @js.native
-  object DT_FLOAT_REF extends TopLevel[DT_FLOAT_REF with Double]
+  /* 101 */ val DT_FLOAT_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_FLOAT_REF with Double = js.native
   
   @js.native
   sealed trait DT_INT16 extends DataType
-  /* 5 */ @js.native
-  object DT_INT16 extends TopLevel[DT_INT16 with Double]
+  /* 5 */ val DT_INT16: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT16 with Double = js.native
   
   @js.native
   sealed trait DT_INT16_REF extends DataType
-  /* 105 */ @js.native
-  object DT_INT16_REF extends TopLevel[DT_INT16_REF with Double]
+  /* 105 */ val DT_INT16_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT16_REF with Double = js.native
   
   @js.native
   sealed trait DT_INT32 extends DataType
-  /* 3 */ @js.native
-  object DT_INT32 extends TopLevel[DT_INT32 with Double]
+  /* 3 */ val DT_INT32: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT32 with Double = js.native
   
   @js.native
   sealed trait DT_INT32_REF extends DataType
-  /* 103 */ @js.native
-  object DT_INT32_REF extends TopLevel[DT_INT32_REF with Double]
+  /* 103 */ val DT_INT32_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT32_REF with Double = js.native
   
   @js.native
   sealed trait DT_INT64 extends DataType
-  /* 9 */ @js.native
-  object DT_INT64 extends TopLevel[DT_INT64 with Double]
+  /* 9 */ val DT_INT64: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT64 with Double = js.native
   
   @js.native
   sealed trait DT_INT64_REF extends DataType
-  /* 109 */ @js.native
-  object DT_INT64_REF extends TopLevel[DT_INT64_REF with Double]
+  /* 109 */ val DT_INT64_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT64_REF with Double = js.native
   
   @js.native
   sealed trait DT_INT8 extends DataType
-  /* 6 */ @js.native
-  object DT_INT8 extends TopLevel[DT_INT8 with Double]
+  /* 6 */ val DT_INT8: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT8 with Double = js.native
   
   @js.native
   sealed trait DT_INT8_REF extends DataType
-  /* 106 */ @js.native
-  object DT_INT8_REF extends TopLevel[DT_INT8_REF with Double]
+  /* 106 */ val DT_INT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INT8_REF with Double = js.native
   
   @js.native
   sealed trait DT_INVALID extends DataType
-  /* 0 */ @js.native
-  object DT_INVALID extends TopLevel[DT_INVALID with Double]
+  /* 0 */ val DT_INVALID: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INVALID with Double = js.native
   
   @js.native
   sealed trait DT_QINT32 extends DataType
-  /* 13 */ @js.native
-  object DT_QINT32 extends TopLevel[DT_QINT32 with Double]
+  /* 13 */ val DT_QINT32: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT32 with Double = js.native
   
   @js.native
   sealed trait DT_QINT32_REF extends DataType
-  /* 113 */ @js.native
-  object DT_QINT32_REF extends TopLevel[DT_QINT32_REF with Double]
+  /* 113 */ val DT_QINT32_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT32_REF with Double = js.native
   
   @js.native
   sealed trait DT_QINT8 extends DataType
-  /* 11 */ @js.native
-  object DT_QINT8 extends TopLevel[DT_QINT8 with Double]
+  /* 11 */ val DT_QINT8: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT8 with Double = js.native
   
   @js.native
   sealed trait DT_QINT8_REF extends DataType
-  /* 111 */ @js.native
-  object DT_QINT8_REF extends TopLevel[DT_QINT8_REF with Double]
+  /* 111 */ val DT_QINT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT8_REF with Double = js.native
   
   @js.native
   sealed trait DT_QUINT8 extends DataType
-  /* 12 */ @js.native
-  object DT_QUINT8 extends TopLevel[DT_QUINT8 with Double]
+  /* 12 */ val DT_QUINT8: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QUINT8 with Double = js.native
   
   @js.native
   sealed trait DT_QUINT8_REF extends DataType
-  /* 112 */ @js.native
-  object DT_QUINT8_REF extends TopLevel[DT_QUINT8_REF with Double]
+  /* 112 */ val DT_QUINT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QUINT8_REF with Double = js.native
   
   @js.native
   sealed trait DT_STRING extends DataType
-  /* 7 */ @js.native
-  object DT_STRING extends TopLevel[DT_STRING with Double]
+  /* 7 */ val DT_STRING: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_STRING with Double = js.native
   
   @js.native
   sealed trait DT_STRING_REF extends DataType
-  /* 107 */ @js.native
-  object DT_STRING_REF extends TopLevel[DT_STRING_REF with Double]
+  /* 107 */ val DT_STRING_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_STRING_REF with Double = js.native
   
   @js.native
   sealed trait DT_UINT8 extends DataType
-  /* 4 */ @js.native
-  object DT_UINT8 extends TopLevel[DT_UINT8 with Double]
+  /* 4 */ val DT_UINT8: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT8 with Double = js.native
   
   @js.native
   sealed trait DT_UINT8_REF extends DataType
-  /* 104 */ @js.native
-  object DT_UINT8_REF extends TopLevel[DT_UINT8_REF with Double]
+  /* 104 */ val DT_UINT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT8_REF with Double = js.native
 }

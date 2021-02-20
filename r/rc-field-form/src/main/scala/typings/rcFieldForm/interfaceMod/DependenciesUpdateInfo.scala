@@ -1,6 +1,7 @@
 package typings.rcFieldForm.interfaceMod
 
 import typings.rcFieldForm.rcFieldFormStrings.dependenciesUpdate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,27 +28,15 @@ object DependenciesUpdateInfo {
   }
   
   @scala.inline
-  implicit class DependenciesUpdateInfoOps[Self <: DependenciesUpdateInfo] (val x: Self) extends AnyVal {
+  implicit class DependenciesUpdateInfoMutableBuilder[Self <: DependenciesUpdateInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedFields(value: js.Array[InternalNamePath]): Self = StObject.set(x, "relatedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelatedFieldsVarargs(value: InternalNamePath*): Self = StObject.set(x, "relatedFields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelatedFieldsVarargs(value: InternalNamePath*): Self = this.set("relatedFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelatedFields(value: js.Array[InternalNamePath]): Self = this.set("relatedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: dependenciesUpdate): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: dependenciesUpdate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

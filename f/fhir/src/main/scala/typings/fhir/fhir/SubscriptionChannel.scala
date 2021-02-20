@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,69 +61,57 @@ object SubscriptionChannel {
   }
   
   @scala.inline
-  implicit class SubscriptionChannelOps[Self <: SubscriptionChannel] (val x: Self) extends AnyVal {
+  implicit class SubscriptionChannelMutableBuilder[Self <: SubscriptionChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: uri): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def set_endpoint(value: Element): Self = this.set("_endpoint", value.asInstanceOf[js.Any])
+    def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
     
     @scala.inline
-    def delete_endpoint: Self = this.set("_endpoint", js.undefined)
+    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_headerVarargs(value: Element*): Self = this.set("_header", js.Array(value :_*))
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def set_header(value: js.Array[Element]): Self = this.set("_header", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_header: Self = this.set("_header", js.undefined)
+    def set_endpoint(value: Element): Self = StObject.set(x, "_endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_payload(value: Element): Self = this.set("_payload", value.asInstanceOf[js.Any])
+    def set_endpointUndefined: Self = StObject.set(x, "_endpoint", js.undefined)
     
     @scala.inline
-    def delete_payload: Self = this.set("_payload", js.undefined)
+    def set_header(value: js.Array[Element]): Self = StObject.set(x, "_header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_headerUndefined: Self = StObject.set(x, "_header", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_headerVarargs(value: Element*): Self = StObject.set(x, "_header", js.Array(value :_*))
     
     @scala.inline
-    def setEndpoint(value: uri): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def set_payload(value: Element): Self = StObject.set(x, "_payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def set_payloadUndefined: Self = StObject.set(x, "_payload", js.undefined)
     
     @scala.inline
-    def setHeaderVarargs(value: String*): Self = this.set("header", js.Array(value :_*))
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: js.Array[String]): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

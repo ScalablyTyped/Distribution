@@ -1,12 +1,15 @@
 package typings.messenger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Messenger: IMessenger = js.native
+  @JSGlobal("Messenger")
+  @js.native
+  def Messenger: IMessenger = js.native
+  @scala.inline
+  def Messenger_=(x: IMessenger): Unit = js.Dynamic.global.updateDynamic("Messenger")(x.asInstanceOf[js.Any])
 }

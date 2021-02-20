@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ulimit extends js.Object {
+trait Ulimit extends StObject {
   
   var Hard: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object Ulimit {
   }
   
   @scala.inline
-  implicit class UlimitOps[Self <: Ulimit] (val x: Self) extends AnyVal {
+  implicit class UlimitMutableBuilder[Self <: Ulimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHard(value: Double): Self = StObject.set(x, "Hard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHardUndefined: Self = StObject.set(x, "Hard", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHard(value: Double): Self = this.set("Hard", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteHard: Self = this.set("Hard", js.undefined)
+    def setSoft(value: Double): Self = StObject.set(x, "Soft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setSoft(value: Double): Self = this.set("Soft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoft: Self = this.set("Soft", js.undefined)
+    def setSoftUndefined: Self = StObject.set(x, "Soft", js.undefined)
   }
 }

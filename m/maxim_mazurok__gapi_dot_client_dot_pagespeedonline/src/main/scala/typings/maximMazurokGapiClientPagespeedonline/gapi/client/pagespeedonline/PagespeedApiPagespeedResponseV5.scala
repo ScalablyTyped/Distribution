@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PagespeedApiPagespeedResponseV5 extends js.Object {
+trait PagespeedApiPagespeedResponseV5 extends StObject {
   
   /** The UTC timestamp of this analysis. */
   var analysisUTCTimestamp: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object PagespeedApiPagespeedResponseV5 {
   }
   
   @scala.inline
-  implicit class PagespeedApiPagespeedResponseV5Ops[Self <: PagespeedApiPagespeedResponseV5] (val x: Self) extends AnyVal {
+  implicit class PagespeedApiPagespeedResponseV5MutableBuilder[Self <: PagespeedApiPagespeedResponseV5] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisUTCTimestampUndefined: Self = StObject.set(x, "analysisUTCTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptchaResult(value: String): Self = StObject.set(x, "captchaResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisUTCTimestamp(value: String): Self = this.set("analysisUTCTimestamp", value.asInstanceOf[js.Any])
+    def setCaptchaResultUndefined: Self = StObject.set(x, "captchaResult", js.undefined)
     
     @scala.inline
-    def deleteAnalysisUTCTimestamp: Self = this.set("analysisUTCTimestamp", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptchaResult(value: String): Self = this.set("captchaResult", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCaptchaResult: Self = this.set("captchaResult", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLighthouseResult(value: LighthouseResultV5): Self = StObject.set(x, "lighthouseResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLighthouseResultUndefined: Self = StObject.set(x, "lighthouseResult", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = StObject.set(x, "loadingExperience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighthouseResult(value: LighthouseResultV5): Self = this.set("lighthouseResult", value.asInstanceOf[js.Any])
+    def setLoadingExperienceUndefined: Self = StObject.set(x, "loadingExperience", js.undefined)
     
     @scala.inline
-    def deleteLighthouseResult: Self = this.set("lighthouseResult", js.undefined)
+    def setOriginLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = StObject.set(x, "originLoadingExperience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = this.set("loadingExperience", value.asInstanceOf[js.Any])
+    def setOriginLoadingExperienceUndefined: Self = StObject.set(x, "originLoadingExperience", js.undefined)
     
     @scala.inline
-    def deleteLoadingExperience: Self = this.set("loadingExperience", js.undefined)
+    def setVersion(value: PagespeedVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = this.set("originLoadingExperience", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginLoadingExperience: Self = this.set("originLoadingExperience", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: PagespeedVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

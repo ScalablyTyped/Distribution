@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides base functionality for the ASPxClientScheduler's forms.
   */
 @js.native
-trait ASPxClientFormBase extends js.Object {
+trait ASPxClientFormBase extends StObject {
   
   /**
     * Closes the form.
@@ -40,27 +41,15 @@ object ASPxClientFormBase {
   }
   
   @scala.inline
-  implicit class ASPxClientFormBaseOps[Self <: ASPxClientFormBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientFormBaseMutableBuilder[Self <: ASPxClientFormBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormClosed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]]): Self = StObject.set(x, "FormClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("Close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFormClosed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]]): Self = this.set("FormClosed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetVisibleCore(value: (js.Any, Boolean) => Unit): Self = this.set("SetVisibleCore", js.Any.fromFunction2(value))
+    def setSetVisibleCore(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "SetVisibleCore", js.Any.fromFunction2(value))
   }
 }

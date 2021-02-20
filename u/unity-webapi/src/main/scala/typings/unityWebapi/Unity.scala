@@ -1,11 +1,12 @@
 package typings.unityWebapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Unity extends js.Object {
+trait Unity extends StObject {
   
   var Launcher: UnityLauncher = js.native
   
@@ -41,42 +42,30 @@ object Unity {
   }
   
   @scala.inline
-  implicit class UnityOps[Self <: Unity] (val x: Self) extends AnyVal {
+  implicit class UnityMutableBuilder[Self <: Unity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAction(value: (String, js.Function) => js.Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInit(value: UnitySettings => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLauncher(value: UnityLauncher): Self = StObject.set(x, "Launcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLauncher(value: UnityLauncher): Self = this.set("Launcher", value.asInstanceOf[js.Any])
+    def setMediaPlayer(value: UnityMediaPlayer): Self = StObject.set(x, "MediaPlayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaPlayer(value: UnityMediaPlayer): Self = this.set("MediaPlayer", value.asInstanceOf[js.Any])
+    def setMessagingIndicator(value: UnityMessagingIndicator): Self = StObject.set(x, "MessagingIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagingIndicator(value: UnityMessagingIndicator): Self = this.set("MessagingIndicator", value.asInstanceOf[js.Any])
+    def setNotification(value: UnityNotification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: UnityNotification): Self = this.set("Notification", value.asInstanceOf[js.Any])
+    def setRemoveAction(value: String => js.Any): Self = StObject.set(x, "removeAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAction(value: (String, js.Function) => js.Any): Self = this.set("addAction", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInit(value: UnitySettings => js.Any): Self = this.set("init", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveAction(value: String => js.Any): Self = this.set("removeAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveActions(value: () => js.Any): Self = this.set("removeActions", js.Any.fromFunction0(value))
+    def setRemoveActions(value: () => js.Any): Self = StObject.set(x, "removeActions", js.Any.fromFunction0(value))
   }
 }

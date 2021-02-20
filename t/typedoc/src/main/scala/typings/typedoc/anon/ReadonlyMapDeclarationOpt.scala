@@ -3,13 +3,14 @@ package typings.typedoc.anon
 import typings.std.Map
 import typings.std.Record
 import typings.typedoc.optionsDeclarationMod.ParameterScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.MapDeclarationOption<unknown>> */
 @js.native
-trait ReadonlyMapDeclarationOpt extends js.Object {
+trait ReadonlyMapDeclarationOpt extends StObject {
   
   val defaultValue: js.Any = js.native
   
@@ -43,51 +44,39 @@ object ReadonlyMapDeclarationOpt {
   }
   
   @scala.inline
-  implicit class ReadonlyMapDeclarationOptOps[Self <: ReadonlyMapDeclarationOpt] (val x: Self) extends AnyVal {
+  implicit class ReadonlyMapDeclarationOptMutableBuilder[Self <: ReadonlyMapDeclarationOpt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMap(value: (Map[String, _]) | (Record[String | Double, _])): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setMapError(value: String): Self = StObject.set(x, "mapError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setMapErrorUndefined: Self = StObject.set(x, "mapError", js.undefined)
     
     @scala.inline
-    def setMap(value: (Map[String, _]) | (Record[String | Double, _])): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.Map): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def setMapError(value: String): Self = this.set("mapError", value.asInstanceOf[js.Any])
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapError: Self = this.set("mapError", js.undefined)
+    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
     @scala.inline
-    def setScope(value: ParameterScope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort: Self = this.set("short", js.undefined)
+    def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.Map): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

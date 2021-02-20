@@ -1,5 +1,6 @@
 package typings.probabilityDistributions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("probability-distributions", JSImport.Namespace)
 @js.native
-object probabilityDistributionsRequire extends js.Object
+object probabilityDistributionsRequire extends StObject

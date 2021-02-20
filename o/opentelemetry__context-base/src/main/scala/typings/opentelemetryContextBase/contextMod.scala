@@ -1,20 +1,20 @@
 package typings.opentelemetryContextBase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/context-base/build/src/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("@opentelemetry/context-base/build/src/context", "Context")
   @js.native
   /**
     * Construct a new context which inherits values from an optional parent context.
     *
     * @param parentContext a context from which to inherit values
     */
-  class Context protected () extends js.Object {
+  class Context protected () extends StObject {
     
     var _currentContext: js.Any = js.native
     
@@ -43,10 +43,11 @@ object contextMod extends js.Object {
     def setValue(key: js.Symbol, value: js.Any): Context = js.native
   }
   /* static members */
-  @js.native
-  object Context extends js.Object {
+  object Context {
     
     /** The root context is used as the default parent context when there is no active context */
+    @JSImport("@opentelemetry/context-base/build/src/context", "Context.ROOT_CONTEXT")
+    @js.native
     val ROOT_CONTEXT: Context = js.native
     
     /**
@@ -55,9 +56,13 @@ object contextMod extends js.Object {
       *
       * It's existence is temporary and it should be removed when all references are fixed.
       */
+    @JSImport("@opentelemetry/context-base/build/src/context", "Context.TODO")
+    @js.native
     val TODO: Context = js.native
     
     /** Get a key to uniquely identify a context value */
+    @JSImport("@opentelemetry/context-base/build/src/context", "Context.createKey")
+    @js.native
     def createKey(description: String): js.Symbol = js.native
   }
 }

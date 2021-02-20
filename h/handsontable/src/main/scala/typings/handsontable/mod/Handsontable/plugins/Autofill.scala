@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,42 +55,30 @@ object Autofill {
   }
   
   @scala.inline
-  implicit class AutofillOps[Self <: Autofill] (val x: Self) extends AnyVal {
+  implicit class AutofillMutableBuilder[Self <: Autofill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddingStarted(value: Boolean): Self = StObject.set(x, "addingStarted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoInsertRow(value: Boolean): Self = StObject.set(x, "autoInsertRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirections(value: js.Array[String]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddingStarted(value: Boolean): Self = this.set("addingStarted", value.asInstanceOf[js.Any])
+    def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
     @scala.inline
-    def setAutoInsertRow(value: Boolean): Self = this.set("autoInsertRow", value.asInstanceOf[js.Any])
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionsVarargs(value: String*): Self = this.set("directions", js.Array(value :_*))
+    def setHandleDraggedCells(value: Double): Self = StObject.set(x, "handleDraggedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: js.Array[String]): Self = this.set("directions", value.asInstanceOf[js.Any])
+    def setMouseDownOnCellCorner(value: Boolean): Self = StObject.set(x, "mouseDownOnCellCorner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandleDraggedCells(value: Double): Self = this.set("handleDraggedCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMouseDownOnCellCorner(value: Boolean): Self = this.set("mouseDownOnCellCorner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMouseDragOutside(value: Boolean): Self = this.set("mouseDragOutside", value.asInstanceOf[js.Any])
+    def setMouseDragOutside(value: Boolean): Self = StObject.set(x, "mouseDragOutside", value.asInstanceOf[js.Any])
   }
 }

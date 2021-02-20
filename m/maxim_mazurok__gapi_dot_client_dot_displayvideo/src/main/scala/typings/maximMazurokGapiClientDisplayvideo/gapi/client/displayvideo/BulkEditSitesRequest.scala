@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditSitesRequest extends js.Object {
+trait BulkEditSitesRequest extends StObject {
   
   /** The ID of the advertiser that owns the parent channel. */
   var advertiserId: js.UndefOr[String] = js.native
@@ -28,48 +29,36 @@ object BulkEditSitesRequest {
   }
   
   @scala.inline
-  implicit class BulkEditSitesRequestOps[Self <: BulkEditSitesRequest] (val x: Self) extends AnyVal {
+  implicit class BulkEditSitesRequestMutableBuilder[Self <: BulkEditSitesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedSites(value: js.Array[Site]): Self = StObject.set(x, "createdSites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setCreatedSitesUndefined: Self = StObject.set(x, "createdSites", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setCreatedSitesVarargs(value: Site*): Self = StObject.set(x, "createdSites", js.Array(value :_*))
     
     @scala.inline
-    def setCreatedSitesVarargs(value: Site*): Self = this.set("createdSites", js.Array(value :_*))
+    def setDeletedSites(value: js.Array[String]): Self = StObject.set(x, "deletedSites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedSites(value: js.Array[Site]): Self = this.set("createdSites", value.asInstanceOf[js.Any])
+    def setDeletedSitesUndefined: Self = StObject.set(x, "deletedSites", js.undefined)
     
     @scala.inline
-    def deleteCreatedSites: Self = this.set("createdSites", js.undefined)
+    def setDeletedSitesVarargs(value: String*): Self = StObject.set(x, "deletedSites", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedSitesVarargs(value: String*): Self = this.set("deletedSites", js.Array(value :_*))
+    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedSites(value: js.Array[String]): Self = this.set("deletedSites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedSites: Self = this.set("deletedSites", js.undefined)
-    
-    @scala.inline
-    def setPartnerId(value: String): Self = this.set("partnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerId: Self = this.set("partnerId", js.undefined)
+    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
   }
 }

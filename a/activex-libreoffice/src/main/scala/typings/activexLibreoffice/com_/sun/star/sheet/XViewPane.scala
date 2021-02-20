@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,42 +60,30 @@ object XViewPane {
   }
   
   @scala.inline
-  implicit class XViewPaneOps[Self <: XViewPane] (val x: Self) extends AnyVal {
+  implicit class XViewPaneMutableBuilder[Self <: XViewPane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstVisibleColumn(value: Double): Self = StObject.set(x, "FirstVisibleColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstVisibleRow(value: Double): Self = StObject.set(x, "FirstVisibleRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFirstVisibleColumn(value: () => Double): Self = StObject.set(x, "getFirstVisibleColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstVisibleColumn(value: Double): Self = this.set("FirstVisibleColumn", value.asInstanceOf[js.Any])
+    def setGetFirstVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstVisibleRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstVisibleRow(value: Double): Self = this.set("FirstVisibleRow", value.asInstanceOf[js.Any])
+    def setGetVisibleRange(value: () => CellRangeAddress): Self = StObject.set(x, "getVisibleRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setVisibleRange(value: CellRangeAddress): Self = this.set("VisibleRange", value.asInstanceOf[js.Any])
+    def setSetFirstVisibleColumn(value: Double => Unit): Self = StObject.set(x, "setFirstVisibleColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFirstVisibleColumn(value: () => Double): Self = this.set("getFirstVisibleColumn", js.Any.fromFunction0(value))
+    def setSetFirstVisibleRow(value: Double => Unit): Self = StObject.set(x, "setFirstVisibleRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFirstVisibleRow(value: () => Double): Self = this.set("getFirstVisibleRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVisibleRange(value: () => CellRangeAddress): Self = this.set("getVisibleRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFirstVisibleColumn(value: Double => Unit): Self = this.set("setFirstVisibleColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFirstVisibleRow(value: Double => Unit): Self = this.set("setFirstVisibleRow", js.Any.fromFunction1(value))
+    def setVisibleRange(value: CellRangeAddress): Self = StObject.set(x, "VisibleRange", value.asInstanceOf[js.Any])
   }
 }

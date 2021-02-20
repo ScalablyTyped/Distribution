@@ -1,12 +1,13 @@
 package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Project extends js.Object {
+trait Project extends StObject {
   
   var branches: StringDictionary[String] = js.native
   
@@ -28,33 +29,21 @@ object Project {
   }
   
   @scala.inline
-  implicit class ProjectOps[Self <: Project] (val x: Self) extends AnyVal {
+  implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: StringDictionary[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranches(value: StringDictionary[String]): Self = this.set("branches", value.asInstanceOf[js.Any])
+    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Boolean): Self = this.set("delete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrite(value: Boolean): Self = this.set("write", value.asInstanceOf[js.Any])
+    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
   }
 }

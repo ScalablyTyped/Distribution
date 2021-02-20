@@ -1,25 +1,25 @@
 package typings.googleGax.mod.protobuf
 
 import typings.protobufjs.mod.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobuf.BufferWriter")
 @js.native
 /** Constructs a new buffer writer instance. */
 class BufferWriter ()
   extends typings.protobufjs.mod.BufferWriter
-
 /* static members */
-@JSImport("google-gax", "protobuf.BufferWriter")
-@js.native
-object BufferWriter extends js.Object {
+object BufferWriter {
+  
   /**
     * Allocates a buffer of the specified size.
     * @param size Buffer size
     * @returns Buffer
     */
+  @JSImport("google-gax", "protobuf.BufferWriter.alloc")
+  @js.native
   def alloc(size: Double): Buffer = js.native
 }
-

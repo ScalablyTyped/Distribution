@@ -4,16 +4,14 @@ import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
 import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
 import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/load-balancer-pick-first", JSImport.Namespace)
-@js.native
-object loadBalancerPickFirstMod extends js.Object {
+object loadBalancerPickFirstMod {
   
-  def setup(): Unit = js.native
-  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-pick-first", "PickFirstLoadBalancer")
   @js.native
   class PickFirstLoadBalancer protected () extends LoadBalancer {
     /**
@@ -98,4 +96,8 @@ object loadBalancerPickFirstMod extends js.Object {
     
     var updateState: js.Any = js.native
   }
+  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-pick-first", "setup")
+  @js.native
+  def setup(): Unit = js.native
 }

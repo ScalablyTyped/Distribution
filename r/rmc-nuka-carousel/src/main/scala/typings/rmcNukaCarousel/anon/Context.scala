@@ -5,12 +5,13 @@ import typings.react.mod.ReactInstance
 import typings.react.mod.global.JSX.Element
 import typings.rmcNukaCarousel.decoratorsMod.IDecoratorProps
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   var context: js.Any = js.native
   

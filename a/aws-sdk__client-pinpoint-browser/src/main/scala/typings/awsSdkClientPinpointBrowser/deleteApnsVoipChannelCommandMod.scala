@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipChannelInputMod.De
 import typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipChannelOutputMod.DeleteApnsVoipChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteApnsVoipChannelCommand", JSImport.Namespace)
-@js.native
-object deleteApnsVoipChannelCommandMod extends js.Object {
+object deleteApnsVoipChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteApnsVoipChannelCommand", "DeleteApnsVoipChannelCommand")
   @js.native
   class DeleteApnsVoipChannelCommand protected () extends Command[
           InputTypesUnion, 

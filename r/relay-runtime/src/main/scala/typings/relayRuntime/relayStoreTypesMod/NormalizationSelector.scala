@@ -3,12 +3,13 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.normalizationNodeMod.NormalizationSelectableNode
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NormalizationSelector extends js.Object {
+trait NormalizationSelector extends StObject {
   
   val dataID: DataID = js.native
   
@@ -25,27 +26,15 @@ object NormalizationSelector {
   }
   
   @scala.inline
-  implicit class NormalizationSelectorOps[Self <: NormalizationSelector] (val x: Self) extends AnyVal {
+  implicit class NormalizationSelectorMutableBuilder[Self <: NormalizationSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode(value: NormalizationSelectableNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataID(value: DataID): Self = this.set("dataID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: NormalizationSelectableNode): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

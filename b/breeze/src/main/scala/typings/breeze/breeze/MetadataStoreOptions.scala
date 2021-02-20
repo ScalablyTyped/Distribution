@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataStoreOptions extends js.Object {
+trait MetadataStoreOptions extends StObject {
   
   var localQueryComparisonOptions: js.UndefOr[LocalQueryComparisonOptions] = js.native
   
@@ -20,30 +21,18 @@ object MetadataStoreOptions {
   }
   
   @scala.inline
-  implicit class MetadataStoreOptionsOps[Self <: MetadataStoreOptions] (val x: Self) extends AnyVal {
+  implicit class MetadataStoreOptionsMutableBuilder[Self <: MetadataStoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalQueryComparisonOptions(value: LocalQueryComparisonOptions): Self = StObject.set(x, "localQueryComparisonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalQueryComparisonOptionsUndefined: Self = StObject.set(x, "localQueryComparisonOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamingConvention(value: NamingConvention): Self = StObject.set(x, "namingConvention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalQueryComparisonOptions(value: LocalQueryComparisonOptions): Self = this.set("localQueryComparisonOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalQueryComparisonOptions: Self = this.set("localQueryComparisonOptions", js.undefined)
-    
-    @scala.inline
-    def setNamingConvention(value: NamingConvention): Self = this.set("namingConvention", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamingConvention: Self = this.set("namingConvention", js.undefined)
+    def setNamingConventionUndefined: Self = StObject.set(x, "namingConvention", js.undefined)
   }
 }

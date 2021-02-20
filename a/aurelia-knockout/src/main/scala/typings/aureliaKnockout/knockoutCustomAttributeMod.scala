@@ -1,16 +1,16 @@
 package typings.aureliaKnockout
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", JSImport.Namespace)
-@js.native
-object knockoutCustomAttributeMod extends js.Object {
+object knockoutCustomAttributeMod {
   
+  @JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", "KnockoutCustomAttribute")
   @js.native
-  class KnockoutCustomAttribute protected () extends js.Object {
+  class KnockoutCustomAttribute protected () extends StObject {
     def this(element: Element) = this()
     
     /** internal: do not use */
@@ -22,9 +22,10 @@ object knockoutCustomAttributeMod extends js.Object {
     def unbind(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object KnockoutCustomAttribute extends js.Object {
+  object KnockoutCustomAttribute {
     
+    @JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", "KnockoutCustomAttribute.register")
+    @js.native
     def register(): Unit = js.native
   }
 }

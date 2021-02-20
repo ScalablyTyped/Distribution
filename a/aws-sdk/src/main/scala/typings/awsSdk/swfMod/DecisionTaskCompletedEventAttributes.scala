@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecisionTaskCompletedEventAttributes extends js.Object {
+trait DecisionTaskCompletedEventAttributes extends StObject {
   
   /**
     * User defined context for the workflow execution.
@@ -31,30 +32,18 @@ object DecisionTaskCompletedEventAttributes {
   }
   
   @scala.inline
-  implicit class DecisionTaskCompletedEventAttributesOps[Self <: DecisionTaskCompletedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class DecisionTaskCompletedEventAttributesMutableBuilder[Self <: DecisionTaskCompletedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionContext(value: Data): Self = StObject.set(x, "executionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionContextUndefined: Self = StObject.set(x, "executionContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecutionContext(value: Data): Self = this.set("executionContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionContext: Self = this.set("executionContext", js.undefined)
+    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
   }
 }

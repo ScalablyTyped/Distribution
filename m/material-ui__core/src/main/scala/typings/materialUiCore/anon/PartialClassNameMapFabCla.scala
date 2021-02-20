@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Fab/Fab.FabClassKey>> */
 @js.native
-trait PartialClassNameMapFabCla extends js.Object {
+trait PartialClassNameMapFabCla extends StObject {
   
   var colorInherit: js.UndefOr[String] = js.native
   
@@ -37,78 +38,66 @@ object PartialClassNameMapFabCla {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapFabClaOps[Self <: PartialClassNameMapFabCla] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapFabClaMutableBuilder[Self <: PartialClassNameMapFabCla] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorInherit(value: String): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    def setExtended(value: String): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtended(value: String): Self = this.set("extended", value.asInstanceOf[js.Any])
+    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
     @scala.inline
-    def deleteExtended: Self = this.set("extended", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusVisible(value: String): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSizeMedium(value: String): Self = StObject.set(x, "sizeMedium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary(value: String): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    def setSizeMediumUndefined: Self = StObject.set(x, "sizeMedium", js.undefined)
     
     @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    def setSizeSmall(value: String): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeMedium(value: String): Self = this.set("sizeMedium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeMedium: Self = this.set("sizeMedium", js.undefined)
-    
-    @scala.inline
-    def setSizeSmall(value: String): Self = this.set("sizeSmall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeSmall: Self = this.set("sizeSmall", js.undefined)
+    def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
   }
 }

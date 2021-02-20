@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingTargetTrackingScalingPolicyConfigurationUpdate extends js.Object {
+trait AutoScalingTargetTrackingScalingPolicyConfigurationUpdate extends StObject {
   
   /**
     * Indicates whether scale in by the target tracking policy is disabled. If the value is true, scale in is disabled and the target tracking policy won't remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. The default value is false.
@@ -36,39 +37,27 @@ object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
   }
   
   @scala.inline
-  implicit class AutoScalingTargetTrackingScalingPolicyConfigurationUpdateOps[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate] (val x: Self) extends AnyVal {
+  implicit class AutoScalingTargetTrackingScalingPolicyConfigurationUpdateMutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScaleInCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetValue(value: Double): Self = this.set("TargetValue", value.asInstanceOf[js.Any])
+    def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
     
     @scala.inline
-    def setDisableScaleIn(value: BooleanObject): Self = this.set("DisableScaleIn", value.asInstanceOf[js.Any])
+    def setScaleOutCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableScaleIn: Self = this.set("DisableScaleIn", js.undefined)
+    def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
     
     @scala.inline
-    def setScaleInCooldown(value: IntegerObject): Self = this.set("ScaleInCooldown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleInCooldown: Self = this.set("ScaleInCooldown", js.undefined)
-    
-    @scala.inline
-    def setScaleOutCooldown(value: IntegerObject): Self = this.set("ScaleOutCooldown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleOutCooldown: Self = this.set("ScaleOutCooldown", js.undefined)
+    def setTargetValue(value: Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
   }
 }

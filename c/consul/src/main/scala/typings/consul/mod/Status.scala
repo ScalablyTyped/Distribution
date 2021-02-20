@@ -2,12 +2,13 @@ package typings.consul.mod
 
 import typings.consul.mod.Status.LeaderOptions
 import typings.consul.mod.Status.PeersOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Status extends js.Object {
+trait Status extends StObject {
   
   var consul: Consul = js.native
   
@@ -39,9 +40,7 @@ trait Status extends js.Object {
     */
   def peers[TData](opts: PeersOptions, callback: Callback[TData]): Unit = js.native
 }
-@JSImport("consul", "Status")
-@js.native
-object Status extends js.Object {
+object Status {
   
   type LeaderOptions = CommonOptions
   

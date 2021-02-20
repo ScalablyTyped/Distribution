@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3ActionActionMetadata extends js.Object {
+trait GoogleActionsOrdersV3ActionActionMetadata extends StObject {
   
   /**
     * Time when this action will expire.
@@ -21,24 +22,12 @@ object GoogleActionsOrdersV3ActionActionMetadata {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3ActionActionMetadataOps[Self <: GoogleActionsOrdersV3ActionActionMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3ActionActionMetadataMutableBuilder[Self <: GoogleActionsOrdersV3ActionActionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

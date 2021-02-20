@@ -5,12 +5,13 @@ import typings.googleapis.cloudtasksV2Mod.cloudtasksV2.Options
 import typings.googleapis.googleapisStrings.v2
 import typings.googleapis.googleapisStrings.v2beta2
 import typings.googleapis.googleapisStrings.v2beta3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn43 extends js.Object {
+trait Fn43 extends StObject {
   
   def apply(options: Options): Cloudtasks = js.native
   def apply(options: typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Options): typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks = js.native

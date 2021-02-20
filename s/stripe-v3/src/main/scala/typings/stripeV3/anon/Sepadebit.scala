@@ -1,12 +1,13 @@
 package typings.stripeV3.anon
 
 import typings.stripeV3.stripe.elements.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sepadebit extends js.Object {
+trait Sepadebit extends StObject {
   
   /**
     * The customer's billing_details. name and email are required.
@@ -27,24 +28,12 @@ object Sepadebit {
   }
   
   @scala.inline
-  implicit class SepadebitOps[Self <: Sepadebit] (val x: Self) extends AnyVal {
+  implicit class SepadebitMutableBuilder[Self <: Sepadebit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_details(value: Email): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBilling_details(value: Email): Self = this.set("billing_details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSepa_debit(value: Element | Iban): Self = this.set("sepa_debit", value.asInstanceOf[js.Any])
+    def setSepa_debit(value: Element | Iban): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
   }
 }

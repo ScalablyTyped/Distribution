@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml.sax
 
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as the argument of {@link XParser.parseStream()}as the return value of XEntityReslover::resolveEntity().
   */
 @js.native
-trait InputSource extends js.Object {
+trait InputSource extends StObject {
   
   /** contains the byte input stream of the document. */
   var aInputStream: XInputStream = js.native
@@ -41,30 +42,18 @@ object InputSource {
   }
   
   @scala.inline
-  implicit class InputSourceOps[Self <: InputSource] (val x: Self) extends AnyVal {
+  implicit class InputSourceMutableBuilder[Self <: InputSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAInputStream(value: XInputStream): Self = StObject.set(x, "aInputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSEncoding(value: String): Self = StObject.set(x, "sEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSPublicId(value: String): Self = StObject.set(x, "sPublicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAInputStream(value: XInputStream): Self = this.set("aInputStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSEncoding(value: String): Self = this.set("sEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSPublicId(value: String): Self = this.set("sPublicId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSSystemId(value: String): Self = this.set("sSystemId", value.asInstanceOf[js.Any])
+    def setSSystemId(value: String): Self = StObject.set(x, "sSystemId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartTooltipCallback extends js.Object {
+trait ChartTooltipCallback extends StObject {
   
   var afterBody: js.UndefOr[
     js.Function2[
@@ -76,10 +77,16 @@ trait ChartTooltipCallback extends js.Object {
   ] = js.native
   
   var labelColor: js.UndefOr[
-    js.Function2[/* tooltipItem */ ChartTooltipItem, /* chart */ Chart, ChartTooltipLabelColor]
+    js.Function2[
+      /* tooltipItem */ ChartTooltipItem, 
+      /* chart */ typings.chartJs.mod.Chart, 
+      ChartTooltipLabelColor
+    ]
   ] = js.native
   
-  var labelTextColor: js.UndefOr[js.Function2[/* tooltipItem */ ChartTooltipItem, /* chart */ Chart, String]] = js.native
+  var labelTextColor: js.UndefOr[
+    js.Function2[/* tooltipItem */ ChartTooltipItem, /* chart */ typings.chartJs.mod.Chart, String]
+  ] = js.native
   
   var title: js.UndefOr[
     js.Function2[
@@ -98,96 +105,86 @@ object ChartTooltipCallback {
   }
   
   @scala.inline
-  implicit class ChartTooltipCallbackOps[Self <: ChartTooltipCallback] (val x: Self) extends AnyVal {
+  implicit class ChartTooltipCallbackMutableBuilder[Self <: ChartTooltipCallback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterBody(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "afterBody", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterBodyUndefined: Self = StObject.set(x, "afterBody", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterFooter(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "afterFooter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterBody(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("afterBody", js.Any.fromFunction2(value))
+    def setAfterFooterUndefined: Self = StObject.set(x, "afterFooter", js.undefined)
     
     @scala.inline
-    def deleteAfterBody: Self = this.set("afterBody", js.undefined)
+    def setAfterLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "afterLabel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterFooter(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("afterFooter", js.Any.fromFunction2(value))
+    def setAfterLabelUndefined: Self = StObject.set(x, "afterLabel", js.undefined)
     
     @scala.inline
-    def deleteAfterFooter: Self = this.set("afterFooter", js.undefined)
+    def setAfterTitle(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "afterTitle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = this.set("afterLabel", js.Any.fromFunction2(value))
+    def setAfterTitleUndefined: Self = StObject.set(x, "afterTitle", js.undefined)
     
     @scala.inline
-    def deleteAfterLabel: Self = this.set("afterLabel", js.undefined)
+    def setBeforeBody(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "beforeBody", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterTitle(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("afterTitle", js.Any.fromFunction2(value))
+    def setBeforeBodyUndefined: Self = StObject.set(x, "beforeBody", js.undefined)
     
     @scala.inline
-    def deleteAfterTitle: Self = this.set("afterTitle", js.undefined)
+    def setBeforeFooter(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "beforeFooter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeBody(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("beforeBody", js.Any.fromFunction2(value))
+    def setBeforeFooterUndefined: Self = StObject.set(x, "beforeFooter", js.undefined)
     
     @scala.inline
-    def deleteBeforeBody: Self = this.set("beforeBody", js.undefined)
+    def setBeforeLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "beforeLabel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeFooter(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("beforeFooter", js.Any.fromFunction2(value))
+    def setBeforeLabelUndefined: Self = StObject.set(x, "beforeLabel", js.undefined)
     
     @scala.inline
-    def deleteBeforeFooter: Self = this.set("beforeFooter", js.undefined)
+    def setBeforeTitle(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "beforeTitle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = this.set("beforeLabel", js.Any.fromFunction2(value))
+    def setBeforeTitleUndefined: Self = StObject.set(x, "beforeTitle", js.undefined)
     
     @scala.inline
-    def deleteBeforeLabel: Self = this.set("beforeLabel", js.undefined)
+    def setFooter(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "footer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeTitle(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("beforeTitle", js.Any.fromFunction2(value))
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteBeforeTitle: Self = this.set("beforeTitle", js.undefined)
+    def setLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "label", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFooter(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("footer", js.Any.fromFunction2(value))
+    def setLabelColor(
+      value: (/* tooltipItem */ ChartTooltipItem, /* chart */ typings.chartJs.mod.Chart) => ChartTooltipLabelColor
+    ): Self = StObject.set(x, "labelColor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def setLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = this.set("label", js.Any.fromFunction2(value))
+    def setLabelTextColor(value: (/* tooltipItem */ ChartTooltipItem, /* chart */ typings.chartJs.mod.Chart) => String): Self = StObject.set(x, "labelTextColor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelTextColorUndefined: Self = StObject.set(x, "labelTextColor", js.undefined)
     
     @scala.inline
-    def setLabelColor(value: (/* tooltipItem */ ChartTooltipItem, /* chart */ Chart) => ChartTooltipLabelColor): Self = this.set("labelColor", js.Any.fromFunction2(value))
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setTitle(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "title", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLabelTextColor(value: (/* tooltipItem */ ChartTooltipItem, /* chart */ Chart) => String): Self = this.set("labelTextColor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteLabelTextColor: Self = this.set("labelTextColor", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: (/* item */ js.Array[ChartTooltipItem], /* data */ ChartData) => String | js.Array[String]): Self = this.set("title", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

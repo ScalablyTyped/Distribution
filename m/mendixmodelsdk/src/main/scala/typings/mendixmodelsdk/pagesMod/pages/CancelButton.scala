@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,16 +36,20 @@ class CancelButton protected () extends Button {
   def closePage: Boolean = js.native
   def closePage_=(newValue: Boolean): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton")
-@js.native
-object CancelButton extends js.Object {
+object CancelButton {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new CancelButton instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.create")
+  @js.native
   def create(model: IModel): CancelButton = js.native
   
   /**
@@ -55,6 +60,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): CancelButton = js.native
   
   /**
@@ -65,6 +73,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): CancelButton = js.native
   
   /**
@@ -75,6 +86,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): CancelButton = js.native
   
   /**
@@ -85,6 +99,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): CancelButton = js.native
   
   /**
@@ -95,6 +112,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): CancelButton = js.native
   
   /**
@@ -105,6 +125,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): CancelButton = js.native
   
   /**
@@ -115,6 +138,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): CancelButton = js.native
   
   /**
@@ -125,6 +151,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): CancelButton = js.native
   
   /**
@@ -135,6 +164,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): CancelButton = js.native
   
   /**
@@ -145,6 +177,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): CancelButton = js.native
   
   /**
@@ -155,6 +190,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): CancelButton = js.native
   
   /**
@@ -165,6 +203,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): CancelButton = js.native
   
   /**
@@ -175,6 +216,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): CancelButton = js.native
   
   /**
@@ -185,6 +229,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): CancelButton = js.native
   
   /**
@@ -195,6 +242,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): CancelButton = js.native
   
   /**
@@ -205,6 +255,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): CancelButton = js.native
   
   /**
@@ -215,6 +268,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): CancelButton = js.native
   
   /**
@@ -225,6 +281,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): CancelButton = js.native
   
   /**
@@ -235,6 +294,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): CancelButton = js.native
   
   /**
@@ -245,6 +307,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): CancelButton = js.native
   
   /**
@@ -255,6 +320,9 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): CancelButton = js.native
   
   /**
@@ -265,9 +333,22 @@ object CancelButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.0.1
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): CancelButton = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CancelButton.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

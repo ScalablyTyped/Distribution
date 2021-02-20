@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLPerformanceNavigation extends js.Object {
+trait IHTMLPerformanceNavigation extends StObject {
   
   @JSName("MSHTML.IHTMLPerformanceNavigation_typekey")
   var MSHTMLDotIHTMLPerformanceNavigation_typekey: IHTMLPerformanceNavigation = js.native
@@ -32,30 +33,18 @@ object IHTMLPerformanceNavigation {
   }
   
   @scala.inline
-  implicit class IHTMLPerformanceNavigationOps[Self <: IHTMLPerformanceNavigation] (val x: Self) extends AnyVal {
+  implicit class IHTMLPerformanceNavigationMutableBuilder[Self <: IHTMLPerformanceNavigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotIHTMLPerformanceNavigation_typekey(value: IHTMLPerformanceNavigation): Self = StObject.set(x, "MSHTML.IHTMLPerformanceNavigation_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMSHTMLDotIHTMLPerformanceNavigation_typekey(value: IHTMLPerformanceNavigation): Self = this.set("MSHTML.IHTMLPerformanceNavigation_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedirectCount(value: Double): Self = this.set("redirectCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

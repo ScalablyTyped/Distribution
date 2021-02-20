@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesPutFunctionConcurrencyInputMod.PutFun
 import typings.awsSdkClientLambdaNode.typesPutFunctionConcurrencyOutputMod.PutFunctionConcurrencyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/PutFunctionConcurrencyCommand", JSImport.Namespace)
-@js.native
-object putFunctionConcurrencyCommandMod extends js.Object {
+object putFunctionConcurrencyCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/PutFunctionConcurrencyCommand", "PutFunctionConcurrencyCommand")
   @js.native
   class PutFunctionConcurrencyCommand protected () extends Command[
           InputTypesUnion, 

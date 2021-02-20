@@ -5,6 +5,7 @@ import typings.sketchapp.sketchappStrings.path
 import typings.sketchapp.sketchappStrings.rectangle
 import typings.sketchapp.sketchappStrings.shapePath
 import typings.sketchapp.sketchappStrings.triangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,36 +58,24 @@ object SketchMSPathLayer {
   }
   
   @scala.inline
-  implicit class SketchMSPathLayerOps[Self <: SketchMSPathLayer] (val x: Self) extends AnyVal {
+  implicit class SketchMSPathLayerMutableBuilder[Self <: SketchMSPathLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdited(value: Boolean): Self = StObject.set(x, "edited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointRadiusBehaviour(value: Double): Self = StObject.set(x, "pointRadiusBehaviour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: path | shapePath | rectangle | oval | triangle): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[SketchMSPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdited(value: Boolean): Self = this.set("edited", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: SketchMSPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setIsClosed(value: Boolean): Self = this.set("isClosed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointRadiusBehaviour(value: Double): Self = this.set("pointRadiusBehaviour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointsVarargs(value: SketchMSPoint*): Self = this.set("points", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoints(value: js.Array[SketchMSPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def set_class(value: path | shapePath | rectangle | oval | triangle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

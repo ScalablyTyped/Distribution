@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArtUrl extends js.Object {
+trait ArtUrl extends StObject {
   
   var artUrl: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object ArtUrl {
   }
   
   @scala.inline
-  implicit class ArtUrlOps[Self <: ArtUrl] (val x: Self) extends AnyVal {
+  implicit class ArtUrlMutableBuilder[Self <: ArtUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtUrl(value: String): Self = StObject.set(x, "artUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtUrlUndefined: Self = StObject.set(x, "artUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGservicesKey(value: String): Self = StObject.set(x, "gservicesKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtUrl(value: String): Self = this.set("artUrl", value.asInstanceOf[js.Any])
+    def setGservicesKeyUndefined: Self = StObject.set(x, "gservicesKey", js.undefined)
     
     @scala.inline
-    def deleteArtUrl: Self = this.set("artUrl", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGservicesKey(value: String): Self = this.set("gservicesKey", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGservicesKey: Self = this.set("gservicesKey", js.undefined)
+    def setItems(value: js.Array[Author]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(value: Author*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[Author]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: Author*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

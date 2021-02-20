@@ -1,11 +1,12 @@
 package typings.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerStreamResponseOptions extends js.Object {
+trait ServerStreamResponseOptions extends StObject {
   
   var endStream: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ServerStreamResponseOptions {
   }
   
   @scala.inline
-  implicit class ServerStreamResponseOptionsOps[Self <: ServerStreamResponseOptions] (val x: Self) extends AnyVal {
+  implicit class ServerStreamResponseOptionsMutableBuilder[Self <: ServerStreamResponseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndStream(value: Boolean): Self = StObject.set(x, "endStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndStreamUndefined: Self = StObject.set(x, "endStream", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndStream(value: Boolean): Self = this.set("endStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndStream: Self = this.set("endStream", js.undefined)
-    
-    @scala.inline
-    def setWaitForTrailers(value: Boolean): Self = this.set("waitForTrailers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForTrailers: Self = this.set("waitForTrailers", js.undefined)
+    def setWaitForTrailersUndefined: Self = StObject.set(x, "waitForTrailers", js.undefined)
   }
 }

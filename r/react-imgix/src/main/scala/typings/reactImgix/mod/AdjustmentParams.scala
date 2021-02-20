@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdjustmentParams extends js.Object {
+trait AdjustmentParams extends StObject {
   
   var bri: js.UndefOr[ImgixParamType] = js.native
   
@@ -42,96 +43,84 @@ object AdjustmentParams {
   }
   
   @scala.inline
-  implicit class AdjustmentParamsOps[Self <: AdjustmentParams] (val x: Self) extends AnyVal {
+  implicit class AdjustmentParamsMutableBuilder[Self <: AdjustmentParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBri(value: ImgixParamType): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBriUndefined: Self = StObject.set(x, "bri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCon(value: ImgixParamType): Self = StObject.set(x, "con", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBri(value: ImgixParamType): Self = this.set("bri", value.asInstanceOf[js.Any])
+    def setConUndefined: Self = StObject.set(x, "con", js.undefined)
     
     @scala.inline
-    def deleteBri: Self = this.set("bri", js.undefined)
+    def setExp(value: ImgixParamType): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCon(value: ImgixParamType): Self = this.set("con", value.asInstanceOf[js.Any])
+    def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
     
     @scala.inline
-    def deleteCon: Self = this.set("con", js.undefined)
+    def setGam(value: ImgixParamType): Self = StObject.set(x, "gam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp(value: ImgixParamType): Self = this.set("exp", value.asInstanceOf[js.Any])
+    def setGamUndefined: Self = StObject.set(x, "gam", js.undefined)
     
     @scala.inline
-    def deleteExp: Self = this.set("exp", js.undefined)
+    def setHigh(value: ImgixParamType): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGam(value: ImgixParamType): Self = this.set("gam", value.asInstanceOf[js.Any])
+    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
     @scala.inline
-    def deleteGam: Self = this.set("gam", js.undefined)
+    def setHue(value: ImgixParamType): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh(value: ImgixParamType): Self = this.set("high", value.asInstanceOf[js.Any])
+    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
     @scala.inline
-    def deleteHigh: Self = this.set("high", js.undefined)
+    def setInvert(value: ImgixParamType): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: ImgixParamType): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
     @scala.inline
-    def deleteHue: Self = this.set("hue", js.undefined)
+    def setSat(value: ImgixParamType): Self = StObject.set(x, "sat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvert(value: ImgixParamType): Self = this.set("invert", value.asInstanceOf[js.Any])
+    def setSatUndefined: Self = StObject.set(x, "sat", js.undefined)
     
     @scala.inline
-    def deleteInvert: Self = this.set("invert", js.undefined)
+    def setShad(value: ImgixParamType): Self = StObject.set(x, "shad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSat(value: ImgixParamType): Self = this.set("sat", value.asInstanceOf[js.Any])
+    def setShadUndefined: Self = StObject.set(x, "shad", js.undefined)
     
     @scala.inline
-    def deleteSat: Self = this.set("sat", js.undefined)
+    def setSharp(value: ImgixParamType): Self = StObject.set(x, "sharp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShad(value: ImgixParamType): Self = this.set("shad", value.asInstanceOf[js.Any])
+    def setSharpUndefined: Self = StObject.set(x, "sharp", js.undefined)
     
     @scala.inline
-    def deleteShad: Self = this.set("shad", js.undefined)
+    def setUsm(value: ImgixParamType): Self = StObject.set(x, "usm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharp(value: ImgixParamType): Self = this.set("sharp", value.asInstanceOf[js.Any])
+    def setUsmUndefined: Self = StObject.set(x, "usm", js.undefined)
     
     @scala.inline
-    def deleteSharp: Self = this.set("sharp", js.undefined)
+    def setUsmrad(value: ImgixParamType): Self = StObject.set(x, "usmrad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsm(value: ImgixParamType): Self = this.set("usm", value.asInstanceOf[js.Any])
+    def setUsmradUndefined: Self = StObject.set(x, "usmrad", js.undefined)
     
     @scala.inline
-    def deleteUsm: Self = this.set("usm", js.undefined)
+    def setVib(value: ImgixParamType): Self = StObject.set(x, "vib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsmrad(value: ImgixParamType): Self = this.set("usmrad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsmrad: Self = this.set("usmrad", js.undefined)
-    
-    @scala.inline
-    def setVib(value: ImgixParamType): Self = this.set("vib", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVib: Self = this.set("vib", js.undefined)
+    def setVibUndefined: Self = StObject.set(x, "vib", js.undefined)
   }
 }

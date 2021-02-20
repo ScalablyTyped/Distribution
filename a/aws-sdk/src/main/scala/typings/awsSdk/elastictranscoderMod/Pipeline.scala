@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pipeline extends js.Object {
+trait Pipeline extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the pipeline.
@@ -71,84 +72,72 @@ object Pipeline {
   }
   
   @scala.inline
-  implicit class PipelineOps[Self <: Pipeline] (val x: Self) extends AnyVal {
+  implicit class PipelineMutableBuilder[Self <: Pipeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsKmsKeyArn(value: KeyArn): Self = StObject.set(x, "AwsKmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAwsKmsKeyArnUndefined: Self = StObject.set(x, "AwsKmsKeyArn", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setContentConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ContentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsKmsKeyArn(value: KeyArn): Self = this.set("AwsKmsKeyArn", value.asInstanceOf[js.Any])
+    def setContentConfigUndefined: Self = StObject.set(x, "ContentConfig", js.undefined)
     
     @scala.inline
-    def deleteAwsKmsKeyArn: Self = this.set("AwsKmsKeyArn", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentConfig(value: PipelineOutputConfig): Self = this.set("ContentConfig", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteContentConfig: Self = this.set("ContentConfig", js.undefined)
+    def setInputBucket(value: BucketName): Self = StObject.set(x, "InputBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInputBucketUndefined: Self = StObject.set(x, "InputBucket", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputBucket(value: BucketName): Self = this.set("InputBucket", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteInputBucket: Self = this.set("InputBucket", js.undefined)
+    def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOutputBucket(value: BucketName): Self = StObject.set(x, "OutputBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifications(value: Notifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    def setOutputBucketUndefined: Self = StObject.set(x, "OutputBucket", js.undefined)
     
     @scala.inline
-    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputBucket(value: BucketName): Self = this.set("OutputBucket", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteOutputBucket: Self = this.set("OutputBucket", js.undefined)
+    def setStatus(value: PipelineStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setThumbnailConfig(value: PipelineOutputConfig): Self = StObject.set(x, "ThumbnailConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PipelineStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setThumbnailConfig(value: PipelineOutputConfig): Self = this.set("ThumbnailConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailConfig: Self = this.set("ThumbnailConfig", js.undefined)
+    def setThumbnailConfigUndefined: Self = StObject.set(x, "ThumbnailConfig", js.undefined)
   }
 }

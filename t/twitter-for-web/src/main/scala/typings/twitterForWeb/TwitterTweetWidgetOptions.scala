@@ -7,6 +7,7 @@ import typings.twitterForWeb.twitterForWebStrings.hidden
 import typings.twitterForWeb.twitterForWebStrings.light
 import typings.twitterForWeb.twitterForWebStrings.none
 import typings.twitterForWeb.twitterForWebStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,54 +57,42 @@ object TwitterTweetWidgetOptions {
   }
   
   @scala.inline
-  implicit class TwitterTweetWidgetOptionsOps[Self <: TwitterTweetWidgetOptions] (val x: Self) extends AnyVal {
+  implicit class TwitterTweetWidgetOptionsMutableBuilder[Self <: TwitterTweetWidgetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCards(value: hidden | visible): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setConversation(value: none | all): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCards(value: hidden | visible): Self = this.set("cards", value.asInstanceOf[js.Any])
+    def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
     
     @scala.inline
-    def deleteCards: Self = this.set("cards", js.undefined)
+    def setLinkColor(value: String): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversation(value: none | all): Self = this.set("conversation", value.asInstanceOf[js.Any])
+    def setLinkColorUndefined: Self = StObject.set(x, "linkColor", js.undefined)
     
     @scala.inline
-    def deleteConversation: Self = this.set("conversation", js.undefined)
+    def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkColor(value: String): Self = this.set("linkColor", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteLinkColor: Self = this.set("linkColor", js.undefined)
+    def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: dark | light): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | auto): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

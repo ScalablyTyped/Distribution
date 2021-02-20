@@ -2,12 +2,13 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import typings.mendixmodelsdk.mendixmodelsdkStrings.fast
 import typings.mendixmodelsdk.mendixmodelsdkStrings.full
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDeployJobStatus extends js.Object {
+trait IDeployJobStatus extends StObject {
   
   var appUrl: js.UndefOr[String] = js.native
   
@@ -49,66 +50,54 @@ object IDeployJobStatus {
   }
   
   @scala.inline
-  implicit class IDeployJobStatusOps[Self <: IDeployJobStatus] (val x: Self) extends AnyVal {
+  implicit class IDeployJobStatusMutableBuilder[Self <: IDeployJobStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildErrors(value: js.Array[IBuildError]): Self = StObject.set(x, "buildErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobid(value: String): Self = this.set("jobid", value.asInstanceOf[js.Any])
+    def setBuildErrorsUndefined: Self = StObject.set(x, "buildErrors", js.undefined)
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setBuildErrorsVarargs(value: IBuildError*): Self = StObject.set(x, "buildErrors", js.Array(value :_*))
     
     @scala.inline
-    def setStatus(value: IUpdateAppJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setBuildstatus(value: String): Self = StObject.set(x, "buildstatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraceVarargs(value: String*): Self = this.set("trace", js.Array(value :_*))
+    def setBuildstatusNull: Self = StObject.set(x, "buildstatus", null)
     
     @scala.inline
-    def setTrace(value: js.Array[String]): Self = this.set("trace", value.asInstanceOf[js.Any])
+    def setConsistencyErrors(value: js.Array[IProblem]): Self = StObject.set(x, "consistencyErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: full | fast): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setConsistencyErrorsUndefined: Self = StObject.set(x, "consistencyErrors", js.undefined)
     
     @scala.inline
-    def setAppUrl(value: String): Self = this.set("appUrl", value.asInstanceOf[js.Any])
+    def setConsistencyErrorsVarargs(value: IProblem*): Self = StObject.set(x, "consistencyErrors", js.Array(value :_*))
     
     @scala.inline
-    def deleteAppUrl: Self = this.set("appUrl", js.undefined)
+    def setJobid(value: String): Self = StObject.set(x, "jobid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildErrorsVarargs(value: IBuildError*): Self = this.set("buildErrors", js.Array(value :_*))
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildErrors(value: js.Array[IBuildError]): Self = this.set("buildErrors", value.asInstanceOf[js.Any])
+    def setStatus(value: IUpdateAppJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildErrors: Self = this.set("buildErrors", js.undefined)
+    def setTrace(value: js.Array[String]): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildstatus(value: String): Self = this.set("buildstatus", value.asInstanceOf[js.Any])
+    def setTraceVarargs(value: String*): Self = StObject.set(x, "trace", js.Array(value :_*))
     
     @scala.inline
-    def setBuildstatusNull: Self = this.set("buildstatus", null)
-    
-    @scala.inline
-    def setConsistencyErrorsVarargs(value: IProblem*): Self = this.set("consistencyErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setConsistencyErrors(value: js.Array[IProblem]): Self = this.set("consistencyErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsistencyErrors: Self = this.set("consistencyErrors", js.undefined)
+    def setType(value: full | fast): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

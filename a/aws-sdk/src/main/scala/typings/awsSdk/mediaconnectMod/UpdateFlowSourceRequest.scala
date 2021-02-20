@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFlowSourceRequest extends js.Object {
+trait UpdateFlowSourceRequest extends StObject {
   
   /**
     * The type of encryption used on the content ingested from this source.
@@ -76,84 +77,72 @@ object UpdateFlowSourceRequest {
   }
   
   @scala.inline
-  implicit class UpdateFlowSourceRequestOps[Self <: UpdateFlowSourceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateFlowSourceRequestMutableBuilder[Self <: UpdateFlowSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecryption(value: UpdateEncryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecryptionUndefined: Self = StObject.set(x, "Decryption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setSourceArn(value: string): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecryption(value: UpdateEncryption): Self = this.set("Decryption", value.asInstanceOf[js.Any])
+    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
     @scala.inline
-    def deleteDecryption: Self = this.set("Decryption", js.undefined)
+    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
     
     @scala.inline
-    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
+    def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntitlementArn: Self = this.set("EntitlementArn", js.undefined)
+    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
     @scala.inline
-    def setIngestPort(value: integer): Self = this.set("IngestPort", value.asInstanceOf[js.Any])
+    def setMaxLatency(value: integer): Self = StObject.set(x, "MaxLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIngestPort: Self = this.set("IngestPort", js.undefined)
+    def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
     
     @scala.inline
-    def setMaxBitrate(value: integer): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def setMaxLatency(value: integer): Self = this.set("MaxLatency", value.asInstanceOf[js.Any])
+    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLatency: Self = this.set("MaxLatency", js.undefined)
+    def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamId(value: string): Self = this.set("StreamId", value.asInstanceOf[js.Any])
+    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
     
     @scala.inline
-    def deleteStreamId: Self = this.set("StreamId", js.undefined)
+    def setWhitelistCidr(value: string): Self = StObject.set(x, "WhitelistCidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcInterfaceName(value: string): Self = this.set("VpcInterfaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcInterfaceName: Self = this.set("VpcInterfaceName", js.undefined)
-    
-    @scala.inline
-    def setWhitelistCidr(value: string): Self = this.set("WhitelistCidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistCidr: Self = this.set("WhitelistCidr", js.undefined)
+    def setWhitelistCidrUndefined: Self = StObject.set(x, "WhitelistCidr", js.undefined)
   }
 }

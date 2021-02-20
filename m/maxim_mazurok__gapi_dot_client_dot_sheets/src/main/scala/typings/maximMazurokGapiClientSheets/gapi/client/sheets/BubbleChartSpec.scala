@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BubbleChartSpec extends js.Object {
+trait BubbleChartSpec extends StObject {
   
   /** The bubble border color. */
   var bubbleBorderColor: js.UndefOr[Color] = js.native
@@ -58,90 +59,78 @@ object BubbleChartSpec {
   }
   
   @scala.inline
-  implicit class BubbleChartSpecOps[Self <: BubbleChartSpec] (val x: Self) extends AnyVal {
+  implicit class BubbleChartSpecMutableBuilder[Self <: BubbleChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbleBorderColor(value: Color): Self = StObject.set(x, "bubbleBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBubbleBorderColorStyle(value: ColorStyle): Self = StObject.set(x, "bubbleBorderColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBubbleBorderColorStyleUndefined: Self = StObject.set(x, "bubbleBorderColorStyle", js.undefined)
     
     @scala.inline
-    def setBubbleBorderColor(value: Color): Self = this.set("bubbleBorderColor", value.asInstanceOf[js.Any])
+    def setBubbleBorderColorUndefined: Self = StObject.set(x, "bubbleBorderColor", js.undefined)
     
     @scala.inline
-    def deleteBubbleBorderColor: Self = this.set("bubbleBorderColor", js.undefined)
+    def setBubbleLabels(value: ChartData): Self = StObject.set(x, "bubbleLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleBorderColorStyle(value: ColorStyle): Self = this.set("bubbleBorderColorStyle", value.asInstanceOf[js.Any])
+    def setBubbleLabelsUndefined: Self = StObject.set(x, "bubbleLabels", js.undefined)
     
     @scala.inline
-    def deleteBubbleBorderColorStyle: Self = this.set("bubbleBorderColorStyle", js.undefined)
+    def setBubbleMaxRadiusSize(value: Double): Self = StObject.set(x, "bubbleMaxRadiusSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleLabels(value: ChartData): Self = this.set("bubbleLabels", value.asInstanceOf[js.Any])
+    def setBubbleMaxRadiusSizeUndefined: Self = StObject.set(x, "bubbleMaxRadiusSize", js.undefined)
     
     @scala.inline
-    def deleteBubbleLabels: Self = this.set("bubbleLabels", js.undefined)
+    def setBubbleMinRadiusSize(value: Double): Self = StObject.set(x, "bubbleMinRadiusSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleMaxRadiusSize(value: Double): Self = this.set("bubbleMaxRadiusSize", value.asInstanceOf[js.Any])
+    def setBubbleMinRadiusSizeUndefined: Self = StObject.set(x, "bubbleMinRadiusSize", js.undefined)
     
     @scala.inline
-    def deleteBubbleMaxRadiusSize: Self = this.set("bubbleMaxRadiusSize", js.undefined)
+    def setBubbleOpacity(value: Double): Self = StObject.set(x, "bubbleOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleMinRadiusSize(value: Double): Self = this.set("bubbleMinRadiusSize", value.asInstanceOf[js.Any])
+    def setBubbleOpacityUndefined: Self = StObject.set(x, "bubbleOpacity", js.undefined)
     
     @scala.inline
-    def deleteBubbleMinRadiusSize: Self = this.set("bubbleMinRadiusSize", js.undefined)
+    def setBubbleSizes(value: ChartData): Self = StObject.set(x, "bubbleSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleOpacity(value: Double): Self = this.set("bubbleOpacity", value.asInstanceOf[js.Any])
+    def setBubbleSizesUndefined: Self = StObject.set(x, "bubbleSizes", js.undefined)
     
     @scala.inline
-    def deleteBubbleOpacity: Self = this.set("bubbleOpacity", js.undefined)
+    def setBubbleTextStyle(value: TextFormat): Self = StObject.set(x, "bubbleTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleSizes(value: ChartData): Self = this.set("bubbleSizes", value.asInstanceOf[js.Any])
+    def setBubbleTextStyleUndefined: Self = StObject.set(x, "bubbleTextStyle", js.undefined)
     
     @scala.inline
-    def deleteBubbleSizes: Self = this.set("bubbleSizes", js.undefined)
+    def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleTextStyle(value: TextFormat): Self = this.set("bubbleTextStyle", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteBubbleTextStyle: Self = this.set("bubbleTextStyle", js.undefined)
+    def setGroupIds(value: ChartData): Self = StObject.set(x, "groupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: ChartData): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setGroupIdsUndefined: Self = StObject.set(x, "groupIds", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIds(value: ChartData): Self = this.set("groupIds", value.asInstanceOf[js.Any])
+    def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
     @scala.inline
-    def deleteGroupIds: Self = this.set("groupIds", js.undefined)
+    def setSeries(value: ChartData): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendPosition(value: String): Self = this.set("legendPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegendPosition: Self = this.set("legendPosition", js.undefined)
-    
-    @scala.inline
-    def setSeries(value: ChartData): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
   }
 }

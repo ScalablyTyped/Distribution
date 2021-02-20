@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/DeleteSVGIcon", JSImport.Namespace)
-@js.native
-object deleteSVGIconMod extends js.Object {
+object deleteSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/DeleteSVGIcon", "DeleteSVGIcon")
+  @js.native
   val DeleteSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

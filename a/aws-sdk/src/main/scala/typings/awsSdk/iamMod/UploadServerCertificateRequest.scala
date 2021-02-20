@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadServerCertificateRequest extends js.Object {
+trait UploadServerCertificateRequest extends StObject {
   
   /**
     * The contents of the public key certificate in PEM-encoded format. The regex pattern used to validate this parameter is a string of characters consisting of the following:   Any printable ASCII character ranging from the space character (\\u0020) through the end of the ASCII character range   The printable characters in the Basic Latin and Latin-1 Supplement character set (through \\u00FF)   The special characters tab (\\u0009), line feed (\\u000A), and carriage return (\\u000D)  
@@ -45,39 +46,27 @@ object UploadServerCertificateRequest {
   }
   
   @scala.inline
-  implicit class UploadServerCertificateRequestOps[Self <: UploadServerCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class UploadServerCertificateRequestMutableBuilder[Self <: UploadServerCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateChain(value: certificateChainType): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
     @scala.inline
-    def setCertificateBody(value: certificateBodyType): Self = this.set("CertificateBody", value.asInstanceOf[js.Any])
+    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKey(value: privateKeyType): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = this.set("ServerCertificateName", value.asInstanceOf[js.Any])
+    def setPrivateKey(value: privateKeyType): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateChain(value: certificateChainType): Self = this.set("CertificateChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateChain: Self = this.set("CertificateChain", js.undefined)
-    
-    @scala.inline
-    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
   }
 }

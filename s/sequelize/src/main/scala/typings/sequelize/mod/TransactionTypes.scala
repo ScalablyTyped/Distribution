@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `options.transactionType` in `new Sequelize`.
   */
 @js.native
-trait TransactionTypes extends js.Object {
+trait TransactionTypes extends StObject {
   
   var DEFERRED: TransactionTypeDeferred = js.native
   
-   // 'IMMEDIATE'
+  // 'IMMEDIATE'
   var EXCLUSIVE: TransactionTypeExclusive = js.native
   
-   // 'DEFERRED'
+  // 'DEFERRED'
   var IMMEDIATE: TransactionTypeImmediate = js.native
 }
 object TransactionTypes {
@@ -33,27 +34,15 @@ object TransactionTypes {
   }
   
   @scala.inline
-  implicit class TransactionTypesOps[Self <: TransactionTypes] (val x: Self) extends AnyVal {
+  implicit class TransactionTypesMutableBuilder[Self <: TransactionTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDEFERRED(value: TransactionTypeDeferred): Self = StObject.set(x, "DEFERRED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEXCLUSIVE(value: TransactionTypeExclusive): Self = StObject.set(x, "EXCLUSIVE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDEFERRED(value: TransactionTypeDeferred): Self = this.set("DEFERRED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEXCLUSIVE(value: TransactionTypeExclusive): Self = this.set("EXCLUSIVE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIMMEDIATE(value: TransactionTypeImmediate): Self = this.set("IMMEDIATE", value.asInstanceOf[js.Any])
+    def setIMMEDIATE(value: TransactionTypeImmediate): Self = StObject.set(x, "IMMEDIATE", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderUiTemplateRequest extends js.Object {
+trait RenderUiTemplateRequest extends StObject {
   
   /**
     * The HumanTaskUiArn of the worker UI that you want to render. Do not provide a HumanTaskUiArn if you use the UiTemplate parameter. See a list of available Human Ui Amazon Resource Names (ARNs) in UiConfig.
@@ -36,36 +37,24 @@ object RenderUiTemplateRequest {
   }
   
   @scala.inline
-  implicit class RenderUiTemplateRequestOps[Self <: RenderUiTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class RenderUiTemplateRequestMutableBuilder[Self <: RenderUiTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHumanTaskUiArnUndefined: Self = StObject.set(x, "HumanTaskUiArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setTask(value: RenderableTask): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTask(value: RenderableTask): Self = this.set("Task", value.asInstanceOf[js.Any])
+    def setUiTemplate(value: UiTemplate): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = this.set("HumanTaskUiArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHumanTaskUiArn: Self = this.set("HumanTaskUiArn", js.undefined)
-    
-    @scala.inline
-    def setUiTemplate(value: UiTemplate): Self = this.set("UiTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiTemplate: Self = this.set("UiTemplate", js.undefined)
+    def setUiTemplateUndefined: Self = StObject.set(x, "UiTemplate", js.undefined)
   }
 }

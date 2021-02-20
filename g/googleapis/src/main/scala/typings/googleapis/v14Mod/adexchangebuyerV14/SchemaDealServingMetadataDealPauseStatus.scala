@@ -1,5 +1,6 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * has_buyer_paused or the has_seller_paused bits can be set independently.
   */
 @js.native
-trait SchemaDealServingMetadataDealPauseStatus extends js.Object {
+trait SchemaDealServingMetadataDealPauseStatus extends StObject {
   
   var buyerPauseReason: js.UndefOr[String] = js.native
   
@@ -34,48 +35,36 @@ object SchemaDealServingMetadataDealPauseStatus {
   }
   
   @scala.inline
-  implicit class SchemaDealServingMetadataDealPauseStatusOps[Self <: SchemaDealServingMetadataDealPauseStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaDealServingMetadataDealPauseStatusMutableBuilder[Self <: SchemaDealServingMetadataDealPauseStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuyerPauseReason(value: String): Self = StObject.set(x, "buyerPauseReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuyerPauseReasonUndefined: Self = StObject.set(x, "buyerPauseReason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstPausedBy(value: String): Self = StObject.set(x, "firstPausedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyerPauseReason(value: String): Self = this.set("buyerPauseReason", value.asInstanceOf[js.Any])
+    def setFirstPausedByUndefined: Self = StObject.set(x, "firstPausedBy", js.undefined)
     
     @scala.inline
-    def deleteBuyerPauseReason: Self = this.set("buyerPauseReason", js.undefined)
+    def setHasBuyerPaused(value: Boolean): Self = StObject.set(x, "hasBuyerPaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPausedBy(value: String): Self = this.set("firstPausedBy", value.asInstanceOf[js.Any])
+    def setHasBuyerPausedUndefined: Self = StObject.set(x, "hasBuyerPaused", js.undefined)
     
     @scala.inline
-    def deleteFirstPausedBy: Self = this.set("firstPausedBy", js.undefined)
+    def setHasSellerPaused(value: Boolean): Self = StObject.set(x, "hasSellerPaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBuyerPaused(value: Boolean): Self = this.set("hasBuyerPaused", value.asInstanceOf[js.Any])
+    def setHasSellerPausedUndefined: Self = StObject.set(x, "hasSellerPaused", js.undefined)
     
     @scala.inline
-    def deleteHasBuyerPaused: Self = this.set("hasBuyerPaused", js.undefined)
+    def setSellerPauseReason(value: String): Self = StObject.set(x, "sellerPauseReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSellerPaused(value: Boolean): Self = this.set("hasSellerPaused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasSellerPaused: Self = this.set("hasSellerPaused", js.undefined)
-    
-    @scala.inline
-    def setSellerPauseReason(value: String): Self = this.set("sellerPauseReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerPauseReason: Self = this.set("sellerPauseReason", js.undefined)
+    def setSellerPauseReasonUndefined: Self = StObject.set(x, "sellerPauseReason", js.undefined)
   }
 }

@@ -4,14 +4,14 @@ import typings.babylonjs.abstractActionManagerMod.AbstractActionManager
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Actions/actionManager", JSImport.Namespace)
-@js.native
-object actionManagerMod extends js.Object {
+object actionManagerMod {
   
+  @JSImport("babylonjs/Actions/actionManager", "ActionManager")
   @js.native
   class ActionManager protected () extends AbstractActionManager {
     /**
@@ -35,80 +35,103 @@ object actionManagerMod extends js.Object {
     def getScene(): Scene = js.native
   }
   /* static members */
-  @js.native
-  object ActionManager extends js.Object {
+  object ActionManager {
     
     /**
       * Get a trigger name by index
       * @param trigger defines the trigger index
       * @returns a trigger name
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.GetTriggerName")
+    @js.native
     def GetTriggerName(trigger: Double): String = js.native
     
     /**
       * Nothing
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.NothingTrigger")
+    @js.native
     val NothingTrigger: Double = js.native
     
     /**
       * On center pick
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnCenterPickTrigger")
+    @js.native
     val OnCenterPickTrigger: Double = js.native
     
     /**
       * On double pick
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnDoublePickTrigger")
+    @js.native
     val OnDoublePickTrigger: Double = js.native
     
     /**
       * On every frame
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnEveryFrameTrigger")
+    @js.native
     val OnEveryFrameTrigger: Double = js.native
     
     /**
       * On intersection enter
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnIntersectionEnterTrigger")
+    @js.native
     val OnIntersectionEnterTrigger: Double = js.native
     
     /**
       * On intersection exit
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnIntersectionExitTrigger")
+    @js.native
     val OnIntersectionExitTrigger: Double = js.native
     
     /**
       * On key down
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnKeyDownTrigger")
+    @js.native
     val OnKeyDownTrigger: Double = js.native
     
     /**
       * On key up
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnKeyUpTrigger")
+    @js.native
     val OnKeyUpTrigger: Double = js.native
     
     /**
       * On left pick
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnLeftPickTrigger")
+    @js.native
     val OnLeftPickTrigger: Double = js.native
     
     /**
       * On long press
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnLongPressTrigger")
+    @js.native
     val OnLongPressTrigger: Double = js.native
     
     /**
       * On pick down
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickDownTrigger")
+    @js.native
     val OnPickDownTrigger: Double = js.native
     
     /**
@@ -116,36 +139,48 @@ object actionManagerMod extends js.Object {
       * This trigger will only be raised if you also declared a OnPickDown
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickOutTrigger")
+    @js.native
     val OnPickOutTrigger: Double = js.native
     
     /**
       * On pick
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickTrigger")
+    @js.native
     val OnPickTrigger: Double = js.native
     
     /**
       * On pick up
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickUpTrigger")
+    @js.native
     val OnPickUpTrigger: Double = js.native
     
     /**
       * On pointer out
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPointerOutTrigger")
+    @js.native
     val OnPointerOutTrigger: Double = js.native
     
     /**
       * On pointer over
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPointerOverTrigger")
+    @js.native
     val OnPointerOverTrigger: Double = js.native
     
     /**
       * On right pick
       * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnRightPickTrigger")
+    @js.native
     val OnRightPickTrigger: Double = js.native
     
     /**
@@ -154,6 +189,8 @@ object actionManagerMod extends js.Object {
       * @param object defines the hosting mesh
       * @param scene defines the hosting scene
       */
+    @JSImport("babylonjs/Actions/actionManager", "ActionManager.Parse")
+    @js.native
     def Parse(parsedActions: js.Any, `object`: Nullable[AbstractMesh], scene: Scene): Unit = js.native
   }
 }

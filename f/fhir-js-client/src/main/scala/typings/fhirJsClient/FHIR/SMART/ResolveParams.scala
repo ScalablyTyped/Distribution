@@ -1,5 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the parameter to be passed to the resolve api method
   */
 @js.native
-trait ResolveParams extends js.Object {
+trait ResolveParams extends StObject {
   
   /**
     * The Bundle resource in which the reference will be resolved if the reference is a contained one within the bundle.
@@ -34,33 +35,21 @@ object ResolveParams {
   }
   
   @scala.inline
-  implicit class ResolveParamsOps[Self <: ResolveParams] (val x: Self) extends AnyVal {
+  implicit class ResolveParamsMutableBuilder[Self <: ResolveParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundle(value: Resource): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference(value: Reference): Self = this.set("reference", value.asInstanceOf[js.Any])
+    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundle(value: Resource): Self = this.set("bundle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBundle: Self = this.set("bundle", js.undefined)
-    
-    @scala.inline
-    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

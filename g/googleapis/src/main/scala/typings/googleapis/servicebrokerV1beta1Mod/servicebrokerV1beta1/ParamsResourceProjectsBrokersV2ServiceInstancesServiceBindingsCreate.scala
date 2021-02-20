@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate {
   }
   
   @scala.inline
-  implicit class ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreateOps[Self <: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreateMutableBuilder[Self <: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptsIncomplete(value: Boolean): Self = StObject.set(x, "acceptsIncomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptsIncompleteUndefined: Self = StObject.set(x, "acceptsIncomplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptsIncomplete(value: Boolean): Self = this.set("acceptsIncomplete", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAcceptsIncomplete: Self = this.set("acceptsIncomplete", js.undefined)
+    def setBinding_id(value: String): Self = StObject.set(x, "binding_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setBinding_idUndefined: Self = StObject.set(x, "binding_id", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinding_id(value: String): Self = this.set("binding_id", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteBinding_id: Self = this.set("binding_id", js.undefined)
+    def setRequestBody(value: SchemaGoogleCloudServicebrokerV1beta1Binding): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setRequestBody(value: SchemaGoogleCloudServicebrokerV1beta1Binding): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

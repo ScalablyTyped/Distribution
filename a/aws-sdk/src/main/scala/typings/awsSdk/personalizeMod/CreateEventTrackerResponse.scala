@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateEventTrackerResponse extends js.Object {
+trait CreateEventTrackerResponse extends StObject {
   
   /**
     * The ARN of the event tracker.
@@ -26,30 +27,18 @@ object CreateEventTrackerResponse {
   }
   
   @scala.inline
-  implicit class CreateEventTrackerResponseOps[Self <: CreateEventTrackerResponse] (val x: Self) extends AnyVal {
+  implicit class CreateEventTrackerResponseMutableBuilder[Self <: CreateEventTrackerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventTrackerArn(value: Arn): Self = StObject.set(x, "eventTrackerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTrackerArnUndefined: Self = StObject.set(x, "eventTrackerArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrackingId(value: TrackingId): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTrackerArn(value: Arn): Self = this.set("eventTrackerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTrackerArn: Self = this.set("eventTrackerArn", js.undefined)
-    
-    @scala.inline
-    def setTrackingId(value: TrackingId): Self = this.set("trackingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingId: Self = this.set("trackingId", js.undefined)
+    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
   }
 }

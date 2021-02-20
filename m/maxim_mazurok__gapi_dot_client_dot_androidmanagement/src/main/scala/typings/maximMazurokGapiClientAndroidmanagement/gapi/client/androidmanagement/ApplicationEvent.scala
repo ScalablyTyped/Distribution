@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationEvent extends js.Object {
+trait ApplicationEvent extends StObject {
   
   /** The creation time of the event. */
   var createTime: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ApplicationEvent {
   }
   
   @scala.inline
-  implicit class ApplicationEventOps[Self <: ApplicationEvent] (val x: Self) extends AnyVal {
+  implicit class ApplicationEventMutableBuilder[Self <: ApplicationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
-    
-    @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
   }
 }

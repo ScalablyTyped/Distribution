@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Credentials
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KeyCredentialStatus extends js.Object
+sealed trait KeyCredentialStatus extends StObject
 /** Represents the status of a key credential request. */
 @JSGlobal("Windows.Security.Credentials.KeyCredentialStatus")
 @js.native
-object KeyCredentialStatus extends js.Object {
+object KeyCredentialStatus extends StObject {
   
   /** The credential already exists. */
   @js.native

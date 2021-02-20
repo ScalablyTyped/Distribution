@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SiteCollection extends js.Object {
+trait SiteCollection extends StObject {
   
   // The geographic region code for where this site collection resides. Read-only.
   var dataLocationCode: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object SiteCollection {
   }
   
   @scala.inline
-  implicit class SiteCollectionOps[Self <: SiteCollection] (val x: Self) extends AnyVal {
+  implicit class SiteCollectionMutableBuilder[Self <: SiteCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLocationCode(value: NullableOption[String]): Self = StObject.set(x, "dataLocationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataLocationCodeNull: Self = StObject.set(x, "dataLocationCode", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataLocationCodeUndefined: Self = StObject.set(x, "dataLocationCode", js.undefined)
     
     @scala.inline
-    def setDataLocationCode(value: NullableOption[String]): Self = this.set("dataLocationCode", value.asInstanceOf[js.Any])
+    def setHostname(value: NullableOption[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataLocationCode: Self = this.set("dataLocationCode", js.undefined)
+    def setHostnameNull: Self = StObject.set(x, "hostname", null)
     
     @scala.inline
-    def setDataLocationCodeNull: Self = this.set("dataLocationCode", null)
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def setHostname(value: NullableOption[String]): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setRoot(value: NullableOption[Root]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setHostnameNull: Self = this.set("hostname", null)
-    
-    @scala.inline
-    def setRoot(value: NullableOption[Root]): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

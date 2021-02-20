@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,48 +38,36 @@ object CIMMultiLayerSymbol {
   }
   
   @scala.inline
-  implicit class CIMMultiLayerSymbolOps[Self <: CIMMultiLayerSymbol] (val x: Self) extends AnyVal {
+  implicit class CIMMultiLayerSymbolMutableBuilder[Self <: CIMMultiLayerSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffects(value: js.Array[CIMGeometricEffectType]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
     @scala.inline
-    def setEffectsVarargs(value: CIMGeometricEffectType*): Self = this.set("effects", js.Array(value :_*))
+    def setSymbolLayers(value: js.Array[CIMSymbolLayerType]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffects(value: js.Array[CIMGeometricEffectType]): Self = this.set("effects", value.asInstanceOf[js.Any])
+    def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
     
     @scala.inline
-    def deleteEffects: Self = this.set("effects", js.undefined)
+    def setSymbolLayersVarargs(value: CIMSymbolLayerType*): Self = StObject.set(x, "symbolLayers", js.Array(value :_*))
     
     @scala.inline
-    def setSymbolLayersVarargs(value: CIMSymbolLayerType*): Self = this.set("symbolLayers", js.Array(value :_*))
+    def setThumbnailURI(value: String): Self = StObject.set(x, "thumbnailURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolLayers(value: js.Array[CIMSymbolLayerType]): Self = this.set("symbolLayers", value.asInstanceOf[js.Any])
+    def setThumbnailURIUndefined: Self = StObject.set(x, "thumbnailURI", js.undefined)
     
     @scala.inline
-    def deleteSymbolLayers: Self = this.set("symbolLayers", js.undefined)
+    def setUseRealWorldSymbolSizes(value: Boolean): Self = StObject.set(x, "useRealWorldSymbolSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailURI(value: String): Self = this.set("thumbnailURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailURI: Self = this.set("thumbnailURI", js.undefined)
-    
-    @scala.inline
-    def setUseRealWorldSymbolSizes(value: Boolean): Self = this.set("useRealWorldSymbolSizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseRealWorldSymbolSizes: Self = this.set("useRealWorldSymbolSizes", js.undefined)
+    def setUseRealWorldSymbolSizesUndefined: Self = StObject.set(x, "useRealWorldSymbolSizes", js.undefined)
   }
 }

@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.left
 import typings.arcgisJsApi.arcgisJsApiStrings.middle
 import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,123 +137,111 @@ object TextSymbolProperties {
   }
   
   @scala.inline
-  implicit class TextSymbolPropertiesOps[Self <: TextSymbolProperties] (val x: Self) extends AnyVal {
+  implicit class TextSymbolPropertiesMutableBuilder[Self <: TextSymbolProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColorVarargs(value: Double*): Self = this.set("backgroundColor", js.Array(value :_*))
+    def setBorderLineColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "borderLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color_ | js.Array[Double] | String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderLineColorUndefined: Self = StObject.set(x, "borderLineColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderLineColorVarargs(value: Double*): Self = StObject.set(x, "borderLineColor", js.Array(value :_*))
     
     @scala.inline
-    def setBorderLineColorVarargs(value: Double*): Self = this.set("borderLineColor", js.Array(value :_*))
+    def setBorderLineSize(value: Double): Self = StObject.set(x, "borderLineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLineColor(value: Color_ | js.Array[Double] | String): Self = this.set("borderLineColor", value.asInstanceOf[js.Any])
+    def setBorderLineSizeUndefined: Self = StObject.set(x, "borderLineSize", js.undefined)
     
     @scala.inline
-    def deleteBorderLineColor: Self = this.set("borderLineColor", js.undefined)
+    def setFont(value: FontProperties): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLineSize(value: Double): Self = this.set("borderLineSize", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteBorderLineSize: Self = this.set("borderLineSize", js.undefined)
+    def setHaloColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "haloColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontProperties): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHaloColorUndefined: Self = StObject.set(x, "haloColor", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setHaloColorVarargs(value: Double*): Self = StObject.set(x, "haloColor", js.Array(value :_*))
     
     @scala.inline
-    def setHaloColorVarargs(value: Double*): Self = this.set("haloColor", js.Array(value :_*))
+    def setHaloSize(value: Double | String): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaloColor(value: Color_ | js.Array[Double] | String): Self = this.set("haloColor", value.asInstanceOf[js.Any])
+    def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
     
     @scala.inline
-    def deleteHaloColor: Self = this.set("haloColor", js.undefined)
+    def setHorizontalAlignment(value: left | right | center | justify): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaloSize(value: Double | String): Self = this.set("haloSize", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteHaloSize: Self = this.set("haloSize", js.undefined)
+    def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: left | right | center | justify): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKerning(value: Boolean): Self = this.set("kerning", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteKerning: Self = this.set("kerning", js.undefined)
+    def setLineWidth(value: Double | String): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double | String): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotated(value: Boolean): Self = this.set("rotated", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteRotated: Self = this.set("rotated", js.undefined)
+    def setVerticalAlignment(value: baseline | top | middle | bottom): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlignment(value: baseline | top | middle | bottom): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
     @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXoffset(value: Double | String): Self = this.set("xoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXoffset: Self = this.set("xoffset", js.undefined)
-    
-    @scala.inline
-    def setYoffset(value: Double | String): Self = this.set("yoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoffset: Self = this.set("yoffset", js.undefined)
+    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopExecutionOutput extends js.Object {
+trait StopExecutionOutput extends StObject {
   
   /**
     * The date the execution is stopped.
@@ -21,21 +22,9 @@ object StopExecutionOutput {
   }
   
   @scala.inline
-  implicit class StopExecutionOutputOps[Self <: StopExecutionOutput] (val x: Self) extends AnyVal {
+  implicit class StopExecutionOutputMutableBuilder[Self <: StopExecutionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStopDate(value: Timestamp): Self = this.set("stopDate", value.asInstanceOf[js.Any])
+    def setStopDate(value: Timestamp): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#MapRestriction Maps JavaScript API}
   */
 @js.native
-trait MapRestriction extends js.Object {
+trait MapRestriction extends StObject {
   
   /**
     * When set, a user can only pan and zoom inside the given bounds.
@@ -40,27 +41,15 @@ object MapRestriction {
   }
   
   @scala.inline
-  implicit class MapRestrictionOps[Self <: MapRestriction] (val x: Self) extends AnyVal {
+  implicit class MapRestrictionMutableBuilder[Self <: MapRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatLngBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "latLngBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLatLngBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = this.set("latLngBounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrictBounds(value: Boolean): Self = this.set("strictBounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictBounds: Self = this.set("strictBounds", js.undefined)
+    def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotThrowsAssertion extends js.Object {
+trait NotThrowsAssertion extends StObject {
   
   /** Assert that the function does not throw. */
   def apply(fn: js.Function0[_]): Unit = js.native

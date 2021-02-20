@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelMatrix extends js.Object {
+trait RaphaelMatrix extends StObject {
   
   /**
     * The matrix component at the first row, first column.

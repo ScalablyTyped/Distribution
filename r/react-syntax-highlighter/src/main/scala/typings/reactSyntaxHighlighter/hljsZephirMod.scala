@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/hljs/zephir", JSImport.Namespace)
-@js.native
-object hljsZephirMod extends js.Object {
+object hljsZephirMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/hljs/zephir", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

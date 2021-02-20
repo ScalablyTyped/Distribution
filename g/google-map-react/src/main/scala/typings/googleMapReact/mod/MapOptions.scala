@@ -1,11 +1,12 @@
 package typings.googleMapReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapOptions extends js.Object {
+trait MapOptions extends StObject {
   
   // Any options from https://developers.google.com/maps/documentation/javascript/reference/3/#MapOptions
   // excluding 'zoom' and 'center' which get set via props.
@@ -88,231 +89,219 @@ object MapOptions {
   }
   
   @scala.inline
-  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickableIcons(value: Boolean): Self = StObject.set(x, "clickableIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setClickableIconsUndefined: Self = StObject.set(x, "clickableIcons", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setControlSize(value: Double): Self = StObject.set(x, "controlSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickableIcons(value: Boolean): Self = this.set("clickableIcons", value.asInstanceOf[js.Any])
+    def setControlSizeUndefined: Self = StObject.set(x, "controlSize", js.undefined)
     
     @scala.inline
-    def deleteClickableIcons: Self = this.set("clickableIcons", js.undefined)
+    def setDisableDefaultUI(value: Boolean): Self = StObject.set(x, "disableDefaultUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlSize(value: Double): Self = this.set("controlSize", value.asInstanceOf[js.Any])
+    def setDisableDefaultUIUndefined: Self = StObject.set(x, "disableDefaultUI", js.undefined)
     
     @scala.inline
-    def deleteControlSize: Self = this.set("controlSize", js.undefined)
+    def setDisableDoubleClickZoom(value: Boolean): Self = StObject.set(x, "disableDoubleClickZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDefaultUI(value: Boolean): Self = this.set("disableDefaultUI", value.asInstanceOf[js.Any])
+    def setDisableDoubleClickZoomUndefined: Self = StObject.set(x, "disableDoubleClickZoom", js.undefined)
     
     @scala.inline
-    def deleteDisableDefaultUI: Self = this.set("disableDefaultUI", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDoubleClickZoom(value: Boolean): Self = this.set("disableDoubleClickZoom", value.asInstanceOf[js.Any])
+    def setDraggableCursor(value: String): Self = StObject.set(x, "draggableCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableDoubleClickZoom: Self = this.set("disableDoubleClickZoom", js.undefined)
+    def setDraggableCursorUndefined: Self = StObject.set(x, "draggableCursor", js.undefined)
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setDraggingCursor(value: String): Self = StObject.set(x, "draggingCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggableCursor(value: String): Self = this.set("draggableCursor", value.asInstanceOf[js.Any])
+    def setDraggingCursorUndefined: Self = StObject.set(x, "draggingCursor", js.undefined)
     
     @scala.inline
-    def deleteDraggableCursor: Self = this.set("draggableCursor", js.undefined)
+    def setFullscreenControl(value: Boolean): Self = StObject.set(x, "fullscreenControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggingCursor(value: String): Self = this.set("draggingCursor", value.asInstanceOf[js.Any])
+    def setFullscreenControlOptions(value: typings.googleMapReact.anon.Position): Self = StObject.set(x, "fullscreenControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDraggingCursor: Self = this.set("draggingCursor", js.undefined)
+    def setFullscreenControlOptionsUndefined: Self = StObject.set(x, "fullscreenControlOptions", js.undefined)
     
     @scala.inline
-    def setFullscreenControl(value: Boolean): Self = this.set("fullscreenControl", value.asInstanceOf[js.Any])
+    def setFullscreenControlUndefined: Self = StObject.set(x, "fullscreenControl", js.undefined)
     
     @scala.inline
-    def deleteFullscreenControl: Self = this.set("fullscreenControl", js.undefined)
+    def setGestureHandling(value: String): Self = StObject.set(x, "gestureHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenControlOptions(value: typings.googleMapReact.anon.Position): Self = this.set("fullscreenControlOptions", value.asInstanceOf[js.Any])
+    def setGestureHandlingUndefined: Self = StObject.set(x, "gestureHandling", js.undefined)
     
     @scala.inline
-    def deleteFullscreenControlOptions: Self = this.set("fullscreenControlOptions", js.undefined)
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureHandling(value: String): Self = this.set("gestureHandling", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteGestureHandling: Self = this.set("gestureHandling", js.undefined)
+    def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setKeyboardShortcutsUndefined: Self = StObject.set(x, "keyboardShortcuts", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setMapTypeControl(value: Boolean): Self = StObject.set(x, "mapTypeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardShortcuts(value: Boolean): Self = this.set("keyboardShortcuts", value.asInstanceOf[js.Any])
+    def setMapTypeControlOptions(value: js.Any): Self = StObject.set(x, "mapTypeControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyboardShortcuts: Self = this.set("keyboardShortcuts", js.undefined)
+    def setMapTypeControlOptionsUndefined: Self = StObject.set(x, "mapTypeControlOptions", js.undefined)
     
     @scala.inline
-    def setMapTypeControl(value: Boolean): Self = this.set("mapTypeControl", value.asInstanceOf[js.Any])
+    def setMapTypeControlUndefined: Self = StObject.set(x, "mapTypeControl", js.undefined)
     
     @scala.inline
-    def deleteMapTypeControl: Self = this.set("mapTypeControl", js.undefined)
+    def setMapTypeId(value: String): Self = StObject.set(x, "mapTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeControlOptions(value: js.Any): Self = this.set("mapTypeControlOptions", value.asInstanceOf[js.Any])
+    def setMapTypeIdUndefined: Self = StObject.set(x, "mapTypeId", js.undefined)
     
     @scala.inline
-    def deleteMapTypeControlOptions: Self = this.set("mapTypeControlOptions", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapTypeId(value: String): Self = this.set("mapTypeId", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMapTypeId: Self = this.set("mapTypeId", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinZoomOverride(value: Boolean): Self = StObject.set(x, "minZoomOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setMinZoomOverrideUndefined: Self = StObject.set(x, "minZoomOverride", js.undefined)
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setNoClear(value: Boolean): Self = StObject.set(x, "noClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoomOverride(value: Boolean): Self = this.set("minZoomOverride", value.asInstanceOf[js.Any])
+    def setNoClearUndefined: Self = StObject.set(x, "noClear", js.undefined)
     
     @scala.inline
-    def deleteMinZoomOverride: Self = this.set("minZoomOverride", js.undefined)
+    def setOptions(value: /* maps */ Maps => Props): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoClear(value: Boolean): Self = this.set("noClear", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteNoClear: Self = this.set("noClear", js.undefined)
+    def setPanControl(value: Boolean): Self = StObject.set(x, "panControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: /* maps */ Maps => Props): Self = this.set("options", js.Any.fromFunction1(value))
+    def setPanControlOptions(value: typings.googleMapReact.anon.Position): Self = StObject.set(x, "panControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setPanControlOptionsUndefined: Self = StObject.set(x, "panControlOptions", js.undefined)
     
     @scala.inline
-    def setPanControl(value: Boolean): Self = this.set("panControl", value.asInstanceOf[js.Any])
+    def setPanControlUndefined: Self = StObject.set(x, "panControl", js.undefined)
     
     @scala.inline
-    def deletePanControl: Self = this.set("panControl", js.undefined)
+    def setRotateControl(value: Boolean): Self = StObject.set(x, "rotateControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanControlOptions(value: typings.googleMapReact.anon.Position): Self = this.set("panControlOptions", value.asInstanceOf[js.Any])
+    def setRotateControlOptions(value: typings.googleMapReact.anon.Position): Self = StObject.set(x, "rotateControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePanControlOptions: Self = this.set("panControlOptions", js.undefined)
+    def setRotateControlOptionsUndefined: Self = StObject.set(x, "rotateControlOptions", js.undefined)
     
     @scala.inline
-    def setRotateControl(value: Boolean): Self = this.set("rotateControl", value.asInstanceOf[js.Any])
+    def setRotateControlUndefined: Self = StObject.set(x, "rotateControl", js.undefined)
     
     @scala.inline
-    def deleteRotateControl: Self = this.set("rotateControl", js.undefined)
+    def setScaleControl(value: Boolean): Self = StObject.set(x, "scaleControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateControlOptions(value: typings.googleMapReact.anon.Position): Self = this.set("rotateControlOptions", value.asInstanceOf[js.Any])
+    def setScaleControlOptions(value: js.Any): Self = StObject.set(x, "scaleControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotateControlOptions: Self = this.set("rotateControlOptions", js.undefined)
+    def setScaleControlOptionsUndefined: Self = StObject.set(x, "scaleControlOptions", js.undefined)
     
     @scala.inline
-    def setScaleControl(value: Boolean): Self = this.set("scaleControl", value.asInstanceOf[js.Any])
+    def setScaleControlUndefined: Self = StObject.set(x, "scaleControl", js.undefined)
     
     @scala.inline
-    def deleteScaleControl: Self = this.set("scaleControl", js.undefined)
+    def setScrollwheel(value: Boolean): Self = StObject.set(x, "scrollwheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleControlOptions(value: js.Any): Self = this.set("scaleControlOptions", value.asInstanceOf[js.Any])
+    def setScrollwheelUndefined: Self = StObject.set(x, "scrollwheel", js.undefined)
     
     @scala.inline
-    def deleteScaleControlOptions: Self = this.set("scaleControlOptions", js.undefined)
+    def setStreetView(value: js.Any): Self = StObject.set(x, "streetView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollwheel(value: Boolean): Self = this.set("scrollwheel", value.asInstanceOf[js.Any])
+    def setStreetViewControl(value: Boolean): Self = StObject.set(x, "streetViewControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollwheel: Self = this.set("scrollwheel", js.undefined)
+    def setStreetViewControlOptions(value: typings.googleMapReact.anon.Position): Self = StObject.set(x, "streetViewControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreetView(value: js.Any): Self = this.set("streetView", value.asInstanceOf[js.Any])
+    def setStreetViewControlOptionsUndefined: Self = StObject.set(x, "streetViewControlOptions", js.undefined)
     
     @scala.inline
-    def deleteStreetView: Self = this.set("streetView", js.undefined)
+    def setStreetViewControlUndefined: Self = StObject.set(x, "streetViewControl", js.undefined)
     
     @scala.inline
-    def setStreetViewControl(value: Boolean): Self = this.set("streetViewControl", value.asInstanceOf[js.Any])
+    def setStreetViewUndefined: Self = StObject.set(x, "streetView", js.undefined)
     
     @scala.inline
-    def deleteStreetViewControl: Self = this.set("streetViewControl", js.undefined)
+    def setStyles(value: js.Array[MapTypeStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreetViewControlOptions(value: typings.googleMapReact.anon.Position): Self = this.set("streetViewControlOptions", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteStreetViewControlOptions: Self = this.set("streetViewControlOptions", js.undefined)
+    def setStylesVarargs(value: MapTypeStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: MapTypeStyle*): Self = this.set("styles", js.Array(value :_*))
+    def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[MapTypeStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setZoomControl(value: Boolean): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilt(value: Double): Self = this.set("tilt", value.asInstanceOf[js.Any])
+    def setZoomControlOptions(value: typings.googleMapReact.anon.Position): Self = StObject.set(x, "zoomControlOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTilt: Self = this.set("tilt", js.undefined)
+    def setZoomControlOptionsUndefined: Self = StObject.set(x, "zoomControlOptions", js.undefined)
     
     @scala.inline
-    def setZoomControl(value: Boolean): Self = this.set("zoomControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomControl: Self = this.set("zoomControl", js.undefined)
-    
-    @scala.inline
-    def setZoomControlOptions(value: typings.googleMapReact.anon.Position): Self = this.set("zoomControlOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomControlOptions: Self = this.set("zoomControlOptions", js.undefined)
+    def setZoomControlUndefined: Self = StObject.set(x, "zoomControl", js.undefined)
   }
 }

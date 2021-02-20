@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryDestinationBucketEncryption extends js.Object {
+trait InventoryDestinationBucketEncryption extends StObject {
   
   /**
     * Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
@@ -27,30 +28,18 @@ object InventoryDestinationBucketEncryption {
   }
   
   @scala.inline
-  implicit class InventoryDestinationBucketEncryptionOps[Self <: InventoryDestinationBucketEncryption] (val x: Self) extends AnyVal {
+  implicit class InventoryDestinationBucketEncryptionMutableBuilder[Self <: InventoryDestinationBucketEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSseKms(value: Input[InventoryDestinationBucketEncryptionSseKms]): Self = StObject.set(x, "sseKms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSseKmsUndefined: Self = StObject.set(x, "sseKms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSseS3(value: Input[InventoryDestinationBucketEncryptionSseS3]): Self = StObject.set(x, "sseS3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSseKms(value: Input[InventoryDestinationBucketEncryptionSseKms]): Self = this.set("sseKms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSseKms: Self = this.set("sseKms", js.undefined)
-    
-    @scala.inline
-    def setSseS3(value: Input[InventoryDestinationBucketEncryptionSseS3]): Self = this.set("sseS3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSseS3: Self = this.set("sseS3", js.undefined)
+    def setSseS3Undefined: Self = StObject.set(x, "sseS3", js.undefined)
   }
 }

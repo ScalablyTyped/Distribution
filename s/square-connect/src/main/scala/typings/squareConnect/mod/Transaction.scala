@@ -8,13 +8,14 @@ import typings.squareConnect.squareConnectStrings.ONLINE_STORE
 import typings.squareConnect.squareConnectStrings.OTHER
 import typings.squareConnect.squareConnectStrings.PAYROLL
 import typings.squareConnect.squareConnectStrings.REGISTER
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Transaction")
 @js.native
-class Transaction () extends js.Object {
+class Transaction () extends StObject {
   
   /**
     * If the transaction was created in the Square Point of Sale app, this value is the ID generated for the

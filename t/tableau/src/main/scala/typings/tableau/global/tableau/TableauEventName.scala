@@ -1,5 +1,6 @@
 package typings.tableau.global.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("tableau.TableauEventName")
 @js.native
-object TableauEventName extends js.Object {
+object TableauEventName extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.tableau.tableau.TableauEventName with String] = js.native

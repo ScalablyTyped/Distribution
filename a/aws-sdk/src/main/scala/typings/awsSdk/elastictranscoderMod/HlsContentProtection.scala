@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsContentProtection extends js.Object {
+trait HlsContentProtection extends StObject {
   
   /**
     * If Elastic Transcoder is generating your key for you, you must leave this field blank. The series of random bits created by a random bit generator, unique for every encryption operation, that you want Elastic Transcoder to use to encrypt your output files. The initialization vector must be base64-encoded, and it must be exactly 16 bytes before being base64-encoded.
@@ -46,54 +47,42 @@ object HlsContentProtection {
   }
   
   @scala.inline
-  implicit class HlsContentProtectionOps[Self <: HlsContentProtection] (val x: Self) extends AnyVal {
+  implicit class HlsContentProtectionMutableBuilder[Self <: HlsContentProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: Base64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationVector(value: ZeroTo255String): Self = this.set("InitializationVector", value.asInstanceOf[js.Any])
+    def setKeyMd5(value: Base64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitializationVector: Self = this.set("InitializationVector", js.undefined)
+    def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
     
     @scala.inline
-    def setKey(value: Base64EncodedString): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setKeyStoragePolicy(value: KeyStoragePolicy): Self = StObject.set(x, "KeyStoragePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setKeyStoragePolicyUndefined: Self = StObject.set(x, "KeyStoragePolicy", js.undefined)
     
     @scala.inline
-    def setKeyMd5(value: Base64EncodedString): Self = this.set("KeyMd5", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteKeyMd5: Self = this.set("KeyMd5", js.undefined)
+    def setLicenseAcquisitionUrl(value: ZeroTo512String): Self = StObject.set(x, "LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyStoragePolicy(value: KeyStoragePolicy): Self = this.set("KeyStoragePolicy", value.asInstanceOf[js.Any])
+    def setLicenseAcquisitionUrlUndefined: Self = StObject.set(x, "LicenseAcquisitionUrl", js.undefined)
     
     @scala.inline
-    def deleteKeyStoragePolicy: Self = this.set("KeyStoragePolicy", js.undefined)
+    def setMethod(value: HlsContentProtectionMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseAcquisitionUrl(value: ZeroTo512String): Self = this.set("LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicenseAcquisitionUrl: Self = this.set("LicenseAcquisitionUrl", js.undefined)
-    
-    @scala.inline
-    def setMethod(value: HlsContentProtectionMethod): Self = this.set("Method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("Method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
   }
 }

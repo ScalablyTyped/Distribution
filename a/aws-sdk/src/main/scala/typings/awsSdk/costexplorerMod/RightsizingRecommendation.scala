@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RightsizingRecommendation extends js.Object {
+trait RightsizingRecommendation extends StObject {
   
   /**
     * The account that this recommendation is for.
@@ -41,48 +42,36 @@ object RightsizingRecommendation {
   }
   
   @scala.inline
-  implicit class RightsizingRecommendationOps[Self <: RightsizingRecommendation] (val x: Self) extends AnyVal {
+  implicit class RightsizingRecommendationMutableBuilder[Self <: RightsizingRecommendation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentInstance(value: CurrentInstance): Self = StObject.set(x, "CurrentInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: GenericString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setCurrentInstanceUndefined: Self = StObject.set(x, "CurrentInstance", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setModifyRecommendationDetail(value: ModifyRecommendationDetail): Self = StObject.set(x, "ModifyRecommendationDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentInstance(value: CurrentInstance): Self = this.set("CurrentInstance", value.asInstanceOf[js.Any])
+    def setModifyRecommendationDetailUndefined: Self = StObject.set(x, "ModifyRecommendationDetail", js.undefined)
     
     @scala.inline
-    def deleteCurrentInstance: Self = this.set("CurrentInstance", js.undefined)
+    def setRightsizingType(value: RightsizingType): Self = StObject.set(x, "RightsizingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifyRecommendationDetail(value: ModifyRecommendationDetail): Self = this.set("ModifyRecommendationDetail", value.asInstanceOf[js.Any])
+    def setRightsizingTypeUndefined: Self = StObject.set(x, "RightsizingType", js.undefined)
     
     @scala.inline
-    def deleteModifyRecommendationDetail: Self = this.set("ModifyRecommendationDetail", js.undefined)
+    def setTerminateRecommendationDetail(value: TerminateRecommendationDetail): Self = StObject.set(x, "TerminateRecommendationDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightsizingType(value: RightsizingType): Self = this.set("RightsizingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightsizingType: Self = this.set("RightsizingType", js.undefined)
-    
-    @scala.inline
-    def setTerminateRecommendationDetail(value: TerminateRecommendationDetail): Self = this.set("TerminateRecommendationDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateRecommendationDetail: Self = this.set("TerminateRecommendationDetail", js.undefined)
+    def setTerminateRecommendationDetailUndefined: Self = StObject.set(x, "TerminateRecommendationDetail", js.undefined)
   }
 }

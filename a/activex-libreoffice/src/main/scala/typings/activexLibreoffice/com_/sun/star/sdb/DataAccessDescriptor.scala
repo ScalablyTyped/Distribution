@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait DataAccessDescriptor extends js.Object {
+trait DataAccessDescriptor extends StObject {
   
   /**
     * is a connection to use.
@@ -230,69 +231,57 @@ object DataAccessDescriptor {
   }
   
   @scala.inline
-  implicit class DataAccessDescriptorOps[Self <: DataAccessDescriptor] (val x: Self) extends AnyVal {
+  implicit class DataAccessDescriptorMutableBuilder[Self <: DataAccessDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarkSelection(value: Boolean): Self = StObject.set(x, "BookmarkSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn(value: XPropertySet): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    def setColumnName(value: String): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarkSelection(value: Boolean): Self = this.set("BookmarkSelection", value.asInstanceOf[js.Any])
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: XPropertySet): Self = this.set("Column", value.asInstanceOf[js.Any])
+    def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnName(value: String): Self = this.set("ColumnName", value.asInstanceOf[js.Any])
+    def setConnectionInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setConnectionResource(value: String): Self = StObject.set(x, "ConnectionResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandType(value: Double): Self = this.set("CommandType", value.asInstanceOf[js.Any])
+    def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionInfo(value: SafeArray[PropertyValue]): Self = this.set("ConnectionInfo", value.asInstanceOf[js.Any])
+    def setDatabaseLocation(value: String): Self = StObject.set(x, "DatabaseLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionResource(value: String): Self = this.set("ConnectionResource", value.asInstanceOf[js.Any])
+    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseLocation(value: String): Self = this.set("DatabaseLocation", value.asInstanceOf[js.Any])
+    def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHavingClause(value: String): Self = this.set("HavingClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultSet(value: XResultSet): Self = this.set("ResultSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelection(value: SafeArray[_]): Self = this.set("Selection", value.asInstanceOf[js.Any])
+    def setSelection(value: SafeArray[_]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

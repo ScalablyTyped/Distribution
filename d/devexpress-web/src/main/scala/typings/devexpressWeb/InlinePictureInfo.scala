@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains in-line picture settings.
   */
 @js.native
-trait InlinePictureInfo extends js.Object {
+trait InlinePictureInfo extends StObject {
   
   /**
     * Gets the actual image height.
@@ -71,45 +72,33 @@ object InlinePictureInfo {
   }
   
   @scala.inline
-  implicit class InlinePictureInfoOps[Self <: InlinePictureInfo] (val x: Self) extends AnyVal {
+  implicit class InlinePictureInfoMutableBuilder[Self <: InlinePictureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualHeight(value: Double): Self = StObject.set(x, "actualHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualHeigth(value: Double): Self = StObject.set(x, "actualHeigth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActualWidth(value: Double): Self = StObject.set(x, "actualWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualHeight(value: Double): Self = this.set("actualHeight", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualHeigth(value: Double): Self = this.set("actualHeigth", value.asInstanceOf[js.Any])
+    def setInitialHeight(value: Double): Self = StObject.set(x, "initialHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualWidth(value: Double): Self = this.set("actualWidth", value.asInstanceOf[js.Any])
+    def setInitialWidth(value: Double): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialHeight(value: Double): Self = this.set("initialHeight", value.asInstanceOf[js.Any])
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialWidth(value: Double): Self = this.set("initialWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IActionCreateAssignment extends js.Object {
+trait IActionCreateAssignment extends StObject {
   
   var AssignedTo: IUserOrUserGroupIDExs = js.native
   
@@ -38,39 +39,27 @@ object IActionCreateAssignment {
   }
   
   @scala.inline
-  implicit class IActionCreateAssignmentOps[Self <: IActionCreateAssignment] (val x: Self) extends AnyVal {
+  implicit class IActionCreateAssignmentMutableBuilder[Self <: IActionCreateAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedTo(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IActionCreateAssignment): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadline(value: Boolean): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedTo(value: IUserOrUserGroupIDExs): Self = this.set("AssignedTo", value.asInstanceOf[js.Any])
+    def setDeadlineInDays(value: Double): Self = StObject.set(x, "DeadlineInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IActionCreateAssignment): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadline(value: Boolean): Self = this.set("Deadline", value.asInstanceOf[js.Any])
+    def setMonitoredBy(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "MonitoredBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadlineInDays(value: Double): Self = this.set("DeadlineInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonitoredBy(value: IUserOrUserGroupIDExs): Self = this.set("MonitoredBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

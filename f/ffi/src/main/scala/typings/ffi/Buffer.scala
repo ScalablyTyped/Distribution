@@ -1,11 +1,12 @@
 package typings.ffi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buffer extends js.Object {
+trait Buffer extends StObject {
   
   /** Shorthand for `ref.address`. */
   def address(): Double = js.native

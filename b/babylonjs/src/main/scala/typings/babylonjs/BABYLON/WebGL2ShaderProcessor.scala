@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +30,15 @@ object WebGL2ShaderProcessor {
   }
   
   @scala.inline
-  implicit class WebGL2ShaderProcessorOps[Self <: WebGL2ShaderProcessor] (val x: Self) extends AnyVal {
+  implicit class WebGL2ShaderProcessorMutableBuilder[Self <: WebGL2ShaderProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeProcessor(value: String => String): Self = StObject.set(x, "attributeProcessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostProcessor(value: (String, js.Array[String], Boolean) => String): Self = StObject.set(x, "postProcessor", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeProcessor(value: String => String): Self = this.set("attributeProcessor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPostProcessor(value: (String, js.Array[String], Boolean) => String): Self = this.set("postProcessor", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setVaryingProcessor(value: (String, Boolean) => String): Self = this.set("varyingProcessor", js.Any.fromFunction2(value))
+    def setVaryingProcessor(value: (String, Boolean) => String): Self = StObject.set(x, "varyingProcessor", js.Any.fromFunction2(value))
   }
 }

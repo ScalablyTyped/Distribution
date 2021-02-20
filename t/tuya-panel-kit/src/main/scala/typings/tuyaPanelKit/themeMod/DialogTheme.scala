@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogTheme extends js.Object {
+trait DialogTheme extends StObject {
   
   var bg: String = js.native
   
@@ -59,60 +60,48 @@ object DialogTheme {
   }
   
   @scala.inline
-  implicit class DialogThemeOps[Self <: DialogTheme] (val x: Self) extends AnyVal {
+  implicit class DialogThemeMutableBuilder[Self <: DialogTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelFontColor(value: String): Self = StObject.set(x, "cancelFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelFontSize(value: Double): Self = StObject.set(x, "cancelFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: String): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelFontColor(value: String): Self = this.set("cancelFontColor", value.asInstanceOf[js.Any])
+    def setConfirmFontColor(value: String): Self = StObject.set(x, "confirmFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelFontSize(value: Double): Self = this.set("cancelFontSize", value.asInstanceOf[js.Any])
+    def setConfirmFontSize(value: Double): Self = StObject.set(x, "confirmFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellHeight(value: Double): Self = this.set("cellHeight", value.asInstanceOf[js.Any])
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmFontColor(value: String): Self = this.set("confirmFontColor", value.asInstanceOf[js.Any])
+    def setPrompt(value: PromptTheme): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmFontSize(value: Double): Self = this.set("confirmFontSize", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setSubTitleFontColor(value: String): Self = StObject.set(x, "subTitleFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: PromptTheme): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    def setSubTitleFontSize(value: Double): Self = StObject.set(x, "subTitleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setTitleFontColor(value: String): Self = StObject.set(x, "titleFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTitleFontColor(value: String): Self = this.set("subTitleFontColor", value.asInstanceOf[js.Any])
+    def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTitleFontSize(value: Double): Self = this.set("subTitleFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleFontColor(value: String): Self = this.set("titleFontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleFontSize(value: Double): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

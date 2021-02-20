@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Designs extends js.Object {
+trait Designs extends StObject {
   
   /** @param number [Index=-1] */
   def Add(designName: String): Design = js.native

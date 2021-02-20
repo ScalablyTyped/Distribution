@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetTouchEmulationEnabledRequest extends js.Object {
+trait SetTouchEmulationEnabledRequest extends StObject {
   
   /**
     * Whether the touch event emulation should be enabled.
@@ -27,27 +28,15 @@ object SetTouchEmulationEnabledRequest {
   }
   
   @scala.inline
-  implicit class SetTouchEmulationEnabledRequestOps[Self <: SetTouchEmulationEnabledRequest] (val x: Self) extends AnyVal {
+  implicit class SetTouchEmulationEnabledRequestMutableBuilder[Self <: SetTouchEmulationEnabledRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxTouchPoints(value: integer): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxTouchPoints(value: integer): Self = this.set("maxTouchPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTouchPoints: Self = this.set("maxTouchPoints", js.undefined)
+    def setMaxTouchPointsUndefined: Self = StObject.set(x, "maxTouchPoints", js.undefined)
   }
 }

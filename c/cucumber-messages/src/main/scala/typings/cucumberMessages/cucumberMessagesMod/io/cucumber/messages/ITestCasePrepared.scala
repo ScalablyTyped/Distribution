@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestCasePrepared. */
 @js.native
-trait ITestCasePrepared extends js.Object {
+trait ITestCasePrepared extends StObject {
   
   /** TestCasePrepared pickleId */
   var pickleId: js.UndefOr[String | Null] = js.native
@@ -23,39 +24,27 @@ object ITestCasePrepared {
   }
   
   @scala.inline
-  implicit class ITestCasePreparedOps[Self <: ITestCasePrepared] (val x: Self) extends AnyVal {
+  implicit class ITestCasePreparedMutableBuilder[Self <: ITestCasePrepared] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
     
     @scala.inline
-    def setPickleId(value: String): Self = this.set("pickleId", value.asInstanceOf[js.Any])
+    def setSteps(value: js.Array[ITestCasePreparedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePickleId: Self = this.set("pickleId", js.undefined)
+    def setStepsNull: Self = StObject.set(x, "steps", null)
     
     @scala.inline
-    def setPickleIdNull: Self = this.set("pickleId", null)
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def setStepsVarargs(value: ITestCasePreparedStep*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: js.Array[ITestCasePreparedStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
-    
-    @scala.inline
-    def setStepsNull: Self = this.set("steps", null)
+    def setStepsVarargs(value: ITestCasePreparedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

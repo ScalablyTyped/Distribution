@@ -1,6 +1,7 @@
 package typings.azdata.mod.nb
 
 import typings.azdata.azdataStrings.stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object IStreamResult {
   }
   
   @scala.inline
-  implicit class IStreamResultOps[Self <: IStreamResult] (val x: Self) extends AnyVal {
+  implicit class IStreamResultMutableBuilder[Self <: IStreamResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: StreamType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutput_type(value: stream): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: MultilineString): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: StreamType): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutput_type(value: stream): Self = this.set("output_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
-    
-    @scala.inline
-    def setText(value: MultilineString): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

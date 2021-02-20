@@ -6,14 +6,15 @@ import typings.rcFieldForm.interfaceMod.StoreValue
 import typings.rcFieldForm.interfaceMod.ValidateOptions
 import typings.rcFieldForm.rcFieldFormStrings.parallel
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-field-form/es/utils/validateUtil", JSImport.Namespace)
-@js.native
-object validateUtilMod extends js.Object {
+object validateUtilMod {
   
+  @JSImport("rc-field-form/es/utils/validateUtil", "validateRules")
+  @js.native
   def validateRules(
     namePath: InternalNamePath,
     value: StoreValue,
@@ -21,6 +22,8 @@ object validateUtilMod extends js.Object {
     options: ValidateOptions,
     validateFirst: Boolean
   ): js.Promise[js.Array[String]] = js.native
+  @JSImport("rc-field-form/es/utils/validateUtil", "validateRules")
+  @js.native
   def validateRules(
     namePath: InternalNamePath,
     value: StoreValue,
@@ -29,7 +32,8 @@ object validateUtilMod extends js.Object {
     validateFirst: Boolean,
     messageVariables: Record[String, String]
   ): js.Promise[js.Array[String]] = js.native
-  @JSName("validateRules")
+  @JSImport("rc-field-form/es/utils/validateUtil", "validateRules")
+  @js.native
   def validateRules_parallel(
     namePath: InternalNamePath,
     value: StoreValue,
@@ -37,7 +41,8 @@ object validateUtilMod extends js.Object {
     options: ValidateOptions,
     validateFirst: parallel
   ): js.Promise[js.Array[String]] = js.native
-  @JSName("validateRules")
+  @JSImport("rc-field-form/es/utils/validateUtil", "validateRules")
+  @js.native
   def validateRules_parallel(
     namePath: InternalNamePath,
     value: StoreValue,

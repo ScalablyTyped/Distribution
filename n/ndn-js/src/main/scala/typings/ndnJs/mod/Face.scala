@@ -1,6 +1,7 @@
 package typings.ndnJs.mod
 
 import typings.ndnJs.faceMod.FaceCtorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,9 @@ class Face ()
   ) = this()
 }
 /* static members */
-@JSImport("ndn-js", "Face")
-@js.native
-object Face extends js.Object {
+object Face {
   
+  @JSImport("ndn-js", "Face.getMaxNdnPacketSize")
+  @js.native
   def getMaxNdnPacketSize(): Double = js.native
 }

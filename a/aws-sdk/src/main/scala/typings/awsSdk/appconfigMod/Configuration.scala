@@ -1,11 +1,12 @@
 package typings.awsSdk.appconfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configuration extends js.Object {
+trait Configuration extends StObject {
   
   /**
     * The configuration version.
@@ -31,36 +32,24 @@ object Configuration {
   }
   
   @scala.inline
-  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationVersion(value: Version): Self = StObject.set(x, "ConfigurationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationVersionUndefined: Self = StObject.set(x, "ConfigurationVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: _Blob): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationVersion(value: Version): Self = this.set("ConfigurationVersion", value.asInstanceOf[js.Any])
+    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigurationVersion: Self = this.set("ConfigurationVersion", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def setContent(value: _Blob): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
-    
-    @scala.inline
-    def setContentType(value: String): Self = this.set("ContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
   }
 }

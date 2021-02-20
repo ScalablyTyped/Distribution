@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateVersionResponse extends js.Object {
+trait TemplateVersionResponse extends StObject {
   
   /**
     * The date, in ISO 8601 format, when the version of the message template was created.
@@ -51,48 +52,36 @@ object TemplateVersionResponse {
   }
   
   @scala.inline
-  implicit class TemplateVersionResponseOps[Self <: TemplateVersionResponse] (val x: Self) extends AnyVal {
+  implicit class TemplateVersionResponseMutableBuilder[Self <: TemplateVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
     
     @scala.inline
-    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: string): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
     
     @scala.inline
-    def setTemplateType(value: string): Self = this.set("TemplateType", value.asInstanceOf[js.Any])
+    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSubstitutions(value: string): Self = this.set("DefaultSubstitutions", value.asInstanceOf[js.Any])
+    def setTemplateType(value: string): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultSubstitutions: Self = this.set("DefaultSubstitutions", js.undefined)
+    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateDescription(value: string): Self = this.set("TemplateDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateDescription: Self = this.set("TemplateDescription", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: string): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

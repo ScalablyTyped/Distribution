@@ -4,14 +4,14 @@ import typings.swiper.mod.SelectableElement
 import typings.swiper.mod.SwiperModule
 import typings.swiper.mod.SwiperOptions
 import typings.swiper.swiperEsmMod.Swiper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/slides/swiper/swiper-interface", JSImport.Namespace)
-@js.native
-object swiperInterfaceMod extends js.Object {
+object swiperInterfaceMod {
   
+  @JSImport("@ionic/core/dist/types/components/slides/swiper/swiper-interface", "SwiperInterface")
   @js.native
   class SwiperInterface protected () extends Swiper {
     /**
@@ -24,12 +24,13 @@ object swiperInterfaceMod extends js.Object {
     def this(container: SelectableElement, options: SwiperOptions) = this()
   }
   /* static members */
-  @js.native
-  object SwiperInterface extends js.Object {
+  object SwiperInterface {
     
     /**
       * Installs modules on Swiper in runtime.
       */
+    @JSImport("@ionic/core/dist/types/components/slides/swiper/swiper-interface", "SwiperInterface.use")
+    @js.native
     def use(modules: js.Array[SwiperModule]): Unit = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeployPhase extends js.Object {
+trait DeployPhase extends StObject {
   
   var name: String = js.native
   
@@ -24,33 +25,21 @@ object DeployPhase {
   }
   
   @scala.inline
-  implicit class DeployPhaseOps[Self <: DeployPhase] (val x: Self) extends AnyVal {
+  implicit class DeployPhaseMutableBuilder[Self <: DeployPhase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhaseType(value: DeployPhaseTypes): Self = StObject.set(x, "phaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setWorkflowTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "workflowTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhaseType(value: DeployPhaseTypes): Self = this.set("phaseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflowTasksVarargs(value: WorkflowTask*): Self = this.set("workflowTasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkflowTasks(value: js.Array[WorkflowTask]): Self = this.set("workflowTasks", value.asInstanceOf[js.Any])
+    def setWorkflowTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "workflowTasks", js.Array(value :_*))
   }
 }

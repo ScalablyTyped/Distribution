@@ -2,12 +2,13 @@ package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.ionicCore.interfaceMod.RouterEventDetail
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonRouter extends js.Object {
+trait IonRouter extends StObject {
   
   /**
     * Emitted when the route had changed
@@ -38,42 +39,30 @@ object IonRouter {
   }
   
   @scala.inline
-  implicit class IonRouterOps[Self <: IonRouter] (val x: Self) extends AnyVal {
+  implicit class IonRouterMutableBuilder[Self <: IonRouter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnIonRouteDidChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = StObject.set(x, "onIonRouteDidChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnIonRouteDidChangeUndefined: Self = StObject.set(x, "onIonRouteDidChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnIonRouteWillChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = StObject.set(x, "onIonRouteWillChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonRouteDidChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = this.set("onIonRouteDidChange", js.Any.fromFunction1(value))
+    def setOnIonRouteWillChangeUndefined: Self = StObject.set(x, "onIonRouteWillChange", js.undefined)
     
     @scala.inline
-    def deleteOnIonRouteDidChange: Self = this.set("onIonRouteDidChange", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonRouteWillChange(value: /* event */ CustomEvent[RouterEventDetail] => Unit): Self = this.set("onIonRouteWillChange", js.Any.fromFunction1(value))
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteOnIonRouteWillChange: Self = this.set("onIonRouteWillChange", js.undefined)
+    def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setUseHash(value: Boolean): Self = this.set("useHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHash: Self = this.set("useHash", js.undefined)
+    def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
   }
 }

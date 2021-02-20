@@ -1,31 +1,32 @@
 package typings.baiduApp.swan.ai
 
 import typings.baiduApp.swan.DataResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceRecognizerTask extends js.Object {
+trait VoiceRecognizerTask extends StObject {
   
-   // 停止;
+  // 停止;
   def cancel(): Unit = js.native
   
-    // 识别完成;
+  // 识别完成;
   def onError(callback: js.Function1[/* res */ VoiceErrorResponse, Unit]): Unit = js.native
   
-    // ;有识别结果返回
+  // ;有识别结果返回
   def onFinish(callback: js.Function1[/* res */ DataResponse, Unit]): Unit = js.native
   
-    // 引擎准备就绪，可以开始说话;
+  // 引擎准备就绪，可以开始说话;
   def onRecognize(callback: js.Function1[/* res */ VoiceRecognizeResponse, Unit]): Unit = js.native
   
-   // 取消;
+  // 取消;
   def onStart(callback: js.Function0[Unit]): Unit = js.native
   
   def start(options: VoiceRecognizerStart): Unit = js.native
   
-   // 开始;
+  // 开始;
   def stop(): Unit = js.native
 }
 object VoiceRecognizerTask {
@@ -45,39 +46,27 @@ object VoiceRecognizerTask {
   }
   
   @scala.inline
-  implicit class VoiceRecognizerTaskOps[Self <: VoiceRecognizerTask] (val x: Self) extends AnyVal {
+  implicit class VoiceRecognizerTaskMutableBuilder[Self <: VoiceRecognizerTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnError(value: js.Function1[/* res */ VoiceErrorResponse, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFinish(value: js.Function1[/* res */ DataResponse, Unit] => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setOnRecognize(value: js.Function1[/* res */ VoiceRecognizeResponse, Unit] => Unit): Self = StObject.set(x, "onRecognize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: js.Function1[/* res */ VoiceErrorResponse, Unit] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnStart(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFinish(value: js.Function1[/* res */ DataResponse, Unit] => Unit): Self = this.set("onFinish", js.Any.fromFunction1(value))
+    def setStart(value: VoiceRecognizerStart => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRecognize(value: js.Function1[/* res */ VoiceRecognizeResponse, Unit] => Unit): Self = this.set("onRecognize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnStart(value: js.Function0[Unit] => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStart(value: VoiceRecognizerStart => Unit): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

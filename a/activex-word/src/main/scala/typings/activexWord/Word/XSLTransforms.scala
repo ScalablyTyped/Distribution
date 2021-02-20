@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XSLTransforms extends js.Object {
+trait XSLTransforms extends StObject {
   
   /** @param boolean [InstallForAllUsers=false] */
   def Add(Location: String, Alias: js.Any): XSLTransform = js.native

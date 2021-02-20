@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesGetTraceGraphOutputMod.GetTraceGraphOut
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/GetTraceGraphCommand", JSImport.Namespace)
-@js.native
-object getTraceGraphCommandMod extends js.Object {
+object getTraceGraphCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/GetTraceGraphCommand", "GetTraceGraphCommand")
   @js.native
   class GetTraceGraphCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.services
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The tree service factory, used internally by the umbTree and umbTreeItem directives
   */
 @js.native
-trait ITreeService extends js.Object {
+trait ITreeService extends StObject {
   
   /**
     * @ngdoc method

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRegexPatternSetRequest extends js.Object {
+trait DeleteRegexPatternSetRequest extends StObject {
   
   /**
     * A unique identifier for the set. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
@@ -36,30 +37,18 @@ object DeleteRegexPatternSetRequest {
   }
   
   @scala.inline
-  implicit class DeleteRegexPatternSetRequestOps[Self <: DeleteRegexPatternSetRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteRegexPatternSetRequestMutableBuilder[Self <: DeleteRegexPatternSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: EntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

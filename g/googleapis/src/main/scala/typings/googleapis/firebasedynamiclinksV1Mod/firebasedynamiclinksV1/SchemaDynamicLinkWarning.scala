@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dynamic Links warning messages.
   */
 @js.native
-trait SchemaDynamicLinkWarning extends js.Object {
+trait SchemaDynamicLinkWarning extends StObject {
   
   /**
     * The warning code.
@@ -34,36 +35,24 @@ object SchemaDynamicLinkWarning {
   }
   
   @scala.inline
-  implicit class SchemaDynamicLinkWarningOps[Self <: SchemaDynamicLinkWarning] (val x: Self) extends AnyVal {
+  implicit class SchemaDynamicLinkWarningMutableBuilder[Self <: SchemaDynamicLinkWarning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWarningCode(value: String): Self = StObject.set(x, "warningCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWarningCodeUndefined: Self = StObject.set(x, "warningCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarningDocumentLink(value: String): Self = StObject.set(x, "warningDocumentLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningCode(value: String): Self = this.set("warningCode", value.asInstanceOf[js.Any])
+    def setWarningDocumentLinkUndefined: Self = StObject.set(x, "warningDocumentLink", js.undefined)
     
     @scala.inline
-    def deleteWarningCode: Self = this.set("warningCode", js.undefined)
+    def setWarningMessage(value: String): Self = StObject.set(x, "warningMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarningDocumentLink(value: String): Self = this.set("warningDocumentLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningDocumentLink: Self = this.set("warningDocumentLink", js.undefined)
-    
-    @scala.inline
-    def setWarningMessage(value: String): Self = this.set("warningMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningMessage: Self = this.set("warningMessage", js.undefined)
+    def setWarningMessageUndefined: Self = StObject.set(x, "warningMessage", js.undefined)
   }
 }

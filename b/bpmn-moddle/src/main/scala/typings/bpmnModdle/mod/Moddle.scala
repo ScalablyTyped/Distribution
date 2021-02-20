@@ -1,11 +1,12 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Moddle extends js.Object {
+trait Moddle extends StObject {
   
   def create(descriptor: js.Any): BaseElement = js.native
   def create(descriptor: js.Any, attrs: js.Any): BaseElement = js.native

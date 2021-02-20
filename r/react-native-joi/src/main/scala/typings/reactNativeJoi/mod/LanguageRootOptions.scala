@@ -2,6 +2,7 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeJoi.anon.WrapArrays
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,135 +48,123 @@ object LanguageRootOptions {
   }
   
   @scala.inline
-  implicit class LanguageRootOptionsOps[Self <: LanguageRootOptions] (val x: Self) extends AnyVal {
+  implicit class LanguageRootOptionsMutableBuilder[Self <: LanguageRootOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: LanguageOptions): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesNull: Self = StObject.set(x, "alternatives", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
     @scala.inline
-    def setAlternatives(value: LanguageOptions): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    def setAny(value: LanguageOptions): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    def setAnyNull: Self = StObject.set(x, "any", null)
     
     @scala.inline
-    def setAlternativesNull: Self = this.set("alternatives", null)
+    def setAnyUndefined: Self = StObject.set(x, "any", js.undefined)
     
     @scala.inline
-    def setAny(value: LanguageOptions): Self = this.set("any", value.asInstanceOf[js.Any])
+    def setArray(value: LanguageOptions): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAny: Self = this.set("any", js.undefined)
+    def setArrayNull: Self = StObject.set(x, "array", null)
     
     @scala.inline
-    def setAnyNull: Self = this.set("any", null)
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def setArray(value: LanguageOptions): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setBinary(value: LanguageOptions): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setBinaryNull: Self = StObject.set(x, "binary", null)
     
     @scala.inline
-    def setArrayNull: Self = this.set("array", null)
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def setBinary(value: LanguageOptions): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setBoolean(value: LanguageOptions): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setBooleanNull: Self = StObject.set(x, "boolean", null)
     
     @scala.inline
-    def setBinaryNull: Self = this.set("binary", null)
+    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
     @scala.inline
-    def setBoolean(value: LanguageOptions): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setDate(value: LanguageOptions): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    def setDateNull: Self = StObject.set(x, "date", null)
     
     @scala.inline
-    def setBooleanNull: Self = this.set("boolean", null)
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setDate(value: LanguageOptions): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setFunction(value: LanguageOptions): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setFunctionNull: Self = StObject.set(x, "function", null)
     
     @scala.inline
-    def setDateNull: Self = this.set("date", null)
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def setFunction(value: LanguageOptions): Self = this.set("function", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setFunctionNull: Self = this.set("function", null)
+    def setLazy(value: LanguageOptions): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLazyNull: Self = StObject.set(x, "lazy", null)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     
     @scala.inline
-    def setLazy(value: LanguageOptions): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    def setMessages(value: WrapArrays): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLazy: Self = this.set("lazy", js.undefined)
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def setLazyNull: Self = this.set("lazy", null)
+    def setNumber(value: LanguageOptions): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: WrapArrays): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNumberNull: Self = StObject.set(x, "number", null)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def setNumber(value: LanguageOptions): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setObject(value: LanguageOptions): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setObjectNull: Self = StObject.set(x, "object", null)
     
     @scala.inline
-    def setNumberNull: Self = this.set("number", null)
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def setObject(value: LanguageOptions): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setObjectNull: Self = this.set("object", null)
+    def setString(value: LanguageOptions): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setStringNull: Self = StObject.set(x, "string", null)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setString(value: LanguageOptions): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
-    
-    @scala.inline
-    def setStringNull: Self = this.set("string", null)
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

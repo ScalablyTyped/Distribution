@@ -9,6 +9,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 */
-trait Alignment extends js.Object
+trait Alignment extends StObject
 object Alignment {
   
   /**

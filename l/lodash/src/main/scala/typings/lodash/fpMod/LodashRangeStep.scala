@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashRangeStep extends js.Object {
+trait LodashRangeStep extends StObject {
   
   def apply(start: Double): LodashRangeStep1x1 = js.native
   def apply(start: Double, end: Double): LodashRangeStep1x3 = js.native

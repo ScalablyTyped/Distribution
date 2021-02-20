@@ -1,14 +1,15 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkState extends js.Object
+sealed trait NetworkState extends StObject
 @JSGlobal("PlayerFramework.NetworkState")
 @js.native
-object NetworkState extends js.Object {
+object NetworkState extends StObject {
   
   /**
     * The player has not yet initialized any audio/video.

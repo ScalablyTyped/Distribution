@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object XFilterManager {
   }
   
   @scala.inline
-  implicit class XFilterManagerOps[Self <: XFilterManager] (val x: Self) extends AnyVal {
+  implicit class XFilterManagerMutableBuilder[Self <: XFilterManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendFilter(value: (String, String) => Unit): Self = StObject.set(x, "appendFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentFilter(value: String): Self = StObject.set(x, "CurrentFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentFilter(value: () => String): Self = StObject.set(x, "getCurrentFilter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentFilter(value: String): Self = this.set("CurrentFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppendFilter(value: (String, String) => Unit): Self = this.set("appendFilter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetCurrentFilter(value: () => String): Self = this.set("getCurrentFilter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCurrentFilter(value: String => Unit): Self = this.set("setCurrentFilter", js.Any.fromFunction1(value))
+    def setSetCurrentFilter(value: String => Unit): Self = StObject.set(x, "setCurrentFilter", js.Any.fromFunction1(value))
   }
 }

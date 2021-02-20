@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDocumentPermissionRequest extends js.Object {
+trait DescribeDocumentPermissionRequest extends StObject {
   
   /**
     * The name of the document for which you are the owner.
@@ -26,24 +27,12 @@ object DescribeDocumentPermissionRequest {
   }
   
   @scala.inline
-  implicit class DescribeDocumentPermissionRequestOps[Self <: DescribeDocumentPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeDocumentPermissionRequestMutableBuilder[Self <: DescribeDocumentPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: DocumentName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissionType(value: DocumentPermissionType): Self = this.set("PermissionType", value.asInstanceOf[js.Any])
+    def setPermissionType(value: DocumentPermissionType): Self = StObject.set(x, "PermissionType", value.asInstanceOf[js.Any])
   }
 }

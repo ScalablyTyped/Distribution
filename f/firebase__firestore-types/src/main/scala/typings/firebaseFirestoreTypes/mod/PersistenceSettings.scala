@@ -1,11 +1,12 @@
 package typings.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersistenceSettings extends js.Object {
+trait PersistenceSettings extends StObject {
   
   var experimentalForceOwningTab: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object PersistenceSettings {
   }
   
   @scala.inline
-  implicit class PersistenceSettingsOps[Self <: PersistenceSettings] (val x: Self) extends AnyVal {
+  implicit class PersistenceSettingsMutableBuilder[Self <: PersistenceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExperimentalForceOwningTab(value: Boolean): Self = StObject.set(x, "experimentalForceOwningTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExperimentalForceOwningTabUndefined: Self = StObject.set(x, "experimentalForceOwningTab", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExperimentalTabSynchronization(value: Boolean): Self = StObject.set(x, "experimentalTabSynchronization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentalForceOwningTab(value: Boolean): Self = this.set("experimentalForceOwningTab", value.asInstanceOf[js.Any])
+    def setExperimentalTabSynchronizationUndefined: Self = StObject.set(x, "experimentalTabSynchronization", js.undefined)
     
     @scala.inline
-    def deleteExperimentalForceOwningTab: Self = this.set("experimentalForceOwningTab", js.undefined)
+    def setSynchronizeTabs(value: Boolean): Self = StObject.set(x, "synchronizeTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentalTabSynchronization(value: Boolean): Self = this.set("experimentalTabSynchronization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExperimentalTabSynchronization: Self = this.set("experimentalTabSynchronization", js.undefined)
-    
-    @scala.inline
-    def setSynchronizeTabs(value: Boolean): Self = this.set("synchronizeTabs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynchronizeTabs: Self = this.set("synchronizeTabs", js.undefined)
+    def setSynchronizeTabsUndefined: Self = StObject.set(x, "synchronizeTabs", js.undefined)
   }
 }

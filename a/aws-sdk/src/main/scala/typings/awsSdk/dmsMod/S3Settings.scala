@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Settings extends js.Object {
+trait S3Settings extends StObject {
   
   /**
     *  An optional parameter to set a folder name in the S3 bucket. If provided, tables are created in the path  bucketFolder/schema_name/table_name/. If this parameter isn't specified, then the path used is  schema_name/table_name/. 
@@ -136,162 +137,150 @@ object S3Settings {
   }
   
   @scala.inline
-  implicit class S3SettingsOps[Self <: S3Settings] (val x: Self) extends AnyVal {
+  implicit class S3SettingsMutableBuilder[Self <: S3Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketFolder(value: String): Self = StObject.set(x, "BucketFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketFolderUndefined: Self = StObject.set(x, "BucketFolder", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketFolder(value: String): Self = this.set("BucketFolder", value.asInstanceOf[js.Any])
+    def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
     
     @scala.inline
-    def deleteBucketFolder: Self = this.set("BucketFolder", js.undefined)
+    def setCdcInsertsAndUpdates(value: BooleanOptional): Self = StObject.set(x, "CdcInsertsAndUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setCdcInsertsAndUpdatesUndefined: Self = StObject.set(x, "CdcInsertsAndUpdates", js.undefined)
     
     @scala.inline
-    def deleteBucketName: Self = this.set("BucketName", js.undefined)
+    def setCdcInsertsOnly(value: BooleanOptional): Self = StObject.set(x, "CdcInsertsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdcInsertsAndUpdates(value: BooleanOptional): Self = this.set("CdcInsertsAndUpdates", value.asInstanceOf[js.Any])
+    def setCdcInsertsOnlyUndefined: Self = StObject.set(x, "CdcInsertsOnly", js.undefined)
     
     @scala.inline
-    def deleteCdcInsertsAndUpdates: Self = this.set("CdcInsertsAndUpdates", js.undefined)
+    def setCompressionType(value: CompressionTypeValue): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCdcInsertsOnly(value: BooleanOptional): Self = this.set("CdcInsertsOnly", value.asInstanceOf[js.Any])
+    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
     @scala.inline
-    def deleteCdcInsertsOnly: Self = this.set("CdcInsertsOnly", js.undefined)
+    def setCsvDelimiter(value: String): Self = StObject.set(x, "CsvDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionType(value: CompressionTypeValue): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
+    def setCsvDelimiterUndefined: Self = StObject.set(x, "CsvDelimiter", js.undefined)
     
     @scala.inline
-    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+    def setCsvRowDelimiter(value: String): Self = StObject.set(x, "CsvRowDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvDelimiter(value: String): Self = this.set("CsvDelimiter", value.asInstanceOf[js.Any])
+    def setCsvRowDelimiterUndefined: Self = StObject.set(x, "CsvRowDelimiter", js.undefined)
     
     @scala.inline
-    def deleteCsvDelimiter: Self = this.set("CsvDelimiter", js.undefined)
+    def setDataFormat(value: DataFormatValue): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvRowDelimiter(value: String): Self = this.set("CsvRowDelimiter", value.asInstanceOf[js.Any])
+    def setDataFormatUndefined: Self = StObject.set(x, "DataFormat", js.undefined)
     
     @scala.inline
-    def deleteCsvRowDelimiter: Self = this.set("CsvRowDelimiter", js.undefined)
+    def setDataPageSize(value: IntegerOptional): Self = StObject.set(x, "DataPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormat(value: DataFormatValue): Self = this.set("DataFormat", value.asInstanceOf[js.Any])
+    def setDataPageSizeUndefined: Self = StObject.set(x, "DataPageSize", js.undefined)
     
     @scala.inline
-    def deleteDataFormat: Self = this.set("DataFormat", js.undefined)
+    def setDatePartitionDelimiter(value: DatePartitionDelimiterValue): Self = StObject.set(x, "DatePartitionDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPageSize(value: IntegerOptional): Self = this.set("DataPageSize", value.asInstanceOf[js.Any])
+    def setDatePartitionDelimiterUndefined: Self = StObject.set(x, "DatePartitionDelimiter", js.undefined)
     
     @scala.inline
-    def deleteDataPageSize: Self = this.set("DataPageSize", js.undefined)
+    def setDatePartitionEnabled(value: BooleanOptional): Self = StObject.set(x, "DatePartitionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePartitionDelimiter(value: DatePartitionDelimiterValue): Self = this.set("DatePartitionDelimiter", value.asInstanceOf[js.Any])
+    def setDatePartitionEnabledUndefined: Self = StObject.set(x, "DatePartitionEnabled", js.undefined)
     
     @scala.inline
-    def deleteDatePartitionDelimiter: Self = this.set("DatePartitionDelimiter", js.undefined)
+    def setDatePartitionSequence(value: DatePartitionSequenceValue): Self = StObject.set(x, "DatePartitionSequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePartitionEnabled(value: BooleanOptional): Self = this.set("DatePartitionEnabled", value.asInstanceOf[js.Any])
+    def setDatePartitionSequenceUndefined: Self = StObject.set(x, "DatePartitionSequence", js.undefined)
     
     @scala.inline
-    def deleteDatePartitionEnabled: Self = this.set("DatePartitionEnabled", js.undefined)
+    def setDictPageSizeLimit(value: IntegerOptional): Self = StObject.set(x, "DictPageSizeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePartitionSequence(value: DatePartitionSequenceValue): Self = this.set("DatePartitionSequence", value.asInstanceOf[js.Any])
+    def setDictPageSizeLimitUndefined: Self = StObject.set(x, "DictPageSizeLimit", js.undefined)
     
     @scala.inline
-    def deleteDatePartitionSequence: Self = this.set("DatePartitionSequence", js.undefined)
+    def setEnableStatistics(value: BooleanOptional): Self = StObject.set(x, "EnableStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictPageSizeLimit(value: IntegerOptional): Self = this.set("DictPageSizeLimit", value.asInstanceOf[js.Any])
+    def setEnableStatisticsUndefined: Self = StObject.set(x, "EnableStatistics", js.undefined)
     
     @scala.inline
-    def deleteDictPageSizeLimit: Self = this.set("DictPageSizeLimit", js.undefined)
+    def setEncodingType(value: EncodingTypeValue): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableStatistics(value: BooleanOptional): Self = this.set("EnableStatistics", value.asInstanceOf[js.Any])
+    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
     @scala.inline
-    def deleteEnableStatistics: Self = this.set("EnableStatistics", js.undefined)
+    def setEncryptionMode(value: EncryptionModeValue): Self = StObject.set(x, "EncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: EncodingTypeValue): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
     
     @scala.inline
-    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    def setExternalTableDefinition(value: String): Self = StObject.set(x, "ExternalTableDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionMode(value: EncryptionModeValue): Self = this.set("EncryptionMode", value.asInstanceOf[js.Any])
+    def setExternalTableDefinitionUndefined: Self = StObject.set(x, "ExternalTableDefinition", js.undefined)
     
     @scala.inline
-    def deleteEncryptionMode: Self = this.set("EncryptionMode", js.undefined)
+    def setIncludeOpForFullLoad(value: BooleanOptional): Self = StObject.set(x, "IncludeOpForFullLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalTableDefinition(value: String): Self = this.set("ExternalTableDefinition", value.asInstanceOf[js.Any])
+    def setIncludeOpForFullLoadUndefined: Self = StObject.set(x, "IncludeOpForFullLoad", js.undefined)
     
     @scala.inline
-    def deleteExternalTableDefinition: Self = this.set("ExternalTableDefinition", js.undefined)
+    def setParquetTimestampInMillisecond(value: BooleanOptional): Self = StObject.set(x, "ParquetTimestampInMillisecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOpForFullLoad(value: BooleanOptional): Self = this.set("IncludeOpForFullLoad", value.asInstanceOf[js.Any])
+    def setParquetTimestampInMillisecondUndefined: Self = StObject.set(x, "ParquetTimestampInMillisecond", js.undefined)
     
     @scala.inline
-    def deleteIncludeOpForFullLoad: Self = this.set("IncludeOpForFullLoad", js.undefined)
+    def setParquetVersion(value: ParquetVersionValue): Self = StObject.set(x, "ParquetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParquetTimestampInMillisecond(value: BooleanOptional): Self = this.set("ParquetTimestampInMillisecond", value.asInstanceOf[js.Any])
+    def setParquetVersionUndefined: Self = StObject.set(x, "ParquetVersion", js.undefined)
     
     @scala.inline
-    def deleteParquetTimestampInMillisecond: Self = this.set("ParquetTimestampInMillisecond", js.undefined)
+    def setRowGroupLength(value: IntegerOptional): Self = StObject.set(x, "RowGroupLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParquetVersion(value: ParquetVersionValue): Self = this.set("ParquetVersion", value.asInstanceOf[js.Any])
+    def setRowGroupLengthUndefined: Self = StObject.set(x, "RowGroupLength", js.undefined)
     
     @scala.inline
-    def deleteParquetVersion: Self = this.set("ParquetVersion", js.undefined)
+    def setServerSideEncryptionKmsKeyId(value: String): Self = StObject.set(x, "ServerSideEncryptionKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowGroupLength(value: IntegerOptional): Self = this.set("RowGroupLength", value.asInstanceOf[js.Any])
+    def setServerSideEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "ServerSideEncryptionKmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteRowGroupLength: Self = this.set("RowGroupLength", js.undefined)
+    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerSideEncryptionKmsKeyId(value: String): Self = this.set("ServerSideEncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
     
     @scala.inline
-    def deleteServerSideEncryptionKmsKeyId: Self = this.set("ServerSideEncryptionKmsKeyId", js.undefined)
+    def setTimestampColumnName(value: String): Self = StObject.set(x, "TimestampColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
-    
-    @scala.inline
-    def setTimestampColumnName(value: String): Self = this.set("TimestampColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampColumnName: Self = this.set("TimestampColumnName", js.undefined)
+    def setTimestampColumnNameUndefined: Self = StObject.set(x, "TimestampColumnName", js.undefined)
   }
 }

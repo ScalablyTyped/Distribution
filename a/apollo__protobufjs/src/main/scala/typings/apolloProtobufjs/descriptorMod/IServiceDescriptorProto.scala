@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.descriptorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IServiceDescriptorProto extends js.Object {
+trait IServiceDescriptorProto extends StObject {
   
   var method: js.UndefOr[js.Array[IMethodDescriptorProto]] = js.native
   
@@ -22,39 +23,27 @@ object IServiceDescriptorProto {
   }
   
   @scala.inline
-  implicit class IServiceDescriptorProtoOps[Self <: IServiceDescriptorProto] (val x: Self) extends AnyVal {
+  implicit class IServiceDescriptorProtoMutableBuilder[Self <: IServiceDescriptorProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: js.Array[IMethodDescriptorProto]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethodVarargs(value: IMethodDescriptorProto*): Self = StObject.set(x, "method", js.Array(value :_*))
     
     @scala.inline
-    def setMethodVarargs(value: IMethodDescriptorProto*): Self = this.set("method", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: js.Array[IMethodDescriptorProto]): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setOptions(value: IServiceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: IServiceOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

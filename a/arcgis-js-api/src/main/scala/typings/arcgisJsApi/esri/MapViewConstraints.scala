@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,102 +114,90 @@ object MapViewConstraints {
   }
   
   @scala.inline
-  implicit class MapViewConstraintsOps[Self <: MapViewConstraints] (val x: Self) extends AnyVal {
+  implicit class MapViewConstraintsMutableBuilder[Self <: MapViewConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffectiveLODs(value: js.Array[LOD]): Self = StObject.set(x, "effectiveLODs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectiveLODsUndefined: Self = StObject.set(x, "effectiveLODs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffectiveLODsVarargs(value: LOD*): Self = StObject.set(x, "effectiveLODs", js.Array(value :_*))
     
     @scala.inline
-    def setEffectiveLODsVarargs(value: LOD*): Self = this.set("effectiveLODs", js.Array(value :_*))
+    def setEffectiveMaxScale(value: Double): Self = StObject.set(x, "effectiveMaxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveLODs(value: js.Array[LOD]): Self = this.set("effectiveLODs", value.asInstanceOf[js.Any])
+    def setEffectiveMaxScaleUndefined: Self = StObject.set(x, "effectiveMaxScale", js.undefined)
     
     @scala.inline
-    def deleteEffectiveLODs: Self = this.set("effectiveLODs", js.undefined)
+    def setEffectiveMaxZoom(value: Double): Self = StObject.set(x, "effectiveMaxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveMaxScale(value: Double): Self = this.set("effectiveMaxScale", value.asInstanceOf[js.Any])
+    def setEffectiveMaxZoomUndefined: Self = StObject.set(x, "effectiveMaxZoom", js.undefined)
     
     @scala.inline
-    def deleteEffectiveMaxScale: Self = this.set("effectiveMaxScale", js.undefined)
+    def setEffectiveMinScale(value: Double): Self = StObject.set(x, "effectiveMinScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveMaxZoom(value: Double): Self = this.set("effectiveMaxZoom", value.asInstanceOf[js.Any])
+    def setEffectiveMinScaleUndefined: Self = StObject.set(x, "effectiveMinScale", js.undefined)
     
     @scala.inline
-    def deleteEffectiveMaxZoom: Self = this.set("effectiveMaxZoom", js.undefined)
+    def setEffectiveMinZoom(value: Double): Self = StObject.set(x, "effectiveMinZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveMinScale(value: Double): Self = this.set("effectiveMinScale", value.asInstanceOf[js.Any])
+    def setEffectiveMinZoomUndefined: Self = StObject.set(x, "effectiveMinZoom", js.undefined)
     
     @scala.inline
-    def deleteEffectiveMinScale: Self = this.set("effectiveMinScale", js.undefined)
+    def setGeometry(value: Geometry_): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveMinZoom(value: Double): Self = this.set("effectiveMinZoom", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def deleteEffectiveMinZoom: Self = this.set("effectiveMinZoom", js.undefined)
+    def setLods(value: js.Array[LOD]): Self = StObject.set(x, "lods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: Geometry_): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setLodsUndefined: Self = StObject.set(x, "lods", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    def setLodsVarargs(value: LOD*): Self = StObject.set(x, "lods", js.Array(value :_*))
     
     @scala.inline
-    def setLodsVarargs(value: LOD*): Self = this.set("lods", js.Array(value :_*))
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLods(value: js.Array[LOD]): Self = this.set("lods", value.asInstanceOf[js.Any])
+    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
     @scala.inline
-    def deleteLods: Self = this.set("lods", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxScale: Self = this.set("maxScale", js.undefined)
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMinScale: Self = this.set("minScale", js.undefined)
+    def setRotationEnabled(value: Boolean): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setRotationEnabledUndefined: Self = StObject.set(x, "rotationEnabled", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setSnapToZoom(value: Boolean): Self = StObject.set(x, "snapToZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationEnabled(value: Boolean): Self = this.set("rotationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationEnabled: Self = this.set("rotationEnabled", js.undefined)
-    
-    @scala.inline
-    def setSnapToZoom(value: Boolean): Self = this.set("snapToZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapToZoom: Self = this.set("snapToZoom", js.undefined)
+    def setSnapToZoomUndefined: Self = StObject.set(x, "snapToZoom", js.undefined)
   }
 }

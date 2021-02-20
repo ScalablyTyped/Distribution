@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleActivityTaskDecisionAttributes extends js.Object {
+trait ScheduleActivityTaskDecisionAttributes extends StObject {
   
   /**
     *  The activityId of the activity task. The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f-\\u009f). Also, it must not contain the literal string arn.
@@ -66,72 +67,60 @@ object ScheduleActivityTaskDecisionAttributes {
   }
   
   @scala.inline
-  implicit class ScheduleActivityTaskDecisionAttributesOps[Self <: ScheduleActivityTaskDecisionAttributes] (val x: Self) extends AnyVal {
+  implicit class ScheduleActivityTaskDecisionAttributesMutableBuilder[Self <: ScheduleActivityTaskDecisionAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityId(value: ActivityId): Self = this.set("activityId", value.asInstanceOf[js.Any])
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def setActivityType(value: ActivityType): Self = this.set("activityType", value.asInstanceOf[js.Any])
+    def setHeartbeatTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatTimeout(value: DurationInSecondsOptional): Self = this.set("heartbeatTimeout", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatTimeout: Self = this.set("heartbeatTimeout", js.undefined)
+    def setScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "scheduleToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Data): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setScheduleToCloseTimeoutUndefined: Self = StObject.set(x, "scheduleToCloseTimeout", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setScheduleToStartTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "scheduleToStartTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("scheduleToCloseTimeout", value.asInstanceOf[js.Any])
+    def setScheduleToStartTimeoutUndefined: Self = StObject.set(x, "scheduleToStartTimeout", js.undefined)
     
     @scala.inline
-    def deleteScheduleToCloseTimeout: Self = this.set("scheduleToCloseTimeout", js.undefined)
+    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleToStartTimeout(value: DurationInSecondsOptional): Self = this.set("scheduleToStartTimeout", value.asInstanceOf[js.Any])
+    def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
     
     @scala.inline
-    def deleteScheduleToStartTimeout: Self = this.set("scheduleToStartTimeout", js.undefined)
+    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("startToCloseTimeout", value.asInstanceOf[js.Any])
+    def setTaskListUndefined: Self = StObject.set(x, "taskList", js.undefined)
     
     @scala.inline
-    def deleteStartToCloseTimeout: Self = this.set("startToCloseTimeout", js.undefined)
+    def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskList(value: TaskList): Self = this.set("taskList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskList: Self = this.set("taskList", js.undefined)
-    
-    @scala.inline
-    def setTaskPriority(value: TaskPriority): Self = this.set("taskPriority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskPriority: Self = this.set("taskPriority", js.undefined)
+    def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
   }
 }

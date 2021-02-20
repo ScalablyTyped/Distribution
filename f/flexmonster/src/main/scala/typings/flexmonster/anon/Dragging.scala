@@ -1,11 +1,12 @@
 package typings.flexmonster.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dragging extends js.Object {
+trait Dragging extends StObject {
   
   var dragging: js.UndefOr[Boolean] = js.native
   
@@ -44,102 +45,90 @@ object Dragging {
   }
   
   @scala.inline
-  implicit class DraggingOps[Self <: Dragging] (val x: Self) extends AnyVal {
+  implicit class DraggingMutableBuilder[Self <: Dragging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrillThroughMaxRows(value: Double): Self = StObject.set(x, "drillThroughMaxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    def setDrillThroughMaxRowsUndefined: Self = StObject.set(x, "drillThroughMaxRows", js.undefined)
     
     @scala.inline
-    def deleteDragging: Self = this.set("dragging", js.undefined)
+    def setGrandTotalsPosition(value: String): Self = StObject.set(x, "grandTotalsPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillThroughMaxRows(value: Double): Self = this.set("drillThroughMaxRows", value.asInstanceOf[js.Any])
+    def setGrandTotalsPositionUndefined: Self = StObject.set(x, "grandTotalsPosition", js.undefined)
     
     @scala.inline
-    def deleteDrillThroughMaxRows: Self = this.set("drillThroughMaxRows", js.undefined)
+    def setShowAutoCalculationBar(value: Boolean): Self = StObject.set(x, "showAutoCalculationBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrandTotalsPosition(value: String): Self = this.set("grandTotalsPosition", value.asInstanceOf[js.Any])
+    def setShowAutoCalculationBarUndefined: Self = StObject.set(x, "showAutoCalculationBar", js.undefined)
     
     @scala.inline
-    def deleteGrandTotalsPosition: Self = this.set("grandTotalsPosition", js.undefined)
+    def setShowEmptyValues(value: Boolean): Self = StObject.set(x, "showEmptyValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAutoCalculationBar(value: Boolean): Self = this.set("showAutoCalculationBar", value.asInstanceOf[js.Any])
+    def setShowEmptyValuesUndefined: Self = StObject.set(x, "showEmptyValues", js.undefined)
     
     @scala.inline
-    def deleteShowAutoCalculationBar: Self = this.set("showAutoCalculationBar", js.undefined)
+    def setShowFilter(value: Boolean): Self = StObject.set(x, "showFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEmptyValues(value: Boolean): Self = this.set("showEmptyValues", value.asInstanceOf[js.Any])
+    def setShowFilterUndefined: Self = StObject.set(x, "showFilter", js.undefined)
     
     @scala.inline
-    def deleteShowEmptyValues: Self = this.set("showEmptyValues", js.undefined)
+    def setShowGrandTotals(value: String): Self = StObject.set(x, "showGrandTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFilter(value: Boolean): Self = this.set("showFilter", value.asInstanceOf[js.Any])
+    def setShowGrandTotalsUndefined: Self = StObject.set(x, "showGrandTotals", js.undefined)
     
     @scala.inline
-    def deleteShowFilter: Self = this.set("showFilter", js.undefined)
+    def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGrandTotals(value: String): Self = this.set("showGrandTotals", value.asInstanceOf[js.Any])
+    def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
     
     @scala.inline
-    def deleteShowGrandTotals: Self = this.set("showGrandTotals", js.undefined)
+    def setShowHierarchies(value: Boolean): Self = StObject.set(x, "showHierarchies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHeaders(value: Boolean): Self = this.set("showHeaders", value.asInstanceOf[js.Any])
+    def setShowHierarchiesUndefined: Self = StObject.set(x, "showHierarchies", js.undefined)
     
     @scala.inline
-    def deleteShowHeaders: Self = this.set("showHeaders", js.undefined)
+    def setShowHierarchyCaptions(value: Boolean): Self = StObject.set(x, "showHierarchyCaptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHierarchies(value: Boolean): Self = this.set("showHierarchies", value.asInstanceOf[js.Any])
+    def setShowHierarchyCaptionsUndefined: Self = StObject.set(x, "showHierarchyCaptions", js.undefined)
     
     @scala.inline
-    def deleteShowHierarchies: Self = this.set("showHierarchies", js.undefined)
+    def setShowReportFiltersArea(value: Boolean): Self = StObject.set(x, "showReportFiltersArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHierarchyCaptions(value: Boolean): Self = this.set("showHierarchyCaptions", value.asInstanceOf[js.Any])
+    def setShowReportFiltersAreaUndefined: Self = StObject.set(x, "showReportFiltersArea", js.undefined)
     
     @scala.inline
-    def deleteShowHierarchyCaptions: Self = this.set("showHierarchyCaptions", js.undefined)
+    def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowReportFiltersArea(value: Boolean): Self = this.set("showReportFiltersArea", value.asInstanceOf[js.Any])
+    def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
     
     @scala.inline
-    def deleteShowReportFiltersArea: Self = this.set("showReportFiltersArea", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTotals(value: Boolean): Self = this.set("showTotals", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowTotals: Self = this.set("showTotals", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

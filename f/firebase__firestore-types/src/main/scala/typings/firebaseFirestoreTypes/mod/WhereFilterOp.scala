@@ -1,5 +1,6 @@
 package typings.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`array-contains-any`
   - typings.firebaseFirestoreTypes.firebaseFirestoreTypesStrings.`not-in`
 */
-trait WhereFilterOp extends js.Object
+trait WhereFilterOp extends StObject
 object WhereFilterOp {
   
   @scala.inline

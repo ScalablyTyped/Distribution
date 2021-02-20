@@ -1,5 +1,6 @@
 package typings.pkgcloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pkgcloud.pkgcloudStrings.redistogo
   - typings.pkgcloud.pkgcloudStrings.telefonic
 */
-trait Providers extends js.Object
+trait Providers extends StObject
 object Providers {
   
   @scala.inline

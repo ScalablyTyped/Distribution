@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -320,7 +321,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.z39Dot50r
   - typings.ipp.ippStrings.z39Dot50s
 */
-trait UriSchemes extends js.Object
+trait UriSchemes extends StObject
 object UriSchemes {
   
   @scala.inline

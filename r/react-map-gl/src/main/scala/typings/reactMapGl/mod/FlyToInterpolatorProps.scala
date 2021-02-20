@@ -1,11 +1,12 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlyToInterpolatorProps extends js.Object {
+trait FlyToInterpolatorProps extends StObject {
   
   var curve: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object FlyToInterpolatorProps {
   }
   
   @scala.inline
-  implicit class FlyToInterpolatorPropsOps[Self <: FlyToInterpolatorProps] (val x: Self) extends AnyVal {
+  implicit class FlyToInterpolatorPropsMutableBuilder[Self <: FlyToInterpolatorProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurve(value: Double): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurve(value: Double): Self = this.set("curve", value.asInstanceOf[js.Any])
+    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
     @scala.inline
-    def deleteCurve: Self = this.set("curve", js.undefined)
+    def setScreenSpeed(value: Double): Self = StObject.set(x, "screenSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
+    def setScreenSpeedUndefined: Self = StObject.set(x, "screenSpeed", js.undefined)
     
     @scala.inline
-    def deleteMaxDuration: Self = this.set("maxDuration", js.undefined)
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenSpeed(value: Double): Self = this.set("screenSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenSpeed: Self = this.set("screenSpeed", js.undefined)
-    
-    @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The original labeling from the input document, without the submitted feedback. */
 @js.native
-trait OriginalLabelsOut extends js.Object {
+trait OriginalLabelsOut extends StObject {
   
   /** List of functional categories into which the element falls; in other words, the subject matter of the element. */
   var categories: js.UndefOr[js.Array[Category]] = js.native
@@ -26,42 +27,30 @@ object OriginalLabelsOut {
   }
   
   @scala.inline
-  implicit class OriginalLabelsOutOps[Self <: OriginalLabelsOut] (val x: Self) extends AnyVal {
+  implicit class OriginalLabelsOutMutableBuilder[Self <: OriginalLabelsOut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: Category*): Self = this.set("categories", js.Array(value :_*))
+    def setModification(value: String): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[Category]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setModificationUndefined: Self = StObject.set(x, "modification", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setTypes(value: js.Array[TypeLabel]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModification(value: String): Self = this.set("modification", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteModification: Self = this.set("modification", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: TypeLabel*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[TypeLabel]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

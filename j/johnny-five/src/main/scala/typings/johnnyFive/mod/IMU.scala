@@ -3,13 +3,14 @@ package typings.johnnyFive.mod
 import typings.johnnyFive.johnnyFiveStrings.calibrated
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "IMU")
 @js.native
-class IMU protected () extends js.Object {
+class IMU protected () extends StObject {
   def this(option: IMUGeneralOption) = this()
   def this(option: IMUMPU6050Option) = this()
   

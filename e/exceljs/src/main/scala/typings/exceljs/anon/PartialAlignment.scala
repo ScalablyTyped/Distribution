@@ -13,13 +13,14 @@ import typings.exceljs.exceljsStrings.right
 import typings.exceljs.exceljsStrings.rtl
 import typings.exceljs.exceljsStrings.top
 import typings.exceljs.exceljsStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Alignment> */
 @js.native
-trait PartialAlignment extends js.Object {
+trait PartialAlignment extends StObject {
   
   var horizontal: js.UndefOr[left | center | right | fill | justify | centerContinuous | distributed] = js.native
   
@@ -44,60 +45,48 @@ object PartialAlignment {
   }
   
   @scala.inline
-  implicit class PartialAlignmentOps[Self <: PartialAlignment] (val x: Self) extends AnyVal {
+  implicit class PartialAlignmentMutableBuilder[Self <: PartialAlignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontal(value: left | center | right | fill | justify | centerContinuous | distributed): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: left | center | right | fill | justify | centerContinuous | distributed): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setReadingOrder(value: rtl | ltr): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setReadingOrderUndefined: Self = StObject.set(x, "readingOrder", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingOrder(value: rtl | ltr): Self = this.set("readingOrder", value.asInstanceOf[js.Any])
+    def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
     
     @scala.inline
-    def deleteReadingOrder: Self = this.set("readingOrder", js.undefined)
+    def setTextRotation(value: Double | vertical): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShrinkToFit(value: Boolean): Self = this.set("shrinkToFit", value.asInstanceOf[js.Any])
+    def setTextRotationUndefined: Self = StObject.set(x, "textRotation", js.undefined)
     
     @scala.inline
-    def deleteShrinkToFit: Self = this.set("shrinkToFit", js.undefined)
+    def setVertical(value: top | middle | bottom | distributed | justify): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRotation(value: Double | vertical): Self = this.set("textRotation", value.asInstanceOf[js.Any])
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     
     @scala.inline
-    def deleteTextRotation: Self = this.set("textRotation", js.undefined)
+    def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertical(value: top | middle | bottom | distributed | justify): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
-    
-    @scala.inline
-    def setWrapText(value: Boolean): Self = this.set("wrapText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapText: Self = this.set("wrapText", js.undefined)
+    def setWrapTextUndefined: Self = StObject.set(x, "wrapText", js.undefined)
   }
 }

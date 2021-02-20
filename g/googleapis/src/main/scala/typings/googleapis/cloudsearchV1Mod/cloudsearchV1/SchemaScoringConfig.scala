@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * request.
   */
 @js.native
-trait SchemaScoringConfig extends js.Object {
+trait SchemaScoringConfig extends StObject {
   
   /**
     * Whether to use freshness as a ranking signal. By default, freshness is
@@ -33,30 +34,18 @@ object SchemaScoringConfig {
   }
   
   @scala.inline
-  implicit class SchemaScoringConfigOps[Self <: SchemaScoringConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaScoringConfigMutableBuilder[Self <: SchemaScoringConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableFreshness(value: Boolean): Self = StObject.set(x, "disableFreshness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableFreshnessUndefined: Self = StObject.set(x, "disableFreshness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisablePersonalization(value: Boolean): Self = StObject.set(x, "disablePersonalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFreshness(value: Boolean): Self = this.set("disableFreshness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableFreshness: Self = this.set("disableFreshness", js.undefined)
-    
-    @scala.inline
-    def setDisablePersonalization(value: Boolean): Self = this.set("disablePersonalization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisablePersonalization: Self = this.set("disablePersonalization", js.undefined)
+    def setDisablePersonalizationUndefined: Self = StObject.set(x, "disablePersonalization", js.undefined)
   }
 }

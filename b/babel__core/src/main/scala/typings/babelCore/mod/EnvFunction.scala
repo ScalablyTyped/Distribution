@@ -1,12 +1,13 @@
 package typings.babelCore.mod
 
 import typings.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvFunction extends js.Object {
+trait EnvFunction extends StObject {
   
   /**
     * @returns the current `envName` string

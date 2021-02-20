@@ -4,16 +4,15 @@ import typings.dynamodb.anon.AttributeNames
 import typings.dynamodb.callbackMod.Callback
 import typings.dynamodb.executeFilterMod.ExecuteFilter
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dynamodb/Query", JSImport.Namespace)
-@js.native
-object queryMod extends js.Object {
+object queryMod {
   
   @js.native
-  trait Query extends js.Object {
+  trait Query extends StObject {
     
     def apply(hashKey: String, table: js.Any, serializer: js.Any): Unit = js.native
     

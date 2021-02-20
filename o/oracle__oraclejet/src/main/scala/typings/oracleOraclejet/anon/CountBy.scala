@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CountBy extends js.Object {
+trait CountBy extends StObject {
   
   var countBy: String = js.native
 }
@@ -18,21 +19,9 @@ object CountBy {
   }
   
   @scala.inline
-  implicit class CountByOps[Self <: CountBy] (val x: Self) extends AnyVal {
+  implicit class CountByMutableBuilder[Self <: CountBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountBy(value: String): Self = this.set("countBy", value.asInstanceOf[js.Any])
+    def setCountBy(value: String): Self = StObject.set(x, "countBy", value.asInstanceOf[js.Any])
   }
 }

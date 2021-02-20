@@ -4,12 +4,13 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.error_
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.sent
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.timeout
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.verified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneAuthSnapshot extends js.Object {
+trait PhoneAuthSnapshot extends StObject {
   
   var code: String | Null = js.native
   
@@ -28,36 +29,24 @@ object PhoneAuthSnapshot {
   }
   
   @scala.inline
-  implicit class PhoneAuthSnapshotOps[Self <: PhoneAuthSnapshot] (val x: Self) extends AnyVal {
+  implicit class PhoneAuthSnapshotMutableBuilder[Self <: PhoneAuthSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeNull: Self = StObject.set(x, "code", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: NativeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: sent | timeout | verified | error_): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def setVerificationId(value: String): Self = this.set("verificationId", value.asInstanceOf[js.Any])
+    def setState(value: sent | timeout | verified | error_): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCodeNull: Self = this.set("code", null)
-    
-    @scala.inline
-    def setError(value: NativeError): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
   }
 }

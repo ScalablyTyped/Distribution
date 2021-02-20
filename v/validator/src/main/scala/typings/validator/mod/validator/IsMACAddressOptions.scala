@@ -1,11 +1,12 @@
 package typings.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsMACAddressOptions extends js.Object {
+trait IsMACAddressOptions extends StObject {
   
   /**
     * If `no_colons` is `true`, the validator will allow MAC addresses without the colons.
@@ -26,24 +27,12 @@ object IsMACAddressOptions {
   }
   
   @scala.inline
-  implicit class IsMACAddressOptionsOps[Self <: IsMACAddressOptions] (val x: Self) extends AnyVal {
+  implicit class IsMACAddressOptionsMutableBuilder[Self <: IsMACAddressOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNo_colons(value: Boolean): Self = this.set("no_colons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNo_colons: Self = this.set("no_colons", js.undefined)
+    def setNo_colonsUndefined: Self = StObject.set(x, "no_colons", js.undefined)
   }
 }

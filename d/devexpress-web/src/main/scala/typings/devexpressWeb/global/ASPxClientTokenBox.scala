@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientTokenBox ()
   extends typings.devexpressWeb.ASPxClientTokenBox
-/* static members */
-@JSGlobal("ASPxClientTokenBox")
-@js.native
-object ASPxClientTokenBox extends js.Object {
+object ASPxClientTokenBox {
   
   /**
     * Converts the specified object to the ASPxClientTokenBox type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientTokenBox.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTokenBox = js.native
 }

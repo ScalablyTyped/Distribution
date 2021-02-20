@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,16 +53,20 @@ class ValidationFeedbackAction protected () extends MicroflowAction {
   def objectVariableName: String = js.native
   def objectVariableName_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction")
-@js.native
-object ValidationFeedbackAction extends js.Object {
+object ValidationFeedbackAction {
+  
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ValidationFeedbackAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.create")
+  @js.native
   def create(model: IModel): ValidationFeedbackAction = js.native
   
   /**
@@ -69,9 +74,22 @@ object ValidationFeedbackAction extends js.Object {
     * The new ValidationFeedbackAction will be automatically stored in the 'action' property
     * of the parent ActionActivity element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.createIn")
+  @js.native
   def createIn(container: ActionActivity): ValidationFeedbackAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ValidationFeedbackAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

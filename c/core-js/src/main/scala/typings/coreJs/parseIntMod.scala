@@ -1,13 +1,17 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/number/parse-int", JSImport.Namespace)
-@js.native
-object parseIntMod
-  extends TopLevel[
-      js.Function2[/* string */ java.lang.String, /* radix */ js.UndefOr[Double], Double]
-    ]
+object parseIntMod {
+  
+  /* was `typeof core.Number.parseInt` */
+  @JSImport("core-js/fn/number/parse-int", JSImport.Namespace)
+  @js.native
+  def apply(string: java.lang.String): Double = js.native
+  @JSImport("core-js/fn/number/parse-int", JSImport.Namespace)
+  @js.native
+  def apply(string: java.lang.String, radix: Double): Double = js.native
+}

@@ -2,12 +2,13 @@ package typings.chrome.anon
 
 import typings.chrome.chromeStrings.eight
 import typings.chrome.chromeStrings.seven
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EIGHT extends js.Object {
+trait EIGHT extends StObject {
   
   var EIGHT: eight = js.native
   
@@ -22,24 +23,12 @@ object EIGHT {
   }
   
   @scala.inline
-  implicit class EIGHTOps[Self <: EIGHT] (val x: Self) extends AnyVal {
+  implicit class EIGHTMutableBuilder[Self <: EIGHT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEIGHT(value: eight): Self = StObject.set(x, "EIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEIGHT(value: eight): Self = this.set("EIGHT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSEVEN(value: seven): Self = this.set("SEVEN", value.asInstanceOf[js.Any])
+    def setSEVEN(value: seven): Self = StObject.set(x, "SEVEN", value.asInstanceOf[js.Any])
   }
 }

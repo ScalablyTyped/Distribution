@@ -9,14 +9,14 @@ import typings.ionicCore.navInterfaceMod.SwipeGestureHandler
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/router-outlet/route-outlet", JSImport.Namespace)
-@js.native
-object routeOutletMod extends js.Object {
+object routeOutletMod {
   
+  @JSImport("@ionic/core/dist/types/components/router-outlet/route-outlet", "RouterOutlet")
   @js.native
   class RouterOutlet ()
     extends ComponentInterface

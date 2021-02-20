@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompatibleImage extends js.Object {
+trait CompatibleImage extends StObject {
   
   /**
     * The unique identifier for an individual Snow device AMI.
@@ -26,30 +27,18 @@ object CompatibleImage {
   }
   
   @scala.inline
-  implicit class CompatibleImageOps[Self <: CompatibleImage] (val x: Self) extends AnyVal {
+  implicit class CompatibleImageMutableBuilder[Self <: CompatibleImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmiId(value: String): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmiIdUndefined: Self = StObject.set(x, "AmiId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmiId(value: String): Self = this.set("AmiId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmiId: Self = this.set("AmiId", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

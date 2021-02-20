@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,33 +61,21 @@ object Tombstone {
   }
   
   @scala.inline
-  implicit class TombstoneOps[Self <: Tombstone] (val x: Self) extends AnyVal {
+  implicit class TombstoneMutableBuilder[Self <: Tombstone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreep(value: AnyCreep): Self = StObject.set(x, "creep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeathTime(value: Double): Self = StObject.set(x, "deathTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Id[Tombstone]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreep(value: AnyCreep): Self = this.set("creep", value.asInstanceOf[js.Any])
+    def setStore(value: StoreDefinitionUnlimited): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeathTime(value: Double): Self = this.set("deathTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Id[Tombstone]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStore(value: StoreDefinitionUnlimited): Self = this.set("store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = this.set("ticksToDecay", value.asInstanceOf[js.Any])
+    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

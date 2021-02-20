@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetJobsResponse extends js.Object {
+trait BatchGetJobsResponse extends StObject {
   
   /**
     * A list of job definitions.
@@ -26,36 +27,24 @@ object BatchGetJobsResponse {
   }
   
   @scala.inline
-  implicit class BatchGetJobsResponseOps[Self <: BatchGetJobsResponse] (val x: Self) extends AnyVal {
+  implicit class BatchGetJobsResponseMutableBuilder[Self <: BatchGetJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobs(value: JobList): Self = StObject.set(x, "Jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobsNotFound(value: JobNameList): Self = StObject.set(x, "JobsNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobsNotFoundUndefined: Self = StObject.set(x, "JobsNotFound", js.undefined)
     
     @scala.inline
-    def setJobsVarargs(value: Job*): Self = this.set("Jobs", js.Array(value :_*))
+    def setJobsNotFoundVarargs(value: NameString*): Self = StObject.set(x, "JobsNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setJobs(value: JobList): Self = this.set("Jobs", value.asInstanceOf[js.Any])
+    def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
     
     @scala.inline
-    def deleteJobs: Self = this.set("Jobs", js.undefined)
-    
-    @scala.inline
-    def setJobsNotFoundVarargs(value: NameString*): Self = this.set("JobsNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setJobsNotFound(value: JobNameList): Self = this.set("JobsNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobsNotFound: Self = this.set("JobsNotFound", js.undefined)
+    def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value :_*))
   }
 }

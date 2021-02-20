@@ -1,11 +1,12 @@
 package typings.ionic.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginalUrl extends js.Object {
+trait OriginalUrl extends StObject {
   
   var originalUrl: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object OriginalUrl {
   }
   
   @scala.inline
-  implicit class OriginalUrlOps[Self <: OriginalUrl] (val x: Self) extends AnyVal {
+  implicit class OriginalUrlMutableBuilder[Self <: OriginalUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalUrl(value: String): Self = this.set("originalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalUrl: Self = this.set("originalUrl", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

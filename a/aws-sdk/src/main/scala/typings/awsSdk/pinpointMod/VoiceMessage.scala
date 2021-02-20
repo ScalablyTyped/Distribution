@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceMessage extends js.Object {
+trait VoiceMessage extends StObject {
   
   /**
     * The text of the script to use for the voice message.
@@ -41,48 +42,36 @@ object VoiceMessage {
   }
   
   @scala.inline
-  implicit class VoiceMessageOps[Self <: VoiceMessage] (val x: Self) extends AnyVal {
+  implicit class VoiceMessageMutableBuilder[Self <: VoiceMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setOriginationNumber(value: string): Self = StObject.set(x, "OriginationNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: string): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setOriginationNumberUndefined: Self = StObject.set(x, "OriginationNumber", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginationNumber(value: string): Self = this.set("OriginationNumber", value.asInstanceOf[js.Any])
+    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     
     @scala.inline
-    def deleteOriginationNumber: Self = this.set("OriginationNumber", js.undefined)
+    def setVoiceId(value: string): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
-    
-    @scala.inline
-    def setVoiceId(value: string): Self = this.set("VoiceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceId: Self = this.set("VoiceId", js.undefined)
+    def setVoiceIdUndefined: Self = StObject.set(x, "VoiceId", js.undefined)
   }
 }

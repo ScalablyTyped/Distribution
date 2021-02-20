@@ -14,12 +14,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ps
 import typings.arcgisJsApi.arcgisJsApiStrings.svg
 import typings.arcgisJsApi.arcgisJsApiStrings.svgz
 import typings.arcgisJsApi.arcgisJsApiStrings.tiff
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileInfoProperties extends js.Object {
+trait TileInfoProperties extends StObject {
   
   /**
     * The dots per inch (DPI) of the tiling scheme.
@@ -81,66 +82,54 @@ object TileInfoProperties {
   }
   
   @scala.inline
-  implicit class TileInfoPropertiesOps[Self <: TileInfoProperties] (val x: Self) extends AnyVal {
+  implicit class TileInfoPropertiesMutableBuilder[Self <: TileInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpi(value: Double): Self = this.set("dpi", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDpi: Self = this.set("dpi", js.undefined)
+    def setIsWrappable(value: Boolean): Self = StObject.set(x, "isWrappable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIsWrappableUndefined: Self = StObject.set(x, "isWrappable", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setLods(value: js.Array[LODProperties]): Self = StObject.set(x, "lods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWrappable(value: Boolean): Self = this.set("isWrappable", value.asInstanceOf[js.Any])
+    def setLodsUndefined: Self = StObject.set(x, "lods", js.undefined)
     
     @scala.inline
-    def deleteIsWrappable: Self = this.set("isWrappable", js.undefined)
+    def setLodsVarargs(value: LODProperties*): Self = StObject.set(x, "lods", js.Array(value :_*))
     
     @scala.inline
-    def setLodsVarargs(value: LODProperties*): Self = this.set("lods", js.Array(value :_*))
+    def setOrigin(value: PointProperties): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLods(value: js.Array[LODProperties]): Self = this.set("lods", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteLods: Self = this.set("lods", js.undefined)
+    def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: PointProperties): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
     
     @scala.inline
-    def setSizeVarargs(value: Double*): Self = this.set("size", js.Array(value :_*))
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: js.Array[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

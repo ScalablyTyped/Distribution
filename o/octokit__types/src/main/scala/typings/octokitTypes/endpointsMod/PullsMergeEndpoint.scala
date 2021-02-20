@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.merge
 import typings.octokitTypes.octokitTypesStrings.rebase
 import typings.octokitTypes.octokitTypesStrings.squash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullsMergeEndpoint extends js.Object {
+trait PullsMergeEndpoint extends StObject {
   
   /**
     * Extra detail to append to automatic commit message.
@@ -45,51 +46,39 @@ object PullsMergeEndpoint {
   }
   
   @scala.inline
-  implicit class PullsMergeEndpointOps[Self <: PullsMergeEndpoint] (val x: Self) extends AnyVal {
+  implicit class PullsMergeEndpointMutableBuilder[Self <: PullsMergeEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommit_message(value: String): Self = StObject.set(x, "commit_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommit_messageUndefined: Self = StObject.set(x, "commit_message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit_title(value: String): Self = StObject.set(x, "commit_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setCommit_titleUndefined: Self = StObject.set(x, "commit_title", js.undefined)
     
     @scala.inline
-    def setPull_number(value: Double): Self = this.set("pull_number", value.asInstanceOf[js.Any])
+    def setMerge_method(value: merge | squash | rebase): Self = StObject.set(x, "merge_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setMerge_methodUndefined: Self = StObject.set(x, "merge_method", js.undefined)
     
     @scala.inline
-    def setCommit_message(value: String): Self = this.set("commit_message", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommit_message: Self = this.set("commit_message", js.undefined)
+    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit_title(value: String): Self = this.set("commit_title", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommit_title: Self = this.set("commit_title", js.undefined)
+    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerge_method(value: merge | squash | rebase): Self = this.set("merge_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerge_method: Self = this.set("merge_method", js.undefined)
-    
-    @scala.inline
-    def setSha(value: String): Self = this.set("sha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSha: Self = this.set("sha", js.undefined)
+    def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentMethodNonceGateway extends js.Object {
+trait PaymentMethodNonceGateway extends StObject {
   
   def create(paymentMethodToken: String): js.Promise[ValidatedResponse[PaymentMethodNonce]] = js.native
   
@@ -23,24 +24,12 @@ object PaymentMethodNonceGateway {
   }
   
   @scala.inline
-  implicit class PaymentMethodNonceGatewayOps[Self <: PaymentMethodNonceGateway] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodNonceGatewayMutableBuilder[Self <: PaymentMethodNonceGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: String => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: String => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = this.set("create", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFind(value: String => js.Promise[PaymentMethodNonce]): Self = this.set("find", js.Any.fromFunction1(value))
+    def setFind(value: String => js.Promise[PaymentMethodNonce]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

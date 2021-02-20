@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - The application.
   */
 @js.native
-trait ResourceLoader extends js.Object {
+trait ResourceLoader extends StObject {
   
   /**
     * Add a {@link pc.ResourceHandler} for a resource type. Handler should support atleast load() and open().

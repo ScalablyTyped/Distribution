@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,66 +66,54 @@ object BasemapProperties {
   }
   
   @scala.inline
-  implicit class BasemapPropertiesOps[Self <: BasemapProperties] (val x: Self) extends AnyVal {
+  implicit class BasemapPropertiesMutableBuilder[Self <: BasemapProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
     
     @scala.inline
-    def setBaseLayersVarargs(value: LayerProperties*): Self = this.set("baseLayers", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLayers(value: CollectionProperties[LayerProperties]): Self = this.set("baseLayers", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteBaseLayers: Self = this.set("baseLayers", js.undefined)
+    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setReferenceLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = this.set("portalItem", value.asInstanceOf[js.Any])
+    def setReferenceLayersUndefined: Self = StObject.set(x, "referenceLayers", js.undefined)
     
     @scala.inline
-    def deletePortalItem: Self = this.set("portalItem", js.undefined)
+    def setReferenceLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "referenceLayers", js.Array(value :_*))
     
     @scala.inline
-    def setReferenceLayersVarargs(value: LayerProperties*): Self = this.set("referenceLayers", js.Array(value :_*))
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceLayers(value: CollectionProperties[LayerProperties]): Self = this.set("referenceLayers", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteReferenceLayers: Self = this.set("referenceLayers", js.undefined)
+    def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
     @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailUrl(value: String): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

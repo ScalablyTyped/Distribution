@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CharacterMaskConfig extends js.Object {
+trait CharacterMaskConfig extends StObject {
   
   /** Character to mask the sensitive values. If not supplied, defaults to "*". */
   var maskingCharacter: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object CharacterMaskConfig {
   }
   
   @scala.inline
-  implicit class CharacterMaskConfigOps[Self <: CharacterMaskConfig] (val x: Self) extends AnyVal {
+  implicit class CharacterMaskConfigMutableBuilder[Self <: CharacterMaskConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaskingCharacter(value: String): Self = this.set("maskingCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaskingCharacter: Self = this.set("maskingCharacter", js.undefined)
+    def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
   }
 }

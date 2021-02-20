@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VRTeleportationOptions extends js.Object {
+trait VRTeleportationOptions extends StObject {
   
   /**
     * The easing function used in the animation or null for Linear. (default CircleEase)
@@ -46,57 +47,45 @@ object VRTeleportationOptions {
   }
   
   @scala.inline
-  implicit class VRTeleportationOptionsOps[Self <: VRTeleportationOptions] (val x: Self) extends AnyVal {
+  implicit class VRTeleportationOptionsMutableBuilder[Self <: VRTeleportationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEasingFunctionUndefined: Self = StObject.set(x, "easingFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloorMeshName(value: String): Self = StObject.set(x, "floorMeshName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasingFunction(value: EasingFunction): Self = this.set("easingFunction", value.asInstanceOf[js.Any])
+    def setFloorMeshNameUndefined: Self = StObject.set(x, "floorMeshName", js.undefined)
     
     @scala.inline
-    def deleteEasingFunction: Self = this.set("easingFunction", js.undefined)
+    def setFloorMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorMeshName(value: String): Self = this.set("floorMeshName", value.asInstanceOf[js.Any])
+    def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
     @scala.inline
-    def deleteFloorMeshName: Self = this.set("floorMeshName", js.undefined)
+    def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
     
     @scala.inline
-    def setFloorMeshesVarargs(value: Mesh*): Self = this.set("floorMeshes", js.Array(value :_*))
+    def setTeleportationMode(value: Double): Self = StObject.set(x, "teleportationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorMeshes(value: js.Array[Mesh]): Self = this.set("floorMeshes", value.asInstanceOf[js.Any])
+    def setTeleportationModeUndefined: Self = StObject.set(x, "teleportationMode", js.undefined)
     
     @scala.inline
-    def deleteFloorMeshes: Self = this.set("floorMeshes", js.undefined)
+    def setTeleportationSpeed(value: Double): Self = StObject.set(x, "teleportationSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeleportationMode(value: Double): Self = this.set("teleportationMode", value.asInstanceOf[js.Any])
+    def setTeleportationSpeedUndefined: Self = StObject.set(x, "teleportationSpeed", js.undefined)
     
     @scala.inline
-    def deleteTeleportationMode: Self = this.set("teleportationMode", js.undefined)
+    def setTeleportationTime(value: Double): Self = StObject.set(x, "teleportationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeleportationSpeed(value: Double): Self = this.set("teleportationSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeleportationSpeed: Self = this.set("teleportationSpeed", js.undefined)
-    
-    @scala.inline
-    def setTeleportationTime(value: Double): Self = this.set("teleportationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeleportationTime: Self = this.set("teleportationTime", js.undefined)
+    def setTeleportationTimeUndefined: Self = StObject.set(x, "teleportationTime", js.undefined)
   }
 }

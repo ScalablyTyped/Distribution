@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This helper structure for DraggingTool holds the original location Point.
   */
 @js.native
-trait DraggingInfo extends js.Object {
+trait DraggingInfo extends StObject {
   
   // undocumented
   var point: Point = js.native
@@ -22,21 +23,9 @@ object DraggingInfo {
   }
   
   @scala.inline
-  implicit class DraggingInfoOps[Self <: DraggingInfo] (val x: Self) extends AnyVal {
+  implicit class DraggingInfoMutableBuilder[Self <: DraggingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }
 }

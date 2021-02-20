@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlbumsControlOptions extends js.Object {
+trait AlbumsControlOptions extends StObject {
   
   var anchor: js.UndefOr[ControlAnchor] = js.native
   
@@ -24,42 +25,30 @@ object AlbumsControlOptions {
   }
   
   @scala.inline
-  implicit class AlbumsControlOptionsOps[Self <: AlbumsControlOptions] (val x: Self) extends AnyVal {
+  implicit class AlbumsControlOptionsMutableBuilder[Self <: AlbumsControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: ControlAnchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteImageHeight: Self = this.set("imageHeight", js.undefined)
+    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double | String): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
-    
-    @scala.inline
-    def setOffset(value: Size): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

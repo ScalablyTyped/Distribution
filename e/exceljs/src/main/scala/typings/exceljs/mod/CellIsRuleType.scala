@@ -1,6 +1,7 @@
 package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.cellIs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object CellIsRuleType {
   }
   
   @scala.inline
-  implicit class CellIsRuleTypeOps[Self <: CellIsRuleType] (val x: Self) extends AnyVal {
+  implicit class CellIsRuleTypeMutableBuilder[Self <: CellIsRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormulae(value: js.Array[_]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormulaeUndefined: Self = StObject.set(x, "formulae", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: cellIs): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOperator(value: CellIsOperators): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulaeVarargs(value: js.Any*): Self = this.set("formulae", js.Array(value :_*))
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def setFormulae(value: js.Array[_]): Self = this.set("formulae", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormulae: Self = this.set("formulae", js.undefined)
-    
-    @scala.inline
-    def setOperator(value: CellIsOperators): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setType(value: cellIs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

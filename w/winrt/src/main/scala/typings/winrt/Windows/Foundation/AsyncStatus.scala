@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AsyncStatus extends js.Object
+sealed trait AsyncStatus extends StObject
 @JSGlobal("Windows.Foundation.AsyncStatus")
 @js.native
-object AsyncStatus extends js.Object {
+object AsyncStatus extends StObject {
   
   @js.native
   sealed trait canceled extends AsyncStatus

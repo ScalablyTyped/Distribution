@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestRulesetResponse extends js.Object {
+trait TestRulesetResponse extends StObject {
   
   /** Syntactic and semantic `Source` issues of varying severity. Issues of `ERROR` severity will prevent tests from executing. */
   var issues: js.UndefOr[js.Array[Issue]] = js.native
@@ -22,36 +23,24 @@ object TestRulesetResponse {
   }
   
   @scala.inline
-  implicit class TestRulesetResponseOps[Self <: TestRulesetResponse] (val x: Self) extends AnyVal {
+  implicit class TestRulesetResponseMutableBuilder[Self <: TestRulesetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
     @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = this.set("issues", js.Array(value :_*))
+    def setTestResults(value: js.Array[TestResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: js.Array[Issue]): Self = this.set("issues", value.asInstanceOf[js.Any])
+    def setTestResultsUndefined: Self = StObject.set(x, "testResults", js.undefined)
     
     @scala.inline
-    def deleteIssues: Self = this.set("issues", js.undefined)
-    
-    @scala.inline
-    def setTestResultsVarargs(value: TestResult*): Self = this.set("testResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestResults(value: js.Array[TestResult]): Self = this.set("testResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestResults: Self = this.set("testResults", js.undefined)
+    def setTestResultsVarargs(value: TestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
   }
 }

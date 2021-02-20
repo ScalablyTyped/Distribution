@@ -2,12 +2,13 @@ package typings.victory.mod
 
 import typings.victory.anon.After
 import typings.victory.anon.Before
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimatePropTypeInterface extends js.Object {
+trait AnimatePropTypeInterface extends StObject {
   
   /**
     * Animation duration
@@ -49,51 +50,39 @@ object AnimatePropTypeInterface {
   }
   
   @scala.inline
-  implicit class AnimatePropTypeInterfaceOps[Self <: AnimatePropTypeInterface] (val x: Self) extends AnyVal {
+  implicit class AnimatePropTypeInterfaceMutableBuilder[Self <: AnimatePropTypeInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEasing(value: AnimationEasing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEasing(value: AnimationEasing): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setOnEnter(value: After): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnd(value: () => Unit): Self = this.set("onEnd", js.Any.fromFunction0(value))
+    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
     @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOnExit(value: Before): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnter(value: After): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    def setOnLoad(value: After): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExit(value: Before): Self = this.set("onExit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
-    
-    @scala.inline
-    def setOnLoad(value: After): Self = this.set("onLoad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
   }
 }

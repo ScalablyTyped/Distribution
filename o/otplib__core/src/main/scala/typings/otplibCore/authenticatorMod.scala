@@ -11,36 +11,22 @@ import typings.otplibCore.utilsMod.SecretKey
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@otplib/core/authenticator", JSImport.Namespace)
-@js.native
-object authenticatorMod extends js.Object {
+object authenticatorMod {
   
-  def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = js.native
-  
-  def authenticatorDecoder[T /* <: AuthenticatorOptions_[_] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
-    /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
-  ] = js.native
-  
-  def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[_] */](): Partial[T] = js.native
-  
-  def authenticatorEncoder[T /* <: AuthenticatorOptions_[_] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
-    /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
-  ] = js.native
-  
-  def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = js.native
-  
-  def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[_] */](options: Partial[T]): Unit = js.native
-  
-  def authenticatorOptions[T /* <: AuthenticatorOptions_[_] */](opt: Partial[T]): T = js.native
-  
-  def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = js.native
-  
+  @JSImport("@otplib/core/authenticator", "Authenticator")
   @js.native
+  /**
+    * Constructs the class with defaultOptions set.
+    *
+    * @param defaultOptions used to override or add existing defaultOptions.
+    */
   class Authenticator[T /* <: AuthenticatorOptions_[String] */] () extends TOTP[T] {
+    def this(defaultOptions: Partial[T]) = this()
     
     /**
       * Reference: [[authenticatorDecoder]]
@@ -58,6 +44,42 @@ object authenticatorMod extends js.Object {
     def generateSecret(): Base32SecretKey = js.native
     def generateSecret(numberOfBytes: Double): Base32SecretKey = js.native
   }
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorCheckWithWindow")
+  @js.native
+  def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorDecoder")
+  @js.native
+  def authenticatorDecoder[T /* <: AuthenticatorOptions_[_] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
+  ] = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorDefaultOptions")
+  @js.native
+  def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[_] */](): Partial[T] = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorEncoder")
+  @js.native
+  def authenticatorEncoder[T /* <: AuthenticatorOptions_[_] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
+  ] = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorGenerateSecret")
+  @js.native
+  def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorOptionValidator")
+  @js.native
+  def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[_] */](options: Partial[T]): Unit = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorOptions")
+  @js.native
+  def authenticatorOptions[T /* <: AuthenticatorOptions_[_] */](opt: Partial[T]): T = js.native
+  
+  @JSImport("@otplib/core/authenticator", "authenticatorToken")
+  @js.native
+  def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = js.native
   
   @js.native
   trait AuthenticatorOptions_[T] extends TOTPOptions_[T] {

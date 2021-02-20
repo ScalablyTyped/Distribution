@@ -1,12 +1,13 @@
 package typings.dc.mod
 
 import typings.d3Color.mod.Color_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorMixin[T] extends js.Object {
+trait ColorMixin[T] extends StObject {
   
   def calculateColorDomain(): Unit = js.native
   

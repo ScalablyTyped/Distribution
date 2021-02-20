@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupSelection extends js.Object {
+trait BackupSelection extends StObject {
   
   /**
     * The ARN of the IAM role that AWS Backup uses to authenticate when backing up the target resource; for example, arn:aws:iam::123456789012:role/S3Access.
@@ -36,42 +37,30 @@ object BackupSelection {
   }
   
   @scala.inline
-  implicit class BackupSelectionOps[Self <: BackupSelection] (val x: Self) extends AnyVal {
+  implicit class BackupSelectionMutableBuilder[Self <: BackupSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListOfTags(value: ListOfTags): Self = StObject.set(x, "ListOfTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListOfTagsUndefined: Self = StObject.set(x, "ListOfTags", js.undefined)
     
     @scala.inline
-    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setListOfTagsVarargs(value: Condition*): Self = StObject.set(x, "ListOfTags", js.Array(value :_*))
     
     @scala.inline
-    def setSelectionName(value: BackupSelectionName): Self = this.set("SelectionName", value.asInstanceOf[js.Any])
+    def setResources(value: ResourceArns): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListOfTagsVarargs(value: Condition*): Self = this.set("ListOfTags", js.Array(value :_*))
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def setListOfTags(value: ListOfTags): Self = this.set("ListOfTags", value.asInstanceOf[js.Any])
+    def setResourcesVarargs(value: ARN*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
     @scala.inline
-    def deleteListOfTags: Self = this.set("ListOfTags", js.undefined)
-    
-    @scala.inline
-    def setResourcesVarargs(value: ARN*): Self = this.set("Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: ResourceArns): Self = this.set("Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setSelectionName(value: BackupSelectionName): Self = StObject.set(x, "SelectionName", value.asInstanceOf[js.Any])
   }
 }

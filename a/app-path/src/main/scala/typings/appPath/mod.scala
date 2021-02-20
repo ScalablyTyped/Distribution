@@ -1,13 +1,12 @@
 package typings.appPath
 
 import typings.appPath.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-path", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the path to an app on macOS.
@@ -24,8 +23,18 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("app-path", JSImport.Namespace)
+  @js.native
   def apply(appName: String): js.Promise[String] = js.native
   
+  @JSImport("app-path", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // TODO: remove this in the next major version
+  @JSImport("app-path", "default")
+  @js.native
+  def default: Call = js.native
   /**
   	Get the path to an app on macOS.
   	@param appName - An app name or bundle identifier.
@@ -42,10 +51,11 @@ object mod extends js.Object {
   	```
   	*/
   // TODO: remove this in the next major version
+  @JSImport("app-path", "default")
+  @js.native
   def default(appName: String): js.Promise[String] = js.native
-  // TODO: remove this in the next major version
-  @JSName("default")
-  var default_Original: Call = js.native
+  @scala.inline
+  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Synchronously get the path to an app on macOS.
@@ -60,5 +70,7 @@ object mod extends js.Object {
   	//=> '/Applications/Safari.app'
   	```
   	*/
+  @JSImport("app-path", "sync")
+  @js.native
   def sync(appName: String): String = js.native
 }

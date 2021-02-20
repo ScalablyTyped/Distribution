@@ -1,13 +1,20 @@
 package typings.antDesignIconsSvg
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsSvg.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-svg/lib/asn/CiCircleOutlined", JSImport.Namespace)
-@js.native
-object ciCircleOutlinedMod extends js.Object {
+object ciCircleOutlinedMod extends Shortcut {
   
+  @JSImport("@ant-design/icons-svg/lib/asn/CiCircleOutlined", JSImport.Default)
+  @js.native
   val default: IconDefinition = js.native
+  
+  type _To = IconDefinition
+  
+  /* This means you don't have to write `default`, but can instead just say `ciCircleOutlinedMod.foo` */
+  override def _to: IconDefinition = default
 }

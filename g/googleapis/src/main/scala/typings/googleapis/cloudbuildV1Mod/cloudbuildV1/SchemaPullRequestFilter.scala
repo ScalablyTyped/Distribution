@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Requests.
   */
 @js.native
-trait SchemaPullRequestFilter extends js.Object {
+trait SchemaPullRequestFilter extends StObject {
   
   /**
     * Regex of branches to match.  The syntax of the regular expressions
@@ -33,30 +34,18 @@ object SchemaPullRequestFilter {
   }
   
   @scala.inline
-  implicit class SchemaPullRequestFilterOps[Self <: SchemaPullRequestFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaPullRequestFilterMutableBuilder[Self <: SchemaPullRequestFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentControl(value: String): Self = StObject.set(x, "commentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBranch: Self = this.set("branch", js.undefined)
-    
-    @scala.inline
-    def setCommentControl(value: String): Self = this.set("commentControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommentControl: Self = this.set("commentControl", js.undefined)
+    def setCommentControlUndefined: Self = StObject.set(x, "commentControl", js.undefined)
   }
 }

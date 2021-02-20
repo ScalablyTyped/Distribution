@@ -9,12 +9,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.mitered
 import typings.arcgisJsApi.arcgisJsApiStrings.rounded
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OffsetParametersProperties extends js.Object {
+trait OffsetParametersProperties extends StObject {
   
   /**
     * The `bevelRatio` is multiplied by the offset distance and the result determines how far a mitered offset intersection can be located before it is beveled.
@@ -60,51 +61,39 @@ object OffsetParametersProperties {
   }
   
   @scala.inline
-  implicit class OffsetParametersPropertiesOps[Self <: OffsetParametersProperties] (val x: Self) extends AnyVal {
+  implicit class OffsetParametersPropertiesMutableBuilder[Self <: OffsetParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBevelRatio(value: Double): Self = StObject.set(x, "bevelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBevelRatioUndefined: Self = StObject.set(x, "bevelRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelRatio(value: Double): Self = this.set("bevelRatio", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteBevelRatio: Self = this.set("bevelRatio", js.undefined)
+    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
     @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = this.set("geometries", js.Array(value :_*))
+    def setOffsetDistance(value: Double): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setOffsetHow(value: bevelled | mitered | rounded): Self = StObject.set(x, "offsetHow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetDistance(value: Double): Self = this.set("offsetDistance", value.asInstanceOf[js.Any])
+    def setOffsetHowUndefined: Self = StObject.set(x, "offsetHow", js.undefined)
     
     @scala.inline
-    def deleteOffsetDistance: Self = this.set("offsetDistance", js.undefined)
+    def setOffsetUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "offsetUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetHow(value: bevelled | mitered | rounded): Self = this.set("offsetHow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetHow: Self = this.set("offsetHow", js.undefined)
-    
-    @scala.inline
-    def setOffsetUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = this.set("offsetUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetUnit: Self = this.set("offsetUnit", js.undefined)
+    def setOffsetUnitUndefined: Self = StObject.set(x, "offsetUnit", js.undefined)
   }
 }

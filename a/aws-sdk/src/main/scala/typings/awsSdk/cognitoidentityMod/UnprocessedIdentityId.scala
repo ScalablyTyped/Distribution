@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnprocessedIdentityId extends js.Object {
+trait UnprocessedIdentityId extends StObject {
   
   /**
     * The error code indicating the type of error that occurred.
@@ -26,30 +27,18 @@ object UnprocessedIdentityId {
   }
   
   @scala.inline
-  implicit class UnprocessedIdentityIdOps[Self <: UnprocessedIdentityId] (val x: Self) extends AnyVal {
+  implicit class UnprocessedIdentityIdMutableBuilder[Self <: UnprocessedIdentityId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
-    
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ASPxClientFileManagerFileUploadedEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientFileManagerFileUploadedEventArgsOps[Self <: ASPxClientFileManagerFileUploadedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientFileManagerFileUploadedEventArgsMutableBuilder[Self <: ASPxClientFileManagerFileUploadedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFolder(value: String): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }
 }

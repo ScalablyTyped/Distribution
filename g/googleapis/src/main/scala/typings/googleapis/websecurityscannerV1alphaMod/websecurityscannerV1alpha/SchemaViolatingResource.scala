@@ -1,5 +1,6 @@
 package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JavaScript sources, image, audio files, etc.
   */
 @js.native
-trait SchemaViolatingResource extends js.Object {
+trait SchemaViolatingResource extends StObject {
   
   /**
     * The MIME type of this resource.
@@ -30,30 +31,18 @@ object SchemaViolatingResource {
   }
   
   @scala.inline
-  implicit class SchemaViolatingResourceOps[Self <: SchemaViolatingResource] (val x: Self) extends AnyVal {
+  implicit class SchemaViolatingResourceMutableBuilder[Self <: SchemaViolatingResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
-    
-    @scala.inline
-    def setResourceUrl(value: String): Self = this.set("resourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceUrl: Self = this.set("resourceUrl", js.undefined)
+    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

@@ -1,20 +1,26 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/differenceInSeconds/index", JSImport.Namespace)
-@js.native
-object differenceInSecondsIndexMod extends js.Object {
+object differenceInSecondsIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/differenceInSeconds/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Double): Double = js.native
+    @JSImport("date-fns/differenceInSeconds/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Double, dateRight: Date): Double = js.native
+    @JSImport("date-fns/differenceInSeconds/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Double): Double = js.native
+    @JSImport("date-fns/differenceInSeconds/index", JSImport.Default)
+    @js.native
     def apply(dateLeft: Date, dateRight: Date): Double = js.native
   }
 }

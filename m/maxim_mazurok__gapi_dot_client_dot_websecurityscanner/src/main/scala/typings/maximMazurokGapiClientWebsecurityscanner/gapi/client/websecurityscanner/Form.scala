@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurityscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Form extends js.Object {
+trait Form extends StObject {
   
   /** ! The URI where to send the form when it's submitted. */
   var actionUri: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object Form {
   }
   
   @scala.inline
-  implicit class FormOps[Self <: Form] (val x: Self) extends AnyVal {
+  implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionUri(value: String): Self = StObject.set(x, "actionUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUriUndefined: Self = StObject.set(x, "actionUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionUri(value: String): Self = this.set("actionUri", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteActionUri: Self = this.set("actionUri", js.undefined)
-    
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

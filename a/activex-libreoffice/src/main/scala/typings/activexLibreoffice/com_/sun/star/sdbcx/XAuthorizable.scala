@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbcx
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,30 +68,18 @@ object XAuthorizable {
   }
   
   @scala.inline
-  implicit class XAuthorizableOps[Self <: XAuthorizable] (val x: Self) extends AnyVal {
+  implicit class XAuthorizableMutableBuilder[Self <: XAuthorizable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGrantablePrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getGrantablePrivileges", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getPrivileges", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantPrivileges(value: (String, Double, Double) => Unit): Self = StObject.set(x, "grantPrivileges", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetGrantablePrivileges(value: (String, Double) => Double): Self = this.set("getGrantablePrivileges", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetPrivileges(value: (String, Double) => Double): Self = this.set("getPrivileges", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGrantPrivileges(value: (String, Double, Double) => Unit): Self = this.set("grantPrivileges", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRevokePrivileges(value: (String, Double, Double) => Unit): Self = this.set("revokePrivileges", js.Any.fromFunction3(value))
+    def setRevokePrivileges(value: (String, Double, Double) => Unit): Self = StObject.set(x, "revokePrivileges", js.Any.fromFunction3(value))
   }
 }

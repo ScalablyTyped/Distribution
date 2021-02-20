@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * image.
   */
 @js.native
-trait SchemaGroupedResult extends js.Object {
+trait SchemaGroupedResult extends StObject {
   
   /**
     * The bounding polygon around the product detected in the query image.
@@ -30,33 +31,21 @@ object SchemaGroupedResult {
   }
   
   @scala.inline
-  implicit class SchemaGroupedResultOps[Self <: SchemaGroupedResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGroupedResultMutableBuilder[Self <: SchemaGroupedResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[SchemaResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: SchemaBoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: SchemaResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[SchemaResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: SchemaResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

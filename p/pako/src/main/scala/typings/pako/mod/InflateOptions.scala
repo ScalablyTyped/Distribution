@@ -1,12 +1,13 @@
 package typings.pako.mod
 
 import typings.pako.pakoStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InflateOptions extends js.Object {
+trait InflateOptions extends StObject {
   
   var chunkSize: js.UndefOr[Double] = js.native
   
@@ -27,48 +28,36 @@ object InflateOptions {
   }
   
   @scala.inline
-  implicit class InflateOptionsOps[Self <: InflateOptions] (val x: Self) extends AnyVal {
+  implicit class InflateOptionsMutableBuilder[Self <: InflateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
     @scala.inline
-    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionary(value: js.Any): Self = this.set("dictionary", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteDictionary: Self = this.set("dictionary", js.undefined)
+    def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: string): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setWindowBits(value: Double): Self = this.set("windowBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowBits: Self = this.set("windowBits", js.undefined)
+    def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
   }
 }

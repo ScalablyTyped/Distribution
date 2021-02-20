@@ -12,12 +12,13 @@ import typings.chromeApps.chromeAppsStrings.initializing_
 import typings.chromeApps.chromeAppsStrings.running_
 import typings.chromeApps.chromeAppsStrings.temporary_unavailable_
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   var description: String = js.native
   
@@ -49,22 +50,10 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setState(
@@ -76,6 +65,6 @@ object State {
             temporary_unavailable_ | authentication_required_ | disabled__ | initializing_ | running_
           ]
         ]
-    ): Self = this.set("state", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientVpnConnection extends js.Object {
+trait ClientVpnConnection extends StObject {
   
   /**
     * The IP address of the client.
@@ -86,105 +87,93 @@ object ClientVpnConnection {
   }
   
   @scala.inline
-  implicit class ClientVpnConnectionOps[Self <: ClientVpnConnection] (val x: Self) extends AnyVal {
+  implicit class ClientVpnConnectionMutableBuilder[Self <: ClientVpnConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientIp(value: String): Self = StObject.set(x, "ClientIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIpUndefined: Self = StObject.set(x, "ClientIp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientIp(value: String): Self = this.set("ClientIp", value.asInstanceOf[js.Any])
+    def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
     
     @scala.inline
-    def deleteClientIp: Self = this.set("ClientIp", js.undefined)
+    def setCommonName(value: String): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpnEndpointId(value: String): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
     @scala.inline
-    def deleteClientVpnEndpointId: Self = this.set("ClientVpnEndpointId", js.undefined)
+    def setConnectionEndTime(value: String): Self = StObject.set(x, "ConnectionEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String): Self = this.set("CommonName", value.asInstanceOf[js.Any])
+    def setConnectionEndTimeUndefined: Self = StObject.set(x, "ConnectionEndTime", js.undefined)
     
     @scala.inline
-    def deleteCommonName: Self = this.set("CommonName", js.undefined)
+    def setConnectionEstablishedTime(value: String): Self = StObject.set(x, "ConnectionEstablishedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionEndTime(value: String): Self = this.set("ConnectionEndTime", value.asInstanceOf[js.Any])
+    def setConnectionEstablishedTimeUndefined: Self = StObject.set(x, "ConnectionEstablishedTime", js.undefined)
     
     @scala.inline
-    def deleteConnectionEndTime: Self = this.set("ConnectionEndTime", js.undefined)
+    def setConnectionId(value: String): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionEstablishedTime(value: String): Self = this.set("ConnectionEstablishedTime", value.asInstanceOf[js.Any])
+    def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
     
     @scala.inline
-    def deleteConnectionEstablishedTime: Self = this.set("ConnectionEstablishedTime", js.undefined)
+    def setEgressBytes(value: String): Self = StObject.set(x, "EgressBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: String): Self = this.set("ConnectionId", value.asInstanceOf[js.Any])
+    def setEgressBytesUndefined: Self = StObject.set(x, "EgressBytes", js.undefined)
     
     @scala.inline
-    def deleteConnectionId: Self = this.set("ConnectionId", js.undefined)
+    def setEgressPackets(value: String): Self = StObject.set(x, "EgressPackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgressBytes(value: String): Self = this.set("EgressBytes", value.asInstanceOf[js.Any])
+    def setEgressPacketsUndefined: Self = StObject.set(x, "EgressPackets", js.undefined)
     
     @scala.inline
-    def deleteEgressBytes: Self = this.set("EgressBytes", js.undefined)
+    def setIngressBytes(value: String): Self = StObject.set(x, "IngressBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgressPackets(value: String): Self = this.set("EgressPackets", value.asInstanceOf[js.Any])
+    def setIngressBytesUndefined: Self = StObject.set(x, "IngressBytes", js.undefined)
     
     @scala.inline
-    def deleteEgressPackets: Self = this.set("EgressPackets", js.undefined)
+    def setIngressPackets(value: String): Self = StObject.set(x, "IngressPackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngressBytes(value: String): Self = this.set("IngressBytes", value.asInstanceOf[js.Any])
+    def setIngressPacketsUndefined: Self = StObject.set(x, "IngressPackets", js.undefined)
     
     @scala.inline
-    def deleteIngressBytes: Self = this.set("IngressBytes", js.undefined)
+    def setPostureComplianceStatuses(value: ValueStringList): Self = StObject.set(x, "PostureComplianceStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngressPackets(value: String): Self = this.set("IngressPackets", value.asInstanceOf[js.Any])
+    def setPostureComplianceStatusesUndefined: Self = StObject.set(x, "PostureComplianceStatuses", js.undefined)
     
     @scala.inline
-    def deleteIngressPackets: Self = this.set("IngressPackets", js.undefined)
+    def setPostureComplianceStatusesVarargs(value: String*): Self = StObject.set(x, "PostureComplianceStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setPostureComplianceStatusesVarargs(value: String*): Self = this.set("PostureComplianceStatuses", js.Array(value :_*))
+    def setStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostureComplianceStatuses(value: ValueStringList): Self = this.set("PostureComplianceStatuses", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deletePostureComplianceStatuses: Self = this.set("PostureComplianceStatuses", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ClientVpnConnectionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

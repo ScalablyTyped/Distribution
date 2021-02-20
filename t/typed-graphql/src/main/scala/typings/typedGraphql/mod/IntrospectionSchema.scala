@@ -1,11 +1,12 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntrospectionSchema extends js.Object {
+trait IntrospectionSchema extends StObject {
   
   var directives: js.Array[IntrospectionDirective] = js.native
   
@@ -30,45 +31,33 @@ object IntrospectionSchema {
   }
   
   @scala.inline
-  implicit class IntrospectionSchemaOps[Self <: IntrospectionSchema] (val x: Self) extends AnyVal {
+  implicit class IntrospectionSchemaMutableBuilder[Self <: IntrospectionSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectives(value: js.Array[IntrospectionDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectivesVarargs(value: IntrospectionDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMutationType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "mutationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesVarargs(value: IntrospectionDirective*): Self = this.set("directives", js.Array(value :_*))
+    def setMutationTypeUndefined: Self = StObject.set(x, "mutationType", js.undefined)
     
     @scala.inline
-    def setDirectives(value: js.Array[IntrospectionDirective]): Self = this.set("directives", value.asInstanceOf[js.Any])
+    def setQueryType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryType(value: IntrospectionNamedTypeRef): Self = this.set("queryType", value.asInstanceOf[js.Any])
+    def setSubscriptionType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "subscriptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: IntrospectionType*): Self = this.set("types", js.Array(value :_*))
+    def setSubscriptionTypeUndefined: Self = StObject.set(x, "subscriptionType", js.undefined)
     
     @scala.inline
-    def setTypes(value: js.Array[IntrospectionType]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[IntrospectionType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutationType(value: IntrospectionNamedTypeRef): Self = this.set("mutationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutationType: Self = this.set("mutationType", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionType(value: IntrospectionNamedTypeRef): Self = this.set("subscriptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionType: Self = this.set("subscriptionType", js.undefined)
+    def setTypesVarargs(value: IntrospectionType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

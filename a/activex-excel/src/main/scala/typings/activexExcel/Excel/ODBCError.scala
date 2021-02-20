@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODBCError extends js.Object {
+trait ODBCError extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -37,36 +38,24 @@ object ODBCError {
   }
   
   @scala.inline
-  implicit class ODBCErrorOps[Self <: ODBCError] (val x: Self) extends AnyVal {
+  implicit class ODBCErrorMutableBuilder[Self <: ODBCError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorString(value: String): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotODBCError_typekey(value: ODBCError): Self = StObject.set(x, "Excel.ODBCError_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorString(value: String): Self = this.set("ErrorString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcelDotODBCError_typekey(value: ODBCError): Self = this.set("Excel.ODBCError_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSqlState(value: String): Self = this.set("SqlState", value.asInstanceOf[js.Any])
+    def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
   }
 }

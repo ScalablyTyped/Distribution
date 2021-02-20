@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instance extends js.Object {
+trait Instance extends StObject {
   
   /**
     * The list of EBS volumes that are attached to this instance.
@@ -76,93 +77,81 @@ object Instance {
   }
   
   @scala.inline
-  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEbsVolumes(value: EbsVolumeList): Self = StObject.set(x, "EbsVolumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEbsVolumesUndefined: Self = StObject.set(x, "EbsVolumes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbsVolumesVarargs(value: EbsVolume*): Self = StObject.set(x, "EbsVolumes", js.Array(value :_*))
     
     @scala.inline
-    def setEbsVolumesVarargs(value: EbsVolume*): Self = this.set("EbsVolumes", js.Array(value :_*))
+    def setEc2InstanceId(value: InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsVolumes(value: EbsVolumeList): Self = this.set("EbsVolumes", value.asInstanceOf[js.Any])
+    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
     @scala.inline
-    def deleteEbsVolumes: Self = this.set("EbsVolumes", js.undefined)
+    def setId(value: InstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2InstanceId(value: InstanceId): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: InstanceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInstanceFleetIdUndefined: Self = StObject.set(x, "InstanceFleetId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setInstanceGroupId(value: String): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFleetId(value: InstanceFleetId): Self = this.set("InstanceFleetId", value.asInstanceOf[js.Any])
+    def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
     
     @scala.inline
-    def deleteInstanceFleetId: Self = this.set("InstanceFleetId", js.undefined)
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroupId(value: String): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceGroupId: Self = this.set("InstanceGroupId", js.undefined)
+    def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setMarketUndefined: Self = StObject.set(x, "Market", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarket(value: MarketType): Self = this.set("Market", value.asInstanceOf[js.Any])
+    def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
     @scala.inline
-    def deleteMarket: Self = this.set("Market", js.undefined)
+    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
     
     @scala.inline
-    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
+    def setPublicDnsName(value: String): Self = StObject.set(x, "PublicDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    def setPublicDnsNameUndefined: Self = StObject.set(x, "PublicDnsName", js.undefined)
     
     @scala.inline
-    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    def setPublicIpAddress(value: String): Self = StObject.set(x, "PublicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicDnsName(value: String): Self = this.set("PublicDnsName", value.asInstanceOf[js.Any])
+    def setPublicIpAddressUndefined: Self = StObject.set(x, "PublicIpAddress", js.undefined)
     
     @scala.inline
-    def deletePublicDnsName: Self = this.set("PublicDnsName", js.undefined)
+    def setStatus(value: InstanceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicIpAddress(value: String): Self = this.set("PublicIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIpAddress: Self = this.set("PublicIpAddress", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: InstanceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

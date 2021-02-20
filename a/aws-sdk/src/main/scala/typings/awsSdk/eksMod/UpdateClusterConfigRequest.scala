@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateClusterConfigRequest extends js.Object {
+trait UpdateClusterConfigRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
@@ -33,39 +34,27 @@ object UpdateClusterConfigRequest {
   }
   
   @scala.inline
-  implicit class UpdateClusterConfigRequestOps[Self <: UpdateClusterConfigRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateClusterConfigRequestMutableBuilder[Self <: UpdateClusterConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: String): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setResourcesVpcConfig(value: VpcConfigRequest): Self = StObject.set(x, "resourcesVpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Logging): Self = this.set("logging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
-    
-    @scala.inline
-    def setResourcesVpcConfig(value: VpcConfigRequest): Self = this.set("resourcesVpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcesVpcConfig: Self = this.set("resourcesVpcConfig", js.undefined)
+    def setResourcesVpcConfigUndefined: Self = StObject.set(x, "resourcesVpcConfig", js.undefined)
   }
 }

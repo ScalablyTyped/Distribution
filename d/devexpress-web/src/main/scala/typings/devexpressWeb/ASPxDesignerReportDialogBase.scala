@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxDesignerReportDialogBase extends js.Object {
+trait ASPxDesignerReportDialogBase extends StObject {
   
   var buttons: js.Array[_] = js.native
   
@@ -50,66 +51,54 @@ object ASPxDesignerReportDialogBase {
   }
   
   @scala.inline
-  implicit class ASPxDesignerReportDialogBaseOps[Self <: ASPxDesignerReportDialogBase] (val x: Self) extends AnyVal {
+  implicit class ASPxDesignerReportDialogBaseMutableBuilder[Self <: ASPxDesignerReportDialogBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setButtonsVarargs(value: js.Any*): Self = this.set("buttons", js.Array(value :_*))
-    
-    @scala.inline
-    def setButtons(value: js.Array[_]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCustomize(value: (String, ASPxDesignerDialogModel) => Unit): Self = this.set("customize", js.Any.fromFunction2(value))
+    def setCustomize(value: (String, ASPxDesignerDialogModel) => Unit): Self = StObject.set(x, "customize", js.Any.fromFunction2(value))
     
     @scala.inline
     def setHeight(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
-    ): Self = this.set("height", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setModel(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ASPxDesignerDialogModel> */ js.Any
-    ): Self = this.set("model", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: ASPxDesignerNavigateTab => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    def setShow(value: ASPxDesignerNavigateTab => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTab(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ASPxDesignerNavigateTab> */ js.Any
-    ): Self = this.set("tab", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
-    ): Self = this.set("template", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVisible(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("visible", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWidth(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
-    ): Self = this.set("width", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

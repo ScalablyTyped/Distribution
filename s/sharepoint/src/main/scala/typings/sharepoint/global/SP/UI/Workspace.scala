@@ -1,16 +1,17 @@
 package typings.sharepoint.global.SP.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.UI.Workspace")
-@js.native
-object Workspace extends js.Object {
+object Workspace {
   
-  @JSName("add_resized")
+  @JSGlobal("SP.UI.Workspace.add_resized")
+  @js.native
   def addResized(handler: js.Function0[Unit]): Unit = js.native
   
-  @JSName("remove_resized")
+  @JSGlobal("SP.UI.Workspace.remove_resized")
+  @js.native
   def removeResized(handler: js.Function0[Unit]): Unit = js.native
 }

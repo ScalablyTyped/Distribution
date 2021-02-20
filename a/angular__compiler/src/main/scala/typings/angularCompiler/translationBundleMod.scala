@@ -7,16 +7,16 @@ import typings.angularCompiler.i18nAstMod.Node
 import typings.angularCompiler.serializerMod.PlaceholderMapper
 import typings.angularCompiler.serializerMod.Serializer
 import typings.angularCompiler.srcUtilMod.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/i18n/translation_bundle", JSImport.Namespace)
-@js.native
-object translationBundleMod extends js.Object {
+object translationBundleMod {
   
+  @JSImport("@angular/compiler/src/i18n/translation_bundle", "TranslationBundle")
   @js.native
-  class TranslationBundle protected () extends js.Object {
+  class TranslationBundle protected () extends StObject {
     def this(
       _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
       locale: String,
@@ -145,15 +145,18 @@ object translationBundleMod extends js.Object {
     var mapperFactory: js.UndefOr[js.Function1[/* m */ Message, PlaceholderMapper]] = js.native
   }
   /* static members */
-  @js.native
-  object TranslationBundle extends js.Object {
+  object TranslationBundle {
     
+    @JSImport("@angular/compiler/src/i18n/translation_bundle", "TranslationBundle.load")
+    @js.native
     def load(
       content: String,
       url: String,
       serializer: Serializer,
       missingTranslationStrategy: MissingTranslationStrategy
     ): TranslationBundle = js.native
+    @JSImport("@angular/compiler/src/i18n/translation_bundle", "TranslationBundle.load")
+    @js.native
     def load(
       content: String,
       url: String,

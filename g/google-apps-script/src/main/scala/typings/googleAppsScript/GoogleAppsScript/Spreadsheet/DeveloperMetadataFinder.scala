@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or Spreadsheet.createDeveloperMetadataFinder().
   */
 @js.native
-trait DeveloperMetadataFinder extends js.Object {
+trait DeveloperMetadataFinder extends StObject {
   
   def find(): js.Array[DeveloperMetadata] = js.native
   
@@ -44,39 +45,27 @@ object DeveloperMetadataFinder {
   }
   
   @scala.inline
-  implicit class DeveloperMetadataFinderOps[Self <: DeveloperMetadataFinder] (val x: Self) extends AnyVal {
+  implicit class DeveloperMetadataFinderMutableBuilder[Self <: DeveloperMetadataFinder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFind(value: () => js.Array[DeveloperMetadata]): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnIntersectingLocations(value: () => DeveloperMetadataFinder): Self = StObject.set(x, "onIntersectingLocations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithId(value: Integer => DeveloperMetadataFinder): Self = StObject.set(x, "withId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFind(value: () => js.Array[DeveloperMetadata]): Self = this.set("find", js.Any.fromFunction0(value))
+    def setWithKey(value: String => DeveloperMetadataFinder): Self = StObject.set(x, "withKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIntersectingLocations(value: () => DeveloperMetadataFinder): Self = this.set("onIntersectingLocations", js.Any.fromFunction0(value))
+    def setWithLocationType(value: DeveloperMetadataLocationType => DeveloperMetadataFinder): Self = StObject.set(x, "withLocationType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithId(value: Integer => DeveloperMetadataFinder): Self = this.set("withId", js.Any.fromFunction1(value))
+    def setWithValue(value: String => DeveloperMetadataFinder): Self = StObject.set(x, "withValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithKey(value: String => DeveloperMetadataFinder): Self = this.set("withKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithLocationType(value: DeveloperMetadataLocationType => DeveloperMetadataFinder): Self = this.set("withLocationType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithValue(value: String => DeveloperMetadataFinder): Self = this.set("withValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithVisibility(value: DeveloperMetadataVisibility => DeveloperMetadataFinder): Self = this.set("withVisibility", js.Any.fromFunction1(value))
+    def setWithVisibility(value: DeveloperMetadataVisibility => DeveloperMetadataFinder): Self = StObject.set(x, "withVisibility", js.Any.fromFunction1(value))
   }
 }

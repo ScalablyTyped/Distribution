@@ -2,12 +2,13 @@ package typings.stripe.anon
 
 import typings.stripe.stripeStrings.any
 import typings.stripe.stripeStrings.automatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Requestthreedsecure extends js.Object {
+trait Requestthreedsecure extends StObject {
   
   /**
     * We strongly recommend that you rely on our SCA Engine to automatically prompt your
@@ -28,24 +29,12 @@ object Requestthreedsecure {
   }
   
   @scala.inline
-  implicit class RequestthreedsecureOps[Self <: Requestthreedsecure] (val x: Self) extends AnyVal {
+  implicit class RequestthreedsecureMutableBuilder[Self <: Requestthreedsecure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequest_three_d_secure(value: automatic | any): Self = StObject.set(x, "request_three_d_secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequest_three_d_secure(value: automatic | any): Self = this.set("request_three_d_secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest_three_d_secure: Self = this.set("request_three_d_secure", js.undefined)
+    def setRequest_three_d_secureUndefined: Self = StObject.set(x, "request_three_d_secure", js.undefined)
   }
 }

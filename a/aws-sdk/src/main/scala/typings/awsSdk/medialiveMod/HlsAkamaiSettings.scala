@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsAkamaiSettings extends js.Object {
+trait HlsAkamaiSettings extends StObject {
   
   /**
     * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
@@ -51,60 +52,48 @@ object HlsAkamaiSettings {
   }
   
   @scala.inline
-  implicit class HlsAkamaiSettingsOps[Self <: HlsAkamaiSettings] (val x: Self) extends AnyVal {
+  implicit class HlsAkamaiSettingsMutableBuilder[Self <: HlsAkamaiSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilecacheDuration(value: integerMin0Max600): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionRetryInterval(value: integerMin0): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
     
     @scala.inline
-    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
+    def setHttpTransferMode(value: HlsAkamaiHttpTransferMode): Self = StObject.set(x, "HttpTransferMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilecacheDuration(value: integerMin0Max600): Self = this.set("FilecacheDuration", value.asInstanceOf[js.Any])
+    def setHttpTransferModeUndefined: Self = StObject.set(x, "HttpTransferMode", js.undefined)
     
     @scala.inline
-    def deleteFilecacheDuration: Self = this.set("FilecacheDuration", js.undefined)
+    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpTransferMode(value: HlsAkamaiHttpTransferMode): Self = this.set("HttpTransferMode", value.asInstanceOf[js.Any])
+    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
     
     @scala.inline
-    def deleteHttpTransferMode: Self = this.set("HttpTransferMode", js.undefined)
+    def setRestartDelay(value: integerMin0Max15): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
+    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
     
     @scala.inline
-    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
+    def setSalt(value: string): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartDelay(value: integerMin0Max15): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
+    def setSaltUndefined: Self = StObject.set(x, "Salt", js.undefined)
     
     @scala.inline
-    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalt(value: string): Self = this.set("Salt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSalt: Self = this.set("Salt", js.undefined)
-    
-    @scala.inline
-    def setToken(value: string): Self = this.set("Token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("Token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

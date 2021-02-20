@@ -4,6 +4,7 @@ import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.dom.IElement
 import typings.extjs.Ext.util.IQueue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,88 +97,76 @@ object IContext {
   }
   
   @scala.inline
-  implicit class IContextOps[Self <: IContext] (val x: Self) extends AnyVal {
+  implicit class IContextMutableBuilder[Self <: IContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCmp(value: /* cmp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "getCmp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    def setGetCmpUndefined: Self = StObject.set(x, "getCmp", js.undefined)
     
     @scala.inline
-    def deleteFlush: Self = this.set("flush", js.undefined)
+    def setGetEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = StObject.set(x, "getEl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCmp(value: /* cmp */ js.UndefOr[IComponent] => Unit): Self = this.set("getCmp", js.Any.fromFunction1(value))
+    def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
     @scala.inline
-    def deleteGetCmp: Self = this.set("getCmp", js.undefined)
+    def setInvalidate(value: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = this.set("getEl", js.Any.fromFunction2(value))
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
     @scala.inline
-    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    def setLayoutQueue(value: IQueue): Self = StObject.set(x, "layoutQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidate(value: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean]) => Unit): Self = this.set("invalidate", js.Any.fromFunction2(value))
+    def setLayoutQueueUndefined: Self = StObject.set(x, "layoutQueue", js.undefined)
     
     @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    def setRemoveEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = StObject.set(x, "removeEl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLayoutQueue(value: IQueue): Self = this.set("layoutQueue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayoutQueue: Self = this.set("layoutQueue", js.undefined)
-    
-    @scala.inline
-    def setRemoveEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = this.set("removeEl", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRemoveEl: Self = this.set("removeEl", js.undefined)
+    def setRemoveElUndefined: Self = StObject.set(x, "removeEl", js.undefined)
     
     @scala.inline
     def setResetLayout(
       value: (/* layout */ js.UndefOr[js.Any], /* ownerContext */ js.UndefOr[js.Any], /* firstTime */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("resetLayout", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "resetLayout", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteResetLayout: Self = this.set("resetLayout", js.undefined)
+    def setResetLayoutUndefined: Self = StObject.set(x, "resetLayout", js.undefined)
     
     @scala.inline
-    def setRun(value: () => Boolean): Self = this.set("run", js.Any.fromFunction0(value))
+    def setRun(value: () => Boolean): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRun: Self = this.set("run", js.undefined)
+    def setRunCycle(value: () => Boolean): Self = StObject.set(x, "runCycle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRunCycle(value: () => Boolean): Self = this.set("runCycle", js.Any.fromFunction0(value))
+    def setRunCycleUndefined: Self = StObject.set(x, "runCycle", js.undefined)
     
     @scala.inline
-    def deleteRunCycle: Self = this.set("runCycle", js.undefined)
+    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
     @scala.inline
     def setSetItemSize(
       value: (/* items */ js.UndefOr[js.Any], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("setItemSize", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "setItemSize", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSetItemSize: Self = this.set("setItemSize", js.undefined)
+    def setSetItemSizeUndefined: Self = StObject.set(x, "setItemSize", js.undefined)
     
     @scala.inline
-    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

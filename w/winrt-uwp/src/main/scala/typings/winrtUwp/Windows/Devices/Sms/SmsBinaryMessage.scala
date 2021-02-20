@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an SMS message in raw PDU format. The data format differs depending on whether the message format (indicated by the value of the Format property) is GSM or CDMA. */
 @js.native
-trait SmsBinaryMessage extends js.Object {
+trait SmsBinaryMessage extends StObject {
   
   /** Retrieves the detected protocol description unit (PDU) format of this message. */
   var format: SmsDataFormat = js.native
@@ -44,33 +45,21 @@ object SmsBinaryMessage {
   }
   
   @scala.inline
-  implicit class SmsBinaryMessageOps[Self <: SmsBinaryMessage] (val x: Self) extends AnyVal {
+  implicit class SmsBinaryMessageMutableBuilder[Self <: SmsBinaryMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetData(value: () => js.Array[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: SmsDataFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetData(value: () => js.Array[Double]): Self = this.set("getData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = this.set("messageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetData(value: js.Array[Double] => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    def setSetData(value: js.Array[Double] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServiceAccountResponseFollowersUnit extends js.Object {
+trait InsightsServiceAccountResponseFollowersUnit extends StObject {
   
   var all_followers_age_graph: InsightsServiceAccountResponseAllFollowersAgeGraph = js.native
   
@@ -47,51 +48,39 @@ object InsightsServiceAccountResponseFollowersUnit {
   }
   
   @scala.inline
-  implicit class InsightsServiceAccountResponseFollowersUnitOps[Self <: InsightsServiceAccountResponseFollowersUnit] (val x: Self) extends AnyVal {
+  implicit class InsightsServiceAccountResponseFollowersUnitMutableBuilder[Self <: InsightsServiceAccountResponseFollowersUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll_followers_age_graph(value: InsightsServiceAccountResponseAllFollowersAgeGraph): Self = StObject.set(x, "all_followers_age_graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDays_hourly_followers_graphs(value: js.Array[InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem]): Self = StObject.set(x, "days_hourly_followers_graphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDays_hourly_followers_graphsVarargs(value: InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem*): Self = StObject.set(x, "days_hourly_followers_graphs", js.Array(value :_*))
     
     @scala.inline
-    def setAll_followers_age_graph(value: InsightsServiceAccountResponseAllFollowersAgeGraph): Self = this.set("all_followers_age_graph", value.asInstanceOf[js.Any])
+    def setFollowers_delta_from_last_week(value: Double): Self = StObject.set(x, "followers_delta_from_last_week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays_hourly_followers_graphsVarargs(value: InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem*): Self = this.set("days_hourly_followers_graphs", js.Array(value :_*))
+    def setFollowers_top_cities_graph(value: InsightsServiceAccountResponseFollowersTopCitiesGraph): Self = StObject.set(x, "followers_top_cities_graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays_hourly_followers_graphs(value: js.Array[InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem]): Self = this.set("days_hourly_followers_graphs", value.asInstanceOf[js.Any])
+    def setFollowers_top_countries_graph(value: InsightsServiceAccountResponseFollowersTopCountriesGraph): Self = StObject.set(x, "followers_top_countries_graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_delta_from_last_week(value: Double): Self = this.set("followers_delta_from_last_week", value.asInstanceOf[js.Any])
+    def setFollowers_unit_state(value: String): Self = StObject.set(x, "followers_unit_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_top_cities_graph(value: InsightsServiceAccountResponseFollowersTopCitiesGraph): Self = this.set("followers_top_cities_graph", value.asInstanceOf[js.Any])
+    def setGender_graph(value: InsightsServiceAccountResponseGenderGraph): Self = StObject.set(x, "gender_graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_top_countries_graph(value: InsightsServiceAccountResponseFollowersTopCountriesGraph): Self = this.set("followers_top_countries_graph", value.asInstanceOf[js.Any])
+    def setMen_followers_age_graph(value: InsightsServiceAccountResponseMenFollowersAgeGraph): Self = StObject.set(x, "men_followers_age_graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_unit_state(value: String): Self = this.set("followers_unit_state", value.asInstanceOf[js.Any])
+    def setWeek_daily_followers_graph(value: InsightsServiceAccountResponseWeekDailyFollowersGraph): Self = StObject.set(x, "week_daily_followers_graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender_graph(value: InsightsServiceAccountResponseGenderGraph): Self = this.set("gender_graph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMen_followers_age_graph(value: InsightsServiceAccountResponseMenFollowersAgeGraph): Self = this.set("men_followers_age_graph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeek_daily_followers_graph(value: InsightsServiceAccountResponseWeekDailyFollowersGraph): Self = this.set("week_daily_followers_graph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWomen_followers_age_graph(value: InsightsServiceAccountResponseWomenFollowersAgeGraph): Self = this.set("women_followers_age_graph", value.asInstanceOf[js.Any])
+    def setWomen_followers_age_graph(value: InsightsServiceAccountResponseWomenFollowersAgeGraph): Self = StObject.set(x, "women_followers_age_graph", value.asInstanceOf[js.Any])
   }
 }

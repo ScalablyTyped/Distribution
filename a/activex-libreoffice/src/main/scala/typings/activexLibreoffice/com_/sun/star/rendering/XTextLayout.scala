@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealRectangle2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -260,81 +261,69 @@ object XTextLayout {
   }
   
   @scala.inline
-  implicit class XTextLayoutOps[Self <: XTextLayout] (val x: Self) extends AnyVal {
+  implicit class XTextLayoutMutableBuilder[Self <: XTextLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyLogicalAdvancements(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "applyLogicalAdvancements", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineOffset(value: Double): Self = StObject.set(x, "BaselineOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCombinedJustify(value: (SeqEquiv[XTextLayout], Double) => Double): Self = StObject.set(x, "combinedJustify", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBaselineOffset(value: Double): Self = this.set("BaselineOffset", value.asInstanceOf[js.Any])
+    def setFont(value: XCanvasFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: XCanvasFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setGetBaselineOffset(value: () => Double): Self = StObject.set(x, "getBaselineOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMainTextDirection(value: Double): Self = this.set("MainTextDirection", value.asInstanceOf[js.Any])
+    def setGetCaret(value: (Double, Boolean) => Caret): Self = StObject.set(x, "getCaret", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setText(value: StringContext): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setGetFont(value: () => XCanvasFont): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyLogicalAdvancements(value: SeqEquiv[Double] => Unit): Self = this.set("applyLogicalAdvancements", js.Any.fromFunction1(value))
+    def setGetMainTextDirection(value: () => Double): Self = StObject.set(x, "getMainTextDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCombinedJustify(value: (SeqEquiv[XTextLayout], Double) => Double): Self = this.set("combinedJustify", js.Any.fromFunction2(value))
+    def setGetNextInsertionIndex(value: (Double, Double, Boolean) => Double): Self = StObject.set(x, "getNextInsertionIndex", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetBaselineOffset(value: () => Double): Self = this.set("getBaselineOffset", js.Any.fromFunction0(value))
+    def setGetText(value: () => StringContext): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCaret(value: (Double, Boolean) => Caret): Self = this.set("getCaret", js.Any.fromFunction2(value))
+    def setGetTextHit(value: RealPoint2D => TextHit): Self = StObject.set(x, "getTextHit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFont(value: () => XCanvasFont): Self = this.set("getFont", js.Any.fromFunction0(value))
+    def setJustify(value: Double => Double): Self = StObject.set(x, "justify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMainTextDirection(value: () => Double): Self = this.set("getMainTextDirection", js.Any.fromFunction0(value))
+    def setMainTextDirection(value: Double): Self = StObject.set(x, "MainTextDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNextInsertionIndex(value: (Double, Double, Boolean) => Double): Self = this.set("getNextInsertionIndex", js.Any.fromFunction3(value))
+    def setQueryInkMeasures(value: () => SafeArray[RealRectangle2D]): Self = StObject.set(x, "queryInkMeasures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetText(value: () => StringContext): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setQueryLogicalAdvancements(value: () => SafeArray[Double]): Self = StObject.set(x, "queryLogicalAdvancements", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTextHit(value: RealPoint2D => TextHit): Self = this.set("getTextHit", js.Any.fromFunction1(value))
+    def setQueryLogicalHighlighting(value: (Double, Double) => XPolyPolygon2D): Self = StObject.set(x, "queryLogicalHighlighting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setJustify(value: Double => Double): Self = this.set("justify", js.Any.fromFunction1(value))
+    def setQueryMeasures(value: () => SafeArray[RealRectangle2D]): Self = StObject.set(x, "queryMeasures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQueryInkMeasures(value: () => SafeArray[RealRectangle2D]): Self = this.set("queryInkMeasures", js.Any.fromFunction0(value))
+    def setQueryTextBounds(value: () => RealRectangle2D): Self = StObject.set(x, "queryTextBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQueryLogicalAdvancements(value: () => SafeArray[Double]): Self = this.set("queryLogicalAdvancements", js.Any.fromFunction0(value))
+    def setQueryTextShapes(value: () => SafeArray[XPolyPolygon2D]): Self = StObject.set(x, "queryTextShapes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQueryLogicalHighlighting(value: (Double, Double) => XPolyPolygon2D): Self = this.set("queryLogicalHighlighting", js.Any.fromFunction2(value))
+    def setQueryVisualHighlighting(value: (Double, Double) => XPolyPolygon2D): Self = StObject.set(x, "queryVisualHighlighting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQueryMeasures(value: () => SafeArray[RealRectangle2D]): Self = this.set("queryMeasures", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryTextBounds(value: () => RealRectangle2D): Self = this.set("queryTextBounds", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryTextShapes(value: () => SafeArray[XPolyPolygon2D]): Self = this.set("queryTextShapes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryVisualHighlighting(value: (Double, Double) => XPolyPolygon2D): Self = this.set("queryVisualHighlighting", js.Any.fromFunction2(value))
+    def setText(value: StringContext): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.jpm.anon
 
 import typings.jpm.FFAddonSDK.SDKURL
 import typings.jpm.requestMod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Anonymous extends js.Object {
+trait Anonymous extends StObject {
   
   var anonymous: js.UndefOr[Boolean] = js.native
   
@@ -32,60 +33,48 @@ object Anonymous {
   }
   
   @scala.inline
-  implicit class AnonymousOps[Self <: Anonymous] (val x: Self) extends AnyVal {
+  implicit class AnonymousMutableBuilder[Self <: Anonymous] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String | js.Object): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnonymous(value: Boolean): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContent(value: String | js.Object): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setOnComplete(value: /* response */ Response => _): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnComplete(value: /* response */ Response => _): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
     
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setUrl(value: String | SDKURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideMimeType(value: String): Self = this.set("overrideMimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideMimeType: Self = this.set("overrideMimeType", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String | SDKURL): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

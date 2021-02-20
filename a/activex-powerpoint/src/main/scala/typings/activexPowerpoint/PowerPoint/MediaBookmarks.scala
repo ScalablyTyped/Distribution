@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaBookmarks extends js.Object {
+trait MediaBookmarks extends StObject {
   
   def Add(Position: Double, Name: String): MediaBookmark = js.native
   
@@ -31,30 +32,18 @@ object MediaBookmarks {
   }
   
   @scala.inline
-  implicit class MediaBookmarksOps[Self <: MediaBookmarks] (val x: Self) extends AnyVal {
+  implicit class MediaBookmarksMutableBuilder[Self <: MediaBookmarks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, String) => MediaBookmark): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: Double => MediaBookmark): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (Double, String) => MediaBookmark): Self = this.set("Add", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Double => MediaBookmark): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPowerPointDotMediaBookmarks_typekey(value: MediaBookmarks): Self = this.set("PowerPoint.MediaBookmarks_typekey", value.asInstanceOf[js.Any])
+    def setPowerPointDotMediaBookmarks_typekey(value: MediaBookmarks): Self = StObject.set(x, "PowerPoint.MediaBookmarks_typekey", value.asInstanceOf[js.Any])
   }
 }

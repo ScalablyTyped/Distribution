@@ -3,6 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.auto
 import typings.html5plus.html5plusStrings.editable
 import typings.html5plus.html5plusStrings.slient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
   */
 @js.native
-trait PlusShareShareMessage extends js.Object {
+trait PlusShareShareMessage extends StObject {
   
   /**
     * 分享消息的文字内容
@@ -134,90 +135,78 @@ object PlusShareShareMessage {
   }
   
   @scala.inline
-  implicit class PlusShareShareMessageOps[Self <: PlusShareShareMessage] (val x: Self) extends AnyVal {
+  implicit class PlusShareShareMessageMutableBuilder[Self <: PlusShareShareMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtra(value: PlusShareShareMessageExtra): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setGeo(value: PlusShareGeoPosition): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtra(value: PlusShareShareMessageExtra): Self = this.set("extra", value.asInstanceOf[js.Any])
+    def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeo(value: PlusShareGeoPosition): Self = this.set("geo", value.asInstanceOf[js.Any])
+    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
     @scala.inline
-    def deleteGeo: Self = this.set("geo", js.undefined)
+    def setInterface(value: auto | slient | editable): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
     @scala.inline
-    def deleteHref: Self = this.set("href", js.undefined)
+    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterface(value: auto | slient | editable): Self = this.set("interface", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteInterface: Self = this.set("interface", js.undefined)
+    def setMiniProgram(value: PlusShareWeixinMiniProgramOptions): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: String): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setPictures(value: js.Array[_]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiniProgram(value: PlusShareWeixinMiniProgramOptions): Self = this.set("miniProgram", value.asInstanceOf[js.Any])
+    def setPicturesUndefined: Self = StObject.set(x, "pictures", js.undefined)
     
     @scala.inline
-    def deleteMiniProgram: Self = this.set("miniProgram", js.undefined)
+    def setPicturesVarargs(value: js.Any*): Self = StObject.set(x, "pictures", js.Array(value :_*))
     
     @scala.inline
-    def setPicturesVarargs(value: js.Any*): Self = this.set("pictures", js.Array(value :_*))
+    def setThumbs(value: js.Array[_]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictures(value: js.Array[_]): Self = this.set("pictures", value.asInstanceOf[js.Any])
+    def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
     
     @scala.inline
-    def deletePictures: Self = this.set("pictures", js.undefined)
+    def setThumbsVarargs(value: js.Any*): Self = StObject.set(x, "thumbs", js.Array(value :_*))
     
     @scala.inline
-    def setThumbsVarargs(value: js.Any*): Self = this.set("thumbs", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbs(value: js.Array[_]): Self = this.set("thumbs", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteThumbs: Self = this.set("thumbs", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

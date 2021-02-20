@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * WebhookConversion describes how to call a conversion webhook
   */
 @js.native
-trait WebhookConversion extends js.Object {
+trait WebhookConversion extends StObject {
   
   /**
     * clientConfig is the instructions for how to call the webhook if strategy is `Webhook`.
@@ -30,30 +31,18 @@ object WebhookConversion {
   }
   
   @scala.inline
-  implicit class WebhookConversionOps[Self <: WebhookConversion] (val x: Self) extends AnyVal {
+  implicit class WebhookConversionMutableBuilder[Self <: WebhookConversion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionReviewVersionsVarargs(value: Input[String]*): Self = this.set("conversionReviewVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConversionReviewVersions(value: Input[js.Array[Input[String]]]): Self = this.set("conversionReviewVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientConfig(value: Input[WebhookClientConfig]): Self = this.set("clientConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientConfig: Self = this.set("clientConfig", js.undefined)
+    def setConversionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -184,7 +185,7 @@ object KmlFeature {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getAbstractView: () => KmlAbstractView,
     getAddress: () => String,
     getBalloonHtml: () => String,
@@ -227,113 +228,102 @@ object KmlFeature {
     setTimePrimitive: KmlTimePrimitive => Unit,
     setVisibility: Boolean => Unit
   ): KmlFeature = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getAbstractView = js.Any.fromFunction0(getAbstractView), getAddress = js.Any.fromFunction0(getAddress), getBalloonHtml = js.Any.fromFunction0(getBalloonHtml), getBalloonHtmlUnsafe = js.Any.fromFunction0(getBalloonHtmlUnsafe), getComputedStyle = js.Any.fromFunction0(getComputedStyle), getDescription = js.Any.fromFunction0(getDescription), getId = js.Any.fromFunction0(getId), getKml = js.Any.fromFunction0(getKml), getName = js.Any.fromFunction0(getName), getNextSibling = js.Any.fromFunction0(getNextSibling), getOpacity = js.Any.fromFunction0(getOpacity), getOpen = js.Any.fromFunction0(getOpen), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getRegion = js.Any.fromFunction0(getRegion), getSnippet = js.Any.fromFunction0(getSnippet), getStyleSelector = js.Any.fromFunction0(getStyleSelector), getStyleUrl = js.Any.fromFunction0(getStyleUrl), getTimePrimitive = js.Any.fromFunction0(getTimePrimitive), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getVisibility = js.Any.fromFunction0(getVisibility), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAbstractView = js.Any.fromFunction1(setAbstractView), setAddress = js.Any.fromFunction1(setAddress), setDescription = js.Any.fromFunction1(setDescription), setName = js.Any.fromFunction1(setName), setOpacity = js.Any.fromFunction1(setOpacity), setOpen = js.Any.fromFunction1(setOpen), setRegion = js.Any.fromFunction1(setRegion), setSnippet = js.Any.fromFunction1(setSnippet), setStyleSelector = js.Any.fromFunction1(setStyleSelector), setStyleUrl = js.Any.fromFunction1(setStyleUrl), setTimePrimitive = js.Any.fromFunction1(setTimePrimitive), setVisibility = js.Any.fromFunction1(setVisibility))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getAbstractView = js.Any.fromFunction0(getAbstractView), getAddress = js.Any.fromFunction0(getAddress), getBalloonHtml = js.Any.fromFunction0(getBalloonHtml), getBalloonHtmlUnsafe = js.Any.fromFunction0(getBalloonHtmlUnsafe), getComputedStyle = js.Any.fromFunction0(getComputedStyle), getDescription = js.Any.fromFunction0(getDescription), getId = js.Any.fromFunction0(getId), getKml = js.Any.fromFunction0(getKml), getName = js.Any.fromFunction0(getName), getNextSibling = js.Any.fromFunction0(getNextSibling), getOpacity = js.Any.fromFunction0(getOpacity), getOpen = js.Any.fromFunction0(getOpen), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getRegion = js.Any.fromFunction0(getRegion), getSnippet = js.Any.fromFunction0(getSnippet), getStyleSelector = js.Any.fromFunction0(getStyleSelector), getStyleUrl = js.Any.fromFunction0(getStyleUrl), getTimePrimitive = js.Any.fromFunction0(getTimePrimitive), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getVisibility = js.Any.fromFunction0(getVisibility), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAbstractView = js.Any.fromFunction1(setAbstractView), setAddress = js.Any.fromFunction1(setAddress), setDescription = js.Any.fromFunction1(setDescription), setName = js.Any.fromFunction1(setName), setOpacity = js.Any.fromFunction1(setOpacity), setOpen = js.Any.fromFunction1(setOpen), setRegion = js.Any.fromFunction1(setRegion), setSnippet = js.Any.fromFunction1(setSnippet), setStyleSelector = js.Any.fromFunction1(setStyleSelector), setStyleUrl = js.Any.fromFunction1(setStyleUrl), setTimePrimitive = js.Any.fromFunction1(setTimePrimitive), setVisibility = js.Any.fromFunction1(setVisibility))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlFeature]
   }
   
   @scala.inline
-  implicit class KmlFeatureOps[Self <: KmlFeature] (val x: Self) extends AnyVal {
+  implicit class KmlFeatureMutableBuilder[Self <: KmlFeature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAbstractView(value: () => KmlAbstractView): Self = StObject.set(x, "getAbstractView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAddress(value: () => String): Self = StObject.set(x, "getAddress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBalloonHtml(value: () => String): Self = StObject.set(x, "getBalloonHtml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAbstractView(value: () => KmlAbstractView): Self = this.set("getAbstractView", js.Any.fromFunction0(value))
+    def setGetBalloonHtmlUnsafe(value: () => String): Self = StObject.set(x, "getBalloonHtmlUnsafe", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAddress(value: () => String): Self = this.set("getAddress", js.Any.fromFunction0(value))
+    def setGetComputedStyle(value: () => KmlStyle): Self = StObject.set(x, "getComputedStyle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBalloonHtml(value: () => String): Self = this.set("getBalloonHtml", js.Any.fromFunction0(value))
+    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBalloonHtmlUnsafe(value: () => String): Self = this.set("getBalloonHtmlUnsafe", js.Any.fromFunction0(value))
+    def setGetKml(value: () => String): Self = StObject.set(x, "getKml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetComputedStyle(value: () => KmlStyle): Self = this.set("getComputedStyle", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    def setGetNextSibling(value: () => KmlFeature): Self = StObject.set(x, "getNextSibling", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKml(value: () => String): Self = this.set("getKml", js.Any.fromFunction0(value))
+    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetOpen(value: () => Boolean): Self = StObject.set(x, "getOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNextSibling(value: () => KmlFeature): Self = this.set("getNextSibling", js.Any.fromFunction0(value))
+    def setGetPreviousSibling(value: () => KmlFeature): Self = StObject.set(x, "getPreviousSibling", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOpacity(value: () => Double): Self = this.set("getOpacity", js.Any.fromFunction0(value))
+    def setGetRegion(value: () => KmlRegion): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOpen(value: () => Boolean): Self = this.set("getOpen", js.Any.fromFunction0(value))
+    def setGetSnippet(value: () => String): Self = StObject.set(x, "getSnippet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPreviousSibling(value: () => KmlFeature): Self = this.set("getPreviousSibling", js.Any.fromFunction0(value))
+    def setGetStyleSelector(value: () => KmlStyleSelector): Self = StObject.set(x, "getStyleSelector", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRegion(value: () => KmlRegion): Self = this.set("getRegion", js.Any.fromFunction0(value))
+    def setGetStyleUrl(value: () => String): Self = StObject.set(x, "getStyleUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSnippet(value: () => String): Self = this.set("getSnippet", js.Any.fromFunction0(value))
+    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = StObject.set(x, "getTimePrimitive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStyleSelector(value: () => KmlStyleSelector): Self = this.set("getStyleSelector", js.Any.fromFunction0(value))
+    def setGetVisibility(value: () => Boolean): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStyleUrl(value: () => String): Self = this.set("getStyleUrl", js.Any.fromFunction0(value))
+    def setSetAbstractView(value: KmlAbstractView => Unit): Self = StObject.set(x, "setAbstractView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = this.set("getTimePrimitive", js.Any.fromFunction0(value))
+    def setSetAddress(value: String => Unit): Self = StObject.set(x, "setAddress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVisibility(value: () => Boolean): Self = this.set("getVisibility", js.Any.fromFunction0(value))
+    def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAbstractView(value: KmlAbstractView => Unit): Self = this.set("setAbstractView", js.Any.fromFunction1(value))
+    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAddress(value: String => Unit): Self = this.set("setAddress", js.Any.fromFunction1(value))
+    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDescription(value: String => Unit): Self = this.set("setDescription", js.Any.fromFunction1(value))
+    def setSetOpen(value: Boolean => Unit): Self = StObject.set(x, "setOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetName(value: String => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetRegion(value: KmlRegion => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = this.set("setOpacity", js.Any.fromFunction1(value))
+    def setSetSnippet(value: String => Unit): Self = StObject.set(x, "setSnippet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOpen(value: Boolean => Unit): Self = this.set("setOpen", js.Any.fromFunction1(value))
+    def setSetStyleSelector(value: KmlStyleSelector => Unit): Self = StObject.set(x, "setStyleSelector", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRegion(value: KmlRegion => Unit): Self = this.set("setRegion", js.Any.fromFunction1(value))
+    def setSetStyleUrl(value: String => Unit): Self = StObject.set(x, "setStyleUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSnippet(value: String => Unit): Self = this.set("setSnippet", js.Any.fromFunction1(value))
+    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = StObject.set(x, "setTimePrimitive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStyleSelector(value: KmlStyleSelector => Unit): Self = this.set("setStyleSelector", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStyleUrl(value: String => Unit): Self = this.set("setStyleUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = this.set("setTimePrimitive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisibility(value: Boolean => Unit): Self = this.set("setVisibility", js.Any.fromFunction1(value))
+    def setSetVisibility(value: Boolean => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

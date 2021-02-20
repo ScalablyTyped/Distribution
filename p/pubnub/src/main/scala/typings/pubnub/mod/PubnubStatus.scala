@@ -1,12 +1,13 @@
 package typings.pubnub.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PubnubStatus extends js.Object {
+trait PubnubStatus extends StObject {
   
   var category: js.UndefOr[String] = js.native
   
@@ -14,10 +15,10 @@ trait PubnubStatus extends js.Object {
   
   var errorData: js.UndefOr[Error] = js.native
   
-   // see Pubnub.Categories
+  // see Pubnub.Categories
   var operation: String = js.native
   
-   // see Pubnub.Operations
+  // see Pubnub.Operations
   var statusCode: Double = js.native
 }
 object PubnubStatus {
@@ -29,39 +30,27 @@ object PubnubStatus {
   }
   
   @scala.inline
-  implicit class PubnubStatusOps[Self <: PubnubStatus] (val x: Self) extends AnyVal {
+  implicit class PubnubStatusMutableBuilder[Self <: PubnubStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setErrorData(value: Error): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setErrorDataUndefined: Self = StObject.set(x, "errorData", js.undefined)
     
     @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
-    
-    @scala.inline
-    def setErrorData(value: Error): Self = this.set("errorData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorData: Self = this.set("errorData", js.undefined)
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

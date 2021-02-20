@@ -1,17 +1,18 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GoToType extends js.Object
+sealed trait GoToType extends StObject
 /**
   * Specifies the type of place or object to navigate to.
   */
 @JSGlobal("Office.GoToType")
 @js.native
-object GoToType extends js.Object {
+object GoToType extends StObject {
   
   /**
     * Goes to a binding object using the specified binding id.

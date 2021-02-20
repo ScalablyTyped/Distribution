@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MySQLSettings extends js.Object {
+trait MySQLSettings extends StObject {
   
   /**
     * Specifies a script to run immediately after AWS DMS connects to the endpoint. The migration task continues running regardless if the SQL statement succeeds or fails.
@@ -71,84 +72,72 @@ object MySQLSettings {
   }
   
   @scala.inline
-  implicit class MySQLSettingsOps[Self <: MySQLSettings] (val x: Self) extends AnyVal {
+  implicit class MySQLSettingsMutableBuilder[Self <: MySQLSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterConnectScriptUndefined: Self = StObject.set(x, "AfterConnectScript", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterConnectScript(value: String): Self = this.set("AfterConnectScript", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteAfterConnectScript: Self = this.set("AfterConnectScript", js.undefined)
+    def setEventsPollInterval(value: IntegerOptional): Self = StObject.set(x, "EventsPollInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setEventsPollIntervalUndefined: Self = StObject.set(x, "EventsPollInterval", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsPollInterval(value: IntegerOptional): Self = this.set("EventsPollInterval", value.asInstanceOf[js.Any])
+    def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
     
     @scala.inline
-    def deleteEventsPollInterval: Self = this.set("EventsPollInterval", js.undefined)
+    def setParallelLoadThreads(value: IntegerOptional): Self = StObject.set(x, "ParallelLoadThreads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFileSize(value: IntegerOptional): Self = this.set("MaxFileSize", value.asInstanceOf[js.Any])
+    def setParallelLoadThreadsUndefined: Self = StObject.set(x, "ParallelLoadThreads", js.undefined)
     
     @scala.inline
-    def deleteMaxFileSize: Self = this.set("MaxFileSize", js.undefined)
+    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelLoadThreads(value: IntegerOptional): Self = this.set("ParallelLoadThreads", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteParallelLoadThreads: Self = this.set("ParallelLoadThreads", js.undefined)
+    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: SecretString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setServerTimezone(value: String): Self = StObject.set(x, "ServerTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setServerTimezoneUndefined: Self = StObject.set(x, "ServerTimezone", js.undefined)
     
     @scala.inline
-    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    def setTargetDbType(value: TargetDbType): Self = StObject.set(x, "TargetDbType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerTimezone(value: String): Self = this.set("ServerTimezone", value.asInstanceOf[js.Any])
+    def setTargetDbTypeUndefined: Self = StObject.set(x, "TargetDbType", js.undefined)
     
     @scala.inline
-    def deleteServerTimezone: Self = this.set("ServerTimezone", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetDbType(value: TargetDbType): Self = this.set("TargetDbType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetDbType: Self = this.set("TargetDbType", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

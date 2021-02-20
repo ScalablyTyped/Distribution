@@ -1,12 +1,13 @@
 package typings.sharepoint
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalloutOptions extends js.Object {
+trait CalloutOptions extends StObject {
   
   /** Some unique id for the callout. */
   var ID: String = js.native
@@ -74,60 +75,48 @@ object CalloutOptions {
   }
   
   @scala.inline
-  implicit class CalloutOptionsOps[Self <: CalloutOptions] (val x: Self) extends AnyVal {
+  implicit class CalloutOptionsMutableBuilder[Self <: CalloutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeakOrientation(value: String): Self = StObject.set(x, "beakOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBox(value: HTMLElement): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeakOrientation(value: String): Self = this.set("beakOrientation", value.asInstanceOf[js.Any])
+    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: HTMLElement): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setLaunchPoint(value: HTMLElement): Self = StObject.set(x, "launchPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentElement(value: HTMLElement): Self = this.set("contentElement", value.asInstanceOf[js.Any])
+    def setOnClosedCallback(value: Callout => Unit): Self = StObject.set(x, "onClosedCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentWidth(value: Double): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
+    def setOnClosingCallback(value: Callout => Unit): Self = StObject.set(x, "onClosingCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLaunchPoint(value: HTMLElement): Self = this.set("launchPoint", value.asInstanceOf[js.Any])
+    def setOnOpenedCallback(value: Callout => Unit): Self = StObject.set(x, "onOpenedCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClosedCallback(value: Callout => Unit): Self = this.set("onClosedCallback", js.Any.fromFunction1(value))
+    def setOnOpeningCallback(value: Callout => Unit): Self = StObject.set(x, "onOpeningCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClosingCallback(value: Callout => Unit): Self = this.set("onClosingCallback", js.Any.fromFunction1(value))
+    def setOpenOptions(value: CalloutOpenOptions): Self = StObject.set(x, "openOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOpenedCallback(value: Callout => Unit): Self = this.set("onOpenedCallback", js.Any.fromFunction1(value))
+    def setPositionAlgorithm(value: Callout => Unit): Self = StObject.set(x, "positionAlgorithm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnOpeningCallback(value: Callout => Unit): Self = this.set("onOpeningCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOpenOptions(value: CalloutOpenOptions): Self = this.set("openOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionAlgorithm(value: Callout => Unit): Self = this.set("positionAlgorithm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

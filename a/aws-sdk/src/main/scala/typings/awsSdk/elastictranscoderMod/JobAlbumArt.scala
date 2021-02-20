@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobAlbumArt extends js.Object {
+trait JobAlbumArt extends StObject {
   
   /**
     * The file to be used as album art. There can be multiple artworks associated with an audio file, to a maximum of 20. Valid formats are .jpg and .png 
@@ -26,33 +27,21 @@ object JobAlbumArt {
   }
   
   @scala.inline
-  implicit class JobAlbumArtOps[Self <: JobAlbumArt] (val x: Self) extends AnyVal {
+  implicit class JobAlbumArtMutableBuilder[Self <: JobAlbumArt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtwork(value: Artworks): Self = StObject.set(x, "Artwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtworkUndefined: Self = StObject.set(x, "Artwork", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtworkVarargs(value: Artwork*): Self = StObject.set(x, "Artwork", js.Array(value :_*))
     
     @scala.inline
-    def setArtworkVarargs(value: Artwork*): Self = this.set("Artwork", js.Array(value :_*))
+    def setMergePolicy(value: MergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtwork(value: Artworks): Self = this.set("Artwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArtwork: Self = this.set("Artwork", js.undefined)
-    
-    @scala.inline
-    def setMergePolicy(value: MergePolicy): Self = this.set("MergePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergePolicy: Self = this.set("MergePolicy", js.undefined)
+    def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
   }
 }

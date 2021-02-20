@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   /** Promise which resolves to a buffer with response body. */
   def buffer(): js.Promise[Buffer] = js.native
@@ -77,60 +78,48 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: () => Frame | Null): Self = StObject.set(x, "frame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromCache(value: () => Boolean): Self = StObject.set(x, "fromCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuffer(value: () => js.Promise[Buffer]): Self = this.set("buffer", js.Any.fromFunction0(value))
+    def setFromServiceWorker(value: () => Boolean): Self = StObject.set(x, "fromServiceWorker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFrame(value: () => Frame | Null): Self = this.set("frame", js.Any.fromFunction0(value))
+    def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFromCache(value: () => Boolean): Self = this.set("fromCache", js.Any.fromFunction0(value))
+    def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFromServiceWorker(value: () => Boolean): Self = this.set("fromServiceWorker", js.Any.fromFunction0(value))
+    def setOk(value: () => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeaders(value: () => Headers): Self = this.set("headers", js.Any.fromFunction0(value))
+    def setRemoteAddress(value: () => RemoteInfo): Self = StObject.set(x, "remoteAddress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setJson(value: () => js.Promise[_]): Self = this.set("json", js.Any.fromFunction0(value))
+    def setRequest(value: () => Request): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOk(value: () => Boolean): Self = this.set("ok", js.Any.fromFunction0(value))
+    def setSecurityDetails(value: () => SecurityDetails | Null): Self = StObject.set(x, "securityDetails", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemoteAddress(value: () => RemoteInfo): Self = this.set("remoteAddress", js.Any.fromFunction0(value))
+    def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequest(value: () => Request): Self = this.set("request", js.Any.fromFunction0(value))
+    def setStatusText(value: () => String): Self = StObject.set(x, "statusText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSecurityDetails(value: () => SecurityDetails | Null): Self = this.set("securityDetails", js.Any.fromFunction0(value))
+    def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStatus(value: () => Double): Self = this.set("status", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStatusText(value: () => String): Self = this.set("statusText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setText(value: () => js.Promise[String]): Self = this.set("text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUrl(value: () => String): Self = this.set("url", js.Any.fromFunction0(value))
+    def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "Table")
 @js.native
-class Table[T] protected () extends js.Object {
+class Table[T] protected () extends StObject {
   def this(tableName: String, connection: Connection) = this()
   
   var _columns: js.Array[String] = js.native
@@ -66,12 +67,12 @@ class Table[T] protected () extends js.Object {
     *
     */
   def find(criteriaRawJsObject: js.Any): typings.bluebird.mod.^[js.Array[T]] = js.native
-   // only criteria
+  // only criteria
   def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.mod.^[js.Array[T]] = js.native
   
   def findAll(): typings.bluebird.mod.^[js.Array[T]] = js.native
   def findAll(tableRules: js.UndefOr[scala.Nothing], callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.mod.^[js.Array[T]] = js.native
-   // only criteria and promise
+  // only criteria and promise
   def findAll(tableRules: RawRules): typings.bluebird.mod.^[js.Array[T]] = js.native
   def findAll(tableRules: RawRules, callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.mod.^[js.Array[T]] = js.native
   
@@ -146,8 +147,8 @@ class Table[T] protected () extends js.Object {
   def remove(criteriaOrID: String, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.mod.^[DeleteAnswer] = js.native
   def remove(criteriaOrID: js.Any, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.mod.^[DeleteAnswer] = js.native
   def remove(criteriaOrID: Double, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.mod.^[DeleteAnswer] = js.native
-   // ID without callback
-   // criteria obj without callback
+  // ID without callback
+  // criteria obj without callback
   def remove(criteriaRawObject: js.Any): typings.bluebird.mod.^[DeleteAnswer] = js.native
   def remove(id: String): typings.bluebird.mod.^[DeleteAnswer] = js.native
   def remove(id: Double): typings.bluebird.mod.^[DeleteAnswer] = js.native

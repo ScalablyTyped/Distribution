@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemixSettings extends js.Object {
+trait RemixSettings extends StObject {
   
   /**
     * Mapping of input channels to output channels, with appropriate gain adjustments.
@@ -32,36 +33,24 @@ object RemixSettings {
   }
   
   @scala.inline
-  implicit class RemixSettingsOps[Self <: RemixSettings] (val x: Self) extends AnyVal {
+  implicit class RemixSettingsMutableBuilder[Self <: RemixSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelMappings(value: listOfAudioChannelMapping): Self = StObject.set(x, "ChannelMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelMappingsVarargs(value: AudioChannelMapping*): Self = StObject.set(x, "ChannelMappings", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsIn(value: integerMin1Max16): Self = StObject.set(x, "ChannelsIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelMappingsVarargs(value: AudioChannelMapping*): Self = this.set("ChannelMappings", js.Array(value :_*))
+    def setChannelsInUndefined: Self = StObject.set(x, "ChannelsIn", js.undefined)
     
     @scala.inline
-    def setChannelMappings(value: listOfAudioChannelMapping): Self = this.set("ChannelMappings", value.asInstanceOf[js.Any])
+    def setChannelsOut(value: integerMin1Max8): Self = StObject.set(x, "ChannelsOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsIn(value: integerMin1Max16): Self = this.set("ChannelsIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelsIn: Self = this.set("ChannelsIn", js.undefined)
-    
-    @scala.inline
-    def setChannelsOut(value: integerMin1Max8): Self = this.set("ChannelsOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelsOut: Self = this.set("ChannelsOut", js.undefined)
+    def setChannelsOutUndefined: Self = StObject.set(x, "ChannelsOut", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJs.global.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.InitializationReason")
 @js.native
-object InitializationReason extends js.Object {
+object InitializationReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeJs.Office.InitializationReason with Double] = js.native

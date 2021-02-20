@@ -4,21 +4,26 @@ import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlas
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeParams
 import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/client", "FoldingRangeRequest")
-@js.native
-object FoldingRangeRequest extends js.Object {
+object FoldingRangeRequest {
   
+  @JSImport("vscode-languageclient/lib/client", "FoldingRangeRequest.method")
+  @js.native
   val method: textDocumentSlashfoldingRange = js.native
   
   /** @deprecated Use FoldingRangeRequest.type */
+  @JSImport("vscode-languageclient/lib/client", "FoldingRangeRequest.resultType")
+  @js.native
   val resultType: typings.vscodeJsonrpc.mod.ProgressType[
     js.Array[typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRange]
   ] = js.native
   
+  @JSImport("vscode-languageclient/lib/client", "FoldingRangeRequest.type")
+  @js.native
   val `type`: ProtocolRequestType[
     FoldingRangeParams, 
     js.Array[typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRange] | Null, 

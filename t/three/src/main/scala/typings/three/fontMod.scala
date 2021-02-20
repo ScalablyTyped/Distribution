@@ -1,16 +1,16 @@
 package typings.three
 
 import typings.three.shapeMod.Shape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/core/Font", JSImport.Namespace)
-@js.native
-object fontMod extends js.Object {
+object fontMod {
   
+  @JSImport("three/src/extras/core/Font", "Font")
   @js.native
-  class Font protected () extends js.Object {
+  class Font protected () extends StObject {
     def this(jsondata: js.Any) = this()
     
     var data: String = js.native

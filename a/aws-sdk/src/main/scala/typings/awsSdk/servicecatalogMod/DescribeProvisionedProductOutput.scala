@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProvisionedProductOutput extends js.Object {
+trait DescribeProvisionedProductOutput extends StObject {
   
   /**
     * Any CloudWatch dashboards that were created when provisioning the product.
@@ -26,33 +27,21 @@ object DescribeProvisionedProductOutput {
   }
   
   @scala.inline
-  implicit class DescribeProvisionedProductOutputOps[Self <: DescribeProvisionedProductOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeProvisionedProductOutputMutableBuilder[Self <: DescribeProvisionedProductOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchDashboards(value: CloudWatchDashboards): Self = StObject.set(x, "CloudWatchDashboards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchDashboardsUndefined: Self = StObject.set(x, "CloudWatchDashboards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = StObject.set(x, "CloudWatchDashboards", js.Array(value :_*))
     
     @scala.inline
-    def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = this.set("CloudWatchDashboards", js.Array(value :_*))
+    def setProvisionedProductDetail(value: ProvisionedProductDetail): Self = StObject.set(x, "ProvisionedProductDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchDashboards(value: CloudWatchDashboards): Self = this.set("CloudWatchDashboards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudWatchDashboards: Self = this.set("CloudWatchDashboards", js.undefined)
-    
-    @scala.inline
-    def setProvisionedProductDetail(value: ProvisionedProductDetail): Self = this.set("ProvisionedProductDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedProductDetail: Self = this.set("ProvisionedProductDetail", js.undefined)
+    def setProvisionedProductDetailUndefined: Self = StObject.set(x, "ProvisionedProductDetail", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)
   */
 @js.native
-trait WeightedPodAffinityTerm extends js.Object {
+trait WeightedPodAffinityTerm extends StObject {
   
   /**
     * Required. A pod affinity term, associated with the corresponding weight.
@@ -30,24 +31,12 @@ object WeightedPodAffinityTerm {
   }
   
   @scala.inline
-  implicit class WeightedPodAffinityTermOps[Self <: WeightedPodAffinityTerm] (val x: Self) extends AnyVal {
+  implicit class WeightedPodAffinityTermMutableBuilder[Self <: WeightedPodAffinityTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPodAffinityTerm(value: Input[PodAffinityTerm]): Self = StObject.set(x, "podAffinityTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPodAffinityTerm(value: Input[PodAffinityTerm]): Self = this.set("podAffinityTerm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Input[Double]): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

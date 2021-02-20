@@ -1,15 +1,15 @@
 package typings.tizenAccessory
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("SATransport")
   @js.native
-  object SATransport extends js.Object {
+  object SATransport extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.tizenAccessory.SATransport with String] = js.native
@@ -25,9 +25,10 @@ object global extends js.Object {
     /* "TRANSPORT_WIFI" */ val TRANSPORT_WIFI: typings.tizenAccessory.SATransport.TRANSPORT_WIFI with String = js.native
   }
   
-  @js.native
-  object webapis extends js.Object {
+  object webapis {
     
+    @JSGlobal("webapis.sa")
+    @js.native
     val sa: SAManager = js.native
   }
 }

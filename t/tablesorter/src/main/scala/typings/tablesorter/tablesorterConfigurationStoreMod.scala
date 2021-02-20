@@ -44,17 +44,16 @@ import typings.tablesorter.tablesorterStrings.y
 import typings.tablesorter.textExtractorMod.TextExtractor
 import typings.tablesorter.textSorterMod.TextSorter
 import typings.tablesorter.widgetOptionStoreMod.WidgetOptionStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/System/TablesorterConfigurationStore", JSImport.Namespace)
-@js.native
-object tablesorterConfigurationStoreMod extends js.Object {
+object tablesorterConfigurationStoreMod {
   
   /* Inlined parent std.Required<tablesorter.tablesorter/System/TablesorterConfiguration.TablesorterConfiguration<TElement>> */
   @js.native
-  trait TablesorterConfigurationStore[TElement] extends js.Object {
+  trait TablesorterConfigurationStore[TElement] extends StObject {
     
     /**
       * A jQuery-object which contains all filter-cells.

@@ -1,5 +1,6 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularUiBootstrap.angularUiBootstrapStrings.month
   - typings.angularUiBootstrap.angularUiBootstrapStrings.year
 */
-trait DatepickerMode extends js.Object
+trait DatepickerMode extends StObject
 object DatepickerMode {
   
   @scala.inline

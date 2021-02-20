@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuerySource extends js.Object {
+trait QuerySource extends StObject {
   
   /** Display name of the data source. */
   var displayName: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object QuerySource {
   }
   
   @scala.inline
-  implicit class QuerySourceOps[Self <: QuerySource] (val x: Self) extends AnyVal {
+  implicit class QuerySourceMutableBuilder[Self <: QuerySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperators(value: js.Array[QueryOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setOperatorsVarargs(value: QueryOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
     
     @scala.inline
-    def setOperatorsVarargs(value: QueryOperator*): Self = this.set("operators", js.Array(value :_*))
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperators(value: js.Array[QueryOperator]): Self = this.set("operators", value.asInstanceOf[js.Any])
+    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
     @scala.inline
-    def deleteOperators: Self = this.set("operators", js.undefined)
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortName: Self = this.set("shortName", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableProvidedDragHandleProps extends js.Object {
+trait DraggableProvidedDragHandleProps extends StObject {
   
   var `aria-describedby`: ElementId = js.native
   
@@ -43,39 +44,27 @@ object DraggableProvidedDragHandleProps {
   }
   
   @scala.inline
-  implicit class DraggableProvidedDragHandlePropsOps[Self <: DraggableProvidedDragHandleProps] (val x: Self) extends AnyVal {
+  implicit class DraggableProvidedDragHandlePropsMutableBuilder[Self <: DraggableProvidedDragHandleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAria-describedby`(value: ElementId): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setData-rbd-drag-handle-context-id`(value: ContextId): Self = StObject.set(x, "data-rbd-drag-handle-context-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setData-rbd-drag-handle-draggable-id`(value: DraggableId): Self = StObject.set(x, "data-rbd-drag-handle-draggable-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-describedby`(value: ElementId): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setData-rbd-drag-handle-context-id`(value: ContextId): Self = this.set("data-rbd-drag-handle-context-id", value.asInstanceOf[js.Any])
+    def setOnDragStart(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setData-rbd-drag-handle-draggable-id`(value: DraggableId): Self = this.set("data-rbd-drag-handle-draggable-id", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnDragStart(value: DragEvent[_] => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

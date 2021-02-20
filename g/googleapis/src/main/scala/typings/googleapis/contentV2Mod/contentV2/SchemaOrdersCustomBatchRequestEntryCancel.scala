@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrdersCustomBatchRequestEntryCancel extends js.Object {
+trait SchemaOrdersCustomBatchRequestEntryCancel extends StObject {
   
   /**
     * The reason for the cancellation.
@@ -26,30 +27,18 @@ object SchemaOrdersCustomBatchRequestEntryCancel {
   }
   
   @scala.inline
-  implicit class SchemaOrdersCustomBatchRequestEntryCancelOps[Self <: SchemaOrdersCustomBatchRequestEntryCancel] (val x: Self) extends AnyVal {
+  implicit class SchemaOrdersCustomBatchRequestEntryCancelMutableBuilder[Self <: SchemaOrdersCustomBatchRequestEntryCancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setReasonText(value: String): Self = this.set("reasonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonText: Self = this.set("reasonText", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

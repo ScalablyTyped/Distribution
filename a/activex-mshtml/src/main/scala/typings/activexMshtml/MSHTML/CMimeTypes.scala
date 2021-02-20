@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CMimeTypes extends js.Object {
+trait CMimeTypes extends StObject {
   
   @JSName("MSHTML.CMimeTypes_typekey")
   var MSHTMLDotCMimeTypes_typekey: CMimeTypes = js.native
@@ -22,24 +23,12 @@ object CMimeTypes {
   }
   
   @scala.inline
-  implicit class CMimeTypesOps[Self <: CMimeTypes] (val x: Self) extends AnyVal {
+  implicit class CMimeTypesMutableBuilder[Self <: CMimeTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotCMimeTypes_typekey(value: CMimeTypes): Self = this.set("MSHTML.CMimeTypes_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMSHTMLDotCMimeTypes_typekey(value: CMimeTypes): Self = StObject.set(x, "MSHTML.CMimeTypes_typekey", value.asInstanceOf[js.Any])
   }
 }

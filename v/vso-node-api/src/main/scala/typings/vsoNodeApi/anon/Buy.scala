@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buy extends js.Object {
+trait Buy extends StObject {
   
   var buy: scala.Double = js.native
   
@@ -39,39 +40,27 @@ object Buy {
   }
   
   @scala.inline
-  implicit class BuyOps[Self <: Buy] (val x: Self) extends AnyVal {
+  implicit class BuyMutableBuilder[Self <: Buy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuy(value: scala.Double): Self = StObject.set(x, "buy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: scala.Double): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstall(value: scala.Double): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuy(value: scala.Double): Self = this.set("buy", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: scala.Double): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setPurchaseRequest(value: scala.Double): Self = StObject.set(x, "purchaseRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstall(value: scala.Double): Self = this.set("install", value.asInstanceOf[js.Any])
+    def setRequest(value: scala.Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPurchaseRequest(value: scala.Double): Self = this.set("purchaseRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: scala.Double): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTry(value: scala.Double): Self = this.set("try", value.asInstanceOf[js.Any])
+    def setTry(value: scala.Double): Self = StObject.set(x, "try", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MSMediaKeyError extends js.Object {
+trait MSMediaKeyError extends StObject {
   
   val MS_MEDIA_KEYERR_CLIENT: Double = js.native
   
@@ -41,42 +42,30 @@ object MSMediaKeyError {
   }
   
   @scala.inline
-  implicit class MSMediaKeyErrorOps[Self <: MSMediaKeyError] (val x: Self) extends AnyVal {
+  implicit class MSMediaKeyErrorMutableBuilder[Self <: MSMediaKeyError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMS_MEDIA_KEYERR_CLIENT(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_CLIENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMS_MEDIA_KEYERR_DOMAIN(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_DOMAIN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMS_MEDIA_KEYERR_CLIENT(value: Double): Self = this.set("MS_MEDIA_KEYERR_CLIENT", value.asInstanceOf[js.Any])
+    def setMS_MEDIA_KEYERR_HARDWARECHANGE(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_HARDWARECHANGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMS_MEDIA_KEYERR_DOMAIN(value: Double): Self = this.set("MS_MEDIA_KEYERR_DOMAIN", value.asInstanceOf[js.Any])
+    def setMS_MEDIA_KEYERR_OUTPUT(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_OUTPUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMS_MEDIA_KEYERR_HARDWARECHANGE(value: Double): Self = this.set("MS_MEDIA_KEYERR_HARDWARECHANGE", value.asInstanceOf[js.Any])
+    def setMS_MEDIA_KEYERR_SERVICE(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_SERVICE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMS_MEDIA_KEYERR_OUTPUT(value: Double): Self = this.set("MS_MEDIA_KEYERR_OUTPUT", value.asInstanceOf[js.Any])
+    def setMS_MEDIA_KEYERR_UNKNOWN(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_UNKNOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMS_MEDIA_KEYERR_SERVICE(value: Double): Self = this.set("MS_MEDIA_KEYERR_SERVICE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMS_MEDIA_KEYERR_UNKNOWN(value: Double): Self = this.set("MS_MEDIA_KEYERR_UNKNOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemCode(value: Double): Self = this.set("systemCode", value.asInstanceOf[js.Any])
+    def setSystemCode(value: Double): Self = StObject.set(x, "systemCode", value.asInstanceOf[js.Any])
   }
 }

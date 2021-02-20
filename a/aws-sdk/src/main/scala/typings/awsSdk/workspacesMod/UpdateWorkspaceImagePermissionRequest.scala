@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWorkspaceImagePermissionRequest extends js.Object {
+trait UpdateWorkspaceImagePermissionRequest extends StObject {
   
   /**
     * The permission to copy the image. This permission can be revoked only after an image has been shared.
@@ -31,27 +32,15 @@ object UpdateWorkspaceImagePermissionRequest {
   }
   
   @scala.inline
-  implicit class UpdateWorkspaceImagePermissionRequestOps[Self <: UpdateWorkspaceImagePermissionRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateWorkspaceImagePermissionRequestMutableBuilder[Self <: UpdateWorkspaceImagePermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCopyImage(value: BooleanObject): Self = StObject.set(x, "AllowCopyImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowCopyImage(value: BooleanObject): Self = this.set("AllowCopyImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedAccountId(value: AwsAccount): Self = this.set("SharedAccountId", value.asInstanceOf[js.Any])
+    def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
   }
 }

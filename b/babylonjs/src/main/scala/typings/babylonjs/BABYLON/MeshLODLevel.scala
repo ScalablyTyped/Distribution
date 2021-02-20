@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshLODLevel extends js.Object {
+trait MeshLODLevel extends StObject {
   
   /** Defines the distance where this level should start being displayed */
   var distance: Double = js.native
@@ -22,27 +23,15 @@ object MeshLODLevel {
   }
   
   @scala.inline
-  implicit class MeshLODLevelOps[Self <: MeshLODLevel] (val x: Self) extends AnyVal {
+  implicit class MeshLODLevelMutableBuilder[Self <: MeshLODLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMesh(value: Nullable[Mesh]): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMesh(value: Nullable[Mesh]): Self = this.set("mesh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeshNull: Self = this.set("mesh", null)
+    def setMeshNull: Self = StObject.set(x, "mesh", null)
   }
 }

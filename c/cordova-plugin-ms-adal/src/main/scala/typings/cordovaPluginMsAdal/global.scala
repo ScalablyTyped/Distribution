@@ -1,20 +1,18 @@
 package typings.cordovaPluginMsAdal
 
 import typings.cordovaPluginMsAdal.Microsoft.ADAL.PromiseAuthenticationContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object Microsoft extends js.Object {
+  object Microsoft {
     
-    @js.native
-    object ADAL extends js.Object {
+    object ADAL {
       
+      @JSGlobal("Microsoft.ADAL.AuthenticationContext")
       @js.native
       class AuthenticationContext protected ()
         extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationContext {
@@ -34,9 +32,7 @@ object global extends js.Object {
         def this(authority: String) = this()
         def this(authority: String, validateAuthority: Boolean) = this()
       }
-      /* static members */
-      @js.native
-      object AuthenticationContext extends js.Object {
+      object AuthenticationContext {
         
         /**
           * Constructs context asynchronously to use with known authority to get the token.
@@ -47,14 +43,21 @@ object global extends js.Object {
           *
           * @returns {Promise}  Promise either fulfilled with newly created authentication context or rejected with error
           */
+        /* static member */
+        @JSGlobal("Microsoft.ADAL.AuthenticationContext.createAsync")
+        @js.native
         def createAsync(authority: String): PromiseAuthenticationContext = js.native
+        @JSGlobal("Microsoft.ADAL.AuthenticationContext.createAsync")
+        @js.native
         def createAsync(authority: String, validateAuthority: Boolean): PromiseAuthenticationContext = js.native
       }
       
+      @JSGlobal("Microsoft.ADAL.AuthenticationResult")
       @js.native
       class AuthenticationResult ()
         extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationResult
       
+      @JSGlobal("Microsoft.ADAL.TokenCache")
       @js.native
       class TokenCache ()
         extends typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCache

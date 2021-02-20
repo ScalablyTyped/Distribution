@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HealthCheckObservation extends js.Object {
+trait HealthCheckObservation extends StObject {
   
   /**
     * The IP address of the Amazon Route 53 health checker that provided the failure reason in StatusReport.
@@ -31,36 +32,24 @@ object HealthCheckObservation {
   }
   
   @scala.inline
-  implicit class HealthCheckObservationOps[Self <: HealthCheckObservation] (val x: Self) extends AnyVal {
+  implicit class HealthCheckObservationMutableBuilder[Self <: HealthCheckObservation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegion(value: HealthCheckRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPAddress(value: IPAddress): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    def setStatusReport(value: StatusReport): Self = StObject.set(x, "StatusReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: HealthCheckRegion): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
-    
-    @scala.inline
-    def setStatusReport(value: StatusReport): Self = this.set("StatusReport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReport: Self = this.set("StatusReport", js.undefined)
+    def setStatusReportUndefined: Self = StObject.set(x, "StatusReport", js.undefined)
   }
 }

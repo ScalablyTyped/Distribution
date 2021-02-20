@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDrive.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Aperture extends js.Object {
+trait Aperture extends StObject {
   
   /** The aperture used to create the photo (f-number). */
   var aperture: js.UndefOr[Double] = js.native
@@ -79,144 +80,132 @@ object Aperture {
   }
   
   @scala.inline
-  implicit class ApertureOps[Self <: Aperture] (val x: Self) extends AnyVal {
+  implicit class ApertureMutableBuilder[Self <: Aperture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApertureUndefined: Self = StObject.set(x, "aperture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCameraMake(value: String): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAperture(value: Double): Self = this.set("aperture", value.asInstanceOf[js.Any])
+    def setCameraMakeUndefined: Self = StObject.set(x, "cameraMake", js.undefined)
     
     @scala.inline
-    def deleteAperture: Self = this.set("aperture", js.undefined)
+    def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraMake(value: String): Self = this.set("cameraMake", value.asInstanceOf[js.Any])
+    def setCameraModelUndefined: Self = StObject.set(x, "cameraModel", js.undefined)
     
     @scala.inline
-    def deleteCameraMake: Self = this.set("cameraMake", js.undefined)
+    def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraModel(value: String): Self = this.set("cameraModel", value.asInstanceOf[js.Any])
+    def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
     @scala.inline
-    def deleteCameraModel: Self = this.set("cameraModel", js.undefined)
+    def setExposureBias(value: Double): Self = StObject.set(x, "exposureBias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: String): Self = this.set("colorSpace", value.asInstanceOf[js.Any])
+    def setExposureBiasUndefined: Self = StObject.set(x, "exposureBias", js.undefined)
     
     @scala.inline
-    def deleteColorSpace: Self = this.set("colorSpace", js.undefined)
+    def setExposureMode(value: String): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureBias(value: Double): Self = this.set("exposureBias", value.asInstanceOf[js.Any])
+    def setExposureModeUndefined: Self = StObject.set(x, "exposureMode", js.undefined)
     
     @scala.inline
-    def deleteExposureBias: Self = this.set("exposureBias", js.undefined)
+    def setExposureTime(value: Double): Self = StObject.set(x, "exposureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureMode(value: String): Self = this.set("exposureMode", value.asInstanceOf[js.Any])
+    def setExposureTimeUndefined: Self = StObject.set(x, "exposureTime", js.undefined)
     
     @scala.inline
-    def deleteExposureMode: Self = this.set("exposureMode", js.undefined)
+    def setFlashUsed(value: Boolean): Self = StObject.set(x, "flashUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureTime(value: Double): Self = this.set("exposureTime", value.asInstanceOf[js.Any])
+    def setFlashUsedUndefined: Self = StObject.set(x, "flashUsed", js.undefined)
     
     @scala.inline
-    def deleteExposureTime: Self = this.set("exposureTime", js.undefined)
+    def setFocalLength(value: Double): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashUsed(value: Boolean): Self = this.set("flashUsed", value.asInstanceOf[js.Any])
+    def setFocalLengthUndefined: Self = StObject.set(x, "focalLength", js.undefined)
     
     @scala.inline
-    def deleteFlashUsed: Self = this.set("flashUsed", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocalLength(value: Double): Self = this.set("focalLength", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFocalLength: Self = this.set("focalLength", js.undefined)
+    def setIsoSpeed(value: Double): Self = StObject.set(x, "isoSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsoSpeedUndefined: Self = StObject.set(x, "isoSpeed", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLens(value: String): Self = StObject.set(x, "lens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoSpeed(value: Double): Self = this.set("isoSpeed", value.asInstanceOf[js.Any])
+    def setLensUndefined: Self = StObject.set(x, "lens", js.undefined)
     
     @scala.inline
-    def deleteIsoSpeed: Self = this.set("isoSpeed", js.undefined)
+    def setLocation(value: Altitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLens(value: String): Self = this.set("lens", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLens: Self = this.set("lens", js.undefined)
+    def setMaxApertureValue(value: Double): Self = StObject.set(x, "maxApertureValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Altitude): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMaxApertureValueUndefined: Self = StObject.set(x, "maxApertureValue", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMeteringMode(value: String): Self = StObject.set(x, "meteringMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxApertureValue(value: Double): Self = this.set("maxApertureValue", value.asInstanceOf[js.Any])
+    def setMeteringModeUndefined: Self = StObject.set(x, "meteringMode", js.undefined)
     
     @scala.inline
-    def deleteMaxApertureValue: Self = this.set("maxApertureValue", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeteringMode(value: String): Self = this.set("meteringMode", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteMeteringMode: Self = this.set("meteringMode", js.undefined)
+    def setSensor(value: String): Self = StObject.set(x, "sensor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSensorUndefined: Self = StObject.set(x, "sensor", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setSubjectDistance(value: Double): Self = StObject.set(x, "subjectDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensor(value: String): Self = this.set("sensor", value.asInstanceOf[js.Any])
+    def setSubjectDistanceUndefined: Self = StObject.set(x, "subjectDistance", js.undefined)
     
     @scala.inline
-    def deleteSensor: Self = this.set("sensor", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectDistance(value: Double): Self = this.set("subjectDistance", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteSubjectDistance: Self = this.set("subjectDistance", js.undefined)
+    def setWhiteBalance(value: String): Self = StObject.set(x, "whiteBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setWhiteBalanceUndefined: Self = StObject.set(x, "whiteBalance", js.undefined)
     
     @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiteBalance(value: String): Self = this.set("whiteBalance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhiteBalance: Self = this.set("whiteBalance", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

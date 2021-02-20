@@ -1,5 +1,6 @@
 package typings.eggCookies
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("egg-cookies", JSImport.Namespace)
 @js.native
-object eggCookiesRequire extends js.Object
+object eggCookiesRequire extends StObject

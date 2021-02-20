@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.ForStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,42 +37,30 @@ object ForStatement_ {
   }
   
   @scala.inline
-  implicit class ForStatement_Ops[Self <: ForStatement_] (val x: Self) extends AnyVal {
+  implicit class ForStatement_MutableBuilder[Self <: ForStatement_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInit(value: VariableDeclaration_ | Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitNull: Self = StObject.set(x, "init", null)
     
     @scala.inline
-    def setBody(value: Statement): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ForStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTestNull: Self = StObject.set(x, "test", null)
     
     @scala.inline
-    def setInit(value: VariableDeclaration_ | Expression): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setType(value: ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitNull: Self = this.set("init", null)
+    def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTest(value: Expression): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestNull: Self = this.set("test", null)
-    
-    @scala.inline
-    def setUpdate(value: Expression): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateNull: Self = this.set("update", null)
+    def setUpdateNull: Self = StObject.set(x, "update", null)
   }
 }

@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitVersionType extends js.Object
+sealed trait GitVersionType extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitVersionType")
 @js.native
-object GitVersionType extends js.Object {
+object GitVersionType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitVersionType with Double] = js.native
@@ -19,22 +19,19 @@ object GitVersionType extends js.Object {
     */
   @js.native
   sealed trait Branch extends GitVersionType
-  /* 0 */ @js.native
-  object Branch extends TopLevel[Branch with Double]
+  /* 0 */ val Branch: typings.vsoNodeApi.gitInterfacesMod.GitVersionType.Branch with Double = js.native
   
   /**
     * Interpret the version as a commit ID (SHA1)
     */
   @js.native
   sealed trait Commit extends GitVersionType
-  /* 2 */ @js.native
-  object Commit extends TopLevel[Commit with Double]
+  /* 2 */ val Commit: typings.vsoNodeApi.gitInterfacesMod.GitVersionType.Commit with Double = js.native
   
   /**
     * Interpret the version as a tag name
     */
   @js.native
   sealed trait Tag extends GitVersionType
-  /* 1 */ @js.native
-  object Tag extends TopLevel[Tag with Double]
+  /* 1 */ val Tag: typings.vsoNodeApi.gitInterfacesMod.GitVersionType.Tag with Double = js.native
 }

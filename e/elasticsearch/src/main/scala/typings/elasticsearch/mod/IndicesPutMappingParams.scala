@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,69 +36,57 @@ object IndicesPutMappingParams {
   }
   
   @scala.inline
-  implicit class IndicesPutMappingParamsOps[Self <: IndicesPutMappingParams] (val x: Self) extends AnyVal {
+  implicit class IndicesPutMappingParamsMutableBuilder[Self <: IndicesPutMappingParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
     @scala.inline
-    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
     @scala.inline
-    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
     
     @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
     @scala.inline
-    def setIncludeTypeName(value: Boolean): Self = this.set("includeTypeName", value.asInstanceOf[js.Any])
+    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeTypeName: Self = this.set("includeTypeName", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    def setUpdateAllTypes(value: Boolean): Self = StObject.set(x, "updateAllTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUpdateAllTypes(value: Boolean): Self = this.set("updateAllTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateAllTypes: Self = this.set("updateAllTypes", js.undefined)
+    def setUpdateAllTypesUndefined: Self = StObject.set(x, "updateAllTypes", js.undefined)
   }
 }

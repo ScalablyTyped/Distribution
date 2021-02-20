@@ -1,6 +1,7 @@
 package typings.winrt.Windows.UI.Core
 
 import typings.winrt.Windows.Foundation.IAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

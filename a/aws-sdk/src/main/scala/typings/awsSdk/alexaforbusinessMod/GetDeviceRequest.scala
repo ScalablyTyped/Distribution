@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeviceRequest extends js.Object {
+trait GetDeviceRequest extends StObject {
   
   /**
     * The ARN of the device for which to request details. Required.
@@ -21,24 +22,12 @@ object GetDeviceRequest {
   }
   
   @scala.inline
-  implicit class GetDeviceRequestOps[Self <: GetDeviceRequest] (val x: Self) extends AnyVal {
+  implicit class GetDeviceRequestMutableBuilder[Self <: GetDeviceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceArn(value: Arn): Self = this.set("DeviceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceArn: Self = this.set("DeviceArn", js.undefined)
+    def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
   }
 }

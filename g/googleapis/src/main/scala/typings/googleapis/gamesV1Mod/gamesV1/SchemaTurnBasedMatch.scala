@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a turn-based match resource object.
   */
 @js.native
-trait SchemaTurnBasedMatch extends js.Object {
+trait SchemaTurnBasedMatch extends StObject {
   
   /**
     * The ID of the application being played.
@@ -145,144 +146,132 @@ object SchemaTurnBasedMatch {
   }
   
   @scala.inline
-  implicit class SchemaTurnBasedMatchOps[Self <: SchemaTurnBasedMatch] (val x: Self) extends AnyVal {
+  implicit class SchemaTurnBasedMatchMutableBuilder[Self <: SchemaTurnBasedMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMatchingCriteria(value: SchemaTurnBasedAutoMatchingCriteria): Self = StObject.set(x, "autoMatchingCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setAutoMatchingCriteriaUndefined: Self = StObject.set(x, "autoMatchingCriteria", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    def setCreationDetails(value: SchemaTurnBasedMatchModification): Self = StObject.set(x, "creationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMatchingCriteria(value: SchemaTurnBasedAutoMatchingCriteria): Self = this.set("autoMatchingCriteria", value.asInstanceOf[js.Any])
+    def setCreationDetailsUndefined: Self = StObject.set(x, "creationDetails", js.undefined)
     
     @scala.inline
-    def deleteAutoMatchingCriteria: Self = this.set("autoMatchingCriteria", js.undefined)
+    def setData(value: SchemaTurnBasedMatchData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDetails(value: SchemaTurnBasedMatchModification): Self = this.set("creationDetails", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCreationDetails: Self = this.set("creationDetails", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: SchemaTurnBasedMatchData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setInviterId(value: String): Self = StObject.set(x, "inviterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInviterIdUndefined: Self = StObject.set(x, "inviterId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInviterId(value: String): Self = this.set("inviterId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInviterId: Self = this.set("inviterId", js.undefined)
+    def setLastUpdateDetails(value: SchemaTurnBasedMatchModification): Self = StObject.set(x, "lastUpdateDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastUpdateDetailsUndefined: Self = StObject.set(x, "lastUpdateDetails", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMatchId(value: String): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateDetails(value: SchemaTurnBasedMatchModification): Self = this.set("lastUpdateDetails", value.asInstanceOf[js.Any])
+    def setMatchIdUndefined: Self = StObject.set(x, "matchId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateDetails: Self = this.set("lastUpdateDetails", js.undefined)
+    def setMatchNumber(value: Double): Self = StObject.set(x, "matchNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchId(value: String): Self = this.set("matchId", value.asInstanceOf[js.Any])
+    def setMatchNumberUndefined: Self = StObject.set(x, "matchNumber", js.undefined)
     
     @scala.inline
-    def deleteMatchId: Self = this.set("matchId", js.undefined)
+    def setMatchVersion(value: Double): Self = StObject.set(x, "matchVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchNumber(value: Double): Self = this.set("matchNumber", value.asInstanceOf[js.Any])
+    def setMatchVersionUndefined: Self = StObject.set(x, "matchVersion", js.undefined)
     
     @scala.inline
-    def deleteMatchNumber: Self = this.set("matchNumber", js.undefined)
+    def setParticipants(value: js.Array[SchemaTurnBasedMatchParticipant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchVersion(value: Double): Self = this.set("matchVersion", value.asInstanceOf[js.Any])
+    def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
     @scala.inline
-    def deleteMatchVersion: Self = this.set("matchVersion", js.undefined)
+    def setParticipantsVarargs(value: SchemaTurnBasedMatchParticipant*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
     @scala.inline
-    def setParticipantsVarargs(value: SchemaTurnBasedMatchParticipant*): Self = this.set("participants", js.Array(value :_*))
+    def setPendingParticipantId(value: String): Self = StObject.set(x, "pendingParticipantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipants(value: js.Array[SchemaTurnBasedMatchParticipant]): Self = this.set("participants", value.asInstanceOf[js.Any])
+    def setPendingParticipantIdUndefined: Self = StObject.set(x, "pendingParticipantId", js.undefined)
     
     @scala.inline
-    def deleteParticipants: Self = this.set("participants", js.undefined)
+    def setPreviousMatchData(value: SchemaTurnBasedMatchData): Self = StObject.set(x, "previousMatchData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingParticipantId(value: String): Self = this.set("pendingParticipantId", value.asInstanceOf[js.Any])
+    def setPreviousMatchDataUndefined: Self = StObject.set(x, "previousMatchData", js.undefined)
     
     @scala.inline
-    def deletePendingParticipantId: Self = this.set("pendingParticipantId", js.undefined)
+    def setRematchId(value: String): Self = StObject.set(x, "rematchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousMatchData(value: SchemaTurnBasedMatchData): Self = this.set("previousMatchData", value.asInstanceOf[js.Any])
+    def setRematchIdUndefined: Self = StObject.set(x, "rematchId", js.undefined)
     
     @scala.inline
-    def deletePreviousMatchData: Self = this.set("previousMatchData", js.undefined)
+    def setResults(value: js.Array[SchemaParticipantResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRematchId(value: String): Self = this.set("rematchId", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteRematchId: Self = this.set("rematchId", js.undefined)
+    def setResultsVarargs(value: SchemaParticipantResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: SchemaParticipantResult*): Self = this.set("results", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[SchemaParticipantResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setUserMatchStatus(value: String): Self = StObject.set(x, "userMatchStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUserMatchStatusUndefined: Self = StObject.set(x, "userMatchStatus", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVariant(value: Double): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserMatchStatus(value: String): Self = this.set("userMatchStatus", value.asInstanceOf[js.Any])
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
     @scala.inline
-    def deleteUserMatchStatus: Self = this.set("userMatchStatus", js.undefined)
+    def setWithParticipantId(value: String): Self = StObject.set(x, "withParticipantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariant(value: Double): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
-    
-    @scala.inline
-    def setWithParticipantId(value: String): Self = this.set("withParticipantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithParticipantId: Self = this.set("withParticipantId", js.undefined)
+    def setWithParticipantIdUndefined: Self = StObject.set(x, "withParticipantId", js.undefined)
   }
 }

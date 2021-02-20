@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Target extends js.Object {
+trait Target extends StObject {
   
   /** The target is a shared drive. */
   var drive: js.UndefOr[Drive] = js.native
@@ -28,42 +29,30 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetOps[Self <: Target] (val x: Self) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrive(value: Drive): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveItem(value: DriveItem): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
     
     @scala.inline
-    def setDrive(value: Drive): Self = this.set("drive", value.asInstanceOf[js.Any])
+    def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     @scala.inline
-    def deleteDrive: Self = this.set("drive", js.undefined)
+    def setFileComment(value: FileComment): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveItem(value: DriveItem): Self = this.set("driveItem", value.asInstanceOf[js.Any])
+    def setFileCommentUndefined: Self = StObject.set(x, "fileComment", js.undefined)
     
     @scala.inline
-    def deleteDriveItem: Self = this.set("driveItem", js.undefined)
+    def setTeamDrive(value: TeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileComment(value: FileComment): Self = this.set("fileComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileComment: Self = this.set("fileComment", js.undefined)
-    
-    @scala.inline
-    def setTeamDrive(value: TeamDrive): Self = this.set("teamDrive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamDrive: Self = this.set("teamDrive", js.undefined)
+    def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
   }
 }

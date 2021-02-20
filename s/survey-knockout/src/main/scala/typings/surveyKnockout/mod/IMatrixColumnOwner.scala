@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,33 +36,21 @@ object IMatrixColumnOwner {
   }
   
   @scala.inline
-  implicit class IMatrixColumnOwnerOps[Self <: IMatrixColumnOwner] (val x: Self) extends AnyVal {
+  implicit class IMatrixColumnOwnerMutableBuilder[Self <: IMatrixColumnOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCellType(value: () => String): Self = StObject.set(x, "getCellType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRequiredText(value: () => String): Self = StObject.set(x, "getRequiredText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnColumnCellTypeChanged(value: MatrixDropdownColumn => Unit): Self = StObject.set(x, "onColumnCellTypeChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCellType(value: () => String): Self = this.set("getCellType", js.Any.fromFunction0(value))
+    def setOnColumnPropertyChanged(value: (MatrixDropdownColumn, String, js.Any) => Unit): Self = StObject.set(x, "onColumnPropertyChanged", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetRequiredText(value: () => String): Self = this.set("getRequiredText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnColumnCellTypeChanged(value: MatrixDropdownColumn => Unit): Self = this.set("onColumnCellTypeChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnColumnPropertyChanged(value: (MatrixDropdownColumn, String, js.Any) => Unit): Self = this.set("onColumnPropertyChanged", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOnShowInMultipleColumnsChanged(value: MatrixDropdownColumn => Unit): Self = this.set("onShowInMultipleColumnsChanged", js.Any.fromFunction1(value))
+    def setOnShowInMultipleColumnsChanged(value: MatrixDropdownColumn => Unit): Self = StObject.set(x, "onShowInMultipleColumnsChanged", js.Any.fromFunction1(value))
   }
 }

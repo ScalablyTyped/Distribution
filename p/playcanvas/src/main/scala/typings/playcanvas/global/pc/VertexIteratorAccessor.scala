@@ -2,6 +2,7 @@ package typings.playcanvas.global.pc
 
 import typings.playcanvas.anon.DataType
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

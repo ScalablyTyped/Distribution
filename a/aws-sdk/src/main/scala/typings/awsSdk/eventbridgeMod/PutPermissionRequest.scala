@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutPermissionRequest extends js.Object {
+trait PutPermissionRequest extends StObject {
   
   /**
     * The action that you are enabling the other account to perform. Currently, this must be events:PutEvents.
@@ -46,54 +47,42 @@ object PutPermissionRequest {
   }
   
   @scala.inline
-  implicit class PutPermissionRequestOps[Self <: PutPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class PutPermissionRequestMutableBuilder[Self <: PutPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setEventBusName(value: NonPartnerEventBusName): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Condition): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("Condition", js.undefined)
+    def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBusName(value: NonPartnerEventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
     
     @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipal(value: Principal): Self = this.set("Principal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipal: Self = this.set("Principal", js.undefined)
-    
-    @scala.inline
-    def setStatementId(value: StatementId): Self = this.set("StatementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatementId: Self = this.set("StatementId", js.undefined)
+    def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
   }
 }

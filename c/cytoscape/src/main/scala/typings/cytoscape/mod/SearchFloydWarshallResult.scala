@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.floydWarshall
   */
 @js.native
-trait SearchFloydWarshallResult extends js.Object {
+trait SearchFloydWarshallResult extends StObject {
   
   def distance(fromNode: CollectionSelection, toNode: NodeSingular): Double = js.native
   def distance(fromNode: CollectionSelection, toNode: Selector): Double = js.native

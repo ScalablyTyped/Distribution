@@ -1,18 +1,17 @@
 package typings.timezonecomplete
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("timezonecomplete/dist/lib/javascript", JSImport.Namespace)
-@js.native
-object javascriptMod extends js.Object {
+object javascriptMod {
   
   @js.native
-  sealed trait DateFunctions extends js.Object
+  sealed trait DateFunctions extends StObject
+  @JSImport("timezonecomplete/dist/lib/javascript", "DateFunctions")
   @js.native
-  object DateFunctions extends js.Object {
+  object DateFunctions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DateFunctions with Double] = js.native
@@ -22,15 +21,13 @@ object javascriptMod extends js.Object {
       */
     @js.native
     sealed trait Get extends DateFunctions
-    /* 0 */ @js.native
-    object Get extends TopLevel[Get with Double]
+    /* 0 */ val Get: typings.timezonecomplete.javascriptMod.DateFunctions.Get with Double = js.native
     
     /**
       * Use the Date.getUTCFullYear(), Date.getUTCMonth(), ... functions.
       */
     @js.native
     sealed trait GetUTC extends DateFunctions
-    /* 1 */ @js.native
-    object GetUTC extends TopLevel[GetUTC with Double]
+    /* 1 */ val GetUTC: typings.timezonecomplete.javascriptMod.DateFunctions.GetUTC with Double = js.native
   }
 }

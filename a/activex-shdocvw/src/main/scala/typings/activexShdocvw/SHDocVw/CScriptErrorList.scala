@@ -1,11 +1,12 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CScriptErrorList extends js.Object {
+trait CScriptErrorList extends StObject {
   
   @JSName("SHDocVw.CScriptErrorList_typekey")
   var SHDocVwDotCScriptErrorList_typekey: CScriptErrorList = js.native
@@ -64,63 +65,51 @@ object CScriptErrorList {
   }
   
   @scala.inline
-  implicit class CScriptErrorListOps[Self <: CScriptErrorList] (val x: Self) extends AnyVal {
+  implicit class CScriptErrorListMutableBuilder[Self <: CScriptErrorList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvanceError(value: () => Unit): Self = StObject.set(x, "advanceError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanAdvanceError(value: () => Double): Self = StObject.set(x, "canAdvanceError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanRetreatError(value: () => Double): Self = StObject.set(x, "canRetreatError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSHDocVwDotCScriptErrorList_typekey(value: CScriptErrorList): Self = this.set("SHDocVw.CScriptErrorList_typekey", value.asInstanceOf[js.Any])
+    def setGetAlwaysShowLockState(value: () => Double): Self = StObject.set(x, "getAlwaysShowLockState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdvanceError(value: () => Unit): Self = this.set("advanceError", js.Any.fromFunction0(value))
+    def setGetDetailsPaneOpen(value: () => Double): Self = StObject.set(x, "getDetailsPaneOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanAdvanceError(value: () => Double): Self = this.set("canAdvanceError", js.Any.fromFunction0(value))
+    def setGetErrorChar(value: () => Double): Self = StObject.set(x, "getErrorChar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanRetreatError(value: () => Double): Self = this.set("canRetreatError", js.Any.fromFunction0(value))
+    def setGetErrorCode(value: () => Double): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAlwaysShowLockState(value: () => Double): Self = this.set("getAlwaysShowLockState", js.Any.fromFunction0(value))
+    def setGetErrorLine(value: () => Double): Self = StObject.set(x, "getErrorLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDetailsPaneOpen(value: () => Double): Self = this.set("getDetailsPaneOpen", js.Any.fromFunction0(value))
+    def setGetErrorMsg(value: () => String): Self = StObject.set(x, "getErrorMsg", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorChar(value: () => Double): Self = this.set("getErrorChar", js.Any.fromFunction0(value))
+    def setGetErrorUrl(value: () => String): Self = StObject.set(x, "getErrorUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorCode(value: () => Double): Self = this.set("getErrorCode", js.Any.fromFunction0(value))
+    def setGetPerErrorDisplay(value: () => Double): Self = StObject.set(x, "getPerErrorDisplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorLine(value: () => Double): Self = this.set("getErrorLine", js.Any.fromFunction0(value))
+    def setRetreatError(value: () => Unit): Self = StObject.set(x, "retreatError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorMsg(value: () => String): Self = this.set("getErrorMsg", js.Any.fromFunction0(value))
+    def setSHDocVwDotCScriptErrorList_typekey(value: CScriptErrorList): Self = StObject.set(x, "SHDocVw.CScriptErrorList_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetErrorUrl(value: () => String): Self = this.set("getErrorUrl", js.Any.fromFunction0(value))
+    def setSetDetailsPaneOpen(value: Double => Unit): Self = StObject.set(x, "setDetailsPaneOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPerErrorDisplay(value: () => Double): Self = this.set("getPerErrorDisplay", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRetreatError(value: () => Unit): Self = this.set("retreatError", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDetailsPaneOpen(value: Double => Unit): Self = this.set("setDetailsPaneOpen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPerErrorDisplay(value: Double => Unit): Self = this.set("setPerErrorDisplay", js.Any.fromFunction1(value))
+    def setSetPerErrorDisplay(value: Double => Unit): Self = StObject.set(x, "setPerErrorDisplay", js.Any.fromFunction1(value))
   }
 }

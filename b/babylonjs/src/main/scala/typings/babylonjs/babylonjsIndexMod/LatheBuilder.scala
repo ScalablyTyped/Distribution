@@ -3,6 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.Clip
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LatheBuilder ()
   extends typings.babylonjs.buildersIndexMod.LatheBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/index", "LatheBuilder")
-@js.native
-object LatheBuilder extends js.Object {
+object LatheBuilder {
   
   /**
     * Creates lathe mesh.
@@ -36,6 +35,10 @@ object LatheBuilder extends js.Object {
     * @returns the lathe mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#lathe
     */
+  @JSImport("babylonjs/Meshes/index", "LatheBuilder.CreateLathe")
+  @js.native
   def CreateLathe(name: String, options: Clip): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "LatheBuilder.CreateLathe")
+  @js.native
   def CreateLathe(name: String, options: Clip, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

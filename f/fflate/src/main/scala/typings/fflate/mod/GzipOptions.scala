@@ -1,6 +1,7 @@
 package typings.fflate.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object GzipOptions {
   }
   
   @scala.inline
-  implicit class GzipOptionsOps[Self <: GzipOptions] (val x: Self) extends AnyVal {
+  implicit class GzipOptionsMutableBuilder[Self <: GzipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
-    
-    @scala.inline
-    def setMtime(value: Date | String | Double): Self = this.set("mtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMtime: Self = this.set("mtime", js.undefined)
+    def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
   }
 }

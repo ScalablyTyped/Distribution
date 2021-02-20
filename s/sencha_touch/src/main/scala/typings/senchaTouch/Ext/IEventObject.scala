@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext
 
 import typings.senchaTouch.Ext.event.IDom
 import typings.senchaTouch.Ext.event.IEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,60 +46,48 @@ object IEventObject {
   }
   
   @scala.inline
-  implicit class IEventObjectOps[Self <: IEventObject] (val x: Self) extends AnyVal {
+  implicit class IEventObjectMutableBuilder[Self <: IEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setStopEvent(value: () => IEvent): Self = StObject.set(x, "stopEvent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setStopPropagation(value: () => IEvent): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStopEvent(value: () => IEvent): Self = this.set("stopEvent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStopEvent: Self = this.set("stopEvent", js.undefined)
-    
-    @scala.inline
-    def setStopPropagation(value: () => IEvent): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStopPropagation: Self = this.set("stopPropagation", js.undefined)
+    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
   }
 }

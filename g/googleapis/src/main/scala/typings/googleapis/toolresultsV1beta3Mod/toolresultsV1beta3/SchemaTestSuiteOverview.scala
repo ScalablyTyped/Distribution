@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * mode for the corresponding step.
   */
 @js.native
-trait SchemaTestSuiteOverview extends js.Object {
+trait SchemaTestSuiteOverview extends StObject {
   
   /**
     * Number of test cases in error, typically set by the service by parsing
@@ -62,54 +63,42 @@ object SchemaTestSuiteOverview {
   }
   
   @scala.inline
-  implicit class SchemaTestSuiteOverviewOps[Self <: SchemaTestSuiteOverview] (val x: Self) extends AnyVal {
+  implicit class SchemaTestSuiteOverviewMutableBuilder[Self <: SchemaTestSuiteOverview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: Double): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
     @scala.inline
-    def deleteErrorCount: Self = this.set("errorCount", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCount(value: Double): Self = this.set("failureCount", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFailureCount: Self = this.set("failureCount", js.undefined)
+    def setSkippedCount(value: Double): Self = StObject.set(x, "skippedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSkippedCountUndefined: Self = StObject.set(x, "skippedCount", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkippedCount(value: Double): Self = this.set("skippedCount", value.asInstanceOf[js.Any])
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
     @scala.inline
-    def deleteSkippedCount: Self = this.set("skippedCount", js.undefined)
+    def setXmlSource(value: SchemaFileReference): Self = StObject.set(x, "xmlSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalCount(value: Double): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
-    
-    @scala.inline
-    def setXmlSource(value: SchemaFileReference): Self = this.set("xmlSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlSource: Self = this.set("xmlSource", js.undefined)
+    def setXmlSourceUndefined: Self = StObject.set(x, "xmlSource", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowAccessPolicy extends js.Object {
+trait RowAccessPolicy extends StObject {
   
   /** Output only. The time when this row access policy was created, in milliseconds since the epoch. */
   var creationTime: js.UndefOr[String] = js.native
@@ -35,48 +36,36 @@ object RowAccessPolicy {
   }
   
   @scala.inline
-  implicit class RowAccessPolicyOps[Self <: RowAccessPolicy] (val x: Self) extends AnyVal {
+  implicit class RowAccessPolicyMutableBuilder[Self <: RowAccessPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setFilterPredicate(value: String): Self = StObject.set(x, "filterPredicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFilterPredicateUndefined: Self = StObject.set(x, "filterPredicate", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPredicate(value: String): Self = this.set("filterPredicate", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteFilterPredicate: Self = this.set("filterPredicate", js.undefined)
+    def setRowAccessPolicyReference(value: RowAccessPolicyReference): Self = StObject.set(x, "rowAccessPolicyReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
-    
-    @scala.inline
-    def setRowAccessPolicyReference(value: RowAccessPolicyReference): Self = this.set("rowAccessPolicyReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowAccessPolicyReference: Self = this.set("rowAccessPolicyReference", js.undefined)
+    def setRowAccessPolicyReferenceUndefined: Self = StObject.set(x, "rowAccessPolicyReference", js.undefined)
   }
 }

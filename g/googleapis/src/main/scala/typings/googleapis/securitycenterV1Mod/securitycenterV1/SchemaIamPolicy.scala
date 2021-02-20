@@ -1,5 +1,6 @@
 package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource and cannot be modified by the user.
   */
 @js.native
-trait SchemaIamPolicy extends js.Object {
+trait SchemaIamPolicy extends StObject {
   
   /**
     * The JSON representation of the Policy associated with the asset. See
@@ -27,24 +28,12 @@ object SchemaIamPolicy {
   }
   
   @scala.inline
-  implicit class SchemaIamPolicyOps[Self <: SchemaIamPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaIamPolicyMutableBuilder[Self <: SchemaIamPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyBlob(value: String): Self = StObject.set(x, "policyBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyBlob(value: String): Self = this.set("policyBlob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyBlob: Self = this.set("policyBlob", js.undefined)
+    def setPolicyBlobUndefined: Self = StObject.set(x, "policyBlob", js.undefined)
   }
 }

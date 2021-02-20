@@ -1,6 +1,7 @@
 package typings.ipp.mod
 
 import typings.ipp.ippStrings.`cancel-job_`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`continue-job`
   - typings.ipp.ippStrings.`suspend-job`
 */
-trait JobErrorAction extends js.Object
+trait JobErrorAction extends StObject
 object JobErrorAction {
   
   @scala.inline

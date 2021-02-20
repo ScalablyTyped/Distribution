@@ -1,20 +1,20 @@
 package typings.nodeRedisPubsub
 
 import typings.redis.mod.RedisClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-redis-pubsub", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("node-redis-pubsub", JSImport.Namespace)
+  @js.native
   def apply(options: js.Object): NodeRedisPubSub = js.native
   
-  def initClient(options: js.Object): NodeRedisPubSub = js.native
-  
+  @JSImport("node-redis-pubsub", "NodeRedisPubSub")
   @js.native
-  class NodeRedisPubSub protected () extends js.Object {
+  class NodeRedisPubSub protected () extends StObject {
     def this(options: js.Object) = this()
     
     def emit(channel: String, message: String): Unit = js.native
@@ -41,4 +41,8 @@ object mod extends js.Object {
       callback: js.Function0[Unit]
     ): js.Function0[Unit] = js.native
   }
+  
+  @JSImport("node-redis-pubsub", "initClient")
+  @js.native
+  def initClient(options: js.Object): NodeRedisPubSub = js.native
 }

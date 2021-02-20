@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeApplicationVersionsMessage extends js.Object {
+trait DescribeApplicationVersionsMessage extends StObject {
   
   /**
     * Specify an application name to show only application versions for that application.
@@ -36,45 +37,33 @@ object DescribeApplicationVersionsMessage {
   }
   
   @scala.inline
-  implicit class DescribeApplicationVersionsMessageOps[Self <: DescribeApplicationVersionsMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeApplicationVersionsMessageMutableBuilder[Self <: DescribeApplicationVersionsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setVersionLabels(value: VersionLabelsList): Self = StObject.set(x, "VersionLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVersionLabelsUndefined: Self = StObject.set(x, "VersionLabels", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVersionLabelsVarargs(value: VersionLabel*): Self = this.set("VersionLabels", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersionLabels(value: VersionLabelsList): Self = this.set("VersionLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionLabels: Self = this.set("VersionLabels", js.undefined)
+    def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value :_*))
   }
 }

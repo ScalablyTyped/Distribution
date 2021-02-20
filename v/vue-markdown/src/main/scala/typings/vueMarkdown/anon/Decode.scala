@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Decode extends js.Object {
+trait Decode extends StObject {
   
   var decode: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Decode {
   }
   
   @scala.inline
-  implicit class DecodeOps[Self <: Decode] (val x: Self) extends AnyVal {
+  implicit class DecodeMutableBuilder[Self <: Decode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecode(value: js.Any): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncode(value: js.Any): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecode(value: js.Any): Self = this.set("decode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncode(value: js.Any): Self = this.set("encode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: js.Any): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParse(value: js.Any): Self = this.set("parse", value.asInstanceOf[js.Any])
+    def setParse(value: js.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
   }
 }

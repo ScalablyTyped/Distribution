@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorMinimapLayoutInfo extends js.Object {
+trait EditorMinimapLayoutInfo extends StObject {
   
   val minimapCanvasInnerHeight: Double = js.native
   
@@ -50,51 +51,39 @@ object EditorMinimapLayoutInfo {
   }
   
   @scala.inline
-  implicit class EditorMinimapLayoutInfoOps[Self <: EditorMinimapLayoutInfo] (val x: Self) extends AnyVal {
+  implicit class EditorMinimapLayoutInfoMutableBuilder[Self <: EditorMinimapLayoutInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimapCanvasInnerHeight(value: Double): Self = StObject.set(x, "minimapCanvasInnerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimapCanvasInnerWidth(value: Double): Self = StObject.set(x, "minimapCanvasInnerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimapCanvasOuterHeight(value: Double): Self = StObject.set(x, "minimapCanvasOuterHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapCanvasInnerHeight(value: Double): Self = this.set("minimapCanvasInnerHeight", value.asInstanceOf[js.Any])
+    def setMinimapCanvasOuterWidth(value: Double): Self = StObject.set(x, "minimapCanvasOuterWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapCanvasInnerWidth(value: Double): Self = this.set("minimapCanvasInnerWidth", value.asInstanceOf[js.Any])
+    def setMinimapHeightIsEditorHeight(value: Boolean): Self = StObject.set(x, "minimapHeightIsEditorHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapCanvasOuterHeight(value: Double): Self = this.set("minimapCanvasOuterHeight", value.asInstanceOf[js.Any])
+    def setMinimapIsSampling(value: Boolean): Self = StObject.set(x, "minimapIsSampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapCanvasOuterWidth(value: Double): Self = this.set("minimapCanvasOuterWidth", value.asInstanceOf[js.Any])
+    def setMinimapLeft(value: Double): Self = StObject.set(x, "minimapLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapHeightIsEditorHeight(value: Boolean): Self = this.set("minimapHeightIsEditorHeight", value.asInstanceOf[js.Any])
+    def setMinimapLineHeight(value: Double): Self = StObject.set(x, "minimapLineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapIsSampling(value: Boolean): Self = this.set("minimapIsSampling", value.asInstanceOf[js.Any])
+    def setMinimapScale(value: Double): Self = StObject.set(x, "minimapScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapLeft(value: Double): Self = this.set("minimapLeft", value.asInstanceOf[js.Any])
+    def setMinimapWidth(value: Double): Self = StObject.set(x, "minimapWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimapLineHeight(value: Double): Self = this.set("minimapLineHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimapScale(value: Double): Self = this.set("minimapScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimapWidth(value: Double): Self = this.set("minimapWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderMinimap(value: RenderMinimap): Self = this.set("renderMinimap", value.asInstanceOf[js.Any])
+    def setRenderMinimap(value: RenderMinimap): Self = StObject.set(x, "renderMinimap", value.asInstanceOf[js.Any])
   }
 }

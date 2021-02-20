@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   */
 @js.native
-trait RotationDescriptor extends js.Object {
+trait RotationDescriptor extends StObject {
   
   /**
     * This is the angle for rotation of this {@link Shape} . The shape is rotated counter-clockwise around the center of the bounding box.
@@ -37,24 +38,12 @@ object RotationDescriptor {
   }
   
   @scala.inline
-  implicit class RotationDescriptorOps[Self <: RotationDescriptor] (val x: Self) extends AnyVal {
+  implicit class RotationDescriptorMutableBuilder[Self <: RotationDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRotateAngle(value: Double): Self = this.set("RotateAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShearAngle(value: Double): Self = this.set("ShearAngle", value.asInstanceOf[js.Any])
+    def setShearAngle(value: Double): Self = StObject.set(x, "ShearAngle", value.asInstanceOf[js.Any])
   }
 }

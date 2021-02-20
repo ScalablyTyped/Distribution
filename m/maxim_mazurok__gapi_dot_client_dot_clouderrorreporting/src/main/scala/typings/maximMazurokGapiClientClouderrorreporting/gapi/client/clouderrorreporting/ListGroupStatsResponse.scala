@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderrorreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGroupStatsResponse extends js.Object {
+trait ListGroupStatsResponse extends StObject {
   
   /** The error group stats which match the given request. */
   var errorGroupStats: js.UndefOr[js.Array[ErrorGroupStats]] = js.native
@@ -28,39 +29,27 @@ object ListGroupStatsResponse {
   }
   
   @scala.inline
-  implicit class ListGroupStatsResponseOps[Self <: ListGroupStatsResponse] (val x: Self) extends AnyVal {
+  implicit class ListGroupStatsResponseMutableBuilder[Self <: ListGroupStatsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorGroupStats(value: js.Array[ErrorGroupStats]): Self = StObject.set(x, "errorGroupStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorGroupStatsUndefined: Self = StObject.set(x, "errorGroupStats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorGroupStatsVarargs(value: ErrorGroupStats*): Self = StObject.set(x, "errorGroupStats", js.Array(value :_*))
     
     @scala.inline
-    def setErrorGroupStatsVarargs(value: ErrorGroupStats*): Self = this.set("errorGroupStats", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorGroupStats(value: js.Array[ErrorGroupStats]): Self = this.set("errorGroupStats", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteErrorGroupStats: Self = this.set("errorGroupStats", js.undefined)
+    def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTimeRangeBegin(value: String): Self = this.set("timeRangeBegin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRangeBegin: Self = this.set("timeRangeBegin", js.undefined)
+    def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
   }
 }

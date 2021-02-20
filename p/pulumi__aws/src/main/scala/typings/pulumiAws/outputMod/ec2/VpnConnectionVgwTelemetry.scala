@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnConnectionVgwTelemetry extends js.Object {
+trait VpnConnectionVgwTelemetry extends StObject {
   
   var acceptedRouteCount: Double = js.native
   
@@ -32,33 +33,21 @@ object VpnConnectionVgwTelemetry {
   }
   
   @scala.inline
-  implicit class VpnConnectionVgwTelemetryOps[Self <: VpnConnectionVgwTelemetry] (val x: Self) extends AnyVal {
+  implicit class VpnConnectionVgwTelemetryMutableBuilder[Self <: VpnConnectionVgwTelemetry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptedRouteCount(value: Double): Self = StObject.set(x, "acceptedRouteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastStatusChange(value: String): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutsideIpAddress(value: String): Self = StObject.set(x, "outsideIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedRouteCount(value: Double): Self = this.set("acceptedRouteCount", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusChange(value: String): Self = this.set("lastStatusChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutsideIpAddress(value: String): Self = this.set("outsideIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistrictSearch extends js.Object {
+trait DistrictSearch extends StObject {
   
   def search(keywords: String): Unit = js.native
   def search(keywords: String, callback: js.UndefOr[scala.Nothing], opts: DistrictSearchOptions): Unit = js.native

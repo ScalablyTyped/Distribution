@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The TLS settings for the server.
   */
 @js.native
-trait SchemaServerTlsSettings extends js.Object {
+trait SchemaServerTlsSettings extends StObject {
   
   /**
     * Configures the mechanism to obtain security certificates and identity
@@ -40,39 +41,27 @@ object SchemaServerTlsSettings {
   }
   
   @scala.inline
-  implicit class SchemaServerTlsSettingsOps[Self <: SchemaServerTlsSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaServerTlsSettingsMutableBuilder[Self <: SchemaServerTlsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProxyTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "proxyTlsContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProxyTlsContextUndefined: Self = StObject.set(x, "proxyTlsContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyTlsContext(value: SchemaTlsContext): Self = this.set("proxyTlsContext", value.asInstanceOf[js.Any])
+    def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
     
     @scala.inline
-    def deleteProxyTlsContext: Self = this.set("proxyTlsContext", js.undefined)
+    def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
     
     @scala.inline
-    def setSubjectAltNamesVarargs(value: String*): Self = this.set("subjectAltNames", js.Array(value :_*))
+    def setTlsMode(value: String): Self = StObject.set(x, "tlsMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectAltNames(value: js.Array[String]): Self = this.set("subjectAltNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectAltNames: Self = this.set("subjectAltNames", js.undefined)
-    
-    @scala.inline
-    def setTlsMode(value: String): Self = this.set("tlsMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsMode: Self = this.set("tlsMode", js.undefined)
+    def setTlsModeUndefined: Self = StObject.set(x, "tlsMode", js.undefined)
   }
 }

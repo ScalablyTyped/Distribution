@@ -1,10 +1,18 @@
 package typings.cytoscape
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def apply(): typings.cytoscape.mod.Core = typings.cytoscape.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.cytoscape.mod.Core]
+  @scala.inline
+  def apply(extensionName: java.lang.String, foo: java.lang.String, bar: js.Any): typings.cytoscape.mod.Core = (typings.cytoscape.mod.^.asInstanceOf[js.Dynamic].apply(extensionName.asInstanceOf[js.Any], foo.asInstanceOf[js.Any], bar.asInstanceOf[js.Any])).asInstanceOf[typings.cytoscape.mod.Core]
+  @scala.inline
+  def apply(options: typings.cytoscape.mod.CytoscapeOptions): typings.cytoscape.mod.Core = typings.cytoscape.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.cytoscape.mod.Core]
   
   /**
     * http://js.cytoscape.org/#collection/style
@@ -202,4 +210,21 @@ package object mod {
   type WeightFn = js.Function1[/* edge */ typings.cytoscape.mod.EdgeCollection, scala.Double]
   
   type ZoomOptions = typings.cytoscape.mod.ZoomOptionsLevel with (typings.cytoscape.mod.ZoomOptionsModel | typings.cytoscape.mod.ZoomOptionsRendered)
+  
+  /**
+    * Register imported extension into cytoscape
+    * @param module Entry point for the extension, got by module = require('cy-ext')
+    * or by import module from 'cy-ext'
+    * http://js.cytoscape.org/#extensions
+    */
+  @scala.inline
+  def use(module: typings.cytoscape.mod.Ext): scala.Unit = typings.cytoscape.mod.^.asInstanceOf[js.Dynamic].applyDynamic("use")(module.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+  
+  /**
+    * Surpress Cytoscape internal warnings globally with a flag.
+    * @param condition If true, all Cytoscape warnings are surpressed.
+    * https://js.cytoscape.org/#core/initialisation
+    */
+  @scala.inline
+  def warnings(condition: scala.Boolean): scala.Unit = typings.cytoscape.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warnings")(condition.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowTemplatePlacement extends js.Object {
+trait WorkflowTemplatePlacement extends StObject {
   
   /** Optional. A selector that chooses target cluster for jobs based on metadata.The selector is evaluated at the time each job is submitted. */
   var clusterSelector: js.UndefOr[ClusterSelector] = js.native
@@ -22,30 +23,18 @@ object WorkflowTemplatePlacement {
   }
   
   @scala.inline
-  implicit class WorkflowTemplatePlacementOps[Self <: WorkflowTemplatePlacement] (val x: Self) extends AnyVal {
+  implicit class WorkflowTemplatePlacementMutableBuilder[Self <: WorkflowTemplatePlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterSelector(value: ClusterSelector): Self = StObject.set(x, "clusterSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterSelectorUndefined: Self = StObject.set(x, "clusterSelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedCluster(value: ManagedCluster): Self = StObject.set(x, "managedCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSelector(value: ClusterSelector): Self = this.set("clusterSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterSelector: Self = this.set("clusterSelector", js.undefined)
-    
-    @scala.inline
-    def setManagedCluster(value: ManagedCluster): Self = this.set("managedCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedCluster: Self = this.set("managedCluster", js.undefined)
+    def setManagedClusterUndefined: Self = StObject.set(x, "managedCluster", js.undefined)
   }
 }

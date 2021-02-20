@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/commands-registry/
 @js.native
-trait CommandsRegistry extends js.Object {
+trait CommandsRegistry extends StObject {
   
   def invoke(name: String, arguments: js.Any*): js.Promise[_] = js.native
   

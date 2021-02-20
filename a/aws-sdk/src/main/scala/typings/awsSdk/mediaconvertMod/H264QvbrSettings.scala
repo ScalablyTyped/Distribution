@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait H264QvbrSettings extends js.Object {
+trait H264QvbrSettings extends StObject {
   
   /**
     * Use this setting only when Rate control mode is QVBR and Quality tuning level is Multi-pass HQ. For Max average bitrate values suited to the complexity of your input video, the service limits the average bitrate of the video part of this output to the value that you choose. That is, the total size of the video element is less than or equal to the value you set multiplied by the number of seconds of encoded output.
@@ -31,36 +32,24 @@ object H264QvbrSettings {
   }
   
   @scala.inline
-  implicit class H264QvbrSettingsOps[Self <: H264QvbrSettings] (val x: Self) extends AnyVal {
+  implicit class H264QvbrSettingsMutableBuilder[Self <: H264QvbrSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAverageBitrate(value: integerMin1000Max1152000000): Self = StObject.set(x, "MaxAverageBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAverageBitrateUndefined: Self = StObject.set(x, "MaxAverageBitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAverageBitrate(value: integerMin1000Max1152000000): Self = this.set("MaxAverageBitrate", value.asInstanceOf[js.Any])
+    def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = StObject.set(x, "QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxAverageBitrate: Self = this.set("MaxAverageBitrate", js.undefined)
+    def setQvbrQualityLevelFineTuneUndefined: Self = StObject.set(x, "QvbrQualityLevelFineTune", js.undefined)
     
     @scala.inline
-    def setQvbrQualityLevel(value: integerMin1Max10): Self = this.set("QvbrQualityLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQvbrQualityLevel: Self = this.set("QvbrQualityLevel", js.undefined)
-    
-    @scala.inline
-    def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = this.set("QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQvbrQualityLevelFineTune: Self = this.set("QvbrQualityLevelFineTune", js.undefined)
+    def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
   }
 }

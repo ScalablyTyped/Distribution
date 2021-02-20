@@ -4,13 +4,12 @@ import typings.googleCloudCommon.mod.ServiceObject
 import typings.googleCloudCommon.serviceObjectMod.Metadata
 import typings.googleCloudStorage.storageMod.Storage
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@google-cloud/storage/build/src/channel", JSImport.Namespace)
-@js.native
-object channelMod extends js.Object {
+object channelMod {
   
   /**
     * Create a channel object to interact with a Cloud Storage channel.
@@ -27,6 +26,7 @@ object channelMod extends js.Object {
     * const storage = new Storage();
     * const channel = storage.channel('id', 'resource-id');
     */
+  @JSImport("@google-cloud/storage/build/src/channel", "Channel")
   @js.native
   class Channel protected ()
     extends ServiceObject[js.Any] {

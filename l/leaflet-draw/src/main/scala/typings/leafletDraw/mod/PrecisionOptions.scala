@@ -1,11 +1,12 @@
 package typings.leafletDraw.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrecisionOptions extends js.Object {
+trait PrecisionOptions extends StObject {
   
   var ac: js.UndefOr[Double] = js.native
   
@@ -32,66 +33,54 @@ object PrecisionOptions {
   }
   
   @scala.inline
-  implicit class PrecisionOptionsOps[Self <: PrecisionOptions] (val x: Self) extends AnyVal {
+  implicit class PrecisionOptionsMutableBuilder[Self <: PrecisionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAc(value: Double): Self = StObject.set(x, "ac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcUndefined: Self = StObject.set(x, "ac", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFt(value: Double): Self = StObject.set(x, "ft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAc(value: Double): Self = this.set("ac", value.asInstanceOf[js.Any])
+    def setFtUndefined: Self = StObject.set(x, "ft", js.undefined)
     
     @scala.inline
-    def deleteAc: Self = this.set("ac", js.undefined)
+    def setHa(value: Double): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFt(value: Double): Self = this.set("ft", value.asInstanceOf[js.Any])
+    def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
     
     @scala.inline
-    def deleteFt: Self = this.set("ft", js.undefined)
+    def setKm(value: Double): Self = StObject.set(x, "km", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHa(value: Double): Self = this.set("ha", value.asInstanceOf[js.Any])
+    def setKmUndefined: Self = StObject.set(x, "km", js.undefined)
     
     @scala.inline
-    def deleteHa: Self = this.set("ha", js.undefined)
+    def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKm(value: Double): Self = this.set("km", value.asInstanceOf[js.Any])
+    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
     @scala.inline
-    def deleteKm: Self = this.set("km", js.undefined)
+    def setMi(value: Double): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: Double): Self = this.set("m", value.asInstanceOf[js.Any])
+    def setMiUndefined: Self = StObject.set(x, "mi", js.undefined)
     
     @scala.inline
-    def deleteM: Self = this.set("m", js.undefined)
+    def setNm(value: Double): Self = StObject.set(x, "nm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMi(value: Double): Self = this.set("mi", value.asInstanceOf[js.Any])
+    def setNmUndefined: Self = StObject.set(x, "nm", js.undefined)
     
     @scala.inline
-    def deleteMi: Self = this.set("mi", js.undefined)
+    def setYd(value: Double): Self = StObject.set(x, "yd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNm(value: Double): Self = this.set("nm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNm: Self = this.set("nm", js.undefined)
-    
-    @scala.inline
-    def setYd(value: Double): Self = this.set("yd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYd: Self = this.set("yd", js.undefined)
+    def setYdUndefined: Self = StObject.set(x, "yd", js.undefined)
   }
 }

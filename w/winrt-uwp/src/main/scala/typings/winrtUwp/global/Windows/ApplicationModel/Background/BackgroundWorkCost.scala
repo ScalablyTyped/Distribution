@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class BackgroundWorkCost ()
   extends typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCost
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundWorkCost")
-@js.native
-object BackgroundWorkCost extends js.Object {
+object BackgroundWorkCost {
+  
+  @JSGlobal("Windows.ApplicationModel.Background.BackgroundWorkCost")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Retrieves a hint about resource availability for background tasks. */
-  var currentBackgroundWorkCost: typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue = js.native
+  /* static member */
+  @JSGlobal("Windows.ApplicationModel.Background.BackgroundWorkCost.currentBackgroundWorkCost")
+  @js.native
+  def currentBackgroundWorkCost: typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue = js.native
+  @scala.inline
+  def currentBackgroundWorkCost_=(x: typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundWorkCostValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentBackgroundWorkCost")(x.asInstanceOf[js.Any])
 }

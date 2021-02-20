@@ -1,11 +1,12 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapOptions extends js.Object {
+trait SourceMapOptions extends StObject {
   
   /**
     * Indicates that PostCSS should add annotation comments to the CSS. By default,
@@ -61,48 +62,36 @@ object SourceMapOptions {
   }
   
   @scala.inline
-  implicit class SourceMapOptionsOps[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
+  implicit class SourceMapOptionsMutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: String | Boolean): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation(value: String | Boolean): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteAnnotation: Self = this.set("annotation", js.undefined)
+    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setSourcesContent(value: Boolean): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrev(value: js.Any): Self = this.set("prev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
-    
-    @scala.inline
-    def setSourcesContent(value: Boolean): Self = this.set("sourcesContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcesContent: Self = this.set("sourcesContent", js.undefined)
+    def setSourcesContentUndefined: Self = StObject.set(x, "sourcesContent", js.undefined)
   }
 }

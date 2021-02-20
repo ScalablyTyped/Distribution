@@ -1,18 +1,19 @@
 package typings.branca
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("branca", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("branca", JSImport.Namespace)
+  @js.native
   def apply(key: String): Branca = js.native
   
   @js.native
-  trait Branca extends js.Object {
+  trait Branca extends StObject {
     
     def decode(token: String): Buffer = js.native
     def decode(token: String, ttl: Double): Buffer = js.native

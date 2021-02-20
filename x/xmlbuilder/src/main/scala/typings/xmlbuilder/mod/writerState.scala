@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "writerState")
 @js.native
-object writerState extends js.Object {
+object writerState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WriterState_ with Double] = js.native

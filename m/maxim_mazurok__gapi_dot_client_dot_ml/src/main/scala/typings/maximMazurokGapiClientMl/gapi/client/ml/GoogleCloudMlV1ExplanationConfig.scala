@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1ExplanationConfig extends js.Object {
+trait GoogleCloudMlV1ExplanationConfig extends StObject {
   
   /**
     * Attributes credit by computing the Aumann-Shapley value taking advantage of the model's fully differentiable structure. Refer to this paper for more details:
@@ -34,36 +35,24 @@ object GoogleCloudMlV1ExplanationConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1ExplanationConfigOps[Self <: GoogleCloudMlV1ExplanationConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1ExplanationConfigMutableBuilder[Self <: GoogleCloudMlV1ExplanationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntegratedGradientsAttribution(value: GoogleCloudMlV1IntegratedGradientsAttribution): Self = StObject.set(x, "integratedGradientsAttribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntegratedGradientsAttributionUndefined: Self = StObject.set(x, "integratedGradientsAttribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSampledShapleyAttribution(value: GoogleCloudMlV1SampledShapleyAttribution): Self = StObject.set(x, "sampledShapleyAttribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegratedGradientsAttribution(value: GoogleCloudMlV1IntegratedGradientsAttribution): Self = this.set("integratedGradientsAttribution", value.asInstanceOf[js.Any])
+    def setSampledShapleyAttributionUndefined: Self = StObject.set(x, "sampledShapleyAttribution", js.undefined)
     
     @scala.inline
-    def deleteIntegratedGradientsAttribution: Self = this.set("integratedGradientsAttribution", js.undefined)
+    def setXraiAttribution(value: GoogleCloudMlV1XraiAttribution): Self = StObject.set(x, "xraiAttribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampledShapleyAttribution(value: GoogleCloudMlV1SampledShapleyAttribution): Self = this.set("sampledShapleyAttribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampledShapleyAttribution: Self = this.set("sampledShapleyAttribution", js.undefined)
-    
-    @scala.inline
-    def setXraiAttribution(value: GoogleCloudMlV1XraiAttribution): Self = this.set("xraiAttribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXraiAttribution: Self = this.set("xraiAttribution", js.undefined)
+    def setXraiAttributionUndefined: Self = StObject.set(x, "xraiAttribution", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogappregistryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateResourceResponse extends js.Object {
+trait DisassociateResourceResponse extends StObject {
   
   /**
     * The Amazon resource name (ARN) that specifies the application.
@@ -26,30 +27,18 @@ object DisassociateResourceResponse {
   }
   
   @scala.inline
-  implicit class DisassociateResourceResponseOps[Self <: DisassociateResourceResponse] (val x: Self) extends AnyVal {
+  implicit class DisassociateResourceResponseMutableBuilder[Self <: DisassociateResourceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationArn(value: ApplicationArn): Self = this.set("applicationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationArn: Self = this.set("applicationArn", js.undefined)
-    
-    @scala.inline
-    def setResourceArn(value: Arn): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
   }
 }

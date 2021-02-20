@@ -1,12 +1,13 @@
 package typings.nodeHueApi.anon
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Createdate extends js.Object {
+trait Createdate extends StObject {
   
   var `create date`: Date = js.native
   
@@ -25,27 +26,15 @@ object Createdate {
   }
   
   @scala.inline
-  implicit class CreatedateOps[Self <: Createdate] (val x: Self) extends AnyVal {
+  implicit class CreatedateMutableBuilder[Self <: Createdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setCreate date`(value: Date): Self = StObject.set(x, "create date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setLast use date`(value: Date): Self = StObject.set(x, "last use date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `setCreate date`(value: Date): Self = this.set("create date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setLast use date`(value: Date): Self = this.set("last use date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

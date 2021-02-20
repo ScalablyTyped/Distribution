@@ -3,14 +3,14 @@ package typings.uirouterCore
 import typings.std.RegExp
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import typings.uirouterCore.uirouterCoreStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/params/paramType", JSImport.Namespace)
-@js.native
-object paramTypeMod extends js.Object {
+object paramTypeMod {
   
+  @JSImport("@uirouter/core/lib/params/paramType", "ParamType")
   @js.native
   class ParamType protected () extends ParamTypeDefinition {
     /**

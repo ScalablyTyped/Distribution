@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderLegacyPromotion extends js.Object {
+trait SchemaOrderLegacyPromotion extends StObject {
   
   var benefits: js.UndefOr[js.Array[SchemaOrderLegacyPromotionBenefit]] = js.native
   
@@ -56,63 +57,51 @@ object SchemaOrderLegacyPromotion {
   }
   
   @scala.inline
-  implicit class SchemaOrderLegacyPromotionOps[Self <: SchemaOrderLegacyPromotion] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderLegacyPromotionMutableBuilder[Self <: SchemaOrderLegacyPromotion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBenefits(value: js.Array[SchemaOrderLegacyPromotionBenefit]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBenefitsUndefined: Self = StObject.set(x, "benefits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBenefitsVarargs(value: SchemaOrderLegacyPromotionBenefit*): Self = StObject.set(x, "benefits", js.Array(value :_*))
     
     @scala.inline
-    def setBenefitsVarargs(value: SchemaOrderLegacyPromotionBenefit*): Self = this.set("benefits", js.Array(value :_*))
+    def setEffectiveDates(value: String): Self = StObject.set(x, "effectiveDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBenefits(value: js.Array[SchemaOrderLegacyPromotionBenefit]): Self = this.set("benefits", value.asInstanceOf[js.Any])
+    def setEffectiveDatesUndefined: Self = StObject.set(x, "effectiveDates", js.undefined)
     
     @scala.inline
-    def deleteBenefits: Self = this.set("benefits", js.undefined)
+    def setGenericRedemptionCode(value: String): Self = StObject.set(x, "genericRedemptionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveDates(value: String): Self = this.set("effectiveDates", value.asInstanceOf[js.Any])
+    def setGenericRedemptionCodeUndefined: Self = StObject.set(x, "genericRedemptionCode", js.undefined)
     
     @scala.inline
-    def deleteEffectiveDates: Self = this.set("effectiveDates", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenericRedemptionCode(value: String): Self = this.set("genericRedemptionCode", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGenericRedemptionCode: Self = this.set("genericRedemptionCode", js.undefined)
+    def setLongTitle(value: String): Self = StObject.set(x, "longTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLongTitleUndefined: Self = StObject.set(x, "longTitle", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProductApplicability(value: String): Self = StObject.set(x, "productApplicability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongTitle(value: String): Self = this.set("longTitle", value.asInstanceOf[js.Any])
+    def setProductApplicabilityUndefined: Self = StObject.set(x, "productApplicability", js.undefined)
     
     @scala.inline
-    def deleteLongTitle: Self = this.set("longTitle", js.undefined)
+    def setRedemptionChannel(value: String): Self = StObject.set(x, "redemptionChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductApplicability(value: String): Self = this.set("productApplicability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductApplicability: Self = this.set("productApplicability", js.undefined)
-    
-    @scala.inline
-    def setRedemptionChannel(value: String): Self = this.set("redemptionChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedemptionChannel: Self = this.set("redemptionChannel", js.undefined)
+    def setRedemptionChannelUndefined: Self = StObject.set(x, "redemptionChannel", js.undefined)
   }
 }

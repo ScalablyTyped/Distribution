@@ -1,16 +1,17 @@
 package typings.kafkaNode.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProduceRequest extends js.Object {
+trait ProduceRequest extends StObject {
   
   var attributes: js.UndefOr[Double] = js.native
   
-   // string[] | Array<KeyedMessage> | string | KeyedMessage
+  // string[] | Array<KeyedMessage> | string | KeyedMessage
   var key: js.UndefOr[String | Buffer] = js.native
   
   var messages: js.Any = js.native
@@ -28,42 +29,30 @@ object ProduceRequest {
   }
   
   @scala.inline
-  implicit class ProduceRequestOps[Self <: ProduceRequest] (val x: Self) extends AnyVal {
+  implicit class ProduceRequestMutableBuilder[Self <: ProduceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Double): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: js.Any): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Double): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
     @scala.inline
-    def setKey(value: String | Buffer): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setPartition(value: Double): Self = this.set("partition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartition: Self = this.set("partition", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

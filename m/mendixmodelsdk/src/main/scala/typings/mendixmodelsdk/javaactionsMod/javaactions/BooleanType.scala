@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,16 +44,20 @@ class BooleanType protected () extends PrimitiveType {
   @JSName("containerAsJavaAction")
   def containerAsJavaAction_MBooleanType: JavaAction = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType")
-@js.native
-object BooleanType extends js.Object {
+object BooleanType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new BooleanType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.create")
+  @js.native
   def create(model: IModel): BooleanType = js.native
   
   /**
@@ -63,6 +68,9 @@ object BooleanType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.createInBasicParameterTypeUnderType")
+  @js.native
   def createInBasicParameterTypeUnderType(container: BasicParameterType): BooleanType = js.native
   
   /**
@@ -73,6 +81,9 @@ object BooleanType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.6.0 to 6.6.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.createInJavaActionParameterUnderJavaType")
+  @js.native
   def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): BooleanType = js.native
   
   /**
@@ -83,9 +94,22 @@ object BooleanType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.6.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.createInJavaActionUnderJavaReturnType")
+  @js.native
   def createInJavaActionUnderJavaReturnType(container: JavaAction): BooleanType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

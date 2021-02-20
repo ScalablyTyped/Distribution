@@ -1,18 +1,21 @@
 package typings.jscodeshift
 
 import typings.jscodeshift.collectionMod.Collection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jscodeshift/src/collections/Node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
   
+  @JSImport("jscodeshift/src/collections/Node", "register")
+  @js.native
   def register(): Unit = js.native
   
+  type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
+  
   @js.native
-  trait MutationMethods[N] extends js.Object {
+  trait MutationMethods[N] extends StObject {
     
     /**
       * Inserts a new node after the current one.
@@ -37,7 +40,7 @@ object nodeMod extends js.Object {
   }
   
   @js.native
-  trait TraversalMethods extends js.Object {
+  trait TraversalMethods extends StObject {
     
     /**
       * Traverse the AST up and finds the closest node of the provided type.
@@ -84,6 +87,4 @@ object nodeMod extends js.Object {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
       ] = js.native
   }
-  
-  type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
 }

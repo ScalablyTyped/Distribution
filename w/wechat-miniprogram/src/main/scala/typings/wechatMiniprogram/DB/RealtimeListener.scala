@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RealtimeListener extends js.Object {
+trait RealtimeListener extends StObject {
   
   // "And Now His Watch Is Ended"
   def close(): js.Promise[Unit] = js.native
@@ -19,21 +20,9 @@ object RealtimeListener {
   }
   
   @scala.inline
-  implicit class RealtimeListenerOps[Self <: RealtimeListener] (val x: Self) extends AnyVal {
+  implicit class RealtimeListenerMutableBuilder[Self <: RealtimeListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = this.set("close", js.Any.fromFunction0(value))
+    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

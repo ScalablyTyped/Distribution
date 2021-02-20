@@ -4,13 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service describes the properties that are used when using the {@link XGraphicProvider} interface methods */
 @js.native
-trait MediaProperties extends js.Object {
+trait MediaProperties extends StObject {
   
   /** Additional properties that will be passed to the appropriate filter module. */
   var FilterData: PropertyValues = js.native
@@ -72,36 +73,24 @@ object MediaProperties {
   }
   
   @scala.inline
-  implicit class MediaPropertiesOps[Self <: MediaProperties] (val x: Self) extends AnyVal {
+  implicit class MediaPropertiesMutableBuilder[Self <: MediaProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterData(value: PropertyValues): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterDataVarargs(value: PropertyValue*): Self = StObject.set(x, "FilterData", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDataVarargs(value: PropertyValue*): Self = this.set("FilterData", js.Array(value :_*))
+    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterData(value: PropertyValues): Self = this.set("FilterData", value.asInstanceOf[js.Any])
+    def setOutputStream(value: XStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStream(value: XInputStream): Self = this.set("InputStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("MimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputStream(value: XStream): Self = this.set("OutputStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

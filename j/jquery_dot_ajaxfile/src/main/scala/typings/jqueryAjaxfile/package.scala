@@ -1,5 +1,6 @@
 package typings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +19,6 @@ package object jqueryAjaxfile {
     /* repeated */ typings.jqueryAjaxfile.JQueryPromiseCallback[js.Any] | js.Array[typings.jqueryAjaxfile.JQueryPromiseCallback[js.Any]], 
     typings.jqueryAjaxfile.JQueryPromise[U]
   ]
-  
-  type Mocha = typings.jqueryAjaxfile.Mocha_
   
   type MochaDone = js.Function1[/* error */ js.UndefOr[typings.std.Error], scala.Unit]
 }

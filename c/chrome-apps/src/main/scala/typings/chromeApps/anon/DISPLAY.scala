@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chromeAppsStrings.display_
 import typings.chromeApps.chromeAppsStrings.system_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DISPLAY extends js.Object {
+trait DISPLAY extends StObject {
   
   var DISPLAY: display_ = js.native
   
@@ -22,24 +23,12 @@ object DISPLAY {
   }
   
   @scala.inline
-  implicit class DISPLAYOps[Self <: DISPLAY] (val x: Self) extends AnyVal {
+  implicit class DISPLAYMutableBuilder[Self <: DISPLAY] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDISPLAY(value: display_): Self = StObject.set(x, "DISPLAY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDISPLAY(value: display_): Self = this.set("DISPLAY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSYSTEM(value: system_): Self = this.set("SYSTEM", value.asInstanceOf[js.Any])
+    def setSYSTEM(value: system_): Self = StObject.set(x, "SYSTEM", value.asInstanceOf[js.Any])
   }
 }

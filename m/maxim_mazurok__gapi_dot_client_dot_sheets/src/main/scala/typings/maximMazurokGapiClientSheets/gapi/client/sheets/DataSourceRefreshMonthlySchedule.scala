@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceRefreshMonthlySchedule extends js.Object {
+trait DataSourceRefreshMonthlySchedule extends StObject {
   
   /** Days of the month to refresh. Only 1-28 are supported, mapping to the 1st to the 28th day. At lesat one day must be specified. */
   var daysOfMonth: js.UndefOr[js.Array[Double]] = js.native
@@ -22,33 +23,21 @@ object DataSourceRefreshMonthlySchedule {
   }
   
   @scala.inline
-  implicit class DataSourceRefreshMonthlyScheduleOps[Self <: DataSourceRefreshMonthlySchedule] (val x: Self) extends AnyVal {
+  implicit class DataSourceRefreshMonthlyScheduleMutableBuilder[Self <: DataSourceRefreshMonthlySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysOfMonth(value: js.Array[Double]): Self = StObject.set(x, "daysOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysOfMonthUndefined: Self = StObject.set(x, "daysOfMonth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDaysOfMonthVarargs(value: Double*): Self = StObject.set(x, "daysOfMonth", js.Array(value :_*))
     
     @scala.inline
-    def setDaysOfMonthVarargs(value: Double*): Self = this.set("daysOfMonth", js.Array(value :_*))
+    def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysOfMonth(value: js.Array[Double]): Self = this.set("daysOfMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDaysOfMonth: Self = this.set("daysOfMonth", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: TimeOfDay): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

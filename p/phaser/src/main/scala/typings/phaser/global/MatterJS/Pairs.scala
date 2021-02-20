@@ -1,5 +1,6 @@
 package typings.phaser.global.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Pairs ()
   extends typings.phaser.MatterJS.Pairs
-/* static members */
-@JSGlobal("MatterJS.Pairs")
-@js.native
-object Pairs extends js.Object {
+object Pairs {
   
   /**
     * Clears the given pairs structure.
@@ -24,5 +22,8 @@ object Pairs extends js.Object {
     * @param {pairs} pairs
     * @return {pairs} pairs
     */
+  /* static member */
+  @JSGlobal("MatterJS.Pairs.clear")
+  @js.native
   def clear(pairs: js.Any): js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerLaunchConfiguration extends js.Object {
+trait ServerLaunchConfiguration extends StObject {
   
   /**
     * Indicates whether a publicly accessible IP address is created when launching the server.
@@ -73,90 +74,78 @@ object ServerLaunchConfiguration {
   }
   
   @scala.inline
-  implicit class ServerLaunchConfigurationOps[Self <: ServerLaunchConfiguration] (val x: Self) extends AnyVal {
+  implicit class ServerLaunchConfigurationMutableBuilder[Self <: ServerLaunchConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = StObject.set(x, "associatePublicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "associatePublicIpAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigureScript(value: S3Location): Self = StObject.set(x, "configureScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = this.set("associatePublicIpAddress", value.asInstanceOf[js.Any])
+    def setConfigureScriptType(value: ScriptType): Self = StObject.set(x, "configureScriptType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssociatePublicIpAddress: Self = this.set("associatePublicIpAddress", js.undefined)
+    def setConfigureScriptTypeUndefined: Self = StObject.set(x, "configureScriptType", js.undefined)
     
     @scala.inline
-    def setConfigureScript(value: S3Location): Self = this.set("configureScript", value.asInstanceOf[js.Any])
+    def setConfigureScriptUndefined: Self = StObject.set(x, "configureScript", js.undefined)
     
     @scala.inline
-    def deleteConfigureScript: Self = this.set("configureScript", js.undefined)
+    def setEc2KeyName(value: EC2KeyName): Self = StObject.set(x, "ec2KeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigureScriptType(value: ScriptType): Self = this.set("configureScriptType", value.asInstanceOf[js.Any])
+    def setEc2KeyNameUndefined: Self = StObject.set(x, "ec2KeyName", js.undefined)
     
     @scala.inline
-    def deleteConfigureScriptType: Self = this.set("configureScriptType", js.undefined)
+    def setIamInstanceProfileName(value: RoleName): Self = StObject.set(x, "iamInstanceProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2KeyName(value: EC2KeyName): Self = this.set("ec2KeyName", value.asInstanceOf[js.Any])
+    def setIamInstanceProfileNameUndefined: Self = StObject.set(x, "iamInstanceProfileName", js.undefined)
     
     @scala.inline
-    def deleteEc2KeyName: Self = this.set("ec2KeyName", js.undefined)
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamInstanceProfileName(value: RoleName): Self = this.set("iamInstanceProfileName", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def deleteIamInstanceProfileName: Self = this.set("iamInstanceProfileName", js.undefined)
+    def setLogicalId(value: LogicalId): Self = StObject.set(x, "logicalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setLogicalIdUndefined: Self = StObject.set(x, "logicalId", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    def setSecurityGroup(value: SecurityGroup): Self = StObject.set(x, "securityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalId(value: LogicalId): Self = this.set("logicalId", value.asInstanceOf[js.Any])
+    def setSecurityGroupUndefined: Self = StObject.set(x, "securityGroup", js.undefined)
     
     @scala.inline
-    def deleteLogicalId: Self = this.set("logicalId", js.undefined)
+    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroup(value: SecurityGroup): Self = this.set("securityGroup", value.asInstanceOf[js.Any])
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroup: Self = this.set("securityGroup", js.undefined)
+    def setSubnet(value: Subnet): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: Server): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
     @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setUserData(value: UserData): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnet(value: Subnet): Self = this.set("subnet", value.asInstanceOf[js.Any])
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     
     @scala.inline
-    def deleteSubnet: Self = this.set("subnet", js.undefined)
+    def setVpc(value: VPC): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserData(value: UserData): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
-    
-    @scala.inline
-    def setVpc(value: VPC): Self = this.set("vpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpc: Self = this.set("vpc", js.undefined)
+    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
   }
 }

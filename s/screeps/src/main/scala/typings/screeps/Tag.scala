@@ -1,13 +1,12 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Tag")
-@js.native
-object Tag extends js.Object {
+object Tag {
   
   @js.native
-  trait OpaqueTag[T] extends js.Object
+  trait OpaqueTag[T] extends StObject
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobRun extends js.Object {
+trait JobRun extends StObject {
   
   /**
     * This field is deprecated. Use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
@@ -126,153 +127,141 @@ object JobRun {
   }
   
   @scala.inline
-  implicit class JobRunOps[Self <: JobRun] (val x: Self) extends AnyVal {
+  implicit class JobRunMutableBuilder[Self <: JobRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocatedCapacity(value: IntegerValue): Self = StObject.set(x, "AllocatedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocatedCapacityUndefined: Self = StObject.set(x, "AllocatedCapacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArguments(value: GenericMap): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedCapacity(value: IntegerValue): Self = this.set("AllocatedCapacity", value.asInstanceOf[js.Any])
+    def setArgumentsUndefined: Self = StObject.set(x, "Arguments", js.undefined)
     
     @scala.inline
-    def deleteAllocatedCapacity: Self = this.set("AllocatedCapacity", js.undefined)
+    def setAttempt(value: AttemptCount): Self = StObject.set(x, "Attempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: GenericMap): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    def setAttemptUndefined: Self = StObject.set(x, "Attempt", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    def setCompletedOn(value: TimestampValue): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttempt(value: AttemptCount): Self = this.set("Attempt", value.asInstanceOf[js.Any])
+    def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
     @scala.inline
-    def deleteAttempt: Self = this.set("Attempt", js.undefined)
+    def setErrorMessage(value: ErrorString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedOn(value: TimestampValue): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    def setExecutionTime(value: ExecutionTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTime(value: ExecutionTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
     @scala.inline
-    def deleteExecutionTime: Self = this.set("ExecutionTime", js.undefined)
+    def setId(value: IdString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: IdString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setJobRunState(value: JobRunState): Self = StObject.set(x, "JobRunState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setJobRunStateUndefined: Self = StObject.set(x, "JobRunState", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setLastModifiedOn(value: TimestampValue): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobRunState(value: JobRunState): Self = this.set("JobRunState", value.asInstanceOf[js.Any])
+    def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
     @scala.inline
-    def deleteJobRunState: Self = this.set("JobRunState", js.undefined)
+    def setLogGroupName(value: GenericString): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedOn(value: TimestampValue): Self = this.set("LastModifiedOn", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedOn: Self = this.set("LastModifiedOn", js.undefined)
+    def setMaxCapacity(value: NullableDouble): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: GenericString): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
     @scala.inline
-    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    def setNotificationProperty(value: NotificationProperty): Self = StObject.set(x, "NotificationProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setNotificationPropertyUndefined: Self = StObject.set(x, "NotificationProperty", js.undefined)
     
     @scala.inline
-    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    def setNumberOfWorkers(value: NullableInteger): Self = StObject.set(x, "NumberOfWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    def setNumberOfWorkersUndefined: Self = StObject.set(x, "NumberOfWorkers", js.undefined)
     
     @scala.inline
-    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    def setPredecessorRuns(value: PredecessorList): Self = StObject.set(x, "PredecessorRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    def setPredecessorRunsUndefined: Self = StObject.set(x, "PredecessorRuns", js.undefined)
     
     @scala.inline
-    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    def setPredecessorRunsVarargs(value: Predecessor*): Self = StObject.set(x, "PredecessorRuns", js.Array(value :_*))
     
     @scala.inline
-    def setPredecessorRunsVarargs(value: Predecessor*): Self = this.set("PredecessorRuns", js.Array(value :_*))
+    def setPreviousRunId(value: IdString): Self = StObject.set(x, "PreviousRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredecessorRuns(value: PredecessorList): Self = this.set("PredecessorRuns", value.asInstanceOf[js.Any])
+    def setPreviousRunIdUndefined: Self = StObject.set(x, "PreviousRunId", js.undefined)
     
     @scala.inline
-    def deletePredecessorRuns: Self = this.set("PredecessorRuns", js.undefined)
+    def setSecurityConfiguration(value: NameString): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousRunId(value: IdString): Self = this.set("PreviousRunId", value.asInstanceOf[js.Any])
+    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
     
     @scala.inline
-    def deletePreviousRunId: Self = this.set("PreviousRunId", js.undefined)
+    def setStartedOn(value: TimestampValue): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
     @scala.inline
-    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedOn(value: TimestampValue): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
+    def setTriggerName(value: NameString): Self = StObject.set(x, "TriggerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTriggerNameUndefined: Self = StObject.set(x, "TriggerName", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setWorkerType(value: WorkerType): Self = StObject.set(x, "WorkerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerName(value: NameString): Self = this.set("TriggerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerName: Self = this.set("TriggerName", js.undefined)
-    
-    @scala.inline
-    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+    def setWorkerTypeUndefined: Self = StObject.set(x, "WorkerType", js.undefined)
   }
 }

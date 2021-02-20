@@ -1,11 +1,12 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionPolicy extends js.Object {
+trait ConnectionPolicy extends StObject {
   
   /**
     * Flag to disable SSL verification for the requests.
@@ -51,42 +52,30 @@ object ConnectionPolicy {
   }
   
   @scala.inline
-  implicit class ConnectionPolicyOps[Self <: ConnectionPolicy] (val x: Self) extends AnyVal {
+  implicit class ConnectionPolicyMutableBuilder[Self <: ConnectionPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableSSLVerification(value: Boolean): Self = StObject.set(x, "DisableSSLVerification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableEndpointDiscovery(value: Boolean): Self = StObject.set(x, "EnableEndpointDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaReadMode(value: MediaReadMode): Self = StObject.set(x, "MediaReadMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSSLVerification(value: Boolean): Self = this.set("DisableSSLVerification", value.asInstanceOf[js.Any])
+    def setMediaRequestTimeout(value: Double): Self = StObject.set(x, "MediaRequestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableEndpointDiscovery(value: Boolean): Self = this.set("EnableEndpointDiscovery", value.asInstanceOf[js.Any])
+    def setPreferredLocations(value: js.Array[_]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaReadMode(value: MediaReadMode): Self = this.set("MediaReadMode", value.asInstanceOf[js.Any])
+    def setPreferredLocationsVarargs(value: js.Any*): Self = StObject.set(x, "PreferredLocations", js.Array(value :_*))
     
     @scala.inline
-    def setMediaRequestTimeout(value: Double): Self = this.set("MediaRequestTimeout", value.asInstanceOf[js.Any])
+    def setRequestTimeout(value: Double): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredLocationsVarargs(value: js.Any*): Self = this.set("PreferredLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreferredLocations(value: js.Array[_]): Self = this.set("PreferredLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestTimeout(value: Double): Self = this.set("RequestTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetryOptions(value: RetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
   }
 }

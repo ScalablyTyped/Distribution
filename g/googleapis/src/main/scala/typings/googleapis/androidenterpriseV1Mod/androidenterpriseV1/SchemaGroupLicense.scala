@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * keep track of any remaining entitlements for the product.
   */
 @js.native
-trait SchemaGroupLicense extends js.Object {
+trait SchemaGroupLicense extends StObject {
   
   /**
     * How this group license was acquired. &quot;bulkPurchase&quot; means that
@@ -89,60 +90,48 @@ object SchemaGroupLicense {
   }
   
   @scala.inline
-  implicit class SchemaGroupLicenseOps[Self <: SchemaGroupLicense] (val x: Self) extends AnyVal {
+  implicit class SchemaGroupLicenseMutableBuilder[Self <: SchemaGroupLicense] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquisitionKind(value: String): Self = StObject.set(x, "acquisitionKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquisitionKindUndefined: Self = StObject.set(x, "acquisitionKind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApproval(value: String): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquisitionKind(value: String): Self = this.set("acquisitionKind", value.asInstanceOf[js.Any])
+    def setApprovalUndefined: Self = StObject.set(x, "approval", js.undefined)
     
     @scala.inline
-    def deleteAcquisitionKind: Self = this.set("acquisitionKind", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproval(value: String): Self = this.set("approval", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteApproval: Self = this.set("approval", js.undefined)
+    def setNumProvisioned(value: Double): Self = StObject.set(x, "numProvisioned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNumProvisionedUndefined: Self = StObject.set(x, "numProvisioned", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNumPurchased(value: Double): Self = StObject.set(x, "numPurchased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumProvisioned(value: Double): Self = this.set("numProvisioned", value.asInstanceOf[js.Any])
+    def setNumPurchasedUndefined: Self = StObject.set(x, "numPurchased", js.undefined)
     
     @scala.inline
-    def deleteNumProvisioned: Self = this.set("numProvisioned", js.undefined)
+    def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPurchased(value: Double): Self = this.set("numPurchased", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteNumPurchased: Self = this.set("numPurchased", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: String): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
-    
-    @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

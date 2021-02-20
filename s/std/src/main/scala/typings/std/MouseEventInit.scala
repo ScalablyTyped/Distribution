@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,75 +35,63 @@ object MouseEventInit {
   }
   
   @scala.inline
-  implicit class MouseEventInitOps[Self <: MouseEventInit] (val x: Self) extends AnyVal {
+  implicit class MouseEventInitMutableBuilder[Self <: MouseEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: Double): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setClientXUndefined: Self = StObject.set(x, "clientX", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientX(value: Double): Self = this.set("clientX", value.asInstanceOf[js.Any])
+    def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
     
     @scala.inline
-    def deleteClientX: Self = this.set("clientX", js.undefined)
+    def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientY(value: Double): Self = this.set("clientY", value.asInstanceOf[js.Any])
+    def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
     
     @scala.inline
-    def deleteClientY: Self = this.set("clientY", js.undefined)
+    def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovementX(value: Double): Self = this.set("movementX", value.asInstanceOf[js.Any])
+    def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
     
     @scala.inline
-    def deleteMovementX: Self = this.set("movementX", js.undefined)
+    def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovementY(value: Double): Self = this.set("movementY", value.asInstanceOf[js.Any])
+    def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
     
     @scala.inline
-    def deleteMovementY: Self = this.set("movementY", js.undefined)
+    def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
     
     @scala.inline
-    def setRelatedTarget(value: EventTarget): Self = this.set("relatedTarget", value.asInstanceOf[js.Any])
+    def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelatedTarget: Self = this.set("relatedTarget", js.undefined)
+    def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
     
     @scala.inline
-    def setRelatedTargetNull: Self = this.set("relatedTarget", null)
+    def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenX: Self = this.set("screenX", js.undefined)
-    
-    @scala.inline
-    def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenY: Self = this.set("screenY", js.undefined)
+    def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
   }
 }

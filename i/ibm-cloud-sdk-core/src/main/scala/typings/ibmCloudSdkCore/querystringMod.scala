@@ -1,16 +1,16 @@
 package typings.ibmCloudSdkCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ibm-cloud-sdk-core/lib/querystring", JSImport.Namespace)
-@js.native
-object querystringMod extends js.Object {
+object querystringMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("ibm-cloud-sdk-core/lib/querystring", "default.stringify")
+    @js.native
     def stringify(queryParams: js.Object): String = js.native
   }
 }

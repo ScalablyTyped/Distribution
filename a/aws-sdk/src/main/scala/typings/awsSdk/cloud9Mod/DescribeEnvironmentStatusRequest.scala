@@ -1,11 +1,12 @@
 package typings.awsSdk.cloud9Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEnvironmentStatusRequest extends js.Object {
+trait DescribeEnvironmentStatusRequest extends StObject {
   
   /**
     * The ID of the environment to get status information about.
@@ -21,21 +22,9 @@ object DescribeEnvironmentStatusRequest {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentStatusRequestOps[Self <: DescribeEnvironmentStatusRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentStatusRequestMutableBuilder[Self <: DescribeEnvironmentStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
   }
 }

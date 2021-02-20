@@ -2,20 +2,26 @@ package typings.dateFns
 
 import typings.dateFns.anon.WeekStartsOn
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/startOfWeek/index", JSImport.Namespace)
-@js.native
-object esmStartOfWeekIndexMod extends js.Object {
+object esmStartOfWeekIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/esm/startOfWeek/index", JSImport.Default)
+    @js.native
     def apply(date: Double): Date = js.native
+    @JSImport("date-fns/esm/startOfWeek/index", JSImport.Default)
+    @js.native
     def apply(date: Double, options: WeekStartsOn): Date = js.native
+    @JSImport("date-fns/esm/startOfWeek/index", JSImport.Default)
+    @js.native
     def apply(date: Date): Date = js.native
+    @JSImport("date-fns/esm/startOfWeek/index", JSImport.Default)
+    @js.native
     def apply(date: Date, options: WeekStartsOn): Date = js.native
   }
 }

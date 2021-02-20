@@ -34,6 +34,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -176,30 +177,18 @@ object ojTextAreaEventMap {
   }
   
   @scala.inline
-  implicit class ojTextAreaEventMapOps[Self <: ojTextAreaEventMap] (val x: Self) extends AnyVal {
+  implicit class ojTextAreaEventMapMutableBuilder[Self <: ojTextAreaEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = this.set("converterChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = this.set("ojAnimateEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = this.set("ojAnimateStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsChanged(value: JetElementCustomEvent[Double]): Self = this.set("rowsChanged", value.asInstanceOf[js.Any])
+    def setRowsChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "rowsChanged", value.asInstanceOf[js.Any])
   }
 }

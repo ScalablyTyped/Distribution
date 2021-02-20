@@ -1,12 +1,13 @@
 package typings.socks.constantsMod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocksUDPFrameDetails extends js.Object {
+trait SocksUDPFrameDetails extends StObject {
   
   var data: Buffer = js.native
   
@@ -23,30 +24,18 @@ object SocksUDPFrameDetails {
   }
   
   @scala.inline
-  implicit class SocksUDPFrameDetailsOps[Self <: SocksUDPFrameDetails] (val x: Self) extends AnyVal {
+  implicit class SocksUDPFrameDetailsMutableBuilder[Self <: SocksUDPFrameDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameNumber(value: Double): Self = StObject.set(x, "frameNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameNumberUndefined: Self = StObject.set(x, "frameNumber", js.undefined)
     
     @scala.inline
-    def setData(value: Buffer): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteHost(value: SocksRemoteHost): Self = this.set("remoteHost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrameNumber(value: Double): Self = this.set("frameNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrameNumber: Self = this.set("frameNumber", js.undefined)
+    def setRemoteHost(value: SocksRemoteHost): Self = StObject.set(x, "remoteHost", value.asInstanceOf[js.Any])
   }
 }

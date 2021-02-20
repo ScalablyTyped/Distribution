@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Labels extends js.Object {
+trait Labels extends StObject {
   
   var assignee: String = js.native
   
@@ -83,87 +84,75 @@ object Labels {
   }
   
   @scala.inline
-  implicit class LabelsOps[Self <: Labels] (val x: Self) extends AnyVal {
+  implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClosed_at(value: String): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignee(value: String): Self = this.set("assignee", value.asInstanceOf[js.Any])
+    def setComments(value: Double): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed_at(value: String): Self = this.set("closed_at", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: Double): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setEvents_url(value: String): Self = StObject.set(x, "events_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments_url(value: String): Self = this.set("comments_url", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents_url(value: String): Self = this.set("events_url", value.asInstanceOf[js.Any])
+    def setLabels(value: js.Array[ColorId]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setLabelsVarargs(value: ColorId*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVarargs(value: ColorId*): Self = this.set("labels", js.Array(value :_*))
+    def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[ColorId]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels_url(value: String): Self = this.set("labels_url", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMilestone(value: String): Self = this.set("milestone", value.asInstanceOf[js.Any])
+    def setPull_request(value: Patchurl): Self = StObject.set(x, "pull_request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setRepository_url(value: String): Self = StObject.set(x, "repository_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_request(value: Patchurl): Self = this.set("pull_request", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository_url(value: String): Self = this.set("repository_url", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: Followingurl): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: Followingurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

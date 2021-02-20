@@ -3,12 +3,13 @@ package typings.multiselect
 import typings.multiselect.multiselectStrings.addOption
 import typings.multiselect.multiselectStrings.deselect
 import typings.multiselect.multiselectStrings.select
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def multiSelect(): JQuery = js.native
   def multiSelect(methodOrOptions: Method): JQuery = js.native

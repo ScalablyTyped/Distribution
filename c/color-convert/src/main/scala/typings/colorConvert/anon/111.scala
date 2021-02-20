@@ -2,12 +2,13 @@ package typings.colorConvert.anon
 
 import typings.colorConvert.conversionsMod.HEX_
 import typings.colorConvert.conversionsMod.RGB_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `111` extends js.Object {
+trait `111` extends StObject {
   
   def raw(from: HEX_): RGB_ = js.native
   @JSName("raw")

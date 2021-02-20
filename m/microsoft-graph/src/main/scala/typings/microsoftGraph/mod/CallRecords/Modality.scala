@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod.CallRecords
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.screenSharing
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait Modality extends js.Object
+trait Modality extends StObject
 object Modality {
   
   @scala.inline

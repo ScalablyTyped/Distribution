@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.opsworks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomLayerEbsVolume extends js.Object {
+trait CustomLayerEbsVolume extends StObject {
   
   /**
     * Encrypt the volume.
@@ -51,51 +52,39 @@ object CustomLayerEbsVolume {
   }
   
   @scala.inline
-  implicit class CustomLayerEbsVolumeOps[Self <: CustomLayerEbsVolume] (val x: Self) extends AnyVal {
+  implicit class CustomLayerEbsVolumeMutableBuilder[Self <: CustomLayerEbsVolume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPoint(value: String): Self = this.set("mountPoint", value.asInstanceOf[js.Any])
+    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
     @scala.inline
-    def setNumberOfDisks(value: Double): Self = this.set("numberOfDisks", value.asInstanceOf[js.Any])
+    def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setNumberOfDisks(value: Double): Self = StObject.set(x, "numberOfDisks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Boolean): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    def setRaidLevel(value: String): Self = StObject.set(x, "raidLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    def setRaidLevelUndefined: Self = StObject.set(x, "raidLevel", js.undefined)
     
     @scala.inline
-    def setIops(value: Double): Self = this.set("iops", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIops: Self = this.set("iops", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaidLevel(value: String): Self = this.set("raidLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaidLevel: Self = this.set("raidLevel", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.swipeview
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeViewOptions extends js.Object {
+trait SwipeViewOptions extends StObject {
   
   var hastyPageFlip: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object SwipeViewOptions {
   }
   
   @scala.inline
-  implicit class SwipeViewOptionsOps[Self <: SwipeViewOptions] (val x: Self) extends AnyVal {
+  implicit class SwipeViewOptionsMutableBuilder[Self <: SwipeViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHastyPageFlip(value: Boolean): Self = StObject.set(x, "hastyPageFlip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHastyPageFlipUndefined: Self = StObject.set(x, "hastyPageFlip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHastyPageFlip(value: Boolean): Self = this.set("hastyPageFlip", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteHastyPageFlip: Self = this.set("hastyPageFlip", js.undefined)
+    def setNumberOfPages(value: Double): Self = StObject.set(x, "numberOfPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setNumberOfPagesUndefined: Self = StObject.set(x, "numberOfPages", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setSnapThreshold(value: Double): Self = StObject.set(x, "snapThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfPages(value: Double): Self = this.set("numberOfPages", value.asInstanceOf[js.Any])
+    def setSnapThresholdUndefined: Self = StObject.set(x, "snapThreshold", js.undefined)
     
     @scala.inline
-    def deleteNumberOfPages: Self = this.set("numberOfPages", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapThreshold(value: Double): Self = this.set("snapThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapThreshold: Self = this.set("snapThreshold", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

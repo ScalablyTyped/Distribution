@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogStream extends js.Object {
+trait LogStream extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the log stream.
@@ -56,66 +57,54 @@ object LogStream {
   }
   
   @scala.inline
-  implicit class LogStreamOps[Self <: LogStream] (val x: Self) extends AnyVal {
+  implicit class LogStreamMutableBuilder[Self <: LogStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setFirstEventTimestamp(value: Timestamp): Self = StObject.set(x, "firstEventTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setFirstEventTimestampUndefined: Self = StObject.set(x, "firstEventTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setLastEventTimestamp(value: Timestamp): Self = StObject.set(x, "lastEventTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstEventTimestamp(value: Timestamp): Self = this.set("firstEventTimestamp", value.asInstanceOf[js.Any])
+    def setLastEventTimestampUndefined: Self = StObject.set(x, "lastEventTimestamp", js.undefined)
     
     @scala.inline
-    def deleteFirstEventTimestamp: Self = this.set("firstEventTimestamp", js.undefined)
+    def setLastIngestionTime(value: Timestamp): Self = StObject.set(x, "lastIngestionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEventTimestamp(value: Timestamp): Self = this.set("lastEventTimestamp", value.asInstanceOf[js.Any])
+    def setLastIngestionTimeUndefined: Self = StObject.set(x, "lastIngestionTime", js.undefined)
     
     @scala.inline
-    def deleteLastEventTimestamp: Self = this.set("lastEventTimestamp", js.undefined)
+    def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastIngestionTime(value: Timestamp): Self = this.set("lastIngestionTime", value.asInstanceOf[js.Any])
+    def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
     
     @scala.inline
-    def deleteLastIngestionTime: Self = this.set("lastIngestionTime", js.undefined)
+    def setStoredBytes(value: StoredBytes): Self = StObject.set(x, "storedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStreamName(value: LogStreamName): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    def setStoredBytesUndefined: Self = StObject.set(x, "storedBytes", js.undefined)
     
     @scala.inline
-    def deleteLogStreamName: Self = this.set("logStreamName", js.undefined)
+    def setUploadSequenceToken(value: SequenceToken): Self = StObject.set(x, "uploadSequenceToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoredBytes(value: StoredBytes): Self = this.set("storedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoredBytes: Self = this.set("storedBytes", js.undefined)
-    
-    @scala.inline
-    def setUploadSequenceToken(value: SequenceToken): Self = this.set("uploadSequenceToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadSequenceToken: Self = this.set("uploadSequenceToken", js.undefined)
+    def setUploadSequenceTokenUndefined: Self = StObject.set(x, "uploadSequenceToken", js.undefined)
   }
 }

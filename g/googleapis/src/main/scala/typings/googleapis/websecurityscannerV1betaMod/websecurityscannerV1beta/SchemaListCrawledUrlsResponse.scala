@@ -1,5 +1,6 @@
 package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for the `ListCrawledUrls` method.
   */
 @js.native
-trait SchemaListCrawledUrlsResponse extends js.Object {
+trait SchemaListCrawledUrlsResponse extends StObject {
   
   /**
     * The list of CrawledUrls returned.
@@ -30,33 +31,21 @@ object SchemaListCrawledUrlsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListCrawledUrlsResponseOps[Self <: SchemaListCrawledUrlsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListCrawledUrlsResponseMutableBuilder[Self <: SchemaListCrawledUrlsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrawledUrls(value: js.Array[SchemaCrawledUrl]): Self = StObject.set(x, "crawledUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrawledUrlsUndefined: Self = StObject.set(x, "crawledUrls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawledUrlsVarargs(value: SchemaCrawledUrl*): Self = StObject.set(x, "crawledUrls", js.Array(value :_*))
     
     @scala.inline
-    def setCrawledUrlsVarargs(value: SchemaCrawledUrl*): Self = this.set("crawledUrls", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawledUrls(value: js.Array[SchemaCrawledUrl]): Self = this.set("crawledUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrawledUrls: Self = this.set("crawledUrls", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

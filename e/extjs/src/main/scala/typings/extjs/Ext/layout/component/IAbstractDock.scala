@@ -2,6 +2,7 @@ package typings.extjs.Ext.layout.component
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.layout.ISizePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,62 +76,50 @@ object IAbstractDock {
   }
   
   @scala.inline
-  implicit class IAbstractDockOps[Self <: IAbstractDock] (val x: Self) extends AnyVal {
+  implicit class IAbstractDockMutableBuilder[Self <: IAbstractDock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
     @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("beginLayout", js.Any.fromFunction1(value))
+    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
     
     @scala.inline
-    def deleteBeginLayout: Self = this.set("beginLayout", js.undefined)
+    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("beginLayoutCycle", js.Any.fromFunction1(value))
+    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
     @scala.inline
-    def deleteBeginLayoutCycle: Self = this.set("beginLayoutCycle", js.undefined)
+    def setGetDockedItems(value: (/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean]) => Array): Self = StObject.set(x, "getDockedItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
     
     @scala.inline
-    def deleteCalculate: Self = this.set("calculate", js.undefined)
+    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDockedItems(value: (/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean]) => Array): Self = this.set("getDockedItems", js.Any.fromFunction2(value))
+    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
     @scala.inline
-    def deleteGetDockedItems: Self = this.set("getDockedItems", js.undefined)
+    def setGetLayoutItems(value: () => Array): Self = StObject.set(x, "getLayoutItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = this.set("getItemSizePolicy", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGetItemSizePolicy: Self = this.set("getItemSizePolicy", js.undefined)
-    
-    @scala.inline
-    def setGetLayoutItems(value: () => Array): Self = this.set("getLayoutItems", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetLayoutItems: Self = this.set("getLayoutItems", js.undefined)
+    def setGetLayoutItemsUndefined: Self = StObject.set(x, "getLayoutItems", js.undefined)
     
     @scala.inline
     def setInvalidateAxes(
       value: (/* ownerContext */ js.UndefOr[js.Any], /* horz */ js.UndefOr[js.Any], /* vert */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("invalidateAxes", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "invalidateAxes", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInvalidateAxes: Self = this.set("invalidateAxes", js.undefined)
+    def setInvalidateAxesUndefined: Self = StObject.set(x, "invalidateAxes", js.undefined)
   }
 }

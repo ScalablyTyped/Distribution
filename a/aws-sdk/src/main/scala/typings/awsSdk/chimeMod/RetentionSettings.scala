@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetentionSettings extends js.Object {
+trait RetentionSettings extends StObject {
   
   /**
     * The chat conversation retention settings.
@@ -26,30 +27,18 @@ object RetentionSettings {
   }
   
   @scala.inline
-  implicit class RetentionSettingsOps[Self <: RetentionSettings] (val x: Self) extends AnyVal {
+  implicit class RetentionSettingsMutableBuilder[Self <: RetentionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversationRetentionSettings(value: ConversationRetentionSettings): Self = StObject.set(x, "ConversationRetentionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversationRetentionSettingsUndefined: Self = StObject.set(x, "ConversationRetentionSettings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoomRetentionSettings(value: RoomRetentionSettings): Self = StObject.set(x, "RoomRetentionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversationRetentionSettings(value: ConversationRetentionSettings): Self = this.set("ConversationRetentionSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversationRetentionSettings: Self = this.set("ConversationRetentionSettings", js.undefined)
-    
-    @scala.inline
-    def setRoomRetentionSettings(value: RoomRetentionSettings): Self = this.set("RoomRetentionSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomRetentionSettings: Self = this.set("RoomRetentionSettings", js.undefined)
+    def setRoomRetentionSettingsUndefined: Self = StObject.set(x, "RoomRetentionSettings", js.undefined)
   }
 }

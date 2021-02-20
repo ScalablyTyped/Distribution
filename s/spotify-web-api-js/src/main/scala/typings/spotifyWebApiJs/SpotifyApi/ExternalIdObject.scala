@@ -1,5 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that there might be other types available, it couldn't be found in the docs.
   */
 @js.native
-trait ExternalIdObject extends js.Object {
+trait ExternalIdObject extends StObject {
   
   var ean: js.UndefOr[String] = js.native
   
@@ -28,36 +29,24 @@ object ExternalIdObject {
   }
   
   @scala.inline
-  implicit class ExternalIdObjectOps[Self <: ExternalIdObject] (val x: Self) extends AnyVal {
+  implicit class ExternalIdObjectMutableBuilder[Self <: ExternalIdObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEan(value: String): Self = StObject.set(x, "ean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEanUndefined: Self = StObject.set(x, "ean", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsrc(value: String): Self = StObject.set(x, "isrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEan(value: String): Self = this.set("ean", value.asInstanceOf[js.Any])
+    def setIsrcUndefined: Self = StObject.set(x, "isrc", js.undefined)
     
     @scala.inline
-    def deleteEan: Self = this.set("ean", js.undefined)
+    def setUpc(value: String): Self = StObject.set(x, "upc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsrc(value: String): Self = this.set("isrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsrc: Self = this.set("isrc", js.undefined)
-    
-    @scala.inline
-    def setUpc(value: String): Self = this.set("upc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpc: Self = this.set("upc", js.undefined)
+    def setUpcUndefined: Self = StObject.set(x, "upc", js.undefined)
   }
 }

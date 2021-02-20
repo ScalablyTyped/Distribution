@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServiceLinkedRoleDeletionStatusRequest extends js.Object {
+trait GetServiceLinkedRoleDeletionStatusRequest extends StObject {
   
   /**
     * The deletion task identifier. This identifier is returned by the DeleteServiceLinkedRole operation in the format task/aws-service-role/&lt;service-principal-name&gt;/&lt;role-name&gt;/&lt;task-uuid&gt;.
@@ -21,21 +22,9 @@ object GetServiceLinkedRoleDeletionStatusRequest {
   }
   
   @scala.inline
-  implicit class GetServiceLinkedRoleDeletionStatusRequestOps[Self <: GetServiceLinkedRoleDeletionStatusRequest] (val x: Self) extends AnyVal {
+  implicit class GetServiceLinkedRoleDeletionStatusRequestMutableBuilder[Self <: GetServiceLinkedRoleDeletionStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeletionTaskId(value: DeletionTaskIdType): Self = this.set("DeletionTaskId", value.asInstanceOf[js.Any])
+    def setDeletionTaskId(value: DeletionTaskIdType): Self = StObject.set(x, "DeletionTaskId", value.asInstanceOf[js.Any])
   }
 }

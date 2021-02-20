@@ -1,11 +1,12 @@
 package typings.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardedTcpip extends js.Object {
+trait ForwardedTcpip extends StObject {
   
   var bindAddr: String = js.native
   
@@ -24,30 +25,18 @@ object ForwardedTcpip {
   }
   
   @scala.inline
-  implicit class ForwardedTcpipOps[Self <: ForwardedTcpip] (val x: Self) extends AnyVal {
+  implicit class ForwardedTcpipMutableBuilder[Self <: ForwardedTcpip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindPort(value: Double): Self = StObject.set(x, "bindPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteAddr(value: String): Self = StObject.set(x, "remoteAddr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindAddr(value: String): Self = this.set("bindAddr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBindPort(value: Double): Self = this.set("bindPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteAddr(value: String): Self = this.set("remoteAddr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemotePort(value: Double): Self = this.set("remotePort", value.asInstanceOf[js.Any])
+    def setRemotePort(value: Double): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetClipInput extends js.Object {
+trait GetClipInput extends StObject {
   
   /**
     * The time range of the requested clip and the source of the timestamps.
@@ -31,33 +32,21 @@ object GetClipInput {
   }
   
   @scala.inline
-  implicit class GetClipInputOps[Self <: GetClipInput] (val x: Self) extends AnyVal {
+  implicit class GetClipInputMutableBuilder[Self <: GetClipInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClipFragmentSelector(value: ClipFragmentSelector): Self = StObject.set(x, "ClipFragmentSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     @scala.inline
-    def setClipFragmentSelector(value: ClipFragmentSelector): Self = this.set("ClipFragmentSelector", value.asInstanceOf[js.Any])
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

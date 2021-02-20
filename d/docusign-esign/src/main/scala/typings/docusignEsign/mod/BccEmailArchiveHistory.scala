@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BccEmailArchiveHistory extends js.Object {
+trait BccEmailArchiveHistory extends StObject {
   
   /**
     * The id of the account that owns the BCC email archive configuration.
@@ -58,54 +59,42 @@ object BccEmailArchiveHistory {
   }
   
   @scala.inline
-  implicit class BccEmailArchiveHistoryOps[Self <: BccEmailArchiveHistory] (val x: Self) extends AnyVal {
+  implicit class BccEmailArchiveHistoryMutableBuilder[Self <: BccEmailArchiveHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setModifiedBy(value: UserInfo): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setModifiedByUndefined: Self = StObject.set(x, "modifiedBy", js.undefined)
     
     @scala.inline
-    def setModified(value: String): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
     @scala.inline
-    def deleteModified: Self = this.set("modified", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedBy(value: UserInfo): Self = this.set("modifiedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifiedBy: Self = this.set("modifiedBy", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

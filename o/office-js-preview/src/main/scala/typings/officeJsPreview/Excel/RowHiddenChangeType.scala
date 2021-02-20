@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RowHiddenChangeType extends js.Object
+sealed trait RowHiddenChangeType extends StObject
 /**
   * [Api set: ExcelApi 1.11]
   */
 @JSGlobal("Excel.RowHiddenChangeType")
 @js.native
-object RowHiddenChangeType extends js.Object {
+object RowHiddenChangeType extends StObject {
   
   /**
     * Hidden indicates the row is hidden.

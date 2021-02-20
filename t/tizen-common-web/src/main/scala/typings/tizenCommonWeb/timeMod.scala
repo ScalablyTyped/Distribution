@@ -9,23 +9,22 @@ import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.Instantiable8
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tizen-common-web/time", JSImport.Namespace)
-@js.native
-object timeMod extends js.Object {
+object timeMod {
   
+  @JSImport("tizen-common-web/time", "TZDate")
   @js.native
   /**
     * @param datetime Date and time passed as a javascript Date object. If this parameter is omitted, current date and time will be used.
     * @param timezone The time zone identifier, e.g. "Seoul/Korea" or "Europe/Berlin". If this parameter is omitted, the device's default time zone will be used.
     */
-  class TZDate () extends js.Object {
+  class TZDate () extends StObject {
     def this(datetime: Date) = this()
     def this(datetime: js.UndefOr[scala.Nothing], timezone: String) = this()
     def this(datetime: Date, timezone: String) = this()
@@ -703,58 +702,9 @@ object timeMod extends js.Object {
     def toUTC(): TZDate = js.native
   }
   
+  @JSImport("tizen-common-web/time", "TimeDuration")
   @js.native
-  trait TZDateConstructor
-    extends /**
-    * @param datetime Date and time passed as a javascript Date object. If this parameter is omitted, current date and time will be used.
-    * @param timezone The time zone identifier, e.g. "Seoul/Korea" or "Europe/Berlin". If this parameter is omitted, the device's default time zone will be used.
-    */
-  Instantiable0[TZDate]
-       with Instantiable1[/* datetime */ Date, TZDate]
-       with Instantiable2[js.UndefOr[/* datetime */ Date], /* timezone */ String, TZDate]
-       with Instantiable3[/* year */ Double, /* month */ Double, /* day */ Double, TZDate]
-       with Instantiable4[/* year */ Double, /* month */ Double, /* day */ Double, /* hours */ Double, TZDate]
-       with Instantiable5[
-          /* year */ Double, 
-          /* month */ Double, 
-          /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          /* minutes */ Double, 
-          TZDate
-        ]
-       with Instantiable6[
-          /* year */ Double, 
-          /* month */ Double, 
-          /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          js.UndefOr[/* minutes */ Double], 
-          /* seconds */ Double, 
-          TZDate
-        ]
-       with Instantiable7[
-          /* year */ Double, 
-          /* month */ Double, 
-          /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          js.UndefOr[/* minutes */ Double], 
-          js.UndefOr[/* seconds */ Double], 
-          /* milliseconds */ Double, 
-          TZDate
-        ]
-       with Instantiable8[
-          /* year */ Double, 
-          /* month */ Double, 
-          /* day */ Double, 
-          js.UndefOr[/* hours */ Double], 
-          js.UndefOr[/* minutes */ Double], 
-          js.UndefOr[/* seconds */ Double], 
-          js.UndefOr[/* milliseconds */ Double], 
-          /* timezone */ String, 
-          TZDate
-        ]
-  
-  @js.native
-  class TimeDuration protected () extends js.Object {
+  class TimeDuration protected () extends StObject {
     def this(length: Double, unit: TimeDurationUnit) = this()
     
     /**
@@ -826,44 +776,90 @@ object timeMod extends js.Object {
   }
   
   @js.native
-  trait TimeDurationConstructor extends Instantiable2[/* length */ Double, /* unit */ TimeDurationUnit, TimeDuration]
-  
+  sealed trait TimeDurationUnit extends StObject
+  @JSImport("tizen-common-web/time", "TimeDurationUnit")
   @js.native
-  sealed trait TimeDurationUnit extends js.Object
-  @js.native
-  object TimeDurationUnit extends js.Object {
+  object TimeDurationUnit extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[TimeDurationUnit with String] = js.native
     
     @js.native
     sealed trait DAYS extends TimeDurationUnit
-    /* "DAYS" */ @js.native
-    object DAYS extends TopLevel[DAYS with String]
+    /* "DAYS" */ val DAYS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.DAYS with String = js.native
     
     @js.native
     sealed trait HOURS extends TimeDurationUnit
-    /* "HOURS" */ @js.native
-    object HOURS extends TopLevel[HOURS with String]
+    /* "HOURS" */ val HOURS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.HOURS with String = js.native
     
     @js.native
     sealed trait MINS extends TimeDurationUnit
-    /* "MINS" */ @js.native
-    object MINS extends TopLevel[MINS with String]
+    /* "MINS" */ val MINS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.MINS with String = js.native
     
     @js.native
     sealed trait MSECS extends TimeDurationUnit
-    /* "MSECS" */ @js.native
-    object MSECS extends TopLevel[MSECS with String]
+    /* "MSECS" */ val MSECS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.MSECS with String = js.native
     
     @js.native
     sealed trait SECS extends TimeDurationUnit
-    /* "SECS" */ @js.native
-    object SECS extends TopLevel[SECS with String]
+    /* "SECS" */ val SECS: typings.tizenCommonWeb.timeMod.TimeDurationUnit.SECS with String = js.native
   }
   
   @js.native
-  trait TimeUtil extends js.Object {
+  trait TZDateConstructor
+    extends /**
+    * @param datetime Date and time passed as a javascript Date object. If this parameter is omitted, current date and time will be used.
+    * @param timezone The time zone identifier, e.g. "Seoul/Korea" or "Europe/Berlin". If this parameter is omitted, the device's default time zone will be used.
+    */
+  Instantiable0[TZDate]
+       with Instantiable1[/* datetime */ Date, TZDate]
+       with Instantiable2[js.UndefOr[/* datetime */ Date], /* timezone */ String, TZDate]
+       with Instantiable3[/* year */ Double, /* month */ Double, /* day */ Double, TZDate]
+       with Instantiable4[/* year */ Double, /* month */ Double, /* day */ Double, /* hours */ Double, TZDate]
+       with Instantiable5[
+          /* year */ Double, 
+          /* month */ Double, 
+          /* day */ Double, 
+          js.UndefOr[/* hours */ Double], 
+          /* minutes */ Double, 
+          TZDate
+        ]
+       with Instantiable6[
+          /* year */ Double, 
+          /* month */ Double, 
+          /* day */ Double, 
+          js.UndefOr[/* hours */ Double], 
+          js.UndefOr[/* minutes */ Double], 
+          /* seconds */ Double, 
+          TZDate
+        ]
+       with Instantiable7[
+          /* year */ Double, 
+          /* month */ Double, 
+          /* day */ Double, 
+          js.UndefOr[/* hours */ Double], 
+          js.UndefOr[/* minutes */ Double], 
+          js.UndefOr[/* seconds */ Double], 
+          /* milliseconds */ Double, 
+          TZDate
+        ]
+       with Instantiable8[
+          /* year */ Double, 
+          /* month */ Double, 
+          /* day */ Double, 
+          js.UndefOr[/* hours */ Double], 
+          js.UndefOr[/* minutes */ Double], 
+          js.UndefOr[/* seconds */ Double], 
+          js.UndefOr[/* milliseconds */ Double], 
+          /* timezone */ String, 
+          TZDate
+        ]
+  
+  @js.native
+  trait TimeDurationConstructor extends Instantiable2[/* length */ Double, /* unit */ TimeDurationUnit, TimeDuration]
+  
+  @js.native
+  trait TimeUtil extends StObject {
     
     /**
       * Gets synchronously the identifiers of the timezones supported by the device.

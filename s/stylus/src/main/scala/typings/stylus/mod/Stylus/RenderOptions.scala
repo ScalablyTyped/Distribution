@@ -1,12 +1,13 @@
 package typings.stylus.mod.Stylus
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderOptions extends js.Object {
+trait RenderOptions extends StObject {
   
   var Evaluator: js.UndefOr[Instantiable0[typings.stylus.mod.Stylus.Evaluator]] = js.native
   
@@ -29,60 +30,48 @@ object RenderOptions {
   }
   
   @scala.inline
-  implicit class RenderOptionsOps[Self <: RenderOptions] (val x: Self) extends AnyVal {
+  implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluator(value: Instantiable0[Evaluator]): Self = StObject.set(x, "Evaluator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluatorUndefined: Self = StObject.set(x, "Evaluator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluator(value: Instantiable0[Evaluator]): Self = this.set("Evaluator", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteEvaluator: Self = this.set("Evaluator", js.undefined)
+    def setFunctions(value: Dictionary[_]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setGlobals(value: Dictionary[_]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: Dictionary[_]): Self = this.set("functions", value.asInstanceOf[js.Any])
+    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
     @scala.inline
-    def deleteFunctions: Self = this.set("functions", js.undefined)
+    def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobals(value: Dictionary[_]): Self = this.set("globals", value.asInstanceOf[js.Any])
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def deleteGlobals: Self = this.set("globals", js.undefined)
+    def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setImportsVarargs(value: String*): Self = this.set("imports", js.Array(value :_*))
+    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Array[String]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
-    
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
+    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

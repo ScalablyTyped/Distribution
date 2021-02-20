@@ -1,29 +1,15 @@
 package typings.isbnUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("isbn-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def asIsbn10(isbn: String): String = js.native
-  def asIsbn10(isbn: String, hyphenate: Boolean): String = js.native
-  
-  def asIsbn13(isbn: String): String = js.native
-  def asIsbn13(isbn: String, hyphenate: Boolean): String = js.native
-  
-  def hyphenate(isbn: String): String = js.native
-  
-  def isValid(isbn: String): Boolean = js.native
-  def isValid(isbn: String, groups: IGroups): Boolean = js.native
-  
-  def parse(isbn: String): ISBN | Null = js.native
-  def parse(isbn: String, groups: IGroups): ISBN | Null = js.native
-  
+  @JSImport("isbn-utils", "ISBN")
   @js.native
-  class ISBN protected () extends js.Object {
+  class ISBN protected () extends StObject {
     def this(`val`: String, groups: IGroups) = this()
     
     def asIsbn10(): String = js.native
@@ -41,8 +27,9 @@ object mod extends js.Object {
     def isValid(): Boolean = js.native
   }
   
+  @JSImport("isbn-utils", "ISBNcodes")
   @js.native
-  class ISBNcodes () extends js.Object {
+  class ISBNcodes () extends StObject {
     
     val article: String = js.native
     
@@ -62,6 +49,38 @@ object mod extends js.Object {
     
     val source: String = js.native
   }
+  
+  @JSImport("isbn-utils", "asIsbn10")
+  @js.native
+  def asIsbn10(isbn: String): String = js.native
+  @JSImport("isbn-utils", "asIsbn10")
+  @js.native
+  def asIsbn10(isbn: String, hyphenate: Boolean): String = js.native
+  
+  @JSImport("isbn-utils", "asIsbn13")
+  @js.native
+  def asIsbn13(isbn: String): String = js.native
+  @JSImport("isbn-utils", "asIsbn13")
+  @js.native
+  def asIsbn13(isbn: String, hyphenate: Boolean): String = js.native
+  
+  @JSImport("isbn-utils", "hyphenate")
+  @js.native
+  def hyphenate(isbn: String): String = js.native
+  
+  @JSImport("isbn-utils", "isValid")
+  @js.native
+  def isValid(isbn: String): Boolean = js.native
+  @JSImport("isbn-utils", "isValid")
+  @js.native
+  def isValid(isbn: String, groups: IGroups): Boolean = js.native
+  
+  @JSImport("isbn-utils", "parse")
+  @js.native
+  def parse(isbn: String): ISBN | Null = js.native
+  @JSImport("isbn-utils", "parse")
+  @js.native
+  def parse(isbn: String, groups: IGroups): ISBN | Null = js.native
   
   type IGroups = js.Any
 }

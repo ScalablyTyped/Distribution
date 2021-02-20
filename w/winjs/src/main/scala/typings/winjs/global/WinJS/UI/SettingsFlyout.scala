@@ -2,6 +2,7 @@ package typings.winjs.global.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,20 +25,27 @@ class SettingsFlyout ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-/* static members */
-@JSGlobal("WinJS.UI.SettingsFlyout")
-@js.native
-object SettingsFlyout extends js.Object {
+object SettingsFlyout {
+  
+  @JSGlobal("WinJS.UI.SettingsFlyout")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Loads a fragment of the SettingsFlyout. Your app calls this when the user invokes a settings command and the WinJS.Application.onsettings event occurs.
     * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
     **/
+  /* static member */
+  @JSGlobal("WinJS.UI.SettingsFlyout.populateSettings")
+  @js.native
   def populateSettings(e: CustomEvent[_]): Unit = js.native
   
   /**
     * Shows the SettingsPane UI, if hidden, regardless of other state.
     **/
+  /* static member */
+  @JSGlobal("WinJS.UI.SettingsFlyout.show")
+  @js.native
   def show(): Unit = js.native
   
   /**
@@ -45,10 +53,18 @@ object SettingsFlyout extends js.Object {
     * @param id The ID of the Settings element.
     * @param path The path of the page that contains the Settings element.
     **/
+  /* static member */
+  @JSGlobal("WinJS.UI.SettingsFlyout.showSettings")
+  @js.native
   def showSettings(id: String, path: js.Any): Unit = js.native
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.SettingsFlyout.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

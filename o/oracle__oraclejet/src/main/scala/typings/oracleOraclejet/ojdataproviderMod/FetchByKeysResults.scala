@@ -1,12 +1,13 @@
 package typings.oracleOraclejet.ojdataproviderMod
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchByKeysResults[K, D] extends js.Object {
+trait FetchByKeysResults[K, D] extends StObject {
   
   var fetchParameters: FetchByKeysParameters[K] = js.native
   
@@ -21,24 +22,12 @@ object FetchByKeysResults {
   }
   
   @scala.inline
-  implicit class FetchByKeysResultsOps[Self <: FetchByKeysResults[_, _], K, D] (val x: Self with (FetchByKeysResults[K, D])) extends AnyVal {
+  implicit class FetchByKeysResultsMutableBuilder[Self <: FetchByKeysResults[_, _], K, D] (val x: Self with (FetchByKeysResults[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFetchParameters(value: FetchByKeysParameters[K]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFetchParameters(value: FetchByKeysParameters[K]): Self = this.set("fetchParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResults(value: Map[K, Item[K, D]]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResults(value: Map[K, Item[K, D]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }
 }

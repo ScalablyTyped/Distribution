@@ -1,11 +1,12 @@
 package typings.angularCompiler.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deps extends js.Object {
+trait Deps extends StObject {
   
   var deps: js.UndefOr[js.Array[js.Object] | Null] = js.native
   
@@ -28,63 +29,51 @@ object Deps {
   }
   
   @scala.inline
-  implicit class DepsOps[Self <: Deps] (val x: Self) extends AnyVal {
+  implicit class DepsMutableBuilder[Self <: Deps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[js.Object]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsNull: Self = StObject.set(x, "deps", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     @scala.inline
-    def setDepsVarargs(value: js.Object*): Self = this.set("deps", js.Array(value :_*))
+    def setDepsVarargs(value: js.Object*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setDeps(value: js.Array[js.Object]): Self = this.set("deps", value.asInstanceOf[js.Any])
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeps: Self = this.set("deps", js.undefined)
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     @scala.inline
-    def setDepsNull: Self = this.set("deps", null)
+    def setUseClass(value: typings.angularCompiler.coreMod.Type): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
     @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
+    def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseClass(value: typings.angularCompiler.coreMod.Type): Self = this.set("useClass", value.asInstanceOf[js.Any])
+    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
     @scala.inline
-    def deleteUseClass: Self = this.set("useClass", js.undefined)
+    def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseExisting(value: js.Any): Self = this.set("useExisting", value.asInstanceOf[js.Any])
+    def setUseFactoryNull: Self = StObject.set(x, "useFactory", null)
     
     @scala.inline
-    def deleteUseExisting: Self = this.set("useExisting", js.undefined)
+    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
     @scala.inline
-    def setUseFactory(value: js.Function): Self = this.set("useFactory", value.asInstanceOf[js.Any])
+    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseFactory: Self = this.set("useFactory", js.undefined)
-    
-    @scala.inline
-    def setUseFactoryNull: Self = this.set("useFactory", null)
-    
-    @scala.inline
-    def setUseValue(value: js.Any): Self = this.set("useValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseValue: Self = this.set("useValue", js.undefined)
+    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
   }
 }

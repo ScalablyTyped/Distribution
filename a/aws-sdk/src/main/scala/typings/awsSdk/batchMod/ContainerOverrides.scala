@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerOverrides extends js.Object {
+trait ContainerOverrides extends StObject {
   
   /**
     * The command to send to the container that overrides the default command from the Docker image or the job definition.
@@ -46,63 +47,51 @@ object ContainerOverrides {
   }
   
   @scala.inline
-  implicit class ContainerOverridesOps[Self <: ContainerOverrides] (val x: Self) extends AnyVal {
+  implicit class ContainerOverridesMutableBuilder[Self <: ContainerOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
     @scala.inline
-    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    def setEnvironment(value: EnvironmentVariables): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: StringList): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setEnvironmentVarargs(value: KeyValuePair*): Self = StObject.set(x, "environment", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentVarargs(value: KeyValuePair*): Self = this.set("environment", js.Array(value :_*))
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: EnvironmentVariables): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setMemory(value: Integer): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    def setResourceRequirements(value: ResourceRequirements): Self = StObject.set(x, "resourceRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory(value: Integer): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setResourceRequirementsUndefined: Self = StObject.set(x, "resourceRequirements", js.undefined)
     
     @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = StObject.set(x, "resourceRequirements", js.Array(value :_*))
     
     @scala.inline
-    def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = this.set("resourceRequirements", js.Array(value :_*))
+    def setVcpus(value: Integer): Self = StObject.set(x, "vcpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRequirements(value: ResourceRequirements): Self = this.set("resourceRequirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceRequirements: Self = this.set("resourceRequirements", js.undefined)
-    
-    @scala.inline
-    def setVcpus(value: Integer): Self = this.set("vcpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVcpus: Self = this.set("vcpus", js.undefined)
+    def setVcpusUndefined: Self = StObject.set(x, "vcpus", js.undefined)
   }
 }

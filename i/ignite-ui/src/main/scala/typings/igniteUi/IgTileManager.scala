@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -362,264 +363,252 @@ object IgTileManager {
   }
   
   @scala.inline
-  implicit class IgTileManagerOps[Self <: IgTileManager] (val x: Self) extends AnyVal {
+  implicit class IgTileManagerMutableBuilder[Self <: IgTileManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setColumnHeight(value: String | Double | js.Array[_]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    def setColumnHeightUndefined: Self = StObject.set(x, "columnHeight", js.undefined)
     
     @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
+    def setColumnHeightVarargs(value: js.Any*): Self = StObject.set(x, "columnHeight", js.Array(value :_*))
     
     @scala.inline
-    def setColumnHeightVarargs(value: js.Any*): Self = this.set("columnHeight", js.Array(value :_*))
+    def setColumnWidth(value: String | Double | js.Array[_]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeight(value: String | Double | js.Array[_]): Self = this.set("columnHeight", value.asInstanceOf[js.Any])
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def deleteColumnHeight: Self = this.set("columnHeight", js.undefined)
+    def setColumnWidthVarargs(value: js.Any*): Self = StObject.set(x, "columnWidth", js.Array(value :_*))
     
     @scala.inline
-    def setColumnWidthVarargs(value: js.Any*): Self = this.set("columnWidth", js.Array(value :_*))
+    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColumnWidth(value: String | Double | js.Array[_]): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = this.set("dataBinding", js.Any.fromFunction2(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = this.set("dataBound", js.Any.fromFunction2(value))
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
     @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    def setItems(value: js.Object): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Object): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMaximizedState(value: String): Self = StObject.set(x, "maximizedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setMaximizedStateUndefined: Self = StObject.set(x, "maximizedState", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setMaximizedTileIndex(value: Double): Self = StObject.set(x, "maximizedTileIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximizedState(value: String): Self = this.set("maximizedState", value.asInstanceOf[js.Any])
+    def setMaximizedTileIndexUndefined: Self = StObject.set(x, "maximizedTileIndex", js.undefined)
     
     @scala.inline
-    def deleteMaximizedState: Self = this.set("maximizedState", js.undefined)
+    def setMinimizedState(value: String): Self = StObject.set(x, "minimizedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximizedTileIndex(value: Double): Self = this.set("maximizedTileIndex", value.asInstanceOf[js.Any])
+    def setMinimizedStateUndefined: Self = StObject.set(x, "minimizedState", js.undefined)
     
     @scala.inline
-    def deleteMaximizedTileIndex: Self = this.set("maximizedTileIndex", js.undefined)
+    def setPreventMaximizingSelector(value: String): Self = StObject.set(x, "preventMaximizingSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimizedState(value: String): Self = this.set("minimizedState", value.asInstanceOf[js.Any])
+    def setPreventMaximizingSelectorUndefined: Self = StObject.set(x, "preventMaximizingSelector", js.undefined)
     
     @scala.inline
-    def deleteMinimizedState: Self = this.set("minimizedState", js.undefined)
+    def setRearrangeItems(value: Boolean): Self = StObject.set(x, "rearrangeItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventMaximizingSelector(value: String): Self = this.set("preventMaximizingSelector", value.asInstanceOf[js.Any])
+    def setRearrangeItemsUndefined: Self = StObject.set(x, "rearrangeItems", js.undefined)
     
     @scala.inline
-    def deletePreventMaximizingSelector: Self = this.set("preventMaximizingSelector", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRearrangeItems(value: Boolean): Self = this.set("rearrangeItems", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deleteRearrangeItems: Self = this.set("rearrangeItems", js.undefined)
+    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = StObject.set(x, "rendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit): Self = StObject.set(x, "rendering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = this.set("rendered", js.Any.fromFunction2(value))
+    def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
     
     @scala.inline
-    def deleteRendered: Self = this.set("rendered", js.undefined)
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit): Self = this.set("rendering", js.Any.fromFunction2(value))
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
     @scala.inline
-    def deleteRendering: Self = this.set("rendering", js.undefined)
+    def setResponseContentType(value: String): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
     
     @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseContentType(value: String): Self = this.set("responseContentType", value.asInstanceOf[js.Any])
+    def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
     
     @scala.inline
-    def deleteResponseContentType: Self = this.set("responseContentType", js.undefined)
+    def setResponseDataType(value: String): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataKey(value: String): Self = this.set("responseDataKey", value.asInstanceOf[js.Any])
+    def setResponseDataTypeUndefined: Self = StObject.set(x, "responseDataType", js.undefined)
     
     @scala.inline
-    def deleteResponseDataKey: Self = this.set("responseDataKey", js.undefined)
+    def setRightPanelCols(value: Double): Self = StObject.set(x, "rightPanelCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataType(value: String): Self = this.set("responseDataType", value.asInstanceOf[js.Any])
+    def setRightPanelColsUndefined: Self = StObject.set(x, "rightPanelCols", js.undefined)
     
     @scala.inline
-    def deleteResponseDataType: Self = this.set("responseDataType", js.undefined)
+    def setRightPanelTilesHeight(value: Double): Self = StObject.set(x, "rightPanelTilesHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightPanelCols(value: Double): Self = this.set("rightPanelCols", value.asInstanceOf[js.Any])
+    def setRightPanelTilesHeightUndefined: Self = StObject.set(x, "rightPanelTilesHeight", js.undefined)
     
     @scala.inline
-    def deleteRightPanelCols: Self = this.set("rightPanelCols", js.undefined)
+    def setRightPanelTilesWidth(value: Double): Self = StObject.set(x, "rightPanelTilesWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightPanelTilesHeight(value: Double): Self = this.set("rightPanelTilesHeight", value.asInstanceOf[js.Any])
+    def setRightPanelTilesWidthUndefined: Self = StObject.set(x, "rightPanelTilesWidth", js.undefined)
     
     @scala.inline
-    def deleteRightPanelTilesHeight: Self = this.set("rightPanelTilesHeight", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightPanelTilesWidth(value: Double): Self = this.set("rightPanelTilesWidth", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRightPanelTilesWidth: Self = this.set("rightPanelTilesWidth", js.undefined)
+    def setShowRightPanelScroll(value: Boolean): Self = StObject.set(x, "showRightPanelScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setShowRightPanelScrollUndefined: Self = StObject.set(x, "showRightPanelScroll", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setSplitterOptions(value: IgTileManagerSplitterOptions): Self = StObject.set(x, "splitterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRightPanelScroll(value: Boolean): Self = this.set("showRightPanelScroll", value.asInstanceOf[js.Any])
+    def setSplitterOptionsUndefined: Self = StObject.set(x, "splitterOptions", js.undefined)
     
     @scala.inline
-    def deleteShowRightPanelScroll: Self = this.set("showRightPanelScroll", js.undefined)
+    def setTileMaximized(value: (/* event */ Event, /* ui */ TileMaximizedEventUIParam) => Unit): Self = StObject.set(x, "tileMaximized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSplitterOptions(value: IgTileManagerSplitterOptions): Self = this.set("splitterOptions", value.asInstanceOf[js.Any])
+    def setTileMaximizedUndefined: Self = StObject.set(x, "tileMaximized", js.undefined)
     
     @scala.inline
-    def deleteSplitterOptions: Self = this.set("splitterOptions", js.undefined)
+    def setTileMaximizing(value: (/* event */ Event, /* ui */ TileMaximizingEventUIParam) => Unit): Self = StObject.set(x, "tileMaximizing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTileMaximized(value: (/* event */ Event, /* ui */ TileMaximizedEventUIParam) => Unit): Self = this.set("tileMaximized", js.Any.fromFunction2(value))
+    def setTileMaximizingUndefined: Self = StObject.set(x, "tileMaximizing", js.undefined)
     
     @scala.inline
-    def deleteTileMaximized: Self = this.set("tileMaximized", js.undefined)
+    def setTileMinimized(value: (/* event */ Event, /* ui */ TileMinimizedEventUIParam) => Unit): Self = StObject.set(x, "tileMinimized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTileMaximizing(value: (/* event */ Event, /* ui */ TileMaximizingEventUIParam) => Unit): Self = this.set("tileMaximizing", js.Any.fromFunction2(value))
+    def setTileMinimizedUndefined: Self = StObject.set(x, "tileMinimized", js.undefined)
     
     @scala.inline
-    def deleteTileMaximizing: Self = this.set("tileMaximizing", js.undefined)
+    def setTileMinimizing(value: (/* event */ Event, /* ui */ TileMinimizingEventUIParam) => Unit): Self = StObject.set(x, "tileMinimizing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTileMinimized(value: (/* event */ Event, /* ui */ TileMinimizedEventUIParam) => Unit): Self = this.set("tileMinimized", js.Any.fromFunction2(value))
+    def setTileMinimizingUndefined: Self = StObject.set(x, "tileMinimizing", js.undefined)
     
     @scala.inline
-    def deleteTileMinimized: Self = this.set("tileMinimized", js.undefined)
+    def setTileRendered(value: (/* event */ Event, /* ui */ TileRenderedEventUIParam) => Unit): Self = StObject.set(x, "tileRendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTileMinimizing(value: (/* event */ Event, /* ui */ TileMinimizingEventUIParam) => Unit): Self = this.set("tileMinimizing", js.Any.fromFunction2(value))
+    def setTileRenderedUndefined: Self = StObject.set(x, "tileRendered", js.undefined)
     
     @scala.inline
-    def deleteTileMinimizing: Self = this.set("tileMinimizing", js.undefined)
+    def setTileRendering(value: (/* event */ Event, /* ui */ TileRenderingEventUIParam) => Unit): Self = StObject.set(x, "tileRendering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTileRendered(value: (/* event */ Event, /* ui */ TileRenderedEventUIParam) => Unit): Self = this.set("tileRendered", js.Any.fromFunction2(value))
+    def setTileRenderingUndefined: Self = StObject.set(x, "tileRendering", js.undefined)
     
     @scala.inline
-    def deleteTileRendered: Self = this.set("tileRendered", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileRendering(value: (/* event */ Event, /* ui */ TileRenderingEventUIParam) => Unit): Self = this.set("tileRendering", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTileRendering: Self = this.set("tileRendering", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,7 +1,7 @@
 package typings.ddTrace.mod.plugins
 
 import typings.ddTrace.anon.`1`
-import typings.ddTrace.mod.Analyzable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [aws-sdk](https://github.com/aws/aws-sdk-js) module.
   */
 @js.native
-trait awsSdk
-  extends Integration
-     with Analyzable {
+trait awsSdk extends Instrumentation {
   
   /**
     * Hooks to run before spans are finished.
@@ -35,30 +33,18 @@ object awsSdk {
   }
   
   @scala.inline
-  implicit class awsSdkOps[Self <: awsSdk] (val x: Self) extends AnyVal {
+  implicit class awsSdkMutableBuilder[Self <: awsSdk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHooks(value: `1`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSplitByAwsService(value: Boolean): Self = StObject.set(x, "splitByAwsService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: `1`): Self = this.set("hooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
-    
-    @scala.inline
-    def setSplitByAwsService(value: Boolean): Self = this.set("splitByAwsService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitByAwsService: Self = this.set("splitByAwsService", js.undefined)
+    def setSplitByAwsServiceUndefined: Self = StObject.set(x, "splitByAwsService", js.undefined)
   }
 }

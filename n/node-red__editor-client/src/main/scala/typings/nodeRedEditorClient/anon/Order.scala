@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.anon
 
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.reorder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Order extends js.Object {
+trait Order extends StObject {
   
   var order: js.UndefOr[js.Object] = js.native
   
@@ -21,27 +22,15 @@ object Order {
   }
   
   @scala.inline
-  implicit class OrderOps[Self <: Order] (val x: Self) extends AnyVal {
+  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrder(value: js.Object): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setT(value: reorder): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: js.Object): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setT(value: reorder): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

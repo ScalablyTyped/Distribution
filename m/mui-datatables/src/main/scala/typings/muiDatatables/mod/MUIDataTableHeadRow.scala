@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableHeadRow extends js.Object {
+trait MUIDataTableHeadRow extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.native
 }
@@ -18,24 +19,12 @@ object MUIDataTableHeadRow {
   }
   
   @scala.inline
-  implicit class MUIDataTableHeadRowOps[Self <: MUIDataTableHeadRow] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableHeadRowMutableBuilder[Self <: MUIDataTableHeadRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
   }
 }

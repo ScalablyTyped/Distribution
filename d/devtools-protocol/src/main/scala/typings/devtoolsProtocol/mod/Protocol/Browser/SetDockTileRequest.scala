@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetDockTileRequest extends js.Object {
+trait SetDockTileRequest extends StObject {
   
   var badgeLabel: js.UndefOr[String] = js.native
   
@@ -23,30 +24,18 @@ object SetDockTileRequest {
   }
   
   @scala.inline
-  implicit class SetDockTileRequestOps[Self <: SetDockTileRequest] (val x: Self) extends AnyVal {
+  implicit class SetDockTileRequestMutableBuilder[Self <: SetDockTileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadgeLabel(value: String): Self = StObject.set(x, "badgeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeLabelUndefined: Self = StObject.set(x, "badgeLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeLabel(value: String): Self = this.set("badgeLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBadgeLabel: Self = this.set("badgeLabel", js.undefined)
-    
-    @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

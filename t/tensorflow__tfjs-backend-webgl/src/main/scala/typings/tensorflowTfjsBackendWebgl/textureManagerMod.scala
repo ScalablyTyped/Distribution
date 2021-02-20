@@ -6,24 +6,16 @@ import typings.tensorflowTfjsBackendWebgl.gpgpuContextMod.GPGPUContext
 import typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType
 import typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureConfig
 import typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/texture_manager", JSImport.Namespace)
-@js.native
-object textureManagerMod extends js.Object {
+object textureManagerMod {
   
-  def computeBytes(
-    shape: js.Tuple2[Double, Double],
-    physicalTexType: PhysicalTextureType,
-    gl: WebGLRenderingContext,
-    textureConfig: TextureConfig,
-    isPacked: Boolean
-  ): Double = js.native
-  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/texture_manager", "TextureManager")
   @js.native
-  class TextureManager protected () extends js.Object {
+  class TextureManager protected () extends StObject {
     def this(gpgpu: GPGPUContext) = this()
     
     var _numBytesAllocated: js.Any = js.native
@@ -63,4 +55,14 @@ object textureManagerMod extends js.Object {
     
     var usedTextures: js.Any = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/texture_manager", "computeBytes")
+  @js.native
+  def computeBytes(
+    shape: js.Tuple2[Double, Double],
+    physicalTexType: PhysicalTextureType,
+    gl: WebGLRenderingContext,
+    textureConfig: TextureConfig,
+    isPacked: Boolean
+  ): Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildDefinitionChangingEvent extends js.Object {
+trait BuildDefinitionChangingEvent extends StObject {
   
   var changeType: AuditAction = js.native
   
@@ -22,27 +23,15 @@ object BuildDefinitionChangingEvent {
   }
   
   @scala.inline
-  implicit class BuildDefinitionChangingEventOps[Self <: BuildDefinitionChangingEvent] (val x: Self) extends AnyVal {
+  implicit class BuildDefinitionChangingEventMutableBuilder[Self <: BuildDefinitionChangingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewDefinition(value: BuildDefinition): Self = StObject.set(x, "newDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeType(value: AuditAction): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewDefinition(value: BuildDefinition): Self = this.set("newDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalDefinition(value: BuildDefinition): Self = this.set("originalDefinition", value.asInstanceOf[js.Any])
+    def setOriginalDefinition(value: BuildDefinition): Self = StObject.set(x, "originalDefinition", value.asInstanceOf[js.Any])
   }
 }

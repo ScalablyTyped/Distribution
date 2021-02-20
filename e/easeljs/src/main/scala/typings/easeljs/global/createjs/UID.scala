@@ -1,5 +1,6 @@
 package typings.easeljs.global.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class UID ()
   extends typings.easeljs.createjs.UID
 /* static members */
-@JSGlobal("createjs.UID")
-@js.native
-object UID extends js.Object {
+object UID {
   
   // methods
+  @JSGlobal("createjs.UID.get")
+  @js.native
   def get(): Double = js.native
 }

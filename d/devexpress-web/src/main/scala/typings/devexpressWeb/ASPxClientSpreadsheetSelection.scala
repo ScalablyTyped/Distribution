@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the selection in the Spreadsheet.
   */
 @js.native
-trait ASPxClientSpreadsheetSelection extends js.Object {
+trait ASPxClientSpreadsheetSelection extends StObject {
   
   /**
     * Gets the column index of the active cell.
@@ -56,36 +57,24 @@ object ASPxClientSpreadsheetSelection {
   }
   
   @scala.inline
-  implicit class ASPxClientSpreadsheetSelectionOps[Self <: ASPxClientSpreadsheetSelection] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSpreadsheetSelectionMutableBuilder[Self <: ASPxClientSpreadsheetSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCellColumnIndex(value: Double): Self = StObject.set(x, "activeCellColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveCellRowIndex(value: Double): Self = StObject.set(x, "activeCellRowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottomRowIndex(value: Double): Self = StObject.set(x, "bottomRowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCellColumnIndex(value: Double): Self = this.set("activeCellColumnIndex", value.asInstanceOf[js.Any])
+    def setLeftColumnIndex(value: Double): Self = StObject.set(x, "leftColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCellRowIndex(value: Double): Self = this.set("activeCellRowIndex", value.asInstanceOf[js.Any])
+    def setRightColumnIndex(value: Double): Self = StObject.set(x, "rightColumnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomRowIndex(value: Double): Self = this.set("bottomRowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftColumnIndex(value: Double): Self = this.set("leftColumnIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightColumnIndex(value: Double): Self = this.set("rightColumnIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopRowIndex(value: Double): Self = this.set("topRowIndex", value.asInstanceOf[js.Any])
+    def setTopRowIndex(value: Double): Self = StObject.set(x, "topRowIndex", value.asInstanceOf[js.Any])
   }
 }

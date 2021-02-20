@@ -7,6 +7,7 @@ import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.NFKD
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.lower
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.upper
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

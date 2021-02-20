@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,282 +107,270 @@ object PerformanceMetricsDetails {
   }
   
   @scala.inline
-  implicit class PerformanceMetricsDetailsOps[Self <: PerformanceMetricsDetails] (val x: Self) extends AnyVal {
+  implicit class PerformanceMetricsDetailsMutableBuilder[Self <: PerformanceMetricsDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument_count(value: Double): Self = StObject.set(x, "document_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocument_countUndefined: Self = StObject.set(x, "document_count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocument_size(value: Double): Self = StObject.set(x, "document_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_count(value: Double): Self = this.set("document_count", value.asInstanceOf[js.Any])
+    def setDocument_sizeUndefined: Self = StObject.set(x, "document_size", js.undefined)
     
     @scala.inline
-    def deleteDocument_count: Self = this.set("document_count", js.undefined)
+    def setDomContentLoaded(value: Double): Self = StObject.set(x, "domContentLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_size(value: Double): Self = this.set("document_size", value.asInstanceOf[js.Any])
+    def setDomContentLoadedUndefined: Self = StObject.set(x, "domContentLoaded", js.undefined)
     
     @scala.inline
-    def deleteDocument_size: Self = this.set("document_size", js.undefined)
+    def setEstimatedInputLatency(value: Double): Self = StObject.set(x, "estimatedInputLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomContentLoaded(value: Double): Self = this.set("domContentLoaded", value.asInstanceOf[js.Any])
+    def setEstimatedInputLatencyUndefined: Self = StObject.set(x, "estimatedInputLatency", js.undefined)
     
     @scala.inline
-    def deleteDomContentLoaded: Self = this.set("domContentLoaded", js.undefined)
+    def setFirstCPUIdle(value: Double): Self = StObject.set(x, "firstCPUIdle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedInputLatency(value: Double): Self = this.set("estimatedInputLatency", value.asInstanceOf[js.Any])
+    def setFirstCPUIdleUndefined: Self = StObject.set(x, "firstCPUIdle", js.undefined)
     
     @scala.inline
-    def deleteEstimatedInputLatency: Self = this.set("estimatedInputLatency", js.undefined)
+    def setFirstContentfulPaint(value: Double): Self = StObject.set(x, "firstContentfulPaint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstCPUIdle(value: Double): Self = this.set("firstCPUIdle", value.asInstanceOf[js.Any])
+    def setFirstContentfulPaintUndefined: Self = StObject.set(x, "firstContentfulPaint", js.undefined)
     
     @scala.inline
-    def deleteFirstCPUIdle: Self = this.set("firstCPUIdle", js.undefined)
+    def setFirstInteractive(value: Double): Self = StObject.set(x, "firstInteractive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstContentfulPaint(value: Double): Self = this.set("firstContentfulPaint", value.asInstanceOf[js.Any])
+    def setFirstInteractiveUndefined: Self = StObject.set(x, "firstInteractive", js.undefined)
     
     @scala.inline
-    def deleteFirstContentfulPaint: Self = this.set("firstContentfulPaint", js.undefined)
+    def setFirstMeaningfulPaint(value: Double): Self = StObject.set(x, "firstMeaningfulPaint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstInteractive(value: Double): Self = this.set("firstInteractive", value.asInstanceOf[js.Any])
+    def setFirstMeaningfulPaintUndefined: Self = StObject.set(x, "firstMeaningfulPaint", js.undefined)
     
     @scala.inline
-    def deleteFirstInteractive: Self = this.set("firstInteractive", js.undefined)
+    def setFirstPaint(value: Double): Self = StObject.set(x, "firstPaint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMeaningfulPaint(value: Double): Self = this.set("firstMeaningfulPaint", value.asInstanceOf[js.Any])
+    def setFirstPaintUndefined: Self = StObject.set(x, "firstPaint", js.undefined)
     
     @scala.inline
-    def deleteFirstMeaningfulPaint: Self = this.set("firstMeaningfulPaint", js.undefined)
+    def setFirstVisualChange(value: Double): Self = StObject.set(x, "firstVisualChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPaint(value: Double): Self = this.set("firstPaint", value.asInstanceOf[js.Any])
+    def setFirstVisualChangeUndefined: Self = StObject.set(x, "firstVisualChange", js.undefined)
     
     @scala.inline
-    def deleteFirstPaint: Self = this.set("firstPaint", js.undefined)
+    def setFont_count(value: Double): Self = StObject.set(x, "font_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstVisualChange(value: Double): Self = this.set("firstVisualChange", value.asInstanceOf[js.Any])
+    def setFont_countUndefined: Self = StObject.set(x, "font_count", js.undefined)
     
     @scala.inline
-    def deleteFirstVisualChange: Self = this.set("firstVisualChange", js.undefined)
+    def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_count(value: Double): Self = this.set("font_count", value.asInstanceOf[js.Any])
+    def setFont_sizeUndefined: Self = StObject.set(x, "font_size", js.undefined)
     
     @scala.inline
-    def deleteFont_count: Self = this.set("font_count", js.undefined)
+    def setImage_count(value: Double): Self = StObject.set(x, "image_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size(value: Double): Self = this.set("font_size", value.asInstanceOf[js.Any])
+    def setImage_countUndefined: Self = StObject.set(x, "image_count", js.undefined)
     
     @scala.inline
-    def deleteFont_size: Self = this.set("font_size", js.undefined)
+    def setImage_size(value: Double): Self = StObject.set(x, "image_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_count(value: Double): Self = this.set("image_count", value.asInstanceOf[js.Any])
+    def setImage_sizeUndefined: Self = StObject.set(x, "image_size", js.undefined)
     
     @scala.inline
-    def deleteImage_count: Self = this.set("image_count", js.undefined)
+    def setLastVisualChange(value: Double): Self = StObject.set(x, "lastVisualChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_size(value: Double): Self = this.set("image_size", value.asInstanceOf[js.Any])
+    def setLastVisualChangeUndefined: Self = StObject.set(x, "lastVisualChange", js.undefined)
     
     @scala.inline
-    def deleteImage_size: Self = this.set("image_size", js.undefined)
+    def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastVisualChange(value: Double): Self = this.set("lastVisualChange", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteLastVisualChange: Self = this.set("lastVisualChange", js.undefined)
+    def setMainDocumentTransferSize(value: Double): Self = StObject.set(x, "mainDocumentTransferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: Double): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setMainDocumentTransferSizeUndefined: Self = StObject.set(x, "mainDocumentTransferSize", js.undefined)
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setMaxRtt(value: Double): Self = StObject.set(x, "maxRtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainDocumentTransferSize(value: Double): Self = this.set("mainDocumentTransferSize", value.asInstanceOf[js.Any])
+    def setMaxRttUndefined: Self = StObject.set(x, "maxRtt", js.undefined)
     
     @scala.inline
-    def deleteMainDocumentTransferSize: Self = this.set("mainDocumentTransferSize", js.undefined)
+    def setMaxServerLatency(value: Double): Self = StObject.set(x, "maxServerLatency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRtt(value: Double): Self = this.set("maxRtt", value.asInstanceOf[js.Any])
+    def setMaxServerLatencyUndefined: Self = StObject.set(x, "maxServerLatency", js.undefined)
     
     @scala.inline
-    def deleteMaxRtt: Self = this.set("maxRtt", js.undefined)
+    def setNumFonts(value: Double): Self = StObject.set(x, "numFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxServerLatency(value: Double): Self = this.set("maxServerLatency", value.asInstanceOf[js.Any])
+    def setNumFontsUndefined: Self = StObject.set(x, "numFonts", js.undefined)
     
     @scala.inline
-    def deleteMaxServerLatency: Self = this.set("maxServerLatency", js.undefined)
+    def setNumRequests(value: Double): Self = StObject.set(x, "numRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFonts(value: Double): Self = this.set("numFonts", value.asInstanceOf[js.Any])
+    def setNumRequestsUndefined: Self = StObject.set(x, "numRequests", js.undefined)
     
     @scala.inline
-    def deleteNumFonts: Self = this.set("numFonts", js.undefined)
+    def setNumScripts(value: Double): Self = StObject.set(x, "numScripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumRequests(value: Double): Self = this.set("numRequests", value.asInstanceOf[js.Any])
+    def setNumScriptsUndefined: Self = StObject.set(x, "numScripts", js.undefined)
     
     @scala.inline
-    def deleteNumRequests: Self = this.set("numRequests", js.undefined)
+    def setNumStylesheets(value: Double): Self = StObject.set(x, "numStylesheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumScripts(value: Double): Self = this.set("numScripts", value.asInstanceOf[js.Any])
+    def setNumStylesheetsUndefined: Self = StObject.set(x, "numStylesheets", js.undefined)
     
     @scala.inline
-    def deleteNumScripts: Self = this.set("numScripts", js.undefined)
+    def setNumTasks(value: Double): Self = StObject.set(x, "numTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumStylesheets(value: Double): Self = this.set("numStylesheets", value.asInstanceOf[js.Any])
+    def setNumTasksOver100ms(value: Double): Self = StObject.set(x, "numTasksOver100ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumStylesheets: Self = this.set("numStylesheets", js.undefined)
+    def setNumTasksOver100msUndefined: Self = StObject.set(x, "numTasksOver100ms", js.undefined)
     
     @scala.inline
-    def setNumTasks(value: Double): Self = this.set("numTasks", value.asInstanceOf[js.Any])
+    def setNumTasksOver10ms(value: Double): Self = StObject.set(x, "numTasksOver10ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumTasks: Self = this.set("numTasks", js.undefined)
+    def setNumTasksOver10msUndefined: Self = StObject.set(x, "numTasksOver10ms", js.undefined)
     
     @scala.inline
-    def setNumTasksOver100ms(value: Double): Self = this.set("numTasksOver100ms", value.asInstanceOf[js.Any])
+    def setNumTasksOver25ms(value: Double): Self = StObject.set(x, "numTasksOver25ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumTasksOver100ms: Self = this.set("numTasksOver100ms", js.undefined)
+    def setNumTasksOver25msUndefined: Self = StObject.set(x, "numTasksOver25ms", js.undefined)
     
     @scala.inline
-    def setNumTasksOver10ms(value: Double): Self = this.set("numTasksOver10ms", value.asInstanceOf[js.Any])
+    def setNumTasksOver500ms(value: Double): Self = StObject.set(x, "numTasksOver500ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumTasksOver10ms: Self = this.set("numTasksOver10ms", js.undefined)
+    def setNumTasksOver500msUndefined: Self = StObject.set(x, "numTasksOver500ms", js.undefined)
     
     @scala.inline
-    def setNumTasksOver25ms(value: Double): Self = this.set("numTasksOver25ms", value.asInstanceOf[js.Any])
+    def setNumTasksOver50ms(value: Double): Self = StObject.set(x, "numTasksOver50ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumTasksOver25ms: Self = this.set("numTasksOver25ms", js.undefined)
+    def setNumTasksOver50msUndefined: Self = StObject.set(x, "numTasksOver50ms", js.undefined)
     
     @scala.inline
-    def setNumTasksOver500ms(value: Double): Self = this.set("numTasksOver500ms", value.asInstanceOf[js.Any])
+    def setNumTasksUndefined: Self = StObject.set(x, "numTasks", js.undefined)
     
     @scala.inline
-    def deleteNumTasksOver500ms: Self = this.set("numTasksOver500ms", js.undefined)
+    def setOther_count(value: Double): Self = StObject.set(x, "other_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTasksOver50ms(value: Double): Self = this.set("numTasksOver50ms", value.asInstanceOf[js.Any])
+    def setOther_countUndefined: Self = StObject.set(x, "other_count", js.undefined)
     
     @scala.inline
-    def deleteNumTasksOver50ms: Self = this.set("numTasksOver50ms", js.undefined)
+    def setOther_size(value: Double): Self = StObject.set(x, "other_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther_count(value: Double): Self = this.set("other_count", value.asInstanceOf[js.Any])
+    def setOther_sizeUndefined: Self = StObject.set(x, "other_size", js.undefined)
     
     @scala.inline
-    def deleteOther_count: Self = this.set("other_count", js.undefined)
+    def setRequestsCount(value: Double): Self = StObject.set(x, "requestsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther_size(value: Double): Self = this.set("other_size", value.asInstanceOf[js.Any])
+    def setRequestsCountUndefined: Self = StObject.set(x, "requestsCount", js.undefined)
     
     @scala.inline
-    def deleteOther_size: Self = this.set("other_size", js.undefined)
+    def setRequestsSize(value: Double): Self = StObject.set(x, "requestsSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestsCount(value: Double): Self = this.set("requestsCount", value.asInstanceOf[js.Any])
+    def setRequestsSizeUndefined: Self = StObject.set(x, "requestsSize", js.undefined)
     
     @scala.inline
-    def deleteRequestsCount: Self = this.set("requestsCount", js.undefined)
+    def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestsSize(value: Double): Self = this.set("requestsSize", value.asInstanceOf[js.Any])
+    def setRttUndefined: Self = StObject.set(x, "rtt", js.undefined)
     
     @scala.inline
-    def deleteRequestsSize: Self = this.set("requestsSize", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtt(value: Double): Self = this.set("rtt", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deleteRtt: Self = this.set("rtt", js.undefined)
+    def setScript_count(value: Double): Self = StObject.set(x, "script_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setScript_countUndefined: Self = StObject.set(x, "script_count", js.undefined)
     
     @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScript_size(value: Double): Self = StObject.set(x, "script_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript_count(value: Double): Self = this.set("script_count", value.asInstanceOf[js.Any])
+    def setScript_sizeUndefined: Self = StObject.set(x, "script_size", js.undefined)
     
     @scala.inline
-    def deleteScript_count: Self = this.set("script_count", js.undefined)
+    def setSpeedIndex(value: Double): Self = StObject.set(x, "speedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript_size(value: Double): Self = this.set("script_size", value.asInstanceOf[js.Any])
+    def setSpeedIndexUndefined: Self = StObject.set(x, "speedIndex", js.undefined)
     
     @scala.inline
-    def deleteScript_size: Self = this.set("script_size", js.undefined)
+    def setStylesheet_count(value: Double): Self = StObject.set(x, "stylesheet_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedIndex(value: Double): Self = this.set("speedIndex", value.asInstanceOf[js.Any])
+    def setStylesheet_countUndefined: Self = StObject.set(x, "stylesheet_count", js.undefined)
     
     @scala.inline
-    def deleteSpeedIndex: Self = this.set("speedIndex", js.undefined)
+    def setStylesheet_size(value: Double): Self = StObject.set(x, "stylesheet_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheet_count(value: Double): Self = this.set("stylesheet_count", value.asInstanceOf[js.Any])
+    def setStylesheet_sizeUndefined: Self = StObject.set(x, "stylesheet_size", js.undefined)
     
     @scala.inline
-    def deleteStylesheet_count: Self = this.set("stylesheet_count", js.undefined)
+    def setThroughput(value: Double): Self = StObject.set(x, "throughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheet_size(value: Double): Self = this.set("stylesheet_size", value.asInstanceOf[js.Any])
+    def setThroughputUndefined: Self = StObject.set(x, "throughput", js.undefined)
     
     @scala.inline
-    def deleteStylesheet_size: Self = this.set("stylesheet_size", js.undefined)
+    def setTimeToFirstByte(value: Double): Self = StObject.set(x, "timeToFirstByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThroughput(value: Double): Self = this.set("throughput", value.asInstanceOf[js.Any])
+    def setTimeToFirstByteUndefined: Self = StObject.set(x, "timeToFirstByte", js.undefined)
     
     @scala.inline
-    def deleteThroughput: Self = this.set("throughput", js.undefined)
+    def setTotalByteWeight(value: Double): Self = StObject.set(x, "totalByteWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToFirstByte(value: Double): Self = this.set("timeToFirstByte", value.asInstanceOf[js.Any])
+    def setTotalByteWeightUndefined: Self = StObject.set(x, "totalByteWeight", js.undefined)
     
     @scala.inline
-    def deleteTimeToFirstByte: Self = this.set("timeToFirstByte", js.undefined)
+    def setTotalTaskTime(value: Double): Self = StObject.set(x, "totalTaskTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalByteWeight(value: Double): Self = this.set("totalByteWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalByteWeight: Self = this.set("totalByteWeight", js.undefined)
-    
-    @scala.inline
-    def setTotalTaskTime(value: Double): Self = this.set("totalTaskTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalTaskTime: Self = this.set("totalTaskTime", js.undefined)
+    def setTotalTaskTimeUndefined: Self = StObject.set(x, "totalTaskTime", js.undefined)
   }
 }

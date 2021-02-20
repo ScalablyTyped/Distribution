@@ -3,6 +3,7 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.anon.Alignment
 import typings.pixiJs.anon.Color
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

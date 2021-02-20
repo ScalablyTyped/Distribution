@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,33 +57,21 @@ object XNumberFormatTypes {
   }
   
   @scala.inline
-  implicit class XNumberFormatTypesOps[Self <: XNumberFormatTypes] (val x: Self) extends AnyVal {
+  implicit class XNumberFormatTypesMutableBuilder[Self <: XNumberFormatTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFormatForLocale(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatForLocale", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFormatIndex(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStandardFormat(value: (Double, Locale) => Double): Self = StObject.set(x, "getStandardFormat", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFormatForLocale(value: (Double, Locale) => Double): Self = this.set("getFormatForLocale", js.Any.fromFunction2(value))
+    def setGetStandardIndex(value: Locale => Double): Self = StObject.set(x, "getStandardIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormatIndex(value: (Double, Locale) => Double): Self = this.set("getFormatIndex", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetStandardFormat(value: (Double, Locale) => Double): Self = this.set("getStandardFormat", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetStandardIndex(value: Locale => Double): Self = this.set("getStandardIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsTypeCompatible(value: (Double, Double) => Boolean): Self = this.set("isTypeCompatible", js.Any.fromFunction2(value))
+    def setIsTypeCompatible(value: (Double, Double) => Boolean): Self = StObject.set(x, "isTypeCompatible", js.Any.fromFunction2(value))
   }
 }

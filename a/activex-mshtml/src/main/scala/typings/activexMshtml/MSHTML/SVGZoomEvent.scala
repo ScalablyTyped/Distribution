@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGZoomEvent extends js.Object {
+trait SVGZoomEvent extends StObject {
   
   @JSName("MSHTML.SVGZoomEvent_typekey")
   var MSHTMLDotSVGZoomEvent_typekey: SVGZoomEvent = js.native

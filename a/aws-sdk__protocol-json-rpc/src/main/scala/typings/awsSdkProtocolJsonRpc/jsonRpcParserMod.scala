@@ -4,17 +4,17 @@ import typings.awsSdkTypes.httpMod.HttpResponse
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.serdeMod.StreamCollector
 import typings.awsSdkTypes.utilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/protocol-json-rpc/build/JsonRpcParser", JSImport.Namespace)
-@js.native
-object jsonRpcParserMod extends js.Object {
+object jsonRpcParserMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseParser<StreamType> * / any */ @js.native
-  class JsonRpcParser[StreamType] protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseParser<StreamType> * / any */ @JSImport("@aws-sdk/protocol-json-rpc/build/JsonRpcParser", "JsonRpcParser")
+  @js.native
+  class JsonRpcParser[StreamType] protected () extends StObject {
     def this(
       bodyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodyParser */ js.Any,
       parseServiceException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ js.Any,

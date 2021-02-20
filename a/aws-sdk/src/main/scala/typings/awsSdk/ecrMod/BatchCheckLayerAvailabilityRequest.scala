@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchCheckLayerAvailabilityRequest extends js.Object {
+trait BatchCheckLayerAvailabilityRequest extends StObject {
   
   /**
     * The digests of the image layers to check.
@@ -31,33 +32,21 @@ object BatchCheckLayerAvailabilityRequest {
   }
   
   @scala.inline
-  implicit class BatchCheckLayerAvailabilityRequestOps[Self <: BatchCheckLayerAvailabilityRequest] (val x: Self) extends AnyVal {
+  implicit class BatchCheckLayerAvailabilityRequestMutableBuilder[Self <: BatchCheckLayerAvailabilityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerDigests(value: BatchedOperationLayerDigestList): Self = StObject.set(x, "layerDigests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerDigestsVarargs(value: BatchedOperationLayerDigest*): Self = StObject.set(x, "layerDigests", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerDigestsVarargs(value: BatchedOperationLayerDigest*): Self = this.set("layerDigests", js.Array(value :_*))
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def setLayerDigests(value: BatchedOperationLayerDigestList): Self = this.set("layerDigests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.vexflow.global.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,11 @@ class StaveConnector protected ()
   extends typings.vexflow.Vex.Flow.StaveConnector {
   def this(top_stave: typings.vexflow.Vex.Flow.Stave, bottom_stave: typings.vexflow.Vex.Flow.Stave) = this()
 }
-@JSGlobal("Vex.Flow.StaveConnector")
-@js.native
-object StaveConnector extends js.Object {
+object StaveConnector {
   
+  @JSGlobal("Vex.Flow.StaveConnector.type")
   @js.native
-  object `type` extends js.Object {
+  object `type` extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.StaveConnector.`type` with Double] = js.native

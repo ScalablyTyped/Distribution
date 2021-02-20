@@ -15,12 +15,13 @@ import typings.colorConvert.conversionsMod.LAB_
 import typings.colorConvert.conversionsMod.LCH_
 import typings.colorConvert.conversionsMod.RGB_
 import typings.colorConvert.conversionsMod.XYZ_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ansi256 extends js.Object {
+trait ansi256 extends StObject {
   
   def ansi16(from: ANSI256_): ANSI16_ = js.native
   
@@ -74,60 +75,48 @@ object ansi256 {
   }
   
   @scala.inline
-  implicit class ansi256Ops[Self <: ansi256] (val x: Self) extends AnyVal {
+  implicit class ansi256MutableBuilder[Self <: ansi256] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnsi16(value: ANSI256_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApple(value: ANSI256_ => APPLE_): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCmyk(value: ANSI256_ => CMYK_): Self = StObject.set(x, "cmyk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnsi16(value: ANSI256_ => ANSI16_): Self = this.set("ansi16", js.Any.fromFunction1(value))
+    def setGray(value: ANSI256_ => GRAY_): Self = StObject.set(x, "gray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApple(value: ANSI256_ => APPLE_): Self = this.set("apple", js.Any.fromFunction1(value))
+    def setHcg(value: ANSI256_ => HCG_): Self = StObject.set(x, "hcg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCmyk(value: ANSI256_ => CMYK_): Self = this.set("cmyk", js.Any.fromFunction1(value))
+    def setHex(value: ANSI256_ => HEX_): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGray(value: ANSI256_ => GRAY_): Self = this.set("gray", js.Any.fromFunction1(value))
+    def setHsl(value: ANSI256_ => HSL_): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHcg(value: ANSI256_ => HCG_): Self = this.set("hcg", js.Any.fromFunction1(value))
+    def setHsv(value: ANSI256_ => HSV_): Self = StObject.set(x, "hsv", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHex(value: ANSI256_ => HEX_): Self = this.set("hex", js.Any.fromFunction1(value))
+    def setHwb(value: ANSI256_ => HWB_): Self = StObject.set(x, "hwb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHsl(value: ANSI256_ => HSL_): Self = this.set("hsl", js.Any.fromFunction1(value))
+    def setKeyword(value: ANSI256_ => KEYWORD_): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHsv(value: ANSI256_ => HSV_): Self = this.set("hsv", js.Any.fromFunction1(value))
+    def setLab(value: ANSI256_ => LAB_): Self = StObject.set(x, "lab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHwb(value: ANSI256_ => HWB_): Self = this.set("hwb", js.Any.fromFunction1(value))
+    def setLch(value: ANSI256_ => LCH_): Self = StObject.set(x, "lch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyword(value: ANSI256_ => KEYWORD_): Self = this.set("keyword", js.Any.fromFunction1(value))
+    def setRgb(value: ANSI256_ => RGB_): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLab(value: ANSI256_ => LAB_): Self = this.set("lab", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLch(value: ANSI256_ => LCH_): Self = this.set("lch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRgb(value: ANSI256_ => RGB_): Self = this.set("rgb", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setXyz(value: ANSI256_ => XYZ_): Self = this.set("xyz", js.Any.fromFunction1(value))
+    def setXyz(value: ANSI256_ => XYZ_): Self = StObject.set(x, "xyz", js.Any.fromFunction1(value))
   }
 }

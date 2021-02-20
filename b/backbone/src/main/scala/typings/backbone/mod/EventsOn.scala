@@ -1,5 +1,6 @@
 package typings.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see below.
   */
 @js.native
-trait EventsOn[BaseT] extends js.Object {
+trait EventsOn[BaseT] extends StObject {
   
   def apply[T /* <: BaseT */](eventMap: EventMap): T = js.native
   def apply[T /* <: BaseT */](eventMap: EventMap, context: js.Any): T = js.native

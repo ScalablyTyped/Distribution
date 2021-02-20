@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Storage.Streams
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataReaderFactory extends js.Object {
+trait IDataReaderFactory extends StObject {
   
   def createDataReader(inputStream: IInputStream): DataReader = js.native
 }
@@ -18,21 +19,9 @@ object IDataReaderFactory {
   }
   
   @scala.inline
-  implicit class IDataReaderFactoryOps[Self <: IDataReaderFactory] (val x: Self) extends AnyVal {
+  implicit class IDataReaderFactoryMutableBuilder[Self <: IDataReaderFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateDataReader(value: IInputStream => DataReader): Self = this.set("createDataReader", js.Any.fromFunction1(value))
+    def setCreateDataReader(value: IInputStream => DataReader): Self = StObject.set(x, "createDataReader", js.Any.fromFunction1(value))
   }
 }

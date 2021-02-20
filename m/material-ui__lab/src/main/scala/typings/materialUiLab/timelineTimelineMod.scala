@@ -1,0 +1,121 @@
+package typings.materialUiLab
+
+import typings.materialUiLab.anon.PartialClassNameMapTimeli
+import typings.materialUiLab.materialUiLabStrings.alternate
+import typings.materialUiLab.materialUiLabStrings.left
+import typings.materialUiLab.materialUiLabStrings.right
+import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object timelineTimelineMod {
+  
+  @JSImport("@material-ui/lab/Timeline/Timeline", JSImport.Default)
+  @js.native
+  def default(props: TimelineProps): Element = js.native
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.materialUiLab.materialUiLabStrings.root
+    - typings.materialUiLab.materialUiLabStrings.alignLeft
+    - typings.materialUiLab.materialUiLabStrings.alignRight
+    - typings.materialUiLab.materialUiLabStrings.alignAlternate
+  */
+  trait TimelineClassKey extends StObject
+  object TimelineClassKey {
+    
+    @scala.inline
+    def alignAlternate: typings.materialUiLab.materialUiLabStrings.alignAlternate = "alignAlternate".asInstanceOf[typings.materialUiLab.materialUiLabStrings.alignAlternate]
+    
+    @scala.inline
+    def alignLeft: typings.materialUiLab.materialUiLabStrings.alignLeft = "alignLeft".asInstanceOf[typings.materialUiLab.materialUiLabStrings.alignLeft]
+    
+    @scala.inline
+    def alignRight: typings.materialUiLab.materialUiLabStrings.alignRight = "alignRight".asInstanceOf[typings.materialUiLab.materialUiLabStrings.alignRight]
+    
+    @scala.inline
+    def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
+  }
+  
+  /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/lab.@material-ui/lab/Timeline/Timeline.TimelineClassKey, never> */
+  @js.native
+  trait TimelineProps extends StObject {
+    
+    /**
+      * The position where the timeline's content should appear.
+      */
+    var align: js.UndefOr[left | right | alternate] = js.native
+    
+    /**
+      * The content of the component.
+      */
+    var children: js.UndefOr[ReactNode] = js.native
+    
+    var className: js.UndefOr[String] = js.native
+    
+    var classes: js.UndefOr[PartialClassNameMapTimeli] = js.native
+    
+    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    
+    var style: js.UndefOr[CSSProperties] = js.native
+  }
+  object TimelineProps {
+    
+    @scala.inline
+    def apply(): TimelineProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TimelineProps]
+    }
+    
+    @scala.inline
+    implicit class TimelinePropsMutableBuilder[Self <: TimelineProps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAlign(value: left | right | alternate): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      
+      @scala.inline
+      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      @scala.inline
+      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      @scala.inline
+      def setClasses(value: PartialClassNameMapTimeli): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      
+      @scala.inline
+      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      
+      @scala.inline
+      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      
+      @scala.inline
+      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
+  }
+}

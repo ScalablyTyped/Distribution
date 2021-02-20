@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object FilterQualityEnumValues {
   }
   
   @scala.inline
-  implicit class FilterQualityEnumValuesOps[Self <: FilterQualityEnumValues] (val x: Self) extends AnyVal {
+  implicit class FilterQualityEnumValuesMutableBuilder[Self <: FilterQualityEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHigh(value: FilterQuality): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLow(value: FilterQuality): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedium(value: FilterQuality): Self = StObject.set(x, "Medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh(value: FilterQuality): Self = this.set("High", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLow(value: FilterQuality): Self = this.set("Low", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedium(value: FilterQuality): Self = this.set("Medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: FilterQuality): Self = this.set("None", value.asInstanceOf[js.Any])
+    def setNone(value: FilterQuality): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
   }
 }

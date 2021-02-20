@@ -5,16 +5,16 @@ import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisConfigu
 import typings.awsSdkClientKinesisBrowser.kinesisConfigurationMod.KinesisResolvedConfiguration
 import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.commandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/KinesisClient", JSImport.Namespace)
-@js.native
-object kinesisClientMod extends js.Object {
+object kinesisClientMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/KinesisClient", "KinesisClient")
   @js.native
-  class KinesisClient protected () extends js.Object {
+  class KinesisClient protected () extends StObject {
     def this(configuration: KinesisConfiguration) = this()
     
     val config: KinesisResolvedConfiguration = js.native

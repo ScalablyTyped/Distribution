@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pool extends js.Object {
+trait Pool extends StObject {
   
   def constructObject(): js.Any = js.native
   
@@ -33,39 +34,27 @@ object Pool {
   }
   
   @scala.inline
-  implicit class PoolOps[Self <: Pool] (val x: Self) extends AnyVal {
+  implicit class PoolMutableBuilder[Self <: Pool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstructObject(value: () => js.Any): Self = StObject.set(x, "constructObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructObject(value: () => js.Any): Self = this.set("constructObject", js.Any.fromFunction0(value))
+    def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
     @scala.inline
-    def setGet(value: () => js.Any): Self = this.set("get", js.Any.fromFunction0(value))
+    def setRelease(value: () => js.Any): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setObjectsVarargs(value: js.Any*): Self = this.set("objects", js.Array(value :_*))
+    def setType(value: js.Array[_]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjects(value: js.Array[_]): Self = this.set("objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelease(value: () => js.Any): Self = this.set("release", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTypeVarargs(value: js.Any*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[_]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

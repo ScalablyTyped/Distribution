@@ -1,12 +1,13 @@
 package typings.nightwatch.mod
 
 import typings.nightwatch.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolElementLocation extends js.Object {
+trait WebDriverProtocolElementLocation extends StObject {
   
   /**
     * Determine an element's location on the page. The point (0, 0) refers to the upper-left corner of the page.

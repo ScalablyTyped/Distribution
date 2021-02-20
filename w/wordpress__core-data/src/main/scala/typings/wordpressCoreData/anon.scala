@@ -12,16 +12,15 @@ import typings.wordpressCoreData.wordpressCoreDataStrings.delete
 import typings.wordpressCoreData.wordpressCoreDataStrings.read
 import typings.wordpressCoreData.wordpressCoreDataStrings.update
 import typings.wordpressCoreData.wordpressCoreDataStrings.view
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait TypeofimportedActions extends js.Object {
+  trait TypeofimportedActions extends StObject {
     
     def addEntities(entities: js.Array[Entity]): Unit = js.native
     
@@ -81,7 +80,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofimportedSelectors extends js.Object {
+  trait TypeofimportedSelectors extends StObject {
     
     @JSName("canUser")
     def canUser_create(action: create, resource: String, id: String): js.UndefOr[Boolean] = js.native

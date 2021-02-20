@@ -1,5 +1,6 @@
 package typings.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,156 +67,144 @@ object PNotifyStyling {
   }
   
   @scala.inline
-  implicit class PNotifyStylingOps[Self <: PNotifyStyling] (val x: Self) extends AnyVal {
+  implicit class PNotifyStylingMutableBuilder[Self <: PNotifyStyling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAthing(value: String): Self = StObject.set(x, "athing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAthingUndefined: Self = StObject.set(x, "athing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBtn(value: String): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAthing(value: String): Self = this.set("athing", value.asInstanceOf[js.Any])
+    def setBtnUndefined: Self = StObject.set(x, "btn", js.undefined)
     
     @scala.inline
-    def deleteAthing: Self = this.set("athing", js.undefined)
+    def setBtnactive(value: String): Self = StObject.set(x, "btnactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtn(value: String): Self = this.set("btn", value.asInstanceOf[js.Any])
+    def setBtnactiveUndefined: Self = StObject.set(x, "btnactive", js.undefined)
     
     @scala.inline
-    def deleteBtn: Self = this.set("btn", js.undefined)
+    def setBtnfocus(value: String): Self = StObject.set(x, "btnfocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnactive(value: String): Self = this.set("btnactive", value.asInstanceOf[js.Any])
+    def setBtnfocusUndefined: Self = StObject.set(x, "btnfocus", js.undefined)
     
     @scala.inline
-    def deleteBtnactive: Self = this.set("btnactive", js.undefined)
+    def setBtnhover(value: String): Self = StObject.set(x, "btnhover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnfocus(value: String): Self = this.set("btnfocus", value.asInstanceOf[js.Any])
+    def setBtnhoverUndefined: Self = StObject.set(x, "btnhover", js.undefined)
     
     @scala.inline
-    def deleteBtnfocus: Self = this.set("btnfocus", js.undefined)
+    def setCloser(value: String): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnhover(value: String): Self = this.set("btnhover", value.asInstanceOf[js.Any])
+    def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
     
     @scala.inline
-    def deleteBtnhover: Self = this.set("btnhover", js.undefined)
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloser(value: String): Self = this.set("closer", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteCloser: Self = this.set("closer", js.undefined)
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setError_icon(value: String): Self = StObject.set(x, "error_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError_iconUndefined: Self = StObject.set(x, "error_icon", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setHi_btn(value: String): Self = StObject.set(x, "hi_btn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_icon(value: String): Self = this.set("error_icon", value.asInstanceOf[js.Any])
+    def setHi_btnUndefined: Self = StObject.set(x, "hi_btn", js.undefined)
     
     @scala.inline
-    def deleteError_icon: Self = this.set("error_icon", js.undefined)
+    def setHi_btnhov(value: String): Self = StObject.set(x, "hi_btnhov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHi_btn(value: String): Self = this.set("hi_btn", value.asInstanceOf[js.Any])
+    def setHi_btnhovUndefined: Self = StObject.set(x, "hi_btnhov", js.undefined)
     
     @scala.inline
-    def deleteHi_btn: Self = this.set("hi_btn", js.undefined)
+    def setHi_hnd(value: String): Self = StObject.set(x, "hi_hnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHi_btnhov(value: String): Self = this.set("hi_btnhov", value.asInstanceOf[js.Any])
+    def setHi_hndUndefined: Self = StObject.set(x, "hi_hnd", js.undefined)
     
     @scala.inline
-    def deleteHi_btnhov: Self = this.set("hi_btnhov", js.undefined)
+    def setHi_menu(value: String): Self = StObject.set(x, "hi_menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHi_hnd(value: String): Self = this.set("hi_hnd", value.asInstanceOf[js.Any])
+    def setHi_menuUndefined: Self = StObject.set(x, "hi_menu", js.undefined)
     
     @scala.inline
-    def deleteHi_hnd: Self = this.set("hi_hnd", js.undefined)
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHi_menu(value: String): Self = this.set("hi_menu", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteHi_menu: Self = this.set("hi_menu", js.undefined)
+    def setInfo_icon(value: String): Self = StObject.set(x, "info_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setInfo_iconUndefined: Self = StObject.set(x, "info_icon", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo_icon(value: String): Self = this.set("info_icon", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInfo_icon: Self = this.set("info_icon", js.undefined)
+    def setNotice(value: String): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setNoticeUndefined: Self = StObject.set(x, "notice", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setNotice_icon(value: String): Self = StObject.set(x, "notice_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotice(value: String): Self = this.set("notice", value.asInstanceOf[js.Any])
+    def setNotice_iconUndefined: Self = StObject.set(x, "notice_icon", js.undefined)
     
     @scala.inline
-    def deleteNotice: Self = this.set("notice", js.undefined)
+    def setPin_down(value: String): Self = StObject.set(x, "pin_down", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotice_icon(value: String): Self = this.set("notice_icon", value.asInstanceOf[js.Any])
+    def setPin_downUndefined: Self = StObject.set(x, "pin_down", js.undefined)
     
     @scala.inline
-    def deleteNotice_icon: Self = this.set("notice_icon", js.undefined)
+    def setPin_up(value: String): Self = StObject.set(x, "pin_up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPin_down(value: String): Self = this.set("pin_down", value.asInstanceOf[js.Any])
+    def setPin_upUndefined: Self = StObject.set(x, "pin_up", js.undefined)
     
     @scala.inline
-    def deletePin_down: Self = this.set("pin_down", js.undefined)
+    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPin_up(value: String): Self = this.set("pin_up", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deletePin_up: Self = this.set("pin_up", js.undefined)
+    def setSuccess_icon(value: String): Self = StObject.set(x, "success_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: String): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess_iconUndefined: Self = StObject.set(x, "success_icon", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess_icon(value: String): Self = this.set("success_icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess_icon: Self = this.set("success_icon", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

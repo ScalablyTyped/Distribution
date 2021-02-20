@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.ValueStateSupport")
-@js.native
-object ValueStateSupport extends js.Object {
+object ValueStateSupport {
   
   /**
     * Appends a generic success, warning or error message to the given tooltip text if the given
@@ -15,6 +14,8 @@ object ValueStateSupport extends js.Object {
     * @param sTooltipText the original tooltip text (may be null)
     * @returns the given text, with appended success/warning/error text, if appropriate
     */
+  @JSGlobal("sap.ui.core.ValueStateSupport.enrichTooltip")
+  @js.native
   def enrichTooltip(oElement: typings.openui5.sap.ui.core.Element, sTooltipText: String): String = js.native
   
   /**
@@ -24,6 +25,8 @@ object ValueStateSupport extends js.Object {
     * @param iState the state as an integer
     * @returns the corresponding ValueState object
     */
+  @JSGlobal("sap.ui.core.ValueStateSupport.formatValueState")
+  @js.native
   def formatValueState(iState: Double): typings.openui5.sap.ui.core.ValueState = js.native
   
   /**
@@ -32,6 +35,10 @@ object ValueStateSupport extends js.Object {
     * @param vValue the Element of which the valueState needs to be checked, or the ValueState explicitly
     * @returns the success/warning/error text, if appropriate; otherwise null
     */
+  @JSGlobal("sap.ui.core.ValueStateSupport.getAdditionalText")
+  @js.native
   def getAdditionalText(vValue: typings.openui5.sap.ui.core.Element): String = js.native
+  @JSGlobal("sap.ui.core.ValueStateSupport.getAdditionalText")
+  @js.native
   def getAdditionalText(vValue: typings.openui5.sap.ui.core.ValueState): String = js.native
 }

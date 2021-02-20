@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimulatePolicyResponse extends js.Object {
+trait SimulatePolicyResponse extends StObject {
   
   /**
     * The results of the simulation.
@@ -31,39 +32,27 @@ object SimulatePolicyResponse {
   }
   
   @scala.inline
-  implicit class SimulatePolicyResponseOps[Self <: SimulatePolicyResponse] (val x: Self) extends AnyVal {
+  implicit class SimulatePolicyResponseMutableBuilder[Self <: SimulatePolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationResults(value: EvaluationResultsListType): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
     
     @scala.inline
-    def setEvaluationResultsVarargs(value: EvaluationResult*): Self = this.set("EvaluationResults", js.Array(value :_*))
+    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationResults(value: EvaluationResultsListType): Self = this.set("EvaluationResults", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteEvaluationResults: Self = this.set("EvaluationResults", js.undefined)
+    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

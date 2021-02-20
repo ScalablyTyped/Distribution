@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevicesLongRunningOperationMetadata extends js.Object {
+trait DevicesLongRunningOperationMetadata extends StObject {
   
   /** The number of metadata updates in the operation. This might be different from the number of updates in the request if the API can't parse some of the updates. */
   var devicesCount: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object DevicesLongRunningOperationMetadata {
   }
   
   @scala.inline
-  implicit class DevicesLongRunningOperationMetadataOps[Self <: DevicesLongRunningOperationMetadata] (val x: Self) extends AnyVal {
+  implicit class DevicesLongRunningOperationMetadataMutableBuilder[Self <: DevicesLongRunningOperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicesCountUndefined: Self = StObject.set(x, "devicesCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicesCount(value: Double): Self = this.set("devicesCount", value.asInstanceOf[js.Any])
+    def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
     
     @scala.inline
-    def deleteDevicesCount: Self = this.set("devicesCount", js.undefined)
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingStatus(value: String): Self = this.set("processingStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessingStatus: Self = this.set("processingStatus", js.undefined)
-    
-    @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

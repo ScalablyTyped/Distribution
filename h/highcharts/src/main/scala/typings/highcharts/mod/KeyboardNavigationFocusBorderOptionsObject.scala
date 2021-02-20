@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyboardNavigationFocusBorderOptionsObject extends js.Object {
+trait KeyboardNavigationFocusBorderOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable/disable focus border for
@@ -44,42 +45,30 @@ object KeyboardNavigationFocusBorderOptionsObject {
   }
   
   @scala.inline
-  implicit class KeyboardNavigationFocusBorderOptionsObjectOps[Self <: KeyboardNavigationFocusBorderOptionsObject] (val x: Self) extends AnyVal {
+  implicit class KeyboardNavigationFocusBorderOptionsObjectMutableBuilder[Self <: KeyboardNavigationFocusBorderOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideBrowserFocusOutline(value: Boolean): Self = StObject.set(x, "hideBrowserFocusOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHideBrowserFocusOutlineUndefined: Self = StObject.set(x, "hideBrowserFocusOutline", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideBrowserFocusOutline(value: Boolean): Self = this.set("hideBrowserFocusOutline", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteHideBrowserFocusOutline: Self = this.set("hideBrowserFocusOutline", js.undefined)
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

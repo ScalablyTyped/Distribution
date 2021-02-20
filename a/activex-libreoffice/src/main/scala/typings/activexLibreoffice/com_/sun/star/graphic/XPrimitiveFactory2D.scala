@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPage
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,24 +51,12 @@ object XPrimitiveFactory2D {
   }
   
   @scala.inline
-  implicit class XPrimitiveFactory2DOps[Self <: XPrimitiveFactory2D] (val x: Self) extends AnyVal {
+  implicit class XPrimitiveFactory2DMutableBuilder[Self <: XPrimitiveFactory2D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatePrimitivesFromXDrawPage(value: (XDrawPage, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXDrawPage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreatePrimitivesFromXDrawPage(value: (XDrawPage, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = this.set("createPrimitivesFromXDrawPage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreatePrimitivesFromXShape(value: (XShape, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = this.set("createPrimitivesFromXShape", js.Any.fromFunction2(value))
+    def setCreatePrimitivesFromXShape(value: (XShape, SeqEquiv[PropertyValue]) => SafeArray[XPrimitive2D]): Self = StObject.set(x, "createPrimitivesFromXShape", js.Any.fromFunction2(value))
   }
 }

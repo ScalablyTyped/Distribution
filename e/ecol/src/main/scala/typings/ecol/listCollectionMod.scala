@@ -1,34 +1,42 @@
 package typings.ecol
 
-import org.scalablytyped.runtime.Instantiable3
 import typings.ecol.collectionEventMod.CollectionEvent
-import typings.ecol.ieventdispatcherMod.IEventDispatcher
-import typings.tstl.icontainerMod.IContainer
-import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.listIteratorMod.ListIterator
-import typings.tstl.listMod.List
-import typings.tstl.listMod.List.Iterator
-import typings.tstl.listMod.List.ReverseIterator
+import typings.ecol.icollectionMod.ICollection
+import typings.ecol.listCollectionMod.ListCollection.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecol/lib/linear/ListCollection", JSImport.Namespace)
-@js.native
-object listCollectionMod extends js.Object {
+object listCollectionMod {
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.tstl.isizeMod.ISize because Already inherited
-  - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
-  - typings.tstl.ipushMod.IPush because Already inherited
-  - typings.tstl.iemptyMod.IEmpty because Already inherited
-  - typings.std.Iterable because Already inherited
-  - typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer because Already inherited
-  - typings.tstl.icontainerMod.IContainer because Already inherited
-  - typings.ecol.icollectionMod.ICollection because var conflicts: iterator, iterator_IContainer_. Inlined refresh, refresh, refresh */ @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List<T> * / any */ @JSImport("ecol/lib/linear/ListCollection", "ListCollection")
+  @js.native
   class ListCollection[T] ()
-    extends List[T]
-       with IEventDispatcher[T, List[T], Iterator[T], ReverseIterator[T]] {
+    extends ICollection[
+          T, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+        ] {
+    
+    /**
+      * @hidden
+      */
+    /* protected */ def _Erase_by_range(
+      first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Iterator<T> */ js.Any,
+      last: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Iterator<T> */ js.Any
+    ): js.Any = js.native
+    
+    /**
+      * @hidden
+      */
+    /* protected */ def _Insert_by_range[U /* <: T */, InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IForwardIterator<U, InputIterator> */ js.Any */](
+      pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Iterator<T> */ js.Any,
+      first: InputIterator,
+      last: InputIterator
+    ): js.Any = js.native
     
     /**
       * @hidden
@@ -40,20 +48,19 @@ object listCollectionMod extends js.Object {
       */
     var _Notify_insert: js.Any = js.native
     
-    /**
-      * Range Assigner.
-      *
-      * @param first Input iteartor of the first position.
-      * @param last Input iterator of the last position.
-      */
-    /* InferMemberOverrides */
-    override def assign[InputIterator /* <: IForwardIterator[T, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
+    def clear(): Unit = js.native
     
     /**
-      * @inheritDoc
+      * @inheritdoc
       */
-    /* InferMemberOverrides */
-    override def clear(): Unit = js.native
+    def dispatchEvent(
+      event: Event[
+          T, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ _
+        ]
+    ): Unit = js.native
     
     /**
       * @hidden
@@ -61,155 +68,35 @@ object listCollectionMod extends js.Object {
     var dispatcher_ : js.Any = js.native
     
     /**
-      * Erase elements in range.
-      *
-      * @param first Range of the first position to erase.
-      * @param last Rangee of the last position to erase.
-      * @return Iterator following the last removed element, strained by the erasing.
+      * @inheritDoc
       */
-    /* InferMemberOverrides */
-    override def erase(first: Iterator[T], last: Iterator[T]): Iterator[T] = js.native
-    /**
-      * Erase an element.
-      *
-      * @param pos Position to erase.
-      * @return Iterator following the *pos*, strained by the erasing.
-      */
-    /* InferMemberOverrides */
-    override def erase(pos: Iterator[T]): Iterator[T] = js.native
+    def reverse(): Unit = js.native
     
     /**
       * @inheritDoc
       */
-    /* InferMemberOverrides */
-    override def pop_front(): Unit = js.native
-    
+    def sort(): Unit = js.native
     /**
       * @inheritDoc
       */
-    /* InferMemberOverrides */
-    override def push_front(`val`: T): Unit = js.native
-    
-    /**
-      * @inheritdoc
-      */
-    def refresh(): Unit = js.native
-    /**
-      * @inheritdoc
-      */
-    def refresh(first: Iterator[T], last: Iterator[T]): Unit = js.native
-    /**
-      * @inheritdoc
-      */
-    def refresh(it: Iterator[T]): Unit = js.native
-    
-    /**
-      * Swap elements.
-      *
-      * @param obj Target container to swap.
-      */
-    /* InferMemberOverrides */
-    override def swap(obj: List[T]): Unit = js.native
-    
-    /**
-      * Native function for `JSON.stringify()`.
-      *
-      * @return An array containing children elements.
-      */
-    /* InferMemberOverrides */
-    override def toJSON(): js.Array[T] = js.native
+    def sort(comp: js.Function2[/* x */ T, /* y */ T, Boolean]): Unit = js.native
   }
-  @js.native
-  object ListCollection extends js.Object {
+  object ListCollection {
     
-    val Event: Instantiable3[
-        /* type */ String, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
-        CollectionEvent[
-          js.Object, 
-          IContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-          ], 
-          typings.tstl.icontainerMod.IContainer.Iterator[
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-          ], 
-          typings.tstl.icontainerMod.IContainer.ReverseIterator[
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-          ]
-        ]
-      ] = js.native
-    
-    /**
-      * Iterator of {@link List}
-      *
-      * @author Jeongho Nam - https://github.com/samchon
-      */
+    /* was `typeof CollectionEvent` */
+    @JSImport("ecol/lib/linear/ListCollection", "ListCollection.Event")
     @js.native
-    class Iterator[T] protected ()
-      extends ListIterator[
-              T, 
-              List[T], 
-              typings.tstl.listMod.List.Iterator[T], 
-              typings.tstl.listMod.List.ReverseIterator[T], 
-              T
-            ] {
-      
-      def equals(obj: typings.tstl.listMod.List.Iterator[T]): Boolean = js.native
-      
-      var source_ptr_ : js.Any = js.native
-      
-      /**
-        * @inheritDoc
-        */
-      def value_=(`val`: T): Unit = js.native
+    class Event[T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] protected () extends CollectionEvent[T, SourceT, IteratorT, ReverseT] {
+      def this(`type`: String, first: IteratorT, last: IteratorT) = this()
     }
-    
-    /**
-      * Reverse iterator of {@link List}
-      *
-      * @author Jeongho Nam - https://github.com/samchon
-      */
-    @js.native
-    class ReverseIterator[T] ()
-      extends typings.tstl.reverseIteratorMod.ReverseIterator[
-              T, 
-              List[T], 
-              typings.tstl.listMod.List.Iterator[T], 
-              typings.tstl.listMod.List.ReverseIterator[T], 
-              T
-            ] {
-      
-      /**
-        * @inheritDoc
-        */
-      def value_=(`val`: T): Unit = js.native
-    }
-    
-    type Event[T] = CollectionEvent[
-        T, 
-        List[T], 
-        typings.tstl.listMod.List.Iterator[T], 
-        typings.tstl.listMod.List.ReverseIterator[T]
-      ]
+    /* was `typeof CollectionEvent` */
+    object Event
     
     type Listener[T] = typings.ecol.collectionEventMod.CollectionEvent.Listener[
         T, 
-        List[T], 
-        typings.tstl.listMod.List.Iterator[T], 
-        typings.tstl.listMod.List.ReverseIterator[T]
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List<T> */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Iterator<T> */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.ReverseIterator<T> */ js.Any
       ]
   }
 }

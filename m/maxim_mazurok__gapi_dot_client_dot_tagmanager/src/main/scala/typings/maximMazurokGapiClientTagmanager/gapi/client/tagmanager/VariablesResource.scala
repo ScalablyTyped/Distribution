@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.FieldsKey
 import typings.maximMazurokGapiClientTagmanager.anon.FingerprintKey
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariablesResource extends js.Object {
+trait VariablesResource extends StObject {
   
   def create(request: Alt, body: Variable): Request[Variable] = js.native
   /** Creates a GTM Variable. */

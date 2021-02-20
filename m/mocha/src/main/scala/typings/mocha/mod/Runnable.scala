@@ -2,6 +2,7 @@ package typings.mocha.mod
 
 import typings.mocha.Mocha.AsyncFunc
 import typings.mocha.Mocha.Func
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

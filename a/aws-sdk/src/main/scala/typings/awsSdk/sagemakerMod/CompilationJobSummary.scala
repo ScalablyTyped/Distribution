@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompilationJobSummary extends js.Object {
+trait CompilationJobSummary extends StObject {
   
   /**
     * The time when the model compilation job completed.
@@ -76,72 +77,60 @@ object CompilationJobSummary {
   }
   
   @scala.inline
-  implicit class CompilationJobSummaryOps[Self <: CompilationJobSummary] (val x: Self) extends AnyVal {
+  implicit class CompilationJobSummaryMutableBuilder[Self <: CompilationJobSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompilationEndTime(value: Timestamp): Self = StObject.set(x, "CompilationEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompilationEndTimeUndefined: Self = StObject.set(x, "CompilationEndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompilationJobArn(value: CompilationJobArn): Self = StObject.set(x, "CompilationJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilationJobArn(value: CompilationJobArn): Self = this.set("CompilationJobArn", value.asInstanceOf[js.Any])
+    def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilationJobName(value: EntityName): Self = this.set("CompilationJobName", value.asInstanceOf[js.Any])
+    def setCompilationJobStatus(value: CompilationJobStatus): Self = StObject.set(x, "CompilationJobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilationJobStatus(value: CompilationJobStatus): Self = this.set("CompilationJobStatus", value.asInstanceOf[js.Any])
+    def setCompilationStartTime(value: Timestamp): Self = StObject.set(x, "CompilationStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCompilationStartTimeUndefined: Self = StObject.set(x, "CompilationStartTime", js.undefined)
     
     @scala.inline
-    def setCompilationEndTime(value: Timestamp): Self = this.set("CompilationEndTime", value.asInstanceOf[js.Any])
+    def setCompilationTargetDevice(value: TargetDevice): Self = StObject.set(x, "CompilationTargetDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompilationEndTime: Self = this.set("CompilationEndTime", js.undefined)
+    def setCompilationTargetDeviceUndefined: Self = StObject.set(x, "CompilationTargetDevice", js.undefined)
     
     @scala.inline
-    def setCompilationStartTime(value: Timestamp): Self = this.set("CompilationStartTime", value.asInstanceOf[js.Any])
+    def setCompilationTargetPlatformAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "CompilationTargetPlatformAccelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompilationStartTime: Self = this.set("CompilationStartTime", js.undefined)
+    def setCompilationTargetPlatformAcceleratorUndefined: Self = StObject.set(x, "CompilationTargetPlatformAccelerator", js.undefined)
     
     @scala.inline
-    def setCompilationTargetDevice(value: TargetDevice): Self = this.set("CompilationTargetDevice", value.asInstanceOf[js.Any])
+    def setCompilationTargetPlatformArch(value: TargetPlatformArch): Self = StObject.set(x, "CompilationTargetPlatformArch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompilationTargetDevice: Self = this.set("CompilationTargetDevice", js.undefined)
+    def setCompilationTargetPlatformArchUndefined: Self = StObject.set(x, "CompilationTargetPlatformArch", js.undefined)
     
     @scala.inline
-    def setCompilationTargetPlatformAccelerator(value: TargetPlatformAccelerator): Self = this.set("CompilationTargetPlatformAccelerator", value.asInstanceOf[js.Any])
+    def setCompilationTargetPlatformOs(value: TargetPlatformOs): Self = StObject.set(x, "CompilationTargetPlatformOs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompilationTargetPlatformAccelerator: Self = this.set("CompilationTargetPlatformAccelerator", js.undefined)
+    def setCompilationTargetPlatformOsUndefined: Self = StObject.set(x, "CompilationTargetPlatformOs", js.undefined)
     
     @scala.inline
-    def setCompilationTargetPlatformArch(value: TargetPlatformArch): Self = this.set("CompilationTargetPlatformArch", value.asInstanceOf[js.Any])
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompilationTargetPlatformArch: Self = this.set("CompilationTargetPlatformArch", js.undefined)
+    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilationTargetPlatformOs(value: TargetPlatformOs): Self = this.set("CompilationTargetPlatformOs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompilationTargetPlatformOs: Self = this.set("CompilationTargetPlatformOs", js.undefined)
-    
-    @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
   }
 }

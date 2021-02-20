@@ -1,5 +1,6 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel
 */
-trait ChatType extends js.Object
+trait ChatType extends StObject
 object ChatType {
   
   @scala.inline

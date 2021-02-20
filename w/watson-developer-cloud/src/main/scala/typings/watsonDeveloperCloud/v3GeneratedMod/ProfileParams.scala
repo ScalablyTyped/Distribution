@@ -3,6 +3,7 @@ package typings.watsonDeveloperCloud.v3GeneratedMod
 import typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.AcceptLanguage
 import typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentLanguage
 import typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Parameters for the `profile` operation. */
 @js.native
-trait ProfileParams extends js.Object {
+trait ProfileParams extends StObject {
   
   /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can specify any combination of languages for the input and response content. */
   var accept_language: js.UndefOr[AcceptLanguage | String] = js.native
@@ -48,69 +49,57 @@ object ProfileParams {
   }
   
   @scala.inline
-  implicit class ProfileParamsOps[Self <: ProfileParams] (val x: Self) extends AnyVal {
+  implicit class ProfileParamsMutableBuilder[Self <: ProfileParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumption_preferences(value: Boolean): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Content | String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setConsumption_preferencesUndefined: Self = StObject.set(x, "consumption_preferences", js.undefined)
     
     @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = this.set("accept_language", value.asInstanceOf[js.Any])
+    def setContent(value: Content | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept_language: Self = this.set("accept_language", js.undefined)
+    def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumption_preferences(value: Boolean): Self = this.set("consumption_preferences", value.asInstanceOf[js.Any])
+    def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
     
     @scala.inline
-    def deleteConsumption_preferences: Self = this.set("consumption_preferences", js.undefined)
+    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_language(value: ContentLanguage | String): Self = this.set("content_language", value.asInstanceOf[js.Any])
+    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
     @scala.inline
-    def deleteContent_language: Self = this.set("content_language", js.undefined)
+    def setCsv_headers(value: Boolean): Self = StObject.set(x, "csv_headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: ContentType | String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setCsv_headersUndefined: Self = StObject.set(x, "csv_headers", js.undefined)
     
     @scala.inline
-    def deleteContent_type: Self = this.set("content_type", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsv_headers(value: Boolean): Self = this.set("csv_headers", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteCsv_headers: Self = this.set("csv_headers", js.undefined)
+    def setRaw_scores(value: Boolean): Self = StObject.set(x, "raw_scores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRaw_scoresUndefined: Self = StObject.set(x, "raw_scores", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw_scores(value: Boolean): Self = this.set("raw_scores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw_scores: Self = this.set("raw_scores", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

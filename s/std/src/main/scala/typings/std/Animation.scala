@@ -2,6 +2,7 @@ package typings.std
 
 import typings.std.stdStrings.cancel
 import typings.std.stdStrings.finish
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

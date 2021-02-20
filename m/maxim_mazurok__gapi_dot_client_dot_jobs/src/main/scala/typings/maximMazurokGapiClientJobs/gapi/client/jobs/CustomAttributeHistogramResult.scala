@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomAttributeHistogramResult extends js.Object {
+trait CustomAttributeHistogramResult extends StObject {
   
   /** Stores the key of custom attribute the histogram is performed on. */
   var key: js.UndefOr[String] = js.native
@@ -30,40 +31,28 @@ object CustomAttributeHistogramResult {
   }
   
   @scala.inline
-  implicit class CustomAttributeHistogramResultOps[Self <: CustomAttributeHistogramResult] (val x: Self) extends AnyVal {
+  implicit class CustomAttributeHistogramResultMutableBuilder[Self <: CustomAttributeHistogramResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongValueHistogramResult(value: NumericBucketingResult): Self = StObject.set(x, "longValueHistogramResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setLongValueHistogramResult(value: NumericBucketingResult): Self = this.set("longValueHistogramResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongValueHistogramResult: Self = this.set("longValueHistogramResult", js.undefined)
+    def setLongValueHistogramResultUndefined: Self = StObject.set(x, "longValueHistogramResult", js.undefined)
     
     @scala.inline
     def setStringValueHistogramResult(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.CustomAttributeHistogramResult with TopLevel[js.Any]
-    ): Self = this.set("stringValueHistogramResult", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stringValueHistogramResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStringValueHistogramResult: Self = this.set("stringValueHistogramResult", js.undefined)
+    def setStringValueHistogramResultUndefined: Self = StObject.set(x, "stringValueHistogramResult", js.undefined)
   }
 }

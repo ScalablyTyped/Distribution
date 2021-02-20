@@ -1,12 +1,13 @@
 package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerNumbers.`-1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrimoireSpell extends js.Object {
+trait GrimoireSpell extends StObject {
   
   /**
     * The minimum cost of the spell, in mana
@@ -56,54 +57,42 @@ object GrimoireSpell {
   }
   
   @scala.inline
-  implicit class GrimoireSpellOps[Self <: GrimoireSpell] (val x: Self) extends AnyVal {
+  implicit class GrimoireSpellMutableBuilder[Self <: GrimoireSpell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCostMin(value: Double): Self = StObject.set(x, "costMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCostPercent(value: Double): Self = StObject.set(x, "costPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCostPercentUndefined: Self = StObject.set(x, "costPercent", js.undefined)
     
     @scala.inline
-    def setCostMin(value: Double): Self = this.set("costMin", value.asInstanceOf[js.Any])
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setFail(value: () => `-1` | Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setFailDesc(value: String): Self = StObject.set(x, "failDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setFailDescUndefined: Self = StObject.set(x, "failDesc", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setWin(value: () => `-1` | Unit): Self = this.set("win", js.Any.fromFunction0(value))
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostPercent(value: Double): Self = this.set("costPercent", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCostPercent: Self = this.set("costPercent", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: () => `-1` | Unit): Self = this.set("fail", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setFailDesc(value: String): Self = this.set("failDesc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailDesc: Self = this.set("failDesc", js.undefined)
+    def setWin(value: () => `-1` | Unit): Self = StObject.set(x, "win", js.Any.fromFunction0(value))
   }
 }

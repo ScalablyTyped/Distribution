@@ -1,12 +1,13 @@
 package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentsObject extends js.Object {
+trait ComponentsObject extends StObject {
   
   var callbacks: js.UndefOr[StringDictionary[ReferenceObject | CallbackObject]] = js.native
   
@@ -35,72 +36,60 @@ object ComponentsObject {
   }
   
   @scala.inline
-  implicit class ComponentsObjectOps[Self <: ComponentsObject] (val x: Self) extends AnyVal {
+  implicit class ComponentsObjectMutableBuilder[Self <: ComponentsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbacks(value: StringDictionary[ReferenceObject | CallbackObject]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbacks(value: StringDictionary[ReferenceObject | CallbackObject]): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
     @scala.inline
-    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    def setHeaders(value: StringDictionary[ReferenceObject | HeaderObject]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = this.set("examples", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteExamples: Self = this.set("examples", js.undefined)
+    def setLinks(value: StringDictionary[ReferenceObject | LinkObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[ReferenceObject | HeaderObject]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setParameters(value: StringDictionary[ReferenceObject | ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: StringDictionary[ReferenceObject | LinkObject]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setRequestBodies(value: StringDictionary[ReferenceObject | RequestBodyObject]): Self = StObject.set(x, "requestBodies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: StringDictionary[ReferenceObject | ParameterObject]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setRequestBodiesUndefined: Self = StObject.set(x, "requestBodies", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setResponses(value: StringDictionary[ReferenceObject | ResponseObject]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBodies(value: StringDictionary[ReferenceObject | RequestBodyObject]): Self = this.set("requestBodies", value.asInstanceOf[js.Any])
+    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
     @scala.inline
-    def deleteRequestBodies: Self = this.set("requestBodies", js.undefined)
+    def setSchemas(value: StringDictionary[ReferenceObject | SchemaObject]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponses(value: StringDictionary[ReferenceObject | ResponseObject]): Self = this.set("responses", value.asInstanceOf[js.Any])
+    def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     
     @scala.inline
-    def deleteResponses: Self = this.set("responses", js.undefined)
+    def setSecuritySchemes(value: StringDictionary[ReferenceObject | SecuritySchemeObject]): Self = StObject.set(x, "securitySchemes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemas(value: StringDictionary[ReferenceObject | SchemaObject]): Self = this.set("schemas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemas: Self = this.set("schemas", js.undefined)
-    
-    @scala.inline
-    def setSecuritySchemes(value: StringDictionary[ReferenceObject | SecuritySchemeObject]): Self = this.set("securitySchemes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecuritySchemes: Self = this.set("securitySchemes", js.undefined)
+    def setSecuritySchemesUndefined: Self = StObject.set(x, "securitySchemes", js.undefined)
   }
 }

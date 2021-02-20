@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,57 +135,45 @@ object XExtendedToolkit {
   }
   
   @scala.inline
-  implicit class XExtendedToolkitOps[Self <: XExtendedToolkit] (val x: Self) extends AnyVal {
+  implicit class XExtendedToolkitMutableBuilder[Self <: XExtendedToolkit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTopWindow(value: XTopWindow): Self = StObject.set(x, "ActiveTopWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "addFocusListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "addKeyHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveTopWindow(value: XTopWindow): Self = this.set("ActiveTopWindow", value.asInstanceOf[js.Any])
+    def setAddTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "addTopWindowListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTopWindowCount(value: Double): Self = this.set("TopWindowCount", value.asInstanceOf[js.Any])
+    def setFireFocusGained(value: XInterface => Unit): Self = StObject.set(x, "fireFocusGained", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFocusListener(value: XFocusListener => Unit): Self = this.set("addFocusListener", js.Any.fromFunction1(value))
+    def setFireFocusLost(value: XInterface => Unit): Self = StObject.set(x, "fireFocusLost", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddKeyHandler(value: XKeyHandler => Unit): Self = this.set("addKeyHandler", js.Any.fromFunction1(value))
+    def setGetActiveTopWindow(value: () => XTopWindow): Self = StObject.set(x, "getActiveTopWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTopWindowListener(value: XTopWindowListener => Unit): Self = this.set("addTopWindowListener", js.Any.fromFunction1(value))
+    def setGetTopWindow(value: Double => XTopWindow): Self = StObject.set(x, "getTopWindow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFireFocusGained(value: XInterface => Unit): Self = this.set("fireFocusGained", js.Any.fromFunction1(value))
+    def setGetTopWindowCount(value: () => Double): Self = StObject.set(x, "getTopWindowCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFireFocusLost(value: XInterface => Unit): Self = this.set("fireFocusLost", js.Any.fromFunction1(value))
+    def setRemoveFocusListener(value: XFocusListener => Unit): Self = StObject.set(x, "removeFocusListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetActiveTopWindow(value: () => XTopWindow): Self = this.set("getActiveTopWindow", js.Any.fromFunction0(value))
+    def setRemoveKeyHandler(value: XKeyHandler => Unit): Self = StObject.set(x, "removeKeyHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTopWindow(value: Double => XTopWindow): Self = this.set("getTopWindow", js.Any.fromFunction1(value))
+    def setRemoveTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "removeTopWindowListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTopWindowCount(value: () => Double): Self = this.set("getTopWindowCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveFocusListener(value: XFocusListener => Unit): Self = this.set("removeFocusListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveKeyHandler(value: XKeyHandler => Unit): Self = this.set("removeKeyHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveTopWindowListener(value: XTopWindowListener => Unit): Self = this.set("removeTopWindowListener", js.Any.fromFunction1(value))
+    def setTopWindowCount(value: Double): Self = StObject.set(x, "TopWindowCount", value.asInstanceOf[js.Any])
   }
 }

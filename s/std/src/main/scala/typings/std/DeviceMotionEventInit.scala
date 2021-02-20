@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object DeviceMotionEventInit {
   }
   
   @scala.inline
-  implicit class DeviceMotionEventInitOps[Self <: DeviceMotionEventInit] (val x: Self) extends AnyVal {
+  implicit class DeviceMotionEventInitMutableBuilder[Self <: DeviceMotionEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "accelerationIncludingGravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccelerationIncludingGravityUndefined: Self = StObject.set(x, "accelerationIncludingGravity", js.undefined)
     
     @scala.inline
-    def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = this.set("acceleration", value.asInstanceOf[js.Any])
+    def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
     
     @scala.inline
-    def deleteAcceleration: Self = this.set("acceleration", js.undefined)
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = this.set("accelerationIncludingGravity", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteAccelerationIncludingGravity: Self = this.set("accelerationIncludingGravity", js.undefined)
+    def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = StObject.set(x, "rotationRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
-    
-    @scala.inline
-    def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = this.set("rotationRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationRate: Self = this.set("rotationRate", js.undefined)
+    def setRotationRateUndefined: Self = StObject.set(x, "rotationRate", js.undefined)
   }
 }

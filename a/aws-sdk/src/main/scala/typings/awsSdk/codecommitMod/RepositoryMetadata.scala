@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryMetadata extends js.Object {
+trait RepositoryMetadata extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the repository.
@@ -66,78 +67,66 @@ object RepositoryMetadata {
   }
   
   @scala.inline
-  implicit class RepositoryMetadataOps[Self <: RepositoryMetadata] (val x: Self) extends AnyVal {
+  implicit class RepositoryMetadataMutableBuilder[Self <: RepositoryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCloneUrlHttp(value: CloneUrlHttp): Self = StObject.set(x, "cloneUrlHttp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setCloneUrlHttpUndefined: Self = StObject.set(x, "cloneUrlHttp", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setCloneUrlSsh(value: CloneUrlSsh): Self = StObject.set(x, "cloneUrlSsh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneUrlHttp(value: CloneUrlHttp): Self = this.set("cloneUrlHttp", value.asInstanceOf[js.Any])
+    def setCloneUrlSshUndefined: Self = StObject.set(x, "cloneUrlSsh", js.undefined)
     
     @scala.inline
-    def deleteCloneUrlHttp: Self = this.set("cloneUrlHttp", js.undefined)
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneUrlSsh(value: CloneUrlSsh): Self = this.set("cloneUrlSsh", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteCloneUrlSsh: Self = this.set("cloneUrlSsh", js.undefined)
+    def setDefaultBranch(value: BranchName): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDefaultBranchUndefined: Self = StObject.set(x, "defaultBranch", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBranch(value: BranchName): Self = this.set("defaultBranch", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteDefaultBranch: Self = this.set("defaultBranch", js.undefined)
+    def setRepositoryDescription(value: RepositoryDescription): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setRepositoryId(value: RepositoryId): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryDescription(value: RepositoryDescription): Self = this.set("repositoryDescription", value.asInstanceOf[js.Any])
+    def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
     
     @scala.inline
-    def deleteRepositoryDescription: Self = this.set("repositoryDescription", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryId(value: RepositoryId): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryId: Self = this.set("repositoryId", js.undefined)
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

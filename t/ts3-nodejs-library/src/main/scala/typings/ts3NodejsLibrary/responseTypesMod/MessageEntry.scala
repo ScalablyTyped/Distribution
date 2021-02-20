@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object MessageEntry {
   }
   
   @scala.inline
-  implicit class MessageEntryOps[Self <: MessageEntry] (val x: Self) extends AnyVal {
+  implicit class MessageEntryMutableBuilder[Self <: MessageEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluid(value: String): Self = StObject.set(x, "cluid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagRead(value: Boolean): Self = StObject.set(x, "flagRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCluid(value: String): Self = this.set("cluid", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagRead(value: Boolean): Self = this.set("flagRead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMsgid(value: String): Self = this.set("msgid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

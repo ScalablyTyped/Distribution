@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageryTileMixinProperties extends js.Object {
+trait ImageryTileMixinProperties extends StObject {
   
   /**
     * Defines a band combination using 0-based band indexes.
@@ -46,47 +47,35 @@ object ImageryTileMixinProperties {
   }
   
   @scala.inline
-  implicit class ImageryTileMixinPropertiesOps[Self <: ImageryTileMixinProperties] (val x: Self) extends AnyVal {
+  implicit class ImageryTileMixinPropertiesMutableBuilder[Self <: ImageryTileMixinProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandIds(value: js.Array[Double]): Self = StObject.set(x, "bandIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandIdsUndefined: Self = StObject.set(x, "bandIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandIdsVarargs(value: Double*): Self = StObject.set(x, "bandIds", js.Array(value :_*))
     
     @scala.inline
-    def setBandIdsVarargs(value: Double*): Self = this.set("bandIds", js.Array(value :_*))
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandIds(value: js.Array[Double]): Self = this.set("bandIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBandIds: Self = this.set("bandIds", js.undefined)
-    
-    @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
     def setRenderer(
       value: ClassBreaksRendererProperties | UniqueValueRendererProperties | RasterStretchRendererProperties | RasterShadedReliefRendererProperties | RasterColormapRendererProperties
-    ): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

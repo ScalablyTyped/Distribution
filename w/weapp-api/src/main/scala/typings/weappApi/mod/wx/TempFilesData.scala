@@ -1,11 +1,12 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TempFilesData extends js.Object {
+trait TempFilesData extends StObject {
   
   /** 文件的临时路径 */
   var tempFilePaths: String = js.native
@@ -19,21 +20,9 @@ object TempFilesData {
   }
   
   @scala.inline
-  implicit class TempFilesDataOps[Self <: TempFilesData] (val x: Self) extends AnyVal {
+  implicit class TempFilesDataMutableBuilder[Self <: TempFilesData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTempFilePaths(value: String): Self = this.set("tempFilePaths", value.asInstanceOf[js.Any])
+    def setTempFilePaths(value: String): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
   }
 }

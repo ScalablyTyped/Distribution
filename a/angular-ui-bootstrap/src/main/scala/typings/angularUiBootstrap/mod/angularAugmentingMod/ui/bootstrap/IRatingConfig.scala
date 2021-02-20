@@ -1,11 +1,12 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRatingConfig extends js.Object {
+trait IRatingConfig extends StObject {
   
   /**
     * Changes the number of icons.
@@ -44,45 +45,33 @@ object IRatingConfig {
   }
   
   @scala.inline
-  implicit class IRatingConfigOps[Self <: IRatingConfig] (val x: Self) extends AnyVal {
+  implicit class IRatingConfigMutableBuilder[Self <: IRatingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateOff(value: String): Self = StObject.set(x, "stateOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setStateOffUndefined: Self = StObject.set(x, "stateOff", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setStateOn(value: String): Self = StObject.set(x, "stateOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateOff(value: String): Self = this.set("stateOff", value.asInstanceOf[js.Any])
+    def setStateOnUndefined: Self = StObject.set(x, "stateOn", js.undefined)
     
     @scala.inline
-    def deleteStateOff: Self = this.set("stateOff", js.undefined)
+    def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateOn(value: String): Self = this.set("stateOn", value.asInstanceOf[js.Any])
+    def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
     
     @scala.inline
-    def deleteStateOn: Self = this.set("stateOn", js.undefined)
-    
-    @scala.inline
-    def setTitlesVarargs(value: String*): Self = this.set("titles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTitles(value: js.Array[String]): Self = this.set("titles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitles: Self = this.set("titles", js.undefined)
+    def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
   }
 }

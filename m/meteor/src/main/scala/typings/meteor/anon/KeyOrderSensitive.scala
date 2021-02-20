@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyOrderSensitive extends js.Object {
+trait KeyOrderSensitive extends StObject {
   
   var keyOrderSensitive: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object KeyOrderSensitive {
   }
   
   @scala.inline
-  implicit class KeyOrderSensitiveOps[Self <: KeyOrderSensitive] (val x: Self) extends AnyVal {
+  implicit class KeyOrderSensitiveMutableBuilder[Self <: KeyOrderSensitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyOrderSensitive(value: Boolean): Self = StObject.set(x, "keyOrderSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyOrderSensitive(value: Boolean): Self = this.set("keyOrderSensitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyOrderSensitive: Self = this.set("keyOrderSensitive", js.undefined)
+    def setKeyOrderSensitiveUndefined: Self = StObject.set(x, "keyOrderSensitive", js.undefined)
   }
 }

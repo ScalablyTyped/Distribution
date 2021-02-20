@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaBuyer extends js.Object {
+trait SchemaBuyer extends StObject {
   
   /**
     * Adx account id of the buyer.
@@ -21,24 +22,12 @@ object SchemaBuyer {
   }
   
   @scala.inline
-  implicit class SchemaBuyerOps[Self <: SchemaBuyer] (val x: Self) extends AnyVal {
+  implicit class SchemaBuyerMutableBuilder[Self <: SchemaBuyer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }
 }

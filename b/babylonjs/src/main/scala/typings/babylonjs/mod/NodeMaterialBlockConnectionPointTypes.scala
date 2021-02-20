@@ -1,12 +1,13 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "NodeMaterialBlockConnectionPointTypes")
 @js.native
-object NodeMaterialBlockConnectionPointTypes extends js.Object {
+object NodeMaterialBlockConnectionPointTypes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

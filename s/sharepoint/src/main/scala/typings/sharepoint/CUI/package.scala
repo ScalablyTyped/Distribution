@@ -1,5 +1,6 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,10 @@ package object CUI {
   
   type ContextMenuDock = typings.sharepoint.CUI.Component
   
+  type ContextMenuLauncher = typings.sharepoint.CUI.MenuLauncher
+  
+  type ContextMenuRoot = typings.sharepoint.CUI.Root
+  
   type ContextMenuRootProperties = typings.sharepoint.CUI.RootProperties
   
   type ControlComponent = typings.sharepoint.CUI.Component
@@ -25,6 +30,8 @@ package object CUI {
   type GroupPopup = typings.sharepoint.CUI.Component
   
   type GroupPopupLayout = typings.sharepoint.CUI.Layout
+  
+  type Jewel = typings.sharepoint.CUI.Root
   
   type JewelBuildContext = typings.sharepoint.CUI.BuildContext
   
@@ -39,6 +46,8 @@ package object CUI {
   type MenuLauncherControlProperties = typings.sharepoint.CUI.ControlProperties
   
   type MenuSection = typings.sharepoint.CUI.Component
+  
+  type QAT = typings.sharepoint.CUI.Root
   
   type QATBuildContext = typings.sharepoint.CUI.BuildContext
   
@@ -59,6 +68,8 @@ package object CUI {
   type Strip = typings.sharepoint.CUI.RibbonComponent
   
   type ToolTip = typings.sharepoint.CUI.Component
+  
+  type Toolbar = typings.sharepoint.CUI.Root
   
   type ToolbarBuildContext = typings.sharepoint.CUI.BuildContext
   

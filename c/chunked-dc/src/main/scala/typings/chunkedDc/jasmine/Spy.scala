@@ -1,12 +1,13 @@
 package typings.chunkedDc.jasmine
 
 import typings.chunkedDc.anon.Args
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Spy extends js.Object {
+trait Spy extends StObject {
   
   def apply(params: js.Any*): js.Any = js.native
   

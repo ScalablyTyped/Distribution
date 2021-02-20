@@ -1,11 +1,12 @@
 package typings.expressHandlebars
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartialTemplateOptions extends js.Object {
+trait PartialTemplateOptions extends StObject {
   
   var cache: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object PartialTemplateOptions {
   }
   
   @scala.inline
-  implicit class PartialTemplateOptionsOps[Self <: PartialTemplateOptions] (val x: Self) extends AnyVal {
+  implicit class PartialTemplateOptionsMutableBuilder[Self <: PartialTemplateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrecompiled(value: Boolean): Self = StObject.set(x, "precompiled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
-    
-    @scala.inline
-    def setPrecompiled(value: Boolean): Self = this.set("precompiled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecompiled: Self = this.set("precompiled", js.undefined)
+    def setPrecompiledUndefined: Self = StObject.set(x, "precompiled", js.undefined)
   }
 }

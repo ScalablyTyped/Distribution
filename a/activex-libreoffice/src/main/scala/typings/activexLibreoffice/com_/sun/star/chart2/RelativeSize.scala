@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * than one, meaning a bigger size than the reference size. Negative values are not allowed.
   */
 @js.native
-trait RelativeSize extends js.Object {
+trait RelativeSize extends StObject {
   
   /**
     * The extension in the primary direction. The direction is defined by the object using this point.
@@ -42,24 +43,12 @@ object RelativeSize {
   }
   
   @scala.inline
-  implicit class RelativeSizeOps[Self <: RelativeSize] (val x: Self) extends AnyVal {
+  implicit class RelativeSizeMutableBuilder[Self <: RelativeSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrimary(value: Double): Self = this.set("Primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondary(value: Double): Self = this.set("Secondary", value.asInstanceOf[js.Any])
+    def setSecondary(value: Double): Self = StObject.set(x, "Secondary", value.asInstanceOf[js.Any])
   }
 }

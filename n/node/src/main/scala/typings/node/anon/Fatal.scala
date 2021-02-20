@@ -1,11 +1,12 @@
 package typings.node.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fatal extends js.Object {
+trait Fatal extends StObject {
   
   var fatal: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Fatal {
   }
   
   @scala.inline
-  implicit class FatalOps[Self <: Fatal] (val x: Self) extends AnyVal {
+  implicit class FatalMutableBuilder[Self <: Fatal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreBOM(value: Boolean): Self = StObject.set(x, "ignoreBOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFatal(value: Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFatal: Self = this.set("fatal", js.undefined)
-    
-    @scala.inline
-    def setIgnoreBOM(value: Boolean): Self = this.set("ignoreBOM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreBOM: Self = this.set("ignoreBOM", js.undefined)
+    def setIgnoreBOMUndefined: Self = StObject.set(x, "ignoreBOM", js.undefined)
   }
 }

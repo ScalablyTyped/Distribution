@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePermissionsRequest extends js.Object {
+trait DescribePermissionsRequest extends StObject {
   
   /**
     * The user's IAM ARN. This can also be a federated user's ARN. For more information about IAM ARNs, see Using Identifiers.
@@ -26,30 +27,18 @@ object DescribePermissionsRequest {
   }
   
   @scala.inline
-  implicit class DescribePermissionsRequestOps[Self <: DescribePermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribePermissionsRequestMutableBuilder[Self <: DescribePermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamUserArn(value: String): Self = this.set("IamUserArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIamUserArn: Self = this.set("IamUserArn", js.undefined)
-    
-    @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Additional information detected on the structural component.
   */
 @js.native
-trait SchemaTextProperty extends js.Object {
+trait SchemaTextProperty extends StObject {
   
   /**
     * Detected start or end of a text segment.
@@ -29,33 +30,21 @@ object SchemaTextProperty {
   }
   
   @scala.inline
-  implicit class SchemaTextPropertyOps[Self <: SchemaTextProperty] (val x: Self) extends AnyVal {
+  implicit class SchemaTextPropertyMutableBuilder[Self <: SchemaTextProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectedBreak(value: SchemaDetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectedLanguages(value: js.Array[SchemaDetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedBreak(value: SchemaDetectedBreak): Self = this.set("detectedBreak", value.asInstanceOf[js.Any])
+    def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
     @scala.inline
-    def deleteDetectedBreak: Self = this.set("detectedBreak", js.undefined)
-    
-    @scala.inline
-    def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = this.set("detectedLanguages", js.Array(value :_*))
-    
-    @scala.inline
-    def setDetectedLanguages(value: js.Array[SchemaDetectedLanguage]): Self = this.set("detectedLanguages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectedLanguages: Self = this.set("detectedLanguages", js.undefined)
+    def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
   }
 }

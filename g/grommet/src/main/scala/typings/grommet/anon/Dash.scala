@@ -16,32 +16,33 @@ import typings.grommet.grommetStrings.triangleDown
 import typings.grommet.grommetStrings.weak
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.ThicknessType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dash extends js.Object {
+trait Dash extends StObject {
   
   var color: js.UndefOr[ColorType | js.Array[Color] | Opacity] = js.native
   
   var dash: js.UndefOr[Boolean] = js.native
   
-   // defaults to undefined
+  // defaults to undefined
   var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.native
   
   var point: js.UndefOr[circle | diamond | square | star | triangle | triangleDown] = js.native
   
-   // default across points
+  // default across points
   // property to get values from objects in data
   var property: String | (js.Array[Property | String]) | Thickness = js.native
   
   var round: js.UndefOr[Boolean] = js.native
   
-   // defaults to undefined
+  // defaults to undefined
   var thickness: js.UndefOr[ThicknessType] = js.native
   
-   // defaults to auto assigned based on available space and amount of data
+  // defaults to auto assigned based on available space and amount of data
   var `type`: js.UndefOr[bar | line | area | point | bars] = js.native
 }
 object Dash {
@@ -53,69 +54,57 @@ object Dash {
   }
   
   @scala.inline
-  implicit class DashOps[Self <: Dash] (val x: Self) extends AnyVal {
+  implicit class DashMutableBuilder[Self <: Dash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorType | js.Array[Color] | Opacity): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setPropertyVarargs(value: (Property | String)*): Self = this.set("property", js.Array(value :_*))
+    def setDash(value: Boolean): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: String | (js.Array[Property | String]) | Thickness): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
     @scala.inline
-    def setColorVarargs(value: Color*): Self = this.set("color", js.Array(value :_*))
+    def setOpacity(value: weak | medium | strong | Boolean | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorType | js.Array[Color] | Opacity): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPoint(value: circle | diamond | square | star | triangle | triangleDown): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: Boolean): Self = this.set("dash", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deleteDash: Self = this.set("dash", js.undefined)
+    def setProperty(value: String | (js.Array[Property | String]) | Thickness): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: weak | medium | strong | Boolean | Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPropertyVarargs(value: (Property | String)*): Self = StObject.set(x, "property", js.Array(value :_*))
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: circle | diamond | square | star | triangle | triangleDown): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
     @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setThickness(value: ThicknessType): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRound(value: Boolean): Self = this.set("round", value.asInstanceOf[js.Any])
+    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     @scala.inline
-    def deleteRound: Self = this.set("round", js.undefined)
+    def setType(value: bar | line | area | point | bars): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThickness(value: ThicknessType): Self = this.set("thickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThickness: Self = this.set("thickness", js.undefined)
-    
-    @scala.inline
-    def setType(value: bar | line | area | point | bars): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

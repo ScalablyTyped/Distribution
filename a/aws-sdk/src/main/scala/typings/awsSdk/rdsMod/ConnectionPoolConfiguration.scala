@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionPoolConfiguration extends js.Object {
+trait ConnectionPoolConfiguration extends StObject {
   
   /**
     * The number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions. Default: 120 Constraints: between 1 and 3600, or 0 representing unlimited
@@ -41,51 +42,39 @@ object ConnectionPoolConfiguration {
   }
   
   @scala.inline
-  implicit class ConnectionPoolConfigurationOps[Self <: ConnectionPoolConfiguration] (val x: Self) extends AnyVal {
+  implicit class ConnectionPoolConfigurationMutableBuilder[Self <: ConnectionPoolConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionBorrowTimeout(value: IntegerOptional): Self = StObject.set(x, "ConnectionBorrowTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionBorrowTimeoutUndefined: Self = StObject.set(x, "ConnectionBorrowTimeout", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitQuery(value: String): Self = StObject.set(x, "InitQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBorrowTimeout(value: IntegerOptional): Self = this.set("ConnectionBorrowTimeout", value.asInstanceOf[js.Any])
+    def setInitQueryUndefined: Self = StObject.set(x, "InitQuery", js.undefined)
     
     @scala.inline
-    def deleteConnectionBorrowTimeout: Self = this.set("ConnectionBorrowTimeout", js.undefined)
+    def setMaxConnectionsPercent(value: IntegerOptional): Self = StObject.set(x, "MaxConnectionsPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitQuery(value: String): Self = this.set("InitQuery", value.asInstanceOf[js.Any])
+    def setMaxConnectionsPercentUndefined: Self = StObject.set(x, "MaxConnectionsPercent", js.undefined)
     
     @scala.inline
-    def deleteInitQuery: Self = this.set("InitQuery", js.undefined)
+    def setMaxIdleConnectionsPercent(value: IntegerOptional): Self = StObject.set(x, "MaxIdleConnectionsPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConnectionsPercent(value: IntegerOptional): Self = this.set("MaxConnectionsPercent", value.asInstanceOf[js.Any])
+    def setMaxIdleConnectionsPercentUndefined: Self = StObject.set(x, "MaxIdleConnectionsPercent", js.undefined)
     
     @scala.inline
-    def deleteMaxConnectionsPercent: Self = this.set("MaxConnectionsPercent", js.undefined)
+    def setSessionPinningFilters(value: StringList): Self = StObject.set(x, "SessionPinningFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIdleConnectionsPercent(value: IntegerOptional): Self = this.set("MaxIdleConnectionsPercent", value.asInstanceOf[js.Any])
+    def setSessionPinningFiltersUndefined: Self = StObject.set(x, "SessionPinningFilters", js.undefined)
     
     @scala.inline
-    def deleteMaxIdleConnectionsPercent: Self = this.set("MaxIdleConnectionsPercent", js.undefined)
-    
-    @scala.inline
-    def setSessionPinningFiltersVarargs(value: String*): Self = this.set("SessionPinningFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setSessionPinningFilters(value: StringList): Self = this.set("SessionPinningFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionPinningFilters: Self = this.set("SessionPinningFilters", js.undefined)
+    def setSessionPinningFiltersVarargs(value: String*): Self = StObject.set(x, "SessionPinningFilters", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -201,192 +202,180 @@ object Scanner {
   }
   
   @scala.inline
-  implicit class ScannerOps[Self <: Scanner] (val x: Self) extends AnyVal {
+  implicit class ScannerMutableBuilder[Self <: Scanner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvanceAndSetTokenKind(value: js.Any => js.Any): Self = StObject.set(x, "advanceAndSetTokenKind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateIllegalEscapeDiagnostic(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createIllegalEscapeDiagnostic", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_languageVersion(value: js.Any): Self = this.set("_languageVersion", value.asInstanceOf[js.Any])
+    def setCreateToken(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "createToken", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setAbsoluteIndex(value: () => Double): Self = this.set("absoluteIndex", js.Any.fromFunction0(value))
+    def setCurrentCharCode(value: () => js.Any): Self = StObject.set(x, "currentCharCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdvanceAndSetTokenKind(value: js.Any => js.Any): Self = this.set("advanceAndSetTokenKind", js.Any.fromFunction1(value))
+    def setFileName(value: js.Any): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateIllegalEscapeDiagnostic(value: (js.Any, js.Any) => js.Any): Self = this.set("createIllegalEscapeDiagnostic", js.Any.fromFunction2(value))
+    def setGetErrorMessageText(value: js.Any => js.Any): Self = StObject.set(x, "getErrorMessageText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateToken(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("createToken", js.Any.fromFunction8(value))
+    def setIsDotPrefixedNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isDotPrefixedNumericLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentCharCode(value: () => js.Any): Self = this.set("currentCharCode", js.Any.fromFunction0(value))
+    def setIsHexNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isHexNumericLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileName(value: js.Any): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setIsIdentifierPart(value: js.Any => js.Any): Self = StObject.set(x, "isIdentifierPart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetErrorMessageText(value: js.Any => js.Any): Self = this.set("getErrorMessageText", js.Any.fromFunction1(value))
+    def setIsIdentifierStart(value: js.Any => js.Any): Self = StObject.set(x, "isIdentifierStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDotPrefixedNumericLiteral(value: () => js.Any): Self = this.set("isDotPrefixedNumericLiteral", js.Any.fromFunction0(value))
+    def setIsNewLineCharacter(value: js.Any => js.Any): Self = StObject.set(x, "isNewLineCharacter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsHexNumericLiteral(value: () => js.Any): Self = this.set("isHexNumericLiteral", js.Any.fromFunction0(value))
+    def setIsOctalNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isOctalNumericLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIdentifierPart(value: js.Any => js.Any): Self = this.set("isIdentifierPart", js.Any.fromFunction1(value))
+    def setIsUnicodeEscape(value: js.Any => js.Any): Self = StObject.set(x, "isUnicodeEscape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsIdentifierStart(value: js.Any => js.Any): Self = this.set("isIdentifierStart", js.Any.fromFunction1(value))
+    def setLanguageVersion(value: () => LanguageVersion): Self = StObject.set(x, "languageVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNewLineCharacter(value: js.Any => js.Any): Self = this.set("isNewLineCharacter", js.Any.fromFunction1(value))
+    def setPeekCharOrUnicodeEscape(value: () => js.Any): Self = StObject.set(x, "peekCharOrUnicodeEscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsOctalNumericLiteral(value: () => js.Any): Self = this.set("isOctalNumericLiteral", js.Any.fromFunction0(value))
+    def setPeekUnicodeOrHexEscape(value: () => js.Any): Self = StObject.set(x, "peekUnicodeOrHexEscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsUnicodeEscape(value: js.Any => js.Any): Self = this.set("isUnicodeEscape", js.Any.fromFunction1(value))
+    def setScan(value: (js.Array[Diagnostic], Boolean) => ISyntaxToken): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLanguageVersion(value: () => LanguageVersion): Self = this.set("languageVersion", js.Any.fromFunction0(value))
+    def setScanAmpersandToken(value: () => js.Any): Self = StObject.set(x, "scanAmpersandToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPeekCharOrUnicodeEscape(value: () => js.Any): Self = this.set("peekCharOrUnicodeEscape", js.Any.fromFunction0(value))
+    def setScanAsteriskToken(value: () => js.Any): Self = StObject.set(x, "scanAsteriskToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPeekUnicodeOrHexEscape(value: () => js.Any): Self = this.set("peekUnicodeOrHexEscape", js.Any.fromFunction0(value))
+    def setScanBarToken(value: () => js.Any): Self = StObject.set(x, "scanBarToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScan(value: (js.Array[Diagnostic], Boolean) => ISyntaxToken): Self = this.set("scan", js.Any.fromFunction2(value))
+    def setScanCaretToken(value: () => js.Any): Self = StObject.set(x, "scanCaretToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanAmpersandToken(value: () => js.Any): Self = this.set("scanAmpersandToken", js.Any.fromFunction0(value))
+    def setScanCharOrUnicodeEscape(value: js.Any => js.Any): Self = StObject.set(x, "scanCharOrUnicodeEscape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanAsteriskToken(value: () => js.Any): Self = this.set("scanAsteriskToken", js.Any.fromFunction0(value))
+    def setScanDecimalDigits(value: () => js.Any): Self = StObject.set(x, "scanDecimalDigits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanBarToken(value: () => js.Any): Self = this.set("scanBarToken", js.Any.fromFunction0(value))
+    def setScanDecimalNumericLiteral(value: () => js.Any): Self = StObject.set(x, "scanDecimalNumericLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanCaretToken(value: () => js.Any): Self = this.set("scanCaretToken", js.Any.fromFunction0(value))
+    def setScanDefaultCharacter(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanDefaultCharacter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScanCharOrUnicodeEscape(value: js.Any => js.Any): Self = this.set("scanCharOrUnicodeEscape", js.Any.fromFunction1(value))
+    def setScanDotToken(value: js.Any => js.Any): Self = StObject.set(x, "scanDotToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanDecimalDigits(value: () => js.Any): Self = this.set("scanDecimalDigits", js.Any.fromFunction0(value))
+    def setScanEqualsToken(value: () => js.Any): Self = StObject.set(x, "scanEqualsToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanDecimalNumericLiteral(value: () => js.Any): Self = this.set("scanDecimalNumericLiteral", js.Any.fromFunction0(value))
+    def setScanExclamationToken(value: () => js.Any): Self = StObject.set(x, "scanExclamationToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanDefaultCharacter(value: (js.Any, js.Any) => js.Any): Self = this.set("scanDefaultCharacter", js.Any.fromFunction2(value))
+    def setScanHexNumericLiteral(value: () => js.Any): Self = StObject.set(x, "scanHexNumericLiteral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanDotToken(value: js.Any => js.Any): Self = this.set("scanDotToken", js.Any.fromFunction1(value))
+    def setScanLessThanToken(value: () => js.Any): Self = StObject.set(x, "scanLessThanToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanEqualsToken(value: () => js.Any): Self = this.set("scanEqualsToken", js.Any.fromFunction0(value))
+    def setScanLineTerminatorSequenceLength(value: js.Any => js.Any): Self = StObject.set(x, "scanLineTerminatorSequenceLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanExclamationToken(value: () => js.Any): Self = this.set("scanExclamationToken", js.Any.fromFunction0(value))
+    def setScanLineTerminatorSequenceTrivia(value: js.Any => js.Any): Self = StObject.set(x, "scanLineTerminatorSequenceTrivia", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanHexNumericLiteral(value: () => js.Any): Self = this.set("scanHexNumericLiteral", js.Any.fromFunction0(value))
+    def setScanMinusToken(value: () => js.Any): Self = StObject.set(x, "scanMinusToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanLessThanToken(value: () => js.Any): Self = this.set("scanLessThanToken", js.Any.fromFunction0(value))
+    def setScanMultiLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanMultiLineCommentTrivia", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScanLineTerminatorSequenceLength(value: js.Any => js.Any): Self = this.set("scanLineTerminatorSequenceLength", js.Any.fromFunction1(value))
+    def setScanMultiLineCommentTriviaLength(value: js.Any => js.Any): Self = StObject.set(x, "scanMultiLineCommentTriviaLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanLineTerminatorSequenceTrivia(value: js.Any => js.Any): Self = this.set("scanLineTerminatorSequenceTrivia", js.Any.fromFunction1(value))
+    def setScanNumericLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanNumericLiteral", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanMinusToken(value: () => js.Any): Self = this.set("scanMinusToken", js.Any.fromFunction0(value))
+    def setScanOctalNumericLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanOctalNumericLiteral", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanMultiLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = this.set("scanMultiLineCommentTrivia", js.Any.fromFunction2(value))
+    def setScanPercentToken(value: () => js.Any): Self = StObject.set(x, "scanPercentToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanMultiLineCommentTriviaLength(value: js.Any => js.Any): Self = this.set("scanMultiLineCommentTriviaLength", js.Any.fromFunction1(value))
+    def setScanPlusToken(value: () => js.Any): Self = StObject.set(x, "scanPlusToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanNumericLiteral(value: js.Any => js.Any): Self = this.set("scanNumericLiteral", js.Any.fromFunction1(value))
+    def setScanSingleLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanSingleLineCommentTrivia", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScanOctalNumericLiteral(value: js.Any => js.Any): Self = this.set("scanOctalNumericLiteral", js.Any.fromFunction1(value))
+    def setScanSingleLineCommentTriviaLength(value: () => js.Any): Self = StObject.set(x, "scanSingleLineCommentTriviaLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScanPercentToken(value: () => js.Any): Self = this.set("scanPercentToken", js.Any.fromFunction0(value))
+    def setScanSlashToken(value: js.Any => js.Any): Self = StObject.set(x, "scanSlashToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanPlusToken(value: () => js.Any): Self = this.set("scanPlusToken", js.Any.fromFunction0(value))
+    def setScanStringLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanStringLiteral", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanSingleLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = this.set("scanSingleLineCommentTrivia", js.Any.fromFunction2(value))
+    def setScanSyntaxToken(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanSyntaxToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScanSingleLineCommentTriviaLength(value: () => js.Any): Self = this.set("scanSingleLineCommentTriviaLength", js.Any.fromFunction0(value))
+    def setScanTrivia(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanTrivia", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setScanSlashToken(value: js.Any => js.Any): Self = this.set("scanSlashToken", js.Any.fromFunction1(value))
+    def setScanTriviaInfo(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanTriviaInfo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScanStringLiteral(value: js.Any => js.Any): Self = this.set("scanStringLiteral", js.Any.fromFunction1(value))
+    def setScanUnicodeOrHexEscape(value: js.Any => js.Any): Self = StObject.set(x, "scanUnicodeOrHexEscape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanSyntaxToken(value: (js.Any, js.Any) => js.Any): Self = this.set("scanSyntaxToken", js.Any.fromFunction2(value))
+    def setScanWhitespaceTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanWhitespaceTrivia", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScanTrivia(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("scanTrivia", js.Any.fromFunction3(value))
+    def setSetAbsoluteIndex(value: Double => Unit): Self = StObject.set(x, "setAbsoluteIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanTriviaInfo(value: (js.Any, js.Any) => js.Any): Self = this.set("scanTriviaInfo", js.Any.fromFunction2(value))
+    def setSkipEscapeSequence(value: js.Any => js.Any): Self = StObject.set(x, "skipEscapeSequence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScanUnicodeOrHexEscape(value: js.Any => js.Any): Self = this.set("scanUnicodeOrHexEscape", js.Any.fromFunction1(value))
+    def setSlidingWindow(value: js.Any): Self = StObject.set(x, "slidingWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanWhitespaceTrivia(value: (js.Any, js.Any) => js.Any): Self = this.set("scanWhitespaceTrivia", js.Any.fromFunction2(value))
+    def setSlowScanIdentifierOrKeyword(value: js.Any => js.Any): Self = StObject.set(x, "slowScanIdentifierOrKeyword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAbsoluteIndex(value: Double => Unit): Self = this.set("setAbsoluteIndex", js.Any.fromFunction1(value))
+    def setSubstring(value: (Double, Double, Boolean) => String): Self = StObject.set(x, "substring", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSkipEscapeSequence(value: js.Any => js.Any): Self = this.set("skipEscapeSequence", js.Any.fromFunction1(value))
+    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlidingWindow(value: js.Any): Self = this.set("slidingWindow", value.asInstanceOf[js.Any])
+    def setTryFastScanIdentifierOrKeyword(value: js.Any => js.Any): Self = StObject.set(x, "tryFastScanIdentifierOrKeyword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSlowScanIdentifierOrKeyword(value: js.Any => js.Any): Self = this.set("slowScanIdentifierOrKeyword", js.Any.fromFunction1(value))
+    def setTryScanRegularExpressionToken(value: () => js.Any): Self = StObject.set(x, "tryScanRegularExpressionToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSubstring(value: (Double, Double, Boolean) => String): Self = this.set("substring", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setText(value: js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTryFastScanIdentifierOrKeyword(value: js.Any => js.Any): Self = this.set("tryFastScanIdentifierOrKeyword", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTryScanRegularExpressionToken(value: () => js.Any): Self = this.set("tryScanRegularExpressionToken", js.Any.fromFunction0(value))
+    def set_languageVersion(value: js.Any): Self = StObject.set(x, "_languageVersion", value.asInstanceOf[js.Any])
   }
 }

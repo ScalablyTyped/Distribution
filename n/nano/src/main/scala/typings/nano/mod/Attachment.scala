@@ -2,12 +2,13 @@ package typings.nano.mod
 
 import typings.node.Buffer
 import typings.node.processMod.global.NodeJS.ReadStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachment extends js.Object {
+trait Attachment extends StObject {
   
   def destroy(docname: String, attname: String): js.Promise[_] = js.native
   def destroy(docname: String, attname: String, callback: Callback[_]): js.Promise[_] = js.native

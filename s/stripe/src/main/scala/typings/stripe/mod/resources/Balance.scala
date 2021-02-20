@@ -3,17 +3,20 @@ package typings.stripe.mod.resources
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.balance.IBalance
 import typings.stripe.mod.balance.IBalanceListOptions
 import typings.stripe.mod.balance.IBalanceTransaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Balance")
 @js.native
-class Balance () extends StripeResource {
+class Balance protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def listTransactions(): IListPromise[IBalanceTransaction] = js.native
   def listTransactions(data: IBalanceListOptions): IListPromise[IBalanceTransaction] = js.native

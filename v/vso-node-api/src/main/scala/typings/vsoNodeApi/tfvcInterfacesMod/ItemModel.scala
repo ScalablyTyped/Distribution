@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemModel extends js.Object {
+trait ItemModel extends StObject {
   
   var _links: js.Any = js.native
   
@@ -35,36 +36,24 @@ object ItemModel {
   }
   
   @scala.inline
-  implicit class ItemModelOps[Self <: ItemModel] (val x: Self) extends AnyVal {
+  implicit class ItemModelMutableBuilder[Self <: ItemModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentMetadata(value: FileContentMetadata): Self = StObject.set(x, "contentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSymLink(value: Boolean): Self = StObject.set(x, "isSymLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentMetadata(value: FileContentMetadata): Self = this.set("contentMetadata", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFolder(value: Boolean): Self = this.set("isFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSymLink(value: Boolean): Self = this.set("isSymLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

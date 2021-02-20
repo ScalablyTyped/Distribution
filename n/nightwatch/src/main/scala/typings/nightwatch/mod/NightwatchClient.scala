@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchClient extends js.Object {
+trait NightwatchClient extends StObject {
   
   var api: NightwatchAPI = js.native
   

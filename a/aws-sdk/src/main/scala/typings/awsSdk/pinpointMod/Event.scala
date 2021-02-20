@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   /**
     * The package name of the app that's recording the event.
@@ -66,72 +67,60 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppPackageName(value: string): Self = StObject.set(x, "AppPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppPackageNameUndefined: Self = StObject.set(x, "AppPackageName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppTitle(value: string): Self = StObject.set(x, "AppTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: string): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    def setAppTitleUndefined: Self = StObject.set(x, "AppTitle", js.undefined)
     
     @scala.inline
-    def setTimestamp(value: string): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setAppVersionCode(value: string): Self = StObject.set(x, "AppVersionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppPackageName(value: string): Self = this.set("AppPackageName", value.asInstanceOf[js.Any])
+    def setAppVersionCodeUndefined: Self = StObject.set(x, "AppVersionCode", js.undefined)
     
     @scala.inline
-    def deleteAppPackageName: Self = this.set("AppPackageName", js.undefined)
+    def setAttributes(value: MapOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppTitle(value: string): Self = this.set("AppTitle", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def deleteAppTitle: Self = this.set("AppTitle", js.undefined)
+    def setClientSdkVersion(value: string): Self = StObject.set(x, "ClientSdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersionCode(value: string): Self = this.set("AppVersionCode", value.asInstanceOf[js.Any])
+    def setClientSdkVersionUndefined: Self = StObject.set(x, "ClientSdkVersion", js.undefined)
     
     @scala.inline
-    def deleteAppVersionCode: Self = this.set("AppVersionCode", js.undefined)
+    def setEventType(value: string): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: MapOfString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setMetrics(value: MapOfDouble): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
     @scala.inline
-    def setClientSdkVersion(value: string): Self = this.set("ClientSdkVersion", value.asInstanceOf[js.Any])
+    def setSdkName(value: string): Self = StObject.set(x, "SdkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientSdkVersion: Self = this.set("ClientSdkVersion", js.undefined)
+    def setSdkNameUndefined: Self = StObject.set(x, "SdkName", js.undefined)
     
     @scala.inline
-    def setMetrics(value: MapOfDouble): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    def setSession(value: Session): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
     @scala.inline
-    def setSdkName(value: string): Self = this.set("SdkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdkName: Self = this.set("SdkName", js.undefined)
-    
-    @scala.inline
-    def setSession(value: Session): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("Session", js.undefined)
+    def setTimestamp(value: string): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext
 
 import typings.senchaTouch.Ext.scroll.IView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -293,336 +294,324 @@ object IContainer {
   }
   
   @scala.inline
-  implicit class IContainerOps[Self <: IContainer] (val x: Self) extends AnyVal {
+  implicit class IContainerMutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveItem(value: js.Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveItemUndefined: Self = StObject.set(x, "activeItem", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdd(value: /* newItems */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveItem(value: js.Any): Self = this.set("activeItem", value.asInstanceOf[js.Any])
+    def setAddAll(value: /* items */ js.UndefOr[Array] => Array): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteActiveItem: Self = this.set("activeItem", js.undefined)
+    def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
     
     @scala.inline
-    def setAdd(value: /* newItems */ js.UndefOr[js.Any] => IComponent): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setAnimateActiveItem(value: (/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "animateActiveItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddAll(value: /* items */ js.UndefOr[Array] => Array): Self = this.set("addAll", js.Any.fromFunction1(value))
+    def setAnimateActiveItemUndefined: Self = StObject.set(x, "animateActiveItem", js.undefined)
     
     @scala.inline
-    def deleteAddAll: Self = this.set("addAll", js.undefined)
+    def setApplyMasked(value: /* masked */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "applyMasked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimateActiveItem(value: (/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any]) => Unit): Self = this.set("animateActiveItem", js.Any.fromFunction2(value))
+    def setApplyMaskedUndefined: Self = StObject.set(x, "applyMasked", js.undefined)
     
     @scala.inline
-    def deleteAnimateActiveItem: Self = this.set("animateActiveItem", js.undefined)
+    def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyMasked(value: /* masked */ js.UndefOr[js.Any] => _): Self = this.set("applyMasked", js.Any.fromFunction1(value))
+    def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
     
     @scala.inline
-    def deleteApplyMasked: Self = this.set("applyMasked", js.undefined)
+    def setCardSwitchAnimation(value: js.Any): Self = StObject.set(x, "cardSwitchAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDestroy(value: Boolean): Self = this.set("autoDestroy", value.asInstanceOf[js.Any])
+    def setCardSwitchAnimationUndefined: Self = StObject.set(x, "cardSwitchAnimation", js.undefined)
     
     @scala.inline
-    def deleteAutoDestroy: Self = this.set("autoDestroy", js.undefined)
+    def setChild(value: /* selector */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCardSwitchAnimation(value: js.Any): Self = this.set("cardSwitchAnimation", value.asInstanceOf[js.Any])
+    def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
     @scala.inline
-    def deleteCardSwitchAnimation: Self = this.set("cardSwitchAnimation", js.undefined)
+    def setControl(value: js.Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChild(value: /* selector */ js.UndefOr[java.lang.String] => IComponent): Self = this.set("child", js.Any.fromFunction1(value))
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def deleteChild: Self = this.set("child", js.undefined)
+    def setDefaultType(value: java.lang.String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: js.Any): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultType(value: java.lang.String): Self = this.set("defaultType", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteDefaultType: Self = this.set("defaultType", js.undefined)
+    def setDown(value: /* selector */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaults(value: js.Any): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setGetActiveItem(value: () => _): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDown(value: /* selector */ js.UndefOr[java.lang.String] => IComponent): Self = this.set("down", js.Any.fromFunction1(value))
+    def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setGetAt(value: /* index */ js.UndefOr[Double] => IComponent): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetActiveItem(value: () => _): Self = this.set("getActiveItem", js.Any.fromFunction0(value))
+    def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
     @scala.inline
-    def deleteGetActiveItem: Self = this.set("getActiveItem", js.undefined)
+    def setGetAutoDestroy(value: () => Boolean): Self = StObject.set(x, "getAutoDestroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAt(value: /* index */ js.UndefOr[Double] => IComponent): Self = this.set("getAt", js.Any.fromFunction1(value))
+    def setGetAutoDestroyUndefined: Self = StObject.set(x, "getAutoDestroy", js.undefined)
     
     @scala.inline
-    def deleteGetAt: Self = this.set("getAt", js.undefined)
+    def setGetComponent(value: /* component */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAutoDestroy(value: () => Boolean): Self = this.set("getAutoDestroy", js.Any.fromFunction0(value))
+    def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
     
     @scala.inline
-    def deleteGetAutoDestroy: Self = this.set("getAutoDestroy", js.undefined)
+    def setGetControl(value: () => _): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetComponent(value: /* component */ js.UndefOr[js.Any] => IComponent): Self = this.set("getComponent", js.Any.fromFunction1(value))
+    def setGetControlUndefined: Self = StObject.set(x, "getControl", js.undefined)
     
     @scala.inline
-    def deleteGetComponent: Self = this.set("getComponent", js.undefined)
+    def setGetDefaultType(value: () => java.lang.String): Self = StObject.set(x, "getDefaultType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetControl(value: () => _): Self = this.set("getControl", js.Any.fromFunction0(value))
+    def setGetDefaultTypeUndefined: Self = StObject.set(x, "getDefaultType", js.undefined)
     
     @scala.inline
-    def deleteGetControl: Self = this.set("getControl", js.undefined)
+    def setGetDefaults(value: () => _): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultType(value: () => java.lang.String): Self = this.set("getDefaultType", js.Any.fromFunction0(value))
+    def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultType: Self = this.set("getDefaultType", js.undefined)
+    def setGetDockedComponent(value: /* component */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaults(value: () => _): Self = this.set("getDefaults", js.Any.fromFunction0(value))
+    def setGetDockedComponentUndefined: Self = StObject.set(x, "getDockedComponent", js.undefined)
     
     @scala.inline
-    def deleteGetDefaults: Self = this.set("getDefaults", js.undefined)
+    def setGetDockedItems(value: () => Array): Self = StObject.set(x, "getDockedItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDockedComponent(value: /* component */ js.UndefOr[js.Any] => _): Self = this.set("getDockedComponent", js.Any.fromFunction1(value))
+    def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
     
     @scala.inline
-    def deleteGetDockedComponent: Self = this.set("getDockedComponent", js.undefined)
+    def setGetHideOnMaskTap(value: () => Boolean): Self = StObject.set(x, "getHideOnMaskTap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDockedItems(value: () => Array): Self = this.set("getDockedItems", js.Any.fromFunction0(value))
+    def setGetHideOnMaskTapUndefined: Self = StObject.set(x, "getHideOnMaskTap", js.undefined)
     
     @scala.inline
-    def deleteGetDockedItems: Self = this.set("getDockedItems", js.undefined)
+    def setGetInnerItems(value: () => Array): Self = StObject.set(x, "getInnerItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHideOnMaskTap(value: () => Boolean): Self = this.set("getHideOnMaskTap", js.Any.fromFunction0(value))
+    def setGetInnerItemsUndefined: Self = StObject.set(x, "getInnerItems", js.undefined)
     
     @scala.inline
-    def deleteGetHideOnMaskTap: Self = this.set("getHideOnMaskTap", js.undefined)
+    def setGetItems(value: () => _): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInnerItems(value: () => Array): Self = this.set("getInnerItems", js.Any.fromFunction0(value))
+    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
     @scala.inline
-    def deleteGetInnerItems: Self = this.set("getInnerItems", js.undefined)
+    def setGetMasked(value: () => _): Self = StObject.set(x, "getMasked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItems(value: () => _): Self = this.set("getItems", js.Any.fromFunction0(value))
+    def setGetMaskedUndefined: Self = StObject.set(x, "getMasked", js.undefined)
     
     @scala.inline
-    def deleteGetItems: Self = this.set("getItems", js.undefined)
+    def setGetModal(value: () => Boolean): Self = StObject.set(x, "getModal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMasked(value: () => _): Self = this.set("getMasked", js.Any.fromFunction0(value))
+    def setGetModalUndefined: Self = StObject.set(x, "getModal", js.undefined)
     
     @scala.inline
-    def deleteGetMasked: Self = this.set("getMasked", js.undefined)
+    def setGetScrollable(value: () => IView): Self = StObject.set(x, "getScrollable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModal(value: () => Boolean): Self = this.set("getModal", js.Any.fromFunction0(value))
+    def setGetScrollableUndefined: Self = StObject.set(x, "getScrollable", js.undefined)
     
     @scala.inline
-    def deleteGetModal: Self = this.set("getModal", js.undefined)
+    def setHide(value: () => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScrollable(value: () => IView): Self = this.set("getScrollable", js.Any.fromFunction0(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteGetScrollable: Self = this.set("getScrollable", js.undefined)
+    def setInsert(value: (/* index */ js.UndefOr[Double], /* item */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHide(value: () => IComponent): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: (/* index */ js.UndefOr[Double], /* item */ js.UndefOr[js.Any]) => Unit): Self = this.set("insert", js.Any.fromFunction2(value))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
+    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Any): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setMask(value: /* mask */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayout(value: js.Any): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setMasked(value: js.Any): Self = StObject.set(x, "masked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: /* mask */ js.UndefOr[js.Any] => Unit): Self = this.set("mask", js.Any.fromFunction1(value))
+    def setMaskedUndefined: Self = StObject.set(x, "masked", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMasked(value: js.Any): Self = this.set("masked", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteMasked: Self = this.set("masked", js.undefined)
+    def setRemove(value: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = this.set("query", js.Any.fromFunction1(value))
+    def setRemoveAll(value: (/* destroy */ js.UndefOr[Boolean], /* everything */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "removeAll", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
     @scala.inline
-    def setRemove(value: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = this.set("remove", js.Any.fromFunction2(value))
+    def setRemoveAt(value: /* index */ js.UndefOr[Double] => IContainer): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRemoveAtUndefined: Self = StObject.set(x, "removeAt", js.undefined)
     
     @scala.inline
-    def setRemoveAll(value: (/* destroy */ js.UndefOr[Boolean], /* everything */ js.UndefOr[Boolean]) => IComponent): Self = this.set("removeAll", js.Any.fromFunction2(value))
+    def setRemoveDocked(value: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "removeDocked", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRemoveAll: Self = this.set("removeAll", js.undefined)
+    def setRemoveDockedUndefined: Self = StObject.set(x, "removeDocked", js.undefined)
     
     @scala.inline
-    def setRemoveAt(value: /* index */ js.UndefOr[Double] => IContainer): Self = this.set("removeAt", js.Any.fromFunction1(value))
+    def setRemoveInnerAt(value: /* index */ js.UndefOr[Double] => IContainer): Self = StObject.set(x, "removeInnerAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemoveAt: Self = this.set("removeAt", js.undefined)
+    def setRemoveInnerAtUndefined: Self = StObject.set(x, "removeInnerAt", js.undefined)
     
     @scala.inline
-    def setRemoveDocked(value: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = this.set("removeDocked", js.Any.fromFunction2(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteRemoveDocked: Self = this.set("removeDocked", js.undefined)
+    def setScrollable(value: js.Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveInnerAt(value: /* index */ js.UndefOr[Double] => IContainer): Self = this.set("removeInnerAt", js.Any.fromFunction1(value))
+    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
     @scala.inline
-    def deleteRemoveInnerAt: Self = this.set("removeInnerAt", js.undefined)
+    def setSetActiveItem(value: /* activeItem */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollable(value: js.Any): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
     
     @scala.inline
-    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    def setSetAutoDestroy(value: /* autoDestroy */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoDestroy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveItem(value: /* activeItem */ js.UndefOr[js.Any] => Unit): Self = this.set("setActiveItem", js.Any.fromFunction1(value))
+    def setSetAutoDestroyUndefined: Self = StObject.set(x, "setAutoDestroy", js.undefined)
     
     @scala.inline
-    def deleteSetActiveItem: Self = this.set("setActiveItem", js.undefined)
+    def setSetControl(value: /* control */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoDestroy(value: /* autoDestroy */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoDestroy", js.Any.fromFunction1(value))
+    def setSetControlUndefined: Self = StObject.set(x, "setControl", js.undefined)
     
     @scala.inline
-    def deleteSetAutoDestroy: Self = this.set("setAutoDestroy", js.undefined)
+    def setSetDefaultType(value: /* defaultType */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDefaultType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetControl(value: /* control */ js.UndefOr[js.Any] => Unit): Self = this.set("setControl", js.Any.fromFunction1(value))
+    def setSetDefaultTypeUndefined: Self = StObject.set(x, "setDefaultType", js.undefined)
     
     @scala.inline
-    def deleteSetControl: Self = this.set("setControl", js.undefined)
+    def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaultType(value: /* defaultType */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDefaultType", js.Any.fromFunction1(value))
+    def setSetDefaultsUndefined: Self = StObject.set(x, "setDefaults", js.undefined)
     
     @scala.inline
-    def deleteSetDefaultType: Self = this.set("setDefaultType", js.undefined)
+    def setSetHideOnMaskTap(value: /* hideOnMaskTap */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHideOnMaskTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = this.set("setDefaults", js.Any.fromFunction1(value))
+    def setSetHideOnMaskTapUndefined: Self = StObject.set(x, "setHideOnMaskTap", js.undefined)
     
     @scala.inline
-    def deleteSetDefaults: Self = this.set("setDefaults", js.undefined)
+    def setSetItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHideOnMaskTap(value: /* hideOnMaskTap */ js.UndefOr[Boolean] => Unit): Self = this.set("setHideOnMaskTap", js.Any.fromFunction1(value))
+    def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
     
     @scala.inline
-    def deleteSetHideOnMaskTap: Self = this.set("setHideOnMaskTap", js.undefined)
+    def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = this.set("setItems", js.Any.fromFunction1(value))
+    def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
     
     @scala.inline
-    def deleteSetItems: Self = this.set("setItems", js.undefined)
+    def setSetMasked(value: /* masked */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMasked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = this.set("setLayout", js.Any.fromFunction1(value))
+    def setSetMaskedUndefined: Self = StObject.set(x, "setMasked", js.undefined)
     
     @scala.inline
-    def deleteSetLayout: Self = this.set("setLayout", js.undefined)
+    def setSetModal(value: /* modal */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setModal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMasked(value: /* masked */ js.UndefOr[js.Any] => Unit): Self = this.set("setMasked", js.Any.fromFunction1(value))
+    def setSetModalUndefined: Self = StObject.set(x, "setModal", js.undefined)
     
     @scala.inline
-    def deleteSetMasked: Self = this.set("setMasked", js.undefined)
+    def setSetScrollable(value: /* scrollable */ js.UndefOr[js.Any] => IView): Self = StObject.set(x, "setScrollable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetModal(value: /* modal */ js.UndefOr[Boolean] => Unit): Self = this.set("setModal", js.Any.fromFunction1(value))
+    def setSetScrollableUndefined: Self = StObject.set(x, "setScrollable", js.undefined)
     
     @scala.inline
-    def deleteSetModal: Self = this.set("setModal", js.undefined)
+    def setShow(value: () => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetScrollable(value: /* scrollable */ js.UndefOr[js.Any] => IView): Self = this.set("setScrollable", js.Any.fromFunction1(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSetScrollable: Self = this.set("setScrollable", js.undefined)
+    def setUnmask(value: () => Unit): Self = StObject.set(x, "unmask", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShow(value: () => IComponent): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setUnmask(value: () => Unit): Self = this.set("unmask", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteUnmask: Self = this.set("unmask", js.undefined)
+    def setUnmaskUndefined: Self = StObject.set(x, "unmask", js.undefined)
   }
 }

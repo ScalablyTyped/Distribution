@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISimplificationSettings extends js.Object {
+trait ISimplificationSettings extends StObject {
   
   /**
     * Gets or sets the distance when this optimized version should be used
@@ -31,30 +32,18 @@ object ISimplificationSettings {
   }
   
   @scala.inline
-  implicit class ISimplificationSettingsOps[Self <: ISimplificationSettings] (val x: Self) extends AnyVal {
+  implicit class ISimplificationSettingsMutableBuilder[Self <: ISimplificationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptimizeMesh(value: Boolean): Self = StObject.set(x, "optimizeMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptimizeMeshUndefined: Self = StObject.set(x, "optimizeMesh", js.undefined)
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptimizeMesh(value: Boolean): Self = this.set("optimizeMesh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptimizeMesh: Self = this.set("optimizeMesh", js.undefined)
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }
 }

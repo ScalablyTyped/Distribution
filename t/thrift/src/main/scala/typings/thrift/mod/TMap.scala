@@ -1,12 +1,13 @@
 package typings.thrift.mod
 
 import typings.thrift.mod.Thrift.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TMap extends js.Object {
+trait TMap extends StObject {
   
   var ktype: Type = js.native
   
@@ -23,27 +24,15 @@ object TMap {
   }
   
   @scala.inline
-  implicit class TMapOps[Self <: TMap] (val x: Self) extends AnyVal {
+  implicit class TMapMutableBuilder[Self <: TMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKtype(value: Type): Self = StObject.set(x, "ktype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKtype(value: Type): Self = this.set("ktype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVtype(value: Type): Self = this.set("vtype", value.asInstanceOf[js.Any])
+    def setVtype(value: Type): Self = StObject.set(x, "vtype", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parameter extends js.Object {
+trait Parameter extends StObject {
   
   /**
     * The key associated with the parameter. If you don't specify a key and value for a particular parameter, AWS CloudFormation uses the default value that is specified in your template.
@@ -36,42 +37,30 @@ object Parameter {
   }
   
   @scala.inline
-  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterValue(value: ParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterKey(value: ParameterKey): Self = this.set("ParameterKey", value.asInstanceOf[js.Any])
+    def setParameterValueUndefined: Self = StObject.set(x, "ParameterValue", js.undefined)
     
     @scala.inline
-    def deleteParameterKey: Self = this.set("ParameterKey", js.undefined)
+    def setResolvedValue(value: ParameterValue): Self = StObject.set(x, "ResolvedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValue(value: ParameterValue): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
+    def setResolvedValueUndefined: Self = StObject.set(x, "ResolvedValue", js.undefined)
     
     @scala.inline
-    def deleteParameterValue: Self = this.set("ParameterValue", js.undefined)
+    def setUsePreviousValue(value: UsePreviousValue): Self = StObject.set(x, "UsePreviousValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedValue(value: ParameterValue): Self = this.set("ResolvedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvedValue: Self = this.set("ResolvedValue", js.undefined)
-    
-    @scala.inline
-    def setUsePreviousValue(value: UsePreviousValue): Self = this.set("UsePreviousValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePreviousValue: Self = this.set("UsePreviousValue", js.undefined)
+    def setUsePreviousValueUndefined: Self = StObject.set(x, "UsePreviousValue", js.undefined)
   }
 }

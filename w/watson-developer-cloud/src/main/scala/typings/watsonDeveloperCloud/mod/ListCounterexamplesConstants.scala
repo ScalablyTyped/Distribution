@@ -1,32 +1,29 @@
 package typings.watsonDeveloperCloud.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listCounterexamples` operation. */
-@JSImport("watson-developer-cloud/assistant/v1", "ListCounterexamplesConstants")
-@js.native
-object ListCounterexamplesConstants extends js.Object {
+object ListCounterexamplesConstants {
   
   @js.native
-  sealed trait Sort extends js.Object
+  sealed trait Sort extends StObject
   /** The attribute by which returned counterexamples will be sorted. To reverse the sort order, prefix the value with a minus sign (`-`). */
+  @JSImport("watson-developer-cloud/assistant/v1", "ListCounterexamplesConstants.Sort")
   @js.native
-  object Sort extends js.Object {
+  object Sort extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
     
     @js.native
     sealed trait TEXT extends Sort
-    /* "text" */ @js.native
-    object TEXT extends TopLevel[TEXT with String]
+    /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort.TEXT with String = js.native
     
     @js.native
     sealed trait UPDATED extends Sort
-    /* "updated" */ @js.native
-    object UPDATED extends TopLevel[UPDATED with String]
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort.UPDATED with String = js.native
   }
 }

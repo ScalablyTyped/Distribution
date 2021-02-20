@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConfig extends js.Object {
+trait NetworkConfig extends StObject {
   
   /**
     * Whether the cluster disables default in-node sNAT rules. In-node sNAT rules will be disabled when default_snat_status is disabled. When disabled is set to false, default IP
@@ -37,42 +38,30 @@ object NetworkConfig {
   }
   
   @scala.inline
-  implicit class NetworkConfigOps[Self <: NetworkConfig] (val x: Self) extends AnyVal {
+  implicit class NetworkConfigMutableBuilder[Self <: NetworkConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSnatStatus(value: DefaultSnatStatus): Self = StObject.set(x, "defaultSnatStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSnatStatusUndefined: Self = StObject.set(x, "defaultSnatStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableIntraNodeVisibility(value: Boolean): Self = StObject.set(x, "enableIntraNodeVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSnatStatus(value: DefaultSnatStatus): Self = this.set("defaultSnatStatus", value.asInstanceOf[js.Any])
+    def setEnableIntraNodeVisibilityUndefined: Self = StObject.set(x, "enableIntraNodeVisibility", js.undefined)
     
     @scala.inline
-    def deleteDefaultSnatStatus: Self = this.set("defaultSnatStatus", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableIntraNodeVisibility(value: Boolean): Self = this.set("enableIntraNodeVisibility", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteEnableIntraNodeVisibility: Self = this.set("enableIntraNodeVisibility", js.undefined)
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
-    
-    @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
   }
 }

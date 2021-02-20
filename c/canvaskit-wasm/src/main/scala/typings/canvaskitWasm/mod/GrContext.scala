@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object GrContext {
   }
   
   @scala.inline
-  implicit class GrContextOps[Self <: GrContext] (val x: Self) extends AnyVal {
+  implicit class GrContextMutableBuilder[Self <: GrContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetResourceCacheLimitBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheLimitBytes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetResourceCacheUsageBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheUsageBytes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReleaseResourcesAndAbandonContext(value: () => Unit): Self = StObject.set(x, "releaseResourcesAndAbandonContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetResourceCacheLimitBytes(value: () => Double): Self = this.set("getResourceCacheLimitBytes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetResourceCacheUsageBytes(value: () => Double): Self = this.set("getResourceCacheUsageBytes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReleaseResourcesAndAbandonContext(value: () => Unit): Self = this.set("releaseResourcesAndAbandonContext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetResourceCacheLimitBytes(value: Double => Unit): Self = this.set("setResourceCacheLimitBytes", js.Any.fromFunction1(value))
+    def setSetResourceCacheLimitBytes(value: Double => Unit): Self = StObject.set(x, "setResourceCacheLimitBytes", js.Any.fromFunction1(value))
   }
 }

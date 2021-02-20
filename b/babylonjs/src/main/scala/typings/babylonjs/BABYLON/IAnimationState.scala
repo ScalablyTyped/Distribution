@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAnimationState extends js.Object {
+trait IAnimationState extends StObject {
   
   var highLimitValue: js.UndefOr[js.Any] = js.native
   
@@ -28,48 +29,36 @@ object IAnimationState {
   }
   
   @scala.inline
-  implicit class IAnimationStateOps[Self <: IAnimationState] (val x: Self) extends AnyVal {
+  implicit class IAnimationStateMutableBuilder[Self <: IAnimationState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighLimitValue(value: js.Any): Self = StObject.set(x, "highLimitValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighLimitValueUndefined: Self = StObject.set(x, "highLimitValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Double): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLoopMode(value: Double): Self = StObject.set(x, "loopMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatCount(value: Double): Self = this.set("repeatCount", value.asInstanceOf[js.Any])
+    def setLoopModeUndefined: Self = StObject.set(x, "loopMode", js.undefined)
     
     @scala.inline
-    def setHighLimitValue(value: js.Any): Self = this.set("highLimitValue", value.asInstanceOf[js.Any])
+    def setOffsetValue(value: js.Any): Self = StObject.set(x, "offsetValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighLimitValue: Self = this.set("highLimitValue", js.undefined)
+    def setOffsetValueUndefined: Self = StObject.set(x, "offsetValue", js.undefined)
     
     @scala.inline
-    def setLoopMode(value: Double): Self = this.set("loopMode", value.asInstanceOf[js.Any])
+    def setRepeatCount(value: Double): Self = StObject.set(x, "repeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoopMode: Self = this.set("loopMode", js.undefined)
+    def setWorkValue(value: js.Any): Self = StObject.set(x, "workValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetValue(value: js.Any): Self = this.set("offsetValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetValue: Self = this.set("offsetValue", js.undefined)
-    
-    @scala.inline
-    def setWorkValue(value: js.Any): Self = this.set("workValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkValue: Self = this.set("workValue", js.undefined)
+    def setWorkValueUndefined: Self = StObject.set(x, "workValue", js.undefined)
   }
 }

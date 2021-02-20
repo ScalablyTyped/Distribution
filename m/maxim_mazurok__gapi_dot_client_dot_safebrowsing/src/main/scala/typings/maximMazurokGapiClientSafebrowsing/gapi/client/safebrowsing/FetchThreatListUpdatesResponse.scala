@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchThreatListUpdatesResponse extends js.Object {
+trait FetchThreatListUpdatesResponse extends StObject {
   
   /** The list updates requested by the clients. */
   var listUpdateResponses: js.UndefOr[js.Array[ListUpdateResponse]] = js.native
@@ -22,33 +23,21 @@ object FetchThreatListUpdatesResponse {
   }
   
   @scala.inline
-  implicit class FetchThreatListUpdatesResponseOps[Self <: FetchThreatListUpdatesResponse] (val x: Self) extends AnyVal {
+  implicit class FetchThreatListUpdatesResponseMutableBuilder[Self <: FetchThreatListUpdatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListUpdateResponses(value: js.Array[ListUpdateResponse]): Self = StObject.set(x, "listUpdateResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListUpdateResponsesUndefined: Self = StObject.set(x, "listUpdateResponses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListUpdateResponsesVarargs(value: ListUpdateResponse*): Self = StObject.set(x, "listUpdateResponses", js.Array(value :_*))
     
     @scala.inline
-    def setListUpdateResponsesVarargs(value: ListUpdateResponse*): Self = this.set("listUpdateResponses", js.Array(value :_*))
+    def setMinimumWaitDuration(value: String): Self = StObject.set(x, "minimumWaitDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListUpdateResponses(value: js.Array[ListUpdateResponse]): Self = this.set("listUpdateResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListUpdateResponses: Self = this.set("listUpdateResponses", js.undefined)
-    
-    @scala.inline
-    def setMinimumWaitDuration(value: String): Self = this.set("minimumWaitDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumWaitDuration: Self = this.set("minimumWaitDuration", js.undefined)
+    def setMinimumWaitDurationUndefined: Self = StObject.set(x, "minimumWaitDuration", js.undefined)
   }
 }

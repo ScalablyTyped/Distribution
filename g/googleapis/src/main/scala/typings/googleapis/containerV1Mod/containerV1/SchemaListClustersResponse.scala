@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ListClustersResponse is the result of ListClustersRequest.
   */
 @js.native
-trait SchemaListClustersResponse extends js.Object {
+trait SchemaListClustersResponse extends StObject {
   
   /**
     * A list of clusters in the project in the specified zone, or across all
@@ -31,36 +32,24 @@ object SchemaListClustersResponse {
   }
   
   @scala.inline
-  implicit class SchemaListClustersResponseOps[Self <: SchemaListClustersResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListClustersResponseMutableBuilder[Self <: SchemaListClustersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusters(value: js.Array[SchemaCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
     @scala.inline
-    def setClustersVarargs(value: SchemaCluster*): Self = this.set("clusters", js.Array(value :_*))
+    def setMissingZones(value: js.Array[String]): Self = StObject.set(x, "missingZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusters(value: js.Array[SchemaCluster]): Self = this.set("clusters", value.asInstanceOf[js.Any])
+    def setMissingZonesUndefined: Self = StObject.set(x, "missingZones", js.undefined)
     
     @scala.inline
-    def deleteClusters: Self = this.set("clusters", js.undefined)
-    
-    @scala.inline
-    def setMissingZonesVarargs(value: String*): Self = this.set("missingZones", js.Array(value :_*))
-    
-    @scala.inline
-    def setMissingZones(value: js.Array[String]): Self = this.set("missingZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMissingZones: Self = this.set("missingZones", js.undefined)
+    def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value :_*))
   }
 }

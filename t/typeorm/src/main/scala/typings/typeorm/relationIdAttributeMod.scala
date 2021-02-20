@@ -5,16 +5,16 @@ import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.queryExpressionMapMod.QueryExpressionMap
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/relation-id/RelationIdAttribute", JSImport.Namespace)
-@js.native
-object relationIdAttributeMod extends js.Object {
+object relationIdAttributeMod {
   
+  @JSImport("typeorm/browser/query-builder/relation-id/RelationIdAttribute", "RelationIdAttribute")
   @js.native
-  class RelationIdAttribute protected () extends js.Object {
+  class RelationIdAttribute protected () extends StObject {
     def this(queryExpressionMap: QueryExpressionMap) = this()
     def this(queryExpressionMap: QueryExpressionMap, relationIdAttribute: PartialRelationIdAttribut) = this()
     

@@ -10,12 +10,13 @@ import typings.hapi.hapiStrings.form
 import typings.hapi.hapiStrings.iron
 import typings.hapi.hapiStrings.none
 import typings.iron.mod.SealOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerStateCookieOptions extends js.Object {
+trait ServerStateCookieOptions extends StObject {
   
   /**
     * if present and the cookie was not received from the client or explicitly set by the route handler, the
@@ -92,117 +93,105 @@ object ServerStateCookieOptions {
   }
   
   @scala.inline
-  implicit class ServerStateCookieOptionsOps[Self <: ServerStateCookieOptions] (val x: Self) extends AnyVal {
+  implicit class ServerStateCookieOptionsMutableBuilder[Self <: ServerStateCookieOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoValue(value: /* request */ Request => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearInvalid(value: Boolean): Self = StObject.set(x, "clearInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoValue(value: /* request */ Request => Unit): Self = this.set("autoValue", js.Any.fromFunction1(value))
+    def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
     
     @scala.inline
-    def deleteAutoValue: Self = this.set("autoValue", js.undefined)
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearInvalid(value: Boolean): Self = this.set("clearInvalid", value.asInstanceOf[js.Any])
+    def setDomainNull: Self = StObject.set(x, "domain", null)
     
     @scala.inline
-    def deleteClearInvalid: Self = this.set("clearInvalid", js.undefined)
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setEncoding(value: none | base64 | base64json | form | iron): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setDomainNull: Self = this.set("domain", null)
+    def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: none | base64 | base64json | form | iron): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setIron(value: SealOptions): Self = StObject.set(x, "iron", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreErrors(value: Boolean): Self = this.set("ignoreErrors", value.asInstanceOf[js.Any])
+    def setIronUndefined: Self = StObject.set(x, "iron", js.undefined)
     
     @scala.inline
-    def deleteIgnoreErrors: Self = this.set("ignoreErrors", js.undefined)
+    def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIron(value: SealOptions): Self = this.set("iron", value.asInstanceOf[js.Any])
+    def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
     
     @scala.inline
-    def deleteIron: Self = this.set("iron", js.undefined)
+    def setIsSameSite(value: `false` | Strict | Lax): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHttpOnly(value: Boolean): Self = this.set("isHttpOnly", value.asInstanceOf[js.Any])
+    def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
     
     @scala.inline
-    def deleteIsHttpOnly: Self = this.set("isHttpOnly", js.undefined)
+    def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSameSite(value: `false` | Strict | Lax): Self = this.set("isSameSite", value.asInstanceOf[js.Any])
+    def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
     
     @scala.inline
-    def deleteIsSameSite: Self = this.set("isSameSite", js.undefined)
+    def setPassThrough(value: js.Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSecure(value: Boolean): Self = this.set("isSecure", value.asInstanceOf[js.Any])
+    def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
     
     @scala.inline
-    def deleteIsSecure: Self = this.set("isSecure", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassThrough(value: js.Any): Self = this.set("passThrough", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deletePassThrough: Self = this.set("passThrough", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPathNull: Self = StObject.set(x, "path", null)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSign(value: Integrity): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
     
     @scala.inline
-    def setPathNull: Self = this.set("path", null)
+    def setStrictHeader(value: Boolean): Self = StObject.set(x, "strictHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSign(value: Integrity): Self = this.set("sign", value.asInstanceOf[js.Any])
+    def setStrictHeaderUndefined: Self = StObject.set(x, "strictHeader", js.undefined)
     
     @scala.inline
-    def deleteSign: Self = this.set("sign", js.undefined)
+    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictHeader(value: Boolean): Self = this.set("strictHeader", value.asInstanceOf[js.Any])
+    def setTtlNull: Self = StObject.set(x, "ttl", null)
     
     @scala.inline
-    def deleteStrictHeader: Self = this.set("strictHeader", js.undefined)
-    
-    @scala.inline
-    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
-    
-    @scala.inline
-    def setTtlNull: Self = this.set("ttl", null)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

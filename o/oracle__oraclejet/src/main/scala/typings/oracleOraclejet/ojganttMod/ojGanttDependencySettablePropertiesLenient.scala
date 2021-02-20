@@ -5,6 +5,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.finishFinish
 import typings.oracleOraclejet.oracleOraclejetStrings.finishStart
 import typings.oracleOraclejet.oracleOraclejetStrings.startFinish
 import typings.oracleOraclejet.oracleOraclejetStrings.startStart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,57 +36,45 @@ object ojGanttDependencySettablePropertiesLenient {
   }
   
   @scala.inline
-  implicit class ojGanttDependencySettablePropertiesLenientOps[Self <: ojGanttDependencySettablePropertiesLenient] (val x: Self) extends AnyVal {
+  implicit class ojGanttDependencySettablePropertiesLenientMutableBuilder[Self <: ojGanttDependencySettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPredecessorTaskId(value: js.Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPredecessorTaskIdUndefined: Self = StObject.set(x, "predecessorTaskId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredecessorTaskId(value: js.Any): Self = this.set("predecessorTaskId", value.asInstanceOf[js.Any])
+    def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
     
     @scala.inline
-    def deletePredecessorTaskId: Self = this.set("predecessorTaskId", js.undefined)
+    def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
     
     @scala.inline
-    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    def setSuccessorTaskId(value: js.Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    def setSuccessorTaskIdUndefined: Self = StObject.set(x, "successorTaskId", js.undefined)
     
     @scala.inline
-    def setShortDescNull: Self = this.set("shortDesc", null)
+    def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessorTaskId(value: js.Any): Self = this.set("successorTaskId", value.asInstanceOf[js.Any])
+    def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
     
     @scala.inline
-    def deleteSuccessorTaskId: Self = this.set("successorTaskId", js.undefined)
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
     
     @scala.inline
-    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    def setType(value: finishStart | finishFinish | startStart | startFinish): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
-    
-    @scala.inline
-    def setType(value: finishStart | finishFinish | startStart | startFinish): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

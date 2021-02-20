@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitCreateTreeEndpoint extends js.Object {
+trait GitCreateTreeEndpoint extends StObject {
   
   /**
     * The SHA1 of the tree you want to update with new data. If you don't set this, the commit will be created on top of everything; however, it will only contain your change, the rest of your files will show up as deleted.
@@ -30,36 +31,24 @@ object GitCreateTreeEndpoint {
   }
   
   @scala.inline
-  implicit class GitCreateTreeEndpointOps[Self <: GitCreateTreeEndpoint] (val x: Self) extends AnyVal {
+  implicit class GitCreateTreeEndpointMutableBuilder[Self <: GitCreateTreeEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase_tree(value: String): Self = StObject.set(x, "base_tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBase_treeUndefined: Self = StObject.set(x, "base_tree", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setTree(value: js.Array[GitCreateTreeParamsTree]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreeVarargs(value: GitCreateTreeParamsTree*): Self = this.set("tree", js.Array(value :_*))
-    
-    @scala.inline
-    def setTree(value: js.Array[GitCreateTreeParamsTree]): Self = this.set("tree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBase_tree(value: String): Self = this.set("base_tree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBase_tree: Self = this.set("base_tree", js.undefined)
+    def setTreeVarargs(value: GitCreateTreeParamsTree*): Self = StObject.set(x, "tree", js.Array(value :_*))
   }
 }

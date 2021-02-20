@@ -9,6 +9,7 @@ import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.CommandBar
 import typings.officeJsPreview.officeJsPreviewStrings.PageNavigationBar
 import typings.officeJsPreview.officeJsPreviewStrings.StatusBar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

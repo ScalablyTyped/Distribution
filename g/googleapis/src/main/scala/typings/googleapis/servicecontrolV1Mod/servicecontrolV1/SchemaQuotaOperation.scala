@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents information regarding a quota operation.
   */
 @js.native
-trait SchemaQuotaOperation extends js.Object {
+trait SchemaQuotaOperation extends StObject {
   
   /**
     * Identity of the consumer for whom this quota operation is being
@@ -72,57 +73,45 @@ object SchemaQuotaOperation {
   }
   
   @scala.inline
-  implicit class SchemaQuotaOperationOps[Self <: SchemaQuotaOperation] (val x: Self) extends AnyVal {
+  implicit class SchemaQuotaOperationMutableBuilder[Self <: SchemaQuotaOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerIdUndefined: Self = StObject.set(x, "consumerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerId(value: String): Self = this.set("consumerId", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteConsumerId: Self = this.set("consumerId", js.undefined)
+    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodName(value: String): Self = this.set("methodName", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteMethodName: Self = this.set("methodName", js.undefined)
+    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
+    def setQuotaMode(value: String): Self = StObject.set(x, "quotaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
-    
-    @scala.inline
-    def setQuotaMode(value: String): Self = this.set("quotaMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotaMode: Self = this.set("quotaMode", js.undefined)
+    def setQuotaModeUndefined: Self = StObject.set(x, "quotaMode", js.undefined)
   }
 }

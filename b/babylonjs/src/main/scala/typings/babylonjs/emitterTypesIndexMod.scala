@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/EmitterTypes/index", JSImport.Namespace)
-@js.native
-object emitterTypesIndexMod extends js.Object {
+object emitterTypesIndexMod {
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "BoxParticleEmitter")
   @js.native
   /**
     * Creates a new instance BoxParticleEmitter
@@ -18,6 +18,7 @@ object emitterTypesIndexMod extends js.Object {
   class BoxParticleEmitter ()
     extends typings.babylonjs.boxParticleEmitterMod.BoxParticleEmitter
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "ConeParticleEmitter")
   @js.native
   /**
     * Creates a new instance ConeParticleEmitter
@@ -56,6 +57,7 @@ object emitterTypesIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "CustomParticleEmitter")
   @js.native
   /**
     * Creates a new instance CustomParticleEmitter
@@ -63,6 +65,7 @@ object emitterTypesIndexMod extends js.Object {
   class CustomParticleEmitter ()
     extends typings.babylonjs.customParticleEmitterMod.CustomParticleEmitter
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "CylinderDirectedParticleEmitter")
   @js.native
   /**
     * Creates a new instance CylinderDirectedParticleEmitter
@@ -363,6 +366,7 @@ object emitterTypesIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "CylinderParticleEmitter")
   @js.native
   /**
     * Creates a new instance CylinderParticleEmitter
@@ -599,6 +603,7 @@ object emitterTypesIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "HemisphericParticleEmitter")
   @js.native
   /**
     * Creates a new instance HemisphericParticleEmitter
@@ -690,6 +695,7 @@ object emitterTypesIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "MeshParticleEmitter")
   @js.native
   /**
     * Creates a new instance MeshParticleEmitter
@@ -700,6 +706,7 @@ object emitterTypesIndexMod extends js.Object {
     def this(mesh: Nullable[AbstractMesh]) = this()
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "PointParticleEmitter")
   @js.native
   /**
     * Creates a new instance PointParticleEmitter
@@ -707,6 +714,7 @@ object emitterTypesIndexMod extends js.Object {
   class PointParticleEmitter ()
     extends typings.babylonjs.pointParticleEmitterMod.PointParticleEmitter
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "SphereDirectedParticleEmitter")
   @js.native
   /**
     * Creates a new instance SphereDirectedParticleEmitter
@@ -774,6 +782,7 @@ object emitterTypesIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/Particles/EmitterTypes/index", "SphereParticleEmitter")
   @js.native
   /**
     * Creates a new instance SphereParticleEmitter

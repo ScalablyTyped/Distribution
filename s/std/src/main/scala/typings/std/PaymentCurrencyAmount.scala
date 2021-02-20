@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentCurrencyAmount extends js.Object {
+trait PaymentCurrencyAmount extends StObject {
   
   var currency: java.lang.String = js.native
   
@@ -22,30 +23,18 @@ object PaymentCurrencyAmount {
   }
   
   @scala.inline
-  implicit class PaymentCurrencyAmountOps[Self <: PaymentCurrencyAmount] (val x: Self) extends AnyVal {
+  implicit class PaymentCurrencyAmountMutableBuilder[Self <: PaymentCurrencyAmount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencySystem(value: java.lang.String): Self = StObject.set(x, "currencySystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencySystemUndefined: Self = StObject.set(x, "currencySystem", js.undefined)
     
     @scala.inline
-    def setCurrency(value: java.lang.String): Self = this.set("currency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: java.lang.String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrencySystem(value: java.lang.String): Self = this.set("currencySystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrencySystem: Self = this.set("currencySystem", js.undefined)
+    def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

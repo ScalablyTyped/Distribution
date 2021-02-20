@@ -2,12 +2,13 @@ package typings.hapi.mod
 
 import typings.hapi.hapiStrings.plugin
 import typings.hapi.hapiStrings.server
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerExtOptions extends js.Object {
+trait ServerExtOptions extends StObject {
   
   /**
     * a string or array of strings of plugin names this method must execute after (on the same event). Otherwise, extension methods are executed in the order added.
@@ -39,48 +40,36 @@ object ServerExtOptions {
   }
   
   @scala.inline
-  implicit class ServerExtOptionsOps[Self <: ServerExtOptions] (val x: Self) extends AnyVal {
+  implicit class ServerExtOptionsMutableBuilder[Self <: ServerExtOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: String | js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def setAfterVarargs(value: String*): Self = this.set("after", js.Array(value :_*))
+    def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: String | js.Array[String]): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeVarargs(value: String*): Self = this.set("before", js.Array(value :_*))
+    def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: String | js.Array[String]): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setSandbox(value: server | plugin): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind(value: js.Object): Self = this.set("bind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBind: Self = this.set("bind", js.undefined)
-    
-    @scala.inline
-    def setSandbox(value: server | plugin): Self = this.set("sandbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
   }
 }

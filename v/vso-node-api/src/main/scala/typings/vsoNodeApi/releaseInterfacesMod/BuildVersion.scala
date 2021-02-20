@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildVersion extends js.Object {
+trait BuildVersion extends StObject {
   
   var commitMessage: String = js.native
   
@@ -44,42 +45,30 @@ object BuildVersion {
   }
   
   @scala.inline
-  implicit class BuildVersionOps[Self <: BuildVersion] (val x: Self) extends AnyVal {
+  implicit class BuildVersionMutableBuilder[Self <: BuildVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitMessage(value: String): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitMessage(value: String): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    def setSourceBranch(value: String): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSourcePullRequestId(value: String): Self = StObject.set(x, "sourcePullRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSourceRepositoryId(value: String): Self = StObject.set(x, "sourceRepositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBranch(value: String): Self = this.set("sourceBranch", value.asInstanceOf[js.Any])
+    def setSourceRepositoryType(value: String): Self = StObject.set(x, "sourceRepositoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePullRequestId(value: String): Self = this.set("sourcePullRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceRepositoryId(value: String): Self = this.set("sourceRepositoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceRepositoryType(value: String): Self = this.set("sourceRepositoryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
   }
 }

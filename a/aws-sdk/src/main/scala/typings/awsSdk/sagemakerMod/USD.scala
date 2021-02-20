@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait USD extends js.Object {
+trait USD extends StObject {
   
   /**
     * The fractional portion, in cents, of the amount. 
@@ -31,36 +32,24 @@ object USD {
   }
   
   @scala.inline
-  implicit class USDOps[Self <: USD] (val x: Self) extends AnyVal {
+  implicit class USDMutableBuilder[Self <: USD] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCents(value: Cents): Self = StObject.set(x, "Cents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCentsUndefined: Self = StObject.set(x, "Cents", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDollars(value: Dollars): Self = StObject.set(x, "Dollars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCents(value: Cents): Self = this.set("Cents", value.asInstanceOf[js.Any])
+    def setDollarsUndefined: Self = StObject.set(x, "Dollars", js.undefined)
     
     @scala.inline
-    def deleteCents: Self = this.set("Cents", js.undefined)
+    def setTenthFractionsOfACent(value: TenthFractionsOfACent): Self = StObject.set(x, "TenthFractionsOfACent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollars(value: Dollars): Self = this.set("Dollars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDollars: Self = this.set("Dollars", js.undefined)
-    
-    @scala.inline
-    def setTenthFractionsOfACent(value: TenthFractionsOfACent): Self = this.set("TenthFractionsOfACent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenthFractionsOfACent: Self = this.set("TenthFractionsOfACent", js.undefined)
+    def setTenthFractionsOfACentUndefined: Self = StObject.set(x, "TenthFractionsOfACent", js.undefined)
   }
 }

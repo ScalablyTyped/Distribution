@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPlatformFontsForNodeResponse extends js.Object {
+trait GetPlatformFontsForNodeResponse extends StObject {
   
   /**
     * Usage statistics for every employed platform font.
@@ -21,24 +22,12 @@ object GetPlatformFontsForNodeResponse {
   }
   
   @scala.inline
-  implicit class GetPlatformFontsForNodeResponseOps[Self <: GetPlatformFontsForNodeResponse] (val x: Self) extends AnyVal {
+  implicit class GetPlatformFontsForNodeResponseMutableBuilder[Self <: GetPlatformFontsForNodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFonts(value: js.Array[PlatformFontUsage]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontsVarargs(value: PlatformFontUsage*): Self = this.set("fonts", js.Array(value :_*))
-    
-    @scala.inline
-    def setFonts(value: js.Array[PlatformFontUsage]): Self = this.set("fonts", value.asInstanceOf[js.Any])
+    def setFontsVarargs(value: PlatformFontUsage*): Self = StObject.set(x, "fonts", js.Array(value :_*))
   }
 }

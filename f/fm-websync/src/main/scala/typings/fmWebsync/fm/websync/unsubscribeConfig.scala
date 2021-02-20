@@ -1,5 +1,6 @@
 package typings.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,51 +42,39 @@ object unsubscribeConfig {
   }
   
   @scala.inline
-  implicit class unsubscribeConfigOps[Self <: unsubscribeConfig] (val x: Self) extends AnyVal {
+  implicit class unsubscribeConfigMutableBuilder[Self <: unsubscribeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setOnComplete(value: /* args */ baseResponseArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setOnFailure(value: /* args */ baseFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnComplete(value: /* args */ baseResponseArgs => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setOnSuccess(value: /* args */ unsubscribeSuccessArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFailure(value: /* args */ baseFailureArgs => Unit): Self = this.set("onFailure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: /* args */ unsubscribeSuccessArgs => Unit): Self = this.set("onSuccess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

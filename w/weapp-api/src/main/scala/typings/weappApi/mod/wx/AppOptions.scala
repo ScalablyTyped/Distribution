@@ -1,6 +1,7 @@
 package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object AppOptions {
   }
   
   @scala.inline
-  implicit class AppOptionsOps[Self <: AppOptions] (val x: Self) extends AnyVal {
+  implicit class AppOptionsMutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* error */ js.Any => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnLaunch(value: /* options */ onLaunchOptions => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnPageNotFound(value: () => Unit): Self = StObject.set(x, "onPageNotFound", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnLaunch(value: /* options */ onLaunchOptions => Unit): Self = this.set("onLaunch", js.Any.fromFunction1(value))
+    def setOnPageNotFoundUndefined: Self = StObject.set(x, "onPageNotFound", js.undefined)
     
     @scala.inline
-    def deleteOnLaunch: Self = this.set("onLaunch", js.undefined)
+    def setOnShow(value: /* options */ onShowOptions => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPageNotFound(value: () => Unit): Self = this.set("onPageNotFound", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnPageNotFound: Self = this.set("onPageNotFound", js.undefined)
-    
-    @scala.inline
-    def setOnShow(value: /* options */ onShowOptions => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
   }
 }

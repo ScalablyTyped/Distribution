@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilitySeriesOptions extends js.Object {
+trait AccessibilitySeriesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether or not to add series
@@ -40,36 +41,24 @@ object AccessibilitySeriesOptions {
   }
   
   @scala.inline
-  implicit class AccessibilitySeriesOptionsOps[Self <: AccessibilitySeriesOptions] (val x: Self) extends AnyVal {
+  implicit class AccessibilitySeriesOptionsMutableBuilder[Self <: AccessibilitySeriesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescribeSingleSeries(value: Boolean): Self = StObject.set(x, "describeSingleSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescribeSingleSeriesUndefined: Self = StObject.set(x, "describeSingleSeries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionFormatter(value: Series => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDescribeSingleSeries(value: Boolean): Self = this.set("describeSingleSeries", value.asInstanceOf[js.Any])
+    def setDescriptionFormatterUndefined: Self = StObject.set(x, "descriptionFormatter", js.undefined)
     
     @scala.inline
-    def deleteDescribeSingleSeries: Self = this.set("describeSingleSeries", js.undefined)
+    def setPointDescriptionEnabledThreshold(value: Boolean | Double): Self = StObject.set(x, "pointDescriptionEnabledThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionFormatter(value: Series => String): Self = this.set("descriptionFormatter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDescriptionFormatter: Self = this.set("descriptionFormatter", js.undefined)
-    
-    @scala.inline
-    def setPointDescriptionEnabledThreshold(value: Boolean | Double): Self = this.set("pointDescriptionEnabledThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointDescriptionEnabledThreshold: Self = this.set("pointDescriptionEnabledThreshold", js.undefined)
+    def setPointDescriptionEnabledThresholdUndefined: Self = StObject.set(x, "pointDescriptionEnabledThreshold", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CpuUtilization extends js.Object {
+trait CpuUtilization extends StObject {
   
   /** Period of time over which CPU utilization is calculated. */
   var aggregationWindowLength: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object CpuUtilization {
   }
   
   @scala.inline
-  implicit class CpuUtilizationOps[Self <: CpuUtilization] (val x: Self) extends AnyVal {
+  implicit class CpuUtilizationMutableBuilder[Self <: CpuUtilization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationWindowLength(value: String): Self = StObject.set(x, "aggregationWindowLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationWindowLengthUndefined: Self = StObject.set(x, "aggregationWindowLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetUtilization(value: Double): Self = StObject.set(x, "targetUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationWindowLength(value: String): Self = this.set("aggregationWindowLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationWindowLength: Self = this.set("aggregationWindowLength", js.undefined)
-    
-    @scala.inline
-    def setTargetUtilization(value: Double): Self = this.set("targetUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetUtilization: Self = this.set("targetUtilization", js.undefined)
+    def setTargetUtilizationUndefined: Self = StObject.set(x, "targetUtilization", js.undefined)
   }
 }

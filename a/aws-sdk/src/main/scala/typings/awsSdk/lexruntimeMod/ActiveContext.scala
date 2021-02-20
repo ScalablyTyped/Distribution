@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveContext extends js.Object {
+trait ActiveContext extends StObject {
   
   /**
     * The name of the context.
@@ -35,27 +36,15 @@ object ActiveContext {
   }
   
   @scala.inline
-  implicit class ActiveContextOps[Self <: ActiveContext] (val x: Self) extends AnyVal {
+  implicit class ActiveContextMutableBuilder[Self <: ActiveContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ActiveContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameters(value: ActiveContextParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: ActiveContextName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameters(value: ActiveContextParametersMap): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeToLive(value: ActiveContextTimeToLive): Self = this.set("timeToLive", value.asInstanceOf[js.Any])
+    def setTimeToLive(value: ActiveContextTimeToLive): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
   }
 }

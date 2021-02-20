@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Association extends js.Object {
+trait Association extends StObject {
   
   /**
     * The ID created by the system when you create an association. An association is a binding between a document and a set of targets with a schedule.
@@ -66,81 +67,69 @@ object Association {
   }
   
   @scala.inline
-  implicit class AssociationOps[Self <: Association] (val x: Self) extends AnyVal {
+  implicit class AssociationMutableBuilder[Self <: Association] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationName(value: AssociationName): Self = StObject.set(x, "AssociationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setAssociationNameUndefined: Self = StObject.set(x, "AssociationName", js.undefined)
     
     @scala.inline
-    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationName(value: AssociationName): Self = this.set("AssociationName", value.asInstanceOf[js.Any])
+    def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
     
     @scala.inline
-    def deleteAssociationName: Self = this.set("AssociationName", js.undefined)
+    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationVersion(value: AssociationVersion): Self = this.set("AssociationVersion", value.asInstanceOf[js.Any])
+    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
     @scala.inline
-    def deleteAssociationVersion: Self = this.set("AssociationVersion", js.undefined)
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastExecutionDate(value: DateTime): Self = this.set("LastExecutionDate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastExecutionDate: Self = this.set("LastExecutionDate", js.undefined)
+    def setOverview(value: AssociationOverview): Self = StObject.set(x, "Overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DocumentARN): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOverviewUndefined: Self = StObject.set(x, "Overview", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setScheduleExpression(value: ScheduleExpression): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview(value: AssociationOverview): Self = this.set("Overview", value.asInstanceOf[js.Any])
+    def setScheduleExpressionUndefined: Self = StObject.set(x, "ScheduleExpression", js.undefined)
     
     @scala.inline
-    def deleteOverview: Self = this.set("Overview", js.undefined)
+    def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleExpression(value: ScheduleExpression): Self = this.set("ScheduleExpression", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     @scala.inline
-    def deleteScheduleExpression: Self = this.set("ScheduleExpression", js.undefined)
-    
-    @scala.inline
-    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("Targets", js.undefined)
+    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

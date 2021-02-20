@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFlowRequest extends js.Object {
+trait CreateFlowRequest extends StObject {
   
   /**
     * The Availability Zone that you want to create the flow in. These options are limited to the Availability Zones within the current AWS Region.
@@ -47,75 +48,63 @@ object CreateFlowRequest {
   }
   
   @scala.inline
-  implicit class CreateFlowRequestOps[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFlowRequestMutableBuilder[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: string): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitlements(value: listOfGrantEntitlementRequest): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
     
     @scala.inline
-    def setAvailabilityZone(value: string): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = this.set("Entitlements", js.Array(value :_*))
+    def setOutputs(value: listOfAddOutputRequest): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlements(value: listOfGrantEntitlementRequest): Self = this.set("Entitlements", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
     @scala.inline
-    def deleteEntitlements: Self = this.set("Entitlements", js.undefined)
+    def setOutputsVarargs(value: AddOutputRequest*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: AddOutputRequest*): Self = this.set("Outputs", js.Array(value :_*))
+    def setSource(value: SetSourceRequest): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: listOfAddOutputRequest): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    def setSourceFailoverConfig(value: FailoverConfig): Self = StObject.set(x, "SourceFailoverConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    def setSourceFailoverConfigUndefined: Self = StObject.set(x, "SourceFailoverConfig", js.undefined)
     
     @scala.inline
-    def setSource(value: SetSourceRequest): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setSources(value: listOfSetSourceRequest): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFailoverConfig(value: FailoverConfig): Self = this.set("SourceFailoverConfig", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
     @scala.inline
-    def deleteSourceFailoverConfig: Self = this.set("SourceFailoverConfig", js.undefined)
+    def setSourcesVarargs(value: SetSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: SetSourceRequest*): Self = this.set("Sources", js.Array(value :_*))
+    def setVpcInterfaces(value: listOfVpcInterfaceRequest): Self = StObject.set(x, "VpcInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: listOfSetSourceRequest): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    def setVpcInterfacesUndefined: Self = StObject.set(x, "VpcInterfaces", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("Sources", js.undefined)
-    
-    @scala.inline
-    def setVpcInterfacesVarargs(value: VpcInterfaceRequest*): Self = this.set("VpcInterfaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcInterfaces(value: listOfVpcInterfaceRequest): Self = this.set("VpcInterfaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcInterfaces: Self = this.set("VpcInterfaces", js.undefined)
+    def setVpcInterfacesVarargs(value: VpcInterfaceRequest*): Self = StObject.set(x, "VpcInterfaces", js.Array(value :_*))
   }
 }

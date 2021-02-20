@@ -1,11 +1,12 @@
 package typings.openseadragon.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AjaxWithCredentials extends js.Object {
+trait AjaxWithCredentials extends StObject {
   
   var ajaxWithCredentials: js.UndefOr[String | Boolean] = js.native
   
@@ -26,45 +27,33 @@ object AjaxWithCredentials {
   }
   
   @scala.inline
-  implicit class AjaxWithCredentialsOps[Self <: AjaxWithCredentials] (val x: Self) extends AnyVal {
+  implicit class AjaxWithCredentialsMutableBuilder[Self <: AjaxWithCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjaxWithCredentials(value: String | Boolean): Self = StObject.set(x, "ajaxWithCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxWithCredentialsUndefined: Self = StObject.set(x, "ajaxWithCredentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildPyramid(value: Boolean): Self = StObject.set(x, "buildPyramid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setBuildPyramidUndefined: Self = StObject.set(x, "buildPyramid", js.undefined)
     
     @scala.inline
-    def setAjaxWithCredentials(value: String | Boolean): Self = this.set("ajaxWithCredentials", value.asInstanceOf[js.Any])
+    def setCrossOriginPolicy(value: String | Boolean): Self = StObject.set(x, "crossOriginPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAjaxWithCredentials: Self = this.set("ajaxWithCredentials", js.undefined)
+    def setCrossOriginPolicyUndefined: Self = StObject.set(x, "crossOriginPolicy", js.undefined)
     
     @scala.inline
-    def setBuildPyramid(value: Boolean): Self = this.set("buildPyramid", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildPyramid: Self = this.set("buildPyramid", js.undefined)
+    def setUseCanvas(value: Boolean): Self = StObject.set(x, "useCanvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOriginPolicy(value: String | Boolean): Self = this.set("crossOriginPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossOriginPolicy: Self = this.set("crossOriginPolicy", js.undefined)
-    
-    @scala.inline
-    def setUseCanvas(value: Boolean): Self = this.set("useCanvas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCanvas: Self = this.set("useCanvas", js.undefined)
+    def setUseCanvasUndefined: Self = StObject.set(x, "useCanvas", js.undefined)
   }
 }

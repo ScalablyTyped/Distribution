@@ -21,6 +21,7 @@ import typings.mendixmodelsdk.pagesMod.pages.RangeSearchField
 import typings.mendixmodelsdk.pagesMod.pages.SingleSearchField
 import typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,12 +72,23 @@ abstract class MemberRef protected () extends Element[IModel] {
   def entityRef: IndirectEntityRef | Null = js.native
   def entityRef_=(newValue: IndirectEntityRef | Null): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberRef")
-@js.native
-object MemberRef extends js.Object {
+object MemberRef {
   
-  var structureTypeName: String = js.native
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberRef")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberRef.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberRef.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

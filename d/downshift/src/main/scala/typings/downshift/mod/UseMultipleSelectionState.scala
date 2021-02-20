@@ -1,11 +1,12 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseMultipleSelectionState[Item] extends js.Object {
+trait UseMultipleSelectionState[Item] extends StObject {
   
   var activeIndex: Double = js.native
   
@@ -20,27 +21,15 @@ object UseMultipleSelectionState {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionStateOps[Self <: UseMultipleSelectionState[_], Item] (val x: Self with UseMultipleSelectionState[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionStateMutableBuilder[Self <: UseMultipleSelectionState[_], Item] (val x: Self with UseMultipleSelectionState[Item]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedItems(value: js.Array[Item]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedItemsVarargs(value: Item*): Self = this.set("selectedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedItems(value: js.Array[Item]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

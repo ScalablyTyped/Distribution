@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentResponsiveHtmlPreview extends js.Object {
+trait DocumentResponsiveHtmlPreview extends StObject {
   
   /**
     * Holds the properties that define how to generate the responsive-formatted HTML for the document.
@@ -21,27 +22,15 @@ object DocumentResponsiveHtmlPreview {
   }
   
   @scala.inline
-  implicit class DocumentResponsiveHtmlPreviewOps[Self <: DocumentResponsiveHtmlPreview] (val x: Self) extends AnyVal {
+  implicit class DocumentResponsiveHtmlPreviewMutableBuilder[Self <: DocumentResponsiveHtmlPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlDefinitionsUndefined: Self = StObject.set(x, "htmlDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHtmlDefinitionsVarargs(value: String*): Self = this.set("htmlDefinitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setHtmlDefinitions(value: js.Array[String]): Self = this.set("htmlDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlDefinitions: Self = this.set("htmlDefinitions", js.undefined)
+    def setHtmlDefinitionsVarargs(value: String*): Self = StObject.set(x, "htmlDefinitions", js.Array(value :_*))
   }
 }

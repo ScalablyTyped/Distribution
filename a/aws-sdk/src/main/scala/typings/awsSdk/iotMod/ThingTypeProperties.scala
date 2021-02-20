@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThingTypeProperties extends js.Object {
+trait ThingTypeProperties extends StObject {
   
   /**
     * A list of searchable thing attribute names.
@@ -26,33 +27,21 @@ object ThingTypeProperties {
   }
   
   @scala.inline
-  implicit class ThingTypePropertiesOps[Self <: ThingTypeProperties] (val x: Self) extends AnyVal {
+  implicit class ThingTypePropertiesMutableBuilder[Self <: ThingTypeProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearchableAttributes(value: SearchableAttributes): Self = StObject.set(x, "searchableAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchableAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "searchableAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setSearchableAttributesVarargs(value: AttributeName*): Self = this.set("searchableAttributes", js.Array(value :_*))
+    def setThingTypeDescription(value: ThingTypeDescription): Self = StObject.set(x, "thingTypeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchableAttributes(value: SearchableAttributes): Self = this.set("searchableAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchableAttributes: Self = this.set("searchableAttributes", js.undefined)
-    
-    @scala.inline
-    def setThingTypeDescription(value: ThingTypeDescription): Self = this.set("thingTypeDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingTypeDescription: Self = this.set("thingTypeDescription", js.undefined)
+    def setThingTypeDescriptionUndefined: Self = StObject.set(x, "thingTypeDescription", js.undefined)
   }
 }

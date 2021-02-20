@@ -1,11 +1,12 @@
 package typings.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimerInstance extends js.Object {
+trait TimerInstance extends StObject {
   
   def Delete(callback: CbCallback): Unit = js.native
   
@@ -29,30 +30,18 @@ object TimerInstance {
   }
   
   @scala.inline
-  implicit class TimerInstanceOps[Self <: TimerInstance] (val x: Self) extends AnyVal {
+  implicit class TimerInstanceMutableBuilder[Self <: TimerInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelete(value: CbCallback => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: CbCallback => Unit): Self = this.set("Delete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: (js.Object, CbCallback) => Unit): Self = this.set("Update", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
+    def setUpdate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

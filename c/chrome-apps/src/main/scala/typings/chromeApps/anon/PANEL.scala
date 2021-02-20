@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chromeAppsStrings.panel
 import typings.chromeApps.chromeAppsStrings.shell
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PANEL extends js.Object {
+trait PANEL extends StObject {
   
   var PANEL: panel = js.native
   
@@ -22,24 +23,12 @@ object PANEL {
   }
   
   @scala.inline
-  implicit class PANELOps[Self <: PANEL] (val x: Self) extends AnyVal {
+  implicit class PANELMutableBuilder[Self <: PANEL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPANEL(value: panel): Self = StObject.set(x, "PANEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPANEL(value: panel): Self = this.set("PANEL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSHELL(value: shell): Self = this.set("SHELL", value.asInstanceOf[js.Any])
+    def setSHELL(value: shell): Self = StObject.set(x, "SHELL", value.asInstanceOf[js.Any])
   }
 }

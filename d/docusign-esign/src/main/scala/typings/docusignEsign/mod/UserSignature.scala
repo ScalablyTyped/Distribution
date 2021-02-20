@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserSignature extends js.Object {
+trait UserSignature extends StObject {
   
   /**
     * The UTC date and time when the user adopted the signature.
@@ -195,200 +196,188 @@ object UserSignature {
   }
   
   @scala.inline
-  implicit class UserSignatureOps[Self <: UserSignature] (val x: Self) extends AnyVal {
+  implicit class UserSignatureMutableBuilder[Self <: UserSignature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdoptedDateTime(value: String): Self = StObject.set(x, "adoptedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdoptedDateTimeUndefined: Self = StObject.set(x, "adoptedDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdoptedDateTime(value: String): Self = this.set("adoptedDateTime", value.asInstanceOf[js.Any])
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def deleteAdoptedDateTime: Self = this.set("adoptedDateTime", js.undefined)
+    def setCustomField(value: String): Self = StObject.set(x, "customField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setCustomFieldUndefined: Self = StObject.set(x, "customField", js.undefined)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setDateStampProperties(value: DateStampProperties): Self = StObject.set(x, "dateStampProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomField(value: String): Self = this.set("customField", value.asInstanceOf[js.Any])
+    def setDateStampPropertiesUndefined: Self = StObject.set(x, "dateStampProperties", js.undefined)
     
     @scala.inline
-    def deleteCustomField: Self = this.set("customField", js.undefined)
+    def setDisallowUserResizeStamp(value: String): Self = StObject.set(x, "disallowUserResizeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateStampProperties(value: DateStampProperties): Self = this.set("dateStampProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateStampProperties: Self = this.set("dateStampProperties", js.undefined)
-    
-    @scala.inline
-    def setDisallowUserResizeStamp(value: String): Self = this.set("disallowUserResizeStamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisallowUserResizeStamp: Self = this.set("disallowUserResizeStamp", js.undefined)
+    def setDisallowUserResizeStampUndefined: Self = StObject.set(x, "disallowUserResizeStamp", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setExternalID(value: String): Self = this.set("externalID", value.asInstanceOf[js.Any])
+    def setExternalID(value: String): Self = StObject.set(x, "externalID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalID: Self = this.set("externalID", js.undefined)
+    def setExternalIDUndefined: Self = StObject.set(x, "externalID", js.undefined)
     
     @scala.inline
-    def setImageBase64(value: String): Self = this.set("imageBase64", value.asInstanceOf[js.Any])
+    def setImageBase64(value: String): Self = StObject.set(x, "imageBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageBase64: Self = this.set("imageBase64", js.undefined)
+    def setImageBase64Undefined: Self = StObject.set(x, "imageBase64", js.undefined)
     
     @scala.inline
-    def setImageType(value: String): Self = this.set("imageType", value.asInstanceOf[js.Any])
+    def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageType: Self = this.set("imageType", js.undefined)
+    def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
     
     @scala.inline
-    def setInitials150ImageId(value: String): Self = this.set("initials150ImageId", value.asInstanceOf[js.Any])
+    def setInitials150ImageId(value: String): Self = StObject.set(x, "initials150ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitials150ImageId: Self = this.set("initials150ImageId", js.undefined)
+    def setInitials150ImageIdUndefined: Self = StObject.set(x, "initials150ImageId", js.undefined)
     
     @scala.inline
-    def setInitialsImageUri(value: String): Self = this.set("initialsImageUri", value.asInstanceOf[js.Any])
+    def setInitialsImageUri(value: String): Self = StObject.set(x, "initialsImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialsImageUri: Self = this.set("initialsImageUri", js.undefined)
+    def setInitialsImageUriUndefined: Self = StObject.set(x, "initialsImageUri", js.undefined)
     
     @scala.inline
-    def setIsDefault(value: String): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setIsDefault(value: String): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setNrdsId(value: String): Self = this.set("nrdsId", value.asInstanceOf[js.Any])
+    def setNrdsId(value: String): Self = StObject.set(x, "nrdsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNrdsId: Self = this.set("nrdsId", js.undefined)
+    def setNrdsIdUndefined: Self = StObject.set(x, "nrdsId", js.undefined)
     
     @scala.inline
-    def setNrdsLastName(value: String): Self = this.set("nrdsLastName", value.asInstanceOf[js.Any])
+    def setNrdsLastName(value: String): Self = StObject.set(x, "nrdsLastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNrdsLastName: Self = this.set("nrdsLastName", js.undefined)
+    def setNrdsLastNameUndefined: Self = StObject.set(x, "nrdsLastName", js.undefined)
     
     @scala.inline
-    def setNrdsStatus(value: String): Self = this.set("nrdsStatus", value.asInstanceOf[js.Any])
+    def setNrdsStatus(value: String): Self = StObject.set(x, "nrdsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNrdsStatus: Self = this.set("nrdsStatus", js.undefined)
+    def setNrdsStatusUndefined: Self = StObject.set(x, "nrdsStatus", js.undefined)
     
     @scala.inline
-    def setPhoneticName(value: String): Self = this.set("phoneticName", value.asInstanceOf[js.Any])
+    def setPhoneticName(value: String): Self = StObject.set(x, "phoneticName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhoneticName: Self = this.set("phoneticName", js.undefined)
+    def setPhoneticNameUndefined: Self = StObject.set(x, "phoneticName", js.undefined)
     
     @scala.inline
-    def setSignature150ImageId(value: String): Self = this.set("signature150ImageId", value.asInstanceOf[js.Any])
+    def setSignature150ImageId(value: String): Self = StObject.set(x, "signature150ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignature150ImageId: Self = this.set("signature150ImageId", js.undefined)
+    def setSignature150ImageIdUndefined: Self = StObject.set(x, "signature150ImageId", js.undefined)
     
     @scala.inline
-    def setSignatureFont(value: String): Self = this.set("signatureFont", value.asInstanceOf[js.Any])
+    def setSignatureFont(value: String): Self = StObject.set(x, "signatureFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureFont: Self = this.set("signatureFont", js.undefined)
+    def setSignatureFontUndefined: Self = StObject.set(x, "signatureFont", js.undefined)
     
     @scala.inline
-    def setSignatureId(value: String): Self = this.set("signatureId", value.asInstanceOf[js.Any])
+    def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureId: Self = this.set("signatureId", js.undefined)
+    def setSignatureIdUndefined: Self = StObject.set(x, "signatureId", js.undefined)
     
     @scala.inline
-    def setSignatureImageUri(value: String): Self = this.set("signatureImageUri", value.asInstanceOf[js.Any])
+    def setSignatureImageUri(value: String): Self = StObject.set(x, "signatureImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureImageUri: Self = this.set("signatureImageUri", js.undefined)
+    def setSignatureImageUriUndefined: Self = StObject.set(x, "signatureImageUri", js.undefined)
     
     @scala.inline
-    def setSignatureInitials(value: String): Self = this.set("signatureInitials", value.asInstanceOf[js.Any])
+    def setSignatureInitials(value: String): Self = StObject.set(x, "signatureInitials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureInitials: Self = this.set("signatureInitials", js.undefined)
+    def setSignatureInitialsUndefined: Self = StObject.set(x, "signatureInitials", js.undefined)
     
     @scala.inline
-    def setSignatureName(value: String): Self = this.set("signatureName", value.asInstanceOf[js.Any])
+    def setSignatureName(value: String): Self = StObject.set(x, "signatureName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureName: Self = this.set("signatureName", js.undefined)
+    def setSignatureNameUndefined: Self = StObject.set(x, "signatureName", js.undefined)
     
     @scala.inline
-    def setSignatureRights(value: String): Self = this.set("signatureRights", value.asInstanceOf[js.Any])
+    def setSignatureRights(value: String): Self = StObject.set(x, "signatureRights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureRights: Self = this.set("signatureRights", js.undefined)
+    def setSignatureRightsUndefined: Self = StObject.set(x, "signatureRights", js.undefined)
     
     @scala.inline
-    def setSignatureType(value: String): Self = this.set("signatureType", value.asInstanceOf[js.Any])
+    def setSignatureType(value: String): Self = StObject.set(x, "signatureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignatureType: Self = this.set("signatureType", js.undefined)
+    def setSignatureTypeUndefined: Self = StObject.set(x, "signatureType", js.undefined)
     
     @scala.inline
-    def setStampFormat(value: String): Self = this.set("stampFormat", value.asInstanceOf[js.Any])
+    def setStampFormat(value: String): Self = StObject.set(x, "stampFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStampFormat: Self = this.set("stampFormat", js.undefined)
+    def setStampFormatUndefined: Self = StObject.set(x, "stampFormat", js.undefined)
     
     @scala.inline
-    def setStampImageUri(value: String): Self = this.set("stampImageUri", value.asInstanceOf[js.Any])
+    def setStampImageUri(value: String): Self = StObject.set(x, "stampImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStampImageUri: Self = this.set("stampImageUri", js.undefined)
+    def setStampImageUriUndefined: Self = StObject.set(x, "stampImageUri", js.undefined)
     
     @scala.inline
-    def setStampSizeMM(value: String): Self = this.set("stampSizeMM", value.asInstanceOf[js.Any])
+    def setStampSizeMM(value: String): Self = StObject.set(x, "stampSizeMM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStampSizeMM: Self = this.set("stampSizeMM", js.undefined)
+    def setStampSizeMMUndefined: Self = StObject.set(x, "stampSizeMM", js.undefined)
     
     @scala.inline
-    def setStampType(value: String): Self = this.set("stampType", value.asInstanceOf[js.Any])
+    def setStampType(value: String): Self = StObject.set(x, "stampType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStampType: Self = this.set("stampType", js.undefined)
+    def setStampTypeUndefined: Self = StObject.set(x, "stampType", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

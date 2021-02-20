@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterTargetWithMaintenanceWindowResult extends js.Object {
+trait RegisterTargetWithMaintenanceWindowResult extends StObject {
   
   /**
     * The ID of the target definition in this maintenance window.
@@ -21,24 +22,12 @@ object RegisterTargetWithMaintenanceWindowResult {
   }
   
   @scala.inline
-  implicit class RegisterTargetWithMaintenanceWindowResultOps[Self <: RegisterTargetWithMaintenanceWindowResult] (val x: Self) extends AnyVal {
+  implicit class RegisterTargetWithMaintenanceWindowResultMutableBuilder[Self <: RegisterTargetWithMaintenanceWindowResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = this.set("WindowTargetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowTargetId: Self = this.set("WindowTargetId", js.undefined)
+    def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
   }
 }

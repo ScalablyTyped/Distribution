@@ -2,12 +2,13 @@ package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerStrings.upgrade
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Upgrade extends js.Object {
+trait Upgrade extends StObject {
   
   /**
     * Called everytime the upgrade is attempted to be bought, originally designed for permaslots

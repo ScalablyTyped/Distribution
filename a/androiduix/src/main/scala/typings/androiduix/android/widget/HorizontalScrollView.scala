@@ -2,6 +2,7 @@ package typings.androiduix.android.widget
 
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.view.KeyEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

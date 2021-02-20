@@ -1,12 +1,13 @@
 package typings.natural.mod
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogisticRegressionClassifier extends js.Object {
+trait LogisticRegressionClassifier extends StObject {
   
   def addDocument(text: String, stem: String): Unit = js.native
   def addDocument(text: js.Array[String], stem: String): Unit = js.native

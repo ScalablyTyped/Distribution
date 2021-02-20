@@ -1,5 +1,6 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.Children
 import typings.antd.anon.FnCall
 import typings.antd.anon.FnCallProps
@@ -10,14 +11,15 @@ import typings.antd.formListMod.FormListProps
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/form", JSImport.Namespace)
-@js.native
-object formMod extends js.Object {
+object formMod extends Shortcut {
   
+  @JSImport("antd/lib/form", JSImport.Default)
+  @js.native
   val default: FormInterface = js.native
   
   @js.native
@@ -38,8 +40,13 @@ object formMod extends js.Object {
   }
   
   @js.native
-  trait InternalFormType extends js.Object {
+  trait InternalFormType extends StObject {
     
     def apply[Values](props: Children[Values] with FormProps[Values]): ReactElement = js.native
   }
+  
+  type _To = FormInterface
+  
+  /* This means you don't have to write `default`, but can instead just say `formMod.foo` */
+  override def _to: FormInterface = default
 }

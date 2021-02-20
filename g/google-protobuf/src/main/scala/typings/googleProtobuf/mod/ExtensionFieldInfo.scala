@@ -3,13 +3,14 @@ package typings.googleProtobuf.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleProtobuf.anon.TypeofMessageInstantiable
 import typings.googleProtobuf.mod.Message.StaticToObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "ExtensionFieldInfo")
 @js.native
-class ExtensionFieldInfo[T] protected () extends js.Object {
+class ExtensionFieldInfo[T] protected () extends StObject {
   def this(
     fieldIndex: Double,
     fieldName: StringDictionary[Double],

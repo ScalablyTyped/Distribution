@@ -1,12 +1,13 @@
 package typings.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("source-map", "SourceNode")
 @js.native
-class SourceNode () extends js.Object {
+class SourceNode () extends StObject {
   def this(
     line: Double | Null,
     column: Double | Null,
@@ -49,10 +50,12 @@ class SourceNode () extends js.Object {
   def walkSourceContents(fn: js.Function2[/* file */ String, /* content */ String, Unit]): Unit = js.native
 }
 /* static members */
-@JSImport("source-map", "SourceNode")
-@js.native
-object SourceNode extends js.Object {
+object SourceNode {
   
-  def fromStringWithSourceMap(code: String, sourceMapConsumer: SourceMapConsumer): SourceNode = js.native
-  def fromStringWithSourceMap(code: String, sourceMapConsumer: SourceMapConsumer, relativePath: String): SourceNode = js.native
+  @JSImport("source-map", "SourceNode.fromStringWithSourceMap")
+  @js.native
+  def fromStringWithSourceMap(code: String, sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer): SourceNode = js.native
+  @JSImport("source-map", "SourceNode.fromStringWithSourceMap")
+  @js.native
+  def fromStringWithSourceMap(code: String, sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer, relativePath: String): SourceNode = js.native
 }

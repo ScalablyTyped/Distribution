@@ -6,14 +6,14 @@ import typings.devexpressUtils.reproducibleMod.IReproducibleInterval
 import typings.devexpressUtils.typesMod.ICloneable
 import typings.devexpressUtils.typesMod.IEquatable
 import typings.devexpressUtils.typesMod.ISupportCopyFrom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/intervals/fixed", JSImport.Namespace)
-@js.native
-object fixedMod extends js.Object {
+object fixedMod {
   
+  @JSImport("@devexpress/utils/lib/intervals/fixed", "FixedInterval")
   @js.native
   class FixedInterval protected ()
     extends MutableInterval
@@ -26,11 +26,14 @@ object fixedMod extends js.Object {
     def expand(interval: FixedInterval): this.type = js.native
   }
   /* static members */
-  @js.native
-  object FixedInterval extends js.Object {
+  object FixedInterval {
     
+    @JSImport("@devexpress/utils/lib/intervals/fixed", "FixedInterval.fromPositions")
+    @js.native
     def fromPositions(start: Double, end: Double): FixedInterval = js.native
     
+    @JSImport("@devexpress/utils/lib/intervals/fixed", "FixedInterval.makeByConstInterval")
+    @js.native
     def makeByConstInterval(interval: ConstInterval): FixedInterval = js.native
   }
 }

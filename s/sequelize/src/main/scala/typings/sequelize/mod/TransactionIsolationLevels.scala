@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `options.isolationLevel` in `new Sequelize`.
   */
 @js.native
-trait TransactionIsolationLevels extends js.Object {
+trait TransactionIsolationLevels extends StObject {
   
-   // 'READ UNCOMMITTED'
+  // 'READ UNCOMMITTED'
   var READ_COMMITTED: TransactionIsolationLevelReadCommitted = js.native
   
   var READ_UNCOMMITTED: TransactionIsolationLevelReadUncommitted = js.native
   
-   // 'READ COMMITTED'
+  // 'READ COMMITTED'
   var REPEATABLE_READ: TransactionIsolationLevelRepeatableRead = js.native
   
-   // 'REPEATABLE READ'
+  // 'REPEATABLE READ'
   var SERIALIZABLE: TransactionIsolationLevelSerializable = js.native
 }
 object TransactionIsolationLevels {
@@ -37,30 +38,18 @@ object TransactionIsolationLevels {
   }
   
   @scala.inline
-  implicit class TransactionIsolationLevelsOps[Self <: TransactionIsolationLevels] (val x: Self) extends AnyVal {
+  implicit class TransactionIsolationLevelsMutableBuilder[Self <: TransactionIsolationLevels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setREAD_COMMITTED(value: TransactionIsolationLevelReadCommitted): Self = StObject.set(x, "READ_COMMITTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setREAD_UNCOMMITTED(value: TransactionIsolationLevelReadUncommitted): Self = StObject.set(x, "READ_UNCOMMITTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setREPEATABLE_READ(value: TransactionIsolationLevelRepeatableRead): Self = StObject.set(x, "REPEATABLE_READ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREAD_COMMITTED(value: TransactionIsolationLevelReadCommitted): Self = this.set("READ_COMMITTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREAD_UNCOMMITTED(value: TransactionIsolationLevelReadUncommitted): Self = this.set("READ_UNCOMMITTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREPEATABLE_READ(value: TransactionIsolationLevelRepeatableRead): Self = this.set("REPEATABLE_READ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSERIALIZABLE(value: TransactionIsolationLevelSerializable): Self = this.set("SERIALIZABLE", value.asInstanceOf[js.Any])
+    def setSERIALIZABLE(value: TransactionIsolationLevelSerializable): Self = StObject.set(x, "SERIALIZABLE", value.asInstanceOf[js.Any])
   }
 }

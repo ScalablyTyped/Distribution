@@ -2,14 +2,14 @@ package typings.openfin
 
 import typings.openfin.emitterMapMod.EmitterMap
 import typings.openfin.transportMod.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openfin/_v2/api/events/eventAggregator", JSImport.Namespace)
-@js.native
-object eventAggregatorMod extends js.Object {
+object eventAggregatorMod {
   
+  @JSImport("openfin/_v2/api/events/eventAggregator", "EventAggregator")
   @js.native
   class EventAggregator () extends EmitterMap {
     

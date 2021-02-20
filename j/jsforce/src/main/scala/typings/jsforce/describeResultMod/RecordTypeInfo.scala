@@ -1,12 +1,13 @@
 package typings.jsforce.describeResultMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordTypeInfo extends js.Object {
+trait RecordTypeInfo extends StObject {
   
   var available: Boolean = js.native
   
@@ -38,45 +39,33 @@ object RecordTypeInfo {
   }
   
   @scala.inline
-  implicit class RecordTypeInfoOps[Self <: RecordTypeInfo] (val x: Self) extends AnyVal {
+  implicit class RecordTypeInfoMutableBuilder[Self <: RecordTypeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRecordTypeMapping(value: Boolean): Self = StObject.set(x, "defaultRecordTypeMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperName(value: maybe[String]): Self = StObject.set(x, "developerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setDeveloperNameNull: Self = StObject.set(x, "developerName", null)
     
     @scala.inline
-    def setDefaultRecordTypeMapping(value: Boolean): Self = this.set("defaultRecordTypeMapping", value.asInstanceOf[js.Any])
+    def setDeveloperNameUndefined: Self = StObject.set(x, "developerName", js.undefined)
     
     @scala.inline
-    def setMaster(value: Boolean): Self = this.set("master", value.asInstanceOf[js.Any])
+    def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordTypeId(value: String): Self = this.set("recordTypeId", value.asInstanceOf[js.Any])
+    def setRecordTypeId(value: String): Self = StObject.set(x, "recordTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrls(value: Record[String, String]): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeveloperName(value: maybe[String]): Self = this.set("developerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeveloperName: Self = this.set("developerName", js.undefined)
-    
-    @scala.inline
-    def setDeveloperNameNull: Self = this.set("developerName", null)
+    def setUrls(value: Record[String, String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.List
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashSumBy extends js.Object {
+trait LodashSumBy extends StObject {
   
   def apply[T](iteratee: String): Double = js.native
   def apply[T](iteratee: String, collection: List[T]): Double = js.native

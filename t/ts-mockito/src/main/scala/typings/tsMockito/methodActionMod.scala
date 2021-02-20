@@ -1,16 +1,16 @@
 package typings.tsMockito
 
 import typings.tsMockito.matcherMod.Matcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/MethodAction", JSImport.Namespace)
-@js.native
-object methodActionMod extends js.Object {
+object methodActionMod {
   
+  @JSImport("ts-mockito/lib/MethodAction", "MethodAction")
   @js.native
-  class MethodAction protected () extends js.Object {
+  class MethodAction protected () extends StObject {
     def this(methodName: String, args: js.Array[_]) = this()
     
     var args: js.Array[_] = js.native
@@ -26,9 +26,16 @@ object methodActionMod extends js.Object {
     var methodName: String = js.native
   }
   /* static members */
-  @js.native
-  object MethodAction extends js.Object {
+  object MethodAction {
     
-    var globalCallIndex: js.Any = js.native
+    @JSImport("ts-mockito/lib/MethodAction", "MethodAction")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ts-mockito/lib/MethodAction", "MethodAction.globalCallIndex")
+    @js.native
+    def globalCallIndex: js.Any = js.native
+    @scala.inline
+    def globalCallIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCallIndex")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoints extends js.Object {
+trait Endpoints extends StObject {
   
   def assignSetting(settings: js.Object, endpoint: js.Object, name: String, defaultValue: js.Any): Unit = js.native
   

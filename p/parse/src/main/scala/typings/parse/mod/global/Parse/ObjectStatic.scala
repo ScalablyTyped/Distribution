@@ -5,12 +5,13 @@ import typings.parse.anon.ClassName
 import typings.parse.mod.global.Parse.Object.DestroyAllOptions
 import typings.parse.mod.global.Parse.Object.FetchAllOptions
 import typings.parse.mod.global.Parse.Object.SaveAllOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectStatic extends js.Object {
+trait ObjectStatic extends StObject {
   
   def createWithoutData[T /* <: Object[Attributes] */](id: String): T = js.native
   

@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/php-template", JSImport.Namespace)
-@js.native
-object phpTemplateMod extends js.Object {
+object phpTemplateMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/php-template", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,6 +1,7 @@
 package typings.knuddelsUserappsApi.mod.global
 
 import typings.knuddelsUserappsApi.anon.Ascending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("ToplistAccess")
 @js.native
-class ToplistAccess () extends js.Object {
+class ToplistAccess () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_createOrUpdateToplist

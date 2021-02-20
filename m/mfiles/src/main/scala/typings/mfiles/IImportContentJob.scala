@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFImportContentFlag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IImportContentJob extends js.Object {
+trait IImportContentJob extends StObject {
   
   var ActivateAutomaticPermissionsForNewOrChangedDefinitions: Boolean = js.native
   
@@ -63,63 +64,51 @@ object IImportContentJob {
   }
   
   @scala.inline
-  implicit class IImportContentJobOps[Self <: IImportContentJob] (val x: Self) extends AnyVal {
+  implicit class IImportContentJobMutableBuilder[Self <: IImportContentJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateAutomaticPermissionsForNewOrChangedDefinitions(value: Boolean): Self = StObject.set(x, "ActivateAutomaticPermissionsForNewOrChangedDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IImportContentJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableImportedExternalObjectTypeConnections(value: Boolean): Self = StObject.set(x, "DisableImportedExternalObjectTypeConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateAutomaticPermissionsForNewOrChangedDefinitions(value: Boolean): Self = this.set("ActivateAutomaticPermissionsForNewOrChangedDefinitions", value.asInstanceOf[js.Any])
+    def setDisableImportedExternalUserGroups(value: Boolean): Self = StObject.set(x, "DisableImportedExternalUserGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IImportContentJob): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDisableImportedVaultEventHandlers(value: Boolean): Self = StObject.set(x, "DisableImportedVaultEventHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableImportedExternalObjectTypeConnections(value: Boolean): Self = this.set("DisableImportedExternalObjectTypeConnections", value.asInstanceOf[js.Any])
+    def setFlags(value: MFImportContentFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableImportedExternalUserGroups(value: Boolean): Self = this.set("DisableImportedExternalUserGroups", value.asInstanceOf[js.Any])
+    def setIgnoreAutomaticPermissionsDefinedByObjects(value: Boolean): Self = StObject.set(x, "IgnoreAutomaticPermissionsDefinedByObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableImportedVaultEventHandlers(value: Boolean): Self = this.set("DisableImportedVaultEventHandlers", value.asInstanceOf[js.Any])
+    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: MFImportContentFlag): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setMetadataStructureSelectors(value: IMetadataStructureSelectors): Self = StObject.set(x, "MetadataStructureSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreAutomaticPermissionsDefinedByObjects(value: Boolean): Self = this.set("IgnoreAutomaticPermissionsDefinedByObjects", value.asInstanceOf[js.Any])
+    def setPermissions(value: IAccessControlList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpersonation(value: IImpersonation): Self = this.set("Impersonation", value.asInstanceOf[js.Any])
+    def setResetExportTimestamps(value: Boolean): Self = StObject.set(x, "ResetExportTimestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataStructureSelectors(value: IMetadataStructureSelectors): Self = this.set("MetadataStructureSelectors", value.asInstanceOf[js.Any])
+    def setSourceLocation(value: String): Self = StObject.set(x, "SourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: IAccessControlList): Self = this.set("Permissions", value.asInstanceOf[js.Any])
+    def setUseDefaultObjectTypePermissions(value: Boolean): Self = StObject.set(x, "UseDefaultObjectTypePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetExportTimestamps(value: Boolean): Self = this.set("ResetExportTimestamps", value.asInstanceOf[js.Any])
+    def setUseNamesAsAliases(value: Boolean): Self = StObject.set(x, "UseNamesAsAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLocation(value: String): Self = this.set("SourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDefaultObjectTypePermissions(value: Boolean): Self = this.set("UseDefaultObjectTypePermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseNamesAsAliases(value: Boolean): Self = this.set("UseNamesAsAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsePermissions(value: Boolean): Self = this.set("UsePermissions", value.asInstanceOf[js.Any])
+    def setUsePermissions(value: Boolean): Self = StObject.set(x, "UsePermissions", value.asInstanceOf[js.Any])
   }
 }

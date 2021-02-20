@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleRangeSliderViewModelProperties extends js.Object {
+trait ScaleRangeSliderViewModelProperties extends StObject {
   
   /**
     * When provided, the initial [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRangeSliderViewModel.html#minScale) and [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRangeSliderViewModel.html#maxScale) values will match the layer's.
@@ -65,60 +66,48 @@ object ScaleRangeSliderViewModelProperties {
   }
   
   @scala.inline
-  implicit class ScaleRangeSliderViewModelPropertiesOps[Self <: ScaleRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class ScaleRangeSliderViewModelPropertiesMutableBuilder[Self <: ScaleRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: LayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setMaxScaleLimit(value: Double): Self = StObject.set(x, "maxScaleLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setMaxScaleLimitUndefined: Self = StObject.set(x, "maxScaleLimit", js.undefined)
     
     @scala.inline
-    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
+    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
     @scala.inline
-    def deleteMaxScale: Self = this.set("maxScale", js.undefined)
+    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScaleLimit(value: Double): Self = this.set("maxScaleLimit", value.asInstanceOf[js.Any])
+    def setMinScaleLimit(value: Double): Self = StObject.set(x, "minScaleLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxScaleLimit: Self = this.set("maxScaleLimit", js.undefined)
+    def setMinScaleLimitUndefined: Self = StObject.set(x, "minScaleLimit", js.undefined)
     
     @scala.inline
-    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
     @scala.inline
-    def deleteMinScale: Self = this.set("minScale", js.undefined)
+    def setSliderViewModel(value: SliderViewModelProperties): Self = StObject.set(x, "sliderViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScaleLimit(value: Double): Self = this.set("minScaleLimit", value.asInstanceOf[js.Any])
+    def setSliderViewModelUndefined: Self = StObject.set(x, "sliderViewModel", js.undefined)
     
     @scala.inline
-    def deleteMinScaleLimit: Self = this.set("minScaleLimit", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliderViewModel(value: SliderViewModelProperties): Self = this.set("sliderViewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSliderViewModel: Self = this.set("sliderViewModel", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

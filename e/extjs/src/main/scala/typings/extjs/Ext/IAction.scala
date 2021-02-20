@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,150 +99,138 @@ object IAction {
   }
   
   @scala.inline
-  implicit class IActionOps[Self <: IAction] (val x: Self) extends AnyVal {
+  implicit class IActionMutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("each", js.Any.fromFunction2(value))
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setExecute(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setGetIconCls(value: () => Unit): Self = StObject.set(x, "getIconCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExecute(value: /* repeated */ js.Any => Unit): Self = this.set("execute", js.Any.fromFunction1(value))
+    def setGetIconClsUndefined: Self = StObject.set(x, "getIconCls", js.undefined)
     
     @scala.inline
-    def deleteExecute: Self = this.set("execute", js.undefined)
+    def setGetText(value: () => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIconCls(value: () => Unit): Self = this.set("getIconCls", js.Any.fromFunction0(value))
+    def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
     
     @scala.inline
-    def deleteGetIconCls: Self = this.set("getIconCls", js.undefined)
+    def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => Unit): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def deleteGetText: Self = this.set("getText", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: js.Any): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setIconCls(value: java.lang.String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setIsDisabled(value: () => Unit): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIconCls(value: java.lang.String): Self = this.set("iconCls", value.asInstanceOf[js.Any])
+    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
     @scala.inline
-    def deleteIconCls: Self = this.set("iconCls", js.undefined)
+    def setIsHidden(value: () => Unit): Self = StObject.set(x, "isHidden", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDisabled(value: () => Unit): Self = this.set("isDisabled", js.Any.fromFunction0(value))
+    def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
     
     @scala.inline
-    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
+    def setItemId(value: java.lang.String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHidden(value: () => Unit): Self = this.set("isHidden", js.Any.fromFunction0(value))
+    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
     @scala.inline
-    def deleteIsHidden: Self = this.set("isHidden", js.undefined)
+    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemId(value: java.lang.String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteItemId: Self = this.set("itemId", js.undefined)
+    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScope(value: js.Any): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = this.set("setDisabled", js.Any.fromFunction1(value))
+    def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
     
     @scala.inline
-    def deleteSetDisabled: Self = this.set("setDisabled", js.undefined)
+    def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("setHandler", js.Any.fromFunction2(value))
+    def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
     
     @scala.inline
-    def deleteSetHandler: Self = this.set("setHandler", js.undefined)
+    def setSetIconCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setIconCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = this.set("setHidden", js.Any.fromFunction1(value))
+    def setSetIconClsUndefined: Self = StObject.set(x, "setIconCls", js.undefined)
     
     @scala.inline
-    def deleteSetHidden: Self = this.set("setHidden", js.undefined)
+    def setSetText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIconCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setIconCls", js.Any.fromFunction1(value))
+    def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
     
     @scala.inline
-    def deleteSetIconCls: Self = this.set("setIconCls", js.undefined)
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSetText: Self = this.set("setText", js.undefined)
+    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setText(value: java.lang.String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

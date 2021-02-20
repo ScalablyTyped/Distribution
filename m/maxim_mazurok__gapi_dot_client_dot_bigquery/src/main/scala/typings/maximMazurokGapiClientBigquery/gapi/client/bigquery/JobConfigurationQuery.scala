@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobConfigurationQuery extends js.Object {
+trait JobConfigurationQuery extends StObject {
   
   /**
     * [Optional] If true and query uses legacy SQL dialect, allows the query to produce arbitrarily large result tables at a slight cost in performance. Requires destinationTable to be
@@ -129,172 +130,160 @@ object JobConfigurationQuery {
   }
   
   @scala.inline
-  implicit class JobConfigurationQueryOps[Self <: JobConfigurationQuery] (val x: Self) extends AnyVal {
+  implicit class JobConfigurationQueryMutableBuilder[Self <: JobConfigurationQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowLargeResults(value: Boolean): Self = StObject.set(x, "allowLargeResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowLargeResultsUndefined: Self = StObject.set(x, "allowLargeResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowLargeResults(value: Boolean): Self = this.set("allowLargeResults", value.asInstanceOf[js.Any])
+    def setClusteringUndefined: Self = StObject.set(x, "clustering", js.undefined)
     
     @scala.inline
-    def deleteAllowLargeResults: Self = this.set("allowLargeResults", js.undefined)
+    def setConnectionProperties(value: js.Array[ConnectionProperty]): Self = StObject.set(x, "connectionProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClustering(value: Clustering): Self = this.set("clustering", value.asInstanceOf[js.Any])
+    def setConnectionPropertiesUndefined: Self = StObject.set(x, "connectionProperties", js.undefined)
     
     @scala.inline
-    def deleteClustering: Self = this.set("clustering", js.undefined)
+    def setConnectionPropertiesVarargs(value: ConnectionProperty*): Self = StObject.set(x, "connectionProperties", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionPropertiesVarargs(value: ConnectionProperty*): Self = this.set("connectionProperties", js.Array(value :_*))
+    def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionProperties(value: js.Array[ConnectionProperty]): Self = this.set("connectionProperties", value.asInstanceOf[js.Any])
+    def setCreateDispositionUndefined: Self = StObject.set(x, "createDisposition", js.undefined)
     
     @scala.inline
-    def deleteConnectionProperties: Self = this.set("connectionProperties", js.undefined)
+    def setDefaultDataset(value: DatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDisposition(value: String): Self = this.set("createDisposition", value.asInstanceOf[js.Any])
+    def setDefaultDatasetUndefined: Self = StObject.set(x, "defaultDataset", js.undefined)
     
     @scala.inline
-    def deleteCreateDisposition: Self = this.set("createDisposition", js.undefined)
+    def setDestinationEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDataset(value: DatasetReference): Self = this.set("defaultDataset", value.asInstanceOf[js.Any])
+    def setDestinationEncryptionConfigurationUndefined: Self = StObject.set(x, "destinationEncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDefaultDataset: Self = this.set("defaultDataset", js.undefined)
+    def setDestinationTable(value: TableReference): Self = StObject.set(x, "destinationTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setDestinationTableUndefined: Self = StObject.set(x, "destinationTable", js.undefined)
     
     @scala.inline
-    def deleteDestinationEncryptionConfiguration: Self = this.set("destinationEncryptionConfiguration", js.undefined)
+    def setFlattenResults(value: Boolean): Self = StObject.set(x, "flattenResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationTable(value: TableReference): Self = this.set("destinationTable", value.asInstanceOf[js.Any])
+    def setFlattenResultsUndefined: Self = StObject.set(x, "flattenResults", js.undefined)
     
     @scala.inline
-    def deleteDestinationTable: Self = this.set("destinationTable", js.undefined)
+    def setMaximumBillingTier(value: Double): Self = StObject.set(x, "maximumBillingTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlattenResults(value: Boolean): Self = this.set("flattenResults", value.asInstanceOf[js.Any])
+    def setMaximumBillingTierUndefined: Self = StObject.set(x, "maximumBillingTier", js.undefined)
     
     @scala.inline
-    def deleteFlattenResults: Self = this.set("flattenResults", js.undefined)
+    def setMaximumBytesBilled(value: String): Self = StObject.set(x, "maximumBytesBilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumBillingTier(value: Double): Self = this.set("maximumBillingTier", value.asInstanceOf[js.Any])
+    def setMaximumBytesBilledUndefined: Self = StObject.set(x, "maximumBytesBilled", js.undefined)
     
     @scala.inline
-    def deleteMaximumBillingTier: Self = this.set("maximumBillingTier", js.undefined)
+    def setParameterMode(value: String): Self = StObject.set(x, "parameterMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumBytesBilled(value: String): Self = this.set("maximumBytesBilled", value.asInstanceOf[js.Any])
+    def setParameterModeUndefined: Self = StObject.set(x, "parameterMode", js.undefined)
     
     @scala.inline
-    def deleteMaximumBytesBilled: Self = this.set("maximumBytesBilled", js.undefined)
+    def setPreserveNulls(value: Boolean): Self = StObject.set(x, "preserveNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterMode(value: String): Self = this.set("parameterMode", value.asInstanceOf[js.Any])
+    def setPreserveNullsUndefined: Self = StObject.set(x, "preserveNulls", js.undefined)
     
     @scala.inline
-    def deleteParameterMode: Self = this.set("parameterMode", js.undefined)
+    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveNulls(value: Boolean): Self = this.set("preserveNulls", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePreserveNulls: Self = this.set("preserveNulls", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setQueryParameters(value: js.Array[QueryParameter]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value :_*))
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def setQueryParametersVarargs(value: QueryParameter*): Self = this.set("queryParameters", js.Array(value :_*))
+    def setRangePartitioning(value: RangePartitioning): Self = StObject.set(x, "rangePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: js.Array[QueryParameter]): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
+    def setRangePartitioningUndefined: Self = StObject.set(x, "rangePartitioning", js.undefined)
     
     @scala.inline
-    def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
+    def setSchemaUpdateOptions(value: js.Array[String]): Self = StObject.set(x, "schemaUpdateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangePartitioning(value: RangePartitioning): Self = this.set("rangePartitioning", value.asInstanceOf[js.Any])
+    def setSchemaUpdateOptionsUndefined: Self = StObject.set(x, "schemaUpdateOptions", js.undefined)
     
     @scala.inline
-    def deleteRangePartitioning: Self = this.set("rangePartitioning", js.undefined)
-    
-    @scala.inline
-    def setSchemaUpdateOptionsVarargs(value: String*): Self = this.set("schemaUpdateOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemaUpdateOptions(value: js.Array[String]): Self = this.set("schemaUpdateOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaUpdateOptions: Self = this.set("schemaUpdateOptions", js.undefined)
+    def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value :_*))
     
     @scala.inline
     def setTableDefinitions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration}
       */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery with TopLevel[js.Any]
-    ): Self = this.set("tableDefinitions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tableDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableDefinitions: Self = this.set("tableDefinitions", js.undefined)
+    def setTableDefinitionsUndefined: Self = StObject.set(x, "tableDefinitions", js.undefined)
     
     @scala.inline
-    def setTimePartitioning(value: TimePartitioning): Self = this.set("timePartitioning", value.asInstanceOf[js.Any])
+    def setTimePartitioning(value: TimePartitioning): Self = StObject.set(x, "timePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimePartitioning: Self = this.set("timePartitioning", js.undefined)
+    def setTimePartitioningUndefined: Self = StObject.set(x, "timePartitioning", js.undefined)
     
     @scala.inline
-    def setUseLegacySql(value: Boolean): Self = this.set("useLegacySql", value.asInstanceOf[js.Any])
+    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseLegacySql: Self = this.set("useLegacySql", js.undefined)
+    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
     
     @scala.inline
-    def setUseQueryCache(value: Boolean): Self = this.set("useQueryCache", value.asInstanceOf[js.Any])
+    def setUseQueryCache(value: Boolean): Self = StObject.set(x, "useQueryCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseQueryCache: Self = this.set("useQueryCache", js.undefined)
+    def setUseQueryCacheUndefined: Self = StObject.set(x, "useQueryCache", js.undefined)
     
     @scala.inline
-    def setUserDefinedFunctionResourcesVarargs(value: UserDefinedFunctionResource*): Self = this.set("userDefinedFunctionResources", js.Array(value :_*))
+    def setUserDefinedFunctionResources(value: js.Array[UserDefinedFunctionResource]): Self = StObject.set(x, "userDefinedFunctionResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDefinedFunctionResources(value: js.Array[UserDefinedFunctionResource]): Self = this.set("userDefinedFunctionResources", value.asInstanceOf[js.Any])
+    def setUserDefinedFunctionResourcesUndefined: Self = StObject.set(x, "userDefinedFunctionResources", js.undefined)
     
     @scala.inline
-    def deleteUserDefinedFunctionResources: Self = this.set("userDefinedFunctionResources", js.undefined)
+    def setUserDefinedFunctionResourcesVarargs(value: UserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value :_*))
     
     @scala.inline
-    def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
+    def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
+    def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

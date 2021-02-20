@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetApnsVoipChannelInputMod.GetAp
 import typings.awsSdkClientPinpointBrowser.typesGetApnsVoipChannelOutputMod.GetApnsVoipChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetApnsVoipChannelCommand", JSImport.Namespace)
-@js.native
-object getApnsVoipChannelCommandMod extends js.Object {
+object getApnsVoipChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetApnsVoipChannelCommand", "GetApnsVoipChannelCommand")
   @js.native
   class GetApnsVoipChannelCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.`sctp-failure`
   - typings.std.stdStrings.`sdp-syntax-error`
 */
-trait RTCErrorDetailType extends js.Object
+trait RTCErrorDetailType extends StObject
 object RTCErrorDetailType {
   
   @scala.inline

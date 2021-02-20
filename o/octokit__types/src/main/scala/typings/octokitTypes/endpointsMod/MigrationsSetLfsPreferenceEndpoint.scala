@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.octokitTypesStrings.opt_in
 import typings.octokitTypes.octokitTypesStrings.opt_out
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationsSetLfsPreferenceEndpoint extends js.Object {
+trait MigrationsSetLfsPreferenceEndpoint extends StObject {
   
   var owner: String = js.native
   
@@ -27,27 +28,15 @@ object MigrationsSetLfsPreferenceEndpoint {
   }
   
   @scala.inline
-  implicit class MigrationsSetLfsPreferenceEndpointOps[Self <: MigrationsSetLfsPreferenceEndpoint] (val x: Self) extends AnyVal {
+  implicit class MigrationsSetLfsPreferenceEndpointMutableBuilder[Self <: MigrationsSetLfsPreferenceEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse_lfs(value: opt_in | opt_out): Self = this.set("use_lfs", value.asInstanceOf[js.Any])
+    def setUse_lfs(value: opt_in | opt_out): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingChargeResponse extends js.Object {
+trait BillingChargeResponse extends StObject {
   
   /**
     * Reserved: TBD
@@ -21,27 +22,15 @@ object BillingChargeResponse {
   }
   
   @scala.inline
-  implicit class BillingChargeResponseOps[Self <: BillingChargeResponse] (val x: Self) extends AnyVal {
+  implicit class BillingChargeResponseMutableBuilder[Self <: BillingChargeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingChargeItems(value: js.Array[/* Contains information about a billing charge. */ BillingCharge]): Self = StObject.set(x, "billingChargeItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingChargeItemsUndefined: Self = StObject.set(x, "billingChargeItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBillingChargeItemsVarargs(value: (/* Contains information about a billing charge. */ BillingCharge)*): Self = this.set("billingChargeItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setBillingChargeItems(value: js.Array[/* Contains information about a billing charge. */ BillingCharge]): Self = this.set("billingChargeItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingChargeItems: Self = this.set("billingChargeItems", js.undefined)
+    def setBillingChargeItemsVarargs(value: (/* Contains information about a billing charge. */ BillingCharge)*): Self = StObject.set(x, "billingChargeItems", js.Array(value :_*))
   }
 }

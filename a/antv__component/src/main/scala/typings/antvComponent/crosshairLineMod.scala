@@ -1,18 +1,18 @@
 package typings.antvComponent
 
-import typings.antvComponent.crosshairBaseMod.CrosshairBase
 import typings.antvComponent.typesMod.LineCrosshairCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/crosshair/line", JSImport.Namespace)
-@js.native
-object crosshairLineMod extends js.Object {
+object crosshairLineMod {
   
-  @js.native
-  trait LineCrosshair extends CrosshairBase[LineCrosshairCfg]
-  
+  @JSImport("@antv/component/lib/crosshair/line", JSImport.Default)
   @js.native
   class default () extends LineCrosshair
+  
+  @js.native
+  trait LineCrosshair
+    extends typings.antvComponent.crosshairBaseMod.default[LineCrosshairCfg]
 }

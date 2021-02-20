@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Output extends js.Object {
+trait Output extends StObject {
   
   /**
     * User defined description associated with the output.
@@ -36,42 +37,30 @@ object Output {
   }
   
   @scala.inline
-  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportName(value: ExportName): Self = StObject.set(x, "ExportName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setExportNameUndefined: Self = StObject.set(x, "ExportName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportName(value: ExportName): Self = this.set("ExportName", value.asInstanceOf[js.Any])
+    def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
     
     @scala.inline
-    def deleteExportName: Self = this.set("ExportName", js.undefined)
+    def setOutputValue(value: OutputValue): Self = StObject.set(x, "OutputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputKey(value: OutputKey): Self = this.set("OutputKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputKey: Self = this.set("OutputKey", js.undefined)
-    
-    @scala.inline
-    def setOutputValue(value: OutputValue): Self = this.set("OutputValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputValue: Self = this.set("OutputValue", js.undefined)
+    def setOutputValueUndefined: Self = StObject.set(x, "OutputValue", js.undefined)
   }
 }

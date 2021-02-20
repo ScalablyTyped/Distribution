@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.FieldsForwardingRule
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.ForwardingRuleKey
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserRegion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardingRulesResource extends js.Object {
+trait ForwardingRulesResource extends StObject {
   
   /** Retrieves an aggregated list of forwarding rules. */
   def aggregatedList(): Request[ForwardingRuleAggregatedList] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryLastRun extends js.Object {
+trait CanaryLastRun extends StObject {
   
   /**
     * The name of the canary.
@@ -26,30 +27,18 @@ object CanaryLastRun {
   }
   
   @scala.inline
-  implicit class CanaryLastRunOps[Self <: CanaryLastRun] (val x: Self) extends AnyVal {
+  implicit class CanaryLastRunMutableBuilder[Self <: CanaryLastRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanaryName(value: CanaryName): Self = StObject.set(x, "CanaryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanaryNameUndefined: Self = StObject.set(x, "CanaryName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastRun(value: CanaryRun): Self = StObject.set(x, "LastRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanaryName(value: CanaryName): Self = this.set("CanaryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanaryName: Self = this.set("CanaryName", js.undefined)
-    
-    @scala.inline
-    def setLastRun(value: CanaryRun): Self = this.set("LastRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastRun: Self = this.set("LastRun", js.undefined)
+    def setLastRunUndefined: Self = StObject.set(x, "LastRun", js.undefined)
   }
 }

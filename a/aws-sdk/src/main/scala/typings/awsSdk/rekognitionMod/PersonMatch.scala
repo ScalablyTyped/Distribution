@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersonMatch extends js.Object {
+trait PersonMatch extends StObject {
   
   /**
     * Information about the faces in the input collection that match the face of a person in the video.
@@ -31,39 +32,27 @@ object PersonMatch {
   }
   
   @scala.inline
-  implicit class PersonMatchOps[Self <: PersonMatch] (val x: Self) extends AnyVal {
+  implicit class PersonMatchMutableBuilder[Self <: PersonMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
     @scala.inline
-    def setFaceMatchesVarargs(value: FaceMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceMatches(value: FaceMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    def setPersonUndefined: Self = StObject.set(x, "Person", js.undefined)
     
     @scala.inline
-    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerson(value: PersonDetail): Self = this.set("Person", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerson: Self = this.set("Person", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

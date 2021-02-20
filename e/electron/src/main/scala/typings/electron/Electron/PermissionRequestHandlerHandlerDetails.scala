@@ -2,12 +2,13 @@ package typings.electron.Electron
 
 import typings.electron.electronStrings.audio
 import typings.electron.electronStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionRequestHandlerHandlerDetails extends js.Object {
+trait PermissionRequestHandlerHandlerDetails extends StObject {
   
   /**
     * The url of the `openExternal` request.
@@ -38,39 +39,27 @@ object PermissionRequestHandlerHandlerDetails {
   }
   
   @scala.inline
-  implicit class PermissionRequestHandlerHandlerDetailsOps[Self <: PermissionRequestHandlerHandlerDetails] (val x: Self) extends AnyVal {
+  implicit class PermissionRequestHandlerHandlerDetailsMutableBuilder[Self <: PermissionRequestHandlerHandlerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalURL(value: String): Self = StObject.set(x, "externalURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalURLUndefined: Self = StObject.set(x, "externalURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMainFrame(value: Boolean): Self = this.set("isMainFrame", value.asInstanceOf[js.Any])
+    def setMediaTypes(value: js.Array[video | audio]): Self = StObject.set(x, "mediaTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestingUrl(value: String): Self = this.set("requestingUrl", value.asInstanceOf[js.Any])
+    def setMediaTypesUndefined: Self = StObject.set(x, "mediaTypes", js.undefined)
     
     @scala.inline
-    def setExternalURL(value: String): Self = this.set("externalURL", value.asInstanceOf[js.Any])
+    def setMediaTypesVarargs(value: (video | audio)*): Self = StObject.set(x, "mediaTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteExternalURL: Self = this.set("externalURL", js.undefined)
-    
-    @scala.inline
-    def setMediaTypesVarargs(value: (video | audio)*): Self = this.set("mediaTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setMediaTypes(value: js.Array[video | audio]): Self = this.set("mediaTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaTypes: Self = this.set("mediaTypes", js.undefined)
+    def setRequestingUrl(value: String): Self = StObject.set(x, "requestingUrl", value.asInstanceOf[js.Any])
   }
 }

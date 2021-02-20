@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Dynamics
 
 import typings.box2d.Box2D.Collision.Shapes.b2Shape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2FixtureDef extends js.Object {
+trait b2FixtureDef extends StObject {
   
   /**
     * The density, usually in kg/m^2.
@@ -60,39 +61,27 @@ object b2FixtureDef {
   }
   
   @scala.inline
-  implicit class b2FixtureDefOps[Self <: b2FixtureDef] (val x: Self) extends AnyVal {
+  implicit class b2FixtureDefMutableBuilder[Self <: b2FixtureDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: b2FilterData): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: b2FilterData): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setShape(value: b2Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSensor(value: Boolean): Self = this.set("isSensor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestitution(value: Double): Self = this.set("restitution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: b2Shape): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
+    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

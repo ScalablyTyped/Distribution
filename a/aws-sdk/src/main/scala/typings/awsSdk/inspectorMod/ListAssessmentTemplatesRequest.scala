@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssessmentTemplatesRequest extends js.Object {
+trait ListAssessmentTemplatesRequest extends StObject {
   
   /**
     * A list of ARNs that specifies the assessment targets whose assessment templates you want to list.
@@ -36,45 +37,33 @@ object ListAssessmentTemplatesRequest {
   }
   
   @scala.inline
-  implicit class ListAssessmentTemplatesRequestOps[Self <: ListAssessmentTemplatesRequest] (val x: Self) extends AnyVal {
+  implicit class ListAssessmentTemplatesRequestMutableBuilder[Self <: ListAssessmentTemplatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentTargetArns(value: ListParentArnList): Self = StObject.set(x, "assessmentTargetArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentTargetArnsUndefined: Self = StObject.set(x, "assessmentTargetArns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssessmentTargetArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTargetArns", js.Array(value :_*))
     
     @scala.inline
-    def setAssessmentTargetArnsVarargs(value: Arn*): Self = this.set("assessmentTargetArns", js.Array(value :_*))
+    def setFilter(value: AssessmentTemplateFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentTargetArns(value: ListParentArnList): Self = this.set("assessmentTargetArns", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteAssessmentTargetArns: Self = this.set("assessmentTargetArns", js.undefined)
+    def setMaxResults(value: ListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: AssessmentTemplateFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: ListMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

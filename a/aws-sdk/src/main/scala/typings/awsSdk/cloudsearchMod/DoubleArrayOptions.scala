@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleArrayOptions extends js.Object {
+trait DoubleArrayOptions extends StObject {
   
   /**
     * A value to use for the field if the field isn't specified for a document.
@@ -41,48 +42,36 @@ object DoubleArrayOptions {
   }
   
   @scala.inline
-  implicit class DoubleArrayOptionsOps[Self <: DoubleArrayOptions] (val x: Self) extends AnyVal {
+  implicit class DoubleArrayOptionsMutableBuilder[Self <: DoubleArrayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: Double): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetEnabled(value: Boolean): Self = StObject.set(x, "FacetEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: Double): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setFacetEnabledUndefined: Self = StObject.set(x, "FacetEnabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    def setReturnEnabled(value: Boolean): Self = StObject.set(x, "ReturnEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetEnabled(value: Boolean): Self = this.set("FacetEnabled", value.asInstanceOf[js.Any])
+    def setReturnEnabledUndefined: Self = StObject.set(x, "ReturnEnabled", js.undefined)
     
     @scala.inline
-    def deleteFacetEnabled: Self = this.set("FacetEnabled", js.undefined)
+    def setSearchEnabled(value: Boolean): Self = StObject.set(x, "SearchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnEnabled(value: Boolean): Self = this.set("ReturnEnabled", value.asInstanceOf[js.Any])
+    def setSearchEnabledUndefined: Self = StObject.set(x, "SearchEnabled", js.undefined)
     
     @scala.inline
-    def deleteReturnEnabled: Self = this.set("ReturnEnabled", js.undefined)
+    def setSourceFields(value: FieldNameCommaList): Self = StObject.set(x, "SourceFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchEnabled(value: Boolean): Self = this.set("SearchEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchEnabled: Self = this.set("SearchEnabled", js.undefined)
-    
-    @scala.inline
-    def setSourceFields(value: FieldNameCommaList): Self = this.set("SourceFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceFields: Self = this.set("SourceFields", js.undefined)
+    def setSourceFieldsUndefined: Self = StObject.set(x, "SourceFields", js.undefined)
   }
 }

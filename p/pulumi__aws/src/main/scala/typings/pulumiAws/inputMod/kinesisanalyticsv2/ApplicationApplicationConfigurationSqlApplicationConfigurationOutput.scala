@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput extends js.Object {
+trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput extends StObject {
   
   /**
     * Describes the data format when records are written to the destination.
@@ -61,60 +62,48 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationOutput {
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputOps[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutput] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDestinationSchema(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema
         ]
-    ): Self = this.set("destinationSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "destinationSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setKinesisFirehoseOutput(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput
         ]
-    ): Self = this.set("kinesisFirehoseOutput", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "kinesisFirehoseOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisFirehoseOutput: Self = this.set("kinesisFirehoseOutput", js.undefined)
+    def setKinesisFirehoseOutputUndefined: Self = StObject.set(x, "kinesisFirehoseOutput", js.undefined)
     
     @scala.inline
     def setKinesisStreamsOutput(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput
         ]
-    ): Self = this.set("kinesisStreamsOutput", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "kinesisStreamsOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKinesisStreamsOutput: Self = this.set("kinesisStreamsOutput", js.undefined)
+    def setKinesisStreamsOutputUndefined: Self = StObject.set(x, "kinesisStreamsOutput", js.undefined)
     
     @scala.inline
-    def setLambdaOutput(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput]): Self = this.set("lambdaOutput", value.asInstanceOf[js.Any])
+    def setLambdaOutput(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput]): Self = StObject.set(x, "lambdaOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLambdaOutput: Self = this.set("lambdaOutput", js.undefined)
+    def setLambdaOutputUndefined: Self = StObject.set(x, "lambdaOutput", js.undefined)
     
     @scala.inline
-    def setOutputId(value: Input[String]): Self = this.set("outputId", value.asInstanceOf[js.Any])
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputId: Self = this.set("outputId", js.undefined)
+    def setOutputId(value: Input[String]): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOutputIdUndefined: Self = StObject.set(x, "outputId", js.undefined)
   }
 }

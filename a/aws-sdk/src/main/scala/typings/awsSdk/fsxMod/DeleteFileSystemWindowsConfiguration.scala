@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFileSystemWindowsConfiguration extends js.Object {
+trait DeleteFileSystemWindowsConfiguration extends StObject {
   
   /**
     * A set of tags for your final backup.
@@ -26,33 +27,21 @@ object DeleteFileSystemWindowsConfiguration {
   }
   
   @scala.inline
-  implicit class DeleteFileSystemWindowsConfigurationOps[Self <: DeleteFileSystemWindowsConfiguration] (val x: Self) extends AnyVal {
+  implicit class DeleteFileSystemWindowsConfigurationMutableBuilder[Self <: DeleteFileSystemWindowsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalBackupTagsUndefined: Self = StObject.set(x, "FinalBackupTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinalBackupTagsVarargs(value: Tag*): Self = StObject.set(x, "FinalBackupTags", js.Array(value :_*))
     
     @scala.inline
-    def setFinalBackupTagsVarargs(value: Tag*): Self = this.set("FinalBackupTags", js.Array(value :_*))
+    def setSkipFinalBackup(value: Flag): Self = StObject.set(x, "SkipFinalBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalBackupTags(value: Tags): Self = this.set("FinalBackupTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalBackupTags: Self = this.set("FinalBackupTags", js.undefined)
-    
-    @scala.inline
-    def setSkipFinalBackup(value: Flag): Self = this.set("SkipFinalBackup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipFinalBackup: Self = this.set("SkipFinalBackup", js.undefined)
+    def setSkipFinalBackupUndefined: Self = StObject.set(x, "SkipFinalBackup", js.undefined)
   }
 }

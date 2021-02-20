@@ -18,13 +18,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.Stealth
 import typings.officeJsPreview.officeJsPreviewStrings.Straight
 import typings.officeJsPreview.officeJsPreviewStrings.Triangle
 import typings.officeJsPreview.officeJsPreviewStrings.Wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `line.toJSON()`. */
 @js.native
-trait LineData extends js.Object {
+trait LineData extends StObject {
   
   /**
     *
@@ -131,90 +132,78 @@ object LineData {
   }
   
   @scala.inline
-  implicit class LineDataOps[Self <: LineData] (val x: Self) extends AnyVal {
+  implicit class LineDataMutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "beginArrowheadLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginArrowheadLengthUndefined: Self = StObject.set(x, "beginArrowheadLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = StObject.set(x, "beginArrowheadStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = this.set("beginArrowheadLength", value.asInstanceOf[js.Any])
+    def setBeginArrowheadStyleUndefined: Self = StObject.set(x, "beginArrowheadStyle", js.undefined)
     
     @scala.inline
-    def deleteBeginArrowheadLength: Self = this.set("beginArrowheadLength", js.undefined)
+    def setBeginArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = StObject.set(x, "beginArrowheadWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = this.set("beginArrowheadStyle", value.asInstanceOf[js.Any])
+    def setBeginArrowheadWidthUndefined: Self = StObject.set(x, "beginArrowheadWidth", js.undefined)
     
     @scala.inline
-    def deleteBeginArrowheadStyle: Self = this.set("beginArrowheadStyle", js.undefined)
+    def setBeginConnectedSite(value: Double): Self = StObject.set(x, "beginConnectedSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = this.set("beginArrowheadWidth", value.asInstanceOf[js.Any])
+    def setBeginConnectedSiteUndefined: Self = StObject.set(x, "beginConnectedSite", js.undefined)
     
     @scala.inline
-    def deleteBeginArrowheadWidth: Self = this.set("beginArrowheadWidth", js.undefined)
+    def setConnectorType(value: ConnectorType | Straight | Elbow | Curve): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginConnectedSite(value: Double): Self = this.set("beginConnectedSite", value.asInstanceOf[js.Any])
+    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
     @scala.inline
-    def deleteBeginConnectedSite: Self = this.set("beginConnectedSite", js.undefined)
+    def setEndArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "endArrowheadLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorType(value: ConnectorType | Straight | Elbow | Curve): Self = this.set("connectorType", value.asInstanceOf[js.Any])
+    def setEndArrowheadLengthUndefined: Self = StObject.set(x, "endArrowheadLength", js.undefined)
     
     @scala.inline
-    def deleteConnectorType: Self = this.set("connectorType", js.undefined)
+    def setEndArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = StObject.set(x, "endArrowheadStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = this.set("endArrowheadLength", value.asInstanceOf[js.Any])
+    def setEndArrowheadStyleUndefined: Self = StObject.set(x, "endArrowheadStyle", js.undefined)
     
     @scala.inline
-    def deleteEndArrowheadLength: Self = this.set("endArrowheadLength", js.undefined)
+    def setEndArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = StObject.set(x, "endArrowheadWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = this.set("endArrowheadStyle", value.asInstanceOf[js.Any])
+    def setEndArrowheadWidthUndefined: Self = StObject.set(x, "endArrowheadWidth", js.undefined)
     
     @scala.inline
-    def deleteEndArrowheadStyle: Self = this.set("endArrowheadStyle", js.undefined)
+    def setEndConnectedSite(value: Double): Self = StObject.set(x, "endConnectedSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = this.set("endArrowheadWidth", value.asInstanceOf[js.Any])
+    def setEndConnectedSiteUndefined: Self = StObject.set(x, "endConnectedSite", js.undefined)
     
     @scala.inline
-    def deleteEndArrowheadWidth: Self = this.set("endArrowheadWidth", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndConnectedSite(value: Double): Self = this.set("endConnectedSite", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEndConnectedSite: Self = this.set("endConnectedSite", js.undefined)
+    def setIsBeginConnected(value: Boolean): Self = StObject.set(x, "isBeginConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsBeginConnectedUndefined: Self = StObject.set(x, "isBeginConnected", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsEndConnected(value: Boolean): Self = StObject.set(x, "isEndConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBeginConnected(value: Boolean): Self = this.set("isBeginConnected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsBeginConnected: Self = this.set("isBeginConnected", js.undefined)
-    
-    @scala.inline
-    def setIsEndConnected(value: Boolean): Self = this.set("isEndConnected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsEndConnected: Self = this.set("isEndConnected", js.undefined)
+    def setIsEndConnectedUndefined: Self = StObject.set(x, "isEndConnected", js.undefined)
   }
 }

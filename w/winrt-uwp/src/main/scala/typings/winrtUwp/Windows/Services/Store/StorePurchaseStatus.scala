@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StorePurchaseStatus extends js.Object
+sealed trait StorePurchaseStatus extends StObject
 /** Defines values that represent the status of a request to purchase an app or add-on. */
 @JSGlobal("Windows.Services.Store.StorePurchaseStatus")
 @js.native
-object StorePurchaseStatus extends js.Object {
+object StorePurchaseStatus extends StObject {
   
   /** The current user has already purchased the specified app or add-on. */
   @js.native

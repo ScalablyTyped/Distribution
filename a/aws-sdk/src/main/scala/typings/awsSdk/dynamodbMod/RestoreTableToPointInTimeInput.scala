@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreTableToPointInTimeInput extends js.Object {
+trait RestoreTableToPointInTimeInput extends StObject {
   
   /**
     * The billing mode of the restored table.
@@ -66,81 +67,69 @@ object RestoreTableToPointInTimeInput {
   }
   
   @scala.inline
-  implicit class RestoreTableToPointInTimeInputOps[Self <: RestoreTableToPointInTimeInput] (val x: Self) extends AnyVal {
+  implicit class RestoreTableToPointInTimeInputMutableBuilder[Self <: RestoreTableToPointInTimeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingModeOverrideUndefined: Self = StObject.set(x, "BillingModeOverride", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetTableName(value: TableName): Self = this.set("TargetTableName", value.asInstanceOf[js.Any])
+    def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
     
     @scala.inline
-    def setBillingModeOverride(value: BillingMode): Self = this.set("BillingModeOverride", value.asInstanceOf[js.Any])
+    def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
     
     @scala.inline
-    def deleteBillingModeOverride: Self = this.set("BillingModeOverride", js.undefined)
+    def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = this.set("GlobalSecondaryIndexOverride", js.Array(value :_*))
+    def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
     
     @scala.inline
-    def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = this.set("GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+    def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
     
     @scala.inline
-    def deleteGlobalSecondaryIndexOverride: Self = this.set("GlobalSecondaryIndexOverride", js.undefined)
+    def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = this.set("LocalSecondaryIndexOverride", js.Array(value :_*))
+    def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
     
     @scala.inline
-    def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = this.set("LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+    def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalSecondaryIndexOverride: Self = this.set("LocalSecondaryIndexOverride", js.undefined)
+    def setRestoreDateTimeUndefined: Self = StObject.set(x, "RestoreDateTime", js.undefined)
     
     @scala.inline
-    def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    def setSSESpecificationOverride(value: SSESpecification): Self = StObject.set(x, "SSESpecificationOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisionedThroughputOverride: Self = this.set("ProvisionedThroughputOverride", js.undefined)
+    def setSSESpecificationOverrideUndefined: Self = StObject.set(x, "SSESpecificationOverride", js.undefined)
     
     @scala.inline
-    def setRestoreDateTime(value: Date): Self = this.set("RestoreDateTime", value.asInstanceOf[js.Any])
+    def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestoreDateTime: Self = this.set("RestoreDateTime", js.undefined)
+    def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
     
     @scala.inline
-    def setSSESpecificationOverride(value: SSESpecification): Self = this.set("SSESpecificationOverride", value.asInstanceOf[js.Any])
+    def setSourceTableName(value: TableName): Self = StObject.set(x, "SourceTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSSESpecificationOverride: Self = this.set("SSESpecificationOverride", js.undefined)
+    def setSourceTableNameUndefined: Self = StObject.set(x, "SourceTableName", js.undefined)
     
     @scala.inline
-    def setSourceTableArn(value: TableArn): Self = this.set("SourceTableArn", value.asInstanceOf[js.Any])
+    def setTargetTableName(value: TableName): Self = StObject.set(x, "TargetTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceTableArn: Self = this.set("SourceTableArn", js.undefined)
+    def setUseLatestRestorableTime(value: BooleanObject): Self = StObject.set(x, "UseLatestRestorableTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTableName(value: TableName): Self = this.set("SourceTableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTableName: Self = this.set("SourceTableName", js.undefined)
-    
-    @scala.inline
-    def setUseLatestRestorableTime(value: BooleanObject): Self = this.set("UseLatestRestorableTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLatestRestorableTime: Self = this.set("UseLatestRestorableTime", js.undefined)
+    def setUseLatestRestorableTimeUndefined: Self = StObject.set(x, "UseLatestRestorableTime", js.undefined)
   }
 }

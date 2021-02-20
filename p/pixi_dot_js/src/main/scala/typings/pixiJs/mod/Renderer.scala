@@ -1,6 +1,7 @@
 package typings.pixiJs.mod
 
 import typings.pixiJs.anon.BackgroundColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +24,7 @@ class Renderer ()
   extends typings.pixiJs.PIXI.Renderer {
   def this(options: BackgroundColor) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Renderer")
-@js.native
-object Renderer extends js.Object {
+object Renderer {
   
   /**
     * Adds a plugin to the renderer.
@@ -35,5 +33,8 @@ object Renderer extends js.Object {
     * @param {string} pluginName - The name of the plugin.
     * @param {Function} ctor - The constructor function or class for the plugin.
     */
+  /* static member */
+  @JSImport("pixi.js", "Renderer.registerPlugin")
+  @js.native
   def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }

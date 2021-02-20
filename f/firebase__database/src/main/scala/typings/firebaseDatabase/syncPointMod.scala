@@ -7,20 +7,19 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.operationMod.Operation
 import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.queryMod.Query
-import typings.firebaseDatabase.referenceMod.ReferenceConstructor
 import typings.firebaseDatabase.viewMod.View
 import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/SyncPoint", JSImport.Namespace)
-@js.native
-object syncPointMod extends js.Object {
+object syncPointMod {
   
+  @JSImport("@firebase/database/dist/src/core/SyncPoint", "SyncPoint")
   @js.native
-  class SyncPoint () extends js.Object {
+  class SyncPoint () extends StObject {
     
     def addEventRegistration(
       query: Query,
@@ -91,12 +90,5 @@ object syncPointMod extends js.Object {
       * NOTE: This list will be quite small (usually 1, but perhaps 2 or 3; any more is an odd use case).
       */
     val views: js.Any = js.native
-  }
-  /* static members */
-  @js.native
-  object SyncPoint extends js.Object {
-    
-    def __referenceConstructor: ReferenceConstructor = js.native
-    def __referenceConstructor_=(`val`: ReferenceConstructor): Unit = js.native
   }
 }

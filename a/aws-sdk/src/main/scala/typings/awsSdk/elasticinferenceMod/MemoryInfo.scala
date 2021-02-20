@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticinferenceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryInfo extends js.Object {
+trait MemoryInfo extends StObject {
   
   /**
     *  The size in mebibytes of the Elastic Inference Accelerator type. 
@@ -21,24 +22,12 @@ object MemoryInfo {
   }
   
   @scala.inline
-  implicit class MemoryInfoOps[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSizeInMiB(value: Integer): Self = StObject.set(x, "sizeInMiB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSizeInMiB(value: Integer): Self = this.set("sizeInMiB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeInMiB: Self = this.set("sizeInMiB", js.undefined)
+    def setSizeInMiBUndefined: Self = StObject.set(x, "sizeInMiB", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPropertiesParameterType extends js.Object {
+trait GetPropertiesParameterType extends StObject {
   
   /**
     * If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.
@@ -38,39 +39,27 @@ object GetPropertiesParameterType {
   }
   
   @scala.inline
-  implicit class GetPropertiesParameterTypeOps[Self <: GetPropertiesParameterType] (val x: Self) extends AnyVal {
+  implicit class GetPropertiesParameterTypeMutableBuilder[Self <: GetPropertiesParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessorPropertiesOnly(value: Boolean): Self = StObject.set(x, "accessorPropertiesOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessorPropertiesOnlyUndefined: Self = StObject.set(x, "accessorPropertiesOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
     @scala.inline
-    def setAccessorPropertiesOnly(value: Boolean): Self = this.set("accessorPropertiesOnly", value.asInstanceOf[js.Any])
+    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessorPropertiesOnly: Self = this.set("accessorPropertiesOnly", js.undefined)
+    def setOwnProperties(value: Boolean): Self = StObject.set(x, "ownProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratePreview(value: Boolean): Self = this.set("generatePreview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneratePreview: Self = this.set("generatePreview", js.undefined)
-    
-    @scala.inline
-    def setOwnProperties(value: Boolean): Self = this.set("ownProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnProperties: Self = this.set("ownProperties", js.undefined)
+    def setOwnPropertiesUndefined: Self = StObject.set(x, "ownProperties", js.undefined)
   }
 }

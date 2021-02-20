@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,111 +44,99 @@ object List {
   }
   
   @scala.inline
-  implicit class ListOps[Self <: List] (val x: Self) extends AnyVal {
+  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: NullableOption[js.Array[ColumnDefinition]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsNull: Self = StObject.set(x, "columns", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def setColumnsVarargs(value: ColumnDefinition*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumns(value: NullableOption[js.Array[ColumnDefinition]]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setContentTypes(value: NullableOption[js.Array[ContentType]]): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setContentTypesNull: Self = StObject.set(x, "contentTypes", null)
     
     @scala.inline
-    def setColumnsNull: Self = this.set("columns", null)
+    def setContentTypesUndefined: Self = StObject.set(x, "contentTypes", js.undefined)
     
     @scala.inline
-    def setContentTypesVarargs(value: ContentType*): Self = this.set("contentTypes", js.Array(value :_*))
+    def setContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "contentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setContentTypes(value: NullableOption[js.Array[ContentType]]): Self = this.set("contentTypes", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentTypes: Self = this.set("contentTypes", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setContentTypesNull: Self = this.set("contentTypes", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDrive(value: NullableOption[Drive]): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDriveNull: Self = StObject.set(x, "drive", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     @scala.inline
-    def setDrive(value: NullableOption[Drive]): Self = this.set("drive", value.asInstanceOf[js.Any])
+    def setItems(value: NullableOption[js.Array[ListItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrive: Self = this.set("drive", js.undefined)
+    def setItemsNull: Self = StObject.set(x, "items", null)
     
     @scala.inline
-    def setDriveNull: Self = this.set("drive", null)
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setItemsVarargs(value: ListItem*): Self = this.set("items", js.Array(value :_*))
+    def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: NullableOption[js.Array[ListItem]]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setList(value: NullableOption[ListInfo]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setListNull: Self = StObject.set(x, "list", null)
     
     @scala.inline
-    def setItemsNull: Self = this.set("items", null)
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def setList(value: NullableOption[ListInfo]): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setSharepointIds(value: NullableOption[SharepointIds]): Self = StObject.set(x, "sharepointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setSharepointIdsNull: Self = StObject.set(x, "sharepointIds", null)
     
     @scala.inline
-    def setListNull: Self = this.set("list", null)
+    def setSharepointIdsUndefined: Self = StObject.set(x, "sharepointIds", js.undefined)
     
     @scala.inline
-    def setSharepointIds(value: NullableOption[SharepointIds]): Self = this.set("sharepointIds", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: NullableOption[js.Array[Subscription]]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharepointIds: Self = this.set("sharepointIds", js.undefined)
+    def setSubscriptionsNull: Self = StObject.set(x, "subscriptions", null)
     
     @scala.inline
-    def setSharepointIdsNull: Self = this.set("sharepointIds", null)
+    def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
     @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = this.set("subscriptions", js.Array(value :_*))
+    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
     
     @scala.inline
-    def setSubscriptions(value: NullableOption[js.Array[Subscription]]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
+    def setSystem(value: NullableOption[SystemFacet]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubscriptions: Self = this.set("subscriptions", js.undefined)
+    def setSystemNull: Self = StObject.set(x, "system", null)
     
     @scala.inline
-    def setSubscriptionsNull: Self = this.set("subscriptions", null)
-    
-    @scala.inline
-    def setSystem(value: NullableOption[SystemFacet]): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
-    
-    @scala.inline
-    def setSystemNull: Self = this.set("system", null)
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
   }
 }

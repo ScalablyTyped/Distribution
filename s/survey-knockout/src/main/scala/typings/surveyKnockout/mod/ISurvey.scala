@@ -2,6 +2,7 @@ package typings.surveyKnockout.mod
 
 import typings.std.File
 import typings.surveyKnockout.anon.CanAddRow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -245,232 +246,220 @@ object ISurvey {
   }
   
   @scala.inline
-  implicit class ISurveyOps[Self <: ISurvey] (val x: Self) extends AnyVal {
+  implicit class ISurveyMutableBuilder[Self <: ISurvey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterRenderPage(value: js.Any => js.Any): Self = StObject.set(x, "afterRenderPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRenderPanel(value: (IElement, js.Any) => js.Any): Self = StObject.set(x, "afterRenderPanel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterRenderQuestion(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "afterRenderQuestion", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterRenderPage(value: js.Any => js.Any): Self = this.set("afterRenderPage", js.Any.fromFunction1(value))
+    def setAfterRenderQuestionInput(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "afterRenderQuestionInput", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterRenderPanel(value: (IElement, js.Any) => js.Any): Self = this.set("afterRenderPanel", js.Any.fromFunction2(value))
+    def setAreEmptyElementsHidden(value: Boolean): Self = StObject.set(x, "areEmptyElementsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterRenderQuestion(value: (IQuestion, js.Any) => js.Any): Self = this.set("afterRenderQuestion", js.Any.fromFunction2(value))
+    def setAreInvisibleElementsShowing(value: Boolean): Self = StObject.set(x, "areInvisibleElementsShowing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterRenderQuestionInput(value: (IQuestion, js.Any) => js.Any): Self = this.set("afterRenderQuestionInput", js.Any.fromFunction2(value))
+    def setBeforeSettingQuestionErrors(value: (IQuestion, js.Array[SurveyError]) => Unit): Self = StObject.set(x, "beforeSettingQuestionErrors", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAreEmptyElementsHidden(value: Boolean): Self = this.set("areEmptyElementsHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAreInvisibleElementsShowing(value: Boolean): Self = this.set("areInvisibleElementsShowing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBeforeSettingQuestionErrors(value: (IQuestion, js.Array[SurveyError]) => Unit): Self = this.set("beforeSettingQuestionErrors", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCancelPreviewByPage(value: IPanel => js.Any): Self = this.set("cancelPreviewByPage", js.Any.fromFunction1(value))
+    def setCancelPreviewByPage(value: IPanel => js.Any): Self = StObject.set(x, "cancelPreviewByPage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClearFiles(
       value: (IQuestion, String, js.Any, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any
-    ): Self = this.set("clearFiles", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "clearFiles", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setClearValueOnDisableItems(value: Boolean): Self = this.set("clearValueOnDisableItems", value.asInstanceOf[js.Any])
+    def setClearValueOnDisableItems(value: Boolean): Self = StObject.set(x, "clearValueOnDisableItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPage(value: IPage): Self = this.set("currentPage", value.asInstanceOf[js.Any])
+    def setCurrentPage(value: IPage): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadFile(value: (String, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any): Self = this.set("downloadFile", js.Any.fromFunction3(value))
+    def setDownloadFile(value: (String, String, js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any): Self = StObject.set(x, "downloadFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDragAndDropAllow(value: js.Any => Boolean): Self = this.set("dragAndDropAllow", js.Any.fromFunction1(value))
+    def setDragAndDropAllow(value: js.Any => Boolean): Self = StObject.set(x, "dragAndDropAllow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDynamicPanelAdded(value: IQuestion => js.Any): Self = this.set("dynamicPanelAdded", js.Any.fromFunction1(value))
+    def setDynamicPanelAdded(value: IQuestion => js.Any): Self = StObject.set(x, "dynamicPanelAdded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDynamicPanelItemValueChanged(value: (IQuestion, js.Any) => js.Any): Self = this.set("dynamicPanelItemValueChanged", js.Any.fromFunction2(value))
+    def setDynamicPanelItemValueChanged(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "dynamicPanelItemValueChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDynamicPanelRemoved(value: (IQuestion, Double, IPanel) => js.Any): Self = this.set("dynamicPanelRemoved", js.Any.fromFunction3(value))
+    def setDynamicPanelRemoved(value: (IQuestion, Double, IPanel) => js.Any): Self = StObject.set(x, "dynamicPanelRemoved", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetCss(value: () => js.Any): Self = this.set("getCss", js.Any.fromFunction0(value))
+    def setGetCss(value: () => js.Any): Self = StObject.set(x, "getCss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetQuestionByValueNameFromArray(value: (String, String, Double) => IQuestion): Self = this.set("getQuestionByValueNameFromArray", js.Any.fromFunction3(value))
+    def setGetQuestionByValueNameFromArray(value: (String, String, Double) => IQuestion): Self = StObject.set(x, "getQuestionByValueNameFromArray", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetSurveyMarkdownHtml(value: (Base, String) => String): Self = this.set("getSurveyMarkdownHtml", js.Any.fromFunction2(value))
+    def setGetSurveyMarkdownHtml(value: (Base, String) => String): Self = StObject.set(x, "getSurveyMarkdownHtml", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetUpdatedQuestionNo(value: (IQuestion, String) => String): Self = this.set("getUpdatedQuestionNo", js.Any.fromFunction2(value))
+    def setGetUpdatedQuestionNo(value: (IQuestion, String) => String): Self = StObject.set(x, "getUpdatedQuestionNo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetUpdatedQuestionTitle(value: (IQuestion, String) => String): Self = this.set("getUpdatedQuestionTitle", js.Any.fromFunction2(value))
+    def setGetUpdatedQuestionTitle(value: (IQuestion, String) => String): Self = StObject.set(x, "getUpdatedQuestionTitle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasVisibleQuestionByValueName(value: String => Boolean): Self = this.set("hasVisibleQuestionByValueName", js.Any.fromFunction1(value))
+    def setHasVisibleQuestionByValueName(value: String => Boolean): Self = StObject.set(x, "hasVisibleQuestionByValueName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsClearValueOnHidden(value: Boolean): Self = this.set("isClearValueOnHidden", value.asInstanceOf[js.Any])
+    def setIsClearValueOnHidden(value: Boolean): Self = StObject.set(x, "isClearValueOnHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDesignMode(value: Boolean): Self = this.set("isDesignMode", value.asInstanceOf[js.Any])
+    def setIsDesignMode(value: Boolean): Self = StObject.set(x, "isDesignMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisplayMode(value: Boolean): Self = this.set("isDisplayMode", value.asInstanceOf[js.Any])
+    def setIsDisplayMode(value: Boolean): Self = StObject.set(x, "isDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoadingFromJson(value: Boolean): Self = this.set("isLoadingFromJson", value.asInstanceOf[js.Any])
+    def setIsLoadingFromJson(value: Boolean): Self = StObject.set(x, "isLoadingFromJson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPageStarted(value: IPage => Boolean): Self = this.set("isPageStarted", js.Any.fromFunction1(value))
+    def setIsPageStarted(value: IPage => Boolean): Self = StObject.set(x, "isPageStarted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsUpdateValueTextOnTyping(value: Boolean): Self = this.set("isUpdateValueTextOnTyping", value.asInstanceOf[js.Any])
+    def setIsUpdateValueTextOnTyping(value: Boolean): Self = StObject.set(x, "isUpdateValueTextOnTyping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrixAfterCellRender(value: (IQuestion, js.Any) => js.Any): Self = this.set("matrixAfterCellRender", js.Any.fromFunction2(value))
+    def setMatrixAfterCellRender(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "matrixAfterCellRender", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMatrixAllowRemoveRow(value: (IQuestion, Double, js.Any) => Boolean): Self = this.set("matrixAllowRemoveRow", js.Any.fromFunction3(value))
+    def setMatrixAllowRemoveRow(value: (IQuestion, Double, js.Any) => Boolean): Self = StObject.set(x, "matrixAllowRemoveRow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMatrixBeforeRowAdded(value: CanAddRow => js.Any): Self = this.set("matrixBeforeRowAdded", js.Any.fromFunction1(value))
+    def setMatrixBeforeRowAdded(value: CanAddRow => js.Any): Self = StObject.set(x, "matrixBeforeRowAdded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatrixCellCreated(value: (IQuestion, js.Any) => js.Any): Self = this.set("matrixCellCreated", js.Any.fromFunction2(value))
+    def setMatrixCellCreated(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "matrixCellCreated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMatrixCellValidate(value: (IQuestion, js.Any) => SurveyError): Self = this.set("matrixCellValidate", js.Any.fromFunction2(value))
+    def setMatrixCellValidate(value: (IQuestion, js.Any) => SurveyError): Self = StObject.set(x, "matrixCellValidate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMatrixCellValueChanged(value: (IQuestion, js.Any) => js.Any): Self = this.set("matrixCellValueChanged", js.Any.fromFunction2(value))
+    def setMatrixCellValueChanged(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "matrixCellValueChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMatrixCellValueChanging(value: (IQuestion, js.Any) => js.Any): Self = this.set("matrixCellValueChanging", js.Any.fromFunction2(value))
+    def setMatrixCellValueChanging(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "matrixCellValueChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMatrixRowAdded(value: (IQuestion, js.Any) => js.Any): Self = this.set("matrixRowAdded", js.Any.fromFunction2(value))
+    def setMatrixRowAdded(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "matrixRowAdded", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMatrixRowRemoved(value: (IQuestion, Double, js.Any) => js.Any): Self = this.set("matrixRowRemoved", js.Any.fromFunction3(value))
+    def setMatrixRowRemoved(value: (IQuestion, Double, js.Any) => js.Any): Self = StObject.set(x, "matrixRowRemoved", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMaxOthersLength(value: Double): Self = this.set("maxOthersLength", value.asInstanceOf[js.Any])
+    def setMaxOthersLength(value: Double): Self = StObject.set(x, "maxOthersLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTextLength(value: Double): Self = this.set("maxTextLength", value.asInstanceOf[js.Any])
+    def setMaxTextLength(value: Double): Self = StObject.set(x, "maxTextLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageVisibilityChanged(value: (IPage, Boolean) => js.Any): Self = this.set("pageVisibilityChanged", js.Any.fromFunction2(value))
+    def setPageVisibilityChanged(value: (IPage, Boolean) => js.Any): Self = StObject.set(x, "pageVisibilityChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPagesVarargs(value: IPage*): Self = this.set("pages", js.Array(value :_*))
+    def setPages(value: js.Array[IPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: js.Array[IPage]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setPagesVarargs(value: IPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def setPanelAdded(value: (IElement, Double, js.Any, js.Any) => js.Any): Self = this.set("panelAdded", js.Any.fromFunction4(value))
+    def setPanelAdded(value: (IElement, Double, js.Any, js.Any) => js.Any): Self = StObject.set(x, "panelAdded", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setPanelRemoved(value: IElement => js.Any): Self = this.set("panelRemoved", js.Any.fromFunction1(value))
+    def setPanelRemoved(value: IElement => js.Any): Self = StObject.set(x, "panelRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPanelVisibilityChanged(value: (IPanel, Boolean) => js.Any): Self = this.set("panelVisibilityChanged", js.Any.fromFunction2(value))
+    def setPanelVisibilityChanged(value: (IPanel, Boolean) => js.Any): Self = StObject.set(x, "panelVisibilityChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProcessHtml(value: String => String): Self = this.set("processHtml", js.Any.fromFunction1(value))
+    def setProcessHtml(value: String => String): Self = StObject.set(x, "processHtml", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuestionAdded(value: (IQuestion, Double, js.Any, js.Any) => js.Any): Self = this.set("questionAdded", js.Any.fromFunction4(value))
+    def setQuestionAdded(value: (IQuestion, Double, js.Any, js.Any) => js.Any): Self = StObject.set(x, "questionAdded", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setQuestionCountByValueName(value: String => Double): Self = this.set("questionCountByValueName", js.Any.fromFunction1(value))
+    def setQuestionCountByValueName(value: String => Double): Self = StObject.set(x, "questionCountByValueName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuestionCreated(value: IQuestion => js.Any): Self = this.set("questionCreated", js.Any.fromFunction1(value))
+    def setQuestionCreated(value: IQuestion => js.Any): Self = StObject.set(x, "questionCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuestionDescriptionLocation(value: String): Self = this.set("questionDescriptionLocation", value.asInstanceOf[js.Any])
+    def setQuestionDescriptionLocation(value: String): Self = StObject.set(x, "questionDescriptionLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionErrorLocation(value: String): Self = this.set("questionErrorLocation", value.asInstanceOf[js.Any])
+    def setQuestionErrorLocation(value: String): Self = StObject.set(x, "questionErrorLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionRemoved(value: IQuestion => js.Any): Self = this.set("questionRemoved", js.Any.fromFunction1(value))
+    def setQuestionRemoved(value: IQuestion => js.Any): Self = StObject.set(x, "questionRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQuestionRenamed(value: (IQuestion, String, String) => js.Any): Self = this.set("questionRenamed", js.Any.fromFunction3(value))
+    def setQuestionRenamed(value: (IQuestion, String, String) => js.Any): Self = StObject.set(x, "questionRenamed", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setQuestionStartIndex(value: String): Self = this.set("questionStartIndex", value.asInstanceOf[js.Any])
+    def setQuestionStartIndex(value: String): Self = StObject.set(x, "questionStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionTitleLocation(value: String): Self = this.set("questionTitleLocation", value.asInstanceOf[js.Any])
+    def setQuestionTitleLocation(value: String): Self = StObject.set(x, "questionTitleLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionTitlePattern(value: String): Self = this.set("questionTitlePattern", value.asInstanceOf[js.Any])
+    def setQuestionTitlePattern(value: String): Self = StObject.set(x, "questionTitlePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionVisibilityChanged(value: (IQuestion, Boolean) => js.Any): Self = this.set("questionVisibilityChanged", js.Any.fromFunction2(value))
+    def setQuestionVisibilityChanged(value: (IQuestion, Boolean) => js.Any): Self = StObject.set(x, "questionVisibilityChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQuestionsOrder(value: String): Self = this.set("questionsOrder", value.asInstanceOf[js.Any])
+    def setQuestionsOrder(value: String): Self = StObject.set(x, "questionsOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredText(value: String): Self = this.set("requiredText", value.asInstanceOf[js.Any])
+    def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunExpression(value: String => js.Any): Self = this.set("runExpression", js.Any.fromFunction1(value))
+    def setRunExpression(value: String => js.Any): Self = StObject.set(x, "runExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollElementToTop(value: (ISurveyElement, IQuestion, IPage, String) => js.Any): Self = this.set("scrollElementToTop", js.Any.fromFunction4(value))
+    def setScrollElementToTop(value: (ISurveyElement, IQuestion, IPage, String) => js.Any): Self = StObject.set(x, "scrollElementToTop", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreOthersAsComment(value: Boolean): Self = this.set("storeOthersAsComment", value.asInstanceOf[js.Any])
+    def setStoreOthersAsComment(value: Boolean): Self = StObject.set(x, "storeOthersAsComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateChoicesFromServer(value: (IQuestion, js.Array[_], js.Any) => js.Array[_]): Self = this.set("updateChoicesFromServer", js.Any.fromFunction3(value))
+    def setUpdateChoicesFromServer(value: (IQuestion, js.Array[_], js.Any) => js.Array[_]): Self = StObject.set(x, "updateChoicesFromServer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdatePageCssClasses(value: (IPanel, js.Any) => js.Any): Self = this.set("updatePageCssClasses", js.Any.fromFunction2(value))
+    def setUpdatePageCssClasses(value: (IPanel, js.Any) => js.Any): Self = StObject.set(x, "updatePageCssClasses", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdatePanelCssClasses(value: (IPanel, js.Any) => js.Any): Self = this.set("updatePanelCssClasses", js.Any.fromFunction2(value))
+    def setUpdatePanelCssClasses(value: (IPanel, js.Any) => js.Any): Self = StObject.set(x, "updatePanelCssClasses", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateQuestionCssClasses(value: (IQuestion, js.Any) => js.Any): Self = this.set("updateQuestionCssClasses", js.Any.fromFunction2(value))
+    def setUpdateQuestionCssClasses(value: (IQuestion, js.Any) => js.Any): Self = StObject.set(x, "updateQuestionCssClasses", js.Any.fromFunction2(value))
     
     @scala.inline
     def setUploadFiles(
       value: (IQuestion, String, js.Array[File], js.Function2[/* status */ String, /* data */ js.Any, _]) => js.Any
-    ): Self = this.set("uploadFiles", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "uploadFiles", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setValidatePanel(value: IPanel => SurveyError): Self = this.set("validatePanel", js.Any.fromFunction1(value))
+    def setValidatePanel(value: IPanel => SurveyError): Self = StObject.set(x, "validatePanel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValidateQuestion(value: IQuestion => SurveyError): Self = this.set("validateQuestion", js.Any.fromFunction1(value))
+    def setValidateQuestion(value: IQuestion => SurveyError): Self = StObject.set(x, "validateQuestion", js.Any.fromFunction1(value))
   }
 }

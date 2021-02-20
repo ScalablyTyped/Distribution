@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,75 +80,63 @@ object WebMapProperties {
   }
   
   @scala.inline
-  implicit class WebMapPropertiesOps[Self <: WebMapProperties] (val x: Self) extends AnyVal {
+  implicit class WebMapPropertiesMutableBuilder[Self <: WebMapProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationProperties(value: ApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationPropertiesUndefined: Self = StObject.set(x, "applicationProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthoringApp(value: String): Self = StObject.set(x, "authoringApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationProperties(value: ApplicationPropertiesProperties): Self = this.set("applicationProperties", value.asInstanceOf[js.Any])
+    def setAuthoringAppUndefined: Self = StObject.set(x, "authoringApp", js.undefined)
     
     @scala.inline
-    def deleteApplicationProperties: Self = this.set("applicationProperties", js.undefined)
+    def setAuthoringAppVersion(value: String): Self = StObject.set(x, "authoringAppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoringApp(value: String): Self = this.set("authoringApp", value.asInstanceOf[js.Any])
+    def setAuthoringAppVersionUndefined: Self = StObject.set(x, "authoringAppVersion", js.undefined)
     
     @scala.inline
-    def deleteAuthoringApp: Self = this.set("authoringApp", js.undefined)
+    def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoringAppVersion(value: String): Self = this.set("authoringAppVersion", value.asInstanceOf[js.Any])
+    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
     @scala.inline
-    def deleteAuthoringAppVersion: Self = this.set("authoringAppVersion", js.undefined)
+    def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
     @scala.inline
-    def setBookmarksVarargs(value: BookmarkProperties*): Self = this.set("bookmarks", js.Array(value :_*))
+    def setInitialViewProperties(value: InitialViewPropertiesProperties): Self = StObject.set(x, "initialViewProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = this.set("bookmarks", value.asInstanceOf[js.Any])
+    def setInitialViewPropertiesUndefined: Self = StObject.set(x, "initialViewProperties", js.undefined)
     
     @scala.inline
-    def deleteBookmarks: Self = this.set("bookmarks", js.undefined)
+    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialViewProperties(value: InitialViewPropertiesProperties): Self = this.set("initialViewProperties", value.asInstanceOf[js.Any])
+    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
     @scala.inline
-    def deleteInitialViewProperties: Self = this.set("initialViewProperties", js.undefined)
+    def setPresentation(value: js.Any): Self = StObject.set(x, "presentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = this.set("portalItem", value.asInstanceOf[js.Any])
+    def setPresentationUndefined: Self = StObject.set(x, "presentation", js.undefined)
     
     @scala.inline
-    def deletePortalItem: Self = this.set("portalItem", js.undefined)
+    def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentation(value: js.Any): Self = this.set("presentation", value.asInstanceOf[js.Any])
+    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
     @scala.inline
-    def deletePresentation: Self = this.set("presentation", js.undefined)
+    def setWidgets(value: Widgets): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnailUrl(value: String): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
-    
-    @scala.inline
-    def setWidgets(value: Widgets): Self = this.set("widgets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidgets: Self = this.set("widgets", js.undefined)
+    def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
   }
 }

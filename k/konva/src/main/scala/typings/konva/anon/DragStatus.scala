@@ -6,12 +6,13 @@ import typings.konva.konvaStrings.stopped
 import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import typings.konva.typesMod.Vector2d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragStatus extends js.Object {
+trait DragStatus extends StObject {
   
   var dragStatus: stopped | ready | dragging = js.native
   
@@ -37,36 +38,24 @@ object DragStatus {
   }
   
   @scala.inline
-  implicit class DragStatusOps[Self <: DragStatus] (val x: Self) extends AnyVal {
+  implicit class DragStatusMutableBuilder[Self <: DragStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragStatus(value: stopped | ready | dragging): Self = StObject.set(x, "dragStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode(value: Node[NodeConfig]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: Vector2d): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStatus(value: stopped | ready | dragging): Self = this.set("dragStatus", value.asInstanceOf[js.Any])
+    def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: Node[NodeConfig]): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
     
     @scala.inline
-    def setOffset(value: Vector2d): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPointerPos(value: Vector2d): Self = this.set("startPointerPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointerId(value: Double): Self = this.set("pointerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointerId: Self = this.set("pointerId", js.undefined)
+    def setStartPointerPos(value: Vector2d): Self = StObject.set(x, "startPointerPos", value.asInstanceOf[js.Any])
   }
 }

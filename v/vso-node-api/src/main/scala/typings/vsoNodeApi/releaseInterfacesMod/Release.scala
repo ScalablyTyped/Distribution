@@ -3,12 +3,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Release extends js.Object {
+trait Release extends StObject {
   
   /**
     * Gets links to access the release.
@@ -167,108 +168,96 @@ object Release {
   }
   
   @scala.inline
-  implicit class ReleaseOps[Self <: Release] (val x: Self) extends AnyVal {
+  implicit class ReleaseMutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactsVarargs(value: Artifact*): Self = this.set("artifacts", js.Array(value :_*))
+    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: js.Array[Artifact]): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setDefinitionSnapshotRevision(value: Double): Self = StObject.set(x, "definitionSnapshotRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: IdentityRef): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setEnvironments(value: js.Array[ReleaseEnvironment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setEnvironmentsVarargs(value: ReleaseEnvironment*): Self = StObject.set(x, "environments", js.Array(value :_*))
     
     @scala.inline
-    def setDefinitionSnapshotRevision(value: Double): Self = this.set("definitionSnapshotRevision", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setKeepForever(value: Boolean): Self = StObject.set(x, "keepForever", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentsVarargs(value: ReleaseEnvironment*): Self = this.set("environments", js.Array(value :_*))
+    def setLogsContainerUrl(value: String): Self = StObject.set(x, "logsContainerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: js.Array[ReleaseEnvironment]): Self = this.set("environments", value.asInstanceOf[js.Any])
+    def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepForever(value: Boolean): Self = this.set("keepForever", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogsContainerUrl(value: String): Self = this.set("logsContainerUrl", value.asInstanceOf[js.Any])
+    def setPoolName(value: String): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedBy(value: IdentityRef): Self = this.set("modifiedBy", value.asInstanceOf[js.Any])
+    def setProjectReference(value: ProjectReference): Self = StObject.set(x, "projectReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedOn(value: Date): Self = this.set("modifiedOn", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReason(value: ReleaseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolName(value: String): Self = this.set("poolName", value.asInstanceOf[js.Any])
+    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectReference(value: ProjectReference): Self = this.set("projectReference", value.asInstanceOf[js.Any])
+    def setReleaseNameFormat(value: String): Self = StObject.set(x, "releaseNameFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setStatus(value: ReleaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: ReleaseReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = this.set("releaseDefinition", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setReleaseNameFormat(value: String): Self = this.set("releaseNameFormat", value.asInstanceOf[js.Any])
+    def setTriggeringArtifactAlias(value: String): Self = StObject.set(x, "triggeringArtifactAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ReleaseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setVariableGroups(value: js.Array[VariableGroup]): Self = StObject.set(x, "variableGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setVariableGroupsVarargs(value: VariableGroup*): Self = StObject.set(x, "variableGroups", js.Array(value :_*))
     
     @scala.inline
-    def setTriggeringArtifactAlias(value: String): Self = this.set("triggeringArtifactAlias", value.asInstanceOf[js.Any])
+    def setVariables(value: StringDictionary[ConfigurationVariableValue]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableGroupsVarargs(value: VariableGroup*): Self = this.set("variableGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariableGroups(value: js.Array[VariableGroup]): Self = this.set("variableGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: StringDictionary[ConfigurationVariableValue]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

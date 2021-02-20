@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setType(fieldType.CURRENCY_USD);
   */
 @js.native
-trait CommunityConnector extends js.Object {
+trait CommunityConnector extends StObject {
   
   var AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any = js.native
   
@@ -72,61 +73,49 @@ object CommunityConnector {
   }
   
   @scala.inline
-  implicit class CommunityConnectorOps[Self <: CommunityConnector] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CommunityConnectorMutableBuilder[Self <: CommunityConnector] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAggregationType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any
-    ): Self = this.set("AggregationType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "AggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any): Self = this.set("AuthType", value.asInstanceOf[js.Any])
+    def setAuthType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any): Self = StObject.set(x, "AuthType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBigQueryParameterType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ js.Any
-    ): Self = this.set("BigQueryParameterType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "BigQueryParameterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any): Self = this.set("FieldType", value.asInstanceOf[js.Any])
+    def setFieldType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetConfig(value: () => Config): Self = this.set("getConfig", js.Any.fromFunction0(value))
+    def setGetConfig(value: () => Config): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFields(value: () => Fields): Self = this.set("getFields", js.Any.fromFunction0(value))
+    def setGetFields(value: () => Fields): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewAuthTypeResponse(value: () => GetAuthTypeResponse): Self = this.set("newAuthTypeResponse", js.Any.fromFunction0(value))
+    def setNewAuthTypeResponse(value: () => GetAuthTypeResponse): Self = StObject.set(x, "newAuthTypeResponse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewBigQueryConfig(value: () => BigQueryConfig): Self = this.set("newBigQueryConfig", js.Any.fromFunction0(value))
+    def setNewBigQueryConfig(value: () => BigQueryConfig): Self = StObject.set(x, "newBigQueryConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewDebugError(value: () => DebugError): Self = this.set("newDebugError", js.Any.fromFunction0(value))
+    def setNewDebugError(value: () => DebugError): Self = StObject.set(x, "newDebugError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewGetDataResponse(value: () => GetDataResponse): Self = this.set("newGetDataResponse", js.Any.fromFunction0(value))
+    def setNewGetDataResponse(value: () => GetDataResponse): Self = StObject.set(x, "newGetDataResponse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewGetSchemaResponse(value: () => GetSchemaResponse): Self = this.set("newGetSchemaResponse", js.Any.fromFunction0(value))
+    def setNewGetSchemaResponse(value: () => GetSchemaResponse): Self = StObject.set(x, "newGetSchemaResponse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewSetCredentialsResponse(value: () => SetCredentialsResponse): Self = this.set("newSetCredentialsResponse", js.Any.fromFunction0(value))
+    def setNewSetCredentialsResponse(value: () => SetCredentialsResponse): Self = StObject.set(x, "newSetCredentialsResponse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewUserError(value: () => UserError): Self = this.set("newUserError", js.Any.fromFunction0(value))
+    def setNewUserError(value: () => UserError): Self = StObject.set(x, "newUserError", js.Any.fromFunction0(value))
   }
 }

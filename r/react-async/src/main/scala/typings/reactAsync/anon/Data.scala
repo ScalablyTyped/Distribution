@@ -4,12 +4,13 @@ import typings.reactAsync.reactAsyncBooleans.`false`
 import typings.reactAsync.reactAsyncBooleans.`true`
 import typings.reactAsync.reactAsyncStrings.fulfilled
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data[T] extends js.Object {
+trait Data[T] extends StObject {
   
   var data: T = js.native
   
@@ -59,54 +60,42 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinishedAt(value: Date): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFulfilled(value: `true`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIsInitial(value: `false`): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishedAt(value: Date): Self = this.set("finishedAt", value.asInstanceOf[js.Any])
+    def setIsLoading(value: `false`): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFulfilled(value: `true`): Self = this.set("isFulfilled", value.asInstanceOf[js.Any])
+    def setIsPending(value: `false`): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInitial(value: `false`): Self = this.set("isInitial", value.asInstanceOf[js.Any])
+    def setIsRejected(value: `false`): Self = StObject.set(x, "isRejected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLoading(value: `false`): Self = this.set("isLoading", value.asInstanceOf[js.Any])
+    def setIsResolved(value: `true`): Self = StObject.set(x, "isResolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPending(value: `false`): Self = this.set("isPending", value.asInstanceOf[js.Any])
+    def setIsSettled(value: `true`): Self = StObject.set(x, "isSettled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRejected(value: `false`): Self = this.set("isRejected", value.asInstanceOf[js.Any])
+    def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResolved(value: `true`): Self = this.set("isResolved", value.asInstanceOf[js.Any])
+    def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSettled(value: `true`): Self = this.set("isSettled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartedAt(value: Date): Self = this.set("startedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: fulfilled): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

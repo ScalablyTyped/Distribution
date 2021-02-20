@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupManagersScopedList extends js.Object {
+trait InstanceGroupManagersScopedList extends StObject {
   
   /** [Output Only] The list of managed instance groups that are contained in the specified project and zone. */
   var instanceGroupManagers: js.UndefOr[js.Array[InstanceGroupManager]] = js.native
@@ -23,33 +24,21 @@ object InstanceGroupManagersScopedList {
   }
   
   @scala.inline
-  implicit class InstanceGroupManagersScopedListOps[Self <: InstanceGroupManagersScopedList] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupManagersScopedListMutableBuilder[Self <: InstanceGroupManagersScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceGroupManagers(value: js.Array[InstanceGroupManager]): Self = StObject.set(x, "instanceGroupManagers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceGroupManagersUndefined: Self = StObject.set(x, "instanceGroupManagers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceGroupManagersVarargs(value: InstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceGroupManagersVarargs(value: InstanceGroupManager*): Self = this.set("instanceGroupManagers", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroupManagers(value: js.Array[InstanceGroupManager]): Self = this.set("instanceGroupManagers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceGroupManagers: Self = this.set("instanceGroupManagers", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

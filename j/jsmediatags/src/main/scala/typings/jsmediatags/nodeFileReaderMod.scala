@@ -1,12 +1,24 @@
 package typings.jsmediatags
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/NodeFileReader", JSImport.Namespace)
-@js.native
-object nodeFileReaderMod extends js.Object {
+object nodeFileReaderMod {
+  
+  @JSImport("jsmediatags/build2/NodeFileReader", JSImport.Default)
+  @js.native
+  class default protected () extends NodeFileReader {
+    def this(path: String) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("jsmediatags/build2/NodeFileReader", "default.canReadFile")
+    @js.native
+    def canReadFile(file: js.Any): Boolean = js.native
+  }
   
   @js.native
   trait NodeFileReader
@@ -15,16 +27,5 @@ object nodeFileReaderMod extends js.Object {
     var _fileData: typings.jsmediatags.chunkedFileDataMod.default = js.native
     
     var _path: String = js.native
-  }
-  
-  @js.native
-  class default protected () extends NodeFileReader {
-    def this(path: String) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def canReadFile(file: js.Any): Boolean = js.native
   }
 }

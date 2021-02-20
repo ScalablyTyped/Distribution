@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ class Decimal128 protected ()
   def this(bytes: Buffer) = this()
 }
 /* static members */
-@JSImport("mongodb", "Decimal128")
-@js.native
-object Decimal128 extends js.Object {
+object Decimal128 {
   
   /** Create a Decimal128 instance from a string representation. */
+  @JSImport("mongodb", "Decimal128.fromString")
+  @js.native
   def fromString(s: String): typings.bson.mod.Decimal128 = js.native
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOfflineProvider extends js.Object {
+trait IOfflineProvider extends StObject {
   
   /**
     * Gets a boolean indicating if scene must be saved in the database

@@ -1,6 +1,7 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * other, but not both.
   */
 @js.native
-trait SchemaAttachedDiskInitializeParams extends js.Object {
+trait SchemaAttachedDiskInitializeParams extends StObject {
   
   /**
     * An optional description. Provide this property when creating the disk.
@@ -118,90 +119,78 @@ object SchemaAttachedDiskInitializeParams {
   }
   
   @scala.inline
-  implicit class SchemaAttachedDiskInitializeParamsOps[Self <: SchemaAttachedDiskInitializeParams] (val x: Self) extends AnyVal {
+  implicit class SchemaAttachedDiskInitializeParamsMutableBuilder[Self <: SchemaAttachedDiskInitializeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskName(value: String): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDiskNameUndefined: Self = StObject.set(x, "diskName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskName(value: String): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteDiskName: Self = this.set("diskName", js.undefined)
+    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
     @scala.inline
-    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    def setReplicaZones(value: js.Array[String]): Self = StObject.set(x, "replicaZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setReplicaZonesUndefined: Self = StObject.set(x, "replicaZones", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setReplicaZonesVarargs(value: String*): Self = StObject.set(x, "replicaZones", js.Array(value :_*))
     
     @scala.inline
-    def setReplicaZonesVarargs(value: String*): Self = this.set("replicaZones", js.Array(value :_*))
+    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaZones(value: js.Array[String]): Self = this.set("replicaZones", value.asInstanceOf[js.Any])
+    def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "sourceImageEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplicaZones: Self = this.set("replicaZones", js.undefined)
+    def setSourceImageEncryptionKeyUndefined: Self = StObject.set(x, "sourceImageEncryptionKey", js.undefined)
     
     @scala.inline
-    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
     @scala.inline
-    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    def setSourceSnapshot(value: String): Self = StObject.set(x, "sourceSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+    def setSourceSnapshotEncryptionKeyUndefined: Self = StObject.set(x, "sourceSnapshotEncryptionKey", js.undefined)
     
     @scala.inline
-    def setSourceSnapshot(value: String): Self = this.set("sourceSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSnapshot: Self = this.set("sourceSnapshot", js.undefined)
-    
-    @scala.inline
-    def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSnapshotEncryptionKey: Self = this.set("sourceSnapshotEncryptionKey", js.undefined)
+    def setSourceSnapshotUndefined: Self = StObject.set(x, "sourceSnapshot", js.undefined)
   }
 }

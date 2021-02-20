@@ -1,12 +1,13 @@
 package typings.mz.anon
 
 import typings.node.BufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Persistent extends js.Object {
+trait Persistent extends StObject {
   
   var encoding: js.UndefOr[BufferEncoding | Null] = js.native
   
@@ -23,39 +24,27 @@ object Persistent {
   }
   
   @scala.inline
-  implicit class PersistentOps[Self <: Persistent] (val x: Self) extends AnyVal {
+  implicit class PersistentMutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
     @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("persistent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersistent: Self = this.set("persistent", js.undefined)
-    
-    @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

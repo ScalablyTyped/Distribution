@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionEvaluationSettings extends js.Object {
+trait SubscriptionEvaluationSettings extends StObject {
   
   /**
     * Indicates whether subscription evaluation before saving is enabled or not
@@ -36,30 +37,18 @@ object SubscriptionEvaluationSettings {
   }
   
   @scala.inline
-  implicit class SubscriptionEvaluationSettingsOps[Self <: SubscriptionEvaluationSettings] (val x: Self) extends AnyVal {
+  implicit class SubscriptionEvaluationSettingsMutableBuilder[Self <: SubscriptionEvaluationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeOut(value: Double): Self = this.set("timeOut", value.asInstanceOf[js.Any])
+    def setTimeOut(value: Double): Self = StObject.set(x, "timeOut", value.asInstanceOf[js.Any])
   }
 }

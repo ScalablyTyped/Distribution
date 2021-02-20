@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateCustomerCardRequest")
 @js.native
-class CreateCustomerCardRequest () extends js.Object {
+class CreateCustomerCardRequest () extends StObject {
   
   /**
     * Address information for the card on file. Only the `postal_code` field is required for payments in the US and Canada.

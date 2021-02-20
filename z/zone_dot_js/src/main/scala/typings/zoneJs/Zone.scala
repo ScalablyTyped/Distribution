@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,7 +132,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait Zone extends js.Object {
+trait Zone extends StObject {
   
   /**
     * Allows the zone to intercept canceling of scheduled Task.

@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofvalidate4Options9 extends js.Object {
+trait Typeofvalidate4Options9 extends StObject {
   
   val options_9: js.Any = js.native
 }
@@ -18,21 +19,9 @@ object Typeofvalidate4Options9 {
   }
   
   @scala.inline
-  implicit class Typeofvalidate4Options9Ops[Self <: Typeofvalidate4Options9] (val x: Self) extends AnyVal {
+  implicit class Typeofvalidate4Options9MutableBuilder[Self <: Typeofvalidate4Options9] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOptions_9(value: js.Any): Self = this.set("options_9", value.asInstanceOf[js.Any])
+    def setOptions_9(value: js.Any): Self = StObject.set(x, "options_9", value.asInstanceOf[js.Any])
   }
 }

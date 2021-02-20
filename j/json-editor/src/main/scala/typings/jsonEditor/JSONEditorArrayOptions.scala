@@ -1,11 +1,12 @@
 package typings.jsonEditor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditorArrayOptions extends js.Object {
+trait JSONEditorArrayOptions extends StObject {
   
   /**
     * If set to true, the editor will start collapsed
@@ -51,60 +52,48 @@ object JSONEditorArrayOptions {
   }
   
   @scala.inline
-  implicit class JSONEditorArrayOptionsOps[Self <: JSONEditorArrayOptions] (val x: Self) extends AnyVal {
+  implicit class JSONEditorArrayOptionsMutableBuilder[Self <: JSONEditorArrayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisable_array_add(value: Boolean): Self = StObject.set(x, "disable_array_add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setDisable_array_addUndefined: Self = StObject.set(x, "disable_array_add", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setDisable_array_delete(value: Boolean): Self = StObject.set(x, "disable_array_delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_add(value: Boolean): Self = this.set("disable_array_add", value.asInstanceOf[js.Any])
+    def setDisable_array_deleteUndefined: Self = StObject.set(x, "disable_array_delete", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_add: Self = this.set("disable_array_add", js.undefined)
+    def setDisable_array_delete_all_rows(value: Boolean): Self = StObject.set(x, "disable_array_delete_all_rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_delete(value: Boolean): Self = this.set("disable_array_delete", value.asInstanceOf[js.Any])
+    def setDisable_array_delete_all_rowsUndefined: Self = StObject.set(x, "disable_array_delete_all_rows", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_delete: Self = this.set("disable_array_delete", js.undefined)
+    def setDisable_array_delete_last_row(value: Boolean): Self = StObject.set(x, "disable_array_delete_last_row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_delete_all_rows(value: Boolean): Self = this.set("disable_array_delete_all_rows", value.asInstanceOf[js.Any])
+    def setDisable_array_delete_last_rowUndefined: Self = StObject.set(x, "disable_array_delete_last_row", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_delete_all_rows: Self = this.set("disable_array_delete_all_rows", js.undefined)
+    def setDisable_array_reorder(value: Boolean): Self = StObject.set(x, "disable_array_reorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_delete_last_row(value: Boolean): Self = this.set("disable_array_delete_last_row", value.asInstanceOf[js.Any])
+    def setDisable_array_reorderUndefined: Self = StObject.set(x, "disable_array_reorder", js.undefined)
     
     @scala.inline
-    def deleteDisable_array_delete_last_row: Self = this.set("disable_array_delete_last_row", js.undefined)
+    def setDisable_collapse(value: Boolean): Self = StObject.set(x, "disable_collapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable_array_reorder(value: Boolean): Self = this.set("disable_array_reorder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisable_array_reorder: Self = this.set("disable_array_reorder", js.undefined)
-    
-    @scala.inline
-    def setDisable_collapse(value: Boolean): Self = this.set("disable_collapse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisable_collapse: Self = this.set("disable_collapse", js.undefined)
+    def setDisable_collapseUndefined: Self = StObject.set(x, "disable_collapse", js.undefined)
   }
 }

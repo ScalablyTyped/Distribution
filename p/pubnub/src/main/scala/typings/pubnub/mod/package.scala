@@ -1,10 +1,17 @@
 package typings.pubnub
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  /* static member */
+  @scala.inline
+  def CATEGORIES_ : typings.pubnub.mod.Categories = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CATEGORIES").asInstanceOf[typings.pubnub.mod.Categories]
+  @scala.inline
+  def CATEGORIES__=(x: typings.pubnub.mod.Categories): scala.Unit = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].updateDynamic("CATEGORIES")(x.asInstanceOf[js.Any])
   
   type Callback[ResponseType] = js.Function2[
     /* status */ typings.pubnub.mod.PubnubStatus, 
@@ -47,6 +54,12 @@ package object mod {
   {[ P in keyof T ]:? T[P] | null}
     */ typings.pubnub.pubnubStrings.Nullable with org.scalablytyped.runtime.TopLevel[T]
   
+  /* static member */
+  @scala.inline
+  def OPERATIONS_ : typings.pubnub.mod.Operations = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OPERATIONS").asInstanceOf[typings.pubnub.mod.Operations]
+  @scala.inline
+  def OPERATIONS__=(x: typings.pubnub.mod.Operations): scala.Unit = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].updateDynamic("OPERATIONS")(x.asInstanceOf[js.Any])
+  
   // Objects v2
   // Object
   type ObjectCustom = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
@@ -63,4 +76,12 @@ package object mod {
   type SetUUIDMetadataResponse[Custom /* <: typings.pubnub.mod.ObjectCustom */] = typings.pubnub.mod.ObjectsResponse[typings.pubnub.mod.UUIDMetadataObject[Custom]]
   
   type StatusCallback = js.Function1[/* status */ typings.pubnub.mod.PubnubStatus, scala.Unit]
+  
+  /* static member */
+  @scala.inline
+  def generateUUID(): java.lang.String = typings.pubnub.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[java.lang.String]
+  
+  /* static member */
+  @scala.inline
+  def notificationPayload(title: java.lang.String, body: java.lang.String): typings.pubnub.mod.NotificationsPayload = (typings.pubnub.mod.^.asInstanceOf[js.Dynamic].applyDynamic("notificationPayload")(title.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.pubnub.mod.NotificationsPayload]
 }

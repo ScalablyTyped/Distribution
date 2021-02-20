@@ -23,12 +23,14 @@ import typings.aframe.anon.State
 import typings.std.Event
 import typings.std.EventListener
 import typings.three.mod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity[C] extends ANode {
+trait Entity[C]
+  extends typings.aframe.mod.ANode {
   
   // addEventListener specific usages
   @JSName("addEventListener")

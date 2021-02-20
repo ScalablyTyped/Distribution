@@ -5,16 +5,16 @@ import typings.rxjs.schedulerMod.Scheduler
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.subscriptionLogMod.SubscriptionLog
 import typings.rxjs.testMessageMod.TestMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/testing/ColdObservable", JSImport.Namespace)
-@js.native
-object coldObservableMod extends js.Object {
+object coldObservableMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @js.native
+  - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @JSImport("rxjs/internal/testing/ColdObservable", "ColdObservable")
+  @js.native
   class ColdObservable[T] protected () extends Observable[T] {
     def this(messages: js.Array[TestMessage], scheduler: Scheduler) = this()
     

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageKind extends js.Object
+sealed trait ChatMessageKind extends StObject
 /** Specifies the type of chat message. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageKind")
 @js.native
-object ChatMessageKind extends js.Object {
+object ChatMessageKind extends StObject {
   
   /** A file transfer request */
   @js.native

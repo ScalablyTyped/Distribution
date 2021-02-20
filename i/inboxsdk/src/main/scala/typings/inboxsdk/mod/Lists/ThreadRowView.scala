@@ -2,12 +2,13 @@ package typings.inboxsdk.mod.Lists
 
 import typings.inboxsdk.inboxsdkStrings.destroy
 import typings.inboxsdk.mod.Common.Contact
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadRowView extends js.Object {
+trait ThreadRowView extends StObject {
   
   // addButton(buttonDescriptor: Stream<ThreadRowButtonDescriptor>): void;
   def addActionButton(buttonDescriptor: ThreadRowActionButtonDescriptor): Unit = js.native
@@ -78,69 +79,57 @@ object ThreadRowView {
   }
   
   @scala.inline
-  implicit class ThreadRowViewOps[Self <: ThreadRowView] (val x: Self) extends AnyVal {
+  implicit class ThreadRowViewMutableBuilder[Self <: ThreadRowView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddActionButton(value: ThreadRowActionButtonDescriptor => Unit): Self = StObject.set(x, "addActionButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAttachmentIcon(value: ThreadRowAttachmentIconDescriptor => Unit): Self = StObject.set(x, "addAttachmentIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddButton(value: ThreadRowButtonDescriptor => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddActionButton(value: ThreadRowActionButtonDescriptor => Unit): Self = this.set("addActionButton", js.Any.fromFunction1(value))
+    def setAddImage(value: ImageDescriptor => Unit): Self = StObject.set(x, "addImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAttachmentIcon(value: ThreadRowAttachmentIconDescriptor => Unit): Self = this.set("addAttachmentIcon", js.Any.fromFunction1(value))
+    def setAddLabel(value: LabelDescriptor => Unit): Self = StObject.set(x, "addLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddButton(value: ThreadRowButtonDescriptor => Unit): Self = this.set("addButton", js.Any.fromFunction1(value))
+    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddImage(value: ImageDescriptor => Unit): Self = this.set("addImage", js.Any.fromFunction1(value))
+    def setGetContacts(value: () => js.Array[Contact]): Self = StObject.set(x, "getContacts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddLabel(value: LabelDescriptor => Unit): Self = this.set("addLabel", js.Any.fromFunction1(value))
+    def setGetDateString(value: () => String): Self = StObject.set(x, "getDateString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroyed(value: Boolean): Self = this.set("destroyed", value.asInstanceOf[js.Any])
+    def setGetDraftID(value: () => js.Promise[String]): Self = StObject.set(x, "getDraftID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContacts(value: () => js.Array[Contact]): Self = this.set("getContacts", js.Any.fromFunction0(value))
+    def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDateString(value: () => String): Self = this.set("getDateString", js.Any.fromFunction0(value))
+    def setGetThreadIDAsync(value: () => js.Promise[String]): Self = StObject.set(x, "getThreadIDAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDraftID(value: () => js.Promise[String]): Self = this.set("getDraftID", js.Any.fromFunction0(value))
+    def setGetThreadIDIfStableAsync(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getThreadIDIfStableAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubject(value: () => String): Self = this.set("getSubject", js.Any.fromFunction0(value))
+    def setGetVisibleDraftCount(value: () => Double): Self = StObject.set(x, "getVisibleDraftCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetThreadIDAsync(value: () => js.Promise[String]): Self = this.set("getThreadIDAsync", js.Any.fromFunction0(value))
+    def setGetVisibleMessageCount(value: () => Double): Self = StObject.set(x, "getVisibleMessageCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetThreadIDIfStableAsync(value: () => js.Promise[String | Null]): Self = this.set("getThreadIDIfStableAsync", js.Any.fromFunction0(value))
+    def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetVisibleDraftCount(value: () => Double): Self = this.set("getVisibleDraftCount", js.Any.fromFunction0(value))
+    def setReplaceDate(value: ThreadRowDateDescriptor => Unit): Self = StObject.set(x, "replaceDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetVisibleMessageCount(value: () => Double): Self = this.set("getVisibleMessageCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReplaceDate(value: ThreadRowDateDescriptor => Unit): Self = this.set("replaceDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceDraftLabel(value: ThreadRowDraftLabelDescriptor => Unit): Self = this.set("replaceDraftLabel", js.Any.fromFunction1(value))
+    def setReplaceDraftLabel(value: ThreadRowDraftLabelDescriptor => Unit): Self = StObject.set(x, "replaceDraftLabel", js.Any.fromFunction1(value))
   }
 }

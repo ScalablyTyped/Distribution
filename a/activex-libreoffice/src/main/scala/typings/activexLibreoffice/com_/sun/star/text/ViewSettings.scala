@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -262,144 +263,132 @@ object ViewSettings {
   }
   
   @scala.inline
-  implicit class ViewSettingsOps[Self <: ViewSettings] (val x: Self) extends AnyVal {
+  implicit class ViewSettingsMutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideWhitespace(value: Boolean): Self = StObject.set(x, "HideWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalRulerMetric(value: Double): Self = StObject.set(x, "HorizontalRulerMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsExecuteHyperlinks(value: Boolean): Self = StObject.set(x, "IsExecuteHyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideWhitespace(value: Boolean): Self = this.set("HideWhitespace", value.asInstanceOf[js.Any])
+    def setIsRasterVisible(value: Boolean): Self = StObject.set(x, "IsRasterVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalRulerMetric(value: Double): Self = this.set("HorizontalRulerMetric", value.asInstanceOf[js.Any])
+    def setIsSnapToRaster(value: Boolean): Self = StObject.set(x, "IsSnapToRaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExecuteHyperlinks(value: Boolean): Self = this.set("IsExecuteHyperlinks", value.asInstanceOf[js.Any])
+    def setIsVertRulerRightAligned(value: Boolean): Self = StObject.set(x, "IsVertRulerRightAligned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRasterVisible(value: Boolean): Self = this.set("IsRasterVisible", value.asInstanceOf[js.Any])
+    def setRasterResolutionX(value: Double): Self = StObject.set(x, "RasterResolutionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSnapToRaster(value: Boolean): Self = this.set("IsSnapToRaster", value.asInstanceOf[js.Any])
+    def setRasterResolutionY(value: Double): Self = StObject.set(x, "RasterResolutionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVertRulerRightAligned(value: Boolean): Self = this.set("IsVertRulerRightAligned", value.asInstanceOf[js.Any])
+    def setRasterSubdivisionX(value: Double): Self = StObject.set(x, "RasterSubdivisionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterResolutionX(value: Double): Self = this.set("RasterResolutionX", value.asInstanceOf[js.Any])
+    def setRasterSubdivisionY(value: Double): Self = StObject.set(x, "RasterSubdivisionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterResolutionY(value: Double): Self = this.set("RasterResolutionY", value.asInstanceOf[js.Any])
+    def setShowAnnotations(value: Boolean): Self = StObject.set(x, "ShowAnnotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterSubdivisionX(value: Double): Self = this.set("RasterSubdivisionX", value.asInstanceOf[js.Any])
+    def setShowBreaks(value: Boolean): Self = StObject.set(x, "ShowBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterSubdivisionY(value: Double): Self = this.set("RasterSubdivisionY", value.asInstanceOf[js.Any])
+    def setShowContentTips(value: Boolean): Self = StObject.set(x, "ShowContentTips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAnnotations(value: Boolean): Self = this.set("ShowAnnotations", value.asInstanceOf[js.Any])
+    def setShowDrawings(value: Boolean): Self = StObject.set(x, "ShowDrawings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBreaks(value: Boolean): Self = this.set("ShowBreaks", value.asInstanceOf[js.Any])
+    def setShowFieldCommands(value: Boolean): Self = StObject.set(x, "ShowFieldCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowContentTips(value: Boolean): Self = this.set("ShowContentTips", value.asInstanceOf[js.Any])
+    def setShowFootnoteBackground(value: Boolean): Self = StObject.set(x, "ShowFootnoteBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDrawings(value: Boolean): Self = this.set("ShowDrawings", value.asInstanceOf[js.Any])
+    def setShowGraphics(value: Boolean): Self = StObject.set(x, "ShowGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFieldCommands(value: Boolean): Self = this.set("ShowFieldCommands", value.asInstanceOf[js.Any])
+    def setShowHiddenCharacters(value: Boolean): Self = StObject.set(x, "ShowHiddenCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFootnoteBackground(value: Boolean): Self = this.set("ShowFootnoteBackground", value.asInstanceOf[js.Any])
+    def setShowHiddenParagraphs(value: Boolean): Self = StObject.set(x, "ShowHiddenParagraphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGraphics(value: Boolean): Self = this.set("ShowGraphics", value.asInstanceOf[js.Any])
+    def setShowHiddenText(value: Boolean): Self = StObject.set(x, "ShowHiddenText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHiddenCharacters(value: Boolean): Self = this.set("ShowHiddenCharacters", value.asInstanceOf[js.Any])
+    def setShowHoriRuler(value: Boolean): Self = StObject.set(x, "ShowHoriRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHiddenParagraphs(value: Boolean): Self = this.set("ShowHiddenParagraphs", value.asInstanceOf[js.Any])
+    def setShowHoriScrollBar(value: Boolean): Self = StObject.set(x, "ShowHoriScrollBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHiddenText(value: Boolean): Self = this.set("ShowHiddenText", value.asInstanceOf[js.Any])
+    def setShowIndexMarkBackground(value: Boolean): Self = StObject.set(x, "ShowIndexMarkBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHoriRuler(value: Boolean): Self = this.set("ShowHoriRuler", value.asInstanceOf[js.Any])
+    def setShowNonprintingCharacters(value: Boolean): Self = StObject.set(x, "ShowNonprintingCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHoriScrollBar(value: Boolean): Self = this.set("ShowHoriScrollBar", value.asInstanceOf[js.Any])
+    def setShowOnlineLayout(value: Boolean): Self = StObject.set(x, "ShowOnlineLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIndexMarkBackground(value: Boolean): Self = this.set("ShowIndexMarkBackground", value.asInstanceOf[js.Any])
+    def setShowParaBreaks(value: Boolean): Self = StObject.set(x, "ShowParaBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNonprintingCharacters(value: Boolean): Self = this.set("ShowNonprintingCharacters", value.asInstanceOf[js.Any])
+    def setShowProtectedSpaces(value: Boolean): Self = StObject.set(x, "ShowProtectedSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOnlineLayout(value: Boolean): Self = this.set("ShowOnlineLayout", value.asInstanceOf[js.Any])
+    def setShowRulers(value: Boolean): Self = StObject.set(x, "ShowRulers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowParaBreaks(value: Boolean): Self = this.set("ShowParaBreaks", value.asInstanceOf[js.Any])
+    def setShowScrollBarTips(value: Boolean): Self = StObject.set(x, "ShowScrollBarTips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowProtectedSpaces(value: Boolean): Self = this.set("ShowProtectedSpaces", value.asInstanceOf[js.Any])
+    def setShowSoftHyphens(value: Boolean): Self = StObject.set(x, "ShowSoftHyphens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRulers(value: Boolean): Self = this.set("ShowRulers", value.asInstanceOf[js.Any])
+    def setShowSpaces(value: Boolean): Self = StObject.set(x, "ShowSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowScrollBarTips(value: Boolean): Self = this.set("ShowScrollBarTips", value.asInstanceOf[js.Any])
+    def setShowTableBoundaries(value: Boolean): Self = StObject.set(x, "ShowTableBoundaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSoftHyphens(value: Boolean): Self = this.set("ShowSoftHyphens", value.asInstanceOf[js.Any])
+    def setShowTables(value: Boolean): Self = StObject.set(x, "ShowTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSpaces(value: Boolean): Self = this.set("ShowSpaces", value.asInstanceOf[js.Any])
+    def setShowTabstops(value: Boolean): Self = StObject.set(x, "ShowTabstops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTableBoundaries(value: Boolean): Self = this.set("ShowTableBoundaries", value.asInstanceOf[js.Any])
+    def setShowTextBoundaries(value: Boolean): Self = StObject.set(x, "ShowTextBoundaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTables(value: Boolean): Self = this.set("ShowTables", value.asInstanceOf[js.Any])
+    def setShowTextFieldBackground(value: Boolean): Self = StObject.set(x, "ShowTextFieldBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTabstops(value: Boolean): Self = this.set("ShowTabstops", value.asInstanceOf[js.Any])
+    def setShowVertRuler(value: Boolean): Self = StObject.set(x, "ShowVertRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTextBoundaries(value: Boolean): Self = this.set("ShowTextBoundaries", value.asInstanceOf[js.Any])
+    def setShowVertScrollBar(value: Boolean): Self = StObject.set(x, "ShowVertScrollBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTextFieldBackground(value: Boolean): Self = this.set("ShowTextFieldBackground", value.asInstanceOf[js.Any])
+    def setSmoothScrolling(value: Boolean): Self = StObject.set(x, "SmoothScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowVertRuler(value: Boolean): Self = this.set("ShowVertRuler", value.asInstanceOf[js.Any])
+    def setVerticalRulerMetric(value: Double): Self = StObject.set(x, "VerticalRulerMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowVertScrollBar(value: Boolean): Self = this.set("ShowVertScrollBar", value.asInstanceOf[js.Any])
+    def setZoomType(value: Double): Self = StObject.set(x, "ZoomType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothScrolling(value: Boolean): Self = this.set("SmoothScrolling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalRulerMetric(value: Double): Self = this.set("VerticalRulerMetric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomType(value: Double): Self = this.set("ZoomType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomValue(value: Double): Self = this.set("ZoomValue", value.asInstanceOf[js.Any])
+    def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
   }
 }

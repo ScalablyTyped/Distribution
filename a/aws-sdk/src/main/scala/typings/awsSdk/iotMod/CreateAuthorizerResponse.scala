@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAuthorizerResponse extends js.Object {
+trait CreateAuthorizerResponse extends StObject {
   
   /**
     * The authorizer ARN.
@@ -26,30 +27,18 @@ object CreateAuthorizerResponse {
   }
   
   @scala.inline
-  implicit class CreateAuthorizerResponseOps[Self <: CreateAuthorizerResponse] (val x: Self) extends AnyVal {
+  implicit class CreateAuthorizerResponseMutableBuilder[Self <: CreateAuthorizerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizerArn(value: AuthorizerArn): Self = StObject.set(x, "authorizerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerArnUndefined: Self = StObject.set(x, "authorizerArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerArn(value: AuthorizerArn): Self = this.set("authorizerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizerArn: Self = this.set("authorizerArn", js.undefined)
-    
-    @scala.inline
-    def setAuthorizerName(value: AuthorizerName): Self = this.set("authorizerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizerName: Self = this.set("authorizerName", js.undefined)
+    def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
   }
 }

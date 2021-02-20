@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for the metagame config resource
   */
 @js.native
-trait SchemaMetagameConfig extends js.Object {
+trait SchemaMetagameConfig extends StObject {
   
   /**
     * Current version of the metagame configuration data. When this data is
@@ -36,39 +37,27 @@ object SchemaMetagameConfig {
   }
   
   @scala.inline
-  implicit class SchemaMetagameConfigOps[Self <: SchemaMetagameConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaMetagameConfigMutableBuilder[Self <: SchemaMetagameConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: Double): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    def setPlayerLevels(value: js.Array[SchemaPlayerLevel]): Self = StObject.set(x, "playerLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = this.set("playerLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlayerLevels(value: js.Array[SchemaPlayerLevel]): Self = this.set("playerLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerLevels: Self = this.set("playerLevels", js.undefined)
+    def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
   }
 }

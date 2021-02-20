@@ -1,12 +1,13 @@
 package typings.typedoc.mod.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.WatchFileKind")
 @js.native
-object WatchFileKind extends js.Object {
+object WatchFileKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescript.mod.WatchFileKind with Double] = js.native

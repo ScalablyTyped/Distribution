@@ -1,19 +1,18 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/reflect/get", JSImport.Namespace)
-@js.native
-object getMod
-  extends TopLevel[
-      js.Function3[
-        /* target */ js.Any, 
-        /* propertyKey */ PropertyKey, 
-        /* receiver */ js.UndefOr[js.Any], 
-        js.Any
-      ]
-    ]
+object getMod {
+  
+  /* was `typeof core.Reflect.get` */
+  @JSImport("core-js/fn/reflect/get", JSImport.Namespace)
+  @js.native
+  def apply(target: js.Any, propertyKey: PropertyKey): js.Any = js.native
+  @JSImport("core-js/fn/reflect/get", JSImport.Namespace)
+  @js.native
+  def apply(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
+}

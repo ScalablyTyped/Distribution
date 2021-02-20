@@ -1,27 +1,47 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CreateContextRequest. */
-trait ICreateContextRequest extends js.Object {
+@js.native
+trait ICreateContextRequest extends StObject {
+  
   /** CreateContextRequest context */
-  var context: js.UndefOr[IContext | Null] = js.undefined
+  var context: js.UndefOr[IContext | Null] = js.native
+  
   /** CreateContextRequest parent */
-  var parent: js.UndefOr[String | Null] = js.undefined
+  var parent: js.UndefOr[String | Null] = js.native
 }
-
 object ICreateContextRequest {
+  
   @scala.inline
-  def apply(
-    context: js.UndefOr[Null | IContext] = js.undefined,
-    parent: js.UndefOr[Null | String] = js.undefined
-  ): ICreateContextRequest = {
+  def apply(): ICreateContextRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateContextRequest]
   }
+  
+  @scala.inline
+  implicit class ICreateContextRequestMutableBuilder[Self <: ICreateContextRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setContext(value: IContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContextNull: Self = StObject.set(x, "context", null)
+    
+    @scala.inline
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    @scala.inline
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParentNull: Self = StObject.set(x, "parent", null)
+    
+    @scala.inline
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+  }
 }
-

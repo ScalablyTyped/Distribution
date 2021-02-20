@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigInteger extends js.Object {
+trait BigInteger extends StObject {
   
   def abs(): BigInteger = js.native
   
@@ -31,46 +32,35 @@ object BigInteger {
     mod: BigInteger => BigInteger,
     modPowInt: (Double, BigInteger) => BigInteger,
     negate: () => BigInteger,
-    toString: Double => String
+    toString_ : Double => String
   ): BigInteger = {
-    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction0(abs), bitLength = js.Any.fromFunction0(bitLength), compareTo = js.Any.fromFunction1(compareTo), mod = js.Any.fromFunction1(mod), modPowInt = js.Any.fromFunction2(modPowInt), negate = js.Any.fromFunction0(negate), toString = js.Any.fromFunction1(toString))
+    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction0(abs), bitLength = js.Any.fromFunction0(bitLength), compareTo = js.Any.fromFunction1(compareTo), mod = js.Any.fromFunction1(mod), modPowInt = js.Any.fromFunction2(modPowInt), negate = js.Any.fromFunction0(negate))
+    __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
     __obj.asInstanceOf[BigInteger]
   }
   
   @scala.inline
-  implicit class BigIntegerOps[Self <: BigInteger] (val x: Self) extends AnyVal {
+  implicit class BigIntegerMutableBuilder[Self <: BigInteger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbs(value: () => BigInteger): Self = StObject.set(x, "abs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitLength(value: () => Double): Self = StObject.set(x, "bitLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompareTo(value: BigInteger => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbs(value: () => BigInteger): Self = this.set("abs", js.Any.fromFunction0(value))
+    def setMod(value: BigInteger => BigInteger): Self = StObject.set(x, "mod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBitLength(value: () => Double): Self = this.set("bitLength", js.Any.fromFunction0(value))
+    def setModPowInt(value: (Double, BigInteger) => BigInteger): Self = StObject.set(x, "modPowInt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCompareTo(value: BigInteger => Double): Self = this.set("compareTo", js.Any.fromFunction1(value))
+    def setNegate(value: () => BigInteger): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMod(value: BigInteger => BigInteger): Self = this.set("mod", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setModPowInt(value: (Double, BigInteger) => BigInteger): Self = this.set("modPowInt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNegate(value: () => BigInteger): Self = this.set("negate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToString(value: Double => String): Self = this.set("toString", js.Any.fromFunction1(value))
+    def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributeValue extends js.Object {
+trait AttributeValue extends StObject {
   
   /**
     * An attribute of type Binary. For example:  "B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk" 
@@ -66,90 +67,78 @@ object AttributeValue {
   }
   
   @scala.inline
-  implicit class AttributeValueOps[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB(value: BinaryAttributeValue): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBOOL(value: BooleanAttributeValue): Self = StObject.set(x, "BOOL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBOOLUndefined: Self = StObject.set(x, "BOOL", js.undefined)
     
     @scala.inline
-    def setB(value: BinaryAttributeValue): Self = this.set("B", value.asInstanceOf[js.Any])
+    def setBS(value: BinarySetAttributeValue): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteB: Self = this.set("B", js.undefined)
+    def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
     
     @scala.inline
-    def setBOOL(value: BooleanAttributeValue): Self = this.set("BOOL", value.asInstanceOf[js.Any])
+    def setBSVarargs(value: BinaryAttributeValue*): Self = StObject.set(x, "BS", js.Array(value :_*))
     
     @scala.inline
-    def deleteBOOL: Self = this.set("BOOL", js.undefined)
+    def setBUndefined: Self = StObject.set(x, "B", js.undefined)
     
     @scala.inline
-    def setBSVarargs(value: BinaryAttributeValue*): Self = this.set("BS", js.Array(value :_*))
+    def setL(value: ListAttributeValue): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBS(value: BinarySetAttributeValue): Self = this.set("BS", value.asInstanceOf[js.Any])
+    def setLUndefined: Self = StObject.set(x, "L", js.undefined)
     
     @scala.inline
-    def deleteBS: Self = this.set("BS", js.undefined)
+    def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
     
     @scala.inline
-    def setLVarargs(value: AttributeValue*): Self = this.set("L", js.Array(value :_*))
+    def setM(value: MapAttributeValue): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: ListAttributeValue): Self = this.set("L", value.asInstanceOf[js.Any])
+    def setMUndefined: Self = StObject.set(x, "M", js.undefined)
     
     @scala.inline
-    def deleteL: Self = this.set("L", js.undefined)
+    def setN(value: NumberAttributeValue): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: MapAttributeValue): Self = this.set("M", value.asInstanceOf[js.Any])
+    def setNS(value: NumberSetAttributeValue): Self = StObject.set(x, "NS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteM: Self = this.set("M", js.undefined)
+    def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
     
     @scala.inline
-    def setN(value: NumberAttributeValue): Self = this.set("N", value.asInstanceOf[js.Any])
+    def setNSVarargs(value: NumberAttributeValue*): Self = StObject.set(x, "NS", js.Array(value :_*))
     
     @scala.inline
-    def deleteN: Self = this.set("N", js.undefined)
+    def setNULL(value: NullAttributeValue): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNSVarargs(value: NumberAttributeValue*): Self = this.set("NS", js.Array(value :_*))
+    def setNULLUndefined: Self = StObject.set(x, "NULL", js.undefined)
     
     @scala.inline
-    def setNS(value: NumberSetAttributeValue): Self = this.set("NS", value.asInstanceOf[js.Any])
+    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
     @scala.inline
-    def deleteNS: Self = this.set("NS", js.undefined)
+    def setS(value: StringAttributeValue): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNULL(value: NullAttributeValue): Self = this.set("NULL", value.asInstanceOf[js.Any])
+    def setSS(value: StringSetAttributeValue): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNULL: Self = this.set("NULL", js.undefined)
+    def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
     
     @scala.inline
-    def setS(value: StringAttributeValue): Self = this.set("S", value.asInstanceOf[js.Any])
+    def setSSVarargs(value: StringAttributeValue*): Self = StObject.set(x, "SS", js.Array(value :_*))
     
     @scala.inline
-    def deleteS: Self = this.set("S", js.undefined)
-    
-    @scala.inline
-    def setSSVarargs(value: StringAttributeValue*): Self = this.set("SS", js.Array(value :_*))
-    
-    @scala.inline
-    def setSS(value: StringSetAttributeValue): Self = this.set("SS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSS: Self = this.set("SS", js.undefined)
+    def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }
 }

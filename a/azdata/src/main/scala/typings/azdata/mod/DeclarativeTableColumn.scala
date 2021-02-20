@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeclarativeTableColumn extends js.Object {
+trait DeclarativeTableColumn extends StObject {
   
   var categoryValues: js.UndefOr[js.Array[CategoryValue]] = js.native
   
@@ -26,39 +27,27 @@ object DeclarativeTableColumn {
   }
   
   @scala.inline
-  implicit class DeclarativeTableColumnOps[Self <: DeclarativeTableColumn] (val x: Self) extends AnyVal {
+  implicit class DeclarativeTableColumnMutableBuilder[Self <: DeclarativeTableColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryValues(value: js.Array[CategoryValue]): Self = StObject.set(x, "categoryValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryValuesUndefined: Self = StObject.set(x, "categoryValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryValuesVarargs(value: CategoryValue*): Self = StObject.set(x, "categoryValues", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueType(value: DeclarativeDataType): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    def setValueType(value: DeclarativeDataType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCategoryValuesVarargs(value: CategoryValue*): Self = this.set("categoryValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setCategoryValues(value: js.Array[CategoryValue]): Self = this.set("categoryValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryValues: Self = this.set("categoryValues", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

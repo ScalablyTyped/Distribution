@@ -1,6 +1,7 @@
 package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * content that is terminated with a newline character.
   */
 @js.native
-trait SchemaParagraph extends js.Object {
+trait SchemaParagraph extends StObject {
   
   /**
     * The bullet for this paragraph. If not present, the paragraph does not
@@ -59,66 +60,54 @@ object SchemaParagraph {
   }
   
   @scala.inline
-  implicit class SchemaParagraphOps[Self <: SchemaParagraph] (val x: Self) extends AnyVal {
+  implicit class SchemaParagraphMutableBuilder[Self <: SchemaParagraph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElements(value: js.Array[SchemaParagraphElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBullet(value: SchemaBullet): Self = this.set("bullet", value.asInstanceOf[js.Any])
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def deleteBullet: Self = this.set("bullet", js.undefined)
+    def setElementsVarargs(value: SchemaParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setElementsVarargs(value: SchemaParagraphElement*): Self = this.set("elements", js.Array(value :_*))
+    def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: js.Array[SchemaParagraphElement]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setPositionedObjectIds(value: js.Array[String]): Self = StObject.set(x, "positionedObjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphStyle(value: SchemaParagraphStyle): Self = this.set("paragraphStyle", value.asInstanceOf[js.Any])
+    def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
     
     @scala.inline
-    def deleteParagraphStyle: Self = this.set("paragraphStyle", js.undefined)
+    def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
     
     @scala.inline
-    def setPositionedObjectIdsVarargs(value: String*): Self = this.set("positionedObjectIds", js.Array(value :_*))
+    def setSuggestedBulletChanges(value: StringDictionary[SchemaSuggestedBullet]): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionedObjectIds(value: js.Array[String]): Self = this.set("positionedObjectIds", value.asInstanceOf[js.Any])
+    def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
     
     @scala.inline
-    def deletePositionedObjectIds: Self = this.set("positionedObjectIds", js.undefined)
+    def setSuggestedParagraphStyleChanges(value: StringDictionary[SchemaSuggestedParagraphStyle]): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedBulletChanges(value: StringDictionary[SchemaSuggestedBullet]): Self = this.set("suggestedBulletChanges", value.asInstanceOf[js.Any])
+    def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
     
     @scala.inline
-    def deleteSuggestedBulletChanges: Self = this.set("suggestedBulletChanges", js.undefined)
+    def setSuggestedPositionedObjectIds(value: StringDictionary[SchemaObjectReferences]): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedParagraphStyleChanges(value: StringDictionary[SchemaSuggestedParagraphStyle]): Self = this.set("suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedParagraphStyleChanges: Self = this.set("suggestedParagraphStyleChanges", js.undefined)
-    
-    @scala.inline
-    def setSuggestedPositionedObjectIds(value: StringDictionary[SchemaObjectReferences]): Self = this.set("suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedPositionedObjectIds: Self = this.set("suggestedPositionedObjectIds", js.undefined)
+    def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)
   }
 }

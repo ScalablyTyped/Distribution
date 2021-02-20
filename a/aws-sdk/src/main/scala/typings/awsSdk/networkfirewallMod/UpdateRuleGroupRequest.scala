@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRuleGroupRequest extends js.Object {
+trait UpdateRuleGroupRequest extends StObject {
   
   /**
     * A description of the rule group. 
@@ -56,63 +57,51 @@ object UpdateRuleGroupRequest {
   }
   
   @scala.inline
-  implicit class UpdateRuleGroupRequestOps[Self <: UpdateRuleGroupRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRuleGroupRequestMutableBuilder[Self <: UpdateRuleGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = this.set("UpdateToken", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setRuleGroupArnUndefined: Self = StObject.set(x, "RuleGroupArn", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleGroup(value: RuleGroup): Self = this.set("RuleGroup", value.asInstanceOf[js.Any])
+    def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
     
     @scala.inline
-    def deleteRuleGroup: Self = this.set("RuleGroup", js.undefined)
+    def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
     
     @scala.inline
-    def setRuleGroupArn(value: ResourceArn): Self = this.set("RuleGroupArn", value.asInstanceOf[js.Any])
+    def setRules(value: RulesString): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuleGroupArn: Self = this.set("RuleGroupArn", js.undefined)
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def setRuleGroupName(value: ResourceName): Self = this.set("RuleGroupName", value.asInstanceOf[js.Any])
+    def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuleGroupName: Self = this.set("RuleGroupName", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def setRules(value: RulesString): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
-    
-    @scala.inline
-    def setType(value: RuleGroupType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
   }
 }

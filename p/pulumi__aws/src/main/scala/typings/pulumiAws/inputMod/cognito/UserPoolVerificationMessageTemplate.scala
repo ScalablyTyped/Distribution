@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cognito
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolVerificationMessageTemplate extends js.Object {
+trait UserPoolVerificationMessageTemplate extends StObject {
   
   /**
     * The default email option. Must be either `CONFIRM_WITH_CODE` or `CONFIRM_WITH_LINK`. Defaults to `CONFIRM_WITH_CODE`.
@@ -47,54 +48,42 @@ object UserPoolVerificationMessageTemplate {
   }
   
   @scala.inline
-  implicit class UserPoolVerificationMessageTemplateOps[Self <: UserPoolVerificationMessageTemplate] (val x: Self) extends AnyVal {
+  implicit class UserPoolVerificationMessageTemplateMutableBuilder[Self <: UserPoolVerificationMessageTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultEmailOption(value: Input[String]): Self = StObject.set(x, "defaultEmailOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultEmailOptionUndefined: Self = StObject.set(x, "defaultEmailOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailMessage(value: Input[String]): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEmailOption(value: Input[String]): Self = this.set("defaultEmailOption", value.asInstanceOf[js.Any])
+    def setEmailMessageByLink(value: Input[String]): Self = StObject.set(x, "emailMessageByLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultEmailOption: Self = this.set("defaultEmailOption", js.undefined)
+    def setEmailMessageByLinkUndefined: Self = StObject.set(x, "emailMessageByLink", js.undefined)
     
     @scala.inline
-    def setEmailMessage(value: Input[String]): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
     
     @scala.inline
-    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    def setEmailSubject(value: Input[String]): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailMessageByLink(value: Input[String]): Self = this.set("emailMessageByLink", value.asInstanceOf[js.Any])
+    def setEmailSubjectByLink(value: Input[String]): Self = StObject.set(x, "emailSubjectByLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailMessageByLink: Self = this.set("emailMessageByLink", js.undefined)
+    def setEmailSubjectByLinkUndefined: Self = StObject.set(x, "emailSubjectByLink", js.undefined)
     
     @scala.inline
-    def setEmailSubject(value: Input[String]): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    def setSmsMessage(value: Input[String]): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubjectByLink(value: Input[String]): Self = this.set("emailSubjectByLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmailSubjectByLink: Self = this.set("emailSubjectByLink", js.undefined)
-    
-    @scala.inline
-    def setSmsMessage(value: Input[String]): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmsMessage: Self = this.set("smsMessage", js.undefined)
+    def setSmsMessageUndefined: Self = StObject.set(x, "smsMessage", js.undefined)
   }
 }

@@ -1,27 +1,24 @@
 package typings.googlepay
 
 import typings.googlepay.google.payments.api.PaymentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object google extends js.Object {
+  object google {
     
-    @js.native
-    object payments extends js.Object {
+    object payments {
       
-      @js.native
-      object api extends js.Object {
+      object api {
         
         /**
           * This reference describes the JavaScript client methods to use to
           * implement the Google Pay API in your web applications.
           */
+        @JSGlobal("google.payments.api.PaymentsClient")
         @js.native
         class PaymentsClient protected ()
           extends typings.googlepay.google.payments.api.PaymentsClient {

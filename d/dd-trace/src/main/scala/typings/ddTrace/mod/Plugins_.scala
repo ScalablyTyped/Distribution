@@ -44,13 +44,14 @@ import typings.ddTrace.mod.plugins.router
 import typings.ddTrace.mod.plugins.tedious
 import typings.ddTrace.mod.plugins.when
 import typings.ddTrace.mod.plugins.winston
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 @js.native
-trait Plugins_ extends js.Object {
+trait Plugins_ extends StObject {
   
   var amqp10: typings.ddTrace.mod.plugins.amqp10 = js.native
   
@@ -202,150 +203,138 @@ object Plugins_ {
   }
   
   @scala.inline
-  implicit class Plugins_Ops[Self <: Plugins_] (val x: Self) extends AnyVal {
+  implicit class Plugins_MutableBuilder[Self <: Plugins_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmqp10(value: amqp10): Self = StObject.set(x, "amqp10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmqplib(value: amqplib): Self = StObject.set(x, "amqplib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAws-sdk`(value: awsSdk): Self = StObject.set(x, "aws-sdk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmqp10(value: amqp10): Self = this.set("amqp10", value.asInstanceOf[js.Any])
+    def setBluebird(value: bluebird): Self = StObject.set(x, "bluebird", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmqplib(value: amqplib): Self = this.set("amqplib", value.asInstanceOf[js.Any])
+    def setBunyan(value: bunyan): Self = StObject.set(x, "bunyan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAws-sdk`(value: awsSdk): Self = this.set("aws-sdk", value.asInstanceOf[js.Any])
+    def `setCassandra-driver`(value: cassandraDriver): Self = StObject.set(x, "cassandra-driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBluebird(value: bluebird): Self = this.set("bluebird", value.asInstanceOf[js.Any])
+    def setConnect(value: connect): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBunyan(value: bunyan): Self = this.set("bunyan", value.asInstanceOf[js.Any])
+    def setCouchbase(value: couchbase): Self = StObject.set(x, "couchbase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCassandra-driver`(value: cassandraDriver): Self = this.set("cassandra-driver", value.asInstanceOf[js.Any])
+    def setDns(value: dns): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: connect): Self = this.set("connect", value.asInstanceOf[js.Any])
+    def setElasticsearch(value: elasticsearch): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCouchbase(value: couchbase): Self = this.set("couchbase", value.asInstanceOf[js.Any])
+    def setExpress(value: express): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDns(value: dns): Self = this.set("dns", value.asInstanceOf[js.Any])
+    def setFastify(value: fastify): Self = StObject.set(x, "fastify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearch(value: elasticsearch): Self = this.set("elasticsearch", value.asInstanceOf[js.Any])
+    def setFs(value: fs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpress(value: express): Self = this.set("express", value.asInstanceOf[js.Any])
+    def `setGeneric-pool`(value: genericPool): Self = StObject.set(x, "generic-pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastify(value: fastify): Self = this.set("fastify", value.asInstanceOf[js.Any])
+    def `setGoogle-cloud-pubsub`(value: googleCloudPubsub): Self = StObject.set(x, "google-cloud-pubsub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFs(value: fs): Self = this.set("fs", value.asInstanceOf[js.Any])
+    def setGraphql(value: graphql): Self = StObject.set(x, "graphql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGeneric-pool`(value: genericPool): Self = this.set("generic-pool", value.asInstanceOf[js.Any])
+    def setGrpc(value: grpc): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGoogle-cloud-pubsub`(value: googleCloudPubsub): Self = this.set("google-cloud-pubsub", value.asInstanceOf[js.Any])
+    def setHapi(value: hapi): Self = StObject.set(x, "hapi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphql(value: graphql): Self = this.set("graphql", value.asInstanceOf[js.Any])
+    def setHttp(value: http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrpc(value: grpc): Self = this.set("grpc", value.asInstanceOf[js.Any])
+    def setHttp2(value: http2): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHapi(value: hapi): Self = this.set("hapi", value.asInstanceOf[js.Any])
+    def setIoredis(value: ioredis): Self = StObject.set(x, "ioredis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp(value: http): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setKnex(value: knex): Self = StObject.set(x, "knex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp2(value: http2): Self = this.set("http2", value.asInstanceOf[js.Any])
+    def setKoa(value: koa): Self = StObject.set(x, "koa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIoredis(value: ioredis): Self = this.set("ioredis", value.asInstanceOf[js.Any])
+    def `setLimitd-client`(value: limitdClient): Self = StObject.set(x, "limitd-client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnex(value: knex): Self = this.set("knex", value.asInstanceOf[js.Any])
+    def setMemcached(value: memcached): Self = StObject.set(x, "memcached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKoa(value: koa): Self = this.set("koa", value.asInstanceOf[js.Any])
+    def `setMicrogateway-core`(value: microgatewayCore): Self = StObject.set(x, "microgateway-core", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLimitd-client`(value: limitdClient): Self = this.set("limitd-client", value.asInstanceOf[js.Any])
+    def `setMongodb-core`(value: mongodbCore): Self = StObject.set(x, "mongodb-core", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemcached(value: memcached): Self = this.set("memcached", value.asInstanceOf[js.Any])
+    def setMongoose(value: mongoose): Self = StObject.set(x, "mongoose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMicrogateway-core`(value: microgatewayCore): Self = this.set("microgateway-core", value.asInstanceOf[js.Any])
+    def setMysql(value: mysql): Self = StObject.set(x, "mysql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMongodb-core`(value: mongodbCore): Self = this.set("mongodb-core", value.asInstanceOf[js.Any])
+    def setMysql2(value: mysql2): Self = StObject.set(x, "mysql2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMongoose(value: mongoose): Self = this.set("mongoose", value.asInstanceOf[js.Any])
+    def setNet(value: net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMysql(value: mysql): Self = this.set("mysql", value.asInstanceOf[js.Any])
+    def setPaperplane(value: paperplane): Self = StObject.set(x, "paperplane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMysql2(value: mysql2): Self = this.set("mysql2", value.asInstanceOf[js.Any])
+    def setPg(value: pg): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNet(value: net): Self = this.set("net", value.asInstanceOf[js.Any])
+    def setPino(value: pino): Self = StObject.set(x, "pino", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperplane(value: paperplane): Self = this.set("paperplane", value.asInstanceOf[js.Any])
+    def setPromise(value: promise): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPg(value: pg): Self = this.set("pg", value.asInstanceOf[js.Any])
+    def `setPromise-js`(value: promiseJs): Self = StObject.set(x, "promise-js", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPino(value: pino): Self = this.set("pino", value.asInstanceOf[js.Any])
+    def setQ(value: q): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: promise): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setRedis(value: redis): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPromise-js`(value: promiseJs): Self = this.set("promise-js", value.asInstanceOf[js.Any])
+    def setRestify(value: restify): Self = StObject.set(x, "restify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: q): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setRhea(value: rhea): Self = StObject.set(x, "rhea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedis(value: redis): Self = this.set("redis", value.asInstanceOf[js.Any])
+    def setRouter(value: router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestify(value: restify): Self = this.set("restify", value.asInstanceOf[js.Any])
+    def setTedious(value: tedious): Self = StObject.set(x, "tedious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRhea(value: rhea): Self = this.set("rhea", value.asInstanceOf[js.Any])
+    def setWhen(value: when): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouter(value: router): Self = this.set("router", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTedious(value: tedious): Self = this.set("tedious", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhen(value: when): Self = this.set("when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWinston(value: winston): Self = this.set("winston", value.asInstanceOf[js.Any])
+    def setWinston(value: winston): Self = StObject.set(x, "winston", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.consul.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsulOptions extends js.Object {
+trait ConsulOptions extends StObject {
   
   var ca: js.UndefOr[js.Array[String]] = js.native
   
@@ -28,57 +29,45 @@ object ConsulOptions {
   }
   
   @scala.inline
-  implicit class ConsulOptionsOps[Self <: ConsulOptions] (val x: Self) extends AnyVal {
+  implicit class ConsulOptionsMutableBuilder[Self <: ConsulOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
     @scala.inline
-    def setCaVarargs(value: String*): Self = this.set("ca", js.Array(value :_*))
+    def setDefaults(value: CommonOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCa(value: js.Array[String]): Self = this.set("ca", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteCa: Self = this.set("ca", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaults(value: CommonOptions): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPromisify(value: Boolean | js.Function): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromisify(value: Boolean | js.Function): Self = this.set("promisify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromisify: Self = this.set("promisify", js.undefined)
-    
-    @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
   }
 }

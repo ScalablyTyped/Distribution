@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleOperationContext extends js.Object {
+trait RuleOperationContext extends StObject {
   
   def InContext(context: FormattingContext): Boolean = js.native
   
@@ -22,27 +23,15 @@ object RuleOperationContext {
   }
   
   @scala.inline
-  implicit class RuleOperationContextOps[Self <: RuleOperationContext] (val x: Self) extends AnyVal {
+  implicit class RuleOperationContextMutableBuilder[Self <: RuleOperationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomContextChecks(value: js.Any): Self = StObject.set(x, "customContextChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInContext(value: FormattingContext => Boolean): Self = StObject.set(x, "InContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInContext(value: FormattingContext => Boolean): Self = this.set("InContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsAny(value: () => Boolean): Self = this.set("IsAny", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCustomContextChecks(value: js.Any): Self = this.set("customContextChecks", value.asInstanceOf[js.Any])
+    def setIsAny(value: () => Boolean): Self = StObject.set(x, "IsAny", js.Any.fromFunction0(value))
   }
 }

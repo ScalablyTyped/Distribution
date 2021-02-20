@@ -29,6 +29,7 @@ import typings.activexLibreoffice.com_.sun.star.table.XCell
 import typings.activexLibreoffice.com_.sun.star.table.XCellRange
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -258,42 +259,30 @@ object CellRange {
   }
   
   @scala.inline
-  implicit class CellRangeOps[Self <: CellRange] (val x: Self) extends AnyVal {
+  implicit class CellRangeMutableBuilder[Self <: CellRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicFilter(value: String): Self = this.set("BackGraphicFilter", value.asInstanceOf[js.Any])
+    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = this.set("BackGraphicLocation", value.asInstanceOf[js.Any])
+    def setChartColumnAsLabel(value: Boolean): Self = StObject.set(x, "ChartColumnAsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicURL(value: String): Self = this.set("BackGraphicURL", value.asInstanceOf[js.Any])
+    def setChartRowAsLabel(value: Boolean): Self = StObject.set(x, "ChartRowAsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChartColumnAsLabel(value: Boolean): Self = this.set("ChartColumnAsLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChartRowAsLabel(value: Boolean): Self = this.set("ChartRowAsLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
   }
 }

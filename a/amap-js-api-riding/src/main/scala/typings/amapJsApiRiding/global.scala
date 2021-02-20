@@ -1,25 +1,25 @@
 package typings.amapJsApiRiding
 
 import typings.amapJsApiRiding.AMap.Riding.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.Riding")
     @js.native
     class Riding ()
       extends typings.amapJsApiRiding.AMap.Riding {
       def this(options: Options) = this()
     }
     
+    @JSGlobal("AMap.RidingPolicy")
     @js.native
-    object RidingPolicy extends js.Object {
+    object RidingPolicy extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.amapJsApiRiding.AMap.RidingPolicy with Double] = js.native

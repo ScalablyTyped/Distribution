@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.CSV_T
   - typings.qlikEngineapi.qlikEngineapiStrings.OOXML
 */
-trait FileType extends js.Object
+trait FileType extends StObject
 object FileType {
   
   @scala.inline

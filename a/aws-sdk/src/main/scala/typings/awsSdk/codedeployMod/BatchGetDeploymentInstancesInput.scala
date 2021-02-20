@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetDeploymentInstancesInput extends js.Object {
+trait BatchGetDeploymentInstancesInput extends StObject {
   
   /**
     *  The unique ID of a deployment. 
@@ -26,27 +27,15 @@ object BatchGetDeploymentInstancesInput {
   }
   
   @scala.inline
-  implicit class BatchGetDeploymentInstancesInputOps[Self <: BatchGetDeploymentInstancesInput] (val x: Self) extends AnyVal {
+  implicit class BatchGetDeploymentInstancesInputMutableBuilder[Self <: BatchGetDeploymentInstancesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIds(value: InstancesList): Self = StObject.set(x, "instanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = this.set("instanceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceIds(value: InstancesList): Self = this.set("instanceIds", value.asInstanceOf[js.Any])
+    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "instanceIds", js.Array(value :_*))
   }
 }

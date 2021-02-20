@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Data.Text
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A segmenter class that is able to segment provided text into words. */
 @js.native
-trait WordsSegmenter extends js.Object {
+trait WordsSegmenter extends StObject {
   
   /**
     * Determines and returns the word which contains or follows a specified index into the provided text.
@@ -49,30 +50,18 @@ object WordsSegmenter {
   }
   
   @scala.inline
-  implicit class WordsSegmenterOps[Self <: WordsSegmenter] (val x: Self) extends AnyVal {
+  implicit class WordsSegmenterMutableBuilder[Self <: WordsSegmenter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTokenAt(value: (String, Double) => WordSegment): Self = StObject.set(x, "getTokenAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTokens(value: String => IVectorView[WordSegment]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTokenAt(value: (String, Double) => WordSegment): Self = this.set("getTokenAt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetTokens(value: String => IVectorView[WordSegment]): Self = this.set("getTokens", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = this.set("resolvedLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenize(value: (String, Double, WordSegmentsTokenizingHandler) => Unit): Self = this.set("tokenize", js.Any.fromFunction3(value))
+    def setTokenize(value: (String, Double, WordSegmentsTokenizingHandler) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
   }
 }

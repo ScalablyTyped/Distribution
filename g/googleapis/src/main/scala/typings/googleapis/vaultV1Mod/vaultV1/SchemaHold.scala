@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can be applied to all members of an organizational unit.
   */
 @js.native
-trait SchemaHold extends js.Object {
+trait SchemaHold extends StObject {
   
   /**
     * If set, the hold applies to the enumerated accounts and org_unit must be
@@ -61,63 +62,51 @@ object SchemaHold {
   }
   
   @scala.inline
-  implicit class SchemaHoldOps[Self <: SchemaHold] (val x: Self) extends AnyVal {
+  implicit class SchemaHoldMutableBuilder[Self <: SchemaHold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: js.Array[SchemaHeldAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountsVarargs(value: SchemaHeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
     
     @scala.inline
-    def setAccountsVarargs(value: SchemaHeldAccount*): Self = this.set("accounts", js.Array(value :_*))
+    def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounts(value: js.Array[SchemaHeldAccount]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    def setCorpusUndefined: Self = StObject.set(x, "corpus", js.undefined)
     
     @scala.inline
-    def deleteAccounts: Self = this.set("accounts", js.undefined)
+    def setHoldId(value: String): Self = StObject.set(x, "holdId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorpus(value: String): Self = this.set("corpus", value.asInstanceOf[js.Any])
+    def setHoldIdUndefined: Self = StObject.set(x, "holdId", js.undefined)
     
     @scala.inline
-    def deleteCorpus: Self = this.set("corpus", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldId(value: String): Self = this.set("holdId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHoldId: Self = this.set("holdId", js.undefined)
+    def setOrgUnit(value: SchemaHeldOrgUnit): Self = StObject.set(x, "orgUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrgUnitUndefined: Self = StObject.set(x, "orgUnit", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQuery(value: SchemaCorpusQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnit(value: SchemaHeldOrgUnit): Self = this.set("orgUnit", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteOrgUnit: Self = this.set("orgUnit", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: SchemaCorpusQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

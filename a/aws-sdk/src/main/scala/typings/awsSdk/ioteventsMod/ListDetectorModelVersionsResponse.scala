@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDetectorModelVersionsResponse extends js.Object {
+trait ListDetectorModelVersionsResponse extends StObject {
   
   /**
     * Summary information about the detector model versions.
@@ -26,33 +27,21 @@ object ListDetectorModelVersionsResponse {
   }
   
   @scala.inline
-  implicit class ListDetectorModelVersionsResponseOps[Self <: ListDetectorModelVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDetectorModelVersionsResponseMutableBuilder[Self <: ListDetectorModelVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorModelVersionSummaries(value: DetectorModelVersionSummaries): Self = StObject.set(x, "detectorModelVersionSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectorModelVersionSummariesUndefined: Self = StObject.set(x, "detectorModelVersionSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorModelVersionSummariesVarargs(value: DetectorModelVersionSummary*): Self = StObject.set(x, "detectorModelVersionSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setDetectorModelVersionSummariesVarargs(value: DetectorModelVersionSummary*): Self = this.set("detectorModelVersionSummaries", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorModelVersionSummaries(value: DetectorModelVersionSummaries): Self = this.set("detectorModelVersionSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectorModelVersionSummaries: Self = this.set("detectorModelVersionSummaries", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

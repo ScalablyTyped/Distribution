@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.mod
 
 import typings.reactNativeMaterialUi.anon.StackedActionsContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogStackedActionsProps extends js.Object {
+trait DialogStackedActionsProps extends StObject {
   
   var actions: js.Array[String] = js.native
   
@@ -23,33 +24,21 @@ object DialogStackedActionsProps {
   }
   
   @scala.inline
-  implicit class DialogStackedActionsPropsOps[Self <: DialogStackedActionsProps] (val x: Self) extends AnyVal {
+  implicit class DialogStackedActionsPropsMutableBuilder[Self <: DialogStackedActionsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnActionPress(value: String => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setStyle(value: StackedActionsContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnActionPress(value: String => Unit): Self = this.set("onActionPress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStyle(value: StackedActionsContainer): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

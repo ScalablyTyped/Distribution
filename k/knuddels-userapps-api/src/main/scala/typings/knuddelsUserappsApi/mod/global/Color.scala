@@ -1,5 +1,6 @@
 package typings.knuddelsUserappsApi.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("Color")
 @js.native
-class Color () extends js.Object {
+class Color () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_asNumber
@@ -41,23 +42,29 @@ class Color () extends js.Object {
   		 */
   def toKCode(): java.lang.String = js.native
 }
-/* static members */
-@JSGlobal("Color")
-@js.native
-object Color extends js.Object {
+object Color {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_fromNumber
   		 */
+  /* static member */
+  @JSGlobal("Color.fromNumber")
+  @js.native
   def fromNumber(value: Double): Color = js.native
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_fromRGB
   		 */
+  /* static member */
+  @JSGlobal("Color.fromRGB")
+  @js.native
   def fromRGB(red: Double, green: Double, blue: Double): Color = js.native
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Color.html#method_fromRGBA
   		 */
+  /* static member */
+  @JSGlobal("Color.fromRGBA")
+  @js.native
   def fromRGBA(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
 }

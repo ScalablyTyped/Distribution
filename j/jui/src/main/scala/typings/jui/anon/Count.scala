@@ -1,11 +1,12 @@
 package typings.jui.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Count extends js.Object {
+trait Count extends StObject {
   
   /**
     * @cfg {Integer} [count=0]
@@ -38,48 +39,36 @@ object Count {
   }
   
   @scala.inline
-  implicit class CountOps[Self <: Count] (val x: Self) extends AnyVal {
+  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setScreenCount(value: Double): Self = StObject.set(x, "screenCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageCount(value: Double): Self = this.set("pageCount", value.asInstanceOf[js.Any])
+    def setScreenCountUndefined: Self = StObject.set(x, "screenCount", js.undefined)
     
     @scala.inline
-    def deletePageCount: Self = this.set("pageCount", js.undefined)
+    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenCount(value: Double): Self = this.set("screenCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenCount: Self = this.set("screenCount", js.undefined)
-    
-    @scala.inline
-    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

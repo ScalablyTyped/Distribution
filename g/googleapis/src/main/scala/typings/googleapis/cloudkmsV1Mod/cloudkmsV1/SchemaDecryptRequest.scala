@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for KeyManagementService.Decrypt.
   */
 @js.native
-trait SchemaDecryptRequest extends js.Object {
+trait SchemaDecryptRequest extends StObject {
   
   /**
     * Optional data that must match the data originally supplied in
@@ -31,30 +32,18 @@ object SchemaDecryptRequest {
   }
   
   @scala.inline
-  implicit class SchemaDecryptRequestOps[Self <: SchemaDecryptRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDecryptRequestMutableBuilder[Self <: SchemaDecryptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalAuthenticatedData(value: String): Self = this.set("additionalAuthenticatedData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalAuthenticatedData: Self = this.set("additionalAuthenticatedData", js.undefined)
-    
-    @scala.inline
-    def setCiphertext(value: String): Self = this.set("ciphertext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCiphertext: Self = this.set("ciphertext", js.undefined)
+    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
   }
 }

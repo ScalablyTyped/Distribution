@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrainingDataSchema extends js.Object {
+trait TrainingDataSchema extends StObject {
   
   var labelSchema: LabelSchema = js.native
   
@@ -23,27 +24,15 @@ object TrainingDataSchema {
   }
   
   @scala.inline
-  implicit class TrainingDataSchemaOps[Self <: TrainingDataSchema] (val x: Self) extends AnyVal {
+  implicit class TrainingDataSchemaMutableBuilder[Self <: TrainingDataSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelSchema(value: LabelSchema): Self = StObject.set(x, "labelSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelVariables(value: ListOfStrings): Self = StObject.set(x, "modelVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelSchema(value: LabelSchema): Self = this.set("labelSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModelVariablesVarargs(value: String*): Self = this.set("modelVariables", js.Array(value :_*))
-    
-    @scala.inline
-    def setModelVariables(value: ListOfStrings): Self = this.set("modelVariables", value.asInstanceOf[js.Any])
+    def setModelVariablesVarargs(value: String*): Self = StObject.set(x, "modelVariables", js.Array(value :_*))
   }
 }

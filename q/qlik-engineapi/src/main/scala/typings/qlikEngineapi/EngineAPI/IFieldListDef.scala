@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the fields to show.
   */
 @js.native
-trait IFieldListDef extends js.Object {
+trait IFieldListDef extends StObject {
   
   /**
     * Shows the fields defined on the fly if set to true.
@@ -54,60 +55,48 @@ object IFieldListDef {
   }
   
   @scala.inline
-  implicit class IFieldListDefOps[Self <: IFieldListDef] (val x: Self) extends AnyVal {
+  implicit class IFieldListDefMutableBuilder[Self <: IFieldListDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQShowDefinitionOnly(value: Boolean): Self = StObject.set(x, "qShowDefinitionOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQShowDefinitionOnlyUndefined: Self = StObject.set(x, "qShowDefinitionOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQShowDerivedFields(value: Boolean): Self = StObject.set(x, "qShowDerivedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowDefinitionOnly(value: Boolean): Self = this.set("qShowDefinitionOnly", value.asInstanceOf[js.Any])
+    def setQShowDerivedFieldsUndefined: Self = StObject.set(x, "qShowDerivedFields", js.undefined)
     
     @scala.inline
-    def deleteQShowDefinitionOnly: Self = this.set("qShowDefinitionOnly", js.undefined)
+    def setQShowHidden(value: Boolean): Self = StObject.set(x, "qShowHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowDerivedFields(value: Boolean): Self = this.set("qShowDerivedFields", value.asInstanceOf[js.Any])
+    def setQShowHiddenUndefined: Self = StObject.set(x, "qShowHidden", js.undefined)
     
     @scala.inline
-    def deleteQShowDerivedFields: Self = this.set("qShowDerivedFields", js.undefined)
+    def setQShowImplicit(value: Boolean): Self = StObject.set(x, "qShowImplicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowHidden(value: Boolean): Self = this.set("qShowHidden", value.asInstanceOf[js.Any])
+    def setQShowImplicitUndefined: Self = StObject.set(x, "qShowImplicit", js.undefined)
     
     @scala.inline
-    def deleteQShowHidden: Self = this.set("qShowHidden", js.undefined)
+    def setQShowSemantic(value: Boolean): Self = StObject.set(x, "qShowSemantic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowImplicit(value: Boolean): Self = this.set("qShowImplicit", value.asInstanceOf[js.Any])
+    def setQShowSemanticUndefined: Self = StObject.set(x, "qShowSemantic", js.undefined)
     
     @scala.inline
-    def deleteQShowImplicit: Self = this.set("qShowImplicit", js.undefined)
+    def setQShowSrcTables(value: Boolean): Self = StObject.set(x, "qShowSrcTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowSemantic(value: Boolean): Self = this.set("qShowSemantic", value.asInstanceOf[js.Any])
+    def setQShowSrcTablesUndefined: Self = StObject.set(x, "qShowSrcTables", js.undefined)
     
     @scala.inline
-    def deleteQShowSemantic: Self = this.set("qShowSemantic", js.undefined)
+    def setQShowSystem(value: Boolean): Self = StObject.set(x, "qShowSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowSrcTables(value: Boolean): Self = this.set("qShowSrcTables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQShowSrcTables: Self = this.set("qShowSrcTables", js.undefined)
-    
-    @scala.inline
-    def setQShowSystem(value: Boolean): Self = this.set("qShowSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQShowSystem: Self = this.set("qShowSystem", js.undefined)
+    def setQShowSystemUndefined: Self = StObject.set(x, "qShowSystem", js.undefined)
   }
 }

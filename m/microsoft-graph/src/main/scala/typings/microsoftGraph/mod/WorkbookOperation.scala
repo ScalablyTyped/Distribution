@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,42 +26,30 @@ object WorkbookOperation {
   }
   
   @scala.inline
-  implicit class WorkbookOperationOps[Self <: WorkbookOperation] (val x: Self) extends AnyVal {
+  implicit class WorkbookOperationMutableBuilder[Self <: WorkbookOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: NullableOption[WorkbookOperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setError(value: NullableOption[WorkbookOperationError]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setResourceLocation(value: NullableOption[String]): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setResourceLocationNull: Self = StObject.set(x, "resourceLocation", null)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
     
     @scala.inline
-    def setResourceLocation(value: NullableOption[String]): Self = this.set("resourceLocation", value.asInstanceOf[js.Any])
+    def setStatus(value: WorkbookOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceLocation: Self = this.set("resourceLocation", js.undefined)
-    
-    @scala.inline
-    def setResourceLocationNull: Self = this.set("resourceLocation", null)
-    
-    @scala.inline
-    def setStatus(value: WorkbookOperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

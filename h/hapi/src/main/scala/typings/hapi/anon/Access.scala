@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Access extends js.Object {
+trait Access extends StObject {
   
   /**
     * Validates a request against the route's authentication access configuration, where:
@@ -28,21 +29,9 @@ object Access {
   }
   
   @scala.inline
-  implicit class AccessOps[Self <: Access] (val x: Self) extends AnyVal {
+  implicit class AccessMutableBuilder[Self <: Access] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccess(value: typings.hapi.mod.Request => Boolean): Self = this.set("access", js.Any.fromFunction1(value))
+    def setAccess(value: typings.hapi.mod.Request => Boolean): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
   }
 }

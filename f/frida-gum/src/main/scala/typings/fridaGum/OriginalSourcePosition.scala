@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginalSourcePosition extends js.Object {
+trait OriginalSourcePosition extends StObject {
   
   /**
     * Column number.
@@ -36,33 +37,21 @@ object OriginalSourcePosition {
   }
   
   @scala.inline
-  implicit class OriginalSourcePositionOps[Self <: OriginalSourcePosition] (val x: Self) extends AnyVal {
+  implicit class OriginalSourcePositionMutableBuilder[Self <: OriginalSourcePosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

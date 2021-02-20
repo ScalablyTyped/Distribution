@@ -5,29 +5,28 @@ import typings.gapiPlus.gapi.client.plus.people.GetParameters
 import typings.gapiPlus.gapi.client.plus.people.PeopleFeed
 import typings.gapiPlus.gapi.client.plus.people.Person
 import typings.gapiPlus.gapi.client.plus.people.SearchParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       // See Google+ REST API Reference https://developers.google.com/+/web/api/rest/latest/
-      @js.native
-      object plus extends js.Object {
+      object plus {
         
-        @js.native
-        object people extends js.Object {
+        object people {
           
+          @JSGlobal("gapi.client.plus.people.get")
+          @js.native
           def get(parameters: GetParameters): HttpRequest[Person] = js.native
           
+          @JSGlobal("gapi.client.plus.people.search")
+          @js.native
           def search(parameters: SearchParameters): HttpRequest[PeopleFeed] = js.native
         }
       }

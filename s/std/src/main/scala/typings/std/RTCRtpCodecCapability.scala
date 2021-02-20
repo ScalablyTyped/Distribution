@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCRtpCodecCapability extends js.Object {
+trait RTCRtpCodecCapability extends StObject {
   
   var channels: js.UndefOr[Double] = js.native
   
@@ -24,36 +25,24 @@ object RTCRtpCodecCapability {
   }
   
   @scala.inline
-  implicit class RTCRtpCodecCapabilityOps[Self <: RTCRtpCodecCapability] (val x: Self) extends AnyVal {
+  implicit class RTCRtpCodecCapabilityMutableBuilder[Self <: RTCRtpCodecCapability] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClockRate(value: Double): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClockRate(value: Double): Self = this.set("clockRate", value.asInstanceOf[js.Any])
+    def setMimeType(value: java.lang.String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: java.lang.String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setSdpFmtpLine(value: java.lang.String): Self = StObject.set(x, "sdpFmtpLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: Double): Self = this.set("channels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
-    
-    @scala.inline
-    def setSdpFmtpLine(value: java.lang.String): Self = this.set("sdpFmtpLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdpFmtpLine: Self = this.set("sdpFmtpLine", js.undefined)
+    def setSdpFmtpLineUndefined: Self = StObject.set(x, "sdpFmtpLine", js.undefined)
   }
 }

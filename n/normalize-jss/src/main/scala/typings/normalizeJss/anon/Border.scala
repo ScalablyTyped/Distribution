@@ -1,11 +1,12 @@
 package typings.normalizeJss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Border extends js.Object {
+trait Border extends StObject {
   
   var border: String = js.native
   
@@ -22,33 +23,21 @@ object Border {
   }
   
   @scala.inline
-  implicit class BorderOps[Self <: Border] (val x: Self) extends AnyVal {
+  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMargin(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarginVarargs(value: js.Array[Double]*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setPadding(value: js.Array[js.Array[String]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginVarargs(value: js.Array[Double]*): Self = this.set("margin", js.Array(value :_*))
-    
-    @scala.inline
-    def setMargin(value: js.Array[js.Array[Double]]): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingVarargs(value: js.Array[String]*): Self = this.set("padding", js.Array(value :_*))
-    
-    @scala.inline
-    def setPadding(value: js.Array[js.Array[String]]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPaddingVarargs(value: js.Array[String]*): Self = StObject.set(x, "padding", js.Array(value :_*))
   }
 }

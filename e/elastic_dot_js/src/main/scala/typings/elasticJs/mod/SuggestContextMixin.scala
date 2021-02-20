@@ -1,12 +1,13 @@
 package typings.elasticJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SuggestContextMixin")
 @js.native
-class SuggestContextMixin () extends js.Object {
+class SuggestContextMixin () extends StObject {
   
   /*
     Sets analyzer used to analyze the suggest text.

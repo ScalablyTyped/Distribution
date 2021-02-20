@@ -2,6 +2,7 @@ package typings.datatablesNetButtons.DataTables
 
 import typings.datatablesNet.JQuery
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,150 +139,138 @@ object ButtonSettings {
   }
   
   @scala.inline
-  implicit class ButtonSettingsOps[Self <: ButtonSettings] (val x: Self) extends AnyVal {
+  implicit class ButtonSettingsMutableBuilder[Self <: ButtonSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPrint(value: Boolean): Self = StObject.set(x, "autoPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPrintUndefined: Self = StObject.set(x, "autoPrint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPrint(value: Boolean): Self = this.set("autoPrint", value.asInstanceOf[js.Any])
+    def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
     
     @scala.inline
-    def deleteAutoPrint: Self = this.set("autoPrint", js.undefined)
+    def setCharset(value: String | Boolean): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBom(value: Boolean): Self = this.set("bom", value.asInstanceOf[js.Any])
+    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
     @scala.inline
-    def deleteBom: Self = this.set("bom", js.undefined)
+    def setColumnText(value: (/* dt */ Api, /* i */ Double, /* title */ String) => String): Self = StObject.set(x, "columnText", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCharset(value: String | Boolean): Self = this.set("charset", value.asInstanceOf[js.Any])
+    def setColumnTextUndefined: Self = StObject.set(x, "columnText", js.undefined)
     
     @scala.inline
-    def deleteCharset: Self = this.set("charset", js.undefined)
+    def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnText(value: (/* dt */ Api, /* i */ Double, /* title */ String) => String): Self = this.set("columnText", js.Any.fromFunction3(value))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteColumnText: Self = this.set("columnText", js.undefined)
+    def setCustomize(value: /* win */ Window | String => Unit): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumns(value: js.Any): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setCustomizeData(value: /* content */ js.Any => Unit): Self = StObject.set(x, "customizeData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setCustomizeDataUndefined: Self = StObject.set(x, "customizeData", js.undefined)
     
     @scala.inline
-    def setCustomize(value: /* win */ Window | String => Unit): Self = this.set("customize", js.Any.fromFunction1(value))
+    def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
     
     @scala.inline
-    def deleteCustomize: Self = this.set("customize", js.undefined)
+    def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeData(value: /* content */ js.Any => Unit): Self = this.set("customizeData", js.Any.fromFunction1(value))
+    def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
     
     @scala.inline
-    def deleteCustomizeData: Self = this.set("customizeData", js.undefined)
+    def setExportOptions(value: ButtonExportOptions | js.Object): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeChar(value: String): Self = this.set("escapeChar", value.asInstanceOf[js.Any])
+    def setExportOptionsUndefined: Self = StObject.set(x, "exportOptions", js.undefined)
     
     @scala.inline
-    def deleteEscapeChar: Self = this.set("escapeChar", js.undefined)
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportOptions(value: ButtonExportOptions | js.Object): Self = this.set("exportOptions", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteExportOptions: Self = this.set("exportOptions", js.undefined)
+    def setFieldBoundary(value: String): Self = StObject.set(x, "fieldBoundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setFieldBoundaryUndefined: Self = StObject.set(x, "fieldBoundary", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setFieldSeparator(value: String): Self = StObject.set(x, "fieldSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldBoundary(value: String): Self = this.set("fieldBoundary", value.asInstanceOf[js.Any])
+    def setFieldSeparatorUndefined: Self = StObject.set(x, "fieldSeparator", js.undefined)
     
     @scala.inline
-    def deleteFieldBoundary: Self = this.set("fieldBoundary", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldSeparator(value: String): Self = this.set("fieldSeparator", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteFieldSeparator: Self = this.set("fieldSeparator", js.undefined)
+    def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: Boolean): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setMessage(value: String | Api | JQuery | js.Object): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Boolean): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setMessageBottom(value: String): Self = StObject.set(x, "messageBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setMessageBottomUndefined: Self = StObject.set(x, "messageBottom", js.undefined)
     
     @scala.inline
-    def setMessage(value: String | Api | JQuery | js.Object): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessageTop(value: String): Self = StObject.set(x, "messageTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageTopUndefined: Self = StObject.set(x, "messageTop", js.undefined)
     
     @scala.inline
-    def setMessageBottom(value: String): Self = this.set("messageBottom", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMessageBottom: Self = this.set("messageBottom", js.undefined)
+    def setNewLine(value: String): Self = StObject.set(x, "newLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageTop(value: String): Self = this.set("messageTop", value.asInstanceOf[js.Any])
+    def setNewLineUndefined: Self = StObject.set(x, "newLine", js.undefined)
     
     @scala.inline
-    def deleteMessageTop: Self = this.set("messageTop", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLine(value: String): Self = this.set("newLine", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteNewLine: Self = this.set("newLine", js.undefined)
+    def setPageSize(value: String): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: String): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

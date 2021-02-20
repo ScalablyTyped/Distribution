@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.`private`
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsCreateSelfHostedRunnerGroupForOrgEndpoint extends js.Object {
+trait ActionsCreateSelfHostedRunnerGroupForOrgEndpoint extends StObject {
   
   /**
     * Name of the runner group.
@@ -43,48 +44,36 @@ object ActionsCreateSelfHostedRunnerGroupForOrgEndpoint {
   }
   
   @scala.inline
-  implicit class ActionsCreateSelfHostedRunnerGroupForOrgEndpointOps[Self <: ActionsCreateSelfHostedRunnerGroupForOrgEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActionsCreateSelfHostedRunnerGroupForOrgEndpointMutableBuilder[Self <: ActionsCreateSelfHostedRunnerGroupForOrgEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunners(value: js.Array[Double]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
     
     @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
+    def setRunnersVarargs(value: Double*): Self = StObject.set(x, "runners", js.Array(value :_*))
     
     @scala.inline
-    def setRunnersVarargs(value: Double*): Self = this.set("runners", js.Array(value :_*))
+    def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunners(value: js.Array[Double]): Self = this.set("runners", value.asInstanceOf[js.Any])
+    def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
     
     @scala.inline
-    def deleteRunners: Self = this.set("runners", js.undefined)
+    def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
     
     @scala.inline
-    def setSelected_repository_idsVarargs(value: Double*): Self = this.set("selected_repository_ids", js.Array(value :_*))
+    def setVisibility(value: selected | all | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected_repository_ids(value: js.Array[Double]): Self = this.set("selected_repository_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected_repository_ids: Self = this.set("selected_repository_ids", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: selected | all | `private`): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

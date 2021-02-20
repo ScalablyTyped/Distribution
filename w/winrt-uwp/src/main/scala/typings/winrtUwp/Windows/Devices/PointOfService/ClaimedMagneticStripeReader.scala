@@ -13,13 +13,14 @@ import typings.winrtUwp.winrtUwpStrings.bankcarddatareceived
 import typings.winrtUwp.winrtUwpStrings.erroroccurred
 import typings.winrtUwp.winrtUwpStrings.releasedevicerequested
 import typings.winrtUwp.winrtUwpStrings.vendorspecificdatareceived
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the claimed magnetic stripe reader. */
 @js.native
-trait ClaimedMagneticStripeReader extends js.Object {
+trait ClaimedMagneticStripeReader extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
@@ -54,7 +55,8 @@ trait ClaimedMagneticStripeReader extends js.Object {
     */
   def authenticateDeviceAsync(responseToken: js.Array[Double]): js.Any = js.native
   
-   /* unmapped return type */ /** Releases the exclusive claim to the magnetic strip reader. */
+  /* unmapped return type */
+  /** Releases the exclusive claim to the magnetic strip reader. */
   def close(): Unit = js.native
   
   /** Gets or sets the MagneticStripeReaderEncryptionAlgorithms that will be used to encrypt the track data. */
@@ -66,7 +68,8 @@ trait ClaimedMagneticStripeReader extends js.Object {
     */
   def deAuthenticateDeviceAsync(responseToken: js.Array[Double]): js.Any = js.native
   
-   /* unmapped return type */ /** Gets the DeviceInformation.Id of the claimed magnetic stripe reader. */
+  /* unmapped return type */
+  /** Gets the DeviceInformation.Id of the claimed magnetic stripe reader. */
   var deviceId: String = js.native
   
   /**
@@ -192,7 +195,8 @@ trait ClaimedMagneticStripeReader extends js.Object {
     */
   def updateKeyAsync(key: String, keyName: String): js.Any = js.native
   
-   /* unmapped return type */ /**
+  /* unmapped return type */
+  /**
     * Updates the specified statistics.
     * @param statistics The list of key-value pairs of statistics to update.
     * @return No object or value is returned by this method when it completes.

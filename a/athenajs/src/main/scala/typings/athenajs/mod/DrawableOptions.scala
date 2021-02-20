@@ -1,12 +1,13 @@
 package typings.athenajs.mod
 
 import typings.athenajs.anon.Instantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawableOptions extends js.Object {
+trait DrawableOptions extends StObject {
   
   var behavior: js.UndefOr[Instantiable] = js.native
   
@@ -39,84 +40,72 @@ object DrawableOptions {
   }
   
   @scala.inline
-  implicit class DrawableOptionsOps[Self <: DrawableOptions] (val x: Self) extends AnyVal {
+  implicit class DrawableOptionsMutableBuilder[Self <: DrawableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: Instantiable): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanCollide(value: Boolean): Self = StObject.set(x, "canCollide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: Instantiable): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    def setCanCollideFriendBullet(value: Boolean): Self = StObject.set(x, "canCollideFriendBullet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBehavior: Self = this.set("behavior", js.undefined)
+    def setCanCollideFriendBulletUndefined: Self = StObject.set(x, "canCollideFriendBullet", js.undefined)
     
     @scala.inline
-    def setCanCollide(value: Boolean): Self = this.set("canCollide", value.asInstanceOf[js.Any])
+    def setCanCollideUndefined: Self = StObject.set(x, "canCollide", js.undefined)
     
     @scala.inline
-    def deleteCanCollide: Self = this.set("canCollide", js.undefined)
+    def setCollideGroup(value: Double): Self = StObject.set(x, "collideGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanCollideFriendBullet(value: Boolean): Self = this.set("canCollideFriendBullet", value.asInstanceOf[js.Any])
+    def setCollideGroupUndefined: Self = StObject.set(x, "collideGroup", js.undefined)
     
     @scala.inline
-    def deleteCanCollideFriendBullet: Self = this.set("canCollideFriendBullet", js.undefined)
+    def setLayer(value: Double): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollideGroup(value: Double): Self = this.set("collideGroup", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteCollideGroup: Self = this.set("collideGroup", js.undefined)
+    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: Double): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPool(value: Double): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: Double): Self = this.set("pool", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deletePool: Self = this.set("pool", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

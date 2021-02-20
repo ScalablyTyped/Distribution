@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointsApiService extends js.Object {
+trait EndpointsApiService extends StObject {
   
   /**
     * Endpoints service configuration ID as specified by the Service Management API. For example "2016-09-19r1".By default, the rollout strategy for Endpoints is RolloutStrategy.FIXED.
@@ -33,42 +34,30 @@ object EndpointsApiService {
   }
   
   @scala.inline
-  implicit class EndpointsApiServiceOps[Self <: EndpointsApiService] (val x: Self) extends AnyVal {
+  implicit class EndpointsApiServiceMutableBuilder[Self <: EndpointsApiService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableTraceSampling(value: Boolean): Self = StObject.set(x, "disableTraceSampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigId(value: String): Self = this.set("configId", value.asInstanceOf[js.Any])
+    def setDisableTraceSamplingUndefined: Self = StObject.set(x, "disableTraceSampling", js.undefined)
     
     @scala.inline
-    def deleteConfigId: Self = this.set("configId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTraceSampling(value: Boolean): Self = this.set("disableTraceSampling", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisableTraceSampling: Self = this.set("disableTraceSampling", js.undefined)
+    def setRolloutStrategy(value: String): Self = StObject.set(x, "rolloutStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRolloutStrategy(value: String): Self = this.set("rolloutStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolloutStrategy: Self = this.set("rolloutStrategy", js.undefined)
+    def setRolloutStrategyUndefined: Self = StObject.set(x, "rolloutStrategy", js.undefined)
   }
 }

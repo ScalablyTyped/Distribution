@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Geocoding API
   */
 @js.native
-trait Geocoder extends js.Object {
+trait Geocoder extends StObject {
   
   def geocode(address: String): js.Any = js.native
   

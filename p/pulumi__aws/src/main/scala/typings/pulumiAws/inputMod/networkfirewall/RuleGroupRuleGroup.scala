@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.networkfirewall
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroup extends js.Object {
+trait RuleGroupRuleGroup extends StObject {
   
   /**
     * A configuration block that defines additional settings available to use in the rules defined in the rule group. See Rule Variables below for details.
@@ -27,27 +28,15 @@ object RuleGroupRuleGroup {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupOps[Self <: RuleGroupRuleGroup] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupMutableBuilder[Self <: RuleGroupRuleGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleVariables(value: Input[RuleGroupRuleGroupRuleVariables]): Self = StObject.set(x, "ruleVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleVariablesUndefined: Self = StObject.set(x, "ruleVariables", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRulesSource(value: Input[RuleGroupRuleGroupRulesSource]): Self = this.set("rulesSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleVariables(value: Input[RuleGroupRuleGroupRuleVariables]): Self = this.set("ruleVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleVariables: Self = this.set("ruleVariables", js.undefined)
+    def setRulesSource(value: Input[RuleGroupRuleGroupRulesSource]): Self = StObject.set(x, "rulesSource", value.asInstanceOf[js.Any])
   }
 }

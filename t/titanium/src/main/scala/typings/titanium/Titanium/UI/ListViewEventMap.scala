@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,120 +121,108 @@ object ListViewEventMap {
   }
   
   @scala.inline
-  implicit class ListViewEventMapOps[Self <: ListViewEventMap] (val x: Self) extends AnyVal {
+  implicit class ListViewEventMapMutableBuilder[Self <: ListViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelprefetch(value: ListViewCancelprefetchEvent): Self = StObject.set(x, "cancelprefetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: ListViewClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDblclick(value: ListViewDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelprefetch(value: ListViewCancelprefetchEvent): Self = this.set("cancelprefetch", value.asInstanceOf[js.Any])
+    def setDelete(value: ListViewDeleteEvent): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: ListViewClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: ListViewDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: ListViewDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setDragend(value: ListViewDragendEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: ListViewDeleteEvent): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setDragstart(value: ListViewDragstartEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: ListViewDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setEditaction(value: ListViewEditactionEvent): Self = StObject.set(x, "editaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragend(value: ListViewDragendEvent): Self = this.set("dragend", value.asInstanceOf[js.Any])
+    def setFocus(value: ListViewFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragstart(value: ListViewDragstartEvent): Self = this.set("dragstart", value.asInstanceOf[js.Any])
+    def setIndexclick(value: ListViewIndexclickEvent): Self = StObject.set(x, "indexclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditaction(value: ListViewEditactionEvent): Self = this.set("editaction", value.asInstanceOf[js.Any])
+    def setInsert(value: ListViewInsertEvent): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: ListViewFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setItemclick(value: ListViewItemclickEvent): Self = StObject.set(x, "itemclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexclick(value: ListViewIndexclickEvent): Self = this.set("indexclick", value.asInstanceOf[js.Any])
+    def setItemsselected(value: ListViewItemsselectedEvent): Self = StObject.set(x, "itemsselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: ListViewInsertEvent): Self = this.set("insert", value.asInstanceOf[js.Any])
+    def setKeypressed(value: ListViewKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemclick(value: ListViewItemclickEvent): Self = this.set("itemclick", value.asInstanceOf[js.Any])
+    def setLongclick(value: ListViewLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsselected(value: ListViewItemsselectedEvent): Self = this.set("itemsselected", value.asInstanceOf[js.Any])
+    def setLongpress(value: ListViewLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: ListViewKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setMarker(value: ListViewMarkerEvent): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: ListViewLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setMove(value: ListViewMoveEvent): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: ListViewLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setNoresults(value: ListViewNoresultsEvent): Self = StObject.set(x, "noresults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: ListViewMarkerEvent): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setPinch(value: ListViewPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: ListViewMoveEvent): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setPostlayout(value: ListViewPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoresults(value: ListViewNoresultsEvent): Self = this.set("noresults", value.asInstanceOf[js.Any])
+    def setPrefetch(value: ListViewPrefetchEvent): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: ListViewPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setPull(value: ListViewPullEvent): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: ListViewPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setPullend(value: ListViewPullendEvent): Self = StObject.set(x, "pullend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefetch(value: ListViewPrefetchEvent): Self = this.set("prefetch", value.asInstanceOf[js.Any])
+    def setScrollend(value: ListViewScrollendEvent): Self = StObject.set(x, "scrollend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull(value: ListViewPullEvent): Self = this.set("pull", value.asInstanceOf[js.Any])
+    def setScrolling(value: ListViewScrollingEvent): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullend(value: ListViewPullendEvent): Self = this.set("pullend", value.asInstanceOf[js.Any])
+    def setScrollstart(value: ListViewScrollstartEvent): Self = StObject.set(x, "scrollstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollend(value: ListViewScrollendEvent): Self = this.set("scrollend", value.asInstanceOf[js.Any])
+    def setSingletap(value: ListViewSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrolling(value: ListViewScrollingEvent): Self = this.set("scrolling", value.asInstanceOf[js.Any])
+    def setSwipe(value: ListViewSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollstart(value: ListViewScrollstartEvent): Self = this.set("scrollstart", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: ListViewTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: ListViewSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: ListViewTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: ListViewSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: ListViewTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: ListViewTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: ListViewTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: ListViewTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: ListViewTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: ListViewTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: ListViewTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: ListViewTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

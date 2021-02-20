@@ -1,11 +1,12 @@
 package typings.agoraRtcSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Forceturn extends js.Object {
+trait Forceturn extends StObject {
   
   /**
     * Sets whether to force data transfer by TURN Server:
@@ -38,42 +39,30 @@ object Forceturn {
   }
   
   @scala.inline
-  implicit class ForceturnOps[Self <: Forceturn] (val x: Self) extends AnyVal {
+  implicit class ForceturnMutableBuilder[Self <: Forceturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceturn(value: Boolean): Self = StObject.set(x, "forceturn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceturnUndefined: Self = StObject.set(x, "forceturn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setTcpport(value: String): Self = StObject.set(x, "tcpport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTurnServerURL(value: String): Self = this.set("turnServerURL", value.asInstanceOf[js.Any])
+    def setTcpportUndefined: Self = StObject.set(x, "tcpport", js.undefined)
     
     @scala.inline
-    def setUdpport(value: String): Self = this.set("udpport", value.asInstanceOf[js.Any])
+    def setTurnServerURL(value: String): Self = StObject.set(x, "turnServerURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUdpport(value: String): Self = StObject.set(x, "udpport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceturn(value: Boolean): Self = this.set("forceturn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceturn: Self = this.set("forceturn", js.undefined)
-    
-    @scala.inline
-    def setTcpport(value: String): Self = this.set("tcpport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpport: Self = this.set("tcpport", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

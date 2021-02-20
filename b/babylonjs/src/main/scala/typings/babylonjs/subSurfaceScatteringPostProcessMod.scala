@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/subSurfaceScatteringPostProcess", JSImport.Namespace)
-@js.native
-object subSurfaceScatteringPostProcessMod extends js.Object {
+object subSurfaceScatteringPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/subSurfaceScatteringPostProcess", "SubSurfaceScatteringPostProcess")
   @js.native
   class SubSurfaceScatteringPostProcess protected () extends PostProcess {
     def this(

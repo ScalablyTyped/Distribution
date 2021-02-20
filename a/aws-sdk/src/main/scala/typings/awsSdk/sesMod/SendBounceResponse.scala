@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendBounceResponse extends js.Object {
+trait SendBounceResponse extends StObject {
   
   /**
     * The message ID of the bounce message.
@@ -21,24 +22,12 @@ object SendBounceResponse {
   }
   
   @scala.inline
-  implicit class SendBounceResponseOps[Self <: SendBounceResponse] (val x: Self) extends AnyVal {
+  implicit class SendBounceResponseMutableBuilder[Self <: SendBounceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageId(value: MessageId): Self = this.set("MessageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlFragmentType extends js.Object {
+trait SqlFragmentType extends StObject {
   
   var parameters: js.Array[PrimitiveValueExpressionType] = js.native
   
@@ -20,27 +21,15 @@ object SqlFragmentType {
   }
   
   @scala.inline
-  implicit class SqlFragmentTypeOps[Self <: SqlFragmentType] (val x: Self) extends AnyVal {
+  implicit class SqlFragmentTypeMutableBuilder[Self <: SqlFragmentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: js.Array[PrimitiveValueExpressionType]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersVarargs(value: PrimitiveValueExpressionType*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParametersVarargs(value: PrimitiveValueExpressionType*): Self = this.set("parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: js.Array[PrimitiveValueExpressionType]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }
 }

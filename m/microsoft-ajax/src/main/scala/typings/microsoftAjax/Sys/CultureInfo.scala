@@ -1,5 +1,6 @@
 package typings.microsoftAjax.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link http://msdn.microsoft.com/en-us/library/bb384004(v=vs.100).aspx}
   */
 @js.native
-trait CultureInfo extends js.Object {
+trait CultureInfo extends StObject {
   
   /**
     * Gets an object that contains an array of culture-sensitive formatting and parsing string values that can be applied to Date type extensions.
@@ -44,33 +45,21 @@ object CultureInfo {
   }
   
   @scala.inline
-  implicit class CultureInfoOps[Self <: CultureInfo] (val x: Self) extends AnyVal {
+  implicit class CultureInfoMutableBuilder[Self <: CultureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateTimeFormat(value: js.Array[String]): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTimeFormatVarargs(value: String*): Self = StObject.set(x, "dateTimeFormat", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeFormatVarargs(value: String*): Self = this.set("dateTimeFormat", js.Array(value :_*))
+    def setNumberFormat(value: js.Array[String]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeFormat(value: js.Array[String]): Self = this.set("dateTimeFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberFormatVarargs(value: String*): Self = this.set("numberFormat", js.Array(value :_*))
-    
-    @scala.inline
-    def setNumberFormat(value: js.Array[String]): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormatVarargs(value: String*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
   }
 }

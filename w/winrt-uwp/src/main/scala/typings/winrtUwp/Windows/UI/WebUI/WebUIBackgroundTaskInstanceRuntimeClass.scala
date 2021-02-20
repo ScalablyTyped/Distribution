@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.ApplicationModel.Background.IBackgroundTaskInsta
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.canceled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to an instance of a background task. */
 @js.native
-trait WebUIBackgroundTaskInstanceRuntimeClass extends js.Object {
+trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

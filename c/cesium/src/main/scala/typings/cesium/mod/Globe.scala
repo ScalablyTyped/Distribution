@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Globe")
 @js.native
-class Globe () extends js.Object {
+class Globe () extends StObject {
   def this(ellipsoid: Ellipsoid) = this()
   
   var atmosphereBrightnessShift: Double = js.native

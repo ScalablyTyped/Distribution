@@ -2,12 +2,13 @@ package typings.winrt.Windows.UI.Notifications
 
 import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITileNotification extends js.Object {
+trait ITileNotification extends StObject {
   
   var content: XmlDocument = js.native
   
@@ -24,27 +25,15 @@ object ITileNotification {
   }
   
   @scala.inline
-  implicit class ITileNotificationOps[Self <: ITileNotification] (val x: Self) extends AnyVal {
+  implicit class ITileNotificationMutableBuilder[Self <: ITileNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContent(value: XmlDocument): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpirationTime(value: Date): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

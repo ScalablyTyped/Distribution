@@ -2,13 +2,14 @@ package typings.semanticUiSidebar.anon
 
 import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings
 import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.DefaultTransitionSettings._Impl, keyof semantic-ui-sidebar.SemanticUI.Sidebar.DefaultTransitionSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplComputer extends js.Object {
+trait PartialPickImplkeyofImplComputer extends StObject {
   
   var computer: js.UndefOr[ComputerSettings] = js.native
   
@@ -23,30 +24,18 @@ object PartialPickImplkeyofImplComputer {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplComputerOps[Self <: PartialPickImplkeyofImplComputer] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplComputerMutableBuilder[Self <: PartialPickImplkeyofImplComputer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputer(value: ComputerSettings): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobile(value: MobileSettings): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputer(value: ComputerSettings): Self = this.set("computer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputer: Self = this.set("computer", js.undefined)
-    
-    @scala.inline
-    def setMobile(value: MobileSettings): Self = this.set("mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMobile: Self = this.set("mobile", js.undefined)
+    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
   }
 }

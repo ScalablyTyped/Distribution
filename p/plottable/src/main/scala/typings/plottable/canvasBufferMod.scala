@@ -3,16 +3,16 @@ package typings.plottable
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/drawers/canvasBuffer", JSImport.Namespace)
-@js.native
-object canvasBufferMod extends js.Object {
+object canvasBufferMod {
   
+  @JSImport("plottable/build/src/drawers/canvasBuffer", "CanvasBuffer")
   @js.native
-  class CanvasBuffer protected () extends js.Object {
+  class CanvasBuffer protected () extends StObject {
     def this(screenWidth: Double, screenHeight: Double) = this()
     def this(screenWidth: Double, screenHeight: Double, devicePixelRatio: Double) = this()
     
@@ -61,12 +61,13 @@ object canvasBufferMod extends js.Object {
     var screenWidth: Double = js.native
   }
   /* static members */
-  @js.native
-  object CanvasBuffer extends js.Object {
+  object CanvasBuffer {
     
     /**
       * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
       */
+    @JSImport("plottable/build/src/drawers/canvasBuffer", "CanvasBuffer.sizePixels")
+    @js.native
     def sizePixels(ctx: CanvasRenderingContext2D, screenWidth: Double, screenHeight: Double, devicePixelRatio: Double): Unit = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeCoverage extends js.Object {
+trait CodeCoverage extends StObject {
   
   /**
     * The percentage of branches that are covered by your tests.
@@ -66,78 +67,66 @@ object CodeCoverage {
   }
   
   @scala.inline
-  implicit class CodeCoverageOps[Self <: CodeCoverage] (val x: Self) extends AnyVal {
+  implicit class CodeCoverageMutableBuilder[Self <: CodeCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchCoveragePercentage(value: Percentage): Self = StObject.set(x, "branchCoveragePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchCoveragePercentageUndefined: Self = StObject.set(x, "branchCoveragePercentage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranchesCovered(value: NonNegativeInt): Self = StObject.set(x, "branchesCovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchCoveragePercentage(value: Percentage): Self = this.set("branchCoveragePercentage", value.asInstanceOf[js.Any])
+    def setBranchesCoveredUndefined: Self = StObject.set(x, "branchesCovered", js.undefined)
     
     @scala.inline
-    def deleteBranchCoveragePercentage: Self = this.set("branchCoveragePercentage", js.undefined)
+    def setBranchesMissed(value: NonNegativeInt): Self = StObject.set(x, "branchesMissed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchesCovered(value: NonNegativeInt): Self = this.set("branchesCovered", value.asInstanceOf[js.Any])
+    def setBranchesMissedUndefined: Self = StObject.set(x, "branchesMissed", js.undefined)
     
     @scala.inline
-    def deleteBranchesCovered: Self = this.set("branchesCovered", js.undefined)
+    def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchesMissed(value: NonNegativeInt): Self = this.set("branchesMissed", value.asInstanceOf[js.Any])
+    def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     
     @scala.inline
-    def deleteBranchesMissed: Self = this.set("branchesMissed", js.undefined)
+    def setFilePath(value: NonEmptyString): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired(value: Timestamp): Self = this.set("expired", value.asInstanceOf[js.Any])
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def deleteExpired: Self = this.set("expired", js.undefined)
+    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: NonEmptyString): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setLineCoveragePercentage(value: Percentage): Self = StObject.set(x, "lineCoveragePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLineCoveragePercentageUndefined: Self = StObject.set(x, "lineCoveragePercentage", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLinesCovered(value: NonNegativeInt): Self = StObject.set(x, "linesCovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCoveragePercentage(value: Percentage): Self = this.set("lineCoveragePercentage", value.asInstanceOf[js.Any])
+    def setLinesCoveredUndefined: Self = StObject.set(x, "linesCovered", js.undefined)
     
     @scala.inline
-    def deleteLineCoveragePercentage: Self = this.set("lineCoveragePercentage", js.undefined)
+    def setLinesMissed(value: NonNegativeInt): Self = StObject.set(x, "linesMissed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesCovered(value: NonNegativeInt): Self = this.set("linesCovered", value.asInstanceOf[js.Any])
+    def setLinesMissedUndefined: Self = StObject.set(x, "linesMissed", js.undefined)
     
     @scala.inline
-    def deleteLinesCovered: Self = this.set("linesCovered", js.undefined)
+    def setReportARN(value: NonEmptyString): Self = StObject.set(x, "reportARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesMissed(value: NonNegativeInt): Self = this.set("linesMissed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinesMissed: Self = this.set("linesMissed", js.undefined)
-    
-    @scala.inline
-    def setReportARN(value: NonEmptyString): Self = this.set("reportARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportARN: Self = this.set("reportARN", js.undefined)
+    def setReportARNUndefined: Self = StObject.set(x, "reportARN", js.undefined)
   }
 }

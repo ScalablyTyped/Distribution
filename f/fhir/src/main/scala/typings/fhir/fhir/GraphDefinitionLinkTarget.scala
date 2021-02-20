@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,57 +51,45 @@ object GraphDefinitionLinkTarget {
   }
   
   @scala.inline
-  implicit class GraphDefinitionLinkTargetOps[Self <: GraphDefinitionLinkTarget] (val x: Self) extends AnyVal {
+  implicit class GraphDefinitionLinkTargetMutableBuilder[Self <: GraphDefinitionLinkTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompartment(value: js.Array[GraphDefinitionLinkTargetCompartment]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompartmentUndefined: Self = StObject.set(x, "compartment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompartmentVarargs(value: GraphDefinitionLinkTargetCompartment*): Self = StObject.set(x, "compartment", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLink(value: js.Array[GraphDefinitionLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_profile(value: Element): Self = this.set("_profile", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def delete_profile: Self = this.set("_profile", js.undefined)
+    def setLinkVarargs(value: GraphDefinitionLink*): Self = StObject.set(x, "link", js.Array(value :_*))
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setProfile(value: uri): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def setCompartmentVarargs(value: GraphDefinitionLinkTargetCompartment*): Self = this.set("compartment", js.Array(value :_*))
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompartment(value: js.Array[GraphDefinitionLinkTargetCompartment]): Self = this.set("compartment", value.asInstanceOf[js.Any])
+    def set_profile(value: Element): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompartment: Self = this.set("compartment", js.undefined)
+    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
     @scala.inline
-    def setLinkVarargs(value: GraphDefinitionLink*): Self = this.set("link", js.Array(value :_*))
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: js.Array[GraphDefinitionLink]): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
-    
-    @scala.inline
-    def setProfile(value: uri): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

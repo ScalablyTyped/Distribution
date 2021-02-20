@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ac3Settings extends js.Object {
+trait Ac3Settings extends StObject {
   
   /**
     * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
@@ -51,60 +52,48 @@ object Ac3Settings {
   }
   
   @scala.inline
-  implicit class Ac3SettingsOps[Self <: Ac3Settings] (val x: Self) extends AnyVal {
+  implicit class Ac3SettingsMutableBuilder[Self <: Ac3Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitstreamMode(value: Ac3BitstreamMode): Self = StObject.set(x, "BitstreamMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: double): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    def setBitstreamModeUndefined: Self = StObject.set(x, "BitstreamMode", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    def setCodingMode(value: Ac3CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitstreamMode(value: Ac3BitstreamMode): Self = this.set("BitstreamMode", value.asInstanceOf[js.Any])
+    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
     @scala.inline
-    def deleteBitstreamMode: Self = this.set("BitstreamMode", js.undefined)
+    def setDialnorm(value: integerMin1Max31): Self = StObject.set(x, "Dialnorm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodingMode(value: Ac3CodingMode): Self = this.set("CodingMode", value.asInstanceOf[js.Any])
+    def setDialnormUndefined: Self = StObject.set(x, "Dialnorm", js.undefined)
     
     @scala.inline
-    def deleteCodingMode: Self = this.set("CodingMode", js.undefined)
+    def setDrcProfile(value: Ac3DrcProfile): Self = StObject.set(x, "DrcProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialnorm(value: integerMin1Max31): Self = this.set("Dialnorm", value.asInstanceOf[js.Any])
+    def setDrcProfileUndefined: Self = StObject.set(x, "DrcProfile", js.undefined)
     
     @scala.inline
-    def deleteDialnorm: Self = this.set("Dialnorm", js.undefined)
+    def setLfeFilter(value: Ac3LfeFilter): Self = StObject.set(x, "LfeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrcProfile(value: Ac3DrcProfile): Self = this.set("DrcProfile", value.asInstanceOf[js.Any])
+    def setLfeFilterUndefined: Self = StObject.set(x, "LfeFilter", js.undefined)
     
     @scala.inline
-    def deleteDrcProfile: Self = this.set("DrcProfile", js.undefined)
+    def setMetadataControl(value: Ac3MetadataControl): Self = StObject.set(x, "MetadataControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLfeFilter(value: Ac3LfeFilter): Self = this.set("LfeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLfeFilter: Self = this.set("LfeFilter", js.undefined)
-    
-    @scala.inline
-    def setMetadataControl(value: Ac3MetadataControl): Self = this.set("MetadataControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataControl: Self = this.set("MetadataControl", js.undefined)
+    def setMetadataControlUndefined: Self = StObject.set(x, "MetadataControl", js.undefined)
   }
 }

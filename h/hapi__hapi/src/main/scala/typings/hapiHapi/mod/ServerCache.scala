@@ -1,12 +1,13 @@
 package typings.hapiHapi.mod
 
 import typings.hapiCatbox.mod.Policy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerCache extends js.Object {
+trait ServerCache extends StObject {
   
   /**
     * Provisions a cache segment within the server cache facility where:

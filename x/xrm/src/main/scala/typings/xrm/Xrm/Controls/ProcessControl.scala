@@ -1,6 +1,7 @@
 package typings.xrm.Xrm.Controls
 
 import typings.xrm.Xrm.DisplayState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,27 +45,15 @@ object ProcessControl {
   }
   
   @scala.inline
-  implicit class ProcessControlOps[Self <: ProcessControl] (val x: Self) extends AnyVal {
+  implicit class ProcessControlMutableBuilder[Self <: ProcessControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReflow(value: (Boolean, String, String) => Unit): Self = StObject.set(x, "reflow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDisplayState(value: () => DisplayState): Self = this.set("getDisplayState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReflow(value: (Boolean, String, String) => Unit): Self = this.set("reflow", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetDisplayState(value: DisplayState => Unit): Self = this.set("setDisplayState", js.Any.fromFunction1(value))
+    def setSetDisplayState(value: DisplayState => Unit): Self = StObject.set(x, "setDisplayState", js.Any.fromFunction1(value))
   }
 }

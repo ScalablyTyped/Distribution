@@ -1,11 +1,12 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaReplicasDeleteRequest extends js.Object {
+trait SchemaReplicasDeleteRequest extends StObject {
   
   /**
     * Whether the instance resource represented by this replica should be
@@ -24,24 +25,12 @@ object SchemaReplicasDeleteRequest {
   }
   
   @scala.inline
-  implicit class SchemaReplicasDeleteRequestOps[Self <: SchemaReplicasDeleteRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaReplicasDeleteRequestMutableBuilder[Self <: SchemaReplicasDeleteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbandonInstance(value: Boolean): Self = StObject.set(x, "abandonInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbandonInstance(value: Boolean): Self = this.set("abandonInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAbandonInstance: Self = this.set("abandonInstance", js.undefined)
+    def setAbandonInstanceUndefined: Self = StObject.set(x, "abandonInstance", js.undefined)
   }
 }

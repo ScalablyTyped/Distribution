@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,225 +176,213 @@ object ChargeItem {
   }
   
   @scala.inline
-  implicit class ChargeItemOps[Self <: ChargeItem] (val x: Self) extends AnyVal {
+  implicit class ChargeItemMutableBuilder[Self <: ChargeItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: js.Array[Reference]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountVarargs(value: Reference*): Self = StObject.set(x, "account", js.Array(value :_*))
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setBodysite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "bodysite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setBodysiteUndefined: Self = StObject.set(x, "bodysite", js.undefined)
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setBodysiteVarargs(value: CodeableConcept*): Self = StObject.set(x, "bodysite", js.Array(value :_*))
     
     @scala.inline
-    def set_definitionVarargs(value: Element*): Self = this.set("_definition", js.Array(value :_*))
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_definition(value: js.Array[Element]): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_definition: Self = this.set("_definition", js.undefined)
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set_enteredDate(value: Element): Self = this.set("_enteredDate", value.asInstanceOf[js.Any])
+    def setDefinition(value: js.Array[uri]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_enteredDate: Self = this.set("_enteredDate", js.undefined)
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def set_factorOverride(value: Element): Self = this.set("_factorOverride", value.asInstanceOf[js.Any])
+    def setDefinitionVarargs(value: uri*): Self = StObject.set(x, "definition", js.Array(value :_*))
     
     @scala.inline
-    def delete_factorOverride: Self = this.set("_factorOverride", js.undefined)
+    def setEnteredDate(value: dateTime): Self = StObject.set(x, "enteredDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_occurrenceDateTime(value: Element): Self = this.set("_occurrenceDateTime", value.asInstanceOf[js.Any])
+    def setEnteredDateUndefined: Self = StObject.set(x, "enteredDate", js.undefined)
     
     @scala.inline
-    def delete_occurrenceDateTime: Self = this.set("_occurrenceDateTime", js.undefined)
+    def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_overrideReason(value: Element): Self = this.set("_overrideReason", value.asInstanceOf[js.Any])
+    def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
     
     @scala.inline
-    def delete_overrideReason: Self = this.set("_overrideReason", js.undefined)
+    def setFactorOverride(value: decimal): Self = StObject.set(x, "factorOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setFactorOverrideUndefined: Self = StObject.set(x, "factorOverride", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountVarargs(value: Reference*): Self = this.set("account", js.Array(value :_*))
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setAccount(value: js.Array[Reference]): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccount: Self = this.set("account", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setBodysiteVarargs(value: CodeableConcept*): Self = this.set("bodysite", js.Array(value :_*))
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def setBodysite(value: js.Array[CodeableConcept]): Self = this.set("bodysite", value.asInstanceOf[js.Any])
+    def setOccurrenceDateTime(value: dateTime): Self = StObject.set(x, "occurrenceDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodysite: Self = this.set("bodysite", js.undefined)
+    def setOccurrenceDateTimeUndefined: Self = StObject.set(x, "occurrenceDateTime", js.undefined)
     
     @scala.inline
-    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setOccurrencePeriod(value: Period): Self = StObject.set(x, "occurrencePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setOccurrencePeriodUndefined: Self = StObject.set(x, "occurrencePeriod", js.undefined)
     
     @scala.inline
-    def setDefinitionVarargs(value: uri*): Self = this.set("definition", js.Array(value :_*))
+    def setOccurrenceTiming(value: Timing): Self = StObject.set(x, "occurrenceTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: js.Array[uri]): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setOccurrenceTimingUndefined: Self = StObject.set(x, "occurrenceTiming", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setOverrideReason(value: String): Self = StObject.set(x, "overrideReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnteredDate(value: dateTime): Self = this.set("enteredDate", value.asInstanceOf[js.Any])
+    def setOverrideReasonUndefined: Self = StObject.set(x, "overrideReason", js.undefined)
     
     @scala.inline
-    def deleteEnteredDate: Self = this.set("enteredDate", js.undefined)
+    def setPartOf(value: js.Array[Reference]): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterer(value: Reference): Self = this.set("enterer", value.asInstanceOf[js.Any])
+    def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
     @scala.inline
-    def deleteEnterer: Self = this.set("enterer", js.undefined)
+    def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value :_*))
     
     @scala.inline
-    def setFactorOverride(value: decimal): Self = this.set("factorOverride", value.asInstanceOf[js.Any])
+    def setParticipant(value: js.Array[ChargeItemParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFactorOverride: Self = this.set("factorOverride", js.undefined)
+    def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setParticipantVarargs(value: ChargeItemParticipant*): Self = StObject.set(x, "participant", js.Array(value :_*))
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setPerformingOrganization(value: Reference): Self = StObject.set(x, "performingOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setPerformingOrganizationUndefined: Self = StObject.set(x, "performingOrganization", js.undefined)
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setPriceOverride(value: Money): Self = StObject.set(x, "priceOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setPriceOverrideUndefined: Self = StObject.set(x, "priceOverride", js.undefined)
     
     @scala.inline
-    def setOccurrenceDateTime(value: dateTime): Self = this.set("occurrenceDateTime", value.asInstanceOf[js.Any])
+    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOccurrenceDateTime: Self = this.set("occurrenceDateTime", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def setOccurrencePeriod(value: Period): Self = this.set("occurrencePeriod", value.asInstanceOf[js.Any])
+    def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOccurrencePeriod: Self = this.set("occurrencePeriod", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def setOccurrenceTiming(value: Timing): Self = this.set("occurrenceTiming", value.asInstanceOf[js.Any])
+    def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
     
     @scala.inline
-    def deleteOccurrenceTiming: Self = this.set("occurrenceTiming", js.undefined)
+    def setRequestingOrganization(value: Reference): Self = StObject.set(x, "requestingOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideReason(value: String): Self = this.set("overrideReason", value.asInstanceOf[js.Any])
+    def setRequestingOrganizationUndefined: Self = StObject.set(x, "requestingOrganization", js.undefined)
     
     @scala.inline
-    def deleteOverrideReason: Self = this.set("overrideReason", js.undefined)
+    def setService(value: js.Array[Reference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOfVarargs(value: Reference*): Self = this.set("partOf", js.Array(value :_*))
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def setPartOf(value: js.Array[Reference]): Self = this.set("partOf", value.asInstanceOf[js.Any])
+    def setServiceVarargs(value: Reference*): Self = StObject.set(x, "service", js.Array(value :_*))
     
     @scala.inline
-    def deletePartOf: Self = this.set("partOf", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantVarargs(value: ChargeItemParticipant*): Self = this.set("participant", js.Array(value :_*))
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipant(value: js.Array[ChargeItemParticipant]): Self = this.set("participant", value.asInstanceOf[js.Any])
+    def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParticipant: Self = this.set("participant", js.undefined)
+    def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
     
     @scala.inline
-    def setPerformingOrganization(value: Reference): Self = this.set("performingOrganization", value.asInstanceOf[js.Any])
+    def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value :_*))
     
     @scala.inline
-    def deletePerformingOrganization: Self = this.set("performingOrganization", js.undefined)
+    def set_definition(value: js.Array[Element]): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceOverride(value: Money): Self = this.set("priceOverride", value.asInstanceOf[js.Any])
+    def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
     @scala.inline
-    def deletePriceOverride: Self = this.set("priceOverride", js.undefined)
+    def set_definitionVarargs(value: Element*): Self = StObject.set(x, "_definition", js.Array(value :_*))
     
     @scala.inline
-    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def set_enteredDate(value: Element): Self = StObject.set(x, "_enteredDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def set_enteredDateUndefined: Self = StObject.set(x, "_enteredDate", js.undefined)
     
     @scala.inline
-    def setReasonVarargs(value: CodeableConcept*): Self = this.set("reason", js.Array(value :_*))
+    def set_factorOverride(value: Element): Self = StObject.set(x, "_factorOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: js.Array[CodeableConcept]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def set_factorOverrideUndefined: Self = StObject.set(x, "_factorOverride", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestingOrganization(value: Reference): Self = this.set("requestingOrganization", value.asInstanceOf[js.Any])
+    def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
     
     @scala.inline
-    def deleteRequestingOrganization: Self = this.set("requestingOrganization", js.undefined)
+    def set_overrideReason(value: Element): Self = StObject.set(x, "_overrideReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceVarargs(value: Reference*): Self = this.set("service", js.Array(value :_*))
+    def set_overrideReasonUndefined: Self = StObject.set(x, "_overrideReason", js.undefined)
     
     @scala.inline
-    def setService(value: js.Array[Reference]): Self = this.set("service", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
-    
-    @scala.inline
-    def setSupportingInformationVarargs(value: Reference*): Self = this.set("supportingInformation", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportingInformation(value: js.Array[Reference]): Self = this.set("supportingInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportingInformation: Self = this.set("supportingInformation", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

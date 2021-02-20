@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Interface extends js.Object {
+trait Interface extends StObject {
   
   var Socket: String = js.native
   
@@ -20,27 +21,15 @@ object Interface {
   }
   
   @scala.inline
-  implicit class InterfaceOps[Self <: Interface] (val x: Self) extends AnyVal {
+  implicit class InterfaceMutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSocket(value: String): Self = StObject.set(x, "Socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTypes(value: js.Array[PluginInterfaceType]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSocket(value: String): Self = this.set("Socket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypesVarargs(value: PluginInterfaceType*): Self = this.set("Types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[PluginInterfaceType]): Self = this.set("Types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: PluginInterfaceType*): Self = StObject.set(x, "Types", js.Array(value :_*))
   }
 }

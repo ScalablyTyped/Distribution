@@ -11,12 +11,13 @@ import typings.dropboxjs.Dropbox.Http.PulledChanges
 import typings.dropboxjs.Dropbox.Http.UploadCursor
 import typings.dropboxjs.Dropbox.Util.EventSource
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   def appHash(): String = js.native
   

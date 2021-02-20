@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlacementClip extends js.Object
+sealed trait PlacementClip extends StObject
 @JSGlobal("__esri.CIM.PlacementClip")
 @js.native
-object PlacementClip extends js.Object {
+object PlacementClip extends StObject {
   
   /**
     * Markers are clipped at the boundary of the polygon.

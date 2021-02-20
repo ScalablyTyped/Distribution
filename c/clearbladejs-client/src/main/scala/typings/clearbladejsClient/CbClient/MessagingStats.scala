@@ -1,11 +1,12 @@
 package typings.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessagingStats extends js.Object {
+trait MessagingStats extends StObject {
   
   var URI: String = js.native
   
@@ -38,39 +39,27 @@ object MessagingStats {
   }
   
   @scala.inline
-  implicit class MessagingStatsOps[Self <: MessagingStats] (val x: Self) extends AnyVal {
+  implicit class MessagingStatsMutableBuilder[Self <: MessagingStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAveragePayloadSize(value: (String, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getAveragePayloadSize", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentSubscribers(value: (String, CbCallback) => Unit): Self = StObject.set(x, "getCurrentSubscribers", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
+    def setGetOpenConnections(value: CbCallback => Unit): Self = StObject.set(x, "getOpenConnections", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAveragePayloadSize(value: (String, Double, Double, CbCallback) => Unit): Self = this.set("getAveragePayloadSize", js.Any.fromFunction4(value))
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentSubscribers(value: (String, CbCallback) => Unit): Self = this.set("getCurrentSubscribers", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetOpenConnections(value: CbCallback => Unit): Self = this.set("getOpenConnections", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: APIUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

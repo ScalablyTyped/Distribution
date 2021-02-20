@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for CreateJobTrigger.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CreateJobTriggerRequest extends js.Object {
+trait SchemaGooglePrivacyDlpV2CreateJobTriggerRequest extends StObject {
   
   /**
     * The JobTrigger to create.
@@ -32,30 +33,18 @@ object SchemaGooglePrivacyDlpV2CreateJobTriggerRequest {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateJobTriggerRequestOps[Self <: SchemaGooglePrivacyDlpV2CreateJobTriggerRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CreateJobTriggerRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateJobTriggerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = this.set("jobTrigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobTrigger: Self = this.set("jobTrigger", js.undefined)
-    
-    @scala.inline
-    def setTriggerId(value: String): Self = this.set("triggerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
+    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }
 }

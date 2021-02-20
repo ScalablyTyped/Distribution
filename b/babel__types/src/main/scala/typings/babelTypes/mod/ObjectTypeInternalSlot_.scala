@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.ObjectTypeInternalSlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,36 +43,24 @@ object ObjectTypeInternalSlot_ {
   }
   
   @scala.inline
-  implicit class ObjectTypeInternalSlot_Ops[Self <: ObjectTypeInternalSlot_] (val x: Self) extends AnyVal {
+  implicit class ObjectTypeInternalSlot_MutableBuilder[Self <: ObjectTypeInternalSlot_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Boolean): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setType(value: ObjectTypeInternalSlot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ObjectTypeInternalSlot): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: FlowType): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Background extends js.Object {
+trait Background extends StObject {
   
   var background: String = js.native
   
@@ -35,36 +36,24 @@ object Background {
   }
   
   @scala.inline
-  implicit class BackgroundOps[Self <: Background] (val x: Self) extends AnyVal {
+  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setNotification(value: String): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: String): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotification(value: String): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

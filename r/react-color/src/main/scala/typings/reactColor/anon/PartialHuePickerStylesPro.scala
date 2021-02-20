@@ -1,13 +1,14 @@
 package typings.reactColor.anon
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/hue/Hue.HuePickerStylesProps> */
 @js.native
-trait PartialHuePickerStylesPro extends js.Object {
+trait PartialHuePickerStylesPro extends StObject {
   
   var hue: js.UndefOr[CSSProperties] = js.native
   
@@ -22,30 +23,18 @@ object PartialHuePickerStylesPro {
   }
   
   @scala.inline
-  implicit class PartialHuePickerStylesProOps[Self <: PartialHuePickerStylesPro] (val x: Self) extends AnyVal {
+  implicit class PartialHuePickerStylesProMutableBuilder[Self <: PartialHuePickerStylesPro] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: CSSProperties): Self = this.set("hue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHue: Self = this.set("hue", js.undefined)
-    
-    @scala.inline
-    def setPicker(value: CSSProperties): Self = this.set("picker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePicker: Self = this.set("picker", js.undefined)
+    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
   }
 }

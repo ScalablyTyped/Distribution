@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitConflictUpdateStatus extends js.Object
+sealed trait GitConflictUpdateStatus extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitConflictUpdateStatus")
 @js.native
-object GitConflictUpdateStatus extends js.Object {
+object GitConflictUpdateStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitConflictUpdateStatus with Double] = js.native
@@ -19,38 +19,33 @@ object GitConflictUpdateStatus extends js.Object {
     */
   @js.native
   sealed trait BadRequest extends GitConflictUpdateStatus
-  /* 1 */ @js.native
-  object BadRequest extends TopLevel[BadRequest with Double]
+  /* 1 */ val BadRequest: typings.vsoNodeApi.gitInterfacesMod.GitConflictUpdateStatus.BadRequest with Double = js.native
   
   /**
     * Indicates that the requested resolution was not valid
     */
   @js.native
   sealed trait InvalidResolution extends GitConflictUpdateStatus
-  /* 2 */ @js.native
-  object InvalidResolution extends TopLevel[InvalidResolution with Double]
+  /* 2 */ val InvalidResolution: typings.vsoNodeApi.gitInterfacesMod.GitConflictUpdateStatus.InvalidResolution with Double = js.native
   
   /**
     * Indicates that the conflict could not be found
     */
   @js.native
   sealed trait NotFound extends GitConflictUpdateStatus
-  /* 4 */ @js.native
-  object NotFound extends TopLevel[NotFound with Double]
+  /* 4 */ val NotFound: typings.vsoNodeApi.gitInterfacesMod.GitConflictUpdateStatus.NotFound with Double = js.native
   
   /**
     * Indicates that pull request conflict update request was completed successfully
     */
   @js.native
   sealed trait Succeeded extends GitConflictUpdateStatus
-  /* 0 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 0 */ val Succeeded: typings.vsoNodeApi.gitInterfacesMod.GitConflictUpdateStatus.Succeeded with Double = js.native
   
   /**
     * Indicates that the conflict in the update request was not a supported conflict type
     */
   @js.native
   sealed trait UnsupportedConflictType extends GitConflictUpdateStatus
-  /* 3 */ @js.native
-  object UnsupportedConflictType extends TopLevel[UnsupportedConflictType with Double]
+  /* 3 */ val UnsupportedConflictType: typings.vsoNodeApi.gitInterfacesMod.GitConflictUpdateStatus.UnsupportedConflictType with Double = js.native
 }

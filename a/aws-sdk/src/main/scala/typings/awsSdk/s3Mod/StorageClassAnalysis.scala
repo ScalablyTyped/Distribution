@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageClassAnalysis extends js.Object {
+trait StorageClassAnalysis extends StObject {
   
   /**
     * Specifies how data related to the storage class analysis for an Amazon S3 bucket should be exported.
@@ -21,24 +22,12 @@ object StorageClassAnalysis {
   }
   
   @scala.inline
-  implicit class StorageClassAnalysisOps[Self <: StorageClassAnalysis] (val x: Self) extends AnyVal {
+  implicit class StorageClassAnalysisMutableBuilder[Self <: StorageClassAnalysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataExport(value: StorageClassAnalysisDataExport): Self = StObject.set(x, "DataExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataExport(value: StorageClassAnalysisDataExport): Self = this.set("DataExport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataExport: Self = this.set("DataExport", js.undefined)
+    def setDataExportUndefined: Self = StObject.set(x, "DataExport", js.undefined)
   }
 }

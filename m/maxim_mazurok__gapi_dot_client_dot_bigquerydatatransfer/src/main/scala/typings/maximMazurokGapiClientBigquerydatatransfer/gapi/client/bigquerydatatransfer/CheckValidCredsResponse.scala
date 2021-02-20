@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigquerydatatransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckValidCredsResponse extends js.Object {
+trait CheckValidCredsResponse extends StObject {
   
   /** If set to `true`, the credentials exist and are valid. */
   var hasValidCreds: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object CheckValidCredsResponse {
   }
   
   @scala.inline
-  implicit class CheckValidCredsResponseOps[Self <: CheckValidCredsResponse] (val x: Self) extends AnyVal {
+  implicit class CheckValidCredsResponseMutableBuilder[Self <: CheckValidCredsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasValidCreds(value: Boolean): Self = StObject.set(x, "hasValidCreds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasValidCreds(value: Boolean): Self = this.set("hasValidCreds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasValidCreds: Self = this.set("hasValidCreds", js.undefined)
+    def setHasValidCredsUndefined: Self = StObject.set(x, "hasValidCreds", js.undefined)
   }
 }

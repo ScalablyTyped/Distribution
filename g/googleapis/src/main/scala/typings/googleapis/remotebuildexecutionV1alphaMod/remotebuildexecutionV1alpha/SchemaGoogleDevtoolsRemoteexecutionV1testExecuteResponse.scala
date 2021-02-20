@@ -1,6 +1,7 @@
 package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * response field of the Operation.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse extends js.Object {
+trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse extends StObject {
   
   /**
     * True if the result was served from cache, false if it was executed.
@@ -55,42 +56,30 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponseOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponseMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResult(value: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachedResult(value: Boolean): Self = this.set("cachedResult", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteCachedResult: Self = this.set("cachedResult", js.undefined)
+    def setServerLogs(value: StringDictionary[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerLogs(value: StringDictionary[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]): Self = this.set("serverLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerLogs: Self = this.set("serverLogs", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SchemaGoogleRpcStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

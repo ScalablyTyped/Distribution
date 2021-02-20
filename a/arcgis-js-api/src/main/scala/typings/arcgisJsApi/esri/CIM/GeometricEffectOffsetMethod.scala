@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectOffsetMethod extends js.Object
+sealed trait GeometricEffectOffsetMethod extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectOffsetMethod")
 @js.native
-object GeometricEffectOffsetMethod extends js.Object {
+object GeometricEffectOffsetMethod extends StObject {
   
   /**
     * Bevelled - follows the shortest straight path across a corner of the line or polygon.

@@ -2,19 +2,23 @@ package typings.materialTab
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialTab.adapterMod.MDCTabAdapter
-import typings.materialTab.anon.ACTIVE
-import typings.materialTab.anon.ARIASELECTED
 import typings.materialTab.anon.PartialMDCTabAdapter
 import typings.materialTab.typesMod.MDCTabDimensions
 import typings.std.ClientRect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/tab/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCTabFoundation {
+    def this(adapter: PartialMDCTabAdapter) = this()
+  }
+  
+  @JSImport("@material/tab/foundation", "MDCTabFoundation")
   @js.native
   class MDCTabFoundation () extends MDCFoundation[MDCTabAdapter] {
     def this(adapter: PartialMDCTabAdapter) = this()
@@ -43,30 +47,5 @@ object foundationMod extends js.Object {
       * Sets whether the tab should focus itself when activated
       */
     def setFocusOnActivate(focusOnActivate: Boolean): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCTabFoundation extends js.Object {
-    
-    def cssClasses: ACTIVE = js.native
-    
-    def defaultAdapter: MDCTabAdapter = js.native
-    
-    def strings: ARIASELECTED = js.native
-  }
-  
-  @js.native
-  class default () extends MDCTabFoundation {
-    def this(adapter: PartialMDCTabAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: ACTIVE = js.native
-    
-    def defaultAdapter: MDCTabAdapter = js.native
-    
-    def strings: ARIASELECTED = js.native
   }
 }

@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/observable", JSImport.Namespace)
-@js.native
-object observableMod extends js.Object {
+object observableMod {
   
+  @JSImport("babylonjs/Misc/observable", "EventState")
   @js.native
-  class EventState protected () extends js.Object {
+  class EventState protected () extends StObject {
     /**
       * Create a new EventState
       * @param mask defines the mask associated with this state
@@ -86,8 +86,9 @@ object observableMod extends js.Object {
     var userInfo: js.UndefOr[js.Any] = js.native
   }
   
+  @JSImport("babylonjs/Misc/observable", "MultiObserver")
   @js.native
-  class MultiObserver[T] () extends js.Object {
+  class MultiObserver[T] () extends StObject {
     
     var _observables: js.Any = js.native
     
@@ -99,8 +100,7 @@ object observableMod extends js.Object {
     def dispose(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MultiObserver extends js.Object {
+  object MultiObserver {
     
     /**
       * Raise a callback when one of the observable will notify
@@ -110,21 +110,29 @@ object observableMod extends js.Object {
       * @param scope defines the current scope used to restore the JS context
       * @returns the new MultiObserver
       */
+    @JSImport("babylonjs/Misc/observable", "MultiObserver.Watch")
+    @js.native
     def Watch[T](
       observables: js.Array[Observable[T]],
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]
     ): MultiObserver[T] = js.native
+    @JSImport("babylonjs/Misc/observable", "MultiObserver.Watch")
+    @js.native
     def Watch[T](
       observables: js.Array[Observable[T]],
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: js.UndefOr[scala.Nothing],
       scope: js.Any
     ): MultiObserver[T] = js.native
+    @JSImport("babylonjs/Misc/observable", "MultiObserver.Watch")
+    @js.native
     def Watch[T](
       observables: js.Array[Observable[T]],
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
       mask: Double
     ): MultiObserver[T] = js.native
+    @JSImport("babylonjs/Misc/observable", "MultiObserver.Watch")
+    @js.native
     def Watch[T](
       observables: js.Array[Observable[T]],
       callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
@@ -133,12 +141,13 @@ object observableMod extends js.Object {
     ): MultiObserver[T] = js.native
   }
   
+  @JSImport("babylonjs/Misc/observable", "Observable")
   @js.native
   /**
     * Creates a new observable
     * @param onObserverAdded defines a callback to call when a new observer is added
     */
-  class Observable[T] () extends js.Object {
+  class Observable[T] () extends StObject {
     def this(onObserverAdded: js.Function1[/* observer */ Observer[T], Unit]) = this()
     
     var _deferUnregister: js.Any = js.native
@@ -474,8 +483,9 @@ object observableMod extends js.Object {
     def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit], scope: js.Any): Boolean = js.native
   }
   
+  @JSImport("babylonjs/Misc/observable", "Observer")
   @js.native
-  class Observer[T] protected () extends js.Object {
+  class Observer[T] protected () extends StObject {
     /**
       * Creates a new observer
       * @param callback defines the callback to call when the observer is notified

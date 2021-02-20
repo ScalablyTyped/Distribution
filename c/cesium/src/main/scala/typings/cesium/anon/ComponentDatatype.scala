@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentDatatype extends js.Object {
+trait ComponentDatatype extends StObject {
   
   var componentDatatype: js.UndefOr[typings.cesium.mod.ComponentDatatype] = js.native
   
@@ -24,45 +25,33 @@ object ComponentDatatype {
   }
   
   @scala.inline
-  implicit class ComponentDatatypeOps[Self <: ComponentDatatype] (val x: Self) extends AnyVal {
+  implicit class ComponentDatatypeMutableBuilder[Self <: ComponentDatatype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentDatatype(value: typings.cesium.mod.ComponentDatatype): Self = StObject.set(x, "componentDatatype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentDatatypeUndefined: Self = StObject.set(x, "componentDatatype", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentsPerAttribute(value: Double): Self = StObject.set(x, "componentsPerAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentDatatype(value: typings.cesium.mod.ComponentDatatype): Self = this.set("componentDatatype", value.asInstanceOf[js.Any])
+    def setComponentsPerAttributeUndefined: Self = StObject.set(x, "componentsPerAttribute", js.undefined)
     
     @scala.inline
-    def deleteComponentDatatype: Self = this.set("componentDatatype", js.undefined)
+    def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsPerAttribute(value: Double): Self = this.set("componentsPerAttribute", value.asInstanceOf[js.Any])
+    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def deleteComponentsPerAttribute: Self = this.set("componentsPerAttribute", js.undefined)
+    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: Boolean): Self = this.set("normalize", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteNormalize: Self = this.set("normalize", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

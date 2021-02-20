@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.node.nodeStrings.hex
   - typings.node.nodeStrings.base64
 */
-trait HexBase64Latin1Encoding extends js.Object
+trait HexBase64Latin1Encoding extends StObject
 object HexBase64Latin1Encoding {
   
   @scala.inline

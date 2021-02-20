@@ -1,6 +1,7 @@
 package typings.angularCore.r3SymbolsMod
 
 import typings.angularCore.anon.PropName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait ComponentFactory[C] extends js.Object {
+trait ComponentFactory[C] extends StObject {
   
   /**
     * The type of component the factory will create.

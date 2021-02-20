@@ -1,5 +1,6 @@
 package typings.yogaLayout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.yogaLayout.yogaLayoutNumbers.`1`
   - typings.yogaLayout.yogaLayoutNumbers.`0`
 */
-trait YogaUnit extends js.Object
+trait YogaUnit extends StObject
 object YogaUnit {
   
   @scala.inline

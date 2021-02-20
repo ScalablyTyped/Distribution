@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureProviderRequiredOption extends js.Object {
+trait SignatureProviderRequiredOption extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -26,33 +27,21 @@ object SignatureProviderRequiredOption {
   }
   
   @scala.inline
-  implicit class SignatureProviderRequiredOptionOps[Self <: SignatureProviderRequiredOption] (val x: Self) extends AnyVal {
+  implicit class SignatureProviderRequiredOptionMutableBuilder[Self <: SignatureProviderRequiredOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequiredSignatureProviderOptionIds(value: js.Array[String]): Self = StObject.set(x, "requiredSignatureProviderOptionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequiredSignatureProviderOptionIdsUndefined: Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequiredSignatureProviderOptionIdsVarargs(value: String*): Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.Array(value :_*))
     
     @scala.inline
-    def setRequiredSignatureProviderOptionIdsVarargs(value: String*): Self = this.set("requiredSignatureProviderOptionIds", js.Array(value :_*))
+    def setSignerType(value: String): Self = StObject.set(x, "signerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredSignatureProviderOptionIds(value: js.Array[String]): Self = this.set("requiredSignatureProviderOptionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredSignatureProviderOptionIds: Self = this.set("requiredSignatureProviderOptionIds", js.undefined)
-    
-    @scala.inline
-    def setSignerType(value: String): Self = this.set("signerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignerType: Self = this.set("signerType", js.undefined)
+    def setSignerTypeUndefined: Self = StObject.set(x, "signerType", js.undefined)
   }
 }

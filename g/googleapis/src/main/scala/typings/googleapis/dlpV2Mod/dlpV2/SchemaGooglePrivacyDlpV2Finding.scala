@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a piece of potentially sensitive content.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Finding extends js.Object {
+trait SchemaGooglePrivacyDlpV2Finding extends StObject {
   
   /**
     * Timestamp when finding was detected.
@@ -55,54 +56,42 @@ object SchemaGooglePrivacyDlpV2Finding {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2FindingOps[Self <: SchemaGooglePrivacyDlpV2Finding] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2FindingMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Finding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setLikelihood(value: String): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    def setLikelihoodUndefined: Self = StObject.set(x, "likelihood", js.undefined)
     
     @scala.inline
-    def deleteInfoType: Self = this.set("infoType", js.undefined)
+    def setLocation(value: SchemaGooglePrivacyDlpV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikelihood(value: String): Self = this.set("likelihood", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLikelihood: Self = this.set("likelihood", js.undefined)
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SchemaGooglePrivacyDlpV2Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setQuoteInfo(value: SchemaGooglePrivacyDlpV2QuoteInfo): Self = StObject.set(x, "quoteInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setQuoteInfoUndefined: Self = StObject.set(x, "quoteInfo", js.undefined)
     
     @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
-    
-    @scala.inline
-    def setQuoteInfo(value: SchemaGooglePrivacyDlpV2QuoteInfo): Self = this.set("quoteInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuoteInfo: Self = this.set("quoteInfo", js.undefined)
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
   }
 }

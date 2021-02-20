@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.rescan
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait ThreatAssessmentResultType extends js.Object
+trait ThreatAssessmentResultType extends StObject
 object ThreatAssessmentResultType {
   
   @scala.inline

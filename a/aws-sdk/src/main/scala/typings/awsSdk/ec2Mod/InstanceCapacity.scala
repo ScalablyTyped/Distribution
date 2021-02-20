@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceCapacity extends js.Object {
+trait InstanceCapacity extends StObject {
   
   /**
     * The number of instances that can be launched onto the Dedicated Host based on the host's available capacity.
@@ -31,36 +32,24 @@ object InstanceCapacity {
   }
   
   @scala.inline
-  implicit class InstanceCapacityOps[Self <: InstanceCapacity] (val x: Self) extends AnyVal {
+  implicit class InstanceCapacityMutableBuilder[Self <: InstanceCapacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableCapacity(value: Integer): Self = StObject.set(x, "AvailableCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableCapacityUndefined: Self = StObject.set(x, "AvailableCapacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableCapacity(value: Integer): Self = this.set("AvailableCapacity", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteAvailableCapacity: Self = this.set("AvailableCapacity", js.undefined)
+    def setTotalCapacity(value: Integer): Self = StObject.set(x, "TotalCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
-    
-    @scala.inline
-    def setTotalCapacity(value: Integer): Self = this.set("TotalCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCapacity: Self = this.set("TotalCapacity", js.undefined)
+    def setTotalCapacityUndefined: Self = StObject.set(x, "TotalCapacity", js.undefined)
   }
 }

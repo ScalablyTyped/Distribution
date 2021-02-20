@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyRangeDataDiskAssignment extends js.Object {
+trait KeyRangeDataDiskAssignment extends StObject {
   
   /**
     * The name of the data disk where data for this range is stored. This name is local to the Google Cloud Platform project and uniquely identifies the disk within that project, for
@@ -28,36 +29,24 @@ object KeyRangeDataDiskAssignment {
   }
   
   @scala.inline
-  implicit class KeyRangeDataDiskAssignmentOps[Self <: KeyRangeDataDiskAssignment] (val x: Self) extends AnyVal {
+  implicit class KeyRangeDataDiskAssignmentMutableBuilder[Self <: KeyRangeDataDiskAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataDisk(value: String): Self = this.set("dataDisk", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDataDisk: Self = this.set("dataDisk", js.undefined)
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
-    
-    @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

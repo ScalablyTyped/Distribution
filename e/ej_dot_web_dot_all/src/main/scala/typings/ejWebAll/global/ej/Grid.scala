@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class Grid protected ()
   extends typings.ejWebAll.ej.Grid {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Grid.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Grid.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.Grid")
-@js.native
-object Grid extends js.Object {
+object Grid {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.Grid = js.native
-  
+  @JSGlobal("ej.Grid")
   @js.native
-  object CellSelectionMode extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.Grid.CellSelectionMode")
+  @js.native
+  object CellSelectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.CellSelectionMode with Double] = js.native
@@ -35,8 +34,9 @@ object Grid extends js.Object {
     /* 0 */ val Flow: typings.ejWebAll.ej.Grid.CellSelectionMode.Flow with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.ClipMode")
   @js.native
-  object ClipMode extends js.Object {
+  object ClipMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.ClipMode with Double] = js.native
@@ -48,8 +48,9 @@ object Grid extends js.Object {
     /* 2 */ val EllipsisWithTooltip: typings.ejWebAll.ej.Grid.ClipMode.EllipsisWithTooltip with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.ColumnLayout")
   @js.native
-  object ColumnLayout extends js.Object {
+  object ColumnLayout extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.ColumnLayout with Double] = js.native
@@ -59,8 +60,9 @@ object Grid extends js.Object {
     /* 1 */ val Fixed: typings.ejWebAll.ej.Grid.ColumnLayout.Fixed with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.DragBehavior")
   @js.native
-  object DragBehavior extends js.Object {
+  object DragBehavior extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.DragBehavior with Double] = js.native
@@ -70,8 +72,9 @@ object Grid extends js.Object {
     /* 0 */ val Move: typings.ejWebAll.ej.Grid.DragBehavior.Move with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.EditMode")
   @js.native
-  object EditMode extends js.Object {
+  object EditMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.EditMode with Double] = js.native
@@ -93,8 +96,9 @@ object Grid extends js.Object {
     /* 0 */ val Normal: typings.ejWebAll.ej.Grid.EditMode.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.EditingType")
   @js.native
-  object EditingType extends js.Object {
+  object EditingType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.EditingType with Double] = js.native
@@ -112,8 +116,9 @@ object Grid extends js.Object {
     /* 0 */ val String: typings.ejWebAll.ej.Grid.EditingType.String with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.FilterBarMode")
   @js.native
-  object FilterBarMode extends js.Object {
+  object FilterBarMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.FilterBarMode with Double] = js.native
@@ -123,8 +128,9 @@ object Grid extends js.Object {
     /* 1 */ val OnEnter: typings.ejWebAll.ej.Grid.FilterBarMode.OnEnter with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.FilterType")
   @js.native
-  object FilterType extends js.Object {
+  object FilterType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.FilterType with Double] = js.native
@@ -134,8 +140,9 @@ object Grid extends js.Object {
     /* 0 */ val Menu: typings.ejWebAll.ej.Grid.FilterType.Menu with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.FormPosition")
   @js.native
-  object FormPosition extends js.Object {
+  object FormPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.FormPosition with Double] = js.native
@@ -145,8 +152,9 @@ object Grid extends js.Object {
     /* 1 */ val TopRight: typings.ejWebAll.ej.Grid.FormPosition.TopRight with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.GridLines")
   @js.native
-  object GridLines extends js.Object {
+  object GridLines extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.GridLines with Double] = js.native
@@ -160,8 +168,16 @@ object Grid extends js.Object {
     /* 2 */ val Vertical: typings.ejWebAll.ej.Grid.GridLines.Vertical with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.Grid.Locale")
   @js.native
-  object PrintMode extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Grid.PrintMode")
+  @js.native
+  object PrintMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.PrintMode with Double] = js.native
@@ -171,8 +187,9 @@ object Grid extends js.Object {
     /* 1 */ val CurrentPage: typings.ejWebAll.ej.Grid.PrintMode.CurrentPage with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.ResizeMode")
   @js.native
-  object ResizeMode extends js.Object {
+  object ResizeMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.ResizeMode with Double] = js.native
@@ -184,8 +201,9 @@ object Grid extends js.Object {
     /* 0 */ val Normal: typings.ejWebAll.ej.Grid.ResizeMode.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.RowPosition")
   @js.native
-  object RowPosition extends js.Object {
+  object RowPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.RowPosition with Double] = js.native
@@ -195,8 +213,9 @@ object Grid extends js.Object {
     /* 0 */ val Top: typings.ejWebAll.ej.Grid.RowPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.SelectionType")
   @js.native
-  object SelectionType extends js.Object {
+  object SelectionType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.SelectionType with Double] = js.native
@@ -206,8 +225,9 @@ object Grid extends js.Object {
     /* 0 */ val Single: typings.ejWebAll.ej.Grid.SelectionType.Single with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.SummaryType")
   @js.native
-  object SummaryType extends js.Object {
+  object SummaryType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.SummaryType with Double] = js.native
@@ -229,8 +249,9 @@ object Grid extends js.Object {
     /* 6 */ val TrueCount: typings.ejWebAll.ej.Grid.SummaryType.TrueCount with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.ToolBarItems")
   @js.native
-  object ToolBarItems extends js.Object {
+  object ToolBarItems extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.ToolBarItems with Double] = js.native
@@ -254,8 +275,9 @@ object Grid extends js.Object {
     /* 8 */ val WordExport: typings.ejWebAll.ej.Grid.ToolBarItems.WordExport with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.UnboundType")
   @js.native
-  object UnboundType extends js.Object {
+  object UnboundType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.UnboundType with Double] = js.native
@@ -269,8 +291,9 @@ object Grid extends js.Object {
     /* 1 */ val Save: typings.ejWebAll.ej.Grid.UnboundType.Save with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.VirtualScrollMode")
   @js.native
-  object VirtualScrollMode extends js.Object {
+  object VirtualScrollMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.VirtualScrollMode with Double] = js.native
@@ -280,8 +303,9 @@ object Grid extends js.Object {
     /* 0 */ val Normal: typings.ejWebAll.ej.Grid.VirtualScrollMode.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.Grid.WrapMode")
   @js.native
-  object WrapMode extends js.Object {
+  object WrapMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Grid.WrapMode with Double] = js.native
@@ -292,4 +316,11 @@ object Grid extends js.Object {
     
     /* 2 */ val Header: typings.ejWebAll.ej.Grid.WrapMode.Header with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.Grid.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.Grid = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.Grid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

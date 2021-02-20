@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableProjection extends js.Object {
+trait AwsDynamoDbTableProjection extends StObject {
   
   /**
     * The nonkey attributes that are projected into the index. For each attribute, provide the attribute name.
@@ -26,33 +27,21 @@ object AwsDynamoDbTableProjection {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableProjectionOps[Self <: AwsDynamoDbTableProjection] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableProjectionMutableBuilder[Self <: AwsDynamoDbTableProjection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNonKeyAttributes(value: StringList): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNonKeyAttributesVarargs(value: NonEmptyString*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setNonKeyAttributesVarargs(value: NonEmptyString*): Self = this.set("NonKeyAttributes", js.Array(value :_*))
+    def setProjectionType(value: NonEmptyString): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonKeyAttributes(value: StringList): Self = this.set("NonKeyAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonKeyAttributes: Self = this.set("NonKeyAttributes", js.undefined)
-    
-    @scala.inline
-    def setProjectionType(value: NonEmptyString): Self = this.set("ProjectionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectionType: Self = this.set("ProjectionType", js.undefined)
+    def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
   }
 }

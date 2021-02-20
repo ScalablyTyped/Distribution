@@ -1,5 +1,6 @@
 package typings.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,12 +25,12 @@ trait Color extends Base {
   
   var hue: Double = js.native
   
-   // readonly
+  // readonly
   var red: Double = js.native
   
   var rgbString: String = js.native
   
-   // readonly
+  // readonly
   var rgbaString: String = js.native
   
   var saturation: Double = js.native
@@ -68,63 +69,51 @@ object Color {
   }
   
   @scala.inline
-  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setGetRGB(value: () => js.Array[Double]): Self = StObject.set(x, "getRGB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBlue(value: Double): Self = this.set("blue", value.asInstanceOf[js.Any])
+    def setGetRGBA(value: () => js.Array[Double]): Self = StObject.set(x, "getRGBA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRGB(value: () => js.Array[Double]): Self = this.set("getRGB", js.Any.fromFunction0(value))
+    def setHexString(value: String): Self = StObject.set(x, "hexString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRGBA(value: () => js.Array[Double]): Self = this.set("getRGBA", js.Any.fromFunction0(value))
+    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreen(value: Double): Self = this.set("green", value.asInstanceOf[js.Any])
+    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHexString(value: String): Self = this.set("hexString", value.asInstanceOf[js.Any])
+    def setRgbString(value: String): Self = StObject.set(x, "rgbString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: Double): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setRgbaString(value: String): Self = StObject.set(x, "rgbaString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRed(value: Double): Self = this.set("red", value.asInstanceOf[js.Any])
+    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRgbString(value: String): Self = this.set("rgbString", value.asInstanceOf[js.Any])
+    def setSetHSB(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setHSB", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRgbaString(value: String): Self = this.set("rgbaString", value.asInstanceOf[js.Any])
+    def setSetRGB(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setRGB", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSaturation(value: Double): Self = this.set("saturation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetHSB(value: (Double, Double, Double) => Unit): Self = this.set("setHSB", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetRGB(value: (Double, Double, Double) => Unit): Self = this.set("setRGB", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetRGBA(value: (Double, Double, Double, Double) => Unit): Self = this.set("setRGBA", js.Any.fromFunction4(value))
+    def setSetRGBA(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setRGBA", js.Any.fromFunction4(value))
   }
 }

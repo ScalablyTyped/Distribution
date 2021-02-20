@@ -1,6 +1,5 @@
 package typings.firebaseDatabase
 
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
 import typings.firebaseDatabase.pathMod.Path
@@ -8,16 +7,16 @@ import typings.firebaseDatabase.queryParamsMod.QueryParams
 import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoMod.Repo
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/api/Query", JSImport.Namespace)
-@js.native
-object queryMod extends js.Object {
+object queryMod {
   
+  @JSImport("@firebase/database/dist/src/api/Query", "Query")
   @js.native
-  class Query protected () extends js.Object {
+  class Query protected () extends StObject {
     def this(repo: Repo, path: Path, queryParams_ : QueryParams, orderByCalled_ : Boolean) = this()
     
     /**
@@ -310,11 +309,11 @@ object queryMod extends js.Object {
     var validateNoPreviousOrderByCall_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Query extends js.Object {
+  object Query {
     
-    def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ Path, Query] = js.native
-    def __referenceConstructor_=(`val`: Instantiable2[/* repo */ Repo, /* path */ Path, Query]): Unit = js.native
+    @JSImport("@firebase/database/dist/src/api/Query", "Query")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Helper used by .on and .once to extract the context and or cancel arguments.
@@ -324,21 +323,33 @@ object queryMod extends js.Object {
       * @return {{cancel: ?function(Error), context: ?Object}}
       * @private
       */
-    var getCancelAndContextArgs_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/api/Query", "Query.getCancelAndContextArgs_")
+    @js.native
+    def getCancelAndContextArgs_ : js.Any = js.native
+    @scala.inline
+    def getCancelAndContextArgs__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCancelAndContextArgs_")(x.asInstanceOf[js.Any])
     
     /**
       * Validates that limit* has been called with the correct combination of parameters
       * @param {!QueryParams} params
       * @private
       */
-    var validateLimit_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/api/Query", "Query.validateLimit_")
+    @js.native
+    def validateLimit_ : js.Any = js.native
+    @scala.inline
+    def validateLimit__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateLimit_")(x.asInstanceOf[js.Any])
     
     /**
       * Validates start/end values for queries.
       * @param {!QueryParams} params
       * @private
       */
-    var validateQueryEndpoints_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/api/Query", "Query.validateQueryEndpoints_")
+    @js.native
+    def validateQueryEndpoints_ : js.Any = js.native
+    @scala.inline
+    def validateQueryEndpoints__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateQueryEndpoints_")(x.asInstanceOf[js.Any])
   }
   
   type SnapshotCallback = js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]

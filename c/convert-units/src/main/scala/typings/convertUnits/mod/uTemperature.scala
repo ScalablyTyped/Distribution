@@ -1,16 +1,18 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Volume Flow Rate
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.C
   - typings.convertUnits.convertUnitsStrings.F
   - typings.convertUnits.convertUnitsStrings.K
   - typings.convertUnits.convertUnitsStrings.R
 */
-trait uTemperature extends js.Object
+trait uTemperature extends StObject
 object uTemperature {
   
   @scala.inline

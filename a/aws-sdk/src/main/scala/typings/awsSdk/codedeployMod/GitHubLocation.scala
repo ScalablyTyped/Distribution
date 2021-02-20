@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitHubLocation extends js.Object {
+trait GitHubLocation extends StObject {
   
   /**
     * The SHA1 commit ID of the GitHub commit that represents the bundled artifacts for the application revision.
@@ -26,30 +27,18 @@ object GitHubLocation {
   }
   
   @scala.inline
-  implicit class GitHubLocationOps[Self <: GitHubLocation] (val x: Self) extends AnyVal {
+  implicit class GitHubLocationMutableBuilder[Self <: GitHubLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitId(value: CommitId): Self = this.set("commitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommitId: Self = this.set("commitId", js.undefined)
-    
-    @scala.inline
-    def setRepository(value: Repository): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

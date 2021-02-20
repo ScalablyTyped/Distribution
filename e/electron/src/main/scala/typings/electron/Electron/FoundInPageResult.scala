@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoundInPageResult extends js.Object {
+trait FoundInPageResult extends StObject {
   
   /**
     * Position of the active match.
@@ -41,33 +42,21 @@ object FoundInPageResult {
   }
   
   @scala.inline
-  implicit class FoundInPageResultOps[Self <: FoundInPageResult] (val x: Self) extends AnyVal {
+  implicit class FoundInPageResultMutableBuilder[Self <: FoundInPageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveMatchOrdinal(value: Double): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalUpdate(value: Boolean): Self = StObject.set(x, "finalUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatches(value: Double): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveMatchOrdinal(value: Double): Self = this.set("activeMatchOrdinal", value.asInstanceOf[js.Any])
+    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalUpdate(value: Boolean): Self = this.set("finalUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatches(value: Double): Self = this.set("matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: Double): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionArea(value: Rectangle): Self = this.set("selectionArea", value.asInstanceOf[js.Any])
+    def setSelectionArea(value: Rectangle): Self = StObject.set(x, "selectionArea", value.asInstanceOf[js.Any])
   }
 }

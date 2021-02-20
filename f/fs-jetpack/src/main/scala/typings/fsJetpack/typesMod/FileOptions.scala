@@ -1,11 +1,12 @@
 package typings.fsJetpack.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileOptions extends js.Object {
+trait FileOptions extends StObject {
   
   var content: js.UndefOr[WritableData] = js.native
   
@@ -22,39 +23,27 @@ object FileOptions {
   }
   
   @scala.inline
-  implicit class FileOptionsOps[Self <: FileOptions] (val x: Self) extends AnyVal {
+  implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: WritableData): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setContentVarargs(value: js.Any*): Self = this.set("content", js.Array(value :_*))
+    def setJsonIndent(value: Double): Self = StObject.set(x, "jsonIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: WritableData): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setJsonIndentUndefined: Self = StObject.set(x, "jsonIndent", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonIndent(value: Double): Self = this.set("jsonIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonIndent: Self = this.set("jsonIndent", js.undefined)
-    
-    @scala.inline
-    def setMode(value: String | Double): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

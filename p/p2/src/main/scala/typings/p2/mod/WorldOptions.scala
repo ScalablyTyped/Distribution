@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorldOptions extends js.Object {
+trait WorldOptions extends StObject {
   
   var broadphase: js.UndefOr[Broadphase] = js.native
   
@@ -24,42 +25,30 @@ object WorldOptions {
   }
   
   @scala.inline
-  implicit class WorldOptionsOps[Self <: WorldOptions] (val x: Self) extends AnyVal {
+  implicit class WorldOptionsMutableBuilder[Self <: WorldOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadphase(value: Broadphase): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadphaseUndefined: Self = StObject.set(x, "broadphase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGravity(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadphase(value: Broadphase): Self = this.set("broadphase", value.asInstanceOf[js.Any])
+    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
     @scala.inline
-    def deleteBroadphase: Self = this.set("broadphase", js.undefined)
+    def setIslandSplit(value: Boolean): Self = StObject.set(x, "islandSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravity(value: js.Tuple2[Double, Double]): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    def setIslandSplitUndefined: Self = StObject.set(x, "islandSplit", js.undefined)
     
     @scala.inline
-    def deleteGravity: Self = this.set("gravity", js.undefined)
+    def setSolver(value: Solver): Self = StObject.set(x, "solver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIslandSplit(value: Boolean): Self = this.set("islandSplit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIslandSplit: Self = this.set("islandSplit", js.undefined)
-    
-    @scala.inline
-    def setSolver(value: Solver): Self = this.set("solver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolver: Self = this.set("solver", js.undefined)
+    def setSolverUndefined: Self = StObject.set(x, "solver", js.undefined)
   }
 }

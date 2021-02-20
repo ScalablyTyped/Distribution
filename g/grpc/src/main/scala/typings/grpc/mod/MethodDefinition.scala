@@ -1,12 +1,13 @@
 package typings.grpc.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MethodDefinition[RequestType, ResponseType] extends js.Object {
+trait MethodDefinition[RequestType, ResponseType] extends StObject {
   
   /**
     * The method's URL path

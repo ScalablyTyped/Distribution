@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the way in which an appointment conflicts with another appointment. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentConflictType")
 @js.native
-object AppointmentConflictType extends js.Object {
+object AppointmentConflictType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

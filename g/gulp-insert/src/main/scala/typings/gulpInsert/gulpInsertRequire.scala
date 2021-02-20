@@ -1,5 +1,6 @@
 package typings.gulpInsert
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("gulp-insert", JSImport.Namespace)
 @js.native
-object gulpInsertRequire extends js.Object
+object gulpInsertRequire extends StObject

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyVpcPeeringConnectionOptionsResult extends js.Object {
+trait ModifyVpcPeeringConnectionOptionsResult extends StObject {
   
   /**
     * Information about the VPC peering connection options for the accepter VPC.
@@ -26,30 +27,18 @@ object ModifyVpcPeeringConnectionOptionsResult {
   }
   
   @scala.inline
-  implicit class ModifyVpcPeeringConnectionOptionsResultOps[Self <: ModifyVpcPeeringConnectionOptionsResult] (val x: Self) extends AnyVal {
+  implicit class ModifyVpcPeeringConnectionOptionsResultMutableBuilder[Self <: ModifyVpcPeeringConnectionOptionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepterPeeringConnectionOptions(value: PeeringConnectionOptions): Self = StObject.set(x, "AccepterPeeringConnectionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccepterPeeringConnectionOptionsUndefined: Self = StObject.set(x, "AccepterPeeringConnectionOptions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequesterPeeringConnectionOptions(value: PeeringConnectionOptions): Self = StObject.set(x, "RequesterPeeringConnectionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccepterPeeringConnectionOptions(value: PeeringConnectionOptions): Self = this.set("AccepterPeeringConnectionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccepterPeeringConnectionOptions: Self = this.set("AccepterPeeringConnectionOptions", js.undefined)
-    
-    @scala.inline
-    def setRequesterPeeringConnectionOptions(value: PeeringConnectionOptions): Self = this.set("RequesterPeeringConnectionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterPeeringConnectionOptions: Self = this.set("RequesterPeeringConnectionOptions", js.undefined)
+    def setRequesterPeeringConnectionOptionsUndefined: Self = StObject.set(x, "RequesterPeeringConnectionOptions", js.undefined)
   }
 }

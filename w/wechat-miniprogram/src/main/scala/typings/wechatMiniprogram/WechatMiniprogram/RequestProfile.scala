@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * 最低基础库： `2.10.4` */
 @js.native
-trait RequestProfile extends js.Object {
+trait RequestProfile extends StObject {
   
   /** SSL建立完成的时间,如果不是安全连接,则值为 0 */
   var SSLconnectionEnd: Double = js.native
@@ -116,90 +117,78 @@ object RequestProfile {
   }
   
   @scala.inline
-  implicit class RequestProfileOps[Self <: RequestProfile] (val x: Self) extends AnyVal {
+  implicit class RequestProfileMutableBuilder[Self <: RequestProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectStart(value: Double): Self = StObject.set(x, "connectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainLookupEnd(value: Double): Self = StObject.set(x, "domainLookupEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSLconnectionEnd(value: Double): Self = this.set("SSLconnectionEnd", value.asInstanceOf[js.Any])
+    def setDomainLookupStart(value: Double): Self = StObject.set(x, "domainLookupStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSLconnectionStart(value: Double): Self = this.set("SSLconnectionStart", value.asInstanceOf[js.Any])
+    def setDownstreamThroughputKbpsEstimate(value: Double): Self = StObject.set(x, "downstreamThroughputKbpsEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectEnd(value: Double): Self = this.set("connectEnd", value.asInstanceOf[js.Any])
+    def setEstimate_nettype(value: String): Self = StObject.set(x, "estimate_nettype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectStart(value: Double): Self = this.set("connectStart", value.asInstanceOf[js.Any])
+    def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainLookupEnd(value: Double): Self = this.set("domainLookupEnd", value.asInstanceOf[js.Any])
+    def setHttpRttEstimate(value: Double): Self = StObject.set(x, "httpRttEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainLookupStart(value: Double): Self = this.set("domainLookupStart", value.asInstanceOf[js.Any])
+    def setPeerIP(value: String): Self = StObject.set(x, "peerIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownstreamThroughputKbpsEstimate(value: Double): Self = this.set("downstreamThroughputKbpsEstimate", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimate_nettype(value: String): Self = this.set("estimate_nettype", value.asInstanceOf[js.Any])
+    def setReceivedBytedCount(value: Double): Self = StObject.set(x, "receivedBytedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchStart(value: Double): Self = this.set("fetchStart", value.asInstanceOf[js.Any])
+    def setRedirectEnd(value: Double): Self = StObject.set(x, "redirectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRttEstimate(value: Double): Self = this.set("httpRttEstimate", value.asInstanceOf[js.Any])
+    def setRedirectStart(value: Double): Self = StObject.set(x, "redirectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerIP(value: String): Self = this.set("peerIP", value.asInstanceOf[js.Any])
+    def setRequestEnd(value: Double): Self = StObject.set(x, "requestEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setRequestStart(value: Double): Self = StObject.set(x, "requestStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivedBytedCount(value: Double): Self = this.set("receivedBytedCount", value.asInstanceOf[js.Any])
+    def setResponseEnd(value: Double): Self = StObject.set(x, "responseEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectEnd(value: Double): Self = this.set("redirectEnd", value.asInstanceOf[js.Any])
+    def setResponseStart(value: Double): Self = StObject.set(x, "responseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectStart(value: Double): Self = this.set("redirectStart", value.asInstanceOf[js.Any])
+    def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestEnd(value: Double): Self = this.set("requestEnd", value.asInstanceOf[js.Any])
+    def setSSLconnectionEnd(value: Double): Self = StObject.set(x, "SSLconnectionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestStart(value: Double): Self = this.set("requestStart", value.asInstanceOf[js.Any])
+    def setSSLconnectionStart(value: Double): Self = StObject.set(x, "SSLconnectionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseEnd(value: Double): Self = this.set("responseEnd", value.asInstanceOf[js.Any])
+    def setSendBytesCount(value: Double): Self = StObject.set(x, "sendBytesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStart(value: Double): Self = this.set("responseStart", value.asInstanceOf[js.Any])
+    def setSocketReused(value: Boolean): Self = StObject.set(x, "socketReused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtt(value: Double): Self = this.set("rtt", value.asInstanceOf[js.Any])
+    def setThroughputKbps(value: Double): Self = StObject.set(x, "throughputKbps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendBytesCount(value: Double): Self = this.set("sendBytesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSocketReused(value: Boolean): Self = this.set("socketReused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThroughputKbps(value: Double): Self = this.set("throughputKbps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportRttEstimate(value: Double): Self = this.set("transportRttEstimate", value.asInstanceOf[js.Any])
+    def setTransportRttEstimate(value: Double): Self = StObject.set(x, "transportRttEstimate", value.asInstanceOf[js.Any])
   }
 }

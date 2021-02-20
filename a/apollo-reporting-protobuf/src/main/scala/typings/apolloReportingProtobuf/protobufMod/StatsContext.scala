@@ -5,6 +5,7 @@ import typings.apolloProtobufjs.mod.IConversionOptions
 import typings.apolloProtobufjs.mod.Reader
 import typings.apolloProtobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,16 +38,18 @@ class StatsContext () extends IStatsContext {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext")
-@js.native
-object StatsContext extends js.Object {
+object StatsContext {
   
   /**
     * Creates a new StatsContext instance using the specified properties.
     * @param [properties] Properties to set
     * @returns StatsContext instance
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.create")
+  @js.native
   def create(): StatsContext = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.create")
+  @js.native
   def create(properties: IStatsContext): StatsContext = js.native
   
   /**
@@ -57,9 +60,17 @@ object StatsContext extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.decode")
+  @js.native
   def decode(reader: Reader): StatsContext = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.decode")
+  @js.native
   def decode(reader: Reader, length: Double): StatsContext = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.decode")
+  @js.native
   def decode(reader: Uint8Array): StatsContext = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): StatsContext = js.native
   
   /**
@@ -69,7 +80,11 @@ object StatsContext extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): StatsContext = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): StatsContext = js.native
   
   /**
@@ -78,7 +93,11 @@ object StatsContext extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.encode")
+  @js.native
   def encode(message: IStatsContext): Writer = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.encode")
+  @js.native
   def encode(message: IStatsContext, writer: Writer): Writer = js.native
   
   /**
@@ -87,7 +106,11 @@ object StatsContext extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IStatsContext): Writer = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IStatsContext, writer: Writer): Writer = js.native
   
   /**
@@ -95,6 +118,8 @@ object StatsContext extends js.Object {
     * @param object Plain object
     * @returns StatsContext
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): StatsContext = js.native
   
   /**
@@ -103,7 +128,11 @@ object StatsContext extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.toObject")
+  @js.native
   def toObject(message: StatsContext): StringDictionary[js.Any] = js.native
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.toObject")
+  @js.native
   def toObject(message: StatsContext, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -111,5 +140,7 @@ object StatsContext extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("apollo-reporting-protobuf/dist/protobuf", "StatsContext.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

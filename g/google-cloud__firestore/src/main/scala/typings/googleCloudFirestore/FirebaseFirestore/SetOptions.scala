@@ -1,16 +1,20 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetOptions extends js.Object {
+@js.native
+trait SetOptions extends StObject {
+  
   /**
     * Changes the behavior of a set() call to only replace the values specified
     * in its data argument. Fields omitted from the set() call remain
     * untouched.
     */
-  val merge: js.UndefOr[Boolean] = js.undefined
+  val merge: js.UndefOr[Boolean] = js.native
+  
   /**
     * Changes the behavior of set() calls to only replace the specified field
     * paths. Any field path that is not specified is ignored and remains
@@ -19,16 +23,32 @@ trait SetOptions extends js.Object {
     * It is an error to pass a SetOptions object to a set() call that is
     * missing a value for any of the fields specified here.
     */
-  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
+  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.native
 }
-
 object SetOptions {
+  
   @scala.inline
-  def apply(merge: js.UndefOr[Boolean] = js.undefined, mergeFields: js.Array[String | FieldPath] = null): SetOptions = {
+  def apply(): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.get.asInstanceOf[js.Any])
-    if (mergeFields != null) __obj.updateDynamic("mergeFields")(mergeFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
+  
+  @scala.inline
+  implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
+    
+    @scala.inline
+    def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value :_*))
+    
+    @scala.inline
+    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+  }
 }
-

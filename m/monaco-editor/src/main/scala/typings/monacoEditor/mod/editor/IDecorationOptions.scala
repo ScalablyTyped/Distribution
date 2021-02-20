@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDecorationOptions extends js.Object {
+trait IDecorationOptions extends StObject {
   
   /**
     * CSS color to render.
@@ -28,30 +29,18 @@ object IDecorationOptions {
   }
   
   @scala.inline
-  implicit class IDecorationOptionsOps[Self <: IDecorationOptions] (val x: Self) extends AnyVal {
+  implicit class IDecorationOptionsMutableBuilder[Self <: IDecorationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String | ThemeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDarkColor(value: String | ThemeColor): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | ThemeColor): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setDarkColor(value: String | ThemeColor): Self = this.set("darkColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDarkColor: Self = this.set("darkColor", js.undefined)
+    def setDarkColorUndefined: Self = StObject.set(x, "darkColor", js.undefined)
   }
 }

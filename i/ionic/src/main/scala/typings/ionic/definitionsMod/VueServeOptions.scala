@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object VueServeOptions {
   }
   
   @scala.inline
-  implicit class VueServeOptionsOps[Self <: VueServeOptions] (val x: Self) extends AnyVal {
+  implicit class VueServeOptionsMutableBuilder[Self <: VueServeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcemaps(value: Boolean): Self = this.set("sourcemaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcemaps: Self = this.set("sourcemaps", js.undefined)
-    
-    @scala.inline
-    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

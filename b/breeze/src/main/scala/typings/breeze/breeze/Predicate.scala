@@ -1,15 +1,16 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Predicate extends js.Object {
+trait Predicate extends StObject {
   
   def and(predicates: Predicate*): Predicate = js.native
   def and(predicates: js.Array[Predicate]): Predicate = js.native
-    // for any/all clauses
+  // for any/all clauses
   def and(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): Predicate = js.native
   def and(
     property: String,
@@ -29,7 +30,7 @@ trait Predicate extends js.Object {
   
   def or(predicates: Predicate*): Predicate = js.native
   def or(predicates: js.Array[Predicate]): Predicate = js.native
-    // for any/all clauses
+  // for any/all clauses
   def or(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): Predicate = js.native
   def or(
     property: String,

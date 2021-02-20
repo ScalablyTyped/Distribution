@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.physicsImpostorMod.PhysicsImpostor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Physics/Plugins/oimoJSPlugin", JSImport.Namespace)
-@js.native
-object oimoJSPluginMod extends js.Object {
+object oimoJSPluginMod {
   
+  @JSImport("babylonjs/Physics/Plugins/oimoJSPlugin", "OimoJSPlugin")
   @js.native
   class OimoJSPlugin () extends IPhysicsEnginePlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()

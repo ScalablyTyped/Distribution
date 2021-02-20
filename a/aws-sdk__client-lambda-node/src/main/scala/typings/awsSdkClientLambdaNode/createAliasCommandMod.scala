@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesCreateAliasInputMod.CreateAliasInput
 import typings.awsSdkClientLambdaNode.typesCreateAliasOutputMod.CreateAliasOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/CreateAliasCommand", JSImport.Namespace)
-@js.native
-object createAliasCommandMod extends js.Object {
+object createAliasCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/CreateAliasCommand", "CreateAliasCommand")
   @js.native
   class CreateAliasCommand protected () extends Command[
           InputTypesUnion, 

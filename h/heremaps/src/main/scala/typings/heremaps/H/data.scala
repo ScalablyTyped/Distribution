@@ -4,14 +4,13 @@ import typings.heremaps.H.data.AbstractReader.State
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.layer.ObjectLayer
 import typings.heremaps.H.util.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** data *****/
-@JSGlobal("H.data")
-@js.native
-object data extends js.Object {
+object data {
   
   /**
     * An abstract reader class defines interface for data readers and has general functionality related to fetching data and reader events.
@@ -58,16 +57,16 @@ object data extends js.Object {
       */
     def setUrl(url: String): AbstractReader = js.native
   }
-  @js.native
-  object AbstractReader extends js.Object {
+  object AbstractReader {
     
     @js.native
-    sealed trait State extends js.Object
+    sealed trait State extends StObject
     /**
       * The state types of an Reader. Possible states are:
       */
+    @JSGlobal("H.data.AbstractReader.State")
     @js.native
-    object State extends js.Object {
+    object State extends StObject {
       
       @js.native
       sealed trait ERROR extends State

@@ -8,6 +8,7 @@ import typings.aframe.mod.Scene
 import typings.aframe.mod.System
 import typings.std.Element
 import typings.std.NodeListOf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Custom elements augment document methods to return custom HTML
   */
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   def createElement(tagName: String): Entity[ObjectMap[Component[_, System[_]]]] = js.native
   

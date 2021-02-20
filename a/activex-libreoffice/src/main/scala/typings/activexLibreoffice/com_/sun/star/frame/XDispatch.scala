@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,27 +72,15 @@ object XDispatch {
   }
   
   @scala.inline
-  implicit class XDispatchOps[Self <: XDispatch] (val x: Self) extends AnyVal {
+  implicit class XDispatchMutableBuilder[Self <: XDispatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "addStatusListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddStatusListener(value: (XStatusListener, URL) => Unit): Self = this.set("addStatusListener", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = this.set("dispatch", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveStatusListener(value: (XStatusListener, URL) => Unit): Self = this.set("removeStatusListener", js.Any.fromFunction2(value))
+    def setRemoveStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "removeStatusListener", js.Any.fromFunction2(value))
   }
 }

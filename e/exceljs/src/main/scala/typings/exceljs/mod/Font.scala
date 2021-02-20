@@ -10,12 +10,13 @@ import typings.exceljs.exceljsStrings.single
 import typings.exceljs.exceljsStrings.singleAccounting
 import typings.exceljs.exceljsStrings.subscript
 import typings.exceljs.exceljsStrings.superscript
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Font extends js.Object {
+trait Font extends StObject {
   
   var bold: Boolean = js.native
   
@@ -63,54 +64,42 @@ object Font {
   }
   
   @scala.inline
-  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharset(value: Double): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: PartialColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: Double): Self = this.set("charset", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: PartialColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: Double): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setScheme(value: minor | major | none_): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: Boolean): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setStrike(value: Boolean): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheme(value: minor | major | none_): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    def setUnderline(value: Boolean | none_ | single | double | singleAccounting | doubleAccounting): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrike(value: Boolean): Self = this.set("strike", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: Boolean | none_ | single | double | singleAccounting | doubleAccounting): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertAlign(value: superscript | subscript): Self = this.set("vertAlign", value.asInstanceOf[js.Any])
+    def setVertAlign(value: superscript | subscript): Self = StObject.set(x, "vertAlign", value.asInstanceOf[js.Any])
   }
 }

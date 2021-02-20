@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalPortDetails extends js.Object {
+trait LocalPortDetails extends StObject {
   
   /**
     * The port number of the local connection.
@@ -26,30 +27,18 @@ object LocalPortDetails {
   }
   
   @scala.inline
-  implicit class LocalPortDetailsOps[Self <: LocalPortDetails] (val x: Self) extends AnyVal {
+  implicit class LocalPortDetailsMutableBuilder[Self <: LocalPortDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPortName(value: String): Self = StObject.set(x, "PortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortNameUndefined: Self = StObject.set(x, "PortName", js.undefined)
     
     @scala.inline
-    def setPort(value: Integer): Self = this.set("Port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
-    
-    @scala.inline
-    def setPortName(value: String): Self = this.set("PortName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortName: Self = this.set("PortName", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

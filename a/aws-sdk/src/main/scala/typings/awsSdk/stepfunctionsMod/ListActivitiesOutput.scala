@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListActivitiesOutput extends js.Object {
+trait ListActivitiesOutput extends StObject {
   
   /**
     * The list of activities.
@@ -26,30 +27,18 @@ object ListActivitiesOutput {
   }
   
   @scala.inline
-  implicit class ListActivitiesOutputOps[Self <: ListActivitiesOutput] (val x: Self) extends AnyVal {
+  implicit class ListActivitiesOutputMutableBuilder[Self <: ListActivitiesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivities(value: ActivityList): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivitiesVarargs(value: ActivityListItem*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivitiesVarargs(value: ActivityListItem*): Self = this.set("activities", js.Array(value :_*))
-    
-    @scala.inline
-    def setActivities(value: ActivityList): Self = this.set("activities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: PageToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

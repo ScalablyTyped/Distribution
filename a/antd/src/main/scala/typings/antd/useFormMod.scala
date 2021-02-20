@@ -3,15 +3,18 @@ package typings.antd
 import typings.antd.anon.ItemRef
 import typings.rcFieldForm.interfaceMod.NamePath
 import typings.scrollIntoViewIfNeeded.mod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/form/hooks/useForm", JSImport.Namespace)
-@js.native
-object useFormMod extends js.Object {
+object useFormMod {
   
+  @JSImport("antd/lib/form/hooks/useForm", JSImport.Default)
+  @js.native
   def default[Values](): js.Array[FormInstance[Values]] = js.native
+  @JSImport("antd/lib/form/hooks/useForm", JSImport.Default)
+  @js.native
   def default[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = js.native
   
   @js.native

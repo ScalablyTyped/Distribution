@@ -7,16 +7,16 @@ import typings.uirouterCore.resolvableMod.Resolvable
 import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.uirouterCoreBooleans.`false`
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/path/pathNode", JSImport.Namespace)
-@js.native
-object pathNodeMod extends js.Object {
+object pathNodeMod {
   
+  @JSImport("@uirouter/core/lib/path/pathNode", "PathNode")
   @js.native
-  class PathNode protected () extends js.Object {
+  class PathNode protected () extends StObject {
     /** Creates a copy of a PathNode */
     def this(node: PathNode) = this()
     /** Creates a new (empty) PathNode for a State */
@@ -66,13 +66,14 @@ object pathNodeMod extends js.Object {
     var views: js.Array[ViewConfig] = js.native
   }
   /* static members */
-  @js.native
-  object PathNode extends js.Object {
+  object PathNode {
     
     /**
       * Returns a clone of the PathNode
       * @deprecated use instance method `node.clone()`
       */
+    @JSImport("@uirouter/core/lib/path/pathNode", "PathNode.clone")
+    @js.native
     def clone(node: PathNode): PathNode = js.native
   }
   

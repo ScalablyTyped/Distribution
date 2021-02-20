@@ -1,12 +1,13 @@
 package typings.reactRelay.anon
 
 import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchKey extends js.Object {
+trait FetchKey extends StObject {
   
   var UNSTABLE_renderPolicy: js.UndefOr[RenderPolicy] = js.native
   
@@ -25,42 +26,30 @@ object FetchKey {
   }
   
   @scala.inline
-  implicit class FetchKeyOps[Self <: FetchKey] (val x: Self) extends AnyVal {
+  implicit class FetchKeyMutableBuilder[Self <: FetchKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchKeyUndefined: Self = StObject.set(x, "fetchKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = this.set("UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
+    def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
     
     @scala.inline
-    def deleteUNSTABLE_renderPolicy: Self = this.set("UNSTABLE_renderPolicy", js.undefined)
+    def setNetworkCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchKey(value: String | Double): Self = this.set("fetchKey", value.asInstanceOf[js.Any])
+    def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
     
     @scala.inline
-    def deleteFetchKey: Self = this.set("fetchKey", js.undefined)
+    def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = StObject.set(x, "UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = this.set("fetchPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFetchPolicy: Self = this.set("fetchPolicy", js.undefined)
-    
-    @scala.inline
-    def setNetworkCacheConfig(value: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig): Self = this.set("networkCacheConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkCacheConfig: Self = this.set("networkCacheConfig", js.undefined)
+    def setUNSTABLE_renderPolicyUndefined: Self = StObject.set(x, "UNSTABLE_renderPolicy", js.undefined)
   }
 }

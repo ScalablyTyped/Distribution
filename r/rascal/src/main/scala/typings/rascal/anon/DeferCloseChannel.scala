@@ -1,11 +1,12 @@
 package typings.rascal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeferCloseChannel extends js.Object {
+trait DeferCloseChannel extends StObject {
   
   var deferCloseChannel: Double = js.native
   
@@ -26,33 +27,21 @@ object DeferCloseChannel {
   }
   
   @scala.inline
-  implicit class DeferCloseChannelOps[Self <: DeferCloseChannel] (val x: Self) extends AnyVal {
+  implicit class DeferCloseChannelMutableBuilder[Self <: DeferCloseChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferCloseChannel(value: Double): Self = StObject.set(x, "deferCloseChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedeliveries(value: Limit): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferCloseChannel(value: Double): Self = this.set("deferCloseChannel", value.asInstanceOf[js.Any])
+    def setRetry(value: Factor): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefetch(value: Double): Self = this.set("prefetch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedeliveries(value: Limit): Self = this.set("redeliveries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetry(value: Factor): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVhost(value: String): Self = this.set("vhost", value.asInstanceOf[js.Any])
+    def setVhost(value: String): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
   }
 }

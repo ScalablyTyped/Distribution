@@ -38,6 +38,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -221,39 +222,27 @@ object ojComboboxManyEventMap {
   }
   
   @scala.inline
-  implicit class ojComboboxManyEventMapOps[Self <: ojComboboxManyEventMap[_, _], K, D] (val x: Self with (ojComboboxManyEventMap[K, D])) extends AnyVal {
+  implicit class ojComboboxManyEventMapMutableBuilder[Self <: ojComboboxManyEventMap[_, _], K, D] (val x: Self with (ojComboboxManyEventMap[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[js.Array[_]]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinLengthChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minLengthChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[js.Array[_]]]]): Self = this.set("asyncValidatorsChanged", value.asInstanceOf[js.Any])
+    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = this.set("converterChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinLengthChanged(value: JetElementCustomEvent[Double]): Self = this.set("minLengthChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = this.set("ojAnimateEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = this.set("ojAnimateStart", value.asInstanceOf[js.Any])
+    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionRendererChanged(
       value: JetElementCustomEvent[js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null]]
-    ): Self = this.set("optionRendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "optionRendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionsChanged(
@@ -262,33 +251,33 @@ object ojComboboxManyEventMap {
             typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
           ]) | (DataProvider[K, D]) | Null
         ]
-    ): Self = this.set("optionsChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "optionsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsKeysChanged(value: JetElementCustomEvent[Children]): Self = this.set("optionsKeysChanged", value.asInstanceOf[js.Any])
+    def setOptionsKeysChanged(value: JetElementCustomEvent[Children]): Self = StObject.set(x, "optionsKeysChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = this.set("pickerAttributesChanged", value.asInstanceOf[js.Any])
+    def setPickerAttributesChanged(value: JetElementCustomEvent[Class]): Self = StObject.set(x, "pickerAttributesChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderChanged(value: JetElementCustomEvent[String | Null]): Self = this.set("placeholderChanged", value.asInstanceOf[js.Any])
+    def setPlaceholderChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "placeholderChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawValueChanged(value: JetElementCustomEvent[String | Null]): Self = this.set("rawValueChanged", value.asInstanceOf[js.Any])
+    def setRawValueChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "rawValueChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnlyChanged(value: JetElementCustomEvent[Boolean]): Self = this.set("readOnlyChanged", value.asInstanceOf[js.Any])
+    def setReadOnlyChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "readOnlyChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = this.set("requiredChanged", value.asInstanceOf[js.Any])
+    def setRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "requiredChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidatorsChanged(value: JetElementCustomEvent[(js.Array[Validator[js.Array[_]] | RegisteredValidator]) | Null]): Self = this.set("validatorsChanged", value.asInstanceOf[js.Any])
+    def setValidatorsChanged(value: JetElementCustomEvent[(js.Array[Validator[js.Array[_]] | RegisteredValidator]) | Null]): Self = StObject.set(x, "validatorsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueChanged(value: JetElementCustomEvent[js.Array[_] | Null]): Self = this.set("valueChanged", value.asInstanceOf[js.Any])
+    def setValueChanged(value: JetElementCustomEvent[js.Array[_] | Null]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueOptionsChanged(value: JetElementCustomEvent[js.Array[LabelValue] | Null]): Self = this.set("valueOptionsChanged", value.asInstanceOf[js.Any])
+    def setValueOptionsChanged(value: JetElementCustomEvent[js.Array[LabelValue] | Null]): Self = StObject.set(x, "valueOptionsChanged", value.asInstanceOf[js.Any])
   }
 }

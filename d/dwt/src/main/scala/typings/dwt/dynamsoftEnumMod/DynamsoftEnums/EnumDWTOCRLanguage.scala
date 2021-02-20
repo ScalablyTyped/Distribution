@@ -1,152 +1,125 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTOCRLanguage extends js.Object
+sealed trait EnumDWTOCRLanguage extends StObject
 /** OCR Languages */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_OCRLanguage")
 @js.native
-object EnumDWTOCRLanguage extends js.Object {
+object EnumDWTOCRLanguage extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EnumDWTOCRLanguage with String] = js.native
   
   @js.native
   sealed trait OCRL_ARA extends EnumDWTOCRLanguage
-  /* "ara" */ @js.native
-  object OCRL_ARA extends TopLevel[OCRL_ARA with String]
+  /* "ara" */ val OCRL_ARA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_ARA with String = js.native
   
   @js.native
   sealed trait OCRL_BEN extends EnumDWTOCRLanguage
-  /* "ben" */ @js.native
-  object OCRL_BEN extends TopLevel[OCRL_BEN with String]
+  /* "ben" */ val OCRL_BEN: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_BEN with String = js.native
   
   @js.native
   sealed trait OCRL_CHI_SIM extends EnumDWTOCRLanguage
-  /* "chi_sim" */ @js.native
-  object OCRL_CHI_SIM extends TopLevel[OCRL_CHI_SIM with String]
+  /* "chi_sim" */ val OCRL_CHI_SIM: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_CHI_SIM with String = js.native
   
   @js.native
   sealed trait OCRL_CHI_TRA extends EnumDWTOCRLanguage
-  /* "chi_tra" */ @js.native
-  object OCRL_CHI_TRA extends TopLevel[OCRL_CHI_TRA with String]
+  /* "chi_tra" */ val OCRL_CHI_TRA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_CHI_TRA with String = js.native
   
   @js.native
   sealed trait OCRL_DEU extends EnumDWTOCRLanguage
-  /* "deu" */ @js.native
-  object OCRL_DEU extends TopLevel[OCRL_DEU with String]
+  /* "deu" */ val OCRL_DEU: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_DEU with String = js.native
   
   @js.native
   sealed trait OCRL_ENG extends EnumDWTOCRLanguage
-  /* "eng" */ @js.native
-  object OCRL_ENG extends TopLevel[OCRL_ENG with String]
+  /* "eng" */ val OCRL_ENG: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_ENG with String = js.native
   
   @js.native
   sealed trait OCRL_FAS extends EnumDWTOCRLanguage
-  /* "fas" */ @js.native
-  object OCRL_FAS extends TopLevel[OCRL_FAS with String]
+  /* "fas" */ val OCRL_FAS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_FAS with String = js.native
   
   @js.native
   sealed trait OCRL_FRA extends EnumDWTOCRLanguage
-  /* "fra" */ @js.native
-  object OCRL_FRA extends TopLevel[OCRL_FRA with String]
+  /* "fra" */ val OCRL_FRA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_FRA with String = js.native
   
   @js.native
   sealed trait OCRL_HIN extends EnumDWTOCRLanguage
-  /* "hin" */ @js.native
-  object OCRL_HIN extends TopLevel[OCRL_HIN with String]
+  /* "hin" */ val OCRL_HIN: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_HIN with String = js.native
   
   @js.native
   sealed trait OCRL_IND extends EnumDWTOCRLanguage
-  /* "ind" */ @js.native
-  object OCRL_IND extends TopLevel[OCRL_IND with String]
+  /* "ind" */ val OCRL_IND: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_IND with String = js.native
   
   @js.native
   sealed trait OCRL_ITA extends EnumDWTOCRLanguage
-  /* "ita" */ @js.native
-  object OCRL_ITA extends TopLevel[OCRL_ITA with String]
+  /* "ita" */ val OCRL_ITA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_ITA with String = js.native
   
   @js.native
   sealed trait OCRL_JAV extends EnumDWTOCRLanguage
-  /* "jav" */ @js.native
-  object OCRL_JAV extends TopLevel[OCRL_JAV with String]
+  /* "jav" */ val OCRL_JAV: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_JAV with String = js.native
   
   @js.native
   sealed trait OCRL_JPN extends EnumDWTOCRLanguage
-  /* "jpn" */ @js.native
-  object OCRL_JPN extends TopLevel[OCRL_JPN with String]
+  /* "jpn" */ val OCRL_JPN: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_JPN with String = js.native
   
   @js.native
   sealed trait OCRL_KOR extends EnumDWTOCRLanguage
-  /* "kor" */ @js.native
-  object OCRL_KOR extends TopLevel[OCRL_KOR with String]
+  /* "kor" */ val OCRL_KOR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_KOR with String = js.native
   
   @js.native
   sealed trait OCRL_MAR extends EnumDWTOCRLanguage
-  /* "mar" */ @js.native
-  object OCRL_MAR extends TopLevel[OCRL_MAR with String]
+  /* "mar" */ val OCRL_MAR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_MAR with String = js.native
   
   @js.native
   sealed trait OCRL_MSA extends EnumDWTOCRLanguage
-  /* "msa" */ @js.native
-  object OCRL_MSA extends TopLevel[OCRL_MSA with String]
+  /* "msa" */ val OCRL_MSA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_MSA with String = js.native
   
   @js.native
   sealed trait OCRL_PAN extends EnumDWTOCRLanguage
-  /* "pan" */ @js.native
-  object OCRL_PAN extends TopLevel[OCRL_PAN with String]
+  /* "pan" */ val OCRL_PAN: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_PAN with String = js.native
   
   @js.native
   sealed trait OCRL_POR extends EnumDWTOCRLanguage
-  /* "por" */ @js.native
-  object OCRL_POR extends TopLevel[OCRL_POR with String]
+  /* "por" */ val OCRL_POR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_POR with String = js.native
   
   @js.native
   sealed trait OCRL_RUS extends EnumDWTOCRLanguage
-  /* "rus" */ @js.native
-  object OCRL_RUS extends TopLevel[OCRL_RUS with String]
+  /* "rus" */ val OCRL_RUS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_RUS with String = js.native
   
   @js.native
   sealed trait OCRL_SPA extends EnumDWTOCRLanguage
-  /* "spa" */ @js.native
-  object OCRL_SPA extends TopLevel[OCRL_SPA with String]
+  /* "spa" */ val OCRL_SPA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_SPA with String = js.native
   
   @js.native
   sealed trait OCRL_SWA extends EnumDWTOCRLanguage
-  /* "swa" */ @js.native
-  object OCRL_SWA extends TopLevel[OCRL_SWA with String]
+  /* "swa" */ val OCRL_SWA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_SWA with String = js.native
   
   @js.native
   sealed trait OCRL_TAM extends EnumDWTOCRLanguage
-  /* "tam" */ @js.native
-  object OCRL_TAM extends TopLevel[OCRL_TAM with String]
+  /* "tam" */ val OCRL_TAM: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_TAM with String = js.native
   
   @js.native
   sealed trait OCRL_TEL extends EnumDWTOCRLanguage
-  /* "tel" */ @js.native
-  object OCRL_TEL extends TopLevel[OCRL_TEL with String]
+  /* "tel" */ val OCRL_TEL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_TEL with String = js.native
   
   @js.native
   sealed trait OCRL_THA extends EnumDWTOCRLanguage
-  /* "tha" */ @js.native
-  object OCRL_THA extends TopLevel[OCRL_THA with String]
+  /* "tha" */ val OCRL_THA: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_THA with String = js.native
   
   @js.native
   sealed trait OCRL_TUR extends EnumDWTOCRLanguage
-  /* "tur" */ @js.native
-  object OCRL_TUR extends TopLevel[OCRL_TUR with String]
+  /* "tur" */ val OCRL_TUR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_TUR with String = js.native
   
   @js.native
   sealed trait OCRL_URD extends EnumDWTOCRLanguage
-  /* "urd" */ @js.native
-  object OCRL_URD extends TopLevel[OCRL_URD with String]
+  /* "urd" */ val OCRL_URD: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_URD with String = js.native
   
   @js.native
   sealed trait OCRL_VIE extends EnumDWTOCRLanguage
-  /* "vie" */ @js.native
-  object OCRL_VIE extends TopLevel[OCRL_VIE with String]
+  /* "vie" */ val OCRL_VIE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRLanguage.OCRL_VIE with String = js.native
 }

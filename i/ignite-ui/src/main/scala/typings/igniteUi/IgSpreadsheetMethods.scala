@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgSpreadsheetMethods extends js.Object {
+trait IgSpreadsheetMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
@@ -152,78 +153,66 @@ object IgSpreadsheetMethods {
   }
   
   @scala.inline
-  implicit class IgSpreadsheetMethodsOps[Self <: IgSpreadsheetMethods] (val x: Self) extends AnyVal {
+  implicit class IgSpreadsheetMethodsMutableBuilder[Self <: IgSpreadsheetMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = this.set("changeGlobalLanguage", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = this.set("changeGlobalRegional", js.Any.fromFunction0(value))
+    def setExecuteAction(value: js.Object => Boolean): Self = StObject.set(x, "executeAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = this.set("changeLocale", js.Any.fromFunction1(value))
+    def setExportVisualData(value: () => Unit): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExecuteAction(value: js.Object => Boolean): Self = this.set("executeAction", js.Any.fromFunction1(value))
+    def setGetActivePane(value: () => js.Object): Self = StObject.set(x, "getActivePane", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportVisualData(value: () => Unit): Self = this.set("exportVisualData", js.Any.fromFunction0(value))
+    def setGetActiveSelection(value: () => js.Object): Self = StObject.set(x, "getActiveSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    def setGetActiveSelectionCellRangeFormat(value: () => js.Object): Self = StObject.set(x, "getActiveSelectionCellRangeFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActivePane(value: () => js.Object): Self = this.set("getActivePane", js.Any.fromFunction0(value))
+    def setGetActiveTable(value: () => js.Object): Self = StObject.set(x, "getActiveTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveSelection(value: () => js.Object): Self = this.set("getActiveSelection", js.Any.fromFunction0(value))
+    def setGetCellEditMode(value: () => js.Object): Self = StObject.set(x, "getCellEditMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveSelectionCellRangeFormat(value: () => js.Object): Self = this.set("getActiveSelectionCellRangeFormat", js.Any.fromFunction0(value))
+    def setGetIsInEditMode(value: () => Boolean): Self = StObject.set(x, "getIsInEditMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveTable(value: () => js.Object): Self = this.set("getActiveTable", js.Any.fromFunction0(value))
+    def setGetIsRenamingWorksheet(value: () => Boolean): Self = StObject.set(x, "getIsRenamingWorksheet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCellEditMode(value: () => js.Object): Self = this.set("getCellEditMode", js.Any.fromFunction0(value))
+    def setGetPanes(value: () => Unit): Self = StObject.set(x, "getPanes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsInEditMode(value: () => Boolean): Self = this.set("getIsInEditMode", js.Any.fromFunction0(value))
+    def setShowFilterDialogForTable(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "showFilterDialogForTable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetIsRenamingWorksheet(value: () => Boolean): Self = this.set("getIsRenamingWorksheet", js.Any.fromFunction0(value))
+    def setShowFilterDialogForWorksheet(value: (Double, js.Object) => Unit): Self = StObject.set(x, "showFilterDialogForWorksheet", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPanes(value: () => Unit): Self = this.set("getPanes", js.Any.fromFunction0(value))
+    def setShowTopOrBottomDialogForTable(value: js.Object => Unit): Self = StObject.set(x, "showTopOrBottomDialogForTable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowFilterDialogForTable(value: (js.Object, js.Object) => Unit): Self = this.set("showFilterDialogForTable", js.Any.fromFunction2(value))
+    def setShowTopOrBottomDialogForWorksheet(value: Double => Unit): Self = StObject.set(x, "showTopOrBottomDialogForWorksheet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowFilterDialogForWorksheet(value: (Double, js.Object) => Unit): Self = this.set("showFilterDialogForWorksheet", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShowTopOrBottomDialogForTable(value: js.Object => Unit): Self = this.set("showTopOrBottomDialogForTable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowTopOrBottomDialogForWorksheet(value: Double => Unit): Self = this.set("showTopOrBottomDialogForWorksheet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStyleUpdated(value: () => Unit): Self = this.set("styleUpdated", js.Any.fromFunction0(value))
+    def setStyleUpdated(value: () => Unit): Self = StObject.set(x, "styleUpdated", js.Any.fromFunction0(value))
   }
 }

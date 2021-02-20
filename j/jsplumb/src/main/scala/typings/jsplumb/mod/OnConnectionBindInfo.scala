@@ -1,12 +1,13 @@
 package typings.jsplumb.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnConnectionBindInfo extends js.Object {
+trait OnConnectionBindInfo extends StObject {
   
   var connection: Connection = js.native
   
@@ -64,57 +65,45 @@ object OnConnectionBindInfo {
   }
   
   @scala.inline
-  implicit class OnConnectionBindInfoOps[Self <: OnConnectionBindInfo] (val x: Self) extends AnyVal {
+  implicit class OnConnectionBindInfoMutableBuilder[Self <: OnConnectionBindInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewSourceEndpoint(value: Endpoint): Self = StObject.set(x, "newSourceEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewSourceId(value: String): Self = StObject.set(x, "newSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: Connection): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setNewTargetEndpoint(value: Endpoint): Self = StObject.set(x, "newTargetEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSourceEndpoint(value: Endpoint): Self = this.set("newSourceEndpoint", value.asInstanceOf[js.Any])
+    def setNewTargetId(value: String): Self = StObject.set(x, "newTargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSourceId(value: String): Self = this.set("newSourceId", value.asInstanceOf[js.Any])
+    def setOriginalSourceId(value: String): Self = StObject.set(x, "originalSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTargetEndpoint(value: Endpoint): Self = this.set("newTargetEndpoint", value.asInstanceOf[js.Any])
+    def setOriginalTargetId(value: String): Self = StObject.set(x, "originalTargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTargetId(value: String): Self = this.set("newTargetId", value.asInstanceOf[js.Any])
+    def setSource(value: Element): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalSourceId(value: String): Self = this.set("originalSourceId", value.asInstanceOf[js.Any])
+    def setSourceEndpoint(value: Endpoint): Self = StObject.set(x, "sourceEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalTargetId(value: String): Self = this.set("originalTargetId", value.asInstanceOf[js.Any])
+    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Element): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEndpoint(value: Endpoint): Self = this.set("sourceEndpoint", value.asInstanceOf[js.Any])
+    def setTargetEndpoint(value: Endpoint): Self = StObject.set(x, "targetEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: String): Self = this.set("sourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetEndpoint(value: Endpoint): Self = this.set("targetEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetId(value: String): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about operation (or operation stage) progress.
   */
 @js.native
-trait SchemaOperationProgress extends js.Object {
+trait SchemaOperationProgress extends StObject {
   
   /**
     * Progress metric bundle, for example:   metrics: [{name: &quot;nodes
@@ -44,48 +45,36 @@ object SchemaOperationProgress {
   }
   
   @scala.inline
-  implicit class SchemaOperationProgressOps[Self <: SchemaOperationProgress] (val x: Self) extends AnyVal {
+  implicit class SchemaOperationProgressMutableBuilder[Self <: SchemaOperationProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetrics(value: js.Array[SchemaMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: SchemaMetric*): Self = this.set("metrics", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[SchemaMetric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setStages(value: js.Array[SchemaOperationProgress]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStagesVarargs(value: SchemaOperationProgress*): Self = StObject.set(x, "stages", js.Array(value :_*))
     
     @scala.inline
-    def setStagesVarargs(value: SchemaOperationProgress*): Self = this.set("stages", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStages(value: js.Array[SchemaOperationProgress]): Self = this.set("stages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStages: Self = this.set("stages", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

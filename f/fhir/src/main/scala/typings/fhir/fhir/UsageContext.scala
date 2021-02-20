@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object UsageContext {
   }
   
   @scala.inline
-  implicit class UsageContextOps[Self <: UsageContext] (val x: Self) extends AnyVal {
+  implicit class UsageContextMutableBuilder[Self <: UsageContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
     @scala.inline
-    def setCode(value: Coding): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCodeableConcept(value: CodeableConcept): Self = this.set("valueCodeableConcept", value.asInstanceOf[js.Any])
+    def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
     
     @scala.inline
-    def deleteValueCodeableConcept: Self = this.set("valueCodeableConcept", js.undefined)
+    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueQuantity(value: Quantity): Self = this.set("valueQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueQuantity: Self = this.set("valueQuantity", js.undefined)
-    
-    @scala.inline
-    def setValueRange(value: Range): Self = this.set("valueRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueRange: Self = this.set("valueRange", js.undefined)
+    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
   }
 }

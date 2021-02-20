@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait After extends js.Object {
+trait After extends StObject {
   
   var after: js.Any = js.native
   
@@ -41,42 +42,30 @@ object After {
   }
   
   @scala.inline
-  implicit class AfterOps[Self <: After] (val x: Self) extends AnyVal {
+  implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: js.Any): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAt(value: js.Any): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: js.Any): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: js.Any): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAt(value: js.Any): Self = this.set("at", value.asInstanceOf[js.Any])
+    def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: js.Any): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setEnableOnly(value: js.Any): Self = StObject.set(x, "enableOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: js.Any): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setGetRules(value: js.Any): Self = StObject.set(x, "getRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: js.Any): Self = this.set("enable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableOnly(value: js.Any): Self = this.set("enableOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetRules(value: js.Any): Self = this.set("getRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPush(value: js.Any): Self = this.set("push", value.asInstanceOf[js.Any])
+    def setPush(value: js.Any): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
   }
 }

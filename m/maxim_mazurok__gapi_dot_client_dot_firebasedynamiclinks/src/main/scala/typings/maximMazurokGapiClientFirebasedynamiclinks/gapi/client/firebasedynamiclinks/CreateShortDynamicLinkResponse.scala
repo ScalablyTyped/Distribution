@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateShortDynamicLinkResponse extends js.Object {
+trait CreateShortDynamicLinkResponse extends StObject {
   
   /** Preview link to show the link flow chart. (debug info.) */
   var previewLink: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object CreateShortDynamicLinkResponse {
   }
   
   @scala.inline
-  implicit class CreateShortDynamicLinkResponseOps[Self <: CreateShortDynamicLinkResponse] (val x: Self) extends AnyVal {
+  implicit class CreateShortDynamicLinkResponseMutableBuilder[Self <: CreateShortDynamicLinkResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShortLink(value: String): Self = StObject.set(x, "shortLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewLink(value: String): Self = this.set("previewLink", value.asInstanceOf[js.Any])
+    def setShortLinkUndefined: Self = StObject.set(x, "shortLink", js.undefined)
     
     @scala.inline
-    def deletePreviewLink: Self = this.set("previewLink", js.undefined)
+    def setWarning(value: js.Array[DynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortLink(value: String): Self = this.set("shortLink", value.asInstanceOf[js.Any])
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
     @scala.inline
-    def deleteShortLink: Self = this.set("shortLink", js.undefined)
-    
-    @scala.inline
-    def setWarningVarargs(value: DynamicLinkWarning*): Self = this.set("warning", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarning(value: js.Array[DynamicLinkWarning]): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningVarargs(value: DynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
   }
 }

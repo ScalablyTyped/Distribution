@@ -1,6 +1,7 @@
 package typings.reactNativeFbsdk.mod
 
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,54 +53,42 @@ object ShareVideoContent {
   }
   
   @scala.inline
-  implicit class ShareVideoContentOps[Self <: ShareVideoContent] (val x: Self) extends AnyVal {
+  implicit class ShareVideoContentMutableBuilder[Self <: ShareVideoContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: video): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setContentDescriptionUndefined: Self = StObject.set(x, "contentDescription", js.undefined)
     
     @scala.inline
-    def setVideo(value: ShareVideo): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = this.set("commonParameters", value.asInstanceOf[js.Any])
+    def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
     
     @scala.inline
-    def deleteCommonParameters: Self = this.set("commonParameters", js.undefined)
+    def setContentType(value: video): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDescription(value: String): Self = this.set("contentDescription", value.asInstanceOf[js.Any])
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentDescription: Self = this.set("contentDescription", js.undefined)
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def setContentTitle(value: String): Self = this.set("contentTitle", value.asInstanceOf[js.Any])
+    def setPreviewPhoto(value: SharePhoto): Self = StObject.set(x, "previewPhoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentTitle: Self = this.set("contentTitle", js.undefined)
+    def setPreviewPhotoUndefined: Self = StObject.set(x, "previewPhoto", js.undefined)
     
     @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
-    
-    @scala.inline
-    def setPreviewPhoto(value: SharePhoto): Self = this.set("previewPhoto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviewPhoto: Self = this.set("previewPhoto", js.undefined)
+    def setVideo(value: ShareVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

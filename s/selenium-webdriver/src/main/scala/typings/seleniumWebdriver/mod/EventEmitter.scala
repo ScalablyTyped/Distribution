@@ -1,5 +1,6 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @constructor
   */
-class EventEmitter () extends js.Object {
+class EventEmitter () extends StObject {
   
   /**
     * Registers a listener.

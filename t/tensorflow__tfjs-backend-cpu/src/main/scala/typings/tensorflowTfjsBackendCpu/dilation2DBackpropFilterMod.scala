@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsBackendCpu
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Dilation2DBackpropFilter", JSImport.Namespace)
-@js.native
-object dilation2DBackpropFilterMod extends js.Object {
+object dilation2DBackpropFilterMod {
   
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Dilation2DBackpropFilter", "dilation2dBackpropFilterConfig")
+  @js.native
   val dilation2dBackpropFilterConfig: KernelConfig = js.native
 }

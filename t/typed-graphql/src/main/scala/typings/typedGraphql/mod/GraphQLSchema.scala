@@ -1,12 +1,13 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("graphql", "GraphQLSchema")
 @js.native
-class GraphQLSchema protected () extends js.Object {
+class GraphQLSchema protected () extends StObject {
   def this(config: GraphQLSchemaConfig) = this()
   
   def getDirective(name: String): GraphQLDirective = js.native

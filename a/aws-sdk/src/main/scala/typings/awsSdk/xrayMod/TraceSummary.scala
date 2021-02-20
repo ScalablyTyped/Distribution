@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TraceSummary extends js.Object {
+trait TraceSummary extends StObject {
   
   /**
     * Annotations from the trace's segment documents.
@@ -116,162 +117,150 @@ object TraceSummary {
   }
   
   @scala.inline
-  implicit class TraceSummaryOps[Self <: TraceSummary] (val x: Self) extends AnyVal {
+  implicit class TraceSummaryMutableBuilder[Self <: TraceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: Annotations): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZones(value: TraceAvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: Annotations): Self = this.set("Annotations", value.asInstanceOf[js.Any])
+    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("Annotations", js.undefined)
+    def setAvailabilityZonesVarargs(value: AvailabilityZoneDetail*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: AvailabilityZoneDetail*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setDuration(value: NullableDouble): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZones(value: TraceAvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    def setEntryPoint(value: ServiceId): Self = StObject.set(x, "EntryPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: NullableDouble): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setEntryPointUndefined: Self = StObject.set(x, "EntryPoint", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setErrorRootCauses(value: ErrorRootCauses): Self = StObject.set(x, "ErrorRootCauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPoint(value: ServiceId): Self = this.set("EntryPoint", value.asInstanceOf[js.Any])
+    def setErrorRootCausesUndefined: Self = StObject.set(x, "ErrorRootCauses", js.undefined)
     
     @scala.inline
-    def deleteEntryPoint: Self = this.set("EntryPoint", js.undefined)
+    def setErrorRootCausesVarargs(value: ErrorRootCause*): Self = StObject.set(x, "ErrorRootCauses", js.Array(value :_*))
     
     @scala.inline
-    def setErrorRootCausesVarargs(value: ErrorRootCause*): Self = this.set("ErrorRootCauses", js.Array(value :_*))
+    def setFaultRootCauses(value: FaultRootCauses): Self = StObject.set(x, "FaultRootCauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorRootCauses(value: ErrorRootCauses): Self = this.set("ErrorRootCauses", value.asInstanceOf[js.Any])
+    def setFaultRootCausesUndefined: Self = StObject.set(x, "FaultRootCauses", js.undefined)
     
     @scala.inline
-    def deleteErrorRootCauses: Self = this.set("ErrorRootCauses", js.undefined)
+    def setFaultRootCausesVarargs(value: FaultRootCause*): Self = StObject.set(x, "FaultRootCauses", js.Array(value :_*))
     
     @scala.inline
-    def setFaultRootCausesVarargs(value: FaultRootCause*): Self = this.set("FaultRootCauses", js.Array(value :_*))
+    def setHasError(value: NullableBoolean): Self = StObject.set(x, "HasError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultRootCauses(value: FaultRootCauses): Self = this.set("FaultRootCauses", value.asInstanceOf[js.Any])
+    def setHasErrorUndefined: Self = StObject.set(x, "HasError", js.undefined)
     
     @scala.inline
-    def deleteFaultRootCauses: Self = this.set("FaultRootCauses", js.undefined)
+    def setHasFault(value: NullableBoolean): Self = StObject.set(x, "HasFault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasError(value: NullableBoolean): Self = this.set("HasError", value.asInstanceOf[js.Any])
+    def setHasFaultUndefined: Self = StObject.set(x, "HasFault", js.undefined)
     
     @scala.inline
-    def deleteHasError: Self = this.set("HasError", js.undefined)
+    def setHasThrottle(value: NullableBoolean): Self = StObject.set(x, "HasThrottle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasFault(value: NullableBoolean): Self = this.set("HasFault", value.asInstanceOf[js.Any])
+    def setHasThrottleUndefined: Self = StObject.set(x, "HasThrottle", js.undefined)
     
     @scala.inline
-    def deleteHasFault: Self = this.set("HasFault", js.undefined)
+    def setHttp(value: Http): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasThrottle(value: NullableBoolean): Self = this.set("HasThrottle", value.asInstanceOf[js.Any])
+    def setHttpUndefined: Self = StObject.set(x, "Http", js.undefined)
     
     @scala.inline
-    def deleteHasThrottle: Self = this.set("HasThrottle", js.undefined)
+    def setId(value: TraceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp(value: Http): Self = this.set("Http", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHttp: Self = this.set("Http", js.undefined)
+    def setInstanceIds(value: TraceInstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: TraceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setInstanceIdsVarargs(value: InstanceIdDetail*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceIdsVarargs(value: InstanceIdDetail*): Self = this.set("InstanceIds", js.Array(value :_*))
+    def setIsPartial(value: NullableBoolean): Self = StObject.set(x, "IsPartial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceIds(value: TraceInstanceIds): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    def setIsPartialUndefined: Self = StObject.set(x, "IsPartial", js.undefined)
     
     @scala.inline
-    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    def setMatchedEventTime(value: Timestamp): Self = StObject.set(x, "MatchedEventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPartial(value: NullableBoolean): Self = this.set("IsPartial", value.asInstanceOf[js.Any])
+    def setMatchedEventTimeUndefined: Self = StObject.set(x, "MatchedEventTime", js.undefined)
     
     @scala.inline
-    def deleteIsPartial: Self = this.set("IsPartial", js.undefined)
+    def setResourceARNs(value: TraceResourceARNs): Self = StObject.set(x, "ResourceARNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedEventTime(value: Timestamp): Self = this.set("MatchedEventTime", value.asInstanceOf[js.Any])
+    def setResourceARNsUndefined: Self = StObject.set(x, "ResourceARNs", js.undefined)
     
     @scala.inline
-    def deleteMatchedEventTime: Self = this.set("MatchedEventTime", js.undefined)
+    def setResourceARNsVarargs(value: ResourceARNDetail*): Self = StObject.set(x, "ResourceARNs", js.Array(value :_*))
     
     @scala.inline
-    def setResourceARNsVarargs(value: ResourceARNDetail*): Self = this.set("ResourceARNs", js.Array(value :_*))
+    def setResponseTime(value: NullableDouble): Self = StObject.set(x, "ResponseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceARNs(value: TraceResourceARNs): Self = this.set("ResourceARNs", value.asInstanceOf[js.Any])
+    def setResponseTimeRootCauses(value: ResponseTimeRootCauses): Self = StObject.set(x, "ResponseTimeRootCauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceARNs: Self = this.set("ResourceARNs", js.undefined)
+    def setResponseTimeRootCausesUndefined: Self = StObject.set(x, "ResponseTimeRootCauses", js.undefined)
     
     @scala.inline
-    def setResponseTime(value: NullableDouble): Self = this.set("ResponseTime", value.asInstanceOf[js.Any])
+    def setResponseTimeRootCausesVarargs(value: ResponseTimeRootCause*): Self = StObject.set(x, "ResponseTimeRootCauses", js.Array(value :_*))
     
     @scala.inline
-    def deleteResponseTime: Self = this.set("ResponseTime", js.undefined)
+    def setResponseTimeUndefined: Self = StObject.set(x, "ResponseTime", js.undefined)
     
     @scala.inline
-    def setResponseTimeRootCausesVarargs(value: ResponseTimeRootCause*): Self = this.set("ResponseTimeRootCauses", js.Array(value :_*))
+    def setRevision(value: Integer): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTimeRootCauses(value: ResponseTimeRootCauses): Self = this.set("ResponseTimeRootCauses", value.asInstanceOf[js.Any])
+    def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
     
     @scala.inline
-    def deleteResponseTimeRootCauses: Self = this.set("ResponseTimeRootCauses", js.undefined)
+    def setServiceIds(value: ServiceIds): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: Integer): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
     
     @scala.inline
-    def deleteRevision: Self = this.set("Revision", js.undefined)
+    def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
     
     @scala.inline
-    def setServiceIdsVarargs(value: ServiceId*): Self = this.set("ServiceIds", js.Array(value :_*))
+    def setUsers(value: TraceUsers): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceIds(value: ServiceIds): Self = this.set("ServiceIds", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
     @scala.inline
-    def deleteServiceIds: Self = this.set("ServiceIds", js.undefined)
-    
-    @scala.inline
-    def setUsersVarargs(value: TraceUser*): Self = this.set("Users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: TraceUsers): Self = this.set("Users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("Users", js.undefined)
+    def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

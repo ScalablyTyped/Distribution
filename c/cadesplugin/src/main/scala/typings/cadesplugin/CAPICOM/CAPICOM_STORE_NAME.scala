@@ -4,6 +4,7 @@ import typings.cadesplugin.cadespluginStrings.AddressBook
 import typings.cadesplugin.cadespluginStrings.Ca
 import typings.cadesplugin.cadespluginStrings.My
 import typings.cadesplugin.cadespluginStrings.Root
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,27 +32,15 @@ object CAPICOM_STORE_NAME {
   }
   
   @scala.inline
-  implicit class CAPICOM_STORE_NAMEOps[Self <: CAPICOM_STORE_NAME] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_STORE_NAMEMutableBuilder[Self <: CAPICOM_STORE_NAME] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_CA_STORE(value: Ca): Self = StObject.set(x, "CAPICOM_CA_STORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_OTHER_STORE(value: AddressBook): Self = StObject.set(x, "CAPICOM_OTHER_STORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCAPICOM_CA_STORE(value: Ca): Self = this.set("CAPICOM_CA_STORE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_OTHER_STORE(value: AddressBook): Self = this.set("CAPICOM_OTHER_STORE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_ROOT_STORE(value: Root): Self = this.set("CAPICOM_ROOT_STORE", value.asInstanceOf[js.Any])
+    def setCAPICOM_ROOT_STORE(value: Root): Self = StObject.set(x, "CAPICOM_ROOT_STORE", value.asInstanceOf[js.Any])
   }
 }

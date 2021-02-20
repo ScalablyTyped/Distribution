@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the format of a video stream. */
 @js.native
-trait VideoEncodingProperties extends js.Object {
+trait VideoEncodingProperties extends StObject {
   
   /** Gets or sets the video bit rate. */
   var bitrate: Double = js.native
@@ -69,51 +70,39 @@ object VideoEncodingProperties {
   }
   
   @scala.inline
-  implicit class VideoEncodingPropertiesOps[Self <: VideoEncodingProperties] (val x: Self) extends AnyVal {
+  implicit class VideoEncodingPropertiesMutableBuilder[Self <: VideoEncodingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameRate(value: MediaRatio): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFormatUserData(value: () => js.Array[Double]): Self = StObject.set(x, "getFormatUserData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBitrate(value: Double): Self = this.set("bitrate", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: MediaRatio): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setPixelAspectRatio(value: MediaRatio): Self = StObject.set(x, "pixelAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFormatUserData(value: () => js.Array[Double]): Self = this.set("getFormatUserData", js.Any.fromFunction0(value))
+    def setProfileId(value: Double): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setProperties(value: MediaPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelAspectRatio(value: MediaRatio): Self = this.set("pixelAspectRatio", value.asInstanceOf[js.Any])
+    def setSetFormatUserData(value: js.Array[Double] => Unit): Self = StObject.set(x, "setFormatUserData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProfileId(value: Double): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: MediaPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFormatUserData(value: js.Array[Double] => Unit): Self = this.set("setFormatUserData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubtype(value: String): Self = this.set("subtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

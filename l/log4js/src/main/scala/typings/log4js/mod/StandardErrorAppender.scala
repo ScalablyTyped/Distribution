@@ -1,6 +1,7 @@
 package typings.log4js.mod
 
 import typings.log4js.log4jsStrings.stderr
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object StandardErrorAppender {
   }
   
   @scala.inline
-  implicit class StandardErrorAppenderOps[Self <: StandardErrorAppender] (val x: Self) extends AnyVal {
+  implicit class StandardErrorAppenderMutableBuilder[Self <: StandardErrorAppender] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: stderr): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setType(value: stderr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

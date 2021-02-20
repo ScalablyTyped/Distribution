@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arm64WriterOptions extends js.Object {
+trait Arm64WriterOptions extends StObject {
   
   /**
     * Specifies the initial program counter, which is useful when
@@ -25,24 +26,12 @@ object Arm64WriterOptions {
   }
   
   @scala.inline
-  implicit class Arm64WriterOptionsOps[Self <: Arm64WriterOptions] (val x: Self) extends AnyVal {
+  implicit class Arm64WriterOptionsMutableBuilder[Self <: Arm64WriterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPc(value: NativePointer): Self = this.set("pc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePc: Self = this.set("pc", js.undefined)
+    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

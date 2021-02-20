@@ -2,6 +2,7 @@ package typings.prettier.mod
 
 import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ trait PathSupportOption
   extends BaseSupportOption[path]
      with _SupportOption {
   
-  var array: js.UndefOr[`false`] = js.native
-  
   var default: String = js.native
+  
+  var array: js.UndefOr[`false`] = js.native
 }
 object PathSupportOption {
   
@@ -25,27 +26,15 @@ object PathSupportOption {
   }
   
   @scala.inline
-  implicit class PathSupportOptionOps[Self <: PathSupportOption] (val x: Self) extends AnyVal {
+  implicit class PathSupportOptionMutableBuilder[Self <: PathSupportOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArray(value: `false`): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,15 @@ import typings.splunkLogging.mod.EventFormatter
 import typings.splunkLogging.mod.Logger
 import typings.splunkLogging.mod.SendContext
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("splunk-bunyan-logger", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("splunk-bunyan-logger", "createStream")
+  @js.native
   def createStream(config: Config): SplunkBunyanStream = js.native
   
   @js.native

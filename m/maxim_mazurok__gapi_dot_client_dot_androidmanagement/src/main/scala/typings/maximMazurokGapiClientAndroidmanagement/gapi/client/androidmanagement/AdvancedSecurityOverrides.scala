@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvancedSecurityOverrides extends js.Object {
+trait AdvancedSecurityOverrides extends StObject {
   
   /**
     * Controls Common Criteria Mode—security standards defined in the Common Criteria for Information Technology Security Evaluation (https://www.commoncriteriaportal.org/) (CC). Enabling
@@ -27,30 +28,18 @@ object AdvancedSecurityOverrides {
   }
   
   @scala.inline
-  implicit class AdvancedSecurityOverridesOps[Self <: AdvancedSecurityOverrides] (val x: Self) extends AnyVal {
+  implicit class AdvancedSecurityOverridesMutableBuilder[Self <: AdvancedSecurityOverrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonCriteriaMode(value: String): Self = StObject.set(x, "commonCriteriaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonCriteriaModeUndefined: Self = StObject.set(x, "commonCriteriaMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUntrustedAppsPolicy(value: String): Self = StObject.set(x, "untrustedAppsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonCriteriaMode(value: String): Self = this.set("commonCriteriaMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommonCriteriaMode: Self = this.set("commonCriteriaMode", js.undefined)
-    
-    @scala.inline
-    def setUntrustedAppsPolicy(value: String): Self = this.set("untrustedAppsPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUntrustedAppsPolicy: Self = this.set("untrustedAppsPolicy", js.undefined)
+    def setUntrustedAppsPolicyUndefined: Self = StObject.set(x, "untrustedAppsPolicy", js.undefined)
   }
 }

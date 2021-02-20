@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that something is wrong.
   */
 @js.native
-trait SchemaCondition extends js.Object {
+trait SchemaCondition extends StObject {
   
   /**
     * A condition that checks that a time series continues to receive new data
@@ -58,42 +59,30 @@ object SchemaCondition {
   }
   
   @scala.inline
-  implicit class SchemaConditionOps[Self <: SchemaCondition] (val x: Self) extends AnyVal {
+  implicit class SchemaConditionMutableBuilder[Self <: SchemaCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionAbsent(value: SchemaMetricAbsence): Self = StObject.set(x, "conditionAbsent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionAbsentUndefined: Self = StObject.set(x, "conditionAbsent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionThreshold(value: SchemaMetricThreshold): Self = StObject.set(x, "conditionThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionAbsent(value: SchemaMetricAbsence): Self = this.set("conditionAbsent", value.asInstanceOf[js.Any])
+    def setConditionThresholdUndefined: Self = StObject.set(x, "conditionThreshold", js.undefined)
     
     @scala.inline
-    def deleteConditionAbsent: Self = this.set("conditionAbsent", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionThreshold(value: SchemaMetricThreshold): Self = this.set("conditionThreshold", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteConditionThreshold: Self = this.set("conditionThreshold", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

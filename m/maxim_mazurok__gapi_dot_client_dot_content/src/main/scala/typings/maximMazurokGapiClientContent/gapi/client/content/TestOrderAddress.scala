@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestOrderAddress extends js.Object {
+trait TestOrderAddress extends StObject {
   
   /** CLDR country code (e.g. "US"). */
   var country: js.UndefOr[String] = js.native
@@ -40,72 +41,60 @@ object TestOrderAddress {
   }
   
   @scala.inline
-  implicit class TestOrderAddressOps[Self <: TestOrderAddress] (val x: Self) extends AnyVal {
+  implicit class TestOrderAddressMutableBuilder[Self <: TestOrderAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullAddress(value: js.Array[String]): Self = StObject.set(x, "fullAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setFullAddressUndefined: Self = StObject.set(x, "fullAddress", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setFullAddressVarargs(value: String*): Self = StObject.set(x, "fullAddress", js.Array(value :_*))
     
     @scala.inline
-    def setFullAddressVarargs(value: String*): Self = this.set("fullAddress", js.Array(value :_*))
+    def setIsPostOfficeBox(value: Boolean): Self = StObject.set(x, "isPostOfficeBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullAddress(value: js.Array[String]): Self = this.set("fullAddress", value.asInstanceOf[js.Any])
+    def setIsPostOfficeBoxUndefined: Self = StObject.set(x, "isPostOfficeBox", js.undefined)
     
     @scala.inline
-    def deleteFullAddress: Self = this.set("fullAddress", js.undefined)
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPostOfficeBox(value: Boolean): Self = this.set("isPostOfficeBox", value.asInstanceOf[js.Any])
+    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
     @scala.inline
-    def deleteIsPostOfficeBox: Self = this.set("isPostOfficeBox", js.undefined)
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     
     @scala.inline
-    def deleteLocality: Self = this.set("locality", js.undefined)
+    def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setRecipientNameUndefined: Self = StObject.set(x, "recipientName", js.undefined)
     
     @scala.inline
-    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientName(value: String): Self = this.set("recipientName", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteRecipientName: Self = this.set("recipientName", js.undefined)
+    def setStreetAddress(value: js.Array[String]): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
-    
-    @scala.inline
-    def setStreetAddressVarargs(value: String*): Self = this.set("streetAddress", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreetAddress(value: js.Array[String]): Self = this.set("streetAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreetAddress: Self = this.set("streetAddress", js.undefined)
+    def setStreetAddressVarargs(value: String*): Self = StObject.set(x, "streetAddress", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * times expected_units_per_year.
   */
 @js.native
-trait SchemaExtendedCompensationInfoCompensationEntry extends js.Object {
+trait SchemaExtendedCompensationInfoCompensationEntry extends StObject {
   
   /**
     * Optional.  Monetary amount.
@@ -63,60 +64,48 @@ object SchemaExtendedCompensationInfoCompensationEntry {
   }
   
   @scala.inline
-  implicit class SchemaExtendedCompensationInfoCompensationEntryOps[Self <: SchemaExtendedCompensationInfoCompensationEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaExtendedCompensationInfoCompensationEntryMutableBuilder[Self <: SchemaExtendedCompensationInfoCompensationEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: SchemaExtendedCompensationInfoDecimal): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setExpectedUnitsPerYear(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "expectedUnitsPerYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExpectedUnitsPerYearUndefined: Self = StObject.set(x, "expectedUnitsPerYear", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedUnitsPerYear(value: SchemaExtendedCompensationInfoDecimal): Self = this.set("expectedUnitsPerYear", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteExpectedUnitsPerYear: Self = this.set("expectedUnitsPerYear", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUnspecified(value: Boolean): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setUnspecified(value: Boolean): Self = this.set("unspecified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnspecified: Self = this.set("unspecified", js.undefined)
+    def setUnspecifiedUndefined: Self = StObject.set(x, "unspecified", js.undefined)
   }
 }

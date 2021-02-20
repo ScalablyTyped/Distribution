@@ -1,11 +1,12 @@
 package typings.firefox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   def checkForUpdate(): DOMRequest[_] = js.native
   
@@ -41,45 +42,33 @@ object App {
   }
   
   @scala.inline
-  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
+  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckForUpdate(value: () => DOMRequest[_]): Self = StObject.set(x, "checkForUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallOrigin(value: String): Self = StObject.set(x, "installOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstallTime(value: Double): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckForUpdate(value: () => DOMRequest[_]): Self = this.set("checkForUpdate", js.Any.fromFunction0(value))
+    def setLaunch(value: () => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInstallOrigin(value: String): Self = this.set("installOrigin", value.asInstanceOf[js.Any])
+    def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallTime(value: Double): Self = this.set("installTime", value.asInstanceOf[js.Any])
+    def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunch(value: () => Unit): Self = this.set("launch", js.Any.fromFunction0(value))
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifest(value: js.Any): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    def setReceipts(value: js.Array[_]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestURL(value: String): Self = this.set("manifestURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceiptsVarargs(value: js.Any*): Self = this.set("receipts", js.Array(value :_*))
-    
-    @scala.inline
-    def setReceipts(value: js.Array[_]): Self = this.set("receipts", value.asInstanceOf[js.Any])
+    def setReceiptsVarargs(value: js.Any*): Self = StObject.set(x, "receipts", js.Array(value :_*))
   }
 }

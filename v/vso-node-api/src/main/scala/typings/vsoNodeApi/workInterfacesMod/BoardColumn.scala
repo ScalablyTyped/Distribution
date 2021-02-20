@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoardColumn extends js.Object {
+trait BoardColumn extends StObject {
   
   var columnType: BoardColumnType = js.native
   
@@ -39,39 +40,27 @@ object BoardColumn {
   }
   
   @scala.inline
-  implicit class BoardColumnOps[Self <: BoardColumn] (val x: Self) extends AnyVal {
+  implicit class BoardColumnMutableBuilder[Self <: BoardColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnType(value: BoardColumnType): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnType(value: BoardColumnType): Self = this.set("columnType", value.asInstanceOf[js.Any])
+    def setIsSplit(value: Boolean): Self = StObject.set(x, "isSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setItemLimit(value: Double): Self = StObject.set(x, "itemLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSplit(value: Boolean): Self = this.set("isSplit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemLimit(value: Double): Self = this.set("itemLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateMappings(value: StringDictionary[String]): Self = this.set("stateMappings", value.asInstanceOf[js.Any])
+    def setStateMappings(value: StringDictionary[String]): Self = StObject.set(x, "stateMappings", value.asInstanceOf[js.Any])
   }
 }

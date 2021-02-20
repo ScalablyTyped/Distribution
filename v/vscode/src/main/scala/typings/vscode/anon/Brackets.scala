@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Brackets extends js.Object {
+trait Brackets extends StObject {
   
   /**
     * This property is deprecated and will be **ignored** from
@@ -31,30 +32,18 @@ object Brackets {
   }
   
   @scala.inline
-  implicit class BracketsOps[Self <: Brackets] (val x: Self) extends AnyVal {
+  implicit class BracketsMutableBuilder[Self <: Brackets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrackets(value: js.Any): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocComment(value: Close): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrackets(value: js.Any): Self = this.set("brackets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrackets: Self = this.set("brackets", js.undefined)
-    
-    @scala.inline
-    def setDocComment(value: Close): Self = this.set("docComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocComment: Self = this.set("docComment", js.undefined)
+    def setDocCommentUndefined: Self = StObject.set(x, "docComment", js.undefined)
   }
 }

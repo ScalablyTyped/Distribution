@@ -5,20 +5,16 @@ import typings.floraColossus.depTypesMod.DepType.DEV
 import typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL
 import typings.floraColossus.depTypesMod.DepType.OPTIONAL
 import typings.floraColossus.depTypesMod.DepType.PROD
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("flora-colossus", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def childDepType(parentType: DepType, childType: DepType): PROD | DEV | OPTIONAL | DEV_OPTIONAL = js.native
-  
-  def depTypeGreater(newType: DepType, existing: DepType): Boolean = js.native
-  
+  @JSImport("flora-colossus", "DepType")
   @js.native
-  object DepType extends js.Object {
+  object DepType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.floraColossus.depTypesMod.DepType with Double] = js.native
@@ -34,9 +30,18 @@ object mod extends js.Object {
     /* 4 */ val ROOT: typings.floraColossus.depTypesMod.DepType.ROOT with Double = js.native
   }
   
+  @JSImport("flora-colossus", "Walker")
   @js.native
   class Walker protected ()
     extends typings.floraColossus.walkerMod.Walker {
     def this(modulePath: String) = this()
   }
+  
+  @JSImport("flora-colossus", "childDepType")
+  @js.native
+  def childDepType(parentType: DepType, childType: DepType): PROD | DEV | OPTIONAL | DEV_OPTIONAL = js.native
+  
+  @JSImport("flora-colossus", "depTypeGreater")
+  @js.native
+  def depTypeGreater(newType: DepType, existing: DepType): Boolean = js.native
 }

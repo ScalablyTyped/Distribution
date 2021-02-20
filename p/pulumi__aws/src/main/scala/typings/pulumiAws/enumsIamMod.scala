@@ -268,13 +268,12 @@ import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonp
 import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserAccess
 import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserFullAccess
 import typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashSimpleWorkflowFullAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/types/enums/iam", JSImport.Namespace)
-@js.native
-object enumsIamMod extends js.Object {
+object enumsIamMod {
   
   /* Inlined { readonly AWSAccountActivityAccess :'arn:aws:iam::aws:policy/AWSAccountActivityAccess',  readonly AWSAccountUsageReportAccess :'arn:aws:iam::aws:policy/AWSAccountUsageReportAccess',  readonly AWSAgentlessDiscoveryService :'arn:aws:iam::aws:policy/AWSAgentlessDiscoveryService',  readonly AWSApplicationDiscoveryAgentAccess :'arn:aws:iam::aws:policy/AWSApplicationDiscoveryAgentAccess',  readonly AWSApplicationDiscoveryServiceFullAccess :'arn:aws:iam::aws:policy/AWSApplicationDiscoveryServiceFullAccess',  readonly AWSBatchFullAccess :'arn:aws:iam::aws:policy/AWSBatchFullAccess',  readonly AWSBatchServiceRole :'arn:aws:iam::aws:policy/service-role/AWSBatchServiceRole',  readonly AWSCertificateManagerFullAccess :'arn:aws:iam::aws:policy/AWSCertificateManagerFullAccess',  readonly AWSCertificateManagerReadOnly :'arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly',  readonly AWSCloudFormationReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCloudFormationReadOnlyAccess',  readonly AWSCloudHSMFullAccess :'arn:aws:iam::aws:policy/AWSCloudHSMFullAccess',  readonly AWSCloudHSMReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCloudHSMReadOnlyAccess',  readonly AWSCloudHSMRole :'arn:aws:iam::aws:policy/service-role/AWSCloudHSMRole',  readonly AWSCloudTrailFullAccess :'arn:aws:iam::aws:policy/AWSCloudTrailFullAccess',  readonly AWSCloudTrailReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCloudTrailReadOnlyAccess',  readonly AWSCodeBuildAdminAccess :'arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess',  readonly AWSCodeBuildDeveloperAccess :'arn:aws:iam::aws:policy/AWSCodeBuildDeveloperAccess',  readonly AWSCodeBuildReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCodeBuildReadOnlyAccess',  readonly AWSCodeCommitFullAccess :'arn:aws:iam::aws:policy/AWSCodeCommitFullAccess',  readonly AWSCodeCommitPowerUser :'arn:aws:iam::aws:policy/AWSCodeCommitPowerUser',  readonly AWSCodeCommitReadOnly :'arn:aws:iam::aws:policy/AWSCodeCommitReadOnly',  readonly AWSCodeDeployDeployerAccess :'arn:aws:iam::aws:policy/AWSCodeDeployDeployerAccess',  readonly AWSCodeDeployFullAccess :'arn:aws:iam::aws:policy/AWSCodeDeployFullAccess',  readonly AWSCodeDeployReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCodeDeployReadOnlyAccess',  readonly AWSCodeDeployRole :'arn:aws:iam::aws:policy/service-role/AWSCodeDeployRole',  readonly AWSCodeDeployRoleForECS :'arn:aws:iam::aws:policy/AWSCodeDeployRoleForECS',  readonly AWSCodePipelineApproverAccess :'arn:aws:iam::aws:policy/AWSCodePipelineApproverAccess',  readonly AWSCodePipelineCustomActionAccess :'arn:aws:iam::aws:policy/AWSCodePipelineCustomActionAccess',  readonly AWSCodePipelineFullAccess :'arn:aws:iam::aws:policy/AWSCodePipelineFullAccess',  readonly AWSCodePipelineReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCodePipelineReadOnlyAccess',  readonly AWSCodeStarFullAccess :'arn:aws:iam::aws:policy/AWSCodeStarFullAccess',  readonly AWSCodeStarServiceRole :'arn:aws:iam::aws:policy/service-role/AWSCodeStarServiceRole',  readonly AWSConfigRole :'arn:aws:iam::aws:policy/service-role/AWSConfigRole',  readonly AWSConfigRulesExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSConfigRulesExecutionRole',  readonly AWSConfigUserAccess :'arn:aws:iam::aws:policy/AWSConfigUserAccess',  readonly AWSConnector :'arn:aws:iam::aws:policy/AWSConnector',  readonly AWSDataPipelineRole :'arn:aws:iam::aws:policy/service-role/AWSDataPipelineRole',  readonly AWSDataPipeline_FullAccess :'arn:aws:iam::aws:policy/AWSDataPipeline_FullAccess',  readonly AWSDataPipeline_PowerUser :'arn:aws:iam::aws:policy/AWSDataPipeline_PowerUser',  readonly AWSDeviceFarmFullAccess :'arn:aws:iam::aws:policy/AWSDeviceFarmFullAccess',  readonly AWSDirectConnectFullAccess :'arn:aws:iam::aws:policy/AWSDirectConnectFullAccess',  readonly AWSDirectConnectReadOnlyAccess :'arn:aws:iam::aws:policy/AWSDirectConnectReadOnlyAccess',  readonly AWSDirectoryServiceFullAccess :'arn:aws:iam::aws:policy/AWSDirectoryServiceFullAccess',  readonly AWSDirectoryServiceReadOnlyAccess :'arn:aws:iam::aws:policy/AWSDirectoryServiceReadOnlyAccess',  readonly AWSElasticBeanstalkCustomPlatformforEC2Role :'arn:aws:iam::aws:policy/AWSElasticBeanstalkCustomPlatformforEC2Role',  readonly AWSElasticBeanstalkEnhancedHealth :'arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth',  readonly AWSElasticBeanstalkFullAccess :'arn:aws:iam::aws:policy/AWSElasticBeanstalkFullAccess',  readonly AWSElasticBeanstalkMulticontainerDocker :'arn:aws:iam::aws:policy/AWSElasticBeanstalkMulticontainerDocker',  readonly AWSElasticBeanstalkReadOnlyAccess :'arn:aws:iam::aws:policy/AWSElasticBeanstalkReadOnlyAccess',  readonly AWSElasticBeanstalkService :'arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkService',  readonly AWSElasticBeanstalkWebTier :'arn:aws:iam::aws:policy/AWSElasticBeanstalkWebTier',  readonly AWSElasticBeanstakWorkerTier :'arn:aws:iam::aws:policy/AWSElasticBeanstalkWorkerTier',  readonly AWSGreengrassFullccess :'arn:aws:iam::aws:policy/AWSGreengrassFullAccess',  readonly AWSGreengrassResourceAccessRolePolicy :'arn:aws:iam::aws:policy/service-role/AWSGreengrassResourceAccessRolePolicy',  readonly AWSHealthFullAccess :'arn:aws:iam::aws:policy/AWSHealthFullAccess',  readonly AWSImportExportFullAccess :'arn:aws:iam::aws:policy/AWSImportExportFullAccess',  readonly AWSImportExportReadOnlyAccess :'arn:aws:iam::aws:policy/AWSImportExportReadOnlyAccess',  readonly AWSIoTConfigAccess :'arn:aws:iam::aws:policy/AWSIoTConfigAccess',  readonly AWSIoTConfigReadOnlyAccess :'arn:aws:iam::aws:policy/AWSIoTConfigReadOnlyAccess',  readonly AWSIoTDataAccess :'arn:aws:iam::aws:policy/AWSIoTDataAccess',  readonly AWSIoTFullAccess :'arn:aws:iam::aws:policy/AWSIoTFullAccess',  readonly AWSIoTLogging :'arn:aws:iam::aws:policy/service-role/AWSIoTLogging',  readonly AWSIoTRuleActions :'arn:aws:iam::aws:policy/service-role/AWSIoTRuleActions',  readonly AWSKeyManagementServicePowerUser :'arn:aws:iam::aws:policy/AWSKeyManagementServicePowerUser',  readonly AWSLambdaBasicExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole',  readonly AWSLambdaDynamoDBExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaDynamoDBExecutionRole',  readonly AWSLambdaENIManagementAccess :'arn:aws:iam::aws:policy/service-role/AWSLambdaENIManagementAccess',  readonly AWSLambdaExecute :'arn:aws:iam::aws:policy/AWSLambdaExecute',  readonly AWSLambdaFullAccess :'arn:aws:iam::aws:policy/AWSLambdaFullAccess',  readonly AWSLambdaInvocationDynamoDB :'arn:aws:iam::aws:policy/AWSLambdaInvocation-DynamoDB',  readonly AWSLambdaKinesisExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaKinesisExecutionRole',  readonly AWSLambdaReadOnlyAccess :'arn:aws:iam::aws:policy/AWSLambdaReadOnlyAccess',  readonly AWSLambdaRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaRole',  readonly AWSLambdaVPCAccessExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole',  readonly AWSMarketplaceFullAccess :'arn:aws:iam::aws:policy/AWSMarketplaceFullAccess',  readonly AWSMarketplaceGetEntitlements :'arn:aws:iam::aws:policy/AWSMarketplaceGetEntitlements',  readonly AWSMarketplaceManageSubscriptions :'arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions',  readonly AWSMarketplaceMeteringFullAccess :'arn:aws:iam::aws:policy/AWSMarketplaceMeteringFullAccess',  readonly AWSMarketplaceReadonly :'arn:aws:iam::aws:policy/AWSMarketplaceRead-only',  readonly AWSMobileHub_FullAccess :'arn:aws:iam::aws:policy/AWSMobileHub_FullAccess',  readonly AWSMobileHub_ReadOnly :'arn:aws:iam::aws:policy/AWSMobileHub_ReadOnly',  readonly AWSMobileHub_ServiceUseOnly :'arn:aws:iam::aws:policy/service-role/AWSMobileHub_ServiceUseOnly',  readonly AWSOpsWorksCMInstanceProfileRole :'arn:aws:iam::aws:policy/AWSOpsWorksCMInstanceProfileRole',  readonly AWSOpsWorksCMServiceRole :'arn:aws:iam::aws:policy/service-role/AWSOpsWorksCMServiceRole',  readonly AWSOpsWorksCloudWatchLogs :'arn:aws:iam::aws:policy/AWSOpsWorksCloudWatchLogs',  readonly AWSOpsWorksFullAccess :'arn:aws:iam::aws:policy/AWSOpsWorksFullAccess',  readonly AWSOpsWorksInstanceRegistration :'arn:aws:iam::aws:policy/AWSOpsWorksInstanceRegistration',  readonly AWSOpsWorksRegisterCLI :'arn:aws:iam::aws:policy/AWSOpsWorksRegisterCLI',  readonly AWSOpsWorksRole :'arn:aws:iam::aws:policy/service-role/AWSOpsWorksRole',  readonly AWSQuickSightDescribeRD :'arn:aws:iam::aws:policy/service-role/AWSQuickSightDescribeRDS',  readonly AWSQuickSightDescribeRedshift :'arn:aws:iam::aws:policy/service-role/AWSQuickSightDescribeRedshift',  readonly AWSQuickSightListIAM :'arn:aws:iam::aws:policy/service-role/AWSQuickSightListIAM',  readonly AWSQuicksightAthenaAccess :'arn:aws:iam::aws:policy/service-role/AWSQuicksightAthenaAccess',  readonly AWSStepFunctionsConsoleFullAccess :'arn:aws:iam::aws:policy/AWSStepFunctionsConsoleFullAccess',  readonly AWSStepFunctionsFullAccess :'arn:aws:iam::aws:policy/AWSStepFunctionsFullAccess',  readonly AWSStepFunctionsReadOnlyAccess :'arn:aws:iam::aws:policy/AWSStepFunctionsReadOnlyAccess',  readonly AWSStorageGatewayFullAccess :'arn:aws:iam::aws:policy/AWSStorageGatewayFullAccess',  readonly AWSStorageGatewayReadOnlyAccess :'arn:aws:iam::aws:policy/AWSStorageGatewayReadOnlyAccess',  readonly AWSSupportAccess :'arn:aws:iam::aws:policy/AWSSupportAccess',  readonly AWSWAFFullAccess :'arn:aws:iam::aws:policy/AWSWAFFullAccess',  readonly AWSWAFReadOnlyAccess :'arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess',  readonly AWSXrayFullAccess :'arn:aws:iam::aws:policy/AWSXrayFullAccess',  readonly AWSXrayReadOnlyAccess :'arn:aws:iam::aws:policy/AWSXrayReadOnlyAccess',  readonly AWSXrayWriteOnlyAccess :'arn:aws:iam::aws:policy/AWSXrayWriteOnlyAccess',  readonly AWSXRayDaemonWriteAccess :'arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess',  readonly AdministratorAccess :'arn:aws:iam::aws:policy/AdministratorAccess',  readonly AmazonAPIGatewayAdministrator :'arn:aws:iam::aws:policy/AmazonAPIGatewayAdministrator',  readonly AmazonAPIGatewayInvokeFullAccess :'arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess',  readonly AmazonAPIGatewayPushToCloudWatchLogs :'arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs',  readonly AmazonAppStreamFullAccess :'arn:aws:iam::aws:policy/AmazonAppStreamFullAccess',  readonly AmazonAppStreamReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonAppStreamReadOnlyAccess',  readonly AmazonAppStreamServiceAccess :'arn:aws:iam::aws:policy/service-role/AmazonAppStreamServiceAccess',  readonly AmazonAthenaFullAccess :'arn:aws:iam::aws:policy/AmazonAthenaFullAccess',  readonly AmazonCloudDirectoryFullAccess :'arn:aws:iam::aws:policy/AmazonCloudDirectoryFullAccess',  readonly AmazonCloudDirectoryReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonCloudDirectoryReadOnlyAccess',  readonly AmazonCognitoDeveloperAuthenticatedIdentities :'arn:aws:iam::aws:policy/AmazonCognitoDeveloperAuthenticatedIdentities',  readonly AmazonCognitoPowerUser :'arn:aws:iam::aws:policy/AmazonCognitoPowerUser',  readonly AmazonCognitoReadOnly :'arn:aws:iam::aws:policy/AmazonCognitoReadOnly',  readonly AmazonDMSCloudWatchLogsRole :'arn:aws:iam::aws:policy/service-role/AmazonDMSCloudWatchLogsRole',  readonly AmazonDMSRedshiftS3Role :'arn:aws:iam::aws:policy/service-role/AmazonDMSRedshiftS3Role',  readonly AmazonDMSVPCManagementRole :'arn:aws:iam::aws:policy/service-role/AmazonDMSVPCManagementRole',  readonly AmazonDRSVPCManagement :'arn:aws:iam::aws:policy/AmazonDRSVPCManagement',  readonly AmazonDynamoDBFullAccess :'arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess',  readonly AmazonDynamoDBFullAccesswithDataPipeline :'arn:aws:iam::aws:policy/AmazonDynamoDBFullAccesswithDataPipeline',  readonly AmazonDynamoDBReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess',  readonly AmazonEC2ContainerRegistryFullAccess :'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess',  readonly AmazonEC2ContainerRegistryPowerUser :'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser',  readonly AmazonEC2ContainerRegistryReadOnly :'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly',  readonly AmazonEC2ContainerServiceAutoscaleRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceAutoscaleRole',  readonly AmazonEC2ContainerServiceFullAccess :'arn:aws:iam::aws:policy/AmazonEC2ContainerServiceFullAccess',  readonly AmazonEC2ContainerServiceRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceRole',  readonly AmazonEC2ContainerServiceforEC2Role :'arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role',  readonly AmazonEC2FullAccess :'arn:aws:iam::aws:policy/AmazonEC2FullAccess',  readonly AmazonEC2ReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess',  readonly AmazonEC2ReportsAccess :'arn:aws:iam::aws:policy/AmazonEC2ReportsAccess',  readonly AmazonEC2RoleforAWSCodeDeploy :'arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforAWSCodeDeploy',  readonly AmazonEC2RoleforDataPipelineRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforDataPipelineRole',  readonly AmazonEC2RoleforSSM :'arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM',  readonly AmazonEC2SpotFleetAutoscaleRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetAutoscaleRole',  readonly AmazonEC2SpotFleetRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetRole',  readonly AmazonEC2SpotFleetTaggingRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetTaggingRole',  readonly AmazonESFullAccess :'arn:aws:iam::aws:policy/AmazonESFullAccess',  readonly AmazonESReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonESReadOnlyAccess',  readonly AmazonElastiCacheFullAccess :'arn:aws:iam::aws:policy/AmazonElastiCacheFullAccess',  readonly AmazonElastiCacheReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElastiCacheReadOnlyAccess',  readonly AmazonElasticFileSystemFullAccess :'arn:aws:iam::aws:policy/AmazonElasticFileSystemFullAccess',  readonly AmazonElasticFileSystemReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElasticFileSystemReadOnlyAccess',  readonly AmazonElasticMapReduceFullAccess :'arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess',  readonly AmazonElasticMapReduceReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElasticMapReduceReadOnlyAccess',  readonly AmazonElasticMapReduceRole :'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceRole',  readonly AmazonElasticMapReduceforAutoScalingRole :'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceforAutoScalingRole',  readonly AmazonElasticMapReduceforEC2Role :'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceforEC2Role',  readonly AmazonElasticTranscoderFullAccess :'arn:aws:iam::aws:policy/AmazonElasticTranscoderFullAccess',  readonly AmazonElasticTranscoderJobsSubmitter :'arn:aws:iam::aws:policy/AmazonElasticTranscoderJobsSubmitter',  readonly AmazonElasticTranscoderReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElasticTranscoderReadOnlyAccess',  readonly AmazonElasticTranscoderRole :'arn:aws:iam::aws:policy/service-role/AmazonElasticTranscoderRole',  readonly AmazonGlacierFullAccess :'arn:aws:iam::aws:policy/AmazonGlacierFullAccess',  readonly AmazonGlacierReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonGlacierReadOnlyAccess',  readonly AmazonInspectorFullAccess :'arn:aws:iam::aws:policy/AmazonInspectorFullAccess',  readonly AmazonInspectorReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonInspectorReadOnlyAccess',  readonly AmazonKinesisAnalyticsFullAccess :'arn:aws:iam::aws:policy/AmazonKinesisAnalyticsFullAccess',  readonly AmazonKinesisAnalyticsReadOnly :'arn:aws:iam::aws:policy/AmazonKinesisAnalyticsReadOnly',  readonly AmazonKinesisFirehoseFullAccess :'arn:aws:iam::aws:policy/AmazonKinesisFirehoseFullAccess',  readonly AmazonKinesisFirehoseReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonKinesisFirehoseReadOnlyAccess',  readonly AmazonKinesisFullAccess :'arn:aws:iam::aws:policy/AmazonKinesisFullAccess',  readonly AmazonKinesisReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonKinesisReadOnlyAccess',  readonly AmazonLexFullAccess :'arn:aws:iam::aws:policy/AmazonLexFullAccess',  readonly AmazonLexReadOnly :'arn:aws:iam::aws:policy/AmazonLexReadOnly',  readonly AmazonLexRunBotsOnly :'arn:aws:iam::aws:policy/AmazonLexRunBotsOnly',  readonly AmazonMachineLearningBatchPredictionsAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningBatchPredictionsAccess',  readonly AmazonMachineLearningCreateOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningCreateOnlyAccess',  readonly AmazonMachineLearningFullAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningFullAccess',  readonly AmazonMachineLearningManageRealTimeEndpointOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningManageRealTimeEndpointOnlyAccess',  readonly AmazonMachineLearningReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningReadOnlyAccess',  readonly AmazonMachineLearningRealTimePredictionOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningRealTimePredictionOnlyAccess',  readonly AmazonMachineLearningRoleforRedshiftDataSource :'arn:aws:iam::aws:policy/service-role/AmazonMachineLearningRoleforRedshiftDataSource',  readonly AmazonMechanicalTurkFullAccess :'arn:aws:iam::aws:policy/AmazonMechanicalTurkFullAccess',  readonly AmazonMechanicalTurkReadOnly :'arn:aws:iam::aws:policy/AmazonMechanicalTurkReadOnly',  readonly AmazonMobileAnalyticsFinancialReportAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsFinancialReportAccess',  readonly AmazonMobileAnalyticsFullAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsFullAccess',  readonly AmazonMobileAnalyticsNonfinancialReportAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsNon-financialReportAccess',  readonly AmazonMobileAnalyticsWriteOnlyAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsWriteOnlyAccess',  readonly AmazonPollyFullAccess :'arn:aws:iam::aws:policy/AmazonPollyFullAccess',  readonly AmazonPollyReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonPollyReadOnlyAccess',  readonly AmazonRDSDirectoryServiceAccess :'arn:aws:iam::aws:policy/service-role/AmazonRDSDirectoryServiceAccess',  readonly AmazonRDSEnhancedMonitoringRole :'arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole',  readonly AmazonRDSDataFullAccess :'arn:aws:iam::aws:policy/AmazonRDSDataFullAccess',  readonly AmazonRDSFullAccess :'arn:aws:iam::aws:policy/AmazonRDSFullAccess',  readonly AmazonRDSReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRDSReadOnlyAccess',  readonly AmazonRedshiftFullAccess :'arn:aws:iam::aws:policy/AmazonRedshiftFullAccess',  readonly AmazonRedshiftReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRedshiftReadOnlyAccess',  readonly AmazonRekognitionFullAccess :'arn:aws:iam::aws:policy/AmazonRekognitionFullAccess',  readonly AmazonRekognitionReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRekognitionReadOnlyAccess',  readonly AmazonRoute53DomainsFullAccess :'arn:aws:iam::aws:policy/AmazonRoute53DomainsFullAccess',  readonly AmazonRoute53DomainsReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRoute53DomainsReadOnlyAccess',  readonly AmazonRoute53FullAccess :'arn:aws:iam::aws:policy/AmazonRoute53FullAccess',  readonly AmazonRoute53ReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRoute53ReadOnlyAccess',  readonly AmazonS3FullAccess :'arn:aws:iam::aws:policy/AmazonS3FullAccess',  readonly AmazonS3ReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess',  readonly AmazonSESFullAccess :'arn:aws:iam::aws:policy/AmazonSESFullAccess',  readonly AmazonSESReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSESReadOnlyAccess',  readonly AmazonSNSFullAccess :'arn:aws:iam::aws:policy/AmazonSNSFullAccess',  readonly AmazonSNSReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSNSReadOnlyAccess',  readonly AmazonSNSRole :'arn:aws:iam::aws:policy/service-role/AmazonSNSRole',  readonly AmazonSQSFullAccess :'arn:aws:iam::aws:policy/AmazonSQSFullAccess',  readonly AmazonSQSReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSQSReadOnlyAccess',  readonly AWSLambdaSQSQueueExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole',  readonly AmazonSSMAutomationApproverAccess :'arn:aws:iam::aws:policy/AmazonSSMAutomationApproverAccess',  readonly AmazonSSMAutomationRole :'arn:aws:iam::aws:policy/service-role/AmazonSSMAutomationRole',  readonly AmazonSSMDirectoryServiceAccess :'arn:aws:iam::aws:policy/AmazonSSMDirectoryServiceAccess',  readonly AmazonSSMFullAccess :'arn:aws:iam::aws:policy/AmazonSSMFullAccess',  readonly AmazonSSMMaintenanceWindowRole :'arn:aws:iam::aws:policy/service-role/AmazonSSMMaintenanceWindowRole',  readonly AmazonSSMPatchAssociation :'arn:aws:iam::aws:policy/AmazonSSMPatchAssociation',  readonly AmazonSSMReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess',  readonly AmazonSSMManagedInstanceCore :'arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore',  readonly AmazonVPCFullAccess :'arn:aws:iam::aws:policy/AmazonVPCFullAccess',  readonly AmazonVPCReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonVPCReadOnlyAccess',  readonly AmazonWorkMailFullAccess :'arn:aws:iam::aws:policy/AmazonWorkMailFullAccess',  readonly AmazonWorkMailReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonWorkMailReadOnlyAccess',  readonly AmazonWorkSpacesAdmin :'arn:aws:iam::aws:policy/AmazonWorkSpacesAdmin',  readonly AmazonWorkSpacesApplicationManagerAdminAccess :'arn:aws:iam::aws:policy/AmazonWorkSpacesApplicationManagerAdminAccess',  readonly AmazonZocaloFullAccess :'arn:aws:iam::aws:policy/AmazonZocaloFullAccess',  readonly AmazonZocaloReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonZocaloReadOnlyAccess',  readonly ApplicationAutoScalingForAmazonAppStreamAccess :'arn:aws:iam::aws:policy/service-role/ApplicationAutoScalingForAmazonAppStreamAccess',  readonly AutoScalingConsoleFullAccess :'arn:aws:iam::aws:policy/AutoScalingConsoleFullAccess',  readonly AutoScalingConsoleReadOnlyAccess :'arn:aws:iam::aws:policy/AutoScalingConsoleReadOnlyAccess',  readonly AutoScalingFullAccess :'arn:aws:iam::aws:policy/AutoScalingFullAccess',  readonly AutoScalingNotificationAccessRole :'arn:aws:iam::aws:policy/service-role/AutoScalingNotificationAccessRole',  readonly AutoScalingReadOnlyAccess :'arn:aws:iam::aws:policy/AutoScalingReadOnlyAccess',  readonly Billing :'arn:aws:iam::aws:policy/job-function/Billing',  readonly CloudFrontFullAccess :'arn:aws:iam::aws:policy/CloudFrontFullAccess',  readonly CloudFrontReadOnlyAccess :'arn:aws:iam::aws:policy/CloudFrontReadOnlyAccess',  readonly CloudSearchFullAccess :'arn:aws:iam::aws:policy/CloudSearchFullAccess',  readonly CloudSearchReadOnlyAccess :'arn:aws:iam::aws:policy/CloudSearchReadOnlyAccess',  readonly CloudWatchActionsEC2Access :'arn:aws:iam::aws:policy/CloudWatchActionsEC2Access',  readonly CloudWatchEventsBuiltInTargetExecutionAccess :'arn:aws:iam::aws:policy/service-role/CloudWatchEventsBuiltInTargetExecutionAccess',  readonly CloudWatchEventsFullAccess :'arn:aws:iam::aws:policy/CloudWatchEventsFullAccess',  readonly CloudWatchEventsInvocationAccess :'arn:aws:iam::aws:policy/service-role/CloudWatchEventsInvocationAccess',  readonly CloudWatchEventsReadOnlyAccess :'arn:aws:iam::aws:policy/CloudWatchEventsReadOnlyAccess',  readonly CloudWatchFullAccess :'arn:aws:iam::aws:policy/CloudWatchFullAccess',  readonly CloudWatchLogsFullAccess :'arn:aws:iam::aws:policy/CloudWatchLogsFullAccess',  readonly CloudWatchLogsReadOnlyAccess :'arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess',  readonly CloudWatchReadOnlyAccess :'arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess',  readonly DataScientist :'arn:aws:iam::aws:policy/job-function/DataScientist',  readonly DatabaseAdministrator :'arn:aws:iam::aws:policy/job-function/DatabaseAdministrator',  readonly IAMFullAccess :'arn:aws:iam::aws:policy/IAMFullAccess',  readonly IAMReadOnlyAccess :'arn:aws:iam::aws:policy/IAMReadOnlyAccess',  readonly IAMSelfManageServiceSpecificCredentials :'arn:aws:iam::aws:policy/IAMSelfManageServiceSpecificCredentials',  readonly IAMUserChangePassword :'arn:aws:iam::aws:policy/IAMUserChangePassword',  readonly IAMUserSSHKeys :'arn:aws:iam::aws:policy/IAMUserSSHKeys',  readonly NetworkAdministrator :'arn:aws:iam::aws:policy/job-function/NetworkAdministrator',  readonly PowerUserAccess :'arn:aws:iam::aws:policy/PowerUserAccess',  readonly RDSCloudHsmAuthorizationRole :'arn:aws:iam::aws:policy/service-role/RDSCloudHsmAuthorizationRole',  readonly ReadOnlyAccess :'arn:aws:iam::aws:policy/ReadOnlyAccess',  readonly ResourceGroupsandTagEditorFullAccess :'arn:aws:iam::aws:policy/ResourceGroupsandTagEditorFullAccess',  readonly ResourceGroupsandTagEditorReadOnlyAccess :'arn:aws:iam::aws:policy/ResourceGroupsandTagEditorReadOnlyAccess',  readonly SecurityAudit :'arn:aws:iam::aws:policy/SecurityAudit',  readonly ServerMigrationConnector :'arn:aws:iam::aws:policy/ServerMigrationConnector',  readonly ServerMigrationServiceRole :'arn:aws:iam::aws:policy/service-role/ServerMigrationServiceRole',  readonly ServiceCatalogAdminFullAccess :'arn:aws:iam::aws:policy/ServiceCatalogAdminFullAccess',  readonly ServiceCatalogAdminReadOnlyAccess :'arn:aws:iam::aws:policy/ServiceCatalogAdminReadOnlyAccess',  readonly ServiceCatalogEndUserAccess :'arn:aws:iam::aws:policy/ServiceCatalogEndUserAccess',  readonly ServiceCatalogEndUserFullAccess :'arn:aws:iam::aws:policy/ServiceCatalogEndUserFullAccess',  readonly SimpleWorkflowFullAccess :'arn:aws:iam::aws:policy/SimpleWorkflowFullAccess',  readonly SupportUser :'arn:aws:iam::aws:policy/job-function/SupportUser',  readonly SystemAdministrator :'arn:aws:iam::aws:policy/job-function/SystemAdministrator',  readonly VMImportExportRoleForAWSConnector :'arn:aws:iam::aws:policy/service-role/VMImportExportRoleForAWSConnector',  readonly ViewOnlyAccess :'arn:aws:iam::aws:policy/job-function/ViewOnlyAccess'}[keyof { readonly AWSAccountActivityAccess :'arn:aws:iam::aws:policy/AWSAccountActivityAccess',  readonly AWSAccountUsageReportAccess :'arn:aws:iam::aws:policy/AWSAccountUsageReportAccess',  readonly AWSAgentlessDiscoveryService :'arn:aws:iam::aws:policy/AWSAgentlessDiscoveryService',  readonly AWSApplicationDiscoveryAgentAccess :'arn:aws:iam::aws:policy/AWSApplicationDiscoveryAgentAccess',  readonly AWSApplicationDiscoveryServiceFullAccess :'arn:aws:iam::aws:policy/AWSApplicationDiscoveryServiceFullAccess',  readonly AWSBatchFullAccess :'arn:aws:iam::aws:policy/AWSBatchFullAccess',  readonly AWSBatchServiceRole :'arn:aws:iam::aws:policy/service-role/AWSBatchServiceRole',  readonly AWSCertificateManagerFullAccess :'arn:aws:iam::aws:policy/AWSCertificateManagerFullAccess',  readonly AWSCertificateManagerReadOnly :'arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly',  readonly AWSCloudFormationReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCloudFormationReadOnlyAccess',  readonly AWSCloudHSMFullAccess :'arn:aws:iam::aws:policy/AWSCloudHSMFullAccess',  readonly AWSCloudHSMReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCloudHSMReadOnlyAccess',  readonly AWSCloudHSMRole :'arn:aws:iam::aws:policy/service-role/AWSCloudHSMRole',  readonly AWSCloudTrailFullAccess :'arn:aws:iam::aws:policy/AWSCloudTrailFullAccess',  readonly AWSCloudTrailReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCloudTrailReadOnlyAccess',  readonly AWSCodeBuildAdminAccess :'arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess',  readonly AWSCodeBuildDeveloperAccess :'arn:aws:iam::aws:policy/AWSCodeBuildDeveloperAccess',  readonly AWSCodeBuildReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCodeBuildReadOnlyAccess',  readonly AWSCodeCommitFullAccess :'arn:aws:iam::aws:policy/AWSCodeCommitFullAccess',  readonly AWSCodeCommitPowerUser :'arn:aws:iam::aws:policy/AWSCodeCommitPowerUser',  readonly AWSCodeCommitReadOnly :'arn:aws:iam::aws:policy/AWSCodeCommitReadOnly',  readonly AWSCodeDeployDeployerAccess :'arn:aws:iam::aws:policy/AWSCodeDeployDeployerAccess',  readonly AWSCodeDeployFullAccess :'arn:aws:iam::aws:policy/AWSCodeDeployFullAccess',  readonly AWSCodeDeployReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCodeDeployReadOnlyAccess',  readonly AWSCodeDeployRole :'arn:aws:iam::aws:policy/service-role/AWSCodeDeployRole',  readonly AWSCodeDeployRoleForECS :'arn:aws:iam::aws:policy/AWSCodeDeployRoleForECS',  readonly AWSCodePipelineApproverAccess :'arn:aws:iam::aws:policy/AWSCodePipelineApproverAccess',  readonly AWSCodePipelineCustomActionAccess :'arn:aws:iam::aws:policy/AWSCodePipelineCustomActionAccess',  readonly AWSCodePipelineFullAccess :'arn:aws:iam::aws:policy/AWSCodePipelineFullAccess',  readonly AWSCodePipelineReadOnlyAccess :'arn:aws:iam::aws:policy/AWSCodePipelineReadOnlyAccess',  readonly AWSCodeStarFullAccess :'arn:aws:iam::aws:policy/AWSCodeStarFullAccess',  readonly AWSCodeStarServiceRole :'arn:aws:iam::aws:policy/service-role/AWSCodeStarServiceRole',  readonly AWSConfigRole :'arn:aws:iam::aws:policy/service-role/AWSConfigRole',  readonly AWSConfigRulesExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSConfigRulesExecutionRole',  readonly AWSConfigUserAccess :'arn:aws:iam::aws:policy/AWSConfigUserAccess',  readonly AWSConnector :'arn:aws:iam::aws:policy/AWSConnector',  readonly AWSDataPipelineRole :'arn:aws:iam::aws:policy/service-role/AWSDataPipelineRole',  readonly AWSDataPipeline_FullAccess :'arn:aws:iam::aws:policy/AWSDataPipeline_FullAccess',  readonly AWSDataPipeline_PowerUser :'arn:aws:iam::aws:policy/AWSDataPipeline_PowerUser',  readonly AWSDeviceFarmFullAccess :'arn:aws:iam::aws:policy/AWSDeviceFarmFullAccess',  readonly AWSDirectConnectFullAccess :'arn:aws:iam::aws:policy/AWSDirectConnectFullAccess',  readonly AWSDirectConnectReadOnlyAccess :'arn:aws:iam::aws:policy/AWSDirectConnectReadOnlyAccess',  readonly AWSDirectoryServiceFullAccess :'arn:aws:iam::aws:policy/AWSDirectoryServiceFullAccess',  readonly AWSDirectoryServiceReadOnlyAccess :'arn:aws:iam::aws:policy/AWSDirectoryServiceReadOnlyAccess',  readonly AWSElasticBeanstalkCustomPlatformforEC2Role :'arn:aws:iam::aws:policy/AWSElasticBeanstalkCustomPlatformforEC2Role',  readonly AWSElasticBeanstalkEnhancedHealth :'arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth',  readonly AWSElasticBeanstalkFullAccess :'arn:aws:iam::aws:policy/AWSElasticBeanstalkFullAccess',  readonly AWSElasticBeanstalkMulticontainerDocker :'arn:aws:iam::aws:policy/AWSElasticBeanstalkMulticontainerDocker',  readonly AWSElasticBeanstalkReadOnlyAccess :'arn:aws:iam::aws:policy/AWSElasticBeanstalkReadOnlyAccess',  readonly AWSElasticBeanstalkService :'arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkService',  readonly AWSElasticBeanstalkWebTier :'arn:aws:iam::aws:policy/AWSElasticBeanstalkWebTier',  readonly AWSElasticBeanstakWorkerTier :'arn:aws:iam::aws:policy/AWSElasticBeanstalkWorkerTier',  readonly AWSGreengrassFullccess :'arn:aws:iam::aws:policy/AWSGreengrassFullAccess',  readonly AWSGreengrassResourceAccessRolePolicy :'arn:aws:iam::aws:policy/service-role/AWSGreengrassResourceAccessRolePolicy',  readonly AWSHealthFullAccess :'arn:aws:iam::aws:policy/AWSHealthFullAccess',  readonly AWSImportExportFullAccess :'arn:aws:iam::aws:policy/AWSImportExportFullAccess',  readonly AWSImportExportReadOnlyAccess :'arn:aws:iam::aws:policy/AWSImportExportReadOnlyAccess',  readonly AWSIoTConfigAccess :'arn:aws:iam::aws:policy/AWSIoTConfigAccess',  readonly AWSIoTConfigReadOnlyAccess :'arn:aws:iam::aws:policy/AWSIoTConfigReadOnlyAccess',  readonly AWSIoTDataAccess :'arn:aws:iam::aws:policy/AWSIoTDataAccess',  readonly AWSIoTFullAccess :'arn:aws:iam::aws:policy/AWSIoTFullAccess',  readonly AWSIoTLogging :'arn:aws:iam::aws:policy/service-role/AWSIoTLogging',  readonly AWSIoTRuleActions :'arn:aws:iam::aws:policy/service-role/AWSIoTRuleActions',  readonly AWSKeyManagementServicePowerUser :'arn:aws:iam::aws:policy/AWSKeyManagementServicePowerUser',  readonly AWSLambdaBasicExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole',  readonly AWSLambdaDynamoDBExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaDynamoDBExecutionRole',  readonly AWSLambdaENIManagementAccess :'arn:aws:iam::aws:policy/service-role/AWSLambdaENIManagementAccess',  readonly AWSLambdaExecute :'arn:aws:iam::aws:policy/AWSLambdaExecute',  readonly AWSLambdaFullAccess :'arn:aws:iam::aws:policy/AWSLambdaFullAccess',  readonly AWSLambdaInvocationDynamoDB :'arn:aws:iam::aws:policy/AWSLambdaInvocation-DynamoDB',  readonly AWSLambdaKinesisExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaKinesisExecutionRole',  readonly AWSLambdaReadOnlyAccess :'arn:aws:iam::aws:policy/AWSLambdaReadOnlyAccess',  readonly AWSLambdaRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaRole',  readonly AWSLambdaVPCAccessExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole',  readonly AWSMarketplaceFullAccess :'arn:aws:iam::aws:policy/AWSMarketplaceFullAccess',  readonly AWSMarketplaceGetEntitlements :'arn:aws:iam::aws:policy/AWSMarketplaceGetEntitlements',  readonly AWSMarketplaceManageSubscriptions :'arn:aws:iam::aws:policy/AWSMarketplaceManageSubscriptions',  readonly AWSMarketplaceMeteringFullAccess :'arn:aws:iam::aws:policy/AWSMarketplaceMeteringFullAccess',  readonly AWSMarketplaceReadonly :'arn:aws:iam::aws:policy/AWSMarketplaceRead-only',  readonly AWSMobileHub_FullAccess :'arn:aws:iam::aws:policy/AWSMobileHub_FullAccess',  readonly AWSMobileHub_ReadOnly :'arn:aws:iam::aws:policy/AWSMobileHub_ReadOnly',  readonly AWSMobileHub_ServiceUseOnly :'arn:aws:iam::aws:policy/service-role/AWSMobileHub_ServiceUseOnly',  readonly AWSOpsWorksCMInstanceProfileRole :'arn:aws:iam::aws:policy/AWSOpsWorksCMInstanceProfileRole',  readonly AWSOpsWorksCMServiceRole :'arn:aws:iam::aws:policy/service-role/AWSOpsWorksCMServiceRole',  readonly AWSOpsWorksCloudWatchLogs :'arn:aws:iam::aws:policy/AWSOpsWorksCloudWatchLogs',  readonly AWSOpsWorksFullAccess :'arn:aws:iam::aws:policy/AWSOpsWorksFullAccess',  readonly AWSOpsWorksInstanceRegistration :'arn:aws:iam::aws:policy/AWSOpsWorksInstanceRegistration',  readonly AWSOpsWorksRegisterCLI :'arn:aws:iam::aws:policy/AWSOpsWorksRegisterCLI',  readonly AWSOpsWorksRole :'arn:aws:iam::aws:policy/service-role/AWSOpsWorksRole',  readonly AWSQuickSightDescribeRD :'arn:aws:iam::aws:policy/service-role/AWSQuickSightDescribeRDS',  readonly AWSQuickSightDescribeRedshift :'arn:aws:iam::aws:policy/service-role/AWSQuickSightDescribeRedshift',  readonly AWSQuickSightListIAM :'arn:aws:iam::aws:policy/service-role/AWSQuickSightListIAM',  readonly AWSQuicksightAthenaAccess :'arn:aws:iam::aws:policy/service-role/AWSQuicksightAthenaAccess',  readonly AWSStepFunctionsConsoleFullAccess :'arn:aws:iam::aws:policy/AWSStepFunctionsConsoleFullAccess',  readonly AWSStepFunctionsFullAccess :'arn:aws:iam::aws:policy/AWSStepFunctionsFullAccess',  readonly AWSStepFunctionsReadOnlyAccess :'arn:aws:iam::aws:policy/AWSStepFunctionsReadOnlyAccess',  readonly AWSStorageGatewayFullAccess :'arn:aws:iam::aws:policy/AWSStorageGatewayFullAccess',  readonly AWSStorageGatewayReadOnlyAccess :'arn:aws:iam::aws:policy/AWSStorageGatewayReadOnlyAccess',  readonly AWSSupportAccess :'arn:aws:iam::aws:policy/AWSSupportAccess',  readonly AWSWAFFullAccess :'arn:aws:iam::aws:policy/AWSWAFFullAccess',  readonly AWSWAFReadOnlyAccess :'arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess',  readonly AWSXrayFullAccess :'arn:aws:iam::aws:policy/AWSXrayFullAccess',  readonly AWSXrayReadOnlyAccess :'arn:aws:iam::aws:policy/AWSXrayReadOnlyAccess',  readonly AWSXrayWriteOnlyAccess :'arn:aws:iam::aws:policy/AWSXrayWriteOnlyAccess',  readonly AWSXRayDaemonWriteAccess :'arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess',  readonly AdministratorAccess :'arn:aws:iam::aws:policy/AdministratorAccess',  readonly AmazonAPIGatewayAdministrator :'arn:aws:iam::aws:policy/AmazonAPIGatewayAdministrator',  readonly AmazonAPIGatewayInvokeFullAccess :'arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess',  readonly AmazonAPIGatewayPushToCloudWatchLogs :'arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs',  readonly AmazonAppStreamFullAccess :'arn:aws:iam::aws:policy/AmazonAppStreamFullAccess',  readonly AmazonAppStreamReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonAppStreamReadOnlyAccess',  readonly AmazonAppStreamServiceAccess :'arn:aws:iam::aws:policy/service-role/AmazonAppStreamServiceAccess',  readonly AmazonAthenaFullAccess :'arn:aws:iam::aws:policy/AmazonAthenaFullAccess',  readonly AmazonCloudDirectoryFullAccess :'arn:aws:iam::aws:policy/AmazonCloudDirectoryFullAccess',  readonly AmazonCloudDirectoryReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonCloudDirectoryReadOnlyAccess',  readonly AmazonCognitoDeveloperAuthenticatedIdentities :'arn:aws:iam::aws:policy/AmazonCognitoDeveloperAuthenticatedIdentities',  readonly AmazonCognitoPowerUser :'arn:aws:iam::aws:policy/AmazonCognitoPowerUser',  readonly AmazonCognitoReadOnly :'arn:aws:iam::aws:policy/AmazonCognitoReadOnly',  readonly AmazonDMSCloudWatchLogsRole :'arn:aws:iam::aws:policy/service-role/AmazonDMSCloudWatchLogsRole',  readonly AmazonDMSRedshiftS3Role :'arn:aws:iam::aws:policy/service-role/AmazonDMSRedshiftS3Role',  readonly AmazonDMSVPCManagementRole :'arn:aws:iam::aws:policy/service-role/AmazonDMSVPCManagementRole',  readonly AmazonDRSVPCManagement :'arn:aws:iam::aws:policy/AmazonDRSVPCManagement',  readonly AmazonDynamoDBFullAccess :'arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess',  readonly AmazonDynamoDBFullAccesswithDataPipeline :'arn:aws:iam::aws:policy/AmazonDynamoDBFullAccesswithDataPipeline',  readonly AmazonDynamoDBReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess',  readonly AmazonEC2ContainerRegistryFullAccess :'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess',  readonly AmazonEC2ContainerRegistryPowerUser :'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser',  readonly AmazonEC2ContainerRegistryReadOnly :'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly',  readonly AmazonEC2ContainerServiceAutoscaleRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceAutoscaleRole',  readonly AmazonEC2ContainerServiceFullAccess :'arn:aws:iam::aws:policy/AmazonEC2ContainerServiceFullAccess',  readonly AmazonEC2ContainerServiceRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceRole',  readonly AmazonEC2ContainerServiceforEC2Role :'arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role',  readonly AmazonEC2FullAccess :'arn:aws:iam::aws:policy/AmazonEC2FullAccess',  readonly AmazonEC2ReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess',  readonly AmazonEC2ReportsAccess :'arn:aws:iam::aws:policy/AmazonEC2ReportsAccess',  readonly AmazonEC2RoleforAWSCodeDeploy :'arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforAWSCodeDeploy',  readonly AmazonEC2RoleforDataPipelineRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforDataPipelineRole',  readonly AmazonEC2RoleforSSM :'arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM',  readonly AmazonEC2SpotFleetAutoscaleRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetAutoscaleRole',  readonly AmazonEC2SpotFleetRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetRole',  readonly AmazonEC2SpotFleetTaggingRole :'arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetTaggingRole',  readonly AmazonESFullAccess :'arn:aws:iam::aws:policy/AmazonESFullAccess',  readonly AmazonESReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonESReadOnlyAccess',  readonly AmazonElastiCacheFullAccess :'arn:aws:iam::aws:policy/AmazonElastiCacheFullAccess',  readonly AmazonElastiCacheReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElastiCacheReadOnlyAccess',  readonly AmazonElasticFileSystemFullAccess :'arn:aws:iam::aws:policy/AmazonElasticFileSystemFullAccess',  readonly AmazonElasticFileSystemReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElasticFileSystemReadOnlyAccess',  readonly AmazonElasticMapReduceFullAccess :'arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess',  readonly AmazonElasticMapReduceReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElasticMapReduceReadOnlyAccess',  readonly AmazonElasticMapReduceRole :'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceRole',  readonly AmazonElasticMapReduceforAutoScalingRole :'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceforAutoScalingRole',  readonly AmazonElasticMapReduceforEC2Role :'arn:aws:iam::aws:policy/service-role/AmazonElasticMapReduceforEC2Role',  readonly AmazonElasticTranscoderFullAccess :'arn:aws:iam::aws:policy/AmazonElasticTranscoderFullAccess',  readonly AmazonElasticTranscoderJobsSubmitter :'arn:aws:iam::aws:policy/AmazonElasticTranscoderJobsSubmitter',  readonly AmazonElasticTranscoderReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonElasticTranscoderReadOnlyAccess',  readonly AmazonElasticTranscoderRole :'arn:aws:iam::aws:policy/service-role/AmazonElasticTranscoderRole',  readonly AmazonGlacierFullAccess :'arn:aws:iam::aws:policy/AmazonGlacierFullAccess',  readonly AmazonGlacierReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonGlacierReadOnlyAccess',  readonly AmazonInspectorFullAccess :'arn:aws:iam::aws:policy/AmazonInspectorFullAccess',  readonly AmazonInspectorReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonInspectorReadOnlyAccess',  readonly AmazonKinesisAnalyticsFullAccess :'arn:aws:iam::aws:policy/AmazonKinesisAnalyticsFullAccess',  readonly AmazonKinesisAnalyticsReadOnly :'arn:aws:iam::aws:policy/AmazonKinesisAnalyticsReadOnly',  readonly AmazonKinesisFirehoseFullAccess :'arn:aws:iam::aws:policy/AmazonKinesisFirehoseFullAccess',  readonly AmazonKinesisFirehoseReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonKinesisFirehoseReadOnlyAccess',  readonly AmazonKinesisFullAccess :'arn:aws:iam::aws:policy/AmazonKinesisFullAccess',  readonly AmazonKinesisReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonKinesisReadOnlyAccess',  readonly AmazonLexFullAccess :'arn:aws:iam::aws:policy/AmazonLexFullAccess',  readonly AmazonLexReadOnly :'arn:aws:iam::aws:policy/AmazonLexReadOnly',  readonly AmazonLexRunBotsOnly :'arn:aws:iam::aws:policy/AmazonLexRunBotsOnly',  readonly AmazonMachineLearningBatchPredictionsAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningBatchPredictionsAccess',  readonly AmazonMachineLearningCreateOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningCreateOnlyAccess',  readonly AmazonMachineLearningFullAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningFullAccess',  readonly AmazonMachineLearningManageRealTimeEndpointOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningManageRealTimeEndpointOnlyAccess',  readonly AmazonMachineLearningReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningReadOnlyAccess',  readonly AmazonMachineLearningRealTimePredictionOnlyAccess :'arn:aws:iam::aws:policy/AmazonMachineLearningRealTimePredictionOnlyAccess',  readonly AmazonMachineLearningRoleforRedshiftDataSource :'arn:aws:iam::aws:policy/service-role/AmazonMachineLearningRoleforRedshiftDataSource',  readonly AmazonMechanicalTurkFullAccess :'arn:aws:iam::aws:policy/AmazonMechanicalTurkFullAccess',  readonly AmazonMechanicalTurkReadOnly :'arn:aws:iam::aws:policy/AmazonMechanicalTurkReadOnly',  readonly AmazonMobileAnalyticsFinancialReportAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsFinancialReportAccess',  readonly AmazonMobileAnalyticsFullAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsFullAccess',  readonly AmazonMobileAnalyticsNonfinancialReportAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsNon-financialReportAccess',  readonly AmazonMobileAnalyticsWriteOnlyAccess :'arn:aws:iam::aws:policy/AmazonMobileAnalyticsWriteOnlyAccess',  readonly AmazonPollyFullAccess :'arn:aws:iam::aws:policy/AmazonPollyFullAccess',  readonly AmazonPollyReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonPollyReadOnlyAccess',  readonly AmazonRDSDirectoryServiceAccess :'arn:aws:iam::aws:policy/service-role/AmazonRDSDirectoryServiceAccess',  readonly AmazonRDSEnhancedMonitoringRole :'arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole',  readonly AmazonRDSDataFullAccess :'arn:aws:iam::aws:policy/AmazonRDSDataFullAccess',  readonly AmazonRDSFullAccess :'arn:aws:iam::aws:policy/AmazonRDSFullAccess',  readonly AmazonRDSReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRDSReadOnlyAccess',  readonly AmazonRedshiftFullAccess :'arn:aws:iam::aws:policy/AmazonRedshiftFullAccess',  readonly AmazonRedshiftReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRedshiftReadOnlyAccess',  readonly AmazonRekognitionFullAccess :'arn:aws:iam::aws:policy/AmazonRekognitionFullAccess',  readonly AmazonRekognitionReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRekognitionReadOnlyAccess',  readonly AmazonRoute53DomainsFullAccess :'arn:aws:iam::aws:policy/AmazonRoute53DomainsFullAccess',  readonly AmazonRoute53DomainsReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRoute53DomainsReadOnlyAccess',  readonly AmazonRoute53FullAccess :'arn:aws:iam::aws:policy/AmazonRoute53FullAccess',  readonly AmazonRoute53ReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonRoute53ReadOnlyAccess',  readonly AmazonS3FullAccess :'arn:aws:iam::aws:policy/AmazonS3FullAccess',  readonly AmazonS3ReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess',  readonly AmazonSESFullAccess :'arn:aws:iam::aws:policy/AmazonSESFullAccess',  readonly AmazonSESReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSESReadOnlyAccess',  readonly AmazonSNSFullAccess :'arn:aws:iam::aws:policy/AmazonSNSFullAccess',  readonly AmazonSNSReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSNSReadOnlyAccess',  readonly AmazonSNSRole :'arn:aws:iam::aws:policy/service-role/AmazonSNSRole',  readonly AmazonSQSFullAccess :'arn:aws:iam::aws:policy/AmazonSQSFullAccess',  readonly AmazonSQSReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSQSReadOnlyAccess',  readonly AWSLambdaSQSQueueExecutionRole :'arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole',  readonly AmazonSSMAutomationApproverAccess :'arn:aws:iam::aws:policy/AmazonSSMAutomationApproverAccess',  readonly AmazonSSMAutomationRole :'arn:aws:iam::aws:policy/service-role/AmazonSSMAutomationRole',  readonly AmazonSSMDirectoryServiceAccess :'arn:aws:iam::aws:policy/AmazonSSMDirectoryServiceAccess',  readonly AmazonSSMFullAccess :'arn:aws:iam::aws:policy/AmazonSSMFullAccess',  readonly AmazonSSMMaintenanceWindowRole :'arn:aws:iam::aws:policy/service-role/AmazonSSMMaintenanceWindowRole',  readonly AmazonSSMPatchAssociation :'arn:aws:iam::aws:policy/AmazonSSMPatchAssociation',  readonly AmazonSSMReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess',  readonly AmazonSSMManagedInstanceCore :'arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore',  readonly AmazonVPCFullAccess :'arn:aws:iam::aws:policy/AmazonVPCFullAccess',  readonly AmazonVPCReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonVPCReadOnlyAccess',  readonly AmazonWorkMailFullAccess :'arn:aws:iam::aws:policy/AmazonWorkMailFullAccess',  readonly AmazonWorkMailReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonWorkMailReadOnlyAccess',  readonly AmazonWorkSpacesAdmin :'arn:aws:iam::aws:policy/AmazonWorkSpacesAdmin',  readonly AmazonWorkSpacesApplicationManagerAdminAccess :'arn:aws:iam::aws:policy/AmazonWorkSpacesApplicationManagerAdminAccess',  readonly AmazonZocaloFullAccess :'arn:aws:iam::aws:policy/AmazonZocaloFullAccess',  readonly AmazonZocaloReadOnlyAccess :'arn:aws:iam::aws:policy/AmazonZocaloReadOnlyAccess',  readonly ApplicationAutoScalingForAmazonAppStreamAccess :'arn:aws:iam::aws:policy/service-role/ApplicationAutoScalingForAmazonAppStreamAccess',  readonly AutoScalingConsoleFullAccess :'arn:aws:iam::aws:policy/AutoScalingConsoleFullAccess',  readonly AutoScalingConsoleReadOnlyAccess :'arn:aws:iam::aws:policy/AutoScalingConsoleReadOnlyAccess',  readonly AutoScalingFullAccess :'arn:aws:iam::aws:policy/AutoScalingFullAccess',  readonly AutoScalingNotificationAccessRole :'arn:aws:iam::aws:policy/service-role/AutoScalingNotificationAccessRole',  readonly AutoScalingReadOnlyAccess :'arn:aws:iam::aws:policy/AutoScalingReadOnlyAccess',  readonly Billing :'arn:aws:iam::aws:policy/job-function/Billing',  readonly CloudFrontFullAccess :'arn:aws:iam::aws:policy/CloudFrontFullAccess',  readonly CloudFrontReadOnlyAccess :'arn:aws:iam::aws:policy/CloudFrontReadOnlyAccess',  readonly CloudSearchFullAccess :'arn:aws:iam::aws:policy/CloudSearchFullAccess',  readonly CloudSearchReadOnlyAccess :'arn:aws:iam::aws:policy/CloudSearchReadOnlyAccess',  readonly CloudWatchActionsEC2Access :'arn:aws:iam::aws:policy/CloudWatchActionsEC2Access',  readonly CloudWatchEventsBuiltInTargetExecutionAccess :'arn:aws:iam::aws:policy/service-role/CloudWatchEventsBuiltInTargetExecutionAccess',  readonly CloudWatchEventsFullAccess :'arn:aws:iam::aws:policy/CloudWatchEventsFullAccess',  readonly CloudWatchEventsInvocationAccess :'arn:aws:iam::aws:policy/service-role/CloudWatchEventsInvocationAccess',  readonly CloudWatchEventsReadOnlyAccess :'arn:aws:iam::aws:policy/CloudWatchEventsReadOnlyAccess',  readonly CloudWatchFullAccess :'arn:aws:iam::aws:policy/CloudWatchFullAccess',  readonly CloudWatchLogsFullAccess :'arn:aws:iam::aws:policy/CloudWatchLogsFullAccess',  readonly CloudWatchLogsReadOnlyAccess :'arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess',  readonly CloudWatchReadOnlyAccess :'arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess',  readonly DataScientist :'arn:aws:iam::aws:policy/job-function/DataScientist',  readonly DatabaseAdministrator :'arn:aws:iam::aws:policy/job-function/DatabaseAdministrator',  readonly IAMFullAccess :'arn:aws:iam::aws:policy/IAMFullAccess',  readonly IAMReadOnlyAccess :'arn:aws:iam::aws:policy/IAMReadOnlyAccess',  readonly IAMSelfManageServiceSpecificCredentials :'arn:aws:iam::aws:policy/IAMSelfManageServiceSpecificCredentials',  readonly IAMUserChangePassword :'arn:aws:iam::aws:policy/IAMUserChangePassword',  readonly IAMUserSSHKeys :'arn:aws:iam::aws:policy/IAMUserSSHKeys',  readonly NetworkAdministrator :'arn:aws:iam::aws:policy/job-function/NetworkAdministrator',  readonly PowerUserAccess :'arn:aws:iam::aws:policy/PowerUserAccess',  readonly RDSCloudHsmAuthorizationRole :'arn:aws:iam::aws:policy/service-role/RDSCloudHsmAuthorizationRole',  readonly ReadOnlyAccess :'arn:aws:iam::aws:policy/ReadOnlyAccess',  readonly ResourceGroupsandTagEditorFullAccess :'arn:aws:iam::aws:policy/ResourceGroupsandTagEditorFullAccess',  readonly ResourceGroupsandTagEditorReadOnlyAccess :'arn:aws:iam::aws:policy/ResourceGroupsandTagEditorReadOnlyAccess',  readonly SecurityAudit :'arn:aws:iam::aws:policy/SecurityAudit',  readonly ServerMigrationConnector :'arn:aws:iam::aws:policy/ServerMigrationConnector',  readonly ServerMigrationServiceRole :'arn:aws:iam::aws:policy/service-role/ServerMigrationServiceRole',  readonly ServiceCatalogAdminFullAccess :'arn:aws:iam::aws:policy/ServiceCatalogAdminFullAccess',  readonly ServiceCatalogAdminReadOnlyAccess :'arn:aws:iam::aws:policy/ServiceCatalogAdminReadOnlyAccess',  readonly ServiceCatalogEndUserAccess :'arn:aws:iam::aws:policy/ServiceCatalogEndUserAccess',  readonly ServiceCatalogEndUserFullAccess :'arn:aws:iam::aws:policy/ServiceCatalogEndUserFullAccess',  readonly SimpleWorkflowFullAccess :'arn:aws:iam::aws:policy/SimpleWorkflowFullAccess',  readonly SupportUser :'arn:aws:iam::aws:policy/job-function/SupportUser',  readonly SystemAdministrator :'arn:aws:iam::aws:policy/job-function/SystemAdministrator',  readonly VMImportExportRoleForAWSConnector :'arn:aws:iam::aws:policy/service-role/VMImportExportRoleForAWSConnector',  readonly ViewOnlyAccess :'arn:aws:iam::aws:policy/job-function/ViewOnlyAccess'}] */
   /* Rewritten from type alias, can be one of: 
@@ -547,544 +546,1079 @@ object enumsIamMod extends js.Object {
     - typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashAmazonSESFullAccess
     - typings.pulumiAws.pulumiAwsStrings.arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectConnectReadOnlyAccess
   */
-  trait ManagedPolicy extends js.Object
-  @js.native
-  object ManagedPolicy extends js.Object {
+  trait ManagedPolicy extends StObject
+  object ManagedPolicy {
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSAccountActivityAccess")
+    @js.native
     val AWSAccountActivityAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSAccountActivityAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSAccountUsageReportAccess")
+    @js.native
     val AWSAccountUsageReportAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSAccountUsageReportAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSAgentlessDiscoveryService")
+    @js.native
     val AWSAgentlessDiscoveryService: arnColonawsColoniamColonColonawsColonpolicySlashAWSAgentlessDiscoveryService = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSApplicationDiscoveryAgentAccess")
+    @js.native
     val AWSApplicationDiscoveryAgentAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSApplicationDiscoveryAgentAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSApplicationDiscoveryServiceFullAccess")
+    @js.native
     val AWSApplicationDiscoveryServiceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSApplicationDiscoveryServiceFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSBatchFullAccess")
+    @js.native
     val AWSBatchFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSBatchFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSBatchServiceRole")
+    @js.native
     val AWSBatchServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSBatchServiceRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCertificateManagerFullAccess")
+    @js.native
     val AWSCertificateManagerFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCertificateManagerFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCertificateManagerReadOnly")
+    @js.native
     val AWSCertificateManagerReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSCertificateManagerReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCloudFormationReadOnlyAccess")
+    @js.native
     val AWSCloudFormationReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudFormationReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCloudHSMFullAccess")
+    @js.native
     val AWSCloudHSMFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudHSMFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCloudHSMReadOnlyAccess")
+    @js.native
     val AWSCloudHSMReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudHSMReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCloudHSMRole")
+    @js.native
     val AWSCloudHSMRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSCloudHSMRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCloudTrailFullAccess")
+    @js.native
     val AWSCloudTrailFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudTrailFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCloudTrailReadOnlyAccess")
+    @js.native
     val AWSCloudTrailReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCloudTrailReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeBuildAdminAccess")
+    @js.native
     val AWSCodeBuildAdminAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeBuildAdminAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeBuildDeveloperAccess")
+    @js.native
     val AWSCodeBuildDeveloperAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeBuildDeveloperAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeBuildReadOnlyAccess")
+    @js.native
     val AWSCodeBuildReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeBuildReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeCommitFullAccess")
+    @js.native
     val AWSCodeCommitFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeCommitFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeCommitPowerUser")
+    @js.native
     val AWSCodeCommitPowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeCommitPowerUser = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeCommitReadOnly")
+    @js.native
     val AWSCodeCommitReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeCommitReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeDeployDeployerAccess")
+    @js.native
     val AWSCodeDeployDeployerAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployDeployerAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeDeployFullAccess")
+    @js.native
     val AWSCodeDeployFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeDeployReadOnlyAccess")
+    @js.native
     val AWSCodeDeployReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeDeployRole")
+    @js.native
     val AWSCodeDeployRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSCodeDeployRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeDeployRoleForECS")
+    @js.native
     val AWSCodeDeployRoleForECS: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeDeployRoleForECS = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodePipelineApproverAccess")
+    @js.native
     val AWSCodePipelineApproverAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineApproverAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodePipelineCustomActionAccess")
+    @js.native
     val AWSCodePipelineCustomActionAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineCustomActionAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodePipelineFullAccess")
+    @js.native
     val AWSCodePipelineFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodePipelineReadOnlyAccess")
+    @js.native
     val AWSCodePipelineReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodePipelineReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeStarFullAccess")
+    @js.native
     val AWSCodeStarFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSCodeStarFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSCodeStarServiceRole")
+    @js.native
     val AWSCodeStarServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSCodeStarServiceRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSConfigRole")
+    @js.native
     val AWSConfigRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSConfigRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSConfigRulesExecutionRole")
+    @js.native
     val AWSConfigRulesExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSConfigRulesExecutionRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSConfigUserAccess")
+    @js.native
     val AWSConfigUserAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSConfigUserAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSConnector")
+    @js.native
     val AWSConnector: arnColonawsColoniamColonColonawsColonpolicySlashAWSConnector = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDataPipeline_FullAccess")
+    @js.native
+    val AWSDataPipelineFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_FullAccess = js.native
+    
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDataPipeline_PowerUser")
+    @js.native
+    val AWSDataPipelinePowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_PowerUser = js.native
+    
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDataPipelineRole")
+    @js.native
     val AWSDataPipelineRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSDataPipelineRole` = js.native
     
-    val AWSDataPipeline_FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_FullAccess = js.native
-    
-    val AWSDataPipeline_PowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSDataPipeline_PowerUser = js.native
-    
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDeviceFarmFullAccess")
+    @js.native
     val AWSDeviceFarmFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDeviceFarmFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDirectConnectFullAccess")
+    @js.native
     val AWSDirectConnectFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectConnectFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDirectConnectReadOnlyAccess")
+    @js.native
     val AWSDirectConnectReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectConnectReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDirectoryServiceFullAccess")
+    @js.native
     val AWSDirectoryServiceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectoryServiceFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSDirectoryServiceReadOnlyAccess")
+    @js.native
     val AWSDirectoryServiceReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSDirectoryServiceReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstakWorkerTier")
+    @js.native
     val AWSElasticBeanstakWorkerTier: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkWorkerTier = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkCustomPlatformforEC2Role")
+    @js.native
     val AWSElasticBeanstalkCustomPlatformforEC2Role: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkCustomPlatformforEC2Role = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkEnhancedHealth")
+    @js.native
     val AWSElasticBeanstalkEnhancedHealth: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSElasticBeanstalkEnhancedHealth` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkFullAccess")
+    @js.native
     val AWSElasticBeanstalkFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkMulticontainerDocker")
+    @js.native
     val AWSElasticBeanstalkMulticontainerDocker: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkMulticontainerDocker = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkReadOnlyAccess")
+    @js.native
     val AWSElasticBeanstalkReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkService")
+    @js.native
     val AWSElasticBeanstalkService: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSElasticBeanstalkService` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSElasticBeanstalkWebTier")
+    @js.native
     val AWSElasticBeanstalkWebTier: arnColonawsColoniamColonColonawsColonpolicySlashAWSElasticBeanstalkWebTier = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSGreengrassFullccess")
+    @js.native
     val AWSGreengrassFullccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSGreengrassFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSGreengrassResourceAccessRolePolicy")
+    @js.native
     val AWSGreengrassResourceAccessRolePolicy: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSGreengrassResourceAccessRolePolicy` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSHealthFullAccess")
+    @js.native
     val AWSHealthFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSHealthFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSImportExportFullAccess")
+    @js.native
     val AWSImportExportFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSImportExportFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSImportExportReadOnlyAccess")
+    @js.native
     val AWSImportExportReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSImportExportReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSIoTConfigAccess")
+    @js.native
     val AWSIoTConfigAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTConfigAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSIoTConfigReadOnlyAccess")
+    @js.native
     val AWSIoTConfigReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTConfigReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSIoTDataAccess")
+    @js.native
     val AWSIoTDataAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTDataAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSIoTFullAccess")
+    @js.native
     val AWSIoTFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSIoTFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSIoTLogging")
+    @js.native
     val AWSIoTLogging: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSIoTLogging` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSIoTRuleActions")
+    @js.native
     val AWSIoTRuleActions: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSIoTRuleActions` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSKeyManagementServicePowerUser")
+    @js.native
     val AWSKeyManagementServicePowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAWSKeyManagementServicePowerUser = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaBasicExecutionRole")
+    @js.native
     val AWSLambdaBasicExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaBasicExecutionRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaDynamoDBExecutionRole")
+    @js.native
     val AWSLambdaDynamoDBExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaDynamoDBExecutionRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaENIManagementAccess")
+    @js.native
     val AWSLambdaENIManagementAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaENIManagementAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaExecute")
+    @js.native
     val AWSLambdaExecute: arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaExecute = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaFullAccess")
+    @js.native
     val AWSLambdaFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaInvocationDynamoDB")
+    @js.native
     val AWSLambdaInvocationDynamoDB: `arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaInvocation-DynamoDB` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaKinesisExecutionRole")
+    @js.native
     val AWSLambdaKinesisExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaKinesisExecutionRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaReadOnlyAccess")
+    @js.native
     val AWSLambdaReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSLambdaReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaRole")
+    @js.native
     val AWSLambdaRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaSQSQueueExecutionRole")
+    @js.native
     val AWSLambdaSQSQueueExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaSQSQueueExecutionRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSLambdaVPCAccessExecutionRole")
+    @js.native
     val AWSLambdaVPCAccessExecutionRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSLambdaVPCAccessExecutionRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMarketplaceFullAccess")
+    @js.native
     val AWSMarketplaceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMarketplaceGetEntitlements")
+    @js.native
     val AWSMarketplaceGetEntitlements: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceGetEntitlements = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMarketplaceManageSubscriptions")
+    @js.native
     val AWSMarketplaceManageSubscriptions: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceManageSubscriptions = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMarketplaceMeteringFullAccess")
+    @js.native
     val AWSMarketplaceMeteringFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceMeteringFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMarketplaceReadonly")
+    @js.native
     val AWSMarketplaceReadonly: `arnColonawsColoniamColonColonawsColonpolicySlashAWSMarketplaceRead-only` = js.native
     
-    val AWSMobileHub_FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_FullAccess = js.native
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMobileHub_FullAccess")
+    @js.native
+    val AWSMobileHubFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_FullAccess = js.native
     
-    val AWSMobileHub_ReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_ReadOnly = js.native
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMobileHub_ReadOnly")
+    @js.native
+    val AWSMobileHubReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAWSMobileHub_ReadOnly = js.native
     
-    val AWSMobileHub_ServiceUseOnly: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSMobileHub_ServiceUseOnly` = js.native
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSMobileHub_ServiceUseOnly")
+    @js.native
+    val AWSMobileHubServiceUseOnly: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSMobileHub_ServiceUseOnly` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksCMInstanceProfileRole")
+    @js.native
     val AWSOpsWorksCMInstanceProfileRole: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksCMInstanceProfileRole = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksCMServiceRole")
+    @js.native
     val AWSOpsWorksCMServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSOpsWorksCMServiceRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksCloudWatchLogs")
+    @js.native
     val AWSOpsWorksCloudWatchLogs: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksCloudWatchLogs = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksFullAccess")
+    @js.native
     val AWSOpsWorksFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksInstanceRegistration")
+    @js.native
     val AWSOpsWorksInstanceRegistration: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksInstanceRegistration = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksRegisterCLI")
+    @js.native
     val AWSOpsWorksRegisterCLI: arnColonawsColoniamColonColonawsColonpolicySlashAWSOpsWorksRegisterCLI = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSOpsWorksRole")
+    @js.native
     val AWSOpsWorksRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSOpsWorksRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSQuickSightDescribeRD")
+    @js.native
     val AWSQuickSightDescribeRD: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuickSightDescribeRDS` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSQuickSightDescribeRedshift")
+    @js.native
     val AWSQuickSightDescribeRedshift: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuickSightDescribeRedshift` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSQuickSightListIAM")
+    @js.native
     val AWSQuickSightListIAM: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuickSightListIAM` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSQuicksightAthenaAccess")
+    @js.native
     val AWSQuicksightAthenaAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAWSQuicksightAthenaAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSStepFunctionsConsoleFullAccess")
+    @js.native
     val AWSStepFunctionsConsoleFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStepFunctionsConsoleFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSStepFunctionsFullAccess")
+    @js.native
     val AWSStepFunctionsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStepFunctionsFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSStepFunctionsReadOnlyAccess")
+    @js.native
     val AWSStepFunctionsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStepFunctionsReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSStorageGatewayFullAccess")
+    @js.native
     val AWSStorageGatewayFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStorageGatewayFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSStorageGatewayReadOnlyAccess")
+    @js.native
     val AWSStorageGatewayReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSStorageGatewayReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSSupportAccess")
+    @js.native
     val AWSSupportAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSSupportAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSWAFFullAccess")
+    @js.native
     val AWSWAFFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSWAFFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSWAFReadOnlyAccess")
+    @js.native
     val AWSWAFReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSWAFReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSXRayDaemonWriteAccess")
+    @js.native
     val AWSXRayDaemonWriteAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXRayDaemonWriteAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSXrayFullAccess")
+    @js.native
     val AWSXrayFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXrayFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSXrayReadOnlyAccess")
+    @js.native
     val AWSXrayReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXrayReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AWSXrayWriteOnlyAccess")
+    @js.native
     val AWSXrayWriteOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAWSXrayWriteOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AdministratorAccess")
+    @js.native
     val AdministratorAccess: arnColonawsColoniamColonColonawsColonpolicySlashAdministratorAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAPIGatewayAdministrator")
+    @js.native
     val AmazonAPIGatewayAdministrator: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAPIGatewayAdministrator = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAPIGatewayInvokeFullAccess")
+    @js.native
     val AmazonAPIGatewayInvokeFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAPIGatewayInvokeFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAPIGatewayPushToCloudWatchLogs")
+    @js.native
     val AmazonAPIGatewayPushToCloudWatchLogs: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonAPIGatewayPushToCloudWatchLogs` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAppStreamFullAccess")
+    @js.native
     val AmazonAppStreamFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAppStreamFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAppStreamReadOnlyAccess")
+    @js.native
     val AmazonAppStreamReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAppStreamReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAppStreamServiceAccess")
+    @js.native
     val AmazonAppStreamServiceAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonAppStreamServiceAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonAthenaFullAccess")
+    @js.native
     val AmazonAthenaFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonAthenaFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonCloudDirectoryFullAccess")
+    @js.native
     val AmazonCloudDirectoryFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCloudDirectoryFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonCloudDirectoryReadOnlyAccess")
+    @js.native
     val AmazonCloudDirectoryReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCloudDirectoryReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonCognitoDeveloperAuthenticatedIdentities")
+    @js.native
     val AmazonCognitoDeveloperAuthenticatedIdentities: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCognitoDeveloperAuthenticatedIdentities = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonCognitoPowerUser")
+    @js.native
     val AmazonCognitoPowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCognitoPowerUser = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonCognitoReadOnly")
+    @js.native
     val AmazonCognitoReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonCognitoReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDMSCloudWatchLogsRole")
+    @js.native
     val AmazonDMSCloudWatchLogsRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonDMSCloudWatchLogsRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDMSRedshiftS3Role")
+    @js.native
     val AmazonDMSRedshiftS3Role: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonDMSRedshiftS3Role` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDMSVPCManagementRole")
+    @js.native
     val AmazonDMSVPCManagementRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonDMSVPCManagementRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDRSVPCManagement")
+    @js.native
     val AmazonDRSVPCManagement: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDRSVPCManagement = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDynamoDBFullAccess")
+    @js.native
     val AmazonDynamoDBFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDynamoDBFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDynamoDBFullAccesswithDataPipeline")
+    @js.native
     val AmazonDynamoDBFullAccesswithDataPipeline: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDynamoDBFullAccesswithDataPipeline = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonDynamoDBReadOnlyAccess")
+    @js.native
     val AmazonDynamoDBReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonDynamoDBReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerRegistryFullAccess")
+    @js.native
     val AmazonEC2ContainerRegistryFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerRegistryFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerRegistryPowerUser")
+    @js.native
     val AmazonEC2ContainerRegistryPowerUser: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerRegistryPowerUser = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerRegistryReadOnly")
+    @js.native
     val AmazonEC2ContainerRegistryReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerRegistryReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerServiceAutoscaleRole")
+    @js.native
     val AmazonEC2ContainerServiceAutoscaleRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2ContainerServiceAutoscaleRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerServiceFullAccess")
+    @js.native
     val AmazonEC2ContainerServiceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ContainerServiceFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerServiceRole")
+    @js.native
     val AmazonEC2ContainerServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2ContainerServiceRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ContainerServiceforEC2Role")
+    @js.native
     val AmazonEC2ContainerServiceforEC2Role: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2ContainerServiceforEC2Role` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2FullAccess")
+    @js.native
     val AmazonEC2FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2FullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ReadOnlyAccess")
+    @js.native
     val AmazonEC2ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2ReportsAccess")
+    @js.native
     val AmazonEC2ReportsAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonEC2ReportsAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2RoleforAWSCodeDeploy")
+    @js.native
     val AmazonEC2RoleforAWSCodeDeploy: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2RoleforAWSCodeDeploy` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2RoleforDataPipelineRole")
+    @js.native
     val AmazonEC2RoleforDataPipelineRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2RoleforDataPipelineRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2RoleforSSM")
+    @js.native
     val AmazonEC2RoleforSSM: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2RoleforSSM` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2SpotFleetAutoscaleRole")
+    @js.native
     val AmazonEC2SpotFleetAutoscaleRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2SpotFleetAutoscaleRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2SpotFleetRole")
+    @js.native
     val AmazonEC2SpotFleetRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2SpotFleetRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonEC2SpotFleetTaggingRole")
+    @js.native
     val AmazonEC2SpotFleetTaggingRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonEC2SpotFleetTaggingRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonESFullAccess")
+    @js.native
     val AmazonESFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonESFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonESReadOnlyAccess")
+    @js.native
     val AmazonESReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonESReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElastiCacheFullAccess")
+    @js.native
     val AmazonElastiCacheFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElastiCacheFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElastiCacheReadOnlyAccess")
+    @js.native
     val AmazonElastiCacheReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElastiCacheReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticFileSystemFullAccess")
+    @js.native
     val AmazonElasticFileSystemFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticFileSystemFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticFileSystemReadOnlyAccess")
+    @js.native
     val AmazonElasticFileSystemReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticFileSystemReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticMapReduceFullAccess")
+    @js.native
     val AmazonElasticMapReduceFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticMapReduceFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticMapReduceReadOnlyAccess")
+    @js.native
     val AmazonElasticMapReduceReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticMapReduceReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticMapReduceRole")
+    @js.native
     val AmazonElasticMapReduceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticMapReduceRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticMapReduceforAutoScalingRole")
+    @js.native
     val AmazonElasticMapReduceforAutoScalingRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticMapReduceforAutoScalingRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticMapReduceforEC2Role")
+    @js.native
     val AmazonElasticMapReduceforEC2Role: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticMapReduceforEC2Role` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticTranscoderFullAccess")
+    @js.native
     val AmazonElasticTranscoderFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticTranscoderFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticTranscoderJobsSubmitter")
+    @js.native
     val AmazonElasticTranscoderJobsSubmitter: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticTranscoderJobsSubmitter = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticTranscoderReadOnlyAccess")
+    @js.native
     val AmazonElasticTranscoderReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonElasticTranscoderReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonElasticTranscoderRole")
+    @js.native
     val AmazonElasticTranscoderRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonElasticTranscoderRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonGlacierFullAccess")
+    @js.native
     val AmazonGlacierFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonGlacierFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonGlacierReadOnlyAccess")
+    @js.native
     val AmazonGlacierReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonGlacierReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonInspectorFullAccess")
+    @js.native
     val AmazonInspectorFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonInspectorFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonInspectorReadOnlyAccess")
+    @js.native
     val AmazonInspectorReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonInspectorReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonKinesisAnalyticsFullAccess")
+    @js.native
     val AmazonKinesisAnalyticsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisAnalyticsFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonKinesisAnalyticsReadOnly")
+    @js.native
     val AmazonKinesisAnalyticsReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisAnalyticsReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonKinesisFirehoseFullAccess")
+    @js.native
     val AmazonKinesisFirehoseFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisFirehoseFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonKinesisFirehoseReadOnlyAccess")
+    @js.native
     val AmazonKinesisFirehoseReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisFirehoseReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonKinesisFullAccess")
+    @js.native
     val AmazonKinesisFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonKinesisReadOnlyAccess")
+    @js.native
     val AmazonKinesisReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonKinesisReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonLexFullAccess")
+    @js.native
     val AmazonLexFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonLexFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonLexReadOnly")
+    @js.native
     val AmazonLexReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonLexReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonLexRunBotsOnly")
+    @js.native
     val AmazonLexRunBotsOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonLexRunBotsOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningBatchPredictionsAccess")
+    @js.native
     val AmazonMachineLearningBatchPredictionsAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningBatchPredictionsAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningCreateOnlyAccess")
+    @js.native
     val AmazonMachineLearningCreateOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningCreateOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningFullAccess")
+    @js.native
     val AmazonMachineLearningFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningManageRealTimeEndpointOnlyAccess")
+    @js.native
     val AmazonMachineLearningManageRealTimeEndpointOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningManageRealTimeEndpointOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningReadOnlyAccess")
+    @js.native
     val AmazonMachineLearningReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningRealTimePredictionOnlyAccess")
+    @js.native
     val AmazonMachineLearningRealTimePredictionOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMachineLearningRealTimePredictionOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMachineLearningRoleforRedshiftDataSource")
+    @js.native
     val AmazonMachineLearningRoleforRedshiftDataSource: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonMachineLearningRoleforRedshiftDataSource` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMechanicalTurkFullAccess")
+    @js.native
     val AmazonMechanicalTurkFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMechanicalTurkFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMechanicalTurkReadOnly")
+    @js.native
     val AmazonMechanicalTurkReadOnly: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMechanicalTurkReadOnly = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMobileAnalyticsFinancialReportAccess")
+    @js.native
     val AmazonMobileAnalyticsFinancialReportAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsFinancialReportAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMobileAnalyticsFullAccess")
+    @js.native
     val AmazonMobileAnalyticsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMobileAnalyticsNonfinancialReportAccess")
+    @js.native
     val AmazonMobileAnalyticsNonfinancialReportAccess: `arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsNon-financialReportAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonMobileAnalyticsWriteOnlyAccess")
+    @js.native
     val AmazonMobileAnalyticsWriteOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonMobileAnalyticsWriteOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonPollyFullAccess")
+    @js.native
     val AmazonPollyFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonPollyFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonPollyReadOnlyAccess")
+    @js.native
     val AmazonPollyReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonPollyReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRDSDataFullAccess")
+    @js.native
     val AmazonRDSDataFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRDSDataFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRDSDirectoryServiceAccess")
+    @js.native
     val AmazonRDSDirectoryServiceAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonRDSDirectoryServiceAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRDSEnhancedMonitoringRole")
+    @js.native
     val AmazonRDSEnhancedMonitoringRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonRDSEnhancedMonitoringRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRDSFullAccess")
+    @js.native
     val AmazonRDSFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRDSFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRDSReadOnlyAccess")
+    @js.native
     val AmazonRDSReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRDSReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRedshiftFullAccess")
+    @js.native
     val AmazonRedshiftFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRedshiftFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRedshiftReadOnlyAccess")
+    @js.native
     val AmazonRedshiftReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRedshiftReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRekognitionFullAccess")
+    @js.native
     val AmazonRekognitionFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRekognitionFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRekognitionReadOnlyAccess")
+    @js.native
     val AmazonRekognitionReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRekognitionReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRoute53DomainsFullAccess")
+    @js.native
     val AmazonRoute53DomainsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53DomainsFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRoute53DomainsReadOnlyAccess")
+    @js.native
     val AmazonRoute53DomainsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53DomainsReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRoute53FullAccess")
+    @js.native
     val AmazonRoute53FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53FullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonRoute53ReadOnlyAccess")
+    @js.native
     val AmazonRoute53ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonRoute53ReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonS3FullAccess")
+    @js.native
     val AmazonS3FullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonS3FullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonS3ReadOnlyAccess")
+    @js.native
     val AmazonS3ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonS3ReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSESFullAccess")
+    @js.native
     val AmazonSESFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSESFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSESReadOnlyAccess")
+    @js.native
     val AmazonSESReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSESReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSNSFullAccess")
+    @js.native
     val AmazonSNSFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSNSFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSNSReadOnlyAccess")
+    @js.native
     val AmazonSNSReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSNSReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSNSRole")
+    @js.native
     val AmazonSNSRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonSNSRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSQSFullAccess")
+    @js.native
     val AmazonSQSFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSQSFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSQSReadOnlyAccess")
+    @js.native
     val AmazonSQSReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSQSReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMAutomationApproverAccess")
+    @js.native
     val AmazonSSMAutomationApproverAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMAutomationApproverAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMAutomationRole")
+    @js.native
     val AmazonSSMAutomationRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonSSMAutomationRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMDirectoryServiceAccess")
+    @js.native
     val AmazonSSMDirectoryServiceAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMDirectoryServiceAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMFullAccess")
+    @js.native
     val AmazonSSMFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMMaintenanceWindowRole")
+    @js.native
     val AmazonSSMMaintenanceWindowRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAmazonSSMMaintenanceWindowRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMManagedInstanceCore")
+    @js.native
     val AmazonSSMManagedInstanceCore: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMManagedInstanceCore = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMPatchAssociation")
+    @js.native
     val AmazonSSMPatchAssociation: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMPatchAssociation = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonSSMReadOnlyAccess")
+    @js.native
     val AmazonSSMReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonSSMReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonVPCFullAccess")
+    @js.native
     val AmazonVPCFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonVPCFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonVPCReadOnlyAccess")
+    @js.native
     val AmazonVPCReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonVPCReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonWorkMailFullAccess")
+    @js.native
     val AmazonWorkMailFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkMailFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonWorkMailReadOnlyAccess")
+    @js.native
     val AmazonWorkMailReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkMailReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonWorkSpacesAdmin")
+    @js.native
     val AmazonWorkSpacesAdmin: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkSpacesAdmin = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonWorkSpacesApplicationManagerAdminAccess")
+    @js.native
     val AmazonWorkSpacesApplicationManagerAdminAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonWorkSpacesApplicationManagerAdminAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonZocaloFullAccess")
+    @js.native
     val AmazonZocaloFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonZocaloFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AmazonZocaloReadOnlyAccess")
+    @js.native
     val AmazonZocaloReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAmazonZocaloReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ApplicationAutoScalingForAmazonAppStreamAccess")
+    @js.native
     val ApplicationAutoScalingForAmazonAppStreamAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashApplicationAutoScalingForAmazonAppStreamAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AutoScalingConsoleFullAccess")
+    @js.native
     val AutoScalingConsoleFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingConsoleFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AutoScalingConsoleReadOnlyAccess")
+    @js.native
     val AutoScalingConsoleReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingConsoleReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AutoScalingFullAccess")
+    @js.native
     val AutoScalingFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AutoScalingNotificationAccessRole")
+    @js.native
     val AutoScalingNotificationAccessRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashAutoScalingNotificationAccessRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.AutoScalingReadOnlyAccess")
+    @js.native
     val AutoScalingReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashAutoScalingReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.Billing")
+    @js.native
     val Billing: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashBilling` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudFrontFullAccess")
+    @js.native
     val CloudFrontFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudFrontFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudFrontReadOnlyAccess")
+    @js.native
     val CloudFrontReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudFrontReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudSearchFullAccess")
+    @js.native
     val CloudSearchFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudSearchFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudSearchReadOnlyAccess")
+    @js.native
     val CloudSearchReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudSearchReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchActionsEC2Access")
+    @js.native
     val CloudWatchActionsEC2Access: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchActionsEC2Access = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchEventsBuiltInTargetExecutionAccess")
+    @js.native
     val CloudWatchEventsBuiltInTargetExecutionAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashCloudWatchEventsBuiltInTargetExecutionAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchEventsFullAccess")
+    @js.native
     val CloudWatchEventsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchEventsFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchEventsInvocationAccess")
+    @js.native
     val CloudWatchEventsInvocationAccess: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashCloudWatchEventsInvocationAccess` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchEventsReadOnlyAccess")
+    @js.native
     val CloudWatchEventsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchEventsReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchFullAccess")
+    @js.native
     val CloudWatchFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchLogsFullAccess")
+    @js.native
     val CloudWatchLogsFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchLogsFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchLogsReadOnlyAccess")
+    @js.native
     val CloudWatchLogsReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchLogsReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.CloudWatchReadOnlyAccess")
+    @js.native
     val CloudWatchReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashCloudWatchReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.DataScientist")
+    @js.native
     val DataScientist: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashDataScientist` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.DatabaseAdministrator")
+    @js.native
     val DatabaseAdministrator: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashDatabaseAdministrator` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.IAMFullAccess")
+    @js.native
     val IAMFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashIAMFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.IAMReadOnlyAccess")
+    @js.native
     val IAMReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashIAMReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.IAMSelfManageServiceSpecificCredentials")
+    @js.native
     val IAMSelfManageServiceSpecificCredentials: arnColonawsColoniamColonColonawsColonpolicySlashIAMSelfManageServiceSpecificCredentials = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.IAMUserChangePassword")
+    @js.native
     val IAMUserChangePassword: arnColonawsColoniamColonColonawsColonpolicySlashIAMUserChangePassword = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.IAMUserSSHKeys")
+    @js.native
     val IAMUserSSHKeys: arnColonawsColoniamColonColonawsColonpolicySlashIAMUserSSHKeys = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.NetworkAdministrator")
+    @js.native
     val NetworkAdministrator: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashNetworkAdministrator` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.PowerUserAccess")
+    @js.native
     val PowerUserAccess: arnColonawsColoniamColonColonawsColonpolicySlashPowerUserAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.RDSCloudHsmAuthorizationRole")
+    @js.native
     val RDSCloudHsmAuthorizationRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashRDSCloudHsmAuthorizationRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ReadOnlyAccess")
+    @js.native
     val ReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ResourceGroupsandTagEditorFullAccess")
+    @js.native
     val ResourceGroupsandTagEditorFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashResourceGroupsandTagEditorFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ResourceGroupsandTagEditorReadOnlyAccess")
+    @js.native
     val ResourceGroupsandTagEditorReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashResourceGroupsandTagEditorReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.SecurityAudit")
+    @js.native
     val SecurityAudit: arnColonawsColoniamColonColonawsColonpolicySlashSecurityAudit = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ServerMigrationConnector")
+    @js.native
     val ServerMigrationConnector: arnColonawsColoniamColonColonawsColonpolicySlashServerMigrationConnector = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ServerMigrationServiceRole")
+    @js.native
     val ServerMigrationServiceRole: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashServerMigrationServiceRole` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ServiceCatalogAdminFullAccess")
+    @js.native
     val ServiceCatalogAdminFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogAdminFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ServiceCatalogAdminReadOnlyAccess")
+    @js.native
     val ServiceCatalogAdminReadOnlyAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogAdminReadOnlyAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ServiceCatalogEndUserAccess")
+    @js.native
     val ServiceCatalogEndUserAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ServiceCatalogEndUserFullAccess")
+    @js.native
     val ServiceCatalogEndUserFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashServiceCatalogEndUserFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.SimpleWorkflowFullAccess")
+    @js.native
     val SimpleWorkflowFullAccess: arnColonawsColoniamColonColonawsColonpolicySlashSimpleWorkflowFullAccess = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.SupportUser")
+    @js.native
     val SupportUser: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashSupportUser` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.SystemAdministrator")
+    @js.native
     val SystemAdministrator: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashSystemAdministrator` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.VMImportExportRoleForAWSConnector")
+    @js.native
     val VMImportExportRoleForAWSConnector: `arnColonawsColoniamColonColonawsColonpolicySlashservice-roleSlashVMImportExportRoleForAWSConnector` = js.native
     
+    @JSImport("@pulumi/aws/types/enums/iam", "ManagedPolicy.ViewOnlyAccess")
+    @js.native
     val ViewOnlyAccess: `arnColonawsColoniamColonColonawsColonpolicySlashjob-functionSlashViewOnlyAccess` = js.native
   }
 }

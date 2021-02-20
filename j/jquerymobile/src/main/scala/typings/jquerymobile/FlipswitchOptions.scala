@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlipswitchOptions extends js.Object {
+trait FlipswitchOptions extends StObject {
   
   var corners: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object FlipswitchOptions {
   }
   
   @scala.inline
-  implicit class FlipswitchOptionsOps[Self <: FlipswitchOptions] (val x: Self) extends AnyVal {
+  implicit class FlipswitchOptionsMutableBuilder[Self <: FlipswitchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorners(value: Boolean): Self = this.set("corners", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteCorners: Self = this.set("corners", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaults(value: Boolean): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setEnhanced(value: Boolean): Self = StObject.set(x, "enhanced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setEnhancedUndefined: Self = StObject.set(x, "enhanced", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhanced(value: Boolean): Self = this.set("enhanced", value.asInstanceOf[js.Any])
+    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
     @scala.inline
-    def deleteEnhanced: Self = this.set("enhanced", js.undefined)
+    def setOffText(value: String): Self = StObject.set(x, "offText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMini(value: Boolean): Self = this.set("mini", value.asInstanceOf[js.Any])
+    def setOffTextUndefined: Self = StObject.set(x, "offText", js.undefined)
     
     @scala.inline
-    def deleteMini: Self = this.set("mini", js.undefined)
+    def setOnText(value: String): Self = StObject.set(x, "onText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffText(value: String): Self = this.set("offText", value.asInstanceOf[js.Any])
+    def setOnTextUndefined: Self = StObject.set(x, "onText", js.undefined)
     
     @scala.inline
-    def deleteOffText: Self = this.set("offText", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnText(value: String): Self = this.set("onText", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteOnText: Self = this.set("onText", js.undefined)
+    def setWrapperClass(value: String): Self = StObject.set(x, "wrapperClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setWrapperClass(value: String): Self = this.set("wrapperClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperClass: Self = this.set("wrapperClass", js.undefined)
+    def setWrapperClassUndefined: Self = StObject.set(x, "wrapperClass", js.undefined)
   }
 }

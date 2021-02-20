@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientDfareporting.anon.OauthtokenPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConversionsResource extends js.Object {
+trait ConversionsResource extends StObject {
   
   def batchinsert(request: Callback, body: ConversionsBatchInsertRequest): Request[ConversionsBatchInsertResponse] = js.native
   /** Inserts conversions. */

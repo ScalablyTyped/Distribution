@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UIStatus extends js.Object
+sealed trait UIStatus extends StObject
 /** Indicates the status of the file picker UI. */
 @JSGlobal("Windows.Storage.Provider.UIStatus")
 @js.native
-object UIStatus extends js.Object {
+object UIStatus extends StObject {
   
   /** The file picker is currently showing UI and all */
   @js.native

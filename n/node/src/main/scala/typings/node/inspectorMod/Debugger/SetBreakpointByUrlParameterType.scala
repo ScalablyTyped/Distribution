@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetBreakpointByUrlParameterType extends js.Object {
+trait SetBreakpointByUrlParameterType extends StObject {
   
   /**
     * Offset in the line to set breakpoint at.
@@ -46,51 +47,39 @@ object SetBreakpointByUrlParameterType {
   }
   
   @scala.inline
-  implicit class SetBreakpointByUrlParameterTypeOps[Self <: SetBreakpointByUrlParameterType] (val x: Self) extends AnyVal {
+  implicit class SetBreakpointByUrlParameterTypeMutableBuilder[Self <: SetBreakpointByUrlParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def setColumnNumber(value: Double): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnNumber: Self = this.set("columnNumber", js.undefined)
+    def setScriptHash(value: String): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setScriptHashUndefined: Self = StObject.set(x, "scriptHash", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptHash(value: String): Self = this.set("scriptHash", value.asInstanceOf[js.Any])
+    def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScriptHash: Self = this.set("scriptHash", js.undefined)
+    def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUrlRegex(value: String): Self = this.set("urlRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRegex: Self = this.set("urlRegex", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

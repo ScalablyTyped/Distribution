@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAuthConfigInfo extends js.Object {
+trait UserAuthConfigInfo extends StObject {
   
   /**
     * The type of authentication that the proxy uses for connections from the proxy to the underlying database.
@@ -41,48 +42,36 @@ object UserAuthConfigInfo {
   }
   
   @scala.inline
-  implicit class UserAuthConfigInfoOps[Self <: UserAuthConfigInfo] (val x: Self) extends AnyVal {
+  implicit class UserAuthConfigInfoMutableBuilder[Self <: UserAuthConfigInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthScheme(value: AuthScheme): Self = StObject.set(x, "AuthScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthSchemeUndefined: Self = StObject.set(x, "AuthScheme", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthScheme(value: AuthScheme): Self = this.set("AuthScheme", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteAuthScheme: Self = this.set("AuthScheme", js.undefined)
+    def setIAMAuth(value: IAMAuthMode): Self = StObject.set(x, "IAMAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIAMAuthUndefined: Self = StObject.set(x, "IAMAuth", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSecretArn(value: String): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIAMAuth(value: IAMAuthMode): Self = this.set("IAMAuth", value.asInstanceOf[js.Any])
+    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
     @scala.inline
-    def deleteIAMAuth: Self = this.set("IAMAuth", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretArn(value: String): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

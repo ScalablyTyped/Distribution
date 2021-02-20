@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpHeader extends js.Object {
+trait HttpHeader extends StObject {
   
   /**
     * The header name
@@ -26,30 +27,18 @@ object HttpHeader {
   }
   
   @scala.inline
-  implicit class HttpHeaderOps[Self <: HttpHeader] (val x: Self) extends AnyVal {
+  implicit class HttpHeaderMutableBuilder[Self <: HttpHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderName(value: StringType): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderValue(value: StringType): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderName(value: StringType): Self = this.set("headerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderName: Self = this.set("headerName", js.undefined)
-    
-    @scala.inline
-    def setHeaderValue(value: StringType): Self = this.set("headerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderValue: Self = this.set("headerValue", js.undefined)
+    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
 import typings.winrtUwp.Windows.Storage.Pickers.Provider.FileOpenPickerUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event that fires when the user tries to pick files or folders that are provided by the app. */
 @js.native
-trait FileOpenPickerActivatedEventArgs extends js.Object {
+trait FileOpenPickerActivatedEventArgs extends StObject {
   
   /** The package family name of the app that launched your app. */
   var callerPackageFamilyName: String = js.native
@@ -39,33 +40,21 @@ object FileOpenPickerActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class FileOpenPickerActivatedEventArgsOps[Self <: FileOpenPickerActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class FileOpenPickerActivatedEventArgsMutableBuilder[Self <: FileOpenPickerActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileOpenPickerUI(value: FileOpenPickerUI): Self = StObject.set(x, "fileOpenPickerUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerPackageFamilyName(value: String): Self = this.set("callerPackageFamilyName", value.asInstanceOf[js.Any])
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileOpenPickerUI(value: FileOpenPickerUI): Self = this.set("fileOpenPickerUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

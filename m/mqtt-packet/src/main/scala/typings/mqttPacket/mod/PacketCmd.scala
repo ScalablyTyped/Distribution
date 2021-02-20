@@ -1,5 +1,6 @@
 package typings.mqttPacket.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mqttPacket.mqttPacketStrings.unsuback
   - typings.mqttPacket.mqttPacketStrings.unsubscribe
 */
-trait PacketCmd extends js.Object
+trait PacketCmd extends StObject
 object PacketCmd {
   
   @scala.inline

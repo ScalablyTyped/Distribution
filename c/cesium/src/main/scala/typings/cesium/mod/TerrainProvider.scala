@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.Uint16Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "TerrainProvider")
 @js.native
-abstract class TerrainProvider () extends js.Object {
+abstract class TerrainProvider () extends StObject {
   
   var availability: TileAvailability = js.native
   
@@ -32,14 +33,26 @@ abstract class TerrainProvider () extends js.Object {
   
   var tilingScheme: TilingScheme = js.native
 }
-/* static members */
-@JSImport("cesium", "TerrainProvider")
-@js.native
-object TerrainProvider extends js.Object {
+object TerrainProvider {
   
+  @JSImport("cesium", "TerrainProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "TerrainProvider.getEstimatedLevelZeroGeometricErrorForAHeightmap")
+  @js.native
   def getEstimatedLevelZeroGeometricErrorForAHeightmap(ellipsoid: Ellipsoid, tileImageWidth: Double, numberOfTilesAtLevelZero: Double): Double = js.native
   
+  /* static member */
+  @JSImport("cesium", "TerrainProvider.getRegularGridIndices")
+  @js.native
   def getRegularGridIndices(width: Double, height: Double): Uint16Array = js.native
   
-  var heightmapTerrainQuality: Double = js.native
+  /* static member */
+  @JSImport("cesium", "TerrainProvider.heightmapTerrainQuality")
+  @js.native
+  def heightmapTerrainQuality: Double = js.native
+  @scala.inline
+  def heightmapTerrainQuality_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heightmapTerrainQuality")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Placement Tag Data
   */
 @js.native
-trait SchemaTagData extends js.Object {
+trait SchemaTagData extends StObject {
   
   /**
     * Ad associated with this placement tag. Applicable only when format is
@@ -46,48 +47,36 @@ object SchemaTagData {
   }
   
   @scala.inline
-  implicit class SchemaTagDataOps[Self <: SchemaTagData] (val x: Self) extends AnyVal {
+  implicit class SchemaTagDataMutableBuilder[Self <: SchemaTagData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickTag(value: String): Self = StObject.set(x, "clickTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdId(value: String): Self = this.set("adId", value.asInstanceOf[js.Any])
+    def setClickTagUndefined: Self = StObject.set(x, "clickTag", js.undefined)
     
     @scala.inline
-    def deleteAdId: Self = this.set("adId", js.undefined)
+    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickTag(value: String): Self = this.set("clickTag", value.asInstanceOf[js.Any])
+    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     @scala.inline
-    def deleteClickTag: Self = this.set("clickTag", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    def setImpressionTag(value: String): Self = StObject.set(x, "impressionTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setImpressionTag(value: String): Self = this.set("impressionTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressionTag: Self = this.set("impressionTag", js.undefined)
+    def setImpressionTagUndefined: Self = StObject.set(x, "impressionTag", js.undefined)
   }
 }

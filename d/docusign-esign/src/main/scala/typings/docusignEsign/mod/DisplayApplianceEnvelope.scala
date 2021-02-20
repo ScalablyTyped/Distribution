@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayApplianceEnvelope extends js.Object {
+trait DisplayApplianceEnvelope extends StObject {
   
   var addDemoStamp: js.UndefOr[Boolean] = js.native
   
@@ -55,115 +56,103 @@ object DisplayApplianceEnvelope {
   }
   
   @scala.inline
-  implicit class DisplayApplianceEnvelopeOps[Self <: DisplayApplianceEnvelope] (val x: Self) extends AnyVal {
+  implicit class DisplayApplianceEnvelopeMutableBuilder[Self <: DisplayApplianceEnvelope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDemoStamp(value: Boolean): Self = StObject.set(x, "addDemoStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddDemoStampUndefined: Self = StObject.set(x, "addDemoStamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowMultipleAttachments(value: Boolean): Self = StObject.set(x, "allowMultipleAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDemoStamp(value: Boolean): Self = this.set("addDemoStamp", value.asInstanceOf[js.Any])
+    def setAllowMultipleAttachmentsUndefined: Self = StObject.set(x, "allowMultipleAttachments", js.undefined)
     
     @scala.inline
-    def deleteAddDemoStamp: Self = this.set("addDemoStamp", js.undefined)
+    def setBurnDefaultTabData(value: Boolean): Self = StObject.set(x, "burnDefaultTabData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultipleAttachments(value: Boolean): Self = this.set("allowMultipleAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowMultipleAttachments: Self = this.set("allowMultipleAttachments", js.undefined)
-    
-    @scala.inline
-    def setBurnDefaultTabData(value: Boolean): Self = this.set("burnDefaultTabData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBurnDefaultTabData: Self = this.set("burnDefaultTabData", js.undefined)
+    def setBurnDefaultTabDataUndefined: Self = StObject.set(x, "burnDefaultTabData", js.undefined)
     
     @scala.inline
     def setConvertPdfFields(
       value: /*Boolean that specifies whether to enable PDF form fields to
       get converted to DocuSign secure fields when the document is added or
       uploaded to an envelope.*/ Boolean
-    ): Self = this.set("convertPdfFields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "convertPdfFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConvertPdfFields: Self = this.set("convertPdfFields", js.undefined)
+    def setConvertPdfFieldsUndefined: Self = StObject.set(x, "convertPdfFields", js.undefined)
     
     @scala.inline
-    def setEnvelopeId(value: /*The envelope's GUID. \n\nExample: `93be49ab-afa0-4adf-933c-f752070d71ec` */ String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setEnvelopeId(value: /*The envelope's GUID. \n\nExample: `93be49ab-afa0-4adf-933c-f752070d71ec` */ String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def setEnvelopeType(value: String): Self = this.set("envelopeType", value.asInstanceOf[js.Any])
+    def setEnvelopeType(value: String): Self = StObject.set(x, "envelopeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeType: Self = this.set("envelopeType", js.undefined)
+    def setEnvelopeTypeUndefined: Self = StObject.set(x, "envelopeType", js.undefined)
     
     @scala.inline
-    def setIncludeSigsBeforeComplete(value: Boolean): Self = this.set("includeSigsBeforeComplete", value.asInstanceOf[js.Any])
+    def setIncludeSigsBeforeComplete(value: Boolean): Self = StObject.set(x, "includeSigsBeforeComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeSigsBeforeComplete: Self = this.set("includeSigsBeforeComplete", js.undefined)
+    def setIncludeSigsBeforeCompleteUndefined: Self = StObject.set(x, "includeSigsBeforeComplete", js.undefined)
     
     @scala.inline
-    def setIsConcatMode(value: Boolean): Self = this.set("isConcatMode", value.asInstanceOf[js.Any])
+    def setIsConcatMode(value: Boolean): Self = StObject.set(x, "isConcatMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsConcatMode: Self = this.set("isConcatMode", js.undefined)
+    def setIsConcatModeUndefined: Self = StObject.set(x, "isConcatMode", js.undefined)
     
     @scala.inline
-    def setIsEnvelopeIDStampingEnabled(value: Boolean): Self = this.set("isEnvelopeIDStampingEnabled", value.asInstanceOf[js.Any])
+    def setIsEnvelopeIDStampingEnabled(value: Boolean): Self = StObject.set(x, "isEnvelopeIDStampingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEnvelopeIDStampingEnabled: Self = this.set("isEnvelopeIDStampingEnabled", js.undefined)
+    def setIsEnvelopeIDStampingEnabledUndefined: Self = StObject.set(x, "isEnvelopeIDStampingEnabled", js.undefined)
     
     @scala.inline
-    def setPdfFormConversionFontScale100(value: Boolean): Self = this.set("pdfFormConversionFontScale100", value.asInstanceOf[js.Any])
+    def setPdfFormConversionFontScale100(value: Boolean): Self = StObject.set(x, "pdfFormConversionFontScale100", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePdfFormConversionFontScale100: Self = this.set("pdfFormConversionFontScale100", js.undefined)
+    def setPdfFormConversionFontScale100Undefined: Self = StObject.set(x, "pdfFormConversionFontScale100", js.undefined)
     
     @scala.inline
-    def setShouldFlatten(value: Boolean): Self = this.set("shouldFlatten", value.asInstanceOf[js.Any])
+    def setShouldFlatten(value: Boolean): Self = StObject.set(x, "shouldFlatten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShouldFlatten: Self = this.set("shouldFlatten", js.undefined)
+    def setShouldFlattenUndefined: Self = StObject.set(x, "shouldFlatten", js.undefined)
     
     @scala.inline
-    def setShowEnvelopeChanges(value: Boolean): Self = this.set("showEnvelopeChanges", value.asInstanceOf[js.Any])
+    def setShowEnvelopeChanges(value: Boolean): Self = StObject.set(x, "showEnvelopeChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowEnvelopeChanges: Self = this.set("showEnvelopeChanges", js.undefined)
+    def setShowEnvelopeChangesUndefined: Self = StObject.set(x, "showEnvelopeChanges", js.undefined)
     
     @scala.inline
-    def setSignOnline(value: Boolean): Self = this.set("signOnline", value.asInstanceOf[js.Any])
+    def setSignOnline(value: Boolean): Self = StObject.set(x, "signOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignOnline: Self = this.set("signOnline", js.undefined)
+    def setSignOnlineUndefined: Self = StObject.set(x, "signOnline", js.undefined)
     
     @scala.inline
-    def setStatus(value: /*The status of the item. */ String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: /*The status of the item. */ String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
     def setUserId(
       value: /*The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
       `userId` can represent another user whom the Administrator is accessing. */ String
-    ): Self = this.set("userId", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

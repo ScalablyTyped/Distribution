@@ -1,6 +1,7 @@
 package typings.extjs.Ext.form.field
 
 import typings.extjs.Ext.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,90 +58,78 @@ object ISpinner {
   }
   
   @scala.inline
-  implicit class ISpinnerOps[Self <: ISpinner] (val x: Self) extends AnyVal {
+  implicit class ISpinnerMutableBuilder[Self <: ISpinner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyNavEnabled(value: Boolean): Self = StObject.set(x, "keyNavEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyNavEnabledUndefined: Self = StObject.set(x, "keyNavEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMouseWheelEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyNavEnabled(value: Boolean): Self = this.set("keyNavEnabled", value.asInstanceOf[js.Any])
+    def setMouseWheelEnabledUndefined: Self = StObject.set(x, "mouseWheelEnabled", js.undefined)
     
     @scala.inline
-    def deleteKeyNavEnabled: Self = this.set("keyNavEnabled", js.undefined)
+    def setOnSpinDown(value: () => Unit): Self = StObject.set(x, "onSpinDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMouseWheelEnabled(value: Boolean): Self = this.set("mouseWheelEnabled", value.asInstanceOf[js.Any])
+    def setOnSpinDownUndefined: Self = StObject.set(x, "onSpinDown", js.undefined)
     
     @scala.inline
-    def deleteMouseWheelEnabled: Self = this.set("mouseWheelEnabled", js.undefined)
+    def setOnSpinUp(value: () => Unit): Self = StObject.set(x, "onSpinUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSpinDown(value: () => Unit): Self = this.set("onSpinDown", js.Any.fromFunction0(value))
+    def setOnSpinUpUndefined: Self = StObject.set(x, "onSpinUp", js.undefined)
     
     @scala.inline
-    def deleteOnSpinDown: Self = this.set("onSpinDown", js.undefined)
+    def setSetSpinDownEnabled(value: /* enabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSpinUp(value: () => Unit): Self = this.set("onSpinUp", js.Any.fromFunction0(value))
+    def setSetSpinDownEnabledUndefined: Self = StObject.set(x, "setSpinDownEnabled", js.undefined)
     
     @scala.inline
-    def deleteOnSpinUp: Self = this.set("onSpinUp", js.undefined)
+    def setSetSpinUpEnabled(value: /* enabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSpinDownEnabled(value: /* enabled */ js.UndefOr[Boolean] => Unit): Self = this.set("setSpinDownEnabled", js.Any.fromFunction1(value))
+    def setSetSpinUpEnabledUndefined: Self = StObject.set(x, "setSpinUpEnabled", js.undefined)
     
     @scala.inline
-    def deleteSetSpinDownEnabled: Self = this.set("setSpinDownEnabled", js.undefined)
+    def setSpinDown(value: () => Unit): Self = StObject.set(x, "spinDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetSpinUpEnabled(value: /* enabled */ js.UndefOr[Boolean] => Unit): Self = this.set("setSpinUpEnabled", js.Any.fromFunction1(value))
+    def setSpinDownEl(value: IElement): Self = StObject.set(x, "spinDownEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetSpinUpEnabled: Self = this.set("setSpinUpEnabled", js.undefined)
+    def setSpinDownElUndefined: Self = StObject.set(x, "spinDownEl", js.undefined)
     
     @scala.inline
-    def setSpinDown(value: () => Unit): Self = this.set("spinDown", js.Any.fromFunction0(value))
+    def setSpinDownEnabled(value: Boolean): Self = StObject.set(x, "spinDownEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpinDown: Self = this.set("spinDown", js.undefined)
+    def setSpinDownEnabledUndefined: Self = StObject.set(x, "spinDownEnabled", js.undefined)
     
     @scala.inline
-    def setSpinDownEl(value: IElement): Self = this.set("spinDownEl", value.asInstanceOf[js.Any])
+    def setSpinDownUndefined: Self = StObject.set(x, "spinDown", js.undefined)
     
     @scala.inline
-    def deleteSpinDownEl: Self = this.set("spinDownEl", js.undefined)
+    def setSpinUp(value: () => Unit): Self = StObject.set(x, "spinUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpinDownEnabled(value: Boolean): Self = this.set("spinDownEnabled", value.asInstanceOf[js.Any])
+    def setSpinUpEl(value: IElement): Self = StObject.set(x, "spinUpEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpinDownEnabled: Self = this.set("spinDownEnabled", js.undefined)
+    def setSpinUpElUndefined: Self = StObject.set(x, "spinUpEl", js.undefined)
     
     @scala.inline
-    def setSpinUp(value: () => Unit): Self = this.set("spinUp", js.Any.fromFunction0(value))
+    def setSpinUpEnabled(value: Boolean): Self = StObject.set(x, "spinUpEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpinUp: Self = this.set("spinUp", js.undefined)
+    def setSpinUpEnabledUndefined: Self = StObject.set(x, "spinUpEnabled", js.undefined)
     
     @scala.inline
-    def setSpinUpEl(value: IElement): Self = this.set("spinUpEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpinUpEl: Self = this.set("spinUpEl", js.undefined)
-    
-    @scala.inline
-    def setSpinUpEnabled(value: Boolean): Self = this.set("spinUpEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpinUpEnabled: Self = this.set("spinUpEnabled", js.undefined)
+    def setSpinUpUndefined: Self = StObject.set(x, "spinUp", js.undefined)
   }
 }

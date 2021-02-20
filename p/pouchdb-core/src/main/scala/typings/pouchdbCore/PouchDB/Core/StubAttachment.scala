@@ -1,6 +1,7 @@
 package typings.pouchdbCore.PouchDB.Core
 
 import typings.pouchdbCore.pouchdbCoreBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,30 +41,18 @@ object StubAttachment {
   }
   
   @scala.inline
-  implicit class StubAttachmentOps[Self <: StubAttachment] (val x: Self) extends AnyVal {
+  implicit class StubAttachmentMutableBuilder[Self <: StubAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDigest(value: String): Self = this.set("digest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStub(value: `true`): Self = this.set("stub", value.asInstanceOf[js.Any])
+    def setStub(value: `true`): Self = StObject.set(x, "stub", value.asInstanceOf[js.Any])
   }
 }

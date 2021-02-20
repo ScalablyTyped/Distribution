@@ -1,14 +1,14 @@
 package typings.semanticUiReact
 
-import typings.semanticUiReact.inputInputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semantic-ui-react/dist/commonjs/elements/Input", JSImport.Namespace)
-@js.native
-object inputMod extends js.Object {
+object inputMod {
   
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Input", JSImport.Default)
   @js.native
-  class default () extends Input
+  class default ()
+    extends typings.semanticUiReact.inputInputMod.default
 }

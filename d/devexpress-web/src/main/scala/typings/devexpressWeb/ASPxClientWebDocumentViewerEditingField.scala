@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxClientWebDocumentViewerEditingField extends js.Object {
+trait ASPxClientWebDocumentViewerEditingField extends StObject {
   
   var editValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any = js.native
   
@@ -35,40 +36,28 @@ object ASPxClientWebDocumentViewerEditingField {
   }
   
   @scala.inline
-  implicit class ASPxClientWebDocumentViewerEditingFieldOps[Self <: ASPxClientWebDocumentViewerEditingField] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ASPxClientWebDocumentViewerEditingFieldMutableBuilder[Self <: ASPxClientWebDocumentViewerEditingField] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setEditValue(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
-    ): Self = this.set("editValue", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "editValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorName(value: () => String): Self = this.set("editorName", js.Any.fromFunction0(value))
+    def setEditorName(value: () => String): Self = StObject.set(x, "editorName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGroupID(value: () => String): Self = this.set("groupID", js.Any.fromFunction0(value))
+    def setGroupID(value: () => String): Self = StObject.set(x, "groupID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: () => String): Self = this.set("id", js.Any.fromFunction0(value))
+    def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPageIndex(value: () => Double): Self = this.set("pageIndex", js.Any.fromFunction0(value))
+    def setPageIndex(value: () => Double): Self = StObject.set(x, "pageIndex", js.Any.fromFunction0(value))
     
     @scala.inline
     def setReadOnly(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

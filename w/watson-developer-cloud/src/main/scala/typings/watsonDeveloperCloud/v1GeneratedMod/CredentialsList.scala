@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** CredentialsList. */
 @js.native
-trait CredentialsList extends js.Object {
+trait CredentialsList extends StObject {
   
   /** An array of credential definitions that were created for this instance. */
   var credentials: js.UndefOr[js.Array[Credentials]] = js.native
@@ -20,27 +21,15 @@ object CredentialsList {
   }
   
   @scala.inline
-  implicit class CredentialsListOps[Self <: CredentialsList] (val x: Self) extends AnyVal {
+  implicit class CredentialsListMutableBuilder[Self <: CredentialsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: js.Array[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredentialsVarargs(value: Credentials*): Self = this.set("credentials", js.Array(value :_*))
-    
-    @scala.inline
-    def setCredentials(value: js.Array[Credentials]): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setCredentialsVarargs(value: Credentials*): Self = StObject.set(x, "credentials", js.Array(value :_*))
   }
 }

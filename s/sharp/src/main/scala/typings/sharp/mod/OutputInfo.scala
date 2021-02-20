@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputInfo extends js.Object {
+trait OutputInfo extends StObject {
   
   var channels: Double = js.native
   
@@ -42,48 +43,36 @@ object OutputInfo {
   }
   
   @scala.inline
-  implicit class OutputInfoOps[Self <: OutputInfo] (val x: Self) extends AnyVal {
+  implicit class OutputInfoMutableBuilder[Self <: OutputInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCropOffsetLeft(value: Double): Self = StObject.set(x, "cropOffsetLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCropOffsetLeftUndefined: Self = StObject.set(x, "cropOffsetLeft", js.undefined)
     
     @scala.inline
-    def setChannels(value: Double): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setCropOffsetTop(value: Double): Self = StObject.set(x, "cropOffsetTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setCropOffsetTopUndefined: Self = StObject.set(x, "cropOffsetTop", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremultiplied(value: Boolean): Self = this.set("premultiplied", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setPremultiplied(value: Boolean): Self = StObject.set(x, "premultiplied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropOffsetLeft(value: Double): Self = this.set("cropOffsetLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCropOffsetLeft: Self = this.set("cropOffsetLeft", js.undefined)
-    
-    @scala.inline
-    def setCropOffsetTop(value: Double): Self = this.set("cropOffsetTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCropOffsetTop: Self = this.set("cropOffsetTop", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

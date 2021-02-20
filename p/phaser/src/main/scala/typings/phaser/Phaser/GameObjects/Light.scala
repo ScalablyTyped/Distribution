@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.GameObjects
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * They can also simply be used to represent a point light for your own purposes.
   */
 @js.native
-trait Light extends js.Object {
+trait Light extends StObject {
   
   /**
     * The blue color of the light. A value between 0 and 1.
@@ -133,63 +134,51 @@ object Light {
   }
   
   @scala.inline
-  implicit class LightOps[Self <: Light] (val x: Self) extends AnyVal {
+  implicit class LightMutableBuilder[Self <: Light] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setG(value: Double): Self = this.set("g", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntensity(value: Double): Self = this.set("intensity", value.asInstanceOf[js.Any])
+    def setScrollFactorX(value: Double): Self = StObject.set(x, "scrollFactorX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setScrollFactorY(value: Double): Self = StObject.set(x, "scrollFactorY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSet(value: (Double, Double, Double, Double, Double, Double, Double) => Light): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setScrollFactorX(value: Double): Self = this.set("scrollFactorX", value.asInstanceOf[js.Any])
+    def setSetColor(value: Double => Light): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollFactorY(value: Double): Self = this.set("scrollFactorY", value.asInstanceOf[js.Any])
+    def setSetIntensity(value: Double => Light): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (Double, Double, Double, Double, Double, Double, Double) => Light): Self = this.set("set", js.Any.fromFunction7(value))
+    def setSetPosition(value: (Double, Double) => Light): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetColor(value: Double => Light): Self = this.set("setColor", js.Any.fromFunction1(value))
+    def setSetRadius(value: Double => Light): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIntensity(value: Double => Light): Self = this.set("setIntensity", js.Any.fromFunction1(value))
+    def setSetScrollFactor(value: (Double, Double) => Light): Self = StObject.set(x, "setScrollFactor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetPosition(value: (Double, Double) => Light): Self = this.set("setPosition", js.Any.fromFunction2(value))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRadius(value: Double => Light): Self = this.set("setRadius", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetScrollFactor(value: (Double, Double) => Light): Self = this.set("setScrollFactor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

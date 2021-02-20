@@ -1,5 +1,6 @@
 package typings.compressedExtensions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("compressed-extensions", JSImport.Namespace)
 @js.native
-object compressedExtensionsRequire extends js.Object
+object compressedExtensionsRequire extends StObject

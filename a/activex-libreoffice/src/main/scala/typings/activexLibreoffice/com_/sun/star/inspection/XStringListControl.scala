@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object XStringListControl {
   }
   
   @scala.inline
-  implicit class XStringListControlOps[Self <: XStringListControl] (val x: Self) extends AnyVal {
+  implicit class XStringListControlMutableBuilder[Self <: XStringListControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendListEntry(value: String => Unit): Self = StObject.set(x, "appendListEntry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearList(value: () => Unit): Self = StObject.set(x, "clearList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetListEntries(value: () => SafeArray[String]): Self = StObject.set(x, "getListEntries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setListEntries(value: SafeArray[String]): Self = this.set("ListEntries", value.asInstanceOf[js.Any])
+    def setListEntries(value: SafeArray[String]): Self = StObject.set(x, "ListEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendListEntry(value: String => Unit): Self = this.set("appendListEntry", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setClearList(value: () => Unit): Self = this.set("clearList", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetListEntries(value: () => SafeArray[String]): Self = this.set("getListEntries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrependListEntry(value: String => Unit): Self = this.set("prependListEntry", js.Any.fromFunction1(value))
+    def setPrependListEntry(value: String => Unit): Self = StObject.set(x, "prependListEntry", js.Any.fromFunction1(value))
   }
 }

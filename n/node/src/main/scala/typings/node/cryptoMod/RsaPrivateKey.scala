@@ -1,12 +1,13 @@
 package typings.node.cryptoMod
 
 import typings.node.NodeJS.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RsaPrivateKey extends js.Object {
+trait RsaPrivateKey extends StObject {
   
   var key: KeyLike = js.native
   
@@ -30,45 +31,33 @@ object RsaPrivateKey {
   }
   
   @scala.inline
-  implicit class RsaPrivateKeyOps[Self <: RsaPrivateKey] (val x: Self) extends AnyVal {
+  implicit class RsaPrivateKeyMutableBuilder[Self <: RsaPrivateKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: KeyLike): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOaepHash(value: String): Self = StObject.set(x, "oaepHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOaepHashUndefined: Self = StObject.set(x, "oaepHash", js.undefined)
     
     @scala.inline
-    def setKey(value: KeyLike): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOaepLabel(value: TypedArray): Self = StObject.set(x, "oaepLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOaepHash(value: String): Self = this.set("oaepHash", value.asInstanceOf[js.Any])
+    def setOaepLabelUndefined: Self = StObject.set(x, "oaepLabel", js.undefined)
     
     @scala.inline
-    def deleteOaepHash: Self = this.set("oaepHash", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOaepLabel(value: TypedArray): Self = this.set("oaepLabel", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOaepLabel: Self = this.set("oaepLabel", js.undefined)
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
   }
 }

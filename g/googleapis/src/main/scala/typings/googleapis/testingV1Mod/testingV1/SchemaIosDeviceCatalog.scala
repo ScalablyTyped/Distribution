@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The currently supported iOS devices.
   */
 @js.native
-trait SchemaIosDeviceCatalog extends js.Object {
+trait SchemaIosDeviceCatalog extends StObject {
   
   /**
     * The set of supported iOS device models.
@@ -39,51 +40,39 @@ object SchemaIosDeviceCatalog {
   }
   
   @scala.inline
-  implicit class SchemaIosDeviceCatalogOps[Self <: SchemaIosDeviceCatalog] (val x: Self) extends AnyVal {
+  implicit class SchemaIosDeviceCatalogMutableBuilder[Self <: SchemaIosDeviceCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModels(value: js.Array[SchemaIosModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelsVarargs(value: SchemaIosModel*): Self = StObject.set(x, "models", js.Array(value :_*))
     
     @scala.inline
-    def setModelsVarargs(value: SchemaIosModel*): Self = this.set("models", js.Array(value :_*))
+    def setRuntimeConfiguration(value: SchemaIosRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModels(value: js.Array[SchemaIosModel]): Self = this.set("models", value.asInstanceOf[js.Any])
+    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
     
     @scala.inline
-    def deleteModels: Self = this.set("models", js.undefined)
+    def setVersions(value: js.Array[SchemaIosVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeConfiguration(value: SchemaIosRuntimeConfiguration): Self = this.set("runtimeConfiguration", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def deleteRuntimeConfiguration: Self = this.set("runtimeConfiguration", js.undefined)
+    def setVersionsVarargs(value: SchemaIosVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
     @scala.inline
-    def setVersionsVarargs(value: SchemaIosVersion*): Self = this.set("versions", js.Array(value :_*))
+    def setXcodeVersions(value: js.Array[SchemaXcodeVersion]): Self = StObject.set(x, "xcodeVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersions(value: js.Array[SchemaIosVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setXcodeVersionsUndefined: Self = StObject.set(x, "xcodeVersions", js.undefined)
     
     @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
-    
-    @scala.inline
-    def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = this.set("xcodeVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setXcodeVersions(value: js.Array[SchemaXcodeVersion]): Self = this.set("xcodeVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXcodeVersions: Self = this.set("xcodeVersions", js.undefined)
+    def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value :_*))
   }
 }

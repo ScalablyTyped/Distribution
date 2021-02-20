@@ -2,6 +2,7 @@ package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.reactBootstrapTableStrings.bottom_
 import typings.reactBootstrapTable.reactBootstrapTableStrings.top_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTable.reactBootstrapTableStrings.bottom_
   - typings.reactBootstrapTable.reactBootstrapTableStrings.both
 */
-trait PaginationPostion extends js.Object
+trait PaginationPostion extends StObject
 object PaginationPostion {
   
   @scala.inline

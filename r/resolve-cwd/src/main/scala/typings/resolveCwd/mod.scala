@@ -1,12 +1,11 @@
 package typings.resolveCwd
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("resolve-cwd", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from the current working directory.
@@ -24,6 +23,8 @@ object mod extends js.Object {
   	//=> '/Users/sindresorhus/unicorn/foo.js'
   	```
   	*/
+  @JSImport("resolve-cwd", JSImport.Namespace)
+  @js.native
   def apply(moduleId: String): String = js.native
   
   /**
@@ -41,5 +42,7 @@ object mod extends js.Object {
   	//=> '/Users/sindresorhus/unicorn/foo.js'
   	```
   	*/
+  @JSImport("resolve-cwd", "silent")
+  @js.native
   def silent(moduleId: String): js.UndefOr[String] = js.native
 }

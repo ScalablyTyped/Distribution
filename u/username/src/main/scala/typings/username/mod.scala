@@ -1,12 +1,11 @@
 package typings.username
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("username", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the username of the current user.
@@ -21,6 +20,8 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("username", JSImport.Namespace)
+  @js.native
   def apply(): js.Promise[js.UndefOr[String]] = js.native
   
   /**
@@ -34,5 +35,7 @@ object mod extends js.Object {
   	//=> 'sindresorhus'
   	```
   	*/
+  @JSImport("username", "sync")
+  @js.native
   def sync(): js.UndefOr[String] = js.native
 }

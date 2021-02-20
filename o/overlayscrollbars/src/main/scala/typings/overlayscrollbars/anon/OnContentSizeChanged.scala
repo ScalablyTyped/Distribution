@@ -7,12 +7,13 @@ import typings.overlayscrollbars.mod.OverflowChangedCallback
 import typings.overlayscrollbars.mod.ScrollEventCallback
 import typings.overlayscrollbars.mod.SizeChangedCallback
 import typings.overlayscrollbars.mod.UpdatedCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnContentSizeChanged extends js.Object {
+trait OnContentSizeChanged extends StObject {
   
   var onContentSizeChanged: js.UndefOr[SizeChangedCallback | Null] = js.native
   
@@ -47,126 +48,114 @@ object OnContentSizeChanged {
   }
   
   @scala.inline
-  implicit class OnContentSizeChangedOps[Self <: OnContentSizeChanged] (val x: Self) extends AnyVal {
+  implicit class OnContentSizeChangedMutableBuilder[Self <: OnContentSizeChanged] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnContentSizeChanged(value: SizeChangedCallback): Self = StObject.set(x, "onContentSizeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnContentSizeChangedNull: Self = StObject.set(x, "onContentSizeChanged", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnContentSizeChangedUndefined: Self = StObject.set(x, "onContentSizeChanged", js.undefined)
     
     @scala.inline
-    def setOnContentSizeChanged(value: SizeChangedCallback): Self = this.set("onContentSizeChanged", value.asInstanceOf[js.Any])
+    def setOnDestroyed(value: BasicEventCallback): Self = StObject.set(x, "onDestroyed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnContentSizeChanged: Self = this.set("onContentSizeChanged", js.undefined)
+    def setOnDestroyedNull: Self = StObject.set(x, "onDestroyed", null)
     
     @scala.inline
-    def setOnContentSizeChangedNull: Self = this.set("onContentSizeChanged", null)
+    def setOnDestroyedUndefined: Self = StObject.set(x, "onDestroyed", js.undefined)
     
     @scala.inline
-    def setOnDestroyed(value: BasicEventCallback): Self = this.set("onDestroyed", value.asInstanceOf[js.Any])
+    def setOnDirectionChanged(value: DirectionChangedCallback): Self = StObject.set(x, "onDirectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDestroyed: Self = this.set("onDestroyed", js.undefined)
+    def setOnDirectionChangedNull: Self = StObject.set(x, "onDirectionChanged", null)
     
     @scala.inline
-    def setOnDestroyedNull: Self = this.set("onDestroyed", null)
+    def setOnDirectionChangedUndefined: Self = StObject.set(x, "onDirectionChanged", js.undefined)
     
     @scala.inline
-    def setOnDirectionChanged(value: DirectionChangedCallback): Self = this.set("onDirectionChanged", value.asInstanceOf[js.Any])
+    def setOnHostSizeChanged(value: SizeChangedCallback): Self = StObject.set(x, "onHostSizeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnDirectionChanged: Self = this.set("onDirectionChanged", js.undefined)
+    def setOnHostSizeChangedNull: Self = StObject.set(x, "onHostSizeChanged", null)
     
     @scala.inline
-    def setOnDirectionChangedNull: Self = this.set("onDirectionChanged", null)
+    def setOnHostSizeChangedUndefined: Self = StObject.set(x, "onHostSizeChanged", js.undefined)
     
     @scala.inline
-    def setOnHostSizeChanged(value: SizeChangedCallback): Self = this.set("onHostSizeChanged", value.asInstanceOf[js.Any])
+    def setOnInitializationWithdrawn(value: BasicEventCallback): Self = StObject.set(x, "onInitializationWithdrawn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnHostSizeChanged: Self = this.set("onHostSizeChanged", js.undefined)
+    def setOnInitializationWithdrawnNull: Self = StObject.set(x, "onInitializationWithdrawn", null)
     
     @scala.inline
-    def setOnHostSizeChangedNull: Self = this.set("onHostSizeChanged", null)
+    def setOnInitializationWithdrawnUndefined: Self = StObject.set(x, "onInitializationWithdrawn", js.undefined)
     
     @scala.inline
-    def setOnInitializationWithdrawn(value: BasicEventCallback): Self = this.set("onInitializationWithdrawn", value.asInstanceOf[js.Any])
+    def setOnInitialized(value: BasicEventCallback): Self = StObject.set(x, "onInitialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnInitializationWithdrawn: Self = this.set("onInitializationWithdrawn", js.undefined)
+    def setOnInitializedNull: Self = StObject.set(x, "onInitialized", null)
     
     @scala.inline
-    def setOnInitializationWithdrawnNull: Self = this.set("onInitializationWithdrawn", null)
+    def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
     
     @scala.inline
-    def setOnInitialized(value: BasicEventCallback): Self = this.set("onInitialized", value.asInstanceOf[js.Any])
+    def setOnOverflowAmountChanged(value: OverflowAmountChangedCallback): Self = StObject.set(x, "onOverflowAmountChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnInitialized: Self = this.set("onInitialized", js.undefined)
+    def setOnOverflowAmountChangedNull: Self = StObject.set(x, "onOverflowAmountChanged", null)
     
     @scala.inline
-    def setOnInitializedNull: Self = this.set("onInitialized", null)
+    def setOnOverflowAmountChangedUndefined: Self = StObject.set(x, "onOverflowAmountChanged", js.undefined)
     
     @scala.inline
-    def setOnOverflowAmountChanged(value: OverflowAmountChangedCallback): Self = this.set("onOverflowAmountChanged", value.asInstanceOf[js.Any])
+    def setOnOverflowChanged(value: OverflowChangedCallback): Self = StObject.set(x, "onOverflowChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOverflowAmountChanged: Self = this.set("onOverflowAmountChanged", js.undefined)
+    def setOnOverflowChangedNull: Self = StObject.set(x, "onOverflowChanged", null)
     
     @scala.inline
-    def setOnOverflowAmountChangedNull: Self = this.set("onOverflowAmountChanged", null)
+    def setOnOverflowChangedUndefined: Self = StObject.set(x, "onOverflowChanged", js.undefined)
     
     @scala.inline
-    def setOnOverflowChanged(value: OverflowChangedCallback): Self = this.set("onOverflowChanged", value.asInstanceOf[js.Any])
+    def setOnScroll(value: ScrollEventCallback): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOverflowChanged: Self = this.set("onOverflowChanged", js.undefined)
+    def setOnScrollNull: Self = StObject.set(x, "onScroll", null)
     
     @scala.inline
-    def setOnOverflowChangedNull: Self = this.set("onOverflowChanged", null)
+    def setOnScrollStart(value: ScrollEventCallback): Self = StObject.set(x, "onScrollStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScroll(value: ScrollEventCallback): Self = this.set("onScroll", value.asInstanceOf[js.Any])
+    def setOnScrollStartNull: Self = StObject.set(x, "onScrollStart", null)
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOnScrollStartUndefined: Self = StObject.set(x, "onScrollStart", js.undefined)
     
     @scala.inline
-    def setOnScrollNull: Self = this.set("onScroll", null)
+    def setOnScrollStop(value: ScrollEventCallback): Self = StObject.set(x, "onScrollStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScrollStart(value: ScrollEventCallback): Self = this.set("onScrollStart", value.asInstanceOf[js.Any])
+    def setOnScrollStopNull: Self = StObject.set(x, "onScrollStop", null)
     
     @scala.inline
-    def deleteOnScrollStart: Self = this.set("onScrollStart", js.undefined)
+    def setOnScrollStopUndefined: Self = StObject.set(x, "onScrollStop", js.undefined)
     
     @scala.inline
-    def setOnScrollStartNull: Self = this.set("onScrollStart", null)
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnScrollStop(value: ScrollEventCallback): Self = this.set("onScrollStop", value.asInstanceOf[js.Any])
+    def setOnUpdated(value: UpdatedCallback): Self = StObject.set(x, "onUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnScrollStop: Self = this.set("onScrollStop", js.undefined)
+    def setOnUpdatedNull: Self = StObject.set(x, "onUpdated", null)
     
     @scala.inline
-    def setOnScrollStopNull: Self = this.set("onScrollStop", null)
-    
-    @scala.inline
-    def setOnUpdated(value: UpdatedCallback): Self = this.set("onUpdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnUpdated: Self = this.set("onUpdated", js.undefined)
-    
-    @scala.inline
-    def setOnUpdatedNull: Self = this.set("onUpdated", null)
+    def setOnUpdatedUndefined: Self = StObject.set(x, "onUpdated", js.undefined)
   }
 }

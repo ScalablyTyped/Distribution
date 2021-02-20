@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logging extends js.Object {
+trait Logging extends StObject {
   
   /**
     * The Amazon S3 logging configuration.
@@ -21,24 +22,12 @@ object Logging {
   }
   
   @scala.inline
-  implicit class LoggingOps[Self <: Logging] (val x: Self) extends AnyVal {
+  implicit class LoggingMutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Logs(value: S3Logs): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3Logs(value: S3Logs): Self = this.set("s3Logs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Logs: Self = this.set("s3Logs", js.undefined)
+    def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
   }
 }

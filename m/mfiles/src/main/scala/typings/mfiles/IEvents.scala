@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEvents extends js.Object {
+trait IEvents extends StObject {
   
   // tslint:disable-next-line ban-types
   def Register(eventToListen: Event, eventSink: js.Function): Double = js.native
@@ -22,24 +23,12 @@ object IEvents {
   }
   
   @scala.inline
-  implicit class IEventsOps[Self <: IEvents] (val x: Self) extends AnyVal {
+  implicit class IEventsMutableBuilder[Self <: IEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegister(value: (Event, js.Function) => Double): Self = StObject.set(x, "Register", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegister(value: (Event, js.Function) => Double): Self = this.set("Register", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnregister(value: Double => Unit): Self = this.set("Unregister", js.Any.fromFunction1(value))
+    def setUnregister(value: Double => Unit): Self = StObject.set(x, "Unregister", js.Any.fromFunction1(value))
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesEncryptInputMod.EncryptInput
 import typings.awsSdkClientKmsNode.typesEncryptOutputMod.EncryptOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/EncryptCommand", JSImport.Namespace)
-@js.native
-object encryptCommandMod extends js.Object {
+object encryptCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/EncryptCommand", "EncryptCommand")
   @js.native
   class EncryptCommand protected () extends Command[InputTypesUnion, EncryptInput, OutputTypesUnion, EncryptOutput, KMSResolvedConfiguration] {
     def this(input: EncryptInput) = this()

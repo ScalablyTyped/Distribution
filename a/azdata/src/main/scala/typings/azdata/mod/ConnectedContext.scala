@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectedContext extends js.Object {
+trait ConnectedContext extends StObject {
   
   /**
     * The connection information for the selected object.
@@ -23,21 +24,9 @@ object ConnectedContext {
   }
   
   @scala.inline
-  implicit class ConnectedContextOps[Self <: ConnectedContext] (val x: Self) extends AnyVal {
+  implicit class ConnectedContextMutableBuilder[Self <: ConnectedContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionProfile(value: IConnectionProfile): Self = this.set("connectionProfile", value.asInstanceOf[js.Any])
+    def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
   }
 }

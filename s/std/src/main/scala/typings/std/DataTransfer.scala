@@ -9,13 +9,14 @@ import typings.std.stdStrings.linkMove
 import typings.std.stdStrings.move
 import typings.std.stdStrings.none
 import typings.std.stdStrings.uninitialized
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to hold the data that is being dragged during a drag and drop operation. It may hold one or more data items, each of one or more data types. For more information about drag and drop, see HTML Drag and Drop API. */
 @js.native
-trait DataTransfer extends js.Object {
+trait DataTransfer extends StObject {
   
   /**
     * Removes the data of the specified formats. Removes all data if the argument is omitted.

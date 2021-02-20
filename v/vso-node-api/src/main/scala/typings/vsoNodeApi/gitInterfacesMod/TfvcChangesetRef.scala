@@ -2,12 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcChangesetRef extends js.Object {
+trait TfvcChangesetRef extends StObject {
   
   /**
     * A collection of REST reference links.
@@ -67,42 +68,30 @@ object TfvcChangesetRef {
   }
   
   @scala.inline
-  implicit class TfvcChangesetRefOps[Self <: TfvcChangesetRef] (val x: Self) extends AnyVal {
+  implicit class TfvcChangesetRefMutableBuilder[Self <: TfvcChangesetRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangesetId(value: Double): Self = StObject.set(x, "changesetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedInBy(value: IdentityRef): Self = StObject.set(x, "checkedInBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: IdentityRef): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesetId(value: Double): Self = this.set("changesetId", value.asInstanceOf[js.Any])
+    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedInBy(value: IdentityRef): Self = this.set("checkedInBy", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommentTruncated(value: Boolean): Self = this.set("commentTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

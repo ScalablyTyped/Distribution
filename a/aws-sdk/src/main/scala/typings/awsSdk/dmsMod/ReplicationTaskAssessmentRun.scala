@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationTaskAssessmentRun extends js.Object {
+trait ReplicationTaskAssessmentRun extends StObject {
   
   /**
     * Indication of the completion progress for the individual assessments specified to run.
@@ -76,90 +77,78 @@ object ReplicationTaskAssessmentRun {
   }
   
   @scala.inline
-  implicit class ReplicationTaskAssessmentRunOps[Self <: ReplicationTaskAssessmentRun] (val x: Self) extends AnyVal {
+  implicit class ReplicationTaskAssessmentRunMutableBuilder[Self <: ReplicationTaskAssessmentRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentProgress(value: ReplicationTaskAssessmentRunProgress): Self = StObject.set(x, "AssessmentProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentProgressUndefined: Self = StObject.set(x, "AssessmentProgress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssessmentRunName(value: String): Self = StObject.set(x, "AssessmentRunName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentProgress(value: ReplicationTaskAssessmentRunProgress): Self = this.set("AssessmentProgress", value.asInstanceOf[js.Any])
+    def setAssessmentRunNameUndefined: Self = StObject.set(x, "AssessmentRunName", js.undefined)
     
     @scala.inline
-    def deleteAssessmentProgress: Self = this.set("AssessmentProgress", js.undefined)
+    def setLastFailureMessage(value: String): Self = StObject.set(x, "LastFailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentRunName(value: String): Self = this.set("AssessmentRunName", value.asInstanceOf[js.Any])
+    def setLastFailureMessageUndefined: Self = StObject.set(x, "LastFailureMessage", js.undefined)
     
     @scala.inline
-    def deleteAssessmentRunName: Self = this.set("AssessmentRunName", js.undefined)
+    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFailureMessage(value: String): Self = this.set("LastFailureMessage", value.asInstanceOf[js.Any])
+    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
     @scala.inline
-    def deleteLastFailureMessage: Self = this.set("LastFailureMessage", js.undefined)
+    def setReplicationTaskAssessmentRunArn(value: String): Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    def setReplicationTaskAssessmentRunArnUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", js.undefined)
     
     @scala.inline
-    def deleteReplicationTaskArn: Self = this.set("ReplicationTaskArn", js.undefined)
+    def setReplicationTaskAssessmentRunCreationDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskAssessmentRunArn(value: String): Self = this.set("ReplicationTaskAssessmentRunArn", value.asInstanceOf[js.Any])
+    def setReplicationTaskAssessmentRunCreationDateUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", js.undefined)
     
     @scala.inline
-    def deleteReplicationTaskAssessmentRunArn: Self = this.set("ReplicationTaskAssessmentRunArn", js.undefined)
+    def setResultEncryptionMode(value: String): Self = StObject.set(x, "ResultEncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskAssessmentRunCreationDate(value: TStamp): Self = this.set("ReplicationTaskAssessmentRunCreationDate", value.asInstanceOf[js.Any])
+    def setResultEncryptionModeUndefined: Self = StObject.set(x, "ResultEncryptionMode", js.undefined)
     
     @scala.inline
-    def deleteReplicationTaskAssessmentRunCreationDate: Self = this.set("ReplicationTaskAssessmentRunCreationDate", js.undefined)
+    def setResultKmsKeyArn(value: String): Self = StObject.set(x, "ResultKmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultEncryptionMode(value: String): Self = this.set("ResultEncryptionMode", value.asInstanceOf[js.Any])
+    def setResultKmsKeyArnUndefined: Self = StObject.set(x, "ResultKmsKeyArn", js.undefined)
     
     @scala.inline
-    def deleteResultEncryptionMode: Self = this.set("ResultEncryptionMode", js.undefined)
+    def setResultLocationBucket(value: String): Self = StObject.set(x, "ResultLocationBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultKmsKeyArn(value: String): Self = this.set("ResultKmsKeyArn", value.asInstanceOf[js.Any])
+    def setResultLocationBucketUndefined: Self = StObject.set(x, "ResultLocationBucket", js.undefined)
     
     @scala.inline
-    def deleteResultKmsKeyArn: Self = this.set("ResultKmsKeyArn", js.undefined)
+    def setResultLocationFolder(value: String): Self = StObject.set(x, "ResultLocationFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultLocationBucket(value: String): Self = this.set("ResultLocationBucket", value.asInstanceOf[js.Any])
+    def setResultLocationFolderUndefined: Self = StObject.set(x, "ResultLocationFolder", js.undefined)
     
     @scala.inline
-    def deleteResultLocationBucket: Self = this.set("ResultLocationBucket", js.undefined)
+    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultLocationFolder(value: String): Self = this.set("ResultLocationFolder", value.asInstanceOf[js.Any])
+    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
     
     @scala.inline
-    def deleteResultLocationFolder: Self = this.set("ResultLocationFolder", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

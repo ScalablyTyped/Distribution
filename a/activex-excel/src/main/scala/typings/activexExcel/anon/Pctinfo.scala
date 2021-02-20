@@ -1,11 +1,12 @@
 package typings.activexExcel.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pctinfo extends js.Object {
+trait Pctinfo extends StObject {
   
   var pctinfo: Double = js.native
 }
@@ -18,21 +19,9 @@ object Pctinfo {
   }
   
   @scala.inline
-  implicit class PctinfoOps[Self <: Pctinfo] (val x: Self) extends AnyVal {
+  implicit class PctinfoMutableBuilder[Self <: Pctinfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPctinfo(value: Double): Self = this.set("pctinfo", value.asInstanceOf[js.Any])
+    def setPctinfo(value: Double): Self = StObject.set(x, "pctinfo", value.asInstanceOf[js.Any])
   }
 }

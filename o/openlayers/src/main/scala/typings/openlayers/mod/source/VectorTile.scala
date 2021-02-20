@@ -1,6 +1,7 @@
 package typings.openlayers.mod.source
 
 import typings.openlayers.mod.olx.source.VectorTileOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

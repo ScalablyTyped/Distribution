@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains types of the recurrence range.
   */
 @js.native
-trait ASPxClientRecurrenceRange extends js.Object {
+trait ASPxClientRecurrenceRange extends StObject {
   
   /**
     * A recurring appointment will end after the date specified by the ASPxClientRecurrenceInfo.SetEnd method.
@@ -34,27 +35,15 @@ object ASPxClientRecurrenceRange {
   }
   
   @scala.inline
-  implicit class ASPxClientRecurrenceRangeOps[Self <: ASPxClientRecurrenceRange] (val x: Self) extends AnyVal {
+  implicit class ASPxClientRecurrenceRangeMutableBuilder[Self <: ASPxClientRecurrenceRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndByDate(value: String): Self = StObject.set(x, "EndByDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoEndDate(value: String): Self = StObject.set(x, "NoEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndByDate(value: String): Self = this.set("EndByDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoEndDate(value: String): Self = this.set("NoEndDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOccurrenceCount(value: String): Self = this.set("OccurrenceCount", value.asInstanceOf[js.Any])
+    def setOccurrenceCount(value: String): Self = StObject.set(x, "OccurrenceCount", value.asInstanceOf[js.Any])
   }
 }

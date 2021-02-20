@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ApplicationDataLocality extends js.Object
+sealed trait ApplicationDataLocality extends StObject
 @JSGlobal("Windows.Storage.ApplicationDataLocality")
 @js.native
-object ApplicationDataLocality extends js.Object {
+object ApplicationDataLocality extends StObject {
   
   @js.native
   sealed trait local extends ApplicationDataLocality

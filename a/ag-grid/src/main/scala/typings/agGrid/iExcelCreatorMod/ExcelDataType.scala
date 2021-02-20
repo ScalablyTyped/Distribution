@@ -1,5 +1,6 @@
 package typings.agGrid.iExcelCreatorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.agGrid.agGridStrings.DateTime
   - typings.agGrid.agGridStrings.Error
 */
-trait ExcelDataType extends js.Object
+trait ExcelDataType extends StObject
 object ExcelDataType {
   
   @scala.inline

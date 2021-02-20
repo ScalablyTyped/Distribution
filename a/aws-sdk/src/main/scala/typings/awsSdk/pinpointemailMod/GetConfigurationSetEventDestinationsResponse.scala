@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConfigurationSetEventDestinationsResponse extends js.Object {
+trait GetConfigurationSetEventDestinationsResponse extends StObject {
   
   /**
     * An array that includes all of the events destinations that have been configured for the configuration set.
@@ -21,27 +22,15 @@ object GetConfigurationSetEventDestinationsResponse {
   }
   
   @scala.inline
-  implicit class GetConfigurationSetEventDestinationsResponseOps[Self <: GetConfigurationSetEventDestinationsResponse] (val x: Self) extends AnyVal {
+  implicit class GetConfigurationSetEventDestinationsResponseMutableBuilder[Self <: GetConfigurationSetEventDestinationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventDestinations(value: EventDestinations): Self = StObject.set(x, "EventDestinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDestinationsUndefined: Self = StObject.set(x, "EventDestinations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventDestinationsVarargs(value: EventDestination*): Self = this.set("EventDestinations", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventDestinations(value: EventDestinations): Self = this.set("EventDestinations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventDestinations: Self = this.set("EventDestinations", js.undefined)
+    def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value :_*))
   }
 }

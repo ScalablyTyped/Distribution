@@ -1,11 +1,12 @@
 package typings.loopback.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends js.Object {
+trait DataSource extends StObject {
   
   var dataSource: String | js.Any = js.native
   
@@ -22,33 +23,21 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: String | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
     @scala.inline
-    def setDataSource(value: String | js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setRelations(value: js.Any): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublic: Self = this.set("public", js.undefined)
-    
-    @scala.inline
-    def setRelations(value: js.Any): Self = this.set("relations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelations: Self = this.set("relations", js.undefined)
+    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
   }
 }

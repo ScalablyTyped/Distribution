@@ -15,39 +15,64 @@ import typings.topojsonSpecification.mod.Polygon
 import typings.topojsonSpecification.mod.Properties
 import typings.topojsonSpecification.mod.Topology
 import typings.topojsonSpecification.mod.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("topojson-client", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("topojson-client", "bbox")
+  @js.native
   def bbox(topology: Topology[Objects[Properties]]): BBox = js.native
   
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: GeometryCollection[P]): FeatureCollection[GeometryObject, P] = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](
     topology: Topology[Objects[Properties]],
     `object`: typings.topojsonSpecification.mod.GeometryObject[P]
   ): (Feature[GeometryObject, P]) | (FeatureCollection[GeometryObject, P]) = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: LineString[P]): Feature[typings.geojson.mod.LineString, P] = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: MultiLineString[P]): Feature[typings.geojson.mod.MultiLineString, P] = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: MultiPoint[P]): Feature[typings.geojson.mod.MultiPoint, P] = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: MultiPolygon[P]): Feature[typings.geojson.mod.MultiPolygon, P] = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: Point[P]): Feature[typings.geojson.mod.Point, P] = js.native
+  @JSImport("topojson-client", "feature")
+  @js.native
   def feature[P](topology: Topology[Objects[Properties]], `object`: Polygon[P]): Feature[typings.geojson.mod.Polygon, P] = js.native
   
+  @JSImport("topojson-client", "merge")
+  @js.native
   def merge(
     topology: Topology[Objects[Properties]],
     objects: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]
   ): typings.geojson.mod.MultiPolygon = js.native
   
+  @JSImport("topojson-client", "mergeArcs")
+  @js.native
   def mergeArcs(
     topology: Topology[Objects[Properties]],
     objects: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]
   ): MultiPolygon[js.Object] = js.native
   
+  @JSImport("topojson-client", "mesh")
+  @js.native
   def mesh(topology: Topology[Objects[Properties]]): typings.geojson.mod.MultiLineString = js.native
+  @JSImport("topojson-client", "mesh")
+  @js.native
   def mesh(
     topology: Topology[Objects[Properties]],
     obj: js.UndefOr[scala.Nothing],
@@ -57,10 +82,14 @@ object mod extends js.Object {
       Boolean
     ]
   ): typings.geojson.mod.MultiLineString = js.native
+  @JSImport("topojson-client", "mesh")
+  @js.native
   def mesh(
     topology: Topology[Objects[Properties]],
     obj: typings.topojsonSpecification.mod.GeometryObject[js.Object]
   ): typings.geojson.mod.MultiLineString = js.native
+  @JSImport("topojson-client", "mesh")
+  @js.native
   def mesh(
     topology: Topology[Objects[Properties]],
     obj: typings.topojsonSpecification.mod.GeometryObject[js.Object],
@@ -71,7 +100,11 @@ object mod extends js.Object {
     ]
   ): typings.geojson.mod.MultiLineString = js.native
   
+  @JSImport("topojson-client", "meshArcs")
+  @js.native
   def meshArcs(topology: Topology[Objects[Properties]]): MultiLineString[js.Object] = js.native
+  @JSImport("topojson-client", "meshArcs")
+  @js.native
   def meshArcs(
     topology: Topology[Objects[Properties]],
     obj: js.UndefOr[scala.Nothing],
@@ -81,10 +114,14 @@ object mod extends js.Object {
       Boolean
     ]
   ): MultiLineString[js.Object] = js.native
+  @JSImport("topojson-client", "meshArcs")
+  @js.native
   def meshArcs(
     topology: Topology[Objects[Properties]],
     obj: typings.topojsonSpecification.mod.GeometryObject[js.Object]
   ): MultiLineString[js.Object] = js.native
+  @JSImport("topojson-client", "meshArcs")
+  @js.native
   def meshArcs(
     topology: Topology[Objects[Properties]],
     obj: typings.topojsonSpecification.mod.GeometryObject[js.Object],
@@ -95,15 +132,29 @@ object mod extends js.Object {
     ]
   ): MultiLineString[js.Object] = js.native
   
+  @JSImport("topojson-client", "neighbors")
+  @js.native
   def neighbors(objects: js.Array[typings.topojsonSpecification.mod.GeometryObject[js.Object]]): js.Array[js.Array[Double]] = js.native
   
+  @JSImport("topojson-client", "quantize")
+  @js.native
   def quantize[T /* <: Objects[js.Object] */](topology: Topology[T], transform: Double): Topology[T] = js.native
+  @JSImport("topojson-client", "quantize")
+  @js.native
   def quantize[T /* <: Objects[js.Object] */](topology: Topology[T], transform: Transform): Topology[T] = js.native
   
+  @JSImport("topojson-client", "transform")
+  @js.native
   def transform(): Transformer = js.native
+  @JSImport("topojson-client", "transform")
+  @js.native
   def transform(transform: Transform): Transformer = js.native
   
+  @JSImport("topojson-client", "untransform")
+  @js.native
   def untransform(): Transformer = js.native
+  @JSImport("topojson-client", "untransform")
+  @js.native
   def untransform(transform: Transform): Transformer = js.native
   
   type Transformer = js.Function2[/* point */ js.Array[Double], /* index */ js.UndefOr[Boolean], js.Array[Double]]

@@ -5,14 +5,14 @@ import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/templates/ResourceTemplates", JSImport.Namespace)
-@js.native
-object resourceTemplatesMod extends js.Object {
+object resourceTemplatesMod {
   
+  @JSImport("gitlab/dist/types/core/templates/ResourceTemplates", "ResourceTemplates")
   @js.native
   class ResourceTemplates protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()

@@ -2,6 +2,7 @@ package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,33 +61,21 @@ object b2PulleyJoint {
   }
   
   @scala.inline
-  implicit class b2PulleyJointOps[Self <: b2PulleyJoint] (val x: Self) extends AnyVal {
+  implicit class b2PulleyJointMutableBuilder[Self <: b2PulleyJoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGroundAnchorA(value: () => b2Vec2): Self = StObject.set(x, "GetGroundAnchorA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGroundAnchorB(value: () => b2Vec2): Self = StObject.set(x, "GetGroundAnchorB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLength1(value: () => Double): Self = StObject.set(x, "GetLength1", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroundAnchorA(value: () => b2Vec2): Self = this.set("GetGroundAnchorA", js.Any.fromFunction0(value))
+    def setGetLength2(value: () => Double): Self = StObject.set(x, "GetLength2", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroundAnchorB(value: () => b2Vec2): Self = this.set("GetGroundAnchorB", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLength1(value: () => Double): Self = this.set("GetLength1", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLength2(value: () => Double): Self = this.set("GetLength2", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRatio(value: () => Double): Self = this.set("GetRatio", js.Any.fromFunction0(value))
+    def setGetRatio(value: () => Double): Self = StObject.set(x, "GetRatio", js.Any.fromFunction0(value))
   }
 }

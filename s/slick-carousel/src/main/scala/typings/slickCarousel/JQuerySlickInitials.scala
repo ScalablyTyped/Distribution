@@ -2,12 +2,13 @@ package typings.slickCarousel
 
 import typings.slickCarousel.anon.CurX
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuerySlickInitials extends js.Object {
+trait JQuerySlickInitials extends StObject {
   
   /**
     * jQuery instance that contains the "dots".
@@ -189,132 +190,120 @@ object JQuerySlickInitials {
   }
   
   @scala.inline
-  implicit class JQuerySlickInitialsOps[Self <: JQuerySlickInitials] (val x: Self) extends AnyVal {
+  implicit class JQuerySlickInitialsMutableBuilder[Self <: JQuerySlickInitials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$dots(value: JQuery): Self = StObject.set(x, "$dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$dotsNull: Self = StObject.set(x, "$dots", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$list(value: Null): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$list(value: Null): Self = this.set("$list", value.asInstanceOf[js.Any])
+    def set$nextArrow(value: JQuery): Self = StObject.set(x, "$nextArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimating(value: Boolean): Self = this.set("animating", value.asInstanceOf[js.Any])
+    def set$nextArrowNull: Self = StObject.set(x, "$nextArrow", null)
     
     @scala.inline
-    def setCurrentDirection(value: Double): Self = this.set("currentDirection", value.asInstanceOf[js.Any])
+    def set$prevArrow(value: JQuery): Self = StObject.set(x, "$prevArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSlide(value: Double): Self = this.set("currentSlide", value.asInstanceOf[js.Any])
+    def set$prevArrowNull: Self = StObject.set(x, "$prevArrow", null)
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def set$slideTrack(value: JQuery): Self = StObject.set(x, "$slideTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    def set$slideTrackNull: Self = StObject.set(x, "$slideTrack", null)
     
     @scala.inline
-    def setLoadIndex(value: Double): Self = this.set("loadIndex", value.asInstanceOf[js.Any])
+    def set$slides(value: JQuery): Self = StObject.set(x, "$slides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrolling(value: Boolean): Self = this.set("scrolling", value.asInstanceOf[js.Any])
+    def set$slidesNull: Self = StObject.set(x, "$slides", null)
     
     @scala.inline
-    def setSlideOffset(value: Double): Self = this.set("slideOffset", value.asInstanceOf[js.Any])
+    def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliding(value: Boolean): Self = this.set("sliding", value.asInstanceOf[js.Any])
+    def setAutoPlayTimer(value: Double): Self = StObject.set(x, "autoPlayTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwiping(value: Boolean): Self = this.set("swiping", value.asInstanceOf[js.Any])
+    def setAutoPlayTimerNull: Self = StObject.set(x, "autoPlayTimer", null)
     
     @scala.inline
-    def setTouchObject(value: CurX): Self = this.set("touchObject", value.asInstanceOf[js.Any])
+    def setCurrentDirection(value: Double): Self = StObject.set(x, "currentDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformsEnabled(value: Boolean): Self = this.set("transformsEnabled", value.asInstanceOf[js.Any])
+    def setCurrentLeft(value: Double): Self = StObject.set(x, "currentLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnslicked(value: Boolean): Self = this.set("unslicked", value.asInstanceOf[js.Any])
+    def setCurrentLeftNull: Self = StObject.set(x, "currentLeft", null)
     
     @scala.inline
-    def set$dots(value: JQuery): Self = this.set("$dots", value.asInstanceOf[js.Any])
+    def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$dotsNull: Self = this.set("$dots", null)
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nextArrow(value: JQuery): Self = this.set("$nextArrow", value.asInstanceOf[js.Any])
+    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nextArrowNull: Self = this.set("$nextArrow", null)
+    def setListHeight(value: Double): Self = StObject.set(x, "listHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$prevArrow(value: JQuery): Self = this.set("$prevArrow", value.asInstanceOf[js.Any])
+    def setListHeightNull: Self = StObject.set(x, "listHeight", null)
     
     @scala.inline
-    def set$prevArrowNull: Self = this.set("$prevArrow", null)
+    def setListWidth(value: Double): Self = StObject.set(x, "listWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$slideTrack(value: JQuery): Self = this.set("$slideTrack", value.asInstanceOf[js.Any])
+    def setListWidthNull: Self = StObject.set(x, "listWidth", null)
     
     @scala.inline
-    def set$slideTrackNull: Self = this.set("$slideTrack", null)
+    def setLoadIndex(value: Double): Self = StObject.set(x, "loadIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$slides(value: JQuery): Self = this.set("$slides", value.asInstanceOf[js.Any])
+    def setScrolling(value: Boolean): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$slidesNull: Self = this.set("$slides", null)
+    def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlayTimer(value: Double): Self = this.set("autoPlayTimer", value.asInstanceOf[js.Any])
+    def setSlideCountNull: Self = StObject.set(x, "slideCount", null)
     
     @scala.inline
-    def setAutoPlayTimerNull: Self = this.set("autoPlayTimer", null)
+    def setSlideOffset(value: Double): Self = StObject.set(x, "slideOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLeft(value: Double): Self = this.set("currentLeft", value.asInstanceOf[js.Any])
+    def setSlideWidth(value: Number): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLeftNull: Self = this.set("currentLeft", null)
+    def setSlideWidthNull: Self = StObject.set(x, "slideWidth", null)
     
     @scala.inline
-    def setListHeight(value: Double): Self = this.set("listHeight", value.asInstanceOf[js.Any])
+    def setSliding(value: Boolean): Self = StObject.set(x, "sliding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListHeightNull: Self = this.set("listHeight", null)
+    def setSwipeLeft(value: Double): Self = StObject.set(x, "swipeLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListWidth(value: Double): Self = this.set("listWidth", value.asInstanceOf[js.Any])
+    def setSwipeLeftNull: Self = StObject.set(x, "swipeLeft", null)
     
     @scala.inline
-    def setListWidthNull: Self = this.set("listWidth", null)
+    def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideCount(value: Double): Self = this.set("slideCount", value.asInstanceOf[js.Any])
+    def setTouchObject(value: CurX): Self = StObject.set(x, "touchObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideCountNull: Self = this.set("slideCount", null)
+    def setTransformsEnabled(value: Boolean): Self = StObject.set(x, "transformsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideWidth(value: Number): Self = this.set("slideWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlideWidthNull: Self = this.set("slideWidth", null)
-    
-    @scala.inline
-    def setSwipeLeft(value: Double): Self = this.set("swipeLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwipeLeftNull: Self = this.set("swipeLeft", null)
+    def setUnslicked(value: Boolean): Self = StObject.set(x, "unslicked", value.asInstanceOf[js.Any])
   }
 }

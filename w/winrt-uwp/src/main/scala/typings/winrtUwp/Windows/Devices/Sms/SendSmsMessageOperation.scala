@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.AsyncActionCompletedHandler
 import typings.winrtUwp.Windows.Foundation.AsyncStatus
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables the sending of a message. */
 @js.native
-trait SendSmsMessageOperation extends js.Object {
+trait SendSmsMessageOperation extends StObject {
   
   /** Cancels the asynchronous operation. */
   def cancel(): Unit = js.native

@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A simple object for specifying the animation properties to use when inserting or deleting rows, or scrolling the table.
   */
 @js.native
-trait TableViewAnimationProperties extends js.Object {
+trait TableViewAnimationProperties extends StObject {
   
   /**
     * Whether this table change should be animated. Ignored if any `animationStyle` value is specified.
@@ -34,36 +35,24 @@ object TableViewAnimationProperties {
   }
   
   @scala.inline
-  implicit class TableViewAnimationPropertiesOps[Self <: TableViewAnimationProperties] (val x: Self) extends AnyVal {
+  implicit class TableViewAnimationPropertiesMutableBuilder[Self <: TableViewAnimationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationStyle(value: Double): Self = StObject.set(x, "animationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setAnimationStyleUndefined: Self = StObject.set(x, "animationStyle", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationStyle(value: Double): Self = this.set("animationStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimationStyle: Self = this.set("animationStyle", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

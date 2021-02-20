@@ -1,11 +1,12 @@
 package typings.nyaapi.mod.pantsu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginResult extends js.Object {
+trait LoginResult extends StObject {
   
   var created_at: String = js.native
   
@@ -41,42 +42,30 @@ object LoginResult {
   }
   
   @scala.inline
-  implicit class LoginResultOps[Self <: LoginResult] (val x: Self) extends AnyVal {
+  implicit class LoginResultMutableBuilder[Self <: LoginResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLiked_count(value: Double): Self = StObject.set(x, "liked_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLiking_count(value: Double): Self = StObject.set(x, "liking_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiked_count(value: Double): Self = this.set("liked_count", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiking_count(value: Double): Self = this.set("liking_count", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5(value: String): Self = this.set("md5", value.asInstanceOf[js.Any])
+    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_id(value: Double): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

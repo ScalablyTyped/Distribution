@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordHandlerProgressInput extends js.Object {
+trait RecordHandlerProgressInput extends StObject {
   
   /**
     * Reserved for use by the CloudFormation CLI.
@@ -51,54 +52,42 @@ object RecordHandlerProgressInput {
   }
   
   @scala.inline
-  implicit class RecordHandlerProgressInputOps[Self <: RecordHandlerProgressInput] (val x: Self) extends AnyVal {
+  implicit class RecordHandlerProgressInputMutableBuilder[Self <: RecordHandlerProgressInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearerToken(value: ClientToken): Self = StObject.set(x, "BearerToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def setBearerToken(value: ClientToken): Self = this.set("BearerToken", value.asInstanceOf[js.Any])
+    def setCurrentOperationStatus(value: OperationStatus): Self = StObject.set(x, "CurrentOperationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationStatus(value: OperationStatus): Self = this.set("OperationStatus", value.asInstanceOf[js.Any])
+    def setCurrentOperationStatusUndefined: Self = StObject.set(x, "CurrentOperationStatus", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setErrorCode(value: HandlerErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def setCurrentOperationStatus(value: OperationStatus): Self = this.set("CurrentOperationStatus", value.asInstanceOf[js.Any])
+    def setOperationStatus(value: OperationStatus): Self = StObject.set(x, "OperationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentOperationStatus: Self = this.set("CurrentOperationStatus", js.undefined)
+    def setResourceModel(value: ResourceModel): Self = StObject.set(x, "ResourceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: HandlerErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setResourceModelUndefined: Self = StObject.set(x, "ResourceModel", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceModel(value: ResourceModel): Self = this.set("ResourceModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceModel: Self = this.set("ResourceModel", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
   }
 }

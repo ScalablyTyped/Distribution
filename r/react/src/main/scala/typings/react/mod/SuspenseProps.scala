@@ -1,12 +1,13 @@
 package typings.react.mod
 
 import typings.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuspenseProps extends js.Object {
+trait SuspenseProps extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -29,36 +30,24 @@ object SuspenseProps {
   }
   
   @scala.inline
-  implicit class SuspensePropsOps[Self <: SuspenseProps] (val x: Self) extends AnyVal {
+  implicit class SuspensePropsMutableBuilder[Self <: SuspenseProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFallback(value: NonNullable[ReactNode]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setFallbackNull: Self = StObject.set(x, "fallback", null)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setUnstable_expectedLoadTime(value: Double): Self = StObject.set(x, "unstable_expectedLoadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback(value: NonNullable[ReactNode]): Self = this.set("fallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFallbackNull: Self = this.set("fallback", null)
-    
-    @scala.inline
-    def setUnstable_expectedLoadTime(value: Double): Self = this.set("unstable_expectedLoadTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnstable_expectedLoadTime: Self = this.set("unstable_expectedLoadTime", js.undefined)
+    def setUnstable_expectedLoadTimeUndefined: Self = StObject.set(x, "unstable_expectedLoadTime", js.undefined)
   }
 }

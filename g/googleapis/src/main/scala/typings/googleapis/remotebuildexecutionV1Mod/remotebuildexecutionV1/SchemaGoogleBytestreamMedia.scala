@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Media resource.
   */
 @js.native
-trait SchemaGoogleBytestreamMedia extends js.Object {
+trait SchemaGoogleBytestreamMedia extends StObject {
   
   /**
     * Name of the media resource.
@@ -24,24 +25,12 @@ object SchemaGoogleBytestreamMedia {
   }
   
   @scala.inline
-  implicit class SchemaGoogleBytestreamMediaOps[Self <: SchemaGoogleBytestreamMedia] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleBytestreamMediaMutableBuilder[Self <: SchemaGoogleBytestreamMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

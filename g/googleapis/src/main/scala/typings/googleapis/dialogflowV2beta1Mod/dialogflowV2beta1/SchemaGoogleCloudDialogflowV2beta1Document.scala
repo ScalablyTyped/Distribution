@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `projects.knowledgeBases.documents` instead.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1Document extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1Document extends StObject {
   
   /**
     * The raw content of the document. This field is only permitted for
@@ -69,63 +70,51 @@ object SchemaGoogleCloudDialogflowV2beta1Document {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1DocumentOps[Self <: SchemaGoogleCloudDialogflowV2beta1Document] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1DocumentMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUri(value: String): Self = this.set("contentUri", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteContentUri: Self = this.set("contentUri", js.undefined)
+    def setKnowledgeTypes(value: js.Array[String]): Self = StObject.set(x, "knowledgeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setKnowledgeTypesUndefined: Self = StObject.set(x, "knowledgeTypes", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setKnowledgeTypesVarargs(value: String*): Self = StObject.set(x, "knowledgeTypes", js.Array(value :_*))
     
     @scala.inline
-    def setKnowledgeTypesVarargs(value: String*): Self = this.set("knowledgeTypes", js.Array(value :_*))
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnowledgeTypes(value: js.Array[String]): Self = this.set("knowledgeTypes", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteKnowledgeTypes: Self = this.set("knowledgeTypes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setRawContent(value: String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRawContent(value: String): Self = this.set("rawContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawContent: Self = this.set("rawContent", js.undefined)
+    def setRawContentUndefined: Self = StObject.set(x, "rawContent", js.undefined)
   }
 }

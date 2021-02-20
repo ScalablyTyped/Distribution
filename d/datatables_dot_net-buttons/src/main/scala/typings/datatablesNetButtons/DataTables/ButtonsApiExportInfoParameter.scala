@@ -1,11 +1,12 @@
 package typings.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonsApiExportInfoParameter extends js.Object {
+trait ButtonsApiExportInfoParameter extends StObject {
   
   var extension: js.UndefOr[String | js.Function0[String]] = js.native
   
@@ -26,72 +27,60 @@ object ButtonsApiExportInfoParameter {
   }
   
   @scala.inline
-  implicit class ButtonsApiExportInfoParameterOps[Self <: ButtonsApiExportInfoParameter] (val x: Self) extends AnyVal {
+  implicit class ButtonsApiExportInfoParameterMutableBuilder[Self <: ButtonsApiExportInfoParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtension(value: String | js.Function0[String]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionFunction0(value: () => String): Self = StObject.set(x, "extension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def setExtensionFunction0(value: () => String): Self = this.set("extension", js.Any.fromFunction0(value))
+    def setFilename(value: String | js.Function0[String]): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String | js.Function0[String]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setFilenameFunction0(value: () => String): Self = StObject.set(x, "filename", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def setFilenameFunction0(value: () => String): Self = this.set("filename", js.Any.fromFunction0(value))
+    def setMessageBottom(value: String | js.Function0[String]): Self = StObject.set(x, "messageBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String | js.Function0[String]): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setMessageBottomFunction0(value: () => String): Self = StObject.set(x, "messageBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setMessageBottomNull: Self = StObject.set(x, "messageBottom", null)
     
     @scala.inline
-    def setMessageBottomFunction0(value: () => String): Self = this.set("messageBottom", js.Any.fromFunction0(value))
+    def setMessageBottomUndefined: Self = StObject.set(x, "messageBottom", js.undefined)
     
     @scala.inline
-    def setMessageBottom(value: String | js.Function0[String]): Self = this.set("messageBottom", value.asInstanceOf[js.Any])
+    def setMessageTop(value: String | js.Function0[String]): Self = StObject.set(x, "messageTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageBottom: Self = this.set("messageBottom", js.undefined)
+    def setMessageTopFunction0(value: () => String): Self = StObject.set(x, "messageTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMessageBottomNull: Self = this.set("messageBottom", null)
+    def setMessageTopNull: Self = StObject.set(x, "messageTop", null)
     
     @scala.inline
-    def setMessageTopFunction0(value: () => String): Self = this.set("messageTop", js.Any.fromFunction0(value))
+    def setMessageTopUndefined: Self = StObject.set(x, "messageTop", js.undefined)
     
     @scala.inline
-    def setMessageTop(value: String | js.Function0[String]): Self = this.set("messageTop", value.asInstanceOf[js.Any])
+    def setTitle(value: String | js.Function0[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageTop: Self = this.set("messageTop", js.undefined)
+    def setTitleFunction0(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMessageTopNull: Self = this.set("messageTop", null)
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def setTitleFunction0(value: () => String): Self = this.set("title", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String | js.Function0[String]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

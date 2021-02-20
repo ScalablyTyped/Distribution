@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateStandardsControlRequest extends js.Object {
+trait UpdateStandardsControlRequest extends StObject {
   
   /**
     * The updated status of the security standard control.
@@ -31,33 +32,21 @@ object UpdateStandardsControlRequest {
   }
   
   @scala.inline
-  implicit class UpdateStandardsControlRequestOps[Self <: UpdateStandardsControlRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateStandardsControlRequestMutableBuilder[Self <: UpdateStandardsControlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlStatus(value: ControlStatus): Self = StObject.set(x, "ControlStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledReason(value: NonEmptyString): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardsControlArn(value: NonEmptyString): Self = this.set("StandardsControlArn", value.asInstanceOf[js.Any])
+    def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
     
     @scala.inline
-    def setControlStatus(value: ControlStatus): Self = this.set("ControlStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteControlStatus: Self = this.set("ControlStatus", js.undefined)
-    
-    @scala.inline
-    def setDisabledReason(value: NonEmptyString): Self = this.set("DisabledReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabledReason: Self = this.set("DisabledReason", js.undefined)
+    def setStandardsControlArn(value: NonEmptyString): Self = StObject.set(x, "StandardsControlArn", value.asInstanceOf[js.Any])
   }
 }

@@ -7,27 +7,14 @@ import typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerFactoryMo
 import typings.std.MediaStream
 import typings.std.MediaStreamConstraints
 import typings.std.RTCConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/platform/web/session-description-handler", JSImport.Namespace)
-@js.native
-object webSessionDescriptionHandlerMod extends js.Object {
+object webSessionDescriptionHandlerMod {
   
-  def defaultMediaStreamFactory(): MediaStreamFactory = js.native
-  
-  def defaultPeerConnectionConfiguration(): RTCConfiguration = js.native
-  
-  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = js.native
-  def defaultSessionDescriptionHandlerFactory(
-    mediaStreamFactory: js.Function2[
-      /* constraints */ MediaStreamConstraints, 
-      /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
-      js.Promise[MediaStream]
-    ]
-  ): SessionDescriptionHandlerFactory = js.native
-  
+  @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler")
   @js.native
   class SessionDescriptionHandler protected ()
     extends typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler {
@@ -45,11 +32,43 @@ object webSessionDescriptionHandlerMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object SessionDescriptionHandler extends js.Object {
+  object SessionDescriptionHandler {
     
-    var dispatchAddTrackEvent: js.Any = js.native
+    @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var dispatchRemoveTrackEvent: js.Any = js.native
+    @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler.dispatchAddTrackEvent")
+    @js.native
+    def dispatchAddTrackEvent: js.Any = js.native
+    @scala.inline
+    def dispatchAddTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
+    
+    @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler.dispatchRemoveTrackEvent")
+    @js.native
+    def dispatchRemoveTrackEvent: js.Any = js.native
+    @scala.inline
+    def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultMediaStreamFactory")
+  @js.native
+  def defaultMediaStreamFactory(): MediaStreamFactory = js.native
+  
+  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultPeerConnectionConfiguration")
+  @js.native
+  def defaultPeerConnectionConfiguration(): RTCConfiguration = js.native
+  
+  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultSessionDescriptionHandlerFactory")
+  @js.native
+  def defaultSessionDescriptionHandlerFactory(): SessionDescriptionHandlerFactory = js.native
+  @JSImport("sip.js/lib/platform/web/session-description-handler", "defaultSessionDescriptionHandlerFactory")
+  @js.native
+  def defaultSessionDescriptionHandlerFactory(
+    mediaStreamFactory: js.Function2[
+      /* constraints */ MediaStreamConstraints, 
+      /* sessionDescriptionHandler */ typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler, 
+      js.Promise[MediaStream]
+    ]
+  ): SessionDescriptionHandlerFactory = js.native
 }

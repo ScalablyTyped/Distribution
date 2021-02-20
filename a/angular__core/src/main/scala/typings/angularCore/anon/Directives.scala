@@ -1,12 +1,13 @@
 package typings.angularCore.anon
 
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Directives extends js.Object {
+trait Directives extends StObject {
   
   var directives: Set[_] = js.native
   
@@ -21,24 +22,12 @@ object Directives {
   }
   
   @scala.inline
-  implicit class DirectivesOps[Self <: Directives] (val x: Self) extends AnyVal {
+  implicit class DirectivesMutableBuilder[Self <: Directives] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectives(value: Set[_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirectives(value: Set[_]): Self = this.set("directives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPipes(value: Set[_]): Self = this.set("pipes", value.asInstanceOf[js.Any])
+    def setPipes(value: Set[_]): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
   }
 }

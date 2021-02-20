@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxIncomingArchive Class */
 @js.native
-trait FaxIncomingArchive extends js.Object {
+trait FaxIncomingArchive extends StObject {
   
   /** How long the fax message is kept on the Server */
   var AgeLimit: Double = js.native

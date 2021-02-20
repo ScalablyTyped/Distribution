@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmbeddedObject extends js.Object {
+trait EmbeddedObject extends StObject {
   
   /** The description of the embedded object. The `title` and `description` are both combined to display alt text. */
   var description: js.UndefOr[String] = js.native
@@ -52,84 +53,72 @@ object EmbeddedObject {
   }
   
   @scala.inline
-  implicit class EmbeddedObjectOps[Self <: EmbeddedObject] (val x: Self) extends AnyVal {
+  implicit class EmbeddedObjectMutableBuilder[Self <: EmbeddedObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbeddedDrawingProperties(value: js.Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEmbeddedObjectBorder(value: EmbeddedObjectBorder): Self = StObject.set(x, "embeddedObjectBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedDrawingProperties(value: js.Any): Self = this.set("embeddedDrawingProperties", value.asInstanceOf[js.Any])
+    def setEmbeddedObjectBorderUndefined: Self = StObject.set(x, "embeddedObjectBorder", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedDrawingProperties: Self = this.set("embeddedDrawingProperties", js.undefined)
+    def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedObjectBorder(value: EmbeddedObjectBorder): Self = this.set("embeddedObjectBorder", value.asInstanceOf[js.Any])
+    def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedObjectBorder: Self = this.set("embeddedObjectBorder", js.undefined)
+    def setLinkedContentReference(value: LinkedContentReference): Self = StObject.set(x, "linkedContentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageProperties(value: ImageProperties): Self = this.set("imageProperties", value.asInstanceOf[js.Any])
+    def setLinkedContentReferenceUndefined: Self = StObject.set(x, "linkedContentReference", js.undefined)
     
     @scala.inline
-    def deleteImageProperties: Self = this.set("imageProperties", js.undefined)
+    def setMarginBottom(value: Dimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedContentReference(value: LinkedContentReference): Self = this.set("linkedContentReference", value.asInstanceOf[js.Any])
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def deleteLinkedContentReference: Self = this.set("linkedContentReference", js.undefined)
+    def setMarginLeft(value: Dimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: Dimension): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginRight(value: Dimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Dimension): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMarginTop(value: Dimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRight(value: Dimension): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Dimension): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

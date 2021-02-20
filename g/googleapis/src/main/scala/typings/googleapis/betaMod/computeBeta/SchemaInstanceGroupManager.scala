@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * v1.regionInstanceGroupManagers ==)
   */
 @js.native
-trait SchemaInstanceGroupManager extends js.Object {
+trait SchemaInstanceGroupManager extends StObject {
   
   /**
     * The autohealing policy for this managed instance group. You can specify
@@ -180,174 +181,162 @@ object SchemaInstanceGroupManager {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagerOps[Self <: SchemaInstanceGroupManager] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagerMutableBuilder[Self <: SchemaInstanceGroupManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoHealingPolicies(value: js.Array[SchemaInstanceGroupManagerAutoHealingPolicy]): Self = StObject.set(x, "autoHealingPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoHealingPoliciesUndefined: Self = StObject.set(x, "autoHealingPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHealingPoliciesVarargs(value: SchemaInstanceGroupManagerAutoHealingPolicy*): Self = StObject.set(x, "autoHealingPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAutoHealingPoliciesVarargs(value: SchemaInstanceGroupManagerAutoHealingPolicy*): Self = this.set("autoHealingPolicies", js.Array(value :_*))
+    def setBaseInstanceName(value: String): Self = StObject.set(x, "baseInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHealingPolicies(value: js.Array[SchemaInstanceGroupManagerAutoHealingPolicy]): Self = this.set("autoHealingPolicies", value.asInstanceOf[js.Any])
+    def setBaseInstanceNameUndefined: Self = StObject.set(x, "baseInstanceName", js.undefined)
     
     @scala.inline
-    def deleteAutoHealingPolicies: Self = this.set("autoHealingPolicies", js.undefined)
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseInstanceName(value: String): Self = this.set("baseInstanceName", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteBaseInstanceName: Self = this.set("baseInstanceName", js.undefined)
+    def setCurrentActions(value: SchemaInstanceGroupManagerActionsSummary): Self = StObject.set(x, "currentActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setCurrentActionsUndefined: Self = StObject.set(x, "currentActions", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentActions(value: SchemaInstanceGroupManagerActionsSummary): Self = this.set("currentActions", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCurrentActions: Self = this.set("currentActions", js.undefined)
+    def setDistributionPolicy(value: SchemaDistributionPolicy): Self = StObject.set(x, "distributionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDistributionPolicyUndefined: Self = StObject.set(x, "distributionPolicy", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFailoverAction(value: String): Self = StObject.set(x, "failoverAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionPolicy(value: SchemaDistributionPolicy): Self = this.set("distributionPolicy", value.asInstanceOf[js.Any])
+    def setFailoverActionUndefined: Self = StObject.set(x, "failoverAction", js.undefined)
     
     @scala.inline
-    def deleteDistributionPolicy: Self = this.set("distributionPolicy", js.undefined)
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailoverAction(value: String): Self = this.set("failoverAction", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteFailoverAction: Self = this.set("failoverAction", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setInstanceGroup(value: String): Self = StObject.set(x, "instanceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstanceGroupUndefined: Self = StObject.set(x, "instanceGroup", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroup(value: String): Self = this.set("instanceGroup", value.asInstanceOf[js.Any])
+    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
     
     @scala.inline
-    def deleteInstanceGroup: Self = this.set("instanceGroup", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTemplate(value: String): Self = this.set("instanceTemplate", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInstanceTemplate: Self = this.set("instanceTemplate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNamedPorts(value: js.Array[SchemaNamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNamedPortsVarargs(value: SchemaNamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
     
     @scala.inline
-    def setNamedPortsVarargs(value: SchemaNamedPort*): Self = this.set("namedPorts", js.Array(value :_*))
+    def setPendingActions(value: SchemaInstanceGroupManagerPendingActionsSummary): Self = StObject.set(x, "pendingActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedPorts(value: js.Array[SchemaNamedPort]): Self = this.set("namedPorts", value.asInstanceOf[js.Any])
+    def setPendingActionsUndefined: Self = StObject.set(x, "pendingActions", js.undefined)
     
     @scala.inline
-    def deleteNamedPorts: Self = this.set("namedPorts", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingActions(value: SchemaInstanceGroupManagerPendingActionsSummary): Self = this.set("pendingActions", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePendingActions: Self = this.set("pendingActions", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setStatus(value: SchemaInstanceGroupManagerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SchemaInstanceGroupManagerStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
     
     @scala.inline
-    def setTargetPoolsVarargs(value: String*): Self = this.set("targetPools", js.Array(value :_*))
+    def setTargetSize(value: Double): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetPools(value: js.Array[String]): Self = this.set("targetPools", value.asInstanceOf[js.Any])
+    def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
     
     @scala.inline
-    def deleteTargetPools: Self = this.set("targetPools", js.undefined)
+    def setUpdatePolicy(value: SchemaInstanceGroupManagerUpdatePolicy): Self = StObject.set(x, "updatePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSize(value: Double): Self = this.set("targetSize", value.asInstanceOf[js.Any])
+    def setUpdatePolicyUndefined: Self = StObject.set(x, "updatePolicy", js.undefined)
     
     @scala.inline
-    def deleteTargetSize: Self = this.set("targetSize", js.undefined)
+    def setVersions(value: js.Array[SchemaInstanceGroupManagerVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatePolicy(value: SchemaInstanceGroupManagerUpdatePolicy): Self = this.set("updatePolicy", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def deleteUpdatePolicy: Self = this.set("updatePolicy", js.undefined)
+    def setVersionsVarargs(value: SchemaInstanceGroupManagerVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
     @scala.inline
-    def setVersionsVarargs(value: SchemaInstanceGroupManagerVersion*): Self = this.set("versions", js.Array(value :_*))
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersions(value: js.Array[SchemaInstanceGroupManagerVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
-    
-    @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

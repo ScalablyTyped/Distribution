@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,81 +83,69 @@ object SearchBarEventMap {
   }
   
   @scala.inline
-  implicit class SearchBarEventMapOps[Self <: SearchBarEventMap] (val x: Self) extends AnyVal {
+  implicit class SearchBarEventMapMutableBuilder[Self <: SearchBarEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlur(value: SearchBarBlurEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmark(value: SearchBarBookmarkEvent): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: SearchBarCancelEvent): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: SearchBarBlurEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setChange(value: SearchBarChangeEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmark(value: SearchBarBookmarkEvent): Self = this.set("bookmark", value.asInstanceOf[js.Any])
+    def setClick(value: SearchBarClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: SearchBarCancelEvent): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setDblclick(value: SearchBarDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: SearchBarChangeEvent): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setDoubletap(value: SearchBarDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: SearchBarClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setFocus(value: SearchBarFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: SearchBarDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: SearchBarKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: SearchBarDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: SearchBarLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: SearchBarFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: SearchBarLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: SearchBarKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPinch(value: SearchBarPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: SearchBarLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPostlayout(value: SearchBarPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: SearchBarLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setReturn(value: SearchBarReturnEvent): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: SearchBarPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSingletap(value: SearchBarSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: SearchBarPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setSwipe(value: SearchBarSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn(value: SearchBarReturnEvent): Self = this.set("return", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: SearchBarTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: SearchBarSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: SearchBarTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: SearchBarSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: SearchBarTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: SearchBarTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: SearchBarTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: SearchBarTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: SearchBarTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: SearchBarTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: SearchBarTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: SearchBarTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

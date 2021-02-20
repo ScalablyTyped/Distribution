@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UICustomizationType extends js.Object {
+trait UICustomizationType extends StObject {
   
   /**
     * The CSS values in the UI customization.
@@ -51,60 +52,48 @@ object UICustomizationType {
   }
   
   @scala.inline
-  implicit class UICustomizationTypeOps[Self <: UICustomizationType] (val x: Self) extends AnyVal {
+  implicit class UICustomizationTypeMutableBuilder[Self <: UICustomizationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSS(value: CSSType): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSSUndefined: Self = StObject.set(x, "CSS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCSSVersion(value: CSSVersionType): Self = StObject.set(x, "CSSVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCSS(value: CSSType): Self = this.set("CSS", value.asInstanceOf[js.Any])
+    def setCSSVersionUndefined: Self = StObject.set(x, "CSSVersion", js.undefined)
     
     @scala.inline
-    def deleteCSS: Self = this.set("CSS", js.undefined)
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCSSVersion(value: CSSVersionType): Self = this.set("CSSVersion", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def deleteCSSVersion: Self = this.set("CSSVersion", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    def setImageUrl(value: ImageUrlType): Self = StObject.set(x, "ImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: ImageUrlType): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
-    
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

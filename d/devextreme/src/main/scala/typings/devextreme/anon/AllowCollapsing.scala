@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.buttonClick
 import typings.devextreme.devextremeStrings.rowClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowCollapsing extends js.Object {
+trait AllowCollapsing extends StObject {
   
   var allowCollapsing: js.UndefOr[Boolean] = js.native
   
@@ -28,48 +29,36 @@ object AllowCollapsing {
   }
   
   @scala.inline
-  implicit class AllowCollapsingOps[Self <: AllowCollapsing] (val x: Self) extends AnyVal {
+  implicit class AllowCollapsingMutableBuilder[Self <: AllowCollapsing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCollapsing(value: Boolean): Self = StObject.set(x, "allowCollapsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCollapsingUndefined: Self = StObject.set(x, "allowCollapsing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCollapsing(value: Boolean): Self = this.set("allowCollapsing", value.asInstanceOf[js.Any])
+    def setAutoExpandAllUndefined: Self = StObject.set(x, "autoExpandAll", js.undefined)
     
     @scala.inline
-    def deleteAllowCollapsing: Self = this.set("allowCollapsing", js.undefined)
+    def setContextMenuEnabled(value: Boolean): Self = StObject.set(x, "contextMenuEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoExpandAll(value: Boolean): Self = this.set("autoExpandAll", value.asInstanceOf[js.Any])
+    def setContextMenuEnabledUndefined: Self = StObject.set(x, "contextMenuEnabled", js.undefined)
     
     @scala.inline
-    def deleteAutoExpandAll: Self = this.set("autoExpandAll", js.undefined)
+    def setExpandMode(value: buttonClick | rowClick): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuEnabled(value: Boolean): Self = this.set("contextMenuEnabled", value.asInstanceOf[js.Any])
+    def setExpandModeUndefined: Self = StObject.set(x, "expandMode", js.undefined)
     
     @scala.inline
-    def deleteContextMenuEnabled: Self = this.set("contextMenuEnabled", js.undefined)
+    def setTexts(value: GroupByThisColumn): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandMode(value: buttonClick | rowClick): Self = this.set("expandMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpandMode: Self = this.set("expandMode", js.undefined)
-    
-    @scala.inline
-    def setTexts(value: GroupByThisColumn): Self = this.set("texts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTexts: Self = this.set("texts", js.undefined)
+    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
   }
 }

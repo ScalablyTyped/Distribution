@@ -2,12 +2,13 @@ package typings.gun.anon
 
 import typings.gun.gunNumbers.`2`
 import typings.gun.mod.Gun.CryptoKeyPair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ack extends js.Object {
+trait Ack extends StObject {
   
   var ack: `2` = js.native
   
@@ -39,36 +40,24 @@ object Ack {
   }
   
   @scala.inline
-  implicit class AckOps[Self <: Ack] (val x: Self) extends AnyVal {
+  implicit class AckMutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAck(value: `2`): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOn(value: js.Tuple3[_, _, _] => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAck(value: `2`): Self = this.set("ack", value.asInstanceOf[js.Any])
+    def setPut(value: Alias): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: String): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setSea(value: CryptoKeyPair): Self = StObject.set(x, "sea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: js.Tuple3[_, _, _] => js.Any): Self = this.set("on", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPut(value: Alias): Self = this.set("put", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSea(value: CryptoKeyPair): Self = this.set("sea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoul(value: String): Self = this.set("soul", value.asInstanceOf[js.Any])
+    def setSoul(value: String): Self = StObject.set(x, "soul", value.asInstanceOf[js.Any])
   }
 }

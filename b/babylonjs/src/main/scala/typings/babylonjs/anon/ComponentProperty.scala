@@ -7,12 +7,13 @@ import typings.babylonjs.babylonjsStrings.visibility
 import typings.babylonjs.babylonjsStrings.xAxis
 import typings.babylonjs.babylonjsStrings.yAxis
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentStateType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentProperty extends js.Object {
+trait ComponentProperty extends StObject {
   
   /**
     * What property will be animated
@@ -57,48 +58,36 @@ object ComponentProperty {
   }
   
   @scala.inline
-  implicit class ComponentPropertyOps[Self <: ComponentProperty] (val x: Self) extends AnyVal {
+  implicit class ComponentPropertyMutableBuilder[Self <: ComponentProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentProperty(value: xAxis | yAxis | button | state): Self = StObject.set(x, "componentProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxNodeName(value: String): Self = StObject.set(x, "maxNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxNodeNameUndefined: Self = StObject.set(x, "maxNodeName", js.undefined)
     
     @scala.inline
-    def setComponentProperty(value: xAxis | yAxis | button | state): Self = this.set("componentProperty", value.asInstanceOf[js.Any])
+    def setMinNodeName(value: String): Self = StObject.set(x, "minNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatesVarargs(value: MotionControllerComponentStateType*): Self = this.set("states", js.Array(value :_*))
+    def setMinNodeNameUndefined: Self = StObject.set(x, "minNodeName", js.undefined)
     
     @scala.inline
-    def setStates(value: js.Array[MotionControllerComponentStateType]): Self = this.set("states", value.asInstanceOf[js.Any])
+    def setStates(value: js.Array[MotionControllerComponentStateType]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueNodeProperty(value: transform | visibility): Self = this.set("valueNodeProperty", value.asInstanceOf[js.Any])
+    def setStatesVarargs(value: MotionControllerComponentStateType*): Self = StObject.set(x, "states", js.Array(value :_*))
     
     @scala.inline
-    def setMaxNodeName(value: String): Self = this.set("maxNodeName", value.asInstanceOf[js.Any])
+    def setValueNodeName(value: String): Self = StObject.set(x, "valueNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxNodeName: Self = this.set("maxNodeName", js.undefined)
+    def setValueNodeNameUndefined: Self = StObject.set(x, "valueNodeName", js.undefined)
     
     @scala.inline
-    def setMinNodeName(value: String): Self = this.set("minNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinNodeName: Self = this.set("minNodeName", js.undefined)
-    
-    @scala.inline
-    def setValueNodeName(value: String): Self = this.set("valueNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueNodeName: Self = this.set("valueNodeName", js.undefined)
+    def setValueNodeProperty(value: transform | visibility): Self = StObject.set(x, "valueNodeProperty", value.asInstanceOf[js.Any])
   }
 }

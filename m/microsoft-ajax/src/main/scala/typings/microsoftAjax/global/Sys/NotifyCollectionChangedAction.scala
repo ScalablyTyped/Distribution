@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.NotifyCollectionChangedAction")
 @js.native
-object NotifyCollectionChangedAction extends js.Object {
+object NotifyCollectionChangedAction extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.microsoftAjax.Sys.NotifyCollectionChangedAction with Double] = js.native

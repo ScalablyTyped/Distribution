@@ -1,11 +1,12 @@
 package typings.awsSdk.importexportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStatusOutput extends js.Object {
+trait GetStatusOutput extends StObject {
   
   var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.native
   
@@ -48,117 +49,105 @@ object GetStatusOutput {
   }
   
   @scala.inline
-  implicit class GetStatusOutputOps[Self <: GetStatusOutput] (val x: Self) extends AnyVal {
+  implicit class GetStatusOutputMutableBuilder[Self <: GetStatusOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
     
     @scala.inline
-    def setArtifactListVarargs(value: Artifact*): Self = this.set("ArtifactList", js.Array(value :_*))
+    def setCarrier(value: Carrier): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactList(value: ArtifactList): Self = this.set("ArtifactList", value.asInstanceOf[js.Any])
+    def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
     
     @scala.inline
-    def deleteArtifactList: Self = this.set("ArtifactList", js.undefined)
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrier(value: Carrier): Self = this.set("Carrier", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteCarrier: Self = this.set("Carrier", js.undefined)
+    def setCurrentManifest(value: CurrentManifest): Self = StObject.set(x, "CurrentManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setCurrentManifestUndefined: Self = StObject.set(x, "CurrentManifest", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setErrorCount(value: ErrorCount): Self = StObject.set(x, "ErrorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentManifest(value: CurrentManifest): Self = this.set("CurrentManifest", value.asInstanceOf[js.Any])
+    def setErrorCountUndefined: Self = StObject.set(x, "ErrorCount", js.undefined)
     
     @scala.inline
-    def deleteCurrentManifest: Self = this.set("CurrentManifest", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: ErrorCount): Self = this.set("ErrorCount", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     @scala.inline
-    def deleteErrorCount: Self = this.set("ErrorCount", js.undefined)
+    def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("JobId", js.undefined)
+    def setLocationCode(value: LocationCode): Self = StObject.set(x, "LocationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: JobType): Self = this.set("JobType", value.asInstanceOf[js.Any])
+    def setLocationCodeUndefined: Self = StObject.set(x, "LocationCode", js.undefined)
     
     @scala.inline
-    def deleteJobType: Self = this.set("JobType", js.undefined)
+    def setLocationMessage(value: LocationMessage): Self = StObject.set(x, "LocationMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationCode(value: LocationCode): Self = this.set("LocationCode", value.asInstanceOf[js.Any])
+    def setLocationMessageUndefined: Self = StObject.set(x, "LocationMessage", js.undefined)
     
     @scala.inline
-    def deleteLocationCode: Self = this.set("LocationCode", js.undefined)
+    def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationMessage(value: LocationMessage): Self = this.set("LocationMessage", value.asInstanceOf[js.Any])
+    def setLogBucketUndefined: Self = StObject.set(x, "LogBucket", js.undefined)
     
     @scala.inline
-    def deleteLocationMessage: Self = this.set("LocationMessage", js.undefined)
+    def setLogKey(value: LogKey): Self = StObject.set(x, "LogKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogBucket(value: LogBucket): Self = this.set("LogBucket", value.asInstanceOf[js.Any])
+    def setLogKeyUndefined: Self = StObject.set(x, "LogKey", js.undefined)
     
     @scala.inline
-    def deleteLogBucket: Self = this.set("LogBucket", js.undefined)
+    def setProgressCode(value: ProgressCode): Self = StObject.set(x, "ProgressCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogKey(value: LogKey): Self = this.set("LogKey", value.asInstanceOf[js.Any])
+    def setProgressCodeUndefined: Self = StObject.set(x, "ProgressCode", js.undefined)
     
     @scala.inline
-    def deleteLogKey: Self = this.set("LogKey", js.undefined)
+    def setProgressMessage(value: ProgressMessage): Self = StObject.set(x, "ProgressMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressCode(value: ProgressCode): Self = this.set("ProgressCode", value.asInstanceOf[js.Any])
+    def setProgressMessageUndefined: Self = StObject.set(x, "ProgressMessage", js.undefined)
     
     @scala.inline
-    def deleteProgressCode: Self = this.set("ProgressCode", js.undefined)
+    def setSignature(value: Signature): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressMessage(value: ProgressMessage): Self = this.set("ProgressMessage", value.asInstanceOf[js.Any])
+    def setSignatureFileContents(value: Signature): Self = StObject.set(x, "SignatureFileContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressMessage: Self = this.set("ProgressMessage", js.undefined)
+    def setSignatureFileContentsUndefined: Self = StObject.set(x, "SignatureFileContents", js.undefined)
     
     @scala.inline
-    def setSignature(value: Signature): Self = this.set("Signature", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
     
     @scala.inline
-    def deleteSignature: Self = this.set("Signature", js.undefined)
+    def setTrackingNumber(value: TrackingNumber): Self = StObject.set(x, "TrackingNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureFileContents(value: Signature): Self = this.set("SignatureFileContents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureFileContents: Self = this.set("SignatureFileContents", js.undefined)
-    
-    @scala.inline
-    def setTrackingNumber(value: TrackingNumber): Self = this.set("TrackingNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingNumber: Self = this.set("TrackingNumber", js.undefined)
+    def setTrackingNumberUndefined: Self = StObject.set(x, "TrackingNumber", js.undefined)
   }
 }

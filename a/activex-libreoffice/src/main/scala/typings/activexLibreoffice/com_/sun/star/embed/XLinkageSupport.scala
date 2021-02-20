@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,30 +75,18 @@ object XLinkageSupport {
   }
   
   @scala.inline
-  implicit class XLinkageSupportOps[Self <: XLinkageSupport] (val x: Self) extends AnyVal {
+  implicit class XLinkageSupportMutableBuilder[Self <: XLinkageSupport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakLink(value: (XStorage, String) => Unit): Self = StObject.set(x, "breakLink", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLinkURL(value: () => String): Self = StObject.set(x, "getLinkURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLink(value: () => Boolean): Self = StObject.set(x, "isLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLinkURL(value: String): Self = this.set("LinkURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBreakLink(value: (XStorage, String) => Unit): Self = this.set("breakLink", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetLinkURL(value: () => String): Self = this.set("getLinkURL", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsLink(value: () => Boolean): Self = this.set("isLink", js.Any.fromFunction0(value))
+    def setLinkURL(value: String): Self = StObject.set(x, "LinkURL", value.asInstanceOf[js.Any])
   }
 }

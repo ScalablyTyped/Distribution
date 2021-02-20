@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredictorSummary extends js.Object {
+trait PredictorSummary extends StObject {
   
   /**
     * When the model training task was created.
@@ -51,60 +52,48 @@ object PredictorSummary {
   }
   
   @scala.inline
-  implicit class PredictorSummaryOps[Self <: PredictorSummary] (val x: Self) extends AnyVal {
+  implicit class PredictorSummaryMutableBuilder[Self <: PredictorSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = this.set("DatasetGroupArn", value.asInstanceOf[js.Any])
+    def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
     @scala.inline
-    def deleteDatasetGroupArn: Self = this.set("DatasetGroupArn", js.undefined)
+    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+    def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: ErrorMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setPredictorArnUndefined: Self = StObject.set(x, "PredictorArn", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setPredictorName(value: Name): Self = StObject.set(x, "PredictorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredictorArn(value: Arn): Self = this.set("PredictorArn", value.asInstanceOf[js.Any])
+    def setPredictorNameUndefined: Self = StObject.set(x, "PredictorName", js.undefined)
     
     @scala.inline
-    def deletePredictorArn: Self = this.set("PredictorArn", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredictorName(value: Name): Self = this.set("PredictorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredictorName: Self = this.set("PredictorName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

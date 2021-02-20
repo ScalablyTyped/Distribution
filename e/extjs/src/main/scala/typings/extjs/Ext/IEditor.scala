@@ -1,6 +1,7 @@
 package typings.extjs.Ext
 
 import typings.extjs.Ext.form.field.IField
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,156 +111,144 @@ object IEditor {
   }
   
   @scala.inline
-  implicit class IEditorOps[Self <: IEditor] (val x: Self) extends AnyVal {
+  implicit class IEditorMutableBuilder[Self <: IEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterRender(value: (/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignment(value: java.lang.String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterRender(value: (/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit): Self = this.set("afterRender", js.Any.fromFunction2(value))
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def deleteAfterRender: Self = this.set("afterRender", js.undefined)
+    def setAllowBlur(value: Boolean): Self = StObject.set(x, "allowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: java.lang.String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setAllowBlurUndefined: Self = StObject.set(x, "allowBlur", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setAutoSize(value: js.Any): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowBlur(value: Boolean): Self = this.set("allowBlur", value.asInstanceOf[js.Any])
+    def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
     @scala.inline
-    def deleteAllowBlur: Self = this.set("allowBlur", js.undefined)
+    def setCancelEdit(value: /* remainVisible */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "cancelEdit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoSize(value: js.Any): Self = this.set("autoSize", value.asInstanceOf[js.Any])
+    def setCancelEditUndefined: Self = StObject.set(x, "cancelEdit", js.undefined)
     
     @scala.inline
-    def deleteAutoSize: Self = this.set("autoSize", js.undefined)
+    def setCancelOnEsc(value: Boolean): Self = StObject.set(x, "cancelOnEsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelEdit(value: /* remainVisible */ js.UndefOr[Boolean] => Unit): Self = this.set("cancelEdit", js.Any.fromFunction1(value))
+    def setCancelOnEscUndefined: Self = StObject.set(x, "cancelOnEsc", js.undefined)
     
     @scala.inline
-    def deleteCancelEdit: Self = this.set("cancelEdit", js.undefined)
+    def setCompleteEdit(value: /* remainVisible */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "completeEdit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelOnEsc(value: Boolean): Self = this.set("cancelOnEsc", value.asInstanceOf[js.Any])
+    def setCompleteEditUndefined: Self = StObject.set(x, "completeEdit", js.undefined)
     
     @scala.inline
-    def deleteCancelOnEsc: Self = this.set("cancelOnEsc", js.undefined)
+    def setCompleteOnEnter(value: Boolean): Self = StObject.set(x, "completeOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteEdit(value: /* remainVisible */ js.UndefOr[Boolean] => Unit): Self = this.set("completeEdit", js.Any.fromFunction1(value))
+    def setCompleteOnEnterUndefined: Self = StObject.set(x, "completeOnEnter", js.undefined)
     
     @scala.inline
-    def deleteCompleteEdit: Self = this.set("completeEdit", js.undefined)
+    def setField(value: IField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteOnEnter(value: Boolean): Self = this.set("completeOnEnter", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteCompleteOnEnter: Self = this.set("completeOnEnter", js.undefined)
+    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setField(value: IField): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setHideEl(value: Boolean): Self = StObject.set(x, "hideEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValue(value: () => _): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setHideElUndefined: Self = StObject.set(x, "hideEl", js.undefined)
     
     @scala.inline
-    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    def setIgnoreNoChange(value: Boolean): Self = StObject.set(x, "ignoreNoChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideEl(value: Boolean): Self = this.set("hideEl", value.asInstanceOf[js.Any])
+    def setIgnoreNoChangeUndefined: Self = StObject.set(x, "ignoreNoChange", js.undefined)
     
     @scala.inline
-    def deleteHideEl: Self = this.set("hideEl", js.undefined)
+    def setOffsets(value: Array): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreNoChange(value: Boolean): Self = this.set("ignoreNoChange", value.asInstanceOf[js.Any])
+    def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
     
     @scala.inline
-    def deleteIgnoreNoChange: Self = this.set("ignoreNoChange", js.undefined)
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffsets(value: Array): Self = this.set("offsets", value.asInstanceOf[js.Any])
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOffsets: Self = this.set("offsets", js.undefined)
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setParentEl(value: js.Any): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setRealign(value: /* autoSize */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "realign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParentEl(value: js.Any): Self = this.set("parentEl", value.asInstanceOf[js.Any])
+    def setRealignUndefined: Self = StObject.set(x, "realign", js.undefined)
     
     @scala.inline
-    def deleteParentEl: Self = this.set("parentEl", js.undefined)
+    def setRevertInvalid(value: Boolean): Self = StObject.set(x, "revertInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealign(value: /* autoSize */ js.UndefOr[Boolean] => Unit): Self = this.set("realign", js.Any.fromFunction1(value))
+    def setRevertInvalidUndefined: Self = StObject.set(x, "revertInvalid", js.undefined)
     
     @scala.inline
-    def deleteRealign: Self = this.set("realign", js.undefined)
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRevertInvalid(value: Boolean): Self = this.set("revertInvalid", value.asInstanceOf[js.Any])
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
     @scala.inline
-    def deleteRevertInvalid: Self = this.set("revertInvalid", js.undefined)
+    def setStartEdit(value: (/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
     
     @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    def setSwallowKeys(value: Boolean): Self = StObject.set(x, "swallowKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartEdit(value: (/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => Unit): Self = this.set("startEdit", js.Any.fromFunction2(value))
+    def setSwallowKeysUndefined: Self = StObject.set(x, "swallowKeys", js.undefined)
     
     @scala.inline
-    def deleteStartEdit: Self = this.set("startEdit", js.undefined)
+    def setUpdateEl(value: Boolean): Self = StObject.set(x, "updateEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwallowKeys(value: Boolean): Self = this.set("swallowKeys", value.asInstanceOf[js.Any])
+    def setUpdateElUndefined: Self = StObject.set(x, "updateEl", js.undefined)
     
     @scala.inline
-    def deleteSwallowKeys: Self = this.set("swallowKeys", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateEl(value: Boolean): Self = this.set("updateEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateEl: Self = this.set("updateEl", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

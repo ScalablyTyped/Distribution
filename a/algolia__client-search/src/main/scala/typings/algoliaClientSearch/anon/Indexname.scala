@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Indexname extends js.Object {
+trait Indexname extends StObject {
   
   /**
     * Index name of the query.
@@ -36,39 +37,27 @@ object Indexname {
   }
   
   @scala.inline
-  implicit class IndexnameOps[Self <: Indexname] (val x: Self) extends AnyVal {
+  implicit class IndexnameMutableBuilder[Self <: Indexname] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex_name(value: String): Self = StObject.set(x, "index_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setIndex_name(value: String): Self = this.set("index_name", value.asInstanceOf[js.Any])
+    def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setUser_token(value: String): Self = StObject.set(x, "user_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery_id(value: String): Self = this.set("query_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery_id: Self = this.set("query_id", js.undefined)
-    
-    @scala.inline
-    def setUser_token(value: String): Self = this.set("user_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_token: Self = this.set("user_token", js.undefined)
+    def setUser_tokenUndefined: Self = StObject.set(x, "user_token", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapboxProviderCommonOptions extends js.Object {
+trait MapboxProviderCommonOptions extends StObject {
   
   /**
     * A credit for the data source, which is displayed on the canvas
@@ -47,48 +48,36 @@ object MapboxProviderCommonOptions {
   }
   
   @scala.inline
-  implicit class MapboxProviderCommonOptionsOps[Self <: MapboxProviderCommonOptions] (val x: Self) extends AnyVal {
+  implicit class MapboxProviderCommonOptionsMutableBuilder[Self <: MapboxProviderCommonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredit(value: Credit | String): Self = this.set("credit", value.asInstanceOf[js.Any])
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def deleteCredit: Self = this.set("credit", js.undefined)
+    def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumLevel(value: Double): Self = this.set("maximumLevel", value.asInstanceOf[js.Any])
+    def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
     
     @scala.inline
-    def deleteMaximumLevel: Self = this.set("maximumLevel", js.undefined)
+    def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumLevel(value: Double): Self = this.set("minimumLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumLevel: Self = this.set("minimumLevel", js.undefined)
-    
-    @scala.inline
-    def setRectangle(value: Rectangle): Self = this.set("rectangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

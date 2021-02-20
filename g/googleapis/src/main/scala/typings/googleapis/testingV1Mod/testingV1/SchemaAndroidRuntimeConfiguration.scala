@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Android configuration that can be selected at the time a test is run.
   */
 @js.native
-trait SchemaAndroidRuntimeConfiguration extends js.Object {
+trait SchemaAndroidRuntimeConfiguration extends StObject {
   
   /**
     * The set of available locales.
@@ -29,36 +30,24 @@ object SchemaAndroidRuntimeConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaAndroidRuntimeConfigurationOps[Self <: SchemaAndroidRuntimeConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidRuntimeConfigurationMutableBuilder[Self <: SchemaAndroidRuntimeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocales(value: js.Array[SchemaLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
     @scala.inline
-    def setLocalesVarargs(value: SchemaLocale*): Self = this.set("locales", js.Array(value :_*))
+    def setOrientations(value: js.Array[SchemaOrientation]): Self = StObject.set(x, "orientations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocales(value: js.Array[SchemaLocale]): Self = this.set("locales", value.asInstanceOf[js.Any])
+    def setOrientationsUndefined: Self = StObject.set(x, "orientations", js.undefined)
     
     @scala.inline
-    def deleteLocales: Self = this.set("locales", js.undefined)
-    
-    @scala.inline
-    def setOrientationsVarargs(value: SchemaOrientation*): Self = this.set("orientations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrientations(value: js.Array[SchemaOrientation]): Self = this.set("orientations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientations: Self = this.set("orientations", js.undefined)
+    def setOrientationsVarargs(value: SchemaOrientation*): Self = StObject.set(x, "orientations", js.Array(value :_*))
   }
 }

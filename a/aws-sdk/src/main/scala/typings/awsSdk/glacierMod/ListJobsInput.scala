@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobsInput extends js.Object {
+trait ListJobsInput extends StObject {
   
   /**
     * The AccountId value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon S3 Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID. 
@@ -46,48 +47,36 @@ object ListJobsInput {
   }
   
   @scala.inline
-  implicit class ListJobsInputOps[Self <: ListJobsInput] (val x: Self) extends AnyVal {
+  implicit class ListJobsInputMutableBuilder[Self <: ListJobsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setCompleted(value: String): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompleted: Self = this.set("completed", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setStatuscode(value: String): Self = StObject.set(x, "statuscode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setStatuscodeUndefined: Self = StObject.set(x, "statuscode", js.undefined)
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
-    
-    @scala.inline
-    def setStatuscode(value: String): Self = this.set("statuscode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatuscode: Self = this.set("statuscode", js.undefined)
+    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

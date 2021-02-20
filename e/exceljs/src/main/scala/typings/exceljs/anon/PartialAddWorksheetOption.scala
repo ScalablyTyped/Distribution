@@ -3,13 +3,14 @@ package typings.exceljs.anon
 import typings.exceljs.mod.WorksheetState
 import typings.exceljs.mod.WorksheetView
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.AddWorksheetOptions> */
 @js.native
-trait PartialAddWorksheetOption extends js.Object {
+trait PartialAddWorksheetOption extends StObject {
   
   var headerFooter: js.UndefOr[PartialHeaderFooter] = js.native
   
@@ -30,51 +31,39 @@ object PartialAddWorksheetOption {
   }
   
   @scala.inline
-  implicit class PartialAddWorksheetOptionOps[Self <: PartialAddWorksheetOption] (val x: Self) extends AnyVal {
+  implicit class PartialAddWorksheetOptionMutableBuilder[Self <: PartialAddWorksheetOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderFooter(value: PartialHeaderFooter): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderFooterUndefined: Self = StObject.set(x, "headerFooter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSetup(value: PartialPageSetup): Self = StObject.set(x, "pageSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderFooter(value: PartialHeaderFooter): Self = this.set("headerFooter", value.asInstanceOf[js.Any])
+    def setPageSetupUndefined: Self = StObject.set(x, "pageSetup", js.undefined)
     
     @scala.inline
-    def deleteHeaderFooter: Self = this.set("headerFooter", js.undefined)
+    def setProperties(value: PartialWorksheetPropertie): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSetup(value: PartialPageSetup): Self = this.set("pageSetup", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePageSetup: Self = this.set("pageSetup", js.undefined)
+    def setState(value: WorksheetState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PartialWorksheetPropertie): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setViews(value: js.Array[Partial[WorksheetView]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: WorksheetState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setViewsVarargs(value: Partial[WorksheetView]*): Self = this.set("views", js.Array(value :_*))
-    
-    @scala.inline
-    def setViews(value: js.Array[Partial[WorksheetView]]): Self = this.set("views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
+    def setViewsVarargs(value: Partial[WorksheetView]*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

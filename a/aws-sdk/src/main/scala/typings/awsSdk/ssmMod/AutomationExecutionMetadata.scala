@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomationExecutionMetadata extends js.Object {
+trait AutomationExecutionMetadata extends StObject {
   
   /**
     * The execution ID.
@@ -126,156 +127,144 @@ object AutomationExecutionMetadata {
   }
   
   @scala.inline
-  implicit class AutomationExecutionMetadataOps[Self <: AutomationExecutionMetadata] (val x: Self) extends AnyVal {
+  implicit class AutomationExecutionMetadataMutableBuilder[Self <: AutomationExecutionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomationExecutionIdUndefined: Self = StObject.set(x, "AutomationExecutionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomationExecutionStatus(value: AutomationExecutionStatus): Self = StObject.set(x, "AutomationExecutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomationExecutionId(value: AutomationExecutionId): Self = this.set("AutomationExecutionId", value.asInstanceOf[js.Any])
+    def setAutomationExecutionStatusUndefined: Self = StObject.set(x, "AutomationExecutionStatus", js.undefined)
     
     @scala.inline
-    def deleteAutomationExecutionId: Self = this.set("AutomationExecutionId", js.undefined)
+    def setAutomationType(value: AutomationType): Self = StObject.set(x, "AutomationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomationExecutionStatus(value: AutomationExecutionStatus): Self = this.set("AutomationExecutionStatus", value.asInstanceOf[js.Any])
+    def setAutomationTypeUndefined: Self = StObject.set(x, "AutomationType", js.undefined)
     
     @scala.inline
-    def deleteAutomationExecutionStatus: Self = this.set("AutomationExecutionStatus", js.undefined)
+    def setCurrentAction(value: String): Self = StObject.set(x, "CurrentAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomationType(value: AutomationType): Self = this.set("AutomationType", value.asInstanceOf[js.Any])
+    def setCurrentActionUndefined: Self = StObject.set(x, "CurrentAction", js.undefined)
     
     @scala.inline
-    def deleteAutomationType: Self = this.set("AutomationType", js.undefined)
+    def setCurrentStepName(value: String): Self = StObject.set(x, "CurrentStepName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentAction(value: String): Self = this.set("CurrentAction", value.asInstanceOf[js.Any])
+    def setCurrentStepNameUndefined: Self = StObject.set(x, "CurrentStepName", js.undefined)
     
     @scala.inline
-    def deleteCurrentAction: Self = this.set("CurrentAction", js.undefined)
+    def setDocumentName(value: DocumentName): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStepName(value: String): Self = this.set("CurrentStepName", value.asInstanceOf[js.Any])
+    def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
     
     @scala.inline
-    def deleteCurrentStepName: Self = this.set("CurrentStepName", js.undefined)
+    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentName(value: DocumentName): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
     @scala.inline
-    def deleteDocumentName: Self = this.set("DocumentName", js.undefined)
+    def setExecutedBy(value: String): Self = StObject.set(x, "ExecutedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    def setExecutedByUndefined: Self = StObject.set(x, "ExecutedBy", js.undefined)
     
     @scala.inline
-    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    def setExecutionEndTime(value: DateTime): Self = StObject.set(x, "ExecutionEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutedBy(value: String): Self = this.set("ExecutedBy", value.asInstanceOf[js.Any])
+    def setExecutionEndTimeUndefined: Self = StObject.set(x, "ExecutionEndTime", js.undefined)
     
     @scala.inline
-    def deleteExecutedBy: Self = this.set("ExecutedBy", js.undefined)
+    def setExecutionStartTime(value: DateTime): Self = StObject.set(x, "ExecutionStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionEndTime(value: DateTime): Self = this.set("ExecutionEndTime", value.asInstanceOf[js.Any])
+    def setExecutionStartTimeUndefined: Self = StObject.set(x, "ExecutionStartTime", js.undefined)
     
     @scala.inline
-    def deleteExecutionEndTime: Self = this.set("ExecutionEndTime", js.undefined)
+    def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionStartTime(value: DateTime): Self = this.set("ExecutionStartTime", value.asInstanceOf[js.Any])
+    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
     
     @scala.inline
-    def deleteExecutionStartTime: Self = this.set("ExecutionStartTime", js.undefined)
+    def setLogFile(value: String): Self = StObject.set(x, "LogFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    def setLogFileUndefined: Self = StObject.set(x, "LogFile", js.undefined)
     
     @scala.inline
-    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    def setMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "MaxConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogFile(value: String): Self = this.set("LogFile", value.asInstanceOf[js.Any])
+    def setMaxConcurrencyUndefined: Self = StObject.set(x, "MaxConcurrency", js.undefined)
     
     @scala.inline
-    def deleteLogFile: Self = this.set("LogFile", js.undefined)
+    def setMaxErrors(value: MaxErrors): Self = StObject.set(x, "MaxErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrency(value: MaxConcurrency): Self = this.set("MaxConcurrency", value.asInstanceOf[js.Any])
+    def setMaxErrorsUndefined: Self = StObject.set(x, "MaxErrors", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrency: Self = this.set("MaxConcurrency", js.undefined)
+    def setMode(value: ExecutionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxErrors(value: MaxErrors): Self = this.set("MaxErrors", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
     @scala.inline
-    def deleteMaxErrors: Self = this.set("MaxErrors", js.undefined)
+    def setOutputs(value: AutomationParameterMap): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ExecutionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
+    def setParentAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "ParentAutomationExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: AutomationParameterMap): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    def setParentAutomationExecutionIdUndefined: Self = StObject.set(x, "ParentAutomationExecutionId", js.undefined)
     
     @scala.inline
-    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    def setResolvedTargets(value: ResolvedTargets): Self = StObject.set(x, "ResolvedTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentAutomationExecutionId(value: AutomationExecutionId): Self = this.set("ParentAutomationExecutionId", value.asInstanceOf[js.Any])
+    def setResolvedTargetsUndefined: Self = StObject.set(x, "ResolvedTargets", js.undefined)
     
     @scala.inline
-    def deleteParentAutomationExecutionId: Self = this.set("ParentAutomationExecutionId", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedTargets(value: ResolvedTargets): Self = this.set("ResolvedTargets", value.asInstanceOf[js.Any])
+    def setTargetMaps(value: TargetMaps): Self = StObject.set(x, "TargetMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolvedTargets: Self = this.set("ResolvedTargets", js.undefined)
+    def setTargetMapsUndefined: Self = StObject.set(x, "TargetMaps", js.undefined)
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setTargetMapsVarargs(value: TargetMap*): Self = StObject.set(x, "TargetMaps", js.Array(value :_*))
     
     @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
+    def setTargetParameterName(value: AutomationParameterKey): Self = StObject.set(x, "TargetParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetMapsVarargs(value: TargetMap*): Self = this.set("TargetMaps", js.Array(value :_*))
+    def setTargetParameterNameUndefined: Self = StObject.set(x, "TargetParameterName", js.undefined)
     
     @scala.inline
-    def setTargetMaps(value: TargetMaps): Self = this.set("TargetMaps", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
     
     @scala.inline
-    def deleteTargetMaps: Self = this.set("TargetMaps", js.undefined)
+    def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetParameterName(value: AutomationParameterKey): Self = this.set("TargetParameterName", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     @scala.inline
-    def deleteTargetParameterName: Self = this.set("TargetParameterName", js.undefined)
-    
-    @scala.inline
-    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("Targets", js.undefined)
+    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

@@ -3,16 +3,16 @@ package typings.uirouterCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.stateInterfaceMod.StateOrName
 import typings.uirouterCore.stateObjectMod.StateObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/state/stateMatcher", JSImport.Namespace)
-@js.native
-object stateMatcherMod extends js.Object {
+object stateMatcherMod {
   
+  @JSImport("@uirouter/core/lib/state/stateMatcher", "StateMatcher")
   @js.native
-  class StateMatcher protected () extends js.Object {
+  class StateMatcher protected () extends StObject {
     def this(_states: StringDictionary[StateObject]) = this()
     
     var _states: js.Any = js.native

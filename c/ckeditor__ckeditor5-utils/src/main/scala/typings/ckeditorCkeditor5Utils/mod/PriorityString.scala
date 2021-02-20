@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Utils.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low
   - typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest
 */
-trait PriorityString extends js.Object
+trait PriorityString extends StObject
 object PriorityString {
   
   @scala.inline

@@ -3,6 +3,7 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.CardPreAuthorizationData
 import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.CreateCardPreAuthorization
 import typings.mangopay2NodejsSdk.mod.cardPreAuthorization.UpdateCardPreAuthorization
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mangopay2-nodejs-sdk", "CardPreAuthorizations")
 @js.native
-class CardPreAuthorizations () extends js.Object {
+class CardPreAuthorizations () extends StObject {
   
   /**
     * Create new pre-authorization

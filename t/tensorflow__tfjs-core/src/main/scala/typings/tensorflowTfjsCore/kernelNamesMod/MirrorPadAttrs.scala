@@ -2,12 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reflect
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.symmetric
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MirrorPadAttrs extends js.Object {
+trait MirrorPadAttrs extends StObject {
   
   var mode: reflect | symmetric = js.native
   
@@ -22,27 +23,15 @@ object MirrorPadAttrs {
   }
   
   @scala.inline
-  implicit class MirrorPadAttrsOps[Self <: MirrorPadAttrs] (val x: Self) extends AnyVal {
+  implicit class MirrorPadAttrsMutableBuilder[Self <: MirrorPadAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: reflect | symmetric): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaddings(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "paddings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMode(value: reflect | symmetric): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingsVarargs(value: (js.Tuple2[Double, Double])*): Self = this.set("paddings", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaddings(value: js.Array[js.Tuple2[Double, Double]]): Self = this.set("paddings", value.asInstanceOf[js.Any])
+    def setPaddingsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "paddings", js.Array(value :_*))
   }
 }

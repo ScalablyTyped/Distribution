@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInventorySchemaRequest extends js.Object {
+trait GetInventorySchemaRequest extends StObject {
   
   /**
     * Returns inventory schemas that support aggregation. For example, this call returns the AWS:InstanceInformation type, because it supports aggregation based on the PlatformName, PlatformType, and PlatformVersion attributes.
@@ -41,48 +42,36 @@ object GetInventorySchemaRequest {
   }
   
   @scala.inline
-  implicit class GetInventorySchemaRequestOps[Self <: GetInventorySchemaRequest] (val x: Self) extends AnyVal {
+  implicit class GetInventorySchemaRequestMutableBuilder[Self <: GetInventorySchemaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregator(value: AggregatorSchemaOnly): Self = StObject.set(x, "Aggregator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregatorUndefined: Self = StObject.set(x, "Aggregator", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: GetInventorySchemaMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregator(value: AggregatorSchemaOnly): Self = this.set("Aggregator", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteAggregator: Self = this.set("Aggregator", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: GetInventorySchemaMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSubType(value: IsSubTypeSchema): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSubTypeUndefined: Self = StObject.set(x, "SubType", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTypeName(value: InventoryItemTypeNameFilter): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubType(value: IsSubTypeSchema): Self = this.set("SubType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubType: Self = this.set("SubType", js.undefined)
-    
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeNameFilter): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
   }
 }

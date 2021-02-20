@@ -1,11 +1,14 @@
 package typings.antd.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.antd.anon.TypeofItem
 import typings.antd.anon.TypeofItemGroup
 import typings.antd.anon.TypeofSubMenu
 import typings.antd.menuMod.default
 import typings.rcMenu.dividerMod.DividerProps
+import typings.rcMenu.mod.ItemGroup
 import typings.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +17,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Menu () extends default
 /* static members */
-@JSImport("antd", "Menu")
-@js.native
-object Menu extends js.Object {
+object Menu {
   
-  var Divider: FC[DividerProps] = js.native
+  @JSImport("antd", "Menu")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Item: TypeofItem = js.native
+  @JSImport("antd", "Menu.Divider")
+  @js.native
+  def Divider: FC[DividerProps] = js.native
+  @scala.inline
+  def Divider_=(x: FC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
-  var ItemGroup: TypeofItemGroup = js.native
+  @JSImport("antd", "Menu.Item")
+  @js.native
+  def Item: TypeofItem = js.native
   
-  var SubMenu: TypeofSubMenu = js.native
+  @JSImport("antd", "Menu.ItemGroup")
+  @js.native
+  def ItemGroup: TypeofItemGroup with Instantiable0[typings.rcMenu.mod.ItemGroup] = js.native
+  @scala.inline
+  def ItemGroup_=(x: TypeofItemGroup with Instantiable0[ItemGroup]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd", "Menu.SubMenu")
+  @js.native
+  def SubMenu: Instantiable0[typings.antd.subMenuMod.default] with TypeofSubMenu = js.native
+  @scala.inline
+  def SubMenu_=(x: Instantiable0[typings.antd.subMenuMod.default] with TypeofSubMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubMenu")(x.asInstanceOf[js.Any])
 }

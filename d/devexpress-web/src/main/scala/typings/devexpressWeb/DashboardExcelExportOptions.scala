@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains options related to exporting a dashboard/dashboard item to the Excel format.
   */
 @js.native
-trait DashboardExcelExportOptions extends js.Object {
+trait DashboardExcelExportOptions extends StObject {
   
   /**
     * Gets or sets a character used to separate values in a CSV document.
@@ -56,36 +57,24 @@ object DashboardExcelExportOptions {
   }
   
   @scala.inline
-  implicit class DashboardExcelExportOptionsOps[Self <: DashboardExcelExportOptions] (val x: Self) extends AnyVal {
+  implicit class DashboardExcelExportOptionsMutableBuilder[Self <: DashboardExcelExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashboardStatePosition(value: String): Self = StObject.set(x, "DashboardStatePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportFilters(value: Boolean): Self = StObject.set(x, "ExportFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvValueSeparator(value: String): Self = this.set("CsvValueSeparator", value.asInstanceOf[js.Any])
+    def setExportParameters(value: Boolean): Self = StObject.set(x, "ExportParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardStatePosition(value: String): Self = this.set("DashboardStatePosition", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFilters(value: Boolean): Self = this.set("ExportFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExportParameters(value: Boolean): Self = this.set("ExportParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: String): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeHiddenParameters(value: Boolean): Self = this.set("IncludeHiddenParameters", value.asInstanceOf[js.Any])
+    def setIncludeHiddenParameters(value: Boolean): Self = StObject.set(x, "IncludeHiddenParameters", value.asInstanceOf[js.Any])
   }
 }

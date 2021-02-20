@@ -2,6 +2,7 @@ package typings.yandexMaps.mod
 
 import typings.yandexMaps.mod.event.Manager
 import typings.yandexMaps.mod.geoObject.Hint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

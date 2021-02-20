@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDomainAssociationRequest extends js.Object {
+trait UpdateDomainAssociationRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
@@ -46,51 +47,39 @@ object UpdateDomainAssociationRequest {
   }
   
   @scala.inline
-  implicit class UpdateDomainAssociationRequestOps[Self <: UpdateDomainAssociationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDomainAssociationRequestMutableBuilder[Self <: UpdateDomainAssociationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSubDomainCreationPatterns(value: AutoSubDomainCreationPatterns): Self = StObject.set(x, "autoSubDomainCreationPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoSubDomainCreationPatternsUndefined: Self = StObject.set(x, "autoSubDomainCreationPatterns", js.undefined)
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setAutoSubDomainIAMRole(value: AutoSubDomainIAMRole): Self = StObject.set(x, "autoSubDomainIAMRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubDomainSettingsVarargs(value: SubDomainSetting*): Self = this.set("subDomainSettings", js.Array(value :_*))
+    def setAutoSubDomainIAMRoleUndefined: Self = StObject.set(x, "autoSubDomainIAMRole", js.undefined)
     
     @scala.inline
-    def setSubDomainSettings(value: SubDomainSettings): Self = this.set("subDomainSettings", value.asInstanceOf[js.Any])
+    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = this.set("autoSubDomainCreationPatterns", js.Array(value :_*))
+    def setEnableAutoSubDomain(value: EnableAutoSubDomain): Self = StObject.set(x, "enableAutoSubDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSubDomainCreationPatterns(value: AutoSubDomainCreationPatterns): Self = this.set("autoSubDomainCreationPatterns", value.asInstanceOf[js.Any])
+    def setEnableAutoSubDomainUndefined: Self = StObject.set(x, "enableAutoSubDomain", js.undefined)
     
     @scala.inline
-    def deleteAutoSubDomainCreationPatterns: Self = this.set("autoSubDomainCreationPatterns", js.undefined)
+    def setSubDomainSettings(value: SubDomainSettings): Self = StObject.set(x, "subDomainSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSubDomainIAMRole(value: AutoSubDomainIAMRole): Self = this.set("autoSubDomainIAMRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoSubDomainIAMRole: Self = this.set("autoSubDomainIAMRole", js.undefined)
-    
-    @scala.inline
-    def setEnableAutoSubDomain(value: EnableAutoSubDomain): Self = this.set("enableAutoSubDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableAutoSubDomain: Self = this.set("enableAutoSubDomain", js.undefined)
+    def setSubDomainSettingsVarargs(value: SubDomainSetting*): Self = StObject.set(x, "subDomainSettings", js.Array(value :_*))
   }
 }

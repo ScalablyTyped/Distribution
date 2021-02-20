@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `5` extends js.Object {
+trait `5` extends StObject {
   
   var newValue: String | Null = js.native
   
@@ -20,33 +21,21 @@ object `5` {
   }
   
   @scala.inline
-  implicit class `5Ops`[Self <: `5`] (val x: Self) extends AnyVal {
+  implicit class `5MutableBuilder`[Self <: `5`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValueNull: Self = StObject.set(x, "newValue", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValue(value: String): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
     @scala.inline
-    def setNewValueNull: Self = this.set("newValue", null)
-    
-    @scala.inline
-    def setOldValue(value: String): Self = this.set("oldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
-    
-    @scala.inline
-    def setOldValueNull: Self = this.set("oldValue", null)
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

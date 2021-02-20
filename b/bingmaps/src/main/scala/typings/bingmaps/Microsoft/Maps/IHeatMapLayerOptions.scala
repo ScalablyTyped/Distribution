@@ -2,12 +2,13 @@ package typings.bingmaps.Microsoft.Maps
 
 import typings.bingmaps.bingmapsStrings.meters
 import typings.bingmaps.bingmapsStrings.pixel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHeatMapLayerOptions extends js.Object {
+trait IHeatMapLayerOptions extends StObject {
   
   /**
     * The temperature gradient that is used to colorize the map. Default gradient:
@@ -59,54 +60,42 @@ object IHeatMapLayerOptions {
   }
   
   @scala.inline
-  implicit class IHeatMapLayerOptionsOps[Self <: IHeatMapLayerOptions] (val x: Self) extends AnyVal {
+  implicit class IHeatMapLayerOptionsMutableBuilder[Self <: IHeatMapLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorGradient(value: IDictionary[String]): Self = StObject.set(x, "colorGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorGradientUndefined: Self = StObject.set(x, "colorGradient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorGradient(value: IDictionary[String]): Self = this.set("colorGradient", value.asInstanceOf[js.Any])
+    def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
     
     @scala.inline
-    def deleteColorGradient: Self = this.set("colorGradient", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntensity(value: Double): Self = this.set("intensity", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteIntensity: Self = this.set("intensity", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setUnit(value: meters | pixel): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: meters | pixel): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,180 +71,168 @@ object SymbolPaint {
   }
   
   @scala.inline
-  implicit class SymbolPaintOps[Self <: SymbolPaint] (val x: Self) extends AnyVal {
+  implicit class SymbolPaintMutableBuilder[Self <: SymbolPaint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setIcon-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "icon-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setIcon-color-transition`(value: Transition): Self = StObject.set(x, "icon-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setIcon-color-transitionUndefined`: Self = StObject.set(x, "icon-color-transition", js.undefined)
     
     @scala.inline
-    def `setIcon-color`(value: String | StyleFunction | Expression): Self = this.set("icon-color", value.asInstanceOf[js.Any])
+    def `setIcon-colorUndefined`: Self = StObject.set(x, "icon-color", js.undefined)
     
     @scala.inline
-    def `deleteIcon-color`: Self = this.set("icon-color", js.undefined)
+    def `setIcon-halo-blur`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "icon-halo-blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-color-transition`(value: Transition): Self = this.set("icon-color-transition", value.asInstanceOf[js.Any])
+    def `setIcon-halo-blur-transition`(value: Transition): Self = StObject.set(x, "icon-halo-blur-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIcon-color-transition`: Self = this.set("icon-color-transition", js.undefined)
+    def `setIcon-halo-blur-transitionUndefined`: Self = StObject.set(x, "icon-halo-blur-transition", js.undefined)
     
     @scala.inline
-    def `setIcon-halo-blur`(value: Double | StyleFunction | Expression): Self = this.set("icon-halo-blur", value.asInstanceOf[js.Any])
+    def `setIcon-halo-blurUndefined`: Self = StObject.set(x, "icon-halo-blur", js.undefined)
     
     @scala.inline
-    def `deleteIcon-halo-blur`: Self = this.set("icon-halo-blur", js.undefined)
+    def `setIcon-halo-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "icon-halo-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-halo-blur-transition`(value: Transition): Self = this.set("icon-halo-blur-transition", value.asInstanceOf[js.Any])
+    def `setIcon-halo-color-transition`(value: Transition): Self = StObject.set(x, "icon-halo-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIcon-halo-blur-transition`: Self = this.set("icon-halo-blur-transition", js.undefined)
+    def `setIcon-halo-color-transitionUndefined`: Self = StObject.set(x, "icon-halo-color-transition", js.undefined)
     
     @scala.inline
-    def `setIcon-halo-color`(value: String | StyleFunction | Expression): Self = this.set("icon-halo-color", value.asInstanceOf[js.Any])
+    def `setIcon-halo-colorUndefined`: Self = StObject.set(x, "icon-halo-color", js.undefined)
     
     @scala.inline
-    def `deleteIcon-halo-color`: Self = this.set("icon-halo-color", js.undefined)
+    def `setIcon-halo-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "icon-halo-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-halo-color-transition`(value: Transition): Self = this.set("icon-halo-color-transition", value.asInstanceOf[js.Any])
+    def `setIcon-halo-width-transition`(value: Transition): Self = StObject.set(x, "icon-halo-width-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIcon-halo-color-transition`: Self = this.set("icon-halo-color-transition", js.undefined)
+    def `setIcon-halo-width-transitionUndefined`: Self = StObject.set(x, "icon-halo-width-transition", js.undefined)
     
     @scala.inline
-    def `setIcon-halo-width`(value: Double | StyleFunction | Expression): Self = this.set("icon-halo-width", value.asInstanceOf[js.Any])
+    def `setIcon-halo-widthUndefined`: Self = StObject.set(x, "icon-halo-width", js.undefined)
     
     @scala.inline
-    def `deleteIcon-halo-width`: Self = this.set("icon-halo-width", js.undefined)
+    def `setIcon-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "icon-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-halo-width-transition`(value: Transition): Self = this.set("icon-halo-width-transition", value.asInstanceOf[js.Any])
+    def `setIcon-opacity-transition`(value: Transition): Self = StObject.set(x, "icon-opacity-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIcon-halo-width-transition`: Self = this.set("icon-halo-width-transition", js.undefined)
+    def `setIcon-opacity-transitionUndefined`: Self = StObject.set(x, "icon-opacity-transition", js.undefined)
     
     @scala.inline
-    def `setIcon-opacity`(value: Double | StyleFunction | Expression): Self = this.set("icon-opacity", value.asInstanceOf[js.Any])
+    def `setIcon-opacityUndefined`: Self = StObject.set(x, "icon-opacity", js.undefined)
     
     @scala.inline
-    def `deleteIcon-opacity`: Self = this.set("icon-opacity", js.undefined)
+    def `setIcon-translate`(value: js.Array[Double] | Expression): Self = StObject.set(x, "icon-translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-opacity-transition`(value: Transition): Self = this.set("icon-opacity-transition", value.asInstanceOf[js.Any])
+    def `setIcon-translate-anchor`(value: map | viewport): Self = StObject.set(x, "icon-translate-anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIcon-opacity-transition`: Self = this.set("icon-opacity-transition", js.undefined)
+    def `setIcon-translate-anchorUndefined`: Self = StObject.set(x, "icon-translate-anchor", js.undefined)
     
     @scala.inline
-    def `setIcon-translateVarargs`(value: Double*): Self = this.set("icon-translate", js.Array(value :_*))
+    def `setIcon-translate-transition`(value: Transition): Self = StObject.set(x, "icon-translate-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-translate`(value: js.Array[Double] | Expression): Self = this.set("icon-translate", value.asInstanceOf[js.Any])
+    def `setIcon-translate-transitionUndefined`: Self = StObject.set(x, "icon-translate-transition", js.undefined)
     
     @scala.inline
-    def `deleteIcon-translate`: Self = this.set("icon-translate", js.undefined)
+    def `setIcon-translateUndefined`: Self = StObject.set(x, "icon-translate", js.undefined)
     
     @scala.inline
-    def `setIcon-translate-anchor`(value: map | viewport): Self = this.set("icon-translate-anchor", value.asInstanceOf[js.Any])
+    def `setIcon-translateVarargs`(value: Double*): Self = StObject.set(x, "icon-translate", js.Array(value :_*))
     
     @scala.inline
-    def `deleteIcon-translate-anchor`: Self = this.set("icon-translate-anchor", js.undefined)
+    def `setText-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "text-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIcon-translate-transition`(value: Transition): Self = this.set("icon-translate-transition", value.asInstanceOf[js.Any])
+    def `setText-color-transition`(value: Transition): Self = StObject.set(x, "text-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIcon-translate-transition`: Self = this.set("icon-translate-transition", js.undefined)
+    def `setText-color-transitionUndefined`: Self = StObject.set(x, "text-color-transition", js.undefined)
     
     @scala.inline
-    def `setText-color`(value: String | StyleFunction | Expression): Self = this.set("text-color", value.asInstanceOf[js.Any])
+    def `setText-colorUndefined`: Self = StObject.set(x, "text-color", js.undefined)
     
     @scala.inline
-    def `deleteText-color`: Self = this.set("text-color", js.undefined)
+    def `setText-halo-blur`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "text-halo-blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-color-transition`(value: Transition): Self = this.set("text-color-transition", value.asInstanceOf[js.Any])
+    def `setText-halo-blur-transition`(value: Transition): Self = StObject.set(x, "text-halo-blur-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteText-color-transition`: Self = this.set("text-color-transition", js.undefined)
+    def `setText-halo-blur-transitionUndefined`: Self = StObject.set(x, "text-halo-blur-transition", js.undefined)
     
     @scala.inline
-    def `setText-halo-blur`(value: Double | StyleFunction | Expression): Self = this.set("text-halo-blur", value.asInstanceOf[js.Any])
+    def `setText-halo-blurUndefined`: Self = StObject.set(x, "text-halo-blur", js.undefined)
     
     @scala.inline
-    def `deleteText-halo-blur`: Self = this.set("text-halo-blur", js.undefined)
+    def `setText-halo-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "text-halo-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-halo-blur-transition`(value: Transition): Self = this.set("text-halo-blur-transition", value.asInstanceOf[js.Any])
+    def `setText-halo-color-transition`(value: Transition): Self = StObject.set(x, "text-halo-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteText-halo-blur-transition`: Self = this.set("text-halo-blur-transition", js.undefined)
+    def `setText-halo-color-transitionUndefined`: Self = StObject.set(x, "text-halo-color-transition", js.undefined)
     
     @scala.inline
-    def `setText-halo-color`(value: String | StyleFunction | Expression): Self = this.set("text-halo-color", value.asInstanceOf[js.Any])
+    def `setText-halo-colorUndefined`: Self = StObject.set(x, "text-halo-color", js.undefined)
     
     @scala.inline
-    def `deleteText-halo-color`: Self = this.set("text-halo-color", js.undefined)
+    def `setText-halo-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "text-halo-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-halo-color-transition`(value: Transition): Self = this.set("text-halo-color-transition", value.asInstanceOf[js.Any])
+    def `setText-halo-width-transition`(value: Transition): Self = StObject.set(x, "text-halo-width-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteText-halo-color-transition`: Self = this.set("text-halo-color-transition", js.undefined)
+    def `setText-halo-width-transitionUndefined`: Self = StObject.set(x, "text-halo-width-transition", js.undefined)
     
     @scala.inline
-    def `setText-halo-width`(value: Double | StyleFunction | Expression): Self = this.set("text-halo-width", value.asInstanceOf[js.Any])
+    def `setText-halo-widthUndefined`: Self = StObject.set(x, "text-halo-width", js.undefined)
     
     @scala.inline
-    def `deleteText-halo-width`: Self = this.set("text-halo-width", js.undefined)
+    def `setText-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "text-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-halo-width-transition`(value: Transition): Self = this.set("text-halo-width-transition", value.asInstanceOf[js.Any])
+    def `setText-opacity-transition`(value: Transition): Self = StObject.set(x, "text-opacity-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteText-halo-width-transition`: Self = this.set("text-halo-width-transition", js.undefined)
+    def `setText-opacity-transitionUndefined`: Self = StObject.set(x, "text-opacity-transition", js.undefined)
     
     @scala.inline
-    def `setText-opacity`(value: Double | StyleFunction | Expression): Self = this.set("text-opacity", value.asInstanceOf[js.Any])
+    def `setText-opacityUndefined`: Self = StObject.set(x, "text-opacity", js.undefined)
     
     @scala.inline
-    def `deleteText-opacity`: Self = this.set("text-opacity", js.undefined)
+    def `setText-translate`(value: js.Array[Double] | Expression): Self = StObject.set(x, "text-translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-opacity-transition`(value: Transition): Self = this.set("text-opacity-transition", value.asInstanceOf[js.Any])
+    def `setText-translate-anchor`(value: map | viewport): Self = StObject.set(x, "text-translate-anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteText-opacity-transition`: Self = this.set("text-opacity-transition", js.undefined)
+    def `setText-translate-anchorUndefined`: Self = StObject.set(x, "text-translate-anchor", js.undefined)
     
     @scala.inline
-    def `setText-translateVarargs`(value: Double*): Self = this.set("text-translate", js.Array(value :_*))
+    def `setText-translate-transition`(value: Transition): Self = StObject.set(x, "text-translate-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-translate`(value: js.Array[Double] | Expression): Self = this.set("text-translate", value.asInstanceOf[js.Any])
+    def `setText-translate-transitionUndefined`: Self = StObject.set(x, "text-translate-transition", js.undefined)
     
     @scala.inline
-    def `deleteText-translate`: Self = this.set("text-translate", js.undefined)
+    def `setText-translateUndefined`: Self = StObject.set(x, "text-translate", js.undefined)
     
     @scala.inline
-    def `setText-translate-anchor`(value: map | viewport): Self = this.set("text-translate-anchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteText-translate-anchor`: Self = this.set("text-translate-anchor", js.undefined)
-    
-    @scala.inline
-    def `setText-translate-transition`(value: Transition): Self = this.set("text-translate-transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteText-translate-transition`: Self = this.set("text-translate-transition", js.undefined)
+    def `setText-translateVarargs`(value: Double*): Self = StObject.set(x, "text-translate", js.Array(value :_*))
   }
 }

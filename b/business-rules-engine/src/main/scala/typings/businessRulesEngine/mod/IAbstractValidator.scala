@@ -1,11 +1,12 @@
 package typings.businessRulesEngine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAbstractValidator[T] extends js.Object {
+trait IAbstractValidator[T] extends StObject {
   
   def CreateAbstractListRule(name: String): IAbstractValidationRule[_] = js.native
   
@@ -41,42 +42,30 @@ object IAbstractValidator {
   }
   
   @scala.inline
-  implicit class IAbstractValidatorOps[Self <: IAbstractValidator[_], T] (val x: Self with IAbstractValidator[T]) extends AnyVal {
+  implicit class IAbstractValidatorMutableBuilder[Self <: IAbstractValidator[_], T] (val x: Self with IAbstractValidator[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAbstractListRule(value: String => IAbstractValidationRule[_]): Self = StObject.set(x, "CreateAbstractListRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateAbstractRule(value: String => IAbstractValidationRule[_]): Self = StObject.set(x, "CreateAbstractRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateRule(value: String => IAbstractValidationRule[_]): Self = StObject.set(x, "CreateRule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateAbstractListRule(value: String => IAbstractValidationRule[_]): Self = this.set("CreateAbstractListRule", js.Any.fromFunction1(value))
+    def setForList(value: Boolean): Self = StObject.set(x, "ForList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateAbstractRule(value: String => IAbstractValidationRule[_]): Self = this.set("CreateAbstractRule", js.Any.fromFunction1(value))
+    def setRuleFor(value: (String, IPropertyValidator) => js.Any): Self = StObject.set(x, "RuleFor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateRule(value: String => IAbstractValidationRule[_]): Self = this.set("CreateRule", js.Any.fromFunction1(value))
+    def setValidation(value: IValidatorFce => js.Any): Self = StObject.set(x, "Validation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForList(value: Boolean): Self = this.set("ForList", value.asInstanceOf[js.Any])
+    def setValidationFor(value: (String, IValidatorFce) => js.Any): Self = StObject.set(x, "ValidationFor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRuleFor(value: (String, IPropertyValidator) => js.Any): Self = this.set("RuleFor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValidation(value: IValidatorFce => js.Any): Self = this.set("Validation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidationFor(value: (String, IValidatorFce) => js.Any): Self = this.set("ValidationFor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValidatorFor(value: (String, IAbstractValidator[js.Any]) => js.Any): Self = this.set("ValidatorFor", js.Any.fromFunction2(value))
+    def setValidatorFor(value: (String, IAbstractValidator[js.Any]) => js.Any): Self = StObject.set(x, "ValidatorFor", js.Any.fromFunction2(value))
   }
 }

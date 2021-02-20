@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderReportDisbursement extends js.Object {
+trait OrderReportDisbursement extends StObject {
   
   /** The disbursement amount. */
   var disbursementAmount: js.UndefOr[Price] = js.native
@@ -31,48 +32,36 @@ object OrderReportDisbursement {
   }
   
   @scala.inline
-  implicit class OrderReportDisbursementOps[Self <: OrderReportDisbursement] (val x: Self) extends AnyVal {
+  implicit class OrderReportDisbursementMutableBuilder[Self <: OrderReportDisbursement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisbursementAmount(value: Price): Self = StObject.set(x, "disbursementAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisbursementAmountUndefined: Self = StObject.set(x, "disbursementAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisbursementCreationDate(value: String): Self = StObject.set(x, "disbursementCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisbursementAmount(value: Price): Self = this.set("disbursementAmount", value.asInstanceOf[js.Any])
+    def setDisbursementCreationDateUndefined: Self = StObject.set(x, "disbursementCreationDate", js.undefined)
     
     @scala.inline
-    def deleteDisbursementAmount: Self = this.set("disbursementAmount", js.undefined)
+    def setDisbursementDate(value: String): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisbursementCreationDate(value: String): Self = this.set("disbursementCreationDate", value.asInstanceOf[js.Any])
+    def setDisbursementDateUndefined: Self = StObject.set(x, "disbursementDate", js.undefined)
     
     @scala.inline
-    def deleteDisbursementCreationDate: Self = this.set("disbursementCreationDate", js.undefined)
+    def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisbursementDate(value: String): Self = this.set("disbursementDate", value.asInstanceOf[js.Any])
+    def setDisbursementIdUndefined: Self = StObject.set(x, "disbursementId", js.undefined)
     
     @scala.inline
-    def deleteDisbursementDate: Self = this.set("disbursementDate", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisbursementId(value: String): Self = this.set("disbursementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisbursementId: Self = this.set("disbursementId", js.undefined)
-    
-    @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
   }
 }

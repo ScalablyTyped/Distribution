@@ -1,12 +1,13 @@
 package typings.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --设置
 @js.native
-trait AuthSetting extends js.Object {
+trait AuthSetting extends StObject {
   
   /**
     * 通讯地址，对应接口 wx.chooseAddress
@@ -65,66 +66,54 @@ object AuthSetting {
   }
   
   @scala.inline
-  implicit class AuthSettingOps[Self <: AuthSetting] (val x: Self) extends AnyVal {
+  implicit class AuthSettingMutableBuilder[Self <: AuthSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScopeDotaddress(value: Boolean): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScopeDotaddressUndefined: Self = StObject.set(x, "scope.address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScopeDotcamera(value: Boolean): Self = StObject.set(x, "scope.camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotaddress(value: Boolean): Self = this.set("scope.address", value.asInstanceOf[js.Any])
+    def setScopeDotcameraUndefined: Self = StObject.set(x, "scope.camera", js.undefined)
     
     @scala.inline
-    def deleteScopeDotaddress: Self = this.set("scope.address", js.undefined)
+    def setScopeDotinvoiceTitle(value: Boolean): Self = StObject.set(x, "scope.invoiceTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotcamera(value: Boolean): Self = this.set("scope.camera", value.asInstanceOf[js.Any])
+    def setScopeDotinvoiceTitleUndefined: Self = StObject.set(x, "scope.invoiceTitle", js.undefined)
     
     @scala.inline
-    def deleteScopeDotcamera: Self = this.set("scope.camera", js.undefined)
+    def setScopeDotrecord(value: Boolean): Self = StObject.set(x, "scope.record", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotinvoiceTitle(value: Boolean): Self = this.set("scope.invoiceTitle", value.asInstanceOf[js.Any])
+    def setScopeDotrecordUndefined: Self = StObject.set(x, "scope.record", js.undefined)
     
     @scala.inline
-    def deleteScopeDotinvoiceTitle: Self = this.set("scope.invoiceTitle", js.undefined)
+    def setScopeDotuserInfo(value: Boolean): Self = StObject.set(x, "scope.userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotrecord(value: Boolean): Self = this.set("scope.record", value.asInstanceOf[js.Any])
+    def setScopeDotuserInfoUndefined: Self = StObject.set(x, "scope.userInfo", js.undefined)
     
     @scala.inline
-    def deleteScopeDotrecord: Self = this.set("scope.record", js.undefined)
+    def setScopeDotuserLocation(value: Boolean): Self = StObject.set(x, "scope.userLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotuserInfo(value: Boolean): Self = this.set("scope.userInfo", value.asInstanceOf[js.Any])
+    def setScopeDotuserLocationUndefined: Self = StObject.set(x, "scope.userLocation", js.undefined)
     
     @scala.inline
-    def deleteScopeDotuserInfo: Self = this.set("scope.userInfo", js.undefined)
+    def setScopeDotwerun(value: Boolean): Self = StObject.set(x, "scope.werun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotuserLocation(value: Boolean): Self = this.set("scope.userLocation", value.asInstanceOf[js.Any])
+    def setScopeDotwerunUndefined: Self = StObject.set(x, "scope.werun", js.undefined)
     
     @scala.inline
-    def deleteScopeDotuserLocation: Self = this.set("scope.userLocation", js.undefined)
+    def setScopeDotwritePhotosAlbum(value: Boolean): Self = StObject.set(x, "scope.writePhotosAlbum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopeDotwerun(value: Boolean): Self = this.set("scope.werun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopeDotwerun: Self = this.set("scope.werun", js.undefined)
-    
-    @scala.inline
-    def setScopeDotwritePhotosAlbum(value: Boolean): Self = this.set("scope.writePhotosAlbum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopeDotwritePhotosAlbum: Self = this.set("scope.writePhotosAlbum", js.undefined)
+    def setScopeDotwritePhotosAlbumUndefined: Self = StObject.set(x, "scope.writePhotosAlbum", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RiceDeltaEncoding extends js.Object {
+trait RiceDeltaEncoding extends StObject {
   
   /** The encoded deltas that are encoded using the Golomb-Rice coder. */
   var encodedData: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object RiceDeltaEncoding {
   }
   
   @scala.inline
-  implicit class RiceDeltaEncodingOps[Self <: RiceDeltaEncoding] (val x: Self) extends AnyVal {
+  implicit class RiceDeltaEncodingMutableBuilder[Self <: RiceDeltaEncoding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstValue(value: String): Self = StObject.set(x, "firstValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodedData(value: String): Self = this.set("encodedData", value.asInstanceOf[js.Any])
+    def setFirstValueUndefined: Self = StObject.set(x, "firstValue", js.undefined)
     
     @scala.inline
-    def deleteEncodedData: Self = this.set("encodedData", js.undefined)
+    def setNumEntries(value: Double): Self = StObject.set(x, "numEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstValue(value: String): Self = this.set("firstValue", value.asInstanceOf[js.Any])
+    def setNumEntriesUndefined: Self = StObject.set(x, "numEntries", js.undefined)
     
     @scala.inline
-    def deleteFirstValue: Self = this.set("firstValue", js.undefined)
+    def setRiceParameter(value: Double): Self = StObject.set(x, "riceParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumEntries(value: Double): Self = this.set("numEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumEntries: Self = this.set("numEntries", js.undefined)
-    
-    @scala.inline
-    def setRiceParameter(value: Double): Self = this.set("riceParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiceParameter: Self = this.set("riceParameter", js.undefined)
+    def setRiceParameterUndefined: Self = StObject.set(x, "riceParameter", js.undefined)
   }
 }

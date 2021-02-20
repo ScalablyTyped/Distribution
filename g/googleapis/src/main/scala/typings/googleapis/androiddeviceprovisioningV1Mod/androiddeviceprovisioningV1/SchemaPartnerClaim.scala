@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Identifies one claim request.
   */
 @js.native
-trait SchemaPartnerClaim extends js.Object {
+trait SchemaPartnerClaim extends StObject {
   
   /**
     * Required. The ID of the customer for whom the device is being claimed.
@@ -39,42 +40,30 @@ object SchemaPartnerClaim {
   }
   
   @scala.inline
-  implicit class SchemaPartnerClaimOps[Self <: SchemaPartnerClaim] (val x: Self) extends AnyVal {
+  implicit class SchemaPartnerClaimMutableBuilder[Self <: SchemaPartnerClaim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = this.set("deviceIdentifier", value.asInstanceOf[js.Any])
+    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
     @scala.inline
-    def deleteDeviceIdentifier: Self = this.set("deviceIdentifier", js.undefined)
+    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
-    
-    @scala.inline
-    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

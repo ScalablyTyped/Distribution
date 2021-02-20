@@ -78,12 +78,13 @@ import typings.qtip2.qtip2Strings.styleDotwidth
 import typings.qtip2.qtip2Strings.suppress
 import typings.qtip2.qtip2Strings.toggle
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def qtip(): JQuery = js.native
   def qtip(methodName: String): js.Any = js.native

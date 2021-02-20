@@ -8,14 +8,14 @@ import typings.opentelemetryTracing.noopSpanProcessorMod.NoopSpanProcessor
 import typings.opentelemetryTracing.spanProcessorMod.SpanProcessor
 import typings.opentelemetryTracing.typesMod.SDKRegistrationConfig
 import typings.opentelemetryTracing.typesMod.TracerConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/BasicTracerProvider", JSImport.Namespace)
-@js.native
-object basicTracerProviderMod extends js.Object {
+object basicTracerProviderMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/BasicTracerProvider", "BasicTracerProvider")
   @js.native
   class BasicTracerProvider () extends TracerProvider {
     def this(config: TracerConfig) = this()

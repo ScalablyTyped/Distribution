@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class RelatedItemManager ()
   extends typings.sharepoint.SP.ClientObject
-/* static members */
-@JSGlobal("SP.RelatedItemManager")
-@js.native
-object RelatedItemManager extends js.Object {
+object RelatedItemManager {
   
+  /* static member */
+  @JSGlobal("SP.RelatedItemManager.addSingleLink")
+  @js.native
   def addSingleLink(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceListName: String,
@@ -24,6 +25,9 @@ object RelatedItemManager extends js.Object {
     TryAddReverseLink: Boolean
   ): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.RelatedItemManager.addSingleLinkFromUrl")
+  @js.native
   def addSingleLinkFromUrl(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceItemUrl: String,
@@ -32,6 +36,9 @@ object RelatedItemManager extends js.Object {
     TryAddReverseLink: Boolean
   ): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.RelatedItemManager.addSingleLinkToUrl")
+  @js.native
   def addSingleLinkToUrl(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceListName: String,
@@ -40,6 +47,9 @@ object RelatedItemManager extends js.Object {
     TryAddReverseLink: Boolean
   ): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.RelatedItemManager.deleteSingleLink")
+  @js.native
   def deleteSingleLink(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     SourceListName: String,
@@ -51,7 +61,13 @@ object RelatedItemManager extends js.Object {
     TryDeleteReverseLink: Boolean
   ): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.RelatedItemManager.getPageOneRelatedItems")
+  @js.native
   def getPageOneRelatedItems(context: typings.sharepoint.SP.ClientRuntimeContext, SourceListName: String, SourceItemID: Double): js.Array[typings.sharepoint.SP.RelatedItem] = js.native
   
+  /* static member */
+  @JSGlobal("SP.RelatedItemManager.getRelatedItems")
+  @js.native
   def getRelatedItems(context: typings.sharepoint.SP.ClientRuntimeContext, SourceListName: String, SourceItemID: Double): js.Array[typings.sharepoint.SP.RelatedItem] = js.native
 }

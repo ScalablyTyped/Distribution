@@ -1,13 +1,14 @@
 package typings.cmdShim
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cmd-shim", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("cmd-shim", JSImport.Namespace)
+  @js.native
   def apply(from: String, to: String, cb: js.Function1[/* err */ js.Any, Unit]): js.UndefOr[scala.Nothing] = js.native
   
   /**
@@ -19,5 +20,7 @@ object mod extends js.Object {
     *         if (err) throw err;
     *     });
     */
+  @JSImport("cmd-shim", "ifExists")
+  @js.native
   def ifExists(from: String, to: String, cb: js.Function1[/* err */ js.Any, Unit]): js.UndefOr[scala.Nothing] = js.native
 }

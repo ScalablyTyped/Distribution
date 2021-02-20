@@ -1,13 +1,14 @@
 package typings.popperjsCore.anon
 
 import typings.popperjsCore.typesMod.PositioningStrategy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/types.OptionsGeneric<any>> */
 @js.native
-trait PartialOptionsGenericany extends js.Object {
+trait PartialOptionsGenericany extends StObject {
   
   var modifiers: js.UndefOr[js.Array[_]] = js.native
   
@@ -26,45 +27,33 @@ object PartialOptionsGenericany {
   }
   
   @scala.inline
-  implicit class PartialOptionsGenericanyOps[Self <: PartialOptionsGenericany] (val x: Self) extends AnyVal {
+  implicit class PartialOptionsGenericanyMutableBuilder[Self <: PartialOptionsGenericany] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifiers(value: js.Array[_]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiersVarargs(value: js.Any*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
     @scala.inline
-    def setModifiersVarargs(value: js.Any*): Self = this.set("modifiers", js.Array(value :_*))
+    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModifiers(value: js.Array[_]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = this.set("onFirstUpdate", js.Any.fromFunction1(value))
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def deleteOnFirstUpdate: Self = this.set("onFirstUpdate", js.undefined)
+    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

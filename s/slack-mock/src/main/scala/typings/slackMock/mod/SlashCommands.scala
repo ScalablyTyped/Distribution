@@ -1,11 +1,12 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlashCommands[T] extends js.Object {
+trait SlashCommands[T] extends StObject {
   
   def addResponse(opts: SlashCommandOptions[T]): Unit = js.native
   
@@ -29,33 +30,21 @@ object SlashCommands {
   }
   
   @scala.inline
-  implicit class SlashCommandsOps[Self <: SlashCommands[_], T] (val x: Self with SlashCommands[T]) extends AnyVal {
+  implicit class SlashCommandsMutableBuilder[Self <: SlashCommands[_], T] (val x: Self with SlashCommands[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResponse(value: SlashCommandOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalls(value: js.Array[SlashCommandCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallsVarargs(value: SlashCommandCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
     @scala.inline
-    def setAddResponse(value: SlashCommandOptions[T] => Unit): Self = this.set("addResponse", js.Any.fromFunction1(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallsVarargs(value: SlashCommandCall[T]*): Self = this.set("calls", js.Array(value :_*))
-    
-    @scala.inline
-    def setCalls(value: js.Array[SlashCommandCall[T]]): Self = this.set("calls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSend(value: (SlashCommandUrl, T) => js.Promise[Unit]): Self = this.set("send", js.Any.fromFunction2(value))
+    def setSend(value: (SlashCommandUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
   }
 }

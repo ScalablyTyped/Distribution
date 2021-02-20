@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sdb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see OfficeDatabaseDocument
   */
 @js.native
-trait XDocumentDataSource extends js.Object {
+trait XDocumentDataSource extends StObject {
   
   /**
     * provides access to the one and only {@link OfficeDatabaseDocument} which the data source is based on.
@@ -37,21 +38,9 @@ object XDocumentDataSource {
   }
   
   @scala.inline
-  implicit class XDocumentDataSourceOps[Self <: XDocumentDataSource] (val x: Self) extends AnyVal {
+  implicit class XDocumentDataSourceMutableBuilder[Self <: XDocumentDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatabaseDocument(value: XOfficeDatabaseDocument): Self = this.set("DatabaseDocument", value.asInstanceOf[js.Any])
+    def setDatabaseDocument(value: XOfficeDatabaseDocument): Self = StObject.set(x, "DatabaseDocument", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.rockset.mod
 
 import typings.rockset.rocksetStrings.PASS
 import typings.rockset.rocksetStrings.SKIP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputField extends js.Object {
+trait InputField extends StObject {
   
   // The name of a field, parsed as a SQL qualified name
   var field_name: js.UndefOr[String] = js.native
@@ -30,42 +31,30 @@ object InputField {
   }
   
   @scala.inline
-  implicit class InputFieldOps[Self <: InputField] (val x: Self) extends AnyVal {
+  implicit class InputFieldMutableBuilder[Self <: InputField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIf_missing(value: SKIP | PASS): Self = StObject.set(x, "if_missing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField_name(value: String): Self = this.set("field_name", value.asInstanceOf[js.Any])
+    def setIf_missingUndefined: Self = StObject.set(x, "if_missing", js.undefined)
     
     @scala.inline
-    def deleteField_name: Self = this.set("field_name", js.undefined)
+    def setIs_drop(value: Boolean): Self = StObject.set(x, "is_drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIf_missing(value: SKIP | PASS): Self = this.set("if_missing", value.asInstanceOf[js.Any])
+    def setIs_dropUndefined: Self = StObject.set(x, "is_drop", js.undefined)
     
     @scala.inline
-    def deleteIf_missing: Self = this.set("if_missing", js.undefined)
+    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_drop(value: Boolean): Self = this.set("is_drop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIs_drop: Self = this.set("is_drop", js.undefined)
-    
-    @scala.inline
-    def setParam(value: String): Self = this.set("param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
   }
 }

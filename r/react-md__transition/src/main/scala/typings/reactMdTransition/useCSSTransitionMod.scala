@@ -6,14 +6,15 @@ import typings.reactMdTransition.constantsMod.TransitionStage
 import typings.reactMdTransition.typesMod.CSSTransitionOptions
 import typings.reactMdTransition.typesMod.CSSTransitionProvidedProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/transition/types/useCSSTransition", JSImport.Namespace)
-@js.native
-object useCSSTransitionMod extends js.Object {
+object useCSSTransitionMod {
   
+  @JSImport("@react-md/transition/types/useCSSTransition", "useCSSTransition")
+  @js.native
   def useCSSTransition[E /* <: HTMLElement */](
     hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNameClassNamesRef: CSSTransitionOptions[E]
   ): CSSTransitionReturnValue[E] = js.native

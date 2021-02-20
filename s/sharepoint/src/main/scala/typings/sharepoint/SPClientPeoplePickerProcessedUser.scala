@@ -1,47 +1,48 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SPClientPeoplePickerProcessedUser extends js.Object {
+trait SPClientPeoplePickerProcessedUser extends StObject {
   
   def BuildUserHTML(): String = js.native
   
-   // '',
+  // '',
   var DeleteUserElementId: String = js.native
   
-   // '',
+  // '',
   var DisplayElementId: String = js.native
   
-   // '',
+  // '',
   var DisplayName: String = js.native
   
-   // null,
+  // null,
   var ErrorDescription: String = js.native
   
-   // '',
+  // '',
   var PresenceElementId: String = js.native
   
-   // '',
+  // '',
   var ResolveText: String = js.native
   
   def ResolvedAsUnverifiedEmail(): String = js.native
   
-   // null,
+  // null,
   var ResolvedUser: Boolean = js.native
   
-   // '',
+  // '',
   var SID: String = js.native
   
-   // '',
+  // '',
   var SIPAddress: String = js.native
   
-   // true,
+  // true,
   var Suggestions: js.Array[ISPClientAutoFillData] = js.native
   
-   // '',
+  // '',
   def UpdateResolvedUser(newUserInfo: ISPClientPeoplePickerEntity, strNewElementId: String): Unit = js.native
   
   def UpdateSuggestions(entity: ISPClientPeoplePickerEntity): Unit = js.native
@@ -50,7 +51,7 @@ trait SPClientPeoplePickerProcessedUser extends js.Object {
   
   var UserContainerElementId: String = js.native
   
-   // '',
+  // '',
   var UserInfo: ISPClientPeoplePickerEntity = js.native
 }
 object SPClientPeoplePickerProcessedUser {
@@ -80,72 +81,60 @@ object SPClientPeoplePickerProcessedUser {
   }
   
   @scala.inline
-  implicit class SPClientPeoplePickerProcessedUserOps[Self <: SPClientPeoplePickerProcessedUser] (val x: Self) extends AnyVal {
+  implicit class SPClientPeoplePickerProcessedUserMutableBuilder[Self <: SPClientPeoplePickerProcessedUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildUserHTML(value: () => String): Self = StObject.set(x, "BuildUserHTML", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteUserElementId(value: String): Self = StObject.set(x, "DeleteUserElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayElementId(value: String): Self = StObject.set(x, "DisplayElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildUserHTML(value: () => String): Self = this.set("BuildUserHTML", js.Any.fromFunction0(value))
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteUserElementId(value: String): Self = this.set("DeleteUserElementId", value.asInstanceOf[js.Any])
+    def setErrorDescription(value: String): Self = StObject.set(x, "ErrorDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayElementId(value: String): Self = this.set("DisplayElementId", value.asInstanceOf[js.Any])
+    def setPresenceElementId(value: String): Self = StObject.set(x, "PresenceElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setResolveText(value: String): Self = StObject.set(x, "ResolveText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDescription(value: String): Self = this.set("ErrorDescription", value.asInstanceOf[js.Any])
+    def setResolvedAsUnverifiedEmail(value: () => String): Self = StObject.set(x, "ResolvedAsUnverifiedEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPresenceElementId(value: String): Self = this.set("PresenceElementId", value.asInstanceOf[js.Any])
+    def setResolvedUser(value: Boolean): Self = StObject.set(x, "ResolvedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveText(value: String): Self = this.set("ResolveText", value.asInstanceOf[js.Any])
+    def setSID(value: String): Self = StObject.set(x, "SID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedAsUnverifiedEmail(value: () => String): Self = this.set("ResolvedAsUnverifiedEmail", js.Any.fromFunction0(value))
+    def setSIPAddress(value: String): Self = StObject.set(x, "SIPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedUser(value: Boolean): Self = this.set("ResolvedUser", value.asInstanceOf[js.Any])
+    def setSuggestions(value: js.Array[ISPClientAutoFillData]): Self = StObject.set(x, "Suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSID(value: String): Self = this.set("SID", value.asInstanceOf[js.Any])
+    def setSuggestionsVarargs(value: ISPClientAutoFillData*): Self = StObject.set(x, "Suggestions", js.Array(value :_*))
     
     @scala.inline
-    def setSIPAddress(value: String): Self = this.set("SIPAddress", value.asInstanceOf[js.Any])
+    def setUpdateResolvedUser(value: (ISPClientPeoplePickerEntity, String) => Unit): Self = StObject.set(x, "UpdateResolvedUser", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSuggestionsVarargs(value: ISPClientAutoFillData*): Self = this.set("Suggestions", js.Array(value :_*))
+    def setUpdateSuggestions(value: ISPClientPeoplePickerEntity => Unit): Self = StObject.set(x, "UpdateSuggestions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSuggestions(value: js.Array[ISPClientAutoFillData]): Self = this.set("Suggestions", value.asInstanceOf[js.Any])
+    def setUpdateUserMaxWidth(value: () => Unit): Self = StObject.set(x, "UpdateUserMaxWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUpdateResolvedUser(value: (ISPClientPeoplePickerEntity, String) => Unit): Self = this.set("UpdateResolvedUser", js.Any.fromFunction2(value))
+    def setUserContainerElementId(value: String): Self = StObject.set(x, "UserContainerElementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSuggestions(value: ISPClientPeoplePickerEntity => Unit): Self = this.set("UpdateSuggestions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateUserMaxWidth(value: () => Unit): Self = this.set("UpdateUserMaxWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUserContainerElementId(value: String): Self = this.set("UserContainerElementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserInfo(value: ISPClientPeoplePickerEntity): Self = this.set("UserInfo", value.asInstanceOf[js.Any])
+    def setUserInfo(value: ISPClientPeoplePickerEntity): Self = StObject.set(x, "UserInfo", value.asInstanceOf[js.Any])
   }
 }

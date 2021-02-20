@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCapacityReservationUsageResult extends js.Object {
+trait GetCapacityReservationUsageResult extends StObject {
   
   /**
     * The remaining capacity. Indicates the number of instances that can be launched in the Capacity Reservation.
@@ -51,63 +52,51 @@ object GetCapacityReservationUsageResult {
   }
   
   @scala.inline
-  implicit class GetCapacityReservationUsageResultOps[Self <: GetCapacityReservationUsageResult] (val x: Self) extends AnyVal {
+  implicit class GetCapacityReservationUsageResultMutableBuilder[Self <: GetCapacityReservationUsageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableInstanceCount(value: Integer): Self = StObject.set(x, "AvailableInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableInstanceCountUndefined: Self = StObject.set(x, "AvailableInstanceCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityReservationId(value: String): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableInstanceCount(value: Integer): Self = this.set("AvailableInstanceCount", value.asInstanceOf[js.Any])
+    def setCapacityReservationIdUndefined: Self = StObject.set(x, "CapacityReservationId", js.undefined)
     
     @scala.inline
-    def deleteAvailableInstanceCount: Self = this.set("AvailableInstanceCount", js.undefined)
+    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityReservationId(value: String): Self = this.set("CapacityReservationId", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteCapacityReservationId: Self = this.set("CapacityReservationId", js.undefined)
+    def setInstanceUsages(value: InstanceUsageSet): Self = StObject.set(x, "InstanceUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setInstanceUsagesUndefined: Self = StObject.set(x, "InstanceUsages", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setInstanceUsagesVarargs(value: InstanceUsage*): Self = StObject.set(x, "InstanceUsages", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceUsagesVarargs(value: InstanceUsage*): Self = this.set("InstanceUsages", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceUsages(value: InstanceUsageSet): Self = this.set("InstanceUsages", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteInstanceUsages: Self = this.set("InstanceUsages", js.undefined)
+    def setState(value: CapacityReservationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTotalInstanceCount(value: Integer): Self = StObject.set(x, "TotalInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: CapacityReservationState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setTotalInstanceCount(value: Integer): Self = this.set("TotalInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalInstanceCount: Self = this.set("TotalInstanceCount", js.undefined)
+    def setTotalInstanceCountUndefined: Self = StObject.set(x, "TotalInstanceCount", js.undefined)
   }
 }

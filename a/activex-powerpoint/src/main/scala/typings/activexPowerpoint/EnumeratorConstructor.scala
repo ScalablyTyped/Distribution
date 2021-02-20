@@ -83,6 +83,7 @@ import typings.activexPowerpoint.PowerPoint.TextStyleLevel
 import typings.activexPowerpoint.PowerPoint.TextStyleLevels
 import typings.activexPowerpoint.PowerPoint.TextStyles
 import typings.std.Enumerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

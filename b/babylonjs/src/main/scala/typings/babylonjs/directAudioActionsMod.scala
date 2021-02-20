@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.actionMod.Action
 import typings.babylonjs.conditionMod.Condition
 import typings.babylonjs.soundMod.Sound
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Actions/directAudioActions", JSImport.Namespace)
-@js.native
-object directAudioActionsMod extends js.Object {
+object directAudioActionsMod {
   
+  @JSImport("babylonjs/Actions/directAudioActions", "PlaySoundAction")
   @js.native
   class PlaySoundAction protected () extends Action {
     /**
@@ -25,6 +25,7 @@ object directAudioActionsMod extends js.Object {
     var _sound: js.Any = js.native
   }
   
+  @JSImport("babylonjs/Actions/directAudioActions", "StopSoundAction")
   @js.native
   class StopSoundAction protected () extends Action {
     /**

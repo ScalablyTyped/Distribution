@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListTeamMemberWagesResponse")
 @js.native
-class ListTeamMemberWagesResponse () extends js.Object {
+class ListTeamMemberWagesResponse () extends StObject {
   
   /**
     * Value supplied in the subsequent request to fetch the next next page of Team Member Wage results.

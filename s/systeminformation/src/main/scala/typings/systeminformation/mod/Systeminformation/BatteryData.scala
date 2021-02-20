@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatteryData extends js.Object {
+trait BatteryData extends StObject {
   
   var acconnected: Boolean = js.native
   
@@ -63,63 +64,51 @@ object BatteryData {
   }
   
   @scala.inline
-  implicit class BatteryDataOps[Self <: BatteryData] (val x: Self) extends AnyVal {
+  implicit class BatteryDataMutableBuilder[Self <: BatteryData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcconnected(value: Boolean): Self = StObject.set(x, "acconnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityUnit(value: String): Self = StObject.set(x, "capacityUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentcapacity(value: Double): Self = StObject.set(x, "currentcapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcconnected(value: Boolean): Self = this.set("acconnected", value.asInstanceOf[js.Any])
+    def setCyclecount(value: Double): Self = StObject.set(x, "cyclecount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityUnit(value: String): Self = this.set("capacityUnit", value.asInstanceOf[js.Any])
+    def setDesignedcapacity(value: Double): Self = StObject.set(x, "designedcapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentcapacity(value: Double): Self = this.set("currentcapacity", value.asInstanceOf[js.Any])
+    def setHasbattery(value: Boolean): Self = StObject.set(x, "hasbattery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCyclecount(value: Double): Self = this.set("cyclecount", value.asInstanceOf[js.Any])
+    def setIscharging(value: Boolean): Self = StObject.set(x, "ischarging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesignedcapacity(value: Double): Self = this.set("designedcapacity", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasbattery(value: Boolean): Self = this.set("hasbattery", value.asInstanceOf[js.Any])
+    def setMaxcapacity(value: Double): Self = StObject.set(x, "maxcapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIscharging(value: Boolean): Self = this.set("ischarging", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxcapacity(value: Double): Self = this.set("maxcapacity", value.asInstanceOf[js.Any])
+    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setTimeremaining(value: Double): Self = StObject.set(x, "timeremaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerial(value: String): Self = this.set("serial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeremaining(value: Double): Self = this.set("timeremaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoltage(value: Double): Self = this.set("voltage", value.asInstanceOf[js.Any])
+    def setVoltage(value: Double): Self = StObject.set(x, "voltage", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTestGridSessionRequest extends js.Object {
+trait GetTestGridSessionRequest extends StObject {
   
   /**
     * The ARN for the project that this session belongs to. See CreateTestGridProject and ListTestGridProjects.
@@ -31,36 +32,24 @@ object GetTestGridSessionRequest {
   }
   
   @scala.inline
-  implicit class GetTestGridSessionRequestOps[Self <: GetTestGridSessionRequest] (val x: Self) extends AnyVal {
+  implicit class GetTestGridSessionRequestMutableBuilder[Self <: GetTestGridSessionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectArnUndefined: Self = StObject.set(x, "projectArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSessionArn(value: DeviceFarmArn): Self = StObject.set(x, "sessionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    def setSessionArnUndefined: Self = StObject.set(x, "sessionArn", js.undefined)
     
     @scala.inline
-    def deleteProjectArn: Self = this.set("projectArn", js.undefined)
+    def setSessionId(value: ResourceId): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionArn(value: DeviceFarmArn): Self = this.set("sessionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionArn: Self = this.set("sessionArn", js.undefined)
-    
-    @scala.inline
-    def setSessionId(value: ResourceId): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe extends js.Object {
+trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe extends StObject {
   
   /**
     * The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.
@@ -46,54 +47,42 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockSizeBytes(value: Double): Self = StObject.set(x, "blockSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockSizeBytesUndefined: Self = StObject.set(x, "blockSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockSizeBytes(value: Double): Self = this.set("blockSizeBytes", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteBlockSizeBytes: Self = this.set("blockSizeBytes", js.undefined)
+    def setEnableDictionaryCompression(value: Boolean): Self = StObject.set(x, "enableDictionaryCompression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setEnableDictionaryCompressionUndefined: Self = StObject.set(x, "enableDictionaryCompression", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setMaxPaddingBytes(value: Double): Self = StObject.set(x, "maxPaddingBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDictionaryCompression(value: Boolean): Self = this.set("enableDictionaryCompression", value.asInstanceOf[js.Any])
+    def setMaxPaddingBytesUndefined: Self = StObject.set(x, "maxPaddingBytes", js.undefined)
     
     @scala.inline
-    def deleteEnableDictionaryCompression: Self = this.set("enableDictionaryCompression", js.undefined)
+    def setPageSizeBytes(value: Double): Self = StObject.set(x, "pageSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPaddingBytes(value: Double): Self = this.set("maxPaddingBytes", value.asInstanceOf[js.Any])
+    def setPageSizeBytesUndefined: Self = StObject.set(x, "pageSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteMaxPaddingBytes: Self = this.set("maxPaddingBytes", js.undefined)
+    def setWriterVersion(value: String): Self = StObject.set(x, "writerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizeBytes(value: Double): Self = this.set("pageSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSizeBytes: Self = this.set("pageSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setWriterVersion(value: String): Self = this.set("writerVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriterVersion: Self = this.set("writerVersion", js.undefined)
+    def setWriterVersionUndefined: Self = StObject.set(x, "writerVersion", js.undefined)
   }
 }

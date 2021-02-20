@@ -1,11 +1,12 @@
 package typings.postmark.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clicks extends js.Object {
+trait Clicks extends StObject {
   
   var Clicks: Double = js.native
   
@@ -22,27 +23,15 @@ object Clicks {
   }
   
   @scala.inline
-  implicit class ClicksOps[Self <: Clicks] (val x: Self) extends AnyVal {
+  implicit class ClicksMutableBuilder[Self <: Clicks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClicks(value: Double): Self = StObject.set(x, "Clicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClicks(value: Double): Self = this.set("Clicks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDate(value: String): Self = this.set("Date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnique(value: Double): Self = this.set("Unique", value.asInstanceOf[js.Any])
+    def setUnique(value: Double): Self = StObject.set(x, "Unique", value.asInstanceOf[js.Any])
   }
 }

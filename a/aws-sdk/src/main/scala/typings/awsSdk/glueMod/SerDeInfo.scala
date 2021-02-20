@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerDeInfo extends js.Object {
+trait SerDeInfo extends StObject {
   
   /**
     * Name of the SerDe.
@@ -31,36 +32,24 @@ object SerDeInfo {
   }
   
   @scala.inline
-  implicit class SerDeInfoOps[Self <: SerDeInfo] (val x: Self) extends AnyVal {
+  implicit class SerDeInfoMutableBuilder[Self <: SerDeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSerializationLibrary(value: NameString): Self = StObject.set(x, "SerializationLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
-    
-    @scala.inline
-    def setSerializationLibrary(value: NameString): Self = this.set("SerializationLibrary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerializationLibrary: Self = this.set("SerializationLibrary", js.undefined)
+    def setSerializationLibraryUndefined: Self = StObject.set(x, "SerializationLibrary", js.undefined)
   }
 }

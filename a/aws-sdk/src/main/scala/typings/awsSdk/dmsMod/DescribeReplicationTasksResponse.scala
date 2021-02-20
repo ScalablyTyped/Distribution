@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeReplicationTasksResponse extends js.Object {
+trait DescribeReplicationTasksResponse extends StObject {
   
   /**
     *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
@@ -26,33 +27,21 @@ object DescribeReplicationTasksResponse {
   }
   
   @scala.inline
-  implicit class DescribeReplicationTasksResponseOps[Self <: DescribeReplicationTasksResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeReplicationTasksResponseMutableBuilder[Self <: DescribeReplicationTasksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationTasks(value: ReplicationTaskList): Self = StObject.set(x, "ReplicationTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setReplicationTasksUndefined: Self = StObject.set(x, "ReplicationTasks", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setReplicationTasksVarargs(value: ReplicationTask*): Self = this.set("ReplicationTasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationTasks(value: ReplicationTaskList): Self = this.set("ReplicationTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationTasks: Self = this.set("ReplicationTasks", js.undefined)
+    def setReplicationTasksVarargs(value: ReplicationTask*): Self = StObject.set(x, "ReplicationTasks", js.Array(value :_*))
   }
 }

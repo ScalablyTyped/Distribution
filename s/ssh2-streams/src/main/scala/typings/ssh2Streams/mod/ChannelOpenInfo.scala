@@ -7,6 +7,7 @@ import typings.ssh2Streams.ssh2StreamsStrings.`forwarded-streamlocal@opensshDotc
 import typings.ssh2Streams.ssh2StreamsStrings.`forwarded-tcpip`
 import typings.ssh2Streams.ssh2StreamsStrings.session
 import typings.ssh2Streams.ssh2StreamsStrings.x11
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,34 +21,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ssh2Streams.mod.opensshDirectStreamLocalChannelInfo
   - typings.ssh2Streams.mod.SessionChannelInfo
 */
-trait ChannelOpenInfo extends js.Object
+trait ChannelOpenInfo extends StObject
 object ChannelOpenInfo {
   
   @scala.inline
-  def SessionChannelInfo(packetSize: Double, sender: Double, `type`: session, window: Double): ChannelOpenInfo = {
-    val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
-  }
-  
-  @scala.inline
-  def opensshDirectStreamLocalChannelInfo(
-    data: SocketChannelData,
-    packetSize: Double,
-    sender: Double,
-    `type`: `direct-streamlocal@opensshDotcom`,
-    window: Double
-  ): ChannelOpenInfo = {
+  def DirectTcpipChannelInfo(data: TcpipChannelData, packetSize: Double, sender: Double, `type`: `direct-tcpip`, window: Double): typings.ssh2Streams.mod.DirectTcpipChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
-  }
-  
-  @scala.inline
-  def opensshAuthAgentChannelInfo(packetSize: Double, sender: Double, `type`: `auth-agent@opensshDotcom`, window: Double): ChannelOpenInfo = {
-    val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
+    __obj.asInstanceOf[typings.ssh2Streams.mod.DirectTcpipChannelInfo]
   }
   
   @scala.inline
@@ -57,10 +38,44 @@ object ChannelOpenInfo {
     sender: Double,
     `type`: `forwarded-tcpip`,
     window: Double
-  ): ChannelOpenInfo = {
+  ): typings.ssh2Streams.mod.ForwardedTcpipChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
+    __obj.asInstanceOf[typings.ssh2Streams.mod.ForwardedTcpipChannelInfo]
+  }
+  
+  @scala.inline
+  def SessionChannelInfo(packetSize: Double, sender: Double, `type`: session, window: Double): typings.ssh2Streams.mod.SessionChannelInfo = {
+    val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.ssh2Streams.mod.SessionChannelInfo]
+  }
+  
+  @scala.inline
+  def X11ChannelInfo(data: X11ChannelData, packetSize: Double, sender: Double, `type`: x11, window: Double): typings.ssh2Streams.mod.X11ChannelInfo = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.ssh2Streams.mod.X11ChannelInfo]
+  }
+  
+  @scala.inline
+  def opensshAuthAgentChannelInfo(packetSize: Double, sender: Double, `type`: `auth-agent@opensshDotcom`, window: Double): typings.ssh2Streams.mod.opensshAuthAgentChannelInfo = {
+    val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.ssh2Streams.mod.opensshAuthAgentChannelInfo]
+  }
+  
+  @scala.inline
+  def opensshDirectStreamLocalChannelInfo(
+    data: SocketChannelData,
+    packetSize: Double,
+    sender: Double,
+    `type`: `direct-streamlocal@opensshDotcom`,
+    window: Double
+  ): typings.ssh2Streams.mod.opensshDirectStreamLocalChannelInfo = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.ssh2Streams.mod.opensshDirectStreamLocalChannelInfo]
   }
   
   @scala.inline
@@ -70,23 +85,9 @@ object ChannelOpenInfo {
     sender: Double,
     `type`: `forwarded-streamlocal@opensshDotcom`,
     window: Double
-  ): ChannelOpenInfo = {
+  ): typings.ssh2Streams.mod.opensshForwardedStreamLocalChannelInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
-  }
-  
-  @scala.inline
-  def X11ChannelInfo(data: X11ChannelData, packetSize: Double, sender: Double, `type`: x11, window: Double): ChannelOpenInfo = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
-  }
-  
-  @scala.inline
-  def DirectTcpipChannelInfo(data: TcpipChannelData, packetSize: Double, sender: Double, `type`: `direct-tcpip`, window: Double): ChannelOpenInfo = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChannelOpenInfo]
+    __obj.asInstanceOf[typings.ssh2Streams.mod.opensshForwardedStreamLocalChannelInfo]
   }
 }

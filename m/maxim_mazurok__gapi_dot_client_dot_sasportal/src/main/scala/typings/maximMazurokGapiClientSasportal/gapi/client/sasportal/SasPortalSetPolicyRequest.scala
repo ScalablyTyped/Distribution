@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SasPortalSetPolicyRequest extends js.Object {
+trait SasPortalSetPolicyRequest extends StObject {
   
   /** Required. The policy to be applied to the `resource`. */
   var policy: js.UndefOr[SasPortalPolicy] = js.native
@@ -22,30 +23,18 @@ object SasPortalSetPolicyRequest {
   }
   
   @scala.inline
-  implicit class SasPortalSetPolicyRequestOps[Self <: SasPortalSetPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class SasPortalSetPolicyRequestMutableBuilder[Self <: SasPortalSetPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicy(value: SasPortalPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: SasPortalPolicy): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
-    
-    @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

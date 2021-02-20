@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVerifyVaultJob extends js.Object {
+trait IVerifyVaultJob extends StObject {
   
   def Clone(): IVerifyVaultJob = js.native
   
@@ -41,42 +42,30 @@ object IVerifyVaultJob {
   }
   
   @scala.inline
-  implicit class IVerifyVaultJobOps[Self <: IVerifyVaultJob] (val x: Self) extends AnyVal {
+  implicit class IVerifyVaultJobMutableBuilder[Self <: IVerifyVaultJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IVerifyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixErrors(value: Boolean): Self = StObject.set(x, "FixErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNumberOfSteps(value: () => Double): Self = StObject.set(x, "GetNumberOfSteps", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IVerifyVaultJob): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGetOneBasedIndexOfStep(value: Double => Double): Self = StObject.set(x, "GetOneBasedIndexOfStep", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFixErrors(value: Boolean): Self = this.set("FixErrors", value.asInstanceOf[js.Any])
+    def setGetStepProgressText(value: Double => String): Self = StObject.set(x, "GetStepProgressText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNumberOfSteps(value: () => Double): Self = this.set("GetNumberOfSteps", js.Any.fromFunction0(value))
+    def setSet(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetOneBasedIndexOfStep(value: Double => Double): Self = this.set("GetOneBasedIndexOfStep", js.Any.fromFunction1(value))
+    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStepProgressText(value: Double => String): Self = this.set("GetStepProgressText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: (String, Boolean, Boolean) => Unit): Self = this.set("Set", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setVaultGUID(value: String): Self = this.set("VaultGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerifyFileContents(value: Boolean): Self = this.set("VerifyFileContents", value.asInstanceOf[js.Any])
+    def setVerifyFileContents(value: Boolean): Self = StObject.set(x, "VerifyFileContents", value.asInstanceOf[js.Any])
   }
 }

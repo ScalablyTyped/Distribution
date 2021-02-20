@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaGoogleSheetsOptions extends js.Object {
+trait SchemaGoogleSheetsOptions extends StObject {
   
   /**
     * [Beta] [Optional] Range of a sheet to query from. Only used when
@@ -39,30 +40,18 @@ object SchemaGoogleSheetsOptions {
   }
   
   @scala.inline
-  implicit class SchemaGoogleSheetsOptionsOps[Self <: SchemaGoogleSheetsOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleSheetsOptionsMutableBuilder[Self <: SchemaGoogleSheetsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setSkipLeadingRows(value: String): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
+    def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
   }
 }

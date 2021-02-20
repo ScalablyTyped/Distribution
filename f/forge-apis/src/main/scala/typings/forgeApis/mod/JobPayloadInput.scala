@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobPayloadInput extends js.Object {
+trait JobPayloadInput extends StObject {
   
   var compressedUrn: js.UndefOr[Boolean] = js.native
   
@@ -22,33 +23,21 @@ object JobPayloadInput {
   }
   
   @scala.inline
-  implicit class JobPayloadInputOps[Self <: JobPayloadInput] (val x: Self) extends AnyVal {
+  implicit class JobPayloadInputMutableBuilder[Self <: JobPayloadInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressedUrn(value: Boolean): Self = StObject.set(x, "compressedUrn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressedUrnUndefined: Self = StObject.set(x, "compressedUrn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRootFilename(value: String): Self = StObject.set(x, "rootFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrn(value: String): Self = this.set("urn", value.asInstanceOf[js.Any])
+    def setRootFilenameUndefined: Self = StObject.set(x, "rootFilename", js.undefined)
     
     @scala.inline
-    def setCompressedUrn(value: Boolean): Self = this.set("compressedUrn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompressedUrn: Self = this.set("compressedUrn", js.undefined)
-    
-    @scala.inline
-    def setRootFilename(value: String): Self = this.set("rootFilename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootFilename: Self = this.set("rootFilename", js.undefined)
+    def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
   }
 }

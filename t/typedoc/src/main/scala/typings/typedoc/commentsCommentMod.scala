@@ -1,16 +1,16 @@
 package typings.typedoc
 
 import typings.typedoc.tagMod.CommentTag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/comments/comment", JSImport.Namespace)
-@js.native
-object commentsCommentMod extends js.Object {
+object commentsCommentMod {
   
+  @JSImport("typedoc/dist/lib/models/comments/comment", "Comment")
   @js.native
-  class Comment () extends js.Object {
+  class Comment () extends StObject {
     def this(shortText: String) = this()
     def this(shortText: js.UndefOr[scala.Nothing], text: String) = this()
     def this(shortText: String, text: String) = this()

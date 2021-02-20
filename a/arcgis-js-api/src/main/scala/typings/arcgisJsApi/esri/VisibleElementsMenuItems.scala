@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object VisibleElementsMenuItems {
   }
   
   @scala.inline
-  implicit class VisibleElementsMenuItemsOps[Self <: VisibleElementsMenuItems] (val x: Self) extends AnyVal {
+  implicit class VisibleElementsMenuItemsMutableBuilder[Self <: VisibleElementsMenuItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearSelectionUndefined: Self = StObject.set(x, "clearSelection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefreshData(value: Boolean): Self = StObject.set(x, "refreshData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearSelection(value: Boolean): Self = this.set("clearSelection", value.asInstanceOf[js.Any])
+    def setRefreshDataUndefined: Self = StObject.set(x, "refreshData", js.undefined)
     
     @scala.inline
-    def deleteClearSelection: Self = this.set("clearSelection", js.undefined)
+    def setToggleColumns(value: js.Any): Self = StObject.set(x, "toggleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshData(value: Boolean): Self = this.set("refreshData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshData: Self = this.set("refreshData", js.undefined)
-    
-    @scala.inline
-    def setToggleColumns(value: js.Any): Self = this.set("toggleColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggleColumns: Self = this.set("toggleColumns", js.undefined)
+    def setToggleColumnsUndefined: Self = StObject.set(x, "toggleColumns", js.undefined)
   }
 }

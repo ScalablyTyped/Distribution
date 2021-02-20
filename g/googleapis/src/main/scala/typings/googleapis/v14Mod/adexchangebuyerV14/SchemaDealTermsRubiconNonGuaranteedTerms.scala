@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDealTermsRubiconNonGuaranteedTerms extends js.Object {
+trait SchemaDealTermsRubiconNonGuaranteedTerms extends StObject {
   
   /**
     * Optional price for Rubicon priority access in the auction.
@@ -26,30 +27,18 @@ object SchemaDealTermsRubiconNonGuaranteedTerms {
   }
   
   @scala.inline
-  implicit class SchemaDealTermsRubiconNonGuaranteedTermsOps[Self <: SchemaDealTermsRubiconNonGuaranteedTerms] (val x: Self) extends AnyVal {
+  implicit class SchemaDealTermsRubiconNonGuaranteedTermsMutableBuilder[Self <: SchemaDealTermsRubiconNonGuaranteedTerms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriorityPrice(value: SchemaPrice): Self = StObject.set(x, "priorityPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriorityPriceUndefined: Self = StObject.set(x, "priorityPrice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStandardPrice(value: SchemaPrice): Self = StObject.set(x, "standardPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriorityPrice(value: SchemaPrice): Self = this.set("priorityPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriorityPrice: Self = this.set("priorityPrice", js.undefined)
-    
-    @scala.inline
-    def setStandardPrice(value: SchemaPrice): Self = this.set("standardPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardPrice: Self = this.set("standardPrice", js.undefined)
+    def setStandardPriceUndefined: Self = StObject.set(x, "standardPrice", js.undefined)
   }
 }

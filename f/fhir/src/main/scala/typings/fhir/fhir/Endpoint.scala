@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,123 +101,111 @@ object Endpoint {
   }
   
   @scala.inline
-  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: uri): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionType(value: Coding): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContact(value: js.Array[ContactPoint]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: uri): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def setConnectionType(value: Coding): Self = this.set("connectionType", value.asInstanceOf[js.Any])
+    def setContactVarargs(value: ContactPoint*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
     @scala.inline
-    def setPayloadTypeVarargs(value: CodeableConcept*): Self = this.set("payloadType", js.Array(value :_*))
+    def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadType(value: js.Array[CodeableConcept]): Self = this.set("payloadType", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
     
     @scala.inline
-    def set_address(value: Element): Self = this.set("_address", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_address: Self = this.set("_address", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set_headerVarargs(value: Element*): Self = this.set("_header", js.Array(value :_*))
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def set_header(value: js.Array[Element]): Self = this.set("_header", value.asInstanceOf[js.Any])
+    def setManagingOrganization(value: Reference): Self = StObject.set(x, "managingOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_header: Self = this.set("_header", js.undefined)
+    def setManagingOrganizationUndefined: Self = StObject.set(x, "managingOrganization", js.undefined)
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set_payloadMimeTypeVarargs(value: Element*): Self = this.set("_payloadMimeType", js.Array(value :_*))
+    def setPayloadMimeType(value: js.Array[code]): Self = StObject.set(x, "payloadMimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_payloadMimeType(value: js.Array[Element]): Self = this.set("_payloadMimeType", value.asInstanceOf[js.Any])
+    def setPayloadMimeTypeUndefined: Self = StObject.set(x, "payloadMimeType", js.undefined)
     
     @scala.inline
-    def delete_payloadMimeType: Self = this.set("_payloadMimeType", js.undefined)
+    def setPayloadMimeTypeVarargs(value: code*): Self = StObject.set(x, "payloadMimeType", js.Array(value :_*))
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setPayloadType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setPayloadTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "payloadType", js.Array(value :_*))
     
     @scala.inline
-    def setContactVarargs(value: ContactPoint*): Self = this.set("contact", js.Array(value :_*))
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: js.Array[ContactPoint]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderVarargs(value: String*): Self = this.set("header", js.Array(value :_*))
+    def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: js.Array[String]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def set_header(value: js.Array[Element]): Self = StObject.set(x, "_header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def set_headerUndefined: Self = StObject.set(x, "_header", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def set_headerVarargs(value: Element*): Self = StObject.set(x, "_header", js.Array(value :_*))
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagingOrganization(value: Reference): Self = this.set("managingOrganization", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def deleteManagingOrganization: Self = this.set("managingOrganization", js.undefined)
+    def set_payloadMimeType(value: js.Array[Element]): Self = StObject.set(x, "_payloadMimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def set_payloadMimeTypeUndefined: Self = StObject.set(x, "_payloadMimeType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_payloadMimeTypeVarargs(value: Element*): Self = StObject.set(x, "_payloadMimeType", js.Array(value :_*))
     
     @scala.inline
-    def setPayloadMimeTypeVarargs(value: code*): Self = this.set("payloadMimeType", js.Array(value :_*))
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadMimeType(value: js.Array[code]): Self = this.set("payloadMimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadMimeType: Self = this.set("payloadMimeType", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

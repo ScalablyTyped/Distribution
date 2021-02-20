@@ -5,18 +5,18 @@ import typings.heremaps.H.map.layer.ITileLayer.Options
 import typings.heremaps.H.map.provider.MarkerTileProvider
 import typings.heremaps.H.map.provider.ObjectProvider
 import typings.heremaps.H.map.provider.TileProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("H.map.layer")
-@js.native
-object layer extends js.Object {
+object layer {
   
   /**
     * BaseTileLayer encapsulates funcitonailty that is common to all layers that deliver tiles, such as H.map.layer.TileLayer. The functionality includes geo bounding box to grid
     * calculation, tile request management.
     */
+  @JSGlobal("H.map.layer.BaseTileLayer")
   @js.native
   class BaseTileLayer protected ()
     extends typings.heremaps.H.map.layer.BaseTileLayer {
@@ -33,6 +33,7 @@ object layer extends js.Object {
     * The Layer class represents an object that is evaluated by the renderer in the order in which it is added to the layers collection. It provides the basic infrastructure for dispatching
     * update events to the renderer in case new data is available.
     */
+  @JSGlobal("H.map.layer.Layer")
   @js.native
   /**
     * Constructor
@@ -46,6 +47,7 @@ object layer extends js.Object {
   /**
     * ObjectTileLayer represents map objects which are requested on a tile basis
     */
+  @JSGlobal("H.map.layer.MarkerTileLayer")
   @js.native
   class MarkerTileLayer protected ()
     extends typings.heremaps.H.map.layer.MarkerTileLayer {
@@ -62,6 +64,7 @@ object layer extends js.Object {
     * This class represents a layer which renders map objects. Spatial objects like polygons and polylines a rendered to tiles before being passed to the enigne. Point objects like markers
     * are provided as objects given an rectangular area.
     */
+  @JSGlobal("H.map.layer.ObjectLayer")
   @js.native
   class ObjectLayer protected ()
     extends typings.heremaps.H.map.layer.ObjectLayer {
@@ -80,6 +83,7 @@ object layer extends js.Object {
     * Tile Layer, represents data shown on map on a tile basis. Can be used to show map tile images or other type of data which is partitioned into tiles.
     * @event update {H.util.Event}
     */
+  @JSGlobal("H.map.layer.TileLayer")
   @js.native
   class TileLayer protected ()
     extends typings.heremaps.H.map.layer.TileLayer {

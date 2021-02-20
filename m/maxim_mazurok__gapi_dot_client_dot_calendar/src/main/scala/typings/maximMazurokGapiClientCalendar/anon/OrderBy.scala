@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCalendar.anon
 
 import typings.maximMazurokGapiClientCalendar.gapi.client.calendar.Channel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderBy extends js.Object {
+trait OrderBy extends StObject {
   
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.native
@@ -144,174 +145,162 @@ object OrderBy {
   }
   
   @scala.inline
-  implicit class OrderByOps[Self <: OrderBy] (val x: Self) extends AnyVal {
+  implicit class OrderByMutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlwaysIncludeEmail(value: Boolean): Self = StObject.set(x, "alwaysIncludeEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
+    def setAlwaysIncludeEmailUndefined: Self = StObject.set(x, "alwaysIncludeEmail", js.undefined)
     
     @scala.inline
-    def setResource(value: Channel): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setAlwaysIncludeEmail(value: Boolean): Self = this.set("alwaysIncludeEmail", value.asInstanceOf[js.Any])
+    def setICalUID(value: String): Self = StObject.set(x, "iCalUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlwaysIncludeEmail: Self = this.set("alwaysIncludeEmail", js.undefined)
+    def setICalUIDUndefined: Self = StObject.set(x, "iCalUID", js.undefined)
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setICalUID(value: String): Self = this.set("iCalUID", value.asInstanceOf[js.Any])
+    def setMaxAttendees(value: Double): Self = StObject.set(x, "maxAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteICalUID: Self = this.set("iCalUID", js.undefined)
+    def setMaxAttendeesUndefined: Self = StObject.set(x, "maxAttendees", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setMaxAttendees(value: Double): Self = this.set("maxAttendees", value.asInstanceOf[js.Any])
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxAttendees: Self = this.set("maxAttendees", js.undefined)
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPrivateExtendedProperty(value: String | js.Array[String]): Self = StObject.set(x, "privateExtendedProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPrivateExtendedPropertyUndefined: Self = StObject.set(x, "privateExtendedProperty", js.undefined)
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setPrivateExtendedPropertyVarargs(value: String*): Self = StObject.set(x, "privateExtendedProperty", js.Array(value :_*))
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateExtendedPropertyVarargs(value: String*): Self = this.set("privateExtendedProperty", js.Array(value :_*))
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def setPrivateExtendedProperty(value: String | js.Array[String]): Self = this.set("privateExtendedProperty", value.asInstanceOf[js.Any])
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivateExtendedProperty: Self = this.set("privateExtendedProperty", js.undefined)
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setResource(value: Channel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setSharedExtendedProperty(value: String | js.Array[String]): Self = StObject.set(x, "sharedExtendedProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setSharedExtendedPropertyUndefined: Self = StObject.set(x, "sharedExtendedProperty", js.undefined)
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setSharedExtendedPropertyVarargs(value: String*): Self = StObject.set(x, "sharedExtendedProperty", js.Array(value :_*))
     
     @scala.inline
-    def setSharedExtendedPropertyVarargs(value: String*): Self = this.set("sharedExtendedProperty", js.Array(value :_*))
+    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedExtendedProperty(value: String | js.Array[String]): Self = this.set("sharedExtendedProperty", value.asInstanceOf[js.Any])
+    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
     @scala.inline
-    def deleteSharedExtendedProperty: Self = this.set("sharedExtendedProperty", js.undefined)
+    def setShowHiddenInvitations(value: Boolean): Self = StObject.set(x, "showHiddenInvitations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDeleted(value: Boolean): Self = this.set("showDeleted", value.asInstanceOf[js.Any])
+    def setShowHiddenInvitationsUndefined: Self = StObject.set(x, "showHiddenInvitations", js.undefined)
     
     @scala.inline
-    def deleteShowDeleted: Self = this.set("showDeleted", js.undefined)
+    def setSingleEvents(value: Boolean): Self = StObject.set(x, "singleEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHiddenInvitations(value: Boolean): Self = this.set("showHiddenInvitations", value.asInstanceOf[js.Any])
+    def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
     
     @scala.inline
-    def deleteShowHiddenInvitations: Self = this.set("showHiddenInvitations", js.undefined)
+    def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleEvents(value: Boolean): Self = this.set("singleEvents", value.asInstanceOf[js.Any])
+    def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
     
     @scala.inline
-    def deleteSingleEvents: Self = this.set("singleEvents", js.undefined)
+    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncToken(value: String): Self = this.set("syncToken", value.asInstanceOf[js.Any])
+    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
     @scala.inline
-    def deleteSyncToken: Self = this.set("syncToken", js.undefined)
+    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeMax(value: String): Self = this.set("timeMax", value.asInstanceOf[js.Any])
+    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
     
     @scala.inline
-    def deleteTimeMax: Self = this.set("timeMax", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeMin(value: String): Self = this.set("timeMin", value.asInstanceOf[js.Any])
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def deleteTimeMin: Self = this.set("timeMin", js.undefined)
+    def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
     
     @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedMin(value: String): Self = this.set("updatedMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedMin: Self = this.set("updatedMin", js.undefined)
-    
-    @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
   }
 }

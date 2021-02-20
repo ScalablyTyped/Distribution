@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerPdf extends js.Object {
+trait SchedulerPdf extends StObject {
   
   var author: js.UndefOr[String] = js.native
   
@@ -45,102 +46,90 @@ object SchedulerPdf {
   }
   
   @scala.inline
-  implicit class SchedulerPdfOps[Self <: SchedulerPdf] (val x: Self) extends AnyVal {
+  implicit class SchedulerPdfMutableBuilder[Self <: SchedulerPdf] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidLinks(value: Boolean | String): Self = StObject.set(x, "avoidLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setAvoidLinksUndefined: Self = StObject.set(x, "avoidLinks", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidLinks(value: Boolean | String): Self = this.set("avoidLinks", value.asInstanceOf[js.Any])
+    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
     @scala.inline
-    def deleteAvoidLinks: Self = this.set("avoidLinks", js.undefined)
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: String): Self = this.set("creator", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCreator: Self = this.set("creator", js.undefined)
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceProxy(value: Boolean): Self = this.set("forceProxy", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteForceProxy: Self = this.set("forceProxy", js.undefined)
+    def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setMargin(value: SchedulerPdfMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandscape(value: Boolean): Self = this.set("landscape", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLandscape: Self = this.set("landscape", js.undefined)
+    def setPaperSize(value: String | js.Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: SchedulerPdfMargin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setProxyTarget(value: String): Self = StObject.set(x, "proxyTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaperSize(value: String | js.Any): Self = this.set("paperSize", value.asInstanceOf[js.Any])
+    def setProxyTargetUndefined: Self = StObject.set(x, "proxyTarget", js.undefined)
     
     @scala.inline
-    def deletePaperSize: Self = this.set("paperSize", js.undefined)
+    def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyTarget(value: String): Self = this.set("proxyTarget", value.asInstanceOf[js.Any])
+    def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
     
     @scala.inline
-    def deleteProxyTarget: Self = this.set("proxyTarget", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyURL(value: String): Self = this.set("proxyURL", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteProxyURL: Self = this.set("proxyURL", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

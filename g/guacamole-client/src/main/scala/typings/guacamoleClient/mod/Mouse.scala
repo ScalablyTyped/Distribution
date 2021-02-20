@@ -2,6 +2,7 @@ package typings.guacamoleClient.mod
 
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,9 @@ class Mouse protected ()
   def this(element: HTMLDocument) = this()
   def this(element: HTMLElement) = this()
 }
-@JSImport("guacamole-client", "Mouse")
-@js.native
-object Mouse extends js.Object {
+object Mouse {
   
+  @JSImport("guacamole-client", "Mouse.GuacTouchDevice")
   @js.native
   class GuacTouchDevice protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.GuacTouchDevice {
@@ -29,6 +29,7 @@ object Mouse extends js.Object {
     def this(element: HTMLElement) = this()
   }
   
+  @JSImport("guacamole-client", "Mouse.State")
   @js.native
   class State protected ()
     extends typings.guacamoleClient.mouseMod.Mouse.State {
@@ -44,11 +45,23 @@ object Mouse extends js.Object {
     def this(x: Double, y: Double, left: Boolean, middle: Boolean, right: Boolean, up: Boolean, down: Boolean) = this()
   }
   
+  @JSImport("guacamole-client", "Mouse.Touchpad")
   @js.native
-  class Touchpad ()
-    extends typings.guacamoleClient.mouseMod.Mouse.GuacTouchDevice
+  class Touchpad protected ()
+    extends typings.guacamoleClient.mouseMod.Mouse.Touchpad {
+    /**
+      * @param element The Element to use to provide touch events.
+      */
+    def this(element: HTMLElement) = this()
+  }
   
+  @JSImport("guacamole-client", "Mouse.Touchscreen")
   @js.native
-  class Touchscreen ()
-    extends typings.guacamoleClient.mouseMod.Mouse.Touchscreen
+  class Touchscreen protected ()
+    extends typings.guacamoleClient.mouseMod.Mouse.Touchscreen {
+    /**
+      * @param element The Element to use to provide touch events.
+      */
+    def this(element: HTMLElement) = this()
+  }
 }

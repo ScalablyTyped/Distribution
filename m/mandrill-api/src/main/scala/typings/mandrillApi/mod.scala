@@ -2,16 +2,16 @@ package typings.mandrillApi
 
 import typings.mandrillApi.anon.Id
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mandrill-api", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("mandrill-api", "Exports")
   @js.native
-  class Exports protected () extends js.Object {
+  class Exports protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -96,8 +96,9 @@ object mod extends js.Object {
     def whitelist(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Inbound")
   @js.native
-  class Inbound protected () extends js.Object {
+  class Inbound protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -217,13 +218,15 @@ object mod extends js.Object {
     def updateRoute(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Internal")
   @js.native
-  class Internal protected () extends js.Object {
+  class Internal protected () extends StObject {
     def this(master: Mandrill) = this()
   }
   
+  @JSImport("mandrill-api", "Ips")
   @js.native
-  class Ips protected () extends js.Object {
+  class Ips protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -393,8 +396,9 @@ object mod extends js.Object {
     def startWarmup(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Mandrill")
   @js.native
-  class Mandrill protected () extends js.Object {
+  class Mandrill protected () extends StObject {
     def this(apikey: String) = this()
     def this(apikey: String, debug: Boolean) = this()
     
@@ -442,8 +446,9 @@ object mod extends js.Object {
     var whitelists: Whitelists = js.native
   }
   
+  @JSImport("mandrill-api", "Messages")
   @js.native
-  class Messages protected () extends js.Object {
+  class Messages protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -723,8 +728,9 @@ object mod extends js.Object {
     def sendTemplate(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Metadata")
   @js.native
-  class Metadata protected () extends js.Object {
+  class Metadata protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -777,8 +783,9 @@ object mod extends js.Object {
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Rejects")
   @js.native
-  class Rejects protected () extends js.Object {
+  class Rejects protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -831,8 +838,9 @@ object mod extends js.Object {
     def list(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Senders")
   @js.native
-  class Senders protected () extends js.Object {
+  class Senders protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -925,8 +933,9 @@ object mod extends js.Object {
     def verifyDomain(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Subaccounts")
   @js.native
-  class Subaccounts protected () extends js.Object {
+  class Subaccounts protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -1020,8 +1029,9 @@ object mod extends js.Object {
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Tags")
   @js.native
-  class Tags protected () extends js.Object {
+  class Tags protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -1085,8 +1095,9 @@ object mod extends js.Object {
     def timeSeries(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Templates")
   @js.native
-  class Templates protected () extends js.Object {
+  class Templates protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -1210,8 +1221,9 @@ object mod extends js.Object {
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Urls")
   @js.native
-  class Urls protected () extends js.Object {
+  class Urls protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -1285,8 +1297,9 @@ object mod extends js.Object {
     def trackingDomains(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Users")
   @js.native
-  class Users protected () extends js.Object {
+  class Users protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -1334,8 +1347,9 @@ object mod extends js.Object {
     def senders(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Webhooks")
   @js.native
-  class Webhooks protected () extends js.Object {
+  class Webhooks protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**
@@ -1405,8 +1419,9 @@ object mod extends js.Object {
     def update(params: js.Any, onsuccess: ICallback, onerror: ICallback): Unit = js.native
   }
   
+  @JSImport("mandrill-api", "Whitelists")
   @js.native
-  class Whitelists protected () extends js.Object {
+  class Whitelists protected () extends StObject {
     def this(master: Mandrill) = this()
     
     /**

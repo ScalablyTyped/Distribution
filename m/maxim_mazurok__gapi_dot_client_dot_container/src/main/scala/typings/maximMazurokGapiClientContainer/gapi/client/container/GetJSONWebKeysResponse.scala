@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetJSONWebKeysResponse extends js.Object {
+trait GetJSONWebKeysResponse extends StObject {
   
   /** OnePlatform automatically extracts this field and uses it to set the HTTP Cache-Control header. */
   var cacheHeader: js.UndefOr[HttpCacheControlResponseHeader] = js.native
@@ -22,33 +23,21 @@ object GetJSONWebKeysResponse {
   }
   
   @scala.inline
-  implicit class GetJSONWebKeysResponseOps[Self <: GetJSONWebKeysResponse] (val x: Self) extends AnyVal {
+  implicit class GetJSONWebKeysResponseMutableBuilder[Self <: GetJSONWebKeysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheHeader(value: HttpCacheControlResponseHeader): Self = StObject.set(x, "cacheHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheHeaderUndefined: Self = StObject.set(x, "cacheHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: js.Array[Jwk]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheHeader(value: HttpCacheControlResponseHeader): Self = this.set("cacheHeader", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def deleteCacheHeader: Self = this.set("cacheHeader", js.undefined)
-    
-    @scala.inline
-    def setKeysVarargs(value: Jwk*): Self = this.set("keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: js.Array[Jwk]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
+    def setKeysVarargs(value: Jwk*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   /**
     * Attributes of the `Element` node in the form of flat array `[name1, value1, name2, value2]`.
@@ -167,183 +168,171 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
+    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalName(value: String): Self = this.set("localName", value.asInstanceOf[js.Any])
+    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
     @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setChildNodeCount(value: integer): Self = StObject.set(x, "childNodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: integer): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setChildNodeCountUndefined: Self = StObject.set(x, "childNodeCount", js.undefined)
     
     @scala.inline
-    def setNodeValue(value: String): Self = this.set("nodeValue", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setAttributes(value: js.Array[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setContentDocument(value: Node): Self = StObject.set(x, "contentDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseURL(value: String): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    def setContentDocumentUndefined: Self = StObject.set(x, "contentDocument", js.undefined)
     
     @scala.inline
-    def deleteBaseURL: Self = this.set("baseURL", js.undefined)
+    def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildNodeCount(value: integer): Self = this.set("childNodeCount", value.asInstanceOf[js.Any])
+    def setDistributedNodesUndefined: Self = StObject.set(x, "distributedNodes", js.undefined)
     
     @scala.inline
-    def deleteChildNodeCount: Self = this.set("childNodeCount", js.undefined)
+    def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: Node*): Self = this.set("children", js.Array(value :_*))
+    def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[Node]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDocumentURLUndefined: Self = StObject.set(x, "documentURL", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDocument(value: Node): Self = this.set("contentDocument", value.asInstanceOf[js.Any])
+    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
     @scala.inline
-    def deleteContentDocument: Self = this.set("contentDocument", js.undefined)
+    def setImportedDocument(value: Node): Self = StObject.set(x, "importedDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributedNodesVarargs(value: BackendNode*): Self = this.set("distributedNodes", js.Array(value :_*))
+    def setImportedDocumentUndefined: Self = StObject.set(x, "importedDocument", js.undefined)
     
     @scala.inline
-    def setDistributedNodes(value: js.Array[BackendNode]): Self = this.set("distributedNodes", value.asInstanceOf[js.Any])
+    def setInternalSubset(value: String): Self = StObject.set(x, "internalSubset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistributedNodes: Self = this.set("distributedNodes", js.undefined)
+    def setInternalSubsetUndefined: Self = StObject.set(x, "internalSubset", js.undefined)
     
     @scala.inline
-    def setDocumentURL(value: String): Self = this.set("documentURL", value.asInstanceOf[js.Any])
+    def setIsSVG(value: Boolean): Self = StObject.set(x, "isSVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentURL: Self = this.set("documentURL", js.undefined)
+    def setIsSVGUndefined: Self = StObject.set(x, "isSVG", js.undefined)
     
     @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrameId: Self = this.set("frameId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedDocument(value: Node): Self = this.set("importedDocument", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImportedDocument: Self = this.set("importedDocument", js.undefined)
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalSubset(value: String): Self = this.set("internalSubset", value.asInstanceOf[js.Any])
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternalSubset: Self = this.set("internalSubset", js.undefined)
+    def setNodeType(value: integer): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSVG(value: Boolean): Self = this.set("isSVG", value.asInstanceOf[js.Any])
+    def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSVG: Self = this.set("isSVG", js.undefined)
+    def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPseudoElements(value: js.Array[Node]): Self = StObject.set(x, "pseudoElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: NodeId): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setPseudoElementsUndefined: Self = StObject.set(x, "pseudoElements", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setPseudoElementsVarargs(value: Node*): Self = StObject.set(x, "pseudoElements", js.Array(value :_*))
     
     @scala.inline
-    def setPseudoElementsVarargs(value: Node*): Self = this.set("pseudoElements", js.Array(value :_*))
+    def setPseudoType(value: PseudoType): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudoElements(value: js.Array[Node]): Self = this.set("pseudoElements", value.asInstanceOf[js.Any])
+    def setPseudoTypeUndefined: Self = StObject.set(x, "pseudoType", js.undefined)
     
     @scala.inline
-    def deletePseudoElements: Self = this.set("pseudoElements", js.undefined)
+    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudoType(value: PseudoType): Self = this.set("pseudoType", value.asInstanceOf[js.Any])
+    def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
     
     @scala.inline
-    def deletePseudoType: Self = this.set("pseudoType", js.undefined)
+    def setShadowRootType(value: ShadowRootType): Self = StObject.set(x, "shadowRootType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicId(value: String): Self = this.set("publicId", value.asInstanceOf[js.Any])
+    def setShadowRootTypeUndefined: Self = StObject.set(x, "shadowRootType", js.undefined)
     
     @scala.inline
-    def deletePublicId: Self = this.set("publicId", js.undefined)
+    def setShadowRoots(value: js.Array[Node]): Self = StObject.set(x, "shadowRoots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowRootType(value: ShadowRootType): Self = this.set("shadowRootType", value.asInstanceOf[js.Any])
+    def setShadowRootsUndefined: Self = StObject.set(x, "shadowRoots", js.undefined)
     
     @scala.inline
-    def deleteShadowRootType: Self = this.set("shadowRootType", js.undefined)
+    def setShadowRootsVarargs(value: Node*): Self = StObject.set(x, "shadowRoots", js.Array(value :_*))
     
     @scala.inline
-    def setShadowRootsVarargs(value: Node*): Self = this.set("shadowRoots", js.Array(value :_*))
+    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowRoots(value: js.Array[Node]): Self = this.set("shadowRoots", value.asInstanceOf[js.Any])
+    def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
     
     @scala.inline
-    def deleteShadowRoots: Self = this.set("shadowRoots", js.undefined)
+    def setTemplateContent(value: Node): Self = StObject.set(x, "templateContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemId(value: String): Self = this.set("systemId", value.asInstanceOf[js.Any])
+    def setTemplateContentUndefined: Self = StObject.set(x, "templateContent", js.undefined)
     
     @scala.inline
-    def deleteSystemId: Self = this.set("systemId", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateContent(value: Node): Self = this.set("templateContent", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteTemplateContent: Self = this.set("templateContent", js.undefined)
+    def setXmlVersion(value: String): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setXmlVersion(value: String): Self = this.set("xmlVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlVersion: Self = this.set("xmlVersion", js.undefined)
+    def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,51 +91,39 @@ object XDiagram {
   }
   
   @scala.inline
-  implicit class XDiagramOps[Self <: XDiagram] (val x: Self) extends AnyVal {
+  implicit class XDiagramMutableBuilder[Self <: XDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultColorScheme(value: XColorScheme): Self = StObject.set(x, "DefaultColorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultColorScheme(value: () => XColorScheme): Self = StObject.set(x, "getDefaultColorScheme", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultColorScheme(value: XColorScheme): Self = this.set("DefaultColorScheme", value.asInstanceOf[js.Any])
+    def setGetFloor(value: () => XPropertySet): Self = StObject.set(x, "getFloor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFloor(value: XPropertySet): Self = this.set("Floor", value.asInstanceOf[js.Any])
+    def setGetLegend(value: () => XLegend): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLegend(value: XLegend): Self = this.set("Legend", value.asInstanceOf[js.Any])
+    def setGetWall(value: () => XPropertySet): Self = StObject.set(x, "getWall", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWall(value: XPropertySet): Self = this.set("Wall", value.asInstanceOf[js.Any])
+    def setLegend(value: XLegend): Self = StObject.set(x, "Legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultColorScheme(value: () => XColorScheme): Self = this.set("getDefaultColorScheme", js.Any.fromFunction0(value))
+    def setSetDefaultColorScheme(value: XColorScheme => Unit): Self = StObject.set(x, "setDefaultColorScheme", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFloor(value: () => XPropertySet): Self = this.set("getFloor", js.Any.fromFunction0(value))
+    def setSetDiagramData(value: (XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "setDiagramData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLegend(value: () => XLegend): Self = this.set("getLegend", js.Any.fromFunction0(value))
+    def setSetLegend(value: XLegend => Unit): Self = StObject.set(x, "setLegend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWall(value: () => XPropertySet): Self = this.set("getWall", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDefaultColorScheme(value: XColorScheme => Unit): Self = this.set("setDefaultColorScheme", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDiagramData(value: (XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = this.set("setDiagramData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetLegend(value: XLegend => Unit): Self = this.set("setLegend", js.Any.fromFunction1(value))
+    def setWall(value: XPropertySet): Self = StObject.set(x, "Wall", value.asInstanceOf[js.Any])
   }
 }

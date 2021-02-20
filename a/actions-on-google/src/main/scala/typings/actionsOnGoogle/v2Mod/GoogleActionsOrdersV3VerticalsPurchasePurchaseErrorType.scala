@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.FAILED_PRECONDITION
   - typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_DECLINED
 */
-trait GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType extends js.Object
+trait GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType extends StObject
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseErrorType {
   
   @scala.inline

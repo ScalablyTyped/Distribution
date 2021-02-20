@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distribution extends js.Object {
+trait Distribution extends StObject {
   
   /**
     * The specific AMI settings (for example, launch permissions, AMI tags). 
@@ -31,36 +32,24 @@ object Distribution {
   }
   
   @scala.inline
-  implicit class DistributionOps[Self <: Distribution] (val x: Self) extends AnyVal {
+  implicit class DistributionMutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmiDistributionConfiguration(value: AmiDistributionConfiguration): Self = StObject.set(x, "amiDistributionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmiDistributionConfigurationUndefined: Self = StObject.set(x, "amiDistributionConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLicenseConfigurationArns(value: LicenseConfigurationArnList): Self = StObject.set(x, "licenseConfigurationArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: NonEmptyString): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setLicenseConfigurationArnsUndefined: Self = StObject.set(x, "licenseConfigurationArns", js.undefined)
     
     @scala.inline
-    def setAmiDistributionConfiguration(value: AmiDistributionConfiguration): Self = this.set("amiDistributionConfiguration", value.asInstanceOf[js.Any])
+    def setLicenseConfigurationArnsVarargs(value: LicenseConfigurationArn*): Self = StObject.set(x, "licenseConfigurationArns", js.Array(value :_*))
     
     @scala.inline
-    def deleteAmiDistributionConfiguration: Self = this.set("amiDistributionConfiguration", js.undefined)
-    
-    @scala.inline
-    def setLicenseConfigurationArnsVarargs(value: LicenseConfigurationArn*): Self = this.set("licenseConfigurationArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setLicenseConfigurationArns(value: LicenseConfigurationArnList): Self = this.set("licenseConfigurationArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicenseConfigurationArns: Self = this.set("licenseConfigurationArns", js.undefined)
+    def setRegion(value: NonEmptyString): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

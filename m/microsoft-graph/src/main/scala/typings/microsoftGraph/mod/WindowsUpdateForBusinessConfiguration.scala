@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,99 +65,87 @@ object WindowsUpdateForBusinessConfiguration {
   }
   
   @scala.inline
-  implicit class WindowsUpdateForBusinessConfigurationOps[Self <: WindowsUpdateForBusinessConfiguration] (val x: Self) extends AnyVal {
+  implicit class WindowsUpdateForBusinessConfigurationMutableBuilder[Self <: WindowsUpdateForBusinessConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticUpdateMode(value: AutomaticUpdateMode): Self = StObject.set(x, "automaticUpdateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticUpdateModeUndefined: Self = StObject.set(x, "automaticUpdateMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBusinessReadyUpdatesOnly(value: WindowsUpdateType): Self = StObject.set(x, "businessReadyUpdatesOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticUpdateMode(value: AutomaticUpdateMode): Self = this.set("automaticUpdateMode", value.asInstanceOf[js.Any])
+    def setBusinessReadyUpdatesOnlyUndefined: Self = StObject.set(x, "businessReadyUpdatesOnly", js.undefined)
     
     @scala.inline
-    def deleteAutomaticUpdateMode: Self = this.set("automaticUpdateMode", js.undefined)
+    def setDeliveryOptimizationMode(value: WindowsDeliveryOptimizationMode): Self = StObject.set(x, "deliveryOptimizationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessReadyUpdatesOnly(value: WindowsUpdateType): Self = this.set("businessReadyUpdatesOnly", value.asInstanceOf[js.Any])
+    def setDeliveryOptimizationModeUndefined: Self = StObject.set(x, "deliveryOptimizationMode", js.undefined)
     
     @scala.inline
-    def deleteBusinessReadyUpdatesOnly: Self = this.set("businessReadyUpdatesOnly", js.undefined)
+    def setDriversExcluded(value: Boolean): Self = StObject.set(x, "driversExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryOptimizationMode(value: WindowsDeliveryOptimizationMode): Self = this.set("deliveryOptimizationMode", value.asInstanceOf[js.Any])
+    def setDriversExcludedUndefined: Self = StObject.set(x, "driversExcluded", js.undefined)
     
     @scala.inline
-    def deleteDeliveryOptimizationMode: Self = this.set("deliveryOptimizationMode", js.undefined)
+    def setFeatureUpdatesDeferralPeriodInDays(value: Double): Self = StObject.set(x, "featureUpdatesDeferralPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriversExcluded(value: Boolean): Self = this.set("driversExcluded", value.asInstanceOf[js.Any])
+    def setFeatureUpdatesDeferralPeriodInDaysUndefined: Self = StObject.set(x, "featureUpdatesDeferralPeriodInDays", js.undefined)
     
     @scala.inline
-    def deleteDriversExcluded: Self = this.set("driversExcluded", js.undefined)
+    def setFeatureUpdatesPauseExpiryDateTime(value: String): Self = StObject.set(x, "featureUpdatesPauseExpiryDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureUpdatesDeferralPeriodInDays(value: Double): Self = this.set("featureUpdatesDeferralPeriodInDays", value.asInstanceOf[js.Any])
+    def setFeatureUpdatesPauseExpiryDateTimeUndefined: Self = StObject.set(x, "featureUpdatesPauseExpiryDateTime", js.undefined)
     
     @scala.inline
-    def deleteFeatureUpdatesDeferralPeriodInDays: Self = this.set("featureUpdatesDeferralPeriodInDays", js.undefined)
+    def setFeatureUpdatesPaused(value: Boolean): Self = StObject.set(x, "featureUpdatesPaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureUpdatesPauseExpiryDateTime(value: String): Self = this.set("featureUpdatesPauseExpiryDateTime", value.asInstanceOf[js.Any])
+    def setFeatureUpdatesPausedUndefined: Self = StObject.set(x, "featureUpdatesPaused", js.undefined)
     
     @scala.inline
-    def deleteFeatureUpdatesPauseExpiryDateTime: Self = this.set("featureUpdatesPauseExpiryDateTime", js.undefined)
+    def setInstallationSchedule(value: NullableOption[WindowsUpdateInstallScheduleType]): Self = StObject.set(x, "installationSchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureUpdatesPaused(value: Boolean): Self = this.set("featureUpdatesPaused", value.asInstanceOf[js.Any])
+    def setInstallationScheduleNull: Self = StObject.set(x, "installationSchedule", null)
     
     @scala.inline
-    def deleteFeatureUpdatesPaused: Self = this.set("featureUpdatesPaused", js.undefined)
+    def setInstallationScheduleUndefined: Self = StObject.set(x, "installationSchedule", js.undefined)
     
     @scala.inline
-    def setInstallationSchedule(value: NullableOption[WindowsUpdateInstallScheduleType]): Self = this.set("installationSchedule", value.asInstanceOf[js.Any])
+    def setMicrosoftUpdateServiceAllowed(value: Boolean): Self = StObject.set(x, "microsoftUpdateServiceAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstallationSchedule: Self = this.set("installationSchedule", js.undefined)
+    def setMicrosoftUpdateServiceAllowedUndefined: Self = StObject.set(x, "microsoftUpdateServiceAllowed", js.undefined)
     
     @scala.inline
-    def setInstallationScheduleNull: Self = this.set("installationSchedule", null)
+    def setPrereleaseFeatures(value: PrereleaseFeatures): Self = StObject.set(x, "prereleaseFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMicrosoftUpdateServiceAllowed(value: Boolean): Self = this.set("microsoftUpdateServiceAllowed", value.asInstanceOf[js.Any])
+    def setPrereleaseFeaturesUndefined: Self = StObject.set(x, "prereleaseFeatures", js.undefined)
     
     @scala.inline
-    def deleteMicrosoftUpdateServiceAllowed: Self = this.set("microsoftUpdateServiceAllowed", js.undefined)
+    def setQualityUpdatesDeferralPeriodInDays(value: Double): Self = StObject.set(x, "qualityUpdatesDeferralPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrereleaseFeatures(value: PrereleaseFeatures): Self = this.set("prereleaseFeatures", value.asInstanceOf[js.Any])
+    def setQualityUpdatesDeferralPeriodInDaysUndefined: Self = StObject.set(x, "qualityUpdatesDeferralPeriodInDays", js.undefined)
     
     @scala.inline
-    def deletePrereleaseFeatures: Self = this.set("prereleaseFeatures", js.undefined)
+    def setQualityUpdatesPauseExpiryDateTime(value: String): Self = StObject.set(x, "qualityUpdatesPauseExpiryDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualityUpdatesDeferralPeriodInDays(value: Double): Self = this.set("qualityUpdatesDeferralPeriodInDays", value.asInstanceOf[js.Any])
+    def setQualityUpdatesPauseExpiryDateTimeUndefined: Self = StObject.set(x, "qualityUpdatesPauseExpiryDateTime", js.undefined)
     
     @scala.inline
-    def deleteQualityUpdatesDeferralPeriodInDays: Self = this.set("qualityUpdatesDeferralPeriodInDays", js.undefined)
+    def setQualityUpdatesPaused(value: Boolean): Self = StObject.set(x, "qualityUpdatesPaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualityUpdatesPauseExpiryDateTime(value: String): Self = this.set("qualityUpdatesPauseExpiryDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQualityUpdatesPauseExpiryDateTime: Self = this.set("qualityUpdatesPauseExpiryDateTime", js.undefined)
-    
-    @scala.inline
-    def setQualityUpdatesPaused(value: Boolean): Self = this.set("qualityUpdatesPaused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQualityUpdatesPaused: Self = this.set("qualityUpdatesPaused", js.undefined)
+    def setQualityUpdatesPausedUndefined: Self = StObject.set(x, "qualityUpdatesPaused", js.undefined)
   }
 }

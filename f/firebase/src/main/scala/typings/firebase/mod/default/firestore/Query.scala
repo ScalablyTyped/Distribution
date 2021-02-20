@@ -1,13 +1,14 @@
 package typings.firebase.mod.default.firestore
 
 import typings.firebase.anon.Next
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.Query")
+@JSImport("firebase", "default.firestore.Query")
 @js.native
-class Query[T] protected () extends js.Object {
+class Query[T] protected () extends StObject {
   
   /**
     * Creates and returns a new Query that ends at the provided fields

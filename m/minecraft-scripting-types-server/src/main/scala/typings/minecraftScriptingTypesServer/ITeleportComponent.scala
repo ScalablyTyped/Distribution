@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.VectorArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This controls the entity's ability to teleport itself (similar to the Enderman). If you wish to teleport the entity once use the Position component instead.
   */
 @js.native
-trait ITeleportComponent extends js.Object {
+trait ITeleportComponent extends StObject {
   
   /**
     * Modifies the chance that the entity will teleport if the entity is in darkness
@@ -77,42 +78,30 @@ object ITeleportComponent {
   }
   
   @scala.inline
-  implicit class ITeleportComponentOps[Self <: ITeleportComponent] (val x: Self) extends AnyVal {
+  implicit class ITeleportComponentMutableBuilder[Self <: ITeleportComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDarkTeleportChance(value: Double): Self = StObject.set(x, "darkTeleportChance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLightTeleportChance(value: Double): Self = StObject.set(x, "lightTeleportChance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRandomTeleportTime(value: Double): Self = StObject.set(x, "maxRandomTeleportTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarkTeleportChance(value: Double): Self = this.set("darkTeleportChance", value.asInstanceOf[js.Any])
+    def setMinRandomTeleportTime(value: Double): Self = StObject.set(x, "minRandomTeleportTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightTeleportChance(value: Double): Self = this.set("lightTeleportChance", value.asInstanceOf[js.Any])
+    def setRandomTeleportCube(value: VectorArray): Self = StObject.set(x, "randomTeleportCube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRandomTeleportTime(value: Double): Self = this.set("maxRandomTeleportTime", value.asInstanceOf[js.Any])
+    def setRandomTeleports(value: Boolean): Self = StObject.set(x, "randomTeleports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRandomTeleportTime(value: Double): Self = this.set("minRandomTeleportTime", value.asInstanceOf[js.Any])
+    def setTargetDistance(value: Double): Self = StObject.set(x, "targetDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandomTeleportCube(value: VectorArray): Self = this.set("randomTeleportCube", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRandomTeleports(value: Boolean): Self = this.set("randomTeleports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetDistance(value: Double): Self = this.set("targetDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget_teleport_chance(value: Double): Self = this.set("target_teleport_chance", value.asInstanceOf[js.Any])
+    def setTarget_teleport_chance(value: Double): Self = StObject.set(x, "target_teleport_chance", value.asInstanceOf[js.Any])
   }
 }

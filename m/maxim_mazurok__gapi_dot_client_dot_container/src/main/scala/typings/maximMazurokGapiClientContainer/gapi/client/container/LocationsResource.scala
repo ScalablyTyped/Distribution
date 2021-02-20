@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientContainer.anon.NameOauthtokenPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationsResource extends js.Object {
+trait LocationsResource extends StObject {
   
   var clusters: ClustersResource = js.native
   

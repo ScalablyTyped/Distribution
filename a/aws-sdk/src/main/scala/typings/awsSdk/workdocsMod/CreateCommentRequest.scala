@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCommentRequest extends js.Object {
+trait CreateCommentRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
@@ -56,57 +57,45 @@ object CreateCommentRequest {
   }
   
   @scala.inline
-  implicit class CreateCommentRequestOps[Self <: CreateCommentRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCommentRequestMutableBuilder[Self <: CreateCommentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = this.set("DocumentId", value.asInstanceOf[js.Any])
+    def setNotifyCollaborators(value: BooleanType): Self = StObject.set(x, "NotifyCollaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: CommentTextType): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setNotifyCollaboratorsUndefined: Self = StObject.set(x, "NotifyCollaborators", js.undefined)
     
     @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    def setParentId(value: CommentIdType): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    def setText(value: CommentTextType): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyCollaborators(value: BooleanType): Self = this.set("NotifyCollaborators", value.asInstanceOf[js.Any])
+    def setThreadId(value: CommentIdType): Self = StObject.set(x, "ThreadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotifyCollaborators: Self = this.set("NotifyCollaborators", js.undefined)
+    def setThreadIdUndefined: Self = StObject.set(x, "ThreadId", js.undefined)
     
     @scala.inline
-    def setParentId(value: CommentIdType): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    def setVisibility(value: CommentVisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadId(value: CommentIdType): Self = this.set("ThreadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreadId: Self = this.set("ThreadId", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: CommentVisibilityType): Self = this.set("Visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("Visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

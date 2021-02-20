@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenDialogOptions extends js.Object {
+trait OpenDialogOptions extends StObject {
   
   /**
     * Allow to select files, defaults to `true`.
@@ -62,60 +63,48 @@ object OpenDialogOptions {
   }
   
   @scala.inline
-  implicit class OpenDialogOptionsOps[Self <: OpenDialogOptions] (val x: Self) extends AnyVal {
+  implicit class OpenDialogOptionsMutableBuilder[Self <: OpenDialogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanSelectFiles(value: Boolean): Self = StObject.set(x, "canSelectFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanSelectFilesUndefined: Self = StObject.set(x, "canSelectFiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanSelectFolders(value: Boolean): Self = StObject.set(x, "canSelectFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSelectFiles(value: Boolean): Self = this.set("canSelectFiles", value.asInstanceOf[js.Any])
+    def setCanSelectFoldersUndefined: Self = StObject.set(x, "canSelectFolders", js.undefined)
     
     @scala.inline
-    def deleteCanSelectFiles: Self = this.set("canSelectFiles", js.undefined)
+    def setCanSelectMany(value: Boolean): Self = StObject.set(x, "canSelectMany", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSelectFolders(value: Boolean): Self = this.set("canSelectFolders", value.asInstanceOf[js.Any])
+    def setCanSelectManyUndefined: Self = StObject.set(x, "canSelectMany", js.undefined)
     
     @scala.inline
-    def deleteCanSelectFolders: Self = this.set("canSelectFolders", js.undefined)
+    def setDefaultUri(value: Uri): Self = StObject.set(x, "defaultUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSelectMany(value: Boolean): Self = this.set("canSelectMany", value.asInstanceOf[js.Any])
+    def setDefaultUriUndefined: Self = StObject.set(x, "defaultUri", js.undefined)
     
     @scala.inline
-    def deleteCanSelectMany: Self = this.set("canSelectMany", js.undefined)
+    def setFilters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUri(value: Uri): Self = this.set("defaultUri", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteDefaultUri: Self = this.set("defaultUri", js.undefined)
+    def setOpenLabel(value: String): Self = StObject.set(x, "openLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: StringDictionary[js.Array[String]]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setOpenLabelUndefined: Self = StObject.set(x, "openLabel", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenLabel(value: String): Self = this.set("openLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenLabel: Self = this.set("openLabel", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

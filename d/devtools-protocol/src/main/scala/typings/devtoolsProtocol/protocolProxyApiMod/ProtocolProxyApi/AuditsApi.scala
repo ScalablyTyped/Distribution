@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.issueAdded
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseRequest
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseResponse
 import typings.devtoolsProtocol.mod.Protocol.Audits.IssueAddedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuditsApi extends js.Object {
+trait AuditsApi extends StObject {
   
   /**
     * Disables issues domain, prevents further issues from being reported to the client.
@@ -45,30 +46,18 @@ object AuditsApi {
   }
   
   @scala.inline
-  implicit class AuditsApiOps[Self <: AuditsApi] (val x: Self) extends AnyVal {
+  implicit class AuditsApiMutableBuilder[Self <: AuditsApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEncodedResponse(value: GetEncodedResponseRequest => js.Promise[GetEncodedResponseResponse]): Self = StObject.set(x, "getEncodedResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEncodedResponse(value: GetEncodedResponseRequest => js.Promise[GetEncodedResponseResponse]): Self = this.set("getEncodedResponse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn(value: (issueAdded, js.Function1[/* params */ IssueAddedEvent, Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setOn(value: (issueAdded, js.Function1[/* params */ IssueAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

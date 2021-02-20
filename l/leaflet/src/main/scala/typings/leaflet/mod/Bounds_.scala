@@ -1,12 +1,13 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Bounds")
 @js.native
-class Bounds_ protected () extends js.Object {
+class Bounds_ protected () extends StObject {
   def this(points: js.Array[Point_]) = this()
   def this(points: BoundsLiteral) = this()
   def this(topLeft: PointExpression, bottomRight: PointExpression) = this()

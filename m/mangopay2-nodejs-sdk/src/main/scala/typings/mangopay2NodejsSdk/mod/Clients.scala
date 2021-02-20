@@ -6,13 +6,14 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionData
 import typings.mangopay2NodejsSdk.mod.wallet.ClientFundsType
 import typings.mangopay2NodejsSdk.mod.wallet.ClientWalletData
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Clients")
 @js.native
-class Clients () extends js.Object {
+class Clients () extends StObject {
   
   /**
     * Get the client

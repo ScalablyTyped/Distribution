@@ -4,12 +4,13 @@ import typings.wegameApi.anon.AudioSource
 import typings.wegameApi.anon.ErrMsg
 import typings.wegameApi.anon.FrameBuffer
 import typings.wegameApi.anon.TempFilePath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecorderManager extends js.Object {
+trait RecorderManager extends StObject {
   
   /**
     * 监听录音错误事件
@@ -84,48 +85,36 @@ object RecorderManager {
   }
   
   @scala.inline
-  implicit class RecorderManagerOps[Self <: RecorderManager] (val x: Self) extends AnyVal {
+  implicit class RecorderManagerMutableBuilder[Self <: RecorderManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFrameRecorded(value: js.Function1[/* res */ FrameBuffer, Unit] => Unit): Self = StObject.set(x, "onFrameRecorded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnPause(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnResume(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFrameRecorded(value: js.Function1[/* res */ FrameBuffer, Unit] => Unit): Self = this.set("onFrameRecorded", js.Any.fromFunction1(value))
+    def setOnStart(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPause(value: js.Function0[Unit] => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    def setOnStop(value: js.Function1[/* res */ TempFilePath, Unit] => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnResume(value: js.Function0[Unit] => Unit): Self = this.set("onResume", js.Any.fromFunction1(value))
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnStart(value: js.Function0[Unit] => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
+    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnStop(value: js.Function1[/* res */ TempFilePath, Unit] => Unit): Self = this.set("onStop", js.Any.fromFunction1(value))
+    def setStart(value: AudioSource => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: AudioSource => Unit): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

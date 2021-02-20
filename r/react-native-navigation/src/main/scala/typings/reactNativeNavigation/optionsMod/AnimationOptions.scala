@@ -1,11 +1,12 @@
 package typings.reactNativeNavigation.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationOptions extends js.Object {
+trait AnimationOptions extends StObject {
   
   /**
     * Configure what animates when modal is dismissed
@@ -46,54 +47,42 @@ object AnimationOptions {
   }
   
   @scala.inline
-  implicit class AnimationOptionsOps[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDismissModal(value: ModalAnimationOptions): Self = StObject.set(x, "dismissModal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissModalUndefined: Self = StObject.set(x, "dismissModal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPop(value: StackAnimationOptions): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissModal(value: ModalAnimationOptions): Self = this.set("dismissModal", value.asInstanceOf[js.Any])
+    def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
     
     @scala.inline
-    def deleteDismissModal: Self = this.set("dismissModal", js.undefined)
+    def setPush(value: StackAnimationOptions): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPop(value: StackAnimationOptions): Self = this.set("pop", value.asInstanceOf[js.Any])
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deletePop: Self = this.set("pop", js.undefined)
+    def setSetRoot(value: ViewAnimationOptions): Self = StObject.set(x, "setRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPush(value: StackAnimationOptions): Self = this.set("push", value.asInstanceOf[js.Any])
+    def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setSetStackRoot(value: ViewAnimationOptions): Self = StObject.set(x, "setStackRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRoot(value: ViewAnimationOptions): Self = this.set("setRoot", value.asInstanceOf[js.Any])
+    def setSetStackRootUndefined: Self = StObject.set(x, "setStackRoot", js.undefined)
     
     @scala.inline
-    def deleteSetRoot: Self = this.set("setRoot", js.undefined)
+    def setShowModal(value: ModalAnimationOptions): Self = StObject.set(x, "showModal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStackRoot(value: ViewAnimationOptions): Self = this.set("setStackRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetStackRoot: Self = this.set("setStackRoot", js.undefined)
-    
-    @scala.inline
-    def setShowModal(value: ModalAnimationOptions): Self = this.set("showModal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowModal: Self = this.set("showModal", js.undefined)
+    def setShowModalUndefined: Self = StObject.set(x, "showModal", js.undefined)
   }
 }

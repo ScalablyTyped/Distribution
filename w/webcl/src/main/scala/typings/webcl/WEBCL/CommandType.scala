@@ -15,6 +15,7 @@ import typings.webcl.webclNumbers.`0x1201`
 import typings.webcl.webclNumbers.`0x1202`
 import typings.webcl.webclNumbers.`0x1203`
 import typings.webcl.webclNumbers.`0x1204`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1203`
   - typings.webcl.webclNumbers.`0x1204`
 */
-trait CommandType extends js.Object
+trait CommandType extends StObject
 object CommandType {
   
   @scala.inline

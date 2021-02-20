@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalSecondaryIndex extends js.Object {
+trait LocalSecondaryIndex extends StObject {
   
   /**
     * The name of the local secondary index. The name must be unique among all other indexes on this table.
@@ -31,30 +32,18 @@ object LocalSecondaryIndex {
   }
   
   @scala.inline
-  implicit class LocalSecondaryIndexOps[Self <: LocalSecondaryIndex] (val x: Self) extends AnyVal {
+  implicit class LocalSecondaryIndexMutableBuilder[Self <: LocalSecondaryIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjection(value: Projection): Self = this.set("Projection", value.asInstanceOf[js.Any])
+    def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
   }
 }

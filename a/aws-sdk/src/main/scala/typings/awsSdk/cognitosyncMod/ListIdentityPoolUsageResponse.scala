@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIdentityPoolUsageResponse extends js.Object {
+trait ListIdentityPoolUsageResponse extends StObject {
   
   /**
     * Total number of identities for the identity pool.
@@ -36,45 +37,33 @@ object ListIdentityPoolUsageResponse {
   }
   
   @scala.inline
-  implicit class ListIdentityPoolUsageResponseOps[Self <: ListIdentityPoolUsageResponse] (val x: Self) extends AnyVal {
+  implicit class ListIdentityPoolUsageResponseMutableBuilder[Self <: ListIdentityPoolUsageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolUsages(value: IdentityPoolUsageList): Self = StObject.set(x, "IdentityPoolUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setIdentityPoolUsagesUndefined: Self = StObject.set(x, "IdentityPoolUsages", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setIdentityPoolUsagesVarargs(value: IdentityPoolUsage*): Self = StObject.set(x, "IdentityPoolUsages", js.Array(value :_*))
     
     @scala.inline
-    def setIdentityPoolUsagesVarargs(value: IdentityPoolUsage*): Self = this.set("IdentityPoolUsages", js.Array(value :_*))
+    def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPoolUsages(value: IdentityPoolUsageList): Self = this.set("IdentityPoolUsages", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteIdentityPoolUsages: Self = this.set("IdentityPoolUsages", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceParameters(value: js.Array[ResourceParameter]): Self = StObject.set(x, "resourceParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceParametersVarargs(value: ResourceParameter*): Self = this.set("resourceParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceParameters(value: js.Array[ResourceParameter]): Self = this.set("resourceParameters", value.asInstanceOf[js.Any])
+    def setResourceParametersVarargs(value: ResourceParameter*): Self = StObject.set(x, "resourceParameters", js.Array(value :_*))
   }
 }

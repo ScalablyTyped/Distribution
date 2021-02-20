@@ -1,6 +1,7 @@
 package typings.angularfire
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated. Not possible with AngularFire 1.0+
   */
 @js.native
-trait AngularFire extends js.Object {
+trait AngularFire extends StObject {
   
   @JSName("$asArray")
   def $asArray(): AngularFireArray = js.native

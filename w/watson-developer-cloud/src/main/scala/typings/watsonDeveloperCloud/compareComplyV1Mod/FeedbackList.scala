@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The results of a successful `GET /v1/feedback` request. */
 @js.native
-trait FeedbackList extends js.Object {
+trait FeedbackList extends StObject {
   
   /** A list of all feedback for the document. */
   var feedback: js.UndefOr[js.Array[GetFeedback]] = js.native
@@ -20,27 +21,15 @@ object FeedbackList {
   }
   
   @scala.inline
-  implicit class FeedbackListOps[Self <: FeedbackList] (val x: Self) extends AnyVal {
+  implicit class FeedbackListMutableBuilder[Self <: FeedbackList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedback(value: js.Array[GetFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFeedbackVarargs(value: GetFeedback*): Self = this.set("feedback", js.Array(value :_*))
-    
-    @scala.inline
-    def setFeedback(value: js.Array[GetFeedback]): Self = this.set("feedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeedback: Self = this.set("feedback", js.undefined)
+    def setFeedbackVarargs(value: GetFeedback*): Self = StObject.set(x, "feedback", js.Array(value :_*))
   }
 }

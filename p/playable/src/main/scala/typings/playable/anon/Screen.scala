@@ -7,12 +7,13 @@ import typings.playable.rootContainerTypesMod.IRootContainer
 import typings.playable.screenTypesMod.IScreen
 import typings.playable.tooltipTypesMod.ITooltipService
 import typings.playable.topBlockTypesMod.ITopBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Screen extends js.Object {
+trait Screen extends StObject {
   
   var bottomBlock: IBottomBlock = js.native
   
@@ -45,39 +46,27 @@ object Screen {
   }
   
   @scala.inline
-  implicit class ScreenOps[Self <: Screen] (val x: Self) extends AnyVal {
+  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBlock(value: IBottomBlock): Self = this.set("bottomBlock", value.asInstanceOf[js.Any])
+    def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: IPlayerConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setScreen(value: IScreen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
+    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootContainer(value: IRootContainer): Self = this.set("rootContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScreen(value: IScreen): Self = this.set("screen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = this.set("tooltipService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopBlock(value: ITopBlock): Self = this.set("topBlock", value.asInstanceOf[js.Any])
+    def setTopBlock(value: ITopBlock): Self = StObject.set(x, "topBlock", value.asInstanceOf[js.Any])
   }
 }

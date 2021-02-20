@@ -1,11 +1,12 @@
 package typings.safariExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariExtensionMenu extends js.Object {
+trait SafariExtensionMenu extends StObject {
   
   def appendMenuItem(identifier: String, title: String): SafariExtensionMenuItem = js.native
   def appendMenuItem(identifier: String, title: String, command: String): SafariExtensionMenuItem = js.native

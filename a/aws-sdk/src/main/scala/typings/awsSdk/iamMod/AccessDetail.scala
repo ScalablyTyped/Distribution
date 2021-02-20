@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessDetail extends js.Object {
+trait AccessDetail extends StObject {
   
   /**
     * The path of the Organizations entity (root, organizational unit, or account) from which an authenticated principal last attempted to access the service. AWS does not report unauthenticated requests. This field is null if no principals (IAM users, IAM roles, or root users) in the reported Organizations entity attempted to access the service within the reporting period.
@@ -46,48 +47,36 @@ object AccessDetail {
   }
   
   @scala.inline
-  implicit class AccessDetailOps[Self <: AccessDetail] (val x: Self) extends AnyVal {
+  implicit class AccessDetailMutableBuilder[Self <: AccessDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityPath(value: organizationsEntityPathType): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastAuthenticatedTime(value: dateType): Self = StObject.set(x, "LastAuthenticatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: serviceNameType): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    def setLastAuthenticatedTimeUndefined: Self = StObject.set(x, "LastAuthenticatedTime", js.undefined)
     
     @scala.inline
-    def setServiceNamespace(value: serviceNamespaceType): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityPath(value: organizationsEntityPathType): Self = this.set("EntityPath", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deleteEntityPath: Self = this.set("EntityPath", js.undefined)
+    def setServiceName(value: serviceNameType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAuthenticatedTime(value: dateType): Self = this.set("LastAuthenticatedTime", value.asInstanceOf[js.Any])
+    def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastAuthenticatedTime: Self = this.set("LastAuthenticatedTime", js.undefined)
+    def setTotalAuthenticatedEntities(value: integerType): Self = StObject.set(x, "TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: stringType): Self = this.set("Region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
-    
-    @scala.inline
-    def setTotalAuthenticatedEntities(value: integerType): Self = this.set("TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalAuthenticatedEntities: Self = this.set("TotalAuthenticatedEntities", js.undefined)
+    def setTotalAuthenticatedEntitiesUndefined: Self = StObject.set(x, "TotalAuthenticatedEntities", js.undefined)
   }
 }

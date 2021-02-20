@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends StObject {
   
   /**
     * Required. Prediction keys that tell Data Labeling Service where to find the data for evaluation in your BigQuery table. When the service samples prediction input and output from
@@ -88,82 +89,70 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EvaluationJobConfigOps[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobConfig] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class GoogleCloudDatalabelingV1beta1EvaluationJobConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBigqueryImportKeys(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig with TopLevel[js.Any]
-    ): Self = this.set("bigqueryImportKeys", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "bigqueryImportKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBigqueryImportKeys: Self = this.set("bigqueryImportKeys", js.undefined)
+    def setBigqueryImportKeysUndefined: Self = StObject.set(x, "bigqueryImportKeys", js.undefined)
     
     @scala.inline
-    def setBoundingPolyConfig(value: GoogleCloudDatalabelingV1beta1BoundingPolyConfig): Self = this.set("boundingPolyConfig", value.asInstanceOf[js.Any])
+    def setBoundingPolyConfig(value: GoogleCloudDatalabelingV1beta1BoundingPolyConfig): Self = StObject.set(x, "boundingPolyConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoundingPolyConfig: Self = this.set("boundingPolyConfig", js.undefined)
+    def setBoundingPolyConfigUndefined: Self = StObject.set(x, "boundingPolyConfig", js.undefined)
     
     @scala.inline
-    def setEvaluationConfig(value: GoogleCloudDatalabelingV1beta1EvaluationConfig): Self = this.set("evaluationConfig", value.asInstanceOf[js.Any])
+    def setEvaluationConfig(value: GoogleCloudDatalabelingV1beta1EvaluationConfig): Self = StObject.set(x, "evaluationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvaluationConfig: Self = this.set("evaluationConfig", js.undefined)
+    def setEvaluationConfigUndefined: Self = StObject.set(x, "evaluationConfig", js.undefined)
     
     @scala.inline
-    def setEvaluationJobAlertConfig(value: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig): Self = this.set("evaluationJobAlertConfig", value.asInstanceOf[js.Any])
+    def setEvaluationJobAlertConfig(value: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig): Self = StObject.set(x, "evaluationJobAlertConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvaluationJobAlertConfig: Self = this.set("evaluationJobAlertConfig", js.undefined)
+    def setEvaluationJobAlertConfigUndefined: Self = StObject.set(x, "evaluationJobAlertConfig", js.undefined)
     
     @scala.inline
-    def setExampleCount(value: Double): Self = this.set("exampleCount", value.asInstanceOf[js.Any])
+    def setExampleCount(value: Double): Self = StObject.set(x, "exampleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExampleCount: Self = this.set("exampleCount", js.undefined)
+    def setExampleCountUndefined: Self = StObject.set(x, "exampleCount", js.undefined)
     
     @scala.inline
-    def setExampleSamplePercentage(value: Double): Self = this.set("exampleSamplePercentage", value.asInstanceOf[js.Any])
+    def setExampleSamplePercentage(value: Double): Self = StObject.set(x, "exampleSamplePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExampleSamplePercentage: Self = this.set("exampleSamplePercentage", js.undefined)
+    def setExampleSamplePercentageUndefined: Self = StObject.set(x, "exampleSamplePercentage", js.undefined)
     
     @scala.inline
-    def setHumanAnnotationConfig(value: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig): Self = this.set("humanAnnotationConfig", value.asInstanceOf[js.Any])
+    def setHumanAnnotationConfig(value: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig): Self = StObject.set(x, "humanAnnotationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHumanAnnotationConfig: Self = this.set("humanAnnotationConfig", js.undefined)
+    def setHumanAnnotationConfigUndefined: Self = StObject.set(x, "humanAnnotationConfig", js.undefined)
     
     @scala.inline
-    def setImageClassificationConfig(value: GoogleCloudDatalabelingV1beta1ImageClassificationConfig): Self = this.set("imageClassificationConfig", value.asInstanceOf[js.Any])
+    def setImageClassificationConfig(value: GoogleCloudDatalabelingV1beta1ImageClassificationConfig): Self = StObject.set(x, "imageClassificationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageClassificationConfig: Self = this.set("imageClassificationConfig", js.undefined)
+    def setImageClassificationConfigUndefined: Self = StObject.set(x, "imageClassificationConfig", js.undefined)
     
     @scala.inline
-    def setInputConfig(value: GoogleCloudDatalabelingV1beta1InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
+    def setInputConfig(value: GoogleCloudDatalabelingV1beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def setTextClassificationConfig(value: GoogleCloudDatalabelingV1beta1TextClassificationConfig): Self = this.set("textClassificationConfig", value.asInstanceOf[js.Any])
+    def setTextClassificationConfig(value: GoogleCloudDatalabelingV1beta1TextClassificationConfig): Self = StObject.set(x, "textClassificationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextClassificationConfig: Self = this.set("textClassificationConfig", js.undefined)
+    def setTextClassificationConfigUndefined: Self = StObject.set(x, "textClassificationConfig", js.undefined)
   }
 }

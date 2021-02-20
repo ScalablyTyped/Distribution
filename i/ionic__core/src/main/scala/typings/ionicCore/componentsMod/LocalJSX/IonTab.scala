@@ -1,12 +1,13 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.ionicCore.mod.ComponentRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonTab extends js.Object {
+trait IonTab extends StObject {
   
   /**
     * The component to display inside of the tab.
@@ -27,30 +28,18 @@ object IonTab {
   }
   
   @scala.inline
-  implicit class IonTabOps[Self <: IonTab] (val x: Self) extends AnyVal {
+  implicit class IonTabMutableBuilder[Self <: IonTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentNull: Self = StObject.set(x, "component", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def setTab(value: String): Self = this.set("tab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComponent(value: ComponentRef): Self = this.set("component", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
-    
-    @scala.inline
-    def setComponentNull: Self = this.set("component", null)
+    def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

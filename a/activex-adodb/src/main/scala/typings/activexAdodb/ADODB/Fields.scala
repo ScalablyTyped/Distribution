@@ -1,11 +1,12 @@
 package typings.activexAdodb.ADODB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fields extends js.Object {
+trait Fields extends StObject {
   
   def apply(Index: String): Field = js.native
   def apply(Index: Double): Field = js.native

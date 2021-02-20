@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResetImageAttributeRequest extends js.Object {
+trait ResetImageAttributeRequest extends StObject {
   
   /**
     * The attribute to reset (currently you can only reset the launch permission attribute).
@@ -31,30 +32,18 @@ object ResetImageAttributeRequest {
   }
   
   @scala.inline
-  implicit class ResetImageAttributeRequestOps[Self <: ResetImageAttributeRequest] (val x: Self) extends AnyVal {
+  implicit class ResetImageAttributeRequestMutableBuilder[Self <: ResetImageAttributeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: ResetImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setAttribute(value: ResetImageAttributeName): Self = this.set("Attribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageId(value: ImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
   }
 }

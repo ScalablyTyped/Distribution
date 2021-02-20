@@ -6,16 +6,16 @@ import typings.babylonjs.sceneMod.Scene
 import typings.std.AudioNode
 import typings.std.Float32Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Audio/analyser", JSImport.Namespace)
-@js.native
-object analyserMod extends js.Object {
+object analyserMod {
   
+  @JSImport("babylonjs/Audio/analyser", "Analyser")
   @js.native
-  class Analyser protected () extends js.Object {
+  class Analyser protected () extends StObject {
     /**
       * Creates a new analyser
       * @param scene defines hosting scene

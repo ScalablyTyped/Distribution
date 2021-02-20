@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object FileSaveBinaryInformation {
   }
   
   @scala.inline
-  implicit class FileSaveBinaryInformationOps[Self <: FileSaveBinaryInformation] (val x: Self) extends AnyVal {
+  implicit class FileSaveBinaryInformationMutableBuilder[Self <: FileSaveBinaryInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_checkRequiredFields(value: () => Boolean): Self = StObject.set(x, "get_checkRequiredFields", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_content(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_content", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_eTag(value: () => String): Self = StObject.set(x, "get_eTag", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_checkRequiredFields(value: () => Boolean): Self = this.set("get_checkRequiredFields", js.Any.fromFunction0(value))
+    def setGet_fieldValues(value: () => js.Any): Self = StObject.set(x, "get_fieldValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_content(value: () => Base64EncodedByteArray): Self = this.set("get_content", js.Any.fromFunction0(value))
+    def setSet_checkRequiredFields(value: Boolean => Unit): Self = StObject.set(x, "set_checkRequiredFields", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_eTag(value: () => String): Self = this.set("get_eTag", js.Any.fromFunction0(value))
+    def setSet_content(value: Base64EncodedByteArray => Unit): Self = StObject.set(x, "set_content", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_fieldValues(value: () => js.Any): Self = this.set("get_fieldValues", js.Any.fromFunction0(value))
+    def setSet_eTag(value: String => Unit): Self = StObject.set(x, "set_eTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_checkRequiredFields(value: Boolean => Unit): Self = this.set("set_checkRequiredFields", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_content(value: Base64EncodedByteArray => Unit): Self = this.set("set_content", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_eTag(value: String => Unit): Self = this.set("set_eTag", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_fieldValues(value: js.Any => Unit): Self = this.set("set_fieldValues", js.Any.fromFunction1(value))
+    def setSet_fieldValues(value: js.Any => Unit): Self = StObject.set(x, "set_fieldValues", js.Any.fromFunction1(value))
   }
 }

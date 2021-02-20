@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentModerationDetection extends js.Object {
+trait ContentModerationDetection extends StObject {
   
   /**
     * The unsafe content label detected by in the stored video.
@@ -26,30 +27,18 @@ object ContentModerationDetection {
   }
   
   @scala.inline
-  implicit class ContentModerationDetectionOps[Self <: ContentModerationDetection] (val x: Self) extends AnyVal {
+  implicit class ContentModerationDetectionMutableBuilder[Self <: ContentModerationDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModerationLabel(value: ModerationLabel): Self = StObject.set(x, "ModerationLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModerationLabelUndefined: Self = StObject.set(x, "ModerationLabel", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerationLabel(value: ModerationLabel): Self = this.set("ModerationLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModerationLabel: Self = this.set("ModerationLabel", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

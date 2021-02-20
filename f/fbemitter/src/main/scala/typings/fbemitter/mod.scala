@@ -1,15 +1,15 @@
 package typings.fbemitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fbemitter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("fbemitter", "EventEmitter")
   @js.native
-  class EventEmitter () extends js.Object {
+  class EventEmitter () extends StObject {
     
     /**
       * Adds a listener to be invoked when events of the specified type are
@@ -56,8 +56,9 @@ object mod extends js.Object {
     def removeCurrentListener(): Unit = js.native
   }
   
+  @JSImport("fbemitter", "EventSubscription")
   @js.native
-  class EventSubscription () extends js.Object {
+  class EventSubscription () extends StObject {
     
     var context: js.Any = js.native
     

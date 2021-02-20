@@ -1,6 +1,7 @@
 package typings.googleMarkerclustererplus
 
 import typings.googlemaps.google.maps.Marker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Optional parameter passed to the {@link MarkerClusterer} constructor.
   */
 @js.native
-trait MarkerClustererOptions extends js.Object {
+trait MarkerClustererOptions extends StObject {
   
   /**
     * [averageCenter=false] Whether the position of a cluster marker should be
@@ -151,120 +152,108 @@ object MarkerClustererOptions {
   }
   
   @scala.inline
-  implicit class MarkerClustererOptionsOps[Self <: MarkerClustererOptions] (val x: Self) extends AnyVal {
+  implicit class MarkerClustererOptionsMutableBuilder[Self <: MarkerClustererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageCenter(value: Boolean): Self = StObject.set(x, "averageCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageCenterUndefined: Self = StObject.set(x, "averageCenter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageCenter(value: Boolean): Self = this.set("averageCenter", value.asInstanceOf[js.Any])
+    def setBatchSizeIE(value: Double): Self = StObject.set(x, "batchSizeIE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageCenter: Self = this.set("averageCenter", js.undefined)
+    def setBatchSizeIEUndefined: Self = StObject.set(x, "batchSizeIE", js.undefined)
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setCalculator(value: (/* markers */ js.Array[Marker], /* clusterIconStylesCount */ Double) => ClusterIconInfo): Self = StObject.set(x, "calculator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBatchSizeIE(value: Double): Self = this.set("batchSizeIE", value.asInstanceOf[js.Any])
+    def setCalculatorUndefined: Self = StObject.set(x, "calculator", js.undefined)
     
     @scala.inline
-    def deleteBatchSizeIE: Self = this.set("batchSizeIE", js.undefined)
+    def setClusterClass(value: java.lang.String): Self = StObject.set(x, "clusterClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculator(value: (/* markers */ js.Array[Marker], /* clusterIconStylesCount */ Double) => ClusterIconInfo): Self = this.set("calculator", js.Any.fromFunction2(value))
+    def setClusterClassUndefined: Self = StObject.set(x, "clusterClass", js.undefined)
     
     @scala.inline
-    def deleteCalculator: Self = this.set("calculator", js.undefined)
+    def setEnableRetinaIcons(value: Boolean): Self = StObject.set(x, "enableRetinaIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterClass(value: java.lang.String): Self = this.set("clusterClass", value.asInstanceOf[js.Any])
+    def setEnableRetinaIconsUndefined: Self = StObject.set(x, "enableRetinaIcons", js.undefined)
     
     @scala.inline
-    def deleteClusterClass: Self = this.set("clusterClass", js.undefined)
+    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRetinaIcons(value: Boolean): Self = this.set("enableRetinaIcons", value.asInstanceOf[js.Any])
+    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
     @scala.inline
-    def deleteEnableRetinaIcons: Self = this.set("enableRetinaIcons", js.undefined)
+    def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridSize(value: Double): Self = this.set("gridSize", value.asInstanceOf[js.Any])
+    def setIgnoreHiddenUndefined: Self = StObject.set(x, "ignoreHidden", js.undefined)
     
     @scala.inline
-    def deleteGridSize: Self = this.set("gridSize", js.undefined)
+    def setImageExtension(value: java.lang.String): Self = StObject.set(x, "imageExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreHidden(value: Boolean): Self = this.set("ignoreHidden", value.asInstanceOf[js.Any])
+    def setImageExtensionUndefined: Self = StObject.set(x, "imageExtension", js.undefined)
     
     @scala.inline
-    def deleteIgnoreHidden: Self = this.set("ignoreHidden", js.undefined)
+    def setImagePath(value: java.lang.String): Self = StObject.set(x, "imagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageExtension(value: java.lang.String): Self = this.set("imageExtension", value.asInstanceOf[js.Any])
+    def setImagePathUndefined: Self = StObject.set(x, "imagePath", js.undefined)
     
     @scala.inline
-    def deleteImageExtension: Self = this.set("imageExtension", js.undefined)
+    def setImageSizes(value: js.Array[Double]): Self = StObject.set(x, "imageSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePath(value: java.lang.String): Self = this.set("imagePath", value.asInstanceOf[js.Any])
+    def setImageSizesUndefined: Self = StObject.set(x, "imageSizes", js.undefined)
     
     @scala.inline
-    def deleteImagePath: Self = this.set("imagePath", js.undefined)
+    def setImageSizesVarargs(value: Double*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
     
     @scala.inline
-    def setImageSizesVarargs(value: Double*): Self = this.set("imageSizes", js.Array(value :_*))
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSizes(value: js.Array[Double]): Self = this.set("imageSizes", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteImageSizes: Self = this.set("imageSizes", js.undefined)
+    def setMinimumClusterSize(value: Double): Self = StObject.set(x, "minimumClusterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinimumClusterSizeUndefined: Self = StObject.set(x, "minimumClusterSize", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setStyles(value: js.Array[ClusterIconStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumClusterSize(value: Double): Self = this.set("minimumClusterSize", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteMinimumClusterSize: Self = this.set("minimumClusterSize", js.undefined)
+    def setStylesVarargs(value: ClusterIconStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: ClusterIconStyle*): Self = this.set("styles", js.Array(value :_*))
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[ClusterIconStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setZoomOnClick(value: Boolean): Self = this.set("zoomOnClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOnClick: Self = this.set("zoomOnClick", js.undefined)
+    def setZoomOnClickUndefined: Self = StObject.set(x, "zoomOnClick", js.undefined)
   }
 }

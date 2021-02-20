@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateOrganizationRequest extends js.Object {
+trait CreateOrganizationRequest extends StObject {
   
   /**
     * The organization alias.
@@ -46,54 +47,42 @@ object CreateOrganizationRequest {
   }
   
   @scala.inline
-  implicit class CreateOrganizationRequestOps[Self <: CreateOrganizationRequest] (val x: Self) extends AnyVal {
+  implicit class CreateOrganizationRequestMutableBuilder[Self <: CreateOrganizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def setAlias(value: OrganizationName): Self = this.set("Alias", value.asInstanceOf[js.Any])
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: IdempotencyClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setDomains(value: Domains): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
     
     @scala.inline
-    def setDomainsVarargs(value: Domain*): Self = this.set("Domains", js.Array(value :_*))
+    def setEnableInteroperability(value: Boolean): Self = StObject.set(x, "EnableInteroperability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomains(value: Domains): Self = this.set("Domains", value.asInstanceOf[js.Any])
+    def setEnableInteroperabilityUndefined: Self = StObject.set(x, "EnableInteroperability", js.undefined)
     
     @scala.inline
-    def deleteDomains: Self = this.set("Domains", js.undefined)
+    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableInteroperability(value: Boolean): Self = this.set("EnableInteroperability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableInteroperability: Self = this.set("EnableInteroperability", js.undefined)
-    
-    @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
   }
 }

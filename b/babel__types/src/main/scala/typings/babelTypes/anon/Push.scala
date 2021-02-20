@@ -1,12 +1,13 @@
 package typings.babelTypes.anon
 
 import typings.babelTypes.mod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Push extends js.Object {
+trait Push extends StObject {
   
   def buildUndefinedNode(): Node = js.native
   
@@ -21,24 +22,12 @@ object Push {
   }
   
   @scala.inline
-  implicit class PushOps[Self <: Push] (val x: Self) extends AnyVal {
+  implicit class PushMutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildUndefinedNode(value: () => Node): Self = StObject.set(x, "buildUndefinedNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuildUndefinedNode(value: () => Node): Self = this.set("buildUndefinedNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPush(value: Init => Unit): Self = this.set("push", js.Any.fromFunction1(value))
+    def setPush(value: Init => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }
 }

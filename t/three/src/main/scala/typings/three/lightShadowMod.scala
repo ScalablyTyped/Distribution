@@ -6,16 +6,16 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.vector2Mod.Vector2
 import typings.three.vector4Mod.Vector4
 import typings.three.webGLRenderListsMod.RenderTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/lights/LightShadow", JSImport.Namespace)
-@js.native
-object lightShadowMod extends js.Object {
+object lightShadowMod {
   
+  @JSImport("three/src/lights/LightShadow", "LightShadow")
   @js.native
-  class LightShadow protected () extends js.Object {
+  class LightShadow protected () extends StObject {
     def this(camera: Camera) = this()
     
     /**

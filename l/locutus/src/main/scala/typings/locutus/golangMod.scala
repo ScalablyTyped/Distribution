@@ -1,50 +1,64 @@
 package typings.locutus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locutus/golang", JSImport.Namespace)
-@js.native
-object golangMod extends js.Object {
+object golangMod {
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
+    @JSImport("locutus/golang", "strings.Contains")
     @js.native
-    object Contains extends js.Object {
-      
-      def apply(): js.Any = js.native
-      def apply(s: js.UndefOr[scala.Nothing], substr: js.Any): js.Any = js.native
-      def apply(s: js.Any): js.Any = js.native
-      def apply(s: js.Any, substr: js.Any): js.Any = js.native
-    }
+    def Contains(): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Contains")
+    @js.native
+    def Contains(s: js.UndefOr[scala.Nothing], substr: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Contains")
+    @js.native
+    def Contains(s: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Contains")
+    @js.native
+    def Contains(s: js.Any, substr: js.Any): js.Any = js.native
     
+    @JSImport("locutus/golang", "strings.Count")
     @js.native
-    object Count extends js.Object {
-      
-      def apply(): js.Any = js.native
-      def apply(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
-      def apply(s: js.Any): js.Any = js.native
-      def apply(s: js.Any, sep: js.Any): js.Any = js.native
-    }
+    def Count(): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Count")
+    @js.native
+    def Count(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Count")
+    @js.native
+    def Count(s: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Count")
+    @js.native
+    def Count(s: js.Any, sep: js.Any): js.Any = js.native
     
+    @JSImport("locutus/golang", "strings.Index")
     @js.native
-    object Index extends js.Object {
-      
-      def apply(): js.Any = js.native
-      def apply(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
-      def apply(s: js.Any): js.Any = js.native
-      def apply(s: js.Any, sep: js.Any): js.Any = js.native
-    }
+    def Index(): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Index")
+    @js.native
+    def Index(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Index")
+    @js.native
+    def Index(s: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.Index")
+    @js.native
+    def Index(s: js.Any, sep: js.Any): js.Any = js.native
     
+    @JSImport("locutus/golang", "strings.LastIndex")
     @js.native
-    object LastIndex extends js.Object {
-      
-      def apply(): js.Any = js.native
-      def apply(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
-      def apply(s: js.Any): js.Any = js.native
-      def apply(s: js.Any, sep: js.Any): js.Any = js.native
-    }
+    def LastIndex(): js.Any = js.native
+    @JSImport("locutus/golang", "strings.LastIndex")
+    @js.native
+    def LastIndex(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.LastIndex")
+    @js.native
+    def LastIndex(s: js.Any): js.Any = js.native
+    @JSImport("locutus/golang", "strings.LastIndex")
+    @js.native
+    def LastIndex(s: js.Any, sep: js.Any): js.Any = js.native
   }
 }

@@ -7,18 +7,19 @@ import typings.astTypes.kindsMod.FlowTypeKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.VarianceKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bound extends js.Object {
+trait Bound extends StObject {
+  
+  var default: js.UndefOr[FlowTypeKind | Null] = js.native
   
   var bound: js.UndefOr[TypeAnnotationKind | Null] = js.native
   
   var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
-  
-  var default: js.UndefOr[FlowTypeKind | Null] = js.native
   
   var loc: js.UndefOr[SourceLocationKind | Null] = js.native
   
@@ -35,69 +36,57 @@ object Bound {
   }
   
   @scala.inline
-  implicit class BoundOps[Self <: Bound] (val x: Self) extends AnyVal {
+  implicit class BoundMutableBuilder[Self <: Bound] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBound(value: TypeAnnotationKind): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundNull: Self = StObject.set(x, "bound", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBound(value: TypeAnnotationKind): Self = this.set("bound", value.asInstanceOf[js.Any])
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def deleteBound: Self = this.set("bound", js.undefined)
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setBoundNull: Self = this.set("bound", null)
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setDefault(value: FlowTypeKind): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDefaultNull: Self = StObject.set(x, "default", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: FlowTypeKind): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setDefaultNull: Self = this.set("default", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setVariance(value: VarianceKind | plus | minus): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setVarianceNull: Self = StObject.set(x, "variance", null)
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
-    
-    @scala.inline
-    def setVariance(value: VarianceKind | plus | minus): Self = this.set("variance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariance: Self = this.set("variance", js.undefined)
-    
-    @scala.inline
-    def setVarianceNull: Self = this.set("variance", null)
+    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

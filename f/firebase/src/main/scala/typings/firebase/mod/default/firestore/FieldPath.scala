@@ -1,12 +1,13 @@
 package typings.firebase.mod.default.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "firestore.FieldPath")
+@JSImport("firebase", "default.firestore.FieldPath")
 @js.native
-class FieldPath protected () extends js.Object {
+class FieldPath protected () extends StObject {
   /**
     * Creates a FieldPath from the provided field names. If more than one field
     * name is provided, the path will point to a nested field in a document.
@@ -24,13 +25,13 @@ class FieldPath protected () extends js.Object {
   def isEqual(other: typings.firebase.mod.firebase.firestore.FieldPath): Boolean = js.native
 }
 /* static members */
-@JSImport("firebase", "firestore.FieldPath")
-@js.native
-object FieldPath extends js.Object {
+object FieldPath {
   
   /**
     * Returns a special sentinel `FieldPath` to refer to the ID of a document.
     * It can be used in queries to sort or filter by the document ID.
     */
+  @JSImport("firebase", "default.firestore.FieldPath.documentId")
+  @js.native
   def documentId(): typings.firebase.mod.firebase.firestore.FieldPath = js.native
 }

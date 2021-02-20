@@ -1,10 +1,6 @@
 package typings.samchonFramework.mod.collections
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.anon.Iteratoranyanyanyany
-import typings.tstl.icontainerMod.IContainer
-import typings.tstl.mapContainerMod.MapContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,80 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("samchon-framework", "collections.HashMultiMapCollection")
 @js.native
 class HashMultiMapCollection[Key, T] ()
-  extends typings.ecol.hashMultiMapCollectionMod.HashMultiMapCollection[Key, T]
-@JSImport("samchon-framework", "collections.HashMultiMapCollection")
-@js.native
-object HashMultiMapCollection extends js.Object {
+  extends typings.samchon.mod.collections.HashMultiMapCollection[Key, T]
+object HashMultiMapCollection {
   
-  val Event: Instantiable3[
-    /* type */ String, 
-    /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
-    /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
-    typings.ecol.collectionEventMod.CollectionEvent[
-      js.Object, 
-      IContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ], 
-      typings.tstl.icontainerMod.IContainer.Iterator[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ], 
-      typings.tstl.icontainerMod.IContainer.ReverseIterator[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
-    ]
-  ] = js.native
-  
-  val Iterator: Instantiable0[
-    typings.tstl.mapElementListMod.MapElementList.Iterator[
-      js.Object, 
-      js.Object, 
-      Boolean, 
-      MapContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        Iteratoranyanyanyany, 
-        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-        ]
-      ]
-    ]
-  ] = js.native
-  
-  val ReverseIterator: Instantiable0[
-    typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
-      js.Object, 
-      js.Object, 
-      Boolean, 
-      MapContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        Iteratoranyanyanyany, 
-        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-        ]
-      ]
-    ]
-  ] = js.native
+  /* was `typeof CollectionEvent` */
+  @JSImport("samchon-framework", "collections.HashMultiMapCollection.Event")
+  @js.native
+  class Event[T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ js.Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] protected ()
+    extends typings.samchon.mod.collections.HashMultiMapCollection.Event[T, SourceT, IteratorT, ReverseT] {
+    def this(`type`: String, first: IteratorT, last: IteratorT) = this()
+  }
+  /* was `typeof CollectionEvent` */
+  object Event
 }

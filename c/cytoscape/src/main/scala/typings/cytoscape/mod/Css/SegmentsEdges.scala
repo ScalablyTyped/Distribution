@@ -3,6 +3,7 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.cytoscapeStrings.`node-position`
 import typings.cytoscape.cytoscapeStrings.intersection
 import typings.cytoscape.mod.EdgeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#style/segments-edges
   */
 @js.native
-trait SegmentsEdges extends js.Object {
+trait SegmentsEdges extends StObject {
   
   /**
     * With value
@@ -54,36 +55,24 @@ object SegmentsEdges {
   }
   
   @scala.inline
-  implicit class SegmentsEdgesOps[Self <: SegmentsEdges] (val x: Self) extends AnyVal {
+  implicit class SegmentsEdgesMutableBuilder[Self <: SegmentsEdges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setSegment-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = this.set("edge-distances", js.Any.fromFunction1(value))
+    def `setSegment-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = this.set("edge-distances", value.asInstanceOf[js.Any])
+    def `setSegment-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSegment-distancesFunction1`(value: EdgeSingular => String): Self = this.set("segment-distances", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setSegment-distances`(value: PropertyValueEdge[String]): Self = this.set("segment-distances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setSegment-weightsFunction1`(value: EdgeSingular => String): Self = this.set("segment-weights", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setSegment-weights`(value: PropertyValueEdge[String]): Self = this.set("segment-weights", value.asInstanceOf[js.Any])
+    def `setSegment-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
   }
 }

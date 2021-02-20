@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,48 +52,36 @@ object BasemapToggleProperties {
   }
   
   @scala.inline
-  implicit class BasemapTogglePropertiesOps[Self <: BasemapToggleProperties] (val x: Self) extends AnyVal {
+  implicit class BasemapTogglePropertiesMutableBuilder[Self <: BasemapToggleProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextBasemap(value: BasemapProperties | String): Self = StObject.set(x, "nextBasemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextBasemapUndefined: Self = StObject.set(x, "nextBasemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTitleVisible(value: Boolean): Self = StObject.set(x, "titleVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextBasemap(value: BasemapProperties | String): Self = this.set("nextBasemap", value.asInstanceOf[js.Any])
+    def setTitleVisibleUndefined: Self = StObject.set(x, "titleVisible", js.undefined)
     
     @scala.inline
-    def deleteNextBasemap: Self = this.set("nextBasemap", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleVisible(value: Boolean): Self = this.set("titleVisible", value.asInstanceOf[js.Any])
+    def setViewModel(value: BasemapToggleViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleVisible: Self = this.set("titleVisible", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setVisibleElements(value: BasemapToggleVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: BasemapToggleViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
-    
-    @scala.inline
-    def setVisibleElements(value: BasemapToggleVisibleElements): Self = this.set("visibleElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleElements: Self = this.set("visibleElements", js.undefined)
+    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

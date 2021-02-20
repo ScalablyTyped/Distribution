@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creative Field Assignment.
   */
 @js.native
-trait SchemaCreativeFieldAssignment extends js.Object {
+trait SchemaCreativeFieldAssignment extends StObject {
   
   /**
     * ID of the creative field.
@@ -29,30 +30,18 @@ object SchemaCreativeFieldAssignment {
   }
   
   @scala.inline
-  implicit class SchemaCreativeFieldAssignmentOps[Self <: SchemaCreativeFieldAssignment] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeFieldAssignmentMutableBuilder[Self <: SchemaCreativeFieldAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreativeFieldId(value: String): Self = StObject.set(x, "creativeFieldId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreativeFieldIdUndefined: Self = StObject.set(x, "creativeFieldId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreativeFieldValueId(value: String): Self = StObject.set(x, "creativeFieldValueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeFieldId(value: String): Self = this.set("creativeFieldId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreativeFieldId: Self = this.set("creativeFieldId", js.undefined)
-    
-    @scala.inline
-    def setCreativeFieldValueId(value: String): Self = this.set("creativeFieldValueId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreativeFieldValueId: Self = this.set("creativeFieldValueId", js.undefined)
+    def setCreativeFieldValueIdUndefined: Self = StObject.set(x, "creativeFieldValueId", js.undefined)
   }
 }

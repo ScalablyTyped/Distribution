@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AABBOptions extends js.Object {
+trait AABBOptions extends StObject {
   
   var lowerBound: js.UndefOr[js.Tuple2[Double, Double]] = js.native
   
@@ -20,30 +21,18 @@ object AABBOptions {
   }
   
   @scala.inline
-  implicit class AABBOptionsOps[Self <: AABBOptions] (val x: Self) extends AnyVal {
+  implicit class AABBOptionsMutableBuilder[Self <: AABBOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLowerBound(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpperBound(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerBound(value: js.Tuple2[Double, Double]): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowerBound: Self = this.set("lowerBound", js.undefined)
-    
-    @scala.inline
-    def setUpperBound(value: js.Tuple2[Double, Double]): Self = this.set("upperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperBound: Self = this.set("upperBound", js.undefined)
+    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

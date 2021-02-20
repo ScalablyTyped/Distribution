@@ -1,6 +1,7 @@
 package typings.ariClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,75 +116,63 @@ object BridgeAttendedTransfer {
   }
   
   @scala.inline
-  implicit class BridgeAttendedTransferOps[Self <: BridgeAttendedTransfer] (val x: Self) extends AnyVal {
+  implicit class BridgeAttendedTransferMutableBuilder[Self <: BridgeAttendedTransfer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination_application(value: String): Self = StObject.set(x, "destination_application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestination_bridge(value: String): Self = StObject.set(x, "destination_bridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination_link_first_leg(value: Channel): Self = StObject.set(x, "destination_link_first_leg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_application(value: String): Self = this.set("destination_application", value.asInstanceOf[js.Any])
+    def setDestination_link_second_leg(value: Channel): Self = StObject.set(x, "destination_link_second_leg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_bridge(value: String): Self = this.set("destination_bridge", value.asInstanceOf[js.Any])
+    def setDestination_threeway_bridge(value: Bridge): Self = StObject.set(x, "destination_threeway_bridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_link_first_leg(value: Channel): Self = this.set("destination_link_first_leg", value.asInstanceOf[js.Any])
+    def setDestination_threeway_channel(value: Channel): Self = StObject.set(x, "destination_threeway_channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_link_second_leg(value: Channel): Self = this.set("destination_link_second_leg", value.asInstanceOf[js.Any])
+    def setDestination_type(value: String): Self = StObject.set(x, "destination_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_threeway_bridge(value: Bridge): Self = this.set("destination_threeway_bridge", value.asInstanceOf[js.Any])
+    def setIs_external(value: Boolean): Self = StObject.set(x, "is_external", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_threeway_channel(value: Channel): Self = this.set("destination_threeway_channel", value.asInstanceOf[js.Any])
+    def setReplace_channel(value: Channel): Self = StObject.set(x, "replace_channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_type(value: String): Self = this.set("destination_type", value.asInstanceOf[js.Any])
+    def setReplace_channelUndefined: Self = StObject.set(x, "replace_channel", js.undefined)
     
     @scala.inline
-    def setIs_external(value: Boolean): Self = this.set("is_external", value.asInstanceOf[js.Any])
+    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setTransfer_target(value: Channel): Self = StObject.set(x, "transfer_target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferer_first_leg(value: Channel): Self = this.set("transferer_first_leg", value.asInstanceOf[js.Any])
+    def setTransfer_targetUndefined: Self = StObject.set(x, "transfer_target", js.undefined)
     
     @scala.inline
-    def setTransferer_first_leg_bridge(value: Bridge): Self = this.set("transferer_first_leg_bridge", value.asInstanceOf[js.Any])
+    def setTransferee(value: Channel): Self = StObject.set(x, "transferee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferer_second_leg(value: Channel): Self = this.set("transferer_second_leg", value.asInstanceOf[js.Any])
+    def setTransfereeUndefined: Self = StObject.set(x, "transferee", js.undefined)
     
     @scala.inline
-    def setTransferer_second_leg_bridge(value: Bridge): Self = this.set("transferer_second_leg_bridge", value.asInstanceOf[js.Any])
+    def setTransferer_first_leg(value: Channel): Self = StObject.set(x, "transferer_first_leg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplace_channel(value: Channel): Self = this.set("replace_channel", value.asInstanceOf[js.Any])
+    def setTransferer_first_leg_bridge(value: Bridge): Self = StObject.set(x, "transferer_first_leg_bridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplace_channel: Self = this.set("replace_channel", js.undefined)
+    def setTransferer_second_leg(value: Channel): Self = StObject.set(x, "transferer_second_leg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransfer_target(value: Channel): Self = this.set("transfer_target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransfer_target: Self = this.set("transfer_target", js.undefined)
-    
-    @scala.inline
-    def setTransferee(value: Channel): Self = this.set("transferee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferee: Self = this.set("transferee", js.undefined)
+    def setTransferer_second_leg_bridge(value: Bridge): Self = StObject.set(x, "transferer_second_leg_bridge", value.asInstanceOf[js.Any])
   }
 }

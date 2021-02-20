@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.table
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,33 +61,21 @@ object XCellCursor {
   }
   
   @scala.inline
-  implicit class XCellCursorOps[Self <: XCellCursor] (val x: Self) extends AnyVal {
+  implicit class XCellCursorMutableBuilder[Self <: XCellCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGotoEnd(value: () => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGotoNext(value: () => Unit): Self = StObject.set(x, "gotoNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGotoOffset(value: (Double, Double) => Unit): Self = StObject.set(x, "gotoOffset", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGotoEnd(value: () => Unit): Self = this.set("gotoEnd", js.Any.fromFunction0(value))
+    def setGotoPrevious(value: () => Unit): Self = StObject.set(x, "gotoPrevious", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGotoNext(value: () => Unit): Self = this.set("gotoNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGotoOffset(value: (Double, Double) => Unit): Self = this.set("gotoOffset", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGotoPrevious(value: () => Unit): Self = this.set("gotoPrevious", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGotoStart(value: () => Unit): Self = this.set("gotoStart", js.Any.fromFunction0(value))
+    def setGotoStart(value: () => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction0(value))
   }
 }

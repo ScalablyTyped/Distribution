@@ -1,5 +1,6 @@
 package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * report has been generated automatically from Google App Engine logs.
   */
 @js.native
-trait SchemaHttpRequestContext extends js.Object {
+trait SchemaHttpRequestContext extends StObject {
   
   /**
     * The type of HTTP request, such as `GET`, `POST`, etc.
@@ -53,54 +54,42 @@ object SchemaHttpRequestContext {
   }
   
   @scala.inline
-  implicit class SchemaHttpRequestContextOps[Self <: SchemaHttpRequestContext] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpRequestContextMutableBuilder[Self <: SchemaHttpRequestContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRemoteIp(value: String): Self = StObject.set(x, "remoteIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    def setRemoteIpUndefined: Self = StObject.set(x, "remoteIp", js.undefined)
     
     @scala.inline
-    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    def setResponseStatusCode(value: Double): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteIp(value: String): Self = this.set("remoteIp", value.asInstanceOf[js.Any])
+    def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
     
     @scala.inline
-    def deleteRemoteIp: Self = this.set("remoteIp", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStatusCode(value: Double): Self = this.set("responseStatusCode", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteResponseStatusCode: Self = this.set("responseStatusCode", js.undefined)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

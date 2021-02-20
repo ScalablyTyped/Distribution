@@ -1,11 +1,12 @@
 package typings.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridOnItemsRenderedProps extends js.Object {
+trait GridOnItemsRenderedProps extends StObject {
   
   var overscanColumnStartIndex: Double = js.native
   
@@ -41,42 +42,30 @@ object GridOnItemsRenderedProps {
   }
   
   @scala.inline
-  implicit class GridOnItemsRenderedPropsOps[Self <: GridOnItemsRenderedProps] (val x: Self) extends AnyVal {
+  implicit class GridOnItemsRenderedPropsMutableBuilder[Self <: GridOnItemsRenderedProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverscanColumnStartIndex(value: Double): Self = StObject.set(x, "overscanColumnStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverscanColumnStopIndex(value: Double): Self = StObject.set(x, "overscanColumnStopIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverscanRowStartIndex(value: Double): Self = StObject.set(x, "overscanRowStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanColumnStartIndex(value: Double): Self = this.set("overscanColumnStartIndex", value.asInstanceOf[js.Any])
+    def setOverscanRowStopIndex(value: Double): Self = StObject.set(x, "overscanRowStopIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanColumnStopIndex(value: Double): Self = this.set("overscanColumnStopIndex", value.asInstanceOf[js.Any])
+    def setVisibleColumnStartIndex(value: Double): Self = StObject.set(x, "visibleColumnStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanRowStartIndex(value: Double): Self = this.set("overscanRowStartIndex", value.asInstanceOf[js.Any])
+    def setVisibleColumnStopIndex(value: Double): Self = StObject.set(x, "visibleColumnStopIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanRowStopIndex(value: Double): Self = this.set("overscanRowStopIndex", value.asInstanceOf[js.Any])
+    def setVisibleRowStartIndex(value: Double): Self = StObject.set(x, "visibleRowStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibleColumnStartIndex(value: Double): Self = this.set("visibleColumnStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleColumnStopIndex(value: Double): Self = this.set("visibleColumnStopIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleRowStartIndex(value: Double): Self = this.set("visibleRowStartIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleRowStopIndex(value: Double): Self = this.set("visibleRowStopIndex", value.asInstanceOf[js.Any])
+    def setVisibleRowStopIndex(value: Double): Self = StObject.set(x, "visibleRowStopIndex", value.asInstanceOf[js.Any])
   }
 }

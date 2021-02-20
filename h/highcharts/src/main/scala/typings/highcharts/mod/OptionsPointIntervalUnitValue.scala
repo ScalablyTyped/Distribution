@@ -2,6 +2,7 @@ package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.day_
 import typings.highcharts.highchartsStrings.month_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.month_
   - typings.highcharts.highchartsStrings.year
 */
-trait OptionsPointIntervalUnitValue extends js.Object
+trait OptionsPointIntervalUnitValue extends StObject
 object OptionsPointIntervalUnitValue {
   
   @scala.inline

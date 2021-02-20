@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApproveAssignmentRequest extends js.Object {
+trait ApproveAssignmentRequest extends StObject {
   
   /**
     *  The ID of the assignment. The assignment must correspond to a HIT created by the Requester. 
@@ -31,33 +32,21 @@ object ApproveAssignmentRequest {
   }
   
   @scala.inline
-  implicit class ApproveAssignmentRequestOps[Self <: ApproveAssignmentRequest] (val x: Self) extends AnyVal {
+  implicit class ApproveAssignmentRequestMutableBuilder[Self <: ApproveAssignmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverrideRejection(value: Boolean): Self = StObject.set(x, "OverrideRejection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrideRejectionUndefined: Self = StObject.set(x, "OverrideRejection", js.undefined)
     
     @scala.inline
-    def setAssignmentId(value: EntityId): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
+    def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideRejection(value: Boolean): Self = this.set("OverrideRejection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideRejection: Self = this.set("OverrideRejection", js.undefined)
-    
-    @scala.inline
-    def setRequesterFeedback(value: String): Self = this.set("RequesterFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterFeedback: Self = this.set("RequesterFeedback", js.undefined)
+    def setRequesterFeedbackUndefined: Self = StObject.set(x, "RequesterFeedback", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseMessageFileSuccessCallbackResult extends js.Object {
+trait ChooseMessageFileSuccessCallbackResult extends StObject {
   
   var errMsg: String = js.native
   
@@ -21,27 +22,15 @@ object ChooseMessageFileSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class ChooseMessageFileSuccessCallbackResultOps[Self <: ChooseMessageFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class ChooseMessageFileSuccessCallbackResultMutableBuilder[Self <: ChooseMessageFileSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTempFiles(value: js.Array[ChooseFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTempFilesVarargs(value: ChooseFile*): Self = this.set("tempFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTempFiles(value: js.Array[ChooseFile]): Self = this.set("tempFiles", value.asInstanceOf[js.Any])
+    def setTempFilesVarargs(value: ChooseFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
   }
 }

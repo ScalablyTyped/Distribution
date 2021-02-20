@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGraphqlApiResponse extends js.Object {
+trait CreateGraphqlApiResponse extends StObject {
   
   /**
     * The GraphqlApi.
@@ -21,24 +22,12 @@ object CreateGraphqlApiResponse {
   }
   
   @scala.inline
-  implicit class CreateGraphqlApiResponseOps[Self <: CreateGraphqlApiResponse] (val x: Self) extends AnyVal {
+  implicit class CreateGraphqlApiResponseMutableBuilder[Self <: CreateGraphqlApiResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraphqlApi(value: GraphqlApi): Self = StObject.set(x, "graphqlApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGraphqlApi(value: GraphqlApi): Self = this.set("graphqlApi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGraphqlApi: Self = this.set("graphqlApi", js.undefined)
+    def setGraphqlApiUndefined: Self = StObject.set(x, "graphqlApi", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.swiper.mod
 
 import typings.swiper.swiperStrings.container
 import typings.swiper.swiperStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ControllerOptions extends js.Object {
+trait ControllerOptions extends StObject {
   
   /**
     * Can be 'slide' or 'container'. Defines a way how to control another slider: slide by slide
@@ -40,36 +41,24 @@ object ControllerOptions {
   }
   
   @scala.inline
-  implicit class ControllerOptionsOps[Self <: ControllerOptions] (val x: Self) extends AnyVal {
+  implicit class ControllerOptionsMutableBuilder[Self <: ControllerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBy(value: slide | container): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControl(value: Swiper): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBy(value: slide | container): Self = this.set("by", value.asInstanceOf[js.Any])
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def deleteBy: Self = this.set("by", js.undefined)
+    def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: Swiper): Self = this.set("control", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
-    
-    @scala.inline
-    def setInverse(value: Boolean): Self = this.set("inverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInverse: Self = this.set("inverse", js.undefined)
+    def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserBuildConditionals extends js.Object {
+trait UserBuildConditionals extends StObject {
   
   var isBrowser: Boolean = js.native
   
@@ -24,30 +25,18 @@ object UserBuildConditionals {
   }
   
   @scala.inline
-  implicit class UserBuildConditionalsOps[Self <: UserBuildConditionals] (val x: Self) extends AnyVal {
+  implicit class UserBuildConditionalsMutableBuilder[Self <: UserBuildConditionals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsBrowser(value: Boolean): Self = StObject.set(x, "isBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDev(value: Boolean): Self = StObject.set(x, "isDev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBrowser(value: Boolean): Self = this.set("isBrowser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDev(value: Boolean): Self = this.set("isDev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsServer(value: Boolean): Self = this.set("isServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsTesting(value: Boolean): Self = this.set("isTesting", value.asInstanceOf[js.Any])
+    def setIsTesting(value: Boolean): Self = StObject.set(x, "isTesting", value.asInstanceOf[js.Any])
   }
 }

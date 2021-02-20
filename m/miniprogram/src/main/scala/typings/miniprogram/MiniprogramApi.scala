@@ -9,12 +9,13 @@ import typings.miniprogram.anon.Number
 import typings.miniprogram.anon.PartialAddPhoneContactArg
 import typings.miniprogram.anon.SiteName
 import typings.miniprogram.anon.Time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MiniprogramApi extends js.Object {
+trait MiniprogramApi extends StObject {
   
   /**
     * Get the version of basic library (for reference only). Do not rely on this value for code logic.

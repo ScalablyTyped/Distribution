@@ -10,13 +10,14 @@ import typings.stripe.mod.IResponseFn
 import typings.stripe.mod.webhookEndpoints.IWebhookCreateOptions
 import typings.stripe.mod.webhookEndpoints.IWebhookEndpoint
 import typings.stripe.mod.webhookEndpoints.IWebhookUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.WebhookEndpoints")
 @js.native
-class WebhookEndpoints () extends js.Object {
+class WebhookEndpoints () extends StObject {
   
   def create(data: IWebhookCreateOptions): js.Promise[IWebhookEndpoint] = js.native
   /**

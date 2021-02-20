@@ -1,11 +1,12 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebCL extends js.Object {
+trait WebCL extends StObject {
   
   def createContext(): WebCLContext = js.native
   def createContext(deviceType: DeviceTypeBits): WebCLContext = js.native

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.AltCallbackFieldsId
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.Compatibilities
 import typings.maximMazurokGapiClientDfareporting.anon.PlacementIds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacementsResource extends js.Object {
+trait PlacementsResource extends StObject {
   
   /** Generates tags for a placement. */
   def generatetags(): Request[PlacementsGenerateTagsResponse] = js.native

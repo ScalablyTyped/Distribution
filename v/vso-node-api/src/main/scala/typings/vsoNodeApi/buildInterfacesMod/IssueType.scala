@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IssueType extends js.Object
+sealed trait IssueType extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "IssueType")
 @js.native
-object IssueType extends js.Object {
+object IssueType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IssueType with Double] = js.native
   
   @js.native
   sealed trait Error extends IssueType
-  /* 1 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 1 */ val Error: typings.vsoNodeApi.buildInterfacesMod.IssueType.Error with Double = js.native
   
   @js.native
   sealed trait Warning extends IssueType
-  /* 2 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
+  /* 2 */ val Warning: typings.vsoNodeApi.buildInterfacesMod.IssueType.Warning with Double = js.native
 }

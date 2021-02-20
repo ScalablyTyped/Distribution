@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationNotCrawlableEvidence extends js.Object {
+trait DestinationNotCrawlableEvidence extends StObject {
   
   /** Approximate time of the crawl. */
   var crawlTime: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object DestinationNotCrawlableEvidence {
   }
   
   @scala.inline
-  implicit class DestinationNotCrawlableEvidenceOps[Self <: DestinationNotCrawlableEvidence] (val x: Self) extends AnyVal {
+  implicit class DestinationNotCrawlableEvidenceMutableBuilder[Self <: DestinationNotCrawlableEvidence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrawlTime(value: String): Self = StObject.set(x, "crawlTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrawlTimeUndefined: Self = StObject.set(x, "crawlTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawledUrl(value: String): Self = StObject.set(x, "crawledUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlTime(value: String): Self = this.set("crawlTime", value.asInstanceOf[js.Any])
+    def setCrawledUrlUndefined: Self = StObject.set(x, "crawledUrl", js.undefined)
     
     @scala.inline
-    def deleteCrawlTime: Self = this.set("crawlTime", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawledUrl(value: String): Self = this.set("crawledUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrawledUrl: Self = this.set("crawledUrl", js.undefined)
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

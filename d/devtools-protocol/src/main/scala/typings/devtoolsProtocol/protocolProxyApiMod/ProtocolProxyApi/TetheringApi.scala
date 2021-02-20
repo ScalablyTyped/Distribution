@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.accepted
 import typings.devtoolsProtocol.mod.Protocol.Tethering.AcceptedEvent
 import typings.devtoolsProtocol.mod.Protocol.Tethering.BindRequest
 import typings.devtoolsProtocol.mod.Protocol.Tethering.UnbindRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TetheringApi extends js.Object {
+trait TetheringApi extends StObject {
   
   /**
     * Request browser port binding.
@@ -40,27 +41,15 @@ object TetheringApi {
   }
   
   @scala.inline
-  implicit class TetheringApiOps[Self <: TetheringApi] (val x: Self) extends AnyVal {
+  implicit class TetheringApiMutableBuilder[Self <: TetheringApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: BindRequest => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOn(value: (accepted, js.Function1[/* params */ AcceptedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBind(value: BindRequest => js.Promise[Unit]): Self = this.set("bind", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn(value: (accepted, js.Function1[/* params */ AcceptedEvent, Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnbind(value: UnbindRequest => js.Promise[Unit]): Self = this.set("unbind", js.Any.fromFunction1(value))
+    def setUnbind(value: UnbindRequest => js.Promise[Unit]): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
   }
 }

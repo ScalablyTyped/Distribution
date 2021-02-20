@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ComposeType extends js.Object
+sealed trait ComposeType extends StObject
 /**
   * Compose type.
   *
@@ -19,7 +20,7 @@ sealed trait ComposeType extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.ComposeType")
 @js.native
-object ComposeType extends js.Object {
+object ComposeType extends StObject {
   
   /**
     * Forward.

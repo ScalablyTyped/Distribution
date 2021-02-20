@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies a contiguous range of text.
   */
 @js.native
-trait SchemaRange extends js.Object {
+trait SchemaRange extends StObject {
   
   /**
     * The zero-based end index of this range, exclusive, in UTF-16 code units.
@@ -40,36 +41,24 @@ object SchemaRange {
   }
   
   @scala.inline
-  implicit class SchemaRangeOps[Self <: SchemaRange] (val x: Self) extends AnyVal {
+  implicit class SchemaRangeMutableBuilder[Self <: SchemaRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentId(value: String): Self = this.set("segmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentId: Self = this.set("segmentId", js.undefined)
-    
-    @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

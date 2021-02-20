@@ -5,13 +5,14 @@ import typings.seen.anon.Offset
 import typings.seen.anon.`0`
 import typings.seen.mod.Events.Dispatcher
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Drag")
 @js.native
-class Drag protected () extends js.Object {
+class Drag protected () extends StObject {
   def this(elementOrId: String) = this()
   def this(elementOrId: HTMLElement) = this()
   def this(elementOrId: String, options: `0`) = this()

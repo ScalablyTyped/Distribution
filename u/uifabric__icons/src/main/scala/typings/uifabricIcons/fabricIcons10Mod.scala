@@ -1,16 +1,23 @@
 package typings.uifabricIcons
 
 import typings.uifabricStyling.iconsMod.IIconOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/icons/lib/fabric-icons-10", JSImport.Namespace)
-@js.native
-object fabricIcons10Mod extends js.Object {
+object fabricIcons10Mod {
   
+  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
+  @js.native
   def initializeIcons(): Unit = js.native
+  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
+  @js.native
   def initializeIcons(baseUrl: js.UndefOr[scala.Nothing], options: IIconOptions): Unit = js.native
+  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
+  @js.native
   def initializeIcons(baseUrl: String): Unit = js.native
+  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
+  @js.native
   def initializeIcons(baseUrl: String, options: IIconOptions): Unit = js.native
 }

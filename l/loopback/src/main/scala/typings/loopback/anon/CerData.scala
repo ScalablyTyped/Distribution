@@ -1,11 +1,12 @@
 package typings.loopback.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CerData extends js.Object {
+trait CerData extends StObject {
   
   var cerData: String = js.native
   
@@ -32,33 +33,21 @@ object CerData {
   }
   
   @scala.inline
-  implicit class CerDataOps[Self <: CerData] (val x: Self) extends AnyVal {
+  implicit class CerDataMutableBuilder[Self <: CerData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCerData(value: String): Self = StObject.set(x, "cerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedBackOptions(value: BatchFeedback): Self = StObject.set(x, "feedBackOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyData(value: String): Self = StObject.set(x, "keyData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCerData(value: String): Self = this.set("cerData", value.asInstanceOf[js.Any])
+    def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedBackOptions(value: BatchFeedback): Self = this.set("feedBackOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyData(value: String): Self = this.set("keyData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProduction(value: Boolean): Self = this.set("production", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPushOptions(value: Gateway): Self = this.set("pushOptions", value.asInstanceOf[js.Any])
+    def setPushOptions(value: Gateway): Self = StObject.set(x, "pushOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,14 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc/ProcessLike", JSImport.Namespace)
-@js.native
-object processLikeMod extends js.Object {
+object processLikeMod {
   
   @js.native
-  trait ProcessLike extends js.Object {
+  trait ProcessLike extends StObject {
     
     var connected: js.UndefOr[Boolean] = js.native
     

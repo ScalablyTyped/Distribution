@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exclude extends js.Object {
+trait Exclude extends StObject {
   
   /**
     * A container for the S3 Storage Lens bucket excludes.
@@ -26,36 +27,24 @@ object Exclude {
   }
   
   @scala.inline
-  implicit class ExcludeOps[Self <: Exclude] (val x: Self) extends AnyVal {
+  implicit class ExcludeMutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: Buckets): Self = StObject.set(x, "Buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsUndefined: Self = StObject.set(x, "Buckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsVarargs(value: S3BucketArnString*): Self = StObject.set(x, "Buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBucketsVarargs(value: S3BucketArnString*): Self = this.set("Buckets", js.Array(value :_*))
+    def setRegions(value: Regions): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuckets(value: Buckets): Self = this.set("Buckets", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
     @scala.inline
-    def deleteBuckets: Self = this.set("Buckets", js.undefined)
-    
-    @scala.inline
-    def setRegionsVarargs(value: S3AWSRegion*): Self = this.set("Regions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegions(value: Regions): Self = this.set("Regions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegions: Self = this.set("Regions", js.undefined)
+    def setRegionsVarargs(value: S3AWSRegion*): Self = StObject.set(x, "Regions", js.Array(value :_*))
   }
 }

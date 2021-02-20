@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentMatcher extends js.Object {
+trait ContentMatcher extends StObject {
   
   /** String or regex content to match. Maximum 1024 bytes. An empty content string indicates no content matching is to be performed. */
   var content: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ContentMatcher {
   }
   
   @scala.inline
-  implicit class ContentMatcherOps[Self <: ContentMatcher] (val x: Self) extends AnyVal {
+  implicit class ContentMatcherMutableBuilder[Self <: ContentMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatcher(value: String): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setMatcher(value: String): Self = this.set("matcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatcher: Self = this.set("matcher", js.undefined)
+    def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,24 +78,12 @@ object XAnimateColor {
   }
   
   @scala.inline
-  implicit class XAnimateColorOps[Self <: XAnimateColor] (val x: Self) extends AnyVal {
+  implicit class XAnimateColorMutableBuilder[Self <: XAnimateColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorInterpolation(value: Double): Self = StObject.set(x, "ColorInterpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColorInterpolation(value: Double): Self = this.set("ColorInterpolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirection(value: Boolean): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
   }
 }

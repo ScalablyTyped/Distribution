@@ -5,14 +5,14 @@ import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.pointerEventsMod.PointerTouch
 import typings.babylonjs.typesMod.Nullable
 import typings.std.PointerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/Inputs/BaseCameraPointersInput", JSImport.Namespace)
-@js.native
-object baseCameraPointersInputMod extends js.Object {
+object baseCameraPointersInputMod {
   
+  @JSImport("babylonjs/Cameras/Inputs/BaseCameraPointersInput", "BaseCameraPointersInput")
   @js.native
   abstract class BaseCameraPointersInput () extends ICameraInput[Camera] {
     

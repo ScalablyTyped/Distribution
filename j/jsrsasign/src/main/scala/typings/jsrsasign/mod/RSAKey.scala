@@ -2,6 +2,7 @@ package typings.jsrsasign.mod
 
 import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class RSAKey ()
   extends typings.jsrsasign.jsrsasign.RSAKey
-/* static members */
-@JSImport("jsrsasign", "RSAKey")
-@js.native
-object RSAKey extends js.Object {
+object RSAKey {
   
   /**
     * static method to get array of hex field values from hexadecimal PKCS#5 RSA private key.
@@ -23,6 +21,9 @@ object RSAKey extends js.Object {
     * @example
     * RSAKey.getHexValueArrayOfChildrenFromHex("3082...") → ["00", "3b42...", ...]
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.getHexValueArrayOfChildrenFromHex")
+  @js.native
   def getHexValueArrayOfChildrenFromHex(sPEMPrivateKey: String): js.Array[String] = js.native
   
   /**
@@ -32,6 +33,9 @@ object RSAKey extends js.Object {
     * @example
     * RSAKey.getPosArrayOfChildrenFromHex("3082...") → [8, 32, ...]
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.getPosArrayOfChildrenFromHex")
+  @js.native
   def getPosArrayOfChildrenFromHex(sPEMPrivateKey: String): js.Array[Double] = js.native
   
   /**
@@ -40,6 +44,9 @@ object RSAKey extends js.Object {
     * @param hashAlg hash algorithm name for signing.
     * @return returns hexadecimal string of signature value.
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.sign")
+  @js.native
   def sign(s: String, hashAlg: String): String = js.native
   
   /**
@@ -55,6 +62,9 @@ object RSAKey extends js.Object {
     *        DEFAULT is -1. (NOTE: OpenSSL's default is -2.)
     * @return returns hexadecimal string of signature value.
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.signPSS")
+  @js.native
   def signPSS(s: String, hashAlg: String, sLen: Double): String = js.native
   
   /**
@@ -63,6 +73,9 @@ object RSAKey extends js.Object {
     * @param hashAlg hash algorithm name for signing.
     * @return returns hexadecimal string of signature value.
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.signWithMessageHash")
+  @js.native
   def signWithMessageHash(sHashHex: String, hashAlg: String): String = js.native
   
   /**
@@ -78,6 +91,9 @@ object RSAKey extends js.Object {
     *        DEFAULT is -1. (NOTE: OpenSSL's default is -2.)
     * @return returns hexadecimal string of signature value.
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.signWithMessageHashPSS")
+  @js.native
   def signWithMessageHashPSS(hHash: String, hashAlg: String, sLen: Double): String = js.native
   
   /**
@@ -94,6 +110,9 @@ object RSAKey extends js.Object {
     *        DEFAULT is -1. (NOTE: OpenSSL's default is -2.)
     * @return returns true if valid, otherwise false
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.verifyPSS")
+  @js.native
   def verifyPSS(sMsg: String, hSig: String, hashAlg: String, sLen: Double): Boolean = js.native
   
   /**
@@ -103,6 +122,9 @@ object RSAKey extends js.Object {
     *                 non-hexadecimal charactors including new lines will be ignored.
     * @return returns 1 if valid, otherwise 0
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.verifyWithMessageHash")
+  @js.native
   def verifyWithMessageHash(sHashHex: String, hSig: String): `0` | `1` = js.native
   
   /**
@@ -119,5 +141,8 @@ object RSAKey extends js.Object {
     *        DEFAULT is -1 (NOTE: OpenSSL's default is -2.)
     * @return returns true if valid, otherwise false
     */
+  /* static member */
+  @JSImport("jsrsasign", "RSAKey.verifyWithMessageHashPSS")
+  @js.native
   def verifyWithMessageHashPSS(hHash: String, hSig: String, hashAlg: String, sLen: Double): Boolean = js.native
 }

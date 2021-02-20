@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * update require the admin role.
   */
 @js.native
-trait SchemaAccount extends js.Object {
+trait SchemaAccount extends StObject {
   
   /**
     * Indicates whether the merchant sells adult content.
@@ -93,99 +94,87 @@ object SchemaAccount {
   }
   
   @scala.inline
-  implicit class SchemaAccountOps[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountMutableBuilder[Self <: SchemaAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdultContent(value: Boolean): Self = StObject.set(x, "adultContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdultContentUndefined: Self = StObject.set(x, "adultContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdwordsLinks(value: js.Array[SchemaAccountAdwordsLink]): Self = StObject.set(x, "adwordsLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdultContent(value: Boolean): Self = this.set("adultContent", value.asInstanceOf[js.Any])
+    def setAdwordsLinksUndefined: Self = StObject.set(x, "adwordsLinks", js.undefined)
     
     @scala.inline
-    def deleteAdultContent: Self = this.set("adultContent", js.undefined)
+    def setAdwordsLinksVarargs(value: SchemaAccountAdwordsLink*): Self = StObject.set(x, "adwordsLinks", js.Array(value :_*))
     
     @scala.inline
-    def setAdwordsLinksVarargs(value: SchemaAccountAdwordsLink*): Self = this.set("adwordsLinks", js.Array(value :_*))
+    def setBusinessInformation(value: SchemaAccountBusinessInformation): Self = StObject.set(x, "businessInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdwordsLinks(value: js.Array[SchemaAccountAdwordsLink]): Self = this.set("adwordsLinks", value.asInstanceOf[js.Any])
+    def setBusinessInformationUndefined: Self = StObject.set(x, "businessInformation", js.undefined)
     
     @scala.inline
-    def deleteAdwordsLinks: Self = this.set("adwordsLinks", js.undefined)
+    def setGoogleMyBusinessLink(value: SchemaAccountGoogleMyBusinessLink): Self = StObject.set(x, "googleMyBusinessLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessInformation(value: SchemaAccountBusinessInformation): Self = this.set("businessInformation", value.asInstanceOf[js.Any])
+    def setGoogleMyBusinessLinkUndefined: Self = StObject.set(x, "googleMyBusinessLink", js.undefined)
     
     @scala.inline
-    def deleteBusinessInformation: Self = this.set("businessInformation", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleMyBusinessLink(value: SchemaAccountGoogleMyBusinessLink): Self = this.set("googleMyBusinessLink", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGoogleMyBusinessLink: Self = this.set("googleMyBusinessLink", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setReviewsUrl(value: String): Self = StObject.set(x, "reviewsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReviewsUrlUndefined: Self = StObject.set(x, "reviewsUrl", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSellerId(value: String): Self = StObject.set(x, "sellerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewsUrl(value: String): Self = this.set("reviewsUrl", value.asInstanceOf[js.Any])
+    def setSellerIdUndefined: Self = StObject.set(x, "sellerId", js.undefined)
     
     @scala.inline
-    def deleteReviewsUrl: Self = this.set("reviewsUrl", js.undefined)
+    def setUsers(value: js.Array[SchemaAccountUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSellerId(value: String): Self = this.set("sellerId", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
     @scala.inline
-    def deleteSellerId: Self = this.set("sellerId", js.undefined)
+    def setUsersVarargs(value: SchemaAccountUser*): Self = StObject.set(x, "users", js.Array(value :_*))
     
     @scala.inline
-    def setUsersVarargs(value: SchemaAccountUser*): Self = this.set("users", js.Array(value :_*))
+    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsers(value: js.Array[SchemaAccountUser]): Self = this.set("users", value.asInstanceOf[js.Any])
+    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
     
     @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
+    def setYoutubeChannelLinks(value: js.Array[SchemaAccountYouTubeChannelLink]): Self = StObject.set(x, "youtubeChannelLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
+    def setYoutubeChannelLinksUndefined: Self = StObject.set(x, "youtubeChannelLinks", js.undefined)
     
     @scala.inline
-    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
-    
-    @scala.inline
-    def setYoutubeChannelLinksVarargs(value: SchemaAccountYouTubeChannelLink*): Self = this.set("youtubeChannelLinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setYoutubeChannelLinks(value: js.Array[SchemaAccountYouTubeChannelLink]): Self = this.set("youtubeChannelLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoutubeChannelLinks: Self = this.set("youtubeChannelLinks", js.undefined)
+    def setYoutubeChannelLinksVarargs(value: SchemaAccountYouTubeChannelLink*): Self = StObject.set(x, "youtubeChannelLinks", js.Array(value :_*))
   }
 }

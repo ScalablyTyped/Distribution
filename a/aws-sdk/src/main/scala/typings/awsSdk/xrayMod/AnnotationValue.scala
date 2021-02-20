@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationValue extends js.Object {
+trait AnnotationValue extends StObject {
   
   /**
     * Value for a Boolean annotation.
@@ -31,36 +32,24 @@ object AnnotationValue {
   }
   
   @scala.inline
-  implicit class AnnotationValueOps[Self <: AnnotationValue] (val x: Self) extends AnyVal {
+  implicit class AnnotationValueMutableBuilder[Self <: AnnotationValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBooleanValue(value: NullableBoolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanValueUndefined: Self = StObject.set(x, "BooleanValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberValue(value: NullableDouble): Self = StObject.set(x, "NumberValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValue(value: NullableBoolean): Self = this.set("BooleanValue", value.asInstanceOf[js.Any])
+    def setNumberValueUndefined: Self = StObject.set(x, "NumberValue", js.undefined)
     
     @scala.inline
-    def deleteBooleanValue: Self = this.set("BooleanValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberValue(value: NullableDouble): Self = this.set("NumberValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberValue: Self = this.set("NumberValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: String): Self = this.set("StringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("StringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
   }
 }

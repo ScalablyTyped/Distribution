@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.security
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,33 +91,21 @@ object XAccessController {
   }
   
   @scala.inline
-  implicit class XAccessControllerOps[Self <: XAccessController] (val x: Self) extends AnyVal {
+  implicit class XAccessControllerMutableBuilder[Self <: XAccessController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckPermission(value: js.Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: XAccessControlContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoPrivileged(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doPrivileged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setContext(value: XAccessControlContext): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setDoRestricted(value: (XAction, XAccessControlContext) => js.Any): Self = StObject.set(x, "doRestricted", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCheckPermission(value: js.Any => Unit): Self = this.set("checkPermission", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDoPrivileged(value: (XAction, XAccessControlContext) => js.Any): Self = this.set("doPrivileged", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDoRestricted(value: (XAction, XAccessControlContext) => js.Any): Self = this.set("doRestricted", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetContext(value: () => XAccessControlContext): Self = this.set("getContext", js.Any.fromFunction0(value))
+    def setGetContext(value: () => XAccessControlContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
   }
 }

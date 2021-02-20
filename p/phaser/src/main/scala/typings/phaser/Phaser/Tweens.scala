@@ -9,13 +9,12 @@ import typings.phaser.Phaser.Types.Tweens.TimelineBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
 import typings.phaser.Phaser.Types.Tweens.TweenDataConfig
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Tweens")
-@js.native
-object Tweens extends js.Object {
+object Tweens {
   
   /**
     * A Timeline combines multiple Tweens into one. Its overall behavior is otherwise similar to a single Tween.
@@ -686,7 +685,7 @@ object Tweens extends js.Object {
     * The Tween Manager is a default Scene Plugin which controls and updates Tweens and Timelines.
     */
   @js.native
-  trait TweenManager extends js.Object {
+  trait TweenManager extends StObject {
     
     def add(config: js.Object): Tween = js.native
     /**

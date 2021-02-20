@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.HashMap
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,37 +38,25 @@ object AnonymousAccessor {
   }
   
   @scala.inline
-  implicit class AnonymousAccessorOps[Self <: AnonymousAccessor] (val x: Self) extends AnyVal {
+  implicit class AnonymousAccessorMutableBuilder[Self <: AnonymousAccessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: /* propertyName */ String => _): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
     def setSet(
       value: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, AnonymousAccessor]]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], AnonymousAccessor]])
-    ): Self = this.set("set", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGet(value: /* propertyName */ String => _): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    ): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWatch(
       value: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle
-    ): Self = this.set("watch", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "watch", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteWatch: Self = this.set("watch", js.undefined)
+    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

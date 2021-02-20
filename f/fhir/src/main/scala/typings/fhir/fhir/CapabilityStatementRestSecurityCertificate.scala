@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object CapabilityStatementRestSecurityCertificate {
   }
   
   @scala.inline
-  implicit class CapabilityStatementRestSecurityCertificateOps[Self <: CapabilityStatementRestSecurityCertificate] (val x: Self) extends AnyVal {
+  implicit class CapabilityStatementRestSecurityCertificateMutableBuilder[Self <: CapabilityStatementRestSecurityCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: base64Binary): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_blob(value: Element): Self = this.set("_blob", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def delete_blob: Self = this.set("_blob", js.undefined)
+    def set_blob(value: Element): Self = StObject.set(x, "_blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_blobUndefined: Self = StObject.set(x, "_blob", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: base64Binary): Self = this.set("blob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
-    
-    @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

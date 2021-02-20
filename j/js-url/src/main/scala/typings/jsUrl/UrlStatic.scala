@@ -1,11 +1,12 @@
 package typings.jsUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlStatic extends js.Object {
+trait UrlStatic extends StObject {
   
   def apply(): String = js.native
   def apply(pattern: String): String = js.native

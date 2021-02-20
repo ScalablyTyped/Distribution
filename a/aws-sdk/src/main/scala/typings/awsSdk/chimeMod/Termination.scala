@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Termination extends js.Object {
+trait Termination extends StObject {
   
   /**
     * The countries to which calls are allowed, in ISO 3166-1 alpha-2 format. Required.
@@ -41,54 +42,42 @@ object Termination {
   }
   
   @scala.inline
-  implicit class TerminationOps[Self <: Termination] (val x: Self) extends AnyVal {
+  implicit class TerminationMutableBuilder[Self <: Termination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallingRegions(value: CallingRegionList): Self = StObject.set(x, "CallingRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallingRegionsUndefined: Self = StObject.set(x, "CallingRegions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallingRegionsVarargs(value: CallingRegion*): Self = StObject.set(x, "CallingRegions", js.Array(value :_*))
     
     @scala.inline
-    def setCallingRegionsVarargs(value: CallingRegion*): Self = this.set("CallingRegions", js.Array(value :_*))
+    def setCidrAllowedList(value: StringList): Self = StObject.set(x, "CidrAllowedList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallingRegions(value: CallingRegionList): Self = this.set("CallingRegions", value.asInstanceOf[js.Any])
+    def setCidrAllowedListUndefined: Self = StObject.set(x, "CidrAllowedList", js.undefined)
     
     @scala.inline
-    def deleteCallingRegions: Self = this.set("CallingRegions", js.undefined)
+    def setCidrAllowedListVarargs(value: String*): Self = StObject.set(x, "CidrAllowedList", js.Array(value :_*))
     
     @scala.inline
-    def setCidrAllowedListVarargs(value: String*): Self = this.set("CidrAllowedList", js.Array(value :_*))
+    def setCpsLimit(value: CpsLimit): Self = StObject.set(x, "CpsLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrAllowedList(value: StringList): Self = this.set("CidrAllowedList", value.asInstanceOf[js.Any])
+    def setCpsLimitUndefined: Self = StObject.set(x, "CpsLimit", js.undefined)
     
     @scala.inline
-    def deleteCidrAllowedList: Self = this.set("CidrAllowedList", js.undefined)
+    def setDefaultPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "DefaultPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpsLimit(value: CpsLimit): Self = this.set("CpsLimit", value.asInstanceOf[js.Any])
+    def setDefaultPhoneNumberUndefined: Self = StObject.set(x, "DefaultPhoneNumber", js.undefined)
     
     @scala.inline
-    def deleteCpsLimit: Self = this.set("CpsLimit", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPhoneNumber(value: E164PhoneNumber): Self = this.set("DefaultPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultPhoneNumber: Self = this.set("DefaultPhoneNumber", js.undefined)
-    
-    @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
   }
 }

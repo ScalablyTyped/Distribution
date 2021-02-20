@@ -2,12 +2,13 @@ package typings.aureliaTemplating.mod
 
 import typings.aureliaDependencyInjection.mod.Container
 import typings.std.DocumentFragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewEngineHooks_ extends js.Object {
+trait ViewEngineHooks_ extends StObject {
   
   /**
     * Invoked after a template is compiled.
@@ -74,58 +75,46 @@ object ViewEngineHooks_ {
   }
   
   @scala.inline
-  implicit class ViewEngineHooks_Ops[Self <: ViewEngineHooks_] (val x: Self) extends AnyVal {
+  implicit class ViewEngineHooks_MutableBuilder[Self <: ViewEngineHooks_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCompile(value: /* viewFactory */ ViewFactory => Unit): Self = StObject.set(x, "afterCompile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterCompileUndefined: Self = StObject.set(x, "afterCompile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterCreate(value: /* view */ View_ => Unit): Self = StObject.set(x, "afterCreate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterCompile(value: /* viewFactory */ ViewFactory => Unit): Self = this.set("afterCompile", js.Any.fromFunction1(value))
+    def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
     
     @scala.inline
-    def deleteAfterCompile: Self = this.set("afterCompile", js.undefined)
+    def setBeforeBind(value: /* view */ View_ => Unit): Self = StObject.set(x, "beforeBind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterCreate(value: /* view */ View_ => Unit): Self = this.set("afterCreate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteAfterCreate: Self = this.set("afterCreate", js.undefined)
-    
-    @scala.inline
-    def setBeforeBind(value: /* view */ View_ => Unit): Self = this.set("beforeBind", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBeforeBind: Self = this.set("beforeBind", js.undefined)
+    def setBeforeBindUndefined: Self = StObject.set(x, "beforeBind", js.undefined)
     
     @scala.inline
     def setBeforeCompile(
       value: (/* content */ DocumentFragment, /* resources */ ViewResources_, /* instruction */ ViewCompileInstruction) => Unit
-    ): Self = this.set("beforeCompile", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "beforeCompile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteBeforeCompile: Self = this.set("beforeCompile", js.undefined)
+    def setBeforeCompileUndefined: Self = StObject.set(x, "beforeCompile", js.undefined)
     
     @scala.inline
     def setBeforeCreate(
       value: (/* viewFactory */ ViewFactory, /* container */ Container, /* content */ DocumentFragment, /* instruction */ ViewCreateInstruction) => Unit
-    ): Self = this.set("beforeCreate", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "beforeCreate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteBeforeCreate: Self = this.set("beforeCreate", js.undefined)
+    def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
     
     @scala.inline
-    def setBeforeUnbind(value: /* view */ View_ => Unit): Self = this.set("beforeUnbind", js.Any.fromFunction1(value))
+    def setBeforeUnbind(value: /* view */ View_ => Unit): Self = StObject.set(x, "beforeUnbind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBeforeUnbind: Self = this.set("beforeUnbind", js.undefined)
+    def setBeforeUnbindUndefined: Self = StObject.set(x, "beforeUnbind", js.undefined)
   }
 }

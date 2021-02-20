@@ -1,11 +1,12 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsyncResponses extends js.Object {
+trait AsyncResponses extends StObject {
   
   var asyncResponses: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object AsyncResponses {
   }
   
   @scala.inline
-  implicit class AsyncResponsesOps[Self <: AsyncResponses] (val x: Self) extends AnyVal {
+  implicit class AsyncResponsesMutableBuilder[Self <: AsyncResponses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncResponses(value: Boolean): Self = StObject.set(x, "asyncResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncResponsesUndefined: Self = StObject.set(x, "asyncResponses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncTimeout(value: Double): Self = StObject.set(x, "asyncTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncResponses(value: Boolean): Self = this.set("asyncResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsyncResponses: Self = this.set("asyncResponses", js.undefined)
-    
-    @scala.inline
-    def setAsyncTimeout(value: Double): Self = this.set("asyncTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsyncTimeout: Self = this.set("asyncTimeout", js.undefined)
+    def setAsyncTimeoutUndefined: Self = StObject.set(x, "asyncTimeout", js.undefined)
   }
 }

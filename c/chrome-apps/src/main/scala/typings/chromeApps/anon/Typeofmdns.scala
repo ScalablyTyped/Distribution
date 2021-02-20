@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.events.FilteredEvent
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.mdns.Service
 import typings.chromeApps.chrome.mdns.ServiceTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofmdns extends js.Object {
+trait Typeofmdns extends StObject {
   
   /**
     * The maximum number of service instances that will be
@@ -59,27 +60,15 @@ object Typeofmdns {
   }
   
   @scala.inline
-  implicit class TypeofmdnsOps[Self <: Typeofmdns] (val x: Self) extends AnyVal {
+  implicit class TypeofmdnsMutableBuilder[Self <: Typeofmdns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceDiscovery(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "forceDiscovery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMAX_SERVICE_INSTANCES_PER_EVENT(value: integer): Self = StObject.set(x, "MAX_SERVICE_INSTANCES_PER_EVENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMAX_SERVICE_INSTANCES_PER_EVENT(value: integer): Self = this.set("MAX_SERVICE_INSTANCES_PER_EVENT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceDiscovery(value: js.Function0[Unit] => Unit): Self = this.set("forceDiscovery", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnServiceList(value: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]): Self = this.set("onServiceList", value.asInstanceOf[js.Any])
+    def setOnServiceList(value: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]): Self = StObject.set(x, "onServiceList", value.asInstanceOf[js.Any])
   }
 }

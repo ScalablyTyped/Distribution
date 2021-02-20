@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for a source.
   */
 @js.native
-trait SchemaSourceScoringConfig extends js.Object {
+trait SchemaSourceScoringConfig extends StObject {
   
   /**
     * Importance of the source.
@@ -25,24 +26,12 @@ object SchemaSourceScoringConfig {
   }
   
   @scala.inline
-  implicit class SchemaSourceScoringConfigOps[Self <: SchemaSourceScoringConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceScoringConfigMutableBuilder[Self <: SchemaSourceScoringConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceImportance(value: String): Self = StObject.set(x, "sourceImportance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceImportance(value: String): Self = this.set("sourceImportance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceImportance: Self = this.set("sourceImportance", js.undefined)
+    def setSourceImportanceUndefined: Self = StObject.set(x, "sourceImportance", js.undefined)
   }
 }

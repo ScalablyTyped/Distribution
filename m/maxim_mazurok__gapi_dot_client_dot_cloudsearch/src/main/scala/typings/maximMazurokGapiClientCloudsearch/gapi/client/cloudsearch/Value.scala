@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Value extends js.Object {
+trait Value extends StObject {
   
   var booleanValue: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueOps[Self <: Value] (val x: Self) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateValue(value: Date): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
     
     @scala.inline
-    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateValue(value: Date): Self = this.set("dateValue", value.asInstanceOf[js.Any])
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
     @scala.inline
-    def deleteDateValue: Self = this.set("dateValue", js.undefined)
+    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
     @scala.inline
-    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValue(value: String): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     @scala.inline
-    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
-    
-    @scala.inline
-    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
+    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbsessionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueHolder extends js.Object {
+trait ValueHolder extends StObject {
   
   /**
     * An Amazon Ion binary value contained in a ValueHolder structure.
@@ -26,30 +27,18 @@ object ValueHolder {
   }
   
   @scala.inline
-  implicit class ValueHolderOps[Self <: ValueHolder] (val x: Self) extends AnyVal {
+  implicit class ValueHolderMutableBuilder[Self <: ValueHolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIonBinary(value: IonBinary): Self = StObject.set(x, "IonBinary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIonBinaryUndefined: Self = StObject.set(x, "IonBinary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIonText(value: IonText): Self = StObject.set(x, "IonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIonBinary(value: IonBinary): Self = this.set("IonBinary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIonBinary: Self = this.set("IonBinary", js.undefined)
-    
-    @scala.inline
-    def setIonText(value: IonText): Self = this.set("IonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIonText: Self = this.set("IonText", js.undefined)
+    def setIonTextUndefined: Self = StObject.set(x, "IonText", js.undefined)
   }
 }

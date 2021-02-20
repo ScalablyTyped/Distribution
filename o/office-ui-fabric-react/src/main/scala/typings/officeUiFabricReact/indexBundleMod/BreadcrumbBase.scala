@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class BreadcrumbBase protected ()
   def this(props: IBreadcrumbProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "BreadcrumbBase")
-@js.native
-object BreadcrumbBase extends js.Object {
+object BreadcrumbBase {
   
-  var defaultProps: IBreadcrumbProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BreadcrumbBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BreadcrumbBase.defaultProps")
+  @js.native
+  def defaultProps: IBreadcrumbProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IBreadcrumbProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

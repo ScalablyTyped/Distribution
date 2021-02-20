@@ -1,11 +1,12 @@
 package typings.knockstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockstrapModalDefaults extends js.Object {
+trait KnockstrapModalDefaults extends StObject {
   
   var attributes: KnockstrapModalDefaultsAttributes = js.native
   
@@ -32,33 +33,21 @@ object KnockstrapModalDefaults {
   }
   
   @scala.inline
-  implicit class KnockstrapModalDefaultsOps[Self <: KnockstrapModalDefaults] (val x: Self) extends AnyVal {
+  implicit class KnockstrapModalDefaultsMutableBuilder[Self <: KnockstrapModalDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: KnockstrapModalDefaultsAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyTemplate(value: KnockstrapDefaultsTemplateBase): Self = StObject.set(x, "bodyTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: KnockstrapModalDefaultsAttributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setFooterTemplate(value: KnockstrapModalDefaultsFooterTemplate): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyTemplate(value: KnockstrapDefaultsTemplateBase): Self = this.set("bodyTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFooterTemplate(value: KnockstrapModalDefaultsFooterTemplate): Self = this.set("footerTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderTemplate(value: KnockstrapDefaultsTemplateBase): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    def setHeaderTemplate(value: KnockstrapDefaultsTemplateBase): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
   }
 }

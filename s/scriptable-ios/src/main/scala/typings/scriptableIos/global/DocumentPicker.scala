@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Presents a document picker._
   * @see https://docs.scriptable.app/documentpicker
   */
-@JSGlobal("DocumentPicker")
-@js.native
-object DocumentPicker extends js.Object {
+object DocumentPicker {
   
   /**
     * _Exports a file to a document._
@@ -19,6 +18,8 @@ object DocumentPicker extends js.Object {
     * @param path - Path of the file to export.
     * @see https://docs.scriptable.app/documentpicker/#export
     */
+  @JSGlobal("DocumentPicker.export")
+  @js.native
   def export(path: String): js.Promise[js.Array[String]] = js.native
   
   /**
@@ -29,7 +30,11 @@ object DocumentPicker extends js.Object {
     * @param name - Optional name of the image to export.
     * @see https://docs.scriptable.app/documentpicker/#exportdata
     */
+  @JSGlobal("DocumentPicker.exportData")
+  @js.native
   def exportData(data: typings.scriptableIos.Data): js.Promise[js.Array[String]] = js.native
+  @JSGlobal("DocumentPicker.exportData")
+  @js.native
   def exportData(data: typings.scriptableIos.Data, name: String): js.Promise[js.Array[String]] = js.native
   
   /**
@@ -40,7 +45,11 @@ object DocumentPicker extends js.Object {
     * @param name - Optional name of the image to export.
     * @see https://docs.scriptable.app/documentpicker/#exportimage
     */
+  @JSGlobal("DocumentPicker.exportImage")
+  @js.native
   def exportImage(image: typings.scriptableIos.Image): js.Promise[js.Array[String]] = js.native
+  @JSGlobal("DocumentPicker.exportImage")
+  @js.native
   def exportImage(image: typings.scriptableIos.Image, name: String): js.Promise[js.Array[String]] = js.native
   
   /**
@@ -51,7 +60,11 @@ object DocumentPicker extends js.Object {
     * @param name - Optional name of the document to export.
     * @see https://docs.scriptable.app/documentpicker/#exportstring
     */
+  @JSGlobal("DocumentPicker.exportString")
+  @js.native
   def exportString(content: String): js.Promise[js.Array[String]] = js.native
+  @JSGlobal("DocumentPicker.exportString")
+  @js.native
   def exportString(content: String, name: String): js.Promise[js.Array[String]] = js.native
   
   /**
@@ -64,7 +77,11 @@ object DocumentPicker extends js.Object {
     * @param types - Types of files to select. Specified using UTIs. Defaults to all files.
     * @see https://docs.scriptable.app/documentpicker/#open
     */
+  @JSGlobal("DocumentPicker.open")
+  @js.native
   def open(): js.Promise[js.Array[String]] = js.native
+  @JSGlobal("DocumentPicker.open")
+  @js.native
   def open(types: js.Array[String]): js.Promise[js.Array[String]] = js.native
   
   /**
@@ -75,6 +92,8 @@ object DocumentPicker extends js.Object {
     * When fulfilled the returned promise will provide the paths for the selected files.
     * @see https://docs.scriptable.app/documentpicker/#openfile
     */
+  @JSGlobal("DocumentPicker.openFile")
+  @js.native
   def openFile(): js.Promise[String] = js.native
   
   /**
@@ -85,5 +104,7 @@ object DocumentPicker extends js.Object {
     * When fulfilled the returned promise will provide the paths for the selected files.
     * @see https://docs.scriptable.app/documentpicker/#openfolder
     */
+  @JSGlobal("DocumentPicker.openFolder")
+  @js.native
   def openFolder(): js.Promise[String] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTransitTableTransitTimeRowTransitTimeValue extends js.Object {
+trait SchemaTransitTableTransitTimeRowTransitTimeValue extends StObject {
   
   /**
     * Must be greater than or equal to minTransitTimeInDays.
@@ -27,30 +28,18 @@ object SchemaTransitTableTransitTimeRowTransitTimeValue {
   }
   
   @scala.inline
-  implicit class SchemaTransitTableTransitTimeRowTransitTimeValueOps[Self <: SchemaTransitTableTransitTimeRowTransitTimeValue] (val x: Self) extends AnyVal {
+  implicit class SchemaTransitTableTransitTimeRowTransitTimeValueMutableBuilder[Self <: SchemaTransitTableTransitTimeRowTransitTimeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxTransitTimeInDays(value: Double): Self = StObject.set(x, "maxTransitTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxTransitTimeInDaysUndefined: Self = StObject.set(x, "maxTransitTimeInDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinTransitTimeInDays(value: Double): Self = StObject.set(x, "minTransitTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTransitTimeInDays(value: Double): Self = this.set("maxTransitTimeInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTransitTimeInDays: Self = this.set("maxTransitTimeInDays", js.undefined)
-    
-    @scala.inline
-    def setMinTransitTimeInDays(value: Double): Self = this.set("minTransitTimeInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinTransitTimeInDays: Self = this.set("minTransitTimeInDays", js.undefined)
+    def setMinTransitTimeInDaysUndefined: Self = StObject.set(x, "minTransitTimeInDays", js.undefined)
   }
 }

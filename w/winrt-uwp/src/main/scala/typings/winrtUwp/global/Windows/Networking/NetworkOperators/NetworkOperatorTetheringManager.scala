@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class NetworkOperatorTetheringManager ()
   extends typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager")
-@js.native
-object NetworkOperatorTetheringManager extends js.Object {
+object NetworkOperatorTetheringManager {
   
   /**
     * Creates a NetworkOperatorTetheringManager using the given profile.
     * @param profile Connection profile to be used.
     * @return The resulting manager object.
     */
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager.createFromConnectionProfile")
+  @js.native
   def createFromConnectionProfile(profile: ConnectionProfile): typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager = js.native
   
   /**
@@ -27,6 +28,9 @@ object NetworkOperatorTetheringManager extends js.Object {
     * @param networkAccountId The network account ID.
     * @return A NetworkOperatorTetheringManager object.
     */
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager.createFromNetworkAccountId")
+  @js.native
   def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager = js.native
   
   /**
@@ -34,6 +38,9 @@ object NetworkOperatorTetheringManager extends js.Object {
     * @param networkAccountId The network account ID.
     * @return The tethering capabilities of a network account.
     */
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager.getTetheringCapability")
+  @js.native
   def getTetheringCapability(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability = js.native
   
   /**
@@ -41,5 +48,8 @@ object NetworkOperatorTetheringManager extends js.Object {
     * @param profile Connection profile to be checked.
     * @return Tethering capabilities of the connection profile.
     */
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager.getTetheringCapabilityFromConnectionProfile")
+  @js.native
   def getTetheringCapabilityFromConnectionProfile(profile: ConnectionProfile): typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability = js.native
 }

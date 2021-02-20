@@ -1,12 +1,13 @@
 package typings.codemirror.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextMarkerOptions extends js.Object {
+trait TextMarkerOptions extends StObject {
   
   /** When set to true (default is false), adding this marker will create an event in the undo history that can be individually undone(clearing the marker). */
   var addToHistory: js.UndefOr[Boolean] = js.native
@@ -76,114 +77,102 @@ object TextMarkerOptions {
   }
   
   @scala.inline
-  implicit class TextMarkerOptionsOps[Self <: TextMarkerOptions] (val x: Self) extends AnyVal {
+  implicit class TextMarkerOptionsMutableBuilder[Self <: TextMarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToHistory(value: Boolean): Self = StObject.set(x, "addToHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToHistoryUndefined: Self = StObject.set(x, "addToHistory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAtomic(value: Boolean): Self = StObject.set(x, "atomic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToHistory(value: Boolean): Self = this.set("addToHistory", value.asInstanceOf[js.Any])
+    def setAtomicUndefined: Self = StObject.set(x, "atomic", js.undefined)
     
     @scala.inline
-    def deleteAddToHistory: Self = this.set("addToHistory", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtomic(value: Boolean): Self = this.set("atomic", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAtomic: Self = this.set("atomic", js.undefined)
+    def setClearOnEnter(value: Boolean): Self = StObject.set(x, "clearOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClearOnEnterUndefined: Self = StObject.set(x, "clearOnEnter", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setClearWhenEmpty(value: Boolean): Self = StObject.set(x, "clearWhenEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearOnEnter(value: Boolean): Self = this.set("clearOnEnter", value.asInstanceOf[js.Any])
+    def setClearWhenEmptyUndefined: Self = StObject.set(x, "clearWhenEmpty", js.undefined)
     
     @scala.inline
-    def deleteClearOnEnter: Self = this.set("clearOnEnter", js.undefined)
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearWhenEmpty(value: Boolean): Self = this.set("clearWhenEmpty", value.asInstanceOf[js.Any])
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def deleteClearWhenEmpty: Self = this.set("clearWhenEmpty", js.undefined)
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setEndStyle(value: String): Self = StObject.set(x, "endStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setEndStyleUndefined: Self = StObject.set(x, "endStyle", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setHandleMouseEvents(value: Boolean): Self = StObject.set(x, "handleMouseEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndStyle(value: String): Self = this.set("endStyle", value.asInstanceOf[js.Any])
+    def setHandleMouseEventsUndefined: Self = StObject.set(x, "handleMouseEvents", js.undefined)
     
     @scala.inline
-    def deleteEndStyle: Self = this.set("endStyle", js.undefined)
+    def setInclusiveLeft(value: Boolean): Self = StObject.set(x, "inclusiveLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleMouseEvents(value: Boolean): Self = this.set("handleMouseEvents", value.asInstanceOf[js.Any])
+    def setInclusiveLeftUndefined: Self = StObject.set(x, "inclusiveLeft", js.undefined)
     
     @scala.inline
-    def deleteHandleMouseEvents: Self = this.set("handleMouseEvents", js.undefined)
+    def setInclusiveRight(value: Boolean): Self = StObject.set(x, "inclusiveRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclusiveLeft(value: Boolean): Self = this.set("inclusiveLeft", value.asInstanceOf[js.Any])
+    def setInclusiveRightUndefined: Self = StObject.set(x, "inclusiveRight", js.undefined)
     
     @scala.inline
-    def deleteInclusiveLeft: Self = this.set("inclusiveLeft", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclusiveRight(value: Boolean): Self = this.set("inclusiveRight", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteInclusiveRight: Self = this.set("inclusiveRight", js.undefined)
+    def setReplacedWith(value: HTMLElement): Self = StObject.set(x, "replacedWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReplacedWithUndefined: Self = StObject.set(x, "replacedWith", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacedWith(value: HTMLElement): Self = this.set("replacedWith", value.asInstanceOf[js.Any])
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
     @scala.inline
-    def deleteReplacedWith: Self = this.set("replacedWith", js.undefined)
+    def setStartStyle(value: String): Self = StObject.set(x, "startStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    def setStartStyleUndefined: Self = StObject.set(x, "startStyle", js.undefined)
     
     @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartStyle(value: String): Self = this.set("startStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartStyle: Self = this.set("startStyle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

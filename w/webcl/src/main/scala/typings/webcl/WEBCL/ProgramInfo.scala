@@ -4,6 +4,7 @@ import typings.webcl.webclNumbers.`0x1161`
 import typings.webcl.webclNumbers.`0x1162`
 import typings.webcl.webclNumbers.`0x1163`
 import typings.webcl.webclNumbers.`0x1164`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1163`
   - typings.webcl.webclNumbers.`0x1164`
 */
-trait ProgramInfo extends js.Object
+trait ProgramInfo extends StObject
 object ProgramInfo {
   
   //PROGRAM_REFERENCE_COUNT                   = 0x1160, // disallowed

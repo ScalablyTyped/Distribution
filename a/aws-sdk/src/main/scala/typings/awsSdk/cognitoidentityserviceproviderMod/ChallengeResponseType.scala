@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChallengeResponseType extends js.Object {
+trait ChallengeResponseType extends StObject {
   
   /**
     * The challenge name
@@ -26,30 +27,18 @@ object ChallengeResponseType {
   }
   
   @scala.inline
-  implicit class ChallengeResponseTypeOps[Self <: ChallengeResponseType] (val x: Self) extends AnyVal {
+  implicit class ChallengeResponseTypeMutableBuilder[Self <: ChallengeResponseType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeName(value: ChallengeName): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChallengeNameUndefined: Self = StObject.set(x, "ChallengeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallengeResponse(value: ChallengeResponse): Self = StObject.set(x, "ChallengeResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeName(value: ChallengeName): Self = this.set("ChallengeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChallengeName: Self = this.set("ChallengeName", js.undefined)
-    
-    @scala.inline
-    def setChallengeResponse(value: ChallengeResponse): Self = this.set("ChallengeResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChallengeResponse: Self = this.set("ChallengeResponse", js.undefined)
+    def setChallengeResponseUndefined: Self = StObject.set(x, "ChallengeResponse", js.undefined)
   }
 }

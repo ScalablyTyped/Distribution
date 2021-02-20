@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryStreamEncryptionConfigurationInput extends js.Object {
+trait DeliveryStreamEncryptionConfigurationInput extends StObject {
   
   /**
     * If you set KeyType to CUSTOMER_MANAGED_CMK, you must specify the Amazon Resource Name (ARN) of the CMK. If you set KeyType to AWS_OWNED_CMK, Kinesis Data Firehose uses a service-account CMK.
@@ -26,27 +27,15 @@ object DeliveryStreamEncryptionConfigurationInput {
   }
   
   @scala.inline
-  implicit class DeliveryStreamEncryptionConfigurationInputOps[Self <: DeliveryStreamEncryptionConfigurationInput] (val x: Self) extends AnyVal {
+  implicit class DeliveryStreamEncryptionConfigurationInputMutableBuilder[Self <: DeliveryStreamEncryptionConfigurationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyARNUndefined: Self = StObject.set(x, "KeyARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyType(value: KeyType): Self = this.set("KeyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyARN(value: AWSKMSKeyARN): Self = this.set("KeyARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyARN: Self = this.set("KeyARN", js.undefined)
+    def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
   }
 }

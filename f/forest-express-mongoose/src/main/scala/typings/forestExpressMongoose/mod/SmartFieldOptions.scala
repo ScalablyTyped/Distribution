@@ -1,11 +1,12 @@
 package typings.forestExpressMongoose.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartFieldOptions extends js.Object {
+trait SmartFieldOptions extends StObject {
   
   var defaultValue: js.UndefOr[js.Any] = js.native
   
@@ -37,78 +38,66 @@ object SmartFieldOptions {
   }
   
   @scala.inline
-  implicit class SmartFieldOptionsOps[Self <: SmartFieldOptions] (val x: Self) extends AnyVal {
+  implicit class SmartFieldOptionsMutableBuilder[Self <: SmartFieldOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    def setEnums(value: js.Array[String]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String | js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setEnumsVarargs(value: String*): Self = StObject.set(x, "enums", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGet(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def setEnumsVarargs(value: String*): Self = this.set("enums", js.Array(value :_*))
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnums(value: js.Array[String]): Self = this.set("enums", value.asInstanceOf[js.Any])
+    def setIsReadOnlyUndefined: Self = StObject.set(x, "isReadOnly", js.undefined)
     
     @scala.inline
-    def deleteEnums: Self = this.set("enums", js.undefined)
+    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGet(value: /* record */ js.Any => js.Any): Self = this.set("get", js.Any.fromFunction1(value))
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setSearch(value: (/* query */ js.Any, /* search */ String) => js.Object): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteIsReadOnly: Self = this.set("isReadOnly", js.undefined)
+    def setSet(value: (/* record */ js.Any, /* attributeValue */ js.Any) => js.Object): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReference(value: String): Self = this.set("reference", value.asInstanceOf[js.Any])
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
+    def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: (/* query */ js.Any, /* search */ String) => js.Object): Self = this.set("search", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setSet(value: (/* record */ js.Any, /* attributeValue */ js.Any) => js.Object): Self = this.set("set", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

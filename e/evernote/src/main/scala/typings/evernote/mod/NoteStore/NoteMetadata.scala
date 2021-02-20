@@ -4,13 +4,14 @@ import typings.evernote.anon.Attributes
 import typings.evernote.mod.Types.Guid
 import typings.evernote.mod.Types.NoteAttributes
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.NoteMetadata")
 @js.native
-class NoteMetadata () extends js.Object {
+class NoteMetadata () extends StObject {
   def this(args: Attributes) = this()
   
   var attributes: js.UndefOr[NoteAttributes] = js.native

@@ -1,6 +1,7 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object or callback function that MapKit JS calls when fetching points of interest.
   */
 @js.native
-trait PointsOfInterestSearchDelegate extends js.Object {
+trait PointsOfInterestSearchDelegate extends StObject {
   
   /**
     * Tells the delegate that the search completed.
@@ -30,30 +31,18 @@ object PointsOfInterestSearchDelegate {
   }
   
   @scala.inline
-  implicit class PointsOfInterestSearchDelegateOps[Self <: PointsOfInterestSearchDelegate] (val x: Self) extends AnyVal {
+  implicit class PointsOfInterestSearchDelegateMutableBuilder[Self <: PointsOfInterestSearchDelegate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearchDidComplete(value: /* data */ PointsOfInterestSearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearchDidComplete(value: /* data */ PointsOfInterestSearchResponse => Unit): Self = this.set("searchDidComplete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSearchDidComplete: Self = this.set("searchDidComplete", js.undefined)
-    
-    @scala.inline
-    def setSearchDidError(value: /* error */ Error => Unit): Self = this.set("searchDidError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSearchDidError: Self = this.set("searchDidError", js.undefined)
+    def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
   }
 }

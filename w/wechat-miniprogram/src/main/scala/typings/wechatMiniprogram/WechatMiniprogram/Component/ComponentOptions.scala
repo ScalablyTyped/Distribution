@@ -7,12 +7,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.`page-isolated`
 import typings.wechatMiniprogram.wechatMiniprogramStrings.`page-shared`
 import typings.wechatMiniprogram.wechatMiniprogramStrings.isolated
 import typings.wechatMiniprogram.wechatMiniprogramStrings.shared
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentOptions extends js.Object {
+trait ComponentOptions extends StObject {
   
   /**
     * [组件样式隔离](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html#组件样式隔离)
@@ -45,42 +46,30 @@ object ComponentOptions {
   }
   
   @scala.inline
-  implicit class ComponentOptionsOps[Self <: ComponentOptions] (val x: Self) extends AnyVal {
+  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddGlobalClass(value: Boolean): Self = StObject.set(x, "addGlobalClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddGlobalClassUndefined: Self = StObject.set(x, "addGlobalClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultipleSlots(value: Boolean): Self = StObject.set(x, "multipleSlots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddGlobalClass(value: Boolean): Self = this.set("addGlobalClass", value.asInstanceOf[js.Any])
+    def setMultipleSlotsUndefined: Self = StObject.set(x, "multipleSlots", js.undefined)
     
     @scala.inline
-    def deleteAddGlobalClass: Self = this.set("addGlobalClass", js.undefined)
+    def setPureDataPattern(value: RegExp): Self = StObject.set(x, "pureDataPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleSlots(value: Boolean): Self = this.set("multipleSlots", value.asInstanceOf[js.Any])
+    def setPureDataPatternUndefined: Self = StObject.set(x, "pureDataPattern", js.undefined)
     
     @scala.inline
-    def deleteMultipleSlots: Self = this.set("multipleSlots", js.undefined)
+    def setStyleIsolation(value: isolated | `apply-shared` | shared | `page-isolated` | `page-apply-shared` | `page-shared`): Self = StObject.set(x, "styleIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPureDataPattern(value: RegExp): Self = this.set("pureDataPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePureDataPattern: Self = this.set("pureDataPattern", js.undefined)
-    
-    @scala.inline
-    def setStyleIsolation(value: isolated | `apply-shared` | shared | `page-isolated` | `page-apply-shared` | `page-shared`): Self = this.set("styleIsolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleIsolation: Self = this.set("styleIsolation", js.undefined)
+    def setStyleIsolationUndefined: Self = StObject.set(x, "styleIsolation", js.undefined)
   }
 }

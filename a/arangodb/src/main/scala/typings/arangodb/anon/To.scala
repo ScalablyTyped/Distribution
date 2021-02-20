@@ -1,11 +1,12 @@
 package typings.arangodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait To extends js.Object {
+trait To extends StObject {
   
   var _from: String = js.native
   
@@ -20,24 +21,12 @@ object To {
   }
   
   @scala.inline
-  implicit class ToOps[Self <: To] (val x: Self) extends AnyVal {
+  implicit class ToMutableBuilder[Self <: To] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_from(value: String): Self = this.set("_from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_to(value: String): Self = this.set("_to", value.asInstanceOf[js.Any])
+    def set_to(value: String): Self = StObject.set(x, "_to", value.asInstanceOf[js.Any])
   }
 }

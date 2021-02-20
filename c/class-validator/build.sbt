@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "class-validator"
-version := "0.12.2-71ee14"
+version := "0.12.2-6da5e0"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0",
-  "org.scalablytyped" %%% "validator" % "13.1-dt-20200624Z-8d13b2")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "std" % "4.1-40053c",
+  "org.scalablytyped" %%% "validator" % "13.1-dt-20200624Z-ee1ccf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

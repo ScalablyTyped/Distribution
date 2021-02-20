@@ -1,12 +1,13 @@
 package typings.knockoutPreRendered
 
 import typings.knockoutPreRendered.anon.Method
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutExtenders extends js.Object {
+trait KnockoutExtenders extends StObject {
   
   def notify(target: js.Any, notifyWhen: String): js.Any = js.native
   

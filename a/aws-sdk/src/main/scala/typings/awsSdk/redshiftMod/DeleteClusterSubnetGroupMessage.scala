@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteClusterSubnetGroupMessage extends js.Object {
+trait DeleteClusterSubnetGroupMessage extends StObject {
   
   /**
     * The name of the cluster subnet group name to be deleted.
@@ -21,21 +22,9 @@ object DeleteClusterSubnetGroupMessage {
   }
   
   @scala.inline
-  implicit class DeleteClusterSubnetGroupMessageOps[Self <: DeleteClusterSubnetGroupMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteClusterSubnetGroupMessageMutableBuilder[Self <: DeleteClusterSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClusterSubnetGroupName(value: String): Self = this.set("ClusterSubnetGroupName", value.asInstanceOf[js.Any])
+    def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "ClusterSubnetGroupName", value.asInstanceOf[js.Any])
   }
 }

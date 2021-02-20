@@ -1,23 +1,25 @@
 package typings.antvComponent
 
-import typings.antvComponent.groupComponentMod.GroupComponent
 import typings.antvComponent.interfacesMod.IList
 import typings.antvComponent.typesMod.AxisBaseCfg
 import typings.antvComponent.typesMod.ListItem
 import typings.antvEventEmitter.mod.EventType
 import typings.antvGBase.typesMod.Point
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/axis/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
+object baseMod {
+  
+  @JSImport("@antv/component/lib/axis/base", JSImport.Default)
+  @js.native
+  abstract class default[T /* <: AxisBaseCfg */] () extends AxisBase[T]
   
   @js.native
   trait AxisBase[T /* <: AxisBaseCfg */]
-    extends GroupComponent[T]
+    extends typings.antvComponent.groupComponentMod.default[T]
        with IList {
     
     var applyTickStates: js.Any = js.native
@@ -42,7 +44,7 @@ object baseMod extends js.Object {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): js.Any with (Record[String, js.Array[EventType]]) = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
     
     def getItemStates(item: ListItem): js.Array[String] = js.native
     
@@ -90,35 +92,29 @@ object baseMod extends js.Object {
     var getTitleAttrs: js.Any = js.native
     
     /**
-      * 移除事件
+      * 取消监听一个事件，或者一个channel
+      * @param evt
+      * @param callback
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): js.Any with this.type = js.native
-    /**
-      * 移除事件
-      * @param eventName 事件名
-      */
+    override def off(): this.type with js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(eventName: String): js.Any with this.type = js.native
-    /**
-      * 移除事件
-      * @param eventName 事件名
-      * @param callback  回调函数
-      */
+    override def off(evt: String): this.type with js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(eventName: String, callback: js.Function): js.Any with this.type = js.native
+    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
     
     /**
-      * 绑定事件
-      * @param  eventName 事件名
-      * @param callback  回调函数
+      * 监听一个事件
+      * @param evt
+      * @param callback
+      * @param once
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(eventName: String, callback: js.Function): js.Any with this.type = js.native
+    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
     
     /* protected */ def processOverlap(labelGroup: js.Any): Unit = js.native
     
@@ -126,7 +122,4 @@ object baseMod extends js.Object {
     
     var updateTickStates: js.Any = js.native
   }
-  
-  @js.native
-  abstract class default[T /* <: AxisBaseCfg */] () extends AxisBase[T]
 }

@@ -1,6 +1,7 @@
 package typings.qlikVisualizationextensions.ExtensionAPI
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,48 +29,36 @@ object IItems {
   }
   
   @scala.inline
-  implicit class IItemsOps[Self <: IItems] (val x: Self) extends AnyVal {
+  implicit class IItemsMutableBuilder[Self <: IItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOns(value: IAddOns): Self = StObject.set(x, "AddOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnsUndefined: Self = StObject.set(x, "AddOns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppearance(value: IAppearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOns(value: IAddOns): Self = this.set("AddOns", value.asInstanceOf[js.Any])
+    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
     @scala.inline
-    def deleteAddOns: Self = this.set("AddOns", js.undefined)
+    def setDimentions(value: IDimensions): Self = StObject.set(x, "dimentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppearance(value: IAppearance): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    def setDimentionsUndefined: Self = StObject.set(x, "dimentions", js.undefined)
     
     @scala.inline
-    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    def setMeasures(value: IMeasures): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimentions(value: IDimensions): Self = this.set("dimentions", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteDimentions: Self = this.set("dimentions", js.undefined)
+    def setSorting(value: ISorting): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: IMeasures): Self = this.set("measures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
-    
-    @scala.inline
-    def setSorting(value: ISorting): Self = this.set("sorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
   }
 }

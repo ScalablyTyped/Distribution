@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Fetch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Request
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Response
 */
-trait RequestStage extends js.Object
+trait RequestStage extends StObject
 object RequestStage {
   
   @scala.inline

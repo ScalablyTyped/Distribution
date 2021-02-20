@@ -2,12 +2,13 @@ package typings.chromeApps.WebView
 
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenus extends js.Object {
+trait ContextMenus extends StObject {
   
   /**
     * Creates a new context menu item. Note that if an error occurs during creation,

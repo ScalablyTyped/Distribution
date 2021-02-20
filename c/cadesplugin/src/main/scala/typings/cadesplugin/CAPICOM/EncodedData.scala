@@ -1,11 +1,12 @@
 package typings.cadesplugin.CAPICOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncodedData extends js.Object {
+trait EncodedData extends StObject {
   
   val Format: String = js.native
   

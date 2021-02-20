@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.SliderTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.SliderTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.SliderTheme> */
 @js.native
-trait Slider extends js.Object {
+trait Slider extends StObject {
   
   var dark: SliderTheme = js.native
   
@@ -35,69 +36,57 @@ object Slider {
   }
   
   @scala.inline
-  implicit class SliderOps[Self <: Slider] (val x: Self) extends AnyVal {
+  implicit class SliderMutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDark(value: SliderTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLight(value: SliderTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: SliderTheme): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
     
     @scala.inline
-    def setLight(value: SliderTheme): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = this.set("maximumTrackTintColor", value.asInstanceOf[js.Any])
+    def setThumbRadiusUndefined: Self = StObject.set(x, "thumbRadius", js.undefined)
     
     @scala.inline
-    def deleteMaximumTrackTintColor: Self = this.set("maximumTrackTintColor", js.undefined)
+    def setThumbSize(value: Double): Self = StObject.set(x, "thumbSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbRadius(value: Double): Self = this.set("thumbRadius", value.asInstanceOf[js.Any])
+    def setThumbSizeUndefined: Self = StObject.set(x, "thumbSize", js.undefined)
     
     @scala.inline
-    def deleteThumbRadius: Self = this.set("thumbRadius", js.undefined)
+    def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbSize(value: Double): Self = this.set("thumbSize", value.asInstanceOf[js.Any])
+    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
     @scala.inline
-    def deleteThumbSize: Self = this.set("thumbSize", js.undefined)
+    def setTrackHeight(value: Double): Self = StObject.set(x, "trackHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTintColor(value: String): Self = this.set("thumbTintColor", value.asInstanceOf[js.Any])
+    def setTrackHeightUndefined: Self = StObject.set(x, "trackHeight", js.undefined)
     
     @scala.inline
-    def deleteThumbTintColor: Self = this.set("thumbTintColor", js.undefined)
+    def setTrackRadius(value: Double): Self = StObject.set(x, "trackRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackHeight(value: Double): Self = this.set("trackHeight", value.asInstanceOf[js.Any])
+    def setTrackRadiusUndefined: Self = StObject.set(x, "trackRadius", js.undefined)
     
     @scala.inline
-    def deleteTrackHeight: Self = this.set("trackHeight", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackRadius(value: Double): Self = this.set("trackRadius", value.asInstanceOf[js.Any])
+    def setWidthNull: Self = StObject.set(x, "width", null)
     
     @scala.inline
-    def deleteTrackRadius: Self = this.set("trackRadius", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthNull: Self = this.set("width", null)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

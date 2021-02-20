@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileContentMetadata extends js.Object {
+trait FileContentMetadata extends StObject {
   
   var contentType: String = js.native
   
@@ -38,39 +39,27 @@ object FileContentMetadata {
   }
   
   @scala.inline
-  implicit class FileContentMetadataOps[Self <: FileContentMetadata] (val x: Self) extends AnyVal {
+  implicit class FileContentMetadataMutableBuilder[Self <: FileContentMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: Double): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setIsImage(value: Boolean): Self = StObject.set(x, "isImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsBinary(value: Boolean): Self = this.set("isBinary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsImage(value: Boolean): Self = this.set("isImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVsLink(value: String): Self = this.set("vsLink", value.asInstanceOf[js.Any])
+    def setVsLink(value: String): Self = StObject.set(x, "vsLink", value.asInstanceOf[js.Any])
   }
 }

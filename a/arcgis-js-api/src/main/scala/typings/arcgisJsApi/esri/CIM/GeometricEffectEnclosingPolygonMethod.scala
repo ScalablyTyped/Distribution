@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectEnclosingPolygonMethod extends js.Object
+sealed trait GeometricEffectEnclosingPolygonMethod extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectEnclosingPolygonMethod")
 @js.native
-object GeometricEffectEnclosingPolygonMethod extends js.Object {
+object GeometricEffectEnclosingPolygonMethod extends StObject {
   
   /**
     * ClosePath - for polygon input, it generates a polygon that matches the geometry of a polygon feature. For line input, it generates a polygon that connects both ends of the line to each other.

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterContainerImageRequest extends js.Object {
+trait RegisterContainerImageRequest extends StObject {
   
   /**
     * The digest of the container image to be registered.
@@ -31,27 +32,15 @@ object RegisterContainerImageRequest {
   }
   
   @scala.inline
-  implicit class RegisterContainerImageRequestOps[Self <: RegisterContainerImageRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterContainerImageRequestMutableBuilder[Self <: RegisterContainerImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: ContainerLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDigest(value: String): Self = this.set("digest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: ContainerLabel): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

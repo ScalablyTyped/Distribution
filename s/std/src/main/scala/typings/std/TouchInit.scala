@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchInit extends js.Object {
+trait TouchInit extends StObject {
   
   var altitudeAngle: js.UndefOr[Double] = js.native
   
@@ -46,102 +47,90 @@ object TouchInit {
   }
   
   @scala.inline
-  implicit class TouchInitOps[Self <: TouchInit] (val x: Self) extends AnyVal {
+  implicit class TouchInitMutableBuilder[Self <: TouchInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitudeAngle(value: Double): Self = StObject.set(x, "altitudeAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeAngleUndefined: Self = StObject.set(x, "altitudeAngle", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAzimuthAngle(value: Double): Self = StObject.set(x, "azimuthAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Double): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setAzimuthAngleUndefined: Self = StObject.set(x, "azimuthAngle", js.undefined)
     
     @scala.inline
-    def setTarget(value: EventTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitudeAngle(value: Double): Self = this.set("altitudeAngle", value.asInstanceOf[js.Any])
+    def setClientXUndefined: Self = StObject.set(x, "clientX", js.undefined)
     
     @scala.inline
-    def deleteAltitudeAngle: Self = this.set("altitudeAngle", js.undefined)
+    def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzimuthAngle(value: Double): Self = this.set("azimuthAngle", value.asInstanceOf[js.Any])
+    def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
     
     @scala.inline
-    def deleteAzimuthAngle: Self = this.set("azimuthAngle", js.undefined)
+    def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientX(value: Double): Self = this.set("clientX", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteClientX: Self = this.set("clientX", js.undefined)
+    def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientY(value: Double): Self = this.set("clientY", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientY: Self = this.set("clientY", js.undefined)
+    def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
     
     @scala.inline
-    def setForce(value: Double): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageX: Self = this.set("pageX", js.undefined)
+    def setRadiusXUndefined: Self = StObject.set(x, "radiusX", js.undefined)
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageY: Self = this.set("pageY", js.undefined)
+    def setRadiusYUndefined: Self = StObject.set(x, "radiusY", js.undefined)
     
     @scala.inline
-    def setRadiusX(value: Double): Self = this.set("radiusX", value.asInstanceOf[js.Any])
+    def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadiusX: Self = this.set("radiusX", js.undefined)
+    def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
     
     @scala.inline
-    def setRadiusY(value: Double): Self = this.set("radiusY", value.asInstanceOf[js.Any])
+    def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadiusY: Self = this.set("radiusY", js.undefined)
+    def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
     
     @scala.inline
-    def setRotationAngle(value: Double): Self = this.set("rotationAngle", value.asInstanceOf[js.Any])
+    def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotationAngle: Self = this.set("rotationAngle", js.undefined)
+    def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
     
     @scala.inline
-    def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
+    def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScreenX: Self = this.set("screenX", js.undefined)
+    def setTouchType(value: TouchType): Self = StObject.set(x, "touchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenY: Self = this.set("screenY", js.undefined)
-    
-    @scala.inline
-    def setTouchType(value: TouchType): Self = this.set("touchType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchType: Self = this.set("touchType", js.undefined)
+    def setTouchTypeUndefined: Self = StObject.set(x, "touchType", js.undefined)
   }
 }

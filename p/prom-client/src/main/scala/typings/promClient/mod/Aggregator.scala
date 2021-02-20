@@ -1,5 +1,6 @@
 package typings.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.promClient.promClientStrings.max
   - typings.promClient.promClientStrings.average
 */
-trait Aggregator extends js.Object
+trait Aggregator extends StObject
 object Aggregator {
   
   @scala.inline

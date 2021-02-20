@@ -2,12 +2,13 @@ package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.legendItemClick
 import typings.std.PointerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointLegendItemClickEventObject extends js.Object {
+trait PointLegendItemClickEventObject extends StObject {
   
   /**
     * Related browser event.
@@ -39,30 +40,18 @@ object PointLegendItemClickEventObject {
   }
   
   @scala.inline
-  implicit class PointLegendItemClickEventObjectOps[Self <: PointLegendItemClickEventObject] (val x: Self) extends AnyVal {
+  implicit class PointLegendItemClickEventObjectMutableBuilder[Self <: PointLegendItemClickEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserEvent(value: PointerEvent): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserEvent(value: PointerEvent): Self = this.set("browserEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Point): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: legendItemClick): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: legendItemClick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

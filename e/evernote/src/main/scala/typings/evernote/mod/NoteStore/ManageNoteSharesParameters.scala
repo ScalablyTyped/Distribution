@@ -3,13 +3,14 @@ package typings.evernote.mod.NoteStore
 import typings.evernote.anon.InvitationsToUnshare
 import typings.evernote.mod.Types.IdentityID
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.ManageNoteSharesParameters")
 @js.native
-class ManageNoteSharesParameters () extends js.Object {
+class ManageNoteSharesParameters () extends StObject {
   def this(args: InvitationsToUnshare) = this()
   
   var invitationsToUnshare: js.UndefOr[js.Array[IdentityID]] = js.native

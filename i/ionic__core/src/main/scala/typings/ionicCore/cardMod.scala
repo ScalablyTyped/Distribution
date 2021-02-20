@@ -6,14 +6,14 @@ import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/card/card", JSImport.Namespace)
-@js.native
-object cardMod extends js.Object {
+object cardMod {
   
+  @JSImport("@ionic/core/dist/types/components/card/card", "Card")
   @js.native
   class Card ()
     extends ComponentInterface

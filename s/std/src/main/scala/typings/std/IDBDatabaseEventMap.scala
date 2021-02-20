@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDBDatabaseEventMap extends js.Object {
+trait IDBDatabaseEventMap extends StObject {
   
   var abort: Event = js.native
   
@@ -24,30 +25,18 @@ object IDBDatabaseEventMap {
   }
   
   @scala.inline
-  implicit class IDBDatabaseEventMapOps[Self <: IDBDatabaseEventMap] (val x: Self) extends AnyVal {
+  implicit class IDBDatabaseEventMapMutableBuilder[Self <: IDBDatabaseEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbort(value: Event): Self = this.set("abort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClose(value: Event): Self = this.set("close", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionchange(value: IDBVersionChangeEvent): Self = this.set("versionchange", value.asInstanceOf[js.Any])
+    def setVersionchange(value: IDBVersionChangeEvent): Self = StObject.set(x, "versionchange", value.asInstanceOf[js.Any])
   }
 }

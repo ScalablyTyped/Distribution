@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HsmConfiguration extends js.Object {
+trait HsmConfiguration extends StObject {
   
   /**
     * A text description of the HSM configuration.
@@ -41,51 +42,39 @@ object HsmConfiguration {
   }
   
   @scala.inline
-  implicit class HsmConfigurationOps[Self <: HsmConfiguration] (val x: Self) extends AnyVal {
+  implicit class HsmConfigurationMutableBuilder[Self <: HsmConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHsmConfigurationIdentifier(value: String): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setHsmConfigurationIdentifierUndefined: Self = StObject.set(x, "HsmConfigurationIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setHsmIpAddress(value: String): Self = StObject.set(x, "HsmIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmConfigurationIdentifier(value: String): Self = this.set("HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
+    def setHsmIpAddressUndefined: Self = StObject.set(x, "HsmIpAddress", js.undefined)
     
     @scala.inline
-    def deleteHsmConfigurationIdentifier: Self = this.set("HsmConfigurationIdentifier", js.undefined)
+    def setHsmPartitionName(value: String): Self = StObject.set(x, "HsmPartitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmIpAddress(value: String): Self = this.set("HsmIpAddress", value.asInstanceOf[js.Any])
+    def setHsmPartitionNameUndefined: Self = StObject.set(x, "HsmPartitionName", js.undefined)
     
     @scala.inline
-    def deleteHsmIpAddress: Self = this.set("HsmIpAddress", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmPartitionName(value: String): Self = this.set("HsmPartitionName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteHsmPartitionName: Self = this.set("HsmPartitionName", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

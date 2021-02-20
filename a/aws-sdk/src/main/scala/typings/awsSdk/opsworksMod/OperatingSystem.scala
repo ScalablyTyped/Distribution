@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperatingSystem extends js.Object {
+trait OperatingSystem extends StObject {
   
   /**
     * Supported configuration manager name and versions for an AWS OpsWorks Stacks operating system.
@@ -51,63 +52,51 @@ object OperatingSystem {
   }
   
   @scala.inline
-  implicit class OperatingSystemOps[Self <: OperatingSystem] (val x: Self) extends AnyVal {
+  implicit class OperatingSystemMutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationManagers(value: OperatingSystemConfigurationManagers): Self = StObject.set(x, "ConfigurationManagers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationManagersUndefined: Self = StObject.set(x, "ConfigurationManagers", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationManagersVarargs(value: OperatingSystemConfigurationManager*): Self = StObject.set(x, "ConfigurationManagers", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationManagersVarargs(value: OperatingSystemConfigurationManager*): Self = this.set("ConfigurationManagers", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationManagers(value: OperatingSystemConfigurationManagers): Self = this.set("ConfigurationManagers", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteConfigurationManagers: Self = this.set("ConfigurationManagers", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setReportedName(value: String): Self = StObject.set(x, "ReportedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setReportedNameUndefined: Self = StObject.set(x, "ReportedName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setReportedVersion(value: String): Self = StObject.set(x, "ReportedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportedName(value: String): Self = this.set("ReportedName", value.asInstanceOf[js.Any])
+    def setReportedVersionUndefined: Self = StObject.set(x, "ReportedVersion", js.undefined)
     
     @scala.inline
-    def deleteReportedName: Self = this.set("ReportedName", js.undefined)
+    def setSupported(value: Boolean): Self = StObject.set(x, "Supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportedVersion(value: String): Self = this.set("ReportedVersion", value.asInstanceOf[js.Any])
+    def setSupportedUndefined: Self = StObject.set(x, "Supported", js.undefined)
     
     @scala.inline
-    def deleteReportedVersion: Self = this.set("ReportedVersion", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupported(value: Boolean): Self = this.set("Supported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupported: Self = this.set("Supported", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

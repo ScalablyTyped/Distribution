@@ -1,26 +1,30 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Analytics")
-@js.native
-object Analytics extends js.Object {
+object Analytics {
   
+  @JSGlobal("SP.Analytics.AnalyticsUsageEntry")
   @js.native
   class AnalyticsUsageEntry ()
     extends typings.sharepoint.SP.ClientObject
-  /* static members */
-  @js.native
-  object AnalyticsUsageEntry extends js.Object {
+  object AnalyticsUsageEntry {
     
+    /* static member */
+    @JSGlobal("SP.Analytics.AnalyticsUsageEntry.logAnalyticsAppEvent")
+    @js.native
     def logAnalyticsAppEvent(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       appEventTypeId: typings.sharepoint.SP.Guid,
       itemId: String
     ): Unit = js.native
     
+    /* static member */
+    @JSGlobal("SP.Analytics.AnalyticsUsageEntry.logAnalyticsAppEvent2")
+    @js.native
     def logAnalyticsAppEvent2(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       appEventTypeId: typings.sharepoint.SP.Guid,
@@ -30,8 +34,14 @@ object Analytics extends js.Object {
       userId: String
     ): Unit = js.native
     
+    /* static member */
+    @JSGlobal("SP.Analytics.AnalyticsUsageEntry.logAnalyticsEvent")
+    @js.native
     def logAnalyticsEvent(context: typings.sharepoint.SP.ClientRuntimeContext, eventTypeId: Double, itemId: String): Unit = js.native
     
+    /* static member */
+    @JSGlobal("SP.Analytics.AnalyticsUsageEntry.logAnalyticsEvent2")
+    @js.native
     def logAnalyticsEvent2(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       eventTypeId: Double,
@@ -42,8 +52,9 @@ object Analytics extends js.Object {
     ): Unit = js.native
   }
   
+  @JSGlobal("SP.Analytics.EventTypeId")
   @js.native
-  object EventTypeId extends js.Object {
+  object EventTypeId extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SP.Analytics.EventTypeId with Double] = js.native

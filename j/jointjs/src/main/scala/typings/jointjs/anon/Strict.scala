@@ -1,11 +1,12 @@
 package typings.jointjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Strict extends js.Object {
+trait Strict extends StObject {
   
   var strict: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object Strict {
   }
   
   @scala.inline
-  implicit class StrictOps[Self <: Strict] (val x: Self) extends AnyVal {
+  implicit class StrictMutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

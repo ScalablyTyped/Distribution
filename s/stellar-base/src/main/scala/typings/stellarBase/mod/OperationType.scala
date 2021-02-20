@@ -19,13 +19,12 @@ import typings.stellarBase.stellarBaseStrings.pathPaymentStrictSend
 import typings.stellarBase.stellarBaseStrings.payment
 import typings.stellarBase.stellarBaseStrings.revokeSponsorship
 import typings.stellarBase.stellarBaseStrings.setOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-base", "OperationType")
-@js.native
-object OperationType extends js.Object {
+object OperationType {
   
   type AccountMerge = accountMerge
   

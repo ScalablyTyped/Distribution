@@ -2,12 +2,13 @@ package typings.openlayers.mod.olx.format
 
 import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.format.filter.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WFSWriteGetFeatureOptions extends js.Object {
+trait WFSWriteGetFeatureOptions extends StObject {
   
   var bbox: js.UndefOr[Extent_] = js.native
   
@@ -46,99 +47,87 @@ object WFSWriteGetFeatureOptions {
   }
   
   @scala.inline
-  implicit class WFSWriteGetFeatureOptionsOps[Self <: WFSWriteGetFeatureOptions] (val x: Self) extends AnyVal {
+  implicit class WFSWriteGetFeatureOptionsMutableBuilder[Self <: WFSWriteGetFeatureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBbox(value: Extent_): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureNS(value: String): Self = this.set("featureNS", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setFeaturePrefix(value: String): Self = this.set("featurePrefix", value.asInstanceOf[js.Any])
+    def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureTypesVarargs(value: String*): Self = this.set("featureTypes", js.Array(value :_*))
+    def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureTypes(value: js.Array[String]): Self = this.set("featureTypes", value.asInstanceOf[js.Any])
+    def setFeatureTypes(value: js.Array[String]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: Extent_): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def setFeatureTypesVarargs(value: String*): Self = StObject.set(x, "featureTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteBbox: Self = this.set("bbox", js.undefined)
+    def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: Filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryName(value: String): Self = this.set("geometryName", value.asInstanceOf[js.Any])
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def deleteGeometryName: Self = this.set("geometryName", js.undefined)
+    def setMaxFeatures(value: Double): Self = StObject.set(x, "maxFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setMaxFeaturesUndefined: Self = StObject.set(x, "maxFeatures", js.undefined)
     
     @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
+    def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFeatures(value: Double): Self = this.set("maxFeatures", value.asInstanceOf[js.Any])
+    def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     
     @scala.inline
-    def deleteMaxFeatures: Self = this.set("maxFeatures", js.undefined)
+    def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputFormat(value: String): Self = this.set("outputFormat", value.asInstanceOf[js.Any])
+    def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
     
     @scala.inline
-    def deleteOutputFormat: Self = this.set("outputFormat", js.undefined)
+    def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
     
     @scala.inline
-    def setPropertyNamesVarargs(value: String*): Self = this.set("propertyNames", js.Array(value :_*))
+    def setResultType(value: String): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyNames(value: js.Array[String]): Self = this.set("propertyNames", value.asInstanceOf[js.Any])
+    def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
     
     @scala.inline
-    def deletePropertyNames: Self = this.set("propertyNames", js.undefined)
+    def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultType(value: String): Self = this.set("resultType", value.asInstanceOf[js.Any])
+    def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
     
     @scala.inline
-    def deleteResultType: Self = this.set("resultType", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrsName(value: String): Self = this.set("srsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrsName: Self = this.set("srsName", js.undefined)
-    
-    @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatMessagePolicyViolation extends js.Object {
+trait ChatMessagePolicyViolation extends StObject {
   
   /**
     * The action taken by the DLP provider on the message with sensitive content. Supported values are: NoneNotifySender --
@@ -49,63 +50,51 @@ object ChatMessagePolicyViolation {
   }
   
   @scala.inline
-  implicit class ChatMessagePolicyViolationOps[Self <: ChatMessagePolicyViolation] (val x: Self) extends AnyVal {
+  implicit class ChatMessagePolicyViolationMutableBuilder[Self <: ChatMessagePolicyViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDlpAction(value: NullableOption[ChatMessagePolicyViolationDlpActionTypes]): Self = StObject.set(x, "dlpAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDlpActionNull: Self = StObject.set(x, "dlpAction", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDlpActionUndefined: Self = StObject.set(x, "dlpAction", js.undefined)
     
     @scala.inline
-    def setDlpAction(value: NullableOption[ChatMessagePolicyViolationDlpActionTypes]): Self = this.set("dlpAction", value.asInstanceOf[js.Any])
+    def setJustificationText(value: NullableOption[String]): Self = StObject.set(x, "justificationText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDlpAction: Self = this.set("dlpAction", js.undefined)
+    def setJustificationTextNull: Self = StObject.set(x, "justificationText", null)
     
     @scala.inline
-    def setDlpActionNull: Self = this.set("dlpAction", null)
+    def setJustificationTextUndefined: Self = StObject.set(x, "justificationText", js.undefined)
     
     @scala.inline
-    def setJustificationText(value: NullableOption[String]): Self = this.set("justificationText", value.asInstanceOf[js.Any])
+    def setPolicyTip(value: NullableOption[ChatMessagePolicyViolationPolicyTip]): Self = StObject.set(x, "policyTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJustificationText: Self = this.set("justificationText", js.undefined)
+    def setPolicyTipNull: Self = StObject.set(x, "policyTip", null)
     
     @scala.inline
-    def setJustificationTextNull: Self = this.set("justificationText", null)
+    def setPolicyTipUndefined: Self = StObject.set(x, "policyTip", js.undefined)
     
     @scala.inline
-    def setPolicyTip(value: NullableOption[ChatMessagePolicyViolationPolicyTip]): Self = this.set("policyTip", value.asInstanceOf[js.Any])
+    def setUserAction(value: NullableOption[ChatMessagePolicyViolationUserActionTypes]): Self = StObject.set(x, "userAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolicyTip: Self = this.set("policyTip", js.undefined)
+    def setUserActionNull: Self = StObject.set(x, "userAction", null)
     
     @scala.inline
-    def setPolicyTipNull: Self = this.set("policyTip", null)
+    def setUserActionUndefined: Self = StObject.set(x, "userAction", js.undefined)
     
     @scala.inline
-    def setUserAction(value: NullableOption[ChatMessagePolicyViolationUserActionTypes]): Self = this.set("userAction", value.asInstanceOf[js.Any])
+    def setVerdictDetails(value: NullableOption[ChatMessagePolicyViolationVerdictDetailsTypes]): Self = StObject.set(x, "verdictDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserAction: Self = this.set("userAction", js.undefined)
+    def setVerdictDetailsNull: Self = StObject.set(x, "verdictDetails", null)
     
     @scala.inline
-    def setUserActionNull: Self = this.set("userAction", null)
-    
-    @scala.inline
-    def setVerdictDetails(value: NullableOption[ChatMessagePolicyViolationVerdictDetailsTypes]): Self = this.set("verdictDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerdictDetails: Self = this.set("verdictDetails", js.undefined)
-    
-    @scala.inline
-    def setVerdictDetailsNull: Self = this.set("verdictDetails", null)
+    def setVerdictDetailsUndefined: Self = StObject.set(x, "verdictDetails", js.undefined)
   }
 }

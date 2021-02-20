@@ -1,11 +1,19 @@
 package typings.reactNativeGestureHandler.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-gesture-handler", "LongPressGestureHandler")
 @js.native
-class LongPressGestureHandler ()
-  extends Component[LongPressGestureHandlerProperties, js.Object, js.Any]
+class LongPressGestureHandler protected ()
+  extends Component[LongPressGestureHandlerProperties, js.Object, js.Any] {
+  def this(props: LongPressGestureHandlerProperties) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: LongPressGestureHandlerProperties, context: js.Any) = this()
+}

@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderProps extends js.Object {
+trait OrderProps extends StObject {
   
   val order: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object OrderProps {
   }
   
   @scala.inline
-  implicit class OrderPropsOps[Self <: OrderProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrderVarargs(value: js.Any*): Self = this.set("order", js.Array(value :_*))
+  implicit class OrderPropsMutableBuilder[Self <: OrderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOrder(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
         ]
-    ): Self = this.set("order", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    @scala.inline
+    def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
   }
 }

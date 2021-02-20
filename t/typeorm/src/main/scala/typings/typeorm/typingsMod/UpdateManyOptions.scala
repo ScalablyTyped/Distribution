@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateManyOptions extends js.Object {
+trait UpdateManyOptions extends StObject {
   
   /**
     * Specify a journal write concern.
@@ -36,42 +37,30 @@ object UpdateManyOptions {
   }
   
   @scala.inline
-  implicit class UpdateManyOptionsOps[Self <: UpdateManyOptions] (val x: Self) extends AnyVal {
+  implicit class UpdateManyOptionsMutableBuilder[Self <: UpdateManyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJ(value: Boolean): Self = this.set("j", value.asInstanceOf[js.Any])
+    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     
     @scala.inline
-    def deleteJ: Self = this.set("j", js.undefined)
+    def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpsert(value: Boolean): Self = this.set("upsert", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteUpsert: Self = this.set("upsert", js.undefined)
+    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: js.Any): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
-    
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = this.set("wtimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWtimeout: Self = this.set("wtimeout", js.undefined)
+    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

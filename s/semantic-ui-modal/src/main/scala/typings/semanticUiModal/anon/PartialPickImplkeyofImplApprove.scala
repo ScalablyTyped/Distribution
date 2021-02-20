@@ -1,12 +1,13 @@
 package typings.semanticUiModal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-modal.SemanticUI.Modal.SelectorSettings._Impl, keyof semantic-ui-modal.SemanticUI.Modal.SelectorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplApprove extends js.Object {
+trait PartialPickImplkeyofImplApprove extends StObject {
   
   var approve: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object PartialPickImplkeyofImplApprove {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplApproveOps[Self <: PartialPickImplkeyofImplApprove] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplApproveMutableBuilder[Self <: PartialPickImplkeyofImplApprove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprove(value: String): Self = StObject.set(x, "approve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproveUndefined: Self = StObject.set(x, "approve", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprove(value: String): Self = this.set("approve", value.asInstanceOf[js.Any])
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteApprove: Self = this.set("approve", js.undefined)
+    def setDeny(value: String): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
-    
-    @scala.inline
-    def setDeny(value: String): Self = this.set("deny", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeny: Self = this.set("deny", js.undefined)
+    def setDenyUndefined: Self = StObject.set(x, "deny", js.undefined)
   }
 }

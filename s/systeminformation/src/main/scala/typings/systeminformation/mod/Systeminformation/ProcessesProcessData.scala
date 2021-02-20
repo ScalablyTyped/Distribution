@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessesProcessData extends js.Object {
+trait ProcessesProcessData extends StObject {
   
   var command: String = js.native
   
@@ -71,72 +72,60 @@ object ProcessesProcessData {
   }
   
   @scala.inline
-  implicit class ProcessesProcessDataOps[Self <: ProcessesProcessData] (val x: Self) extends AnyVal {
+  implicit class ProcessesProcessDataMutableBuilder[Self <: ProcessesProcessData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMem_rss(value: Double): Self = StObject.set(x, "mem_rss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMem_vsz(value: Double): Self = StObject.set(x, "mem_vsz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMem_rss(value: Double): Self = this.set("mem_rss", value.asInstanceOf[js.Any])
+    def setNice(value: Double): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMem_vsz(value: Double): Self = this.set("mem_vsz", value.asInstanceOf[js.Any])
+    def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentPid(value: Double): Self = StObject.set(x, "parentPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNice(value: Double): Self = this.set("nice", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: String): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPcpu(value: Double): Self = StObject.set(x, "pcpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentPid(value: Double): Self = this.set("parentPid", value.asInstanceOf[js.Any])
+    def setPcpus(value: Double): Self = StObject.set(x, "pcpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPcpuu(value: Double): Self = StObject.set(x, "pcpuu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcpu(value: Double): Self = this.set("pcpu", value.asInstanceOf[js.Any])
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcpus(value: Double): Self = this.set("pcpus", value.asInstanceOf[js.Any])
+    def setPmem(value: Double): Self = StObject.set(x, "pmem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcpuu(value: Double): Self = this.set("pcpuu", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
+    def setStarted(value: String): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPmem(value: Double): Self = this.set("pmem", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setTty(value: String): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarted(value: String): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTty(value: String): Self = this.set("tty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetIdentityPoolConfigurationRequest extends js.Object {
+trait SetIdentityPoolConfigurationRequest extends StObject {
   
   /**
     * Options to apply to this identity pool for Amazon Cognito streams.
@@ -31,33 +32,21 @@ object SetIdentityPoolConfigurationRequest {
   }
   
   @scala.inline
-  implicit class SetIdentityPoolConfigurationRequestOps[Self <: SetIdentityPoolConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class SetIdentityPoolConfigurationRequestMutableBuilder[Self <: SetIdentityPoolConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCognitoStreams(value: CognitoStreams): Self = StObject.set(x, "CognitoStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCognitoStreamsUndefined: Self = StObject.set(x, "CognitoStreams", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    def setPushSync(value: PushSync): Self = StObject.set(x, "PushSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCognitoStreams(value: CognitoStreams): Self = this.set("CognitoStreams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCognitoStreams: Self = this.set("CognitoStreams", js.undefined)
-    
-    @scala.inline
-    def setPushSync(value: PushSync): Self = this.set("PushSync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePushSync: Self = this.set("PushSync", js.undefined)
+    def setPushSyncUndefined: Self = StObject.set(x, "PushSync", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winjs.WinJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides helper functions for defining namespaces. For more information, see Organizing your code with WinJS.Namespace.
 **/
-@JSGlobal("WinJS.Namespace")
-@js.native
-object Namespace extends js.Object
+object Namespace

@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layout extends js.Object {
+trait Layout extends StObject {
   
   var qHyperCube: HyperCube = js.native
   
@@ -22,27 +23,15 @@ object Layout {
   }
   
   @scala.inline
-  implicit class LayoutOps[Self <: Layout] (val x: Self) extends AnyVal {
+  implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQHyperCube(value: HyperCube): Self = StObject.set(x, "qHyperCube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQInfo(value: NxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQHyperCube(value: HyperCube): Self = this.set("qHyperCube", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQInfo(value: NxInfo): Self = this.set("qInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSelectionInfo(value: Selectionobject): Self = this.set("qSelectionInfo", value.asInstanceOf[js.Any])
+    def setQSelectionInfo(value: Selectionobject): Self = StObject.set(x, "qSelectionInfo", value.asInstanceOf[js.Any])
   }
 }

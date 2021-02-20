@@ -5,35 +5,65 @@ import typings.express.mod.Application_
 import typings.expressSession.mod.SessionOptions
 import typings.node.eventsMod.EventEmitter
 import typings.socketIo.mod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("socket.io.users", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var CONNECTION_EVENTS: js.Array[String] = js.native
-  
-  var Middleware: js.Function0[js.Function2[/* socket */ Socket, /* next */ js.Function0[js.Any], Unit]] = js.native
-  
-  var Session: js.Function2[/* app */ Application_, /* options */ js.UndefOr[SessionOptions], Unit] = js.native
-  
+  @JSImport("socket.io.users", JSImport.Namespace)
   @js.native
-  class Namespaces () extends js.Object
-  /* static members */
+  val ^ : js.Any = js.native
+  
+  @JSImport("socket.io.users", "CONNECTION_EVENTS")
   @js.native
-  object Namespaces extends js.Object {
+  def CONNECTION_EVENTS: js.Array[String] = js.native
+  @scala.inline
+  def CONNECTION_EVENTS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_EVENTS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("socket.io.users", "Middleware")
+  @js.native
+  def Middleware: js.Function0[js.Function2[/* socket */ Socket, /* next */ js.Function0[js.Any], Unit]] = js.native
+  @scala.inline
+  def Middleware_=(x: js.Function0[js.Function2[/* socket */ Socket, /* next */ js.Function0[js.Any], Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Middleware")(x.asInstanceOf[js.Any])
+  
+  @JSImport("socket.io.users", "Namespaces")
+  @js.native
+  class Namespaces () extends StObject
+  object Namespaces {
     
+    @JSImport("socket.io.users", "Namespaces")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("socket.io.users", "Namespaces.attach")
+    @js.native
     def attach(namespace: String, socketUsersObj: Users): Unit = js.native
     
+    /* static member */
+    @JSImport("socket.io.users", "Namespaces.get")
+    @js.native
     def get(namespace: String): Users = js.native
     
-    var socketUsersList: js.Any = js.native
+    /* static member */
+    @JSImport("socket.io.users", "Namespaces.socketUsersList")
+    @js.native
+    def socketUsersList: js.Any = js.native
+    @scala.inline
+    def socketUsersList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("socketUsersList")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("socket.io.users", "Session")
   @js.native
-  class User () extends js.Object {
+  def Session: js.Function2[/* app */ Application_, /* options */ js.UndefOr[SessionOptions], Unit] = js.native
+  @scala.inline
+  def Session_=(x: js.Function2[/* app */ Application_, /* options */ js.UndefOr[SessionOptions], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Session")(x.asInstanceOf[js.Any])
+  
+  @JSImport("socket.io.users", "User")
+  @js.native
+  class User () extends StObject {
     
     def attach(socket: Socket): Unit = js.native
     
@@ -77,6 +107,7 @@ object mod extends js.Object {
     def to(room: String): Socket = js.native
   }
   
+  @JSImport("socket.io.users", "Users")
   @js.native
   class Users () extends EventEmitter {
     def this(namespace: String) = this()
@@ -118,11 +149,14 @@ object mod extends js.Object {
     
     var users: js.Array[User] = js.native
   }
-  /* static members */
-  @js.native
-  object Users extends js.Object {
+  object Users {
     
+    /* static member */
+    @JSImport("socket.io.users", "Users.of")
+    @js.native
     def of(): Users = js.native
+    @JSImport("socket.io.users", "Users.of")
+    @js.native
     def of(namespace: String): Users = js.native
   }
   

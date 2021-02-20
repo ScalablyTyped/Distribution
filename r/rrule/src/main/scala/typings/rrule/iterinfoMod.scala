@@ -10,16 +10,25 @@ import typings.rrule.typesMod.Frequency.MINUTELY
 import typings.rrule.typesMod.Frequency.SECONDLY
 import typings.rrule.typesMod.ParsedOptions
 import typings.rrule.yearinfoMod.YearInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rrule/dist/esm/src/iterinfo", JSImport.Namespace)
-@js.native
-object iterinfoMod extends js.Object {
+object iterinfoMod {
+  
+  @JSImport("rrule/dist/esm/src/iterinfo", JSImport.Default)
+  @js.native
+  class default protected () extends Iterinfo {
+    def this(options: ParsedOptions) = this()
+  }
+  
+  type DaySet = js.Tuple3[js.Array[Double | Null], Double, Double]
+  
+  type GetDayset = js.Function0[DaySet]
   
   @js.native
-  trait Iterinfo extends js.Object {
+  trait Iterinfo extends StObject {
     
     def ddayset(year: Double, month: Double, day: Double): js.Array[Double | (js.Array[Double | Null])] = js.native
     
@@ -75,13 +84,4 @@ object iterinfoMod extends js.Object {
     
     def yearordinal: Double = js.native
   }
-  
-  @js.native
-  class default protected () extends Iterinfo {
-    def this(options: ParsedOptions) = this()
-  }
-  
-  type DaySet = js.Tuple3[js.Array[Double | Null], Double, Double]
-  
-  type GetDayset = js.Function0[DaySet]
 }

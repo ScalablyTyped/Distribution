@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleImageOptions extends js.Object {
+trait ScaleImageOptions extends StObject {
   
   /**
     * Ignored if the current browser does not support image previews.
@@ -53,51 +54,39 @@ object ScaleImageOptions {
   }
   
   @scala.inline
-  implicit class ScaleImageOptionsOps[Self <: ScaleImageOptions] (val x: Self) extends AnyVal {
+  implicit class ScaleImageOptionsMutableBuilder[Self <: ScaleImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomResizerUndefined: Self = StObject.set(x, "customResizer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeExif(value: Boolean): Self = StObject.set(x, "includeExif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setIncludeExifUndefined: Self = StObject.set(x, "includeExif", js.undefined)
     
     @scala.inline
-    def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = this.set("customResizer", js.Any.fromFunction1(value))
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomResizer: Self = this.set("customResizer", js.undefined)
+    def setOrient(value: Boolean): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExif(value: Boolean): Self = this.set("includeExif", value.asInstanceOf[js.Any])
+    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
     @scala.inline
-    def deleteIncludeExif: Self = this.set("includeExif", js.undefined)
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrient(value: Boolean): Self = this.set("orient", value.asInstanceOf[js.Any])
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def deleteOrient: Self = this.set("orient", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

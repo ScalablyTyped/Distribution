@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsS3BucketDetails extends js.Object {
+trait AwsS3BucketDetails extends StObject {
   
   /**
     * Indicates when the S3 bucket was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
@@ -36,42 +37,30 @@ object AwsS3BucketDetails {
   }
   
   @scala.inline
-  implicit class AwsS3BucketDetailsOps[Self <: AwsS3BucketDetails] (val x: Self) extends AnyVal {
+  implicit class AwsS3BucketDetailsMutableBuilder[Self <: AwsS3BucketDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerId(value: NonEmptyString): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: NonEmptyString): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setOwnerName(value: NonEmptyString): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: NonEmptyString): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setServerSideEncryptionConfiguration(value: AwsS3BucketServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerName(value: NonEmptyString): Self = this.set("OwnerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerName: Self = this.set("OwnerName", js.undefined)
-    
-    @scala.inline
-    def setServerSideEncryptionConfiguration(value: AwsS3BucketServerSideEncryptionConfiguration): Self = this.set("ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerSideEncryptionConfiguration: Self = this.set("ServerSideEncryptionConfiguration", js.undefined)
+    def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
   }
 }

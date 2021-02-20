@@ -2,14 +2,14 @@ package typings.rxjs
 
 import typings.rxjs.typesMod.SubscriptionLike
 import typings.rxjs.typesMod.TeardownLogic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Subscription", JSImport.Namespace)
-@js.native
-object subscriptionMod extends js.Object {
+object subscriptionMod {
   
+  @JSImport("rxjs/internal/Subscription", "Subscription")
   @js.native
   /**
     * @param {function(): void} [unsubscribe] A function describing how to
@@ -55,10 +55,17 @@ object subscriptionMod extends js.Object {
     def remove(subscription: Subscription): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Subscription extends js.Object {
+  object Subscription {
+    
+    @JSImport("rxjs/internal/Subscription", "Subscription")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** @nocollapse */
-    var EMPTY: Subscription = js.native
+    @JSImport("rxjs/internal/Subscription", "Subscription.EMPTY")
+    @js.native
+    def EMPTY: Subscription = js.native
+    @scala.inline
+    def EMPTY_=(x: Subscription): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
   }
 }

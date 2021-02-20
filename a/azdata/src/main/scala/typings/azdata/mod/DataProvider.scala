@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProvider extends js.Object {
+trait DataProvider extends StObject {
   
   var handle: js.UndefOr[Double] = js.native
   
@@ -20,27 +21,15 @@ object DataProvider {
   }
   
   @scala.inline
-  implicit class DataProviderOps[Self <: DataProvider] (val x: Self) extends AnyVal {
+  implicit class DataProviderMutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandle(value: Double): Self = this.set("handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

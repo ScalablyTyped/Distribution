@@ -1,16 +1,15 @@
 package typings.marko
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/runtime/DomElement", JSImport.Namespace)
-@js.native
-object domElementMod extends js.Object {
+object domElementMod {
   
   @js.native
-  trait DomElement extends js.Object {
+  trait DomElement extends StObject {
     
     def appendTo(referenceEl: String): this.type = js.native
     def appendTo(referenceEl: Node): this.type = js.native

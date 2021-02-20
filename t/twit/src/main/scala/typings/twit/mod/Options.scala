@@ -1,5 +1,6 @@
 package typings.twit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,45 +25,33 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_only_auth(value: Boolean): Self = StObject.set(x, "app_only_auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApp_only_authUndefined: Self = StObject.set(x, "app_only_auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_only_auth(value: Boolean): Self = this.set("app_only_auth", value.asInstanceOf[js.Any])
+    def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
     
     @scala.inline
-    def deleteApp_only_auth: Self = this.set("app_only_auth", js.undefined)
+    def setTimeout_ms(value: Double): Self = StObject.set(x, "timeout_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictSSL(value: Boolean): Self = this.set("strictSSL", value.asInstanceOf[js.Any])
+    def setTimeout_msUndefined: Self = StObject.set(x, "timeout_ms", js.undefined)
     
     @scala.inline
-    def deleteStrictSSL: Self = this.set("strictSSL", js.undefined)
+    def setTrusted_cert_fingerprints(value: js.Array[String]): Self = StObject.set(x, "trusted_cert_fingerprints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout_ms(value: Double): Self = this.set("timeout_ms", value.asInstanceOf[js.Any])
+    def setTrusted_cert_fingerprintsUndefined: Self = StObject.set(x, "trusted_cert_fingerprints", js.undefined)
     
     @scala.inline
-    def deleteTimeout_ms: Self = this.set("timeout_ms", js.undefined)
-    
-    @scala.inline
-    def setTrusted_cert_fingerprintsVarargs(value: String*): Self = this.set("trusted_cert_fingerprints", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrusted_cert_fingerprints(value: js.Array[String]): Self = this.set("trusted_cert_fingerprints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrusted_cert_fingerprints: Self = this.set("trusted_cert_fingerprints", js.undefined)
+    def setTrusted_cert_fingerprintsVarargs(value: String*): Self = StObject.set(x, "trusted_cert_fingerprints", js.Array(value :_*))
   }
 }

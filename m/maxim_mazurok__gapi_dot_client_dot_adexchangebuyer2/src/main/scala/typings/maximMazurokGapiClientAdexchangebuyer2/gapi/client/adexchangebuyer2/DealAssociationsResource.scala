@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAdexchangebuyer2.anon.CreativeId
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.PageToken
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.QuotaUser
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DealAssociationsResource extends js.Object {
+trait DealAssociationsResource extends StObject {
   
   /** Associate an existing deal with a creative. */
   def add(request: CreativeId): Request[js.Object] = js.native

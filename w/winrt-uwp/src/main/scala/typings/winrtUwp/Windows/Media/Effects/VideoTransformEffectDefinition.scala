@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation
 import typings.winrtUwp.Windows.Media.Transcoding.MediaVideoProcessingAlgorithm
 import typings.winrtUwp.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a video transform effect. */
 @js.native
-trait VideoTransformEffectDefinition extends js.Object {
+trait VideoTransformEffectDefinition extends StObject {
   
   /** Gets the activatable class ID of the video transform effect definition. */
   var activatableClassId: String = js.native
@@ -57,42 +58,30 @@ object VideoTransformEffectDefinition {
   }
   
   @scala.inline
-  implicit class VideoTransformEffectDefinitionOps[Self <: VideoTransformEffectDefinition] (val x: Self) extends AnyVal {
+  implicit class VideoTransformEffectDefinitionMutableBuilder[Self <: VideoTransformEffectDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCropRectangle(value: Rect): Self = StObject.set(x, "cropRectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMirror(value: MediaMirroringOptions): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatableClassId(value: String): Self = this.set("activatableClassId", value.asInstanceOf[js.Any])
+    def setOutputSize(value: Size): Self = StObject.set(x, "outputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropRectangle(value: Rect): Self = this.set("cropRectangle", value.asInstanceOf[js.Any])
+    def setPaddingColor(value: Color): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirror(value: MediaMirroringOptions): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setProcessingAlgorithm(value: MediaVideoProcessingAlgorithm): Self = StObject.set(x, "processingAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputSize(value: Size): Self = this.set("outputSize", value.asInstanceOf[js.Any])
+    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingColor(value: Color): Self = this.set("paddingColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcessingAlgorithm(value: MediaVideoProcessingAlgorithm): Self = this.set("processingAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotation(value: MediaRotation): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setRotation(value: MediaRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
   }
 }

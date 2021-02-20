@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,93 +122,81 @@ object IgLayoutManager {
   }
   
   @scala.inline
-  implicit class IgLayoutManagerOps[Self <: IgLayoutManager] (val x: Self) extends AnyVal {
+  implicit class IgLayoutManagerMutableBuilder[Self <: IgLayoutManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderLayout(value: IgLayoutManagerBorderLayout): Self = StObject.set(x, "borderLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderLayoutUndefined: Self = StObject.set(x, "borderLayout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridLayout(value: IgLayoutManagerGridLayout): Self = StObject.set(x, "gridLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLayout(value: IgLayoutManagerBorderLayout): Self = this.set("borderLayout", value.asInstanceOf[js.Any])
+    def setGridLayoutUndefined: Self = StObject.set(x, "gridLayout", js.undefined)
     
     @scala.inline
-    def deleteBorderLayout: Self = this.set("borderLayout", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridLayout(value: IgLayoutManagerGridLayout): Self = this.set("gridLayout", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGridLayout: Self = this.set("gridLayout", js.undefined)
+    def setInternalResized(value: (/* event */ Event, /* ui */ InternalResizedEventUIParam) => Unit): Self = StObject.set(x, "internalResized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInternalResizedUndefined: Self = StObject.set(x, "internalResized", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInternalResizing(value: (/* event */ Event, /* ui */ InternalResizingEventUIParam) => Unit): Self = StObject.set(x, "internalResizing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInternalResized(value: (/* event */ Event, /* ui */ InternalResizedEventUIParam) => Unit): Self = this.set("internalResized", js.Any.fromFunction2(value))
+    def setInternalResizingUndefined: Self = StObject.set(x, "internalResizing", js.undefined)
     
     @scala.inline
-    def deleteInternalResized: Self = this.set("internalResized", js.undefined)
+    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalResizing(value: (/* event */ Event, /* ui */ InternalResizingEventUIParam) => Unit): Self = this.set("internalResizing", js.Any.fromFunction2(value))
+    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
     @scala.inline
-    def deleteInternalResizing: Self = this.set("internalResizing", js.undefined)
+    def setItemRendered(value: (/* event */ Event, /* ui */ ItemRenderedEventUIParam) => Unit): Self = StObject.set(x, "itemRendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemCount(value: Double): Self = this.set("itemCount", value.asInstanceOf[js.Any])
+    def setItemRenderedUndefined: Self = StObject.set(x, "itemRendered", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("itemCount", js.undefined)
+    def setItemRendering(value: (/* event */ Event, /* ui */ ItemRenderingEventUIParam) => Unit): Self = StObject.set(x, "itemRendering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemRendered(value: (/* event */ Event, /* ui */ ItemRenderedEventUIParam) => Unit): Self = this.set("itemRendered", js.Any.fromFunction2(value))
+    def setItemRenderingUndefined: Self = StObject.set(x, "itemRendering", js.undefined)
     
     @scala.inline
-    def deleteItemRendered: Self = this.set("itemRendered", js.undefined)
+    def setItems(value: js.Array[IgLayoutManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemRendering(value: (/* event */ Event, /* ui */ ItemRenderingEventUIParam) => Unit): Self = this.set("itemRendering", js.Any.fromFunction2(value))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteItemRendering: Self = this.set("itemRendering", js.undefined)
+    def setItemsVarargs(value: IgLayoutManagerItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: IgLayoutManagerItem*): Self = this.set("items", js.Array(value :_*))
+    def setLayoutMode(value: js.Any): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[IgLayoutManagerItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = StObject.set(x, "rendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLayoutMode(value: js.Any): Self = this.set("layoutMode", value.asInstanceOf[js.Any])
+    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
-    def deleteLayoutMode: Self = this.set("layoutMode", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = this.set("rendered", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRendered: Self = this.set("rendered", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImagePipeline extends js.Object {
+trait ImagePipeline extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline.
@@ -96,114 +97,102 @@ object ImagePipeline {
   }
   
   @scala.inline
-  implicit class ImagePipelineOps[Self <: ImagePipeline] (val x: Self) extends AnyVal {
+  implicit class ImagePipelineMutableBuilder[Self <: ImagePipeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ImageBuilderArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDateLastRun(value: DateTime): Self = StObject.set(x, "dateLastRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: DateTime): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
+    def setDateLastRunUndefined: Self = StObject.set(x, "dateLastRun", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("dateCreated", js.undefined)
+    def setDateNextRun(value: DateTime): Self = StObject.set(x, "dateNextRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateLastRun(value: DateTime): Self = this.set("dateLastRun", value.asInstanceOf[js.Any])
+    def setDateNextRunUndefined: Self = StObject.set(x, "dateNextRun", js.undefined)
     
     @scala.inline
-    def deleteDateLastRun: Self = this.set("dateLastRun", js.undefined)
+    def setDateUpdated(value: DateTime): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateNextRun(value: DateTime): Self = this.set("dateNextRun", value.asInstanceOf[js.Any])
+    def setDateUpdatedUndefined: Self = StObject.set(x, "dateUpdated", js.undefined)
     
     @scala.inline
-    def deleteDateNextRun: Self = this.set("dateNextRun", js.undefined)
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUpdated(value: DateTime): Self = this.set("dateUpdated", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDateUpdated: Self = this.set("dateUpdated", js.undefined)
+    def setDistributionConfigurationArn(value: Arn): Self = StObject.set(x, "distributionConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDistributionConfigurationArnUndefined: Self = StObject.set(x, "distributionConfigurationArn", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnhancedImageMetadataEnabled(value: NullableBoolean): Self = StObject.set(x, "enhancedImageMetadataEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionConfigurationArn(value: Arn): Self = this.set("distributionConfigurationArn", value.asInstanceOf[js.Any])
+    def setEnhancedImageMetadataEnabledUndefined: Self = StObject.set(x, "enhancedImageMetadataEnabled", js.undefined)
     
     @scala.inline
-    def deleteDistributionConfigurationArn: Self = this.set("distributionConfigurationArn", js.undefined)
+    def setImageRecipeArn(value: Arn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedImageMetadataEnabled(value: NullableBoolean): Self = this.set("enhancedImageMetadataEnabled", value.asInstanceOf[js.Any])
+    def setImageRecipeArnUndefined: Self = StObject.set(x, "imageRecipeArn", js.undefined)
     
     @scala.inline
-    def deleteEnhancedImageMetadataEnabled: Self = this.set("enhancedImageMetadataEnabled", js.undefined)
+    def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageRecipeArn(value: Arn): Self = this.set("imageRecipeArn", value.asInstanceOf[js.Any])
+    def setImageTestsConfigurationUndefined: Self = StObject.set(x, "imageTestsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteImageRecipeArn: Self = this.set("imageRecipeArn", js.undefined)
+    def setInfrastructureConfigurationArn(value: Arn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = this.set("imageTestsConfiguration", value.asInstanceOf[js.Any])
+    def setInfrastructureConfigurationArnUndefined: Self = StObject.set(x, "infrastructureConfigurationArn", js.undefined)
     
     @scala.inline
-    def deleteImageTestsConfiguration: Self = this.set("imageTestsConfiguration", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfrastructureConfigurationArn(value: Arn): Self = this.set("infrastructureConfigurationArn", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInfrastructureConfigurationArn: Self = this.set("infrastructureConfigurationArn", js.undefined)
+    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setStatus(value: PipelineStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: Schedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PipelineStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

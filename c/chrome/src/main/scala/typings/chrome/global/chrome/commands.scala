@@ -2,6 +2,7 @@ package typings.chrome.global.chrome
 
 import typings.chrome.chrome.commands.Command
 import typings.chrome.chrome.commands.CommandEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Availability: Since Chrome 25.
   * Manifest:  "commands": {...}
   */
-@JSGlobal("chrome.commands")
-@js.native
-object commands extends js.Object {
+object commands {
   
+  @JSGlobal("chrome.commands")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("chrome.commands.getAll")
+  @js.native
   def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = js.native
   
-  var onCommand: CommandEvent = js.native
+  @JSGlobal("chrome.commands.onCommand")
+  @js.native
+  def onCommand: CommandEvent = js.native
+  @scala.inline
+  def onCommand_=(x: CommandEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCommand")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgResponsiveContainerMethods extends js.Object {
+trait IgResponsiveContainerMethods extends StObject {
   
   /**
     * Adds a callback to the callback collection.
@@ -54,33 +55,21 @@ object IgResponsiveContainerMethods {
   }
   
   @scala.inline
-  implicit class IgResponsiveContainerMethodsOps[Self <: IgResponsiveContainerMethods] (val x: Self) extends AnyVal {
+  implicit class IgResponsiveContainerMethodsMutableBuilder[Self <: IgResponsiveContainerMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCallback(value: (js.Function, js.Object, Double, js.Object) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveCallback(value: Double => Unit): Self = StObject.set(x, "removeCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCallback(value: (js.Function, js.Object, Double, js.Object) => Unit): Self = this.set("addCallback", js.Any.fromFunction4(value))
+    def setStartPoller(value: () => Unit): Self = StObject.set(x, "startPoller", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveCallback(value: Double => Unit): Self = this.set("removeCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartPoller(value: () => Unit): Self = this.set("startPoller", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopPoller(value: () => Unit): Self = this.set("stopPoller", js.Any.fromFunction0(value))
+    def setStopPoller(value: () => Unit): Self = StObject.set(x, "stopPoller", js.Any.fromFunction0(value))
   }
 }

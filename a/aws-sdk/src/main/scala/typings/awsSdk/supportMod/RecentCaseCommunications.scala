@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecentCaseCommunications extends js.Object {
+trait RecentCaseCommunications extends StObject {
   
   /**
     * The five most recent communications associated with the case.
@@ -26,33 +27,21 @@ object RecentCaseCommunications {
   }
   
   @scala.inline
-  implicit class RecentCaseCommunicationsOps[Self <: RecentCaseCommunications] (val x: Self) extends AnyVal {
+  implicit class RecentCaseCommunicationsMutableBuilder[Self <: RecentCaseCommunications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommunications(value: CommunicationList): Self = StObject.set(x, "communications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommunicationsUndefined: Self = StObject.set(x, "communications", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommunicationsVarargs(value: Communication*): Self = StObject.set(x, "communications", js.Array(value :_*))
     
     @scala.inline
-    def setCommunicationsVarargs(value: Communication*): Self = this.set("communications", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommunications(value: CommunicationList): Self = this.set("communications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommunications: Self = this.set("communications", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

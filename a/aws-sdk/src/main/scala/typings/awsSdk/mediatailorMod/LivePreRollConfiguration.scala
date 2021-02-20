@@ -1,11 +1,12 @@
 package typings.awsSdk.mediatailorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LivePreRollConfiguration extends js.Object {
+trait LivePreRollConfiguration extends StObject {
   
   /**
     * The URL for the ad decision server (ADS) for pre-roll ads. This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing, you can provide a static VAST URL. The maximum length is 25,000 characters.
@@ -26,30 +27,18 @@ object LivePreRollConfiguration {
   }
   
   @scala.inline
-  implicit class LivePreRollConfigurationOps[Self <: LivePreRollConfiguration] (val x: Self) extends AnyVal {
+  implicit class LivePreRollConfigurationMutableBuilder[Self <: LivePreRollConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdDecisionServerUrl(value: string): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdDecisionServerUrlUndefined: Self = StObject.set(x, "AdDecisionServerUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDurationSeconds(value: integer): Self = StObject.set(x, "MaxDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdDecisionServerUrl(value: string): Self = this.set("AdDecisionServerUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdDecisionServerUrl: Self = this.set("AdDecisionServerUrl", js.undefined)
-    
-    @scala.inline
-    def setMaxDurationSeconds(value: integer): Self = this.set("MaxDurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDurationSeconds: Self = this.set("MaxDurationSeconds", js.undefined)
+    def setMaxDurationSecondsUndefined: Self = StObject.set(x, "MaxDurationSeconds", js.undefined)
   }
 }

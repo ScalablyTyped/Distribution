@@ -13,6 +13,7 @@ import typings.activexMsxml2.activexMsxml2Numbers.`6`
 import typings.activexMsxml2.activexMsxml2Numbers.`7`
 import typings.activexMsxml2.activexMsxml2Numbers.`8`
 import typings.activexMsxml2.activexMsxml2Numbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMsxml2.activexMsxml2Numbers.`7`
   - typings.activexMsxml2.activexMsxml2Numbers.`3`
 */
-trait DOMNodeType extends js.Object
+trait DOMNodeType extends StObject
 object DOMNodeType {
   
   @scala.inline

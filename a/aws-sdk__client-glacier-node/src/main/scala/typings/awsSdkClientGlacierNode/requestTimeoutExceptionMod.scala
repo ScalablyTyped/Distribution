@@ -1,12 +1,13 @@
 package typings.awsSdkClientGlacierNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/model/RequestTimeoutException", JSImport.Namespace)
-@js.native
-object requestTimeoutExceptionMod extends js.Object {
+object requestTimeoutExceptionMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/model/RequestTimeoutException", "RequestTimeoutException")
+  @js.native
   val RequestTimeoutException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the virtual key used to modify another keypress. For example, the Ctrl key when pressed in conjunction with another key, as in Ctrl+C. */
 @JSGlobal("Windows.System.VirtualKeyModifiers")
 @js.native
-object VirtualKeyModifiers extends js.Object {
+object VirtualKeyModifiers extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.VirtualKeyModifiers with Double] = js.native

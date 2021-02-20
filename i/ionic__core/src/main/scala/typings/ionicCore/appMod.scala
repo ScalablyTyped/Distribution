@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/app/app", JSImport.Namespace)
-@js.native
-object appMod extends js.Object {
+object appMod {
   
+  @JSImport("@ionic/core/dist/types/components/app/app", "App")
   @js.native
   class App () extends ComponentInterface {
     

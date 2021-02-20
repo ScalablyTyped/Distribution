@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MysqlExportOptions extends js.Object {
+trait MysqlExportOptions extends StObject {
   
   /** Options for exporting from MySQL. */
   var mysqlExportOptions: js.UndefOr[MasterData] = js.native
@@ -28,39 +29,27 @@ object MysqlExportOptions {
   }
   
   @scala.inline
-  implicit class MysqlExportOptionsOps[Self <: MysqlExportOptions] (val x: Self) extends AnyVal {
+  implicit class MysqlExportOptionsMutableBuilder[Self <: MysqlExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMysqlExportOptions(value: MasterData): Self = StObject.set(x, "mysqlExportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMysqlExportOptionsUndefined: Self = StObject.set(x, "mysqlExportOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaOnly(value: Boolean): Self = StObject.set(x, "schemaOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMysqlExportOptions(value: MasterData): Self = this.set("mysqlExportOptions", value.asInstanceOf[js.Any])
+    def setSchemaOnlyUndefined: Self = StObject.set(x, "schemaOnly", js.undefined)
     
     @scala.inline
-    def deleteMysqlExportOptions: Self = this.set("mysqlExportOptions", js.undefined)
+    def setTables(value: js.Array[String]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaOnly(value: Boolean): Self = this.set("schemaOnly", value.asInstanceOf[js.Any])
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
     @scala.inline
-    def deleteSchemaOnly: Self = this.set("schemaOnly", js.undefined)
-    
-    @scala.inline
-    def setTablesVarargs(value: String*): Self = this.set("tables", js.Array(value :_*))
-    
-    @scala.inline
-    def setTables(value: js.Array[String]): Self = this.set("tables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
+    def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
   }
 }

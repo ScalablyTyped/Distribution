@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Far
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,10 +32,16 @@ class PerspectiveFrustum () extends Frustum {
   
   var yOffset: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "PerspectiveFrustum")
-@js.native
-object PerspectiveFrustum extends js.Object {
+object PerspectiveFrustum {
   
-  var packedLength: Double = js.native
+  @JSImport("cesium", "PerspectiveFrustum")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "PerspectiveFrustum.packedLength")
+  @js.native
+  def packedLength: Double = js.native
+  @scala.inline
+  def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
 }

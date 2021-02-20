@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options for mail export.
   */
 @js.native
-trait SchemaMailExportOptions extends js.Object {
+trait SchemaMailExportOptions extends StObject {
   
   /**
     * The export file format.
@@ -29,30 +30,18 @@ object SchemaMailExportOptions {
   }
   
   @scala.inline
-  implicit class SchemaMailExportOptionsOps[Self <: SchemaMailExportOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaMailExportOptionsMutableBuilder[Self <: SchemaMailExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowConfidentialModeContent(value: Boolean): Self = StObject.set(x, "showConfidentialModeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFormat(value: String): Self = this.set("exportFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportFormat: Self = this.set("exportFormat", js.undefined)
-    
-    @scala.inline
-    def setShowConfidentialModeContent(value: Boolean): Self = this.set("showConfidentialModeContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowConfidentialModeContent: Self = this.set("showConfidentialModeContent", js.undefined)
+    def setShowConfidentialModeContentUndefined: Self = StObject.set(x, "showConfidentialModeContent", js.undefined)
   }
 }

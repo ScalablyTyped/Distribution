@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import typings.vsoNodeApi.distributedTaskCommonInterfacesMod.ProcessParameters
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseEnvironment extends js.Object {
+trait ReleaseEnvironment extends StObject {
   
   /**
     * Gets list of conditions.
@@ -219,147 +220,135 @@ object ReleaseEnvironment {
   }
   
   @scala.inline
-  implicit class ReleaseEnvironmentOps[Self <: ReleaseEnvironment] (val x: Self) extends AnyVal {
+  implicit class ReleaseEnvironmentMutableBuilder[Self <: ReleaseEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[ReleaseCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsVarargs(value: ReleaseCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: ReleaseCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setDefinitionEnvironmentId(value: Double): Self = StObject.set(x, "definitionEnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[ReleaseCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
     @scala.inline
-    def setDefinitionEnvironmentId(value: Double): Self = this.set("definitionEnvironmentId", value.asInstanceOf[js.Any])
+    def setDeployPhasesSnapshot(value: js.Array[DeployPhase]): Self = StObject.set(x, "deployPhasesSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = this.set("demands", js.Array(value :_*))
+    def setDeployPhasesSnapshotVarargs(value: DeployPhase*): Self = StObject.set(x, "deployPhasesSnapshot", js.Array(value :_*))
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = this.set("demands", value.asInstanceOf[js.Any])
+    def setDeploySteps(value: js.Array[DeploymentAttempt]): Self = StObject.set(x, "deploySteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployPhasesSnapshotVarargs(value: DeployPhase*): Self = this.set("deployPhasesSnapshot", js.Array(value :_*))
+    def setDeployStepsVarargs(value: DeploymentAttempt*): Self = StObject.set(x, "deploySteps", js.Array(value :_*))
     
     @scala.inline
-    def setDeployPhasesSnapshot(value: js.Array[DeployPhase]): Self = this.set("deployPhasesSnapshot", value.asInstanceOf[js.Any])
+    def setEnvironmentOptions(value: EnvironmentOptions): Self = StObject.set(x, "environmentOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployStepsVarargs(value: DeploymentAttempt*): Self = this.set("deploySteps", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploySteps(value: js.Array[DeploymentAttempt]): Self = this.set("deploySteps", value.asInstanceOf[js.Any])
+    def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentOptions(value: EnvironmentOptions): Self = this.set("environmentOptions", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNextScheduledUtcTime(value: Date): Self = StObject.set(x, "nextScheduledUtcTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedOn(value: Date): Self = this.set("modifiedOn", value.asInstanceOf[js.Any])
+    def setOwner(value: IdentityRef): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPostApprovalsSnapshot(value: ReleaseDefinitionApprovals): Self = StObject.set(x, "postApprovalsSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextScheduledUtcTime(value: Date): Self = this.set("nextScheduledUtcTime", value.asInstanceOf[js.Any])
+    def setPostDeployApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "postDeployApprovals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: IdentityRef): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPostDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "postDeployApprovals", js.Array(value :_*))
     
     @scala.inline
-    def setPostApprovalsSnapshot(value: ReleaseDefinitionApprovals): Self = this.set("postApprovalsSnapshot", value.asInstanceOf[js.Any])
+    def setPostDeploymentGatesSnapshot(value: ReleaseDefinitionGatesStep): Self = StObject.set(x, "postDeploymentGatesSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostDeployApprovalsVarargs(value: ReleaseApproval*): Self = this.set("postDeployApprovals", js.Array(value :_*))
+    def setPreApprovalsSnapshot(value: ReleaseDefinitionApprovals): Self = StObject.set(x, "preApprovalsSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostDeployApprovals(value: js.Array[ReleaseApproval]): Self = this.set("postDeployApprovals", value.asInstanceOf[js.Any])
+    def setPreDeployApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "preDeployApprovals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostDeploymentGatesSnapshot(value: ReleaseDefinitionGatesStep): Self = this.set("postDeploymentGatesSnapshot", value.asInstanceOf[js.Any])
+    def setPreDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "preDeployApprovals", js.Array(value :_*))
     
     @scala.inline
-    def setPreApprovalsSnapshot(value: ReleaseDefinitionApprovals): Self = this.set("preApprovalsSnapshot", value.asInstanceOf[js.Any])
+    def setPreDeploymentGatesSnapshot(value: ReleaseDefinitionGatesStep): Self = StObject.set(x, "preDeploymentGatesSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreDeployApprovalsVarargs(value: ReleaseApproval*): Self = this.set("preDeployApprovals", js.Array(value :_*))
+    def setProcessParameters(value: ProcessParameters): Self = StObject.set(x, "processParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreDeployApprovals(value: js.Array[ReleaseApproval]): Self = this.set("preDeployApprovals", value.asInstanceOf[js.Any])
+    def setQueueId(value: Double): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreDeploymentGatesSnapshot(value: ReleaseDefinitionGatesStep): Self = this.set("preDeploymentGatesSnapshot", value.asInstanceOf[js.Any])
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessParameters(value: ProcessParameters): Self = this.set("processParameters", value.asInstanceOf[js.Any])
+    def setRelease(value: ReleaseShallowReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueId(value: Double): Self = this.set("queueId", value.asInstanceOf[js.Any])
+    def setReleaseCreatedBy(value: IdentityRef): Self = StObject.set(x, "releaseCreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: ReleaseShallowReference): Self = this.set("release", value.asInstanceOf[js.Any])
+    def setReleaseDescription(value: String): Self = StObject.set(x, "releaseDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseCreatedBy(value: IdentityRef): Self = this.set("releaseCreatedBy", value.asInstanceOf[js.Any])
+    def setReleaseId(value: Double): Self = StObject.set(x, "releaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = this.set("releaseDefinition", value.asInstanceOf[js.Any])
+    def setScheduledDeploymentTime(value: Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDescription(value: String): Self = this.set("releaseDescription", value.asInstanceOf[js.Any])
+    def setSchedules(value: js.Array[ReleaseSchedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseId(value: Double): Self = this.set("releaseId", value.asInstanceOf[js.Any])
+    def setSchedulesVarargs(value: ReleaseSchedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
     
     @scala.inline
-    def setScheduledDeploymentTime(value: Date): Self = this.set("scheduledDeploymentTime", value.asInstanceOf[js.Any])
+    def setStatus(value: EnvironmentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedulesVarargs(value: ReleaseSchedule*): Self = this.set("schedules", js.Array(value :_*))
+    def setTimeToDeploy(value: Double): Self = StObject.set(x, "timeToDeploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedules(value: js.Array[ReleaseSchedule]): Self = this.set("schedules", value.asInstanceOf[js.Any])
+    def setTriggerReason(value: String): Self = StObject.set(x, "triggerReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: EnvironmentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setVariableGroups(value: js.Array[VariableGroup]): Self = StObject.set(x, "variableGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToDeploy(value: Double): Self = this.set("timeToDeploy", value.asInstanceOf[js.Any])
+    def setVariableGroupsVarargs(value: VariableGroup*): Self = StObject.set(x, "variableGroups", js.Array(value :_*))
     
     @scala.inline
-    def setTriggerReason(value: String): Self = this.set("triggerReason", value.asInstanceOf[js.Any])
+    def setVariables(value: StringDictionary[ConfigurationVariableValue]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariableGroupsVarargs(value: VariableGroup*): Self = this.set("variableGroups", js.Array(value :_*))
+    def setWorkflowTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "workflowTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariableGroups(value: js.Array[VariableGroup]): Self = this.set("variableGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: StringDictionary[ConfigurationVariableValue]): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflowTasksVarargs(value: WorkflowTask*): Self = this.set("workflowTasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkflowTasks(value: js.Array[WorkflowTask]): Self = this.set("workflowTasks", value.asInstanceOf[js.Any])
+    def setWorkflowTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "workflowTasks", js.Array(value :_*))
   }
 }

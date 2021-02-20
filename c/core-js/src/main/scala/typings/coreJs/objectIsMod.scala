@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/object/is", JSImport.Namespace)
-@js.native
-object objectIsMod
-  extends TopLevel[js.Function2[/* target */ js.Any, /* proto */ js.Any, Boolean]]
+object objectIsMod {
+  
+  /* was `typeof core.Object.is` */
+  @JSImport("core-js/library/fn/object/is", JSImport.Namespace)
+  @js.native
+  def apply(value1: js.Any, value2: js.Any): Boolean = js.native
+}

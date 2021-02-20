@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationEvent extends js.Object {
+trait ConfigurationEvent extends StObject {
   
   /**
     *  The details of the event in plain text. 
@@ -46,54 +47,42 @@ object ConfigurationEvent {
   }
   
   @scala.inline
-  implicit class ConfigurationEventOps[Self <: ConfigurationEvent] (val x: Self) extends AnyVal {
+  implicit class ConfigurationEventMutableBuilder[Self <: ConfigurationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventDetail(value: ConfigurationEventDetail): Self = StObject.set(x, "EventDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDetailUndefined: Self = StObject.set(x, "EventDetail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventResourceName(value: ConfigurationEventResourceName): Self = StObject.set(x, "EventResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDetail(value: ConfigurationEventDetail): Self = this.set("EventDetail", value.asInstanceOf[js.Any])
+    def setEventResourceNameUndefined: Self = StObject.set(x, "EventResourceName", js.undefined)
     
     @scala.inline
-    def deleteEventDetail: Self = this.set("EventDetail", js.undefined)
+    def setEventResourceType(value: ConfigurationEventResourceType): Self = StObject.set(x, "EventResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventResourceName(value: ConfigurationEventResourceName): Self = this.set("EventResourceName", value.asInstanceOf[js.Any])
+    def setEventResourceTypeUndefined: Self = StObject.set(x, "EventResourceType", js.undefined)
     
     @scala.inline
-    def deleteEventResourceName: Self = this.set("EventResourceName", js.undefined)
+    def setEventStatus(value: ConfigurationEventStatus): Self = StObject.set(x, "EventStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventResourceType(value: ConfigurationEventResourceType): Self = this.set("EventResourceType", value.asInstanceOf[js.Any])
+    def setEventStatusUndefined: Self = StObject.set(x, "EventStatus", js.undefined)
     
     @scala.inline
-    def deleteEventResourceType: Self = this.set("EventResourceType", js.undefined)
+    def setEventTime(value: ConfigurationEventTime): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventStatus(value: ConfigurationEventStatus): Self = this.set("EventStatus", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
     @scala.inline
-    def deleteEventStatus: Self = this.set("EventStatus", js.undefined)
+    def setMonitoredResourceARN(value: ConfigurationEventMonitoredResourceARN): Self = StObject.set(x, "MonitoredResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: ConfigurationEventTime): Self = this.set("EventTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTime: Self = this.set("EventTime", js.undefined)
-    
-    @scala.inline
-    def setMonitoredResourceARN(value: ConfigurationEventMonitoredResourceARN): Self = this.set("MonitoredResourceARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitoredResourceARN: Self = this.set("MonitoredResourceARN", js.undefined)
+    def setMonitoredResourceARNUndefined: Self = StObject.set(x, "MonitoredResourceARN", js.undefined)
   }
 }

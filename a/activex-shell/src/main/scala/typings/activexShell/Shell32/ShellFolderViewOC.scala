@@ -1,5 +1,6 @@
 package typings.activexShell.Shell32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * forwards the event to its own handler for processing.
   */
 @js.native
-trait ShellFolderViewOC extends js.Object {
+trait ShellFolderViewOC extends StObject {
   
   /** Set the ShellFolderView object to monitor events of. */
   def SetFolderView(pdisp: ShellFolderView): Unit = js.native
@@ -33,24 +34,12 @@ object ShellFolderViewOC {
   }
   
   @scala.inline
-  implicit class ShellFolderViewOCOps[Self <: ShellFolderViewOC] (val x: Self) extends AnyVal {
+  implicit class ShellFolderViewOCMutableBuilder[Self <: ShellFolderViewOC] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetFolderView(value: ShellFolderView => Unit): Self = StObject.set(x, "SetFolderView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetFolderView(value: ShellFolderView => Unit): Self = this.set("SetFolderView", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShell32DotShellFolderViewOC_typekey(value: ShellFolderViewOC): Self = this.set("Shell32.ShellFolderViewOC_typekey", value.asInstanceOf[js.Any])
+    def setShell32DotShellFolderViewOC_typekey(value: ShellFolderViewOC): Self = StObject.set(x, "Shell32.ShellFolderViewOC_typekey", value.asInstanceOf[js.Any])
   }
 }

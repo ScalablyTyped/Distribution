@@ -26,6 +26,7 @@ import typings.xregexp.xregexpStrings.w_
 import typings.xregexp.xregexpStrings.x_
 import typings.xregexp.xregexpStrings.y_
 import typings.xregexp.xregexpStrings.z_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +62,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xregexp.xregexpStrings.y_
   - typings.xregexp.xregexpStrings.z_
 */
-trait TokenFlagLOWER extends js.Object
+trait TokenFlagLOWER extends StObject
 object TokenFlagLOWER {
   
   @scala.inline

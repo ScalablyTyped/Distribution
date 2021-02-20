@@ -1,11 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait getUnderlyingDataOptions extends js.Object {
+trait getUnderlyingDataOptions extends StObject {
   
   /** Do not use aliases specified in the data source in Tableau. Default is false. */
   var ignoreAliases: js.UndefOr[Boolean] = js.native
@@ -28,39 +29,27 @@ object getUnderlyingDataOptions {
   }
   
   @scala.inline
-  implicit class getUnderlyingDataOptionsOps[Self <: getUnderlyingDataOptions] (val x: Self) extends AnyVal {
+  implicit class getUnderlyingDataOptionsMutableBuilder[Self <: getUnderlyingDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreAliasesUndefined: Self = StObject.set(x, "ignoreAliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreAllColumns(value: Boolean): Self = StObject.set(x, "ignoreAllColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
+    def setIgnoreAllColumnsUndefined: Self = StObject.set(x, "ignoreAllColumns", js.undefined)
     
     @scala.inline
-    def setIgnoreAliases(value: Boolean): Self = this.set("ignoreAliases", value.asInstanceOf[js.Any])
+    def setIgnoreSelection(value: Boolean): Self = StObject.set(x, "ignoreSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreAliases: Self = this.set("ignoreAliases", js.undefined)
+    def setIgnoreSelectionUndefined: Self = StObject.set(x, "ignoreSelection", js.undefined)
     
     @scala.inline
-    def setIgnoreAllColumns(value: Boolean): Self = this.set("ignoreAllColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreAllColumns: Self = this.set("ignoreAllColumns", js.undefined)
-    
-    @scala.inline
-    def setIgnoreSelection(value: Boolean): Self = this.set("ignoreSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreSelection: Self = this.set("ignoreSelection", js.undefined)
+    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
   }
 }

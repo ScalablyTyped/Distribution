@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of the user&#39;s name.
   */
 @js.native
-trait SchemaName extends js.Object {
+trait SchemaName extends StObject {
   
   /**
     * The user&#39;s last name.  Read-only.
@@ -35,36 +36,24 @@ object SchemaName {
   }
   
   @scala.inline
-  implicit class SchemaNameOps[Self <: SchemaName] (val x: Self) extends AnyVal {
+  implicit class SchemaNameMutableBuilder[Self <: SchemaName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
-    
-    @scala.inline
-    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintOptionStates extends js.Object
+sealed trait PrintOptionStates extends StObject
 /** Specifies the print task option states. */
 @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintOptionStates")
 @js.native
-object PrintOptionStates extends js.Object {
+object PrintOptionStates extends StObject {
   
   /** The UI for the print tasks is visible to the user. */
   @js.native

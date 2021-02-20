@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDraftsResponse extends js.Object {
+trait ListDraftsResponse extends StObject {
   
   /** List of drafts. Note that the `Message` property in each `Draft` resource only contains an `id` and a `threadId`. The messages.get method can fetch additional message details. */
   var drafts: js.UndefOr[js.Array[Draft]] = js.native
@@ -25,39 +26,27 @@ object ListDraftsResponse {
   }
   
   @scala.inline
-  implicit class ListDraftsResponseOps[Self <: ListDraftsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDraftsResponseMutableBuilder[Self <: ListDraftsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrafts(value: js.Array[Draft]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value :_*))
     
     @scala.inline
-    def setDraftsVarargs(value: Draft*): Self = this.set("drafts", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrafts(value: js.Array[Draft]): Self = this.set("drafts", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteDrafts: Self = this.set("drafts", js.undefined)
+    def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setResultSizeEstimate(value: Double): Self = this.set("resultSizeEstimate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultSizeEstimate: Self = this.set("resultSizeEstimate", js.undefined)
+    def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
   }
 }

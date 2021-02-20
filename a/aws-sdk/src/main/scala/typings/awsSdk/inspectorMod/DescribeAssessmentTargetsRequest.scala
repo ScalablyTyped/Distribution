@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAssessmentTargetsRequest extends js.Object {
+trait DescribeAssessmentTargetsRequest extends StObject {
   
   /**
     * The ARNs that specifies the assessment targets that you want to describe.
@@ -21,24 +22,12 @@ object DescribeAssessmentTargetsRequest {
   }
   
   @scala.inline
-  implicit class DescribeAssessmentTargetsRequestOps[Self <: DescribeAssessmentTargetsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAssessmentTargetsRequestMutableBuilder[Self <: DescribeAssessmentTargetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentTargetArns(value: BatchDescribeArnList): Self = StObject.set(x, "assessmentTargetArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssessmentTargetArnsVarargs(value: Arn*): Self = this.set("assessmentTargetArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssessmentTargetArns(value: BatchDescribeArnList): Self = this.set("assessmentTargetArns", value.asInstanceOf[js.Any])
+    def setAssessmentTargetArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTargetArns", js.Array(value :_*))
   }
 }

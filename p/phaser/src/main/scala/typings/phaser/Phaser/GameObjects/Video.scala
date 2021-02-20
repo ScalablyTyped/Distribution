@@ -19,6 +19,7 @@ import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Textures.TextureSource
 import typings.phaser.integer
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

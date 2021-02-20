@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/skip", JSImport.Namespace)
-@js.native
-object operatorSkipMod extends js.Object {
+object operatorSkipMod {
   
+  @JSImport("rxjs/operator/skip", "skip")
+  @js.native
   def skip[T](count: Double): js.Any = js.native
 }

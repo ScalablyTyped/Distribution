@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLHyperlinkElementUtils extends js.Object {
+trait HTMLHyperlinkElementUtils extends StObject {
   
   var hash: java.lang.String = js.native
   
@@ -50,51 +51,39 @@ object HTMLHyperlinkElementUtils {
   }
   
   @scala.inline
-  implicit class HTMLHyperlinkElementUtilsOps[Self <: HTMLHyperlinkElementUtils] (val x: Self) extends AnyVal {
+  implicit class HTMLHyperlinkElementUtilsMutableBuilder[Self <: HTMLHyperlinkElementUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: java.lang.String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: java.lang.String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostname(value: java.lang.String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: java.lang.String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHref(value: java.lang.String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: java.lang.String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setOrigin(value: java.lang.String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: java.lang.String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setPassword(value: java.lang.String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: java.lang.String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setPathname(value: java.lang.String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: java.lang.String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setPort(value: java.lang.String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: java.lang.String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setProtocol(value: java.lang.String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathname(value: java.lang.String): Self = this.set("pathname", value.asInstanceOf[js.Any])
+    def setSearch(value: java.lang.String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: java.lang.String): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: java.lang.String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: java.lang.String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: java.lang.String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: java.lang.String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

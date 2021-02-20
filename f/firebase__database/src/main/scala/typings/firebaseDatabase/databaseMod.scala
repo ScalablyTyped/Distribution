@@ -6,14 +6,14 @@ import typings.firebaseDatabase.anon.Delete
 import typings.firebaseDatabase.anon.TIMESTAMP
 import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoMod.Repo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/api/Database", JSImport.Namespace)
-@js.native
-object databaseMod extends js.Object {
+object databaseMod {
   
+  @JSImport("@firebase/database/dist/src/api/Database", "Database")
   @js.native
   class Database protected () extends FirebaseService {
     /**
@@ -83,9 +83,10 @@ object databaseMod extends js.Object {
     def useEmulator(host: String, port: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Database extends js.Object {
+  object Database {
     
+    @JSImport("@firebase/database/dist/src/api/Database", "Database.ServerValue")
+    @js.native
     val ServerValue: TIMESTAMP = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.screeps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LHO2 extends js.Object {
+trait LHO2 extends StObject {
   
   var LHO2: RangedHeal = js.native
   
@@ -22,27 +23,15 @@ object LHO2 {
   }
   
   @scala.inline
-  implicit class LHO2Ops[Self <: LHO2] (val x: Self) extends AnyVal {
+  implicit class LHO2MutableBuilder[Self <: LHO2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLHO2(value: RangedHeal): Self = StObject.set(x, "LHO2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLO(value: Heal): Self = StObject.set(x, "LO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLHO2(value: RangedHeal): Self = this.set("LHO2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLO(value: Heal): Self = this.set("LO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXLHO2(value: HealRangedHeal): Self = this.set("XLHO2", value.asInstanceOf[js.Any])
+    def setXLHO2(value: HealRangedHeal): Self = StObject.set(x, "XLHO2", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem", JSImport.Namespace)
-@js.native
-object activityItemActivityItemMod extends js.Object {
+object activityItemActivityItemMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/ActivityItem/ActivityItem", "ActivityItem")
   @js.native
   class ActivityItem protected ()
     extends Component[IActivityItemProps, js.Object, js.Any] {

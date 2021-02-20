@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILanIdentifier extends js.Object {
+trait ILanIdentifier extends StObject {
   
   var infrastructureId: LanIdentifierData = js.native
   
@@ -22,27 +23,15 @@ object ILanIdentifier {
   }
   
   @scala.inline
-  implicit class ILanIdentifierOps[Self <: ILanIdentifier] (val x: Self) extends AnyVal {
+  implicit class ILanIdentifierMutableBuilder[Self <: ILanIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfrastructureId(value: LanIdentifierData): Self = StObject.set(x, "infrastructureId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkAdapterId(value: String): Self = StObject.set(x, "networkAdapterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfrastructureId(value: LanIdentifierData): Self = this.set("infrastructureId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkAdapterId(value: String): Self = this.set("networkAdapterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortId(value: LanIdentifierData): Self = this.set("portId", value.asInstanceOf[js.Any])
+    def setPortId(value: LanIdentifierData): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
   }
 }

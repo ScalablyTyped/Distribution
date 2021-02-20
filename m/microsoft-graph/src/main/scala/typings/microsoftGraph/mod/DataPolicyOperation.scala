@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,63 +41,51 @@ object DataPolicyOperation {
   }
   
   @scala.inline
-  implicit class DataPolicyOperationOps[Self <: DataPolicyOperation] (val x: Self) extends AnyVal {
+  implicit class DataPolicyOperationMutableBuilder[Self <: DataPolicyOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
     @scala.inline
-    def setCompletedDateTime(value: NullableOption[String]): Self = this.set("completedDateTime", value.asInstanceOf[js.Any])
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompletedDateTime: Self = this.set("completedDateTime", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def setCompletedDateTimeNull: Self = this.set("completedDateTime", null)
+    def setStatus(value: NullableOption[DataPolicyOperationStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: NullableOption[DataPolicyOperationStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStorageLocation(value: NullableOption[String]): Self = StObject.set(x, "storageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStorageLocationNull: Self = StObject.set(x, "storageLocation", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStorageLocationUndefined: Self = StObject.set(x, "storageLocation", js.undefined)
     
     @scala.inline
-    def setStorageLocation(value: NullableOption[String]): Self = this.set("storageLocation", value.asInstanceOf[js.Any])
+    def setSubmittedDateTime(value: String): Self = StObject.set(x, "submittedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStorageLocation: Self = this.set("storageLocation", js.undefined)
+    def setSubmittedDateTimeUndefined: Self = StObject.set(x, "submittedDateTime", js.undefined)
     
     @scala.inline
-    def setStorageLocationNull: Self = this.set("storageLocation", null)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedDateTime(value: String): Self = this.set("submittedDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedDateTime: Self = this.set("submittedDateTime", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartitionQueryResponse extends js.Object {
+trait PartitionQueryResponse extends StObject {
   
   /**
     * A page token that may be used to request an additional set of results, up to the number specified by `partition_count` in the PartitionQuery request. If blank, there are no more
@@ -30,33 +31,21 @@ object PartitionQueryResponse {
   }
   
   @scala.inline
-  implicit class PartitionQueryResponseOps[Self <: PartitionQueryResponse] (val x: Self) extends AnyVal {
+  implicit class PartitionQueryResponseMutableBuilder[Self <: PartitionQueryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitions(value: js.Array[Cursor]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setPartitionsVarargs(value: Cursor*): Self = this.set("partitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartitions(value: js.Array[Cursor]): Self = this.set("partitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitions: Self = this.set("partitions", js.undefined)
+    def setPartitionsVarargs(value: Cursor*): Self = StObject.set(x, "partitions", js.Array(value :_*))
   }
 }

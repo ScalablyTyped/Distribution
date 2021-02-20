@@ -1,13 +1,16 @@
 package typings.grecaptcha
 
 import typings.grecaptcha.ReCaptchaV2.ReCaptcha
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var grecaptcha: ReCaptcha = js.native
+  @JSGlobal("grecaptcha")
+  @js.native
+  def grecaptcha: ReCaptcha = js.native
+  @scala.inline
+  def grecaptcha_=(x: ReCaptcha): Unit = js.Dynamic.global.updateDynamic("grecaptcha")(x.asInstanceOf[js.Any])
 }

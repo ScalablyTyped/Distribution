@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,36 +51,24 @@ object XShapeArranger {
   }
   
   @scala.inline
-  implicit class XShapeArrangerOps[Self <: XShapeArranger] (val x: Self) extends AnyVal {
+  implicit class XShapeArrangerMutableBuilder[Self <: XShapeArranger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrange(value: (XShapes, Arrangement) => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBringToFront(value: (XShapes, Double) => Unit): Self = StObject.set(x, "bringToFront", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReverseOrder(value: XShapes => Unit): Self = StObject.set(x, "reverseOrder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArrange(value: (XShapes, Arrangement) => Unit): Self = this.set("arrange", js.Any.fromFunction2(value))
+    def setSendToBack(value: (XShapes, Double) => Unit): Self = StObject.set(x, "sendToBack", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBringToFront(value: (XShapes, Double) => Unit): Self = this.set("bringToFront", js.Any.fromFunction2(value))
+    def setSetBehindShape(value: (XShapes, XShape) => Unit): Self = StObject.set(x, "setBehindShape", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReverseOrder(value: XShapes => Unit): Self = this.set("reverseOrder", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendToBack(value: (XShapes, Double) => Unit): Self = this.set("sendToBack", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetBehindShape(value: (XShapes, XShape) => Unit): Self = this.set("setBehindShape", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetInFrontOf(value: (XShapes, XShape) => Unit): Self = this.set("setInFrontOf", js.Any.fromFunction2(value))
+    def setSetInFrontOf(value: (XShapes, XShape) => Unit): Self = StObject.set(x, "setInFrontOf", js.Any.fromFunction2(value))
   }
 }

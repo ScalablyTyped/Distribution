@@ -1,6 +1,6 @@
 package typings.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +17,16 @@ trait OauthAuthenticator extends Authenticator {
     */
   def authenticateRequest(request: OauthAuthenticatorRequest): OauthAuthenticatorRequest = js.native
 }
-@JSImport("asana", "auth.OauthAuthenticator")
-@js.native
-object OauthAuthenticator extends TopLevel[OauthAuthenticatorStatic]
+object OauthAuthenticator {
+  
+  @JSImport("asana", "auth.OauthAuthenticator")
+  @js.native
+  val ^ : OauthAuthenticatorStatic = js.native
+  
+  @scala.inline
+  implicit class OauthAuthenticatorMutableBuilder[Self <: OauthAuthenticator] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAuthenticateRequest(value: OauthAuthenticatorRequest => OauthAuthenticatorRequest): Self = StObject.set(x, "authenticateRequest", js.Any.fromFunction1(value))
+  }
+}

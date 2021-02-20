@@ -1,12 +1,15 @@
 package typings.antvScale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/continuous/base", JSImport.Namespace)
-@js.native
-object continuousBaseMod extends js.Object {
+object continuousBaseMod {
+  
+  @JSImport("@antv/scale/lib/continuous/base", JSImport.Default)
+  @js.native
+  abstract class default () extends Continuous
   
   @js.native
   trait Continuous
@@ -18,7 +21,4 @@ object continuousBaseMod extends js.Object {
     
     var nice: Boolean = js.native
   }
-  
-  @js.native
-  abstract class default () extends Continuous
 }

@@ -50,6 +50,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -282,141 +283,129 @@ object ojDiagramEventMap {
   }
   
   @scala.inline
-  implicit class ojDiagramEventMapOps[Self <: ojDiagramEventMap[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojDiagramEventMap[K1, K2, D1, D2])) extends AnyVal {
+  implicit class ojDiagramEventMapMutableBuilder[Self <: ojDiagramEventMap[_, _, _, _], K1, K2, D1, D2] (val x: Self with (ojDiagramEventMap[K1, K2, D1, D2])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDisplayChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = this.set("animationOnDataChangeChanged", value.asInstanceOf[js.Any])
+    def setDndChanged(value: JetElementCustomEvent[Drop]): Self = StObject.set(x, "dndChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOnDisplayChanged(value: JetElementCustomEvent[auto | none]): Self = this.set("animationOnDisplayChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAsChanged(value: JetElementCustomEvent[String]): Self = this.set("asChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDndChanged(value: JetElementCustomEvent[Drop]): Self = this.set("dndChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpandedChanged(value: JetElementCustomEvent[KeySet[K1]]): Self = this.set("expandedChanged", value.asInstanceOf[js.Any])
+    def setExpandedChanged(value: JetElementCustomEvent[KeySet[K1]]): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFocusRendererChanged(
       value: JetElementCustomEvent[
           (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
         ]
-    ): Self = this.set("focusRendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "focusRendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiddenCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = this.set("hiddenCategoriesChanged", value.asInstanceOf[js.Any])
+    def setHiddenCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "hiddenCategoriesChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightMatchChanged(value: JetElementCustomEvent[any | all]): Self = this.set("highlightMatchChanged", value.asInstanceOf[js.Any])
+    def setHighlightMatchChanged(value: JetElementCustomEvent[any | all]): Self = StObject.set(x, "highlightMatchChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightedCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = this.set("highlightedCategoriesChanged", value.asInstanceOf[js.Any])
+    def setHighlightedCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "highlightedCategoriesChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverBehaviorChanged(value: JetElementCustomEvent[dim | none]): Self = this.set("hoverBehaviorChanged", value.asInstanceOf[js.Any])
+    def setHoverBehaviorChanged(value: JetElementCustomEvent[dim | none]): Self = StObject.set(x, "hoverBehaviorChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHoverRendererChanged(
       value: JetElementCustomEvent[
           (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
         ]
-    ): Self = this.set("hoverRendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hoverRendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutChanged(value: JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]]): Self = this.set("layoutChanged", value.asInstanceOf[js.Any])
+    def setLayoutChanged(value: JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]]): Self = StObject.set(x, "layoutChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkDataChanged(value: JetElementCustomEvent[(DataProvider[K2, D2]) | Null]): Self = this.set("linkDataChanged", value.asInstanceOf[js.Any])
+    def setLinkDataChanged(value: JetElementCustomEvent[(DataProvider[K2, D2]) | Null]): Self = StObject.set(x, "linkDataChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkHighlightModeChanged(value: JetElementCustomEvent[linkAndNodes | link]): Self = this.set("linkHighlightModeChanged", value.asInstanceOf[js.Any])
+    def setLinkHighlightModeChanged(value: JetElementCustomEvent[linkAndNodes | link]): Self = StObject.set(x, "linkHighlightModeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomChanged(value: JetElementCustomEvent[Double]): Self = this.set("maxZoomChanged", value.asInstanceOf[js.Any])
+    def setMaxZoomChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxZoomChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoomChanged(value: JetElementCustomEvent[Double]): Self = this.set("minZoomChanged", value.asInstanceOf[js.Any])
+    def setMinZoomChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "minZoomChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeDataChanged(value: JetElementCustomEvent[(DataProvider[K1, D1]) | Null]): Self = this.set("nodeDataChanged", value.asInstanceOf[js.Any])
+    def setNodeDataChanged(value: JetElementCustomEvent[(DataProvider[K1, D1]) | Null]): Self = StObject.set(x, "nodeDataChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeHighlightModeChanged(value: JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node]): Self = this.set("nodeHighlightModeChanged", value.asInstanceOf[js.Any])
+    def setNodeHighlightModeChanged(value: JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node]): Self = StObject.set(x, "nodeHighlightModeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjBeforeCollapse(value: ojBeforeCollapse): Self = this.set("ojBeforeCollapse", value.asInstanceOf[js.Any])
+    def setOjBeforeCollapse(value: ojBeforeCollapse): Self = StObject.set(x, "ojBeforeCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjBeforeExpand(value: ojBeforeExpand): Self = this.set("ojBeforeExpand", value.asInstanceOf[js.Any])
+    def setOjBeforeExpand(value: ojBeforeExpand): Self = StObject.set(x, "ojBeforeExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjCollapse(value: ojCollapse): Self = this.set("ojCollapse", value.asInstanceOf[js.Any])
+    def setOjCollapse(value: ojCollapse): Self = StObject.set(x, "ojCollapse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjExpand(value: ojExpand): Self = this.set("ojExpand", value.asInstanceOf[js.Any])
+    def setOjExpand(value: ojExpand): Self = StObject.set(x, "ojExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverviewChanged(value: JetElementCustomEvent[Halign]): Self = this.set("overviewChanged", value.asInstanceOf[js.Any])
+    def setOverviewChanged(value: JetElementCustomEvent[Halign]): Self = StObject.set(x, "overviewChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanDirectionChanged(value: JetElementCustomEvent[typings.oracleOraclejet.oracleOraclejetStrings.x | y | auto]): Self = this.set("panDirectionChanged", value.asInstanceOf[js.Any])
+    def setPanDirectionChanged(value: JetElementCustomEvent[typings.oracleOraclejet.oracleOraclejetStrings.x | y | auto]): Self = StObject.set(x, "panDirectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanningChanged(value: JetElementCustomEvent[auto | none]): Self = this.set("panningChanged", value.asInstanceOf[js.Any])
+    def setPanningChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "panningChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotedLinkBehaviorChanged(value: JetElementCustomEvent[none | full | `lazy`]): Self = this.set("promotedLinkBehaviorChanged", value.asInstanceOf[js.Any])
+    def setPromotedLinkBehaviorChanged(value: JetElementCustomEvent[none | full | `lazy`]): Self = StObject.set(x, "promotedLinkBehaviorChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRendererChanged(
       value: JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]]
-    ): Self = this.set("rendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionChanged(value: JetElementCustomEvent[js.Array[K1 | K2]]): Self = this.set("selectionChanged", value.asInstanceOf[js.Any])
+    def setSelectionChanged(value: JetElementCustomEvent[js.Array[K1 | K2]]): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionModeChanged(value: JetElementCustomEvent[single | multiple | none]): Self = this.set("selectionModeChanged", value.asInstanceOf[js.Any])
+    def setSelectionModeChanged(value: JetElementCustomEvent[single | multiple | none]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectionRendererChanged(
       value: JetElementCustomEvent[
           (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
         ]
-    ): Self = this.set("selectionRendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "selectionRendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleDefaultsChanged(value: JetElementCustomEvent[AnimationDuration]): Self = this.set("styleDefaultsChanged", value.asInstanceOf[js.Any])
+    def setStyleDefaultsChanged(value: JetElementCustomEvent[AnimationDuration]): Self = StObject.set(x, "styleDefaultsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipChanged(value: JetElementCustomEvent[`5`[K1, K2, D1, D2]]): Self = this.set("tooltipChanged", value.asInstanceOf[js.Any])
+    def setTooltipChanged(value: JetElementCustomEvent[`5`[K1, K2, D1, D2]]): Self = StObject.set(x, "tooltipChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchResponseChanged(value: JetElementCustomEvent[touchStart | auto]): Self = this.set("touchResponseChanged", value.asInstanceOf[js.Any])
+    def setTouchResponseChanged(value: JetElementCustomEvent[touchStart | auto]): Self = StObject.set(x, "touchResponseChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setZoomRendererChanged(
       value: JetElementCustomEvent[
           (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
         ]
-    ): Self = this.set("zoomRendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zoomRendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomingChanged(value: JetElementCustomEvent[auto | none]): Self = this.set("zoomingChanged", value.asInstanceOf[js.Any])
+    def setZoomingChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "zoomingChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -1,27 +1,28 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuyTradeQuoteRequest extends js.Object {
+trait BuyTradeQuoteRequest extends StObject {
   
-   // BTC
+  // BTC
   var country: js.UndefOr[String] = js.native
   
-   // 1000 - will pay fiat amount
+  // 1000 - will pay fiat amount
   var cryptoStringAmount: js.UndefOr[String] = js.native
   
-   // 0.3 - requested amount in crypto currency
+  // 0.3 - requested amount in crypto currency
   var fiatCurrency: String = js.native
   
-   // true for cryptoAmount, false for fiatAmount
+  // true for cryptoAmount, false for fiatAmount
   var fiatStringAmount: js.UndefOr[String] = js.native
   
   var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.native
   
-   // USD
+  // USD
   var receiveCurrency: String = js.native
   
   var wantCrypto: Boolean = js.native
@@ -35,51 +36,39 @@ object BuyTradeQuoteRequest {
   }
   
   @scala.inline
-  implicit class BuyTradeQuoteRequestOps[Self <: BuyTradeQuoteRequest] (val x: Self) extends AnyVal {
+  implicit class BuyTradeQuoteRequestMutableBuilder[Self <: BuyTradeQuoteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCryptoStringAmount(value: String): Self = StObject.set(x, "cryptoStringAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiatCurrency(value: String): Self = this.set("fiatCurrency", value.asInstanceOf[js.Any])
+    def setCryptoStringAmountUndefined: Self = StObject.set(x, "cryptoStringAmount", js.undefined)
     
     @scala.inline
-    def setReceiveCurrency(value: String): Self = this.set("receiveCurrency", value.asInstanceOf[js.Any])
+    def setFiatCurrency(value: String): Self = StObject.set(x, "fiatCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWantCrypto(value: Boolean): Self = this.set("wantCrypto", value.asInstanceOf[js.Any])
+    def setFiatStringAmount(value: String): Self = StObject.set(x, "fiatStringAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setFiatStringAmountUndefined: Self = StObject.set(x, "fiatStringAmount", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setPaymentMethod(value: BuyCryptoPaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoStringAmount(value: String): Self = this.set("cryptoStringAmount", value.asInstanceOf[js.Any])
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def deleteCryptoStringAmount: Self = this.set("cryptoStringAmount", js.undefined)
+    def setReceiveCurrency(value: String): Self = StObject.set(x, "receiveCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiatStringAmount(value: String): Self = this.set("fiatStringAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiatStringAmount: Self = this.set("fiatStringAmount", js.undefined)
-    
-    @scala.inline
-    def setPaymentMethod(value: BuyCryptoPaymentMethod): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setWantCrypto(value: Boolean): Self = StObject.set(x, "wantCrypto", value.asInstanceOf[js.Any])
   }
 }

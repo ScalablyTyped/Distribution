@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListContactsRequest extends js.Object {
+trait ListContactsRequest extends StObject {
   
   /**
     * End time of a contact.
@@ -56,60 +57,48 @@ object ListContactsRequest {
   }
   
   @scala.inline
-  implicit class ListContactsRequestOps[Self <: ListContactsRequest] (val x: Self) extends AnyVal {
+  implicit class ListContactsRequestMutableBuilder[Self <: ListContactsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroundStation(value: String): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroundStationUndefined: Self = StObject.set(x, "groundStation", js.undefined)
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setStatusListVarargs(value: ContactStatus*): Self = this.set("statusList", js.Array(value :_*))
+    def setMissionProfileArn(value: MissionProfileArn): Self = StObject.set(x, "missionProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusList(value: StatusList): Self = this.set("statusList", value.asInstanceOf[js.Any])
+    def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
     @scala.inline
-    def setGroundStation(value: String): Self = this.set("groundStation", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroundStation: Self = this.set("groundStation", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: Integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setSatelliteArn(value: satelliteArn): Self = StObject.set(x, "satelliteArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
     
     @scala.inline
-    def setMissionProfileArn(value: MissionProfileArn): Self = this.set("missionProfileArn", value.asInstanceOf[js.Any])
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMissionProfileArn: Self = this.set("missionProfileArn", js.undefined)
+    def setStatusList(value: StatusList): Self = StObject.set(x, "statusList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSatelliteArn(value: satelliteArn): Self = this.set("satelliteArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSatelliteArn: Self = this.set("satelliteArn", js.undefined)
+    def setStatusListVarargs(value: ContactStatus*): Self = StObject.set(x, "statusList", js.Array(value :_*))
   }
 }

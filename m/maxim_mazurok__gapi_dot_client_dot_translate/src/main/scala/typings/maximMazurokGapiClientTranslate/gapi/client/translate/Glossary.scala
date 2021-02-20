@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Glossary extends js.Object {
+trait Glossary extends StObject {
   
   /** Output only. When the glossary creation was finished. */
   var endTime: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object Glossary {
   }
   
   @scala.inline
-  implicit class GlossaryOps[Self <: Glossary] (val x: Self) extends AnyVal {
+  implicit class GlossaryMutableBuilder[Self <: Glossary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryCount(value: Double): Self = StObject.set(x, "entryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEntryCountUndefined: Self = StObject.set(x, "entryCount", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setInputConfig(value: GlossaryInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryCount(value: Double): Self = this.set("entryCount", value.asInstanceOf[js.Any])
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def deleteEntryCount: Self = this.set("entryCount", js.undefined)
+    def setLanguageCodesSet(value: LanguageCodesSet): Self = StObject.set(x, "languageCodesSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: GlossaryInputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
+    def setLanguageCodesSetUndefined: Self = StObject.set(x, "languageCodesSet", js.undefined)
     
     @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
+    def setLanguagePair(value: LanguageCodePair): Self = StObject.set(x, "languagePair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCodesSet(value: LanguageCodesSet): Self = this.set("languageCodesSet", value.asInstanceOf[js.Any])
+    def setLanguagePairUndefined: Self = StObject.set(x, "languagePair", js.undefined)
     
     @scala.inline
-    def deleteLanguageCodesSet: Self = this.set("languageCodesSet", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguagePair(value: LanguageCodePair): Self = this.set("languagePair", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLanguagePair: Self = this.set("languagePair", js.undefined)
+    def setSubmitTime(value: String): Self = StObject.set(x, "submitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSubmitTime(value: String): Self = this.set("submitTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitTime: Self = this.set("submitTime", js.undefined)
+    def setSubmitTimeUndefined: Self = StObject.set(x, "submitTime", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param height - The height of the pick buffer in pixels.
   */
 @js.native
-trait Picker extends js.Object {
+trait Picker extends StObject {
   
   /**
     * Return the list of mesh instances selected by the specified rectangle in the

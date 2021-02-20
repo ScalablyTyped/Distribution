@@ -14,12 +14,13 @@ import typings.glaze.glazeStrings.paddingTop
 import typings.glaze.glazeStrings.right
 import typings.glaze.glazeStrings.top
 import typings.glaze.glazeStrings.width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inset extends js.Object {
+trait Inset extends StObject {
   
   val inset: js.Tuple4[top, right, bottom, left] = js.native
   
@@ -55,42 +56,30 @@ object Inset {
   }
   
   @scala.inline
-  implicit class InsetOps[Self <: Inset] (val x: Self) extends AnyVal {
+  implicit class InsetMutableBuilder[Self <: Inset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInset(value: js.Tuple4[top, right, bottom, left]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsetX(value: js.Tuple2[left, right]): Self = StObject.set(x, "insetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsetY(value: js.Tuple2[top, bottom]): Self = StObject.set(x, "insetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: js.Tuple4[top, right, bottom, left]): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setMarginX(value: js.Tuple2[marginLeft, marginRight]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetX(value: js.Tuple2[left, right]): Self = this.set("insetX", value.asInstanceOf[js.Any])
+    def setMarginY(value: js.Tuple2[marginTop, marginBottom]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetY(value: js.Tuple2[top, bottom]): Self = this.set("insetY", value.asInstanceOf[js.Any])
+    def setPaddingX(value: js.Tuple2[paddingLeft, paddingRight]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginX(value: js.Tuple2[marginLeft, marginRight]): Self = this.set("marginX", value.asInstanceOf[js.Any])
+    def setPaddingY(value: js.Tuple2[paddingTop, paddingBottom]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginY(value: js.Tuple2[marginTop, marginBottom]): Self = this.set("marginY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingX(value: js.Tuple2[paddingLeft, paddingRight]): Self = this.set("paddingX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingY(value: js.Tuple2[paddingTop, paddingBottom]): Self = this.set("paddingY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: js.Tuple2[width, height]): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: js.Tuple2[width, height]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

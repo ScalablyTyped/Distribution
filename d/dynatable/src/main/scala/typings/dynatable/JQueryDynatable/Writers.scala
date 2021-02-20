@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Writers extends js.Object {
+trait Writers extends StObject {
   
   /**
     * Function that returns the cell data to be written inside the cell
@@ -98,38 +99,26 @@ object Writers {
   }
   
   @scala.inline
-  implicit class WritersOps[Self <: Writers] (val x: Self) extends AnyVal {
+  implicit class WritersMutableBuilder[Self <: Writers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_attributeWriter(value: /* record */ js.Any => _): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_attributeWriterUndefined: Self = StObject.set(x, "_attributeWriter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_cellWriter(value: (/* column */ Column, /* record */ js.Any) => String): Self = StObject.set(x, "_cellWriter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_attributeWriter(value: /* record */ js.Any => _): Self = this.set("_attributeWriter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def delete_attributeWriter: Self = this.set("_attributeWriter", js.undefined)
-    
-    @scala.inline
-    def set_cellWriter(value: (/* column */ Column, /* record */ js.Any) => String): Self = this.set("_cellWriter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def delete_cellWriter: Self = this.set("_cellWriter", js.undefined)
+    def set_cellWriterUndefined: Self = StObject.set(x, "_cellWriter", js.undefined)
     
     @scala.inline
     def set_rowWriter(
       value: (/* rowIndex */ Double, /* record */ js.Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => String
-    ): Self = this.set("_rowWriter", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "_rowWriter", js.Any.fromFunction4(value))
     
     @scala.inline
-    def delete_rowWriter: Self = this.set("_rowWriter", js.undefined)
+    def set_rowWriterUndefined: Self = StObject.set(x, "_rowWriter", js.undefined)
   }
 }

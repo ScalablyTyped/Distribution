@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTaskSetsResponse extends js.Object {
+trait DescribeTaskSetsResponse extends StObject {
   
   /**
     * Any failures associated with the call.
@@ -26,36 +27,24 @@ object DescribeTaskSetsResponse {
   }
   
   @scala.inline
-  implicit class DescribeTaskSetsResponseOps[Self <: DescribeTaskSetsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTaskSetsResponseMutableBuilder[Self <: DescribeTaskSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
     @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = this.set("failures", js.Array(value :_*))
+    def setTaskSets(value: TaskSets): Self = StObject.set(x, "taskSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailures(value: Failures): Self = this.set("failures", value.asInstanceOf[js.Any])
+    def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
     
     @scala.inline
-    def deleteFailures: Self = this.set("failures", js.undefined)
-    
-    @scala.inline
-    def setTaskSetsVarargs(value: TaskSet*): Self = this.set("taskSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaskSets(value: TaskSets): Self = this.set("taskSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskSets: Self = this.set("taskSets", js.undefined)
+    def setTaskSetsVarargs(value: TaskSet*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
   }
 }

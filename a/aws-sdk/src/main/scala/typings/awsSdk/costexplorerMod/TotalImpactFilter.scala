@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TotalImpactFilter extends js.Object {
+trait TotalImpactFilter extends StObject {
   
   /**
     *  The upper bound dollar value used in the filter. 
@@ -31,30 +32,18 @@ object TotalImpactFilter {
   }
   
   @scala.inline
-  implicit class TotalImpactFilterOps[Self <: TotalImpactFilter] (val x: Self) extends AnyVal {
+  implicit class TotalImpactFilterMutableBuilder[Self <: TotalImpactFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndValue(value: GenericDouble): Self = StObject.set(x, "EndValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndValueUndefined: Self = StObject.set(x, "EndValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumericOperator(value: NumericOperator): Self = StObject.set(x, "NumericOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericOperator(value: NumericOperator): Self = this.set("NumericOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartValue(value: GenericDouble): Self = this.set("StartValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndValue(value: GenericDouble): Self = this.set("EndValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndValue: Self = this.set("EndValue", js.undefined)
+    def setStartValue(value: GenericDouble): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
   }
 }

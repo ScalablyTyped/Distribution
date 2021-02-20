@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvertiserAdServerConfig extends js.Object {
+trait AdvertiserAdServerConfig extends StObject {
   
   /** The configuration for advertisers that use both Campaign Manager 360 (CM360) and third-party ad servers. */
   var cmHybridConfig: js.UndefOr[CmHybridConfig] = js.native
@@ -22,30 +23,18 @@ object AdvertiserAdServerConfig {
   }
   
   @scala.inline
-  implicit class AdvertiserAdServerConfigOps[Self <: AdvertiserAdServerConfig] (val x: Self) extends AnyVal {
+  implicit class AdvertiserAdServerConfigMutableBuilder[Self <: AdvertiserAdServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmHybridConfig(value: CmHybridConfig): Self = StObject.set(x, "cmHybridConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmHybridConfigUndefined: Self = StObject.set(x, "cmHybridConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThirdPartyOnlyConfig(value: ThirdPartyOnlyConfig): Self = StObject.set(x, "thirdPartyOnlyConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmHybridConfig(value: CmHybridConfig): Self = this.set("cmHybridConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCmHybridConfig: Self = this.set("cmHybridConfig", js.undefined)
-    
-    @scala.inline
-    def setThirdPartyOnlyConfig(value: ThirdPartyOnlyConfig): Self = this.set("thirdPartyOnlyConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirdPartyOnlyConfig: Self = this.set("thirdPartyOnlyConfig", js.undefined)
+    def setThirdPartyOnlyConfigUndefined: Self = StObject.set(x, "thirdPartyOnlyConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineDetail extends js.Object {
+trait PipelineDetail extends StObject {
   
   /**
     * The name of the active input attachment currently being ingested by this pipeline.
@@ -31,36 +32,24 @@ object PipelineDetail {
   }
   
   @scala.inline
-  implicit class PipelineDetailOps[Self <: PipelineDetail] (val x: Self) extends AnyVal {
+  implicit class PipelineDetailMutableBuilder[Self <: PipelineDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveInputAttachmentName(value: string): Self = StObject.set(x, "ActiveInputAttachmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveInputAttachmentNameUndefined: Self = StObject.set(x, "ActiveInputAttachmentName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveInputSwitchActionName(value: string): Self = StObject.set(x, "ActiveInputSwitchActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveInputAttachmentName(value: string): Self = this.set("ActiveInputAttachmentName", value.asInstanceOf[js.Any])
+    def setActiveInputSwitchActionNameUndefined: Self = StObject.set(x, "ActiveInputSwitchActionName", js.undefined)
     
     @scala.inline
-    def deleteActiveInputAttachmentName: Self = this.set("ActiveInputAttachmentName", js.undefined)
+    def setPipelineId(value: string): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveInputSwitchActionName(value: string): Self = this.set("ActiveInputSwitchActionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveInputSwitchActionName: Self = this.set("ActiveInputSwitchActionName", js.undefined)
-    
-    @scala.inline
-    def setPipelineId(value: string): Self = this.set("PipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineId: Self = this.set("PipelineId", js.undefined)
+    def setPipelineIdUndefined: Self = StObject.set(x, "PipelineId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftParameters extends js.Object {
+trait RedshiftParameters extends StObject {
   
   /**
     * Cluster ID. This field can be blank if the Host and Port are provided.
@@ -36,39 +37,27 @@ object RedshiftParameters {
   }
   
   @scala.inline
-  implicit class RedshiftParametersOps[Self <: RedshiftParameters] (val x: Self) extends AnyVal {
+  implicit class RedshiftParametersMutableBuilder[Self <: RedshiftParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: Database): Self = this.set("Database", value.asInstanceOf[js.Any])
+    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
     @scala.inline
-    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    def setPort(value: OptionalPort): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: Host): Self = this.set("Host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("Host", js.undefined)
-    
-    @scala.inline
-    def setPort(value: OptionalPort): Self = this.set("Port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

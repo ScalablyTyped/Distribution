@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Textmode extends js.Object
+sealed trait Textmode extends StObject
 @JSGlobal("ej.Textmode")
 @js.native
-object Textmode extends js.Object {
+object Textmode extends StObject {
   
   //When FullPath option is selected, the full path of the selected node is shown in the control.
   @js.native

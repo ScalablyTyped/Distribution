@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CordovaCompatibilityVersions extends js.Object {
+trait CordovaCompatibilityVersions extends StObject {
   
   var PUBLIC_SETTINGS: js.Any = js.native
   
@@ -26,36 +27,24 @@ object CordovaCompatibilityVersions {
   }
   
   @scala.inline
-  implicit class CordovaCompatibilityVersionsOps[Self <: CordovaCompatibilityVersions] (val x: Self) extends AnyVal {
+  implicit class CordovaCompatibilityVersionsMutableBuilder[Self <: CordovaCompatibilityVersions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCordovaCompatibilityVersions(value: js.Any): Self = StObject.set(x, "cordovaCompatibilityVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCordovaCompatibilityVersionsUndefined: Self = StObject.set(x, "cordovaCompatibilityVersions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPUBLIC_SETTINGS(value: js.Any): Self = this.set("PUBLIC_SETTINGS", value.asInstanceOf[js.Any])
+    def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setPUBLIC_SETTINGS(value: js.Any): Self = StObject.set(x, "PUBLIC_SETTINGS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifest(value: js.Any): Self = this.set("manifest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCordovaCompatibilityVersions(value: js.Any): Self = this.set("cordovaCompatibilityVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCordovaCompatibilityVersions: Self = this.set("cordovaCompatibilityVersions", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

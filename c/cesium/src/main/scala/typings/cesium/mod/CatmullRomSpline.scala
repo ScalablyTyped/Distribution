@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.FirstTangent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CatmullRomSpline")
 @js.native
-class CatmullRomSpline protected () extends js.Object {
+class CatmullRomSpline protected () extends StObject {
   def this(options: FirstTangent) = this()
   
   def evaluate(time: Double): Cartesian3 = js.native

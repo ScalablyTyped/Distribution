@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BuiltInSlicerStyle extends js.Object
+sealed trait BuiltInSlicerStyle extends StObject
 /**
   *
   * Represents a built-in slicer style.
@@ -15,7 +16,7 @@ sealed trait BuiltInSlicerStyle extends js.Object
   */
 @JSGlobal("Excel.BuiltInSlicerStyle")
 @js.native
-object BuiltInSlicerStyle extends js.Object {
+object BuiltInSlicerStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with dark shading.

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAndroidenterprise.anon.FieldsKey
 import typings.maximMazurokGapiClientAndroidenterprise.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientAndroidenterprise.anon.Oauthtoken
 import typings.maximMazurokGapiClientAndroidenterprise.anon.OauthtokenPageId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorelayoutpagesResource extends js.Object {
+trait StorelayoutpagesResource extends StObject {
   
   /** Deletes a store page. */
   def delete(): Request[Unit] = js.native

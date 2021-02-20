@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartCopyJobOutput extends js.Object {
+trait StartCopyJobOutput extends StObject {
   
   /**
     * Uniquely identifies a copy job.
@@ -26,30 +27,18 @@ object StartCopyJobOutput {
   }
   
   @scala.inline
-  implicit class StartCopyJobOutputOps[Self <: StartCopyJobOutput] (val x: Self) extends AnyVal {
+  implicit class StartCopyJobOutputMutableBuilder[Self <: StartCopyJobOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyJobId(value: String): Self = StObject.set(x, "CopyJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyJobIdUndefined: Self = StObject.set(x, "CopyJobId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyJobId(value: String): Self = this.set("CopyJobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyJobId: Self = this.set("CopyJobId", js.undefined)
-    
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
   }
 }

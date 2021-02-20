@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceRefreshWeeklySchedule extends js.Object {
+trait DataSourceRefreshWeeklySchedule extends StObject {
   
   /** Days of the week to refresh. At least one day must be specified. */
   var daysOfWeek: js.UndefOr[js.Array[String]] = js.native
@@ -22,33 +23,21 @@ object DataSourceRefreshWeeklySchedule {
   }
   
   @scala.inline
-  implicit class DataSourceRefreshWeeklyScheduleOps[Self <: DataSourceRefreshWeeklySchedule] (val x: Self) extends AnyVal {
+  implicit class DataSourceRefreshWeeklyScheduleMutableBuilder[Self <: DataSourceRefreshWeeklySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
     
     @scala.inline
-    def setDaysOfWeekVarargs(value: String*): Self = this.set("daysOfWeek", js.Array(value :_*))
+    def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysOfWeek(value: js.Array[String]): Self = this.set("daysOfWeek", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDaysOfWeek: Self = this.set("daysOfWeek", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: TimeOfDay): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

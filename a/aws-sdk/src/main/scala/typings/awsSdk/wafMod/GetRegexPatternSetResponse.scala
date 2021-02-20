@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRegexPatternSetResponse extends js.Object {
+trait GetRegexPatternSetResponse extends StObject {
   
   /**
     * Information about the RegexPatternSet that you specified in the GetRegexPatternSet request, including the identifier of the pattern set and the regular expression patterns you want AWS WAF to search for. 
@@ -21,24 +22,12 @@ object GetRegexPatternSetResponse {
   }
   
   @scala.inline
-  implicit class GetRegexPatternSetResponseOps[Self <: GetRegexPatternSetResponse] (val x: Self) extends AnyVal {
+  implicit class GetRegexPatternSetResponseMutableBuilder[Self <: GetRegexPatternSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegexPatternSet(value: RegexPatternSet): Self = StObject.set(x, "RegexPatternSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegexPatternSet(value: RegexPatternSet): Self = this.set("RegexPatternSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexPatternSet: Self = this.set("RegexPatternSet", js.undefined)
+    def setRegexPatternSetUndefined: Self = StObject.set(x, "RegexPatternSet", js.undefined)
   }
 }

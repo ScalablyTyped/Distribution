@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,54 +32,42 @@ object OfferShiftRequest {
   }
   
   @scala.inline
-  implicit class OfferShiftRequestOps[Self <: OfferShiftRequest] (val x: Self) extends AnyVal {
+  implicit class OfferShiftRequestMutableBuilder[Self <: OfferShiftRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecipientActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "recipientActionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecipientActionDateTimeNull: Self = StObject.set(x, "recipientActionDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipientActionDateTimeUndefined: Self = StObject.set(x, "recipientActionDateTime", js.undefined)
     
     @scala.inline
-    def setRecipientActionDateTime(value: NullableOption[String]): Self = this.set("recipientActionDateTime", value.asInstanceOf[js.Any])
+    def setRecipientActionMessage(value: NullableOption[String]): Self = StObject.set(x, "recipientActionMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientActionDateTime: Self = this.set("recipientActionDateTime", js.undefined)
+    def setRecipientActionMessageNull: Self = StObject.set(x, "recipientActionMessage", null)
     
     @scala.inline
-    def setRecipientActionDateTimeNull: Self = this.set("recipientActionDateTime", null)
+    def setRecipientActionMessageUndefined: Self = StObject.set(x, "recipientActionMessage", js.undefined)
     
     @scala.inline
-    def setRecipientActionMessage(value: NullableOption[String]): Self = this.set("recipientActionMessage", value.asInstanceOf[js.Any])
+    def setRecipientUserId(value: NullableOption[String]): Self = StObject.set(x, "recipientUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientActionMessage: Self = this.set("recipientActionMessage", js.undefined)
+    def setRecipientUserIdNull: Self = StObject.set(x, "recipientUserId", null)
     
     @scala.inline
-    def setRecipientActionMessageNull: Self = this.set("recipientActionMessage", null)
+    def setRecipientUserIdUndefined: Self = StObject.set(x, "recipientUserId", js.undefined)
     
     @scala.inline
-    def setRecipientUserId(value: NullableOption[String]): Self = this.set("recipientUserId", value.asInstanceOf[js.Any])
+    def setSenderShiftId(value: NullableOption[String]): Self = StObject.set(x, "senderShiftId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientUserId: Self = this.set("recipientUserId", js.undefined)
+    def setSenderShiftIdNull: Self = StObject.set(x, "senderShiftId", null)
     
     @scala.inline
-    def setRecipientUserIdNull: Self = this.set("recipientUserId", null)
-    
-    @scala.inline
-    def setSenderShiftId(value: NullableOption[String]): Self = this.set("senderShiftId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderShiftId: Self = this.set("senderShiftId", js.undefined)
-    
-    @scala.inline
-    def setSenderShiftIdNull: Self = this.set("senderShiftId", null)
+    def setSenderShiftIdUndefined: Self = StObject.set(x, "senderShiftId", js.undefined)
   }
 }

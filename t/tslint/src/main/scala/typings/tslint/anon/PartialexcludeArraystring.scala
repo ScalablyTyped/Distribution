@@ -1,12 +1,13 @@
 package typings.tslint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  exclude :std.Array<string>,   format :string}> */
 @js.native
-trait PartialexcludeArraystring extends js.Object {
+trait PartialexcludeArraystring extends StObject {
   
   var exclude: js.UndefOr[js.Array[String]] = js.native
   
@@ -21,33 +22,21 @@ object PartialexcludeArraystring {
   }
   
   @scala.inline
-  implicit class PartialexcludeArraystringOps[Self <: PartialexcludeArraystring] (val x: Self) extends AnyVal {
+  implicit class PartialexcludeArraystringMutableBuilder[Self <: PartialexcludeArraystring] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

@@ -7,6 +7,7 @@ import typings.activexMsforms.activexMsformsNumbers.`4`
 import typings.activexMsforms.activexMsformsNumbers.`5`
 import typings.activexMsforms.activexMsformsNumbers.`6`
 import typings.activexMsforms.activexMsformsNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMsforms.activexMsformsNumbers.`1`
   - typings.activexMsforms.activexMsformsNumbers.`6`
 */
-trait fmDisplayStyle extends js.Object
+trait fmDisplayStyle extends StObject
 object fmDisplayStyle {
   
   @scala.inline

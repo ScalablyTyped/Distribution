@@ -4,12 +4,13 @@ import typings.plotlyJs.anon.PartialDomain
 import typings.plotlyJs.anon.PartialLayoutAxisAnchor
 import typings.plotlyJs.plotlyJsStrings.circular
 import typings.plotlyJs.plotlyJsStrings.linear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolarLayout extends js.Object {
+trait PolarLayout extends StObject {
   
   var angularaxis: PartialLayoutAxisAnchor = js.native
   
@@ -45,48 +46,36 @@ object PolarLayout {
   }
   
   @scala.inline
-  implicit class PolarLayoutOps[Self <: PolarLayout] (val x: Self) extends AnyVal {
+  implicit class PolarLayoutMutableBuilder[Self <: PolarLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngularaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
     
     @scala.inline
-    def setAngularaxis(value: PartialLayoutAxisAnchor): Self = this.set("angularaxis", value.asInstanceOf[js.Any])
+    def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("bgcolor", js.Array(value :_*))
+    def setGridshape(value: circular | linear): Self = StObject.set(x, "gridshape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgcolor(value: Color): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    def setHole(value: Double): Self = StObject.set(x, "hole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: PartialDomain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setRadialaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridshape(value: circular | linear): Self = this.set("gridshape", value.asInstanceOf[js.Any])
+    def setSector(value: js.Array[Double]): Self = StObject.set(x, "sector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHole(value: Double): Self = this.set("hole", value.asInstanceOf[js.Any])
+    def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
     
     @scala.inline
-    def setRadialaxis(value: PartialLayoutAxisAnchor): Self = this.set("radialaxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSectorVarargs(value: Double*): Self = this.set("sector", js.Array(value :_*))
-    
-    @scala.inline
-    def setSector(value: js.Array[Double]): Self = this.set("sector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUirevision(value: String | Double): Self = this.set("uirevision", value.asInstanceOf[js.Any])
+    def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
   }
 }

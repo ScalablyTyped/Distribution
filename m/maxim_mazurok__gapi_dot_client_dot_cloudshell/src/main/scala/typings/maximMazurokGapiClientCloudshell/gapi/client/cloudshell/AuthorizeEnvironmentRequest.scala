@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudshell.gapi.client.cloudshell
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizeEnvironmentRequest extends js.Object {
+trait AuthorizeEnvironmentRequest extends StObject {
   
   /** The OAuth access token that should be sent to the environment. */
   var accessToken: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object AuthorizeEnvironmentRequest {
   }
   
   @scala.inline
-  implicit class AuthorizeEnvironmentRequestOps[Self <: AuthorizeEnvironmentRequest] (val x: Self) extends AnyVal {
+  implicit class AuthorizeEnvironmentRequestMutableBuilder[Self <: AuthorizeEnvironmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
-    
-    @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
   }
 }

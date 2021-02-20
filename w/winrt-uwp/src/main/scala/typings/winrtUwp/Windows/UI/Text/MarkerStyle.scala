@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarkerStyle extends js.Object
+sealed trait MarkerStyle extends StObject
 /** Specifies the style used to mark the item paragraphs in a list. */
 @JSGlobal("Windows.UI.Text.MarkerStyle")
 @js.native
-object MarkerStyle extends js.Object {
+object MarkerStyle extends StObject {
   
   /** The item marker is followed by a hyphen (-). */
   @js.native

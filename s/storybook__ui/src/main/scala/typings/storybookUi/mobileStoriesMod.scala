@@ -1,42 +1,68 @@
 package typings.storybookUi
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.global.JSX.Element
 import typings.storybookUi.anon.PassArgsFirst
 import typings.storybookUi.anon.PropsMobileProps
 import typings.storybookUi.mobileMod.Mobile
 import typings.storybookUi.mobileMod.MobileProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/ui/dist/components/layout/mobile.stories", JSImport.Namespace)
-@js.native
-object mobileStoriesMod extends js.Object {
+object mobileStoriesMod {
   
-  def InitialAddons(hasProps: PropsMobileProps): Element = js.native
-  
-  def InitialCanvas(hasProps: PropsMobileProps): Element = js.native
-  
-  def InitialSidebar(hasProps: PropsMobileProps): Element = js.native
-  
-  def Page(hasProps: PropsMobileProps): Element = js.native
-  
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var decorators: js.Array[js.Function1[/* args */ _, _]] = js.native
+    @JSImport("@storybook/ui/dist/components/layout/mobile.stories", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var parameters: PassArgsFirst = js.native
-    
-    var title: String = js.native
-    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "default.component")
     @js.native
     class component protected () extends Mobile {
       def this(props: MobileProps) = this()
     }
+    @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "default.component")
     @js.native
-    object component extends TopLevel[Instantiable1[/* props */ MobileProps, Mobile]]
+    def component: Instantiable1[/* props */ MobileProps, Mobile] = js.native
+    @scala.inline
+    def component_=(x: Instantiable1[/* props */ MobileProps, Mobile]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "default.decorators")
+    @js.native
+    def decorators: js.Array[js.Function1[/* args */ js.Any, js.Any]] = js.native
+    @scala.inline
+    def decorators_=(x: js.Array[js.Function1[/* args */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "default.parameters")
+    @js.native
+    def parameters: PassArgsFirst = js.native
+    @scala.inline
+    def parameters_=(x: PassArgsFirst): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "default.title")
+    @js.native
+    def title: String = js.native
+    @scala.inline
+    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "InitialAddons")
+  @js.native
+  def InitialAddons(hasProps: PropsMobileProps): Element = js.native
+  
+  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "InitialCanvas")
+  @js.native
+  def InitialCanvas(hasProps: PropsMobileProps): Element = js.native
+  
+  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "InitialSidebar")
+  @js.native
+  def InitialSidebar(hasProps: PropsMobileProps): Element = js.native
+  
+  @JSImport("@storybook/ui/dist/components/layout/mobile.stories", "Page")
+  @js.native
+  def Page(hasProps: PropsMobileProps): Element = js.native
 }

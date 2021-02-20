@@ -1,14 +1,15 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactEvents extends js.Object
+sealed trait ContactEvents extends StObject
 @JSGlobal("connect.ContactEvents")
 @js.native
-object ContactEvents extends js.Object {
+object ContactEvents extends StObject {
   
   @js.native
   sealed trait ACCEPTED extends ContactEvents

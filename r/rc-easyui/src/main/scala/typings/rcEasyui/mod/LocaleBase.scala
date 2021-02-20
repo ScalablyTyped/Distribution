@@ -1,60 +1,69 @@
 package typings.rcEasyui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "LocaleBase")
 @js.native
-class LocaleBase protected () extends js.Object {
+class LocaleBase protected () extends StObject {
   def this(args: js.Any*) = this()
   
   def t(e: js.Any, args: js.Any*): js.Any = js.native
 }
-@JSImport("rc-easyui", "LocaleBase")
-@js.native
-object LocaleBase extends js.Object {
+object LocaleBase {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "LocaleBase.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LocaleBase.contextTypes.locale
+      @JSImport("rc-easyui", "LocaleBase.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "LocaleBase.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LocaleBase.contextTypes.t
+      @JSImport("rc-easyui", "LocaleBase.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "LocaleBase.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LocaleBase.propTypes.className
+      @JSImport("rc-easyui", "LocaleBase.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "LocaleBase.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.LocaleBase.propTypes.style
+      @JSImport("rc-easyui", "LocaleBase.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

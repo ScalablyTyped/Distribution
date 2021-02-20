@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFleetSuccessItem extends js.Object {
+trait DeleteFleetSuccessItem extends StObject {
   
   /**
     * The current state of the EC2 Fleet.
@@ -31,36 +32,24 @@ object DeleteFleetSuccessItem {
   }
   
   @scala.inline
-  implicit class DeleteFleetSuccessItemOps[Self <: DeleteFleetSuccessItem] (val x: Self) extends AnyVal {
+  implicit class DeleteFleetSuccessItemMutableBuilder[Self <: DeleteFleetSuccessItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentFleetState(value: FleetStateCode): Self = StObject.set(x, "CurrentFleetState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentFleetStateUndefined: Self = StObject.set(x, "CurrentFleetState", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFleetState(value: FleetStateCode): Self = this.set("CurrentFleetState", value.asInstanceOf[js.Any])
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
     @scala.inline
-    def deleteCurrentFleetState: Self = this.set("CurrentFleetState", js.undefined)
+    def setPreviousFleetState(value: FleetStateCode): Self = StObject.set(x, "PreviousFleetState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
-    
-    @scala.inline
-    def setPreviousFleetState(value: FleetStateCode): Self = this.set("PreviousFleetState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousFleetState: Self = this.set("PreviousFleetState", js.undefined)
+    def setPreviousFleetStateUndefined: Self = StObject.set(x, "PreviousFleetState", js.undefined)
   }
 }

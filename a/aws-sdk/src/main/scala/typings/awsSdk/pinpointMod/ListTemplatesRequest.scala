@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTemplatesRequest extends js.Object {
+trait ListTemplatesRequest extends StObject {
   
   /**
     * The  string that specifies which page of results to return in a paginated response. This parameter is not supported for application, campaign, and journey metrics.
@@ -36,42 +37,30 @@ object ListTemplatesRequest {
   }
   
   @scala.inline
-  implicit class ListTemplatesRequestOps[Self <: ListTemplatesRequest] (val x: Self) extends AnyVal {
+  implicit class ListTemplatesRequestMutableBuilder[Self <: ListTemplatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setPrefix(value: string): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setTemplateType(value: string): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: string): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setTemplateType(value: string): Self = this.set("TemplateType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateType: Self = this.set("TemplateType", js.undefined)
+    def setTemplateTypeUndefined: Self = StObject.set(x, "TemplateType", js.undefined)
   }
 }

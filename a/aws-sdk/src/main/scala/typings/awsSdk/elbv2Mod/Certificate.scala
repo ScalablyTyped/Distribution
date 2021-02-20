@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificate extends js.Object {
+trait Certificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the certificate.
@@ -26,30 +27,18 @@ object Certificate {
   }
   
   @scala.inline
-  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDefault(value: Default): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
-    
-    @scala.inline
-    def setIsDefault(value: Default): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   /**
     * A blob of base64-encoded document bytes. The maximum size of a document that's provided in a blob of bytes is 5 MB. The document bytes must be in PNG or JPEG format. If you're using an AWS SDK to call Amazon Textract, you might not need to base64-encode image bytes passed using the Bytes field. 
@@ -26,30 +27,18 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytes(value: ImageBlob): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesUndefined: Self = StObject.set(x, "Bytes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: ImageBlob): Self = this.set("Bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytes: Self = this.set("Bytes", js.undefined)
-    
-    @scala.inline
-    def setS3Object(value: S3Object): Self = this.set("S3Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Object: Self = this.set("S3Object", js.undefined)
+    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

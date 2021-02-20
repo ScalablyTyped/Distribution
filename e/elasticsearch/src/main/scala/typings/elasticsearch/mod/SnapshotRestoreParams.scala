@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object SnapshotRestoreParams {
   }
   
   @scala.inline
-  implicit class SnapshotRestoreParamsOps[Self <: SnapshotRestoreParams] (val x: Self) extends AnyVal {
+  implicit class SnapshotRestoreParamsMutableBuilder[Self <: SnapshotRestoreParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: String): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: String): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
-    
-    @scala.inline
-    def setWaitForCompletion(value: Boolean): Self = this.set("waitForCompletion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForCompletion: Self = this.set("waitForCompletion", js.undefined)
+    def setWaitForCompletionUndefined: Self = StObject.set(x, "waitForCompletion", js.undefined)
   }
 }

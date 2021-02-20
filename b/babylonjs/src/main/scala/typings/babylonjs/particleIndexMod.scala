@@ -1,13 +1,13 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Particle/index", JSImport.Namespace)
-@js.native
-object particleIndexMod extends js.Object {
+object particleIndexMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Particle/index", "ParticleBlendMultiplyBlock")
   @js.native
   class ParticleBlendMultiplyBlock protected ()
     extends typings.babylonjs.particleBlendMultiplyBlockMod.ParticleBlendMultiplyBlock {
@@ -18,6 +18,7 @@ object particleIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Particle/index", "ParticleRampGradientBlock")
   @js.native
   class ParticleRampGradientBlock protected ()
     extends typings.babylonjs.particleRampGradientBlockMod.ParticleRampGradientBlock {
@@ -28,6 +29,7 @@ object particleIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Particle/index", "ParticleTextureBlock")
   @js.native
   class ParticleTextureBlock protected ()
     extends typings.babylonjs.particleTextureBlockMod.ParticleTextureBlock {

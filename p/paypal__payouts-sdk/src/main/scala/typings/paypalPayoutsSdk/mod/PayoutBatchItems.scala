@@ -9,12 +9,13 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.RETURNED
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.REVERSED
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.SUCCESS
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.UNCLAIMED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PayoutBatchItems extends js.Object {
+trait PayoutBatchItems extends StObject {
   
   var activity_id: js.UndefOr[String] = js.native
   
@@ -49,78 +50,66 @@ object PayoutBatchItems {
   }
   
   @scala.inline
-  implicit class PayoutBatchItemsOps[Self <: PayoutBatchItems] (val x: Self) extends AnyVal {
+  implicit class PayoutBatchItemsMutableBuilder[Self <: PayoutBatchItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivity_id(value: String): Self = StObject.set(x, "activity_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivity_idUndefined: Self = StObject.set(x, "activity_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrency_conversion(value: PayoutCurrencyConversion): Self = StObject.set(x, "currency_conversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayout_batch_id(value: String): Self = this.set("payout_batch_id", value.asInstanceOf[js.Any])
+    def setCurrency_conversionUndefined: Self = StObject.set(x, "currency_conversion", js.undefined)
     
     @scala.inline
-    def setPayout_item(value: PayoutItemDetail): Self = this.set("payout_item", value.asInstanceOf[js.Any])
+    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayout_item_id(value: String): Self = this.set("payout_item_id", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def setActivity_id(value: String): Self = this.set("activity_id", value.asInstanceOf[js.Any])
+    def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivity_id: Self = this.set("activity_id", js.undefined)
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setCurrency_conversion(value: PayoutCurrencyConversion): Self = this.set("currency_conversion", value.asInstanceOf[js.Any])
+    def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def deleteCurrency_conversion: Self = this.set("currency_conversion", js.undefined)
+    def setPayout_batch_id(value: String): Self = StObject.set(x, "payout_batch_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Any): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setPayout_item(value: PayoutItemDetail): Self = StObject.set(x, "payout_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setPayout_item_fee(value: Currency): Self = StObject.set(x, "payout_item_fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinksVarargs(value: LinkDescription*): Self = this.set("links", js.Array(value :_*))
+    def setPayout_item_feeUndefined: Self = StObject.set(x, "payout_item_fee", js.undefined)
     
     @scala.inline
-    def setLinks(value: js.Array[LinkDescription]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setPayout_item_id(value: String): Self = StObject.set(x, "payout_item_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setTime_processed(value: String): Self = StObject.set(x, "time_processed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayout_item_fee(value: Currency): Self = this.set("payout_item_fee", value.asInstanceOf[js.Any])
+    def setTime_processedUndefined: Self = StObject.set(x, "time_processed", js.undefined)
     
     @scala.inline
-    def deletePayout_item_fee: Self = this.set("payout_item_fee", js.undefined)
+    def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime_processed(value: String): Self = this.set("time_processed", value.asInstanceOf[js.Any])
+    def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
     
     @scala.inline
-    def deleteTime_processed: Self = this.set("time_processed", js.undefined)
+    def setTransaction_status(value: BLOCKED | FAILED | ONHOLD | PENDING | REFUNDED | RETURNED | REVERSED | SUCCESS | UNCLAIMED): Self = StObject.set(x, "transaction_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransaction_id(value: String): Self = this.set("transaction_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction_id: Self = this.set("transaction_id", js.undefined)
-    
-    @scala.inline
-    def setTransaction_status(value: BLOCKED | FAILED | ONHOLD | PENDING | REFUNDED | RETURNED | REVERSED | SUCCESS | UNCLAIMED): Self = this.set("transaction_status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction_status: Self = this.set("transaction_status", js.undefined)
+    def setTransaction_statusUndefined: Self = StObject.set(x, "transaction_status", js.undefined)
   }
 }

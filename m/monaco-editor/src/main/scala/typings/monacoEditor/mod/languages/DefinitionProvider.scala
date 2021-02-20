@@ -3,12 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.CancellationToken
 import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinitionProvider extends js.Object {
+trait DefinitionProvider extends StObject {
   
   /**
     * Provide the definition of the symbol at the given position and document.
@@ -26,23 +27,11 @@ object DefinitionProvider {
   }
   
   @scala.inline
-  implicit class DefinitionProviderOps[Self <: DefinitionProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DefinitionProviderMutableBuilder[Self <: DefinitionProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setProvideDefinition(
       value: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
-    ): Self = this.set("provideDefinition", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "provideDefinition", js.Any.fromFunction3(value))
   }
 }

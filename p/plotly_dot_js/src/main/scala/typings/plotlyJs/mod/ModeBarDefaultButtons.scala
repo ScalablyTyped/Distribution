@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.plotlyJsStrings.resetViews
   - typings.plotlyJs.plotlyJsStrings.toggleSpikelines
 */
-trait ModeBarDefaultButtons extends js.Object
+trait ModeBarDefaultButtons extends StObject
 object ModeBarDefaultButtons {
   
   @scala.inline

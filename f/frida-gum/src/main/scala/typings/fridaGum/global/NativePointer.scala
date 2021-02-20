@@ -3,6 +3,7 @@ package typings.fridaGum.global
 import typings.fridaGum.Int64
 import typings.fridaGum.NativePointerValue
 import typings.fridaGum.UInt64
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

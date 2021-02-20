@@ -3,12 +3,13 @@ package typings.googleapis.anon
 import typings.googleapis.v31Mod.dfareportingV31.SchemaDateRange
 import typings.googleapis.v31Mod.dfareportingV31.SchemaDimensionValue
 import typings.googleapis.v31Mod.dfareportingV31.SchemaSortedDimension
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityFilters extends js.Object {
+trait ActivityFilters extends StObject {
   
   var activityFilters: js.UndefOr[js.Array[SchemaDimensionValue]] = js.native
   
@@ -37,90 +38,78 @@ object ActivityFilters {
   }
   
   @scala.inline
-  implicit class ActivityFiltersOps[Self <: ActivityFilters] (val x: Self) extends AnyVal {
+  implicit class ActivityFiltersMutableBuilder[Self <: ActivityFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityFilters(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "activityFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
     
     @scala.inline
-    def setActivityFiltersVarargs(value: SchemaDimensionValue*): Self = this.set("activityFilters", js.Array(value :_*))
+    def setConversionDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityFilters(value: js.Array[SchemaDimensionValue]): Self = this.set("activityFilters", value.asInstanceOf[js.Any])
+    def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
     
     @scala.inline
-    def deleteActivityFilters: Self = this.set("activityFilters", js.undefined)
+    def setConversionDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
     
     @scala.inline
-    def setConversionDimensionsVarargs(value: SchemaSortedDimension*): Self = this.set("conversionDimensions", js.Array(value :_*))
+    def setCustomFloodlightVariables(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionDimensions(value: js.Array[SchemaSortedDimension]): Self = this.set("conversionDimensions", value.asInstanceOf[js.Any])
+    def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
     
     @scala.inline
-    def deleteConversionDimensions: Self = this.set("conversionDimensions", js.undefined)
+    def setCustomFloodlightVariablesVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
     
     @scala.inline
-    def setCustomFloodlightVariablesVarargs(value: SchemaSortedDimension*): Self = this.set("customFloodlightVariables", js.Array(value :_*))
+    def setCustomRichMediaEvents(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFloodlightVariables(value: js.Array[SchemaSortedDimension]): Self = this.set("customFloodlightVariables", value.asInstanceOf[js.Any])
+    def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
     
     @scala.inline
-    def deleteCustomFloodlightVariables: Self = this.set("customFloodlightVariables", js.undefined)
+    def setCustomRichMediaEventsVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value :_*))
     
     @scala.inline
-    def setCustomRichMediaEventsVarargs(value: SchemaDimensionValue*): Self = this.set("customRichMediaEvents", js.Array(value :_*))
+    def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRichMediaEvents(value: js.Array[SchemaDimensionValue]): Self = this.set("customRichMediaEvents", value.asInstanceOf[js.Any])
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def deleteCustomRichMediaEvents: Self = this.set("customRichMediaEvents", js.undefined)
+    def setFloodlightConfigId(value: SchemaDimensionValue): Self = StObject.set(x, "floodlightConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: SchemaDateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setFloodlightConfigIdUndefined: Self = StObject.set(x, "floodlightConfigId", js.undefined)
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightConfigId(value: SchemaDimensionValue): Self = this.set("floodlightConfigId", value.asInstanceOf[js.Any])
+    def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
     @scala.inline
-    def deleteFloodlightConfigId: Self = this.set("floodlightConfigId", js.undefined)
+    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
     @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = this.set("metricNames", js.Array(value :_*))
+    def setPerInteractionDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = this.set("metricNames", value.asInstanceOf[js.Any])
+    def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
     
     @scala.inline
-    def deleteMetricNames: Self = this.set("metricNames", js.undefined)
+    def setPerInteractionDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
     
     @scala.inline
-    def setPerInteractionDimensionsVarargs(value: SchemaSortedDimension*): Self = this.set("perInteractionDimensions", js.Array(value :_*))
+    def setReportProperties(value: ClicksLookbackWindow): Self = StObject.set(x, "reportProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerInteractionDimensions(value: js.Array[SchemaSortedDimension]): Self = this.set("perInteractionDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerInteractionDimensions: Self = this.set("perInteractionDimensions", js.undefined)
-    
-    @scala.inline
-    def setReportProperties(value: ClicksLookbackWindow): Self = this.set("reportProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportProperties: Self = this.set("reportProperties", js.undefined)
+    def setReportPropertiesUndefined: Self = StObject.set(x, "reportProperties", js.undefined)
   }
 }

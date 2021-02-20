@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Profile extends js.Object {
+trait Profile extends StObject {
   
   /**
     * Profiling end timestamp in microseconds.
@@ -43,48 +44,36 @@ object Profile {
   }
   
   @scala.inline
-  implicit class ProfileOps[Self <: Profile] (val x: Self) extends AnyVal {
+  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodes(value: js.Array[ProfileNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodesVarargs(value: ProfileNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setEndTime(value: Double): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setSamples(value: js.Array[integer]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodesVarargs(value: ProfileNode*): Self = this.set("nodes", js.Array(value :_*))
+    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
     @scala.inline
-    def setNodes(value: js.Array[ProfileNode]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setSamplesVarargs(value: integer*): Self = StObject.set(x, "samples", js.Array(value :_*))
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplesVarargs(value: integer*): Self = this.set("samples", js.Array(value :_*))
+    def setTimeDeltas(value: js.Array[integer]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamples(value: js.Array[integer]): Self = this.set("samples", value.asInstanceOf[js.Any])
+    def setTimeDeltasUndefined: Self = StObject.set(x, "timeDeltas", js.undefined)
     
     @scala.inline
-    def deleteSamples: Self = this.set("samples", js.undefined)
-    
-    @scala.inline
-    def setTimeDeltasVarargs(value: integer*): Self = this.set("timeDeltas", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimeDeltas(value: js.Array[integer]): Self = this.set("timeDeltas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeDeltas: Self = this.set("timeDeltas", js.undefined)
+    def setTimeDeltasVarargs(value: integer*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
   }
 }

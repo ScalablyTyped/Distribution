@@ -1,34 +1,30 @@
 package typings.matrixAppserviceBridge.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Age extends js.Object {
-  var age: Double = js.native
+trait Age extends StObject {
+  
+  var age: js.UndefOr[Double] = js.native
 }
-
 object Age {
+  
   @scala.inline
-  def apply(age: Double): Age = {
-    val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any])
+  def apply(): Age = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Age]
   }
-  @scala.inline
-  implicit class AgeOps[Self <: Age] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setAge(value: Double): Self = this.set("age", value.asInstanceOf[js.Any])
-  }
   
+  @scala.inline
+  implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+  }
 }
-

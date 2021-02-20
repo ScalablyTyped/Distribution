@@ -7,16 +7,16 @@ import typings.web3Core.mod.Extension
 import typings.web3Core.mod.Providers
 import typings.web3Core.mod.RLPEncodedTransaction
 import typings.web3Core.mod.TransactionConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("web3-eth-personal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("web3-eth-personal", "Personal")
   @js.native
-  class Personal () extends js.Object {
+  class Personal () extends StObject {
     def this(provider: typings.web3Core.mod.provider) = this()
     def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
     
@@ -88,11 +88,14 @@ object mod extends js.Object {
     ): js.Promise[Boolean] = js.native
   }
   /* static members */
-  @js.native
-  object Personal extends js.Object {
+  object Personal {
     
+    @JSImport("web3-eth-personal", "Personal.givenProvider")
+    @js.native
     val givenProvider: js.Any = js.native
     
+    @JSImport("web3-eth-personal", "Personal.providers")
+    @js.native
     val providers: Providers = js.native
   }
 }

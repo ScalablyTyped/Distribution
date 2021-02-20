@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InforNexusConnectorProfileCredentials extends js.Object {
+trait InforNexusConnectorProfileCredentials extends StObject {
   
   /**
     *  The Access Key portion of the credentials. 
@@ -36,30 +37,18 @@ object InforNexusConnectorProfileCredentials {
   }
   
   @scala.inline
-  implicit class InforNexusConnectorProfileCredentialsOps[Self <: InforNexusConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  implicit class InforNexusConnectorProfileCredentialsMutableBuilder[Self <: InforNexusConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: AccessKeyId): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatakey(value: Key): Self = StObject.set(x, "datakey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretAccessKey(value: Key): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: AccessKeyId): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDatakey(value: Key): Self = this.set("datakey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretAccessKey(value: Key): Self = this.set("secretAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: Username): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: Username): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

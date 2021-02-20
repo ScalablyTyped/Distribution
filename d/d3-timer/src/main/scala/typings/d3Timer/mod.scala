@@ -1,34 +1,61 @@
 package typings.d3Timer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-timer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-timer", "interval")
+  @js.native
   def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
+  @JSImport("d3-timer", "interval")
+  @js.native
   def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
+  @JSImport("d3-timer", "interval")
+  @js.native
   def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
+  @JSImport("d3-timer", "interval")
+  @js.native
   def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
   
+  @JSImport("d3-timer", "now")
+  @js.native
   def now(): Double = js.native
   
+  @JSImport("d3-timer", "timeout")
+  @js.native
   def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
+  @JSImport("d3-timer", "timeout")
+  @js.native
   def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
+  @JSImport("d3-timer", "timeout")
+  @js.native
   def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
+  @JSImport("d3-timer", "timeout")
+  @js.native
   def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
   
+  @JSImport("d3-timer", "timer")
+  @js.native
   def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = js.native
+  @JSImport("d3-timer", "timer")
+  @js.native
   def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: js.UndefOr[scala.Nothing], time: Double): Timer_ = js.native
+  @JSImport("d3-timer", "timer")
+  @js.native
   def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = js.native
+  @JSImport("d3-timer", "timer")
+  @js.native
   def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = js.native
   
+  @JSImport("d3-timer", "timerFlush")
+  @js.native
   def timerFlush(): Unit = js.native
   
   @js.native
-  trait Timer_ extends js.Object {
+  trait Timer_ extends StObject {
     
     /**
       * Restart a timer with the specified callback and optional delay and time.

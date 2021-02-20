@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResyncMFADeviceRequest extends js.Object {
+trait ResyncMFADeviceRequest extends StObject {
   
   /**
     * An authentication code emitted by the device. The format for this parameter is a sequence of six digits.
@@ -41,30 +42,18 @@ object ResyncMFADeviceRequest {
   }
   
   @scala.inline
-  implicit class ResyncMFADeviceRequestOps[Self <: ResyncMFADeviceRequest] (val x: Self) extends AnyVal {
+  implicit class ResyncMFADeviceRequestMutableBuilder[Self <: ResyncMFADeviceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationCode1(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationCode2(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationCode1(value: authenticationCodeType): Self = this.set("AuthenticationCode1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthenticationCode2(value: authenticationCodeType): Self = this.set("AuthenticationCode2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

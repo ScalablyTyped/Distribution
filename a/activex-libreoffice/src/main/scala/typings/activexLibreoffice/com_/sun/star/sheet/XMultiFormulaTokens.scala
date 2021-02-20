@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that is outside the allowed index range, the implementation shall return an {@link com.sun.star.lang.IndexOutOfBoundsException} .
   */
 @js.native
-trait XMultiFormulaTokens extends js.Object {
+trait XMultiFormulaTokens extends StObject {
   
   /**
     * returns the number of formulas allowed in this formula token set.
@@ -54,30 +55,18 @@ object XMultiFormulaTokens {
   }
   
   @scala.inline
-  implicit class XMultiFormulaTokensOps[Self <: XMultiFormulaTokens] (val x: Self) extends AnyVal {
+  implicit class XMultiFormulaTokensMutableBuilder[Self <: XMultiFormulaTokens] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTokens(value: Double => SafeArray[FormulaToken]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTokens(value: Double => SafeArray[FormulaToken]): Self = this.set("getTokens", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTokens(value: (Double, SeqEquiv[FormulaToken]) => Unit): Self = this.set("setTokens", js.Any.fromFunction2(value))
+    def setSetTokens(value: (Double, SeqEquiv[FormulaToken]) => Unit): Self = StObject.set(x, "setTokens", js.Any.fromFunction2(value))
   }
 }

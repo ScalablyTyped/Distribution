@@ -1,14 +1,14 @@
 package typings.hyperlorisTyson
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hyperloris/tyson/dist/types/exceptions/deserializationError", JSImport.Namespace)
-@js.native
-object deserializationErrorMod extends js.Object {
+object deserializationErrorMod {
   
+  @JSImport("@hyperloris/tyson/dist/types/exceptions/deserializationError", "DeserializationError")
   @js.native
   class DeserializationError () extends Error {
     def this(message: String) = this()

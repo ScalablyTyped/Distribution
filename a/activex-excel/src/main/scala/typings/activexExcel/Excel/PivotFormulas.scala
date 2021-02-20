@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotFormulas extends js.Object {
+trait PivotFormulas extends StObject {
   
   def apply(Index: String): PivotFormula = js.native
   def apply(Index: Double): PivotFormula = js.native

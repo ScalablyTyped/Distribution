@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientChat.gapi.client.chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyValue extends js.Object {
+trait KeyValue extends StObject {
   
   /** The text of the bottom label. Formatted text supported. */
   var bottomLabel: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object KeyValue {
   }
   
   @scala.inline
-  implicit class KeyValueOps[Self <: KeyValue] (val x: Self) extends AnyVal {
+  implicit class KeyValueMutableBuilder[Self <: KeyValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomLabelUndefined: Self = StObject.set(x, "bottomLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomLabel(value: String): Self = this.set("bottomLabel", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteBottomLabel: Self = this.set("bottomLabel", js.undefined)
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Button): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setContentMultiline(value: Boolean): Self = StObject.set(x, "contentMultiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setContentMultilineUndefined: Self = StObject.set(x, "contentMultiline", js.undefined)
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentMultiline(value: Boolean): Self = this.set("contentMultiline", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteContentMultiline: Self = this.set("contentMultiline", js.undefined)
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setOnClick(value: OnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    def setTopLabel(value: String): Self = StObject.set(x, "topLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: OnClick): Self = this.set("onClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
-    
-    @scala.inline
-    def setTopLabel(value: String): Self = this.set("topLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopLabel: Self = this.set("topLabel", js.undefined)
+    def setTopLabelUndefined: Self = StObject.set(x, "topLabel", js.undefined)
   }
 }

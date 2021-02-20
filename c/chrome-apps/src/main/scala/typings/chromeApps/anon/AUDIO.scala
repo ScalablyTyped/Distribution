@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.audio_
 import typings.chromeApps.chromeAppsStrings.screen_
 import typings.chromeApps.chromeAppsStrings.tab_
 import typings.chromeApps.chromeAppsStrings.window_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AUDIO extends js.Object {
+trait AUDIO extends StObject {
   
   var AUDIO: audio_ = js.native
   
@@ -28,30 +29,18 @@ object AUDIO {
   }
   
   @scala.inline
-  implicit class AUDIOOps[Self <: AUDIO] (val x: Self) extends AnyVal {
+  implicit class AUDIOMutableBuilder[Self <: AUDIO] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAUDIO(value: audio_): Self = StObject.set(x, "AUDIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSCREEN(value: screen_): Self = StObject.set(x, "SCREEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTAB(value: tab_): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUDIO(value: audio_): Self = this.set("AUDIO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSCREEN(value: screen_): Self = this.set("SCREEN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTAB(value: tab_): Self = this.set("TAB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWINDOW(value: window_): Self = this.set("WINDOW", value.asInstanceOf[js.Any])
+    def setWINDOW(value: window_): Self = StObject.set(x, "WINDOW", value.asInstanceOf[js.Any])
   }
 }

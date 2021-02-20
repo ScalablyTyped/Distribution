@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotDataSourceMeasureOptions extends js.Object {
+trait PivotDataSourceMeasureOptions extends StObject {
   
   var axis: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object PivotDataSourceMeasureOptions {
   }
   
   @scala.inline
-  implicit class PivotDataSourceMeasureOptionsOps[Self <: PivotDataSourceMeasureOptions] (val x: Self) extends AnyVal {
+  implicit class PivotDataSourceMeasureOptionsMutableBuilder[Self <: PivotDataSourceMeasureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

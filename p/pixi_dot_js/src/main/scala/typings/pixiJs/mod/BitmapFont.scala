@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pixiJs.PIXI.IBitmapFontOptions
 import typings.pixiJs.anon.Chars
 import typings.std.XMLDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,7 @@ class BitmapFont protected ()
   def this(data: typings.pixiJs.PIXI.BitmapFontData, textures: js.Array[typings.pixiJs.PIXI.Texture]) = this()
   def this(data: typings.pixiJs.PIXI.BitmapFontData, textures: StringDictionary[typings.pixiJs.PIXI.Texture]) = this()
 }
-/* static members */
-@JSImport("pixi.js", "BitmapFont")
-@js.native
-object BitmapFont extends js.Object {
+object BitmapFont {
   
   /**
     * This character set includes all the letters in the alphabet (both lower- and upper- case).
@@ -35,6 +33,9 @@ object BitmapFont extends js.Object {
     * @example
     * BitmapFont.from("ExampleFont", style, { chars: BitmapFont.ALPHA })
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.ALPHA")
+  @js.native
   val ALPHA: js.Array[js.Array[String]] = js.native
   
   /**
@@ -43,6 +44,9 @@ object BitmapFont extends js.Object {
     * @static
     * @member {string[][]}
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.ALPHANUMERIC")
+  @js.native
   val ALPHANUMERIC: js.Array[js.Array[String]] = js.native
   
   /**
@@ -52,6 +56,9 @@ object BitmapFont extends js.Object {
     * @member {string[][]}
     * @see http://www.asciitable.com/
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.ASCII")
+  @js.native
   val ASCII: js.Array[js.Array[String]] = js.native
   
   /**
@@ -62,16 +69,10 @@ object BitmapFont extends js.Object {
     * @example
     * BitmapFont.from("ExampleFont", style, { chars: BitmapFont.NUMERIC })
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.NUMERIC")
+  @js.native
   val NUMERIC: js.Array[js.Array[String]] = js.native
-  
-  /**
-    * Collection of available/installed fonts.
-    *
-    * @readonly
-    * @static
-    * @member {Object.<string, PIXI.BitmapFont>}
-    */
-  val available: StringDictionary[typings.pixiJs.PIXI.BitmapFont] = js.native
   
   /**
     * Collection of default options when using `BitmapFont.from`.
@@ -85,6 +86,9 @@ object BitmapFont extends js.Object {
     * @property {number} padding=4
     * @property {string|string[]|string[][]} chars=PIXI.BitmapFont.ALPHANUMERIC
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.defaultOptions")
+  @js.native
   val defaultOptions: IBitmapFontOptions = js.native
   
   /**
@@ -131,19 +135,46 @@ object BitmapFont extends js.Object {
     *
     * const title = new PIXI.BitmapText("This is the title", { fontName: "TitleFont" });
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.from")
+  @js.native
   def from(name: String): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.from")
+  @js.native
   def from(name: String, style: js.UndefOr[scala.Nothing], options: Chars): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.from")
+  @js.native
   def from(name: String, style: js.Any): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.from")
+  @js.native
   def from(name: String, style: js.Any, options: Chars): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.from")
+  @js.native
   def from(name: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.from")
+  @js.native
   def from(name: String, style: typings.pixiJs.PIXI.TextStyle, options: Chars): typings.pixiJs.PIXI.BitmapFont = js.native
   
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: String, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: String, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: String, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: XMLDocument, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = js.native
   /**
     * Register a new bitmap font.
@@ -156,7 +187,12 @@ object BitmapFont extends js.Object {
     * @return {PIXI.BitmapFont} Result font object with font, size, lineHeight
     *         and char fields.
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: XMLDocument, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = js.native
+  @JSImport("pixi.js", "BitmapFont.install")
+  @js.native
   def install(data: XMLDocument, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = js.native
   
   /**
@@ -165,5 +201,18 @@ object BitmapFont extends js.Object {
     * @static
     * @param {string} name
     */
+  /* static member */
+  @JSImport("pixi.js", "BitmapFont.uninstall")
+  @js.native
   def uninstall(name: String): Unit = js.native
+  
+  /**
+    * Collection of available/installed fonts.
+    *
+    * @readonly
+    * @static
+    * @member {Object.<string, PIXI.BitmapFont>}
+    */
+  /* static member */
+  object available
 }

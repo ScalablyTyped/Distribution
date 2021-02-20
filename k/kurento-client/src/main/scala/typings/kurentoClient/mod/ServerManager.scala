@@ -4,12 +4,13 @@ import typings.kurentoClient.anon.EventObjectCreatedobjects
 import typings.kurentoClient.anon.EventObjectDestroyedobjec
 import typings.kurentoClient.kurentoClientStrings.ObjectCreated
 import typings.kurentoClient.kurentoClientStrings.ObjectDestroyed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerManager extends js.Object {
+trait ServerManager extends StObject {
   
   def getChildren(): js.Promise[MediaObject] = js.native
   def getChildren(callback: Callback[MediaObject]): js.Promise[MediaObject] = js.native
@@ -34,7 +35,7 @@ trait ServerManager extends js.Object {
   
   @JSName("on")
   def on_ObjectCreated(event: ObjectCreated, callback: js.Function1[/* event */ EventObjectCreatedobjects, Unit]): ServerManager = js.native
-   // `object` is actually string while the doc says it's `MediaObject` (https://doc-kurento.readthedocs.io/en/stable/_static/client-jsdoc/module-core.html#event:ObjectCreated).
+  // `object` is actually string while the doc says it's `MediaObject` (https://doc-kurento.readthedocs.io/en/stable/_static/client-jsdoc/module-core.html#event:ObjectCreated).
   @JSName("on")
   def on_ObjectDestroyed(event: ObjectDestroyed, callback: js.Function1[/* event */ EventObjectDestroyedobjec, Unit]): ServerManager = js.native
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoXmlStats extends js.Object {
+trait IGeoXmlStats extends StObject {
   
   /** The number of characters in the XML feed. */
   var fileSize: Double = js.native
@@ -53,45 +54,33 @@ object IGeoXmlStats {
   }
   
   @scala.inline
-  implicit class IGeoXmlStatsOps[Self <: IGeoXmlStats] (val x: Self) extends AnyVal {
+  implicit class IGeoXmlStatsMutableBuilder[Self <: IGeoXmlStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumGroundOverlays(value: Double): Self = StObject.set(x, "numGroundOverlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumLocations(value: Double): Self = StObject.set(x, "numLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: Double): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    def setNumNetworkLinks(value: Double): Self = StObject.set(x, "numNetworkLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumGroundOverlays(value: Double): Self = this.set("numGroundOverlays", value.asInstanceOf[js.Any])
+    def setNumPolygons(value: Double): Self = StObject.set(x, "numPolygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumLocations(value: Double): Self = this.set("numLocations", value.asInstanceOf[js.Any])
+    def setNumPolylines(value: Double): Self = StObject.set(x, "numPolylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumNetworkLinks(value: Double): Self = this.set("numNetworkLinks", value.asInstanceOf[js.Any])
+    def setNumPushpins(value: Double): Self = StObject.set(x, "numPushpins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPolygons(value: Double): Self = this.set("numPolygons", value.asInstanceOf[js.Any])
+    def setNumScreenOverlays(value: Double): Self = StObject.set(x, "numScreenOverlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPolylines(value: Double): Self = this.set("numPolylines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumPushpins(value: Double): Self = this.set("numPushpins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumScreenOverlays(value: Double): Self = this.set("numScreenOverlays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcessingTime(value: Double): Self = this.set("processingTime", value.asInstanceOf[js.Any])
+    def setProcessingTime(value: Double): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRouteResponseResponse extends js.Object {
+trait CreateRouteResponseResponse extends StObject {
   
   /**
     * Represents the model selection expression of a route response. Supported only for WebSocket APIs.
@@ -41,48 +42,36 @@ object CreateRouteResponseResponse {
   }
   
   @scala.inline
-  implicit class CreateRouteResponseResponseOps[Self <: CreateRouteResponseResponse] (val x: Self) extends AnyVal {
+  implicit class CreateRouteResponseResponseMutableBuilder[Self <: CreateRouteResponseResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModelSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ModelSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelSelectionExpressionUndefined: Self = StObject.set(x, "ModelSelectionExpression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseModels(value: RouteModels): Self = StObject.set(x, "ResponseModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelSelectionExpression(value: SelectionExpression): Self = this.set("ModelSelectionExpression", value.asInstanceOf[js.Any])
+    def setResponseModelsUndefined: Self = StObject.set(x, "ResponseModels", js.undefined)
     
     @scala.inline
-    def deleteModelSelectionExpression: Self = this.set("ModelSelectionExpression", js.undefined)
+    def setResponseParameters(value: RouteParameters): Self = StObject.set(x, "ResponseParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseModels(value: RouteModels): Self = this.set("ResponseModels", value.asInstanceOf[js.Any])
+    def setResponseParametersUndefined: Self = StObject.set(x, "ResponseParameters", js.undefined)
     
     @scala.inline
-    def deleteResponseModels: Self = this.set("ResponseModels", js.undefined)
+    def setRouteResponseId(value: Id): Self = StObject.set(x, "RouteResponseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseParameters(value: RouteParameters): Self = this.set("ResponseParameters", value.asInstanceOf[js.Any])
+    def setRouteResponseIdUndefined: Self = StObject.set(x, "RouteResponseId", js.undefined)
     
     @scala.inline
-    def deleteResponseParameters: Self = this.set("ResponseParameters", js.undefined)
+    def setRouteResponseKey(value: SelectionKey): Self = StObject.set(x, "RouteResponseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteResponseId(value: Id): Self = this.set("RouteResponseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteResponseId: Self = this.set("RouteResponseId", js.undefined)
-    
-    @scala.inline
-    def setRouteResponseKey(value: SelectionKey): Self = this.set("RouteResponseKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteResponseKey: Self = this.set("RouteResponseKey", js.undefined)
+    def setRouteResponseKeyUndefined: Self = StObject.set(x, "RouteResponseKey", js.undefined)
   }
 }

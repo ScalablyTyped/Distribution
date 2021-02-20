@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupPolicyDescription extends js.Object {
+trait BackupPolicyDescription extends StObject {
   
   /**
     * Describes the file system's backup policy, indicating whether automatic backups are turned on or off..
@@ -21,24 +22,12 @@ object BackupPolicyDescription {
   }
   
   @scala.inline
-  implicit class BackupPolicyDescriptionOps[Self <: BackupPolicyDescription] (val x: Self) extends AnyVal {
+  implicit class BackupPolicyDescriptionMutableBuilder[Self <: BackupPolicyDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPolicy(value: BackupPolicy): Self = StObject.set(x, "BackupPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackupPolicy(value: BackupPolicy): Self = this.set("BackupPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPolicy: Self = this.set("BackupPolicy", js.undefined)
+    def setBackupPolicyUndefined: Self = StObject.set(x, "BackupPolicy", js.undefined)
   }
 }

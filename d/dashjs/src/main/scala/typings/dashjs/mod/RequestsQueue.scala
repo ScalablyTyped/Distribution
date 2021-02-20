@@ -1,12 +1,13 @@
 package typings.dashjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dashjs", "RequestsQueue")
 @js.native
-class RequestsQueue () extends js.Object {
+class RequestsQueue () extends StObject {
   
   /**
     * Array of the the requests that have completed

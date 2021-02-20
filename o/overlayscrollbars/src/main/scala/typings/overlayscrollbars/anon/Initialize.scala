@@ -1,11 +1,12 @@
 package typings.overlayscrollbars.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Initialize extends js.Object {
+trait Initialize extends StObject {
   
   var initialize: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Initialize {
   }
   
   @scala.inline
-  implicit class InitializeOps[Self <: Initialize] (val x: Self) extends AnyVal {
+  implicit class InitializeMutableBuilder[Self <: Initialize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialize(value: Boolean): Self = StObject.set(x, "initialize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowNativeScrollbars(value: Boolean): Self = StObject.set(x, "showNativeScrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: Boolean): Self = this.set("initialize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialize: Self = this.set("initialize", js.undefined)
-    
-    @scala.inline
-    def setShowNativeScrollbars(value: Boolean): Self = this.set("showNativeScrollbars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowNativeScrollbars: Self = this.set("showNativeScrollbars", js.undefined)
+    def setShowNativeScrollbarsUndefined: Self = StObject.set(x, "showNativeScrollbars", js.undefined)
   }
 }

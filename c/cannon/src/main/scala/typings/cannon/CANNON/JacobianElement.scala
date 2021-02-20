@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JacobianElement extends js.Object {
+trait JacobianElement extends StObject {
   
   def multiplyElement(element: JacobianElement): Double = js.native
   
@@ -29,30 +30,18 @@ object JacobianElement {
   }
   
   @scala.inline
-  implicit class JacobianElementOps[Self <: JacobianElement] (val x: Self) extends AnyVal {
+  implicit class JacobianElementMutableBuilder[Self <: JacobianElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiplyElement(value: JacobianElement => Double): Self = StObject.set(x, "multiplyElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiplyVectors(value: (Vec3, Vec3) => Double): Self = StObject.set(x, "multiplyVectors", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotational(value: Vec3): Self = StObject.set(x, "rotational", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplyElement(value: JacobianElement => Double): Self = this.set("multiplyElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMultiplyVectors(value: (Vec3, Vec3) => Double): Self = this.set("multiplyVectors", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRotational(value: Vec3): Self = this.set("rotational", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpatial(value: Vec3): Self = this.set("spatial", value.asInstanceOf[js.Any])
+    def setSpatial(value: Vec3): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
   }
 }

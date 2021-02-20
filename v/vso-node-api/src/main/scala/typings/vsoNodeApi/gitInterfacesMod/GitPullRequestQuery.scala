@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPullRequestQuery extends js.Object {
+trait GitPullRequestQuery extends StObject {
   
   /**
     * The queries to perform.
@@ -30,30 +31,18 @@ object GitPullRequestQuery {
   }
   
   @scala.inline
-  implicit class GitPullRequestQueryOps[Self <: GitPullRequestQuery] (val x: Self) extends AnyVal {
+  implicit class GitPullRequestQueryMutableBuilder[Self <: GitPullRequestQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueries(value: js.Array[GitPullRequestQueryInput]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueriesVarargs(value: GitPullRequestQueryInput*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[StringDictionary[js.Array[GitPullRequest]]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueriesVarargs(value: GitPullRequestQueryInput*): Self = this.set("queries", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueries(value: js.Array[GitPullRequestQueryInput]): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: StringDictionary[js.Array[GitPullRequest]]*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[StringDictionary[js.Array[GitPullRequest]]]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: StringDictionary[js.Array[GitPullRequest]]*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

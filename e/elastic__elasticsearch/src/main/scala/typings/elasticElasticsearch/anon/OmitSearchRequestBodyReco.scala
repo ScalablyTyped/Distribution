@@ -12,13 +12,14 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import typings.elasticElasticsearch.elasticElasticsearchStrings.popular
 import typings.elasticElasticsearch.elasticElasticsearchStrings.query_then_fetch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @elastic/elasticsearch.@elastic/elasticsearch/lib/Helpers.Omit<@elastic/elasticsearch.@elastic/elasticsearch/api/requestParams.Search<@elastic/elasticsearch.@elastic/elasticsearch/lib/Transport.RequestBody<std.Record<string, any>>>, 'body'> */
 @js.native
-trait OmitSearchRequestBodyReco extends js.Object {
+trait OmitSearchRequestBodyReco extends StObject {
   
   var _source: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -133,369 +134,357 @@ object OmitSearchRequestBodyReco {
   }
   
   @scala.inline
-  implicit class OmitSearchRequestBodyRecoOps[Self <: OmitSearchRequestBodyReco] (val x: Self) extends AnyVal {
+  implicit class OmitSearchRequestBodyRecoMutableBuilder[Self <: OmitSearchRequestBodyReco] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_no_indicesUndefined: Self = StObject.set(x, "allow_no_indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_partial_search_results(value: Boolean): Self = StObject.set(x, "allow_partial_search_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceVarargs(value: String*): Self = this.set("_source", js.Array(value :_*))
+    def setAllow_partial_search_resultsUndefined: Self = StObject.set(x, "allow_partial_search_results", js.undefined)
     
     @scala.inline
-    def set_source(value: String | js.Array[String]): Self = this.set("_source", value.asInstanceOf[js.Any])
+    def setAnalyze_wildcard(value: Boolean): Self = StObject.set(x, "analyze_wildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_source: Self = this.set("_source", js.undefined)
+    def setAnalyze_wildcardUndefined: Self = StObject.set(x, "analyze_wildcard", js.undefined)
     
     @scala.inline
-    def set_source_excludeVarargs(value: String*): Self = this.set("_source_exclude", js.Array(value :_*))
+    def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_source_exclude(value: String | js.Array[String]): Self = this.set("_source_exclude", value.asInstanceOf[js.Any])
+    def setAnalyzerUndefined: Self = StObject.set(x, "analyzer", js.undefined)
     
     @scala.inline
-    def delete_source_exclude: Self = this.set("_source_exclude", js.undefined)
+    def setBatched_reduce_size(value: Double): Self = StObject.set(x, "batched_reduce_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_source_excludesVarargs(value: String*): Self = this.set("_source_excludes", js.Array(value :_*))
+    def setBatched_reduce_sizeUndefined: Self = StObject.set(x, "batched_reduce_size", js.undefined)
     
     @scala.inline
-    def set_source_excludes(value: String | js.Array[String]): Self = this.set("_source_excludes", value.asInstanceOf[js.Any])
+    def setCcs_minimize_roundtrips(value: Boolean): Self = StObject.set(x, "ccs_minimize_roundtrips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_source_excludes: Self = this.set("_source_excludes", js.undefined)
+    def setCcs_minimize_roundtripsUndefined: Self = StObject.set(x, "ccs_minimize_roundtrips", js.undefined)
     
     @scala.inline
-    def set_source_includeVarargs(value: String*): Self = this.set("_source_include", js.Array(value :_*))
+    def setDefault_operator(value: AND | OR): Self = StObject.set(x, "default_operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_source_include(value: String | js.Array[String]): Self = this.set("_source_include", value.asInstanceOf[js.Any])
+    def setDefault_operatorUndefined: Self = StObject.set(x, "default_operator", js.undefined)
     
     @scala.inline
-    def delete_source_include: Self = this.set("_source_include", js.undefined)
+    def setDf(value: String): Self = StObject.set(x, "df", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_source_includesVarargs(value: String*): Self = this.set("_source_includes", js.Array(value :_*))
+    def setDfUndefined: Self = StObject.set(x, "df", js.undefined)
     
     @scala.inline
-    def set_source_includes(value: String | js.Array[String]): Self = this.set("_source_includes", value.asInstanceOf[js.Any])
+    def setDocvalue_fields(value: String | js.Array[String]): Self = StObject.set(x, "docvalue_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_source_includes: Self = this.set("_source_includes", js.undefined)
+    def setDocvalue_fieldsUndefined: Self = StObject.set(x, "docvalue_fields", js.undefined)
     
     @scala.inline
-    def setAllow_no_indices(value: Boolean): Self = this.set("allow_no_indices", value.asInstanceOf[js.Any])
+    def setDocvalue_fieldsVarargs(value: String*): Self = StObject.set(x, "docvalue_fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllow_no_indices: Self = this.set("allow_no_indices", js.undefined)
+    def setError_trace(value: Boolean): Self = StObject.set(x, "error_trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_partial_search_results(value: Boolean): Self = this.set("allow_partial_search_results", value.asInstanceOf[js.Any])
+    def setError_traceUndefined: Self = StObject.set(x, "error_trace", js.undefined)
     
     @scala.inline
-    def deleteAllow_partial_search_results: Self = this.set("allow_partial_search_results", js.undefined)
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyze_wildcard(value: Boolean): Self = this.set("analyze_wildcard", value.asInstanceOf[js.Any])
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def deleteAnalyze_wildcard: Self = this.set("analyze_wildcard", js.undefined)
+    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzer(value: String): Self = this.set("analyzer", value.asInstanceOf[js.Any])
+    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
     @scala.inline
-    def deleteAnalyzer: Self = this.set("analyzer", js.undefined)
+    def setFilter_path(value: String | js.Array[String]): Self = StObject.set(x, "filter_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatched_reduce_size(value: Double): Self = this.set("batched_reduce_size", value.asInstanceOf[js.Any])
+    def setFilter_pathUndefined: Self = StObject.set(x, "filter_path", js.undefined)
     
     @scala.inline
-    def deleteBatched_reduce_size: Self = this.set("batched_reduce_size", js.undefined)
+    def setFilter_pathVarargs(value: String*): Self = StObject.set(x, "filter_path", js.Array(value :_*))
     
     @scala.inline
-    def setCcs_minimize_roundtrips(value: Boolean): Self = this.set("ccs_minimize_roundtrips", value.asInstanceOf[js.Any])
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCcs_minimize_roundtrips: Self = this.set("ccs_minimize_roundtrips", js.undefined)
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setDefault_operator(value: AND | OR): Self = this.set("default_operator", value.asInstanceOf[js.Any])
+    def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefault_operator: Self = this.set("default_operator", js.undefined)
+    def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
     
     @scala.inline
-    def setDf(value: String): Self = this.set("df", value.asInstanceOf[js.Any])
+    def setIgnore_throttled(value: Boolean): Self = StObject.set(x, "ignore_throttled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDf: Self = this.set("df", js.undefined)
+    def setIgnore_throttledUndefined: Self = StObject.set(x, "ignore_throttled", js.undefined)
     
     @scala.inline
-    def setDocvalue_fieldsVarargs(value: String*): Self = this.set("docvalue_fields", js.Array(value :_*))
+    def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocvalue_fields(value: String | js.Array[String]): Self = this.set("docvalue_fields", value.asInstanceOf[js.Any])
+    def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
     @scala.inline
-    def deleteDocvalue_fields: Self = this.set("docvalue_fields", js.undefined)
+    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_trace(value: Boolean): Self = this.set("error_trace", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteError_trace: Self = this.set("error_trace", js.undefined)
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setLenientUndefined: Self = StObject.set(x, "lenient", js.undefined)
     
     @scala.inline
-    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    def setMax_concurrent_shard_requests(value: Double): Self = StObject.set(x, "max_concurrent_shard_requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExplain: Self = this.set("explain", js.undefined)
+    def setMax_concurrent_shard_requestsUndefined: Self = StObject.set(x, "max_concurrent_shard_requests", js.undefined)
     
     @scala.inline
-    def setFilter_pathVarargs(value: String*): Self = this.set("filter_path", js.Array(value :_*))
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter_path(value: String | js.Array[String]): Self = this.set("filter_path", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteFilter_path: Self = this.set("filter_path", js.undefined)
+    def setPre_filter_shard_size(value: Double): Self = StObject.set(x, "pre_filter_shard_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setPre_filter_shard_sizeUndefined: Self = StObject.set(x, "pre_filter_shard_size", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHuman(value: Boolean): Self = this.set("human", value.asInstanceOf[js.Any])
+    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
     @scala.inline
-    def deleteHuman: Self = this.set("human", js.undefined)
+    def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_throttled(value: Boolean): Self = this.set("ignore_throttled", value.asInstanceOf[js.Any])
+    def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     
     @scala.inline
-    def deleteIgnore_throttled: Self = this.set("ignore_throttled", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_unavailable(value: Boolean): Self = this.set("ignore_unavailable", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteIgnore_unavailable: Self = this.set("ignore_unavailable", js.undefined)
+    def setRequest_cache(value: Boolean): Self = StObject.set(x, "request_cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setRequest_cacheUndefined: Self = StObject.set(x, "request_cache", js.undefined)
     
     @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setRest_total_hits_as_int(value: Boolean): Self = StObject.set(x, "rest_total_hits_as_int", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setRest_total_hits_as_intUndefined: Self = StObject.set(x, "rest_total_hits_as_int", js.undefined)
     
     @scala.inline
-    def setLenient(value: Boolean): Self = this.set("lenient", value.asInstanceOf[js.Any])
+    def setRouting(value: String | js.Array[String]): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLenient: Self = this.set("lenient", js.undefined)
+    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
     @scala.inline
-    def setMax_concurrent_shard_requests(value: Double): Self = this.set("max_concurrent_shard_requests", value.asInstanceOf[js.Any])
+    def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value :_*))
     
     @scala.inline
-    def deleteMax_concurrent_shard_requests: Self = this.set("max_concurrent_shard_requests", js.undefined)
+    def setScroll(value: String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setSearch_type(value: query_then_fetch | dfs_query_then_fetch): Self = StObject.set(x, "search_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPre_filter_shard_size(value: Double): Self = this.set("pre_filter_shard_size", value.asInstanceOf[js.Any])
+    def setSearch_typeUndefined: Self = StObject.set(x, "search_type", js.undefined)
     
     @scala.inline
-    def deletePre_filter_shard_size: Self = this.set("pre_filter_shard_size", js.undefined)
+    def setSeq_no_primary_term(value: Boolean): Self = StObject.set(x, "seq_no_primary_term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreference(value: String): Self = this.set("preference", value.asInstanceOf[js.Any])
+    def setSeq_no_primary_termUndefined: Self = StObject.set(x, "seq_no_primary_term", js.undefined)
     
     @scala.inline
-    def deletePreference: Self = this.set("preference", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPretty(value: Boolean): Self = this.set("pretty", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deletePretty: Self = this.set("pretty", js.undefined)
+    def setSort(value: String | js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
     @scala.inline
-    def setRequest_cache(value: Boolean): Self = this.set("request_cache", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequest_cache: Self = this.set("request_cache", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setRest_total_hits_as_int(value: Boolean): Self = this.set("rest_total_hits_as_int", value.asInstanceOf[js.Any])
+    def setStats(value: String | js.Array[String]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRest_total_hits_as_int: Self = this.set("rest_total_hits_as_int", js.undefined)
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
-    def setRoutingVarargs(value: String*): Self = this.set("routing", js.Array(value :_*))
+    def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value :_*))
     
     @scala.inline
-    def setRouting(value: String | js.Array[String]): Self = this.set("routing", value.asInstanceOf[js.Any])
+    def setStored_fields(value: String | js.Array[String]): Self = StObject.set(x, "stored_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRouting: Self = this.set("routing", js.undefined)
+    def setStored_fieldsUndefined: Self = StObject.set(x, "stored_fields", js.undefined)
     
     @scala.inline
-    def setScroll(value: String): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setStored_fieldsVarargs(value: String*): Self = StObject.set(x, "stored_fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setSuggest_field(value: String): Self = StObject.set(x, "suggest_field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_type(value: query_then_fetch | dfs_query_then_fetch): Self = this.set("search_type", value.asInstanceOf[js.Any])
+    def setSuggest_fieldUndefined: Self = StObject.set(x, "suggest_field", js.undefined)
     
     @scala.inline
-    def deleteSearch_type: Self = this.set("search_type", js.undefined)
+    def setSuggest_mode(value: missing | popular | always): Self = StObject.set(x, "suggest_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeq_no_primary_term(value: Boolean): Self = this.set("seq_no_primary_term", value.asInstanceOf[js.Any])
+    def setSuggest_modeUndefined: Self = StObject.set(x, "suggest_mode", js.undefined)
     
     @scala.inline
-    def deleteSeq_no_primary_term: Self = this.set("seq_no_primary_term", js.undefined)
+    def setSuggest_size(value: Double): Self = StObject.set(x, "suggest_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSuggest_sizeUndefined: Self = StObject.set(x, "suggest_size", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSuggest_text(value: String): Self = StObject.set(x, "suggest_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortVarargs(value: String*): Self = this.set("sort", js.Array(value :_*))
+    def setSuggest_textUndefined: Self = StObject.set(x, "suggest_text", js.undefined)
     
     @scala.inline
-    def setSort(value: String | js.Array[String]): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setTerminate_after(value: Double): Self = StObject.set(x, "terminate_after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setTerminate_afterUndefined: Self = StObject.set(x, "terminate_after", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setStatsVarargs(value: String*): Self = this.set("stats", js.Array(value :_*))
+    def setTrack_scores(value: Boolean): Self = StObject.set(x, "track_scores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStats(value: String | js.Array[String]): Self = this.set("stats", value.asInstanceOf[js.Any])
+    def setTrack_scoresUndefined: Self = StObject.set(x, "track_scores", js.undefined)
     
     @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
+    def setTrack_total_hits(value: Boolean): Self = StObject.set(x, "track_total_hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStored_fieldsVarargs(value: String*): Self = this.set("stored_fields", js.Array(value :_*))
+    def setTrack_total_hitsUndefined: Self = StObject.set(x, "track_total_hits", js.undefined)
     
     @scala.inline
-    def setStored_fields(value: String | js.Array[String]): Self = this.set("stored_fields", value.asInstanceOf[js.Any])
+    def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStored_fields: Self = this.set("stored_fields", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setSuggest_field(value: String): Self = this.set("suggest_field", value.asInstanceOf[js.Any])
+    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def deleteSuggest_field: Self = this.set("suggest_field", js.undefined)
+    def setTyped_keys(value: Boolean): Self = StObject.set(x, "typed_keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggest_mode(value: missing | popular | always): Self = this.set("suggest_mode", value.asInstanceOf[js.Any])
+    def setTyped_keysUndefined: Self = StObject.set(x, "typed_keys", js.undefined)
     
     @scala.inline
-    def deleteSuggest_mode: Self = this.set("suggest_mode", js.undefined)
+    def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggest_size(value: Double): Self = this.set("suggest_size", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteSuggest_size: Self = this.set("suggest_size", js.undefined)
+    def set_source(value: String | js.Array[String]): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggest_text(value: String): Self = this.set("suggest_text", value.asInstanceOf[js.Any])
+    def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
     @scala.inline
-    def deleteSuggest_text: Self = this.set("suggest_text", js.undefined)
+    def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value :_*))
     
     @scala.inline
-    def setTerminate_after(value: Double): Self = this.set("terminate_after", value.asInstanceOf[js.Any])
+    def set_source_exclude(value: String | js.Array[String]): Self = StObject.set(x, "_source_exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTerminate_after: Self = this.set("terminate_after", js.undefined)
+    def set_source_excludeUndefined: Self = StObject.set(x, "_source_exclude", js.undefined)
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def set_source_excludeVarargs(value: String*): Self = StObject.set(x, "_source_exclude", js.Array(value :_*))
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def set_source_excludes(value: String | js.Array[String]): Self = StObject.set(x, "_source_excludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack_scores(value: Boolean): Self = this.set("track_scores", value.asInstanceOf[js.Any])
+    def set_source_excludesUndefined: Self = StObject.set(x, "_source_excludes", js.undefined)
     
     @scala.inline
-    def deleteTrack_scores: Self = this.set("track_scores", js.undefined)
+    def set_source_excludesVarargs(value: String*): Self = StObject.set(x, "_source_excludes", js.Array(value :_*))
     
     @scala.inline
-    def setTrack_total_hits(value: Boolean): Self = this.set("track_total_hits", value.asInstanceOf[js.Any])
+    def set_source_include(value: String | js.Array[String]): Self = StObject.set(x, "_source_include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrack_total_hits: Self = this.set("track_total_hits", js.undefined)
+    def set_source_includeUndefined: Self = StObject.set(x, "_source_include", js.undefined)
     
     @scala.inline
-    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    def set_source_includeVarargs(value: String*): Self = StObject.set(x, "_source_include", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: String | js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_source_includes(value: String | js.Array[String]): Self = StObject.set(x, "_source_includes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_source_includesUndefined: Self = StObject.set(x, "_source_includes", js.undefined)
     
     @scala.inline
-    def setTyped_keys(value: Boolean): Self = this.set("typed_keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTyped_keys: Self = this.set("typed_keys", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Boolean): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def set_source_includesVarargs(value: String*): Self = StObject.set(x, "_source_includes", js.Array(value :_*))
   }
 }

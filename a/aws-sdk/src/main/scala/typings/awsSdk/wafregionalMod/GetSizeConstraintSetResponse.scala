@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSizeConstraintSetResponse extends js.Object {
+trait GetSizeConstraintSetResponse extends StObject {
   
   /**
     * Information about the SizeConstraintSet that you specified in the GetSizeConstraintSet request. For more information, see the following topics:    SizeConstraintSet: Contains SizeConstraintSetId, SizeConstraints, and Name     SizeConstraints: Contains an array of SizeConstraint objects. Each SizeConstraint object contains FieldToMatch, TextTransformation, ComparisonOperator, and Size     FieldToMatch: Contains Data and Type   
@@ -21,24 +22,12 @@ object GetSizeConstraintSetResponse {
   }
   
   @scala.inline
-  implicit class GetSizeConstraintSetResponseOps[Self <: GetSizeConstraintSetResponse] (val x: Self) extends AnyVal {
+  implicit class GetSizeConstraintSetResponseMutableBuilder[Self <: GetSizeConstraintSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSizeConstraintSet(value: SizeConstraintSet): Self = StObject.set(x, "SizeConstraintSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSizeConstraintSet(value: SizeConstraintSet): Self = this.set("SizeConstraintSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeConstraintSet: Self = this.set("SizeConstraintSet", js.undefined)
+    def setSizeConstraintSetUndefined: Self = StObject.set(x, "SizeConstraintSet", js.undefined)
   }
 }

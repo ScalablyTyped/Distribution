@@ -3,12 +3,13 @@ package typings.antd.anon
 import typings.antd.formItemInputMod.FormItemInputMiscProps
 import typings.antd.formItemInputMod.FormItemInputProps
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mark extends js.Object {
+trait Mark extends StObject {
   
   var mark: String = js.native
   
@@ -23,24 +24,12 @@ object Mark {
   }
   
   @scala.inline
-  implicit class MarkOps[Self <: Mark] (val x: Self) extends AnyVal {
+  implicit class MarkMutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMark(value: String): Self = this.set("mark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRender(value: (FormItemInputProps with FormItemInputMiscProps, ErrorList) => ReactNode): Self = this.set("render", js.Any.fromFunction2(value))
+    def setRender(value: (FormItemInputProps with FormItemInputMiscProps, ErrorList) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
   }
 }

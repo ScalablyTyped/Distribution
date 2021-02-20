@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LicenseUnitsDetail extends js.Object {
+trait LicenseUnitsDetail extends StObject {
   
   // The number of units that are enabled.
   var enabled: js.UndefOr[NullableOption[Double]] = js.native
@@ -25,45 +26,33 @@ object LicenseUnitsDetail {
   }
   
   @scala.inline
-  implicit class LicenseUnitsDetailOps[Self <: LicenseUnitsDetail] (val x: Self) extends AnyVal {
+  implicit class LicenseUnitsDetailMutableBuilder[Self <: LicenseUnitsDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: NullableOption[Double]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setEnabled(value: NullableOption[Double]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setSuspended(value: NullableOption[Double]): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setSuspendedNull: Self = StObject.set(x, "suspended", null)
     
     @scala.inline
-    def setEnabledNull: Self = this.set("enabled", null)
+    def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
     
     @scala.inline
-    def setSuspended(value: NullableOption[Double]): Self = this.set("suspended", value.asInstanceOf[js.Any])
+    def setWarning(value: NullableOption[Double]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuspended: Self = this.set("suspended", js.undefined)
+    def setWarningNull: Self = StObject.set(x, "warning", null)
     
     @scala.inline
-    def setSuspendedNull: Self = this.set("suspended", null)
-    
-    @scala.inline
-    def setWarning(value: NullableOption[Double]): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
-    
-    @scala.inline
-    def setWarningNull: Self = this.set("warning", null)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

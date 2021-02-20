@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.tagFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagFeedResponseOwner extends js.Object {
+trait TagFeedResponseOwner extends StObject {
   
   var name: String = js.native
   
@@ -27,33 +28,21 @@ object TagFeedResponseOwner {
   }
   
   @scala.inline
-  implicit class TagFeedResponseOwnerOps[Self <: TagFeedResponseOwner] (val x: Self) extends AnyVal {
+  implicit class TagFeedResponseOwnerMutableBuilder[Self <: TagFeedResponseOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProfile_pic_username(value: String): Self = StObject.set(x, "profile_pic_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile_pic_username(value: String): Self = this.set("profile_pic_username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

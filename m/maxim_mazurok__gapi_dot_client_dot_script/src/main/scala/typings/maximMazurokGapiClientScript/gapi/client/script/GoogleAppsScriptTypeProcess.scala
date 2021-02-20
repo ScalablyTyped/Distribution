@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientScript.gapi.client.script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAppsScriptTypeProcess extends js.Object {
+trait GoogleAppsScriptTypeProcess extends StObject {
   
   /** Duration the execution spent executing. */
   var duration: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object GoogleAppsScriptTypeProcess {
   }
   
   @scala.inline
-  implicit class GoogleAppsScriptTypeProcessOps[Self <: GoogleAppsScriptTypeProcess] (val x: Self) extends AnyVal {
+  implicit class GoogleAppsScriptTypeProcessMutableBuilder[Self <: GoogleAppsScriptTypeProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setProcessStatus(value: String): Self = StObject.set(x, "processStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    def setProcessStatusUndefined: Self = StObject.set(x, "processStatus", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    def setProcessType(value: String): Self = StObject.set(x, "processType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessStatus(value: String): Self = this.set("processStatus", value.asInstanceOf[js.Any])
+    def setProcessTypeUndefined: Self = StObject.set(x, "processType", js.undefined)
     
     @scala.inline
-    def deleteProcessStatus: Self = this.set("processStatus", js.undefined)
+    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessType(value: String): Self = this.set("processType", value.asInstanceOf[js.Any])
+    def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
     
     @scala.inline
-    def deleteProcessType: Self = this.set("processType", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectName(value: String): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteProjectName: Self = this.set("projectName", js.undefined)
+    def setUserAccessLevel(value: String): Self = StObject.set(x, "userAccessLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setUserAccessLevel(value: String): Self = this.set("userAccessLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAccessLevel: Self = this.set("userAccessLevel", js.undefined)
+    def setUserAccessLevelUndefined: Self = StObject.set(x, "userAccessLevel", js.undefined)
   }
 }

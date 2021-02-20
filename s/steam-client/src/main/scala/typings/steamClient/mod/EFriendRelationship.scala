@@ -1,61 +1,52 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EFriendRelationship extends js.Object
+sealed trait EFriendRelationship extends StObject
 @JSImport("steam-client", "EFriendRelationship")
 @js.native
-object EFriendRelationship extends js.Object {
+object EFriendRelationship extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EFriendRelationship with Double] = js.native
   
   @js.native
   sealed trait Blocked extends EFriendRelationship
-  /* 1 */ @js.native
-  object Blocked extends TopLevel[Blocked with Double]
+  /* 1 */ val Blocked: typings.steamClient.mod.EFriendRelationship.Blocked with Double = js.native
   
   @js.native
   sealed trait Friend extends EFriendRelationship
-  /* 3 */ @js.native
-  object Friend extends TopLevel[Friend with Double]
+  /* 3 */ val Friend: typings.steamClient.mod.EFriendRelationship.Friend with Double = js.native
   
   @js.native
   sealed trait Ignored extends EFriendRelationship
-  /* 5 */ @js.native
-  object Ignored extends TopLevel[Ignored with Double]
+  /* 5 */ val Ignored: typings.steamClient.mod.EFriendRelationship.Ignored with Double = js.native
   
   @js.native
   sealed trait IgnoredFriend extends EFriendRelationship
-  /* 6 */ @js.native
-  object IgnoredFriend extends TopLevel[IgnoredFriend with Double]
+  /* 6 */ val IgnoredFriend: typings.steamClient.mod.EFriendRelationship.IgnoredFriend with Double = js.native
   
   @js.native
   sealed trait Max extends EFriendRelationship
-  /* 8 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  /* 8 */ val Max: typings.steamClient.mod.EFriendRelationship.Max with Double = js.native
   
   @js.native
   sealed trait None extends EFriendRelationship
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.steamClient.mod.EFriendRelationship.None with Double = js.native
   
   @js.native
   sealed trait RequestInitiator extends EFriendRelationship
-  /* 4 */ @js.native
-  object RequestInitiator extends TopLevel[RequestInitiator with Double]
+  /* 4 */ val RequestInitiator: typings.steamClient.mod.EFriendRelationship.RequestInitiator with Double = js.native
   
   @js.native
   sealed trait RequestRecipient extends EFriendRelationship
-  /* 2 */ @js.native
-  object RequestRecipient extends TopLevel[RequestRecipient with Double]
+  /* 2 */ val RequestRecipient: typings.steamClient.mod.EFriendRelationship.RequestRecipient with Double = js.native
   
   @js.native
   sealed trait SuggestedFriend extends EFriendRelationship
-  /* 7 */ @js.native
-  object SuggestedFriend extends TopLevel[SuggestedFriend with Double]
+  /* 7 */ val SuggestedFriend: typings.steamClient.mod.EFriendRelationship.SuggestedFriend with Double = js.native
 }

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,60 +61,48 @@ object IgPivotViewPivotGridOptionsGridOptions {
   }
   
   @scala.inline
-  implicit class IgPivotViewPivotGridOptionsGridOptionsOps[Self <: IgPivotViewPivotGridOptionsGridOptions] (val x: Self) extends AnyVal {
+  implicit class IgPivotViewPivotGridOptionsGridOptionsMutableBuilder[Self <: IgPivotViewPivotGridOptionsGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateRowStyles(value: Boolean): Self = StObject.set(x, "alternateRowStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateRowStylesUndefined: Self = StObject.set(x, "alternateRowStyles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateRowStyles(value: Boolean): Self = this.set("alternateRowStyles", value.asInstanceOf[js.Any])
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def deleteAlternateRowStyles: Self = this.set("alternateRowStyles", js.undefined)
+    def setDefaultColumnWidth(value: String | Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setEnableHoverStyles(value: Boolean): Self = StObject.set(x, "enableHoverStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultColumnWidth(value: String | Double): Self = this.set("defaultColumnWidth", value.asInstanceOf[js.Any])
+    def setEnableHoverStylesUndefined: Self = StObject.set(x, "enableHoverStyles", js.undefined)
     
     @scala.inline
-    def deleteDefaultColumnWidth: Self = this.set("defaultColumnWidth", js.undefined)
+    def setFeatures(value: IgPivotViewPivotGridOptionsGridOptionsFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHoverStyles(value: Boolean): Self = this.set("enableHoverStyles", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteEnableHoverStyles: Self = this.set("enableHoverStyles", js.undefined)
+    def setFixedHeaders(value: Boolean): Self = StObject.set(x, "fixedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: IgPivotViewPivotGridOptionsGridOptionsFeatures): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFixedHeadersUndefined: Self = StObject.set(x, "fixedHeaders", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedHeaders(value: Boolean): Self = this.set("fixedHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixedHeaders: Self = this.set("fixedHeaders", js.undefined)
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

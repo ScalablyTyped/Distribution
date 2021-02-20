@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,45 +26,33 @@ object BaseItemVersion {
   }
   
   @scala.inline
-  implicit class BaseItemVersionOps[Self <: BaseItemVersion] (val x: Self) extends AnyVal {
+  implicit class BaseItemVersionMutableBuilder[Self <: BaseItemVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
     @scala.inline
-    def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("lastModifiedBy", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setLastModifiedByNull: Self = this.set("lastModifiedBy", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setPublication(value: NullableOption[PublicationFacet]): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setPublicationNull: Self = StObject.set(x, "publication", null)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
-    
-    @scala.inline
-    def setPublication(value: NullableOption[PublicationFacet]): Self = this.set("publication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublication: Self = this.set("publication", js.undefined)
-    
-    @scala.inline
-    def setPublicationNull: Self = this.set("publication", null)
+    def setPublicationUndefined: Self = StObject.set(x, "publication", js.undefined)
   }
 }

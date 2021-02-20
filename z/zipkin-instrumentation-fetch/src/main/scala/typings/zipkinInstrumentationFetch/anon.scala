@@ -3,16 +3,15 @@ package typings.zipkinInstrumentationFetch
 import typings.nodeFetch.mod.RequestInfo
 import typings.nodeFetch.mod.RequestInit
 import typings.nodeFetch.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeoffetch extends js.Object {
+  trait Typeoffetch extends StObject {
     
     def apply(url: RequestInfo): js.Promise[Response] = js.native
     def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = js.native

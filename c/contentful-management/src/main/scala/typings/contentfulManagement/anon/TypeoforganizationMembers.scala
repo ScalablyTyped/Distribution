@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.organizationMembershipMod.OrganizationMembership
 import typings.contentfulManagement.organizationMembershipMod.OrganizationMembershipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeoforganizationMembers extends js.Object {
+trait TypeoforganizationMembers extends StObject {
   
   def wrapOrganizationMembership(http: AxiosInstance, data: OrganizationMembershipProps): OrganizationMembership = js.native
   
@@ -28,26 +29,14 @@ object TypeoforganizationMembers {
   }
   
   @scala.inline
-  implicit class TypeoforganizationMembersOps[Self <: TypeoforganizationMembers] (val x: Self) extends AnyVal {
+  implicit class TypeoforganizationMembersMutableBuilder[Self <: TypeoforganizationMembers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapOrganizationMembership(value: (AxiosInstance, OrganizationMembershipProps) => OrganizationMembership): Self = this.set("wrapOrganizationMembership", js.Any.fromFunction2(value))
+    def setWrapOrganizationMembership(value: (AxiosInstance, OrganizationMembershipProps) => OrganizationMembership): Self = StObject.set(x, "wrapOrganizationMembership", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapOrganizationMembershipCollection(
       value: (AxiosInstance, CollectionProp[OrganizationMembershipProps]) => Collection[OrganizationMembership, OrganizationMembershipProps]
-    ): Self = this.set("wrapOrganizationMembershipCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapOrganizationMembershipCollection", js.Any.fromFunction2(value))
   }
 }

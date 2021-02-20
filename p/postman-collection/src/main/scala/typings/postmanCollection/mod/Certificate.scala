@@ -1,6 +1,7 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Src
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +28,9 @@ class Certificate protected () extends Property[CertificateDefinition] {
   def update(options: CertificateDefinition): Unit = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Certificate")
-@js.native
-object Certificate extends js.Object {
+object Certificate {
   
+  @JSImport("postman-collection", "Certificate.isCertificate")
+  @js.native
   def isCertificate(obj: js.Any): Boolean = js.native
 }

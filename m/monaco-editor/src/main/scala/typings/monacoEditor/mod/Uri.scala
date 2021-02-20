@@ -2,6 +2,7 @@ package typings.monacoEditor.mod
 
 import typings.monacoEditor.anon.Authority
 import typings.monacoEditor.anon.Fragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,9 +44,7 @@ class Uri () extends UriComponents {
   def `with`(change: Authority): Uri = js.native
 }
 /* static members */
-@JSImport("monaco-editor", "Uri")
-@js.native
-object Uri extends js.Object {
+object Uri {
   
   /**
     * Creates a new Uri from a file system path, e.g. `c:\my\files`,
@@ -68,10 +67,16 @@ object Uri extends js.Object {
     *
     * @param path A file system path (see `Uri#fsPath`)
     */
+  @JSImport("monaco-editor", "Uri.file")
+  @js.native
   def file(path: String): Uri = js.native
   
+  @JSImport("monaco-editor", "Uri.from")
+  @js.native
   def from(components: Fragment): Uri = js.native
   
+  @JSImport("monaco-editor", "Uri.isUri")
+  @js.native
   def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
   
   /**
@@ -81,6 +86,8 @@ object Uri extends js.Object {
     * @param pathFragment The path fragment to add to the Uri path.
     * @returns The resulting Uri.
     */
+  @JSImport("monaco-editor", "Uri.joinPath")
+  @js.native
   def joinPath(uri: Uri, pathFragment: String*): Uri = js.native
   
   /**
@@ -89,14 +96,26 @@ object Uri extends js.Object {
     *
     * @param value A string which represents an Uri (see `Uri#toString`).
     */
+  @JSImport("monaco-editor", "Uri.parse")
+  @js.native
   def parse(value: String): Uri = js.native
+  @JSImport("monaco-editor", "Uri.parse")
+  @js.native
   def parse(value: String, _strict: Boolean): Uri = js.native
   
+  @JSImport("monaco-editor", "Uri.revive")
+  @js.native
   def revive(): js.UndefOr[Uri] = js.native
+  @JSImport("monaco-editor", "Uri.revive")
+  @js.native
   def revive(data: Uri): js.UndefOr[Uri] = js.native
+  @JSImport("monaco-editor", "Uri.revive")
+  @js.native
   def revive(data: UriComponents): js.UndefOr[Uri] = js.native
-  @JSName("revive")
+  @JSImport("monaco-editor", "Uri.revive")
+  @js.native
   def revive_Uri(data: Uri): Uri = js.native
-  @JSName("revive")
+  @JSImport("monaco-editor", "Uri.revive")
+  @js.native
   def revive_Uri(data: UriComponents): Uri = js.native
 }

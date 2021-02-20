@@ -4,12 +4,13 @@ import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Family
 import typings.vexflow.anon.Firstxpx
 import typings.vexflow.anon.Lastindices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaveTie extends js.Object {
+trait StaveTie extends StObject {
   
   def draw(): Boolean = js.native
   
@@ -42,39 +43,27 @@ object StaveTie {
   }
   
   @scala.inline
-  implicit class StaveTieOps[Self <: StaveTie] (val x: Self) extends AnyVal {
+  implicit class StaveTieMutableBuilder[Self <: StaveTie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderText(value: (Double, Double) => Unit): Self = StObject.set(x, "renderText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDraw(value: () => Boolean): Self = this.set("draw", js.Any.fromFunction0(value))
+    def setRenderTie(value: Firstxpx => Unit): Self = StObject.set(x, "renderTie", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsPartial(value: () => Boolean): Self = this.set("isPartial", js.Any.fromFunction0(value))
+    def setSetContext(value: IRenderContext => StaveTie): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderText(value: (Double, Double) => Unit): Self = this.set("renderText", js.Any.fromFunction2(value))
+    def setSetFont(value: Family => StaveTie): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderTie(value: Firstxpx => Unit): Self = this.set("renderTie", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetContext(value: IRenderContext => StaveTie): Self = this.set("setContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFont(value: Family => StaveTie): Self = this.set("setFont", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNotes(value: Lastindices => StaveTie): Self = this.set("setNotes", js.Any.fromFunction1(value))
+    def setSetNotes(value: Lastindices => StaveTie): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewsListResponse extends js.Object {
+trait ReviewsListResponse extends StObject {
   
   /** Information about the current page. */
   var pageInfo: js.UndefOr[PageInfo] = js.native
@@ -25,39 +26,27 @@ object ReviewsListResponse {
   }
   
   @scala.inline
-  implicit class ReviewsListResponseOps[Self <: ReviewsListResponse] (val x: Self) extends AnyVal {
+  implicit class ReviewsListResponseMutableBuilder[Self <: ReviewsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReviews(value: js.Array[Review]): Self = StObject.set(x, "reviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageInfo(value: PageInfo): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
     
     @scala.inline
-    def deletePageInfo: Self = this.set("pageInfo", js.undefined)
+    def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
     
     @scala.inline
-    def setReviewsVarargs(value: Review*): Self = this.set("reviews", js.Array(value :_*))
+    def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviews(value: js.Array[Review]): Self = this.set("reviews", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReviews: Self = this.set("reviews", js.undefined)
-    
-    @scala.inline
-    def setTokenPagination(value: TokenPagination): Self = this.set("tokenPagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenPagination: Self = this.set("tokenPagination", js.undefined)
+    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

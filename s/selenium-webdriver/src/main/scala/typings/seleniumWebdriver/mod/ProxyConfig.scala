@@ -1,11 +1,12 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxyConfig extends js.Object {
+trait ProxyConfig extends StObject {
   
   var ftpProxy: js.UndefOr[String] = js.native
   
@@ -34,69 +35,57 @@ object ProxyConfig {
   }
   
   @scala.inline
-  implicit class ProxyConfigOps[Self <: ProxyConfig] (val x: Self) extends AnyVal {
+  implicit class ProxyConfigMutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFtpProxy(value: String): Self = StObject.set(x, "ftpProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFtpProxyUndefined: Self = StObject.set(x, "ftpProxy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpProxy(value: String): Self = StObject.set(x, "httpProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyType(value: String): Self = this.set("proxyType", value.asInstanceOf[js.Any])
+    def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
     
     @scala.inline
-    def setFtpProxy(value: String): Self = this.set("ftpProxy", value.asInstanceOf[js.Any])
+    def setNoProxy(value: String): Self = StObject.set(x, "noProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFtpProxy: Self = this.set("ftpProxy", js.undefined)
+    def setNoProxyUndefined: Self = StObject.set(x, "noProxy", js.undefined)
     
     @scala.inline
-    def setHttpProxy(value: String): Self = this.set("httpProxy", value.asInstanceOf[js.Any])
+    def setProxyAutoconfigUrl(value: String): Self = StObject.set(x, "proxyAutoconfigUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpProxy: Self = this.set("httpProxy", js.undefined)
+    def setProxyAutoconfigUrlUndefined: Self = StObject.set(x, "proxyAutoconfigUrl", js.undefined)
     
     @scala.inline
-    def setNoProxy(value: String): Self = this.set("noProxy", value.asInstanceOf[js.Any])
+    def setProxyType(value: String): Self = StObject.set(x, "proxyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoProxy: Self = this.set("noProxy", js.undefined)
+    def setSocksPassword(value: String): Self = StObject.set(x, "socksPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyAutoconfigUrl(value: String): Self = this.set("proxyAutoconfigUrl", value.asInstanceOf[js.Any])
+    def setSocksPasswordUndefined: Self = StObject.set(x, "socksPassword", js.undefined)
     
     @scala.inline
-    def deleteProxyAutoconfigUrl: Self = this.set("proxyAutoconfigUrl", js.undefined)
+    def setSocksProxy(value: String): Self = StObject.set(x, "socksProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocksPassword(value: String): Self = this.set("socksPassword", value.asInstanceOf[js.Any])
+    def setSocksProxyUndefined: Self = StObject.set(x, "socksProxy", js.undefined)
     
     @scala.inline
-    def deleteSocksPassword: Self = this.set("socksPassword", js.undefined)
+    def setSocksUsername(value: String): Self = StObject.set(x, "socksUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocksProxy(value: String): Self = this.set("socksProxy", value.asInstanceOf[js.Any])
+    def setSocksUsernameUndefined: Self = StObject.set(x, "socksUsername", js.undefined)
     
     @scala.inline
-    def deleteSocksProxy: Self = this.set("socksProxy", js.undefined)
+    def setSslProxy(value: String): Self = StObject.set(x, "sslProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocksUsername(value: String): Self = this.set("socksUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocksUsername: Self = this.set("socksUsername", js.undefined)
-    
-    @scala.inline
-    def setSslProxy(value: String): Self = this.set("sslProxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslProxy: Self = this.set("sslProxy", js.undefined)
+    def setSslProxyUndefined: Self = StObject.set(x, "sslProxy", js.undefined)
   }
 }

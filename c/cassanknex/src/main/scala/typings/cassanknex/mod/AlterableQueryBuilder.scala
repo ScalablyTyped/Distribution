@@ -1,11 +1,12 @@
 package typings.cassanknex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlterableQueryBuilder[T] extends js.Object {
+trait AlterableQueryBuilder[T] extends StObject {
   
   def alter[K /* <: /* keyof T */ String */](column: K, newType: String): this.type = js.native
   
@@ -26,27 +27,15 @@ object AlterableQueryBuilder {
   }
   
   @scala.inline
-  implicit class AlterableQueryBuilderOps[Self <: AlterableQueryBuilder[_], T] (val x: Self with AlterableQueryBuilder[T]) extends AnyVal {
+  implicit class AlterableQueryBuilderMutableBuilder[Self <: AlterableQueryBuilder[_], T] (val x: Self with AlterableQueryBuilder[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlter(value: (js.Any, String) => AlterableQueryBuilder[T]): Self = StObject.set(x, "alter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrop(value: /* repeated */ js.Any => AlterableQueryBuilder[T]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlter(value: (js.Any, String) => AlterableQueryBuilder[T]): Self = this.set("alter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDrop(value: /* repeated */ js.Any => AlterableQueryBuilder[T]): Self = this.set("drop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRename(value: (js.Any, js.Any) => AlterableQueryBuilder[T]): Self = this.set("rename", js.Any.fromFunction2(value))
+    def setRename(value: (js.Any, js.Any) => AlterableQueryBuilder[T]): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
   }
 }

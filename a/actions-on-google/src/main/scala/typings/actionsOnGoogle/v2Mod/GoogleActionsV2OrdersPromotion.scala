@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersPromotion extends js.Object {
+trait GoogleActionsV2OrdersPromotion extends StObject {
   
   /**
     * Required. Coupon code understood by 3P. For ex: GOOGLE10.
@@ -21,24 +22,12 @@ object GoogleActionsV2OrdersPromotion {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersPromotionOps[Self <: GoogleActionsV2OrdersPromotion] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersPromotionMutableBuilder[Self <: GoogleActionsV2OrdersPromotion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdTypeSpace extends js.Object {
+trait AdTypeSpace extends StObject {
   
   def expandedTextAd(): Boolean = js.native
   
@@ -38,39 +39,27 @@ object AdTypeSpace {
   }
   
   @scala.inline
-  implicit class AdTypeSpaceOps[Self <: AdTypeSpace] (val x: Self) extends AnyVal {
+  implicit class AdTypeSpaceMutableBuilder[Self <: AdTypeSpace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpandedTextAd(value: () => Boolean): Self = StObject.set(x, "expandedTextAd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGmailImageAd(value: () => Boolean): Self = StObject.set(x, "gmailImageAd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGmailMultiProductAd(value: () => Boolean): Self = StObject.set(x, "gmailMultiProductAd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpandedTextAd(value: () => Boolean): Self = this.set("expandedTextAd", js.Any.fromFunction0(value))
+    def setGmailSinglePromotionAd(value: () => Boolean): Self = StObject.set(x, "gmailSinglePromotionAd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGmailImageAd(value: () => Boolean): Self = this.set("gmailImageAd", js.Any.fromFunction0(value))
+    def setHtml5Ad(value: () => Boolean): Self = StObject.set(x, "html5Ad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGmailMultiProductAd(value: () => Boolean): Self = this.set("gmailMultiProductAd", js.Any.fromFunction0(value))
+    def setImageAd(value: () => Boolean): Self = StObject.set(x, "imageAd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGmailSinglePromotionAd(value: () => Boolean): Self = this.set("gmailSinglePromotionAd", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHtml5Ad(value: () => Boolean): Self = this.set("html5Ad", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setImageAd(value: () => Boolean): Self = this.set("imageAd", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResponsiveDisplayAd(value: () => Boolean): Self = this.set("responsiveDisplayAd", js.Any.fromFunction0(value))
+    def setResponsiveDisplayAd(value: () => Boolean): Self = StObject.set(x, "responsiveDisplayAd", js.Any.fromFunction0(value))
   }
 }

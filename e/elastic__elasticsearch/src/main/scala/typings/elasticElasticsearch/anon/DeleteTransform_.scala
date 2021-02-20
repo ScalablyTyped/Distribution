@@ -13,12 +13,13 @@ import typings.elasticElasticsearch.transportMod.RequestBody
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
 import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteTransform_ extends js.Object {
+trait DeleteTransform_ extends StObject {
   
   def deleteTransform[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def deleteTransform[TResponse, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native

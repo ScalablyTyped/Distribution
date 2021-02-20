@@ -1,6 +1,7 @@
 package typings.solidityParserAntlr.mod
 
 import typings.solidityParserAntlr.solidityParserAntlrStrings.`-_`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.solidityParserAntlr.solidityParserAntlrStrings.SlashEqualssign
   - typings.solidityParserAntlr.solidityParserAntlrStrings.PercentsignEqualssign
 */
-trait BinOp extends js.Object
+trait BinOp extends StObject
 object BinOp {
   
   @scala.inline

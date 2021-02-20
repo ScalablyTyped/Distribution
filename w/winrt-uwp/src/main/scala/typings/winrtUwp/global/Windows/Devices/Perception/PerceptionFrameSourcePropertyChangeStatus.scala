@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Perception
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the status of a property change that an app requested of a frame source. */
 @JSGlobal("Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus")
 @js.native
-object PerceptionFrameSourcePropertyChangeStatus extends js.Object {
+object PerceptionFrameSourcePropertyChangeStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

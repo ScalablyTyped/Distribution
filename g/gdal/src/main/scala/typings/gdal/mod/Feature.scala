@@ -1,12 +1,13 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "Feature")
 @js.native
-class Feature protected () extends js.Object {
+class Feature protected () extends StObject {
   def this(definition: FeatureDefn) = this()
   def this(definition: Layer) = this()
   

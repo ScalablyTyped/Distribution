@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceHealthAttestationState extends js.Object {
+trait DeviceHealthAttestationState extends StObject {
   
   /**
     * TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key
@@ -115,297 +116,285 @@ object DeviceHealthAttestationState {
   }
   
   @scala.inline
-  implicit class DeviceHealthAttestationStateOps[Self <: DeviceHealthAttestationState] (val x: Self) extends AnyVal {
+  implicit class DeviceHealthAttestationStateMutableBuilder[Self <: DeviceHealthAttestationState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestationIdentityKey(value: NullableOption[String]): Self = StObject.set(x, "attestationIdentityKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestationIdentityKeyNull: Self = StObject.set(x, "attestationIdentityKey", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttestationIdentityKeyUndefined: Self = StObject.set(x, "attestationIdentityKey", js.undefined)
     
     @scala.inline
-    def setAttestationIdentityKey(value: NullableOption[String]): Self = this.set("attestationIdentityKey", value.asInstanceOf[js.Any])
+    def setBitLockerStatus(value: NullableOption[String]): Self = StObject.set(x, "bitLockerStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttestationIdentityKey: Self = this.set("attestationIdentityKey", js.undefined)
+    def setBitLockerStatusNull: Self = StObject.set(x, "bitLockerStatus", null)
     
     @scala.inline
-    def setAttestationIdentityKeyNull: Self = this.set("attestationIdentityKey", null)
+    def setBitLockerStatusUndefined: Self = StObject.set(x, "bitLockerStatus", js.undefined)
     
     @scala.inline
-    def setBitLockerStatus(value: NullableOption[String]): Self = this.set("bitLockerStatus", value.asInstanceOf[js.Any])
+    def setBootAppSecurityVersion(value: NullableOption[String]): Self = StObject.set(x, "bootAppSecurityVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBitLockerStatus: Self = this.set("bitLockerStatus", js.undefined)
+    def setBootAppSecurityVersionNull: Self = StObject.set(x, "bootAppSecurityVersion", null)
     
     @scala.inline
-    def setBitLockerStatusNull: Self = this.set("bitLockerStatus", null)
+    def setBootAppSecurityVersionUndefined: Self = StObject.set(x, "bootAppSecurityVersion", js.undefined)
     
     @scala.inline
-    def setBootAppSecurityVersion(value: NullableOption[String]): Self = this.set("bootAppSecurityVersion", value.asInstanceOf[js.Any])
+    def setBootDebugging(value: NullableOption[String]): Self = StObject.set(x, "bootDebugging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootAppSecurityVersion: Self = this.set("bootAppSecurityVersion", js.undefined)
+    def setBootDebuggingNull: Self = StObject.set(x, "bootDebugging", null)
     
     @scala.inline
-    def setBootAppSecurityVersionNull: Self = this.set("bootAppSecurityVersion", null)
+    def setBootDebuggingUndefined: Self = StObject.set(x, "bootDebugging", js.undefined)
     
     @scala.inline
-    def setBootDebugging(value: NullableOption[String]): Self = this.set("bootDebugging", value.asInstanceOf[js.Any])
+    def setBootManagerSecurityVersion(value: NullableOption[String]): Self = StObject.set(x, "bootManagerSecurityVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootDebugging: Self = this.set("bootDebugging", js.undefined)
+    def setBootManagerSecurityVersionNull: Self = StObject.set(x, "bootManagerSecurityVersion", null)
     
     @scala.inline
-    def setBootDebuggingNull: Self = this.set("bootDebugging", null)
+    def setBootManagerSecurityVersionUndefined: Self = StObject.set(x, "bootManagerSecurityVersion", js.undefined)
     
     @scala.inline
-    def setBootManagerSecurityVersion(value: NullableOption[String]): Self = this.set("bootManagerSecurityVersion", value.asInstanceOf[js.Any])
+    def setBootManagerVersion(value: NullableOption[String]): Self = StObject.set(x, "bootManagerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootManagerSecurityVersion: Self = this.set("bootManagerSecurityVersion", js.undefined)
+    def setBootManagerVersionNull: Self = StObject.set(x, "bootManagerVersion", null)
     
     @scala.inline
-    def setBootManagerSecurityVersionNull: Self = this.set("bootManagerSecurityVersion", null)
+    def setBootManagerVersionUndefined: Self = StObject.set(x, "bootManagerVersion", js.undefined)
     
     @scala.inline
-    def setBootManagerVersion(value: NullableOption[String]): Self = this.set("bootManagerVersion", value.asInstanceOf[js.Any])
+    def setBootRevisionListInfo(value: NullableOption[String]): Self = StObject.set(x, "bootRevisionListInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootManagerVersion: Self = this.set("bootManagerVersion", js.undefined)
+    def setBootRevisionListInfoNull: Self = StObject.set(x, "bootRevisionListInfo", null)
     
     @scala.inline
-    def setBootManagerVersionNull: Self = this.set("bootManagerVersion", null)
+    def setBootRevisionListInfoUndefined: Self = StObject.set(x, "bootRevisionListInfo", js.undefined)
     
     @scala.inline
-    def setBootRevisionListInfo(value: NullableOption[String]): Self = this.set("bootRevisionListInfo", value.asInstanceOf[js.Any])
+    def setCodeIntegrity(value: NullableOption[String]): Self = StObject.set(x, "codeIntegrity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootRevisionListInfo: Self = this.set("bootRevisionListInfo", js.undefined)
+    def setCodeIntegrityCheckVersion(value: NullableOption[String]): Self = StObject.set(x, "codeIntegrityCheckVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootRevisionListInfoNull: Self = this.set("bootRevisionListInfo", null)
+    def setCodeIntegrityCheckVersionNull: Self = StObject.set(x, "codeIntegrityCheckVersion", null)
     
     @scala.inline
-    def setCodeIntegrity(value: NullableOption[String]): Self = this.set("codeIntegrity", value.asInstanceOf[js.Any])
+    def setCodeIntegrityCheckVersionUndefined: Self = StObject.set(x, "codeIntegrityCheckVersion", js.undefined)
     
     @scala.inline
-    def deleteCodeIntegrity: Self = this.set("codeIntegrity", js.undefined)
+    def setCodeIntegrityNull: Self = StObject.set(x, "codeIntegrity", null)
     
     @scala.inline
-    def setCodeIntegrityNull: Self = this.set("codeIntegrity", null)
+    def setCodeIntegrityPolicy(value: NullableOption[String]): Self = StObject.set(x, "codeIntegrityPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeIntegrityCheckVersion(value: NullableOption[String]): Self = this.set("codeIntegrityCheckVersion", value.asInstanceOf[js.Any])
+    def setCodeIntegrityPolicyNull: Self = StObject.set(x, "codeIntegrityPolicy", null)
     
     @scala.inline
-    def deleteCodeIntegrityCheckVersion: Self = this.set("codeIntegrityCheckVersion", js.undefined)
+    def setCodeIntegrityPolicyUndefined: Self = StObject.set(x, "codeIntegrityPolicy", js.undefined)
     
     @scala.inline
-    def setCodeIntegrityCheckVersionNull: Self = this.set("codeIntegrityCheckVersion", null)
+    def setCodeIntegrityUndefined: Self = StObject.set(x, "codeIntegrity", js.undefined)
     
     @scala.inline
-    def setCodeIntegrityPolicy(value: NullableOption[String]): Self = this.set("codeIntegrityPolicy", value.asInstanceOf[js.Any])
+    def setContentNamespaceUrl(value: NullableOption[String]): Self = StObject.set(x, "contentNamespaceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodeIntegrityPolicy: Self = this.set("codeIntegrityPolicy", js.undefined)
+    def setContentNamespaceUrlNull: Self = StObject.set(x, "contentNamespaceUrl", null)
     
     @scala.inline
-    def setCodeIntegrityPolicyNull: Self = this.set("codeIntegrityPolicy", null)
+    def setContentNamespaceUrlUndefined: Self = StObject.set(x, "contentNamespaceUrl", js.undefined)
     
     @scala.inline
-    def setContentNamespaceUrl(value: NullableOption[String]): Self = this.set("contentNamespaceUrl", value.asInstanceOf[js.Any])
+    def setContentVersion(value: NullableOption[String]): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentNamespaceUrl: Self = this.set("contentNamespaceUrl", js.undefined)
+    def setContentVersionNull: Self = StObject.set(x, "contentVersion", null)
     
     @scala.inline
-    def setContentNamespaceUrlNull: Self = this.set("contentNamespaceUrl", null)
+    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
     @scala.inline
-    def setContentVersion(value: NullableOption[String]): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    def setDataExcutionPolicy(value: NullableOption[String]): Self = StObject.set(x, "dataExcutionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentVersion: Self = this.set("contentVersion", js.undefined)
+    def setDataExcutionPolicyNull: Self = StObject.set(x, "dataExcutionPolicy", null)
     
     @scala.inline
-    def setContentVersionNull: Self = this.set("contentVersion", null)
+    def setDataExcutionPolicyUndefined: Self = StObject.set(x, "dataExcutionPolicy", js.undefined)
     
     @scala.inline
-    def setDataExcutionPolicy(value: NullableOption[String]): Self = this.set("dataExcutionPolicy", value.asInstanceOf[js.Any])
+    def setDeviceHealthAttestationStatus(value: NullableOption[String]): Self = StObject.set(x, "deviceHealthAttestationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataExcutionPolicy: Self = this.set("dataExcutionPolicy", js.undefined)
+    def setDeviceHealthAttestationStatusNull: Self = StObject.set(x, "deviceHealthAttestationStatus", null)
     
     @scala.inline
-    def setDataExcutionPolicyNull: Self = this.set("dataExcutionPolicy", null)
+    def setDeviceHealthAttestationStatusUndefined: Self = StObject.set(x, "deviceHealthAttestationStatus", js.undefined)
     
     @scala.inline
-    def setDeviceHealthAttestationStatus(value: NullableOption[String]): Self = this.set("deviceHealthAttestationStatus", value.asInstanceOf[js.Any])
+    def setEarlyLaunchAntiMalwareDriverProtection(value: NullableOption[String]): Self = StObject.set(x, "earlyLaunchAntiMalwareDriverProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceHealthAttestationStatus: Self = this.set("deviceHealthAttestationStatus", js.undefined)
+    def setEarlyLaunchAntiMalwareDriverProtectionNull: Self = StObject.set(x, "earlyLaunchAntiMalwareDriverProtection", null)
     
     @scala.inline
-    def setDeviceHealthAttestationStatusNull: Self = this.set("deviceHealthAttestationStatus", null)
+    def setEarlyLaunchAntiMalwareDriverProtectionUndefined: Self = StObject.set(x, "earlyLaunchAntiMalwareDriverProtection", js.undefined)
     
     @scala.inline
-    def setEarlyLaunchAntiMalwareDriverProtection(value: NullableOption[String]): Self = this.set("earlyLaunchAntiMalwareDriverProtection", value.asInstanceOf[js.Any])
+    def setHealthAttestationSupportedStatus(value: NullableOption[String]): Self = StObject.set(x, "healthAttestationSupportedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEarlyLaunchAntiMalwareDriverProtection: Self = this.set("earlyLaunchAntiMalwareDriverProtection", js.undefined)
+    def setHealthAttestationSupportedStatusNull: Self = StObject.set(x, "healthAttestationSupportedStatus", null)
     
     @scala.inline
-    def setEarlyLaunchAntiMalwareDriverProtectionNull: Self = this.set("earlyLaunchAntiMalwareDriverProtection", null)
+    def setHealthAttestationSupportedStatusUndefined: Self = StObject.set(x, "healthAttestationSupportedStatus", js.undefined)
     
     @scala.inline
-    def setHealthAttestationSupportedStatus(value: NullableOption[String]): Self = this.set("healthAttestationSupportedStatus", value.asInstanceOf[js.Any])
+    def setHealthStatusMismatchInfo(value: NullableOption[String]): Self = StObject.set(x, "healthStatusMismatchInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthAttestationSupportedStatus: Self = this.set("healthAttestationSupportedStatus", js.undefined)
+    def setHealthStatusMismatchInfoNull: Self = StObject.set(x, "healthStatusMismatchInfo", null)
     
     @scala.inline
-    def setHealthAttestationSupportedStatusNull: Self = this.set("healthAttestationSupportedStatus", null)
+    def setHealthStatusMismatchInfoUndefined: Self = StObject.set(x, "healthStatusMismatchInfo", js.undefined)
     
     @scala.inline
-    def setHealthStatusMismatchInfo(value: NullableOption[String]): Self = this.set("healthStatusMismatchInfo", value.asInstanceOf[js.Any])
+    def setIssuedDateTime(value: String): Self = StObject.set(x, "issuedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthStatusMismatchInfo: Self = this.set("healthStatusMismatchInfo", js.undefined)
+    def setIssuedDateTimeUndefined: Self = StObject.set(x, "issuedDateTime", js.undefined)
     
     @scala.inline
-    def setHealthStatusMismatchInfoNull: Self = this.set("healthStatusMismatchInfo", null)
+    def setLastUpdateDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastUpdateDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuedDateTime(value: String): Self = this.set("issuedDateTime", value.asInstanceOf[js.Any])
+    def setLastUpdateDateTimeNull: Self = StObject.set(x, "lastUpdateDateTime", null)
     
     @scala.inline
-    def deleteIssuedDateTime: Self = this.set("issuedDateTime", js.undefined)
+    def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "lastUpdateDateTime", js.undefined)
     
     @scala.inline
-    def setLastUpdateDateTime(value: NullableOption[String]): Self = this.set("lastUpdateDateTime", value.asInstanceOf[js.Any])
+    def setOperatingSystemKernelDebugging(value: NullableOption[String]): Self = StObject.set(x, "operatingSystemKernelDebugging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdateDateTime: Self = this.set("lastUpdateDateTime", js.undefined)
+    def setOperatingSystemKernelDebuggingNull: Self = StObject.set(x, "operatingSystemKernelDebugging", null)
     
     @scala.inline
-    def setLastUpdateDateTimeNull: Self = this.set("lastUpdateDateTime", null)
+    def setOperatingSystemKernelDebuggingUndefined: Self = StObject.set(x, "operatingSystemKernelDebugging", js.undefined)
     
     @scala.inline
-    def setOperatingSystemKernelDebugging(value: NullableOption[String]): Self = this.set("operatingSystemKernelDebugging", value.asInstanceOf[js.Any])
+    def setOperatingSystemRevListInfo(value: NullableOption[String]): Self = StObject.set(x, "operatingSystemRevListInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperatingSystemKernelDebugging: Self = this.set("operatingSystemKernelDebugging", js.undefined)
+    def setOperatingSystemRevListInfoNull: Self = StObject.set(x, "operatingSystemRevListInfo", null)
     
     @scala.inline
-    def setOperatingSystemKernelDebuggingNull: Self = this.set("operatingSystemKernelDebugging", null)
+    def setOperatingSystemRevListInfoUndefined: Self = StObject.set(x, "operatingSystemRevListInfo", js.undefined)
     
     @scala.inline
-    def setOperatingSystemRevListInfo(value: NullableOption[String]): Self = this.set("operatingSystemRevListInfo", value.asInstanceOf[js.Any])
+    def setPcr0(value: NullableOption[String]): Self = StObject.set(x, "pcr0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperatingSystemRevListInfo: Self = this.set("operatingSystemRevListInfo", js.undefined)
+    def setPcr0Null: Self = StObject.set(x, "pcr0", null)
     
     @scala.inline
-    def setOperatingSystemRevListInfoNull: Self = this.set("operatingSystemRevListInfo", null)
+    def setPcr0Undefined: Self = StObject.set(x, "pcr0", js.undefined)
     
     @scala.inline
-    def setPcr0(value: NullableOption[String]): Self = this.set("pcr0", value.asInstanceOf[js.Any])
+    def setPcrHashAlgorithm(value: NullableOption[String]): Self = StObject.set(x, "pcrHashAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePcr0: Self = this.set("pcr0", js.undefined)
+    def setPcrHashAlgorithmNull: Self = StObject.set(x, "pcrHashAlgorithm", null)
     
     @scala.inline
-    def setPcr0Null: Self = this.set("pcr0", null)
+    def setPcrHashAlgorithmUndefined: Self = StObject.set(x, "pcrHashAlgorithm", js.undefined)
     
     @scala.inline
-    def setPcrHashAlgorithm(value: NullableOption[String]): Self = this.set("pcrHashAlgorithm", value.asInstanceOf[js.Any])
+    def setResetCount(value: Double): Self = StObject.set(x, "resetCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePcrHashAlgorithm: Self = this.set("pcrHashAlgorithm", js.undefined)
+    def setResetCountUndefined: Self = StObject.set(x, "resetCount", js.undefined)
     
     @scala.inline
-    def setPcrHashAlgorithmNull: Self = this.set("pcrHashAlgorithm", null)
+    def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetCount(value: Double): Self = this.set("resetCount", value.asInstanceOf[js.Any])
+    def setRestartCountUndefined: Self = StObject.set(x, "restartCount", js.undefined)
     
     @scala.inline
-    def deleteResetCount: Self = this.set("resetCount", js.undefined)
+    def setSafeMode(value: NullableOption[String]): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartCount(value: Double): Self = this.set("restartCount", value.asInstanceOf[js.Any])
+    def setSafeModeNull: Self = StObject.set(x, "safeMode", null)
     
     @scala.inline
-    def deleteRestartCount: Self = this.set("restartCount", js.undefined)
+    def setSafeModeUndefined: Self = StObject.set(x, "safeMode", js.undefined)
     
     @scala.inline
-    def setSafeMode(value: NullableOption[String]): Self = this.set("safeMode", value.asInstanceOf[js.Any])
+    def setSecureBoot(value: NullableOption[String]): Self = StObject.set(x, "secureBoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSafeMode: Self = this.set("safeMode", js.undefined)
+    def setSecureBootConfigurationPolicyFingerPrint(value: NullableOption[String]): Self = StObject.set(x, "secureBootConfigurationPolicyFingerPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeModeNull: Self = this.set("safeMode", null)
+    def setSecureBootConfigurationPolicyFingerPrintNull: Self = StObject.set(x, "secureBootConfigurationPolicyFingerPrint", null)
     
     @scala.inline
-    def setSecureBoot(value: NullableOption[String]): Self = this.set("secureBoot", value.asInstanceOf[js.Any])
+    def setSecureBootConfigurationPolicyFingerPrintUndefined: Self = StObject.set(x, "secureBootConfigurationPolicyFingerPrint", js.undefined)
     
     @scala.inline
-    def deleteSecureBoot: Self = this.set("secureBoot", js.undefined)
+    def setSecureBootNull: Self = StObject.set(x, "secureBoot", null)
     
     @scala.inline
-    def setSecureBootNull: Self = this.set("secureBoot", null)
+    def setSecureBootUndefined: Self = StObject.set(x, "secureBoot", js.undefined)
     
     @scala.inline
-    def setSecureBootConfigurationPolicyFingerPrint(value: NullableOption[String]): Self = this.set("secureBootConfigurationPolicyFingerPrint", value.asInstanceOf[js.Any])
+    def setTestSigning(value: NullableOption[String]): Self = StObject.set(x, "testSigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecureBootConfigurationPolicyFingerPrint: Self = this.set("secureBootConfigurationPolicyFingerPrint", js.undefined)
+    def setTestSigningNull: Self = StObject.set(x, "testSigning", null)
     
     @scala.inline
-    def setSecureBootConfigurationPolicyFingerPrintNull: Self = this.set("secureBootConfigurationPolicyFingerPrint", null)
+    def setTestSigningUndefined: Self = StObject.set(x, "testSigning", js.undefined)
     
     @scala.inline
-    def setTestSigning(value: NullableOption[String]): Self = this.set("testSigning", value.asInstanceOf[js.Any])
+    def setTpmVersion(value: NullableOption[String]): Self = StObject.set(x, "tpmVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTestSigning: Self = this.set("testSigning", js.undefined)
+    def setTpmVersionNull: Self = StObject.set(x, "tpmVersion", null)
     
     @scala.inline
-    def setTestSigningNull: Self = this.set("testSigning", null)
+    def setTpmVersionUndefined: Self = StObject.set(x, "tpmVersion", js.undefined)
     
     @scala.inline
-    def setTpmVersion(value: NullableOption[String]): Self = this.set("tpmVersion", value.asInstanceOf[js.Any])
+    def setVirtualSecureMode(value: NullableOption[String]): Self = StObject.set(x, "virtualSecureMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTpmVersion: Self = this.set("tpmVersion", js.undefined)
+    def setVirtualSecureModeNull: Self = StObject.set(x, "virtualSecureMode", null)
     
     @scala.inline
-    def setTpmVersionNull: Self = this.set("tpmVersion", null)
+    def setVirtualSecureModeUndefined: Self = StObject.set(x, "virtualSecureMode", js.undefined)
     
     @scala.inline
-    def setVirtualSecureMode(value: NullableOption[String]): Self = this.set("virtualSecureMode", value.asInstanceOf[js.Any])
+    def setWindowsPE(value: NullableOption[String]): Self = StObject.set(x, "windowsPE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVirtualSecureMode: Self = this.set("virtualSecureMode", js.undefined)
+    def setWindowsPENull: Self = StObject.set(x, "windowsPE", null)
     
     @scala.inline
-    def setVirtualSecureModeNull: Self = this.set("virtualSecureMode", null)
-    
-    @scala.inline
-    def setWindowsPE(value: NullableOption[String]): Self = this.set("windowsPE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsPE: Self = this.set("windowsPE", js.undefined)
-    
-    @scala.inline
-    def setWindowsPENull: Self = this.set("windowsPE", null)
+    def setWindowsPEUndefined: Self = StObject.set(x, "windowsPE", js.undefined)
   }
 }

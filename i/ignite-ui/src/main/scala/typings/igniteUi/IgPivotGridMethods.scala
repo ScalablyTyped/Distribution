@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgPivotGridMethods extends js.Object {
+trait IgPivotGridMethods extends StObject {
   
   /**
     * Returns an array with the applied sort directions on the igPivotGrid's columns. The returned array contains objects with the following properties:

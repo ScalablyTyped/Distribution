@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The properties for one end of a Line connection.
   */
 @js.native
-trait SchemaLineConnection extends js.Object {
+trait SchemaLineConnection extends StObject {
   
   /**
     * The object ID of the connected page element.  Some page elements, such as
@@ -40,30 +41,18 @@ object SchemaLineConnection {
   }
   
   @scala.inline
-  implicit class SchemaLineConnectionOps[Self <: SchemaLineConnection] (val x: Self) extends AnyVal {
+  implicit class SchemaLineConnectionMutableBuilder[Self <: SchemaLineConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedObjectId(value: String): Self = this.set("connectedObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectedObjectId: Self = this.set("connectedObjectId", js.undefined)
-    
-    @scala.inline
-    def setConnectionSiteIndex(value: Double): Self = this.set("connectionSiteIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionSiteIndex: Self = this.set("connectionSiteIndex", js.undefined)
+    def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
   }
 }

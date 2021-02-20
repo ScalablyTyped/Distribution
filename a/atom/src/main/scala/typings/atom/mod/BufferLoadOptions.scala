@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferLoadOptions extends js.Object {
+trait BufferLoadOptions extends StObject {
   
   /** The file's encoding. */
   var encoding: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object BufferLoadOptions {
   }
   
   @scala.inline
-  implicit class BufferLoadOptionsOps[Self <: BufferLoadOptions] (val x: Self) extends AnyVal {
+  implicit class BufferLoadOptionsMutableBuilder[Self <: BufferLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setShouldDestroyOnFileDelete(value: () => Boolean): Self = this.set("shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShouldDestroyOnFileDelete: Self = this.set("shouldDestroyOnFileDelete", js.undefined)
+    def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
   }
 }

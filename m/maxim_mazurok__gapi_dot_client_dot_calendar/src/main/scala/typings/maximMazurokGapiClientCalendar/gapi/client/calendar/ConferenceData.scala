@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConferenceData extends js.Object {
+trait ConferenceData extends StObject {
   
   /**
     * The ID of the conference.
@@ -61,63 +62,51 @@ object ConferenceData {
   }
   
   @scala.inline
-  implicit class ConferenceDataOps[Self <: ConferenceData] (val x: Self) extends AnyVal {
+  implicit class ConferenceDataMutableBuilder[Self <: ConferenceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConferenceId(value: String): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConferenceSolution(value: ConferenceSolution): Self = StObject.set(x, "conferenceSolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConferenceId(value: String): Self = this.set("conferenceId", value.asInstanceOf[js.Any])
+    def setConferenceSolutionUndefined: Self = StObject.set(x, "conferenceSolution", js.undefined)
     
     @scala.inline
-    def deleteConferenceId: Self = this.set("conferenceId", js.undefined)
+    def setCreateRequest(value: CreateConferenceRequest): Self = StObject.set(x, "createRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConferenceSolution(value: ConferenceSolution): Self = this.set("conferenceSolution", value.asInstanceOf[js.Any])
+    def setCreateRequestUndefined: Self = StObject.set(x, "createRequest", js.undefined)
     
     @scala.inline
-    def deleteConferenceSolution: Self = this.set("conferenceSolution", js.undefined)
+    def setEntryPoints(value: js.Array[EntryPoint]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateRequest(value: CreateConferenceRequest): Self = this.set("createRequest", value.asInstanceOf[js.Any])
+    def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
     @scala.inline
-    def deleteCreateRequest: Self = this.set("createRequest", js.undefined)
+    def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
     
     @scala.inline
-    def setEntryPointsVarargs(value: EntryPoint*): Self = this.set("entryPoints", js.Array(value :_*))
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPoints(value: js.Array[EntryPoint]): Self = this.set("entryPoints", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteEntryPoints: Self = this.set("entryPoints", js.undefined)
+    def setParameters(value: ConferenceParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ConferenceParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

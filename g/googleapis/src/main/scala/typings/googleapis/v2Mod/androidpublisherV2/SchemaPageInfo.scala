@@ -1,11 +1,12 @@
 package typings.googleapis.v2Mod.androidpublisherV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPageInfo extends js.Object {
+trait SchemaPageInfo extends StObject {
   
   var resultPerPage: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object SchemaPageInfo {
   }
   
   @scala.inline
-  implicit class SchemaPageInfoOps[Self <: SchemaPageInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaPageInfoMutableBuilder[Self <: SchemaPageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResultPerPage(value: Double): Self = StObject.set(x, "resultPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultPerPageUndefined: Self = StObject.set(x, "resultPerPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultPerPage(value: Double): Self = this.set("resultPerPage", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteResultPerPage: Self = this.set("resultPerPage", js.undefined)
+    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
-    
-    @scala.inline
-    def setTotalResults(value: Double): Self = this.set("totalResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResults: Self = this.set("totalResults", js.undefined)
+    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
   }
 }

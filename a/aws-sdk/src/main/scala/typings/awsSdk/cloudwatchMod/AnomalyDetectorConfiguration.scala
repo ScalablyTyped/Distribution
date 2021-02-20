@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnomalyDetectorConfiguration extends js.Object {
+trait AnomalyDetectorConfiguration extends StObject {
   
   /**
     * An array of time ranges to exclude from use when the anomaly detection model is trained. Use this to make sure that events that could cause unusual values for the metric, such as deployments, aren't used when CloudWatch creates the model.
@@ -26,33 +27,21 @@ object AnomalyDetectorConfiguration {
   }
   
   @scala.inline
-  implicit class AnomalyDetectorConfigurationOps[Self <: AnomalyDetectorConfiguration] (val x: Self) extends AnyVal {
+  implicit class AnomalyDetectorConfigurationMutableBuilder[Self <: AnomalyDetectorConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedTimeRanges(value: AnomalyDetectorExcludedTimeRanges): Self = StObject.set(x, "ExcludedTimeRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedTimeRangesUndefined: Self = StObject.set(x, "ExcludedTimeRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedTimeRangesVarargs(value: Range*): Self = StObject.set(x, "ExcludedTimeRanges", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedTimeRangesVarargs(value: Range*): Self = this.set("ExcludedTimeRanges", js.Array(value :_*))
+    def setMetricTimezone(value: AnomalyDetectorMetricTimezone): Self = StObject.set(x, "MetricTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedTimeRanges(value: AnomalyDetectorExcludedTimeRanges): Self = this.set("ExcludedTimeRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedTimeRanges: Self = this.set("ExcludedTimeRanges", js.undefined)
-    
-    @scala.inline
-    def setMetricTimezone(value: AnomalyDetectorMetricTimezone): Self = this.set("MetricTimezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricTimezone: Self = this.set("MetricTimezone", js.undefined)
+    def setMetricTimezoneUndefined: Self = StObject.set(x, "MetricTimezone", js.undefined)
   }
 }

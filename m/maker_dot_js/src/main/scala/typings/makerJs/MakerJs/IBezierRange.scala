@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Bezier t values for an arc path segment in a bezier curve.
   */
 @js.native
-trait IBezierRange extends js.Object {
+trait IBezierRange extends StObject {
   
   /**
     * The bezier t-value at the end point.
@@ -29,24 +30,12 @@ object IBezierRange {
   }
   
   @scala.inline
-  implicit class IBezierRangeOps[Self <: IBezierRange] (val x: Self) extends AnyVal {
+  implicit class IBezierRangeMutableBuilder[Self <: IBezierRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndT(value: Double): Self = StObject.set(x, "endT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndT(value: Double): Self = this.set("endT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartT(value: Double): Self = this.set("startT", value.asInstanceOf[js.Any])
+    def setStartT(value: Double): Self = StObject.set(x, "startT", value.asInstanceOf[js.Any])
   }
 }

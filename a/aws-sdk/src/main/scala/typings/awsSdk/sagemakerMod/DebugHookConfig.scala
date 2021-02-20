@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugHookConfig extends js.Object {
+trait DebugHookConfig extends StObject {
   
   /**
     * Configuration information for tensor collections.
@@ -36,42 +37,30 @@ object DebugHookConfig {
   }
   
   @scala.inline
-  implicit class DebugHookConfigOps[Self <: DebugHookConfig] (val x: Self) extends AnyVal {
+  implicit class DebugHookConfigMutableBuilder[Self <: DebugHookConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionConfigurations(value: CollectionConfigurations): Self = StObject.set(x, "CollectionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionConfigurationsUndefined: Self = StObject.set(x, "CollectionConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionConfigurationsVarargs(value: CollectionConfiguration*): Self = StObject.set(x, "CollectionConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = this.set("S3OutputPath", value.asInstanceOf[js.Any])
+    def setHookParameters(value: HookParameters): Self = StObject.set(x, "HookParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionConfigurationsVarargs(value: CollectionConfiguration*): Self = this.set("CollectionConfigurations", js.Array(value :_*))
+    def setHookParametersUndefined: Self = StObject.set(x, "HookParameters", js.undefined)
     
     @scala.inline
-    def setCollectionConfigurations(value: CollectionConfigurations): Self = this.set("CollectionConfigurations", value.asInstanceOf[js.Any])
+    def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollectionConfigurations: Self = this.set("CollectionConfigurations", js.undefined)
+    def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
     
     @scala.inline
-    def setHookParameters(value: HookParameters): Self = this.set("HookParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHookParameters: Self = this.set("HookParameters", js.undefined)
-    
-    @scala.inline
-    def setLocalPath(value: DirectoryPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalPath: Self = this.set("LocalPath", js.undefined)
+    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.vueRouter.routerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueRouter.vueRouterStrings.history
   - typings.vueRouter.vueRouterStrings.`abstract`
 */
-trait RouterMode extends js.Object
+trait RouterMode extends StObject
 object RouterMode {
   
   @scala.inline

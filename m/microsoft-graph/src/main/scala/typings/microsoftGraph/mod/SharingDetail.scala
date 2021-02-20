@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharingDetail extends js.Object {
+trait SharingDetail extends StObject {
   
   // The user who shared the document.
   var sharedBy: js.UndefOr[NullableOption[InsightIdentity]] = js.native
@@ -34,63 +35,51 @@ object SharingDetail {
   }
   
   @scala.inline
-  implicit class SharingDetailOps[Self <: SharingDetail] (val x: Self) extends AnyVal {
+  implicit class SharingDetailMutableBuilder[Self <: SharingDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSharedBy(value: NullableOption[InsightIdentity]): Self = StObject.set(x, "sharedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSharedByNull: Self = StObject.set(x, "sharedBy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharedByUndefined: Self = StObject.set(x, "sharedBy", js.undefined)
     
     @scala.inline
-    def setSharedBy(value: NullableOption[InsightIdentity]): Self = this.set("sharedBy", value.asInstanceOf[js.Any])
+    def setSharedDateTime(value: NullableOption[String]): Self = StObject.set(x, "sharedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedBy: Self = this.set("sharedBy", js.undefined)
+    def setSharedDateTimeNull: Self = StObject.set(x, "sharedDateTime", null)
     
     @scala.inline
-    def setSharedByNull: Self = this.set("sharedBy", null)
+    def setSharedDateTimeUndefined: Self = StObject.set(x, "sharedDateTime", js.undefined)
     
     @scala.inline
-    def setSharedDateTime(value: NullableOption[String]): Self = this.set("sharedDateTime", value.asInstanceOf[js.Any])
+    def setSharingReference(value: NullableOption[ResourceReference]): Self = StObject.set(x, "sharingReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedDateTime: Self = this.set("sharedDateTime", js.undefined)
+    def setSharingReferenceNull: Self = StObject.set(x, "sharingReference", null)
     
     @scala.inline
-    def setSharedDateTimeNull: Self = this.set("sharedDateTime", null)
+    def setSharingReferenceUndefined: Self = StObject.set(x, "sharingReference", js.undefined)
     
     @scala.inline
-    def setSharingReference(value: NullableOption[ResourceReference]): Self = this.set("sharingReference", value.asInstanceOf[js.Any])
+    def setSharingSubject(value: NullableOption[String]): Self = StObject.set(x, "sharingSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharingReference: Self = this.set("sharingReference", js.undefined)
+    def setSharingSubjectNull: Self = StObject.set(x, "sharingSubject", null)
     
     @scala.inline
-    def setSharingReferenceNull: Self = this.set("sharingReference", null)
+    def setSharingSubjectUndefined: Self = StObject.set(x, "sharingSubject", js.undefined)
     
     @scala.inline
-    def setSharingSubject(value: NullableOption[String]): Self = this.set("sharingSubject", value.asInstanceOf[js.Any])
+    def setSharingType(value: NullableOption[String]): Self = StObject.set(x, "sharingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharingSubject: Self = this.set("sharingSubject", js.undefined)
+    def setSharingTypeNull: Self = StObject.set(x, "sharingType", null)
     
     @scala.inline
-    def setSharingSubjectNull: Self = this.set("sharingSubject", null)
-    
-    @scala.inline
-    def setSharingType(value: NullableOption[String]): Self = this.set("sharingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharingType: Self = this.set("sharingType", js.undefined)
-    
-    @scala.inline
-    def setSharingTypeNull: Self = this.set("sharingType", null)
+    def setSharingTypeUndefined: Self = StObject.set(x, "sharingType", js.undefined)
   }
 }

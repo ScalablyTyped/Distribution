@@ -2,12 +2,13 @@ package typings.tern.anon
 
 import typings.tern.ternMod.DefinitionQuery
 import typings.tern.ternMod.DefinitionQueryResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryDefinitionQuery extends js.Object {
+trait QueryDefinitionQuery extends StObject {
   
   var query: DefinitionQuery = js.native
   
@@ -22,24 +23,12 @@ object QueryDefinitionQuery {
   }
   
   @scala.inline
-  implicit class QueryDefinitionQueryOps[Self <: QueryDefinitionQuery] (val x: Self) extends AnyVal {
+  implicit class QueryDefinitionQueryMutableBuilder[Self <: QueryDefinitionQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery(value: DefinitionQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQuery(value: DefinitionQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: DefinitionQueryResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: DefinitionQueryResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

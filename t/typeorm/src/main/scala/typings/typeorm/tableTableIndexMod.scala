@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.metadataIndexMetadataMod.IndexMetadata
 import typings.typeorm.optionsTableIndexOptionsMod.TableIndexOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/schema-builder/table/TableIndex", JSImport.Namespace)
-@js.native
-object tableTableIndexMod extends js.Object {
+object tableTableIndexMod {
   
+  @JSImport("typeorm/schema-builder/table/TableIndex", "TableIndex")
   @js.native
-  class TableIndex protected () extends js.Object {
+  class TableIndex protected () extends StObject {
     def this(options: TableIndexOptions) = this()
     
     /**
@@ -53,12 +53,13 @@ object tableTableIndexMod extends js.Object {
     var where: String = js.native
   }
   /* static members */
-  @js.native
-  object TableIndex extends js.Object {
+  object TableIndex {
     
     /**
       * Creates index from the index metadata object.
       */
+    @JSImport("typeorm/schema-builder/table/TableIndex", "TableIndex.create")
+    @js.native
     def create(indexMetadata: IndexMetadata): TableIndex = js.native
   }
 }

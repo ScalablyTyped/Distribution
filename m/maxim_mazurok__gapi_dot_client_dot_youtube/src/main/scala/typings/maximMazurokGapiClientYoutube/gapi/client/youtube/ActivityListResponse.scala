@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityListResponse extends js.Object {
+trait ActivityListResponse extends StObject {
   
   /** Etag of this resource. */
   var etag: js.UndefOr[String] = js.native
@@ -41,75 +42,63 @@ object ActivityListResponse {
   }
   
   @scala.inline
-  implicit class ActivityListResponseOps[Self <: ActivityListResponse] (val x: Self) extends AnyVal {
+  implicit class ActivityListResponseMutableBuilder[Self <: ActivityListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setItems(value: js.Array[Activity]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteEventId: Self = this.set("eventId", js.undefined)
+    def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: Activity*): Self = this.set("items", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Activity]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setPrevPageToken(value: String): Self = StObject.set(x, "prevPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageInfo(value: PageInfo): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    def setPrevPageTokenUndefined: Self = StObject.set(x, "prevPageToken", js.undefined)
     
     @scala.inline
-    def deletePageInfo: Self = this.set("pageInfo", js.undefined)
+    def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevPageToken(value: String): Self = this.set("prevPageToken", value.asInstanceOf[js.Any])
+    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     
     @scala.inline
-    def deletePrevPageToken: Self = this.set("prevPageToken", js.undefined)
+    def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenPagination(value: js.Any): Self = this.set("tokenPagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenPagination: Self = this.set("tokenPagination", js.undefined)
-    
-    @scala.inline
-    def setVisitorId(value: String): Self = this.set("visitorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisitorId: Self = this.set("visitorId", js.undefined)
+    def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
   }
 }

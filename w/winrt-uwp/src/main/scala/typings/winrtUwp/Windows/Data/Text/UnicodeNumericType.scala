@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Data.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnicodeNumericType extends js.Object
+sealed trait UnicodeNumericType extends StObject
 /** Defines the type of numeral when a Unicode character represents a number. */
 @JSGlobal("Windows.Data.Text.UnicodeNumericType")
 @js.native
-object UnicodeNumericType extends js.Object {
+object UnicodeNumericType extends StObject {
   
   /** A decimal digit in a decimal system that uses 0 through 9. */
   @js.native

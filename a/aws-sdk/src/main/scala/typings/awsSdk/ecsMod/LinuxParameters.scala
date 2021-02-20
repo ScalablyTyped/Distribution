@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinuxParameters extends js.Object {
+trait LinuxParameters extends StObject {
   
   /**
     * The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.  For tasks that use the Fargate launch type, capabilities is supported for all platform versions but the add parameter is only supported if using platform version 1.4.0 or later. 
@@ -51,66 +52,54 @@ object LinuxParameters {
   }
   
   @scala.inline
-  implicit class LinuxParametersOps[Self <: LinuxParameters] (val x: Self) extends AnyVal {
+  implicit class LinuxParametersMutableBuilder[Self <: LinuxParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: KernelCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevices(value: DevicesList): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: KernelCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
     @scala.inline
-    def setDevicesVarargs(value: Device*): Self = this.set("devices", js.Array(value :_*))
+    def setInitProcessEnabled(value: BoxedBoolean): Self = StObject.set(x, "initProcessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevices(value: DevicesList): Self = this.set("devices", value.asInstanceOf[js.Any])
+    def setInitProcessEnabledUndefined: Self = StObject.set(x, "initProcessEnabled", js.undefined)
     
     @scala.inline
-    def deleteDevices: Self = this.set("devices", js.undefined)
+    def setMaxSwap(value: BoxedInteger): Self = StObject.set(x, "maxSwap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitProcessEnabled(value: BoxedBoolean): Self = this.set("initProcessEnabled", value.asInstanceOf[js.Any])
+    def setMaxSwapUndefined: Self = StObject.set(x, "maxSwap", js.undefined)
     
     @scala.inline
-    def deleteInitProcessEnabled: Self = this.set("initProcessEnabled", js.undefined)
+    def setSharedMemorySize(value: BoxedInteger): Self = StObject.set(x, "sharedMemorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSwap(value: BoxedInteger): Self = this.set("maxSwap", value.asInstanceOf[js.Any])
+    def setSharedMemorySizeUndefined: Self = StObject.set(x, "sharedMemorySize", js.undefined)
     
     @scala.inline
-    def deleteMaxSwap: Self = this.set("maxSwap", js.undefined)
+    def setSwappiness(value: BoxedInteger): Self = StObject.set(x, "swappiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedMemorySize(value: BoxedInteger): Self = this.set("sharedMemorySize", value.asInstanceOf[js.Any])
+    def setSwappinessUndefined: Self = StObject.set(x, "swappiness", js.undefined)
     
     @scala.inline
-    def deleteSharedMemorySize: Self = this.set("sharedMemorySize", js.undefined)
+    def setTmpfs(value: TmpfsList): Self = StObject.set(x, "tmpfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwappiness(value: BoxedInteger): Self = this.set("swappiness", value.asInstanceOf[js.Any])
+    def setTmpfsUndefined: Self = StObject.set(x, "tmpfs", js.undefined)
     
     @scala.inline
-    def deleteSwappiness: Self = this.set("swappiness", js.undefined)
-    
-    @scala.inline
-    def setTmpfsVarargs(value: Tmpfs*): Self = this.set("tmpfs", js.Array(value :_*))
-    
-    @scala.inline
-    def setTmpfs(value: TmpfsList): Self = this.set("tmpfs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTmpfs: Self = this.set("tmpfs", js.undefined)
+    def setTmpfsVarargs(value: Tmpfs*): Self = StObject.set(x, "tmpfs", js.Array(value :_*))
   }
 }

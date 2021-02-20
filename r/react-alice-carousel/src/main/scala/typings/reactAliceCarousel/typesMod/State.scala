@@ -1,11 +1,12 @@
 package typings.reactAliceCarousel.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   var activeIndex: Double = js.native
   
@@ -85,108 +86,96 @@ object State {
   }
   
   @scala.inline
-  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    def setClones(value: js.Array[_]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClonesVarargs(value: js.Any*): Self = this.set("clones", js.Array(value :_*))
+    def setClonesVarargs(value: js.Any*): Self = StObject.set(x, "clones", js.Array(value :_*))
     
     @scala.inline
-    def setClones(value: js.Array[_]): Self = this.set("clones", value.asInstanceOf[js.Any])
+    def setFadeoutAnimationIndex(value: Double): Self = StObject.set(x, "fadeoutAnimationIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeoutAnimationProcessing(value: Boolean): Self = this.set("fadeoutAnimationProcessing", value.asInstanceOf[js.Any])
+    def setFadeoutAnimationIndexNull: Self = StObject.set(x, "fadeoutAnimationIndex", null)
     
     @scala.inline
-    def setInitialStageHeight(value: Double): Self = this.set("initialStageHeight", value.asInstanceOf[js.Any])
+    def setFadeoutAnimationPosition(value: Double): Self = StObject.set(x, "fadeoutAnimationPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoPlayCanceledOnAction(value: Boolean): Self = this.set("isAutoPlayCanceledOnAction", value.asInstanceOf[js.Any])
+    def setFadeoutAnimationPositionNull: Self = StObject.set(x, "fadeoutAnimationPosition", null)
     
     @scala.inline
-    def setIsAutoPlaying(value: Boolean): Self = this.set("isAutoPlaying", value.asInstanceOf[js.Any])
+    def setFadeoutAnimationProcessing(value: Boolean): Self = StObject.set(x, "fadeoutAnimationProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStageContentPartial(value: Boolean): Self = this.set("isStageContentPartial", value.asInstanceOf[js.Any])
+    def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsCount(value: Double): Self = this.set("itemsCount", value.asInstanceOf[js.Any])
+    def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
     @scala.inline
-    def setItemsInSlide(value: Double): Self = this.set("itemsInSlide", value.asInstanceOf[js.Any])
+    def setInitialStageHeight(value: Double): Self = StObject.set(x, "initialStageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsOffset(value: Double): Self = this.set("itemsOffset", value.asInstanceOf[js.Any])
+    def setIsAutoPlayCanceledOnAction(value: Boolean): Self = StObject.set(x, "isAutoPlayCanceledOnAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageContentWidth(value: Double): Self = this.set("stageContentWidth", value.asInstanceOf[js.Any])
+    def setIsAutoPlaying(value: Boolean): Self = StObject.set(x, "isAutoPlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageWidth(value: Double): Self = this.set("stageWidth", value.asInstanceOf[js.Any])
+    def setIsStageContentPartial(value: Boolean): Self = StObject.set(x, "isStageContentPartial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeAllowedPositionMax(value: Double): Self = this.set("swipeAllowedPositionMax", value.asInstanceOf[js.Any])
+    def setItemsCount(value: Double): Self = StObject.set(x, "itemsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeLimitMax(value: Double): Self = this.set("swipeLimitMax", value.asInstanceOf[js.Any])
+    def setItemsInSlide(value: Double): Self = StObject.set(x, "itemsInSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeLimitMin(value: Double): Self = this.set("swipeLimitMin", value.asInstanceOf[js.Any])
+    def setItemsOffset(value: Double): Self = StObject.set(x, "itemsOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipeShiftValue(value: Double): Self = this.set("swipeShiftValue", value.asInstanceOf[js.Any])
+    def setStageContentWidth(value: Double): Self = StObject.set(x, "stageContentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformationSetVarargs(value: TransformationSetItem*): Self = this.set("transformationSet", js.Array(value :_*))
+    def setStageWidth(value: Double): Self = StObject.set(x, "stageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformationSet(value: js.Array[TransformationSetItem]): Self = this.set("transformationSet", value.asInstanceOf[js.Any])
+    def setSwipeAllowedPositionMax(value: Double): Self = StObject.set(x, "swipeAllowedPositionMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setSwipeLimitMax(value: Double): Self = StObject.set(x, "swipeLimitMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslate3d(value: Double): Self = this.set("translate3d", value.asInstanceOf[js.Any])
+    def setSwipeLimitMin(value: Double): Self = StObject.set(x, "swipeLimitMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setSwipeShiftValue(value: Double): Self = StObject.set(x, "swipeShiftValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setTransformationSet(value: js.Array[TransformationSetItem]): Self = StObject.set(x, "transformationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeoutAnimationIndex(value: Double): Self = this.set("fadeoutAnimationIndex", value.asInstanceOf[js.Any])
+    def setTransformationSetVarargs(value: TransformationSetItem*): Self = StObject.set(x, "transformationSet", js.Array(value :_*))
     
     @scala.inline
-    def setFadeoutAnimationIndexNull: Self = this.set("fadeoutAnimationIndex", null)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeoutAnimationPosition(value: Double): Self = this.set("fadeoutAnimationPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFadeoutAnimationPositionNull: Self = this.set("fadeoutAnimationPosition", null)
-    
-    @scala.inline
-    def setInfinite(value: Boolean): Self = this.set("infinite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfinite: Self = this.set("infinite", js.undefined)
+    def setTranslate3d(value: Double): Self = StObject.set(x, "translate3d", value.asInstanceOf[js.Any])
   }
 }

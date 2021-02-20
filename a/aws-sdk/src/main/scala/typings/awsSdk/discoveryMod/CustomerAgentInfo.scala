@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerAgentInfo extends js.Object {
+trait CustomerAgentInfo extends StObject {
   
   /**
     * Number of active discovery agents.
@@ -59,39 +60,27 @@ object CustomerAgentInfo {
   }
   
   @scala.inline
-  implicit class CustomerAgentInfoOps[Self <: CustomerAgentInfo] (val x: Self) extends AnyVal {
+  implicit class CustomerAgentInfoMutableBuilder[Self <: CustomerAgentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveAgents(value: Integer): Self = StObject.set(x, "activeAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlackListedAgents(value: Integer): Self = StObject.set(x, "blackListedAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthyAgents(value: Integer): Self = StObject.set(x, "healthyAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveAgents(value: Integer): Self = this.set("activeAgents", value.asInstanceOf[js.Any])
+    def setShutdownAgents(value: Integer): Self = StObject.set(x, "shutdownAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackListedAgents(value: Integer): Self = this.set("blackListedAgents", value.asInstanceOf[js.Any])
+    def setTotalAgents(value: Integer): Self = StObject.set(x, "totalAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyAgents(value: Integer): Self = this.set("healthyAgents", value.asInstanceOf[js.Any])
+    def setUnhealthyAgents(value: Integer): Self = StObject.set(x, "unhealthyAgents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShutdownAgents(value: Integer): Self = this.set("shutdownAgents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalAgents(value: Integer): Self = this.set("totalAgents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnhealthyAgents(value: Integer): Self = this.set("unhealthyAgents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknownAgents(value: Integer): Self = this.set("unknownAgents", value.asInstanceOf[js.Any])
+    def setUnknownAgents(value: Integer): Self = StObject.set(x, "unknownAgents", value.asInstanceOf[js.Any])
   }
 }

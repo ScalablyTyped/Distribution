@@ -2,6 +2,7 @@ package typings.poi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.poi.anon.CacheDirectory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://poi.js.org/api.html#constructor-argv
   */
 @js.native
-trait PoiCore extends js.Object {
+trait PoiCore extends StObject {
   
   var cli: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CAC */ js.Any = js.native
   

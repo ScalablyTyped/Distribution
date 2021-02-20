@@ -7,6 +7,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.micros
 import typings.elasticElasticsearch.elasticElasticsearchStrings.ms
 import typings.elasticElasticsearch.elasticElasticsearchStrings.nanos
 import typings.elasticElasticsearch.elasticElasticsearchStrings.s
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,90 +44,78 @@ object CatTasks {
   }
   
   @scala.inline
-  implicit class CatTasksOps[Self <: CatTasks] (val x: Self) extends AnyVal {
+  implicit class CatTasksMutableBuilder[Self <: CatTasks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: String | js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: String | js.Array[String]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailed(value: Boolean): Self = this.set("detailed", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDetailed: Self = this.set("detailed", js.undefined)
+    def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
     @scala.inline
-    def setHVarargs(value: String*): Self = this.set("h", js.Array(value :_*))
+    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: String | js.Array[String]): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def deleteH: Self = this.set("h", js.undefined)
+    def setNode_id(value: String | js.Array[String]): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: Boolean): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setNode_idVarargs(value: String*): Self = StObject.set(x, "node_id", js.Array(value :_*))
     
     @scala.inline
-    def setNode_idVarargs(value: String*): Self = this.set("node_id", js.Array(value :_*))
+    def setParent_task(value: Double): Self = StObject.set(x, "parent_task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String | js.Array[String]): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setParent_taskUndefined: Self = StObject.set(x, "parent_task", js.undefined)
     
     @scala.inline
-    def deleteNode_id: Self = this.set("node_id", js.undefined)
+    def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent_task(value: Double): Self = this.set("parent_task", value.asInstanceOf[js.Any])
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def deleteParent_task: Self = this.set("parent_task", js.undefined)
+    def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
     
     @scala.inline
-    def setSVarargs(value: String*): Self = this.set("s", js.Array(value :_*))
+    def setTime(value: d | h | m | s | ms | micros | nanos): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: String | js.Array[String]): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
+    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: d | h | m | s | ms | micros | nanos): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setV(value: Boolean): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

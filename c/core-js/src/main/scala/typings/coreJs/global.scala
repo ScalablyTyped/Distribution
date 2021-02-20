@@ -1,6 +1,5 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.coreJs.anon.FnCall
 import typings.coreJs.anon.Typeofcore
 import typings.coreJs.core.Locale
@@ -17,161 +16,200 @@ import typings.std.SetConstructor
 import typings.std.TemplateStringsArray
 import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   /**
     * Non-standard.
     */
-  var Dict: DictConstructor = js.native
-  
-  // #############################################################################################
-  // delay - https://github.com/zloirock/core-js/#delay
-  // Modules: core.delay
-  // #############################################################################################
-  def delay(msec: Double): js.Promise[Unit] = js.native
-  
-  @JSName("$for")
-  def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.native
-  
+  @JSGlobal("Dict")
   @js.native
-  object core extends js.Object {
+  def Dict: DictConstructor = js.native
+  @scala.inline
+  def Dict_=(x: DictConstructor): Unit = js.Dynamic.global.updateDynamic("Dict")(x.asInstanceOf[js.Any])
+  
+  object core {
     
-    val Dict: DictConstructor = js.native
-    
-    @JSName("_")
-    val _underscore: Boolean = js.native
-    
-    def addLocale(lang: java.lang.String, locale: Locale): Typeofcore = js.native
-    
-    def clearImmediate(handle: Double): Unit = js.native
-    
-    def delay(msec: Double): js.Promise[Unit] = js.native
-    
-    @JSName("$for")
-    def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.native
-    
-    def getIterator[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
-    
-    val global: js.Any = js.native
-    
-    def isIterable(value: js.Any): Boolean = js.native
-    
-    def locale(): java.lang.String = js.native
-    def locale(lang: java.lang.String): java.lang.String = js.native
-    
-    def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
-    
-    def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
-    def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-    
-    def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
-    def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-    
-    val version: java.lang.String = js.native
-    
-    @js.native
-    object Array extends js.Object {
+    object Array {
       
+      @JSGlobal("core.Array.concat")
+      @js.native
       def concat[T](array: ArrayLike[T], items: (typings.coreJs.Array[T] | T)*): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.copyWithin")
+      @js.native
       def copyWithin[T](array: ArrayLike[T], target: Double, start: Double): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.copyWithin")
+      @js.native
       def copyWithin[T](array: ArrayLike[T], target: Double, start: Double, end: Double): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.entries")
+      @js.native
       def entries[T](array: ArrayLike[T]): IterableIterator[js.Tuple2[Double, T]] = js.native
       
+      @JSGlobal("core.Array.every")
+      @js.native
       def every[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean]
       ): Boolean = js.native
+      @JSGlobal("core.Array.every")
+      @js.native
       def every[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
       ): Boolean = js.native
       
+      @JSGlobal("core.Array.fill")
+      @js.native
       def fill[T](array: ArrayLike[T], value: T): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.fill")
+      @js.native
       def fill[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.fill")
+      @js.native
       def fill[T](array: ArrayLike[T], value: T, start: Double): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.fill")
+      @js.native
       def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.filter")
+      @js.native
       def filter[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean]
       ): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.filter")
+      @js.native
       def filter[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
       ): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.find")
+      @js.native
       def find[T](
         array: ArrayLike[T],
         predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ typings.coreJs.Array[T], Boolean]
       ): T = js.native
+      @JSGlobal("core.Array.find")
+      @js.native
       def find[T](
         array: ArrayLike[T],
         predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
       ): T = js.native
       
+      @JSGlobal("core.Array.findIndex")
+      @js.native
       def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = js.native
+      @JSGlobal("core.Array.findIndex")
+      @js.native
       def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = js.native
       
+      @JSGlobal("core.Array.forEach")
+      @js.native
       def forEach[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Unit]
       ): Unit = js.native
+      @JSGlobal("core.Array.forEach")
+      @js.native
       def forEach[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Unit],
         thisArg: js.Any
       ): Unit = js.native
       
+      @JSGlobal("core.Array.from")
+      @js.native
       def from[T](arrayLike: ArrayLike[T]): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.from")
+      @js.native
       def from[T](arrayLike: Iterable[T]): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.from")
+      @js.native
       def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): typings.coreJs.Array[U] = js.native
+      @JSGlobal("core.Array.from")
+      @js.native
       def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): typings.coreJs.Array[U] = js.native
+      @JSGlobal("core.Array.from")
+      @js.native
       def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): typings.coreJs.Array[U] = js.native
+      @JSGlobal("core.Array.from")
+      @js.native
       def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): typings.coreJs.Array[U] = js.native
       
+      @JSGlobal("core.Array.includes")
+      @js.native
       def includes[T](array: ArrayLike[T], value: T): Boolean = js.native
+      @JSGlobal("core.Array.includes")
+      @js.native
       def includes[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = js.native
       
+      @JSGlobal("core.Array.indexOf")
+      @js.native
       def indexOf[T](array: ArrayLike[T], searchElement: T): Double = js.native
+      @JSGlobal("core.Array.indexOf")
+      @js.native
       def indexOf[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = js.native
       
+      @JSGlobal("core.Array.isArray")
+      @js.native
       def isArray(arg: js.Any): /* is core-js.Array<any> */ Boolean = js.native
       
+      @JSGlobal("core.Array.join")
+      @js.native
       def join[T](array: ArrayLike[T]): java.lang.String = js.native
+      @JSGlobal("core.Array.join")
+      @js.native
       def join[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
       
+      @JSGlobal("core.Array.keys")
+      @js.native
       def keys[T](array: ArrayLike[T]): IterableIterator[Double] = js.native
       
+      @JSGlobal("core.Array.lastIndexOf")
+      @js.native
       def lastIndexOf[T](array: ArrayLike[T], earchElement: T): Double = js.native
+      @JSGlobal("core.Array.lastIndexOf")
+      @js.native
       def lastIndexOf[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = js.native
       
+      @JSGlobal("core.Array.map")
+      @js.native
       def map[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], U]
       ): typings.coreJs.Array[U] = js.native
+      @JSGlobal("core.Array.map")
+      @js.native
       def map[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], U],
         thisArg: js.Any
       ): typings.coreJs.Array[U] = js.native
       
+      @JSGlobal("core.Array.of")
+      @js.native
       def of[T](items: T*): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.pop")
+      @js.native
       def pop[T](array: ArrayLike[T]): T = js.native
       
+      @JSGlobal("core.Array.push")
+      @js.native
       def push[T](array: ArrayLike[T], items: T*): Double = js.native
       
+      @JSGlobal("core.Array.reduce")
+      @js.native
       def reduce[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -182,6 +220,8 @@ object global extends js.Object {
               T
             ]
       ): T = js.native
+      @JSGlobal("core.Array.reduce")
+      @js.native
       def reduce[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -194,6 +234,8 @@ object global extends js.Object {
         initialValue: T
       ): T = js.native
       
+      @JSGlobal("core.Array.reduceRight")
+      @js.native
       def reduceRight[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -204,6 +246,8 @@ object global extends js.Object {
               T
             ]
       ): T = js.native
+      @JSGlobal("core.Array.reduceRight")
+      @js.native
       def reduceRight[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -215,7 +259,8 @@ object global extends js.Object {
             ],
         initialValue: T
       ): T = js.native
-      @JSName("reduceRight")
+      @JSGlobal("core.Array.reduceRight")
+      @js.native
       def reduceRight_TU_U[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -228,7 +273,8 @@ object global extends js.Object {
         initialValue: U
       ): U = js.native
       
-      @JSName("reduce")
+      @JSGlobal("core.Array.reduce")
+      @js.native
       def reduce_TU_U[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -241,31 +287,57 @@ object global extends js.Object {
         initialValue: U
       ): U = js.native
       
+      @JSGlobal("core.Array.reverse")
+      @js.native
       def reverse[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.shift")
+      @js.native
       def shift[T](array: ArrayLike[T]): T = js.native
       
+      @JSGlobal("core.Array.slice")
+      @js.native
       def slice[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.slice")
+      @js.native
       def slice[T](array: ArrayLike[T], start: js.UndefOr[scala.Nothing], end: Double): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.slice")
+      @js.native
       def slice[T](array: ArrayLike[T], start: Double): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.slice")
+      @js.native
       def slice[T](array: ArrayLike[T], start: Double, end: Double): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.some")
+      @js.native
       def some[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean]
       ): Boolean = js.native
+      @JSGlobal("core.Array.some")
+      @js.native
       def some[T](
         array: ArrayLike[T],
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.coreJs.Array[T], Boolean],
         thisArg: js.Any
       ): Boolean = js.native
       
+      @JSGlobal("core.Array.sort")
+      @js.native
       def sort[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.sort")
+      @js.native
       def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.splice")
+      @js.native
       def splice[T](array: ArrayLike[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.splice")
+      @js.native
       def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): typings.coreJs.Array[T] = js.native
       
+      @JSGlobal("core.Array.turn")
+      @js.native
       def turn[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -276,6 +348,8 @@ object global extends js.Object {
               Unit
             ]
       ): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.turn")
+      @js.native
       def turn[T](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -287,6 +361,8 @@ object global extends js.Object {
             ],
         memo: typings.coreJs.Array[T]
       ): typings.coreJs.Array[T] = js.native
+      @JSGlobal("core.Array.turn")
+      @js.native
       def turn[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -298,7 +374,8 @@ object global extends js.Object {
             ],
         memo: U
       ): U = js.native
-      @JSName("turn")
+      @JSGlobal("core.Array.turn")
+      @js.native
       def turn_TU_U[T, U](
         array: ArrayLike[T],
         callbackfn: js.Function4[
@@ -310,194 +387,372 @@ object global extends js.Object {
             ]
       ): U = js.native
       
+      @JSGlobal("core.Array.unshift")
+      @js.native
       def unshift[T](array: ArrayLike[T], items: T*): Double = js.native
       
+      @JSGlobal("core.Array.values")
+      @js.native
       def values[T](array: ArrayLike[T]): IterableIterator[T] = js.native
     }
     
-    @js.native
-    object Date extends js.Object {
+    object Date {
       
+      @JSGlobal("core.Date.format")
+      @js.native
       def format(date: typings.coreJs.Date, template: java.lang.String): java.lang.String = js.native
+      @JSGlobal("core.Date.format")
+      @js.native
       def format(date: typings.coreJs.Date, template: java.lang.String, locale: java.lang.String): java.lang.String = js.native
       
+      @JSGlobal("core.Date.formatUTC")
+      @js.native
       def formatUTC(date: typings.coreJs.Date, template: java.lang.String): java.lang.String = js.native
+      @JSGlobal("core.Date.formatUTC")
+      @js.native
       def formatUTC(date: typings.coreJs.Date, template: java.lang.String, locale: java.lang.String): java.lang.String = js.native
       
+      @JSGlobal("core.Date.now")
+      @js.native
       def now(): Double = js.native
       
+      @JSGlobal("core.Date.toISOString")
+      @js.native
       def toISOString(date: typings.coreJs.Date): java.lang.String = js.native
     }
     
+    @JSGlobal("core.Dict")
     @js.native
-    object Function extends js.Object {
+    val Dict: DictConstructor = js.native
+    
+    object Function {
       
+      @JSGlobal("core.Function.bind")
+      @js.native
       def bind(target: typings.coreJs.Function, thisArg: js.Any, argArray: js.Any*): js.Any = js.native
       
+      @JSGlobal("core.Function.part")
+      @js.native
       def part(target: typings.coreJs.Function, args: js.Any*): js.Any = js.native
     }
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("core.Map")
     @js.native
     class Map[K, V] ()
       extends typings.std.Map[K, V] {
       def this(entries: js.Array[js.Tuple2[K, V]]) = this()
       def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
     }
+    @JSGlobal("core.Map")
     @js.native
-    object Map extends TopLevel[MapConstructor]
+    val Map: MapConstructor = js.native
     
-    @js.native
-    object Math extends js.Object {
+    object Math {
       
+      @JSGlobal("core.Math.acosh")
+      @js.native
       def acosh(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.asinh")
+      @js.native
       def asinh(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.atanh")
+      @js.native
       def atanh(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.cbrt")
+      @js.native
       def cbrt(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.clz32")
+      @js.native
       def clz32(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.cosh")
+      @js.native
       def cosh(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.expm1")
+      @js.native
       def expm1(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.fround")
+      @js.native
       def fround(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.hypot")
+      @js.native
       def hypot(values: Double*): Double = js.native
       
+      @JSGlobal("core.Math.imul")
+      @js.native
       def imul(x: Double, y: Double): Double = js.native
       
+      @JSGlobal("core.Math.log10")
+      @js.native
       def log10(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.log1p")
+      @js.native
       def log1p(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.log2")
+      @js.native
       def log2(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.sign")
+      @js.native
       def sign(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.sinh")
+      @js.native
       def sinh(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.tanh")
+      @js.native
       def tanh(x: Double): Double = js.native
       
+      @JSGlobal("core.Math.trunc")
+      @js.native
       def trunc(x: Double): Double = js.native
     }
     
-    @js.native
-    object Number extends js.Object {
+    object Number {
       
-      var EPSILON: Double = js.native
+      @JSGlobal("core.Number")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var MAX_SAFE_INTEGER: Double = js.native
+      @JSGlobal("core.Number.EPSILON")
+      @js.native
+      def EPSILON: Double = js.native
+      @scala.inline
+      def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
       
-      var MIN_SAFE_INTEGER: Double = js.native
+      @JSGlobal("core.Number.MAX_SAFE_INTEGER")
+      @js.native
+      def MAX_SAFE_INTEGER: Double = js.native
+      @scala.inline
+      def MAX_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SAFE_INTEGER")(x.asInstanceOf[js.Any])
       
+      @JSGlobal("core.Number.MIN_SAFE_INTEGER")
+      @js.native
+      def MIN_SAFE_INTEGER: Double = js.native
+      @scala.inline
+      def MIN_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SAFE_INTEGER")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("core.Number.acosh")
+      @js.native
       def acosh(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.asinh")
+      @js.native
       def asinh(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.atanh")
+      @js.native
       def atanh(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.cbrt")
+      @js.native
       def cbrt(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.clz32")
+      @js.native
       def clz32(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.cosh")
+      @js.native
       def cosh(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.expm1")
+      @js.native
       def expm1(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.fround")
+      @js.native
       def fround(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.hypot")
+      @js.native
       def hypot(values: Double*): Double = js.native
       
+      @JSGlobal("core.Number.imul")
+      @js.native
       def imul(x: Double, y: Double): Double = js.native
       
+      @JSGlobal("core.Number.isFinite")
+      @js.native
       def isFinite(number: Double): Boolean = js.native
       
+      @JSGlobal("core.Number.isInteger")
+      @js.native
       def isInteger(number: Double): Boolean = js.native
       
+      @JSGlobal("core.Number.isNaN")
+      @js.native
       def isNaN(number: Double): Boolean = js.native
       
+      @JSGlobal("core.Number.isSafeInteger")
+      @js.native
       def isSafeInteger(number: Double): Boolean = js.native
       
+      @JSGlobal("core.Number.log10")
+      @js.native
       def log10(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.log1p")
+      @js.native
       def log1p(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.log2")
+      @js.native
       def log2(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.parseFloat")
+      @js.native
       def parseFloat(string: java.lang.String): Double = js.native
       
+      @JSGlobal("core.Number.parseInt")
+      @js.native
       def parseInt(string: java.lang.String): Double = js.native
+      @JSGlobal("core.Number.parseInt")
+      @js.native
       def parseInt(string: java.lang.String, radix: Double): Double = js.native
       
+      @JSGlobal("core.Number.random")
+      @js.native
       def random(): Double = js.native
+      @JSGlobal("core.Number.random")
+      @js.native
       def random(lim: Double): Double = js.native
       
+      @JSGlobal("core.Number.sign")
+      @js.native
       def sign(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.sinh")
+      @js.native
       def sinh(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.tanh")
+      @js.native
       def tanh(x: Double): Double = js.native
       
+      @JSGlobal("core.Number.trunc")
+      @js.native
       def trunc(x: Double): Double = js.native
     }
     
-    @js.native
-    object Object extends js.Object {
+    object Object {
       
+      @JSGlobal("core.Object.assign")
+      @js.native
       def assign(target: js.Any, sources: js.Any*): js.Any = js.native
       
+      @JSGlobal("core.Object.classof")
+      @js.native
       def classof(value: js.Any): java.lang.String = js.native
       
+      @JSGlobal("core.Object.create")
+      @js.native
       def create(o: js.Any): js.Any = js.native
+      @JSGlobal("core.Object.create")
+      @js.native
       def create(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
       
+      @JSGlobal("core.Object.define")
+      @js.native
       def define[T](target: T, mixin: js.Any): T = js.native
       
+      @JSGlobal("core.Object.defineProperties")
+      @js.native
       def defineProperties(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
       
+      @JSGlobal("core.Object.defineProperty")
+      @js.native
       def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = js.native
       
+      @JSGlobal("core.Object.entries")
+      @js.native
       def entries(`object`: js.Any): Array[_] = js.native
       
+      @JSGlobal("core.Object.freeze")
+      @js.native
       def freeze[T](o: T): T = js.native
       
+      @JSGlobal("core.Object.getOwnPropertyDescriptor")
+      @js.native
       def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
       
+      @JSGlobal("core.Object.getOwnPropertyDescriptors")
+      @js.native
       def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap = js.native
       
+      @JSGlobal("core.Object.getOwnPropertyNames")
+      @js.native
       def getOwnPropertyNames(o: js.Any): Array[java.lang.String] = js.native
       
+      @JSGlobal("core.Object.getOwnPropertySymbols")
+      @js.native
       def getOwnPropertySymbols(o: js.Any): Array[js.Symbol] = js.native
       
+      @JSGlobal("core.Object.getPrototypeOf")
+      @js.native
       def getPrototypeOf(o: js.Any): js.Any = js.native
       
+      @JSGlobal("core.Object.is")
+      @js.native
       def is(value1: js.Any, value2: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Object.isExtensible")
+      @js.native
       def isExtensible(o: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Object.isFrozen")
+      @js.native
       def isFrozen(o: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Object.isObject")
+      @js.native
       def isObject(value: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Object.isSealed")
+      @js.native
       def isSealed(o: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Object.keys")
+      @js.native
       def keys(o: js.Any): Array[java.lang.String] = js.native
       
+      @JSGlobal("core.Object.make")
+      @js.native
       def make[T](proto: T): T = js.native
+      @JSGlobal("core.Object.make")
+      @js.native
       def make[T](proto: T, mixin: js.Any): T = js.native
       
+      @JSGlobal("core.Object.preventExtensions")
+      @js.native
       def preventExtensions[T](o: T): T = js.native
       
+      @JSGlobal("core.Object.seal")
+      @js.native
       def seal[T](o: T): T = js.native
       
+      @JSGlobal("core.Object.setPrototypeOf")
+      @js.native
       def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
       
+      @JSGlobal("core.Object.values")
+      @js.native
       def values(`object`: js.Any): Array[_] = js.native
     }
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("core.Promise")
     @js.native
     class Promise[T] protected ()
       extends typings.std.Promise[T] {
@@ -513,15 +768,18 @@ object global extends js.Object {
                 Unit
               ]) = this()
     }
+    @JSGlobal("core.Promise")
     @js.native
-    object Promise extends TopLevel[PromiseConstructor]
+    val Promise: PromiseConstructor = js.native
     
-    @js.native
-    object Reflect extends js.Object {
+    object Reflect {
       
-      @JSName("apply")
+      @JSGlobal("core.Reflect.apply")
+      @js.native
       def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
       
+      @JSGlobal("core.Reflect.construct")
+      @js.native
       def construct(target: Function, argumentsList: ArrayLike[_]): js.Any = js.native
       
       /**
@@ -546,10 +804,18 @@ object global extends js.Object {
         *  }
         * ```
         */
+      @JSGlobal("core.Reflect.defineMetadata")
+      @js.native
       def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object): Unit = js.native
+      @JSGlobal("core.Reflect.defineMetadata")
+      @js.native
       def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: java.lang.String): Unit = js.native
+      @JSGlobal("core.Reflect.defineMetadata")
+      @js.native
       def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: js.Symbol): Unit = js.native
       
+      @JSGlobal("core.Reflect.defineProperty")
+      @js.native
       def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = js.native
       
       /**
@@ -569,13 +835,25 @@ object global extends js.Object {
         *  result = Reflect.deleteMetadata("custom:annotation", Example);
         * ```
         */
+      @JSGlobal("core.Reflect.deleteMetadata")
+      @js.native
       def deleteMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
+      @JSGlobal("core.Reflect.deleteMetadata")
+      @js.native
       def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
+      @JSGlobal("core.Reflect.deleteMetadata")
+      @js.native
       def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
       
+      @JSGlobal("core.Reflect.deleteProperty")
+      @js.native
       def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = js.native
       
+      @JSGlobal("core.Reflect.get")
+      @js.native
       def get(target: js.Any, propertyKey: PropertyKey): js.Any = js.native
+      @JSGlobal("core.Reflect.get")
+      @js.native
       def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
       
       /**
@@ -595,8 +873,14 @@ object global extends js.Object {
         *  result = Reflect.getMetadata("custom:annotation", Example);
         * ```
         */
+      @JSGlobal("core.Reflect.getMetadata")
+      @js.native
       def getMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
+      @JSGlobal("core.Reflect.getMetadata")
+      @js.native
       def getMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
+      @JSGlobal("core.Reflect.getMetadata")
+      @js.native
       def getMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
       
       /**
@@ -615,8 +899,14 @@ object global extends js.Object {
         *  result = Reflect.getMetadataKeys(Example);
         * ```
         */
+      @JSGlobal("core.Reflect.getMetadataKeys")
+      @js.native
       def getMetadataKeys(target: Object): Array[_] = js.native
+      @JSGlobal("core.Reflect.getMetadataKeys")
+      @js.native
       def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
+      @JSGlobal("core.Reflect.getMetadataKeys")
+      @js.native
       def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
       
       /**
@@ -636,8 +926,14 @@ object global extends js.Object {
         *  result = Reflect.getOwnMetadata("custom:annotation", Example);
         * ```
         */
+      @JSGlobal("core.Reflect.getOwnMetadata")
+      @js.native
       def getOwnMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
+      @JSGlobal("core.Reflect.getOwnMetadata")
+      @js.native
       def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
+      @JSGlobal("core.Reflect.getOwnMetadata")
+      @js.native
       def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
       
       /**
@@ -656,15 +952,29 @@ object global extends js.Object {
         *  result = Reflect.getOwnMetadataKeys(Example);
         * ```
         */
+      @JSGlobal("core.Reflect.getOwnMetadataKeys")
+      @js.native
       def getOwnMetadataKeys(target: Object): Array[_] = js.native
+      @JSGlobal("core.Reflect.getOwnMetadataKeys")
+      @js.native
       def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
+      @JSGlobal("core.Reflect.getOwnMetadataKeys")
+      @js.native
       def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
       
+      @JSGlobal("core.Reflect.getOwnPropertyDescriptor")
+      @js.native
       def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
       
+      @JSGlobal("core.Reflect.getPrototypeOf")
+      @js.native
       def getPrototypeOf(target: js.Any): js.Any = js.native
       
+      @JSGlobal("core.Reflect.has")
+      @js.native
       def has(target: js.Any, propertyKey: java.lang.String): Boolean = js.native
+      @JSGlobal("core.Reflect.has")
+      @js.native
       def has(target: js.Any, propertyKey: js.Symbol): Boolean = js.native
       
       /**
@@ -684,8 +994,14 @@ object global extends js.Object {
         *  result = Reflect.hasMetadata("custom:annotation", Example);
         * ```
         */
+      @JSGlobal("core.Reflect.hasMetadata")
+      @js.native
       def hasMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
+      @JSGlobal("core.Reflect.hasMetadata")
+      @js.native
       def hasMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
+      @JSGlobal("core.Reflect.hasMetadata")
+      @js.native
       def hasMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
       
       /**
@@ -706,10 +1022,18 @@ object global extends js.Object {
         *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
         * ```
         */
+      @JSGlobal("core.Reflect.hasOwnMetadata")
+      @js.native
       def hasOwnMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
+      @JSGlobal("core.Reflect.hasOwnMetadata")
+      @js.native
       def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
+      @JSGlobal("core.Reflect.hasOwnMetadata")
+      @js.native
       def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
       
+      @JSGlobal("core.Reflect.isExtensible")
+      @js.native
       def isExtensible(target: js.Any): Boolean = js.native
       
       /**
@@ -755,83 +1079,212 @@ object global extends js.Object {
         *  }
         * ```
         */
+      @JSGlobal("core.Reflect.metadata")
+      @js.native
       def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = js.native
       
+      @JSGlobal("core.Reflect.ownKeys")
+      @js.native
       def ownKeys(target: js.Any): Array[PropertyKey] = js.native
       
+      @JSGlobal("core.Reflect.preventExtensions")
+      @js.native
       def preventExtensions(target: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Reflect.set")
+      @js.native
       def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = js.native
+      @JSGlobal("core.Reflect.set")
+      @js.native
       def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = js.native
       
+      @JSGlobal("core.Reflect.setPrototypeOf")
+      @js.native
       def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = js.native
     }
     
-    @js.native
-    object RegExp extends js.Object {
+    object RegExp {
       
+      @JSGlobal("core.RegExp.escape")
+      @js.native
       def escape(str: java.lang.String): java.lang.String = js.native
     }
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("core.Set")
     @js.native
     class Set[T] ()
       extends typings.std.Set[T] {
       def this(values: js.Array[T]) = this()
     }
+    @JSGlobal("core.Set")
     @js.native
-    object Set extends TopLevel[SetConstructor]
+    val Set: SetConstructor = js.native
     
-    @js.native
-    object String extends js.Object {
+    object String {
       
+      @JSGlobal("core.String.at")
+      @js.native
       def at(text: java.lang.String, index: Double): java.lang.String = js.native
       
+      @JSGlobal("core.String.codePointAt")
+      @js.native
       def codePointAt(text: java.lang.String, pos: Double): Double = js.native
       
+      @JSGlobal("core.String.endsWith")
+      @js.native
       def endsWith(text: java.lang.String, searchString: java.lang.String): Boolean = js.native
+      @JSGlobal("core.String.endsWith")
+      @js.native
       def endsWith(text: java.lang.String, searchString: java.lang.String, endPosition: Double): Boolean = js.native
       
+      @JSGlobal("core.String.escapeHTML")
+      @js.native
       def escapeHTML(text: java.lang.String): java.lang.String = js.native
       
+      @JSGlobal("core.String.fromCodePoint")
+      @js.native
       def fromCodePoint(codePoints: Double*): java.lang.String = js.native
       
+      @JSGlobal("core.String.includes")
+      @js.native
       def includes(text: java.lang.String, searchString: java.lang.String): Boolean = js.native
+      @JSGlobal("core.String.includes")
+      @js.native
       def includes(text: java.lang.String, searchString: java.lang.String, position: Double): Boolean = js.native
       
+      @JSGlobal("core.String.padEnd")
+      @js.native
       def padEnd(text: java.lang.String, length: Double): java.lang.String = js.native
+      @JSGlobal("core.String.padEnd")
+      @js.native
       def padEnd(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = js.native
       
+      @JSGlobal("core.String.padStart")
+      @js.native
       def padStart(text: java.lang.String, length: Double): java.lang.String = js.native
+      @JSGlobal("core.String.padStart")
+      @js.native
       def padStart(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = js.native
       
+      @JSGlobal("core.String.raw")
+      @js.native
       def raw(template: TemplateStringsArray, substitutions: js.Any*): java.lang.String = js.native
       
+      @JSGlobal("core.String.repeat")
+      @js.native
       def repeat(text: java.lang.String, count: Double): java.lang.String = js.native
       
+      @JSGlobal("core.String.startsWith")
+      @js.native
       def startsWith(text: java.lang.String, searchString: java.lang.String): Boolean = js.native
+      @JSGlobal("core.String.startsWith")
+      @js.native
       def startsWith(text: java.lang.String, searchString: java.lang.String, position: Double): Boolean = js.native
       
+      @JSGlobal("core.String.unescapeHTML")
+      @js.native
       def unescapeHTML(text: java.lang.String): java.lang.String = js.native
     }
     
+    @JSGlobal("core.Symbol")
     @js.native
-    object Symbol extends SymbolConstructor
+    val Symbol: SymbolConstructor = js.native
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("core.WeakMap")
     @js.native
     class WeakMap[K /* <: js.Object */, V] ()
       extends typings.std.WeakMap[K, V] {
       def this(entries: js.Array[js.Tuple2[K, V]]) = this()
     }
+    @JSGlobal("core.WeakMap")
     @js.native
-    object WeakMap extends TopLevel[WeakMapConstructor]
+    val WeakMap: WeakMapConstructor = js.native
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("core.WeakSet")
     @js.native
     class WeakSet[T /* <: js.Object */] ()
       extends typings.std.WeakSet[T] {
       def this(iterable: Iterable[T]) = this()
       def this(values: js.Array[T]) = this()
     }
+    @JSGlobal("core.WeakSet")
     @js.native
-    object WeakSet extends TopLevel[WeakSetConstructor]
+    val WeakSet: WeakSetConstructor = js.native
+    
+    @JSGlobal("core._")
+    @js.native
+    val _underscore: Boolean = js.native
+    
+    @JSGlobal("core.addLocale")
+    @js.native
+    def addLocale(lang: java.lang.String, locale: Locale): Typeofcore = js.native
+    
+    @JSGlobal("core.clearImmediate")
+    @js.native
+    def clearImmediate(handle: Double): Unit = js.native
+    
+    @JSGlobal("core.delay")
+    @js.native
+    def delay(msec: Double): js.Promise[Unit] = js.native
+    
+    @JSGlobal("core.getIterator")
+    @js.native
+    def getIterator[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
+    
+    @JSGlobal("core.global")
+    @js.native
+    val global: js.Any = js.native
+    
+    @JSGlobal("core.isIterable")
+    @js.native
+    def isIterable(value: js.Any): Boolean = js.native
+    
+    @JSGlobal("core.locale")
+    @js.native
+    def locale(): java.lang.String = js.native
+    @JSGlobal("core.locale")
+    @js.native
+    def locale(lang: java.lang.String): java.lang.String = js.native
+    
+    @JSGlobal("core.setImmediate")
+    @js.native
+    def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
+    
+    @JSGlobal("core.setInterval")
+    @js.native
+    def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
+    @JSGlobal("core.setInterval")
+    @js.native
+    def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
+    
+    @JSGlobal("core.setTimeout")
+    @js.native
+    def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
+    @JSGlobal("core.setTimeout")
+    @js.native
+    def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
+    
+    @JSGlobal("core.version")
+    @js.native
+    val version: java.lang.String = js.native
+    
+    @JSGlobal("core.$for")
+    @js.native
+    def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.native
   }
+  
+  // #############################################################################################
+  // delay - https://github.com/zloirock/core-js/#delay
+  // Modules: core.delay
+  // #############################################################################################
+  @JSGlobal("delay")
+  @js.native
+  def delay(msec: Double): js.Promise[Unit] = js.native
+  
+  @JSGlobal("$for")
+  @js.native
+  def `for`[T](iterable: Iterable[T]): typings.coreJs.`for`[T] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccountAttributesResponse extends js.Object {
+trait DescribeAccountAttributesResponse extends StObject {
   
   /**
     * Account quota information.
@@ -26,33 +27,21 @@ object DescribeAccountAttributesResponse {
   }
   
   @scala.inline
-  implicit class DescribeAccountAttributesResponseOps[Self <: DescribeAccountAttributesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAccountAttributesResponseMutableBuilder[Self <: DescribeAccountAttributesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountQuotas(value: AccountQuotaList): Self = StObject.set(x, "AccountQuotas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountQuotasUndefined: Self = StObject.set(x, "AccountQuotas", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value :_*))
     
     @scala.inline
-    def setAccountQuotasVarargs(value: AccountQuota*): Self = this.set("AccountQuotas", js.Array(value :_*))
+    def setUniqueAccountIdentifier(value: String): Self = StObject.set(x, "UniqueAccountIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountQuotas(value: AccountQuotaList): Self = this.set("AccountQuotas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountQuotas: Self = this.set("AccountQuotas", js.undefined)
-    
-    @scala.inline
-    def setUniqueAccountIdentifier(value: String): Self = this.set("UniqueAccountIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueAccountIdentifier: Self = this.set("UniqueAccountIdentifier", js.undefined)
+    def setUniqueAccountIdentifierUndefined: Self = StObject.set(x, "UniqueAccountIdentifier", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.escpos.escposStrings.CT
   - typings.escpos.escposStrings.RT
 */
-trait TXT_ALIGN extends js.Object
+trait TXT_ALIGN extends StObject
 object TXT_ALIGN {
   
   @scala.inline

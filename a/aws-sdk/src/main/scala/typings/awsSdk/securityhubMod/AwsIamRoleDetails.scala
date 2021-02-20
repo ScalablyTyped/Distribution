@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsIamRoleDetails extends js.Object {
+trait AwsIamRoleDetails extends StObject {
   
   /**
     * The trust policy that grants permission to assume the role.
@@ -63,87 +64,75 @@ object AwsIamRoleDetails {
   }
   
   @scala.inline
-  implicit class AwsIamRoleDetailsOps[Self <: AwsIamRoleDetails] (val x: Self) extends AnyVal {
+  implicit class AwsIamRoleDetailsMutableBuilder[Self <: AwsIamRoleDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssumeRolePolicyDocument(value: AwsIamRoleAssumeRolePolicyDocument): Self = StObject.set(x, "AssumeRolePolicyDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssumeRolePolicyDocumentUndefined: Self = StObject.set(x, "AssumeRolePolicyDocument", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssumeRolePolicyDocument(value: AwsIamRoleAssumeRolePolicyDocument): Self = this.set("AssumeRolePolicyDocument", value.asInstanceOf[js.Any])
+    def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
     @scala.inline
-    def deleteAssumeRolePolicyDocument: Self = this.set("AssumeRolePolicyDocument", js.undefined)
+    def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
+    def setInstanceProfileList(value: AwsIamInstanceProfileList): Self = StObject.set(x, "InstanceProfileList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: NonEmptyString): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setInstanceProfileListUndefined: Self = StObject.set(x, "InstanceProfileList", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setInstanceProfileListVarargs(value: AwsIamInstanceProfile*): Self = StObject.set(x, "InstanceProfileList", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceProfileListVarargs(value: AwsIamInstanceProfile*): Self = this.set("InstanceProfileList", js.Array(value :_*))
+    def setMaxSessionDuration(value: Integer): Self = StObject.set(x, "MaxSessionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceProfileList(value: AwsIamInstanceProfileList): Self = this.set("InstanceProfileList", value.asInstanceOf[js.Any])
+    def setMaxSessionDurationUndefined: Self = StObject.set(x, "MaxSessionDuration", js.undefined)
     
     @scala.inline
-    def deleteInstanceProfileList: Self = this.set("InstanceProfileList", js.undefined)
+    def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSessionDuration(value: Integer): Self = this.set("MaxSessionDuration", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def deleteMaxSessionDuration: Self = this.set("MaxSessionDuration", js.undefined)
+    def setPermissionsBoundary(value: AwsIamPermissionsBoundary): Self = StObject.set(x, "PermissionsBoundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: NonEmptyString): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPermissionsBoundaryUndefined: Self = StObject.set(x, "PermissionsBoundary", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setRoleId(value: NonEmptyString): Self = StObject.set(x, "RoleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsBoundary(value: AwsIamPermissionsBoundary): Self = this.set("PermissionsBoundary", value.asInstanceOf[js.Any])
+    def setRoleIdUndefined: Self = StObject.set(x, "RoleId", js.undefined)
     
     @scala.inline
-    def deletePermissionsBoundary: Self = this.set("PermissionsBoundary", js.undefined)
+    def setRoleName(value: NonEmptyString): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleId(value: NonEmptyString): Self = this.set("RoleId", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
     
     @scala.inline
-    def deleteRoleId: Self = this.set("RoleId", js.undefined)
+    def setRolePolicyList(value: AwsIamRolePolicyList): Self = StObject.set(x, "RolePolicyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: NonEmptyString): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    def setRolePolicyListUndefined: Self = StObject.set(x, "RolePolicyList", js.undefined)
     
     @scala.inline
-    def deleteRoleName: Self = this.set("RoleName", js.undefined)
-    
-    @scala.inline
-    def setRolePolicyListVarargs(value: AwsIamRolePolicy*): Self = this.set("RolePolicyList", js.Array(value :_*))
-    
-    @scala.inline
-    def setRolePolicyList(value: AwsIamRolePolicyList): Self = this.set("RolePolicyList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolePolicyList: Self = this.set("RolePolicyList", js.undefined)
+    def setRolePolicyListVarargs(value: AwsIamRolePolicy*): Self = StObject.set(x, "RolePolicyList", js.Array(value :_*))
   }
 }

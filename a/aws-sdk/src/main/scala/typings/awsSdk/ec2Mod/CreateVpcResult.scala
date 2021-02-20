@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVpcResult extends js.Object {
+trait CreateVpcResult extends StObject {
   
   /**
     * Information about the VPC.
@@ -21,24 +22,12 @@ object CreateVpcResult {
   }
   
   @scala.inline
-  implicit class CreateVpcResultOps[Self <: CreateVpcResult] (val x: Self) extends AnyVal {
+  implicit class CreateVpcResultMutableBuilder[Self <: CreateVpcResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpc(value: Vpc): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpc(value: Vpc): Self = this.set("Vpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpc: Self = this.set("Vpc", js.undefined)
+    def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
   }
 }

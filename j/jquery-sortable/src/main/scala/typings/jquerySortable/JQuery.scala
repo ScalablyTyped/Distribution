@@ -6,12 +6,13 @@ import typings.jquerySortable.jquerySortableStrings.disable
 import typings.jquerySortable.jquerySortableStrings.enable
 import typings.jquerySortable.jquerySortableStrings.refresh
 import typings.jquerySortable.jquerySortableStrings.serialize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def sortable(): JQuery = js.native
   def sortable(methodName: String): JQuery = js.native

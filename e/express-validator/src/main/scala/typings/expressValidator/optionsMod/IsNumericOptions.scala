@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsNumericOptions extends js.Object {
+trait IsNumericOptions extends StObject {
   
   var locale: js.UndefOr[AlphanumericLocale] = js.native
   
@@ -20,27 +21,15 @@ object IsNumericOptions {
   }
   
   @scala.inline
-  implicit class IsNumericOptionsOps[Self <: IsNumericOptions] (val x: Self) extends AnyVal {
+  implicit class IsNumericOptionsMutableBuilder[Self <: IsNumericOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: AlphanumericLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNo_symbols(value: Boolean): Self = this.set("no_symbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: AlphanumericLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setNo_symbols(value: Boolean): Self = StObject.set(x, "no_symbols", value.asInstanceOf[js.Any])
   }
 }

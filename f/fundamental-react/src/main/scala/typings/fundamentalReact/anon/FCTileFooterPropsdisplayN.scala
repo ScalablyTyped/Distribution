@@ -5,13 +5,14 @@ import typings.fundamentalReact.tileMod.TileFooterProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FC<fundamental-react.fundamental-react/lib/Tile/Tile.TileFooterProps> & {  displayName :'Tile.Footer'} */
 @js.native
-trait FCTileFooterPropsdisplayN extends js.Object {
+trait FCTileFooterPropsdisplayN extends StObject {
   
   def apply(props: PropsWithChildren[TileFooterProps]): ReactElement | Null = js.native
   def apply(props: PropsWithChildren[TileFooterProps], context: js.Any): ReactElement | Null = js.native

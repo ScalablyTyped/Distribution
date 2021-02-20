@@ -5,12 +5,13 @@ import typings.rockset.rocksetStrings.ERROR
 import typings.rockset.rocksetStrings.INITIALIZING
 import typings.rockset.rocksetStrings.PROCESSING
 import typings.rockset.rocksetStrings.WATCHING
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Status extends js.Object {
+trait Status extends StObject {
   
   // ISO-8601 date when last error occurred
   var last_error_at: js.UndefOr[String] = js.native
@@ -51,78 +52,66 @@ object Status {
   }
   
   @scala.inline
-  implicit class StatusOps[Self <: Status] (val x: Self) extends AnyVal {
+  implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLast_error_at(value: String): Self = StObject.set(x, "last_error_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLast_error_atUndefined: Self = StObject.set(x, "last_error_at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast_error_item(value: String): Self = StObject.set(x, "last_error_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_error_at(value: String): Self = this.set("last_error_at", value.asInstanceOf[js.Any])
+    def setLast_error_itemUndefined: Self = StObject.set(x, "last_error_item", js.undefined)
     
     @scala.inline
-    def deleteLast_error_at: Self = this.set("last_error_at", js.undefined)
+    def setLast_error_reason(value: String): Self = StObject.set(x, "last_error_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_error_item(value: String): Self = this.set("last_error_item", value.asInstanceOf[js.Any])
+    def setLast_error_reasonUndefined: Self = StObject.set(x, "last_error_reason", js.undefined)
     
     @scala.inline
-    def deleteLast_error_item: Self = this.set("last_error_item", js.undefined)
+    def setLast_processed_at(value: String): Self = StObject.set(x, "last_processed_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_error_reason(value: String): Self = this.set("last_error_reason", value.asInstanceOf[js.Any])
+    def setLast_processed_atUndefined: Self = StObject.set(x, "last_processed_at", js.undefined)
     
     @scala.inline
-    def deleteLast_error_reason: Self = this.set("last_error_reason", js.undefined)
+    def setLast_processed_item(value: String): Self = StObject.set(x, "last_processed_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_processed_at(value: String): Self = this.set("last_processed_at", value.asInstanceOf[js.Any])
+    def setLast_processed_itemUndefined: Self = StObject.set(x, "last_processed_item", js.undefined)
     
     @scala.inline
-    def deleteLast_processed_at: Self = this.set("last_processed_at", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_processed_item(value: String): Self = this.set("last_processed_item", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLast_processed_item: Self = this.set("last_processed_item", js.undefined)
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setState(value: INITIALIZING | WATCHING | PROCESSING | COMPLETED | ERROR): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setTotal_error_items(value: Double): Self = StObject.set(x, "total_error_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: INITIALIZING | WATCHING | PROCESSING | COMPLETED | ERROR): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTotal_error_itemsUndefined: Self = StObject.set(x, "total_error_items", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTotal_processed_items(value: Double): Self = StObject.set(x, "total_processed_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_error_items(value: Double): Self = this.set("total_error_items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_error_items: Self = this.set("total_error_items", js.undefined)
-    
-    @scala.inline
-    def setTotal_processed_items(value: Double): Self = this.set("total_processed_items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal_processed_items: Self = this.set("total_processed_items", js.undefined)
+    def setTotal_processed_itemsUndefined: Self = StObject.set(x, "total_processed_items", js.undefined)
   }
 }

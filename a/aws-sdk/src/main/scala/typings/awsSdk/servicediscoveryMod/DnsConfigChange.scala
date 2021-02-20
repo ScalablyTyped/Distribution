@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsConfigChange extends js.Object {
+trait DnsConfigChange extends StObject {
   
   /**
     * An array that contains one DnsRecord object for each Route 53 record that you want AWS Cloud Map to create when you register an instance.
@@ -21,24 +22,12 @@ object DnsConfigChange {
   }
   
   @scala.inline
-  implicit class DnsConfigChangeOps[Self <: DnsConfigChange] (val x: Self) extends AnyVal {
+  implicit class DnsConfigChangeMutableBuilder[Self <: DnsConfigChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDnsRecordsVarargs(value: DnsRecord*): Self = this.set("DnsRecords", js.Array(value :_*))
-    
-    @scala.inline
-    def setDnsRecords(value: DnsRecordList): Self = this.set("DnsRecords", value.asInstanceOf[js.Any])
+    def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
   }
 }

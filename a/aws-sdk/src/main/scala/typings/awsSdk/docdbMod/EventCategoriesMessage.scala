@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventCategoriesMessage extends js.Object {
+trait EventCategoriesMessage extends StObject {
   
   /**
     * A list of event category maps.
@@ -21,27 +22,15 @@ object EventCategoriesMessage {
   }
   
   @scala.inline
-  implicit class EventCategoriesMessageOps[Self <: EventCategoriesMessage] (val x: Self) extends AnyVal {
+  implicit class EventCategoriesMessageMutableBuilder[Self <: EventCategoriesMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventCategoriesMapList(value: EventCategoriesMapList): Self = StObject.set(x, "EventCategoriesMapList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventCategoriesMapListUndefined: Self = StObject.set(x, "EventCategoriesMapList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventCategoriesMapListVarargs(value: EventCategoriesMap*): Self = this.set("EventCategoriesMapList", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventCategoriesMapList(value: EventCategoriesMapList): Self = this.set("EventCategoriesMapList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventCategoriesMapList: Self = this.set("EventCategoriesMapList", js.undefined)
+    def setEventCategoriesMapListVarargs(value: EventCategoriesMap*): Self = StObject.set(x, "EventCategoriesMapList", js.Array(value :_*))
   }
 }

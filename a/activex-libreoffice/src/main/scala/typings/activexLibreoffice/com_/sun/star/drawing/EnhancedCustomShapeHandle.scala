@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service may be represented by a {@link com.sun.star.beans.PropertyValue} []. */
 @js.native
-trait EnhancedCustomShapeHandle extends js.Object {
+trait EnhancedCustomShapeHandle extends StObject {
   
   /** Specifies if the x position of the handle is mirrored. */
   var MirroredX: Boolean = js.native
@@ -84,63 +85,51 @@ object EnhancedCustomShapeHandle {
   }
   
   @scala.inline
-  implicit class EnhancedCustomShapeHandleOps[Self <: EnhancedCustomShapeHandle] (val x: Self) extends AnyVal {
+  implicit class EnhancedCustomShapeHandleMutableBuilder[Self <: EnhancedCustomShapeHandle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMirroredX(value: Boolean): Self = StObject.set(x, "MirroredX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMirroredY(value: Boolean): Self = StObject.set(x, "MirroredY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolar(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "Polar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirroredX(value: Boolean): Self = this.set("MirroredX", value.asInstanceOf[js.Any])
+    def setPosition(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirroredY(value: Boolean): Self = this.set("MirroredY", value.asInstanceOf[js.Any])
+    def setRadiusRangeMaximum(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "RadiusRangeMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolar(value: EnhancedCustomShapeParameterPair): Self = this.set("Polar", value.asInstanceOf[js.Any])
+    def setRadiusRangeMinimum(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "RadiusRangeMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: EnhancedCustomShapeParameterPair): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setRangeXMaximum(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "RangeXMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusRangeMaximum(value: EnhancedCustomShapeParameter): Self = this.set("RadiusRangeMaximum", value.asInstanceOf[js.Any])
+    def setRangeXMinimum(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "RangeXMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusRangeMinimum(value: EnhancedCustomShapeParameter): Self = this.set("RadiusRangeMinimum", value.asInstanceOf[js.Any])
+    def setRangeYMaximum(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "RangeYMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeXMaximum(value: EnhancedCustomShapeParameter): Self = this.set("RangeXMaximum", value.asInstanceOf[js.Any])
+    def setRangeYMinimum(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "RangeYMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeXMinimum(value: EnhancedCustomShapeParameter): Self = this.set("RangeXMinimum", value.asInstanceOf[js.Any])
+    def setRefAngle(value: Double): Self = StObject.set(x, "RefAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeYMaximum(value: EnhancedCustomShapeParameter): Self = this.set("RangeYMaximum", value.asInstanceOf[js.Any])
+    def setRefR(value: Double): Self = StObject.set(x, "RefR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeYMinimum(value: EnhancedCustomShapeParameter): Self = this.set("RangeYMinimum", value.asInstanceOf[js.Any])
+    def setRefX(value: Double): Self = StObject.set(x, "RefX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefAngle(value: Double): Self = this.set("RefAngle", value.asInstanceOf[js.Any])
+    def setRefY(value: Double): Self = StObject.set(x, "RefY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefR(value: Double): Self = this.set("RefR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefX(value: Double): Self = this.set("RefX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefY(value: Double): Self = this.set("RefY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwitched(value: Boolean): Self = this.set("Switched", value.asInstanceOf[js.Any])
+    def setSwitched(value: Boolean): Self = StObject.set(x, "Switched", value.asInstanceOf[js.Any])
   }
 }

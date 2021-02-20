@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificate extends js.Object {
+trait Certificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the certificate.
@@ -56,66 +57,54 @@ object Certificate {
   }
   
   @scala.inline
-  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    def setCertificateType(value: String): Self = StObject.set(x, "CertificateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateIdentifier(value: String): Self = this.set("CertificateIdentifier", value.asInstanceOf[js.Any])
+    def setCertificateTypeUndefined: Self = StObject.set(x, "CertificateType", js.undefined)
     
     @scala.inline
-    def deleteCertificateIdentifier: Self = this.set("CertificateIdentifier", js.undefined)
+    def setCustomerOverride(value: BooleanOptional): Self = StObject.set(x, "CustomerOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateType(value: String): Self = this.set("CertificateType", value.asInstanceOf[js.Any])
+    def setCustomerOverrideUndefined: Self = StObject.set(x, "CustomerOverride", js.undefined)
     
     @scala.inline
-    def deleteCertificateType: Self = this.set("CertificateType", js.undefined)
+    def setCustomerOverrideValidTill(value: TStamp): Self = StObject.set(x, "CustomerOverrideValidTill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerOverride(value: BooleanOptional): Self = this.set("CustomerOverride", value.asInstanceOf[js.Any])
+    def setCustomerOverrideValidTillUndefined: Self = StObject.set(x, "CustomerOverrideValidTill", js.undefined)
     
     @scala.inline
-    def deleteCustomerOverride: Self = this.set("CustomerOverride", js.undefined)
+    def setThumbprint(value: String): Self = StObject.set(x, "Thumbprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerOverrideValidTill(value: TStamp): Self = this.set("CustomerOverrideValidTill", value.asInstanceOf[js.Any])
+    def setThumbprintUndefined: Self = StObject.set(x, "Thumbprint", js.undefined)
     
     @scala.inline
-    def deleteCustomerOverrideValidTill: Self = this.set("CustomerOverrideValidTill", js.undefined)
+    def setValidFrom(value: TStamp): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbprint(value: String): Self = this.set("Thumbprint", value.asInstanceOf[js.Any])
+    def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
     @scala.inline
-    def deleteThumbprint: Self = this.set("Thumbprint", js.undefined)
+    def setValidTill(value: TStamp): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidFrom(value: TStamp): Self = this.set("ValidFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidFrom: Self = this.set("ValidFrom", js.undefined)
-    
-    @scala.inline
-    def setValidTill(value: TStamp): Self = this.set("ValidTill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidTill: Self = this.set("ValidTill", js.undefined)
+    def setValidTillUndefined: Self = StObject.set(x, "ValidTill", js.undefined)
   }
 }

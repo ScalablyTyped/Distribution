@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintHandlers extends js.Object {
+trait PrintHandlers extends StObject {
   
   /**
     * A hook used by the Printer when generating unique names to avoid collisions with
@@ -73,44 +74,32 @@ object PrintHandlers {
   }
   
   @scala.inline
-  implicit class PrintHandlersOps[Self <: PrintHandlers] (val x: Self) extends AnyVal {
+  implicit class PrintHandlersMutableBuilder[Self <: PrintHandlers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasGlobalName(value: /* name */ java.lang.String => Boolean): Self = StObject.set(x, "hasGlobalName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasGlobalNameUndefined: Self = StObject.set(x, "hasGlobalName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEmitNotificationEnabled(value: /* node */ js.UndefOr[Node] => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasGlobalName(value: /* name */ java.lang.String => Boolean): Self = this.set("hasGlobalName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHasGlobalName: Self = this.set("hasGlobalName", js.undefined)
-    
-    @scala.inline
-    def setIsEmitNotificationEnabled(value: /* node */ js.UndefOr[Node] => Boolean): Self = this.set("isEmitNotificationEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteIsEmitNotificationEnabled: Self = this.set("isEmitNotificationEnabled", js.undefined)
+    def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
     
     @scala.inline
     def setOnEmitNode(
       value: (/* hint */ EmitHint, /* node */ js.UndefOr[Node], /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit]) => Unit
-    ): Self = this.set("onEmitNode", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnEmitNode: Self = this.set("onEmitNode", js.undefined)
+    def setOnEmitNodeUndefined: Self = StObject.set(x, "onEmitNode", js.undefined)
     
     @scala.inline
-    def setSubstituteNode(value: (/* hint */ EmitHint, /* node */ Node) => Node): Self = this.set("substituteNode", js.Any.fromFunction2(value))
+    def setSubstituteNode(value: (/* hint */ EmitHint, /* node */ Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSubstituteNode: Self = this.set("substituteNode", js.undefined)
+    def setSubstituteNodeUndefined: Self = StObject.set(x, "substituteNode", js.undefined)
   }
 }

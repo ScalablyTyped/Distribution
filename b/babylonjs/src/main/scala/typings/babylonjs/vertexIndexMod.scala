@@ -1,13 +1,13 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", JSImport.Namespace)
-@js.native
-object vertexIndexMod extends js.Object {
+object vertexIndexMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "BonesBlock")
   @js.native
   class BonesBlock protected ()
     extends typings.babylonjs.bonesBlockMod.BonesBlock {
@@ -18,6 +18,7 @@ object vertexIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "InstancesBlock")
   @js.native
   class InstancesBlock protected ()
     extends typings.babylonjs.instancesBlockMod.InstancesBlock {
@@ -28,6 +29,7 @@ object vertexIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "LightInformationBlock")
   @js.native
   class LightInformationBlock protected ()
     extends typings.babylonjs.lightInformationBlockMod.LightInformationBlock {
@@ -38,6 +40,7 @@ object vertexIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "MorphTargetsBlock")
   @js.native
   class MorphTargetsBlock protected ()
     extends typings.babylonjs.morphTargetsBlockMod.MorphTargetsBlock {
@@ -48,6 +51,7 @@ object vertexIndexMod extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "VertexOutputBlock")
   @js.native
   class VertexOutputBlock protected ()
     extends typings.babylonjs.vertexOutputBlockMod.VertexOutputBlock {

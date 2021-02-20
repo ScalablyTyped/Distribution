@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChunkedUploadPart extends js.Object {
+trait ChunkedUploadPart extends StObject {
   
   /**
     * The order of the part in the chunked upload.
@@ -28,30 +29,18 @@ object ChunkedUploadPart {
   }
   
   @scala.inline
-  implicit class ChunkedUploadPartOps[Self <: ChunkedUploadPart] (val x: Self) extends AnyVal {
+  implicit class ChunkedUploadPartMutableBuilder[Self <: ChunkedUploadPart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: String): Self = this.set("sequence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

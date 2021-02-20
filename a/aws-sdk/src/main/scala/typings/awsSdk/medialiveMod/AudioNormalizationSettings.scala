@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioNormalizationSettings extends js.Object {
+trait AudioNormalizationSettings extends StObject {
   
   /**
     * Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 conforms to the EBU R-128 specification.
@@ -31,36 +32,24 @@ object AudioNormalizationSettings {
   }
   
   @scala.inline
-  implicit class AudioNormalizationSettingsOps[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
+  implicit class AudioNormalizationSettingsMutableBuilder[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: AudioNormalizationAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = StObject.set(x, "AlgorithmControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlgorithmControlUndefined: Self = StObject.set(x, "AlgorithmControl", js.undefined)
     
     @scala.inline
-    def setAlgorithm(value: AudioNormalizationAlgorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("Algorithm", js.undefined)
+    def setTargetLkfs(value: doubleMinNegative59Max0): Self = StObject.set(x, "TargetLkfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = this.set("AlgorithmControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithmControl: Self = this.set("AlgorithmControl", js.undefined)
-    
-    @scala.inline
-    def setTargetLkfs(value: doubleMinNegative59Max0): Self = this.set("TargetLkfs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLkfs: Self = this.set("TargetLkfs", js.undefined)
+    def setTargetLkfsUndefined: Self = StObject.set(x, "TargetLkfs", js.undefined)
   }
 }

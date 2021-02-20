@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * proxy object state with the document by calling `context.sync()`.
   */
 @js.native
-trait ClientObject extends js.Object {
+trait ClientObject extends StObject {
   
   /** The request context associated with the object */
   var context: ClientRequestContext = js.native
@@ -30,24 +31,12 @@ object ClientObject {
   }
   
   @scala.inline
-  implicit class ClientObjectOps[Self <: ClientObject] (val x: Self) extends AnyVal {
+  implicit class ClientObjectMutableBuilder[Self <: ClientObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: ClientRequestContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNullObject(value: Boolean): Self = this.set("isNullObject", value.asInstanceOf[js.Any])
+    def setIsNullObject(value: Boolean): Self = StObject.set(x, "isNullObject", value.asInstanceOf[js.Any])
   }
 }

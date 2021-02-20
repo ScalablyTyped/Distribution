@@ -1,6 +1,7 @@
 package typings.extjs.Ext.form
 
 import typings.extjs.Ext.IComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,42 +37,30 @@ object ILabel {
   }
   
   @scala.inline
-  implicit class ILabelOps[Self <: ILabel] (val x: Self) extends AnyVal {
+  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForId(value: String): Self = StObject.set(x, "forId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForIdUndefined: Self = StObject.set(x, "forId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForId(value: String): Self = this.set("forId", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteForId: Self = this.set("forId", js.undefined)
+    def setSetText(value: (/* text */ js.UndefOr[String], /* encode */ js.UndefOr[Boolean]) => ILabel): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetText(value: (/* text */ js.UndefOr[String], /* encode */ js.UndefOr[Boolean]) => ILabel): Self = this.set("setText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSetText: Self = this.set("setText", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

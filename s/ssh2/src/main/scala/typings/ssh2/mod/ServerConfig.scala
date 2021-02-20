@@ -2,12 +2,13 @@ package typings.ssh2.mod
 
 import typings.node.Buffer
 import typings.ssh2Streams.mod.Algorithms
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerConfig extends js.Object {
+trait ServerConfig extends StObject {
   
   /** Explicit overrides for the default transport layer algorithms used for the connection. */
   var algorithms: js.UndefOr[Algorithms] = js.native
@@ -42,66 +43,54 @@ object ServerConfig {
   }
   
   @scala.inline
-  implicit class ServerConfigOps[Self <: ServerConfig] (val x: Self) extends AnyVal {
+  implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostKeysVarargs(value: (Buffer | String | EncryptedPrivateKey)*): Self = this.set("hostKeys", js.Array(value :_*))
+    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
     @scala.inline
-    def setHostKeys(value: js.Array[Buffer | String | EncryptedPrivateKey]): Self = this.set("hostKeys", value.asInstanceOf[js.Any])
+    def setDebug(value: /* information */ String => _): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlgorithms(value: Algorithms): Self = this.set("algorithms", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteAlgorithms: Self = this.set("algorithms", js.undefined)
+    def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBanner(value: String): Self = this.set("banner", value.asInstanceOf[js.Any])
+    def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
     
     @scala.inline
-    def deleteBanner: Self = this.set("banner", js.undefined)
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: /* information */ String => _): Self = this.set("debug", js.Any.fromFunction1(value))
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setHostKeys(value: js.Array[Buffer | String | EncryptedPrivateKey]): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreeting(value: String): Self = this.set("greeting", value.asInstanceOf[js.Any])
+    def setHostKeysVarargs(value: (Buffer | String | EncryptedPrivateKey)*): Self = StObject.set(x, "hostKeys", js.Array(value :_*))
     
     @scala.inline
-    def deleteGreeting: Self = this.set("greeting", js.undefined)
+    def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
     
     @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdent(value: String): Self = this.set("ident", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdent: Self = this.set("ident", js.undefined)
-    
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = this.set("maxPacketSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxPacketSize: Self = this.set("maxPacketSize", js.undefined)
+    def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
   }
 }

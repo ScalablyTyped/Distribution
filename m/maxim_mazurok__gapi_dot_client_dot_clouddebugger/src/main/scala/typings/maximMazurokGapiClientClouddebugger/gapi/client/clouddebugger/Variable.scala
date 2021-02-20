@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Variable extends js.Object {
+trait Variable extends StObject {
   
   /** Members contained or pointed to by the variable. */
   var members: js.UndefOr[js.Array[Variable]] = js.native
@@ -46,57 +47,45 @@ object Variable {
   }
   
   @scala.inline
-  implicit class VariableOps[Self <: Variable] (val x: Self) extends AnyVal {
+  implicit class VariableMutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMembers(value: js.Array[Variable]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembersVarargs(value: Variable*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembersVarargs(value: Variable*): Self = this.set("members", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[Variable]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setStatus(value: StatusMessage): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVarTableIndex(value: Double): Self = StObject.set(x, "varTableIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setVarTableIndex(value: Double): Self = this.set("varTableIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVarTableIndex: Self = this.set("varTableIndex", js.undefined)
+    def setVarTableIndexUndefined: Self = StObject.set(x, "varTableIndex", js.undefined)
   }
 }

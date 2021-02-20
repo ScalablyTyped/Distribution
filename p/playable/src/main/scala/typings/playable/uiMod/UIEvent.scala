@@ -1,14 +1,15 @@
 package typings.playable.uiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UIEvent extends js.Object
+sealed trait UIEvent extends StObject
 @JSImport("playable/dist/src/constants/events/ui", "UIEvent")
 @js.native
-object UIEvent extends js.Object {
+object UIEvent extends StObject {
   
   @js.native
   sealed trait CONTROL_DRAG_END extends UIEvent

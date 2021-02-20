@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedProperty[T] extends js.Object {
+trait ManagedProperty[T] extends StObject {
   
   var CanBeChanged: Boolean = js.native
   
@@ -22,27 +23,15 @@ object ManagedProperty {
   }
   
   @scala.inline
-  implicit class ManagedPropertyOps[Self <: ManagedProperty[_], T] (val x: Self with ManagedProperty[T]) extends AnyVal {
+  implicit class ManagedPropertyMutableBuilder[Self <: ManagedProperty[_], T] (val x: Self with ManagedProperty[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanBeChanged(value: Boolean): Self = StObject.set(x, "CanBeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedPropertyLogicalName(value: String): Self = StObject.set(x, "ManagedPropertyLogicalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanBeChanged(value: Boolean): Self = this.set("CanBeChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManagedPropertyLogicalName(value: String): Self = this.set("ManagedPropertyLogicalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

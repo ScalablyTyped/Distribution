@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Field extends js.Object {
+trait Field extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -94,93 +95,81 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldOps[Self <: Field] (val x: Self) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: Range): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Range): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: () => Unit): Self = this.set("Copy", js.Any.fromFunction0(value))
+    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCut(value: () => Unit): Self = this.set("Cut", js.Any.fromFunction0(value))
+    def setDoClick(value: () => Unit): Self = StObject.set(x, "DoClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: String): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setInlineShape(value: InlineShape): Self = StObject.set(x, "InlineShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoClick(value: () => Unit): Self = this.set("DoClick", js.Any.fromFunction0(value))
+    def setKind(value: WdFieldKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setLinkFormat(value: LinkFormat): Self = StObject.set(x, "LinkFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineShape(value: InlineShape): Self = this.set("InlineShape", value.asInstanceOf[js.Any])
+    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: WdFieldKind): Self = this.set("Kind", value.asInstanceOf[js.Any])
+    def setNext(value: Field): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkFormat(value: LinkFormat): Self = this.set("LinkFormat", value.asInstanceOf[js.Any])
+    def setOLEFormat(value: OLEFormat): Self = StObject.set(x, "OLEFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("Locked", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: Field): Self = this.set("Next", value.asInstanceOf[js.Any])
+    def setPrevious(value: Field): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOLEFormat(value: OLEFormat): Self = this.set("OLEFormat", value.asInstanceOf[js.Any])
+    def setResult(value: Range): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrevious(value: Field): Self = this.set("Previous", value.asInstanceOf[js.Any])
+    def setShowCodes(value: Boolean): Self = StObject.set(x, "ShowCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: Range): Self = this.set("Result", value.asInstanceOf[js.Any])
+    def setType(value: WdFieldType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setUnlink(value: () => Unit): Self = StObject.set(x, "Unlink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowCodes(value: Boolean): Self = this.set("ShowCodes", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Boolean): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setType(value: WdFieldType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setUpdateSource(value: () => Unit): Self = StObject.set(x, "UpdateSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUnlink(value: () => Unit): Self = this.set("Unlink", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Boolean): Self = this.set("Update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateSource(value: () => Unit): Self = this.set("UpdateSource", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWordDotField_typekey(value: Field): Self = this.set("Word.Field_typekey", value.asInstanceOf[js.Any])
+    def setWordDotField_typekey(value: Field): Self = StObject.set(x, "Word.Field_typekey", value.asInstanceOf[js.Any])
   }
 }

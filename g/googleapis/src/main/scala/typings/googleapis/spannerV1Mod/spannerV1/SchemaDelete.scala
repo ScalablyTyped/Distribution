@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Arguments to delete operations.
   */
 @js.native
-trait SchemaDelete extends js.Object {
+trait SchemaDelete extends StObject {
   
   /**
     * Required. The primary keys of the rows within table to delete. Delete is
@@ -31,30 +32,18 @@ object SchemaDelete {
   }
   
   @scala.inline
-  implicit class SchemaDeleteOps[Self <: SchemaDelete] (val x: Self) extends AnyVal {
+  implicit class SchemaDeleteMutableBuilder[Self <: SchemaDelete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeySet(value: SchemaKeySet): Self = StObject.set(x, "keySet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySet(value: SchemaKeySet): Self = this.set("keySet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeySet: Self = this.set("keySet", js.undefined)
-    
-    @scala.inline
-    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

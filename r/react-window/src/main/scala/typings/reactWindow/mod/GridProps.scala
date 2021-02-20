@@ -3,6 +3,7 @@ package typings.reactWindow.mod
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
 import typings.reactWindow.anon.ColumnIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,99 +134,87 @@ object GridProps {
   }
   
   @scala.inline
-  implicit class GridPropsOps[Self <: GridProps] (val x: Self) extends AnyVal {
+  implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ComponentType[GridChildComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: CSSDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ComponentType[GridChildComponentProps]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInitialScrollLeft(value: Double): Self = StObject.set(x, "initialScrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setInitialScrollLeftUndefined: Self = StObject.set(x, "initialScrollLeft", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setInitialScrollTop(value: Double): Self = StObject.set(x, "initialScrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: CSSDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setInitialScrollTopUndefined: Self = StObject.set(x, "initialScrollTop", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setItemKey(value: /* params */ ColumnIndex => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialScrollLeft(value: Double): Self = this.set("initialScrollLeft", value.asInstanceOf[js.Any])
+    def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
     
     @scala.inline
-    def deleteInitialScrollLeft: Self = this.set("initialScrollLeft", js.undefined)
+    def setOnItemsRendered(value: /* props */ GridOnItemsRenderedProps => _): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialScrollTop(value: Double): Self = this.set("initialScrollTop", value.asInstanceOf[js.Any])
+    def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
     
     @scala.inline
-    def deleteInitialScrollTop: Self = this.set("initialScrollTop", js.undefined)
+    def setOnScroll(value: /* props */ GridOnScrollProps => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemKey(value: /* params */ ColumnIndex => Key): Self = this.set("itemKey", js.Any.fromFunction1(value))
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def deleteItemKey: Self = this.set("itemKey", js.undefined)
+    def setOverscanColumnCount(value: Double): Self = StObject.set(x, "overscanColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnItemsRendered(value: /* props */ GridOnItemsRenderedProps => _): Self = this.set("onItemsRendered", js.Any.fromFunction1(value))
+    def setOverscanColumnCountUndefined: Self = StObject.set(x, "overscanColumnCount", js.undefined)
     
     @scala.inline
-    def deleteOnItemsRendered: Self = this.set("onItemsRendered", js.undefined)
+    def setOverscanColumnsCount(value: Double): Self = StObject.set(x, "overscanColumnsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScroll(value: /* props */ GridOnScrollProps => _): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setOverscanColumnsCountUndefined: Self = StObject.set(x, "overscanColumnsCount", js.undefined)
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOverscanCount(value: Double): Self = StObject.set(x, "overscanCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanColumnCount(value: Double): Self = this.set("overscanColumnCount", value.asInstanceOf[js.Any])
+    def setOverscanCountUndefined: Self = StObject.set(x, "overscanCount", js.undefined)
     
     @scala.inline
-    def deleteOverscanColumnCount: Self = this.set("overscanColumnCount", js.undefined)
+    def setOverscanRowCount(value: Double): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanColumnsCount(value: Double): Self = this.set("overscanColumnsCount", value.asInstanceOf[js.Any])
+    def setOverscanRowCountUndefined: Self = StObject.set(x, "overscanRowCount", js.undefined)
     
     @scala.inline
-    def deleteOverscanColumnsCount: Self = this.set("overscanColumnsCount", js.undefined)
+    def setOverscanRowsCount(value: Double): Self = StObject.set(x, "overscanRowsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanCount(value: Double): Self = this.set("overscanCount", value.asInstanceOf[js.Any])
+    def setOverscanRowsCountUndefined: Self = StObject.set(x, "overscanRowsCount", js.undefined)
     
     @scala.inline
-    def deleteOverscanCount: Self = this.set("overscanCount", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverscanRowCount(value: Double): Self = this.set("overscanRowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverscanRowCount: Self = this.set("overscanRowCount", js.undefined)
-    
-    @scala.inline
-    def setOverscanRowsCount(value: Double): Self = this.set("overscanRowsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverscanRowsCount: Self = this.set("overscanRowsCount", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

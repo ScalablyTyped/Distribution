@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MobileInfo extends js.Object {
+trait MobileInfo extends StObject {
   
   var appRnVersion: String = js.native
   
@@ -68,69 +69,57 @@ object MobileInfo {
   }
   
   @scala.inline
-  implicit class MobileInfoOps[Self <: MobileInfo] (val x: Self) extends AnyVal {
+  implicit class MobileInfoMutableBuilder[Self <: MobileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppRnVersion(value: String): Self = StObject.set(x, "appRnVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCelsius(value: Double): Self = StObject.set(x, "celsius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppRnVersion(value: String): Self = this.set("appRnVersion", value.asInstanceOf[js.Any])
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppVersion(value: String): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    def setEle(value: String): Self = StObject.set(x, "ele", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCelsius(value: Double): Self = this.set("celsius", value.asInstanceOf[js.Any])
+    def setIconfontNameMap(value: String): Self = StObject.set(x, "iconfontNameMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEle(value: String): Self = this.set("ele", value.asInstanceOf[js.Any])
+    def setLat(value: String): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconfontNameMap(value: String): Self = this.set("iconfontNameMap", value.asInstanceOf[js.Any])
+    def setLon(value: String): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: String): Self = this.set("lat", value.asInstanceOf[js.Any])
+    def setOsSystem(value: String): Self = StObject.set(x, "osSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLon(value: String): Self = this.set("lon", value.asInstanceOf[js.Any])
+    def setPhoneCode(value: String): Self = StObject.set(x, "phoneCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsSystem(value: String): Self = this.set("osSystem", value.asInstanceOf[js.Any])
+    def setService(value: MobileService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneCode(value: String): Self = this.set("phoneCode", value.asInstanceOf[js.Any])
+    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setTimezoneId(value: String): Self = StObject.set(x, "timezoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: MobileService): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setT(value: Double): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimezoneId(value: String): Self = this.set("timezoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTtid(value: String): Self = this.set("ttid", value.asInstanceOf[js.Any])
+    def setTtid(value: String): Self = StObject.set(x, "ttid", value.asInstanceOf[js.Any])
   }
 }

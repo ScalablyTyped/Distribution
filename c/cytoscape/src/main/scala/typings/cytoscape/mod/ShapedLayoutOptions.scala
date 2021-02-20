@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,54 +40,42 @@ object ShapedLayoutOptions {
   }
   
   @scala.inline
-  implicit class ShapedLayoutOptionsOps[Self <: ShapedLayoutOptions] (val x: Self) extends AnyVal {
+  implicit class ShapedLayoutOptionsMutableBuilder[Self <: ShapedLayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidOverlap(value: Boolean): Self = StObject.set(x, "avoidOverlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidOverlapUndefined: Self = StObject.set(x, "avoidOverlap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundingBox(value: BoundingBox12 | BoundingBoxWH): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFit(value: Boolean): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
     @scala.inline
-    def setNodeDimensionsIncludeLabels(value: Boolean): Self = this.set("nodeDimensionsIncludeLabels", value.asInstanceOf[js.Any])
+    def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidOverlap(value: Boolean): Self = this.set("avoidOverlap", value.asInstanceOf[js.Any])
+    def setNodeDimensionsIncludeLabels(value: Boolean): Self = StObject.set(x, "nodeDimensionsIncludeLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvoidOverlap: Self = this.set("avoidOverlap", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox12 | BoundingBoxWH): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    def setSort(value: (/* a */ SortableNode, /* b */ SortableNode) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSpacingFactor(value: Double): Self = StObject.set(x, "spacingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: (/* a */ SortableNode, /* b */ SortableNode) => Double): Self = this.set("sort", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setSpacingFactor(value: Double): Self = this.set("spacingFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacingFactor: Self = this.set("spacingFactor", js.undefined)
+    def setSpacingFactorUndefined: Self = StObject.set(x, "spacingFactor", js.undefined)
   }
 }

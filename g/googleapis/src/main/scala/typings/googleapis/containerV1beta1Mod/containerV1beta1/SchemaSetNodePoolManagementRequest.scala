@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * pool.
   */
 @js.native
-trait SchemaSetNodePoolManagementRequest extends js.Object {
+trait SchemaSetNodePoolManagementRequest extends StObject {
   
   /**
     * Deprecated. The name of the cluster to update. This field has been
@@ -58,54 +59,42 @@ object SchemaSetNodePoolManagementRequest {
   }
   
   @scala.inline
-  implicit class SchemaSetNodePoolManagementRequestOps[Self <: SchemaSetNodePoolManagementRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSetNodePoolManagementRequestMutableBuilder[Self <: SchemaSetNodePoolManagementRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagement(value: SchemaNodeManagement): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    def setManagementUndefined: Self = StObject.set(x, "management", js.undefined)
     
     @scala.inline
-    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagement(value: SchemaNodeManagement): Self = this.set("management", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteManagement: Self = this.set("management", js.undefined)
+    def setNodePoolId(value: String): Self = StObject.set(x, "nodePoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNodePoolIdUndefined: Self = StObject.set(x, "nodePoolId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePoolId(value: String): Self = this.set("nodePoolId", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteNodePoolId: Self = this.set("nodePoolId", js.undefined)
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

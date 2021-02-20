@@ -1,11 +1,12 @@
 package typings.playable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetModule extends js.Object {
+trait GetModule extends StObject {
   
   def getModule(name: String): js.Any = js.native
   
@@ -32,33 +33,21 @@ object GetModule {
   }
   
   @scala.inline
-  implicit class GetModuleOps[Self <: GetModule] (val x: Self) extends AnyVal {
+  implicit class GetModuleMutableBuilder[Self <: GetModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetModule(value: String => js.Any): Self = StObject.set(x, "getModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegisterModule(value: (String, js.Function) => Unit): Self = StObject.set(x, "registerModule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisterModuleAsSingleton(value: (String, js.Function) => Unit): Self = StObject.set(x, "registerModuleAsSingleton", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetModule(value: String => js.Any): Self = this.set("getModule", js.Any.fromFunction1(value))
+    def setSetConfig(value: js.Object => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterModule(value: (String, js.Function) => Unit): Self = this.set("registerModule", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRegisterModuleAsSingleton(value: (String, js.Function) => Unit): Self = this.set("registerModuleAsSingleton", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetConfig(value: js.Object => Unit): Self = this.set("setConfig", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPlaybackAdapters(value: js.Any => Unit): Self = this.set("setPlaybackAdapters", js.Any.fromFunction1(value))
+    def setSetPlaybackAdapters(value: js.Any => Unit): Self = StObject.set(x, "setPlaybackAdapters", js.Any.fromFunction1(value))
   }
 }

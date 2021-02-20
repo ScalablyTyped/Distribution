@@ -1,11 +1,12 @@
 package typings.knockback.Knockback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventWatcherOptions extends js.Object {
+trait EventWatcherOptions extends StObject {
   
   def emitter(newEmitter: js.Any): Unit = js.native
   
@@ -24,33 +25,21 @@ object EventWatcherOptions {
   }
   
   @scala.inline
-  implicit class EventWatcherOptionsOps[Self <: EventWatcherOptions] (val x: Self) extends AnyVal {
+  implicit class EventWatcherOptionsMutableBuilder[Self <: EventWatcherOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmitter(value: js.Any => Unit): Self = StObject.set(x, "emitter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent_selector(value: String): Self = StObject.set(x, "event_selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitter(value: js.Any => Unit): Self = this.set("emitter", js.Any.fromFunction1(value))
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setEvent_selector(value: String): Self = this.set("event_selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: js.Any => Unit): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

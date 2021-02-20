@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,48 +40,36 @@ object OperationDefinitionOverload {
   }
   
   @scala.inline
-  implicit class OperationDefinitionOverloadOps[Self <: OperationDefinitionOverload] (val x: Self) extends AnyVal {
+  implicit class OperationDefinitionOverloadMutableBuilder[Self <: OperationDefinitionOverload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterName(value: js.Array[String]): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
     
     @scala.inline
-    def delete_comment: Self = this.set("_comment", js.undefined)
+    def setParameterNameVarargs(value: String*): Self = StObject.set(x, "parameterName", js.Array(value :_*))
     
     @scala.inline
-    def set_parameterNameVarargs(value: Element*): Self = this.set("_parameterName", js.Array(value :_*))
+    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_parameterName(value: js.Array[Element]): Self = this.set("_parameterName", value.asInstanceOf[js.Any])
+    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
     @scala.inline
-    def delete_parameterName: Self = this.set("_parameterName", js.undefined)
+    def set_parameterName(value: js.Array[Element]): Self = StObject.set(x, "_parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def set_parameterNameUndefined: Self = StObject.set(x, "_parameterName", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
-    
-    @scala.inline
-    def setParameterNameVarargs(value: String*): Self = this.set("parameterName", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameterName(value: js.Array[String]): Self = this.set("parameterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterName: Self = this.set("parameterName", js.undefined)
+    def set_parameterNameVarargs(value: Element*): Self = StObject.set(x, "_parameterName", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyRecommendationDetail extends js.Object {
+trait ModifyRecommendationDetail extends StObject {
   
   /**
     * Identifies whether this instance type is the AWS default recommendation.
@@ -21,27 +22,15 @@ object ModifyRecommendationDetail {
   }
   
   @scala.inline
-  implicit class ModifyRecommendationDetailOps[Self <: ModifyRecommendationDetail] (val x: Self) extends AnyVal {
+  implicit class ModifyRecommendationDetailMutableBuilder[Self <: ModifyRecommendationDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetInstances(value: TargetInstancesList): Self = StObject.set(x, "TargetInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetInstancesUndefined: Self = StObject.set(x, "TargetInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetInstancesVarargs(value: TargetInstance*): Self = this.set("TargetInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetInstances(value: TargetInstancesList): Self = this.set("TargetInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetInstances: Self = this.set("TargetInstances", js.undefined)
+    def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "TargetInstances", js.Array(value :_*))
   }
 }

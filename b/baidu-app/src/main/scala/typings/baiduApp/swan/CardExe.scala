@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,54 +46,42 @@ object CardExe {
   }
   
   @scala.inline
-  implicit class CardExeOps[Self <: CardExe] (val x: Self) extends AnyVal {
+  implicit class CardExeMutableBuilder[Self <: CardExe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixed_begintimestamp(value: Double): Self = StObject.set(x, "fixed_begintimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setFixed_begintimestampUndefined: Self = StObject.set(x, "fixed_begintimestamp", js.undefined)
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setNonce_str(value: String): Self = StObject.set(x, "nonce_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setNonce_strUndefined: Self = StObject.set(x, "nonce_str", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed_begintimestamp(value: Double): Self = this.set("fixed_begintimestamp", value.asInstanceOf[js.Any])
+    def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
     
     @scala.inline
-    def deleteFixed_begintimestamp: Self = this.set("fixed_begintimestamp", js.undefined)
+    def setOuter_str(value: String): Self = StObject.set(x, "outer_str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce_str(value: String): Self = this.set("nonce_str", value.asInstanceOf[js.Any])
+    def setOuter_strUndefined: Self = StObject.set(x, "outer_str", js.undefined)
     
     @scala.inline
-    def deleteNonce_str: Self = this.set("nonce_str", js.undefined)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenid(value: String): Self = this.set("openid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenid: Self = this.set("openid", js.undefined)
-    
-    @scala.inline
-    def setOuter_str(value: String): Self = this.set("outer_str", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOuter_str: Self = this.set("outer_str", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

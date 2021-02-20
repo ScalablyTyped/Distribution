@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Microsoft XML Writer 6.0 */
 @js.native
-trait MXXMLWriter60 extends js.Object {
+trait MXXMLWriter60 extends StObject {
   
   @JSName("MSXML2.MXXMLWriter60_typekey")
   var MSXML2DotMXXMLWriter60_typekey: MXXMLWriter60 = js.native
@@ -59,48 +60,36 @@ object MXXMLWriter60 {
   }
   
   @scala.inline
-  implicit class MXXMLWriter60Ops[Self <: MXXMLWriter60] (val x: Self) extends AnyVal {
+  implicit class MXXMLWriter60MutableBuilder[Self <: MXXMLWriter60] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteOrderMark(value: Boolean): Self = StObject.set(x, "byteOrderMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableOutputEscaping(value: Boolean): Self = StObject.set(x, "disableOutputEscaping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSXML2DotMXXMLWriter60_typekey(value: MXXMLWriter60): Self = this.set("MSXML2.MXXMLWriter60_typekey", value.asInstanceOf[js.Any])
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setByteOrderMark(value: Boolean): Self = this.set("byteOrderMark", value.asInstanceOf[js.Any])
+    def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableOutputEscaping(value: Boolean): Self = this.set("disableOutputEscaping", value.asInstanceOf[js.Any])
+    def setMSXML2DotMXXMLWriter60_typekey(value: MXXMLWriter60): Self = StObject.set(x, "MSXML2.MXXMLWriter60_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setOmitXMLDeclaration(value: Boolean): Self = StObject.set(x, "omitXMLDeclaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Boolean): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmitXMLDeclaration(value: Boolean): Self = this.set("omitXMLDeclaration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutput(value: js.Any): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandalone(value: Boolean): Self = this.set("standalone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAccountAssignmentDeletionStatusResponse extends js.Object {
+trait ListAccountAssignmentDeletionStatusResponse extends StObject {
   
   /**
     * The status object for the account assignment deletion operation.
@@ -26,33 +27,21 @@ object ListAccountAssignmentDeletionStatusResponse {
   }
   
   @scala.inline
-  implicit class ListAccountAssignmentDeletionStatusResponseOps[Self <: ListAccountAssignmentDeletionStatusResponse] (val x: Self) extends AnyVal {
+  implicit class ListAccountAssignmentDeletionStatusResponseMutableBuilder[Self <: ListAccountAssignmentDeletionStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountAssignmentsDeletionStatus(value: AccountAssignmentOperationStatusList): Self = StObject.set(x, "AccountAssignmentsDeletionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountAssignmentsDeletionStatusUndefined: Self = StObject.set(x, "AccountAssignmentsDeletionStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountAssignmentsDeletionStatusVarargs(value: AccountAssignmentOperationStatusMetadata*): Self = StObject.set(x, "AccountAssignmentsDeletionStatus", js.Array(value :_*))
     
     @scala.inline
-    def setAccountAssignmentsDeletionStatusVarargs(value: AccountAssignmentOperationStatusMetadata*): Self = this.set("AccountAssignmentsDeletionStatus", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountAssignmentsDeletionStatus(value: AccountAssignmentOperationStatusList): Self = this.set("AccountAssignmentsDeletionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountAssignmentsDeletionStatus: Self = this.set("AccountAssignmentsDeletionStatus", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

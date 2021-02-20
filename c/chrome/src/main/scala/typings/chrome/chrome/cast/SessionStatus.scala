@@ -1,14 +1,15 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SessionStatus extends js.Object
+sealed trait SessionStatus extends StObject
 @JSGlobal("chrome.cast.SessionStatus")
 @js.native
-object SessionStatus extends js.Object {
+object SessionStatus extends StObject {
   
   @js.native
   sealed trait CONNECTED extends SessionStatus

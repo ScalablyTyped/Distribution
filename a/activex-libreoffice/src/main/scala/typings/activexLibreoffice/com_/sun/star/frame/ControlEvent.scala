@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait ControlEvent extends js.Object {
+trait ControlEvent extends StObject {
   
   /** specifies the event which has occurred. */
   var Event: String = js.native
@@ -32,27 +33,15 @@ object ControlEvent {
   }
   
   @scala.inline
-  implicit class ControlEventOps[Self <: ControlEvent] (val x: Self) extends AnyVal {
+  implicit class ControlEventMutableBuilder[Self <: ControlEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAInformation(value: SafeArray[NamedValue]): Self = StObject.set(x, "aInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAURL(value: URL): Self = StObject.set(x, "aURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvent(value: String): Self = this.set("Event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAInformation(value: SafeArray[NamedValue]): Self = this.set("aInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAURL(value: URL): Self = this.set("aURL", value.asInstanceOf[js.Any])
+    def setEvent(value: String): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
   }
 }

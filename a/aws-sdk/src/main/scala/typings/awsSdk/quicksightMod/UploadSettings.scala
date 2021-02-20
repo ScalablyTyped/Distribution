@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadSettings extends js.Object {
+trait UploadSettings extends StObject {
   
   /**
     * Whether the file has a header row, or the files each have a header row.
@@ -41,48 +42,36 @@ object UploadSettings {
   }
   
   @scala.inline
-  implicit class UploadSettingsOps[Self <: UploadSettings] (val x: Self) extends AnyVal {
+  implicit class UploadSettingsMutableBuilder[Self <: UploadSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsHeader(value: Boolean): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
     @scala.inline
-    def deleteContainsHeader: Self = this.set("ContainsHeader", js.undefined)
+    def setFormat(value: FileFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    def setStartFromRow(value: PositiveInteger): Self = StObject.set(x, "StartFromRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: FileFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setStartFromRowUndefined: Self = StObject.set(x, "StartFromRow", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setTextQualifier(value: TextQualifier): Self = StObject.set(x, "TextQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartFromRow(value: PositiveInteger): Self = this.set("StartFromRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartFromRow: Self = this.set("StartFromRow", js.undefined)
-    
-    @scala.inline
-    def setTextQualifier(value: TextQualifier): Self = this.set("TextQualifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextQualifier: Self = this.set("TextQualifier", js.undefined)
+    def setTextQualifierUndefined: Self = StObject.set(x, "TextQualifier", js.undefined)
   }
 }

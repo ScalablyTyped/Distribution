@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region Sheet Classes
 @js.native
-trait SheetInfo extends js.Object {
+trait SheetInfo extends StObject {
   
   /** Gets the index of the sheet within the published tabs. Note that hidden tabs are still counted in the ordering, as long as they are published. */
   def getIndex(): Double = js.native
@@ -57,42 +58,30 @@ object SheetInfo {
   }
   
   @scala.inline
-  implicit class SheetInfoOps[Self <: SheetInfo] (val x: Self) extends AnyVal {
+  implicit class SheetInfoMutableBuilder[Self <: SheetInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIsHidden(value: () => Boolean): Self = StObject.set(x, "getIsHidden", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: () => Double): Self = this.set("getIndex", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsActive(value: () => Boolean): Self = this.set("getIsActive", js.Any.fromFunction0(value))
+    def setGetSheetType(value: () => SheetType): Self = StObject.set(x, "getSheetType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsHidden(value: () => Boolean): Self = this.set("getIsHidden", js.Any.fromFunction0(value))
+    def setGetSize(value: () => SheetSizeOptions): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSheetType(value: () => SheetType): Self = this.set("getSheetType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSize(value: () => SheetSizeOptions): Self = this.set("getSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUrl(value: () => String): Self = this.set("getUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWorkbook(value: () => Workbook): Self = this.set("getWorkbook", js.Any.fromFunction0(value))
+    def setGetWorkbook(value: () => Workbook): Self = StObject.set(x, "getWorkbook", js.Any.fromFunction0(value))
   }
 }

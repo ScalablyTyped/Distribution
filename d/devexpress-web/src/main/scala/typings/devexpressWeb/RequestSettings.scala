@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains control requests' settings.
   */
 @js.native
-trait RequestSettings extends js.Object {
+trait RequestSettings extends StObject {
   
   /**
     * Specifies the maximum number of commands that can be sent in one request.
@@ -34,27 +35,15 @@ object RequestSettings {
   }
   
   @scala.inline
-  implicit class RequestSettingsOps[Self <: RequestSettings] (val x: Self) extends AnyVal {
+  implicit class RequestSettingsMutableBuilder[Self <: RequestSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxCommandCount(value: Double): Self = StObject.set(x, "maxCommandCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPendingPeriod(value: Double): Self = StObject.set(x, "pendingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxCommandCount(value: Double): Self = this.set("maxCommandCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPendingPeriod(value: Double): Self = this.set("pendingPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseWaitingTime(value: Double): Self = this.set("responseWaitingTime", value.asInstanceOf[js.Any])
+    def setResponseWaitingTime(value: Double): Self = StObject.set(x, "responseWaitingTime", value.asInstanceOf[js.Any])
   }
 }

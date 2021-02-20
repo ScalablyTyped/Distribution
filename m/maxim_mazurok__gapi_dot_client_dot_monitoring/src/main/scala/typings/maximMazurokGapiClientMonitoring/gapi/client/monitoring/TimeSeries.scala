@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSeries extends js.Object {
+trait TimeSeries extends StObject {
   
   /**
     * Output only. The associated monitored resource metadata. When reading a time series, this field will include metadata labels that are explicitly named in the reduction. When
@@ -54,63 +55,51 @@ object TimeSeries {
   }
   
   @scala.inline
-  implicit class TimeSeriesOps[Self <: TimeSeries] (val x: Self) extends AnyVal {
+  implicit class TimeSeriesMutableBuilder[Self <: TimeSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: MonitoredResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetric(value: Metric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: MonitoredResourceMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetricKind(value: String): Self = StObject.set(x, "metricKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetricKindUndefined: Self = StObject.set(x, "metricKind", js.undefined)
     
     @scala.inline
-    def setMetric(value: Metric): Self = this.set("metric", value.asInstanceOf[js.Any])
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
+    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricKind(value: String): Self = this.set("metricKind", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteMetricKind: Self = this.set("metricKind", js.undefined)
+    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: Point*): Self = this.set("points", js.Array(value :_*))
+    def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[Point]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: MonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueType: Self = this.set("valueType", js.undefined)
+    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

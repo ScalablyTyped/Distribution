@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A terms and conditions page to be accepted during provisioning.
   */
 @js.native
-trait SchemaTermsAndConditions extends js.Object {
+trait SchemaTermsAndConditions extends StObject {
   
   /**
     * A well-formatted HTML string. It will be parsed on the client with
@@ -30,30 +31,18 @@ object SchemaTermsAndConditions {
   }
   
   @scala.inline
-  implicit class SchemaTermsAndConditionsOps[Self <: SchemaTermsAndConditions] (val x: Self) extends AnyVal {
+  implicit class SchemaTermsAndConditionsMutableBuilder[Self <: SchemaTermsAndConditions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: SchemaUserFacingMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: SchemaUserFacingMessage): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: SchemaUserFacingMessage): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setHeader(value: SchemaUserFacingMessage): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

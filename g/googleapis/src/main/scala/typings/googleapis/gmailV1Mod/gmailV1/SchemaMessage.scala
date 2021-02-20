@@ -1,5 +1,6 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An email message.
   */
 @js.native
-trait SchemaMessage extends js.Object {
+trait SchemaMessage extends StObject {
   
   /**
     * The ID of the last history record that modified this message.
@@ -74,75 +75,63 @@ object SchemaMessage {
   }
   
   @scala.inline
-  implicit class SchemaMessageOps[Self <: SchemaMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaMessageMutableBuilder[Self <: SchemaMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    def setInternalDate(value: String): Self = StObject.set(x, "internalDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInternalDateUndefined: Self = StObject.set(x, "internalDate", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalDate(value: String): Self = this.set("internalDate", value.asInstanceOf[js.Any])
+    def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
     @scala.inline
-    def deleteInternalDate: Self = this.set("internalDate", js.undefined)
+    def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
     
     @scala.inline
-    def setLabelIdsVarargs(value: String*): Self = this.set("labelIds", js.Array(value :_*))
+    def setPayload(value: SchemaMessagePart): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelIds(value: js.Array[String]): Self = this.set("labelIds", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteLabelIds: Self = this.set("labelIds", js.undefined)
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: SchemaMessagePart): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setSizeEstimate(value: Double): Self = StObject.set(x, "sizeEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setSizeEstimateUndefined: Self = StObject.set(x, "sizeEstimate", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeEstimate(value: Double): Self = this.set("sizeEstimate", value.asInstanceOf[js.Any])
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def deleteSizeEstimate: Self = this.set("sizeEstimate", js.undefined)
+    def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: String): Self = this.set("snippet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
-    
-    @scala.inline
-    def setThreadId(value: String): Self = this.set("threadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreadId: Self = this.set("threadId", js.undefined)
+    def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
   }
 }

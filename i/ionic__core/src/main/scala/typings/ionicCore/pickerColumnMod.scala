@@ -4,14 +4,14 @@ import typings.ionicCore.pickerInterfaceMod.PickerColumn
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/picker-column/picker-column", JSImport.Namespace)
-@js.native
-object pickerColumnMod extends js.Object {
+object pickerColumnMod {
   
+  @JSImport("@ionic/core/dist/types/components/picker-column/picker-column", "PickerColumnCmp")
   @js.native
   class PickerColumnCmp () extends ComponentInterface {
     

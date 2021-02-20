@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait Menu extends js.Object {
+trait Menu extends StObject {
   
   def addItem(caption: String, functionName: String): Menu = js.native
   
@@ -46,30 +47,18 @@ object Menu {
   }
   
   @scala.inline
-  implicit class MenuOps[Self <: Menu] (val x: Self) extends AnyVal {
+  implicit class MenuMutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddItem(value: (String, String) => Menu): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSeparator(value: () => Menu): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddSubMenu(value: Menu => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddItem(value: (String, String) => Menu): Self = this.set("addItem", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setAddSeparator(value: () => Menu): Self = this.set("addSeparator", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setAddSubMenu(value: Menu => Menu): Self = this.set("addSubMenu", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAddToUi(value: () => Unit): Self = this.set("addToUi", js.Any.fromFunction0(value))
+    def setAddToUi(value: () => Unit): Self = StObject.set(x, "addToUi", js.Any.fromFunction0(value))
   }
 }

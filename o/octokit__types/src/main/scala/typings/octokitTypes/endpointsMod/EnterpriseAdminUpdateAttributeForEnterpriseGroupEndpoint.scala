@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint extends js.Object {
+trait EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint extends StObject {
   
   /**
     * Array of [SCIM operations](https://tools.ietf.org/html/rfc7644#section-3.5.2).
@@ -41,36 +42,24 @@ object EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpointOps[Self <: EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpointMutableBuilder[Self <: EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperations(value: js.Array[EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations]): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperationsVarargs(value: EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations*): Self = StObject.set(x, "Operations", js.Array(value :_*))
     
     @scala.inline
-    def setOperationsVarargs(value: EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations*): Self = this.set("Operations", js.Array(value :_*))
+    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperations(value: js.Array[EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations]): Self = this.set("Operations", value.asInstanceOf[js.Any])
+    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
     @scala.inline
-    def setEnterprise(value: String): Self = this.set("enterprise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = this.set("schemas", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = this.set("schemas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScim_group_id(value: String): Self = this.set("scim_group_id", value.asInstanceOf[js.Any])
+    def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
   }
 }

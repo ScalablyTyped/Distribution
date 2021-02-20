@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esTableMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableCellDataGetterParams extends js.Object {
+trait TableCellDataGetterParams extends StObject {
   
   var columnData: js.UndefOr[js.Any] = js.native
   
@@ -22,30 +23,18 @@ object TableCellDataGetterParams {
   }
   
   @scala.inline
-  implicit class TableCellDataGetterParamsOps[Self <: TableCellDataGetterParams] (val x: Self) extends AnyVal {
+  implicit class TableCellDataGetterParamsMutableBuilder[Self <: TableCellDataGetterParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataKey(value: String): Self = this.set("dataKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnData(value: js.Any): Self = this.set("columnData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnData: Self = this.set("columnData", js.undefined)
+    def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
   }
 }

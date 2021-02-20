@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * processed by a worker.
   */
 @js.native
-trait SchemaWorkItemServiceState extends js.Object {
+trait SchemaWorkItemServiceState extends StObject {
   
   /**
     * Other data returned by the service, specific to the particular worker
@@ -69,69 +70,57 @@ object SchemaWorkItemServiceState {
   }
   
   @scala.inline
-  implicit class SchemaWorkItemServiceStateOps[Self <: SchemaWorkItemServiceState] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkItemServiceStateMutableBuilder[Self <: SchemaWorkItemServiceState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHarnessData(value: StringDictionary[js.Any]): Self = StObject.set(x, "harnessData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHarnessDataUndefined: Self = StObject.set(x, "harnessData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeaseExpireTime(value: String): Self = StObject.set(x, "leaseExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHarnessData(value: StringDictionary[js.Any]): Self = this.set("harnessData", value.asInstanceOf[js.Any])
+    def setLeaseExpireTimeUndefined: Self = StObject.set(x, "leaseExpireTime", js.undefined)
     
     @scala.inline
-    def deleteHarnessData: Self = this.set("harnessData", js.undefined)
+    def setMetricShortId(value: js.Array[SchemaMetricShortId]): Self = StObject.set(x, "metricShortId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaseExpireTime(value: String): Self = this.set("leaseExpireTime", value.asInstanceOf[js.Any])
+    def setMetricShortIdUndefined: Self = StObject.set(x, "metricShortId", js.undefined)
     
     @scala.inline
-    def deleteLeaseExpireTime: Self = this.set("leaseExpireTime", js.undefined)
+    def setMetricShortIdVarargs(value: SchemaMetricShortId*): Self = StObject.set(x, "metricShortId", js.Array(value :_*))
     
     @scala.inline
-    def setMetricShortIdVarargs(value: SchemaMetricShortId*): Self = this.set("metricShortId", js.Array(value :_*))
+    def setNextReportIndex(value: String): Self = StObject.set(x, "nextReportIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricShortId(value: js.Array[SchemaMetricShortId]): Self = this.set("metricShortId", value.asInstanceOf[js.Any])
+    def setNextReportIndexUndefined: Self = StObject.set(x, "nextReportIndex", js.undefined)
     
     @scala.inline
-    def deleteMetricShortId: Self = this.set("metricShortId", js.undefined)
+    def setReportStatusInterval(value: String): Self = StObject.set(x, "reportStatusInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextReportIndex(value: String): Self = this.set("nextReportIndex", value.asInstanceOf[js.Any])
+    def setReportStatusIntervalUndefined: Self = StObject.set(x, "reportStatusInterval", js.undefined)
     
     @scala.inline
-    def deleteNextReportIndex: Self = this.set("nextReportIndex", js.undefined)
+    def setSplitRequest(value: SchemaApproximateSplitRequest): Self = StObject.set(x, "splitRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportStatusInterval(value: String): Self = this.set("reportStatusInterval", value.asInstanceOf[js.Any])
+    def setSplitRequestUndefined: Self = StObject.set(x, "splitRequest", js.undefined)
     
     @scala.inline
-    def deleteReportStatusInterval: Self = this.set("reportStatusInterval", js.undefined)
+    def setSuggestedStopPoint(value: SchemaApproximateProgress): Self = StObject.set(x, "suggestedStopPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitRequest(value: SchemaApproximateSplitRequest): Self = this.set("splitRequest", value.asInstanceOf[js.Any])
+    def setSuggestedStopPointUndefined: Self = StObject.set(x, "suggestedStopPoint", js.undefined)
     
     @scala.inline
-    def deleteSplitRequest: Self = this.set("splitRequest", js.undefined)
+    def setSuggestedStopPosition(value: SchemaPosition): Self = StObject.set(x, "suggestedStopPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedStopPoint(value: SchemaApproximateProgress): Self = this.set("suggestedStopPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedStopPoint: Self = this.set("suggestedStopPoint", js.undefined)
-    
-    @scala.inline
-    def setSuggestedStopPosition(value: SchemaPosition): Self = this.set("suggestedStopPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedStopPosition: Self = this.set("suggestedStopPosition", js.undefined)
+    def setSuggestedStopPositionUndefined: Self = StObject.set(x, "suggestedStopPosition", js.undefined)
   }
 }

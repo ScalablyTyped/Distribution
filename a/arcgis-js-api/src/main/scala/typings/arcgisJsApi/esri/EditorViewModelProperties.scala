@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorViewModelProperties extends js.Object {
+trait EditorViewModelProperties extends StObject {
   
   /**
     * An array of string values which specifies what end users are allowed to edit.
@@ -58,60 +59,48 @@ object EditorViewModelProperties {
   }
   
   @scala.inline
-  implicit class EditorViewModelPropertiesOps[Self <: EditorViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class EditorViewModelPropertiesMutableBuilder[Self <: EditorViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedWorkflows(value: js.Array[String]): Self = StObject.set(x, "allowedWorkflows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedWorkflowsUndefined: Self = StObject.set(x, "allowedWorkflows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedWorkflowsVarargs(value: String*): Self = StObject.set(x, "allowedWorkflows", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedWorkflowsVarargs(value: String*): Self = this.set("allowedWorkflows", js.Array(value :_*))
+    def setFeatureFormViewModel(value: FeatureFormViewModelProperties): Self = StObject.set(x, "featureFormViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedWorkflows(value: js.Array[String]): Self = this.set("allowedWorkflows", value.asInstanceOf[js.Any])
+    def setFeatureFormViewModelUndefined: Self = StObject.set(x, "featureFormViewModel", js.undefined)
     
     @scala.inline
-    def deleteAllowedWorkflows: Self = this.set("allowedWorkflows", js.undefined)
+    def setFeatureTemplatesViewModel(value: FeatureTemplatesViewModelProperties): Self = StObject.set(x, "featureTemplatesViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureFormViewModel(value: FeatureFormViewModelProperties): Self = this.set("featureFormViewModel", value.asInstanceOf[js.Any])
+    def setFeatureTemplatesViewModelUndefined: Self = StObject.set(x, "featureTemplatesViewModel", js.undefined)
     
     @scala.inline
-    def deleteFeatureFormViewModel: Self = this.set("featureFormViewModel", js.undefined)
+    def setLayerInfos(value: js.Array[LayerInfo]): Self = StObject.set(x, "layerInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureTemplatesViewModel(value: FeatureTemplatesViewModelProperties): Self = this.set("featureTemplatesViewModel", value.asInstanceOf[js.Any])
+    def setLayerInfosUndefined: Self = StObject.set(x, "layerInfos", js.undefined)
     
     @scala.inline
-    def deleteFeatureTemplatesViewModel: Self = this.set("featureTemplatesViewModel", js.undefined)
+    def setLayerInfosVarargs(value: LayerInfo*): Self = StObject.set(x, "layerInfos", js.Array(value :_*))
     
     @scala.inline
-    def setLayerInfosVarargs(value: LayerInfo*): Self = this.set("layerInfos", js.Array(value :_*))
+    def setSketchViewModel(value: SketchViewModelProperties): Self = StObject.set(x, "sketchViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerInfos(value: js.Array[LayerInfo]): Self = this.set("layerInfos", value.asInstanceOf[js.Any])
+    def setSketchViewModelUndefined: Self = StObject.set(x, "sketchViewModel", js.undefined)
     
     @scala.inline
-    def deleteLayerInfos: Self = this.set("layerInfos", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSketchViewModel(value: SketchViewModelProperties): Self = this.set("sketchViewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSketchViewModel: Self = this.set("sketchViewModel", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

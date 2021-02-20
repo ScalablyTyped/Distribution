@@ -21,6 +21,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,48 +77,36 @@ object ojInputTimeSettableProperties {
   }
   
   @scala.inline
-  implicit class ojInputTimeSettablePropertiesOps[Self <: ojInputTimeSettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojInputTimeSettablePropertiesMutableBuilder[Self <: ojInputTimeSettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverter(value: Converter[String] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyboardEdit(value: enabled | disabled): Self = StObject.set(x, "keyboardEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConverter(value: Converter[String] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
+    def setMaxNull: Self = StObject.set(x, "max", null)
     
     @scala.inline
-    def setKeyboardEdit(value: enabled | disabled): Self = this.set("keyboardEdit", value.asInstanceOf[js.Any])
+    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickerAttributes(value: Class): Self = this.set("pickerAttributes", value.asInstanceOf[js.Any])
+    def setMinNull: Self = StObject.set(x, "min", null)
     
     @scala.inline
-    def setRenderMode(value: jet | native): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+    def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePicker(value: FooterLayout): Self = this.set("timePicker", value.asInstanceOf[js.Any])
+    def setRenderMode(value: jet | native): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: AmpmWheelLabel): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setTimePicker(value: FooterLayout): Self = StObject.set(x, "timePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxNull: Self = this.set("max", null)
-    
-    @scala.inline
-    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinNull: Self = this.set("min", null)
+    def setTranslations(value: AmpmWheelLabel): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
   }
 }

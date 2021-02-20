@@ -1,11 +1,12 @@
 package typings.awsSdk.signerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSigningPlatformRequest extends js.Object {
+trait GetSigningPlatformRequest extends StObject {
   
   /**
     * The ID of the target signing platform.
@@ -21,21 +22,9 @@ object GetSigningPlatformRequest {
   }
   
   @scala.inline
-  implicit class GetSigningPlatformRequestOps[Self <: GetSigningPlatformRequest] (val x: Self) extends AnyVal {
+  implicit class GetSigningPlatformRequestMutableBuilder[Self <: GetSigningPlatformRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlatformId(value: PlatformId): Self = this.set("platformId", value.asInstanceOf[js.Any])
+    def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
   }
 }

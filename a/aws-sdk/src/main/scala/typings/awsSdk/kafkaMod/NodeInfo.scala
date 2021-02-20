@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeInfo extends js.Object {
+trait NodeInfo extends StObject {
   
   /**
     * 
@@ -58,54 +59,42 @@ object NodeInfo {
   }
   
   @scala.inline
-  implicit class NodeInfoOps[Self <: NodeInfo] (val x: Self) extends AnyVal {
+  implicit class NodeInfoMutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedToClusterTime(value: string): Self = StObject.set(x, "AddedToClusterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedToClusterTimeUndefined: Self = StObject.set(x, "AddedToClusterTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrokerNodeInfo(value: BrokerNodeInfo): Self = StObject.set(x, "BrokerNodeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedToClusterTime(value: string): Self = this.set("AddedToClusterTime", value.asInstanceOf[js.Any])
+    def setBrokerNodeInfoUndefined: Self = StObject.set(x, "BrokerNodeInfo", js.undefined)
     
     @scala.inline
-    def deleteAddedToClusterTime: Self = this.set("AddedToClusterTime", js.undefined)
+    def setInstanceType(value: string): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerNodeInfo(value: BrokerNodeInfo): Self = this.set("BrokerNodeInfo", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteBrokerNodeInfo: Self = this.set("BrokerNodeInfo", js.undefined)
+    def setNodeARN(value: string): Self = StObject.set(x, "NodeARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: string): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setNodeARNUndefined: Self = StObject.set(x, "NodeARN", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setNodeType(value: NodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeARN(value: string): Self = this.set("NodeARN", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
     @scala.inline
-    def deleteNodeARN: Self = this.set("NodeARN", js.undefined)
+    def setZookeeperNodeInfo(value: ZookeeperNodeInfo): Self = StObject.set(x, "ZookeeperNodeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: NodeType): Self = this.set("NodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeType: Self = this.set("NodeType", js.undefined)
-    
-    @scala.inline
-    def setZookeeperNodeInfo(value: ZookeeperNodeInfo): Self = this.set("ZookeeperNodeInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZookeeperNodeInfo: Self = this.set("ZookeeperNodeInfo", js.undefined)
+    def setZookeeperNodeInfoUndefined: Self = StObject.set(x, "ZookeeperNodeInfo", js.undefined)
   }
 }

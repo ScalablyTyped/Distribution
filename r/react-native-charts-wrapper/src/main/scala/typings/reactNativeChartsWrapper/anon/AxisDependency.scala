@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisDependency extends js.Object {
+trait AxisDependency extends StObject {
   
   var axisDependency: js.UndefOr[typings.reactNativeChartsWrapper.mod.AxisDependency] = js.native
   
@@ -26,36 +27,24 @@ object AxisDependency {
   }
   
   @scala.inline
-  implicit class AxisDependencyOps[Self <: AxisDependency] (val x: Self) extends AnyVal {
+  implicit class AxisDependencyMutableBuilder[Self <: AxisDependency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisDependency(value: typings.reactNativeChartsWrapper.mod.AxisDependency): Self = StObject.set(x, "axisDependency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisDependencyUndefined: Self = StObject.set(x, "axisDependency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setXValue(value: Double): Self = StObject.set(x, "xValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXValue(value: Double): Self = this.set("xValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYValue(value: Double): Self = this.set("yValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAxisDependency(value: typings.reactNativeChartsWrapper.mod.AxisDependency): Self = this.set("axisDependency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAxisDependency: Self = this.set("axisDependency", js.undefined)
+    def setYValue(value: Double): Self = StObject.set(x, "yValue", value.asInstanceOf[js.Any])
   }
 }

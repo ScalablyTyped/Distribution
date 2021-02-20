@@ -1,11 +1,12 @@
 package typings.backlogJs.mod.Option.Project
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchCustomFieldParams extends js.Object {
+trait PatchCustomFieldParams extends StObject {
   
   var applicableIssueTypes: js.UndefOr[js.Array[Double]] = js.native
   
@@ -24,45 +25,33 @@ object PatchCustomFieldParams {
   }
   
   @scala.inline
-  implicit class PatchCustomFieldParamsOps[Self <: PatchCustomFieldParams] (val x: Self) extends AnyVal {
+  implicit class PatchCustomFieldParamsMutableBuilder[Self <: PatchCustomFieldParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicableIssueTypes(value: js.Array[Double]): Self = StObject.set(x, "applicableIssueTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicableIssueTypesUndefined: Self = StObject.set(x, "applicableIssueTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicableIssueTypesVarargs(value: Double*): Self = StObject.set(x, "applicableIssueTypes", js.Array(value :_*))
     
     @scala.inline
-    def setApplicableIssueTypesVarargs(value: Double*): Self = this.set("applicableIssueTypes", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableIssueTypes(value: js.Array[Double]): Self = this.set("applicableIssueTypes", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteApplicableIssueTypes: Self = this.set("applicableIssueTypes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

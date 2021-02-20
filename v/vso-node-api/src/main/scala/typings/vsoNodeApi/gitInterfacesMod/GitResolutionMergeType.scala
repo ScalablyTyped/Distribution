@@ -1,41 +1,36 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitResolutionMergeType extends js.Object
+sealed trait GitResolutionMergeType extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitResolutionMergeType")
 @js.native
-object GitResolutionMergeType extends js.Object {
+object GitResolutionMergeType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitResolutionMergeType with Double] = js.native
   
   @js.native
   sealed trait AutoMerged extends GitResolutionMergeType
-  /* 3 */ @js.native
-  object AutoMerged extends TopLevel[AutoMerged with Double]
+  /* 3 */ val AutoMerged: typings.vsoNodeApi.gitInterfacesMod.GitResolutionMergeType.AutoMerged with Double = js.native
   
   @js.native
   sealed trait TakeSourceContent extends GitResolutionMergeType
-  /* 1 */ @js.native
-  object TakeSourceContent extends TopLevel[TakeSourceContent with Double]
+  /* 1 */ val TakeSourceContent: typings.vsoNodeApi.gitInterfacesMod.GitResolutionMergeType.TakeSourceContent with Double = js.native
   
   @js.native
   sealed trait TakeTargetContent extends GitResolutionMergeType
-  /* 2 */ @js.native
-  object TakeTargetContent extends TopLevel[TakeTargetContent with Double]
+  /* 2 */ val TakeTargetContent: typings.vsoNodeApi.gitInterfacesMod.GitResolutionMergeType.TakeTargetContent with Double = js.native
   
   @js.native
   sealed trait Undecided extends GitResolutionMergeType
-  /* 0 */ @js.native
-  object Undecided extends TopLevel[Undecided with Double]
+  /* 0 */ val Undecided: typings.vsoNodeApi.gitInterfacesMod.GitResolutionMergeType.Undecided with Double = js.native
   
   @js.native
   sealed trait UserMerged extends GitResolutionMergeType
-  /* 4 */ @js.native
-  object UserMerged extends TopLevel[UserMerged with Double]
+  /* 4 */ val UserMerged: typings.vsoNodeApi.gitInterfacesMod.GitResolutionMergeType.UserMerged with Double = js.native
 }

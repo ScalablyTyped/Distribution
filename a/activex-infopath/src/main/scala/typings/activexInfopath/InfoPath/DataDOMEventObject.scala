@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataDOMEventObject extends js.Object {
+trait DataDOMEventObject extends StObject {
   
   @JSName("InfoPath.DataDOMEventObject_typekey")
   var InfoPathDotDataDOMEventObject_typekey: DataDOMEventObject = js.native

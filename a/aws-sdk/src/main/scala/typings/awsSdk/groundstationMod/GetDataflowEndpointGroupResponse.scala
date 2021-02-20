@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDataflowEndpointGroupResponse extends js.Object {
+trait GetDataflowEndpointGroupResponse extends StObject {
   
   /**
     * ARN of a dataflow endpoint group.
@@ -36,45 +37,33 @@ object GetDataflowEndpointGroupResponse {
   }
   
   @scala.inline
-  implicit class GetDataflowEndpointGroupResponseOps[Self <: GetDataflowEndpointGroupResponse] (val x: Self) extends AnyVal {
+  implicit class GetDataflowEndpointGroupResponseMutableBuilder[Self <: GetDataflowEndpointGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataflowEndpointGroupArn(value: DataflowEndpointGroupArn): Self = StObject.set(x, "dataflowEndpointGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataflowEndpointGroupArnUndefined: Self = StObject.set(x, "dataflowEndpointGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataflowEndpointGroupId(value: String): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataflowEndpointGroupArn(value: DataflowEndpointGroupArn): Self = this.set("dataflowEndpointGroupArn", value.asInstanceOf[js.Any])
+    def setDataflowEndpointGroupIdUndefined: Self = StObject.set(x, "dataflowEndpointGroupId", js.undefined)
     
     @scala.inline
-    def deleteDataflowEndpointGroupArn: Self = this.set("dataflowEndpointGroupArn", js.undefined)
+    def setEndpointsDetails(value: EndpointDetailsList): Self = StObject.set(x, "endpointsDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataflowEndpointGroupId(value: String): Self = this.set("dataflowEndpointGroupId", value.asInstanceOf[js.Any])
+    def setEndpointsDetailsUndefined: Self = StObject.set(x, "endpointsDetails", js.undefined)
     
     @scala.inline
-    def deleteDataflowEndpointGroupId: Self = this.set("dataflowEndpointGroupId", js.undefined)
+    def setEndpointsDetailsVarargs(value: EndpointDetails*): Self = StObject.set(x, "endpointsDetails", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsDetailsVarargs(value: EndpointDetails*): Self = this.set("endpointsDetails", js.Array(value :_*))
+    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointsDetails(value: EndpointDetailsList): Self = this.set("endpointsDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointsDetails: Self = this.set("endpointsDetails", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

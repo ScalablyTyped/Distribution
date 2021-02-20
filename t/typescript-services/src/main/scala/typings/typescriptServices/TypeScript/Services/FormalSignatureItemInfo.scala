@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormalSignatureItemInfo extends js.Object {
+trait FormalSignatureItemInfo extends StObject {
   
   var docComment: String = js.native
   
@@ -29,36 +30,24 @@ object FormalSignatureItemInfo {
   }
   
   @scala.inline
-  implicit class FormalSignatureItemInfoOps[Self <: FormalSignatureItemInfo] (val x: Self) extends AnyVal {
+  implicit class FormalSignatureItemInfoMutableBuilder[Self <: FormalSignatureItemInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameters(value: js.Array[FormalParameterInfo]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersVarargs(value: FormalParameterInfo*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setDocComment(value: String): Self = this.set("docComment", value.asInstanceOf[js.Any])
+    def setSignatureInfo(value: String): Self = StObject.set(x, "signatureInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersVarargs(value: FormalParameterInfo*): Self = this.set("parameters", js.Array(value :_*))
+    def setTypeParameters(value: js.Array[FormalTypeParameterInfo]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[FormalParameterInfo]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureInfo(value: String): Self = this.set("signatureInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeParametersVarargs(value: FormalTypeParameterInfo*): Self = this.set("typeParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypeParameters(value: js.Array[FormalTypeParameterInfo]): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
+    def setTypeParametersVarargs(value: FormalTypeParameterInfo*): Self = StObject.set(x, "typeParameters", js.Array(value :_*))
   }
 }

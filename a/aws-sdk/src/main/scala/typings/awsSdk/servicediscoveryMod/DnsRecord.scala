@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsRecord extends js.Object {
+trait DnsRecord extends StObject {
   
   /**
     * The amount of time, in seconds, that you want DNS resolvers to cache the settings for this record.  Alias records don't include a TTL because Route 53 uses the TTL for the AWS resource that an alias record routes traffic to. If you include the AWS_ALIAS_DNS_NAME attribute when you submit a RegisterInstance request, the TTL value is ignored. Always specify a TTL for the service; you can use a service to register instances that create either alias or non-alias records. 
@@ -26,24 +27,12 @@ object DnsRecord {
   }
   
   @scala.inline
-  implicit class DnsRecordOps[Self <: DnsRecord] (val x: Self) extends AnyVal {
+  implicit class DnsRecordMutableBuilder[Self <: DnsRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTTL(value: RecordTTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTTL(value: RecordTTL): Self = this.set("TTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: RecordType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: RecordType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

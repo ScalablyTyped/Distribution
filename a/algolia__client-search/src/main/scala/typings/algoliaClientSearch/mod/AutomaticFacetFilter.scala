@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticFacetFilter extends js.Object {
+trait AutomaticFacetFilter extends StObject {
   
   /**
     * Whether the filter is disjunctive (true) or conjunctive (false).
@@ -31,33 +32,21 @@ object AutomaticFacetFilter {
   }
   
   @scala.inline
-  implicit class AutomaticFacetFilterOps[Self <: AutomaticFacetFilter] (val x: Self) extends AnyVal {
+  implicit class AutomaticFacetFilterMutableBuilder[Self <: AutomaticFacetFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisjunctive(value: Boolean): Self = StObject.set(x, "disjunctive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisjunctiveUndefined: Self = StObject.set(x, "disjunctive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacet(value: String): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacet(value: String): Self = this.set("facet", value.asInstanceOf[js.Any])
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisjunctive(value: Boolean): Self = this.set("disjunctive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisjunctive: Self = this.set("disjunctive", js.undefined)
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

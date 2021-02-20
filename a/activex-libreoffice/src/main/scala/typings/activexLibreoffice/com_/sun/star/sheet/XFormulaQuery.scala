@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,24 +50,12 @@ object XFormulaQuery {
   }
   
   @scala.inline
-  implicit class XFormulaQueryOps[Self <: XFormulaQuery] (val x: Self) extends AnyVal {
+  implicit class XFormulaQueryMutableBuilder[Self <: XFormulaQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueryDependents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryDependents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueryDependents(value: Boolean => XSheetCellRanges): Self = this.set("queryDependents", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueryPrecedents(value: Boolean => XSheetCellRanges): Self = this.set("queryPrecedents", js.Any.fromFunction1(value))
+    def setQueryPrecedents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryPrecedents", js.Any.fromFunction1(value))
   }
 }

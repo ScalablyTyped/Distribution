@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
+sealed trait EventType extends StObject
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
   
   /**
     * AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data view following a data change

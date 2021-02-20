@@ -1,17 +1,16 @@
 package typings.amapJsApiPlaceSearch
 
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.PlaceSearch")
     @js.native
     /**
       * 地点搜索服务

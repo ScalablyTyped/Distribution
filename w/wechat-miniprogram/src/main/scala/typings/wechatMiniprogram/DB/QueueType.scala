@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wechatMiniprogram.wechatMiniprogramStrings.dequeue
   - typings.wechatMiniprogram.wechatMiniprogramStrings.update
 */
-trait QueueType extends js.Object
+trait QueueType extends StObject
 object QueueType {
   
   @scala.inline

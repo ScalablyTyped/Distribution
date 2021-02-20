@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`value-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.sequential
 import typings.arcgisJsApi.arcgisJsApiStrings.submit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

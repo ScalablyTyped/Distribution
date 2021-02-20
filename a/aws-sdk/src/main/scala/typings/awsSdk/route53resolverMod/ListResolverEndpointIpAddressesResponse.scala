@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResolverEndpointIpAddressesResponse extends js.Object {
+trait ListResolverEndpointIpAddressesResponse extends StObject {
   
   /**
     * Information about the IP addresses in your VPC that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints).
@@ -31,39 +32,27 @@ object ListResolverEndpointIpAddressesResponse {
   }
   
   @scala.inline
-  implicit class ListResolverEndpointIpAddressesResponseOps[Self <: ListResolverEndpointIpAddressesResponse] (val x: Self) extends AnyVal {
+  implicit class ListResolverEndpointIpAddressesResponseMutableBuilder[Self <: ListResolverEndpointIpAddressesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpAddresses(value: IpAddressesResponse): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddressesVarargs(value: IpAddressResponse*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setIpAddressesVarargs(value: IpAddressResponse*): Self = this.set("IpAddresses", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddresses(value: IpAddressesResponse): Self = this.set("IpAddresses", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteIpAddresses: Self = this.set("IpAddresses", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

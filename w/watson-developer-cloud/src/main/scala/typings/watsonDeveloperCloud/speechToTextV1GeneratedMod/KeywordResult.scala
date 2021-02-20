@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** KeywordResult. */
 @js.native
-trait KeywordResult extends js.Object {
+trait KeywordResult extends StObject {
   
   /** A confidence score for the keyword match in the range of 0.0 to 1.0. */
   var confidence: Double = js.native
@@ -29,30 +30,18 @@ object KeywordResult {
   }
   
   @scala.inline
-  implicit class KeywordResultOps[Self <: KeywordResult] (val x: Self) extends AnyVal {
+  implicit class KeywordResultMutableBuilder[Self <: KeywordResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalized_text(value: String): Self = StObject.set(x, "normalized_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnd_time(value: Double): Self = this.set("end_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalized_text(value: String): Self = this.set("normalized_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_time(value: Double): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
   }
 }

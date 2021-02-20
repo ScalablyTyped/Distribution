@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of an error resulting from parsing an OBJ file
   */
 @js.native
-trait SchemaObjParseError extends js.Object {
+trait SchemaObjParseError extends StObject {
   
   /**
     * The type of problem found (required).
@@ -51,54 +52,42 @@ object SchemaObjParseError {
   }
   
   @scala.inline
-  implicit class SchemaObjParseErrorOps[Self <: SchemaObjParseError] (val x: Self) extends AnyVal {
+  implicit class SchemaObjParseErrorMutableBuilder[Self <: SchemaObjParseError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
     @scala.inline
-    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
-    
-    @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

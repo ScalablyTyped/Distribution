@@ -1,6 +1,7 @@
 package typings.pkcs11js.Pkcs11Js
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object ECDH1 {
   }
   
   @scala.inline
-  implicit class ECDH1Ops[Self <: ECDH1] (val x: Self) extends AnyVal {
+  implicit class ECDH1MutableBuilder[Self <: ECDH1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKdf(value: Double): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicData(value: Buffer): Self = StObject.set(x, "publicData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharedData(value: Buffer): Self = StObject.set(x, "sharedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKdf(value: Double): Self = this.set("kdf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicData(value: Buffer): Self = this.set("publicData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedData(value: Buffer): Self = this.set("sharedData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedData: Self = this.set("sharedData", js.undefined)
+    def setSharedDataUndefined: Self = StObject.set(x, "sharedData", js.undefined)
   }
 }

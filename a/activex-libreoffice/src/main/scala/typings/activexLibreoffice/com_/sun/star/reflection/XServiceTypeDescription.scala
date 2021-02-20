@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,48 +107,36 @@ object XServiceTypeDescription {
   }
   
   @scala.inline
-  implicit class XServiceTypeDescriptionOps[Self <: XServiceTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XServiceTypeDescriptionMutableBuilder[Self <: XServiceTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMandatoryInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getMandatoryInterfaces", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMandatoryServices(value: () => SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "getMandatoryServices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOptionalInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getOptionalInterfaces", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMandatoryInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = this.set("MandatoryInterfaces", value.asInstanceOf[js.Any])
+    def setGetOptionalServices(value: () => SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "getOptionalServices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMandatoryServices(value: SafeArray[XServiceTypeDescription]): Self = this.set("MandatoryServices", value.asInstanceOf[js.Any])
+    def setGetProperties(value: () => SafeArray[XPropertyTypeDescription]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptionalInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = this.set("OptionalInterfaces", value.asInstanceOf[js.Any])
+    def setMandatoryInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "MandatoryInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalServices(value: SafeArray[XServiceTypeDescription]): Self = this.set("OptionalServices", value.asInstanceOf[js.Any])
+    def setMandatoryServices(value: SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "MandatoryServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SafeArray[XPropertyTypeDescription]): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    def setOptionalInterfaces(value: SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "OptionalInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMandatoryInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = this.set("getMandatoryInterfaces", js.Any.fromFunction0(value))
+    def setOptionalServices(value: SafeArray[XServiceTypeDescription]): Self = StObject.set(x, "OptionalServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMandatoryServices(value: () => SafeArray[XServiceTypeDescription]): Self = this.set("getMandatoryServices", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOptionalInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = this.set("getOptionalInterfaces", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOptionalServices(value: () => SafeArray[XServiceTypeDescription]): Self = this.set("getOptionalServices", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetProperties(value: () => SafeArray[XPropertyTypeDescription]): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    def setProperties(value: SafeArray[XPropertyTypeDescription]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }
 }

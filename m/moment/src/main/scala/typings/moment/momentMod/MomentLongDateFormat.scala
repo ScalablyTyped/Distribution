@@ -1,11 +1,12 @@
 package typings.moment.momentMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MomentLongDateFormat extends js.Object {
+trait MomentLongDateFormat extends StObject {
   
   var L: String = js.native
   
@@ -40,54 +41,42 @@ object MomentLongDateFormat {
   }
   
   @scala.inline
-  implicit class MomentLongDateFormatOps[Self <: MomentLongDateFormat] (val x: Self) extends AnyVal {
+  implicit class MomentLongDateFormatMutableBuilder[Self <: MomentLongDateFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLL(value: String): Self = StObject.set(x, "LL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLLL(value: String): Self = StObject.set(x, "LLL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: String): Self = this.set("L", value.asInstanceOf[js.Any])
+    def setLLLL(value: String): Self = StObject.set(x, "LLLL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLL(value: String): Self = this.set("LL", value.asInstanceOf[js.Any])
+    def setLT(value: String): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLLL(value: String): Self = this.set("LLL", value.asInstanceOf[js.Any])
+    def setLTS(value: String): Self = StObject.set(x, "LTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLLLL(value: String): Self = this.set("LLLL", value.asInstanceOf[js.Any])
+    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
     @scala.inline
-    def setLT(value: String): Self = this.set("LT", value.asInstanceOf[js.Any])
+    def setLlUndefined: Self = StObject.set(x, "ll", js.undefined)
     
     @scala.inline
-    def setLTS(value: String): Self = this.set("LTS", value.asInstanceOf[js.Any])
+    def setLllUndefined: Self = StObject.set(x, "lll", js.undefined)
     
     @scala.inline
-    def deleteL: Self = this.set("l", js.undefined)
+    def setLlllUndefined: Self = StObject.set(x, "llll", js.undefined)
     
     @scala.inline
-    def deleteLl: Self = this.set("ll", js.undefined)
+    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
     @scala.inline
-    def deleteLll: Self = this.set("lll", js.undefined)
-    
-    @scala.inline
-    def deleteLlll: Self = this.set("llll", js.undefined)
-    
-    @scala.inline
-    def deleteLt: Self = this.set("lt", js.undefined)
-    
-    @scala.inline
-    def deleteLts: Self = this.set("lts", js.undefined)
+    def setLtsUndefined: Self = StObject.set(x, "lts", js.undefined)
   }
 }

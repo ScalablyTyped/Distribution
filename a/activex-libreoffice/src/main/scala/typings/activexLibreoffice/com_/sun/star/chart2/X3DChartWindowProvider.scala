@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait X3DChartWindowProvider extends js.Object {
+trait X3DChartWindowProvider extends StObject {
   
   def setWindow(window: Double): Unit = js.native
 }
@@ -18,21 +19,9 @@ object X3DChartWindowProvider {
   }
   
   @scala.inline
-  implicit class X3DChartWindowProviderOps[Self <: X3DChartWindowProvider] (val x: Self) extends AnyVal {
+  implicit class X3DChartWindowProviderMutableBuilder[Self <: X3DChartWindowProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetWindow(value: Double => Unit): Self = this.set("setWindow", js.Any.fromFunction1(value))
+    def setSetWindow(value: Double => Unit): Self = StObject.set(x, "setWindow", js.Any.fromFunction1(value))
   }
 }

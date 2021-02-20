@@ -1,5 +1,6 @@
 package typings.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hummusRecipe.hummusRecipeStrings.Paragraph
   - typings.hummusRecipe.hummusRecipeStrings.Insert
 */
-trait AnnotOptionsIcon extends js.Object
+trait AnnotOptionsIcon extends StObject
 object AnnotOptionsIcon {
   
   @scala.inline

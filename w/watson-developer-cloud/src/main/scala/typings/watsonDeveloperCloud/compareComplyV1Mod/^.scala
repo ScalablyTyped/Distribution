@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,4 @@ class ^ protected () extends CompareComplyV1 {
 }
 @JSImport("watson-developer-cloud/compare-comply/v1", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var URL: String = js.native
-}
+object ^ extends StObject

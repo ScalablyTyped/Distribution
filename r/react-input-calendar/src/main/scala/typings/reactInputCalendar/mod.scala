@@ -1,12 +1,18 @@
 package typings.reactInputCalendar
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
-import typings.reactInputCalendar.reactInputCalendar.ReactInputCalendar
+import typings.react.mod.Component
+import typings.reactInputCalendar.reactInputCalendar.ReactInputCalendarProps
+import typings.reactInputCalendar.reactInputCalendar.ReactInputCalendarState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-input-calendar", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Instantiable0[ReactInputCalendar]]
+object mod {
+  
+  /* was `typeof reactInputCalendar.ReactInputCalendar` */
+  @JSImport("react-input-calendar", JSImport.Namespace)
+  @js.native
+  class ^ ()
+    extends Component[ReactInputCalendarProps, ReactInputCalendarState, js.Any]
+}

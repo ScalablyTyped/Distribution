@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestBody extends js.Object {
+trait RequestBody extends StObject {
   
   /**
     * HTTP Request Body
@@ -31,33 +32,21 @@ object RequestBody {
   }
   
   @scala.inline
-  implicit class RequestBodyOps[Self <: RequestBody] (val x: Self) extends AnyVal {
+  implicit class RequestBodyMutableBuilder[Self <: RequestBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: String): Self = this.set("RequestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("RequestBody", js.undefined)
-    
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = this.set("onBehalfOfContentOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnBehalfOfContentOwner: Self = this.set("onBehalfOfContentOwner", js.undefined)
+    def setRequestBodyUndefined: Self = StObject.set(x, "RequestBody", js.undefined)
   }
 }

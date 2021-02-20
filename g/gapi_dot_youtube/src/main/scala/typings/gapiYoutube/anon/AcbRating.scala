@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcbRating extends js.Object {
+trait AcbRating extends StObject {
   
   /**
     * The videos Australian Classification Board (ACB) rating.
@@ -107,63 +108,51 @@ object AcbRating {
   }
   
   @scala.inline
-  implicit class AcbRatingOps[Self <: AcbRating] (val x: Self) extends AnyVal {
+  implicit class AcbRatingMutableBuilder[Self <: AcbRating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBbfcRating(value: String): Self = StObject.set(x, "bbfcRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCbfcRating(value: String): Self = StObject.set(x, "cbfcRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcbRating(value: String): Self = this.set("acbRating", value.asInstanceOf[js.Any])
+    def setChvrsRating(value: String): Self = StObject.set(x, "chvrsRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbfcRating(value: String): Self = this.set("bbfcRating", value.asInstanceOf[js.Any])
+    def setDjctqRating(value: String): Self = StObject.set(x, "djctqRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCbfcRating(value: String): Self = this.set("cbfcRating", value.asInstanceOf[js.Any])
+    def setEirinRating(value: String): Self = StObject.set(x, "eirinRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChvrsRating(value: String): Self = this.set("chvrsRating", value.asInstanceOf[js.Any])
+    def setFmocRating(value: String): Self = StObject.set(x, "fmocRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDjctqRating(value: String): Self = this.set("djctqRating", value.asInstanceOf[js.Any])
+    def setFskRating(value: String): Self = StObject.set(x, "fskRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEirinRating(value: String): Self = this.set("eirinRating", value.asInstanceOf[js.Any])
+    def setIcaaRating(value: String): Self = StObject.set(x, "icaaRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFmocRating(value: String): Self = this.set("fmocRating", value.asInstanceOf[js.Any])
+    def setKmrbRating(value: String): Self = StObject.set(x, "kmrbRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFskRating(value: String): Self = this.set("fskRating", value.asInstanceOf[js.Any])
+    def setMpaaRating(value: String): Self = StObject.set(x, "mpaaRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcaaRating(value: String): Self = this.set("icaaRating", value.asInstanceOf[js.Any])
+    def setOflcRating(value: String): Self = StObject.set(x, "oflcRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmrbRating(value: String): Self = this.set("kmrbRating", value.asInstanceOf[js.Any])
+    def setRtcRating(value: String): Self = StObject.set(x, "rtcRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpaaRating(value: String): Self = this.set("mpaaRating", value.asInstanceOf[js.Any])
+    def setRussiaRating(value: String): Self = StObject.set(x, "russiaRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOflcRating(value: String): Self = this.set("oflcRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRtcRating(value: String): Self = this.set("rtcRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRussiaRating(value: String): Self = this.set("russiaRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTvpgRating(value: String): Self = this.set("tvpgRating", value.asInstanceOf[js.Any])
+    def setTvpgRating(value: String): Self = StObject.set(x, "tvpgRating", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionsMixin extends js.Object {
+trait RegionsMixin extends StObject {
   
   var addRegion: js.Any = js.native
   
@@ -53,54 +54,42 @@ object RegionsMixin {
   }
   
   @scala.inline
-  implicit class RegionsMixinOps[Self <: RegionsMixin] (val x: Self) extends AnyVal {
+  implicit class RegionsMixinMutableBuilder[Self <: RegionsMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRegion(value: js.Any): Self = StObject.set(x, "addRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRegions(value: js.Any): Self = StObject.set(x, "addRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetachChildView(value: js.Any): Self = StObject.set(x, "detachChildView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRegion(value: js.Any): Self = this.set("addRegion", value.asInstanceOf[js.Any])
+    def setEmptyRegions(value: js.Any): Self = StObject.set(x, "emptyRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRegions(value: js.Any): Self = this.set("addRegions", value.asInstanceOf[js.Any])
+    def setGetChildView(value: js.Any): Self = StObject.set(x, "getChildView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachChildView(value: js.Any): Self = this.set("detachChildView", value.asInstanceOf[js.Any])
+    def setGetRegion(value: js.Any): Self = StObject.set(x, "getRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyRegions(value: js.Any): Self = this.set("emptyRegions", value.asInstanceOf[js.Any])
+    def setGetRegions(value: js.Any): Self = StObject.set(x, "getRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetChildView(value: js.Any): Self = this.set("getChildView", value.asInstanceOf[js.Any])
+    def setHasRegion(value: js.Any): Self = StObject.set(x, "hasRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRegion(value: js.Any): Self = this.set("getRegion", value.asInstanceOf[js.Any])
+    def setRegionClass(value: js.Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRegions(value: js.Any): Self = this.set("getRegions", value.asInstanceOf[js.Any])
+    def setRemoveRegion(value: js.Any): Self = StObject.set(x, "removeRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasRegion(value: js.Any): Self = this.set("hasRegion", value.asInstanceOf[js.Any])
+    def setRemoveRegions(value: js.Any): Self = StObject.set(x, "removeRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionClass(value: js.Any): Self = this.set("regionClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveRegion(value: js.Any): Self = this.set("removeRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveRegions(value: js.Any): Self = this.set("removeRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowChildView(value: js.Any): Self = this.set("showChildView", value.asInstanceOf[js.Any])
+    def setShowChildView(value: js.Any): Self = StObject.set(x, "showChildView", value.asInstanceOf[js.Any])
   }
 }

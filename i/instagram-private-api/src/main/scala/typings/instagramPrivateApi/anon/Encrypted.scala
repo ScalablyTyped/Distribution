@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encrypted extends js.Object {
+trait Encrypted extends StObject {
   
   var encrypted: String = js.native
   
@@ -20,24 +21,12 @@ object Encrypted {
   }
   
   @scala.inline
-  implicit class EncryptedOps[Self <: Encrypted] (val x: Self) extends AnyVal {
+  implicit class EncryptedMutableBuilder[Self <: Encrypted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncrypted(value: String): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncrypted(value: String): Self = this.set("encrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

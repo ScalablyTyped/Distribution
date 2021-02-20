@@ -2,12 +2,13 @@ package typings.reactNativeMaterialUi.anon
 
 import typings.reactNativeMaterialUi.mod.TextStyle
 import typings.reactNativeMaterialUi.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Active extends js.Object {
+trait Active extends StObject {
   
   var active: js.UndefOr[TextStyle] = js.native
   
@@ -24,45 +25,33 @@ object Active {
   }
   
   @scala.inline
-  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: TextStyle): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveNull: Self = StObject.set(x, "active", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def setActive(value: TextStyle): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def setActiveNull: Self = this.set("active", null)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDisabled(value: TextStyle): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
-    
-    @scala.inline
-    def setDisabled(value: TextStyle): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setDisabledNull: Self = this.set("disabled", null)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }
 }

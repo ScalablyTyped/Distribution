@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansUtilizationByTime extends js.Object {
+trait SavingsPlansUtilizationByTime extends StObject {
   
   /**
     * The total amortized commitment for a Savings Plans. This includes the sum of the upfront and recurring Savings Plans fees.
@@ -33,36 +34,24 @@ object SavingsPlansUtilizationByTime {
   }
   
   @scala.inline
-  implicit class SavingsPlansUtilizationByTimeOps[Self <: SavingsPlansUtilizationByTime] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansUtilizationByTimeMutableBuilder[Self <: SavingsPlansUtilizationByTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
     
     @scala.inline
-    def setUtilization(value: SavingsPlansUtilization): Self = this.set("Utilization", value.asInstanceOf[js.Any])
+    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = this.set("AmortizedCommitment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmortizedCommitment: Self = this.set("AmortizedCommitment", js.undefined)
-    
-    @scala.inline
-    def setSavings(value: SavingsPlansSavings): Self = this.set("Savings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavings: Self = this.set("Savings", js.undefined)
+    def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SpeechRecognitionAlternative. */
 @js.native
-trait SpeechRecognitionAlternative extends js.Object {
+trait SpeechRecognitionAlternative extends StObject {
   
   /** A score that indicates the service's confidence in the transcript in the range of 0.0 to 1.0. A confidence score is returned only for the best alternative and only with results marked as final. */
   var confidence: js.UndefOr[Double] = js.native
@@ -29,45 +30,33 @@ object SpeechRecognitionAlternative {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionAlternativeOps[Self <: SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionAlternativeMutableBuilder[Self <: SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamps(value: js.Array[String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranscript(value: String): Self = this.set("transcript", value.asInstanceOf[js.Any])
+    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampsVarargs(value: String*): Self = this.set("timestamps", js.Array(value :_*))
+    def setWord_confidence(value: js.Array[String]): Self = StObject.set(x, "word_confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamps(value: js.Array[String]): Self = this.set("timestamps", value.asInstanceOf[js.Any])
+    def setWord_confidenceUndefined: Self = StObject.set(x, "word_confidence", js.undefined)
     
     @scala.inline
-    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
-    
-    @scala.inline
-    def setWord_confidenceVarargs(value: String*): Self = this.set("word_confidence", js.Array(value :_*))
-    
-    @scala.inline
-    def setWord_confidence(value: js.Array[String]): Self = this.set("word_confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord_confidence: Self = this.set("word_confidence", js.undefined)
+    def setWord_confidenceVarargs(value: String*): Self = StObject.set(x, "word_confidence", js.Array(value :_*))
   }
 }

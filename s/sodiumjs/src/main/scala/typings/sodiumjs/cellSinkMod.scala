@@ -2,14 +2,14 @@ package typings.sodiumjs
 
 import typings.sodiumjs.cellMod.Cell
 import typings.sodiumjs.lambdaMod.Lambda2_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/CellSink", JSImport.Namespace)
-@js.native
-object cellSinkMod extends js.Object {
+object cellSinkMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/CellSink", "CellSink")
   @js.native
   class CellSink[A] protected () extends Cell[A] {
     /**

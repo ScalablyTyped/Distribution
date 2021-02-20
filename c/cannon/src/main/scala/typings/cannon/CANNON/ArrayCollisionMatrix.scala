@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayCollisionMatrix extends js.Object {
+trait ArrayCollisionMatrix extends StObject {
   
   def get(i: Double, j: Double): Double = js.native
   
@@ -32,36 +33,24 @@ object ArrayCollisionMatrix {
   }
   
   @scala.inline
-  implicit class ArrayCollisionMatrixOps[Self <: ArrayCollisionMatrix] (val x: Self) extends AnyVal {
+  implicit class ArrayCollisionMatrixMutableBuilder[Self <: ArrayCollisionMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatrix(value: js.Array[Mat3]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatrixVarargs(value: Mat3*): Self = StObject.set(x, "matrix", js.Array(value :_*))
     
     @scala.inline
-    def setGet(value: (Double, Double) => Double): Self = this.set("get", js.Any.fromFunction2(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMatrixVarargs(value: Mat3*): Self = this.set("matrix", js.Array(value :_*))
+    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMatrix(value: js.Array[Mat3]): Self = this.set("matrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = this.set("set", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetNumObjects(value: Double => Unit): Self = this.set("setNumObjects", js.Any.fromFunction1(value))
+    def setSetNumObjects(value: Double => Unit): Self = StObject.set(x, "setNumObjects", js.Any.fromFunction1(value))
   }
 }

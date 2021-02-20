@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePolicyVersionRequest extends js.Object {
+trait CreatePolicyVersionRequest extends StObject {
   
   /**
     * The JSON document that describes the policy. Minimum length of 1. Maximum length of 2048, excluding whitespace.
@@ -31,30 +32,18 @@ object CreatePolicyVersionRequest {
   }
   
   @scala.inline
-  implicit class CreatePolicyVersionRequestOps[Self <: CreatePolicyVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePolicyVersionRequestMutableBuilder[Self <: CreatePolicyVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetAsDefault(value: SetAsDefault): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = this.set("policyDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = this.set("policyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetAsDefault(value: SetAsDefault): Self = this.set("setAsDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetAsDefault: Self = this.set("setAsDefault", js.undefined)
+    def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
   }
 }

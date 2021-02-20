@@ -5,6 +5,7 @@ import typings.pulumiAws.trafficMirrorTargetMod.TrafficMirrorTargetState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class TrafficMirrorTarget protected ()
   def this(name: String, args: TrafficMirrorTargetArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/ec2", "TrafficMirrorTarget")
-@js.native
-object TrafficMirrorTarget extends js.Object {
+object TrafficMirrorTarget {
   
   /**
     * Get an existing TrafficMirrorTarget resource's state with the given name, ID, and optional extra
@@ -39,14 +38,24 @@ object TrafficMirrorTarget extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/ec2", "TrafficMirrorTarget.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.trafficMirrorTargetMod.TrafficMirrorTarget = js.native
+  @JSImport("@pulumi/aws/ec2", "TrafficMirrorTarget.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.trafficMirrorTargetMod.TrafficMirrorTarget = js.native
+  @JSImport("@pulumi/aws/ec2", "TrafficMirrorTarget.get")
+  @js.native
   def get(name: String, id: Input[ID], state: TrafficMirrorTargetState): typings.pulumiAws.trafficMirrorTargetMod.TrafficMirrorTarget = js.native
+  @JSImport("@pulumi/aws/ec2", "TrafficMirrorTarget.get")
+  @js.native
   def get(name: String, id: Input[ID], state: TrafficMirrorTargetState, opts: CustomResourceOptions): typings.pulumiAws.trafficMirrorTargetMod.TrafficMirrorTarget = js.native
   
   /**
     * Returns true if the given object is an instance of TrafficMirrorTarget.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/ec2", "TrafficMirrorTarget.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorTarget.TrafficMirrorTarget */ Boolean = js.native
 }

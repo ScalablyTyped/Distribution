@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeGetJsonOptions extends js.Object {
+trait JSTreeGetJsonOptions extends StObject {
   
   /**
     * return flat JSON instead of nested
@@ -51,60 +52,48 @@ object JSTreeGetJsonOptions {
   }
   
   @scala.inline
-  implicit class JSTreeGetJsonOptionsOps[Self <: JSTreeGetJsonOptions] (val x: Self) extends AnyVal {
+  implicit class JSTreeGetJsonOptionsMutableBuilder[Self <: JSTreeGetJsonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNo_a_attr(value: Boolean): Self = StObject.set(x, "no_a_attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlat(value: Boolean): Self = this.set("flat", value.asInstanceOf[js.Any])
+    def setNo_a_attrUndefined: Self = StObject.set(x, "no_a_attr", js.undefined)
     
     @scala.inline
-    def deleteFlat: Self = this.set("flat", js.undefined)
+    def setNo_children(value: Boolean): Self = StObject.set(x, "no_children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_a_attr(value: Boolean): Self = this.set("no_a_attr", value.asInstanceOf[js.Any])
+    def setNo_childrenUndefined: Self = StObject.set(x, "no_children", js.undefined)
     
     @scala.inline
-    def deleteNo_a_attr: Self = this.set("no_a_attr", js.undefined)
+    def setNo_data(value: Boolean): Self = StObject.set(x, "no_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_children(value: Boolean): Self = this.set("no_children", value.asInstanceOf[js.Any])
+    def setNo_dataUndefined: Self = StObject.set(x, "no_data", js.undefined)
     
     @scala.inline
-    def deleteNo_children: Self = this.set("no_children", js.undefined)
+    def setNo_id(value: Boolean): Self = StObject.set(x, "no_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_data(value: Boolean): Self = this.set("no_data", value.asInstanceOf[js.Any])
+    def setNo_idUndefined: Self = StObject.set(x, "no_id", js.undefined)
     
     @scala.inline
-    def deleteNo_data: Self = this.set("no_data", js.undefined)
+    def setNo_li_attr(value: Boolean): Self = StObject.set(x, "no_li_attr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_id(value: Boolean): Self = this.set("no_id", value.asInstanceOf[js.Any])
+    def setNo_li_attrUndefined: Self = StObject.set(x, "no_li_attr", js.undefined)
     
     @scala.inline
-    def deleteNo_id: Self = this.set("no_id", js.undefined)
+    def setNo_state(value: Boolean): Self = StObject.set(x, "no_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_li_attr(value: Boolean): Self = this.set("no_li_attr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNo_li_attr: Self = this.set("no_li_attr", js.undefined)
-    
-    @scala.inline
-    def setNo_state(value: Boolean): Self = this.set("no_state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNo_state: Self = this.set("no_state", js.undefined)
+    def setNo_stateUndefined: Self = StObject.set(x, "no_state", js.undefined)
   }
 }

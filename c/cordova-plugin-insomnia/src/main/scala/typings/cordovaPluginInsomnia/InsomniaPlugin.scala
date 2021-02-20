@@ -1,15 +1,14 @@
 package typings.cordovaPluginInsomnia
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("InsomniaPlugin")
-@js.native
-object InsomniaPlugin extends js.Object {
+object InsomniaPlugin {
   
   @js.native
-  trait Insomnia extends js.Object {
+  trait Insomnia extends StObject {
     
     /**
       * After making your app practically a zombie, you can allow it to sleep again by calling allowSleepAgain.

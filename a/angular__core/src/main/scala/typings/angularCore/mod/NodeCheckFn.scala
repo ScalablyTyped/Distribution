@@ -2,12 +2,13 @@ package typings.angularCore.mod
 
 import typings.angularCore.angularCoreNumbers.`0`
 import typings.angularCore.angularCoreNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeCheckFn extends js.Object {
+trait NodeCheckFn extends StObject {
   
   def apply(
     view: ViewData,

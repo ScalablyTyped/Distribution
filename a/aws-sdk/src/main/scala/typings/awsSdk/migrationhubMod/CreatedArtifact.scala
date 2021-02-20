@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatedArtifact extends js.Object {
+trait CreatedArtifact extends StObject {
   
   /**
     * A description that can be free-form text to record additional detail about the artifact for clarity or for later reference.
@@ -26,27 +27,15 @@ object CreatedArtifact {
   }
   
   @scala.inline
-  implicit class CreatedArtifactOps[Self <: CreatedArtifact] (val x: Self) extends AnyVal {
+  implicit class CreatedArtifactMutableBuilder[Self <: CreatedArtifact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: CreatedArtifactDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: CreatedArtifactName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: CreatedArtifactDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: CreatedArtifactName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

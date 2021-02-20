@@ -1,14 +1,14 @@
 package typings.sodiumjs
 
 import typings.sodiumjs.timerSystemMod.TimerSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/SecondsTimerSystem", JSImport.Namespace)
-@js.native
-object secondsTimerSystemMod extends js.Object {
+object secondsTimerSystemMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/SecondsTimerSystem", "SecondsTimerSystem")
   @js.native
   class SecondsTimerSystem () extends TimerSystem
 }

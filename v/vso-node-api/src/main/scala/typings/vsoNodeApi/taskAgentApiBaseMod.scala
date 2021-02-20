@@ -44,13 +44,19 @@ import typings.vsoNodeApi.taskAgentInterfacesMod.VariableGroupActionFilter
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/TaskAgentApiBase", JSImport.Namespace)
-@js.native
-object taskAgentApiBaseMod extends js.Object {
+object taskAgentApiBaseMod {
+  
+  @JSImport("vso-node-api/TaskAgentApiBase", "TaskAgentApiBase")
+  @js.native
+  class TaskAgentApiBase protected () extends ITaskAgentApiBase {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait ITaskAgentApiBase extends ClientApiBase {
@@ -791,11 +797,5 @@ object taskAgentApiBaseMod extends js.Object {
     def uploadSecureFile(customHeaders: js.Any, contentStream: ReadableStream, project: String, name: String): js.Promise[SecureFile] = js.native
     
     def validateInputs(inputValidationRequest: InputValidationRequest): js.Promise[InputValidationRequest] = js.native
-  }
-  
-  @js.native
-  class TaskAgentApiBase protected () extends ITaskAgentApiBase {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

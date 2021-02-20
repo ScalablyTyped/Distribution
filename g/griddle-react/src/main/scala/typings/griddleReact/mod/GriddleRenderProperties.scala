@@ -1,11 +1,12 @@
 package typings.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GriddleRenderProperties extends js.Object {
+trait GriddleRenderProperties extends StObject {
   
   var columnProperties: js.UndefOr[PropertyBag[ColumnRenderProperties]] = js.native
   
@@ -20,30 +21,18 @@ object GriddleRenderProperties {
   }
   
   @scala.inline
-  implicit class GriddleRenderPropertiesOps[Self <: GriddleRenderProperties] (val x: Self) extends AnyVal {
+  implicit class GriddleRenderPropertiesMutableBuilder[Self <: GriddleRenderProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnProperties(value: PropertyBag[ColumnRenderProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowProperties(value: RowRenderProperties): Self = StObject.set(x, "rowProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnProperties(value: PropertyBag[ColumnRenderProperties]): Self = this.set("columnProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnProperties: Self = this.set("columnProperties", js.undefined)
-    
-    @scala.inline
-    def setRowProperties(value: RowRenderProperties): Self = this.set("rowProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowProperties: Self = this.set("rowProperties", js.undefined)
+    def setRowPropertiesUndefined: Self = StObject.set(x, "rowProperties", js.undefined)
   }
 }

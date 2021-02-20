@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderFulfillmentUpdatedUpdate")
 @js.native
-class OrderFulfillmentUpdatedUpdate () extends js.Object {
+class OrderFulfillmentUpdatedUpdate () extends StObject {
   
   /**
     * Unique ID that identifies the fulfillment only within this order.

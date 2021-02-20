@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`not-between`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-equal`
 import typings.arcgisJsApi.arcgisJsApiStrings.between
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,47 +55,35 @@ object HistogramRangeSliderViewModelProperties {
   }
   
   @scala.inline
-  implicit class HistogramRangeSliderViewModelPropertiesOps[Self <: HistogramRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class HistogramRangeSliderViewModelPropertiesMutableBuilder[Self <: HistogramRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: Double): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("average", js.undefined)
-    
-    @scala.inline
-    def setBinsVarargs(value: Bin*): Self = this.set("bins", js.Array(value :_*))
-    
-    @scala.inline
-    def setBins(value: js.Array[Bin]): Self = this.set("bins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBins: Self = this.set("bins", js.undefined)
+    def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
     @scala.inline
     def setRangeType(
       value: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
-    ): Self = this.set("rangeType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangeType: Self = this.set("rangeType", js.undefined)
+    def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
     
     @scala.inline
-    def setStandardDeviation(value: Double): Self = this.set("standardDeviation", value.asInstanceOf[js.Any])
+    def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStandardDeviation: Self = this.set("standardDeviation", js.undefined)
+    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PollingLocation extends js.Object {
+trait PollingLocation extends StObject {
   
   /** The address of the location. */
   var address: js.UndefOr[SimpleAddressType] = js.native
@@ -46,81 +47,69 @@ object PollingLocation {
   }
   
   @scala.inline
-  implicit class PollingLocationOps[Self <: PollingLocation] (val x: Self) extends AnyVal {
+  implicit class PollingLocationMutableBuilder[Self <: PollingLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: SimpleAddressType): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: SimpleAddressType): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPollingHours(value: String): Self = StObject.set(x, "pollingHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setPollingHoursUndefined: Self = StObject.set(x, "pollingHours", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPollingHours(value: String): Self = this.set("pollingHours", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deletePollingHours: Self = this.set("pollingHours", js.undefined)
+    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setVoterServices(value: String): Self = StObject.set(x, "voterServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
-    
-    @scala.inline
-    def setVoterServices(value: String): Self = this.set("voterServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoterServices: Self = this.set("voterServices", js.undefined)
+    def setVoterServicesUndefined: Self = StObject.set(x, "voterServices", js.undefined)
   }
 }

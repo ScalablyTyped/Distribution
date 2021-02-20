@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the media types for the printed output. */
 @JSGlobal("Windows.Graphics.Printing.PrintMediaType")
 @js.native
-object PrintMediaType extends js.Object {
+object PrintMediaType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType with Double] = js.native
+  
+  /* 0 */ val default: typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType.default with Double = js.native
   
   /* 4 */ val archival: typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType.archival with Double = js.native
   
@@ -23,8 +26,6 @@ object PrintMediaType extends js.Object {
   /* 7 */ val cardStock: typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType.cardStock with Double = js.native
   
   /* 8 */ val continuous: typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType.continuous with Double = js.native
-  
-  /* 0 */ val default: typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType.default with Double = js.native
   
   /* 9 */ val envelopePlain: typings.winrtUwp.Windows.Graphics.Printing.PrintMediaType.envelopePlain with Double = js.native
   

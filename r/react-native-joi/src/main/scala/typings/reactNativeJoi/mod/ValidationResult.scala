@@ -1,12 +1,13 @@
 package typings.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<std.Promise<T>, 'then' | 'catch'> */
 @js.native
-trait ValidationResult[T] extends js.Object {
+trait ValidationResult[T] extends StObject {
   
   def `catch`[TResult](): js.Promise[T | TResult] = js.native
   @JSName("catch")

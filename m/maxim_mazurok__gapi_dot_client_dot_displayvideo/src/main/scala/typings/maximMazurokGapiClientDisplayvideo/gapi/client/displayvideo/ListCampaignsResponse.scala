@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCampaignsResponse extends js.Object {
+trait ListCampaignsResponse extends StObject {
   
   /** The list of campaigns. This list will be absent if empty. */
   var campaigns: js.UndefOr[js.Array[Campaign]] = js.native
@@ -22,33 +23,21 @@ object ListCampaignsResponse {
   }
   
   @scala.inline
-  implicit class ListCampaignsResponseOps[Self <: ListCampaignsResponse] (val x: Self) extends AnyVal {
+  implicit class ListCampaignsResponseMutableBuilder[Self <: ListCampaignsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaigns(value: js.Array[Campaign]): Self = StObject.set(x, "campaigns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignsVarargs(value: Campaign*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
     
     @scala.inline
-    def setCampaignsVarargs(value: Campaign*): Self = this.set("campaigns", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaigns(value: js.Array[Campaign]): Self = this.set("campaigns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCampaigns: Self = this.set("campaigns", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

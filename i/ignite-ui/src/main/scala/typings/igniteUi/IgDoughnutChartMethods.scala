@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgDoughnutChartMethods extends js.Object {
+trait IgDoughnutChartMethods extends StObject {
   
   /**
     * Adds a new series to the doughnut chart.
@@ -79,45 +80,33 @@ object IgDoughnutChartMethods {
   }
   
   @scala.inline
-  implicit class IgDoughnutChartMethodsOps[Self <: IgDoughnutChartMethods] (val x: Self) extends AnyVal {
+  implicit class IgDoughnutChartMethodsMutableBuilder[Self <: IgDoughnutChartMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSeries(value: js.Object => Unit): Self = StObject.set(x, "addSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportVisualData(value: () => js.Object): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSeries(value: js.Object => Unit): Self = this.set("addSeries", js.Any.fromFunction1(value))
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetCenterCoordinates(value: () => js.Object): Self = StObject.set(x, "getCenterCoordinates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportVisualData(value: () => js.Object): Self = this.set("exportVisualData", js.Any.fromFunction0(value))
+    def setGetData(value: String => js.Object): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    def setGetHoleRadius(value: () => Double): Self = StObject.set(x, "getHoleRadius", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenterCoordinates(value: () => js.Object): Self = this.set("getCenterCoordinates", js.Any.fromFunction0(value))
+    def setRemoveSeries(value: js.Object => Unit): Self = StObject.set(x, "removeSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetData(value: String => js.Object): Self = this.set("getData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetHoleRadius(value: () => Double): Self = this.set("getHoleRadius", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveSeries(value: js.Object => Unit): Self = this.set("removeSeries", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateSeries(value: js.Object => Unit): Self = this.set("updateSeries", js.Any.fromFunction1(value))
+    def setUpdateSeries(value: js.Object => Unit): Self = StObject.set(x, "updateSeries", js.Any.fromFunction1(value))
   }
 }

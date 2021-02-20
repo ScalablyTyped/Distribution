@@ -1,11 +1,12 @@
 package typings.vis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawThreshold extends js.Object {
+trait DrawThreshold extends StObject {
   
   var drawThreshold: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object DrawThreshold {
   }
   
   @scala.inline
-  implicit class DrawThresholdOps[Self <: DrawThreshold] (val x: Self) extends AnyVal {
+  implicit class DrawThresholdMutableBuilder[Self <: DrawThreshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawThreshold(value: Double): Self = StObject.set(x, "drawThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawThresholdUndefined: Self = StObject.set(x, "drawThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawThreshold(value: Double): Self = this.set("drawThreshold", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDrawThreshold: Self = this.set("drawThreshold", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setMaxVisible(value: Double): Self = StObject.set(x, "maxVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxVisibleUndefined: Self = StObject.set(x, "maxVisible", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVisible(value: Double): Self = this.set("maxVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxVisible: Self = this.set("maxVisible", js.undefined)
-    
-    @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Target
 
 import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBrowserContextsResponse extends js.Object {
+trait GetBrowserContextsResponse extends StObject {
   
   /**
     * An array of browser context ids.
@@ -22,24 +23,12 @@ object GetBrowserContextsResponse {
   }
   
   @scala.inline
-  implicit class GetBrowserContextsResponseOps[Self <: GetBrowserContextsResponse] (val x: Self) extends AnyVal {
+  implicit class GetBrowserContextsResponseMutableBuilder[Self <: GetBrowserContextsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserContextIds(value: js.Array[BrowserContextID]): Self = StObject.set(x, "browserContextIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBrowserContextIdsVarargs(value: BrowserContextID*): Self = this.set("browserContextIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setBrowserContextIds(value: js.Array[BrowserContextID]): Self = this.set("browserContextIds", value.asInstanceOf[js.Any])
+    def setBrowserContextIdsVarargs(value: BrowserContextID*): Self = StObject.set(x, "browserContextIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAppRequest extends js.Object {
+trait UpdateAppRequest extends StObject {
   
   /**
     *  The personal access token for a third-party source control system for an Amplify app. The token is used to create webhook and a read-only deploy key. The token is not stored. 
@@ -111,135 +112,123 @@ object UpdateAppRequest {
   }
   
   @scala.inline
-  implicit class UpdateAppRequestOps[Self <: UpdateAppRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAppRequestMutableBuilder[Self <: UpdateAppRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationConfig(value: AutoBranchCreationConfig): Self = StObject.set(x, "autoBranchCreationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: AccessToken): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationConfigUndefined: Self = StObject.set(x, "autoBranchCreationConfig", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setAutoBranchCreationPatterns(value: AutoBranchCreationPatterns): Self = StObject.set(x, "autoBranchCreationPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBranchCreationConfig(value: AutoBranchCreationConfig): Self = this.set("autoBranchCreationConfig", value.asInstanceOf[js.Any])
+    def setAutoBranchCreationPatternsUndefined: Self = StObject.set(x, "autoBranchCreationPatterns", js.undefined)
     
     @scala.inline
-    def deleteAutoBranchCreationConfig: Self = this.set("autoBranchCreationConfig", js.undefined)
+    def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = StObject.set(x, "autoBranchCreationPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = this.set("autoBranchCreationPatterns", js.Array(value :_*))
+    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBranchCreationPatterns(value: AutoBranchCreationPatterns): Self = this.set("autoBranchCreationPatterns", value.asInstanceOf[js.Any])
+    def setBasicAuthCredentialsUndefined: Self = StObject.set(x, "basicAuthCredentials", js.undefined)
     
     @scala.inline
-    def deleteAutoBranchCreationPatterns: Self = this.set("autoBranchCreationPatterns", js.undefined)
+    def setBuildSpec(value: BuildSpec): Self = StObject.set(x, "buildSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = this.set("basicAuthCredentials", value.asInstanceOf[js.Any])
+    def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
     
     @scala.inline
-    def deleteBasicAuthCredentials: Self = this.set("basicAuthCredentials", js.undefined)
+    def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildSpec(value: BuildSpec): Self = this.set("buildSpec", value.asInstanceOf[js.Any])
+    def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
     @scala.inline
-    def deleteBuildSpec: Self = this.set("buildSpec", js.undefined)
+    def setCustomRules(value: CustomRules): Self = StObject.set(x, "customRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomHeaders(value: CustomHeaders): Self = this.set("customHeaders", value.asInstanceOf[js.Any])
+    def setCustomRulesUndefined: Self = StObject.set(x, "customRules", js.undefined)
     
     @scala.inline
-    def deleteCustomHeaders: Self = this.set("customHeaders", js.undefined)
+    def setCustomRulesVarargs(value: CustomRule*): Self = StObject.set(x, "customRules", js.Array(value :_*))
     
     @scala.inline
-    def setCustomRulesVarargs(value: CustomRule*): Self = this.set("customRules", js.Array(value :_*))
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRules(value: CustomRules): Self = this.set("customRules", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomRules: Self = this.set("customRules", js.undefined)
+    def setEnableAutoBranchCreation(value: EnableAutoBranchCreation): Self = StObject.set(x, "enableAutoBranchCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnableAutoBranchCreationUndefined: Self = StObject.set(x, "enableAutoBranchCreation", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnableBasicAuth(value: EnableBasicAuth): Self = StObject.set(x, "enableBasicAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoBranchCreation(value: EnableAutoBranchCreation): Self = this.set("enableAutoBranchCreation", value.asInstanceOf[js.Any])
+    def setEnableBasicAuthUndefined: Self = StObject.set(x, "enableBasicAuth", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoBranchCreation: Self = this.set("enableAutoBranchCreation", js.undefined)
+    def setEnableBranchAutoBuild(value: EnableAutoBuild): Self = StObject.set(x, "enableBranchAutoBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBasicAuth(value: EnableBasicAuth): Self = this.set("enableBasicAuth", value.asInstanceOf[js.Any])
+    def setEnableBranchAutoBuildUndefined: Self = StObject.set(x, "enableBranchAutoBuild", js.undefined)
     
     @scala.inline
-    def deleteEnableBasicAuth: Self = this.set("enableBasicAuth", js.undefined)
+    def setEnableBranchAutoDeletion(value: EnableBranchAutoDeletion): Self = StObject.set(x, "enableBranchAutoDeletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBranchAutoBuild(value: EnableAutoBuild): Self = this.set("enableBranchAutoBuild", value.asInstanceOf[js.Any])
+    def setEnableBranchAutoDeletionUndefined: Self = StObject.set(x, "enableBranchAutoDeletion", js.undefined)
     
     @scala.inline
-    def deleteEnableBranchAutoBuild: Self = this.set("enableBranchAutoBuild", js.undefined)
+    def setEnvironmentVariables(value: EnvironmentVariables): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBranchAutoDeletion(value: EnableBranchAutoDeletion): Self = this.set("enableBranchAutoDeletion", value.asInstanceOf[js.Any])
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def deleteEnableBranchAutoDeletion: Self = this.set("enableBranchAutoDeletion", js.undefined)
+    def setIamServiceRoleArn(value: ServiceRoleArn): Self = StObject.set(x, "iamServiceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariables): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setIamServiceRoleArnUndefined: Self = StObject.set(x, "iamServiceRoleArn", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamServiceRoleArn(value: ServiceRoleArn): Self = this.set("iamServiceRoleArn", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIamServiceRoleArn: Self = this.set("iamServiceRoleArn", js.undefined)
+    def setOauthToken(value: OauthToken): Self = StObject.set(x, "oauthToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOauthTokenUndefined: Self = StObject.set(x, "oauthToken", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthToken(value: OauthToken): Self = this.set("oauthToken", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteOauthToken: Self = this.set("oauthToken", js.undefined)
+    def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
-    
-    @scala.inline
-    def setRepository(value: Repository): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

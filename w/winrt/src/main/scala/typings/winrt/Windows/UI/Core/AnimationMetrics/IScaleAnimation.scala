@@ -1,6 +1,7 @@
 package typings.winrt.Windows.UI.Core.AnimationMetrics
 
 import typings.winrt.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,33 +40,21 @@ object IScaleAnimation {
   }
   
   @scala.inline
-  implicit class IScaleAnimationOps[Self <: IScaleAnimation] (val x: Self) extends AnyVal {
+  implicit class IScaleAnimationMutableBuilder[Self <: IScaleAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalScaleX(value: Double): Self = StObject.set(x, "finalScaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalScaleY(value: Double): Self = StObject.set(x, "finalScaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialScaleX(value: Double): Self = StObject.set(x, "initialScaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalScaleX(value: Double): Self = this.set("finalScaleX", value.asInstanceOf[js.Any])
+    def setInitialScaleY(value: Double): Self = StObject.set(x, "initialScaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalScaleY(value: Double): Self = this.set("finalScaleY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialScaleX(value: Double): Self = this.set("initialScaleX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialScaleY(value: Double): Self = this.set("initialScaleY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalizedOrigin(value: Point): Self = this.set("normalizedOrigin", value.asInstanceOf[js.Any])
+    def setNormalizedOrigin(value: Point): Self = StObject.set(x, "normalizedOrigin", value.asInstanceOf[js.Any])
   }
 }

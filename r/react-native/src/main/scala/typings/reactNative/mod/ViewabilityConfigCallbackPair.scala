@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Changed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewabilityConfigCallbackPair extends js.Object {
+trait ViewabilityConfigCallbackPair extends StObject {
   
   var onViewableItemsChanged: (js.Function1[/* info */ Changed, Unit]) | Null = js.native
   
@@ -21,27 +22,15 @@ object ViewabilityConfigCallbackPair {
   }
   
   @scala.inline
-  implicit class ViewabilityConfigCallbackPairOps[Self <: ViewabilityConfigCallbackPair] (val x: Self) extends AnyVal {
+  implicit class ViewabilityConfigCallbackPairMutableBuilder[Self <: ViewabilityConfigCallbackPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnViewableItemsChanged(value: /* info */ Changed => Unit): Self = StObject.set(x, "onViewableItemsChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnViewableItemsChangedNull: Self = StObject.set(x, "onViewableItemsChanged", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setViewabilityConfig(value: ViewabilityConfig): Self = this.set("viewabilityConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnViewableItemsChanged(value: /* info */ Changed => Unit): Self = this.set("onViewableItemsChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnViewableItemsChangedNull: Self = this.set("onViewableItemsChanged", null)
+    def setViewabilityConfig(value: ViewabilityConfig): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
   }
 }

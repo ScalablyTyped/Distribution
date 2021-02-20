@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Tick")
 @js.native
-class Tick protected () extends js.Object {
+class Tick protected () extends StObject {
   /**
     * The Tick class.
     *

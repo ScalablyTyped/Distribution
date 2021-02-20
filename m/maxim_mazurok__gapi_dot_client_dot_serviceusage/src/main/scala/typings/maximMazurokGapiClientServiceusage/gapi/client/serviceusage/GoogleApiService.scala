@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiService extends js.Object {
+trait GoogleApiService extends StObject {
   
   /**
     * A list of API interfaces exported by this service. Only the `name` field of the google.protobuf.Api needs to be provided by the configuration author, as the remaining fields will be
@@ -115,204 +116,192 @@ object GoogleApiService {
   }
   
   @scala.inline
-  implicit class GoogleApiServiceOps[Self <: GoogleApiService] (val x: Self) extends AnyVal {
+  implicit class GoogleApiServiceMutableBuilder[Self <: GoogleApiService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApis(value: js.Array[Api]): Self = StObject.set(x, "apis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value :_*))
     
     @scala.inline
-    def setApisVarargs(value: Api*): Self = this.set("apis", js.Array(value :_*))
+    def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApis(value: js.Array[Api]): Self = this.set("apis", value.asInstanceOf[js.Any])
+    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
     @scala.inline
-    def deleteApis: Self = this.set("apis", js.undefined)
+    def setBackend(value: Backend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: Authentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    def setBilling(value: Billing): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackend(value: Backend): Self = this.set("backend", value.asInstanceOf[js.Any])
+    def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
     
     @scala.inline
-    def deleteBackend: Self = this.set("backend", js.undefined)
+    def setConfigVersion(value: Double): Self = StObject.set(x, "configVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling(value: Billing): Self = this.set("billing", value.asInstanceOf[js.Any])
+    def setConfigVersionUndefined: Self = StObject.set(x, "configVersion", js.undefined)
     
     @scala.inline
-    def deleteBilling: Self = this.set("billing", js.undefined)
+    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigVersion(value: Double): Self = this.set("configVersion", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteConfigVersion: Self = this.set("configVersion", js.undefined)
+    def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: Context): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setCustomError(value: CustomError): Self = StObject.set(x, "customError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: Control): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setCustomErrorUndefined: Self = StObject.set(x, "customError", js.undefined)
     
     @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setDocumentation(value: Documentation): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomError(value: CustomError): Self = this.set("customError", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def deleteCustomError: Self = this.set("customError", js.undefined)
+    def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: Documentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsVarargs(value: Endpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    def setEnums(value: js.Array[Enum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: js.Array[Endpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("endpoints", js.undefined)
+    def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value :_*))
     
     @scala.inline
-    def setEnumsVarargs(value: Enum*): Self = this.set("enums", js.Array(value :_*))
+    def setHttp(value: Http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnums(value: js.Array[Enum]): Self = this.set("enums", value.asInstanceOf[js.Any])
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     @scala.inline
-    def deleteEnums: Self = this.set("enums", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp(value: Http): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
+    def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLogs(value: js.Array[LogDescriptor]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Logging): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setLogsVarargs(value: LogDescriptor*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
     @scala.inline
-    def setLogsVarargs(value: LogDescriptor*): Self = this.set("logs", js.Array(value :_*))
+    def setMetrics(value: js.Array[MetricDescriptor]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: js.Array[LogDescriptor]): Self = this.set("logs", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteLogs: Self = this.set("logs", js.undefined)
+    def setMetricsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: MetricDescriptor*): Self = this.set("metrics", js.Array(value :_*))
+    def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[MetricDescriptor]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
     
     @scala.inline
-    def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = this.set("monitoredResources", js.Array(value :_*))
+    def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = this.set("monitoredResources", value.asInstanceOf[js.Any])
+    def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
     
     @scala.inline
-    def deleteMonitoredResources: Self = this.set("monitoredResources", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoring(value: Monitoring): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMonitoring: Self = this.set("monitoring", js.undefined)
+    def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setQuota(value: Quota): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerProjectId(value: String): Self = this.set("producerProjectId", value.asInstanceOf[js.Any])
+    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
     @scala.inline
-    def deleteProducerProjectId: Self = this.set("producerProjectId", js.undefined)
+    def setSourceInfo(value: SourceInfo): Self = StObject.set(x, "sourceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: Quota): Self = this.set("quota", value.asInstanceOf[js.Any])
+    def setSourceInfoUndefined: Self = StObject.set(x, "sourceInfo", js.undefined)
     
     @scala.inline
-    def deleteQuota: Self = this.set("quota", js.undefined)
+    def setSystemParameters(value: SystemParameters): Self = StObject.set(x, "systemParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceInfo(value: SourceInfo): Self = this.set("sourceInfo", value.asInstanceOf[js.Any])
+    def setSystemParametersUndefined: Self = StObject.set(x, "systemParameters", js.undefined)
     
     @scala.inline
-    def deleteSourceInfo: Self = this.set("sourceInfo", js.undefined)
+    def setSystemTypes(value: js.Array[Type]): Self = StObject.set(x, "systemTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemParameters(value: SystemParameters): Self = this.set("systemParameters", value.asInstanceOf[js.Any])
+    def setSystemTypesUndefined: Self = StObject.set(x, "systemTypes", js.undefined)
     
     @scala.inline
-    def deleteSystemParameters: Self = this.set("systemParameters", js.undefined)
+    def setSystemTypesVarargs(value: Type*): Self = StObject.set(x, "systemTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSystemTypesVarargs(value: Type*): Self = this.set("systemTypes", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemTypes(value: js.Array[Type]): Self = this.set("systemTypes", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSystemTypes: Self = this.set("systemTypes", js.undefined)
+    def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setTypesVarargs(value: Type*): Self = this.set("types", js.Array(value :_*))
+    def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: js.Array[Type]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: Usage): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

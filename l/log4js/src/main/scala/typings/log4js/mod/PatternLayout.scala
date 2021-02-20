@@ -2,6 +2,7 @@ package typings.log4js.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.log4js.log4jsStrings.pattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object PatternLayout {
   }
   
   @scala.inline
-  implicit class PatternLayoutOps[Self <: PatternLayout] (val x: Self) extends AnyVal {
+  implicit class PatternLayoutMutableBuilder[Self <: PatternLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTokens(value: StringDictionary[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: pattern): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokens(value: StringDictionary[Token]): Self = this.set("tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokens: Self = this.set("tokens", js.undefined)
+    def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

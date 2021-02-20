@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientBigtableadmin.anon.UploadType
 import typings.maximMazurokGapiClientBigtableadmin.anon.Uploadprotocol
 import typings.maximMazurokGapiClientBigtableadmin.anon.View
 import typings.maximMazurokGapiClientBigtableadmin.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TablesResource extends js.Object {
+trait TablesResource extends StObject {
   
   def checkConsistency(request: Alt, body: CheckConsistencyRequest): Request[CheckConsistencyResponse] = js.native
   /** Checks replication consistency based on a consistency token, that is, if replication has caught up based on the conditions specified in the token and the check request. */

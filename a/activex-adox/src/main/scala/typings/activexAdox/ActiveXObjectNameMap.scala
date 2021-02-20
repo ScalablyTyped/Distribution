@@ -7,12 +7,13 @@ import typings.activexAdox.ADOX.Index
 import typings.activexAdox.ADOX.Key
 import typings.activexAdox.ADOX.Table
 import typings.activexAdox.ADOX.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ADOX.Catalog")
   var ADOXDotCatalog: Catalog = js.native
@@ -59,39 +60,27 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADOXDotCatalog(value: Catalog): Self = StObject.set(x, "ADOX.Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setADOXDotColumn(value: Column): Self = StObject.set(x, "ADOX.Column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setADOXDotGroup(value: Group): Self = StObject.set(x, "ADOX.Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADOXDotCatalog(value: Catalog): Self = this.set("ADOX.Catalog", value.asInstanceOf[js.Any])
+    def setADOXDotIndex(value: Index): Self = StObject.set(x, "ADOX.Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADOXDotColumn(value: Column): Self = this.set("ADOX.Column", value.asInstanceOf[js.Any])
+    def setADOXDotKey(value: Key): Self = StObject.set(x, "ADOX.Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADOXDotGroup(value: Group): Self = this.set("ADOX.Group", value.asInstanceOf[js.Any])
+    def setADOXDotTable(value: Table): Self = StObject.set(x, "ADOX.Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADOXDotIndex(value: Index): Self = this.set("ADOX.Index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setADOXDotKey(value: Key): Self = this.set("ADOX.Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setADOXDotTable(value: Table): Self = this.set("ADOX.Table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setADOXDotUser(value: User): Self = this.set("ADOX.User", value.asInstanceOf[js.Any])
+    def setADOXDotUser(value: User): Self = StObject.set(x, "ADOX.User", value.asInstanceOf[js.Any])
   }
 }

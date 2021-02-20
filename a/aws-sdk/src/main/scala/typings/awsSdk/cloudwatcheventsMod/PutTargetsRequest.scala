@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutTargetsRequest extends js.Object {
+trait PutTargetsRequest extends StObject {
   
   /**
     * The name or ARN of the event bus associated with the rule. If you omit this, the default event bus is used.
@@ -31,33 +32,21 @@ object PutTargetsRequest {
   }
   
   @scala.inline
-  implicit class PutTargetsRequestOps[Self <: PutTargetsRequest] (val x: Self) extends AnyVal {
+  implicit class PutTargetsRequestMutableBuilder[Self <: PutTargetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRule(value: RuleName): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: RuleName): Self = this.set("Rule", value.asInstanceOf[js.Any])
+    def setTargets(value: TargetList): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: TargetList): Self = this.set("Targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsDownloadArtifactEndpoint extends js.Object {
+trait ActionsDownloadArtifactEndpoint extends StObject {
   
   var archive_format: String = js.native
   
@@ -24,30 +25,18 @@ object ActionsDownloadArtifactEndpoint {
   }
   
   @scala.inline
-  implicit class ActionsDownloadArtifactEndpointOps[Self <: ActionsDownloadArtifactEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActionsDownloadArtifactEndpointMutableBuilder[Self <: ActionsDownloadArtifactEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchive_format(value: String): Self = StObject.set(x, "archive_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifact_id(value: Double): Self = StObject.set(x, "artifact_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchive_format(value: String): Self = this.set("archive_format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArtifact_id(value: Double): Self = this.set("artifact_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

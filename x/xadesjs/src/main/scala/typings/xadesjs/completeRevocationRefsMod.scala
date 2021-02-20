@@ -4,18 +4,20 @@ import typings.std.Uint8Array
 import typings.xadesjs.anyMod.Any
 import typings.xadesjs.dateTimeMod.XadesDateTime
 import typings.xadesjs.signingCertificateMod.DigestAlgAndValueType
-import typings.xmlCore.mod.XmlCollection
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty
+import typings.xadesjs.xmlBaseMod.XadesCollection
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/complete_revocation_refs", JSImport.Namespace)
-@js.native
-object completeRevocationRefsMod extends js.Object {
+object completeRevocationRefsMod {
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CRLIdentifier")
   @js.native
-  class CRLIdentifier () extends XmlObject {
+  class CRLIdentifier () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var IssueTime: XadesDateTime = js.native
     
@@ -26,19 +28,26 @@ object completeRevocationRefsMod extends js.Object {
     var URI: String = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CRLRef")
   @js.native
-  class CRLRef () extends XmlObject {
+  class CRLRef () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var CRLIdentifier: typings.xadesjs.completeRevocationRefsMod.CRLIdentifier = js.native
     
     var DigestAlgAndValue: DigestAlgAndValueType = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CRLRefs")
   @js.native
-  class CRLRefs () extends XmlCollection[CRLRef]
+  class CRLRefs () extends XadesCollection[CRLRef] {
+    def this(properties: js.Object) = this()
+  }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CompleteRevocationRefs")
   @js.native
-  class CompleteRevocationRefs () extends XmlObject {
+  class CompleteRevocationRefs () extends UnsignedSignatureProperty {
+    def this(properties: js.Object) = this()
     
     var CRLRefs: typings.xadesjs.completeRevocationRefsMod.CRLRefs = js.native
     
@@ -49,8 +58,10 @@ object completeRevocationRefsMod extends js.Object {
     var OtherRefs: typings.xadesjs.completeRevocationRefsMod.OtherRefs = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OCSPIdentifier")
   @js.native
-  class OCSPIdentifier () extends XmlObject {
+  class OCSPIdentifier () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var ProducedAt: XadesDateTime = js.native
     
@@ -59,25 +70,38 @@ object completeRevocationRefsMod extends js.Object {
     var URI: String = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OCSPRef")
   @js.native
-  class OCSPRef () extends XmlObject {
+  class OCSPRef () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var DigestAlgAndValue: DigestAlgAndValueType = js.native
     
     var OCSPIdentifier: typings.xadesjs.completeRevocationRefsMod.OCSPIdentifier = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OCSPRefs")
   @js.native
-  class OCSPRefs () extends XmlCollection[OCSPRef]
+  class OCSPRefs () extends XadesCollection[OCSPRef] {
+    def this(properties: js.Object) = this()
+  }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OtherRef")
   @js.native
-  class OtherRef () extends Any
+  class OtherRef () extends Any {
+    def this(properties: js.Object) = this()
+  }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OtherRefs")
   @js.native
-  class OtherRefs () extends XmlCollection[OtherRef]
+  class OtherRefs () extends XadesCollection[OtherRef] {
+    def this(properties: js.Object) = this()
+  }
   
+  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "ResponderID")
   @js.native
-  class ResponderID () extends XmlObject {
+  class ResponderID () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var ByKey: Uint8Array = js.native
     

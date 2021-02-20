@@ -1,11 +1,12 @@
 package typings.ariaQuery.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARIARoleRelation extends js.Object {
+trait ARIARoleRelation extends StObject {
   
   var concept: js.UndefOr[ARIARoleRelationConcept] = js.native
   
@@ -20,30 +21,18 @@ object ARIARoleRelation {
   }
   
   @scala.inline
-  implicit class ARIARoleRelationOps[Self <: ARIARoleRelation] (val x: Self) extends AnyVal {
+  implicit class ARIARoleRelationMutableBuilder[Self <: ARIARoleRelation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcept(value: ARIARoleRelationConcept): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcept(value: ARIARoleRelationConcept): Self = this.set("concept", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConcept: Self = this.set("concept", js.undefined)
-    
-    @scala.inline
-    def setModule(value: String): Self = this.set("module", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModule: Self = this.set("module", js.undefined)
+    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
   }
 }

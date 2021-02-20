@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientSecretmanager.anon.QuotaUser
 import typings.maximMazurokGapiClientSecretmanager.anon.Resource
 import typings.maximMazurokGapiClientSecretmanager.anon.SecretId
 import typings.maximMazurokGapiClientSecretmanager.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecretsResource extends js.Object {
+trait SecretsResource extends StObject {
   
   /** Creates a new SecretVersion containing secret data and attaches it to an existing Secret. */
   def addVersion(request: Parent): Request[SecretVersion] = js.native

@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Updated transaction details resulting from a change in shipping method.
   */
 @js.native
-trait ApplePayShippingMethodUpdate extends js.Object {
+trait ApplePayShippingMethodUpdate extends StObject {
   
   /**
     * An optional list of updated line items.
@@ -29,30 +30,18 @@ object ApplePayShippingMethodUpdate {
   }
   
   @scala.inline
-  implicit class ApplePayShippingMethodUpdateOps[Self <: ApplePayShippingMethodUpdate] (val x: Self) extends AnyVal {
+  implicit class ApplePayShippingMethodUpdateMutableBuilder[Self <: ApplePayShippingMethodUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "newLineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewLineItemsUndefined: Self = StObject.set(x, "newLineItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value :_*))
     
     @scala.inline
-    def setNewTotal(value: ApplePayLineItem): Self = this.set("newTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = this.set("newLineItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setNewLineItems(value: js.Array[ApplePayLineItem]): Self = this.set("newLineItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewLineItems: Self = this.set("newLineItems", js.undefined)
+    def setNewTotal(value: ApplePayLineItem): Self = StObject.set(x, "newTotal", value.asInstanceOf[js.Any])
   }
 }

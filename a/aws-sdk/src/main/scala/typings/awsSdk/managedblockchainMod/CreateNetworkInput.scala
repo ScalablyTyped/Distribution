@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNetworkInput extends js.Object {
+trait CreateNetworkInput extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the operation. An idempotent operation completes no more than one time. This identifier is required only if you make a service request directly using an HTTP client. It is generated automatically if you use an AWS SDK or the AWS CLI.
@@ -63,48 +64,36 @@ object CreateNetworkInput {
   }
   
   @scala.inline
-  implicit class CreateNetworkInputOps[Self <: CreateNetworkInput] (val x: Self) extends AnyVal {
+  implicit class CreateNetworkInputMutableBuilder[Self <: CreateNetworkInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramework(value: Framework): Self = this.set("Framework", value.asInstanceOf[js.Any])
+    def setFrameworkConfiguration(value: NetworkFrameworkConfiguration): Self = StObject.set(x, "FrameworkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameworkVersion(value: FrameworkVersionString): Self = this.set("FrameworkVersion", value.asInstanceOf[js.Any])
+    def setFrameworkConfigurationUndefined: Self = StObject.set(x, "FrameworkConfiguration", js.undefined)
     
     @scala.inline
-    def setMemberConfiguration(value: MemberConfiguration): Self = this.set("MemberConfiguration", value.asInstanceOf[js.Any])
+    def setFrameworkVersion(value: FrameworkVersionString): Self = StObject.set(x, "FrameworkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setMemberConfiguration(value: MemberConfiguration): Self = StObject.set(x, "MemberConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVotingPolicy(value: VotingPolicy): Self = this.set("VotingPolicy", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
-    
-    @scala.inline
-    def setFrameworkConfiguration(value: NetworkFrameworkConfiguration): Self = this.set("FrameworkConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrameworkConfiguration: Self = this.set("FrameworkConfiguration", js.undefined)
+    def setVotingPolicy(value: VotingPolicy): Self = StObject.set(x, "VotingPolicy", value.asInstanceOf[js.Any])
   }
 }

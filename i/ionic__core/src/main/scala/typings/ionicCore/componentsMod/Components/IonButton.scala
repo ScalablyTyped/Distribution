@@ -18,12 +18,13 @@ import typings.ionicCore.ionicCoreStrings.small
 import typings.ionicCore.ionicCoreStrings.solid
 import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonButton extends js.Object {
+trait IonButton extends StObject {
   
   /**
     * The type of button.
@@ -121,99 +122,87 @@ object IonButton {
   }
   
   @scala.inline
-  implicit class IonButtonOps[Self <: IonButton] (val x: Self) extends AnyVal {
+  implicit class IonButtonMutableBuilder[Self <: IonButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setButtonType(value: String): Self = this.set("buttonType", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouterDirection(value: RouterDirection): Self = this.set("routerDirection", value.asInstanceOf[js.Any])
+    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
     @scala.inline
-    def setStrong(value: Boolean): Self = this.set("strong", value.asInstanceOf[js.Any])
+    def setExpand(value: full | block): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: submit | reset | button): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFill(value: clear | outline | solid | default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setDownload(value: String): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDownload: Self = this.set("download", js.undefined)
+    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
     @scala.inline
-    def setExpand(value: full | block): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setFill(value: clear | outline | solid | default): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "routerAnimation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteHref: Self = this.set("href", js.undefined)
+    def setRouterAnimationUndefined: Self = StObject.set(x, "routerAnimation", js.undefined)
     
     @scala.inline
-    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRouterDirection(value: RouterDirection): Self = StObject.set(x, "routerDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setShape(value: round): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRel(value: String): Self = this.set("rel", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deleteRel: Self = this.set("rel", js.undefined)
+    def setSize(value: small | default | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("routerAnimation", js.Any.fromFunction2(value))
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRouterAnimation: Self = this.set("routerAnimation", js.undefined)
+    def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: round): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setSize(value: small | default | large): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

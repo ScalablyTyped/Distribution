@@ -4,6 +4,7 @@ import typings.heremaps.H.Map_
 import typings.heremaps.H.Map_.EngineType
 import typings.heremaps.H.ui.base.Container
 import typings.heremaps.H.ui.i18n.Localization
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

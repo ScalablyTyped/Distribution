@@ -10,6 +10,7 @@ import typings.qiniuJs.qiniuJsStrings.South
 import typings.qiniuJs.qiniuJsStrings.SouthEast
 import typings.qiniuJs.qiniuJsStrings.SouthWest
 import typings.qiniuJs.qiniuJsStrings.West
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,21 +40,9 @@ object WaterMarkFopOptions2 {
   }
   
   @scala.inline
-  implicit class WaterMarkFopOptions2Ops[Self <: WaterMarkFopOptions2] (val x: Self) extends AnyVal {
+  implicit class WaterMarkFopOptions2MutableBuilder[Self <: WaterMarkFopOptions2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFop(value: typings.qiniuJs.qiniuJsStrings.watermark): Self = this.set("fop", value.asInstanceOf[js.Any])
+    def setFop(value: typings.qiniuJs.qiniuJsStrings.watermark): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,19 @@
 package typings.materializeCss.anon
 
+import typings.materializeCss.M.Tabs
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.TabsOptions> */
 @js.native
-trait PartialTabsOptions extends js.Object {
+trait PartialTabsOptions extends StObject {
   
   var duration: js.UndefOr[Double] = js.native
   
-  var onShow: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* newContent */ Element, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction1[/* this */ Tabs, /* newContent */ Element, Unit]] = js.native
   
   var responsiveThreshold: js.UndefOr[Double] = js.native
   
@@ -26,42 +28,30 @@ object PartialTabsOptions {
   }
   
   @scala.inline
-  implicit class PartialTabsOptionsOps[Self <: PartialTabsOptions] (val x: Self) extends AnyVal {
+  implicit class PartialTabsOptionsMutableBuilder[Self <: PartialTabsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnShow(value: js.ThisFunction1[/* this */ Tabs, /* newContent */ Element, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: js.ThisFunction1[PartialTabsOptions, /* newContent */ Element, Unit]): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    def setResponsiveThresholdUndefined: Self = StObject.set(x, "responsiveThreshold", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setSwipeable(value: Boolean): Self = StObject.set(x, "swipeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveThreshold(value: Double): Self = this.set("responsiveThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsiveThreshold: Self = this.set("responsiveThreshold", js.undefined)
-    
-    @scala.inline
-    def setSwipeable(value: Boolean): Self = this.set("swipeable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwipeable: Self = this.set("swipeable", js.undefined)
+    def setSwipeableUndefined: Self = StObject.set(x, "swipeable", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Named parameters for <Titanium.Codec.decodeString>.
   */
 @js.native
-trait DecodeStringDict extends js.Object {
+trait DecodeStringDict extends StObject {
   
   /**
     * Character set to use when encoding this string to bytes.
@@ -40,39 +41,27 @@ object DecodeStringDict {
   }
   
   @scala.inline
-  implicit class DecodeStringDictOps[Self <: DecodeStringDict] (val x: Self) extends AnyVal {
+  implicit class DecodeStringDictMutableBuilder[Self <: DecodeStringDict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Buffer): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCharset: Self = this.set("charset", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSource(value: Buffer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

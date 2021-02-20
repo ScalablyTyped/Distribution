@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cesium", "createTaskProcessorWorker")
-@js.native
-object createTaskProcessorWorker extends js.Object {
+object createTaskProcessorWorker {
   
+  @JSImport("cesium", "createTaskProcessorWorker")
+  @js.native
   def apply(workerFunction: WorkerFunction): TaskProcessorWorkerFunction = js.native
   
   type TaskProcessorWorkerFunction = js.Function1[/* event */ js.Any, Unit]

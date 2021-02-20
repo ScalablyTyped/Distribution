@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriveStep extends js.Object {
+trait DriveStep extends StObject {
   
   var action: String = js.native
   
@@ -60,78 +61,66 @@ object DriveStep {
   }
   
   @scala.inline
-  implicit class DriveStepOps[Self <: DriveStep] (val x: Self) extends AnyVal {
+  implicit class DriveStepMutableBuilder[Self <: DriveStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssist_action(value: String): Self = StObject.set(x, "assist_action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCities(value: js.Array[ViaCity]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
     @scala.inline
-    def setAssist_action(value: String): Self = this.set("assist_action", value.asInstanceOf[js.Any])
+    def setCitiesVarargs(value: ViaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_location(value: LngLat): Self = this.set("end_location", value.asInstanceOf[js.Any])
+    def setEnd_location(value: LngLat): Self = StObject.set(x, "end_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: LngLat*): Self = this.set("path", js.Array(value :_*))
+    def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[LngLat]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setRoad(value: String): Self = this.set("road", value.asInstanceOf[js.Any])
+    def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_location(value: LngLat): Self = this.set("start_location", value.asInstanceOf[js.Any])
+    def setStart_location(value: LngLat): Self = StObject.set(x, "start_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToll_road(value: String): Self = this.set("toll_road", value.asInstanceOf[js.Any])
+    def setTmcs(value: js.Array[TMC]): Self = StObject.set(x, "tmcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTolls(value: Double): Self = this.set("tolls", value.asInstanceOf[js.Any])
+    def setTmcsUndefined: Self = StObject.set(x, "tmcs", js.undefined)
     
     @scala.inline
-    def setTolls_distance(value: Double): Self = this.set("tolls_distance", value.asInstanceOf[js.Any])
+    def setTmcsVarargs(value: TMC*): Self = StObject.set(x, "tmcs", js.Array(value :_*))
     
     @scala.inline
-    def setCitiesVarargs(value: ViaCity*): Self = this.set("cities", js.Array(value :_*))
+    def setToll_road(value: String): Self = StObject.set(x, "toll_road", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCities(value: js.Array[ViaCity]): Self = this.set("cities", value.asInstanceOf[js.Any])
+    def setTolls(value: Double): Self = StObject.set(x, "tolls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCities: Self = this.set("cities", js.undefined)
-    
-    @scala.inline
-    def setTmcsVarargs(value: TMC*): Self = this.set("tmcs", js.Array(value :_*))
-    
-    @scala.inline
-    def setTmcs(value: js.Array[TMC]): Self = this.set("tmcs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTmcs: Self = this.set("tmcs", js.undefined)
+    def setTolls_distance(value: Double): Self = StObject.set(x, "tolls_distance", value.asInstanceOf[js.Any])
   }
 }

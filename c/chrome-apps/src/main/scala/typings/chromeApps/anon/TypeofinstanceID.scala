@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.instanceID.DeleteTokenParams
 import typings.chromeApps.chrome.instanceID.TokenParams
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofinstanceID extends js.Object {
+trait TypeofinstanceID extends StObject {
   
   /**
     * Fired when all the granted tokens need to be refreshed.
@@ -73,36 +74,24 @@ object TypeofinstanceID {
   }
   
   @scala.inline
-  implicit class TypeofinstanceIDOps[Self <: TypeofinstanceID] (val x: Self) extends AnyVal {
+  implicit class TypeofinstanceIDMutableBuilder[Self <: TypeofinstanceID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteID(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "deleteID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteToken(value: (DeleteTokenParams, js.Function0[Unit]) => Unit): Self = StObject.set(x, "deleteToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCreationTime(value: js.Function1[/* creationTime */ integer, Unit] => Unit): Self = StObject.set(x, "getCreationTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteID(value: js.Function0[Unit] => Unit): Self = this.set("deleteID", js.Any.fromFunction1(value))
+    def setGetID(value: js.Function1[/* instanceId */ String, Unit] => Unit): Self = StObject.set(x, "getID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteToken(value: (DeleteTokenParams, js.Function0[Unit]) => Unit): Self = this.set("deleteToken", js.Any.fromFunction2(value))
+    def setGetToken(value: (TokenParams, js.Function1[/* token */ String, Unit]) => Unit): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCreationTime(value: js.Function1[/* creationTime */ integer, Unit] => Unit): Self = this.set("getCreationTime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetID(value: js.Function1[/* instanceId */ String, Unit] => Unit): Self = this.set("getID", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetToken(value: (TokenParams, js.Function1[/* token */ String, Unit]) => Unit): Self = this.set("getToken", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnTokenRefresh(value: Event[js.Function0[Unit]]): Self = this.set("onTokenRefresh", value.asInstanceOf[js.Any])
+    def setOnTokenRefresh(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onTokenRefresh", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,42 +109,30 @@ object XPropertySet {
   }
   
   @scala.inline
-  implicit class XPropertySetOps[Self <: XPropertySet] (val x: Self) extends AnyVal {
+  implicit class XPropertySetMutableBuilder[Self <: XPropertySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "addPropertyChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddVetoableChangeListener(value: (String, XVetoableChangeListener) => Unit): Self = StObject.set(x, "addVetoableChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
+    def setGetPropertyValue(value: String => js.Any): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddPropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = this.set("addPropertyChangeListener", js.Any.fromFunction2(value))
+    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddVetoableChangeListener(value: (String, XVetoableChangeListener) => Unit): Self = this.set("addVetoableChangeListener", js.Any.fromFunction2(value))
+    def setRemovePropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "removePropertyChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
+    def setRemoveVetoableChangeListener(value: (String, XVetoableChangeListener) => Unit): Self = StObject.set(x, "removeVetoableChangeListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPropertyValue(value: String => js.Any): Self = this.set("getPropertyValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemovePropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = this.set("removePropertyChangeListener", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveVetoableChangeListener(value: (String, XVetoableChangeListener) => Unit): Self = this.set("removeVetoableChangeListener", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetPropertyValue(value: (String, js.Any) => Unit): Self = this.set("setPropertyValue", js.Any.fromFunction2(value))
+    def setSetPropertyValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction2(value))
   }
 }

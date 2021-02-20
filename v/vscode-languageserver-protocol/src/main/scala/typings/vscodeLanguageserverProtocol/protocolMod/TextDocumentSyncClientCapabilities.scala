@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocumentSyncClientCapabilities extends js.Object {
+trait TextDocumentSyncClientCapabilities extends StObject {
   
   /**
     * The client supports did save notifications.
@@ -38,42 +39,30 @@ object TextDocumentSyncClientCapabilities {
   }
   
   @scala.inline
-  implicit class TextDocumentSyncClientCapabilitiesOps[Self <: TextDocumentSyncClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class TextDocumentSyncClientCapabilitiesMutableBuilder[Self <: TextDocumentSyncClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDidSave(value: Boolean): Self = StObject.set(x, "didSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDidSaveUndefined: Self = StObject.set(x, "didSave", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDidSave(value: Boolean): Self = this.set("didSave", value.asInstanceOf[js.Any])
+    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
     @scala.inline
-    def deleteDidSave: Self = this.set("didSave", js.undefined)
+    def setWillSave(value: Boolean): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = this.set("dynamicRegistration", value.asInstanceOf[js.Any])
+    def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
     
     @scala.inline
-    def deleteDynamicRegistration: Self = this.set("dynamicRegistration", js.undefined)
+    def setWillSaveWaitUntil(value: Boolean): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWillSave(value: Boolean): Self = this.set("willSave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWillSave: Self = this.set("willSave", js.undefined)
-    
-    @scala.inline
-    def setWillSaveWaitUntil(value: Boolean): Self = this.set("willSaveWaitUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWillSaveWaitUntil: Self = this.set("willSaveWaitUntil", js.undefined)
+    def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
   }
 }

@@ -3,13 +3,14 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.ChartBoxQuartileCalculation
 import typings.officeJsPreview.officeJsPreviewStrings.Exclusive
 import typings.officeJsPreview.officeJsPreviewStrings.Inclusive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartBoxwhiskerOptions.toJSON()`. */
 @js.native
-trait ChartBoxwhiskerOptionsData extends js.Object {
+trait ChartBoxwhiskerOptionsData extends StObject {
   
   /**
     *
@@ -60,48 +61,36 @@ object ChartBoxwhiskerOptionsData {
   }
   
   @scala.inline
-  implicit class ChartBoxwhiskerOptionsDataOps[Self <: ChartBoxwhiskerOptionsData] (val x: Self) extends AnyVal {
+  implicit class ChartBoxwhiskerOptionsDataMutableBuilder[Self <: ChartBoxwhiskerOptionsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuartileCalculation(value: ChartBoxQuartileCalculation | Inclusive | Exclusive): Self = StObject.set(x, "quartileCalculation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuartileCalculationUndefined: Self = StObject.set(x, "quartileCalculation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowInnerPoints(value: Boolean): Self = StObject.set(x, "showInnerPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuartileCalculation(value: ChartBoxQuartileCalculation | Inclusive | Exclusive): Self = this.set("quartileCalculation", value.asInstanceOf[js.Any])
+    def setShowInnerPointsUndefined: Self = StObject.set(x, "showInnerPoints", js.undefined)
     
     @scala.inline
-    def deleteQuartileCalculation: Self = this.set("quartileCalculation", js.undefined)
+    def setShowMeanLine(value: Boolean): Self = StObject.set(x, "showMeanLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInnerPoints(value: Boolean): Self = this.set("showInnerPoints", value.asInstanceOf[js.Any])
+    def setShowMeanLineUndefined: Self = StObject.set(x, "showMeanLine", js.undefined)
     
     @scala.inline
-    def deleteShowInnerPoints: Self = this.set("showInnerPoints", js.undefined)
+    def setShowMeanMarker(value: Boolean): Self = StObject.set(x, "showMeanMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMeanLine(value: Boolean): Self = this.set("showMeanLine", value.asInstanceOf[js.Any])
+    def setShowMeanMarkerUndefined: Self = StObject.set(x, "showMeanMarker", js.undefined)
     
     @scala.inline
-    def deleteShowMeanLine: Self = this.set("showMeanLine", js.undefined)
+    def setShowOutlierPoints(value: Boolean): Self = StObject.set(x, "showOutlierPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMeanMarker(value: Boolean): Self = this.set("showMeanMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowMeanMarker: Self = this.set("showMeanMarker", js.undefined)
-    
-    @scala.inline
-    def setShowOutlierPoints(value: Boolean): Self = this.set("showOutlierPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowOutlierPoints: Self = this.set("showOutlierPoints", js.undefined)
+    def setShowOutlierPointsUndefined: Self = StObject.set(x, "showOutlierPoints", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInUserGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultUserGroupOperations extends js.Object {
+trait IVaultUserGroupOperations extends StObject {
   
   def AddOrUndeleteUserGroup(UserGroup: IUserGroupAdmin): IUserGroupAdmin = js.native
   

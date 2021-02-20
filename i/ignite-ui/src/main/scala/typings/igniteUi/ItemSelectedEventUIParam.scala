@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemSelectedEventUIParam extends js.Object {
+trait ItemSelectedEventUIParam extends StObject {
   
   /**
     * Gets a reference to jQuery UI date picker widget, used as a calendar from the igDatePicker.
@@ -36,42 +37,30 @@ object ItemSelectedEventUIParam {
   }
   
   @scala.inline
-  implicit class ItemSelectedEventUIParamOps[Self <: ItemSelectedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ItemSelectedEventUIParamMutableBuilder[Self <: ItemSelectedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: js.Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateFromPicker(value: js.Any): Self = StObject.set(x, "dateFromPicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: js.Any): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setDateFromPickerUndefined: Self = StObject.set(x, "dateFromPicker", js.undefined)
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFromPicker(value: js.Any): Self = this.set("dateFromPicker", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteDateFromPicker: Self = this.set("dateFromPicker", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStateConditions extends js.Object {
+trait IStateConditions extends StObject {
   
   def Clone(): IStateConditions = js.native
   
@@ -32,33 +33,21 @@ object IStateConditions {
   }
   
   @scala.inline
-  implicit class IStateConditionsOps[Self <: IStateConditions] (val x: Self) extends AnyVal {
+  implicit class IStateConditionsMutableBuilder[Self <: IStateConditions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IStateConditions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyConditions(value: Boolean): Self = StObject.set(x, "PropertyConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPropertyConditionsDefinition(value: ISearchConditions): Self = StObject.set(x, "PropertyConditionsDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IStateConditions): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setVBScript(value: Boolean): Self = StObject.set(x, "VBScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyConditions(value: Boolean): Self = this.set("PropertyConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyConditionsDefinition(value: ISearchConditions): Self = this.set("PropertyConditionsDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVBScript(value: Boolean): Self = this.set("VBScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVBScriptDefinition(value: String): Self = this.set("VBScriptDefinition", value.asInstanceOf[js.Any])
+    def setVBScriptDefinition(value: String): Self = StObject.set(x, "VBScriptDefinition", value.asInstanceOf[js.Any])
   }
 }

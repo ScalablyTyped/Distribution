@@ -6,12 +6,13 @@ import typings.devtoolsProtocol.mod.Protocol.Database.ExecuteSQLRequest
 import typings.devtoolsProtocol.mod.Protocol.Database.ExecuteSQLResponse
 import typings.devtoolsProtocol.mod.Protocol.Database.GetDatabaseTableNamesRequest
 import typings.devtoolsProtocol.mod.Protocol.Database.GetDatabaseTableNamesResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseApi extends js.Object {
+trait DatabaseApi extends StObject {
   
   /**
     * Disables database tracking, prevents database events from being sent to the client.
@@ -45,33 +46,21 @@ object DatabaseApi {
   }
   
   @scala.inline
-  implicit class DatabaseApiOps[Self <: DatabaseApi] (val x: Self) extends AnyVal {
+  implicit class DatabaseApiMutableBuilder[Self <: DatabaseApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecuteSQL(value: ExecuteSQLRequest => js.Promise[ExecuteSQLResponse]): Self = StObject.set(x, "executeSQL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setGetDatabaseTableNames(value: GetDatabaseTableNamesRequest => js.Promise[GetDatabaseTableNamesResponse]): Self = StObject.set(x, "getDatabaseTableNames", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExecuteSQL(value: ExecuteSQLRequest => js.Promise[ExecuteSQLResponse]): Self = this.set("executeSQL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDatabaseTableNames(value: GetDatabaseTableNamesRequest => js.Promise[GetDatabaseTableNamesResponse]): Self = this.set("getDatabaseTableNames", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOn(value: (addDatabase, js.Function1[/* params */ AddDatabaseEvent, Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setOn(value: (addDatabase, js.Function1[/* params */ AddDatabaseEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

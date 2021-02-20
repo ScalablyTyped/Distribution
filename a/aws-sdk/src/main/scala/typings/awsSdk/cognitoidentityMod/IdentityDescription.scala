@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityDescription extends js.Object {
+trait IdentityDescription extends StObject {
   
   /**
     * Date on which the identity was created.
@@ -36,45 +37,33 @@ object IdentityDescription {
   }
   
   @scala.inline
-  implicit class IdentityDescriptionOps[Self <: IdentityDescription] (val x: Self) extends AnyVal {
+  implicit class IdentityDescriptionMutableBuilder[Self <: IdentityDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
+    def setLogins(value: LoginsList): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
-    
-    @scala.inline
-    def setLoginsVarargs(value: IdentityProviderName*): Self = this.set("Logins", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogins(value: LoginsList): Self = this.set("Logins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogins: Self = this.set("Logins", js.undefined)
+    def setLoginsVarargs(value: IdentityProviderName*): Self = StObject.set(x, "Logins", js.Array(value :_*))
   }
 }

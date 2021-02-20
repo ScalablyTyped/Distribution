@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryMobileOptions extends js.Object {
+trait JQueryMobileOptions extends StObject {
   
   var activeBtnClass: js.UndefOr[String] = js.native
   
@@ -66,162 +67,150 @@ object JQueryMobileOptions {
   }
   
   @scala.inline
-  implicit class JQueryMobileOptionsOps[Self <: JQueryMobileOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryMobileOptionsMutableBuilder[Self <: JQueryMobileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveBtnClass(value: String): Self = StObject.set(x, "activeBtnClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveBtnClassUndefined: Self = StObject.set(x, "activeBtnClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivePageClass(value: String): Self = StObject.set(x, "activePageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonMarkup(value: js.Any): Self = this.set("buttonMarkup", value.asInstanceOf[js.Any])
+    def setActivePageClassUndefined: Self = StObject.set(x, "activePageClass", js.undefined)
     
     @scala.inline
-    def setTransitionFallbacks(value: js.Any): Self = this.set("transitionFallbacks", value.asInstanceOf[js.Any])
+    def setAjaxEnabled(value: Boolean): Self = StObject.set(x, "ajaxEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveBtnClass(value: String): Self = this.set("activeBtnClass", value.asInstanceOf[js.Any])
+    def setAjaxEnabledUndefined: Self = StObject.set(x, "ajaxEnabled", js.undefined)
     
     @scala.inline
-    def deleteActiveBtnClass: Self = this.set("activeBtnClass", js.undefined)
+    def setAllowCrossDomainPages(value: Boolean): Self = StObject.set(x, "allowCrossDomainPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivePageClass(value: String): Self = this.set("activePageClass", value.asInstanceOf[js.Any])
+    def setAllowCrossDomainPagesUndefined: Self = StObject.set(x, "allowCrossDomainPages", js.undefined)
     
     @scala.inline
-    def deleteActivePageClass: Self = this.set("activePageClass", js.undefined)
+    def setAutoInitializePage(value: Boolean): Self = StObject.set(x, "autoInitializePage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxEnabled(value: Boolean): Self = this.set("ajaxEnabled", value.asInstanceOf[js.Any])
+    def setAutoInitializePageUndefined: Self = StObject.set(x, "autoInitializePage", js.undefined)
     
     @scala.inline
-    def deleteAjaxEnabled: Self = this.set("ajaxEnabled", js.undefined)
+    def setButtonMarkup(value: js.Any): Self = StObject.set(x, "buttonMarkup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCrossDomainPages(value: Boolean): Self = this.set("allowCrossDomainPages", value.asInstanceOf[js.Any])
+    def setDefaultDialogTransition(value: String): Self = StObject.set(x, "defaultDialogTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowCrossDomainPages: Self = this.set("allowCrossDomainPages", js.undefined)
+    def setDefaultDialogTransitionUndefined: Self = StObject.set(x, "defaultDialogTransition", js.undefined)
     
     @scala.inline
-    def setAutoInitializePage(value: Boolean): Self = this.set("autoInitializePage", value.asInstanceOf[js.Any])
+    def setDefaultPageTransition(value: String): Self = StObject.set(x, "defaultPageTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoInitializePage: Self = this.set("autoInitializePage", js.undefined)
+    def setDefaultPageTransitionUndefined: Self = StObject.set(x, "defaultPageTransition", js.undefined)
     
     @scala.inline
-    def setDefaultDialogTransition(value: String): Self = this.set("defaultDialogTransition", value.asInstanceOf[js.Any])
+    def setGetMaxScrollForTransition(value: Double): Self = StObject.set(x, "getMaxScrollForTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultDialogTransition: Self = this.set("defaultDialogTransition", js.undefined)
+    def setGetMaxScrollForTransitionUndefined: Self = StObject.set(x, "getMaxScrollForTransition", js.undefined)
     
     @scala.inline
-    def setDefaultPageTransition(value: String): Self = this.set("defaultPageTransition", value.asInstanceOf[js.Any])
+    def setGradeA(value: js.Function): Self = StObject.set(x, "gradeA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultPageTransition: Self = this.set("defaultPageTransition", js.undefined)
+    def setGradeAUndefined: Self = StObject.set(x, "gradeA", js.undefined)
     
     @scala.inline
-    def setGetMaxScrollForTransition(value: Double): Self = this.set("getMaxScrollForTransition", value.asInstanceOf[js.Any])
+    def setHashListeningEnabled(value: Boolean): Self = StObject.set(x, "hashListeningEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetMaxScrollForTransition: Self = this.set("getMaxScrollForTransition", js.undefined)
+    def setHashListeningEnabledUndefined: Self = StObject.set(x, "hashListeningEnabled", js.undefined)
     
     @scala.inline
-    def setGradeA(value: js.Function): Self = this.set("gradeA", value.asInstanceOf[js.Any])
+    def setIgnoreContentEnabled(value: Boolean): Self = StObject.set(x, "ignoreContentEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGradeA: Self = this.set("gradeA", js.undefined)
+    def setIgnoreContentEnabledUndefined: Self = StObject.set(x, "ignoreContentEnabled", js.undefined)
     
     @scala.inline
-    def setHashListeningEnabled(value: Boolean): Self = this.set("hashListeningEnabled", value.asInstanceOf[js.Any])
+    def setLinkBindingEnabled(value: Boolean): Self = StObject.set(x, "linkBindingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHashListeningEnabled: Self = this.set("hashListeningEnabled", js.undefined)
+    def setLinkBindingEnabledUndefined: Self = StObject.set(x, "linkBindingEnabled", js.undefined)
     
     @scala.inline
-    def setIgnoreContentEnabled(value: Boolean): Self = this.set("ignoreContentEnabled", value.asInstanceOf[js.Any])
+    def setLoadingMessageTextVisible(value: Boolean): Self = StObject.set(x, "loadingMessageTextVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreContentEnabled: Self = this.set("ignoreContentEnabled", js.undefined)
+    def setLoadingMessageTextVisibleUndefined: Self = StObject.set(x, "loadingMessageTextVisible", js.undefined)
     
     @scala.inline
-    def setLinkBindingEnabled(value: Boolean): Self = this.set("linkBindingEnabled", value.asInstanceOf[js.Any])
+    def setLoadingMessageTheme(value: String): Self = StObject.set(x, "loadingMessageTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkBindingEnabled: Self = this.set("linkBindingEnabled", js.undefined)
+    def setLoadingMessageThemeUndefined: Self = StObject.set(x, "loadingMessageTheme", js.undefined)
     
     @scala.inline
-    def setLoadingMessageTextVisible(value: Boolean): Self = this.set("loadingMessageTextVisible", value.asInstanceOf[js.Any])
+    def setMaxTransitionWidth(value: Double): Self = StObject.set(x, "maxTransitionWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadingMessageTextVisible: Self = this.set("loadingMessageTextVisible", js.undefined)
+    def setMaxTransitionWidthUndefined: Self = StObject.set(x, "maxTransitionWidth", js.undefined)
     
     @scala.inline
-    def setLoadingMessageTheme(value: String): Self = this.set("loadingMessageTheme", value.asInstanceOf[js.Any])
+    def setMinScrollBack(value: Double): Self = StObject.set(x, "minScrollBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadingMessageTheme: Self = this.set("loadingMessageTheme", js.undefined)
+    def setMinScrollBackUndefined: Self = StObject.set(x, "minScrollBack", js.undefined)
     
     @scala.inline
-    def setMaxTransitionWidth(value: Double): Self = this.set("maxTransitionWidth", value.asInstanceOf[js.Any])
+    def setNs(value: Double): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxTransitionWidth: Self = this.set("maxTransitionWidth", js.undefined)
+    def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     
     @scala.inline
-    def setMinScrollBack(value: Double): Self = this.set("minScrollBack", value.asInstanceOf[js.Any])
+    def setPageLoadErrorMessage(value: String): Self = StObject.set(x, "pageLoadErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinScrollBack: Self = this.set("minScrollBack", js.undefined)
+    def setPageLoadErrorMessageTheme(value: String): Self = StObject.set(x, "pageLoadErrorMessageTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNs(value: Double): Self = this.set("ns", value.asInstanceOf[js.Any])
+    def setPageLoadErrorMessageThemeUndefined: Self = StObject.set(x, "pageLoadErrorMessageTheme", js.undefined)
     
     @scala.inline
-    def deleteNs: Self = this.set("ns", js.undefined)
+    def setPageLoadErrorMessageUndefined: Self = StObject.set(x, "pageLoadErrorMessage", js.undefined)
     
     @scala.inline
-    def setPageLoadErrorMessage(value: String): Self = this.set("pageLoadErrorMessage", value.asInstanceOf[js.Any])
+    def setPhonegapNavigationEnabled(value: Boolean): Self = StObject.set(x, "phonegapNavigationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageLoadErrorMessage: Self = this.set("pageLoadErrorMessage", js.undefined)
+    def setPhonegapNavigationEnabledUndefined: Self = StObject.set(x, "phonegapNavigationEnabled", js.undefined)
     
     @scala.inline
-    def setPageLoadErrorMessageTheme(value: String): Self = this.set("pageLoadErrorMessageTheme", value.asInstanceOf[js.Any])
+    def setPushStateEnabled(value: Boolean): Self = StObject.set(x, "pushStateEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageLoadErrorMessageTheme: Self = this.set("pageLoadErrorMessageTheme", js.undefined)
+    def setPushStateEnabledUndefined: Self = StObject.set(x, "pushStateEnabled", js.undefined)
     
     @scala.inline
-    def setPhonegapNavigationEnabled(value: Boolean): Self = this.set("phonegapNavigationEnabled", value.asInstanceOf[js.Any])
+    def setSubPageUrlKey(value: String): Self = StObject.set(x, "subPageUrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhonegapNavigationEnabled: Self = this.set("phonegapNavigationEnabled", js.undefined)
+    def setSubPageUrlKeyUndefined: Self = StObject.set(x, "subPageUrlKey", js.undefined)
     
     @scala.inline
-    def setPushStateEnabled(value: Boolean): Self = this.set("pushStateEnabled", value.asInstanceOf[js.Any])
+    def setTouchOverflowEnabled(value: Boolean): Self = StObject.set(x, "touchOverflowEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePushStateEnabled: Self = this.set("pushStateEnabled", js.undefined)
+    def setTouchOverflowEnabledUndefined: Self = StObject.set(x, "touchOverflowEnabled", js.undefined)
     
     @scala.inline
-    def setSubPageUrlKey(value: String): Self = this.set("subPageUrlKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubPageUrlKey: Self = this.set("subPageUrlKey", js.undefined)
-    
-    @scala.inline
-    def setTouchOverflowEnabled(value: Boolean): Self = this.set("touchOverflowEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchOverflowEnabled: Self = this.set("touchOverflowEnabled", js.undefined)
+    def setTransitionFallbacks(value: js.Any): Self = StObject.set(x, "transitionFallbacks", value.asInstanceOf[js.Any])
   }
 }

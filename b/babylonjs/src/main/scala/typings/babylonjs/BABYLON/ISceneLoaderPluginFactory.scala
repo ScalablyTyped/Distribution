@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISceneLoaderPluginFactory extends js.Object {
+trait ISceneLoaderPluginFactory extends StObject {
   
   /**
     * The callback that returns true if the data can be directly loaded.
@@ -34,30 +35,18 @@ object ISceneLoaderPluginFactory {
   }
   
   @scala.inline
-  implicit class ISceneLoaderPluginFactoryOps[Self <: ISceneLoaderPluginFactory] (val x: Self) extends AnyVal {
+  implicit class ISceneLoaderPluginFactoryMutableBuilder[Self <: ISceneLoaderPluginFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanDirectLoadUndefined: Self = StObject.set(x, "canDirectLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatePlugin(value: () => ISceneLoaderPlugin | ISceneLoaderPluginAsync): Self = StObject.set(x, "createPlugin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreatePlugin(value: () => ISceneLoaderPlugin | ISceneLoaderPluginAsync): Self = this.set("createPlugin", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanDirectLoad(value: /* data */ String => Boolean): Self = this.set("canDirectLoad", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCanDirectLoad: Self = this.set("canDirectLoad", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

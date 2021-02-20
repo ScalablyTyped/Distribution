@@ -1,11 +1,12 @@
 package typings.stripe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataOptions extends js.Object {
+trait IDataOptions extends StObject {
   
   var expand: js.UndefOr[js.Array[String]] = js.native
   
@@ -20,36 +21,24 @@ object IDataOptions {
   }
   
   @scala.inline
-  implicit class IDataOptionsOps[Self <: IDataOptions] (val x: Self) extends AnyVal {
+  implicit class IDataOptionsMutableBuilder[Self <: IDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
     @scala.inline
-    def setExpandVarargs(value: String*): Self = this.set("expand", js.Array(value :_*))
+    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: js.Array[String]): Self = this.set("expand", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
-    
-    @scala.inline
-    def setIncludeVarargs(value: String*): Self = this.set("include", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclude(value: js.Array[String]): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

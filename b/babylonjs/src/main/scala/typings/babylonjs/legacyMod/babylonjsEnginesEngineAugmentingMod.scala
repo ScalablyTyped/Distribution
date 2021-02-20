@@ -11,17 +11,16 @@ import typings.babylonjs.webVRCameraMod.WebVROptions
 import typings.std.HTMLElement
 import typings.std.WebGLQuery
 import typings.std.WebGLTransformFeedback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("babylonjs/Legacy/legacy", "babylonjs/Engines/engine")
-@js.native
-object babylonjsEnginesEngineAugmentingMod extends js.Object {
+object babylonjsEnginesEngineAugmentingMod {
   
   @js.native
-  trait Engine extends js.Object {
+  trait Engine extends StObject {
     
     /** @hidden */
     def _createTimeQuery(): WebGLQuery = js.native

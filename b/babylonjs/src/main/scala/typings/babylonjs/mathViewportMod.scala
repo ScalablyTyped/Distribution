@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Maths/math.viewport", JSImport.Namespace)
-@js.native
-object mathViewportMod extends js.Object {
+object mathViewportMod {
   
+  @JSImport("babylonjs/Maths/math.viewport", "Viewport")
   @js.native
-  class Viewport protected () extends js.Object {
+  class Viewport protected () extends StObject {
     /**
       * Creates a Viewport object located at (x, y) and sized (width, height)
       * @param x defines viewport left coordinate

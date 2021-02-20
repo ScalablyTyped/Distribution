@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultDisplayField extends js.Object {
+trait ResultDisplayField extends StObject {
   
   /** The display label for the property. */
   var label: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ResultDisplayField {
   }
   
   @scala.inline
-  implicit class ResultDisplayFieldOps[Self <: ResultDisplayField] (val x: Self) extends AnyVal {
+  implicit class ResultDisplayFieldMutableBuilder[Self <: ResultDisplayField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setProperty(value: NamedProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
-    
-    @scala.inline
-    def setProperty(value: NamedProperty): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

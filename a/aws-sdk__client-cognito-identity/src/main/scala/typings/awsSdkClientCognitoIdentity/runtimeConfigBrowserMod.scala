@@ -2,7 +2,9 @@ package typings.awsSdkClientCognitoIdentity
 
 import typings.awsSdkProtocolHttp.httpHandlerMod.HttpHandler
 import typings.awsSdkTypes.credentialsMod.Credentials
+import typings.awsSdkTypes.cryptoMod.Hash
 import typings.awsSdkTypes.cryptoMod.HashConstructor
+import typings.awsSdkTypes.cryptoMod.SourceData
 import typings.awsSdkTypes.httpMod.Endpoint
 import typings.awsSdkTypes.loggerMod.Logger
 import typings.awsSdkTypes.serdeMod.StreamCollector
@@ -13,72 +15,169 @@ import typings.awsSdkTypes.utilMod.RegionInfo
 import typings.awsSdkTypes.utilMod.RegionInfoProvider
 import typings.awsSdkTypes.utilMod.UrlParser
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", JSImport.Namespace)
-@js.native
-object runtimeConfigBrowserMod extends js.Object {
+object runtimeConfigBrowserMod {
   
-  @js.native
-  object ClientDefaultValues extends js.Object {
+  /* Inlined std.Required<@aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/types/CognitoIdentityClient.ClientDefaults> */
+  object ClientDefaultValues {
     
-    var apiVersion: String = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.apiVersion")
+    @js.native
+    def apiVersion: String = js.native
+    @scala.inline
+    def apiVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apiVersion")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.base64Decoder")
+    @js.native
+    def base64Decoder: Decoder = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.base64Decoder")
+    @js.native
     def base64Decoder(input: String): Uint8Array = js.native
-    @JSName("base64Decoder")
-    var base64Decoder_Original: Decoder = js.native
+    @scala.inline
+    def base64Decoder_=(x: Decoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64Decoder")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.base64Encoder")
+    @js.native
+    def base64Encoder: Encoder = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.base64Encoder")
+    @js.native
     def base64Encoder(input: Uint8Array): String = js.native
-    @JSName("base64Encoder")
-    var base64Encoder_Original: Encoder = js.native
+    @scala.inline
+    def base64Encoder_=(x: Encoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("base64Encoder")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.bodyLengthChecker")
+    @js.native
+    def bodyLengthChecker: js.Function1[/* body */ js.Any, js.UndefOr[Double]] = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.bodyLengthChecker")
+    @js.native
     def bodyLengthChecker(body: js.Any): js.UndefOr[Double] = js.native
-    @JSName("bodyLengthChecker")
-    var bodyLengthChecker_Original: js.Function1[/* body */ js.Any, js.UndefOr[Double]] = js.native
+    @scala.inline
+    def bodyLengthChecker_=(x: js.Function1[/* body */ js.Any, js.UndefOr[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyLengthChecker")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.credentialDefaultProvider")
+    @js.native
+    def credentialDefaultProvider: js.Function1[/* input */ js.Any, Provider[Credentials]] = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.credentialDefaultProvider")
+    @js.native
     def credentialDefaultProvider(input: js.Any): Provider[Credentials] = js.native
-    @JSName("credentialDefaultProvider")
-    var credentialDefaultProvider_Original: js.Function1[/* input */ js.Any, Provider[Credentials]] = js.native
+    @scala.inline
+    def credentialDefaultProvider_=(x: js.Function1[/* input */ js.Any, Provider[Credentials]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("credentialDefaultProvider")(x.asInstanceOf[js.Any])
     
-    var defaultUserAgent: String = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.defaultUserAgent")
+    @js.native
+    def defaultUserAgent: String = js.native
+    @scala.inline
+    def defaultUserAgent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultUserAgent")(x.asInstanceOf[js.Any])
     
-    var disableHostPrefix: Boolean = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.disableHostPrefix")
+    @js.native
+    def disableHostPrefix: Boolean = js.native
+    @scala.inline
+    def disableHostPrefix_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableHostPrefix")(x.asInstanceOf[js.Any])
     
-    var logger: Logger = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.logger")
+    @js.native
+    def logger: Logger = js.native
+    @scala.inline
+    def logger_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
     
-    var maxAttempts: Double | Provider[Double] = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.maxAttempts")
+    @js.native
+    def maxAttempts: Double | Provider[Double] = js.native
+    @scala.inline
+    def maxAttempts_=(x: Double | Provider[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxAttempts")(x.asInstanceOf[js.Any])
     
-    var region: String | Provider[String] = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.region")
+    @js.native
+    def region: String | Provider[String] = js.native
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.regionInfoProvider")
+    @js.native
+    def regionInfoProvider: RegionInfoProvider = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.regionInfoProvider")
+    @js.native
     def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.regionInfoProvider")
+    @js.native
     def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = js.native
-    @JSName("regionInfoProvider")
-    var regionInfoProvider_Original: RegionInfoProvider = js.native
+    @scala.inline
+    def regionInfoProvider_=(x: RegionInfoProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionInfoProvider")(x.asInstanceOf[js.Any])
     
-    var requestHandler: HttpHandler = js.native
+    @scala.inline
+    def region_=(x: String | Provider[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("region")(x.asInstanceOf[js.Any])
     
-    var runtime: String = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.requestHandler")
+    @js.native
+    def requestHandler: HttpHandler = js.native
+    @scala.inline
+    def requestHandler_=(x: HttpHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestHandler")(x.asInstanceOf[js.Any])
     
-    var sha256: HashConstructor = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.runtime")
+    @js.native
+    def runtime: String = js.native
+    @scala.inline
+    def runtime_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runtime")(x.asInstanceOf[js.Any])
     
-    var signingName: String = js.native
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.sha256")
+    @js.native
+    class sha256 () extends Hash {
+      def this(secret: SourceData) = this()
+    }
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.sha256")
+    @js.native
+    def sha256: HashConstructor = js.native
+    @scala.inline
+    def sha256_=(x: HashConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.signingName")
+    @js.native
+    def signingName: String = js.native
+    @scala.inline
+    def signingName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("signingName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.streamCollector")
+    @js.native
+    def streamCollector: StreamCollector = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.streamCollector")
+    @js.native
     def streamCollector(stream: js.Any): js.Promise[Uint8Array] = js.native
-    @JSName("streamCollector")
-    var streamCollector_Original: StreamCollector = js.native
+    @scala.inline
+    def streamCollector_=(x: StreamCollector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("streamCollector")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.urlParser")
+    @js.native
+    def urlParser: UrlParser = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.urlParser")
+    @js.native
     def urlParser(url: String): Endpoint = js.native
-    @JSName("urlParser")
-    var urlParser_Original: UrlParser = js.native
+    @scala.inline
+    def urlParser_=(x: UrlParser): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlParser")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.utf8Decoder")
+    @js.native
+    def utf8Decoder: Decoder = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.utf8Decoder")
+    @js.native
     def utf8Decoder(input: String): Uint8Array = js.native
-    @JSName("utf8Decoder")
-    var utf8Decoder_Original: Decoder = js.native
+    @scala.inline
+    def utf8Decoder_=(x: Decoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utf8Decoder")(x.asInstanceOf[js.Any])
     
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.utf8Encoder")
+    @js.native
+    def utf8Encoder: Encoder = js.native
+    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.browser", "ClientDefaultValues.utf8Encoder")
+    @js.native
     def utf8Encoder(input: Uint8Array): String = js.native
-    @JSName("utf8Encoder")
-    var utf8Encoder_Original: Encoder = js.native
+    @scala.inline
+    def utf8Encoder_=(x: Encoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utf8Encoder")(x.asInstanceOf[js.Any])
   }
 }

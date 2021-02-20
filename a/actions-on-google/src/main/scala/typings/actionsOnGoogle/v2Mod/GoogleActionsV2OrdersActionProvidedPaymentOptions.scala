@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersActionProvidedPaymentOptions extends js.Object {
+trait GoogleActionsV2OrdersActionProvidedPaymentOptions extends StObject {
   
   /**
     * Name of the instrument displayed on the receipt.
@@ -32,30 +33,18 @@ object GoogleActionsV2OrdersActionProvidedPaymentOptions {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersActionProvidedPaymentOptionsOps[Self <: GoogleActionsV2OrdersActionProvidedPaymentOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersActionProvidedPaymentOptionsMutableBuilder[Self <: GoogleActionsV2OrdersActionProvidedPaymentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentType(value: GoogleActionsV2OrdersActionProvidedPaymentOptionsPaymentType): Self = StObject.set(x, "paymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setPaymentType(value: GoogleActionsV2OrdersActionProvidedPaymentOptionsPaymentType): Self = this.set("paymentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentType: Self = this.set("paymentType", js.undefined)
+    def setPaymentTypeUndefined: Self = StObject.set(x, "paymentType", js.undefined)
   }
 }

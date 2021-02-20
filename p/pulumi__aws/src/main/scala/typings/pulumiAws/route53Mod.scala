@@ -1,0 +1,806 @@
+package typings.pulumiAws
+
+import typings.pulumiAws.delegationSetMod.DelegationSetArgs
+import typings.pulumiAws.delegationSetMod.DelegationSetState
+import typings.pulumiAws.enumsRoute53Mod.RecordType
+import typings.pulumiAws.getDelegationSetMod.GetDelegationSetArgs
+import typings.pulumiAws.getDelegationSetMod.GetDelegationSetResult
+import typings.pulumiAws.getResolverEndpointMod.GetResolverEndpointArgs
+import typings.pulumiAws.getResolverEndpointMod.GetResolverEndpointResult
+import typings.pulumiAws.getResolverRuleMod.GetResolverRuleArgs
+import typings.pulumiAws.getResolverRuleMod.GetResolverRuleResult
+import typings.pulumiAws.getResolverRulesMod.GetResolverRulesArgs
+import typings.pulumiAws.getResolverRulesMod.GetResolverRulesResult
+import typings.pulumiAws.getZoneMod.GetZoneArgs
+import typings.pulumiAws.getZoneMod.GetZoneResult
+import typings.pulumiAws.healthCheckMod.HealthCheckArgs
+import typings.pulumiAws.healthCheckMod.HealthCheckState
+import typings.pulumiAws.queryLogMod.QueryLogArgs
+import typings.pulumiAws.queryLogMod.QueryLogState
+import typings.pulumiAws.recordMod.RecordArgs
+import typings.pulumiAws.recordMod.RecordState
+import typings.pulumiAws.resolverEndpointMod.ResolverEndpointArgs
+import typings.pulumiAws.resolverEndpointMod.ResolverEndpointState
+import typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociationArgs
+import typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociationState
+import typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfigArgs
+import typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfigState
+import typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociationArgs
+import typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociationState
+import typings.pulumiAws.resolverRuleMod.ResolverRuleArgs
+import typings.pulumiAws.resolverRuleMod.ResolverRuleState
+import typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorizationArgs
+import typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorizationState
+import typings.pulumiAws.zoneAssociationMod.ZoneAssociationArgs
+import typings.pulumiAws.zoneAssociationMod.ZoneAssociationState
+import typings.pulumiAws.zoneMod.ZoneArgs
+import typings.pulumiAws.zoneMod.ZoneState
+import typings.pulumiPulumi.invokeMod.InvokeOptions
+import typings.pulumiPulumi.outputMod.Input
+import typings.pulumiPulumi.resourceMod.CustomResourceOptions
+import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object route53Mod {
+  
+  @JSImport("@pulumi/aws/route53", "DelegationSet")
+  @js.native
+  class DelegationSet protected ()
+    extends typings.pulumiAws.delegationSetMod.DelegationSet {
+    /**
+      * Create a DelegationSet resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: DelegationSetArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: DelegationSetArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object DelegationSet {
+    
+    /**
+      * Get an existing DelegationSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
+    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
+    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: DelegationSetState): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
+    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
+    
+    /**
+      * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "DelegationSet.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "HealthCheck")
+  @js.native
+  class HealthCheck protected ()
+    extends typings.pulumiAws.healthCheckMod.HealthCheck {
+    /**
+      * Create a HealthCheck resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: HealthCheckArgs) = this()
+    def this(name: String, args: HealthCheckArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object HealthCheck {
+    
+    /**
+      * Get an existing HealthCheck resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
+    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
+    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: HealthCheckState): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
+    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
+    
+    /**
+      * Returns true if the given object is an instance of HealthCheck.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "HealthCheck.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "QueryLog")
+  @js.native
+  class QueryLog protected ()
+    extends typings.pulumiAws.queryLogMod.QueryLog {
+    /**
+      * Create a QueryLog resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: QueryLogArgs) = this()
+    def this(name: String, args: QueryLogArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object QueryLog {
+    
+    /**
+      * Get an existing QueryLog resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "QueryLog.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.queryLogMod.QueryLog = js.native
+    @JSImport("@pulumi/aws/route53", "QueryLog.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = js.native
+    @JSImport("@pulumi/aws/route53", "QueryLog.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: QueryLogState): typings.pulumiAws.queryLogMod.QueryLog = js.native
+    @JSImport("@pulumi/aws/route53", "QueryLog.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = js.native
+    
+    /**
+      * Returns true if the given object is an instance of QueryLog.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "QueryLog.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "Record")
+  @js.native
+  class Record protected ()
+    extends typings.pulumiAws.recordMod.Record {
+    /**
+      * Create a Record resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: RecordArgs) = this()
+    def this(name: String, args: RecordArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object Record {
+    
+    /**
+      * Get an existing Record resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "Record.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.recordMod.Record = js.native
+    @JSImport("@pulumi/aws/route53", "Record.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = js.native
+    @JSImport("@pulumi/aws/route53", "Record.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: RecordState): typings.pulumiAws.recordMod.Record = js.native
+    @JSImport("@pulumi/aws/route53", "Record.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Record.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "Record.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = js.native
+  }
+  
+  object RecordType {
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.A")
+    @js.native
+    val A: typings.pulumiAws.pulumiAwsStrings.A = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.AAAA")
+    @js.native
+    val AAAA: typings.pulumiAws.pulumiAwsStrings.AAAA = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.CAA")
+    @js.native
+    val CAA: typings.pulumiAws.pulumiAwsStrings.CAA = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.CNAME")
+    @js.native
+    val CNAME: typings.pulumiAws.pulumiAwsStrings.CNAME = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.MX")
+    @js.native
+    val MX: typings.pulumiAws.pulumiAwsStrings.MX = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.NAPTR")
+    @js.native
+    val NAPTR: typings.pulumiAws.pulumiAwsStrings.NAPTR = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.NS")
+    @js.native
+    val NS: typings.pulumiAws.pulumiAwsStrings.NS = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.PTR")
+    @js.native
+    val PTR: typings.pulumiAws.pulumiAwsStrings.PTR = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.SOA")
+    @js.native
+    val SOA: typings.pulumiAws.pulumiAwsStrings.SOA = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.SPF")
+    @js.native
+    val SPF: typings.pulumiAws.pulumiAwsStrings.SPF = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.SRV")
+    @js.native
+    val SRV: typings.pulumiAws.pulumiAwsStrings.SRV = js.native
+    
+    @JSImport("@pulumi/aws/route53", "RecordType.TXT")
+    @js.native
+    val TXT: typings.pulumiAws.pulumiAwsStrings.TXT = js.native
+  }
+  
+  object RecordTypes {
+    
+    /** Use RecordType.A instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.A")
+    @js.native
+    val A: RecordType = js.native
+    
+    /** Use RecordType.AAAA instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.AAAA")
+    @js.native
+    val AAAA: RecordType = js.native
+    
+    /** Use RecordType.CAA instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.CAA")
+    @js.native
+    val CAA: RecordType = js.native
+    
+    /** Use RecordType.CNAME instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.CNAME")
+    @js.native
+    val CNAME: RecordType = js.native
+    
+    /** Use RecordType.MX instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.MX")
+    @js.native
+    val MX: RecordType = js.native
+    
+    /** Use RecordType.NAPTR instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.NAPTR")
+    @js.native
+    val NAPTR: RecordType = js.native
+    
+    /** Use RecordType.NS instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.NS")
+    @js.native
+    val NS: RecordType = js.native
+    
+    /** Use RecordType.PTR instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.PTR")
+    @js.native
+    val PTR: RecordType = js.native
+    
+    /** Use RecordType.SOA instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.SOA")
+    @js.native
+    val SOA: RecordType = js.native
+    
+    /** Use RecordType.SPF instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.SPF")
+    @js.native
+    val SPF: RecordType = js.native
+    
+    /** Use RecordType.SRV instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.SRV")
+    @js.native
+    val SRV: RecordType = js.native
+    
+    /** Use RecordType.TXT instead. */
+    @JSImport("@pulumi/aws/route53", "RecordTypes.TXT")
+    @js.native
+    val TXT: RecordType = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "ResolverEndpoint")
+  @js.native
+  class ResolverEndpoint protected ()
+    extends typings.pulumiAws.resolverEndpointMod.ResolverEndpoint {
+    /**
+      * Create a ResolverEndpoint resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ResolverEndpointArgs) = this()
+    def this(name: String, args: ResolverEndpointArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object ResolverEndpoint {
+    
+    /**
+      * Get an existing ResolverEndpoint resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverEndpointState): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverEndpointState, opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ResolverEndpoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig")
+  @js.native
+  class ResolverQueryLogConfig protected ()
+    extends typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig {
+    /**
+      * Create a ResolverQueryLogConfig resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ResolverQueryLogConfigArgs) = this()
+    def this(name: String, args: ResolverQueryLogConfigArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object ResolverQueryLogConfig {
+    
+    /**
+      * Get an existing ResolverQueryLogConfig resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState, opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ResolverQueryLogConfig.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation")
+  @js.native
+  class ResolverQueryLogConfigAssociation protected ()
+    extends typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation {
+    /**
+      * Create a ResolverQueryLogConfigAssociation resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ResolverQueryLogConfigAssociationArgs) = this()
+    def this(name: String, args: ResolverQueryLogConfigAssociationArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object ResolverQueryLogConfigAssociation {
+    
+    /**
+      * Get an existing ResolverQueryLogConfigAssociation resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
+    @js.native
+    def get(
+      name: String,
+      id: Input[ID],
+      state: ResolverQueryLogConfigAssociationState,
+      opts: CustomResourceOptions
+    ): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ResolverQueryLogConfigAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "ResolverRule")
+  @js.native
+  class ResolverRule protected ()
+    extends typings.pulumiAws.resolverRuleMod.ResolverRule {
+    /**
+      * Create a ResolverRule resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ResolverRuleArgs) = this()
+    def this(name: String, args: ResolverRuleArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object ResolverRule {
+    
+    /**
+      * Get an existing ResolverRule resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverRuleState): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverRuleState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ResolverRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverRule.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation")
+  @js.native
+  class ResolverRuleAssociation protected ()
+    extends typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation {
+    /**
+      * Create a ResolverRuleAssociation resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ResolverRuleAssociationArgs) = this()
+    def this(name: String, args: ResolverRuleAssociationArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object ResolverRuleAssociation {
+    
+    /**
+      * Get an existing ResolverRuleAssociation resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ResolverRuleAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization")
+  @js.native
+  class VpcAssociationAuthorization protected ()
+    extends typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization {
+    /**
+      * Create a VpcAssociationAuthorization resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: VpcAssociationAuthorizationArgs) = this()
+    def this(name: String, args: VpcAssociationAuthorizationArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object VpcAssociationAuthorization {
+    
+    /**
+      * Get an existing VpcAssociationAuthorization resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
+    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
+    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
+    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
+    
+    /**
+      * Returns true if the given object is an instance of VpcAssociationAuthorization.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "Zone")
+  @js.native
+  class Zone protected ()
+    extends typings.pulumiAws.zoneMod.Zone {
+    /**
+      * Create a Zone resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: ZoneArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: ZoneArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object Zone {
+    
+    /**
+      * Get an existing Zone resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "Zone.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.zoneMod.Zone = js.native
+    @JSImport("@pulumi/aws/route53", "Zone.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = js.native
+    @JSImport("@pulumi/aws/route53", "Zone.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ZoneState): typings.pulumiAws.zoneMod.Zone = js.native
+    @JSImport("@pulumi/aws/route53", "Zone.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = js.native
+    
+    /**
+      * Returns true if the given object is an instance of Zone.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "Zone.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "ZoneAssociation")
+  @js.native
+  class ZoneAssociation protected ()
+    extends typings.pulumiAws.zoneAssociationMod.ZoneAssociation {
+    /**
+      * Create a ZoneAssociation resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: ZoneAssociationArgs) = this()
+    def this(name: String, args: ZoneAssociationArgs, opts: CustomResourceOptions) = this()
+  }
+  /* static members */
+  object ZoneAssociation {
+    
+    /**
+      * Get an existing ZoneAssociation resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ZoneAssociationState): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
+    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
+    @js.native
+    def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
+    
+    /**
+      * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    @JSImport("@pulumi/aws/route53", "ZoneAssociation.isInstance")
+    @js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = js.native
+  }
+  
+  @JSImport("@pulumi/aws/route53", "getDelegationSet")
+  @js.native
+  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getDelegationSet")
+  @js.native
+  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = js.native
+  
+  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
+  @js.native
+  def getResolverEndpoint(): js.Promise[GetResolverEndpointResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
+  @js.native
+  def getResolverEndpoint(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
+  @js.native
+  def getResolverEndpoint(args: GetResolverEndpointArgs): js.Promise[GetResolverEndpointResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
+  @js.native
+  def getResolverEndpoint(args: GetResolverEndpointArgs, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = js.native
+  
+  @JSImport("@pulumi/aws/route53", "getResolverRule")
+  @js.native
+  def getResolverRule(): js.Promise[GetResolverRuleResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverRule")
+  @js.native
+  def getResolverRule(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverRule")
+  @js.native
+  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverRule")
+  @js.native
+  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
+  
+  @JSImport("@pulumi/aws/route53", "getResolverRules")
+  @js.native
+  def getResolverRules(): js.Promise[GetResolverRulesResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverRules")
+  @js.native
+  def getResolverRules(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverRules")
+  @js.native
+  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getResolverRules")
+  @js.native
+  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
+  
+  @JSImport("@pulumi/aws/route53", "getZone")
+  @js.native
+  def getZone(): js.Promise[GetZoneResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getZone")
+  @js.native
+  def getZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getZone")
+  @js.native
+  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = js.native
+  @JSImport("@pulumi/aws/route53", "getZone")
+  @js.native
+  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
+}

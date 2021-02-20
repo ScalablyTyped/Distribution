@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.restMod.rest
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeType
 import typings.mendixmodelsdk.elementsMod.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

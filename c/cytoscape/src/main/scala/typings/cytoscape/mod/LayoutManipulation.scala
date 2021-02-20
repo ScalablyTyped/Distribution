@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A new, developer accessible layout can be made via cy.makeLayout().
   */
 @js.native
-trait LayoutManipulation extends js.Object {
+trait LayoutManipulation extends StObject {
   
   /**
     * Start running the layout
@@ -36,27 +37,15 @@ object LayoutManipulation {
   }
   
   @scala.inline
-  implicit class LayoutManipulationOps[Self <: LayoutManipulation] (val x: Self) extends AnyVal {
+  implicit class LayoutManipulationMutableBuilder[Self <: LayoutManipulation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRun(value: () => LayoutManipulation): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStart(value: () => LayoutManipulation): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRun(value: () => LayoutManipulation): Self = this.set("run", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => LayoutManipulation): Self = this.set("start", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStop(value: () => LayoutManipulation): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => LayoutManipulation): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

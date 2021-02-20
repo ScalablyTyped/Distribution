@@ -202,6 +202,7 @@ import typings.activexWord.activexWordNumbers.`9217`
 import typings.activexWord.activexWordNumbers.`9225`
 import typings.activexWord.activexWordNumbers.`9226`
 import typings.activexWord.activexWordNumbers.`9228`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -410,7 +411,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`1130`
   - typings.activexWord.activexWordNumbers.`1077`
 */
-trait WdLanguageID extends js.Object
+trait WdLanguageID extends StObject
 object WdLanguageID {
   
   @scala.inline

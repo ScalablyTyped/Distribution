@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.personalAccessTokenMod.PersonalAccessToken
 import typings.contentfulManagement.personalAccessTokenMod.PersonalAccessTokenProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofpersonalAccessToken extends js.Object {
+trait TypeofpersonalAccessToken extends StObject {
   
   def wrapPersonalAccessToken(http: AxiosInstance, data: PersonalAccessTokenProp): PersonalAccessToken = js.native
   
@@ -28,26 +29,14 @@ object TypeofpersonalAccessToken {
   }
   
   @scala.inline
-  implicit class TypeofpersonalAccessTokenOps[Self <: TypeofpersonalAccessToken] (val x: Self) extends AnyVal {
+  implicit class TypeofpersonalAccessTokenMutableBuilder[Self <: TypeofpersonalAccessToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapPersonalAccessToken(value: (AxiosInstance, PersonalAccessTokenProp) => PersonalAccessToken): Self = this.set("wrapPersonalAccessToken", js.Any.fromFunction2(value))
+    def setWrapPersonalAccessToken(value: (AxiosInstance, PersonalAccessTokenProp) => PersonalAccessToken): Self = StObject.set(x, "wrapPersonalAccessToken", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapPersonalAccessTokenCollection(
       value: (AxiosInstance, CollectionProp[PersonalAccessTokenProp]) => Collection[PersonalAccessToken, PersonalAccessTokenProp]
-    ): Self = this.set("wrapPersonalAccessTokenCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapPersonalAccessTokenCollection", js.Any.fromFunction2(value))
   }
 }

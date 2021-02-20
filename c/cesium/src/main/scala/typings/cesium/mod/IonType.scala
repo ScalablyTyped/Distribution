@@ -1,11 +1,12 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonType extends js.Object {
+trait IonType extends StObject {
   
   var defaultAccessToken: String = js.native
   
@@ -26,27 +27,15 @@ object IonType {
   }
   
   @scala.inline
-  implicit class IonTypeOps[Self <: IonType] (val x: Self) extends AnyVal {
+  implicit class IonTypeMutableBuilder[Self <: IonType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAccessToken(value: String): Self = StObject.set(x, "defaultAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultServer(value: String | Resource): Self = StObject.set(x, "defaultServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultAccessToken(value: String): Self = this.set("defaultAccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultServer(value: String | Resource): Self = this.set("defaultServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDefaultTokenCredit(value: String => Credit): Self = this.set("getDefaultTokenCredit", js.Any.fromFunction1(value))
+    def setGetDefaultTokenCredit(value: String => Credit): Self = StObject.set(x, "getDefaultTokenCredit", js.Any.fromFunction1(value))
   }
 }

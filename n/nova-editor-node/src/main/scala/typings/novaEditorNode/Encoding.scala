@@ -1,5 +1,6 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.novaEditorNode.novaEditorNodeStrings.hex
   - typings.novaEditorNode.novaEditorNodeStrings.base64
 */
-trait Encoding extends js.Object
+trait Encoding extends StObject
 object Encoding {
   
   @scala.inline

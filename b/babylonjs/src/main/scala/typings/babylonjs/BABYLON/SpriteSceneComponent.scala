@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object SpriteSceneComponent {
   }
   
   @scala.inline
-  implicit class SpriteSceneComponentOps[Self <: SpriteSceneComponent] (val x: Self) extends AnyVal {
+  implicit class SpriteSceneComponentMutableBuilder[Self <: SpriteSceneComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_pickSpriteButKeepRay(value: js.Any): Self = StObject.set(x, "_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_pointerDown(value: js.Any): Self = StObject.set(x, "_pointerDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_pointerMove(value: js.Any): Self = StObject.set(x, "_pointerMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_pickSpriteButKeepRay(value: js.Any): Self = this.set("_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
+    def set_pointerUp(value: js.Any): Self = StObject.set(x, "_pointerUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_pointerDown(value: js.Any): Self = this.set("_pointerDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_pointerMove(value: js.Any): Self = this.set("_pointerMove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_pointerUp(value: js.Any): Self = this.set("_pointerUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_spritePredicate(value: js.Any): Self = this.set("_spritePredicate", value.asInstanceOf[js.Any])
+    def set_spritePredicate(value: js.Any): Self = StObject.set(x, "_spritePredicate", value.asInstanceOf[js.Any])
   }
 }

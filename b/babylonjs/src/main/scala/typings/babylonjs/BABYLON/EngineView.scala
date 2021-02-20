@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EngineView extends js.Object {
+trait EngineView extends StObject {
   
   /** Defines an optional camera used to render the view (will use active camera else) */
   var camera: js.UndefOr[Camera] = js.native
@@ -23,27 +24,15 @@ object EngineView {
   }
   
   @scala.inline
-  implicit class EngineViewOps[Self <: EngineView] (val x: Self) extends AnyVal {
+  implicit class EngineViewMutableBuilder[Self <: EngineView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTarget(value: HTMLCanvasElement): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCamera(value: Camera): Self = this.set("camera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setTarget(value: HTMLCanvasElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

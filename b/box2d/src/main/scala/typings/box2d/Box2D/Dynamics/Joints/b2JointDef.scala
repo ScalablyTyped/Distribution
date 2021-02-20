@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2JointDef extends js.Object {
+trait b2JointDef extends StObject {
   
   /**
     * The first attached body.
@@ -43,33 +44,21 @@ object b2JointDef {
   }
   
   @scala.inline
-  implicit class b2JointDefOps[Self <: b2JointDef] (val x: Self) extends AnyVal {
+  implicit class b2JointDefMutableBuilder[Self <: b2JointDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyA(value: b2Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyB(value: b2Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollideConnected(value: Boolean): Self = StObject.set(x, "collideConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyA(value: b2Body): Self = this.set("bodyA", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyB(value: b2Body): Self = this.set("bodyB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCollideConnected(value: Boolean): Self = this.set("collideConnected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
+    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartImportTaskResponse extends js.Object {
+trait StartImportTaskResponse extends StObject {
   
   /**
     * An array of information related to the import task request including status information, times, IDs, the Amazon S3 Object URL for the import file, and more. 
@@ -21,24 +22,12 @@ object StartImportTaskResponse {
   }
   
   @scala.inline
-  implicit class StartImportTaskResponseOps[Self <: StartImportTaskResponse] (val x: Self) extends AnyVal {
+  implicit class StartImportTaskResponseMutableBuilder[Self <: StartImportTaskResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTask(value: ImportTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTask(value: ImportTask): Self = this.set("task", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTask: Self = this.set("task", js.undefined)
+    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

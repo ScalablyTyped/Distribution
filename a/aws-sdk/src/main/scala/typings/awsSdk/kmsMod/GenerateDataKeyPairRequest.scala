@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateDataKeyPairRequest extends js.Object {
+trait GenerateDataKeyPairRequest extends StObject {
   
   /**
     * Specifies the encryption context that will be used when encrypting the private key in the data key pair. An encryption context is a collection of non-secret key-value pairs that represents additional authenticated data. When you use an encryption context to encrypt data, you must specify the same (an exact case-sensitive match) encryption context to decrypt the data. An encryption context is optional when encrypting with a symmetric CMK, but it is highly recommended. For more information, see Encryption Context in the AWS Key Management Service Developer Guide.
@@ -36,39 +37,27 @@ object GenerateDataKeyPairRequest {
   }
   
   @scala.inline
-  implicit class GenerateDataKeyPairRequestOps[Self <: GenerateDataKeyPairRequest] (val x: Self) extends AnyVal {
+  implicit class GenerateDataKeyPairRequestMutableBuilder[Self <: GenerateDataKeyPairRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionContext(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionContextUndefined: Self = StObject.set(x, "EncryptionContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
     
     @scala.inline
-    def setKeyPairSpec(value: DataKeyPairSpec): Self = this.set("KeyPairSpec", value.asInstanceOf[js.Any])
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
     
     @scala.inline
-    def setEncryptionContext(value: EncryptionContextType): Self = this.set("EncryptionContext", value.asInstanceOf[js.Any])
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionContext: Self = this.set("EncryptionContext", js.undefined)
-    
-    @scala.inline
-    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    def setKeyPairSpec(value: DataKeyPairSpec): Self = StObject.set(x, "KeyPairSpec", value.asInstanceOf[js.Any])
   }
 }

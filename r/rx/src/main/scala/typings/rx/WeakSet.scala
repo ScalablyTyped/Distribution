@@ -1,11 +1,12 @@
 package typings.rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeakSet[T] extends js.Object {
+trait WeakSet[T] extends StObject {
   
   def add(value: T): WeakSet[T] = js.native
   

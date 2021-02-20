@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.activexLibreoffice.com_.sun.star.uno.Uik
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,36 +87,24 @@ object XInterfaceTypeDescription {
   }
   
   @scala.inline
-  implicit class XInterfaceTypeDescriptionOps[Self <: XInterfaceTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XInterfaceTypeDescriptionMutableBuilder[Self <: XInterfaceTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBaseType(value: () => XTypeDescription): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMembers(value: () => SafeArray[XInterfaceMemberTypeDescription]): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBaseType(value: XTypeDescription): Self = this.set("BaseType", value.asInstanceOf[js.Any])
+    def setGetUik(value: () => Uik): Self = StObject.set(x, "getUik", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMembers(value: SafeArray[XInterfaceMemberTypeDescription]): Self = this.set("Members", value.asInstanceOf[js.Any])
+    def setMembers(value: SafeArray[XInterfaceMemberTypeDescription]): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUik(value: Uik): Self = this.set("Uik", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetBaseType(value: () => XTypeDescription): Self = this.set("getBaseType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMembers(value: () => SafeArray[XInterfaceMemberTypeDescription]): Self = this.set("getMembers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUik(value: () => Uik): Self = this.set("getUik", js.Any.fromFunction0(value))
+    def setUik(value: Uik): Self = StObject.set(x, "Uik", value.asInstanceOf[js.Any])
   }
 }

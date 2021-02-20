@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamingConventionOptions extends js.Object {
+trait NamingConventionOptions extends StObject {
   
   var clientPropertyNameToServer: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
   
@@ -20,30 +21,18 @@ object NamingConventionOptions {
   }
   
   @scala.inline
-  implicit class NamingConventionOptionsOps[Self <: NamingConventionOptions] (val x: Self) extends AnyVal {
+  implicit class NamingConventionOptionsMutableBuilder[Self <: NamingConventionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientPropertyNameToServer(value: /* name */ String => String): Self = StObject.set(x, "clientPropertyNameToServer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientPropertyNameToServerUndefined: Self = StObject.set(x, "clientPropertyNameToServer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerPropertyNameToClient(value: /* name */ String => String): Self = StObject.set(x, "serverPropertyNameToClient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClientPropertyNameToServer(value: /* name */ String => String): Self = this.set("clientPropertyNameToServer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteClientPropertyNameToServer: Self = this.set("clientPropertyNameToServer", js.undefined)
-    
-    @scala.inline
-    def setServerPropertyNameToClient(value: /* name */ String => String): Self = this.set("serverPropertyNameToClient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteServerPropertyNameToClient: Self = this.set("serverPropertyNameToClient", js.undefined)
+    def setServerPropertyNameToClientUndefined: Self = StObject.set(x, "serverPropertyNameToClient", js.undefined)
   }
 }

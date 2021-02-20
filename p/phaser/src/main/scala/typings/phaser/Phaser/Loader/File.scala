@@ -7,6 +7,7 @@ import typings.phaser.integer
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You shouldn't create an instance of a File directly, but should extend it with your own class, setting a custom type and processing methods.
   */
 @js.native
-trait File extends js.Object {
+trait File extends StObject {
   
   /**
     * Adds this file to its target cache upon successful loading and processing.
@@ -235,111 +236,99 @@ object File {
   }
   
   @scala.inline
-  implicit class FileOps[Self <: File] (val x: Self) extends AnyVal {
+  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToCache(value: () => Unit): Self = this.set("addToCache", js.Any.fromFunction0(value))
+    def setCache(value: BaseCache | TextureManager): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesLoaded(value: Double): Self = this.set("bytesLoaded", value.asInstanceOf[js.Any])
+    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesTotal(value: Double): Self = this.set("bytesTotal", value.asInstanceOf[js.Any])
+    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: BaseCache | TextureManager): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def setConfig(value: js.Any): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setHasCacheConflict(value: () => Boolean): Self = StObject.set(x, "hasCacheConflict", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasCacheConflict(value: () => Boolean): Self = this.set("hasCacheConflict", js.Any.fromFunction0(value))
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLinkFile(value: File): Self = StObject.set(x, "linkFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkFile(value: File): Self = this.set("linkFile", value.asInstanceOf[js.Any])
+    def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoad(value: () => Unit): Self = this.set("load", js.Any.fromFunction0(value))
+    def setLoader(value: LoaderPlugin): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: LoaderPlugin): Self = this.set("loader", value.asInstanceOf[js.Any])
+    def setMultiFile(value: MultiFile): Self = StObject.set(x, "multiFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiFile(value: MultiFile): Self = this.set("multiFile", value.asInstanceOf[js.Any])
+    def setOnError(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnError(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = this.set("onError", js.Any.fromFunction2(value))
+    def setOnLoad(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnLoad(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = this.set("onLoad", js.Any.fromFunction2(value))
+    def setOnProcess(value: () => Unit): Self = StObject.set(x, "onProcess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnProcess(value: () => Unit): Self = this.set("onProcess", js.Any.fromFunction0(value))
+    def setOnProcessComplete(value: () => Unit): Self = StObject.set(x, "onProcessComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnProcessComplete(value: () => Unit): Self = this.set("onProcessComplete", js.Any.fromFunction0(value))
+    def setOnProcessError(value: () => Unit): Self = StObject.set(x, "onProcessError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnProcessError(value: () => Unit): Self = this.set("onProcessError", js.Any.fromFunction0(value))
+    def setOnProgress(value: ProgressEvent[EventTarget] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnProgress(value: ProgressEvent[EventTarget] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    def setPendingDestroy(value: () => Unit): Self = StObject.set(x, "pendingDestroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPendingDestroy(value: () => Unit): Self = this.set("pendingDestroy", js.Any.fromFunction0(value))
+    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: Double): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setResetXHR(value: () => Unit): Self = StObject.set(x, "resetXHR", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResetXHR(value: () => Unit): Self = this.set("resetXHR", js.Any.fromFunction0(value))
+    def setSetLink(value: File => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLink(value: File => Unit): Self = this.set("setLink", js.Any.fromFunction1(value))
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: integer): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUrl(value: js.Object | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: js.Object | String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setXhrLoader(value: XMLHttpRequest): Self = StObject.set(x, "xhrLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXhrLoader(value: XMLHttpRequest): Self = this.set("xhrLoader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = this.set("xhrSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
   }
 }

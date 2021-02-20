@@ -1,12 +1,13 @@
 package typings.typescript.mod
 
 import typings.typescript.typescriptBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletionEntry extends js.Object {
+trait CompletionEntry extends StObject {
   
   var hasAction: js.UndefOr[`true`] = js.native
   
@@ -44,75 +45,63 @@ object CompletionEntry {
   }
   
   @scala.inline
-  implicit class CompletionEntryOps[Self <: CompletionEntry] (val x: Self) extends AnyVal {
+  implicit class CompletionEntryMutableBuilder[Self <: CompletionEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasAction(value: `true`): Self = StObject.set(x, "hasAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasActionUndefined: Self = StObject.set(x, "hasAction", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertText(value: java.lang.String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ScriptElementKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
     @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsFromUncheckedFile(value: `true`): Self = StObject.set(x, "isFromUncheckedFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortText(value: java.lang.String): Self = this.set("sortText", value.asInstanceOf[js.Any])
+    def setIsFromUncheckedFileUndefined: Self = StObject.set(x, "isFromUncheckedFile", js.undefined)
     
     @scala.inline
-    def setHasAction(value: `true`): Self = this.set("hasAction", value.asInstanceOf[js.Any])
+    def setIsPackageJsonImport(value: `true`): Self = StObject.set(x, "isPackageJsonImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasAction: Self = this.set("hasAction", js.undefined)
+    def setIsPackageJsonImportUndefined: Self = StObject.set(x, "isPackageJsonImport", js.undefined)
     
     @scala.inline
-    def setInsertText(value: java.lang.String): Self = this.set("insertText", value.asInstanceOf[js.Any])
+    def setIsRecommended(value: `true`): Self = StObject.set(x, "isRecommended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    def setIsRecommendedUndefined: Self = StObject.set(x, "isRecommended", js.undefined)
     
     @scala.inline
-    def setIsFromUncheckedFile(value: `true`): Self = this.set("isFromUncheckedFile", value.asInstanceOf[js.Any])
+    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsFromUncheckedFile: Self = this.set("isFromUncheckedFile", js.undefined)
+    def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPackageJsonImport(value: `true`): Self = this.set("isPackageJsonImport", value.asInstanceOf[js.Any])
+    def setKindModifiersUndefined: Self = StObject.set(x, "kindModifiers", js.undefined)
     
     @scala.inline
-    def deleteIsPackageJsonImport: Self = this.set("isPackageJsonImport", js.undefined)
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRecommended(value: `true`): Self = this.set("isRecommended", value.asInstanceOf[js.Any])
+    def setReplacementSpan(value: TextSpan): Self = StObject.set(x, "replacementSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRecommended: Self = this.set("isRecommended", js.undefined)
+    def setReplacementSpanUndefined: Self = StObject.set(x, "replacementSpan", js.undefined)
     
     @scala.inline
-    def setKindModifiers(value: java.lang.String): Self = this.set("kindModifiers", value.asInstanceOf[js.Any])
+    def setSortText(value: java.lang.String): Self = StObject.set(x, "sortText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKindModifiers: Self = this.set("kindModifiers", js.undefined)
+    def setSource(value: java.lang.String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacementSpan(value: TextSpan): Self = this.set("replacementSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacementSpan: Self = this.set("replacementSpan", js.undefined)
-    
-    @scala.inline
-    def setSource(value: java.lang.String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

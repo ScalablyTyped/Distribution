@@ -1,12 +1,13 @@
 package typings.firebase.anon
 
 import typings.firebase.mod.firebase.LogLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Level extends js.Object {
+trait Level extends StObject {
   
   /**
     * Threshhold log level. Only logs at or above this level trigger the `logCallback`
@@ -23,21 +24,9 @@ object Level {
   }
   
   @scala.inline
-  implicit class LevelOps[Self <: Level] (val x: Self) extends AnyVal {
+  implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLevel(value: LogLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

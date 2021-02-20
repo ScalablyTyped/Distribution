@@ -1,11 +1,12 @@
 package typings.reactPlayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   var dailymotion: js.UndefOr[DailyMotionConfig] = js.native
   
@@ -36,78 +37,66 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailymotion(value: DailyMotionConfig): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailymotionUndefined: Self = StObject.set(x, "dailymotion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacebook(value: FacebookConfig): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailymotion(value: DailyMotionConfig): Self = this.set("dailymotion", value.asInstanceOf[js.Any])
+    def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
     
     @scala.inline
-    def deleteDailymotion: Self = this.set("dailymotion", js.undefined)
+    def setFile(value: FileConfig): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebook(value: FacebookConfig): Self = this.set("facebook", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteFacebook: Self = this.set("facebook", js.undefined)
+    def setMixcloud(value: MixcloudConfig): Self = StObject.set(x, "mixcloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: FileConfig): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setMixcloudUndefined: Self = StObject.set(x, "mixcloud", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setSoundcloud(value: SoundCloudConfig): Self = StObject.set(x, "soundcloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixcloud(value: MixcloudConfig): Self = this.set("mixcloud", value.asInstanceOf[js.Any])
+    def setSoundcloudUndefined: Self = StObject.set(x, "soundcloud", js.undefined)
     
     @scala.inline
-    def deleteMixcloud: Self = this.set("mixcloud", js.undefined)
+    def setTwitch(value: TwitchConfig): Self = StObject.set(x, "twitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundcloud(value: SoundCloudConfig): Self = this.set("soundcloud", value.asInstanceOf[js.Any])
+    def setTwitchUndefined: Self = StObject.set(x, "twitch", js.undefined)
     
     @scala.inline
-    def deleteSoundcloud: Self = this.set("soundcloud", js.undefined)
+    def setVidyard(value: VidyardConfig): Self = StObject.set(x, "vidyard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwitch(value: TwitchConfig): Self = this.set("twitch", value.asInstanceOf[js.Any])
+    def setVidyardUndefined: Self = StObject.set(x, "vidyard", js.undefined)
     
     @scala.inline
-    def deleteTwitch: Self = this.set("twitch", js.undefined)
+    def setVimeo(value: VimeoConfig): Self = StObject.set(x, "vimeo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVidyard(value: VidyardConfig): Self = this.set("vidyard", value.asInstanceOf[js.Any])
+    def setVimeoUndefined: Self = StObject.set(x, "vimeo", js.undefined)
     
     @scala.inline
-    def deleteVidyard: Self = this.set("vidyard", js.undefined)
+    def setWistia(value: WistiaConfig): Self = StObject.set(x, "wistia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVimeo(value: VimeoConfig): Self = this.set("vimeo", value.asInstanceOf[js.Any])
+    def setWistiaUndefined: Self = StObject.set(x, "wistia", js.undefined)
     
     @scala.inline
-    def deleteVimeo: Self = this.set("vimeo", js.undefined)
+    def setYoutube(value: YouTubeConfig): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWistia(value: WistiaConfig): Self = this.set("wistia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWistia: Self = this.set("wistia", js.undefined)
-    
-    @scala.inline
-    def setYoutube(value: YouTubeConfig): Self = this.set("youtube", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoutube: Self = this.set("youtube", js.undefined)
+    def setYoutubeUndefined: Self = StObject.set(x, "youtube", js.undefined)
   }
 }

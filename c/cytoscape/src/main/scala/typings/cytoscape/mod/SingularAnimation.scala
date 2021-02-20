@@ -1,11 +1,12 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SingularAnimation extends js.Object {
+trait SingularAnimation extends StObject {
   
   /**
     * Get whether the element is currently being animated.

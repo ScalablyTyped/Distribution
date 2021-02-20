@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindingActor extends js.Object {
+trait FindingActor extends StObject {
   
   /**
     * The domain name of the device that the entity used to perform the action on the affected resource.
@@ -31,36 +32,24 @@ object FindingActor {
   }
   
   @scala.inline
-  implicit class FindingActorOps[Self <: FindingActor] (val x: Self) extends AnyVal {
+  implicit class FindingActorMutableBuilder[Self <: FindingActor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "domainDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainDetailsUndefined: Self = StObject.set(x, "domainDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddressDetails(value: IpAddressDetails): Self = StObject.set(x, "ipAddressDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainDetails(value: DomainDetails): Self = this.set("domainDetails", value.asInstanceOf[js.Any])
+    def setIpAddressDetailsUndefined: Self = StObject.set(x, "ipAddressDetails", js.undefined)
     
     @scala.inline
-    def deleteDomainDetails: Self = this.set("domainDetails", js.undefined)
+    def setUserIdentity(value: UserIdentity): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddressDetails(value: IpAddressDetails): Self = this.set("ipAddressDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddressDetails: Self = this.set("ipAddressDetails", js.undefined)
-    
-    @scala.inline
-    def setUserIdentity(value: UserIdentity): Self = this.set("userIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIdentity: Self = this.set("userIdentity", js.undefined)
+    def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
   }
 }

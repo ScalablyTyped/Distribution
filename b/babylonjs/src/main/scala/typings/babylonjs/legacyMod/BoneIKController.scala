@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.anon.BendAxis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +24,27 @@ class BoneIKController protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "BoneIKController")
-@js.native
-object BoneIKController extends js.Object {
+object BoneIKController {
   
-  var _tmpMats: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "BoneIKController")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _tmpQuat: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "BoneIKController._tmpMats")
+  @js.native
+  def _tmpMats: js.Any = js.native
+  @scala.inline
+  def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
   
-  var _tmpVecs: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "BoneIKController._tmpQuat")
+  @js.native
+  def _tmpQuat: js.Any = js.native
+  @scala.inline
+  def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/Legacy/legacy", "BoneIKController._tmpVecs")
+  @js.native
+  def _tmpVecs: js.Any = js.native
+  @scala.inline
+  def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The store page resources for the enterprise.
   */
 @js.native
-trait SchemaStoreLayoutClustersListResponse extends js.Object {
+trait SchemaStoreLayoutClustersListResponse extends StObject {
   
   /**
     * A store cluster of an enterprise.
@@ -30,33 +31,21 @@ object SchemaStoreLayoutClustersListResponse {
   }
   
   @scala.inline
-  implicit class SchemaStoreLayoutClustersListResponseOps[Self <: SchemaStoreLayoutClustersListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaStoreLayoutClustersListResponseMutableBuilder[Self <: SchemaStoreLayoutClustersListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: js.Array[SchemaStoreCluster]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterVarargs(value: SchemaStoreCluster*): Self = StObject.set(x, "cluster", js.Array(value :_*))
     
     @scala.inline
-    def setClusterVarargs(value: SchemaStoreCluster*): Self = this.set("cluster", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCluster(value: js.Array[SchemaStoreCluster]): Self = this.set("cluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,57 +29,45 @@ object ServiceSpec {
   }
   
   @scala.inline
-  implicit class ServiceSpecOps[Self <: ServiceSpec] (val x: Self) extends AnyVal {
+  implicit class ServiceSpecMutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointSpec(value: EndpointSpec): Self = StObject.set(x, "EndpointSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointSpecUndefined: Self = StObject.set(x, "EndpointSpec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: ServiceMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointSpec(value: EndpointSpec): Self = this.set("EndpointSpec", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
     @scala.inline
-    def deleteEndpointSpec: Self = this.set("EndpointSpec", js.undefined)
+    def setNetworks(value: js.Array[NetworkAttachmentConfig]): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: ServiceMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
+    def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value :_*))
     
     @scala.inline
-    def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = this.set("Networks", js.Array(value :_*))
+    def setRollbackConfig(value: UpdateConfig): Self = StObject.set(x, "RollbackConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworks(value: js.Array[NetworkAttachmentConfig]): Self = this.set("Networks", value.asInstanceOf[js.Any])
+    def setRollbackConfigUndefined: Self = StObject.set(x, "RollbackConfig", js.undefined)
     
     @scala.inline
-    def deleteNetworks: Self = this.set("Networks", js.undefined)
+    def setTaskTemplate(value: TaskSpec): Self = StObject.set(x, "TaskTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackConfig(value: UpdateConfig): Self = this.set("RollbackConfig", value.asInstanceOf[js.Any])
+    def setTaskTemplateUndefined: Self = StObject.set(x, "TaskTemplate", js.undefined)
     
     @scala.inline
-    def deleteRollbackConfig: Self = this.set("RollbackConfig", js.undefined)
+    def setUpdateConfig(value: UpdateConfig): Self = StObject.set(x, "UpdateConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskTemplate(value: TaskSpec): Self = this.set("TaskTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskTemplate: Self = this.set("TaskTemplate", js.undefined)
-    
-    @scala.inline
-    def setUpdateConfig(value: UpdateConfig): Self = this.set("UpdateConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateConfig: Self = this.set("UpdateConfig", js.undefined)
+    def setUpdateConfigUndefined: Self = StObject.set(x, "UpdateConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistogramHistogramOptions extends js.Object {
+trait HistogramHistogramOptions extends StObject {
   
   var bucketSize: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object HistogramHistogramOptions {
   }
   
   @scala.inline
-  implicit class HistogramHistogramOptionsOps[Self <: HistogramHistogramOptions] (val x: Self) extends AnyVal {
+  implicit class HistogramHistogramOptionsMutableBuilder[Self <: HistogramHistogramOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideBucketItems(value: Boolean): Self = StObject.set(x, "hideBucketItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketSize(value: Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    def setHideBucketItemsUndefined: Self = StObject.set(x, "hideBucketItems", js.undefined)
     
     @scala.inline
-    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    def setLastBucketPercentile(value: Double): Self = StObject.set(x, "lastBucketPercentile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideBucketItems(value: Boolean): Self = this.set("hideBucketItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideBucketItems: Self = this.set("hideBucketItems", js.undefined)
-    
-    @scala.inline
-    def setLastBucketPercentile(value: Double): Self = this.set("lastBucketPercentile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastBucketPercentile: Self = this.set("lastBucketPercentile", js.undefined)
+    def setLastBucketPercentileUndefined: Self = StObject.set(x, "lastBucketPercentile", js.undefined)
   }
 }

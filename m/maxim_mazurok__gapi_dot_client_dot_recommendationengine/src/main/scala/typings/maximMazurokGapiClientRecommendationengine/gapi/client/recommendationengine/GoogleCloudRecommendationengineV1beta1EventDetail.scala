@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1EventDetail extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1EventDetail extends StObject {
   
   /**
     * Optional. Extra user event features to include in the recommendation model. For product recommendation, an example of extra user information is traffic_channel, i.e. how user
@@ -49,57 +50,45 @@ object GoogleCloudRecommendationengineV1beta1EventDetail {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1EventDetailOps[Self <: GoogleCloudRecommendationengineV1beta1EventDetail] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1EventDetailMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1EventDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = StObject.set(x, "eventAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventAttributesUndefined: Self = StObject.set(x, "eventAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExperimentIds(value: js.Array[String]): Self = StObject.set(x, "experimentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = this.set("eventAttributes", value.asInstanceOf[js.Any])
+    def setExperimentIdsUndefined: Self = StObject.set(x, "experimentIds", js.undefined)
     
     @scala.inline
-    def deleteEventAttributes: Self = this.set("eventAttributes", js.undefined)
+    def setExperimentIdsVarargs(value: String*): Self = StObject.set(x, "experimentIds", js.Array(value :_*))
     
     @scala.inline
-    def setExperimentIdsVarargs(value: String*): Self = this.set("experimentIds", js.Array(value :_*))
+    def setPageViewId(value: String): Self = StObject.set(x, "pageViewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentIds(value: js.Array[String]): Self = this.set("experimentIds", value.asInstanceOf[js.Any])
+    def setPageViewIdUndefined: Self = StObject.set(x, "pageViewId", js.undefined)
     
     @scala.inline
-    def deleteExperimentIds: Self = this.set("experimentIds", js.undefined)
+    def setRecommendationToken(value: String): Self = StObject.set(x, "recommendationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageViewId(value: String): Self = this.set("pageViewId", value.asInstanceOf[js.Any])
+    def setRecommendationTokenUndefined: Self = StObject.set(x, "recommendationToken", js.undefined)
     
     @scala.inline
-    def deletePageViewId: Self = this.set("pageViewId", js.undefined)
+    def setReferrerUri(value: String): Self = StObject.set(x, "referrerUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationToken(value: String): Self = this.set("recommendationToken", value.asInstanceOf[js.Any])
+    def setReferrerUriUndefined: Self = StObject.set(x, "referrerUri", js.undefined)
     
     @scala.inline
-    def deleteRecommendationToken: Self = this.set("recommendationToken", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferrerUri(value: String): Self = this.set("referrerUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferrerUri: Self = this.set("referrerUri", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

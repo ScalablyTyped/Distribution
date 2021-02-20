@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Container for the dynamic properties of an attribute expression.
   */
 @js.native
-trait IContinuousDataOptions extends js.Object {
+trait IContinuousDataOptions extends StObject {
   
   /**
     * End value.
@@ -39,30 +40,18 @@ object IContinuousDataOptions {
   }
   
   @scala.inline
-  implicit class IContinuousDataOptionsOps[Self <: IContinuousDataOptions] (val x: Self) extends AnyVal {
+  implicit class IContinuousDataOptionsMutableBuilder[Self <: IContinuousDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQMaxNbrTicks(value: Double): Self = StObject.set(x, "qMaxNbrTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQNbrPoints(value: Double): Self = StObject.set(x, "qNbrPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQEnd(value: Double): Self = this.set("qEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMaxNbrTicks(value: Double): Self = this.set("qMaxNbrTicks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQNbrPoints(value: Double): Self = this.set("qNbrPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQStart(value: Double): Self = this.set("qStart", value.asInstanceOf[js.Any])
+    def setQStart(value: Double): Self = StObject.set(x, "qStart", value.asInstanceOf[js.Any])
   }
 }

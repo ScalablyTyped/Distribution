@@ -1,12 +1,13 @@
 package typings.iobroker.mod.global.ioBroker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Callback information for a passed message */
 @js.native
-trait MessageCallbackInfo extends js.Object {
+trait MessageCallbackInfo extends StObject {
   
   // ???
   var ack: Boolean = js.native
@@ -29,30 +30,18 @@ object MessageCallbackInfo {
   }
   
   @scala.inline
-  implicit class MessageCallbackInfoOps[Self <: MessageCallbackInfo] (val x: Self) extends AnyVal {
+  implicit class MessageCallbackInfoMutableBuilder[Self <: MessageCallbackInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: MessagePayload): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAck(value: Boolean): Self = this.set("ack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: MessagePayload): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

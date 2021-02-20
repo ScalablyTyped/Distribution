@@ -1,11 +1,12 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageTiming extends js.Object {
+trait PageTiming extends StObject {
   
   var _startRender: js.UndefOr[Double | Null] = js.native
   
@@ -37,45 +38,33 @@ object PageTiming {
   }
   
   @scala.inline
-  implicit class PageTimingOps[Self <: PageTiming] (val x: Self) extends AnyVal {
+  implicit class PageTimingMutableBuilder[Self <: PageTiming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnContentLoad(value: Double): Self = StObject.set(x, "onContentLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_startRender(value: Double): Self = this.set("_startRender", value.asInstanceOf[js.Any])
+    def setOnContentLoadUndefined: Self = StObject.set(x, "onContentLoad", js.undefined)
     
     @scala.inline
-    def delete_startRender: Self = this.set("_startRender", js.undefined)
+    def setOnLoad(value: Double): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_startRenderNull: Self = this.set("_startRender", null)
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def set_startRender(value: Double): Self = StObject.set(x, "_startRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def set_startRenderNull: Self = StObject.set(x, "_startRender", null)
     
     @scala.inline
-    def setOnContentLoad(value: Double): Self = this.set("onContentLoad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnContentLoad: Self = this.set("onContentLoad", js.undefined)
-    
-    @scala.inline
-    def setOnLoad(value: Double): Self = this.set("onLoad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def set_startRenderUndefined: Self = StObject.set(x, "_startRender", js.undefined)
   }
 }

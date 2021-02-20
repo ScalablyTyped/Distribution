@@ -1,5 +1,6 @@
 package typings.extjs.Ext.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,42 +30,30 @@ object IBelongsToAssociation {
   }
   
   @scala.inline
-  implicit class IBelongsToAssociationOps[Self <: IBelongsToAssociation] (val x: Self) extends AnyVal {
+  implicit class IBelongsToAssociationMutableBuilder[Self <: IBelongsToAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetterName(value: String): Self = StObject.set(x, "getterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignKey(value: String): Self = this.set("foreignKey", value.asInstanceOf[js.Any])
+    def setGetterNameUndefined: Self = StObject.set(x, "getterName", js.undefined)
     
     @scala.inline
-    def deleteForeignKey: Self = this.set("foreignKey", js.undefined)
+    def setSetterName(value: String): Self = StObject.set(x, "setterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetterName(value: String): Self = this.set("getterName", value.asInstanceOf[js.Any])
+    def setSetterNameUndefined: Self = StObject.set(x, "setterName", js.undefined)
     
     @scala.inline
-    def deleteGetterName: Self = this.set("getterName", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetterName(value: String): Self = this.set("setterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetterName: Self = this.set("setterName", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

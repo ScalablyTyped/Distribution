@@ -1,6 +1,5 @@
 package typings.rxjs
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.rxjs.anon.FnCall
 import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
@@ -11,15 +10,14 @@ import typings.rxjs.typesMod.SubscribableOrPromise
 import typings.rxjs.typesMod.TeardownLogic
 import typings.std.PromiseConstructor
 import typings.std.PromiseConstructorLike
-import typings.std.global.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Observable", JSImport.Namespace)
-@js.native
-object internalObservableMod extends js.Object {
+object internalObservableMod {
   
+  @JSImport("rxjs/internal/Observable", "Observable")
   @js.native
   /**
     * @constructor
@@ -134,24 +132,15 @@ object internalObservableMod extends js.Object {
     var source: Observable[_] = js.native
     
     def toPromise[T](): js.Promise[T] = js.native
-    def toPromise[T](
-      PromiseCtor: PromiseConstructor with (Instantiable1[
-          /* executor */ js.Function2[
-            /* resolve */ js.Function1[
-              /* value */ (/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]), 
-              Unit
-            ], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-            Unit
-          ], 
-          Promise[js.Object]
-        ])
-    ): js.Promise[T] = js.native
+    def toPromise[T](PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
     def toPromise[T](PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
   }
   /* static members */
-  @js.native
-  object Observable extends js.Object {
+  object Observable {
+    
+    @JSImport("rxjs/internal/Observable", "Observable")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new cold Observable by calling the Observable constructor
@@ -163,41 +152,57 @@ object internalObservableMod extends js.Object {
       * @nocollapse
       * @deprecated use new Observable() instead
       */
-    var create: js.Function = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.create")
+    @js.native
+    def create: js.Function = js.native
+    @scala.inline
+    def create_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
     
     /**
       * @nocollapse
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
       */
+    @JSImport("rxjs/internal/Observable", "Observable.if")
+    @js.native
+    val `if`: FnCall = js.native
+    /**
+      * @nocollapse
+      * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
+      */
+    @JSImport("rxjs/internal/Observable", "Observable.if")
+    @js.native
     def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.if")
+    @js.native
     def `if`[T, F](
       condition: js.Function0[Boolean],
       trueResult: js.UndefOr[SubscribableOrPromise[T]],
       falseResult: SubscribableOrPromise[F]
     ): Observable[T | F] = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.if")
+    @js.native
     def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-      */
-    @JSName("if")
-    var if_Original: FnCall = js.native
     
     /**
       * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
       */
-    def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
-    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
-      */
-    @JSName("throw")
-    var throw_Original: js.Function2[
+    @JSImport("rxjs/internal/Observable", "Observable.throw")
+    @js.native
+    val `throw`: js.Function2[
         /* error */ js.Any, 
         /* scheduler */ js.UndefOr[SchedulerLike], 
         Observable[scala.Nothing]
       ] = js.native
+    /**
+      * @nocollapse
+      * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
+      */
+    @JSImport("rxjs/internal/Observable", "Observable.throw")
+    @js.native
+    def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
+    @JSImport("rxjs/internal/Observable", "Observable.throw")
+    @js.native
+    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
   }
 }

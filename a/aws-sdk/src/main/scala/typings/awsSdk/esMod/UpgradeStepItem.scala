@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpgradeStepItem extends js.Object {
+trait UpgradeStepItem extends StObject {
   
   /**
     * A list of strings containing detailed information about the errors encountered in a particular step.
@@ -36,45 +37,33 @@ object UpgradeStepItem {
   }
   
   @scala.inline
-  implicit class UpgradeStepItemOps[Self <: UpgradeStepItem] (val x: Self) extends AnyVal {
+  implicit class UpgradeStepItemMutableBuilder[Self <: UpgradeStepItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssues(value: Issues): Self = StObject.set(x, "Issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIssuesUndefined: Self = StObject.set(x, "Issues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "Issues", js.Array(value :_*))
     
     @scala.inline
-    def setIssuesVarargs(value: Issue*): Self = this.set("Issues", js.Array(value :_*))
+    def setProgressPercent(value: Double): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: Issues): Self = this.set("Issues", value.asInstanceOf[js.Any])
+    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
     @scala.inline
-    def deleteIssues: Self = this.set("Issues", js.undefined)
+    def setUpgradeStep(value: UpgradeStep): Self = StObject.set(x, "UpgradeStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressPercent(value: Double): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    def setUpgradeStepStatus(value: UpgradeStatus): Self = StObject.set(x, "UpgradeStepStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    def setUpgradeStepStatusUndefined: Self = StObject.set(x, "UpgradeStepStatus", js.undefined)
     
     @scala.inline
-    def setUpgradeStep(value: UpgradeStep): Self = this.set("UpgradeStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeStep: Self = this.set("UpgradeStep", js.undefined)
-    
-    @scala.inline
-    def setUpgradeStepStatus(value: UpgradeStatus): Self = this.set("UpgradeStepStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeStepStatus: Self = this.set("UpgradeStepStatus", js.undefined)
+    def setUpgradeStepUndefined: Self = StObject.set(x, "UpgradeStep", js.undefined)
   }
 }

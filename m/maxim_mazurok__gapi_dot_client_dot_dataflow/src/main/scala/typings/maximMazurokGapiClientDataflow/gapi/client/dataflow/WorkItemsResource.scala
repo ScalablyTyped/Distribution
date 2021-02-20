@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDataflow.anon.QuotaUser
 import typings.maximMazurokGapiClientDataflow.anon.UploadType
 import typings.maximMazurokGapiClientDataflow.anon.Uploadprotocol
 import typings.maximMazurokGapiClientDataflow.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemsResource extends js.Object {
+trait WorkItemsResource extends StObject {
   
   def lease(request: PrettyPrint, body: LeaseWorkItemRequest): Request[LeaseWorkItemResponse] = js.native
   def lease(request: QuotaUser, body: LeaseWorkItemRequest): Request[LeaseWorkItemResponse] = js.native

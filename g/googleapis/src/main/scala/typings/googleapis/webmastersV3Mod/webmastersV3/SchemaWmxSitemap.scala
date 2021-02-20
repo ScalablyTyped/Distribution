@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains detailed information about a specific URL submitted as a sitemap.
   */
 @js.native
-trait SchemaWmxSitemap extends js.Object {
+trait SchemaWmxSitemap extends StObject {
   
   /**
     * The various content types in the sitemap.
@@ -68,75 +69,63 @@ object SchemaWmxSitemap {
   }
   
   @scala.inline
-  implicit class SchemaWmxSitemapOps[Self <: SchemaWmxSitemap] (val x: Self) extends AnyVal {
+  implicit class SchemaWmxSitemapMutableBuilder[Self <: SchemaWmxSitemap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContents(value: js.Array[SchemaWmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentsVarargs(value: SchemaWmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
     @scala.inline
-    def setContentsVarargs(value: SchemaWmxSitemapContent*): Self = this.set("contents", js.Array(value :_*))
+    def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContents(value: js.Array[SchemaWmxSitemapContent]): Self = this.set("contents", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteContents: Self = this.set("contents", js.undefined)
+    def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: String): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setIsPendingUndefined: Self = StObject.set(x, "isPending", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setIsSitemapsIndex(value: Boolean): Self = StObject.set(x, "isSitemapsIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPending(value: Boolean): Self = this.set("isPending", value.asInstanceOf[js.Any])
+    def setIsSitemapsIndexUndefined: Self = StObject.set(x, "isSitemapsIndex", js.undefined)
     
     @scala.inline
-    def deleteIsPending: Self = this.set("isPending", js.undefined)
+    def setLastDownloaded(value: String): Self = StObject.set(x, "lastDownloaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSitemapsIndex(value: Boolean): Self = this.set("isSitemapsIndex", value.asInstanceOf[js.Any])
+    def setLastDownloadedUndefined: Self = StObject.set(x, "lastDownloaded", js.undefined)
     
     @scala.inline
-    def deleteIsSitemapsIndex: Self = this.set("isSitemapsIndex", js.undefined)
+    def setLastSubmitted(value: String): Self = StObject.set(x, "lastSubmitted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDownloaded(value: String): Self = this.set("lastDownloaded", value.asInstanceOf[js.Any])
+    def setLastSubmittedUndefined: Self = StObject.set(x, "lastSubmitted", js.undefined)
     
     @scala.inline
-    def deleteLastDownloaded: Self = this.set("lastDownloaded", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSubmitted(value: String): Self = this.set("lastSubmitted", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteLastSubmitted: Self = this.set("lastSubmitted", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setWarnings(value: String): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setWarnings(value: String): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }
 }

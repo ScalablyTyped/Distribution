@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,42 +124,30 @@ object XArray {
   }
   
   @scala.inline
-  implicit class XArrayOps[Self <: XArray] (val x: Self) extends AnyVal {
+  implicit class XArrayMutableBuilder[Self <: XArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseType(value: Double): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetArray(value: XNameAccess => SafeArray[_]): Self = StObject.set(x, "getArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBaseType(value: Double): Self = this.set("BaseType", value.asInstanceOf[js.Any])
+    def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[_]): Self = StObject.set(x, "getArrayAtIndex", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBaseTypeName(value: String): Self = this.set("BaseTypeName", value.asInstanceOf[js.Any])
+    def setGetBaseType(value: () => Double): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArray(value: XNameAccess => SafeArray[_]): Self = this.set("getArray", js.Any.fromFunction1(value))
+    def setGetBaseTypeName(value: () => String): Self = StObject.set(x, "getBaseTypeName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArrayAtIndex(value: (Double, Double, XNameAccess) => SafeArray[_]): Self = this.set("getArrayAtIndex", js.Any.fromFunction3(value))
+    def setGetResultSet(value: XNameAccess => XResultSet): Self = StObject.set(x, "getResultSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBaseType(value: () => Double): Self = this.set("getBaseType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetBaseTypeName(value: () => String): Self = this.set("getBaseTypeName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetResultSet(value: XNameAccess => XResultSet): Self = this.set("getResultSet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetResultSetAtIndex(value: (Double, Double, XNameAccess) => XResultSet): Self = this.set("getResultSetAtIndex", js.Any.fromFunction3(value))
+    def setGetResultSetAtIndex(value: (Double, Double, XNameAccess) => XResultSet): Self = StObject.set(x, "getResultSetAtIndex", js.Any.fromFunction3(value))
   }
 }

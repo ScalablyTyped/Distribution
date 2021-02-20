@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI.iOS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ListItem, which is set in the `properties` dictionary of either the <ListDataItem> or
   * <ItemTemplate>.
   */
-@JSGlobal("Titanium.UI.iOS.ListViewCellSelectionStyle")
-@js.native
-object ListViewCellSelectionStyle extends js.Object
+object ListViewCellSelectionStyle

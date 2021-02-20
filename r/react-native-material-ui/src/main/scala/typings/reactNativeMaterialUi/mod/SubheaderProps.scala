@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.mod
 
 import typings.reactNativeMaterialUi.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubheaderProps extends js.Object {
+trait SubheaderProps extends StObject {
   
   var inset: js.UndefOr[Boolean] = js.native
   
@@ -25,39 +26,27 @@ object SubheaderProps {
   }
   
   @scala.inline
-  implicit class SubheaderPropsOps[Self <: SubheaderProps] (val x: Self) extends AnyVal {
+  implicit class SubheaderPropsMutableBuilder[Self <: SubheaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     @scala.inline
-    def setInset(value: Boolean): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setStyle(value: Text): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setLines(value: Double): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLines: Self = this.set("lines", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: Text): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

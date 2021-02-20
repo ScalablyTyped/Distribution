@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the constants that indicates the error severity. */
 @JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorSeverity")
 @js.native
-object UnifiedPosErrorSeverity extends js.Object {
+object UnifiedPosErrorSeverity extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

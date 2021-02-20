@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IModStatFieldExpression extends js.Object {
+trait IModStatFieldExpression extends StObject {
   
   /** Checks whether the value of the field is Approved - same as ModStatId.EqualTo(0) */
   def IsApproved(): IExpression = js.native
@@ -37,33 +38,21 @@ object IModStatFieldExpression {
   }
   
   @scala.inline
-  implicit class IModStatFieldExpressionOps[Self <: IModStatFieldExpression] (val x: Self) extends AnyVal {
+  implicit class IModStatFieldExpressionMutableBuilder[Self <: IModStatFieldExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsApproved(value: () => IExpression): Self = StObject.set(x, "IsApproved", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPending(value: () => IExpression): Self = StObject.set(x, "IsPending", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsRejected(value: () => IExpression): Self = StObject.set(x, "IsRejected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsApproved(value: () => IExpression): Self = this.set("IsApproved", js.Any.fromFunction0(value))
+    def setModStatId(value: () => INumberFieldExpression): Self = StObject.set(x, "ModStatId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsPending(value: () => IExpression): Self = this.set("IsPending", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsRejected(value: () => IExpression): Self = this.set("IsRejected", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setModStatId(value: () => INumberFieldExpression): Self = this.set("ModStatId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValueAsText(value: () => ITextFieldExpression): Self = this.set("ValueAsText", js.Any.fromFunction0(value))
+    def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
   }
 }

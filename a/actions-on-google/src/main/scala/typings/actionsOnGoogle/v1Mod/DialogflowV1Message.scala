@@ -1,6 +1,7 @@
 package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.actionsOnGoogleStrings.google
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,78 +20,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.v1Mod.DialogflowV1MessageLinkOut
   - typings.actionsOnGoogle.v1Mod.DialogflowV1MessageGooglePayload
 */
-trait DialogflowV1Message extends js.Object
+trait DialogflowV1Message extends StObject
 object DialogflowV1Message {
   
   @scala.inline
-  def DialogflowV1MessageText(): DialogflowV1Message = {
+  def DialogflowV1MessageBasicCard(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageBasicCard = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageBasicCard]
+  }
+  
+  @scala.inline
+  def DialogflowV1MessageCard(): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageCard = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageCard]
   }
   
   @scala.inline
-  def DialogflowV1MessageList(platform: google): DialogflowV1Message = {
+  def DialogflowV1MessageCarousel(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageCarousel = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageCarousel]
   }
   
   @scala.inline
-  def DialogflowV1MessageSuggestions(platform: google): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  
-  @scala.inline
-  def DialogflowV1MessageQuickReplies(): DialogflowV1Message = {
+  def DialogflowV1MessageCustomPayload(): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageCustomPayload = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageCustomPayload]
   }
   
   @scala.inline
-  def DialogflowV1MessageCustomPayload(): DialogflowV1Message = {
+  def DialogflowV1MessageGooglePayload(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageGooglePayload = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageGooglePayload]
+  }
+  
+  @scala.inline
+  def DialogflowV1MessageImage(): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageImage = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageImage]
   }
   
   @scala.inline
-  def DialogflowV1MessageBasicCard(platform: google): DialogflowV1Message = {
+  def DialogflowV1MessageLinkOut(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageLinkOut = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageLinkOut]
   }
   
   @scala.inline
-  def DialogflowV1MessageGooglePayload(platform: google): DialogflowV1Message = {
+  def DialogflowV1MessageList(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageList = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageList]
   }
   
   @scala.inline
-  def DialogflowV1MessageCarousel(platform: google): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  
-  @scala.inline
-  def DialogflowV1MessageCard(): DialogflowV1Message = {
+  def DialogflowV1MessageQuickReplies(): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageQuickReplies = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageQuickReplies]
   }
   
   @scala.inline
-  def DialogflowV1MessageSimpleResponse(platform: google): DialogflowV1Message = {
+  def DialogflowV1MessageSimpleResponse(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageSimpleResponse = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageSimpleResponse]
   }
   
   @scala.inline
-  def DialogflowV1MessageImage(): DialogflowV1Message = {
+  def DialogflowV1MessageSuggestions(platform: google): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageSuggestions = {
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageSuggestions]
+  }
+  
+  @scala.inline
+  def DialogflowV1MessageText(): typings.actionsOnGoogle.v1Mod.DialogflowV1MessageText = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DialogflowV1Message]
-  }
-  
-  @scala.inline
-  def DialogflowV1MessageLinkOut(platform: google): DialogflowV1Message = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DialogflowV1Message]
+    __obj.asInstanceOf[typings.actionsOnGoogle.v1Mod.DialogflowV1MessageText]
   }
 }

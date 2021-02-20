@@ -2,6 +2,7 @@ package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -243,9 +244,7 @@ class Color4 ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "Color4")
-@js.native
-object Color4 extends js.Object {
+object Color4 {
   
   /**
     * Check the content of a given array and convert it to an array containing RGBA data
@@ -254,6 +253,8 @@ object Color4 extends js.Object {
     * @param count defines the number of RGBA data to expect
     * @returns an array containing count * 4 values (RGBA)
     */
+  @JSImport("babylonjs/index", "Color4.CheckColors4")
+  @js.native
   def CheckColors4(colors: js.Array[Double], count: Double): js.Array[Double] = js.native
   
   /**
@@ -262,9 +263,15 @@ object Color4 extends js.Object {
     * @param offset defines the offset in the source array
     * @returns a new Color4 object
     */
+  @JSImport("babylonjs/index", "Color4.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathColorMod.Color4 = js.native
+  @JSImport("babylonjs/index", "Color4.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): typings.babylonjs.mathColorMod.Color4 = js.native
   
+  @JSImport("babylonjs/index", "Color4.FromArrayToRef")
+  @js.native
   def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: js.UndefOr[scala.Nothing],
@@ -276,6 +283,8 @@ object Color4 extends js.Object {
     * @param offset defines the offset in the source array
     * @param result defines the target Color4 object
     */
+  @JSImport("babylonjs/index", "Color4.FromArrayToRef")
+  @js.native
   def FromArrayToRef(
     array: DeepImmutable[ArrayLike[Double]],
     offset: Double,
@@ -288,7 +297,11 @@ object Color4 extends js.Object {
     * @param alpha defines the alpha component (1.0 by default)
     * @returns a new Color4 object
     */
+  @JSImport("babylonjs/index", "Color4.FromColor3")
+  @js.native
   def FromColor3(color3: DeepImmutable[typings.babylonjs.mathColorMod.Color3]): typings.babylonjs.mathColorMod.Color4 = js.native
+  @JSImport("babylonjs/index", "Color4.FromColor3")
+  @js.native
   def FromColor3(color3: DeepImmutable[typings.babylonjs.mathColorMod.Color3], alpha: Double): typings.babylonjs.mathColorMod.Color4 = js.native
   
   /**
@@ -296,6 +309,8 @@ object Color4 extends js.Object {
     * @param hex defines a string containing valid hexadecimal values
     * @returns a new Color4 object
     */
+  @JSImport("babylonjs/index", "Color4.FromHexString")
+  @js.native
   def FromHexString(hex: String): typings.babylonjs.mathColorMod.Color4 = js.native
   
   /**
@@ -306,6 +321,8 @@ object Color4 extends js.Object {
     * @param a defines the alpha component to read from (value between 0 and 255)
     * @returns a new Color3 object
     */
+  @JSImport("babylonjs/index", "Color4.FromInts")
+  @js.native
   def FromInts(r: Double, g: Double, b: Double, a: Double): typings.babylonjs.mathColorMod.Color4 = js.native
   
   /**
@@ -315,6 +332,8 @@ object Color4 extends js.Object {
     * @param amount defines the gradient factor
     * @returns a new Color4 object
     */
+  @JSImport("babylonjs/index", "Color4.Lerp")
+  @js.native
   def Lerp(
     left: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
     right: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
@@ -328,6 +347,8 @@ object Color4 extends js.Object {
     * @param amount defines the gradient factor
     * @param result defines the Color4 object where to store data
     */
+  @JSImport("babylonjs/index", "Color4.LerpToRef")
+  @js.native
   def LerpToRef(
     left: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
     right: DeepImmutable[typings.babylonjs.mathColorMod.Color4],

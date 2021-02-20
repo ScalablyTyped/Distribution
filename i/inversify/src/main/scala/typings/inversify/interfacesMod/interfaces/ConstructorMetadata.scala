@@ -1,11 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstructorMetadata extends js.Object {
+trait ConstructorMetadata extends StObject {
   
   var compilerGeneratedMetadata: js.UndefOr[js.Array[js.Function]] = js.native
   
@@ -20,30 +21,18 @@ object ConstructorMetadata {
   }
   
   @scala.inline
-  implicit class ConstructorMetadataOps[Self <: ConstructorMetadata] (val x: Self) extends AnyVal {
+  implicit class ConstructorMetadataMutableBuilder[Self <: ConstructorMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompilerGeneratedMetadata(value: js.Array[js.Function]): Self = StObject.set(x, "compilerGeneratedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompilerGeneratedMetadataUndefined: Self = StObject.set(x, "compilerGeneratedMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompilerGeneratedMetadataVarargs(value: js.Function*): Self = StObject.set(x, "compilerGeneratedMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setUserGeneratedMetadata(value: MetadataMap): Self = this.set("userGeneratedMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompilerGeneratedMetadataVarargs(value: js.Function*): Self = this.set("compilerGeneratedMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setCompilerGeneratedMetadata(value: js.Array[js.Function]): Self = this.set("compilerGeneratedMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompilerGeneratedMetadata: Self = this.set("compilerGeneratedMetadata", js.undefined)
+    def setUserGeneratedMetadata(value: MetadataMap): Self = StObject.set(x, "userGeneratedMetadata", value.asInstanceOf[js.Any])
   }
 }

@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.postProcessRenderPipelineMod.PostProcessRenderPipeline
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/ssaoRenderingPipeline", JSImport.Namespace)
-@js.native
-object ssaoRenderingPipelineMod extends js.Object {
+object ssaoRenderingPipelineMod {
   
+  @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/ssaoRenderingPipeline", "SSAORenderingPipeline")
   @js.native
   class SSAORenderingPipeline protected () extends PostProcessRenderPipeline {
     /**

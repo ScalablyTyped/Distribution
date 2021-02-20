@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
 import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class SpinButton protected ()
   def this(props: ISpinButtonProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "SpinButton")
-@js.native
-object SpinButton extends js.Object {
+object SpinButton {
   
-  var defaultProps: DefaultProps = js.native
+  @JSImport("office-ui-fabric-react", "SpinButton")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "SpinButton.defaultProps")
+  @js.native
+  def defaultProps: DefaultProps = js.native
+  @scala.inline
+  def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

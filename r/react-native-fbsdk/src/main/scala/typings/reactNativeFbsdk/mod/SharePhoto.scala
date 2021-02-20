@@ -1,11 +1,12 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharePhoto extends js.Object {
+trait SharePhoto extends StObject {
   
   /**
     * The user generated caption for the photo.  Note that the 'caption' must
@@ -35,33 +36,21 @@ object SharePhoto {
   }
   
   @scala.inline
-  implicit class SharePhotoOps[Self <: SharePhoto] (val x: Self) extends AnyVal {
+  implicit class SharePhotoMutableBuilder[Self <: SharePhoto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setUserGenerated(value: Boolean): Self = StObject.set(x, "userGenerated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
-    
-    @scala.inline
-    def setUserGenerated(value: Boolean): Self = this.set("userGenerated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserGenerated: Self = this.set("userGenerated", js.undefined)
+    def setUserGeneratedUndefined: Self = StObject.set(x, "userGenerated", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layer extends js.Object {
+trait Layer extends StObject {
   
   var grouping: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Layer {
   }
   
   @scala.inline
-  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrouping(value: String): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouping(value: String): Self = this.set("grouping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrouping: Self = this.set("grouping", js.undefined)
-    
-    @scala.inline
-    def setLayer(value: String): Self = this.set("layer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
   }
 }

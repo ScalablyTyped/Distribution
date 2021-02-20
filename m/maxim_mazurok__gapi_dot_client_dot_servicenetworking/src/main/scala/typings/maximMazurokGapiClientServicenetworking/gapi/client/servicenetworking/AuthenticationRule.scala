@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationRule extends js.Object {
+trait AuthenticationRule extends StObject {
   
   /** If true, the service accepts API keys without any other credential. This flag only applies to HTTP and gRPC requests. */
   var allowWithoutCredential: js.UndefOr[Boolean] = js.native
@@ -28,45 +29,33 @@ object AuthenticationRule {
   }
   
   @scala.inline
-  implicit class AuthenticationRuleOps[Self <: AuthenticationRule] (val x: Self) extends AnyVal {
+  implicit class AuthenticationRuleMutableBuilder[Self <: AuthenticationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowWithoutCredential(value: Boolean): Self = StObject.set(x, "allowWithoutCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowWithoutCredentialUndefined: Self = StObject.set(x, "allowWithoutCredential", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOauth(value: OAuthRequirements): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowWithoutCredential(value: Boolean): Self = this.set("allowWithoutCredential", value.asInstanceOf[js.Any])
+    def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
     
     @scala.inline
-    def deleteAllowWithoutCredential: Self = this.set("allowWithoutCredential", js.undefined)
+    def setRequirements(value: js.Array[AuthRequirement]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth(value: OAuthRequirements): Self = this.set("oauth", value.asInstanceOf[js.Any])
+    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
     @scala.inline
-    def deleteOauth: Self = this.set("oauth", js.undefined)
+    def setRequirementsVarargs(value: AuthRequirement*): Self = StObject.set(x, "requirements", js.Array(value :_*))
     
     @scala.inline
-    def setRequirementsVarargs(value: AuthRequirement*): Self = this.set("requirements", js.Array(value :_*))
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirements(value: js.Array[AuthRequirement]): Self = this.set("requirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequirements: Self = this.set("requirements", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

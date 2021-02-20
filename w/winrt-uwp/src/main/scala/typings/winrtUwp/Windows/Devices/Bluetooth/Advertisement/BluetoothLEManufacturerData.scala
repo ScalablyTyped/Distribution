@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A Bluetooth LE manufacturer-specific data section (one particular type of LE advertisement section) */
 @js.native
-trait BluetoothLEManufacturerData extends js.Object {
+trait BluetoothLEManufacturerData extends StObject {
   
   /** The Bluetooth LE company identifier code as defined by the Bluetooth Special Interest Group (SIG). */
   var companyId: Double = js.native
@@ -24,24 +25,12 @@ object BluetoothLEManufacturerData {
   }
   
   @scala.inline
-  implicit class BluetoothLEManufacturerDataOps[Self <: BluetoothLEManufacturerData] (val x: Self) extends AnyVal {
+  implicit class BluetoothLEManufacturerDataMutableBuilder[Self <: BluetoothLEManufacturerData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyId(value: Double): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompanyId(value: Double): Self = this.set("companyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setData(value: IBuffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

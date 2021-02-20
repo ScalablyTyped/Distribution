@@ -4,6 +4,7 @@ import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IElement
 import typings.extjs.Ext.panel.IPanel
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,72 +59,60 @@ object IPanelProxy {
   }
   
   @scala.inline
-  implicit class IPanelProxyOps[Self <: IPanelProxy] (val x: Self) extends AnyVal {
+  implicit class IPanelProxyMutableBuilder[Self <: IPanelProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGhost(value: () => IPanel): Self = StObject.set(x, "getGhost", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEl(value: () => IElement): Self = this.set("getEl", js.Any.fromFunction0(value))
+    def setGetGhostUndefined: Self = StObject.set(x, "getGhost", js.undefined)
     
     @scala.inline
-    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    def setGetProxy(value: () => IElement): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGhost(value: () => IPanel): Self = this.set("getGhost", js.Any.fromFunction0(value))
+    def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
     @scala.inline
-    def deleteGetGhost: Self = this.set("getGhost", js.undefined)
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetProxy(value: () => IElement): Self = this.set("getProxy", js.Any.fromFunction0(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteGetProxy: Self = this.set("getProxy", js.undefined)
+    def setInsertProxy(value: Boolean): Self = StObject.set(x, "insertProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setInsertProxyUndefined: Self = StObject.set(x, "insertProxy", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setMoveOnDrag(value: Boolean): Self = StObject.set(x, "moveOnDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertProxy(value: Boolean): Self = this.set("insertProxy", value.asInstanceOf[js.Any])
+    def setMoveOnDragUndefined: Self = StObject.set(x, "moveOnDrag", js.undefined)
     
     @scala.inline
-    def deleteInsertProxy: Self = this.set("insertProxy", js.undefined)
+    def setMoveProxy(value: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "moveProxy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMoveOnDrag(value: Boolean): Self = this.set("moveOnDrag", value.asInstanceOf[js.Any])
+    def setMoveProxyUndefined: Self = StObject.set(x, "moveProxy", js.undefined)
     
     @scala.inline
-    def deleteMoveOnDrag: Self = this.set("moveOnDrag", js.undefined)
+    def setPanel(value: IPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveProxy(value: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit): Self = this.set("moveProxy", js.Any.fromFunction2(value))
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
     @scala.inline
-    def deleteMoveProxy: Self = this.set("moveProxy", js.undefined)
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPanel(value: IPanel): Self = this.set("panel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

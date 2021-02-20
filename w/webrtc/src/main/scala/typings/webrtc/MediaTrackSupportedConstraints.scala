@@ -1,11 +1,12 @@
 package typings.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaTrackSupportedConstraints extends js.Object {
+trait MediaTrackSupportedConstraints extends StObject {
   
   var aspectRatio: js.UndefOr[Boolean] = js.native
   
@@ -40,90 +41,78 @@ object MediaTrackSupportedConstraints {
   }
   
   @scala.inline
-  implicit class MediaTrackSupportedConstraintsOps[Self <: MediaTrackSupportedConstraints] (val x: Self) extends AnyVal {
+  implicit class MediaTrackSupportedConstraintsMutableBuilder[Self <: MediaTrackSupportedConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: Boolean): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: Boolean): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: Boolean): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setEchoCancellation(value: Boolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: Boolean): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setEchoCancellationUndefined: Self = StObject.set(x, "echoCancellation", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setFacingMode(value: Boolean): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEchoCancellation(value: Boolean): Self = this.set("echoCancellation", value.asInstanceOf[js.Any])
+    def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
     @scala.inline
-    def deleteEchoCancellation: Self = this.set("echoCancellation", js.undefined)
+    def setFrameRate(value: Boolean): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacingMode(value: Boolean): Self = this.set("facingMode", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def deleteFacingMode: Self = this.set("facingMode", js.undefined)
+    def setGroupId(value: Boolean): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Boolean): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: Boolean): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setLatency(value: Boolean): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setSampleRate(value: Boolean): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Boolean): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     
     @scala.inline
-    def deleteLatency: Self = this.set("latency", js.undefined)
+    def setSampleSize(value: Boolean): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleRate(value: Boolean): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
+    def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
     
     @scala.inline
-    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+    def setVolume(value: Boolean): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleSize(value: Boolean): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
     @scala.inline
-    def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
+    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolume(value: Boolean): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

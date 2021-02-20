@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,138 +176,126 @@ object IgRating {
   }
   
   @scala.inline
-  implicit class IgRatingOps[Self <: IgRating] (val x: Self) extends AnyVal {
+  implicit class IgRatingMutableBuilder[Self <: IgRating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssVotes(value: js.Any): Self = StObject.set(x, "cssVotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssVotesUndefined: Self = StObject.set(x, "cssVotes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssVotes(value: js.Any): Self = this.set("cssVotes", value.asInstanceOf[js.Any])
+    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     @scala.inline
-    def deleteCssVotes: Self = this.set("cssVotes", js.undefined)
+    def setHoverChange(value: (/* event */ Event, /* ui */ HoverChangeEventUIParam) => Unit): Self = StObject.set(x, "hoverChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setHoverChangeUndefined: Self = StObject.set(x, "hoverChange", js.undefined)
     
     @scala.inline
-    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverChange(value: (/* event */ Event, /* ui */ HoverChangeEventUIParam) => Unit): Self = this.set("hoverChange", js.Any.fromFunction2(value))
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteHoverChange: Self = this.set("hoverChange", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPrecisionZeroVote(value: Double): Self = StObject.set(x, "precisionZeroVote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: String): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setPrecisionZeroVoteUndefined: Self = StObject.set(x, "precisionZeroVote", js.undefined)
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecisionZeroVote(value: Double): Self = this.set("precisionZeroVote", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deletePrecisionZeroVote: Self = this.set("precisionZeroVote", js.undefined)
+    def setRoundedDecimalPlaces(value: Double): Self = StObject.set(x, "roundedDecimalPlaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRoundedDecimalPlacesUndefined: Self = StObject.set(x, "roundedDecimalPlaces", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setSwapDirection(value: Boolean): Self = StObject.set(x, "swapDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundedDecimalPlaces(value: Double): Self = this.set("roundedDecimalPlaces", value.asInstanceOf[js.Any])
+    def setSwapDirectionUndefined: Self = StObject.set(x, "swapDirection", js.undefined)
     
     @scala.inline
-    def deleteRoundedDecimalPlaces: Self = this.set("roundedDecimalPlaces", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwapDirection(value: Boolean): Self = this.set("swapDirection", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSwapDirection: Self = this.set("swapDirection", js.undefined)
+    def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidatorOptions(value: js.Any): Self = this.set("validatorOptions", value.asInstanceOf[js.Any])
+    def setValueAsPercent(value: Boolean): Self = StObject.set(x, "valueAsPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidatorOptions: Self = this.set("validatorOptions", js.undefined)
+    def setValueAsPercentUndefined: Self = StObject.set(x, "valueAsPercent", js.undefined)
     
     @scala.inline
-    def setValue(value: Double | String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueChange(value: (/* event */ Event, /* ui */ ValueChangeEventUIParam) => Unit): Self = StObject.set(x, "valueChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueChangeUndefined: Self = StObject.set(x, "valueChange", js.undefined)
     
     @scala.inline
-    def setValueAsPercent(value: Boolean): Self = this.set("valueAsPercent", value.asInstanceOf[js.Any])
+    def setValueHover(value: Double | String): Self = StObject.set(x, "valueHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueAsPercent: Self = this.set("valueAsPercent", js.undefined)
+    def setValueHoverUndefined: Self = StObject.set(x, "valueHover", js.undefined)
     
     @scala.inline
-    def setValueChange(value: (/* event */ Event, /* ui */ ValueChangeEventUIParam) => Unit): Self = this.set("valueChange", js.Any.fromFunction2(value))
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteValueChange: Self = this.set("valueChange", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueHover(value: Double | String): Self = this.set("valueHover", value.asInstanceOf[js.Any])
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     
     @scala.inline
-    def deleteValueHover: Self = this.set("valueHover", js.undefined)
+    def setVoteCount(value: Double): Self = StObject.set(x, "voteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    def setVoteCountUndefined: Self = StObject.set(x, "voteCount", js.undefined)
     
     @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVoteHeight(value: Double): Self = StObject.set(x, "voteHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoteCount(value: Double): Self = this.set("voteCount", value.asInstanceOf[js.Any])
+    def setVoteHeightUndefined: Self = StObject.set(x, "voteHeight", js.undefined)
     
     @scala.inline
-    def deleteVoteCount: Self = this.set("voteCount", js.undefined)
+    def setVoteWidth(value: Double): Self = StObject.set(x, "voteWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoteHeight(value: Double): Self = this.set("voteHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoteHeight: Self = this.set("voteHeight", js.undefined)
-    
-    @scala.inline
-    def setVoteWidth(value: Double): Self = this.set("voteWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoteWidth: Self = this.set("voteWidth", js.undefined)
+    def setVoteWidthUndefined: Self = StObject.set(x, "voteWidth", js.undefined)
   }
 }

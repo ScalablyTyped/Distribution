@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItemOptionValue")
 @js.native
-class CatalogItemOptionValue () extends js.Object {
+class CatalogItemOptionValue () extends StObject {
   
   /**
     * The HTML-supported hex color for the item option (e.g., "#ff8d4e85").

@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpecialCellType extends js.Object
+sealed trait SpecialCellType extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SpecialCellType")
 @js.native
-object SpecialCellType extends js.Object {
+object SpecialCellType extends StObject {
   
   /**
     * Cells with no content.

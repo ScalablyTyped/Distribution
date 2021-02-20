@@ -6,14 +6,14 @@ import typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureState
 import typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureStateQuery
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/FeatureManagementApi", JSImport.Namespace)
-@js.native
-object featureManagementApiMod extends js.Object {
+object featureManagementApiMod {
   
+  @JSImport("vso-node-api/FeatureManagementApi", "FeatureManagementApi")
   @js.native
   class FeatureManagementApi protected () extends IFeatureManagementApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()

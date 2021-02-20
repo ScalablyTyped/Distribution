@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "JsonMetadataClass")
 @js.native
-class JsonMetadataClass protected () extends js.Object {
+class JsonMetadataClass protected () extends StObject {
   def this(name: String, properties: js.Array[_]) = this()
   def this(name: String, properties: js.Array[_], creator: js.Function1[/* json */ js.UndefOr[js.Any], _]) = this()
   def this(name: String, properties: js.Array[_], creator: js.UndefOr[scala.Nothing], parentName: String) = this()
@@ -31,11 +32,21 @@ class JsonMetadataClass protected () extends js.Object {
   var properties: js.Array[JsonObjectProperty] = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "JsonMetadataClass")
-@js.native
-object JsonMetadataClass extends js.Object {
+object JsonMetadataClass {
   
-  var requiredSymbol: String = js.native
+  @JSImport("survey-knockout", "JsonMetadataClass")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var typeSymbol: String = js.native
+  @JSImport("survey-knockout", "JsonMetadataClass.requiredSymbol")
+  @js.native
+  def requiredSymbol: String = js.native
+  @scala.inline
+  def requiredSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requiredSymbol")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "JsonMetadataClass.typeSymbol")
+  @js.native
+  def typeSymbol: String = js.native
+  @scala.inline
+  def typeSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeSymbol")(x.asInstanceOf[js.Any])
 }

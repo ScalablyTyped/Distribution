@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateServiceRoleToAccountResponse extends js.Object {
+trait AssociateServiceRoleToAccountResponse extends StObject {
   
   /**
     * The time when the service role was associated with the account.
@@ -21,24 +22,12 @@ object AssociateServiceRoleToAccountResponse {
   }
   
   @scala.inline
-  implicit class AssociateServiceRoleToAccountResponseOps[Self <: AssociateServiceRoleToAccountResponse] (val x: Self) extends AnyVal {
+  implicit class AssociateServiceRoleToAccountResponseMutableBuilder[Self <: AssociateServiceRoleToAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssociatedAt(value: string): Self = this.set("AssociatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociatedAt: Self = this.set("AssociatedAt", js.undefined)
+    def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
   }
 }

@@ -1,19 +1,18 @@
 package typings.cassandraDriver
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver/lib/geometry", JSImport.Namespace)
-@js.native
-object geometryMod extends js.Object {
+object geometryMod {
   
-  @js.native
-  object geometry extends js.Object {
+  object geometry {
     
+    @JSImport("cassandra-driver/lib/geometry", "geometry.LineString")
     @js.native
-    class LineString protected () extends js.Object {
+    class LineString protected () extends StObject {
       def this(args: Point*) = this()
       
       def equals(other: LineString): Boolean = js.native
@@ -22,17 +21,22 @@ object geometryMod extends js.Object {
       
       def toJSON(): String = js.native
     }
-    /* static members */
-    @js.native
-    object LineString extends js.Object {
+    object LineString {
       
+      /* static member */
+      @JSImport("cassandra-driver/lib/geometry", "geometry.LineString.fromBuffer")
+      @js.native
       def fromBuffer(buffer: Buffer): LineString = js.native
       
+      /* static member */
+      @JSImport("cassandra-driver/lib/geometry", "geometry.LineString.fromString")
+      @js.native
       def fromString(textValue: String): LineString = js.native
     }
     
+    @JSImport("cassandra-driver/lib/geometry", "geometry.Point")
     @js.native
-    class Point protected () extends js.Object {
+    class Point protected () extends StObject {
       def this(x: Double, y: Double) = this()
       
       def equals(other: Point): Boolean = js.native
@@ -41,17 +45,22 @@ object geometryMod extends js.Object {
       
       def toJSON(): String = js.native
     }
-    /* static members */
-    @js.native
-    object Point extends js.Object {
+    object Point {
       
+      /* static member */
+      @JSImport("cassandra-driver/lib/geometry", "geometry.Point.fromBuffer")
+      @js.native
       def fromBuffer(buffer: Buffer): Point = js.native
       
+      /* static member */
+      @JSImport("cassandra-driver/lib/geometry", "geometry.Point.fromString")
+      @js.native
       def fromString(textValue: String): Point = js.native
     }
     
+    @JSImport("cassandra-driver/lib/geometry", "geometry.Polygon")
     @js.native
-    class Polygon protected () extends js.Object {
+    class Polygon protected () extends StObject {
       def this(args: Point*) = this()
       
       def equals(other: Polygon): Boolean = js.native
@@ -60,12 +69,16 @@ object geometryMod extends js.Object {
       
       def toJSON(): String = js.native
     }
-    /* static members */
-    @js.native
-    object Polygon extends js.Object {
+    object Polygon {
       
+      /* static member */
+      @JSImport("cassandra-driver/lib/geometry", "geometry.Polygon.fromBuffer")
+      @js.native
       def fromBuffer(buffer: Buffer): Polygon = js.native
       
+      /* static member */
+      @JSImport("cassandra-driver/lib/geometry", "geometry.Polygon.fromString")
+      @js.native
       def fromString(textValue: String): Polygon = js.native
     }
   }

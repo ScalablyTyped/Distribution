@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentConfigurationStatus extends js.Object {
+trait AgentConfigurationStatus extends StObject {
   
   /**
     * The agent/connector ID.
@@ -31,36 +32,24 @@ object AgentConfigurationStatus {
   }
   
   @scala.inline
-  implicit class AgentConfigurationStatusOps[Self <: AgentConfigurationStatus] (val x: Self) extends AnyVal {
+  implicit class AgentConfigurationStatusMutableBuilder[Self <: AgentConfigurationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentId(value: String): Self = this.set("agentId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAgentId: Self = this.set("agentId", js.undefined)
+    def setOperationSucceeded(value: Boolean): Self = StObject.set(x, "operationSucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setOperationSucceeded(value: Boolean): Self = this.set("operationSucceeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationSucceeded: Self = this.set("operationSucceeded", js.undefined)
+    def setOperationSucceededUndefined: Self = StObject.set(x, "operationSucceeded", js.undefined)
   }
 }

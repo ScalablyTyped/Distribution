@@ -3,6 +3,7 @@ package typings.pulumiCloud.serviceMod
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.pulumiPulumi.resourceMod.ResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +16,14 @@ trait ServiceConstructor
   * @param name The unique name of the service.
   * @param opts A bag of options that controls how this resource behaves.
   */
-Instantiable2[/* name */ String, /* args */ ServiceArguments, Service]
-     with Instantiable3[/* name */ String, /* args */ ServiceArguments, /* opts */ ResourceOptions, Service]
+Instantiable2[
+      /* name */ String, 
+      /* args */ ServiceArguments, 
+      typings.pulumiCloud.serviceMod.Service
+    ]
+     with Instantiable3[
+      /* name */ String, 
+      /* args */ ServiceArguments, 
+      /* opts */ ResourceOptions, 
+      typings.pulumiCloud.serviceMod.Service
+    ]

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trigger extends js.Object {
+trait Trigger extends StObject {
   
   /** Output only. The creation time. */
   var createTime: js.UndefOr[String] = js.native
@@ -52,69 +53,57 @@ object Trigger {
   }
   
   @scala.inline
-  implicit class TriggerOps[Self <: Trigger] (val x: Self) extends AnyVal {
+  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: Destination): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setMatchingCriteria(value: js.Array[MatchingCriteria]): Self = StObject.set(x, "matchingCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setMatchingCriteriaUndefined: Self = StObject.set(x, "matchingCriteria", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setMatchingCriteriaVarargs(value: MatchingCriteria*): Self = StObject.set(x, "matchingCriteria", js.Array(value :_*))
     
     @scala.inline
-    def setMatchingCriteriaVarargs(value: MatchingCriteria*): Self = this.set("matchingCriteria", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingCriteria(value: js.Array[MatchingCriteria]): Self = this.set("matchingCriteria", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMatchingCriteria: Self = this.set("matchingCriteria", js.undefined)
+    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport(value: Transport): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

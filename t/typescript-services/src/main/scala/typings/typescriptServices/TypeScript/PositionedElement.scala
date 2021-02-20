@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionedElement extends js.Object {
+trait PositionedElement extends StObject {
   
   var _element: js.Any = js.native
   
@@ -83,84 +84,72 @@ object PositionedElement {
   }
   
   @scala.inline
-  implicit class PositionedElementOps[Self <: PositionedElement] (val x: Self) extends AnyVal {
+  implicit class PositionedElementMutableBuilder[Self <: PositionedElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildAt(value: Double => PositionedElement): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildCount(value: () => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildEnd(value: ISyntaxElement => Double): Self = StObject.set(x, "childEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_element(value: js.Any): Self = this.set("_element", value.asInstanceOf[js.Any])
+    def setChildEndAt(value: Double => Double): Self = StObject.set(x, "childEndAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_fullStart(value: js.Any): Self = this.set("_fullStart", value.asInstanceOf[js.Any])
+    def setChildIndex(value: ISyntaxElement => Double): Self = StObject.set(x, "childIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_parent(value: js.Any): Self = this.set("_parent", value.asInstanceOf[js.Any])
+    def setChildStart(value: ISyntaxElement => Double): Self = StObject.set(x, "childStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildAt(value: Double => PositionedElement): Self = this.set("childAt", js.Any.fromFunction1(value))
+    def setChildStartAt(value: Double => Double): Self = StObject.set(x, "childStartAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildCount(value: () => Double): Self = this.set("childCount", js.Any.fromFunction0(value))
+    def setContainingNode(value: () => PositionedNode): Self = StObject.set(x, "containingNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildEnd(value: ISyntaxElement => Double): Self = this.set("childEnd", js.Any.fromFunction1(value))
+    def setElement(value: () => ISyntaxElement): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildEndAt(value: Double => Double): Self = this.set("childEndAt", js.Any.fromFunction1(value))
+    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildIndex(value: ISyntaxElement => Double): Self = this.set("childIndex", js.Any.fromFunction1(value))
+    def setFullEnd(value: () => Double): Self = StObject.set(x, "fullEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildStart(value: ISyntaxElement => Double): Self = this.set("childStart", js.Any.fromFunction1(value))
+    def setFullStart(value: () => Double): Self = StObject.set(x, "fullStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChildStartAt(value: Double => Double): Self = this.set("childStartAt", js.Any.fromFunction1(value))
+    def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContainingNode(value: () => PositionedNode): Self = this.set("containingNode", js.Any.fromFunction0(value))
+    def setGetPositionedChild(value: ISyntaxElement => PositionedElement): Self = StObject.set(x, "getPositionedChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElement(value: () => ISyntaxElement): Self = this.set("element", js.Any.fromFunction0(value))
+    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnd(value: () => Double): Self = this.set("end", js.Any.fromFunction0(value))
+    def setParent(value: () => PositionedElement): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullEnd(value: () => Double): Self = this.set("fullEnd", js.Any.fromFunction0(value))
+    def setParentElement(value: () => ISyntaxElement): Self = StObject.set(x, "parentElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullStart(value: () => Double): Self = this.set("fullStart", js.Any.fromFunction0(value))
+    def setRoot(value: () => PositionedNode): Self = StObject.set(x, "root", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullWidth(value: () => Double): Self = this.set("fullWidth", js.Any.fromFunction0(value))
+    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPositionedChild(value: ISyntaxElement => PositionedElement): Self = this.set("getPositionedChild", js.Any.fromFunction1(value))
+    def set_element(value: js.Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: () => SyntaxKind): Self = this.set("kind", js.Any.fromFunction0(value))
+    def set_fullStart(value: js.Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: () => PositionedElement): Self = this.set("parent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setParentElement(value: () => ISyntaxElement): Self = this.set("parentElement", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRoot(value: () => PositionedNode): Self = this.set("root", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => Double): Self = this.set("start", js.Any.fromFunction0(value))
+    def set_parent(value: js.Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
   }
 }

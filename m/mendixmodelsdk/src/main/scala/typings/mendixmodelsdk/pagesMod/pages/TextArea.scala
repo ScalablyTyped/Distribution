@@ -12,6 +12,7 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,16 +47,20 @@ class TextArea protected () extends TextWidget {
   def textTooLongMessage: Text = js.native
   def textTooLongMessage_=(newValue: Text): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea")
-@js.native
-object TextArea extends js.Object {
+object TextArea {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new TextArea instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.create")
+  @js.native
   def create(model: IModel): TextArea = js.native
   
   /**
@@ -66,6 +71,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): TextArea = js.native
   
   /**
@@ -76,6 +84,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): TextArea = js.native
   
   /**
@@ -86,6 +97,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): TextArea = js.native
   
   /**
@@ -96,6 +110,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): TextArea = js.native
   
   /**
@@ -106,6 +123,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): TextArea = js.native
   
   /**
@@ -116,6 +136,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): TextArea = js.native
   
   /**
@@ -126,6 +149,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): TextArea = js.native
   
   /**
@@ -136,6 +162,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): TextArea = js.native
   
   /**
@@ -146,6 +175,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): TextArea = js.native
   
   /**
@@ -156,6 +188,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): TextArea = js.native
   
   /**
@@ -166,6 +201,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): TextArea = js.native
   
   /**
@@ -176,6 +214,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): TextArea = js.native
   
   /**
@@ -186,6 +227,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): TextArea = js.native
   
   /**
@@ -196,6 +240,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): TextArea = js.native
   
   /**
@@ -206,6 +253,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TextArea = js.native
   
   /**
@@ -216,6 +266,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TextArea = js.native
   
   /**
@@ -226,6 +279,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TextArea = js.native
   
   /**
@@ -236,6 +292,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TextArea = js.native
   
   /**
@@ -246,6 +305,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): TextArea = js.native
   
   /**
@@ -256,6 +318,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): TextArea = js.native
   
   /**
@@ -266,6 +331,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): TextArea = js.native
   
   /**
@@ -276,6 +344,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TextArea = js.native
   
   /**
@@ -286,6 +357,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): TextArea = js.native
   
   /**
@@ -296,6 +370,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): TextArea = js.native
   
   /**
@@ -306,6 +383,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TextArea = js.native
   
   /**
@@ -316,6 +396,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TextArea = js.native
   
   /**
@@ -326,6 +409,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TextArea = js.native
   
   /**
@@ -336,6 +422,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TextArea = js.native
   
   /**
@@ -346,6 +435,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TextArea = js.native
   
   /**
@@ -356,6 +448,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): TextArea = js.native
   
   /**
@@ -366,6 +461,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): TextArea = js.native
   
   /**
@@ -376,6 +474,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): TextArea = js.native
   
   /**
@@ -386,6 +487,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): TextArea = js.native
   
   /**
@@ -396,6 +500,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): TextArea = js.native
   
   /**
@@ -406,6 +513,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TextArea = js.native
   
   /**
@@ -416,6 +526,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TextArea = js.native
   
   /**
@@ -426,6 +539,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): TextArea = js.native
   
   /**
@@ -436,6 +552,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): TextArea = js.native
   
   /**
@@ -446,6 +565,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): TextArea = js.native
   
   /**
@@ -456,6 +578,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): TextArea = js.native
   
   /**
@@ -466,6 +591,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): TextArea = js.native
   
   /**
@@ -476,6 +604,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): TextArea = js.native
   
   /**
@@ -486,6 +617,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): TextArea = js.native
   
   /**
@@ -496,6 +630,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): TextArea = js.native
   
   /**
@@ -506,6 +643,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): TextArea = js.native
   
   /**
@@ -516,6 +656,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): TextArea = js.native
   
   /**
@@ -526,6 +669,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TextArea = js.native
   
   /**
@@ -536,6 +682,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TextArea = js.native
   
   /**
@@ -546,6 +695,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): TextArea = js.native
   
   /**
@@ -556,6 +708,9 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TextArea = js.native
   
   /**
@@ -566,9 +721,22 @@ object TextArea extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): TextArea = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

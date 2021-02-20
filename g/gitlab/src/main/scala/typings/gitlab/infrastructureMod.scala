@@ -10,77 +10,152 @@ import typings.gitlab.requestHelperMod.PostResponse
 import typings.gitlab.requestHelperMod.PutResponse
 import typings.gitlab.utilsMod.Bundle
 import typings.gitlab.utilsMod.Constructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/infrastructure", JSImport.Namespace)
-@js.native
-object infrastructureMod extends js.Object {
+object infrastructureMod {
   
-  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = js.native
-  
+  @JSImport("gitlab/dist/types/core/infrastructure", "BaseService")
   @js.native
   class BaseService ()
     extends typings.gitlab.baseServiceMod.BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
   }
   
-  @js.native
-  object RequestHelper extends js.Object {
+  object RequestHelper {
     
-    def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[DelResponse] = js.native
-    def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[DelResponse] = js.native
-    @JSName("del")
-    var del_Original: js.Function3[
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.del")
+    @js.native
+    def del: js.Function3[
         /* service */ typings.gitlab.baseServiceMod.BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[DelResponse]
       ] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.del")
+    @js.native
+    def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[DelResponse] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.del")
+    @js.native
+    def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[DelResponse] = js.native
+    @scala.inline
+    def del_=(
+      x: js.Function3[
+          /* service */ typings.gitlab.baseServiceMod.BaseService, 
+          /* endpoint */ String, 
+          /* options */ js.UndefOr[BaseRequestOptions], 
+          js.Promise[DelResponse]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("del")(x.asInstanceOf[js.Any])
     
-    def get(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[GetResponse] = js.native
-    def get(
-      service: typings.gitlab.baseServiceMod.BaseService,
-      endpoint: String,
-      options: PaginatedRequestOptions
-    ): js.Promise[GetResponse] = js.native
-    @JSName("get")
-    var get_Original: js.Function3[
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.get")
+    @js.native
+    def get: js.Function3[
         /* service */ typings.gitlab.baseServiceMod.BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[PaginatedRequestOptions], 
         js.Promise[GetResponse]
       ] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.get")
+    @js.native
+    def get(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[GetResponse] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.get")
+    @js.native
+    def get(
+      service: typings.gitlab.baseServiceMod.BaseService,
+      endpoint: String,
+      options: PaginatedRequestOptions
+    ): js.Promise[GetResponse] = js.native
+    @scala.inline
+    def get_=(
+      x: js.Function3[
+          /* service */ typings.gitlab.baseServiceMod.BaseService, 
+          /* endpoint */ String, 
+          /* options */ js.UndefOr[PaginatedRequestOptions], 
+          js.Promise[GetResponse]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
     
-    def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PostResponse] = js.native
-    def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PostResponse] = js.native
-    @JSName("post")
-    var post_Original: js.Function3[
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.post")
+    @js.native
+    def post: js.Function3[
         /* service */ typings.gitlab.baseServiceMod.BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[PostResponse]
       ] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.post")
+    @js.native
+    def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PostResponse] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.post")
+    @js.native
+    def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PostResponse] = js.native
+    @scala.inline
+    def post_=(
+      x: js.Function3[
+          /* service */ typings.gitlab.baseServiceMod.BaseService, 
+          /* endpoint */ String, 
+          /* options */ js.UndefOr[BaseRequestOptions], 
+          js.Promise[PostResponse]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("post")(x.asInstanceOf[js.Any])
     
-    def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PutResponse] = js.native
-    def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PutResponse] = js.native
-    @JSName("put")
-    var put_Original: js.Function3[
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.put")
+    @js.native
+    def put: js.Function3[
         /* service */ typings.gitlab.baseServiceMod.BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[PutResponse]
       ] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.put")
+    @js.native
+    def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PutResponse] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.put")
+    @js.native
+    def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PutResponse] = js.native
+    @scala.inline
+    def put_=(
+      x: js.Function3[
+          /* service */ typings.gitlab.baseServiceMod.BaseService, 
+          /* endpoint */ String, 
+          /* options */ js.UndefOr[BaseRequestOptions], 
+          js.Promise[PutResponse]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("put")(x.asInstanceOf[js.Any])
     
-    def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Any = js.native
-    def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Any = js.native
-    @JSName("stream")
-    var stream_Original: js.Function3[
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.stream")
+    @js.native
+    def stream: js.Function3[
         /* service */ typings.gitlab.baseServiceMod.BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[BaseRequestOptions], 
-        _
+        js.Any
       ] = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.stream")
+    @js.native
+    def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Any = js.native
+    @JSImport("gitlab/dist/types/core/infrastructure", "RequestHelper.stream")
+    @js.native
+    def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Any = js.native
+    @scala.inline
+    def stream_=(
+      x: js.Function3[
+          /* service */ typings.gitlab.baseServiceMod.BaseService, 
+          /* endpoint */ String, 
+          /* options */ js.UndefOr[BaseRequestOptions], 
+          js.Any
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("gitlab/dist/types/core/infrastructure", "bundler")
+  @js.native
+  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.extjs.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,56 +59,44 @@ object ILruCache {
   }
   
   @scala.inline
-  implicit class ILruCacheOps[Self <: ILruCache] (val x: Self) extends AnyVal {
+  implicit class ILruCacheMutableBuilder[Self <: ILruCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone_(value: () => IHashMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = this.set("clear", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
-    
-    @scala.inline
-    def setClone(value: () => IHashMap): Self = this.set("clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
     def setEach(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* reverse */ js.UndefOr[Boolean]) => ILruCache
-    ): Self = this.set("each", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "each", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def setGet(value: /* key */ js.UndefOr[js.Any] => _): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGet(value: /* key */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def setPrune(value: () => Unit): Self = this.set("prune", js.Any.fromFunction0(value))
+    def setPrune(value: () => Unit): Self = StObject.set(x, "prune", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePrune: Self = this.set("prune", js.undefined)
+    def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.redisInfo.mod
 
 import typings.redisInfo.redisInfoStrings.slave
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseReplicationReplicaInfo extends js.Object {
+trait BaseReplicationReplicaInfo extends StObject {
   
   var connected_slaves: String = js.native
   
@@ -45,45 +46,33 @@ object BaseReplicationReplicaInfo {
   }
   
   @scala.inline
-  implicit class BaseReplicationReplicaInfoOps[Self <: BaseReplicationReplicaInfo] (val x: Self) extends AnyVal {
+  implicit class BaseReplicationReplicaInfoMutableBuilder[Self <: BaseReplicationReplicaInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaster_host(value: String): Self = StObject.set(x, "master_host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaster_last_io_seconds_ago(value: String): Self = StObject.set(x, "master_last_io_seconds_ago", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected_slaves(value: String): Self = this.set("connected_slaves", value.asInstanceOf[js.Any])
+    def setMaster_port(value: String): Self = StObject.set(x, "master_port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_host(value: String): Self = this.set("master_host", value.asInstanceOf[js.Any])
+    def setMin_slaves_good_slaves(value: String): Self = StObject.set(x, "min_slaves_good_slaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_last_io_seconds_ago(value: String): Self = this.set("master_last_io_seconds_ago", value.asInstanceOf[js.Any])
+    def setRole(value: slave): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster_port(value: String): Self = this.set("master_port", value.asInstanceOf[js.Any])
+    def setSlave_priority(value: String): Self = StObject.set(x, "slave_priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_slaves_good_slaves(value: String): Self = this.set("min_slaves_good_slaves", value.asInstanceOf[js.Any])
+    def setSlave_read_only(value: Flag): Self = StObject.set(x, "slave_read_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: slave): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlave_priority(value: String): Self = this.set("slave_priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlave_read_only(value: Flag): Self = this.set("slave_read_only", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlave_repl_offset(value: String): Self = this.set("slave_repl_offset", value.asInstanceOf[js.Any])
+    def setSlave_repl_offset(value: String): Self = StObject.set(x, "slave_repl_offset", value.asInstanceOf[js.Any])
   }
 }

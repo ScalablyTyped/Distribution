@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.opsworks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationSslConfiguration extends js.Object {
+trait ApplicationSslConfiguration extends StObject {
   
   /**
     * The contents of the certificate's domain.crt file.
@@ -31,30 +32,18 @@ object ApplicationSslConfiguration {
   }
   
   @scala.inline
-  implicit class ApplicationSslConfigurationOps[Self <: ApplicationSslConfiguration] (val x: Self) extends AnyVal {
+  implicit class ApplicationSslConfigurationMutableBuilder[Self <: ApplicationSslConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivateKey(value: String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChain(value: String): Self = this.set("chain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChain: Self = this.set("chain", js.undefined)
+    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

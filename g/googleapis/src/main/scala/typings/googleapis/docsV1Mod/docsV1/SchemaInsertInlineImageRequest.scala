@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Inserts an InlineObject containing an image at the given location.
   */
 @js.native
-trait SchemaInsertInlineImageRequest extends js.Object {
+trait SchemaInsertInlineImageRequest extends StObject {
   
   /**
     * Inserts the text at the end of a header, footer or the document body.
@@ -56,42 +57,30 @@ object SchemaInsertInlineImageRequest {
   }
   
   @scala.inline
-  implicit class SchemaInsertInlineImageRequestOps[Self <: SchemaInsertInlineImageRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInsertInlineImageRequestMutableBuilder[Self <: SchemaInsertInlineImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: SchemaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = this.set("endOfSegmentLocation", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteEndOfSegmentLocation: Self = this.set("endOfSegmentLocation", js.undefined)
+    def setObjectSize(value: SchemaSize): Self = StObject.set(x, "objectSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SchemaLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setObjectSizeUndefined: Self = StObject.set(x, "objectSize", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectSize(value: SchemaSize): Self = this.set("objectSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectSize: Self = this.set("objectSize", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

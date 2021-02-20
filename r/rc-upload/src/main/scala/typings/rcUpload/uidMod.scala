@@ -1,12 +1,13 @@
 package typings.rcUpload
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-upload/es/uid", JSImport.Namespace)
-@js.native
-object uidMod extends js.Object {
+object uidMod {
   
+  @JSImport("rc-upload/es/uid", JSImport.Default)
+  @js.native
   def default(): String = js.native
 }

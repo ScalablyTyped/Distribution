@@ -2,14 +2,14 @@ package typings.reactSyntaxHighlighter
 
 import typings.react.mod.Component
 import typings.reactSyntaxHighlighter.mod.SyntaxHighlighterProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/prism", JSImport.Namespace)
-@js.native
-object esmPrismMod extends js.Object {
+object esmPrismMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/prism", JSImport.Default)
   @js.native
   class default ()
     extends Component[SyntaxHighlighterProps, js.Object, js.Any]

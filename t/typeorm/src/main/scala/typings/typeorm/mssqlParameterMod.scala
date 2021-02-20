@@ -33,16 +33,16 @@ import typings.typeorm.typeormStrings.varbinary
 import typings.typeorm.typeormStrings.varchar
 import typings.typeorm.typeormStrings.variant
 import typings.typeorm.typeormStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/driver/sqlserver/MssqlParameter", JSImport.Namespace)
-@js.native
-object mssqlParameterMod extends js.Object {
+object mssqlParameterMod {
   
+  @JSImport("typeorm/browser/driver/sqlserver/MssqlParameter", "MssqlParameter")
   @js.native
-  class MssqlParameter protected () extends js.Object {
+  class MssqlParameter protected () extends StObject {
     def this(value: js.Any, `type`: bigint) = this()
     def this(value: js.Any, `type`: binary) = this()
     def this(value: js.Any, `type`: bit) = this()

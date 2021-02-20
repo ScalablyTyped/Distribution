@@ -3,13 +3,12 @@ package typings.tablesorter
 import typings.jquery.JQuery.AjaxSettings
 import typings.jquery.JQuery.jqXHR
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Paging/AjaxErrorHandler", JSImport.Namespace)
-@js.native
-object ajaxErrorHandlerMod extends js.Object {
+object ajaxErrorHandlerMod {
   
   type AjaxErrorHandler[TElement] = js.Function4[
     /* config */ TablesorterConfigurationStore[TElement], 

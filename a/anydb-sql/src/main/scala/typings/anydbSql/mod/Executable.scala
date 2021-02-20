@@ -1,11 +1,12 @@
 package typings.anydbSql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Executable[T] extends js.Object {
+trait Executable[T] extends StObject {
   
   def all(): typings.bluebird.mod.^[js.Array[T]] = js.native
   
@@ -38,39 +39,27 @@ object Executable {
   }
   
   @scala.inline
-  implicit class ExecutableOps[Self <: Executable[_], T] (val x: Self with Executable[T]) extends AnyVal {
+  implicit class ExecutableMutableBuilder[Self <: Executable[_], T] (val x: Self with Executable[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: () => typings.bluebird.mod.^[js.Array[T]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllWithin(value: DatabaseConnection => typings.bluebird.mod.^[js.Array[T]]): Self = StObject.set(x, "allWithin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExec(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAll(value: () => typings.bluebird.mod.^[js.Array[T]]): Self = this.set("all", js.Any.fromFunction0(value))
+    def setExecWithin(value: DatabaseConnection => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "execWithin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllWithin(value: DatabaseConnection => typings.bluebird.mod.^[js.Array[T]]): Self = this.set("allWithin", js.Any.fromFunction1(value))
+    def setGet(value: () => typings.bluebird.mod.^[T]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExec(value: () => typings.bluebird.mod.^[Unit]): Self = this.set("exec", js.Any.fromFunction0(value))
+    def setGetWithin(value: DatabaseConnection => typings.bluebird.mod.^[T]): Self = StObject.set(x, "getWithin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExecWithin(value: DatabaseConnection => typings.bluebird.mod.^[Unit]): Self = this.set("execWithin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet(value: () => typings.bluebird.mod.^[T]): Self = this.set("get", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWithin(value: DatabaseConnection => typings.bluebird.mod.^[T]): Self = this.set("getWithin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToQuery(value: () => QueryLike): Self = this.set("toQuery", js.Any.fromFunction0(value))
+    def setToQuery(value: () => QueryLike): Self = StObject.set(x, "toQuery", js.Any.fromFunction0(value))
   }
 }

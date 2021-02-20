@@ -2,12 +2,13 @@ package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.AbstractMesh
 import typings.babylonjs.BABYLON.WebVRController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mesh extends js.Object {
+trait Mesh extends StObject {
   
   var controller: WebVRController = js.native
   
@@ -22,24 +23,12 @@ object Mesh {
   }
   
   @scala.inline
-  implicit class MeshOps[Self <: Mesh] (val x: Self) extends AnyVal {
+  implicit class MeshMutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setController(value: WebVRController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setController(value: WebVRController): Self = this.set("controller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMesh(value: AbstractMesh): Self = this.set("mesh", value.asInstanceOf[js.Any])
+    def setMesh(value: AbstractMesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
   }
 }

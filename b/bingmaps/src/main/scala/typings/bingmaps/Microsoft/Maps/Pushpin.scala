@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,60 +119,48 @@ object Pushpin {
   }
   
   @scala.inline
-  implicit class PushpinOps[Self <: Pushpin] (val x: Self) extends AnyVal {
+  implicit class PushpinMutableBuilder[Self <: Pushpin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAnchor(value: () => Point): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClickedStyleEnabled(value: () => Boolean): Self = StObject.set(x, "getClickedStyleEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColor(value: () => String | Color): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnchor(value: () => Point): Self = this.set("getAnchor", js.Any.fromFunction0(value))
+    def setGetDraggable(value: () => Boolean): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClickedStyleEnabled(value: () => Boolean): Self = this.set("getClickedStyleEnabled", js.Any.fromFunction0(value))
+    def setGetHoverStyleEnabled(value: () => Boolean): Self = StObject.set(x, "getHoverStyleEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColor(value: () => String | Color): Self = this.set("getColor", js.Any.fromFunction0(value))
+    def setGetIcon(value: () => String): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDraggable(value: () => Boolean): Self = this.set("getDraggable", js.Any.fromFunction0(value))
+    def setGetLocation(value: () => Location): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHoverStyleEnabled(value: () => Boolean): Self = this.set("getHoverStyleEnabled", js.Any.fromFunction0(value))
+    def setGetRoundClickableArea(value: () => Boolean): Self = StObject.set(x, "getRoundClickableArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIcon(value: () => String): Self = this.set("getIcon", js.Any.fromFunction0(value))
+    def setGetSubTitle(value: () => String): Self = StObject.set(x, "getSubTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocation(value: () => Location): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRoundClickableArea(value: () => Boolean): Self = this.set("getRoundClickableArea", js.Any.fromFunction0(value))
+    def setGetTextOffset(value: () => Point): Self = StObject.set(x, "getTextOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubTitle(value: () => String): Self = this.set("getSubTitle", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setSetLocation(value: Location => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTextOffset(value: () => Point): Self = this.set("getTextOffset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLocation(value: Location => Unit): Self = this.set("setLocation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: IPushpinOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetOptions(value: IPushpinOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/SparseSnapshotTree", JSImport.Namespace)
-@js.native
-object sparseSnapshotTreeMod extends js.Object {
+object sparseSnapshotTreeMod {
   
+  @JSImport("@firebase/database/dist/src/core/SparseSnapshotTree", "SparseSnapshotTree")
   @js.native
-  class SparseSnapshotTree () extends js.Object {
+  class SparseSnapshotTree () extends StObject {
     
     val children: js.Any = js.native
     

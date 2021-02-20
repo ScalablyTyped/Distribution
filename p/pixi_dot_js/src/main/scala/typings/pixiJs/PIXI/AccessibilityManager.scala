@@ -1,6 +1,7 @@
 package typings.pixiJs.PIXI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait AccessibilityManager extends js.Object {
+trait AccessibilityManager extends StObject {
   
   /**
     * Adjust the hit area based on the bounds of a display object
@@ -86,39 +87,27 @@ object AccessibilityManager {
   }
   
   @scala.inline
-  implicit class AccessibilityManagerOps[Self <: AccessibilityManager] (val x: Self) extends AnyVal {
+  implicit class AccessibilityManagerMutableBuilder[Self <: AccessibilityManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapHitArea(value: Rectangle => Unit): Self = StObject.set(x, "capHitArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCapHitArea(value: Rectangle => Unit): Self = this.set("capHitArea", js.Any.fromFunction1(value))
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setIsMobileAccessibility(value: Boolean): Self = StObject.set(x, "isMobileAccessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setRenderer(value: AbstractRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMobileAccessibility(value: Boolean): Self = this.set("isMobileAccessibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderer(value: AbstractRenderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateDebugHTML(value: HTMLElement => Unit): Self = this.set("updateDebugHTML", js.Any.fromFunction1(value))
+    def setUpdateDebugHTML(value: HTMLElement => Unit): Self = StObject.set(x, "updateDebugHTML", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogModifierOverride")
 @js.native
-class CatalogModifierOverride () extends js.Object {
+class CatalogModifierOverride () extends StObject {
   
   /**
     * The ID of the `CatalogModifier` whose default behavior is being overridden.

@@ -6,6 +6,7 @@ import typings.mfiles.mfilesNumbers.`5`
 import typings.mfiles.mfilesNumbers.`6`
 import typings.mfiles.mfilesNumbers.`7`
 import typings.mfiles.mfilesNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`7`
   - typings.mfiles.mfilesNumbers.`8`
 */
-trait MFNamedValueType extends js.Object
+trait MFNamedValueType extends StObject
 object MFNamedValueType {
   
   @scala.inline

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkEncryptionType extends js.Object
+sealed trait NetworkEncryptionType extends StObject
 /** Defines values that indicate the type of encryption used for authentication. */
 @JSGlobal("Windows.Networking.Connectivity.NetworkEncryptionType")
 @js.native
-object NetworkEncryptionType extends js.Object {
+object NetworkEncryptionType extends StObject {
   
   /** Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610. Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197. */
   @js.native

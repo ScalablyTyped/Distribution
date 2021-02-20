@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGameServerGroupInput extends js.Object {
+trait CreateGameServerGroupInput extends StObject {
   
   /**
     * Configuration settings to define a scaling policy for the Auto Scaling group that is optimized for game hosting. The scaling policy uses the metric "PercentUtilizedGameServers" to maintain a buffer of idle game servers that can immediately accommodate new games and players. After the Auto Scaling group is created, update this value directly in the Auto Scaling group using the AWS console or APIs.
@@ -78,75 +79,63 @@ object CreateGameServerGroupInput {
   }
   
   @scala.inline
-  implicit class CreateGameServerGroupInputOps[Self <: CreateGameServerGroupInput] (val x: Self) extends AnyVal {
+  implicit class CreateGameServerGroupInputMutableBuilder[Self <: CreateGameServerGroupInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingPolicy(value: GameServerGroupAutoScalingPolicy): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBalancingStrategy(value: BalancingStrategy): Self = StObject.set(x, "BalancingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerGroupName(value: GameServerGroupName): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    def setBalancingStrategyUndefined: Self = StObject.set(x, "BalancingStrategy", js.undefined)
     
     @scala.inline
-    def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = this.set("InstanceDefinitions", js.Array(value :_*))
+    def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceDefinitions(value: InstanceDefinitions): Self = this.set("InstanceDefinitions", value.asInstanceOf[js.Any])
+    def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = StObject.set(x, "GameServerProtectionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
+    def setGameServerProtectionPolicyUndefined: Self = StObject.set(x, "GameServerProtectionPolicy", js.undefined)
     
     @scala.inline
-    def setMaxSize(value: PositiveInteger): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    def setInstanceDefinitions(value: InstanceDefinitions): Self = StObject.set(x, "InstanceDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: WholeNumber): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = StObject.set(x, "InstanceDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setRoleArn(value: IamRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingPolicy(value: GameServerGroupAutoScalingPolicy): Self = this.set("AutoScalingPolicy", value.asInstanceOf[js.Any])
+    def setMaxSize(value: PositiveInteger): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoScalingPolicy: Self = this.set("AutoScalingPolicy", js.undefined)
+    def setMinSize(value: WholeNumber): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalancingStrategy(value: BalancingStrategy): Self = this.set("BalancingStrategy", value.asInstanceOf[js.Any])
+    def setRoleArn(value: IamRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBalancingStrategy: Self = this.set("BalancingStrategy", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = this.set("GameServerProtectionPolicy", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteGameServerProtectionPolicy: Self = this.set("GameServerProtectionPolicy", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcSubnets(value: VpcSubnets): Self = StObject.set(x, "VpcSubnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVpcSubnetsUndefined: Self = StObject.set(x, "VpcSubnets", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcSubnetsVarargs(value: VpcSubnet*): Self = this.set("VpcSubnets", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcSubnets(value: VpcSubnets): Self = this.set("VpcSubnets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSubnets: Self = this.set("VpcSubnets", js.undefined)
+    def setVpcSubnetsVarargs(value: VpcSubnet*): Self = StObject.set(x, "VpcSubnets", js.Array(value :_*))
   }
 }

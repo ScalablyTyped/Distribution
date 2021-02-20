@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MimeTypedBuffer extends js.Object {
+trait MimeTypedBuffer extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/mime-typed-buffer
   /**
@@ -33,33 +34,21 @@ object MimeTypedBuffer {
   }
   
   @scala.inline
-  implicit class MimeTypedBufferOps[Self <: MimeTypedBuffer] (val x: Self) extends AnyVal {
+  implicit class MimeTypedBufferMutableBuilder[Self <: MimeTypedBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Buffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCharset: Self = this.set("charset", js.undefined)
-    
-    @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

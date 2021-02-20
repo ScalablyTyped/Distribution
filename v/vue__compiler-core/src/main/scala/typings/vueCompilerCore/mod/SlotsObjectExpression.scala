@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`15`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +24,12 @@ object SlotsObjectExpression {
   }
   
   @scala.inline
-  implicit class SlotsObjectExpressionOps[Self <: SlotsObjectExpression] (val x: Self) extends AnyVal {
+  implicit class SlotsObjectExpressionMutableBuilder[Self <: SlotsObjectExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProperties(value: js.Array[SlotsObjectProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertiesVarargs(value: SlotsObjectProperty*): Self = this.set("properties", js.Array(value :_*))
-    
-    @scala.inline
-    def setProperties(value: js.Array[SlotsObjectProperty]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(value: SlotsObjectProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

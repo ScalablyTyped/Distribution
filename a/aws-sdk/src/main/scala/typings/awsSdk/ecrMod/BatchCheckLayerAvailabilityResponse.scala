@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchCheckLayerAvailabilityResponse extends js.Object {
+trait BatchCheckLayerAvailabilityResponse extends StObject {
   
   /**
     * Any failures associated with the call.
@@ -26,36 +27,24 @@ object BatchCheckLayerAvailabilityResponse {
   }
   
   @scala.inline
-  implicit class BatchCheckLayerAvailabilityResponseOps[Self <: BatchCheckLayerAvailabilityResponse] (val x: Self) extends AnyVal {
+  implicit class BatchCheckLayerAvailabilityResponseMutableBuilder[Self <: BatchCheckLayerAvailabilityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailures(value: LayerFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailuresVarargs(value: LayerFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
     @scala.inline
-    def setFailuresVarargs(value: LayerFailure*): Self = this.set("failures", js.Array(value :_*))
+    def setLayers(value: LayerList): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailures(value: LayerFailureList): Self = this.set("failures", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteFailures: Self = this.set("failures", js.undefined)
-    
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = this.set("layers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayers(value: LayerList): Self = this.set("layers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

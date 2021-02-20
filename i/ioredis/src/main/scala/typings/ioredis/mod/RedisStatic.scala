@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.Instantiable4
 import typings.ioredis.anon.TypeofCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,5 +42,11 @@ trait RedisStatic
   
   var Cluster: ClusterStatic = js.native
   
-  var Command: TypeofCommand = js.native
+  var Command: TypeofCommand with (Instantiable4[
+    /* name */ String, 
+    /* args */ js.Array[ValueType], 
+    /* opts */ js.UndefOr[CommandOptions], 
+    /* callback */ js.UndefOr[js.Function2[/* err */ Null, /* result */ js.Any, Unit]], 
+    typings.ioredis.mod.Command
+  ]) = js.native
 }

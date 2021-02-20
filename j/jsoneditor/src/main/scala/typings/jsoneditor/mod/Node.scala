@@ -3,6 +3,7 @@ package typings.jsoneditor.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.mod.ErrorObject
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,126 +67,114 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: BaseNode): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChilds(value: js.Array[Node]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setChildsUndefined: Self = StObject.set(x, "childs", js.undefined)
     
     @scala.inline
-    def setFieldEditable(value: Boolean): Self = this.set("fieldEditable", value.asInstanceOf[js.Any])
+    def setChildsVarargs(value: Node*): Self = StObject.set(x, "childs", js.Array(value :_*))
     
     @scala.inline
-    def setPreviousField(value: String): Self = this.set("previousField", value.asInstanceOf[js.Any])
+    def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: NodeType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEnumNull: Self = StObject.set(x, "enum", null)
     
     @scala.inline
-    def setVisibleChilds(value: Double): Self = this.set("visibleChilds", value.asInstanceOf[js.Any])
+    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
     @scala.inline
-    def setAppend(value: BaseNode): Self = this.set("append", value.asInstanceOf[js.Any])
+    def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setError(value: ErrorObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildsVarargs(value: Node*): Self = this.set("childs", js.Array(value :_*))
+    def setErrorChild(value: Node): Self = StObject.set(x, "errorChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChilds(value: js.Array[Node]): Self = this.set("childs", value.asInstanceOf[js.Any])
+    def setErrorChildUndefined: Self = StObject.set(x, "errorChild", js.undefined)
     
     @scala.inline
-    def deleteChilds: Self = this.set("childs", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setEnumVarargs(value: String*): Self = this.set("enum", js.Array(value :_*))
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnum(value: js.Array[String]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def deleteEnum: Self = this.set("enum", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumNull: Self = this.set("enum", null)
+    def setFieldEditable(value: Boolean): Self = StObject.set(x, "fieldEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorObject): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFieldInnerText(value: String): Self = StObject.set(x, "fieldInnerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setFieldInnerTextUndefined: Self = StObject.set(x, "fieldInnerText", js.undefined)
     
     @scala.inline
-    def setErrorChild(value: Node): Self = this.set("errorChild", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorChild: Self = this.set("errorChild", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setPreviousField(value: String): Self = StObject.set(x, "previousField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setPreviousValue(value: NodeValue): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldInnerText(value: String): Self = this.set("fieldInnerText", value.asInstanceOf[js.Any])
+    def setPreviousValueNull: Self = StObject.set(x, "previousValue", null)
     
     @scala.inline
-    def deleteFieldInnerText: Self = this.set("fieldInnerText", js.undefined)
+    def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setShowMore(value: BaseNode): Self = StObject.set(x, "showMore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousValue(value: NodeValue): Self = this.set("previousValue", value.asInstanceOf[js.Any])
+    def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
     @scala.inline
-    def setPreviousValueNull: Self = this.set("previousValue", null)
+    def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: js.Object): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setValue(value: NodeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setValueFieldHTML(value: String): Self = StObject.set(x, "valueFieldHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMore(value: BaseNode): Self = this.set("showMore", value.asInstanceOf[js.Any])
+    def setValueFieldHTMLUndefined: Self = StObject.set(x, "valueFieldHTML", js.undefined)
     
     @scala.inline
-    def deleteShowMore: Self = this.set("showMore", js.undefined)
+    def setValueInnerText(value: String): Self = StObject.set(x, "valueInnerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: NodeValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueInnerTextUndefined: Self = StObject.set(x, "valueInnerText", js.undefined)
     
     @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setValueFieldHTML(value: String): Self = this.set("valueFieldHTML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFieldHTML: Self = this.set("valueFieldHTML", js.undefined)
-    
-    @scala.inline
-    def setValueInnerText(value: String): Self = this.set("valueInnerText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueInnerText: Self = this.set("valueInnerText", js.undefined)
+    def setVisibleChilds(value: Double): Self = StObject.set(x, "visibleChilds", value.asInstanceOf[js.Any])
   }
 }

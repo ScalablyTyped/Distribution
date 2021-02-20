@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dimension extends js.Object {
+trait Dimension extends StObject {
   
   /**
     * Find attribute by name
@@ -108,54 +109,42 @@ object Dimension {
   }
   
   @scala.inline
-  implicit class DimensionOps[Self <: Dimension] (val x: Self) extends AnyVal {
+  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindAttributeByName(value: String => Dimension): Self = StObject.set(x, "findAttributeByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllAttributeNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllAttributeNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAllAttributes(value: () => js.Any): Self = StObject.set(x, "getAllAttributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindAttributeByName(value: String => Dimension): Self = this.set("findAttributeByName", js.Any.fromFunction1(value))
+    def setGetContainingQueryResult(value: () => QueryResult): Self = StObject.set(x, "getContainingQueryResult", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllAttributeNames(value: () => js.Array[String]): Self = this.set("getAllAttributeNames", js.Any.fromFunction0(value))
+    def setGetHierarchy(value: () => js.Any): Self = StObject.set(x, "getHierarchy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllAttributes(value: () => js.Any): Self = this.set("getAllAttributes", js.Any.fromFunction0(value))
+    def setGetKeyProperty(value: () => js.Any): Self = StObject.set(x, "getKeyProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContainingQueryResult(value: () => QueryResult): Self = this.set("getContainingQueryResult", js.Any.fromFunction0(value))
+    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHierarchy(value: () => js.Any): Self = this.set("getHierarchy", js.Any.fromFunction0(value))
+    def setGetMasterDataEntitySet(value: () => EntitySet): Self = StObject.set(x, "getMasterDataEntitySet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeyProperty(value: () => js.Any): Self = this.set("getKeyProperty", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelText(value: () => String): Self = this.set("getLabelText", js.Any.fromFunction0(value))
+    def setGetSuperOrdinateDimension(value: () => js.Any): Self = StObject.set(x, "getSuperOrdinateDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMasterDataEntitySet(value: () => EntitySet): Self = this.set("getMasterDataEntitySet", js.Any.fromFunction0(value))
+    def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSuperOrdinateDimension(value: () => js.Any): Self = this.set("getSuperOrdinateDimension", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextProperty(value: () => js.Any): Self = this.set("getTextProperty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasMasterData(value: () => Boolean): Self = this.set("hasMasterData", js.Any.fromFunction0(value))
+    def setHasMasterData(value: () => Boolean): Self = StObject.set(x, "hasMasterData", js.Any.fromFunction0(value))
   }
 }

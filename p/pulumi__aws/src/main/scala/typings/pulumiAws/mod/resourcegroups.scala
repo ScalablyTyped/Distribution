@@ -5,14 +5,14 @@ import typings.pulumiAws.resourcegroupsGroupMod.GroupState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "resourcegroups")
-@js.native
-object resourcegroups extends js.Object {
+object resourcegroups {
   
+  @JSImport("@pulumi/aws", "resourcegroups.Group")
   @js.native
   class Group protected ()
     extends typings.pulumiAws.resourcegroupsMod.Group {
@@ -27,8 +27,7 @@ object resourcegroups extends js.Object {
     def this(name: String, args: GroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Group extends js.Object {
+  object Group {
     
     /**
       * Get an existing Group resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object resourcegroups extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "resourcegroups.Group.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.resourcegroupsGroupMod.Group = js.native
+    @JSImport("@pulumi/aws", "resourcegroups.Group.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourcegroupsGroupMod.Group = js.native
+    @JSImport("@pulumi/aws", "resourcegroups.Group.get")
+    @js.native
     def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.resourcegroupsGroupMod.Group = js.native
+    @JSImport("@pulumi/aws", "resourcegroups.Group.get")
+    @js.native
     def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.resourcegroupsGroupMod.Group = js.native
     
     /**
       * Returns true if the given object is an instance of Group.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "resourcegroups.Group.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/resourcegroups/group.Group */ Boolean = js.native
   }
 }

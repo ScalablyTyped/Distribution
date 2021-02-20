@@ -2,6 +2,7 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import typings.openapiTypes.anon.AuthorizationCode
 import typings.openapiTypes.openapiTypesStrings.oauth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +24,12 @@ object OAuth2SecurityScheme {
   }
   
   @scala.inline
-  implicit class OAuth2SecuritySchemeOps[Self <: OAuth2SecurityScheme] (val x: Self) extends AnyVal {
+  implicit class OAuth2SecuritySchemeMutableBuilder[Self <: OAuth2SecurityScheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlows(value: AuthorizationCode): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlows(value: AuthorizationCode): Self = this.set("flows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: oauth2): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

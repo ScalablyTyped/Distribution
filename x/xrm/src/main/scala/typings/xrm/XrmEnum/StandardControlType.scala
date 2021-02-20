@@ -12,6 +12,7 @@ import typings.xrm.xrmStrings.subgrid
 import typings.xrm.xrmStrings.timelinewall
 import typings.xrm.xrmStrings.timercontrol
 import typings.xrm.xrmStrings.webresource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.timelinewall
   - typings.xrm.xrmStrings.quickform
 */
-trait StandardControlType extends js.Object
+trait StandardControlType extends StObject
 object StandardControlType {
   
   @scala.inline

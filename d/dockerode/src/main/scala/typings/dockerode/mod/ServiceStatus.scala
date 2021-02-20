@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceStatus extends js.Object {
+trait ServiceStatus extends StObject {
   
   var CompletedTasks: Double = js.native
   
@@ -22,27 +23,15 @@ object ServiceStatus {
   }
   
   @scala.inline
-  implicit class ServiceStatusOps[Self <: ServiceStatus] (val x: Self) extends AnyVal {
+  implicit class ServiceStatusMutableBuilder[Self <: ServiceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedTasks(value: Double): Self = StObject.set(x, "CompletedTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredTasks(value: Double): Self = StObject.set(x, "DesiredTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompletedTasks(value: Double): Self = this.set("CompletedTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDesiredTasks(value: Double): Self = this.set("DesiredTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunningTasks(value: Double): Self = this.set("RunningTasks", value.asInstanceOf[js.Any])
+    def setRunningTasks(value: Double): Self = StObject.set(x, "RunningTasks", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.nvd3.mod
 import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.Selection_
 import typings.d3Transition.mod.Transition_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

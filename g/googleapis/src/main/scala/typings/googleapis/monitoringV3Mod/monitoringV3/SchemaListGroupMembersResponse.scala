@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The ListGroupMembers response.
   */
 @js.native
-trait SchemaListGroupMembersResponse extends js.Object {
+trait SchemaListGroupMembersResponse extends StObject {
   
   /**
     * A set of monitored resources in the group.
@@ -36,39 +37,27 @@ object SchemaListGroupMembersResponse {
   }
   
   @scala.inline
-  implicit class SchemaListGroupMembersResponseOps[Self <: SchemaListGroupMembersResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListGroupMembersResponseMutableBuilder[Self <: SchemaListGroupMembersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMembers(value: js.Array[SchemaMonitoredResource]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembersVarargs(value: SchemaMonitoredResource*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembersVarargs(value: SchemaMonitoredResource*): Self = this.set("members", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[SchemaMonitoredResource]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

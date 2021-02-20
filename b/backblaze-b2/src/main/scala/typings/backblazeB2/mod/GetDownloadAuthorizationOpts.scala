@@ -1,5 +1,6 @@
 package typings.backblazeB2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object GetDownloadAuthorizationOpts {
   }
   
   @scala.inline
-  implicit class GetDownloadAuthorizationOptsOps[Self <: GetDownloadAuthorizationOpts] (val x: Self) extends AnyVal {
+  implicit class GetDownloadAuthorizationOptsMutableBuilder[Self <: GetDownloadAuthorizationOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB2ContentDisposition(value: String): Self = StObject.set(x, "b2ContentDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileNamePrefix(value: String): Self = StObject.set(x, "fileNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB2ContentDisposition(value: String): Self = this.set("b2ContentDisposition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBucketId(value: String): Self = this.set("bucketId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileNamePrefix(value: String): Self = this.set("fileNamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidDurationInSeconds(value: Double): Self = this.set("validDurationInSeconds", value.asInstanceOf[js.Any])
+    def setValidDurationInSeconds(value: Double): Self = StObject.set(x, "validDurationInSeconds", value.asInstanceOf[js.Any])
   }
 }

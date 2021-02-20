@@ -1,6 +1,7 @@
 package typings.nodeRedRuntime.mod
 
 import typings.nodeRedRuntime.nodeRedRuntimeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeRedRuntime.mod.UsernamePermissions
   - typings.nodeRedRuntime.mod.AnonymousPermissions
 */
-trait User extends js.Object
+trait User extends StObject
 object User {
   
   @scala.inline
-  def UsernamePermissions(permissions: Permission | js.Array[Permission], username: String): User = {
-    val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    __obj.asInstanceOf[User]
+  def AnonymousPermissions(anonymous: `true`, permissions: Permission | js.Array[Permission]): typings.nodeRedRuntime.mod.AnonymousPermissions = {
+    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.nodeRedRuntime.mod.AnonymousPermissions]
   }
   
   @scala.inline
-  def AnonymousPermissions(anonymous: `true`, permissions: Permission | js.Array[Permission]): User = {
-    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
-    __obj.asInstanceOf[User]
+  def UsernamePermissions(permissions: Permission | js.Array[Permission], username: String): typings.nodeRedRuntime.mod.UsernamePermissions = {
+    val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.nodeRedRuntime.mod.UsernamePermissions]
   }
 }

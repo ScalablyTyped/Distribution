@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetJobRunRequest extends js.Object {
+trait GetJobRunRequest extends StObject {
   
   /**
     * Name of the job definition being run.
@@ -31,30 +32,18 @@ object GetJobRunRequest {
   }
   
   @scala.inline
-  implicit class GetJobRunRequestOps[Self <: GetJobRunRequest] (val x: Self) extends AnyVal {
+  implicit class GetJobRunRequestMutableBuilder[Self <: GetJobRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPredecessorsIncluded(value: BooleanValue): Self = StObject.set(x, "PredecessorsIncluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredecessorsIncludedUndefined: Self = StObject.set(x, "PredecessorsIncluded", js.undefined)
     
     @scala.inline
-    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunId(value: IdString): Self = this.set("RunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredecessorsIncluded(value: BooleanValue): Self = this.set("PredecessorsIncluded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredecessorsIncluded: Self = this.set("PredecessorsIncluded", js.undefined)
+    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

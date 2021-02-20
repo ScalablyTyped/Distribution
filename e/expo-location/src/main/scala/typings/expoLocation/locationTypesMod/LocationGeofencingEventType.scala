@@ -1,26 +1,24 @@
 package typings.expoLocation.locationTypesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LocationGeofencingEventType extends js.Object
+sealed trait LocationGeofencingEventType extends StObject
 @JSImport("expo-location/build/Location.types", "LocationGeofencingEventType")
 @js.native
-object LocationGeofencingEventType extends js.Object {
+object LocationGeofencingEventType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LocationGeofencingEventType with Double] = js.native
   
   @js.native
   sealed trait Enter extends LocationGeofencingEventType
-  /* 1 */ @js.native
-  object Enter extends TopLevel[Enter with Double]
+  /* 1 */ val Enter: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Enter with Double = js.native
   
   @js.native
   sealed trait Exit extends LocationGeofencingEventType
-  /* 2 */ @js.native
-  object Exit extends TopLevel[Exit with Double]
+  /* 2 */ val Exit: typings.expoLocation.locationTypesMod.LocationGeofencingEventType.Exit with Double = js.native
 }

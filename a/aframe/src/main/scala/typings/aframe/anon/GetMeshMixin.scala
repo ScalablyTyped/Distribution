@@ -4,12 +4,13 @@ import typings.aframe.mod.Component
 import typings.aframe.mod.Entity
 import typings.aframe.mod.ObjectMap
 import typings.aframe.mod.System
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMeshMixin extends js.Object {
+trait GetMeshMixin extends StObject {
   
   def getMeshMixin(): DefaultComponents = js.native
   
@@ -27,24 +28,12 @@ object GetMeshMixin {
   }
   
   @scala.inline
-  implicit class GetMeshMixinOps[Self <: GetMeshMixin] (val x: Self) extends AnyVal {
+  implicit class GetMeshMixinMutableBuilder[Self <: GetMeshMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMeshMixin(value: () => DefaultComponents): Self = StObject.set(x, "getMeshMixin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetMeshMixin(value: () => DefaultComponents): Self = this.set("getMeshMixin", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrimitives(value: ObjectMap[Entity[ObjectMap[Component[_, System[_]]]]]): Self = this.set("primitives", value.asInstanceOf[js.Any])
+    def setPrimitives(value: ObjectMap[Entity[ObjectMap[Component[_, System[_]]]]]): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
   }
 }

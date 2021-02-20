@@ -1,11 +1,12 @@
 package typings.cordovaPluginEmailComposer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CordovaPluginEmailComposer extends js.Object {
+trait CordovaPluginEmailComposer extends StObject {
   
   /** Determine if the device is capable to send emails */
   def isAvailable(callback: js.Function1[/* isAvailable */ Boolean, Unit]): Unit = js.native

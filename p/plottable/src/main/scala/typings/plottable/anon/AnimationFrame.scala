@@ -3,12 +3,13 @@ package typings.plottable.anon
 import typings.plottable.plottableStrings.animationFrame
 import typings.plottable.plottableStrings.immediate
 import typings.plottable.plottableStrings.timeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationFrame extends js.Object {
+trait AnimationFrame extends StObject {
   
   var animationFrame: typings.plottable.plottableStrings.animationFrame = js.native
   
@@ -25,27 +26,15 @@ object AnimationFrame {
   }
   
   @scala.inline
-  implicit class AnimationFrameOps[Self <: AnimationFrame] (val x: Self) extends AnyVal {
+  implicit class AnimationFrameMutableBuilder[Self <: AnimationFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationFrame(value: animationFrame): Self = StObject.set(x, "animationFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImmediate(value: immediate): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimationFrame(value: animationFrame): Self = this.set("animationFrame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImmediate(value: immediate): Self = this.set("immediate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: timeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: timeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

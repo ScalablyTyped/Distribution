@@ -1,5 +1,6 @@
 package typings.fibjs.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +22,7 @@ class ClassService protected ()
   def this(name: String, worker: js.Function) = this()
   def this(name: String, worker: js.Function, event: js.Object) = this()
 }
-/* static members */
-@JSGlobal("Class_Service")
-@js.native
-object ClassService extends js.Object {
+object ClassService {
   
   /**
     * 
@@ -37,9 +35,18 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.install")
+  @js.native
   def install(name: String, cmd: String): Unit = js.native
+  @JSGlobal("Class_Service.install")
+  @js.native
   def install(name: String, cmd: String, displayName: js.UndefOr[scala.Nothing], description: String): Unit = js.native
+  @JSGlobal("Class_Service.install")
+  @js.native
   def install(name: String, cmd: String, displayName: String): Unit = js.native
+  @JSGlobal("Class_Service.install")
+  @js.native
   def install(name: String, cmd: String, displayName: String, description: String): Unit = js.native
   
   /**
@@ -51,6 +58,9 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.isInstalled")
+  @js.native
   def isInstalled(name: String): Boolean = js.native
   
   /**
@@ -62,6 +72,9 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.isRunning")
+  @js.native
   def isRunning(name: String): Boolean = js.native
   
   /**
@@ -72,6 +85,9 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.remove")
+  @js.native
   def remove(name: String): Unit = js.native
   
   /**
@@ -82,6 +98,9 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.restart")
+  @js.native
   def restart(name: String): Unit = js.native
   
   /**
@@ -92,6 +111,9 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.start")
+  @js.native
   def start(name: String): Unit = js.native
   
   /**
@@ -102,5 +124,8 @@ object ClassService extends js.Object {
     * 
     * 
     */
+  /* static member */
+  @JSGlobal("Class_Service.stop")
+  @js.native
   def stop(name: String): Unit = js.native
 }

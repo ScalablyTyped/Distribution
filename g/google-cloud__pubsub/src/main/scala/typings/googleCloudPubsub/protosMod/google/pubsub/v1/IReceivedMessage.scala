@@ -1,31 +1,59 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ReceivedMessage. */
-trait IReceivedMessage extends js.Object {
+@js.native
+trait IReceivedMessage extends StObject {
+  
   /** ReceivedMessage ackId */
-  var ackId: js.UndefOr[String | Null] = js.undefined
+  var ackId: js.UndefOr[String | Null] = js.native
+  
   /** ReceivedMessage deliveryAttempt */
-  var deliveryAttempt: js.UndefOr[Double | Null] = js.undefined
+  var deliveryAttempt: js.UndefOr[Double | Null] = js.native
+  
   /** ReceivedMessage message */
-  var message: js.UndefOr[IPubsubMessage | Null] = js.undefined
+  var message: js.UndefOr[IPubsubMessage | Null] = js.native
 }
-
 object IReceivedMessage {
+  
   @scala.inline
-  def apply(
-    ackId: js.UndefOr[Null | String] = js.undefined,
-    deliveryAttempt: js.UndefOr[Null | Double] = js.undefined,
-    message: js.UndefOr[Null | IPubsubMessage] = js.undefined
-  ): IReceivedMessage = {
+  def apply(): IReceivedMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ackId)) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deliveryAttempt)) __obj.updateDynamic("deliveryAttempt")(deliveryAttempt.asInstanceOf[js.Any])
-    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReceivedMessage]
   }
+  
+  @scala.inline
+  implicit class IReceivedMessageMutableBuilder[Self <: IReceivedMessage] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAckIdNull: Self = StObject.set(x, "ackId", null)
+    
+    @scala.inline
+    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
+    
+    @scala.inline
+    def setDeliveryAttempt(value: Double): Self = StObject.set(x, "deliveryAttempt", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeliveryAttemptNull: Self = StObject.set(x, "deliveryAttempt", null)
+    
+    @scala.inline
+    def setDeliveryAttemptUndefined: Self = StObject.set(x, "deliveryAttempt", js.undefined)
+    
+    @scala.inline
+    def setMessage(value: IPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessageNull: Self = StObject.set(x, "message", null)
+    
+    @scala.inline
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+  }
 }
-

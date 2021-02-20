@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafregional
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclLoggingConfiguration extends js.Object {
+trait WebAclLoggingConfiguration extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
@@ -26,27 +27,15 @@ object WebAclLoggingConfiguration {
   }
   
   @scala.inline
-  implicit class WebAclLoggingConfigurationOps[Self <: WebAclLoggingConfiguration] (val x: Self) extends AnyVal {
+  implicit class WebAclLoggingConfigurationMutableBuilder[Self <: WebAclLoggingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogDestination(value: String): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedactedFields(value: WebAclLoggingConfigurationRedactedFields): Self = StObject.set(x, "redactedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogDestination(value: String): Self = this.set("logDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedactedFields(value: WebAclLoggingConfigurationRedactedFields): Self = this.set("redactedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedactedFields: Self = this.set("redactedFields", js.undefined)
+    def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
   }
 }

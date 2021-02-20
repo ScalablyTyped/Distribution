@@ -1,14 +1,14 @@
 package typings.agGrid
 
 import typings.agGrid.iRowNodeStageMod.IRowNodeStage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/clientSide/filterStage", JSImport.Namespace)
-@js.native
-object filterStageMod extends js.Object {
+object filterStageMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/clientSide/filterStage", "FilterStage")
   @js.native
   class FilterStage () extends IRowNodeStage {
     

@@ -8,12 +8,13 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.overlay
 import typings.reactNativeNavigation.reactNativeNavigationStrings.sidebar
 import typings.reactNativeNavigation.reactNativeNavigationStrings.trailing
 import typings.reactNativeNavigation.reactNativeNavigationStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsSplitView extends js.Object {
+trait OptionsSplitView extends StObject {
   
   /**
     * Master view display mode
@@ -52,48 +53,36 @@ object OptionsSplitView {
   }
   
   @scala.inline
-  implicit class OptionsSplitViewOps[Self <: OptionsSplitView] (val x: Self) extends AnyVal {
+  implicit class OptionsSplitViewMutableBuilder[Self <: OptionsSplitView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayMode(value: auto | visible | hidden | overlay): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: auto | visible | hidden | overlay): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setPrimaryBackgroundStyle(value: none | sidebar): Self = StObject.set(x, "primaryBackgroundStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setPrimaryBackgroundStyleUndefined: Self = StObject.set(x, "primaryBackgroundStyle", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setPrimaryEdge(value: leading | trailing): Self = StObject.set(x, "primaryEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryBackgroundStyle(value: none | sidebar): Self = this.set("primaryBackgroundStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryBackgroundStyle: Self = this.set("primaryBackgroundStyle", js.undefined)
-    
-    @scala.inline
-    def setPrimaryEdge(value: leading | trailing): Self = this.set("primaryEdge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryEdge: Self = this.set("primaryEdge", js.undefined)
+    def setPrimaryEdgeUndefined: Self = StObject.set(x, "primaryEdge", js.undefined)
   }
 }

@@ -1,14 +1,14 @@
 package typings.forkTsCheckerWebpackPlugin
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/rpc/error/RpcRemoteError", JSImport.Namespace)
-@js.native
-object rpcRemoteErrorMod extends js.Object {
+object rpcRemoteErrorMod {
   
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/error/RpcRemoteError", "RpcRemoteError")
   @js.native
   class RpcRemoteError protected () extends Error {
     def this(message: String) = this()

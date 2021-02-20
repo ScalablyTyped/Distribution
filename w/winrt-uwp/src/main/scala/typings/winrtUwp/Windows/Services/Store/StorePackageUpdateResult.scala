@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Services.Store
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about a completed package update request for the current app. */
 @js.native
-trait StorePackageUpdateResult extends js.Object {
+trait StorePackageUpdateResult extends StObject {
   
   /** Gets the state of the completed package update request. */
   var overallState: StorePackageUpdateState = js.native
@@ -27,24 +28,12 @@ object StorePackageUpdateResult {
   }
   
   @scala.inline
-  implicit class StorePackageUpdateResultOps[Self <: StorePackageUpdateResult] (val x: Self) extends AnyVal {
+  implicit class StorePackageUpdateResultMutableBuilder[Self <: StorePackageUpdateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverallState(value: StorePackageUpdateState): Self = StObject.set(x, "overallState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverallState(value: StorePackageUpdateState): Self = this.set("overallState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorePackageUpdateStatuses(value: IVectorView[StorePackageUpdateStatus]): Self = this.set("storePackageUpdateStatuses", value.asInstanceOf[js.Any])
+    def setStorePackageUpdateStatuses(value: IVectorView[StorePackageUpdateStatus]): Self = StObject.set(x, "storePackageUpdateStatuses", value.asInstanceOf[js.Any])
   }
 }

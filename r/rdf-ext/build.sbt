@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rdf-ext"
-version := "1.3-dt-20200827Z-c15a35"
+version := "1.3-dt-20200827Z-eb306f"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
-  "org.scalablytyped" %%% "rdf-dataset-indexed" % "0.4-dt-20200710Z-26cb82",
-  "org.scalablytyped" %%% "rdf-js" % "4.0-dt-20201002Z-0bb214",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
+  "org.scalablytyped" %%% "rdf-dataset-indexed" % "0.4-dt-20200710Z-acc416",
+  "org.scalablytyped" %%% "rdf-js" % "4.0-dt-20201002Z-023e7f",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

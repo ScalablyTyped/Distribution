@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoEncodingQuality extends js.Object
+sealed trait VideoEncodingQuality extends StObject
 @JSGlobal("Windows.Media.MediaProperties.VideoEncodingQuality")
 @js.native
-object VideoEncodingQuality extends js.Object {
+object VideoEncodingQuality extends StObject {
   
   @js.native
   sealed trait auto extends VideoEncodingQuality

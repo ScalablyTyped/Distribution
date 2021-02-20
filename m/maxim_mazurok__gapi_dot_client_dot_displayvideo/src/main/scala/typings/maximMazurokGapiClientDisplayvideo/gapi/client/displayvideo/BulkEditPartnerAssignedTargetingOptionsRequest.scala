@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditPartnerAssignedTargetingOptionsRequest extends js.Object {
+trait BulkEditPartnerAssignedTargetingOptionsRequest extends StObject {
   
   /** The assigned targeting options to create in batch, specified as a list of `CreateAssignedTargetingOptionsRequest`. Supported targeting types: * `TARGETING_TYPE_CHANNEL` */
   var createRequests: js.UndefOr[js.Array[CreateAssignedTargetingOptionsRequest]] = js.native
@@ -22,36 +23,24 @@ object BulkEditPartnerAssignedTargetingOptionsRequest {
   }
   
   @scala.inline
-  implicit class BulkEditPartnerAssignedTargetingOptionsRequestOps[Self <: BulkEditPartnerAssignedTargetingOptionsRequest] (val x: Self) extends AnyVal {
+  implicit class BulkEditPartnerAssignedTargetingOptionsRequestMutableBuilder[Self <: BulkEditPartnerAssignedTargetingOptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateRequests(value: js.Array[CreateAssignedTargetingOptionsRequest]): Self = StObject.set(x, "createRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateRequestsUndefined: Self = StObject.set(x, "createRequests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateRequestsVarargs(value: CreateAssignedTargetingOptionsRequest*): Self = StObject.set(x, "createRequests", js.Array(value :_*))
     
     @scala.inline
-    def setCreateRequestsVarargs(value: CreateAssignedTargetingOptionsRequest*): Self = this.set("createRequests", js.Array(value :_*))
+    def setDeleteRequests(value: js.Array[DeleteAssignedTargetingOptionsRequest]): Self = StObject.set(x, "deleteRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateRequests(value: js.Array[CreateAssignedTargetingOptionsRequest]): Self = this.set("createRequests", value.asInstanceOf[js.Any])
+    def setDeleteRequestsUndefined: Self = StObject.set(x, "deleteRequests", js.undefined)
     
     @scala.inline
-    def deleteCreateRequests: Self = this.set("createRequests", js.undefined)
-    
-    @scala.inline
-    def setDeleteRequestsVarargs(value: DeleteAssignedTargetingOptionsRequest*): Self = this.set("deleteRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeleteRequests(value: js.Array[DeleteAssignedTargetingOptionsRequest]): Self = this.set("deleteRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteRequests: Self = this.set("deleteRequests", js.undefined)
+    def setDeleteRequestsVarargs(value: DeleteAssignedTargetingOptionsRequest*): Self = StObject.set(x, "deleteRequests", js.Array(value :_*))
   }
 }

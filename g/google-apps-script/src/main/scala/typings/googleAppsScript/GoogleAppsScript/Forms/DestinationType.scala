@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DestinationType extends js.Object
+sealed trait DestinationType extends StObject
 /**
   * An enum representing the supported types of form-response destinations. All forms, including
   * those that do not have a destination set explicitly, save a copy of responses in the form's
@@ -20,7 +21,7 @@ sealed trait DestinationType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.DestinationType")
 @js.native
-object DestinationType extends js.Object {
+object DestinationType extends StObject {
   
   @js.native
   sealed trait SPREADSHEET extends DestinationType

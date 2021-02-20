@@ -1,12 +1,13 @@
 package typings.fineUploader.coreMod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraOptions extends js.Object {
+trait CameraOptions extends StObject {
   
   /**
     * `null` allows camera access on the default button in iOS.
@@ -36,30 +37,18 @@ object CameraOptions {
   }
   
   @scala.inline
-  implicit class CameraOptionsOps[Self <: CameraOptions] (val x: Self) extends AnyVal {
+  implicit class CameraOptionsMutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: HTMLElement): Self = this.set("button", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
-    
-    @scala.inline
-    def setIos(value: Boolean): Self = this.set("ios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIos: Self = this.set("ios", js.undefined)
+    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

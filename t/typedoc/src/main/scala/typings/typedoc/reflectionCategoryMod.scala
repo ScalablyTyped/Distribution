@@ -1,16 +1,16 @@
 package typings.typedoc
 
 import typings.typedoc.abstractMod.Reflection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/ReflectionCategory", JSImport.Namespace)
-@js.native
-object reflectionCategoryMod extends js.Object {
+object reflectionCategoryMod {
   
+  @JSImport("typedoc/dist/lib/models/ReflectionCategory", "ReflectionCategory")
   @js.native
-  class ReflectionCategory protected () extends js.Object {
+  class ReflectionCategory protected () extends StObject {
     def this(title: String) = this()
     
     var allChildrenHaveOwnDocument: js.Function = js.native

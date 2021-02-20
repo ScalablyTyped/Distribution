@@ -10,21 +10,22 @@ import typings.reactVis.reactVisStrings.label
 import typings.reactVis.reactVisStrings.radius
 import typings.reactVis.reactVisStrings.radius0
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadialChartProps extends js.Object {
+trait RadialChartProps extends StObject {
   
   var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
   
   var className: js.UndefOr[String] = js.native
   
-   // default: ''
+  // default: ''
   var colorType: js.UndefOr[String] = js.native
   
-   // default: 'category'
+  // default: 'category'
   var data: js.Array[Angle] = js.native
   
   var getAngle: js.UndefOr[RVGet[RadialChartPoint, angle]] = js.native
@@ -68,142 +69,130 @@ object RadialChartProps {
   }
   
   @scala.inline
-  implicit class RadialChartPropsOps[Self <: RadialChartProps] (val x: Self) extends AnyVal {
+  implicit class RadialChartPropsMutableBuilder[Self <: RadialChartProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Angle*): Self = this.set("data", js.Array(value :_*))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[Angle]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setColorType(value: String): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setColorTypeUndefined: Self = StObject.set(x, "colorType", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[Angle]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String | AnimationParam | Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
-    
-    @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
-    
-    @scala.inline
-    def setColorType(value: String): Self = this.set("colorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorType: Self = this.set("colorType", js.undefined)
+    def setDataVarargs(value: Angle*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
     def setGetAngle(
       value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-    ): Self = this.set("getAngle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetAngle: Self = this.set("getAngle", js.undefined)
+    ): Self = StObject.set(x, "getAngle", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetAngle0(
       value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-    ): Self = this.set("getAngle0", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getAngle0", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetAngle0: Self = this.set("getAngle0", js.undefined)
+    def setGetAngle0Undefined: Self = StObject.set(x, "getAngle0", js.undefined)
+    
+    @scala.inline
+    def setGetAngleUndefined: Self = StObject.set(x, "getAngle", js.undefined)
     
     @scala.inline
     def setGetLabel(
       value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-    ): Self = this.set("getLabel", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetLabel: Self = this.set("getLabel", js.undefined)
+    def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
     
     @scala.inline
     def setGetRadius(
       value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-    ): Self = this.set("getRadius", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetRadius: Self = this.set("getRadius", js.undefined)
+    ): Self = StObject.set(x, "getRadius", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetRadius0(
       value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-    ): Self = this.set("getRadius0", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "getRadius0", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetRadius0: Self = this.set("getRadius0", js.undefined)
+    def setGetRadius0Undefined: Self = StObject.set(x, "getRadius0", js.undefined)
     
     @scala.inline
-    def setLabelsAboveChildren(value: Boolean): Self = this.set("labelsAboveChildren", value.asInstanceOf[js.Any])
+    def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
     
     @scala.inline
-    def deleteLabelsAboveChildren: Self = this.set("labelsAboveChildren", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsStyle(value: CSSProperties): Self = this.set("labelsStyle", value.asInstanceOf[js.Any])
+    def setLabelsAboveChildren(value: Boolean): Self = StObject.set(x, "labelsAboveChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelsStyle: Self = this.set("labelsStyle", js.undefined)
+    def setLabelsAboveChildrenUndefined: Self = StObject.set(x, "labelsAboveChildren", js.undefined)
     
     @scala.inline
-    def setMargin(value: Margin | Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setLabelsStyle(value: CSSProperties): Self = StObject.set(x, "labelsStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setLabelsStyleUndefined: Self = StObject.set(x, "labelsStyle", js.undefined)
     
     @scala.inline
-    def setOnValueClick(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueClick", js.Any.fromFunction2(value))
+    def setMargin(value: Margin | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnValueClick: Self = this.set("onValueClick", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setOnValueMouseOut(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueMouseOut", js.Any.fromFunction2(value))
+    def setOnValueClick(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onValueClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnValueMouseOut: Self = this.set("onValueMouseOut", js.undefined)
+    def setOnValueClickUndefined: Self = StObject.set(x, "onValueClick", js.undefined)
     
     @scala.inline
-    def setOnValueMouseOver(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueMouseOver", js.Any.fromFunction2(value))
+    def setOnValueMouseOut(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onValueMouseOut", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnValueMouseOver: Self = this.set("onValueMouseOver", js.undefined)
+    def setOnValueMouseOutUndefined: Self = StObject.set(x, "onValueMouseOut", js.undefined)
     
     @scala.inline
-    def setShowLabels(value: Boolean): Self = this.set("showLabels", value.asInstanceOf[js.Any])
+    def setOnValueMouseOver(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onValueMouseOver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteShowLabels: Self = this.set("showLabels", js.undefined)
+    def setOnValueMouseOverUndefined: Self = StObject.set(x, "onValueMouseOver", js.undefined)
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setShowLabelsUndefined: Self = StObject.set(x, "showLabels", js.undefined)
     
     @scala.inline
-    def setSubLabel(value: /* row */ js.Any => String): Self = this.set("subLabel", js.Any.fromFunction1(value))
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubLabel: Self = this.set("subLabel", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    @scala.inline
+    def setSubLabel(value: /* row */ js.Any => String): Self = StObject.set(x, "subLabel", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSubLabelUndefined: Self = StObject.set(x, "subLabel", js.undefined)
+    
+    @scala.inline
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

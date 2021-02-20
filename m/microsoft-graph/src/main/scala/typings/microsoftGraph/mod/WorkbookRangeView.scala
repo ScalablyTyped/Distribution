@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,120 +65,108 @@ object WorkbookRangeView {
   }
   
   @scala.inline
-  implicit class WorkbookRangeViewOps[Self <: WorkbookRangeView] (val x: Self) extends AnyVal {
+  implicit class WorkbookRangeViewMutableBuilder[Self <: WorkbookRangeView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellAddresses(value: NullableOption[_]): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellAddressesNull: Self = StObject.set(x, "cellAddresses", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellAddressesUndefined: Self = StObject.set(x, "cellAddresses", js.undefined)
     
     @scala.inline
-    def setCellAddresses(value: NullableOption[_]): Self = this.set("cellAddresses", value.asInstanceOf[js.Any])
+    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCellAddresses: Self = this.set("cellAddresses", js.undefined)
+    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def setCellAddressesNull: Self = this.set("cellAddresses", null)
+    def setFormulas(value: NullableOption[_]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: NullableOption[_]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    def setFormulasLocalNull: Self = StObject.set(x, "formulasLocal", null)
     
     @scala.inline
-    def setFormulas(value: NullableOption[_]): Self = this.set("formulas", value.asInstanceOf[js.Any])
+    def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
     
     @scala.inline
-    def deleteFormulas: Self = this.set("formulas", js.undefined)
+    def setFormulasNull: Self = StObject.set(x, "formulas", null)
     
     @scala.inline
-    def setFormulasNull: Self = this.set("formulas", null)
+    def setFormulasR1C1(value: NullableOption[_]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasLocal(value: NullableOption[_]): Self = this.set("formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasR1C1Null: Self = StObject.set(x, "formulasR1C1", null)
     
     @scala.inline
-    def deleteFormulasLocal: Self = this.set("formulasLocal", js.undefined)
+    def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
     
     @scala.inline
-    def setFormulasLocalNull: Self = this.set("formulasLocal", null)
+    def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
     @scala.inline
-    def setFormulasR1C1(value: NullableOption[_]): Self = this.set("formulasR1C1", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormulasR1C1: Self = this.set("formulasR1C1", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setFormulasR1C1Null: Self = this.set("formulasR1C1", null)
+    def setNumberFormat(value: NullableOption[_]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setNumberFormatNull: Self = StObject.set(x, "numberFormat", null)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: NullableOption[_]): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def setNumberFormatNull: Self = this.set("numberFormat", null)
+    def setRows(value: NullableOption[js.Array[WorkbookRangeView]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowsNull: Self = StObject.set(x, "rows", null)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def setRowsVarargs(value: WorkbookRangeView*): Self = this.set("rows", js.Array(value :_*))
+    def setRowsVarargs(value: WorkbookRangeView*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRows(value: NullableOption[js.Array[WorkbookRangeView]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setText(value: NullableOption[_]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setTextNull: Self = StObject.set(x, "text", null)
     
     @scala.inline
-    def setRowsNull: Self = this.set("rows", null)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setText(value: NullableOption[_]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setValueTypes(value: NullableOption[_]): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setValueTypesNull: Self = StObject.set(x, "valueTypes", null)
     
     @scala.inline
-    def setTextNull: Self = this.set("text", null)
+    def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
     @scala.inline
-    def setValueTypes(value: NullableOption[_]): Self = this.set("valueTypes", value.asInstanceOf[js.Any])
+    def setValues(value: NullableOption[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueTypes: Self = this.set("valueTypes", js.undefined)
+    def setValuesNull: Self = StObject.set(x, "values", null)
     
     @scala.inline
-    def setValueTypesNull: Self = this.set("valueTypes", null)
-    
-    @scala.inline
-    def setValues(value: NullableOption[_]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
-    
-    @scala.inline
-    def setValuesNull: Self = this.set("values", null)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

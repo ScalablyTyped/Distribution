@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Annotationlevel extends js.Object {
+trait Annotationlevel extends StObject {
   
   var annotation_level: String = js.native
   
@@ -44,45 +45,33 @@ object Annotationlevel {
   }
   
   @scala.inline
-  implicit class AnnotationlevelOps[Self <: Annotationlevel] (val x: Self) extends AnyVal {
+  implicit class AnnotationlevelMutableBuilder[Self <: Annotationlevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation_level(value: String): Self = StObject.set(x, "annotation_level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_column(value: Double): Self = StObject.set(x, "end_column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd_line(value: Double): Self = StObject.set(x, "end_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation_level(value: String): Self = this.set("annotation_level", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_column(value: Double): Self = this.set("end_column", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_line(value: Double): Self = this.set("end_line", value.asInstanceOf[js.Any])
+    def setRaw_details(value: String): Self = StObject.set(x, "raw_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setStart_column(value: Double): Self = StObject.set(x, "start_column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setStart_line(value: Double): Self = StObject.set(x, "start_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw_details(value: String): Self = this.set("raw_details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_column(value: Double): Self = this.set("start_column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_line(value: Double): Self = this.set("start_line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

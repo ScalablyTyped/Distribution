@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "MeasurementUnitCustom")
 @js.native
-class MeasurementUnitCustom () extends js.Object {
+class MeasurementUnitCustom () extends StObject {
   
   /**
     * The abbreviation of the custom unit, such as "bsh" (bushel).

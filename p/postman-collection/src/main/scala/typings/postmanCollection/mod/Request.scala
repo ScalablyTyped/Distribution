@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Enabled
 import typings.postmanCollection.anon.IgnoreCase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,9 +64,9 @@ class Request protected () extends Property[RequestDefinition] {
   var url: String | Url = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Request")
-@js.native
-object Request extends js.Object {
+object Request {
   
+  @JSImport("postman-collection", "Request.isRequest")
+  @js.native
   def isRequest(obj: js.Any): Boolean = js.native
 }

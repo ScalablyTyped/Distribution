@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RankingMetrics extends js.Object {
+trait RankingMetrics extends StObject {
   
   /** Determines the goodness of a ranking by computing the percentile rank from the predicted confidence and dividing it by the original rank. */
   var averageRank: js.UndefOr[Double] = js.native
@@ -31,42 +32,30 @@ object RankingMetrics {
   }
   
   @scala.inline
-  implicit class RankingMetricsOps[Self <: RankingMetrics] (val x: Self) extends AnyVal {
+  implicit class RankingMetricsMutableBuilder[Self <: RankingMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageRank(value: Double): Self = StObject.set(x, "averageRank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageRankUndefined: Self = StObject.set(x, "averageRank", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeanAveragePrecision(value: Double): Self = StObject.set(x, "meanAveragePrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageRank(value: Double): Self = this.set("averageRank", value.asInstanceOf[js.Any])
+    def setMeanAveragePrecisionUndefined: Self = StObject.set(x, "meanAveragePrecision", js.undefined)
     
     @scala.inline
-    def deleteAverageRank: Self = this.set("averageRank", js.undefined)
+    def setMeanSquaredError(value: Double): Self = StObject.set(x, "meanSquaredError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanAveragePrecision(value: Double): Self = this.set("meanAveragePrecision", value.asInstanceOf[js.Any])
+    def setMeanSquaredErrorUndefined: Self = StObject.set(x, "meanSquaredError", js.undefined)
     
     @scala.inline
-    def deleteMeanAveragePrecision: Self = this.set("meanAveragePrecision", js.undefined)
+    def setNormalizedDiscountedCumulativeGain(value: Double): Self = StObject.set(x, "normalizedDiscountedCumulativeGain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanSquaredError(value: Double): Self = this.set("meanSquaredError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeanSquaredError: Self = this.set("meanSquaredError", js.undefined)
-    
-    @scala.inline
-    def setNormalizedDiscountedCumulativeGain(value: Double): Self = this.set("normalizedDiscountedCumulativeGain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalizedDiscountedCumulativeGain: Self = this.set("normalizedDiscountedCumulativeGain", js.undefined)
+    def setNormalizedDiscountedCumulativeGainUndefined: Self = StObject.set(x, "normalizedDiscountedCumulativeGain", js.undefined)
   }
 }

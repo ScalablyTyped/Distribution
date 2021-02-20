@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformFilterCriteria extends js.Object {
+trait TransformFilterCriteria extends StObject {
   
   /**
     * The time and date after which the transforms were created.
@@ -61,75 +62,63 @@ object TransformFilterCriteria {
   }
   
   @scala.inline
-  implicit class TransformFilterCriteriaOps[Self <: TransformFilterCriteria] (val x: Self) extends AnyVal {
+  implicit class TransformFilterCriteriaMutableBuilder[Self <: TransformFilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAfter(value: Timestamp): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBefore(value: Timestamp): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAfter(value: Timestamp): Self = this.set("CreatedAfter", value.asInstanceOf[js.Any])
+    def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
     @scala.inline
-    def deleteCreatedAfter: Self = this.set("CreatedAfter", js.undefined)
+    def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBefore(value: Timestamp): Self = this.set("CreatedBefore", value.asInstanceOf[js.Any])
+    def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
     @scala.inline
-    def deleteCreatedBefore: Self = this.set("CreatedBefore", js.undefined)
+    def setLastModifiedAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    def setLastModifiedAfterUndefined: Self = StObject.set(x, "LastModifiedAfter", js.undefined)
     
     @scala.inline
-    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    def setLastModifiedBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedAfter(value: Timestamp): Self = this.set("LastModifiedAfter", value.asInstanceOf[js.Any])
+    def setLastModifiedBeforeUndefined: Self = StObject.set(x, "LastModifiedBefore", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedAfter: Self = this.set("LastModifiedAfter", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBefore(value: Timestamp): Self = this.set("LastModifiedBefore", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedBefore: Self = this.set("LastModifiedBefore", js.undefined)
+    def setSchema(value: TransformSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
     
     @scala.inline
-    def setSchemaVarargs(value: SchemaColumn*): Self = this.set("Schema", js.Array(value :_*))
+    def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: TransformSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("Schema", js.undefined)
+    def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TransformStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTransformType(value: TransformType): Self = this.set("TransformType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformType: Self = this.set("TransformType", js.undefined)
+    def setTransformTypeUndefined: Self = StObject.set(x, "TransformType", js.undefined)
   }
 }

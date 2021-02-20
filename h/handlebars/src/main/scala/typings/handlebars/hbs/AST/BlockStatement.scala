@@ -1,5 +1,6 @@
 package typings.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object BlockStatement {
   }
   
   @scala.inline
-  implicit class BlockStatementOps[Self <: BlockStatement] (val x: Self) extends AnyVal {
+  implicit class BlockStatementMutableBuilder[Self <: BlockStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseStrip(value: StripFlags): Self = StObject.set(x, "closeStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInverse(value: Program): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseStrip(value: StripFlags): Self = this.set("closeStrip", value.asInstanceOf[js.Any])
+    def setInverseStrip(value: StripFlags): Self = StObject.set(x, "inverseStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: Hash): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setOpenStrip(value: StripFlags): Self = StObject.set(x, "openStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverse(value: Program): Self = this.set("inverse", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverseStrip(value: StripFlags): Self = this.set("inverseStrip", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setOpenStrip(value: StripFlags): Self = this.set("openStrip", value.asInstanceOf[js.Any])
+    def setPath(value: PathExpression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: Expression*): Self = this.set("params", js.Array(value :_*))
+    def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Array[Expression]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: PathExpression): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgram(value: Program): Self = this.set("program", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.BlockStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.handlebars.handlebarsStrings.BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

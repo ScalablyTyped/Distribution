@@ -1,12 +1,13 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** base class for ASN.1 DER encoder object */
 @js.native
-trait ASN1Object extends js.Object {
+trait ASN1Object extends StObject {
   
   /**
     * get hexadecimal string of ASN.1 TLV bytes
@@ -62,45 +63,33 @@ object ASN1Object {
   }
   
   @scala.inline
-  implicit class ASN1ObjectOps[Self <: ASN1Object] (val x: Self) extends AnyVal {
+  implicit class ASN1ObjectMutableBuilder[Self <: ASN1Object] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLengthHexFromValue(value: () => String): Self = StObject.set(x, "getLengthHexFromValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEncodedHex(value: () => String): Self = this.set("getEncodedHex", js.Any.fromFunction0(value))
+    def setGetValueHex(value: () => String): Self = StObject.set(x, "getValueHex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFreshValueHex(value: () => String): Self = this.set("getFreshValueHex", js.Any.fromFunction0(value))
+    def setHL(value: String): Self = StObject.set(x, "hL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLengthHexFromValue(value: () => String): Self = this.set("getLengthHexFromValue", js.Any.fromFunction0(value))
+    def setHT(value: String): Self = StObject.set(x, "hT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValueHex(value: () => String): Self = this.set("getValueHex", js.Any.fromFunction0(value))
+    def setHTLV(value: String): Self = StObject.set(x, "hTLV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHL(value: String): Self = this.set("hL", value.asInstanceOf[js.Any])
+    def setHV(value: String): Self = StObject.set(x, "hV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHT(value: String): Self = this.set("hT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHTLV(value: String): Self = this.set("hTLV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHV(value: String): Self = this.set("hV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsModified(value: String): Self = this.set("isModified", value.asInstanceOf[js.Any])
+    def setIsModified(value: String): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [y] - The y value.
   */
 @js.native
-trait Vec2 extends js.Object {
+trait Vec2 extends StObject {
   
   /**
     * Adds a 2-dimensional vector to another in place.
@@ -282,7 +283,7 @@ object Vec2 {
     copy: Vec2 => Vec2,
     distance: Vec2 => Double,
     dot: Vec2 => Double,
-    equals: Vec2 => Boolean,
+    equals_ : Vec2 => Boolean,
     length: () => Double,
     lengthSq: () => Double,
     lerp: (Vec2, Vec2, Double) => Vec2,
@@ -296,77 +297,66 @@ object Vec2 {
     x: Double,
     y: Double
   ): Vec2 = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), add2 = js.Any.fromFunction2(add2), copy = js.Any.fromFunction1(copy), distance = js.Any.fromFunction1(distance), dot = js.Any.fromFunction1(dot), equals = js.Any.fromFunction1(equals), length = js.Any.fromFunction0(length), lengthSq = js.Any.fromFunction0(lengthSq), lerp = js.Any.fromFunction3(lerp), mul = js.Any.fromFunction1(mul), mul2 = js.Any.fromFunction2(mul2), normalize = js.Any.fromFunction0(normalize), scale = js.Any.fromFunction1(scale), set = js.Any.fromFunction2(set), sub = js.Any.fromFunction1(sub), sub2 = js.Any.fromFunction2(sub2), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), add2 = js.Any.fromFunction2(add2), copy = js.Any.fromFunction1(copy), distance = js.Any.fromFunction1(distance), dot = js.Any.fromFunction1(dot), length = js.Any.fromFunction0(length), lengthSq = js.Any.fromFunction0(lengthSq), lerp = js.Any.fromFunction3(lerp), mul = js.Any.fromFunction1(mul), mul2 = js.Any.fromFunction2(mul2), normalize = js.Any.fromFunction0(normalize), scale = js.Any.fromFunction1(scale), set = js.Any.fromFunction2(set), sub = js.Any.fromFunction1(sub), sub2 = js.Any.fromFunction2(sub2), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Vec2]
   }
   
   @scala.inline
-  implicit class Vec2Ops[Self <: Vec2] (val x: Self) extends AnyVal {
+  implicit class Vec2MutableBuilder[Self <: Vec2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Vec2 => Vec2): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd2(value: (Vec2, Vec2) => Vec2): Self = StObject.set(x, "add2", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopy(value: Vec2 => Vec2): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: Vec2 => Vec2): Self = this.set("add", js.Any.fromFunction1(value))
+    def setDistance(value: Vec2 => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd2(value: (Vec2, Vec2) => Vec2): Self = this.set("add2", js.Any.fromFunction2(value))
+    def setDot(value: Vec2 => Double): Self = StObject.set(x, "dot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopy(value: Vec2 => Vec2): Self = this.set("copy", js.Any.fromFunction1(value))
+    def setEquals_(value: Vec2 => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDistance(value: Vec2 => Double): Self = this.set("distance", js.Any.fromFunction1(value))
+    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDot(value: Vec2 => Double): Self = this.set("dot", js.Any.fromFunction1(value))
+    def setLengthSq(value: () => Double): Self = StObject.set(x, "lengthSq", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEquals(value: Vec2 => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setLerp(value: (Vec2, Vec2, Double) => Vec2): Self = StObject.set(x, "lerp", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLength(value: () => Double): Self = this.set("length", js.Any.fromFunction0(value))
+    def setMul(value: Vec2 => Vec2): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLengthSq(value: () => Double): Self = this.set("lengthSq", js.Any.fromFunction0(value))
+    def setMul2(value: (Vec2, Vec2) => Vec2): Self = StObject.set(x, "mul2", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLerp(value: (Vec2, Vec2, Double) => Vec2): Self = this.set("lerp", js.Any.fromFunction3(value))
+    def setNormalize(value: () => Vec2): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMul(value: Vec2 => Vec2): Self = this.set("mul", js.Any.fromFunction1(value))
+    def setScale(value: Double => Vec2): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMul2(value: (Vec2, Vec2) => Vec2): Self = this.set("mul2", js.Any.fromFunction2(value))
+    def setSet(value: (Double, Double) => Vec2): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNormalize(value: () => Vec2): Self = this.set("normalize", js.Any.fromFunction0(value))
+    def setSub(value: Vec2 => Vec2): Self = StObject.set(x, "sub", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScale(value: Double => Vec2): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setSub2(value: (Vec2, Vec2) => Vec2): Self = StObject.set(x, "sub2", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSet(value: (Double, Double) => Vec2): Self = this.set("set", js.Any.fromFunction2(value))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: Vec2 => Vec2): Self = this.set("sub", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSub2(value: (Vec2, Vec2) => Vec2): Self = this.set("sub2", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

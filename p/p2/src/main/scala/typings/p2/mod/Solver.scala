@@ -1,5 +1,6 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,11 +33,21 @@ class Solver () extends EventEmitter {
   var `type`: Double = js.native
 }
 /* static members */
-@JSImport("p2", "Solver")
-@js.native
-object Solver extends js.Object {
+object Solver {
   
-  var GS: Double = js.native
+  @JSImport("p2", "Solver")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var ISLAND: Double = js.native
+  @JSImport("p2", "Solver.GS")
+  @js.native
+  def GS: Double = js.native
+  @scala.inline
+  def GS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("p2", "Solver.ISLAND")
+  @js.native
+  def ISLAND: Double = js.native
+  @scala.inline
+  def ISLAND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND")(x.asInstanceOf[js.Any])
 }

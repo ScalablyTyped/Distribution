@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These properties describe the way the {@link XPagePrintable} interface prints the page on one printer page. */
 @js.native
-trait PagePrintSettings extends js.Object {
+trait PagePrintSettings extends StObject {
   
   /** contains the right margin of the printer page. */
   var BottomMargin: Double = js.native
@@ -54,45 +55,33 @@ object PagePrintSettings {
   }
   
   @scala.inline
-  implicit class PagePrintSettingsOps[Self <: PagePrintSettings] (val x: Self) extends AnyVal {
+  implicit class PagePrintSettingsMutableBuilder[Self <: PagePrintSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoriMargin(value: Double): Self = StObject.set(x, "HoriMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLandscape(value: Boolean): Self = StObject.set(x, "IsLandscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMargin(value: Double): Self = this.set("BottomMargin", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriMargin(value: Double): Self = this.set("HoriMargin", value.asInstanceOf[js.Any])
+    def setPageColumns(value: Double): Self = StObject.set(x, "PageColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLandscape(value: Boolean): Self = this.set("IsLandscape", value.asInstanceOf[js.Any])
+    def setPageRows(value: Double): Self = StObject.set(x, "PageRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("LeftMargin", value.asInstanceOf[js.Any])
+    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageColumns(value: Double): Self = this.set("PageColumns", value.asInstanceOf[js.Any])
+    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageRows(value: Double): Self = this.set("PageRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightMargin(value: Double): Self = this.set("RightMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopMargin(value: Double): Self = this.set("TopMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertMargin(value: Double): Self = this.set("VertMargin", value.asInstanceOf[js.Any])
+    def setVertMargin(value: Double): Self = StObject.set(x, "VertMargin", value.asInstanceOf[js.Any])
   }
 }

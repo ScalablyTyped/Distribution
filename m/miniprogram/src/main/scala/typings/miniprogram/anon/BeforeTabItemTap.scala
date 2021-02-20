@@ -3,12 +3,13 @@ package typings.miniprogram.anon
 import typings.miniprogram.EmptyFn
 import typings.miniprogram.OnPullDownRefresh
 import typings.miniprogram.OnTabItemTap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeforeTabItemTap extends js.Object {
+trait BeforeTabItemTap extends StObject {
   
   var beforeTabItemTap: js.UndefOr[EmptyFn] = js.native
   
@@ -39,78 +40,66 @@ object BeforeTabItemTap {
   }
   
   @scala.inline
-  implicit class BeforeTabItemTapOps[Self <: BeforeTabItemTap] (val x: Self) extends AnyVal {
+  implicit class BeforeTabItemTapMutableBuilder[Self <: BeforeTabItemTap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeTabItemTap(value: () => Unit): Self = StObject.set(x, "beforeTabItemTap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeTabItemTapUndefined: Self = StObject.set(x, "beforeTabItemTap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBack(value: () => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeforeTabItemTap(value: () => Unit): Self = this.set("beforeTabItemTap", js.Any.fromFunction0(value))
+    def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
     
     @scala.inline
-    def deleteBeforeTabItemTap: Self = this.set("beforeTabItemTap", js.undefined)
+    def setOnKeyboardHeight(value: () => Unit): Self = StObject.set(x, "onKeyboardHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBack(value: () => Unit): Self = this.set("onBack", js.Any.fromFunction0(value))
+    def setOnKeyboardHeightUndefined: Self = StObject.set(x, "onKeyboardHeight", js.undefined)
     
     @scala.inline
-    def deleteOnBack: Self = this.set("onBack", js.undefined)
+    def setOnOptionMenuClick(value: () => Unit): Self = StObject.set(x, "onOptionMenuClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnKeyboardHeight(value: () => Unit): Self = this.set("onKeyboardHeight", js.Any.fromFunction0(value))
+    def setOnOptionMenuClickUndefined: Self = StObject.set(x, "onOptionMenuClick", js.undefined)
     
     @scala.inline
-    def deleteOnKeyboardHeight: Self = this.set("onKeyboardHeight", js.undefined)
+    def setOnPopMenuClick(value: () => Unit): Self = StObject.set(x, "onPopMenuClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnOptionMenuClick(value: () => Unit): Self = this.set("onOptionMenuClick", js.Any.fromFunction0(value))
+    def setOnPopMenuClickUndefined: Self = StObject.set(x, "onPopMenuClick", js.undefined)
     
     @scala.inline
-    def deleteOnOptionMenuClick: Self = this.set("onOptionMenuClick", js.undefined)
+    def setOnPullDownRefresh(value: /* opts */ Form => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPopMenuClick(value: () => Unit): Self = this.set("onPopMenuClick", js.Any.fromFunction0(value))
+    def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
     
     @scala.inline
-    def deleteOnPopMenuClick: Self = this.set("onPopMenuClick", js.undefined)
+    def setOnPullIntercept(value: () => Unit): Self = StObject.set(x, "onPullIntercept", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPullDownRefresh(value: /* opts */ Form => Unit): Self = this.set("onPullDownRefresh", js.Any.fromFunction1(value))
+    def setOnPullInterceptUndefined: Self = StObject.set(x, "onPullIntercept", js.undefined)
     
     @scala.inline
-    def deleteOnPullDownRefresh: Self = this.set("onPullDownRefresh", js.undefined)
+    def setOnResize(value: /* opts */ SizeWindowHeight => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPullIntercept(value: () => Unit): Self = this.set("onPullIntercept", js.Any.fromFunction0(value))
+    def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     @scala.inline
-    def deleteOnPullIntercept: Self = this.set("onPullIntercept", js.undefined)
+    def setOnTabItemTap(value: /* obj */ From => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnResize(value: /* opts */ SizeWindowHeight => Unit): Self = this.set("onResize", js.Any.fromFunction1(value))
+    def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
     
     @scala.inline
-    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    def setOnTitleClick(value: () => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTabItemTap(value: /* obj */ From => Unit): Self = this.set("onTabItemTap", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnTabItemTap: Self = this.set("onTabItemTap", js.undefined)
-    
-    @scala.inline
-    def setOnTitleClick(value: () => Unit): Self = this.set("onTitleClick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnTitleClick: Self = this.set("onTitleClick", js.undefined)
+    def setOnTitleClickUndefined: Self = StObject.set(x, "onTitleClick", js.undefined)
   }
 }

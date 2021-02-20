@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.TSTypeLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object TSTypeLiteral_ {
   }
   
   @scala.inline
-  implicit class TSTypeLiteral_Ops[Self <: TSTypeLiteral_] (val x: Self) extends AnyVal {
+  implicit class TSTypeLiteral_MutableBuilder[Self <: TSTypeLiteral_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMembersVarargs(value: TSTypeElement*): Self = this.set("members", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembers(value: js.Array[TSTypeElement]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TSTypeLiteral): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TSTypeLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

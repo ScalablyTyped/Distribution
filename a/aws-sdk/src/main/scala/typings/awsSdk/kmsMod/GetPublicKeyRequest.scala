@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPublicKeyRequest extends js.Object {
+trait GetPublicKeyRequest extends StObject {
   
   /**
     * A list of grant tokens. For more information, see Grant Tokens in the AWS Key Management Service Developer Guide.
@@ -26,30 +27,18 @@ object GetPublicKeyRequest {
   }
   
   @scala.inline
-  implicit class GetPublicKeyRequestOps[Self <: GetPublicKeyRequest] (val x: Self) extends AnyVal {
+  implicit class GetPublicKeyRequestMutableBuilder[Self <: GetPublicKeyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

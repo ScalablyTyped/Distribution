@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Animation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetPausedRequest extends js.Object {
+trait SetPausedRequest extends StObject {
   
   /**
     * Animations to set the pause state of.
@@ -26,27 +27,15 @@ object SetPausedRequest {
   }
   
   @scala.inline
-  implicit class SetPausedRequestOps[Self <: SetPausedRequest] (val x: Self) extends AnyVal {
+  implicit class SetPausedRequestMutableBuilder[Self <: SetPausedRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimationsVarargs(value: String*): Self = this.set("animations", js.Array(value :_*))
-    
-    @scala.inline
-    def setAnimations(value: js.Array[String]): Self = this.set("animations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
   }
 }

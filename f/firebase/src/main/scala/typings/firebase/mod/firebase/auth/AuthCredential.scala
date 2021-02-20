@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait AuthCredential extends js.Object {
+trait AuthCredential extends StObject {
   
   /**
     * The authentication provider ID for the credential.
@@ -41,27 +42,15 @@ object AuthCredential {
   }
   
   @scala.inline
-  implicit class AuthCredentialOps[Self <: AuthCredential] (val x: Self) extends AnyVal {
+  implicit class AuthCredentialMutableBuilder[Self <: AuthCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignInMethod(value: String): Self = StObject.set(x, "signInMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignInMethod(value: String): Self = this.set("signInMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => js.Object): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

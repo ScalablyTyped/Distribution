@@ -1,12 +1,15 @@
 package typings.amcharts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmPieChart", JSImport.Namespace)
-@js.native
-object amPieChartMod extends js.Object {
+object amPieChartMod {
+  
+  @JSImport("amcharts/AmPieChart", JSImport.Default)
+  @js.native
+  class default () extends AmPieChart
   
   @js.native
   trait AmPieChart
@@ -349,7 +352,4 @@ object amPieChartMod extends js.Object {
       */
     var visibleInLegendField: String = js.native
   }
-  
-  @js.native
-  class default () extends AmPieChart
 }

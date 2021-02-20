@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ButtonProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends HTMLProps[js.Any]
      with RippleComponent
      with CustomRenderedComponent {
   
@@ -28,36 +27,24 @@ object ButtonProps {
   }
   
   @scala.inline
-  implicit class ButtonPropsOps[Self <: ButtonProps] (val x: Self) extends AnyVal {
+  implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColored(value: Boolean): Self = StObject.set(x, "colored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccent(value: Boolean): Self = this.set("accent", value.asInstanceOf[js.Any])
+    def setColoredUndefined: Self = StObject.set(x, "colored", js.undefined)
     
     @scala.inline
-    def deleteAccent: Self = this.set("accent", js.undefined)
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColored(value: Boolean): Self = this.set("colored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColored: Self = this.set("colored", js.undefined)
-    
-    @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
   }
 }

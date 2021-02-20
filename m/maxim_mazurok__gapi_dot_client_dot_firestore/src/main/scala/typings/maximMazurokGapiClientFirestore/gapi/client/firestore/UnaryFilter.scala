@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnaryFilter extends js.Object {
+trait UnaryFilter extends StObject {
   
   /** The field to which to apply the operator. */
   var field: js.UndefOr[FieldReference] = js.native
@@ -22,30 +23,18 @@ object UnaryFilter {
   }
   
   @scala.inline
-  implicit class UnaryFilterOps[Self <: UnaryFilter] (val x: Self) extends AnyVal {
+  implicit class UnaryFilterMutableBuilder[Self <: UnaryFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: FieldReference): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
-    
-    @scala.inline
-    def setOp(value: String): Self = this.set("op", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOp: Self = this.set("op", js.undefined)
+    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

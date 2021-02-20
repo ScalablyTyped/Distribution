@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the event object used for client-side events.
   */
 @js.native
-trait ASPxClientEvent[T] extends js.Object {
+trait ASPxClientEvent[T] extends StObject {
   
   /**
     * Dynamically connects the event with an appropriate event handler function.
@@ -46,30 +47,18 @@ object ASPxClientEvent {
   }
   
   @scala.inline
-  implicit class ASPxClientEventOps[Self <: ASPxClientEvent[_], T] (val x: Self with ASPxClientEvent[T]) extends AnyVal {
+  implicit class ASPxClientEventMutableBuilder[Self <: ASPxClientEvent[_], T] (val x: Self with ASPxClientEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddHandler(value: T => Unit): Self = StObject.set(x, "AddHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearHandlers(value: () => Unit): Self = StObject.set(x, "ClearHandlers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFireEvent(value: (js.Any, ASPxClientEventArgs) => Unit): Self = StObject.set(x, "FireEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddHandler(value: T => Unit): Self = this.set("AddHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setClearHandlers(value: () => Unit): Self = this.set("ClearHandlers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFireEvent(value: (js.Any, ASPxClientEventArgs) => Unit): Self = this.set("FireEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveHandler(value: T => Unit): Self = this.set("RemoveHandler", js.Any.fromFunction1(value))
+    def setRemoveHandler(value: T => Unit): Self = StObject.set(x, "RemoveHandler", js.Any.fromFunction1(value))
   }
 }

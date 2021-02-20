@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BitMatrixParser extends js.Object {
+trait BitMatrixParser extends StObject {
   
   var bitMatrix: BitMatrix = js.native
   
@@ -38,39 +39,27 @@ object BitMatrixParser {
   }
   
   @scala.inline
-  implicit class BitMatrixParserOps[Self <: BitMatrixParser] (val x: Self) extends AnyVal {
+  implicit class BitMatrixParserMutableBuilder[Self <: BitMatrixParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitMatrix(value: BitMatrix): Self = StObject.set(x, "bitMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyBit(value: (Double, Double, Double) => Double): Self = StObject.set(x, "copyBit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParsedFormatInfo(value: FormatInformation): Self = StObject.set(x, "parsedFormatInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitMatrix(value: BitMatrix): Self = this.set("bitMatrix", value.asInstanceOf[js.Any])
+    def setParsedVersion(value: Version): Self = StObject.set(x, "parsedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyBit(value: (Double, Double, Double) => Double): Self = this.set("copyBit", js.Any.fromFunction3(value))
+    def setReadCodewords(value: () => js.Array[Double]): Self = StObject.set(x, "readCodewords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParsedFormatInfo(value: FormatInformation): Self = this.set("parsedFormatInfo", value.asInstanceOf[js.Any])
+    def setReadFormatInformation(value: () => FormatInformation): Self = StObject.set(x, "readFormatInformation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParsedVersion(value: Version): Self = this.set("parsedVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadCodewords(value: () => js.Array[Double]): Self = this.set("readCodewords", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadFormatInformation(value: () => FormatInformation): Self = this.set("readFormatInformation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadVersion(value: () => Version): Self = this.set("readVersion", js.Any.fromFunction0(value))
+    def setReadVersion(value: () => Version): Self = StObject.set(x, "readVersion", js.Any.fromFunction0(value))
   }
 }

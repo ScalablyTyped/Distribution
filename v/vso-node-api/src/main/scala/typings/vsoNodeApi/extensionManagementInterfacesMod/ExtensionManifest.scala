@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionManifest extends js.Object {
+trait ExtensionManifest extends StObject {
   
   /**
     * Uri used as base for other relative uri's defined in extension
@@ -95,75 +96,63 @@ object ExtensionManifest {
   }
   
   @scala.inline
-  implicit class ExtensionManifestOps[Self <: ExtensionManifest] (val x: Self) extends AnyVal {
+  implicit class ExtensionManifestMutableBuilder[Self <: ExtensionManifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUri(value: String): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraints(value: js.Array[ContributionConstraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintsVarargs(value: ContributionConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
     @scala.inline
-    def setBaseUri(value: String): Self = this.set("baseUri", value.asInstanceOf[js.Any])
+    def setContributionTypes(value: js.Array[ContributionType]): Self = StObject.set(x, "contributionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintsVarargs(value: ContributionConstraint*): Self = this.set("constraints", js.Array(value :_*))
+    def setContributionTypesVarargs(value: ContributionType*): Self = StObject.set(x, "contributionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setConstraints(value: js.Array[ContributionConstraint]): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setContributions(value: js.Array[Contribution]): Self = StObject.set(x, "contributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionTypesVarargs(value: ContributionType*): Self = this.set("contributionTypes", js.Array(value :_*))
+    def setContributionsVarargs(value: Contribution*): Self = StObject.set(x, "contributions", js.Array(value :_*))
     
     @scala.inline
-    def setContributionTypes(value: js.Array[ContributionType]): Self = this.set("contributionTypes", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[String]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionsVarargs(value: Contribution*): Self = this.set("contributions", js.Array(value :_*))
+    def setDemandsVarargs(value: String*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
     @scala.inline
-    def setContributions(value: js.Array[Contribution]): Self = this.set("contributions", value.asInstanceOf[js.Any])
+    def setEventCallbacks(value: ExtensionEventCallbackCollection): Self = StObject.set(x, "eventCallbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemandsVarargs(value: String*): Self = this.set("demands", js.Array(value :_*))
+    def setFallbackBaseUri(value: String): Self = StObject.set(x, "fallbackBaseUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[String]): Self = this.set("demands", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCallbacks(value: ExtensionEventCallbackCollection): Self = this.set("eventCallbacks", value.asInstanceOf[js.Any])
+    def setLicensing(value: ExtensionLicensing): Self = StObject.set(x, "licensing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackBaseUri(value: String): Self = this.set("fallbackBaseUri", value.asInstanceOf[js.Any])
+    def setManifestVersion(value: Double): Self = StObject.set(x, "manifestVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRestrictedTo(value: js.Array[String]): Self = StObject.set(x, "restrictedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicensing(value: ExtensionLicensing): Self = this.set("licensing", value.asInstanceOf[js.Any])
+    def setRestrictedToVarargs(value: String*): Self = StObject.set(x, "restrictedTo", js.Array(value :_*))
     
     @scala.inline
-    def setManifestVersion(value: Double): Self = this.set("manifestVersion", value.asInstanceOf[js.Any])
+    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictedToVarargs(value: String*): Self = this.set("restrictedTo", js.Array(value :_*))
+    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
     @scala.inline
-    def setRestrictedTo(value: js.Array[String]): Self = this.set("restrictedTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = this.set("scopes", js.Array(value :_*))
-    
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = this.set("scopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceInstanceType(value: String): Self = this.set("serviceInstanceType", value.asInstanceOf[js.Any])
+    def setServiceInstanceType(value: String): Self = StObject.set(x, "serviceInstanceType", value.asInstanceOf[js.Any])
   }
 }

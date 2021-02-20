@@ -1,5 +1,6 @@
 package typings.twitterForWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for a data relevants to the Web Intent just actioned.
   */
 @js.native
-trait TwitterIntentEventData extends js.Object {
+trait TwitterIntentEventData extends StObject {
   
   /**
     * The screen_name of a user;
@@ -39,42 +40,30 @@ object TwitterIntentEventData {
   }
   
   @scala.inline
-  implicit class TwitterIntentEventDataOps[Self <: TwitterIntentEventData] (val x: Self) extends AnyVal {
+  implicit class TwitterIntentEventDataMutableBuilder[Self <: TwitterIntentEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource_tweet_id(value: String): Self = StObject.set(x, "source_tweet_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreen_name(value: String): Self = this.set("screen_name", value.asInstanceOf[js.Any])
+    def setSource_tweet_idUndefined: Self = StObject.set(x, "source_tweet_id", js.undefined)
     
     @scala.inline
-    def deleteScreen_name: Self = this.set("screen_name", js.undefined)
+    def setTweet_id(value: String): Self = StObject.set(x, "tweet_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_tweet_id(value: String): Self = this.set("source_tweet_id", value.asInstanceOf[js.Any])
+    def setTweet_idUndefined: Self = StObject.set(x, "tweet_id", js.undefined)
     
     @scala.inline
-    def deleteSource_tweet_id: Self = this.set("source_tweet_id", js.undefined)
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTweet_id(value: String): Self = this.set("tweet_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTweet_id: Self = this.set("tweet_id", js.undefined)
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

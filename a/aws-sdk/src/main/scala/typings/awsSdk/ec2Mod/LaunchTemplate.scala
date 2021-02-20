@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplate extends js.Object {
+trait LaunchTemplate extends StObject {
   
   /**
     * The time launch template was created.
@@ -51,63 +52,51 @@ object LaunchTemplate {
   }
   
   @scala.inline
-  implicit class LaunchTemplateOps[Self <: LaunchTemplate] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateMutableBuilder[Self <: LaunchTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setDefaultVersionNumber(value: Long): Self = StObject.set(x, "DefaultVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: String): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setDefaultVersionNumberUndefined: Self = StObject.set(x, "DefaultVersionNumber", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setLatestVersionNumber(value: Long): Self = StObject.set(x, "LatestVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersionNumber(value: Long): Self = this.set("DefaultVersionNumber", value.asInstanceOf[js.Any])
+    def setLatestVersionNumberUndefined: Self = StObject.set(x, "LatestVersionNumber", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersionNumber: Self = this.set("DefaultVersionNumber", js.undefined)
+    def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestVersionNumber(value: Long): Self = this.set("LatestVersionNumber", value.asInstanceOf[js.Any])
+    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
     
     @scala.inline
-    def deleteLatestVersionNumber: Self = this.set("LatestVersionNumber", js.undefined)
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateId(value: String): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
     
     @scala.inline
-    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

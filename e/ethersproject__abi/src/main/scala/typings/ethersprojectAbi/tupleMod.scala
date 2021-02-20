@@ -2,14 +2,14 @@ package typings.ethersprojectAbi
 
 import typings.ethersprojectAbi.abstractCoderMod.Coder
 import typings.ethersprojectAbi.abstractCoderMod.Writer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/abi/lib/coders/tuple", JSImport.Namespace)
-@js.native
-object tupleMod extends js.Object {
+object tupleMod {
   
+  @JSImport("@ethersproject/abi/lib/coders/tuple", "TupleCoder")
   @js.native
   class TupleCoder protected () extends Coder {
     def this(coders: js.Array[Coder], localName: String) = this()

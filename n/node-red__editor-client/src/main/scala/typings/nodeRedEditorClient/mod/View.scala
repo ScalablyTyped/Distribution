@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.anon.Link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait View extends js.Object {
+trait View extends StObject {
   
   def calculateTextWidth(str: String, className: String): Double = js.native
   

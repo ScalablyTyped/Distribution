@@ -2,22 +2,41 @@ package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.TypeofMenuDivider
 import typings.blueprintjsCore.anon.TypeofMenuItem
+import typings.blueprintjsCore.menuMod.IMenuProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Menu")
 @js.native
-class Menu ()
-  extends typings.blueprintjsCore.componentsMod.Menu
+class Menu protected ()
+  extends typings.blueprintjsCore.componentsMod.Menu {
+  def this(props: IMenuProps) = this()
+  def this(props: IMenuProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("@blueprintjs/core", "Menu")
-@js.native
-object Menu extends js.Object {
+object Menu {
   
-  var Divider: TypeofMenuDivider = js.native
+  @JSImport("@blueprintjs/core", "Menu")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Item: TypeofMenuItem = js.native
+  @JSImport("@blueprintjs/core", "Menu.Divider")
+  @js.native
+  def Divider: TypeofMenuDivider = js.native
+  @scala.inline
+  def Divider_=(x: TypeofMenuDivider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
-  var displayName: String = js.native
+  @JSImport("@blueprintjs/core", "Menu.Item")
+  @js.native
+  def Item: TypeofMenuItem = js.native
+  @scala.inline
+  def Item_=(x: TypeofMenuItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Menu.displayName")
+  @js.native
+  def displayName: String = js.native
+  @scala.inline
+  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

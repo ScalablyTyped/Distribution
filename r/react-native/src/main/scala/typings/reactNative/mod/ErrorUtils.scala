@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorUtils extends js.Object {
+trait ErrorUtils extends StObject {
   
   def getGlobalHandler(): ErrorHandlerCallback = js.native
   
@@ -20,24 +21,12 @@ object ErrorUtils {
   }
   
   @scala.inline
-  implicit class ErrorUtilsOps[Self <: ErrorUtils] (val x: Self) extends AnyVal {
+  implicit class ErrorUtilsMutableBuilder[Self <: ErrorUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGlobalHandler(value: () => ErrorHandlerCallback): Self = StObject.set(x, "getGlobalHandler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetGlobalHandler(value: () => ErrorHandlerCallback): Self = this.set("getGlobalHandler", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetGlobalHandler(value: ErrorHandlerCallback => Unit): Self = this.set("setGlobalHandler", js.Any.fromFunction1(value))
+    def setSetGlobalHandler(value: ErrorHandlerCallback => Unit): Self = StObject.set(x, "setGlobalHandler", js.Any.fromFunction1(value))
   }
 }

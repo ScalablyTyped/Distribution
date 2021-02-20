@@ -7,6 +7,7 @@ import typings.std.MSMediaKeys
 import typings.std.MediaError
 import typings.winrt.Windows.Media.MediaExtensionManager
 import typings.winrt.Windows.Media.Protection.MediaProtectionManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   **/
 @js.native
-trait MediaPlayer extends js.Object {
+trait MediaPlayer extends StObject {
   
   /* Methods */
   /**
@@ -102,7 +103,7 @@ trait MediaPlayer extends js.Object {
     **/
   def canPlayType(`type`: String): String = js.native
   
-   //TODO: (type: TimeRanges, read - only)
+  //TODO: (type: TimeRanges, read - only)
   /**
     * Gets the caption and subtitle tracks for the current media source.
     **/
@@ -124,13 +125,13 @@ trait MediaPlayer extends js.Object {
     **/
   var currentAudioTrack: js.Any = js.native
   
-   //TODO: (type: AudioTrack, read / write)
+  //TODO: (type: AudioTrack, read / write)
   /**
     * Gets or sets the current caption / subtitle track.
     **/
   var currentCaptionTrack: js.Any = js.native
   
-   //TODO: (type: TextTrack, read / write)
+  //TODO: (type: TextTrack, read / write)
   /**
     * Gets the URL of the current media source.
     **/
@@ -251,7 +252,7 @@ trait MediaPlayer extends js.Object {
     **/
   var isCaptionsEnabled: Boolean = js.native
   
-   //TODO: READ-ONLY
+  //TODO: READ-ONLY
   /**
     * Gets or sets a value that specifies whether the captions control is visible.
     **/
@@ -795,7 +796,7 @@ trait MediaPlayer extends js.Object {
     **/
   var playerState: PlayerState = js.native
   
-   //TODO: (type: TimeRanges, read - only)
+  //TODO: (type: TimeRanges, read - only)
   /**
     * Gets the playlist plugin.
     **/
@@ -806,7 +807,7 @@ trait MediaPlayer extends js.Object {
     **/
   var plugins: js.Array[_] = js.native
   
-   //TODO: (type: ?, read - only)
+  //TODO: (type: ?, read - only)
   /*
     * Gets or sets the URL of an image to display while the current media source is loading.
     **/
@@ -855,19 +856,19 @@ trait MediaPlayer extends js.Object {
     **/
   var scrubbing: Boolean = js.native
   
-   //TODO: (type: Boolean, read - only)
+  //TODO: (type: Boolean, read - only)
   /**
     * Gets or sets a value that specifies whether the current video frame should be updated during a scrub operation.
     **/
   var seekWhileScrubbing: Boolean = js.native
   
-   //TODO: (type: Boolean, read - only)
+  //TODO: (type: Boolean, read - only)
   /**
     * Gets the seekable time ranges of the current media source.
     **/
   var seekable: js.Any = js.native
   
-   //TODO: (type: TimeRanges, read - only)
+  //TODO: (type: TimeRanges, read - only)
   /**
     * Gets a value that specifies whether the player is currently moving to a new playback position due to a seek operation.
     **/
@@ -898,7 +899,7 @@ trait MediaPlayer extends js.Object {
     **/
   var sources: js.Array[_] = js.native
   
-   //TODO: (type: Array, read / write)
+  //TODO: (type: Array, read / write)
   /**
     * Gets or sets the URL of the current media source to be considered.
     **/
@@ -929,7 +930,7 @@ trait MediaPlayer extends js.Object {
     **/
   var textTracks: js.Any = js.native
   
-   // TODO: (type: TextTrackList, read - only)
+  // TODO: (type: TextTrackList, read - only)
   /**
     * Gets or sets the tracks for the player.
     **/
@@ -941,7 +942,7 @@ trait MediaPlayer extends js.Object {
     **/
   def update(mediaSource: js.Object): Unit = js.native
   
-   // TODO: (type: Array, read / write)
+  // TODO: (type: Array, read / write)
   /**
     * Gets the intrinsic height of the current video (in pixels).
     **/

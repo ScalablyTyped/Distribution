@@ -1,12 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/PutEventsOutput", JSImport.Namespace)
-@js.native
-object putEventsOutputMod extends js.Object {
+object putEventsOutputMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/PutEventsOutput", "PutEventsOutput")
+  @js.native
   val PutEventsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

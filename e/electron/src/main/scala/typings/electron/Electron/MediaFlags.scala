@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaFlags extends js.Object {
+trait MediaFlags extends StObject {
   
   /**
     * Whether the media element can be rotated.
@@ -65,42 +66,30 @@ object MediaFlags {
   }
   
   @scala.inline
-  implicit class MediaFlagsOps[Self <: MediaFlags] (val x: Self) extends AnyVal {
+  implicit class MediaFlagsMutableBuilder[Self <: MediaFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanRotate(value: Boolean): Self = StObject.set(x, "canRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanToggleControls(value: Boolean): Self = StObject.set(x, "canToggleControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRotate(value: Boolean): Self = this.set("canRotate", value.asInstanceOf[js.Any])
+    def setInError(value: Boolean): Self = StObject.set(x, "inError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanToggleControls(value: Boolean): Self = this.set("canToggleControls", value.asInstanceOf[js.Any])
+    def setIsControlsVisible(value: Boolean): Self = StObject.set(x, "isControlsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAudio(value: Boolean): Self = this.set("hasAudio", value.asInstanceOf[js.Any])
+    def setIsLooping(value: Boolean): Self = StObject.set(x, "isLooping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInError(value: Boolean): Self = this.set("inError", value.asInstanceOf[js.Any])
+    def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsControlsVisible(value: Boolean): Self = this.set("isControlsVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsLooping(value: Boolean): Self = this.set("isLooping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMuted(value: Boolean): Self = this.set("isMuted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPaused(value: Boolean): Self = this.set("isPaused", value.asInstanceOf[js.Any])
+    def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
   }
 }

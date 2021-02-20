@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventContextDataType extends js.Object {
+trait EventContextDataType extends StObject {
   
   /**
     * The user's city.
@@ -41,48 +42,36 @@ object EventContextDataType {
   }
   
   @scala.inline
-  implicit class EventContextDataTypeOps[Self <: EventContextDataType] (val x: Self) extends AnyVal {
+  implicit class EventContextDataTypeMutableBuilder[Self <: EventContextDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: StringType): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: StringType): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: StringType): Self = this.set("City", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("City", js.undefined)
+    def setDeviceName(value: StringType): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: StringType): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("Country", js.undefined)
+    def setIpAddress(value: StringType): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: StringType): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    def setTimezone(value: StringType): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: StringType): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: StringType): Self = this.set("Timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

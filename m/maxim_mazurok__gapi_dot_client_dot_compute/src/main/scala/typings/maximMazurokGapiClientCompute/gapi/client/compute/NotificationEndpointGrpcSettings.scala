@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationEndpointGrpcSettings extends js.Object {
+trait NotificationEndpointGrpcSettings extends StObject {
   
   /** Optional. If specified, this field is used to set the authority header by the sender of notifications. See https://tools.ietf.org/html/rfc7540#section-8.1.2.3 */
   var authority: js.UndefOr[String] = js.native
@@ -34,48 +35,36 @@ object NotificationEndpointGrpcSettings {
   }
   
   @scala.inline
-  implicit class NotificationEndpointGrpcSettingsOps[Self <: NotificationEndpointGrpcSettings] (val x: Self) extends AnyVal {
+  implicit class NotificationEndpointGrpcSettingsMutableBuilder[Self <: NotificationEndpointGrpcSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthority(value: String): Self = this.set("authority", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def deleteAuthority: Self = this.set("authority", js.undefined)
+    def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setResendInterval(value: Duration): Self = StObject.set(x, "resendInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadName(value: String): Self = this.set("payloadName", value.asInstanceOf[js.Any])
+    def setResendIntervalUndefined: Self = StObject.set(x, "resendInterval", js.undefined)
     
     @scala.inline
-    def deletePayloadName: Self = this.set("payloadName", js.undefined)
+    def setRetryDurationSec(value: Double): Self = StObject.set(x, "retryDurationSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResendInterval(value: Duration): Self = this.set("resendInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResendInterval: Self = this.set("resendInterval", js.undefined)
-    
-    @scala.inline
-    def setRetryDurationSec(value: Double): Self = this.set("retryDurationSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryDurationSec: Self = this.set("retryDurationSec", js.undefined)
+    def setRetryDurationSecUndefined: Self = StObject.set(x, "retryDurationSec", js.undefined)
   }
 }

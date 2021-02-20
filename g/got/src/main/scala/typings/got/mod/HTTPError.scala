@@ -1,7 +1,9 @@
 package typings.got.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.node.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,47 +26,26 @@ trait HTTPError
 }
 object HTTPError {
   
-  @scala.inline
-  def apply(
-    body: Buffer | String | js.Object,
-    headers: IncomingHttpHeaders,
-    message: String,
-    name: typings.got.gotStrings.HTTPError,
-    statusCode: Double,
-    statusMessage: String
-  ): HTTPError = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
-    __obj.asInstanceOf[HTTPError]
-  }
+  @JSImport("got", "HTTPError")
+  @js.native
+  val ^ : Instantiable0[HTTPError] = js.native
   
   @scala.inline
-  implicit class HTTPErrorOps[Self <: HTTPError] (val x: Self) extends AnyVal {
+  implicit class HTTPErrorMutableBuilder[Self <: HTTPError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Buffer | String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: typings.got.gotStrings.HTTPError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Buffer | String | js.Object): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: IncomingHttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: typings.got.gotStrings.HTTPError): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

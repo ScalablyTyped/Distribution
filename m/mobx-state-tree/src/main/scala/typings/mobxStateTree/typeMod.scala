@@ -6,18 +6,31 @@ import typings.mobxStateTree.modelMod.ModelPrimitive
 import typings.mobxStateTree.nodeUtilsMod.IStateTreeNode
 import typings.mobxStateTree.typeCheckerMod.IValidationContext
 import typings.mobxStateTree.typeCheckerMod.IValidationResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-state-tree/dist/core/type/type", JSImport.Namespace)
-@js.native
-object typeMod extends js.Object {
+object typeMod {
   
+  @JSImport("mobx-state-tree/dist/core/type/type", "isType")
+  @js.native
   def isType(value: js.Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean = js.native
   
+  type ExtractCSTWithSTN[IT /* <: SnapshotType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
+  
+  type ExtractCSTWithoutSTN[IT /* <: CreationType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
+  
+  type IAnyComplexType = IType[js.Any, js.Any, js.Object]
+  
+  type IAnyType = IType[js.Any, js.Any, js.Any]
+  
+  type IComplexType[C, S, T] = IType[C, S, T with js.Object]
+  
+  type ISimpleType[T] = IType[T, T, T]
+  
   @js.native
-  trait IType[C, S, T] extends js.Object {
+  trait IType[C, S, T] extends StObject {
     
     /**
       * @deprecated use `SnapshotIn<typeof MyType>` instead.
@@ -85,18 +98,6 @@ object typeMod extends js.Object {
       */
     def validate(thing: C, context: IValidationContext): IValidationResult = js.native
   }
-  
-  type ExtractCSTWithSTN[IT /* <: SnapshotType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
-  
-  type ExtractCSTWithoutSTN[IT /* <: CreationType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
-  
-  type IAnyComplexType = IType[js.Any, js.Any, js.Object]
-  
-  type IAnyType = IType[js.Any, js.Any, js.Any]
-  
-  type IComplexType[C, S, T] = IType[C, S, T with js.Object]
-  
-  type ISimpleType[T] = IType[T, T, T]
   
   type Instance[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T['Type'] */ js.Any)
   

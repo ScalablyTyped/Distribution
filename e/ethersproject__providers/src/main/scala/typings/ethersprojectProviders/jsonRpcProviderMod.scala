@@ -9,14 +9,14 @@ import typings.ethersprojectNetworks.typesMod.Networkish
 import typings.ethersprojectProviders.anon.DeferrableTransactionRequ
 import typings.ethersprojectProviders.baseProviderMod.BaseProvider
 import typings.ethersprojectWeb.mod.ConnectionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/providers/lib/json-rpc-provider", JSImport.Namespace)
-@js.native
-object jsonRpcProviderMod extends js.Object {
+object jsonRpcProviderMod {
   
+  @JSImport("@ethersproject/providers/lib/json-rpc-provider", "JsonRpcProvider")
   @js.native
   class JsonRpcProvider () extends BaseProvider {
     def this(url: String) = this()
@@ -48,15 +48,21 @@ object jsonRpcProviderMod extends js.Object {
     def send(method: String, params: js.Array[_]): js.Promise[_] = js.native
   }
   /* static members */
-  @js.native
-  object JsonRpcProvider extends js.Object {
+  object JsonRpcProvider {
     
+    @JSImport("@ethersproject/providers/lib/json-rpc-provider", "JsonRpcProvider.defaultUrl")
+    @js.native
     def defaultUrl(): String = js.native
     
+    @JSImport("@ethersproject/providers/lib/json-rpc-provider", "JsonRpcProvider.hexlifyTransaction")
+    @js.native
     def hexlifyTransaction(transaction: TransactionRequest): StringDictionary[String] = js.native
+    @JSImport("@ethersproject/providers/lib/json-rpc-provider", "JsonRpcProvider.hexlifyTransaction")
+    @js.native
     def hexlifyTransaction(transaction: TransactionRequest, allowExtra: StringDictionary[Boolean]): StringDictionary[String] = js.native
   }
   
+  @JSImport("@ethersproject/providers/lib/json-rpc-provider", "JsonRpcSigner")
   @js.native
   class JsonRpcSigner protected ()
     extends Signer

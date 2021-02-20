@@ -1,5 +1,6 @@
 package typings.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.ERROR
   - typings.xrm.xrmStrings.RECOMMENDATION
 */
-trait NotificationLevel extends js.Object
+trait NotificationLevel extends StObject
 object NotificationLevel {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,75 +44,63 @@ object TeamsAsyncOperation {
   }
   
   @scala.inline
-  implicit class TeamsAsyncOperationOps[Self <: TeamsAsyncOperation] (val x: Self) extends AnyVal {
+  implicit class TeamsAsyncOperationMutableBuilder[Self <: TeamsAsyncOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttemptsCount(value: Double): Self = StObject.set(x, "attemptsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptsCountUndefined: Self = StObject.set(x, "attemptsCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttemptsCount(value: Double): Self = this.set("attemptsCount", value.asInstanceOf[js.Any])
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def deleteAttemptsCount: Self = this.set("attemptsCount", js.undefined)
+    def setError(value: NullableOption[OperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setError(value: NullableOption[OperationError]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setLastActionDateTime(value: String): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setOperationType(value: TeamsAsyncOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastActionDateTime(value: String): Self = this.set("lastActionDateTime", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def deleteLastActionDateTime: Self = this.set("lastActionDateTime", js.undefined)
+    def setStatus(value: TeamsAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: TeamsAsyncOperationType): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setTargetResourceId(value: NullableOption[String]): Self = StObject.set(x, "targetResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TeamsAsyncOperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTargetResourceIdNull: Self = StObject.set(x, "targetResourceId", null)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTargetResourceIdUndefined: Self = StObject.set(x, "targetResourceId", js.undefined)
     
     @scala.inline
-    def setTargetResourceId(value: NullableOption[String]): Self = this.set("targetResourceId", value.asInstanceOf[js.Any])
+    def setTargetResourceLocation(value: NullableOption[String]): Self = StObject.set(x, "targetResourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTargetResourceId: Self = this.set("targetResourceId", js.undefined)
+    def setTargetResourceLocationNull: Self = StObject.set(x, "targetResourceLocation", null)
     
     @scala.inline
-    def setTargetResourceIdNull: Self = this.set("targetResourceId", null)
-    
-    @scala.inline
-    def setTargetResourceLocation(value: NullableOption[String]): Self = this.set("targetResourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResourceLocation: Self = this.set("targetResourceLocation", js.undefined)
-    
-    @scala.inline
-    def setTargetResourceLocationNull: Self = this.set("targetResourceLocation", null)
+    def setTargetResourceLocationUndefined: Self = StObject.set(x, "targetResourceLocation", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestCancelExternalWorkflowExecutionInitiatedEventAttributes extends js.Object {
+trait RequestCancelExternalWorkflowExecutionInitiatedEventAttributes extends StObject {
   
   /**
     * Data attached to the event that can be used by the decider in subsequent workflow tasks.
@@ -36,36 +37,24 @@ object RequestCancelExternalWorkflowExecutionInitiatedEventAttributes {
   }
   
   @scala.inline
-  implicit class RequestCancelExternalWorkflowExecutionInitiatedEventAttributesOps[Self <: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class RequestCancelExternalWorkflowExecutionInitiatedEventAttributesMutableBuilder[Self <: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = this.set("workflowId", value.asInstanceOf[js.Any])
+    def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
     
     @scala.inline
-    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
-    
-    @scala.inline
-    def setRunId(value: WorkflowRunIdOptional): Self = this.set("runId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunId: Self = this.set("runId", js.undefined)
+    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }
 }

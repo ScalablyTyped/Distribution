@@ -7,13 +7,14 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.rxCore.Rx.IDisposable
 import typings.rxCore.Rx.IScheduler
 import typings.rxCore.Rx.Observer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
+  
+  type AsyncSubject[T] = Subject[T]
   
   @js.native
   trait AsyncSubjectStatic
@@ -51,7 +52,7 @@ object Rx extends js.Object {
   }
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     def multicast(subject: Observable[T]): ConnectableObservable[T] = js.native
     def multicast[TResult](
@@ -94,7 +95,7 @@ object Rx extends js.Object {
     ): ConnectableObservable[T] = js.native
     def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
     def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
-        // hack to catch first omitted parameter
+    // hack to catch first omitted parameter
     def replay(selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]]): Observable[T] = js.native
     def replay(
       selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
@@ -180,6 +181,8 @@ object Rx extends js.Object {
     def shareValue(initialValue: T): Observable[T] = js.native
   }
   
+  type ReplaySubject[T] = Subject[T]
+  
   @js.native
   trait ReplaySubjectStatic
     extends Instantiable0[ReplaySubject[js.Object]]
@@ -192,6 +195,8 @@ object Rx extends js.Object {
           ReplaySubject[js.Object]
         ]
   
+  type Subject[T] = ISubject[T]
+  
   @js.native
   trait SubjectStatic
     extends Instantiable0[Subject[js.Object]] {
@@ -201,10 +206,4 @@ object Rx extends js.Object {
     def create[T](observer: Observer[T]): ISubject[T] = js.native
     def create[T](observer: Observer[T], observable: Observable[T]): ISubject[T] = js.native
   }
-  
-  type AsyncSubject[T] = Subject[T]
-  
-  type ReplaySubject[T] = Subject[T]
-  
-  type Subject[T] = ISubject[T]
 }

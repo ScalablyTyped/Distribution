@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationControllable extends js.Object {
+trait AnnotationControllable extends StObject {
   
   var annotation: Annotation = js.native
   
@@ -24,33 +25,21 @@ object AnnotationControllable {
   }
   
   @scala.inline
-  implicit class AnnotationControllableOps[Self <: AnnotationControllable] (val x: Self) extends AnyVal {
+  implicit class AnnotationControllableMutableBuilder[Self <: AnnotationControllable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation(value: Annotation): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: Chart_): Self = this.set("chart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCollection(value: String): Self = this.set("collection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = this.set("points", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoints(value: js.Array[Point]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

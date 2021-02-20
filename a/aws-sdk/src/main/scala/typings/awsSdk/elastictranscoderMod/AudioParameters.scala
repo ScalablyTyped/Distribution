@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioParameters extends js.Object {
+trait AudioParameters extends StObject {
   
   /**
     * The method of organizing audio channels and tracks. Use Audio:Channels to specify the number of channels in your output, and Audio:AudioPackingMode to specify the number of tracks and their relation to the channels. If you do not specify an Audio:AudioPackingMode, Elastic Transcoder uses SingleTrack. The following values are valid:  SingleTrack, OneChannelPerTrack, and OneChannelPerTrackWithMosTo8Tracks  When you specify SingleTrack, Elastic Transcoder creates a single track for your output. The track can have up to eight channels. Use SingleTrack for all non-mxf containers. The outputs of SingleTrack for a specific channel value and inputs are as follows:    0  channels with any input: Audio omitted from the output    1, 2, or auto  channels with no audio input: Audio omitted from the output    1  channel with any input with audio: One track with one channel, downmixed if necessary    2  channels with one track with one channel: One track with two identical channels    2 or auto  channels with two tracks with one channel each: One track with two channels    2 or auto  channels with one track with two channels: One track with two channels    2  channels with one track with multiple channels: One track with two channels    auto  channels with one track with one channel: One track with one channel    auto  channels with one track with multiple channels: One track with multiple channels   When you specify OneChannelPerTrack, Elastic Transcoder creates a new track for every channel in your output. Your output can have up to eight single-channel tracks. The outputs of OneChannelPerTrack for a specific channel value and inputs are as follows:    0  channels with any input: Audio omitted from the output    1, 2, or auto  channels with no audio input: Audio omitted from the output    1  channel with any input with audio: One track with one channel, downmixed if necessary    2  channels with one track with one channel: Two tracks with one identical channel each    2 or auto  channels with two tracks with one channel each: Two tracks with one channel each    2 or auto  channels with one track with two channels: Two tracks with one channel each    2  channels with one track with multiple channels: Two tracks with one channel each    auto  channels with one track with one channel: One track with one channel    auto  channels with one track with multiple channels: Up to eight tracks with one channel each   When you specify OneChannelPerTrackWithMosTo8Tracks, Elastic Transcoder creates eight single-channel tracks for your output. All tracks that do not contain audio data from an input channel are MOS, or Mit Out Sound, tracks. The outputs of OneChannelPerTrackWithMosTo8Tracks for a specific channel value and inputs are as follows:    0  channels with any input: Audio omitted from the output    1, 2, or auto  channels with no audio input: Audio omitted from the output    1  channel with any input with audio: One track with one channel, downmixed if necessary, plus six MOS tracks    2  channels with one track with one channel: Two tracks with one identical channel each, plus six MOS tracks    2 or auto  channels with two tracks with one channel each: Two tracks with one channel each, plus six MOS tracks    2 or auto  channels with one track with two channels: Two tracks with one channel each, plus six MOS tracks    2  channels with one track with multiple channels: Two tracks with one channel each, plus six MOS tracks    auto  channels with one track with one channel: One track with one channel, plus seven MOS tracks    auto  channels with one track with multiple channels: Up to eight tracks with one channel each, plus MOS tracks until there are eight tracks in all  
@@ -46,54 +47,42 @@ object AudioParameters {
   }
   
   @scala.inline
-  implicit class AudioParametersOps[Self <: AudioParameters] (val x: Self) extends AnyVal {
+  implicit class AudioParametersMutableBuilder[Self <: AudioParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioPackingMode(value: AudioPackingMode): Self = StObject.set(x, "AudioPackingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioPackingModeUndefined: Self = StObject.set(x, "AudioPackingMode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitRate(value: AudioBitRate): Self = StObject.set(x, "BitRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioPackingMode(value: AudioPackingMode): Self = this.set("AudioPackingMode", value.asInstanceOf[js.Any])
+    def setBitRateUndefined: Self = StObject.set(x, "BitRate", js.undefined)
     
     @scala.inline
-    def deleteAudioPackingMode: Self = this.set("AudioPackingMode", js.undefined)
+    def setChannels(value: AudioChannels): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitRate(value: AudioBitRate): Self = this.set("BitRate", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
     @scala.inline
-    def deleteBitRate: Self = this.set("BitRate", js.undefined)
+    def setCodec(value: AudioCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: AudioChannels): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    def setCodecOptions(value: AudioCodecOptions): Self = StObject.set(x, "CodecOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChannels: Self = this.set("Channels", js.undefined)
+    def setCodecOptionsUndefined: Self = StObject.set(x, "CodecOptions", js.undefined)
     
     @scala.inline
-    def setCodec(value: AudioCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("Codec", js.undefined)
+    def setSampleRate(value: AudioSampleRate): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecOptions(value: AudioCodecOptions): Self = this.set("CodecOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodecOptions: Self = this.set("CodecOptions", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: AudioSampleRate): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

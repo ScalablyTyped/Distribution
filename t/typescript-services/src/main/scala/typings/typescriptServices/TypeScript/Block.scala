@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,33 +49,21 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseBraceLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "closeBraceLeadingComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseBraceLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "closeBraceLeadingComments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseBraceToken(value: IASTSpan): Self = StObject.set(x, "closeBraceToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBraceLeadingCommentsVarargs(value: Comment*): Self = this.set("closeBraceLeadingComments", js.Array(value :_*))
+    def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBraceLeadingComments(value: js.Array[Comment]): Self = this.set("closeBraceLeadingComments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCloseBraceToken(value: IASTSpan): Self = this.set("closeBraceToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatements(value: ISyntaxList2): Self = this.set("statements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (Block, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def setStructuralEquals(value: (Block, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.neptuneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parameter extends js.Object {
+trait Parameter extends StObject {
   
   /**
     * Specifies the valid range of values for the parameter.
@@ -66,78 +67,66 @@ object Parameter {
   }
   
   @scala.inline
-  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyMethod(value: ApplyMethod): Self = StObject.set(x, "ApplyMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValues(value: String): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    def setApplyMethodUndefined: Self = StObject.set(x, "ApplyMethod", js.undefined)
     
     @scala.inline
-    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    def setApplyType(value: String): Self = StObject.set(x, "ApplyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyMethod(value: ApplyMethod): Self = this.set("ApplyMethod", value.asInstanceOf[js.Any])
+    def setApplyTypeUndefined: Self = StObject.set(x, "ApplyType", js.undefined)
     
     @scala.inline
-    def deleteApplyMethod: Self = this.set("ApplyMethod", js.undefined)
+    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyType(value: String): Self = this.set("ApplyType", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
     @scala.inline
-    def deleteApplyType: Self = this.set("ApplyType", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("DataType", js.undefined)
+    def setIsModifiable(value: Boolean): Self = StObject.set(x, "IsModifiable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsModifiableUndefined: Self = StObject.set(x, "IsModifiable", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setMinimumEngineVersion(value: String): Self = StObject.set(x, "MinimumEngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsModifiable(value: Boolean): Self = this.set("IsModifiable", value.asInstanceOf[js.Any])
+    def setMinimumEngineVersionUndefined: Self = StObject.set(x, "MinimumEngineVersion", js.undefined)
     
     @scala.inline
-    def deleteIsModifiable: Self = this.set("IsModifiable", js.undefined)
+    def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumEngineVersion(value: String): Self = this.set("MinimumEngineVersion", value.asInstanceOf[js.Any])
+    def setParameterNameUndefined: Self = StObject.set(x, "ParameterName", js.undefined)
     
     @scala.inline
-    def deleteMinimumEngineVersion: Self = this.set("MinimumEngineVersion", js.undefined)
+    def setParameterValue(value: String): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterName(value: String): Self = this.set("ParameterName", value.asInstanceOf[js.Any])
+    def setParameterValueUndefined: Self = StObject.set(x, "ParameterValue", js.undefined)
     
     @scala.inline
-    def deleteParameterName: Self = this.set("ParameterName", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValue(value: String): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterValue: Self = this.set("ParameterValue", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
   }
 }

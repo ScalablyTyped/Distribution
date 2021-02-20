@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.HeightReference
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableDepthTestDistance extends js.Object {
+trait DisableDepthTestDistance extends StObject {
   
   var color: js.UndefOr[typings.cesium.mod.Color] = js.native
   
@@ -38,78 +39,66 @@ object DisableDepthTestDistance {
   }
   
   @scala.inline
-  implicit class DisableDepthTestDistanceOps[Self <: DisableDepthTestDistance] (val x: Self) extends AnyVal {
+  implicit class DisableDepthTestDistanceMutableBuilder[Self <: DisableDepthTestDistance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableDepthTestDistance(value: Property): Self = StObject.set(x, "disableDepthTestDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: typings.cesium.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDisableDepthTestDistanceUndefined: Self = StObject.set(x, "disableDepthTestDistance", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDistanceDisplayCondition(value: Property): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDepthTestDistance(value: Property): Self = this.set("disableDepthTestDistance", value.asInstanceOf[js.Any])
+    def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
     
     @scala.inline
-    def deleteDisableDepthTestDistance: Self = this.set("disableDepthTestDistance", js.undefined)
+    def setHeightReference(value: HeightReference): Self = StObject.set(x, "heightReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceDisplayCondition(value: Property): Self = this.set("distanceDisplayCondition", value.asInstanceOf[js.Any])
+    def setHeightReferenceUndefined: Self = StObject.set(x, "heightReference", js.undefined)
     
     @scala.inline
-    def deleteDistanceDisplayCondition: Self = this.set("distanceDisplayCondition", js.undefined)
+    def setOutlineColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightReference(value: HeightReference): Self = this.set("heightReference", value.asInstanceOf[js.Any])
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def deleteHeightReference: Self = this.set("heightReference", js.undefined)
+    def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: typings.cesium.mod.Color): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineWidth(value: Double): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
     @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setScaleByDistance(value: Property): Self = StObject.set(x, "scaleByDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelSize(value: Double): Self = this.set("pixelSize", value.asInstanceOf[js.Any])
+    def setScaleByDistanceUndefined: Self = StObject.set(x, "scaleByDistance", js.undefined)
     
     @scala.inline
-    def deletePixelSize: Self = this.set("pixelSize", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleByDistance(value: Property): Self = this.set("scaleByDistance", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteScaleByDistance: Self = this.set("scaleByDistance", js.undefined)
+    def setTranslucencyByDistance(value: Property): Self = StObject.set(x, "translucencyByDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setTranslucencyByDistance(value: Property): Self = this.set("translucencyByDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslucencyByDistance: Self = this.set("translucencyByDistance", js.undefined)
+    def setTranslucencyByDistanceUndefined: Self = StObject.set(x, "translucencyByDistance", js.undefined)
   }
 }

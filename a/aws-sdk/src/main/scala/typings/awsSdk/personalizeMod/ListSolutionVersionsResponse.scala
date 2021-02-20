@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSolutionVersionsResponse extends js.Object {
+trait ListSolutionVersionsResponse extends StObject {
   
   /**
     * A token for getting the next set of solution versions (if they exist).
@@ -26,33 +27,21 @@ object ListSolutionVersionsResponse {
   }
   
   @scala.inline
-  implicit class ListSolutionVersionsResponseOps[Self <: ListSolutionVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSolutionVersionsResponseMutableBuilder[Self <: ListSolutionVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSolutionVersions(value: SolutionVersions): Self = StObject.set(x, "solutionVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSolutionVersionsUndefined: Self = StObject.set(x, "solutionVersions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSolutionVersionsVarargs(value: SolutionVersionSummary*): Self = this.set("solutionVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSolutionVersions(value: SolutionVersions): Self = this.set("solutionVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolutionVersions: Self = this.set("solutionVersions", js.undefined)
+    def setSolutionVersionsVarargs(value: SolutionVersionSummary*): Self = StObject.set(x, "solutionVersions", js.Array(value :_*))
   }
 }

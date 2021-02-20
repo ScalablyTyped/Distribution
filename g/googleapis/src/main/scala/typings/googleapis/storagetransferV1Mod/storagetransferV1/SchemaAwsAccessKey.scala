@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html)).
   */
 @js.native
-trait SchemaAwsAccessKey extends js.Object {
+trait SchemaAwsAccessKey extends StObject {
   
   /**
     * AWS access key ID. Required.
@@ -31,30 +32,18 @@ object SchemaAwsAccessKey {
   }
   
   @scala.inline
-  implicit class SchemaAwsAccessKeyOps[Self <: SchemaAwsAccessKey] (val x: Self) extends AnyVal {
+  implicit class SchemaAwsAccessKeyMutableBuilder[Self <: SchemaAwsAccessKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: String): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessKeyId: Self = this.set("accessKeyId", js.undefined)
-    
-    @scala.inline
-    def setSecretAccessKey(value: String): Self = this.set("secretAccessKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretAccessKey: Self = this.set("secretAccessKey", js.undefined)
+    def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
   }
 }

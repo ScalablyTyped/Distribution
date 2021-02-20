@@ -1,6 +1,7 @@
 package typings.baiduApp.swan
 
 import typings.baiduApp.baiduAppNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,42 +78,30 @@ object orderInfoOptions {
   }
   
   @scala.inline
-  implicit class orderInfoOptionsOps[Self <: orderInfoOptions] (val x: Self) extends AnyVal {
+  implicit class orderInfoOptionsMutableBuilder[Self <: orderInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBizInfo(value: String): Self = StObject.set(x, "bizInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppKey(value: String): Self = this.set("appKey", value.asInstanceOf[js.Any])
+    def setDealTitle(value: String): Self = StObject.set(x, "dealTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBizInfo(value: String): Self = this.set("bizInfo", value.asInstanceOf[js.Any])
+    def setRsaSign(value: String): Self = StObject.set(x, "rsaSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealId(value: String): Self = this.set("dealId", value.asInstanceOf[js.Any])
+    def setSignFieldsRange(value: `1`): Self = StObject.set(x, "signFieldsRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealTitle(value: String): Self = this.set("dealTitle", value.asInstanceOf[js.Any])
+    def setTotalAmount(value: String): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaSign(value: String): Self = this.set("rsaSign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignFieldsRange(value: `1`): Self = this.set("signFieldsRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalAmount(value: String): Self = this.set("totalAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTpOrderId(value: String): Self = this.set("tpOrderId", value.asInstanceOf[js.Any])
+    def setTpOrderId(value: String): Self = StObject.set(x, "tpOrderId", value.asInstanceOf[js.Any])
   }
 }

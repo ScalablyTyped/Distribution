@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlatformFilter extends js.Object {
+trait PlatformFilter extends StObject {
   
   /**
     * The operator to apply to the Type with each of the Values. Valid values: = | != | &lt; | &lt;= | &gt; | &gt;= | contains | begins_with | ends_with 
@@ -31,39 +32,27 @@ object PlatformFilter {
   }
   
   @scala.inline
-  implicit class PlatformFilterOps[Self <: PlatformFilter] (val x: Self) extends AnyVal {
+  implicit class PlatformFilterMutableBuilder[Self <: PlatformFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperator(value: PlatformFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: PlatformFilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: PlatformFilterOperator): Self = this.set("Operator", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("Operator", js.undefined)
+    def setValues(value: PlatformFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: PlatformFilterType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: PlatformFilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: PlatformFilterValueList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: PlatformFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

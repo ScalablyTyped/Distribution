@@ -2,14 +2,14 @@ package typings.awsSdkProtocolJsonRpc
 
 import typings.awsSdkTypes.httpMod.HttpRequest
 import typings.awsSdkTypes.serdeMod.RequestSerializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/protocol-json-rpc/build/JsonRpcSerializer", JSImport.Namespace)
-@js.native
-object jsonRpcSerializerMod extends js.Object {
+object jsonRpcSerializerMod {
   
+  @JSImport("@aws-sdk/protocol-json-rpc/build/JsonRpcSerializer", "JsonRpcSerializer")
   @js.native
   class JsonRpcSerializer[StreamType] protected ()
     extends RequestSerializer[StreamType, js.Any] {

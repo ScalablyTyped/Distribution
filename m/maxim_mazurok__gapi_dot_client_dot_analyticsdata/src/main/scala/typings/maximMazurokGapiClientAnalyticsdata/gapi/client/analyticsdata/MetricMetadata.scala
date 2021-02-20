@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricMetadata extends js.Object {
+trait MetricMetadata extends StObject {
   
   /** A metric name. Useable in [Metric](#Metric)'s `name`. For example, `eventCount`. */
   var apiName: js.UndefOr[String] = js.native
@@ -43,63 +44,51 @@ object MetricMetadata {
   }
   
   @scala.inline
-  implicit class MetricMetadataOps[Self <: MetricMetadata] (val x: Self) extends AnyVal {
+  implicit class MetricMetadataMutableBuilder[Self <: MetricMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomDefinition(value: Boolean): Self = StObject.set(x, "customDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiName(value: String): Self = this.set("apiName", value.asInstanceOf[js.Any])
+    def setCustomDefinitionUndefined: Self = StObject.set(x, "customDefinition", js.undefined)
     
     @scala.inline
-    def deleteApiName: Self = this.set("apiName", js.undefined)
+    def setDeprecatedApiNames(value: js.Array[String]): Self = StObject.set(x, "deprecatedApiNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDefinition(value: Boolean): Self = this.set("customDefinition", value.asInstanceOf[js.Any])
+    def setDeprecatedApiNamesUndefined: Self = StObject.set(x, "deprecatedApiNames", js.undefined)
     
     @scala.inline
-    def deleteCustomDefinition: Self = this.set("customDefinition", js.undefined)
+    def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value :_*))
     
     @scala.inline
-    def setDeprecatedApiNamesVarargs(value: String*): Self = this.set("deprecatedApiNames", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedApiNames(value: js.Array[String]): Self = this.set("deprecatedApiNames", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeprecatedApiNames: Self = this.set("deprecatedApiNames", js.undefined)
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setUiName(value: String): Self = StObject.set(x, "uiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUiName(value: String): Self = this.set("uiName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUiName: Self = this.set("uiName", js.undefined)
+    def setUiNameUndefined: Self = StObject.set(x, "uiName", js.undefined)
   }
 }

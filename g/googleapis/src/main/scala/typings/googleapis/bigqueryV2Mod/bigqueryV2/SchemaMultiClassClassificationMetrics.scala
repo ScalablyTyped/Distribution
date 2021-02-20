@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Evaluation metrics for multi-class classification models.
   */
 @js.native
-trait SchemaMultiClassClassificationMetrics extends js.Object {
+trait SchemaMultiClassClassificationMetrics extends StObject {
   
   /**
     * Aggregate classification metrics.
@@ -29,33 +30,21 @@ object SchemaMultiClassClassificationMetrics {
   }
   
   @scala.inline
-  implicit class SchemaMultiClassClassificationMetricsOps[Self <: SchemaMultiClassClassificationMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaMultiClassClassificationMetricsMutableBuilder[Self <: SchemaMultiClassClassificationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateClassificationMetrics(value: SchemaAggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfusionMatrixList(value: js.Array[SchemaConfusionMatrix]): Self = StObject.set(x, "confusionMatrixList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateClassificationMetrics(value: SchemaAggregateClassificationMetrics): Self = this.set("aggregateClassificationMetrics", value.asInstanceOf[js.Any])
+    def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
     
     @scala.inline
-    def deleteAggregateClassificationMetrics: Self = this.set("aggregateClassificationMetrics", js.undefined)
-    
-    @scala.inline
-    def setConfusionMatrixListVarargs(value: SchemaConfusionMatrix*): Self = this.set("confusionMatrixList", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfusionMatrixList(value: js.Array[SchemaConfusionMatrix]): Self = this.set("confusionMatrixList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfusionMatrixList: Self = this.set("confusionMatrixList", js.undefined)
+    def setConfusionMatrixListVarargs(value: SchemaConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
   }
 }

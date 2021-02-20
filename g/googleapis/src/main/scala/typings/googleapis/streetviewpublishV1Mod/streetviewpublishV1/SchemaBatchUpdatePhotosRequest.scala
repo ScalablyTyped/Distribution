@@ -1,5 +1,6 @@
 package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * not supported.
   */
 @js.native
-trait SchemaBatchUpdatePhotosRequest extends js.Object {
+trait SchemaBatchUpdatePhotosRequest extends StObject {
   
   /**
     * Required. List of UpdatePhotoRequests.
@@ -25,27 +26,15 @@ object SchemaBatchUpdatePhotosRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchUpdatePhotosRequestOps[Self <: SchemaBatchUpdatePhotosRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchUpdatePhotosRequestMutableBuilder[Self <: SchemaBatchUpdatePhotosRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdatePhotoRequests(value: js.Array[SchemaUpdatePhotoRequest]): Self = StObject.set(x, "updatePhotoRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdatePhotoRequestsUndefined: Self = StObject.set(x, "updatePhotoRequests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdatePhotoRequestsVarargs(value: SchemaUpdatePhotoRequest*): Self = this.set("updatePhotoRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdatePhotoRequests(value: js.Array[SchemaUpdatePhotoRequest]): Self = this.set("updatePhotoRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatePhotoRequests: Self = this.set("updatePhotoRequests", js.undefined)
+    def setUpdatePhotoRequestsVarargs(value: SchemaUpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value :_*))
   }
 }

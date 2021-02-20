@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,39 +62,27 @@ object XScenario {
   }
   
   @scala.inline
-  implicit class XScenarioOps[Self <: XScenario] (val x: Self) extends AnyVal {
+  implicit class XScenarioMutableBuilder[Self <: XScenario] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "addRanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIsScenario(value: () => Boolean): Self = StObject.set(x, "getIsScenario", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsScenario(value: Boolean): Self = this.set("IsScenario", value.asInstanceOf[js.Any])
+    def setGetScenarioComment(value: () => String): Self = StObject.set(x, "getScenarioComment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScenarioComment(value: String): Self = this.set("ScenarioComment", value.asInstanceOf[js.Any])
+    def setIsScenario(value: Boolean): Self = StObject.set(x, "IsScenario", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = this.set("addRanges", js.Any.fromFunction1(value))
+    def setScenarioComment(value: String): Self = StObject.set(x, "ScenarioComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApply(value: () => Unit): Self = this.set("apply", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsScenario(value: () => Boolean): Self = this.set("getIsScenario", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetScenarioComment(value: () => String): Self = this.set("getScenarioComment", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetScenarioComment(value: String => Unit): Self = this.set("setScenarioComment", js.Any.fromFunction1(value))
+    def setSetScenarioComment(value: String => Unit): Self = StObject.set(x, "setScenarioComment", js.Any.fromFunction1(value))
   }
 }

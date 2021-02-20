@@ -1,5 +1,6 @@
 package typings.akamaiEdgeworkers.EW
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   undefined is returned for each property
   */
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /**
     * Indicates if the browser accepts third party cookies.
@@ -118,132 +119,120 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptsThirdPartyCookie(value: Boolean): Self = StObject.set(x, "acceptsThirdPartyCookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptsThirdPartyCookieUndefined: Self = StObject.set(x, "acceptsThirdPartyCookie", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptsThirdPartyCookie(value: Boolean): Self = this.set("acceptsThirdPartyCookie", value.asInstanceOf[js.Any])
+    def setBrandNameUndefined: Self = StObject.set(x, "brandName", js.undefined)
     
     @scala.inline
-    def deleteAcceptsThirdPartyCookie: Self = this.set("acceptsThirdPartyCookie", js.undefined)
+    def setHasAjaxSupport(value: Boolean): Self = StObject.set(x, "hasAjaxSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandName(value: String): Self = this.set("brandName", value.asInstanceOf[js.Any])
+    def setHasAjaxSupportUndefined: Self = StObject.set(x, "hasAjaxSupport", js.undefined)
     
     @scala.inline
-    def deleteBrandName: Self = this.set("brandName", js.undefined)
+    def setHasCookieSupport(value: Boolean): Self = StObject.set(x, "hasCookieSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAjaxSupport(value: Boolean): Self = this.set("hasAjaxSupport", value.asInstanceOf[js.Any])
+    def setHasCookieSupportUndefined: Self = StObject.set(x, "hasCookieSupport", js.undefined)
     
     @scala.inline
-    def deleteHasAjaxSupport: Self = this.set("hasAjaxSupport", js.undefined)
+    def setHasFlashSupport(value: Boolean): Self = StObject.set(x, "hasFlashSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCookieSupport(value: Boolean): Self = this.set("hasCookieSupport", value.asInstanceOf[js.Any])
+    def setHasFlashSupportUndefined: Self = StObject.set(x, "hasFlashSupport", js.undefined)
     
     @scala.inline
-    def deleteHasCookieSupport: Self = this.set("hasCookieSupport", js.undefined)
+    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasFlashSupport(value: Boolean): Self = this.set("hasFlashSupport", value.asInstanceOf[js.Any])
+    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
     
     @scala.inline
-    def deleteHasFlashSupport: Self = this.set("hasFlashSupport", js.undefined)
+    def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
+    def setIsTabletUndefined: Self = StObject.set(x, "isTablet", js.undefined)
     
     @scala.inline
-    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    def setIsWireless(value: Boolean): Self = StObject.set(x, "isWireless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTablet(value: Boolean): Self = this.set("isTablet", value.asInstanceOf[js.Any])
+    def setIsWirelessUndefined: Self = StObject.set(x, "isWireless", js.undefined)
     
     @scala.inline
-    def deleteIsTablet: Self = this.set("isTablet", js.undefined)
+    def setMarketingName(value: String): Self = StObject.set(x, "marketingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWireless(value: Boolean): Self = this.set("isWireless", value.asInstanceOf[js.Any])
+    def setMarketingNameUndefined: Self = StObject.set(x, "marketingName", js.undefined)
     
     @scala.inline
-    def deleteIsWireless: Self = this.set("isWireless", js.undefined)
+    def setMobileBrowser(value: String): Self = StObject.set(x, "mobileBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarketingName(value: String): Self = this.set("marketingName", value.asInstanceOf[js.Any])
+    def setMobileBrowserUndefined: Self = StObject.set(x, "mobileBrowser", js.undefined)
     
     @scala.inline
-    def deleteMarketingName: Self = this.set("marketingName", js.undefined)
+    def setMobileBrowserVersion(value: String): Self = StObject.set(x, "mobileBrowserVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileBrowser(value: String): Self = this.set("mobileBrowser", value.asInstanceOf[js.Any])
+    def setMobileBrowserVersionUndefined: Self = StObject.set(x, "mobileBrowserVersion", js.undefined)
     
     @scala.inline
-    def deleteMobileBrowser: Self = this.set("mobileBrowser", js.undefined)
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileBrowserVersion(value: String): Self = this.set("mobileBrowserVersion", value.asInstanceOf[js.Any])
+    def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
     
     @scala.inline
-    def deleteMobileBrowserVersion: Self = this.set("mobileBrowserVersion", js.undefined)
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
     @scala.inline
-    def deleteModelName: Self = this.set("modelName", js.undefined)
+    def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
     @scala.inline
-    def deleteOs: Self = this.set("os", js.undefined)
+    def setPhysicalScreenHeight(value: Double): Self = StObject.set(x, "physicalScreenHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsVersion(value: String): Self = this.set("osVersion", value.asInstanceOf[js.Any])
+    def setPhysicalScreenHeightUndefined: Self = StObject.set(x, "physicalScreenHeight", js.undefined)
     
     @scala.inline
-    def deleteOsVersion: Self = this.set("osVersion", js.undefined)
+    def setPhysicalScreenWidth(value: Double): Self = StObject.set(x, "physicalScreenWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalScreenHeight(value: Double): Self = this.set("physicalScreenHeight", value.asInstanceOf[js.Any])
+    def setPhysicalScreenWidthUndefined: Self = StObject.set(x, "physicalScreenWidth", js.undefined)
     
     @scala.inline
-    def deletePhysicalScreenHeight: Self = this.set("physicalScreenHeight", js.undefined)
+    def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalScreenWidth(value: Double): Self = this.set("physicalScreenWidth", value.asInstanceOf[js.Any])
+    def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
     
     @scala.inline
-    def deletePhysicalScreenWidth: Self = this.set("physicalScreenWidth", js.undefined)
+    def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionHeight(value: Double): Self = this.set("resolutionHeight", value.asInstanceOf[js.Any])
+    def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
     
     @scala.inline
-    def deleteResolutionHeight: Self = this.set("resolutionHeight", js.undefined)
+    def setXhtmlSupportLevel(value: Double): Self = StObject.set(x, "xhtmlSupportLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionWidth(value: Double): Self = this.set("resolutionWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolutionWidth: Self = this.set("resolutionWidth", js.undefined)
-    
-    @scala.inline
-    def setXhtmlSupportLevel(value: Double): Self = this.set("xhtmlSupportLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhtmlSupportLevel: Self = this.set("xhtmlSupportLevel", js.undefined)
+    def setXhtmlSupportLevelUndefined: Self = StObject.set(x, "xhtmlSupportLevel", js.undefined)
   }
 }

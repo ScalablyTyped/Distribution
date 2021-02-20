@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsConfig extends js.Object {
+trait DnsConfig extends StObject {
   
   /**
     * An array that contains one DnsRecord object for each Route 53 DNS record that you want AWS Cloud Map to create when you register an instance.
@@ -31,36 +32,24 @@ object DnsConfig {
   }
   
   @scala.inline
-  implicit class DnsConfigOps[Self <: DnsConfig] (val x: Self) extends AnyVal {
+  implicit class DnsConfigMutableBuilder[Self <: DnsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespaceId(value: ResourceId): Self = StObject.set(x, "NamespaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsRecordsVarargs(value: DnsRecord*): Self = this.set("DnsRecords", js.Array(value :_*))
+    def setNamespaceIdUndefined: Self = StObject.set(x, "NamespaceId", js.undefined)
     
     @scala.inline
-    def setDnsRecords(value: DnsRecordList): Self = this.set("DnsRecords", value.asInstanceOf[js.Any])
+    def setRoutingPolicy(value: RoutingPolicy): Self = StObject.set(x, "RoutingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceId(value: ResourceId): Self = this.set("NamespaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceId: Self = this.set("NamespaceId", js.undefined)
-    
-    @scala.inline
-    def setRoutingPolicy(value: RoutingPolicy): Self = this.set("RoutingPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutingPolicy: Self = this.set("RoutingPolicy", js.undefined)
+    def setRoutingPolicyUndefined: Self = StObject.set(x, "RoutingPolicy", js.undefined)
   }
 }

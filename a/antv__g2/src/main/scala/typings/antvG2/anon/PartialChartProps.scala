@@ -2,13 +2,14 @@ package typings.antvG2.anon
 
 import typings.antvG2.mod.Styles.background
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@antv/g2.@antv/g2.ChartProps> */
 @js.native
-trait PartialChartProps extends js.Object {
+trait PartialChartProps extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.native
   
@@ -43,86 +44,74 @@ object PartialChartProps {
   }
   
   @scala.inline
-  implicit class PartialChartPropsOps[Self <: PartialChartProps] (val x: Self) extends AnyVal {
+  implicit class PartialChartPropsMutableBuilder[Self <: PartialChartProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setContainer(value: String | HTMLDivElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: background): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setData(value: js.Object | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String | HTMLDivElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setForceFit(value: Boolean): Self = StObject.set(x, "forceFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object | js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setForceFitUndefined: Self = StObject.set(x, "forceFit", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceFit(value: Boolean): Self = this.set("forceFit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceFit: Self = this.set("forceFit", js.undefined)
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
     def setPadding(
       value: Bottom | Double | String | (js.Tuple4[Double | String, Double | String, Double | String, Double | String]) | (js.Tuple2[String, String])
-    ): Self = this.set("padding", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePixelRatio: Self = this.set("pixelRatio", js.undefined)
+    def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
     
     @scala.inline
-    def setPlotBackground(value: background): Self = this.set("plotBackground", value.asInstanceOf[js.Any])
+    def setPlotBackground(value: background): Self = StObject.set(x, "plotBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlotBackground: Self = this.set("plotBackground", js.undefined)
+    def setPlotBackgroundUndefined: Self = StObject.set(x, "plotBackground", js.undefined)
     
     @scala.inline
-    def setTheme(value: js.Object | String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTheme(value: js.Object | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

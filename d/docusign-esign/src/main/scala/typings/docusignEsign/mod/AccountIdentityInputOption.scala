@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountIdentityInputOption extends js.Object {
+trait AccountIdentityInputOption extends StObject {
   
   var isRequired: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object AccountIdentityInputOption {
   }
   
   @scala.inline
-  implicit class AccountIdentityInputOptionOps[Self <: AccountIdentityInputOption] (val x: Self) extends AnyVal {
+  implicit class AccountIdentityInputOptionMutableBuilder[Self <: AccountIdentityInputOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionName(value: String): Self = StObject.set(x, "optionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRequired(value: Boolean): Self = this.set("isRequired", value.asInstanceOf[js.Any])
+    def setOptionNameUndefined: Self = StObject.set(x, "optionName", js.undefined)
     
     @scala.inline
-    def deleteIsRequired: Self = this.set("isRequired", js.undefined)
+    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionName(value: String): Self = this.set("optionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionName: Self = this.set("optionName", js.undefined)
-    
-    @scala.inline
-    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueType: Self = this.set("valueType", js.undefined)
+    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

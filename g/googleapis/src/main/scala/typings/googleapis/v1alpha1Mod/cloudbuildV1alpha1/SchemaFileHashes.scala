@@ -1,5 +1,6 @@
 package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SourceProvenance messages to verify integrity of source input to the build.
   */
 @js.native
-trait SchemaFileHashes extends js.Object {
+trait SchemaFileHashes extends StObject {
   
   /**
     * Collection of file hashes.
@@ -25,27 +26,15 @@ object SchemaFileHashes {
   }
   
   @scala.inline
-  implicit class SchemaFileHashesOps[Self <: SchemaFileHashes] (val x: Self) extends AnyVal {
+  implicit class SchemaFileHashesMutableBuilder[Self <: SchemaFileHashes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileHash(value: js.Array[SchemaHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileHashVarargs(value: SchemaHash*): Self = this.set("fileHash", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileHash(value: js.Array[SchemaHash]): Self = this.set("fileHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileHash: Self = this.set("fileHash", js.undefined)
+    def setFileHashVarargs(value: SchemaHash*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
   }
 }

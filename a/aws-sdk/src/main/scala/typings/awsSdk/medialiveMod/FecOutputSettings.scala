@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FecOutputSettings extends js.Object {
+trait FecOutputSettings extends StObject {
   
   /**
     * Parameter D from SMPTE 2022-1. The height of the FEC protection matrix.  The number of transport stream packets per column error correction packet. Must be between 4 and 20, inclusive.
@@ -31,36 +32,24 @@ object FecOutputSettings {
   }
   
   @scala.inline
-  implicit class FecOutputSettingsOps[Self <: FecOutputSettings] (val x: Self) extends AnyVal {
+  implicit class FecOutputSettingsMutableBuilder[Self <: FecOutputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnDepth(value: integerMin4Max20): Self = StObject.set(x, "ColumnDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnDepthUndefined: Self = StObject.set(x, "ColumnDepth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeFec(value: FecOutputIncludeFec): Self = StObject.set(x, "IncludeFec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnDepth(value: integerMin4Max20): Self = this.set("ColumnDepth", value.asInstanceOf[js.Any])
+    def setIncludeFecUndefined: Self = StObject.set(x, "IncludeFec", js.undefined)
     
     @scala.inline
-    def deleteColumnDepth: Self = this.set("ColumnDepth", js.undefined)
+    def setRowLength(value: integerMin1Max20): Self = StObject.set(x, "RowLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFec(value: FecOutputIncludeFec): Self = this.set("IncludeFec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeFec: Self = this.set("IncludeFec", js.undefined)
-    
-    @scala.inline
-    def setRowLength(value: integerMin1Max20): Self = this.set("RowLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowLength: Self = this.set("RowLength", js.undefined)
+    def setRowLengthUndefined: Self = StObject.set(x, "RowLength", js.undefined)
   }
 }

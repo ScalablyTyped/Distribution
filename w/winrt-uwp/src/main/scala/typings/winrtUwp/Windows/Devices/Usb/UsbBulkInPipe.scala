@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the pipe that the underlying USB driver opens to communicate with a USB bulk IN endpoint of the device. The app can get an input stream from the pipe and access data is being read from the endpoint. */
 @js.native
-trait UsbBulkInPipe extends js.Object {
+trait UsbBulkInPipe extends StObject {
   
   /**
     * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB bulk IN endpoint that is associated with the pipe.
@@ -47,36 +48,24 @@ object UsbBulkInPipe {
   }
   
   @scala.inline
-  implicit class UsbBulkInPipeOps[Self <: UsbBulkInPipe] (val x: Self) extends AnyVal {
+  implicit class UsbBulkInPipeMutableBuilder[Self <: UsbBulkInPipe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "clearStallAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = StObject.set(x, "endpointDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlushBuffer(value: () => Unit): Self = StObject.set(x, "flushBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("clearStallAsync", js.Any.fromFunction0(value))
+    def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointDescriptor(value: UsbBulkInEndpointDescriptor): Self = this.set("endpointDescriptor", value.asInstanceOf[js.Any])
+    def setMaxTransferSizeBytes(value: Double): Self = StObject.set(x, "maxTransferSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushBuffer(value: () => Unit): Self = this.set("flushBuffer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInputStream(value: IInputStream): Self = this.set("inputStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxTransferSizeBytes(value: Double): Self = this.set("maxTransferSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOptions(value: UsbReadOptions): Self = this.set("readOptions", value.asInstanceOf[js.Any])
+    def setReadOptions(value: UsbReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
   }
 }

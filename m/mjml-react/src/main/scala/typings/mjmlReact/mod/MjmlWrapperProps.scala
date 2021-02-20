@@ -5,12 +5,13 @@ import typings.csstype.mod.BackgroundRepeatProperty
 import typings.csstype.mod.BackgroundSizeProperty
 import typings.csstype.mod.TextAlignProperty
 import typings.csstype.mod.VerticalAlignProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MjmlWrapperProps extends js.Object {
+trait MjmlWrapperProps extends StObject {
   
   var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
   
@@ -35,60 +36,48 @@ object MjmlWrapperProps {
   }
   
   @scala.inline
-  implicit class MjmlWrapperPropsOps[Self <: MjmlWrapperProps] (val x: Self) extends AnyVal {
+  implicit class MjmlWrapperPropsMutableBuilder[Self <: MjmlWrapperProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundRepeat(value: BackgroundRepeatProperty): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: BackgroundColorProperty): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBackgroundSize(value: BackgroundSizeProperty[String | Double]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundRepeat(value: BackgroundRepeatProperty): Self = this.set("backgroundRepeat", value.asInstanceOf[js.Any])
+    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
     @scala.inline
-    def deleteBackgroundRepeat: Self = this.set("backgroundRepeat", js.undefined)
+    def setBackgroundUrl(value: String): Self = StObject.set(x, "backgroundUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundSize(value: BackgroundSizeProperty[String | Double]): Self = this.set("backgroundSize", value.asInstanceOf[js.Any])
+    def setBackgroundUrlUndefined: Self = StObject.set(x, "backgroundUrl", js.undefined)
     
     @scala.inline
-    def deleteBackgroundSize: Self = this.set("backgroundSize", js.undefined)
+    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundUrl(value: String): Self = this.set("backgroundUrl", value.asInstanceOf[js.Any])
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def deleteBackgroundUrl: Self = this.set("backgroundUrl", js.undefined)
+    def setTextAlign(value: TextAlignProperty): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlign(value: TextAlignProperty): Self = this.set("textAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

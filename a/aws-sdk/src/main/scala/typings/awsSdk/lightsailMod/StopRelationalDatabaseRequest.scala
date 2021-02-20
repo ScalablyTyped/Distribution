@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopRelationalDatabaseRequest extends js.Object {
+trait StopRelationalDatabaseRequest extends StObject {
   
   /**
     * The name of your database to stop.
@@ -26,27 +27,15 @@ object StopRelationalDatabaseRequest {
   }
   
   @scala.inline
-  implicit class StopRelationalDatabaseRequestOps[Self <: StopRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  implicit class StopRelationalDatabaseRequestMutableBuilder[Self <: StopRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = this.set("relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationalDatabaseSnapshotName: Self = this.set("relationalDatabaseSnapshotName", js.undefined)
+    def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
   }
 }

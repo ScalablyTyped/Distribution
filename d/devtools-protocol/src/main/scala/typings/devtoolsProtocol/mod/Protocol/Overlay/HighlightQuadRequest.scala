@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.Quad
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightQuadRequest extends js.Object {
+trait HighlightQuadRequest extends StObject {
   
   /**
     * The highlight fill color (default: transparent).
@@ -33,36 +34,24 @@ object HighlightQuadRequest {
   }
   
   @scala.inline
-  implicit class HighlightQuadRequestOps[Self <: HighlightQuadRequest] (val x: Self) extends AnyVal {
+  implicit class HighlightQuadRequestMutableBuilder[Self <: HighlightQuadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutlineColor(value: RGBA): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuadVarargs(value: Double*): Self = this.set("quad", js.Array(value :_*))
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def setQuad(value: Quad): Self = this.set("quad", value.asInstanceOf[js.Any])
+    def setQuad(value: Quad): Self = StObject.set(x, "quad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: RGBA): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setOutlineColor(value: RGBA): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setQuadVarargs(value: Double*): Self = StObject.set(x, "quad", js.Array(value :_*))
   }
 }

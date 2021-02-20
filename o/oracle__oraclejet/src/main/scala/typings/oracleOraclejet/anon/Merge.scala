@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,48 +29,36 @@ object Merge {
   }
   
   @scala.inline
-  implicit class MergeOps[Self <: Merge] (val x: Self) extends AnyVal {
+  implicit class MergeMutableBuilder[Self <: Merge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: Boolean): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferred(value: Boolean): Self = this.set("deferred", value.asInstanceOf[js.Any])
+    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
     @scala.inline
-    def deleteDeferred: Self = this.set("deferred", js.undefined)
+    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerge(value: Boolean): Self = this.set("merge", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteMerge: Self = this.set("merge", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: Boolean): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
-    
-    @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

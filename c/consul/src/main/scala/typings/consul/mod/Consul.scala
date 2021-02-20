@@ -1,12 +1,13 @@
 package typings.consul.mod
 
 import typings.consul.mod.Lock.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Consul extends js.Object {
+trait Consul extends StObject {
   
   var acl: Acl = js.native
   
@@ -54,48 +55,36 @@ object Consul {
   }
   
   @scala.inline
-  implicit class ConsulOps[Self <: Consul] (val x: Self) extends AnyVal {
+  implicit class ConsulMutableBuilder[Self <: Consul] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: Acl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCatalog(value: Catalog): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcl(value: Acl): Self = this.set("acl", value.asInstanceOf[js.Any])
+    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgent(value: Agent): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setHealth(value: Health): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: Catalog): Self = this.set("catalog", value.asInstanceOf[js.Any])
+    def setKv(value: Kv): Self = StObject.set(x, "kv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: Event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setLock(value: Options => Lock): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHealth(value: Health): Self = this.set("health", value.asInstanceOf[js.Any])
+    def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKv(value: Kv): Self = this.set("kv", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock(value: Options => Lock): Self = this.set("lock", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSession(value: Session): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWatch(value: typings.consul.mod.Watch.Options => Watch): Self = this.set("watch", js.Any.fromFunction1(value))
+    def setWatch(value: typings.consul.mod.Watch.Options => Watch): Self = StObject.set(x, "watch", js.Any.fromFunction1(value))
   }
 }

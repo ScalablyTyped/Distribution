@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISearchConditionEx extends js.Object {
+trait ISearchConditionEx extends StObject {
   
   def Clone(): ISearchConditionEx = js.native
   
@@ -35,36 +36,24 @@ object ISearchConditionEx {
   }
   
   @scala.inline
-  implicit class ISearchConditionExOps[Self <: ISearchConditionEx] (val x: Self) extends AnyVal {
+  implicit class ISearchConditionExMutableBuilder[Self <: ISearchConditionEx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ISearchConditionEx): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnored(value: Boolean): Self = StObject.set(x, "Ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISearchConditionEx): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setSearchCondition(value: ISearchCondition): Self = StObject.set(x, "SearchCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setSet(value: (ISearchCondition, Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setIgnored(value: Boolean): Self = this.set("Ignored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchCondition(value: ISearchCondition): Self = this.set("SearchCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: (ISearchCondition, Boolean, Boolean, Boolean) => Unit): Self = this.set("Set", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSpecialNULL(value: Boolean): Self = this.set("SpecialNULL", value.asInstanceOf[js.Any])
+    def setSpecialNULL(value: Boolean): Self = StObject.set(x, "SpecialNULL", value.asInstanceOf[js.Any])
   }
 }

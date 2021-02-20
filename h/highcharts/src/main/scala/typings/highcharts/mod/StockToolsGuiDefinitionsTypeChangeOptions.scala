@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockToolsGuiDefinitionsTypeChangeOptions extends js.Object {
+trait StockToolsGuiDefinitionsTypeChangeOptions extends StObject {
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
@@ -28,45 +29,33 @@ object StockToolsGuiDefinitionsTypeChangeOptions {
   }
   
   @scala.inline
-  implicit class StockToolsGuiDefinitionsTypeChangeOptionsOps[Self <: StockToolsGuiDefinitionsTypeChangeOptions] (val x: Self) extends AnyVal {
+  implicit class StockToolsGuiDefinitionsTypeChangeOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsTypeChangeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setTypeCandlestick(value: StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions): Self = StObject.set(x, "typeCandlestick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setTypeCandlestickUndefined: Self = StObject.set(x, "typeCandlestick", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setTypeLine(value: StockToolsGuiDefinitionsTypeChangeTypeLineOptions): Self = StObject.set(x, "typeLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeCandlestick(value: StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions): Self = this.set("typeCandlestick", value.asInstanceOf[js.Any])
+    def setTypeLineUndefined: Self = StObject.set(x, "typeLine", js.undefined)
     
     @scala.inline
-    def deleteTypeCandlestick: Self = this.set("typeCandlestick", js.undefined)
+    def setTypeOHLC(value: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions): Self = StObject.set(x, "typeOHLC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeLine(value: StockToolsGuiDefinitionsTypeChangeTypeLineOptions): Self = this.set("typeLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeLine: Self = this.set("typeLine", js.undefined)
-    
-    @scala.inline
-    def setTypeOHLC(value: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions): Self = this.set("typeOHLC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeOHLC: Self = this.set("typeOHLC", js.undefined)
+    def setTypeOHLCUndefined: Self = StObject.set(x, "typeOHLC", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.pubnub.mod
 
 import typings.pubnub.anon.Created
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFilesResponse extends js.Object {
+trait ListFilesResponse extends StObject {
   
   var count: Double = js.native
   
@@ -25,33 +26,21 @@ object ListFilesResponse {
   }
   
   @scala.inline
-  implicit class ListFilesResponseOps[Self <: ListFilesResponse] (val x: Self) extends AnyVal {
+  implicit class ListFilesResponseMutableBuilder[Self <: ListFilesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Array[Created]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: Created*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Created*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: js.Array[Created]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

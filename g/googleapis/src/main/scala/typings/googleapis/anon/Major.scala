@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Major extends js.Object {
+trait Major extends StObject {
   
   var major: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object Major {
   }
   
   @scala.inline
-  implicit class MajorOps[Self <: Major] (val x: Self) extends AnyVal {
+  implicit class MajorMutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajor(value: Double): Self = this.set("major", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMajor: Self = this.set("major", js.undefined)
-    
-    @scala.inline
-    def setMinor(value: Double): Self = this.set("minor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinor: Self = this.set("minor", js.undefined)
+    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
   }
 }

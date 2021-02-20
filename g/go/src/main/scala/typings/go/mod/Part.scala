@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -308,35 +309,81 @@ class Part () extends Panel {
   /**Gets or sets the Z-ordering position of this Part within its Layer; default value is NaN which means "don't care".*/
   var zOrder: Double = js.native
 }
-/* static members */
-@JSImport("go", "Part")
-@js.native
-object Part extends js.Object {
+object Part {
+  
+  @JSImport("go", "Part")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Part is added to a Diagram or Group, it invalidates the Layout responsible for the Part.*/
-  var LayoutAdded: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutAdded")
+  @js.native
+  def LayoutAdded: Double = js.native
+  @scala.inline
+  def LayoutAdded_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutAdded")(x.asInstanceOf[js.Any])
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Group has been laid out, it invalidates the Layout responsible for that Group; this flag is ignored for Parts that are not Groups.*/
-  var LayoutGroupLayout: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutGroupLayout")
+  @js.native
+  def LayoutGroupLayout: Double = js.native
+  @scala.inline
+  def LayoutGroupLayout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutGroupLayout")(x.asInstanceOf[js.Any])
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Part's GraphObject.visible becomes false, it invalidates the Layout responsible for the Part.*/
-  var LayoutHidden: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutHidden")
+  @js.native
+  def LayoutHidden: Double = js.native
+  @scala.inline
+  def LayoutHidden_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutHidden")(x.asInstanceOf[js.Any])
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Node or simple Part's .category changes, it invalidates the Layout responsible for the Part; this flag is ignored for Parts that are Links.*/
-  var LayoutNodeReplaced: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutNodeReplaced")
+  @js.native
+  def LayoutNodeReplaced: Double = js.native
+  @scala.inline
+  def LayoutNodeReplaced_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutNodeReplaced")(x.asInstanceOf[js.Any])
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Part's GraphObject.actualBounds changes size, it invalidates the Layout responsible for the Part; this flag is ignored for Parts that are Links.*/
-  var LayoutNodeSized: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutNodeSized")
+  @js.native
+  def LayoutNodeSized: Double = js.native
+  @scala.inline
+  def LayoutNodeSized_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutNodeSized")(x.asInstanceOf[js.Any])
   
   /**This value may be used as the value of the Part.layoutConditions property to indicate that no operation on this Part causes invalidation of the Layout responsible for this Part.*/
-  var LayoutNone: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutNone")
+  @js.native
+  def LayoutNone: Double = js.native
+  @scala.inline
+  def LayoutNone_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutNone")(x.asInstanceOf[js.Any])
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Part is removed from a Diagram or Group, it invalidates the Layout responsible for the Part.*/
-  var LayoutRemoved: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutRemoved")
+  @js.native
+  def LayoutRemoved: Double = js.native
+  @scala.inline
+  def LayoutRemoved_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutRemoved")(x.asInstanceOf[js.Any])
   
   /**This flag may be combined with other "Layout" flags as the value of the Part.layoutConditions property to indicate that when a Part's GraphObject.visible becomes true, it invalidates the Layout responsible for the Part.*/
-  var LayoutShown: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutShown")
+  @js.native
+  def LayoutShown: Double = js.native
+  @scala.inline
+  def LayoutShown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutShown")(x.asInstanceOf[js.Any])
   
   /**This is the default value for the Part.layoutConditions property: the Layout responsible for the Part is invalidated when the Part is added or removed from the Diagram or Group or when it changes visibility or size or when a Group's layout has been performed.*/
-  var LayoutStandard: Double = js.native
+  /* static member */
+  @JSImport("go", "Part.LayoutStandard")
+  @js.native
+  def LayoutStandard: Double = js.native
+  @scala.inline
+  def LayoutStandard_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LayoutStandard")(x.asInstanceOf[js.Any])
 }

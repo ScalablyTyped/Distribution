@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccordionMenuOptions extends js.Object {
+trait IAccordionMenuOptions extends StObject {
   
   var multiOpen: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object IAccordionMenuOptions {
   }
   
   @scala.inline
-  implicit class IAccordionMenuOptionsOps[Self <: IAccordionMenuOptions] (val x: Self) extends AnyVal {
+  implicit class IAccordionMenuOptionsMutableBuilder[Self <: IAccordionMenuOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiOpen(value: Boolean): Self = StObject.set(x, "multiOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiOpenUndefined: Self = StObject.set(x, "multiOpen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiOpen(value: Boolean): Self = this.set("multiOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiOpen: Self = this.set("multiOpen", js.undefined)
-    
-    @scala.inline
-    def setSlideSpeed(value: Double): Self = this.set("slideSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideSpeed: Self = this.set("slideSpeed", js.undefined)
+    def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
   }
 }

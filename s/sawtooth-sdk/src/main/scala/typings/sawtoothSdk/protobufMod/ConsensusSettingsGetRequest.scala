@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,16 +34,18 @@ class ConsensusSettingsGetRequest () extends IConsensusSettingsGetRequest {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest")
-@js.native
-object ConsensusSettingsGetRequest extends js.Object {
+object ConsensusSettingsGetRequest {
   
   /**
     * Creates a new ConsensusSettingsGetRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusSettingsGetRequest instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.create")
+  @js.native
   def create(): ConsensusSettingsGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.create")
+  @js.native
   def create(properties: IConsensusSettingsGetRequest): ConsensusSettingsGetRequest = js.native
   
   /**
@@ -53,9 +56,17 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.decode")
+  @js.native
   def decode(reader: Reader): ConsensusSettingsGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ConsensusSettingsGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): ConsensusSettingsGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ConsensusSettingsGetRequest = js.native
   
   /**
@@ -65,7 +76,11 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ConsensusSettingsGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ConsensusSettingsGetRequest = js.native
   
   /**
@@ -74,7 +89,11 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.encode")
+  @js.native
   def encode(message: IConsensusSettingsGetRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.encode")
+  @js.native
   def encode(message: IConsensusSettingsGetRequest, writer: Writer): Writer = js.native
   
   /**
@@ -83,7 +102,11 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusSettingsGetRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusSettingsGetRequest, writer: Writer): Writer = js.native
   
   /**
@@ -91,6 +114,8 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @param object Plain object
     * @returns ConsensusSettingsGetRequest
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ConsensusSettingsGetRequest = js.native
   
   /**
@@ -99,7 +124,11 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.toObject")
+  @js.native
   def toObject(message: ConsensusSettingsGetRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.toObject")
+  @js.native
   def toObject(message: ConsensusSettingsGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -107,5 +136,7 @@ object ConsensusSettingsGetRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusSettingsGetRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

@@ -1,12 +1,13 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'mr' | 'marginRight'> */
 @js.native
-trait MarginRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait MarginRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var marginRight: js.UndefOr[
     ResponsiveValue[
@@ -31,22 +32,7 @@ object MarginRightProps {
   }
   
   @scala.inline
-  implicit class MarginRightPropsOps[Self <: MarginRightProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with MarginRightProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarginRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("marginRight", js.Array(value :_*))
+  implicit class MarginRightPropsMutableBuilder[Self <: MarginRightProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with MarginRightProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setMarginRight(
@@ -54,16 +40,16 @@ object MarginRightProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
     
     @scala.inline
-    def setMarginRightNull: Self = this.set("marginRight", null)
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def setMrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("mr", js.Array(value :_*))
+    def setMarginRightVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
     
     @scala.inline
     def setMr(
@@ -71,12 +57,15 @@ object MarginRightProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("mr", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMr: Self = this.set("mr", js.undefined)
+    def setMrNull: Self = StObject.set(x, "mr", null)
     
     @scala.inline
-    def setMrNull: Self = this.set("mr", null)
+    def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
+    
+    @scala.inline
+    def setMrVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
   }
 }

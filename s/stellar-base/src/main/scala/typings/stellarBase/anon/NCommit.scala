@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.ScpBallot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NCommit extends js.Object {
+trait NCommit extends StObject {
   
   var ballot: ScpBallot = js.native
   
@@ -28,33 +29,21 @@ object NCommit {
   }
   
   @scala.inline
-  implicit class NCommitOps[Self <: NCommit] (val x: Self) extends AnyVal {
+  implicit class NCommitMutableBuilder[Self <: NCommit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBallot(value: ScpBallot): Self = StObject.set(x, "ballot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNCommit(value: Double): Self = StObject.set(x, "nCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNH(value: Double): Self = StObject.set(x, "nH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBallot(value: ScpBallot): Self = this.set("ballot", value.asInstanceOf[js.Any])
+    def setNPrepared(value: Double): Self = StObject.set(x, "nPrepared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNCommit(value: Double): Self = this.set("nCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNH(value: Double): Self = this.set("nH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNPrepared(value: Double): Self = this.set("nPrepared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuorumSetHash(value: Buffer): Self = this.set("quorumSetHash", value.asInstanceOf[js.Any])
+    def setQuorumSetHash(value: Buffer): Self = StObject.set(x, "quorumSetHash", value.asInstanceOf[js.Any])
   }
 }

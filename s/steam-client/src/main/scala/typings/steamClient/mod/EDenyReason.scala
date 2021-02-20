@@ -1,91 +1,76 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EDenyReason extends js.Object
+sealed trait EDenyReason extends StObject
 @JSImport("steam-client", "EDenyReason")
 @js.native
-object EDenyReason extends js.Object {
+object EDenyReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EDenyReason with Double] = js.native
   
   @js.native
   sealed trait Cheater extends EDenyReason
-  /* 5 */ @js.native
-  object Cheater extends TopLevel[Cheater with Double]
+  /* 5 */ val Cheater: typings.steamClient.mod.EDenyReason.Cheater with Double = js.native
   
   @js.native
   sealed trait Generic extends EDenyReason
-  /* 2 */ @js.native
-  object Generic extends TopLevel[Generic with Double]
+  /* 2 */ val Generic: typings.steamClient.mod.EDenyReason.Generic with Double = js.native
   
   @js.native
   sealed trait IncompatibleAnticheat extends EDenyReason
-  /* 8 */ @js.native
-  object IncompatibleAnticheat extends TopLevel[IncompatibleAnticheat with Double]
+  /* 8 */ val IncompatibleAnticheat: typings.steamClient.mod.EDenyReason.IncompatibleAnticheat with Double = js.native
   
   @js.native
   sealed trait IncompatibleSoftware extends EDenyReason
-  /* 10 */ @js.native
-  object IncompatibleSoftware extends TopLevel[IncompatibleSoftware with Double]
+  /* 10 */ val IncompatibleSoftware: typings.steamClient.mod.EDenyReason.IncompatibleSoftware with Double = js.native
   
   @js.native
   sealed trait InvalidVersion extends EDenyReason
-  /* 1 */ @js.native
-  object InvalidVersion extends TopLevel[InvalidVersion with Double]
+  /* 1 */ val InvalidVersion: typings.steamClient.mod.EDenyReason.InvalidVersion with Double = js.native
   
   @js.native
   sealed trait LoggedInElseWhere extends EDenyReason
-  /* 6 */ @js.native
-  object LoggedInElseWhere extends TopLevel[LoggedInElseWhere with Double]
+  /* 6 */ val LoggedInElseWhere: typings.steamClient.mod.EDenyReason.LoggedInElseWhere with Double = js.native
   
   @js.native
   sealed trait MemoryCorruption extends EDenyReason
-  /* 9 */ @js.native
-  object MemoryCorruption extends TopLevel[MemoryCorruption with Double]
+  /* 9 */ val MemoryCorruption: typings.steamClient.mod.EDenyReason.MemoryCorruption with Double = js.native
   
   @js.native
   sealed trait NoLicense extends EDenyReason
-  /* 4 */ @js.native
-  object NoLicense extends TopLevel[NoLicense with Double]
+  /* 4 */ val NoLicense: typings.steamClient.mod.EDenyReason.NoLicense with Double = js.native
   
   @js.native
   sealed trait NotLoggedOn extends EDenyReason
-  /* 3 */ @js.native
-  object NotLoggedOn extends TopLevel[NotLoggedOn with Double]
+  /* 3 */ val NotLoggedOn: typings.steamClient.mod.EDenyReason.NotLoggedOn with Double = js.native
   
   @js.native
   sealed trait SteamConnectionError extends EDenyReason
-  /* 12 */ @js.native
-  object SteamConnectionError extends TopLevel[SteamConnectionError with Double]
+  /* 12 */ val SteamConnectionError: typings.steamClient.mod.EDenyReason.SteamConnectionError with Double = js.native
   
   @js.native
   sealed trait SteamConnectionLost extends EDenyReason
-  /* 11 */ @js.native
-  object SteamConnectionLost extends TopLevel[SteamConnectionLost with Double]
+  /* 11 */ val SteamConnectionLost: typings.steamClient.mod.EDenyReason.SteamConnectionLost with Double = js.native
   
   @js.native
   sealed trait SteamOwnerLeftGuestUser extends EDenyReason
-  /* 15 */ @js.native
-  object SteamOwnerLeftGuestUser extends TopLevel[SteamOwnerLeftGuestUser with Double]
+  /* 15 */ val SteamOwnerLeftGuestUser: typings.steamClient.mod.EDenyReason.SteamOwnerLeftGuestUser with Double = js.native
   
   @js.native
   sealed trait SteamResponseTimedOut extends EDenyReason
-  /* 13 */ @js.native
-  object SteamResponseTimedOut extends TopLevel[SteamResponseTimedOut with Double]
+  /* 13 */ val SteamResponseTimedOut: typings.steamClient.mod.EDenyReason.SteamResponseTimedOut with Double = js.native
   
   @js.native
   sealed trait SteamValidationStalled extends EDenyReason
-  /* 14 */ @js.native
-  object SteamValidationStalled extends TopLevel[SteamValidationStalled with Double]
+  /* 14 */ val SteamValidationStalled: typings.steamClient.mod.EDenyReason.SteamValidationStalled with Double = js.native
   
   @js.native
   sealed trait UnknownText extends EDenyReason
-  /* 7 */ @js.native
-  object UnknownText extends TopLevel[UnknownText with Double]
+  /* 7 */ val UnknownText: typings.steamClient.mod.EDenyReason.UnknownText with Double = js.native
 }

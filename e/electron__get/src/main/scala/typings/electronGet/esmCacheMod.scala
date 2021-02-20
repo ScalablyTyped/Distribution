@@ -1,15 +1,15 @@
 package typings.electronGet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@electron/get/dist/esm/Cache", JSImport.Namespace)
-@js.native
-object esmCacheMod extends js.Object {
+object esmCacheMod {
   
+  @JSImport("@electron/get/dist/esm/Cache", "Cache")
   @js.native
-  class Cache () extends js.Object {
+  class Cache () extends StObject {
     def this(cacheRoot: String) = this()
     
     var cacheRoot: js.Any = js.native

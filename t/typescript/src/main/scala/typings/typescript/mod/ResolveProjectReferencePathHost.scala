@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveProjectReferencePathHost extends js.Object {
+trait ResolveProjectReferencePathHost extends StObject {
   
   def fileExists(fileName: java.lang.String): Boolean = js.native
 }
@@ -18,21 +19,9 @@ object ResolveProjectReferencePathHost {
   }
   
   @scala.inline
-  implicit class ResolveProjectReferencePathHostOps[Self <: ResolveProjectReferencePathHost] (val x: Self) extends AnyVal {
+  implicit class ResolveProjectReferencePathHostMutableBuilder[Self <: ResolveProjectReferencePathHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileExists(value: java.lang.String => Boolean): Self = this.set("fileExists", js.Any.fromFunction1(value))
+    def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
   }
 }

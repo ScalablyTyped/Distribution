@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.ui.format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorColor extends js.Object {
+trait ConnectorColor extends StObject {
   
   var connectorColor: js.UndefOr[String] = js.native
   
@@ -31,63 +32,51 @@ object ConnectorColor {
   }
   
   @scala.inline
-  implicit class ConnectorColorOps[Self <: ConnectorColor] (val x: Self) extends AnyVal {
+  implicit class ConnectorColorMutableBuilder[Self <: ConnectorColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorColor(value: String): Self = StObject.set(x, "connectorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorColorUndefined: Self = StObject.set(x, "connectorColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorWidth(value: Double): Self = StObject.set(x, "connectorWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorColor(value: String): Self = this.set("connectorColor", value.asInstanceOf[js.Any])
+    def setConnectorWidthUndefined: Self = StObject.set(x, "connectorWidth", js.undefined)
     
     @scala.inline
-    def deleteConnectorColor: Self = this.set("connectorColor", js.undefined)
+    def setCustomizeText(value: /* barValue */ ValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectorWidth(value: Double): Self = this.set("connectorWidth", value.asInstanceOf[js.Any])
+    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
     @scala.inline
-    def deleteConnectorWidth: Self = this.set("connectorWidth", js.undefined)
+    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeText(value: /* barValue */ ValueText => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

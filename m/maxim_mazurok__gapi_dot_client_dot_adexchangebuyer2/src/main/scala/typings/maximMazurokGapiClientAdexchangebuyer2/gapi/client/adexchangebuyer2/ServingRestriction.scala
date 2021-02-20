@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServingRestriction extends js.Object {
+trait ServingRestriction extends StObject {
   
   /** The contexts for the restriction. */
   var contexts: js.UndefOr[js.Array[ServingContext]] = js.native
@@ -31,48 +32,36 @@ object ServingRestriction {
   }
   
   @scala.inline
-  implicit class ServingRestrictionOps[Self <: ServingRestriction] (val x: Self) extends AnyVal {
+  implicit class ServingRestrictionMutableBuilder[Self <: ServingRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContexts(value: js.Array[ServingContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setContextsVarargs(value: ServingContext*): Self = this.set("contexts", js.Array(value :_*))
+    def setDisapproval(value: Disapproval): Self = StObject.set(x, "disapproval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContexts(value: js.Array[ServingContext]): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    def setDisapprovalReasons(value: js.Array[Disapproval]): Self = StObject.set(x, "disapprovalReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContexts: Self = this.set("contexts", js.undefined)
+    def setDisapprovalReasonsUndefined: Self = StObject.set(x, "disapprovalReasons", js.undefined)
     
     @scala.inline
-    def setDisapproval(value: Disapproval): Self = this.set("disapproval", value.asInstanceOf[js.Any])
+    def setDisapprovalReasonsVarargs(value: Disapproval*): Self = StObject.set(x, "disapprovalReasons", js.Array(value :_*))
     
     @scala.inline
-    def deleteDisapproval: Self = this.set("disapproval", js.undefined)
+    def setDisapprovalUndefined: Self = StObject.set(x, "disapproval", js.undefined)
     
     @scala.inline
-    def setDisapprovalReasonsVarargs(value: Disapproval*): Self = this.set("disapprovalReasons", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisapprovalReasons(value: js.Array[Disapproval]): Self = this.set("disapprovalReasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisapprovalReasons: Self = this.set("disapprovalReasons", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

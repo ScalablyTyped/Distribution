@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings related to the loading panel functionality.
   */
 @js.native
-trait LoadingPanel extends js.Object {
+trait LoadingPanel extends StObject {
   
   /**
     * Allows you to provide a custom loading panel.
@@ -39,33 +40,21 @@ object LoadingPanel {
   }
   
   @scala.inline
-  implicit class LoadingPanelOps[Self <: LoadingPanel] (val x: Self) extends AnyVal {
+  implicit class LoadingPanelMutableBuilder[Self <: LoadingPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomPanel(value: ICustomLoadingPanel): Self = StObject.set(x, "customPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomPanelUndefined: Self = StObject.set(x, "customPanel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCustomPanel(value: ICustomLoadingPanel): Self = this.set("customPanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomPanel: Self = this.set("customPanel", js.undefined)
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

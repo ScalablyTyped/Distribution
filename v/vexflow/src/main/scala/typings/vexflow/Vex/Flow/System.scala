@@ -1,11 +1,12 @@
 package typings.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait System extends js.Object {
+trait System extends StObject {
   
   def addConnector(): js.Any = js.native
   def addConnector(`type`: String): js.Any = js.native

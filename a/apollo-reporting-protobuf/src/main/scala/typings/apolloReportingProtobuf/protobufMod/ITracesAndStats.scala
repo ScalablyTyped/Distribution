@@ -1,11 +1,12 @@
 package typings.apolloReportingProtobuf.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITracesAndStats extends js.Object {
+trait ITracesAndStats extends StObject {
   
   /** TracesAndStats statsWithContext */
   var statsWithContext: js.UndefOr[js.Array[IContextualizedStats] | Null] = js.native
@@ -22,42 +23,30 @@ object ITracesAndStats {
   }
   
   @scala.inline
-  implicit class ITracesAndStatsOps[Self <: ITracesAndStats] (val x: Self) extends AnyVal {
+  implicit class ITracesAndStatsMutableBuilder[Self <: ITracesAndStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatsWithContext(value: js.Array[IContextualizedStats]): Self = StObject.set(x, "statsWithContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatsWithContextNull: Self = StObject.set(x, "statsWithContext", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatsWithContextUndefined: Self = StObject.set(x, "statsWithContext", js.undefined)
     
     @scala.inline
-    def setStatsWithContextVarargs(value: IContextualizedStats*): Self = this.set("statsWithContext", js.Array(value :_*))
+    def setStatsWithContextVarargs(value: IContextualizedStats*): Self = StObject.set(x, "statsWithContext", js.Array(value :_*))
     
     @scala.inline
-    def setStatsWithContext(value: js.Array[IContextualizedStats]): Self = this.set("statsWithContext", value.asInstanceOf[js.Any])
+    def setTrace(value: js.Array[ITrace]): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatsWithContext: Self = this.set("statsWithContext", js.undefined)
+    def setTraceNull: Self = StObject.set(x, "trace", null)
     
     @scala.inline
-    def setStatsWithContextNull: Self = this.set("statsWithContext", null)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     
     @scala.inline
-    def setTraceVarargs(value: ITrace*): Self = this.set("trace", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrace(value: js.Array[ITrace]): Self = this.set("trace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
-    
-    @scala.inline
-    def setTraceNull: Self = this.set("trace", null)
+    def setTraceVarargs(value: ITrace*): Self = StObject.set(x, "trace", js.Array(value :_*))
   }
 }

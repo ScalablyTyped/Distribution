@@ -3,14 +3,14 @@ package typings.three
 import typings.three.anon.Enabled
 import typings.three.cameraMod.Camera
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/cameras/PerspectiveCamera", JSImport.Namespace)
-@js.native
-object perspectiveCameraMod extends js.Object {
+object perspectiveCameraMod {
   
+  @JSImport("three/src/cameras/PerspectiveCamera", "PerspectiveCamera")
   @js.native
   /**
   	 * @param [fov=50] Camera frustum vertical field of view. Default value is 50.

@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access the text rotation settings for a cell.
   */
 @js.native
-trait TextRotation extends js.Object {
+trait TextRotation extends StObject {
   
   def getDegrees(): Integer = js.native
   
@@ -24,24 +25,12 @@ object TextRotation {
   }
   
   @scala.inline
-  implicit class TextRotationOps[Self <: TextRotation] (val x: Self) extends AnyVal {
+  implicit class TextRotationMutableBuilder[Self <: TextRotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDegrees(value: () => Integer): Self = StObject.set(x, "getDegrees", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDegrees(value: () => Integer): Self = this.set("getDegrees", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsVertical(value: () => Boolean): Self = this.set("isVertical", js.Any.fromFunction0(value))
+    def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
   }
 }

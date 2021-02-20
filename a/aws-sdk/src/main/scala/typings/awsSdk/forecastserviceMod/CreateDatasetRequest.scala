@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDatasetRequest extends js.Object {
+trait CreateDatasetRequest extends StObject {
   
   /**
     * The frequency of data collection. This parameter is required for RELATED_TIME_SERIES datasets. Valid intervals are Y (Year), M (Month), W (Week), D (Day), H (Hour), 30min (30 minutes), 15min (15 minutes), 10min (10 minutes), 5min (5 minutes), and 1min (1 minute). For example, "D" indicates every day and "15min" indicates every 15 minutes.
@@ -51,51 +52,39 @@ object CreateDatasetRequest {
   }
   
   @scala.inline
-  implicit class CreateDatasetRequestOps[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDatasetRequestMutableBuilder[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFrequency(value: Frequency): Self = StObject.set(x, "DataFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFrequencyUndefined: Self = StObject.set(x, "DataFrequency", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetName(value: Name): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetName(value: Name): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    def setDatasetType(value: DatasetType): Self = StObject.set(x, "DatasetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetType(value: DatasetType): Self = this.set("DatasetType", value.asInstanceOf[js.Any])
+    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: Domain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: Schema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     
     @scala.inline
-    def setDataFrequency(value: Frequency): Self = this.set("DataFrequency", value.asInstanceOf[js.Any])
+    def setSchema(value: Schema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataFrequency: Self = this.set("DataFrequency", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("EncryptionConfig", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteEncryptionConfig: Self = this.set("EncryptionConfig", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

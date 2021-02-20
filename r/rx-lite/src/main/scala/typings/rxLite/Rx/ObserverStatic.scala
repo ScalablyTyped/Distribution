@@ -1,11 +1,12 @@
 package typings.rxLite.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObserverStatic extends js.Object {
+trait ObserverStatic extends StObject {
   
   def create[T](): Observer[T] = js.native
   def create[T](

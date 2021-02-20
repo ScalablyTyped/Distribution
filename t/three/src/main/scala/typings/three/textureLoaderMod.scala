@@ -6,14 +6,14 @@ import typings.std.ProgressEvent
 import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import typings.three.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/TextureLoader", JSImport.Namespace)
-@js.native
-object textureLoaderMod extends js.Object {
+object textureLoaderMod {
   
+  @JSImport("three/src/loaders/TextureLoader", "TextureLoader")
   @js.native
   class TextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()

@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectOffsetOption extends js.Object
+sealed trait GeometricEffectOffsetOption extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectOffsetOption")
 @js.native
-object GeometricEffectOffsetOption extends js.Object {
+object GeometricEffectOffsetOption extends StObject {
   
   /**
     * Accurate - accommodates complex geometries and applied a true fit to the symbol.

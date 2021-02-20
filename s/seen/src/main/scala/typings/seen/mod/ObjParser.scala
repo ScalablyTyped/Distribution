@@ -1,13 +1,14 @@
 package typings.seen.mod
 
 import typings.seen.anon.F
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "ObjParser")
 @js.native
-class ObjParser () extends js.Object {
+class ObjParser () extends StObject {
   
   var commands: F = js.native
   

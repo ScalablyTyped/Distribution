@@ -1,6 +1,7 @@
 package typings.stylus.mod.Stylus.Nodes
 
 import typings.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,33 +55,21 @@ object Boolean {
   }
   
   @scala.inline
-  implicit class BooleanOps[Self <: Boolean] (val x: Self) extends AnyVal {
+  implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInspect(value: () => java.lang.String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFalse(value: scala.Boolean): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTrue(value: scala.Boolean): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspect(value: () => java.lang.String): Self = this.set("inspect", js.Any.fromFunction0(value))
+    def setNegate(value: () => Boolean): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFalse(value: scala.Boolean): Self = this.set("isFalse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsTrue(value: scala.Boolean): Self = this.set("isTrue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegate(value: () => Boolean): Self = this.set("negate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVal(value: scala.Boolean): Self = this.set("val", value.asInstanceOf[js.Any])
+    def setVal(value: scala.Boolean): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

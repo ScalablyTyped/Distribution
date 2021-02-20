@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,93 +81,81 @@ object MenuDataItemisUrlboolean {
   }
   
   @scala.inline
-  implicit class MenuDataItemisUrlbooleanOps[Self <: MenuDataItemisUrlboolean] (val x: Self) extends AnyVal {
+  implicit class MenuDataItemisUrlbooleanMutableBuilder[Self <: MenuDataItemisUrlboolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: MenuDataItem*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setIsUrl(value: Boolean): Self = this.set("isUrl", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: MenuDataItem*): Self = this.set("children", js.Array(value :_*))
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[MenuDataItem]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setFlatMenu(value: Boolean): Self = StObject.set(x, "flatMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setFlatMenuUndefined: Self = StObject.set(x, "flatMenu", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setHideChildrenInMenu(value: Boolean): Self = StObject.set(x, "hideChildrenInMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setHideChildrenInMenuUndefined: Self = StObject.set(x, "hideChildrenInMenu", js.undefined)
     
     @scala.inline
-    def setFlatMenu(value: Boolean): Self = this.set("flatMenu", value.asInstanceOf[js.Any])
+    def setHideInMenu(value: Boolean): Self = StObject.set(x, "hideInMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlatMenu: Self = this.set("flatMenu", js.undefined)
+    def setHideInMenuUndefined: Self = StObject.set(x, "hideInMenu", js.undefined)
     
     @scala.inline
-    def setHideChildrenInMenu(value: Boolean): Self = this.set("hideChildrenInMenu", value.asInstanceOf[js.Any])
+    def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideChildrenInMenu: Self = this.set("hideChildrenInMenu", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setHideInMenu(value: Boolean): Self = this.set("hideInMenu", value.asInstanceOf[js.Any])
+    def setIsUrl(value: Boolean): Self = StObject.set(x, "isUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideInMenu: Self = this.set("hideInMenu", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: ReactNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String | `false`): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setParentKeys(value: js.Array[String]): Self = StObject.set(x, "parentKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentKeysUndefined: Self = StObject.set(x, "parentKeys", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParentKeysVarargs(value: String*): Self = StObject.set(x, "parentKeys", js.Array(value :_*))
     
     @scala.inline
-    def setParentKeysVarargs(value: String*): Self = this.set("parentKeys", js.Array(value :_*))
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentKeys(value: js.Array[String]): Self = this.set("parentKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentKeys: Self = this.set("parentKeys", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Predicate extends js.Object {
+trait Predicate extends StObject {
   
   /**
     * A list of the conditions that determine when the trigger will fire.
@@ -26,33 +27,21 @@ object Predicate {
   }
   
   @scala.inline
-  implicit class PredicateOps[Self <: Predicate] (val x: Self) extends AnyVal {
+  implicit class PredicateMutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: ConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = this.set("Conditions", js.Array(value :_*))
+    def setLogical(value: Logical): Self = StObject.set(x, "Logical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: ConditionList): Self = this.set("Conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditions: Self = this.set("Conditions", js.undefined)
-    
-    @scala.inline
-    def setLogical(value: Logical): Self = this.set("Logical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogical: Self = this.set("Logical", js.undefined)
+    def setLogicalUndefined: Self = StObject.set(x, "Logical", js.undefined)
   }
 }

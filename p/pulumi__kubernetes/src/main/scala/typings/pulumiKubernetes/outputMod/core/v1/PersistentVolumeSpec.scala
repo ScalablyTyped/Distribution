@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PersistentVolumeSpec is the specification of a persistent volume.
   */
 @js.native
-trait PersistentVolumeSpec extends js.Object {
+trait PersistentVolumeSpec extends StObject {
   
   /**
     * AccessModes contains all ways the volume can be mounted. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
@@ -201,114 +202,102 @@ object PersistentVolumeSpec {
   }
   
   @scala.inline
-  implicit class PersistentVolumeSpecOps[Self <: PersistentVolumeSpec] (val x: Self) extends AnyVal {
+  implicit class PersistentVolumeSpecMutableBuilder[Self <: PersistentVolumeSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessModes(value: js.Array[String]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessModesVarargs(value: String*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsElasticBlockStore(value: AWSElasticBlockStoreVolumeSource): Self = StObject.set(x, "awsElasticBlockStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessModesVarargs(value: String*): Self = this.set("accessModes", js.Array(value :_*))
+    def setAzureDisk(value: AzureDiskVolumeSource): Self = StObject.set(x, "azureDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessModes(value: js.Array[String]): Self = this.set("accessModes", value.asInstanceOf[js.Any])
+    def setAzureFile(value: AzureFilePersistentVolumeSource): Self = StObject.set(x, "azureFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsElasticBlockStore(value: AWSElasticBlockStoreVolumeSource): Self = this.set("awsElasticBlockStore", value.asInstanceOf[js.Any])
+    def setCapacity(value: StringDictionary[String]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureDisk(value: AzureDiskVolumeSource): Self = this.set("azureDisk", value.asInstanceOf[js.Any])
+    def setCephfs(value: CephFSPersistentVolumeSource): Self = StObject.set(x, "cephfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureFile(value: AzureFilePersistentVolumeSource): Self = this.set("azureFile", value.asInstanceOf[js.Any])
+    def setCinder(value: CinderPersistentVolumeSource): Self = StObject.set(x, "cinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacity(value: StringDictionary[String]): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    def setClaimRef(value: ObjectReference): Self = StObject.set(x, "claimRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCephfs(value: CephFSPersistentVolumeSource): Self = this.set("cephfs", value.asInstanceOf[js.Any])
+    def setCsi(value: CSIPersistentVolumeSource): Self = StObject.set(x, "csi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCinder(value: CinderPersistentVolumeSource): Self = this.set("cinder", value.asInstanceOf[js.Any])
+    def setFc(value: FCVolumeSource): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimRef(value: ObjectReference): Self = this.set("claimRef", value.asInstanceOf[js.Any])
+    def setFlexVolume(value: FlexPersistentVolumeSource): Self = StObject.set(x, "flexVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsi(value: CSIPersistentVolumeSource): Self = this.set("csi", value.asInstanceOf[js.Any])
+    def setFlocker(value: FlockerVolumeSource): Self = StObject.set(x, "flocker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFc(value: FCVolumeSource): Self = this.set("fc", value.asInstanceOf[js.Any])
+    def setGcePersistentDisk(value: GCEPersistentDiskVolumeSource): Self = StObject.set(x, "gcePersistentDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexVolume(value: FlexPersistentVolumeSource): Self = this.set("flexVolume", value.asInstanceOf[js.Any])
+    def setGlusterfs(value: GlusterfsPersistentVolumeSource): Self = StObject.set(x, "glusterfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlocker(value: FlockerVolumeSource): Self = this.set("flocker", value.asInstanceOf[js.Any])
+    def setHostPath(value: HostPathVolumeSource): Self = StObject.set(x, "hostPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcePersistentDisk(value: GCEPersistentDiskVolumeSource): Self = this.set("gcePersistentDisk", value.asInstanceOf[js.Any])
+    def setIscsi(value: ISCSIPersistentVolumeSource): Self = StObject.set(x, "iscsi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlusterfs(value: GlusterfsPersistentVolumeSource): Self = this.set("glusterfs", value.asInstanceOf[js.Any])
+    def setLocal(value: LocalVolumeSource): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPath(value: HostPathVolumeSource): Self = this.set("hostPath", value.asInstanceOf[js.Any])
+    def setMountOptions(value: js.Array[String]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIscsi(value: ISCSIPersistentVolumeSource): Self = this.set("iscsi", value.asInstanceOf[js.Any])
+    def setMountOptionsVarargs(value: String*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
     
     @scala.inline
-    def setLocal(value: LocalVolumeSource): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setNfs(value: NFSVolumeSource): Self = StObject.set(x, "nfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountOptionsVarargs(value: String*): Self = this.set("mountOptions", js.Array(value :_*))
+    def setNodeAffinity(value: VolumeNodeAffinity): Self = StObject.set(x, "nodeAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountOptions(value: js.Array[String]): Self = this.set("mountOptions", value.asInstanceOf[js.Any])
+    def setPersistentVolumeReclaimPolicy(value: String): Self = StObject.set(x, "persistentVolumeReclaimPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNfs(value: NFSVolumeSource): Self = this.set("nfs", value.asInstanceOf[js.Any])
+    def setPhotonPersistentDisk(value: PhotonPersistentDiskVolumeSource): Self = StObject.set(x, "photonPersistentDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeAffinity(value: VolumeNodeAffinity): Self = this.set("nodeAffinity", value.asInstanceOf[js.Any])
+    def setPortworxVolume(value: PortworxVolumeSource): Self = StObject.set(x, "portworxVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentVolumeReclaimPolicy(value: String): Self = this.set("persistentVolumeReclaimPolicy", value.asInstanceOf[js.Any])
+    def setQuobyte(value: QuobyteVolumeSource): Self = StObject.set(x, "quobyte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotonPersistentDisk(value: PhotonPersistentDiskVolumeSource): Self = this.set("photonPersistentDisk", value.asInstanceOf[js.Any])
+    def setRbd(value: RBDPersistentVolumeSource): Self = StObject.set(x, "rbd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortworxVolume(value: PortworxVolumeSource): Self = this.set("portworxVolume", value.asInstanceOf[js.Any])
+    def setScaleIO(value: ScaleIOPersistentVolumeSource): Self = StObject.set(x, "scaleIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuobyte(value: QuobyteVolumeSource): Self = this.set("quobyte", value.asInstanceOf[js.Any])
+    def setStorageClassName(value: String): Self = StObject.set(x, "storageClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRbd(value: RBDPersistentVolumeSource): Self = this.set("rbd", value.asInstanceOf[js.Any])
+    def setStorageos(value: StorageOSPersistentVolumeSource): Self = StObject.set(x, "storageos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleIO(value: ScaleIOPersistentVolumeSource): Self = this.set("scaleIO", value.asInstanceOf[js.Any])
+    def setVolumeMode(value: String): Self = StObject.set(x, "volumeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClassName(value: String): Self = this.set("storageClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageos(value: StorageOSPersistentVolumeSource): Self = this.set("storageos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeMode(value: String): Self = this.set("volumeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVsphereVolume(value: VsphereVirtualDiskVolumeSource): Self = this.set("vsphereVolume", value.asInstanceOf[js.Any])
+    def setVsphereVolume(value: VsphereVirtualDiskVolumeSource): Self = StObject.set(x, "vsphereVolume", value.asInstanceOf[js.Any])
   }
 }

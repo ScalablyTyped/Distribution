@@ -1,13 +1,20 @@
 package typings.antvAttr
 
 import typings.antvAttr.interfaceMod.AttributeCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/attr/lib/attributes/position", JSImport.Namespace)
-@js.native
-object positionMod extends js.Object {
+object positionMod {
+  
+  @JSImport("@antv/attr/lib/attributes/position", JSImport.Default)
+  @js.native
+  class default protected () extends Position {
+    def this(cfg: AttributeCfg) = this()
+  }
+  
+  type MappingValue = js.Array[Value] | Value
   
   @js.native
   trait Position
@@ -15,13 +22,6 @@ object positionMod extends js.Object {
     
     def mapping(x: MappingValue, y: MappingValue): js.Array[Double | js.Array[Double]] = js.native
   }
-  
-  @js.native
-  class default protected () extends Position {
-    def this(cfg: AttributeCfg) = this()
-  }
-  
-  type MappingValue = js.Array[Value] | Value
   
   type Value = Double | String
 }

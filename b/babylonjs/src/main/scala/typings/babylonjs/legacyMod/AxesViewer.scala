@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,9 +133,15 @@ class AxesViewer protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "AxesViewer")
-@js.native
-object AxesViewer extends js.Object {
+object AxesViewer {
   
-  var _SetRenderingGroupId: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "AxesViewer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/Legacy/legacy", "AxesViewer._SetRenderingGroupId")
+  @js.native
+  def _SetRenderingGroupId: js.Any = js.native
+  @scala.inline
+  def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
 }

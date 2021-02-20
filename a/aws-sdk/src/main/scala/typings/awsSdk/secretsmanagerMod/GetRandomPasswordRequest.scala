@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRandomPasswordRequest extends js.Object {
+trait GetRandomPasswordRequest extends StObject {
   
   /**
     * A string that includes characters that should not be included in the generated password. The default is that all characters from the included sets can be used.
@@ -56,66 +57,54 @@ object GetRandomPasswordRequest {
   }
   
   @scala.inline
-  implicit class GetRandomPasswordRequestOps[Self <: GetRandomPasswordRequest] (val x: Self) extends AnyVal {
+  implicit class GetRandomPasswordRequestMutableBuilder[Self <: GetRandomPasswordRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeCharacters(value: ExcludeCharactersType): Self = StObject.set(x, "ExcludeCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeCharactersUndefined: Self = StObject.set(x, "ExcludeCharacters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeLowercase(value: ExcludeLowercaseType): Self = StObject.set(x, "ExcludeLowercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeCharacters(value: ExcludeCharactersType): Self = this.set("ExcludeCharacters", value.asInstanceOf[js.Any])
+    def setExcludeLowercaseUndefined: Self = StObject.set(x, "ExcludeLowercase", js.undefined)
     
     @scala.inline
-    def deleteExcludeCharacters: Self = this.set("ExcludeCharacters", js.undefined)
+    def setExcludeNumbers(value: ExcludeNumbersType): Self = StObject.set(x, "ExcludeNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeLowercase(value: ExcludeLowercaseType): Self = this.set("ExcludeLowercase", value.asInstanceOf[js.Any])
+    def setExcludeNumbersUndefined: Self = StObject.set(x, "ExcludeNumbers", js.undefined)
     
     @scala.inline
-    def deleteExcludeLowercase: Self = this.set("ExcludeLowercase", js.undefined)
+    def setExcludePunctuation(value: ExcludePunctuationType): Self = StObject.set(x, "ExcludePunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeNumbers(value: ExcludeNumbersType): Self = this.set("ExcludeNumbers", value.asInstanceOf[js.Any])
+    def setExcludePunctuationUndefined: Self = StObject.set(x, "ExcludePunctuation", js.undefined)
     
     @scala.inline
-    def deleteExcludeNumbers: Self = this.set("ExcludeNumbers", js.undefined)
+    def setExcludeUppercase(value: ExcludeUppercaseType): Self = StObject.set(x, "ExcludeUppercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludePunctuation(value: ExcludePunctuationType): Self = this.set("ExcludePunctuation", value.asInstanceOf[js.Any])
+    def setExcludeUppercaseUndefined: Self = StObject.set(x, "ExcludeUppercase", js.undefined)
     
     @scala.inline
-    def deleteExcludePunctuation: Self = this.set("ExcludePunctuation", js.undefined)
+    def setIncludeSpace(value: IncludeSpaceType): Self = StObject.set(x, "IncludeSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeUppercase(value: ExcludeUppercaseType): Self = this.set("ExcludeUppercase", value.asInstanceOf[js.Any])
+    def setIncludeSpaceUndefined: Self = StObject.set(x, "IncludeSpace", js.undefined)
     
     @scala.inline
-    def deleteExcludeUppercase: Self = this.set("ExcludeUppercase", js.undefined)
+    def setPasswordLength(value: PasswordLengthType): Self = StObject.set(x, "PasswordLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSpace(value: IncludeSpaceType): Self = this.set("IncludeSpace", value.asInstanceOf[js.Any])
+    def setPasswordLengthUndefined: Self = StObject.set(x, "PasswordLength", js.undefined)
     
     @scala.inline
-    def deleteIncludeSpace: Self = this.set("IncludeSpace", js.undefined)
+    def setRequireEachIncludedType(value: RequireEachIncludedTypeType): Self = StObject.set(x, "RequireEachIncludedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordLength(value: PasswordLengthType): Self = this.set("PasswordLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordLength: Self = this.set("PasswordLength", js.undefined)
-    
-    @scala.inline
-    def setRequireEachIncludedType(value: RequireEachIncludedTypeType): Self = this.set("RequireEachIncludedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireEachIncludedType: Self = this.set("RequireEachIncludedType", js.undefined)
+    def setRequireEachIncludedTypeUndefined: Self = StObject.set(x, "RequireEachIncludedType", js.undefined)
   }
 }

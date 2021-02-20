@@ -7,14 +7,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesDescribeIdentityInputMod.
 import typings.awsSdkClientCognitoIdentityBrowser.typesDescribeIdentityOutputMod.DescribeIdentityOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/commands/DescribeIdentityCommand", JSImport.Namespace)
-@js.native
-object describeIdentityCommandMod extends js.Object {
+object describeIdentityCommandMod {
   
+  @JSImport("@aws-sdk/client-cognito-identity-browser/commands/DescribeIdentityCommand", "DescribeIdentityCommand")
   @js.native
   class DescribeIdentityCommand protected () extends Command[
           InputTypesUnion, 

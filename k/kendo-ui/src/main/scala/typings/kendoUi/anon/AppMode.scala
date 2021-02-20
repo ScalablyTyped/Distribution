@@ -1,11 +1,12 @@
 package typings.kendoUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppMode extends js.Object {
+trait AppMode extends StObject {
   
   var appMode: Boolean = js.native
   
@@ -41,42 +42,30 @@ object AppMode {
   }
   
   @scala.inline
-  implicit class AppModeOps[Self <: AppMode] (val x: Self) extends AnyVal {
+  implicit class AppModeMutableBuilder[Self <: AppMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppMode(value: Boolean): Self = StObject.set(x, "appMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppMode(value: Boolean): Self = this.set("appMode", value.asInstanceOf[js.Any])
+    def setFlatVersion(value: Double): Self = StObject.set(x, "flatVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatVersion(value: Double): Self = this.set("flatVersion", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: String): Self = this.set("majorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinorVersion(value: String): Self = this.set("minorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTablet(value: js.Any): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasportal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SasPortalCustomer extends js.Object {
+trait SasPortalCustomer extends StObject {
   
   /** Required. Name of the organization that the customer entity represents. */
   var displayName: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object SasPortalCustomer {
   }
   
   @scala.inline
-  implicit class SasPortalCustomerOps[Self <: SasPortalCustomer] (val x: Self) extends AnyVal {
+  implicit class SasPortalCustomerMutableBuilder[Self <: SasPortalCustomer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setSasUserIds(value: js.Array[String]): Self = StObject.set(x, "sasUserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSasUserIdsUndefined: Self = StObject.set(x, "sasUserIds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSasUserIdsVarargs(value: String*): Self = this.set("sasUserIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSasUserIds(value: js.Array[String]): Self = this.set("sasUserIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSasUserIds: Self = this.set("sasUserIds", js.undefined)
+    def setSasUserIdsVarargs(value: String*): Self = StObject.set(x, "sasUserIds", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.stripe.mod.accounts
 
 import typings.stripe.stripeStrings.login_link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILoginLink extends js.Object {
+trait ILoginLink extends StObject {
   
   var created: Double = js.native
   
@@ -27,27 +28,15 @@ object ILoginLink {
   }
   
   @scala.inline
-  implicit class ILoginLinkOps[Self <: ILoginLink] (val x: Self) extends AnyVal {
+  implicit class ILoginLinkMutableBuilder[Self <: ILoginLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObject(value: login_link): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: login_link): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

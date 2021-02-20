@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * criteria evaluates to true, the condition's formatting settings are applied to the cell.
   */
 @js.native
-trait BooleanCondition extends js.Object {
+trait BooleanCondition extends StObject {
   
   def getBackground(): String | Null = js.native
   
@@ -48,42 +49,30 @@ object BooleanCondition {
   }
   
   @scala.inline
-  implicit class BooleanConditionOps[Self <: BooleanCondition] (val x: Self) extends AnyVal {
+  implicit class BooleanConditionMutableBuilder[Self <: BooleanCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBackground(value: () => String | Null): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBold(value: () => Boolean | Null): Self = StObject.set(x, "getBold", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBackground(value: () => String | Null): Self = this.set("getBackground", js.Any.fromFunction0(value))
+    def setGetCriteriaValues(value: () => js.Array[_]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBold(value: () => Boolean | Null): Self = this.set("getBold", js.Any.fromFunction0(value))
+    def setGetFontColor(value: () => String | Null): Self = StObject.set(x, "getFontColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCriteriaType(value: () => BooleanCriteria): Self = this.set("getCriteriaType", js.Any.fromFunction0(value))
+    def setGetItalic(value: () => Boolean | Null): Self = StObject.set(x, "getItalic", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[_]): Self = this.set("getCriteriaValues", js.Any.fromFunction0(value))
+    def setGetStrikethrough(value: () => Boolean | Null): Self = StObject.set(x, "getStrikethrough", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFontColor(value: () => String | Null): Self = this.set("getFontColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetItalic(value: () => Boolean | Null): Self = this.set("getItalic", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStrikethrough(value: () => Boolean | Null): Self = this.set("getStrikethrough", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUnderline(value: () => Boolean | Null): Self = this.set("getUnderline", js.Any.fromFunction0(value))
+    def setGetUnderline(value: () => Boolean | Null): Self = StObject.set(x, "getUnderline", js.Any.fromFunction0(value))
   }
 }

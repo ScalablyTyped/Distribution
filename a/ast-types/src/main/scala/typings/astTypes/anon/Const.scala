@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TSEnumMemberKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Const extends js.Object {
+trait Const extends StObject {
   
   var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
   
@@ -35,69 +36,57 @@ object Const {
   }
   
   @scala.inline
-  implicit class ConstOps[Self <: Const] (val x: Self) extends AnyVal {
+  implicit class ConstMutableBuilder[Self <: Const] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setId(value: IdentifierKind): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setMembersVarargs(value: TSEnumMemberKind*): Self = this.set("members", js.Array(value :_*))
+    def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: js.Array[TSEnumMemberKind]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDeclareUndefined: Self = StObject.set(x, "declare", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setInitializer(value: ExpressionKind): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConst(value: Boolean): Self = this.set("const", value.asInstanceOf[js.Any])
+    def setInitializerNull: Self = StObject.set(x, "initializer", null)
     
     @scala.inline
-    def deleteConst: Self = this.set("const", js.undefined)
+    def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
     
     @scala.inline
-    def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeclare: Self = this.set("declare", js.undefined)
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setInitializer(value: ExpressionKind): Self = this.set("initializer", value.asInstanceOf[js.Any])
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def deleteInitializer: Self = this.set("initializer", js.undefined)
+    def setMembers(value: js.Array[TSEnumMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializerNull: Self = this.set("initializer", null)
-    
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
-    
-    @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setMembersVarargs(value: TSEnumMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
   }
 }

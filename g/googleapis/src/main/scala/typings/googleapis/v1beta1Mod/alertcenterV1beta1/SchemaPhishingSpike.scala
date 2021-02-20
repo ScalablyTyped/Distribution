@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * instead.&lt;/aside&gt;
   */
 @js.native
-trait SchemaPhishingSpike extends js.Object {
+trait SchemaPhishingSpike extends StObject {
   
   /**
     * The domain ID.
@@ -43,45 +44,33 @@ object SchemaPhishingSpike {
   }
   
   @scala.inline
-  implicit class SchemaPhishingSpikeOps[Self <: SchemaPhishingSpike] (val x: Self) extends AnyVal {
+  implicit class SchemaPhishingSpikeMutableBuilder[Self <: SchemaPhishingSpike] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainId(value: SchemaDomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainId(value: SchemaDomainId): Self = this.set("domainId", value.asInstanceOf[js.Any])
+    def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
     
     @scala.inline
-    def deleteDomainId: Self = this.set("domainId", js.undefined)
+    def setMaliciousEntity(value: SchemaMaliciousEntity): Self = StObject.set(x, "maliciousEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInternal(value: Boolean): Self = this.set("isInternal", value.asInstanceOf[js.Any])
+    def setMaliciousEntityUndefined: Self = StObject.set(x, "maliciousEntity", js.undefined)
     
     @scala.inline
-    def deleteIsInternal: Self = this.set("isInternal", js.undefined)
+    def setMessages(value: js.Array[SchemaGmailMessageInfo]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaliciousEntity(value: SchemaMaliciousEntity): Self = this.set("maliciousEntity", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMaliciousEntity: Self = this.set("maliciousEntity", js.undefined)
-    
-    @scala.inline
-    def setMessagesVarargs(value: SchemaGmailMessageInfo*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[SchemaGmailMessageInfo]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMessagesVarargs(value: SchemaGmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

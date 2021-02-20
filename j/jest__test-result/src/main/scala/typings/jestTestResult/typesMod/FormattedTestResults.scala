@@ -1,12 +1,13 @@
 package typings.jestTestResult.typesMod
 
 import typings.istanbulLibCoverage.mod.CoverageMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormattedTestResults extends js.Object {
+trait FormattedTestResults extends StObject {
   
   var coverageMap: js.UndefOr[CoverageMap | Null] = js.native
   
@@ -62,72 +63,60 @@ object FormattedTestResults {
   }
   
   @scala.inline
-  implicit class FormattedTestResultsOps[Self <: FormattedTestResults] (val x: Self) extends AnyVal {
+  implicit class FormattedTestResultsMutableBuilder[Self <: FormattedTestResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverageMapNull: Self = StObject.set(x, "coverageMap", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoverageMapUndefined: Self = StObject.set(x, "coverageMap", js.undefined)
     
     @scala.inline
-    def setNumFailedTestSuites(value: Double): Self = this.set("numFailedTestSuites", value.asInstanceOf[js.Any])
+    def setNumFailedTestSuites(value: Double): Self = StObject.set(x, "numFailedTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFailedTests(value: Double): Self = this.set("numFailedTests", value.asInstanceOf[js.Any])
+    def setNumFailedTests(value: Double): Self = StObject.set(x, "numFailedTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPassedTestSuites(value: Double): Self = this.set("numPassedTestSuites", value.asInstanceOf[js.Any])
+    def setNumPassedTestSuites(value: Double): Self = StObject.set(x, "numPassedTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPassedTests(value: Double): Self = this.set("numPassedTests", value.asInstanceOf[js.Any])
+    def setNumPassedTests(value: Double): Self = StObject.set(x, "numPassedTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPendingTestSuites(value: Double): Self = this.set("numPendingTestSuites", value.asInstanceOf[js.Any])
+    def setNumPendingTestSuites(value: Double): Self = StObject.set(x, "numPendingTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPendingTests(value: Double): Self = this.set("numPendingTests", value.asInstanceOf[js.Any])
+    def setNumPendingTests(value: Double): Self = StObject.set(x, "numPendingTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumRuntimeErrorTestSuites(value: Double): Self = this.set("numRuntimeErrorTestSuites", value.asInstanceOf[js.Any])
+    def setNumRuntimeErrorTestSuites(value: Double): Self = StObject.set(x, "numRuntimeErrorTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTotalTestSuites(value: Double): Self = this.set("numTotalTestSuites", value.asInstanceOf[js.Any])
+    def setNumTotalTestSuites(value: Double): Self = StObject.set(x, "numTotalTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTotalTests(value: Double): Self = this.set("numTotalTests", value.asInstanceOf[js.Any])
+    def setNumTotalTests(value: Double): Self = StObject.set(x, "numTotalTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: SnapshotSummary): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setSnapshot(value: SnapshotSummary): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestResultsVarargs(value: FormattedTestResult*): Self = this.set("testResults", js.Array(value :_*))
+    def setTestResults(value: js.Array[FormattedTestResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestResults(value: js.Array[FormattedTestResult]): Self = this.set("testResults", value.asInstanceOf[js.Any])
+    def setTestResultsVarargs(value: FormattedTestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
     
     @scala.inline
-    def setWasInterrupted(value: Boolean): Self = this.set("wasInterrupted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCoverageMap(value: CoverageMap): Self = this.set("coverageMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoverageMap: Self = this.set("coverageMap", js.undefined)
-    
-    @scala.inline
-    def setCoverageMapNull: Self = this.set("coverageMap", null)
+    def setWasInterrupted(value: Boolean): Self = StObject.set(x, "wasInterrupted", value.asInstanceOf[js.Any])
   }
 }

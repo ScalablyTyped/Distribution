@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends js.Object {
+trait Action extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -64,63 +65,51 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyLike(value: OlActionCopyLike): Self = StObject.set(x, "CopyLike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyLike(value: OlActionCopyLike): Self = this.set("CopyLike", value.asInstanceOf[js.Any])
+    def setExecute(value: () => js.Any): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setMessageClass(value: String): Self = StObject.set(x, "MessageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecute(value: () => js.Any): Self = this.set("Execute", js.Any.fromFunction0(value))
+    def setOutlookDotAction_typekey(value: Action): Self = StObject.set(x, "Outlook.Action_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageClass(value: String): Self = this.set("MessageClass", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotAction_typekey(value: Action): Self = this.set("Outlook.Action_typekey", value.asInstanceOf[js.Any])
+    def setReplyStyle(value: OlActionReplyStyle): Self = StObject.set(x, "ReplyStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setResponseStyle(value: OlActionResponseStyle): Self = StObject.set(x, "ResponseStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyStyle(value: OlActionReplyStyle): Self = this.set("ReplyStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseStyle(value: OlActionResponseStyle): Self = this.set("ResponseStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowOn(value: OlActionShowOn): Self = this.set("ShowOn", value.asInstanceOf[js.Any])
+    def setShowOn(value: OlActionShowOn): Self = StObject.set(x, "ShowOn", value.asInstanceOf[js.Any])
   }
 }

@@ -3,14 +3,14 @@ package typings.three
 import typings.three.matrix4Mod.Matrix4
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/cameras/Camera", JSImport.Namespace)
-@js.native
-object cameraMod extends js.Object {
+object cameraMod {
   
+  @JSImport("three/src/cameras/Camera", "Camera")
   @js.native
   /**
   	 * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.

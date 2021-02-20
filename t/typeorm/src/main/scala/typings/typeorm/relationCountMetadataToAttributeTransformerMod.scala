@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.queryExpressionMapMod.QueryExpressionMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/relation-count/RelationCountMetadataToAttributeTransformer", JSImport.Namespace)
-@js.native
-object relationCountMetadataToAttributeTransformerMod extends js.Object {
+object relationCountMetadataToAttributeTransformerMod {
   
+  @JSImport("typeorm/browser/query-builder/relation-count/RelationCountMetadataToAttributeTransformer", "RelationCountMetadataToAttributeTransformer")
   @js.native
-  class RelationCountMetadataToAttributeTransformer protected () extends js.Object {
+  class RelationCountMetadataToAttributeTransformer protected () extends StObject {
     def this(expressionMap: QueryExpressionMap) = this()
     
     var expressionMap: QueryExpressionMap = js.native

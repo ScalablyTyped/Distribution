@@ -1,11 +1,12 @@
 package typings.officeUiFabricReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsAvailable extends js.Object {
+trait IsAvailable extends StObject {
   
   var isAvailable: Boolean = js.native
   
@@ -35,36 +36,24 @@ object IsAvailable {
   }
   
   @scala.inline
-  implicit class IsAvailableOps[Self <: IsAvailable] (val x: Self) extends AnyVal {
+  implicit class IsAvailableMutableBuilder[Self <: IsAvailable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAway(value: Boolean): Self = StObject.set(x, "isAway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsBlocked(value: Boolean): Self = StObject.set(x, "isBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAvailable(value: Boolean): Self = this.set("isAvailable", value.asInstanceOf[js.Any])
+    def setIsBusy(value: Boolean): Self = StObject.set(x, "isBusy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAway(value: Boolean): Self = this.set("isAway", value.asInstanceOf[js.Any])
+    def setIsDoNotDisturb(value: Boolean): Self = StObject.set(x, "isDoNotDisturb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBlocked(value: Boolean): Self = this.set("isBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsBusy(value: Boolean): Self = this.set("isBusy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDoNotDisturb(value: Boolean): Self = this.set("isDoNotDisturb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsOffline(value: Boolean): Self = this.set("isOffline", value.asInstanceOf[js.Any])
+    def setIsOffline(value: Boolean): Self = StObject.set(x, "isOffline", value.asInstanceOf[js.Any])
   }
 }

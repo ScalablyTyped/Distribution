@@ -1,12 +1,13 @@
 package typings.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/magellan.html#js
 @js.native
-trait MagellanOptions extends js.Object {
+trait MagellanOptions extends StObject {
   
   var active_class: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object MagellanOptions {
   }
   
   @scala.inline
-  implicit class MagellanOptionsOps[Self <: MagellanOptions] (val x: Self) extends AnyVal {
+  implicit class MagellanOptionsMutableBuilder[Self <: MagellanOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination_threshold(value: Double): Self = StObject.set(x, "destination_threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_class(value: String): Self = this.set("active_class", value.asInstanceOf[js.Any])
+    def setDestination_thresholdUndefined: Self = StObject.set(x, "destination_threshold", js.undefined)
     
     @scala.inline
-    def deleteActive_class: Self = this.set("active_class", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_threshold(value: Double): Self = this.set("destination_threshold", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDestination_threshold: Self = this.set("destination_threshold", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFixed_top(value: Double): Self = StObject.set(x, "fixed_top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setFixed_topUndefined: Self = StObject.set(x, "fixed_top", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setOffset_by_height(value: Boolean): Self = StObject.set(x, "offset_by_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed_top(value: Double): Self = this.set("fixed_top", value.asInstanceOf[js.Any])
+    def setOffset_by_heightUndefined: Self = StObject.set(x, "offset_by_height", js.undefined)
     
     @scala.inline
-    def deleteFixed_top: Self = this.set("fixed_top", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset_by_height(value: Boolean): Self = this.set("offset_by_height", value.asInstanceOf[js.Any])
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     @scala.inline
-    def deleteOffset_by_height: Self = this.set("offset_by_height", js.undefined)
+    def setThrottle_delay(value: Double): Self = StObject.set(x, "throttle_delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
-    
-    @scala.inline
-    def setThrottle_delay(value: Double): Self = this.set("throttle_delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle_delay: Self = this.set("throttle_delay", js.undefined)
+    def setThrottle_delayUndefined: Self = StObject.set(x, "throttle_delay", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnPremisesExtensionAttributes extends js.Object {
+trait OnPremisesExtensionAttributes extends StObject {
   
   // First customizable extension attribute.
   var extensionAttribute1: js.UndefOr[NullableOption[String]] = js.native
@@ -61,153 +62,141 @@ object OnPremisesExtensionAttributes {
   }
   
   @scala.inline
-  implicit class OnPremisesExtensionAttributesOps[Self <: OnPremisesExtensionAttributes] (val x: Self) extends AnyVal {
+  implicit class OnPremisesExtensionAttributesMutableBuilder[Self <: OnPremisesExtensionAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionAttribute1(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionAttribute10(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionAttribute10Null: Self = StObject.set(x, "extensionAttribute10", null)
     
     @scala.inline
-    def setExtensionAttribute1(value: NullableOption[String]): Self = this.set("extensionAttribute1", value.asInstanceOf[js.Any])
+    def setExtensionAttribute10Undefined: Self = StObject.set(x, "extensionAttribute10", js.undefined)
     
     @scala.inline
-    def deleteExtensionAttribute1: Self = this.set("extensionAttribute1", js.undefined)
+    def setExtensionAttribute11(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionAttribute1Null: Self = this.set("extensionAttribute1", null)
+    def setExtensionAttribute11Null: Self = StObject.set(x, "extensionAttribute11", null)
     
     @scala.inline
-    def setExtensionAttribute10(value: NullableOption[String]): Self = this.set("extensionAttribute10", value.asInstanceOf[js.Any])
+    def setExtensionAttribute11Undefined: Self = StObject.set(x, "extensionAttribute11", js.undefined)
     
     @scala.inline
-    def deleteExtensionAttribute10: Self = this.set("extensionAttribute10", js.undefined)
+    def setExtensionAttribute12(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionAttribute10Null: Self = this.set("extensionAttribute10", null)
+    def setExtensionAttribute12Null: Self = StObject.set(x, "extensionAttribute12", null)
     
     @scala.inline
-    def setExtensionAttribute11(value: NullableOption[String]): Self = this.set("extensionAttribute11", value.asInstanceOf[js.Any])
+    def setExtensionAttribute12Undefined: Self = StObject.set(x, "extensionAttribute12", js.undefined)
     
     @scala.inline
-    def deleteExtensionAttribute11: Self = this.set("extensionAttribute11", js.undefined)
+    def setExtensionAttribute13(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionAttribute11Null: Self = this.set("extensionAttribute11", null)
+    def setExtensionAttribute13Null: Self = StObject.set(x, "extensionAttribute13", null)
     
     @scala.inline
-    def setExtensionAttribute12(value: NullableOption[String]): Self = this.set("extensionAttribute12", value.asInstanceOf[js.Any])
+    def setExtensionAttribute13Undefined: Self = StObject.set(x, "extensionAttribute13", js.undefined)
     
     @scala.inline
-    def deleteExtensionAttribute12: Self = this.set("extensionAttribute12", js.undefined)
+    def setExtensionAttribute14(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute14", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionAttribute12Null: Self = this.set("extensionAttribute12", null)
+    def setExtensionAttribute14Null: Self = StObject.set(x, "extensionAttribute14", null)
     
     @scala.inline
-    def setExtensionAttribute13(value: NullableOption[String]): Self = this.set("extensionAttribute13", value.asInstanceOf[js.Any])
+    def setExtensionAttribute14Undefined: Self = StObject.set(x, "extensionAttribute14", js.undefined)
     
     @scala.inline
-    def deleteExtensionAttribute13: Self = this.set("extensionAttribute13", js.undefined)
+    def setExtensionAttribute15(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute15", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionAttribute13Null: Self = this.set("extensionAttribute13", null)
+    def setExtensionAttribute15Null: Self = StObject.set(x, "extensionAttribute15", null)
     
     @scala.inline
-    def setExtensionAttribute14(value: NullableOption[String]): Self = this.set("extensionAttribute14", value.asInstanceOf[js.Any])
+    def setExtensionAttribute15Undefined: Self = StObject.set(x, "extensionAttribute15", js.undefined)
     
     @scala.inline
-    def deleteExtensionAttribute14: Self = this.set("extensionAttribute14", js.undefined)
+    def setExtensionAttribute1Null: Self = StObject.set(x, "extensionAttribute1", null)
     
     @scala.inline
-    def setExtensionAttribute14Null: Self = this.set("extensionAttribute14", null)
+    def setExtensionAttribute1Undefined: Self = StObject.set(x, "extensionAttribute1", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute15(value: NullableOption[String]): Self = this.set("extensionAttribute15", value.asInstanceOf[js.Any])
+    def setExtensionAttribute2(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute15: Self = this.set("extensionAttribute15", js.undefined)
+    def setExtensionAttribute2Null: Self = StObject.set(x, "extensionAttribute2", null)
     
     @scala.inline
-    def setExtensionAttribute15Null: Self = this.set("extensionAttribute15", null)
+    def setExtensionAttribute2Undefined: Self = StObject.set(x, "extensionAttribute2", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute2(value: NullableOption[String]): Self = this.set("extensionAttribute2", value.asInstanceOf[js.Any])
+    def setExtensionAttribute3(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute2: Self = this.set("extensionAttribute2", js.undefined)
+    def setExtensionAttribute3Null: Self = StObject.set(x, "extensionAttribute3", null)
     
     @scala.inline
-    def setExtensionAttribute2Null: Self = this.set("extensionAttribute2", null)
+    def setExtensionAttribute3Undefined: Self = StObject.set(x, "extensionAttribute3", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute3(value: NullableOption[String]): Self = this.set("extensionAttribute3", value.asInstanceOf[js.Any])
+    def setExtensionAttribute4(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute3: Self = this.set("extensionAttribute3", js.undefined)
+    def setExtensionAttribute4Null: Self = StObject.set(x, "extensionAttribute4", null)
     
     @scala.inline
-    def setExtensionAttribute3Null: Self = this.set("extensionAttribute3", null)
+    def setExtensionAttribute4Undefined: Self = StObject.set(x, "extensionAttribute4", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute4(value: NullableOption[String]): Self = this.set("extensionAttribute4", value.asInstanceOf[js.Any])
+    def setExtensionAttribute5(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute4: Self = this.set("extensionAttribute4", js.undefined)
+    def setExtensionAttribute5Null: Self = StObject.set(x, "extensionAttribute5", null)
     
     @scala.inline
-    def setExtensionAttribute4Null: Self = this.set("extensionAttribute4", null)
+    def setExtensionAttribute5Undefined: Self = StObject.set(x, "extensionAttribute5", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute5(value: NullableOption[String]): Self = this.set("extensionAttribute5", value.asInstanceOf[js.Any])
+    def setExtensionAttribute6(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute5: Self = this.set("extensionAttribute5", js.undefined)
+    def setExtensionAttribute6Null: Self = StObject.set(x, "extensionAttribute6", null)
     
     @scala.inline
-    def setExtensionAttribute5Null: Self = this.set("extensionAttribute5", null)
+    def setExtensionAttribute6Undefined: Self = StObject.set(x, "extensionAttribute6", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute6(value: NullableOption[String]): Self = this.set("extensionAttribute6", value.asInstanceOf[js.Any])
+    def setExtensionAttribute7(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute6: Self = this.set("extensionAttribute6", js.undefined)
+    def setExtensionAttribute7Null: Self = StObject.set(x, "extensionAttribute7", null)
     
     @scala.inline
-    def setExtensionAttribute6Null: Self = this.set("extensionAttribute6", null)
+    def setExtensionAttribute7Undefined: Self = StObject.set(x, "extensionAttribute7", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute7(value: NullableOption[String]): Self = this.set("extensionAttribute7", value.asInstanceOf[js.Any])
+    def setExtensionAttribute8(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute7: Self = this.set("extensionAttribute7", js.undefined)
+    def setExtensionAttribute8Null: Self = StObject.set(x, "extensionAttribute8", null)
     
     @scala.inline
-    def setExtensionAttribute7Null: Self = this.set("extensionAttribute7", null)
+    def setExtensionAttribute8Undefined: Self = StObject.set(x, "extensionAttribute8", js.undefined)
     
     @scala.inline
-    def setExtensionAttribute8(value: NullableOption[String]): Self = this.set("extensionAttribute8", value.asInstanceOf[js.Any])
+    def setExtensionAttribute9(value: NullableOption[String]): Self = StObject.set(x, "extensionAttribute9", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensionAttribute8: Self = this.set("extensionAttribute8", js.undefined)
+    def setExtensionAttribute9Null: Self = StObject.set(x, "extensionAttribute9", null)
     
     @scala.inline
-    def setExtensionAttribute8Null: Self = this.set("extensionAttribute8", null)
-    
-    @scala.inline
-    def setExtensionAttribute9(value: NullableOption[String]): Self = this.set("extensionAttribute9", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensionAttribute9: Self = this.set("extensionAttribute9", js.undefined)
-    
-    @scala.inline
-    def setExtensionAttribute9Null: Self = this.set("extensionAttribute9", null)
+    def setExtensionAttribute9Undefined: Self = StObject.set(x, "extensionAttribute9", js.undefined)
   }
 }

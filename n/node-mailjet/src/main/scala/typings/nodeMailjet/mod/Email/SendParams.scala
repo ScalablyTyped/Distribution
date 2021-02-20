@@ -1,12 +1,13 @@
 package typings.nodeMailjet.mod.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // request params
 @js.native
-trait SendParams extends js.Object {
+trait SendParams extends StObject {
   
   var Messages: js.Array[SendParamsMessage] = js.native
   
@@ -21,30 +22,18 @@ object SendParams {
   }
   
   @scala.inline
-  implicit class SendParamsOps[Self <: SendParams] (val x: Self) extends AnyVal {
+  implicit class SendParamsMutableBuilder[Self <: SendParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: js.Array[SendParamsMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesVarargs(value: SendParamsMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSandboxMode(value: Boolean): Self = StObject.set(x, "SandboxMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: SendParamsMessage*): Self = this.set("Messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[SendParamsMessage]): Self = this.set("Messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSandboxMode(value: Boolean): Self = this.set("SandboxMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandboxMode: Self = this.set("SandboxMode", js.undefined)
+    def setSandboxModeUndefined: Self = StObject.set(x, "SandboxMode", js.undefined)
   }
 }

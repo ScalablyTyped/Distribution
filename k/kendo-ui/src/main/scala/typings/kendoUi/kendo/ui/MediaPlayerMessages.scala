@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaPlayerMessages extends js.Object {
+trait MediaPlayerMessages extends StObject {
   
   var fullscreen: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object MediaPlayerMessages {
   }
   
   @scala.inline
-  implicit class MediaPlayerMessagesOps[Self <: MediaPlayerMessages] (val x: Self) extends AnyVal {
+  implicit class MediaPlayerMessagesMutableBuilder[Self <: MediaPlayerMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullscreen(value: String): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMute(value: String): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: String): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setPause(value: String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMute(value: String): Self = this.set("mute", value.asInstanceOf[js.Any])
+    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
     @scala.inline
-    def deleteMute: Self = this.set("mute", js.undefined)
+    def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: String): Self = this.set("pause", value.asInstanceOf[js.Any])
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def deletePause: Self = this.set("pause", js.undefined)
+    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: String): Self = this.set("play", value.asInstanceOf[js.Any])
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setUnmute(value: String): Self = StObject.set(x, "unmute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: String): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
-    
-    @scala.inline
-    def setUnmute(value: String): Self = this.set("unmute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmute: Self = this.set("unmute", js.undefined)
+    def setUnmuteUndefined: Self = StObject.set(x, "unmute", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.amapJsSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Batch extends js.Object {
+trait Batch extends StObject {
   
   var batch: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Batch {
   }
   
   @scala.inline
-  implicit class BatchOps[Self <: Batch] (val x: Self) extends AnyVal {
+  implicit class BatchMutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch(value: Boolean): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("city", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: String): Self = this.set("extensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

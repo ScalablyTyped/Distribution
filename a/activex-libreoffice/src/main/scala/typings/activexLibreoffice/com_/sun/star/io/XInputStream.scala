@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,33 +80,21 @@ object XInputStream {
   }
   
   @scala.inline
-  implicit class XInputStreamOps[Self <: XInputStream] (val x: Self) extends AnyVal {
+  implicit class XInputStreamMutableBuilder[Self <: XInputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseInput(value: () => Unit): Self = StObject.set(x, "closeInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readBytes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAvailable(value: () => Double): Self = this.set("available", js.Any.fromFunction0(value))
+    def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readSomeBytes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCloseInput(value: () => Unit): Self = this.set("closeInput", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = this.set("readBytes", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = this.set("readSomeBytes", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSkipBytes(value: Double => Unit): Self = this.set("skipBytes", js.Any.fromFunction1(value))
+    def setSkipBytes(value: Double => Unit): Self = StObject.set(x, "skipBytes", js.Any.fromFunction1(value))
   }
 }

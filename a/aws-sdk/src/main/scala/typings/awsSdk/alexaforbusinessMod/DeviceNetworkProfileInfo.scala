@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceNetworkProfileInfo extends js.Object {
+trait DeviceNetworkProfileInfo extends StObject {
   
   /**
     * The ARN of the certificate associated with a device.
@@ -31,36 +32,24 @@ object DeviceNetworkProfileInfo {
   }
   
   @scala.inline
-  implicit class DeviceNetworkProfileInfoOps[Self <: DeviceNetworkProfileInfo] (val x: Self) extends AnyVal {
+  implicit class DeviceNetworkProfileInfoMutableBuilder[Self <: DeviceNetworkProfileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateExpirationTime(value: CertificateTime): Self = StObject.set(x, "CertificateExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: Arn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setCertificateExpirationTimeUndefined: Self = StObject.set(x, "CertificateExpirationTime", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateExpirationTime(value: CertificateTime): Self = this.set("CertificateExpirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateExpirationTime: Self = this.set("CertificateExpirationTime", js.undefined)
-    
-    @scala.inline
-    def setNetworkProfileArn(value: Arn): Self = this.set("NetworkProfileArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkProfileArn: Self = this.set("NetworkProfileArn", js.undefined)
+    def setNetworkProfileArnUndefined: Self = StObject.set(x, "NetworkProfileArn", js.undefined)
   }
 }

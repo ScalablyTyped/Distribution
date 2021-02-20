@@ -1,6 +1,7 @@
 package typings.watsonDeveloperCloud.sdkMod
 
 import typings.watsonDeveloperCloud.v1Mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,16 @@ class AuthorizationV1 protected () extends ^ {
     */
   def this(options: js.Any) = this()
 }
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "AuthorizationV1")
-@js.native
-object AuthorizationV1 extends js.Object {
+object AuthorizationV1 {
   
-  var URL: String = js.native
+  @JSImport("watson-developer-cloud/sdk", "AuthorizationV1")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "AuthorizationV1.URL")
+  @js.native
+  def URL: String = js.native
+  @scala.inline
+  def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintStaple extends js.Object
+sealed trait PrintStaple extends StObject
 /** Specifies the staple options. */
 @JSGlobal("Windows.Graphics.Printing.PrintStaple")
 @js.native
-object PrintStaple extends js.Object {
+object PrintStaple extends StObject {
   
   /** The default staple option. */
   @js.native

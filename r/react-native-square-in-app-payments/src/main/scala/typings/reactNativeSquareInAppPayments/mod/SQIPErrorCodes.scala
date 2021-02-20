@@ -1,15 +1,15 @@
 package typings.reactNativeSquareInAppPayments.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SQIPErrorCodes extends js.Object
+sealed trait SQIPErrorCodes extends StObject
 @JSImport("react-native-square-in-app-payments", "SQIPErrorCodes")
 @js.native
-object SQIPErrorCodes extends js.Object {
+object SQIPErrorCodes extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SQIPErrorCodes with String] = js.native
@@ -20,8 +20,7 @@ object SQIPErrorCodes extends js.Object {
     */
   @js.native
   sealed trait CANCELED extends SQIPErrorCodes
-  /* "canceled" */ @js.native
-  object CANCELED extends TopLevel[CANCELED with String]
+  /* "canceled" */ val CANCELED: typings.reactNativeSquareInAppPayments.mod.SQIPErrorCodes.CANCELED with String = js.native
   
   /**
     * Square Buyer Verification SDK could not verify the provided card.
@@ -29,8 +28,7 @@ object SQIPErrorCodes extends js.Object {
     */
   @js.native
   sealed trait FAILED extends SQIPErrorCodes
-  /* "failed" */ @js.native
-  object FAILED extends TopLevel[FAILED with String]
+  /* "failed" */ val FAILED: typings.reactNativeSquareInAppPayments.mod.SQIPErrorCodes.FAILED with String = js.native
   
   /**
     * In-App Payments SDK could not connect to the network.
@@ -38,8 +36,7 @@ object SQIPErrorCodes extends js.Object {
     */
   @js.native
   sealed trait NO_NETWORK extends SQIPErrorCodes
-  /* "noNetwork" */ @js.native
-  object NO_NETWORK extends TopLevel[NO_NETWORK with String]
+  /* "noNetwork" */ val NO_NETWORK: typings.reactNativeSquareInAppPayments.mod.SQIPErrorCodes.NO_NETWORK with String = js.native
   
   /**
     * The version of the Square Buyer Verification SDK used by this application is no longer supported.
@@ -47,8 +44,7 @@ object SQIPErrorCodes extends js.Object {
     */
   @js.native
   sealed trait UNSUPPORTED_SDK_VERSION extends SQIPErrorCodes
-  /* "unsupportedSDKVersion" */ @js.native
-  object UNSUPPORTED_SDK_VERSION extends TopLevel[UNSUPPORTED_SDK_VERSION with String]
+  /* "unsupportedSDKVersion" */ val UNSUPPORTED_SDK_VERSION: typings.reactNativeSquareInAppPayments.mod.SQIPErrorCodes.UNSUPPORTED_SDK_VERSION with String = js.native
   
   /**
     * In-App Payments SDK was used in an unexpected or unsupported way.
@@ -56,6 +52,5 @@ object SQIPErrorCodes extends js.Object {
     */
   @js.native
   sealed trait USAGE_ERROR extends SQIPErrorCodes
-  /* "usageError" */ @js.native
-  object USAGE_ERROR extends TopLevel[USAGE_ERROR with String]
+  /* "usageError" */ val USAGE_ERROR: typings.reactNativeSquareInAppPayments.mod.SQIPErrorCodes.USAGE_ERROR with String = js.native
 }

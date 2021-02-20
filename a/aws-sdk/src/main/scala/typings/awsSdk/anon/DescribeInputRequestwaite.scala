@@ -2,13 +2,14 @@ package typings.awsSdk.anon
 
 import typings.awsSdk.medialiveMod.string
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/medialive.DescribeInputRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeInputRequestwaite extends js.Object {
+trait DescribeInputRequestwaite extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -27,27 +28,15 @@ object DescribeInputRequestwaite {
   }
   
   @scala.inline
-  implicit class DescribeInputRequestwaiteOps[Self <: DescribeInputRequestwaite] (val x: Self) extends AnyVal {
+  implicit class DescribeInputRequestwaiteMutableBuilder[Self <: DescribeInputRequestwaite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputId(value: string): Self = this.set("InputId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
   }
 }

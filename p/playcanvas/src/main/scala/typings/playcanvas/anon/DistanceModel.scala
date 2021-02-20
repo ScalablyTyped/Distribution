@@ -1,12 +1,13 @@
 package typings.playcanvas.anon
 
 import typings.playcanvas.pc.Vec3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceModel extends js.Object {
+trait DistanceModel extends StObject {
   
   var distanceModel: js.UndefOr[String] = js.native
   
@@ -39,84 +40,72 @@ object DistanceModel {
   }
   
   @scala.inline
-  implicit class DistanceModelOps[Self <: DistanceModel] (val x: Self) extends AnyVal {
+  implicit class DistanceModelMutableBuilder[Self <: DistanceModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceModel(value: String): Self = StObject.set(x, "distanceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceModelUndefined: Self = StObject.set(x, "distanceModel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceModel(value: String): Self = this.set("distanceModel", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDistanceModel: Self = this.set("distanceModel", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
+    def setRefDistance(value: Double): Self = StObject.set(x, "refDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vec3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRefDistanceUndefined: Self = StObject.set(x, "refDistance", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setRollOffFactor(value: Double): Self = StObject.set(x, "rollOffFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefDistance(value: Double): Self = this.set("refDistance", value.asInstanceOf[js.Any])
+    def setRollOffFactorUndefined: Self = StObject.set(x, "rollOffFactor", js.undefined)
     
     @scala.inline
-    def deleteRefDistance: Self = this.set("refDistance", js.undefined)
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollOffFactor(value: Double): Self = this.set("rollOffFactor", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteRollOffFactor: Self = this.set("rollOffFactor", js.undefined)
+    def setVelocity(value: Vec3): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVelocity(value: Vec3): Self = this.set("velocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocity: Self = this.set("velocity", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

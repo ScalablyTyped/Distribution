@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ItemContentType extends js.Object
+sealed trait ItemContentType extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "ItemContentType")
 @js.native
-object ItemContentType extends js.Object {
+object ItemContentType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ItemContentType with Double] = js.native
   
   @js.native
   sealed trait Base64Encoded extends ItemContentType
-  /* 1 */ @js.native
-  object Base64Encoded extends TopLevel[Base64Encoded with Double]
+  /* 1 */ val Base64Encoded: typings.vsoNodeApi.gitInterfacesMod.ItemContentType.Base64Encoded with Double = js.native
   
   @js.native
   sealed trait RawText extends ItemContentType
-  /* 0 */ @js.native
-  object RawText extends TopLevel[RawText with Double]
+  /* 0 */ val RawText: typings.vsoNodeApi.gitInterfacesMod.ItemContentType.RawText with Double = js.native
 }

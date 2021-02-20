@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.pc.callbacks.CalculateSortDistance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param material - The material used to render this instance.
   */
 @js.native
-trait MeshInstance extends js.Object {
+trait MeshInstance extends StObject {
   
   /**
     * The world space axis-aligned bounding box for this

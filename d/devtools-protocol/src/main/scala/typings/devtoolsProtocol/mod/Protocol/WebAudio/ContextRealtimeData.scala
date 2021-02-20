@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextRealtimeData extends js.Object {
+trait ContextRealtimeData extends StObject {
   
   /**
     * A running mean of callback interval.
@@ -43,30 +44,18 @@ object ContextRealtimeData {
   }
   
   @scala.inline
-  implicit class ContextRealtimeDataOps[Self <: ContextRealtimeData] (val x: Self) extends AnyVal {
+  implicit class ContextRealtimeDataMutableBuilder[Self <: ContextRealtimeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackIntervalMean(value: Double): Self = StObject.set(x, "callbackIntervalMean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackIntervalVariance(value: Double): Self = StObject.set(x, "callbackIntervalVariance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackIntervalMean(value: Double): Self = this.set("callbackIntervalMean", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallbackIntervalVariance(value: Double): Self = this.set("callbackIntervalVariance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderCapacity(value: Double): Self = this.set("renderCapacity", value.asInstanceOf[js.Any])
+    def setRenderCapacity(value: Double): Self = StObject.set(x, "renderCapacity", value.asInstanceOf[js.Any])
   }
 }

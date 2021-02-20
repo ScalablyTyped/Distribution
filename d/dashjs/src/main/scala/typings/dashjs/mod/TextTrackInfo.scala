@@ -1,12 +1,13 @@
 package typings.dashjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dashjs", "TextTrackInfo")
 @js.native
-class TextTrackInfo () extends js.Object {
+class TextTrackInfo () extends StObject {
   
   var captionData: js.Array[CaptionData] | Null = js.native
   

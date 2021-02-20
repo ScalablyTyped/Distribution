@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,45 +95,33 @@ object GeoJSONLayerCapabilitiesEditing {
   }
   
   @scala.inline
-  implicit class GeoJSONLayerCapabilitiesEditingOps[Self <: GeoJSONLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
+  implicit class GeoJSONLayerCapabilitiesEditingMutableBuilder[Self <: GeoJSONLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportsDeleteByAnonymous(value: Boolean): Self = StObject.set(x, "supportsDeleteByAnonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsDeleteByOthers(value: Boolean): Self = StObject.set(x, "supportsDeleteByOthers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsGeometryUpdate(value: Boolean): Self = StObject.set(x, "supportsGeometryUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDeleteByAnonymous(value: Boolean): Self = this.set("supportsDeleteByAnonymous", value.asInstanceOf[js.Any])
+    def setSupportsGlobalId(value: Boolean): Self = StObject.set(x, "supportsGlobalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDeleteByOthers(value: Boolean): Self = this.set("supportsDeleteByOthers", value.asInstanceOf[js.Any])
+    def setSupportsRollbackOnFailure(value: Boolean): Self = StObject.set(x, "supportsRollbackOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsGeometryUpdate(value: Boolean): Self = this.set("supportsGeometryUpdate", value.asInstanceOf[js.Any])
+    def setSupportsUpdateByAnonymous(value: Boolean): Self = StObject.set(x, "supportsUpdateByAnonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsGlobalId(value: Boolean): Self = this.set("supportsGlobalId", value.asInstanceOf[js.Any])
+    def setSupportsUpdateByOthers(value: Boolean): Self = StObject.set(x, "supportsUpdateByOthers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsRollbackOnFailure(value: Boolean): Self = this.set("supportsRollbackOnFailure", value.asInstanceOf[js.Any])
+    def setSupportsUpdateWithoutM(value: Boolean): Self = StObject.set(x, "supportsUpdateWithoutM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsUpdateByAnonymous(value: Boolean): Self = this.set("supportsUpdateByAnonymous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsUpdateByOthers(value: Boolean): Self = this.set("supportsUpdateByOthers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsUpdateWithoutM(value: Boolean): Self = this.set("supportsUpdateWithoutM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsUploadWithItemId(value: Boolean): Self = this.set("supportsUploadWithItemId", value.asInstanceOf[js.Any])
+    def setSupportsUploadWithItemId(value: Boolean): Self = StObject.set(x, "supportsUploadWithItemId", value.asInstanceOf[js.Any])
   }
 }

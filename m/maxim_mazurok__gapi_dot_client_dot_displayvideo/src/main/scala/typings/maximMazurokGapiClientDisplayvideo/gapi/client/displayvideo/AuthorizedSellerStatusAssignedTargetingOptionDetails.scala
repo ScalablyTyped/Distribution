@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthorizedSellerStatusAssignedTargetingOptionDetails extends js.Object {
+trait AuthorizedSellerStatusAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The authorized seller status to target. */
   var authorizedSellerStatus: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object AuthorizedSellerStatusAssignedTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class AuthorizedSellerStatusAssignedTargetingOptionDetailsOps[Self <: AuthorizedSellerStatusAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class AuthorizedSellerStatusAssignedTargetingOptionDetailsMutableBuilder[Self <: AuthorizedSellerStatusAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizedSellerStatus(value: String): Self = StObject.set(x, "authorizedSellerStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizedSellerStatusUndefined: Self = StObject.set(x, "authorizedSellerStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedSellerStatus(value: String): Self = this.set("authorizedSellerStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizedSellerStatus: Self = this.set("authorizedSellerStatus", js.undefined)
-    
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = this.set("targetingOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetingOptionId: Self = this.set("targetingOptionId", js.undefined)
+    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

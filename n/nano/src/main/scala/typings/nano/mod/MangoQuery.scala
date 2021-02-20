@@ -2,12 +2,13 @@ package typings.nano.mod
 
 import typings.nano.nanoBooleans.`false`
 import typings.nano.nanoStrings.ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MangoQuery extends js.Object {
+trait MangoQuery extends StObject {
   
   // A string that enables you to specify which page of results you require. Used for paging through result sets.
   var bookmark: js.UndefOr[String] = js.native
@@ -57,93 +58,81 @@ object MangoQuery {
   }
   
   @scala.inline
-  implicit class MangoQueryOps[Self <: MangoQuery] (val x: Self) extends AnyVal {
+  implicit class MangoQueryMutableBuilder[Self <: MangoQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecution_stats(value: Boolean): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: MangoSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setExecution_statsUndefined: Self = StObject.set(x, "execution_stats", js.undefined)
     
     @scala.inline
-    def setBookmark(value: String): Self = this.set("bookmark", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBookmark: Self = this.set("bookmark", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setExecution_stats(value: Boolean): Self = this.set("execution_stats", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteExecution_stats: Self = this.set("execution_stats", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setSelector(value: MangoSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setSort(value: js.Array[SortOrder]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
+    def setSortVarargs(value: SortOrder*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
     @scala.inline
-    def setSortVarargs(value: SortOrder*): Self = this.set("sort", js.Array(value :_*))
+    def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: js.Array[SortOrder]): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setStale(value: ok | `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStable(value: Boolean): Self = this.set("stable", value.asInstanceOf[js.Any])
+    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
     @scala.inline
-    def deleteStable: Self = this.set("stable", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStale(value: ok | `false`): Self = this.set("stale", value.asInstanceOf[js.Any])
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteStale: Self = this.set("stale", js.undefined)
+    def setUse_index(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "use_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUse_index(value: String | (js.Tuple2[String, String])): Self = this.set("use_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse_index: Self = this.set("use_index", js.undefined)
+    def setUse_indexUndefined: Self = StObject.set(x, "use_index", js.undefined)
   }
 }

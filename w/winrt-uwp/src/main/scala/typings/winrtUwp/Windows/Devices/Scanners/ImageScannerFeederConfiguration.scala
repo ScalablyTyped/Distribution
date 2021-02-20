@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
 import typings.winrtUwp.Windows.Graphics.Printing.PrintMediaSize
 import typings.winrtUwp.Windows.Graphics.Printing.PrintOrientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the Feeder scan source of the scanner. */
 @js.native
-trait ImageScannerFeederConfiguration extends js.Object {
+trait ImageScannerFeederConfiguration extends StObject {
   
   /** Gets the actual horizontal and vertical scan resolution for the scanner's Feeder, in DPI. */
   var actualResolution: ImageScannerResolution = js.native
@@ -187,129 +188,117 @@ object ImageScannerFeederConfiguration {
   }
   
   @scala.inline
-  implicit class ImageScannerFeederConfigurationOps[Self <: ImageScannerFeederConfiguration] (val x: Self) extends AnyVal {
+  implicit class ImageScannerFeederConfigurationMutableBuilder[Self <: ImageScannerFeederConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualResolution(value: ImageScannerResolution): Self = StObject.set(x, "actualResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCroppingMode(value: ImageScannerAutoCroppingMode): Self = StObject.set(x, "autoCroppingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoDetectPageSize(value: Boolean): Self = StObject.set(x, "autoDetectPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualResolution(value: ImageScannerResolution): Self = this.set("actualResolution", value.asInstanceOf[js.Any])
+    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCroppingMode(value: ImageScannerAutoCroppingMode): Self = this.set("autoCroppingMode", value.asInstanceOf[js.Any])
+    def setBrightnessStep(value: Double): Self = StObject.set(x, "brightnessStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDetectPageSize(value: Boolean): Self = this.set("autoDetectPageSize", value.asInstanceOf[js.Any])
+    def setCanAutoDetectPageSize(value: Boolean): Self = StObject.set(x, "canAutoDetectPageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setCanScanAhead(value: Boolean): Self = StObject.set(x, "canScanAhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightnessStep(value: Double): Self = this.set("brightnessStep", value.asInstanceOf[js.Any])
+    def setCanScanDuplex(value: Boolean): Self = StObject.set(x, "canScanDuplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanAutoDetectPageSize(value: Boolean): Self = this.set("canAutoDetectPageSize", value.asInstanceOf[js.Any])
+    def setColorMode(value: ImageScannerColorMode): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanScanAhead(value: Boolean): Self = this.set("canScanAhead", value.asInstanceOf[js.Any])
+    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanScanDuplex(value: Boolean): Self = this.set("canScanDuplex", value.asInstanceOf[js.Any])
+    def setContrastStep(value: Double): Self = StObject.set(x, "contrastStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMode(value: ImageScannerColorMode): Self = this.set("colorMode", value.asInstanceOf[js.Any])
+    def setDefaultBrightness(value: Double): Self = StObject.set(x, "defaultBrightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Double): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setDefaultColorMode(value: ImageScannerColorMode): Self = StObject.set(x, "defaultColorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrastStep(value: Double): Self = this.set("contrastStep", value.asInstanceOf[js.Any])
+    def setDefaultContrast(value: Double): Self = StObject.set(x, "defaultContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBrightness(value: Double): Self = this.set("defaultBrightness", value.asInstanceOf[js.Any])
+    def setDefaultFormat(value: ImageScannerFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultColorMode(value: ImageScannerColorMode): Self = this.set("defaultColorMode", value.asInstanceOf[js.Any])
+    def setDesiredResolution(value: ImageScannerResolution): Self = StObject.set(x, "desiredResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultContrast(value: Double): Self = this.set("defaultContrast", value.asInstanceOf[js.Any])
+    def setDuplex(value: Boolean): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFormat(value: ImageScannerFormat): Self = this.set("defaultFormat", value.asInstanceOf[js.Any])
+    def setFormat(value: ImageScannerFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredResolution(value: ImageScannerResolution): Self = this.set("desiredResolution", value.asInstanceOf[js.Any])
+    def setIsAutoCroppingModeSupported(value: ImageScannerAutoCroppingMode => Boolean): Self = StObject.set(x, "isAutoCroppingModeSupported", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDuplex(value: Boolean): Self = this.set("duplex", value.asInstanceOf[js.Any])
+    def setIsColorModeSupported(value: ImageScannerColorMode => Boolean): Self = StObject.set(x, "isColorModeSupported", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormat(value: ImageScannerFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIsFormatSupported(value: ImageScannerFormat => Boolean): Self = StObject.set(x, "isFormatSupported", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAutoCroppingModeSupported(value: ImageScannerAutoCroppingMode => Boolean): Self = this.set("isAutoCroppingModeSupported", js.Any.fromFunction1(value))
+    def setIsPageSizeSupported(value: (PrintMediaSize, PrintOrientation) => Boolean): Self = StObject.set(x, "isPageSizeSupported", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsColorModeSupported(value: ImageScannerColorMode => Boolean): Self = this.set("isColorModeSupported", js.Any.fromFunction1(value))
+    def setMaxBrightness(value: Double): Self = StObject.set(x, "maxBrightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFormatSupported(value: ImageScannerFormat => Boolean): Self = this.set("isFormatSupported", js.Any.fromFunction1(value))
+    def setMaxContrast(value: Double): Self = StObject.set(x, "maxContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPageSizeSupported(value: (PrintMediaSize, PrintOrientation) => Boolean): Self = this.set("isPageSizeSupported", js.Any.fromFunction2(value))
+    def setMaxNumberOfPages(value: Double): Self = StObject.set(x, "maxNumberOfPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBrightness(value: Double): Self = this.set("maxBrightness", value.asInstanceOf[js.Any])
+    def setMaxResolution(value: ImageScannerResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxContrast(value: Double): Self = this.set("maxContrast", value.asInstanceOf[js.Any])
+    def setMaxScanArea(value: Size): Self = StObject.set(x, "maxScanArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumberOfPages(value: Double): Self = this.set("maxNumberOfPages", value.asInstanceOf[js.Any])
+    def setMinBrightness(value: Double): Self = StObject.set(x, "minBrightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResolution(value: ImageScannerResolution): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    def setMinContrast(value: Double): Self = StObject.set(x, "minContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScanArea(value: Size): Self = this.set("maxScanArea", value.asInstanceOf[js.Any])
+    def setMinResolution(value: ImageScannerResolution): Self = StObject.set(x, "minResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBrightness(value: Double): Self = this.set("minBrightness", value.asInstanceOf[js.Any])
+    def setMinScanArea(value: Size): Self = StObject.set(x, "minScanArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinContrast(value: Double): Self = this.set("minContrast", value.asInstanceOf[js.Any])
+    def setOpticalResolution(value: ImageScannerResolution): Self = StObject.set(x, "opticalResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinResolution(value: ImageScannerResolution): Self = this.set("minResolution", value.asInstanceOf[js.Any])
+    def setPageOrientation(value: PrintOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScanArea(value: Size): Self = this.set("minScanArea", value.asInstanceOf[js.Any])
+    def setPageSize(value: PrintMediaSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpticalResolution(value: ImageScannerResolution): Self = this.set("opticalResolution", value.asInstanceOf[js.Any])
+    def setPageSizeDimensions(value: Size): Self = StObject.set(x, "pageSizeDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageOrientation(value: PrintOrientation): Self = this.set("pageOrientation", value.asInstanceOf[js.Any])
+    def setScanAhead(value: Boolean): Self = StObject.set(x, "scanAhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: PrintMediaSize): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageSizeDimensions(value: Size): Self = this.set("pageSizeDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanAhead(value: Boolean): Self = this.set("scanAhead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedScanRegion(value: Rect): Self = this.set("selectedScanRegion", value.asInstanceOf[js.Any])
+    def setSelectedScanRegion(value: Rect): Self = StObject.set(x, "selectedScanRegion", value.asInstanceOf[js.Any])
   }
 }

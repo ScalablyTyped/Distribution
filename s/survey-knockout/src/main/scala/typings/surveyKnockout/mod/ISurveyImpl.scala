@@ -1,11 +1,12 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISurveyImpl extends js.Object {
+trait ISurveyImpl extends StObject {
   
   def geSurveyData(): ISurveyData = js.native
   
@@ -22,27 +23,15 @@ object ISurveyImpl {
   }
   
   @scala.inline
-  implicit class ISurveyImplOps[Self <: ISurveyImpl] (val x: Self) extends AnyVal {
+  implicit class ISurveyImplMutableBuilder[Self <: ISurveyImpl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeSurveyData(value: () => ISurveyData): Self = StObject.set(x, "geSurveyData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGeSurveyData(value: () => ISurveyData): Self = this.set("geSurveyData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSurvey(value: () => ISurvey): Self = this.set("getSurvey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextProcessor(value: () => ITextProcessor): Self = this.set("getTextProcessor", js.Any.fromFunction0(value))
+    def setGetTextProcessor(value: () => ITextProcessor): Self = StObject.set(x, "getTextProcessor", js.Any.fromFunction0(value))
   }
 }

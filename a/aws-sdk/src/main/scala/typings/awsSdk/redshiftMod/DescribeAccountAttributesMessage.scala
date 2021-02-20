@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccountAttributesMessage extends js.Object {
+trait DescribeAccountAttributesMessage extends StObject {
   
   /**
     * A list of attribute names.
@@ -21,27 +22,15 @@ object DescribeAccountAttributesMessage {
   }
   
   @scala.inline
-  implicit class DescribeAccountAttributesMessageOps[Self <: DescribeAccountAttributesMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeAccountAttributesMessageMutableBuilder[Self <: DescribeAccountAttributesMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeNamesVarargs(value: String*): Self = this.set("AttributeNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributeNames(value: AttributeNameList): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeNames: Self = this.set("AttributeNames", js.undefined)
+    def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
   }
 }

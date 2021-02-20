@@ -1,5 +1,6 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.confirm
   - typings.puppeteer.puppeteerStrings.prompt
 */
-trait DialogType extends js.Object
+trait DialogType extends StObject
 object DialogType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighAvailabilityOptions extends js.Object {
+trait HighAvailabilityOptions extends StObject {
   
   /**
     * Default: false;
@@ -37,51 +38,39 @@ object HighAvailabilityOptions {
   }
   
   @scala.inline
-  implicit class HighAvailabilityOptionsOps[Self <: HighAvailabilityOptions] (val x: Self) extends AnyVal {
+  implicit class HighAvailabilityOptionsMutableBuilder[Self <: HighAvailabilityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainsEnabled(value: Boolean): Self = StObject.set(x, "domainsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainsEnabledUndefined: Self = StObject.set(x, "domainsEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHa(value: Boolean): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainsEnabled(value: Boolean): Self = this.set("domainsEnabled", value.asInstanceOf[js.Any])
+    def setHaInterval(value: scala.Double): Self = StObject.set(x, "haInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainsEnabled: Self = this.set("domainsEnabled", js.undefined)
+    def setHaIntervalUndefined: Self = StObject.set(x, "haInterval", js.undefined)
     
     @scala.inline
-    def setHa(value: Boolean): Self = this.set("ha", value.asInstanceOf[js.Any])
+    def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
     
     @scala.inline
-    def deleteHa: Self = this.set("ha", js.undefined)
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaInterval(value: scala.Double): Self = this.set("haInterval", value.asInstanceOf[js.Any])
+    def setReadPreferenceTags(value: js.Array[String]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHaInterval: Self = this.set("haInterval", js.undefined)
+    def setReadPreferenceTagsUndefined: Self = StObject.set(x, "readPreferenceTags", js.undefined)
     
     @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    def setReadPreferenceTagsVarargs(value: String*): Self = StObject.set(x, "readPreferenceTags", js.Array(value :_*))
     
     @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
-    
-    @scala.inline
-    def setReadPreferenceTagsVarargs(value: String*): Self = this.set("readPreferenceTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setReadPreferenceTags(value: js.Array[String]): Self = this.set("readPreferenceTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreferenceTags: Self = this.set("readPreferenceTags", js.undefined)
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

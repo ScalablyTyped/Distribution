@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchFacesRequest extends js.Object {
+trait SearchFacesRequest extends StObject {
   
   /**
     * ID of the collection the face belongs to.
@@ -36,36 +37,24 @@ object SearchFacesRequest {
   }
   
   @scala.inline
-  implicit class SearchFacesRequestOps[Self <: SearchFacesRequest] (val x: Self) extends AnyVal {
+  implicit class SearchFacesRequestMutableBuilder[Self <: SearchFacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceId(value: FaceId): Self = StObject.set(x, "FaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionId(value: CollectionId): Self = this.set("CollectionId", value.asInstanceOf[js.Any])
+    def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
     
     @scala.inline
-    def setFaceId(value: FaceId): Self = this.set("FaceId", value.asInstanceOf[js.Any])
+    def setMaxFaces(value: MaxFaces): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceMatchThreshold(value: Percent): Self = this.set("FaceMatchThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceMatchThreshold: Self = this.set("FaceMatchThreshold", js.undefined)
-    
-    @scala.inline
-    def setMaxFaces(value: MaxFaces): Self = this.set("MaxFaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFaces: Self = this.set("MaxFaces", js.undefined)
+    def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
   }
 }

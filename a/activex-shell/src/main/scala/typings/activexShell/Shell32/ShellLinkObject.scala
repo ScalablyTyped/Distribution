@@ -1,12 +1,13 @@
 package typings.activexShell.Shell32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Link object */
 @js.native
-trait ShellLinkObject extends js.Object {
+trait ShellLinkObject extends StObject {
   
   /** Arguments for the link */
   var Arguments: String = js.native

@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProjectViewTypes extends js.Object
+sealed trait ProjectViewTypes extends StObject
 /**
   * Specifies the types of views that the {@link Office.Document | Document}.getSelectedViewAsync method can recognize.
   *
@@ -16,7 +17,7 @@ sealed trait ProjectViewTypes extends js.Object
   */
 @JSGlobal("Office.ProjectViewTypes")
 @js.native
-object ProjectViewTypes extends js.Object {
+object ProjectViewTypes extends StObject {
   
   /**
     * The Calendar view.

@@ -1,12 +1,13 @@
 package typings.jqgrid
 
 import typings.jqgrid.anon.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJqGridJsonReader extends js.Object {
+trait IJqGridJsonReader extends StObject {
   
   /**
     * current page of the query
@@ -57,45 +58,33 @@ object IJqGridJsonReader {
   }
   
   @scala.inline
-  implicit class IJqGridJsonReaderOps[Self <: IJqGridJsonReader] (val x: Self) extends AnyVal {
+  implicit class IJqGridJsonReaderMutableBuilder[Self <: IJqGridJsonReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPage(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageFunction1(value: /* obj */ js.Any => Double): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecords(value: String | (js.Function1[/* obj */ Data, Double])): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageFunction1(value: /* obj */ js.Any => Double): Self = this.set("page", js.Any.fromFunction1(value))
+    def setRecordsFunction1(value: /* obj */ Data => Double): Self = StObject.set(x, "records", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPage(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setRepeatitems(value: Boolean): Self = StObject.set(x, "repeatitems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsFunction1(value: /* obj */ Data => Double): Self = this.set("records", js.Any.fromFunction1(value))
+    def setRoot(value: String | (js.Function1[/* obj */ js.Any, _])): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecords(value: String | (js.Function1[/* obj */ Data, Double])): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setRootFunction1(value: /* obj */ js.Any => _): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRepeatitems(value: Boolean): Self = this.set("repeatitems", value.asInstanceOf[js.Any])
+    def setTotal(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootFunction1(value: /* obj */ js.Any => _): Self = this.set("root", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoot(value: String | (js.Function1[/* obj */ js.Any, _])): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalFunction1(value: /* obj */ js.Any => Double): Self = this.set("total", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTotal(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setTotalFunction1(value: /* obj */ js.Any => Double): Self = StObject.set(x, "total", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If {@link getLocalVideoStats} is called successfully, the {@link LocalVideoStatsMap} interface provides the UID and {@link LocalVideoStats} of the local user.
   */
 @js.native
-trait LocalVideoStats extends js.Object {
+trait LocalVideoStats extends StObject {
   
   /** Frame rate of the captured video, in fps. */
   val CaptureFrameRate: js.UndefOr[String] = js.native
@@ -62,90 +63,78 @@ object LocalVideoStats {
   }
   
   @scala.inline
-  implicit class LocalVideoStatsOps[Self <: LocalVideoStats] (val x: Self) extends AnyVal {
+  implicit class LocalVideoStatsMutableBuilder[Self <: LocalVideoStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureFrameRate(value: String): Self = StObject.set(x, "CaptureFrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureFrameRateUndefined: Self = StObject.set(x, "CaptureFrameRate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptureResolutionHeight(value: String): Self = StObject.set(x, "CaptureResolutionHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureFrameRate(value: String): Self = this.set("CaptureFrameRate", value.asInstanceOf[js.Any])
+    def setCaptureResolutionHeightUndefined: Self = StObject.set(x, "CaptureResolutionHeight", js.undefined)
     
     @scala.inline
-    def deleteCaptureFrameRate: Self = this.set("CaptureFrameRate", js.undefined)
+    def setCaptureResolutionWidth(value: String): Self = StObject.set(x, "CaptureResolutionWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureResolutionHeight(value: String): Self = this.set("CaptureResolutionHeight", value.asInstanceOf[js.Any])
+    def setCaptureResolutionWidthUndefined: Self = StObject.set(x, "CaptureResolutionWidth", js.undefined)
     
     @scala.inline
-    def deleteCaptureResolutionHeight: Self = this.set("CaptureResolutionHeight", js.undefined)
+    def setEncodeDelay(value: String): Self = StObject.set(x, "EncodeDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureResolutionWidth(value: String): Self = this.set("CaptureResolutionWidth", value.asInstanceOf[js.Any])
+    def setEncodeDelayUndefined: Self = StObject.set(x, "EncodeDelay", js.undefined)
     
     @scala.inline
-    def deleteCaptureResolutionWidth: Self = this.set("CaptureResolutionWidth", js.undefined)
+    def setMuteState(value: String): Self = StObject.set(x, "MuteState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodeDelay(value: String): Self = this.set("EncodeDelay", value.asInstanceOf[js.Any])
+    def setMuteStateUndefined: Self = StObject.set(x, "MuteState", js.undefined)
     
     @scala.inline
-    def deleteEncodeDelay: Self = this.set("EncodeDelay", js.undefined)
+    def setSendBitrate(value: String): Self = StObject.set(x, "SendBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuteState(value: String): Self = this.set("MuteState", value.asInstanceOf[js.Any])
+    def setSendBitrateUndefined: Self = StObject.set(x, "SendBitrate", js.undefined)
     
     @scala.inline
-    def deleteMuteState: Self = this.set("MuteState", js.undefined)
+    def setSendFrameRate(value: String): Self = StObject.set(x, "SendFrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendBitrate(value: String): Self = this.set("SendBitrate", value.asInstanceOf[js.Any])
+    def setSendFrameRateUndefined: Self = StObject.set(x, "SendFrameRate", js.undefined)
     
     @scala.inline
-    def deleteSendBitrate: Self = this.set("SendBitrate", js.undefined)
+    def setSendResolutionHeight(value: String): Self = StObject.set(x, "SendResolutionHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendFrameRate(value: String): Self = this.set("SendFrameRate", value.asInstanceOf[js.Any])
+    def setSendResolutionHeightUndefined: Self = StObject.set(x, "SendResolutionHeight", js.undefined)
     
     @scala.inline
-    def deleteSendFrameRate: Self = this.set("SendFrameRate", js.undefined)
+    def setSendResolutionWidth(value: String): Self = StObject.set(x, "SendResolutionWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendResolutionHeight(value: String): Self = this.set("SendResolutionHeight", value.asInstanceOf[js.Any])
+    def setSendResolutionWidthUndefined: Self = StObject.set(x, "SendResolutionWidth", js.undefined)
     
     @scala.inline
-    def deleteSendResolutionHeight: Self = this.set("SendResolutionHeight", js.undefined)
+    def setTargetSendBitrate(value: String): Self = StObject.set(x, "TargetSendBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendResolutionWidth(value: String): Self = this.set("SendResolutionWidth", value.asInstanceOf[js.Any])
+    def setTargetSendBitrateUndefined: Self = StObject.set(x, "TargetSendBitrate", js.undefined)
     
     @scala.inline
-    def deleteSendResolutionWidth: Self = this.set("SendResolutionWidth", js.undefined)
+    def setTotalDuration(value: String): Self = StObject.set(x, "TotalDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSendBitrate(value: String): Self = this.set("TargetSendBitrate", value.asInstanceOf[js.Any])
+    def setTotalDurationUndefined: Self = StObject.set(x, "TotalDuration", js.undefined)
     
     @scala.inline
-    def deleteTargetSendBitrate: Self = this.set("TargetSendBitrate", js.undefined)
+    def setTotalFreezeTime(value: String): Self = StObject.set(x, "TotalFreezeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalDuration(value: String): Self = this.set("TotalDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalDuration: Self = this.set("TotalDuration", js.undefined)
-    
-    @scala.inline
-    def setTotalFreezeTime(value: String): Self = this.set("TotalFreezeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalFreezeTime: Self = this.set("TotalFreezeTime", js.undefined)
+    def setTotalFreezeTimeUndefined: Self = StObject.set(x, "TotalFreezeTime", js.undefined)
   }
 }

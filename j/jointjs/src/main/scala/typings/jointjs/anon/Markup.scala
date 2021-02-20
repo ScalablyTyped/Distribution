@@ -2,12 +2,13 @@ package typings.jointjs.anon
 
 import typings.jointjs.mod.dia.Element.PositionType
 import typings.jointjs.mod.dia.MarkupJSON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Markup extends js.Object {
+trait Markup extends StObject {
   
   var markup: js.UndefOr[String | MarkupJSON] = js.native
   
@@ -22,30 +23,18 @@ object Markup {
   }
   
   @scala.inline
-  implicit class MarkupOps[Self <: Markup] (val x: Self) extends AnyVal {
+  implicit class MarkupMutableBuilder[Self <: Markup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkup(value: String | MarkupJSON): Self = this.set("markup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkup: Self = this.set("markup", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: PositionType): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.grammarkdown.grammarkdownMod
 
 import typings.grammarkdown.grammarkdownBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object AsyncHostOptions {
   }
   
   @scala.inline
-  implicit class AsyncHostOptionsOps[Self <: AsyncHostOptions] (val x: Self) extends AnyVal {
+  implicit class AsyncHostOptionsMutableBuilder[Self <: AsyncHostOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = this.set("readFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadFile: Self = this.set("readFile", js.undefined)
-    
-    @scala.inline
-    def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = this.set("writeFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteFile: Self = this.set("writeFile", js.undefined)
+    def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
   }
 }

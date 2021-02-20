@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansPurchaseRecommendationMetadata extends js.Object {
+trait SavingsPlansPurchaseRecommendationMetadata extends StObject {
   
   /**
     * Additional metadata that may be applicable to the recommendation.
@@ -31,36 +32,24 @@ object SavingsPlansPurchaseRecommendationMetadata {
   }
   
   @scala.inline
-  implicit class SavingsPlansPurchaseRecommendationMetadataOps[Self <: SavingsPlansPurchaseRecommendationMetadata] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansPurchaseRecommendationMetadataMutableBuilder[Self <: SavingsPlansPurchaseRecommendationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalMetadata(value: GenericString): Self = StObject.set(x, "AdditionalMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalMetadataUndefined: Self = StObject.set(x, "AdditionalMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalMetadata(value: GenericString): Self = this.set("AdditionalMetadata", value.asInstanceOf[js.Any])
+    def setGenerationTimestampUndefined: Self = StObject.set(x, "GenerationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteAdditionalMetadata: Self = this.set("AdditionalMetadata", js.undefined)
+    def setRecommendationId(value: GenericString): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerationTimestamp(value: GenericString): Self = this.set("GenerationTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenerationTimestamp: Self = this.set("GenerationTimestamp", js.undefined)
-    
-    @scala.inline
-    def setRecommendationId(value: GenericString): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
+    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
   }
 }

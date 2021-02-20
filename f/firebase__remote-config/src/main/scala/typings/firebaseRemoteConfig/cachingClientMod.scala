@@ -4,14 +4,14 @@ import typings.firebaseLogger.mod.Logger
 import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.RemoteConfigFetchClient
 import typings.firebaseRemoteConfig.storageCacheMod.StorageCache
 import typings.firebaseRemoteConfig.storageMod.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/remote-config/dist/src/client/caching_client", JSImport.Namespace)
-@js.native
-object cachingClientMod extends js.Object {
+object cachingClientMod {
   
+  @JSImport("@firebase/remote-config/dist/src/client/caching_client", "CachingClient")
   @js.native
   class CachingClient protected () extends RemoteConfigFetchClient {
     def this(client: RemoteConfigFetchClient, storage: Storage, storageCache: StorageCache, logger: Logger) = this()

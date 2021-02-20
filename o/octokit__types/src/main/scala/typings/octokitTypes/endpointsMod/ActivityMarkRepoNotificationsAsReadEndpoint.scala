@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityMarkRepoNotificationsAsReadEndpoint extends js.Object {
+trait ActivityMarkRepoNotificationsAsReadEndpoint extends StObject {
   
   /**
     * Describes the last point that notifications were checked. Anything updated since this time will not be marked as read. If you omit this parameter, all notifications are marked as read. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Default: The current timestamp.
@@ -25,30 +26,18 @@ object ActivityMarkRepoNotificationsAsReadEndpoint {
   }
   
   @scala.inline
-  implicit class ActivityMarkRepoNotificationsAsReadEndpointOps[Self <: ActivityMarkRepoNotificationsAsReadEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActivityMarkRepoNotificationsAsReadEndpointMutableBuilder[Self <: ActivityMarkRepoNotificationsAsReadEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLast_read_atUndefined: Self = StObject.set(x, "last_read_at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_read_at(value: String): Self = this.set("last_read_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast_read_at: Self = this.set("last_read_at", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

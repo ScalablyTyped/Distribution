@@ -8,12 +8,13 @@ import typings.mongodb.anon.Bulkloadedcursorinsertcalls
 import typings.mongodb.anon.Bytescurrentlyinthecache
 import typings.mongodb.anon.Compressedpagesread
 import typings.mongodb.anon.Dictionarymatches
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WiredTigerData extends js.Object {
+trait WiredTigerData extends StObject {
   
   var LSM: Bloomfilterfalsepositives = js.native
   
@@ -50,42 +51,30 @@ object WiredTigerData {
   }
   
   @scala.inline
-  implicit class WiredTigerDataOps[Self <: WiredTigerData] (val x: Self) extends AnyVal {
+  implicit class WiredTigerDataMutableBuilder[Self <: WiredTigerData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setBlock-manager`(value: Allocationsrequiringfileextension): Self = StObject.set(x, "block-manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBtree(value: Btreecheckpointgeneration): Self = StObject.set(x, "btree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCache(value: Bytescurrentlyinthecache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLSM(value: Bloomfilterfalsepositives): Self = this.set("LSM", value.asInstanceOf[js.Any])
+    def setCache_walk(value: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered): Self = StObject.set(x, "cache_walk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBlock-manager`(value: Allocationsrequiringfileextension): Self = this.set("block-manager", value.asInstanceOf[js.Any])
+    def setCompression(value: Compressedpagesread): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtree(value: Btreecheckpointgeneration): Self = this.set("btree", value.asInstanceOf[js.Any])
+    def setCursor(value: Bulkloadedcursorinsertcalls): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Bytescurrentlyinthecache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setLSM(value: Bloomfilterfalsepositives): Self = StObject.set(x, "LSM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache_walk(value: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered): Self = this.set("cache_walk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompression(value: Compressedpagesread): Self = this.set("compression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCursor(value: Bulkloadedcursorinsertcalls): Self = this.set("cursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReconciliation(value: Dictionarymatches): Self = this.set("reconciliation", value.asInstanceOf[js.Any])
+    def setReconciliation(value: Dictionarymatches): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
   }
 }

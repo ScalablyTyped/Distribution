@@ -1,6 +1,6 @@
 package typings.scriptableIos.global
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Arguments passed to the script._
   * @see https://docs.scriptable.app/args
   */
-@JSGlobal("args")
-@js.native
-object args extends js.Object {
+object args {
+  
+  @JSGlobal("args")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _File URLs supplied by a share sheet or a shortcut action._
@@ -25,7 +27,11 @@ object args extends js.Object {
     * the script settings or in the shortcut.
     * @see https://docs.scriptable.app/args/#fileurls
     */
-  var fileURLs: js.Array[String] = js.native
+  @JSGlobal("args.fileURLs")
+  @js.native
+  def fileURLs: js.Array[String] = js.native
+  @scala.inline
+  def fileURLs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileURLs")(x.asInstanceOf[js.Any])
   
   /**
     * _Images supplied by a share sheet or a shortcut action._
@@ -38,7 +44,11 @@ object args extends js.Object {
     * in the script settings or in the shortcut.
     * @see https://docs.scriptable.app/args/#images
     */
-  var images: js.Array[typings.scriptableIos.Image] = js.native
+  @JSGlobal("args.images")
+  @js.native
+  def images: js.Array[typings.scriptableIos.Image] = js.native
+  @scala.inline
+  def images_=(x: js.Array[typings.scriptableIos.Image]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
   
   /**
     * _Notification being handled by the script._
@@ -49,7 +59,11 @@ object args extends js.Object {
     * that might be relevant when running the script.
     * @see https://docs.scriptable.app/args/#notification
     */
-  var notification: typings.scriptableIos.Notification = js.native
+  @JSGlobal("args.notification")
+  @js.native
+  def notification: typings.scriptableIos.Notification = js.native
+  @scala.inline
+  def notification_=(x: typings.scriptableIos.Notification): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notification")(x.asInstanceOf[js.Any])
   
   /**
     * _Plain texts supplied by a share sheet or a shortcut action._
@@ -59,15 +73,11 @@ object args extends js.Object {
     * If you have enabled "Text" as a share sheet input from the script settings, the script can be run from any share sheet throughout the system that shares plain text.
     * @see https://docs.scriptable.app/args/#plaintexts
     */
-  var plainTexts: js.Array[String] = js.native
-  
-  /**
-    * _Query parameters from a URL scheme._
-    *
-    * Query parameters are supplied to a script when running it from a URL scheme. See the documentation on Scriptables URL schemes for more information.
-    * @see https://docs.scriptable.app/args/#queryparameters
-    */
-  var queryParameters: StringDictionary[String] = js.native
+  @JSGlobal("args.plainTexts")
+  @js.native
+  def plainTexts: js.Array[String] = js.native
+  @scala.inline
+  def plainTexts_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plainTexts")(x.asInstanceOf[js.Any])
   
   /**
     * _Parameter passed to a Shortcut._
@@ -78,7 +88,11 @@ object args extends js.Object {
     * read the file as JSON or a plain text. If the file cannot be read as JSON or a plain text, a path to the file will be passed as the input parameter.
     * @see https://docs.scriptable.app/args/#shortcutparameter
     */
-  var shortcutParameter: js.Any = js.native
+  @JSGlobal("args.shortcutParameter")
+  @js.native
+  def shortcutParameter: js.Any = js.native
+  @scala.inline
+  def shortcutParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortcutParameter")(x.asInstanceOf[js.Any])
   
   /**
     * _URLs supplied by a share sheet or a shortcut action._
@@ -88,7 +102,11 @@ object args extends js.Object {
     * If you have enabled "URLs" as a share sheet input from the script settings, the script can be run from any share sheet throughout the system that shares URLs.
     * @see https://docs.scriptable.app/args/#urls
     */
-  var urls: js.Array[String] = js.native
+  @JSGlobal("args.urls")
+  @js.native
+  def urls: js.Array[String] = js.native
+  @scala.inline
+  def urls_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urls")(x.asInstanceOf[js.Any])
   
   /**
     * _Parameter passed to a widget._
@@ -98,5 +116,17 @@ object args extends js.Object {
     * The parameter can be used to differentiate the behavior of multiple widgets.
     * @see https://docs.scriptable.app/args/#widgetparameter
     */
-  var widgetParameter: js.Any = js.native
+  @JSGlobal("args.widgetParameter")
+  @js.native
+  def widgetParameter: js.Any = js.native
+  @scala.inline
+  def widgetParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetParameter")(x.asInstanceOf[js.Any])
+  
+  /**
+    * _Query parameters from a URL scheme._
+    *
+    * Query parameters are supplied to a script when running it from a URL scheme. See the documentation on Scriptables URL schemes for more information.
+    * @see https://docs.scriptable.app/args/#queryparameters
+    */
+  object queryParameters
 }

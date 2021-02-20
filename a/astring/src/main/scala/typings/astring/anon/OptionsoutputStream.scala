@@ -1,13 +1,14 @@
 package typings.astring.anon
 
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined astring.astring.Options & {  output :node.stream.Stream} */
 @js.native
-trait OptionsoutputStream extends js.Object {
+trait OptionsoutputStream extends StObject {
   
   /** generate comments if true (defaults to false) */
   var comments: js.UndefOr[Boolean] = js.native
@@ -39,57 +40,45 @@ object OptionsoutputStream {
   }
   
   @scala.inline
-  implicit class OptionsoutputStreamOps[Self <: OptionsoutputStream] (val x: Self) extends AnyVal {
+  implicit class OptionsoutputStreamMutableBuilder[Self <: OptionsoutputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerator(value: js.Object): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: Stream): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
     
     @scala.inline
-    def setComments(value: Boolean): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def setGenerator(value: js.Object): Self = this.set("generator", value.asInstanceOf[js.Any])
+    def setLineEnd(value: String): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerator: Self = this.set("generator", js.undefined)
+    def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
     
     @scala.inline
-    def setIndent(value: String): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setOutput(value: Stream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setSourceMap(value: js.Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineEnd(value: String): Self = this.set("lineEnd", value.asInstanceOf[js.Any])
+    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     
     @scala.inline
-    def deleteLineEnd: Self = this.set("lineEnd", js.undefined)
+    def setStartingIndentLevel(value: Double): Self = StObject.set(x, "startingIndentLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceMap(value: js.Any): Self = this.set("sourceMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMap: Self = this.set("sourceMap", js.undefined)
-    
-    @scala.inline
-    def setStartingIndentLevel(value: Double): Self = this.set("startingIndentLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartingIndentLevel: Self = this.set("startingIndentLevel", js.undefined)
+    def setStartingIndentLevelUndefined: Self = StObject.set(x, "startingIndentLevel", js.undefined)
   }
 }

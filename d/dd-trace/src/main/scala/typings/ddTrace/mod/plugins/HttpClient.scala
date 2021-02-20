@@ -1,6 +1,7 @@
 package typings.ddTrace.mod.plugins
 
 import typings.ddTrace.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object HttpClient {
   }
   
   @scala.inline
-  implicit class HttpClientOps[Self <: HttpClient] (val x: Self) extends AnyVal {
+  implicit class HttpClientMutableBuilder[Self <: HttpClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHooks(value: `0`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSplitByDomain(value: Boolean): Self = StObject.set(x, "splitByDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: `0`): Self = this.set("hooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
-    
-    @scala.inline
-    def setSplitByDomain(value: Boolean): Self = this.set("splitByDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitByDomain: Self = this.set("splitByDomain", js.undefined)
+    def setSplitByDomainUndefined: Self = StObject.set(x, "splitByDomain", js.undefined)
   }
 }

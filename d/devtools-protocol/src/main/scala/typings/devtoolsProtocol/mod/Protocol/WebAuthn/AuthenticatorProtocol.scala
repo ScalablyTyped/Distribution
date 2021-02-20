@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.u2f
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ctap2
 */
-trait AuthenticatorProtocol extends js.Object
+trait AuthenticatorProtocol extends StObject
 object AuthenticatorProtocol {
   
   @scala.inline

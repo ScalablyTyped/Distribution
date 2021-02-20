@@ -3,6 +3,7 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.Serializable
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +16,21 @@ class AdamOptimizer protected ()
   def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double) = this()
 }
 /* static members */
-@JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "AdamOptimizer")
-@js.native
-object AdamOptimizer extends js.Object {
+object AdamOptimizer {
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "AdamOptimizer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "AdamOptimizer.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   
   /** @nocollapse */
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "AdamOptimizer.fromConfig")
+  @js.native
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountDetails extends js.Object {
+trait AccountDetails extends StObject {
   
   /**
     * The ID of an AWS account.
@@ -26,30 +27,18 @@ object AccountDetails {
   }
   
   @scala.inline
-  implicit class AccountDetailsOps[Self <: AccountDetails] (val x: Self) extends AnyVal {
+  implicit class AccountDetailsMutableBuilder[Self <: AccountDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: NonEmptyString): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
-    
-    @scala.inline
-    def setEmail(value: NonEmptyString): Self = this.set("Email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("Email", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
   }
 }

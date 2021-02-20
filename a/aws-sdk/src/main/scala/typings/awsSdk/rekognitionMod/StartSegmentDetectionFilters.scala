@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSegmentDetectionFilters extends js.Object {
+trait StartSegmentDetectionFilters extends StObject {
   
   /**
     * Filters that are specific to shot detections.
@@ -26,30 +27,18 @@ object StartSegmentDetectionFilters {
   }
   
   @scala.inline
-  implicit class StartSegmentDetectionFiltersOps[Self <: StartSegmentDetectionFilters] (val x: Self) extends AnyVal {
+  implicit class StartSegmentDetectionFiltersMutableBuilder[Self <: StartSegmentDetectionFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShotFilter(value: StartShotDetectionFilter): Self = StObject.set(x, "ShotFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShotFilterUndefined: Self = StObject.set(x, "ShotFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTechnicalCueFilter(value: StartTechnicalCueDetectionFilter): Self = StObject.set(x, "TechnicalCueFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShotFilter(value: StartShotDetectionFilter): Self = this.set("ShotFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShotFilter: Self = this.set("ShotFilter", js.undefined)
-    
-    @scala.inline
-    def setTechnicalCueFilter(value: StartTechnicalCueDetectionFilter): Self = this.set("TechnicalCueFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechnicalCueFilter: Self = this.set("TechnicalCueFilter", js.undefined)
+    def setTechnicalCueFilterUndefined: Self = StObject.set(x, "TechnicalCueFilter", js.undefined)
   }
 }

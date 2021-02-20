@@ -4,15 +4,14 @@ import typings.samchon.distributedProcessMod.DistributedProcess
 import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.parallelSystemArrayMod.ParallelSystemArray
 import typings.sxml.mod.XML
-import typings.tstl.mod.HashMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed/DistributedSystemArray", JSImport.Namespace)
-@js.native
-object distributedSystemArrayMod extends js.Object {
+object distributedSystemArrayMod {
   
+  @JSImport("samchon/templates/distributed/DistributedSystemArray", "DistributedSystemArray")
   @js.native
   /**
     * Default Constructor.
@@ -60,7 +59,7 @@ object distributedSystemArrayMod extends js.Object {
       *
       * @return An {@link HasmMap> containing pairs of string and {@link DistributedProcess} object.
       */
-    def getProcessMap(): HashMap[String, DistributedProcess] = js.native
+    def getProcessMap(): js.Any = js.native
     
     /**
       * Test whether the process exists.

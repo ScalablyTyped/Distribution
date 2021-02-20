@@ -1,14 +1,14 @@
 package typings.emberApplication
 
-import typings.emberApplication.defaultResolverMod.DefaultResolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/application/globals-resolver", JSImport.Namespace)
-@js.native
-object globalsResolverMod extends js.Object {
+object globalsResolverMod {
   
+  @JSImport("@ember/application/globals-resolver", JSImport.Default)
   @js.native
-  class default () extends DefaultResolver
+  class default ()
+    extends typings.emberApplication.defaultResolverMod.default
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Endpoint config for this cluster
   */
 @js.native
-trait SchemaEndpointConfig extends js.Object {
+trait SchemaEndpointConfig extends StObject {
   
   /**
     * Optional. If true, enable http access to specific ports on the cluster
@@ -32,30 +33,18 @@ object SchemaEndpointConfig {
   }
   
   @scala.inline
-  implicit class SchemaEndpointConfigOps[Self <: SchemaEndpointConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaEndpointConfigMutableBuilder[Self <: SchemaEndpointConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableHttpPortAccess(value: Boolean): Self = StObject.set(x, "enableHttpPortAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableHttpPortAccessUndefined: Self = StObject.set(x, "enableHttpPortAccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpPorts(value: StringDictionary[String]): Self = StObject.set(x, "httpPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHttpPortAccess(value: Boolean): Self = this.set("enableHttpPortAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableHttpPortAccess: Self = this.set("enableHttpPortAccess", js.undefined)
-    
-    @scala.inline
-    def setHttpPorts(value: StringDictionary[String]): Self = this.set("httpPorts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpPorts: Self = this.set("httpPorts", js.undefined)
+    def setHttpPortsUndefined: Self = StObject.set(x, "httpPorts", js.undefined)
   }
 }

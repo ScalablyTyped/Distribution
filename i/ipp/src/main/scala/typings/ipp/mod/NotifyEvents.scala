@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`printer-state-changed`
   - typings.ipp.ippStrings.`printer-stopped`
 */
-trait NotifyEvents extends js.Object
+trait NotifyEvents extends StObject
 object NotifyEvents {
   
   @scala.inline

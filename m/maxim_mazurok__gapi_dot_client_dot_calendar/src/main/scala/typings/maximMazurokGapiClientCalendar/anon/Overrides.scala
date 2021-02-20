@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCalendar.anon
 
 import typings.maximMazurokGapiClientCalendar.gapi.client.calendar.EventReminder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Overrides extends js.Object {
+trait Overrides extends StObject {
   
   /**
     * If the event doesn't use the default reminders, this lists the reminders specific to the event, or, if not set, indicates that no reminders are set for this event. The maximum
@@ -26,33 +27,21 @@ object Overrides {
   }
   
   @scala.inline
-  implicit class OverridesOps[Self <: Overrides] (val x: Self) extends AnyVal {
+  implicit class OverridesMutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverrides(value: js.Array[EventReminder]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverridesVarargs(value: EventReminder*): Self = StObject.set(x, "overrides", js.Array(value :_*))
     
     @scala.inline
-    def setOverridesVarargs(value: EventReminder*): Self = this.set("overrides", js.Array(value :_*))
+    def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrides(value: js.Array[EventReminder]): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
-    
-    @scala.inline
-    def setUseDefault(value: Boolean): Self = this.set("useDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDefault: Self = this.set("useDefault", js.undefined)
+    def setUseDefaultUndefined: Self = StObject.set(x, "useDefault", js.undefined)
   }
 }

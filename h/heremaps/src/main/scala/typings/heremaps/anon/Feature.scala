@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Feature extends js.Object {
+trait Feature extends StObject {
   
   var feature: js.Array[_] = js.native
   
@@ -25,36 +26,24 @@ object Feature {
   }
   
   @scala.inline
-  implicit class FeatureOps[Self <: Feature] (val x: Self) extends AnyVal {
+  implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeature(value: js.Array[_]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeatureVarargs(value: js.Any*): Self = StObject.set(x, "feature", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrafficMode(value: String): Self = StObject.set(x, "trafficMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureVarargs(value: js.Any*): Self = this.set("feature", js.Array(value :_*))
+    def setTransportModes(value: js.Array[String]): Self = StObject.set(x, "transportModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: js.Array[_]): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setTransportModesVarargs(value: String*): Self = StObject.set(x, "transportModes", js.Array(value :_*))
     
     @scala.inline
-    def setTrafficMode(value: String): Self = this.set("trafficMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportModesVarargs(value: String*): Self = this.set("transportModes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransportModes(value: js.Array[String]): Self = this.set("transportModes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

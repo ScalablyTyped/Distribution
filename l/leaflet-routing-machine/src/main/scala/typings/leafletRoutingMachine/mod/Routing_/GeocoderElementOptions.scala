@@ -1,12 +1,13 @@
 package typings.leafletRoutingMachine.mod.Routing_
 
 import typings.leaflet.mod.LatLng_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocoderElementOptions extends js.Object {
+trait GeocoderElementOptions extends StObject {
   
   var autocompleteOptions: js.UndefOr[js.Object] = js.native
   
@@ -38,62 +39,50 @@ object GeocoderElementOptions {
   }
   
   @scala.inline
-  implicit class GeocoderElementOptionsOps[Self <: GeocoderElementOptions] (val x: Self) extends AnyVal {
+  implicit class GeocoderElementOptionsMutableBuilder[Self <: GeocoderElementOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutocompleteOptions(value: js.Object): Self = StObject.set(x, "autocompleteOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocompleteOptionsUndefined: Self = StObject.set(x, "autocompleteOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateGeocoder(value: (/* i */ Double, /* nWps */ Double, GeocoderElementOptions) => _): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAutocompleteOptions(value: js.Object): Self = this.set("autocompleteOptions", value.asInstanceOf[js.Any])
+    def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
     
     @scala.inline
-    def deleteAutocompleteOptions: Self = this.set("autocompleteOptions", js.undefined)
+    def setGeocoderClass(value: () => String): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateGeocoder(value: (/* i */ Double, /* nWps */ Double, GeocoderElementOptions) => _): Self = this.set("createGeocoder", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteCreateGeocoder: Self = this.set("createGeocoder", js.undefined)
-    
-    @scala.inline
-    def setGeocoderClass(value: () => String): Self = this.set("geocoderClass", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGeocoderClass: Self = this.set("geocoderClass", js.undefined)
+    def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
     
     @scala.inline
     def setGeocoderPlaceholder(
       value: (/* i */ Double, /* numberWaypoints */ Double, /* geocoderElement */ GeocoderElement_) => String
-    ): Self = this.set("geocoderPlaceholder", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGeocoderPlaceholder: Self = this.set("geocoderPlaceholder", js.undefined)
+    def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setMaxGeocoderTolerance(value: Double): Self = this.set("maxGeocoderTolerance", value.asInstanceOf[js.Any])
+    def setMaxGeocoderTolerance(value: Double): Self = StObject.set(x, "maxGeocoderTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxGeocoderTolerance: Self = this.set("maxGeocoderTolerance", js.undefined)
+    def setMaxGeocoderToleranceUndefined: Self = StObject.set(x, "maxGeocoderTolerance", js.undefined)
     
     @scala.inline
-    def setWaypointNameFallback(value: /* latLng */ LatLng_ => String): Self = this.set("waypointNameFallback", js.Any.fromFunction1(value))
+    def setWaypointNameFallback(value: /* latLng */ LatLng_ => String): Self = StObject.set(x, "waypointNameFallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWaypointNameFallback: Self = this.set("waypointNameFallback", js.undefined)
+    def setWaypointNameFallbackUndefined: Self = StObject.set(x, "waypointNameFallback", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2StructuredResponse extends js.Object {
+trait GoogleActionsV2StructuredResponse extends StObject {
   
   /**
     * App provides an order update (e.g.
@@ -27,30 +28,18 @@ object GoogleActionsV2StructuredResponse {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2StructuredResponseOps[Self <: GoogleActionsV2StructuredResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2StructuredResponseMutableBuilder[Self <: GoogleActionsV2StructuredResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = StObject.set(x, "orderUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderUpdateUndefined: Self = StObject.set(x, "orderUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderUpdateV3(value: GoogleActionsOrdersV3OrderUpdate): Self = StObject.set(x, "orderUpdateV3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = this.set("orderUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderUpdate: Self = this.set("orderUpdate", js.undefined)
-    
-    @scala.inline
-    def setOrderUpdateV3(value: GoogleActionsOrdersV3OrderUpdate): Self = this.set("orderUpdateV3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderUpdateV3: Self = this.set("orderUpdateV3", js.undefined)
+    def setOrderUpdateV3Undefined: Self = StObject.set(x, "orderUpdateV3", js.undefined)
   }
 }

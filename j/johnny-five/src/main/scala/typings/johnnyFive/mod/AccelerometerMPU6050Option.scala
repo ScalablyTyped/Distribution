@@ -1,5 +1,6 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object AccelerometerMPU6050Option {
   }
   
   @scala.inline
-  implicit class AccelerometerMPU6050OptionOps[Self <: AccelerometerMPU6050Option] (val x: Self) extends AnyVal {
+  implicit class AccelerometerMPU6050OptionMutableBuilder[Self <: AccelerometerMPU6050Option] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSensitivity(value: Double): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
+    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
   }
 }

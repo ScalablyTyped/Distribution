@@ -1,11 +1,12 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column[T /* <: SlickData */] extends js.Object {
+trait Column[T /* <: SlickData */] extends StObject {
   
   /**
     * This accepts a function of the form function(cellNode, row, dataContext, colDef) and is used to post-process the cell's DOM node / nodes
@@ -50,7 +51,7 @@ trait Column[T /* <: SlickData */] extends js.Object {
     **/
   var editor: js.UndefOr[js.Any] = js.native
   
-   // typeof Editors.Editor<T>;
+  // typeof Editors.Editor<T>;
   /**
     * The property name in the data object to pull content from. (This is assumed to be on the root of the data object.)
     **/
@@ -138,148 +139,136 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column[_], T /* <: SlickData */] (val x: Self with Column[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ColumnMutableBuilder[Self <: Column[_], T /* <: SlickData */] (val x: Self with Column[T]) extends AnyVal {
     
     @scala.inline
     def setAsyncPostRender(
       value: (/* cellNode */ js.Any, /* row */ js.Any, /* dataContext */ js.Any, /* colDef */ js.Any) => Unit
-    ): Self = this.set("asyncPostRender", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "asyncPostRender", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteAsyncPostRender: Self = this.set("asyncPostRender", js.undefined)
+    def setAsyncPostRenderUndefined: Self = StObject.set(x, "asyncPostRender", js.undefined)
     
     @scala.inline
-    def setBehavior(value: js.Any): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    def setBehavior(value: js.Any): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBehavior: Self = this.set("behavior", js.undefined)
+    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
     @scala.inline
-    def setCannotTriggerInsert(value: Boolean): Self = this.set("cannotTriggerInsert", value.asInstanceOf[js.Any])
+    def setCannotTriggerInsert(value: Boolean): Self = StObject.set(x, "cannotTriggerInsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCannotTriggerInsert: Self = this.set("cannotTriggerInsert", js.undefined)
+    def setCannotTriggerInsertUndefined: Self = StObject.set(x, "cannotTriggerInsert", js.undefined)
     
     @scala.inline
-    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
     @scala.inline
-    def setDefaultSortAsc(value: Boolean): Self = this.set("defaultSortAsc", value.asInstanceOf[js.Any])
+    def setDefaultSortAsc(value: Boolean): Self = StObject.set(x, "defaultSortAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultSortAsc: Self = this.set("defaultSortAsc", js.undefined)
+    def setDefaultSortAscUndefined: Self = StObject.set(x, "defaultSortAsc", js.undefined)
     
     @scala.inline
-    def setEditor(value: js.Any): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     @scala.inline
     def setFormatter(
       value: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
-    ): Self = this.set("formatter", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def setHeader(value: Header): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderCssClass(value: String): Self = StObject.set(x, "headerCssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCssClass(value: String): Self = this.set("headerCssClass", value.asInstanceOf[js.Any])
+    def setHeaderCssClassUndefined: Self = StObject.set(x, "headerCssClass", js.undefined)
     
     @scala.inline
-    def deleteHeaderCssClass: Self = this.set("headerCssClass", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setRerenderOnResize(value: Boolean): Self = this.set("rerenderOnResize", value.asInstanceOf[js.Any])
+    def setRerenderOnResize(value: Boolean): Self = StObject.set(x, "rerenderOnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRerenderOnResize: Self = this.set("rerenderOnResize", js.undefined)
+    def setRerenderOnResizeUndefined: Self = StObject.set(x, "rerenderOnResize", js.undefined)
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
     @scala.inline
-    def setToolTip(value: String): Self = this.set("toolTip", value.asInstanceOf[js.Any])
+    def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToolTip: Self = this.set("toolTip", js.undefined)
+    def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

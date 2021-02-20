@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines options for specifying or retrieving a point. */
 @JSGlobal("Windows.UI.Text.PointOptions")
 @js.native
-object PointOptions extends js.Object {
+object PointOptions extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.PointOptions with Double] = js.native

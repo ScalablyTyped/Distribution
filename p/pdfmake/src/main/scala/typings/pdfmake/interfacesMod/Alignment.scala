@@ -1,5 +1,6 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pdfmake.pdfmakeStrings.justify
   - typings.pdfmake.pdfmakeStrings.center
 */
-trait Alignment extends js.Object
+trait Alignment extends StObject
 object Alignment {
   
   @scala.inline

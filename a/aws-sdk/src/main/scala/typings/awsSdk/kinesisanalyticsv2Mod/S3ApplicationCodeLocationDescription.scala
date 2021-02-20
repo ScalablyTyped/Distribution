@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3ApplicationCodeLocationDescription extends js.Object {
+trait S3ApplicationCodeLocationDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the S3 bucket containing the application code.
@@ -31,30 +32,18 @@ object S3ApplicationCodeLocationDescription {
   }
   
   @scala.inline
-  implicit class S3ApplicationCodeLocationDescriptionOps[Self <: S3ApplicationCodeLocationDescription] (val x: Self) extends AnyVal {
+  implicit class S3ApplicationCodeLocationDescriptionMutableBuilder[Self <: S3ApplicationCodeLocationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectVersion(value: ObjectVersion): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileKey(value: FileKey): Self = this.set("FileKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectVersion(value: ObjectVersion): Self = this.set("ObjectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("ObjectVersion", js.undefined)
+    def setObjectVersionUndefined: Self = StObject.set(x, "ObjectVersion", js.undefined)
   }
 }

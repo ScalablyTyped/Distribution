@@ -2,6 +2,7 @@ package typings.braintreeWebDropIn.mod
 
 import typings.braintreeWebDropIn.anon.CardType
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.AndroidPayCard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object googlePayPaymentMethodPayload {
   }
   
   @scala.inline
-  implicit class googlePayPaymentMethodPayloadOps[Self <: googlePayPaymentMethodPayload] (val x: Self) extends AnyVal {
+  implicit class googlePayPaymentMethodPayloadMutableBuilder[Self <: googlePayPaymentMethodPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinData(value: binData): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: CardType): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinData(value: binData): Self = this.set("binData", value.asInstanceOf[js.Any])
+    def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
     
     @scala.inline
-    def setDetails(value: CardType): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: AndroidPayCard): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceData(value: String): Self = this.set("deviceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceData: Self = this.set("deviceData", js.undefined)
+    def setType(value: AndroidPayCard): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

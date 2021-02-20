@@ -1,16 +1,15 @@
 package typings.grammarkdown
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/symbols", JSImport.Namespace)
-@js.native
-object symbolsMod extends js.Object {
+object symbolsMod {
   
+  @JSImport("grammarkdown/dist/symbols", "Symbol")
   @js.native
-  class Symbol protected () extends js.Object {
+  class Symbol protected () extends StObject {
     def this(kind: SymbolKind, name: String) = this()
     
     var id: Double = js.native
@@ -25,31 +24,30 @@ object symbolsMod extends js.Object {
   }
   
   @js.native
-  sealed trait SymbolKind extends js.Object
+  sealed trait SymbolKind extends StObject
+  @JSImport("grammarkdown/dist/symbols", "SymbolKind")
   @js.native
-  object SymbolKind extends js.Object {
+  object SymbolKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SymbolKind with Double] = js.native
     
     @js.native
     sealed trait Parameter extends SymbolKind
-    /* 2 */ @js.native
-    object Parameter extends TopLevel[Parameter with Double]
+    /* 2 */ val Parameter: typings.grammarkdown.symbolsMod.SymbolKind.Parameter with Double = js.native
     
     @js.native
     sealed trait Production extends SymbolKind
-    /* 1 */ @js.native
-    object Production extends TopLevel[Production with Double]
+    /* 1 */ val Production: typings.grammarkdown.symbolsMod.SymbolKind.Production with Double = js.native
     
     @js.native
     sealed trait SourceFile extends SymbolKind
-    /* 0 */ @js.native
-    object SourceFile extends TopLevel[SourceFile with Double]
+    /* 0 */ val SourceFile: typings.grammarkdown.symbolsMod.SymbolKind.SourceFile with Double = js.native
   }
   
+  @JSImport("grammarkdown/dist/symbols", "SymbolTable")
   @js.native
-  class SymbolTable () extends js.Object {
+  class SymbolTable () extends StObject {
     
     var getSymbols: js.Any = js.native
     

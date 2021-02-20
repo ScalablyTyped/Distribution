@@ -2,12 +2,13 @@ package typings.algoliaClientSearch.anon
 
 import typings.algoliaClientSearch.algoliaClientSearchStrings.remove
 import typings.algoliaClientSearch.algoliaClientSearchStrings.replace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delete extends js.Object {
+trait Delete extends StObject {
   
   /**
     * Text or patterns to remove from the query string.
@@ -33,36 +34,24 @@ object Delete {
   }
   
   @scala.inline
-  implicit class DeleteOps[Self <: Delete] (val x: Self) extends AnyVal {
+  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: String): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setType(value: remove | replace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: String): Self = this.set("insert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
-    
-    @scala.inline
-    def setType(value: remove | replace): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

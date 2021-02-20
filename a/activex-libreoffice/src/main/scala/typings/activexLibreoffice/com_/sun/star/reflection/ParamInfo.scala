@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.reflection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a formal parameter of a method. */
 @js.native
-trait ParamInfo extends js.Object {
+trait ParamInfo extends StObject {
   
   /** parameter mode: in, out, inout */
   var aMode: ParamMode = js.native
@@ -26,27 +27,15 @@ object ParamInfo {
   }
   
   @scala.inline
-  implicit class ParamInfoOps[Self <: ParamInfo] (val x: Self) extends AnyVal {
+  implicit class ParamInfoMutableBuilder[Self <: ParamInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAMode(value: ParamMode): Self = StObject.set(x, "aMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAMode(value: ParamMode): Self = this.set("aMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAName(value: String): Self = this.set("aName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAType(value: XIdlClass[_]): Self = this.set("aType", value.asInstanceOf[js.Any])
+    def setAType(value: XIdlClass[_]): Self = StObject.set(x, "aType", value.asInstanceOf[js.Any])
   }
 }

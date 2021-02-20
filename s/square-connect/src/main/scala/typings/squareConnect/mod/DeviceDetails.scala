@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "DeviceDetails")
 @js.native
-class DeviceDetails () extends js.Object {
+class DeviceDetails () extends StObject {
   
   /**
     * Square-issued ID of the device.

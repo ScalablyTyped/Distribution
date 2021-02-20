@@ -1,6 +1,7 @@
 package typings.plugapi.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,3 +15,6 @@ class ^ protected () extends PlugAPI {
     callback: js.Function2[/* error */ Error, /* bot */ PlugAPI, Unit | (js.Function1[/* bot */ PlugAPI, Unit])]
   ) = this()
 }
+@JSImport("plugapi", JSImport.Namespace)
+@js.native
+object ^ extends StObject

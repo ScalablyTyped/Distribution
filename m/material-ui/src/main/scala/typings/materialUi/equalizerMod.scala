@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/av/equalizer", JSImport.Namespace)
-@js.native
-object equalizerMod extends js.Object {
+object equalizerMod {
   
+  @JSImport("material-ui/svg-icons/av/equalizer", JSImport.Default)
+  @js.native
+  class default () extends AvEqualizer
+  
+  @JSImport("material-ui/svg-icons/av/equalizer", "AvEqualizer")
   @js.native
   class AvEqualizer ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

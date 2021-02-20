@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityDetails extends js.Object {
+trait SecurityDetails extends StObject {
   
   /** A string with the name of issuer of the certificate. (e.g. "Let's Encrypt Authority X3"). */
   def issuer(): String = js.native
@@ -37,33 +38,21 @@ object SecurityDetails {
   }
   
   @scala.inline
-  implicit class SecurityDetailsOps[Self <: SecurityDetails] (val x: Self) extends AnyVal {
+  implicit class SecurityDetailsMutableBuilder[Self <: SecurityDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssuer(value: () => String): Self = StObject.set(x, "issuer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocol(value: () => String): Self = StObject.set(x, "protocol", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubjectName(value: () => String): Self = StObject.set(x, "subjectName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIssuer(value: () => String): Self = this.set("issuer", js.Any.fromFunction0(value))
+    def setValidFrom(value: () => Double): Self = StObject.set(x, "validFrom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProtocol(value: () => String): Self = this.set("protocol", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubjectName(value: () => String): Self = this.set("subjectName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValidFrom(value: () => Double): Self = this.set("validFrom", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValidTo(value: () => Double): Self = this.set("validTo", js.Any.fromFunction0(value))
+    def setValidTo(value: () => Double): Self = StObject.set(x, "validTo", js.Any.fromFunction0(value))
   }
 }

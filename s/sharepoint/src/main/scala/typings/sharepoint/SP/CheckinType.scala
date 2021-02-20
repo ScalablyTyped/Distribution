@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CheckinType extends js.Object
+sealed trait CheckinType extends StObject
 @JSGlobal("SP.CheckinType")
 @js.native
-object CheckinType extends js.Object {
+object CheckinType extends StObject {
   
   @js.native
   sealed trait majorCheckIn extends CheckinType

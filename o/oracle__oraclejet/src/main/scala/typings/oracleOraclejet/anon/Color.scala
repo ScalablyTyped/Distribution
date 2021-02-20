@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Color extends js.Object {
+trait Color extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object Color {
   }
   
   @scala.inline
-  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDiameter(value: String): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiameter(value: String): Self = this.set("diameter", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDiameter: Self = this.set("diameter", js.undefined)
+    def setEndOpacity(value: Double): Self = StObject.set(x, "endOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEndOpacityUndefined: Self = StObject.set(x, "endOpacity", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setOffsetX(value: String): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOpacity(value: Double): Self = this.set("endOpacity", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteEndOpacity: Self = this.set("endOpacity", js.undefined)
+    def setOffsetY(value: String): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: String): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setStartOpacity(value: Double): Self = StObject.set(x, "startOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: String): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setStartOpacityUndefined: Self = StObject.set(x, "startOpacity", js.undefined)
     
     @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartOpacity(value: Double): Self = this.set("startOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartOpacity: Self = this.set("startOpacity", js.undefined)
-    
-    @scala.inline
-    def setTimingFunction(value: String): Self = this.set("timingFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingFunction: Self = this.set("timingFunction", js.undefined)
+    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
   }
 }

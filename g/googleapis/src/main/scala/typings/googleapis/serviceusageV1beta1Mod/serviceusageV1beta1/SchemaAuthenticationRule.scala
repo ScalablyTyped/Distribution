@@ -1,5 +1,6 @@
 package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * any auth requirements, request credentials will be ignored.
   */
 @js.native
-trait SchemaAuthenticationRule extends js.Object {
+trait SchemaAuthenticationRule extends StObject {
   
   /**
     * If true, the service accepts API keys without any other credential.
@@ -44,45 +45,33 @@ object SchemaAuthenticationRule {
   }
   
   @scala.inline
-  implicit class SchemaAuthenticationRuleOps[Self <: SchemaAuthenticationRule] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthenticationRuleMutableBuilder[Self <: SchemaAuthenticationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowWithoutCredential(value: Boolean): Self = StObject.set(x, "allowWithoutCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowWithoutCredentialUndefined: Self = StObject.set(x, "allowWithoutCredential", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOauth(value: SchemaOAuthRequirements): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowWithoutCredential(value: Boolean): Self = this.set("allowWithoutCredential", value.asInstanceOf[js.Any])
+    def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
     
     @scala.inline
-    def deleteAllowWithoutCredential: Self = this.set("allowWithoutCredential", js.undefined)
+    def setRequirements(value: js.Array[SchemaAuthRequirement]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth(value: SchemaOAuthRequirements): Self = this.set("oauth", value.asInstanceOf[js.Any])
+    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
     @scala.inline
-    def deleteOauth: Self = this.set("oauth", js.undefined)
+    def setRequirementsVarargs(value: SchemaAuthRequirement*): Self = StObject.set(x, "requirements", js.Array(value :_*))
     
     @scala.inline
-    def setRequirementsVarargs(value: SchemaAuthRequirement*): Self = this.set("requirements", js.Array(value :_*))
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirements(value: js.Array[SchemaAuthRequirement]): Self = this.set("requirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequirements: Self = this.set("requirements", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

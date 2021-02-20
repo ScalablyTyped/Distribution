@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class WebView ()
   extends typings.scriptableIos.WebView
-/* static members */
-@JSGlobal("WebView")
-@js.native
-object WebView extends js.Object {
+object WebView {
   
   /**
     * _Loads a file and renders it._
@@ -42,9 +40,18 @@ object WebView extends js.Object {
     * @param fullscreen - Optional. Set to true to present the web view in fullscreen. This only has an effect when used within the app. Defaults to false.
     * @see https://docs.scriptable.app/webview/#loadfile
     */
+  /* static member */
+  @JSGlobal("WebView.loadFile")
+  @js.native
   def loadFile(fileURL: String): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadFile")
+  @js.native
   def loadFile(fileURL: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadFile")
+  @js.native
   def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadFile")
+  @js.native
   def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
   
   /**
@@ -55,23 +62,40 @@ object WebView extends js.Object {
     * @param fullscreen - Optional. Set to true to present the web view in fullscreen. This only has an effect when used within the app. Defaults to false.
     * @see https://docs.scriptable.app/webview/#loadhtml
     */
+  /* static member */
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(html: String): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(
     html: String,
     baseURL: js.UndefOr[scala.Nothing],
     preferredSize: js.UndefOr[scala.Nothing],
     fullscreen: Boolean
   ): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(html: String, baseURL: js.UndefOr[scala.Nothing], preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(
     html: String,
     baseURL: js.UndefOr[scala.Nothing],
     preferredSize: typings.scriptableIos.Size,
     fullscreen: Boolean
   ): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(html: String, baseURL: String): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(html: String, baseURL: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadHTML")
+  @js.native
   def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
   
   /**
@@ -83,8 +107,17 @@ object WebView extends js.Object {
     * @param fullscreen - Optional. Set to true to present the web view in fullscreen. This only has an effect when used within the app. Defaults to false.
     * @see https://docs.scriptable.app/webview/#loadurl
     */
+  /* static member */
+  @JSGlobal("WebView.loadURL")
+  @js.native
   def loadURL(url: String): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadURL")
+  @js.native
   def loadURL(url: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadURL")
+  @js.native
   def loadURL(url: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
+  @JSGlobal("WebView.loadURL")
+  @js.native
   def loadURL(url: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
 }

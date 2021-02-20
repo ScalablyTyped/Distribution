@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSEvalable[A] extends js.Object {
+trait JSEvalable[A] extends StObject {
   
   /**
     * Evaluates a function in the browser context.

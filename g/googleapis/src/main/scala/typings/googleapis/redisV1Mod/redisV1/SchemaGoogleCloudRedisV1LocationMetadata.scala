@@ -1,6 +1,7 @@
 package typings.googleapis.redisV1Mod.redisV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `google.cloud.location.Location.metadata` field.
   */
 @js.native
-trait SchemaGoogleCloudRedisV1LocationMetadata extends js.Object {
+trait SchemaGoogleCloudRedisV1LocationMetadata extends StObject {
   
   /**
     * Output only. The set of available zones in the location. The map is keyed
@@ -31,24 +32,12 @@ object SchemaGoogleCloudRedisV1LocationMetadata {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudRedisV1LocationMetadataOps[Self <: SchemaGoogleCloudRedisV1LocationMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudRedisV1LocationMetadataMutableBuilder[Self <: SchemaGoogleCloudRedisV1LocationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableZones(value: StringDictionary[SchemaGoogleCloudRedisV1ZoneMetadata]): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAvailableZones(value: StringDictionary[SchemaGoogleCloudRedisV1ZoneMetadata]): Self = this.set("availableZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableZones: Self = this.set("availableZones", js.undefined)
+    def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,68 +53,56 @@ object IPersonaProps {
   }
   
   @scala.inline
-  implicit class IPersonaPropsOps[Self <: IPersonaProps] (val x: Self) extends AnyVal {
+  implicit class IPersonaPropsMutableBuilder[Self <: IPersonaProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentRef(value: IRefObject[IPersona]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentRefFunction1(value: /* ref */ IPersona | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentRefFunction1(value: /* ref */ IPersona | Null => Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setComponentRef(value: IRefObject[IPersona]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
     @scala.inline
     def setOnRenderOptionalText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderOptionalText", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderOptionalText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderOptionalText: Self = this.set("onRenderOptionalText", js.undefined)
+    def setOnRenderOptionalTextUndefined: Self = StObject.set(x, "onRenderOptionalText", js.undefined)
     
     @scala.inline
     def setOnRenderPrimaryText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderPrimaryText", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderPrimaryText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderPrimaryText: Self = this.set("onRenderPrimaryText", js.undefined)
+    def setOnRenderPrimaryTextUndefined: Self = StObject.set(x, "onRenderPrimaryText", js.undefined)
     
     @scala.inline
     def setOnRenderSecondaryText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderSecondaryText", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderSecondaryText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderSecondaryText: Self = this.set("onRenderSecondaryText", js.undefined)
+    def setOnRenderSecondaryTextUndefined: Self = StObject.set(x, "onRenderSecondaryText", js.undefined)
     
     @scala.inline
     def setOnRenderTertiaryText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
-    ): Self = this.set("onRenderTertiaryText", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onRenderTertiaryText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnRenderTertiaryText: Self = this.set("onRenderTertiaryText", js.undefined)
+    def setOnRenderTertiaryTextUndefined: Self = StObject.set(x, "onRenderTertiaryText", js.undefined)
     
     @scala.inline
-    def setStylesFunction1(value: IPersonaStyleProps => DeepPartial[IPersonaStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    def setStyles(value: IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStylesFunction1(value: IPersonaStyleProps => DeepPartial[IPersonaStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

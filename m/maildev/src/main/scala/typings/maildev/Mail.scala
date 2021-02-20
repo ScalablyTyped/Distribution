@@ -1,5 +1,6 @@
 package typings.maildev
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for mail.
   */
 @js.native
-trait Mail extends js.Object {
+trait Mail extends StObject {
   
   /**
     * Client.
@@ -29,30 +30,18 @@ object Mail {
   }
   
   @scala.inline
-  implicit class MailOps[Self <: Mail] (val x: Self) extends AnyVal {
+  implicit class MailMutableBuilder[Self <: Mail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvelope(value: js.Object): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelope(value: js.Object): Self = this.set("envelope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvelope: Self = this.set("envelope", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

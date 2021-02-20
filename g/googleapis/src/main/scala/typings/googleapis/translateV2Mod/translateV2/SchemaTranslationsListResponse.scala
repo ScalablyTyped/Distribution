@@ -1,5 +1,6 @@
 package typings.googleapis.translateV2Mod.translateV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The main language translation response message.
   */
 @js.native
-trait SchemaTranslationsListResponse extends js.Object {
+trait SchemaTranslationsListResponse extends StObject {
   
   /**
     * Translations contains list of translation results of given text
@@ -24,27 +25,15 @@ object SchemaTranslationsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaTranslationsListResponseOps[Self <: SchemaTranslationsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaTranslationsListResponseMutableBuilder[Self <: SchemaTranslationsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTranslations(value: js.Array[SchemaTranslationsResource]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTranslationsVarargs(value: SchemaTranslationsResource*): Self = this.set("translations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTranslations(value: js.Array[SchemaTranslationsResource]): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
+    def setTranslationsVarargs(value: SchemaTranslationsResource*): Self = StObject.set(x, "translations", js.Array(value :_*))
   }
 }

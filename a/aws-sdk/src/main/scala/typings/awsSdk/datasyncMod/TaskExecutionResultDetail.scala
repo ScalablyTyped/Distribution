@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskExecutionResultDetail extends js.Object {
+trait TaskExecutionResultDetail extends StObject {
   
   /**
     * Errors that AWS DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
@@ -61,72 +62,60 @@ object TaskExecutionResultDetail {
   }
   
   @scala.inline
-  implicit class TaskExecutionResultDetailOps[Self <: TaskExecutionResultDetail] (val x: Self) extends AnyVal {
+  implicit class TaskExecutionResultDetailMutableBuilder[Self <: TaskExecutionResultDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorDetail(value: String): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setPrepareDuration(value: Duration): Self = StObject.set(x, "PrepareDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetail(value: String): Self = this.set("ErrorDetail", value.asInstanceOf[js.Any])
+    def setPrepareDurationUndefined: Self = StObject.set(x, "PrepareDuration", js.undefined)
     
     @scala.inline
-    def deleteErrorDetail: Self = this.set("ErrorDetail", js.undefined)
+    def setPrepareStatus(value: PhaseStatus): Self = StObject.set(x, "PrepareStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepareDuration(value: Duration): Self = this.set("PrepareDuration", value.asInstanceOf[js.Any])
+    def setPrepareStatusUndefined: Self = StObject.set(x, "PrepareStatus", js.undefined)
     
     @scala.inline
-    def deletePrepareDuration: Self = this.set("PrepareDuration", js.undefined)
+    def setTotalDuration(value: Duration): Self = StObject.set(x, "TotalDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepareStatus(value: PhaseStatus): Self = this.set("PrepareStatus", value.asInstanceOf[js.Any])
+    def setTotalDurationUndefined: Self = StObject.set(x, "TotalDuration", js.undefined)
     
     @scala.inline
-    def deletePrepareStatus: Self = this.set("PrepareStatus", js.undefined)
+    def setTransferDuration(value: Duration): Self = StObject.set(x, "TransferDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalDuration(value: Duration): Self = this.set("TotalDuration", value.asInstanceOf[js.Any])
+    def setTransferDurationUndefined: Self = StObject.set(x, "TransferDuration", js.undefined)
     
     @scala.inline
-    def deleteTotalDuration: Self = this.set("TotalDuration", js.undefined)
+    def setTransferStatus(value: PhaseStatus): Self = StObject.set(x, "TransferStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferDuration(value: Duration): Self = this.set("TransferDuration", value.asInstanceOf[js.Any])
+    def setTransferStatusUndefined: Self = StObject.set(x, "TransferStatus", js.undefined)
     
     @scala.inline
-    def deleteTransferDuration: Self = this.set("TransferDuration", js.undefined)
+    def setVerifyDuration(value: Duration): Self = StObject.set(x, "VerifyDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferStatus(value: PhaseStatus): Self = this.set("TransferStatus", value.asInstanceOf[js.Any])
+    def setVerifyDurationUndefined: Self = StObject.set(x, "VerifyDuration", js.undefined)
     
     @scala.inline
-    def deleteTransferStatus: Self = this.set("TransferStatus", js.undefined)
+    def setVerifyStatus(value: PhaseStatus): Self = StObject.set(x, "VerifyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerifyDuration(value: Duration): Self = this.set("VerifyDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyDuration: Self = this.set("VerifyDuration", js.undefined)
-    
-    @scala.inline
-    def setVerifyStatus(value: PhaseStatus): Self = this.set("VerifyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyStatus: Self = this.set("VerifyStatus", js.undefined)
+    def setVerifyStatusUndefined: Self = StObject.set(x, "VerifyStatus", js.undefined)
   }
 }

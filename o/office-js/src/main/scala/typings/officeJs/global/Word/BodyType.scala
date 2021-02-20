@@ -1,5 +1,6 @@
 package typings.officeJs.global.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Word.BodyType")
 @js.native
-object BodyType extends js.Object {
+object BodyType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.Word.BodyType with String] = js.native

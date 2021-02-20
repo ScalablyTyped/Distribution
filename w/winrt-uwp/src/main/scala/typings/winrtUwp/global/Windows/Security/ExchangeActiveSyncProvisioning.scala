@@ -1,34 +1,37 @@
 package typings.winrtUwp.global.Windows.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables an app for mail to evaluate and apply the Exchange Active Synchronization (EAS) policies. */
-@JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning")
-@js.native
-object ExchangeActiveSyncProvisioning extends js.Object {
+object ExchangeActiveSyncProvisioning {
   
   /** Provides the app the ability to retrieve device information from the local device. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation")
   @js.native
   /** Creates an instance of an object that allows the caller app to retrieve device information from the local device. */
   class EasClientDeviceInformation ()
     extends typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation
   
   /** Modern mail apps evaluate and apply the EAS security policies. An EasClientSecurityPolicy object is constructed by the caller app to set policies received from the Exchange server or application. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy")
   @js.native
   /** Creates an instance of an object that allows the caller app to set policies received from the Exchange server for evaluation or application. */
   class EasClientSecurityPolicy ()
     extends typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy
   
   /** Provides the mail app with the results of the evaluation of the EAS security policies. Every policy being evaluated returns an enumerated value indicating the evaluation results against the policy. The evaluations results are encapsulated in the EasComplianceResults object for the caller app to retrieve. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults")
   @js.native
   abstract class EasComplianceResults ()
     extends typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults
   
   /** Results of whether the logon can occur. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult")
   @js.native
-  object EasDisallowConvenienceLogonResult extends js.Object {
+  object EasDisallowConvenienceLogonResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -45,8 +48,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Describes the type of Exchange ActiveSync encryption provider. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType")
   @js.native
-  object EasEncryptionProviderType extends js.Object {
+  object EasEncryptionProviderType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -61,8 +65,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Represents the maximum length of time result before locking the computer. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult")
   @js.native
-  object EasMaxInactivityTimeLockResult extends js.Object {
+  object EasMaxInactivityTimeLockResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -81,8 +86,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Represents the maximum number of password attempts results. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult")
   @js.native
-  object EasMaxPasswordFailedAttemptsResult extends js.Object {
+  object EasMaxPasswordFailedAttemptsResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -101,8 +107,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Represents the minimum complexity result for passwords. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordComplexCharactersResult")
   @js.native
-  object EasMinPasswordComplexCharactersResult extends js.Object {
+  object EasMinPasswordComplexCharactersResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -141,8 +148,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Represents the minimum length result for passwords. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordLengthResult")
   @js.native
-  object EasMinPasswordLengthResult extends js.Object {
+  object EasMinPasswordLengthResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -181,8 +189,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Results of querying on the password expiration information. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult")
   @js.native
-  object EasPasswordExpirationResult extends js.Object {
+  object EasPasswordExpirationResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -209,8 +218,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Represents the password history. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult")
   @js.native
-  object EasPasswordHistoryResult extends js.Object {
+  object EasPasswordHistoryResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -229,8 +239,9 @@ object ExchangeActiveSyncProvisioning extends js.Object {
   }
   
   /** Represents the type of encryption required. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
+  @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult")
   @js.native
-  object EasRequireEncryptionResult extends js.Object {
+  object EasRequireEncryptionResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

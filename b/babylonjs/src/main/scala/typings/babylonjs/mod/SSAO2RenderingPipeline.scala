@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,14 +40,7 @@ class SSAO2RenderingPipeline protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "SSAO2RenderingPipeline")
-@js.native
-object SSAO2RenderingPipeline extends js.Object {
-  
-  /**
-    *  Support test.
-    */
-  def IsSupported: Boolean = js.native
+object SSAO2RenderingPipeline {
   
   /**
     * Parse the serialized pipeline
@@ -55,5 +49,7 @@ object SSAO2RenderingPipeline extends js.Object {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
+  @JSImport("babylonjs", "SSAO2RenderingPipeline.Parse")
+  @js.native
   def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline = js.native
 }

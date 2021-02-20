@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,16 +34,20 @@ class SetTaskOutcomeClientAction protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction")
-@js.native
-object SetTaskOutcomeClientAction extends js.Object {
+object SetTaskOutcomeClientAction {
+  
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -53,6 +58,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInActionButtonUnderAction")
+  @js.native
   def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -63,6 +71,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInActionItemUnderAction")
+  @js.native
   def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -73,6 +84,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInAssociationWidgetUnderOnChangeAction")
+  @js.native
   def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -83,6 +97,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInAttributeWidgetUnderOnChangeAction")
+  @js.native
   def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -93,6 +110,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInAttributeWidgetUnderOnEnterAction")
+  @js.native
   def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -103,6 +123,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInAttributeWidgetUnderOnLeaveAction")
+  @js.native
   def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -113,6 +136,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInDivContainerUnderOnClickAction")
+  @js.native
   def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -123,6 +149,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInDynamicImageViewerUnderClickAction")
+  @js.native
   def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -133,6 +162,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInGridActionButtonUnderAction")
+  @js.native
   def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -143,6 +175,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInListViewUnderClickAction")
+  @js.native
   def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -153,6 +188,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInListViewUnderPullDownAction")
+  @js.native
   def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -163,6 +201,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInMenuItemUnderAction")
+  @js.native
   def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -173,6 +214,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+  @js.native
   def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -183,6 +227,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInStaticImageViewerUnderClickAction")
+  @js.native
   def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -193,6 +240,9 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInTextBoxUnderOnEnterKeyPressAction")
+  @js.native
   def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
   /**
@@ -203,9 +253,22 @@ object SetTaskOutcomeClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.createInWidgetValueUnderAction")
+  @js.native
   def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.SetTaskOutcomeClientAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SetTaskOutcomeClientAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

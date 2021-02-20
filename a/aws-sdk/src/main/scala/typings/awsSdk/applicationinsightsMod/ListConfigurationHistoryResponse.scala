@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConfigurationHistoryResponse extends js.Object {
+trait ListConfigurationHistoryResponse extends StObject {
   
   /**
     *  The list of configuration events and their corresponding details. 
@@ -26,33 +27,21 @@ object ListConfigurationHistoryResponse {
   }
   
   @scala.inline
-  implicit class ListConfigurationHistoryResponseOps[Self <: ListConfigurationHistoryResponse] (val x: Self) extends AnyVal {
+  implicit class ListConfigurationHistoryResponseMutableBuilder[Self <: ListConfigurationHistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventList(value: ConfigurationEventList): Self = StObject.set(x, "EventList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventListUndefined: Self = StObject.set(x, "EventList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventListVarargs(value: ConfigurationEvent*): Self = StObject.set(x, "EventList", js.Array(value :_*))
     
     @scala.inline
-    def setEventListVarargs(value: ConfigurationEvent*): Self = this.set("EventList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventList(value: ConfigurationEventList): Self = this.set("EventList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventList: Self = this.set("EventList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

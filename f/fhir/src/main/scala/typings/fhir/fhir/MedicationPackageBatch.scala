@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object MedicationPackageBatch {
   }
   
   @scala.inline
-  implicit class MedicationPackageBatchOps[Self <: MedicationPackageBatch] (val x: Self) extends AnyVal {
+  implicit class MedicationPackageBatchMutableBuilder[Self <: MedicationPackageBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDate(value: dateTime): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLotNumber(value: String): Self = StObject.set(x, "lotNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_expirationDate(value: Element): Self = this.set("_expirationDate", value.asInstanceOf[js.Any])
+    def setLotNumberUndefined: Self = StObject.set(x, "lotNumber", js.undefined)
     
     @scala.inline
-    def delete_expirationDate: Self = this.set("_expirationDate", js.undefined)
+    def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lotNumber(value: Element): Self = this.set("_lotNumber", value.asInstanceOf[js.Any])
+    def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
     
     @scala.inline
-    def delete_lotNumber: Self = this.set("_lotNumber", js.undefined)
+    def set_lotNumber(value: Element): Self = StObject.set(x, "_lotNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: dateTime): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
-    
-    @scala.inline
-    def setLotNumber(value: String): Self = this.set("lotNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLotNumber: Self = this.set("lotNumber", js.undefined)
+    def set_lotNumberUndefined: Self = StObject.set(x, "_lotNumber", js.undefined)
   }
 }

@@ -1,13 +1,13 @@
 package typings.ngxInfiniteScroll
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ngx-infinite-scroll/src/modules/ngx-infinite-scroll.module", JSImport.Namespace)
-@js.native
-object ngxInfiniteScrollModuleMod extends js.Object {
+object ngxInfiniteScrollModuleMod {
   
+  @JSImport("ngx-infinite-scroll/src/modules/ngx-infinite-scroll.module", "InfiniteScrollModule")
   @js.native
-  class InfiniteScrollModule () extends js.Object
+  class InfiniteScrollModule () extends StObject
 }

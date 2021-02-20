@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.app.ChromeAppWindow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofapp extends js.Object {
+trait Typeofapp extends StObject {
   
   /**
     * @enum
@@ -40,27 +41,15 @@ object Typeofapp {
   }
   
   @scala.inline
-  implicit class TypeofappOps[Self <: Typeofapp] (val x: Self) extends AnyVal {
+  implicit class TypeofappMutableBuilder[Self <: Typeofapp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuntime(value: Typeofruntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWindow(value: ChromeAppWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_State(value: FULLSCREEN): Self = this.set("_State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuntime(value: Typeofruntime): Self = this.set("runtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindow(value: ChromeAppWindow): Self = this.set("window", value.asInstanceOf[js.Any])
+    def set_State(value: FULLSCREEN): Self = StObject.set(x, "_State", value.asInstanceOf[js.Any])
   }
 }

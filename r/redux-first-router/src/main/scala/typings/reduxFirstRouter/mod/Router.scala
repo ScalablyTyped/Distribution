@@ -1,11 +1,12 @@
 package typings.reduxFirstRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Router[TState] extends js.Object {
+trait Router[TState] extends StObject {
   
   def getActionForPathAndParams(path: String): Nullable[js.Object] = js.native
   
@@ -29,30 +30,18 @@ object Router {
   }
   
   @scala.inline
-  implicit class RouterOps[Self <: Router[_], TState] (val x: Self with Router[TState]) extends AnyVal {
+  implicit class RouterMutableBuilder[Self <: Router[_], TState] (val x: Self with Router[TState]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetActionForPathAndParams(value: String => Nullable[js.Object]): Self = StObject.set(x, "getActionForPathAndParams", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPathAndParamsForState(value: TState => typings.reduxFirstRouter.anon.Params): Self = StObject.set(x, "getPathAndParamsForState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStateForAction(value: (js.Object, Nullable[TState]) => Nullable[TState]): Self = StObject.set(x, "getStateForAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetActionForPathAndParams(value: String => Nullable[js.Object]): Self = this.set("getActionForPathAndParams", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPathAndParamsForState(value: TState => typings.reduxFirstRouter.anon.Params): Self = this.set("getPathAndParamsForState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStateForAction(value: (js.Object, Nullable[TState]) => Nullable[TState]): Self = this.set("getStateForAction", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetStateForActionOriginal(value: (js.Object, Nullable[TState]) => Nullable[TState]): Self = this.set("getStateForActionOriginal", js.Any.fromFunction2(value))
+    def setGetStateForActionOriginal(value: (js.Object, Nullable[TState]) => Nullable[TState]): Self = StObject.set(x, "getStateForActionOriginal", js.Any.fromFunction2(value))
   }
 }

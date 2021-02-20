@@ -2,6 +2,7 @@ package typings.typescriptServices.mod.Services
 
 import typings.typescriptServices.TypeScript.Services.ICoreServicesHost
 import typings.typescriptServices.TypeScript.Services.IShimFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

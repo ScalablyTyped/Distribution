@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SsmControls extends js.Object {
+trait SsmControls extends StObject {
   
   /**
     * The maximum percentage of remediation actions allowed to run in parallel on the non-compliant resources for that specific rule. You can specify a percentage, such as 10%. The default value is 10. 
@@ -26,30 +27,18 @@ object SsmControls {
   }
   
   @scala.inline
-  implicit class SsmControlsOps[Self <: SsmControls] (val x: Self) extends AnyVal {
+  implicit class SsmControlsMutableBuilder[Self <: SsmControls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrentExecutionRatePercentage(value: Percentage): Self = StObject.set(x, "ConcurrentExecutionRatePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrentExecutionRatePercentageUndefined: Self = StObject.set(x, "ConcurrentExecutionRatePercentage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorPercentage(value: Percentage): Self = StObject.set(x, "ErrorPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrentExecutionRatePercentage(value: Percentage): Self = this.set("ConcurrentExecutionRatePercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConcurrentExecutionRatePercentage: Self = this.set("ConcurrentExecutionRatePercentage", js.undefined)
-    
-    @scala.inline
-    def setErrorPercentage(value: Percentage): Self = this.set("ErrorPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorPercentage: Self = this.set("ErrorPercentage", js.undefined)
+    def setErrorPercentageUndefined: Self = StObject.set(x, "ErrorPercentage", js.undefined)
   }
 }

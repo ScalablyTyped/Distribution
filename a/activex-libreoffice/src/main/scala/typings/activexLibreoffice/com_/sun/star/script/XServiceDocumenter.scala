@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.activexLibreoffice.com_.sun.star.lang.XServiceInfo
 import typings.activexLibreoffice.com_.sun.star.lang.XTypeProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since LibreOffice 5.1
   */
 @js.native
-trait XServiceDocumenter extends js.Object {
+trait XServiceDocumenter extends StObject {
   
   var CoreBaseUrl: String = js.native
   
@@ -38,33 +39,21 @@ object XServiceDocumenter {
   }
   
   @scala.inline
-  implicit class XServiceDocumenterOps[Self <: XServiceDocumenter] (val x: Self) extends AnyVal {
+  implicit class XServiceDocumenterMutableBuilder[Self <: XServiceDocumenter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoreBaseUrl(value: String): Self = StObject.set(x, "CoreBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceBaseUrl(value: String): Self = StObject.set(x, "ServiceBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowCoreDocs(value: XServiceInfo => Unit): Self = StObject.set(x, "showCoreDocs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCoreBaseUrl(value: String): Self = this.set("CoreBaseUrl", value.asInstanceOf[js.Any])
+    def setShowInterfaceDocs(value: XTypeProvider => Unit): Self = StObject.set(x, "showInterfaceDocs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setServiceBaseUrl(value: String): Self = this.set("ServiceBaseUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowCoreDocs(value: XServiceInfo => Unit): Self = this.set("showCoreDocs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowInterfaceDocs(value: XTypeProvider => Unit): Self = this.set("showInterfaceDocs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowServiceDocs(value: XServiceInfo => Unit): Self = this.set("showServiceDocs", js.Any.fromFunction1(value))
+    def setShowServiceDocs(value: XServiceInfo => Unit): Self = StObject.set(x, "showServiceDocs", js.Any.fromFunction1(value))
   }
 }

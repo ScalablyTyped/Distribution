@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object StockChartLegendItemClickEvent {
   }
   
   @scala.inline
-  implicit class StockChartLegendItemClickEventOps[Self <: StockChartLegendItemClickEvent] (val x: Self) extends AnyVal {
+  implicit class StockChartLegendItemClickEventMutableBuilder[Self <: StockChartLegendItemClickEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: js.Any): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointIndex(value: Double): Self = this.set("pointIndex", value.asInstanceOf[js.Any])
+    def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePointIndex: Self = this.set("pointIndex", js.undefined)
+    def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
     
     @scala.inline
-    def setSeries(value: js.Any): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesIndex(value: Double): Self = this.set("seriesIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesIndex: Self = this.set("seriesIndex", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

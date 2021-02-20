@@ -11,6 +11,7 @@ import typings.googleCloudStorage.signerMod.GetSignedUrlResponse
 import typings.googleCloudStorage.signerMod.URLSigner
 import typings.googleCloudStorage.storageMod.Cors
 import typings.googleCloudStorage.storageMod.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

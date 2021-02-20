@@ -1,11 +1,12 @@
 package typings.roslib.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AngularThres extends js.Object {
+trait AngularThres extends StObject {
   
   var angularThres: js.UndefOr[Double] = js.native
   
@@ -34,69 +35,57 @@ object AngularThres {
   }
   
   @scala.inline
-  implicit class AngularThresOps[Self <: AngularThres] (val x: Self) extends AnyVal {
+  implicit class AngularThresMutableBuilder[Self <: AngularThres] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngularThres(value: Double): Self = StObject.set(x, "angularThres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngularThresUndefined: Self = StObject.set(x, "angularThres", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixedFrame(value: java.lang.String): Self = StObject.set(x, "fixedFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRos(value: typings.roslib.mod.Ros): Self = this.set("ros", value.asInstanceOf[js.Any])
+    def setFixedFrameUndefined: Self = StObject.set(x, "fixedFrame", js.undefined)
     
     @scala.inline
-    def setAngularThres(value: Double): Self = this.set("angularThres", value.asInstanceOf[js.Any])
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAngularThres: Self = this.set("angularThres", js.undefined)
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def setFixedFrame(value: java.lang.String): Self = this.set("fixedFrame", value.asInstanceOf[js.Any])
+    def setRepubServiceName(value: java.lang.String): Self = StObject.set(x, "repubServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedFrame: Self = this.set("fixedFrame", js.undefined)
+    def setRepubServiceNameUndefined: Self = StObject.set(x, "repubServiceName", js.undefined)
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
+    def setServerName(value: java.lang.String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepubServiceName(value: java.lang.String): Self = this.set("repubServiceName", value.asInstanceOf[js.Any])
+    def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
     
     @scala.inline
-    def deleteRepubServiceName: Self = this.set("repubServiceName", js.undefined)
+    def setTopicTimeout(value: Double): Self = StObject.set(x, "topicTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: java.lang.String): Self = this.set("serverName", value.asInstanceOf[js.Any])
+    def setTopicTimeoutUndefined: Self = StObject.set(x, "topicTimeout", js.undefined)
     
     @scala.inline
-    def deleteServerName: Self = this.set("serverName", js.undefined)
+    def setTransThres(value: Double): Self = StObject.set(x, "transThres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicTimeout(value: Double): Self = this.set("topicTimeout", value.asInstanceOf[js.Any])
+    def setTransThresUndefined: Self = StObject.set(x, "transThres", js.undefined)
     
     @scala.inline
-    def deleteTopicTimeout: Self = this.set("topicTimeout", js.undefined)
+    def setUpdateDelay(value: Double): Self = StObject.set(x, "updateDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransThres(value: Double): Self = this.set("transThres", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransThres: Self = this.set("transThres", js.undefined)
-    
-    @scala.inline
-    def setUpdateDelay(value: Double): Self = this.set("updateDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDelay: Self = this.set("updateDelay", js.undefined)
+    def setUpdateDelayUndefined: Self = StObject.set(x, "updateDelay", js.undefined)
   }
 }

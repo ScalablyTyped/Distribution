@@ -2,12 +2,13 @@ package typings.vexflow.anon
 
 import typings.vexflow.Vex.Flow.StaveLine.TextJustification
 import typings.vexflow.Vex.Flow.StaveLine.TextVerticalPosition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arrowheadangle extends js.Object {
+trait Arrowheadangle extends StObject {
   
   var arrowhead_angle: Double = js.native
   
@@ -55,57 +56,45 @@ object Arrowheadangle {
   }
   
   @scala.inline
-  implicit class ArrowheadangleOps[Self <: Arrowheadangle] (val x: Self) extends AnyVal {
+  implicit class ArrowheadangleMutableBuilder[Self <: Arrowheadangle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowhead_angle(value: Double): Self = StObject.set(x, "arrowhead_angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowhead_length(value: Double): Self = StObject.set(x, "arrowhead_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowhead_angle(value: Double): Self = this.set("arrowhead_angle", value.asInstanceOf[js.Any])
+    def setDraw_end_arrow(value: Boolean): Self = StObject.set(x, "draw_end_arrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowhead_length(value: Double): Self = this.set("arrowhead_length", value.asInstanceOf[js.Any])
+    def setDraw_start_arrow(value: Boolean): Self = StObject.set(x, "draw_start_arrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setLine_dash(value: js.Array[Double]): Self = StObject.set(x, "line_dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraw_end_arrow(value: Boolean): Self = this.set("draw_end_arrow", value.asInstanceOf[js.Any])
+    def setLine_dashVarargs(value: Double*): Self = StObject.set(x, "line_dash", js.Array(value :_*))
     
     @scala.inline
-    def setDraw_start_arrow(value: Boolean): Self = this.set("draw_start_arrow", value.asInstanceOf[js.Any])
+    def setLine_width(value: Double): Self = StObject.set(x, "line_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_dashVarargs(value: Double*): Self = this.set("line_dash", js.Array(value :_*))
+    def setPadding_left(value: Double): Self = StObject.set(x, "padding_left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_dash(value: js.Array[Double]): Self = this.set("line_dash", value.asInstanceOf[js.Any])
+    def setPadding_right(value: Double): Self = StObject.set(x, "padding_right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_width(value: Double): Self = this.set("line_width", value.asInstanceOf[js.Any])
+    def setRounded_end(value: Boolean): Self = StObject.set(x, "rounded_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding_left(value: Double): Self = this.set("padding_left", value.asInstanceOf[js.Any])
+    def setText_justification(value: TextJustification): Self = StObject.set(x, "text_justification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding_right(value: Double): Self = this.set("padding_right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRounded_end(value: Boolean): Self = this.set("rounded_end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_justification(value: TextJustification): Self = this.set("text_justification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_position_vertical(value: TextVerticalPosition): Self = this.set("text_position_vertical", value.asInstanceOf[js.Any])
+    def setText_position_vertical(value: TextVerticalPosition): Self = StObject.set(x, "text_position_vertical", value.asInstanceOf[js.Any])
   }
 }

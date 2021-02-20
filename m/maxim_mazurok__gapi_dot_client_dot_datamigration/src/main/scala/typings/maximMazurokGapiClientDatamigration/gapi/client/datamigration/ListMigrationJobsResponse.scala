@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMigrationJobsResponse extends js.Object {
+trait ListMigrationJobsResponse extends StObject {
   
   /** The list of migration jobs objects. */
   var migrationJobs: js.UndefOr[js.Array[MigrationJob]] = js.native
@@ -25,42 +26,30 @@ object ListMigrationJobsResponse {
   }
   
   @scala.inline
-  implicit class ListMigrationJobsResponseOps[Self <: ListMigrationJobsResponse] (val x: Self) extends AnyVal {
+  implicit class ListMigrationJobsResponseMutableBuilder[Self <: ListMigrationJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMigrationJobs(value: js.Array[MigrationJob]): Self = StObject.set(x, "migrationJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMigrationJobsUndefined: Self = StObject.set(x, "migrationJobs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMigrationJobsVarargs(value: MigrationJob*): Self = StObject.set(x, "migrationJobs", js.Array(value :_*))
     
     @scala.inline
-    def setMigrationJobsVarargs(value: MigrationJob*): Self = this.set("migrationJobs", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationJobs(value: js.Array[MigrationJob]): Self = this.set("migrationJobs", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMigrationJobs: Self = this.set("migrationJobs", js.undefined)
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

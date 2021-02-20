@@ -1,6 +1,7 @@
 package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Parameters that describe the nodes in a cluster.
   */
 @js.native
-trait SchemaNodeConfig extends js.Object {
+trait SchemaNodeConfig extends StObject {
   
   /**
     * A list of hardware accelerators to be attached to each node. See
@@ -148,114 +149,102 @@ object SchemaNodeConfig {
   }
   
   @scala.inline
-  implicit class SchemaNodeConfigOps[Self <: SchemaNodeConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaNodeConfigMutableBuilder[Self <: SchemaNodeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
     
     @scala.inline
-    def setAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = this.set("accelerators", js.Array(value :_*))
+    def setDiskSizeGb(value: Double): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = this.set("accelerators", value.asInstanceOf[js.Any])
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteAccelerators: Self = this.set("accelerators", js.undefined)
+    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: Double): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
     
     @scala.inline
-    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageType(value: String): Self = this.set("imageType", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteImageType: Self = this.set("imageType", js.undefined)
+    def setLocalSsdCount(value: Double): Self = StObject.set(x, "localSsdCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLocalSsdCountUndefined: Self = StObject.set(x, "localSsdCount", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSsdCount(value: Double): Self = this.set("localSsdCount", value.asInstanceOf[js.Any])
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def deleteLocalSsdCount: Self = this.set("localSsdCount", js.undefined)
+    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setOauthScopes(value: js.Array[String]): Self = StObject.set(x, "oauthScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
     
     @scala.inline
-    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
     
     @scala.inline
-    def setOauthScopesVarargs(value: String*): Self = this.set("oauthScopes", js.Array(value :_*))
+    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthScopes(value: js.Array[String]): Self = this.set("oauthScopes", value.asInstanceOf[js.Any])
+    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
     
     @scala.inline
-    def deleteOauthScopes: Self = this.set("oauthScopes", js.undefined)
+    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setTaints(value: js.Array[SchemaNodeTaint]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTaintsVarargs(value: SchemaNodeTaint*): Self = this.set("taints", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaints(value: js.Array[SchemaNodeTaint]): Self = this.set("taints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaints: Self = this.set("taints", js.undefined)
+    def setTaintsVarargs(value: SchemaNodeTaint*): Self = StObject.set(x, "taints", js.Array(value :_*))
   }
 }

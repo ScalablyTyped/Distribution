@@ -1,6 +1,7 @@
 package typings.coinbase.mod
 
 import typings.coinbase.coinbaseStrings.payment_method
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,54 +88,42 @@ object PaymentMethod {
   }
   
   @scala.inline
-  implicit class PaymentMethodOps[Self <: PaymentMethod] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodMutableBuilder[Self <: PaymentMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_buy(value: Boolean): Self = StObject.set(x, "allow_buy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_sell(value: Boolean): Self = StObject.set(x, "allow_sell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_buy(value: Boolean): Self = this.set("allow_buy", value.asInstanceOf[js.Any])
+    def setInstant_buy(value: Boolean): Self = StObject.set(x, "instant_buy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_sell(value: Boolean): Self = this.set("allow_sell", value.asInstanceOf[js.Any])
+    def setInstant_sell(value: Boolean): Self = StObject.set(x, "instant_sell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setLimits(value: PaymentMethodLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstant_buy(value: Boolean): Self = this.set("instant_buy", value.asInstanceOf[js.Any])
+    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
     @scala.inline
-    def setInstant_sell(value: Boolean): Self = this.set("instant_sell", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrimary_buy(value: Boolean): Self = StObject.set(x, "primary_buy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_buy(value: Boolean): Self = this.set("primary_buy", value.asInstanceOf[js.Any])
+    def setPrimary_sell(value: Boolean): Self = StObject.set(x, "primary_sell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_sell(value: Boolean): Self = this.set("primary_sell", value.asInstanceOf[js.Any])
+    def setResource(value: payment_method): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: payment_method): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PaymentMethodType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLimits(value: PaymentMethodLimits): Self = this.set("limits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimits: Self = this.set("limits", js.undefined)
+    def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

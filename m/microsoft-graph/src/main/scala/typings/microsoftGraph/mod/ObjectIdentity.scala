@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectIdentity extends js.Object {
+trait ObjectIdentity extends StObject {
   
   /**
     * Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated),
@@ -41,45 +42,33 @@ object ObjectIdentity {
   }
   
   @scala.inline
-  implicit class ObjectIdentityOps[Self <: ObjectIdentity] (val x: Self) extends AnyVal {
+  implicit class ObjectIdentityMutableBuilder[Self <: ObjectIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssuer(value: NullableOption[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIssuerAssignedId(value: NullableOption[String]): Self = StObject.set(x, "issuerAssignedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuerAssignedIdNull: Self = StObject.set(x, "issuerAssignedId", null)
     
     @scala.inline
-    def setIssuer(value: NullableOption[String]): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setIssuerAssignedIdUndefined: Self = StObject.set(x, "issuerAssignedId", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setIssuerNull: Self = StObject.set(x, "issuer", null)
     
     @scala.inline
-    def setIssuerNull: Self = this.set("issuer", null)
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def setIssuerAssignedId(value: NullableOption[String]): Self = this.set("issuerAssignedId", value.asInstanceOf[js.Any])
+    def setSignInType(value: NullableOption[String]): Self = StObject.set(x, "signInType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIssuerAssignedId: Self = this.set("issuerAssignedId", js.undefined)
+    def setSignInTypeNull: Self = StObject.set(x, "signInType", null)
     
     @scala.inline
-    def setIssuerAssignedIdNull: Self = this.set("issuerAssignedId", null)
-    
-    @scala.inline
-    def setSignInType(value: NullableOption[String]): Self = this.set("signInType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignInType: Self = this.set("signInType", js.undefined)
-    
-    @scala.inline
-    def setSignInTypeNull: Self = this.set("signInType", null)
+    def setSignInTypeUndefined: Self = StObject.set(x, "signInType", js.undefined)
   }
 }

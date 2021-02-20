@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,51 +29,39 @@ object IosStoreApp {
   }
   
   @scala.inline
-  implicit class IosStoreAppOps[Self <: IosStoreApp] (val x: Self) extends AnyVal {
+  implicit class IosStoreAppMutableBuilder[Self <: IosStoreApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
     
     @scala.inline
-    def setAppStoreUrl(value: NullableOption[String]): Self = this.set("appStoreUrl", value.asInstanceOf[js.Any])
+    def setApplicableDeviceType(value: IosDeviceType): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppStoreUrl: Self = this.set("appStoreUrl", js.undefined)
+    def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
     
     @scala.inline
-    def setAppStoreUrlNull: Self = this.set("appStoreUrl", null)
+    def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableDeviceType(value: IosDeviceType): Self = this.set("applicableDeviceType", value.asInstanceOf[js.Any])
+    def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
     
     @scala.inline
-    def deleteApplicableDeviceType: Self = this.set("applicableDeviceType", js.undefined)
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def setBundleId(value: NullableOption[String]): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setMinimumSupportedOperatingSystem(value: NullableOption[IosMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
     
     @scala.inline
-    def setBundleIdNull: Self = this.set("bundleId", null)
-    
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: NullableOption[IosMinimumOperatingSystem]): Self = this.set("minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumSupportedOperatingSystem: Self = this.set("minimumSupportedOperatingSystem", js.undefined)
-    
-    @scala.inline
-    def setMinimumSupportedOperatingSystemNull: Self = this.set("minimumSupportedOperatingSystem", null)
+    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
   }
 }

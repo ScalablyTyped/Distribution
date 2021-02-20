@@ -1,11 +1,12 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteProjectResult extends js.Object {
+trait DeleteProjectResult extends StObject {
   
   /**
     *  Resources which were deleted. 
@@ -26,36 +27,24 @@ object DeleteProjectResult {
   }
   
   @scala.inline
-  implicit class DeleteProjectResultOps[Self <: DeleteProjectResult] (val x: Self) extends AnyVal {
+  implicit class DeleteProjectResultMutableBuilder[Self <: DeleteProjectResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedResources(value: Resources): Self = StObject.set(x, "deletedResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedResourcesUndefined: Self = StObject.set(x, "deletedResources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletedResourcesVarargs(value: Resource*): Self = StObject.set(x, "deletedResources", js.Array(value :_*))
     
     @scala.inline
-    def setDeletedResourcesVarargs(value: Resource*): Self = this.set("deletedResources", js.Array(value :_*))
+    def setOrphanedResources(value: Resources): Self = StObject.set(x, "orphanedResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedResources(value: Resources): Self = this.set("deletedResources", value.asInstanceOf[js.Any])
+    def setOrphanedResourcesUndefined: Self = StObject.set(x, "orphanedResources", js.undefined)
     
     @scala.inline
-    def deleteDeletedResources: Self = this.set("deletedResources", js.undefined)
-    
-    @scala.inline
-    def setOrphanedResourcesVarargs(value: Resource*): Self = this.set("orphanedResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrphanedResources(value: Resources): Self = this.set("orphanedResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrphanedResources: Self = this.set("orphanedResources", js.undefined)
+    def setOrphanedResourcesVarargs(value: Resource*): Self = StObject.set(x, "orphanedResources", js.Array(value :_*))
   }
 }

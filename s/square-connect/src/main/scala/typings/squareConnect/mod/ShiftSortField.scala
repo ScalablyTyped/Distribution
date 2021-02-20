@@ -1,9 +1,10 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ShiftSortField")
 @js.native
-class ShiftSortField () extends js.Object
+class ShiftSortField () extends StObject

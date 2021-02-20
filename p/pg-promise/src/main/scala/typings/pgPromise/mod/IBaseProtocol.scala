@@ -7,6 +7,7 @@ import typings.pgPromise.anon.Mode
 import typings.pgPromise.anon.Reusable
 import typings.pgPromise.anon.Tag
 import typings.pgPromise.pgSubsetMod.IResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Base database protocol
 // API: http://vitaly-t.github.io/pg-promise/Database.html
 @js.native
-trait IBaseProtocol[Ext] extends js.Object {
+trait IBaseProtocol[Ext] extends StObject {
   
   // API: http://vitaly-t.github.io/pg-promise/Database.html#any
   def any[T](query: QueryParam): XPromise[js.Array[T]] = js.native

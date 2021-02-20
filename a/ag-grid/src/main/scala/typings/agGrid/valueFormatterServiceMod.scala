@@ -2,16 +2,16 @@ package typings.agGrid
 
 import typings.agGrid.columnMod.Column
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/valueFormatterService", JSImport.Namespace)
-@js.native
-object valueFormatterServiceMod extends js.Object {
+object valueFormatterServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/valueFormatterService", "ValueFormatterService")
   @js.native
-  class ValueFormatterService () extends js.Object {
+  class ValueFormatterService () extends StObject {
     
     var expressionService: js.Any = js.native
     

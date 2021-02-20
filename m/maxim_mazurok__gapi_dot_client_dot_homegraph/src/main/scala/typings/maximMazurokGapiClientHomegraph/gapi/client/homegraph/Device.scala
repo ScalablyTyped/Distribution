@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /** Attributes for the traits supported by the device. */
   var attributes: js.UndefOr[
@@ -70,104 +71,92 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device with TopLevel[js.Any]
-    ): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
     def setCustomData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device with TopLevel[js.Any]
-    ): Self = this.set("customData", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def setDeviceInfo(value: DeviceInfo): Self = this.set("deviceInfo", value.asInstanceOf[js.Any])
+    def setDeviceInfo(value: DeviceInfo): Self = StObject.set(x, "deviceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceInfo: Self = this.set("deviceInfo", js.undefined)
+    def setDeviceInfoUndefined: Self = StObject.set(x, "deviceInfo", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setName(value: DeviceNames): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: DeviceNames): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNotificationSupportedByAgent(value: Boolean): Self = this.set("notificationSupportedByAgent", value.asInstanceOf[js.Any])
+    def setNotificationSupportedByAgent(value: Boolean): Self = StObject.set(x, "notificationSupportedByAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationSupportedByAgent: Self = this.set("notificationSupportedByAgent", js.undefined)
+    def setNotificationSupportedByAgentUndefined: Self = StObject.set(x, "notificationSupportedByAgent", js.undefined)
     
     @scala.inline
-    def setOtherDeviceIdsVarargs(value: AgentOtherDeviceId*): Self = this.set("otherDeviceIds", js.Array(value :_*))
+    def setOtherDeviceIds(value: js.Array[AgentOtherDeviceId]): Self = StObject.set(x, "otherDeviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherDeviceIds(value: js.Array[AgentOtherDeviceId]): Self = this.set("otherDeviceIds", value.asInstanceOf[js.Any])
+    def setOtherDeviceIdsUndefined: Self = StObject.set(x, "otherDeviceIds", js.undefined)
     
     @scala.inline
-    def deleteOtherDeviceIds: Self = this.set("otherDeviceIds", js.undefined)
+    def setOtherDeviceIdsVarargs(value: AgentOtherDeviceId*): Self = StObject.set(x, "otherDeviceIds", js.Array(value :_*))
     
     @scala.inline
-    def setRoomHint(value: String): Self = this.set("roomHint", value.asInstanceOf[js.Any])
+    def setRoomHint(value: String): Self = StObject.set(x, "roomHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoomHint: Self = this.set("roomHint", js.undefined)
+    def setRoomHintUndefined: Self = StObject.set(x, "roomHint", js.undefined)
     
     @scala.inline
-    def setStructureHint(value: String): Self = this.set("structureHint", value.asInstanceOf[js.Any])
+    def setStructureHint(value: String): Self = StObject.set(x, "structureHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructureHint: Self = this.set("structureHint", js.undefined)
+    def setStructureHintUndefined: Self = StObject.set(x, "structureHint", js.undefined)
     
     @scala.inline
-    def setTraitsVarargs(value: String*): Self = this.set("traits", js.Array(value :_*))
+    def setTraits(value: js.Array[String]): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraits(value: js.Array[String]): Self = this.set("traits", value.asInstanceOf[js.Any])
+    def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
     
     @scala.inline
-    def deleteTraits: Self = this.set("traits", js.undefined)
+    def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setWillReportState(value: Boolean): Self = this.set("willReportState", value.asInstanceOf[js.Any])
+    def setWillReportState(value: Boolean): Self = StObject.set(x, "willReportState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWillReportState: Self = this.set("willReportState", js.undefined)
+    def setWillReportStateUndefined: Self = StObject.set(x, "willReportState", js.undefined)
   }
 }

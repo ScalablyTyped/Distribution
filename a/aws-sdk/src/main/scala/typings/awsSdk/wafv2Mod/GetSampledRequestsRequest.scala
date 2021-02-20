@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSampledRequestsRequest extends js.Object {
+trait GetSampledRequestsRequest extends StObject {
   
   /**
     * The number of requests that you want AWS WAF to return from among the first 5,000 requests that your AWS resource received during the time range. If your resource received fewer requests than the value of MaxItems, GetSampledRequests returns information about all of them. 
@@ -47,33 +48,21 @@ object GetSampledRequestsRequest {
   }
   
   @scala.inline
-  implicit class GetSampledRequestsRequestOps[Self <: GetSampledRequestsRequest] (val x: Self) extends AnyVal {
+  implicit class GetSampledRequestsRequestMutableBuilder[Self <: GetSampledRequestsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxItems(value: ListMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleMetricName(value: MetricName): Self = StObject.set(x, "RuleMetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: ListMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleMetricName(value: MetricName): Self = this.set("RuleMetricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeWindow(value: TimeWindow): Self = this.set("TimeWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebAclArn(value: ResourceArn): Self = this.set("WebAclArn", value.asInstanceOf[js.Any])
+    def setWebAclArn(value: ResourceArn): Self = StObject.set(x, "WebAclArn", value.asInstanceOf[js.Any])
   }
 }

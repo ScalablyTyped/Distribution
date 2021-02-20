@@ -1,12 +1,13 @@
 package typings.restartHooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@restart/hooks/cjs/useCallbackRef", JSImport.Namespace)
-@js.native
-object useCallbackRefMod extends js.Object {
+object useCallbackRefMod {
   
+  @JSImport("@restart/hooks/cjs/useCallbackRef", JSImport.Default)
+  @js.native
   def default[TValue](): js.Tuple2[TValue | Null, js.Function1[/* ref */ TValue | Null, Unit]] = js.native
 }

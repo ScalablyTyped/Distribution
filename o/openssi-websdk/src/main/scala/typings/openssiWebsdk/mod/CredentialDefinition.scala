@@ -1,11 +1,12 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialDefinition extends js.Object {
+trait CredentialDefinition extends StObject {
   
   var data: js.Any = js.native
   
@@ -32,33 +33,21 @@ object CredentialDefinition {
   }
   
   @scala.inline
-  implicit class CredentialDefinitionOps[Self <: CredentialDefinition] (val x: Self) extends AnyVal {
+  implicit class CredentialDefinitionMutableBuilder[Self <: CredentialDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: CredentialDefinitionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchema_id(value: CredentialSchemaID): Self = StObject.set(x, "schema_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setSchema_name(value: String): Self = StObject.set(x, "schema_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: CredentialDefinitionID): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema_id(value: CredentialSchemaID): Self = this.set("schema_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema_name(value: String): Self = this.set("schema_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

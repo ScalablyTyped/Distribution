@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWorkflowDataProperties extends js.Object {
+trait UpdateWorkflowDataProperties extends StObject {
   
   /**
     * An array of features to be updated.
@@ -44,45 +45,33 @@ object UpdateWorkflowDataProperties {
   }
   
   @scala.inline
-  implicit class UpdateWorkflowDataPropertiesOps[Self <: UpdateWorkflowDataProperties] (val x: Self) extends AnyVal {
+  implicit class UpdateWorkflowDataPropertiesMutableBuilder[Self <: UpdateWorkflowDataProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCandidates(value: js.Array[GraphicProperties]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCandidatesVarargs(value: GraphicProperties*): Self = StObject.set(x, "candidates", js.Array(value :_*))
     
     @scala.inline
-    def setCandidatesVarargs(value: GraphicProperties*): Self = this.set("candidates", js.Array(value :_*))
+    def setEditableItem(value: EditableItem): Self = StObject.set(x, "editableItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidates(value: js.Array[GraphicProperties]): Self = this.set("candidates", value.asInstanceOf[js.Any])
+    def setEditableItemUndefined: Self = StObject.set(x, "editableItem", js.undefined)
     
     @scala.inline
-    def deleteCandidates: Self = this.set("candidates", js.undefined)
+    def setEdits(value: EditsProperties): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditableItem(value: EditableItem): Self = this.set("editableItem", value.asInstanceOf[js.Any])
+    def setEditsUndefined: Self = StObject.set(x, "edits", js.undefined)
     
     @scala.inline
-    def deleteEditableItem: Self = this.set("editableItem", js.undefined)
+    def setViewModel(value: EditorViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdits(value: EditsProperties): Self = this.set("edits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdits: Self = this.set("edits", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: EditorViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

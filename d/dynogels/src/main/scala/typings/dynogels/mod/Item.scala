@@ -1,12 +1,13 @@
 package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   def destroy(): Unit = js.native
   def destroy(callback: DynogelsItemCallback): Unit = js.native

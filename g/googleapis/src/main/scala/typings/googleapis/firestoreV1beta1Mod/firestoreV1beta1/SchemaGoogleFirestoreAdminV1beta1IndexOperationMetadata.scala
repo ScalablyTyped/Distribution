@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of google.longrunning.Operation.
   */
 @js.native
-trait SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata extends js.Object {
+trait SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata extends StObject {
   
   /**
     * True if the [google.longrunning.Operation] was cancelled. If the
@@ -54,54 +55,42 @@ object SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadataOps[Self <: SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadataMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentProgress(value: SchemaGoogleFirestoreAdminV1beta1Progress): Self = StObject.set(x, "documentProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelled(value: Boolean): Self = this.set("cancelled", value.asInstanceOf[js.Any])
+    def setDocumentProgressUndefined: Self = StObject.set(x, "documentProgress", js.undefined)
     
     @scala.inline
-    def deleteCancelled: Self = this.set("cancelled", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentProgress(value: SchemaGoogleFirestoreAdminV1beta1Progress): Self = this.set("documentProgress", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDocumentProgress: Self = this.set("documentProgress", js.undefined)
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

@@ -2,20 +2,29 @@ package typings.junk
 
 import typings.junk.anon.Default
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("junk", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("junk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // TODO: Remove this for the next major release
-  var default: Default = js.native
+  @JSImport("junk", "default")
+  @js.native
+  def default: Default = js.native
+  @scala.inline
+  def default_=(x: Default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Returns `true` if `filename` matches a junk file.
   	*/
+  @JSImport("junk", "is")
+  @js.native
   def is(filename: String): Boolean = js.native
   
   /**
@@ -35,10 +44,14 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("junk", "not")
+  @js.native
   def not(filename: String): Boolean = js.native
   
   /**
   	Regex used for matching junk files.
   	*/
+  @JSImport("junk", "regex")
+  @js.native
   val regex: RegExp = js.native
 }

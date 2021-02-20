@@ -1,14 +1,15 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LogAppErrorResult extends js.Object
+sealed trait LogAppErrorResult extends StObject
 @JSGlobal("SP.Utilities.LogAppErrorResult")
 @js.native
-object LogAppErrorResult extends js.Object {
+object LogAppErrorResult extends StObject {
   
   @js.native
   sealed trait accessDenied extends LogAppErrorResult

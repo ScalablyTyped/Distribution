@@ -5,6 +5,7 @@ import typings.extjs.Ext.IElement
 import typings.extjs.Ext.IEventObject
 import typings.extjs.Ext.util.IObservable
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,120 +88,108 @@ object IDragTracker {
   }
   
   @scala.inline
-  implicit class IDragTrackerOps[Self <: IDragTracker] (val x: Self) extends AnyVal {
+  implicit class IDragTrackerMutableBuilder[Self <: IDragTracker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoStart(value: js.Any): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoStart(value: js.Any): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
     @scala.inline
-    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    def setDelegate(value: String): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrainTo(value: js.Any): Self = this.set("constrainTo", value.asInstanceOf[js.Any])
+    def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     
     @scala.inline
-    def deleteConstrainTo: Self = this.set("constrainTo", js.undefined)
+    def setDragTarget(value: HTMLElement): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegate(value: String): Self = this.set("delegate", value.asInstanceOf[js.Any])
+    def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
     
     @scala.inline
-    def deleteDelegate: Self = this.set("delegate", js.undefined)
+    def setGetDragTarget(value: () => IElement): Self = StObject.set(x, "getDragTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDragTarget(value: HTMLElement): Self = this.set("dragTarget", value.asInstanceOf[js.Any])
+    def setGetDragTargetUndefined: Self = StObject.set(x, "getDragTarget", js.undefined)
     
     @scala.inline
-    def deleteDragTarget: Self = this.set("dragTarget", js.undefined)
+    def setGetOffset(value: /* constrainMode */ js.UndefOr[String] => Array): Self = StObject.set(x, "getOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDragTarget(value: () => IElement): Self = this.set("getDragTarget", js.Any.fromFunction0(value))
+    def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
     
     @scala.inline
-    def deleteGetDragTarget: Self = this.set("getDragTarget", js.undefined)
+    def setInitEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "initEl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOffset(value: /* constrainMode */ js.UndefOr[String] => Array): Self = this.set("getOffset", js.Any.fromFunction1(value))
+    def setInitElUndefined: Self = StObject.set(x, "initEl", js.undefined)
     
     @scala.inline
-    def deleteGetOffset: Self = this.set("getOffset", js.undefined)
+    def setOnBeforeStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = this.set("initEl", js.Any.fromFunction1(value))
+    def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
     
     @scala.inline
-    def deleteInitEl: Self = this.set("initEl", js.undefined)
+    def setOnDrag(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBeforeStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = this.set("onBeforeStart", js.Any.fromFunction1(value))
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
     @scala.inline
-    def deleteOnBeforeStart: Self = this.set("onBeforeStart", js.undefined)
+    def setOnEnd(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDrag(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnd(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = this.set("onEnd", js.Any.fromFunction1(value))
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
     @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOverCls(value: String): Self = StObject.set(x, "overCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
+    def setOverClsUndefined: Self = StObject.set(x, "overCls", js.undefined)
     
     @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverCls(value: String): Self = this.set("overCls", value.asInstanceOf[js.Any])
+    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
     @scala.inline
-    def deleteOverCls: Self = this.set("overCls", js.undefined)
+    def setStopEvent(value: Boolean): Self = StObject.set(x, "stopEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDefault(value: Boolean): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
     
     @scala.inline
-    def deletePreventDefault: Self = this.set("preventDefault", js.undefined)
+    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopEvent(value: Boolean): Self = this.set("stopEvent", value.asInstanceOf[js.Any])
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     
     @scala.inline
-    def deleteStopEvent: Self = this.set("stopEvent", js.undefined)
+    def setTrackOver(value: Boolean): Self = StObject.set(x, "trackOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTolerance(value: Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
-    
-    @scala.inline
-    def setTrackOver(value: Boolean): Self = this.set("trackOver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackOver: Self = this.set("trackOver", js.undefined)
+    def setTrackOverUndefined: Self = StObject.set(x, "trackOver", js.undefined)
   }
 }

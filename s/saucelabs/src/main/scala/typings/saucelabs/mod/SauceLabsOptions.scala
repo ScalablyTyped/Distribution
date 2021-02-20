@@ -6,12 +6,13 @@ import typings.saucelabs.saucelabsStrings.`us-west-1`
 import typings.saucelabs.saucelabsStrings.eu
 import typings.saucelabs.saucelabsStrings.staging
 import typings.saucelabs.saucelabsStrings.us
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SauceLabsOptions extends js.Object {
+trait SauceLabsOptions extends StObject {
   
   /**
     * If you want to set request headers, as example {'User-Agent': 'node-saucelabs'}
@@ -56,48 +57,36 @@ object SauceLabsOptions {
   }
   
   @scala.inline
-  implicit class SauceLabsOptionsOps[Self <: SauceLabsOptions] (val x: Self) extends AnyVal {
+  implicit class SauceLabsOptionsMutableBuilder[Self <: SauceLabsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     
     @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def setHeadless(value: Boolean): Self = this.set("headless", value.asInstanceOf[js.Any])
+    def setRegion(value: us | eu | `us-west-1` | `us-east-1` | `eu-central-1` | staging): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeadless: Self = this.set("headless", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def setProxy(value: String): Self = this.set("proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: us | eu | `us-west-1` | `us-east-1` | `eu-central-1` | staging): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

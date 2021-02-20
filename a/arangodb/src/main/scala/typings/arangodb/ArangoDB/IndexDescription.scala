@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexDescription[T] extends js.Object {
+trait IndexDescription[T] extends StObject {
   
   var deduplicate: js.UndefOr[Boolean] = js.native
   
@@ -33,63 +34,51 @@ object IndexDescription {
   }
   
   @scala.inline
-  implicit class IndexDescriptionOps[Self <: IndexDescription[_], T] (val x: Self with IndexDescription[T]) extends AnyVal {
+  implicit class IndexDescriptionMutableBuilder[Self <: IndexDescription[_], T] (val x: Self with IndexDescription[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeduplicate(value: Boolean): Self = StObject.set(x, "deduplicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeduplicateUndefined: Self = StObject.set(x, "deduplicate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpireAfter(value: Double): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: (/* keyof T */ String)*): Self = this.set("fields", js.Array(value :_*))
+    def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[/* keyof T */ String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: IndexType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setDeduplicate(value: Boolean): Self = this.set("deduplicate", value.asInstanceOf[js.Any])
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeduplicate: Self = this.set("deduplicate", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def setExpireAfter(value: Double): Self = this.set("expireAfter", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpireAfter: Self = this.set("expireAfter", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setType(value: IndexType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSparse(value: Boolean): Self = this.set("sparse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSparse: Self = this.set("sparse", js.undefined)
-    
-    @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

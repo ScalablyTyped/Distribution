@@ -1,21 +1,21 @@
 package typings.typedUndo
 
 import typings.typedUndo.undoableEditMod.UndoableEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-undo/dist/UndoManager", JSImport.Namespace)
-@js.native
-object undoManagerMod extends js.Object {
+object undoManagerMod {
   
+  @JSImport("typed-undo/dist/UndoManager", "UndoManager")
   @js.native
   /**
     * Create a new UndoManager
     *
     * @param limit The maximum amount of editables to remember
     */
-  class UndoManager () extends js.Object {
+  class UndoManager () extends StObject {
     def this(limit: Double) = this()
     
     /**

@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Language List Response
   */
 @js.native
-trait SchemaLanguagesListResponse extends js.Object {
+trait SchemaLanguagesListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -30,33 +31,21 @@ object SchemaLanguagesListResponse {
   }
   
   @scala.inline
-  implicit class SchemaLanguagesListResponseOps[Self <: SchemaLanguagesListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaLanguagesListResponseMutableBuilder[Self <: SchemaLanguagesListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguages(value: js.Array[SchemaLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setLanguagesVarargs(value: SchemaLanguage*): Self = this.set("languages", js.Array(value :_*))
-    
-    @scala.inline
-    def setLanguages(value: js.Array[SchemaLanguage]): Self = this.set("languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguages: Self = this.set("languages", js.undefined)
+    def setLanguagesVarargs(value: SchemaLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
   }
 }

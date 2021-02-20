@@ -1,11 +1,12 @@
 package typings.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchOptions extends js.Object {
+trait TouchOptions extends StObject {
   
   /**
     *     Ensures this operation is persisted to this many nodes.
@@ -26,30 +27,18 @@ object TouchOptions {
   }
   
   @scala.inline
-  implicit class TouchOptionsOps[Self <: TouchOptions] (val x: Self) extends AnyVal {
+  implicit class TouchOptionsMutableBuilder[Self <: TouchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist_to(value: Double): Self = this.set("persist_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersist_to: Self = this.set("persist_to", js.undefined)
-    
-    @scala.inline
-    def setReplicate_to(value: Double): Self = this.set("replicate_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicate_to: Self = this.set("replicate_to", js.undefined)
+    def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
   }
 }

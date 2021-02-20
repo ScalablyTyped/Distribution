@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.bilinear
 import typings.arcgisJsApi.arcgisJsApiStrings.cubic
 import typings.arcgisJsApi.arcgisJsApiStrings.majority
 import typings.arcgisJsApi.arcgisJsApiStrings.nearest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,54 +68,42 @@ object ImageryTileLayerProperties {
   }
   
   @scala.inline
-  implicit class ImageryTileLayerPropertiesOps[Self <: ImageryTileLayerProperties] (val x: Self) extends AnyVal {
+  implicit class ImageryTileLayerPropertiesMutableBuilder[Self <: ImageryTileLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: nearest | bilinear | cubic | majority): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
+    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     @scala.inline
-    def deleteLegendEnabled: Self = this.set("legendEnabled", js.undefined)
+    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
     @scala.inline
-    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
+    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
-    
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileInfo: Self = this.set("tileInfo", js.undefined)
+    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.baiduApp.baiduAppStrings.album
   - typings.baiduApp.baiduAppStrings.camera
 */
-trait VideoSourceType extends js.Object
+trait VideoSourceType extends StObject
 object VideoSourceType {
   
   @scala.inline

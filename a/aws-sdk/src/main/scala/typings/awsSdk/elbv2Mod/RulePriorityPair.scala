@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulePriorityPair extends js.Object {
+trait RulePriorityPair extends StObject {
   
   /**
     * The rule priority.
@@ -26,30 +27,18 @@ object RulePriorityPair {
   }
   
   @scala.inline
-  implicit class RulePriorityPairOps[Self <: RulePriorityPair] (val x: Self) extends AnyVal {
+  implicit class RulePriorityPairMutableBuilder[Self <: RulePriorityPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: RulePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
-    
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = this.set("RuleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleArn: Self = this.set("RuleArn", js.undefined)
+    def setRuleArnUndefined: Self = StObject.set(x, "RuleArn", js.undefined)
   }
 }

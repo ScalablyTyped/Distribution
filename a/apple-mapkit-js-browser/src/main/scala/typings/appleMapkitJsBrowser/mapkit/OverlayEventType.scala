@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.select
   - typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.deselect
 */
-trait OverlayEventType extends js.Object
+trait OverlayEventType extends StObject
 object OverlayEventType {
   
   @scala.inline

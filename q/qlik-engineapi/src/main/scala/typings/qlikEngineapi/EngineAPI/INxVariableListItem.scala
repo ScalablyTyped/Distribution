@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxVariableListItem...
   */
 @js.native
-trait INxVariableListItem extends js.Object {
+trait INxVariableListItem extends StObject {
   
   /**
     * Data.
@@ -51,7 +52,7 @@ trait INxVariableListItem extends js.Object {
     */
   var qIsReserved: js.UndefOr[Boolean] = js.native
   
-   // ? nicht dokumentiert
+  // ? nicht dokumentiert
   /**
     * If set to true, it means that the variable was defined via script.
     */
@@ -84,54 +85,42 @@ object INxVariableListItem {
   }
   
   @scala.inline
-  implicit class INxVariableListItemOps[Self <: INxVariableListItem] (val x: Self) extends AnyVal {
+  implicit class INxVariableListItemMutableBuilder[Self <: INxVariableListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDefinition(value: String): Self = StObject.set(x, "qDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQData(value: js.Any): Self = this.set("qData", value.asInstanceOf[js.Any])
+    def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDefinition(value: String): Self = this.set("qDefinition", value.asInstanceOf[js.Any])
+    def setQIsConfig(value: Boolean): Self = StObject.set(x, "qIsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDescription(value: String): Self = this.set("qDescription", value.asInstanceOf[js.Any])
+    def setQIsConfigUndefined: Self = StObject.set(x, "qIsConfig", js.undefined)
     
     @scala.inline
-    def setQInfo(value: INxInfo): Self = this.set("qInfo", value.asInstanceOf[js.Any])
+    def setQIsReserved(value: Boolean): Self = StObject.set(x, "qIsReserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsScriptCreated(value: Boolean): Self = this.set("qIsScriptCreated", value.asInstanceOf[js.Any])
+    def setQIsReservedUndefined: Self = StObject.set(x, "qIsReserved", js.undefined)
     
     @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQIsScriptCreated(value: Boolean): Self = StObject.set(x, "qIsScriptCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsConfig(value: Boolean): Self = this.set("qIsConfig", value.asInstanceOf[js.Any])
+    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQIsConfig: Self = this.set("qIsConfig", js.undefined)
+    def setQMetaUndefined: Self = StObject.set(x, "qMeta", js.undefined)
     
     @scala.inline
-    def setQIsReserved(value: Boolean): Self = this.set("qIsReserved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQIsReserved: Self = this.set("qIsReserved", js.undefined)
-    
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = this.set("qMeta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQMeta: Self = this.set("qMeta", js.undefined)
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

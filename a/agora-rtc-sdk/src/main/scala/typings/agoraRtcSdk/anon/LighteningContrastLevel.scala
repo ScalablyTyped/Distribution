@@ -1,11 +1,12 @@
 package typings.agoraRtcSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LighteningContrastLevel extends js.Object {
+trait LighteningContrastLevel extends StObject {
   
   /** The contrast level, used with the `lighteningLevel` parameter.
     *
@@ -42,42 +43,30 @@ object LighteningContrastLevel {
   }
   
   @scala.inline
-  implicit class LighteningContrastLevelOps[Self <: LighteningContrastLevel] (val x: Self) extends AnyVal {
+  implicit class LighteningContrastLevelMutableBuilder[Self <: LighteningContrastLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLighteningContrastLevel(value: Double): Self = StObject.set(x, "lighteningContrastLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLighteningContrastLevelUndefined: Self = StObject.set(x, "lighteningContrastLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLighteningLevel(value: Double): Self = StObject.set(x, "lighteningLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighteningContrastLevel(value: Double): Self = this.set("lighteningContrastLevel", value.asInstanceOf[js.Any])
+    def setLighteningLevelUndefined: Self = StObject.set(x, "lighteningLevel", js.undefined)
     
     @scala.inline
-    def deleteLighteningContrastLevel: Self = this.set("lighteningContrastLevel", js.undefined)
+    def setRednessLevel(value: Double): Self = StObject.set(x, "rednessLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighteningLevel(value: Double): Self = this.set("lighteningLevel", value.asInstanceOf[js.Any])
+    def setRednessLevelUndefined: Self = StObject.set(x, "rednessLevel", js.undefined)
     
     @scala.inline
-    def deleteLighteningLevel: Self = this.set("lighteningLevel", js.undefined)
+    def setSmoothnessLevel(value: Double): Self = StObject.set(x, "smoothnessLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRednessLevel(value: Double): Self = this.set("rednessLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRednessLevel: Self = this.set("rednessLevel", js.undefined)
-    
-    @scala.inline
-    def setSmoothnessLevel(value: Double): Self = this.set("smoothnessLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothnessLevel: Self = this.set("smoothnessLevel", js.undefined)
+    def setSmoothnessLevelUndefined: Self = StObject.set(x, "smoothnessLevel", js.undefined)
   }
 }

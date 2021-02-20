@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityUserAssignedIdentitiesValue extends js.Object {
+trait IdentityUserAssignedIdentitiesValue extends StObject {
   
   /**
     * The client id of user assigned identity.
@@ -26,30 +27,18 @@ object IdentityUserAssignedIdentitiesValue {
   }
   
   @scala.inline
-  implicit class IdentityUserAssignedIdentitiesValueOps[Self <: IdentityUserAssignedIdentitiesValue] (val x: Self) extends AnyVal {
+  implicit class IdentityUserAssignedIdentitiesValueMutableBuilder[Self <: IdentityUserAssignedIdentitiesValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
-    
-    @scala.inline
-    def setPrincipalId(value: String): Self = this.set("principalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
   }
 }

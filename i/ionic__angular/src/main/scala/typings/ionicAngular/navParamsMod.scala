@@ -1,16 +1,16 @@
 package typings.ionicAngular
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/directives/navigation/nav-params", JSImport.Namespace)
-@js.native
-object navParamsMod extends js.Object {
+object navParamsMod {
   
+  @JSImport("@ionic/angular/directives/navigation/nav-params", "NavParams")
   @js.native
-  class NavParams () extends js.Object {
+  class NavParams () extends StObject {
     def this(data: StringDictionary[js.Any]) = this()
     
     var data: StringDictionary[js.Any] = js.native

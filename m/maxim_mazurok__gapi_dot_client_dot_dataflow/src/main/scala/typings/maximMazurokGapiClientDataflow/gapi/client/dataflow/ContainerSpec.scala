@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerSpec extends js.Object {
+trait ContainerSpec extends StObject {
   
   /** Default runtime environment for the job. */
   var defaultEnvironment: js.UndefOr[FlexTemplateRuntimeEnvironment] = js.native
@@ -28,42 +29,30 @@ object ContainerSpec {
   }
   
   @scala.inline
-  implicit class ContainerSpecOps[Self <: ContainerSpec] (val x: Self) extends AnyVal {
+  implicit class ContainerSpecMutableBuilder[Self <: ContainerSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "defaultEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultEnvironmentUndefined: Self = StObject.set(x, "defaultEnvironment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEnvironment(value: FlexTemplateRuntimeEnvironment): Self = this.set("defaultEnvironment", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteDefaultEnvironment: Self = this.set("defaultEnvironment", js.undefined)
+    def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: TemplateMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setSdkInfo(value: SDKInfo): Self = this.set("sdkInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdkInfo: Self = this.set("sdkInfo", js.undefined)
+    def setSdkInfoUndefined: Self = StObject.set(x, "sdkInfo", js.undefined)
   }
 }

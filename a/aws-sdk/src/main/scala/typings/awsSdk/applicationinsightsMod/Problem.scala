@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Problem extends js.Object {
+trait Problem extends StObject {
   
   /**
     * The resource affected by the problem.
@@ -66,78 +67,66 @@ object Problem {
   }
   
   @scala.inline
-  implicit class ProblemOps[Self <: Problem] (val x: Self) extends AnyVal {
+  implicit class ProblemMutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffectedResource(value: AffectedResource): Self = StObject.set(x, "AffectedResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffectedResourceUndefined: Self = StObject.set(x, "AffectedResource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectedResource(value: AffectedResource): Self = this.set("AffectedResource", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteAffectedResource: Self = this.set("AffectedResource", js.undefined)
+    def setFeedback(value: Feedback): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: EndTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setId(value: ProblemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedback(value: Feedback): Self = this.set("Feedback", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteFeedback: Self = this.set("Feedback", js.undefined)
+    def setInsights(value: Insights): Self = StObject.set(x, "Insights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ProblemId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInsightsUndefined: Self = StObject.set(x, "Insights", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsights(value: Insights): Self = this.set("Insights", value.asInstanceOf[js.Any])
+    def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
     
     @scala.inline
-    def deleteInsights: Self = this.set("Insights", js.undefined)
+    def setSeverityLevel(value: SeverityLevel): Self = StObject.set(x, "SeverityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    def setSeverityLevelUndefined: Self = StObject.set(x, "SeverityLevel", js.undefined)
     
     @scala.inline
-    def deleteResourceGroupName: Self = this.set("ResourceGroupName", js.undefined)
+    def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverityLevel(value: SeverityLevel): Self = this.set("SeverityLevel", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteSeverityLevel: Self = this.set("SeverityLevel", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: StartTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setTitle(value: Title): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Title): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

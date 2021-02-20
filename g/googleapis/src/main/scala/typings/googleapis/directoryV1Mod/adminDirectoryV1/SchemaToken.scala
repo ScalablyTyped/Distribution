@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for token resource in Directory API.
   */
 @js.native
-trait SchemaToken extends js.Object {
+trait SchemaToken extends StObject {
   
   /**
     * Whether the application is registered with Google. The value is true if
@@ -61,69 +62,57 @@ object SchemaToken {
   }
   
   @scala.inline
-  implicit class SchemaTokenOps[Self <: SchemaToken] (val x: Self) extends AnyVal {
+  implicit class SchemaTokenMutableBuilder[Self <: SchemaToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnonymous(value: Boolean): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayText(value: String): Self = this.set("displayText", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDisplayText: Self = this.set("displayText", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setNativeApp(value: Boolean): Self = StObject.set(x, "nativeApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNativeAppUndefined: Self = StObject.set(x, "nativeApp", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeApp(value: Boolean): Self = this.set("nativeApp", value.asInstanceOf[js.Any])
+    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
     @scala.inline
-    def deleteNativeApp: Self = this.set("nativeApp", js.undefined)
+    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
     @scala.inline
-    def setScopesVarargs(value: String*): Self = this.set("scopes", js.Array(value :_*))
+    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopes(value: js.Array[String]): Self = this.set("scopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopes: Self = this.set("scopes", js.undefined)
-    
-    @scala.inline
-    def setUserKey(value: String): Self = this.set("userKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserKey: Self = this.set("userKey", js.undefined)
+    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
   }
 }

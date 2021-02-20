@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
   */
 @js.native
-trait PlusSpeechSpeechRecognizeOptions extends js.Object {
+trait PlusSpeechSpeechRecognizeOptions extends StObject {
   
   /**
     * 语音识别是否采用持续模式
@@ -107,72 +108,60 @@ object PlusSpeechSpeechRecognizeOptions {
   }
   
   @scala.inline
-  implicit class PlusSpeechSpeechRecognizeOptionsOps[Self <: PlusSpeechSpeechRecognizeOptions] (val x: Self) extends AnyVal {
+  implicit class PlusSpeechSpeechRecognizeOptionsMutableBuilder[Self <: PlusSpeechSpeechRecognizeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinue(value: Boolean): Self = this.set("continue", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
     @scala.inline
-    def deleteContinue: Self = this.set("continue", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("engine", js.undefined)
+    def setNbest(value: Double): Self = StObject.set(x, "nbest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setNbestUndefined: Self = StObject.set(x, "nbest", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setOnend(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNbest(value: Double): Self = this.set("nbest", value.asInstanceOf[js.Any])
+    def setOnendUndefined: Self = StObject.set(x, "onend", js.undefined)
     
     @scala.inline
-    def deleteNbest: Self = this.set("nbest", js.undefined)
+    def setOnstart(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnend(value: /* result */ js.Any => Unit): Self = this.set("onend", js.Any.fromFunction1(value))
+    def setOnstartUndefined: Self = StObject.set(x, "onstart", js.undefined)
     
     @scala.inline
-    def deleteOnend: Self = this.set("onend", js.undefined)
+    def setPunctuation(value: Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnstart(value: /* result */ js.Any => Unit): Self = this.set("onstart", js.Any.fromFunction1(value))
+    def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
     
     @scala.inline
-    def deleteOnstart: Self = this.set("onstart", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPunctuation(value: Boolean): Self = this.set("punctuation", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deletePunctuation: Self = this.set("punctuation", js.undefined)
+    def setUserInterface(value: Boolean): Self = StObject.set(x, "userInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUserInterface(value: Boolean): Self = this.set("userInterface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInterface: Self = this.set("userInterface", js.undefined)
+    def setUserInterfaceUndefined: Self = StObject.set(x, "userInterface", js.undefined)
   }
 }

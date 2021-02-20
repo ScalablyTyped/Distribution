@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudFrontOriginAccessIdentitySummary extends js.Object {
+trait CloudFrontOriginAccessIdentitySummary extends StObject {
   
   /**
     * The comment for this origin access identity, as originally specified when created.
@@ -31,27 +32,15 @@ object CloudFrontOriginAccessIdentitySummary {
   }
   
   @scala.inline
-  implicit class CloudFrontOriginAccessIdentitySummaryOps[Self <: CloudFrontOriginAccessIdentitySummary] (val x: Self) extends AnyVal {
+  implicit class CloudFrontOriginAccessIdentitySummaryMutableBuilder[Self <: CloudFrontOriginAccessIdentitySummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3CanonicalUserId(value: String): Self = this.set("S3CanonicalUserId", value.asInstanceOf[js.Any])
+    def setS3CanonicalUserId(value: String): Self = StObject.set(x, "S3CanonicalUserId", value.asInstanceOf[js.Any])
   }
 }

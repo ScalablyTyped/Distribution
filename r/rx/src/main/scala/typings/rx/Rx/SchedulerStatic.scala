@@ -1,17 +1,18 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerStatic extends js.Object {
+trait SchedulerStatic extends StObject {
+  
+  var default: IScheduler = js.native
   
   var async: IScheduler = js.native
   
   var currentThread: ICurrentThreadScheduler = js.native
-  
-  var default: IScheduler = js.native
   
   var immediate: IScheduler = js.native
   
@@ -45,39 +46,27 @@ object SchedulerStatic {
   }
   
   @scala.inline
-  implicit class SchedulerStaticOps[Self <: SchedulerStatic] (val x: Self) extends AnyVal {
+  implicit class SchedulerStaticMutableBuilder[Self <: SchedulerStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: IScheduler): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentThread(value: ICurrentThreadScheduler): Self = StObject.set(x, "currentThread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: IScheduler): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: IScheduler): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setImmediate(value: IScheduler): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentThread(value: ICurrentThreadScheduler): Self = this.set("currentThread", value.asInstanceOf[js.Any])
+    def setIsScheduler(value: js.Any => Boolean): Self = StObject.set(x, "isScheduler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefault(value: IScheduler): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setNormalize(value: Double => Double): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImmediate(value: IScheduler): Self = this.set("immediate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsScheduler(value: js.Any => Boolean): Self = this.set("isScheduler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNormalize(value: Double => Double): Self = this.set("normalize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNow(value: () => Double): Self = this.set("now", js.Any.fromFunction0(value))
+    def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
   }
 }

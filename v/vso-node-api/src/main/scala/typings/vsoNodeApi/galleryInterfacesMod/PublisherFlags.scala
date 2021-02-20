@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PublisherFlags extends js.Object
+sealed trait PublisherFlags extends StObject
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "PublisherFlags")
 @js.native
-object PublisherFlags extends js.Object {
+object PublisherFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PublisherFlags with Double] = js.native
@@ -19,38 +19,33 @@ object PublisherFlags extends js.Object {
     */
   @js.native
   sealed trait Disabled extends PublisherFlags
-  /* 1 */ @js.native
-  object Disabled extends TopLevel[Disabled with Double]
+  /* 1 */ val Disabled: typings.vsoNodeApi.galleryInterfacesMod.PublisherFlags.Disabled with Double = js.native
   
   /**
     * No flags exist for this publisher.
     */
   @js.native
   sealed trait None extends PublisherFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.galleryInterfacesMod.PublisherFlags.None with Double = js.native
   
   /**
     * This is the set of flags that can't be supplied by the developer and is managed by the service itself.
     */
   @js.native
   sealed trait ServiceFlags extends PublisherFlags
-  /* 3 */ @js.native
-  object ServiceFlags extends TopLevel[ServiceFlags with Double]
+  /* 3 */ val ServiceFlags: typings.vsoNodeApi.galleryInterfacesMod.PublisherFlags.ServiceFlags with Double = js.native
   
   /**
     * This should never be returned, it is used to represent a publisher who's flags havent changed during update calls.
     */
   @js.native
   sealed trait UnChanged extends PublisherFlags
-  /* 1073741824 */ @js.native
-  object UnChanged extends TopLevel[UnChanged with Double]
+  /* 1073741824 */ val UnChanged: typings.vsoNodeApi.galleryInterfacesMod.PublisherFlags.UnChanged with Double = js.native
   
   /**
     * A verified publisher is one that Microsoft has done some review of and ensured the publisher meets a set of requirements. The requirements to become a verified publisher are not listed here.  They can be found in public documentation (TBD).
     */
   @js.native
   sealed trait Verified extends PublisherFlags
-  /* 2 */ @js.native
-  object Verified extends TopLevel[Verified with Double]
+  /* 2 */ val Verified: typings.vsoNodeApi.galleryInterfacesMod.PublisherFlags.Verified with Double = js.native
 }

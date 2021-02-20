@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDrive.anon.DriveId
 import typings.maximMazurokGapiClientDrive.anon.Fields
 import typings.maximMazurokGapiClientDrive.anon.IncludeCorpusRemovals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangesResource extends js.Object {
+trait ChangesResource extends StObject {
   
   /** Gets the starting pageToken for listing future changes. */
   def getStartPageToken(): Request[StartPageToken] = js.native

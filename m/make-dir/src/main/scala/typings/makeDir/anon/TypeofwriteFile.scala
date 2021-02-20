@@ -4,12 +4,13 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteFileOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofwriteFile extends js.Object {
+trait TypeofwriteFile extends StObject {
   
   def apply(path: Double, data: String, callback: NoParamCallback): Unit = js.native
   def apply(path: Double, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native

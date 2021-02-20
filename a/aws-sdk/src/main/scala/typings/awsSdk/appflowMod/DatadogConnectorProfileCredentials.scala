@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatadogConnectorProfileCredentials extends js.Object {
+trait DatadogConnectorProfileCredentials extends StObject {
   
   /**
     *  A unique alphanumeric identifier used to authenticate a user, developer, or calling program to your API. 
@@ -26,24 +27,12 @@ object DatadogConnectorProfileCredentials {
   }
   
   @scala.inline
-  implicit class DatadogConnectorProfileCredentialsOps[Self <: DatadogConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  implicit class DatadogConnectorProfileCredentialsMutableBuilder[Self <: DatadogConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApiKey(value: ApiKey): Self = this.set("apiKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplicationKey(value: ApplicationKey): Self = this.set("applicationKey", value.asInstanceOf[js.Any])
+    def setApplicationKey(value: ApplicationKey): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NxStateCounts extends js.Object {
+trait NxStateCounts extends StObject {
   
   var qAlternative: Double = js.native
   
@@ -41,42 +42,30 @@ object NxStateCounts {
   }
   
   @scala.inline
-  implicit class NxStateCountsOps[Self <: NxStateCounts] (val x: Self) extends AnyVal {
+  implicit class NxStateCountsMutableBuilder[Self <: NxStateCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAlternative(value: Double): Self = StObject.set(x, "qAlternative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDeselected(value: Double): Self = StObject.set(x, "qDeselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQExcluded(value: Double): Self = StObject.set(x, "qExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAlternative(value: Double): Self = this.set("qAlternative", value.asInstanceOf[js.Any])
+    def setQLocked(value: Double): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDeselected(value: Double): Self = this.set("qDeselected", value.asInstanceOf[js.Any])
+    def setQLockedExcluded(value: Double): Self = StObject.set(x, "qLockedExcluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExcluded(value: Double): Self = this.set("qExcluded", value.asInstanceOf[js.Any])
+    def setQOption(value: Double): Self = StObject.set(x, "qOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLocked(value: Double): Self = this.set("qLocked", value.asInstanceOf[js.Any])
+    def setQSelected(value: Double): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLockedExcluded(value: Double): Self = this.set("qLockedExcluded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQOption(value: Double): Self = this.set("qOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSelected(value: Double): Self = this.set("qSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSelectedExcluded(value: Double): Self = this.set("qSelectedExcluded", value.asInstanceOf[js.Any])
+    def setQSelectedExcluded(value: Double): Self = StObject.set(x, "qSelectedExcluded", value.asInstanceOf[js.Any])
   }
 }

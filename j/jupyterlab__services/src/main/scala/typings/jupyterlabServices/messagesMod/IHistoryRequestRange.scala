@@ -1,12 +1,13 @@
 package typings.jupyterlabServices.messagesMod
 
 import typings.jupyterlabServices.jupyterlabServicesStrings.range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHistoryRequestRange extends js.Object {
+trait IHistoryRequestRange extends StObject {
   
   var hist_access_type: range = js.native
   
@@ -36,36 +37,24 @@ object IHistoryRequestRange {
   }
   
   @scala.inline
-  implicit class IHistoryRequestRangeOps[Self <: IHistoryRequestRange] (val x: Self) extends AnyVal {
+  implicit class IHistoryRequestRangeMutableBuilder[Self <: IHistoryRequestRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHist_access_type(value: range): Self = StObject.set(x, "hist_access_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutput(value: Boolean): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHist_access_type(value: range): Self = this.set("hist_access_type", value.asInstanceOf[js.Any])
+    def setSession(value: Double): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: Boolean): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: Double): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: Double): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

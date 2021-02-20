@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,27 +43,15 @@ object XProgressHandler {
   }
   
   @scala.inline
-  implicit class XProgressHandlerOps[Self <: XProgressHandler] (val x: Self) extends AnyVal {
+  implicit class XProgressHandlerMutableBuilder[Self <: XProgressHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPop(value: () => Unit): Self = this.set("pop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPush(value: js.Any => Unit): Self = this.set("push", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: js.Any => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

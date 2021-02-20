@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Security.Authentication.Web.WebAuthenticationResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information to an app that was launched after being suspended for a web authentication broker operation. */
 @js.native
-trait WebAuthenticationBrokerContinuationEventArgs extends js.Object {
+trait WebAuthenticationBrokerContinuationEventArgs extends StObject {
   
   /** Gets a set of values populated by the app before a web authentication broker operation that deactivates the app in order to provide context when the app is activated. */
   var continuationData: ValueSet = js.native
@@ -40,33 +41,21 @@ object WebAuthenticationBrokerContinuationEventArgs {
   }
   
   @scala.inline
-  implicit class WebAuthenticationBrokerContinuationEventArgsOps[Self <: WebAuthenticationBrokerContinuationEventArgs] (val x: Self) extends AnyVal {
+  implicit class WebAuthenticationBrokerContinuationEventArgsMutableBuilder[Self <: WebAuthenticationBrokerContinuationEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationData(value: ValueSet): Self = this.set("continuationData", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebAuthenticationResult(value: WebAuthenticationResult): Self = this.set("webAuthenticationResult", value.asInstanceOf[js.Any])
+    def setWebAuthenticationResult(value: WebAuthenticationResult): Self = StObject.set(x, "webAuthenticationResult", value.asInstanceOf[js.Any])
   }
 }

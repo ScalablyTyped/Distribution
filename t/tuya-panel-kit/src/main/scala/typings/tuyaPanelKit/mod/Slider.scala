@@ -2,20 +2,38 @@ package typings.tuyaPanelKit.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ElementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "Slider")
 @js.native
-class Slider ()
-  extends Component[SliderProps, js.Object, js.Any]
+class Slider protected ()
+  extends Component[SliderProps, js.Object, js.Any] {
+  def this(props: SliderProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: SliderProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("tuya-panel-kit", "Slider")
-@js.native
-object Slider extends js.Object {
+object Slider {
   
-  var Horizontal: ElementType[SliderProps] = js.native
+  @JSImport("tuya-panel-kit", "Slider")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Vertical: ElementType[SliderProps] = js.native
+  @JSImport("tuya-panel-kit", "Slider.Horizontal")
+  @js.native
+  def Horizontal: ElementType[SliderProps] = js.native
+  @scala.inline
+  def Horizontal_=(x: ElementType[SliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  
+  @JSImport("tuya-panel-kit", "Slider.Vertical")
+  @js.native
+  def Vertical: ElementType[SliderProps] = js.native
+  @scala.inline
+  def Vertical_=(x: ElementType[SliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

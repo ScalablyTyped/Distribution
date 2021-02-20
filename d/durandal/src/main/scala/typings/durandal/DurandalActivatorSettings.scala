@@ -1,11 +1,12 @@
 package typings.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalActivatorSettings extends js.Object {
+trait DurandalActivatorSettings extends StObject {
   
   /**
     * Lower-cased words which represent a truthy value.
@@ -66,39 +67,27 @@ object DurandalActivatorSettings {
   }
   
   @scala.inline
-  implicit class DurandalActivatorSettingsOps[Self <: DurandalActivatorSettings] (val x: Self) extends AnyVal {
+  implicit class DurandalActivatorSettingsMutableBuilder[Self <: DurandalActivatorSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffirmations(value: js.Array[String]): Self = StObject.set(x, "affirmations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffirmationsVarargs(value: String*): Self = StObject.set(x, "affirmations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterDeactivate(value: (js.Any, Boolean, js.Function) => Unit): Self = StObject.set(x, "afterDeactivate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAffirmationsVarargs(value: String*): Self = this.set("affirmations", js.Array(value :_*))
+    def setAreSameItem(value: (js.Any, js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "areSameItem", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAffirmations(value: js.Array[String]): Self = this.set("affirmations", value.asInstanceOf[js.Any])
+    def setBeforeActivate(value: js.Any => js.Any): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterDeactivate(value: (js.Any, Boolean, js.Function) => Unit): Self = this.set("afterDeactivate", js.Any.fromFunction3(value))
+    def setCloseOnDeactivate(value: Boolean): Self = StObject.set(x, "closeOnDeactivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreSameItem(value: (js.Any, js.Any, js.Any, js.Any) => Boolean): Self = this.set("areSameItem", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setBeforeActivate(value: js.Any => js.Any): Self = this.set("beforeActivate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCloseOnDeactivate(value: Boolean): Self = this.set("closeOnDeactivate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterpretResponse(value: js.Any => Boolean): Self = this.set("interpretResponse", js.Any.fromFunction1(value))
+    def setInterpretResponse(value: js.Any => Boolean): Self = StObject.set(x, "interpretResponse", js.Any.fromFunction1(value))
   }
 }

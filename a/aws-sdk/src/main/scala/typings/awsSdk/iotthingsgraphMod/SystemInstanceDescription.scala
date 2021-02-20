@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemInstanceDescription extends js.Object {
+trait SystemInstanceDescription extends StObject {
   
   var definition: js.UndefOr[DefinitionDocument] = js.native
   
@@ -45,63 +46,51 @@ object SystemInstanceDescription {
   }
   
   @scala.inline
-  implicit class SystemInstanceDescriptionOps[Self <: SystemInstanceDescription] (val x: Self) extends AnyVal {
+  implicit class SystemInstanceDescriptionMutableBuilder[Self <: SystemInstanceDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowActionsRoleArn(value: RoleArn): Self = StObject.set(x, "flowActionsRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setFlowActionsRoleArnUndefined: Self = StObject.set(x, "flowActionsRoleArn", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "metricsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowActionsRoleArn(value: RoleArn): Self = this.set("flowActionsRoleArn", value.asInstanceOf[js.Any])
+    def setMetricsConfigurationUndefined: Self = StObject.set(x, "metricsConfiguration", js.undefined)
     
     @scala.inline
-    def deleteFlowActionsRoleArn: Self = this.set("flowActionsRoleArn", js.undefined)
+    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricsConfiguration(value: MetricsConfiguration): Self = this.set("metricsConfiguration", value.asInstanceOf[js.Any])
+    def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     
     @scala.inline
-    def deleteMetricsConfiguration: Self = this.set("metricsConfiguration", js.undefined)
+    def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = this.set("s3BucketName", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     @scala.inline
-    def deleteS3BucketName: Self = this.set("s3BucketName", js.undefined)
+    def setValidatedDependencyRevisions(value: DependencyRevisions): Self = StObject.set(x, "validatedDependencyRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: SystemInstanceSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setValidatedDependencyRevisionsUndefined: Self = StObject.set(x, "validatedDependencyRevisions", js.undefined)
     
     @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setValidatedDependencyRevisionsVarargs(value: DependencyRevision*): Self = StObject.set(x, "validatedDependencyRevisions", js.Array(value :_*))
     
     @scala.inline
-    def setValidatedDependencyRevisionsVarargs(value: DependencyRevision*): Self = this.set("validatedDependencyRevisions", js.Array(value :_*))
+    def setValidatedNamespaceVersion(value: Version): Self = StObject.set(x, "validatedNamespaceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidatedDependencyRevisions(value: DependencyRevisions): Self = this.set("validatedDependencyRevisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidatedDependencyRevisions: Self = this.set("validatedDependencyRevisions", js.undefined)
-    
-    @scala.inline
-    def setValidatedNamespaceVersion(value: Version): Self = this.set("validatedNamespaceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidatedNamespaceVersion: Self = this.set("validatedNamespaceVersion", js.undefined)
+    def setValidatedNamespaceVersionUndefined: Self = StObject.set(x, "validatedNamespaceVersion", js.undefined)
   }
 }

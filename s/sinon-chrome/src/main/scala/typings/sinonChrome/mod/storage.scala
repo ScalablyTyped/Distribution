@@ -1,24 +1,43 @@
 package typings.sinonChrome.mod
 
 import typings.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "storage")
-@js.native
-object storage extends js.Object {
+object storage {
   
-  var local: StubbedStorageArea = js.native
+  @JSImport("sinon-chrome", "storage")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var managed: StubbedStorageArea = js.native
+  @JSImport("sinon-chrome", "storage.local")
+  @js.native
+  def local: StubbedStorageArea = js.native
+  @scala.inline
+  def local_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
   
-  var onChanged: Event = js.native
+  @JSImport("sinon-chrome", "storage.managed")
+  @js.native
+  def managed: StubbedStorageArea = js.native
+  @scala.inline
+  def managed_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("managed")(x.asInstanceOf[js.Any])
   
-  var sync: StubbedStorageArea = js.native
+  @JSImport("sinon-chrome", "storage.onChanged")
+  @js.native
+  def onChanged: Event = js.native
+  @scala.inline
+  def onChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChanged")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "storage.sync")
+  @js.native
+  def sync: StubbedStorageArea = js.native
+  @scala.inline
+  def sync_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait StubbedStorageArea extends js.Object {
+  trait StubbedStorageArea extends StObject {
     
     // Methods
     def clear(

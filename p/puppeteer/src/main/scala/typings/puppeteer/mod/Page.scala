@@ -21,6 +21,7 @@ import typings.puppeteer.puppeteerStrings.response
 import typings.puppeteer.puppeteerStrings.workercreated
 import typings.puppeteer.puppeteerStrings.workerdestroyed
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

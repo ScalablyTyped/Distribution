@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepricingRuleRestriction extends js.Object {
+trait RepricingRuleRestriction extends StObject {
   
   /** The inclusive floor lower bound. The repricing rule only applies when new price >= floor. */
   var floor: js.UndefOr[RepricingRuleRestrictionBoundary] = js.native
@@ -25,30 +26,18 @@ object RepricingRuleRestriction {
   }
   
   @scala.inline
-  implicit class RepricingRuleRestrictionOps[Self <: RepricingRuleRestriction] (val x: Self) extends AnyVal {
+  implicit class RepricingRuleRestrictionMutableBuilder[Self <: RepricingRuleRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloor(value: RepricingRuleRestrictionBoundary): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseAutoPricingMinPrice(value: Boolean): Self = StObject.set(x, "useAutoPricingMinPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloor(value: RepricingRuleRestrictionBoundary): Self = this.set("floor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloor: Self = this.set("floor", js.undefined)
-    
-    @scala.inline
-    def setUseAutoPricingMinPrice(value: Boolean): Self = this.set("useAutoPricingMinPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAutoPricingMinPrice: Self = this.set("useAutoPricingMinPrice", js.undefined)
+    def setUseAutoPricingMinPriceUndefined: Self = StObject.set(x, "useAutoPricingMinPrice", js.undefined)
   }
 }

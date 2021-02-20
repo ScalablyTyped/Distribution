@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,54 +58,42 @@ object IgLayoutManagerBorderLayout {
   }
   
   @scala.inline
-  implicit class IgLayoutManagerBorderLayoutOps[Self <: IgLayoutManagerBorderLayout] (val x: Self) extends AnyVal {
+  implicit class IgLayoutManagerBorderLayoutMutableBuilder[Self <: IgLayoutManagerBorderLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftWidthUndefined: Self = StObject.set(x, "leftWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightWidth(value: String): Self = StObject.set(x, "rightWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftWidth(value: String): Self = this.set("leftWidth", value.asInstanceOf[js.Any])
+    def setRightWidthUndefined: Self = StObject.set(x, "rightWidth", js.undefined)
     
     @scala.inline
-    def deleteLeftWidth: Self = this.set("leftWidth", js.undefined)
+    def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightWidth(value: String): Self = this.set("rightWidth", value.asInstanceOf[js.Any])
+    def setShowFooterUndefined: Self = StObject.set(x, "showFooter", js.undefined)
     
     @scala.inline
-    def deleteRightWidth: Self = this.set("rightWidth", js.undefined)
+    def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFooter(value: Boolean): Self = this.set("showFooter", value.asInstanceOf[js.Any])
+    def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
     
     @scala.inline
-    def deleteShowFooter: Self = this.set("showFooter", js.undefined)
+    def setShowLeft(value: Boolean): Self = StObject.set(x, "showLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHeader(value: Boolean): Self = this.set("showHeader", value.asInstanceOf[js.Any])
+    def setShowLeftUndefined: Self = StObject.set(x, "showLeft", js.undefined)
     
     @scala.inline
-    def deleteShowHeader: Self = this.set("showHeader", js.undefined)
+    def setShowRight(value: Boolean): Self = StObject.set(x, "showRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLeft(value: Boolean): Self = this.set("showLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowLeft: Self = this.set("showLeft", js.undefined)
-    
-    @scala.inline
-    def setShowRight(value: Boolean): Self = this.set("showRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowRight: Self = this.set("showRight", js.undefined)
+    def setShowRightUndefined: Self = StObject.set(x, "showRight", js.undefined)
   }
 }

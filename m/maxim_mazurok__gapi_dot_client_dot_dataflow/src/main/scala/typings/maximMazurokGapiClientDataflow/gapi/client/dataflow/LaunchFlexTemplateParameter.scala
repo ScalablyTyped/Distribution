@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchFlexTemplateParameter extends js.Object {
+trait LaunchFlexTemplateParameter extends StObject {
   
   /** Spec about the container image to launch. */
   var containerSpec: js.UndefOr[ContainerSpec] = js.native
@@ -53,78 +54,66 @@ object LaunchFlexTemplateParameter {
   }
   
   @scala.inline
-  implicit class LaunchFlexTemplateParameterOps[Self <: LaunchFlexTemplateParameter] (val x: Self) extends AnyVal {
+  implicit class LaunchFlexTemplateParameterMutableBuilder[Self <: LaunchFlexTemplateParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "containerSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerSpecGcsPath(value: String): Self = StObject.set(x, "containerSpecGcsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerSpecGcsPathUndefined: Self = StObject.set(x, "containerSpecGcsPath", js.undefined)
     
     @scala.inline
-    def setContainerSpec(value: ContainerSpec): Self = this.set("containerSpec", value.asInstanceOf[js.Any])
+    def setContainerSpecUndefined: Self = StObject.set(x, "containerSpec", js.undefined)
     
     @scala.inline
-    def deleteContainerSpec: Self = this.set("containerSpec", js.undefined)
+    def setEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerSpecGcsPath(value: String): Self = this.set("containerSpecGcsPath", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteContainerSpecGcsPath: Self = this.set("containerSpecGcsPath", js.undefined)
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: FlexTemplateRuntimeEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
-    
-    @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobName: Self = this.set("jobName", js.undefined)
+    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
     @scala.inline
     def setLaunchOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter with TopLevel[js.Any]
-    ): Self = this.set("launchOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchOptions: Self = this.set("launchOptions", js.undefined)
+    def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
     
     @scala.inline
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter with TopLevel[js.Any]
-    ): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
     def setTransformNameMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter with TopLevel[js.Any]
-    ): Self = this.set("transformNameMappings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transformNameMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformNameMappings: Self = this.set("transformNameMappings", js.undefined)
+    def setTransformNameMappingsUndefined: Self = StObject.set(x, "transformNameMappings", js.undefined)
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

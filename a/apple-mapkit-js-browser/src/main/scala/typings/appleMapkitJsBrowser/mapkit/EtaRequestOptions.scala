@@ -2,6 +2,7 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options you may provide for requesting estimated arrival times.
   */
 @js.native
-trait EtaRequestOptions extends js.Object {
+trait EtaRequestOptions extends StObject {
   
   /**
     * The mode of transportation the server uses when estimating arrival times.
@@ -46,33 +47,21 @@ object EtaRequestOptions {
   }
   
   @scala.inline
-  implicit class EtaRequestOptionsOps[Self <: EtaRequestOptions] (val x: Self) extends AnyVal {
+  implicit class EtaRequestOptionsMutableBuilder[Self <: EtaRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinations(value: js.Array[Coordinate]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationsVarargs(value: Coordinate*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDepartureDate(value: Date): Self = this.set("departureDate", value.asInstanceOf[js.Any])
+    def setOrigin(value: Coordinate): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationsVarargs(value: Coordinate*): Self = this.set("destinations", js.Array(value :_*))
-    
-    @scala.inline
-    def setDestinations(value: js.Array[Coordinate]): Self = this.set("destinations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: Coordinate): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportType(value: Transport): Self = this.set("transportType", value.asInstanceOf[js.Any])
+    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
   }
 }

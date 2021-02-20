@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchPanelProps extends js.Object {
+trait SearchPanelProps extends StObject {
   
   /**
     * Default clear search field button component.
@@ -54,36 +55,24 @@ object SearchPanelProps {
   }
   
   @scala.inline
-  implicit class SearchPanelPropsOps[Self <: SearchPanelProps] (val x: Self) extends AnyVal {
+  implicit class SearchPanelPropsMutableBuilder[Self <: SearchPanelProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearBtnClick(value: () => Unit): Self = StObject.set(x, "clearBtnClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearBtn(value: ReactElement): Self = this.set("clearBtn", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearBtnClick(value: () => Unit): Self = this.set("clearBtnClick", js.Any.fromFunction0(value))
+    def setSearch(value: String => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: String => Unit): Self = this.set("search", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSearchField(value: ReactElement): Self = this.set("searchField", value.asInstanceOf[js.Any])
+    def setSearchField(value: ReactElement): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
   }
 }

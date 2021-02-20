@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.container.XStringKeyMap
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,51 +123,39 @@ object XFlatParagraph {
   }
   
   @scala.inline
-  implicit class XFlatParagraphOps[Self <: XFlatParagraph] (val x: Self) extends AnyVal {
+  implicit class XFlatParagraphMutableBuilder[Self <: XFlatParagraph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeAttributes", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeText(value: (Double, Double, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeText", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLanguageOfText(value: (Double, Double) => Locale): Self = StObject.set(x, "getLanguageOfText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLanguagePortions(value: SafeArray[Double]): Self = this.set("LanguagePortions", value.asInstanceOf[js.Any])
+    def setGetLanguagePortions(value: () => SafeArray[Double]): Self = StObject.set(x, "getLanguagePortions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setGetPrimaryLanguageOfText(value: (Double, Double) => Locale): Self = StObject.set(x, "getPrimaryLanguageOfText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setChangeAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Unit): Self = this.set("changeAttributes", js.Any.fromFunction3(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeText(value: (Double, Double, String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("changeText", js.Any.fromFunction4(value))
+    def setIsChecked(value: Double => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLanguageOfText(value: (Double, Double) => Locale): Self = this.set("getLanguageOfText", js.Any.fromFunction2(value))
+    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLanguagePortions(value: () => SafeArray[Double]): Self = this.set("getLanguagePortions", js.Any.fromFunction0(value))
+    def setLanguagePortions(value: SafeArray[Double]): Self = StObject.set(x, "LanguagePortions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPrimaryLanguageOfText(value: (Double, Double) => Locale): Self = this.set("getPrimaryLanguageOfText", js.Any.fromFunction2(value))
+    def setSetChecked(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setChecked", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsChecked(value: Double => Boolean): Self = this.set("isChecked", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetChecked(value: (Double, Boolean) => Unit): Self = this.set("setChecked", js.Any.fromFunction2(value))
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

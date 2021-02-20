@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_ReplicationRuleFilter", JSImport.Namespace)
-@js.native
-object replicationRuleFilterMod extends js.Object {
+object replicationRuleFilterMod {
   
-  @JSName("_ReplicationRuleFilter")
+  @JSImport("@aws-sdk/client-s3-node/model/_ReplicationRuleFilter", "_ReplicationRuleFilter")
+  @js.native
   val ReplicationRuleFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

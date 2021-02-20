@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object ConsentExceptData {
   }
   
   @scala.inline
-  implicit class ConsentExceptDataOps[Self <: ConsentExceptData] (val x: Self) extends AnyVal {
+  implicit class ConsentExceptDataMutableBuilder[Self <: ConsentExceptData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeaning(value: code): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_meaning(value: Element): Self = StObject.set(x, "_meaning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeaning(value: code): Self = this.set("meaning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReference(value: Reference): Self = this.set("reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_meaning(value: Element): Self = this.set("_meaning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_meaning: Self = this.set("_meaning", js.undefined)
+    def set_meaningUndefined: Self = StObject.set(x, "_meaning", js.undefined)
   }
 }

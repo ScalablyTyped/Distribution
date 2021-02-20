@@ -1,5 +1,6 @@
 package typings.fsExtra.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fsExtra.fsExtraStrings.file
   - typings.fsExtra.fsExtraStrings.junction
 */
-trait SymlinkType extends js.Object
+trait SymlinkType extends StObject
 object SymlinkType {
   
   @scala.inline

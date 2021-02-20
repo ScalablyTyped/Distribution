@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,108 +98,96 @@ object IgSlider {
   }
   
   @scala.inline
-  implicit class IgSliderOps[Self <: IgSlider] (val x: Self) extends AnyVal {
+  implicit class IgSliderMutableBuilder[Self <: IgSlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = StObject.set(x, "bookmarkClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setBookmarkClickUndefined: Self = StObject.set(x, "bookmarkClick", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setBookmarkHit(value: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit): Self = StObject.set(x, "bookmarkHit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = this.set("bookmarkClick", js.Any.fromFunction2(value))
+    def setBookmarkHitUndefined: Self = StObject.set(x, "bookmarkHit", js.undefined)
     
     @scala.inline
-    def deleteBookmarkClick: Self = this.set("bookmarkClick", js.undefined)
+    def setBookmarks(value: IgSliderBookmarks): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarkHit(value: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit): Self = this.set("bookmarkHit", js.Any.fromFunction2(value))
+    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
     @scala.inline
-    def deleteBookmarkHit: Self = this.set("bookmarkHit", js.undefined)
+    def setChange(value: (/* event */ Event, /* ui */ ChangeEventUIParam) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBookmarks(value: IgSliderBookmarks): Self = this.set("bookmarks", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteBookmarks: Self = this.set("bookmarks", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: (/* event */ Event, /* ui */ ChangeEventUIParam) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setShowBookmarkTitle(value: Boolean): Self = StObject.set(x, "showBookmarkTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: js.Any): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setShowBookmarkTitleUndefined: Self = StObject.set(x, "showBookmarkTitle", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setSlide(value: (/* event */ Event, /* ui */ SlideEventUIParam) => Unit): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setShowBookmarkTitle(value: Boolean): Self = this.set("showBookmarkTitle", value.asInstanceOf[js.Any])
+    def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
     
     @scala.inline
-    def deleteShowBookmarkTitle: Self = this.set("showBookmarkTitle", js.undefined)
+    def setStart(value: (/* event */ Event, /* ui */ StartEventUIParam) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSlide(value: (/* event */ Event, /* ui */ SlideEventUIParam) => Unit): Self = this.set("slide", js.Any.fromFunction2(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSlide: Self = this.set("slide", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: (/* event */ Event, /* ui */ StartEventUIParam) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStop(value: (/* event */ Event, /* ui */ StopEventUIParam) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setSyncHandleWithBookmark(value: Boolean): Self = StObject.set(x, "syncHandleWithBookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: (/* event */ Event, /* ui */ StopEventUIParam) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    def setSyncHandleWithBookmarkUndefined: Self = StObject.set(x, "syncHandleWithBookmark", js.undefined)
     
     @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncHandleWithBookmark(value: Boolean): Self = this.set("syncHandleWithBookmark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncHandleWithBookmark: Self = this.set("syncHandleWithBookmark", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

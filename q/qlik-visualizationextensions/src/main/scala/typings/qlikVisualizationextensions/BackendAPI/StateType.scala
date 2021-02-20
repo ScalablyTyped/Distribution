@@ -1,5 +1,6 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL
 */
-trait StateType extends js.Object
+trait StateType extends StObject
 object StateType {
   
   @scala.inline

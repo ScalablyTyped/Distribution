@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Severity extends js.Object {
+trait Severity extends StObject {
   
   /**
     * The severity value of the finding. The allowed values are the following.    INFORMATIONAL - No issue was found.    LOW - The issue does not require action on its own.    MEDIUM - The issue must be addressed but not urgently.    HIGH - The issue must be addressed as a priority.    CRITICAL - The issue must be remediated immediately to avoid it escalating.   If you provide Normalized and do not provide Label, then Label is set automatically as follows.    0 - INFORMATIONAL    1–39 - LOW    40–69 - MEDIUM    70–89 - HIGH    90–100 - CRITICAL   
@@ -36,42 +37,30 @@ object Severity {
   }
   
   @scala.inline
-  implicit class SeverityOps[Self <: Severity] (val x: Self) extends AnyVal {
+  implicit class SeverityMutableBuilder[Self <: Severity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalized(value: Integer): Self = StObject.set(x, "Normalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: SeverityLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setNormalizedUndefined: Self = StObject.set(x, "Normalized", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setOriginal(value: NonEmptyString): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalized(value: Integer): Self = this.set("Normalized", value.asInstanceOf[js.Any])
+    def setOriginalUndefined: Self = StObject.set(x, "Original", js.undefined)
     
     @scala.inline
-    def deleteNormalized: Self = this.set("Normalized", js.undefined)
+    def setProduct(value: Double): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal(value: NonEmptyString): Self = this.set("Original", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginal: Self = this.set("Original", js.undefined)
-    
-    @scala.inline
-    def setProduct(value: Double): Self = this.set("Product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("Product", js.undefined)
+    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
   }
 }

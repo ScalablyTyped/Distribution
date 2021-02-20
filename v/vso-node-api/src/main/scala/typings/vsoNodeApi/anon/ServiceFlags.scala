@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceFlags extends js.Object {
+trait ServiceFlags extends StObject {
   
   var disabled: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object ServiceFlags {
   }
   
   @scala.inline
-  implicit class ServiceFlagsOps[Self <: ServiceFlags] (val x: Self) extends AnyVal {
+  implicit class ServiceFlagsMutableBuilder[Self <: ServiceFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceFlags(value: scala.Double): Self = StObject.set(x, "serviceFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: scala.Double): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setUnChanged(value: scala.Double): Self = StObject.set(x, "unChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceFlags(value: scala.Double): Self = this.set("serviceFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnChanged(value: scala.Double): Self = this.set("unChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified(value: scala.Double): Self = this.set("verified", value.asInstanceOf[js.Any])
+    def setVerified(value: scala.Double): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

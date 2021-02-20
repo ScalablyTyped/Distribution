@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.elasticsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainLogPublishingOption extends js.Object {
+trait DomainLogPublishingOption extends StObject {
   
   /**
     * ARN of the Cloudwatch log group to which log needs to be published.
@@ -31,30 +32,18 @@ object DomainLogPublishingOption {
   }
   
   @scala.inline
-  implicit class DomainLogPublishingOptionOps[Self <: DomainLogPublishingOption] (val x: Self) extends AnyVal {
+  implicit class DomainLogPublishingOptionMutableBuilder[Self <: DomainLogPublishingOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchLogGroupArn(value: String): Self = StObject.set(x, "cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setCloudwatchLogGroupArn(value: String): Self = this.set("cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogType(value: String): Self = this.set("logType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
   }
 }

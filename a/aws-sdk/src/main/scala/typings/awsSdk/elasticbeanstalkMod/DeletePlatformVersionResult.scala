@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeletePlatformVersionResult extends js.Object {
+trait DeletePlatformVersionResult extends StObject {
   
   /**
     * Detailed information about the version of the custom platform.
@@ -21,24 +22,12 @@ object DeletePlatformVersionResult {
   }
   
   @scala.inline
-  implicit class DeletePlatformVersionResultOps[Self <: DeletePlatformVersionResult] (val x: Self) extends AnyVal {
+  implicit class DeletePlatformVersionResultMutableBuilder[Self <: DeletePlatformVersionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlatformSummary(value: PlatformSummary): Self = StObject.set(x, "PlatformSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlatformSummary(value: PlatformSummary): Self = this.set("PlatformSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformSummary: Self = this.set("PlatformSummary", js.undefined)
+    def setPlatformSummaryUndefined: Self = StObject.set(x, "PlatformSummary", js.undefined)
   }
 }

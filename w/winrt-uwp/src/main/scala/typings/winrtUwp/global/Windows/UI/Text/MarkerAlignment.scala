@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines bullet and numbering alignment. */
 @JSGlobal("Windows.UI.Text.MarkerAlignment")
 @js.native
-object MarkerAlignment extends js.Object {
+object MarkerAlignment extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.MarkerAlignment with Double] = js.native

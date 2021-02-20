@@ -1,5 +1,6 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBeautifulDnd.reactBeautifulDndStrings.open
   - typings.reactBeautifulDnd.reactBeautifulDndStrings.close
 */
-trait InOutAnimationMode extends js.Object
+trait InOutAnimationMode extends StObject
 object InOutAnimationMode {
   
   @scala.inline

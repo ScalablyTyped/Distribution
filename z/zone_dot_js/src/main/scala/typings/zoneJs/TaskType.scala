@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.zoneJs.zoneJsStrings.macroTask
   - typings.zoneJs.zoneJsStrings.eventTask
 */
-trait TaskType extends js.Object
+trait TaskType extends StObject
 object TaskType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Number extends js.Object {
+trait Number extends StObject {
   
   def format(value: Double, config: js.Any): String = js.native
   
@@ -29,30 +30,18 @@ object Number {
   }
   
   @scala.inline
-  implicit class NumberOps[Self <: Number] (val x: Self) extends AnyVal {
+  implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: (Double, js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConfig(value: String => js.Any): Self = StObject.set(x, "getConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumToStr(value: js.Any => WebixCallback): Self = StObject.set(x, "numToStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormat(value: (Double, js.Any) => String): Self = this.set("format", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetConfig(value: String => js.Any): Self = this.set("getConfig", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNumToStr(value: js.Any => WebixCallback): Self = this.set("numToStr", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParse(value: (String, js.Any) => Double): Self = this.set("parse", js.Any.fromFunction2(value))
+    def setParse(value: (String, js.Any) => Double): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
   }
 }

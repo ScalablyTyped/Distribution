@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontStyle extends js.Object
+sealed trait FontStyle extends StObject
 /** Represents the style of a font face (for example, normal or italic). */
 @JSGlobal("Windows.UI.Text.FontStyle")
 @js.native
-object FontStyle extends js.Object {
+object FontStyle extends StObject {
   
   /** Represents an italic font style. */
   @js.native

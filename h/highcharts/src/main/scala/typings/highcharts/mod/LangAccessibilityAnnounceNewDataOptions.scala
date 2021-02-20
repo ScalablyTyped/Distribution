@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilityAnnounceNewDataOptions extends js.Object {
+trait LangAccessibilityAnnounceNewDataOptions extends StObject {
   
   var newDataAnnounce: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object LangAccessibilityAnnounceNewDataOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilityAnnounceNewDataOptionsOps[Self <: LangAccessibilityAnnounceNewDataOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilityAnnounceNewDataOptionsMutableBuilder[Self <: LangAccessibilityAnnounceNewDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewDataAnnounce(value: String): Self = StObject.set(x, "newDataAnnounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewDataAnnounceUndefined: Self = StObject.set(x, "newDataAnnounce", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewPointAnnounceMultiple(value: String): Self = StObject.set(x, "newPointAnnounceMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewDataAnnounce(value: String): Self = this.set("newDataAnnounce", value.asInstanceOf[js.Any])
+    def setNewPointAnnounceMultipleUndefined: Self = StObject.set(x, "newPointAnnounceMultiple", js.undefined)
     
     @scala.inline
-    def deleteNewDataAnnounce: Self = this.set("newDataAnnounce", js.undefined)
+    def setNewPointAnnounceSingle(value: String): Self = StObject.set(x, "newPointAnnounceSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPointAnnounceMultiple(value: String): Self = this.set("newPointAnnounceMultiple", value.asInstanceOf[js.Any])
+    def setNewPointAnnounceSingleUndefined: Self = StObject.set(x, "newPointAnnounceSingle", js.undefined)
     
     @scala.inline
-    def deleteNewPointAnnounceMultiple: Self = this.set("newPointAnnounceMultiple", js.undefined)
+    def setNewSeriesAnnounceMultiple(value: String): Self = StObject.set(x, "newSeriesAnnounceMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPointAnnounceSingle(value: String): Self = this.set("newPointAnnounceSingle", value.asInstanceOf[js.Any])
+    def setNewSeriesAnnounceMultipleUndefined: Self = StObject.set(x, "newSeriesAnnounceMultiple", js.undefined)
     
     @scala.inline
-    def deleteNewPointAnnounceSingle: Self = this.set("newPointAnnounceSingle", js.undefined)
+    def setNewSeriesAnnounceSingle(value: String): Self = StObject.set(x, "newSeriesAnnounceSingle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSeriesAnnounceMultiple(value: String): Self = this.set("newSeriesAnnounceMultiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewSeriesAnnounceMultiple: Self = this.set("newSeriesAnnounceMultiple", js.undefined)
-    
-    @scala.inline
-    def setNewSeriesAnnounceSingle(value: String): Self = this.set("newSeriesAnnounceSingle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewSeriesAnnounceSingle: Self = this.set("newSeriesAnnounceSingle", js.undefined)
+    def setNewSeriesAnnounceSingleUndefined: Self = StObject.set(x, "newSeriesAnnounceSingle", js.undefined)
   }
 }

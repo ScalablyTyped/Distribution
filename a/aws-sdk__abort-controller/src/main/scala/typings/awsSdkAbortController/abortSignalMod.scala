@@ -1,13 +1,13 @@
 package typings.awsSdkAbortController
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/abort-controller/dist/cjs/AbortSignal", JSImport.Namespace)
-@js.native
-object abortSignalMod extends js.Object {
+object abortSignalMod {
   
+  @JSImport("@aws-sdk/abort-controller/dist/cjs/AbortSignal", "AbortSignal")
   @js.native
   class AbortSignal ()
     extends typings.awsSdkTypes.abortMod.AbortSignal {

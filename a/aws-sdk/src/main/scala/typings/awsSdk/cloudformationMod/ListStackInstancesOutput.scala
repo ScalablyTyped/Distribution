@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListStackInstancesOutput extends js.Object {
+trait ListStackInstancesOutput extends StObject {
   
   /**
     * If the request doesn't return all of the remaining results, NextToken is set to a token. To retrieve the next set of results, call ListStackInstances again and assign that token to the request object's NextToken parameter. If the request returns all results, NextToken is set to null.
@@ -26,33 +27,21 @@ object ListStackInstancesOutput {
   }
   
   @scala.inline
-  implicit class ListStackInstancesOutputOps[Self <: ListStackInstancesOutput] (val x: Self) extends AnyVal {
+  implicit class ListStackInstancesOutputMutableBuilder[Self <: ListStackInstancesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSummaries(value: StackInstanceSummaries): Self = StObject.set(x, "Summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSummariesUndefined: Self = StObject.set(x, "Summaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSummariesVarargs(value: StackInstanceSummary*): Self = this.set("Summaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSummaries(value: StackInstanceSummaries): Self = this.set("Summaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaries: Self = this.set("Summaries", js.undefined)
+    def setSummariesVarargs(value: StackInstanceSummary*): Self = StObject.set(x, "Summaries", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.angularCompiler.publicApiMod
 
 import typings.angularCompiler.i18nAstMod.I18nMeta
 import typings.angularCompiler.mlParserAstMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

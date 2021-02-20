@@ -7,24 +7,35 @@ import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.sinon.mod.SinonSpy
 import typings.sinon.mod.SinonStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mock-req-res", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("mock-req-res", JSImport.Namespace)
+  @js.native
   def apply(): Mock = js.native
   
+  @JSImport("mock-req-res", "mockRequest")
+  @js.native
   def mockRequest(): RequestOutput = js.native
+  @JSImport("mock-req-res", "mockRequest")
+  @js.native
   def mockRequest(options: RequestPayload): RequestOutput = js.native
   
+  @JSImport("mock-req-res", "mockResponse")
+  @js.native
   def mockResponse(): ResponseOutput = js.native
+  @JSImport("mock-req-res", "mockResponse")
+  @js.native
   def mockResponse(options: ResponsePayload): ResponseOutput = js.native
   
+  type Dictionary[T] = StringDictionary[T]
+  
   @js.native
-  trait Mock extends js.Object {
+  trait Mock extends StObject {
     
     def mockRequest(): RequestOutput = js.native
     def mockRequest(options: RequestPayload): RequestOutput = js.native
@@ -44,6 +55,8 @@ object mod extends js.Object {
     @JSName("get")
     var get_Original: SinonStub[js.Array[_], _] = js.native
   }
+  
+  type RequestPayload = Dictionary[js.Any]
   
   @js.native
   trait ResponseOutput
@@ -185,10 +198,6 @@ object mod extends js.Object {
     @JSName("vary")
     var vary_Original: SinonStub[js.Array[_], _] = js.native
   }
-  
-  type Dictionary[T] = StringDictionary[T]
-  
-  type RequestPayload = Dictionary[js.Any]
   
   type ResponsePayload = Dictionary[js.Any]
 }

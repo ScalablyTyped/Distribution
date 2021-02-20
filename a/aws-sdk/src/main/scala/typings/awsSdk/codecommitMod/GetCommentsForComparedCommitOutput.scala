@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCommentsForComparedCommitOutput extends js.Object {
+trait GetCommentsForComparedCommitOutput extends StObject {
   
   /**
     * A list of comment objects on the compared commit.
@@ -26,33 +27,21 @@ object GetCommentsForComparedCommitOutput {
   }
   
   @scala.inline
-  implicit class GetCommentsForComparedCommitOutputOps[Self <: GetCommentsForComparedCommitOutput] (val x: Self) extends AnyVal {
+  implicit class GetCommentsForComparedCommitOutputMutableBuilder[Self <: GetCommentsForComparedCommitOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentsForComparedCommitData(value: CommentsForComparedCommitData): Self = StObject.set(x, "commentsForComparedCommitData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsForComparedCommitDataUndefined: Self = StObject.set(x, "commentsForComparedCommitData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsForComparedCommitDataVarargs(value: CommentsForComparedCommit*): Self = StObject.set(x, "commentsForComparedCommitData", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsForComparedCommitDataVarargs(value: CommentsForComparedCommit*): Self = this.set("commentsForComparedCommitData", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsForComparedCommitData(value: CommentsForComparedCommitData): Self = this.set("commentsForComparedCommitData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommentsForComparedCommitData: Self = this.set("commentsForComparedCommitData", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

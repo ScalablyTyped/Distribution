@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextCustomField extends js.Object {
+trait TextCustomField extends StObject {
   
   /**
     * If you are using merge fields, this property specifies the type of the merge field. The only supported value is `salesforce`.
@@ -53,62 +54,50 @@ object TextCustomField {
   }
   
   @scala.inline
-  implicit class TextCustomFieldOps[Self <: TextCustomField] (val x: Self) extends AnyVal {
+  implicit class TextCustomFieldMutableBuilder[Self <: TextCustomField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationType(value: String): Self = this.set("configurationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationType: Self = this.set("configurationType", js.undefined)
+    def setConfigurationTypeUndefined: Self = StObject.set(x, "configurationType", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setFieldId(value: String): Self = this.set("fieldId", value.asInstanceOf[js.Any])
+    def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldId: Self = this.set("fieldId", js.undefined)
+    def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setRequired(value: String): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setShow(value: String): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

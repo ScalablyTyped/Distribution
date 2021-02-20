@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLifecyclePolicyPreviewResponse extends js.Object {
+trait GetLifecyclePolicyPreviewResponse extends StObject {
   
   /**
     * The JSON lifecycle policy text.
@@ -51,63 +52,51 @@ object GetLifecyclePolicyPreviewResponse {
   }
   
   @scala.inline
-  implicit class GetLifecyclePolicyPreviewResponseOps[Self <: GetLifecyclePolicyPreviewResponse] (val x: Self) extends AnyVal {
+  implicit class GetLifecyclePolicyPreviewResponseMutableBuilder[Self <: GetLifecyclePolicyPreviewResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = this.set("lifecyclePolicyText", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteLifecyclePolicyText: Self = this.set("lifecyclePolicyText", js.undefined)
+    def setPreviewResults(value: LifecyclePolicyPreviewResultList): Self = StObject.set(x, "previewResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setPreviewResultsUndefined: Self = StObject.set(x, "previewResults", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = StObject.set(x, "previewResults", js.Array(value :_*))
     
     @scala.inline
-    def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = this.set("previewResults", js.Array(value :_*))
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewResults(value: LifecyclePolicyPreviewResultList): Self = this.set("previewResults", value.asInstanceOf[js.Any])
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def deletePreviewResults: Self = this.set("previewResults", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     
     @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def setStatus(value: LifecyclePolicyPreviewStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    def setSummary(value: LifecyclePolicyPreviewSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: LifecyclePolicyPreviewStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: LifecyclePolicyPreviewSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

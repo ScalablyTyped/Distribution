@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.applepayjs.applepayjsStrings.`final`
   - typings.applepayjs.applepayjsStrings.pending
 */
-trait ApplePayLineItemType extends js.Object
+trait ApplePayLineItemType extends StObject
 object ApplePayLineItemType {
   
   @scala.inline

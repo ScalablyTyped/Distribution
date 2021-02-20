@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,93 +57,81 @@ object Invitation {
   }
   
   @scala.inline
-  implicit class InvitationOps[Self <: Invitation] (val x: Self) extends AnyVal {
+  implicit class InvitationMutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInviteRedeemUrl(value: NullableOption[String]): Self = StObject.set(x, "inviteRedeemUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInviteRedeemUrlNull: Self = StObject.set(x, "inviteRedeemUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInviteRedeemUrlUndefined: Self = StObject.set(x, "inviteRedeemUrl", js.undefined)
     
     @scala.inline
-    def setInviteRedeemUrl(value: NullableOption[String]): Self = this.set("inviteRedeemUrl", value.asInstanceOf[js.Any])
+    def setInviteRedirectUrl(value: String): Self = StObject.set(x, "inviteRedirectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInviteRedeemUrl: Self = this.set("inviteRedeemUrl", js.undefined)
+    def setInviteRedirectUrlUndefined: Self = StObject.set(x, "inviteRedirectUrl", js.undefined)
     
     @scala.inline
-    def setInviteRedeemUrlNull: Self = this.set("inviteRedeemUrl", null)
+    def setInvitedUser(value: NullableOption[User]): Self = StObject.set(x, "invitedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInviteRedirectUrl(value: String): Self = this.set("inviteRedirectUrl", value.asInstanceOf[js.Any])
+    def setInvitedUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "invitedUserDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInviteRedirectUrl: Self = this.set("inviteRedirectUrl", js.undefined)
+    def setInvitedUserDisplayNameNull: Self = StObject.set(x, "invitedUserDisplayName", null)
     
     @scala.inline
-    def setInvitedUser(value: NullableOption[User]): Self = this.set("invitedUser", value.asInstanceOf[js.Any])
+    def setInvitedUserDisplayNameUndefined: Self = StObject.set(x, "invitedUserDisplayName", js.undefined)
     
     @scala.inline
-    def deleteInvitedUser: Self = this.set("invitedUser", js.undefined)
+    def setInvitedUserEmailAddress(value: String): Self = StObject.set(x, "invitedUserEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitedUserNull: Self = this.set("invitedUser", null)
+    def setInvitedUserEmailAddressUndefined: Self = StObject.set(x, "invitedUserEmailAddress", js.undefined)
     
     @scala.inline
-    def setInvitedUserDisplayName(value: NullableOption[String]): Self = this.set("invitedUserDisplayName", value.asInstanceOf[js.Any])
+    def setInvitedUserMessageInfo(value: NullableOption[InvitedUserMessageInfo]): Self = StObject.set(x, "invitedUserMessageInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvitedUserDisplayName: Self = this.set("invitedUserDisplayName", js.undefined)
+    def setInvitedUserMessageInfoNull: Self = StObject.set(x, "invitedUserMessageInfo", null)
     
     @scala.inline
-    def setInvitedUserDisplayNameNull: Self = this.set("invitedUserDisplayName", null)
+    def setInvitedUserMessageInfoUndefined: Self = StObject.set(x, "invitedUserMessageInfo", js.undefined)
     
     @scala.inline
-    def setInvitedUserEmailAddress(value: String): Self = this.set("invitedUserEmailAddress", value.asInstanceOf[js.Any])
+    def setInvitedUserNull: Self = StObject.set(x, "invitedUser", null)
     
     @scala.inline
-    def deleteInvitedUserEmailAddress: Self = this.set("invitedUserEmailAddress", js.undefined)
+    def setInvitedUserType(value: NullableOption[String]): Self = StObject.set(x, "invitedUserType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitedUserMessageInfo(value: NullableOption[InvitedUserMessageInfo]): Self = this.set("invitedUserMessageInfo", value.asInstanceOf[js.Any])
+    def setInvitedUserTypeNull: Self = StObject.set(x, "invitedUserType", null)
     
     @scala.inline
-    def deleteInvitedUserMessageInfo: Self = this.set("invitedUserMessageInfo", js.undefined)
+    def setInvitedUserTypeUndefined: Self = StObject.set(x, "invitedUserType", js.undefined)
     
     @scala.inline
-    def setInvitedUserMessageInfoNull: Self = this.set("invitedUserMessageInfo", null)
+    def setInvitedUserUndefined: Self = StObject.set(x, "invitedUser", js.undefined)
     
     @scala.inline
-    def setInvitedUserType(value: NullableOption[String]): Self = this.set("invitedUserType", value.asInstanceOf[js.Any])
+    def setSendInvitationMessage(value: NullableOption[Boolean]): Self = StObject.set(x, "sendInvitationMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvitedUserType: Self = this.set("invitedUserType", js.undefined)
+    def setSendInvitationMessageNull: Self = StObject.set(x, "sendInvitationMessage", null)
     
     @scala.inline
-    def setInvitedUserTypeNull: Self = this.set("invitedUserType", null)
+    def setSendInvitationMessageUndefined: Self = StObject.set(x, "sendInvitationMessage", js.undefined)
     
     @scala.inline
-    def setSendInvitationMessage(value: NullableOption[Boolean]): Self = this.set("sendInvitationMessage", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSendInvitationMessage: Self = this.set("sendInvitationMessage", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setSendInvitationMessageNull: Self = this.set("sendInvitationMessage", null)
-    
-    @scala.inline
-    def setStatus(value: NullableOption[String]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

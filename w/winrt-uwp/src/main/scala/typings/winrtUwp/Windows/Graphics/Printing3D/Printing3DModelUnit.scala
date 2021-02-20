@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Printing3DModelUnit extends js.Object
+sealed trait Printing3DModelUnit extends StObject
 /** Specifies the units of measure used in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DModelUnit")
 @js.native
-object Printing3DModelUnit extends js.Object {
+object Printing3DModelUnit extends StObject {
   
   /** The units of the 3D model are specified in centimeters. */
   @js.native

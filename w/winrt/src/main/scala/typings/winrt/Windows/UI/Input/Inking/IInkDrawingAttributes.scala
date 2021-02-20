@@ -2,12 +2,13 @@ package typings.winrt.Windows.UI.Input.Inking
 
 import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInkDrawingAttributes extends js.Object {
+trait IInkDrawingAttributes extends StObject {
   
   var color: Color = js.native
   
@@ -28,33 +29,21 @@ object IInkDrawingAttributes {
   }
   
   @scala.inline
-  implicit class IInkDrawingAttributesOps[Self <: IInkDrawingAttributes] (val x: Self) extends AnyVal {
+  implicit class IInkDrawingAttributesMutableBuilder[Self <: IInkDrawingAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFitToCurve(value: Boolean): Self = StObject.set(x, "fitToCurve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnorePressure(value: Boolean): Self = StObject.set(x, "ignorePressure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPenTip(value: PenTipShape): Self = StObject.set(x, "penTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitToCurve(value: Boolean): Self = this.set("fitToCurve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnorePressure(value: Boolean): Self = this.set("ignorePressure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPenTip(value: PenTipShape): Self = this.set("penTip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

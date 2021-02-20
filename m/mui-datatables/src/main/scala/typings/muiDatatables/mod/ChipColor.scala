@@ -1,5 +1,6 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.muiDatatables.muiDatatablesStrings.secondary
   - typings.muiDatatables.muiDatatablesStrings.default
 */
-trait ChipColor extends js.Object
+trait ChipColor extends StObject
 object ChipColor {
   
   @scala.inline

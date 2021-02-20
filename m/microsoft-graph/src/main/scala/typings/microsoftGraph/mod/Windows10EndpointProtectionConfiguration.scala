@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,279 +150,267 @@ object Windows10EndpointProtectionConfiguration {
   }
   
   @scala.inline
-  implicit class Windows10EndpointProtectionConfigurationOps[Self <: Windows10EndpointProtectionConfiguration] (val x: Self) extends AnyVal {
+  implicit class Windows10EndpointProtectionConfigurationMutableBuilder[Self <: Windows10EndpointProtectionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppLockerApplicationControl(value: AppLockerApplicationControlType): Self = StObject.set(x, "appLockerApplicationControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppLockerApplicationControlUndefined: Self = StObject.set(x, "appLockerApplicationControl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationGuardAllowPersistence(value: Boolean): Self = StObject.set(x, "applicationGuardAllowPersistence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppLockerApplicationControl(value: AppLockerApplicationControlType): Self = this.set("appLockerApplicationControl", value.asInstanceOf[js.Any])
+    def setApplicationGuardAllowPersistenceUndefined: Self = StObject.set(x, "applicationGuardAllowPersistence", js.undefined)
     
     @scala.inline
-    def deleteAppLockerApplicationControl: Self = this.set("appLockerApplicationControl", js.undefined)
+    def setApplicationGuardAllowPrintToLocalPrinters(value: Boolean): Self = StObject.set(x, "applicationGuardAllowPrintToLocalPrinters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardAllowPersistence(value: Boolean): Self = this.set("applicationGuardAllowPersistence", value.asInstanceOf[js.Any])
+    def setApplicationGuardAllowPrintToLocalPrintersUndefined: Self = StObject.set(x, "applicationGuardAllowPrintToLocalPrinters", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardAllowPersistence: Self = this.set("applicationGuardAllowPersistence", js.undefined)
+    def setApplicationGuardAllowPrintToNetworkPrinters(value: Boolean): Self = StObject.set(x, "applicationGuardAllowPrintToNetworkPrinters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardAllowPrintToLocalPrinters(value: Boolean): Self = this.set("applicationGuardAllowPrintToLocalPrinters", value.asInstanceOf[js.Any])
+    def setApplicationGuardAllowPrintToNetworkPrintersUndefined: Self = StObject.set(x, "applicationGuardAllowPrintToNetworkPrinters", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardAllowPrintToLocalPrinters: Self = this.set("applicationGuardAllowPrintToLocalPrinters", js.undefined)
+    def setApplicationGuardAllowPrintToPDF(value: Boolean): Self = StObject.set(x, "applicationGuardAllowPrintToPDF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardAllowPrintToNetworkPrinters(value: Boolean): Self = this.set("applicationGuardAllowPrintToNetworkPrinters", value.asInstanceOf[js.Any])
+    def setApplicationGuardAllowPrintToPDFUndefined: Self = StObject.set(x, "applicationGuardAllowPrintToPDF", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardAllowPrintToNetworkPrinters: Self = this.set("applicationGuardAllowPrintToNetworkPrinters", js.undefined)
+    def setApplicationGuardAllowPrintToXPS(value: Boolean): Self = StObject.set(x, "applicationGuardAllowPrintToXPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardAllowPrintToPDF(value: Boolean): Self = this.set("applicationGuardAllowPrintToPDF", value.asInstanceOf[js.Any])
+    def setApplicationGuardAllowPrintToXPSUndefined: Self = StObject.set(x, "applicationGuardAllowPrintToXPS", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardAllowPrintToPDF: Self = this.set("applicationGuardAllowPrintToPDF", js.undefined)
+    def setApplicationGuardBlockClipboardSharing(value: ApplicationGuardBlockClipboardSharingType): Self = StObject.set(x, "applicationGuardBlockClipboardSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardAllowPrintToXPS(value: Boolean): Self = this.set("applicationGuardAllowPrintToXPS", value.asInstanceOf[js.Any])
+    def setApplicationGuardBlockClipboardSharingUndefined: Self = StObject.set(x, "applicationGuardBlockClipboardSharing", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardAllowPrintToXPS: Self = this.set("applicationGuardAllowPrintToXPS", js.undefined)
+    def setApplicationGuardBlockFileTransfer(value: ApplicationGuardBlockFileTransferType): Self = StObject.set(x, "applicationGuardBlockFileTransfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardBlockClipboardSharing(value: ApplicationGuardBlockClipboardSharingType): Self = this.set("applicationGuardBlockClipboardSharing", value.asInstanceOf[js.Any])
+    def setApplicationGuardBlockFileTransferUndefined: Self = StObject.set(x, "applicationGuardBlockFileTransfer", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardBlockClipboardSharing: Self = this.set("applicationGuardBlockClipboardSharing", js.undefined)
+    def setApplicationGuardBlockNonEnterpriseContent(value: Boolean): Self = StObject.set(x, "applicationGuardBlockNonEnterpriseContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardBlockFileTransfer(value: ApplicationGuardBlockFileTransferType): Self = this.set("applicationGuardBlockFileTransfer", value.asInstanceOf[js.Any])
+    def setApplicationGuardBlockNonEnterpriseContentUndefined: Self = StObject.set(x, "applicationGuardBlockNonEnterpriseContent", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardBlockFileTransfer: Self = this.set("applicationGuardBlockFileTransfer", js.undefined)
+    def setApplicationGuardEnabled(value: Boolean): Self = StObject.set(x, "applicationGuardEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardBlockNonEnterpriseContent(value: Boolean): Self = this.set("applicationGuardBlockNonEnterpriseContent", value.asInstanceOf[js.Any])
+    def setApplicationGuardEnabledUndefined: Self = StObject.set(x, "applicationGuardEnabled", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardBlockNonEnterpriseContent: Self = this.set("applicationGuardBlockNonEnterpriseContent", js.undefined)
+    def setApplicationGuardForceAuditing(value: Boolean): Self = StObject.set(x, "applicationGuardForceAuditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardEnabled(value: Boolean): Self = this.set("applicationGuardEnabled", value.asInstanceOf[js.Any])
+    def setApplicationGuardForceAuditingUndefined: Self = StObject.set(x, "applicationGuardForceAuditing", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardEnabled: Self = this.set("applicationGuardEnabled", js.undefined)
+    def setBitLockerDisableWarningForOtherDiskEncryption(value: Boolean): Self = StObject.set(x, "bitLockerDisableWarningForOtherDiskEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationGuardForceAuditing(value: Boolean): Self = this.set("applicationGuardForceAuditing", value.asInstanceOf[js.Any])
+    def setBitLockerDisableWarningForOtherDiskEncryptionUndefined: Self = StObject.set(x, "bitLockerDisableWarningForOtherDiskEncryption", js.undefined)
     
     @scala.inline
-    def deleteApplicationGuardForceAuditing: Self = this.set("applicationGuardForceAuditing", js.undefined)
+    def setBitLockerEnableStorageCardEncryptionOnMobile(value: Boolean): Self = StObject.set(x, "bitLockerEnableStorageCardEncryptionOnMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitLockerDisableWarningForOtherDiskEncryption(value: Boolean): Self = this.set("bitLockerDisableWarningForOtherDiskEncryption", value.asInstanceOf[js.Any])
+    def setBitLockerEnableStorageCardEncryptionOnMobileUndefined: Self = StObject.set(x, "bitLockerEnableStorageCardEncryptionOnMobile", js.undefined)
     
     @scala.inline
-    def deleteBitLockerDisableWarningForOtherDiskEncryption: Self = this.set("bitLockerDisableWarningForOtherDiskEncryption", js.undefined)
+    def setBitLockerEncryptDevice(value: Boolean): Self = StObject.set(x, "bitLockerEncryptDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitLockerEnableStorageCardEncryptionOnMobile(value: Boolean): Self = this.set("bitLockerEnableStorageCardEncryptionOnMobile", value.asInstanceOf[js.Any])
+    def setBitLockerEncryptDeviceUndefined: Self = StObject.set(x, "bitLockerEncryptDevice", js.undefined)
     
     @scala.inline
-    def deleteBitLockerEnableStorageCardEncryptionOnMobile: Self = this.set("bitLockerEnableStorageCardEncryptionOnMobile", js.undefined)
+    def setBitLockerRemovableDrivePolicy(value: NullableOption[BitLockerRemovableDrivePolicy]): Self = StObject.set(x, "bitLockerRemovableDrivePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitLockerEncryptDevice(value: Boolean): Self = this.set("bitLockerEncryptDevice", value.asInstanceOf[js.Any])
+    def setBitLockerRemovableDrivePolicyNull: Self = StObject.set(x, "bitLockerRemovableDrivePolicy", null)
     
     @scala.inline
-    def deleteBitLockerEncryptDevice: Self = this.set("bitLockerEncryptDevice", js.undefined)
+    def setBitLockerRemovableDrivePolicyUndefined: Self = StObject.set(x, "bitLockerRemovableDrivePolicy", js.undefined)
     
     @scala.inline
-    def setBitLockerRemovableDrivePolicy(value: NullableOption[BitLockerRemovableDrivePolicy]): Self = this.set("bitLockerRemovableDrivePolicy", value.asInstanceOf[js.Any])
+    def setDefenderAdditionalGuardedFolders(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "defenderAdditionalGuardedFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBitLockerRemovableDrivePolicy: Self = this.set("bitLockerRemovableDrivePolicy", js.undefined)
+    def setDefenderAdditionalGuardedFoldersNull: Self = StObject.set(x, "defenderAdditionalGuardedFolders", null)
     
     @scala.inline
-    def setBitLockerRemovableDrivePolicyNull: Self = this.set("bitLockerRemovableDrivePolicy", null)
+    def setDefenderAdditionalGuardedFoldersUndefined: Self = StObject.set(x, "defenderAdditionalGuardedFolders", js.undefined)
     
     @scala.inline
-    def setDefenderAdditionalGuardedFoldersVarargs(value: String*): Self = this.set("defenderAdditionalGuardedFolders", js.Array(value :_*))
+    def setDefenderAdditionalGuardedFoldersVarargs(value: String*): Self = StObject.set(x, "defenderAdditionalGuardedFolders", js.Array(value :_*))
     
     @scala.inline
-    def setDefenderAdditionalGuardedFolders(value: NullableOption[js.Array[String]]): Self = this.set("defenderAdditionalGuardedFolders", value.asInstanceOf[js.Any])
+    def setDefenderAttackSurfaceReductionExcludedPaths(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefenderAdditionalGuardedFolders: Self = this.set("defenderAdditionalGuardedFolders", js.undefined)
+    def setDefenderAttackSurfaceReductionExcludedPathsNull: Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", null)
     
     @scala.inline
-    def setDefenderAdditionalGuardedFoldersNull: Self = this.set("defenderAdditionalGuardedFolders", null)
+    def setDefenderAttackSurfaceReductionExcludedPathsUndefined: Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", js.undefined)
     
     @scala.inline
-    def setDefenderAttackSurfaceReductionExcludedPathsVarargs(value: String*): Self = this.set("defenderAttackSurfaceReductionExcludedPaths", js.Array(value :_*))
+    def setDefenderAttackSurfaceReductionExcludedPathsVarargs(value: String*): Self = StObject.set(x, "defenderAttackSurfaceReductionExcludedPaths", js.Array(value :_*))
     
     @scala.inline
-    def setDefenderAttackSurfaceReductionExcludedPaths(value: NullableOption[js.Array[String]]): Self = this.set("defenderAttackSurfaceReductionExcludedPaths", value.asInstanceOf[js.Any])
+    def setDefenderExploitProtectionXml(value: NullableOption[Double]): Self = StObject.set(x, "defenderExploitProtectionXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefenderAttackSurfaceReductionExcludedPaths: Self = this.set("defenderAttackSurfaceReductionExcludedPaths", js.undefined)
+    def setDefenderExploitProtectionXmlFileName(value: NullableOption[String]): Self = StObject.set(x, "defenderExploitProtectionXmlFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefenderAttackSurfaceReductionExcludedPathsNull: Self = this.set("defenderAttackSurfaceReductionExcludedPaths", null)
+    def setDefenderExploitProtectionXmlFileNameNull: Self = StObject.set(x, "defenderExploitProtectionXmlFileName", null)
     
     @scala.inline
-    def setDefenderExploitProtectionXml(value: NullableOption[Double]): Self = this.set("defenderExploitProtectionXml", value.asInstanceOf[js.Any])
+    def setDefenderExploitProtectionXmlFileNameUndefined: Self = StObject.set(x, "defenderExploitProtectionXmlFileName", js.undefined)
     
     @scala.inline
-    def deleteDefenderExploitProtectionXml: Self = this.set("defenderExploitProtectionXml", js.undefined)
+    def setDefenderExploitProtectionXmlNull: Self = StObject.set(x, "defenderExploitProtectionXml", null)
     
     @scala.inline
-    def setDefenderExploitProtectionXmlNull: Self = this.set("defenderExploitProtectionXml", null)
+    def setDefenderExploitProtectionXmlUndefined: Self = StObject.set(x, "defenderExploitProtectionXml", js.undefined)
     
     @scala.inline
-    def setDefenderExploitProtectionXmlFileName(value: NullableOption[String]): Self = this.set("defenderExploitProtectionXmlFileName", value.asInstanceOf[js.Any])
+    def setDefenderGuardedFoldersAllowedAppPaths(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefenderExploitProtectionXmlFileName: Self = this.set("defenderExploitProtectionXmlFileName", js.undefined)
+    def setDefenderGuardedFoldersAllowedAppPathsNull: Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", null)
     
     @scala.inline
-    def setDefenderExploitProtectionXmlFileNameNull: Self = this.set("defenderExploitProtectionXmlFileName", null)
+    def setDefenderGuardedFoldersAllowedAppPathsUndefined: Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", js.undefined)
     
     @scala.inline
-    def setDefenderGuardedFoldersAllowedAppPathsVarargs(value: String*): Self = this.set("defenderGuardedFoldersAllowedAppPaths", js.Array(value :_*))
+    def setDefenderGuardedFoldersAllowedAppPathsVarargs(value: String*): Self = StObject.set(x, "defenderGuardedFoldersAllowedAppPaths", js.Array(value :_*))
     
     @scala.inline
-    def setDefenderGuardedFoldersAllowedAppPaths(value: NullableOption[js.Array[String]]): Self = this.set("defenderGuardedFoldersAllowedAppPaths", value.asInstanceOf[js.Any])
+    def setDefenderSecurityCenterBlockExploitProtectionOverride(value: Boolean): Self = StObject.set(x, "defenderSecurityCenterBlockExploitProtectionOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefenderGuardedFoldersAllowedAppPaths: Self = this.set("defenderGuardedFoldersAllowedAppPaths", js.undefined)
+    def setDefenderSecurityCenterBlockExploitProtectionOverrideUndefined: Self = StObject.set(x, "defenderSecurityCenterBlockExploitProtectionOverride", js.undefined)
     
     @scala.inline
-    def setDefenderGuardedFoldersAllowedAppPathsNull: Self = this.set("defenderGuardedFoldersAllowedAppPaths", null)
+    def setFirewallBlockStatefulFTP(value: NullableOption[Boolean]): Self = StObject.set(x, "firewallBlockStatefulFTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefenderSecurityCenterBlockExploitProtectionOverride(value: Boolean): Self = this.set("defenderSecurityCenterBlockExploitProtectionOverride", value.asInstanceOf[js.Any])
+    def setFirewallBlockStatefulFTPNull: Self = StObject.set(x, "firewallBlockStatefulFTP", null)
     
     @scala.inline
-    def deleteDefenderSecurityCenterBlockExploitProtectionOverride: Self = this.set("defenderSecurityCenterBlockExploitProtectionOverride", js.undefined)
+    def setFirewallBlockStatefulFTPUndefined: Self = StObject.set(x, "firewallBlockStatefulFTP", js.undefined)
     
     @scala.inline
-    def setFirewallBlockStatefulFTP(value: NullableOption[Boolean]): Self = this.set("firewallBlockStatefulFTP", value.asInstanceOf[js.Any])
+    def setFirewallCertificateRevocationListCheckMethod(value: FirewallCertificateRevocationListCheckMethodType): Self = StObject.set(x, "firewallCertificateRevocationListCheckMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirewallBlockStatefulFTP: Self = this.set("firewallBlockStatefulFTP", js.undefined)
+    def setFirewallCertificateRevocationListCheckMethodUndefined: Self = StObject.set(x, "firewallCertificateRevocationListCheckMethod", js.undefined)
     
     @scala.inline
-    def setFirewallBlockStatefulFTPNull: Self = this.set("firewallBlockStatefulFTP", null)
+    def setFirewallIPSecExemptionsAllowDHCP(value: Boolean): Self = StObject.set(x, "firewallIPSecExemptionsAllowDHCP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallCertificateRevocationListCheckMethod(value: FirewallCertificateRevocationListCheckMethodType): Self = this.set("firewallCertificateRevocationListCheckMethod", value.asInstanceOf[js.Any])
+    def setFirewallIPSecExemptionsAllowDHCPUndefined: Self = StObject.set(x, "firewallIPSecExemptionsAllowDHCP", js.undefined)
     
     @scala.inline
-    def deleteFirewallCertificateRevocationListCheckMethod: Self = this.set("firewallCertificateRevocationListCheckMethod", js.undefined)
+    def setFirewallIPSecExemptionsAllowICMP(value: Boolean): Self = StObject.set(x, "firewallIPSecExemptionsAllowICMP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallIPSecExemptionsAllowDHCP(value: Boolean): Self = this.set("firewallIPSecExemptionsAllowDHCP", value.asInstanceOf[js.Any])
+    def setFirewallIPSecExemptionsAllowICMPUndefined: Self = StObject.set(x, "firewallIPSecExemptionsAllowICMP", js.undefined)
     
     @scala.inline
-    def deleteFirewallIPSecExemptionsAllowDHCP: Self = this.set("firewallIPSecExemptionsAllowDHCP", js.undefined)
+    def setFirewallIPSecExemptionsAllowNeighborDiscovery(value: Boolean): Self = StObject.set(x, "firewallIPSecExemptionsAllowNeighborDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallIPSecExemptionsAllowICMP(value: Boolean): Self = this.set("firewallIPSecExemptionsAllowICMP", value.asInstanceOf[js.Any])
+    def setFirewallIPSecExemptionsAllowNeighborDiscoveryUndefined: Self = StObject.set(x, "firewallIPSecExemptionsAllowNeighborDiscovery", js.undefined)
     
     @scala.inline
-    def deleteFirewallIPSecExemptionsAllowICMP: Self = this.set("firewallIPSecExemptionsAllowICMP", js.undefined)
+    def setFirewallIPSecExemptionsAllowRouterDiscovery(value: Boolean): Self = StObject.set(x, "firewallIPSecExemptionsAllowRouterDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallIPSecExemptionsAllowNeighborDiscovery(value: Boolean): Self = this.set("firewallIPSecExemptionsAllowNeighborDiscovery", value.asInstanceOf[js.Any])
+    def setFirewallIPSecExemptionsAllowRouterDiscoveryUndefined: Self = StObject.set(x, "firewallIPSecExemptionsAllowRouterDiscovery", js.undefined)
     
     @scala.inline
-    def deleteFirewallIPSecExemptionsAllowNeighborDiscovery: Self = this.set("firewallIPSecExemptionsAllowNeighborDiscovery", js.undefined)
+    def setFirewallIdleTimeoutForSecurityAssociationInSeconds(value: NullableOption[Double]): Self = StObject.set(x, "firewallIdleTimeoutForSecurityAssociationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallIPSecExemptionsAllowRouterDiscovery(value: Boolean): Self = this.set("firewallIPSecExemptionsAllowRouterDiscovery", value.asInstanceOf[js.Any])
+    def setFirewallIdleTimeoutForSecurityAssociationInSecondsNull: Self = StObject.set(x, "firewallIdleTimeoutForSecurityAssociationInSeconds", null)
     
     @scala.inline
-    def deleteFirewallIPSecExemptionsAllowRouterDiscovery: Self = this.set("firewallIPSecExemptionsAllowRouterDiscovery", js.undefined)
+    def setFirewallIdleTimeoutForSecurityAssociationInSecondsUndefined: Self = StObject.set(x, "firewallIdleTimeoutForSecurityAssociationInSeconds", js.undefined)
     
     @scala.inline
-    def setFirewallIdleTimeoutForSecurityAssociationInSeconds(value: NullableOption[Double]): Self = this.set("firewallIdleTimeoutForSecurityAssociationInSeconds", value.asInstanceOf[js.Any])
+    def setFirewallMergeKeyingModuleSettings(value: NullableOption[Boolean]): Self = StObject.set(x, "firewallMergeKeyingModuleSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirewallIdleTimeoutForSecurityAssociationInSeconds: Self = this.set("firewallIdleTimeoutForSecurityAssociationInSeconds", js.undefined)
+    def setFirewallMergeKeyingModuleSettingsNull: Self = StObject.set(x, "firewallMergeKeyingModuleSettings", null)
     
     @scala.inline
-    def setFirewallIdleTimeoutForSecurityAssociationInSecondsNull: Self = this.set("firewallIdleTimeoutForSecurityAssociationInSeconds", null)
+    def setFirewallMergeKeyingModuleSettingsUndefined: Self = StObject.set(x, "firewallMergeKeyingModuleSettings", js.undefined)
     
     @scala.inline
-    def setFirewallMergeKeyingModuleSettings(value: NullableOption[Boolean]): Self = this.set("firewallMergeKeyingModuleSettings", value.asInstanceOf[js.Any])
+    def setFirewallPacketQueueingMethod(value: FirewallPacketQueueingMethodType): Self = StObject.set(x, "firewallPacketQueueingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirewallMergeKeyingModuleSettings: Self = this.set("firewallMergeKeyingModuleSettings", js.undefined)
+    def setFirewallPacketQueueingMethodUndefined: Self = StObject.set(x, "firewallPacketQueueingMethod", js.undefined)
     
     @scala.inline
-    def setFirewallMergeKeyingModuleSettingsNull: Self = this.set("firewallMergeKeyingModuleSettings", null)
+    def setFirewallPreSharedKeyEncodingMethod(value: FirewallPreSharedKeyEncodingMethodType): Self = StObject.set(x, "firewallPreSharedKeyEncodingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallPacketQueueingMethod(value: FirewallPacketQueueingMethodType): Self = this.set("firewallPacketQueueingMethod", value.asInstanceOf[js.Any])
+    def setFirewallPreSharedKeyEncodingMethodUndefined: Self = StObject.set(x, "firewallPreSharedKeyEncodingMethod", js.undefined)
     
     @scala.inline
-    def deleteFirewallPacketQueueingMethod: Self = this.set("firewallPacketQueueingMethod", js.undefined)
+    def setFirewallProfileDomain(value: NullableOption[WindowsFirewallNetworkProfile]): Self = StObject.set(x, "firewallProfileDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirewallPreSharedKeyEncodingMethod(value: FirewallPreSharedKeyEncodingMethodType): Self = this.set("firewallPreSharedKeyEncodingMethod", value.asInstanceOf[js.Any])
+    def setFirewallProfileDomainNull: Self = StObject.set(x, "firewallProfileDomain", null)
     
     @scala.inline
-    def deleteFirewallPreSharedKeyEncodingMethod: Self = this.set("firewallPreSharedKeyEncodingMethod", js.undefined)
+    def setFirewallProfileDomainUndefined: Self = StObject.set(x, "firewallProfileDomain", js.undefined)
     
     @scala.inline
-    def setFirewallProfileDomain(value: NullableOption[WindowsFirewallNetworkProfile]): Self = this.set("firewallProfileDomain", value.asInstanceOf[js.Any])
+    def setFirewallProfilePrivate(value: NullableOption[WindowsFirewallNetworkProfile]): Self = StObject.set(x, "firewallProfilePrivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirewallProfileDomain: Self = this.set("firewallProfileDomain", js.undefined)
+    def setFirewallProfilePrivateNull: Self = StObject.set(x, "firewallProfilePrivate", null)
     
     @scala.inline
-    def setFirewallProfileDomainNull: Self = this.set("firewallProfileDomain", null)
+    def setFirewallProfilePrivateUndefined: Self = StObject.set(x, "firewallProfilePrivate", js.undefined)
     
     @scala.inline
-    def setFirewallProfilePrivate(value: NullableOption[WindowsFirewallNetworkProfile]): Self = this.set("firewallProfilePrivate", value.asInstanceOf[js.Any])
+    def setFirewallProfilePublic(value: NullableOption[WindowsFirewallNetworkProfile]): Self = StObject.set(x, "firewallProfilePublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirewallProfilePrivate: Self = this.set("firewallProfilePrivate", js.undefined)
+    def setFirewallProfilePublicNull: Self = StObject.set(x, "firewallProfilePublic", null)
     
     @scala.inline
-    def setFirewallProfilePrivateNull: Self = this.set("firewallProfilePrivate", null)
+    def setFirewallProfilePublicUndefined: Self = StObject.set(x, "firewallProfilePublic", js.undefined)
     
     @scala.inline
-    def setFirewallProfilePublic(value: NullableOption[WindowsFirewallNetworkProfile]): Self = this.set("firewallProfilePublic", value.asInstanceOf[js.Any])
+    def setSmartScreenBlockOverrideForFiles(value: Boolean): Self = StObject.set(x, "smartScreenBlockOverrideForFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirewallProfilePublic: Self = this.set("firewallProfilePublic", js.undefined)
+    def setSmartScreenBlockOverrideForFilesUndefined: Self = StObject.set(x, "smartScreenBlockOverrideForFiles", js.undefined)
     
     @scala.inline
-    def setFirewallProfilePublicNull: Self = this.set("firewallProfilePublic", null)
+    def setSmartScreenEnableInShell(value: Boolean): Self = StObject.set(x, "smartScreenEnableInShell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartScreenBlockOverrideForFiles(value: Boolean): Self = this.set("smartScreenBlockOverrideForFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmartScreenBlockOverrideForFiles: Self = this.set("smartScreenBlockOverrideForFiles", js.undefined)
-    
-    @scala.inline
-    def setSmartScreenEnableInShell(value: Boolean): Self = this.set("smartScreenEnableInShell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmartScreenEnableInShell: Self = this.set("smartScreenEnableInShell", js.undefined)
+    def setSmartScreenEnableInShellUndefined: Self = StObject.set(x, "smartScreenEnableInShell", js.undefined)
   }
 }

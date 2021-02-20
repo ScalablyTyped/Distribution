@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distribution extends js.Object {
+trait Distribution extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
@@ -74,60 +75,48 @@ object Distribution {
   }
   
   @scala.inline
-  implicit class DistributionOps[Self <: Distribution] (val x: Self) extends AnyVal {
+  implicit class DistributionMutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTrustedKeyGroups(value: ActiveTrustedKeyGroups): Self = StObject.set(x, "ActiveTrustedKeyGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveTrustedKeyGroupsUndefined: Self = StObject.set(x, "ActiveTrustedKeyGroups", js.undefined)
     
     @scala.inline
-    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setActiveTrustedSigners(value: ActiveTrustedSigners): Self = StObject.set(x, "ActiveTrustedSigners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionConfig(value: DistributionConfig): Self = this.set("DistributionConfig", value.asInstanceOf[js.Any])
+    def setActiveTrustedSignersUndefined: Self = StObject.set(x, "ActiveTrustedSigners", js.undefined)
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setAliasICPRecordals(value: AliasICPRecordals): Self = StObject.set(x, "AliasICPRecordals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setAliasICPRecordalsUndefined: Self = StObject.set(x, "AliasICPRecordals", js.undefined)
     
     @scala.inline
-    def setInProgressInvalidationBatches(value: integer): Self = this.set("InProgressInvalidationBatches", value.asInstanceOf[js.Any])
+    def setAliasICPRecordalsVarargs(value: AliasICPRecordal*): Self = StObject.set(x, "AliasICPRecordals", js.Array(value :_*))
     
     @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTrustedKeyGroups(value: ActiveTrustedKeyGroups): Self = this.set("ActiveTrustedKeyGroups", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveTrustedKeyGroups: Self = this.set("ActiveTrustedKeyGroups", js.undefined)
+    def setInProgressInvalidationBatches(value: integer): Self = StObject.set(x, "InProgressInvalidationBatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTrustedSigners(value: ActiveTrustedSigners): Self = this.set("ActiveTrustedSigners", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveTrustedSigners: Self = this.set("ActiveTrustedSigners", js.undefined)
-    
-    @scala.inline
-    def setAliasICPRecordalsVarargs(value: AliasICPRecordal*): Self = this.set("AliasICPRecordals", js.Array(value :_*))
-    
-    @scala.inline
-    def setAliasICPRecordals(value: AliasICPRecordals): Self = this.set("AliasICPRecordals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAliasICPRecordals: Self = this.set("AliasICPRecordals", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

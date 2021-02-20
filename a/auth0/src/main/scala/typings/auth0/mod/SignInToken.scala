@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignInToken extends js.Object {
+trait SignInToken extends StObject {
   
   var access_token: String = js.native
   
@@ -24,36 +25,24 @@ object SignInToken {
   }
   
   @scala.inline
-  implicit class SignInTokenOps[Self <: SignInToken] (val x: Self) extends AnyVal {
+  implicit class SignInTokenMutableBuilder[Self <: SignInToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
     
     @scala.inline
-    def setExpiry(value: Double): Self = this.set("expiry", value.asInstanceOf[js.Any])
+    def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token(value: String): Self = this.set("id_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId_token: Self = this.set("id_token", js.undefined)
-    
-    @scala.inline
-    def setToken_type(value: String): Self = this.set("token_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken_type: Self = this.set("token_type", js.undefined)
+    def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
   }
 }

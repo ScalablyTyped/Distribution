@@ -1,5 +1,6 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.figmaStrings.ARROW_LINES
   - typings.figma.figmaStrings.ARROW_EQUILATERAL
 */
-trait StrokeCap extends js.Object
+trait StrokeCap extends StObject
 object StrokeCap {
   
   @scala.inline

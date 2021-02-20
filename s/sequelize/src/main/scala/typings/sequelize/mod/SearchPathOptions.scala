@@ -1,11 +1,12 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchPathOptions extends js.Object {
+trait SearchPathOptions extends StObject {
   
   /**
     * An optional parameter to specify the schema search_path (Postgres only)
@@ -26,30 +27,18 @@ object SearchPathOptions {
   }
   
   @scala.inline
-  implicit class SearchPathOptionsOps[Self <: SearchPathOptions] (val x: Self) extends AnyVal {
+  implicit class SearchPathOptionsMutableBuilder[Self <: SearchPathOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPath(value: String): Self = this.set("searchPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchPath: Self = this.set("searchPath", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultSetSummary extends js.Object {
+trait ResultSetSummary extends StObject {
   
   var batchId: Double = js.native
   
@@ -26,36 +27,24 @@ object ResultSetSummary {
   }
   
   @scala.inline
-  implicit class ResultSetSummaryOps[Self <: ResultSetSummary] (val x: Self) extends AnyVal {
+  implicit class ResultSetSummaryMutableBuilder[Self <: ResultSetSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnInfo(value: js.Array[IDbColumn]): Self = StObject.set(x, "columnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnInfoVarargs(value: IDbColumn*): Self = StObject.set(x, "columnInfo", js.Array(value :_*))
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnInfoVarargs(value: IDbColumn*): Self = this.set("columnInfo", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnInfo(value: js.Array[IDbColumn]): Self = this.set("columnInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComplete(value: Boolean): Self = this.set("complete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
   }
 }

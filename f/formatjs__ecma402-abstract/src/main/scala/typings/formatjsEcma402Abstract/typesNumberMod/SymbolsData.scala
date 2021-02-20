@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.typesNumberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SymbolsData extends js.Object {
+trait SymbolsData extends StObject {
   
   var decimal: String = js.native
   
@@ -53,54 +54,42 @@ object SymbolsData {
   }
   
   @scala.inline
-  implicit class SymbolsDataOps[Self <: SymbolsData] (val x: Self) extends AnyVal {
+  implicit class SymbolsDataMutableBuilder[Self <: SymbolsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExponential(value: String): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setInfinity(value: String): Self = StObject.set(x, "infinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExponential(value: String): Self = this.set("exponential", value.asInstanceOf[js.Any])
+    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setMinusSign(value: String): Self = StObject.set(x, "minusSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfinity(value: String): Self = this.set("infinity", value.asInstanceOf[js.Any])
+    def setNan(value: String): Self = StObject.set(x, "nan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setPerMille(value: String): Self = StObject.set(x, "perMille", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinusSign(value: String): Self = this.set("minusSign", value.asInstanceOf[js.Any])
+    def setPercentSign(value: String): Self = StObject.set(x, "percentSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNan(value: String): Self = this.set("nan", value.asInstanceOf[js.Any])
+    def setPlusSign(value: String): Self = StObject.set(x, "plusSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerMille(value: String): Self = this.set("perMille", value.asInstanceOf[js.Any])
+    def setSuperscriptingExponent(value: String): Self = StObject.set(x, "superscriptingExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentSign(value: String): Self = this.set("percentSign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlusSign(value: String): Self = this.set("plusSign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuperscriptingExponent(value: String): Self = this.set("superscriptingExponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSeparator(value: String): Self = this.set("timeSeparator", value.asInstanceOf[js.Any])
+    def setTimeSeparator(value: String): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
   }
 }

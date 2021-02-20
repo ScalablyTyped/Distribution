@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An update to a Counter sent from a worker.
   */
 @js.native
-trait SchemaCounterUpdate extends js.Object {
+trait SchemaCounterUpdate extends StObject {
   
   /**
     * Boolean value for And, Or.
@@ -97,108 +98,96 @@ object SchemaCounterUpdate {
   }
   
   @scala.inline
-  implicit class SchemaCounterUpdateOps[Self <: SchemaCounterUpdate] (val x: Self) extends AnyVal {
+  implicit class SchemaCounterUpdateMutableBuilder[Self <: SchemaCounterUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: Boolean): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
     @scala.inline
-    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    def setDistribution(value: SchemaDistributionUpdate): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulative(value: Boolean): Self = this.set("cumulative", value.asInstanceOf[js.Any])
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def deleteCumulative: Self = this.set("cumulative", js.undefined)
+    def setFloatingPoint(value: Double): Self = StObject.set(x, "floatingPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: SchemaDistributionUpdate): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    def setFloatingPointList(value: SchemaFloatingPointList): Self = StObject.set(x, "floatingPointList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setFloatingPointListUndefined: Self = StObject.set(x, "floatingPointList", js.undefined)
     
     @scala.inline
-    def setFloatingPoint(value: Double): Self = this.set("floatingPoint", value.asInstanceOf[js.Any])
+    def setFloatingPointMean(value: SchemaFloatingPointMean): Self = StObject.set(x, "floatingPointMean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloatingPoint: Self = this.set("floatingPoint", js.undefined)
+    def setFloatingPointMeanUndefined: Self = StObject.set(x, "floatingPointMean", js.undefined)
     
     @scala.inline
-    def setFloatingPointList(value: SchemaFloatingPointList): Self = this.set("floatingPointList", value.asInstanceOf[js.Any])
+    def setFloatingPointUndefined: Self = StObject.set(x, "floatingPoint", js.undefined)
     
     @scala.inline
-    def deleteFloatingPointList: Self = this.set("floatingPointList", js.undefined)
+    def setInteger(value: SchemaSplitInt64): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingPointMean(value: SchemaFloatingPointMean): Self = this.set("floatingPointMean", value.asInstanceOf[js.Any])
+    def setIntegerGauge(value: SchemaIntegerGauge): Self = StObject.set(x, "integerGauge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloatingPointMean: Self = this.set("floatingPointMean", js.undefined)
+    def setIntegerGaugeUndefined: Self = StObject.set(x, "integerGauge", js.undefined)
     
     @scala.inline
-    def setInteger(value: SchemaSplitInt64): Self = this.set("integer", value.asInstanceOf[js.Any])
+    def setIntegerList(value: SchemaIntegerList): Self = StObject.set(x, "integerList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInteger: Self = this.set("integer", js.undefined)
+    def setIntegerListUndefined: Self = StObject.set(x, "integerList", js.undefined)
     
     @scala.inline
-    def setIntegerGauge(value: SchemaIntegerGauge): Self = this.set("integerGauge", value.asInstanceOf[js.Any])
+    def setIntegerMean(value: SchemaIntegerMean): Self = StObject.set(x, "integerMean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntegerGauge: Self = this.set("integerGauge", js.undefined)
+    def setIntegerMeanUndefined: Self = StObject.set(x, "integerMean", js.undefined)
     
     @scala.inline
-    def setIntegerList(value: SchemaIntegerList): Self = this.set("integerList", value.asInstanceOf[js.Any])
+    def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
     @scala.inline
-    def deleteIntegerList: Self = this.set("integerList", js.undefined)
+    def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerMean(value: SchemaIntegerMean): Self = this.set("integerMean", value.asInstanceOf[js.Any])
+    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
     @scala.inline
-    def deleteIntegerMean: Self = this.set("integerMean", js.undefined)
+    def setNameAndKind(value: SchemaNameAndKind): Self = StObject.set(x, "nameAndKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal(value: js.Any): Self = this.set("internal", value.asInstanceOf[js.Any])
+    def setNameAndKindUndefined: Self = StObject.set(x, "nameAndKind", js.undefined)
     
     @scala.inline
-    def deleteInternal: Self = this.set("internal", js.undefined)
+    def setShortId(value: String): Self = StObject.set(x, "shortId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameAndKind(value: SchemaNameAndKind): Self = this.set("nameAndKind", value.asInstanceOf[js.Any])
+    def setShortIdUndefined: Self = StObject.set(x, "shortId", js.undefined)
     
     @scala.inline
-    def deleteNameAndKind: Self = this.set("nameAndKind", js.undefined)
+    def setStringList(value: SchemaStringList): Self = StObject.set(x, "stringList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortId(value: String): Self = this.set("shortId", value.asInstanceOf[js.Any])
+    def setStringListUndefined: Self = StObject.set(x, "stringList", js.undefined)
     
     @scala.inline
-    def deleteShortId: Self = this.set("shortId", js.undefined)
+    def setStructuredNameAndMetadata(value: SchemaCounterStructuredNameAndMetadata): Self = StObject.set(x, "structuredNameAndMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringList(value: SchemaStringList): Self = this.set("stringList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringList: Self = this.set("stringList", js.undefined)
-    
-    @scala.inline
-    def setStructuredNameAndMetadata(value: SchemaCounterStructuredNameAndMetadata): Self = this.set("structuredNameAndMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredNameAndMetadata: Self = this.set("structuredNameAndMetadata", js.undefined)
+    def setStructuredNameAndMetadataUndefined: Self = StObject.set(x, "structuredNameAndMetadata", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMedicalTranscriptionJobResponse extends js.Object {
+trait GetMedicalTranscriptionJobResponse extends StObject {
   
   /**
     * An object that contains the results of the medical transcription job.
@@ -21,24 +22,12 @@ object GetMedicalTranscriptionJobResponse {
   }
   
   @scala.inline
-  implicit class GetMedicalTranscriptionJobResponseOps[Self <: GetMedicalTranscriptionJobResponse] (val x: Self) extends AnyVal {
+  implicit class GetMedicalTranscriptionJobResponseMutableBuilder[Self <: GetMedicalTranscriptionJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedicalTranscriptionJob(value: MedicalTranscriptionJob): Self = StObject.set(x, "MedicalTranscriptionJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMedicalTranscriptionJob(value: MedicalTranscriptionJob): Self = this.set("MedicalTranscriptionJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedicalTranscriptionJob: Self = this.set("MedicalTranscriptionJob", js.undefined)
+    def setMedicalTranscriptionJobUndefined: Self = StObject.set(x, "MedicalTranscriptionJob", js.undefined)
   }
 }

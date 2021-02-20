@@ -2,12 +2,13 @@ package typings.meshblu
 
 import typings.meshblu.Meshblu.Connection
 import typings.meshblu.Meshblu.ConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshbluStatic extends js.Object {
+trait MeshbluStatic extends StObject {
   
   /**
     * Establish a secure socket.io connection to Meshblu.
@@ -25,21 +26,9 @@ object MeshbluStatic {
   }
   
   @scala.inline
-  implicit class MeshbluStaticOps[Self <: MeshbluStatic] (val x: Self) extends AnyVal {
+  implicit class MeshbluStaticMutableBuilder[Self <: MeshbluStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateConnection(value: ConnectionOptions => Connection): Self = this.set("createConnection", js.Any.fromFunction1(value))
+    def setCreateConnection(value: ConnectionOptions => Connection): Self = StObject.set(x, "createConnection", js.Any.fromFunction1(value))
   }
 }

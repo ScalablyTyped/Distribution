@@ -1,14 +1,15 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AutohideBehavior extends js.Object
+sealed trait AutohideBehavior extends StObject
 @JSGlobal("PlayerFramework.AutohideBehavior")
 @js.native
-object AutohideBehavior extends js.Object {
+object AutohideBehavior extends StObject {
   
   /**
     * All behaviors are applied to the autohide feature.

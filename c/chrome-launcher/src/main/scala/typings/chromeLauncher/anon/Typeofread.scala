@@ -11,12 +11,13 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofread extends js.Object {
+trait Typeofread extends StObject {
   
   def apply(
     fd: Double,

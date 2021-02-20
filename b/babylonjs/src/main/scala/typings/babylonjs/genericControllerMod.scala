@@ -1,14 +1,14 @@
 package typings.babylonjs
 
 import typings.babylonjs.webVRControllerMod.WebVRController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gamepads/Controllers/genericController", JSImport.Namespace)
-@js.native
-object genericControllerMod extends js.Object {
+object genericControllerMod {
   
+  @JSImport("babylonjs/Gamepads/Controllers/genericController", "GenericController")
   @js.native
   class GenericController protected () extends WebVRController {
     /**
@@ -18,17 +18,20 @@ object genericControllerMod extends js.Object {
     def this(vrGamepad: js.Any) = this()
   }
   /* static members */
-  @js.native
-  object GenericController extends js.Object {
+  object GenericController {
     
     /**
       * Base Url for the controller model.
       */
+    @JSImport("babylonjs/Gamepads/Controllers/genericController", "GenericController.MODEL_BASE_URL")
+    @js.native
     val MODEL_BASE_URL: String = js.native
     
     /**
       * File name for the controller model.
       */
+    @JSImport("babylonjs/Gamepads/Controllers/genericController", "GenericController.MODEL_FILENAME")
+    @js.native
     val MODEL_FILENAME: String = js.native
   }
 }

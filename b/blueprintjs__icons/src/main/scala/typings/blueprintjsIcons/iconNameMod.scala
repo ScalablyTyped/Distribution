@@ -1,12 +1,11 @@
 package typings.blueprintjsIcons
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/icons/lib/esm/iconName", JSImport.Namespace)
-@js.native
-object iconNameMod extends js.Object {
+object iconNameMod {
   
   type IconName = /* "endorsed" */ String
 }

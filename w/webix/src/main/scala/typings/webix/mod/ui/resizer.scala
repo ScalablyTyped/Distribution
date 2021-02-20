@@ -2,6 +2,7 @@ package typings.webix.mod.ui
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

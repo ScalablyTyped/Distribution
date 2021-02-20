@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrafeasV1beta1IntotoSignature extends js.Object {
+trait GrafeasV1beta1IntotoSignature extends StObject {
   
   var keyid: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object GrafeasV1beta1IntotoSignature {
   }
   
   @scala.inline
-  implicit class GrafeasV1beta1IntotoSignatureOps[Self <: GrafeasV1beta1IntotoSignature] (val x: Self) extends AnyVal {
+  implicit class GrafeasV1beta1IntotoSignatureMutableBuilder[Self <: GrafeasV1beta1IntotoSignature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyid(value: String): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyidUndefined: Self = StObject.set(x, "keyid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSig(value: String): Self = StObject.set(x, "sig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyid(value: String): Self = this.set("keyid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyid: Self = this.set("keyid", js.undefined)
-    
-    @scala.inline
-    def setSig(value: String): Self = this.set("sig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSig: Self = this.set("sig", js.undefined)
+    def setSigUndefined: Self = StObject.set(x, "sig", js.undefined)
   }
 }

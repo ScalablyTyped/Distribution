@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BudgetOrder extends js.Object {
+trait BudgetOrder extends StObject {
   
   def getBillingAccount(): BillingAccount = js.native
   
@@ -41,42 +42,30 @@ object BudgetOrder {
   }
   
   @scala.inline
-  implicit class BudgetOrderOps[Self <: BudgetOrder] (val x: Self) extends AnyVal {
+  implicit class BudgetOrderMutableBuilder[Self <: BudgetOrder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBillingAccount(value: () => BillingAccount): Self = StObject.set(x, "getBillingAccount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEndDatetime(value: () => AdWordsDate): Self = StObject.set(x, "getEndDatetime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBillingAccount(value: () => BillingAccount): Self = this.set("getBillingAccount", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEndDatetime(value: () => AdWordsDate): Self = this.set("getEndDatetime", js.Any.fromFunction0(value))
+    def setGetPoNumber(value: () => Double): Self = StObject.set(x, "getPoNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetSpendingLimit(value: () => Double): Self = StObject.set(x, "getSpendingLimit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetStartDateTime(value: () => AdWordsDate): Self = StObject.set(x, "getStartDateTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPoNumber(value: () => Double): Self = this.set("getPoNumber", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSpendingLimit(value: () => Double): Self = this.set("getSpendingLimit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStartDateTime(value: () => AdWordsDate): Self = this.set("getStartDateTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTotalAdjustments(value: () => Double): Self = this.set("getTotalAdjustments", js.Any.fromFunction0(value))
+    def setGetTotalAdjustments(value: () => Double): Self = StObject.set(x, "getTotalAdjustments", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.tensorflowTfjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs", "KernelBackend")
 @js.native
 class KernelBackend ()
-  extends typings.tensorflowTfjsCore.backendMod.KernelBackend
+  extends typings.tensorflowTfjsCore.mod.KernelBackend

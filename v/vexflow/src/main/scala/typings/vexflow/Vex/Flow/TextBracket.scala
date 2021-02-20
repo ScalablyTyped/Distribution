@@ -3,12 +3,13 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.Flow.TextBracket.Positions
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Family
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextBracket extends js.Object {
+trait TextBracket extends StObject {
   
   def applyStyle(context: IRenderContext): TextBracket = js.native
   
@@ -29,14 +30,13 @@ trait TextBracket extends js.Object {
   
   var stop: Note = js.native
 }
-@JSGlobal("Vex.Flow.TextBracket")
-@js.native
-object TextBracket extends js.Object {
+object TextBracket {
   
   @js.native
-  sealed trait Positions extends js.Object
+  sealed trait Positions extends StObject
+  @JSGlobal("Vex.Flow.TextBracket.Positions")
   @js.native
-  object Positions extends js.Object {
+  object Positions extends StObject {
     
     @js.native
     sealed trait BOTTOM extends Positions

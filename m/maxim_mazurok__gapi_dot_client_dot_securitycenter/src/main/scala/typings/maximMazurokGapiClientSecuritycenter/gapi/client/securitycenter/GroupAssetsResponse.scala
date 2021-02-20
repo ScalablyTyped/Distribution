@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupAssetsResponse extends js.Object {
+trait GroupAssetsResponse extends StObject {
   
   /**
     * Group results. There exists an element for each existing unique combination of property/values. The element contains a count for the number of times those specific property/values
@@ -31,45 +32,33 @@ object GroupAssetsResponse {
   }
   
   @scala.inline
-  implicit class GroupAssetsResponseOps[Self <: GroupAssetsResponse] (val x: Self) extends AnyVal {
+  implicit class GroupAssetsResponseMutableBuilder[Self <: GroupAssetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupByResults(value: js.Array[GroupResult]): Self = StObject.set(x, "groupByResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupByResultsUndefined: Self = StObject.set(x, "groupByResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupByResultsVarargs(value: GroupResult*): Self = StObject.set(x, "groupByResults", js.Array(value :_*))
     
     @scala.inline
-    def setGroupByResultsVarargs(value: GroupResult*): Self = this.set("groupByResults", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByResults(value: js.Array[GroupResult]): Self = this.set("groupByResults", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteGroupByResults: Self = this.set("groupByResults", js.undefined)
+    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadTime: Self = this.set("readTime", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

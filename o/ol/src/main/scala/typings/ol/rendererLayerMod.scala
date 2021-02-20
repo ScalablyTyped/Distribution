@@ -9,13 +9,18 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.std.HTMLElement
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/Layer", JSImport.Namespace)
-@js.native
-object rendererLayerMod extends js.Object {
+object rendererLayerMod {
+  
+  @JSImport("ol/renderer/Layer", JSImport.Default)
+  @js.native
+  class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends LayerRenderer[LayerType] {
+    def this(layer: LayerType) = this()
+  }
   
   @js.native
   trait LayerRenderer[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */]
@@ -81,10 +86,5 @@ object rendererLayerMod extends js.Object {
     def renderFrame(frameState: FrameState, target: HTMLElement): HTMLElement = js.native
     
     /* protected */ def renderIfReadyAndVisible(): Unit = js.native
-  }
-  
-  @js.native
-  class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends LayerRenderer[LayerType] {
-    def this(layer: LayerType) = this()
   }
 }

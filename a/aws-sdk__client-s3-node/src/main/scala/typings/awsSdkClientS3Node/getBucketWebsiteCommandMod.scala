@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesGetBucketWebsiteInputMod.GetBucketWebsite
 import typings.awsSdkClientS3Node.typesGetBucketWebsiteOutputMod.GetBucketWebsiteOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/GetBucketWebsiteCommand", JSImport.Namespace)
-@js.native
-object getBucketWebsiteCommandMod extends js.Object {
+object getBucketWebsiteCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/GetBucketWebsiteCommand", "GetBucketWebsiteCommand")
   @js.native
   class GetBucketWebsiteCommand protected () extends Command[
           InputTypesUnion, 

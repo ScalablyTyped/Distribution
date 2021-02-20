@@ -2,6 +2,7 @@ package typings.uirouterAngularjs.mod
 
 import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
 import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,9 +62,9 @@ class Resolvable protected ()
   def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
 }
 /* static members */
-@JSImport("@uirouter/angularjs", "Resolvable")
-@js.native
-object Resolvable extends js.Object {
+object Resolvable {
   
+  @JSImport("@uirouter/angularjs", "Resolvable.fromData")
+  @js.native
   def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = js.native
 }

@@ -5,12 +5,13 @@ import typings.evernote.mod.Types.NotebookDescriptor
 import typings.evernote.mod.Types.RelatedContent
 import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.UserProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheExpires extends js.Object {
+trait CacheExpires extends StObject {
   
   var cacheExpires: js.UndefOr[Double] = js.native
   
@@ -39,90 +40,78 @@ object CacheExpires {
   }
   
   @scala.inline
-  implicit class CacheExpiresOps[Self <: CacheExpires] (val x: Self) extends AnyVal {
+  implicit class CacheExpiresMutableBuilder[Self <: CacheExpires] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheExpires(value: Double): Self = StObject.set(x, "cacheExpires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheExpiresUndefined: Self = StObject.set(x, "cacheExpires", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheExpires(value: Double): Self = this.set("cacheExpires", value.asInstanceOf[js.Any])
+    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
     @scala.inline
-    def deleteCacheExpires: Self = this.set("cacheExpires", js.undefined)
+    def setContainingNotebooks(value: js.Array[NotebookDescriptor]): Self = StObject.set(x, "containingNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheKey(value: String): Self = this.set("cacheKey", value.asInstanceOf[js.Any])
+    def setContainingNotebooksUndefined: Self = StObject.set(x, "containingNotebooks", js.undefined)
     
     @scala.inline
-    def deleteCacheKey: Self = this.set("cacheKey", js.undefined)
+    def setContainingNotebooksVarargs(value: NotebookDescriptor*): Self = StObject.set(x, "containingNotebooks", js.Array(value :_*))
     
     @scala.inline
-    def setContainingNotebooksVarargs(value: NotebookDescriptor*): Self = this.set("containingNotebooks", js.Array(value :_*))
+    def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainingNotebooks(value: js.Array[NotebookDescriptor]): Self = this.set("containingNotebooks", value.asInstanceOf[js.Any])
+    def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
     
     @scala.inline
-    def deleteContainingNotebooks: Self = this.set("containingNotebooks", js.undefined)
+    def setExperts(value: js.Array[UserProfile]): Self = StObject.set(x, "experts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugInfo(value: String): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    def setExpertsUndefined: Self = StObject.set(x, "experts", js.undefined)
     
     @scala.inline
-    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    def setExpertsVarargs(value: UserProfile*): Self = StObject.set(x, "experts", js.Array(value :_*))
     
     @scala.inline
-    def setExpertsVarargs(value: UserProfile*): Self = this.set("experts", js.Array(value :_*))
+    def setNotebooks(value: js.Array[Notebook]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperts(value: js.Array[UserProfile]): Self = this.set("experts", value.asInstanceOf[js.Any])
+    def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
     @scala.inline
-    def deleteExperts: Self = this.set("experts", js.undefined)
+    def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
     
     @scala.inline
-    def setNotebooksVarargs(value: Notebook*): Self = this.set("notebooks", js.Array(value :_*))
+    def setNotes(value: js.Array[typings.evernote.mod.Types.Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebooks(value: js.Array[Notebook]): Self = this.set("notebooks", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteNotebooks: Self = this.set("notebooks", js.undefined)
+    def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
     @scala.inline
-    def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = this.set("notes", js.Array(value :_*))
+    def setRelatedContent(value: js.Array[RelatedContent]): Self = StObject.set(x, "relatedContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: js.Array[typings.evernote.mod.Types.Note]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setRelatedContentUndefined: Self = StObject.set(x, "relatedContent", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setRelatedContentVarargs(value: RelatedContent*): Self = StObject.set(x, "relatedContent", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedContentVarargs(value: RelatedContent*): Self = this.set("relatedContent", js.Array(value :_*))
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedContent(value: js.Array[RelatedContent]): Self = this.set("relatedContent", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRelatedContent: Self = this.set("relatedContent", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

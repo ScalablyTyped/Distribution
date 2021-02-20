@@ -1,34 +1,63 @@
 package typings.classValidator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/validation/ValidationTypes", JSImport.Namespace)
-@js.native
-object validationTypesMod extends js.Object {
+object validationTypesMod {
   
+  @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes")
   @js.native
-  class ValidationTypes () extends js.Object
+  class ValidationTypes () extends StObject
   /* static members */
-  @js.native
-  object ValidationTypes extends js.Object {
+  object ValidationTypes {
     
-    var CONDITIONAL_VALIDATION: String = js.native
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var CUSTOM_VALIDATION: String = js.native
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.CONDITIONAL_VALIDATION")
+    @js.native
+    def CONDITIONAL_VALIDATION: String = js.native
+    @scala.inline
+    def CONDITIONAL_VALIDATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONDITIONAL_VALIDATION")(x.asInstanceOf[js.Any])
     
-    var IS_DEFINED: String = js.native
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.CUSTOM_VALIDATION")
+    @js.native
+    def CUSTOM_VALIDATION: String = js.native
+    @scala.inline
+    def CUSTOM_VALIDATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CUSTOM_VALIDATION")(x.asInstanceOf[js.Any])
     
-    var NESTED_VALIDATION: String = js.native
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.IS_DEFINED")
+    @js.native
+    def IS_DEFINED: String = js.native
+    @scala.inline
+    def IS_DEFINED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_DEFINED")(x.asInstanceOf[js.Any])
     
-    var PROMISE_VALIDATION: String = js.native
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.NESTED_VALIDATION")
+    @js.native
+    def NESTED_VALIDATION: String = js.native
+    @scala.inline
+    def NESTED_VALIDATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NESTED_VALIDATION")(x.asInstanceOf[js.Any])
     
-    var WHITELIST: String = js.native
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.PROMISE_VALIDATION")
+    @js.native
+    def PROMISE_VALIDATION: String = js.native
+    @scala.inline
+    def PROMISE_VALIDATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROMISE_VALIDATION")(x.asInstanceOf[js.Any])
+    
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.WHITELIST")
+    @js.native
+    def WHITELIST: String = js.native
+    @scala.inline
+    def WHITELIST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITELIST")(x.asInstanceOf[js.Any])
     
     /**
       * Checks if validation type is valid.
       */
+    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.isValid")
+    @js.native
     def isValid(`type`: String): Boolean = js.native
   }
 }

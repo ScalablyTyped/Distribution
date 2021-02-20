@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryStringObject extends js.Object {
+trait QueryStringObject extends StObject {
   
   /**
     * Indicates whether the distribution forwards and caches based on query strings.
@@ -26,33 +27,21 @@ object QueryStringObject {
   }
   
   @scala.inline
-  implicit class QueryStringObjectOps[Self <: QueryStringObject] (val x: Self) extends AnyVal {
+  implicit class QueryStringObjectMutableBuilder[Self <: QueryStringObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryStringsAllowList(value: StringList): Self = StObject.set(x, "queryStringsAllowList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: Boolean): Self = this.set("option", value.asInstanceOf[js.Any])
+    def setQueryStringsAllowListUndefined: Self = StObject.set(x, "queryStringsAllowList", js.undefined)
     
     @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
-    
-    @scala.inline
-    def setQueryStringsAllowListVarargs(value: String*): Self = this.set("queryStringsAllowList", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueryStringsAllowList(value: StringList): Self = this.set("queryStringsAllowList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryStringsAllowList: Self = this.set("queryStringsAllowList", js.undefined)
+    def setQueryStringsAllowListVarargs(value: String*): Self = StObject.set(x, "queryStringsAllowList", js.Array(value :_*))
   }
 }

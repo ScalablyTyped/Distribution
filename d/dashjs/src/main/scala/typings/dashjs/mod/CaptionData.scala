@@ -2,12 +2,13 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.dashjs.anon.Align
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionData extends js.Object {
+trait CaptionData extends StObject {
   
   var cueID: js.UndefOr[String] = js.native
   
@@ -36,69 +37,57 @@ object CaptionData {
   }
   
   @scala.inline
-  implicit class CaptionDataOps[Self <: CaptionData] (val x: Self) extends AnyVal {
+  implicit class CaptionDataMutableBuilder[Self <: CaptionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCueID(value: String): Self = StObject.set(x, "cueID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCueIDUndefined: Self = StObject.set(x, "cueID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setEmbeddedImages(value: StringDictionary[String]): Self = StObject.set(x, "embeddedImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCueID(value: String): Self = this.set("cueID", value.asInstanceOf[js.Any])
+    def setEmbeddedImagesUndefined: Self = StObject.set(x, "embeddedImages", js.undefined)
     
     @scala.inline
-    def deleteCueID: Self = this.set("cueID", js.undefined)
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def setEmbeddedImages(value: StringDictionary[String]): Self = this.set("embeddedImages", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def deleteEmbeddedImages: Self = this.set("embeddedImages", js.undefined)
+    def setIsd(value: js.Object): Self = StObject.set(x, "isd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: String*): Self = this.set("images", js.Array(value :_*))
+    def setIsdUndefined: Self = StObject.set(x, "isd", js.undefined)
     
     @scala.inline
-    def setImages(value: js.Array[String]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setStyles(value: Align): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsd(value: js.Object): Self = this.set("isd", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteIsd: Self = this.set("isd", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: Align): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

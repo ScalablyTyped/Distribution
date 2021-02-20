@@ -3,12 +3,13 @@ package typings.dhtmlxgantt
 import typings.std.Date
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttStatic extends js.Object {
+trait GanttStatic extends StObject {
   
   /**
     * redefines the default click behavior for buttons of the Gantt chart

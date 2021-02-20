@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchStopJobRunRequest extends js.Object {
+trait BatchStopJobRunRequest extends StObject {
   
   /**
     * The name of the job definition for which to stop job runs.
@@ -26,27 +27,15 @@ object BatchStopJobRunRequest {
   }
   
   @scala.inline
-  implicit class BatchStopJobRunRequestOps[Self <: BatchStopJobRunRequest] (val x: Self) extends AnyVal {
+  implicit class BatchStopJobRunRequestMutableBuilder[Self <: BatchStopJobRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobRunIds(value: BatchStopJobRunJobRunIdList): Self = StObject.set(x, "JobRunIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobRunIdsVarargs(value: IdString*): Self = this.set("JobRunIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setJobRunIds(value: BatchStopJobRunJobRunIdList): Self = this.set("JobRunIds", value.asInstanceOf[js.Any])
+    def setJobRunIdsVarargs(value: IdString*): Self = StObject.set(x, "JobRunIds", js.Array(value :_*))
   }
 }

@@ -1,13 +1,14 @@
 package typings.storybookAddons
 
 import typings.storybookChannels.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addons/dist/storybook-channel-mock", JSImport.Namespace)
-@js.native
-object storybookChannelMockMod extends js.Object {
+object storybookChannelMockMod {
   
+  @JSImport("@storybook/addons/dist/storybook-channel-mock", "mockChannel")
+  @js.native
   def mockChannel(): default = js.native
 }

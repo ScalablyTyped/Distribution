@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelViewEditorOptions extends js.Object {
+trait ModelViewEditorOptions extends StObject {
   
   /**
     * Resource name for this editor
@@ -33,36 +34,24 @@ object ModelViewEditorOptions {
   }
   
   @scala.inline
-  implicit class ModelViewEditorOptionsOps[Self <: ModelViewEditorOptions] (val x: Self) extends AnyVal {
+  implicit class ModelViewEditorOptionsMutableBuilder[Self <: ModelViewEditorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setSupportsSave(value: Boolean): Self = StObject.set(x, "supportsSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainContextWhenHidden(value: Boolean): Self = this.set("retainContextWhenHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainContextWhenHidden: Self = this.set("retainContextWhenHidden", js.undefined)
-    
-    @scala.inline
-    def setSupportsSave(value: Boolean): Self = this.set("supportsSave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsSave: Self = this.set("supportsSave", js.undefined)
+    def setSupportsSaveUndefined: Self = StObject.set(x, "supportsSave", js.undefined)
   }
 }

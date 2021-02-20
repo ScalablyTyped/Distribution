@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stats extends js.Object {
+trait Stats extends StObject {
   
   var length: js.UndefOr[Double] = js.native
   
@@ -37,42 +38,30 @@ object Stats {
   }
   
   @scala.inline
-  implicit class StatsOps[Self <: Stats] (val x: Self) extends AnyVal {
+  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtime(value: Double): Self = this.set("mtime", value.asInstanceOf[js.Any])
+    def setTbuffered(value: Double): Self = StObject.set(x, "tbuffered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTfirst(value: Double): Self = this.set("tfirst", value.asInstanceOf[js.Any])
+    def setTbufferedUndefined: Self = StObject.set(x, "tbuffered", js.undefined)
     
     @scala.inline
-    def setTload(value: Double): Self = this.set("tload", value.asInstanceOf[js.Any])
+    def setTfirst(value: Double): Self = StObject.set(x, "tfirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrequest(value: Double): Self = this.set("trequest", value.asInstanceOf[js.Any])
+    def setTload(value: Double): Self = StObject.set(x, "tload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
-    
-    @scala.inline
-    def setTbuffered(value: Double): Self = this.set("tbuffered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTbuffered: Self = this.set("tbuffered", js.undefined)
+    def setTrequest(value: Double): Self = StObject.set(x, "trequest", value.asInstanceOf[js.Any])
   }
 }

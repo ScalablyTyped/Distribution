@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTrafficPolicyVersionRequest extends js.Object {
+trait CreateTrafficPolicyVersionRequest extends StObject {
   
   /**
     * The comment that you specified in the CreateTrafficPolicyVersion request, if any.
@@ -31,30 +32,18 @@ object CreateTrafficPolicyVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateTrafficPolicyVersionRequestOps[Self <: CreateTrafficPolicyVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTrafficPolicyVersionRequestMutableBuilder[Self <: CreateTrafficPolicyVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: TrafficPolicyComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocument(value: TrafficPolicyDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: TrafficPolicyDocument): Self = this.set("Document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComment(value: TrafficPolicyComment): Self = this.set("Comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

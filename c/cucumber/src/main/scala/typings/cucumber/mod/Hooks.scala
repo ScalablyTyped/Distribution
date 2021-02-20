@@ -1,12 +1,13 @@
 package typings.cucumber.mod
 
 import typings.cucumber.anon.Attach
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hooks extends js.Object {
+trait Hooks extends StObject {
   
   def After(code: HookCode): Unit = js.native
   def After(options: String, code: HookCode): Unit = js.native

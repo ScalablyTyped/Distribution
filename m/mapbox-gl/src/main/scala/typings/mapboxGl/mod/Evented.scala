@@ -1,13 +1,14 @@
 package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "Evented")
 @js.native
-class Evented () extends js.Object {
+class Evented () extends StObject {
   
   // https://github.com/mapbox/mapbox-gl-js/issues/6522
   def fire(`type`: String): this.type = js.native

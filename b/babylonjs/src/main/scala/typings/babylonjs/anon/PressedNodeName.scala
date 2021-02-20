@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PressedNodeName extends js.Object {
+trait PressedNodeName extends StObject {
   
   var pressedNodeName: String = js.native
   
@@ -22,27 +23,15 @@ object PressedNodeName {
   }
   
   @scala.inline
-  implicit class PressedNodeNameOps[Self <: PressedNodeName] (val x: Self) extends AnyVal {
+  implicit class PressedNodeNameMutableBuilder[Self <: PressedNodeName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPressedNodeName(value: String): Self = StObject.set(x, "pressedNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnpressedNodeName(value: String): Self = StObject.set(x, "unpressedNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPressedNodeName(value: String): Self = this.set("pressedNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnpressedNodeName(value: String): Self = this.set("unpressedNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueNodeName(value: String): Self = this.set("valueNodeName", value.asInstanceOf[js.Any])
+    def setValueNodeName(value: String): Self = StObject.set(x, "valueNodeName", value.asInstanceOf[js.Any])
   }
 }

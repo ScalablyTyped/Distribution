@@ -1,11 +1,12 @@
 package typings.historyJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryState extends js.Object {
+trait HistoryState extends StObject {
   
   var cleanUrl: js.UndefOr[String] = js.native
   
@@ -26,45 +27,33 @@ object HistoryState {
   }
   
   @scala.inline
-  implicit class HistoryStateOps[Self <: HistoryState] (val x: Self) extends AnyVal {
+  implicit class HistoryStateMutableBuilder[Self <: HistoryState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCleanUrl(value: String): Self = StObject.set(x, "cleanUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCleanUrlUndefined: Self = StObject.set(x, "cleanUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setCleanUrl(value: String): Self = this.set("cleanUrl", value.asInstanceOf[js.Any])
+    def setHashedUrl(value: String): Self = StObject.set(x, "hashedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCleanUrl: Self = this.set("cleanUrl", js.undefined)
+    def setHashedUrlUndefined: Self = StObject.set(x, "hashedUrl", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setHashedUrl(value: String): Self = this.set("hashedUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHashedUrl: Self = this.set("hashedUrl", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the binding that raised the DataChanged event.
   */
 @js.native
-trait BindingDataChangedEventArgs extends js.Object {
+trait BindingDataChangedEventArgs extends StObject {
   
   /**
     * Gets an {@link Office.Binding} object that represents the binding that raised the DataChanged event.
@@ -30,24 +31,12 @@ object BindingDataChangedEventArgs {
   }
   
   @scala.inline
-  implicit class BindingDataChangedEventArgsOps[Self <: BindingDataChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class BindingDataChangedEventArgsMutableBuilder[Self <: BindingDataChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBinding(value: Binding): Self = this.set("binding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: EventType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

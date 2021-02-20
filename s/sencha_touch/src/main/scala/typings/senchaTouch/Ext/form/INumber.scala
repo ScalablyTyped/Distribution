@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.form
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,72 +57,60 @@ object INumber {
   }
   
   @scala.inline
-  implicit class INumberOps[Self <: INumber] (val x: Self) extends AnyVal {
+  implicit class INumberMutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMaxValue(value: () => Double): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaxValueUndefined: Self = StObject.set(x, "getMaxValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMinValue(value: () => Double): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxValue(value: () => Double): Self = this.set("getMaxValue", js.Any.fromFunction0(value))
+    def setGetMinValueUndefined: Self = StObject.set(x, "getMinValue", js.undefined)
     
     @scala.inline
-    def deleteGetMaxValue: Self = this.set("getMaxValue", js.undefined)
+    def setGetStepValue(value: () => Double): Self = StObject.set(x, "getStepValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinValue(value: () => Double): Self = this.set("getMinValue", js.Any.fromFunction0(value))
+    def setGetStepValueUndefined: Self = StObject.set(x, "getStepValue", js.undefined)
     
     @scala.inline
-    def deleteGetMinValue: Self = this.set("getMinValue", js.undefined)
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStepValue(value: () => Double): Self = this.set("getStepValue", js.Any.fromFunction0(value))
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteGetStepValue: Self = this.set("getStepValue", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Unit): Self = this.set("setMaxValue", js.Any.fromFunction1(value))
+    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
     @scala.inline
-    def deleteSetMaxValue: Self = this.set("setMaxValue", js.undefined)
+    def setSetStepValue(value: /* stepValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStepValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Unit): Self = this.set("setMinValue", js.Any.fromFunction1(value))
+    def setSetStepValueUndefined: Self = StObject.set(x, "setStepValue", js.undefined)
     
     @scala.inline
-    def deleteSetMinValue: Self = this.set("setMinValue", js.undefined)
+    def setStepValue(value: Double): Self = StObject.set(x, "stepValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStepValue(value: /* stepValue */ js.UndefOr[Double] => Unit): Self = this.set("setStepValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetStepValue: Self = this.set("setStepValue", js.undefined)
-    
-    @scala.inline
-    def setStepValue(value: Double): Self = this.set("stepValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepValue: Self = this.set("stepValue", js.undefined)
+    def setStepValueUndefined: Self = StObject.set(x, "stepValue", js.undefined)
   }
 }

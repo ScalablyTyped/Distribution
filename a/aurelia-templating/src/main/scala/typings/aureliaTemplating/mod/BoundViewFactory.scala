@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.aureliaDependencyInjection.mod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "BoundViewFactory")
 @js.native
-class BoundViewFactory protected () extends js.Object {
+class BoundViewFactory protected () extends StObject {
   /**
     * Creates an instance of BoundViewFactory.
     * @param parentContainer The parent DI container.

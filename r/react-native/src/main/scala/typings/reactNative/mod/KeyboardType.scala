@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,10 @@ trait KeyboardType extends _KeyboardTypeOptions
 object KeyboardType {
   
   @scala.inline
-  def `decimal-pad`: typings.reactNative.reactNativeStrings.`decimal-pad` = "decimal-pad".asInstanceOf[typings.reactNative.reactNativeStrings.`decimal-pad`]
+  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   
   @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
+  def `decimal-pad`: typings.reactNative.reactNativeStrings.`decimal-pad` = "decimal-pad".asInstanceOf[typings.reactNative.reactNativeStrings.`decimal-pad`]
   
   @scala.inline
   def `email-address`: typings.reactNative.reactNativeStrings.`email-address` = "email-address".asInstanceOf[typings.reactNative.reactNativeStrings.`email-address`]

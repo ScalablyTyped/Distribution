@@ -1,5 +1,6 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,9 +125,7 @@ class Collection[T] () extends Object {
     */
   def setAt(index: Double, elem: T): Unit = js.native
 }
-@JSImport("openlayers", "Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
   
   /**
     * @classdesc
@@ -136,6 +135,7 @@ object Collection extends js.Object {
     * @param type Type.
     * @param opt_element Element.
     */
+  @JSImport("openlayers", "Collection.Event")
   @js.native
   class Event protected ()
     extends typings.openlayers.mod.events.Event {

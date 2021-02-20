@@ -1,5 +1,6 @@
 package typings.node.tlsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.node.nodeStrings.TLSv1Dot1
   - typings.node.nodeStrings.TLSv1
 */
-trait SecureVersion extends js.Object
+trait SecureVersion extends StObject
 object SecureVersion {
   
   @scala.inline

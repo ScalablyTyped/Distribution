@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,24 +37,12 @@ object XProperty {
   }
   
   @scala.inline
-  implicit class XPropertyOps[Self <: XProperty] (val x: Self) extends AnyVal {
+  implicit class XPropertyMutableBuilder[Self <: XProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsProperty(value: Property): Self = StObject.set(x, "AsProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsProperty(value: Property): Self = this.set("AsProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAsProperty(value: () => Property): Self = this.set("getAsProperty", js.Any.fromFunction0(value))
+    def setGetAsProperty(value: () => Property): Self = StObject.set(x, "getAsProperty", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotPlacement extends js.Object {
+trait SpotPlacement extends StObject {
   
   /**
     * The Availability Zone. [Spot Fleet only] To specify multiple Availability Zones, separate them using commas; for example, "us-west-2a, us-west-2b".
@@ -31,36 +32,24 @@ object SpotPlacement {
   }
   
   @scala.inline
-  implicit class SpotPlacementOps[Self <: SpotPlacement] (val x: Self) extends AnyVal {
+  implicit class SpotPlacementMutableBuilder[Self <: SpotPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
-    
-    @scala.inline
-    def setTenancy(value: Tenancy): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,11 +38,11 @@ class ScreenSpaceReflectionPostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.ScreenSpaceReflectionPostProcess")
-@js.native
-object ScreenSpaceReflectionPostProcess extends js.Object {
+object ScreenSpaceReflectionPostProcess {
   
   /** @hidden */
+  @JSGlobal("BABYLON.ScreenSpaceReflectionPostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,

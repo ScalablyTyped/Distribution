@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendServiceFailoverPolicy extends js.Object {
+trait BackendServiceFailoverPolicy extends StObject {
   
   /**
     * This can be set to true only if the protocol is TCP.
@@ -37,36 +38,24 @@ object BackendServiceFailoverPolicy {
   }
   
   @scala.inline
-  implicit class BackendServiceFailoverPolicyOps[Self <: BackendServiceFailoverPolicy] (val x: Self) extends AnyVal {
+  implicit class BackendServiceFailoverPolicyMutableBuilder[Self <: BackendServiceFailoverPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableConnectionDrainOnFailover(value: Boolean): Self = StObject.set(x, "disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableConnectionDrainOnFailoverUndefined: Self = StObject.set(x, "disableConnectionDrainOnFailover", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropTrafficIfUnhealthy(value: Boolean): Self = StObject.set(x, "dropTrafficIfUnhealthy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableConnectionDrainOnFailover(value: Boolean): Self = this.set("disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
+    def setDropTrafficIfUnhealthyUndefined: Self = StObject.set(x, "dropTrafficIfUnhealthy", js.undefined)
     
     @scala.inline
-    def deleteDisableConnectionDrainOnFailover: Self = this.set("disableConnectionDrainOnFailover", js.undefined)
+    def setFailoverRatio(value: Double): Self = StObject.set(x, "failoverRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropTrafficIfUnhealthy(value: Boolean): Self = this.set("dropTrafficIfUnhealthy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropTrafficIfUnhealthy: Self = this.set("dropTrafficIfUnhealthy", js.undefined)
-    
-    @scala.inline
-    def setFailoverRatio(value: Double): Self = this.set("failoverRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailoverRatio: Self = this.set("failoverRatio", js.undefined)
+    def setFailoverRatioUndefined: Self = StObject.set(x, "failoverRatio", js.undefined)
   }
 }

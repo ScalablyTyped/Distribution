@@ -1,5 +1,6 @@
 package typings.googleapis.datastoreV1Mod.datastoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for Datastore.Lookup.
   */
 @js.native
-trait SchemaLookupRequest extends js.Object {
+trait SchemaLookupRequest extends StObject {
   
   /**
     * Keys of entities to look up.
@@ -29,33 +30,21 @@ object SchemaLookupRequest {
   }
   
   @scala.inline
-  implicit class SchemaLookupRequestOps[Self <: SchemaLookupRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaLookupRequestMutableBuilder[Self <: SchemaLookupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeys(value: js.Array[SchemaKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: SchemaKey*): Self = this.set("keys", js.Array(value :_*))
+    def setReadOptions(value: SchemaReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: js.Array[SchemaKey]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
-    
-    @scala.inline
-    def setReadOptions(value: SchemaReadOptions): Self = this.set("readOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOptions: Self = this.set("readOptions", js.undefined)
+    def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
   }
 }

@@ -2,16 +2,16 @@ package typings.wordpressCustomizeBrowser
 
 import typings.jquery.JQuery.Callbacks
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/customize-browser/Events", JSImport.Namespace)
-@js.native
-object eventsMod extends js.Object {
+object eventsMod {
   
+  @JSImport("@wordpress/customize-browser/Events", "Events")
   @js.native
-  class Events[T /* <: /* keyof any */ String */] () extends js.Object {
+  class Events[T /* <: /* keyof any */ String */] () extends StObject {
     
     def bind(id: T): this.type = js.native
     

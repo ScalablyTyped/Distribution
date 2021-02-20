@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * go/fbs-posix.
   */
 @js.native
-trait SchemaUserPosixAccount extends js.Object {
+trait SchemaUserPosixAccount extends StObject {
   
   /**
     * A POSIX account field identifier.
@@ -70,78 +71,66 @@ object SchemaUserPosixAccount {
   }
   
   @scala.inline
-  implicit class SchemaUserPosixAccountOps[Self <: SchemaUserPosixAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaUserPosixAccountMutableBuilder[Self <: SchemaUserPosixAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGecos(value: String): Self = StObject.set(x, "gecos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setGecosUndefined: Self = StObject.set(x, "gecos", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGecos(value: String): Self = this.set("gecos", value.asInstanceOf[js.Any])
+    def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
     
     @scala.inline
-    def deleteGecos: Self = this.set("gecos", js.undefined)
+    def setHomeDirectory(value: String): Self = StObject.set(x, "homeDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGid(value: String): Self = this.set("gid", value.asInstanceOf[js.Any])
+    def setHomeDirectoryUndefined: Self = StObject.set(x, "homeDirectory", js.undefined)
     
     @scala.inline
-    def deleteGid: Self = this.set("gid", js.undefined)
+    def setOperatingSystemType(value: String): Self = StObject.set(x, "operatingSystemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDirectory(value: String): Self = this.set("homeDirectory", value.asInstanceOf[js.Any])
+    def setOperatingSystemTypeUndefined: Self = StObject.set(x, "operatingSystemType", js.undefined)
     
     @scala.inline
-    def deleteHomeDirectory: Self = this.set("homeDirectory", js.undefined)
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystemType(value: String): Self = this.set("operatingSystemType", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystemType: Self = this.set("operatingSystemType", js.undefined)
+    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShell(value: String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
     
     @scala.inline
-    def deleteShell: Self = this.set("shell", js.undefined)
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemId(value: String): Self = this.set("systemId", value.asInstanceOf[js.Any])
+    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
     @scala.inline
-    def deleteSystemId: Self = this.set("systemId", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUid: Self = this.set("uid", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

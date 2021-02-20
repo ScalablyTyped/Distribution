@@ -1,11 +1,12 @@
 package typings.knockoutPaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutPageGenerator extends js.Object {
+trait KnockoutPageGenerator extends StObject {
   
   def generate[T](pagedObservable: KnockoutPagedObservableArray[T]): js.Array[Double] = js.native
 }
@@ -18,21 +19,9 @@ object KnockoutPageGenerator {
   }
   
   @scala.inline
-  implicit class KnockoutPageGeneratorOps[Self <: KnockoutPageGenerator] (val x: Self) extends AnyVal {
+  implicit class KnockoutPageGeneratorMutableBuilder[Self <: KnockoutPageGenerator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenerate(value: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): Self = this.set("generate", js.Any.fromFunction1(value))
+    def setGenerate(value: KnockoutPagedObservableArray[js.Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }
 }

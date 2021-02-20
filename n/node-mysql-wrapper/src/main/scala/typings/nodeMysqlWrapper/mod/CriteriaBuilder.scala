@@ -1,15 +1,16 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "CriteriaBuilder")
 @js.native
-class CriteriaBuilder[T] protected () extends js.Object {
+class CriteriaBuilder[T] protected () extends StObject {
   def this(primaryTable: Table[T]) = this()
   def this(primaryTable: Table[T], tablePropertyName: String) = this()
-   //to arxiko apo to Table.ts 9a benei
+  //to arxiko apo to Table.ts 9a benei
   def this(primaryTable: Table[T], tableName: String, parentBuilder: CriteriaBuilder[_]) = this()
   def this(
     primaryTable: Table[T],
@@ -55,10 +56,10 @@ class CriteriaBuilder[T] protected () extends js.Object {
   
   def where(key: String, value: js.Any): CriteriaBuilder[T] = js.native
 }
-/* static members */
-@JSImport("node-mysql-wrapper", "CriteriaBuilder")
-@js.native
-object CriteriaBuilder extends js.Object {
+object CriteriaBuilder {
   
+  /* static member */
+  @JSImport("node-mysql-wrapper", "CriteriaBuilder.from")
+  @js.native
   def from[T](table: Table[T]): CriteriaBuilder[T] = js.native
 }

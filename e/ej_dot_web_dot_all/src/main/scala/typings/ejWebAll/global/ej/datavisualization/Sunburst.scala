@@ -1,15 +1,15 @@
 package typings.ejWebAll.global.ej.datavisualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.datavisualization.Sunburst")
-@js.native
-object Sunburst extends js.Object {
+object Sunburst {
   
+  @JSGlobal("ej.datavisualization.Sunburst.Animation")
   @js.native
-  object Animation extends js.Object {
+  object Animation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.Animation with Double] = js.native
@@ -19,8 +19,9 @@ object Sunburst extends js.Object {
     /* 0 */ val Rotation: typings.ejWebAll.ej.datavisualization.Sunburst.Animation.Rotation with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.FontStyle")
   @js.native
-  object FontStyle extends js.Object {
+  object FontStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.FontStyle with Double] = js.native
@@ -30,8 +31,9 @@ object Sunburst extends js.Object {
     /* 0 */ val Normal: typings.ejWebAll.ej.datavisualization.Sunburst.FontStyle.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.FontWeight")
   @js.native
-  object FontWeight extends js.Object {
+  object FontWeight extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.FontWeight with Double] = js.native
@@ -43,8 +45,9 @@ object Sunburst extends js.Object {
     /* 0 */ val Regular: typings.ejWebAll.ej.datavisualization.Sunburst.FontWeight.Regular with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstAlignment")
   @js.native
-  object SunburstAlignment extends js.Object {
+  object SunburstAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.SunburstAlignment with Double] = js.native
@@ -56,8 +59,9 @@ object Sunburst extends js.Object {
     /* 1 */ val Near: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstAlignment.Near with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstClickAction")
   @js.native
-  object SunburstClickAction extends js.Object {
+  object SunburstClickAction extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.SunburstClickAction with Double] = js.native
@@ -69,8 +73,9 @@ object Sunburst extends js.Object {
     /* 1 */ val ToggleSegmentVisibility: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstClickAction.ToggleSegmentVisibility with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstHighlightMode")
   @js.native
-  object SunburstHighlightMode extends js.Object {
+  object SunburstHighlightMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.SunburstHighlightMode with Double] = js.native
@@ -84,8 +89,9 @@ object Sunburst extends js.Object {
     /* 0 */ val Point: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstHighlightMode.Point with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstHighlightType")
   @js.native
-  object SunburstHighlightType extends js.Object {
+  object SunburstHighlightType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.SunburstHighlightType with Double] = js.native
@@ -95,8 +101,9 @@ object Sunburst extends js.Object {
     /* 0 */ val Opacity: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstHighlightType.Opacity with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstHorizontalAlignment")
   @js.native
-  object SunburstHorizontalAlignment extends js.Object {
+  object SunburstHorizontalAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -110,8 +117,9 @@ object Sunburst extends js.Object {
     /* 2 */ val Right: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstHorizontalAlignment.Right with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstLabelOverflowMode")
   @js.native
-  object SunburstLabelOverflowMode extends js.Object {
+  object SunburstLabelOverflowMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -125,8 +133,9 @@ object Sunburst extends js.Object {
     /* 0 */ val Trim: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.Trim with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstLabelRotationMode")
   @js.native
-  object SunburstLabelRotationMode extends js.Object {
+  object SunburstLabelRotationMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -138,8 +147,9 @@ object Sunburst extends js.Object {
     /* 1 */ val Normal: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstLegendPosition")
   @js.native
-  object SunburstLegendPosition extends js.Object {
+  object SunburstLegendPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -155,8 +165,9 @@ object Sunburst extends js.Object {
     /* 2 */ val Top: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstLegendPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstLegendShape")
   @js.native
-  object SunburstLegendShape extends js.Object {
+  object SunburstLegendShape extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.SunburstLegendShape with Double] = js.native
@@ -174,8 +185,9 @@ object Sunburst extends js.Object {
     /* 5 */ val Triangle: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstLegendShape.Triangle with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstTheme")
   @js.native
-  object SunburstTheme extends js.Object {
+  object SunburstTheme extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sunburst.SunburstTheme with Double] = js.native
@@ -185,8 +197,9 @@ object Sunburst extends js.Object {
     /* 0 */ val FlatLight: typings.ejWebAll.ej.datavisualization.Sunburst.SunburstTheme.FlatLight with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sunburst.SunburstVerticalAlignment")
   @js.native
-  object SunburstVerticalAlignment extends js.Object {
+  object SunburstVerticalAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

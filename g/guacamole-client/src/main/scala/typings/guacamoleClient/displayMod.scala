@@ -11,16 +11,16 @@ import typings.std.Blob
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/Display", JSImport.Namespace)
-@js.native
-object displayMod extends js.Object {
+object displayMod {
   
+  @JSImport("guacamole-client/lib/Display", "Display")
   @js.native
-  class Display () extends js.Object {
+  class Display () extends StObject {
     
     /**
       * Add the specified arc to the current path.
@@ -559,8 +559,7 @@ object displayMod extends js.Object {
       */
     def transform(layer: Layer, a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Unit = js.native
   }
-  @js.native
-  object Display extends js.Object {
+  object Display {
     
     type VisibleLayer = Instantiable2[
         /* width */ Double, 

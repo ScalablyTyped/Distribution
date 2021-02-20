@@ -1,11 +1,12 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILockWorkingCopyOptions extends js.Object {
+trait ILockWorkingCopyOptions extends StObject {
   
   /**
     * The duration in seconds after which the lock will expire. Only applicable for lock type "edit".
@@ -36,39 +37,27 @@ object ILockWorkingCopyOptions {
   }
   
   @scala.inline
-  implicit class ILockWorkingCopyOptionsOps[Self <: ILockWorkingCopyOptions] (val x: Self) extends AnyVal {
+  implicit class ILockWorkingCopyOptionsMutableBuilder[Self <: ILockWorkingCopyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockType(value: LockType): Self = this.set("lockType", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
-    
-    @scala.inline
-    def setLockId(value: String): Self = this.set("lockId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockId: Self = this.set("lockId", js.undefined)
+    def setLockType(value: LockType): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
   }
 }

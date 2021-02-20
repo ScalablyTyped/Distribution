@@ -6,14 +6,15 @@ import typings.jimpJpeg.mod.Jpeg
 import typings.jimpPng.mod.PNG
 import typings.jimpTiff.mod.Tiff
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/types", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jimp/types", JSImport.Default)
+  @js.native
   def default(): Types = js.native
   
   type BmpRet = ReturnType[js.Function0[Bmp]]

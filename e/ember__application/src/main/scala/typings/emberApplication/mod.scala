@@ -3,21 +3,34 @@ package typings.emberApplication
 import typings.emberApplication.anon.Instantiate
 import typings.emberApplication.typesMod.EventDispatcherEvents
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/application", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@ember/application", JSImport.Default)
+  @js.native
+  class default () extends Application
+  
+  @JSImport("@ember/application", "getOwner")
+  @js.native
   def getOwner(`object`: js.Any): js.Any = js.native
   
+  @JSImport("@ember/application", "onLoad")
+  @js.native
   def onLoad(name: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   
+  @JSImport("@ember/application", "runLoadHooks")
+  @js.native
   def runLoadHooks(name: String): js.Any = js.native
+  @JSImport("@ember/application", "runLoadHooks")
+  @js.native
   def runLoadHooks(name: String, `object`: js.Object): js.Any = js.native
   
+  @JSImport("@ember/application", "setOwner")
+  @js.native
   def setOwner(`object`: js.Any, owner: js.Any): Unit = js.native
   
   @js.native
@@ -129,7 +142,4 @@ object mod extends js.Object {
       */
     def setupForTesting(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends Application
 }

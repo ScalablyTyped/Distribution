@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ti.Event * / any */ @js.native
-trait RefreshControlBaseEvent extends js.Object {
+trait RefreshControlBaseEvent extends StObject {
   
   /**
     * Source object that fired the event.
@@ -25,21 +26,9 @@ object RefreshControlBaseEvent {
   }
   
   @scala.inline
-  implicit class RefreshControlBaseEventOps[Self <: RefreshControlBaseEvent] (val x: Self) extends AnyVal {
+  implicit class RefreshControlBaseEventMutableBuilder[Self <: RefreshControlBaseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSource(value: RefreshControl): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: RefreshControl): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

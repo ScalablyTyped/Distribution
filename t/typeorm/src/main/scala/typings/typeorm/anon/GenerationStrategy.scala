@@ -4,12 +4,13 @@ import typings.typeorm.columnTypesMod.ColumnType
 import typings.typeorm.typeormStrings.increment
 import typings.typeorm.typeormStrings.rowid
 import typings.typeorm.typeormStrings.uuid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerationStrategy extends js.Object {
+trait GenerationStrategy extends StObject {
   
   var generationStrategy: js.UndefOr[increment | uuid | rowid] = js.native
   
@@ -34,63 +35,51 @@ object GenerationStrategy {
   }
   
   @scala.inline
-  implicit class GenerationStrategyOps[Self <: GenerationStrategy] (val x: Self) extends AnyVal {
+  implicit class GenerationStrategyMutableBuilder[Self <: GenerationStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerationStrategy(value: increment | uuid | rowid): Self = StObject.set(x, "generationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerationStrategyUndefined: Self = StObject.set(x, "generationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerationStrategy(value: increment | uuid | rowid): Self = this.set("generationStrategy", value.asInstanceOf[js.Any])
+    def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
     
     @scala.inline
-    def deleteGenerationStrategy: Self = this.set("generationStrategy", js.undefined)
+    def setIsGenerated(value: Boolean): Self = StObject.set(x, "isGenerated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsArray(value: Boolean): Self = this.set("isArray", value.asInstanceOf[js.Any])
+    def setIsGeneratedUndefined: Self = StObject.set(x, "isGenerated", js.undefined)
     
     @scala.inline
-    def deleteIsArray: Self = this.set("isArray", js.undefined)
+    def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGenerated(value: Boolean): Self = this.set("isGenerated", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIsGenerated: Self = this.set("isGenerated", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double | String): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setPrecisionNull: Self = StObject.set(x, "precision", null)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setPrecisionNull: Self = this.set("precision", null)
+    def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setType(value: ColumnType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

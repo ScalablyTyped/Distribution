@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A unique identifier for a Cloud Repo.
   */
 @js.native
-trait SchemaRepoId extends js.Object {
+trait SchemaRepoId extends StObject {
   
   /**
     * A combination of a project ID and a repo name.
@@ -29,30 +30,18 @@ object SchemaRepoId {
   }
   
   @scala.inline
-  implicit class SchemaRepoIdOps[Self <: SchemaRepoId] (val x: Self) extends AnyVal {
+  implicit class SchemaRepoIdMutableBuilder[Self <: SchemaRepoId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectRepoId(value: SchemaProjectRepoId): Self = StObject.set(x, "projectRepoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectRepoIdUndefined: Self = StObject.set(x, "projectRepoId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectRepoId(value: SchemaProjectRepoId): Self = this.set("projectRepoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectRepoId: Self = this.set("projectRepoId", js.undefined)
-    
-    @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUid: Self = this.set("uid", js.undefined)
+    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.joi.mod
 import typings.joi.joiStrings.all
 import typings.joi.joiStrings.any
 import typings.joi.joiStrings.one
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

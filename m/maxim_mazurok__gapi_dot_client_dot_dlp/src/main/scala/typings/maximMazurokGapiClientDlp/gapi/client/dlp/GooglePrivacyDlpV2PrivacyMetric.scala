@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2PrivacyMetric extends js.Object {
+trait GooglePrivacyDlpV2PrivacyMetric extends StObject {
   
   /** Categorical stats */
   var categoricalStatsConfig: js.UndefOr[GooglePrivacyDlpV2CategoricalStatsConfig] = js.native
@@ -34,54 +35,42 @@ object GooglePrivacyDlpV2PrivacyMetric {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2PrivacyMetricOps[Self <: GooglePrivacyDlpV2PrivacyMetric] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2PrivacyMetricMutableBuilder[Self <: GooglePrivacyDlpV2PrivacyMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalStatsConfig(value: GooglePrivacyDlpV2CategoricalStatsConfig): Self = StObject.set(x, "categoricalStatsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalStatsConfigUndefined: Self = StObject.set(x, "categoricalStatsConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaPresenceEstimationConfig(value: GooglePrivacyDlpV2DeltaPresenceEstimationConfig): Self = StObject.set(x, "deltaPresenceEstimationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalStatsConfig(value: GooglePrivacyDlpV2CategoricalStatsConfig): Self = this.set("categoricalStatsConfig", value.asInstanceOf[js.Any])
+    def setDeltaPresenceEstimationConfigUndefined: Self = StObject.set(x, "deltaPresenceEstimationConfig", js.undefined)
     
     @scala.inline
-    def deleteCategoricalStatsConfig: Self = this.set("categoricalStatsConfig", js.undefined)
+    def setKAnonymityConfig(value: GooglePrivacyDlpV2KAnonymityConfig): Self = StObject.set(x, "kAnonymityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaPresenceEstimationConfig(value: GooglePrivacyDlpV2DeltaPresenceEstimationConfig): Self = this.set("deltaPresenceEstimationConfig", value.asInstanceOf[js.Any])
+    def setKAnonymityConfigUndefined: Self = StObject.set(x, "kAnonymityConfig", js.undefined)
     
     @scala.inline
-    def deleteDeltaPresenceEstimationConfig: Self = this.set("deltaPresenceEstimationConfig", js.undefined)
+    def setKMapEstimationConfig(value: GooglePrivacyDlpV2KMapEstimationConfig): Self = StObject.set(x, "kMapEstimationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKAnonymityConfig(value: GooglePrivacyDlpV2KAnonymityConfig): Self = this.set("kAnonymityConfig", value.asInstanceOf[js.Any])
+    def setKMapEstimationConfigUndefined: Self = StObject.set(x, "kMapEstimationConfig", js.undefined)
     
     @scala.inline
-    def deleteKAnonymityConfig: Self = this.set("kAnonymityConfig", js.undefined)
+    def setLDiversityConfig(value: GooglePrivacyDlpV2LDiversityConfig): Self = StObject.set(x, "lDiversityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMapEstimationConfig(value: GooglePrivacyDlpV2KMapEstimationConfig): Self = this.set("kMapEstimationConfig", value.asInstanceOf[js.Any])
+    def setLDiversityConfigUndefined: Self = StObject.set(x, "lDiversityConfig", js.undefined)
     
     @scala.inline
-    def deleteKMapEstimationConfig: Self = this.set("kMapEstimationConfig", js.undefined)
+    def setNumericalStatsConfig(value: GooglePrivacyDlpV2NumericalStatsConfig): Self = StObject.set(x, "numericalStatsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLDiversityConfig(value: GooglePrivacyDlpV2LDiversityConfig): Self = this.set("lDiversityConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLDiversityConfig: Self = this.set("lDiversityConfig", js.undefined)
-    
-    @scala.inline
-    def setNumericalStatsConfig(value: GooglePrivacyDlpV2NumericalStatsConfig): Self = this.set("numericalStatsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericalStatsConfig: Self = this.set("numericalStatsConfig", js.undefined)
+    def setNumericalStatsConfigUndefined: Self = StObject.set(x, "numericalStatsConfig", js.undefined)
   }
 }

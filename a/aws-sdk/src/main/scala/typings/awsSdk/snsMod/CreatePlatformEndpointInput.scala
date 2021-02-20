@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePlatformEndpointInput extends js.Object {
+trait CreatePlatformEndpointInput extends StObject {
   
   /**
     * For a list of attributes, see SetEndpointAttributes.
@@ -36,36 +37,24 @@ object CreatePlatformEndpointInput {
   }
   
   @scala.inline
-  implicit class CreatePlatformEndpointInputOps[Self <: CreatePlatformEndpointInput] (val x: Self) extends AnyVal {
+  implicit class CreatePlatformEndpointInputMutableBuilder[Self <: CreatePlatformEndpointInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomUserData(value: String): Self = StObject.set(x, "CustomUserData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformApplicationArn(value: String): Self = this.set("PlatformApplicationArn", value.asInstanceOf[js.Any])
+    def setCustomUserDataUndefined: Self = StObject.set(x, "CustomUserData", js.undefined)
     
     @scala.inline
-    def setToken(value: String): Self = this.set("Token", value.asInstanceOf[js.Any])
+    def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: MapStringToString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
-    
-    @scala.inline
-    def setCustomUserData(value: String): Self = this.set("CustomUserData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomUserData: Self = this.set("CustomUserData", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
   }
 }

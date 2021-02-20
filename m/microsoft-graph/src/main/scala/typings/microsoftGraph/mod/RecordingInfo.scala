@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordingInfo extends js.Object {
+trait RecordingInfo extends StObject {
   
   // The identities of the recording initiator.
   var initiator: js.UndefOr[NullableOption[IdentitySet]] = js.native
@@ -22,33 +23,21 @@ object RecordingInfo {
   }
   
   @scala.inline
-  implicit class RecordingInfoOps[Self <: RecordingInfo] (val x: Self) extends AnyVal {
+  implicit class RecordingInfoMutableBuilder[Self <: RecordingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitiator(value: NullableOption[IdentitySet]): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitiatorNull: Self = StObject.set(x, "initiator", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
     
     @scala.inline
-    def setInitiator(value: NullableOption[IdentitySet]): Self = this.set("initiator", value.asInstanceOf[js.Any])
+    def setRecordingStatus(value: RecordingStatus): Self = StObject.set(x, "recordingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitiator: Self = this.set("initiator", js.undefined)
-    
-    @scala.inline
-    def setInitiatorNull: Self = this.set("initiator", null)
-    
-    @scala.inline
-    def setRecordingStatus(value: RecordingStatus): Self = this.set("recordingStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordingStatus: Self = this.set("recordingStatus", js.undefined)
+    def setRecordingStatusUndefined: Self = StObject.set(x, "recordingStatus", js.undefined)
   }
 }

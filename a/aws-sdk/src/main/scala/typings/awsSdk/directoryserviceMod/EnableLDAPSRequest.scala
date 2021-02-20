@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableLDAPSRequest extends js.Object {
+trait EnableLDAPSRequest extends StObject {
   
   /**
     * The identifier of the directory.
@@ -26,24 +27,12 @@ object EnableLDAPSRequest {
   }
   
   @scala.inline
-  implicit class EnableLDAPSRequestOps[Self <: EnableLDAPSRequest] (val x: Self) extends AnyVal {
+  implicit class EnableLDAPSRequestMutableBuilder[Self <: EnableLDAPSRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: LDAPSType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: LDAPSType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

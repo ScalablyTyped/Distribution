@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object SnapshotCreate {
   }
   
   @scala.inline
-  implicit class SnapshotCreateOps[Self <: SnapshotCreate] (val x: Self) extends AnyVal {
+  implicit class SnapshotCreateMutableBuilder[Self <: SnapshotCreate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: String): Self = this.set("snapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSalt(value: String): Self = this.set("salt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSalt: Self = this.set("salt", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

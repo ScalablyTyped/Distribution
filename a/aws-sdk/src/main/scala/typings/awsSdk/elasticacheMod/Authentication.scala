@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authentication extends js.Object {
+trait Authentication extends StObject {
   
   /**
     * The number of passwords belonging to the user. The maximum is two.
@@ -26,30 +27,18 @@ object Authentication {
   }
   
   @scala.inline
-  implicit class AuthenticationOps[Self <: Authentication] (val x: Self) extends AnyVal {
+  implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPasswordCount(value: IntegerOptional): Self = StObject.set(x, "PasswordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordCountUndefined: Self = StObject.set(x, "PasswordCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: AuthenticationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordCount(value: IntegerOptional): Self = this.set("PasswordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordCount: Self = this.set("PasswordCount", js.undefined)
-    
-    @scala.inline
-    def setType(value: AuthenticationType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

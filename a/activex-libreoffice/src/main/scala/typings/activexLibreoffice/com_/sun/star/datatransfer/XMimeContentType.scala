@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,48 +102,36 @@ object XMimeContentType {
   }
   
   @scala.inline
-  implicit class XMimeContentTypeOps[Self <: XMimeContentType] (val x: Self) extends AnyVal {
+  implicit class XMimeContentTypeMutableBuilder[Self <: XMimeContentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullMediaType(value: String): Self = StObject.set(x, "FullMediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFullMediaType(value: () => String): Self = StObject.set(x, "getFullMediaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMediaSubtype(value: () => String): Self = StObject.set(x, "getMediaSubtype", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullMediaType(value: String): Self = this.set("FullMediaType", value.asInstanceOf[js.Any])
+    def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMediaSubtype(value: String): Self = this.set("MediaSubtype", value.asInstanceOf[js.Any])
+    def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMediaType(value: String): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    def setGetParameters(value: () => SafeArray[String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParameters(value: SafeArray[String]): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setHasParameter(value: String => Boolean): Self = StObject.set(x, "hasParameter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFullMediaType(value: () => String): Self = this.set("getFullMediaType", js.Any.fromFunction0(value))
+    def setMediaSubtype(value: String): Self = StObject.set(x, "MediaSubtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMediaSubtype(value: () => String): Self = this.set("getMediaSubtype", js.Any.fromFunction0(value))
+    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMediaType(value: () => String): Self = this.set("getMediaType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParameterValue(value: String => String): Self = this.set("getParameterValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetParameters(value: () => SafeArray[String]): Self = this.set("getParameters", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasParameter(value: String => Boolean): Self = this.set("hasParameter", js.Any.fromFunction1(value))
+    def setParameters(value: SafeArray[String]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

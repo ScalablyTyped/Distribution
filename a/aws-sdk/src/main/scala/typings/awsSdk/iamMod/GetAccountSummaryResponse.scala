@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccountSummaryResponse extends js.Object {
+trait GetAccountSummaryResponse extends StObject {
   
   /**
     * A set of key–value pairs containing information about IAM entity usage and IAM quotas.
@@ -21,24 +22,12 @@ object GetAccountSummaryResponse {
   }
   
   @scala.inline
-  implicit class GetAccountSummaryResponseOps[Self <: GetAccountSummaryResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccountSummaryResponseMutableBuilder[Self <: GetAccountSummaryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSummaryMap(value: summaryMapType): Self = StObject.set(x, "SummaryMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSummaryMap(value: summaryMapType): Self = this.set("SummaryMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryMap: Self = this.set("SummaryMap", js.undefined)
+    def setSummaryMapUndefined: Self = StObject.set(x, "SummaryMap", js.undefined)
   }
 }

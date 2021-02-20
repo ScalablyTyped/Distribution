@@ -2,6 +2,7 @@ package typings.jupyterlabServices.messagesMod
 
 import typings.jupyterlabServices.anon.Text
 import typings.jupyterlabServices.jupyterlabServicesStrings.ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,39 +39,27 @@ object IInfoReply {
   }
   
   @scala.inline
-  implicit class IInfoReplyOps[Self <: IInfoReply] (val x: Self) extends AnyVal {
+  implicit class IInfoReplyMutableBuilder[Self <: IInfoReply] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelp_links(value: js.Array[Text]): Self = StObject.set(x, "help_links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelp_linksVarargs(value: Text*): Self = StObject.set(x, "help_links", js.Array(value :_*))
     
     @scala.inline
-    def setBanner(value: String): Self = this.set("banner", value.asInstanceOf[js.Any])
+    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp_linksVarargs(value: Text*): Self = this.set("help_links", js.Array(value :_*))
+    def setImplementation_version(value: String): Self = StObject.set(x, "implementation_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp_links(value: js.Array[Text]): Self = this.set("help_links", value.asInstanceOf[js.Any])
+    def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementation(value: String): Self = this.set("implementation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImplementation_version(value: String): Self = this.set("implementation_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguage_info(value: ILanguageInfo): Self = this.set("language_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol_version(value: String): Self = this.set("protocol_version", value.asInstanceOf[js.Any])
+    def setProtocol_version(value: String): Self = StObject.set(x, "protocol_version", value.asInstanceOf[js.Any])
   }
 }

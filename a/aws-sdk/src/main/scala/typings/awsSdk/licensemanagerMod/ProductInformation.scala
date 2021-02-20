@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductInformation extends js.Object {
+trait ProductInformation extends StObject {
   
   /**
     * Product information filters. The following filters and logical operators are supported when the resource type is SSM_MANAGED:    Application Name - The name of the application. Logical operator is EQUALS.    Application Publisher - The publisher of the application. Logical operator is EQUALS.    Application Version - The version of the application. Logical operator is EQUALS.    Platform Name - The name of the platform. Logical operator is EQUALS.    Platform Type - The platform type. Logical operator is EQUALS.    License Included - The type of license included. Logical operators are EQUALS and NOT_EQUALS. Possible values are: sql-server-enterprise | sql-server-standard | sql-server-web | windows-server-datacenter.   The following filters and logical operators are supported when the resource type is RDS:    Engine Edition - The edition of the database engine. Logical operator is EQUALS. Possible values are: oracle-ee | oracle-se | oracle-se1 | oracle-se2.    License Pack - The license pack. Logical operator is EQUALS. Possible values are: data guard | diagnostic pack sqlt | tuning pack sqlt | ols | olap.  
@@ -26,27 +27,15 @@ object ProductInformation {
   }
   
   @scala.inline
-  implicit class ProductInformationOps[Self <: ProductInformation] (val x: Self) extends AnyVal {
+  implicit class ProductInformationMutableBuilder[Self <: ProductInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductInformationFilterList(value: ProductInformationFilterList): Self = StObject.set(x, "ProductInformationFilterList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductInformationFilterListVarargs(value: ProductInformationFilter*): Self = StObject.set(x, "ProductInformationFilterList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductInformationFilterListVarargs(value: ProductInformationFilter*): Self = this.set("ProductInformationFilterList", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductInformationFilterList(value: ProductInformationFilterList): Self = this.set("ProductInformationFilterList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceType(value: String): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

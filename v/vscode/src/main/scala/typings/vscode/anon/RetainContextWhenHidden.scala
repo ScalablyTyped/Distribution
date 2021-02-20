@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetainContextWhenHidden extends js.Object {
+trait RetainContextWhenHidden extends StObject {
   
   /**
     * Controls if the webview element itself (iframe) is kept around even when the view
@@ -34,24 +35,12 @@ object RetainContextWhenHidden {
   }
   
   @scala.inline
-  implicit class RetainContextWhenHiddenOps[Self <: RetainContextWhenHidden] (val x: Self) extends AnyVal {
+  implicit class RetainContextWhenHiddenMutableBuilder[Self <: RetainContextWhenHidden] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRetainContextWhenHidden(value: Boolean): Self = this.set("retainContextWhenHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainContextWhenHidden: Self = this.set("retainContextWhenHidden", js.undefined)
+    def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
   }
 }

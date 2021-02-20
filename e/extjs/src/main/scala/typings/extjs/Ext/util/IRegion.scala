@@ -1,6 +1,7 @@
 package typings.extjs.Ext.util
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -126,116 +127,104 @@ object IRegion {
   }
   
   @scala.inline
-  implicit class IRegionOps[Self <: IRegion] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IRegionMutableBuilder[Self <: IRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAdjust(
       value: (/* top */ js.UndefOr[Double], /* right */ js.UndefOr[Double], /* bottom */ js.UndefOr[Double], /* left */ js.UndefOr[Double]) => IRegion
-    ): Self = this.set("adjust", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "adjust", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteAdjust: Self = this.set("adjust", js.undefined)
+    def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
     
     @scala.inline
-    def setConstrainTo(value: /* targetRegion */ js.UndefOr[IRegion] => IRegion): Self = this.set("constrainTo", js.Any.fromFunction1(value))
+    def setConstrainTo(value: /* targetRegion */ js.UndefOr[IRegion] => IRegion): Self = StObject.set(x, "constrainTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteConstrainTo: Self = this.set("constrainTo", js.undefined)
+    def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
     @scala.inline
-    def setContains(value: /* region */ js.UndefOr[IRegion] => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setContains(value: /* region */ js.UndefOr[IRegion] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def setCopy(value: () => IRegion): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setCopy(value: () => IRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setCopyFrom(value: /* p */ js.UndefOr[IRegion] => IRegion): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyFrom(value: /* p */ js.UndefOr[IRegion] => IRegion): Self = this.set("copyFrom", js.Any.fromFunction1(value))
+    def setCopyFromUndefined: Self = StObject.set(x, "copyFrom", js.undefined)
     
     @scala.inline
-    def deleteCopyFrom: Self = this.set("copyFrom", js.undefined)
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def setEquals(value: /* region */ js.UndefOr[IRegion] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setEquals_(value: /* region */ js.UndefOr[IRegion] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def setGetOutOfBoundOffset(value: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[IPoint]) => IOffset): Self = this.set("getOutOfBoundOffset", js.Any.fromFunction2(value))
+    def setGetOutOfBoundOffset(value: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[IPoint]) => IOffset): Self = StObject.set(x, "getOutOfBoundOffset", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetOutOfBoundOffset: Self = this.set("getOutOfBoundOffset", js.undefined)
+    def setGetOutOfBoundOffsetUndefined: Self = StObject.set(x, "getOutOfBoundOffset", js.undefined)
     
     @scala.inline
-    def setGetOutOfBoundOffsetX(value: /* p */ js.UndefOr[Double] => Double): Self = this.set("getOutOfBoundOffsetX", js.Any.fromFunction1(value))
+    def setGetOutOfBoundOffsetX(value: /* p */ js.UndefOr[Double] => Double): Self = StObject.set(x, "getOutOfBoundOffsetX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetOutOfBoundOffsetX: Self = this.set("getOutOfBoundOffsetX", js.undefined)
+    def setGetOutOfBoundOffsetXUndefined: Self = StObject.set(x, "getOutOfBoundOffsetX", js.undefined)
     
     @scala.inline
-    def setGetOutOfBoundOffsetY(value: /* p */ js.UndefOr[Double] => Double): Self = this.set("getOutOfBoundOffsetY", js.Any.fromFunction1(value))
+    def setGetOutOfBoundOffsetY(value: /* p */ js.UndefOr[Double] => Double): Self = StObject.set(x, "getOutOfBoundOffsetY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetOutOfBoundOffsetY: Self = this.set("getOutOfBoundOffsetY", js.undefined)
+    def setGetOutOfBoundOffsetYUndefined: Self = StObject.set(x, "getOutOfBoundOffsetY", js.undefined)
     
     @scala.inline
-    def setIntersect(value: /* region */ js.UndefOr[IRegion] => _): Self = this.set("intersect", js.Any.fromFunction1(value))
+    def setIntersect(value: /* region */ js.UndefOr[IRegion] => _): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIntersect: Self = this.set("intersect", js.undefined)
+    def setIntersectUndefined: Self = StObject.set(x, "intersect", js.undefined)
     
     @scala.inline
-    def setIsOutOfBound(value: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any]) => Boolean): Self = this.set("isOutOfBound", js.Any.fromFunction2(value))
+    def setIsOutOfBound(value: (/* axis */ js.UndefOr[String], /* p */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isOutOfBound", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteIsOutOfBound: Self = this.set("isOutOfBound", js.undefined)
+    def setIsOutOfBoundUndefined: Self = StObject.set(x, "isOutOfBound", js.undefined)
     
     @scala.inline
-    def setIsOutOfBoundX(value: /* p */ js.UndefOr[Double] => Boolean): Self = this.set("isOutOfBoundX", js.Any.fromFunction1(value))
+    def setIsOutOfBoundX(value: /* p */ js.UndefOr[Double] => Boolean): Self = StObject.set(x, "isOutOfBoundX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsOutOfBoundX: Self = this.set("isOutOfBoundX", js.undefined)
+    def setIsOutOfBoundXUndefined: Self = StObject.set(x, "isOutOfBoundX", js.undefined)
     
     @scala.inline
-    def setIsOutOfBoundY(value: /* p */ js.UndefOr[Double] => Boolean): Self = this.set("isOutOfBoundY", js.Any.fromFunction1(value))
+    def setIsOutOfBoundY(value: /* p */ js.UndefOr[Double] => Boolean): Self = StObject.set(x, "isOutOfBoundY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsOutOfBoundY: Self = this.set("isOutOfBoundY", js.undefined)
+    def setIsOutOfBoundYUndefined: Self = StObject.set(x, "isOutOfBoundY", js.undefined)
     
     @scala.inline
-    def setRound(value: () => IRegion): Self = this.set("round", js.Any.fromFunction0(value))
+    def setRound(value: () => IRegion): Self = StObject.set(x, "round", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRound: Self = this.set("round", js.undefined)
+    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
     @scala.inline
-    def setTranslateBy(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion): Self = this.set("translateBy", js.Any.fromFunction2(value))
+    def setTranslateBy(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion): Self = StObject.set(x, "translateBy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteTranslateBy: Self = this.set("translateBy", js.undefined)
+    def setTranslateByUndefined: Self = StObject.set(x, "translateBy", js.undefined)
     
     @scala.inline
-    def setUnion(value: /* region */ js.UndefOr[IRegion] => IRegion): Self = this.set("union", js.Any.fromFunction1(value))
+    def setUnion(value: /* region */ js.UndefOr[IRegion] => IRegion): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteUnion: Self = this.set("union", js.undefined)
+    def setUnionUndefined: Self = StObject.set(x, "union", js.undefined)
   }
 }

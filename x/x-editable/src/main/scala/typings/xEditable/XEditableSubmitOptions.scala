@@ -1,11 +1,12 @@
 package typings.xEditable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XEditableSubmitOptions extends js.Object {
+trait XEditableSubmitOptions extends StObject {
   
   var ajaxOptions: js.UndefOr[js.Any] = js.native
   
@@ -26,42 +27,30 @@ object XEditableSubmitOptions {
   }
   
   @scala.inline
-  implicit class XEditableSubmitOptionsOps[Self <: XEditableSubmitOptions] (val x: Self) extends AnyVal {
+  implicit class XEditableSubmitOptionsMutableBuilder[Self <: XEditableSubmitOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: js.Any => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setSuccess(value: (js.Any, js.Any) => Unit): Self = this.set("success", js.Any.fromFunction2(value))
+    def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAjaxOptions(value: js.Any): Self = this.set("ajaxOptions", value.asInstanceOf[js.Any])
+    def setSuccess(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAjaxOptions: Self = this.set("ajaxOptions", js.undefined)
+    def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

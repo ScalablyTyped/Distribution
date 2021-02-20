@@ -2,12 +2,16 @@ package typings.stellarBase.mod.Operation
 
 import typings.stellarBase.mod.OperationType.AllowTrust
 import typings.stellarBase.mod.TrustLineFlag
+import typings.stellarBase.mod._Operation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowTrust_ extends BaseOperation[AllowTrust] {
+trait AllowTrust_
+  extends BaseOperation[AllowTrust]
+     with _Operation {
   
   var assetCode: String = js.native
   
@@ -26,30 +30,18 @@ object AllowTrust_ {
   }
   
   @scala.inline
-  implicit class AllowTrust_Ops[Self <: AllowTrust_] (val x: Self) extends AnyVal {
+  implicit class AllowTrust_MutableBuilder[Self <: AllowTrust_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetCode(value: String): Self = StObject.set(x, "assetCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorize(value: Boolean | TrustLineFlag): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizeUndefined: Self = StObject.set(x, "authorize", js.undefined)
     
     @scala.inline
-    def setAssetCode(value: String): Self = this.set("assetCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrustor(value: String): Self = this.set("trustor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthorize(value: Boolean | TrustLineFlag): Self = this.set("authorize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorize: Self = this.set("authorize", js.undefined)
+    def setTrustor(value: String): Self = StObject.set(x, "trustor", value.asInstanceOf[js.Any])
   }
 }

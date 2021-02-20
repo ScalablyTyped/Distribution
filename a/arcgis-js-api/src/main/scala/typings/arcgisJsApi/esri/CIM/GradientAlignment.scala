@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GradientAlignment extends js.Object
+sealed trait GradientAlignment extends StObject
 @JSGlobal("__esri.CIM.GradientAlignment")
 @js.native
-object GradientAlignment extends js.Object {
+object GradientAlignment extends StObject {
   
   /**
     * Along line - Distributes the color ramp linearly along the line, following the curvature of the line.

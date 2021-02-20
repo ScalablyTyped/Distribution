@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RendererFactory3 extends js.Object {
+trait RendererFactory3 extends StObject {
   
   var begin: js.UndefOr[js.Function0[Unit]] = js.native
   

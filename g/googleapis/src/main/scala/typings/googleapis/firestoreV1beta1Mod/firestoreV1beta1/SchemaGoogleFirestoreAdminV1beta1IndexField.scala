@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A field of an index.
   */
 @js.native
-trait SchemaGoogleFirestoreAdminV1beta1IndexField extends js.Object {
+trait SchemaGoogleFirestoreAdminV1beta1IndexField extends StObject {
   
   /**
     * The path of the field. Must match the field path specification described
@@ -32,30 +33,18 @@ object SchemaGoogleFirestoreAdminV1beta1IndexField {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta1IndexFieldOps[Self <: SchemaGoogleFirestoreAdminV1beta1IndexField] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFirestoreAdminV1beta1IndexFieldMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta1IndexField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

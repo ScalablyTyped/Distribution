@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,39 +71,27 @@ object relationshipRendererResult {
   }
   
   @scala.inline
-  implicit class relationshipRendererResultOps[Self <: relationshipRendererResult] (val x: Self) extends AnyVal {
+  implicit class relationshipRendererResultMutableBuilder[Self <: relationshipRendererResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassBreaks(value: RendererResultClassBreaks): Self = StObject.set(x, "classBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapId(value: String): Self = this.set("basemapId", value.asInstanceOf[js.Any])
+    def setRelationshipScheme(value: RelationshipScheme): Self = StObject.set(x, "relationshipScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapTheme(value: String): Self = this.set("basemapTheme", value.asInstanceOf[js.Any])
+    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassBreaks(value: RendererResultClassBreaks): Self = this.set("classBreaks", value.asInstanceOf[js.Any])
+    def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationshipScheme(value: RelationshipScheme): Self = this.set("relationshipScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = this.set("uniqueValueInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = this.set("uniqueValueInfos", value.asInstanceOf[js.Any])
+    def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
   }
 }

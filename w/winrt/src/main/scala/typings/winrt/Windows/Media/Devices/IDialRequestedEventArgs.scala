@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDialRequestedEventArgs extends js.Object {
+trait IDialRequestedEventArgs extends StObject {
   
   var contact: js.Any = js.native
   
@@ -20,24 +21,12 @@ object IDialRequestedEventArgs {
   }
   
   @scala.inline
-  implicit class IDialRequestedEventArgsOps[Self <: IDialRequestedEventArgs] (val x: Self) extends AnyVal {
+  implicit class IDialRequestedEventArgsMutableBuilder[Self <: IDialRequestedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContact(value: js.Any): Self = this.set("contact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandled(value: () => Unit): Self = this.set("handled", js.Any.fromFunction0(value))
+    def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
   }
 }

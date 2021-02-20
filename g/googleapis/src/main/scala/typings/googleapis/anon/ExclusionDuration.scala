@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExclusionDuration extends js.Object {
+trait ExclusionDuration extends StObject {
   
   var exclusionDuration: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ExclusionDuration {
   }
   
   @scala.inline
-  implicit class ExclusionDurationOps[Self <: ExclusionDuration] (val x: Self) extends AnyVal {
+  implicit class ExclusionDurationMutableBuilder[Self <: ExclusionDuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusionDuration(value: String): Self = StObject.set(x, "exclusionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusionDurationUndefined: Self = StObject.set(x, "exclusionDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusionDuration(value: String): Self = this.set("exclusionDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusionDuration: Self = this.set("exclusionDuration", js.undefined)
-    
-    @scala.inline
-    def setSegment(value: String): Self = this.set("segment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegment: Self = this.set("segment", js.undefined)
+    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

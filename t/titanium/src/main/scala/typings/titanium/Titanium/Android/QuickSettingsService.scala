@@ -17,6 +17,7 @@ import typings.titanium.titaniumStrings.tiledialogneutral
 import typings.titanium.titaniumStrings.tiledialogoptionselected
 import typings.titanium.titaniumStrings.tiledialogpositive
 import typings.titanium.titaniumStrings.tileremoved
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

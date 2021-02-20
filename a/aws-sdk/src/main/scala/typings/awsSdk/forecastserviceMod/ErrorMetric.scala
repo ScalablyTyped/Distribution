@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorMetric extends js.Object {
+trait ErrorMetric extends StObject {
   
   /**
     *  Forecast types can be quantiles from 0.01 to 0.99 (by increments of 0.01), and the mean. 
@@ -31,36 +32,24 @@ object ErrorMetric {
   }
   
   @scala.inline
-  implicit class ErrorMetricOps[Self <: ErrorMetric] (val x: Self) extends AnyVal {
+  implicit class ErrorMetricMutableBuilder[Self <: ErrorMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForecastType(value: ForecastType): Self = StObject.set(x, "ForecastType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForecastTypeUndefined: Self = StObject.set(x, "ForecastType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForecastType(value: ForecastType): Self = this.set("ForecastType", value.asInstanceOf[js.Any])
+    def setRMSEUndefined: Self = StObject.set(x, "RMSE", js.undefined)
     
     @scala.inline
-    def deleteForecastType: Self = this.set("ForecastType", js.undefined)
+    def setWAPE(value: Double): Self = StObject.set(x, "WAPE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRMSE(value: Double): Self = this.set("RMSE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRMSE: Self = this.set("RMSE", js.undefined)
-    
-    @scala.inline
-    def setWAPE(value: Double): Self = this.set("WAPE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWAPE: Self = this.set("WAPE", js.undefined)
+    def setWAPEUndefined: Self = StObject.set(x, "WAPE", js.undefined)
   }
 }

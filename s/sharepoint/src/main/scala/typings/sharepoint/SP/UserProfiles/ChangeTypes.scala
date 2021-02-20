@@ -1,15 +1,16 @@
 package typings.sharepoint.SP.UserProfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChangeTypes extends js.Object
+sealed trait ChangeTypes extends StObject
 /** Specifies types of changes made in the user profile store. */
 @JSGlobal("SP.UserProfiles.ChangeTypes")
 @js.native
-object ChangeTypes extends js.Object {
+object ChangeTypes extends StObject {
   
   /** An object was added */
   @js.native

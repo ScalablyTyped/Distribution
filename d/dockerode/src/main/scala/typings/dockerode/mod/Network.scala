@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dockerode", "Network")
 @js.native
-class Network protected () extends js.Object {
+class Network protected () extends StObject {
   def this(modem: js.Any, id: String) = this()
   
   var Type: String = js.native

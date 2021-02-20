@@ -7,16 +7,16 @@ import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.objectLiteralMod.ObjectLiteral
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.subjectChangeMapMod.SubjectChangeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/persistence/Subject", JSImport.Namespace)
-@js.native
-object subjectMod extends js.Object {
+object subjectMod {
   
+  @JSImport("typeorm/browser/persistence/Subject", "Subject")
   @js.native
-  class Subject protected () extends js.Object {
+  class Subject protected () extends StObject {
     def this(options: CanBeInserted) = this()
     
     /**

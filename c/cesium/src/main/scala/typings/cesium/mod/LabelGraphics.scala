@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.BackgroundColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "LabelGraphics")
 @js.native
-class LabelGraphics () extends js.Object {
+class LabelGraphics () extends StObject {
   def this(options: BackgroundColor) = this()
   
   var backgroundColor: Property = js.native

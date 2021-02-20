@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/sharpenPostProcess", JSImport.Namespace)
-@js.native
-object sharpenPostProcessMod extends js.Object {
+object sharpenPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/sharpenPostProcess", "SharpenPostProcess")
   @js.native
   class SharpenPostProcess protected () extends PostProcess {
     /**
@@ -49,10 +49,11 @@ object sharpenPostProcessMod extends js.Object {
     var edgeAmount: Double = js.native
   }
   /* static members */
-  @js.native
-  object SharpenPostProcess extends js.Object {
+  object SharpenPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/sharpenPostProcess", "SharpenPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): SharpenPostProcess = js.native
   }
 }

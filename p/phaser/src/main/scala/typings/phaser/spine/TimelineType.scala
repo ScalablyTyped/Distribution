@@ -1,14 +1,15 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimelineType extends js.Object
+sealed trait TimelineType extends StObject
 @JSGlobal("spine.TimelineType")
 @js.native
-object TimelineType extends js.Object {
+object TimelineType extends StObject {
   
   @js.native
   sealed trait attachment extends TimelineType

@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * outcome of each individual step.
   */
 @js.native
-trait SchemaPrimaryStep extends js.Object {
+trait SchemaPrimaryStep extends StObject {
   
   /**
     * Step Id and outcome of each individual step.
@@ -31,33 +32,21 @@ object SchemaPrimaryStep {
   }
   
   @scala.inline
-  implicit class SchemaPrimaryStepOps[Self <: SchemaPrimaryStep] (val x: Self) extends AnyVal {
+  implicit class SchemaPrimaryStepMutableBuilder[Self <: SchemaPrimaryStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndividualOutcome(value: js.Array[SchemaIndividualOutcome]): Self = StObject.set(x, "individualOutcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndividualOutcomeUndefined: Self = StObject.set(x, "individualOutcome", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndividualOutcomeVarargs(value: SchemaIndividualOutcome*): Self = StObject.set(x, "individualOutcome", js.Array(value :_*))
     
     @scala.inline
-    def setIndividualOutcomeVarargs(value: SchemaIndividualOutcome*): Self = this.set("individualOutcome", js.Array(value :_*))
+    def setRollUp(value: String): Self = StObject.set(x, "rollUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividualOutcome(value: js.Array[SchemaIndividualOutcome]): Self = this.set("individualOutcome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividualOutcome: Self = this.set("individualOutcome", js.undefined)
-    
-    @scala.inline
-    def setRollUp(value: String): Self = this.set("rollUp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollUp: Self = this.set("rollUp", js.undefined)
+    def setRollUpUndefined: Self = StObject.set(x, "rollUp", js.undefined)
   }
 }

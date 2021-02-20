@@ -1,6 +1,7 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverTypes.mod.CodeActionKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object CodeActionOptions {
   }
   
   @scala.inline
-  implicit class CodeActionOptionsOps[Self <: CodeActionOptions] (val x: Self) extends AnyVal {
+  implicit class CodeActionOptionsMutableBuilder[Self <: CodeActionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeActionKinds(value: js.Array[CodeActionKind]): Self = StObject.set(x, "codeActionKinds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeActionKindsUndefined: Self = StObject.set(x, "codeActionKinds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCodeActionKindsVarargs(value: CodeActionKind*): Self = this.set("codeActionKinds", js.Array(value :_*))
-    
-    @scala.inline
-    def setCodeActionKinds(value: js.Array[CodeActionKind]): Self = this.set("codeActionKinds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeActionKinds: Self = this.set("codeActionKinds", js.undefined)
+    def setCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "codeActionKinds", js.Array(value :_*))
   }
 }

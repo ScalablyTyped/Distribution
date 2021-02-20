@@ -12,6 +12,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Logarithmic
 import typings.officeJsPreview.officeJsPreviewStrings.MovingAverage
 import typings.officeJsPreview.officeJsPreviewStrings.Polynomial
 import typings.officeJsPreview.officeJsPreviewStrings.Power
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

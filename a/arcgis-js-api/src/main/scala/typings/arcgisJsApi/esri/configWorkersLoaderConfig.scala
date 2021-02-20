@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,51 +58,39 @@ object configWorkersLoaderConfig {
   }
   
   @scala.inline
-  implicit class configWorkersLoaderConfigOps[Self <: configWorkersLoaderConfig] (val x: Self) extends AnyVal {
+  implicit class configWorkersLoaderConfigMutableBuilder[Self <: configWorkersLoaderConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHas(value: js.Any): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setHasUndefined: Self = StObject.set(x, "has", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas(value: js.Any): Self = this.set("has", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteHas: Self = this.set("has", js.undefined)
+    def setPackages(value: js.Array[_]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: js.Any): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPackagesVarargs(value: js.Any*): Self = StObject.set(x, "packages", js.Array(value :_*))
     
     @scala.inline
-    def setPackagesVarargs(value: js.Any*): Self = this.set("packages", js.Array(value :_*))
+    def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackages(value: js.Array[_]): Self = this.set("packages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackages: Self = this.set("packages", js.undefined)
-    
-    @scala.inline
-    def setPaths(value: js.Any): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
   }
 }

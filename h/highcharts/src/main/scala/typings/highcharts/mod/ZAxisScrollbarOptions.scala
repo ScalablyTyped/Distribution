@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZAxisScrollbarOptions extends js.Object {
+trait ZAxisScrollbarOptions extends StObject {
   
   /**
     * (Highstock) The background color of the scrollbar itself.
@@ -127,144 +128,132 @@ object ZAxisScrollbarOptions {
   }
   
   @scala.inline
-  implicit class ZAxisScrollbarOptionsOps[Self <: ZAxisScrollbarOptions] (val x: Self) extends AnyVal {
+  implicit class ZAxisScrollbarOptionsMutableBuilder[Self <: ZAxisScrollbarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "barBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarBackgroundColorUndefined: Self = StObject.set(x, "barBackgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "barBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("barBackgroundColor", value.asInstanceOf[js.Any])
+    def setBarBorderColorUndefined: Self = StObject.set(x, "barBorderColor", js.undefined)
     
     @scala.inline
-    def deleteBarBackgroundColor: Self = this.set("barBackgroundColor", js.undefined)
+    def setBarBorderRadius(value: Double): Self = StObject.set(x, "barBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("barBorderColor", value.asInstanceOf[js.Any])
+    def setBarBorderRadiusUndefined: Self = StObject.set(x, "barBorderRadius", js.undefined)
     
     @scala.inline
-    def deleteBarBorderColor: Self = this.set("barBorderColor", js.undefined)
+    def setBarBorderWidth(value: Double): Self = StObject.set(x, "barBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBorderRadius(value: Double): Self = this.set("barBorderRadius", value.asInstanceOf[js.Any])
+    def setBarBorderWidthUndefined: Self = StObject.set(x, "barBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteBarBorderRadius: Self = this.set("barBorderRadius", js.undefined)
+    def setButtonArrowColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "buttonArrowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBorderWidth(value: Double): Self = this.set("barBorderWidth", value.asInstanceOf[js.Any])
+    def setButtonArrowColorUndefined: Self = StObject.set(x, "buttonArrowColor", js.undefined)
     
     @scala.inline
-    def deleteBarBorderWidth: Self = this.set("barBorderWidth", js.undefined)
+    def setButtonBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonArrowColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("buttonArrowColor", value.asInstanceOf[js.Any])
+    def setButtonBackgroundColorUndefined: Self = StObject.set(x, "buttonBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteButtonArrowColor: Self = this.set("buttonArrowColor", js.undefined)
+    def setButtonBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "buttonBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("buttonBackgroundColor", value.asInstanceOf[js.Any])
+    def setButtonBorderColorUndefined: Self = StObject.set(x, "buttonBorderColor", js.undefined)
     
     @scala.inline
-    def deleteButtonBackgroundColor: Self = this.set("buttonBackgroundColor", js.undefined)
+    def setButtonBorderRadius(value: Double): Self = StObject.set(x, "buttonBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("buttonBorderColor", value.asInstanceOf[js.Any])
+    def setButtonBorderRadiusUndefined: Self = StObject.set(x, "buttonBorderRadius", js.undefined)
     
     @scala.inline
-    def deleteButtonBorderColor: Self = this.set("buttonBorderColor", js.undefined)
+    def setButtonBorderWidth(value: Double): Self = StObject.set(x, "buttonBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBorderRadius(value: Double): Self = this.set("buttonBorderRadius", value.asInstanceOf[js.Any])
+    def setButtonBorderWidthUndefined: Self = StObject.set(x, "buttonBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteButtonBorderRadius: Self = this.set("buttonBorderRadius", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonBorderWidth(value: Double): Self = this.set("buttonBorderWidth", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteButtonBorderWidth: Self = this.set("buttonBorderWidth", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setLiveRedraw(value: Boolean): Self = StObject.set(x, "liveRedraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLiveRedrawUndefined: Self = StObject.set(x, "liveRedraw", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveRedraw(value: Boolean): Self = this.set("liveRedraw", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLiveRedraw: Self = this.set("liveRedraw", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setRifleColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "rifleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setRifleColorUndefined: Self = StObject.set(x, "rifleColor", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setShowFull(value: Boolean): Self = StObject.set(x, "showFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRifleColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("rifleColor", value.asInstanceOf[js.Any])
+    def setShowFullUndefined: Self = StObject.set(x, "showFull", js.undefined)
     
     @scala.inline
-    def deleteRifleColor: Self = this.set("rifleColor", js.undefined)
+    def setTrackBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "trackBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFull(value: Boolean): Self = this.set("showFull", value.asInstanceOf[js.Any])
+    def setTrackBackgroundColorUndefined: Self = StObject.set(x, "trackBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteShowFull: Self = this.set("showFull", js.undefined)
+    def setTrackBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "trackBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("trackBackgroundColor", value.asInstanceOf[js.Any])
+    def setTrackBorderColorUndefined: Self = StObject.set(x, "trackBorderColor", js.undefined)
     
     @scala.inline
-    def deleteTrackBackgroundColor: Self = this.set("trackBackgroundColor", js.undefined)
+    def setTrackBorderRadius(value: Double): Self = StObject.set(x, "trackBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("trackBorderColor", value.asInstanceOf[js.Any])
+    def setTrackBorderRadiusUndefined: Self = StObject.set(x, "trackBorderRadius", js.undefined)
     
     @scala.inline
-    def deleteTrackBorderColor: Self = this.set("trackBorderColor", js.undefined)
+    def setTrackBorderWidth(value: Double): Self = StObject.set(x, "trackBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackBorderRadius(value: Double): Self = this.set("trackBorderRadius", value.asInstanceOf[js.Any])
+    def setTrackBorderWidthUndefined: Self = StObject.set(x, "trackBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteTrackBorderRadius: Self = this.set("trackBorderRadius", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackBorderWidth(value: Double): Self = this.set("trackBorderWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackBorderWidth: Self = this.set("trackBorderWidth", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PayPalError extends js.Object {
+trait PayPalError extends StObject {
   
   val debug_id: String = js.native
   
@@ -32,36 +33,24 @@ object PayPalError {
   }
   
   @scala.inline
-  implicit class PayPalErrorOps[Self <: PayPalError] (val x: Self) extends AnyVal {
+  implicit class PayPalErrorMutableBuilder[Self <: PayPalError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: js.Array[ErrorDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsVarargs(value: ErrorDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
     
     @scala.inline
-    def setDebug_id(value: String): Self = this.set("debug_id", value.asInstanceOf[js.Any])
+    def setInformation_link(value: String): Self = StObject.set(x, "information_link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailsVarargs(value: ErrorDetails*): Self = this.set("details", js.Array(value :_*))
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: js.Array[ErrorDetails]): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInformation_link(value: String): Self = this.set("information_link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

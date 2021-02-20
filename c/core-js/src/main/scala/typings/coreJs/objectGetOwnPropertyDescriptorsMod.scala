@@ -1,12 +1,15 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyDescriptorMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/object/get-own-property-descriptors", JSImport.Namespace)
-@js.native
-object objectGetOwnPropertyDescriptorsMod
-  extends TopLevel[js.Function1[/* object */ js.Any, PropertyDescriptorMap]]
+object objectGetOwnPropertyDescriptorsMod {
+  
+  /* was `typeof core.Object.getOwnPropertyDescriptors` */
+  @JSImport("core-js/library/fn/object/get-own-property-descriptors", JSImport.Namespace)
+  @js.native
+  def apply(`object`: js.Any): PropertyDescriptorMap = js.native
+}

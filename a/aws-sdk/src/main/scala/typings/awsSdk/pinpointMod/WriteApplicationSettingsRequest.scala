@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteApplicationSettingsRequest extends js.Object {
+trait WriteApplicationSettingsRequest extends StObject {
   
   /**
     * The settings for the AWS Lambda function to invoke by default as a code hook for campaigns in the application. You can use this hook to customize segments that are used by campaigns in the application. To override these settings and define custom settings for a specific campaign, use the CampaignHook object of the Campaign resource.
@@ -38,48 +39,36 @@ object WriteApplicationSettingsRequest {
   }
   
   @scala.inline
-  implicit class WriteApplicationSettingsRequestOps[Self <: WriteApplicationSettingsRequest] (val x: Self) extends AnyVal {
+  implicit class WriteApplicationSettingsRequestMutableBuilder[Self <: WriteApplicationSettingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWatchMetricsEnabled(value: boolean): Self = StObject.set(x, "CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignHook(value: CampaignHook): Self = this.set("CampaignHook", value.asInstanceOf[js.Any])
+    def setCloudWatchMetricsEnabledUndefined: Self = StObject.set(x, "CloudWatchMetricsEnabled", js.undefined)
     
     @scala.inline
-    def deleteCampaignHook: Self = this.set("CampaignHook", js.undefined)
+    def setEventTaggingEnabled(value: boolean): Self = StObject.set(x, "EventTaggingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchMetricsEnabled(value: boolean): Self = this.set("CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
+    def setEventTaggingEnabledUndefined: Self = StObject.set(x, "EventTaggingEnabled", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchMetricsEnabled: Self = this.set("CloudWatchMetricsEnabled", js.undefined)
+    def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTaggingEnabled(value: boolean): Self = this.set("EventTaggingEnabled", value.asInstanceOf[js.Any])
+    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
     @scala.inline
-    def deleteEventTaggingEnabled: Self = this.set("EventTaggingEnabled", js.undefined)
+    def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: CampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimits: Self = this.set("Limits", js.undefined)
-    
-    @scala.inline
-    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+    def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
   }
 }

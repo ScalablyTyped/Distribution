@@ -1,11 +1,12 @@
 package typings.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynaTree extends js.Object {
+trait DynaTree extends StObject {
   
   def activateKey(key: String): DynaTreeNode = js.native
   

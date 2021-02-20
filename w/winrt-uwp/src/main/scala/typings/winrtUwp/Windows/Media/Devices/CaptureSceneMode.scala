@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CaptureSceneMode extends js.Object
+sealed trait CaptureSceneMode extends StObject
 /** Defines the possible capture scene modes. */
 @JSGlobal("Windows.Media.Devices.CaptureSceneMode")
 @js.native
-object CaptureSceneMode extends js.Object {
+object CaptureSceneMode extends StObject {
   
   /** Indicates that the best settings and exposure optimization are automatically performed. */
   @js.native

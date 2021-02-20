@@ -12,12 +12,13 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_MODE_KEY
 import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_ONOFF_KEY
 import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_WINDOW_COLOR_KEY
 import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_WINDOW_OPACITY_KEY
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TVInfoManager extends js.Object {
+trait TVInfoManager extends StObject {
   
   /**
     * Adds a listener to be called when given caption menu key value changes.

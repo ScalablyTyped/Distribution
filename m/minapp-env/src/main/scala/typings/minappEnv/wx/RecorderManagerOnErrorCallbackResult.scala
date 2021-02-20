@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecorderManagerOnErrorCallbackResult extends js.Object {
+trait RecorderManagerOnErrorCallbackResult extends StObject {
   
   /** 错误信息 */
   var errMsg: String = js.native
@@ -19,21 +20,9 @@ object RecorderManagerOnErrorCallbackResult {
   }
   
   @scala.inline
-  implicit class RecorderManagerOnErrorCallbackResultOps[Self <: RecorderManagerOnErrorCallbackResult] (val x: Self) extends AnyVal {
+  implicit class RecorderManagerOnErrorCallbackResultMutableBuilder[Self <: RecorderManagerOnErrorCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

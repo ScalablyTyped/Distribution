@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.cathoQuantum.modalMod.ModalContent
 import typings.cathoQuantum.modalMod.ModalHeader
 import typings.cathoQuantum.modalMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

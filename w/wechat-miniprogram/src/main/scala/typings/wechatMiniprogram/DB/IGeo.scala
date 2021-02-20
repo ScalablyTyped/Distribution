@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeo extends js.Object {
+trait IGeo extends StObject {
   
   def LineString(points: js.Array[GeoPoint]): GeoLineString = js.native
   def LineString(points: IGeoJSONLineString): GeoLineString = js.native

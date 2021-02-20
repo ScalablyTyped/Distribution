@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetailCell extends js.Object {
+trait DetailCell extends StObject {
   
   var button: String = js.native
   
@@ -59,60 +60,48 @@ object DetailCell {
   }
   
   @scala.inline
-  implicit class DetailCellOps[Self <: DetailCell] (val x: Self) extends AnyVal {
+  implicit class DetailCellMutableBuilder[Self <: DetailCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonAdd(value: String): Self = StObject.set(x, "buttonAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonRemove(value: String): Self = StObject.set(x, "buttonRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonAdd(value: String): Self = this.set("buttonAdd", value.asInstanceOf[js.Any])
+    def setDetailButton(value: String): Self = StObject.set(x, "detailButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonRemove(value: String): Self = this.set("buttonRemove", value.asInstanceOf[js.Any])
+    def setDetailButtonExpanded(value: String): Self = StObject.set(x, "detailButtonExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: String): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setDetailCell(value: String): Self = StObject.set(x, "detailCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailButton(value: String): Self = this.set("detailButton", value.asInstanceOf[js.Any])
+    def setDetailIcon(value: String): Self = StObject.set(x, "detailIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailButtonExpanded(value: String): Self = this.set("detailButtonExpanded", value.asInstanceOf[js.Any])
+    def setDetailIconExpanded(value: String): Self = StObject.set(x, "detailIconExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailCell(value: String): Self = this.set("detailCell", value.asInstanceOf[js.Any])
+    def setDetailPanelCell(value: String): Self = StObject.set(x, "detailPanelCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailIcon(value: String): Self = this.set("detailIcon", value.asInstanceOf[js.Any])
+    def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailIconExpanded(value: String): Self = this.set("detailIconExpanded", value.asInstanceOf[js.Any])
+    def setIconAdd(value: String): Self = StObject.set(x, "iconAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailPanelCell(value: String): Self = this.set("detailPanelCell", value.asInstanceOf[js.Any])
+    def setIconRemove(value: String): Self = StObject.set(x, "iconRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCell(value: String): Self = this.set("headerCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconAdd(value: String): Self = this.set("iconAdd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconRemove(value: String): Self = this.set("iconRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

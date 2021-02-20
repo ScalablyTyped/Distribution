@@ -7,12 +7,13 @@ import typings.seleniumWebdriver.remoteMod.DriverService
 import typings.seleniumWebdriver.remoteMod.FileDetector
 import typings.seleniumWebdriver.remoteMod.SeleniumServer
 import typings.seleniumWebdriver.remoteMod.ServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofremote extends js.Object {
+trait Typeofremote extends StObject {
   
   var DriverService: (Instantiable2[
     /* executable */ String, 
@@ -37,29 +38,17 @@ object Typeofremote {
   }
   
   @scala.inline
-  implicit class TypeofremoteOps[Self <: Typeofremote] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TypeofremoteMutableBuilder[Self <: Typeofremote] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDriverService(
       value: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) with TypeofDriverService
-    ): Self = this.set("DriverService", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "DriverService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDetector(value: Instantiable0[FileDetector]): Self = this.set("FileDetector", value.asInstanceOf[js.Any])
+    def setFileDetector(value: Instantiable0[FileDetector]): Self = StObject.set(x, "FileDetector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeleniumServer(value: Instantiable1[/* jar */ String, SeleniumServer]): Self = this.set("SeleniumServer", value.asInstanceOf[js.Any])
+    def setSeleniumServer(value: Instantiable1[/* jar */ String, SeleniumServer]): Self = StObject.set(x, "SeleniumServer", value.asInstanceOf[js.Any])
   }
 }

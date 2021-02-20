@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Media.Capture
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,16 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Creates a new instance of the MediaCapture object. */
 class MediaCapture ()
   extends typings.winrtUwp.Windows.Media.Capture.MediaCapture
-/* static members */
-@JSGlobal("Windows.Media.Capture.MediaCapture")
-@js.native
-object MediaCapture extends js.Object {
+object MediaCapture {
   
   /**
     * Retrieves the list of all video profiles supported by the specified video capture device.
     * @param videoDeviceId The identifier of the video device for which supported video profiles are queried. For information on getting the video device ID, see DeviceInformation::FindAllAsync .
     * @return The list of video profiles supported by the specified video capture device.
     */
+  /* static member */
+  @JSGlobal("Windows.Media.Capture.MediaCapture.findAllVideoProfiles")
+  @js.native
   def findAllVideoProfiles(videoDeviceId: String): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = js.native
   
   /**
@@ -28,6 +29,9 @@ object MediaCapture extends js.Object {
     * @param videoDeviceId The identifier of the video device for which supported video profiles are queried. For information on getting the video device ID, see DeviceInformation::FindAllAsync .
     * @return The list of video profiles supported by the specified video capture device that support concurrency.
     */
+  /* static member */
+  @JSGlobal("Windows.Media.Capture.MediaCapture.findConcurrentProfiles")
+  @js.native
   def findConcurrentProfiles(videoDeviceId: String): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = js.native
   
   /**
@@ -36,6 +40,9 @@ object MediaCapture extends js.Object {
     * @param name A value specifying one of the profile names known by the system.
     * @return The list of video profiles supported by the specified video capture device that match the specified known profile name.
     */
+  /* static member */
+  @JSGlobal("Windows.Media.Capture.MediaCapture.findKnownVideoProfiles")
+  @js.native
   def findKnownVideoProfiles(videoDeviceId: String, name: typings.winrtUwp.Windows.Media.Capture.KnownVideoProfile): IVectorView[typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile] = js.native
   
   /**
@@ -43,5 +50,8 @@ object MediaCapture extends js.Object {
     * @param videoDeviceId The identifier of the video device for which supported video profile support is queried. For information on getting the video device ID, see DeviceInformation::FindAllAsync .
     * @return True if video profiles are supported; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Media.Capture.MediaCapture.isVideoProfileSupported")
+  @js.native
   def isVideoProfileSupported(videoDeviceId: String): Boolean = js.native
 }

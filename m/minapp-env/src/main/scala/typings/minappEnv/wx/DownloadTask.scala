@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadTask extends js.Object {
+trait DownloadTask extends StObject {
   
   /** [DownloadTask.abort()](DownloadTask.abort.md)
     *
@@ -61,33 +62,21 @@ object DownloadTask {
   }
   
   @scala.inline
-  implicit class DownloadTaskOps[Self <: DownloadTask] (val x: Self) extends AnyVal {
+  implicit class DownloadTaskMutableBuilder[Self <: DownloadTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffHeadersReceived(value: DownloadTaskOffHeadersReceivedCallback => Unit): Self = StObject.set(x, "offHeadersReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffProgressUpdate(value: DownloadTaskOffProgressUpdateCallback => Unit): Self = StObject.set(x, "offProgressUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbort(value: () => Unit): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setOnHeadersReceived(value: DownloadTaskOnHeadersReceivedCallback => Unit): Self = StObject.set(x, "onHeadersReceived", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOffHeadersReceived(value: DownloadTaskOffHeadersReceivedCallback => Unit): Self = this.set("offHeadersReceived", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOffProgressUpdate(value: DownloadTaskOffProgressUpdateCallback => Unit): Self = this.set("offProgressUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnHeadersReceived(value: DownloadTaskOnHeadersReceivedCallback => Unit): Self = this.set("onHeadersReceived", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnProgressUpdate(value: DownloadTaskOnProgressUpdateCallback => Unit): Self = this.set("onProgressUpdate", js.Any.fromFunction1(value))
+    def setOnProgressUpdate(value: DownloadTaskOnProgressUpdateCallback => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

@@ -1,81 +1,68 @@
 package typings.xelib.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmashType extends js.Object
+sealed trait SmashType extends StObject
 @JSImport("xelib", "SmashType")
 @js.native
-object SmashType extends js.Object {
+object SmashType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmashType with Double] = js.native
   
   @js.native
   sealed trait stByteArray extends SmashType
-  /* 11 */ @js.native
-  object stByteArray extends TopLevel[stByteArray with Double]
+  /* 11 */ val stByteArray: typings.xelib.mod.SmashType.stByteArray with Double = js.native
   
   @js.native
   sealed trait stFlag extends SmashType
-  /* 4 */ @js.native
-  object stFlag extends TopLevel[stFlag with Double]
+  /* 4 */ val stFlag: typings.xelib.mod.SmashType.stFlag with Double = js.native
   
   @js.native
   sealed trait stFloat extends SmashType
-  /* 5 */ @js.native
-  object stFloat extends TopLevel[stFloat with Double]
+  /* 5 */ val stFloat: typings.xelib.mod.SmashType.stFloat with Double = js.native
   
   @js.native
   sealed trait stInteger extends SmashType
-  /* 3 */ @js.native
-  object stInteger extends TopLevel[stInteger with Double]
+  /* 3 */ val stInteger: typings.xelib.mod.SmashType.stInteger with Double = js.native
   
   @js.native
   sealed trait stRecord extends SmashType
-  /* 1 */ @js.native
-  object stRecord extends TopLevel[stRecord with Double]
+  /* 1 */ val stRecord: typings.xelib.mod.SmashType.stRecord with Double = js.native
   
   @js.native
   sealed trait stSortedArray extends SmashType
-  /* 9 */ @js.native
-  object stSortedArray extends TopLevel[stSortedArray with Double]
+  /* 9 */ val stSortedArray: typings.xelib.mod.SmashType.stSortedArray with Double = js.native
   
   @js.native
   sealed trait stSortedStructArray extends SmashType
-  /* 10 */ @js.native
-  object stSortedStructArray extends TopLevel[stSortedStructArray with Double]
+  /* 10 */ val stSortedStructArray: typings.xelib.mod.SmashType.stSortedStructArray with Double = js.native
   
   @js.native
   sealed trait stString extends SmashType
-  /* 2 */ @js.native
-  object stString extends TopLevel[stString with Double]
+  /* 2 */ val stString: typings.xelib.mod.SmashType.stString with Double = js.native
   
   @js.native
   sealed trait stStruct extends SmashType
-  /* 6 */ @js.native
-  object stStruct extends TopLevel[stStruct with Double]
+  /* 6 */ val stStruct: typings.xelib.mod.SmashType.stStruct with Double = js.native
   
   @js.native
   sealed trait stUnion extends SmashType
-  /* 12 */ @js.native
-  object stUnion extends TopLevel[stUnion with Double]
+  /* 12 */ val stUnion: typings.xelib.mod.SmashType.stUnion with Double = js.native
   
   @js.native
   sealed trait stUnknown extends SmashType
-  /* 0 */ @js.native
-  object stUnknown extends TopLevel[stUnknown with Double]
+  /* 0 */ val stUnknown: typings.xelib.mod.SmashType.stUnknown with Double = js.native
   
   @js.native
   sealed trait stUnsortedArray extends SmashType
-  /* 7 */ @js.native
-  object stUnsortedArray extends TopLevel[stUnsortedArray with Double]
+  /* 7 */ val stUnsortedArray: typings.xelib.mod.SmashType.stUnsortedArray with Double = js.native
   
   @js.native
   sealed trait stUnsortedStructArray extends SmashType
-  /* 8 */ @js.native
-  object stUnsortedStructArray extends TopLevel[stUnsortedStructArray with Double]
+  /* 8 */ val stUnsortedStructArray: typings.xelib.mod.SmashType.stUnsortedStructArray with Double = js.native
 }

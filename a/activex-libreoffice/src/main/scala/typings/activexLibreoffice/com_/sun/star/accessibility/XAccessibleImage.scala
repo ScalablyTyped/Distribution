@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,36 +86,24 @@ object XAccessibleImage {
   }
   
   @scala.inline
-  implicit class XAccessibleImageOps[Self <: XAccessibleImage] (val x: Self) extends AnyVal {
+  implicit class XAccessibleImageMutableBuilder[Self <: XAccessibleImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleImageDescription(value: String): Self = StObject.set(x, "AccessibleImageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleImageHeight(value: Double): Self = StObject.set(x, "AccessibleImageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleImageWidth(value: Double): Self = StObject.set(x, "AccessibleImageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleImageDescription(value: String): Self = this.set("AccessibleImageDescription", value.asInstanceOf[js.Any])
+    def setGetAccessibleImageDescription(value: () => String): Self = StObject.set(x, "getAccessibleImageDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessibleImageHeight(value: Double): Self = this.set("AccessibleImageHeight", value.asInstanceOf[js.Any])
+    def setGetAccessibleImageHeight(value: () => Double): Self = StObject.set(x, "getAccessibleImageHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessibleImageWidth(value: Double): Self = this.set("AccessibleImageWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAccessibleImageDescription(value: () => String): Self = this.set("getAccessibleImageDescription", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAccessibleImageHeight(value: () => Double): Self = this.set("getAccessibleImageHeight", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAccessibleImageWidth(value: () => Double): Self = this.set("getAccessibleImageWidth", js.Any.fromFunction0(value))
+    def setGetAccessibleImageWidth(value: () => Double): Self = StObject.set(x, "getAccessibleImageWidth", js.Any.fromFunction0(value))
   }
 }

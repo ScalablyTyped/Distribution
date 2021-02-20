@@ -29,16 +29,18 @@ import typings.awsSdkClientXrayNode.typesPutTraceSegmentsOutputMod.PutTraceSegme
 import typings.awsSdkClientXrayNode.typesUpdateSamplingRuleInputMod.UpdateSamplingRuleInput
 import typings.awsSdkClientXrayNode.typesUpdateSamplingRuleOutputMod.UpdateSamplingRuleOutput
 import typings.awsSdkClientXrayNode.xrayclientMod.XRayClient
+import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/XRay", JSImport.Namespace)
-@js.native
-object xrayMod extends js.Object {
+object xrayMod {
   
+  @JSImport("@aws-sdk/client-xray-node/XRay", "XRay")
   @js.native
-  class XRay () extends XRayClient {
+  class XRay protected () extends XRayClient {
+    def this(configuration: XRayConfiguration) = this()
     
     /**
       * <p>Retrieves a list of traces specified by ID. Each trace is a collection of segment documents that originates from a single request. Use <code>GetTraceSummaries</code> to get a list of trace IDs.</p>

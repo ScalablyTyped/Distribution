@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchRunReportsRequest extends js.Object {
+trait BatchRunReportsRequest extends StObject {
   
   /** A property whose events are tracked. This entity must be specified for the batch. The entity within RunReportRequest may either be unspecified or consistent with this entity. */
   var entity: js.UndefOr[Entity] = js.native
@@ -22,33 +23,21 @@ object BatchRunReportsRequest {
   }
   
   @scala.inline
-  implicit class BatchRunReportsRequestOps[Self <: BatchRunReportsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchRunReportsRequestMutableBuilder[Self <: BatchRunReportsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequests(value: js.Array[RunReportRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
-    
-    @scala.inline
-    def setRequestsVarargs(value: RunReportRequest*): Self = this.set("requests", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequests(value: js.Array[RunReportRequest]): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
+    def setRequestsVarargs(value: RunReportRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

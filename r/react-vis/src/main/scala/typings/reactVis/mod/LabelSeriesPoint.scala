@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,45 +29,33 @@ object LabelSeriesPoint {
   }
   
   @scala.inline
-  implicit class LabelSeriesPointOps[Self <: LabelSeriesPoint] (val x: Self) extends AnyVal {
+  implicit class LabelSeriesPointMutableBuilder[Self <: LabelSeriesPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXOffset(value: Double): Self = this.set("xOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXOffset: Self = this.set("xOffset", js.undefined)
-    
-    @scala.inline
-    def setYOffset(value: Double): Self = this.set("yOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOffset: Self = this.set("yOffset", js.undefined)
+    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

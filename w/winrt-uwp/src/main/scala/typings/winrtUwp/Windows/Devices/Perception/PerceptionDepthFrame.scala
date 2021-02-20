@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
 import typings.winrtUwp.Windows.Media.VideoFrame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a Windows.Media.VideoFrame with the depth frame data. */
 @js.native
-trait PerceptionDepthFrame extends js.Object {
+trait PerceptionDepthFrame extends StObject {
   
   /** Releases system resources that are exposed by a Windows Runtime object. */
   def close(): Unit = js.native
@@ -24,24 +25,12 @@ object PerceptionDepthFrame {
   }
   
   @scala.inline
-  implicit class PerceptionDepthFrameOps[Self <: PerceptionDepthFrame] (val x: Self) extends AnyVal {
+  implicit class PerceptionDepthFrameMutableBuilder[Self <: PerceptionDepthFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVideoFrame(value: VideoFrame): Self = this.set("videoFrame", value.asInstanceOf[js.Any])
+    def setVideoFrame(value: VideoFrame): Self = StObject.set(x, "videoFrame", value.asInstanceOf[js.Any])
   }
 }

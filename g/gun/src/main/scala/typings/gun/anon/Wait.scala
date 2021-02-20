@@ -1,11 +1,12 @@
 package typings.gun.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Wait extends js.Object {
+trait Wait extends StObject {
   
   @JSName("wait")
   var wait_FWait: Double = js.native
@@ -13,27 +14,16 @@ trait Wait extends js.Object {
 object Wait {
   
   @scala.inline
-  def apply(wait: Double): Wait = {
-    val __obj = js.Dynamic.literal(wait = wait.asInstanceOf[js.Any])
+  def apply(wait_ : Double): Wait = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wait]
   }
   
   @scala.inline
-  implicit class WaitOps[Self <: Wait] (val x: Self) extends AnyVal {
+  implicit class WaitMutableBuilder[Self <: Wait] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWait(value: Double): Self = this.set("wait", value.asInstanceOf[js.Any])
+    def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Child items always have an empty array for their `childItems`.
   */
 @js.native
-trait NavigationBarItem extends js.Object {
+trait NavigationBarItem extends StObject {
   
   var bolded: Boolean = js.native
   
@@ -47,48 +48,36 @@ object NavigationBarItem {
   }
   
   @scala.inline
-  implicit class NavigationBarItemOps[Self <: NavigationBarItem] (val x: Self) extends AnyVal {
+  implicit class NavigationBarItemMutableBuilder[Self <: NavigationBarItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBolded(value: Boolean): Self = StObject.set(x, "bolded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildItems(value: js.Array[NavigationBarItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildItemsVarargs(value: NavigationBarItem*): Self = StObject.set(x, "childItems", js.Array(value :_*))
     
     @scala.inline
-    def setBolded(value: Boolean): Self = this.set("bolded", value.asInstanceOf[js.Any])
+    def setGrayed(value: Boolean): Self = StObject.set(x, "grayed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildItemsVarargs(value: NavigationBarItem*): Self = this.set("childItems", js.Array(value :_*))
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildItems(value: js.Array[NavigationBarItem]): Self = this.set("childItems", value.asInstanceOf[js.Any])
+    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrayed(value: Boolean): Self = this.set("grayed", value.asInstanceOf[js.Any])
+    def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ScriptElementKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
     
     @scala.inline
-    def setKindModifiers(value: java.lang.String): Self = this.set("kindModifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpansVarargs(value: TextSpan*): Self = this.set("spans", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpans(value: js.Array[TextSpan]): Self = this.set("spans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: java.lang.String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

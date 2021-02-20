@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeletionTaskFailureReasonType extends js.Object {
+trait DeletionTaskFailureReasonType extends StObject {
   
   /**
     * A short description of the reason that the service-linked role deletion failed.
@@ -26,33 +27,21 @@ object DeletionTaskFailureReasonType {
   }
   
   @scala.inline
-  implicit class DeletionTaskFailureReasonTypeOps[Self <: DeletionTaskFailureReasonType] (val x: Self) extends AnyVal {
+  implicit class DeletionTaskFailureReasonTypeMutableBuilder[Self <: DeletionTaskFailureReasonType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: ReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleUsageList(value: RoleUsageListType): Self = StObject.set(x, "RoleUsageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: ReasonType): Self = this.set("Reason", value.asInstanceOf[js.Any])
+    def setRoleUsageListUndefined: Self = StObject.set(x, "RoleUsageList", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("Reason", js.undefined)
-    
-    @scala.inline
-    def setRoleUsageListVarargs(value: RoleUsageType*): Self = this.set("RoleUsageList", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoleUsageList(value: RoleUsageListType): Self = this.set("RoleUsageList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleUsageList: Self = this.set("RoleUsageList", js.undefined)
+    def setRoleUsageListVarargs(value: RoleUsageType*): Self = StObject.set(x, "RoleUsageList", js.Array(value :_*))
   }
 }

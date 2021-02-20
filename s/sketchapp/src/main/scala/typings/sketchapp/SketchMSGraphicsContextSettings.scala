@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.graphicsContextSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSGraphicsContextSettings extends js.Object {
+trait SketchMSGraphicsContextSettings extends StObject {
   
   var _class: graphicsContextSettings = js.native
   
@@ -27,27 +28,15 @@ object SketchMSGraphicsContextSettings {
   }
   
   @scala.inline
-  implicit class SketchMSGraphicsContextSettingsOps[Self <: SketchMSGraphicsContextSettings] (val x: Self) extends AnyVal {
+  implicit class SketchMSGraphicsContextSettingsMutableBuilder[Self <: SketchMSGraphicsContextSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlendMode(value: SketchMSGraphicsContextSettingsBlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_class(value: graphicsContextSettings): Self = this.set("_class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlendMode(value: SketchMSGraphicsContextSettingsBlendMode): Self = this.set("blendMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def set_class(value: graphicsContextSettings): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

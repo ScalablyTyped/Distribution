@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OneToManyRelationshipMetadata extends js.Object {
+trait OneToManyRelationshipMetadata extends StObject {
   
   var AssociatedMenuConfiguration: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuConfiguration = js.native
   
@@ -68,69 +69,57 @@ object OneToManyRelationshipMetadata {
   }
   
   @scala.inline
-  implicit class OneToManyRelationshipMetadataOps[Self <: OneToManyRelationshipMetadata] (val x: Self) extends AnyVal {
+  implicit class OneToManyRelationshipMetadataMutableBuilder[Self <: OneToManyRelationshipMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCascadeConfiguration(value: CascadeConfiguration): Self = StObject.set(x, "CascadeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasChanged(value: js.Any): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = this.set("AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
+    def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCascadeConfiguration(value: CascadeConfiguration): Self = this.set("CascadeConfiguration", value.asInstanceOf[js.Any])
+    def setIsCustomRelationship(value: Boolean): Self = StObject.set(x, "IsCustomRelationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChanged(value: js.Any): Self = this.set("HasChanged", value.asInstanceOf[js.Any])
+    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroducedVersion(value: js.Any): Self = this.set("IntroducedVersion", value.asInstanceOf[js.Any])
+    def setIsHierarchical(value: js.Any): Self = StObject.set(x, "IsHierarchical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomRelationship(value: Boolean): Self = this.set("IsCustomRelationship", value.asInstanceOf[js.Any])
+    def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = this.set("IsCustomizable", value.asInstanceOf[js.Any])
+    def setIsValidForAdvancedFind(value: Boolean): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHierarchical(value: js.Any): Self = this.set("IsHierarchical", value.asInstanceOf[js.Any])
+    def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsManaged(value: Boolean): Self = this.set("IsManaged", value.asInstanceOf[js.Any])
+    def setReferencedAttribute(value: String): Self = StObject.set(x, "ReferencedAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidForAdvancedFind(value: Boolean): Self = this.set("IsValidForAdvancedFind", value.asInstanceOf[js.Any])
+    def setReferencedEntity(value: String): Self = StObject.set(x, "ReferencedEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataId(value: String): Self = this.set("MetadataId", value.asInstanceOf[js.Any])
+    def setReferencingAttribute(value: String): Self = StObject.set(x, "ReferencingAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencedAttribute(value: String): Self = this.set("ReferencedAttribute", value.asInstanceOf[js.Any])
+    def setReferencingEntity(value: String): Self = StObject.set(x, "ReferencingEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencedEntity(value: String): Self = this.set("ReferencedEntity", value.asInstanceOf[js.Any])
+    def setRelationshipType(value: String): Self = StObject.set(x, "RelationshipType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencingAttribute(value: String): Self = this.set("ReferencingAttribute", value.asInstanceOf[js.Any])
+    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencingEntity(value: String): Self = this.set("ReferencingEntity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationshipType(value: String): Self = this.set("RelationshipType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurityTypes(value: js.Any): Self = this.set("SecurityTypes", value.asInstanceOf[js.Any])
+    def setSecurityTypes(value: js.Any): Self = StObject.set(x, "SecurityTypes", value.asInstanceOf[js.Any])
   }
 }

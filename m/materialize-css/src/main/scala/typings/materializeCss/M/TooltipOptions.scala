@@ -4,12 +4,13 @@ import typings.materializeCss.materializeCssStrings.bottom
 import typings.materializeCss.materializeCssStrings.left
 import typings.materializeCss.materializeCssStrings.right
 import typings.materializeCss.materializeCssStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipOptions extends js.Object {
+trait TooltipOptions extends StObject {
   
   /**
     * Delay time before tooltip appears.
@@ -77,42 +78,30 @@ object TooltipOptions {
   }
   
   @scala.inline
-  implicit class TooltipOptionsOps[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+  implicit class TooltipOptionsMutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExitDelay(value: Double): Self = StObject.set(x, "exitDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterDelay(value: Double): Self = this.set("enterDelay", value.asInstanceOf[js.Any])
+    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitDelay(value: Double): Self = this.set("exitDelay", value.asInstanceOf[js.Any])
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInDuration(value: Double): Self = this.set("inDuration", value.asInstanceOf[js.Any])
+    def setPosition(value: top | right | bottom | left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutDuration(value: Double): Self = this.set("outDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: top | right | bottom | left): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionMovement(value: Double): Self = this.set("transitionMovement", value.asInstanceOf[js.Any])
+    def setTransitionMovement(value: Double): Self = StObject.set(x, "transitionMovement", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssociationsForLicenseConfigurationResponse extends js.Object {
+trait ListAssociationsForLicenseConfigurationResponse extends StObject {
   
   /**
     * Information about the associations for the license configuration.
@@ -26,33 +27,21 @@ object ListAssociationsForLicenseConfigurationResponse {
   }
   
   @scala.inline
-  implicit class ListAssociationsForLicenseConfigurationResponseOps[Self <: ListAssociationsForLicenseConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class ListAssociationsForLicenseConfigurationResponseMutableBuilder[Self <: ListAssociationsForLicenseConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLicenseConfigurationAssociations(value: LicenseConfigurationAssociations): Self = StObject.set(x, "LicenseConfigurationAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLicenseConfigurationAssociationsUndefined: Self = StObject.set(x, "LicenseConfigurationAssociations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLicenseConfigurationAssociationsVarargs(value: LicenseConfigurationAssociation*): Self = StObject.set(x, "LicenseConfigurationAssociations", js.Array(value :_*))
     
     @scala.inline
-    def setLicenseConfigurationAssociationsVarargs(value: LicenseConfigurationAssociation*): Self = this.set("LicenseConfigurationAssociations", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseConfigurationAssociations(value: LicenseConfigurationAssociations): Self = this.set("LicenseConfigurationAssociations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicenseConfigurationAssociations: Self = this.set("LicenseConfigurationAssociations", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

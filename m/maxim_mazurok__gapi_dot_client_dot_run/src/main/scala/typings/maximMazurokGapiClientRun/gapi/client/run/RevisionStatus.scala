@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionStatus extends js.Object {
+trait RevisionStatus extends StObject {
   
   /**
     * Conditions communicates information about ongoing/complete reconciliation processes that bring the "spec" inline with the observed state of the world. As a Revision is being
@@ -41,51 +42,39 @@ object RevisionStatus {
   }
   
   @scala.inline
-  implicit class RevisionStatusOps[Self <: RevisionStatus] (val x: Self) extends AnyVal {
+  implicit class RevisionStatusMutableBuilder[Self <: RevisionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: GoogleCloudRunV1Condition*): Self = this.set("conditions", js.Array(value :_*))
+    def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[GoogleCloudRunV1Condition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDigest(value: String): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
     
     @scala.inline
-    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogUrl(value: String): Self = this.set("logUrl", value.asInstanceOf[js.Any])
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
     @scala.inline
-    def deleteLogUrl: Self = this.set("logUrl", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

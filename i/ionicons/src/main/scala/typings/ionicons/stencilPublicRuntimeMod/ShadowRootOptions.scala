@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowRootOptions extends js.Object {
+trait ShadowRootOptions extends StObject {
   
   /**
     * When set to `true`, specifies behavior that mitigates custom element issues
@@ -23,24 +24,12 @@ object ShadowRootOptions {
   }
   
   @scala.inline
-  implicit class ShadowRootOptionsOps[Self <: ShadowRootOptions] (val x: Self) extends AnyVal {
+  implicit class ShadowRootOptionsMutableBuilder[Self <: ShadowRootOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegatesFocus(value: Boolean): Self = StObject.set(x, "delegatesFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDelegatesFocus(value: Boolean): Self = this.set("delegatesFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelegatesFocus: Self = this.set("delegatesFocus", js.undefined)
+    def setDelegatesFocusUndefined: Self = StObject.set(x, "delegatesFocus", js.undefined)
   }
 }

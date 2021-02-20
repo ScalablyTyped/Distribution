@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestSettings extends js.Object {
+trait TestSettings extends StObject {
   
   /**
     * Area path required to create test settings
@@ -59,39 +60,27 @@ object TestSettings {
   }
   
   @scala.inline
-  implicit class TestSettingsOps[Self <: TestSettings] (val x: Self) extends AnyVal {
+  implicit class TestSettingsMutableBuilder[Self <: TestSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaPath(value: String): Self = StObject.set(x, "areaPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaPath(value: String): Self = this.set("areaPath", value.asInstanceOf[js.Any])
+    def setMachineRoles(value: String): Self = StObject.set(x, "machineRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTestSettingsContent(value: String): Self = StObject.set(x, "testSettingsContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    def setTestSettingsId(value: Double): Self = StObject.set(x, "testSettingsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineRoles(value: String): Self = this.set("machineRoles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSettingsContent(value: String): Self = this.set("testSettingsContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSettingsId(value: Double): Self = this.set("testSettingsId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSettingsName(value: String): Self = this.set("testSettingsName", value.asInstanceOf[js.Any])
+    def setTestSettingsName(value: String): Self = StObject.set(x, "testSettingsName", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesUpdateApnsSandboxChannelInputMod
 import typings.awsSdkClientPinpointBrowser.typesUpdateApnsSandboxChannelOutputMod.UpdateApnsSandboxChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateApnsSandboxChannelCommand", JSImport.Namespace)
-@js.native
-object updateApnsSandboxChannelCommandMod extends js.Object {
+object updateApnsSandboxChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateApnsSandboxChannelCommand", "UpdateApnsSandboxChannelCommand")
   @js.native
   class UpdateApnsSandboxChannelCommand protected () extends Command[
           InputTypesUnion, 

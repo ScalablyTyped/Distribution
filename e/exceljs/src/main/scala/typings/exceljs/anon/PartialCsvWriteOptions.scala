@@ -1,12 +1,13 @@
 package typings.exceljs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CsvWriteOptions> */
 @js.native
-trait PartialCsvWriteOptions extends js.Object {
+trait PartialCsvWriteOptions extends StObject {
   
   var dateFormat: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object PartialCsvWriteOptions {
   }
   
   @scala.inline
-  implicit class PartialCsvWriteOptionsOps[Self <: PartialCsvWriteOptions] (val x: Self) extends AnyVal {
+  implicit class PartialCsvWriteOptionsMutableBuilder[Self <: PartialCsvWriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateUTC(value: Boolean): Self = StObject.set(x, "dateUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDateUTCUndefined: Self = StObject.set(x, "dateUTC", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUTC(value: Boolean): Self = this.set("dateUTC", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteDateUTC: Self = this.set("dateUTC", js.undefined)
+    def setFormatterOptions(value: PartialFastCsvFormatterOp): Self = StObject.set(x, "formatterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFormatterOptionsUndefined: Self = StObject.set(x, "formatterOptions", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatterOptions(value: PartialFastCsvFormatterOp): Self = this.set("formatterOptions", value.asInstanceOf[js.Any])
+    def setIncludeEmptyRowsUndefined: Self = StObject.set(x, "includeEmptyRows", js.undefined)
     
     @scala.inline
-    def deleteFormatterOptions: Self = this.set("formatterOptions", js.undefined)
+    def setMap(value: (/* value */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIncludeEmptyRows(value: Boolean): Self = this.set("includeEmptyRows", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteIncludeEmptyRows: Self = this.set("includeEmptyRows", js.undefined)
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: (/* value */ js.Any, /* index */ Double) => _): Self = this.set("map", js.Any.fromFunction2(value))
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
-    
-    @scala.inline
-    def setSheetName(value: String): Self = this.set("sheetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetName: Self = this.set("sheetName", js.undefined)
+    def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
   }
 }

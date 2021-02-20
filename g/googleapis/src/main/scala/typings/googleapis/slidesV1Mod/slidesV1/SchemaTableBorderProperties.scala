@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The border styling properties of the TableBorderCell.
   */
 @js.native
-trait SchemaTableBorderProperties extends js.Object {
+trait SchemaTableBorderProperties extends StObject {
   
   /**
     * The dash style of the border.
@@ -34,36 +35,24 @@ object SchemaTableBorderProperties {
   }
   
   @scala.inline
-  implicit class SchemaTableBorderPropertiesOps[Self <: SchemaTableBorderProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaTableBorderPropertiesMutableBuilder[Self <: SchemaTableBorderProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableBorderFill(value: SchemaTableBorderFill): Self = StObject.set(x, "tableBorderFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyle(value: String): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    def setTableBorderFillUndefined: Self = StObject.set(x, "tableBorderFill", js.undefined)
     
     @scala.inline
-    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    def setWeight(value: SchemaDimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBorderFill(value: SchemaTableBorderFill): Self = this.set("tableBorderFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableBorderFill: Self = this.set("tableBorderFill", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: SchemaDimension): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

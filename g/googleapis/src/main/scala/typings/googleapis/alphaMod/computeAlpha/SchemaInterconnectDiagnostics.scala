@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * technical information about Google?s side of the connection.
   */
 @js.native
-trait SchemaInterconnectDiagnostics extends js.Object {
+trait SchemaInterconnectDiagnostics extends StObject {
   
   /**
     * A list of InterconnectDiagnostics.ARPEntry objects, describing individual
@@ -38,42 +39,30 @@ object SchemaInterconnectDiagnostics {
   }
   
   @scala.inline
-  implicit class SchemaInterconnectDiagnosticsOps[Self <: SchemaInterconnectDiagnostics] (val x: Self) extends AnyVal {
+  implicit class SchemaInterconnectDiagnosticsMutableBuilder[Self <: SchemaInterconnectDiagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
     
     @scala.inline
-    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = this.set("arpCaches", js.Array(value :_*))
+    def setLinks(value: js.Array[SchemaInterconnectDiagnosticsLinkStatus]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = this.set("arpCaches", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteArpCaches: Self = this.set("arpCaches", js.undefined)
+    def setLinksVarargs(value: SchemaInterconnectDiagnosticsLinkStatus*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setLinksVarargs(value: SchemaInterconnectDiagnosticsLinkStatus*): Self = this.set("links", js.Array(value :_*))
+    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: js.Array[SchemaInterconnectDiagnosticsLinkStatus]): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
-    
-    @scala.inline
-    def setMacAddress(value: String): Self = this.set("macAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMacAddress: Self = this.set("macAddress", js.undefined)
+    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
   }
 }

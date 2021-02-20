@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object ManagedMobileLobApp {
   }
   
   @scala.inline
-  implicit class ManagedMobileLobAppOps[Self <: ManagedMobileLobApp] (val x: Self) extends AnyVal {
+  implicit class ManagedMobileLobAppMutableBuilder[Self <: ManagedMobileLobApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommittedContentVersion(value: NullableOption[String]): Self = StObject.set(x, "committedContentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommittedContentVersionNull: Self = StObject.set(x, "committedContentVersion", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommittedContentVersionUndefined: Self = StObject.set(x, "committedContentVersion", js.undefined)
     
     @scala.inline
-    def setCommittedContentVersion(value: NullableOption[String]): Self = this.set("committedContentVersion", value.asInstanceOf[js.Any])
+    def setContentVersions(value: NullableOption[js.Array[MobileAppContent]]): Self = StObject.set(x, "contentVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommittedContentVersion: Self = this.set("committedContentVersion", js.undefined)
+    def setContentVersionsNull: Self = StObject.set(x, "contentVersions", null)
     
     @scala.inline
-    def setCommittedContentVersionNull: Self = this.set("committedContentVersion", null)
+    def setContentVersionsUndefined: Self = StObject.set(x, "contentVersions", js.undefined)
     
     @scala.inline
-    def setContentVersionsVarargs(value: MobileAppContent*): Self = this.set("contentVersions", js.Array(value :_*))
+    def setContentVersionsVarargs(value: MobileAppContent*): Self = StObject.set(x, "contentVersions", js.Array(value :_*))
     
     @scala.inline
-    def setContentVersions(value: NullableOption[js.Array[MobileAppContent]]): Self = this.set("contentVersions", value.asInstanceOf[js.Any])
+    def setFileName(value: NullableOption[String]): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentVersions: Self = this.set("contentVersions", js.undefined)
+    def setFileNameNull: Self = StObject.set(x, "fileName", null)
     
     @scala.inline
-    def setContentVersionsNull: Self = this.set("contentVersions", null)
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def setFileName(value: NullableOption[String]): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
-    
-    @scala.inline
-    def setFileNameNull: Self = this.set("fileName", null)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

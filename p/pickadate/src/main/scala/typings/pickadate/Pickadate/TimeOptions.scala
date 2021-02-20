@@ -1,5 +1,6 @@
 package typings.pickadate.Pickadate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,60 +56,48 @@ object TimeOptions {
   }
   
   @scala.inline
-  implicit class TimeOptionsOps[Self <: TimeOptions] (val x: Self) extends AnyVal {
+  implicit class TimeOptionsMutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: js.Array[_]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
     
     @scala.inline
-    def setDisableVarargs(value: js.Any*): Self = this.set("disable", js.Array(value :_*))
+    def setFormatLabel(value: String | (js.Function1[/* time */ TimeItem, String])): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: js.Array[_]): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setFormatLabelFunction1(value: /* time */ TimeItem => String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
     @scala.inline
-    def setFormatLabelFunction1(value: /* time */ TimeItem => String): Self = this.set("formatLabel", js.Any.fromFunction1(value))
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLabel(value: String | (js.Function1[/* time */ TimeItem, String])): Self = this.set("formatLabel", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteFormatLabel: Self = this.set("formatLabel", js.undefined)
+    def setKlass(value: TimeKlassOptions): Self = StObject.set(x, "klass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setKlassUndefined: Self = StObject.set(x, "klass", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setMax(value: MinOrMaxTimeOption): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKlass(value: TimeKlassOptions): Self = this.set("klass", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteKlass: Self = this.set("klass", js.undefined)
+    def setMin(value: MinOrMaxTimeOption): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: MinOrMaxTimeOption): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
-    
-    @scala.inline
-    def setMin(value: MinOrMaxTimeOption): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

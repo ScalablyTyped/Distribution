@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Handler defines a specific action that should be taken
   */
 @js.native
-trait SchemaHandler extends js.Object {
+trait SchemaHandler extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the
@@ -36,36 +37,24 @@ object SchemaHandler {
   }
   
   @scala.inline
-  implicit class SchemaHandlerOps[Self <: SchemaHandler] (val x: Self) extends AnyVal {
+  implicit class SchemaHandlerMutableBuilder[Self <: SchemaHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExec(value: SchemaExecAction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpGet(value: SchemaHTTPGetAction): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExec(value: SchemaExecAction): Self = this.set("exec", value.asInstanceOf[js.Any])
+    def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
     
     @scala.inline
-    def deleteExec: Self = this.set("exec", js.undefined)
+    def setTcpSocket(value: SchemaTCPSocketAction): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpGet(value: SchemaHTTPGetAction): Self = this.set("httpGet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpGet: Self = this.set("httpGet", js.undefined)
-    
-    @scala.inline
-    def setTcpSocket(value: SchemaTCPSocketAction): Self = this.set("tcpSocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpSocket: Self = this.set("tcpSocket", js.undefined)
+    def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
   }
 }

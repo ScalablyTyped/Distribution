@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateLoginProfileRequest extends js.Object {
+trait UpdateLoginProfileRequest extends StObject {
   
   /**
     * The new password for the specified IAM user. The regex pattern used to validate this parameter is a string of characters consisting of the following:   Any printable ASCII character ranging from the space character (\\u0020) through the end of the ASCII character range   The printable characters in the Basic Latin and Latin-1 Supplement character set (through \\u00FF)   The special characters tab (\\u0009), line feed (\\u000A), and carriage return (\\u000D)   However, the format can be further restricted by the account administrator by setting a password policy on the AWS account. For more information, see UpdateAccountPasswordPolicy.
@@ -31,33 +32,21 @@ object UpdateLoginProfileRequest {
   }
   
   @scala.inline
-  implicit class UpdateLoginProfileRequestOps[Self <: UpdateLoginProfileRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateLoginProfileRequestMutableBuilder[Self <: UpdateLoginProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassword(value: passwordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordResetRequired(value: booleanObjectType): Self = StObject.set(x, "PasswordResetRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPasswordResetRequiredUndefined: Self = StObject.set(x, "PasswordResetRequired", js.undefined)
     
     @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def setPassword(value: passwordType): Self = this.set("Password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
-    
-    @scala.inline
-    def setPasswordResetRequired(value: booleanObjectType): Self = this.set("PasswordResetRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordResetRequired: Self = this.set("PasswordResetRequired", js.undefined)
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

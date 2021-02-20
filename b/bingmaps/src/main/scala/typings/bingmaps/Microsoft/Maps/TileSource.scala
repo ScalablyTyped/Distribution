@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileSource extends js.Object {
+trait TileSource extends StObject {
   
   /**
     * Gets the specified bounding box of the of the tile source.
@@ -59,36 +60,24 @@ object TileSource {
   }
   
   @scala.inline
-  implicit class TileSourceOps[Self <: TileSource] (val x: Self) extends AnyVal {
+  implicit class TileSourceMutableBuilder[Self <: TileSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBounds(value: () => LocationRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBounds(value: () => LocationRect): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeight(value: () => Double): Self = this.set("getHeight", js.Any.fromFunction0(value))
+    def setGetUriConstructor(value: () => String | (js.Function1[/* tile */ PyramidTileId, String])): Self = StObject.set(x, "getUriConstructor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = this.set("getMaxZoom", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinZoom(value: () => Double): Self = this.set("getMinZoom", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUriConstructor(value: () => String | (js.Function1[/* tile */ PyramidTileId, String])): Self = this.set("getUriConstructor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = this.set("getWidth", js.Any.fromFunction0(value))
+    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
   }
 }

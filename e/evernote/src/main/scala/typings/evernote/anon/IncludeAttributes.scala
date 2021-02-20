@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeAttributes extends js.Object {
+trait IncludeAttributes extends StObject {
   
   var includeAttributes: js.UndefOr[Boolean] = js.native
   
@@ -38,84 +39,72 @@ object IncludeAttributes {
   }
   
   @scala.inline
-  implicit class IncludeAttributesOps[Self <: IncludeAttributes] (val x: Self) extends AnyVal {
+  implicit class IncludeAttributesMutableBuilder[Self <: IncludeAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeAttributesUndefined: Self = StObject.set(x, "includeAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAttributes(value: Boolean): Self = this.set("includeAttributes", value.asInstanceOf[js.Any])
+    def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
     
     @scala.inline
-    def deleteIncludeAttributes: Self = this.set("includeAttributes", js.undefined)
+    def setIncludeCreated(value: Boolean): Self = StObject.set(x, "includeCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeContentLength(value: Boolean): Self = this.set("includeContentLength", value.asInstanceOf[js.Any])
+    def setIncludeCreatedUndefined: Self = StObject.set(x, "includeCreated", js.undefined)
     
     @scala.inline
-    def deleteIncludeContentLength: Self = this.set("includeContentLength", js.undefined)
+    def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCreated(value: Boolean): Self = this.set("includeCreated", value.asInstanceOf[js.Any])
+    def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
     
     @scala.inline
-    def deleteIncludeCreated: Self = this.set("includeCreated", js.undefined)
+    def setIncludeLargestResourceMime(value: Boolean): Self = StObject.set(x, "includeLargestResourceMime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDeleted(value: Boolean): Self = this.set("includeDeleted", value.asInstanceOf[js.Any])
+    def setIncludeLargestResourceMimeUndefined: Self = StObject.set(x, "includeLargestResourceMime", js.undefined)
     
     @scala.inline
-    def deleteIncludeDeleted: Self = this.set("includeDeleted", js.undefined)
+    def setIncludeLargestResourceSize(value: Boolean): Self = StObject.set(x, "includeLargestResourceSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLargestResourceMime(value: Boolean): Self = this.set("includeLargestResourceMime", value.asInstanceOf[js.Any])
+    def setIncludeLargestResourceSizeUndefined: Self = StObject.set(x, "includeLargestResourceSize", js.undefined)
     
     @scala.inline
-    def deleteIncludeLargestResourceMime: Self = this.set("includeLargestResourceMime", js.undefined)
+    def setIncludeNotebookGuid(value: Boolean): Self = StObject.set(x, "includeNotebookGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLargestResourceSize(value: Boolean): Self = this.set("includeLargestResourceSize", value.asInstanceOf[js.Any])
+    def setIncludeNotebookGuidUndefined: Self = StObject.set(x, "includeNotebookGuid", js.undefined)
     
     @scala.inline
-    def deleteIncludeLargestResourceSize: Self = this.set("includeLargestResourceSize", js.undefined)
+    def setIncludeTagGuids(value: Boolean): Self = StObject.set(x, "includeTagGuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNotebookGuid(value: Boolean): Self = this.set("includeNotebookGuid", value.asInstanceOf[js.Any])
+    def setIncludeTagGuidsUndefined: Self = StObject.set(x, "includeTagGuids", js.undefined)
     
     @scala.inline
-    def deleteIncludeNotebookGuid: Self = this.set("includeNotebookGuid", js.undefined)
+    def setIncludeTitle(value: Boolean): Self = StObject.set(x, "includeTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTagGuids(value: Boolean): Self = this.set("includeTagGuids", value.asInstanceOf[js.Any])
+    def setIncludeTitleUndefined: Self = StObject.set(x, "includeTitle", js.undefined)
     
     @scala.inline
-    def deleteIncludeTagGuids: Self = this.set("includeTagGuids", js.undefined)
+    def setIncludeUpdateSequenceNum(value: Boolean): Self = StObject.set(x, "includeUpdateSequenceNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTitle(value: Boolean): Self = this.set("includeTitle", value.asInstanceOf[js.Any])
+    def setIncludeUpdateSequenceNumUndefined: Self = StObject.set(x, "includeUpdateSequenceNum", js.undefined)
     
     @scala.inline
-    def deleteIncludeTitle: Self = this.set("includeTitle", js.undefined)
+    def setIncludeUpdated(value: Boolean): Self = StObject.set(x, "includeUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeUpdateSequenceNum(value: Boolean): Self = this.set("includeUpdateSequenceNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUpdateSequenceNum: Self = this.set("includeUpdateSequenceNum", js.undefined)
-    
-    @scala.inline
-    def setIncludeUpdated(value: Boolean): Self = this.set("includeUpdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUpdated: Self = this.set("includeUpdated", js.undefined)
+    def setIncludeUpdatedUndefined: Self = StObject.set(x, "includeUpdated", js.undefined)
   }
 }

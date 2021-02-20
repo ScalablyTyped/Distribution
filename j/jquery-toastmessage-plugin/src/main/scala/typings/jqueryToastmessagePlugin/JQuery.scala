@@ -5,12 +5,13 @@ import typings.jqueryToastmessagePlugin.JQueryToastmessage.ToastOptions
 import typings.jqueryToastmessagePlugin.JQueryToastmessage.ToastmessageStatic
 import typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.removeToast
 import typings.jqueryToastmessagePlugin.jqueryToastmessagePluginStrings.showToast
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /* shows a toast message of the specified type */
   def toastmessage(command: ShowToastCommand, message: String): JQuery = js.native

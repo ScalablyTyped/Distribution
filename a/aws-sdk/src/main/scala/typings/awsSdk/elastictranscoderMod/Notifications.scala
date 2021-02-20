@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notifications extends js.Object {
+trait Notifications extends StObject {
   
   /**
     * The Amazon SNS topic that you want to notify when Elastic Transcoder has finished processing the job.
@@ -36,42 +37,30 @@ object Notifications {
   }
   
   @scala.inline
-  implicit class NotificationsOps[Self <: Notifications] (val x: Self) extends AnyVal {
+  implicit class NotificationsMutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted(value: SnsTopic): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: SnsTopic): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: SnsTopic): Self = this.set("Completed", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def deleteCompleted: Self = this.set("Completed", js.undefined)
+    def setProgressing(value: SnsTopic): Self = StObject.set(x, "Progressing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: SnsTopic): Self = this.set("Error", value.asInstanceOf[js.Any])
+    def setProgressingUndefined: Self = StObject.set(x, "Progressing", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
+    def setWarning(value: SnsTopic): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressing(value: SnsTopic): Self = this.set("Progressing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressing: Self = this.set("Progressing", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: SnsTopic): Self = this.set("Warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("Warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

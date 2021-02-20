@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Web.Http
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpRequestHeaderCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an HTTP request message including headers. */
 @js.native
-trait HttpRequestMessage extends js.Object {
+trait HttpRequestMessage extends StObject {
   
   /** Closes the HttpRequestMessage instance and releases allocated resources. */
   def close(): Unit = js.native
@@ -49,39 +50,27 @@ object HttpRequestMessage {
   }
   
   @scala.inline
-  implicit class HttpRequestMessageOps[Self <: HttpRequestMessage] (val x: Self) extends AnyVal {
+  implicit class HttpRequestMessageMutableBuilder[Self <: HttpRequestMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: HttpRequestHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: IHttpContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setProperties(value: IMap[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HttpRequestHeaderCollection): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRequestUri(value: Uri): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: HttpMethod): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IMap[String, _]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestUri(value: Uri): Self = this.set("requestUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportInformation(value: HttpTransportInformation): Self = this.set("transportInformation", value.asInstanceOf[js.Any])
+    def setTransportInformation(value: HttpTransportInformation): Self = StObject.set(x, "transportInformation", value.asInstanceOf[js.Any])
   }
 }

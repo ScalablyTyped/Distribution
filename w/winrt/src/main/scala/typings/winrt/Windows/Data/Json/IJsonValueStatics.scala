@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Data.Json
 
 import typings.winrt.anon.Result
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJsonValueStatics extends js.Object {
+trait IJsonValueStatics extends StObject {
   
   def createBooleanValue(input: Boolean): JsonValue = js.native
   
@@ -33,33 +34,21 @@ object IJsonValueStatics {
   }
   
   @scala.inline
-  implicit class IJsonValueStaticsOps[Self <: IJsonValueStatics] (val x: Self) extends AnyVal {
+  implicit class IJsonValueStaticsMutableBuilder[Self <: IJsonValueStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateBooleanValue(value: Boolean => JsonValue): Self = StObject.set(x, "createBooleanValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateNumberValue(value: Double => JsonValue): Self = StObject.set(x, "createNumberValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateStringValue(value: String => JsonValue): Self = StObject.set(x, "createStringValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateBooleanValue(value: Boolean => JsonValue): Self = this.set("createBooleanValue", js.Any.fromFunction1(value))
+    def setParse(value: String => JsonValue): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateNumberValue(value: Double => JsonValue): Self = this.set("createNumberValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateStringValue(value: String => JsonValue): Self = this.set("createStringValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParse(value: String => JsonValue): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTryParse(value: String => Result): Self = this.set("tryParse", js.Any.fromFunction1(value))
+    def setTryParse(value: String => Result): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
   }
 }

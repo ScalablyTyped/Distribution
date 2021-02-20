@@ -13,6 +13,7 @@ import typings.awsSdk.configBaseMod.RetryDelayOptions
 import typings.awsSdk.credentialProviderChainMod.CredentialProviderChain
 import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.credentialsMod.CredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -208,207 +209,195 @@ object ConfigurationOptionskeyst {
   }
   
   @scala.inline
-  implicit class ConfigurationOptionskeystOps[Self <: ConfigurationOptionskeyst] (val x: Self) extends AnyVal {
+  implicit class ConfigurationOptionskeystMutableBuilder[Self <: ConfigurationOptionskeyst] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeChecksums(value: Boolean): Self = StObject.set(x, "computeChecksums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyId(value: String): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
+    def setComputeChecksumsUndefined: Self = StObject.set(x, "computeChecksums", js.undefined)
     
     @scala.inline
-    def deleteAccessKeyId: Self = this.set("accessKeyId", js.undefined)
+    def setConvertResponseTypes(value: Boolean): Self = StObject.set(x, "convertResponseTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeChecksums(value: Boolean): Self = this.set("computeChecksums", value.asInstanceOf[js.Any])
+    def setConvertResponseTypesUndefined: Self = StObject.set(x, "convertResponseTypes", js.undefined)
     
     @scala.inline
-    def deleteComputeChecksums: Self = this.set("computeChecksums", js.undefined)
+    def setCorrectClockSkew(value: Boolean): Self = StObject.set(x, "correctClockSkew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertResponseTypes(value: Boolean): Self = this.set("convertResponseTypes", value.asInstanceOf[js.Any])
+    def setCorrectClockSkewUndefined: Self = StObject.set(x, "correctClockSkew", js.undefined)
     
     @scala.inline
-    def deleteConvertResponseTypes: Self = this.set("convertResponseTypes", js.undefined)
+    def setCredentialProvider(value: CredentialProviderChain): Self = StObject.set(x, "credentialProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectClockSkew(value: Boolean): Self = this.set("correctClockSkew", value.asInstanceOf[js.Any])
+    def setCredentialProviderUndefined: Self = StObject.set(x, "credentialProvider", js.undefined)
     
     @scala.inline
-    def deleteCorrectClockSkew: Self = this.set("correctClockSkew", js.undefined)
+    def setCredentials(value: Credentials | CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialProvider(value: CredentialProviderChain): Self = this.set("credentialProvider", value.asInstanceOf[js.Any])
+    def setCredentialsNull: Self = StObject.set(x, "credentials", null)
     
     @scala.inline
-    def deleteCredentialProvider: Self = this.set("credentialProvider", js.undefined)
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def setCredentials(value: Credentials | CredentialsOptions): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
     
     @scala.inline
-    def setCredentialsNull: Self = this.set("credentials", null)
+    def setDynamoDbCrc32(value: Boolean): Self = StObject.set(x, "dynamoDbCrc32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomUserAgent(value: String): Self = this.set("customUserAgent", value.asInstanceOf[js.Any])
+    def setDynamoDbCrc32Undefined: Self = StObject.set(x, "dynamoDbCrc32", js.undefined)
     
     @scala.inline
-    def deleteCustomUserAgent: Self = this.set("customUserAgent", js.undefined)
+    def setEndpointCacheSize(value: Double): Self = StObject.set(x, "endpointCacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamoDbCrc32(value: Boolean): Self = this.set("dynamoDbCrc32", value.asInstanceOf[js.Any])
+    def setEndpointCacheSizeUndefined: Self = StObject.set(x, "endpointCacheSize", js.undefined)
     
     @scala.inline
-    def deleteDynamoDbCrc32: Self = this.set("dynamoDbCrc32", js.undefined)
+    def setEndpointDiscoveryEnabled(value: Boolean): Self = StObject.set(x, "endpointDiscoveryEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointCacheSize(value: Double): Self = this.set("endpointCacheSize", value.asInstanceOf[js.Any])
+    def setEndpointDiscoveryEnabledUndefined: Self = StObject.set(x, "endpointDiscoveryEnabled", js.undefined)
     
     @scala.inline
-    def deleteEndpointCacheSize: Self = this.set("endpointCacheSize", js.undefined)
+    def setHostPrefixEnabled(value: Boolean): Self = StObject.set(x, "hostPrefixEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointDiscoveryEnabled(value: Boolean): Self = this.set("endpointDiscoveryEnabled", value.asInstanceOf[js.Any])
+    def setHostPrefixEnabledUndefined: Self = StObject.set(x, "hostPrefixEnabled", js.undefined)
     
     @scala.inline
-    def deleteEndpointDiscoveryEnabled: Self = this.set("endpointDiscoveryEnabled", js.undefined)
+    def setHttpOptions(value: HTTPOptions): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPrefixEnabled(value: Boolean): Self = this.set("hostPrefixEnabled", value.asInstanceOf[js.Any])
+    def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
     
     @scala.inline
-    def deleteHostPrefixEnabled: Self = this.set("hostPrefixEnabled", js.undefined)
+    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpOptions(value: HTTPOptions): Self = this.set("httpOptions", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteHttpOptions: Self = this.set("httpOptions", js.undefined)
+    def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRedirects(value: Double): Self = this.set("maxRedirects", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def deleteMaxRedirects: Self = this.set("maxRedirects", js.undefined)
+    def setParamValidation(value: ParamValidation | Boolean): Self = StObject.set(x, "paramValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setParamValidationUndefined: Self = StObject.set(x, "paramValidation", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamValidation(value: ParamValidation | Boolean): Self = this.set("paramValidation", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteParamValidation: Self = this.set("paramValidation", js.undefined)
+    def setRetryDelayOptions(value: RetryDelayOptions): Self = StObject.set(x, "retryDelayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRetryDelayOptionsUndefined: Self = StObject.set(x, "retryDelayOptions", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setS3BucketEndpoint(value: Boolean): Self = StObject.set(x, "s3BucketEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryDelayOptions(value: RetryDelayOptions): Self = this.set("retryDelayOptions", value.asInstanceOf[js.Any])
+    def setS3BucketEndpointUndefined: Self = StObject.set(x, "s3BucketEndpoint", js.undefined)
     
     @scala.inline
-    def deleteRetryDelayOptions: Self = this.set("retryDelayOptions", js.undefined)
+    def setS3DisableBodySigning(value: Boolean): Self = StObject.set(x, "s3DisableBodySigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketEndpoint(value: Boolean): Self = this.set("s3BucketEndpoint", value.asInstanceOf[js.Any])
+    def setS3DisableBodySigningUndefined: Self = StObject.set(x, "s3DisableBodySigning", js.undefined)
     
     @scala.inline
-    def deleteS3BucketEndpoint: Self = this.set("s3BucketEndpoint", js.undefined)
+    def setS3ForcePathStyle(value: Boolean): Self = StObject.set(x, "s3ForcePathStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DisableBodySigning(value: Boolean): Self = this.set("s3DisableBodySigning", value.asInstanceOf[js.Any])
+    def setS3ForcePathStyleUndefined: Self = StObject.set(x, "s3ForcePathStyle", js.undefined)
     
     @scala.inline
-    def deleteS3DisableBodySigning: Self = this.set("s3DisableBodySigning", js.undefined)
+    def setS3UsEast1RegionalEndpoint(value: regional_ | legacy_): Self = StObject.set(x, "s3UsEast1RegionalEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3ForcePathStyle(value: Boolean): Self = this.set("s3ForcePathStyle", value.asInstanceOf[js.Any])
+    def setS3UsEast1RegionalEndpointUndefined: Self = StObject.set(x, "s3UsEast1RegionalEndpoint", js.undefined)
     
     @scala.inline
-    def deleteS3ForcePathStyle: Self = this.set("s3ForcePathStyle", js.undefined)
+    def setS3UseArnRegion(value: Boolean): Self = StObject.set(x, "s3UseArnRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3UsEast1RegionalEndpoint(value: regional_ | legacy_): Self = this.set("s3UsEast1RegionalEndpoint", value.asInstanceOf[js.Any])
+    def setS3UseArnRegionUndefined: Self = StObject.set(x, "s3UseArnRegion", js.undefined)
     
     @scala.inline
-    def deleteS3UsEast1RegionalEndpoint: Self = this.set("s3UsEast1RegionalEndpoint", js.undefined)
+    def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3UseArnRegion(value: Boolean): Self = this.set("s3UseArnRegion", value.asInstanceOf[js.Any])
+    def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
     
     @scala.inline
-    def deleteS3UseArnRegion: Self = this.set("s3UseArnRegion", js.undefined)
+    def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretAccessKey(value: String): Self = this.set("secretAccessKey", value.asInstanceOf[js.Any])
+    def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     
     @scala.inline
-    def deleteSecretAccessKey: Self = this.set("secretAccessKey", js.undefined)
+    def setSignatureCache(value: Boolean): Self = StObject.set(x, "signatureCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionToken(value: String): Self = this.set("sessionToken", value.asInstanceOf[js.Any])
+    def setSignatureCacheUndefined: Self = StObject.set(x, "signatureCache", js.undefined)
     
     @scala.inline
-    def deleteSessionToken: Self = this.set("sessionToken", js.undefined)
+    def setSignatureVersion(value: v2_ | v3 | v4 | String): Self = StObject.set(x, "signatureVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureCache(value: Boolean): Self = this.set("signatureCache", value.asInstanceOf[js.Any])
+    def setSignatureVersionUndefined: Self = StObject.set(x, "signatureVersion", js.undefined)
     
     @scala.inline
-    def deleteSignatureCache: Self = this.set("signatureCache", js.undefined)
+    def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureVersion(value: v2_ | v3 | v4 | String): Self = this.set("signatureVersion", value.asInstanceOf[js.Any])
+    def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
     
     @scala.inline
-    def deleteSignatureVersion: Self = this.set("signatureVersion", js.undefined)
+    def setStsRegionalEndpoints(value: legacy_ | regional_): Self = StObject.set(x, "stsRegionalEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslEnabled(value: Boolean): Self = this.set("sslEnabled", value.asInstanceOf[js.Any])
+    def setStsRegionalEndpointsUndefined: Self = StObject.set(x, "stsRegionalEndpoints", js.undefined)
     
     @scala.inline
-    def deleteSslEnabled: Self = this.set("sslEnabled", js.undefined)
+    def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStsRegionalEndpoints(value: legacy_ | regional_): Self = this.set("stsRegionalEndpoints", value.asInstanceOf[js.Any])
+    def setSystemClockOffsetUndefined: Self = StObject.set(x, "systemClockOffset", js.undefined)
     
     @scala.inline
-    def deleteStsRegionalEndpoints: Self = this.set("stsRegionalEndpoints", js.undefined)
+    def setUseAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "useAccelerateEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemClockOffset(value: Double): Self = this.set("systemClockOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemClockOffset: Self = this.set("systemClockOffset", js.undefined)
-    
-    @scala.inline
-    def setUseAccelerateEndpoint(value: Boolean): Self = this.set("useAccelerateEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAccelerateEndpoint: Self = this.set("useAccelerateEndpoint", js.undefined)
+    def setUseAccelerateEndpointUndefined: Self = StObject.set(x, "useAccelerateEndpoint", js.undefined)
   }
 }

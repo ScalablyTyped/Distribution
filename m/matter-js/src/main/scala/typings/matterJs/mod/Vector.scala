@@ -1,21 +1,20 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Vector")
 @js.native
-class Vector () extends js.Object {
+class Vector () extends StObject {
   
   var x: Double = js.native
   
   var y: Double = js.native
 }
 /* static members */
-@JSImport("matter-js", "Vector")
-@js.native
-object Vector extends js.Object {
+object Vector {
   
   /**
     * Adds the two vectors.
@@ -25,7 +24,11 @@ object Vector extends js.Object {
     * @param {vector} [output]
     * @return {vector} A new vector of vectorA and vectorB added
     */
+  @JSImport("matter-js", "Vector.add")
+  @js.native
   def add(vectorA: Vector, vectorB: Vector): Vector = js.native
+  @JSImport("matter-js", "Vector.add")
+  @js.native
   def add(vectorA: Vector, vectorB: Vector, output: Vector): Vector = js.native
   
   /**
@@ -35,6 +38,8 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The angle in radians
     */
+  @JSImport("matter-js", "Vector.angle")
+  @js.native
   def angle(vectorA: Vector, vectorB: Vector): Double = js.native
   
   /**
@@ -43,6 +48,8 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {vector} A new cloned vector
     */
+  @JSImport("matter-js", "Vector.clone")
+  @js.native
   def clone(vector: Vector): Vector = js.native
   
   /**
@@ -52,9 +59,17 @@ object Vector extends js.Object {
     * @param {number} y
     * @return {vector} A new vector
     */
+  @JSImport("matter-js", "Vector.create")
+  @js.native
   def create(): Vector = js.native
+  @JSImport("matter-js", "Vector.create")
+  @js.native
   def create(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
+  @JSImport("matter-js", "Vector.create")
+  @js.native
   def create(x: Double): Vector = js.native
+  @JSImport("matter-js", "Vector.create")
+  @js.native
   def create(x: Double, y: Double): Vector = js.native
   
   /**
@@ -64,6 +79,8 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The cross product of the two vectors
     */
+  @JSImport("matter-js", "Vector.cross")
+  @js.native
   def cross(vectorA: Vector, vectorB: Vector): Double = js.native
   
   /**
@@ -74,6 +91,8 @@ object Vector extends js.Object {
     * @param {vector} vectorC
     * @return {number} The cross product of the three vectors
     */
+  @JSImport("matter-js", "Vector.cross3")
+  @js.native
   def cross3(vectorA: Vector, vectorB: Vector, vectorC: Vector): Double = js.native
   
   /**
@@ -83,6 +102,8 @@ object Vector extends js.Object {
     * @param {number} scalar
     * @return {vector} A new vector divided by scalar
     */
+  @JSImport("matter-js", "Vector.div")
+  @js.native
   def div(vector: Vector, scalar: Double): Vector = js.native
   
   /**
@@ -92,6 +113,8 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The dot product of the two vectors
     */
+  @JSImport("matter-js", "Vector.dot")
+  @js.native
   def dot(vectorA: Vector, vectorB: Vector): Double = js.native
   
   /**
@@ -100,6 +123,8 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {number} The magnitude of the vector
     */
+  @JSImport("matter-js", "Vector.magnitude")
+  @js.native
   def magnitude(vector: Vector): Double = js.native
   
   /**
@@ -108,6 +133,8 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {number} The squared magnitude of the vector
     */
+  @JSImport("matter-js", "Vector.magnitudeSquared")
+  @js.native
   def magnitudeSquared(vector: Vector): Double = js.native
   
   /**
@@ -117,6 +144,8 @@ object Vector extends js.Object {
     * @param {number} scalar
     * @return {vector} A new vector multiplied by scalar
     */
+  @JSImport("matter-js", "Vector.mult")
+  @js.native
   def mult(vector: Vector, scalar: Double): Vector = js.native
   
   /**
@@ -125,6 +154,8 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {vector} The negated vector
     */
+  @JSImport("matter-js", "Vector.neg")
+  @js.native
   def neg(vector: Vector): Vector = js.native
   
   /**
@@ -133,6 +164,8 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {vector} A new vector normalised
     */
+  @JSImport("matter-js", "Vector.normalise")
+  @js.native
   def normalise(vector: Vector): Vector = js.native
   
   /**
@@ -142,7 +175,11 @@ object Vector extends js.Object {
     * @param {bool} [negate=false]
     * @return {vector} The perpendicular vector
     */
+  @JSImport("matter-js", "Vector.perp")
+  @js.native
   def perp(vector: Vector): Vector = js.native
+  @JSImport("matter-js", "Vector.perp")
+  @js.native
   def perp(vector: Vector, negate: Boolean): Vector = js.native
   
   /**
@@ -152,6 +189,8 @@ object Vector extends js.Object {
     * @param {number} angle
     * @return {vector} A new vector rotated about (0, 0)
     */
+  @JSImport("matter-js", "Vector.rotate")
+  @js.native
   def rotate(vector: Vector, angle: Double): Vector = js.native
   
   /**
@@ -163,7 +202,11 @@ object Vector extends js.Object {
     * @param {vector} [output]
     * @return {vector} A new vector rotated about the point
     */
+  @JSImport("matter-js", "Vector.rotateAbout")
+  @js.native
   def rotateAbout(vector: Vector, angle: Double, point: Vector): Vector = js.native
+  @JSImport("matter-js", "Vector.rotateAbout")
+  @js.native
   def rotateAbout(vector: Vector, angle: Double, point: Vector, output: Vector): Vector = js.native
   
   /**
@@ -174,6 +217,10 @@ object Vector extends js.Object {
     * @param {vector} [output]
     * @return {vector} A new vector of vectorA and vectorB subtracted
     */
+  @JSImport("matter-js", "Vector.sub")
+  @js.native
   def sub(vectorA: Vector, vectorB: Vector): Vector = js.native
+  @JSImport("matter-js", "Vector.sub")
+  @js.native
   def sub(vectorA: Vector, vectorB: Vector, optional: Vector): Vector = js.native
 }

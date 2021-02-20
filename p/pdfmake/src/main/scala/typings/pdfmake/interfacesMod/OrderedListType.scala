@@ -1,5 +1,6 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pdfmake.pdfmakeStrings.`upper-roman`
   - typings.pdfmake.pdfmakeStrings.none
 */
-trait OrderedListType extends js.Object
+trait OrderedListType extends StObject
 object OrderedListType {
   
   @scala.inline

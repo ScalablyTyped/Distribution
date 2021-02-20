@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDns.anon.Alt
 import typings.maximMazurokGapiClientDns.anon.DnsName
 import typings.maximMazurokGapiClientDns.anon.Oauthtoken
 import typings.maximMazurokGapiClientDns.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedZonesResource extends js.Object {
+trait ManagedZonesResource extends StObject {
   
   /** Create a new ManagedZone. */
   def create(request: Oauthtoken): Request[ManagedZone] = js.native

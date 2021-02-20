@@ -1,5 +1,6 @@
 package typings.csv2json
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("csv2json", JSImport.Namespace)
 @js.native
-object csv2jsonRequire extends js.Object
+object csv2jsonRequire extends StObject

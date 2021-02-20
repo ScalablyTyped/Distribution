@@ -1,12 +1,13 @@
 package typings.fineUploader.coreMod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreOptions extends js.Object {
+trait CoreOptions extends StObject {
   
   /**
     * Set to false if you want to be able to upload queued items later by calling the `uploadStoredFiles()` method
@@ -160,171 +161,159 @@ object CoreOptions {
   }
   
   @scala.inline
-  implicit class CoreOptionsOps[Self <: CoreOptions] (val x: Self) extends AnyVal {
+  implicit class CoreOptionsMutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlobs(value: BlobsOptions): Self = StObject.set(x, "blobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpload(value: Boolean): Self = this.set("autoUpload", value.asInstanceOf[js.Any])
+    def setBlobsUndefined: Self = StObject.set(x, "blobs", js.undefined)
     
     @scala.inline
-    def deleteAutoUpload: Self = this.set("autoUpload", js.undefined)
+    def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobs(value: BlobsOptions): Self = this.set("blobs", value.asInstanceOf[js.Any])
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def deleteBlobs: Self = this.set("blobs", js.undefined)
+    def setCallbacks(value: CoreEvents): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: HTMLElement): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setCamera(value: CameraOptions): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbacks(value: CoreEvents): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    def setChunking(value: ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: CameraOptions): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
     
     @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setCors(value: CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunking(value: ChunkingOptions): Self = this.set("chunking", value.asInstanceOf[js.Any])
+    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
     @scala.inline
-    def deleteChunking: Self = this.set("chunking", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCors(value: CorsOptions): Self = this.set("cors", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCors: Self = this.set("cors", js.undefined)
+    def setDeleteFile(value: DeleteFileOptions): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDeleteFileUndefined: Self = StObject.set(x, "deleteFile", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setDisableCancelForFormUploads(value: Boolean): Self = StObject.set(x, "disableCancelForFormUploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteFile(value: DeleteFileOptions): Self = this.set("deleteFile", value.asInstanceOf[js.Any])
+    def setDisableCancelForFormUploadsUndefined: Self = StObject.set(x, "disableCancelForFormUploads", js.undefined)
     
     @scala.inline
-    def deleteDeleteFile: Self = this.set("deleteFile", js.undefined)
+    def setExtraButtons(value: js.Array[ExtraButtonsOptions]): Self = StObject.set(x, "extraButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableCancelForFormUploads(value: Boolean): Self = this.set("disableCancelForFormUploads", value.asInstanceOf[js.Any])
+    def setExtraButtonsUndefined: Self = StObject.set(x, "extraButtons", js.undefined)
     
     @scala.inline
-    def deleteDisableCancelForFormUploads: Self = this.set("disableCancelForFormUploads", js.undefined)
+    def setExtraButtonsVarargs(value: ExtraButtonsOptions*): Self = StObject.set(x, "extraButtons", js.Array(value :_*))
     
     @scala.inline
-    def setExtraButtonsVarargs(value: ExtraButtonsOptions*): Self = this.set("extraButtons", js.Array(value :_*))
+    def setForm(value: FormOptions): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraButtons(value: js.Array[ExtraButtonsOptions]): Self = this.set("extraButtons", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteExtraButtons: Self = this.set("extraButtons", js.undefined)
+    def setFormatFileName(value: /* fileOrBlobName */ String => String): Self = StObject.set(x, "formatFileName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForm(value: FormOptions): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setFormatFileNameUndefined: Self = StObject.set(x, "formatFileName", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatFileName(value: /* fileOrBlobName */ String => String): Self = this.set("formatFileName", js.Any.fromFunction1(value))
+    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
     @scala.inline
-    def deleteFormatFileName: Self = this.set("formatFileName", js.undefined)
+    def setMessages(value: Messages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: Messages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setPaste(value: PasteOptions): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setRequest(value: RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaste(value: PasteOptions): Self = this.set("paste", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deletePaste: Self = this.set("paste", js.undefined)
+    def setResume(value: ResumeOptions): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: RequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setScaling(value: ScalingOptions): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResume(value: ResumeOptions): Self = this.set("resume", value.asInstanceOf[js.Any])
+    def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
     
     @scala.inline
-    def deleteResume: Self = this.set("resume", js.undefined)
+    def setSession(value: SessionOptions): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaling(value: ScalingOptions): Self = this.set("scaling", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deleteScaling: Self = this.set("scaling", js.undefined)
+    def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: SessionOptions): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setValidation(value: ValidationOptions): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: TextOptions): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setWarnBeforeUnload(value: Boolean): Self = StObject.set(x, "warnBeforeUnload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidation(value: ValidationOptions): Self = this.set("validation", value.asInstanceOf[js.Any])
+    def setWarnBeforeUnloadUndefined: Self = StObject.set(x, "warnBeforeUnload", js.undefined)
     
     @scala.inline
-    def deleteValidation: Self = this.set("validation", js.undefined)
+    def setWorkarounds(value: WorkArounds): Self = StObject.set(x, "workarounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarnBeforeUnload(value: Boolean): Self = this.set("warnBeforeUnload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnBeforeUnload: Self = this.set("warnBeforeUnload", js.undefined)
-    
-    @scala.inline
-    def setWorkarounds(value: WorkArounds): Self = this.set("workarounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkarounds: Self = this.set("workarounds", js.undefined)
+    def setWorkaroundsUndefined: Self = StObject.set(x, "workarounds", js.undefined)
   }
 }

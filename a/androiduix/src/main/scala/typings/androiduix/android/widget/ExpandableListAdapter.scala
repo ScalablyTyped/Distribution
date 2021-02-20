@@ -3,12 +3,13 @@ package typings.androiduix.android.widget
 import typings.androiduix.android.database.DataSetObserver
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpandableListAdapter extends js.Object {
+trait ExpandableListAdapter extends StObject {
   
   def areAllItemsEnabled(): Boolean = js.native
   
@@ -80,72 +81,60 @@ object ExpandableListAdapter {
   }
   
   @scala.inline
-  implicit class ExpandableListAdapterOps[Self <: ExpandableListAdapter] (val x: Self) extends AnyVal {
+  implicit class ExpandableListAdapterMutableBuilder[Self <: ExpandableListAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreAllItemsEnabled(value: () => Boolean): Self = StObject.set(x, "areAllItemsEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChild(value: (Double, Double) => js.Any): Self = StObject.set(x, "getChild", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChildId(value: (Double, Double) => Double): Self = StObject.set(x, "getChildId", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAreAllItemsEnabled(value: () => Boolean): Self = this.set("areAllItemsEnabled", js.Any.fromFunction0(value))
+    def setGetChildView(value: (Double, Double, Boolean, View, ViewGroup) => View): Self = StObject.set(x, "getChildView", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetChild(value: (Double, Double) => js.Any): Self = this.set("getChild", js.Any.fromFunction2(value))
+    def setGetChildrenCount(value: Double => Double): Self = StObject.set(x, "getChildrenCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetChildId(value: (Double, Double) => Double): Self = this.set("getChildId", js.Any.fromFunction2(value))
+    def setGetCombinedChildId(value: (Double, Double) => Double): Self = StObject.set(x, "getCombinedChildId", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetChildView(value: (Double, Double, Boolean, View, ViewGroup) => View): Self = this.set("getChildView", js.Any.fromFunction5(value))
+    def setGetCombinedGroupId(value: Double => Double): Self = StObject.set(x, "getCombinedGroupId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetChildrenCount(value: Double => Double): Self = this.set("getChildrenCount", js.Any.fromFunction1(value))
+    def setGetGroup(value: Double => js.Any): Self = StObject.set(x, "getGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCombinedChildId(value: (Double, Double) => Double): Self = this.set("getCombinedChildId", js.Any.fromFunction2(value))
+    def setGetGroupCount(value: () => Double): Self = StObject.set(x, "getGroupCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCombinedGroupId(value: Double => Double): Self = this.set("getCombinedGroupId", js.Any.fromFunction1(value))
+    def setGetGroupId(value: Double => Double): Self = StObject.set(x, "getGroupId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGroup(value: Double => js.Any): Self = this.set("getGroup", js.Any.fromFunction1(value))
+    def setGetGroupView(value: (Double, Boolean, View, ViewGroup) => View): Self = StObject.set(x, "getGroupView", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetGroupCount(value: () => Double): Self = this.set("getGroupCount", js.Any.fromFunction0(value))
+    def setHasStableIds(value: () => Boolean): Self = StObject.set(x, "hasStableIds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupId(value: Double => Double): Self = this.set("getGroupId", js.Any.fromFunction1(value))
+    def setIsChildSelectable(value: (Double, Double) => Boolean): Self = StObject.set(x, "isChildSelectable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetGroupView(value: (Double, Boolean, View, ViewGroup) => View): Self = this.set("getGroupView", js.Any.fromFunction4(value))
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasStableIds(value: () => Boolean): Self = this.set("hasStableIds", js.Any.fromFunction0(value))
+    def setOnGroupCollapsed(value: Double => Unit): Self = StObject.set(x, "onGroupCollapsed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsChildSelectable(value: (Double, Double) => Boolean): Self = this.set("isChildSelectable", js.Any.fromFunction2(value))
+    def setOnGroupExpanded(value: Double => Unit): Self = StObject.set(x, "onGroupExpanded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    def setRegisterDataSetObserver(value: DataSetObserver => Unit): Self = StObject.set(x, "registerDataSetObserver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGroupCollapsed(value: Double => Unit): Self = this.set("onGroupCollapsed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnGroupExpanded(value: Double => Unit): Self = this.set("onGroupExpanded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterDataSetObserver(value: DataSetObserver => Unit): Self = this.set("registerDataSetObserver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnregisterDataSetObserver(value: DataSetObserver => Unit): Self = this.set("unregisterDataSetObserver", js.Any.fromFunction1(value))
+    def setUnregisterDataSetObserver(value: DataSetObserver => Unit): Self = StObject.set(x, "unregisterDataSetObserver", js.Any.fromFunction1(value))
   }
 }

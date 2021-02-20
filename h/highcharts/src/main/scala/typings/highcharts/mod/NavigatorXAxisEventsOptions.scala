@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigatorXAxisEventsOptions extends js.Object {
+trait NavigatorXAxisEventsOptions extends StObject {
   
   /**
     * (Highcharts, Gantt) An event fired after the breaks have rendered.
@@ -64,48 +65,36 @@ object NavigatorXAxisEventsOptions {
   }
   
   @scala.inline
-  implicit class NavigatorXAxisEventsOptionsOps[Self <: NavigatorXAxisEventsOptions] (val x: Self) extends AnyVal {
+  implicit class NavigatorXAxisEventsOptionsMutableBuilder[Self <: NavigatorXAxisEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterBreaks(value: AxisEventCallbackFunction): Self = StObject.set(x, "afterBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterBreaksUndefined: Self = StObject.set(x, "afterBreaks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterBreaks(value: AxisEventCallbackFunction): Self = this.set("afterBreaks", value.asInstanceOf[js.Any])
+    def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
     
     @scala.inline
-    def deleteAfterBreaks: Self = this.set("afterBreaks", js.undefined)
+    def setPointBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = this.set("afterSetExtremes", value.asInstanceOf[js.Any])
+    def setPointBreakUndefined: Self = StObject.set(x, "pointBreak", js.undefined)
     
     @scala.inline
-    def deleteAfterSetExtremes: Self = this.set("afterSetExtremes", js.undefined)
+    def setPointInBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointInBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointBreak(value: AxisPointBreakEventCallbackFunction): Self = this.set("pointBreak", value.asInstanceOf[js.Any])
+    def setPointInBreakUndefined: Self = StObject.set(x, "pointInBreak", js.undefined)
     
     @scala.inline
-    def deletePointBreak: Self = this.set("pointBreak", js.undefined)
+    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointInBreak(value: AxisPointBreakEventCallbackFunction): Self = this.set("pointInBreak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointInBreak: Self = this.set("pointInBreak", js.undefined)
-    
-    @scala.inline
-    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = this.set("setExtremes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetExtremes: Self = this.set("setExtremes", js.undefined)
+    def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
   }
 }

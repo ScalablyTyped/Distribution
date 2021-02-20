@@ -1,6 +1,7 @@
 package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Google Docs document.
   */
 @js.native
-trait SchemaDocument extends js.Object {
+trait SchemaDocument extends StObject {
   
   /**
     * The main body of the document.
@@ -113,114 +114,102 @@ object SchemaDocument {
   }
   
   @scala.inline
-  implicit class SchemaDocumentOps[Self <: SchemaDocument] (val x: Self) extends AnyVal {
+  implicit class SchemaDocumentMutableBuilder[Self <: SchemaDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: SchemaBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: SchemaBody): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setDocumentStyle(value: SchemaDocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setFooters(value: StringDictionary[SchemaFooter]): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentStyle(value: SchemaDocumentStyle): Self = this.set("documentStyle", value.asInstanceOf[js.Any])
+    def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
     
     @scala.inline
-    def deleteDocumentStyle: Self = this.set("documentStyle", js.undefined)
+    def setFootnotes(value: StringDictionary[SchemaFootnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooters(value: StringDictionary[SchemaFooter]): Self = this.set("footers", value.asInstanceOf[js.Any])
+    def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
     
     @scala.inline
-    def deleteFooters: Self = this.set("footers", js.undefined)
+    def setHeaders(value: StringDictionary[SchemaHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnotes(value: StringDictionary[SchemaFootnote]): Self = this.set("footnotes", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFootnotes: Self = this.set("footnotes", js.undefined)
+    def setInlineObjects(value: StringDictionary[SchemaInlineObject]): Self = StObject.set(x, "inlineObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: StringDictionary[SchemaHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setInlineObjectsUndefined: Self = StObject.set(x, "inlineObjects", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setLists(value: StringDictionary[SchemaList]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineObjects(value: StringDictionary[SchemaInlineObject]): Self = this.set("inlineObjects", value.asInstanceOf[js.Any])
+    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
     @scala.inline
-    def deleteInlineObjects: Self = this.set("inlineObjects", js.undefined)
+    def setNamedRanges(value: StringDictionary[SchemaNamedRanges]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLists(value: StringDictionary[SchemaList]): Self = this.set("lists", value.asInstanceOf[js.Any])
+    def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
     @scala.inline
-    def deleteLists: Self = this.set("lists", js.undefined)
+    def setNamedStyles(value: SchemaNamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRanges(value: StringDictionary[SchemaNamedRanges]): Self = this.set("namedRanges", value.asInstanceOf[js.Any])
+    def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
     
     @scala.inline
-    def deleteNamedRanges: Self = this.set("namedRanges", js.undefined)
+    def setPositionedObjects(value: StringDictionary[SchemaPositionedObject]): Self = StObject.set(x, "positionedObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedStyles(value: SchemaNamedStyles): Self = this.set("namedStyles", value.asInstanceOf[js.Any])
+    def setPositionedObjectsUndefined: Self = StObject.set(x, "positionedObjects", js.undefined)
     
     @scala.inline
-    def deleteNamedStyles: Self = this.set("namedStyles", js.undefined)
+    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionedObjects(value: StringDictionary[SchemaPositionedObject]): Self = this.set("positionedObjects", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     @scala.inline
-    def deletePositionedObjects: Self = this.set("positionedObjects", js.undefined)
+    def setSuggestedDocumentStyleChanges(value: StringDictionary[SchemaSuggestedDocumentStyle]): Self = StObject.set(x, "suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    def setSuggestedDocumentStyleChangesUndefined: Self = StObject.set(x, "suggestedDocumentStyleChanges", js.undefined)
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    def setSuggestedNamedStylesChanges(value: StringDictionary[SchemaSuggestedNamedStyles]): Self = StObject.set(x, "suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedDocumentStyleChanges(value: StringDictionary[SchemaSuggestedDocumentStyle]): Self = this.set("suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
+    def setSuggestedNamedStylesChangesUndefined: Self = StObject.set(x, "suggestedNamedStylesChanges", js.undefined)
     
     @scala.inline
-    def deleteSuggestedDocumentStyleChanges: Self = this.set("suggestedDocumentStyleChanges", js.undefined)
+    def setSuggestionsViewMode(value: String): Self = StObject.set(x, "suggestionsViewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestedNamedStylesChanges(value: StringDictionary[SchemaSuggestedNamedStyles]): Self = this.set("suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
+    def setSuggestionsViewModeUndefined: Self = StObject.set(x, "suggestionsViewMode", js.undefined)
     
     @scala.inline
-    def deleteSuggestedNamedStylesChanges: Self = this.set("suggestedNamedStylesChanges", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestionsViewMode(value: String): Self = this.set("suggestionsViewMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestionsViewMode: Self = this.set("suggestionsViewMode", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

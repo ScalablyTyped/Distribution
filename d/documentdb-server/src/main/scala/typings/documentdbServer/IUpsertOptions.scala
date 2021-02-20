@@ -1,12 +1,13 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a upsert operation. */
 @js.native
-trait IUpsertOptions extends js.Object {
+trait IUpsertOptions extends StObject {
   
   /** Disables automatic generation of "id" field of the document to be upserted (if it is not provided) */
   var disableAutomaticIdGeneration: js.UndefOr[String] = js.native
@@ -23,30 +24,18 @@ object IUpsertOptions {
   }
   
   @scala.inline
-  implicit class IUpsertOptionsOps[Self <: IUpsertOptions] (val x: Self) extends AnyVal {
+  implicit class IUpsertOptionsMutableBuilder[Self <: IUpsertOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableAutomaticIdGeneration(value: String): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableAutomaticIdGenerationUndefined: Self = StObject.set(x, "disableAutomaticIdGeneration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAutomaticIdGeneration(value: String): Self = this.set("disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableAutomaticIdGeneration: Self = this.set("disableAutomaticIdGeneration", js.undefined)
-    
-    @scala.inline
-    def setIndexAction(value: String): Self = this.set("indexAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexAction: Self = this.set("indexAction", js.undefined)
+    def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
   }
 }

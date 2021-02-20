@@ -3,26 +3,28 @@ package typings.winrtUwp.global.Windows.Media
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Media.Capture.MediaCategory
 import typings.winrtUwp.Windows.Media.Render.AudioRenderCategory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes for discovering the audio processing chain on a device. */
-@JSGlobal("Windows.Media.Effects")
-@js.native
-object Effects extends js.Object {
+object Effects {
   
   /** Represent an audio capture effects manager which can be used to discover the audio processing chain on a device for a specific media category and audio processing mode. */
+  @JSGlobal("Windows.Media.Effects.AudioCaptureEffectsManager")
   @js.native
   abstract class AudioCaptureEffectsManager ()
     extends typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager
   
   /** Represents an audio effect. */
+  @JSGlobal("Windows.Media.Effects.AudioEffect")
   @js.native
   abstract class AudioEffect ()
     extends typings.winrtUwp.Windows.Media.Effects.AudioEffect
   
   /** Represents an audio effect definition. */
+  @JSGlobal("Windows.Media.Effects.AudioEffectDefinition")
   @js.native
   class AudioEffectDefinition protected ()
     extends typings.winrtUwp.Windows.Media.Effects.AudioEffectDefinition {
@@ -40,8 +42,9 @@ object Effects extends js.Object {
   }
   
   /** Defines values for audio effect types. */
+  @JSGlobal("Windows.Media.Effects.AudioEffectType")
   @js.native
-  object AudioEffectType extends js.Object {
+  object AudioEffectType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Effects.AudioEffectType with Double] = js.native
@@ -84,12 +87,11 @@ object Effects extends js.Object {
   }
   
   /** Provides functionality for creating audio capture and render effects manager objects. */
+  @JSGlobal("Windows.Media.Effects.AudioEffectsManager")
   @js.native
   abstract class AudioEffectsManager ()
     extends typings.winrtUwp.Windows.Media.Effects.AudioEffectsManager
-  /* static members */
-  @js.native
-  object AudioEffectsManager extends js.Object {
+  object AudioEffectsManager {
     
     /**
       * Creates a AudioCaptureEffectsManager object for the specified device for a specific media category.
@@ -97,6 +99,9 @@ object Effects extends js.Object {
       * @param category The media category.
       * @return The new audio capture effects manager.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.Effects.AudioEffectsManager.createAudioCaptureEffectsManager")
+    @js.native
     def createAudioCaptureEffectsManager(deviceId: String, category: MediaCategory): typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager = js.native
     /**
       * Creates a AudioCaptureEffectsManager object for the specified device for a specific media category and audio processing mode.
@@ -105,6 +110,9 @@ object Effects extends js.Object {
       * @param mode The audio processing mode.
       * @return The new audio capture effects manager.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.Effects.AudioEffectsManager.createAudioCaptureEffectsManager")
+    @js.native
     def createAudioCaptureEffectsManager(deviceId: String, category: MediaCategory, mode: typings.winrtUwp.Windows.Media.AudioProcessing): typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager = js.native
     
     /**
@@ -113,6 +121,9 @@ object Effects extends js.Object {
       * @param category The audio render category.
       * @return The new audio render effects manager.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.Effects.AudioEffectsManager.createAudioRenderEffectsManager")
+    @js.native
     def createAudioRenderEffectsManager(deviceId: String, category: AudioRenderCategory): typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager = js.native
     /**
       * Creates a AudioRenderEffectsManager object for the specified device for a specific media category.
@@ -121,6 +132,9 @@ object Effects extends js.Object {
       * @param mode The audio precessing mode.
       * @return The new audio render effects manager.
       */
+    /* static member */
+    @JSGlobal("Windows.Media.Effects.AudioEffectsManager.createAudioRenderEffectsManager")
+    @js.native
     def createAudioRenderEffectsManager(
       deviceId: String,
       category: AudioRenderCategory,
@@ -129,18 +143,21 @@ object Effects extends js.Object {
   }
   
   /** Represent an audio render effects manager which can be used to discover the audio processing chain on a device for a specific media category and audio processing mode. */
+  @JSGlobal("Windows.Media.Effects.AudioRenderEffectsManager")
   @js.native
   abstract class AudioRenderEffectsManager ()
     extends typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager
   
   /** Provides context for performing a custom overlay operation within the CompositeFrame method. */
+  @JSGlobal("Windows.Media.Effects.CompositeVideoFrameContext")
   @js.native
   abstract class CompositeVideoFrameContext ()
     extends typings.winrtUwp.Windows.Media.Effects.CompositeVideoFrameContext
   
   /** Specifies the reason why a media effect was closed. */
+  @JSGlobal("Windows.Media.Effects.MediaEffectClosedReason")
   @js.native
-  object MediaEffectClosedReason extends js.Object {
+  object MediaEffectClosedReason extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Effects.MediaEffectClosedReason with Double] = js.native
@@ -155,8 +172,9 @@ object Effects extends js.Object {
   }
   
   /** Specifies the types of memory that can be used for a media operation. */
+  @JSGlobal("Windows.Media.Effects.MediaMemoryTypes")
   @js.native
-  object MediaMemoryTypes extends js.Object {
+  object MediaMemoryTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Effects.MediaMemoryTypes with Double] = js.native
@@ -169,16 +187,19 @@ object Effects extends js.Object {
   }
   
   /** Provides context for performing a custom audio effect operation within the ProcessFrame method. */
+  @JSGlobal("Windows.Media.Effects.ProcessAudioFrameContext")
   @js.native
   abstract class ProcessAudioFrameContext ()
     extends typings.winrtUwp.Windows.Media.Effects.ProcessAudioFrameContext
   
   /** Provides context for performing a custom video effect operation within the ProcessFrame method. */
+  @JSGlobal("Windows.Media.Effects.ProcessVideoFrameContext")
   @js.native
   abstract class ProcessVideoFrameContext ()
     extends typings.winrtUwp.Windows.Media.Effects.ProcessVideoFrameContext
   
   /** Represents the definition of a custom video compositor. */
+  @JSGlobal("Windows.Media.Effects.VideoCompositorDefinition")
   @js.native
   class VideoCompositorDefinition protected ()
     extends typings.winrtUwp.Windows.Media.Effects.VideoCompositorDefinition {
@@ -196,6 +217,7 @@ object Effects extends js.Object {
   }
   
   /** Represents a video effect definition. */
+  @JSGlobal("Windows.Media.Effects.VideoEffectDefinition")
   @js.native
   class VideoEffectDefinition protected ()
     extends typings.winrtUwp.Windows.Media.Effects.VideoEffectDefinition {
@@ -213,6 +235,7 @@ object Effects extends js.Object {
   }
   
   /** Represents the definition of a video transform effect. */
+  @JSGlobal("Windows.Media.Effects.VideoTransformEffectDefinition")
   @js.native
   /** Initializes a new instance of the VideoTransformEffectDefinition class. */
   class VideoTransformEffectDefinition ()

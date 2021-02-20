@@ -5,6 +5,7 @@ import typings.openlayers.mod.RasterOperation
 import typings.openlayers.mod.RasterOperationType
 import typings.openlayers.mod.source.Source
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @api
   */
 @js.native
-trait RasterOptions extends js.Object {
+trait RasterOptions extends StObject {
   
   var lib: js.UndefOr[GlobalObject] = js.native
   
@@ -34,50 +35,38 @@ object RasterOptions {
   }
   
   @scala.inline
-  implicit class RasterOptionsOps[Self <: RasterOptions] (val x: Self) extends AnyVal {
+  implicit class RasterOptionsMutableBuilder[Self <: RasterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLib(value: GlobalObject): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLib(value: GlobalObject): Self = this.set("lib", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLib: Self = this.set("lib", js.undefined)
+    def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
     
     @scala.inline
     def setOperation(
       value: (/* data */ js.Array[js.Array[Double] | ImageData], /* obj */ GlobalObject) => js.Array[Double] | ImageData
-    ): Self = this.set("operation", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setOperationType(value: RasterOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationType(value: RasterOperationType): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def setThreads(value: Double): Self = this.set("threads", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreads: Self = this.set("threads", js.undefined)
+    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    
+    @scala.inline
+    def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
   }
 }

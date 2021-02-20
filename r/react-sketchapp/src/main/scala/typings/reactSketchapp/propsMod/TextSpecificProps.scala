@@ -1,16 +1,13 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextSpecificProps
-  extends FillProps
-     with StrokeProps
-     with ClipProps
-     with TransformProps
-     with DefinationProps
+  extends PathProps
      with FontProps {
   
   var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.native
@@ -36,63 +33,51 @@ object TextSpecificProps {
   }
   
   @scala.inline
-  implicit class TextSpecificPropsOps[Self <: TextSpecificProps] (val x: Self) extends AnyVal {
+  implicit class TextSpecificPropsMutableBuilder[Self <: TextSpecificProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignmentBaseline(value: AlignmentBaseline): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaselineShift(value: BaselineShift): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignmentBaseline(value: AlignmentBaseline): Self = this.set("alignmentBaseline", value.asInstanceOf[js.Any])
+    def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
     
     @scala.inline
-    def deleteAlignmentBaseline: Self = this.set("alignmentBaseline", js.undefined)
+    def setBaselineShiftVarargs(value: NumberProp*): Self = StObject.set(x, "baselineShift", js.Array(value :_*))
     
     @scala.inline
-    def setBaselineShiftVarargs(value: NumberProp*): Self = this.set("baselineShift", js.Array(value :_*))
+    def setFontData(value: js.Object): Self = StObject.set(x, "fontData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineShift(value: BaselineShift): Self = this.set("baselineShift", value.asInstanceOf[js.Any])
+    def setFontDataUndefined: Self = StObject.set(x, "fontData", js.undefined)
     
     @scala.inline
-    def deleteBaselineShift: Self = this.set("baselineShift", js.undefined)
+    def setFontFeatureSettings(value: FontFeatureSettings): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontData(value: js.Object): Self = this.set("fontData", value.asInstanceOf[js.Any])
+    def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
     
     @scala.inline
-    def deleteFontData: Self = this.set("fontData", js.undefined)
+    def setLengthAdjust(value: LengthAdjust): Self = StObject.set(x, "lengthAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFeatureSettings(value: FontFeatureSettings): Self = this.set("fontFeatureSettings", value.asInstanceOf[js.Any])
+    def setLengthAdjustUndefined: Self = StObject.set(x, "lengthAdjust", js.undefined)
     
     @scala.inline
-    def deleteFontFeatureSettings: Self = this.set("fontFeatureSettings", js.undefined)
+    def setTextLength(value: TextLength): Self = StObject.set(x, "textLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthAdjust(value: LengthAdjust): Self = this.set("lengthAdjust", value.asInstanceOf[js.Any])
+    def setTextLengthUndefined: Self = StObject.set(x, "textLength", js.undefined)
     
     @scala.inline
-    def deleteLengthAdjust: Self = this.set("lengthAdjust", js.undefined)
+    def setVerticalAlign(value: VerticalAlign): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLength(value: TextLength): Self = this.set("textLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextLength: Self = this.set("textLength", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlign): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

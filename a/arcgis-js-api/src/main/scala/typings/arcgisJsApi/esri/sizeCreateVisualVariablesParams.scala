@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.height
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,120 +154,108 @@ object sizeCreateVisualVariablesParams {
   }
   
   @scala.inline
-  implicit class sizeCreateVisualVariablesParamsOps[Self <: sizeCreateVisualVariablesParams] (val x: Self) extends AnyVal {
+  implicit class sizeCreateVisualVariablesParamsMutableBuilder[Self <: sizeCreateVisualVariablesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: all | height): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: all | height): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setLegendOptions(value: sizeCreateVisualVariablesParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendOptions(value: sizeCreateVisualVariablesParamsLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
+    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = this.set("sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSizeSchemeUndefined: Self = StObject.set(x, "sizeScheme", js.undefined)
     
     @scala.inline
-    def deleteSizeOptimizationEnabled: Self = this.set("sizeOptimizationEnabled", js.undefined)
+    def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeScheme(value: SizeScheme): Self = this.set("sizeScheme", value.asInstanceOf[js.Any])
+    def setSqlExpressionUndefined: Self = StObject.set(x, "sqlExpression", js.undefined)
     
     @scala.inline
-    def deleteSizeScheme: Self = this.set("sizeScheme", js.undefined)
+    def setSqlWhere(value: String): Self = StObject.set(x, "sqlWhere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlExpression(value: String): Self = this.set("sqlExpression", value.asInstanceOf[js.Any])
+    def setSqlWhereUndefined: Self = StObject.set(x, "sqlWhere", js.undefined)
     
     @scala.inline
-    def deleteSqlExpression: Self = this.set("sqlExpression", js.undefined)
+    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlWhere(value: String): Self = this.set("sqlWhere", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def deleteSqlWhere: Self = this.set("sqlWhere", js.undefined)
+    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
     @scala.inline
-    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
+    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
     
     @scala.inline
-    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueExpressionTitle(value: String): Self = this.set("valueExpressionTitle", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteValueExpressionTitle: Self = this.set("valueExpressionTitle", js.undefined)
+    def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWorldScale(value: Boolean): Self = this.set("worldScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldScale: Self = this.set("worldScale", js.undefined)
+    def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.chessboardjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chessboardjs.chessboardjsStrings.slow
   - typings.chessboardjs.chessboardjsStrings.fast
 */
-trait SpeedType extends js.Object
+trait SpeedType extends StObject
 object SpeedType {
   
   @scala.inline

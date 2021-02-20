@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNetworksOutput extends js.Object {
+trait ListNetworksOutput extends StObject {
   
   /**
     * An array of NetworkSummary objects that contain configuration properties for each network.
@@ -26,33 +27,21 @@ object ListNetworksOutput {
   }
   
   @scala.inline
-  implicit class ListNetworksOutputOps[Self <: ListNetworksOutput] (val x: Self) extends AnyVal {
+  implicit class ListNetworksOutputMutableBuilder[Self <: ListNetworksOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworks(value: NetworkSummaryList): Self = StObject.set(x, "Networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworksVarargs(value: NetworkSummary*): Self = StObject.set(x, "Networks", js.Array(value :_*))
     
     @scala.inline
-    def setNetworksVarargs(value: NetworkSummary*): Self = this.set("Networks", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworks(value: NetworkSummaryList): Self = this.set("Networks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworks: Self = this.set("Networks", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.OauthtokenOptionsRequestedPolicyVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceTemplatesResource extends js.Object {
+trait InstanceTemplatesResource extends StObject {
   
   /**
     * Deletes the specified instance template. Deleting an instance template is permanent and cannot be undone. It is not possible to delete templates that are already in use by a managed

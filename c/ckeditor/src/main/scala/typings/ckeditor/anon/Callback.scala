@@ -1,11 +1,12 @@
 package typings.ckeditor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callback extends js.Object {
+trait Callback extends StObject {
   
   var callback: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -22,36 +23,24 @@ object Callback {
   }
   
   @scala.inline
-  implicit class CallbackOps[Self <: Callback] (val x: Self) extends AnyVal {
+  implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => Unit): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setNoSnapshot(value: Boolean): Self = StObject.set(x, "noSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal(value: Boolean): Self = this.set("internal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInternal: Self = this.set("internal", js.undefined)
-    
-    @scala.inline
-    def setNoSnapshot(value: Boolean): Self = this.set("noSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoSnapshot: Self = this.set("noSnapshot", js.undefined)
+    def setNoSnapshotUndefined: Self = StObject.set(x, "noSnapshot", js.undefined)
   }
 }

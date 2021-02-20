@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PersistentVolumeStatus is the current status of a persistent volume.
   */
 @js.native
-trait PersistentVolumeStatus extends js.Object {
+trait PersistentVolumeStatus extends StObject {
   
   /**
     * A human-readable message indicating details about why the volume is in this state.
@@ -35,36 +36,24 @@ object PersistentVolumeStatus {
   }
   
   @scala.inline
-  implicit class PersistentVolumeStatusOps[Self <: PersistentVolumeStatus] (val x: Self) extends AnyVal {
+  implicit class PersistentVolumeStatusMutableBuilder[Self <: PersistentVolumeStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Input[String]): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase(value: Input[String]): Self = this.set("phase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhase: Self = this.set("phase", js.undefined)
-    
-    @scala.inline
-    def setReason(value: Input[String]): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

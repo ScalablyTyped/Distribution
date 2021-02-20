@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesGetFunctionConfigurationInputMod.GetF
 import typings.awsSdkClientLambdaNode.typesGetFunctionConfigurationOutputMod.GetFunctionConfigurationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/GetFunctionConfigurationCommand", JSImport.Namespace)
-@js.native
-object getFunctionConfigurationCommandMod extends js.Object {
+object getFunctionConfigurationCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/GetFunctionConfigurationCommand", "GetFunctionConfigurationCommand")
   @js.native
   class GetFunctionConfigurationCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppIdentity extends js.Object {
+trait AppIdentity extends StObject {
   
   // Refers to the Unique GUID representing Application Id in the Azure Active Directory.
   var appId: js.UndefOr[NullableOption[String]] = js.native
@@ -28,54 +29,42 @@ object AppIdentity {
   }
   
   @scala.inline
-  implicit class AppIdentityOps[Self <: AppIdentity] (val x: Self) extends AnyVal {
+  implicit class AppIdentityMutableBuilder[Self <: AppIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdNull: Self = StObject.set(x, "appId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def setAppId(value: NullableOption[String]): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setAppIdNull: Self = this.set("appId", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setServicePrincipalId(value: NullableOption[String]): Self = StObject.set(x, "servicePrincipalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setServicePrincipalIdNull: Self = StObject.set(x, "servicePrincipalId", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setServicePrincipalIdUndefined: Self = StObject.set(x, "servicePrincipalId", js.undefined)
     
     @scala.inline
-    def setServicePrincipalId(value: NullableOption[String]): Self = this.set("servicePrincipalId", value.asInstanceOf[js.Any])
+    def setServicePrincipalName(value: NullableOption[String]): Self = StObject.set(x, "servicePrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServicePrincipalId: Self = this.set("servicePrincipalId", js.undefined)
+    def setServicePrincipalNameNull: Self = StObject.set(x, "servicePrincipalName", null)
     
     @scala.inline
-    def setServicePrincipalIdNull: Self = this.set("servicePrincipalId", null)
-    
-    @scala.inline
-    def setServicePrincipalName(value: NullableOption[String]): Self = this.set("servicePrincipalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServicePrincipalName: Self = this.set("servicePrincipalName", js.undefined)
-    
-    @scala.inline
-    def setServicePrincipalNameNull: Self = this.set("servicePrincipalName", null)
+    def setServicePrincipalNameUndefined: Self = StObject.set(x, "servicePrincipalName", js.undefined)
   }
 }

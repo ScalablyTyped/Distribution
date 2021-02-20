@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateInfo extends js.Object {
+trait CertificateInfo extends StObject {
   
   /**
     * The identifier of the certificate.
@@ -36,42 +37,30 @@ object CertificateInfo {
   }
   
   @scala.inline
-  implicit class CertificateInfoOps[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+  implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommonName(value: CertificateCN): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("CertificateId", value.asInstanceOf[js.Any])
+    def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
     @scala.inline
-    def deleteCertificateId: Self = this.set("CertificateId", js.undefined)
+    def setExpiryDateTime(value: CertificateExpiryDateTime): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: CertificateCN): Self = this.set("CommonName", value.asInstanceOf[js.Any])
+    def setExpiryDateTimeUndefined: Self = StObject.set(x, "ExpiryDateTime", js.undefined)
     
     @scala.inline
-    def deleteCommonName: Self = this.set("CommonName", js.undefined)
+    def setState(value: CertificateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiryDateTime(value: CertificateExpiryDateTime): Self = this.set("ExpiryDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiryDateTime: Self = this.set("ExpiryDateTime", js.undefined)
-    
-    @scala.inline
-    def setState(value: CertificateState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreStrings.HTML
 import typings.angularCore.angularCoreStrings.ResourceURL
 import typings.angularCore.angularCoreStrings.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCore.angularCoreStrings.Script
   - typings.angularCore.angularCoreStrings.Style
 */
-trait ɵBypassType extends js.Object
+trait ɵBypassType extends StObject
 object ɵBypassType {
   
   @scala.inline

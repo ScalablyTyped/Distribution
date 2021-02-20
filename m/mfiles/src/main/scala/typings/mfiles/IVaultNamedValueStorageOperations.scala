@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFNamedValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultNamedValueStorageOperations extends js.Object {
+trait IVaultNamedValueStorageOperations extends StObject {
   
   def GetNamedValues(NamedValueType: MFNamedValueType, Namespace: String): INamedValues = js.native
   
@@ -27,27 +28,15 @@ object IVaultNamedValueStorageOperations {
   }
   
   @scala.inline
-  implicit class IVaultNamedValueStorageOperationsOps[Self <: IVaultNamedValueStorageOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultNamedValueStorageOperationsMutableBuilder[Self <: IVaultNamedValueStorageOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNamedValues(value: (MFNamedValueType, String) => INamedValues): Self = StObject.set(x, "GetNamedValues", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveNamedValues(value: (MFNamedValueType, String, IStrings) => Unit): Self = StObject.set(x, "RemoveNamedValues", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetNamedValues(value: (MFNamedValueType, String) => INamedValues): Self = this.set("GetNamedValues", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveNamedValues(value: (MFNamedValueType, String, IStrings) => Unit): Self = this.set("RemoveNamedValues", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetNamedValues(value: (MFNamedValueType, String, INamedValues) => Unit): Self = this.set("SetNamedValues", js.Any.fromFunction3(value))
+    def setSetNamedValues(value: (MFNamedValueType, String, INamedValues) => Unit): Self = StObject.set(x, "SetNamedValues", js.Any.fromFunction3(value))
   }
 }

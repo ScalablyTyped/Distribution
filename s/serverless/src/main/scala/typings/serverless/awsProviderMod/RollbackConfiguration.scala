@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollbackConfiguration extends js.Object {
+trait RollbackConfiguration extends StObject {
   
   var MonitoringTimeInMinutes: Double | String = js.native
   
@@ -20,27 +21,15 @@ object RollbackConfiguration {
   }
   
   @scala.inline
-  implicit class RollbackConfigurationOps[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
+  implicit class RollbackConfigurationMutableBuilder[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitoringTimeInMinutes(value: Double | String): Self = StObject.set(x, "MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRollbackTriggers(value: js.Array[RollbackTrigger]): Self = StObject.set(x, "RollbackTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMonitoringTimeInMinutes(value: Double | String): Self = this.set("MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = this.set("RollbackTriggers", js.Array(value :_*))
-    
-    @scala.inline
-    def setRollbackTriggers(value: js.Array[RollbackTrigger]): Self = this.set("RollbackTriggers", value.asInstanceOf[js.Any])
+    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
   }
 }

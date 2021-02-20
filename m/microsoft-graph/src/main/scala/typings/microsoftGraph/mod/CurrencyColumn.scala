@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrencyColumn extends js.Object {
+trait CurrencyColumn extends StObject {
   
   // Specifies the locale from which to infer the currency symbol.
   var locale: js.UndefOr[NullableOption[String]] = js.native
@@ -19,27 +20,15 @@ object CurrencyColumn {
   }
   
   @scala.inline
-  implicit class CurrencyColumnOps[Self <: CurrencyColumn] (val x: Self) extends AnyVal {
+  implicit class CurrencyColumnMutableBuilder[Self <: CurrencyColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: NullableOption[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleNull: Self = StObject.set(x, "locale", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocale(value: NullableOption[String]): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
-    
-    @scala.inline
-    def setLocaleNull: Self = this.set("locale", null)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1CompleteTrialRequest extends js.Object {
+trait GoogleCloudMlV1CompleteTrialRequest extends StObject {
   
   /** Optional. If provided, it will be used as the completed trial's final_measurement; Otherwise, the service will auto-select a previously reported measurement as the final-measurement */
   var finalMeasurement: js.UndefOr[GoogleCloudMlV1Measurement] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudMlV1CompleteTrialRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1CompleteTrialRequestOps[Self <: GoogleCloudMlV1CompleteTrialRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1CompleteTrialRequestMutableBuilder[Self <: GoogleCloudMlV1CompleteTrialRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "finalMeasurement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalMeasurementUndefined: Self = StObject.set(x, "finalMeasurement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfeasibleReason(value: String): Self = StObject.set(x, "infeasibleReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalMeasurement(value: GoogleCloudMlV1Measurement): Self = this.set("finalMeasurement", value.asInstanceOf[js.Any])
+    def setInfeasibleReasonUndefined: Self = StObject.set(x, "infeasibleReason", js.undefined)
     
     @scala.inline
-    def deleteFinalMeasurement: Self = this.set("finalMeasurement", js.undefined)
+    def setTrialInfeasible(value: Boolean): Self = StObject.set(x, "trialInfeasible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfeasibleReason(value: String): Self = this.set("infeasibleReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfeasibleReason: Self = this.set("infeasibleReason", js.undefined)
-    
-    @scala.inline
-    def setTrialInfeasible(value: Boolean): Self = this.set("trialInfeasible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialInfeasible: Self = this.set("trialInfeasible", js.undefined)
+    def setTrialInfeasibleUndefined: Self = StObject.set(x, "trialInfeasible", js.undefined)
   }
 }

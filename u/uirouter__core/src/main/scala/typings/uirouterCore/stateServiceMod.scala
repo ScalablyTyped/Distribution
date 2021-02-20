@@ -15,16 +15,16 @@ import typings.uirouterCore.targetStateMod.TargetState
 import typings.uirouterCore.transitionInterfaceMod.HookResult
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import typings.uirouterCore.transitionTransitionMod.Transition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/state/stateService", JSImport.Namespace)
-@js.native
-object stateServiceMod extends js.Object {
+object stateServiceMod {
   
+  @JSImport("@uirouter/core/lib/state/stateService", "StateService")
   @js.native
-  class StateService protected () extends js.Object {
+  class StateService protected () extends StObject {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     

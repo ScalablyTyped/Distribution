@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeInfo extends js.Object {
+trait NodeInfo extends StObject {
   
   /**
     * Informs who provides the children to a node, used by data explorer tree view api
@@ -59,60 +60,48 @@ object NodeInfo {
   }
   
   @scala.inline
-  implicit class NodeInfoOps[Self <: NodeInfo] (val x: Self) extends AnyVal {
+  implicit class NodeInfoMutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildProvider(value: String): Self = StObject.set(x, "childProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildProviderUndefined: Self = StObject.set(x, "childProvider", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setIconType(value: String | SqlThemeIcon): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLeaf(value: Boolean): Self = this.set("isLeaf", value.asInstanceOf[js.Any])
+    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ObjectMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePath(value: String): Self = this.set("nodePath", value.asInstanceOf[js.Any])
+    def setMetadata(value: ObjectMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeStatus(value: String): Self = this.set("nodeStatus", value.asInstanceOf[js.Any])
+    def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeSubType(value: String): Self = this.set("nodeSubType", value.asInstanceOf[js.Any])
+    def setNodeStatus(value: String): Self = StObject.set(x, "nodeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setNodeSubType(value: String): Self = StObject.set(x, "nodeSubType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildProvider(value: String): Self = this.set("childProvider", value.asInstanceOf[js.Any])
+    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildProvider: Self = this.set("childProvider", js.undefined)
+    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconType(value: String | SqlThemeIcon): Self = this.set("iconType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconType: Self = this.set("iconType", js.undefined)
-    
-    @scala.inline
-    def setPayload(value: js.Any): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

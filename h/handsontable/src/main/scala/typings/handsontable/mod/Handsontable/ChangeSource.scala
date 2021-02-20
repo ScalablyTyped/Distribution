@@ -1,5 +1,6 @@
 package typings.handsontable.mod.Handsontable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.handsontable.handsontableStrings.ColumnSummaryDotset
   - typings.handsontable.handsontableStrings.ColumnSummaryDotreset
 */
-trait ChangeSource extends js.Object
+trait ChangeSource extends StObject
 object ChangeSource {
   
   @scala.inline

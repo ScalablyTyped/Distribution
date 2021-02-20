@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,210 +89,198 @@ object Team {
   }
   
   @scala.inline
-  implicit class TeamOps[Self <: Team] (val x: Self) extends AnyVal {
+  implicit class TeamMutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: NullableOption[js.Array[Channel]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsNull: Self = StObject.set(x, "channels", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = this.set("channels", js.Array(value :_*))
+    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannels(value: NullableOption[js.Array[Channel]]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setClassification(value: NullableOption[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setClassificationNull: Self = StObject.set(x, "classification", null)
     
     @scala.inline
-    def setChannelsNull: Self = this.set("channels", null)
+    def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
     
     @scala.inline
-    def setClassification(value: NullableOption[String]): Self = this.set("classification", value.asInstanceOf[js.Any])
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassification: Self = this.set("classification", js.undefined)
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def setClassificationNull: Self = this.set("classification", null)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFunSettings(value: NullableOption[TeamFunSettings]): Self = StObject.set(x, "funSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFunSettingsNull: Self = StObject.set(x, "funSettings", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setFunSettingsUndefined: Self = StObject.set(x, "funSettings", js.undefined)
     
     @scala.inline
-    def setFunSettings(value: NullableOption[TeamFunSettings]): Self = this.set("funSettings", value.asInstanceOf[js.Any])
+    def setGroup(value: NullableOption[Group]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFunSettings: Self = this.set("funSettings", js.undefined)
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def setFunSettingsNull: Self = this.set("funSettings", null)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setGroup(value: NullableOption[Group]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setGuestSettings(value: NullableOption[TeamGuestSettings]): Self = StObject.set(x, "guestSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setGuestSettingsNull: Self = StObject.set(x, "guestSettings", null)
     
     @scala.inline
-    def setGroupNull: Self = this.set("group", null)
+    def setGuestSettingsUndefined: Self = StObject.set(x, "guestSettings", js.undefined)
     
     @scala.inline
-    def setGuestSettings(value: NullableOption[TeamGuestSettings]): Self = this.set("guestSettings", value.asInstanceOf[js.Any])
+    def setInstalledApps(value: NullableOption[js.Array[TeamsAppInstallation]]): Self = StObject.set(x, "installedApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGuestSettings: Self = this.set("guestSettings", js.undefined)
+    def setInstalledAppsNull: Self = StObject.set(x, "installedApps", null)
     
     @scala.inline
-    def setGuestSettingsNull: Self = this.set("guestSettings", null)
+    def setInstalledAppsUndefined: Self = StObject.set(x, "installedApps", js.undefined)
     
     @scala.inline
-    def setInstalledAppsVarargs(value: TeamsAppInstallation*): Self = this.set("installedApps", js.Array(value :_*))
+    def setInstalledAppsVarargs(value: TeamsAppInstallation*): Self = StObject.set(x, "installedApps", js.Array(value :_*))
     
     @scala.inline
-    def setInstalledApps(value: NullableOption[js.Array[TeamsAppInstallation]]): Self = this.set("installedApps", value.asInstanceOf[js.Any])
+    def setInternalId(value: NullableOption[String]): Self = StObject.set(x, "internalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstalledApps: Self = this.set("installedApps", js.undefined)
+    def setInternalIdNull: Self = StObject.set(x, "internalId", null)
     
     @scala.inline
-    def setInstalledAppsNull: Self = this.set("installedApps", null)
+    def setInternalIdUndefined: Self = StObject.set(x, "internalId", js.undefined)
     
     @scala.inline
-    def setInternalId(value: NullableOption[String]): Self = this.set("internalId", value.asInstanceOf[js.Any])
+    def setIsArchived(value: NullableOption[Boolean]): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternalId: Self = this.set("internalId", js.undefined)
+    def setIsArchivedNull: Self = StObject.set(x, "isArchived", null)
     
     @scala.inline
-    def setInternalIdNull: Self = this.set("internalId", null)
+    def setIsArchivedUndefined: Self = StObject.set(x, "isArchived", js.undefined)
     
     @scala.inline
-    def setIsArchived(value: NullableOption[Boolean]): Self = this.set("isArchived", value.asInstanceOf[js.Any])
+    def setMemberSettings(value: NullableOption[TeamMemberSettings]): Self = StObject.set(x, "memberSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsArchived: Self = this.set("isArchived", js.undefined)
+    def setMemberSettingsNull: Self = StObject.set(x, "memberSettings", null)
     
     @scala.inline
-    def setIsArchivedNull: Self = this.set("isArchived", null)
+    def setMemberSettingsUndefined: Self = StObject.set(x, "memberSettings", js.undefined)
     
     @scala.inline
-    def setMemberSettings(value: NullableOption[TeamMemberSettings]): Self = this.set("memberSettings", value.asInstanceOf[js.Any])
+    def setMembers(value: NullableOption[js.Array[ConversationMember]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemberSettings: Self = this.set("memberSettings", js.undefined)
+    def setMembersNull: Self = StObject.set(x, "members", null)
     
     @scala.inline
-    def setMemberSettingsNull: Self = this.set("memberSettings", null)
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def setMembersVarargs(value: ConversationMember*): Self = this.set("members", js.Array(value :_*))
+    def setMembersVarargs(value: ConversationMember*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembers(value: NullableOption[js.Array[ConversationMember]]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setMessagingSettings(value: NullableOption[TeamMessagingSettings]): Self = StObject.set(x, "messagingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setMessagingSettingsNull: Self = StObject.set(x, "messagingSettings", null)
     
     @scala.inline
-    def setMembersNull: Self = this.set("members", null)
+    def setMessagingSettingsUndefined: Self = StObject.set(x, "messagingSettings", js.undefined)
     
     @scala.inline
-    def setMessagingSettings(value: NullableOption[TeamMessagingSettings]): Self = this.set("messagingSettings", value.asInstanceOf[js.Any])
+    def setOperations(value: NullableOption[js.Array[TeamsAsyncOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessagingSettings: Self = this.set("messagingSettings", js.undefined)
+    def setOperationsNull: Self = StObject.set(x, "operations", null)
     
     @scala.inline
-    def setMessagingSettingsNull: Self = this.set("messagingSettings", null)
+    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
     @scala.inline
-    def setOperationsVarargs(value: TeamsAsyncOperation*): Self = this.set("operations", js.Array(value :_*))
+    def setOperationsVarargs(value: TeamsAsyncOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
     @scala.inline
-    def setOperations(value: NullableOption[js.Array[TeamsAsyncOperation]]): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setPrimaryChannel(value: NullableOption[Channel]): Self = StObject.set(x, "primaryChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperations: Self = this.set("operations", js.undefined)
+    def setPrimaryChannelNull: Self = StObject.set(x, "primaryChannel", null)
     
     @scala.inline
-    def setOperationsNull: Self = this.set("operations", null)
+    def setPrimaryChannelUndefined: Self = StObject.set(x, "primaryChannel", js.undefined)
     
     @scala.inline
-    def setPrimaryChannel(value: NullableOption[Channel]): Self = this.set("primaryChannel", value.asInstanceOf[js.Any])
+    def setSchedule(value: NullableOption[Schedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimaryChannel: Self = this.set("primaryChannel", js.undefined)
+    def setScheduleNull: Self = StObject.set(x, "schedule", null)
     
     @scala.inline
-    def setPrimaryChannelNull: Self = this.set("primaryChannel", null)
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def setSchedule(value: NullableOption[Schedule]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSpecialization(value: NullableOption[TeamSpecialization]): Self = StObject.set(x, "specialization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setSpecializationNull: Self = StObject.set(x, "specialization", null)
     
     @scala.inline
-    def setScheduleNull: Self = this.set("schedule", null)
+    def setSpecializationUndefined: Self = StObject.set(x, "specialization", js.undefined)
     
     @scala.inline
-    def setSpecialization(value: NullableOption[TeamSpecialization]): Self = this.set("specialization", value.asInstanceOf[js.Any])
+    def setTemplate(value: NullableOption[TeamsTemplate]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpecialization: Self = this.set("specialization", js.undefined)
+    def setTemplateNull: Self = StObject.set(x, "template", null)
     
     @scala.inline
-    def setSpecializationNull: Self = this.set("specialization", null)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setTemplate(value: NullableOption[TeamsTemplate]): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setVisibility(value: NullableOption[TeamVisibilityType]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setVisibilityNull: Self = StObject.set(x, "visibility", null)
     
     @scala.inline
-    def setTemplateNull: Self = this.set("template", null)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def setVisibility(value: NullableOption[TeamVisibilityType]): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
     
     @scala.inline
-    def setVisibilityNull: Self = this.set("visibility", null)
-    
-    @scala.inline
-    def setWebUrl(value: NullableOption[String]): Self = this.set("webUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
-    
-    @scala.inline
-    def setWebUrlNull: Self = this.set("webUrl", null)
+    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

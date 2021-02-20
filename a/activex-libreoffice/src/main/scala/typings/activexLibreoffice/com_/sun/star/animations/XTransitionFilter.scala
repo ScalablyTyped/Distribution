@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,33 +99,21 @@ object XTransitionFilter {
   }
   
   @scala.inline
-  implicit class XTransitionFilterOps[Self <: XTransitionFilter] (val x: Self) extends AnyVal {
+  implicit class XTransitionFilterMutableBuilder[Self <: XTransitionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFadeColor(value: Double): Self = StObject.set(x, "FadeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: Boolean): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Boolean): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    def setSubtype(value: Double): Self = StObject.set(x, "Subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeColor(value: Double): Self = this.set("FadeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: Boolean): Self = this.set("Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtype(value: Double): Self = this.set("Subtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransition(value: Double): Self = this.set("Transition", value.asInstanceOf[js.Any])
+    def setTransition(value: Double): Self = StObject.set(x, "Transition", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssessmentRunAgent extends js.Object {
+trait AssessmentRunAgent extends StObject {
   
   /**
     * The current health state of the agent.
@@ -57,48 +58,36 @@ object AssessmentRunAgent {
   }
   
   @scala.inline
-  implicit class AssessmentRunAgentOps[Self <: AssessmentRunAgent] (val x: Self) extends AnyVal {
+  implicit class AssessmentRunAgentMutableBuilder[Self <: AssessmentRunAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentHealthCode(value: AgentHealthCode): Self = StObject.set(x, "agentHealthCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentHealthDetails(value: Message): Self = StObject.set(x, "agentHealthDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentHealth(value: AgentHealth): Self = this.set("agentHealth", value.asInstanceOf[js.Any])
+    def setAgentHealthDetailsUndefined: Self = StObject.set(x, "agentHealthDetails", js.undefined)
     
     @scala.inline
-    def setAgentHealthCode(value: AgentHealthCode): Self = this.set("agentHealthCode", value.asInstanceOf[js.Any])
+    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentId(value: AgentId): Self = this.set("agentId", value.asInstanceOf[js.Any])
+    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = this.set("assessmentRunArn", value.asInstanceOf[js.Any])
+    def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTelemetryMetadataVarargs(value: TelemetryMetadata*): Self = this.set("telemetryMetadata", js.Array(value :_*))
+    def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
     
     @scala.inline
-    def setTelemetryMetadata(value: TelemetryMetadataList): Self = this.set("telemetryMetadata", value.asInstanceOf[js.Any])
+    def setTelemetryMetadata(value: TelemetryMetadataList): Self = StObject.set(x, "telemetryMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentHealthDetails(value: Message): Self = this.set("agentHealthDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentHealthDetails: Self = this.set("agentHealthDetails", js.undefined)
-    
-    @scala.inline
-    def setAutoScalingGroup(value: AutoScalingGroup): Self = this.set("autoScalingGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoScalingGroup: Self = this.set("autoScalingGroup", js.undefined)
+    def setTelemetryMetadataVarargs(value: TelemetryMetadata*): Self = StObject.set(x, "telemetryMetadata", js.Array(value :_*))
   }
 }

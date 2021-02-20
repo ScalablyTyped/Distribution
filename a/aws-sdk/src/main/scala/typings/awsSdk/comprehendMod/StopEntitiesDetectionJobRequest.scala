@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopEntitiesDetectionJobRequest extends js.Object {
+trait StopEntitiesDetectionJobRequest extends StObject {
   
   /**
     * The identifier of the entities detection job to stop.
@@ -21,21 +22,9 @@ object StopEntitiesDetectionJobRequest {
   }
   
   @scala.inline
-  implicit class StopEntitiesDetectionJobRequestOps[Self <: StopEntitiesDetectionJobRequest] (val x: Self) extends AnyVal {
+  implicit class StopEntitiesDetectionJobRequestMutableBuilder[Self <: StopEntitiesDetectionJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

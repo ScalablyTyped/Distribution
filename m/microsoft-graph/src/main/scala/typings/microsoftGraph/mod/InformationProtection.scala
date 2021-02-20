@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,30 +19,18 @@ object InformationProtection {
   }
   
   @scala.inline
-  implicit class InformationProtectionOps[Self <: InformationProtection] (val x: Self) extends AnyVal {
+  implicit class InformationProtectionMutableBuilder[Self <: InformationProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThreatAssessmentRequests(value: NullableOption[js.Array[ThreatAssessmentRequest]]): Self = StObject.set(x, "threatAssessmentRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThreatAssessmentRequestsNull: Self = StObject.set(x, "threatAssessmentRequests", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreatAssessmentRequestsUndefined: Self = StObject.set(x, "threatAssessmentRequests", js.undefined)
     
     @scala.inline
-    def setThreatAssessmentRequestsVarargs(value: ThreatAssessmentRequest*): Self = this.set("threatAssessmentRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreatAssessmentRequests(value: NullableOption[js.Array[ThreatAssessmentRequest]]): Self = this.set("threatAssessmentRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatAssessmentRequests: Self = this.set("threatAssessmentRequests", js.undefined)
-    
-    @scala.inline
-    def setThreatAssessmentRequestsNull: Self = this.set("threatAssessmentRequests", null)
+    def setThreatAssessmentRequestsVarargs(value: ThreatAssessmentRequest*): Self = StObject.set(x, "threatAssessmentRequests", js.Array(value :_*))
   }
 }

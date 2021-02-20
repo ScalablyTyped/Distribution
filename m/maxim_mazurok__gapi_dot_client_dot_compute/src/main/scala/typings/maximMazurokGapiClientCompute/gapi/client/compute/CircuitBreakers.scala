@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CircuitBreakers extends js.Object {
+trait CircuitBreakers extends StObject {
   
   /** The maximum number of connections to the backend service. If not specified, there is no limit. */
   var maxConnections: js.UndefOr[Double] = js.native
@@ -34,48 +35,36 @@ object CircuitBreakers {
   }
   
   @scala.inline
-  implicit class CircuitBreakersOps[Self <: CircuitBreakers] (val x: Self) extends AnyVal {
+  implicit class CircuitBreakersMutableBuilder[Self <: CircuitBreakers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxPendingRequests(value: Double): Self = StObject.set(x, "maxPendingRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    def setMaxPendingRequestsUndefined: Self = StObject.set(x, "maxPendingRequests", js.undefined)
     
     @scala.inline
-    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    def setMaxRequests(value: Double): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPendingRequests(value: Double): Self = this.set("maxPendingRequests", value.asInstanceOf[js.Any])
+    def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxPendingRequests: Self = this.set("maxPendingRequests", js.undefined)
+    def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
     
     @scala.inline
-    def setMaxRequests(value: Double): Self = this.set("maxRequests", value.asInstanceOf[js.Any])
+    def setMaxRequestsUndefined: Self = StObject.set(x, "maxRequests", js.undefined)
     
     @scala.inline
-    def deleteMaxRequests: Self = this.set("maxRequests", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRequestsPerConnection(value: Double): Self = this.set("maxRequestsPerConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRequestsPerConnection: Self = this.set("maxRequestsPerConnection", js.undefined)
-    
-    @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
   }
 }

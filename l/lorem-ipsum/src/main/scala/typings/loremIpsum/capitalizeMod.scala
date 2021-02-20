@@ -1,12 +1,13 @@
 package typings.loremIpsum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lorem-ipsum/types/src/util/capitalize", JSImport.Namespace)
-@js.native
-object capitalizeMod extends js.Object {
+object capitalizeMod {
   
+  @JSImport("lorem-ipsum/types/src/util/capitalize", JSImport.Default)
+  @js.native
   def default(str: String): String = js.native
 }

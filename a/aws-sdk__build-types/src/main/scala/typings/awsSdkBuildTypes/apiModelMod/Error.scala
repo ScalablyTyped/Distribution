@@ -1,11 +1,12 @@
 package typings.awsSdkBuildTypes.apiModelMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Error extends js.Object {
+trait Error extends StObject {
   
   var code: js.UndefOr[java.lang.String] = js.native
   
@@ -22,36 +23,24 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorOps[Self <: Error] (val x: Self) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: java.lang.String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpStatusCode(value: scala.Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: java.lang.String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setSenderFault(value: scala.Boolean): Self = StObject.set(x, "senderFault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpStatusCode(value: scala.Double): Self = this.set("httpStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpStatusCode: Self = this.set("httpStatusCode", js.undefined)
-    
-    @scala.inline
-    def setSenderFault(value: scala.Boolean): Self = this.set("senderFault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSenderFault: Self = this.set("senderFault", js.undefined)
+    def setSenderFaultUndefined: Self = StObject.set(x, "senderFault", js.undefined)
   }
 }

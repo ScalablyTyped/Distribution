@@ -8,15 +8,18 @@ import typings.vue.optionsMod.DefaultProps
 import typings.vue.optionsMod.PropsDefinition
 import typings.vue.vueMod.Vue
 import typings.vueClassComponent.declarationsMod.VueClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-class-component/lib/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("vue-class-component/lib/component", "componentFactory")
+  @js.native
   def componentFactory(Component: VueClass[Vue]): VueClass[Vue] = js.native
+  @JSImport("vue-class-component/lib/component", "componentFactory")
+  @js.native
   def componentFactory(
     Component: VueClass[Vue],
     options: ComponentOptions[
@@ -29,6 +32,7 @@ object componentMod extends js.Object {
     ]
   ): VueClass[Vue] = js.native
   
-  @JSName("$internalHooks")
+  @JSImport("vue-class-component/lib/component", "$internalHooks")
+  @js.native
   val internalHooks: js.Array[String] = js.native
 }

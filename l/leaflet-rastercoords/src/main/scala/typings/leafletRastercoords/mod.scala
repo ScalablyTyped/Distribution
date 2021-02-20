@@ -5,17 +5,17 @@ import typings.leaflet.mod.LatLng_
 import typings.leaflet.mod.Map_
 import typings.leaflet.mod.PointExpression
 import typings.leaflet.mod.Point_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("leaflet", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("leaflet", "RasterCoords")
   @js.native
-  class RasterCoords protected () extends js.Object {
+  class RasterCoords protected () extends StObject {
     def this(map: Map_, imgsize: js.Array[Double]) = this()
     def this(map: Map_, imgsize: js.Array[Double], tilesize: Double) = this()
     

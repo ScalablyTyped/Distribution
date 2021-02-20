@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MegaEvolution extends js.Object {
+trait MegaEvolution extends StObject {
   
   var ability: String = js.native
   
@@ -43,51 +44,39 @@ object MegaEvolution {
   }
   
   @scala.inline
-  implicit class MegaEvolutionOps[Self <: MegaEvolution] (val x: Self) extends AnyVal {
+  implicit class MegaEvolutionMutableBuilder[Self <: MegaEvolution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbility(value: String): Self = StObject.set(x, "ability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBase_stats(value: StatObject): Self = StObject.set(x, "base_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight_eu(value: String): Self = StObject.set(x, "height_eu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbility(value: String): Self = this.set("ability", value.asInstanceOf[js.Any])
+    def setHeight_us(value: String): Self = StObject.set(x, "height_us", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase_stats(value: StatObject): Self = this.set("base_stats", value.asInstanceOf[js.Any])
+    def setImage_suffix(value: String): Self = StObject.set(x, "image_suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight_eu(value: String): Self = this.set("height_eu", value.asInstanceOf[js.Any])
+    def setImage_suffixUndefined: Self = StObject.set(x, "image_suffix", js.undefined)
     
     @scala.inline
-    def setHeight_us(value: String): Self = this.set("height_us", value.asInstanceOf[js.Any])
+    def setMega_stone(value: String): Self = StObject.set(x, "mega_stone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMega_stone(value: String): Self = this.set("mega_stone", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight_eu(value: String): Self = this.set("weight_eu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight_us(value: String): Self = this.set("weight_us", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImage_suffix(value: String): Self = this.set("image_suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage_suffix: Self = this.set("image_suffix", js.undefined)
+    def setWeight_us(value: String): Self = StObject.set(x, "weight_us", value.asInstanceOf[js.Any])
   }
 }

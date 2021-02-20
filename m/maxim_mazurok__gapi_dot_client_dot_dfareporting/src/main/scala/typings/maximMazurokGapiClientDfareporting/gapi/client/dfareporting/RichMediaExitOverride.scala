@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RichMediaExitOverride extends js.Object {
+trait RichMediaExitOverride extends StObject {
   
   /** Click-through URL of this rich media exit override. Applicable if the enabled field is set to true. */
   var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
@@ -25,36 +26,24 @@ object RichMediaExitOverride {
   }
   
   @scala.inline
-  implicit class RichMediaExitOverrideOps[Self <: RichMediaExitOverride] (val x: Self) extends AnyVal {
+  implicit class RichMediaExitOverrideMutableBuilder[Self <: RichMediaExitOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrl(value: ClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
+    def setExitId(value: String): Self = StObject.set(x, "exitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setExitId(value: String): Self = this.set("exitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExitId: Self = this.set("exitId", js.undefined)
+    def setExitIdUndefined: Self = StObject.set(x, "exitId", js.undefined)
   }
 }

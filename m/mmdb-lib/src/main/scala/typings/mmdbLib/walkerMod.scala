@@ -1,18 +1,21 @@
 package typings.mmdbLib
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mmdb-lib/lib/reader/walker", JSImport.Namespace)
-@js.native
-object walkerMod extends js.Object {
+object walkerMod {
   
+  @JSImport("mmdb-lib/lib/reader/walker", JSImport.Default)
+  @js.native
   def default(db: Buffer, recordSize: Double): Walker = js.native
   
+  type NodeReader = js.Function1[/* offset */ Double, Double]
+  
   @js.native
-  trait Walker extends js.Object {
+  trait Walker extends StObject {
     
     def left(offset: Double): Double = js.native
     @JSName("left")
@@ -22,6 +25,4 @@ object walkerMod extends js.Object {
     @JSName("right")
     var right_Original: NodeReader = js.native
   }
-  
-  type NodeReader = js.Function1[/* offset */ Double, Double]
 }

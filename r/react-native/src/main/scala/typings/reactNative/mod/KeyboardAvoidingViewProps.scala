@@ -3,6 +3,7 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.height
 import typings.reactNative.reactNativeStrings.padding
 import typings.reactNative.reactNativeStrings.position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,45 +40,33 @@ object KeyboardAvoidingViewProps {
   }
   
   @scala.inline
-  implicit class KeyboardAvoidingViewPropsOps[Self <: KeyboardAvoidingViewProps] (val x: Self) extends AnyVal {
+  implicit class KeyboardAvoidingViewPropsMutableBuilder[Self <: KeyboardAvoidingViewProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: height | position | padding): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: height | position | padding): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    def setContentContainerStyleNull: Self = StObject.set(x, "contentContainerStyle", null)
     
     @scala.inline
-    def deleteBehavior: Self = this.set("behavior", js.undefined)
+    def setContentContainerStyleUndefined: Self = StObject.set(x, "contentContainerStyle", js.undefined)
     
     @scala.inline
-    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("contentContainerStyle", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentContainerStyle: Self = this.set("contentContainerStyle", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setContentContainerStyleNull: Self = this.set("contentContainerStyle", null)
+    def setKeyboardVerticalOffset(value: Double): Self = StObject.set(x, "keyboardVerticalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setKeyboardVerticalOffset(value: Double): Self = this.set("keyboardVerticalOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyboardVerticalOffset: Self = this.set("keyboardVerticalOffset", js.undefined)
+    def setKeyboardVerticalOffsetUndefined: Self = StObject.set(x, "keyboardVerticalOffset", js.undefined)
   }
 }

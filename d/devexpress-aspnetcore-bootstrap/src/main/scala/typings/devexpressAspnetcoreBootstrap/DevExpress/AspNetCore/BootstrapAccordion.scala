@@ -7,6 +7,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.expandedChanging
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.headerClick
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

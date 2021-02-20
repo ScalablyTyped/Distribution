@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleRunRequest extends js.Object {
+trait ScheduleRunRequest extends StObject {
   
   /**
     * The ARN of an application package to run tests against, created with CreateUpload. See ListUploads.
@@ -56,60 +57,48 @@ object ScheduleRunRequest {
   }
   
   @scala.inline
-  implicit class ScheduleRunRequestOps[Self <: ScheduleRunRequest] (val x: Self) extends AnyVal {
+  implicit class ScheduleRunRequestMutableBuilder[Self <: ScheduleRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppArnUndefined: Self = StObject.set(x, "appArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfiguration(value: ScheduleRunConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectArn(value: AmazonResourceName): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setTest(value: ScheduleRunTest): Self = this.set("test", value.asInstanceOf[js.Any])
+    def setDevicePoolArn(value: AmazonResourceName): Self = StObject.set(x, "devicePoolArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppArn(value: AmazonResourceName): Self = this.set("appArn", value.asInstanceOf[js.Any])
+    def setDevicePoolArnUndefined: Self = StObject.set(x, "devicePoolArn", js.undefined)
     
     @scala.inline
-    def deleteAppArn: Self = this.set("appArn", js.undefined)
+    def setDeviceSelectionConfiguration(value: DeviceSelectionConfiguration): Self = StObject.set(x, "deviceSelectionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: ScheduleRunConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setDeviceSelectionConfigurationUndefined: Self = StObject.set(x, "deviceSelectionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setExecutionConfiguration(value: ExecutionConfiguration): Self = StObject.set(x, "executionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePoolArn(value: AmazonResourceName): Self = this.set("devicePoolArn", value.asInstanceOf[js.Any])
+    def setExecutionConfigurationUndefined: Self = StObject.set(x, "executionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDevicePoolArn: Self = this.set("devicePoolArn", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceSelectionConfiguration(value: DeviceSelectionConfiguration): Self = this.set("deviceSelectionConfiguration", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDeviceSelectionConfiguration: Self = this.set("deviceSelectionConfiguration", js.undefined)
+    def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionConfiguration(value: ExecutionConfiguration): Self = this.set("executionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionConfiguration: Self = this.set("executionConfiguration", js.undefined)
-    
-    @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTest(value: ScheduleRunTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

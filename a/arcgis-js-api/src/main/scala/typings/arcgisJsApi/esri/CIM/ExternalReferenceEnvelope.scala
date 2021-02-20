@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object ExternalReferenceEnvelope {
   }
   
   @scala.inline
-  implicit class ExternalReferenceEnvelopeOps[Self <: ExternalReferenceEnvelope] (val x: Self) extends AnyVal {
+  implicit class ExternalReferenceEnvelopeMutableBuilder[Self <: ExternalReferenceEnvelope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMmax(value: Double): Self = StObject.set(x, "mmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMmaxUndefined: Self = StObject.set(x, "mmax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMmin(value: Double): Self = StObject.set(x, "mmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMmax(value: Double): Self = this.set("mmax", value.asInstanceOf[js.Any])
+    def setMminUndefined: Self = StObject.set(x, "mmin", js.undefined)
     
     @scala.inline
-    def deleteMmax: Self = this.set("mmax", js.undefined)
+    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMmin(value: Double): Self = this.set("mmin", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteMmin: Self = this.set("mmin", js.undefined)
+    def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    def setXmaxUndefined: Self = StObject.set(x, "xmax", js.undefined)
     
     @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmax(value: Double): Self = this.set("xmax", value.asInstanceOf[js.Any])
+    def setXminUndefined: Self = StObject.set(x, "xmin", js.undefined)
     
     @scala.inline
-    def deleteXmax: Self = this.set("xmax", js.undefined)
+    def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmin(value: Double): Self = this.set("xmin", value.asInstanceOf[js.Any])
+    def setYmaxUndefined: Self = StObject.set(x, "ymax", js.undefined)
     
     @scala.inline
-    def deleteXmin: Self = this.set("xmin", js.undefined)
+    def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYmax(value: Double): Self = this.set("ymax", value.asInstanceOf[js.Any])
+    def setYminUndefined: Self = StObject.set(x, "ymin", js.undefined)
     
     @scala.inline
-    def deleteYmax: Self = this.set("ymax", js.undefined)
+    def setZmax(value: Double): Self = StObject.set(x, "zmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYmin(value: Double): Self = this.set("ymin", value.asInstanceOf[js.Any])
+    def setZmaxUndefined: Self = StObject.set(x, "zmax", js.undefined)
     
     @scala.inline
-    def deleteYmin: Self = this.set("ymin", js.undefined)
+    def setZmin(value: Double): Self = StObject.set(x, "zmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZmax(value: Double): Self = this.set("zmax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZmax: Self = this.set("zmax", js.undefined)
-    
-    @scala.inline
-    def setZmin(value: Double): Self = this.set("zmin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZmin: Self = this.set("zmin", js.undefined)
+    def setZminUndefined: Self = StObject.set(x, "zmin", js.undefined)
   }
 }

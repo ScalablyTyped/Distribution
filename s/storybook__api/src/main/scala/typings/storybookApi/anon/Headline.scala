@@ -1,12 +1,13 @@
 package typings.storybookApi.anon
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Headline extends js.Object {
+trait Headline extends StObject {
   
   var headline: String = js.native
   
@@ -21,27 +22,15 @@ object Headline {
   }
   
   @scala.inline
-  implicit class HeadlineOps[Self <: Headline] (val x: Self) extends AnyVal {
+  implicit class HeadlineMutableBuilder[Self <: Headline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubHeadline(value: String | ReactNode): Self = StObject.set(x, "subHeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubHeadline(value: String | ReactNode): Self = this.set("subHeadline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubHeadline: Self = this.set("subHeadline", js.undefined)
+    def setSubHeadlineUndefined: Self = StObject.set(x, "subHeadline", js.undefined)
   }
 }

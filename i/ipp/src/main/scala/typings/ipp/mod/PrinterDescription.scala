@@ -105,12 +105,13 @@ import typings.ipp.ippStrings.stream
 import typings.ipp.ippStrings.tls
 import typings.ipp.ippStrings.trimming
 import typings.ipp.ippStrings.u3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrinterDescription extends js.Object {
+trait PrinterDescription extends StObject {
   
   var `accuracy-units-supported`: js.UndefOr[js.Array[AccuracyUnits]] = js.native
   
@@ -929,2962 +930,2950 @@ object PrinterDescription {
   }
   
   @scala.inline
-  implicit class PrinterDescriptionOps[Self <: PrinterDescription] (val x: Self) extends AnyVal {
+  implicit class PrinterDescriptionMutableBuilder[Self <: PrinterDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAccuracy-units-supported`(value: js.Array[AccuracyUnits]): Self = StObject.set(x, "accuracy-units-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAccuracy-units-supportedUndefined`: Self = StObject.set(x, "accuracy-units-supported", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAccuracy-units-supportedVarargs`(value: AccuracyUnits*): Self = StObject.set(x, "accuracy-units-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setAccuracy-units-supportedVarargs`(value: AccuracyUnits*): Self = this.set("accuracy-units-supported", js.Array(value :_*))
+    def `setBaling-type-supported`(value: js.Array[BalingType]): Self = StObject.set(x, "baling-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAccuracy-units-supported`(value: js.Array[AccuracyUnits]): Self = this.set("accuracy-units-supported", value.asInstanceOf[js.Any])
+    def `setBaling-type-supportedUndefined`: Self = StObject.set(x, "baling-type-supported", js.undefined)
     
     @scala.inline
-    def `deleteAccuracy-units-supported`: Self = this.set("accuracy-units-supported", js.undefined)
+    def `setBaling-type-supportedVarargs`(value: BalingType*): Self = StObject.set(x, "baling-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setBaling-type-supportedVarargs`(value: BalingType*): Self = this.set("baling-type-supported", js.Array(value :_*))
+    def `setBaling-when-supported`(value: js.Array[BalingWhen]): Self = StObject.set(x, "baling-when-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBaling-type-supported`(value: js.Array[BalingType]): Self = this.set("baling-type-supported", value.asInstanceOf[js.Any])
+    def `setBaling-when-supportedUndefined`: Self = StObject.set(x, "baling-when-supported", js.undefined)
     
     @scala.inline
-    def `deleteBaling-type-supported`: Self = this.set("baling-type-supported", js.undefined)
+    def `setBaling-when-supportedVarargs`(value: BalingWhen*): Self = StObject.set(x, "baling-when-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setBaling-when-supportedVarargs`(value: BalingWhen*): Self = this.set("baling-when-supported", js.Array(value :_*))
+    def `setBinding-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = StObject.set(x, "binding-reference-edge-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBaling-when-supported`(value: js.Array[BalingWhen]): Self = this.set("baling-when-supported", value.asInstanceOf[js.Any])
+    def `setBinding-reference-edge-supportedUndefined`: Self = StObject.set(x, "binding-reference-edge-supported", js.undefined)
     
     @scala.inline
-    def `deleteBaling-when-supported`: Self = this.set("baling-when-supported", js.undefined)
+    def `setBinding-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = StObject.set(x, "binding-reference-edge-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setBinding-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = this.set("binding-reference-edge-supported", js.Array(value :_*))
+    def `setBinding-type-supported`(value: js.Array[BindingType]): Self = StObject.set(x, "binding-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBinding-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = this.set("binding-reference-edge-supported", value.asInstanceOf[js.Any])
+    def `setBinding-type-supportedUndefined`: Self = StObject.set(x, "binding-type-supported", js.undefined)
     
     @scala.inline
-    def `deleteBinding-reference-edge-supported`: Self = this.set("binding-reference-edge-supported", js.undefined)
+    def `setBinding-type-supportedVarargs`(value: BindingType*): Self = StObject.set(x, "binding-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setBinding-type-supportedVarargs`(value: BindingType*): Self = this.set("binding-type-supported", js.Array(value :_*))
+    def `setChamber-humidity-default`(value: Double): Self = StObject.set(x, "chamber-humidity-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBinding-type-supported`(value: js.Array[BindingType]): Self = this.set("binding-type-supported", value.asInstanceOf[js.Any])
+    def `setChamber-humidity-defaultUndefined`: Self = StObject.set(x, "chamber-humidity-default", js.undefined)
     
     @scala.inline
-    def `deleteBinding-type-supported`: Self = this.set("binding-type-supported", js.undefined)
+    def `setChamber-humidity-supported`(value: Boolean): Self = StObject.set(x, "chamber-humidity-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChamber-humidity-default`(value: Double): Self = this.set("chamber-humidity-default", value.asInstanceOf[js.Any])
+    def `setChamber-humidity-supportedUndefined`: Self = StObject.set(x, "chamber-humidity-supported", js.undefined)
     
     @scala.inline
-    def `deleteChamber-humidity-default`: Self = this.set("chamber-humidity-default", js.undefined)
+    def `setChamber-temperature-default`(value: Double): Self = StObject.set(x, "chamber-temperature-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChamber-humidity-supported`(value: Boolean): Self = this.set("chamber-humidity-supported", value.asInstanceOf[js.Any])
+    def `setChamber-temperature-defaultUndefined`: Self = StObject.set(x, "chamber-temperature-default", js.undefined)
     
     @scala.inline
-    def `deleteChamber-humidity-supported`: Self = this.set("chamber-humidity-supported", js.undefined)
+    def `setChamber-temperature-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "chamber-temperature-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChamber-temperature-default`(value: Double): Self = this.set("chamber-temperature-default", value.asInstanceOf[js.Any])
+    def `setChamber-temperature-supportedUndefined`: Self = StObject.set(x, "chamber-temperature-supported", js.undefined)
     
     @scala.inline
-    def `deleteChamber-temperature-default`: Self = this.set("chamber-temperature-default", js.undefined)
+    def `setChamber-temperature-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "chamber-temperature-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setChamber-temperature-supportedVarargs`(value: (Double | String)*): Self = this.set("chamber-temperature-supported", js.Array(value :_*))
+    def `setCharset-configured`(value: String): Self = StObject.set(x, "charset-configured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setChamber-temperature-supported`(value: js.Array[Double | String]): Self = this.set("chamber-temperature-supported", value.asInstanceOf[js.Any])
+    def `setCharset-configuredUndefined`: Self = StObject.set(x, "charset-configured", js.undefined)
     
     @scala.inline
-    def `deleteChamber-temperature-supported`: Self = this.set("chamber-temperature-supported", js.undefined)
+    def `setCharset-supported`(value: js.Array[String]): Self = StObject.set(x, "charset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCharset-configured`(value: String): Self = this.set("charset-configured", value.asInstanceOf[js.Any])
+    def `setCharset-supportedUndefined`: Self = StObject.set(x, "charset-supported", js.undefined)
     
     @scala.inline
-    def `deleteCharset-configured`: Self = this.set("charset-configured", js.undefined)
+    def `setCharset-supportedVarargs`(value: String*): Self = StObject.set(x, "charset-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCharset-supportedVarargs`(value: String*): Self = this.set("charset-supported", js.Array(value :_*))
+    def `setCoating-sides-supported`(value: js.Array[FinishingSides]): Self = StObject.set(x, "coating-sides-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCharset-supported`(value: js.Array[String]): Self = this.set("charset-supported", value.asInstanceOf[js.Any])
+    def `setCoating-sides-supportedUndefined`: Self = StObject.set(x, "coating-sides-supported", js.undefined)
     
     @scala.inline
-    def `deleteCharset-supported`: Self = this.set("charset-supported", js.undefined)
+    def `setCoating-sides-supportedVarargs`(value: FinishingSides*): Self = StObject.set(x, "coating-sides-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCoating-sides-supportedVarargs`(value: FinishingSides*): Self = this.set("coating-sides-supported", js.Array(value :_*))
+    def `setCoating-type-supported`(value: js.Array[CoatingType]): Self = StObject.set(x, "coating-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCoating-sides-supported`(value: js.Array[FinishingSides]): Self = this.set("coating-sides-supported", value.asInstanceOf[js.Any])
+    def `setCoating-type-supportedUndefined`: Self = StObject.set(x, "coating-type-supported", js.undefined)
     
     @scala.inline
-    def `deleteCoating-sides-supported`: Self = this.set("coating-sides-supported", js.undefined)
+    def `setCoating-type-supportedVarargs`(value: CoatingType*): Self = StObject.set(x, "coating-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCoating-type-supportedVarargs`(value: CoatingType*): Self = this.set("coating-type-supported", js.Array(value :_*))
+    def `setColor-supported`(value: Boolean): Self = StObject.set(x, "color-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCoating-type-supported`(value: js.Array[CoatingType]): Self = this.set("coating-type-supported", value.asInstanceOf[js.Any])
+    def `setColor-supportedUndefined`: Self = StObject.set(x, "color-supported", js.undefined)
     
     @scala.inline
-    def `deleteCoating-type-supported`: Self = this.set("coating-type-supported", js.undefined)
+    def `setCompression-supported`(value: js.Array[Compression]): Self = StObject.set(x, "compression-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setColor-supported`(value: Boolean): Self = this.set("color-supported", value.asInstanceOf[js.Any])
+    def `setCompression-supportedUndefined`: Self = StObject.set(x, "compression-supported", js.undefined)
     
     @scala.inline
-    def `deleteColor-supported`: Self = this.set("color-supported", js.undefined)
+    def `setCompression-supportedVarargs`(value: Compression*): Self = StObject.set(x, "compression-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCompression-supportedVarargs`(value: Compression*): Self = this.set("compression-supported", js.Array(value :_*))
+    def `setConfirmation-sheet-print-default`(value: Boolean): Self = StObject.set(x, "confirmation-sheet-print-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCompression-supported`(value: js.Array[Compression]): Self = this.set("compression-supported", value.asInstanceOf[js.Any])
+    def `setConfirmation-sheet-print-defaultUndefined`: Self = StObject.set(x, "confirmation-sheet-print-default", js.undefined)
     
     @scala.inline
-    def `deleteCompression-supported`: Self = this.set("compression-supported", js.undefined)
+    def `setCopies-default`(value: Double): Self = StObject.set(x, "copies-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setConfirmation-sheet-print-default`(value: Boolean): Self = this.set("confirmation-sheet-print-default", value.asInstanceOf[js.Any])
+    def `setCopies-defaultUndefined`: Self = StObject.set(x, "copies-default", js.undefined)
     
     @scala.inline
-    def `deleteConfirmation-sheet-print-default`: Self = this.set("confirmation-sheet-print-default", js.undefined)
+    def `setCopies-supported`(value: js.Array[Double]): Self = StObject.set(x, "copies-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCopies-default`(value: Double): Self = this.set("copies-default", value.asInstanceOf[js.Any])
+    def `setCopies-supportedUndefined`: Self = StObject.set(x, "copies-supported", js.undefined)
     
     @scala.inline
-    def `deleteCopies-default`: Self = this.set("copies-default", js.undefined)
+    def `setCopies-supportedVarargs`(value: Double*): Self = StObject.set(x, "copies-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCopies-supportedVarargs`(value: Double*): Self = this.set("copies-supported", js.Array(value :_*))
+    def `setCover-back-default`(value: Cover): Self = StObject.set(x, "cover-back-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCopies-supported`(value: js.Array[Double]): Self = this.set("copies-supported", value.asInstanceOf[js.Any])
+    def `setCover-back-defaultUndefined`: Self = StObject.set(x, "cover-back-default", js.undefined)
     
     @scala.inline
-    def `deleteCopies-supported`: Self = this.set("copies-supported", js.undefined)
+    def `setCover-back-supported`(value: js.Array[String]): Self = StObject.set(x, "cover-back-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCover-back-default`(value: Cover): Self = this.set("cover-back-default", value.asInstanceOf[js.Any])
+    def `setCover-back-supportedUndefined`: Self = StObject.set(x, "cover-back-supported", js.undefined)
     
     @scala.inline
-    def `deleteCover-back-default`: Self = this.set("cover-back-default", js.undefined)
+    def `setCover-back-supportedVarargs`(value: String*): Self = StObject.set(x, "cover-back-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCover-back-supportedVarargs`(value: String*): Self = this.set("cover-back-supported", js.Array(value :_*))
+    def `setCover-front-default`(value: Cover): Self = StObject.set(x, "cover-front-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCover-back-supported`(value: js.Array[String]): Self = this.set("cover-back-supported", value.asInstanceOf[js.Any])
+    def `setCover-front-defaultUndefined`: Self = StObject.set(x, "cover-front-default", js.undefined)
     
     @scala.inline
-    def `deleteCover-back-supported`: Self = this.set("cover-back-supported", js.undefined)
+    def `setCover-front-supported`(value: js.Array[String]): Self = StObject.set(x, "cover-front-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCover-front-default`(value: Cover): Self = this.set("cover-front-default", value.asInstanceOf[js.Any])
+    def `setCover-front-supportedUndefined`: Self = StObject.set(x, "cover-front-supported", js.undefined)
     
     @scala.inline
-    def `deleteCover-front-default`: Self = this.set("cover-front-default", js.undefined)
+    def `setCover-front-supportedVarargs`(value: String*): Self = StObject.set(x, "cover-front-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCover-front-supportedVarargs`(value: String*): Self = this.set("cover-front-supported", js.Array(value :_*))
+    def `setCover-sheet-info-default`(value: CoverSheetInfo): Self = StObject.set(x, "cover-sheet-info-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCover-front-supported`(value: js.Array[String]): Self = this.set("cover-front-supported", value.asInstanceOf[js.Any])
+    def `setCover-sheet-info-defaultUndefined`: Self = StObject.set(x, "cover-sheet-info-default", js.undefined)
     
     @scala.inline
-    def `deleteCover-front-supported`: Self = this.set("cover-front-supported", js.undefined)
+    def `setCover-sheet-info-supported`(value: js.Array[String]): Self = StObject.set(x, "cover-sheet-info-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCover-sheet-info-default`(value: CoverSheetInfo): Self = this.set("cover-sheet-info-default", value.asInstanceOf[js.Any])
+    def `setCover-sheet-info-supportedUndefined`: Self = StObject.set(x, "cover-sheet-info-supported", js.undefined)
     
     @scala.inline
-    def `deleteCover-sheet-info-default`: Self = this.set("cover-sheet-info-default", js.undefined)
+    def `setCover-sheet-info-supportedVarargs`(value: String*): Self = StObject.set(x, "cover-sheet-info-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCover-sheet-info-supportedVarargs`(value: String*): Self = this.set("cover-sheet-info-supported", js.Array(value :_*))
+    def `setCovering-name-supported`(value: js.Array[String]): Self = StObject.set(x, "covering-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCover-sheet-info-supported`(value: js.Array[String]): Self = this.set("cover-sheet-info-supported", value.asInstanceOf[js.Any])
+    def `setCovering-name-supportedUndefined`: Self = StObject.set(x, "covering-name-supported", js.undefined)
     
     @scala.inline
-    def `deleteCover-sheet-info-supported`: Self = this.set("cover-sheet-info-supported", js.undefined)
+    def `setCovering-name-supportedVarargs`(value: String*): Self = StObject.set(x, "covering-name-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setCovering-name-supportedVarargs`(value: String*): Self = this.set("covering-name-supported", js.Array(value :_*))
+    def `setDestination-accesses-supported`(value: js.Array[String]): Self = StObject.set(x, "destination-accesses-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCovering-name-supported`(value: js.Array[String]): Self = this.set("covering-name-supported", value.asInstanceOf[js.Any])
+    def `setDestination-accesses-supportedUndefined`: Self = StObject.set(x, "destination-accesses-supported", js.undefined)
     
     @scala.inline
-    def `deleteCovering-name-supported`: Self = this.set("covering-name-supported", js.undefined)
+    def `setDestination-accesses-supportedVarargs`(value: String*): Self = StObject.set(x, "destination-accesses-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDestination-accesses-supportedVarargs`(value: String*): Self = this.set("destination-accesses-supported", js.Array(value :_*))
+    def `setDestination-uri-ready`(value: js.Array[DestinationUriReady]): Self = StObject.set(x, "destination-uri-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-accesses-supported`(value: js.Array[String]): Self = this.set("destination-accesses-supported", value.asInstanceOf[js.Any])
+    def `setDestination-uri-readyUndefined`: Self = StObject.set(x, "destination-uri-ready", js.undefined)
     
     @scala.inline
-    def `deleteDestination-accesses-supported`: Self = this.set("destination-accesses-supported", js.undefined)
+    def `setDestination-uri-readyVarargs`(value: DestinationUriReady*): Self = StObject.set(x, "destination-uri-ready", js.Array(value :_*))
     
     @scala.inline
-    def `setDestination-uri-readyVarargs`(value: DestinationUriReady*): Self = this.set("destination-uri-ready", js.Array(value :_*))
+    def `setDestination-uri-schemes-supported`(value: js.Array[UriSchemes]): Self = StObject.set(x, "destination-uri-schemes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-uri-ready`(value: js.Array[DestinationUriReady]): Self = this.set("destination-uri-ready", value.asInstanceOf[js.Any])
+    def `setDestination-uri-schemes-supportedUndefined`: Self = StObject.set(x, "destination-uri-schemes-supported", js.undefined)
     
     @scala.inline
-    def `deleteDestination-uri-ready`: Self = this.set("destination-uri-ready", js.undefined)
+    def `setDestination-uri-schemes-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "destination-uri-schemes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDestination-uri-schemes-supportedVarargs`(value: UriSchemes*): Self = this.set("destination-uri-schemes-supported", js.Array(value :_*))
+    def `setDestination-uris-supported`(value: js.Array[String]): Self = StObject.set(x, "destination-uris-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-uri-schemes-supported`(value: js.Array[UriSchemes]): Self = this.set("destination-uri-schemes-supported", value.asInstanceOf[js.Any])
+    def `setDestination-uris-supportedUndefined`: Self = StObject.set(x, "destination-uris-supported", js.undefined)
     
     @scala.inline
-    def `deleteDestination-uri-schemes-supported`: Self = this.set("destination-uri-schemes-supported", js.undefined)
+    def `setDestination-uris-supportedVarargs`(value: String*): Self = StObject.set(x, "destination-uris-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDestination-uris-supportedVarargs`(value: String*): Self = this.set("destination-uris-supported", js.Array(value :_*))
+    def `setDocument-access-supported`(value: js.Array[String]): Self = StObject.set(x, "document-access-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDestination-uris-supported`(value: js.Array[String]): Self = this.set("destination-uris-supported", value.asInstanceOf[js.Any])
+    def `setDocument-access-supportedUndefined`: Self = StObject.set(x, "document-access-supported", js.undefined)
     
     @scala.inline
-    def `deleteDestination-uris-supported`: Self = this.set("destination-uris-supported", js.undefined)
+    def `setDocument-access-supportedVarargs`(value: String*): Self = StObject.set(x, "document-access-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-access-supportedVarargs`(value: String*): Self = this.set("document-access-supported", js.Array(value :_*))
+    def `setDocument-charset-default`(value: String): Self = StObject.set(x, "document-charset-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-access-supported`(value: js.Array[String]): Self = this.set("document-access-supported", value.asInstanceOf[js.Any])
+    def `setDocument-charset-defaultUndefined`: Self = StObject.set(x, "document-charset-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-access-supported`: Self = this.set("document-access-supported", js.undefined)
+    def `setDocument-charset-supported`(value: js.Array[String]): Self = StObject.set(x, "document-charset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-charset-default`(value: String): Self = this.set("document-charset-default", value.asInstanceOf[js.Any])
+    def `setDocument-charset-supportedUndefined`: Self = StObject.set(x, "document-charset-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-charset-default`: Self = this.set("document-charset-default", js.undefined)
+    def `setDocument-charset-supportedVarargs`(value: String*): Self = StObject.set(x, "document-charset-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-charset-supportedVarargs`(value: String*): Self = this.set("document-charset-supported", js.Array(value :_*))
+    def `setDocument-creation-attributes-supported`(value: js.Array[String]): Self = StObject.set(x, "document-creation-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-charset-supported`(value: js.Array[String]): Self = this.set("document-charset-supported", value.asInstanceOf[js.Any])
+    def `setDocument-creation-attributes-supportedUndefined`: Self = StObject.set(x, "document-creation-attributes-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-charset-supported`: Self = this.set("document-charset-supported", js.undefined)
+    def `setDocument-creation-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "document-creation-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-creation-attributes-supportedVarargs`(value: String*): Self = this.set("document-creation-attributes-supported", js.Array(value :_*))
+    def `setDocument-digital-signature-default`(value: DocumentDigitalSignature): Self = StObject.set(x, "document-digital-signature-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-creation-attributes-supported`(value: js.Array[String]): Self = this.set("document-creation-attributes-supported", value.asInstanceOf[js.Any])
+    def `setDocument-digital-signature-defaultUndefined`: Self = StObject.set(x, "document-digital-signature-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-creation-attributes-supported`: Self = this.set("document-creation-attributes-supported", js.undefined)
+    def `setDocument-digital-signature-supported`(value: js.Array[DocumentDigitalSignature]): Self = StObject.set(x, "document-digital-signature-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-digital-signature-default`(value: DocumentDigitalSignature): Self = this.set("document-digital-signature-default", value.asInstanceOf[js.Any])
+    def `setDocument-digital-signature-supportedUndefined`: Self = StObject.set(x, "document-digital-signature-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-digital-signature-default`: Self = this.set("document-digital-signature-default", js.undefined)
+    def `setDocument-digital-signature-supportedVarargs`(value: DocumentDigitalSignature*): Self = StObject.set(x, "document-digital-signature-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-digital-signature-supportedVarargs`(value: DocumentDigitalSignature*): Self = this.set("document-digital-signature-supported", js.Array(value :_*))
+    def `setDocument-format-default`(value: MimeMediaType): Self = StObject.set(x, "document-format-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-digital-signature-supported`(value: js.Array[DocumentDigitalSignature]): Self = this.set("document-digital-signature-supported", value.asInstanceOf[js.Any])
+    def `setDocument-format-defaultUndefined`: Self = StObject.set(x, "document-format-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-digital-signature-supported`: Self = this.set("document-digital-signature-supported", js.undefined)
+    def `setDocument-format-details-default`(value: DocumentFormatDetails): Self = StObject.set(x, "document-format-details-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format-default`(value: MimeMediaType): Self = this.set("document-format-default", value.asInstanceOf[js.Any])
+    def `setDocument-format-details-defaultUndefined`: Self = StObject.set(x, "document-format-details-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format-default`: Self = this.set("document-format-default", js.undefined)
+    def `setDocument-format-details-supported`(value: js.Array[String]): Self = StObject.set(x, "document-format-details-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format-details-default`(value: DocumentFormatDetails): Self = this.set("document-format-details-default", value.asInstanceOf[js.Any])
+    def `setDocument-format-details-supportedUndefined`: Self = StObject.set(x, "document-format-details-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format-details-default`: Self = this.set("document-format-details-default", js.undefined)
+    def `setDocument-format-details-supportedVarargs`(value: String*): Self = StObject.set(x, "document-format-details-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-format-details-supportedVarargs`(value: String*): Self = this.set("document-format-details-supported", js.Array(value :_*))
+    def `setDocument-format-supported`(value: js.Array[MimeMediaType]): Self = StObject.set(x, "document-format-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format-details-supported`(value: js.Array[String]): Self = this.set("document-format-details-supported", value.asInstanceOf[js.Any])
+    def `setDocument-format-supportedUndefined`: Self = StObject.set(x, "document-format-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format-details-supported`: Self = this.set("document-format-details-supported", js.undefined)
+    def `setDocument-format-supportedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "document-format-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-format-supportedVarargs`(value: MimeMediaType*): Self = this.set("document-format-supported", js.Array(value :_*))
+    def `setDocument-format-version-default`(value: String): Self = StObject.set(x, "document-format-version-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format-supported`(value: js.Array[MimeMediaType]): Self = this.set("document-format-supported", value.asInstanceOf[js.Any])
+    def `setDocument-format-version-defaultUndefined`: Self = StObject.set(x, "document-format-version-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format-supported`: Self = this.set("document-format-supported", js.undefined)
+    def `setDocument-format-version-supported`(value: js.Array[String]): Self = StObject.set(x, "document-format-version-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format-version-default`(value: String): Self = this.set("document-format-version-default", value.asInstanceOf[js.Any])
+    def `setDocument-format-version-supportedUndefined`: Self = StObject.set(x, "document-format-version-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format-version-default`: Self = this.set("document-format-version-default", js.undefined)
+    def `setDocument-format-version-supportedVarargs`(value: String*): Self = StObject.set(x, "document-format-version-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-format-version-supportedVarargs`(value: String*): Self = this.set("document-format-version-supported", js.Array(value :_*))
+    def `setDocument-natural-language-default`(value: String): Self = StObject.set(x, "document-natural-language-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format-version-supported`(value: js.Array[String]): Self = this.set("document-format-version-supported", value.asInstanceOf[js.Any])
+    def `setDocument-natural-language-defaultUndefined`: Self = StObject.set(x, "document-natural-language-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format-version-supported`: Self = this.set("document-format-version-supported", js.undefined)
+    def `setDocument-natural-language-supported`(value: js.Array[String]): Self = StObject.set(x, "document-natural-language-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-natural-language-default`(value: String): Self = this.set("document-natural-language-default", value.asInstanceOf[js.Any])
+    def `setDocument-natural-language-supportedUndefined`: Self = StObject.set(x, "document-natural-language-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-natural-language-default`: Self = this.set("document-natural-language-default", js.undefined)
+    def `setDocument-natural-language-supportedVarargs`(value: String*): Self = StObject.set(x, "document-natural-language-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-natural-language-supportedVarargs`(value: String*): Self = this.set("document-natural-language-supported", js.Array(value :_*))
+    def `setDocument-password-supported`(value: Double): Self = StObject.set(x, "document-password-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-natural-language-supported`(value: js.Array[String]): Self = this.set("document-natural-language-supported", value.asInstanceOf[js.Any])
+    def `setDocument-password-supportedUndefined`: Self = StObject.set(x, "document-password-supported", js.undefined)
     
     @scala.inline
-    def `deleteDocument-natural-language-supported`: Self = this.set("document-natural-language-supported", js.undefined)
+    def `setDocument-privacy-attributes`(value: js.Array[String]): Self = StObject.set(x, "document-privacy-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-password-supported`(value: Double): Self = this.set("document-password-supported", value.asInstanceOf[js.Any])
+    def `setDocument-privacy-attributesUndefined`: Self = StObject.set(x, "document-privacy-attributes", js.undefined)
     
     @scala.inline
-    def `deleteDocument-password-supported`: Self = this.set("document-password-supported", js.undefined)
+    def `setDocument-privacy-attributesVarargs`(value: String*): Self = StObject.set(x, "document-privacy-attributes", js.Array(value :_*))
     
     @scala.inline
-    def `setDocument-privacy-attributesVarargs`(value: String*): Self = this.set("document-privacy-attributes", js.Array(value :_*))
+    def `setDocument-privacy-scope`(value: all | default | none | owner): Self = StObject.set(x, "document-privacy-scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-privacy-attributes`(value: js.Array[String]): Self = this.set("document-privacy-attributes", value.asInstanceOf[js.Any])
+    def `setDocument-privacy-scopeUndefined`: Self = StObject.set(x, "document-privacy-scope", js.undefined)
     
     @scala.inline
-    def `deleteDocument-privacy-attributes`: Self = this.set("document-privacy-attributes", js.undefined)
+    def `setFeed-orientation-default`(value: FeedOrientation): Self = StObject.set(x, "feed-orientation-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-privacy-scope`(value: all | default | none | owner): Self = this.set("document-privacy-scope", value.asInstanceOf[js.Any])
+    def `setFeed-orientation-defaultUndefined`: Self = StObject.set(x, "feed-orientation-default", js.undefined)
     
     @scala.inline
-    def `deleteDocument-privacy-scope`: Self = this.set("document-privacy-scope", js.undefined)
+    def `setFeed-orientation-supported`(value: js.Array[FeedOrientation]): Self = StObject.set(x, "feed-orientation-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFeed-orientation-default`(value: FeedOrientation): Self = this.set("feed-orientation-default", value.asInstanceOf[js.Any])
+    def `setFeed-orientation-supportedUndefined`: Self = StObject.set(x, "feed-orientation-supported", js.undefined)
     
     @scala.inline
-    def `deleteFeed-orientation-default`: Self = this.set("feed-orientation-default", js.undefined)
+    def `setFeed-orientation-supportedVarargs`(value: FeedOrientation*): Self = StObject.set(x, "feed-orientation-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFeed-orientation-supportedVarargs`(value: FeedOrientation*): Self = this.set("feed-orientation-supported", js.Array(value :_*))
+    def `setFetch-document-attributes-supported`(value: js.Array[String]): Self = StObject.set(x, "fetch-document-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFeed-orientation-supported`(value: js.Array[FeedOrientation]): Self = this.set("feed-orientation-supported", value.asInstanceOf[js.Any])
+    def `setFetch-document-attributes-supportedUndefined`: Self = StObject.set(x, "fetch-document-attributes-supported", js.undefined)
     
     @scala.inline
-    def `deleteFeed-orientation-supported`: Self = this.set("feed-orientation-supported", js.undefined)
+    def `setFetch-document-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "fetch-document-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFetch-document-attributes-supportedVarargs`(value: String*): Self = this.set("fetch-document-attributes-supported", js.Array(value :_*))
+    def `setFinishing-template-supported`(value: js.Array[Finishings]): Self = StObject.set(x, "finishing-template-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFetch-document-attributes-supported`(value: js.Array[String]): Self = this.set("fetch-document-attributes-supported", value.asInstanceOf[js.Any])
+    def `setFinishing-template-supportedUndefined`: Self = StObject.set(x, "finishing-template-supported", js.undefined)
     
     @scala.inline
-    def `deleteFetch-document-attributes-supported`: Self = this.set("fetch-document-attributes-supported", js.undefined)
+    def `setFinishing-template-supportedVarargs`(value: Finishings*): Self = StObject.set(x, "finishing-template-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFinishing-template-supportedVarargs`(value: Finishings*): Self = this.set("finishing-template-supported", js.Array(value :_*))
+    def `setFinishings-col-database`(value: js.Array[FinishingsInterface]): Self = StObject.set(x, "finishings-col-database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFinishing-template-supported`(value: js.Array[Finishings]): Self = this.set("finishing-template-supported", value.asInstanceOf[js.Any])
+    def `setFinishings-col-databaseUndefined`: Self = StObject.set(x, "finishings-col-database", js.undefined)
     
     @scala.inline
-    def `deleteFinishing-template-supported`: Self = this.set("finishing-template-supported", js.undefined)
+    def `setFinishings-col-databaseVarargs`(value: FinishingsInterface*): Self = StObject.set(x, "finishings-col-database", js.Array(value :_*))
     
     @scala.inline
-    def `setFinishings-col-databaseVarargs`(value: FinishingsInterface*): Self = this.set("finishings-col-database", js.Array(value :_*))
+    def `setFinishings-col-default`(value: FinishingsInterface): Self = StObject.set(x, "finishings-col-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFinishings-col-database`(value: js.Array[FinishingsInterface]): Self = this.set("finishings-col-database", value.asInstanceOf[js.Any])
+    def `setFinishings-col-defaultUndefined`: Self = StObject.set(x, "finishings-col-default", js.undefined)
     
     @scala.inline
-    def `deleteFinishings-col-database`: Self = this.set("finishings-col-database", js.undefined)
+    def `setFinishings-col-ready`(value: js.Array[FinishingsInterface]): Self = StObject.set(x, "finishings-col-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFinishings-col-default`(value: FinishingsInterface): Self = this.set("finishings-col-default", value.asInstanceOf[js.Any])
+    def `setFinishings-col-readyUndefined`: Self = StObject.set(x, "finishings-col-ready", js.undefined)
     
     @scala.inline
-    def `deleteFinishings-col-default`: Self = this.set("finishings-col-default", js.undefined)
-    
-    @scala.inline
-    def `setFinishings-col-readyVarargs`(value: FinishingsInterface*): Self = this.set("finishings-col-ready", js.Array(value :_*))
-    
-    @scala.inline
-    def `setFinishings-col-ready`(value: js.Array[FinishingsInterface]): Self = this.set("finishings-col-ready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteFinishings-col-ready`: Self = this.set("finishings-col-ready", js.undefined)
-    
-    @scala.inline
-    def `setFinishings-col-supportedVarargs`(
-      value: (baling | binding | coating | covering | `finishing-template` | folding | `imposition-template` | laminating | `media-sheets-supported` | `media-size` | `media-size-name` | punching | stitching | trimming)*
-    ): Self = this.set("finishings-col-supported", js.Array(value :_*))
+    def `setFinishings-col-readyVarargs`(value: FinishingsInterface*): Self = StObject.set(x, "finishings-col-ready", js.Array(value :_*))
     
     @scala.inline
     def `setFinishings-col-supported`(
       value: js.Array[
           baling | binding | coating | covering | `finishing-template` | folding | `imposition-template` | laminating | `media-sheets-supported` | `media-size` | `media-size-name` | punching | stitching | trimming
         ]
-    ): Self = this.set("finishings-col-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "finishings-col-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFinishings-col-supported`: Self = this.set("finishings-col-supported", js.undefined)
+    def `setFinishings-col-supportedUndefined`: Self = StObject.set(x, "finishings-col-supported", js.undefined)
     
     @scala.inline
-    def `setFinishings-defaultVarargs`(value: Finishings*): Self = this.set("finishings-default", js.Array(value :_*))
+    def `setFinishings-col-supportedVarargs`(
+      value: (baling | binding | coating | covering | `finishing-template` | folding | `imposition-template` | laminating | `media-sheets-supported` | `media-size` | `media-size-name` | punching | stitching | trimming)*
+    ): Self = StObject.set(x, "finishings-col-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFinishings-default`(value: js.Array[Finishings]): Self = this.set("finishings-default", value.asInstanceOf[js.Any])
+    def `setFinishings-default`(value: js.Array[Finishings]): Self = StObject.set(x, "finishings-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFinishings-default`: Self = this.set("finishings-default", js.undefined)
+    def `setFinishings-defaultUndefined`: Self = StObject.set(x, "finishings-default", js.undefined)
     
     @scala.inline
-    def `setFinishings-readyVarargs`(value: Finishings*): Self = this.set("finishings-ready", js.Array(value :_*))
+    def `setFinishings-defaultVarargs`(value: Finishings*): Self = StObject.set(x, "finishings-default", js.Array(value :_*))
     
     @scala.inline
-    def `setFinishings-ready`(value: js.Array[Finishings]): Self = this.set("finishings-ready", value.asInstanceOf[js.Any])
+    def `setFinishings-ready`(value: js.Array[Finishings]): Self = StObject.set(x, "finishings-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFinishings-ready`: Self = this.set("finishings-ready", js.undefined)
+    def `setFinishings-readyUndefined`: Self = StObject.set(x, "finishings-ready", js.undefined)
     
     @scala.inline
-    def `setFinishings-supportedVarargs`(value: Finishings*): Self = this.set("finishings-supported", js.Array(value :_*))
+    def `setFinishings-readyVarargs`(value: Finishings*): Self = StObject.set(x, "finishings-ready", js.Array(value :_*))
     
     @scala.inline
-    def `setFinishings-supported`(value: js.Array[Finishings]): Self = this.set("finishings-supported", value.asInstanceOf[js.Any])
+    def `setFinishings-supported`(value: js.Array[Finishings]): Self = StObject.set(x, "finishings-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFinishings-supported`: Self = this.set("finishings-supported", js.undefined)
+    def `setFinishings-supportedUndefined`: Self = StObject.set(x, "finishings-supported", js.undefined)
     
     @scala.inline
-    def `setFolding-direction-supportedVarargs`(value: FoldingDirection*): Self = this.set("folding-direction-supported", js.Array(value :_*))
+    def `setFinishings-supportedVarargs`(value: Finishings*): Self = StObject.set(x, "finishings-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFolding-direction-supported`(value: js.Array[FoldingDirection]): Self = this.set("folding-direction-supported", value.asInstanceOf[js.Any])
+    def `setFolding-direction-supported`(value: js.Array[FoldingDirection]): Self = StObject.set(x, "folding-direction-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFolding-direction-supported`: Self = this.set("folding-direction-supported", js.undefined)
+    def `setFolding-direction-supportedUndefined`: Self = StObject.set(x, "folding-direction-supported", js.undefined)
     
     @scala.inline
-    def `setFolding-offset-supportedVarargs`(value: (Double | String)*): Self = this.set("folding-offset-supported", js.Array(value :_*))
+    def `setFolding-direction-supportedVarargs`(value: FoldingDirection*): Self = StObject.set(x, "folding-direction-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFolding-offset-supported`(value: js.Array[Double | String]): Self = this.set("folding-offset-supported", value.asInstanceOf[js.Any])
+    def `setFolding-offset-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "folding-offset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFolding-offset-supported`: Self = this.set("folding-offset-supported", js.undefined)
+    def `setFolding-offset-supportedUndefined`: Self = StObject.set(x, "folding-offset-supported", js.undefined)
     
     @scala.inline
-    def `setFolding-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = this.set("folding-reference-edge-supported", js.Array(value :_*))
+    def `setFolding-offset-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "folding-offset-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setFolding-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = this.set("folding-reference-edge-supported", value.asInstanceOf[js.Any])
+    def `setFolding-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = StObject.set(x, "folding-reference-edge-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFolding-reference-edge-supported`: Self = this.set("folding-reference-edge-supported", js.undefined)
+    def `setFolding-reference-edge-supportedUndefined`: Self = StObject.set(x, "folding-reference-edge-supported", js.undefined)
     
     @scala.inline
-    def `setFont-name-requested-default`(value: String): Self = this.set("font-name-requested-default", value.asInstanceOf[js.Any])
+    def `setFolding-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = StObject.set(x, "folding-reference-edge-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteFont-name-requested-default`: Self = this.set("font-name-requested-default", js.undefined)
+    def `setFont-name-requested-default`(value: String): Self = StObject.set(x, "font-name-requested-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-name-requested-supportedVarargs`(value: String*): Self = this.set("font-name-requested-supported", js.Array(value :_*))
+    def `setFont-name-requested-defaultUndefined`: Self = StObject.set(x, "font-name-requested-default", js.undefined)
     
     @scala.inline
-    def `setFont-name-requested-supported`(value: js.Array[String]): Self = this.set("font-name-requested-supported", value.asInstanceOf[js.Any])
+    def `setFont-name-requested-supported`(value: js.Array[String]): Self = StObject.set(x, "font-name-requested-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFont-name-requested-supported`: Self = this.set("font-name-requested-supported", js.undefined)
+    def `setFont-name-requested-supportedUndefined`: Self = StObject.set(x, "font-name-requested-supported", js.undefined)
     
     @scala.inline
-    def `setFont-size-requested-default`(value: Double): Self = this.set("font-size-requested-default", value.asInstanceOf[js.Any])
+    def `setFont-name-requested-supportedVarargs`(value: String*): Self = StObject.set(x, "font-name-requested-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteFont-size-requested-default`: Self = this.set("font-size-requested-default", js.undefined)
+    def `setFont-size-requested-default`(value: Double): Self = StObject.set(x, "font-size-requested-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-size-requested-supportedVarargs`(value: String*): Self = this.set("font-size-requested-supported", js.Array(value :_*))
+    def `setFont-size-requested-defaultUndefined`: Self = StObject.set(x, "font-size-requested-default", js.undefined)
     
     @scala.inline
-    def `setFont-size-requested-supported`(value: js.Array[String]): Self = this.set("font-size-requested-supported", value.asInstanceOf[js.Any])
+    def `setFont-size-requested-supported`(value: js.Array[String]): Self = StObject.set(x, "font-size-requested-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFont-size-requested-supported`: Self = this.set("font-size-requested-supported", js.undefined)
+    def `setFont-size-requested-supportedUndefined`: Self = StObject.set(x, "font-size-requested-supported", js.undefined)
     
     @scala.inline
-    def `setFrom-name-supported`(value: Double): Self = this.set("from-name-supported", value.asInstanceOf[js.Any])
+    def `setFont-size-requested-supportedVarargs`(value: String*): Self = StObject.set(x, "font-size-requested-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteFrom-name-supported`: Self = this.set("from-name-supported", js.undefined)
+    def `setFrom-name-supported`(value: Double): Self = StObject.set(x, "from-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGenerated-natural-language-supportedVarargs`(value: String*): Self = this.set("generated-natural-language-supported", js.Array(value :_*))
+    def `setFrom-name-supportedUndefined`: Self = StObject.set(x, "from-name-supported", js.undefined)
     
     @scala.inline
-    def `setGenerated-natural-language-supported`(value: js.Array[String]): Self = this.set("generated-natural-language-supported", value.asInstanceOf[js.Any])
+    def `setGenerated-natural-language-supported`(value: js.Array[String]): Self = StObject.set(x, "generated-natural-language-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteGenerated-natural-language-supported`: Self = this.set("generated-natural-language-supported", js.undefined)
+    def `setGenerated-natural-language-supportedUndefined`: Self = StObject.set(x, "generated-natural-language-supported", js.undefined)
     
     @scala.inline
-    def `setIdentify-actions-defaultVarargs`(value: IdentifyActions*): Self = this.set("identify-actions-default", js.Array(value :_*))
+    def `setGenerated-natural-language-supportedVarargs`(value: String*): Self = StObject.set(x, "generated-natural-language-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setIdentify-actions-default`(value: js.Array[IdentifyActions]): Self = this.set("identify-actions-default", value.asInstanceOf[js.Any])
+    def `setIdentify-actions-default`(value: js.Array[IdentifyActions]): Self = StObject.set(x, "identify-actions-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIdentify-actions-default`: Self = this.set("identify-actions-default", js.undefined)
+    def `setIdentify-actions-defaultUndefined`: Self = StObject.set(x, "identify-actions-default", js.undefined)
     
     @scala.inline
-    def `setIdentify-actions-supportedVarargs`(value: IdentifyActions*): Self = this.set("identify-actions-supported", js.Array(value :_*))
+    def `setIdentify-actions-defaultVarargs`(value: IdentifyActions*): Self = StObject.set(x, "identify-actions-default", js.Array(value :_*))
     
     @scala.inline
-    def `setIdentify-actions-supported`(value: js.Array[IdentifyActions]): Self = this.set("identify-actions-supported", value.asInstanceOf[js.Any])
+    def `setIdentify-actions-supported`(value: js.Array[IdentifyActions]): Self = StObject.set(x, "identify-actions-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIdentify-actions-supported`: Self = this.set("identify-actions-supported", js.undefined)
+    def `setIdentify-actions-supportedUndefined`: Self = StObject.set(x, "identify-actions-supported", js.undefined)
     
     @scala.inline
-    def `setImposition-template-default`(value: ImpositionTemplate): Self = this.set("imposition-template-default", value.asInstanceOf[js.Any])
+    def `setIdentify-actions-supportedVarargs`(value: IdentifyActions*): Self = StObject.set(x, "identify-actions-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteImposition-template-default`: Self = this.set("imposition-template-default", js.undefined)
+    def `setImposition-template-default`(value: ImpositionTemplate): Self = StObject.set(x, "imposition-template-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setImposition-template-supportedVarargs`(value: ImpositionTemplate*): Self = this.set("imposition-template-supported", js.Array(value :_*))
+    def `setImposition-template-defaultUndefined`: Self = StObject.set(x, "imposition-template-default", js.undefined)
     
     @scala.inline
-    def `setImposition-template-supported`(value: js.Array[ImpositionTemplate]): Self = this.set("imposition-template-supported", value.asInstanceOf[js.Any])
+    def `setImposition-template-supported`(value: js.Array[ImpositionTemplate]): Self = StObject.set(x, "imposition-template-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteImposition-template-supported`: Self = this.set("imposition-template-supported", js.undefined)
+    def `setImposition-template-supportedUndefined`: Self = StObject.set(x, "imposition-template-supported", js.undefined)
     
     @scala.inline
-    def `setInput-attributes-default`(value: InputAttributes): Self = this.set("input-attributes-default", value.asInstanceOf[js.Any])
+    def `setImposition-template-supportedVarargs`(value: ImpositionTemplate*): Self = StObject.set(x, "imposition-template-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteInput-attributes-default`: Self = this.set("input-attributes-default", js.undefined)
+    def `setInput-attributes-default`(value: InputAttributes): Self = StObject.set(x, "input-attributes-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-attributes-supportedVarargs`(value: String*): Self = this.set("input-attributes-supported", js.Array(value :_*))
+    def `setInput-attributes-defaultUndefined`: Self = StObject.set(x, "input-attributes-default", js.undefined)
     
     @scala.inline
-    def `setInput-attributes-supported`(value: js.Array[String]): Self = this.set("input-attributes-supported", value.asInstanceOf[js.Any])
+    def `setInput-attributes-supported`(value: js.Array[String]): Self = StObject.set(x, "input-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-attributes-supported`: Self = this.set("input-attributes-supported", js.undefined)
+    def `setInput-attributes-supportedUndefined`: Self = StObject.set(x, "input-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setInput-color-mode-supportedVarargs`(value: InputColorMode*): Self = this.set("input-color-mode-supported", js.Array(value :_*))
+    def `setInput-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "input-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-color-mode-supported`(value: js.Array[InputColorMode]): Self = this.set("input-color-mode-supported", value.asInstanceOf[js.Any])
+    def `setInput-color-mode-supported`(value: js.Array[InputColorMode]): Self = StObject.set(x, "input-color-mode-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-color-mode-supported`: Self = this.set("input-color-mode-supported", js.undefined)
+    def `setInput-color-mode-supportedUndefined`: Self = StObject.set(x, "input-color-mode-supported", js.undefined)
     
     @scala.inline
-    def `setInput-content-type-supportedVarargs`(value: InputContentType*): Self = this.set("input-content-type-supported", js.Array(value :_*))
+    def `setInput-color-mode-supportedVarargs`(value: InputColorMode*): Self = StObject.set(x, "input-color-mode-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-content-type-supported`(value: js.Array[InputContentType]): Self = this.set("input-content-type-supported", value.asInstanceOf[js.Any])
+    def `setInput-content-type-supported`(value: js.Array[InputContentType]): Self = StObject.set(x, "input-content-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-content-type-supported`: Self = this.set("input-content-type-supported", js.undefined)
+    def `setInput-content-type-supportedUndefined`: Self = StObject.set(x, "input-content-type-supported", js.undefined)
     
     @scala.inline
-    def `setInput-film-scan-mode-supportedVarargs`(value: InputFilmScanMode*): Self = this.set("input-film-scan-mode-supported", js.Array(value :_*))
+    def `setInput-content-type-supportedVarargs`(value: InputContentType*): Self = StObject.set(x, "input-content-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-film-scan-mode-supported`(value: js.Array[InputFilmScanMode]): Self = this.set("input-film-scan-mode-supported", value.asInstanceOf[js.Any])
+    def `setInput-film-scan-mode-supported`(value: js.Array[InputFilmScanMode]): Self = StObject.set(x, "input-film-scan-mode-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-film-scan-mode-supported`: Self = this.set("input-film-scan-mode-supported", js.undefined)
+    def `setInput-film-scan-mode-supportedUndefined`: Self = StObject.set(x, "input-film-scan-mode-supported", js.undefined)
     
     @scala.inline
-    def `setInput-media-supportedVarargs`(value: (MediaName | MediaSizeName)*): Self = this.set("input-media-supported", js.Array(value :_*))
+    def `setInput-film-scan-mode-supportedVarargs`(value: InputFilmScanMode*): Self = StObject.set(x, "input-film-scan-mode-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-media-supported`(value: js.Array[MediaName | MediaSizeName]): Self = this.set("input-media-supported", value.asInstanceOf[js.Any])
+    def `setInput-media-supported`(value: js.Array[MediaName | MediaSizeName]): Self = StObject.set(x, "input-media-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-media-supported`: Self = this.set("input-media-supported", js.undefined)
+    def `setInput-media-supportedUndefined`: Self = StObject.set(x, "input-media-supported", js.undefined)
     
     @scala.inline
-    def `setInput-orientation-requested-supportedVarargs`(value: OrientationRequested*): Self = this.set("input-orientation-requested-supported", js.Array(value :_*))
+    def `setInput-media-supportedVarargs`(value: (MediaName | MediaSizeName)*): Self = StObject.set(x, "input-media-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-orientation-requested-supported`(value: js.Array[OrientationRequested]): Self = this.set("input-orientation-requested-supported", value.asInstanceOf[js.Any])
+    def `setInput-orientation-requested-supported`(value: js.Array[OrientationRequested]): Self = StObject.set(x, "input-orientation-requested-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-orientation-requested-supported`: Self = this.set("input-orientation-requested-supported", js.undefined)
+    def `setInput-orientation-requested-supportedUndefined`: Self = StObject.set(x, "input-orientation-requested-supported", js.undefined)
     
     @scala.inline
-    def `setInput-quality-supportedVarargs`(value: PrintQuality*): Self = this.set("input-quality-supported", js.Array(value :_*))
+    def `setInput-orientation-requested-supportedVarargs`(value: OrientationRequested*): Self = StObject.set(x, "input-orientation-requested-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-quality-supported`(value: js.Array[PrintQuality]): Self = this.set("input-quality-supported", value.asInstanceOf[js.Any])
+    def `setInput-quality-supported`(value: js.Array[PrintQuality]): Self = StObject.set(x, "input-quality-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-quality-supported`: Self = this.set("input-quality-supported", js.undefined)
+    def `setInput-quality-supportedUndefined`: Self = StObject.set(x, "input-quality-supported", js.undefined)
     
     @scala.inline
-    def `setInput-resolution-supportedVarargs`(value: Resolution*): Self = this.set("input-resolution-supported", js.Array(value :_*))
+    def `setInput-quality-supportedVarargs`(value: PrintQuality*): Self = StObject.set(x, "input-quality-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-resolution-supported`(value: js.Array[Resolution]): Self = this.set("input-resolution-supported", value.asInstanceOf[js.Any])
+    def `setInput-resolution-supported`(value: js.Array[Resolution]): Self = StObject.set(x, "input-resolution-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-resolution-supported`: Self = this.set("input-resolution-supported", js.undefined)
+    def `setInput-resolution-supportedUndefined`: Self = StObject.set(x, "input-resolution-supported", js.undefined)
     
     @scala.inline
-    def `setInput-scan-regions-supported`(value: InputScanRegion): Self = this.set("input-scan-regions-supported", value.asInstanceOf[js.Any])
+    def `setInput-resolution-supportedVarargs`(value: Resolution*): Self = StObject.set(x, "input-resolution-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteInput-scan-regions-supported`: Self = this.set("input-scan-regions-supported", js.undefined)
+    def `setInput-scan-regions-supported`(value: InputScanRegion): Self = StObject.set(x, "input-scan-regions-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInput-sides-supportedVarargs`(value: Sides*): Self = this.set("input-sides-supported", js.Array(value :_*))
+    def `setInput-scan-regions-supportedUndefined`: Self = StObject.set(x, "input-scan-regions-supported", js.undefined)
     
     @scala.inline
-    def `setInput-sides-supported`(value: js.Array[Sides]): Self = this.set("input-sides-supported", value.asInstanceOf[js.Any])
+    def `setInput-sides-supported`(value: js.Array[Sides]): Self = StObject.set(x, "input-sides-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-sides-supported`: Self = this.set("input-sides-supported", js.undefined)
+    def `setInput-sides-supportedUndefined`: Self = StObject.set(x, "input-sides-supported", js.undefined)
     
     @scala.inline
-    def `setInput-source-supportedVarargs`(value: InputSource*): Self = this.set("input-source-supported", js.Array(value :_*))
+    def `setInput-sides-supportedVarargs`(value: Sides*): Self = StObject.set(x, "input-sides-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setInput-source-supported`(value: js.Array[InputSource]): Self = this.set("input-source-supported", value.asInstanceOf[js.Any])
+    def `setInput-source-supported`(value: js.Array[InputSource]): Self = StObject.set(x, "input-source-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInput-source-supported`: Self = this.set("input-source-supported", js.undefined)
+    def `setInput-source-supportedUndefined`: Self = StObject.set(x, "input-source-supported", js.undefined)
     
     @scala.inline
-    def `setInsert-after-page-number-supported`(value: String): Self = this.set("insert-after-page-number-supported", value.asInstanceOf[js.Any])
+    def `setInput-source-supportedVarargs`(value: InputSource*): Self = StObject.set(x, "input-source-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteInsert-after-page-number-supported`: Self = this.set("insert-after-page-number-supported", js.undefined)
+    def `setInsert-after-page-number-supported`(value: String): Self = StObject.set(x, "insert-after-page-number-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInsert-count-supported`(value: String): Self = this.set("insert-count-supported", value.asInstanceOf[js.Any])
+    def `setInsert-after-page-number-supportedUndefined`: Self = StObject.set(x, "insert-after-page-number-supported", js.undefined)
     
     @scala.inline
-    def `deleteInsert-count-supported`: Self = this.set("insert-count-supported", js.undefined)
+    def `setInsert-count-supported`(value: String): Self = StObject.set(x, "insert-count-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setInsert-sheet-defaultVarargs`(value: InsertSheet*): Self = this.set("insert-sheet-default", js.Array(value :_*))
+    def `setInsert-count-supportedUndefined`: Self = StObject.set(x, "insert-count-supported", js.undefined)
     
     @scala.inline
-    def `setInsert-sheet-default`(value: js.Array[InsertSheet]): Self = this.set("insert-sheet-default", value.asInstanceOf[js.Any])
+    def `setInsert-sheet-default`(value: js.Array[InsertSheet]): Self = StObject.set(x, "insert-sheet-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInsert-sheet-default`: Self = this.set("insert-sheet-default", js.undefined)
+    def `setInsert-sheet-defaultUndefined`: Self = StObject.set(x, "insert-sheet-default", js.undefined)
     
     @scala.inline
-    def `setInsert-sheet-supportedVarargs`(value: (`insert-after-page-number` | `insert-count` | media | `media-col`)*): Self = this.set("insert-sheet-supported", js.Array(value :_*))
+    def `setInsert-sheet-defaultVarargs`(value: InsertSheet*): Self = StObject.set(x, "insert-sheet-default", js.Array(value :_*))
     
     @scala.inline
-    def `setInsert-sheet-supported`(value: js.Array[`insert-after-page-number` | `insert-count` | media | `media-col`]): Self = this.set("insert-sheet-supported", value.asInstanceOf[js.Any])
+    def `setInsert-sheet-supported`(value: js.Array[`insert-after-page-number` | `insert-count` | media | `media-col`]): Self = StObject.set(x, "insert-sheet-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteInsert-sheet-supported`: Self = this.set("insert-sheet-supported", js.undefined)
+    def `setInsert-sheet-supportedUndefined`: Self = StObject.set(x, "insert-sheet-supported", js.undefined)
     
     @scala.inline
-    def `setIpp-features-supportedVarargs`(
-      value: (`document-object` | faxout | `icc-color-matching` | `infrastructure-printer` | `ipp-3d` | `ipp-everywhere` | `job-save` | none | `page-overrides` | `proof-print` | `resource-object` | scan | `subscription-object` | `system-object`)*
-    ): Self = this.set("ipp-features-supported", js.Array(value :_*))
+    def `setInsert-sheet-supportedVarargs`(value: (`insert-after-page-number` | `insert-count` | media | `media-col`)*): Self = StObject.set(x, "insert-sheet-supported", js.Array(value :_*))
     
     @scala.inline
     def `setIpp-features-supported`(
       value: js.Array[
           `document-object` | faxout | `icc-color-matching` | `infrastructure-printer` | `ipp-3d` | `ipp-everywhere` | `job-save` | none | `page-overrides` | `proof-print` | `resource-object` | scan | `subscription-object` | `system-object`
         ]
-    ): Self = this.set("ipp-features-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ipp-features-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIpp-features-supported`: Self = this.set("ipp-features-supported", js.undefined)
+    def `setIpp-features-supportedUndefined`: Self = StObject.set(x, "ipp-features-supported", js.undefined)
     
     @scala.inline
-    def `setIpp-versions-supportedVarargs`(value: IPPVersion*): Self = this.set("ipp-versions-supported", js.Array(value :_*))
+    def `setIpp-features-supportedVarargs`(
+      value: (`document-object` | faxout | `icc-color-matching` | `infrastructure-printer` | `ipp-3d` | `ipp-everywhere` | `job-save` | none | `page-overrides` | `proof-print` | `resource-object` | scan | `subscription-object` | `system-object`)*
+    ): Self = StObject.set(x, "ipp-features-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setIpp-versions-supported`(value: js.Array[IPPVersion]): Self = this.set("ipp-versions-supported", value.asInstanceOf[js.Any])
+    def `setIpp-versions-supported`(value: js.Array[IPPVersion]): Self = StObject.set(x, "ipp-versions-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIpp-versions-supported`: Self = this.set("ipp-versions-supported", js.undefined)
+    def `setIpp-versions-supportedUndefined`: Self = StObject.set(x, "ipp-versions-supported", js.undefined)
     
     @scala.inline
-    def `setIppget-event-life`(value: Double): Self = this.set("ippget-event-life", value.asInstanceOf[js.Any])
+    def `setIpp-versions-supportedVarargs`(value: IPPVersion*): Self = StObject.set(x, "ipp-versions-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteIppget-event-life`: Self = this.set("ippget-event-life", js.undefined)
+    def `setIppget-event-life`(value: Double): Self = StObject.set(x, "ippget-event-life", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-account-id-default`(value: String): Self = this.set("job-account-id-default", value.asInstanceOf[js.Any])
+    def `setIppget-event-lifeUndefined`: Self = StObject.set(x, "ippget-event-life", js.undefined)
     
     @scala.inline
-    def `deleteJob-account-id-default`: Self = this.set("job-account-id-default", js.undefined)
+    def `setJob-account-id-default`(value: String): Self = StObject.set(x, "job-account-id-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-account-id-supported`(value: Boolean): Self = this.set("job-account-id-supported", value.asInstanceOf[js.Any])
+    def `setJob-account-id-defaultUndefined`: Self = StObject.set(x, "job-account-id-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-account-id-supported`: Self = this.set("job-account-id-supported", js.undefined)
+    def `setJob-account-id-supported`(value: Boolean): Self = StObject.set(x, "job-account-id-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-account-type-default`(value: JobAccountType): Self = this.set("job-account-type-default", value.asInstanceOf[js.Any])
+    def `setJob-account-id-supportedUndefined`: Self = StObject.set(x, "job-account-id-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-account-type-default`: Self = this.set("job-account-type-default", js.undefined)
+    def `setJob-account-type-default`(value: JobAccountType): Self = StObject.set(x, "job-account-type-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-account-type-supportedVarargs`(value: JobAccountType*): Self = this.set("job-account-type-supported", js.Array(value :_*))
+    def `setJob-account-type-defaultUndefined`: Self = StObject.set(x, "job-account-type-default", js.undefined)
     
     @scala.inline
-    def `setJob-account-type-supported`(value: js.Array[JobAccountType]): Self = this.set("job-account-type-supported", value.asInstanceOf[js.Any])
+    def `setJob-account-type-supported`(value: js.Array[JobAccountType]): Self = StObject.set(x, "job-account-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-account-type-supported`: Self = this.set("job-account-type-supported", js.undefined)
+    def `setJob-account-type-supportedUndefined`: Self = StObject.set(x, "job-account-type-supported", js.undefined)
     
     @scala.inline
-    def `setJob-accounting-sheets-default`(value: JobAccontingSheets): Self = this.set("job-accounting-sheets-default", value.asInstanceOf[js.Any])
+    def `setJob-account-type-supportedVarargs`(value: JobAccountType*): Self = StObject.set(x, "job-account-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-accounting-sheets-default`: Self = this.set("job-accounting-sheets-default", js.undefined)
+    def `setJob-accounting-sheets-default`(value: JobAccontingSheets): Self = StObject.set(x, "job-accounting-sheets-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-accounting-sheets-supportedVarargs`(value: String*): Self = this.set("job-accounting-sheets-supported", js.Array(value :_*))
+    def `setJob-accounting-sheets-defaultUndefined`: Self = StObject.set(x, "job-accounting-sheets-default", js.undefined)
     
     @scala.inline
-    def `setJob-accounting-sheets-supported`(value: js.Array[String]): Self = this.set("job-accounting-sheets-supported", value.asInstanceOf[js.Any])
+    def `setJob-accounting-sheets-supported`(value: js.Array[String]): Self = StObject.set(x, "job-accounting-sheets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-accounting-sheets-supported`: Self = this.set("job-accounting-sheets-supported", js.undefined)
+    def `setJob-accounting-sheets-supportedUndefined`: Self = StObject.set(x, "job-accounting-sheets-supported", js.undefined)
     
     @scala.inline
-    def `setJob-accounting-user-id-default`(value: String): Self = this.set("job-accounting-user-id-default", value.asInstanceOf[js.Any])
+    def `setJob-accounting-sheets-supportedVarargs`(value: String*): Self = StObject.set(x, "job-accounting-sheets-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-accounting-user-id-default`: Self = this.set("job-accounting-user-id-default", js.undefined)
+    def `setJob-accounting-user-id-default`(value: String): Self = StObject.set(x, "job-accounting-user-id-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-accounting-user-id-supported`(value: Boolean): Self = this.set("job-accounting-user-id-supported", value.asInstanceOf[js.Any])
+    def `setJob-accounting-user-id-defaultUndefined`: Self = StObject.set(x, "job-accounting-user-id-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-accounting-user-id-supported`: Self = this.set("job-accounting-user-id-supported", js.undefined)
+    def `setJob-accounting-user-id-supported`(value: Boolean): Self = StObject.set(x, "job-accounting-user-id-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-authorization-uri-supported`(value: Boolean): Self = this.set("job-authorization-uri-supported", value.asInstanceOf[js.Any])
+    def `setJob-accounting-user-id-supportedUndefined`: Self = StObject.set(x, "job-accounting-user-id-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-authorization-uri-supported`: Self = this.set("job-authorization-uri-supported", js.undefined)
+    def `setJob-authorization-uri-supported`(value: Boolean): Self = StObject.set(x, "job-authorization-uri-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-cancel-after-default`(value: Double): Self = this.set("job-cancel-after-default", value.asInstanceOf[js.Any])
+    def `setJob-authorization-uri-supportedUndefined`: Self = StObject.set(x, "job-authorization-uri-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-cancel-after-default`: Self = this.set("job-cancel-after-default", js.undefined)
+    def `setJob-cancel-after-default`(value: Double): Self = StObject.set(x, "job-cancel-after-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-cancel-after-supported`(value: String): Self = this.set("job-cancel-after-supported", value.asInstanceOf[js.Any])
+    def `setJob-cancel-after-defaultUndefined`: Self = StObject.set(x, "job-cancel-after-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-cancel-after-supported`: Self = this.set("job-cancel-after-supported", js.undefined)
+    def `setJob-cancel-after-supported`(value: String): Self = StObject.set(x, "job-cancel-after-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-constraints-supportedVarargs`(value: JobConstraintsSupported*): Self = this.set("job-constraints-supported", js.Array(value :_*))
+    def `setJob-cancel-after-supportedUndefined`: Self = StObject.set(x, "job-cancel-after-supported", js.undefined)
     
     @scala.inline
-    def `setJob-constraints-supported`(value: js.Array[JobConstraintsSupported]): Self = this.set("job-constraints-supported", value.asInstanceOf[js.Any])
+    def `setJob-constraints-supported`(value: js.Array[JobConstraintsSupported]): Self = StObject.set(x, "job-constraints-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-constraints-supported`: Self = this.set("job-constraints-supported", js.undefined)
+    def `setJob-constraints-supportedUndefined`: Self = StObject.set(x, "job-constraints-supported", js.undefined)
     
     @scala.inline
-    def `setJob-creation-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = this.set("job-creation-attributes-supported", js.Array(value :_*))
+    def `setJob-constraints-supportedVarargs`(value: JobConstraintsSupported*): Self = StObject.set(x, "job-constraints-supported", js.Array(value :_*))
     
     @scala.inline
     def `setJob-creation-attributes-supported`(
       value: js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
         ]
-    ): Self = this.set("job-creation-attributes-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "job-creation-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-creation-attributes-supported`: Self = this.set("job-creation-attributes-supported", js.undefined)
+    def `setJob-creation-attributes-supportedUndefined`: Self = StObject.set(x, "job-creation-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setJob-delay-output-until-default`(value: JobDelayOutputUntil): Self = this.set("job-delay-output-until-default", value.asInstanceOf[js.Any])
+    def `setJob-creation-attributes-supportedVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any)*): Self = StObject.set(x, "job-creation-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-delay-output-until-default`: Self = this.set("job-delay-output-until-default", js.undefined)
+    def `setJob-delay-output-until-default`(value: JobDelayOutputUntil): Self = StObject.set(x, "job-delay-output-until-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-delay-output-until-interval-supported`(value: String): Self = this.set("job-delay-output-until-interval-supported", value.asInstanceOf[js.Any])
+    def `setJob-delay-output-until-defaultUndefined`: Self = StObject.set(x, "job-delay-output-until-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-delay-output-until-interval-supported`: Self = this.set("job-delay-output-until-interval-supported", js.undefined)
+    def `setJob-delay-output-until-interval-supported`(value: String): Self = StObject.set(x, "job-delay-output-until-interval-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-delay-output-until-supportedVarargs`(value: JobDelayOutputUntil*): Self = this.set("job-delay-output-until-supported", js.Array(value :_*))
+    def `setJob-delay-output-until-interval-supportedUndefined`: Self = StObject.set(x, "job-delay-output-until-interval-supported", js.undefined)
     
     @scala.inline
-    def `setJob-delay-output-until-supported`(value: js.Array[JobDelayOutputUntil]): Self = this.set("job-delay-output-until-supported", value.asInstanceOf[js.Any])
+    def `setJob-delay-output-until-supported`(value: js.Array[JobDelayOutputUntil]): Self = StObject.set(x, "job-delay-output-until-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-delay-output-until-supported`: Self = this.set("job-delay-output-until-supported", js.undefined)
+    def `setJob-delay-output-until-supportedUndefined`: Self = StObject.set(x, "job-delay-output-until-supported", js.undefined)
     
     @scala.inline
-    def `setJob-delay-output-until-time-supported`(value: String): Self = this.set("job-delay-output-until-time-supported", value.asInstanceOf[js.Any])
+    def `setJob-delay-output-until-supportedVarargs`(value: JobDelayOutputUntil*): Self = StObject.set(x, "job-delay-output-until-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-delay-output-until-time-supported`: Self = this.set("job-delay-output-until-time-supported", js.undefined)
+    def `setJob-delay-output-until-time-supported`(value: String): Self = StObject.set(x, "job-delay-output-until-time-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-destination-spooling-supported`(value: String): Self = this.set("job-destination-spooling-supported", value.asInstanceOf[js.Any])
+    def `setJob-delay-output-until-time-supportedUndefined`: Self = StObject.set(x, "job-delay-output-until-time-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-destination-spooling-supported`: Self = this.set("job-destination-spooling-supported", js.undefined)
+    def `setJob-destination-spooling-supported`(value: String): Self = StObject.set(x, "job-destination-spooling-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-error-action-default`(value: JobErrorAction): Self = this.set("job-error-action-default", value.asInstanceOf[js.Any])
+    def `setJob-destination-spooling-supportedUndefined`: Self = StObject.set(x, "job-destination-spooling-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-error-action-default`: Self = this.set("job-error-action-default", js.undefined)
+    def `setJob-error-action-default`(value: JobErrorAction): Self = StObject.set(x, "job-error-action-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-error-action-supportedVarargs`(value: JobErrorAction*): Self = this.set("job-error-action-supported", js.Array(value :_*))
+    def `setJob-error-action-defaultUndefined`: Self = StObject.set(x, "job-error-action-default", js.undefined)
     
     @scala.inline
-    def `setJob-error-action-supported`(value: js.Array[JobErrorAction]): Self = this.set("job-error-action-supported", value.asInstanceOf[js.Any])
+    def `setJob-error-action-supported`(value: js.Array[JobErrorAction]): Self = StObject.set(x, "job-error-action-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-error-action-supported`: Self = this.set("job-error-action-supported", js.undefined)
+    def `setJob-error-action-supportedUndefined`: Self = StObject.set(x, "job-error-action-supported", js.undefined)
     
     @scala.inline
-    def `setJob-error-sheet-default`(value: JobErrorSheet): Self = this.set("job-error-sheet-default", value.asInstanceOf[js.Any])
+    def `setJob-error-action-supportedVarargs`(value: JobErrorAction*): Self = StObject.set(x, "job-error-action-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-error-sheet-default`: Self = this.set("job-error-sheet-default", js.undefined)
+    def `setJob-error-sheet-default`(value: JobErrorSheet): Self = StObject.set(x, "job-error-sheet-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-error-sheet-supportedVarargs`(value: String*): Self = this.set("job-error-sheet-supported", js.Array(value :_*))
+    def `setJob-error-sheet-defaultUndefined`: Self = StObject.set(x, "job-error-sheet-default", js.undefined)
     
     @scala.inline
-    def `setJob-error-sheet-supported`(value: js.Array[String]): Self = this.set("job-error-sheet-supported", value.asInstanceOf[js.Any])
+    def `setJob-error-sheet-supported`(value: js.Array[String]): Self = StObject.set(x, "job-error-sheet-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-error-sheet-supported`: Self = this.set("job-error-sheet-supported", js.undefined)
+    def `setJob-error-sheet-supportedUndefined`: Self = StObject.set(x, "job-error-sheet-supported", js.undefined)
     
     @scala.inline
-    def `setJob-history-attributes-configuredVarargs`(value: String*): Self = this.set("job-history-attributes-configured", js.Array(value :_*))
+    def `setJob-error-sheet-supportedVarargs`(value: String*): Self = StObject.set(x, "job-error-sheet-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setJob-history-attributes-configured`(value: js.Array[String]): Self = this.set("job-history-attributes-configured", value.asInstanceOf[js.Any])
+    def `setJob-history-attributes-configured`(value: js.Array[String]): Self = StObject.set(x, "job-history-attributes-configured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-history-attributes-configured`: Self = this.set("job-history-attributes-configured", js.undefined)
+    def `setJob-history-attributes-configuredUndefined`: Self = StObject.set(x, "job-history-attributes-configured", js.undefined)
     
     @scala.inline
-    def `setJob-history-attributes-supportedVarargs`(value: String*): Self = this.set("job-history-attributes-supported", js.Array(value :_*))
+    def `setJob-history-attributes-configuredVarargs`(value: String*): Self = StObject.set(x, "job-history-attributes-configured", js.Array(value :_*))
     
     @scala.inline
-    def `setJob-history-attributes-supported`(value: js.Array[String]): Self = this.set("job-history-attributes-supported", value.asInstanceOf[js.Any])
+    def `setJob-history-attributes-supported`(value: js.Array[String]): Self = StObject.set(x, "job-history-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-history-attributes-supported`: Self = this.set("job-history-attributes-supported", js.undefined)
+    def `setJob-history-attributes-supportedUndefined`: Self = StObject.set(x, "job-history-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setJob-history-interval-configured`(value: Double): Self = this.set("job-history-interval-configured", value.asInstanceOf[js.Any])
+    def `setJob-history-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "job-history-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-history-interval-configured`: Self = this.set("job-history-interval-configured", js.undefined)
+    def `setJob-history-interval-configured`(value: Double): Self = StObject.set(x, "job-history-interval-configured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-history-interval-supported`(value: String): Self = this.set("job-history-interval-supported", value.asInstanceOf[js.Any])
+    def `setJob-history-interval-configuredUndefined`: Self = StObject.set(x, "job-history-interval-configured", js.undefined)
     
     @scala.inline
-    def `deleteJob-history-interval-supported`: Self = this.set("job-history-interval-supported", js.undefined)
+    def `setJob-history-interval-supported`(value: String): Self = StObject.set(x, "job-history-interval-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-hold-until-default`(value: JobHoldUntil): Self = this.set("job-hold-until-default", value.asInstanceOf[js.Any])
+    def `setJob-history-interval-supportedUndefined`: Self = StObject.set(x, "job-history-interval-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-hold-until-default`: Self = this.set("job-hold-until-default", js.undefined)
+    def `setJob-hold-until-default`(value: JobHoldUntil): Self = StObject.set(x, "job-hold-until-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-hold-until-supportedVarargs`(value: JobHoldUntil*): Self = this.set("job-hold-until-supported", js.Array(value :_*))
+    def `setJob-hold-until-defaultUndefined`: Self = StObject.set(x, "job-hold-until-default", js.undefined)
     
     @scala.inline
-    def `setJob-hold-until-supported`(value: js.Array[JobHoldUntil]): Self = this.set("job-hold-until-supported", value.asInstanceOf[js.Any])
+    def `setJob-hold-until-supported`(value: js.Array[JobHoldUntil]): Self = StObject.set(x, "job-hold-until-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-hold-until-supported`: Self = this.set("job-hold-until-supported", js.undefined)
+    def `setJob-hold-until-supportedUndefined`: Self = StObject.set(x, "job-hold-until-supported", js.undefined)
     
     @scala.inline
-    def `setJob-hold-until-time-supported`(value: String): Self = this.set("job-hold-until-time-supported", value.asInstanceOf[js.Any])
+    def `setJob-hold-until-supportedVarargs`(value: JobHoldUntil*): Self = StObject.set(x, "job-hold-until-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-hold-until-time-supported`: Self = this.set("job-hold-until-time-supported", js.undefined)
+    def `setJob-hold-until-time-supported`(value: String): Self = StObject.set(x, "job-hold-until-time-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-ids-supported`(value: Boolean): Self = this.set("job-ids-supported", value.asInstanceOf[js.Any])
+    def `setJob-hold-until-time-supportedUndefined`: Self = StObject.set(x, "job-hold-until-time-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-ids-supported`: Self = this.set("job-ids-supported", js.undefined)
+    def `setJob-ids-supported`(value: Boolean): Self = StObject.set(x, "job-ids-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-impressions-supported`(value: String): Self = this.set("job-impressions-supported", value.asInstanceOf[js.Any])
+    def `setJob-ids-supportedUndefined`: Self = StObject.set(x, "job-ids-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-impressions-supported`: Self = this.set("job-impressions-supported", js.undefined)
+    def `setJob-impressions-supported`(value: String): Self = StObject.set(x, "job-impressions-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-k-octets-supported`(value: String): Self = this.set("job-k-octets-supported", value.asInstanceOf[js.Any])
+    def `setJob-impressions-supportedUndefined`: Self = StObject.set(x, "job-impressions-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-k-octets-supported`: Self = this.set("job-k-octets-supported", js.undefined)
+    def `setJob-k-octets-supported`(value: String): Self = StObject.set(x, "job-k-octets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-mandatory-attributes-supported`(value: Boolean): Self = this.set("job-mandatory-attributes-supported", value.asInstanceOf[js.Any])
+    def `setJob-k-octets-supportedUndefined`: Self = StObject.set(x, "job-k-octets-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-mandatory-attributes-supported`: Self = this.set("job-mandatory-attributes-supported", js.undefined)
+    def `setJob-mandatory-attributes-supported`(value: Boolean): Self = StObject.set(x, "job-mandatory-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-media-sheets-supported`(value: String): Self = this.set("job-media-sheets-supported", value.asInstanceOf[js.Any])
+    def `setJob-mandatory-attributes-supportedUndefined`: Self = StObject.set(x, "job-mandatory-attributes-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-media-sheets-supported`: Self = this.set("job-media-sheets-supported", js.undefined)
+    def `setJob-media-sheets-supported`(value: String): Self = StObject.set(x, "job-media-sheets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-message-to-operator-default`(value: String): Self = this.set("job-message-to-operator-default", value.asInstanceOf[js.Any])
+    def `setJob-media-sheets-supportedUndefined`: Self = StObject.set(x, "job-media-sheets-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-message-to-operator-default`: Self = this.set("job-message-to-operator-default", js.undefined)
+    def `setJob-message-to-operator-default`(value: String): Self = StObject.set(x, "job-message-to-operator-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-message-to-operator-supported`(value: Boolean): Self = this.set("job-message-to-operator-supported", value.asInstanceOf[js.Any])
+    def `setJob-message-to-operator-defaultUndefined`: Self = StObject.set(x, "job-message-to-operator-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-message-to-operator-supported`: Self = this.set("job-message-to-operator-supported", js.undefined)
+    def `setJob-message-to-operator-supported`(value: Boolean): Self = StObject.set(x, "job-message-to-operator-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-pages-per-set-supported`(value: Boolean): Self = this.set("job-pages-per-set-supported", value.asInstanceOf[js.Any])
+    def `setJob-message-to-operator-supportedUndefined`: Self = StObject.set(x, "job-message-to-operator-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-pages-per-set-supported`: Self = this.set("job-pages-per-set-supported", js.undefined)
+    def `setJob-pages-per-set-supported`(value: Boolean): Self = StObject.set(x, "job-pages-per-set-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-password-encryption-supportedVarargs`(value: JobPasswordEncryption*): Self = this.set("job-password-encryption-supported", js.Array(value :_*))
+    def `setJob-pages-per-set-supportedUndefined`: Self = StObject.set(x, "job-pages-per-set-supported", js.undefined)
     
     @scala.inline
-    def `setJob-password-encryption-supported`(value: js.Array[JobPasswordEncryption]): Self = this.set("job-password-encryption-supported", value.asInstanceOf[js.Any])
+    def `setJob-password-encryption-supported`(value: js.Array[JobPasswordEncryption]): Self = StObject.set(x, "job-password-encryption-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-password-encryption-supported`: Self = this.set("job-password-encryption-supported", js.undefined)
+    def `setJob-password-encryption-supportedUndefined`: Self = StObject.set(x, "job-password-encryption-supported", js.undefined)
     
     @scala.inline
-    def `setJob-password-length-supported`(value: String): Self = this.set("job-password-length-supported", value.asInstanceOf[js.Any])
+    def `setJob-password-encryption-supportedVarargs`(value: JobPasswordEncryption*): Self = StObject.set(x, "job-password-encryption-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-password-length-supported`: Self = this.set("job-password-length-supported", js.undefined)
+    def `setJob-password-length-supported`(value: String): Self = StObject.set(x, "job-password-length-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-password-repertoire-configured`(value: JobPasswordRepertoire): Self = this.set("job-password-repertoire-configured", value.asInstanceOf[js.Any])
+    def `setJob-password-length-supportedUndefined`: Self = StObject.set(x, "job-password-length-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-password-repertoire-configured`: Self = this.set("job-password-repertoire-configured", js.undefined)
+    def `setJob-password-repertoire-configured`(value: JobPasswordRepertoire): Self = StObject.set(x, "job-password-repertoire-configured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-password-repertoire-supportedVarargs`(value: JobPasswordRepertoire*): Self = this.set("job-password-repertoire-supported", js.Array(value :_*))
+    def `setJob-password-repertoire-configuredUndefined`: Self = StObject.set(x, "job-password-repertoire-configured", js.undefined)
     
     @scala.inline
-    def `setJob-password-repertoire-supported`(value: js.Array[JobPasswordRepertoire]): Self = this.set("job-password-repertoire-supported", value.asInstanceOf[js.Any])
+    def `setJob-password-repertoire-supported`(value: js.Array[JobPasswordRepertoire]): Self = StObject.set(x, "job-password-repertoire-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-password-repertoire-supported`: Self = this.set("job-password-repertoire-supported", js.undefined)
+    def `setJob-password-repertoire-supportedUndefined`: Self = StObject.set(x, "job-password-repertoire-supported", js.undefined)
     
     @scala.inline
-    def `setJob-password-supported`(value: Double): Self = this.set("job-password-supported", value.asInstanceOf[js.Any])
+    def `setJob-password-repertoire-supportedVarargs`(value: JobPasswordRepertoire*): Self = StObject.set(x, "job-password-repertoire-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-password-supported`: Self = this.set("job-password-supported", js.undefined)
+    def `setJob-password-supported`(value: Double): Self = StObject.set(x, "job-password-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-phone-number-default`(value: String): Self = this.set("job-phone-number-default", value.asInstanceOf[js.Any])
+    def `setJob-password-supportedUndefined`: Self = StObject.set(x, "job-password-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-phone-number-default`: Self = this.set("job-phone-number-default", js.undefined)
+    def `setJob-phone-number-default`(value: String): Self = StObject.set(x, "job-phone-number-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-phone-number-supported`(value: Boolean): Self = this.set("job-phone-number-supported", value.asInstanceOf[js.Any])
+    def `setJob-phone-number-defaultUndefined`: Self = StObject.set(x, "job-phone-number-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-phone-number-supported`: Self = this.set("job-phone-number-supported", js.undefined)
+    def `setJob-phone-number-supported`(value: Boolean): Self = StObject.set(x, "job-phone-number-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-presets-supportedVarargs`(value: JobPresetsSupported*): Self = this.set("job-presets-supported", js.Array(value :_*))
+    def `setJob-phone-number-supportedUndefined`: Self = StObject.set(x, "job-phone-number-supported", js.undefined)
     
     @scala.inline
-    def `setJob-presets-supported`(value: js.Array[JobPresetsSupported]): Self = this.set("job-presets-supported", value.asInstanceOf[js.Any])
+    def `setJob-presets-supported`(value: js.Array[JobPresetsSupported]): Self = StObject.set(x, "job-presets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-presets-supported`: Self = this.set("job-presets-supported", js.undefined)
+    def `setJob-presets-supportedUndefined`: Self = StObject.set(x, "job-presets-supported", js.undefined)
     
     @scala.inline
-    def `setJob-priority-default`(value: Double): Self = this.set("job-priority-default", value.asInstanceOf[js.Any])
+    def `setJob-presets-supportedVarargs`(value: JobPresetsSupported*): Self = StObject.set(x, "job-presets-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-priority-default`: Self = this.set("job-priority-default", js.undefined)
+    def `setJob-priority-default`(value: Double): Self = StObject.set(x, "job-priority-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-priority-supported`(value: Double): Self = this.set("job-priority-supported", value.asInstanceOf[js.Any])
+    def `setJob-priority-defaultUndefined`: Self = StObject.set(x, "job-priority-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-priority-supported`: Self = this.set("job-priority-supported", js.undefined)
+    def `setJob-priority-supported`(value: Double): Self = StObject.set(x, "job-priority-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-privacy-attributesVarargs`(value: String*): Self = this.set("job-privacy-attributes", js.Array(value :_*))
+    def `setJob-priority-supportedUndefined`: Self = StObject.set(x, "job-priority-supported", js.undefined)
     
     @scala.inline
-    def `setJob-privacy-attributes`(value: js.Array[String]): Self = this.set("job-privacy-attributes", value.asInstanceOf[js.Any])
+    def `setJob-privacy-attributes`(value: js.Array[String]): Self = StObject.set(x, "job-privacy-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-privacy-attributes`: Self = this.set("job-privacy-attributes", js.undefined)
+    def `setJob-privacy-attributesUndefined`: Self = StObject.set(x, "job-privacy-attributes", js.undefined)
     
     @scala.inline
-    def `setJob-privacy-scope`(value: all | default | none | owner): Self = this.set("job-privacy-scope", value.asInstanceOf[js.Any])
+    def `setJob-privacy-attributesVarargs`(value: String*): Self = StObject.set(x, "job-privacy-attributes", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-privacy-scope`: Self = this.set("job-privacy-scope", js.undefined)
+    def `setJob-privacy-scope`(value: all | default | none | owner): Self = StObject.set(x, "job-privacy-scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-recipient-name-default`(value: String): Self = this.set("job-recipient-name-default", value.asInstanceOf[js.Any])
+    def `setJob-privacy-scopeUndefined`: Self = StObject.set(x, "job-privacy-scope", js.undefined)
     
     @scala.inline
-    def `deleteJob-recipient-name-default`: Self = this.set("job-recipient-name-default", js.undefined)
+    def `setJob-recipient-name-default`(value: String): Self = StObject.set(x, "job-recipient-name-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-recipient-name-supported`(value: Boolean): Self = this.set("job-recipient-name-supported", value.asInstanceOf[js.Any])
+    def `setJob-recipient-name-defaultUndefined`: Self = StObject.set(x, "job-recipient-name-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-recipient-name-supported`: Self = this.set("job-recipient-name-supported", js.undefined)
+    def `setJob-recipient-name-supported`(value: Boolean): Self = StObject.set(x, "job-recipient-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-resolvers-supportedVarargs`(value: JobResolversSupported*): Self = this.set("job-resolvers-supported", js.Array(value :_*))
+    def `setJob-recipient-name-supportedUndefined`: Self = StObject.set(x, "job-recipient-name-supported", js.undefined)
     
     @scala.inline
-    def `setJob-resolvers-supported`(value: js.Array[JobResolversSupported]): Self = this.set("job-resolvers-supported", value.asInstanceOf[js.Any])
+    def `setJob-resolvers-supported`(value: js.Array[JobResolversSupported]): Self = StObject.set(x, "job-resolvers-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-resolvers-supported`: Self = this.set("job-resolvers-supported", js.undefined)
+    def `setJob-resolvers-supportedUndefined`: Self = StObject.set(x, "job-resolvers-supported", js.undefined)
     
     @scala.inline
-    def `setJob-retain-until-default`(value: JobRetainUntil): Self = this.set("job-retain-until-default", value.asInstanceOf[js.Any])
+    def `setJob-resolvers-supportedVarargs`(value: JobResolversSupported*): Self = StObject.set(x, "job-resolvers-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-retain-until-default`: Self = this.set("job-retain-until-default", js.undefined)
+    def `setJob-retain-until-default`(value: JobRetainUntil): Self = StObject.set(x, "job-retain-until-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-retain-until-interval-supported`(value: String): Self = this.set("job-retain-until-interval-supported", value.asInstanceOf[js.Any])
+    def `setJob-retain-until-defaultUndefined`: Self = StObject.set(x, "job-retain-until-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-retain-until-interval-supported`: Self = this.set("job-retain-until-interval-supported", js.undefined)
+    def `setJob-retain-until-interval-supported`(value: String): Self = StObject.set(x, "job-retain-until-interval-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-retain-until-supportedVarargs`(value: JobRetainUntil*): Self = this.set("job-retain-until-supported", js.Array(value :_*))
+    def `setJob-retain-until-interval-supportedUndefined`: Self = StObject.set(x, "job-retain-until-interval-supported", js.undefined)
     
     @scala.inline
-    def `setJob-retain-until-supported`(value: js.Array[JobRetainUntil]): Self = this.set("job-retain-until-supported", value.asInstanceOf[js.Any])
+    def `setJob-retain-until-supported`(value: js.Array[JobRetainUntil]): Self = StObject.set(x, "job-retain-until-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-retain-until-supported`: Self = this.set("job-retain-until-supported", js.undefined)
+    def `setJob-retain-until-supportedUndefined`: Self = StObject.set(x, "job-retain-until-supported", js.undefined)
     
     @scala.inline
-    def `setJob-retain-until-time-supported`(value: String): Self = this.set("job-retain-until-time-supported", value.asInstanceOf[js.Any])
+    def `setJob-retain-until-supportedVarargs`(value: JobRetainUntil*): Self = StObject.set(x, "job-retain-until-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-retain-until-time-supported`: Self = this.set("job-retain-until-time-supported", js.undefined)
+    def `setJob-retain-until-time-supported`(value: String): Self = StObject.set(x, "job-retain-until-time-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-sheet-message-default`(value: String): Self = this.set("job-sheet-message-default", value.asInstanceOf[js.Any])
+    def `setJob-retain-until-time-supportedUndefined`: Self = StObject.set(x, "job-retain-until-time-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-sheet-message-default`: Self = this.set("job-sheet-message-default", js.undefined)
+    def `setJob-sheet-message-default`(value: String): Self = StObject.set(x, "job-sheet-message-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-sheet-message-supported`(value: Boolean): Self = this.set("job-sheet-message-supported", value.asInstanceOf[js.Any])
+    def `setJob-sheet-message-defaultUndefined`: Self = StObject.set(x, "job-sheet-message-default", js.undefined)
     
     @scala.inline
-    def `deleteJob-sheet-message-supported`: Self = this.set("job-sheet-message-supported", js.undefined)
+    def `setJob-sheet-message-supported`(value: Boolean): Self = StObject.set(x, "job-sheet-message-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-sheets-col-default`(value: JobSheetsInterface): Self = this.set("job-sheets-col-default", value.asInstanceOf[js.Any])
+    def `setJob-sheet-message-supportedUndefined`: Self = StObject.set(x, "job-sheet-message-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-sheets-col-default`: Self = this.set("job-sheets-col-default", js.undefined)
+    def `setJob-sheets-col-default`(value: JobSheetsInterface): Self = StObject.set(x, "job-sheets-col-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-sheets-col-supportedVarargs`(value: String*): Self = this.set("job-sheets-col-supported", js.Array(value :_*))
+    def `setJob-sheets-col-defaultUndefined`: Self = StObject.set(x, "job-sheets-col-default", js.undefined)
     
     @scala.inline
-    def `setJob-sheets-col-supported`(value: js.Array[String]): Self = this.set("job-sheets-col-supported", value.asInstanceOf[js.Any])
+    def `setJob-sheets-col-supported`(value: js.Array[String]): Self = StObject.set(x, "job-sheets-col-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-sheets-col-supported`: Self = this.set("job-sheets-col-supported", js.undefined)
+    def `setJob-sheets-col-supportedUndefined`: Self = StObject.set(x, "job-sheets-col-supported", js.undefined)
     
     @scala.inline
-    def `setJob-sheets-default`(value: JobSheets): Self = this.set("job-sheets-default", value.asInstanceOf[js.Any])
+    def `setJob-sheets-col-supportedVarargs`(value: String*): Self = StObject.set(x, "job-sheets-col-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-sheets-default`: Self = this.set("job-sheets-default", js.undefined)
+    def `setJob-sheets-default`(value: JobSheets): Self = StObject.set(x, "job-sheets-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-sheets-supportedVarargs`(value: JobSheets*): Self = this.set("job-sheets-supported", js.Array(value :_*))
+    def `setJob-sheets-defaultUndefined`: Self = StObject.set(x, "job-sheets-default", js.undefined)
     
     @scala.inline
-    def `setJob-sheets-supported`(value: js.Array[JobSheets]): Self = this.set("job-sheets-supported", value.asInstanceOf[js.Any])
+    def `setJob-sheets-supported`(value: js.Array[JobSheets]): Self = StObject.set(x, "job-sheets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-sheets-supported`: Self = this.set("job-sheets-supported", js.undefined)
+    def `setJob-sheets-supportedUndefined`: Self = StObject.set(x, "job-sheets-supported", js.undefined)
     
     @scala.inline
-    def `setJob-spooling-supported`(value: automatic | spool | stream): Self = this.set("job-spooling-supported", value.asInstanceOf[js.Any])
+    def `setJob-sheets-supportedVarargs`(value: JobSheets*): Self = StObject.set(x, "job-sheets-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJob-spooling-supported`: Self = this.set("job-spooling-supported", js.undefined)
+    def `setJob-spooling-supported`(value: automatic | spool | stream): Self = StObject.set(x, "job-spooling-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-triggers-supported`(value: JobTriggersSupported): Self = this.set("job-triggers-supported", value.asInstanceOf[js.Any])
+    def `setJob-spooling-supportedUndefined`: Self = StObject.set(x, "job-spooling-supported", js.undefined)
     
     @scala.inline
-    def `deleteJob-triggers-supported`: Self = this.set("job-triggers-supported", js.undefined)
+    def `setJob-triggers-supported`(value: JobTriggersSupported): Self = StObject.set(x, "job-triggers-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJpeg-features-supportedVarargs`(value: (arithmetic | cmyk | deep | hierarchical | icc | lossless | none | progressive)*): Self = this.set("jpeg-features-supported", js.Array(value :_*))
+    def `setJob-triggers-supportedUndefined`: Self = StObject.set(x, "job-triggers-supported", js.undefined)
     
     @scala.inline
-    def `setJpeg-features-supported`(value: js.Array[arithmetic | cmyk | deep | hierarchical | icc | lossless | none | progressive]): Self = this.set("jpeg-features-supported", value.asInstanceOf[js.Any])
+    def `setJpeg-features-supported`(value: js.Array[arithmetic | cmyk | deep | hierarchical | icc | lossless | none | progressive]): Self = StObject.set(x, "jpeg-features-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJpeg-features-supported`: Self = this.set("jpeg-features-supported", js.undefined)
+    def `setJpeg-features-supportedUndefined`: Self = StObject.set(x, "jpeg-features-supported", js.undefined)
     
     @scala.inline
-    def `setJpeg-k-octets-supported`(value: String): Self = this.set("jpeg-k-octets-supported", value.asInstanceOf[js.Any])
+    def `setJpeg-features-supportedVarargs`(value: (arithmetic | cmyk | deep | hierarchical | icc | lossless | none | progressive)*): Self = StObject.set(x, "jpeg-features-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteJpeg-k-octets-supported`: Self = this.set("jpeg-k-octets-supported", js.undefined)
+    def `setJpeg-k-octets-supported`(value: String): Self = StObject.set(x, "jpeg-k-octets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJpeg-x-dimension-supported`(value: String): Self = this.set("jpeg-x-dimension-supported", value.asInstanceOf[js.Any])
+    def `setJpeg-k-octets-supportedUndefined`: Self = StObject.set(x, "jpeg-k-octets-supported", js.undefined)
     
     @scala.inline
-    def `deleteJpeg-x-dimension-supported`: Self = this.set("jpeg-x-dimension-supported", js.undefined)
+    def `setJpeg-x-dimension-supported`(value: String): Self = StObject.set(x, "jpeg-x-dimension-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJpeg-y-dimension-supported`(value: String): Self = this.set("jpeg-y-dimension-supported", value.asInstanceOf[js.Any])
+    def `setJpeg-x-dimension-supportedUndefined`: Self = StObject.set(x, "jpeg-x-dimension-supported", js.undefined)
     
     @scala.inline
-    def `deleteJpeg-y-dimension-supported`: Self = this.set("jpeg-y-dimension-supported", js.undefined)
+    def `setJpeg-y-dimension-supported`(value: String): Self = StObject.set(x, "jpeg-y-dimension-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLaminating-sides-supportedVarargs`(value: FinishingSides*): Self = this.set("laminating-sides-supported", js.Array(value :_*))
+    def `setJpeg-y-dimension-supportedUndefined`: Self = StObject.set(x, "jpeg-y-dimension-supported", js.undefined)
     
     @scala.inline
-    def `setLaminating-sides-supported`(value: js.Array[FinishingSides]): Self = this.set("laminating-sides-supported", value.asInstanceOf[js.Any])
+    def `setLaminating-sides-supported`(value: js.Array[FinishingSides]): Self = StObject.set(x, "laminating-sides-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteLaminating-sides-supported`: Self = this.set("laminating-sides-supported", js.undefined)
+    def `setLaminating-sides-supportedUndefined`: Self = StObject.set(x, "laminating-sides-supported", js.undefined)
     
     @scala.inline
-    def `setLaminating-type-supportedVarargs`(value: LaminatingType*): Self = this.set("laminating-type-supported", js.Array(value :_*))
+    def `setLaminating-sides-supportedVarargs`(value: FinishingSides*): Self = StObject.set(x, "laminating-sides-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setLaminating-type-supported`(value: js.Array[LaminatingType]): Self = this.set("laminating-type-supported", value.asInstanceOf[js.Any])
+    def `setLaminating-type-supported`(value: js.Array[LaminatingType]): Self = StObject.set(x, "laminating-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteLaminating-type-supported`: Self = this.set("laminating-type-supported", js.undefined)
+    def `setLaminating-type-supportedUndefined`: Self = StObject.set(x, "laminating-type-supported", js.undefined)
     
     @scala.inline
-    def `setLogo-uri-formats-supportedVarargs`(value: MimeMediaType*): Self = this.set("logo-uri-formats-supported", js.Array(value :_*))
+    def `setLaminating-type-supportedVarargs`(value: LaminatingType*): Self = StObject.set(x, "laminating-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setLogo-uri-formats-supported`(value: js.Array[MimeMediaType]): Self = this.set("logo-uri-formats-supported", value.asInstanceOf[js.Any])
+    def `setLogo-uri-formats-supported`(value: js.Array[MimeMediaType]): Self = StObject.set(x, "logo-uri-formats-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteLogo-uri-formats-supported`: Self = this.set("logo-uri-formats-supported", js.undefined)
+    def `setLogo-uri-formats-supportedUndefined`: Self = StObject.set(x, "logo-uri-formats-supported", js.undefined)
     
     @scala.inline
-    def `setLogo-uri-schemes-supportedVarargs`(value: UriSchemes*): Self = this.set("logo-uri-schemes-supported", js.Array(value :_*))
+    def `setLogo-uri-formats-supportedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "logo-uri-formats-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setLogo-uri-schemes-supported`(value: js.Array[UriSchemes]): Self = this.set("logo-uri-schemes-supported", value.asInstanceOf[js.Any])
+    def `setLogo-uri-schemes-supported`(value: js.Array[UriSchemes]): Self = StObject.set(x, "logo-uri-schemes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteLogo-uri-schemes-supported`: Self = this.set("logo-uri-schemes-supported", js.undefined)
+    def `setLogo-uri-schemes-supportedUndefined`: Self = StObject.set(x, "logo-uri-schemes-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-amount-units-supportedVarargs`(value: MaterialAmountUnits*): Self = this.set("material-amount-units-supported", js.Array(value :_*))
+    def `setLogo-uri-schemes-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "logo-uri-schemes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-amount-units-supported`(value: js.Array[MaterialAmountUnits]): Self = this.set("material-amount-units-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-amount-units-supported`(value: js.Array[MaterialAmountUnits]): Self = StObject.set(x, "material-amount-units-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-amount-units-supported`: Self = this.set("material-amount-units-supported", js.undefined)
+    def `setMaterial-amount-units-supportedUndefined`: Self = StObject.set(x, "material-amount-units-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-diameter-supportedVarargs`(value: (Double | String)*): Self = this.set("material-diameter-supported", js.Array(value :_*))
+    def `setMaterial-amount-units-supportedVarargs`(value: MaterialAmountUnits*): Self = StObject.set(x, "material-amount-units-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-diameter-supported`(value: js.Array[Double | String]): Self = this.set("material-diameter-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-diameter-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "material-diameter-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-diameter-supported`: Self = this.set("material-diameter-supported", js.undefined)
+    def `setMaterial-diameter-supportedUndefined`: Self = StObject.set(x, "material-diameter-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-nozzle-diameter-supportedVarargs`(value: (Double | String)*): Self = this.set("material-nozzle-diameter-supported", js.Array(value :_*))
+    def `setMaterial-diameter-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "material-diameter-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-nozzle-diameter-supported`(value: js.Array[Double | String]): Self = this.set("material-nozzle-diameter-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-nozzle-diameter-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "material-nozzle-diameter-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-nozzle-diameter-supported`: Self = this.set("material-nozzle-diameter-supported", js.undefined)
+    def `setMaterial-nozzle-diameter-supportedUndefined`: Self = StObject.set(x, "material-nozzle-diameter-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-purpose-supportedVarargs`(value: MaterialPurpose*): Self = this.set("material-purpose-supported", js.Array(value :_*))
+    def `setMaterial-nozzle-diameter-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "material-nozzle-diameter-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-purpose-supported`(value: js.Array[MaterialPurpose]): Self = this.set("material-purpose-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-purpose-supported`(value: js.Array[MaterialPurpose]): Self = StObject.set(x, "material-purpose-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-purpose-supported`: Self = this.set("material-purpose-supported", js.undefined)
+    def `setMaterial-purpose-supportedUndefined`: Self = StObject.set(x, "material-purpose-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-rate-supportedVarargs`(value: (Double | String)*): Self = this.set("material-rate-supported", js.Array(value :_*))
+    def `setMaterial-purpose-supportedVarargs`(value: MaterialPurpose*): Self = StObject.set(x, "material-purpose-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-rate-supported`(value: js.Array[Double | String]): Self = this.set("material-rate-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-rate-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "material-rate-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-rate-supported`: Self = this.set("material-rate-supported", js.undefined)
+    def `setMaterial-rate-supportedUndefined`: Self = StObject.set(x, "material-rate-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-rate-units-supportedVarargs`(value: MaterialRateUnits*): Self = this.set("material-rate-units-supported", js.Array(value :_*))
+    def `setMaterial-rate-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "material-rate-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-rate-units-supported`(value: js.Array[MaterialRateUnits]): Self = this.set("material-rate-units-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-rate-units-supported`(value: js.Array[MaterialRateUnits]): Self = StObject.set(x, "material-rate-units-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-rate-units-supported`: Self = this.set("material-rate-units-supported", js.undefined)
+    def `setMaterial-rate-units-supportedUndefined`: Self = StObject.set(x, "material-rate-units-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-shell-thickness-supportedVarargs`(value: (Double | String)*): Self = this.set("material-shell-thickness-supported", js.Array(value :_*))
+    def `setMaterial-rate-units-supportedVarargs`(value: MaterialRateUnits*): Self = StObject.set(x, "material-rate-units-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-shell-thickness-supported`(value: js.Array[Double | String]): Self = this.set("material-shell-thickness-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-shell-thickness-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "material-shell-thickness-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-shell-thickness-supported`: Self = this.set("material-shell-thickness-supported", js.undefined)
+    def `setMaterial-shell-thickness-supportedUndefined`: Self = StObject.set(x, "material-shell-thickness-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-temperature-supportedVarargs`(value: (Double | String)*): Self = this.set("material-temperature-supported", js.Array(value :_*))
+    def `setMaterial-shell-thickness-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "material-shell-thickness-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-temperature-supported`(value: js.Array[Double | String]): Self = this.set("material-temperature-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-temperature-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "material-temperature-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-temperature-supported`: Self = this.set("material-temperature-supported", js.undefined)
+    def `setMaterial-temperature-supportedUndefined`: Self = StObject.set(x, "material-temperature-supported", js.undefined)
     
     @scala.inline
-    def `setMaterial-type-supportedVarargs`(value: MaterialType*): Self = this.set("material-type-supported", js.Array(value :_*))
+    def `setMaterial-temperature-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "material-temperature-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterial-type-supported`(value: js.Array[MaterialType]): Self = this.set("material-type-supported", value.asInstanceOf[js.Any])
+    def `setMaterial-type-supported`(value: js.Array[MaterialType]): Self = StObject.set(x, "material-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterial-type-supported`: Self = this.set("material-type-supported", js.undefined)
+    def `setMaterial-type-supportedUndefined`: Self = StObject.set(x, "material-type-supported", js.undefined)
     
     @scala.inline
-    def `setMaterials-col-databaseVarargs`(value: Materials*): Self = this.set("materials-col-database", js.Array(value :_*))
+    def `setMaterial-type-supportedVarargs`(value: MaterialType*): Self = StObject.set(x, "material-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterials-col-database`(value: js.Array[Materials]): Self = this.set("materials-col-database", value.asInstanceOf[js.Any])
+    def `setMaterials-col-database`(value: js.Array[Materials]): Self = StObject.set(x, "materials-col-database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterials-col-database`: Self = this.set("materials-col-database", js.undefined)
+    def `setMaterials-col-databaseUndefined`: Self = StObject.set(x, "materials-col-database", js.undefined)
     
     @scala.inline
-    def `setMaterials-col-defaultVarargs`(value: Materials*): Self = this.set("materials-col-default", js.Array(value :_*))
+    def `setMaterials-col-databaseVarargs`(value: Materials*): Self = StObject.set(x, "materials-col-database", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterials-col-default`(value: js.Array[Materials]): Self = this.set("materials-col-default", value.asInstanceOf[js.Any])
+    def `setMaterials-col-default`(value: js.Array[Materials]): Self = StObject.set(x, "materials-col-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterials-col-default`: Self = this.set("materials-col-default", js.undefined)
+    def `setMaterials-col-defaultUndefined`: Self = StObject.set(x, "materials-col-default", js.undefined)
     
     @scala.inline
-    def `setMaterials-col-readyVarargs`(value: Materials*): Self = this.set("materials-col-ready", js.Array(value :_*))
+    def `setMaterials-col-defaultVarargs`(value: Materials*): Self = StObject.set(x, "materials-col-default", js.Array(value :_*))
     
     @scala.inline
-    def `setMaterials-col-ready`(value: js.Array[Materials]): Self = this.set("materials-col-ready", value.asInstanceOf[js.Any])
+    def `setMaterials-col-ready`(value: js.Array[Materials]): Self = StObject.set(x, "materials-col-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterials-col-ready`: Self = this.set("materials-col-ready", js.undefined)
+    def `setMaterials-col-readyUndefined`: Self = StObject.set(x, "materials-col-ready", js.undefined)
     
     @scala.inline
-    def `setMaterials-col-supportedVarargs`(
-      value: (`material-amount` | `material-amount-units` | `material-color` | `material-diameter` | `material-diameter-tolerance` | `material-fill-density` | `material-key` | `material-name` | `material-nozzle-diameter` | `material-purpose` | `material-rate` | `material-rate-units` | `material-retraction` | `material-shell-thickness` | `material-temperature` | `material-type`)*
-    ): Self = this.set("materials-col-supported", js.Array(value :_*))
+    def `setMaterials-col-readyVarargs`(value: Materials*): Self = StObject.set(x, "materials-col-ready", js.Array(value :_*))
     
     @scala.inline
     def `setMaterials-col-supported`(
       value: js.Array[
           `material-amount` | `material-amount-units` | `material-color` | `material-diameter` | `material-diameter-tolerance` | `material-fill-density` | `material-key` | `material-name` | `material-nozzle-diameter` | `material-purpose` | `material-rate` | `material-rate-units` | `material-retraction` | `material-shell-thickness` | `material-temperature` | `material-type`
         ]
-    ): Self = this.set("materials-col-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "materials-col-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMaterials-col-supported`: Self = this.set("materials-col-supported", js.undefined)
+    def `setMaterials-col-supportedUndefined`: Self = StObject.set(x, "materials-col-supported", js.undefined)
     
     @scala.inline
-    def `setMax-materials-col-supported`(value: Double): Self = this.set("max-materials-col-supported", value.asInstanceOf[js.Any])
+    def `setMaterials-col-supportedVarargs`(
+      value: (`material-amount` | `material-amount-units` | `material-color` | `material-diameter` | `material-diameter-tolerance` | `material-fill-density` | `material-key` | `material-name` | `material-nozzle-diameter` | `material-purpose` | `material-rate` | `material-rate-units` | `material-retraction` | `material-shell-thickness` | `material-temperature` | `material-type`)*
+    ): Self = StObject.set(x, "materials-col-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMax-materials-col-supported`: Self = this.set("max-materials-col-supported", js.undefined)
+    def `setMax-materials-col-supported`(value: Double): Self = StObject.set(x, "max-materials-col-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-page-ranges-supported`(value: Double): Self = this.set("max-page-ranges-supported", value.asInstanceOf[js.Any])
+    def `setMax-materials-col-supportedUndefined`: Self = StObject.set(x, "max-materials-col-supported", js.undefined)
     
     @scala.inline
-    def `deleteMax-page-ranges-supported`: Self = this.set("max-page-ranges-supported", js.undefined)
+    def `setMax-page-ranges-supported`(value: Double): Self = StObject.set(x, "max-page-ranges-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-save-info-supported`(value: Double): Self = this.set("max-save-info-supported", value.asInstanceOf[js.Any])
+    def `setMax-page-ranges-supportedUndefined`: Self = StObject.set(x, "max-page-ranges-supported", js.undefined)
     
     @scala.inline
-    def `deleteMax-save-info-supported`: Self = this.set("max-save-info-supported", js.undefined)
+    def `setMax-save-info-supported`(value: Double): Self = StObject.set(x, "max-save-info-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-stitching-locations-supported`(value: Double): Self = this.set("max-stitching-locations-supported", value.asInstanceOf[js.Any])
+    def `setMax-save-info-supportedUndefined`: Self = StObject.set(x, "max-save-info-supported", js.undefined)
     
     @scala.inline
-    def `deleteMax-stitching-locations-supported`: Self = this.set("max-stitching-locations-supported", js.undefined)
+    def `setMax-stitching-locations-supported`(value: Double): Self = StObject.set(x, "max-stitching-locations-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-back-coating-supportedVarargs`(value: MediaCoating*): Self = this.set("media-back-coating-supported", js.Array(value :_*))
+    def `setMax-stitching-locations-supportedUndefined`: Self = StObject.set(x, "max-stitching-locations-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-back-coating-supported`(value: js.Array[MediaCoating]): Self = this.set("media-back-coating-supported", value.asInstanceOf[js.Any])
+    def `setMedia-back-coating-supported`(value: js.Array[MediaCoating]): Self = StObject.set(x, "media-back-coating-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-back-coating-supported`: Self = this.set("media-back-coating-supported", js.undefined)
+    def `setMedia-back-coating-supportedUndefined`: Self = StObject.set(x, "media-back-coating-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-bottom-margin-supportedVarargs`(value: Double*): Self = this.set("media-bottom-margin-supported", js.Array(value :_*))
+    def `setMedia-back-coating-supportedVarargs`(value: MediaCoating*): Self = StObject.set(x, "media-back-coating-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-bottom-margin-supported`(value: js.Array[Double]): Self = this.set("media-bottom-margin-supported", value.asInstanceOf[js.Any])
+    def `setMedia-bottom-margin-supported`(value: js.Array[Double]): Self = StObject.set(x, "media-bottom-margin-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-bottom-margin-supported`: Self = this.set("media-bottom-margin-supported", js.undefined)
+    def `setMedia-bottom-margin-supportedUndefined`: Self = StObject.set(x, "media-bottom-margin-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-col-databaseVarargs`(value: MediaInterface*): Self = this.set("media-col-database", js.Array(value :_*))
+    def `setMedia-bottom-margin-supportedVarargs`(value: Double*): Self = StObject.set(x, "media-bottom-margin-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-col-database`(value: js.Array[MediaInterface]): Self = this.set("media-col-database", value.asInstanceOf[js.Any])
+    def `setMedia-col-database`(value: js.Array[MediaInterface]): Self = StObject.set(x, "media-col-database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-col-database`: Self = this.set("media-col-database", js.undefined)
+    def `setMedia-col-databaseUndefined`: Self = StObject.set(x, "media-col-database", js.undefined)
     
     @scala.inline
-    def `setMedia-col-default`(value: MediaInterface): Self = this.set("media-col-default", value.asInstanceOf[js.Any])
+    def `setMedia-col-databaseVarargs`(value: MediaInterface*): Self = StObject.set(x, "media-col-database", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMedia-col-default`: Self = this.set("media-col-default", js.undefined)
+    def `setMedia-col-default`(value: MediaInterface): Self = StObject.set(x, "media-col-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-col-readyVarargs`(value: MediaInterface*): Self = this.set("media-col-ready", js.Array(value :_*))
+    def `setMedia-col-defaultUndefined`: Self = StObject.set(x, "media-col-default", js.undefined)
     
     @scala.inline
-    def `setMedia-col-ready`(value: js.Array[MediaInterface]): Self = this.set("media-col-ready", value.asInstanceOf[js.Any])
+    def `setMedia-col-ready`(value: js.Array[MediaInterface]): Self = StObject.set(x, "media-col-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-col-ready`: Self = this.set("media-col-ready", js.undefined)
+    def `setMedia-col-readyUndefined`: Self = StObject.set(x, "media-col-ready", js.undefined)
     
     @scala.inline
-    def `setMedia-col-supportedVarargs`(value: MediaColSupported*): Self = this.set("media-col-supported", js.Array(value :_*))
+    def `setMedia-col-readyVarargs`(value: MediaInterface*): Self = StObject.set(x, "media-col-ready", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-col-supported`(value: js.Array[MediaColSupported]): Self = this.set("media-col-supported", value.asInstanceOf[js.Any])
+    def `setMedia-col-supported`(value: js.Array[MediaColSupported]): Self = StObject.set(x, "media-col-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-col-supported`: Self = this.set("media-col-supported", js.undefined)
+    def `setMedia-col-supportedUndefined`: Self = StObject.set(x, "media-col-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-color-supportedVarargs`(value: MediaColor*): Self = this.set("media-color-supported", js.Array(value :_*))
+    def `setMedia-col-supportedVarargs`(value: MediaColSupported*): Self = StObject.set(x, "media-col-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-color-supported`(value: js.Array[MediaColor]): Self = this.set("media-color-supported", value.asInstanceOf[js.Any])
+    def `setMedia-color-supported`(value: js.Array[MediaColor]): Self = StObject.set(x, "media-color-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-color-supported`: Self = this.set("media-color-supported", js.undefined)
+    def `setMedia-color-supportedUndefined`: Self = StObject.set(x, "media-color-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-default`(value: Media): Self = this.set("media-default", value.asInstanceOf[js.Any])
+    def `setMedia-color-supportedVarargs`(value: MediaColor*): Self = StObject.set(x, "media-color-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMedia-default`: Self = this.set("media-default", js.undefined)
+    def `setMedia-default`(value: Media): Self = StObject.set(x, "media-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-front-coating-supportedVarargs`(value: MediaCoating*): Self = this.set("media-front-coating-supported", js.Array(value :_*))
+    def `setMedia-defaultUndefined`: Self = StObject.set(x, "media-default", js.undefined)
     
     @scala.inline
-    def `setMedia-front-coating-supported`(value: js.Array[MediaCoating]): Self = this.set("media-front-coating-supported", value.asInstanceOf[js.Any])
+    def `setMedia-front-coating-supported`(value: js.Array[MediaCoating]): Self = StObject.set(x, "media-front-coating-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-front-coating-supported`: Self = this.set("media-front-coating-supported", js.undefined)
+    def `setMedia-front-coating-supportedUndefined`: Self = StObject.set(x, "media-front-coating-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-grain-supportedVarargs`(value: MediaGrain*): Self = this.set("media-grain-supported", js.Array(value :_*))
+    def `setMedia-front-coating-supportedVarargs`(value: MediaCoating*): Self = StObject.set(x, "media-front-coating-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-grain-supported`(value: js.Array[MediaGrain]): Self = this.set("media-grain-supported", value.asInstanceOf[js.Any])
+    def `setMedia-grain-supported`(value: js.Array[MediaGrain]): Self = StObject.set(x, "media-grain-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-grain-supported`: Self = this.set("media-grain-supported", js.undefined)
+    def `setMedia-grain-supportedUndefined`: Self = StObject.set(x, "media-grain-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-hole-count-supportedVarargs`(value: String*): Self = this.set("media-hole-count-supported", js.Array(value :_*))
+    def `setMedia-grain-supportedVarargs`(value: MediaGrain*): Self = StObject.set(x, "media-grain-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-hole-count-supported`(value: js.Array[String]): Self = this.set("media-hole-count-supported", value.asInstanceOf[js.Any])
+    def `setMedia-hole-count-supported`(value: js.Array[String]): Self = StObject.set(x, "media-hole-count-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-hole-count-supported`: Self = this.set("media-hole-count-supported", js.undefined)
+    def `setMedia-hole-count-supportedUndefined`: Self = StObject.set(x, "media-hole-count-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-key-supportedVarargs`(value: (MediaSizeName | MediaName)*): Self = this.set("media-key-supported", js.Array(value :_*))
+    def `setMedia-hole-count-supportedVarargs`(value: String*): Self = StObject.set(x, "media-hole-count-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-key-supported`(value: js.Array[MediaSizeName | MediaName]): Self = this.set("media-key-supported", value.asInstanceOf[js.Any])
+    def `setMedia-key-supported`(value: js.Array[MediaSizeName | MediaName]): Self = StObject.set(x, "media-key-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-key-supported`: Self = this.set("media-key-supported", js.undefined)
+    def `setMedia-key-supportedUndefined`: Self = StObject.set(x, "media-key-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-left-margin-supportedVarargs`(value: Double*): Self = this.set("media-left-margin-supported", js.Array(value :_*))
+    def `setMedia-key-supportedVarargs`(value: (MediaSizeName | MediaName)*): Self = StObject.set(x, "media-key-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-left-margin-supported`(value: js.Array[Double]): Self = this.set("media-left-margin-supported", value.asInstanceOf[js.Any])
+    def `setMedia-left-margin-supported`(value: js.Array[Double]): Self = StObject.set(x, "media-left-margin-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-left-margin-supported`: Self = this.set("media-left-margin-supported", js.undefined)
+    def `setMedia-left-margin-supportedUndefined`: Self = StObject.set(x, "media-left-margin-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-order-count-supportedVarargs`(value: String*): Self = this.set("media-order-count-supported", js.Array(value :_*))
+    def `setMedia-left-margin-supportedVarargs`(value: Double*): Self = StObject.set(x, "media-left-margin-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-order-count-supported`(value: js.Array[String]): Self = this.set("media-order-count-supported", value.asInstanceOf[js.Any])
+    def `setMedia-order-count-supported`(value: js.Array[String]): Self = StObject.set(x, "media-order-count-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-order-count-supported`: Self = this.set("media-order-count-supported", js.undefined)
+    def `setMedia-order-count-supportedUndefined`: Self = StObject.set(x, "media-order-count-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-pre-printed-supportedVarargs`(value: MediaPrePrinted*): Self = this.set("media-pre-printed-supported", js.Array(value :_*))
+    def `setMedia-order-count-supportedVarargs`(value: String*): Self = StObject.set(x, "media-order-count-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-pre-printed-supported`(value: js.Array[MediaPrePrinted]): Self = this.set("media-pre-printed-supported", value.asInstanceOf[js.Any])
+    def `setMedia-pre-printed-supported`(value: js.Array[MediaPrePrinted]): Self = StObject.set(x, "media-pre-printed-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-pre-printed-supported`: Self = this.set("media-pre-printed-supported", js.undefined)
+    def `setMedia-pre-printed-supportedUndefined`: Self = StObject.set(x, "media-pre-printed-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-readyVarargs`(value: (MediaSizeName | MediaName)*): Self = this.set("media-ready", js.Array(value :_*))
+    def `setMedia-pre-printed-supportedVarargs`(value: MediaPrePrinted*): Self = StObject.set(x, "media-pre-printed-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-ready`(value: js.Array[MediaSizeName | MediaName]): Self = this.set("media-ready", value.asInstanceOf[js.Any])
+    def `setMedia-ready`(value: js.Array[MediaSizeName | MediaName]): Self = StObject.set(x, "media-ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-ready`: Self = this.set("media-ready", js.undefined)
+    def `setMedia-readyUndefined`: Self = StObject.set(x, "media-ready", js.undefined)
     
     @scala.inline
-    def `setMedia-recycled-supportedVarargs`(value: MediaPrePrinted*): Self = this.set("media-recycled-supported", js.Array(value :_*))
+    def `setMedia-readyVarargs`(value: (MediaSizeName | MediaName)*): Self = StObject.set(x, "media-ready", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-recycled-supported`(value: js.Array[MediaPrePrinted]): Self = this.set("media-recycled-supported", value.asInstanceOf[js.Any])
+    def `setMedia-recycled-supported`(value: js.Array[MediaPrePrinted]): Self = StObject.set(x, "media-recycled-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-recycled-supported`: Self = this.set("media-recycled-supported", js.undefined)
+    def `setMedia-recycled-supportedUndefined`: Self = StObject.set(x, "media-recycled-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-right-margin-supportedVarargs`(value: Double*): Self = this.set("media-right-margin-supported", js.Array(value :_*))
+    def `setMedia-recycled-supportedVarargs`(value: MediaPrePrinted*): Self = StObject.set(x, "media-recycled-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-right-margin-supported`(value: js.Array[Double]): Self = this.set("media-right-margin-supported", value.asInstanceOf[js.Any])
+    def `setMedia-right-margin-supported`(value: js.Array[Double]): Self = StObject.set(x, "media-right-margin-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-right-margin-supported`: Self = this.set("media-right-margin-supported", js.undefined)
+    def `setMedia-right-margin-supportedUndefined`: Self = StObject.set(x, "media-right-margin-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-size-supported`(value: MediaSizeSupported): Self = this.set("media-size-supported", value.asInstanceOf[js.Any])
+    def `setMedia-right-margin-supportedVarargs`(value: Double*): Self = StObject.set(x, "media-right-margin-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMedia-size-supported`: Self = this.set("media-size-supported", js.undefined)
+    def `setMedia-size-supported`(value: MediaSizeSupported): Self = StObject.set(x, "media-size-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-source-supportedVarargs`(value: MediaSource*): Self = this.set("media-source-supported", js.Array(value :_*))
+    def `setMedia-size-supportedUndefined`: Self = StObject.set(x, "media-size-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-source-supported`(value: js.Array[MediaSource]): Self = this.set("media-source-supported", value.asInstanceOf[js.Any])
+    def `setMedia-source-supported`(value: js.Array[MediaSource]): Self = StObject.set(x, "media-source-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-source-supported`: Self = this.set("media-source-supported", js.undefined)
+    def `setMedia-source-supportedUndefined`: Self = StObject.set(x, "media-source-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-supportedVarargs`(value: Media*): Self = this.set("media-supported", js.Array(value :_*))
+    def `setMedia-source-supportedVarargs`(value: MediaSource*): Self = StObject.set(x, "media-source-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-supported`(value: js.Array[Media]): Self = this.set("media-supported", value.asInstanceOf[js.Any])
+    def `setMedia-supported`(value: js.Array[Media]): Self = StObject.set(x, "media-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-supported`: Self = this.set("media-supported", js.undefined)
+    def `setMedia-supportedUndefined`: Self = StObject.set(x, "media-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-thickness-supported`(value: String): Self = this.set("media-thickness-supported", value.asInstanceOf[js.Any])
+    def `setMedia-supportedVarargs`(value: Media*): Self = StObject.set(x, "media-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMedia-thickness-supported`: Self = this.set("media-thickness-supported", js.undefined)
+    def `setMedia-thickness-supported`(value: String): Self = StObject.set(x, "media-thickness-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-tooth-supportedVarargs`(value: MediaTooth*): Self = this.set("media-tooth-supported", js.Array(value :_*))
+    def `setMedia-thickness-supportedUndefined`: Self = StObject.set(x, "media-thickness-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-tooth-supported`(value: js.Array[MediaTooth]): Self = this.set("media-tooth-supported", value.asInstanceOf[js.Any])
+    def `setMedia-tooth-supported`(value: js.Array[MediaTooth]): Self = StObject.set(x, "media-tooth-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-tooth-supported`: Self = this.set("media-tooth-supported", js.undefined)
+    def `setMedia-tooth-supportedUndefined`: Self = StObject.set(x, "media-tooth-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-top-margin-supportedVarargs`(value: Double*): Self = this.set("media-top-margin-supported", js.Array(value :_*))
+    def `setMedia-tooth-supportedVarargs`(value: MediaTooth*): Self = StObject.set(x, "media-tooth-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-top-margin-supported`(value: js.Array[Double]): Self = this.set("media-top-margin-supported", value.asInstanceOf[js.Any])
+    def `setMedia-top-margin-supported`(value: js.Array[Double]): Self = StObject.set(x, "media-top-margin-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-top-margin-supported`: Self = this.set("media-top-margin-supported", js.undefined)
+    def `setMedia-top-margin-supportedUndefined`: Self = StObject.set(x, "media-top-margin-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-type-supportedVarargs`(value: MediaType*): Self = this.set("media-type-supported", js.Array(value :_*))
+    def `setMedia-top-margin-supportedVarargs`(value: Double*): Self = StObject.set(x, "media-top-margin-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-type-supported`(value: js.Array[MediaType]): Self = this.set("media-type-supported", value.asInstanceOf[js.Any])
+    def `setMedia-type-supported`(value: js.Array[MediaType]): Self = StObject.set(x, "media-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-type-supported`: Self = this.set("media-type-supported", js.undefined)
+    def `setMedia-type-supportedUndefined`: Self = StObject.set(x, "media-type-supported", js.undefined)
     
     @scala.inline
-    def `setMedia-weight-metric-supportedVarargs`(value: String*): Self = this.set("media-weight-metric-supported", js.Array(value :_*))
+    def `setMedia-type-supportedVarargs`(value: MediaType*): Self = StObject.set(x, "media-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setMedia-weight-metric-supported`(value: js.Array[String]): Self = this.set("media-weight-metric-supported", value.asInstanceOf[js.Any])
+    def `setMedia-weight-metric-supported`(value: js.Array[String]): Self = StObject.set(x, "media-weight-metric-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-weight-metric-supported`: Self = this.set("media-weight-metric-supported", js.undefined)
+    def `setMedia-weight-metric-supportedUndefined`: Self = StObject.set(x, "media-weight-metric-supported", js.undefined)
     
     @scala.inline
-    def `setMessage-supported`(value: Double): Self = this.set("message-supported", value.asInstanceOf[js.Any])
+    def `setMedia-weight-metric-supportedVarargs`(value: String*): Self = StObject.set(x, "media-weight-metric-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMessage-supported`: Self = this.set("message-supported", js.undefined)
+    def `setMessage-supported`(value: Double): Self = StObject.set(x, "message-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMultiple-destination-uris-supported`(value: Boolean): Self = this.set("multiple-destination-uris-supported", value.asInstanceOf[js.Any])
+    def `setMessage-supportedUndefined`: Self = StObject.set(x, "message-supported", js.undefined)
     
     @scala.inline
-    def `deleteMultiple-destination-uris-supported`: Self = this.set("multiple-destination-uris-supported", js.undefined)
+    def `setMultiple-destination-uris-supported`(value: Boolean): Self = StObject.set(x, "multiple-destination-uris-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMultiple-document-handling-default`(value: MultipleDocumentHandling): Self = this.set("multiple-document-handling-default", value.asInstanceOf[js.Any])
+    def `setMultiple-destination-uris-supportedUndefined`: Self = StObject.set(x, "multiple-destination-uris-supported", js.undefined)
     
     @scala.inline
-    def `deleteMultiple-document-handling-default`: Self = this.set("multiple-document-handling-default", js.undefined)
+    def `setMultiple-document-handling-default`(value: MultipleDocumentHandling): Self = StObject.set(x, "multiple-document-handling-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMultiple-document-handling-supportedVarargs`(value: MultipleDocumentHandling*): Self = this.set("multiple-document-handling-supported", js.Array(value :_*))
+    def `setMultiple-document-handling-defaultUndefined`: Self = StObject.set(x, "multiple-document-handling-default", js.undefined)
     
     @scala.inline
-    def `setMultiple-document-handling-supported`(value: js.Array[MultipleDocumentHandling]): Self = this.set("multiple-document-handling-supported", value.asInstanceOf[js.Any])
+    def `setMultiple-document-handling-supported`(value: js.Array[MultipleDocumentHandling]): Self = StObject.set(x, "multiple-document-handling-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMultiple-document-handling-supported`: Self = this.set("multiple-document-handling-supported", js.undefined)
+    def `setMultiple-document-handling-supportedUndefined`: Self = StObject.set(x, "multiple-document-handling-supported", js.undefined)
     
     @scala.inline
-    def `setMultiple-document-jobs-supported`(value: Boolean): Self = this.set("multiple-document-jobs-supported", value.asInstanceOf[js.Any])
+    def `setMultiple-document-handling-supportedVarargs`(value: MultipleDocumentHandling*): Self = StObject.set(x, "multiple-document-handling-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMultiple-document-jobs-supported`: Self = this.set("multiple-document-jobs-supported", js.undefined)
+    def `setMultiple-document-jobs-supported`(value: Boolean): Self = StObject.set(x, "multiple-document-jobs-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMultiple-object-handling-default`(value: MultipleObjectHandling): Self = this.set("multiple-object-handling-default", value.asInstanceOf[js.Any])
+    def `setMultiple-document-jobs-supportedUndefined`: Self = StObject.set(x, "multiple-document-jobs-supported", js.undefined)
     
     @scala.inline
-    def `deleteMultiple-object-handling-default`: Self = this.set("multiple-object-handling-default", js.undefined)
+    def `setMultiple-object-handling-default`(value: MultipleObjectHandling): Self = StObject.set(x, "multiple-object-handling-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMultiple-object-handling-supportedVarargs`(value: MultipleObjectHandling*): Self = this.set("multiple-object-handling-supported", js.Array(value :_*))
+    def `setMultiple-object-handling-defaultUndefined`: Self = StObject.set(x, "multiple-object-handling-default", js.undefined)
     
     @scala.inline
-    def `setMultiple-object-handling-supported`(value: js.Array[MultipleObjectHandling]): Self = this.set("multiple-object-handling-supported", value.asInstanceOf[js.Any])
+    def `setMultiple-object-handling-supported`(value: js.Array[MultipleObjectHandling]): Self = StObject.set(x, "multiple-object-handling-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMultiple-object-handling-supported`: Self = this.set("multiple-object-handling-supported", js.undefined)
+    def `setMultiple-object-handling-supportedUndefined`: Self = StObject.set(x, "multiple-object-handling-supported", js.undefined)
     
     @scala.inline
-    def `setMultiple-operation-time-out`(value: Double): Self = this.set("multiple-operation-time-out", value.asInstanceOf[js.Any])
+    def `setMultiple-object-handling-supportedVarargs`(value: MultipleObjectHandling*): Self = StObject.set(x, "multiple-object-handling-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteMultiple-operation-time-out`: Self = this.set("multiple-operation-time-out", js.undefined)
+    def `setMultiple-operation-time-out`(value: Double): Self = StObject.set(x, "multiple-operation-time-out", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMultiple-operation-time-out-action`(value: `abort-job` | `hold-job_` | `process-job`): Self = this.set("multiple-operation-time-out-action", value.asInstanceOf[js.Any])
+    def `setMultiple-operation-time-out-action`(value: `abort-job` | `hold-job_` | `process-job`): Self = StObject.set(x, "multiple-operation-time-out-action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMultiple-operation-time-out-action`: Self = this.set("multiple-operation-time-out-action", js.undefined)
+    def `setMultiple-operation-time-out-actionUndefined`: Self = StObject.set(x, "multiple-operation-time-out-action", js.undefined)
     
     @scala.inline
-    def `setNatural-language-configured`(value: String): Self = this.set("natural-language-configured", value.asInstanceOf[js.Any])
+    def `setMultiple-operation-time-outUndefined`: Self = StObject.set(x, "multiple-operation-time-out", js.undefined)
     
     @scala.inline
-    def `deleteNatural-language-configured`: Self = this.set("natural-language-configured", js.undefined)
+    def `setNatural-language-configured`(value: String): Self = StObject.set(x, "natural-language-configured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setNotify-attributes-supportedVarargs`(value: String*): Self = this.set("notify-attributes-supported", js.Array(value :_*))
+    def `setNatural-language-configuredUndefined`: Self = StObject.set(x, "natural-language-configured", js.undefined)
     
     @scala.inline
-    def `setNotify-attributes-supported`(value: js.Array[String]): Self = this.set("notify-attributes-supported", value.asInstanceOf[js.Any])
+    def `setNotify-attributes-supported`(value: js.Array[String]): Self = StObject.set(x, "notify-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteNotify-attributes-supported`: Self = this.set("notify-attributes-supported", js.undefined)
+    def `setNotify-attributes-supportedUndefined`: Self = StObject.set(x, "notify-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setNotify-events-defaultVarargs`(value: NotifyEvents*): Self = this.set("notify-events-default", js.Array(value :_*))
+    def `setNotify-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "notify-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setNotify-events-default`(value: js.Array[NotifyEvents]): Self = this.set("notify-events-default", value.asInstanceOf[js.Any])
+    def `setNotify-events-default`(value: js.Array[NotifyEvents]): Self = StObject.set(x, "notify-events-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteNotify-events-default`: Self = this.set("notify-events-default", js.undefined)
+    def `setNotify-events-defaultUndefined`: Self = StObject.set(x, "notify-events-default", js.undefined)
     
     @scala.inline
-    def `setNotify-events-supportedVarargs`(value: NotifyEvents*): Self = this.set("notify-events-supported", js.Array(value :_*))
+    def `setNotify-events-defaultVarargs`(value: NotifyEvents*): Self = StObject.set(x, "notify-events-default", js.Array(value :_*))
     
     @scala.inline
-    def `setNotify-events-supported`(value: js.Array[NotifyEvents]): Self = this.set("notify-events-supported", value.asInstanceOf[js.Any])
+    def `setNotify-events-supported`(value: js.Array[NotifyEvents]): Self = StObject.set(x, "notify-events-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteNotify-events-supported`: Self = this.set("notify-events-supported", js.undefined)
+    def `setNotify-events-supportedUndefined`: Self = StObject.set(x, "notify-events-supported", js.undefined)
     
     @scala.inline
-    def `setNotify-lease-duration-default`(value: Double): Self = this.set("notify-lease-duration-default", value.asInstanceOf[js.Any])
+    def `setNotify-events-supportedVarargs`(value: NotifyEvents*): Self = StObject.set(x, "notify-events-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteNotify-lease-duration-default`: Self = this.set("notify-lease-duration-default", js.undefined)
+    def `setNotify-lease-duration-default`(value: Double): Self = StObject.set(x, "notify-lease-duration-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setNotify-lease-duration-supportedVarargs`(value: (Double | String)*): Self = this.set("notify-lease-duration-supported", js.Array(value :_*))
+    def `setNotify-lease-duration-defaultUndefined`: Self = StObject.set(x, "notify-lease-duration-default", js.undefined)
     
     @scala.inline
-    def `setNotify-lease-duration-supported`(value: js.Array[Double | String]): Self = this.set("notify-lease-duration-supported", value.asInstanceOf[js.Any])
+    def `setNotify-lease-duration-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "notify-lease-duration-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteNotify-lease-duration-supported`: Self = this.set("notify-lease-duration-supported", js.undefined)
+    def `setNotify-lease-duration-supportedUndefined`: Self = StObject.set(x, "notify-lease-duration-supported", js.undefined)
     
     @scala.inline
-    def `setNotify-pull-method-supportedVarargs`(value: ippget*): Self = this.set("notify-pull-method-supported", js.Array(value :_*))
+    def `setNotify-lease-duration-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "notify-lease-duration-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setNotify-pull-method-supported`(value: js.Array[ippget]): Self = this.set("notify-pull-method-supported", value.asInstanceOf[js.Any])
+    def `setNotify-pull-method-supported`(value: js.Array[ippget]): Self = StObject.set(x, "notify-pull-method-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteNotify-pull-method-supported`: Self = this.set("notify-pull-method-supported", js.undefined)
+    def `setNotify-pull-method-supportedUndefined`: Self = StObject.set(x, "notify-pull-method-supported", js.undefined)
     
     @scala.inline
-    def `setNotify-schemes-supportedVarargs`(value: UriSchemes*): Self = this.set("notify-schemes-supported", js.Array(value :_*))
+    def `setNotify-pull-method-supportedVarargs`(value: ippget*): Self = StObject.set(x, "notify-pull-method-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setNotify-schemes-supported`(value: js.Array[UriSchemes]): Self = this.set("notify-schemes-supported", value.asInstanceOf[js.Any])
+    def `setNotify-schemes-supported`(value: js.Array[UriSchemes]): Self = StObject.set(x, "notify-schemes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteNotify-schemes-supported`: Self = this.set("notify-schemes-supported", js.undefined)
+    def `setNotify-schemes-supportedUndefined`: Self = StObject.set(x, "notify-schemes-supported", js.undefined)
     
     @scala.inline
-    def `setNumber-of-retries-default`(value: Double): Self = this.set("number-of-retries-default", value.asInstanceOf[js.Any])
+    def `setNotify-schemes-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "notify-schemes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteNumber-of-retries-default`: Self = this.set("number-of-retries-default", js.undefined)
+    def `setNumber-of-retries-default`(value: Double): Self = StObject.set(x, "number-of-retries-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setNumber-of-retries-supported`(value: String): Self = this.set("number-of-retries-supported", value.asInstanceOf[js.Any])
+    def `setNumber-of-retries-defaultUndefined`: Self = StObject.set(x, "number-of-retries-default", js.undefined)
     
     @scala.inline
-    def `deleteNumber-of-retries-supported`: Self = this.set("number-of-retries-supported", js.undefined)
+    def `setNumber-of-retries-supported`(value: String): Self = StObject.set(x, "number-of-retries-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setNumber-up-default`(value: Double): Self = this.set("number-up-default", value.asInstanceOf[js.Any])
+    def `setNumber-of-retries-supportedUndefined`: Self = StObject.set(x, "number-of-retries-supported", js.undefined)
     
     @scala.inline
-    def `deleteNumber-up-default`: Self = this.set("number-up-default", js.undefined)
+    def `setNumber-up-default`(value: Double): Self = StObject.set(x, "number-up-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setNumber-up-supported`(value: Double | String): Self = this.set("number-up-supported", value.asInstanceOf[js.Any])
+    def `setNumber-up-defaultUndefined`: Self = StObject.set(x, "number-up-default", js.undefined)
     
     @scala.inline
-    def `deleteNumber-up-supported`: Self = this.set("number-up-supported", js.undefined)
+    def `setNumber-up-supported`(value: Double | String): Self = StObject.set(x, "number-up-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOauth-authorization-scopeVarargs`(value: String*): Self = this.set("oauth-authorization-scope", js.Array(value :_*))
+    def `setNumber-up-supportedUndefined`: Self = StObject.set(x, "number-up-supported", js.undefined)
     
     @scala.inline
-    def `setOauth-authorization-scope`(value: js.Array[String]): Self = this.set("oauth-authorization-scope", value.asInstanceOf[js.Any])
+    def `setOauth-authorization-scope`(value: js.Array[String]): Self = StObject.set(x, "oauth-authorization-scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOauth-authorization-scope`: Self = this.set("oauth-authorization-scope", js.undefined)
+    def `setOauth-authorization-scopeUndefined`: Self = StObject.set(x, "oauth-authorization-scope", js.undefined)
     
     @scala.inline
-    def `setOauth-authorization-server-uri`(value: String): Self = this.set("oauth-authorization-server-uri", value.asInstanceOf[js.Any])
+    def `setOauth-authorization-scopeVarargs`(value: String*): Self = StObject.set(x, "oauth-authorization-scope", js.Array(value :_*))
     
     @scala.inline
-    def `deleteOauth-authorization-server-uri`: Self = this.set("oauth-authorization-server-uri", js.undefined)
+    def `setOauth-authorization-server-uri`(value: String): Self = StObject.set(x, "oauth-authorization-server-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOperations-supportedVarargs`(value: String*): Self = this.set("operations-supported", js.Array(value :_*))
+    def `setOauth-authorization-server-uriUndefined`: Self = StObject.set(x, "oauth-authorization-server-uri", js.undefined)
     
     @scala.inline
-    def `setOperations-supported`(value: js.Array[String]): Self = this.set("operations-supported", value.asInstanceOf[js.Any])
+    def `setOperations-supported`(value: js.Array[String]): Self = StObject.set(x, "operations-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOperations-supported`: Self = this.set("operations-supported", js.undefined)
+    def `setOperations-supportedUndefined`: Self = StObject.set(x, "operations-supported", js.undefined)
     
     @scala.inline
-    def `setOrganization-name-supported`(value: Double): Self = this.set("organization-name-supported", value.asInstanceOf[js.Any])
+    def `setOperations-supportedVarargs`(value: String*): Self = StObject.set(x, "operations-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteOrganization-name-supported`: Self = this.set("organization-name-supported", js.undefined)
+    def `setOrganization-name-supported`(value: Double): Self = StObject.set(x, "organization-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOrientation-requested-default`(value: OrientationRequested): Self = this.set("orientation-requested-default", value.asInstanceOf[js.Any])
+    def `setOrganization-name-supportedUndefined`: Self = StObject.set(x, "organization-name-supported", js.undefined)
     
     @scala.inline
-    def `deleteOrientation-requested-default`: Self = this.set("orientation-requested-default", js.undefined)
+    def `setOrientation-requested-default`(value: OrientationRequested): Self = StObject.set(x, "orientation-requested-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOrientation-requested-supportedVarargs`(value: OrientationRequested*): Self = this.set("orientation-requested-supported", js.Array(value :_*))
+    def `setOrientation-requested-defaultUndefined`: Self = StObject.set(x, "orientation-requested-default", js.undefined)
     
     @scala.inline
-    def `setOrientation-requested-supported`(value: js.Array[OrientationRequested]): Self = this.set("orientation-requested-supported", value.asInstanceOf[js.Any])
+    def `setOrientation-requested-supported`(value: js.Array[OrientationRequested]): Self = StObject.set(x, "orientation-requested-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOrientation-requested-supported`: Self = this.set("orientation-requested-supported", js.undefined)
+    def `setOrientation-requested-supportedUndefined`: Self = StObject.set(x, "orientation-requested-supported", js.undefined)
     
     @scala.inline
-    def `setOutput-attributes-default`(value: OutputAttributes): Self = this.set("output-attributes-default", value.asInstanceOf[js.Any])
+    def `setOrientation-requested-supportedVarargs`(value: OrientationRequested*): Self = StObject.set(x, "orientation-requested-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteOutput-attributes-default`: Self = this.set("output-attributes-default", js.undefined)
+    def `setOutput-attributes-default`(value: OutputAttributes): Self = StObject.set(x, "output-attributes-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOutput-attributes-supportedVarargs`(value: String*): Self = this.set("output-attributes-supported", js.Array(value :_*))
+    def `setOutput-attributes-defaultUndefined`: Self = StObject.set(x, "output-attributes-default", js.undefined)
     
     @scala.inline
-    def `setOutput-attributes-supported`(value: js.Array[String]): Self = this.set("output-attributes-supported", value.asInstanceOf[js.Any])
+    def `setOutput-attributes-supported`(value: js.Array[String]): Self = StObject.set(x, "output-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOutput-attributes-supported`: Self = this.set("output-attributes-supported", js.undefined)
+    def `setOutput-attributes-supportedUndefined`: Self = StObject.set(x, "output-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setOutput-bin-default`(value: OutputBin): Self = this.set("output-bin-default", value.asInstanceOf[js.Any])
+    def `setOutput-attributes-supportedVarargs`(value: String*): Self = StObject.set(x, "output-attributes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteOutput-bin-default`: Self = this.set("output-bin-default", js.undefined)
+    def `setOutput-bin-default`(value: OutputBin): Self = StObject.set(x, "output-bin-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOutput-bin-supportedVarargs`(value: OutputBin*): Self = this.set("output-bin-supported", js.Array(value :_*))
+    def `setOutput-bin-defaultUndefined`: Self = StObject.set(x, "output-bin-default", js.undefined)
     
     @scala.inline
-    def `setOutput-bin-supported`(value: js.Array[OutputBin]): Self = this.set("output-bin-supported", value.asInstanceOf[js.Any])
+    def `setOutput-bin-supported`(value: js.Array[OutputBin]): Self = StObject.set(x, "output-bin-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOutput-bin-supported`: Self = this.set("output-bin-supported", js.undefined)
+    def `setOutput-bin-supportedUndefined`: Self = StObject.set(x, "output-bin-supported", js.undefined)
     
     @scala.inline
-    def `setOutput-device-supportedVarargs`(value: String*): Self = this.set("output-device-supported", js.Array(value :_*))
+    def `setOutput-bin-supportedVarargs`(value: OutputBin*): Self = StObject.set(x, "output-bin-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setOutput-device-supported`(value: js.Array[String]): Self = this.set("output-device-supported", value.asInstanceOf[js.Any])
+    def `setOutput-device-supported`(value: js.Array[String]): Self = StObject.set(x, "output-device-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOutput-device-supported`: Self = this.set("output-device-supported", js.undefined)
+    def `setOutput-device-supportedUndefined`: Self = StObject.set(x, "output-device-supported", js.undefined)
     
     @scala.inline
-    def `setOutput-device-uuid-supportedVarargs`(value: String*): Self = this.set("output-device-uuid-supported", js.Array(value :_*))
+    def `setOutput-device-supportedVarargs`(value: String*): Self = StObject.set(x, "output-device-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setOutput-device-uuid-supported`(value: js.Array[String]): Self = this.set("output-device-uuid-supported", value.asInstanceOf[js.Any])
+    def `setOutput-device-uuid-supported`(value: js.Array[String]): Self = StObject.set(x, "output-device-uuid-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOutput-device-uuid-supported`: Self = this.set("output-device-uuid-supported", js.undefined)
+    def `setOutput-device-uuid-supportedUndefined`: Self = StObject.set(x, "output-device-uuid-supported", js.undefined)
     
     @scala.inline
-    def `setOverrides-supportedVarargs`(value: Overrides*): Self = this.set("overrides-supported", js.Array(value :_*))
+    def `setOutput-device-uuid-supportedVarargs`(value: String*): Self = StObject.set(x, "output-device-uuid-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setOverrides-supported`(value: js.Array[Overrides]): Self = this.set("overrides-supported", value.asInstanceOf[js.Any])
+    def `setOverrides-supported`(value: js.Array[Overrides]): Self = StObject.set(x, "overrides-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteOverrides-supported`: Self = this.set("overrides-supported", js.undefined)
+    def `setOverrides-supportedUndefined`: Self = StObject.set(x, "overrides-supported", js.undefined)
     
     @scala.inline
-    def `setPage-delivery-default`(value: PageDelivery): Self = this.set("page-delivery-default", value.asInstanceOf[js.Any])
+    def `setOverrides-supportedVarargs`(value: Overrides*): Self = StObject.set(x, "overrides-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePage-delivery-default`: Self = this.set("page-delivery-default", js.undefined)
+    def `setPage-delivery-default`(value: PageDelivery): Self = StObject.set(x, "page-delivery-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage-delivery-supportedVarargs`(value: PageDelivery*): Self = this.set("page-delivery-supported", js.Array(value :_*))
+    def `setPage-delivery-defaultUndefined`: Self = StObject.set(x, "page-delivery-default", js.undefined)
     
     @scala.inline
-    def `setPage-delivery-supported`(value: js.Array[PageDelivery]): Self = this.set("page-delivery-supported", value.asInstanceOf[js.Any])
+    def `setPage-delivery-supported`(value: js.Array[PageDelivery]): Self = StObject.set(x, "page-delivery-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePage-delivery-supported`: Self = this.set("page-delivery-supported", js.undefined)
+    def `setPage-delivery-supportedUndefined`: Self = StObject.set(x, "page-delivery-supported", js.undefined)
     
     @scala.inline
-    def `setPage-order-received-default`(value: PageOrder): Self = this.set("page-order-received-default", value.asInstanceOf[js.Any])
+    def `setPage-delivery-supportedVarargs`(value: PageDelivery*): Self = StObject.set(x, "page-delivery-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePage-order-received-default`: Self = this.set("page-order-received-default", js.undefined)
+    def `setPage-order-received-default`(value: PageOrder): Self = StObject.set(x, "page-order-received-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPage-order-received-supportedVarargs`(value: PageOrder*): Self = this.set("page-order-received-supported", js.Array(value :_*))
+    def `setPage-order-received-defaultUndefined`: Self = StObject.set(x, "page-order-received-default", js.undefined)
     
     @scala.inline
-    def `setPage-order-received-supported`(value: js.Array[PageOrder]): Self = this.set("page-order-received-supported", value.asInstanceOf[js.Any])
+    def `setPage-order-received-supported`(value: js.Array[PageOrder]): Self = StObject.set(x, "page-order-received-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePage-order-received-supported`: Self = this.set("page-order-received-supported", js.undefined)
+    def `setPage-order-received-supportedUndefined`: Self = StObject.set(x, "page-order-received-supported", js.undefined)
     
     @scala.inline
-    def `setPage-ranges-supported`(value: Boolean): Self = this.set("page-ranges-supported", value.asInstanceOf[js.Any])
+    def `setPage-order-received-supportedVarargs`(value: PageOrder*): Self = StObject.set(x, "page-order-received-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePage-ranges-supported`: Self = this.set("page-ranges-supported", js.undefined)
+    def `setPage-ranges-supported`(value: Boolean): Self = StObject.set(x, "page-ranges-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPages-per-subset-supported`(value: Boolean): Self = this.set("pages-per-subset-supported", value.asInstanceOf[js.Any])
+    def `setPage-ranges-supportedUndefined`: Self = StObject.set(x, "page-ranges-supported", js.undefined)
     
     @scala.inline
-    def `deletePages-per-subset-supported`: Self = this.set("pages-per-subset-supported", js.undefined)
+    def `setPages-per-subset-supported`(value: Boolean): Self = StObject.set(x, "pages-per-subset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setParent-printers-supportedVarargs`(value: String*): Self = this.set("parent-printers-supported", js.Array(value :_*))
+    def `setPages-per-subset-supportedUndefined`: Self = StObject.set(x, "pages-per-subset-supported", js.undefined)
     
     @scala.inline
-    def `setParent-printers-supported`(value: js.Array[String]): Self = this.set("parent-printers-supported", value.asInstanceOf[js.Any])
+    def `setParent-printers-supported`(value: js.Array[String]): Self = StObject.set(x, "parent-printers-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteParent-printers-supported`: Self = this.set("parent-printers-supported", js.undefined)
+    def `setParent-printers-supportedUndefined`: Self = StObject.set(x, "parent-printers-supported", js.undefined)
     
     @scala.inline
-    def `setPclm-raster-back-side`(value: flipped | normal | rotated): Self = this.set("pclm-raster-back-side", value.asInstanceOf[js.Any])
+    def `setParent-printers-supportedVarargs`(value: String*): Self = StObject.set(x, "parent-printers-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePclm-raster-back-side`: Self = this.set("pclm-raster-back-side", js.undefined)
+    def `setPclm-raster-back-side`(value: flipped | normal | rotated): Self = StObject.set(x, "pclm-raster-back-side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPclm-source-resolution-supportedVarargs`(value: Resolution*): Self = this.set("pclm-source-resolution-supported", js.Array(value :_*))
+    def `setPclm-raster-back-sideUndefined`: Self = StObject.set(x, "pclm-raster-back-side", js.undefined)
     
     @scala.inline
-    def `setPclm-source-resolution-supported`(value: js.Array[Resolution]): Self = this.set("pclm-source-resolution-supported", value.asInstanceOf[js.Any])
+    def `setPclm-source-resolution-supported`(value: js.Array[Resolution]): Self = StObject.set(x, "pclm-source-resolution-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePclm-source-resolution-supported`: Self = this.set("pclm-source-resolution-supported", js.undefined)
+    def `setPclm-source-resolution-supportedUndefined`: Self = StObject.set(x, "pclm-source-resolution-supported", js.undefined)
     
     @scala.inline
-    def `setPclm-strip-height-preferredVarargs`(value: Double*): Self = this.set("pclm-strip-height-preferred", js.Array(value :_*))
+    def `setPclm-source-resolution-supportedVarargs`(value: Resolution*): Self = StObject.set(x, "pclm-source-resolution-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPclm-strip-height-preferred`(value: js.Array[Double]): Self = this.set("pclm-strip-height-preferred", value.asInstanceOf[js.Any])
+    def `setPclm-strip-height-preferred`(value: js.Array[Double]): Self = StObject.set(x, "pclm-strip-height-preferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePclm-strip-height-preferred`: Self = this.set("pclm-strip-height-preferred", js.undefined)
+    def `setPclm-strip-height-preferredUndefined`: Self = StObject.set(x, "pclm-strip-height-preferred", js.undefined)
     
     @scala.inline
-    def `setPclm-strip-height-supported`(value: Double): Self = this.set("pclm-strip-height-supported", value.asInstanceOf[js.Any])
+    def `setPclm-strip-height-preferredVarargs`(value: Double*): Self = StObject.set(x, "pclm-strip-height-preferred", js.Array(value :_*))
     
     @scala.inline
-    def `deletePclm-strip-height-supported`: Self = this.set("pclm-strip-height-supported", js.undefined)
+    def `setPclm-strip-height-supported`(value: Double): Self = StObject.set(x, "pclm-strip-height-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPdf-features-supportedVarargs`(value: (prc | u3d)*): Self = this.set("pdf-features-supported", js.Array(value :_*))
+    def `setPclm-strip-height-supportedUndefined`: Self = StObject.set(x, "pclm-strip-height-supported", js.undefined)
     
     @scala.inline
-    def `setPdf-features-supported`(value: js.Array[prc | u3d]): Self = this.set("pdf-features-supported", value.asInstanceOf[js.Any])
+    def `setPdf-features-supported`(value: js.Array[prc | u3d]): Self = StObject.set(x, "pdf-features-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdf-features-supported`: Self = this.set("pdf-features-supported", js.undefined)
+    def `setPdf-features-supportedUndefined`: Self = StObject.set(x, "pdf-features-supported", js.undefined)
     
     @scala.inline
-    def `setPdf-k-octets-supported`(value: String): Self = this.set("pdf-k-octets-supported", value.asInstanceOf[js.Any])
+    def `setPdf-features-supportedVarargs`(value: (prc | u3d)*): Self = StObject.set(x, "pdf-features-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePdf-k-octets-supported`: Self = this.set("pdf-k-octets-supported", js.undefined)
+    def `setPdf-k-octets-supported`(value: String): Self = StObject.set(x, "pdf-k-octets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPdf-versions-supportedVarargs`(
-      value: (`adobe-1Dot3` | `adobe-1Dot4` | `adobe-1Dot5` | `adobe-1Dot6` | `iso-15930-1_2001` | `iso-15930-3_2002` | `iso-15930-4_2003` | `iso-15930-6_2003` | `iso-15930-7_2010` | `iso-15930-8_2010` | `iso-16612-2_2010` | `iso-19005-1_2005` | `iso-19005-2_2011` | `iso-19005-3_2012` | `iso-32000-1_2008` | none | `pwg-5102Dot3`)*
-    ): Self = this.set("pdf-versions-supported", js.Array(value :_*))
+    def `setPdf-k-octets-supportedUndefined`: Self = StObject.set(x, "pdf-k-octets-supported", js.undefined)
     
     @scala.inline
     def `setPdf-versions-supported`(
       value: js.Array[
           `adobe-1Dot3` | `adobe-1Dot4` | `adobe-1Dot5` | `adobe-1Dot6` | `iso-15930-1_2001` | `iso-15930-3_2002` | `iso-15930-4_2003` | `iso-15930-6_2003` | `iso-15930-7_2010` | `iso-15930-8_2010` | `iso-16612-2_2010` | `iso-19005-1_2005` | `iso-19005-2_2011` | `iso-19005-3_2012` | `iso-32000-1_2008` | none | `pwg-5102Dot3`
         ]
-    ): Self = this.set("pdf-versions-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pdf-versions-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdf-versions-supported`: Self = this.set("pdf-versions-supported", js.undefined)
+    def `setPdf-versions-supportedUndefined`: Self = StObject.set(x, "pdf-versions-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-init-file-default`(value: PdlInitFile): Self = this.set("pdl-init-file-default", value.asInstanceOf[js.Any])
+    def `setPdf-versions-supportedVarargs`(
+      value: (`adobe-1Dot3` | `adobe-1Dot4` | `adobe-1Dot5` | `adobe-1Dot6` | `iso-15930-1_2001` | `iso-15930-3_2002` | `iso-15930-4_2003` | `iso-15930-6_2003` | `iso-15930-7_2010` | `iso-15930-8_2010` | `iso-16612-2_2010` | `iso-19005-1_2005` | `iso-19005-2_2011` | `iso-19005-3_2012` | `iso-32000-1_2008` | none | `pwg-5102Dot3`)*
+    ): Self = StObject.set(x, "pdf-versions-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePdl-init-file-default`: Self = this.set("pdl-init-file-default", js.undefined)
+    def `setPdl-init-file-default`(value: PdlInitFile): Self = StObject.set(x, "pdl-init-file-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPdl-init-file-entry-supportedVarargs`(value: String*): Self = this.set("pdl-init-file-entry-supported", js.Array(value :_*))
+    def `setPdl-init-file-defaultUndefined`: Self = StObject.set(x, "pdl-init-file-default", js.undefined)
     
     @scala.inline
-    def `setPdl-init-file-entry-supported`(value: js.Array[String]): Self = this.set("pdl-init-file-entry-supported", value.asInstanceOf[js.Any])
+    def `setPdl-init-file-entry-supported`(value: js.Array[String]): Self = StObject.set(x, "pdl-init-file-entry-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdl-init-file-entry-supported`: Self = this.set("pdl-init-file-entry-supported", js.undefined)
+    def `setPdl-init-file-entry-supportedUndefined`: Self = StObject.set(x, "pdl-init-file-entry-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-init-file-location-supportedVarargs`(value: String*): Self = this.set("pdl-init-file-location-supported", js.Array(value :_*))
+    def `setPdl-init-file-entry-supportedVarargs`(value: String*): Self = StObject.set(x, "pdl-init-file-entry-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPdl-init-file-location-supported`(value: js.Array[String]): Self = this.set("pdl-init-file-location-supported", value.asInstanceOf[js.Any])
+    def `setPdl-init-file-location-supported`(value: js.Array[String]): Self = StObject.set(x, "pdl-init-file-location-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdl-init-file-location-supported`: Self = this.set("pdl-init-file-location-supported", js.undefined)
+    def `setPdl-init-file-location-supportedUndefined`: Self = StObject.set(x, "pdl-init-file-location-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-init-file-name-subdirectory-supported`(value: Boolean): Self = this.set("pdl-init-file-name-subdirectory-supported", value.asInstanceOf[js.Any])
+    def `setPdl-init-file-location-supportedVarargs`(value: String*): Self = StObject.set(x, "pdl-init-file-location-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePdl-init-file-name-subdirectory-supported`: Self = this.set("pdl-init-file-name-subdirectory-supported", js.undefined)
+    def `setPdl-init-file-name-subdirectory-supported`(value: Boolean): Self = StObject.set(x, "pdl-init-file-name-subdirectory-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPdl-init-file-name-supportedVarargs`(value: String*): Self = this.set("pdl-init-file-name-supported", js.Array(value :_*))
+    def `setPdl-init-file-name-subdirectory-supportedUndefined`: Self = StObject.set(x, "pdl-init-file-name-subdirectory-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-init-file-name-supported`(value: js.Array[String]): Self = this.set("pdl-init-file-name-supported", value.asInstanceOf[js.Any])
+    def `setPdl-init-file-name-supported`(value: js.Array[String]): Self = StObject.set(x, "pdl-init-file-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdl-init-file-name-supported`: Self = this.set("pdl-init-file-name-supported", js.undefined)
+    def `setPdl-init-file-name-supportedUndefined`: Self = StObject.set(x, "pdl-init-file-name-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-init-file-supportedVarargs`(value: (`pdl-init-file-entry` | `pdl-init-file-location` | `pdl-init-file-name`)*): Self = this.set("pdl-init-file-supported", js.Array(value :_*))
+    def `setPdl-init-file-name-supportedVarargs`(value: String*): Self = StObject.set(x, "pdl-init-file-name-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPdl-init-file-supported`(value: js.Array[`pdl-init-file-entry` | `pdl-init-file-location` | `pdl-init-file-name`]): Self = this.set("pdl-init-file-supported", value.asInstanceOf[js.Any])
+    def `setPdl-init-file-supported`(value: js.Array[`pdl-init-file-entry` | `pdl-init-file-location` | `pdl-init-file-name`]): Self = StObject.set(x, "pdl-init-file-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdl-init-file-supported`: Self = this.set("pdl-init-file-supported", js.undefined)
+    def `setPdl-init-file-supportedUndefined`: Self = StObject.set(x, "pdl-init-file-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-override-guaranteed-supportedVarargs`(value: String*): Self = this.set("pdl-override-guaranteed-supported", js.Array(value :_*))
+    def `setPdl-init-file-supportedVarargs`(value: (`pdl-init-file-entry` | `pdl-init-file-location` | `pdl-init-file-name`)*): Self = StObject.set(x, "pdl-init-file-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPdl-override-guaranteed-supported`(value: js.Array[String]): Self = this.set("pdl-override-guaranteed-supported", value.asInstanceOf[js.Any])
+    def `setPdl-override-guaranteed-supported`(value: js.Array[String]): Self = StObject.set(x, "pdl-override-guaranteed-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePdl-override-guaranteed-supported`: Self = this.set("pdl-override-guaranteed-supported", js.undefined)
+    def `setPdl-override-guaranteed-supportedUndefined`: Self = StObject.set(x, "pdl-override-guaranteed-supported", js.undefined)
     
     @scala.inline
-    def `setPdl-override-supported`(value: attempted | guaranteed | `not-attempted`): Self = this.set("pdl-override-supported", value.asInstanceOf[js.Any])
+    def `setPdl-override-guaranteed-supportedVarargs`(value: String*): Self = StObject.set(x, "pdl-override-guaranteed-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePdl-override-supported`: Self = this.set("pdl-override-supported", js.undefined)
+    def `setPdl-override-supported`(value: attempted | guaranteed | `not-attempted`): Self = StObject.set(x, "pdl-override-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPlatform-shape`(value: String): Self = this.set("platform-shape", value.asInstanceOf[js.Any])
+    def `setPdl-override-supportedUndefined`: Self = StObject.set(x, "pdl-override-supported", js.undefined)
     
     @scala.inline
-    def `deletePlatform-shape`: Self = this.set("platform-shape", js.undefined)
+    def `setPlatform-shape`(value: String): Self = StObject.set(x, "platform-shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPlatform-temperature-default`(value: Double): Self = this.set("platform-temperature-default", value.asInstanceOf[js.Any])
+    def `setPlatform-shapeUndefined`: Self = StObject.set(x, "platform-shape", js.undefined)
     
     @scala.inline
-    def `deletePlatform-temperature-default`: Self = this.set("platform-temperature-default", js.undefined)
+    def `setPlatform-temperature-default`(value: Double): Self = StObject.set(x, "platform-temperature-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPlatform-temperature-supportedVarargs`(value: (Double | String)*): Self = this.set("platform-temperature-supported", js.Array(value :_*))
+    def `setPlatform-temperature-defaultUndefined`: Self = StObject.set(x, "platform-temperature-default", js.undefined)
     
     @scala.inline
-    def `setPlatform-temperature-supported`(value: js.Array[Double | String]): Self = this.set("platform-temperature-supported", value.asInstanceOf[js.Any])
+    def `setPlatform-temperature-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "platform-temperature-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePlatform-temperature-supported`: Self = this.set("platform-temperature-supported", js.undefined)
+    def `setPlatform-temperature-supportedUndefined`: Self = StObject.set(x, "platform-temperature-supported", js.undefined)
     
     @scala.inline
-    def `setPreferred-attributes-supported`(value: Boolean): Self = this.set("preferred-attributes-supported", value.asInstanceOf[js.Any])
+    def `setPlatform-temperature-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "platform-temperature-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePreferred-attributes-supported`: Self = this.set("preferred-attributes-supported", js.undefined)
+    def `setPreferred-attributes-supported`(value: Boolean): Self = StObject.set(x, "preferred-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPresentation-direction-number-up-default`(value: PresentationDirectionNumberUp): Self = this.set("presentation-direction-number-up-default", value.asInstanceOf[js.Any])
+    def `setPreferred-attributes-supportedUndefined`: Self = StObject.set(x, "preferred-attributes-supported", js.undefined)
     
     @scala.inline
-    def `deletePresentation-direction-number-up-default`: Self = this.set("presentation-direction-number-up-default", js.undefined)
+    def `setPresentation-direction-number-up-default`(value: PresentationDirectionNumberUp): Self = StObject.set(x, "presentation-direction-number-up-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPresentation-direction-number-up-supportedVarargs`(value: PresentationDirectionNumberUp*): Self = this.set("presentation-direction-number-up-supported", js.Array(value :_*))
+    def `setPresentation-direction-number-up-defaultUndefined`: Self = StObject.set(x, "presentation-direction-number-up-default", js.undefined)
     
     @scala.inline
-    def `setPresentation-direction-number-up-supported`(value: js.Array[PresentationDirectionNumberUp]): Self = this.set("presentation-direction-number-up-supported", value.asInstanceOf[js.Any])
+    def `setPresentation-direction-number-up-supported`(value: js.Array[PresentationDirectionNumberUp]): Self = StObject.set(x, "presentation-direction-number-up-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePresentation-direction-number-up-supported`: Self = this.set("presentation-direction-number-up-supported", js.undefined)
+    def `setPresentation-direction-number-up-supportedUndefined`: Self = StObject.set(x, "presentation-direction-number-up-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-accuracy-supported`(value: PrintAccuracySupported): Self = this.set("print-accuracy-supported", value.asInstanceOf[js.Any])
+    def `setPresentation-direction-number-up-supportedVarargs`(value: PresentationDirectionNumberUp*): Self = StObject.set(x, "presentation-direction-number-up-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-accuracy-supported`: Self = this.set("print-accuracy-supported", js.undefined)
+    def `setPrint-accuracy-supported`(value: PrintAccuracySupported): Self = StObject.set(x, "print-accuracy-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-base-default`(value: PrintBase): Self = this.set("print-base-default", value.asInstanceOf[js.Any])
+    def `setPrint-accuracy-supportedUndefined`: Self = StObject.set(x, "print-accuracy-supported", js.undefined)
     
     @scala.inline
-    def `deletePrint-base-default`: Self = this.set("print-base-default", js.undefined)
+    def `setPrint-base-default`(value: PrintBase): Self = StObject.set(x, "print-base-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-base-supportedVarargs`(value: PrintBase*): Self = this.set("print-base-supported", js.Array(value :_*))
+    def `setPrint-base-defaultUndefined`: Self = StObject.set(x, "print-base-default", js.undefined)
     
     @scala.inline
-    def `setPrint-base-supported`(value: js.Array[PrintBase]): Self = this.set("print-base-supported", value.asInstanceOf[js.Any])
+    def `setPrint-base-supported`(value: js.Array[PrintBase]): Self = StObject.set(x, "print-base-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-base-supported`: Self = this.set("print-base-supported", js.undefined)
+    def `setPrint-base-supportedUndefined`: Self = StObject.set(x, "print-base-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-color-mode-default`(value: PrintColorMode): Self = this.set("print-color-mode-default", value.asInstanceOf[js.Any])
+    def `setPrint-base-supportedVarargs`(value: PrintBase*): Self = StObject.set(x, "print-base-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-color-mode-default`: Self = this.set("print-color-mode-default", js.undefined)
+    def `setPrint-color-mode-default`(value: PrintColorMode): Self = StObject.set(x, "print-color-mode-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-color-mode-supportedVarargs`(value: PrintColorMode*): Self = this.set("print-color-mode-supported", js.Array(value :_*))
+    def `setPrint-color-mode-defaultUndefined`: Self = StObject.set(x, "print-color-mode-default", js.undefined)
     
     @scala.inline
-    def `setPrint-color-mode-supported`(value: js.Array[PrintColorMode]): Self = this.set("print-color-mode-supported", value.asInstanceOf[js.Any])
+    def `setPrint-color-mode-supported`(value: js.Array[PrintColorMode]): Self = StObject.set(x, "print-color-mode-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-color-mode-supported`: Self = this.set("print-color-mode-supported", js.undefined)
+    def `setPrint-color-mode-supportedUndefined`: Self = StObject.set(x, "print-color-mode-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-content-optimize-default`(value: PrintContentOptimize): Self = this.set("print-content-optimize-default", value.asInstanceOf[js.Any])
+    def `setPrint-color-mode-supportedVarargs`(value: PrintColorMode*): Self = StObject.set(x, "print-color-mode-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-content-optimize-default`: Self = this.set("print-content-optimize-default", js.undefined)
+    def `setPrint-content-optimize-default`(value: PrintContentOptimize): Self = StObject.set(x, "print-content-optimize-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-content-optimize-supportedVarargs`(value: PrintContentOptimize*): Self = this.set("print-content-optimize-supported", js.Array(value :_*))
+    def `setPrint-content-optimize-defaultUndefined`: Self = StObject.set(x, "print-content-optimize-default", js.undefined)
     
     @scala.inline
-    def `setPrint-content-optimize-supported`(value: js.Array[PrintContentOptimize]): Self = this.set("print-content-optimize-supported", value.asInstanceOf[js.Any])
+    def `setPrint-content-optimize-supported`(value: js.Array[PrintContentOptimize]): Self = StObject.set(x, "print-content-optimize-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-content-optimize-supported`: Self = this.set("print-content-optimize-supported", js.undefined)
+    def `setPrint-content-optimize-supportedUndefined`: Self = StObject.set(x, "print-content-optimize-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-objects-supportedVarargs`(value: (`document-number` | `object-offset` | `object-size` | `object-uuid`)*): Self = this.set("print-objects-supported", js.Array(value :_*))
+    def `setPrint-content-optimize-supportedVarargs`(value: PrintContentOptimize*): Self = StObject.set(x, "print-content-optimize-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPrint-objects-supported`(value: js.Array[`document-number` | `object-offset` | `object-size` | `object-uuid`]): Self = this.set("print-objects-supported", value.asInstanceOf[js.Any])
+    def `setPrint-objects-supported`(value: js.Array[`document-number` | `object-offset` | `object-size` | `object-uuid`]): Self = StObject.set(x, "print-objects-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-objects-supported`: Self = this.set("print-objects-supported", js.undefined)
+    def `setPrint-objects-supportedUndefined`: Self = StObject.set(x, "print-objects-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-quality-default`(value: PrintQuality): Self = this.set("print-quality-default", value.asInstanceOf[js.Any])
+    def `setPrint-objects-supportedVarargs`(value: (`document-number` | `object-offset` | `object-size` | `object-uuid`)*): Self = StObject.set(x, "print-objects-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-quality-default`: Self = this.set("print-quality-default", js.undefined)
+    def `setPrint-quality-default`(value: PrintQuality): Self = StObject.set(x, "print-quality-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-quality-supportedVarargs`(value: PrintQuality*): Self = this.set("print-quality-supported", js.Array(value :_*))
+    def `setPrint-quality-defaultUndefined`: Self = StObject.set(x, "print-quality-default", js.undefined)
     
     @scala.inline
-    def `setPrint-quality-supported`(value: js.Array[PrintQuality]): Self = this.set("print-quality-supported", value.asInstanceOf[js.Any])
+    def `setPrint-quality-supported`(value: js.Array[PrintQuality]): Self = StObject.set(x, "print-quality-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-quality-supported`: Self = this.set("print-quality-supported", js.undefined)
+    def `setPrint-quality-supportedUndefined`: Self = StObject.set(x, "print-quality-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-rendering-intent-default`(value: PrintRenderingIntent): Self = this.set("print-rendering-intent-default", value.asInstanceOf[js.Any])
+    def `setPrint-quality-supportedVarargs`(value: PrintQuality*): Self = StObject.set(x, "print-quality-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-rendering-intent-default`: Self = this.set("print-rendering-intent-default", js.undefined)
+    def `setPrint-rendering-intent-default`(value: PrintRenderingIntent): Self = StObject.set(x, "print-rendering-intent-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-rendering-intent-supportedVarargs`(value: PrintRenderingIntent*): Self = this.set("print-rendering-intent-supported", js.Array(value :_*))
+    def `setPrint-rendering-intent-defaultUndefined`: Self = StObject.set(x, "print-rendering-intent-default", js.undefined)
     
     @scala.inline
-    def `setPrint-rendering-intent-supported`(value: js.Array[PrintRenderingIntent]): Self = this.set("print-rendering-intent-supported", value.asInstanceOf[js.Any])
+    def `setPrint-rendering-intent-supported`(value: js.Array[PrintRenderingIntent]): Self = StObject.set(x, "print-rendering-intent-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-rendering-intent-supported`: Self = this.set("print-rendering-intent-supported", js.undefined)
+    def `setPrint-rendering-intent-supportedUndefined`: Self = StObject.set(x, "print-rendering-intent-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-scaling-default`(value: PrintScaling): Self = this.set("print-scaling-default", value.asInstanceOf[js.Any])
+    def `setPrint-rendering-intent-supportedVarargs`(value: PrintRenderingIntent*): Self = StObject.set(x, "print-rendering-intent-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-scaling-default`: Self = this.set("print-scaling-default", js.undefined)
+    def `setPrint-scaling-default`(value: PrintScaling): Self = StObject.set(x, "print-scaling-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-scaling-supportedVarargs`(value: PrintScaling*): Self = this.set("print-scaling-supported", js.Array(value :_*))
+    def `setPrint-scaling-defaultUndefined`: Self = StObject.set(x, "print-scaling-default", js.undefined)
     
     @scala.inline
-    def `setPrint-scaling-supported`(value: js.Array[PrintScaling]): Self = this.set("print-scaling-supported", value.asInstanceOf[js.Any])
+    def `setPrint-scaling-supported`(value: js.Array[PrintScaling]): Self = StObject.set(x, "print-scaling-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-scaling-supported`: Self = this.set("print-scaling-supported", js.undefined)
+    def `setPrint-scaling-supportedUndefined`: Self = StObject.set(x, "print-scaling-supported", js.undefined)
     
     @scala.inline
-    def `setPrint-supports-default`(value: PrintSupports): Self = this.set("print-supports-default", value.asInstanceOf[js.Any])
+    def `setPrint-scaling-supportedVarargs`(value: PrintScaling*): Self = StObject.set(x, "print-scaling-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrint-supports-default`: Self = this.set("print-supports-default", js.undefined)
+    def `setPrint-supports-default`(value: PrintSupports): Self = StObject.set(x, "print-supports-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrint-supports-supportedVarargs`(value: PrintSupports*): Self = this.set("print-supports-supported", js.Array(value :_*))
+    def `setPrint-supports-defaultUndefined`: Self = StObject.set(x, "print-supports-default", js.undefined)
     
     @scala.inline
-    def `setPrint-supports-supported`(value: js.Array[PrintSupports]): Self = this.set("print-supports-supported", value.asInstanceOf[js.Any])
+    def `setPrint-supports-supported`(value: js.Array[PrintSupports]): Self = StObject.set(x, "print-supports-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrint-supports-supported`: Self = this.set("print-supports-supported", js.undefined)
+    def `setPrint-supports-supportedUndefined`: Self = StObject.set(x, "print-supports-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-camera-image-uriVarargs`(value: String*): Self = this.set("printer-camera-image-uri", js.Array(value :_*))
+    def `setPrint-supports-supportedVarargs`(value: PrintSupports*): Self = StObject.set(x, "print-supports-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-camera-image-uri`(value: js.Array[String]): Self = this.set("printer-camera-image-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-camera-image-uri`(value: js.Array[String]): Self = StObject.set(x, "printer-camera-image-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-camera-image-uri`: Self = this.set("printer-camera-image-uri", js.undefined)
+    def `setPrinter-camera-image-uriUndefined`: Self = StObject.set(x, "printer-camera-image-uri", js.undefined)
     
     @scala.inline
-    def `setPrinter-charge-info`(value: String): Self = this.set("printer-charge-info", value.asInstanceOf[js.Any])
+    def `setPrinter-camera-image-uriVarargs`(value: String*): Self = StObject.set(x, "printer-camera-image-uri", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-charge-info`: Self = this.set("printer-charge-info", js.undefined)
+    def `setPrinter-charge-info`(value: String): Self = StObject.set(x, "printer-charge-info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-charge-info-uri`(value: String): Self = this.set("printer-charge-info-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-charge-info-uri`(value: String): Self = StObject.set(x, "printer-charge-info-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-charge-info-uri`: Self = this.set("printer-charge-info-uri", js.undefined)
+    def `setPrinter-charge-info-uriUndefined`: Self = StObject.set(x, "printer-charge-info-uri", js.undefined)
     
     @scala.inline
-    def `setPrinter-contact-col`(value: PrinterContact): Self = this.set("printer-contact-col", value.asInstanceOf[js.Any])
+    def `setPrinter-charge-infoUndefined`: Self = StObject.set(x, "printer-charge-info", js.undefined)
     
     @scala.inline
-    def `deletePrinter-contact-col`: Self = this.set("printer-contact-col", js.undefined)
+    def `setPrinter-contact-col`(value: PrinterContact): Self = StObject.set(x, "printer-contact-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-current-time`(value: String): Self = this.set("printer-current-time", value.asInstanceOf[js.Any])
+    def `setPrinter-contact-colUndefined`: Self = StObject.set(x, "printer-contact-col", js.undefined)
     
     @scala.inline
-    def `deletePrinter-current-time`: Self = this.set("printer-current-time", js.undefined)
+    def `setPrinter-current-time`(value: String): Self = StObject.set(x, "printer-current-time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-device-id`(value: String): Self = this.set("printer-device-id", value.asInstanceOf[js.Any])
+    def `setPrinter-current-timeUndefined`: Self = StObject.set(x, "printer-current-time", js.undefined)
     
     @scala.inline
-    def `deletePrinter-device-id`: Self = this.set("printer-device-id", js.undefined)
+    def `setPrinter-device-id`(value: String): Self = StObject.set(x, "printer-device-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-dns-sd-name`(value: String): Self = this.set("printer-dns-sd-name", value.asInstanceOf[js.Any])
+    def `setPrinter-device-idUndefined`: Self = StObject.set(x, "printer-device-id", js.undefined)
     
     @scala.inline
-    def `deletePrinter-dns-sd-name`: Self = this.set("printer-dns-sd-name", js.undefined)
+    def `setPrinter-dns-sd-name`(value: String): Self = StObject.set(x, "printer-dns-sd-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-driver-installer`(value: String): Self = this.set("printer-driver-installer", value.asInstanceOf[js.Any])
+    def `setPrinter-dns-sd-nameUndefined`: Self = StObject.set(x, "printer-dns-sd-name", js.undefined)
     
     @scala.inline
-    def `deletePrinter-driver-installer`: Self = this.set("printer-driver-installer", js.undefined)
+    def `setPrinter-driver-installer`(value: String): Self = StObject.set(x, "printer-driver-installer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-fax-log-uri`(value: String): Self = this.set("printer-fax-log-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-driver-installerUndefined`: Self = StObject.set(x, "printer-driver-installer", js.undefined)
     
     @scala.inline
-    def `deletePrinter-fax-log-uri`: Self = this.set("printer-fax-log-uri", js.undefined)
+    def `setPrinter-fax-log-uri`(value: String): Self = StObject.set(x, "printer-fax-log-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-fax-modem-infoVarargs`(value: String*): Self = this.set("printer-fax-modem-info", js.Array(value :_*))
+    def `setPrinter-fax-log-uriUndefined`: Self = StObject.set(x, "printer-fax-log-uri", js.undefined)
     
     @scala.inline
-    def `setPrinter-fax-modem-info`(value: js.Array[String]): Self = this.set("printer-fax-modem-info", value.asInstanceOf[js.Any])
+    def `setPrinter-fax-modem-info`(value: js.Array[String]): Self = StObject.set(x, "printer-fax-modem-info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-fax-modem-info`: Self = this.set("printer-fax-modem-info", js.undefined)
+    def `setPrinter-fax-modem-infoUndefined`: Self = StObject.set(x, "printer-fax-modem-info", js.undefined)
     
     @scala.inline
-    def `setPrinter-fax-modem-nameVarargs`(value: String*): Self = this.set("printer-fax-modem-name", js.Array(value :_*))
+    def `setPrinter-fax-modem-infoVarargs`(value: String*): Self = StObject.set(x, "printer-fax-modem-info", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-fax-modem-name`(value: js.Array[String]): Self = this.set("printer-fax-modem-name", value.asInstanceOf[js.Any])
+    def `setPrinter-fax-modem-name`(value: js.Array[String]): Self = StObject.set(x, "printer-fax-modem-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-fax-modem-name`: Self = this.set("printer-fax-modem-name", js.undefined)
+    def `setPrinter-fax-modem-nameUndefined`: Self = StObject.set(x, "printer-fax-modem-name", js.undefined)
     
     @scala.inline
-    def `setPrinter-fax-modem-numberVarargs`(value: String*): Self = this.set("printer-fax-modem-number", js.Array(value :_*))
+    def `setPrinter-fax-modem-nameVarargs`(value: String*): Self = StObject.set(x, "printer-fax-modem-name", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-fax-modem-number`(value: js.Array[String]): Self = this.set("printer-fax-modem-number", value.asInstanceOf[js.Any])
+    def `setPrinter-fax-modem-number`(value: js.Array[String]): Self = StObject.set(x, "printer-fax-modem-number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-fax-modem-number`: Self = this.set("printer-fax-modem-number", js.undefined)
+    def `setPrinter-fax-modem-numberUndefined`: Self = StObject.set(x, "printer-fax-modem-number", js.undefined)
     
     @scala.inline
-    def `setPrinter-geo-location`(value: String): Self = this.set("printer-geo-location", value.asInstanceOf[js.Any])
+    def `setPrinter-fax-modem-numberVarargs`(value: String*): Self = StObject.set(x, "printer-fax-modem-number", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-geo-location`: Self = this.set("printer-geo-location", js.undefined)
+    def `setPrinter-geo-location`(value: String): Self = StObject.set(x, "printer-geo-location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-get-attributes-supportedVarargs`(
-      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ js.Any)*
-    ): Self = this.set("printer-get-attributes-supported", js.Array(value :_*))
+    def `setPrinter-geo-locationUndefined`: Self = StObject.set(x, "printer-geo-location", js.undefined)
     
     @scala.inline
     def `setPrinter-get-attributes-supported`(
       value: js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ js.Any
         ]
-    ): Self = this.set("printer-get-attributes-supported", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "printer-get-attributes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-get-attributes-supported`: Self = this.set("printer-get-attributes-supported", js.undefined)
+    def `setPrinter-get-attributes-supportedUndefined`: Self = StObject.set(x, "printer-get-attributes-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-icc-profilesVarargs`(value: PrinterIccProfiles*): Self = this.set("printer-icc-profiles", js.Array(value :_*))
-    
-    @scala.inline
-    def `setPrinter-icc-profiles`(value: js.Array[PrinterIccProfiles]): Self = this.set("printer-icc-profiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-icc-profiles`: Self = this.set("printer-icc-profiles", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-iconsVarargs`(value: String*): Self = this.set("printer-icons", js.Array(value :_*))
-    
-    @scala.inline
-    def `setPrinter-icons`(value: js.Array[String]): Self = this.set("printer-icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-icons`: Self = this.set("printer-icons", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-info`(value: String): Self = this.set("printer-info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-info`: Self = this.set("printer-info", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-kindVarargs`(value: PrinterKind*): Self = this.set("printer-kind", js.Array(value :_*))
-    
-    @scala.inline
-    def `setPrinter-kind`(value: js.Array[PrinterKind]): Self = this.set("printer-kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-kind`: Self = this.set("printer-kind", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-location`(value: String): Self = this.set("printer-location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-location`: Self = this.set("printer-location", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-make-and-model`(value: String): Self = this.set("printer-make-and-model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-make-and-model`: Self = this.set("printer-make-and-model", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-mandatory-job-attributesVarargs`(
+    def `setPrinter-get-attributes-supportedVarargs`(
       value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ js.Any)*
-    ): Self = this.set("printer-mandatory-job-attributes", js.Array(value :_*))
+    ): Self = StObject.set(x, "printer-get-attributes-supported", js.Array(value :_*))
+    
+    @scala.inline
+    def `setPrinter-icc-profiles`(value: js.Array[PrinterIccProfiles]): Self = StObject.set(x, "printer-icc-profiles", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setPrinter-icc-profilesUndefined`: Self = StObject.set(x, "printer-icc-profiles", js.undefined)
+    
+    @scala.inline
+    def `setPrinter-icc-profilesVarargs`(value: PrinterIccProfiles*): Self = StObject.set(x, "printer-icc-profiles", js.Array(value :_*))
+    
+    @scala.inline
+    def `setPrinter-icons`(value: js.Array[String]): Self = StObject.set(x, "printer-icons", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setPrinter-iconsUndefined`: Self = StObject.set(x, "printer-icons", js.undefined)
+    
+    @scala.inline
+    def `setPrinter-iconsVarargs`(value: String*): Self = StObject.set(x, "printer-icons", js.Array(value :_*))
+    
+    @scala.inline
+    def `setPrinter-info`(value: String): Self = StObject.set(x, "printer-info", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setPrinter-infoUndefined`: Self = StObject.set(x, "printer-info", js.undefined)
+    
+    @scala.inline
+    def `setPrinter-kind`(value: js.Array[PrinterKind]): Self = StObject.set(x, "printer-kind", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setPrinter-kindUndefined`: Self = StObject.set(x, "printer-kind", js.undefined)
+    
+    @scala.inline
+    def `setPrinter-kindVarargs`(value: PrinterKind*): Self = StObject.set(x, "printer-kind", js.Array(value :_*))
+    
+    @scala.inline
+    def `setPrinter-location`(value: String): Self = StObject.set(x, "printer-location", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setPrinter-locationUndefined`: Self = StObject.set(x, "printer-location", js.undefined)
+    
+    @scala.inline
+    def `setPrinter-make-and-model`(value: String): Self = StObject.set(x, "printer-make-and-model", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setPrinter-make-and-modelUndefined`: Self = StObject.set(x, "printer-make-and-model", js.undefined)
     
     @scala.inline
     def `setPrinter-mandatory-job-attributes`(
       value: js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ js.Any
         ]
-    ): Self = this.set("printer-mandatory-job-attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "printer-mandatory-job-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-mandatory-job-attributes`: Self = this.set("printer-mandatory-job-attributes", js.undefined)
+    def `setPrinter-mandatory-job-attributesUndefined`: Self = StObject.set(x, "printer-mandatory-job-attributes", js.undefined)
     
     @scala.inline
-    def `setPrinter-more-info-manufacturer`(value: String): Self = this.set("printer-more-info-manufacturer", value.asInstanceOf[js.Any])
+    def `setPrinter-mandatory-job-attributesVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 203 */ js.Any)*
+    ): Self = StObject.set(x, "printer-mandatory-job-attributes", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-more-info-manufacturer`: Self = this.set("printer-more-info-manufacturer", js.undefined)
+    def `setPrinter-more-info-manufacturer`(value: String): Self = StObject.set(x, "printer-more-info-manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-name`(value: String): Self = this.set("printer-name", value.asInstanceOf[js.Any])
+    def `setPrinter-more-info-manufacturerUndefined`: Self = StObject.set(x, "printer-more-info-manufacturer", js.undefined)
     
     @scala.inline
-    def `deletePrinter-name`: Self = this.set("printer-name", js.undefined)
+    def `setPrinter-name`(value: String): Self = StObject.set(x, "printer-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-organizationVarargs`(value: String*): Self = this.set("printer-organization", js.Array(value :_*))
+    def `setPrinter-nameUndefined`: Self = StObject.set(x, "printer-name", js.undefined)
     
     @scala.inline
-    def `setPrinter-organization`(value: js.Array[String]): Self = this.set("printer-organization", value.asInstanceOf[js.Any])
+    def `setPrinter-organization`(value: js.Array[String]): Self = StObject.set(x, "printer-organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-organization`: Self = this.set("printer-organization", js.undefined)
+    def `setPrinter-organizationUndefined`: Self = StObject.set(x, "printer-organization", js.undefined)
     
     @scala.inline
-    def `setPrinter-organizational-unitVarargs`(value: String*): Self = this.set("printer-organizational-unit", js.Array(value :_*))
+    def `setPrinter-organizationVarargs`(value: String*): Self = StObject.set(x, "printer-organization", js.Array(value :_*))
     
     @scala.inline
-    def `setPrinter-organizational-unit`(value: js.Array[String]): Self = this.set("printer-organizational-unit", value.asInstanceOf[js.Any])
+    def `setPrinter-organizational-unit`(value: js.Array[String]): Self = StObject.set(x, "printer-organizational-unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-organizational-unit`: Self = this.set("printer-organizational-unit", js.undefined)
+    def `setPrinter-organizational-unitUndefined`: Self = StObject.set(x, "printer-organizational-unit", js.undefined)
     
     @scala.inline
-    def `setPrinter-privacy-policy-uri`(value: String): Self = this.set("printer-privacy-policy-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-organizational-unitVarargs`(value: String*): Self = StObject.set(x, "printer-organizational-unit", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-privacy-policy-uri`: Self = this.set("printer-privacy-policy-uri", js.undefined)
+    def `setPrinter-privacy-policy-uri`(value: String): Self = StObject.set(x, "printer-privacy-policy-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-resolution-default`(value: Resolution): Self = this.set("printer-resolution-default", value.asInstanceOf[js.Any])
+    def `setPrinter-privacy-policy-uriUndefined`: Self = StObject.set(x, "printer-privacy-policy-uri", js.undefined)
     
     @scala.inline
-    def `deletePrinter-resolution-default`: Self = this.set("printer-resolution-default", js.undefined)
+    def `setPrinter-resolution-default`(value: Resolution): Self = StObject.set(x, "printer-resolution-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-resolution-supported`(value: Resolution): Self = this.set("printer-resolution-supported", value.asInstanceOf[js.Any])
+    def `setPrinter-resolution-defaultUndefined`: Self = StObject.set(x, "printer-resolution-default", js.undefined)
     
     @scala.inline
-    def `deletePrinter-resolution-supported`: Self = this.set("printer-resolution-supported", js.undefined)
+    def `setPrinter-resolution-supported`(value: Resolution): Self = StObject.set(x, "printer-resolution-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-static-resource-directory-uri`(value: String): Self = this.set("printer-static-resource-directory-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-resolution-supportedUndefined`: Self = StObject.set(x, "printer-resolution-supported", js.undefined)
     
     @scala.inline
-    def `deletePrinter-static-resource-directory-uri`: Self = this.set("printer-static-resource-directory-uri", js.undefined)
+    def `setPrinter-static-resource-directory-uri`(value: String): Self = StObject.set(x, "printer-static-resource-directory-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-static-resource-k-octets-supported`(value: Double): Self = this.set("printer-static-resource-k-octets-supported", value.asInstanceOf[js.Any])
+    def `setPrinter-static-resource-directory-uriUndefined`: Self = StObject.set(x, "printer-static-resource-directory-uri", js.undefined)
     
     @scala.inline
-    def `deletePrinter-static-resource-k-octets-supported`: Self = this.set("printer-static-resource-k-octets-supported", js.undefined)
+    def `setPrinter-static-resource-k-octets-supported`(value: Double): Self = StObject.set(x, "printer-static-resource-k-octets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-strings-languages-supportedVarargs`(value: String*): Self = this.set("printer-strings-languages-supported", js.Array(value :_*))
+    def `setPrinter-static-resource-k-octets-supportedUndefined`: Self = StObject.set(x, "printer-static-resource-k-octets-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-strings-languages-supported`(value: js.Array[String]): Self = this.set("printer-strings-languages-supported", value.asInstanceOf[js.Any])
+    def `setPrinter-strings-languages-supported`(value: js.Array[String]): Self = StObject.set(x, "printer-strings-languages-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-strings-languages-supported`: Self = this.set("printer-strings-languages-supported", js.undefined)
+    def `setPrinter-strings-languages-supportedUndefined`: Self = StObject.set(x, "printer-strings-languages-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-strings-uri`(value: String): Self = this.set("printer-strings-uri", value.asInstanceOf[js.Any])
+    def `setPrinter-strings-languages-supportedVarargs`(value: String*): Self = StObject.set(x, "printer-strings-languages-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePrinter-strings-uri`: Self = this.set("printer-strings-uri", js.undefined)
+    def `setPrinter-strings-uri`(value: String): Self = StObject.set(x, "printer-strings-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-volume-supported`(value: PrinterVolumeSupported): Self = this.set("printer-volume-supported", value.asInstanceOf[js.Any])
+    def `setPrinter-strings-uriUndefined`: Self = StObject.set(x, "printer-strings-uri", js.undefined)
     
     @scala.inline
-    def `deletePrinter-volume-supported`: Self = this.set("printer-volume-supported", js.undefined)
+    def `setPrinter-volume-supported`(value: PrinterVolumeSupported): Self = StObject.set(x, "printer-volume-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPrinter-xri-supportedVarargs`(value: PrinterXri*): Self = this.set("printer-xri-supported", js.Array(value :_*))
+    def `setPrinter-volume-supportedUndefined`: Self = StObject.set(x, "printer-volume-supported", js.undefined)
     
     @scala.inline
-    def `setPrinter-xri-supported`(value: js.Array[PrinterXri]): Self = this.set("printer-xri-supported", value.asInstanceOf[js.Any])
+    def `setPrinter-xri-supported`(value: js.Array[PrinterXri]): Self = StObject.set(x, "printer-xri-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePrinter-xri-supported`: Self = this.set("printer-xri-supported", js.undefined)
+    def `setPrinter-xri-supportedUndefined`: Self = StObject.set(x, "printer-xri-supported", js.undefined)
     
     @scala.inline
-    def `setProof-print-default`(value: ProofPrint): Self = this.set("proof-print-default", value.asInstanceOf[js.Any])
+    def `setPrinter-xri-supportedVarargs`(value: PrinterXri*): Self = StObject.set(x, "printer-xri-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteProof-print-default`: Self = this.set("proof-print-default", js.undefined)
+    def `setProof-print-default`(value: ProofPrint): Self = StObject.set(x, "proof-print-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setProof-print-supportedVarargs`(value: (media | `media-col` | `proof-print-copies`)*): Self = this.set("proof-print-supported", js.Array(value :_*))
+    def `setProof-print-defaultUndefined`: Self = StObject.set(x, "proof-print-default", js.undefined)
     
     @scala.inline
-    def `setProof-print-supported`(value: js.Array[media | `media-col` | `proof-print-copies`]): Self = this.set("proof-print-supported", value.asInstanceOf[js.Any])
+    def `setProof-print-supported`(value: js.Array[media | `media-col` | `proof-print-copies`]): Self = StObject.set(x, "proof-print-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteProof-print-supported`: Self = this.set("proof-print-supported", js.undefined)
+    def `setProof-print-supportedUndefined`: Self = StObject.set(x, "proof-print-supported", js.undefined)
     
     @scala.inline
-    def `setPunching-hole-diameter-configured`(value: Double): Self = this.set("punching-hole-diameter-configured", value.asInstanceOf[js.Any])
+    def `setProof-print-supportedVarargs`(value: (media | `media-col` | `proof-print-copies`)*): Self = StObject.set(x, "proof-print-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePunching-hole-diameter-configured`: Self = this.set("punching-hole-diameter-configured", js.undefined)
+    def `setPunching-hole-diameter-configured`(value: Double): Self = StObject.set(x, "punching-hole-diameter-configured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPunching-locations-supportedVarargs`(value: (Double | String)*): Self = this.set("punching-locations-supported", js.Array(value :_*))
+    def `setPunching-hole-diameter-configuredUndefined`: Self = StObject.set(x, "punching-hole-diameter-configured", js.undefined)
     
     @scala.inline
-    def `setPunching-locations-supported`(value: js.Array[Double | String]): Self = this.set("punching-locations-supported", value.asInstanceOf[js.Any])
+    def `setPunching-locations-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "punching-locations-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePunching-locations-supported`: Self = this.set("punching-locations-supported", js.undefined)
+    def `setPunching-locations-supportedUndefined`: Self = StObject.set(x, "punching-locations-supported", js.undefined)
     
     @scala.inline
-    def `setPunching-offset-supportedVarargs`(value: (Double | String)*): Self = this.set("punching-offset-supported", js.Array(value :_*))
+    def `setPunching-locations-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "punching-locations-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPunching-offset-supported`(value: js.Array[Double | String]): Self = this.set("punching-offset-supported", value.asInstanceOf[js.Any])
+    def `setPunching-offset-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "punching-offset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePunching-offset-supported`: Self = this.set("punching-offset-supported", js.undefined)
+    def `setPunching-offset-supportedUndefined`: Self = StObject.set(x, "punching-offset-supported", js.undefined)
     
     @scala.inline
-    def `setPunching-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = this.set("punching-reference-edge-supported", js.Array(value :_*))
+    def `setPunching-offset-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "punching-offset-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPunching-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = this.set("punching-reference-edge-supported", value.asInstanceOf[js.Any])
+    def `setPunching-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = StObject.set(x, "punching-reference-edge-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePunching-reference-edge-supported`: Self = this.set("punching-reference-edge-supported", js.undefined)
+    def `setPunching-reference-edge-supportedUndefined`: Self = StObject.set(x, "punching-reference-edge-supported", js.undefined)
     
     @scala.inline
-    def `setPwg-raster-document-resolution-supportedVarargs`(value: Resolution*): Self = this.set("pwg-raster-document-resolution-supported", js.Array(value :_*))
+    def `setPunching-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = StObject.set(x, "punching-reference-edge-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPwg-raster-document-resolution-supported`(value: js.Array[Resolution]): Self = this.set("pwg-raster-document-resolution-supported", value.asInstanceOf[js.Any])
+    def `setPwg-raster-document-resolution-supported`(value: js.Array[Resolution]): Self = StObject.set(x, "pwg-raster-document-resolution-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePwg-raster-document-resolution-supported`: Self = this.set("pwg-raster-document-resolution-supported", js.undefined)
+    def `setPwg-raster-document-resolution-supportedUndefined`: Self = StObject.set(x, "pwg-raster-document-resolution-supported", js.undefined)
     
     @scala.inline
-    def `setPwg-raster-document-sheet-back`(value: flipped | `manual-tumble` | normal | rotated): Self = this.set("pwg-raster-document-sheet-back", value.asInstanceOf[js.Any])
+    def `setPwg-raster-document-resolution-supportedVarargs`(value: Resolution*): Self = StObject.set(x, "pwg-raster-document-resolution-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deletePwg-raster-document-sheet-back`: Self = this.set("pwg-raster-document-sheet-back", js.undefined)
+    def `setPwg-raster-document-sheet-back`(value: flipped | `manual-tumble` | normal | rotated): Self = StObject.set(x, "pwg-raster-document-sheet-back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPwg-raster-document-type-supportedVarargs`(value: PwgRasterDocumentTypeSupported*): Self = this.set("pwg-raster-document-type-supported", js.Array(value :_*))
+    def `setPwg-raster-document-sheet-backUndefined`: Self = StObject.set(x, "pwg-raster-document-sheet-back", js.undefined)
     
     @scala.inline
-    def `setPwg-raster-document-type-supported`(value: js.Array[PwgRasterDocumentTypeSupported]): Self = this.set("pwg-raster-document-type-supported", value.asInstanceOf[js.Any])
+    def `setPwg-raster-document-type-supported`(value: js.Array[PwgRasterDocumentTypeSupported]): Self = StObject.set(x, "pwg-raster-document-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePwg-raster-document-type-supported`: Self = this.set("pwg-raster-document-type-supported", js.undefined)
+    def `setPwg-raster-document-type-supportedUndefined`: Self = StObject.set(x, "pwg-raster-document-type-supported", js.undefined)
     
     @scala.inline
-    def `setPwg-safe-gcode-supportedVarargs`(value: String*): Self = this.set("pwg-safe-gcode-supported", js.Array(value :_*))
+    def `setPwg-raster-document-type-supportedVarargs`(value: PwgRasterDocumentTypeSupported*): Self = StObject.set(x, "pwg-raster-document-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setPwg-safe-gcode-supported`(value: js.Array[String]): Self = this.set("pwg-safe-gcode-supported", value.asInstanceOf[js.Any])
+    def `setPwg-safe-gcode-supported`(value: js.Array[String]): Self = StObject.set(x, "pwg-safe-gcode-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePwg-safe-gcode-supported`: Self = this.set("pwg-safe-gcode-supported", js.undefined)
+    def `setPwg-safe-gcode-supportedUndefined`: Self = StObject.set(x, "pwg-safe-gcode-supported", js.undefined)
     
     @scala.inline
-    def `setReference-uri-schemes-supportedVarargs`(value: UriSchemes*): Self = this.set("reference-uri-schemes-supported", js.Array(value :_*))
+    def `setPwg-safe-gcode-supportedVarargs`(value: String*): Self = StObject.set(x, "pwg-safe-gcode-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setReference-uri-schemes-supported`(value: js.Array[UriSchemes]): Self = this.set("reference-uri-schemes-supported", value.asInstanceOf[js.Any])
+    def `setReference-uri-schemes-supported`(value: js.Array[UriSchemes]): Self = StObject.set(x, "reference-uri-schemes-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteReference-uri-schemes-supported`: Self = this.set("reference-uri-schemes-supported", js.undefined)
+    def `setReference-uri-schemes-supportedUndefined`: Self = StObject.set(x, "reference-uri-schemes-supported", js.undefined)
     
     @scala.inline
-    def `setRepertoire-supportedVarargs`(value: String*): Self = this.set("repertoire-supported", js.Array(value :_*))
+    def `setReference-uri-schemes-supportedVarargs`(value: UriSchemes*): Self = StObject.set(x, "reference-uri-schemes-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setRepertoire-supported`(value: js.Array[String]): Self = this.set("repertoire-supported", value.asInstanceOf[js.Any])
+    def `setRepertoire-supported`(value: js.Array[String]): Self = StObject.set(x, "repertoire-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteRepertoire-supported`: Self = this.set("repertoire-supported", js.undefined)
+    def `setRepertoire-supportedUndefined`: Self = StObject.set(x, "repertoire-supported", js.undefined)
     
     @scala.inline
-    def `setRequesting-user-uri-supported`(value: Boolean): Self = this.set("requesting-user-uri-supported", value.asInstanceOf[js.Any])
+    def `setRepertoire-supportedVarargs`(value: String*): Self = StObject.set(x, "repertoire-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteRequesting-user-uri-supported`: Self = this.set("requesting-user-uri-supported", js.undefined)
+    def `setRequesting-user-uri-supported`(value: Boolean): Self = StObject.set(x, "requesting-user-uri-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRetry-interval-default`(value: Double): Self = this.set("retry-interval-default", value.asInstanceOf[js.Any])
+    def `setRequesting-user-uri-supportedUndefined`: Self = StObject.set(x, "requesting-user-uri-supported", js.undefined)
     
     @scala.inline
-    def `deleteRetry-interval-default`: Self = this.set("retry-interval-default", js.undefined)
+    def `setRetry-interval-default`(value: Double): Self = StObject.set(x, "retry-interval-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRetry-interval-supported`(value: String): Self = this.set("retry-interval-supported", value.asInstanceOf[js.Any])
+    def `setRetry-interval-defaultUndefined`: Self = StObject.set(x, "retry-interval-default", js.undefined)
     
     @scala.inline
-    def `deleteRetry-interval-supported`: Self = this.set("retry-interval-supported", js.undefined)
+    def `setRetry-interval-supported`(value: String): Self = StObject.set(x, "retry-interval-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRetry-time-out-default`(value: Double): Self = this.set("retry-time-out-default", value.asInstanceOf[js.Any])
+    def `setRetry-interval-supportedUndefined`: Self = StObject.set(x, "retry-interval-supported", js.undefined)
     
     @scala.inline
-    def `deleteRetry-time-out-default`: Self = this.set("retry-time-out-default", js.undefined)
+    def `setRetry-time-out-default`(value: Double): Self = StObject.set(x, "retry-time-out-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRetry-time-out-supported`(value: String): Self = this.set("retry-time-out-supported", value.asInstanceOf[js.Any])
+    def `setRetry-time-out-defaultUndefined`: Self = StObject.set(x, "retry-time-out-default", js.undefined)
     
     @scala.inline
-    def `deleteRetry-time-out-supported`: Self = this.set("retry-time-out-supported", js.undefined)
+    def `setRetry-time-out-supported`(value: String): Self = StObject.set(x, "retry-time-out-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSave-disposition-supportedVarargs`(value: SaveDisposition*): Self = this.set("save-disposition-supported", js.Array(value :_*))
+    def `setRetry-time-out-supportedUndefined`: Self = StObject.set(x, "retry-time-out-supported", js.undefined)
     
     @scala.inline
-    def `setSave-disposition-supported`(value: js.Array[SaveDisposition]): Self = this.set("save-disposition-supported", value.asInstanceOf[js.Any])
+    def `setSave-disposition-supported`(value: js.Array[SaveDisposition]): Self = StObject.set(x, "save-disposition-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSave-disposition-supported`: Self = this.set("save-disposition-supported", js.undefined)
+    def `setSave-disposition-supportedUndefined`: Self = StObject.set(x, "save-disposition-supported", js.undefined)
     
     @scala.inline
-    def `setSave-document-format-default`(value: MimeMediaType): Self = this.set("save-document-format-default", value.asInstanceOf[js.Any])
+    def `setSave-disposition-supportedVarargs`(value: SaveDisposition*): Self = StObject.set(x, "save-disposition-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSave-document-format-default`: Self = this.set("save-document-format-default", js.undefined)
+    def `setSave-document-format-default`(value: MimeMediaType): Self = StObject.set(x, "save-document-format-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSave-document-format-supportedVarargs`(value: MimeMediaType*): Self = this.set("save-document-format-supported", js.Array(value :_*))
+    def `setSave-document-format-defaultUndefined`: Self = StObject.set(x, "save-document-format-default", js.undefined)
     
     @scala.inline
-    def `setSave-document-format-supported`(value: js.Array[MimeMediaType]): Self = this.set("save-document-format-supported", value.asInstanceOf[js.Any])
+    def `setSave-document-format-supported`(value: js.Array[MimeMediaType]): Self = StObject.set(x, "save-document-format-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSave-document-format-supported`: Self = this.set("save-document-format-supported", js.undefined)
+    def `setSave-document-format-supportedUndefined`: Self = StObject.set(x, "save-document-format-supported", js.undefined)
     
     @scala.inline
-    def `setSave-location-default`(value: String): Self = this.set("save-location-default", value.asInstanceOf[js.Any])
+    def `setSave-document-format-supportedVarargs`(value: MimeMediaType*): Self = StObject.set(x, "save-document-format-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSave-location-default`: Self = this.set("save-location-default", js.undefined)
+    def `setSave-location-default`(value: String): Self = StObject.set(x, "save-location-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSave-location-supportedVarargs`(value: String*): Self = this.set("save-location-supported", js.Array(value :_*))
+    def `setSave-location-defaultUndefined`: Self = StObject.set(x, "save-location-default", js.undefined)
     
     @scala.inline
-    def `setSave-location-supported`(value: js.Array[String]): Self = this.set("save-location-supported", value.asInstanceOf[js.Any])
+    def `setSave-location-supported`(value: js.Array[String]): Self = StObject.set(x, "save-location-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSave-location-supported`: Self = this.set("save-location-supported", js.undefined)
+    def `setSave-location-supportedUndefined`: Self = StObject.set(x, "save-location-supported", js.undefined)
     
     @scala.inline
-    def `setSave-name-subdirectory-supported`(value: Boolean): Self = this.set("save-name-subdirectory-supported", value.asInstanceOf[js.Any])
+    def `setSave-location-supportedVarargs`(value: String*): Self = StObject.set(x, "save-location-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSave-name-subdirectory-supported`: Self = this.set("save-name-subdirectory-supported", js.undefined)
+    def `setSave-name-subdirectory-supported`(value: Boolean): Self = StObject.set(x, "save-name-subdirectory-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSave-name-supported`(value: Boolean): Self = this.set("save-name-supported", value.asInstanceOf[js.Any])
+    def `setSave-name-subdirectory-supportedUndefined`: Self = StObject.set(x, "save-name-subdirectory-supported", js.undefined)
     
     @scala.inline
-    def `deleteSave-name-supported`: Self = this.set("save-name-supported", js.undefined)
+    def `setSave-name-supported`(value: Boolean): Self = StObject.set(x, "save-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSeparator-sheets-default`(value: SeparatorSheets): Self = this.set("separator-sheets-default", value.asInstanceOf[js.Any])
+    def `setSave-name-supportedUndefined`: Self = StObject.set(x, "save-name-supported", js.undefined)
     
     @scala.inline
-    def `deleteSeparator-sheets-default`: Self = this.set("separator-sheets-default", js.undefined)
+    def `setSeparator-sheets-default`(value: SeparatorSheets): Self = StObject.set(x, "separator-sheets-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSeparator-sheets-supportedVarargs`(value: SeparatorSheetsType*): Self = this.set("separator-sheets-supported", js.Array(value :_*))
+    def `setSeparator-sheets-defaultUndefined`: Self = StObject.set(x, "separator-sheets-default", js.undefined)
     
     @scala.inline
-    def `setSeparator-sheets-supported`(value: js.Array[SeparatorSheetsType]): Self = this.set("separator-sheets-supported", value.asInstanceOf[js.Any])
+    def `setSeparator-sheets-supported`(value: js.Array[SeparatorSheetsType]): Self = StObject.set(x, "separator-sheets-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSeparator-sheets-supported`: Self = this.set("separator-sheets-supported", js.undefined)
+    def `setSeparator-sheets-supportedUndefined`: Self = StObject.set(x, "separator-sheets-supported", js.undefined)
     
     @scala.inline
-    def `setSides-default`(value: Sides): Self = this.set("sides-default", value.asInstanceOf[js.Any])
+    def `setSeparator-sheets-supportedVarargs`(value: SeparatorSheetsType*): Self = StObject.set(x, "separator-sheets-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSides-default`: Self = this.set("sides-default", js.undefined)
+    def `setSides-default`(value: Sides): Self = StObject.set(x, "sides-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSides-supportedVarargs`(value: Sides*): Self = this.set("sides-supported", js.Array(value :_*))
+    def `setSides-defaultUndefined`: Self = StObject.set(x, "sides-default", js.undefined)
     
     @scala.inline
-    def `setSides-supported`(value: js.Array[Sides]): Self = this.set("sides-supported", value.asInstanceOf[js.Any])
+    def `setSides-supported`(value: js.Array[Sides]): Self = StObject.set(x, "sides-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSides-supported`: Self = this.set("sides-supported", js.undefined)
+    def `setSides-supportedUndefined`: Self = StObject.set(x, "sides-supported", js.undefined)
     
     @scala.inline
-    def `setSmi2699-auth-print-group`(value: String): Self = this.set("smi2699-auth-print-group", value.asInstanceOf[js.Any])
+    def `setSides-supportedVarargs`(value: Sides*): Self = StObject.set(x, "sides-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSmi2699-auth-print-group`: Self = this.set("smi2699-auth-print-group", js.undefined)
+    def `setSmi2699-auth-print-group`(value: String): Self = StObject.set(x, "smi2699-auth-print-group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSmi2699-auth-proxy-group`(value: String): Self = this.set("smi2699-auth-proxy-group", value.asInstanceOf[js.Any])
+    def `setSmi2699-auth-print-groupUndefined`: Self = StObject.set(x, "smi2699-auth-print-group", js.undefined)
     
     @scala.inline
-    def `deleteSmi2699-auth-proxy-group`: Self = this.set("smi2699-auth-proxy-group", js.undefined)
+    def `setSmi2699-auth-proxy-group`(value: String): Self = StObject.set(x, "smi2699-auth-proxy-group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSmi2699-device-command`(value: String): Self = this.set("smi2699-device-command", value.asInstanceOf[js.Any])
+    def `setSmi2699-auth-proxy-groupUndefined`: Self = StObject.set(x, "smi2699-auth-proxy-group", js.undefined)
     
     @scala.inline
-    def `deleteSmi2699-device-command`: Self = this.set("smi2699-device-command", js.undefined)
+    def `setSmi2699-device-command`(value: String): Self = StObject.set(x, "smi2699-device-command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSmi2699-device-format`(value: MimeMediaType): Self = this.set("smi2699-device-format", value.asInstanceOf[js.Any])
+    def `setSmi2699-device-commandUndefined`: Self = StObject.set(x, "smi2699-device-command", js.undefined)
     
     @scala.inline
-    def `deleteSmi2699-device-format`: Self = this.set("smi2699-device-format", js.undefined)
+    def `setSmi2699-device-format`(value: MimeMediaType): Self = StObject.set(x, "smi2699-device-format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSmi2699-device-name`(value: String): Self = this.set("smi2699-device-name", value.asInstanceOf[js.Any])
+    def `setSmi2699-device-formatUndefined`: Self = StObject.set(x, "smi2699-device-format", js.undefined)
     
     @scala.inline
-    def `deleteSmi2699-device-name`: Self = this.set("smi2699-device-name", js.undefined)
+    def `setSmi2699-device-name`(value: String): Self = StObject.set(x, "smi2699-device-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSmi2699-device-uri`(value: String): Self = this.set("smi2699-device-uri", value.asInstanceOf[js.Any])
+    def `setSmi2699-device-nameUndefined`: Self = StObject.set(x, "smi2699-device-name", js.undefined)
     
     @scala.inline
-    def `deleteSmi2699-device-uri`: Self = this.set("smi2699-device-uri", js.undefined)
+    def `setSmi2699-device-uri`(value: String): Self = StObject.set(x, "smi2699-device-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStitching-angle-supportedVarargs`(value: (Double | String)*): Self = this.set("stitching-angle-supported", js.Array(value :_*))
+    def `setSmi2699-device-uriUndefined`: Self = StObject.set(x, "smi2699-device-uri", js.undefined)
     
     @scala.inline
-    def `setStitching-angle-supported`(value: js.Array[Double | String]): Self = this.set("stitching-angle-supported", value.asInstanceOf[js.Any])
+    def `setStitching-angle-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "stitching-angle-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteStitching-angle-supported`: Self = this.set("stitching-angle-supported", js.undefined)
+    def `setStitching-angle-supportedUndefined`: Self = StObject.set(x, "stitching-angle-supported", js.undefined)
     
     @scala.inline
-    def `setStitching-locations-supportedVarargs`(value: (Double | String)*): Self = this.set("stitching-locations-supported", js.Array(value :_*))
+    def `setStitching-angle-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "stitching-angle-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setStitching-locations-supported`(value: js.Array[Double | String]): Self = this.set("stitching-locations-supported", value.asInstanceOf[js.Any])
+    def `setStitching-locations-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "stitching-locations-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteStitching-locations-supported`: Self = this.set("stitching-locations-supported", js.undefined)
+    def `setStitching-locations-supportedUndefined`: Self = StObject.set(x, "stitching-locations-supported", js.undefined)
     
     @scala.inline
-    def `setStitching-method-supportedVarargs`(value: StitchingMethod*): Self = this.set("stitching-method-supported", js.Array(value :_*))
+    def `setStitching-locations-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "stitching-locations-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setStitching-method-supported`(value: js.Array[StitchingMethod]): Self = this.set("stitching-method-supported", value.asInstanceOf[js.Any])
+    def `setStitching-method-supported`(value: js.Array[StitchingMethod]): Self = StObject.set(x, "stitching-method-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteStitching-method-supported`: Self = this.set("stitching-method-supported", js.undefined)
+    def `setStitching-method-supportedUndefined`: Self = StObject.set(x, "stitching-method-supported", js.undefined)
     
     @scala.inline
-    def `setStitching-offset-supportedVarargs`(value: (Double | String)*): Self = this.set("stitching-offset-supported", js.Array(value :_*))
+    def `setStitching-method-supportedVarargs`(value: StitchingMethod*): Self = StObject.set(x, "stitching-method-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setStitching-offset-supported`(value: js.Array[Double | String]): Self = this.set("stitching-offset-supported", value.asInstanceOf[js.Any])
+    def `setStitching-offset-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "stitching-offset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteStitching-offset-supported`: Self = this.set("stitching-offset-supported", js.undefined)
+    def `setStitching-offset-supportedUndefined`: Self = StObject.set(x, "stitching-offset-supported", js.undefined)
     
     @scala.inline
-    def `setStitching-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = this.set("stitching-reference-edge-supported", js.Array(value :_*))
+    def `setStitching-offset-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "stitching-offset-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setStitching-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = this.set("stitching-reference-edge-supported", value.asInstanceOf[js.Any])
+    def `setStitching-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = StObject.set(x, "stitching-reference-edge-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteStitching-reference-edge-supported`: Self = this.set("stitching-reference-edge-supported", js.undefined)
+    def `setStitching-reference-edge-supportedUndefined`: Self = StObject.set(x, "stitching-reference-edge-supported", js.undefined)
     
     @scala.inline
-    def `setSubject-supported`(value: Double): Self = this.set("subject-supported", value.asInstanceOf[js.Any])
+    def `setStitching-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = StObject.set(x, "stitching-reference-edge-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSubject-supported`: Self = this.set("subject-supported", js.undefined)
+    def `setSubject-supported`(value: Double): Self = StObject.set(x, "subject-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSubordinate-printers-supportedVarargs`(value: String*): Self = this.set("subordinate-printers-supported", js.Array(value :_*))
+    def `setSubject-supportedUndefined`: Self = StObject.set(x, "subject-supported", js.undefined)
     
     @scala.inline
-    def `setSubordinate-printers-supported`(value: js.Array[String]): Self = this.set("subordinate-printers-supported", value.asInstanceOf[js.Any])
+    def `setSubordinate-printers-supported`(value: js.Array[String]): Self = StObject.set(x, "subordinate-printers-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSubordinate-printers-supported`: Self = this.set("subordinate-printers-supported", js.undefined)
+    def `setSubordinate-printers-supportedUndefined`: Self = StObject.set(x, "subordinate-printers-supported", js.undefined)
     
     @scala.inline
-    def `setSubscription-privacy-attributesVarargs`(value: String*): Self = this.set("subscription-privacy-attributes", js.Array(value :_*))
+    def `setSubordinate-printers-supportedVarargs`(value: String*): Self = StObject.set(x, "subordinate-printers-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setSubscription-privacy-attributes`(value: js.Array[String]): Self = this.set("subscription-privacy-attributes", value.asInstanceOf[js.Any])
+    def `setSubscription-privacy-attributes`(value: js.Array[String]): Self = StObject.set(x, "subscription-privacy-attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteSubscription-privacy-attributes`: Self = this.set("subscription-privacy-attributes", js.undefined)
+    def `setSubscription-privacy-attributesUndefined`: Self = StObject.set(x, "subscription-privacy-attributes", js.undefined)
     
     @scala.inline
-    def `setSubscription-privacy-scope`(value: String): Self = this.set("subscription-privacy-scope", value.asInstanceOf[js.Any])
+    def `setSubscription-privacy-attributesVarargs`(value: String*): Self = StObject.set(x, "subscription-privacy-attributes", js.Array(value :_*))
     
     @scala.inline
-    def `deleteSubscription-privacy-scope`: Self = this.set("subscription-privacy-scope", js.undefined)
+    def `setSubscription-privacy-scope`(value: String): Self = StObject.set(x, "subscription-privacy-scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTo-name-supported`(value: Double): Self = this.set("to-name-supported", value.asInstanceOf[js.Any])
+    def `setSubscription-privacy-scopeUndefined`: Self = StObject.set(x, "subscription-privacy-scope", js.undefined)
     
     @scala.inline
-    def `deleteTo-name-supported`: Self = this.set("to-name-supported", js.undefined)
+    def `setTo-name-supported`(value: Double): Self = StObject.set(x, "to-name-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTrimming-offset-supportedVarargs`(value: (Double | String)*): Self = this.set("trimming-offset-supported", js.Array(value :_*))
+    def `setTo-name-supportedUndefined`: Self = StObject.set(x, "to-name-supported", js.undefined)
     
     @scala.inline
-    def `setTrimming-offset-supported`(value: js.Array[Double | String]): Self = this.set("trimming-offset-supported", value.asInstanceOf[js.Any])
+    def `setTrimming-offset-supported`(value: js.Array[Double | String]): Self = StObject.set(x, "trimming-offset-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTrimming-offset-supported`: Self = this.set("trimming-offset-supported", js.undefined)
+    def `setTrimming-offset-supportedUndefined`: Self = StObject.set(x, "trimming-offset-supported", js.undefined)
     
     @scala.inline
-    def `setTrimming-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = this.set("trimming-reference-edge-supported", js.Array(value :_*))
+    def `setTrimming-offset-supportedVarargs`(value: (Double | String)*): Self = StObject.set(x, "trimming-offset-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setTrimming-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = this.set("trimming-reference-edge-supported", value.asInstanceOf[js.Any])
+    def `setTrimming-reference-edge-supported`(value: js.Array[ReferenceEdge]): Self = StObject.set(x, "trimming-reference-edge-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTrimming-reference-edge-supported`: Self = this.set("trimming-reference-edge-supported", js.undefined)
+    def `setTrimming-reference-edge-supportedUndefined`: Self = StObject.set(x, "trimming-reference-edge-supported", js.undefined)
     
     @scala.inline
-    def `setTrimming-type-supportedVarargs`(value: TrimmingType*): Self = this.set("trimming-type-supported", js.Array(value :_*))
+    def `setTrimming-reference-edge-supportedVarargs`(value: ReferenceEdge*): Self = StObject.set(x, "trimming-reference-edge-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setTrimming-type-supported`(value: js.Array[TrimmingType]): Self = this.set("trimming-type-supported", value.asInstanceOf[js.Any])
+    def `setTrimming-type-supported`(value: js.Array[TrimmingType]): Self = StObject.set(x, "trimming-type-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTrimming-type-supported`: Self = this.set("trimming-type-supported", js.undefined)
+    def `setTrimming-type-supportedUndefined`: Self = StObject.set(x, "trimming-type-supported", js.undefined)
     
     @scala.inline
-    def `setTrimming-when-supportedVarargs`(value: String*): Self = this.set("trimming-when-supported", js.Array(value :_*))
+    def `setTrimming-type-supportedVarargs`(value: TrimmingType*): Self = StObject.set(x, "trimming-type-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setTrimming-when-supported`(value: js.Array[String]): Self = this.set("trimming-when-supported", value.asInstanceOf[js.Any])
+    def `setTrimming-when-supported`(value: js.Array[String]): Self = StObject.set(x, "trimming-when-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTrimming-when-supported`: Self = this.set("trimming-when-supported", js.undefined)
+    def `setTrimming-when-supportedUndefined`: Self = StObject.set(x, "trimming-when-supported", js.undefined)
     
     @scala.inline
-    def `setUri-authentication-supportedVarargs`(value: (basic | certificate | digest | negotiate | none | `requesting-user-name`)*): Self = this.set("uri-authentication-supported", js.Array(value :_*))
+    def `setTrimming-when-supportedVarargs`(value: String*): Self = StObject.set(x, "trimming-when-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setUri-authentication-supported`(value: js.Array[basic | certificate | digest | negotiate | none | `requesting-user-name`]): Self = this.set("uri-authentication-supported", value.asInstanceOf[js.Any])
+    def `setUri-authentication-supported`(value: js.Array[basic | certificate | digest | negotiate | none | `requesting-user-name`]): Self = StObject.set(x, "uri-authentication-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUri-authentication-supported`: Self = this.set("uri-authentication-supported", js.undefined)
+    def `setUri-authentication-supportedUndefined`: Self = StObject.set(x, "uri-authentication-supported", js.undefined)
     
     @scala.inline
-    def `setUri-security-supportedVarargs`(value: (none | ssl3 | tls)*): Self = this.set("uri-security-supported", js.Array(value :_*))
+    def `setUri-authentication-supportedVarargs`(value: (basic | certificate | digest | negotiate | none | `requesting-user-name`)*): Self = StObject.set(x, "uri-authentication-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setUri-security-supported`(value: js.Array[none | ssl3 | tls]): Self = this.set("uri-security-supported", value.asInstanceOf[js.Any])
+    def `setUri-security-supported`(value: js.Array[none | ssl3 | tls]): Self = StObject.set(x, "uri-security-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUri-security-supported`: Self = this.set("uri-security-supported", js.undefined)
+    def `setUri-security-supportedUndefined`: Self = StObject.set(x, "uri-security-supported", js.undefined)
     
     @scala.inline
-    def `setUser-defined-values-supportedVarargs`(value: String*): Self = this.set("user-defined-values-supported", js.Array(value :_*))
+    def `setUri-security-supportedVarargs`(value: (none | ssl3 | tls)*): Self = StObject.set(x, "uri-security-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setUser-defined-values-supported`(value: js.Array[String]): Self = this.set("user-defined-values-supported", value.asInstanceOf[js.Any])
+    def `setUser-defined-values-supported`(value: js.Array[String]): Self = StObject.set(x, "user-defined-values-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUser-defined-values-supported`: Self = this.set("user-defined-values-supported", js.undefined)
+    def `setUser-defined-values-supportedUndefined`: Self = StObject.set(x, "user-defined-values-supported", js.undefined)
     
     @scala.inline
-    def `setWhich-jobs-supportedVarargs`(value: WhichJobs*): Self = this.set("which-jobs-supported", js.Array(value :_*))
+    def `setUser-defined-values-supportedVarargs`(value: String*): Self = StObject.set(x, "user-defined-values-supported", js.Array(value :_*))
     
     @scala.inline
-    def `setWhich-jobs-supported`(value: js.Array[WhichJobs]): Self = this.set("which-jobs-supported", value.asInstanceOf[js.Any])
+    def `setWhich-jobs-supported`(value: js.Array[WhichJobs]): Self = StObject.set(x, "which-jobs-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteWhich-jobs-supported`: Self = this.set("which-jobs-supported", js.undefined)
+    def `setWhich-jobs-supportedUndefined`: Self = StObject.set(x, "which-jobs-supported", js.undefined)
     
     @scala.inline
-    def `setX-image-position-default`(value: XImagePosition): Self = this.set("x-image-position-default", value.asInstanceOf[js.Any])
+    def `setWhich-jobs-supportedVarargs`(value: WhichJobs*): Self = StObject.set(x, "which-jobs-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteX-image-position-default`: Self = this.set("x-image-position-default", js.undefined)
+    def `setX-image-position-default`(value: XImagePosition): Self = StObject.set(x, "x-image-position-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-image-position-supportedVarargs`(value: XImagePosition*): Self = this.set("x-image-position-supported", js.Array(value :_*))
+    def `setX-image-position-defaultUndefined`: Self = StObject.set(x, "x-image-position-default", js.undefined)
     
     @scala.inline
-    def `setX-image-position-supported`(value: js.Array[XImagePosition]): Self = this.set("x-image-position-supported", value.asInstanceOf[js.Any])
+    def `setX-image-position-supported`(value: js.Array[XImagePosition]): Self = StObject.set(x, "x-image-position-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteX-image-position-supported`: Self = this.set("x-image-position-supported", js.undefined)
+    def `setX-image-position-supportedUndefined`: Self = StObject.set(x, "x-image-position-supported", js.undefined)
     
     @scala.inline
-    def `setX-image-shift-default`(value: Double): Self = this.set("x-image-shift-default", value.asInstanceOf[js.Any])
+    def `setX-image-position-supportedVarargs`(value: XImagePosition*): Self = StObject.set(x, "x-image-position-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteX-image-shift-default`: Self = this.set("x-image-shift-default", js.undefined)
+    def `setX-image-shift-default`(value: Double): Self = StObject.set(x, "x-image-shift-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-image-shift-supported`(value: String): Self = this.set("x-image-shift-supported", value.asInstanceOf[js.Any])
+    def `setX-image-shift-defaultUndefined`: Self = StObject.set(x, "x-image-shift-default", js.undefined)
     
     @scala.inline
-    def `deleteX-image-shift-supported`: Self = this.set("x-image-shift-supported", js.undefined)
+    def `setX-image-shift-supported`(value: String): Self = StObject.set(x, "x-image-shift-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-side1-image-shift-default`(value: Double): Self = this.set("x-side1-image-shift-default", value.asInstanceOf[js.Any])
+    def `setX-image-shift-supportedUndefined`: Self = StObject.set(x, "x-image-shift-supported", js.undefined)
     
     @scala.inline
-    def `deleteX-side1-image-shift-default`: Self = this.set("x-side1-image-shift-default", js.undefined)
+    def `setX-side1-image-shift-default`(value: Double): Self = StObject.set(x, "x-side1-image-shift-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-side1-image-shift-supported`(value: String): Self = this.set("x-side1-image-shift-supported", value.asInstanceOf[js.Any])
+    def `setX-side1-image-shift-defaultUndefined`: Self = StObject.set(x, "x-side1-image-shift-default", js.undefined)
     
     @scala.inline
-    def `deleteX-side1-image-shift-supported`: Self = this.set("x-side1-image-shift-supported", js.undefined)
+    def `setX-side1-image-shift-supported`(value: String): Self = StObject.set(x, "x-side1-image-shift-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-side2-image-shift-default`(value: Double): Self = this.set("x-side2-image-shift-default", value.asInstanceOf[js.Any])
+    def `setX-side1-image-shift-supportedUndefined`: Self = StObject.set(x, "x-side1-image-shift-supported", js.undefined)
     
     @scala.inline
-    def `deleteX-side2-image-shift-default`: Self = this.set("x-side2-image-shift-default", js.undefined)
+    def `setX-side2-image-shift-default`(value: Double): Self = StObject.set(x, "x-side2-image-shift-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-side2-image-shift-supported`(value: String): Self = this.set("x-side2-image-shift-supported", value.asInstanceOf[js.Any])
+    def `setX-side2-image-shift-defaultUndefined`: Self = StObject.set(x, "x-side2-image-shift-default", js.undefined)
     
     @scala.inline
-    def `deleteX-side2-image-shift-supported`: Self = this.set("x-side2-image-shift-supported", js.undefined)
+    def `setX-side2-image-shift-supported`(value: String): Self = StObject.set(x, "x-side2-image-shift-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-image-position-default`(value: YImagePosition): Self = this.set("y-image-position-default", value.asInstanceOf[js.Any])
+    def `setX-side2-image-shift-supportedUndefined`: Self = StObject.set(x, "x-side2-image-shift-supported", js.undefined)
     
     @scala.inline
-    def `deleteY-image-position-default`: Self = this.set("y-image-position-default", js.undefined)
+    def `setY-image-position-default`(value: YImagePosition): Self = StObject.set(x, "y-image-position-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-image-position-supportedVarargs`(value: YImagePosition*): Self = this.set("y-image-position-supported", js.Array(value :_*))
+    def `setY-image-position-defaultUndefined`: Self = StObject.set(x, "y-image-position-default", js.undefined)
     
     @scala.inline
-    def `setY-image-position-supported`(value: js.Array[YImagePosition]): Self = this.set("y-image-position-supported", value.asInstanceOf[js.Any])
+    def `setY-image-position-supported`(value: js.Array[YImagePosition]): Self = StObject.set(x, "y-image-position-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteY-image-position-supported`: Self = this.set("y-image-position-supported", js.undefined)
+    def `setY-image-position-supportedUndefined`: Self = StObject.set(x, "y-image-position-supported", js.undefined)
     
     @scala.inline
-    def `setY-image-shift-default`(value: Double): Self = this.set("y-image-shift-default", value.asInstanceOf[js.Any])
+    def `setY-image-position-supportedVarargs`(value: YImagePosition*): Self = StObject.set(x, "y-image-position-supported", js.Array(value :_*))
     
     @scala.inline
-    def `deleteY-image-shift-default`: Self = this.set("y-image-shift-default", js.undefined)
+    def `setY-image-shift-default`(value: Double): Self = StObject.set(x, "y-image-shift-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-image-shift-supported`(value: String): Self = this.set("y-image-shift-supported", value.asInstanceOf[js.Any])
+    def `setY-image-shift-defaultUndefined`: Self = StObject.set(x, "y-image-shift-default", js.undefined)
     
     @scala.inline
-    def `deleteY-image-shift-supported`: Self = this.set("y-image-shift-supported", js.undefined)
+    def `setY-image-shift-supported`(value: String): Self = StObject.set(x, "y-image-shift-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-side1-image-shift-default`(value: Double): Self = this.set("y-side1-image-shift-default", value.asInstanceOf[js.Any])
+    def `setY-image-shift-supportedUndefined`: Self = StObject.set(x, "y-image-shift-supported", js.undefined)
     
     @scala.inline
-    def `deleteY-side1-image-shift-default`: Self = this.set("y-side1-image-shift-default", js.undefined)
+    def `setY-side1-image-shift-default`(value: Double): Self = StObject.set(x, "y-side1-image-shift-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-side1-image-shift-supported`(value: String): Self = this.set("y-side1-image-shift-supported", value.asInstanceOf[js.Any])
+    def `setY-side1-image-shift-defaultUndefined`: Self = StObject.set(x, "y-side1-image-shift-default", js.undefined)
     
     @scala.inline
-    def `deleteY-side1-image-shift-supported`: Self = this.set("y-side1-image-shift-supported", js.undefined)
+    def `setY-side1-image-shift-supported`(value: String): Self = StObject.set(x, "y-side1-image-shift-supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-side2-image-shift-default`(value: Double): Self = this.set("y-side2-image-shift-default", value.asInstanceOf[js.Any])
+    def `setY-side1-image-shift-supportedUndefined`: Self = StObject.set(x, "y-side1-image-shift-supported", js.undefined)
     
     @scala.inline
-    def `deleteY-side2-image-shift-default`: Self = this.set("y-side2-image-shift-default", js.undefined)
+    def `setY-side2-image-shift-default`(value: Double): Self = StObject.set(x, "y-side2-image-shift-default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-side2-image-shift-supported`(value: String): Self = this.set("y-side2-image-shift-supported", value.asInstanceOf[js.Any])
+    def `setY-side2-image-shift-defaultUndefined`: Self = StObject.set(x, "y-side2-image-shift-default", js.undefined)
     
     @scala.inline
-    def `deleteY-side2-image-shift-supported`: Self = this.set("y-side2-image-shift-supported", js.undefined)
+    def `setY-side2-image-shift-supported`(value: String): Self = StObject.set(x, "y-side2-image-shift-supported", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setY-side2-image-shift-supportedUndefined`: Self = StObject.set(x, "y-side2-image-shift-supported", js.undefined)
   }
 }

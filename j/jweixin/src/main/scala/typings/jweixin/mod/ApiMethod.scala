@@ -1,5 +1,6 @@
 package typings.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jweixin.jweixinStrings.chooseCard
   - typings.jweixin.jweixinStrings.openCard
 */
-trait ApiMethod extends js.Object
+trait ApiMethod extends StObject
 object ApiMethod {
   
   @scala.inline

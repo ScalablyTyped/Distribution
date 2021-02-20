@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,57 +47,45 @@ object VRExperienceHelperOptions {
   }
   
   @scala.inline
-  implicit class VRExperienceHelperOptionsOps[Self <: VRExperienceHelperOptions] (val x: Self) extends AnyVal {
+  implicit class VRExperienceHelperOptionsMutableBuilder[Self <: VRExperienceHelperOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDeviceOrientationCamera(value: Boolean): Self = StObject.set(x, "createDeviceOrientationCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDeviceOrientationCameraUndefined: Self = StObject.set(x, "createDeviceOrientationCamera", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateFallbackVRDeviceOrientationFreeCamera(value: Boolean): Self = StObject.set(x, "createFallbackVRDeviceOrientationFreeCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDeviceOrientationCamera(value: Boolean): Self = this.set("createDeviceOrientationCamera", value.asInstanceOf[js.Any])
+    def setCreateFallbackVRDeviceOrientationFreeCameraUndefined: Self = StObject.set(x, "createFallbackVRDeviceOrientationFreeCamera", js.undefined)
     
     @scala.inline
-    def deleteCreateDeviceOrientationCamera: Self = this.set("createDeviceOrientationCamera", js.undefined)
+    def setFloorMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFallbackVRDeviceOrientationFreeCamera(value: Boolean): Self = this.set("createFallbackVRDeviceOrientationFreeCamera", value.asInstanceOf[js.Any])
+    def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
     @scala.inline
-    def deleteCreateFallbackVRDeviceOrientationFreeCamera: Self = this.set("createFallbackVRDeviceOrientationFreeCamera", js.undefined)
+    def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
     
     @scala.inline
-    def setFloorMeshesVarargs(value: Mesh*): Self = this.set("floorMeshes", js.Array(value :_*))
+    def setLaserToggle(value: Boolean): Self = StObject.set(x, "laserToggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorMeshes(value: js.Array[Mesh]): Self = this.set("floorMeshes", value.asInstanceOf[js.Any])
+    def setLaserToggleUndefined: Self = StObject.set(x, "laserToggle", js.undefined)
     
     @scala.inline
-    def deleteFloorMeshes: Self = this.set("floorMeshes", js.undefined)
+    def setUseXR(value: Boolean): Self = StObject.set(x, "useXR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaserToggle(value: Boolean): Self = this.set("laserToggle", value.asInstanceOf[js.Any])
+    def setUseXRUndefined: Self = StObject.set(x, "useXR", js.undefined)
     
     @scala.inline
-    def deleteLaserToggle: Self = this.set("laserToggle", js.undefined)
+    def setVrDeviceOrientationCameraMetrics(value: VRCameraMetrics): Self = StObject.set(x, "vrDeviceOrientationCameraMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseXR(value: Boolean): Self = this.set("useXR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseXR: Self = this.set("useXR", js.undefined)
-    
-    @scala.inline
-    def setVrDeviceOrientationCameraMetrics(value: VRCameraMetrics): Self = this.set("vrDeviceOrientationCameraMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVrDeviceOrientationCameraMetrics: Self = this.set("vrDeviceOrientationCameraMetrics", js.undefined)
+    def setVrDeviceOrientationCameraMetricsUndefined: Self = StObject.set(x, "vrDeviceOrientationCameraMetrics", js.undefined)
   }
 }

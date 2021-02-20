@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement extends js.Object {
+trait RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IP Set that this statement references.
@@ -28,27 +29,15 @@ object RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementOps[Self <: RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpSetForwardedIpConfig(value: RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): Self = StObject.set(x, "ipSetForwardedIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIpSetForwardedIpConfig(value: RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): Self = this.set("ipSetForwardedIpConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpSetForwardedIpConfig: Self = this.set("ipSetForwardedIpConfig", js.undefined)
+    def setIpSetForwardedIpConfigUndefined: Self = StObject.set(x, "ipSetForwardedIpConfig", js.undefined)
   }
 }

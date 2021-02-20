@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDBSnapshotAttributeMessage extends js.Object {
+trait ModifyDBSnapshotAttributeMessage extends StObject {
   
   /**
     * The name of the DB snapshot attribute to modify. To manage authorization for other AWS accounts to copy or restore a manual DB snapshot, set this value to restore.  To view the list of attributes available to modify, use the DescribeDBSnapshotAttributes API action. 
@@ -36,42 +37,30 @@ object ModifyDBSnapshotAttributeMessage {
   }
   
   @scala.inline
-  implicit class ModifyDBSnapshotAttributeMessageOps[Self <: ModifyDBSnapshotAttributeMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyDBSnapshotAttributeMessageMutableBuilder[Self <: ModifyDBSnapshotAttributeMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValuesToAdd(value: AttributeValueList): Self = StObject.set(x, "ValuesToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    def setValuesToAddUndefined: Self = StObject.set(x, "ValuesToAdd", js.undefined)
     
     @scala.inline
-    def setDBSnapshotIdentifier(value: String): Self = this.set("DBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setValuesToAddVarargs(value: String*): Self = StObject.set(x, "ValuesToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setValuesToAddVarargs(value: String*): Self = this.set("ValuesToAdd", js.Array(value :_*))
+    def setValuesToRemove(value: AttributeValueList): Self = StObject.set(x, "ValuesToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesToAdd(value: AttributeValueList): Self = this.set("ValuesToAdd", value.asInstanceOf[js.Any])
+    def setValuesToRemoveUndefined: Self = StObject.set(x, "ValuesToRemove", js.undefined)
     
     @scala.inline
-    def deleteValuesToAdd: Self = this.set("ValuesToAdd", js.undefined)
-    
-    @scala.inline
-    def setValuesToRemoveVarargs(value: String*): Self = this.set("ValuesToRemove", js.Array(value :_*))
-    
-    @scala.inline
-    def setValuesToRemove(value: AttributeValueList): Self = this.set("ValuesToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuesToRemove: Self = this.set("ValuesToRemove", js.undefined)
+    def setValuesToRemoveVarargs(value: String*): Self = StObject.set(x, "ValuesToRemove", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PendingCloudwatchLogsExports extends js.Object {
+trait PendingCloudwatchLogsExports extends StObject {
   
   /**
     * Log types that are in the process of being enabled. After they are enabled, these log types are exported to Amazon CloudWatch Logs.
@@ -26,36 +27,24 @@ object PendingCloudwatchLogsExports {
   }
   
   @scala.inline
-  implicit class PendingCloudwatchLogsExportsOps[Self <: PendingCloudwatchLogsExports] (val x: Self) extends AnyVal {
+  implicit class PendingCloudwatchLogsExportsMutableBuilder[Self <: PendingCloudwatchLogsExports] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogTypesToDisable(value: LogTypeList): Self = StObject.set(x, "LogTypesToDisable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogTypesToDisableUndefined: Self = StObject.set(x, "LogTypesToDisable", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogTypesToDisableVarargs(value: String*): Self = StObject.set(x, "LogTypesToDisable", js.Array(value :_*))
     
     @scala.inline
-    def setLogTypesToDisableVarargs(value: String*): Self = this.set("LogTypesToDisable", js.Array(value :_*))
+    def setLogTypesToEnable(value: LogTypeList): Self = StObject.set(x, "LogTypesToEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogTypesToDisable(value: LogTypeList): Self = this.set("LogTypesToDisable", value.asInstanceOf[js.Any])
+    def setLogTypesToEnableUndefined: Self = StObject.set(x, "LogTypesToEnable", js.undefined)
     
     @scala.inline
-    def deleteLogTypesToDisable: Self = this.set("LogTypesToDisable", js.undefined)
-    
-    @scala.inline
-    def setLogTypesToEnableVarargs(value: String*): Self = this.set("LogTypesToEnable", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogTypesToEnable(value: LogTypeList): Self = this.set("LogTypesToEnable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogTypesToEnable: Self = this.set("LogTypesToEnable", js.undefined)
+    def setLogTypesToEnableVarargs(value: String*): Self = StObject.set(x, "LogTypesToEnable", js.Array(value :_*))
   }
 }

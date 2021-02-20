@@ -5,6 +5,7 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Filter
 import typings.openui5.sap.ui.model.TreeBinding
 import typings.openui5.sap.ui.model.analytics.odata4analytics.QueryResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

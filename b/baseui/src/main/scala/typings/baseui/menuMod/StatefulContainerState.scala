@@ -1,11 +1,12 @@
 package typings.baseui.menuMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatefulContainerState extends js.Object {
+trait StatefulContainerState extends StObject {
   
   var activedescendantId: js.UndefOr[String] = js.native
   
@@ -22,30 +23,18 @@ object StatefulContainerState {
   }
   
   @scala.inline
-  implicit class StatefulContainerStateOps[Self <: StatefulContainerState] (val x: Self) extends AnyVal {
+  implicit class StatefulContainerStateMutableBuilder[Self <: StatefulContainerState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivedescendantIdUndefined: Self = StObject.set(x, "activedescendantId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightedIndex(value: Double): Self = this.set("highlightedIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = this.set("isFocused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivedescendantId(value: String): Self = this.set("activedescendantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivedescendantId: Self = this.set("activedescendantId", js.undefined)
+    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
   }
 }

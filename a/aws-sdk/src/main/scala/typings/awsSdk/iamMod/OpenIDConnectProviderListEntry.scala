@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenIDConnectProviderListEntry extends js.Object {
+trait OpenIDConnectProviderListEntry extends StObject {
   
   var Arn: js.UndefOr[arnType] = js.native
 }
@@ -18,24 +19,12 @@ object OpenIDConnectProviderListEntry {
   }
   
   @scala.inline
-  implicit class OpenIDConnectProviderListEntryOps[Self <: OpenIDConnectProviderListEntry] (val x: Self) extends AnyVal {
+  implicit class OpenIDConnectProviderListEntryMutableBuilder[Self <: OpenIDConnectProviderListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.antDesignReactNative.anon
 
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/search-bar/style.SearchBarStyle> */
 @js.native
-trait PartialSearchBarStyle extends js.Object {
+trait PartialSearchBarStyle extends StObject {
   
   var cancelText: js.UndefOr[TextStyle] = js.native
   
@@ -31,54 +32,42 @@ object PartialSearchBarStyle {
   }
   
   @scala.inline
-  implicit class PartialSearchBarStyleOps[Self <: PartialSearchBarStyle] (val x: Self) extends AnyVal {
+  implicit class PartialSearchBarStyleMutableBuilder[Self <: PartialSearchBarStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelTextContainerUndefined: Self = StObject.set(x, "cancelTextContainer", js.undefined)
     
     @scala.inline
-    def setCancelText(value: TextStyle): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTextContainer(value: ViewStyle): Self = this.set("cancelTextContainer", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteCancelTextContainer: Self = this.set("cancelTextContainer", js.undefined)
+    def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: TextStyle): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInputWrapperUndefined: Self = StObject.set(x, "inputWrapper", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setSearch(value: TextStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputWrapper(value: ViewStyle): Self = this.set("inputWrapper", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteInputWrapper: Self = this.set("inputWrapper", js.undefined)
+    def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: TextStyle): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setWrapper(value: ViewStyle): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

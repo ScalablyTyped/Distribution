@@ -1,5 +1,6 @@
 package typings.microsoftAjax.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link http://msdn.microsoft.com/en-us/library/dd393798(v=vs.100).aspx}
   */
 @js.native
-trait CollectionChange extends js.Object {
+trait CollectionChange extends StObject {
   
   //#endregion
   //#region Fields
@@ -57,39 +58,27 @@ object CollectionChange {
   }
   
   @scala.inline
-  implicit class CollectionChangeOps[Self <: CollectionChange] (val x: Self) extends AnyVal {
+  implicit class CollectionChangeMutableBuilder[Self <: CollectionChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: NotifyCollectionChangedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewItems(value: js.Array[_]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewItemsVarargs(value: js.Any*): Self = StObject.set(x, "newItems", js.Array(value :_*))
     
     @scala.inline
-    def setAction(value: NotifyCollectionChangedAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setNewStartingIndex(value: Double): Self = StObject.set(x, "newStartingIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewItemsVarargs(value: js.Any*): Self = this.set("newItems", js.Array(value :_*))
+    def setOldItems(value: js.Array[_]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewItems(value: js.Array[_]): Self = this.set("newItems", value.asInstanceOf[js.Any])
+    def setOldItemsVarargs(value: js.Any*): Self = StObject.set(x, "oldItems", js.Array(value :_*))
     
     @scala.inline
-    def setNewStartingIndex(value: Double): Self = this.set("newStartingIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldItemsVarargs(value: js.Any*): Self = this.set("oldItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setOldItems(value: js.Array[_]): Self = this.set("oldItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldStartingIndex(value: Double): Self = this.set("oldStartingIndex", value.asInstanceOf[js.Any])
+    def setOldStartingIndex(value: Double): Self = StObject.set(x, "oldStartingIndex", value.asInstanceOf[js.Any])
   }
 }

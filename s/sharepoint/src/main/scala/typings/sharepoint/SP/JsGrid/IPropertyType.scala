@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.JsGrid
 
 import typings.sharepoint.anon.DataValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyType extends js.Object {
+trait IPropertyType extends StObject {
   
   def BeginValidateNormalizeConvert(
     recordKey: Double,
@@ -31,24 +32,12 @@ object IPropertyType {
   }
   
   @scala.inline
-  implicit class IPropertyTypeOps[Self <: IPropertyType] (val x: Self) extends AnyVal {
+  implicit class IPropertyTypeMutableBuilder[Self <: IPropertyType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginValidateNormalizeConvert(value: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBeginValidateNormalizeConvert(value: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit): Self = this.set("BeginValidateNormalizeConvert", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }
 }

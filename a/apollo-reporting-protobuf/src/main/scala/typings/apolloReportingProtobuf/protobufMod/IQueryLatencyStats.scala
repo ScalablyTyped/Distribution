@@ -1,11 +1,12 @@
 package typings.apolloReportingProtobuf.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQueryLatencyStats extends js.Object {
+trait IQueryLatencyStats extends StObject {
   
   /** QueryLatencyStats cacheHits */
   var cacheHits: js.UndefOr[Double | Null] = js.native
@@ -52,138 +53,126 @@ object IQueryLatencyStats {
   }
   
   @scala.inline
-  implicit class IQueryLatencyStatsOps[Self <: IQueryLatencyStats] (val x: Self) extends AnyVal {
+  implicit class IQueryLatencyStatsMutableBuilder[Self <: IQueryLatencyStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheHits(value: Double): Self = StObject.set(x, "cacheHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheHitsNull: Self = StObject.set(x, "cacheHits", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheHitsUndefined: Self = StObject.set(x, "cacheHits", js.undefined)
     
     @scala.inline
-    def setCacheHits(value: Double): Self = this.set("cacheHits", value.asInstanceOf[js.Any])
+    def setCacheLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "cacheLatencyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheHits: Self = this.set("cacheHits", js.undefined)
+    def setCacheLatencyCountNull: Self = StObject.set(x, "cacheLatencyCount", null)
     
     @scala.inline
-    def setCacheHitsNull: Self = this.set("cacheHits", null)
+    def setCacheLatencyCountUndefined: Self = StObject.set(x, "cacheLatencyCount", js.undefined)
     
     @scala.inline
-    def setCacheLatencyCountVarargs(value: Double*): Self = this.set("cacheLatencyCount", js.Array(value :_*))
+    def setCacheLatencyCountVarargs(value: Double*): Self = StObject.set(x, "cacheLatencyCount", js.Array(value :_*))
     
     @scala.inline
-    def setCacheLatencyCount(value: js.Array[Double]): Self = this.set("cacheLatencyCount", value.asInstanceOf[js.Any])
+    def setForbiddenOperationCount(value: Double): Self = StObject.set(x, "forbiddenOperationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheLatencyCount: Self = this.set("cacheLatencyCount", js.undefined)
+    def setForbiddenOperationCountNull: Self = StObject.set(x, "forbiddenOperationCount", null)
     
     @scala.inline
-    def setCacheLatencyCountNull: Self = this.set("cacheLatencyCount", null)
+    def setForbiddenOperationCountUndefined: Self = StObject.set(x, "forbiddenOperationCount", js.undefined)
     
     @scala.inline
-    def setForbiddenOperationCount(value: Double): Self = this.set("forbiddenOperationCount", value.asInstanceOf[js.Any])
+    def setLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "latencyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForbiddenOperationCount: Self = this.set("forbiddenOperationCount", js.undefined)
+    def setLatencyCountNull: Self = StObject.set(x, "latencyCount", null)
     
     @scala.inline
-    def setForbiddenOperationCountNull: Self = this.set("forbiddenOperationCount", null)
+    def setLatencyCountUndefined: Self = StObject.set(x, "latencyCount", js.undefined)
     
     @scala.inline
-    def setLatencyCountVarargs(value: Double*): Self = this.set("latencyCount", js.Array(value :_*))
+    def setLatencyCountVarargs(value: Double*): Self = StObject.set(x, "latencyCount", js.Array(value :_*))
     
     @scala.inline
-    def setLatencyCount(value: js.Array[Double]): Self = this.set("latencyCount", value.asInstanceOf[js.Any])
+    def setPersistedQueryHits(value: Double): Self = StObject.set(x, "persistedQueryHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatencyCount: Self = this.set("latencyCount", js.undefined)
+    def setPersistedQueryHitsNull: Self = StObject.set(x, "persistedQueryHits", null)
     
     @scala.inline
-    def setLatencyCountNull: Self = this.set("latencyCount", null)
+    def setPersistedQueryHitsUndefined: Self = StObject.set(x, "persistedQueryHits", js.undefined)
     
     @scala.inline
-    def setPersistedQueryHits(value: Double): Self = this.set("persistedQueryHits", value.asInstanceOf[js.Any])
+    def setPersistedQueryMisses(value: Double): Self = StObject.set(x, "persistedQueryMisses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistedQueryHits: Self = this.set("persistedQueryHits", js.undefined)
+    def setPersistedQueryMissesNull: Self = StObject.set(x, "persistedQueryMisses", null)
     
     @scala.inline
-    def setPersistedQueryHitsNull: Self = this.set("persistedQueryHits", null)
+    def setPersistedQueryMissesUndefined: Self = StObject.set(x, "persistedQueryMisses", js.undefined)
     
     @scala.inline
-    def setPersistedQueryMisses(value: Double): Self = this.set("persistedQueryMisses", value.asInstanceOf[js.Any])
+    def setPrivateCacheTtlCount(value: js.Array[Double]): Self = StObject.set(x, "privateCacheTtlCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistedQueryMisses: Self = this.set("persistedQueryMisses", js.undefined)
+    def setPrivateCacheTtlCountNull: Self = StObject.set(x, "privateCacheTtlCount", null)
     
     @scala.inline
-    def setPersistedQueryMissesNull: Self = this.set("persistedQueryMisses", null)
+    def setPrivateCacheTtlCountUndefined: Self = StObject.set(x, "privateCacheTtlCount", js.undefined)
     
     @scala.inline
-    def setPrivateCacheTtlCountVarargs(value: Double*): Self = this.set("privateCacheTtlCount", js.Array(value :_*))
+    def setPrivateCacheTtlCountVarargs(value: Double*): Self = StObject.set(x, "privateCacheTtlCount", js.Array(value :_*))
     
     @scala.inline
-    def setPrivateCacheTtlCount(value: js.Array[Double]): Self = this.set("privateCacheTtlCount", value.asInstanceOf[js.Any])
+    def setPublicCacheTtlCount(value: js.Array[Double]): Self = StObject.set(x, "publicCacheTtlCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivateCacheTtlCount: Self = this.set("privateCacheTtlCount", js.undefined)
+    def setPublicCacheTtlCountNull: Self = StObject.set(x, "publicCacheTtlCount", null)
     
     @scala.inline
-    def setPrivateCacheTtlCountNull: Self = this.set("privateCacheTtlCount", null)
+    def setPublicCacheTtlCountUndefined: Self = StObject.set(x, "publicCacheTtlCount", js.undefined)
     
     @scala.inline
-    def setPublicCacheTtlCountVarargs(value: Double*): Self = this.set("publicCacheTtlCount", js.Array(value :_*))
+    def setPublicCacheTtlCountVarargs(value: Double*): Self = StObject.set(x, "publicCacheTtlCount", js.Array(value :_*))
     
     @scala.inline
-    def setPublicCacheTtlCount(value: js.Array[Double]): Self = this.set("publicCacheTtlCount", value.asInstanceOf[js.Any])
+    def setRegisteredOperationCount(value: Double): Self = StObject.set(x, "registeredOperationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublicCacheTtlCount: Self = this.set("publicCacheTtlCount", js.undefined)
+    def setRegisteredOperationCountNull: Self = StObject.set(x, "registeredOperationCount", null)
     
     @scala.inline
-    def setPublicCacheTtlCountNull: Self = this.set("publicCacheTtlCount", null)
+    def setRegisteredOperationCountUndefined: Self = StObject.set(x, "registeredOperationCount", js.undefined)
     
     @scala.inline
-    def setRegisteredOperationCount(value: Double): Self = this.set("registeredOperationCount", value.asInstanceOf[js.Any])
+    def setRequestCount(value: Double): Self = StObject.set(x, "requestCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegisteredOperationCount: Self = this.set("registeredOperationCount", js.undefined)
+    def setRequestCountNull: Self = StObject.set(x, "requestCount", null)
     
     @scala.inline
-    def setRegisteredOperationCountNull: Self = this.set("registeredOperationCount", null)
+    def setRequestCountUndefined: Self = StObject.set(x, "requestCount", js.undefined)
     
     @scala.inline
-    def setRequestCount(value: Double): Self = this.set("requestCount", value.asInstanceOf[js.Any])
+    def setRequestsWithErrorsCount(value: Double): Self = StObject.set(x, "requestsWithErrorsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestCount: Self = this.set("requestCount", js.undefined)
+    def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
     
     @scala.inline
-    def setRequestCountNull: Self = this.set("requestCount", null)
+    def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
     
     @scala.inline
-    def setRequestsWithErrorsCount(value: Double): Self = this.set("requestsWithErrorsCount", value.asInstanceOf[js.Any])
+    def setRootErrorStats(value: IPathErrorStats): Self = StObject.set(x, "rootErrorStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestsWithErrorsCount: Self = this.set("requestsWithErrorsCount", js.undefined)
+    def setRootErrorStatsNull: Self = StObject.set(x, "rootErrorStats", null)
     
     @scala.inline
-    def setRequestsWithErrorsCountNull: Self = this.set("requestsWithErrorsCount", null)
-    
-    @scala.inline
-    def setRootErrorStats(value: IPathErrorStats): Self = this.set("rootErrorStats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootErrorStats: Self = this.set("rootErrorStats", js.undefined)
-    
-    @scala.inline
-    def setRootErrorStatsNull: Self = this.set("rootErrorStats", null)
+    def setRootErrorStatsUndefined: Self = StObject.set(x, "rootErrorStats", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.framebus
 
 import typings.framebus.typesMod.FramebusOnHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("framebus/dist/lib/subscription-args-invalid", JSImport.Namespace)
-@js.native
-object subscriptionArgsInvalidMod extends js.Object {
+object subscriptionArgsInvalidMod {
   
+  @JSImport("framebus/dist/lib/subscription-args-invalid", "subscriptionArgsInvalid")
+  @js.native
   def subscriptionArgsInvalid(event: String, fn: FramebusOnHandler, origin: String): Boolean = js.native
 }

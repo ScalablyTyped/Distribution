@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Link extends js.Object {
+trait Link extends StObject {
   
   /** If set, indicates this is a link to the specific page in this presentation with this ID. A page with this ID may not exist. */
   var pageObjectId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Link {
   }
   
   @scala.inline
-  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelativeLink(value: String): Self = StObject.set(x, "relativeLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageObjectId(value: String): Self = this.set("pageObjectId", value.asInstanceOf[js.Any])
+    def setRelativeLinkUndefined: Self = StObject.set(x, "relativeLink", js.undefined)
     
     @scala.inline
-    def deletePageObjectId: Self = this.set("pageObjectId", js.undefined)
+    def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeLink(value: String): Self = this.set("relativeLink", value.asInstanceOf[js.Any])
+    def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
     
     @scala.inline
-    def deleteRelativeLink: Self = this.set("relativeLink", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideIndex(value: Double): Self = this.set("slideIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideIndex: Self = this.set("slideIndex", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.rxLite.Rx
 
 import typings.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object SingleAssignmentDisposable {
   }
   
   @scala.inline
-  implicit class SingleAssignmentDisposableOps[Self <: SingleAssignmentDisposable] (val x: Self) extends AnyVal {
+  implicit class SingleAssignmentDisposableMutableBuilder[Self <: SingleAssignmentDisposable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: IDisposable): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: IDisposable): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDisposable(value: () => IDisposable): Self = this.set("getDisposable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsDisposed(value: Boolean): Self = this.set("isDisposed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetDisposable(value: IDisposable => Unit): Self = this.set("setDisposable", js.Any.fromFunction1(value))
+    def setSetDisposable(value: IDisposable => Unit): Self = StObject.set(x, "setDisposable", js.Any.fromFunction1(value))
   }
 }

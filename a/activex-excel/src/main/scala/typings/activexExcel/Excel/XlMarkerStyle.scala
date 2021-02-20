@@ -12,6 +12,7 @@ import typings.activexExcel.activexExcelNumbers.`3`
 import typings.activexExcel.activexExcelNumbers.`5`
 import typings.activexExcel.activexExcelNumbers.`8`
 import typings.activexExcel.activexExcelNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`3`
   - typings.activexExcel.activexExcelNumbers.`-4168`
 */
-trait XlMarkerStyle extends js.Object
+trait XlMarkerStyle extends StObject
 object XlMarkerStyle {
   
   @scala.inline

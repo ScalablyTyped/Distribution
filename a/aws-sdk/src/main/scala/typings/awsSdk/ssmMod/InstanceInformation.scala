@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceInformation extends js.Object {
+trait InstanceInformation extends StObject {
   
   /**
     * The activation ID created by Systems Manager when the server or VM was registered.
@@ -111,132 +112,120 @@ object InstanceInformation {
   }
   
   @scala.inline
-  implicit class InstanceInformationOps[Self <: InstanceInformation] (val x: Self) extends AnyVal {
+  implicit class InstanceInformationMutableBuilder[Self <: InstanceInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationIdUndefined: Self = StObject.set(x, "ActivationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentVersion(value: Version): Self = StObject.set(x, "AgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationId(value: ActivationId): Self = this.set("ActivationId", value.asInstanceOf[js.Any])
+    def setAgentVersionUndefined: Self = StObject.set(x, "AgentVersion", js.undefined)
     
     @scala.inline
-    def deleteActivationId: Self = this.set("ActivationId", js.undefined)
+    def setAssociationOverview(value: InstanceAggregatedAssociationOverview): Self = StObject.set(x, "AssociationOverview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentVersion(value: Version): Self = this.set("AgentVersion", value.asInstanceOf[js.Any])
+    def setAssociationOverviewUndefined: Self = StObject.set(x, "AssociationOverview", js.undefined)
     
     @scala.inline
-    def deleteAgentVersion: Self = this.set("AgentVersion", js.undefined)
+    def setAssociationStatus(value: StatusName): Self = StObject.set(x, "AssociationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationOverview(value: InstanceAggregatedAssociationOverview): Self = this.set("AssociationOverview", value.asInstanceOf[js.Any])
+    def setAssociationStatusUndefined: Self = StObject.set(x, "AssociationStatus", js.undefined)
     
     @scala.inline
-    def deleteAssociationOverview: Self = this.set("AssociationOverview", js.undefined)
+    def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationStatus(value: StatusName): Self = this.set("AssociationStatus", value.asInstanceOf[js.Any])
+    def setComputerNameUndefined: Self = StObject.set(x, "ComputerName", js.undefined)
     
     @scala.inline
-    def deleteAssociationStatus: Self = this.set("AssociationStatus", js.undefined)
+    def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputerName(value: ComputerName): Self = this.set("ComputerName", value.asInstanceOf[js.Any])
+    def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
     
     @scala.inline
-    def deleteComputerName: Self = this.set("ComputerName", js.undefined)
+    def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPAddress(value: IPAddress): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    def setIamRoleUndefined: Self = StObject.set(x, "IamRole", js.undefined)
     
     @scala.inline
-    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRole(value: IamRole): Self = this.set("IamRole", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def deleteIamRole: Self = this.set("IamRole", js.undefined)
+    def setIsLatestVersion(value: Boolean): Self = StObject.set(x, "IsLatestVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setIsLatestVersionUndefined: Self = StObject.set(x, "IsLatestVersion", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setLastAssociationExecutionDate(value: DateTime): Self = StObject.set(x, "LastAssociationExecutionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLatestVersion(value: Boolean): Self = this.set("IsLatestVersion", value.asInstanceOf[js.Any])
+    def setLastAssociationExecutionDateUndefined: Self = StObject.set(x, "LastAssociationExecutionDate", js.undefined)
     
     @scala.inline
-    def deleteIsLatestVersion: Self = this.set("IsLatestVersion", js.undefined)
+    def setLastPingDateTime(value: DateTime): Self = StObject.set(x, "LastPingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAssociationExecutionDate(value: DateTime): Self = this.set("LastAssociationExecutionDate", value.asInstanceOf[js.Any])
+    def setLastPingDateTimeUndefined: Self = StObject.set(x, "LastPingDateTime", js.undefined)
     
     @scala.inline
-    def deleteLastAssociationExecutionDate: Self = this.set("LastAssociationExecutionDate", js.undefined)
+    def setLastSuccessfulAssociationExecutionDate(value: DateTime): Self = StObject.set(x, "LastSuccessfulAssociationExecutionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPingDateTime(value: DateTime): Self = this.set("LastPingDateTime", value.asInstanceOf[js.Any])
+    def setLastSuccessfulAssociationExecutionDateUndefined: Self = StObject.set(x, "LastSuccessfulAssociationExecutionDate", js.undefined)
     
     @scala.inline
-    def deleteLastPingDateTime: Self = this.set("LastPingDateTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSuccessfulAssociationExecutionDate(value: DateTime): Self = this.set("LastSuccessfulAssociationExecutionDate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastSuccessfulAssociationExecutionDate: Self = this.set("LastSuccessfulAssociationExecutionDate", js.undefined)
+    def setPingStatus(value: PingStatus): Self = StObject.set(x, "PingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPingStatusUndefined: Self = StObject.set(x, "PingStatus", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPlatformName(value: String): Self = StObject.set(x, "PlatformName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPingStatus(value: PingStatus): Self = this.set("PingStatus", value.asInstanceOf[js.Any])
+    def setPlatformNameUndefined: Self = StObject.set(x, "PlatformName", js.undefined)
     
     @scala.inline
-    def deletePingStatus: Self = this.set("PingStatus", js.undefined)
+    def setPlatformType(value: PlatformType): Self = StObject.set(x, "PlatformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformName(value: String): Self = this.set("PlatformName", value.asInstanceOf[js.Any])
+    def setPlatformTypeUndefined: Self = StObject.set(x, "PlatformType", js.undefined)
     
     @scala.inline
-    def deletePlatformName: Self = this.set("PlatformName", js.undefined)
+    def setPlatformVersion(value: String): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: PlatformType): Self = this.set("PlatformType", value.asInstanceOf[js.Any])
+    def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("PlatformType", js.undefined)
+    def setRegistrationDate(value: DateTime): Self = StObject.set(x, "RegistrationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformVersion(value: String): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
+    def setRegistrationDateUndefined: Self = StObject.set(x, "RegistrationDate", js.undefined)
     
     @scala.inline
-    def deletePlatformVersion: Self = this.set("PlatformVersion", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrationDate(value: DateTime): Self = this.set("RegistrationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistrationDate: Self = this.set("RegistrationDate", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

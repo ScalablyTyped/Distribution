@@ -4,12 +4,13 @@ import typings.stripeV3.anon.Address
 import typings.stripeV3.anon.Authenticated
 import typings.stripeV3.anon.Bankcode
 import typings.stripeV3.anon.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   var card: js.UndefOr[Card] = js.native
   
@@ -40,63 +41,51 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOwner(value: Address): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Address): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRedirect(value: Status): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: Card): Self = this.set("card", value.asInstanceOf[js.Any])
+    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
     @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
+    def setSepa_debit(value: Bankcode): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect(value: Status): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    def setSepa_debitUndefined: Self = StObject.set(x, "sepa_debit", js.undefined)
     
     @scala.inline
-    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSepa_debit(value: Bankcode): Self = this.set("sepa_debit", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSepa_debit: Self = this.set("sepa_debit", js.undefined)
+    def setThree_d_secure(value: Authenticated): Self = StObject.set(x, "three_d_secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setThree_d_secure(value: Authenticated): Self = this.set("three_d_secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThree_d_secure: Self = this.set("three_d_secure", js.undefined)
+    def setThree_d_secureUndefined: Self = StObject.set(x, "three_d_secure", js.undefined)
   }
 }

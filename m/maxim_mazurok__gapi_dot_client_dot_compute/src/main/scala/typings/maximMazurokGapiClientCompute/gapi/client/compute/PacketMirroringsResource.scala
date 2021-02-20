@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCompute.anon.OauthtokenPacketMirroring
 import typings.maximMazurokGapiClientCompute.anon.PacketMirroringPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserRegionRequestId
 import typings.maximMazurokGapiClientCompute.anon.RegionResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PacketMirroringsResource extends js.Object {
+trait PacketMirroringsResource extends StObject {
   
   /** Retrieves an aggregated list of packetMirrorings. */
   def aggregatedList(): Request[PacketMirroringAggregatedList] = js.native

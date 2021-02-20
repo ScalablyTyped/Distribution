@@ -1,11 +1,12 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingBox extends js.Object {
+trait BoundingBox extends StObject {
   
   var east: Double = js.native
   
@@ -24,30 +25,18 @@ object BoundingBox {
   }
   
   @scala.inline
-  implicit class BoundingBoxOps[Self <: BoundingBox] (val x: Self) extends AnyVal {
+  implicit class BoundingBoxMutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEast(value: Double): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNorth(value: Double): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSouth(value: Double): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEast(value: Double): Self = this.set("east", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNorth(value: Double): Self = this.set("north", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouth(value: Double): Self = this.set("south", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWest(value: Double): Self = this.set("west", value.asInstanceOf[js.Any])
+    def setWest(value: Double): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
   }
 }

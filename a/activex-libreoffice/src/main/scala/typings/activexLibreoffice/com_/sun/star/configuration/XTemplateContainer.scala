@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,24 +55,12 @@ object XTemplateContainer {
   }
   
   @scala.inline
-  implicit class XTemplateContainerOps[Self <: XTemplateContainer] (val x: Self) extends AnyVal {
+  implicit class XTemplateContainerMutableBuilder[Self <: XTemplateContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementTemplateName(value: String): Self = StObject.set(x, "ElementTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElementTemplateName(value: String): Self = this.set("ElementTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetElementTemplateName(value: () => String): Self = this.set("getElementTemplateName", js.Any.fromFunction0(value))
+    def setGetElementTemplateName(value: () => String): Self = StObject.set(x, "getElementTemplateName", js.Any.fromFunction0(value))
   }
 }

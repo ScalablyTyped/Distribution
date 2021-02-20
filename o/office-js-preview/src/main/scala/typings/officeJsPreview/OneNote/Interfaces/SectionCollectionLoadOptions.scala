@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait SectionCollectionLoadOptions extends js.Object {
+trait SectionCollectionLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -105,84 +106,72 @@ object SectionCollectionLoadOptions {
   }
   
   @scala.inline
-  implicit class SectionCollectionLoadOptionsOps[Self <: SectionCollectionLoadOptions] (val x: Self) extends AnyVal {
+  implicit class SectionCollectionLoadOptionsMutableBuilder[Self <: SectionCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientUrl(value: Boolean): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientUrl(value: Boolean): Self = this.set("clientUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteClientUrl: Self = this.set("clientUrl", js.undefined)
+    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEncrypted(value: Boolean): Self = this.set("isEncrypted", value.asInstanceOf[js.Any])
+    def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
     @scala.inline
-    def deleteIsEncrypted: Self = this.set("isEncrypted", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocked(value: Boolean): Self = this.set("isLocked", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsLocked: Self = this.set("isLocked", js.undefined)
+    def setNotebook(value: NotebookLoadOptions): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotebookUndefined: Self = StObject.set(x, "notebook", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPages(value: PageCollectionLoadOptions): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebook(value: NotebookLoadOptions): Self = this.set("notebook", value.asInstanceOf[js.Any])
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def deleteNotebook: Self = this.set("notebook", js.undefined)
+    def setParentSectionGroup(value: SectionGroupLoadOptions): Self = StObject.set(x, "parentSectionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: PageCollectionLoadOptions): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setParentSectionGroupOrNull(value: SectionGroupLoadOptions): Self = StObject.set(x, "parentSectionGroupOrNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setParentSectionGroupOrNullUndefined: Self = StObject.set(x, "parentSectionGroupOrNull", js.undefined)
     
     @scala.inline
-    def setParentSectionGroup(value: SectionGroupLoadOptions): Self = this.set("parentSectionGroup", value.asInstanceOf[js.Any])
+    def setParentSectionGroupUndefined: Self = StObject.set(x, "parentSectionGroup", js.undefined)
     
     @scala.inline
-    def deleteParentSectionGroup: Self = this.set("parentSectionGroup", js.undefined)
+    def setWebUrl(value: Boolean): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentSectionGroupOrNull(value: SectionGroupLoadOptions): Self = this.set("parentSectionGroupOrNull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentSectionGroupOrNull: Self = this.set("parentSectionGroupOrNull", js.undefined)
-    
-    @scala.inline
-    def setWebUrl(value: Boolean): Self = this.set("webUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
+    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ObtainTokenResponse")
 @js.native
-class ObtainTokenResponse () extends js.Object {
+class ObtainTokenResponse () extends StObject {
   
   /**
     * A valid OAuth access token. OAuth access tokens are 64 bytes long.

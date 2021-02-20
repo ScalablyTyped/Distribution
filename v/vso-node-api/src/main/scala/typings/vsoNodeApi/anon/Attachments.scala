@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachments extends js.Object {
+trait Attachments extends StObject {
   
   var attachments: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Attachments {
   }
   
   @scala.inline
-  implicit class AttachmentsOps[Self <: Attachments] (val x: Self) extends AnyVal {
+  implicit class AttachmentsMutableBuilder[Self <: Attachments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: scala.Double): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: scala.Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: scala.Double): Self = this.set("attachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: scala.Double): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHistory(value: scala.Double): Self = this.set("history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinks(value: scala.Double): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setLinks(value: scala.Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
   }
 }

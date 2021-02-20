@@ -1,79 +1,62 @@
 package typings.mumath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mumath", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("mumath", "clamp")
   @js.native
-  object clamp extends js.Object {
-    
-    def apply(value: Double, left: Double, right: Double): Double = js.native
-  }
+  def clamp(value: Double, left: Double, right: Double): Double = js.native
   
+  @JSImport("mumath", "closest")
   @js.native
-  object closest extends js.Object {
-    
-    def apply(value: Double, list: js.Array[Double]): Double = js.native
-  }
+  def closest(value: Double, list: js.Array[Double]): Double = js.native
   
+  @JSImport("mumath", "isMultiple")
   @js.native
-  object isMultiple extends js.Object {
-    
-    def apply(a: Double, b: Double): Boolean = js.native
-    def apply(a: Double, b: Double, eps: Double): Boolean = js.native
-  }
+  def isMultiple(a: Double, b: Double): Boolean = js.native
+  @JSImport("mumath", "isMultiple")
+  @js.native
+  def isMultiple(a: Double, b: Double, eps: Double): Boolean = js.native
   
+  @JSImport("mumath", "len")
   @js.native
-  object len extends js.Object {
-    
-    def apply(a: Double, b: Double): Double = js.native
-  }
+  def len(a: Double, b: Double): Double = js.native
   
+  @JSImport("mumath", "lerp")
   @js.native
-  object lerp extends js.Object {
-    
-    def apply(x: Double, y: Double, ratio: Double): Double = js.native
-  }
+  def lerp(x: Double, y: Double, ratio: Double): Double = js.native
   
+  @JSImport("mumath", "mod")
   @js.native
-  object mod extends js.Object {
-    
-    def apply(value: Double, max: Double): Double = js.native
-    def apply(value: Double, max: Double, min: Double): Double = js.native
-  }
+  def mod(value: Double, max: Double): Double = js.native
+  @JSImport("mumath", "mod")
+  @js.native
+  def mod(value: Double, max: Double, min: Double): Double = js.native
   
+  @JSImport("mumath", "order")
   @js.native
-  object order extends js.Object {
-    
-    def apply(value: Double): Double = js.native
-  }
+  def order(value: Double): Double = js.native
   
+  @JSImport("mumath", "precision")
   @js.native
-  object precision extends js.Object {
-    
-    def apply(value: Double): Double = js.native
-  }
+  def precision(value: Double): Double = js.native
   
+  @JSImport("mumath", "round")
   @js.native
-  object round extends js.Object {
-    
-    def apply(value: Double): Double = js.native
-    def apply(value: Double, step: Double): Double = js.native
-  }
+  def round(value: Double): Double = js.native
+  @JSImport("mumath", "round")
+  @js.native
+  def round(value: Double, step: Double): Double = js.native
   
+  @JSImport("mumath", "scale")
   @js.native
-  object scale extends js.Object {
-    
-    def apply(value: Double, list: js.Array[Double]): Double = js.native
-  }
+  def scale(value: Double, list: js.Array[Double]): Double = js.native
   
+  @JSImport("mumath", "within")
   @js.native
-  object within extends js.Object {
-    
-    def apply(value: Double, left: Double, right: Double): Double = js.native
-  }
+  def within(value: Double, left: Double, right: Double): Double = js.native
 }

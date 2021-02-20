@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontMetricsObject extends js.Object {
+trait FontMetricsObject extends StObject {
   
   /**
     * The baseline relative to the top of the box.
@@ -31,27 +32,15 @@ object FontMetricsObject {
   }
   
   @scala.inline
-  implicit class FontMetricsObjectOps[Self <: FontMetricsObject] (val x: Self) extends AnyVal {
+  implicit class FontMetricsObjectMutableBuilder[Self <: FontMetricsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setF(value: Double): Self = this.set("f", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactCalendarTimeline.mod
 
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.move
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object OnItemDragObjectMove {
   }
   
   @scala.inline
-  implicit class OnItemDragObjectMoveOps[Self <: OnItemDragObjectMove] (val x: Self) extends AnyVal {
+  implicit class OnItemDragObjectMoveMutableBuilder[Self <: OnItemDragObjectMove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: move): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventType(value: move): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewGroupOrder(value: Double): Self = this.set("newGroupOrder", value.asInstanceOf[js.Any])
+    def setNewGroupOrder(value: Double): Self = StObject.set(x, "newGroupOrder", value.asInstanceOf[js.Any])
   }
 }

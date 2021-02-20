@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "TextEdit")
 @js.native
-class TextEdit protected () extends js.Object {
+class TextEdit protected () extends StObject {
   /**
     * Create a new TextEdit.
     *
@@ -34,9 +35,7 @@ class TextEdit protected () extends js.Object {
   var range: Range = js.native
 }
 /* static members */
-@JSImport("vscode", "TextEdit")
-@js.native
-object TextEdit extends js.Object {
+object TextEdit {
   
   /**
     * Utility to create a delete edit.
@@ -44,6 +43,8 @@ object TextEdit extends js.Object {
     * @param range A range.
     * @return A new text edit object.
     */
+  @JSImport("vscode", "TextEdit.delete")
+  @js.native
   def delete(range: Range): TextEdit = js.native
   
   /**
@@ -53,6 +54,8 @@ object TextEdit extends js.Object {
     * @param newText A string.
     * @return A new text edit object.
     */
+  @JSImport("vscode", "TextEdit.insert")
+  @js.native
   def insert(position: Position, newText: String): TextEdit = js.native
   
   /**
@@ -62,6 +65,8 @@ object TextEdit extends js.Object {
     * @param newText A string.
     * @return A new text edit object.
     */
+  @JSImport("vscode", "TextEdit.replace")
+  @js.native
   def replace(range: Range, newText: String): TextEdit = js.native
   
   /**
@@ -70,5 +75,7 @@ object TextEdit extends js.Object {
     * @param eol An eol-sequence
     * @return A new text edit object.
     */
+  @JSImport("vscode", "TextEdit.setEndOfLine")
+  @js.native
   def setEndOfLine(eol: EndOfLine): TextEdit = js.native
 }

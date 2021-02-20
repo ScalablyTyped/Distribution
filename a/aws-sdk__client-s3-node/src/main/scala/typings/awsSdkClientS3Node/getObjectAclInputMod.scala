@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/GetObjectAclInput", JSImport.Namespace)
-@js.native
-object getObjectAclInputMod extends js.Object {
+object getObjectAclInputMod {
   
+  @JSImport("@aws-sdk/client-s3-node/model/GetObjectAclInput", "GetObjectAclInput")
+  @js.native
   val GetObjectAclInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

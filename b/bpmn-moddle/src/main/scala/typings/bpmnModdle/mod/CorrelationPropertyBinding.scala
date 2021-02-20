@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object CorrelationPropertyBinding {
   }
   
   @scala.inline
-  implicit class CorrelationPropertyBindingOps[Self <: CorrelationPropertyBinding] (val x: Self) extends AnyVal {
+  implicit class CorrelationPropertyBindingMutableBuilder[Self <: CorrelationPropertyBinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationPropertyRef(value: CorrelationProperty): Self = StObject.set(x, "correlationPropertyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCorrelationPropertyRef(value: CorrelationProperty): Self = this.set("correlationPropertyRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataPath(value: FormalExpression): Self = this.set("dataPath", value.asInstanceOf[js.Any])
+    def setDataPath(value: FormalExpression): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
   }
 }

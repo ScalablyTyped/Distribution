@@ -7,16 +7,15 @@ import typings.snowflakeSdk.snowflakeSdkStrings.JSON
 import typings.snowflakeSdk.snowflakeSdkStrings.Number
 import typings.snowflakeSdk.snowflakeSdkStrings.String
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Binds extends js.Object {
+  trait Binds extends StObject {
     
     var binds: js.UndefOr[typings.snowflakeSdk.mod.Binds] = js.native
     

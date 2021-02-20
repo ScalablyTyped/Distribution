@@ -4,6 +4,7 @@ import typings.fabric.anon.Axis1
 import typings.fabric.anon.Center
 import typings.fabric.anon.X1
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,11 +62,17 @@ class Line () extends Object {
   var y2: js.UndefOr[Double] = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "Line")
-@js.native
-object Line extends js.Object {
+object Line {
   
-  var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  @JSImport("fabric/fabric-impl", "Line")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("fabric/fabric-impl", "Line.ATTRIBUTE_NAMES")
+  @js.native
+  def ATTRIBUTE_NAMES: js.Array[String] = js.native
+  @scala.inline
+  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Returns fabric.Line instance from an SVG element
@@ -75,14 +82,24 @@ object Line extends js.Object {
     * @param {Object} [options] Options object
     * @param {Function} [callback] callback function invoked after parsing
     */
+  @JSImport("fabric/fabric-impl", "Line.fromElement")
+  @js.native
   def fromElement(element: SVGElement): Line = js.native
+  @JSImport("fabric/fabric-impl", "Line.fromElement")
+  @js.native
   def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: ILineOptions): Line = js.native
+  @JSImport("fabric/fabric-impl", "Line.fromElement")
+  @js.native
   def fromElement(element: SVGElement, callback: js.Function): Line = js.native
+  @JSImport("fabric/fabric-impl", "Line.fromElement")
+  @js.native
   def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): Line = js.native
   
   /**
     * Returns fabric.Line instance from an object representation
     * @param object Object to create an instance from
     */
+  @JSImport("fabric/fabric-impl", "Line.fromObject")
+  @js.native
   def fromObject(`object`: js.Any): Line = js.native
 }

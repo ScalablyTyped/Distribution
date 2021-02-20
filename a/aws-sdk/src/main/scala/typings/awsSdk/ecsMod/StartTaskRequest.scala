@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartTaskRequest extends js.Object {
+trait StartTaskRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster on which to start your task. If you do not specify a cluster, the default cluster is assumed.
@@ -71,84 +72,72 @@ object StartTaskRequest {
   }
   
   @scala.inline
-  implicit class StartTaskRequestOps[Self <: StartTaskRequest] (val x: Self) extends AnyVal {
+  implicit class StartTaskRequestMutableBuilder[Self <: StartTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerInstancesVarargs(value: String*): Self = this.set("containerInstances", js.Array(value :_*))
+    def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
     
     @scala.inline
-    def setContainerInstances(value: StringList): Self = this.set("containerInstances", value.asInstanceOf[js.Any])
+    def setEnableECSManagedTags(value: Boolean): Self = StObject.set(x, "enableECSManagedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    def setEnableECSManagedTagsUndefined: Self = StObject.set(x, "enableECSManagedTags", js.undefined)
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setEnableECSManagedTags(value: Boolean): Self = this.set("enableECSManagedTags", value.asInstanceOf[js.Any])
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableECSManagedTags: Self = this.set("enableECSManagedTags", js.undefined)
+    def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setOverrides(value: TaskOverride): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    def setPropagateTags(value: PropagateTags): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
     
     @scala.inline
-    def setOverrides(value: TaskOverride): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
     
     @scala.inline
-    def setPropagateTags(value: PropagateTags): Self = this.set("propagateTags", value.asInstanceOf[js.Any])
+    def setStartedBy(value: String): Self = StObject.set(x, "startedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePropagateTags: Self = this.set("propagateTags", js.undefined)
+    def setStartedByUndefined: Self = StObject.set(x, "startedBy", js.undefined)
     
     @scala.inline
-    def setReferenceId(value: String): Self = this.set("referenceId", value.asInstanceOf[js.Any])
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferenceId: Self = this.set("referenceId", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactNativeVideo.mod
 
 import typings.reactNativeVideo.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnLoadData extends js.Object {
+trait OnLoadData extends StObject {
   
   var canPlayFastForward: Boolean = js.native
   
@@ -45,45 +46,33 @@ object OnLoadData {
   }
   
   @scala.inline
-  implicit class OnLoadDataOps[Self <: OnLoadData] (val x: Self) extends AnyVal {
+  implicit class OnLoadDataMutableBuilder[Self <: OnLoadData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanPlayFastForward(value: Boolean): Self = StObject.set(x, "canPlayFastForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanPlayReverse(value: Boolean): Self = StObject.set(x, "canPlayReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanPlaySlowForward(value: Boolean): Self = StObject.set(x, "canPlaySlowForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPlayFastForward(value: Boolean): Self = this.set("canPlayFastForward", value.asInstanceOf[js.Any])
+    def setCanPlaySlowReverse(value: Boolean): Self = StObject.set(x, "canPlaySlowReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPlayReverse(value: Boolean): Self = this.set("canPlayReverse", value.asInstanceOf[js.Any])
+    def setCanStepBackward(value: Boolean): Self = StObject.set(x, "canStepBackward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPlaySlowForward(value: Boolean): Self = this.set("canPlaySlowForward", value.asInstanceOf[js.Any])
+    def setCanStepForward(value: Boolean): Self = StObject.set(x, "canStepForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanPlaySlowReverse(value: Boolean): Self = this.set("canPlaySlowReverse", value.asInstanceOf[js.Any])
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanStepBackward(value: Boolean): Self = this.set("canStepBackward", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanStepForward(value: Boolean): Self = this.set("canStepForward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNaturalSize(value: Height): Self = this.set("naturalSize", value.asInstanceOf[js.Any])
+    def setNaturalSize(value: Height): Self = StObject.set(x, "naturalSize", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * information.
   */
 @js.native
-trait SchemaJobLocation extends js.Object {
+trait SchemaJobLocation extends StObject {
   
   /**
     * An object representing a latitude/longitude pair.
@@ -50,42 +51,30 @@ object SchemaJobLocation {
   }
   
   @scala.inline
-  implicit class SchemaJobLocationOps[Self <: SchemaJobLocation] (val x: Self) extends AnyVal {
+  implicit class SchemaJobLocationMutableBuilder[Self <: SchemaJobLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLng(value: SchemaLatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
+    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
     @scala.inline
-    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    def setPostalAddress(value: SchemaPostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
     @scala.inline
-    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    def setRadiusMeters(value: Double): Self = StObject.set(x, "radiusMeters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalAddress(value: SchemaPostalAddress): Self = this.set("postalAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalAddress: Self = this.set("postalAddress", js.undefined)
-    
-    @scala.inline
-    def setRadiusMeters(value: Double): Self = this.set("radiusMeters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadiusMeters: Self = this.set("radiusMeters", js.undefined)
+    def setRadiusMetersUndefined: Self = StObject.set(x, "radiusMeters", js.undefined)
   }
 }

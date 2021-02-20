@@ -1,12 +1,13 @@
 package typings.meteor.meteorMod.Meteor
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User_ extends js.Object {
+trait User_ extends StObject {
   
   var _id: String = js.native
   
@@ -29,54 +30,42 @@ object User_ {
   }
   
   @scala.inline
-  implicit class User_Ops[Self <: User_] (val x: Self) extends AnyVal {
+  implicit class User_MutableBuilder[Self <: User_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmails(value: js.Array[UserEmail]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
     @scala.inline
-    def setCreatedAt(value: Date): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailsVarargs(value: UserEmail*): Self = this.set("emails", js.Array(value :_*))
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def setEmails(value: js.Array[UserEmail]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setServices(value: js.Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmails: Self = this.set("emails", js.undefined)
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def setProfile(value: js.Any): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def setServices(value: js.Any): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

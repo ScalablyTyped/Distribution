@@ -1,9 +1,9 @@
 package typings.remarkable.libMod
 
-import typings.remarkable.anon.TypeofUtils
 import typings.remarkable.remarkableStrings.commonmark
 import typings.remarkable.remarkableStrings.full
 import typings.remarkable.remarkableStrings.remarkable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,13 +25,4 @@ class ^ () extends Remarkable {
   def this(preset: commonmark, options: Options) = this()
   def this(preset: full, options: Options) = this()
   def this(preset: remarkable, options: Options) = this()
-}
-@JSImport("remarkable/lib", JSImport.Namespace)
-@js.native
-object ^ extends js.Object {
-  
-  /**
-    * Useful helper functions for custom rendering.
-    */
-  var utils: TypeofUtils = js.native
 }

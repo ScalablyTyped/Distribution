@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobExecution extends js.Object {
+trait JobExecution extends StObject {
   
   /**
     * The estimated number of seconds that remain before the job execution status will be changed to TIMED_OUT. The timeout interval can be anywhere between 1 minute and 7 days (1 to 10080 minutes). The actual job execution timeout can occur up to 60 seconds later than the estimated duration. This value will not be included if the job execution has reached a terminal status.
@@ -71,84 +72,72 @@ object JobExecution {
   }
   
   @scala.inline
-  implicit class JobExecutionOps[Self <: JobExecution] (val x: Self) extends AnyVal {
+  implicit class JobExecutionMutableBuilder[Self <: JobExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximateSecondsBeforeTimedOut(value: ApproximateSecondsBeforeTimedOut): Self = StObject.set(x, "approximateSecondsBeforeTimedOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximateSecondsBeforeTimedOutUndefined: Self = StObject.set(x, "approximateSecondsBeforeTimedOut", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximateSecondsBeforeTimedOut(value: ApproximateSecondsBeforeTimedOut): Self = this.set("approximateSecondsBeforeTimedOut", value.asInstanceOf[js.Any])
+    def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
     
     @scala.inline
-    def deleteApproximateSecondsBeforeTimedOut: Self = this.set("approximateSecondsBeforeTimedOut", js.undefined)
+    def setForceCanceled(value: Forced): Self = StObject.set(x, "forceCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionNumber(value: ExecutionNumber): Self = this.set("executionNumber", value.asInstanceOf[js.Any])
+    def setForceCanceledUndefined: Self = StObject.set(x, "forceCanceled", js.undefined)
     
     @scala.inline
-    def deleteExecutionNumber: Self = this.set("executionNumber", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceCanceled(value: Forced): Self = this.set("forceCanceled", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteForceCanceled: Self = this.set("forceCanceled", js.undefined)
+    def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setQueuedAt(value: DateType): Self = StObject.set(x, "queuedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setQueuedAtUndefined: Self = StObject.set(x, "queuedAt", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setStartedAt(value: DateType): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuedAt(value: DateType): Self = this.set("queuedAt", value.asInstanceOf[js.Any])
+    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     
     @scala.inline
-    def deleteQueuedAt: Self = this.set("queuedAt", js.undefined)
+    def setStatus(value: JobExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedAt(value: DateType): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    def setStatusDetails(value: JobExecutionStatusDetails): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
     @scala.inline
-    def setStatus(value: JobExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetails(value: JobExecutionStatusDetails): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
+    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
     
     @scala.inline
-    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
+    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingArn(value: ThingArn): Self = this.set("thingArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingArn: Self = this.set("thingArn", js.undefined)
-    
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = this.set("versionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("versionNumber", js.undefined)
+    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsEc2InstanceDetails extends js.Object {
+trait AwsEc2InstanceDetails extends StObject {
   
   /**
     * The IAM profile ARN of the instance.
@@ -61,78 +62,66 @@ object AwsEc2InstanceDetails {
   }
   
   @scala.inline
-  implicit class AwsEc2InstanceDetailsOps[Self <: AwsEc2InstanceDetails] (val x: Self) extends AnyVal {
+  implicit class AwsEc2InstanceDetailsMutableBuilder[Self <: AwsEc2InstanceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamInstanceProfileArn(value: NonEmptyString): Self = StObject.set(x, "IamInstanceProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIamInstanceProfileArnUndefined: Self = StObject.set(x, "IamInstanceProfileArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageId(value: NonEmptyString): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamInstanceProfileArn(value: NonEmptyString): Self = this.set("IamInstanceProfileArn", value.asInstanceOf[js.Any])
+    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     @scala.inline
-    def deleteIamInstanceProfileArn: Self = this.set("IamInstanceProfileArn", js.undefined)
+    def setIpV4Addresses(value: StringList): Self = StObject.set(x, "IpV4Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageId(value: NonEmptyString): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    def setIpV4AddressesUndefined: Self = StObject.set(x, "IpV4Addresses", js.undefined)
     
     @scala.inline
-    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    def setIpV4AddressesVarargs(value: NonEmptyString*): Self = StObject.set(x, "IpV4Addresses", js.Array(value :_*))
     
     @scala.inline
-    def setIpV4AddressesVarargs(value: NonEmptyString*): Self = this.set("IpV4Addresses", js.Array(value :_*))
+    def setIpV6Addresses(value: StringList): Self = StObject.set(x, "IpV6Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpV4Addresses(value: StringList): Self = this.set("IpV4Addresses", value.asInstanceOf[js.Any])
+    def setIpV6AddressesUndefined: Self = StObject.set(x, "IpV6Addresses", js.undefined)
     
     @scala.inline
-    def deleteIpV4Addresses: Self = this.set("IpV4Addresses", js.undefined)
+    def setIpV6AddressesVarargs(value: NonEmptyString*): Self = StObject.set(x, "IpV6Addresses", js.Array(value :_*))
     
     @scala.inline
-    def setIpV6AddressesVarargs(value: NonEmptyString*): Self = this.set("IpV6Addresses", js.Array(value :_*))
+    def setKeyName(value: NonEmptyString): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpV6Addresses(value: StringList): Self = this.set("IpV6Addresses", value.asInstanceOf[js.Any])
+    def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
     @scala.inline
-    def deleteIpV6Addresses: Self = this.set("IpV6Addresses", js.undefined)
+    def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyName(value: NonEmptyString): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
     
     @scala.inline
-    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    def setSubnetId(value: NonEmptyString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchedAt(value: NonEmptyString): Self = this.set("LaunchedAt", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
     @scala.inline
-    def deleteLaunchedAt: Self = this.set("LaunchedAt", js.undefined)
+    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: NonEmptyString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: NonEmptyString): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: NonEmptyString): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

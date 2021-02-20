@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestDNSAnswerRequest extends js.Object {
+trait TestDNSAnswerRequest extends StObject {
   
   /**
     * If the resolver that you specified for resolverip supports EDNS0, specify the IPv4 or IPv6 address of a client in the applicable location, for example, 192.0.2.44 or 2001:db8:85a3::8a2e:370:7334.
@@ -46,45 +47,33 @@ object TestDNSAnswerRequest {
   }
   
   @scala.inline
-  implicit class TestDNSAnswerRequestOps[Self <: TestDNSAnswerRequest] (val x: Self) extends AnyVal {
+  implicit class TestDNSAnswerRequestMutableBuilder[Self <: TestDNSAnswerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEDNS0ClientSubnetIP(value: IPAddress): Self = StObject.set(x, "EDNS0ClientSubnetIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEDNS0ClientSubnetIPUndefined: Self = StObject.set(x, "EDNS0ClientSubnetIP", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEDNS0ClientSubnetMask(value: SubnetMask): Self = StObject.set(x, "EDNS0ClientSubnetMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    def setEDNS0ClientSubnetMaskUndefined: Self = StObject.set(x, "EDNS0ClientSubnetMask", js.undefined)
     
     @scala.inline
-    def setRecordName(value: DNSName): Self = this.set("RecordName", value.asInstanceOf[js.Any])
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordType(value: RRType): Self = this.set("RecordType", value.asInstanceOf[js.Any])
+    def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDNS0ClientSubnetIP(value: IPAddress): Self = this.set("EDNS0ClientSubnetIP", value.asInstanceOf[js.Any])
+    def setRecordType(value: RRType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEDNS0ClientSubnetIP: Self = this.set("EDNS0ClientSubnetIP", js.undefined)
+    def setResolverIP(value: IPAddress): Self = StObject.set(x, "ResolverIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDNS0ClientSubnetMask(value: SubnetMask): Self = this.set("EDNS0ClientSubnetMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEDNS0ClientSubnetMask: Self = this.set("EDNS0ClientSubnetMask", js.undefined)
-    
-    @scala.inline
-    def setResolverIP(value: IPAddress): Self = this.set("ResolverIP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolverIP: Self = this.set("ResolverIP", js.undefined)
+    def setResolverIPUndefined: Self = StObject.set(x, "ResolverIP", js.undefined)
   }
 }

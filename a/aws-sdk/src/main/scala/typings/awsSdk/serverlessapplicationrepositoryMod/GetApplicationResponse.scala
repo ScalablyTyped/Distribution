@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetApplicationResponse extends js.Object {
+trait GetApplicationResponse extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
@@ -81,99 +82,87 @@ object GetApplicationResponse {
   }
   
   @scala.inline
-  implicit class GetApplicationResponseOps[Self <: GetApplicationResponse] (val x: Self) extends AnyVal {
+  implicit class GetApplicationResponseMutableBuilder[Self <: GetApplicationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: string): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    def setCreationTime(value: string): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: string): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("Author", js.undefined)
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: string): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setHomePageUrl(value: string): Self = StObject.set(x, "HomePageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setHomePageUrlUndefined: Self = StObject.set(x, "HomePageUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIsVerifiedAuthor(value: boolean): Self = StObject.set(x, "IsVerifiedAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomePageUrl(value: string): Self = this.set("HomePageUrl", value.asInstanceOf[js.Any])
+    def setIsVerifiedAuthorUndefined: Self = StObject.set(x, "IsVerifiedAuthor", js.undefined)
     
     @scala.inline
-    def deleteHomePageUrl: Self = this.set("HomePageUrl", js.undefined)
+    def setLabels(value: listOfString): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVerifiedAuthor(value: boolean): Self = this.set("IsVerifiedAuthor", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
     @scala.inline
-    def deleteIsVerifiedAuthor: Self = this.set("IsVerifiedAuthor", js.undefined)
+    def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: string*): Self = this.set("Labels", js.Array(value :_*))
+    def setLicenseUrl(value: string): Self = StObject.set(x, "LicenseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: listOfString): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    def setLicenseUrlUndefined: Self = StObject.set(x, "LicenseUrl", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("Labels", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseUrl(value: string): Self = this.set("LicenseUrl", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLicenseUrl: Self = this.set("LicenseUrl", js.undefined)
+    def setReadmeUrl(value: string): Self = StObject.set(x, "ReadmeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setReadmeUrlUndefined: Self = StObject.set(x, "ReadmeUrl", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSpdxLicenseId(value: string): Self = StObject.set(x, "SpdxLicenseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadmeUrl(value: string): Self = this.set("ReadmeUrl", value.asInstanceOf[js.Any])
+    def setSpdxLicenseIdUndefined: Self = StObject.set(x, "SpdxLicenseId", js.undefined)
     
     @scala.inline
-    def deleteReadmeUrl: Self = this.set("ReadmeUrl", js.undefined)
+    def setVerifiedAuthorUrl(value: string): Self = StObject.set(x, "VerifiedAuthorUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpdxLicenseId(value: string): Self = this.set("SpdxLicenseId", value.asInstanceOf[js.Any])
+    def setVerifiedAuthorUrlUndefined: Self = StObject.set(x, "VerifiedAuthorUrl", js.undefined)
     
     @scala.inline
-    def deleteSpdxLicenseId: Self = this.set("SpdxLicenseId", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerifiedAuthorUrl(value: string): Self = this.set("VerifiedAuthorUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifiedAuthorUrl: Self = this.set("VerifiedAuthorUrl", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

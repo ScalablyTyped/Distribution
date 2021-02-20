@@ -7,14 +7,14 @@ import typings.egjsAxes.axisManagerMod.AxisManager
 import typings.egjsAxes.eventManagerMod.EventManager
 import typings.egjsAxes.inputTypeMod.IInputTypeObserver
 import typings.egjsAxes.interruptManagerMod.InterruptManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@egjs/axes/InputObserver", JSImport.Namespace)
-@js.native
-object inputObserverMod extends js.Object {
+object inputObserverMod {
   
+  @JSImport("@egjs/axes/InputObserver", "InputObserver")
   @js.native
   class InputObserver protected () extends IInputTypeObserver {
     def this(

@@ -1,15 +1,15 @@
 package typings.plottable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/utils/bucket", JSImport.Namespace)
-@js.native
-object bucketMod extends js.Object {
+object bucketMod {
   
+  @JSImport("plottable/build/src/utils/bucket", "Bucket")
   @js.native
-  class Bucket protected () extends js.Object {
+  class Bucket protected () extends StObject {
     def this(index: Double, xValue: Double, yValue: Double) = this()
     
     def addToBucket(value: Double, index: Double): Unit = js.native

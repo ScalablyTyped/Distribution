@@ -3,12 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.BusinessUserRole
 import typings.evernote.mod.Types.PremiumOrderStatus
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailablePoints extends js.Object {
+trait AvailablePoints extends StObject {
   
   var availablePoints: js.UndefOr[Double] = js.native
   
@@ -65,156 +66,144 @@ object AvailablePoints {
   }
   
   @scala.inline
-  implicit class AvailablePointsOps[Self <: AvailablePoints] (val x: Self) extends AnyVal {
+  implicit class AvailablePointsMutableBuilder[Self <: AvailablePoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailablePoints(value: Double): Self = StObject.set(x, "availablePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailablePointsUndefined: Self = StObject.set(x, "availablePoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBusinessId(value: Double): Self = StObject.set(x, "businessId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePoints(value: Double): Self = this.set("availablePoints", value.asInstanceOf[js.Any])
+    def setBusinessIdUndefined: Self = StObject.set(x, "businessId", js.undefined)
     
     @scala.inline
-    def deleteAvailablePoints: Self = this.set("availablePoints", js.undefined)
+    def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessId(value: Double): Self = this.set("businessId", value.asInstanceOf[js.Any])
+    def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
     
     @scala.inline
-    def deleteBusinessId: Self = this.set("businessId", js.undefined)
+    def setBusinessRole(value: BusinessUserRole): Self = StObject.set(x, "businessRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessName(value: String): Self = this.set("businessName", value.asInstanceOf[js.Any])
+    def setBusinessRoleUndefined: Self = StObject.set(x, "businessRole", js.undefined)
     
     @scala.inline
-    def deleteBusinessName: Self = this.set("businessName", js.undefined)
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessRole(value: BusinessUserRole): Self = this.set("businessRole", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteBusinessRole: Self = this.set("businessRole", js.undefined)
+    def setLastFailedCharge(value: Timestamp): Self = StObject.set(x, "lastFailedCharge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setLastFailedChargeReason(value: String): Self = StObject.set(x, "lastFailedChargeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setLastFailedChargeReasonUndefined: Self = StObject.set(x, "lastFailedChargeReason", js.undefined)
     
     @scala.inline
-    def setLastFailedCharge(value: Timestamp): Self = this.set("lastFailedCharge", value.asInstanceOf[js.Any])
+    def setLastFailedChargeUndefined: Self = StObject.set(x, "lastFailedCharge", js.undefined)
     
     @scala.inline
-    def deleteLastFailedCharge: Self = this.set("lastFailedCharge", js.undefined)
+    def setLastRequestedCharge(value: Timestamp): Self = StObject.set(x, "lastRequestedCharge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFailedChargeReason(value: String): Self = this.set("lastFailedChargeReason", value.asInstanceOf[js.Any])
+    def setLastRequestedChargeUndefined: Self = StObject.set(x, "lastRequestedCharge", js.undefined)
     
     @scala.inline
-    def deleteLastFailedChargeReason: Self = this.set("lastFailedChargeReason", js.undefined)
+    def setLastSuccessfulCharge(value: Timestamp): Self = StObject.set(x, "lastSuccessfulCharge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRequestedCharge(value: Timestamp): Self = this.set("lastRequestedCharge", value.asInstanceOf[js.Any])
+    def setLastSuccessfulChargeUndefined: Self = StObject.set(x, "lastSuccessfulCharge", js.undefined)
     
     @scala.inline
-    def deleteLastRequestedCharge: Self = this.set("lastRequestedCharge", js.undefined)
+    def setNextChargeDate(value: Timestamp): Self = StObject.set(x, "nextChargeDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSuccessfulCharge(value: Timestamp): Self = this.set("lastSuccessfulCharge", value.asInstanceOf[js.Any])
+    def setNextChargeDateUndefined: Self = StObject.set(x, "nextChargeDate", js.undefined)
     
     @scala.inline
-    def deleteLastSuccessfulCharge: Self = this.set("lastSuccessfulCharge", js.undefined)
+    def setNextPaymentDue(value: Timestamp): Self = StObject.set(x, "nextPaymentDue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextChargeDate(value: Timestamp): Self = this.set("nextChargeDate", value.asInstanceOf[js.Any])
+    def setNextPaymentDueUndefined: Self = StObject.set(x, "nextPaymentDue", js.undefined)
     
     @scala.inline
-    def deleteNextChargeDate: Self = this.set("nextChargeDate", js.undefined)
+    def setPremiumCommerceService(value: String): Self = StObject.set(x, "premiumCommerceService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPaymentDue(value: Timestamp): Self = this.set("nextPaymentDue", value.asInstanceOf[js.Any])
+    def setPremiumCommerceServiceUndefined: Self = StObject.set(x, "premiumCommerceService", js.undefined)
     
     @scala.inline
-    def deleteNextPaymentDue: Self = this.set("nextPaymentDue", js.undefined)
+    def setPremiumLockUntil(value: Timestamp): Self = StObject.set(x, "premiumLockUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumCommerceService(value: String): Self = this.set("premiumCommerceService", value.asInstanceOf[js.Any])
+    def setPremiumLockUntilUndefined: Self = StObject.set(x, "premiumLockUntil", js.undefined)
     
     @scala.inline
-    def deletePremiumCommerceService: Self = this.set("premiumCommerceService", js.undefined)
+    def setPremiumOrderNumber(value: String): Self = StObject.set(x, "premiumOrderNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumLockUntil(value: Timestamp): Self = this.set("premiumLockUntil", value.asInstanceOf[js.Any])
+    def setPremiumOrderNumberUndefined: Self = StObject.set(x, "premiumOrderNumber", js.undefined)
     
     @scala.inline
-    def deletePremiumLockUntil: Self = this.set("premiumLockUntil", js.undefined)
+    def setPremiumServiceSKU(value: String): Self = StObject.set(x, "premiumServiceSKU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumOrderNumber(value: String): Self = this.set("premiumOrderNumber", value.asInstanceOf[js.Any])
+    def setPremiumServiceSKUUndefined: Self = StObject.set(x, "premiumServiceSKU", js.undefined)
     
     @scala.inline
-    def deletePremiumOrderNumber: Self = this.set("premiumOrderNumber", js.undefined)
+    def setPremiumServiceStart(value: Timestamp): Self = StObject.set(x, "premiumServiceStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumServiceSKU(value: String): Self = this.set("premiumServiceSKU", value.asInstanceOf[js.Any])
+    def setPremiumServiceStartUndefined: Self = StObject.set(x, "premiumServiceStart", js.undefined)
     
     @scala.inline
-    def deletePremiumServiceSKU: Self = this.set("premiumServiceSKU", js.undefined)
+    def setPremiumServiceStatus(value: PremiumOrderStatus): Self = StObject.set(x, "premiumServiceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumServiceStart(value: Timestamp): Self = this.set("premiumServiceStart", value.asInstanceOf[js.Any])
+    def setPremiumServiceStatusUndefined: Self = StObject.set(x, "premiumServiceStatus", js.undefined)
     
     @scala.inline
-    def deletePremiumServiceStart: Self = this.set("premiumServiceStart", js.undefined)
+    def setPremiumSubscriptionNumber(value: String): Self = StObject.set(x, "premiumSubscriptionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumServiceStatus(value: PremiumOrderStatus): Self = this.set("premiumServiceStatus", value.asInstanceOf[js.Any])
+    def setPremiumSubscriptionNumberUndefined: Self = StObject.set(x, "premiumSubscriptionNumber", js.undefined)
     
     @scala.inline
-    def deletePremiumServiceStatus: Self = this.set("premiumServiceStatus", js.undefined)
+    def setUnitDiscount(value: Double): Self = StObject.set(x, "unitDiscount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiumSubscriptionNumber(value: String): Self = this.set("premiumSubscriptionNumber", value.asInstanceOf[js.Any])
+    def setUnitDiscountUndefined: Self = StObject.set(x, "unitDiscount", js.undefined)
     
     @scala.inline
-    def deletePremiumSubscriptionNumber: Self = this.set("premiumSubscriptionNumber", js.undefined)
+    def setUnitPrice(value: Double): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitDiscount(value: Double): Self = this.set("unitDiscount", value.asInstanceOf[js.Any])
+    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
     
     @scala.inline
-    def deleteUnitDiscount: Self = this.set("unitDiscount", js.undefined)
+    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitPrice(value: Double): Self = this.set("unitPrice", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteUnitPrice: Self = this.set("unitPrice", js.undefined)
+    def setUploadLimitEnd(value: Timestamp): Self = StObject.set(x, "uploadLimitEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUploadLimitEndUndefined: Self = StObject.set(x, "uploadLimitEnd", js.undefined)
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUploadLimitNextMonth(value: Double): Self = StObject.set(x, "uploadLimitNextMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadLimitEnd(value: Timestamp): Self = this.set("uploadLimitEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadLimitEnd: Self = this.set("uploadLimitEnd", js.undefined)
-    
-    @scala.inline
-    def setUploadLimitNextMonth(value: Double): Self = this.set("uploadLimitNextMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadLimitNextMonth: Self = this.set("uploadLimitNextMonth", js.undefined)
+    def setUploadLimitNextMonthUndefined: Self = StObject.set(x, "uploadLimitNextMonth", js.undefined)
   }
 }

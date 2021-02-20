@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a set of methods and properties to work with the document selection.
   */
 @js.native
-trait RichEditSelection extends js.Object {
+trait RichEditSelection extends StObject {
   
   /**
     * Gets or sets a value specifying whether the current selection is collapsed (and represents the cursor position).

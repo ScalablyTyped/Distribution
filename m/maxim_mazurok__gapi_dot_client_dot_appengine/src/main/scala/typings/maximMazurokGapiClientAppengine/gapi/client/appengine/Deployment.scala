@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deployment extends js.Object {
+trait Deployment extends StObject {
   
   /**
     * Options for any Google Cloud Build builds created as a part of this deployment.These options will only be used if a new build is created, such as when deploying to the App Engine
@@ -36,46 +37,34 @@ object Deployment {
   }
   
   @scala.inline
-  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudBuildOptions(value: CloudBuildOptions): Self = StObject.set(x, "cloudBuildOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudBuildOptionsUndefined: Self = StObject.set(x, "cloudBuildOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: ContainerInfo): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudBuildOptions(value: CloudBuildOptions): Self = this.set("cloudBuildOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudBuildOptions: Self = this.set("cloudBuildOptions", js.undefined)
-    
-    @scala.inline
-    def setContainer(value: ContainerInfo): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
     def setFiles(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo}
       */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment with TopLevel[js.Any]
-    ): Self = this.set("files", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def setZip(value: ZipInfo): Self = this.set("zip", value.asInstanceOf[js.Any])
+    def setZip(value: ZipInfo): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZip: Self = this.set("zip", js.undefined)
+    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

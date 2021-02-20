@@ -1,12 +1,13 @@
 package typings.browserSync.mod
 
 import typings.browserSync.anon.Port
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIOptions extends js.Object {
+trait UIOptions extends StObject {
   
   /** set the default port */
   var port: js.UndefOr[Double] = js.native
@@ -23,30 +24,18 @@ object UIOptions {
   }
   
   @scala.inline
-  implicit class UIOptionsOps[Self <: UIOptions] (val x: Self) extends AnyVal {
+  implicit class UIOptionsMutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWeinre(value: Port): Self = StObject.set(x, "weinre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setWeinre(value: Port): Self = this.set("weinre", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeinre: Self = this.set("weinre", js.undefined)
+    def setWeinreUndefined: Self = StObject.set(x, "weinre", js.undefined)
   }
 }

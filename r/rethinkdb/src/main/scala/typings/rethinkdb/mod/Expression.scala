@@ -1,5 +1,6 @@
 package typings.rethinkdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,8 @@ trait Expression[T]
   
   def apply(prop: String): Expression[_] = js.native
   
+  def default(value: T): Expression[T] = js.native
+  
   def add(n: Double): Expression[Double] = js.native
   def add(n: Expression[Double]): Expression[Double] = js.native
   
@@ -21,8 +24,6 @@ trait Expression[T]
   def append(prop: String): Expression[js.Object] = js.native
   
   def contains(prop: String): Expression[Boolean] = js.native
-  
-  def default(value: T): Expression[T] = js.native
   
   def distance(geometry: Geometry): Expression[Double] = js.native
   def distance(geometry: Geometry, options: DistanceOptions): Expression[Double] = js.native

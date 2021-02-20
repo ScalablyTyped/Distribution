@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalResource extends js.Object {
+trait PortalResource extends StObject {
   
   /**
     * The ID of the portal.
@@ -21,21 +22,9 @@ object PortalResource {
   }
   
   @scala.inline
-  implicit class PortalResourceOps[Self <: PortalResource] (val x: Self) extends AnyVal {
+  implicit class PortalResourceMutableBuilder[Self <: PortalResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: ID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

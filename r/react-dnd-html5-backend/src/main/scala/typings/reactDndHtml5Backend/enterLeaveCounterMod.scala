@@ -2,16 +2,16 @@ package typings.reactDndHtml5Backend
 
 import typings.std.EventTarget
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd-html5-backend/lib/EnterLeaveCounter", JSImport.Namespace)
-@js.native
-object enterLeaveCounterMod extends js.Object {
+object enterLeaveCounterMod {
   
+  @JSImport("react-dnd-html5-backend/lib/EnterLeaveCounter", "EnterLeaveCounter")
   @js.native
-  class EnterLeaveCounter protected () extends js.Object {
+  class EnterLeaveCounter protected () extends StObject {
     def this(isNodeInDocument: NodePredicate) = this()
     
     def enter(): Boolean = js.native

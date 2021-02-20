@@ -1,5 +1,6 @@
 package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input only.  Custom ranking information for SearchJobsRequest.
   */
 @js.native
-trait SchemaCustomRankingInfo extends js.Object {
+trait SchemaCustomRankingInfo extends StObject {
   
   /**
     * Required.  Controls over how important the score of
@@ -40,30 +41,18 @@ object SchemaCustomRankingInfo {
   }
   
   @scala.inline
-  implicit class SchemaCustomRankingInfoOps[Self <: SchemaCustomRankingInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomRankingInfoMutableBuilder[Self <: SchemaCustomRankingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportanceLevel(value: String): Self = StObject.set(x, "importanceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportanceLevelUndefined: Self = StObject.set(x, "importanceLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRankingExpression(value: String): Self = StObject.set(x, "rankingExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportanceLevel(value: String): Self = this.set("importanceLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportanceLevel: Self = this.set("importanceLevel", js.undefined)
-    
-    @scala.inline
-    def setRankingExpression(value: String): Self = this.set("rankingExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRankingExpression: Self = this.set("rankingExpression", js.undefined)
+    def setRankingExpressionUndefined: Self = StObject.set(x, "rankingExpression", js.undefined)
   }
 }

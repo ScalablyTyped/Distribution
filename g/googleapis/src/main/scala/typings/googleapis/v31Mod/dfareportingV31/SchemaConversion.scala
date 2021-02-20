@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * after seeing an ad.
   */
 @js.native
-trait SchemaConversion extends js.Object {
+trait SchemaConversion extends StObject {
   
   /**
     * Whether the conversion was directed toward children.
@@ -112,108 +113,96 @@ object SchemaConversion {
   }
   
   @scala.inline
-  implicit class SchemaConversionOps[Self <: SchemaConversion] (val x: Self) extends AnyVal {
+  implicit class SchemaConversionMutableBuilder[Self <: SchemaConversion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildDirectedTreatmentUndefined: Self = StObject.set(x, "childDirectedTreatment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomVariables(value: js.Array[SchemaCustomFloodlightVariable]): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDirectedTreatment(value: Boolean): Self = this.set("childDirectedTreatment", value.asInstanceOf[js.Any])
+    def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
     @scala.inline
-    def deleteChildDirectedTreatment: Self = this.set("childDirectedTreatment", js.undefined)
+    def setCustomVariablesVarargs(value: SchemaCustomFloodlightVariable*): Self = StObject.set(x, "customVariables", js.Array(value :_*))
     
     @scala.inline
-    def setCustomVariablesVarargs(value: SchemaCustomFloodlightVariable*): Self = this.set("customVariables", js.Array(value :_*))
+    def setEncryptedUserId(value: String): Self = StObject.set(x, "encryptedUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomVariables(value: js.Array[SchemaCustomFloodlightVariable]): Self = this.set("customVariables", value.asInstanceOf[js.Any])
+    def setEncryptedUserIdCandidates(value: js.Array[String]): Self = StObject.set(x, "encryptedUserIdCandidates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomVariables: Self = this.set("customVariables", js.undefined)
+    def setEncryptedUserIdCandidatesUndefined: Self = StObject.set(x, "encryptedUserIdCandidates", js.undefined)
     
     @scala.inline
-    def setEncryptedUserId(value: String): Self = this.set("encryptedUserId", value.asInstanceOf[js.Any])
+    def setEncryptedUserIdCandidatesVarargs(value: String*): Self = StObject.set(x, "encryptedUserIdCandidates", js.Array(value :_*))
     
     @scala.inline
-    def deleteEncryptedUserId: Self = this.set("encryptedUserId", js.undefined)
+    def setEncryptedUserIdUndefined: Self = StObject.set(x, "encryptedUserId", js.undefined)
     
     @scala.inline
-    def setEncryptedUserIdCandidatesVarargs(value: String*): Self = this.set("encryptedUserIdCandidates", js.Array(value :_*))
+    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptedUserIdCandidates(value: js.Array[String]): Self = this.set("encryptedUserIdCandidates", value.asInstanceOf[js.Any])
+    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
     @scala.inline
-    def deleteEncryptedUserIdCandidates: Self = this.set("encryptedUserIdCandidates", js.undefined)
+    def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityId(value: String): Self = this.set("floodlightActivityId", value.asInstanceOf[js.Any])
+    def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityId: Self = this.set("floodlightActivityId", js.undefined)
+    def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightConfigurationId(value: String): Self = this.set("floodlightConfigurationId", value.asInstanceOf[js.Any])
+    def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
     
     @scala.inline
-    def deleteFloodlightConfigurationId: Self = this.set("floodlightConfigurationId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGclid(value: String): Self = this.set("gclid", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGclid: Self = this.set("gclid", js.undefined)
+    def setLimitAdTracking(value: Boolean): Self = StObject.set(x, "limitAdTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLimitAdTrackingUndefined: Self = StObject.set(x, "limitAdTracking", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMobileDeviceId(value: String): Self = StObject.set(x, "mobileDeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitAdTracking(value: Boolean): Self = this.set("limitAdTracking", value.asInstanceOf[js.Any])
+    def setMobileDeviceIdUndefined: Self = StObject.set(x, "mobileDeviceId", js.undefined)
     
     @scala.inline
-    def deleteLimitAdTracking: Self = this.set("limitAdTracking", js.undefined)
+    def setOrdinal(value: String): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileDeviceId(value: String): Self = this.set("mobileDeviceId", value.asInstanceOf[js.Any])
+    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
     @scala.inline
-    def deleteMobileDeviceId: Self = this.set("mobileDeviceId", js.undefined)
+    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrdinal(value: String): Self = this.set("ordinal", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deleteOrdinal: Self = this.set("ordinal", js.undefined)
+    def setTimestampMicros(value: String): Self = StObject.set(x, "timestampMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: String): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setTimestampMicrosUndefined: Self = StObject.set(x, "timestampMicros", js.undefined)
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampMicros(value: String): Self = this.set("timestampMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampMicros: Self = this.set("timestampMicros", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

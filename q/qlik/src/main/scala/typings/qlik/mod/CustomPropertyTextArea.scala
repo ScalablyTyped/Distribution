@@ -2,6 +2,7 @@ package typings.qlik.mod
 
 import typings.qlik.qlikStrings.string
 import typings.qlik.qlikStrings.textarea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object CustomPropertyTextArea {
   }
   
   @scala.inline
-  implicit class CustomPropertyTextAreaOps[Self <: CustomPropertyTextArea] (val x: Self) extends AnyVal {
+  implicit class CustomPropertyTextAreaMutableBuilder[Self <: CustomPropertyTextArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setComponent(value: textarea): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: string): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def setMaxlength(value: Double): Self = this.set("maxlength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxlength: Self = this.set("maxlength", js.undefined)
-    
-    @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

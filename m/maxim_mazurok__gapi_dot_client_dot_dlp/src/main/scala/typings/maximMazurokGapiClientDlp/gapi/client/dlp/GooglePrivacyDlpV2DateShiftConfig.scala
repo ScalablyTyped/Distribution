@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2DateShiftConfig extends js.Object {
+trait GooglePrivacyDlpV2DateShiftConfig extends StObject {
   
   /** Points to the field that contains the context, for example, an entity id. If set, must also set cryptoKey. If set, shift will be consistent for the given context. */
   var context: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
@@ -34,42 +35,30 @@ object GooglePrivacyDlpV2DateShiftConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2DateShiftConfigOps[Self <: GooglePrivacyDlpV2DateShiftConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2DateShiftConfigMutableBuilder[Self <: GooglePrivacyDlpV2DateShiftConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: GooglePrivacyDlpV2FieldId): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setLowerBoundDays(value: Double): Self = StObject.set(x, "lowerBoundDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
+    def setLowerBoundDaysUndefined: Self = StObject.set(x, "lowerBoundDays", js.undefined)
     
     @scala.inline
-    def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
+    def setUpperBoundDays(value: Double): Self = StObject.set(x, "upperBoundDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerBoundDays(value: Double): Self = this.set("lowerBoundDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowerBoundDays: Self = this.set("lowerBoundDays", js.undefined)
-    
-    @scala.inline
-    def setUpperBoundDays(value: Double): Self = this.set("upperBoundDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperBoundDays: Self = this.set("upperBoundDays", js.undefined)
+    def setUpperBoundDaysUndefined: Self = StObject.set(x, "upperBoundDays", js.undefined)
   }
 }

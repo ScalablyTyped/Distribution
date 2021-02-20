@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.gapi.client.books
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadingPosition extends js.Object {
+trait ReadingPosition extends StObject {
   
   /** Position in an EPUB as a CFI. */
   var epubCfiPosition: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object ReadingPosition {
   }
   
   @scala.inline
-  implicit class ReadingPositionOps[Self <: ReadingPosition] (val x: Self) extends AnyVal {
+  implicit class ReadingPositionMutableBuilder[Self <: ReadingPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEpubCfiPosition(value: String): Self = StObject.set(x, "epubCfiPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEpubCfiPositionUndefined: Self = StObject.set(x, "epubCfiPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGbImagePosition(value: String): Self = StObject.set(x, "gbImagePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpubCfiPosition(value: String): Self = this.set("epubCfiPosition", value.asInstanceOf[js.Any])
+    def setGbImagePositionUndefined: Self = StObject.set(x, "gbImagePosition", js.undefined)
     
     @scala.inline
-    def deleteEpubCfiPosition: Self = this.set("epubCfiPosition", js.undefined)
+    def setGbTextPosition(value: String): Self = StObject.set(x, "gbTextPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGbImagePosition(value: String): Self = this.set("gbImagePosition", value.asInstanceOf[js.Any])
+    def setGbTextPositionUndefined: Self = StObject.set(x, "gbTextPosition", js.undefined)
     
     @scala.inline
-    def deleteGbImagePosition: Self = this.set("gbImagePosition", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGbTextPosition(value: String): Self = this.set("gbTextPosition", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGbTextPosition: Self = this.set("gbTextPosition", js.undefined)
+    def setPdfPosition(value: String): Self = StObject.set(x, "pdfPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPdfPositionUndefined: Self = StObject.set(x, "pdfPosition", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdfPosition(value: String): Self = this.set("pdfPosition", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deletePdfPosition: Self = this.set("pdfPosition", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
-    
-    @scala.inline
-    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetGlobalSettingsResponse extends js.Object {
+trait GetGlobalSettingsResponse extends StObject {
   
   /**
     * The Amazon Chime Business Calling settings.
@@ -26,30 +27,18 @@ object GetGlobalSettingsResponse {
   }
   
   @scala.inline
-  implicit class GetGlobalSettingsResponseOps[Self <: GetGlobalSettingsResponse] (val x: Self) extends AnyVal {
+  implicit class GetGlobalSettingsResponseMutableBuilder[Self <: GetGlobalSettingsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusinessCallingUndefined: Self = StObject.set(x, "BusinessCalling", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVoiceConnector(value: VoiceConnectorSettings): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessCalling(value: BusinessCallingSettings): Self = this.set("BusinessCalling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBusinessCalling: Self = this.set("BusinessCalling", js.undefined)
-    
-    @scala.inline
-    def setVoiceConnector(value: VoiceConnectorSettings): Self = this.set("VoiceConnector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceConnector: Self = this.set("VoiceConnector", js.undefined)
+    def setVoiceConnectorUndefined: Self = StObject.set(x, "VoiceConnector", js.undefined)
   }
 }

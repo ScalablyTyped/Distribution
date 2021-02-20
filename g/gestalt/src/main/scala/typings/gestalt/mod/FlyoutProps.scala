@@ -17,12 +17,13 @@ import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlyoutProps extends js.Object {
+trait FlyoutProps extends StObject {
   
   var anchor: HTMLElement = js.native
   
@@ -32,7 +33,7 @@ trait FlyoutProps extends js.Object {
   
   var idealDirection: js.UndefOr[up | right | down | left] = js.native
   
-   // ideally a HTMLAnchorElement
+  // ideally a HTMLAnchorElement
   def onDismiss(): Unit = js.native
   
   var positionRelativeToAnchor: js.UndefOr[Boolean] = js.native
@@ -52,66 +53,54 @@ object FlyoutProps {
   }
   
   @scala.inline
-  implicit class FlyoutPropsOps[Self <: FlyoutProps] (val x: Self) extends AnyVal {
+  implicit class FlyoutPropsMutableBuilder[Self <: FlyoutProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setAnchor(value: HTMLElement): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setColor(value: blue | orange | red | white | darkGray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setIdealDirection(value: up | right | down | left): Self = StObject.set(x, "idealDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setIdealDirectionUndefined: Self = StObject.set(x, "idealDirection", js.undefined)
     
     @scala.inline
-    def setColor(value: blue | orange | red | white | darkGray): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPositionRelativeToAnchor(value: Boolean): Self = StObject.set(x, "positionRelativeToAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdealDirection(value: up | right | down | left): Self = this.set("idealDirection", value.asInstanceOf[js.Any])
+    def setPositionRelativeToAnchorUndefined: Self = StObject.set(x, "positionRelativeToAnchor", js.undefined)
     
     @scala.inline
-    def deleteIdealDirection: Self = this.set("idealDirection", js.undefined)
+    def setShouldFocus(value: Boolean): Self = StObject.set(x, "shouldFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionRelativeToAnchor(value: Boolean): Self = this.set("positionRelativeToAnchor", value.asInstanceOf[js.Any])
+    def setShouldFocusUndefined: Self = StObject.set(x, "shouldFocus", js.undefined)
     
     @scala.inline
-    def deletePositionRelativeToAnchor: Self = this.set("positionRelativeToAnchor", js.undefined)
+    def setShowCaret(value: Boolean): Self = StObject.set(x, "showCaret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldFocus(value: Boolean): Self = this.set("shouldFocus", value.asInstanceOf[js.Any])
+    def setShowCaretUndefined: Self = StObject.set(x, "showCaret", js.undefined)
     
     @scala.inline
-    def deleteShouldFocus: Self = this.set("shouldFocus", js.undefined)
+    def setSize(value: xs | sm | md | lg | xl | flexible | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCaret(value: Boolean): Self = this.set("showCaret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCaret: Self = this.set("showCaret", js.undefined)
-    
-    @scala.inline
-    def setSize(value: xs | sm | md | lg | xl | flexible | Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

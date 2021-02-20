@@ -1,12 +1,13 @@
 package typings.firebaseMessaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/messaging/dist/helpers/sleep", JSImport.Namespace)
-@js.native
-object sleepMod extends js.Object {
+object sleepMod {
   
+  @JSImport("@firebase/messaging/dist/helpers/sleep", "sleep")
+  @js.native
   def sleep(ms: Double): js.Promise[Unit] = js.native
 }

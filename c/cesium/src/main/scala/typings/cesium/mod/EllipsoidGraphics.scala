@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.OutlineColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EllipsoidGraphics")
 @js.native
-class EllipsoidGraphics () extends js.Object {
+class EllipsoidGraphics () extends StObject {
   def this(options: OutlineColor) = this()
   
   def clone(result: EllipsoidGraphics): EllipsoidGraphics = js.native

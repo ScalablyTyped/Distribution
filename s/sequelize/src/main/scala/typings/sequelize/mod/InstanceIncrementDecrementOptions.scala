@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options used for Instance.increment method
   */
 @js.native
-trait InstanceIncrementDecrementOptions extends js.Object {
+trait InstanceIncrementDecrementOptions extends StObject {
   
   /**
     * The number to increment by
@@ -47,45 +48,33 @@ object InstanceIncrementDecrementOptions {
   }
   
   @scala.inline
-  implicit class InstanceIncrementDecrementOptionsOps[Self <: InstanceIncrementDecrementOptions] (val x: Self) extends AnyVal {
+  implicit class InstanceIncrementDecrementOptionsMutableBuilder[Self <: InstanceIncrementDecrementOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBy(value: Double): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBy(value: Double): Self = this.set("by", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteBy: Self = this.set("by", js.undefined)
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setWhere(value: AnyWhereOptions | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
     @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
-    
-    @scala.inline
-    def setWhereVarargs(value: (col | and | or | String)*): Self = this.set("where", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhere(value: AnyWhereOptions | (js.Array[col | and | or | String])): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
   }
 }

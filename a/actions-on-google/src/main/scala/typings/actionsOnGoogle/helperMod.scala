@@ -21,16 +21,14 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequi
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2DeliveryAddressValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", JSImport.Namespace)
-@js.native
-object helperMod extends js.Object {
+object helperMod {
   
-  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
-  
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "Carousel")
   @js.native
   class Carousel protected ()
     extends typings.actionsOnGoogle.optionMod.Carousel {
@@ -41,6 +39,7 @@ object helperMod extends js.Object {
     def this(options: CarouselOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "CompletePurchase")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
@@ -51,6 +50,7 @@ object helperMod extends js.Object {
     def this(options: GoogleActionsTransactionsV3CompletePurchaseValueSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "Confirmation")
   @js.native
   class Confirmation protected ()
     extends typings.actionsOnGoogle.confirmationMod.Confirmation {
@@ -62,6 +62,7 @@ object helperMod extends js.Object {
     def this(text: String) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "DateTime")
   @js.native
   class DateTime protected ()
     extends typings.actionsOnGoogle.datetimeMod.DateTime {
@@ -72,6 +73,7 @@ object helperMod extends js.Object {
     def this(options: DateTimeOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "DeepLink")
   @js.native
   class DeepLink protected ()
     extends typings.actionsOnGoogle.deeplinkMod.DeepLink {
@@ -83,6 +85,7 @@ object helperMod extends js.Object {
     def this(options: DeepLinkOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "DeliveryAddress")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
@@ -93,6 +96,7 @@ object helperMod extends js.Object {
     def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "DigitalPurchaseCheck")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsTransactionsV3DigitalPurchaseCheckSpec}
@@ -103,12 +107,14 @@ object helperMod extends js.Object {
     def this(options: GoogleActionsTransactionsV3DigitalPurchaseCheckSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "Helper")
   @js.native
   class Helper[TIntent /* <: Intent */, TValueSpec] protected ()
     extends typings.actionsOnGoogle.helperHelperMod.Helper[TIntent, TValueSpec] {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "List")
   @js.native
   class List protected ()
     extends typings.actionsOnGoogle.optionMod.List {
@@ -119,6 +125,7 @@ object helperMod extends js.Object {
     def this(options: ListOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "NewSurface")
   @js.native
   class NewSurface protected ()
     extends typings.actionsOnGoogle.newsurfaceMod.NewSurface {
@@ -129,6 +136,7 @@ object helperMod extends js.Object {
     def this(options: NewSurfaceOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "Permission")
   @js.native
   class Permission protected ()
     extends typings.actionsOnGoogle.permissionMod.Permission {
@@ -139,6 +147,7 @@ object helperMod extends js.Object {
     def this(options: PermissionOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "Place")
   @js.native
   class Place protected ()
     extends typings.actionsOnGoogle.placeMod.Place {
@@ -149,6 +158,7 @@ object helperMod extends js.Object {
     def this(options: PlaceOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "RegisterUpdate")
   @js.native
   class RegisterUpdate protected ()
     extends typings.actionsOnGoogle.registerupdateMod.RegisterUpdate {
@@ -159,6 +169,7 @@ object helperMod extends js.Object {
     def this(options: RegisterUpdateOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "SignIn")
   @js.native
   /**
     * @param context The optional context why the app needs to ask the user to sign in, as a
@@ -171,10 +182,14 @@ object helperMod extends js.Object {
     def this(context: String) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "SoloHelper")
   @js.native
-  class SoloHelper[TIntent /* <: Intent */, TValueSpec] ()
-    extends typings.actionsOnGoogle.helperHelperMod.Helper[TIntent, TValueSpec]
+  class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected ()
+    extends typings.actionsOnGoogle.helperHelperMod.SoloHelper[TIntent, TValueSpec] {
+    def this(options: HelperOptions[TIntent, TValueSpec]) = this()
+  }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "TransactionDecision")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2TransactionDecisionValueSpec}
@@ -188,6 +203,7 @@ object helperMod extends js.Object {
     def this(options: GoogleActionsV2TransactionDecisionValueSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "TransactionRequirements")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2TransactionRequirementsCheckSpec}
@@ -201,6 +217,7 @@ object helperMod extends js.Object {
     def this(options: GoogleActionsV2TransactionRequirementsCheckSpec) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "UpdatePermission")
   @js.native
   class UpdatePermission protected ()
     extends typings.actionsOnGoogle.permissionMod.UpdatePermission {
@@ -210,4 +227,8 @@ object helperMod extends js.Object {
       */
     def this(options: UpdatePermissionOptions) = this()
   }
+  
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "convert")
+  @js.native
+  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
 }

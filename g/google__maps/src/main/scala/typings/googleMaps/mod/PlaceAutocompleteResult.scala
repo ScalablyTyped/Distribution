@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceAutocompleteResult extends js.Object {
+trait PlaceAutocompleteResult extends StObject {
   
   /**
     * contains the human-readable name for the returned result.
@@ -56,45 +57,33 @@ object PlaceAutocompleteResult {
   }
   
   @scala.inline
-  implicit class PlaceAutocompleteResultOps[Self <: PlaceAutocompleteResult] (val x: Self) extends AnyVal {
+  implicit class PlaceAutocompleteResultMutableBuilder[Self <: PlaceAutocompleteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matched_substrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatched_substringsVarargs(value: PredictionSubstring*): Self = this.set("matched_substrings", js.Array(value :_*))
+    def setStructured_formatting(value: StructuredFormatting): Self = StObject.set(x, "structured_formatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = this.set("matched_substrings", value.asInstanceOf[js.Any])
+    def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
+    def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
     
     @scala.inline
-    def setStructured_formatting(value: StructuredFormatting): Self = this.set("structured_formatting", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTermsVarargs(value: PredictionTerm*): Self = this.set("terms", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerms(value: js.Array[PredictionTerm]): Self = this.set("terms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypesVarargs(value: AddressType*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[AddressType]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

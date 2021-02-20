@@ -1,5 +1,6 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,60 +38,48 @@ object Sheet2CSVOpts {
   }
   
   @scala.inline
-  implicit class Sheet2CSVOptsOps[Self <: Sheet2CSVOpts] (val x: Self) extends AnyVal {
+  implicit class Sheet2CSVOptsMutableBuilder[Self <: Sheet2CSVOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlankrows(value: Boolean): Self = StObject.set(x, "blankrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlankrowsUndefined: Self = StObject.set(x, "blankrows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFS(value: String): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFS(value: String): Self = this.set("FS", value.asInstanceOf[js.Any])
+    def setFSUndefined: Self = StObject.set(x, "FS", js.undefined)
     
     @scala.inline
-    def deleteFS: Self = this.set("FS", js.undefined)
+    def setForceQuotes(value: Boolean): Self = StObject.set(x, "forceQuotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRS(value: String): Self = this.set("RS", value.asInstanceOf[js.Any])
+    def setForceQuotesUndefined: Self = StObject.set(x, "forceQuotes", js.undefined)
     
     @scala.inline
-    def deleteRS: Self = this.set("RS", js.undefined)
+    def setRS(value: String): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlankrows(value: Boolean): Self = this.set("blankrows", value.asInstanceOf[js.Any])
+    def setRSUndefined: Self = StObject.set(x, "RS", js.undefined)
     
     @scala.inline
-    def deleteBlankrows: Self = this.set("blankrows", js.undefined)
+    def setRawNumbers(value: Boolean): Self = StObject.set(x, "rawNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceQuotes(value: Boolean): Self = this.set("forceQuotes", value.asInstanceOf[js.Any])
+    def setRawNumbersUndefined: Self = StObject.set(x, "rawNumbers", js.undefined)
     
     @scala.inline
-    def deleteForceQuotes: Self = this.set("forceQuotes", js.undefined)
+    def setSkipHidden(value: Boolean): Self = StObject.set(x, "skipHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawNumbers(value: Boolean): Self = this.set("rawNumbers", value.asInstanceOf[js.Any])
+    def setSkipHiddenUndefined: Self = StObject.set(x, "skipHidden", js.undefined)
     
     @scala.inline
-    def deleteRawNumbers: Self = this.set("rawNumbers", js.undefined)
+    def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipHidden(value: Boolean): Self = this.set("skipHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipHidden: Self = this.set("skipHidden", js.undefined)
-    
-    @scala.inline
-    def setStrip(value: Boolean): Self = this.set("strip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrip: Self = this.set("strip", js.undefined)
+    def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The result of adding a chart to a spreadsheet.
   */
 @js.native
-trait SchemaAddChartResponse extends js.Object {
+trait SchemaAddChartResponse extends StObject {
   
   /**
     * The newly added chart.
@@ -24,24 +25,12 @@ object SchemaAddChartResponse {
   }
   
   @scala.inline
-  implicit class SchemaAddChartResponseOps[Self <: SchemaAddChartResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAddChartResponseMutableBuilder[Self <: SchemaAddChartResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChart(value: SchemaEmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChart(value: SchemaEmbeddedChart): Self = this.set("chart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.siesta.Siesta.Test
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @mixin
   */
 @js.native
-trait ITextSelection extends js.Object {
+trait ITextSelection extends StObject {
   
   def getSelectedText(el: js.Any): String = js.native
   

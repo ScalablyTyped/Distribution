@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectIdentifierAndLinkNameTuple extends js.Object {
+trait ObjectIdentifierAndLinkNameTuple extends StObject {
   
   /**
     * The name of the link between the parent and the child object.
@@ -26,30 +27,18 @@ object ObjectIdentifierAndLinkNameTuple {
   }
   
   @scala.inline
-  implicit class ObjectIdentifierAndLinkNameTupleOps[Self <: ObjectIdentifierAndLinkNameTuple] (val x: Self) extends AnyVal {
+  implicit class ObjectIdentifierAndLinkNameTupleMutableBuilder[Self <: ObjectIdentifierAndLinkNameTuple] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkName: Self = this.set("LinkName", js.undefined)
-    
-    @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = this.set("ObjectIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectIdentifier: Self = this.set("ObjectIdentifier", js.undefined)
+    def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
   }
 }

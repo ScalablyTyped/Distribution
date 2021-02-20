@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetPoolsRemoveInstanceRequest extends js.Object {
+trait TargetPoolsRemoveInstanceRequest extends StObject {
   
   /** URLs of the instances to be removed from target pool. */
   var instances: js.UndefOr[js.Array[InstanceReference]] = js.native
@@ -19,27 +20,15 @@ object TargetPoolsRemoveInstanceRequest {
   }
   
   @scala.inline
-  implicit class TargetPoolsRemoveInstanceRequestOps[Self <: TargetPoolsRemoveInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class TargetPoolsRemoveInstanceRequestMutableBuilder[Self <: TargetPoolsRemoveInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstancesVarargs(value: InstanceReference*): Self = this.set("instances", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstances(value: js.Array[InstanceReference]): Self = this.set("instances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setInstancesVarargs(value: InstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDedicatedIpRequest extends js.Object {
+trait GetDedicatedIpRequest extends StObject {
   
   /**
     * The IP address that you want to obtain more information about. The value you specify has to be a dedicated IP address that's assocaited with your Amazon Pinpoint account.
@@ -21,21 +22,9 @@ object GetDedicatedIpRequest {
   }
   
   @scala.inline
-  implicit class GetDedicatedIpRequestOps[Self <: GetDedicatedIpRequest] (val x: Self) extends AnyVal {
+  implicit class GetDedicatedIpRequestMutableBuilder[Self <: GetDedicatedIpRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
   }
 }

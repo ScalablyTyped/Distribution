@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayLogging extends js.Object {
+trait VirtualGatewayLogging extends StObject {
   
   /**
     * The access log configuration.
@@ -21,24 +22,12 @@ object VirtualGatewayLogging {
   }
   
   @scala.inline
-  implicit class VirtualGatewayLoggingOps[Self <: VirtualGatewayLogging] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayLoggingMutableBuilder[Self <: VirtualGatewayLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLog(value: VirtualGatewayAccessLog): Self = StObject.set(x, "accessLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessLog(value: VirtualGatewayAccessLog): Self = this.set("accessLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessLog: Self = this.set("accessLog", js.undefined)
+    def setAccessLogUndefined: Self = StObject.set(x, "accessLog", js.undefined)
   }
 }

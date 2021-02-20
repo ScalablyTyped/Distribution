@@ -1,12 +1,13 @@
 package typings.pixiJs.PIXI
 
 import typings.pixiJs.anon.LoadElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILoaderOptions extends js.Object {
+trait ILoaderOptions extends StObject {
   
   var crossOrigin: js.UndefOr[Boolean | String] = js.native
   
@@ -25,42 +26,30 @@ object ILoaderOptions {
   }
   
   @scala.inline
-  implicit class ILoaderOptionsOps[Self <: ILoaderOptions] (val x: Self) extends AnyVal {
+  implicit class ILoaderOptionsMutableBuilder[Self <: ILoaderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrossOrigin(value: Boolean | String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadType(value: Double): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: Boolean | String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setLoadTypeUndefined: Self = StObject.set(x, "loadType", js.undefined)
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setMetadata(value: LoadElement): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadType(value: Double): Self = this.set("loadType", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLoadType: Self = this.set("loadType", js.undefined)
+    def setXhrType(value: String): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: LoadElement): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setXhrType(value: String): Self = this.set("xhrType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhrType: Self = this.set("xhrType", js.undefined)
+    def setXhrTypeUndefined: Self = StObject.set(x, "xhrType", js.undefined)
   }
 }

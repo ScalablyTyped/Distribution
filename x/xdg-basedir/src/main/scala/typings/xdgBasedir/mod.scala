@@ -1,12 +1,11 @@
 package typings.xdgBasedir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xdg-basedir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Directory for user-specific non-essential data files.
@@ -17,6 +16,8 @@ object mod extends js.Object {
   	//=> '/home/sindresorhus/.cache'
   	```
   	*/
+  @JSImport("xdg-basedir", "cache")
+  @js.native
   val cache: js.UndefOr[String] = js.native
   
   /**
@@ -28,6 +29,8 @@ object mod extends js.Object {
   	//=> '/home/sindresorhus/.config'
   	```
   	*/
+  @JSImport("xdg-basedir", "config")
+  @js.native
   val config: js.UndefOr[String] = js.native
   
   /**
@@ -39,6 +42,8 @@ object mod extends js.Object {
   	//=> ['/home/sindresorhus/.config', '/etc/xdg']
   	```
   	*/
+  @JSImport("xdg-basedir", "configDirs")
+  @js.native
   val configDirs: js.Array[String] = js.native
   
   /**
@@ -50,6 +55,8 @@ object mod extends js.Object {
   	//=> '/home/sindresorhus/.local/share'
   	```
   	*/
+  @JSImport("xdg-basedir", "data")
+  @js.native
   val data: js.UndefOr[String] = js.native
   
   /**
@@ -61,6 +68,8 @@ object mod extends js.Object {
   	//=> ['/home/sindresorhus/.local/share', '/usr/local/share/', '/usr/share/']
   	```
   	*/
+  @JSImport("xdg-basedir", "dataDirs")
+  @js.native
   val dataDirs: js.Array[String] = js.native
   
   /**
@@ -72,5 +81,7 @@ object mod extends js.Object {
   	//=> '/run/user/sindresorhus'
   	```
   	*/
+  @JSImport("xdg-basedir", "runtime")
+  @js.native
   val runtime: js.UndefOr[String] = js.native
 }

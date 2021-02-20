@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitySnapshot extends js.Object {
+trait IdentitySnapshot extends StObject {
   
   var groups: js.Array[Identity] = js.native
   
@@ -32,45 +33,33 @@ object IdentitySnapshot {
   }
   
   @scala.inline
-  implicit class IdentitySnapshotOps[Self <: IdentitySnapshot] (val x: Self) extends AnyVal {
+  implicit class IdentitySnapshotMutableBuilder[Self <: IdentitySnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroups(value: js.Array[Identity]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupsVarargs(value: Identity*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: Identity*): Self = this.set("groups", js.Array(value :_*))
+    def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
     
     @scala.inline
-    def setGroups(value: js.Array[Identity]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setMemberships(value: js.Array[GroupMembership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityIdsVarargs(value: String*): Self = this.set("identityIds", js.Array(value :_*))
+    def setMembershipsVarargs(value: GroupMembership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
     
     @scala.inline
-    def setIdentityIds(value: js.Array[String]): Self = this.set("identityIds", value.asInstanceOf[js.Any])
+    def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembershipsVarargs(value: GroupMembership*): Self = this.set("memberships", js.Array(value :_*))
+    def setScopes(value: js.Array[IdentityScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberships(value: js.Array[GroupMembership]): Self = this.set("memberships", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeId(value: String): Self = this.set("scopeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopesVarargs(value: IdentityScope*): Self = this.set("scopes", js.Array(value :_*))
-    
-    @scala.inline
-    def setScopes(value: js.Array[IdentityScope]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    def setScopesVarargs(value: IdentityScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

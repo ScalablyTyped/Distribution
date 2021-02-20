@@ -1,11 +1,12 @@
 package typings.lyricist.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Following extends js.Object {
+trait Following extends StObject {
   
   var following: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Following {
   }
   
   @scala.inline
-  implicit class FollowingOps[Self <: Following] (val x: Self) extends AnyVal {
+  implicit class FollowingMutableBuilder[Self <: Following] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFollowing(value: Boolean): Self = this.set("following", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPyong(value: Boolean): Self = this.set("pyong", value.asInstanceOf[js.Any])
+    def setPyong(value: Boolean): Self = StObject.set(x, "pyong", value.asInstanceOf[js.Any])
   }
 }

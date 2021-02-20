@@ -1,11 +1,12 @@
 package typings.rollup.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column extends js.Object {
+trait Column extends StObject {
   
   var column: Double = js.native
   
@@ -22,30 +23,18 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

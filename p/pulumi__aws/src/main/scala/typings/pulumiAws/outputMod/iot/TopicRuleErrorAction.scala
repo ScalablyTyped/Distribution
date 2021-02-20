@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.iot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleErrorAction extends js.Object {
+trait TopicRuleErrorAction extends StObject {
   
   var cloudwatchAlarm: js.UndefOr[TopicRuleErrorActionCloudwatchAlarm] = js.native
   
@@ -46,108 +47,96 @@ object TopicRuleErrorAction {
   }
   
   @scala.inline
-  implicit class TopicRuleErrorActionOps[Self <: TopicRuleErrorAction] (val x: Self) extends AnyVal {
+  implicit class TopicRuleErrorActionMutableBuilder[Self <: TopicRuleErrorAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchAlarm(value: TopicRuleErrorActionCloudwatchAlarm): Self = StObject.set(x, "cloudwatchAlarm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudwatchAlarmUndefined: Self = StObject.set(x, "cloudwatchAlarm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudwatchMetric(value: TopicRuleErrorActionCloudwatchMetric): Self = StObject.set(x, "cloudwatchMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchAlarm(value: TopicRuleErrorActionCloudwatchAlarm): Self = this.set("cloudwatchAlarm", value.asInstanceOf[js.Any])
+    def setCloudwatchMetricUndefined: Self = StObject.set(x, "cloudwatchMetric", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchAlarm: Self = this.set("cloudwatchAlarm", js.undefined)
+    def setDynamodb(value: TopicRuleErrorActionDynamodb): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchMetric(value: TopicRuleErrorActionCloudwatchMetric): Self = this.set("cloudwatchMetric", value.asInstanceOf[js.Any])
+    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchMetric: Self = this.set("cloudwatchMetric", js.undefined)
+    def setDynamodbv2(value: TopicRuleErrorActionDynamodbv2): Self = StObject.set(x, "dynamodbv2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamodb(value: TopicRuleErrorActionDynamodb): Self = this.set("dynamodb", value.asInstanceOf[js.Any])
+    def setDynamodbv2Undefined: Self = StObject.set(x, "dynamodbv2", js.undefined)
     
     @scala.inline
-    def deleteDynamodb: Self = this.set("dynamodb", js.undefined)
+    def setElasticsearch(value: TopicRuleErrorActionElasticsearch): Self = StObject.set(x, "elasticsearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamodbv2(value: TopicRuleErrorActionDynamodbv2): Self = this.set("dynamodbv2", value.asInstanceOf[js.Any])
+    def setElasticsearchUndefined: Self = StObject.set(x, "elasticsearch", js.undefined)
     
     @scala.inline
-    def deleteDynamodbv2: Self = this.set("dynamodbv2", js.undefined)
+    def setFirehose(value: TopicRuleErrorActionFirehose): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearch(value: TopicRuleErrorActionElasticsearch): Self = this.set("elasticsearch", value.asInstanceOf[js.Any])
+    def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
     
     @scala.inline
-    def deleteElasticsearch: Self = this.set("elasticsearch", js.undefined)
+    def setIotAnalytics(value: TopicRuleErrorActionIotAnalytics): Self = StObject.set(x, "iotAnalytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirehose(value: TopicRuleErrorActionFirehose): Self = this.set("firehose", value.asInstanceOf[js.Any])
+    def setIotAnalyticsUndefined: Self = StObject.set(x, "iotAnalytics", js.undefined)
     
     @scala.inline
-    def deleteFirehose: Self = this.set("firehose", js.undefined)
+    def setIotEvents(value: TopicRuleErrorActionIotEvents): Self = StObject.set(x, "iotEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIotAnalytics(value: TopicRuleErrorActionIotAnalytics): Self = this.set("iotAnalytics", value.asInstanceOf[js.Any])
+    def setIotEventsUndefined: Self = StObject.set(x, "iotEvents", js.undefined)
     
     @scala.inline
-    def deleteIotAnalytics: Self = this.set("iotAnalytics", js.undefined)
+    def setKinesis(value: TopicRuleErrorActionKinesis): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIotEvents(value: TopicRuleErrorActionIotEvents): Self = this.set("iotEvents", value.asInstanceOf[js.Any])
+    def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
     
     @scala.inline
-    def deleteIotEvents: Self = this.set("iotEvents", js.undefined)
+    def setLambda(value: TopicRuleErrorActionLambda): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesis(value: TopicRuleErrorActionKinesis): Self = this.set("kinesis", value.asInstanceOf[js.Any])
+    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
     @scala.inline
-    def deleteKinesis: Self = this.set("kinesis", js.undefined)
+    def setRepublish(value: TopicRuleErrorActionRepublish): Self = StObject.set(x, "republish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambda(value: TopicRuleErrorActionLambda): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    def setRepublishUndefined: Self = StObject.set(x, "republish", js.undefined)
     
     @scala.inline
-    def deleteLambda: Self = this.set("lambda", js.undefined)
+    def setS3(value: TopicRuleErrorActionS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepublish(value: TopicRuleErrorActionRepublish): Self = this.set("republish", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
     
     @scala.inline
-    def deleteRepublish: Self = this.set("republish", js.undefined)
+    def setSns(value: TopicRuleErrorActionSns): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3(value: TopicRuleErrorActionS3): Self = this.set("s3", value.asInstanceOf[js.Any])
+    def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
     
     @scala.inline
-    def deleteS3: Self = this.set("s3", js.undefined)
+    def setSqs(value: TopicRuleErrorActionSqs): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSns(value: TopicRuleErrorActionSns): Self = this.set("sns", value.asInstanceOf[js.Any])
+    def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
     
     @scala.inline
-    def deleteSns: Self = this.set("sns", js.undefined)
+    def setStepFunctions(value: TopicRuleErrorActionStepFunctions): Self = StObject.set(x, "stepFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqs(value: TopicRuleErrorActionSqs): Self = this.set("sqs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqs: Self = this.set("sqs", js.undefined)
-    
-    @scala.inline
-    def setStepFunctions(value: TopicRuleErrorActionStepFunctions): Self = this.set("stepFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepFunctions: Self = this.set("stepFunctions", js.undefined)
+    def setStepFunctionsUndefined: Self = StObject.set(x, "stepFunctions", js.undefined)
   }
 }

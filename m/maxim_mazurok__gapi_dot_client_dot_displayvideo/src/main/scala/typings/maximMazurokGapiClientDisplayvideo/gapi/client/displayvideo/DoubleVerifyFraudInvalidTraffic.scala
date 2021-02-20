@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleVerifyFraudInvalidTraffic extends js.Object {
+trait DoubleVerifyFraudInvalidTraffic extends StObject {
   
   /** Insufficient Historical Fraud & IVT Stats. */
   var avoidInsufficientOption: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object DoubleVerifyFraudInvalidTraffic {
   }
   
   @scala.inline
-  implicit class DoubleVerifyFraudInvalidTrafficOps[Self <: DoubleVerifyFraudInvalidTraffic] (val x: Self) extends AnyVal {
+  implicit class DoubleVerifyFraudInvalidTrafficMutableBuilder[Self <: DoubleVerifyFraudInvalidTraffic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidInsufficientOption(value: Boolean): Self = StObject.set(x, "avoidInsufficientOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidInsufficientOptionUndefined: Self = StObject.set(x, "avoidInsufficientOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidedFraudOption(value: String): Self = StObject.set(x, "avoidedFraudOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidInsufficientOption(value: Boolean): Self = this.set("avoidInsufficientOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvoidInsufficientOption: Self = this.set("avoidInsufficientOption", js.undefined)
-    
-    @scala.inline
-    def setAvoidedFraudOption(value: String): Self = this.set("avoidedFraudOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvoidedFraudOption: Self = this.set("avoidedFraudOption", js.undefined)
+    def setAvoidedFraudOptionUndefined: Self = StObject.set(x, "avoidedFraudOption", js.undefined)
   }
 }

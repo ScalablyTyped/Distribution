@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElementJax extends js.Object {
+trait ElementJax extends StObject {
   
   /*Removes the output for this element from the web page (but does not remove the original <script>). The
     * <script> will be considered unprocessed, and the next call to MathJax.hub.Typeset() will re-display it.

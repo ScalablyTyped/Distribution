@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusinessReportSchedule extends js.Object {
+trait BusinessReportSchedule extends StObject {
   
   /**
     * The content range of the reports.
@@ -56,66 +57,54 @@ object BusinessReportSchedule {
   }
   
   @scala.inline
-  implicit class BusinessReportScheduleOps[Self <: BusinessReportSchedule] (val x: Self) extends AnyVal {
+  implicit class BusinessReportScheduleMutableBuilder[Self <: BusinessReportSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentRange(value: BusinessReportContentRange): Self = StObject.set(x, "ContentRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentRangeUndefined: Self = StObject.set(x, "ContentRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: BusinessReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRange(value: BusinessReportContentRange): Self = this.set("ContentRange", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteContentRange: Self = this.set("ContentRange", js.undefined)
+    def setLastBusinessReport(value: BusinessReport): Self = StObject.set(x, "LastBusinessReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: BusinessReportFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setLastBusinessReportUndefined: Self = StObject.set(x, "LastBusinessReport", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setRecurrence(value: BusinessReportRecurrence): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastBusinessReport(value: BusinessReport): Self = this.set("LastBusinessReport", value.asInstanceOf[js.Any])
+    def setRecurrenceUndefined: Self = StObject.set(x, "Recurrence", js.undefined)
     
     @scala.inline
-    def deleteLastBusinessReport: Self = this.set("LastBusinessReport", js.undefined)
+    def setS3BucketName(value: CustomerS3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrence(value: BusinessReportRecurrence): Self = this.set("Recurrence", value.asInstanceOf[js.Any])
+    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
     @scala.inline
-    def deleteRecurrence: Self = this.set("Recurrence", js.undefined)
+    def setS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: CustomerS3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
     
     @scala.inline
-    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3KeyPrefix(value: S3KeyPrefix): Self = this.set("S3KeyPrefix", value.asInstanceOf[js.Any])
+    def setScheduleArnUndefined: Self = StObject.set(x, "ScheduleArn", js.undefined)
     
     @scala.inline
-    def deleteS3KeyPrefix: Self = this.set("S3KeyPrefix", js.undefined)
+    def setScheduleName(value: BusinessReportScheduleName): Self = StObject.set(x, "ScheduleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleArn(value: Arn): Self = this.set("ScheduleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleArn: Self = this.set("ScheduleArn", js.undefined)
-    
-    @scala.inline
-    def setScheduleName(value: BusinessReportScheduleName): Self = this.set("ScheduleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleName: Self = this.set("ScheduleName", js.undefined)
+    def setScheduleNameUndefined: Self = StObject.set(x, "ScheduleName", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.ltx
 
 import typings.ltx.elementMod.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ltx/lib/clone", JSImport.Namespace)
-@js.native
-object cloneMod extends js.Object {
+object cloneMod {
   
-  def clone[T /* <: Element */](el: T): T = js.native
+  @JSImport("ltx/lib/clone", "clone")
+  @js.native
+  def clone_[T /* <: Element */](el: T): T = js.native
 }

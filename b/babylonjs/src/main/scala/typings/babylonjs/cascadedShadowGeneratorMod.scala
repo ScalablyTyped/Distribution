@@ -8,14 +8,14 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowGeneratorMod.ShadowGenerator
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", JSImport.Namespace)
-@js.native
-object cascadedShadowGeneratorMod extends js.Object {
+object cascadedShadowGeneratorMod {
   
+  @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator")
   @js.native
   class CascadedShadowGenerator protected () extends ShadowGenerator {
     /**
@@ -273,32 +273,40 @@ object cascadedShadowGeneratorMod extends js.Object {
     var stabilizeCascades: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object CascadedShadowGenerator extends js.Object {
+  object CascadedShadowGenerator {
+    
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Name of the CSM class
       */
-    var CLASSNAME: String = js.native
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.CLASSNAME")
+    @js.native
+    def CLASSNAME: String = js.native
+    @scala.inline
+    def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
     
     /**
       * Defines the default number of cascades used by the CSM.
       */
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.DEFAULT_CASCADES_COUNT")
+    @js.native
     val DEFAULT_CASCADES_COUNT: Double = js.native
-    
-    /**
-      *  Support test.
-      */
-    def IsSupported: Boolean = js.native
     
     /**
       * Defines the maximum number of cascades used by the CSM.
       */
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.MAX_CASCADES_COUNT")
+    @js.native
     val MAX_CASCADES_COUNT: Double = js.native
     
     /**
       * Defines the minimum number of cascades used by the CSM.
       */
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.MIN_CASCADES_COUNT")
+    @js.native
     val MIN_CASCADES_COUNT: Double = js.native
     
     /**
@@ -307,11 +315,17 @@ object cascadedShadowGeneratorMod extends js.Object {
       * @param scene The scene to create the shadow map for
       * @returns The parsed shadow generator
       */
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.Parse")
+    @js.native
     def Parse(parsedShadowGenerator: js.Any, scene: Scene): ShadowGenerator = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator._SceneComponentInitialization")
+    @js.native
     def _SceneComponentInitialization(scene: Scene): Unit = js.native
     
+    @JSImport("babylonjs/Lights/Shadows/cascadedShadowGenerator", "CascadedShadowGenerator.frustumCornersNDCSpace")
+    @js.native
     val frustumCornersNDCSpace: js.Any = js.native
   }
 }

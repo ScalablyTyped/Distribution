@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,48 +64,36 @@ object ColumnSummary {
   }
   
   @scala.inline
-  implicit class ColumnSummaryOps[Self <: ColumnSummary] (val x: Self) extends AnyVal {
+  implicit class ColumnSummaryMutableBuilder[Self <: ColumnSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculate(value: Endpoints => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateAverage(value: Endpoints => Double): Self = StObject.set(x, "calculateAverage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalculateMinMax(value: (Endpoints, String) => Double): Self = StObject.set(x, "calculateMinMax", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCalculate(value: Endpoints => Unit): Self = this.set("calculate", js.Any.fromFunction1(value))
+    def setCalculateSum(value: Endpoints => Unit): Self = StObject.set(x, "calculateSum", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculateAverage(value: Endpoints => Double): Self = this.set("calculateAverage", js.Any.fromFunction1(value))
+    def setCountEmpty(value: (js.Array[_], Double) => Double): Self = StObject.set(x, "countEmpty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCalculateMinMax(value: (Endpoints, String) => Double): Self = this.set("calculateMinMax", js.Any.fromFunction2(value))
+    def setCountEntries(value: Endpoints => Double): Self = StObject.set(x, "countEntries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalculateSum(value: Endpoints => Unit): Self = this.set("calculateSum", js.Any.fromFunction1(value))
+    def setEndpoints(value: Endpoints | Unit): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountEmpty(value: (js.Array[_], Double) => Double): Self = this.set("countEmpty", js.Any.fromFunction2(value))
+    def setGetCellValue(value: (Double, Double) => String): Self = StObject.set(x, "getCellValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCountEntries(value: Endpoints => Double): Self = this.set("countEntries", js.Any.fromFunction1(value))
+    def setGetPartialMinMax(value: (js.Array[_], Double, String) => Double): Self = StObject.set(x, "getPartialMinMax", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEndpoints(value: Endpoints | Unit): Self = this.set("endpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCellValue(value: (Double, Double) => String): Self = this.set("getCellValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetPartialMinMax(value: (js.Array[_], Double, String) => Double): Self = this.set("getPartialMinMax", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetPartialSum(value: (js.Array[_], Double) => Double): Self = this.set("getPartialSum", js.Any.fromFunction2(value))
+    def setGetPartialSum(value: (js.Array[_], Double) => Double): Self = StObject.set(x, "getPartialSum", js.Any.fromFunction2(value))
   }
 }

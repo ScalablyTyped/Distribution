@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SATFactory extends js.Object {
+trait SATFactory extends StObject {
   
   /**
     * Detect collision between two bodies using the Separating Axis Theorem.
@@ -26,21 +27,9 @@ object SATFactory {
   }
   
   @scala.inline
-  implicit class SATFactoryOps[Self <: SATFactory] (val x: Self) extends AnyVal {
+  implicit class SATFactoryMutableBuilder[Self <: SATFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollides(value: (BodyType, BodyType, ICollisionData) => ICollisionData): Self = this.set("collides", js.Any.fromFunction3(value))
+    def setCollides(value: (BodyType, BodyType, ICollisionData) => ICollisionData): Self = StObject.set(x, "collides", js.Any.fromFunction3(value))
   }
 }

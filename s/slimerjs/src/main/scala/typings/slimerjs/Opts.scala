@@ -1,11 +1,12 @@
 package typings.slimerjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Opts extends js.Object {
+trait Opts extends StObject {
   
   var charset: String = js.native
   
@@ -22,27 +23,15 @@ object Opts {
   }
   
   @scala.inline
-  implicit class OptsOps[Self <: Opts] (val x: Self) extends AnyVal {
+  implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNobuffer(value: Boolean): Self = this.set("nobuffer", value.asInstanceOf[js.Any])
+    def setNobuffer(value: Boolean): Self = StObject.set(x, "nobuffer", value.asInstanceOf[js.Any])
   }
 }

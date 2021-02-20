@@ -1,5 +1,6 @@
 package typings.webAppManifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://w3c.github.io/manifest/#shortcutitem-and-its-members
   */
 @js.native
-trait ShortcutItem extends js.Object {
+trait ShortcutItem extends StObject {
   
   /**
     * The `description` member of a `ShortcutItem` is a `string` that allows the developer to describe the
@@ -61,45 +62,33 @@ object ShortcutItem {
   }
   
   @scala.inline
-  implicit class ShortcutItemOps[Self <: ShortcutItem] (val x: Self) extends AnyVal {
+  implicit class ShortcutItemMutableBuilder[Self <: ShortcutItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcons(value: js.Array[ImageResource]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setIconsVarargs(value: ImageResource*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconsVarargs(value: ImageResource*): Self = this.set("icons", js.Array(value :_*))
+    def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
     
     @scala.inline
-    def setIcons(value: js.Array[ImageResource]): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
-    
-    @scala.inline
-    def setShort_name(value: String): Self = this.set("short_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort_name: Self = this.set("short_name", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

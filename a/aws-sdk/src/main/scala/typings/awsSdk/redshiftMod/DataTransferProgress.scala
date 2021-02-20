@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTransferProgress extends js.Object {
+trait DataTransferProgress extends StObject {
   
   /**
     * Describes the data transfer rate in MB's per second.
@@ -46,54 +47,42 @@ object DataTransferProgress {
   }
   
   @scala.inline
-  implicit class DataTransferProgressOps[Self <: DataTransferProgress] (val x: Self) extends AnyVal {
+  implicit class DataTransferProgressMutableBuilder[Self <: DataTransferProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentRateInMegaBytesPerSecond(value: DoubleOptional): Self = StObject.set(x, "CurrentRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRateInMegaBytesPerSecondUndefined: Self = StObject.set(x, "CurrentRateInMegaBytesPerSecond", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTransferredInMegaBytes(value: Long): Self = StObject.set(x, "DataTransferredInMegaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRateInMegaBytesPerSecond(value: DoubleOptional): Self = this.set("CurrentRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
+    def setDataTransferredInMegaBytesUndefined: Self = StObject.set(x, "DataTransferredInMegaBytes", js.undefined)
     
     @scala.inline
-    def deleteCurrentRateInMegaBytesPerSecond: Self = this.set("CurrentRateInMegaBytesPerSecond", js.undefined)
+    def setElapsedTimeInSeconds(value: LongOptional): Self = StObject.set(x, "ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTransferredInMegaBytes(value: Long): Self = this.set("DataTransferredInMegaBytes", value.asInstanceOf[js.Any])
+    def setElapsedTimeInSecondsUndefined: Self = StObject.set(x, "ElapsedTimeInSeconds", js.undefined)
     
     @scala.inline
-    def deleteDataTransferredInMegaBytes: Self = this.set("DataTransferredInMegaBytes", js.undefined)
+    def setEstimatedTimeToCompletionInSeconds(value: LongOptional): Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsedTimeInSeconds(value: LongOptional): Self = this.set("ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
+    def setEstimatedTimeToCompletionInSecondsUndefined: Self = StObject.set(x, "EstimatedTimeToCompletionInSeconds", js.undefined)
     
     @scala.inline
-    def deleteElapsedTimeInSeconds: Self = this.set("ElapsedTimeInSeconds", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedTimeToCompletionInSeconds(value: LongOptional): Self = this.set("EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteEstimatedTimeToCompletionInSeconds: Self = this.set("EstimatedTimeToCompletionInSeconds", js.undefined)
+    def setTotalDataInMegaBytes(value: Long): Self = StObject.set(x, "TotalDataInMegaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTotalDataInMegaBytes(value: Long): Self = this.set("TotalDataInMegaBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalDataInMegaBytes: Self = this.set("TotalDataInMegaBytes", js.undefined)
+    def setTotalDataInMegaBytesUndefined: Self = StObject.set(x, "TotalDataInMegaBytes", js.undefined)
   }
 }

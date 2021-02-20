@@ -15,16 +15,16 @@ import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.grammarkdown.typesMod.Position
 import typings.grammarkdown.typesMod.Range
 import typings.prex.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/checker", JSImport.Namespace)
-@js.native
-object checkerMod extends js.Object {
+object checkerMod {
   
+  @JSImport("grammarkdown/dist/checker", "Checker")
   @js.native
-  class Checker () extends js.Object {
+  class Checker () extends StObject {
     def this(options: CompilerOptions) = this()
     def this(options: js.UndefOr[scala.Nothing], lineOffsetMap: LineOffsetMap) = this()
     def this(options: CompilerOptions, lineOffsetMap: LineOffsetMap) = this()
@@ -246,8 +246,9 @@ object checkerMod extends js.Object {
     var symbolLinks: js.Any = js.native
   }
   
+  @JSImport("grammarkdown/dist/checker", "Resolver")
   @js.native
-  class Resolver protected () extends js.Object {
+  class Resolver protected () extends StObject {
     def this(bindings: BindingTable) = this()
     def this(bindings: BindingTable, lineOffsetMap: LineOffsetMap) = this()
     

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents multidimensional data visualized in the dashboard item.
   */
 @js.native
-trait ASPxClientDashboardItemData extends js.Object {
+trait ASPxClientDashboardItemData extends StObject {
   
   /**
     * Creates a tuple based on the specified axes names and corresponding values. An ASPxClientDashboardItemDataAxisPointTuple object representing an axis point tuple.

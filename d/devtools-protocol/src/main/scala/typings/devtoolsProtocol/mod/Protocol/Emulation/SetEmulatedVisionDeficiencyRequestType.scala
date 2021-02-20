@@ -6,6 +6,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.deuteranopia
 import typings.devtoolsProtocol.devtoolsProtocolStrings.none_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.protanopia
 import typings.devtoolsProtocol.devtoolsProtocolStrings.tritanopia
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.protanopia
   - typings.devtoolsProtocol.devtoolsProtocolStrings.tritanopia
 */
-trait SetEmulatedVisionDeficiencyRequestType extends js.Object
+trait SetEmulatedVisionDeficiencyRequestType extends StObject
 object SetEmulatedVisionDeficiencyRequestType {
   
   @scala.inline

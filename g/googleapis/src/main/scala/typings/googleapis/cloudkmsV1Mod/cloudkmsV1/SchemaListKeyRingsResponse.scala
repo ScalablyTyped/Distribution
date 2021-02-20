@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for KeyManagementService.ListKeyRings.
   */
 @js.native
-trait SchemaListKeyRingsResponse extends js.Object {
+trait SchemaListKeyRingsResponse extends StObject {
   
   /**
     * The list of KeyRings.
@@ -35,39 +36,27 @@ object SchemaListKeyRingsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListKeyRingsResponseOps[Self <: SchemaListKeyRingsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListKeyRingsResponseMutableBuilder[Self <: SchemaListKeyRingsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyRings(value: js.Array[SchemaKeyRing]): Self = StObject.set(x, "keyRings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyRingsUndefined: Self = StObject.set(x, "keyRings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyRingsVarargs(value: SchemaKeyRing*): Self = StObject.set(x, "keyRings", js.Array(value :_*))
     
     @scala.inline
-    def setKeyRingsVarargs(value: SchemaKeyRing*): Self = this.set("keyRings", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyRings(value: js.Array[SchemaKeyRing]): Self = this.set("keyRings", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteKeyRings: Self = this.set("keyRings", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

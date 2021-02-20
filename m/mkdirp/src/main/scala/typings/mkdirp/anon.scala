@@ -11,16 +11,15 @@ import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(path: PathLike): js.UndefOr[String] = js.native
     def apply(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
@@ -30,7 +29,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallPathOptions extends js.Object {
+  trait FnCallPathOptions extends StObject {
     
     def apply(path: PathLike): Stats = js.native
     def apply(path: PathLike, options: BigIntOptions): BigIntStats = js.native
@@ -38,7 +37,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Typeofmkdir extends js.Object {
+  trait Typeofmkdir extends StObject {
     
     def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
     def apply(
@@ -67,7 +66,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Typeofstat extends js.Object {
+  trait Typeofstat extends StObject {
     
     def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = js.native
     def apply(

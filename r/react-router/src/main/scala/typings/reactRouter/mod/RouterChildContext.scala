@@ -2,6 +2,7 @@ package typings.reactRouter.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.reactRouter.anon.History
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RouterChildContext[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
-  */ typings.reactRouter.reactRouterStrings.RouterChildContext with TopLevel[js.Any] */] extends js.Object {
+  */ typings.reactRouter.reactRouterStrings.RouterChildContext with TopLevel[js.Any] */] extends StObject {
   
   var router: History[Params] = js.native
 }
@@ -24,23 +25,11 @@ object RouterChildContext {
   }
   
   @scala.inline
-  implicit class RouterChildContextOps[Self <: RouterChildContext[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  implicit class RouterChildContextMutableBuilder[Self <: RouterChildContext[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouter.reactRouterStrings.RouterChildContext with TopLevel[js.Any] */] (val x: Self with RouterChildContext[Params]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRouter(value: History[Params]): Self = this.set("router", value.asInstanceOf[js.Any])
+    def setRouter(value: History[Params]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpnConnectionsResult extends js.Object {
+trait DescribeVpnConnectionsResult extends StObject {
   
   /**
     * Information about one or more VPN connections.
@@ -21,27 +22,15 @@ object DescribeVpnConnectionsResult {
   }
   
   @scala.inline
-  implicit class DescribeVpnConnectionsResultOps[Self <: DescribeVpnConnectionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeVpnConnectionsResultMutableBuilder[Self <: DescribeVpnConnectionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpnConnections(value: VpnConnectionList): Self = StObject.set(x, "VpnConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVpnConnectionsUndefined: Self = StObject.set(x, "VpnConnections", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpnConnectionsVarargs(value: VpnConnection*): Self = this.set("VpnConnections", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpnConnections(value: VpnConnectionList): Self = this.set("VpnConnections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnConnections: Self = this.set("VpnConnections", js.undefined)
+    def setVpnConnectionsVarargs(value: VpnConnection*): Self = StObject.set(x, "VpnConnections", js.Array(value :_*))
   }
 }

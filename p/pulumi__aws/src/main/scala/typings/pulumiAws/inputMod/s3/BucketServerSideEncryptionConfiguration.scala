@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketServerSideEncryptionConfiguration extends js.Object {
+trait BucketServerSideEncryptionConfiguration extends StObject {
   
   /**
     * A single object for server-side encryption by default configuration. (documented below)
@@ -22,21 +23,9 @@ object BucketServerSideEncryptionConfiguration {
   }
   
   @scala.inline
-  implicit class BucketServerSideEncryptionConfigurationOps[Self <: BucketServerSideEncryptionConfiguration] (val x: Self) extends AnyVal {
+  implicit class BucketServerSideEncryptionConfigurationMutableBuilder[Self <: BucketServerSideEncryptionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRule(value: Input[BucketServerSideEncryptionConfigurationRule]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setRule(value: Input[BucketServerSideEncryptionConfigurationRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

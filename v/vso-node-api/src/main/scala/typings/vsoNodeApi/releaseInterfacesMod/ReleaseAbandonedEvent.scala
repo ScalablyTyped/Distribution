@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseAbandonedEvent extends js.Object {
+trait ReleaseAbandonedEvent extends StObject {
   
   var project: ProjectReference = js.native
   
@@ -20,24 +21,12 @@ object ReleaseAbandonedEvent {
   }
   
   @scala.inline
-  implicit class ReleaseAbandonedEventOps[Self <: ReleaseAbandonedEvent] (val x: Self) extends AnyVal {
+  implicit class ReleaseAbandonedEventMutableBuilder[Self <: ReleaseAbandonedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProject(value: ProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelease(value: Release): Self = this.set("release", value.asInstanceOf[js.Any])
+    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

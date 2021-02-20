@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexableText extends js.Object {
+trait IndexableText extends StObject {
   
   var indexableText: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object IndexableText {
   }
   
   @scala.inline
-  implicit class IndexableTextOps[Self <: IndexableText] (val x: Self) extends AnyVal {
+  implicit class IndexableTextMutableBuilder[Self <: IndexableText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexableText(value: String): Self = StObject.set(x, "indexableText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexableTextUndefined: Self = StObject.set(x, "indexableText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThumbnail(value: MimeType): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexableText(value: String): Self = this.set("indexableText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexableText: Self = this.set("indexableText", js.undefined)
-    
-    @scala.inline
-    def setThumbnail(value: MimeType): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

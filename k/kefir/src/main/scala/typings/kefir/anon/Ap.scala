@@ -1,11 +1,12 @@
 package typings.kefir.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ap extends js.Object {
+trait Ap extends StObject {
   
   def ap[A, B, E1, E2](
     obsF: typings.kefir.mod.Observable[js.Function1[/* x */ A, B], E1],
@@ -48,49 +49,37 @@ object Ap {
   }
   
   @scala.inline
-  implicit class ApOps[Self <: Ap] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ApMutableBuilder[Self <: Ap] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAp(
       value: (typings.kefir.mod.Observable[js.Function1[js.Any, js.Any], js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any | js.Any]
-    ): Self = this.set("ap", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
     @scala.inline
     def setBimap(
       value: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any]
-    ): Self = this.set("bimap", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
     
     @scala.inline
     def setChain(
       value: (js.Function1[js.Any, typings.kefir.mod.Observable[js.Any, js.Any]], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any | js.Any]
-    ): Self = this.set("chain", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
     @scala.inline
     def setConcat(
       value: (typings.kefir.mod.Observable[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any | js.Any, js.Any | js.Any]
-    ): Self = this.set("concat", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEmpty(value: () => typings.kefir.mod.Observable[scala.Nothing, scala.Nothing]): Self = this.set("empty", js.Any.fromFunction0(value))
+    def setEmpty(value: () => typings.kefir.mod.Observable[scala.Nothing, scala.Nothing]): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
     
     @scala.inline
     def setMap(
       value: (js.Function1[js.Any, js.Any], typings.kefir.mod.Observable[js.Any, js.Any]) => typings.kefir.mod.Observable[js.Any, js.Any]
-    ): Self = this.set("map", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOf(value: js.Any => typings.kefir.mod.Observable[js.Any, scala.Nothing]): Self = this.set("of", js.Any.fromFunction1(value))
+    def setOf(value: js.Any => typings.kefir.mod.Observable[js.Any, scala.Nothing]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
   }
 }

@@ -3,6 +3,7 @@ package typings.youtube.YT
 import typings.youtube.youtubeNumbers.`0`
 import typings.youtube.youtubeNumbers.`1`
 import typings.youtube.youtubeNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.youtube.youtubeNumbers.`1`
   - typings.youtube.youtubeNumbers.`2`
 */
-trait AutoHide extends js.Object
+trait AutoHide extends StObject
 object AutoHide {
   
   /**

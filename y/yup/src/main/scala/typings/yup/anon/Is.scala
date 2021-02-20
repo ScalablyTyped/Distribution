@@ -1,12 +1,13 @@
 package typings.yup.anon
 
 import typings.yup.mod.WhenOptionsBuilderObjectIs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Is extends js.Object {
+trait Is extends StObject {
   
   var is: WhenOptionsBuilderObjectIs = js.native
   
@@ -24,33 +25,21 @@ object Is {
   }
   
   @scala.inline
-  implicit class IsOps[Self <: Is] (val x: Self) extends AnyVal {
+  implicit class IsMutableBuilder[Self <: Is] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIs(value: WhenOptionsBuilderObjectIs): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFunction1(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNull: Self = StObject.set(x, "is", null)
     
     @scala.inline
-    def setOtherwise(value: js.Any): Self = this.set("otherwise", value.asInstanceOf[js.Any])
+    def setOtherwise(value: js.Any): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThen(value: js.Any): Self = this.set("then", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFunction1(value: /* repeated */ js.Any => Boolean): Self = this.set("is", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIs(value: WhenOptionsBuilderObjectIs): Self = this.set("is", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNull: Self = this.set("is", null)
+    def setThen(value: js.Any): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
   }
 }

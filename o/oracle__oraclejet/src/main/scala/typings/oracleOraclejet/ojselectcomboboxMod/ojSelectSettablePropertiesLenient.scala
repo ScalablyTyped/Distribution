@@ -9,6 +9,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.invalidHidden
 import typings.oracleOraclejet.oracleOraclejetStrings.invalidShown
 import typings.oracleOraclejet.oracleOraclejetStrings.pending
 import typings.oracleOraclejet.oracleOraclejetStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,87 +50,75 @@ object ojSelectSettablePropertiesLenient {
   }
   
   @scala.inline
-  implicit class ojSelectSettablePropertiesLenientOps[Self <: ojSelectSettablePropertiesLenient[_, _], V, SV] (val x: Self with (ojSelectSettablePropertiesLenient[V, SV])) extends AnyVal {
+  implicit class ojSelectSettablePropertiesLenientMutableBuilder[Self <: ojSelectSettablePropertiesLenient[_, _], V, SV] (val x: Self with (ojSelectSettablePropertiesLenient[V, SV])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescribedByNull: Self = StObject.set(x, "describedBy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
     
     @scala.inline
-    def setDescribedBy(value: String): Self = this.set("describedBy", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescribedBy: Self = this.set("describedBy", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setDescribedByNull: Self = this.set("describedBy", null)
+    def setDisplayOptions(value: ConverterHint): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setHelp(value: Instruction): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOptions(value: ConverterHint): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
+    def setHelpHints(value: Definition): Self = StObject.set(x, "helpHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
+    def setHelpHintsUndefined: Self = StObject.set(x, "helpHints", js.undefined)
     
     @scala.inline
-    def setHelp(value: Instruction): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setLabelHint(value: String): Self = StObject.set(x, "labelHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpHints(value: Definition): Self = this.set("helpHints", value.asInstanceOf[js.Any])
+    def setLabelHintUndefined: Self = StObject.set(x, "labelHint", js.undefined)
     
     @scala.inline
-    def deleteHelpHints: Self = this.set("helpHints", js.undefined)
+    def setMessagesCustom(value: js.Array[^]): Self = StObject.set(x, "messagesCustom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHint(value: String): Self = this.set("labelHint", value.asInstanceOf[js.Any])
+    def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
     @scala.inline
-    def deleteLabelHint: Self = this.set("labelHint", js.undefined)
+    def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesCustomVarargs(value: ^ *): Self = this.set("messagesCustom", js.Array(value :_*))
+    def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesCustom(value: js.Array[^]): Self = this.set("messagesCustom", value.asInstanceOf[js.Any])
+    def setTranslationsNull: Self = StObject.set(x, "translations", null)
     
     @scala.inline
-    def deleteMessagesCustom: Self = this.set("messagesCustom", js.undefined)
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def setTranslations(value: js.Object): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
     @scala.inline
-    def setTranslationsNull: Self = this.set("translations", null)
+    def setValue(value: SV): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValid(value: valid | pending | invalidHidden | invalidShown): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
-    
-    @scala.inline
-    def setValue(value: SV): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

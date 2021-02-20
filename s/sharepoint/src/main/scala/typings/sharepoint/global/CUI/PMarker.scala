@@ -1,12 +1,13 @@
 package typings.sharepoint.global.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CUI.PMarker")
 @js.native
-object PMarker extends js.Object {
+object PMarker extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.CUI.PMarker with Double] = js.native

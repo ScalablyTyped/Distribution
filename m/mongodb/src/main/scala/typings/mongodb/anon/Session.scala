@@ -2,12 +2,13 @@ package typings.mongodb.anon
 
 import typings.mongodb.mod.ClientSession
 import typings.mongodb.mod.ReadPreferenceOrMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Session extends js.Object {
+trait Session extends StObject {
   
   var readPreference: ReadPreferenceOrMode = js.native
   
@@ -22,27 +23,15 @@ object Session {
   }
   
   @scala.inline
-  implicit class SessionOps[Self <: Session] (val x: Self) extends AnyVal {
+  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

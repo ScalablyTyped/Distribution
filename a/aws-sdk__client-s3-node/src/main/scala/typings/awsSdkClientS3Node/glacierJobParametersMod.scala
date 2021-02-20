@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_GlacierJobParameters", JSImport.Namespace)
-@js.native
-object glacierJobParametersMod extends js.Object {
+object glacierJobParametersMod {
   
-  @JSName("_GlacierJobParameters")
+  @JSImport("@aws-sdk/client-s3-node/model/_GlacierJobParameters", "_GlacierJobParameters")
+  @js.native
   val GlacierJobParameters: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

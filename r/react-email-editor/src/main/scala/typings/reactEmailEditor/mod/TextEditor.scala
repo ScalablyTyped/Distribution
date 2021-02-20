@@ -1,11 +1,12 @@
 package typings.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEditor extends js.Object {
+trait TextEditor extends StObject {
   
   val cleanPaste: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object TextEditor {
   }
   
   @scala.inline
-  implicit class TextEditorOps[Self <: TextEditor] (val x: Self) extends AnyVal {
+  implicit class TextEditorMutableBuilder[Self <: TextEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCleanPaste(value: Boolean): Self = StObject.set(x, "cleanPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCleanPasteUndefined: Self = StObject.set(x, "cleanPaste", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmojis(value: Boolean): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCleanPaste(value: Boolean): Self = this.set("cleanPaste", value.asInstanceOf[js.Any])
+    def setEmojisUndefined: Self = StObject.set(x, "emojis", js.undefined)
     
     @scala.inline
-    def deleteCleanPaste: Self = this.set("cleanPaste", js.undefined)
+    def setSpellChecker(value: Boolean): Self = StObject.set(x, "spellChecker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmojis(value: Boolean): Self = this.set("emojis", value.asInstanceOf[js.Any])
+    def setSpellCheckerUndefined: Self = StObject.set(x, "spellChecker", js.undefined)
     
     @scala.inline
-    def deleteEmojis: Self = this.set("emojis", js.undefined)
+    def setTables(value: Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpellChecker(value: Boolean): Self = this.set("spellChecker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpellChecker: Self = this.set("spellChecker", js.undefined)
-    
-    @scala.inline
-    def setTables(value: Boolean): Self = this.set("tables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.cesium.mod
 
 import typings.cesium.anon.Culture
 import typings.cesium.anon.Level
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +20,15 @@ class BingMapsImageryProvider protected () extends ImageryProvider {
   
   val url: String = js.native
 }
-/* static members */
-@JSImport("cesium", "BingMapsImageryProvider")
-@js.native
-object BingMapsImageryProvider extends js.Object {
+object BingMapsImageryProvider {
   
+  /* static member */
+  @JSImport("cesium", "BingMapsImageryProvider.quadKeyToTileXY")
+  @js.native
   def quadKeyToTileXY(quadkey: String): Level = js.native
   
+  /* static member */
+  @JSImport("cesium", "BingMapsImageryProvider.tileXYToQuadKey")
+  @js.native
   def tileXYToQuadKey(x: Double, y: Double, level: Double): String = js.native
 }

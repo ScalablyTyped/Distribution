@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Globalization
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeographicRegion extends js.Object {
+trait IGeographicRegion extends StObject {
   
   var code: String = js.native
   
@@ -39,39 +40,27 @@ object IGeographicRegion {
   }
   
   @scala.inline
-  implicit class IGeographicRegionOps[Self <: IGeographicRegion] (val x: Self) extends AnyVal {
+  implicit class IGeographicRegionMutableBuilder[Self <: IGeographicRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeThreeDigit(value: String): Self = StObject.set(x, "codeThreeDigit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeThreeLetter(value: String): Self = StObject.set(x, "codeThreeLetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCodeTwoLetter(value: String): Self = StObject.set(x, "codeTwoLetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeThreeDigit(value: String): Self = this.set("codeThreeDigit", value.asInstanceOf[js.Any])
+    def setCurrenciesInUse(value: IVectorView[String]): Self = StObject.set(x, "currenciesInUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeThreeLetter(value: String): Self = this.set("codeThreeLetter", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeTwoLetter(value: String): Self = this.set("codeTwoLetter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrenciesInUse(value: IVectorView[String]): Self = this.set("currenciesInUse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNativeName(value: String): Self = this.set("nativeName", value.asInstanceOf[js.Any])
+    def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
   }
 }

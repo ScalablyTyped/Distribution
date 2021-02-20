@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTableVersionResponse extends js.Object {
+trait GetTableVersionResponse extends StObject {
   
   /**
     * The requested table version.
@@ -21,24 +22,12 @@ object GetTableVersionResponse {
   }
   
   @scala.inline
-  implicit class GetTableVersionResponseOps[Self <: GetTableVersionResponse] (val x: Self) extends AnyVal {
+  implicit class GetTableVersionResponseMutableBuilder[Self <: GetTableVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTableVersion(value: TableVersion): Self = StObject.set(x, "TableVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTableVersion(value: TableVersion): Self = this.set("TableVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableVersion: Self = this.set("TableVersion", js.undefined)
+    def setTableVersionUndefined: Self = StObject.set(x, "TableVersion", js.undefined)
   }
 }

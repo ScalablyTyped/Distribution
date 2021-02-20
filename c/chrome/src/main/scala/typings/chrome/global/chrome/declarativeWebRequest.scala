@@ -1,6 +1,7 @@
 package typings.chrome.global.chrome
 
 import typings.chrome.chrome.declarativeWebRequest.RequestedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ////////////////////
 // Declarative Web Request
 ////////////////////
-@JSGlobal("chrome.declarativeWebRequest")
-@js.native
-object declarativeWebRequest extends js.Object {
+object declarativeWebRequest {
   
-  var onRequest: RequestedEvent = js.native
+  @JSGlobal("chrome.declarativeWebRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("chrome.declarativeWebRequest.onRequest")
+  @js.native
+  def onRequest: RequestedEvent = js.native
+  @scala.inline
+  def onRequest_=(x: RequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
 }

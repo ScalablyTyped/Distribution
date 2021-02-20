@@ -1,12 +1,13 @@
 package typings.officeJs.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
 @js.native
-trait TrackedObjects extends js.Object {
+trait TrackedObjects extends StObject {
   
   /**
     * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 

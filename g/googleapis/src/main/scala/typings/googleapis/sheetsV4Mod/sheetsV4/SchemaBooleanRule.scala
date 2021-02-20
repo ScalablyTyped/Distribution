@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A rule that may or may not match, depending on the condition.
   */
 @js.native
-trait SchemaBooleanRule extends js.Object {
+trait SchemaBooleanRule extends StObject {
   
   /**
     * The condition of the rule. If the condition evaluates to true, the format
@@ -32,30 +33,18 @@ object SchemaBooleanRule {
   }
   
   @scala.inline
-  implicit class SchemaBooleanRuleOps[Self <: SchemaBooleanRule] (val x: Self) extends AnyVal {
+  implicit class SchemaBooleanRuleMutableBuilder[Self <: SchemaBooleanRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: SchemaBooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: SchemaCellFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: SchemaBooleanCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: SchemaCellFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

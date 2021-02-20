@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsRelationship. */
 @js.native
-trait QueryRelationsRelationship extends js.Object {
+trait QueryRelationsRelationship extends StObject {
   
   /** Information about the relationship. */
   var arguments: js.UndefOr[js.Array[QueryRelationsArgument]] = js.native
@@ -29,48 +30,36 @@ object QueryRelationsRelationship {
   }
   
   @scala.inline
-  implicit class QueryRelationsRelationshipOps[Self <: QueryRelationsRelationship] (val x: Self) extends AnyVal {
+  implicit class QueryRelationsRelationshipMutableBuilder[Self <: QueryRelationsRelationship] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Array[QueryRelationsArgument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentsVarargs(value: QueryRelationsArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setArgumentsVarargs(value: QueryRelationsArgument*): Self = this.set("arguments", js.Array(value :_*))
+    def setEvidence(value: js.Array[QueryEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: js.Array[QueryRelationsArgument]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setEvidenceVarargs(value: QueryEvidence*): Self = StObject.set(x, "evidence", js.Array(value :_*))
     
     @scala.inline
-    def setEvidenceVarargs(value: QueryEvidence*): Self = this.set("evidence", js.Array(value :_*))
+    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvidence(value: js.Array[QueryEvidence]): Self = this.set("evidence", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteEvidence: Self = this.set("evidence", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

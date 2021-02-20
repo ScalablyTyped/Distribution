@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISelectionData extends js.Object {
+trait ISelectionData extends StObject {
   
   var endColumn: Double = js.native
   
@@ -24,30 +25,18 @@ object ISelectionData {
   }
   
   @scala.inline
-  implicit class ISelectionDataOps[Self <: ISelectionData] (val x: Self) extends AnyVal {
+  implicit class ISelectionDataMutableBuilder[Self <: ISelectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndLine(value: Double): Self = this.set("endLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartLine(value: Double): Self = this.set("startLine", value.asInstanceOf[js.Any])
+    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
   }
 }

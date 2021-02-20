@@ -2,12 +2,13 @@ package typings.pubnub.mod
 
 import typings.pubnub.pubnubStrings.development
 import typings.pubnub.pubnubStrings.production
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait APNS2Target extends js.Object {
+trait APNS2Target extends StObject {
   
   var environment: js.UndefOr[development | production] = js.native
   
@@ -24,36 +25,24 @@ object APNS2Target {
   }
   
   @scala.inline
-  implicit class APNS2TargetOps[Self <: APNS2Target] (val x: Self) extends AnyVal {
+  implicit class APNS2TargetMutableBuilder[Self <: APNS2Target] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: development | production): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedDevices(value: js.Array[String]): Self = StObject.set(x, "excludedDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setExcludedDevicesUndefined: Self = StObject.set(x, "excludedDevices", js.undefined)
     
     @scala.inline
-    def setEnvironment(value: development | production): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setExcludedDevicesVarargs(value: String*): Self = StObject.set(x, "excludedDevices", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
-    
-    @scala.inline
-    def setExcludedDevicesVarargs(value: String*): Self = this.set("excludedDevices", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcludedDevices(value: js.Array[String]): Self = this.set("excludedDevices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedDevices: Self = this.set("excludedDevices", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

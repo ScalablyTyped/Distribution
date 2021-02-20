@@ -1,12 +1,13 @@
 package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 
 import typings.googleapis.anon.Identifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSiteVerificationWebResourceGettokenRequest extends js.Object {
+trait SchemaSiteVerificationWebResourceGettokenRequest extends StObject {
   
   /**
     * The site for which a verification token will be generated.
@@ -29,30 +30,18 @@ object SchemaSiteVerificationWebResourceGettokenRequest {
   }
   
   @scala.inline
-  implicit class SchemaSiteVerificationWebResourceGettokenRequestOps[Self <: SchemaSiteVerificationWebResourceGettokenRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSiteVerificationWebResourceGettokenRequestMutableBuilder[Self <: SchemaSiteVerificationWebResourceGettokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVerificationMethod(value: String): Self = StObject.set(x, "verificationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSite(value: Identifier): Self = this.set("site", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSite: Self = this.set("site", js.undefined)
-    
-    @scala.inline
-    def setVerificationMethod(value: String): Self = this.set("verificationMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationMethod: Self = this.set("verificationMethod", js.undefined)
+    def setVerificationMethodUndefined: Self = StObject.set(x, "verificationMethod", js.undefined)
   }
 }

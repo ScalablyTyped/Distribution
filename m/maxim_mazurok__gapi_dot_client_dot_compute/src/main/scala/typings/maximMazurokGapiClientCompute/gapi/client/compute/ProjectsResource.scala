@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientCompute.anon.MaxResultsOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRequestIdResource
 import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRequestIdResourceUserIp
 import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   /** Disable this project as a shared VPC host project. */
   def disableXpnHost(): Request[Operation] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRdsDbInstanceRequest extends js.Object {
+trait UpdateRdsDbInstanceRequest extends StObject {
   
   /**
     * The database password.
@@ -31,33 +32,21 @@ object UpdateRdsDbInstanceRequest {
   }
   
   @scala.inline
-  implicit class UpdateRdsDbInstanceRequestOps[Self <: UpdateRdsDbInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRdsDbInstanceRequestMutableBuilder[Self <: UpdateRdsDbInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDbPassword(value: String): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbPasswordUndefined: Self = StObject.set(x, "DbPassword", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdsDbInstanceArn(value: String): Self = this.set("RdsDbInstanceArn", value.asInstanceOf[js.Any])
+    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
     @scala.inline
-    def setDbPassword(value: String): Self = this.set("DbPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDbPassword: Self = this.set("DbPassword", js.undefined)
-    
-    @scala.inline
-    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDbUser: Self = this.set("DbUser", js.undefined)
+    def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
   }
 }

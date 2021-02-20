@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2CloudStorageOptions extends js.Object {
+trait GooglePrivacyDlpV2CloudStorageOptions extends StObject {
   
   /**
     * Max number of bytes to scan from a file. If a scanned file's size is bigger than this value then the rest of the bytes are omitted. Only one of bytes_limit_per_file and
@@ -46,57 +47,45 @@ object GooglePrivacyDlpV2CloudStorageOptions {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2CloudStorageOptionsOps[Self <: GooglePrivacyDlpV2CloudStorageOptions] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2CloudStorageOptionsMutableBuilder[Self <: GooglePrivacyDlpV2CloudStorageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesLimitPerFile(value: String): Self = StObject.set(x, "bytesLimitPerFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesLimitPerFilePercent(value: Double): Self = StObject.set(x, "bytesLimitPerFilePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesLimitPerFilePercentUndefined: Self = StObject.set(x, "bytesLimitPerFilePercent", js.undefined)
     
     @scala.inline
-    def setBytesLimitPerFile(value: String): Self = this.set("bytesLimitPerFile", value.asInstanceOf[js.Any])
+    def setBytesLimitPerFileUndefined: Self = StObject.set(x, "bytesLimitPerFile", js.undefined)
     
     @scala.inline
-    def deleteBytesLimitPerFile: Self = this.set("bytesLimitPerFile", js.undefined)
+    def setFileSet(value: GooglePrivacyDlpV2FileSet): Self = StObject.set(x, "fileSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesLimitPerFilePercent(value: Double): Self = this.set("bytesLimitPerFilePercent", value.asInstanceOf[js.Any])
+    def setFileSetUndefined: Self = StObject.set(x, "fileSet", js.undefined)
     
     @scala.inline
-    def deleteBytesLimitPerFilePercent: Self = this.set("bytesLimitPerFilePercent", js.undefined)
+    def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSet(value: GooglePrivacyDlpV2FileSet): Self = this.set("fileSet", value.asInstanceOf[js.Any])
+    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
     @scala.inline
-    def deleteFileSet: Self = this.set("fileSet", js.undefined)
+    def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
     @scala.inline
-    def setFileTypesVarargs(value: String*): Self = this.set("fileTypes", js.Array(value :_*))
+    def setFilesLimitPercent(value: Double): Self = StObject.set(x, "filesLimitPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileTypes(value: js.Array[String]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    def setFilesLimitPercentUndefined: Self = StObject.set(x, "filesLimitPercent", js.undefined)
     
     @scala.inline
-    def deleteFileTypes: Self = this.set("fileTypes", js.undefined)
+    def setSampleMethod(value: String): Self = StObject.set(x, "sampleMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesLimitPercent(value: Double): Self = this.set("filesLimitPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilesLimitPercent: Self = this.set("filesLimitPercent", js.undefined)
-    
-    @scala.inline
-    def setSampleMethod(value: String): Self = this.set("sampleMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleMethod: Self = this.set("sampleMethod", js.undefined)
+    def setSampleMethodUndefined: Self = StObject.set(x, "sampleMethod", js.undefined)
   }
 }

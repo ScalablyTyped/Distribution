@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchComplianceData extends js.Object {
+trait PatchComplianceData extends StObject {
   
   /**
     * The IDs of one or more Common Vulnerabilities and Exposure (CVE) issues that are resolved by the patch.
@@ -58,42 +59,30 @@ object PatchComplianceData {
   }
   
   @scala.inline
-  implicit class PatchComplianceDataOps[Self <: PatchComplianceData] (val x: Self) extends AnyVal {
+  implicit class PatchComplianceDataMutableBuilder[Self <: PatchComplianceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCVEIds(value: PatchCVEIds): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCVEIdsUndefined: Self = StObject.set(x, "CVEIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassification(value: PatchClassification): Self = this.set("Classification", value.asInstanceOf[js.Any])
+    def setInstalledTime(value: DateTime): Self = StObject.set(x, "InstalledTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledTime(value: DateTime): Self = this.set("InstalledTime", value.asInstanceOf[js.Any])
+    def setKBId(value: PatchKbNumber): Self = StObject.set(x, "KBId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKBId(value: PatchKbNumber): Self = this.set("KBId", value.asInstanceOf[js.Any])
+    def setSeverity(value: PatchSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: PatchSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setState(value: PatchComplianceDataState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: PatchComplianceDataState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: PatchTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCVEIds(value: PatchCVEIds): Self = this.set("CVEIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCVEIds: Self = this.set("CVEIds", js.undefined)
+    def setTitle(value: PatchTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

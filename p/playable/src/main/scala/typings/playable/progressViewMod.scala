@@ -3,17 +3,22 @@ package typings.playable
 import typings.playable.progressTypesMod.IProgressViewConfig
 import typings.playable.progressTypesMod.IProgressViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/controls/progress/progress.view", JSImport.Namespace)
-@js.native
-object progressViewMod extends js.Object {
+object progressViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/controls/progress/progress.view", JSImport.Default)
+  @js.native
+  class default protected () extends ProgressView {
+    def this(config: IProgressViewConfig) = this()
+  }
   
   @js.native
   trait ProgressView
-    extends typings.playable.stylableMod.default[IProgressViewStyles] {
+    extends typings.playable.viewMod.default[IProgressViewStyles] {
     
     @JSName("_$buffered")
     var _$buffered: js.Any = js.native
@@ -114,10 +119,5 @@ object progressViewMod extends js.Object {
     def showSyncWithLive(): Unit = js.native
     
     def updateOnResize(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends ProgressView {
-    def this(config: IProgressViewConfig) = this()
   }
 }

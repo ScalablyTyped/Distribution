@@ -1,11 +1,12 @@
 package typings.sugar.sugarjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtendOptions extends js.Object {
+trait ExtendOptions extends StObject {
   
   var enhance: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object ExtendOptions {
   }
   
   @scala.inline
-  implicit class ExtendOptionsOps[Self <: ExtendOptions] (val x: Self) extends AnyVal {
+  implicit class ExtendOptionsMutableBuilder[Self <: ExtendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnhanceArray(value: Boolean): Self = StObject.set(x, "enhanceArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnhanceArrayUndefined: Self = StObject.set(x, "enhanceArray", js.undefined)
     
     @scala.inline
-    def setEnhance(value: Boolean): Self = this.set("enhance", value.asInstanceOf[js.Any])
+    def setEnhanceString(value: Boolean): Self = StObject.set(x, "enhanceString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnhance: Self = this.set("enhance", js.undefined)
+    def setEnhanceStringUndefined: Self = StObject.set(x, "enhanceString", js.undefined)
     
     @scala.inline
-    def setEnhanceArray(value: Boolean): Self = this.set("enhanceArray", value.asInstanceOf[js.Any])
+    def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
     
     @scala.inline
-    def deleteEnhanceArray: Self = this.set("enhanceArray", js.undefined)
+    def setExcept(value: typings.sugar.Array[java.lang.String | NativeConstructor]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhanceString(value: Boolean): Self = this.set("enhanceString", value.asInstanceOf[js.Any])
+    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
     @scala.inline
-    def deleteEnhanceString: Self = this.set("enhanceString", js.undefined)
+    def setMethods(value: typings.sugar.Array[java.lang.String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcept(value: typings.sugar.Array[java.lang.String | NativeConstructor]): Self = this.set("except", value.asInstanceOf[js.Any])
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def deleteExcept: Self = this.set("except", js.undefined)
+    def setNamespaces(value: typings.sugar.Array[NativeConstructor]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: typings.sugar.Array[java.lang.String]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setObjectPrototype(value: Boolean): Self = StObject.set(x, "objectPrototype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaces(value: typings.sugar.Array[NativeConstructor]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaces: Self = this.set("namespaces", js.undefined)
-    
-    @scala.inline
-    def setObjectPrototype(value: Boolean): Self = this.set("objectPrototype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectPrototype: Self = this.set("objectPrototype", js.undefined)
+    def setObjectPrototypeUndefined: Self = StObject.set(x, "objectPrototype", js.undefined)
   }
 }

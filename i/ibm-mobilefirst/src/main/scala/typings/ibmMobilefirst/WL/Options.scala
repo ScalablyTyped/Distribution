@@ -1,11 +1,12 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var invocationContext: js.UndefOr[js.Any] = js.native
   
@@ -22,36 +23,24 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFailure(value: /* response */ IResponse => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInvocationContext(value: js.Any): Self = this.set("invocationContext", value.asInstanceOf[js.Any])
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def deleteInvocationContext: Self = this.set("invocationContext", js.undefined)
+    def setOnSuccess(value: /* response */ IResponse => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFailure(value: /* response */ IResponse => Unit): Self = this.set("onFailure", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: /* response */ IResponse => Unit): Self = this.set("onSuccess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

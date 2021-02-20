@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationConnectorProperties extends js.Object {
+trait DestinationConnectorProperties extends StObject {
   
   /**
     *  The properties required to query Amazon EventBridge. 
@@ -41,48 +42,36 @@ object DestinationConnectorProperties {
   }
   
   @scala.inline
-  implicit class DestinationConnectorPropertiesOps[Self <: DestinationConnectorProperties] (val x: Self) extends AnyVal {
+  implicit class DestinationConnectorPropertiesMutableBuilder[Self <: DestinationConnectorProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventBridge(value: EventBridgeDestinationProperties): Self = StObject.set(x, "EventBridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventBridgeUndefined: Self = StObject.set(x, "EventBridge", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedshift(value: RedshiftDestinationProperties): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBridge(value: EventBridgeDestinationProperties): Self = this.set("EventBridge", value.asInstanceOf[js.Any])
+    def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
     
     @scala.inline
-    def deleteEventBridge: Self = this.set("EventBridge", js.undefined)
+    def setS3(value: S3DestinationProperties): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshift(value: RedshiftDestinationProperties): Self = this.set("Redshift", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
     @scala.inline
-    def deleteRedshift: Self = this.set("Redshift", js.undefined)
+    def setSalesforce(value: SalesforceDestinationProperties): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3(value: S3DestinationProperties): Self = this.set("S3", value.asInstanceOf[js.Any])
+    def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
     
     @scala.inline
-    def deleteS3: Self = this.set("S3", js.undefined)
+    def setSnowflake(value: SnowflakeDestinationProperties): Self = StObject.set(x, "Snowflake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforce(value: SalesforceDestinationProperties): Self = this.set("Salesforce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSalesforce: Self = this.set("Salesforce", js.undefined)
-    
-    @scala.inline
-    def setSnowflake(value: SnowflakeDestinationProperties): Self = this.set("Snowflake", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnowflake: Self = this.set("Snowflake", js.undefined)
+    def setSnowflakeUndefined: Self = StObject.set(x, "Snowflake", js.undefined)
   }
 }

@@ -3,14 +3,14 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.lightMod.Light
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/lights/AmbientLight", JSImport.Namespace)
-@js.native
-object ambientLightMod extends js.Object {
+object ambientLightMod {
   
+  @JSImport("three/src/lights/AmbientLight", "AmbientLight")
   @js.native
   /**
   	 * This creates a Ambientlight with a color.

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteScheduledActionAnswer extends js.Object {
+trait BatchDeleteScheduledActionAnswer extends StObject {
   
   /**
     * The names of the scheduled actions that could not be deleted, including an error message.
@@ -21,27 +22,15 @@ object BatchDeleteScheduledActionAnswer {
   }
   
   @scala.inline
-  implicit class BatchDeleteScheduledActionAnswerOps[Self <: BatchDeleteScheduledActionAnswer] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteScheduledActionAnswerMutableBuilder[Self <: BatchDeleteScheduledActionAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedScheduledActions(value: FailedScheduledUpdateGroupActionRequests): Self = StObject.set(x, "FailedScheduledActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedScheduledActionsUndefined: Self = StObject.set(x, "FailedScheduledActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedScheduledActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = this.set("FailedScheduledActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedScheduledActions(value: FailedScheduledUpdateGroupActionRequests): Self = this.set("FailedScheduledActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedScheduledActions: Self = this.set("FailedScheduledActions", js.undefined)
+    def setFailedScheduledActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledActions", js.Array(value :_*))
   }
 }

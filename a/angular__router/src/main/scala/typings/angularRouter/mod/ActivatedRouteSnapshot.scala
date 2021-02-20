@@ -1,13 +1,14 @@
 package typings.angularRouter.mod
 
 import typings.angularCore.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "ActivatedRouteSnapshot")
 @js.native
-class ActivatedRouteSnapshot () extends js.Object {
+class ActivatedRouteSnapshot () extends StObject {
   
   /** The children of this route in the router state tree */
   def children: js.Array[ActivatedRouteSnapshot] = js.native

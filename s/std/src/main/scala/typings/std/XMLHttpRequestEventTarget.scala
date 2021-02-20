@@ -7,6 +7,7 @@ import typings.std.stdStrings.loadend
 import typings.std.stdStrings.loadstart
 import typings.std.stdStrings.progress
 import typings.std.stdStrings.timeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

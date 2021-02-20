@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,90 +80,78 @@ object ITabPanel {
   }
   
   @scala.inline
-  implicit class ITabPanelOps[Self <: ITabPanel] (val x: Self) extends AnyVal {
+  implicit class ITabPanelMutableBuilder[Self <: ITabPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoTabChange(value: (/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "doTabChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoTabChangeUndefined: Self = StObject.set(x, "doTabChange", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoTabChange(value: (/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any]) => Boolean): Self = this.set("doTabChange", js.Any.fromFunction2(value))
+    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
     @scala.inline
-    def deleteDoTabChange: Self = this.set("doTabChange", js.undefined)
+    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCls(value: () => java.lang.String): Self = this.set("getCls", js.Any.fromFunction0(value))
+    def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
     @scala.inline
-    def deleteGetCls: Self = this.set("getCls", js.undefined)
+    def setGetTabBar(value: () => _): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = this.set("getLayout", js.Any.fromFunction0(value))
+    def setGetTabBarPosition(value: () => java.lang.String): Self = StObject.set(x, "getTabBarPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetLayout: Self = this.set("getLayout", js.undefined)
+    def setGetTabBarPositionUndefined: Self = StObject.set(x, "getTabBarPosition", js.undefined)
     
     @scala.inline
-    def setGetTabBar(value: () => _): Self = this.set("getTabBar", js.Any.fromFunction0(value))
+    def setGetTabBarUndefined: Self = StObject.set(x, "getTabBar", js.undefined)
     
     @scala.inline
-    def deleteGetTabBar: Self = this.set("getTabBar", js.undefined)
+    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTabBarPosition(value: () => java.lang.String): Self = this.set("getTabBarPosition", js.Any.fromFunction0(value))
+    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
     @scala.inline
-    def deleteGetTabBarPosition: Self = this.set("getTabBarPosition", js.undefined)
+    def setSetTabBar(value: /* tabBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTabBar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setCls", js.Any.fromFunction1(value))
+    def setSetTabBarPosition(value: /* tabBarPosition */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTabBarPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetCls: Self = this.set("setCls", js.undefined)
+    def setSetTabBarPositionUndefined: Self = StObject.set(x, "setTabBarPosition", js.undefined)
     
     @scala.inline
-    def setSetTabBar(value: /* tabBar */ js.UndefOr[js.Any] => Unit): Self = this.set("setTabBar", js.Any.fromFunction1(value))
+    def setSetTabBarUndefined: Self = StObject.set(x, "setTabBar", js.undefined)
     
     @scala.inline
-    def deleteSetTabBar: Self = this.set("setTabBar", js.undefined)
+    def setTabBar(value: js.Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTabBarPosition(value: /* tabBarPosition */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTabBarPosition", js.Any.fromFunction1(value))
+    def setTabBarDock(value: Boolean): Self = StObject.set(x, "tabBarDock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetTabBarPosition: Self = this.set("setTabBarPosition", js.undefined)
+    def setTabBarDockUndefined: Self = StObject.set(x, "tabBarDock", js.undefined)
     
     @scala.inline
-    def setTabBar(value: js.Any): Self = this.set("tabBar", value.asInstanceOf[js.Any])
+    def setTabBarPosition(value: java.lang.String): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabBar: Self = this.set("tabBar", js.undefined)
+    def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
     
     @scala.inline
-    def setTabBarDock(value: Boolean): Self = this.set("tabBarDock", value.asInstanceOf[js.Any])
+    def setTabBarUndefined: Self = StObject.set(x, "tabBar", js.undefined)
     
     @scala.inline
-    def deleteTabBarDock: Self = this.set("tabBarDock", js.undefined)
+    def setUpdateUi(value: (/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateUi", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTabBarPosition(value: java.lang.String): Self = this.set("tabBarPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabBarPosition: Self = this.set("tabBarPosition", js.undefined)
-    
-    @scala.inline
-    def setUpdateUi(value: (/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any]) => Unit): Self = this.set("updateUi", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUpdateUi: Self = this.set("updateUi", js.undefined)
+    def setUpdateUiUndefined: Self = StObject.set(x, "updateUi", js.undefined)
   }
 }

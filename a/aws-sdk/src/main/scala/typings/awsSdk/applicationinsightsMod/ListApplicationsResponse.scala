@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListApplicationsResponse extends js.Object {
+trait ListApplicationsResponse extends StObject {
   
   /**
     * The list of applications.
@@ -26,33 +27,21 @@ object ListApplicationsResponse {
   }
   
   @scala.inline
-  implicit class ListApplicationsResponseOps[Self <: ListApplicationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListApplicationsResponseMutableBuilder[Self <: ListApplicationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationInfoList(value: ApplicationInfoList): Self = StObject.set(x, "ApplicationInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationInfoListUndefined: Self = StObject.set(x, "ApplicationInfoList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationInfoListVarargs(value: ApplicationInfo*): Self = StObject.set(x, "ApplicationInfoList", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationInfoListVarargs(value: ApplicationInfo*): Self = this.set("ApplicationInfoList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationInfoList(value: ApplicationInfoList): Self = this.set("ApplicationInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationInfoList: Self = this.set("ApplicationInfoList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

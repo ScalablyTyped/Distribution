@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkFirewallPolicyModifiedViolation extends js.Object {
+trait NetworkFirewallPolicyModifiedViolation extends StObject {
   
   /**
     * The policy that's currently in use in the individual account. 
@@ -31,36 +32,24 @@ object NetworkFirewallPolicyModifiedViolation {
   }
   
   @scala.inline
-  implicit class NetworkFirewallPolicyModifiedViolationOps[Self <: NetworkFirewallPolicyModifiedViolation] (val x: Self) extends AnyVal {
+  implicit class NetworkFirewallPolicyModifiedViolationMutableBuilder[Self <: NetworkFirewallPolicyModifiedViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "CurrentPolicyDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPolicyDescriptionUndefined: Self = StObject.set(x, "CurrentPolicyDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "ExpectedPolicyDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPolicyDescription(value: NetworkFirewallPolicyDescription): Self = this.set("CurrentPolicyDescription", value.asInstanceOf[js.Any])
+    def setExpectedPolicyDescriptionUndefined: Self = StObject.set(x, "ExpectedPolicyDescription", js.undefined)
     
     @scala.inline
-    def deleteCurrentPolicyDescription: Self = this.set("CurrentPolicyDescription", js.undefined)
+    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedPolicyDescription(value: NetworkFirewallPolicyDescription): Self = this.set("ExpectedPolicyDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedPolicyDescription: Self = this.set("ExpectedPolicyDescription", js.undefined)
-    
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = this.set("ViolationTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationTarget: Self = this.set("ViolationTarget", js.undefined)
+    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchHit extends js.Object {
+trait SearchHit extends StObject {
   
   var contentSource: js.UndefOr[NullableOption[String]] = js.native
   
@@ -26,63 +27,51 @@ object SearchHit {
   }
   
   @scala.inline
-  implicit class SearchHitOps[Self <: SearchHit] (val x: Self) extends AnyVal {
+  implicit class SearchHitMutableBuilder[Self <: SearchHit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentSource(value: NullableOption[String]): Self = StObject.set(x, "contentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentSourceNull: Self = StObject.set(x, "contentSource", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSourceUndefined: Self = StObject.set(x, "contentSource", js.undefined)
     
     @scala.inline
-    def setContentSource(value: NullableOption[String]): Self = this.set("contentSource", value.asInstanceOf[js.Any])
+    def setHitId(value: NullableOption[String]): Self = StObject.set(x, "hitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentSource: Self = this.set("contentSource", js.undefined)
+    def setHitIdNull: Self = StObject.set(x, "hitId", null)
     
     @scala.inline
-    def setContentSourceNull: Self = this.set("contentSource", null)
+    def setHitIdUndefined: Self = StObject.set(x, "hitId", js.undefined)
     
     @scala.inline
-    def setHitId(value: NullableOption[String]): Self = this.set("hitId", value.asInstanceOf[js.Any])
+    def setRank(value: NullableOption[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHitId: Self = this.set("hitId", js.undefined)
+    def setRankNull: Self = StObject.set(x, "rank", null)
     
     @scala.inline
-    def setHitIdNull: Self = this.set("hitId", null)
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
     @scala.inline
-    def setRank(value: NullableOption[Double]): Self = this.set("rank", value.asInstanceOf[js.Any])
+    def setResource(value: NullableOption[Entity]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
+    def setResourceNull: Self = StObject.set(x, "resource", null)
     
     @scala.inline
-    def setRankNull: Self = this.set("rank", null)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setResource(value: NullableOption[Entity]): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setSummary(value: NullableOption[String]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     @scala.inline
-    def setResourceNull: Self = this.set("resource", null)
-    
-    @scala.inline
-    def setSummary(value: NullableOption[String]): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setSummaryNull: Self = this.set("summary", null)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

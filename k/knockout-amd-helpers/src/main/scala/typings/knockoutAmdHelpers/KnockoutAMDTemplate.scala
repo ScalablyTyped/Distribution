@@ -1,11 +1,12 @@
 package typings.knockoutAmdHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutAMDTemplate extends js.Object {
+trait KnockoutAMDTemplate extends StObject {
   
   var defaultPath: String = js.native
   
@@ -22,27 +23,15 @@ object KnockoutAMDTemplate {
   }
   
   @scala.inline
-  implicit class KnockoutAMDTemplateOps[Self <: KnockoutAMDTemplate] (val x: Self) extends AnyVal {
+  implicit class KnockoutAMDTemplateMutableBuilder[Self <: KnockoutAMDTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultPath(value: String): Self = StObject.set(x, "defaultPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRequireTextPluginName(value: String): Self = StObject.set(x, "defaultRequireTextPluginName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultPath(value: String): Self = this.set("defaultPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultRequireTextPluginName(value: String): Self = this.set("defaultRequireTextPluginName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultSuffix(value: String): Self = this.set("defaultSuffix", value.asInstanceOf[js.Any])
+    def setDefaultSuffix(value: String): Self = StObject.set(x, "defaultSuffix", value.asInstanceOf[js.Any])
   }
 }

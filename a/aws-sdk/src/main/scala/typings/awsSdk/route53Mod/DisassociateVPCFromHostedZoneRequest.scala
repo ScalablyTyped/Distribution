@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateVPCFromHostedZoneRequest extends js.Object {
+trait DisassociateVPCFromHostedZoneRequest extends StObject {
   
   /**
     *  Optional: A comment about the disassociation request.
@@ -31,30 +32,18 @@ object DisassociateVPCFromHostedZoneRequest {
   }
   
   @scala.inline
-  implicit class DisassociateVPCFromHostedZoneRequestOps[Self <: DisassociateVPCFromHostedZoneRequest] (val x: Self) extends AnyVal {
+  implicit class DisassociateVPCFromHostedZoneRequestMutableBuilder[Self <: DisassociateVPCFromHostedZoneRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: DisassociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVPC(value: VPC): Self = this.set("VPC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setComment(value: DisassociateVPCComment): Self = this.set("Comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
   }
 }

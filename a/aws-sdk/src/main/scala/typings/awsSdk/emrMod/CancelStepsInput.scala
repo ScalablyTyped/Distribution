@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelStepsInput extends js.Object {
+trait CancelStepsInput extends StObject {
   
   /**
     * The ClusterID for which specified steps will be canceled. Use RunJobFlow and ListClusters to get ClusterIDs. 
@@ -31,33 +32,21 @@ object CancelStepsInput {
   }
   
   @scala.inline
-  implicit class CancelStepsInputOps[Self <: CancelStepsInput] (val x: Self) extends AnyVal {
+  implicit class CancelStepsInputMutableBuilder[Self <: CancelStepsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStepCancellationOption(value: StepCancellationOption): Self = StObject.set(x, "StepCancellationOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStepCancellationOptionUndefined: Self = StObject.set(x, "StepCancellationOption", js.undefined)
     
     @scala.inline
-    def setClusterId(value: XmlStringMaxLen256): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = this.set("StepIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setStepIds(value: StepIdsList): Self = this.set("StepIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepCancellationOption(value: StepCancellationOption): Self = this.set("StepCancellationOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepCancellationOption: Self = this.set("StepCancellationOption", js.undefined)
+    def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
   }
 }

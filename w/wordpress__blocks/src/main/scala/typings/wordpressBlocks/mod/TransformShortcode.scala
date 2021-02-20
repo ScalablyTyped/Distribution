@@ -2,6 +2,7 @@ package typings.wordpressBlocks.mod
 
 import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.shortcode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,36 +28,24 @@ object TransformShortcode {
   }
   
   @scala.inline
-  implicit class TransformShortcodeOps[Self <: TransformShortcode[_], T /* <: Record[String, _] */] (val x: Self with TransformShortcode[T]) extends AnyVal {
+  implicit class TransformShortcodeMutableBuilder[Self <: TransformShortcode[_], T /* <: Record[String, _] */] (val x: Self with TransformShortcode[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setType(value: shortcode): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setType(value: shortcode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

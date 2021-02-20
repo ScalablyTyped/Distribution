@@ -1,20 +1,27 @@
 package typings.reactVirtualized.esGridMod
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactVirtualized.anon.Alignment
 import typings.reactVirtualized.anon.Ariareadonly
 import typings.reactVirtualized.anon.ColumnIndex
 import typings.reactVirtualized.anon.PartialScrollOffset
 import typings.reactVirtualized.anon.RowIndex
 import typings.reactVirtualized.anon.ScrollLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-virtualized/dist/es/Grid", "Grid")
 @js.native
-class Grid ()
-  extends Component[GridProps, GridState, js.Any] {
+class Grid protected ()
+  extends PureComponent[GridProps, GridState, js.Any] {
+  def this(props: GridProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: GridProps, context: js.Any) = this()
   
   /**
     * Gets offsets for a given cell and alignment.
@@ -65,9 +72,15 @@ class Grid ()
   def scrollToPosition(params: ScrollLeft): Unit = js.native
 }
 /* static members */
-@JSImport("react-virtualized/dist/es/Grid", "Grid")
-@js.native
-object Grid extends js.Object {
+object Grid {
   
-  var defaultProps: Ariareadonly = js.native
+  @JSImport("react-virtualized/dist/es/Grid", "Grid")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-virtualized/dist/es/Grid", "Grid.defaultProps")
+  @js.native
+  def defaultProps: Ariareadonly = js.native
+  @scala.inline
+  def defaultProps_=(x: Ariareadonly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

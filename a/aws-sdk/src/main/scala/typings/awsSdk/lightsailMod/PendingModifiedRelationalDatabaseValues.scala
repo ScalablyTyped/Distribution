@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PendingModifiedRelationalDatabaseValues extends js.Object {
+trait PendingModifiedRelationalDatabaseValues extends StObject {
   
   /**
     * A Boolean value indicating whether automated backup retention is enabled.
@@ -31,36 +32,24 @@ object PendingModifiedRelationalDatabaseValues {
   }
   
   @scala.inline
-  implicit class PendingModifiedRelationalDatabaseValuesOps[Self <: PendingModifiedRelationalDatabaseValues] (val x: Self) extends AnyVal {
+  implicit class PendingModifiedRelationalDatabaseValuesMutableBuilder[Self <: PendingModifiedRelationalDatabaseValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupRetentionEnabled(value: Boolean): Self = StObject.set(x, "backupRetentionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupRetentionEnabledUndefined: Self = StObject.set(x, "backupRetentionEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupRetentionEnabled(value: Boolean): Self = this.set("backupRetentionEnabled", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
     
     @scala.inline
-    def deleteBackupRetentionEnabled: Self = this.set("backupRetentionEnabled", js.undefined)
+    def setMasterUserPassword(value: String): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
-    
-    @scala.inline
-    def setMasterUserPassword(value: String): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
   }
 }

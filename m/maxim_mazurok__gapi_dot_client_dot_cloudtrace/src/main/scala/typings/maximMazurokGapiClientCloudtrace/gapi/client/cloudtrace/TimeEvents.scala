@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeEvents extends js.Object {
+trait TimeEvents extends StObject {
   
   /** The number of dropped annotations in all the included time events. If the value is 0, then no annotations were dropped. */
   var droppedAnnotationsCount: js.UndefOr[Double] = js.native
@@ -25,39 +26,27 @@ object TimeEvents {
   }
   
   @scala.inline
-  implicit class TimeEventsOps[Self <: TimeEvents] (val x: Self) extends AnyVal {
+  implicit class TimeEventsMutableBuilder[Self <: TimeEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDroppedAnnotationsCountUndefined: Self = StObject.set(x, "droppedAnnotationsCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDroppedMessageEventsCount(value: Double): Self = StObject.set(x, "droppedMessageEventsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDroppedAnnotationsCount(value: Double): Self = this.set("droppedAnnotationsCount", value.asInstanceOf[js.Any])
+    def setDroppedMessageEventsCountUndefined: Self = StObject.set(x, "droppedMessageEventsCount", js.undefined)
     
     @scala.inline
-    def deleteDroppedAnnotationsCount: Self = this.set("droppedAnnotationsCount", js.undefined)
+    def setTimeEvent(value: js.Array[TimeEvent]): Self = StObject.set(x, "timeEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDroppedMessageEventsCount(value: Double): Self = this.set("droppedMessageEventsCount", value.asInstanceOf[js.Any])
+    def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
     
     @scala.inline
-    def deleteDroppedMessageEventsCount: Self = this.set("droppedMessageEventsCount", js.undefined)
-    
-    @scala.inline
-    def setTimeEventVarargs(value: TimeEvent*): Self = this.set("timeEvent", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimeEvent(value: js.Array[TimeEvent]): Self = this.set("timeEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeEvent: Self = this.set("timeEvent", js.undefined)
+    def setTimeEventVarargs(value: TimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
   }
 }

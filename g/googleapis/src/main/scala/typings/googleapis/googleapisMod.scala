@@ -3,6 +3,7 @@ package typings.googleapis
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleapis.anon.ReadonlyEndpoint
@@ -11,16 +12,17 @@ import typings.googleapis.apisMod.GeneratedAPIs
 import typings.googleapisCommon.apiMod.APIEndpoint
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis/build/src/googleapis", JSImport.Namespace)
-@js.native
-object googleapisMod extends js.Object {
+object googleapisMod {
   
+  @JSImport("googleapis/build/src/googleapis", "AuthPlus")
   @js.native
   class AuthPlus () extends GoogleAuth {
+    def this(opts: GoogleAuthOptions) = this()
     
     var Compute: Instantiable0[typings.googleAuthLibrary.mod.Compute] = js.native
     
@@ -29,6 +31,7 @@ object googleapisMod extends js.Object {
     var OAuth2: TypeofOAuth2Client = js.native
   }
   
+  @JSImport("googleapis/build/src/googleapis", "GoogleApis")
   @js.native
   /**
     * GoogleApis constructor.

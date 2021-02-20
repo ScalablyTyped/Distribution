@@ -1,13 +1,14 @@
 package typings.jssPluginRuleValueFunction
 
 import typings.jss.mod.Plugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jss-plugin-rule-value-function", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("jss-plugin-rule-value-function", JSImport.Default)
+  @js.native
   def default(): Plugin = js.native
 }

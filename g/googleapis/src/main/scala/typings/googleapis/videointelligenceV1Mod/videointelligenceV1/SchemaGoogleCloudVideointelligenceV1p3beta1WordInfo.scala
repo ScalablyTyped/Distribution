@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `enable_word_time_offsets`.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo extends StObject {
   
   /**
     * Output only. The confidence estimate between 0.0 and 1.0. A higher number
@@ -61,48 +62,36 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1WordInfoOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1WordInfoMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setSpeakerTag(value: Double): Self = StObject.set(x, "speakerTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setSpeakerTagUndefined: Self = StObject.set(x, "speakerTag", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeakerTag(value: Double): Self = this.set("speakerTag", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSpeakerTag: Self = this.set("speakerTag", js.undefined)
+    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord: Self = this.set("word", js.undefined)
+    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

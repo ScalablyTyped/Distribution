@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
 import typings.phaser.Phaser.Types.Math.Vector2Like
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatterWorldConfig extends js.Object {
+trait MatterWorldConfig extends StObject {
   
   /**
     * Automatically call Engine.update every time the game steps.
@@ -186,204 +187,192 @@ object MatterWorldConfig {
   }
   
   @scala.inline
-  implicit class MatterWorldConfigOps[Self <: MatterWorldConfig] (val x: Self) extends AnyVal {
+  implicit class MatterWorldConfigMutableBuilder[Self <: MatterWorldConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintIterations(value: Double): Self = StObject.set(x, "constraintIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdate(value: Boolean): Self = this.set("autoUpdate", value.asInstanceOf[js.Any])
+    def setConstraintIterationsUndefined: Self = StObject.set(x, "constraintIterations", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdate: Self = this.set("autoUpdate", js.undefined)
+    def setCorrection(value: Double): Self = StObject.set(x, "correction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintIterations(value: Double): Self = this.set("constraintIterations", value.asInstanceOf[js.Any])
+    def setCorrectionUndefined: Self = StObject.set(x, "correction", js.undefined)
     
     @scala.inline
-    def deleteConstraintIterations: Self = this.set("constraintIterations", js.undefined)
+    def setDebug(value: Boolean | MatterDebugConfig): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrection(value: Double): Self = this.set("correction", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCorrection: Self = this.set("correction", js.undefined)
+    def setEnableSleeping(value: Boolean): Self = StObject.set(x, "enableSleeping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean | MatterDebugConfig): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setEnableSleepingUndefined: Self = StObject.set(x, "enableSleeping", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSleeping(value: Boolean): Self = this.set("enableSleeping", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteEnableSleeping: Self = this.set("enableSleeping", js.undefined)
+    def setFrictionNormalMultiplier(value: Double): Self = StObject.set(x, "frictionNormalMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFrictionNormalMultiplierUndefined: Self = StObject.set(x, "frictionNormalMultiplier", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setGetDelta(value: js.Function): Self = StObject.set(x, "getDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrictionNormalMultiplier(value: Double): Self = this.set("frictionNormalMultiplier", value.asInstanceOf[js.Any])
+    def setGetDeltaUndefined: Self = StObject.set(x, "getDelta", js.undefined)
     
     @scala.inline
-    def deleteFrictionNormalMultiplier: Self = this.set("frictionNormalMultiplier", js.undefined)
+    def setGravity(value: Vector2Like | Boolean): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDelta(value: js.Function): Self = this.set("getDelta", value.asInstanceOf[js.Any])
+    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
     @scala.inline
-    def deleteGetDelta: Self = this.set("getDelta", js.undefined)
+    def setPluginsDotattractors(value: Boolean): Self = StObject.set(x, "plugins.attractors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravity(value: Vector2Like | Boolean): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    def setPluginsDotattractorsUndefined: Self = StObject.set(x, "plugins.attractors", js.undefined)
     
     @scala.inline
-    def deleteGravity: Self = this.set("gravity", js.undefined)
+    def setPluginsDotcollisionevents(value: Boolean): Self = StObject.set(x, "plugins.collisionevents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginsDotattractors(value: Boolean): Self = this.set("plugins.attractors", value.asInstanceOf[js.Any])
+    def setPluginsDotcollisioneventsUndefined: Self = StObject.set(x, "plugins.collisionevents", js.undefined)
     
     @scala.inline
-    def deletePluginsDotattractors: Self = this.set("plugins.attractors", js.undefined)
+    def setPluginsDotwrap(value: Boolean): Self = StObject.set(x, "plugins.wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginsDotcollisionevents(value: Boolean): Self = this.set("plugins.collisionevents", value.asInstanceOf[js.Any])
+    def setPluginsDotwrapUndefined: Self = StObject.set(x, "plugins.wrap", js.undefined)
     
     @scala.inline
-    def deletePluginsDotcollisionevents: Self = this.set("plugins.collisionevents", js.undefined)
+    def setPositionDampen(value: Double): Self = StObject.set(x, "positionDampen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginsDotwrap(value: Boolean): Self = this.set("plugins.wrap", value.asInstanceOf[js.Any])
+    def setPositionDampenUndefined: Self = StObject.set(x, "positionDampen", js.undefined)
     
     @scala.inline
-    def deletePluginsDotwrap: Self = this.set("plugins.wrap", js.undefined)
+    def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionDampen(value: Double): Self = this.set("positionDampen", value.asInstanceOf[js.Any])
+    def setPositionIterationsUndefined: Self = StObject.set(x, "positionIterations", js.undefined)
     
     @scala.inline
-    def deletePositionDampen: Self = this.set("positionDampen", js.undefined)
+    def setPositionWarming(value: Double): Self = StObject.set(x, "positionWarming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionIterations(value: Double): Self = this.set("positionIterations", value.asInstanceOf[js.Any])
+    def setPositionWarmingUndefined: Self = StObject.set(x, "positionWarming", js.undefined)
     
     @scala.inline
-    def deletePositionIterations: Self = this.set("positionIterations", js.undefined)
+    def setRestingThresh(value: Double): Self = StObject.set(x, "restingThresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionWarming(value: Double): Self = this.set("positionWarming", value.asInstanceOf[js.Any])
+    def setRestingThreshTangent(value: Double): Self = StObject.set(x, "restingThreshTangent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePositionWarming: Self = this.set("positionWarming", js.undefined)
+    def setRestingThreshTangentUndefined: Self = StObject.set(x, "restingThreshTangent", js.undefined)
     
     @scala.inline
-    def setRestingThresh(value: Double): Self = this.set("restingThresh", value.asInstanceOf[js.Any])
+    def setRestingThreshUndefined: Self = StObject.set(x, "restingThresh", js.undefined)
     
     @scala.inline
-    def deleteRestingThresh: Self = this.set("restingThresh", js.undefined)
+    def setRunner(value: MatterRunnerConfig): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestingThreshTangent(value: Double): Self = this.set("restingThreshTangent", value.asInstanceOf[js.Any])
+    def setRunnerUndefined: Self = StObject.set(x, "runner", js.undefined)
     
     @scala.inline
-    def deleteRestingThreshTangent: Self = this.set("restingThreshTangent", js.undefined)
+    def setSetBounds(value: js.Object | Boolean): Self = StObject.set(x, "setBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunner(value: MatterRunnerConfig): Self = this.set("runner", value.asInstanceOf[js.Any])
+    def setSetBoundsDotbottom(value: Boolean): Self = StObject.set(x, "setBounds.bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRunner: Self = this.set("runner", js.undefined)
+    def setSetBoundsDotbottomUndefined: Self = StObject.set(x, "setBounds.bottom", js.undefined)
     
     @scala.inline
-    def setSetBounds(value: js.Object | Boolean): Self = this.set("setBounds", value.asInstanceOf[js.Any])
+    def setSetBoundsDotheight(value: Double): Self = StObject.set(x, "setBounds.height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBounds: Self = this.set("setBounds", js.undefined)
+    def setSetBoundsDotheightUndefined: Self = StObject.set(x, "setBounds.height", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotbottom(value: Boolean): Self = this.set("setBounds.bottom", value.asInstanceOf[js.Any])
+    def setSetBoundsDotleft(value: Boolean): Self = StObject.set(x, "setBounds.left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDotbottom: Self = this.set("setBounds.bottom", js.undefined)
+    def setSetBoundsDotleftUndefined: Self = StObject.set(x, "setBounds.left", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotheight(value: Double): Self = this.set("setBounds.height", value.asInstanceOf[js.Any])
+    def setSetBoundsDotright(value: Boolean): Self = StObject.set(x, "setBounds.right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDotheight: Self = this.set("setBounds.height", js.undefined)
+    def setSetBoundsDotrightUndefined: Self = StObject.set(x, "setBounds.right", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotleft(value: Boolean): Self = this.set("setBounds.left", value.asInstanceOf[js.Any])
+    def setSetBoundsDotthickness(value: Double): Self = StObject.set(x, "setBounds.thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDotleft: Self = this.set("setBounds.left", js.undefined)
+    def setSetBoundsDotthicknessUndefined: Self = StObject.set(x, "setBounds.thickness", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotright(value: Boolean): Self = this.set("setBounds.right", value.asInstanceOf[js.Any])
+    def setSetBoundsDottop(value: Boolean): Self = StObject.set(x, "setBounds.top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDotright: Self = this.set("setBounds.right", js.undefined)
+    def setSetBoundsDottopUndefined: Self = StObject.set(x, "setBounds.top", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotthickness(value: Double): Self = this.set("setBounds.thickness", value.asInstanceOf[js.Any])
+    def setSetBoundsDotwidth(value: Double): Self = StObject.set(x, "setBounds.width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDotthickness: Self = this.set("setBounds.thickness", js.undefined)
+    def setSetBoundsDotwidthUndefined: Self = StObject.set(x, "setBounds.width", js.undefined)
     
     @scala.inline
-    def setSetBoundsDottop(value: Boolean): Self = this.set("setBounds.top", value.asInstanceOf[js.Any])
+    def setSetBoundsDotx(value: Double): Self = StObject.set(x, "setBounds.x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDottop: Self = this.set("setBounds.top", js.undefined)
+    def setSetBoundsDotxUndefined: Self = StObject.set(x, "setBounds.x", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotwidth(value: Double): Self = this.set("setBounds.width", value.asInstanceOf[js.Any])
+    def setSetBoundsDoty(value: Double): Self = StObject.set(x, "setBounds.y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetBoundsDotwidth: Self = this.set("setBounds.width", js.undefined)
+    def setSetBoundsDotyUndefined: Self = StObject.set(x, "setBounds.y", js.undefined)
     
     @scala.inline
-    def setSetBoundsDotx(value: Double): Self = this.set("setBounds.x", value.asInstanceOf[js.Any])
+    def setSetBoundsUndefined: Self = StObject.set(x, "setBounds", js.undefined)
     
     @scala.inline
-    def deleteSetBoundsDotx: Self = this.set("setBounds.x", js.undefined)
+    def setTimingDottimeScale(value: Double): Self = StObject.set(x, "timing.timeScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetBoundsDoty(value: Double): Self = this.set("setBounds.y", value.asInstanceOf[js.Any])
+    def setTimingDottimeScaleUndefined: Self = StObject.set(x, "timing.timeScale", js.undefined)
     
     @scala.inline
-    def deleteSetBoundsDoty: Self = this.set("setBounds.y", js.undefined)
+    def setTimingDottimestamp(value: Double): Self = StObject.set(x, "timing.timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingDottimeScale(value: Double): Self = this.set("timing.timeScale", value.asInstanceOf[js.Any])
+    def setTimingDottimestampUndefined: Self = StObject.set(x, "timing.timestamp", js.undefined)
     
     @scala.inline
-    def deleteTimingDottimeScale: Self = this.set("timing.timeScale", js.undefined)
+    def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingDottimestamp(value: Double): Self = this.set("timing.timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingDottimestamp: Self = this.set("timing.timestamp", js.undefined)
-    
-    @scala.inline
-    def setVelocityIterations(value: Double): Self = this.set("velocityIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocityIterations: Self = this.set("velocityIterations", js.undefined)
+    def setVelocityIterationsUndefined: Self = StObject.set(x, "velocityIterations", js.undefined)
   }
 }

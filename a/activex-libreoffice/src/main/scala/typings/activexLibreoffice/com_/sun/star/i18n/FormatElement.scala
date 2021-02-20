@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLocaleData for links to DTD of XML locale data files.
   */
 @js.native
-trait FormatElement extends js.Object {
+trait FormatElement extends StObject {
   
   /** The format code, for example, "YYYY-MM-DD". */
   var formatCode: String = js.native
@@ -51,39 +52,27 @@ object FormatElement {
   }
   
   @scala.inline
-  implicit class FormatElementOps[Self <: FormatElement] (val x: Self) extends AnyVal {
+  implicit class FormatElementMutableBuilder[Self <: FormatElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatCode(value: String): Self = StObject.set(x, "formatCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatIndex(value: Double): Self = StObject.set(x, "formatIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatKey(value: String): Self = StObject.set(x, "formatKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatCode(value: String): Self = this.set("formatCode", value.asInstanceOf[js.Any])
+    def setFormatName(value: String): Self = StObject.set(x, "formatName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatIndex(value: Double): Self = this.set("formatIndex", value.asInstanceOf[js.Any])
+    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatKey(value: String): Self = this.set("formatKey", value.asInstanceOf[js.Any])
+    def setFormatUsage(value: String): Self = StObject.set(x, "formatUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatName(value: String): Self = this.set("formatName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormatType(value: String): Self = this.set("formatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormatUsage(value: String): Self = this.set("formatUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
   }
 }

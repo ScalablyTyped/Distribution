@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateConfig extends js.Object {
+trait UpdateConfig extends StObject {
   
   var Delay: js.UndefOr[Double] = js.native
   
@@ -28,48 +29,36 @@ object UpdateConfig {
   }
   
   @scala.inline
-  implicit class UpdateConfigOps[Self <: UpdateConfig] (val x: Self) extends AnyVal {
+  implicit class UpdateConfigMutableBuilder[Self <: UpdateConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "Delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureAction(value: String): Self = StObject.set(x, "FailureAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
+    def setFailureActionUndefined: Self = StObject.set(x, "FailureAction", js.undefined)
     
     @scala.inline
-    def setParallelism(value: Double): Self = this.set("Parallelism", value.asInstanceOf[js.Any])
+    def setMaxFailureRatio(value: Double): Self = StObject.set(x, "MaxFailureRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("Delay", value.asInstanceOf[js.Any])
+    def setMaxFailureRatioUndefined: Self = StObject.set(x, "MaxFailureRatio", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("Delay", js.undefined)
+    def setMonitor(value: Double): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureAction(value: String): Self = this.set("FailureAction", value.asInstanceOf[js.Any])
+    def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
     
     @scala.inline
-    def deleteFailureAction: Self = this.set("FailureAction", js.undefined)
+    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFailureRatio(value: Double): Self = this.set("MaxFailureRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFailureRatio: Self = this.set("MaxFailureRatio", js.undefined)
-    
-    @scala.inline
-    def setMonitor(value: Double): Self = this.set("Monitor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitor: Self = this.set("Monitor", js.undefined)
+    def setParallelism(value: Double): Self = StObject.set(x, "Parallelism", value.asInstanceOf[js.Any])
   }
 }

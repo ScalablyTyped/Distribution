@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignerEmailNotifications extends js.Object {
+trait SignerEmailNotifications extends StObject {
   
   /**
     * When set to **true**, the user receives agent notification emails.
@@ -96,114 +97,102 @@ object SignerEmailNotifications {
   }
   
   @scala.inline
-  implicit class SignerEmailNotificationsOps[Self <: SignerEmailNotifications] (val x: Self) extends AnyVal {
+  implicit class SignerEmailNotificationsMutableBuilder[Self <: SignerEmailNotifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentNotification(value: String): Self = StObject.set(x, "agentNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentNotificationUndefined: Self = StObject.set(x, "agentNotification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCarbonCopyNotification(value: String): Self = StObject.set(x, "carbonCopyNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentNotification(value: String): Self = this.set("agentNotification", value.asInstanceOf[js.Any])
+    def setCarbonCopyNotificationUndefined: Self = StObject.set(x, "carbonCopyNotification", js.undefined)
     
     @scala.inline
-    def deleteAgentNotification: Self = this.set("agentNotification", js.undefined)
+    def setCertifiedDeliveryNotification(value: String): Self = StObject.set(x, "certifiedDeliveryNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarbonCopyNotification(value: String): Self = this.set("carbonCopyNotification", value.asInstanceOf[js.Any])
+    def setCertifiedDeliveryNotificationUndefined: Self = StObject.set(x, "certifiedDeliveryNotification", js.undefined)
     
     @scala.inline
-    def deleteCarbonCopyNotification: Self = this.set("carbonCopyNotification", js.undefined)
+    def setCommentsOnlyPrivateAndMention(value: String): Self = StObject.set(x, "commentsOnlyPrivateAndMention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertifiedDeliveryNotification(value: String): Self = this.set("certifiedDeliveryNotification", value.asInstanceOf[js.Any])
+    def setCommentsOnlyPrivateAndMentionUndefined: Self = StObject.set(x, "commentsOnlyPrivateAndMention", js.undefined)
     
     @scala.inline
-    def deleteCertifiedDeliveryNotification: Self = this.set("certifiedDeliveryNotification", js.undefined)
+    def setCommentsReceiveAll(value: String): Self = StObject.set(x, "commentsReceiveAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsOnlyPrivateAndMention(value: String): Self = this.set("commentsOnlyPrivateAndMention", value.asInstanceOf[js.Any])
+    def setCommentsReceiveAllUndefined: Self = StObject.set(x, "commentsReceiveAll", js.undefined)
     
     @scala.inline
-    def deleteCommentsOnlyPrivateAndMention: Self = this.set("commentsOnlyPrivateAndMention", js.undefined)
+    def setDocumentMarkupActivation(value: String): Self = StObject.set(x, "documentMarkupActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsReceiveAll(value: String): Self = this.set("commentsReceiveAll", value.asInstanceOf[js.Any])
+    def setDocumentMarkupActivationUndefined: Self = StObject.set(x, "documentMarkupActivation", js.undefined)
     
     @scala.inline
-    def deleteCommentsReceiveAll: Self = this.set("commentsReceiveAll", js.undefined)
+    def setEnvelopeActivation(value: String): Self = StObject.set(x, "envelopeActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMarkupActivation(value: String): Self = this.set("documentMarkupActivation", value.asInstanceOf[js.Any])
+    def setEnvelopeActivationUndefined: Self = StObject.set(x, "envelopeActivation", js.undefined)
     
     @scala.inline
-    def deleteDocumentMarkupActivation: Self = this.set("documentMarkupActivation", js.undefined)
+    def setEnvelopeComplete(value: String): Self = StObject.set(x, "envelopeComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeActivation(value: String): Self = this.set("envelopeActivation", value.asInstanceOf[js.Any])
+    def setEnvelopeCompleteUndefined: Self = StObject.set(x, "envelopeComplete", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeActivation: Self = this.set("envelopeActivation", js.undefined)
+    def setEnvelopeCorrected(value: String): Self = StObject.set(x, "envelopeCorrected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeComplete(value: String): Self = this.set("envelopeComplete", value.asInstanceOf[js.Any])
+    def setEnvelopeCorrectedUndefined: Self = StObject.set(x, "envelopeCorrected", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeComplete: Self = this.set("envelopeComplete", js.undefined)
+    def setEnvelopeDeclined(value: String): Self = StObject.set(x, "envelopeDeclined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeCorrected(value: String): Self = this.set("envelopeCorrected", value.asInstanceOf[js.Any])
+    def setEnvelopeDeclinedUndefined: Self = StObject.set(x, "envelopeDeclined", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeCorrected: Self = this.set("envelopeCorrected", js.undefined)
+    def setEnvelopeVoided(value: String): Self = StObject.set(x, "envelopeVoided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeDeclined(value: String): Self = this.set("envelopeDeclined", value.asInstanceOf[js.Any])
+    def setEnvelopeVoidedUndefined: Self = StObject.set(x, "envelopeVoided", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeDeclined: Self = this.set("envelopeDeclined", js.undefined)
+    def setFaxReceived(value: String): Self = StObject.set(x, "faxReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeVoided(value: String): Self = this.set("envelopeVoided", value.asInstanceOf[js.Any])
+    def setFaxReceivedUndefined: Self = StObject.set(x, "faxReceived", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeVoided: Self = this.set("envelopeVoided", js.undefined)
+    def setOfflineSigningFailed(value: String): Self = StObject.set(x, "offlineSigningFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaxReceived(value: String): Self = this.set("faxReceived", value.asInstanceOf[js.Any])
+    def setOfflineSigningFailedUndefined: Self = StObject.set(x, "offlineSigningFailed", js.undefined)
     
     @scala.inline
-    def deleteFaxReceived: Self = this.set("faxReceived", js.undefined)
+    def setPurgeDocuments(value: String): Self = StObject.set(x, "purgeDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfflineSigningFailed(value: String): Self = this.set("offlineSigningFailed", value.asInstanceOf[js.Any])
+    def setPurgeDocumentsUndefined: Self = StObject.set(x, "purgeDocuments", js.undefined)
     
     @scala.inline
-    def deleteOfflineSigningFailed: Self = this.set("offlineSigningFailed", js.undefined)
+    def setReassignedSigner(value: String): Self = StObject.set(x, "reassignedSigner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgeDocuments(value: String): Self = this.set("purgeDocuments", value.asInstanceOf[js.Any])
+    def setReassignedSignerUndefined: Self = StObject.set(x, "reassignedSigner", js.undefined)
     
     @scala.inline
-    def deletePurgeDocuments: Self = this.set("purgeDocuments", js.undefined)
+    def setWhenSigningGroupMember(value: String): Self = StObject.set(x, "whenSigningGroupMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReassignedSigner(value: String): Self = this.set("reassignedSigner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReassignedSigner: Self = this.set("reassignedSigner", js.undefined)
-    
-    @scala.inline
-    def setWhenSigningGroupMember(value: String): Self = this.set("whenSigningGroupMember", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenSigningGroupMember: Self = this.set("whenSigningGroupMember", js.undefined)
+    def setWhenSigningGroupMemberUndefined: Self = StObject.set(x, "whenSigningGroupMember", js.undefined)
   }
 }

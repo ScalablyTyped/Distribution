@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDefaultCreditSpecificationRequest extends js.Object {
+trait ModifyDefaultCreditSpecificationRequest extends StObject {
   
   /**
     * The credit option for CPU usage of the instance family. Valid Values: standard | unlimited 
@@ -31,30 +32,18 @@ object ModifyDefaultCreditSpecificationRequest {
   }
   
   @scala.inline
-  implicit class ModifyDefaultCreditSpecificationRequestOps[Self <: ModifyDefaultCreditSpecificationRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyDefaultCreditSpecificationRequestMutableBuilder[Self <: ModifyDefaultCreditSpecificationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setCpuCredits(value: String): Self = this.set("CpuCredits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
   }
 }

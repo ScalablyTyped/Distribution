@@ -3,6 +3,7 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.angularCore.anon.Read
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ViewChildDecorator
   extends Instantiable1[
-      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
-      ViewChild
+      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ typings.angularCore.mod.Type[js.Any]), 
+      typings.angularCore.mod.ViewChild
     ]
      with Instantiable2[
-      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
+      (/* selector */ js.Function) | (/* selector */ InjectionToken[js.Any]) | (/* selector */ String) | (/* selector */ typings.angularCore.mod.Type[js.Any]), 
       /* opts */ Read, 
-      ViewChild
+      typings.angularCore.mod.ViewChild
     ] {
   
   def apply(selector: String): js.Any = js.native
@@ -63,6 +64,6 @@ trait ViewChildDecorator
     *
     * @Annotation
     */
-  def apply(selector: Type[_]): js.Any = js.native
-  def apply(selector: Type[_], opts: Read): js.Any = js.native
+  def apply(selector: typings.angularCore.mod.Type[_]): js.Any = js.native
+  def apply(selector: typings.angularCore.mod.Type[_], opts: Read): js.Any = js.native
 }

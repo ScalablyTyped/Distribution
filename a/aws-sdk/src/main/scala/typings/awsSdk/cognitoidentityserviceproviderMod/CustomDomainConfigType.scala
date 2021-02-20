@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomDomainConfigType extends js.Object {
+trait CustomDomainConfigType extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an AWS Certificate Manager SSL certificate. You use this certificate for the subdomain of your custom domain.
@@ -21,21 +22,9 @@ object CustomDomainConfigType {
   }
   
   @scala.inline
-  implicit class CustomDomainConfigTypeOps[Self <: CustomDomainConfigType] (val x: Self) extends AnyVal {
+  implicit class CustomDomainConfigTypeMutableBuilder[Self <: CustomDomainConfigType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateArn(value: ArnType): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    def setCertificateArn(value: ArnType): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
   }
 }

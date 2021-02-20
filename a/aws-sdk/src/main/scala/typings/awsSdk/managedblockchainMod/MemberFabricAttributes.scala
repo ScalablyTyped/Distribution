@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemberFabricAttributes extends js.Object {
+trait MemberFabricAttributes extends StObject {
   
   /**
     * The user name for the initial administrator user for the member.
@@ -26,30 +27,18 @@ object MemberFabricAttributes {
   }
   
   @scala.inline
-  implicit class MemberFabricAttributesOps[Self <: MemberFabricAttributes] (val x: Self) extends AnyVal {
+  implicit class MemberFabricAttributesMutableBuilder[Self <: MemberFabricAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminUsername(value: UsernameString): Self = StObject.set(x, "AdminUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminUsernameUndefined: Self = StObject.set(x, "AdminUsername", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaEndpoint(value: String): Self = StObject.set(x, "CaEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminUsername(value: UsernameString): Self = this.set("AdminUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdminUsername: Self = this.set("AdminUsername", js.undefined)
-    
-    @scala.inline
-    def setCaEndpoint(value: String): Self = this.set("CaEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaEndpoint: Self = this.set("CaEndpoint", js.undefined)
+    def setCaEndpointUndefined: Self = StObject.set(x, "CaEndpoint", js.undefined)
   }
 }

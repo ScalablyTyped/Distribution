@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeveloperMetadata extends js.Object {
+trait DeveloperMetadata extends StObject {
   
   var location: DeveloperMetadataLocation = js.native
   
@@ -32,33 +33,21 @@ object DeveloperMetadata {
   }
   
   @scala.inline
-  implicit class DeveloperMetadataOps[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
+  implicit class DeveloperMetadataMutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: DeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataId(value: Double): Self = StObject.set(x, "metadataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataKey(value: String): Self = StObject.set(x, "metadataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: DeveloperMetadataLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMetadataValue(value: String): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataId(value: Double): Self = this.set("metadataId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadataKey(value: String): Self = this.set("metadataKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadataValue(value: String): Self = this.set("metadataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibility(value: DeveloperMetadataVisibility): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setVisibility(value: DeveloperMetadataVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

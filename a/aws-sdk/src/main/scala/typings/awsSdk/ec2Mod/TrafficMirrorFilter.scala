@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficMirrorFilter extends js.Object {
+trait TrafficMirrorFilter extends StObject {
   
   /**
     * The description of the Traffic Mirror filter.
@@ -46,66 +47,54 @@ object TrafficMirrorFilter {
   }
   
   @scala.inline
-  implicit class TrafficMirrorFilterOps[Self <: TrafficMirrorFilter] (val x: Self) extends AnyVal {
+  implicit class TrafficMirrorFilterMutableBuilder[Self <: TrafficMirrorFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEgressFilterRules(value: TrafficMirrorFilterRuleList): Self = StObject.set(x, "EgressFilterRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEgressFilterRulesUndefined: Self = StObject.set(x, "EgressFilterRules", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEgressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = StObject.set(x, "EgressFilterRules", js.Array(value :_*))
     
     @scala.inline
-    def setEgressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = this.set("EgressFilterRules", js.Array(value :_*))
+    def setIngressFilterRules(value: TrafficMirrorFilterRuleList): Self = StObject.set(x, "IngressFilterRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgressFilterRules(value: TrafficMirrorFilterRuleList): Self = this.set("EgressFilterRules", value.asInstanceOf[js.Any])
+    def setIngressFilterRulesUndefined: Self = StObject.set(x, "IngressFilterRules", js.undefined)
     
     @scala.inline
-    def deleteEgressFilterRules: Self = this.set("EgressFilterRules", js.undefined)
+    def setIngressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = StObject.set(x, "IngressFilterRules", js.Array(value :_*))
     
     @scala.inline
-    def setIngressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = this.set("IngressFilterRules", js.Array(value :_*))
+    def setNetworkServices(value: TrafficMirrorNetworkServiceList): Self = StObject.set(x, "NetworkServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngressFilterRules(value: TrafficMirrorFilterRuleList): Self = this.set("IngressFilterRules", value.asInstanceOf[js.Any])
+    def setNetworkServicesUndefined: Self = StObject.set(x, "NetworkServices", js.undefined)
     
     @scala.inline
-    def deleteIngressFilterRules: Self = this.set("IngressFilterRules", js.undefined)
+    def setNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "NetworkServices", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = this.set("NetworkServices", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkServices(value: TrafficMirrorNetworkServiceList): Self = this.set("NetworkServices", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteNetworkServices: Self = this.set("NetworkServices", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTrafficMirrorFilterId(value: String): Self = StObject.set(x, "TrafficMirrorFilterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTrafficMirrorFilterId(value: String): Self = this.set("TrafficMirrorFilterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficMirrorFilterId: Self = this.set("TrafficMirrorFilterId", js.undefined)
+    def setTrafficMirrorFilterIdUndefined: Self = StObject.set(x, "TrafficMirrorFilterId", js.undefined)
   }
 }

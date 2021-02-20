@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloneContext extends js.Object {
+trait CloneContext extends StObject {
   
   /**
     * Binary log coordinates, if specified, identify the position up to which the source instance is cloned. If not specified, the source instance is cloned up to the most recent binary
@@ -34,48 +35,36 @@ object CloneContext {
   }
   
   @scala.inline
-  implicit class CloneContextOps[Self <: CloneContext] (val x: Self) extends AnyVal {
+  implicit class CloneContextMutableBuilder[Self <: CloneContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinLogCoordinates(value: BinLogCoordinates): Self = StObject.set(x, "binLogCoordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinLogCoordinatesUndefined: Self = StObject.set(x, "binLogCoordinates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationInstanceName(value: String): Self = StObject.set(x, "destinationInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinLogCoordinates(value: BinLogCoordinates): Self = this.set("binLogCoordinates", value.asInstanceOf[js.Any])
+    def setDestinationInstanceNameUndefined: Self = StObject.set(x, "destinationInstanceName", js.undefined)
     
     @scala.inline
-    def deleteBinLogCoordinates: Self = this.set("binLogCoordinates", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationInstanceName(value: String): Self = this.set("destinationInstanceName", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDestinationInstanceName: Self = this.set("destinationInstanceName", js.undefined)
+    def setPitrTimestampMs(value: String): Self = StObject.set(x, "pitrTimestampMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPitrTimestampMsUndefined: Self = StObject.set(x, "pitrTimestampMs", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPointInTime(value: String): Self = StObject.set(x, "pointInTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPitrTimestampMs(value: String): Self = this.set("pitrTimestampMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePitrTimestampMs: Self = this.set("pitrTimestampMs", js.undefined)
-    
-    @scala.inline
-    def setPointInTime(value: String): Self = this.set("pointInTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointInTime: Self = this.set("pointInTime", js.undefined)
+    def setPointInTimeUndefined: Self = StObject.set(x, "pointInTime", js.undefined)
   }
 }

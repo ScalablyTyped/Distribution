@@ -3,6 +3,7 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.LightForEach
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Affects the rendering of Game Objects using the `Light2D` pipeline.
   */
 @js.native
-trait LightsManager extends js.Object {
+trait LightsManager extends StObject {
   
   /**
     * Whether the Lights Manager is enabled.

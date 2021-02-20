@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECSTaskSet extends js.Object {
+trait ECSTaskSet extends StObject {
   
   /**
     *  The number of tasks in a task set. During a deployment that uses the Amazon ECS compute type, CodeDeploy instructs Amazon ECS to create a new task set and uses this value to determine how many tasks to create. After the updated task set is created, CodeDeploy shifts traffic to the new task set. 
@@ -56,66 +57,54 @@ object ECSTaskSet {
   }
   
   @scala.inline
-  implicit class ECSTaskSetOps[Self <: ECSTaskSet] (val x: Self) extends AnyVal {
+  implicit class ECSTaskSetMutableBuilder[Self <: ECSTaskSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredCount(value: ECSTaskSetCount): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifer(value: ECSTaskSetIdentifier): Self = StObject.set(x, "identifer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredCount(value: ECSTaskSetCount): Self = this.set("desiredCount", value.asInstanceOf[js.Any])
+    def setIdentiferUndefined: Self = StObject.set(x, "identifer", js.undefined)
     
     @scala.inline
-    def deleteDesiredCount: Self = this.set("desiredCount", js.undefined)
+    def setPendingCount(value: ECSTaskSetCount): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifer(value: ECSTaskSetIdentifier): Self = this.set("identifer", value.asInstanceOf[js.Any])
+    def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
     
     @scala.inline
-    def deleteIdentifer: Self = this.set("identifer", js.undefined)
+    def setRunningCount(value: ECSTaskSetCount): Self = StObject.set(x, "runningCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingCount(value: ECSTaskSetCount): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
+    def setRunningCountUndefined: Self = StObject.set(x, "runningCount", js.undefined)
     
     @scala.inline
-    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
+    def setStatus(value: ECSTaskSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunningCount(value: ECSTaskSetCount): Self = this.set("runningCount", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRunningCount: Self = this.set("runningCount", js.undefined)
+    def setTargetGroup(value: TargetGroupInfo): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ECSTaskSetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTargetGroupUndefined: Self = StObject.set(x, "targetGroup", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTaskSetLabel(value: TargetLabel): Self = StObject.set(x, "taskSetLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroup(value: TargetGroupInfo): Self = this.set("targetGroup", value.asInstanceOf[js.Any])
+    def setTaskSetLabelUndefined: Self = StObject.set(x, "taskSetLabel", js.undefined)
     
     @scala.inline
-    def deleteTargetGroup: Self = this.set("targetGroup", js.undefined)
+    def setTrafficWeight(value: TrafficWeight): Self = StObject.set(x, "trafficWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskSetLabel(value: TargetLabel): Self = this.set("taskSetLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskSetLabel: Self = this.set("taskSetLabel", js.undefined)
-    
-    @scala.inline
-    def setTrafficWeight(value: TrafficWeight): Self = this.set("trafficWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficWeight: Self = this.set("trafficWeight", js.undefined)
+    def setTrafficWeightUndefined: Self = StObject.set(x, "trafficWeight", js.undefined)
   }
 }

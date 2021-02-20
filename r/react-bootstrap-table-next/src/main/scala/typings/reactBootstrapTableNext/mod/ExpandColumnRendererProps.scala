@@ -1,11 +1,12 @@
 package typings.reactBootstrapTableNext.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpandColumnRendererProps extends js.Object {
+trait ExpandColumnRendererProps extends StObject {
   
   var expandable: Boolean = js.native
   
@@ -22,27 +23,15 @@ object ExpandColumnRendererProps {
   }
   
   @scala.inline
-  implicit class ExpandColumnRendererPropsOps[Self <: ExpandColumnRendererProps] (val x: Self) extends AnyVal {
+  implicit class ExpandColumnRendererPropsMutableBuilder[Self <: ExpandColumnRendererProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowKey(value: String): Self = this.set("rowKey", value.asInstanceOf[js.Any])
+    def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNodeRequest extends js.Object {
+trait DescribeNodeRequest extends StObject {
   
   /**
     * Identifier of the backend node.
@@ -45,48 +46,36 @@ object DescribeNodeRequest {
   }
   
   @scala.inline
-  implicit class DescribeNodeRequestOps[Self <: DescribeNodeRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeNodeRequestMutableBuilder[Self <: DescribeNodeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteBackendNodeId: Self = this.set("backendNodeId", js.undefined)
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: integer): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteNodeId: Self = this.set("nodeId", js.undefined)
+    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setPierce(value: Boolean): Self = this.set("pierce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePierce: Self = this.set("pierce", js.undefined)
+    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

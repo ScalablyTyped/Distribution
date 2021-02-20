@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPUTime extends js.Object {
+trait CPUTime extends StObject {
   
   /** Average CPU utilization rate (% non-idle cpu / second) since previous sample. */
   var rate: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object CPUTime {
   }
   
   @scala.inline
-  implicit class CPUTimeOps[Self <: CPUTime] (val x: Self) extends AnyVal {
+  implicit class CPUTimeMutableBuilder[Self <: CPUTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
+    def setTotalMs(value: String): Self = StObject.set(x, "totalMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTotalMs(value: String): Self = this.set("totalMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalMs: Self = this.set("totalMs", js.undefined)
+    def setTotalMsUndefined: Self = StObject.set(x, "totalMs", js.undefined)
   }
 }

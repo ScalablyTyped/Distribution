@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormGridOptions extends js.Object {
+trait FormGridOptions extends StObject {
   
   var cols: js.UndefOr[String | Double] = js.native
   
@@ -20,30 +21,18 @@ object FormGridOptions {
   }
   
   @scala.inline
-  implicit class FormGridOptionsOps[Self <: FormGridOptions] (val x: Self) extends AnyVal {
+  implicit class FormGridOptionsMutableBuilder[Self <: FormGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCols(value: String | Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGutter(value: String | Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCols(value: String | Double): Self = this.set("cols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCols: Self = this.set("cols", js.undefined)
-    
-    @scala.inline
-    def setGutter(value: String | Double): Self = this.set("gutter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGutter: Self = this.set("gutter", js.undefined)
+    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
   }
 }

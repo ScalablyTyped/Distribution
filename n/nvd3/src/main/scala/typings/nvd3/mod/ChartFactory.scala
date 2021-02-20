@@ -1,11 +1,12 @@
 package typings.nvd3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartFactory[TChart /* <: Nvd3Element */] extends js.Object {
+trait ChartFactory[TChart /* <: Nvd3Element */] extends StObject {
   
   var callback: js.UndefOr[js.Function1[/* chart */ TChart, Unit]] = js.native
   
@@ -20,27 +21,15 @@ object ChartFactory {
   }
   
   @scala.inline
-  implicit class ChartFactoryOps[Self <: ChartFactory[_], TChart /* <: Nvd3Element */] (val x: Self with ChartFactory[TChart]) extends AnyVal {
+  implicit class ChartFactoryMutableBuilder[Self <: ChartFactory[_], TChart /* <: Nvd3Element */] (val x: Self with ChartFactory[TChart]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* chart */ TChart => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenerate(value: () => TChart): Self = this.set("generate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCallback(value: /* chart */ TChart => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setGenerate(value: () => TChart): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
   }
 }

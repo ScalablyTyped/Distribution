@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2InputPrompt extends js.Object {
+trait GoogleActionsV2InputPrompt extends StObject {
   
   /**
     * Initial prompts asking user to provide an input.
@@ -32,42 +33,30 @@ object GoogleActionsV2InputPrompt {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2InputPromptOps[Self <: GoogleActionsV2InputPrompt] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2InputPromptMutableBuilder[Self <: GoogleActionsV2InputPrompt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialPrompts(value: js.Array[GoogleActionsV2SpeechResponse]): Self = StObject.set(x, "initialPrompts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialPromptsUndefined: Self = StObject.set(x, "initialPrompts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialPromptsVarargs(value: GoogleActionsV2SpeechResponse*): Self = StObject.set(x, "initialPrompts", js.Array(value :_*))
     
     @scala.inline
-    def setInitialPromptsVarargs(value: GoogleActionsV2SpeechResponse*): Self = this.set("initialPrompts", js.Array(value :_*))
+    def setNoInputPrompts(value: js.Array[GoogleActionsV2SimpleResponse]): Self = StObject.set(x, "noInputPrompts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPrompts(value: js.Array[GoogleActionsV2SpeechResponse]): Self = this.set("initialPrompts", value.asInstanceOf[js.Any])
+    def setNoInputPromptsUndefined: Self = StObject.set(x, "noInputPrompts", js.undefined)
     
     @scala.inline
-    def deleteInitialPrompts: Self = this.set("initialPrompts", js.undefined)
+    def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value :_*))
     
     @scala.inline
-    def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = this.set("noInputPrompts", js.Array(value :_*))
+    def setRichInitialPrompt(value: GoogleActionsV2RichResponse): Self = StObject.set(x, "richInitialPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoInputPrompts(value: js.Array[GoogleActionsV2SimpleResponse]): Self = this.set("noInputPrompts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoInputPrompts: Self = this.set("noInputPrompts", js.undefined)
-    
-    @scala.inline
-    def setRichInitialPrompt(value: GoogleActionsV2RichResponse): Self = this.set("richInitialPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRichInitialPrompt: Self = this.set("richInitialPrompt", js.undefined)
+    def setRichInitialPromptUndefined: Self = StObject.set(x, "richInitialPrompt", js.undefined)
   }
 }

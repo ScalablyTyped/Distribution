@@ -1,11 +1,12 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProofSchemaPredicate extends js.Object {
+trait ProofSchemaPredicate extends StObject {
   
   var name: String = js.native
   
@@ -24,33 +25,21 @@ object ProofSchemaPredicate {
   }
   
   @scala.inline
-  implicit class ProofSchemaPredicateOps[Self <: ProofSchemaPredicate] (val x: Self) extends AnyVal {
+  implicit class ProofSchemaPredicateMutableBuilder[Self <: ProofSchemaPredicate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setP_type(value: String): Self = StObject.set(x, "p_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP_value(value: Double): Self = StObject.set(x, "p_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRestrictions(value: js.Array[Restriction]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP_type(value: String): Self = this.set("p_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP_value(value: Double): Self = this.set("p_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestrictionsVarargs(value: Restriction*): Self = this.set("restrictions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRestrictions(value: js.Array[Restriction]): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    def setRestrictionsVarargs(value: Restriction*): Self = StObject.set(x, "restrictions", js.Array(value :_*))
   }
 }

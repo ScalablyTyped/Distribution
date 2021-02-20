@@ -1,22 +1,38 @@
 package typings.reactSpinners
 
 import typings.emotionSerialize.mod.Keyframes
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactSpinners.interfacesMod.CalcFunction
 import typings.reactSpinners.interfacesMod.LoaderSizeProps
 import typings.reactSpinners.interfacesMod.StyleFunction
 import typings.reactSpinners.interfacesMod.StyleFunctionWithIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-spinners/HashLoader", JSImport.Namespace)
-@js.native
-object hashLoaderMod extends js.Object {
+object hashLoaderMod {
+  
+  @JSImport("react-spinners/HashLoader", JSImport.Default)
+  @js.native
+  class default () extends Loader
+  object default {
+    
+    @JSImport("react-spinners/HashLoader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("react-spinners/HashLoader", "default.defaultProps")
+    @js.native
+    def defaultProps: LoaderSizeProps = js.native
+    @scala.inline
+    def defaultProps_=(x: LoaderSizeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Loader
-    extends Component[LoaderSizeProps, js.Object, js.Any] {
+    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
     
     var after: CalcFunction[Keyframes] = js.native
     
@@ -33,14 +49,5 @@ object hashLoaderMod extends js.Object {
     var thickness: CalcFunction[Double] = js.native
     
     var wrapper: StyleFunction = js.native
-  }
-  
-  @js.native
-  class default () extends Loader
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: LoaderSizeProps = js.native
   }
 }

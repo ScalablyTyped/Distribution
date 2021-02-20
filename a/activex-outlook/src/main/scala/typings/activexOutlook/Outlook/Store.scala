@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Store extends js.Object {
+trait Store extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -88,87 +89,75 @@ object Store {
   }
   
   @scala.inline
-  implicit class StoreOps[Self <: Store] (val x: Self) extends AnyVal {
+  implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategories(value: Categories): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: Categories): Self = this.set("Categories", value.asInstanceOf[js.Any])
+    def setExchangeStoreType(value: OlExchangeStoreType): Self = StObject.set(x, "ExchangeStoreType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setFilePath(value: String): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setGetDefaultFolder(value: OlDefaultFolders => Folder): Self = StObject.set(x, "GetDefaultFolder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExchangeStoreType(value: OlExchangeStoreType): Self = this.set("ExchangeStoreType", value.asInstanceOf[js.Any])
+    def setGetRootFolder(value: () => Folder): Self = StObject.set(x, "GetRootFolder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("FilePath", value.asInstanceOf[js.Any])
+    def setGetRules(value: () => Rules): Self = StObject.set(x, "GetRules", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultFolder(value: OlDefaultFolders => Folder): Self = this.set("GetDefaultFolder", js.Any.fromFunction1(value))
+    def setGetSearchFolders(value: () => Folders): Self = StObject.set(x, "GetSearchFolders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRootFolder(value: () => Folder): Self = this.set("GetRootFolder", js.Any.fromFunction0(value))
+    def setGetSpecialFolder(value: OlSpecialFolders => Folder): Self = StObject.set(x, "GetSpecialFolder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRules(value: () => Rules): Self = this.set("GetRules", js.Any.fromFunction0(value))
+    def setIsCachedExchange(value: Boolean): Self = StObject.set(x, "IsCachedExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSearchFolders(value: () => Folders): Self = this.set("GetSearchFolders", js.Any.fromFunction0(value))
+    def setIsConversationEnabled(value: Boolean): Self = StObject.set(x, "IsConversationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSpecialFolder(value: OlSpecialFolders => Folder): Self = this.set("GetSpecialFolder", js.Any.fromFunction1(value))
+    def setIsDataFileStore(value: Boolean): Self = StObject.set(x, "IsDataFileStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCachedExchange(value: Boolean): Self = this.set("IsCachedExchange", value.asInstanceOf[js.Any])
+    def setIsInstantSearchEnabled(value: Boolean): Self = StObject.set(x, "IsInstantSearchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConversationEnabled(value: Boolean): Self = this.set("IsConversationEnabled", value.asInstanceOf[js.Any])
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "IsOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDataFileStore(value: Boolean): Self = this.set("IsDataFileStore", value.asInstanceOf[js.Any])
+    def setMAPIOBJECT(value: js.Any): Self = StObject.set(x, "MAPIOBJECT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInstantSearchEnabled(value: Boolean): Self = this.set("IsInstantSearchEnabled", value.asInstanceOf[js.Any])
+    def setOutlookDotStore_typekey(value: Store): Self = StObject.set(x, "Outlook.Store_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("IsOpen", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAPIOBJECT(value: js.Any): Self = this.set("MAPIOBJECT", value.asInstanceOf[js.Any])
+    def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotStore_typekey(value: Store): Self = this.set("Outlook.Store_typekey", value.asInstanceOf[js.Any])
+    def setRefreshQuotaDisplay(value: () => Unit): Self = StObject.set(x, "RefreshQuotaDisplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAccessor(value: PropertyAccessor): Self = this.set("PropertyAccessor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefreshQuotaDisplay(value: () => Unit): Self = this.set("RefreshQuotaDisplay", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoreID(value: String): Self = this.set("StoreID", value.asInstanceOf[js.Any])
+    def setStoreID(value: String): Self = StObject.set(x, "StoreID", value.asInstanceOf[js.Any])
   }
 }

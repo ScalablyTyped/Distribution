@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is used to trigger background tasks. */
 @js.native
-trait ApplicationTrigger extends js.Object {
+trait ApplicationTrigger extends StObject {
   
   /**
     * This method attempts to set the trigger and start the registered background task.

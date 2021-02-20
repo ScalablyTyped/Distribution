@@ -7,6 +7,7 @@ import typings.victory.victoryStrings.disable
 import typings.victory.victoryStrings.none
 import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,84 +109,72 @@ object VictoryZoomContainerProps {
   }
   
   @scala.inline
-  implicit class VictoryZoomContainerPropsOps[Self <: VictoryZoomContainerProps] (val x: Self) extends AnyVal {
+  implicit class VictoryZoomContainerPropsMutableBuilder[Self <: VictoryZoomContainerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPanUndefined: Self = StObject.set(x, "allowPan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowZoom(value: Boolean): Self = StObject.set(x, "allowZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPan(value: Boolean): Self = this.set("allowPan", value.asInstanceOf[js.Any])
+    def setAllowZoomUndefined: Self = StObject.set(x, "allowZoom", js.undefined)
     
     @scala.inline
-    def deleteAllowPan: Self = this.set("allowPan", js.undefined)
+    def setBrushStyle(value: CSSProperties): Self = StObject.set(x, "brushStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowZoom(value: Boolean): Self = this.set("allowZoom", value.asInstanceOf[js.Any])
+    def setBrushStyleUndefined: Self = StObject.set(x, "brushStyle", js.undefined)
     
     @scala.inline
-    def deleteAllowZoom: Self = this.set("allowZoom", js.undefined)
+    def setClipContainerComponent(value: ReactElement): Self = StObject.set(x, "clipContainerComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushStyle(value: CSSProperties): Self = this.set("brushStyle", value.asInstanceOf[js.Any])
+    def setClipContainerComponentUndefined: Self = StObject.set(x, "clipContainerComponent", js.undefined)
     
     @scala.inline
-    def deleteBrushStyle: Self = this.set("brushStyle", js.undefined)
+    def setDefaultBrushArea(value: all | none | disable): Self = StObject.set(x, "defaultBrushArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipContainerComponent(value: ReactElement): Self = this.set("clipContainerComponent", value.asInstanceOf[js.Any])
+    def setDefaultBrushAreaUndefined: Self = StObject.set(x, "defaultBrushArea", js.undefined)
     
     @scala.inline
-    def deleteClipContainerComponent: Self = this.set("clipContainerComponent", js.undefined)
+    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBrushArea(value: all | none | disable): Self = this.set("defaultBrushArea", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteDefaultBrushArea: Self = this.set("defaultBrushArea", js.undefined)
+    def setDownsample(value: Double | Boolean): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Boolean): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setDownsampleUndefined: Self = StObject.set(x, "downsample", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setMinimumZoom(value: CursorData): Self = StObject.set(x, "minimumZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownsample(value: Double | Boolean): Self = this.set("downsample", value.asInstanceOf[js.Any])
+    def setMinimumZoomUndefined: Self = StObject.set(x, "minimumZoom", js.undefined)
     
     @scala.inline
-    def deleteDownsample: Self = this.set("downsample", js.undefined)
+    def setOnZoomDomainChange(value: (/* domain */ DomainPropType, VictoryZoomContainerProps) => Unit): Self = StObject.set(x, "onZoomDomainChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMinimumZoom(value: CursorData): Self = this.set("minimumZoom", value.asInstanceOf[js.Any])
+    def setOnZoomDomainChangeUndefined: Self = StObject.set(x, "onZoomDomainChange", js.undefined)
     
     @scala.inline
-    def deleteMinimumZoom: Self = this.set("minimumZoom", js.undefined)
+    def setZoomDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "zoomDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnZoomDomainChange(value: (/* domain */ DomainPropType, VictoryZoomContainerProps) => Unit): Self = this.set("onZoomDomainChange", js.Any.fromFunction2(value))
+    def setZoomDimensionUndefined: Self = StObject.set(x, "zoomDimension", js.undefined)
     
     @scala.inline
-    def deleteOnZoomDomainChange: Self = this.set("onZoomDomainChange", js.undefined)
+    def setZoomDomain(value: DomainPropType): Self = StObject.set(x, "zoomDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomDimension(value: typings.victory.victoryStrings.x | y): Self = this.set("zoomDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomDimension: Self = this.set("zoomDimension", js.undefined)
-    
-    @scala.inline
-    def setZoomDomain(value: DomainPropType): Self = this.set("zoomDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomDomain: Self = this.set("zoomDomain", js.undefined)
+    def setZoomDomainUndefined: Self = StObject.set(x, "zoomDomain", js.undefined)
   }
 }

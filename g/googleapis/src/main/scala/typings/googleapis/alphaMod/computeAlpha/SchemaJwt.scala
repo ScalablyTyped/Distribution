@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JWT configuration for origin authentication.
   */
 @js.native
-trait SchemaJwt extends js.Object {
+trait SchemaJwt extends StObject {
   
   /**
     * A JWT containing any of these audiences will be accepted. The service
@@ -60,57 +61,45 @@ object SchemaJwt {
   }
   
   @scala.inline
-  implicit class SchemaJwtOps[Self <: SchemaJwt] (val x: Self) extends AnyVal {
+  implicit class SchemaJwtMutableBuilder[Self <: SchemaJwt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
     
     @scala.inline
-    def setAudiencesVarargs(value: String*): Self = this.set("audiences", js.Array(value :_*))
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudiences(value: js.Array[String]): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    def setJwksPublicKeys(value: String): Self = StObject.set(x, "jwksPublicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setJwksPublicKeysUndefined: Self = StObject.set(x, "jwksPublicKeys", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setJwtHeaders(value: js.Array[SchemaJwtHeader]): Self = StObject.set(x, "jwtHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwksPublicKeys(value: String): Self = this.set("jwksPublicKeys", value.asInstanceOf[js.Any])
+    def setJwtHeadersUndefined: Self = StObject.set(x, "jwtHeaders", js.undefined)
     
     @scala.inline
-    def deleteJwksPublicKeys: Self = this.set("jwksPublicKeys", js.undefined)
+    def setJwtHeadersVarargs(value: SchemaJwtHeader*): Self = StObject.set(x, "jwtHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setJwtHeadersVarargs(value: SchemaJwtHeader*): Self = this.set("jwtHeaders", js.Array(value :_*))
+    def setJwtParams(value: js.Array[String]): Self = StObject.set(x, "jwtParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwtHeaders(value: js.Array[SchemaJwtHeader]): Self = this.set("jwtHeaders", value.asInstanceOf[js.Any])
+    def setJwtParamsUndefined: Self = StObject.set(x, "jwtParams", js.undefined)
     
     @scala.inline
-    def deleteJwtHeaders: Self = this.set("jwtHeaders", js.undefined)
-    
-    @scala.inline
-    def setJwtParamsVarargs(value: String*): Self = this.set("jwtParams", js.Array(value :_*))
-    
-    @scala.inline
-    def setJwtParams(value: js.Array[String]): Self = this.set("jwtParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwtParams: Self = this.set("jwtParams", js.undefined)
+    def setJwtParamsVarargs(value: String*): Self = StObject.set(x, "jwtParams", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactNativeMaterialKit.mod
 
 import typings.reactNativeMaterialKit.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,48 +28,36 @@ object MKRangeSliderProperties {
   }
   
   @scala.inline
-  implicit class MKRangeSliderPropertiesOps[Self <: MKRangeSliderProperties] (val x: Self) extends AnyVal {
+  implicit class MKRangeSliderPropertiesMutableBuilder[Self <: MKRangeSliderProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setOnChange(value: /* curValue */ Max => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setOnConfirm(value: /* curValue */ Max => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: /* curValue */ Max => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnConfirm(value: /* curValue */ Max => Unit): Self = this.set("onConfirm", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnConfirm: Self = this.set("onConfirm", js.undefined)
-    
-    @scala.inline
-    def setOnStart(value: () => Unit): Self = this.set("onStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
   }
 }

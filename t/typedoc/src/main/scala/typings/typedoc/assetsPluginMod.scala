@@ -1,17 +1,19 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
+import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/plugins/AssetsPlugin", JSImport.Namespace)
-@js.native
-object assetsPluginMod extends js.Object {
+object assetsPluginMod {
   
+  @JSImport("typedoc/dist/lib/output/plugins/AssetsPlugin", "AssetsPlugin")
   @js.native
-  class AssetsPlugin () extends AbstractComponent[Renderer] {
+  class AssetsPlugin protected () extends RendererComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Renderer) = this()
     
     var copyDefaultAssets: Boolean = js.native
     

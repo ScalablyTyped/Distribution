@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Info
 import typings.postmanCollection.anon.WithRoot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,13 +37,17 @@ class PropertyBase[TDefinition /* <: js.Object */] () extends PropertyBaseDefini
   def toJSON(): TDefinition = js.native
 }
 /* static members */
-@JSImport("postman-collection", "PropertyBase")
-@js.native
-object PropertyBase extends js.Object {
+object PropertyBase {
   
+  @JSImport("postman-collection", "PropertyBase.propertyIsMeta")
+  @js.native
   def propertyIsMeta(_value: js.Any, key: String): Boolean = js.native
   
+  @JSImport("postman-collection", "PropertyBase.propertyUnprefixMeta")
+  @js.native
   def propertyUnprefixMeta(_value: js.Any, key: String): String = js.native
   
+  @JSImport("postman-collection", "PropertyBase.toJSON")
+  @js.native
   def toJSON(obj: js.Any): js.Any = js.native
 }

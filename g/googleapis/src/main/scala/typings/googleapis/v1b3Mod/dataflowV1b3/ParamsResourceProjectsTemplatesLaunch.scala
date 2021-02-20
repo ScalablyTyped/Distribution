@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,66 +69,54 @@ object ParamsResourceProjectsTemplatesLaunch {
   }
   
   @scala.inline
-  implicit class ParamsResourceProjectsTemplatesLaunchOps[Self <: ParamsResourceProjectsTemplatesLaunch] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProjectsTemplatesLaunchMutableBuilder[Self <: ParamsResourceProjectsTemplatesLaunch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicTemplateDotgcsPath(value: String): Self = StObject.set(x, "dynamicTemplate.gcsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setDynamicTemplateDotgcsPathUndefined: Self = StObject.set(x, "dynamicTemplate.gcsPath", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setDynamicTemplateDotstagingLocation(value: String): Self = StObject.set(x, "dynamicTemplate.stagingLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicTemplateDotgcsPath(value: String): Self = this.set("dynamicTemplate.gcsPath", value.asInstanceOf[js.Any])
+    def setDynamicTemplateDotstagingLocationUndefined: Self = StObject.set(x, "dynamicTemplate.stagingLocation", js.undefined)
     
     @scala.inline
-    def deleteDynamicTemplateDotgcsPath: Self = this.set("dynamicTemplate.gcsPath", js.undefined)
+    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicTemplateDotstagingLocation(value: String): Self = this.set("dynamicTemplate.stagingLocation", value.asInstanceOf[js.Any])
+    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
     
     @scala.inline
-    def deleteDynamicTemplateDotstagingLocation: Self = this.set("dynamicTemplate.stagingLocation", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsPath(value: String): Self = this.set("gcsPath", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteGcsPath: Self = this.set("gcsPath", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRequestBody(value: SchemaLaunchTemplateParameters): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaLaunchTemplateParameters): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

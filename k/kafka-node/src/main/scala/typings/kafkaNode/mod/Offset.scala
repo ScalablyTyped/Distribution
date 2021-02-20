@@ -3,13 +3,14 @@ package typings.kafkaNode.mod
 import typings.kafkaNode.kafkaNodeStrings.connect
 import typings.kafkaNode.kafkaNodeStrings.error
 import typings.kafkaNode.kafkaNodeStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kafka-node", "Offset")
 @js.native
-class Offset protected () extends js.Object {
+class Offset protected () extends StObject {
   def this(client: KafkaClient) = this()
   
   def commit(

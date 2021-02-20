@@ -1,21 +1,20 @@
 package typings.angularCompiler.outputAstMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TypeModifier extends js.Object
+sealed trait TypeModifier extends StObject
 @JSImport("@angular/compiler/src/output/output_ast", "TypeModifier")
 @js.native
-object TypeModifier extends js.Object {
+object TypeModifier extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypeModifier with Double] = js.native
   
   @js.native
   sealed trait Const extends TypeModifier
-  /* 0 */ @js.native
-  object Const extends TopLevel[Const with Double]
+  /* 0 */ val Const: typings.angularCompiler.outputAstMod.TypeModifier.Const with Double = js.native
 }

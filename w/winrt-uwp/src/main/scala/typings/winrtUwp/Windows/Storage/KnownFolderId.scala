@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KnownFolderId extends js.Object
+sealed trait KnownFolderId extends StObject
 /** Provides values that identify storage folders. */
 @JSGlobal("Windows.Storage.KnownFolderId")
 @js.native
-object KnownFolderId extends js.Object {
+object KnownFolderId extends StObject {
   
   /** App Captures folder. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEventBusesRequest extends js.Object {
+trait ListEventBusesRequest extends StObject {
   
   /**
     * Specifying this limits the number of results returned by this operation. The operation also returns a NextToken which you can use in a subsequent operation to retrieve the next set of results.
@@ -31,36 +32,24 @@ object ListEventBusesRequest {
   }
   
   @scala.inline
-  implicit class ListEventBusesRequestOps[Self <: ListEventBusesRequest] (val x: Self) extends AnyVal {
+  implicit class ListEventBusesRequestMutableBuilder[Self <: ListEventBusesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamePrefix(value: EventBusName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: LimitMax100): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePrefix(value: EventBusName): Self = this.set("NamePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamePrefix: Self = this.set("NamePrefix", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

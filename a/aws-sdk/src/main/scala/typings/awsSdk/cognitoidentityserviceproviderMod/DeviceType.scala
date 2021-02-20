@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceType extends js.Object {
+trait DeviceType extends StObject {
   
   /**
     * The device attributes.
@@ -41,51 +42,39 @@ object DeviceType {
   }
   
   @scala.inline
-  implicit class DeviceTypeOps[Self <: DeviceType] (val x: Self) extends AnyVal {
+  implicit class DeviceTypeMutableBuilder[Self <: DeviceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceAttributes(value: AttributeListType): Self = StObject.set(x, "DeviceAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceAttributesUndefined: Self = StObject.set(x, "DeviceAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "DeviceAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceAttributesVarargs(value: AttributeType*): Self = this.set("DeviceAttributes", js.Array(value :_*))
+    def setDeviceCreateDate(value: DateType): Self = StObject.set(x, "DeviceCreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceAttributes(value: AttributeListType): Self = this.set("DeviceAttributes", value.asInstanceOf[js.Any])
+    def setDeviceCreateDateUndefined: Self = StObject.set(x, "DeviceCreateDate", js.undefined)
     
     @scala.inline
-    def deleteDeviceAttributes: Self = this.set("DeviceAttributes", js.undefined)
+    def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCreateDate(value: DateType): Self = this.set("DeviceCreateDate", value.asInstanceOf[js.Any])
+    def setDeviceKeyUndefined: Self = StObject.set(x, "DeviceKey", js.undefined)
     
     @scala.inline
-    def deleteDeviceCreateDate: Self = this.set("DeviceCreateDate", js.undefined)
+    def setDeviceLastAuthenticatedDate(value: DateType): Self = StObject.set(x, "DeviceLastAuthenticatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceKey(value: DeviceKeyType): Self = this.set("DeviceKey", value.asInstanceOf[js.Any])
+    def setDeviceLastAuthenticatedDateUndefined: Self = StObject.set(x, "DeviceLastAuthenticatedDate", js.undefined)
     
     @scala.inline
-    def deleteDeviceKey: Self = this.set("DeviceKey", js.undefined)
+    def setDeviceLastModifiedDate(value: DateType): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceLastAuthenticatedDate(value: DateType): Self = this.set("DeviceLastAuthenticatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceLastAuthenticatedDate: Self = this.set("DeviceLastAuthenticatedDate", js.undefined)
-    
-    @scala.inline
-    def setDeviceLastModifiedDate(value: DateType): Self = this.set("DeviceLastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceLastModifiedDate: Self = this.set("DeviceLastModifiedDate", js.undefined)
+    def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
   }
 }

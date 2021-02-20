@@ -1,11 +1,12 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WatchExchangeTradeResponse extends js.Object {
+trait WatchExchangeTradeResponse extends StObject {
   
   var error: js.UndefOr[String] = js.native
   
@@ -13,7 +14,7 @@ trait WatchExchangeTradeResponse extends js.Object {
   
   var receiveStringAmount: js.UndefOr[String] = js.native
   
-   // state of trade after confirmTrade
+  // state of trade after confirmTrade
   var receiveTxHash: js.UndefOr[String] = js.native
   
   var status: js.UndefOr[ExchangeTradeStatus] = js.native
@@ -27,48 +28,36 @@ object WatchExchangeTradeResponse {
   }
   
   @scala.inline
-  implicit class WatchExchangeTradeResponseOps[Self <: WatchExchangeTradeResponse] (val x: Self) extends AnyVal {
+  implicit class WatchExchangeTradeResponseMutableBuilder[Self <: WatchExchangeTradeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setReceiveStringAmount(value: String): Self = StObject.set(x, "receiveStringAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setReceiveStringAmountUndefined: Self = StObject.set(x, "receiveStringAmount", js.undefined)
     
     @scala.inline
-    def deleteRate: Self = this.set("rate", js.undefined)
+    def setReceiveTxHash(value: String): Self = StObject.set(x, "receiveTxHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveStringAmount(value: String): Self = this.set("receiveStringAmount", value.asInstanceOf[js.Any])
+    def setReceiveTxHashUndefined: Self = StObject.set(x, "receiveTxHash", js.undefined)
     
     @scala.inline
-    def deleteReceiveStringAmount: Self = this.set("receiveStringAmount", js.undefined)
+    def setStatus(value: ExchangeTradeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveTxHash(value: String): Self = this.set("receiveTxHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReceiveTxHash: Self = this.set("receiveTxHash", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ExchangeTradeStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

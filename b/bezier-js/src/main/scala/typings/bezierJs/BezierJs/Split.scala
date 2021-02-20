@@ -1,5 +1,6 @@
 package typings.bezierJs.BezierJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object Split {
   }
   
   @scala.inline
-  implicit class SplitOps[Self <: Split] (val x: Self) extends AnyVal {
+  implicit class SplitMutableBuilder[Self <: Split] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpan(value: js.Array[Point]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpanVarargs(value: Point*): Self = StObject.set(x, "span", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_t1(value: Double): Self = StObject.set(x, "_t1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanVarargs(value: Point*): Self = this.set("span", js.Array(value :_*))
+    def set_t1Undefined: Self = StObject.set(x, "_t1", js.undefined)
     
     @scala.inline
-    def setSpan(value: js.Array[Point]): Self = this.set("span", value.asInstanceOf[js.Any])
+    def set_t2(value: Double): Self = StObject.set(x, "_t2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_t1(value: Double): Self = this.set("_t1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_t1: Self = this.set("_t1", js.undefined)
-    
-    @scala.inline
-    def set_t2(value: Double): Self = this.set("_t2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_t2: Self = this.set("_t2", js.undefined)
+    def set_t2Undefined: Self = StObject.set(x, "_t2", js.undefined)
   }
 }

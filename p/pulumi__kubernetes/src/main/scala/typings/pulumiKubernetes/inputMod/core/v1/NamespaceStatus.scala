@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NamespaceStatus is information about the current status of a Namespace.
   */
 @js.native
-trait NamespaceStatus extends js.Object {
+trait NamespaceStatus extends StObject {
   
   /**
     * Represents the latest available observations of a namespace's current state.
@@ -30,33 +31,21 @@ object NamespaceStatus {
   }
   
   @scala.inline
-  implicit class NamespaceStatusOps[Self <: NamespaceStatus] (val x: Self) extends AnyVal {
+  implicit class NamespaceStatusMutableBuilder[Self <: NamespaceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: Input[js.Array[Input[NamespaceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: Input[NamespaceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: Input[NamespaceCondition]*): Self = this.set("conditions", js.Array(value :_*))
+    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: Input[js.Array[Input[NamespaceCondition]]]): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
-    
-    @scala.inline
-    def setPhase(value: Input[String]): Self = this.set("phase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhase: Self = this.set("phase", js.undefined)
+    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
   }
 }

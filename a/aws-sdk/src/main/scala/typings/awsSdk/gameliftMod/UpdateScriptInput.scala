@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateScriptInput extends js.Object {
+trait UpdateScriptInput extends StObject {
   
   /**
     * A descriptive label that is associated with a script. Script names do not need to be unique.
@@ -41,45 +42,33 @@ object UpdateScriptInput {
   }
   
   @scala.inline
-  implicit class UpdateScriptInputOps[Self <: UpdateScriptInput] (val x: Self) extends AnyVal {
+  implicit class UpdateScriptInputMutableBuilder[Self <: UpdateScriptInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScriptId(value: ScriptIdOrArn): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptIdOrArn): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setVersion(value: NonZeroAndMaxString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageLocation(value: S3Location): Self = this.set("StorageLocation", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     
     @scala.inline
-    def deleteStorageLocation: Self = this.set("StorageLocation", js.undefined)
+    def setZipFile(value: ZipBlob): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: NonZeroAndMaxString): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
-    
-    @scala.inline
-    def setZipFile(value: ZipBlob): Self = this.set("ZipFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZipFile: Self = this.set("ZipFile", js.undefined)
+    def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
   }
 }

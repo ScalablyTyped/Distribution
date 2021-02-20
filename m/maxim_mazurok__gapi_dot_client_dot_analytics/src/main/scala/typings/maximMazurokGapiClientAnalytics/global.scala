@@ -7,37 +7,47 @@ import typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.Provisionin
 import typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.UserDeletionResource
 import typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.analytics
 import typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.v3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Analytics API v3 */
-      def load(name: analytics, version: v3): js.Thenable[Unit] = js.native
-      def load(name: analytics, version: v3, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object analytics extends js.Object {
+      object analytics {
         
+        @JSGlobal("gapi.client.analytics.data")
+        @js.native
         val data: DataResource = js.native
         
+        @JSGlobal("gapi.client.analytics.management")
+        @js.native
         val management: ManagementResource = js.native
         
+        @JSGlobal("gapi.client.analytics.metadata")
+        @js.native
         val metadata: MetadataResource = js.native
         
+        @JSGlobal("gapi.client.analytics.provisioning")
+        @js.native
         val provisioning: ProvisioningResource = js.native
         
+        @JSGlobal("gapi.client.analytics.userDeletion")
+        @js.native
         val userDeletion: UserDeletionResource = js.native
       }
+      
+      /** Load Google Analytics API v3 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: analytics, version: v3): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: analytics, version: v3, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

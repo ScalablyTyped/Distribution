@@ -1,12 +1,13 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "DragPanHandler")
 @js.native
-class DragPanHandler protected () extends js.Object {
+class DragPanHandler protected () extends StObject {
   def this(map: Map) = this()
   
   def disable(): Unit = js.native

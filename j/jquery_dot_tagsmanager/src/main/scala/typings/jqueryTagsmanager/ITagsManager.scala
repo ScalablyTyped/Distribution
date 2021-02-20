@@ -1,11 +1,12 @@
 package typings.jqueryTagsmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITagsManager extends js.Object {
+trait ITagsManager extends StObject {
   
   def ajaxPolling(query: String, process: js.Function): Unit = js.native
   

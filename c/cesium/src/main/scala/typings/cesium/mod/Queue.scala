@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.mod.Queue.Comparator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Queue")
 @js.native
-class Queue () extends js.Object {
+class Queue () extends StObject {
   
   def clear(): Unit = js.native
   
@@ -23,9 +24,7 @@ class Queue () extends js.Object {
   
   def sort(compareFunction: Comparator): Unit = js.native
 }
-@JSImport("cesium", "Queue")
-@js.native
-object Queue extends js.Object {
+object Queue {
   
   type Comparator = js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
 }

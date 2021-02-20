@@ -3,6 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Base.Ui
 import typings.googleAppsScript.GoogleAppsScript.Drive.File
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and create Google Sheets files. This class is the parent class for the Spreadsheet service.
   */
 @js.native
-trait SpreadsheetApp extends js.Object {
+trait SpreadsheetApp extends StObject {
   
   var AutoFillSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoFillSeries */ js.Any = js.native
   

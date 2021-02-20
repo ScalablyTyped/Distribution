@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConfigurationCatalog extends js.Object {
+trait NetworkConfigurationCatalog extends StObject {
   
   var configurations: js.UndefOr[js.Array[NetworkConfiguration]] = js.native
 }
@@ -18,27 +19,15 @@ object NetworkConfigurationCatalog {
   }
   
   @scala.inline
-  implicit class NetworkConfigurationCatalogOps[Self <: NetworkConfigurationCatalog] (val x: Self) extends AnyVal {
+  implicit class NetworkConfigurationCatalogMutableBuilder[Self <: NetworkConfigurationCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurations(value: js.Array[NetworkConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationsVarargs(value: NetworkConfiguration*): Self = this.set("configurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigurations(value: js.Array[NetworkConfiguration]): Self = this.set("configurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurations: Self = this.set("configurations", js.undefined)
+    def setConfigurationsVarargs(value: NetworkConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
   }
 }

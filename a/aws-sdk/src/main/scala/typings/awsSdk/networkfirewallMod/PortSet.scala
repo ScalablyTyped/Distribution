@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortSet extends js.Object {
+trait PortSet extends StObject {
   
   /**
     * The set of port ranges. 
@@ -21,27 +22,15 @@ object PortSet {
   }
   
   @scala.inline
-  implicit class PortSetOps[Self <: PortSet] (val x: Self) extends AnyVal {
+  implicit class PortSetMutableBuilder[Self <: PortSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: VariableDefinitionList): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefinitionVarargs(value: VariableDefinition*): Self = this.set("Definition", js.Array(value :_*))
-    
-    @scala.inline
-    def setDefinition(value: VariableDefinitionList): Self = this.set("Definition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefinition: Self = this.set("Definition", js.undefined)
+    def setDefinitionVarargs(value: VariableDefinition*): Self = StObject.set(x, "Definition", js.Array(value :_*))
   }
 }

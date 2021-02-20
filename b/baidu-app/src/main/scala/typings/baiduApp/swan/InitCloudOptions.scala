@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 定义了云开发的默认配置，该配置会作为之后调用其他所有云 API 的默认配置
   */
 @js.native
-trait InitCloudOptions extends js.Object {
+trait InitCloudOptions extends StObject {
   
   /**
     * 默认环境配置，传入字符串形式的环境 ID 可以指定所有服务的默认环境，传入对象 initCloudEnvOptions 可以分别指定各个服务的默认环境
@@ -31,30 +32,18 @@ object InitCloudOptions {
   }
   
   @scala.inline
-  implicit class InitCloudOptionsOps[Self <: InitCloudOptions] (val x: Self) extends AnyVal {
+  implicit class InitCloudOptionsMutableBuilder[Self <: InitCloudOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnv(value: String | InitCloudEnvOptions): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTraceUser(value: Boolean): Self = StObject.set(x, "traceUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: String | InitCloudEnvOptions): Self = this.set("env", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
-    
-    @scala.inline
-    def setTraceUser(value: Boolean): Self = this.set("traceUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceUser: Self = this.set("traceUser", js.undefined)
+    def setTraceUserUndefined: Self = StObject.set(x, "traceUser", js.undefined)
   }
 }

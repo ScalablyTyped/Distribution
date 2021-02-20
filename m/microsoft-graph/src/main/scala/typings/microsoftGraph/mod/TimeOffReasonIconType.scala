@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import typings.microsoftGraph.microsoftGraphStrings.running_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.sunny
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait TimeOffReasonIconType extends js.Object
+trait TimeOffReasonIconType extends StObject
 object TimeOffReasonIconType {
   
   @scala.inline

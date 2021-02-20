@@ -1,11 +1,12 @@
 package typings.nodemailer.smtpConnectionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationCredentials extends js.Object {
+trait AuthenticationCredentials extends StObject {
   
   /** normal authentication object */
   var credentials: Credentials = js.native
@@ -19,21 +20,9 @@ object AuthenticationCredentials {
   }
   
   @scala.inline
-  implicit class AuthenticationCredentialsOps[Self <: AuthenticationCredentials] (val x: Self) extends AnyVal {
+  implicit class AuthenticationCredentialsMutableBuilder[Self <: AuthenticationCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredentials(value: Credentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
   }
 }

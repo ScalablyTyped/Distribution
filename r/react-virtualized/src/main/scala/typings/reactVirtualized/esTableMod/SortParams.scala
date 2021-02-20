@@ -1,12 +1,13 @@
 package typings.reactVirtualized.esTableMod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortParams extends js.Object {
+trait SortParams extends StObject {
   
   var defaultSortDirection: SortDirectionType = js.native
   
@@ -23,27 +24,15 @@ object SortParams {
   }
   
   @scala.inline
-  implicit class SortParamsOps[Self <: SortParams] (val x: Self) extends AnyVal {
+  implicit class SortParamsMutableBuilder[Self <: SortParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSortDirection(value: SortDirectionType): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultSortDirection(value: SortDirectionType): Self = this.set("defaultSortDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
   }
 }

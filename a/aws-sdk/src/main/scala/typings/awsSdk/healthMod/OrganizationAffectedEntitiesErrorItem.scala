@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrganizationAffectedEntitiesErrorItem extends js.Object {
+trait OrganizationAffectedEntitiesErrorItem extends StObject {
   
   /**
     * The 12-digit AWS account numbers that contains the affected entities.
@@ -36,42 +37,30 @@ object OrganizationAffectedEntitiesErrorItem {
   }
   
   @scala.inline
-  implicit class OrganizationAffectedEntitiesErrorItemOps[Self <: OrganizationAffectedEntitiesErrorItem] (val x: Self) extends AnyVal {
+  implicit class OrganizationAffectedEntitiesErrorItemMutableBuilder[Self <: OrganizationAffectedEntitiesErrorItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: accountId): Self = this.set("awsAccountId", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteAwsAccountId: Self = this.set("awsAccountId", js.undefined)
+    def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorNameUndefined: Self = StObject.set(x, "errorName", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorName(value: String): Self = this.set("errorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorName: Self = this.set("errorName", js.undefined)
-    
-    @scala.inline
-    def setEventArn(value: eventArn): Self = this.set("eventArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventArn: Self = this.set("eventArn", js.undefined)
+    def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesGetQueueUrlInputMod.GetQueueUrlInput
 import typings.awsSdkClientSqsNode.typesGetQueueUrlOutputMod.GetQueueUrlOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/GetQueueUrlCommand", JSImport.Namespace)
-@js.native
-object getQueueUrlCommandMod extends js.Object {
+object getQueueUrlCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/GetQueueUrlCommand", "GetQueueUrlCommand")
   @js.native
   class GetQueueUrlCommand protected () extends Command[
           InputTypesUnion, 

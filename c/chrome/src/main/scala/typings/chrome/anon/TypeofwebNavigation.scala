@@ -10,12 +10,13 @@ import typings.chrome.chrome.webNavigation.WebNavigationParentedEvent
 import typings.chrome.chrome.webNavigation.WebNavigationReplacementEvent
 import typings.chrome.chrome.webNavigation.WebNavigationSourceEvent
 import typings.chrome.chrome.webNavigation.WebNavigationTransitionalEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofwebNavigation extends js.Object {
+trait TypeofwebNavigation extends StObject {
   
   def getAllFrames(
     details: GetAllFrameDetails,
@@ -63,53 +64,41 @@ object TypeofwebNavigation {
   }
   
   @scala.inline
-  implicit class TypeofwebNavigationOps[Self <: TypeofwebNavigation] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TypeofwebNavigationMutableBuilder[Self <: TypeofwebNavigation] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGetAllFrames(
       value: (GetAllFrameDetails, js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]) => Unit
-    ): Self = this.set("getAllFrames", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getAllFrames", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFrame(value: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit): Self = this.set("getFrame", js.Any.fromFunction2(value))
+    def setGetFrame(value: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit): Self = StObject.set(x, "getFrame", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnBeforeNavigate(value: WebNavigationParentedEvent): Self = this.set("onBeforeNavigate", value.asInstanceOf[js.Any])
+    def setOnBeforeNavigate(value: WebNavigationParentedEvent): Self = StObject.set(x, "onBeforeNavigate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCommitted(value: WebNavigationTransitionalEvent): Self = this.set("onCommitted", value.asInstanceOf[js.Any])
+    def setOnCommitted(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onCommitted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCompleted(value: WebNavigationFramedEvent): Self = this.set("onCompleted", value.asInstanceOf[js.Any])
+    def setOnCompleted(value: WebNavigationFramedEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCreatedNavigationTarget(value: WebNavigationSourceEvent): Self = this.set("onCreatedNavigationTarget", value.asInstanceOf[js.Any])
+    def setOnCreatedNavigationTarget(value: WebNavigationSourceEvent): Self = StObject.set(x, "onCreatedNavigationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDOMContentLoaded(value: WebNavigationFramedEvent): Self = this.set("onDOMContentLoaded", value.asInstanceOf[js.Any])
+    def setOnDOMContentLoaded(value: WebNavigationFramedEvent): Self = StObject.set(x, "onDOMContentLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnErrorOccurred(value: WebNavigationFramedErrorEvent): Self = this.set("onErrorOccurred", value.asInstanceOf[js.Any])
+    def setOnErrorOccurred(value: WebNavigationFramedErrorEvent): Self = StObject.set(x, "onErrorOccurred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHistoryStateUpdated(value: WebNavigationTransitionalEvent): Self = this.set("onHistoryStateUpdated", value.asInstanceOf[js.Any])
+    def setOnHistoryStateUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onHistoryStateUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnReferenceFragmentUpdated(value: WebNavigationTransitionalEvent): Self = this.set("onReferenceFragmentUpdated", value.asInstanceOf[js.Any])
+    def setOnReferenceFragmentUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onReferenceFragmentUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTabReplaced(value: WebNavigationReplacementEvent): Self = this.set("onTabReplaced", value.asInstanceOf[js.Any])
+    def setOnTabReplaced(value: WebNavigationReplacementEvent): Self = StObject.set(x, "onTabReplaced", value.asInstanceOf[js.Any])
   }
 }

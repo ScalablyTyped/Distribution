@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBatchInferenceJobResponse extends js.Object {
+trait CreateBatchInferenceJobResponse extends StObject {
   
   /**
     * The ARN of the batch inference job.
@@ -21,24 +22,12 @@ object CreateBatchInferenceJobResponse {
   }
   
   @scala.inline
-  implicit class CreateBatchInferenceJobResponseOps[Self <: CreateBatchInferenceJobResponse] (val x: Self) extends AnyVal {
+  implicit class CreateBatchInferenceJobResponseMutableBuilder[Self <: CreateBatchInferenceJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchInferenceJobArn(value: Arn): Self = StObject.set(x, "batchInferenceJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBatchInferenceJobArn(value: Arn): Self = this.set("batchInferenceJobArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchInferenceJobArn: Self = this.set("batchInferenceJobArn", js.undefined)
+    def setBatchInferenceJobArnUndefined: Self = StObject.set(x, "batchInferenceJobArn", js.undefined)
   }
 }

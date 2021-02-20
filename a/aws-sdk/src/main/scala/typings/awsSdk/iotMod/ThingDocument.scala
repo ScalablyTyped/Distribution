@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThingDocument extends js.Object {
+trait ThingDocument extends StObject {
   
   /**
     * The attributes.
@@ -51,63 +52,51 @@ object ThingDocument {
   }
   
   @scala.inline
-  implicit class ThingDocumentOps[Self <: ThingDocument] (val x: Self) extends AnyVal {
+  implicit class ThingDocumentMutableBuilder[Self <: ThingDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectivity(value: ThingConnectivity): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setConnectivityUndefined: Self = StObject.set(x, "connectivity", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setShadow(value: JsonDocument): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectivity(value: ThingConnectivity): Self = this.set("connectivity", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteConnectivity: Self = this.set("connectivity", js.undefined)
+    def setThingGroupNames(value: ThingGroupNameList): Self = StObject.set(x, "thingGroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: JsonDocument): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setThingGroupNamesUndefined: Self = StObject.set(x, "thingGroupNames", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value :_*))
     
     @scala.inline
-    def setThingGroupNamesVarargs(value: ThingGroupName*): Self = this.set("thingGroupNames", js.Array(value :_*))
+    def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingGroupNames(value: ThingGroupNameList): Self = this.set("thingGroupNames", value.asInstanceOf[js.Any])
+    def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
     
     @scala.inline
-    def deleteThingGroupNames: Self = this.set("thingGroupNames", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingId(value: ThingId): Self = this.set("thingId", value.asInstanceOf[js.Any])
+    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
     
     @scala.inline
-    def deleteThingId: Self = this.set("thingId", js.undefined)
+    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingName: Self = this.set("thingName", js.undefined)
-    
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
   }
 }

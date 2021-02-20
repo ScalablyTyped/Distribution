@@ -15,12 +15,13 @@ import typings.gaeaModel.gaeaModelStrings.paste
 import typings.gaeaModel.gaeaModelStrings.remove
 import typings.gaeaModel.gaeaModelStrings.reset
 import typings.gaeaModel.gaeaModelStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Diff extends js.Object {
+trait Diff extends StObject {
   
   // 新增操作
   var add: js.UndefOr[Index] = js.native
@@ -68,78 +69,66 @@ object Diff {
   }
   
   @scala.inline
-  implicit class DiffOps[Self <: Diff] (val x: Self) extends AnyVal {
+  implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Index): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddCombo(value: ComponentInfo): Self = StObject.set(x, "addCombo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddComboUndefined: Self = StObject.set(x, "addCombo", js.undefined)
     
     @scala.inline
-    def setMapUniqueKey(value: String): Self = this.set("mapUniqueKey", value.asInstanceOf[js.Any])
+    def setAddSource(value: ComponentInfo): Self = StObject.set(x, "addSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: add | move | remove | exchange | update | paste | reset | addCombo | addSource): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAddSourceUndefined: Self = StObject.set(x, "addSource", js.undefined)
     
     @scala.inline
-    def setAdd(value: Index): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setExchange(value: NewIndex): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddCombo(value: ComponentInfo): Self = this.set("addCombo", value.asInstanceOf[js.Any])
+    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
     @scala.inline
-    def deleteAddCombo: Self = this.set("addCombo", js.undefined)
+    def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSource(value: ComponentInfo): Self = this.set("addSource", value.asInstanceOf[js.Any])
+    def setMove(value: SourceIndex): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddSource: Self = this.set("addSource", js.undefined)
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def setExchange(value: NewIndex): Self = this.set("exchange", value.asInstanceOf[js.Any])
+    def setPaste(value: DiffRemove): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExchange: Self = this.set("exchange", js.undefined)
+    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
     @scala.inline
-    def setMove(value: SourceIndex): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setRemove(value: DiffRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def setPaste(value: DiffRemove): Self = this.set("paste", value.asInstanceOf[js.Any])
+    def setReset(value: BeforeName): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaste: Self = this.set("paste", js.undefined)
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def setRemove(value: DiffRemove): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setType(value: add | move | remove | exchange | update | paste | reset | addCombo | addSource): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setUpdate(value: NewValue): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: BeforeName): Self = this.set("reset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: NewValue): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

@@ -2,16 +2,16 @@ package typings.rxjs
 
 import typings.rxjs.schedulerMod.Scheduler
 import typings.rxjs.subscriptionLogMod.SubscriptionLog
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/testing/SubscriptionLoggable", JSImport.Namespace)
-@js.native
-object subscriptionLoggableMod extends js.Object {
+object subscriptionLoggableMod {
   
+  @JSImport("rxjs/internal/testing/SubscriptionLoggable", "SubscriptionLoggable")
   @js.native
-  class SubscriptionLoggable () extends js.Object {
+  class SubscriptionLoggable () extends StObject {
     
     def logSubscribedFrame(): Double = js.native
     

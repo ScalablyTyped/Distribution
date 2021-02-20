@@ -1,11 +1,12 @@
 package typings.angularCompiler.compileMetadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileProviderMetadata extends js.Object {
+trait CompileProviderMetadata extends StObject {
   
   var deps: js.UndefOr[js.Array[CompileDiDependencyMetadata]] = js.native
   
@@ -30,60 +31,48 @@ object CompileProviderMetadata {
   }
   
   @scala.inline
-  implicit class CompileProviderMetadataOps[Self <: CompileProviderMetadata] (val x: Self) extends AnyVal {
+  implicit class CompileProviderMetadataMutableBuilder[Self <: CompileProviderMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeps(value: js.Array[CompileDiDependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepsVarargs(value: CompileDiDependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
     @scala.inline
-    def setToken(value: CompileTokenMetadata): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepsVarargs(value: CompileDiDependencyMetadata*): Self = this.set("deps", js.Array(value :_*))
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     @scala.inline
-    def setDeps(value: js.Array[CompileDiDependencyMetadata]): Self = this.set("deps", value.asInstanceOf[js.Any])
+    def setToken(value: CompileTokenMetadata): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeps: Self = this.set("deps", js.undefined)
+    def setUseClass(value: CompileTypeMetadata): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
     @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
+    def setUseExisting(value: CompileTokenMetadata): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseClass(value: CompileTypeMetadata): Self = this.set("useClass", value.asInstanceOf[js.Any])
+    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
     @scala.inline
-    def deleteUseClass: Self = this.set("useClass", js.undefined)
+    def setUseFactory(value: CompileFactoryMetadata): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseExisting(value: CompileTokenMetadata): Self = this.set("useExisting", value.asInstanceOf[js.Any])
+    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
     @scala.inline
-    def deleteUseExisting: Self = this.set("useExisting", js.undefined)
+    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseFactory(value: CompileFactoryMetadata): Self = this.set("useFactory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFactory: Self = this.set("useFactory", js.undefined)
-    
-    @scala.inline
-    def setUseValue(value: js.Any): Self = this.set("useValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseValue: Self = this.set("useValue", js.undefined)
+    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
   }
 }

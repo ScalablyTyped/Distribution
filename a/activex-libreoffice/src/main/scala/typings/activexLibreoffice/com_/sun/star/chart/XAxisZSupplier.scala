@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,42 +85,30 @@ object XAxisZSupplier {
   }
   
   @scala.inline
-  implicit class XAxisZSupplierOps[Self <: XAxisZSupplier] (val x: Self) extends AnyVal {
+  implicit class XAxisZSupplierMutableBuilder[Self <: XAxisZSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetZAxis(value: () => XPropertySet): Self = StObject.set(x, "getZAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetZAxisTitle(value: () => XShape): Self = StObject.set(x, "getZAxisTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetZHelpGrid(value: () => XPropertySet): Self = StObject.set(x, "getZHelpGrid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setZAxis(value: XPropertySet): Self = this.set("ZAxis", value.asInstanceOf[js.Any])
+    def setGetZMainGrid(value: () => XPropertySet): Self = StObject.set(x, "getZMainGrid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setZAxisTitle(value: XShape): Self = this.set("ZAxisTitle", value.asInstanceOf[js.Any])
+    def setZAxis(value: XPropertySet): Self = StObject.set(x, "ZAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZHelpGrid(value: XPropertySet): Self = this.set("ZHelpGrid", value.asInstanceOf[js.Any])
+    def setZAxisTitle(value: XShape): Self = StObject.set(x, "ZAxisTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZMainGrid(value: XPropertySet): Self = this.set("ZMainGrid", value.asInstanceOf[js.Any])
+    def setZHelpGrid(value: XPropertySet): Self = StObject.set(x, "ZHelpGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetZAxis(value: () => XPropertySet): Self = this.set("getZAxis", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetZAxisTitle(value: () => XShape): Self = this.set("getZAxisTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetZHelpGrid(value: () => XPropertySet): Self = this.set("getZHelpGrid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetZMainGrid(value: () => XPropertySet): Self = this.set("getZMainGrid", js.Any.fromFunction0(value))
+    def setZMainGrid(value: XPropertySet): Self = StObject.set(x, "ZMainGrid", value.asInstanceOf[js.Any])
   }
 }

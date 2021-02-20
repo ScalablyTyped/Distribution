@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVTLDevicesInput extends js.Object {
+trait DescribeVTLDevicesInput extends StObject {
   
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   
@@ -33,42 +34,30 @@ object DescribeVTLDevicesInput {
   }
   
   @scala.inline
-  implicit class DescribeVTLDevicesInputOps[Self <: DescribeVTLDevicesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeVTLDevicesInputMutableBuilder[Self <: DescribeVTLDevicesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: PositiveIntObject): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setVTLDeviceARNs(value: VTLDeviceARNs): Self = StObject.set(x, "VTLDeviceARNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setVTLDeviceARNsUndefined: Self = StObject.set(x, "VTLDeviceARNs", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setVTLDeviceARNsVarargs(value: VTLDeviceARN*): Self = this.set("VTLDeviceARNs", js.Array(value :_*))
-    
-    @scala.inline
-    def setVTLDeviceARNs(value: VTLDeviceARNs): Self = this.set("VTLDeviceARNs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVTLDeviceARNs: Self = this.set("VTLDeviceARNs", js.undefined)
+    def setVTLDeviceARNsVarargs(value: VTLDeviceARN*): Self = StObject.set(x, "VTLDeviceARNs", js.Array(value :_*))
   }
 }

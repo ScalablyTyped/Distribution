@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,90 +94,78 @@ object FeatureTableProperties {
   }
   
   @scala.inline
-  implicit class FeatureTablePropertiesOps[Self <: FeatureTableProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureTablePropertiesMutableBuilder[Self <: FeatureTableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentsEnabled(value: Boolean): Self = StObject.set(x, "attachmentsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsEnabledUndefined: Self = StObject.set(x, "attachmentsEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnReorderingEnabled(value: Boolean): Self = StObject.set(x, "columnReorderingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsEnabled(value: Boolean): Self = this.set("attachmentsEnabled", value.asInstanceOf[js.Any])
+    def setColumnReorderingEnabledUndefined: Self = StObject.set(x, "columnReorderingEnabled", js.undefined)
     
     @scala.inline
-    def deleteAttachmentsEnabled: Self = this.set("attachmentsEnabled", js.undefined)
+    def setColumns(value: CollectionProperties[FieldColumnProperties]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnReorderingEnabled(value: Boolean): Self = this.set("columnReorderingEnabled", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteColumnReorderingEnabled: Self = this.set("columnReorderingEnabled", js.undefined)
+    def setColumnsVarargs(value: FieldColumnProperties*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: FieldColumnProperties*): Self = this.set("columns", js.Array(value :_*))
+    def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: CollectionProperties[FieldColumnProperties]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFieldConfigs(value: js.Array[FieldColumnConfigProperties]): Self = StObject.set(x, "fieldConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditingEnabled(value: Boolean): Self = this.set("editingEnabled", value.asInstanceOf[js.Any])
+    def setFieldConfigsUndefined: Self = StObject.set(x, "fieldConfigs", js.undefined)
     
     @scala.inline
-    def deleteEditingEnabled: Self = this.set("editingEnabled", js.undefined)
+    def setFieldConfigsVarargs(value: FieldColumnConfigProperties*): Self = StObject.set(x, "fieldConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setFieldConfigsVarargs(value: FieldColumnConfigProperties*): Self = this.set("fieldConfigs", js.Array(value :_*))
+    def setHighlightOnRowSelectEnabled(value: Boolean): Self = StObject.set(x, "highlightOnRowSelectEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldConfigs(value: js.Array[FieldColumnConfigProperties]): Self = this.set("fieldConfigs", value.asInstanceOf[js.Any])
+    def setHighlightOnRowSelectEnabledUndefined: Self = StObject.set(x, "highlightOnRowSelectEnabled", js.undefined)
     
     @scala.inline
-    def deleteFieldConfigs: Self = this.set("fieldConfigs", js.undefined)
+    def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightOnRowSelectEnabled(value: Boolean): Self = this.set("highlightOnRowSelectEnabled", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteHighlightOnRowSelectEnabled: Self = this.set("highlightOnRowSelectEnabled", js.undefined)
+    def setMenuConfig(value: ButtonMenuConfig): Self = StObject.set(x, "menuConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setMenuConfigUndefined: Self = StObject.set(x, "menuConfig", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuConfig(value: ButtonMenuConfig): Self = this.set("menuConfig", value.asInstanceOf[js.Any])
+    def setViewModel(value: FeatureTableViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMenuConfig: Self = this.set("menuConfig", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setVisibleElements(value: FeatureTableVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: FeatureTableViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
-    
-    @scala.inline
-    def setVisibleElements(value: FeatureTableVisibleElements): Self = this.set("visibleElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleElements: Self = this.set("visibleElements", js.undefined)
+    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

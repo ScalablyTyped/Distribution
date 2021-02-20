@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`x-ray`
 import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +40,18 @@ object BuildingFilterBlockFilterMode {
   }
   
   @scala.inline
-  implicit class BuildingFilterBlockFilterModeOps[Self <: BuildingFilterBlockFilterMode] (val x: Self) extends AnyVal {
+  implicit class BuildingFilterBlockFilterModeMutableBuilder[Self <: BuildingFilterBlockFilterMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdges(value: SolidEdges3D | SketchEdges3D): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: solid | `wire-frame` | `x-ray`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdges(value: SolidEdges3D | SketchEdges3D): Self = this.set("edges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdges: Self = this.set("edges", js.undefined)
-    
-    @scala.inline
-    def setType(value: solid | `wire-frame` | `x-ray`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

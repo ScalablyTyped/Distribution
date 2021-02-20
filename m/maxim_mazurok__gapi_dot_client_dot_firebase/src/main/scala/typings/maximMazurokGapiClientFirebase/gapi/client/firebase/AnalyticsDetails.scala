@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsDetails extends js.Object {
+trait AnalyticsDetails extends StObject {
   
   /** The Analytics Property object associated with the specified `FirebaseProject`. This object contains the details of the Google Analytics property associated with the Project. */
   var analyticsProperty: js.UndefOr[AnalyticsProperty] = js.native
@@ -25,33 +26,21 @@ object AnalyticsDetails {
   }
   
   @scala.inline
-  implicit class AnalyticsDetailsOps[Self <: AnalyticsDetails] (val x: Self) extends AnyVal {
+  implicit class AnalyticsDetailsMutableBuilder[Self <: AnalyticsDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsProperty(value: AnalyticsProperty): Self = StObject.set(x, "analyticsProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsPropertyUndefined: Self = StObject.set(x, "analyticsProperty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamMappings(value: js.Array[StreamMapping]): Self = StObject.set(x, "streamMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsProperty(value: AnalyticsProperty): Self = this.set("analyticsProperty", value.asInstanceOf[js.Any])
+    def setStreamMappingsUndefined: Self = StObject.set(x, "streamMappings", js.undefined)
     
     @scala.inline
-    def deleteAnalyticsProperty: Self = this.set("analyticsProperty", js.undefined)
-    
-    @scala.inline
-    def setStreamMappingsVarargs(value: StreamMapping*): Self = this.set("streamMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreamMappings(value: js.Array[StreamMapping]): Self = this.set("streamMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamMappings: Self = this.set("streamMappings", js.undefined)
+    def setStreamMappingsVarargs(value: StreamMapping*): Self = StObject.set(x, "streamMappings", js.Array(value :_*))
   }
 }

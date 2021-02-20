@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for GenerateConfigReport method.
   */
 @js.native
-trait SchemaGenerateConfigReportResponse extends js.Object {
+trait SchemaGenerateConfigReportResponse extends StObject {
   
   /**
     * list of ChangeReport, each corresponding to comparison between two
@@ -41,48 +42,36 @@ object SchemaGenerateConfigReportResponse {
   }
   
   @scala.inline
-  implicit class SchemaGenerateConfigReportResponseOps[Self <: SchemaGenerateConfigReportResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGenerateConfigReportResponseMutableBuilder[Self <: SchemaGenerateConfigReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeReports(value: js.Array[SchemaChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeReportsVarargs(value: SchemaChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
     
     @scala.inline
-    def setChangeReportsVarargs(value: SchemaChangeReport*): Self = this.set("changeReports", js.Array(value :_*))
+    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeReports(value: js.Array[SchemaChangeReport]): Self = this.set("changeReports", value.asInstanceOf[js.Any])
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def deleteChangeReports: Self = this.set("changeReports", js.undefined)
+    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

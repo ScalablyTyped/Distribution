@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
 import typings.winrtUwp.Windows.Foundation.Collections.CollectionChange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about an attempt to change properties on a frame source. */
 @js.native
-trait PerceptionFrameSourcePropertiesChangedEventArgs extends js.Object {
+trait PerceptionFrameSourcePropertiesChangedEventArgs extends StObject {
   
   /** Gets the type of change that occurred as a result of the property change request. */
   var collectionChange: CollectionChange = js.native
@@ -24,24 +25,12 @@ object PerceptionFrameSourcePropertiesChangedEventArgs {
   }
   
   @scala.inline
-  implicit class PerceptionFrameSourcePropertiesChangedEventArgsOps[Self <: PerceptionFrameSourcePropertiesChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PerceptionFrameSourcePropertiesChangedEventArgsMutableBuilder[Self <: PerceptionFrameSourcePropertiesChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollectionChange(value: CollectionChange): Self = this.set("collectionChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

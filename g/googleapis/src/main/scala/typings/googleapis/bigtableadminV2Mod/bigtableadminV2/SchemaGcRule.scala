@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Rule for determining which cells to delete during garbage collection.
   */
 @js.native
-trait SchemaGcRule extends js.Object {
+trait SchemaGcRule extends StObject {
   
   /**
     * Delete cells that would be deleted by every nested rule.
@@ -40,42 +41,30 @@ object SchemaGcRule {
   }
   
   @scala.inline
-  implicit class SchemaGcRuleOps[Self <: SchemaGcRule] (val x: Self) extends AnyVal {
+  implicit class SchemaGcRuleMutableBuilder[Self <: SchemaGcRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntersection(value: SchemaIntersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntersectionUndefined: Self = StObject.set(x, "intersection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersection(value: SchemaIntersection): Self = this.set("intersection", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def deleteIntersection: Self = this.set("intersection", js.undefined)
+    def setMaxNumVersions(value: Double): Self = StObject.set(x, "maxNumVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAge(value: String): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    def setMaxNumVersionsUndefined: Self = StObject.set(x, "maxNumVersions", js.undefined)
     
     @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setUnion(value: SchemaUnion): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNumVersions(value: Double): Self = this.set("maxNumVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxNumVersions: Self = this.set("maxNumVersions", js.undefined)
-    
-    @scala.inline
-    def setUnion(value: SchemaUnion): Self = this.set("union", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnion: Self = this.set("union", js.undefined)
+    def setUnionUndefined: Self = StObject.set(x, "union", js.undefined)
   }
 }

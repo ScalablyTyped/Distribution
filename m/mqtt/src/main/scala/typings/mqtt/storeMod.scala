@@ -1,21 +1,21 @@
 package typings.mqtt
 
 import typings.mqtt.storeOptionsMod.IStoreOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mqtt/types/lib/store", JSImport.Namespace)
-@js.native
-object storeMod extends js.Object {
+object storeMod {
   
   /**
     * In-memory implementation of the message store
     * This can actually be saved into files.
     *
     */
+  @JSImport("mqtt/types/lib/store", "Store")
   @js.native
-  class Store protected () extends js.Object {
+  class Store protected () extends StObject {
     /**
       * Store constructor
       *

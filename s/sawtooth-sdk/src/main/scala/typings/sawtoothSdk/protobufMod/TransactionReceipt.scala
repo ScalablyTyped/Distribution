@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,16 +42,18 @@ class TransactionReceipt () extends ITransactionReceipt {
   var transactionId_TransactionReceipt: String = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "TransactionReceipt")
-@js.native
-object TransactionReceipt extends js.Object {
+object TransactionReceipt {
   
   /**
     * Creates a new TransactionReceipt instance using the specified properties.
     * @param [properties] Properties to set
     * @returns TransactionReceipt instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.create")
+  @js.native
   def create(): TransactionReceipt = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.create")
+  @js.native
   def create(properties: ITransactionReceipt): TransactionReceipt = js.native
   
   /**
@@ -61,9 +64,17 @@ object TransactionReceipt extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.decode")
+  @js.native
   def decode(reader: Reader): TransactionReceipt = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.decode")
+  @js.native
   def decode(reader: Reader, length: Double): TransactionReceipt = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.decode")
+  @js.native
   def decode(reader: Uint8Array): TransactionReceipt = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): TransactionReceipt = js.native
   
   /**
@@ -73,7 +84,11 @@ object TransactionReceipt extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): TransactionReceipt = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): TransactionReceipt = js.native
   
   /**
@@ -82,7 +97,11 @@ object TransactionReceipt extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.encode")
+  @js.native
   def encode(message: ITransactionReceipt): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.encode")
+  @js.native
   def encode(message: ITransactionReceipt, writer: Writer): Writer = js.native
   
   /**
@@ -91,7 +110,11 @@ object TransactionReceipt extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITransactionReceipt): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITransactionReceipt, writer: Writer): Writer = js.native
   
   /**
@@ -99,6 +122,8 @@ object TransactionReceipt extends js.Object {
     * @param object Plain object
     * @returns TransactionReceipt
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): TransactionReceipt = js.native
   
   /**
@@ -107,7 +132,11 @@ object TransactionReceipt extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.toObject")
+  @js.native
   def toObject(message: TransactionReceipt): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.toObject")
+  @js.native
   def toObject(message: TransactionReceipt, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -115,5 +144,7 @@ object TransactionReceipt extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "TransactionReceipt.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

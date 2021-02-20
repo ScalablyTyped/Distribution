@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnumValuesMe extends js.Object {
+trait EnumValuesMe extends StObject {
   
   var enumValues: Me = js.native
 }
@@ -18,21 +19,9 @@ object EnumValuesMe {
   }
   
   @scala.inline
-  implicit class EnumValuesMeOps[Self <: EnumValuesMe] (val x: Self) extends AnyVal {
+  implicit class EnumValuesMeMutableBuilder[Self <: EnumValuesMe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnumValues(value: Me): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+    def setEnumValues(value: Me): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.ZA
   - typings.validator.validatorStrings.ZM
 */
-trait PostalCodeLocale extends js.Object
+trait PostalCodeLocale extends StObject
 object PostalCodeLocale {
   
   @scala.inline

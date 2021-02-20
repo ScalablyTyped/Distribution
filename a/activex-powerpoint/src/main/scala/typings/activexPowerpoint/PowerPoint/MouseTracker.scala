@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MouseTracker extends js.Object {
+trait MouseTracker extends StObject {
   
   def EndTrack(X: Double, Y: Double): Unit = js.native
   
@@ -28,27 +29,15 @@ object MouseTracker {
   }
   
   @scala.inline
-  implicit class MouseTrackerOps[Self <: MouseTracker] (val x: Self) extends AnyVal {
+  implicit class MouseTrackerMutableBuilder[Self <: MouseTracker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "EndTrack", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "OnTrack", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndTrack(value: (Double, Double) => Unit): Self = this.set("EndTrack", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnTrack(value: (Double, Double) => Unit): Self = this.set("OnTrack", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPowerPointDotMouseTracker_typekey(value: MouseTracker): Self = this.set("PowerPoint.MouseTracker_typekey", value.asInstanceOf[js.Any])
+    def setPowerPointDotMouseTracker_typekey(value: MouseTracker): Self = StObject.set(x, "PowerPoint.MouseTracker_typekey", value.asInstanceOf[js.Any])
   }
 }

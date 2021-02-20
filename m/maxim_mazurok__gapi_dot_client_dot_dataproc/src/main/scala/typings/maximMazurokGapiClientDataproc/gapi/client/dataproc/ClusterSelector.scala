@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterSelector extends js.Object {
+trait ClusterSelector extends StObject {
   
   /** Required. The cluster labels. Cluster must have all labels to match. */
   var clusterLabels: js.UndefOr[
@@ -30,34 +31,22 @@ object ClusterSelector {
   }
   
   @scala.inline
-  implicit class ClusterSelectorOps[Self <: ClusterSelector] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ClusterSelectorMutableBuilder[Self <: ClusterSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setClusterLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterSelector with TopLevel[js.Any]
-    ): Self = this.set("clusterLabels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterLabels: Self = this.set("clusterLabels", js.undefined)
+    def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
     
     @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

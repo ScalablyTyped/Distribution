@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,27 +95,15 @@ object XAccessibleTextMarkup {
   }
   
   @scala.inline
-  implicit class XAccessibleTextMarkupOps[Self <: XAccessibleTextMarkup] (val x: Self) extends AnyVal {
+  implicit class XAccessibleTextMarkupMutableBuilder[Self <: XAccessibleTextMarkup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTextMarkup(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextMarkup", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTextMarkupAtIndex(value: (Double, Double) => SafeArray[TextSegment]): Self = StObject.set(x, "getTextMarkupAtIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetTextMarkup(value: (Double, Double) => TextSegment): Self = this.set("getTextMarkup", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetTextMarkupAtIndex(value: (Double, Double) => SafeArray[TextSegment]): Self = this.set("getTextMarkupAtIndex", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetTextMarkupCount(value: Double => Double): Self = this.set("getTextMarkupCount", js.Any.fromFunction1(value))
+    def setGetTextMarkupCount(value: Double => Double): Self = StObject.set(x, "getTextMarkupCount", js.Any.fromFunction1(value))
   }
 }

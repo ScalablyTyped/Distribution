@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Video segment level annotation results for label detection.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment extends StObject {
   
   /**
     * Confidence that the label is accurate. Range: [0, 1].
@@ -29,30 +30,18 @@ object SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegmentOps[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegmentMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegment(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
-    
-    @scala.inline
-    def setSegment(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoSegment): Self = this.set("segment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegment: Self = this.set("segment", js.undefined)
+    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

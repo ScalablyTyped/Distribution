@@ -1,11 +1,12 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationData extends js.Object {
+trait AuthenticationData extends StObject {
   
   var artifacts: js.UndefOr[js.Object] = js.native
   
@@ -20,27 +21,15 @@ object AuthenticationData {
   }
   
   @scala.inline
-  implicit class AuthenticationDataOps[Self <: AuthenticationData] (val x: Self) extends AnyVal {
+  implicit class AuthenticationDataMutableBuilder[Self <: AuthenticationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredentials(value: AuthCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArtifacts(value: js.Object): Self = this.set("artifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
   }
 }

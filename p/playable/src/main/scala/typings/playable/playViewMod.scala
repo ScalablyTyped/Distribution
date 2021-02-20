@@ -3,17 +3,22 @@ package typings.playable
 import typings.playable.playTypesMod.IPlayViewConfig
 import typings.playable.playTypesMod.IPlayViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/controls/play/play.view", JSImport.Namespace)
-@js.native
-object playViewMod extends js.Object {
+object playViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/controls/play/play.view", JSImport.Default)
+  @js.native
+  class default protected () extends PlayView {
+    def this(config: IPlayViewConfig) = this()
+  }
   
   @js.native
   trait PlayView
-    extends typings.playable.stylableMod.default[IPlayViewStyles] {
+    extends typings.playable.viewMod.default[IPlayViewStyles] {
     
     @JSName("_$playbackControl")
     var _$playbackControl: js.Any = js.native
@@ -40,10 +45,5 @@ object playViewMod extends js.Object {
     def setPlayingState(isPlaying: Boolean): Unit = js.native
     
     def show(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends PlayView {
-    def this(config: IPlayViewConfig) = this()
   }
 }

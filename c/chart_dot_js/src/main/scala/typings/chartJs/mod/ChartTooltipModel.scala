@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartTooltipModel extends js.Object {
+trait ChartTooltipModel extends StObject {
   
   var _bodyAlign: String = js.native
   
@@ -158,183 +159,171 @@ object ChartTooltipModel {
   }
   
   @scala.inline
-  implicit class ChartTooltipModelOps[Self <: ChartTooltipModel] (val x: Self) extends AnyVal {
+  implicit class ChartTooltipModelMutableBuilder[Self <: ChartTooltipModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterBody(value: js.Array[String]): Self = StObject.set(x, "afterBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterBodyVarargs(value: String*): Self = StObject.set(x, "afterBody", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_bodyAlign(value: String): Self = this.set("_bodyAlign", value.asInstanceOf[js.Any])
+    def setBeforeBody(value: js.Array[String]): Self = StObject.set(x, "beforeBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_bodyFontFamily(value: String): Self = this.set("_bodyFontFamily", value.asInstanceOf[js.Any])
+    def setBeforeBodyVarargs(value: String*): Self = StObject.set(x, "beforeBody", js.Array(value :_*))
     
     @scala.inline
-    def set_bodyFontStyle(value: String): Self = this.set("_bodyFontStyle", value.asInstanceOf[js.Any])
+    def setBody(value: js.Array[ChartTooltipModelBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_footerAlign(value: String): Self = this.set("_footerAlign", value.asInstanceOf[js.Any])
+    def setBodyFontColor(value: String): Self = StObject.set(x, "bodyFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_footerFontFamily(value: String): Self = this.set("_footerFontFamily", value.asInstanceOf[js.Any])
+    def setBodyFontSize(value: Double): Self = StObject.set(x, "bodyFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_footerFontStyle(value: String): Self = this.set("_footerFontStyle", value.asInstanceOf[js.Any])
+    def setBodySpacing(value: Double): Self = StObject.set(x, "bodySpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_titleAlign(value: String): Self = this.set("_titleAlign", value.asInstanceOf[js.Any])
+    def setBodyVarargs(value: ChartTooltipModelBody*): Self = StObject.set(x, "body", js.Array(value :_*))
     
     @scala.inline
-    def set_titleFontFamily(value: String): Self = this.set("_titleFontFamily", value.asInstanceOf[js.Any])
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_titleFontStyle(value: String): Self = this.set("_titleFontStyle", value.asInstanceOf[js.Any])
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterBodyVarargs(value: String*): Self = this.set("afterBody", js.Array(value :_*))
+    def setCaretPadding(value: Double): Self = StObject.set(x, "caretPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterBody(value: js.Array[String]): Self = this.set("afterBody", value.asInstanceOf[js.Any])
+    def setCaretSize(value: Double): Self = StObject.set(x, "caretSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setCaretX(value: Double): Self = StObject.set(x, "caretX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeBodyVarargs(value: String*): Self = this.set("beforeBody", js.Array(value :_*))
+    def setCaretY(value: Double): Self = StObject.set(x, "caretY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeBody(value: js.Array[String]): Self = this.set("beforeBody", value.asInstanceOf[js.Any])
+    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyVarargs(value: ChartTooltipModelBody*): Self = this.set("body", js.Array(value :_*))
+    def setDataPoints(value: js.Array[ChartTooltipItem]): Self = StObject.set(x, "dataPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: js.Array[ChartTooltipModelBody]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDataPointsVarargs(value: ChartTooltipItem*): Self = StObject.set(x, "dataPoints", js.Array(value :_*))
     
     @scala.inline
-    def setBodyFontColor(value: String): Self = this.set("bodyFontColor", value.asInstanceOf[js.Any])
+    def setDisplayColors(value: Boolean): Self = StObject.set(x, "displayColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyFontSize(value: Double): Self = this.set("bodyFontSize", value.asInstanceOf[js.Any])
+    def setFooter(value: js.Array[String]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodySpacing(value: Double): Self = this.set("bodySpacing", value.asInstanceOf[js.Any])
+    def setFooterFontColor(value: String): Self = StObject.set(x, "footerFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setFooterFontSize(value: Double): Self = StObject.set(x, "footerFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setFooterMarginTop(value: Double): Self = StObject.set(x, "footerMarginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretPadding(value: Double): Self = this.set("caretPadding", value.asInstanceOf[js.Any])
+    def setFooterSpacing(value: Double): Self = StObject.set(x, "footerSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretSize(value: Double): Self = this.set("caretSize", value.asInstanceOf[js.Any])
+    def setFooterVarargs(value: String*): Self = StObject.set(x, "footer", js.Array(value :_*))
     
     @scala.inline
-    def setCaretX(value: Double): Self = this.set("caretX", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretY(value: Double): Self = this.set("caretY", value.asInstanceOf[js.Any])
+    def setLabelColors(value: js.Array[String]): Self = StObject.set(x, "labelColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    def setLabelColorsVarargs(value: String*): Self = StObject.set(x, "labelColors", js.Array(value :_*))
     
     @scala.inline
-    def setDataPointsVarargs(value: ChartTooltipItem*): Self = this.set("dataPoints", js.Array(value :_*))
+    def setLabelTextColors(value: js.Array[String]): Self = StObject.set(x, "labelTextColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPoints(value: js.Array[ChartTooltipItem]): Self = this.set("dataPoints", value.asInstanceOf[js.Any])
+    def setLabelTextColorsVarargs(value: String*): Self = StObject.set(x, "labelTextColors", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayColors(value: Boolean): Self = this.set("displayColors", value.asInstanceOf[js.Any])
+    def setLegendColorBackground(value: String): Self = StObject.set(x, "legendColorBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterVarargs(value: String*): Self = this.set("footer", js.Array(value :_*))
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: js.Array[String]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setTitle(value: js.Array[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterFontColor(value: String): Self = this.set("footerFontColor", value.asInstanceOf[js.Any])
+    def setTitleFontColor(value: String): Self = StObject.set(x, "titleFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterFontSize(value: Double): Self = this.set("footerFontSize", value.asInstanceOf[js.Any])
+    def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterMarginTop(value: Double): Self = this.set("footerMarginTop", value.asInstanceOf[js.Any])
+    def setTitleMarginBottom(value: Double): Self = StObject.set(x, "titleMarginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterSpacing(value: Double): Self = this.set("footerSpacing", value.asInstanceOf[js.Any])
+    def setTitleSpacing(value: Double): Self = StObject.set(x, "titleSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
     
     @scala.inline
-    def setLabelColorsVarargs(value: String*): Self = this.set("labelColors", js.Array(value :_*))
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColors(value: js.Array[String]): Self = this.set("labelColors", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelTextColorsVarargs(value: String*): Self = this.set("labelTextColors", js.Array(value :_*))
+    def setXAlign(value: String): Self = StObject.set(x, "xAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelTextColors(value: js.Array[String]): Self = this.set("labelTextColors", value.asInstanceOf[js.Any])
+    def setXPadding(value: Double): Self = StObject.set(x, "xPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendColorBackground(value: String): Self = this.set("legendColorBackground", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setYAlign(value: String): Self = StObject.set(x, "yAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleVarargs(value: String*): Self = this.set("title", js.Array(value :_*))
+    def setYPadding(value: Double): Self = StObject.set(x, "yPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: js.Array[String]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def set_bodyAlign(value: String): Self = StObject.set(x, "_bodyAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleFontColor(value: String): Self = this.set("titleFontColor", value.asInstanceOf[js.Any])
+    def set_bodyFontFamily(value: String): Self = StObject.set(x, "_bodyFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleFontSize(value: Double): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
+    def set_bodyFontStyle(value: String): Self = StObject.set(x, "_bodyFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleMarginBottom(value: Double): Self = this.set("titleMarginBottom", value.asInstanceOf[js.Any])
+    def set_footerAlign(value: String): Self = StObject.set(x, "_footerAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleSpacing(value: Double): Self = this.set("titleSpacing", value.asInstanceOf[js.Any])
+    def set_footerFontFamily(value: String): Self = StObject.set(x, "_footerFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def set_footerFontStyle(value: String): Self = StObject.set(x, "_footerFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def set_titleAlign(value: String): Self = StObject.set(x, "_titleAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAlign(value: String): Self = this.set("xAlign", value.asInstanceOf[js.Any])
+    def set_titleFontFamily(value: String): Self = StObject.set(x, "_titleFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXPadding(value: Double): Self = this.set("xPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYAlign(value: String): Self = this.set("yAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYPadding(value: Double): Self = this.set("yPadding", value.asInstanceOf[js.Any])
+    def set_titleFontStyle(value: String): Self = StObject.set(x, "_titleFontStyle", value.asInstanceOf[js.Any])
   }
 }

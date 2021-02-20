@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ui
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,24 +42,12 @@ object XUIConfigurationStorage {
   }
   
   @scala.inline
-  implicit class XUIConfigurationStorageOps[Self <: XUIConfigurationStorage] (val x: Self) extends AnyVal {
+  implicit class XUIConfigurationStorageMutableBuilder[Self <: XUIConfigurationStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasStorage(value: () => Boolean): Self = StObject.set(x, "hasStorage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasStorage(value: () => Boolean): Self = this.set("hasStorage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetStorage(value: XStorage => Unit): Self = this.set("setStorage", js.Any.fromFunction1(value))
+    def setSetStorage(value: XStorage => Unit): Self = StObject.set(x, "setStorage", js.Any.fromFunction1(value))
   }
 }

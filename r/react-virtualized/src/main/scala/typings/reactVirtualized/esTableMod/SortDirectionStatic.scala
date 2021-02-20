@@ -2,12 +2,13 @@ package typings.reactVirtualized.esTableMod
 
 import typings.reactVirtualized.reactVirtualizedStrings.ASC
 import typings.reactVirtualized.reactVirtualizedStrings.DESC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortDirectionStatic extends js.Object {
+trait SortDirectionStatic extends StObject {
   
   /**
     * Sort items in ascending order.
@@ -30,24 +31,12 @@ object SortDirectionStatic {
   }
   
   @scala.inline
-  implicit class SortDirectionStaticOps[Self <: SortDirectionStatic] (val x: Self) extends AnyVal {
+  implicit class SortDirectionStaticMutableBuilder[Self <: SortDirectionStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setASC(value: ASC): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setASC(value: ASC): Self = this.set("ASC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDESC(value: DESC): Self = this.set("DESC", value.asInstanceOf[js.Any])
+    def setDESC(value: DESC): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
   }
 }

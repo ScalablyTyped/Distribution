@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/str-array", JSImport.Namespace)
-@js.native
-object strArrayMod extends js.Object {
+object strArrayMod {
   
+  @JSImport("nodegit/str-array", "Strarray")
   @js.native
-  class Strarray () extends js.Object {
+  class Strarray () extends StObject {
     
     def copy(src: Strarray): Double = js.native
     

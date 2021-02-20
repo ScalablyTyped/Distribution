@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileDescriptor extends js.Object {
+trait FileDescriptor extends StObject {
   
   var fd: js.UndefOr[String] = js.native
   
@@ -24,33 +25,21 @@ object FileDescriptor {
   }
   
   @scala.inline
-  implicit class FileDescriptorOps[Self <: FileDescriptor] (val x: Self) extends AnyVal {
+  implicit class FileDescriptorMutableBuilder[Self <: FileDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: FileDescriptorInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: FileDescriptorInfo): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStat(value: FileDescriptorStat | Boolean): Self = this.set("stat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFd(value: String): Self = this.set("fd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFd: Self = this.set("fd", js.undefined)
+    def setStat(value: FileDescriptorStat | Boolean): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
   }
 }

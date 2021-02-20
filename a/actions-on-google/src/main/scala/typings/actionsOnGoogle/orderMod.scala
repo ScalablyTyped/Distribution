@@ -3,14 +3,14 @@ package typings.actionsOnGoogle
 import typings.actionsOnGoogle.richMod._RichResponseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsOrdersV3OrderUpdate
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2OrdersOrderUpdate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/response/order", JSImport.Namespace)
-@js.native
-object orderMod extends js.Object {
+object orderMod {
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/order", "OrderUpdate")
   @js.native
   class OrderUpdate protected ()
     extends _RichResponseItem

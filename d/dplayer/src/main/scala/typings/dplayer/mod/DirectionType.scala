@@ -1,5 +1,6 @@
 package typings.dplayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.dplayer.dplayerStrings.right
   - typings.dplayer.dplayerStrings.bottom
 */
-trait DirectionType extends js.Object
+trait DirectionType extends StObject
 object DirectionType {
   
   @scala.inline

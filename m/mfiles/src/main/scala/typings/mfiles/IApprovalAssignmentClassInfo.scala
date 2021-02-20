@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IApprovalAssignmentClassInfo extends js.Object {
+trait IApprovalAssignmentClassInfo extends StObject {
   
   var AnyAssigneeApproves: Boolean = js.native
   
@@ -29,30 +30,18 @@ object IApprovalAssignmentClassInfo {
   }
   
   @scala.inline
-  implicit class IApprovalAssignmentClassInfoOps[Self <: IApprovalAssignmentClassInfo] (val x: Self) extends AnyVal {
+  implicit class IApprovalAssignmentClassInfoMutableBuilder[Self <: IApprovalAssignmentClassInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnyAssigneeApproves(value: Boolean): Self = StObject.set(x, "AnyAssigneeApproves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IApprovalAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignatureForApproval(value: ISignatureSettings): Self = StObject.set(x, "SignatureForApproval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnyAssigneeApproves(value: Boolean): Self = this.set("AnyAssigneeApproves", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClone(value: () => IApprovalAssignmentClassInfo): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSignatureForApproval(value: ISignatureSettings): Self = this.set("SignatureForApproval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureForRejection(value: ISignatureSettings): Self = this.set("SignatureForRejection", value.asInstanceOf[js.Any])
+    def setSignatureForRejection(value: ISignatureSettings): Self = StObject.set(x, "SignatureForRejection", value.asInstanceOf[js.Any])
   }
 }

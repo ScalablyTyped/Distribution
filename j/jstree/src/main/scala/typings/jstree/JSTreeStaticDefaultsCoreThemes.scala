@@ -1,11 +1,12 @@
 package typings.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSTreeStaticDefaultsCoreThemes extends js.Object {
+trait JSTreeStaticDefaultsCoreThemes extends StObject {
   
   /**
     * the location of all jstree themes - only used if `url` is set to `true`
@@ -72,72 +73,60 @@ object JSTreeStaticDefaultsCoreThemes {
   }
   
   @scala.inline
-  implicit class JSTreeStaticDefaultsCoreThemesOps[Self <: JSTreeStaticDefaultsCoreThemes] (val x: Self) extends AnyVal {
+  implicit class JSTreeStaticDefaultsCoreThemesMutableBuilder[Self <: JSTreeStaticDefaultsCoreThemes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
+    def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDots(value: Boolean): Self = this.set("dots", value.asInstanceOf[js.Any])
+    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
     @scala.inline
-    def deleteDots: Self = this.set("dots", js.undefined)
+    def setIcons(value: Boolean): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsis(value: Boolean): Self = this.set("ellipsis", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteEllipsis: Self = this.set("ellipsis", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Boolean): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStripes(value: Boolean): Self = StObject.set(x, "stripes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    def setStripesUndefined: Self = StObject.set(x, "stripes", js.undefined)
     
     @scala.inline
-    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStripes(value: Boolean): Self = this.set("stripes", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteStripes: Self = this.set("stripes", js.undefined)
+    def setVariant(value: js.Any): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVariant(value: js.Any): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

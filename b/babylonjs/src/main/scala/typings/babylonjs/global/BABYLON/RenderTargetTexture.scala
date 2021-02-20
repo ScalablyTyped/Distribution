@@ -3,6 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Ratio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,23 +46,27 @@ class RenderTargetTexture protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.RenderTargetTexture")
-@js.native
-object RenderTargetTexture extends js.Object {
+object RenderTargetTexture {
   
   /**
     * The texture will only be rendered once which can be useful to improve performance if everything in your render is static for instance.
     */
+  @JSGlobal("BABYLON.RenderTargetTexture.REFRESHRATE_RENDER_ONCE")
+  @js.native
   val REFRESHRATE_RENDER_ONCE: Double = js.native
   
   /**
     * The texture will only be rendered rendered every frame and is recomended for dynamic contents.
     */
+  @JSGlobal("BABYLON.RenderTargetTexture.REFRESHRATE_RENDER_ONEVERYFRAME")
+  @js.native
   val REFRESHRATE_RENDER_ONEVERYFRAME: Double = js.native
   
   /**
     * The texture will be rendered every 2 frames which could be enough if your dynamic objects are not
     * the central point of your effect and can save a lot of performances.
     */
+  @JSGlobal("BABYLON.RenderTargetTexture.REFRESHRATE_RENDER_ONEVERYTWOFRAMES")
+  @js.native
   val REFRESHRATE_RENDER_ONEVERYTWOFRAMES: Double = js.native
 }

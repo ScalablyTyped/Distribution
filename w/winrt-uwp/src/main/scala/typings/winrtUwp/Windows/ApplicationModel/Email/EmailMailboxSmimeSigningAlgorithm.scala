@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxSmimeSigningAlgorithm extends js.Object
+sealed trait EmailMailboxSmimeSigningAlgorithm extends StObject
 /** Defines the algorithm used to sign an email. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxSmimeSigningAlgorithm")
 @js.native
-object EmailMailboxSmimeSigningAlgorithm extends js.Object {
+object EmailMailboxSmimeSigningAlgorithm extends StObject {
   
   /** No specific algorithm is required. */
   @js.native

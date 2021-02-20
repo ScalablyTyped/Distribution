@@ -1,14 +1,16 @@
 package typings.videoJs.videoCoreNovttMod.default
 
+import typings.videoJs.mod.videojs.ErrorDisplay
 import typings.videoJs.mod.videojs.ModalDialogOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core.novtt", "ErrorDisplay")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core.novtt", "default.ErrorDisplay")
 @js.native
-class ErrorDisplayCls protected ()
-  extends typings.videoJs.mod.videojs.ErrorDisplay {
+class ErrorDisplayCls protected () extends ErrorDisplay {
   /**
     * Creates an instance of this class.
     *

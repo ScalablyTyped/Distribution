@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the state of the DIAL app. */
 @js.native
-trait DialAppStateDetails extends js.Object {
+trait DialAppStateDetails extends StObject {
   
   /** Gets the entire XML response that is provided by the app when state of the app was requested. */
   var fullXml: String = js.native
@@ -23,24 +24,12 @@ object DialAppStateDetails {
   }
   
   @scala.inline
-  implicit class DialAppStateDetailsOps[Self <: DialAppStateDetails] (val x: Self) extends AnyVal {
+  implicit class DialAppStateDetailsMutableBuilder[Self <: DialAppStateDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullXml(value: String): Self = StObject.set(x, "fullXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFullXml(value: String): Self = this.set("fullXml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: DialAppState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: DialAppState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -6,14 +6,14 @@ import typings.vsoNodeApi.fileContainerInterfacesMod.FileContainerItem
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/FileContainerApiBase", JSImport.Namespace)
-@js.native
-object fileContainerApiBaseMod extends js.Object {
+object fileContainerApiBaseMod {
   
+  @JSImport("vso-node-api/FileContainerApiBase", "FileContainerApiBase")
   @js.native
   class FileContainerApiBase protected () extends IFileContainerApiBase {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()

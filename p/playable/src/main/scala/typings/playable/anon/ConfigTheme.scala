@@ -2,12 +2,13 @@ package typings.playable.anon
 
 import typings.playable.configMod.IPlayerConfig
 import typings.playable.themeTypesMod.IThemeService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigTheme extends js.Object {
+trait ConfigTheme extends StObject {
   
   var config: IPlayerConfig = js.native
   
@@ -22,24 +23,12 @@ object ConfigTheme {
   }
   
   @scala.inline
-  implicit class ConfigThemeOps[Self <: ConfigTheme] (val x: Self) extends AnyVal {
+  implicit class ConfigThemeMutableBuilder[Self <: ConfigTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: IThemeService): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

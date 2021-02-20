@@ -1,6 +1,7 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
 import typings.googleapis.anon.FamilyName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a Player resource.
   */
 @js.native
-trait SchemaPlayer extends js.Object {
+trait SchemaPlayer extends StObject {
   
   /**
     * The base URL for the image that represents the player.
@@ -88,90 +89,78 @@ object SchemaPlayer {
   }
   
   @scala.inline
-  implicit class SchemaPlayerOps[Self <: SchemaPlayer] (val x: Self) extends AnyVal {
+  implicit class SchemaPlayerMutableBuilder[Self <: SchemaPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatarImageUrl(value: String): Self = StObject.set(x, "avatarImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvatarImageUrlUndefined: Self = StObject.set(x, "avatarImageUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBannerUrlLandscape(value: String): Self = StObject.set(x, "bannerUrlLandscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatarImageUrl(value: String): Self = this.set("avatarImageUrl", value.asInstanceOf[js.Any])
+    def setBannerUrlLandscapeUndefined: Self = StObject.set(x, "bannerUrlLandscape", js.undefined)
     
     @scala.inline
-    def deleteAvatarImageUrl: Self = this.set("avatarImageUrl", js.undefined)
+    def setBannerUrlPortrait(value: String): Self = StObject.set(x, "bannerUrlPortrait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBannerUrlLandscape(value: String): Self = this.set("bannerUrlLandscape", value.asInstanceOf[js.Any])
+    def setBannerUrlPortraitUndefined: Self = StObject.set(x, "bannerUrlPortrait", js.undefined)
     
     @scala.inline
-    def deleteBannerUrlLandscape: Self = this.set("bannerUrlLandscape", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBannerUrlPortrait(value: String): Self = this.set("bannerUrlPortrait", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteBannerUrlPortrait: Self = this.set("bannerUrlPortrait", js.undefined)
+    def setExperienceInfo(value: SchemaPlayerExperienceInfo): Self = StObject.set(x, "experienceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExperienceInfoUndefined: Self = StObject.set(x, "experienceInfo", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperienceInfo(value: SchemaPlayerExperienceInfo): Self = this.set("experienceInfo", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteExperienceInfo: Self = this.set("experienceInfo", js.undefined)
+    def setLastPlayedWith(value: SchemaPlayed): Self = StObject.set(x, "lastPlayedWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastPlayedWithUndefined: Self = StObject.set(x, "lastPlayedWith", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPlayedWith(value: SchemaPlayed): Self = this.set("lastPlayedWith", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastPlayedWith: Self = this.set("lastPlayedWith", js.undefined)
+    def setOriginalPlayerId(value: String): Self = StObject.set(x, "originalPlayerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: FamilyName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOriginalPlayerIdUndefined: Self = StObject.set(x, "originalPlayerId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPlayerId(value: String): Self = this.set("originalPlayerId", value.asInstanceOf[js.Any])
+    def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
     
     @scala.inline
-    def deleteOriginalPlayerId: Self = this.set("originalPlayerId", js.undefined)
+    def setProfileSettings(value: SchemaProfileSettings): Self = StObject.set(x, "profileSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerId(value: String): Self = this.set("playerId", value.asInstanceOf[js.Any])
+    def setProfileSettingsUndefined: Self = StObject.set(x, "profileSettings", js.undefined)
     
     @scala.inline
-    def deletePlayerId: Self = this.set("playerId", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileSettings(value: SchemaProfileSettings): Self = this.set("profileSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileSettings: Self = this.set("profileSettings", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

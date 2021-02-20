@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeOrganizationResponse extends js.Object {
+trait DescribeOrganizationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the organization.
@@ -61,72 +62,60 @@ object DescribeOrganizationResponse {
   }
   
   @scala.inline
-  implicit class DescribeOrganizationResponseOps[Self <: DescribeOrganizationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeOrganizationResponseMutableBuilder[Self <: DescribeOrganizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: AmazonResourceName): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: AmazonResourceName): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setCompletedDate(value: Timestamp): Self = StObject.set(x, "CompletedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: OrganizationName): Self = this.set("Alias", value.asInstanceOf[js.Any])
+    def setCompletedDateUndefined: Self = StObject.set(x, "CompletedDate", js.undefined)
     
     @scala.inline
-    def deleteAlias: Self = this.set("Alias", js.undefined)
+    def setDefaultMailDomain(value: String): Self = StObject.set(x, "DefaultMailDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDate(value: Timestamp): Self = this.set("CompletedDate", value.asInstanceOf[js.Any])
+    def setDefaultMailDomainUndefined: Self = StObject.set(x, "DefaultMailDomain", js.undefined)
     
     @scala.inline
-    def deleteCompletedDate: Self = this.set("CompletedDate", js.undefined)
+    def setDirectoryId(value: String): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMailDomain(value: String): Self = this.set("DefaultMailDomain", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteDefaultMailDomain: Self = this.set("DefaultMailDomain", js.undefined)
+    def setDirectoryType(value: String): Self = StObject.set(x, "DirectoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: String): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setDirectoryTypeUndefined: Self = StObject.set(x, "DirectoryType", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryType(value: String): Self = this.set("DirectoryType", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteDirectoryType: Self = this.set("DirectoryType", js.undefined)
+    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatelessRulesAndCustomActions extends js.Object {
+trait StatelessRulesAndCustomActions extends StObject {
   
   /**
     * Defines an array of individual custom action definitions that are available for use by the stateless rules in this StatelessRulesAndCustomActions specification. You name each custom action that you define, and then you can use it by name in your StatelessRule RuleDefinition Actions specification.
@@ -26,33 +27,21 @@ object StatelessRulesAndCustomActions {
   }
   
   @scala.inline
-  implicit class StatelessRulesAndCustomActionsOps[Self <: StatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
+  implicit class StatelessRulesAndCustomActionsMutableBuilder[Self <: StatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomActions(value: CustomActions): Self = StObject.set(x, "CustomActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomActionsUndefined: Self = StObject.set(x, "CustomActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "CustomActions", js.Array(value :_*))
     
     @scala.inline
-    def setStatelessRulesVarargs(value: StatelessRule*): Self = this.set("StatelessRules", js.Array(value :_*))
+    def setStatelessRules(value: StatelessRules): Self = StObject.set(x, "StatelessRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatelessRules(value: StatelessRules): Self = this.set("StatelessRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomActionsVarargs(value: CustomAction*): Self = this.set("CustomActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setCustomActions(value: CustomActions): Self = this.set("CustomActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomActions: Self = this.set("CustomActions", js.undefined)
+    def setStatelessRulesVarargs(value: StatelessRule*): Self = StObject.set(x, "StatelessRules", js.Array(value :_*))
   }
 }

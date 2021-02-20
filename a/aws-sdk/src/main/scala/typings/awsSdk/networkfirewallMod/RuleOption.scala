@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleOption extends js.Object {
+trait RuleOption extends StObject {
   
   /**
     * 
@@ -26,30 +27,18 @@ object RuleOption {
   }
   
   @scala.inline
-  implicit class RuleOptionOps[Self <: RuleOption] (val x: Self) extends AnyVal {
+  implicit class RuleOptionMutableBuilder[Self <: RuleOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyword(value: Keyword): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSettings(value: Settings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
     @scala.inline
-    def setKeyword(value: Keyword): Self = this.set("Keyword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettingsVarargs(value: Setting*): Self = this.set("Settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: Settings): Self = this.set("Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("Settings", js.undefined)
+    def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "Settings", js.Array(value :_*))
   }
 }

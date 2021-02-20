@@ -9,6 +9,7 @@ import typings.openfin.openfinStrings.nothing
 import typings.openfin.openfinStrings.source
 import typings.openfin.openfinStrings.target
 import typings.openfin.openfinStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,51 +90,39 @@ object WindowGroupChangedEvent {
   }
   
   @scala.inline
-  implicit class WindowGroupChangedEventOps[Self <: WindowGroupChangedEvent] (val x: Self) extends AnyVal {
+  implicit class WindowGroupChangedEventMutableBuilder[Self <: WindowGroupChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMemberOf(value: source | target | nothing): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReason(value: leave | join | merge | disband): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceGroup(value: js.Array[WindowOfGroupInfo]): Self = StObject.set(x, "sourceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberOf(value: source | target | nothing): Self = this.set("memberOf", value.asInstanceOf[js.Any])
+    def setSourceGroupVarargs(value: WindowOfGroupInfo*): Self = StObject.set(x, "sourceGroup", js.Array(value :_*))
     
     @scala.inline
-    def setReason(value: leave | join | merge | disband): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setSourceWindowAppUuid(value: String): Self = StObject.set(x, "sourceWindowAppUuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceGroupVarargs(value: WindowOfGroupInfo*): Self = this.set("sourceGroup", js.Array(value :_*))
+    def setSourceWindowName(value: String): Self = StObject.set(x, "sourceWindowName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceGroup(value: js.Array[WindowOfGroupInfo]): Self = this.set("sourceGroup", value.asInstanceOf[js.Any])
+    def setTargetGroup(value: js.Array[WindowOfGroupInfo]): Self = StObject.set(x, "targetGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceWindowAppUuid(value: String): Self = this.set("sourceWindowAppUuid", value.asInstanceOf[js.Any])
+    def setTargetGroupVarargs(value: WindowOfGroupInfo*): Self = StObject.set(x, "targetGroup", js.Array(value :_*))
     
     @scala.inline
-    def setSourceWindowName(value: String): Self = this.set("sourceWindowName", value.asInstanceOf[js.Any])
+    def setTargetWindowAppUuid(value: String): Self = StObject.set(x, "targetWindowAppUuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupVarargs(value: WindowOfGroupInfo*): Self = this.set("targetGroup", js.Array(value :_*))
+    def setTargetWindowName(value: String): Self = StObject.set(x, "targetWindowName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroup(value: js.Array[WindowOfGroupInfo]): Self = this.set("targetGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetWindowAppUuid(value: String): Self = this.set("targetWindowAppUuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetWindowName(value: String): Self = this.set("targetWindowName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `group-changed`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `group-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

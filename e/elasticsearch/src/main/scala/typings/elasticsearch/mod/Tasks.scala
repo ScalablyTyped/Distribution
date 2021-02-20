@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "Tasks")
 @js.native
-class Tasks () extends js.Object {
+class Tasks () extends StObject {
   
   def cancel(params: TasksCancelParams): js.Promise[_] = js.native
   def cancel(

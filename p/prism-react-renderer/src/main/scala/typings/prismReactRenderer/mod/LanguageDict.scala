@@ -1,12 +1,13 @@
 package typings.prismReactRenderer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ lang in prism-react-renderer.prism-react-renderer.Language ]: prism-react-renderer.prism-react-renderer.PrismGrammar} */
 @js.native
-trait LanguageDict extends js.Object {
+trait LanguageDict extends StObject {
   
   var actionscript: PrismGrammar = js.native
   
@@ -115,114 +116,102 @@ object LanguageDict {
   }
   
   @scala.inline
-  implicit class LanguageDictOps[Self <: LanguageDict] (val x: Self) extends AnyVal {
+  implicit class LanguageDictMutableBuilder[Self <: LanguageDict] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionscript(value: PrismGrammar): Self = StObject.set(x, "actionscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBash(value: PrismGrammar): Self = StObject.set(x, "bash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setC(value: PrismGrammar): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionscript(value: PrismGrammar): Self = this.set("actionscript", value.asInstanceOf[js.Any])
+    def setClike(value: PrismGrammar): Self = StObject.set(x, "clike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBash(value: PrismGrammar): Self = this.set("bash", value.asInstanceOf[js.Any])
+    def setCoffeescript(value: PrismGrammar): Self = StObject.set(x, "coffeescript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: PrismGrammar): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setCpp(value: PrismGrammar): Self = StObject.set(x, "cpp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClike(value: PrismGrammar): Self = this.set("clike", value.asInstanceOf[js.Any])
+    def setCss(value: PrismGrammar): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoffeescript(value: PrismGrammar): Self = this.set("coffeescript", value.asInstanceOf[js.Any])
+    def `setCss-extr`(value: PrismGrammar): Self = StObject.set(x, "css-extr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpp(value: PrismGrammar): Self = this.set("cpp", value.asInstanceOf[js.Any])
+    def setDiff(value: PrismGrammar): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: PrismGrammar): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setGit(value: PrismGrammar): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCss-extr`(value: PrismGrammar): Self = this.set("css-extr", value.asInstanceOf[js.Any])
+    def setGo(value: PrismGrammar): Self = StObject.set(x, "go", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiff(value: PrismGrammar): Self = this.set("diff", value.asInstanceOf[js.Any])
+    def setGraphql(value: PrismGrammar): Self = StObject.set(x, "graphql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGit(value: PrismGrammar): Self = this.set("git", value.asInstanceOf[js.Any])
+    def setHandlebars(value: PrismGrammar): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGo(value: PrismGrammar): Self = this.set("go", value.asInstanceOf[js.Any])
+    def setJavascript(value: PrismGrammar): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphql(value: PrismGrammar): Self = this.set("graphql", value.asInstanceOf[js.Any])
+    def setJson(value: PrismGrammar): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlebars(value: PrismGrammar): Self = this.set("handlebars", value.asInstanceOf[js.Any])
+    def setJsx(value: PrismGrammar): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavascript(value: PrismGrammar): Self = this.set("javascript", value.asInstanceOf[js.Any])
+    def setLess(value: PrismGrammar): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson(value: PrismGrammar): Self = this.set("json", value.asInstanceOf[js.Any])
+    def setMakefile(value: PrismGrammar): Self = StObject.set(x, "makefile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsx(value: PrismGrammar): Self = this.set("jsx", value.asInstanceOf[js.Any])
+    def setMarkdown(value: PrismGrammar): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLess(value: PrismGrammar): Self = this.set("less", value.asInstanceOf[js.Any])
+    def setMarkup(value: PrismGrammar): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMakefile(value: PrismGrammar): Self = this.set("makefile", value.asInstanceOf[js.Any])
+    def setObjectivec(value: PrismGrammar): Self = StObject.set(x, "objectivec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkdown(value: PrismGrammar): Self = this.set("markdown", value.asInstanceOf[js.Any])
+    def setOcaml(value: PrismGrammar): Self = StObject.set(x, "ocaml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkup(value: PrismGrammar): Self = this.set("markup", value.asInstanceOf[js.Any])
+    def setPython(value: PrismGrammar): Self = StObject.set(x, "python", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectivec(value: PrismGrammar): Self = this.set("objectivec", value.asInstanceOf[js.Any])
+    def setReason(value: PrismGrammar): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcaml(value: PrismGrammar): Self = this.set("ocaml", value.asInstanceOf[js.Any])
+    def setSass(value: PrismGrammar): Self = StObject.set(x, "sass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPython(value: PrismGrammar): Self = this.set("python", value.asInstanceOf[js.Any])
+    def setScss(value: PrismGrammar): Self = StObject.set(x, "scss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: PrismGrammar): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setSql(value: PrismGrammar): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSass(value: PrismGrammar): Self = this.set("sass", value.asInstanceOf[js.Any])
+    def setStylus(value: PrismGrammar): Self = StObject.set(x, "stylus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScss(value: PrismGrammar): Self = this.set("scss", value.asInstanceOf[js.Any])
+    def setTsx(value: PrismGrammar): Self = StObject.set(x, "tsx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSql(value: PrismGrammar): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setTypescript(value: PrismGrammar): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylus(value: PrismGrammar): Self = this.set("stylus", value.asInstanceOf[js.Any])
+    def setWasm(value: PrismGrammar): Self = StObject.set(x, "wasm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTsx(value: PrismGrammar): Self = this.set("tsx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypescript(value: PrismGrammar): Self = this.set("typescript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWasm(value: PrismGrammar): Self = this.set("wasm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYaml(value: PrismGrammar): Self = this.set("yaml", value.asInstanceOf[js.Any])
+    def setYaml(value: PrismGrammar): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
   }
 }

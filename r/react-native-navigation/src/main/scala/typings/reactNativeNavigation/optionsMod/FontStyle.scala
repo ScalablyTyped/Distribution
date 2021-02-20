@@ -1,5 +1,6 @@
 package typings.reactNativeNavigation.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeNavigation.reactNativeNavigationStrings.normal
   - typings.reactNativeNavigation.reactNativeNavigationStrings.italic
 */
-trait FontStyle extends js.Object
+trait FontStyle extends StObject
 object FontStyle {
   
   @scala.inline

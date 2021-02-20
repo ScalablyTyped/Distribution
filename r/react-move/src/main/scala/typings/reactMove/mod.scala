@@ -1,24 +1,30 @@
 package typings.reactMove
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.Component
-import typings.reactMove.animateMod.IAnimateProps
+import typings.reactMove.animateMod.default
 import typings.reactMove.nodeGroupMod.INodeGroupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-move", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-move", "Animate")
   @js.native
-  class Animate ()
-    extends Component[IAnimateProps, js.Object, js.Any]
+  class Animate () extends default
   
+  @JSImport("react-move", "NodeGroup")
   @js.native
-  class NodeGroup ()
-    extends Component[INodeGroupProps, js.Object, js.Any]
+  class NodeGroup protected ()
+    extends typings.reactMove.nodeGroupMod.default {
+    def this(props: INodeGroupProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: INodeGroupProps, context: js.Any) = this()
+  }
   
   type GetInterpolator = js.Function4[
     /* begValue */ js.UndefOr[js.Any], 

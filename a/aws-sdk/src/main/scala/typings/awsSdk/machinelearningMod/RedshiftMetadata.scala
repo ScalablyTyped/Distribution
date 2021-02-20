@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftMetadata extends js.Object {
+trait RedshiftMetadata extends StObject {
   
   var DatabaseUserName: js.UndefOr[RedshiftDatabaseUsername] = js.native
   
@@ -25,36 +26,24 @@ object RedshiftMetadata {
   }
   
   @scala.inline
-  implicit class RedshiftMetadataOps[Self <: RedshiftMetadata] (val x: Self) extends AnyVal {
+  implicit class RedshiftMetadataMutableBuilder[Self <: RedshiftMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseUserName(value: RedshiftDatabaseUsername): Self = StObject.set(x, "DatabaseUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseUserNameUndefined: Self = StObject.set(x, "DatabaseUserName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedshiftDatabase(value: RedshiftDatabase): Self = StObject.set(x, "RedshiftDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseUserName(value: RedshiftDatabaseUsername): Self = this.set("DatabaseUserName", value.asInstanceOf[js.Any])
+    def setRedshiftDatabaseUndefined: Self = StObject.set(x, "RedshiftDatabase", js.undefined)
     
     @scala.inline
-    def deleteDatabaseUserName: Self = this.set("DatabaseUserName", js.undefined)
+    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftDatabase(value: RedshiftDatabase): Self = this.set("RedshiftDatabase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedshiftDatabase: Self = this.set("RedshiftDatabase", js.undefined)
-    
-    @scala.inline
-    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = this.set("SelectSqlQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectSqlQuery: Self = this.set("SelectSqlQuery", js.undefined)
+    def setSelectSqlQueryUndefined: Self = StObject.set(x, "SelectSqlQuery", js.undefined)
   }
 }

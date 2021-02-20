@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeDestination extends js.Object {
+trait CodeDestination extends StObject {
   
   /**
     * Information about the AWS CodeCommit repository to be created in AWS CodeStar. This is where the source code files provided with the project request will be uploaded after project creation.
@@ -26,30 +27,18 @@ object CodeDestination {
   }
   
   @scala.inline
-  implicit class CodeDestinationOps[Self <: CodeDestination] (val x: Self) extends AnyVal {
+  implicit class CodeDestinationMutableBuilder[Self <: CodeDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeCommit(value: CodeCommitCodeDestination): Self = StObject.set(x, "codeCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeCommitUndefined: Self = StObject.set(x, "codeCommit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGitHub(value: GitHubCodeDestination): Self = StObject.set(x, "gitHub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeCommit(value: CodeCommitCodeDestination): Self = this.set("codeCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeCommit: Self = this.set("codeCommit", js.undefined)
-    
-    @scala.inline
-    def setGitHub(value: GitHubCodeDestination): Self = this.set("gitHub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGitHub: Self = this.set("gitHub", js.undefined)
+    def setGitHubUndefined: Self = StObject.set(x, "gitHub", js.undefined)
   }
 }

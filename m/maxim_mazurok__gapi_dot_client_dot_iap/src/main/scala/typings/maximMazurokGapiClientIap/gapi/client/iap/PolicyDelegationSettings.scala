@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyDelegationSettings extends js.Object {
+trait PolicyDelegationSettings extends StObject {
   
   /** Permission to check in IAM. */
   var iamPermission: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object PolicyDelegationSettings {
   }
   
   @scala.inline
-  implicit class PolicyDelegationSettingsOps[Self <: PolicyDelegationSettings] (val x: Self) extends AnyVal {
+  implicit class PolicyDelegationSettingsMutableBuilder[Self <: PolicyDelegationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamPermission(value: String): Self = StObject.set(x, "iamPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIamPermissionUndefined: Self = StObject.set(x, "iamPermission", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamServiceName(value: String): Self = StObject.set(x, "iamServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamPermission(value: String): Self = this.set("iamPermission", value.asInstanceOf[js.Any])
+    def setIamServiceNameUndefined: Self = StObject.set(x, "iamServiceName", js.undefined)
     
     @scala.inline
-    def deleteIamPermission: Self = this.set("iamPermission", js.undefined)
+    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamServiceName(value: String): Self = this.set("iamServiceName", value.asInstanceOf[js.Any])
+    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
     
     @scala.inline
-    def deleteIamServiceName: Self = this.set("iamServiceName", js.undefined)
+    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyName(value: PolicyName): Self = this.set("policyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyName: Self = this.set("policyName", js.undefined)
-    
-    @scala.inline
-    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

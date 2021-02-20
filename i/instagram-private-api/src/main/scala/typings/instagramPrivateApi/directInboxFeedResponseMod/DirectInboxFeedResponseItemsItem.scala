@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.directInboxFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectInboxFeedResponseItemsItem extends js.Object {
+trait DirectInboxFeedResponseItemsItem extends StObject {
   
   var client_context: js.UndefOr[String] = js.native
   
@@ -36,66 +37,54 @@ object DirectInboxFeedResponseItemsItem {
   }
   
   @scala.inline
-  implicit class DirectInboxFeedResponseItemsItemOps[Self <: DirectInboxFeedResponseItemsItem] (val x: Self) extends AnyVal {
+  implicit class DirectInboxFeedResponseItemsItemMutableBuilder[Self <: DirectInboxFeedResponseItemsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_context(value: String): Self = StObject.set(x, "client_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_contextUndefined: Self = StObject.set(x, "client_context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem_id(value: String): Self = this.set("item_id", value.asInstanceOf[js.Any])
+    def setItem_type(value: String): Self = StObject.set(x, "item_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem_type(value: String): Self = this.set("item_type", value.asInstanceOf[js.Any])
+    def setLink(value: DirectInboxFeedResponseLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setUser_id(value: Double): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: DirectInboxFeedResponsePlaceholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_context(value: String): Self = this.set("client_context", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteClient_context: Self = this.set("client_context", js.undefined)
+    def setProfile(value: DirectInboxFeedResponseProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: DirectInboxFeedResponseLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setReel_share(value: DirectInboxFeedResponseReelShare): Self = StObject.set(x, "reel_share", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: DirectInboxFeedResponsePlaceholder): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setReel_shareUndefined: Self = StObject.set(x, "reel_share", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: DirectInboxFeedResponseProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReel_share(value: DirectInboxFeedResponseReelShare): Self = this.set("reel_share", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReel_share: Self = this.set("reel_share", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

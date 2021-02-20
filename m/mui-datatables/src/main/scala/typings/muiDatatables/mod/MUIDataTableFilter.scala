@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableFilter extends js.Object {
+trait MUIDataTableFilter extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.native
   
@@ -28,54 +29,42 @@ object MUIDataTableFilter {
   }
   
   @scala.inline
-  implicit class MUIDataTableFilterOps[Self <: MUIDataTableFilter] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableFilterMutableBuilder[Self <: MUIDataTableFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterData(value: js.Array[_]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDataVarargs(value: js.Any*): Self = this.set("filterData", js.Array(value :_*))
+    def setFilterDataVarargs(value: js.Any*): Self = StObject.set(x, "filterData", js.Array(value :_*))
     
     @scala.inline
-    def setFilterData(value: js.Array[_]): Self = this.set("filterData", value.asInstanceOf[js.Any])
+    def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
     @scala.inline
-    def setClasses(value: js.Object): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setOnFilterReset(value: /* args */ js.Any => _): Self = StObject.set(x, "onFilterReset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilterListVarargs(value: js.Array[String]*): Self = this.set("filterList", js.Array(value :_*))
+    def setOnFilterResetUndefined: Self = StObject.set(x, "onFilterReset", js.undefined)
     
     @scala.inline
-    def setFilterList(value: js.Array[js.Array[String]]): Self = this.set("filterList", value.asInstanceOf[js.Any])
+    def setOnFilterUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterList: Self = this.set("filterList", js.undefined)
+    def setOnFilterUpdateUndefined: Self = StObject.set(x, "onFilterUpdate", js.undefined)
     
     @scala.inline
-    def setOnFilterReset(value: /* args */ js.Any => _): Self = this.set("onFilterReset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFilterReset: Self = this.set("onFilterReset", js.undefined)
-    
-    @scala.inline
-    def setOnFilterUpdate(value: /* args */ js.Any => _): Self = this.set("onFilterUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFilterUpdate: Self = this.set("onFilterUpdate", js.undefined)
+    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientGridView ()
   extends typings.devexpressWeb.ASPxClientGridView
-/* static members */
-@JSGlobal("ASPxClientGridView")
-@js.native
-object ASPxClientGridView extends js.Object {
+object ASPxClientGridView {
   
   /**
     * Converts the specified object to the ASPxClientGridView type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientGridView.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientGridView = js.native
 }

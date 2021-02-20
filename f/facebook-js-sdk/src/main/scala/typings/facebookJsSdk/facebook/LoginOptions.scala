@@ -3,12 +3,13 @@ package typings.facebookJsSdk.facebook
 import typings.facebookJsSdk.facebookJsSdkStrings.reauthenticate
 import typings.facebookJsSdk.facebookJsSdkStrings.reauthorize
 import typings.facebookJsSdk.facebookJsSdkStrings.rerequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginOptions extends js.Object {
+trait LoginOptions extends StObject {
   
   var auth_type: js.UndefOr[reauthenticate | reauthorize | rerequest] = js.native
   
@@ -29,48 +30,36 @@ object LoginOptions {
   }
   
   @scala.inline
-  implicit class LoginOptionsOps[Self <: LoginOptions] (val x: Self) extends AnyVal {
+  implicit class LoginOptionsMutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth_type(value: reauthenticate | reauthorize | rerequest): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth_typeUndefined: Self = StObject.set(x, "auth_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable_profile_selector(value: Boolean): Self = StObject.set(x, "enable_profile_selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_type(value: reauthenticate | reauthorize | rerequest): Self = this.set("auth_type", value.asInstanceOf[js.Any])
+    def setEnable_profile_selectorUndefined: Self = StObject.set(x, "enable_profile_selector", js.undefined)
     
     @scala.inline
-    def deleteAuth_type: Self = this.set("auth_type", js.undefined)
+    def setProfile_selector_ids(value: String): Self = StObject.set(x, "profile_selector_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable_profile_selector(value: Boolean): Self = this.set("enable_profile_selector", value.asInstanceOf[js.Any])
+    def setProfile_selector_idsUndefined: Self = StObject.set(x, "profile_selector_ids", js.undefined)
     
     @scala.inline
-    def deleteEnable_profile_selector: Self = this.set("enable_profile_selector", js.undefined)
+    def setReturn_scopes(value: Boolean): Self = StObject.set(x, "return_scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_selector_ids(value: String): Self = this.set("profile_selector_ids", value.asInstanceOf[js.Any])
+    def setReturn_scopesUndefined: Self = StObject.set(x, "return_scopes", js.undefined)
     
     @scala.inline
-    def deleteProfile_selector_ids: Self = this.set("profile_selector_ids", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_scopes(value: Boolean): Self = this.set("return_scopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_scopes: Self = this.set("return_scopes", js.undefined)
-    
-    @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object containing information about the current platform. */
 @js.native
-trait PlatformInfo extends js.Object {
+trait PlatformInfo extends StObject {
   
   /** The machine's processor architecture. */
   var arch: PlatformArch = js.native
@@ -29,30 +30,18 @@ object PlatformInfo {
   }
   
   @scala.inline
-  implicit class PlatformInfoOps[Self <: PlatformInfo] (val x: Self) extends AnyVal {
+  implicit class PlatformInfoMutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArch(value: PlatformArch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNacl_arch(value: PlatformNaclArch): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNacl_archUndefined: Self = StObject.set(x, "nacl_arch", js.undefined)
     
     @scala.inline
-    def setArch(value: PlatformArch): Self = this.set("arch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOs(value: PlatformOs): Self = this.set("os", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNacl_arch(value: PlatformNaclArch): Self = this.set("nacl_arch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNacl_arch: Self = this.set("nacl_arch", js.undefined)
+    def setOs(value: PlatformOs): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
   }
 }

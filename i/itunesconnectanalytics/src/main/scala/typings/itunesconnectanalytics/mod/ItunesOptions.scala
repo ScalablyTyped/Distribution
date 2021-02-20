@@ -1,11 +1,12 @@
 package typings.itunesconnectanalytics.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItunesOptions extends js.Object {
+trait ItunesOptions extends StObject {
   
   var appleWidgetKey: js.UndefOr[String] = js.native
   
@@ -30,54 +31,42 @@ object ItunesOptions {
   }
   
   @scala.inline
-  implicit class ItunesOptionsOps[Self <: ItunesOptions] (val x: Self) extends AnyVal {
+  implicit class ItunesOptionsMutableBuilder[Self <: ItunesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppleWidgetKey(value: String): Self = StObject.set(x, "appleWidgetKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppleWidgetKeyUndefined: Self = StObject.set(x, "appleWidgetKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCallback(value: js.Any => Unit): Self = this.set("errorCallback", js.Any.fromFunction1(value))
+    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
     @scala.inline
-    def setSuccessCallback(value: String => Unit): Self = this.set("successCallback", js.Any.fromFunction1(value))
+    def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppleWidgetKey(value: String): Self = this.set("appleWidgetKey", value.asInstanceOf[js.Any])
+    def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
     
     @scala.inline
-    def deleteAppleWidgetKey: Self = this.set("appleWidgetKey", js.undefined)
+    def setErrorCallback(value: js.Any => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBaseURL(value: String): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    def setLoginURL(value: String): Self = StObject.set(x, "loginURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseURL: Self = this.set("baseURL", js.undefined)
+    def setLoginURLUndefined: Self = StObject.set(x, "loginURL", js.undefined)
     
     @scala.inline
-    def setConcurrentRequests(value: Double): Self = this.set("concurrentRequests", value.asInstanceOf[js.Any])
+    def setSettingsURL(value: String): Self = StObject.set(x, "settingsURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConcurrentRequests: Self = this.set("concurrentRequests", js.undefined)
+    def setSettingsURLUndefined: Self = StObject.set(x, "settingsURL", js.undefined)
     
     @scala.inline
-    def setLoginURL(value: String): Self = this.set("loginURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoginURL: Self = this.set("loginURL", js.undefined)
-    
-    @scala.inline
-    def setSettingsURL(value: String): Self = this.set("settingsURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingsURL: Self = this.set("settingsURL", js.undefined)
+    def setSuccessCallback(value: String => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction1(value))
   }
 }

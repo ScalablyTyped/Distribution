@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcShelvesetRequestData extends js.Object {
+trait TfvcShelvesetRequestData extends StObject {
   
   /**
     * Whether to include policyOverride and notes Only applies when requesting a single deep shelveset
@@ -59,39 +60,27 @@ object TfvcShelvesetRequestData {
   }
   
   @scala.inline
-  implicit class TfvcShelvesetRequestDataOps[Self <: TfvcShelvesetRequestData] (val x: Self) extends AnyVal {
+  implicit class TfvcShelvesetRequestDataMutableBuilder[Self <: TfvcShelvesetRequestData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeDetails(value: Boolean): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeWorkItems(value: Boolean): Self = StObject.set(x, "includeWorkItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDetails(value: Boolean): Self = this.set("includeDetails", value.asInstanceOf[js.Any])
+    def setMaxChangeCount(value: Double): Self = StObject.set(x, "maxChangeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLinks(value: Boolean): Self = this.set("includeLinks", value.asInstanceOf[js.Any])
+    def setMaxCommentLength(value: Double): Self = StObject.set(x, "maxCommentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeWorkItems(value: Boolean): Self = this.set("includeWorkItems", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxChangeCount(value: Double): Self = this.set("maxChangeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxCommentLength(value: Double): Self = this.set("maxCommentLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }
 }

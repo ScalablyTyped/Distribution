@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullDecl extends js.Object {
+trait PullDecl extends StObject {
   
   def _getEnclosingDeclFromParentDecl(): PullDecl = js.native
   
@@ -152,153 +153,141 @@ object PullDecl {
   }
   
   @scala.inline
-  implicit class PullDeclOps[Self <: PullDecl] (val x: Self) extends AnyVal {
+  implicit class PullDeclMutableBuilder[Self <: PullDecl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddChildDecl(value: PullDecl => Unit): Self = StObject.set(x, "addChildDecl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddVariableDeclToGroup(value: PullDecl => Unit): Self = StObject.set(x, "addVariableDeclToGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAst(value: () => AST): Self = StObject.set(x, "ast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_getEnclosingDeclFromParentDecl(value: () => PullDecl): Self = this.set("_getEnclosingDeclFromParentDecl", js.Any.fromFunction0(value))
+    def setChildDeclNamespaceCache(value: IIndexable[js.Array[PullDecl]]): Self = StObject.set(x, "childDeclNamespaceCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddChildDecl(value: PullDecl => Unit): Self = this.set("addChildDecl", js.Any.fromFunction1(value))
+    def setChildDeclTypeCache(value: IIndexable[js.Array[PullDecl]]): Self = StObject.set(x, "childDeclTypeCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddVariableDeclToGroup(value: PullDecl => Unit): Self = this.set("addVariableDeclToGroup", js.Any.fromFunction1(value))
+    def setChildDeclTypeParameterCache(value: IIndexable[js.Array[PullDecl]]): Self = StObject.set(x, "childDeclTypeParameterCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAst(value: () => AST): Self = this.set("ast", js.Any.fromFunction0(value))
+    def setChildDeclValueCache(value: IIndexable[js.Array[PullDecl]]): Self = StObject.set(x, "childDeclValueCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDeclNamespaceCache(value: IIndexable[js.Array[PullDecl]]): Self = this.set("childDeclNamespaceCache", value.asInstanceOf[js.Any])
+    def setChildDecls(value: js.Any): Self = StObject.set(x, "childDecls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDeclTypeCache(value: IIndexable[js.Array[PullDecl]]): Self = this.set("childDeclTypeCache", value.asInstanceOf[js.Any])
+    def setContainerDecl(value: js.Any): Self = StObject.set(x, "containerDecl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDeclTypeParameterCache(value: IIndexable[js.Array[PullDecl]]): Self = this.set("childDeclTypeParameterCache", value.asInstanceOf[js.Any])
+    def setDeclDisplayName(value: js.Any): Self = StObject.set(x, "declDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDeclValueCache(value: IIndexable[js.Array[PullDecl]]): Self = this.set("childDeclValueCache", value.asInstanceOf[js.Any])
+    def setDeclGroups(value: js.Any): Self = StObject.set(x, "declGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDecls(value: js.Any): Self = this.set("childDecls", value.asInstanceOf[js.Any])
+    def setDeclID(value: Double): Self = StObject.set(x, "declID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerDecl(value: js.Any): Self = this.set("containerDecl", value.asInstanceOf[js.Any])
+    def setEnsureSymbolIsBound(value: () => Unit): Self = StObject.set(x, "ensureSymbolIsBound", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeclDisplayName(value: js.Any): Self = this.set("declDisplayName", value.asInstanceOf[js.Any])
+    def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeclGroups(value: js.Any): Self = this.set("declGroups", value.asInstanceOf[js.Any])
+    def setFlags(value: PullElementFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclID(value: Double): Self = this.set("declID", value.asInstanceOf[js.Any])
+    def setGetChildDeclCache(value: js.Any => js.Any): Self = StObject.set(x, "getChildDeclCache", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnsureSymbolIsBound(value: () => Unit): Self = this.set("ensureSymbolIsBound", js.Any.fromFunction0(value))
+    def setGetChildDecls(value: () => js.Array[PullDecl]): Self = StObject.set(x, "getChildDecls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileName(value: () => String): Self = this.set("fileName", js.Any.fromFunction0(value))
+    def setGetContainerDecl(value: () => PullDecl): Self = StObject.set(x, "getContainerDecl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlags(value: PullElementFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setGetDisplayName(value: () => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildDeclCache(value: js.Any => js.Any): Self = this.set("getChildDeclCache", js.Any.fromFunction1(value))
+    def setGetEnclosingDecl(value: () => PullDecl): Self = StObject.set(x, "getEnclosingDecl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildDecls(value: () => js.Array[PullDecl]): Self = this.set("getChildDecls", js.Any.fromFunction0(value))
+    def setGetParentDecl(value: () => PullDecl): Self = StObject.set(x, "getParentDecl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContainerDecl(value: () => PullDecl): Self = this.set("getContainerDecl", js.Any.fromFunction0(value))
+    def setGetParentPath(value: () => js.Array[PullDecl]): Self = StObject.set(x, "getParentPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayName(value: () => String): Self = this.set("getDisplayName", js.Any.fromFunction0(value))
+    def setGetSignatureSymbol(value: () => PullSignatureSymbol): Self = StObject.set(x, "getSignatureSymbol", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnclosingDecl(value: () => PullDecl): Self = this.set("getEnclosingDecl", js.Any.fromFunction0(value))
+    def setGetSymbol(value: () => PullSymbol): Self = StObject.set(x, "getSymbol", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParentDecl(value: () => PullDecl): Self = this.set("getParentDecl", js.Any.fromFunction0(value))
+    def setGetTypeParameters(value: () => js.Array[PullDecl]): Self = StObject.set(x, "getTypeParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParentPath(value: () => js.Array[PullDecl]): Self = this.set("getParentPath", js.Any.fromFunction0(value))
+    def setGetValueDecl(value: () => PullDecl): Self = StObject.set(x, "getValueDecl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSignatureSymbol(value: () => PullSignatureSymbol): Self = this.set("getSignatureSymbol", js.Any.fromFunction0(value))
+    def setGetVariableDeclGroups(value: () => js.Array[js.Array[PullDecl]]): Self = StObject.set(x, "getVariableDeclGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSymbol(value: () => PullSymbol): Self = this.set("getSymbol", js.Any.fromFunction0(value))
+    def setHasBeenBound(value: () => Boolean): Self = StObject.set(x, "hasBeenBound", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTypeParameters(value: () => js.Array[PullDecl]): Self = this.set("getTypeParameters", js.Any.fromFunction0(value))
+    def setHasSignatureSymbol(value: () => Boolean): Self = StObject.set(x, "hasSignatureSymbol", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetValueDecl(value: () => PullDecl): Self = this.set("getValueDecl", js.Any.fromFunction0(value))
+    def setHasSymbol(value: () => Boolean): Self = StObject.set(x, "hasSymbol", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVariableDeclGroups(value: () => js.Array[js.Array[PullDecl]]): Self = this.set("getVariableDeclGroups", js.Any.fromFunction0(value))
+    def setIsExternalModule(value: () => Boolean): Self = StObject.set(x, "isExternalModule", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasBeenBound(value: () => Boolean): Self = this.set("hasBeenBound", js.Any.fromFunction0(value))
+    def setIsRootDecl(value: () => Unit): Self = StObject.set(x, "isRootDecl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasSignatureSymbol(value: () => Boolean): Self = this.set("hasSignatureSymbol", js.Any.fromFunction0(value))
+    def setIsSynthesized(value: () => Boolean): Self = StObject.set(x, "isSynthesized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasSymbol(value: () => Boolean): Self = this.set("hasSymbol", js.Any.fromFunction0(value))
+    def setKind(value: PullElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExternalModule(value: () => Boolean): Self = this.set("isExternalModule", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRootDecl(value: () => Unit): Self = this.set("isRootDecl", js.Any.fromFunction0(value))
+    def setSearchChildDecls(value: (String, PullElementKind) => js.Array[PullDecl]): Self = StObject.set(x, "searchChildDecls", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsSynthesized(value: () => Boolean): Self = this.set("isSynthesized", js.Any.fromFunction0(value))
+    def setSemanticInfoChain(value: SemanticInfoChain): Self = StObject.set(x, "semanticInfoChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: PullElementKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSetFlag(value: PullElementFlags => Unit): Self = StObject.set(x, "setFlag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSetFlags(value: PullElementFlags => Unit): Self = StObject.set(x, "setFlags", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearchChildDecls(value: (String, PullElementKind) => js.Array[PullDecl]): Self = this.set("searchChildDecls", js.Any.fromFunction2(value))
+    def setSetSignatureSymbol(value: PullSignatureSymbol => Unit): Self = StObject.set(x, "setSignatureSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSemanticInfoChain(value: SemanticInfoChain): Self = this.set("semanticInfoChain", value.asInstanceOf[js.Any])
+    def setSetSymbol(value: PullSymbol => Unit): Self = StObject.set(x, "setSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFlag(value: PullElementFlags => Unit): Self = this.set("setFlag", js.Any.fromFunction1(value))
+    def setSetValueDecl(value: PullDecl => Unit): Self = StObject.set(x, "setValueDecl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFlags(value: PullElementFlags => Unit): Self = this.set("setFlags", js.Any.fromFunction1(value))
+    def setSynthesizedValDecl(value: js.Any): Self = StObject.set(x, "synthesizedValDecl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSignatureSymbol(value: PullSignatureSymbol => Unit): Self = this.set("setSignatureSymbol", js.Any.fromFunction1(value))
+    def setTypeParameters(value: js.Any): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSymbol(value: PullSymbol => Unit): Self = this.set("setSymbol", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValueDecl(value: PullDecl => Unit): Self = this.set("setValueDecl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSynthesizedValDecl(value: js.Any): Self = this.set("synthesizedValDecl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeParameters(value: js.Any): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
+    def set_getEnclosingDeclFromParentDecl(value: () => PullDecl): Self = StObject.set(x, "_getEnclosingDeclFromParentDecl", js.Any.fromFunction0(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,39 +36,27 @@ object PermOverviewEntry {
   }
   
   @scala.inline
-  implicit class PermOverviewEntryOps[Self <: PermOverviewEntry] (val x: Self) extends AnyVal {
+  implicit class PermOverviewEntryMutableBuilder[Self <: PermOverviewEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId2(value: Double): Self = StObject.set(x, "id2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId2(value: Double): Self = this.set("id2", value.asInstanceOf[js.Any])
+    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: Double): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: Double): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS(value: Double): Self = this.set("s", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setT(value: Double): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV(value: Double): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

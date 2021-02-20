@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAppsCloudidentityDevicesV1DeviceUser extends js.Object {
+trait GoogleAppsCloudidentityDevicesV1DeviceUser extends StObject {
   
   /** Compromised State of the DeviceUser object */
   var compromisedState: js.UndefOr[String] = js.native
@@ -49,78 +50,66 @@ object GoogleAppsCloudidentityDevicesV1DeviceUser {
   }
   
   @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1DeviceUserOps[Self <: GoogleAppsCloudidentityDevicesV1DeviceUser] (val x: Self) extends AnyVal {
+  implicit class GoogleAppsCloudidentityDevicesV1DeviceUserMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1DeviceUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompromisedState(value: String): Self = StObject.set(x, "compromisedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompromisedStateUndefined: Self = StObject.set(x, "compromisedState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompromisedState(value: String): Self = this.set("compromisedState", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCompromisedState: Self = this.set("compromisedState", js.undefined)
+    def setFirstSyncTime(value: String): Self = StObject.set(x, "firstSyncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setFirstSyncTimeUndefined: Self = StObject.set(x, "firstSyncTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSyncTime(value: String): Self = this.set("firstSyncTime", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteFirstSyncTime: Self = this.set("firstSyncTime", js.undefined)
+    def setLastSyncTime(value: String): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setLastSyncTimeUndefined: Self = StObject.set(x, "lastSyncTime", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setManagementState(value: String): Self = StObject.set(x, "managementState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncTime(value: String): Self = this.set("lastSyncTime", value.asInstanceOf[js.Any])
+    def setManagementStateUndefined: Self = StObject.set(x, "managementState", js.undefined)
     
     @scala.inline
-    def deleteLastSyncTime: Self = this.set("lastSyncTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagementState(value: String): Self = this.set("managementState", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteManagementState: Self = this.set("managementState", js.undefined)
+    def setPasswordState(value: String): Self = StObject.set(x, "passwordState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPasswordStateUndefined: Self = StObject.set(x, "passwordState", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordState(value: String): Self = this.set("passwordState", value.asInstanceOf[js.Any])
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
     @scala.inline
-    def deletePasswordState: Self = this.set("passwordState", js.undefined)
+    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
-    
-    @scala.inline
-    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
   }
 }

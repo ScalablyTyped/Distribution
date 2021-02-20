@@ -8,13 +8,12 @@ import typings.netflixNerror.mod.VError.Info
 import typings.netflixNerror.mod.VError.MultiError
 import typings.netflixNerror.mod.VError.Options
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
   trait Instantiable

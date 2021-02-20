@@ -3,6 +3,7 @@ package typings.jsprintmanager.mod.JSPM
 import typings.jsprintmanager.mod.JSPM.Serial.Handshake
 import typings.jsprintmanager.mod.JSPM.Serial.Parity
 import typings.jsprintmanager.mod.JSPM.Serial.StopBits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

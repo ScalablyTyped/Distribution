@@ -13,14 +13,14 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/cellComp", JSImport.Namespace)
-@js.native
-object cellCompMod extends js.Object {
+object cellCompMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/cellComp", "CellComp")
   @js.native
   class CellComp protected () extends Component {
     def this(
@@ -325,9 +325,16 @@ object cellCompMod extends js.Object {
     /* private */ def valuesAreEqual(val1: js.Any, val2: js.Any): js.Any = js.native
   }
   /* static members */
-  @js.native
-  object CellComp extends js.Object {
+  object CellComp {
     
-    var DOM_DATA_KEY_CELL_COMP: String = js.native
+    @JSImport("ag-grid/dist/lib/rendering/cellComp", "CellComp")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/rendering/cellComp", "CellComp.DOM_DATA_KEY_CELL_COMP")
+    @js.native
+    def DOM_DATA_KEY_CELL_COMP: String = js.native
+    @scala.inline
+    def DOM_DATA_KEY_CELL_COMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_CELL_COMP")(x.asInstanceOf[js.Any])
   }
 }

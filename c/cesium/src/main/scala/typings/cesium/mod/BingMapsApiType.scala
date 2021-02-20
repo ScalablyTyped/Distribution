@@ -1,11 +1,12 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BingMapsApiType extends js.Object {
+trait BingMapsApiType extends StObject {
   
   var defaultKey: String = js.native
   
@@ -20,24 +21,12 @@ object BingMapsApiType {
   }
   
   @scala.inline
-  implicit class BingMapsApiTypeOps[Self <: BingMapsApiType] (val x: Self) extends AnyVal {
+  implicit class BingMapsApiTypeMutableBuilder[Self <: BingMapsApiType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultKey(value: String): Self = StObject.set(x, "defaultKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultKey(value: String): Self = this.set("defaultKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetKey(value: String => String): Self = this.set("getKey", js.Any.fromFunction1(value))
+    def setGetKey(value: String => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
   }
 }

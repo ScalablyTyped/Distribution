@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventEmitter extends js.Object {
+trait EventEmitter extends StObject {
   
   def addEventListener(name: String, callback: js.Function): Unit = js.native
   def addEventListener(name: String, callback: js.Function, capturing: Boolean): Unit = js.native

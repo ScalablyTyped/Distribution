@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Volume
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.mm3Slashs
   - typings.convertUnits.convertUnitsStrings.cm3Slashs
@@ -43,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.yd3Slashmin
   - typings.convertUnits.convertUnitsStrings.yd3Slashh
 */
-trait uVolumeFlowRate extends js.Object
+trait uVolumeFlowRate extends StObject
 object uVolumeFlowRate {
   
   @scala.inline

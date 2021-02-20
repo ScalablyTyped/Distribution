@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEntityAggregatesRequest extends js.Object {
+trait DescribeEntityAggregatesRequest extends StObject {
   
   /**
     * A list of event ARNs (unique identifiers). For example: "arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-CDE456", "arn:aws:health:us-west-1::event/EBS/AWS_EBS_LOST_VOLUME/AWS_EBS_LOST_VOLUME_CHI789_JKL101" 
@@ -21,27 +22,15 @@ object DescribeEntityAggregatesRequest {
   }
   
   @scala.inline
-  implicit class DescribeEntityAggregatesRequestOps[Self <: DescribeEntityAggregatesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeEntityAggregatesRequestMutableBuilder[Self <: DescribeEntityAggregatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventArns(value: EventArnsList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventArnsVarargs(value: eventArn*): Self = this.set("eventArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventArns(value: EventArnsList): Self = this.set("eventArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventArns: Self = this.set("eventArns", js.undefined)
+    def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
   }
 }

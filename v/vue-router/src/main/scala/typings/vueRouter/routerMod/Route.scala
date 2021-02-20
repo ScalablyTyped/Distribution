@@ -1,11 +1,12 @@
 package typings.vueRouter.routerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Route extends js.Object {
+trait Route extends StObject {
   
   var fullPath: String = js.native
   
@@ -41,60 +42,48 @@ object Route {
   }
   
   @scala.inline
-  implicit class RouteOps[Self <: Route] (val x: Self) extends AnyVal {
+  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatched(value: js.Array[RouteRecord]): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullPath(value: String): Self = this.set("fullPath", value.asInstanceOf[js.Any])
+    def setMatchedVarargs(value: RouteRecord*): Self = StObject.set(x, "matched", js.Array(value :_*))
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedVarargs(value: RouteRecord*): Self = this.set("matched", js.Array(value :_*))
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setMatched(value: js.Array[RouteRecord]): Self = this.set("matched", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: Dictionary[String]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setQuery(value: Dictionary[String | (js.Array[String | Null])]): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setParams(value: Dictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setQuery(value: Dictionary[String | (js.Array[String | Null])]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRedirectedFrom(value: String): Self = StObject.set(x, "redirectedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setRedirectedFrom(value: String): Self = this.set("redirectedFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectedFrom: Self = this.set("redirectedFrom", js.undefined)
+    def setRedirectedFromUndefined: Self = StObject.set(x, "redirectedFrom", js.undefined)
   }
 }

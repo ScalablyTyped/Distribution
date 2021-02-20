@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartnersResource extends js.Object {
+trait PartnersResource extends StObject {
   
   var customers: CustomersResource = js.native
   
@@ -22,27 +23,15 @@ object PartnersResource {
   }
   
   @scala.inline
-  implicit class PartnersResourceOps[Self <: PartnersResource] (val x: Self) extends AnyVal {
+  implicit class PartnersResourceMutableBuilder[Self <: PartnersResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomers(value: CustomersResource): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomers(value: CustomersResource): Self = this.set("customers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDevices(value: DevicesResource): Self = this.set("devices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendors(value: VendorsResource): Self = this.set("vendors", value.asInstanceOf[js.Any])
+    def setVendors(value: VendorsResource): Self = StObject.set(x, "vendors", value.asInstanceOf[js.Any])
   }
 }

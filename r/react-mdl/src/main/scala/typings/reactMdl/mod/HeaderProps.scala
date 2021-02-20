@@ -1,21 +1,20 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HeaderProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends HTMLProps[js.Any] {
   
   var hideSpacer: js.UndefOr[Boolean] = js.native
   
   var hideTop: js.UndefOr[Boolean] = js.native
   
-   // string | JSX.Element
+  // string | JSX.Element
   var scroll: js.UndefOr[Boolean] = js.native
   
   var seamed: js.UndefOr[Boolean] = js.native
@@ -36,60 +35,48 @@ object HeaderProps {
   }
   
   @scala.inline
-  implicit class HeaderPropsOps[Self <: HeaderProps] (val x: Self) extends AnyVal {
+  implicit class HeaderPropsMutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideSpacer(value: Boolean): Self = StObject.set(x, "hideSpacer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideSpacerUndefined: Self = StObject.set(x, "hideSpacer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideTop(value: Boolean): Self = StObject.set(x, "hideTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSpacer(value: Boolean): Self = this.set("hideSpacer", value.asInstanceOf[js.Any])
+    def setHideTopUndefined: Self = StObject.set(x, "hideTop", js.undefined)
     
     @scala.inline
-    def deleteHideSpacer: Self = this.set("hideSpacer", js.undefined)
+    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTop(value: Boolean): Self = this.set("hideTop", value.asInstanceOf[js.Any])
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteHideTop: Self = this.set("hideTop", js.undefined)
+    def setSeamed(value: Boolean): Self = StObject.set(x, "seamed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setSeamedUndefined: Self = StObject.set(x, "seamed", js.undefined)
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeamed(value: Boolean): Self = this.set("seamed", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSeamed: Self = this.set("seamed", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: js.Any): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWaterfall(value: Boolean): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
-    
-    @scala.inline
-    def setWaterfall(value: Boolean): Self = this.set("waterfall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterfall: Self = this.set("waterfall", js.undefined)
+    def setWaterfallUndefined: Self = StObject.set(x, "waterfall", js.undefined)
   }
 }

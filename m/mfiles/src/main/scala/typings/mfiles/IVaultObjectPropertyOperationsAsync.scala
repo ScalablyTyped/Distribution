@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFACLEnforcingMode
 import typings.mfiles.MFiles.MFMetadataSyncFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultObjectPropertyOperationsAsync extends js.Object {
+trait IVaultObjectPropertyOperationsAsync extends StObject {
   
   def ApproveOrRejectAssignment(ObjVer: IObjVer, Approve: Boolean): Unit = js.native
   def ApproveOrRejectAssignment(

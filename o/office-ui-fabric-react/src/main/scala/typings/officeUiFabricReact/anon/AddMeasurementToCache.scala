@@ -1,11 +1,12 @@
 package typings.officeUiFabricReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddMeasurementToCache extends js.Object {
+trait AddMeasurementToCache extends StObject {
   
   /**
     * Should be called whenever there is a new measurement associated with a given data object.
@@ -32,24 +33,12 @@ object AddMeasurementToCache {
   }
   
   @scala.inline
-  implicit class AddMeasurementToCacheOps[Self <: AddMeasurementToCache] (val x: Self) extends AnyVal {
+  implicit class AddMeasurementToCacheMutableBuilder[Self <: AddMeasurementToCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMeasurementToCache(value: (js.Any, Double) => scala.Unit): Self = StObject.set(x, "addMeasurementToCache", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddMeasurementToCache(value: (js.Any, Double) => scala.Unit): Self = this.set("addMeasurementToCache", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetCachedMeasurement(value: js.Any => js.UndefOr[Double]): Self = this.set("getCachedMeasurement", js.Any.fromFunction1(value))
+    def setGetCachedMeasurement(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "getCachedMeasurement", js.Any.fromFunction1(value))
   }
 }

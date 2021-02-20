@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for Org Unit resource in Directory API.
   */
 @js.native
-trait SchemaOrgUnit extends js.Object {
+trait SchemaOrgUnit extends StObject {
   
   /**
     * Should block inheritance
@@ -64,72 +65,60 @@ object SchemaOrgUnit {
   }
   
   @scala.inline
-  implicit class SchemaOrgUnitOps[Self <: SchemaOrgUnit] (val x: Self) extends AnyVal {
+  implicit class SchemaOrgUnitMutableBuilder[Self <: SchemaOrgUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockInheritance(value: Boolean): Self = StObject.set(x, "blockInheritance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockInheritanceUndefined: Self = StObject.set(x, "blockInheritance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockInheritance(value: Boolean): Self = this.set("blockInheritance", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBlockInheritance: Self = this.set("blockInheritance", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnitId(value: String): Self = this.set("orgUnitId", value.asInstanceOf[js.Any])
+    def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
     
     @scala.inline
-    def deleteOrgUnitId: Self = this.set("orgUnitId", js.undefined)
+    def setParentOrgUnitId(value: String): Self = StObject.set(x, "parentOrgUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnitPath(value: String): Self = this.set("orgUnitPath", value.asInstanceOf[js.Any])
+    def setParentOrgUnitIdUndefined: Self = StObject.set(x, "parentOrgUnitId", js.undefined)
     
     @scala.inline
-    def deleteOrgUnitPath: Self = this.set("orgUnitPath", js.undefined)
+    def setParentOrgUnitPath(value: String): Self = StObject.set(x, "parentOrgUnitPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentOrgUnitId(value: String): Self = this.set("parentOrgUnitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentOrgUnitId: Self = this.set("parentOrgUnitId", js.undefined)
-    
-    @scala.inline
-    def setParentOrgUnitPath(value: String): Self = this.set("parentOrgUnitPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentOrgUnitPath: Self = this.set("parentOrgUnitPath", js.undefined)
+    def setParentOrgUnitPathUndefined: Self = StObject.set(x, "parentOrgUnitPath", js.undefined)
   }
 }

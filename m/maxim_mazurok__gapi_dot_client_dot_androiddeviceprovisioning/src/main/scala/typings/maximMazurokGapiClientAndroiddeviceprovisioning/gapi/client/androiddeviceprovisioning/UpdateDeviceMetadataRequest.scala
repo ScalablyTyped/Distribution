@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDeviceMetadataRequest extends js.Object {
+trait UpdateDeviceMetadataRequest extends StObject {
   
   /** Required. The metadata to attach to the device. */
   var deviceMetadata: js.UndefOr[DeviceMetadata] = js.native
@@ -19,24 +20,12 @@ object UpdateDeviceMetadataRequest {
   }
   
   @scala.inline
-  implicit class UpdateDeviceMetadataRequestOps[Self <: UpdateDeviceMetadataRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDeviceMetadataRequestMutableBuilder[Self <: UpdateDeviceMetadataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceMetadata(value: DeviceMetadata): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceMetadata(value: DeviceMetadata): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
+    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
   }
 }

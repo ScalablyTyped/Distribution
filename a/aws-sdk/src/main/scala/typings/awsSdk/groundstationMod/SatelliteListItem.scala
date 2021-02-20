@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SatelliteListItem extends js.Object {
+trait SatelliteListItem extends StObject {
   
   /**
     * A list of ground stations to which the satellite is on-boarded.
@@ -36,45 +37,33 @@ object SatelliteListItem {
   }
   
   @scala.inline
-  implicit class SatelliteListItemOps[Self <: SatelliteListItem] (val x: Self) extends AnyVal {
+  implicit class SatelliteListItemMutableBuilder[Self <: SatelliteListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroundStations(value: GroundStationIdList): Self = StObject.set(x, "groundStations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroundStationsUndefined: Self = StObject.set(x, "groundStations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroundStationsVarargs(value: String*): Self = StObject.set(x, "groundStations", js.Array(value :_*))
     
     @scala.inline
-    def setGroundStationsVarargs(value: String*): Self = this.set("groundStations", js.Array(value :_*))
+    def setNoradSatelliteID(value: noradSatelliteID): Self = StObject.set(x, "noradSatelliteID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundStations(value: GroundStationIdList): Self = this.set("groundStations", value.asInstanceOf[js.Any])
+    def setNoradSatelliteIDUndefined: Self = StObject.set(x, "noradSatelliteID", js.undefined)
     
     @scala.inline
-    def deleteGroundStations: Self = this.set("groundStations", js.undefined)
+    def setSatelliteArn(value: satelliteArn): Self = StObject.set(x, "satelliteArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoradSatelliteID(value: noradSatelliteID): Self = this.set("noradSatelliteID", value.asInstanceOf[js.Any])
+    def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
     
     @scala.inline
-    def deleteNoradSatelliteID: Self = this.set("noradSatelliteID", js.undefined)
+    def setSatelliteId(value: Uuid): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSatelliteArn(value: satelliteArn): Self = this.set("satelliteArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSatelliteArn: Self = this.set("satelliteArn", js.undefined)
-    
-    @scala.inline
-    def setSatelliteId(value: Uuid): Self = this.set("satelliteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSatelliteId: Self = this.set("satelliteId", js.undefined)
+    def setSatelliteIdUndefined: Self = StObject.set(x, "satelliteId", js.undefined)
   }
 }

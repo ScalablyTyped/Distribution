@@ -2,12 +2,13 @@ package typings.algoliaTransporter.mod
 
 import typings.algoliaRequesterCommon.mod.MethodType
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   /**
     * If the response should persist on cache.
@@ -38,39 +39,27 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: (Record[String, _]) | (js.Array[Record[String, _]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: MethodType): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCacheable(value: Boolean): Self = this.set("cacheable", value.asInstanceOf[js.Any])
+    def setMethod(value: MethodType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheable: Self = this.set("cacheable", js.undefined)
-    
-    @scala.inline
-    def setDataVarargs(value: (Record[String, js.Any])*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: (Record[String, _]) | (js.Array[Record[String, _]])): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

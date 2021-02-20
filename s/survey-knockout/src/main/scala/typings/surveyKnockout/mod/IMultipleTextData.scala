@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,39 +66,27 @@ object IMultipleTextData {
   }
   
   @scala.inline
-  implicit class IMultipleTextDataOps[Self <: IMultipleTextData] (val x: Self) extends AnyVal {
+  implicit class IMultipleTextDataMutableBuilder[Self <: IMultipleTextData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllValues(value: () => js.Any): Self = StObject.set(x, "getAllValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIsRequiredText(value: () => String): Self = StObject.set(x, "getIsRequiredText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItemDefaultValue(value: String => js.Any): Self = StObject.set(x, "getItemDefaultValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllValues(value: () => js.Any): Self = this.set("getAllValues", js.Any.fromFunction0(value))
+    def setGetMultipleTextValue(value: String => js.Any): Self = StObject.set(x, "getMultipleTextValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetIsRequiredText(value: () => String): Self = this.set("getIsRequiredText", js.Any.fromFunction0(value))
+    def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemDefaultValue(value: String => js.Any): Self = this.set("getItemDefaultValue", js.Any.fromFunction1(value))
+    def setGetTextProcessor(value: () => ITextProcessor): Self = StObject.set(x, "getTextProcessor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMultipleTextValue(value: String => js.Any): Self = this.set("getMultipleTextValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSurvey(value: () => ISurvey): Self = this.set("getSurvey", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextProcessor(value: () => ITextProcessor): Self = this.set("getTextProcessor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetMultipleTextValue(value: (String, js.Any) => js.Any): Self = this.set("setMultipleTextValue", js.Any.fromFunction2(value))
+    def setSetMultipleTextValue(value: (String, js.Any) => js.Any): Self = StObject.set(x, "setMultipleTextValue", js.Any.fromFunction2(value))
   }
 }

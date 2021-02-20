@@ -2,13 +2,14 @@ package typings.backbone.mod
 
 import typings.jquery.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "View")
 @js.native
-class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends js.Object {
+class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends StObject {
   def this(options: ViewOptions[TModel]) = this()
   
   @JSName("$")
@@ -79,14 +80,16 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends js.O
   
   def undelegateEvents(): js.Any = js.native
 }
-/* static members */
-@JSImport("backbone", "View")
-@js.native
-object View extends js.Object {
+object View {
   
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/
+  /* static member */
+  @JSImport("backbone", "View.extend")
+  @js.native
   def extend(properties: js.Any): js.Any = js.native
+  @JSImport("backbone", "View.extend")
+  @js.native
   def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
 }

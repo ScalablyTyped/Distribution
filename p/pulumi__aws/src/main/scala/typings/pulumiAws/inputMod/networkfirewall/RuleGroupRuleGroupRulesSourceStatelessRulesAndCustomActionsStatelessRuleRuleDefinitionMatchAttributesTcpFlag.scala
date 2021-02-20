@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.networkfirewall
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag extends js.Object {
+trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag extends StObject {
   
   /**
     * Set of flags to look for in a packet. AWS Network Firewall checks only the part of the packet specified in `masks`.
@@ -29,33 +30,21 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleR
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagOps[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlags(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagsVarargs(value: Input[String]*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasks(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "masks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagsVarargs(value: Input[String]*): Self = this.set("flags", js.Array(value :_*))
+    def setMasksUndefined: Self = StObject.set(x, "masks", js.undefined)
     
     @scala.inline
-    def setFlags(value: Input[js.Array[Input[String]]]): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMasksVarargs(value: Input[String]*): Self = this.set("masks", js.Array(value :_*))
-    
-    @scala.inline
-    def setMasks(value: Input[js.Array[Input[String]]]): Self = this.set("masks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasks: Self = this.set("masks", js.undefined)
+    def setMasksVarargs(value: Input[String]*): Self = StObject.set(x, "masks", js.Array(value :_*))
   }
 }

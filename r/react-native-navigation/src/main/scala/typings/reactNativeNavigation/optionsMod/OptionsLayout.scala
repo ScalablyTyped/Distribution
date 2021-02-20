@@ -3,12 +3,13 @@ package typings.reactNativeNavigation.optionsMod
 import typings.reactNativeNavigation.reactNativeNavigationStrings.locale
 import typings.reactNativeNavigation.reactNativeNavigationStrings.ltr
 import typings.reactNativeNavigation.reactNativeNavigationStrings.rtl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsLayout extends js.Object {
+trait OptionsLayout extends StObject {
   
   /**
     * Controls the application's preferred home indicator auto-hiding.
@@ -55,63 +56,51 @@ object OptionsLayout {
   }
   
   @scala.inline
-  implicit class OptionsLayoutOps[Self <: OptionsLayout] (val x: Self) extends AnyVal {
+  implicit class OptionsLayoutMutableBuilder[Self <: OptionsLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoHideHomeIndicator(value: Boolean): Self = StObject.set(x, "autoHideHomeIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoHideHomeIndicatorUndefined: Self = StObject.set(x, "autoHideHomeIndicator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHideHomeIndicator(value: Boolean): Self = this.set("autoHideHomeIndicator", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAutoHideHomeIndicator: Self = this.set("autoHideHomeIndicator", js.undefined)
+    def setComponentBackgroundColor(value: Color): Self = StObject.set(x, "componentBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setComponentBackgroundColorUndefined: Self = StObject.set(x, "componentBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDirection(value: rtl | ltr | locale): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentBackgroundColor(value: Color): Self = this.set("componentBackgroundColor", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteComponentBackgroundColor: Self = this.set("componentBackgroundColor", js.undefined)
+    def setFitSystemWindows(value: Boolean): Self = StObject.set(x, "fitSystemWindows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: rtl | ltr | locale): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFitSystemWindowsUndefined: Self = StObject.set(x, "fitSystemWindows", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setOrientation(value: js.Array[LayoutOrientation]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitSystemWindows(value: Boolean): Self = this.set("fitSystemWindows", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteFitSystemWindows: Self = this.set("fitSystemWindows", js.undefined)
+    def setOrientationVarargs(value: LayoutOrientation*): Self = StObject.set(x, "orientation", js.Array(value :_*))
     
     @scala.inline
-    def setOrientationVarargs(value: LayoutOrientation*): Self = this.set("orientation", js.Array(value :_*))
+    def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: js.Array[LayoutOrientation]): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
-    
-    @scala.inline
-    def setTopMargin(value: Double): Self = this.set("topMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopMargin: Self = this.set("topMargin", js.undefined)
+    def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
   }
 }

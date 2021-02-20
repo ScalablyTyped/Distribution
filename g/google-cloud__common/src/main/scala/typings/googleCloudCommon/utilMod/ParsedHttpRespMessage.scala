@@ -1,12 +1,13 @@
 package typings.googleCloudCommon.utilMod
 
 import typings.teenyRequest.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParsedHttpRespMessage extends js.Object {
+trait ParsedHttpRespMessage extends StObject {
   
   var err: js.UndefOr[ApiError] = js.native
   
@@ -21,27 +22,15 @@ object ParsedHttpRespMessage {
   }
   
   @scala.inline
-  implicit class ParsedHttpRespMessageOps[Self <: ParsedHttpRespMessage] (val x: Self) extends AnyVal {
+  implicit class ParsedHttpRespMessageMutableBuilder[Self <: ParsedHttpRespMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErr(value: ApiError): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResp(value: Response[_]): Self = this.set("resp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErr(value: ApiError): Self = this.set("err", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErr: Self = this.set("err", js.undefined)
+    def setResp(value: Response[_]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
   }
 }

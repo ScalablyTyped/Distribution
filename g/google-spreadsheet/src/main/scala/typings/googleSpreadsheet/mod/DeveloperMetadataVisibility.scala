@@ -1,5 +1,6 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleSpreadsheet.googleSpreadsheetStrings.DOCUMENT
   - typings.googleSpreadsheet.googleSpreadsheetStrings.PROJECT
 */
-trait DeveloperMetadataVisibility extends js.Object
+trait DeveloperMetadataVisibility extends StObject
 object DeveloperMetadataVisibility {
   
   @scala.inline

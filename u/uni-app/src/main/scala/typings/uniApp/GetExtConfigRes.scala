@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetExtConfigRes extends js.Object {
+trait GetExtConfigRes extends StObject {
   
   /**
     * 调用结果
@@ -26,30 +27,18 @@ object GetExtConfigRes {
   }
   
   @scala.inline
-  implicit class GetExtConfigResOps[Self <: GetExtConfigRes] (val x: Self) extends AnyVal {
+  implicit class GetExtConfigResMutableBuilder[Self <: GetExtConfigRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrMsg: Self = this.set("errMsg", js.undefined)
-    
-    @scala.inline
-    def setExtConfig(value: js.Any): Self = this.set("extConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtConfig: Self = this.set("extConfig", js.undefined)
+    def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
   }
 }

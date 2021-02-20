@@ -1,13 +1,20 @@
 package typings.carbonPictogramsReact
 
+import org.scalablytyped.runtime.Shortcut
 import typings.carbonPictogramsReact.mod.CarbonPictogramType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@carbon/pictograms-react/lib/console", JSImport.Namespace)
-@js.native
-object consoleMod extends js.Object {
+object consoleMod extends Shortcut {
   
+  @JSImport("@carbon/pictograms-react/lib/console", JSImport.Default)
+  @js.native
   val default: CarbonPictogramType = js.native
+  
+  type _To = CarbonPictogramType
+  
+  /* This means you don't have to write `default`, but can instead just say `consoleMod.foo` */
+  override def _to: CarbonPictogramType = default
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object IosStoreAppAssignmentSettings {
   }
   
   @scala.inline
-  implicit class IosStoreAppAssignmentSettingsOps[Self <: IosStoreAppAssignmentSettings] (val x: Self) extends AnyVal {
+  implicit class IosStoreAppAssignmentSettingsMutableBuilder[Self <: IosStoreAppAssignmentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpnConfigurationId(value: NullableOption[String]): Self = this.set("vpnConfigurationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnConfigurationId: Self = this.set("vpnConfigurationId", js.undefined)
-    
-    @scala.inline
-    def setVpnConfigurationIdNull: Self = this.set("vpnConfigurationId", null)
+    def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
   }
 }

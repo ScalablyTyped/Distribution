@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CornerMixin extends js.Object {
+trait CornerMixin extends StObject {
   
   var cornerRadius: Double | js.Symbol = js.native
   
@@ -20,24 +21,12 @@ object CornerMixin {
   }
   
   @scala.inline
-  implicit class CornerMixinOps[Self <: CornerMixin] (val x: Self) extends AnyVal {
+  implicit class CornerMixinMutableBuilder[Self <: CornerMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCornerRadius(value: Double | js.Symbol): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCornerRadius(value: Double | js.Symbol): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCornerSmoothing(value: Double): Self = this.set("cornerSmoothing", value.asInstanceOf[js.Any])
+    def setCornerSmoothing(value: Double): Self = StObject.set(x, "cornerSmoothing", value.asInstanceOf[js.Any])
   }
 }

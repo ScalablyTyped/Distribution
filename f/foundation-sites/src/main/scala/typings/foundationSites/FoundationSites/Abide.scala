@@ -1,13 +1,14 @@
 package typings.foundationSites.FoundationSites
 
 import typings.foundationSites.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/abide.html#javascript-reference
 @js.native
-trait Abide extends js.Object {
+trait Abide extends StObject {
   
   def addErrorClasses(element: JQuery): Unit = js.native
   
@@ -58,57 +59,45 @@ object Abide {
   }
   
   @scala.inline
-  implicit class AbideOps[Self <: Abide] (val x: Self) extends AnyVal {
+  implicit class AbideMutableBuilder[Self <: Abide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddErrorClasses(value: JQuery => Unit): Self = StObject.set(x, "addErrorClasses", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindFormError(value: JQuery => JQuery): Self = StObject.set(x, "findFormError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddErrorClasses(value: JQuery => Unit): Self = this.set("addErrorClasses", js.Any.fromFunction1(value))
+    def setFindLabel(value: JQuery => Boolean): Self = StObject.set(x, "findLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setMatchValidation(value: (JQuery, String, Boolean) => Boolean): Self = StObject.set(x, "matchValidation", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFindFormError(value: JQuery => JQuery): Self = this.set("findFormError", js.Any.fromFunction1(value))
+    def setRemoveErrorClasses(value: JQuery => Unit): Self = StObject.set(x, "removeErrorClasses", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindLabel(value: JQuery => Boolean): Self = this.set("findLabel", js.Any.fromFunction1(value))
+    def setRemoveRadioErrorClasses(value: String => Unit): Self = StObject.set(x, "removeRadioErrorClasses", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatchValidation(value: (JQuery, String, Boolean) => Boolean): Self = this.set("matchValidation", js.Any.fromFunction3(value))
+    def setRequiredChecked(value: JQuery => Boolean): Self = StObject.set(x, "requiredChecked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveErrorClasses(value: JQuery => Unit): Self = this.set("removeErrorClasses", js.Any.fromFunction1(value))
+    def setResetForm(value: () => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemoveRadioErrorClasses(value: String => Unit): Self = this.set("removeRadioErrorClasses", js.Any.fromFunction1(value))
+    def setValidateForm(value: () => Boolean): Self = StObject.set(x, "validateForm", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequiredChecked(value: JQuery => Boolean): Self = this.set("requiredChecked", js.Any.fromFunction1(value))
+    def setValidateInput(value: JQuery => Boolean): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetForm(value: () => Unit): Self = this.set("resetForm", js.Any.fromFunction0(value))
+    def setValidateRadio(value: String => Boolean): Self = StObject.set(x, "validateRadio", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValidateForm(value: () => Boolean): Self = this.set("validateForm", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValidateInput(value: JQuery => Boolean): Self = this.set("validateInput", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateRadio(value: String => Boolean): Self = this.set("validateRadio", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateText(value: (JQuery, String) => Boolean): Self = this.set("validateText", js.Any.fromFunction2(value))
+    def setValidateText(value: (JQuery, String) => Boolean): Self = StObject.set(x, "validateText", js.Any.fromFunction2(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@uirouter/angularjs", "core.Category")
 @js.native
-object Category extends js.Object {
+object Category extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.uirouterCore.traceMod.Category with Double] = js.native

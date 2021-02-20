@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICalendarIdentifiersStatics extends js.Object {
+trait ICalendarIdentifiersStatics extends StObject {
   
   var gregorian: String = js.native
   
@@ -44,45 +45,33 @@ object ICalendarIdentifiersStatics {
   }
   
   @scala.inline
-  implicit class ICalendarIdentifiersStaticsOps[Self <: ICalendarIdentifiersStatics] (val x: Self) extends AnyVal {
+  implicit class ICalendarIdentifiersStaticsMutableBuilder[Self <: ICalendarIdentifiersStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGregorian(value: String): Self = StObject.set(x, "gregorian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHebrew(value: String): Self = StObject.set(x, "hebrew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHijri(value: String): Self = StObject.set(x, "hijri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGregorian(value: String): Self = this.set("gregorian", value.asInstanceOf[js.Any])
+    def setJapanese(value: String): Self = StObject.set(x, "japanese", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHebrew(value: String): Self = this.set("hebrew", value.asInstanceOf[js.Any])
+    def setJulian(value: String): Self = StObject.set(x, "julian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHijri(value: String): Self = this.set("hijri", value.asInstanceOf[js.Any])
+    def setKorean(value: String): Self = StObject.set(x, "korean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJapanese(value: String): Self = this.set("japanese", value.asInstanceOf[js.Any])
+    def setTaiwan(value: String): Self = StObject.set(x, "taiwan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJulian(value: String): Self = this.set("julian", value.asInstanceOf[js.Any])
+    def setThai(value: String): Self = StObject.set(x, "thai", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKorean(value: String): Self = this.set("korean", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaiwan(value: String): Self = this.set("taiwan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThai(value: String): Self = this.set("thai", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUmAlQura(value: String): Self = this.set("umAlQura", value.asInstanceOf[js.Any])
+    def setUmAlQura(value: String): Self = StObject.set(x, "umAlQura", value.asInstanceOf[js.Any])
   }
 }

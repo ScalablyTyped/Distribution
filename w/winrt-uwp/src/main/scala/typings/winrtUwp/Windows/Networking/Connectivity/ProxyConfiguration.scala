@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the proxy configuration for the current user. */
 @js.native
-trait ProxyConfiguration extends js.Object {
+trait ProxyConfiguration extends StObject {
   
   /** Gets a value that indicates if this configuration can connect directly. */
   var canConnectDirectly: Boolean = js.native
@@ -25,24 +26,12 @@ object ProxyConfiguration {
   }
   
   @scala.inline
-  implicit class ProxyConfigurationOps[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
+  implicit class ProxyConfigurationMutableBuilder[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanConnectDirectly(value: Boolean): Self = StObject.set(x, "canConnectDirectly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanConnectDirectly(value: Boolean): Self = this.set("canConnectDirectly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProxyUris(value: IVectorView[Uri]): Self = this.set("proxyUris", value.asInstanceOf[js.Any])
+    def setProxyUris(value: IVectorView[Uri]): Self = StObject.set(x, "proxyUris", value.asInstanceOf[js.Any])
   }
 }

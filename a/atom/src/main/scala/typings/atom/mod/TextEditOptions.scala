@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.atom.atomStrings.skip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEditOptions extends js.Object {
+trait TextEditOptions extends StObject {
   
   /** If true, all line endings will be normalized to match the editor's current mode. */
   var normalizeLineEndings: js.UndefOr[Boolean] = js.native
@@ -26,30 +27,18 @@ object TextEditOptions {
   }
   
   @scala.inline
-  implicit class TextEditOptionsOps[Self <: TextEditOptions] (val x: Self) extends AnyVal {
+  implicit class TextEditOptionsMutableBuilder[Self <: TextEditOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNormalizeLineEndingsUndefined: Self = StObject.set(x, "normalizeLineEndings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUndo(value: skip): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizeLineEndings(value: Boolean): Self = this.set("normalizeLineEndings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalizeLineEndings: Self = this.set("normalizeLineEndings", js.undefined)
-    
-    @scala.inline
-    def setUndo(value: skip): Self = this.set("undo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUndo: Self = this.set("undo", js.undefined)
+    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
   }
 }

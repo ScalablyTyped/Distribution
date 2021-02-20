@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionInput extends js.Object {
+trait ConnectionInput extends StObject {
   
   /**
     * These key-value pairs define parameters for the connection.
@@ -46,48 +47,36 @@ object ConnectionInput {
   }
   
   @scala.inline
-  implicit class ConnectionInputOps[Self <: ConnectionInput] (val x: Self) extends AnyVal {
+  implicit class ConnectionInputMutableBuilder[Self <: ConnectionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionProperties(value: ConnectionProperties): Self = StObject.set(x, "ConnectionProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "ConnectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionProperties(value: ConnectionProperties): Self = this.set("ConnectionProperties", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setConnectionType(value: ConnectionType): Self = this.set("ConnectionType", value.asInstanceOf[js.Any])
+    def setMatchCriteria(value: MatchCriteria): Self = StObject.set(x, "MatchCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setMatchCriteriaUndefined: Self = StObject.set(x, "MatchCriteria", js.undefined)
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setMatchCriteriaVarargs(value: NameString*): Self = StObject.set(x, "MatchCriteria", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCriteriaVarargs(value: NameString*): Self = this.set("MatchCriteria", js.Array(value :_*))
+    def setPhysicalConnectionRequirements(value: PhysicalConnectionRequirements): Self = StObject.set(x, "PhysicalConnectionRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCriteria(value: MatchCriteria): Self = this.set("MatchCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchCriteria: Self = this.set("MatchCriteria", js.undefined)
-    
-    @scala.inline
-    def setPhysicalConnectionRequirements(value: PhysicalConnectionRequirements): Self = this.set("PhysicalConnectionRequirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhysicalConnectionRequirements: Self = this.set("PhysicalConnectionRequirements", js.undefined)
+    def setPhysicalConnectionRequirementsUndefined: Self = StObject.set(x, "PhysicalConnectionRequirements", js.undefined)
   }
 }

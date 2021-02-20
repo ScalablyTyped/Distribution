@@ -1,5 +1,6 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapi.hapiStrings.finish
   - typings.hapi.hapiStrings.disconnect
 */
-trait RequestEventType extends js.Object
+trait RequestEventType extends StObject
 object RequestEventType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThumbnailDetails extends js.Object {
+trait ThumbnailDetails extends StObject {
   
   /** The default image for this resource. */
   var default: js.UndefOr[Thumbnail] = js.native
@@ -31,48 +32,36 @@ object ThumbnailDetails {
   }
   
   @scala.inline
-  implicit class ThumbnailDetailsOps[Self <: ThumbnailDetails] (val x: Self) extends AnyVal {
+  implicit class ThumbnailDetailsMutableBuilder[Self <: ThumbnailDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: Thumbnail): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHigh(value: Thumbnail): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Thumbnail): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setMaxres(value: Thumbnail): Self = StObject.set(x, "maxres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh(value: Thumbnail): Self = this.set("high", value.asInstanceOf[js.Any])
+    def setMaxresUndefined: Self = StObject.set(x, "maxres", js.undefined)
     
     @scala.inline
-    def deleteHigh: Self = this.set("high", js.undefined)
+    def setMedium(value: Thumbnail): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxres(value: Thumbnail): Self = this.set("maxres", value.asInstanceOf[js.Any])
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def deleteMaxres: Self = this.set("maxres", js.undefined)
+    def setStandard(value: Thumbnail): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: Thumbnail): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
-    
-    @scala.inline
-    def setStandard(value: Thumbnail): Self = this.set("standard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandard: Self = this.set("standard", js.undefined)
+    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.polished.anon
 
 import typings.polished.polishedStrings.BackslashLeftparenthesis
 import typings.polished.polishedStrings.Leftparenthesis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixRegSymbol extends js.Object {
+trait PrefixRegSymbol extends StObject {
   
   var prefix: RightToLeftSymbol = js.native
   
@@ -24,27 +25,15 @@ object PrefixRegSymbol {
   }
   
   @scala.inline
-  implicit class PrefixRegSymbolOps[Self <: PrefixRegSymbol] (val x: Self) extends AnyVal {
+  implicit class PrefixRegSymbolMutableBuilder[Self <: PrefixRegSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrefix(value: RightToLeftSymbol): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegSymbol(value: BackslashLeftparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrefix(value: RightToLeftSymbol): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegSymbol(value: BackslashLeftparenthesis): Self = this.set("regSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: Leftparenthesis): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: Leftparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

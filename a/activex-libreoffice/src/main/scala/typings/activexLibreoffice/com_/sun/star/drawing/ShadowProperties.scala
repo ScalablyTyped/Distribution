@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style for rendering a shadow. */
 @js.native
-trait ShadowProperties extends js.Object {
+trait ShadowProperties extends StObject {
   
   /**
     * enables/disables the shadow of a {@link Shape} .
@@ -43,33 +44,21 @@ object ShadowProperties {
   }
   
   @scala.inline
-  implicit class ShadowPropertiesOps[Self <: ShadowProperties] (val x: Self) extends AnyVal {
+  implicit class ShadowPropertiesMutableBuilder[Self <: ShadowProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShadowColor(value: Color): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadowTransparence(value: Double): Self = StObject.set(x, "ShadowTransparence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    def setShadowXDistance(value: Double): Self = StObject.set(x, "ShadowXDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Color): Self = this.set("ShadowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowTransparence(value: Double): Self = this.set("ShadowTransparence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowXDistance(value: Double): Self = this.set("ShadowXDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowYDistance(value: Double): Self = this.set("ShadowYDistance", value.asInstanceOf[js.Any])
+    def setShadowYDistance(value: Double): Self = StObject.set(x, "ShadowYDistance", value.asInstanceOf[js.Any])
   }
 }

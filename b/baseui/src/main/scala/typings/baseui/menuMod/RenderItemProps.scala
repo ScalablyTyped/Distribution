@@ -1,12 +1,13 @@
 package typings.baseui.menuMod
 
 import typings.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderItemProps extends js.Object {
+trait RenderItemProps extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.native
   
@@ -29,60 +30,48 @@ object RenderItemProps {
   }
   
   @scala.inline
-  implicit class RenderItemPropsOps[Self <: RenderItemProps] (val x: Self) extends AnyVal {
+  implicit class RenderItemPropsMutableBuilder[Self <: RenderItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFocused(value: Boolean): Self = this.set("isFocused", value.asInstanceOf[js.Any])
+    def setIsHighlightedUndefined: Self = StObject.set(x, "isHighlighted", js.undefined)
     
     @scala.inline
-    def deleteIsFocused: Self = this.set("isFocused", js.undefined)
+    def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHighlighted(value: Boolean): Self = this.set("isHighlighted", value.asInstanceOf[js.Any])
+    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsHighlighted: Self = this.set("isHighlighted", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRef(value: Ref[_]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setResetMenu(value: () => _): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setRefNull: Self = this.set("ref", null)
-    
-    @scala.inline
-    def setResetMenu(value: () => _): Self = this.set("resetMenu", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteResetMenu: Self = this.set("resetMenu", js.undefined)
+    def setResetMenuUndefined: Self = StObject.set(x, "resetMenu", js.undefined)
   }
 }

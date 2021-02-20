@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lane extends js.Object {
+trait Lane extends StObject {
   
   /**
     * Array of signs for each turn lane. There can be multiple signs. For example, a turning lane can have a sign with an arrow pointing left and another sign with an arrow pointing straight.
@@ -27,27 +28,15 @@ object Lane {
   }
   
   @scala.inline
-  implicit class LaneOps[Self <: Lane] (val x: Self) extends AnyVal {
+  implicit class LaneMutableBuilder[Self <: Lane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndications(value: js.Array[String]): Self = StObject.set(x, "indications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndicationsVarargs(value: String*): Self = StObject.set(x, "indications", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndicationsVarargs(value: String*): Self = this.set("indications", js.Array(value :_*))
-    
-    @scala.inline
-    def setIndications(value: js.Array[String]): Self = this.set("indications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

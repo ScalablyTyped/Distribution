@@ -1,7 +1,8 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _RequestCancelActivityTaskFailedCause extends js.Object
+trait _RequestCancelActivityTaskFailedCause extends StObject

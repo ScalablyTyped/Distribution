@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param batchGroupId - Link this batch to a specific batch group. This is done automatically with default batches.
   */
 @js.native
-trait Batch extends js.Object {
+trait Batch extends StObject {
   
   /**
     * Link this batch to a specific batch group. This is done automatically with default batches.
@@ -57,39 +58,27 @@ object Batch {
   }
   
   @scala.inline
-  implicit class BatchOps[Self <: Batch] (val x: Self) extends AnyVal {
+  implicit class BatchMutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchGroupId(value: Double): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchGroupIdUndefined: Self = StObject.set(x, "batchGroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamic(value: Boolean): Self = this.set("dynamic", value.asInstanceOf[js.Any])
+    def setMeshInstance(value: MeshInstance): Self = StObject.set(x, "meshInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshInstance(value: MeshInstance): Self = this.set("meshInstance", value.asInstanceOf[js.Any])
+    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setOrigMeshInstances(value: js.Array[MeshInstance]): Self = StObject.set(x, "origMeshInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigMeshInstancesVarargs(value: MeshInstance*): Self = this.set("origMeshInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrigMeshInstances(value: js.Array[MeshInstance]): Self = this.set("origMeshInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBatchGroupId(value: Double): Self = this.set("batchGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchGroupId: Self = this.set("batchGroupId", js.undefined)
+    def setOrigMeshInstancesVarargs(value: MeshInstance*): Self = StObject.set(x, "origMeshInstances", js.Array(value :_*))
   }
 }

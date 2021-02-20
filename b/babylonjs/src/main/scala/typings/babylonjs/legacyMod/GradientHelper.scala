@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.gradientsMod.IValueGradient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class GradientHelper ()
   extends typings.babylonjs.indexMod.GradientHelper
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "GradientHelper")
-@js.native
-object GradientHelper extends js.Object {
+object GradientHelper {
   
   /**
     * Gets the current gradient from an array of IValueGradient
@@ -20,6 +19,8 @@ object GradientHelper extends js.Object {
     * @param gradients defines the array of IValueGradient
     * @param updateFunc defines the callback function used to get the final value from the selected gradients
     */
+  @JSImport("babylonjs/Legacy/legacy", "GradientHelper.GetCurrentGradient")
+  @js.native
   def GetCurrentGradient(
     ratio: Double,
     gradients: js.Array[IValueGradient],

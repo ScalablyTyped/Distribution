@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about the playlist item&#39;s privacy status.
   */
 @js.native
-trait SchemaPlaylistItemStatus extends js.Object {
+trait SchemaPlaylistItemStatus extends StObject {
   
   /**
     * This resource&#39;s privacy status.
@@ -24,24 +25,12 @@ object SchemaPlaylistItemStatus {
   }
   
   @scala.inline
-  implicit class SchemaPlaylistItemStatusOps[Self <: SchemaPlaylistItemStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaPlaylistItemStatusMutableBuilder[Self <: SchemaPlaylistItemStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = this.set("privacyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyStatus: Self = this.set("privacyStatus", js.undefined)
+    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
   }
 }

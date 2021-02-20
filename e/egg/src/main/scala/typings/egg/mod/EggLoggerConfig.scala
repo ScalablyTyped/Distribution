@@ -4,13 +4,14 @@ import typings.egg.anon.PartialEggLoggerOptions
 import typings.egg.eggStrings.duplicate
 import typings.egg.eggStrings.ignore
 import typings.egg.eggStrings.redirect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent egg.egg.RemoveSpecProp<egg-logger.egg-logger.EggLoggersOptions, 'type'> */
 @js.native
-trait EggLoggerConfig extends js.Object {
+trait EggLoggerConfig extends StObject {
   
   var agentLogName: String = js.native
   
@@ -56,99 +57,87 @@ object EggLoggerConfig {
   }
   
   @scala.inline
-  implicit class EggLoggerConfigOps[Self <: EggLoggerConfig] (val x: Self) extends AnyVal {
+  implicit class EggLoggerConfigMutableBuilder[Self <: EggLoggerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowDebugAtProdUndefined: Self = StObject.set(x, "allowDebugAtProd", js.undefined)
     
     @scala.inline
-    def setAgentLogName(value: String): Self = this.set("agentLogName", value.asInstanceOf[js.Any])
+    def setAppLogName(value: String): Self = StObject.set(x, "appLogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppLogName(value: String): Self = this.set("appLogName", value.asInstanceOf[js.Any])
+    def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreLogName(value: String): Self = this.set("coreLogName", value.asInstanceOf[js.Any])
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorLogName(value: String): Self = this.set("errorLogName", value.asInstanceOf[js.Any])
+    def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
     
     @scala.inline
-    def setAllowDebugAtProd(value: Boolean): Self = this.set("allowDebugAtProd", value.asInstanceOf[js.Any])
+    def setConsoleLevel(value: typings.eggLogger.mod.LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowDebugAtProd: Self = this.set("allowDebugAtProd", js.undefined)
+    def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
     
     @scala.inline
-    def setBuffer(value: Boolean): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setCoreLogName(value: String): Self = StObject.set(x, "coreLogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setCoreLogger(value: PartialEggLoggerOptions): Self = StObject.set(x, "coreLogger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcentrateError(value: duplicate | redirect | ignore): Self = this.set("concentrateError", value.asInstanceOf[js.Any])
+    def setCoreLoggerUndefined: Self = StObject.set(x, "coreLogger", js.undefined)
     
     @scala.inline
-    def deleteConcentrateError: Self = this.set("concentrateError", js.undefined)
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsoleLevel(value: typings.eggLogger.mod.LoggerLevel): Self = this.set("consoleLevel", value.asInstanceOf[js.Any])
+    def setDisableConsoleAfterReady(value: Boolean): Self = StObject.set(x, "disableConsoleAfterReady", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConsoleLevel: Self = this.set("consoleLevel", js.undefined)
+    def setDisableConsoleAfterReadyUndefined: Self = StObject.set(x, "disableConsoleAfterReady", js.undefined)
     
     @scala.inline
-    def setCoreLogger(value: PartialEggLoggerOptions): Self = this.set("coreLogger", value.asInstanceOf[js.Any])
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoreLogger: Self = this.set("coreLogger", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setDisableConsoleAfterReady(value: Boolean): Self = this.set("disableConsoleAfterReady", value.asInstanceOf[js.Any])
+    def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableConsoleAfterReady: Self = this.set("disableConsoleAfterReady", js.undefined)
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
     
     @scala.inline
-    def setEnv(value: String): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setErrorLogName(value: String): Self = StObject.set(x, "errorLogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setLevel(value: typings.eggLogger.mod.LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteEol: Self = this.set("eol", js.undefined)
+    def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: typings.eggLogger.mod.LoggerLevel): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
-    
-    @scala.inline
-    def setOutputJSON(value: Boolean): Self = this.set("outputJSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputJSON: Self = this.set("outputJSON", js.undefined)
+    def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
   }
 }

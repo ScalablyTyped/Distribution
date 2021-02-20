@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesSplitShardInputMod.SplitShardInpu
 import typings.awsSdkClientKinesisBrowser.typesSplitShardOutputMod.SplitShardOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/SplitShardCommand", JSImport.Namespace)
-@js.native
-object splitShardCommandMod extends js.Object {
+object splitShardCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/SplitShardCommand", "SplitShardCommand")
   @js.native
   class SplitShardCommand protected () extends Command[
           InputTypesUnion, 

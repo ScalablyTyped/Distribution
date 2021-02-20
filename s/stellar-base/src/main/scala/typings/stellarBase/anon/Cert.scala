@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.AuthCert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cert extends js.Object {
+trait Cert extends StObject {
   
   var cert: AuthCert = js.native
   
@@ -46,45 +47,33 @@ object Cert {
   }
   
   @scala.inline
-  implicit class CertOps[Self <: Cert] (val x: Self) extends AnyVal {
+  implicit class CertMutableBuilder[Self <: Cert] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCert(value: AuthCert): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLedgerVersion(value: Double): Self = StObject.set(x, "ledgerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListeningPort(value: Double): Self = StObject.set(x, "listeningPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: AuthCert): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setNetworkId(value: Buffer): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLedgerVersion(value: Double): Self = this.set("ledgerVersion", value.asInstanceOf[js.Any])
+    def setNonce(value: Buffer): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListeningPort(value: Double): Self = this.set("listeningPort", value.asInstanceOf[js.Any])
+    def setOverlayMinVersion(value: Double): Self = StObject.set(x, "overlayMinVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkId(value: Buffer): Self = this.set("networkId", value.asInstanceOf[js.Any])
+    def setOverlayVersion(value: Double): Self = StObject.set(x, "overlayVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: Buffer): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setPeerId(value: typings.stellarBase.xdrMod.xdr.NodeId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayMinVersion(value: Double): Self = this.set("overlayMinVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlayVersion(value: Double): Self = this.set("overlayVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerId(value: typings.stellarBase.xdrMod.xdr.NodeId): Self = this.set("peerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionStr(value: String | Buffer): Self = this.set("versionStr", value.asInstanceOf[js.Any])
+    def setVersionStr(value: String | Buffer): Self = StObject.set(x, "versionStr", value.asInstanceOf[js.Any])
   }
 }

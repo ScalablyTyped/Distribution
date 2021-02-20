@@ -7,16 +7,16 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.sphereMod.Sphere
 import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Plane", JSImport.Namespace)
-@js.native
-object planeMod extends js.Object {
+object planeMod {
   
+  @JSImport("three/src/math/Plane", "Plane")
   @js.native
-  class Plane () extends js.Object {
+  class Plane () extends StObject {
     def this(normal: Vector3) = this()
     def this(normal: js.UndefOr[scala.Nothing], constant: Double) = this()
     def this(normal: Vector3, constant: Double) = this()

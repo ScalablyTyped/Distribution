@@ -3,13 +3,12 @@ package typings.cathoQuantum
 import typings.cathoQuantum.anon.Alt
 import typings.cathoQuantum.anon.`8`
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@catho/quantum/Card/Thumbnail", JSImport.Namespace)
-@js.native
-object thumbnailMod extends js.Object {
+object thumbnailMod {
   
   type Thumbnail = ComponentType[Alt] with `8`
 }

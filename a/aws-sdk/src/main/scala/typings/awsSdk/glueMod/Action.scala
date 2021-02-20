@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends js.Object {
+trait Action extends StObject {
   
   /**
     * The job arguments used when this trigger fires. For this job run, they replace the default arguments set in the job definition itself. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
@@ -46,54 +47,42 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: GenericMap): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "Arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: GenericMap): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    def setCrawlerNameUndefined: Self = StObject.set(x, "CrawlerName", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlerName(value: NameString): Self = this.set("CrawlerName", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteCrawlerName: Self = this.set("CrawlerName", js.undefined)
+    def setNotificationProperty(value: NotificationProperty): Self = StObject.set(x, "NotificationProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setNotificationPropertyUndefined: Self = StObject.set(x, "NotificationProperty", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setSecurityConfiguration(value: NameString): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
     
     @scala.inline
-    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
   }
 }

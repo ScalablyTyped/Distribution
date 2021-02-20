@@ -2,12 +2,13 @@ package typings.jqueryFancytree.Fancytree
 
 import typings.jquery.JQueryPromise
 import typings.jqueryFancytree.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fancytree extends js.Object {
+trait Fancytree extends StObject {
   
   @JSName("$container")
   var $container: JQuery = js.native
@@ -196,7 +197,7 @@ trait Fancytree extends js.Object {
   def render(force: Boolean): Unit = js.native
   def render(force: Boolean, deep: Boolean): Unit = js.native
   
-   //JQueryUI.Widget;
+  //JQueryUI.Widget;
   var rootNode: FancytreeNode = js.native
   
   /** @param flag (default = true) */

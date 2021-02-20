@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   /**
     * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
@@ -71,78 +72,66 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTransferSubscriberFeePercentUndefined: Self = StObject.set(x, "DataTransferSubscriberFeePercent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecryption(value: Encryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDecryptionUndefined: Self = StObject.set(x, "Decryption", js.undefined)
     
     @scala.inline
-    def setSourceArn(value: string): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTransferSubscriberFeePercent(value: integer): Self = this.set("DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDataTransferSubscriberFeePercent: Self = this.set("DataTransferSubscriberFeePercent", js.undefined)
+    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecryption(value: Encryption): Self = this.set("Decryption", value.asInstanceOf[js.Any])
+    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
     @scala.inline
-    def deleteDecryption: Self = this.set("Decryption", js.undefined)
+    def setIngestIp(value: string): Self = StObject.set(x, "IngestIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIngestIpUndefined: Self = StObject.set(x, "IngestIp", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
+    def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
     
     @scala.inline
-    def deleteEntitlementArn: Self = this.set("EntitlementArn", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestIp(value: string): Self = this.set("IngestIp", value.asInstanceOf[js.Any])
+    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIngestIp: Self = this.set("IngestIp", js.undefined)
+    def setTransport(value: Transport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestPort(value: integer): Self = this.set("IngestPort", value.asInstanceOf[js.Any])
+    def setTransportUndefined: Self = StObject.set(x, "Transport", js.undefined)
     
     @scala.inline
-    def deleteIngestPort: Self = this.set("IngestPort", js.undefined)
+    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport(value: Transport): Self = this.set("Transport", value.asInstanceOf[js.Any])
+    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
     
     @scala.inline
-    def deleteTransport: Self = this.set("Transport", js.undefined)
+    def setWhitelistCidr(value: string): Self = StObject.set(x, "WhitelistCidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcInterfaceName(value: string): Self = this.set("VpcInterfaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcInterfaceName: Self = this.set("VpcInterfaceName", js.undefined)
-    
-    @scala.inline
-    def setWhitelistCidr(value: string): Self = this.set("WhitelistCidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistCidr: Self = this.set("WhitelistCidr", js.undefined)
+    def setWhitelistCidrUndefined: Self = StObject.set(x, "WhitelistCidr", js.undefined)
   }
 }

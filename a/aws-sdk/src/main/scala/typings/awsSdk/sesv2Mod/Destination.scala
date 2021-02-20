@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Destination extends js.Object {
+trait Destination extends StObject {
   
   /**
     * An array that contains the email addresses of the "BCC" (blind carbon copy) recipients for the email.
@@ -31,45 +32,33 @@ object Destination {
   }
   
   @scala.inline
-  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBccAddresses(value: EmailAddressList): Self = StObject.set(x, "BccAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBccAddressesUndefined: Self = StObject.set(x, "BccAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBccAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "BccAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setBccAddressesVarargs(value: EmailAddress*): Self = this.set("BccAddresses", js.Array(value :_*))
+    def setCcAddresses(value: EmailAddressList): Self = StObject.set(x, "CcAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBccAddresses(value: EmailAddressList): Self = this.set("BccAddresses", value.asInstanceOf[js.Any])
+    def setCcAddressesUndefined: Self = StObject.set(x, "CcAddresses", js.undefined)
     
     @scala.inline
-    def deleteBccAddresses: Self = this.set("BccAddresses", js.undefined)
+    def setCcAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "CcAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setCcAddressesVarargs(value: EmailAddress*): Self = this.set("CcAddresses", js.Array(value :_*))
+    def setToAddresses(value: EmailAddressList): Self = StObject.set(x, "ToAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcAddresses(value: EmailAddressList): Self = this.set("CcAddresses", value.asInstanceOf[js.Any])
+    def setToAddressesUndefined: Self = StObject.set(x, "ToAddresses", js.undefined)
     
     @scala.inline
-    def deleteCcAddresses: Self = this.set("CcAddresses", js.undefined)
-    
-    @scala.inline
-    def setToAddressesVarargs(value: EmailAddress*): Self = this.set("ToAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setToAddresses(value: EmailAddressList): Self = this.set("ToAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToAddresses: Self = this.set("ToAddresses", js.undefined)
+    def setToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ToAddresses", js.Array(value :_*))
   }
 }

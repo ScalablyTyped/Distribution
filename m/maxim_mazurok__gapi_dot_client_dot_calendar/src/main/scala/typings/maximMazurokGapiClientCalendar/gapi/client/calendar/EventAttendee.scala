@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventAttendee extends js.Object {
+trait EventAttendee extends StObject {
   
   /** Number of additional guests. Optional. The default is 0. */
   var additionalGuests: js.UndefOr[Double] = js.native
@@ -55,78 +56,66 @@ object EventAttendee {
   }
   
   @scala.inline
-  implicit class EventAttendeeOps[Self <: EventAttendee] (val x: Self) extends AnyVal {
+  implicit class EventAttendeeMutableBuilder[Self <: EventAttendee] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalGuests(value: Double): Self = StObject.set(x, "additionalGuests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalGuestsUndefined: Self = StObject.set(x, "additionalGuests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalGuests(value: Double): Self = this.set("additionalGuests", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteAdditionalGuests: Self = this.set("additionalGuests", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOrganizer(value: Boolean): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
     
     @scala.inline
-    def deleteOptional: Self = this.set("optional", js.undefined)
+    def setResource(value: Boolean): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizer(value: Boolean): Self = this.set("organizer", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteOrganizer: Self = this.set("organizer", js.undefined)
+    def setResponseStatus(value: String): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Boolean): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResponseStatusUndefined: Self = StObject.set(x, "responseStatus", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStatus(value: String): Self = this.set("responseStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseStatus: Self = this.set("responseStatus", js.undefined)
-    
-    @scala.inline
-    def setSelf(value: Boolean): Self = this.set("self", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelf: Self = this.set("self", js.undefined)
+    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
   }
 }

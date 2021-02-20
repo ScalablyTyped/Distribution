@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDistributionsByRealtimeLogConfigRequest extends js.Object {
+trait ListDistributionsByRealtimeLogConfigRequest extends StObject {
   
   /**
     * Use this field when paginating results to indicate where to begin in your list of distributions. The response includes distributions in the list that occur after the marker. To get the next page of the list, set this field’s value to the value of NextMarker from the current page’s response.
@@ -36,42 +37,30 @@ object ListDistributionsByRealtimeLogConfigRequest {
   }
   
   @scala.inline
-  implicit class ListDistributionsByRealtimeLogConfigRequestOps[Self <: ListDistributionsByRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
+  implicit class ListDistributionsByRealtimeLogConfigRequestMutableBuilder[Self <: ListDistributionsByRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setRealtimeLogConfigArn(value: String): Self = StObject.set(x, "RealtimeLogConfigArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: String): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setRealtimeLogConfigArnUndefined: Self = StObject.set(x, "RealtimeLogConfigArn", js.undefined)
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setRealtimeLogConfigName(value: String): Self = StObject.set(x, "RealtimeLogConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealtimeLogConfigArn(value: String): Self = this.set("RealtimeLogConfigArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealtimeLogConfigArn: Self = this.set("RealtimeLogConfigArn", js.undefined)
-    
-    @scala.inline
-    def setRealtimeLogConfigName(value: String): Self = this.set("RealtimeLogConfigName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealtimeLogConfigName: Self = this.set("RealtimeLogConfigName", js.undefined)
+    def setRealtimeLogConfigNameUndefined: Self = StObject.set(x, "RealtimeLogConfigName", js.undefined)
   }
 }

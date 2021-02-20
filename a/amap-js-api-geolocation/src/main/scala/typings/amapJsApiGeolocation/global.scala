@@ -1,17 +1,16 @@
 package typings.amapJsApiGeolocation
 
 import typings.amapJsApiGeolocation.AMap.Geolocation.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.Geolocation")
     @js.native
     /**
       * 定位服务

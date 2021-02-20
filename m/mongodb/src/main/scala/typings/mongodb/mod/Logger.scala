@@ -1,12 +1,13 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Logger")
 @js.native
-class Logger protected () extends js.Object {
+class Logger protected () extends StObject {
   def this(className: String) = this()
   def this(className: String, options: LoggerOptions) = this()
   
@@ -51,30 +52,38 @@ class Logger protected () extends js.Object {
   def warn(message: String, state: LoggerState): Unit = js.native
 }
 /* static members */
-@JSImport("mongodb", "Logger")
-@js.native
-object Logger extends js.Object {
+object Logger {
   
   /**
     * Get the current logger function
     */
+  @JSImport("mongodb", "Logger.currentLogger")
+  @js.native
   def currentLogger(): log = js.native
   
   /**
     * Set what classes to log.
     */
+  @JSImport("mongodb", "Logger.filter")
+  @js.native
   def filter(`type`: String, values: js.Array[String]): Unit = js.native
   
   /**
     * Resets the logger to default settings, error and no filtered classes
     */
+  @JSImport("mongodb", "Logger.reset")
+  @js.native
   def reset(): Unit = js.native
   
   //Set the current logger function
+  @JSImport("mongodb", "Logger.setCurrentLogger")
+  @js.native
   def setCurrentLogger(log: log): Unit = js.native
   
   /**
     * Set the current log level
     */
+  @JSImport("mongodb", "Logger.setLevel")
+  @js.native
   def setLevel(level: String): Unit = js.native
 }

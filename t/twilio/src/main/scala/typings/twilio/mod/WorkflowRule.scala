@@ -1,13 +1,14 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "WorkflowRule")
 @js.native
- // Defined property mapped to friendly_name.
-class WorkflowRule () extends js.Object {
+// Defined property mapped to friendly_name.
+class WorkflowRule () extends StObject {
   def this(options: WorkflowRuleOptions) = this()
   
   var expression: String = js.native

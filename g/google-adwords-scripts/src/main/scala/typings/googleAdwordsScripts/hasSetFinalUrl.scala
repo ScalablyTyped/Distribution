@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait hasSetFinalUrl extends js.Object {
+trait hasSetFinalUrl extends StObject {
   
   def setFinalUrl(url: String): Unit = js.native
   
@@ -20,24 +21,12 @@ object hasSetFinalUrl {
   }
   
   @scala.inline
-  implicit class hasSetFinalUrlOps[Self <: hasSetFinalUrl] (val x: Self) extends AnyVal {
+  implicit class hasSetFinalUrlMutableBuilder[Self <: hasSetFinalUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetFinalUrl(value: String => Unit): Self = StObject.set(x, "setFinalUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetFinalUrl(value: String => Unit): Self = this.set("setFinalUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMobileFinalUrl(value: String => Unit): Self = this.set("setMobileFinalUrl", js.Any.fromFunction1(value))
+    def setSetMobileFinalUrl(value: String => Unit): Self = StObject.set(x, "setMobileFinalUrl", js.Any.fromFunction1(value))
   }
 }

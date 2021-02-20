@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReelsTrayFeedResponseUser extends js.Object {
+trait ReelsTrayFeedResponseUser extends StObject {
   
   var friendship_status: js.UndefOr[ReelsTrayFeedResponseFriendshipStatus] = js.native
   
@@ -32,63 +33,51 @@ object ReelsTrayFeedResponseUser {
   }
   
   @scala.inline
-  implicit class ReelsTrayFeedResponseUserOps[Self <: ReelsTrayFeedResponseUser] (val x: Self) extends AnyVal {
+  implicit class ReelsTrayFeedResponseUserMutableBuilder[Self <: ReelsTrayFeedResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriendship_status(value: ReelsTrayFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFriendship_statusUndefined: Self = StObject.set(x, "friendship_status", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setFull_nameUndefined: Self = StObject.set(x, "full_name", js.undefined)
     
     @scala.inline
-    def setFriendship_status(value: ReelsTrayFeedResponseFriendshipStatus): Self = this.set("friendship_status", value.asInstanceOf[js.Any])
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFriendship_status: Self = this.set("friendship_status", js.undefined)
+    def setIs_privateUndefined: Self = StObject.set(x, "is_private", js.undefined)
     
     @scala.inline
-    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFull_name: Self = this.set("full_name", js.undefined)
+    def setIs_verifiedUndefined: Self = StObject.set(x, "is_verified", js.undefined)
     
     @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_private: Self = this.set("is_private", js.undefined)
+    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
     
     @scala.inline
-    def deleteIs_verified: Self = this.set("is_verified", js.undefined)
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    def setProfile_pic_urlUndefined: Self = StObject.set(x, "profile_pic_url", js.undefined)
     
     @scala.inline
-    def deleteProfile_pic_id: Self = this.set("profile_pic_id", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile_pic_url: Self = this.set("profile_pic_url", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to all subsequent createLanguageService calls.
   */
 @js.native
-trait DocumentRegistry extends js.Object {
+trait DocumentRegistry extends StObject {
   
   /**
     * Request a stored SourceFile with a given fileName and compilationSettings.

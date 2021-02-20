@@ -1,11 +1,12 @@
 package typings.awsSdk.networkmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterTransitGatewayResponse extends js.Object {
+trait RegisterTransitGatewayResponse extends StObject {
   
   /**
     * Information about the transit gateway registration.
@@ -21,24 +22,12 @@ object RegisterTransitGatewayResponse {
   }
   
   @scala.inline
-  implicit class RegisterTransitGatewayResponseOps[Self <: RegisterTransitGatewayResponse] (val x: Self) extends AnyVal {
+  implicit class RegisterTransitGatewayResponseMutableBuilder[Self <: RegisterTransitGatewayResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransitGatewayRegistration(value: TransitGatewayRegistration): Self = StObject.set(x, "TransitGatewayRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransitGatewayRegistration(value: TransitGatewayRegistration): Self = this.set("TransitGatewayRegistration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayRegistration: Self = this.set("TransitGatewayRegistration", js.undefined)
+    def setTransitGatewayRegistrationUndefined: Self = StObject.set(x, "TransitGatewayRegistration", js.undefined)
   }
 }

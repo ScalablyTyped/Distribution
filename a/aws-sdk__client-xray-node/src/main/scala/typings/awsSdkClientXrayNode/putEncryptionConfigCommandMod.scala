@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesPutEncryptionConfigOutputMod.PutEncrypt
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/PutEncryptionConfigCommand", JSImport.Namespace)
-@js.native
-object putEncryptionConfigCommandMod extends js.Object {
+object putEncryptionConfigCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/PutEncryptionConfigCommand", "PutEncryptionConfigCommand")
   @js.native
   class PutEncryptionConfigCommand protected () extends Command[
           InputTypesUnion, 

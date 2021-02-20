@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deleted extends js.Object {
+trait Deleted extends StObject {
   
   var deleted: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Deleted {
   }
   
   @scala.inline
-  implicit class DeletedOps[Self <: Deleted] (val x: Self) extends AnyVal {
+  implicit class DeletedMutableBuilder[Self <: Deleted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: scala.Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdited(value: scala.Double): Self = StObject.set(x, "edited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRestored(value: scala.Double): Self = StObject.set(x, "restored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: scala.Double): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEdited(value: scala.Double): Self = this.set("edited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestored(value: scala.Double): Self = this.set("restored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisited(value: scala.Double): Self = this.set("visited", value.asInstanceOf[js.Any])
+    def setVisited(value: scala.Double): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
   }
 }

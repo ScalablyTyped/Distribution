@@ -2,13 +2,14 @@ package typings.typedoc.anon
 
 import typings.typedoc.optionsDeclarationMod.ParameterScope
 import typings.typedoc.optionsDeclarationMod.ParameterType.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.NumberDeclarationOption> */
 @js.native
-trait ReadonlyNumberDeclaration extends js.Object {
+trait ReadonlyNumberDeclaration extends StObject {
   
   val defaultValue: js.UndefOr[Double] = js.native
   
@@ -36,57 +37,45 @@ object ReadonlyNumberDeclaration {
   }
   
   @scala.inline
-  implicit class ReadonlyNumberDeclarationOps[Self <: ReadonlyNumberDeclaration] (val x: Self) extends AnyVal {
+  implicit class ReadonlyNumberDeclarationMutableBuilder[Self <: ReadonlyNumberDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def setType(value: Number): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: Double): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
     @scala.inline
-    def setScope(value: ParameterScope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort: Self = this.set("short", js.undefined)
+    def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

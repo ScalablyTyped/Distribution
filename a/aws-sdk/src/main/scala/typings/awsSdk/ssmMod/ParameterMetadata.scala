@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterMetadata extends js.Object {
+trait ParameterMetadata extends StObject {
   
   /**
     * A parameter name can include only the following letters and symbols. a-zA-Z0-9_.-
@@ -71,87 +72,75 @@ object ParameterMetadata {
   }
   
   @scala.inline
-  implicit class ParameterMetadataOps[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
+  implicit class ParameterMetadataMutableBuilder[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedPattern(value: AllowedPattern): Self = StObject.set(x, "AllowedPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedPatternUndefined: Self = StObject.set(x, "AllowedPattern", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataType(value: ParameterDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedPattern(value: AllowedPattern): Self = this.set("AllowedPattern", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
     @scala.inline
-    def deleteAllowedPattern: Self = this.set("AllowedPattern", js.undefined)
+    def setDescription(value: ParameterDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: ParameterDataType): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("DataType", js.undefined)
+    def setKeyId(value: ParameterKeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ParameterDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: ParameterKeyId): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setLastModifiedUser(value: String): Self = StObject.set(x, "LastModifiedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateTime): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setLastModifiedUserUndefined: Self = StObject.set(x, "LastModifiedUser", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedUser(value: String): Self = this.set("LastModifiedUser", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedUser: Self = this.set("LastModifiedUser", js.undefined)
+    def setPolicies(value: ParameterPolicyList): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: PSParameterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPoliciesVarargs(value: ParameterInlinePolicy*): Self = StObject.set(x, "Policies", js.Array(value :_*))
     
     @scala.inline
-    def setPoliciesVarargs(value: ParameterInlinePolicy*): Self = this.set("Policies", js.Array(value :_*))
+    def setTier(value: ParameterTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: ParameterPolicyList): Self = this.set("Policies", value.asInstanceOf[js.Any])
+    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
     
     @scala.inline
-    def deletePolicies: Self = this.set("Policies", js.undefined)
+    def setType(value: ParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTier(value: ParameterTier): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTier: Self = this.set("Tier", js.undefined)
+    def setVersion(value: PSParameterVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ParameterType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: PSParameterVersion): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

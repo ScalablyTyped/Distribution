@@ -1,11 +1,12 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaTrackCapabilities extends js.Object {
+trait MediaTrackCapabilities extends StObject {
   
   var brightness: MediaSettingsRange = js.native
   
@@ -56,66 +57,54 @@ object MediaTrackCapabilities {
   }
   
   @scala.inline
-  implicit class MediaTrackCapabilitiesOps[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
+  implicit class MediaTrackCapabilitiesMutableBuilder[Self <: MediaTrackCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: MediaSettingsRange): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorTemperature(value: MediaSettingsRange): Self = StObject.set(x, "colorTemperature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContrast(value: MediaSettingsRange): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: MediaSettingsRange): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    def setExposureCompensation(value: MediaSettingsRange): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorTemperature(value: MediaSettingsRange): Self = this.set("colorTemperature", value.asInstanceOf[js.Any])
+    def setExposureMode(value: js.Array[MeteringMode]): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: MediaSettingsRange): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setExposureModeVarargs(value: MeteringMode*): Self = StObject.set(x, "exposureMode", js.Array(value :_*))
     
     @scala.inline
-    def setExposureCompensation(value: MediaSettingsRange): Self = this.set("exposureCompensation", value.asInstanceOf[js.Any])
+    def setFocusDistance(value: MediaSettingsRange): Self = StObject.set(x, "focusDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureModeVarargs(value: MeteringMode*): Self = this.set("exposureMode", js.Array(value :_*))
+    def setFocusMode(value: js.Array[MeteringMode]): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureMode(value: js.Array[MeteringMode]): Self = this.set("exposureMode", value.asInstanceOf[js.Any])
+    def setFocusModeVarargs(value: MeteringMode*): Self = StObject.set(x, "focusMode", js.Array(value :_*))
     
     @scala.inline
-    def setFocusDistance(value: MediaSettingsRange): Self = this.set("focusDistance", value.asInstanceOf[js.Any])
+    def setIso(value: MediaSettingsRange): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusModeVarargs(value: MeteringMode*): Self = this.set("focusMode", js.Array(value :_*))
+    def setSaturation(value: MediaSettingsRange): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusMode(value: js.Array[MeteringMode]): Self = this.set("focusMode", value.asInstanceOf[js.Any])
+    def setSharpness(value: MediaSettingsRange): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIso(value: MediaSettingsRange): Self = this.set("iso", value.asInstanceOf[js.Any])
+    def setTorch(value: Boolean): Self = StObject.set(x, "torch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: MediaSettingsRange): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    def setWhiteBalanceMode(value: js.Array[MeteringMode]): Self = StObject.set(x, "whiteBalanceMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharpness(value: MediaSettingsRange): Self = this.set("sharpness", value.asInstanceOf[js.Any])
+    def setWhiteBalanceModeVarargs(value: MeteringMode*): Self = StObject.set(x, "whiteBalanceMode", js.Array(value :_*))
     
     @scala.inline
-    def setTorch(value: Boolean): Self = this.set("torch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhiteBalanceModeVarargs(value: MeteringMode*): Self = this.set("whiteBalanceMode", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhiteBalanceMode(value: js.Array[MeteringMode]): Self = this.set("whiteBalanceMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: MediaSettingsRange): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: MediaSettingsRange): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

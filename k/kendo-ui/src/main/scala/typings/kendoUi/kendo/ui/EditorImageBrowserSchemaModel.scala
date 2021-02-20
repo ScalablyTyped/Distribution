@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorImageBrowserSchemaModel extends js.Object {
+trait EditorImageBrowserSchemaModel extends StObject {
   
   var fields: js.UndefOr[EditorImageBrowserSchemaModelFields] = js.native
   
@@ -20,30 +21,18 @@ object EditorImageBrowserSchemaModel {
   }
   
   @scala.inline
-  implicit class EditorImageBrowserSchemaModelOps[Self <: EditorImageBrowserSchemaModel] (val x: Self) extends AnyVal {
+  implicit class EditorImageBrowserSchemaModelMutableBuilder[Self <: EditorImageBrowserSchemaModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: EditorImageBrowserSchemaModelFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: EditorImageBrowserSchemaModelFields): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

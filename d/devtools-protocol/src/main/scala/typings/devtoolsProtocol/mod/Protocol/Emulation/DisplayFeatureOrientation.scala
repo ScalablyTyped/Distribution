@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.horizontal
 import typings.devtoolsProtocol.devtoolsProtocolStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.vertical
   - typings.devtoolsProtocol.devtoolsProtocolStrings.horizontal
 */
-trait DisplayFeatureOrientation extends js.Object
+trait DisplayFeatureOrientation extends StObject
 object DisplayFeatureOrientation {
   
   @scala.inline

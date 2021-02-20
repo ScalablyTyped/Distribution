@@ -2,6 +2,7 @@ package typings.fridaGum.global
 
 import typings.fridaGum.WeakRefCallback
 import typings.fridaGum.WeakRefId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Useful when you're building a language-binding where you need to free
   * native resources when a JS value is no longer needed.
   */
-@JSGlobal("WeakRef")
-@js.native
-object WeakRef extends js.Object {
+object WeakRef {
   
   /**
     * Starts monitoring the lifetime of `target`. Calls `callback` as soon as
@@ -27,6 +26,8 @@ object WeakRef extends js.Object {
     * @param target Heap-allocated JavaScript value to monitor lifetime of.
     * @param callback Function to call when `target` gets GCed.
     */
+  @JSGlobal("WeakRef.bind")
+  @js.native
   def bind(target: js.Any, callback: WeakRefCallback): WeakRefId = js.native
   
   /**
@@ -35,5 +36,7 @@ object WeakRef extends js.Object {
     *
     * @param id ID returned by a previous call to `WeakRef.bind()`.
     */
+  @JSGlobal("WeakRef.unbind")
+  @js.native
   def unbind(id: WeakRefId): Unit = js.native
 }

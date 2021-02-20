@@ -2,16 +2,19 @@ package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokens
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokensRequest")
-@js.native
-object SemanticTokensRequest extends js.Object {
+object SemanticTokensRequest {
   
+  @JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokensRequest.method")
+  @js.native
   val method: textDocumentSlashsemanticTokens = js.native
   
+  @JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokensRequest.type")
+  @js.native
   val `type`: ProtocolRequestType[
     SemanticTokensParams, 
     SemanticTokens | Null, 

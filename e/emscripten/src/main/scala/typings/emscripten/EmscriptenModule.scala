@@ -15,12 +15,13 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmscriptenModule extends js.Object {
+trait EmscriptenModule extends StObject {
   
   var FAST_MEMORY: Double = js.native
   
@@ -163,159 +164,147 @@ object EmscriptenModule {
   }
   
   @scala.inline
-  implicit class EmscriptenModuleOps[Self <: EmscriptenModule] (val x: Self) extends AnyVal {
+  implicit class EmscriptenModuleMutableBuilder[Self <: EmscriptenModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOnExit(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnInit(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddOnPostRun(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnPostRun", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFAST_MEMORY(value: Double): Self = this.set("FAST_MEMORY", value.asInstanceOf[js.Any])
+    def setAddOnPreMain(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnPreMain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFHEAP(value: Float64Array): Self = this.set("FHEAP", value.asInstanceOf[js.Any])
+    def setAddOnPreRun(value: js.Function0[_] => Unit): Self = StObject.set(x, "addOnPreRun", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHEAP(value: Int32Array): Self = this.set("HEAP", value.asInstanceOf[js.Any])
+    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEAP16(value: Int16Array): Self = this.set("HEAP16", value.asInstanceOf[js.Any])
+    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setHEAP32(value: Int32Array): Self = this.set("HEAP32", value.asInstanceOf[js.Any])
+    def setDestroy(value: js.Object => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHEAP8(value: Int8Array): Self = this.set("HEAP8", value.asInstanceOf[js.Any])
+    def setEnvironment(value: EnvironmentType): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEAPF32(value: Float32Array): Self = this.set("HEAPF32", value.asInstanceOf[js.Any])
+    def setFAST_MEMORY(value: Double): Self = StObject.set(x, "FAST_MEMORY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEAPF64(value: Float64Array): Self = this.set("HEAPF64", value.asInstanceOf[js.Any])
+    def setFHEAP(value: Float64Array): Self = StObject.set(x, "FHEAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEAPU16(value: Uint16Array): Self = this.set("HEAPU16", value.asInstanceOf[js.Any])
+    def setFilePackagePrefixURL(value: String): Self = StObject.set(x, "filePackagePrefixURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEAPU32(value: Uint32Array): Self = this.set("HEAPU32", value.asInstanceOf[js.Any])
+    def setGetPreloadedPackage(value: (String, Double) => ArrayBuffer): Self = StObject.set(x, "getPreloadedPackage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHEAPU8(value: Uint8Array): Self = this.set("HEAPU8", value.asInstanceOf[js.Any])
+    def setHEAP(value: Int32Array): Self = StObject.set(x, "HEAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIHEAP(value: Int32Array): Self = this.set("IHEAP", value.asInstanceOf[js.Any])
+    def setHEAP16(value: Int16Array): Self = StObject.set(x, "HEAP16", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTOTAL_MEMORY(value: Double): Self = this.set("TOTAL_MEMORY", value.asInstanceOf[js.Any])
+    def setHEAP32(value: Int32Array): Self = StObject.set(x, "HEAP32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTOTAL_STACK(value: Double): Self = this.set("TOTAL_STACK", value.asInstanceOf[js.Any])
+    def setHEAP8(value: Int8Array): Self = StObject.set(x, "HEAP8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_free(value: Double => Unit): Self = this.set("_free", js.Any.fromFunction1(value))
+    def setHEAPF32(value: Float32Array): Self = StObject.set(x, "HEAPF32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_malloc(value: Double => Double): Self = this.set("_malloc", js.Any.fromFunction1(value))
+    def setHEAPF64(value: Float64Array): Self = StObject.set(x, "HEAPF64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnExit(value: js.Function0[_] => Unit): Self = this.set("addOnExit", js.Any.fromFunction1(value))
+    def setHEAPU16(value: Uint16Array): Self = StObject.set(x, "HEAPU16", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnInit(value: js.Function0[_] => Unit): Self = this.set("addOnInit", js.Any.fromFunction1(value))
+    def setHEAPU32(value: Uint32Array): Self = StObject.set(x, "HEAPU32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnPostRun(value: js.Function0[_] => Unit): Self = this.set("addOnPostRun", js.Any.fromFunction1(value))
+    def setHEAPU8(value: Uint8Array): Self = StObject.set(x, "HEAPU8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnPreMain(value: js.Function0[_] => Unit): Self = this.set("addOnPreMain", js.Any.fromFunction1(value))
+    def setIHEAP(value: Int32Array): Self = StObject.set(x, "IHEAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnPreRun(value: js.Function0[_] => Unit): Self = this.set("addOnPreRun", js.Any.fromFunction1(value))
+    def setInstantiateWasm(value: (WebAssemblyImports, js.Function1[/* module */ Module, Unit]) => WebAssemblyExports): Self = StObject.set(x, "instantiateWasm", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setArgumentsVarargs(value: String*): Self = this.set("arguments", js.Array(value :_*))
+    def setLocateFile(value: (String, String) => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setArguments(value: js.Array[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setLogReadFiles(value: Boolean): Self = StObject.set(x, "logReadFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: js.Object => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    def setNoExitRuntime(value: Boolean): Self = StObject.set(x, "noExitRuntime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: EnvironmentType): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setNoInitialRun(value: Boolean): Self = StObject.set(x, "noInitialRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePackagePrefixURL(value: String): Self = this.set("filePackagePrefixURL", value.asInstanceOf[js.Any])
+    def setOnAbort(value: js.Any => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPreloadedPackage(value: (String, Double) => ArrayBuffer): Self = this.set("getPreloadedPackage", js.Any.fromFunction2(value))
+    def setOnCustomMessage(value: MessageEvent[_] => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstantiateWasm(value: (WebAssemblyImports, js.Function1[/* module */ Module, Unit]) => WebAssemblyExports): Self = this.set("instantiateWasm", js.Any.fromFunction2(value))
+    def setOnRuntimeInitialized(value: () => Unit): Self = StObject.set(x, "onRuntimeInitialized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocateFile(value: (String, String) => String): Self = this.set("locateFile", js.Any.fromFunction2(value))
+    def setPostRun(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "postRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogReadFiles(value: Boolean): Self = this.set("logReadFiles", value.asInstanceOf[js.Any])
+    def setPostRunVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "postRun", js.Array(value :_*))
     
     @scala.inline
-    def setNoExitRuntime(value: Boolean): Self = this.set("noExitRuntime", value.asInstanceOf[js.Any])
+    def setPreInit(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "preInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoInitialRun(value: Boolean): Self = this.set("noInitialRun", value.asInstanceOf[js.Any])
+    def setPreInitVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "preInit", js.Array(value :_*))
     
     @scala.inline
-    def setOnAbort(value: js.Any => Unit): Self = this.set("onAbort", js.Any.fromFunction1(value))
+    def setPreRun(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "preRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCustomMessage(value: MessageEvent[_] => Unit): Self = this.set("onCustomMessage", js.Any.fromFunction1(value))
+    def setPreRunVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "preRun", js.Array(value :_*))
     
     @scala.inline
-    def setOnRuntimeInitialized(value: () => Unit): Self = this.set("onRuntimeInitialized", js.Any.fromFunction0(value))
+    def setPreinitializedWebGLContext(value: WebGLRenderingContext): Self = StObject.set(x, "preinitializedWebGLContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostRunVarargs(value: js.Function0[Unit]*): Self = this.set("postRun", js.Array(value :_*))
+    def setPreloadedAudios(value: js.Any): Self = StObject.set(x, "preloadedAudios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostRun(value: js.Array[js.Function0[Unit]]): Self = this.set("postRun", value.asInstanceOf[js.Any])
+    def setPreloadedImages(value: js.Any): Self = StObject.set(x, "preloadedImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreInitVarargs(value: js.Function0[Unit]*): Self = this.set("preInit", js.Array(value :_*))
+    def setPrint(value: String => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreInit(value: js.Array[js.Function0[Unit]]): Self = this.set("preInit", value.asInstanceOf[js.Any])
+    def setPrintErr(value: String => Unit): Self = StObject.set(x, "printErr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreRunVarargs(value: js.Function0[Unit]*): Self = this.set("preRun", js.Array(value :_*))
+    def setTOTAL_MEMORY(value: Double): Self = StObject.set(x, "TOTAL_MEMORY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreRun(value: js.Array[js.Function0[Unit]]): Self = this.set("preRun", value.asInstanceOf[js.Any])
+    def setTOTAL_STACK(value: Double): Self = StObject.set(x, "TOTAL_STACK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreinitializedWebGLContext(value: WebGLRenderingContext): Self = this.set("preinitializedWebGLContext", value.asInstanceOf[js.Any])
+    def setWasmBinary(value: ArrayBuffer): Self = StObject.set(x, "wasmBinary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreloadedAudios(value: js.Any): Self = this.set("preloadedAudios", value.asInstanceOf[js.Any])
+    def set_free(value: Double => Unit): Self = StObject.set(x, "_free", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreloadedImages(value: js.Any): Self = this.set("preloadedImages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrint(value: String => Unit): Self = this.set("print", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrintErr(value: String => Unit): Self = this.set("printErr", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWasmBinary(value: ArrayBuffer): Self = this.set("wasmBinary", value.asInstanceOf[js.Any])
+    def set_malloc(value: Double => Double): Self = StObject.set(x, "_malloc", js.Any.fromFunction1(value))
   }
 }

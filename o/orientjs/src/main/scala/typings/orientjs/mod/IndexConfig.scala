@@ -11,12 +11,13 @@ import typings.orientjs.orientjsStrings.NOTUNIQUE_HASH_INDEX
 import typings.orientjs.orientjsStrings.SPATIAL
 import typings.orientjs.orientjsStrings.UNIQUE
 import typings.orientjs.orientjsStrings.UNIQUE_HASH_INDEX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexConfig extends js.Object {
+trait IndexConfig extends StObject {
   
   var `class`: js.UndefOr[String] = js.native
   
@@ -47,65 +48,53 @@ object IndexConfig {
   }
   
   @scala.inline
-  implicit class IndexConfigOps[Self <: IndexConfig] (val x: Self) extends AnyVal {
+  implicit class IndexConfigMutableBuilder[Self <: IndexConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngine(value: LUCENE | COLA | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    
+    @scala.inline
+    def setIfnotexist(value: Boolean): Self = StObject.set(x, "ifnotexist", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIfnotexistUndefined: Self = StObject.set(x, "ifnotexist", js.undefined)
+    
+    @scala.inline
+    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    
+    @scala.inline
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    @scala.inline
+    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
     def setType(
       value: UNIQUE | NOTUNIQUE | FULLTEXT | DICTIONARY | UNIQUE_HASH_INDEX | NOTUNIQUE_HASH_INDEX | FULLTEXT_HASH_INDEX | DICTIONARY_HASH_INDEX | SPATIAL
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
-    
-    @scala.inline
-    def setEngine(value: LUCENE | COLA | String): Self = this.set("engine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEngine: Self = this.set("engine", js.undefined)
-    
-    @scala.inline
-    def setIfnotexist(value: Boolean): Self = this.set("ifnotexist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIfnotexist: Self = this.set("ifnotexist", js.undefined)
-    
-    @scala.inline
-    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = this.set("properties", js.Array(value :_*))
-    
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

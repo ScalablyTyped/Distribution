@@ -1,6 +1,7 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limits&lt;/a&gt; for more information about message limits.
   */
 @js.native
-trait SchemaPubsubMessage extends js.Object {
+trait SchemaPubsubMessage extends StObject {
   
   /**
     * Optional attributes for this message.
@@ -53,42 +54,30 @@ object SchemaPubsubMessage {
   }
   
   @scala.inline
-  implicit class SchemaPubsubMessageOps[Self <: SchemaPubsubMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaPubsubMessageMutableBuilder[Self <: SchemaPubsubMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("messageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
-    
-    @scala.inline
-    def setPublishTime(value: String): Self = this.set("publishTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishTime: Self = this.set("publishTime", js.undefined)
+    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
   }
 }

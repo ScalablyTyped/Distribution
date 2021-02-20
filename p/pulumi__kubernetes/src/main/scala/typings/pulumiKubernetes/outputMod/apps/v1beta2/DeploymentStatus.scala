@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apps.v1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DeploymentStatus is the most recently observed status of the Deployment.
   */
 @js.native
-trait DeploymentStatus extends js.Object {
+trait DeploymentStatus extends StObject {
   
   /**
     * Total number of available pods (ready for at least minReadySeconds) targeted by this deployment.
@@ -68,45 +69,33 @@ object DeploymentStatus {
   }
   
   @scala.inline
-  implicit class DeploymentStatusOps[Self <: DeploymentStatus] (val x: Self) extends AnyVal {
+  implicit class DeploymentStatusMutableBuilder[Self <: DeploymentStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableReplicas(value: Double): Self = StObject.set(x, "availableReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollisionCount(value: Double): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[DeploymentCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableReplicas(value: Double): Self = this.set("availableReplicas", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: DeploymentCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setCollisionCount(value: Double): Self = this.set("collisionCount", value.asInstanceOf[js.Any])
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: DeploymentCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setReadyReplicas(value: Double): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[DeploymentCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    def setUnavailableReplicas(value: Double): Self = StObject.set(x, "unavailableReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadyReplicas(value: Double): Self = this.set("readyReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplicas(value: Double): Self = this.set("replicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnavailableReplicas(value: Double): Self = this.set("unavailableReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedReplicas(value: Double): Self = this.set("updatedReplicas", value.asInstanceOf[js.Any])
+    def setUpdatedReplicas(value: Double): Self = StObject.set(x, "updatedReplicas", value.asInstanceOf[js.Any])
   }
 }

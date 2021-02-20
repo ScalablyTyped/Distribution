@@ -1,11 +1,12 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowOfGroupInfo extends js.Object {
+trait WindowOfGroupInfo extends StObject {
   
   /**
     * The UUID of the application this window entry belongs to.
@@ -26,24 +27,12 @@ object WindowOfGroupInfo {
   }
   
   @scala.inline
-  implicit class WindowOfGroupInfoOps[Self <: WindowOfGroupInfo] (val x: Self) extends AnyVal {
+  implicit class WindowOfGroupInfoMutableBuilder[Self <: WindowOfGroupInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUuid(value: String): Self = StObject.set(x, "appUuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppUuid(value: String): Self = this.set("appUuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowName(value: String): Self = this.set("windowName", value.asInstanceOf[js.Any])
+    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
   }
 }

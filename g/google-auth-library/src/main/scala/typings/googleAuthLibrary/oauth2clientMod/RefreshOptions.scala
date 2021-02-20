@@ -1,11 +1,12 @@
 package typings.googleAuthLibrary.oauth2clientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshOptions extends js.Object {
+trait RefreshOptions extends StObject {
   
   var eagerRefreshThresholdMillis: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object RefreshOptions {
   }
   
   @scala.inline
-  implicit class RefreshOptionsOps[Self <: RefreshOptions] (val x: Self) extends AnyVal {
+  implicit class RefreshOptionsMutableBuilder[Self <: RefreshOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEagerRefreshThresholdMillis(value: Double): Self = StObject.set(x, "eagerRefreshThresholdMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEagerRefreshThresholdMillisUndefined: Self = StObject.set(x, "eagerRefreshThresholdMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceRefreshOnFailure(value: Boolean): Self = StObject.set(x, "forceRefreshOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEagerRefreshThresholdMillis(value: Double): Self = this.set("eagerRefreshThresholdMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEagerRefreshThresholdMillis: Self = this.set("eagerRefreshThresholdMillis", js.undefined)
-    
-    @scala.inline
-    def setForceRefreshOnFailure(value: Boolean): Self = this.set("forceRefreshOnFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceRefreshOnFailure: Self = this.set("forceRefreshOnFailure", js.undefined)
+    def setForceRefreshOnFailureUndefined: Self = StObject.set(x, "forceRefreshOnFailure", js.undefined)
   }
 }

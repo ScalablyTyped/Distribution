@@ -6,16 +6,18 @@ import typings.wordpressCustomizeBrowser.croppedImageControlMod.ImageSelectOptio
 import typings.wordpressCustomizeBrowser.externalMod.Attachment
 import typings.wordpressCustomizeBrowser.externalMod.Cropper
 import typings.wordpressCustomizeBrowser.externalMod.ImageModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/customize-browser/HeaderControl", JSImport.Namespace)
-@js.native
-object headerControlMod extends js.Object {
+object headerControlMod {
   
+  @JSImport("@wordpress/customize-browser/HeaderControl", "HeaderControl")
   @js.native
-  class HeaderControl () extends Control {
+  class HeaderControl protected () extends Control {
+    def this(applicator: js.Object, argsArray: js.Object) = this()
+    def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
     def calculateImageSelectOptions(attachment: Attachment, controller: Cropper): ImageSelectOptions = js.native
     
@@ -25,14 +27,14 @@ object headerControlMod extends js.Object {
     
     def onSelect(): Unit = js.native
     
-     // TODO
+    // TODO
     def onSkippedCrop(selection: js.Any): Unit = js.native
     
     def openMedia(event: Event): Unit = js.native
     
     def removeImage(): Unit = js.native
     
-     // TODO
+    // TODO
     def setImageFromURL(url: String, attachmentId: Double, width: Double, height: Double): Unit = js.native
   }
 }

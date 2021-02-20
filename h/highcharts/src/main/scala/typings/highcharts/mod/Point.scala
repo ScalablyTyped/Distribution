@@ -2,13 +2,14 @@ package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Point")
 @js.native
-class Point () extends js.Object {
+class Point () extends StObject {
   
   /**
     * Cancel sonification of a point. Calls onEnd functions.

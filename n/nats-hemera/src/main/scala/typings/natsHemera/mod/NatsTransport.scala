@@ -2,12 +2,13 @@ package typings.natsHemera.mod
 
 import typings.nats.mod.SubscribeOptions
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NatsTransport extends js.Object {
+trait NatsTransport extends StObject {
   
   def close(): Unit = js.native
   

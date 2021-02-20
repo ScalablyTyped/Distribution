@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatEnum extends js.Object {
+trait FormatEnum extends StObject {
   
   var dz: AvailableFormatInfo = js.native
   
@@ -62,63 +63,51 @@ object FormatEnum {
   }
   
   @scala.inline
-  implicit class FormatEnumOps[Self <: FormatEnum] (val x: Self) extends AnyVal {
+  implicit class FormatEnumMutableBuilder[Self <: FormatEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDz(value: AvailableFormatInfo): Self = StObject.set(x, "dz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFits(value: AvailableFormatInfo): Self = StObject.set(x, "fits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGif(value: AvailableFormatInfo): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDz(value: AvailableFormatInfo): Self = this.set("dz", value.asInstanceOf[js.Any])
+    def setInput(value: AvailableFormatInfo): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFits(value: AvailableFormatInfo): Self = this.set("fits", value.asInstanceOf[js.Any])
+    def setJpeg(value: AvailableFormatInfo): Self = StObject.set(x, "jpeg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGif(value: AvailableFormatInfo): Self = this.set("gif", value.asInstanceOf[js.Any])
+    def setMagick(value: AvailableFormatInfo): Self = StObject.set(x, "magick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: AvailableFormatInfo): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setOpenslide(value: AvailableFormatInfo): Self = StObject.set(x, "openslide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJpeg(value: AvailableFormatInfo): Self = this.set("jpeg", value.asInstanceOf[js.Any])
+    def setPdf(value: AvailableFormatInfo): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagick(value: AvailableFormatInfo): Self = this.set("magick", value.asInstanceOf[js.Any])
+    def setPng(value: AvailableFormatInfo): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenslide(value: AvailableFormatInfo): Self = this.set("openslide", value.asInstanceOf[js.Any])
+    def setPpm(value: AvailableFormatInfo): Self = StObject.set(x, "ppm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdf(value: AvailableFormatInfo): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setRaw(value: AvailableFormatInfo): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPng(value: AvailableFormatInfo): Self = this.set("png", value.asInstanceOf[js.Any])
+    def setSvg(value: AvailableFormatInfo): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPpm(value: AvailableFormatInfo): Self = this.set("ppm", value.asInstanceOf[js.Any])
+    def setTiff(value: AvailableFormatInfo): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: AvailableFormatInfo): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setV(value: AvailableFormatInfo): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: AvailableFormatInfo): Self = this.set("svg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiff(value: AvailableFormatInfo): Self = this.set("tiff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV(value: AvailableFormatInfo): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebp(value: AvailableFormatInfo): Self = this.set("webp", value.asInstanceOf[js.Any])
+    def setWebp(value: AvailableFormatInfo): Self = StObject.set(x, "webp", value.asInstanceOf[js.Any])
   }
 }

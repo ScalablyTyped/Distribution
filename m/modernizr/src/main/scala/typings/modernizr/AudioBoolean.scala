@@ -1,11 +1,12 @@
 package typings.modernizr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioBoolean extends js.Object {
+trait AudioBoolean extends StObject {
   
   var m4a: String = js.native
   
@@ -24,30 +25,18 @@ object AudioBoolean {
   }
   
   @scala.inline
-  implicit class AudioBooleanOps[Self <: AudioBoolean] (val x: Self) extends AnyVal {
+  implicit class AudioBooleanMutableBuilder[Self <: AudioBoolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setM4a(value: String): Self = StObject.set(x, "m4a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMp3(value: String): Self = StObject.set(x, "mp3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOgg(value: String): Self = StObject.set(x, "ogg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM4a(value: String): Self = this.set("m4a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMp3(value: String): Self = this.set("mp3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOgg(value: String): Self = this.set("ogg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWav(value: String): Self = this.set("wav", value.asInstanceOf[js.Any])
+    def setWav(value: String): Self = StObject.set(x, "wav", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResumableFileObject extends js.Object {
+trait ResumableFileObject extends StObject {
   
   /**
     * an object containing any custom resume data for the file
@@ -41,48 +42,36 @@ object ResumableFileObject {
   }
   
   @scala.inline
-  implicit class ResumableFileObjectOps[Self <: ResumableFileObject] (val x: Self) extends AnyVal {
+  implicit class ResumableFileObjectMutableBuilder[Self <: ResumableFileObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomResumeData(value: js.Any): Self = StObject.set(x, "customResumeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomResumeDataUndefined: Self = StObject.set(x, "customResumeData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomResumeData(value: js.Any): Self = this.set("customResumeData", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCustomResumeData: Self = this.set("customResumeData", js.undefined)
+    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemaining(value: Double): Self = this.set("remaining", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRemaining: Self = this.set("remaining", js.undefined)
+    def setUuid(value: Double): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setUuid(value: Double): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuid: Self = this.set("uuid", js.undefined)
+    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

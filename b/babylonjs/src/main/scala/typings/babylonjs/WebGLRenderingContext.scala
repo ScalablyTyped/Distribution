@@ -8,6 +8,7 @@ import typings.std.WebGLQuery
 import typings.std.WebGLTexture
 import typings.std.WebGLTransformFeedback
 import typings.std.WebGLVertexArrayObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,23 +18,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Definitions by: Nico Kemnitz <https://github.com/nkemnitz/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 @js.native
-trait WebGLRenderingContext extends js.Object {
+trait WebGLRenderingContext extends StObject {
   
   var ANY_SAMPLES_PASSED: Double = js.native
   
-                               // 0x8CE4
+  // 0x8CE4
   // Occlusion Query
   var ANY_SAMPLES_PASSED_CONSERVATIVE: Double = js.native
   
   val COLOR_ATTACHMENT0: Double = js.native
   
-                               // 0x8CE1
+  // 0x8CE1
   val COLOR_ATTACHMENT1: Double = js.native
   
-                               // 0x8CE2
+  // 0x8CE2
   val COLOR_ATTACHMENT2: Double = js.native
   
-                               // 0x8CE3
+  // 0x8CE3
   val COLOR_ATTACHMENT3: Double = js.native
   
   val COMPARE_REF_TO_TEXTURE: Double = js.native

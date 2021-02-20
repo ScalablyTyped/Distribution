@@ -3,6 +3,7 @@ package typings.rollup.anon
 import typings.rollup.mod.InputOption
 import typings.rollup.mod.RollupWatcherEvent
 import typings.rollup.rollupStrings.BUNDLE_START
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,36 +26,24 @@ object Input {
   }
   
   @scala.inline
-  implicit class InputOps[Self <: Input] (val x: Self) extends AnyVal {
+  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: BUNDLE_START): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInput(value: InputOption): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setCode(value: BUNDLE_START): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
     
     @scala.inline
-    def setOutputVarargs(value: String*): Self = this.set("output", js.Array(value :_*))
+    def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: js.Array[String]): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputVarargs(value: String*): Self = this.set("input", js.Array(value :_*))
-    
-    @scala.inline
-    def setInput(value: InputOption): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
   }
 }

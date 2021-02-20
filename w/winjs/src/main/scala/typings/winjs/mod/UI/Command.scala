@@ -1,5 +1,6 @@
 package typings.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("winjs", "UI.Command")
 @js.native
 class Command ()
-  extends typings.winjs.WinJS.UI.AppBarCommand
-/* static members */
-@JSImport("winjs", "UI.Command")
-@js.native
-object Command extends js.Object {
+  extends typings.winjs.WinJS.UI.Command
+object Command {
+  
+  @JSImport("winjs", "UI.Command")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.Command.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

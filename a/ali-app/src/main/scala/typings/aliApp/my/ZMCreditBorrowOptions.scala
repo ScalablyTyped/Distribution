@@ -5,6 +5,7 @@ import typings.aliApp.aliAppStrings.WINDOWS
 import typings.aliApp.aliAppStrings.alipay
 import typings.aliApp.aliAppStrings.merchant
 import typings.aliApp.anon.ResultStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +68,7 @@ trait ZMCreditBorrowOptions
     */
   var goods_name: String = js.native
   
-      // 该字段目前默认传Y；
+  // 该字段目前默认传Y；
   /**
     * 回调到商户的小程序schema地址。说明：商户的回调地址可以在商户后台里进行配置，服务端回调时，首先根据参数：invoke_type 查询是否有对应的配置地址，如果有，则使用已定义的地址，否则，使用该字段定义的地址执行回调；
     * 参考表格下方的说明一；
@@ -174,120 +175,108 @@ object ZMCreditBorrowOptions {
   }
   
   @scala.inline
-  implicit class ZMCreditBorrowOptionsOps[Self <: ZMCreditBorrowOptions] (val x: Self) extends AnyVal {
+  implicit class ZMCreditBorrowOptionsMutableBuilder[Self <: ZMCreditBorrowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorrow_shop_name(value: String): Self = StObject.set(x, "borrow_shop_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredit_biz(value: String): Self = this.set("credit_biz", value.asInstanceOf[js.Any])
+    def setBorrow_shop_nameUndefined: Self = StObject.set(x, "borrow_shop_name", js.undefined)
     
     @scala.inline
-    def setDeposit_amount(value: String): Self = this.set("deposit_amount", value.asInstanceOf[js.Any])
+    def setBorrow_time(value: String): Self = StObject.set(x, "borrow_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiry_time(value: String): Self = this.set("expiry_time", value.asInstanceOf[js.Any])
+    def setBorrow_timeUndefined: Self = StObject.set(x, "borrow_time", js.undefined)
     
     @scala.inline
-    def setGoods_name(value: String): Self = this.set("goods_name", value.asInstanceOf[js.Any])
+    def setCert_no(value: String): Self = StObject.set(x, "cert_no", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOut_order_no(value: String): Self = this.set("out_order_no", value.asInstanceOf[js.Any])
+    def setCert_noUndefined: Self = StObject.set(x, "cert_no", js.undefined)
     
     @scala.inline
-    def setProduct_code(value: String): Self = this.set("product_code", value.asInstanceOf[js.Any])
+    def setCredit_biz(value: String): Self = StObject.set(x, "credit_biz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRent_amount(value: String): Self = this.set("rent_amount", value.asInstanceOf[js.Any])
+    def setDeposit_amount(value: String): Self = StObject.set(x, "deposit_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRent_unit(value: String): Self = this.set("rent_unit", value.asInstanceOf[js.Any])
+    def setDeposit_state(value: String): Self = StObject.set(x, "deposit_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDeposit_stateUndefined: Self = StObject.set(x, "deposit_state", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setExpiry_time(value: String): Self = StObject.set(x, "expiry_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorrow_shop_name(value: String): Self = this.set("borrow_shop_name", value.asInstanceOf[js.Any])
+    def setGoods_name(value: String): Self = StObject.set(x, "goods_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorrow_shop_name: Self = this.set("borrow_shop_name", js.undefined)
+    def setInvoke_return_url(value: String): Self = StObject.set(x, "invoke_return_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorrow_time(value: String): Self = this.set("borrow_time", value.asInstanceOf[js.Any])
+    def setInvoke_return_urlUndefined: Self = StObject.set(x, "invoke_return_url", js.undefined)
     
     @scala.inline
-    def deleteBorrow_time: Self = this.set("borrow_time", js.undefined)
+    def setInvoke_state(value: String): Self = StObject.set(x, "invoke_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert_no(value: String): Self = this.set("cert_no", value.asInstanceOf[js.Any])
+    def setInvoke_stateUndefined: Self = StObject.set(x, "invoke_state", js.undefined)
     
     @scala.inline
-    def deleteCert_no: Self = this.set("cert_no", js.undefined)
+    def setInvoke_type(value: TINYAPP | WINDOWS | String): Self = StObject.set(x, "invoke_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeposit_state(value: String): Self = this.set("deposit_state", value.asInstanceOf[js.Any])
+    def setInvoke_typeUndefined: Self = StObject.set(x, "invoke_type", js.undefined)
     
     @scala.inline
-    def deleteDeposit_state: Self = this.set("deposit_state", js.undefined)
+    def setMobile_no(value: String): Self = StObject.set(x, "mobile_no", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoke_return_url(value: String): Self = this.set("invoke_return_url", value.asInstanceOf[js.Any])
+    def setMobile_noUndefined: Self = StObject.set(x, "mobile_no", js.undefined)
     
     @scala.inline
-    def deleteInvoke_return_url: Self = this.set("invoke_return_url", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoke_state(value: String): Self = this.set("invoke_state", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInvoke_state: Self = this.set("invoke_state", js.undefined)
+    def setOut_order_no(value: String): Self = StObject.set(x, "out_order_no", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoke_type(value: TINYAPP | WINDOWS | String): Self = this.set("invoke_type", value.asInstanceOf[js.Any])
+    def setProduct_code(value: String): Self = StObject.set(x, "product_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvoke_type: Self = this.set("invoke_type", js.undefined)
+    def setRent_amount(value: String): Self = StObject.set(x, "rent_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile_no(value: String): Self = this.set("mobile_no", value.asInstanceOf[js.Any])
+    def setRent_info(value: String): Self = StObject.set(x, "rent_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMobile_no: Self = this.set("mobile_no", js.undefined)
+    def setRent_infoUndefined: Self = StObject.set(x, "rent_info", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRent_settle_type(value: merchant | alipay | String): Self = StObject.set(x, "rent_settle_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRent_settle_typeUndefined: Self = StObject.set(x, "rent_settle_type", js.undefined)
     
     @scala.inline
-    def setRent_info(value: String): Self = this.set("rent_info", value.asInstanceOf[js.Any])
+    def setRent_unit(value: String): Self = StObject.set(x, "rent_unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRent_info: Self = this.set("rent_info", js.undefined)
+    def setSuccess(value: /* res */ ResultStatus => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRent_settle_type(value: merchant | alipay | String): Self = this.set("rent_settle_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRent_settle_type: Self = this.set("rent_settle_type", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ ResultStatus => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

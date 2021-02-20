@@ -1,12 +1,13 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "inkAnalysisParagraph.toJSON()". */
 @js.native
-trait InkAnalysisParagraphData extends js.Object {
+trait InkAnalysisParagraphData extends StObject {
   
   /**
     *
@@ -41,39 +42,27 @@ object InkAnalysisParagraphData {
   }
   
   @scala.inline
-  implicit class InkAnalysisParagraphDataOps[Self <: InkAnalysisParagraphData] (val x: Self) extends AnyVal {
+  implicit class InkAnalysisParagraphDataMutableBuilder[Self <: InkAnalysisParagraphData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInkAnalysis(value: InkAnalysisData): Self = StObject.set(x, "inkAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInkAnalysisUndefined: Self = StObject.set(x, "inkAnalysis", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLines(value: js.Array[InkAnalysisLineData]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInkAnalysis(value: InkAnalysisData): Self = this.set("inkAnalysis", value.asInstanceOf[js.Any])
+    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     @scala.inline
-    def deleteInkAnalysis: Self = this.set("inkAnalysis", js.undefined)
-    
-    @scala.inline
-    def setLinesVarargs(value: InkAnalysisLineData*): Self = this.set("lines", js.Array(value :_*))
-    
-    @scala.inline
-    def setLines(value: js.Array[InkAnalysisLineData]): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLines: Self = this.set("lines", js.undefined)
+    def setLinesVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

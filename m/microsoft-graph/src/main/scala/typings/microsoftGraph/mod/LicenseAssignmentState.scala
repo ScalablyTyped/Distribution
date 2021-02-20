@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LicenseAssignmentState extends js.Object {
+trait LicenseAssignmentState extends StObject {
   
   var assignedByGroup: js.UndefOr[NullableOption[String]] = js.native
   
@@ -26,66 +27,54 @@ object LicenseAssignmentState {
   }
   
   @scala.inline
-  implicit class LicenseAssignmentStateOps[Self <: LicenseAssignmentState] (val x: Self) extends AnyVal {
+  implicit class LicenseAssignmentStateMutableBuilder[Self <: LicenseAssignmentState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedByGroup(value: NullableOption[String]): Self = StObject.set(x, "assignedByGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignedByGroupNull: Self = StObject.set(x, "assignedByGroup", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignedByGroupUndefined: Self = StObject.set(x, "assignedByGroup", js.undefined)
     
     @scala.inline
-    def setAssignedByGroup(value: NullableOption[String]): Self = this.set("assignedByGroup", value.asInstanceOf[js.Any])
+    def setDisabledPlans(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "disabledPlans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedByGroup: Self = this.set("assignedByGroup", js.undefined)
+    def setDisabledPlansNull: Self = StObject.set(x, "disabledPlans", null)
     
     @scala.inline
-    def setAssignedByGroupNull: Self = this.set("assignedByGroup", null)
+    def setDisabledPlansUndefined: Self = StObject.set(x, "disabledPlans", js.undefined)
     
     @scala.inline
-    def setDisabledPlansVarargs(value: String*): Self = this.set("disabledPlans", js.Array(value :_*))
+    def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value :_*))
     
     @scala.inline
-    def setDisabledPlans(value: NullableOption[js.Array[String]]): Self = this.set("disabledPlans", value.asInstanceOf[js.Any])
+    def setError(value: NullableOption[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledPlans: Self = this.set("disabledPlans", js.undefined)
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def setDisabledPlansNull: Self = this.set("disabledPlans", null)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setError(value: NullableOption[String]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setSkuIdNull: Self = StObject.set(x, "skuId", null)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
     
     @scala.inline
-    def setSkuId(value: NullableOption[String]): Self = this.set("skuId", value.asInstanceOf[js.Any])
+    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkuId: Self = this.set("skuId", js.undefined)
+    def setStateNull: Self = StObject.set(x, "state", null)
     
     @scala.inline
-    def setSkuIdNull: Self = this.set("skuId", null)
-    
-    @scala.inline
-    def setState(value: NullableOption[String]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setStateNull: Self = this.set("state", null)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

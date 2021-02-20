@@ -3,13 +3,14 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.`7`
 import typings.octokitTypes.octokitTypesStrings.closed
 import typings.octokitTypes.octokitTypesStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  project_id :number,   name :string | undefined,   body :string | undefined,   state :'open' | 'closed' | undefined,   organization_permission :string | undefined,   private :boolean | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
 @js.native
-trait ProjectsUpdateEndpoint extends js.Object {
+trait ProjectsUpdateEndpoint extends StObject {
   
   /**
     * The description of the project.
@@ -61,54 +62,42 @@ object ProjectsUpdateEndpoint {
   }
   
   @scala.inline
-  implicit class ProjectsUpdateEndpointOps[Self <: ProjectsUpdateEndpoint] (val x: Self) extends AnyVal {
+  implicit class ProjectsUpdateEndpointMutableBuilder[Self <: ProjectsUpdateEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: `7`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject_id(value: Double): Self = this.set("project_id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setOrganization_permission(value: String): Self = StObject.set(x, "organization_permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setOrganization_permissionUndefined: Self = StObject.set(x, "organization_permission", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
     @scala.inline
-    def setOrganization_permission(value: String): Self = this.set("organization_permission", value.asInstanceOf[js.Any])
+    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrganization_permission: Self = this.set("organization_permission", js.undefined)
+    def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivate: Self = this.set("private", js.undefined)
-    
-    @scala.inline
-    def setState(value: open | closed): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

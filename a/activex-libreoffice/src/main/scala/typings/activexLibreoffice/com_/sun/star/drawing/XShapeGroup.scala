@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,24 +53,12 @@ object XShapeGroup {
   }
   
   @scala.inline
-  implicit class XShapeGroupOps[Self <: XShapeGroup] (val x: Self) extends AnyVal {
+  implicit class XShapeGroupMutableBuilder[Self <: XShapeGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnterGroup(value: () => Unit): Self = this.set("enterGroup", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLeaveGroup(value: () => Unit): Self = this.set("leaveGroup", js.Any.fromFunction0(value))
+    def setLeaveGroup(value: () => Unit): Self = StObject.set(x, "leaveGroup", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,57 +62,45 @@ object IBaseLineStringGeometry {
   }
   
   @scala.inline
-  implicit class IBaseLineStringGeometryOps[Self <: IBaseLineStringGeometry] (val x: Self) extends AnyVal {
+  implicit class IBaseLineStringGeometryMutableBuilder[Self <: IBaseLineStringGeometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFreeze(value: () => IFreezable): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChildGeometry(value: Double => IPointGeometryAccess): Self = StObject.set(x, "getChildGeometry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFreeze(value: () => IFreezable): Self = this.set("freeze", js.Any.fromFunction0(value))
+    def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: Double => js.Array[Double]): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildGeometry(value: Double => IPointGeometryAccess): Self = this.set("getChildGeometry", js.Any.fromFunction1(value))
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClosest(value: js.Array[Double] => js.Object): Self = this.set("getClosest", js.Any.fromFunction1(value))
+    def setInsert(value: (Double, js.Array[js.Array[Double]]) => ILineStringGeometryAccess): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCoordinates(value: () => js.Array[js.Array[Double]]): Self = this.set("getCoordinates", js.Any.fromFunction0(value))
+    def setIsFrozen(value: () => Boolean): Self = StObject.set(x, "isFrozen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setRemove(value: Double => js.Array[Double]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsert(value: (Double, js.Array[js.Array[Double]]) => ILineStringGeometryAccess): Self = this.set("insert", js.Any.fromFunction2(value))
+    def setSet(value: (Double, js.Array[Double]) => ILineStringGeometryAccess): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsFrozen(value: () => Boolean): Self = this.set("isFrozen", js.Any.fromFunction0(value))
+    def setSetCoordinates(value: js.Array[js.Array[Double]] => ILineStringGeometryAccess): Self = StObject.set(x, "setCoordinates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: Double => js.Array[Double]): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setSplice(value: (Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "splice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSet(value: (Double, js.Array[Double]) => ILineStringGeometryAccess): Self = this.set("set", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetCoordinates(value: js.Array[js.Array[Double]] => ILineStringGeometryAccess): Self = this.set("setCoordinates", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSplice(value: (Double, Double) => js.Array[js.Array[Double]]): Self = this.set("splice", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnfreeze(value: () => IFreezable): Self = this.set("unfreeze", js.Any.fromFunction0(value))
+    def setUnfreeze(value: () => IFreezable): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
   }
 }

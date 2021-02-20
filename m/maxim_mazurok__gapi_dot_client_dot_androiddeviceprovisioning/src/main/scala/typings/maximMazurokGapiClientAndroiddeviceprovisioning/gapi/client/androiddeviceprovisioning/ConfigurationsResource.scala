@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.Alt
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.Callback
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.Fields
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationsResource extends js.Object {
+trait ConfigurationsResource extends StObject {
   
   /** Creates a new configuration. Once created, a customer can apply the configuration to devices. */
   def create(request: Accesstoken): Request[Configuration] = js.native

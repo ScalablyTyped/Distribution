@@ -11,16 +11,16 @@ import typings.babylonjs.mathVectorMod.Vector4
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/uniformBuffer", JSImport.Namespace)
-@js.native
-object uniformBufferMod extends js.Object {
+object uniformBufferMod {
   
+  @JSImport("babylonjs/Materials/uniformBuffer", "UniformBuffer")
   @js.native
-  class UniformBuffer protected () extends js.Object {
+  class UniformBuffer protected () extends StObject {
     /**
       * Instantiates a new Uniform buffer objects.
       *
@@ -351,11 +351,22 @@ object uniformBufferMod extends js.Object {
     def useUbo: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object UniformBuffer extends js.Object {
+  object UniformBuffer {
     
-    var _MAX_UNIFORM_SIZE: js.Any = js.native
+    @JSImport("babylonjs/Materials/uniformBuffer", "UniformBuffer")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tempBuffer: js.Any = js.native
+    @JSImport("babylonjs/Materials/uniformBuffer", "UniformBuffer._MAX_UNIFORM_SIZE")
+    @js.native
+    def _MAX_UNIFORM_SIZE: js.Any = js.native
+    @scala.inline
+    def _MAX_UNIFORM_SIZE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_UNIFORM_SIZE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Materials/uniformBuffer", "UniformBuffer._tempBuffer")
+    @js.native
+    def _tempBuffer: js.Any = js.native
+    @scala.inline
+    def _tempBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tempBuffer")(x.asInstanceOf[js.Any])
   }
 }

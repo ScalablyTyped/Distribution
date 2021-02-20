@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -156,132 +157,120 @@ object AgentServicesProvider {
   }
   
   @scala.inline
-  implicit class AgentServicesProviderOps[Self <: AgentServicesProvider] (val x: Self) extends AnyVal {
+  implicit class AgentServicesProviderMutableBuilder[Self <: AgentServicesProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAlert(value: (String, AgentAlertInfo) => Thenable[CreateAgentAlertResult]): Self = StObject.set(x, "createAlert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateJob(value: (String, AgentJobInfo) => Thenable[CreateAgentJobResult]): Self = StObject.set(x, "createJob", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateJobSchedule(value: (String, AgentJobScheduleInfo) => Thenable[CreateAgentJobScheduleResult]): Self = StObject.set(x, "createJobSchedule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateAlert(value: (String, AgentAlertInfo) => Thenable[CreateAgentAlertResult]): Self = this.set("createAlert", js.Any.fromFunction2(value))
+    def setCreateJobStep(value: (String, AgentJobStepInfo) => Thenable[CreateAgentJobStepResult]): Self = StObject.set(x, "createJobStep", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateJob(value: (String, AgentJobInfo) => Thenable[CreateAgentJobResult]): Self = this.set("createJob", js.Any.fromFunction2(value))
+    def setCreateNotebook(value: (String, AgentNotebookInfo, String) => Thenable[CreateAgentNotebookResult]): Self = StObject.set(x, "createNotebook", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreateJobSchedule(value: (String, AgentJobScheduleInfo) => Thenable[CreateAgentJobScheduleResult]): Self = this.set("createJobSchedule", js.Any.fromFunction2(value))
+    def setCreateOperator(value: (String, AgentOperatorInfo) => Thenable[CreateAgentOperatorResult]): Self = StObject.set(x, "createOperator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateJobStep(value: (String, AgentJobStepInfo) => Thenable[CreateAgentJobStepResult]): Self = this.set("createJobStep", js.Any.fromFunction2(value))
+    def setCreateProxy(value: (String, AgentProxyInfo) => Thenable[CreateAgentOperatorResult]): Self = StObject.set(x, "createProxy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateNotebook(value: (String, AgentNotebookInfo, String) => Thenable[CreateAgentNotebookResult]): Self = this.set("createNotebook", js.Any.fromFunction3(value))
+    def setDeleteAlert(value: (String, AgentAlertInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteAlert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateOperator(value: (String, AgentOperatorInfo) => Thenable[CreateAgentOperatorResult]): Self = this.set("createOperator", js.Any.fromFunction2(value))
+    def setDeleteJob(value: (String, AgentJobInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteJob", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateProxy(value: (String, AgentProxyInfo) => Thenable[CreateAgentOperatorResult]): Self = this.set("createProxy", js.Any.fromFunction2(value))
+    def setDeleteJobSchedule(value: (String, AgentJobScheduleInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteJobSchedule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeleteAlert(value: (String, AgentAlertInfo) => Thenable[ResultStatus]): Self = this.set("deleteAlert", js.Any.fromFunction2(value))
+    def setDeleteJobStep(value: (String, AgentJobStepInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteJobStep", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeleteJob(value: (String, AgentJobInfo) => Thenable[ResultStatus]): Self = this.set("deleteJob", js.Any.fromFunction2(value))
+    def setDeleteMaterializedNotebook(value: (String, AgentNotebookHistoryInfo, String) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteMaterializedNotebook", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDeleteJobSchedule(value: (String, AgentJobScheduleInfo) => Thenable[ResultStatus]): Self = this.set("deleteJobSchedule", js.Any.fromFunction2(value))
+    def setDeleteNotebook(value: (String, AgentNotebookInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteNotebook", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeleteJobStep(value: (String, AgentJobStepInfo) => Thenable[ResultStatus]): Self = this.set("deleteJobStep", js.Any.fromFunction2(value))
+    def setDeleteOperator(value: (String, AgentOperatorInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteOperator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeleteMaterializedNotebook(value: (String, AgentNotebookHistoryInfo, String) => Thenable[ResultStatus]): Self = this.set("deleteMaterializedNotebook", js.Any.fromFunction3(value))
+    def setDeleteProxy(value: (String, AgentProxyInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteProxy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeleteNotebook(value: (String, AgentNotebookInfo) => Thenable[ResultStatus]): Self = this.set("deleteNotebook", js.Any.fromFunction2(value))
+    def setGetAlerts(value: String => Thenable[AgentAlertsResult]): Self = StObject.set(x, "getAlerts", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteOperator(value: (String, AgentOperatorInfo) => Thenable[ResultStatus]): Self = this.set("deleteOperator", js.Any.fromFunction2(value))
+    def setGetCredentials(value: String => Thenable[GetCredentialsResult]): Self = StObject.set(x, "getCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteProxy(value: (String, AgentProxyInfo) => Thenable[ResultStatus]): Self = this.set("deleteProxy", js.Any.fromFunction2(value))
+    def setGetJobDefaults(value: String => Thenable[AgentJobDefaultsResult]): Self = StObject.set(x, "getJobDefaults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAlerts(value: String => Thenable[AgentAlertsResult]): Self = this.set("getAlerts", js.Any.fromFunction1(value))
+    def setGetJobHistory(value: (String, String, String) => Thenable[AgentJobHistoryResult]): Self = StObject.set(x, "getJobHistory", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetCredentials(value: String => Thenable[GetCredentialsResult]): Self = this.set("getCredentials", js.Any.fromFunction1(value))
+    def setGetJobSchedules(value: String => Thenable[AgentJobSchedulesResult]): Self = StObject.set(x, "getJobSchedules", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetJobDefaults(value: String => Thenable[AgentJobDefaultsResult]): Self = this.set("getJobDefaults", js.Any.fromFunction1(value))
+    def setGetJobs(value: String => Thenable[AgentJobsResult]): Self = StObject.set(x, "getJobs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetJobHistory(value: (String, String, String) => Thenable[AgentJobHistoryResult]): Self = this.set("getJobHistory", js.Any.fromFunction3(value))
+    def setGetMaterializedNotebook(value: (String, String, Double) => Thenable[AgentNotebookMaterializedResult]): Self = StObject.set(x, "getMaterializedNotebook", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetJobSchedules(value: String => Thenable[AgentJobSchedulesResult]): Self = this.set("getJobSchedules", js.Any.fromFunction1(value))
+    def setGetNotebookHistory(value: (String, String, String, String) => Thenable[AgentNotebookHistoryResult]): Self = StObject.set(x, "getNotebookHistory", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetJobs(value: String => Thenable[AgentJobsResult]): Self = this.set("getJobs", js.Any.fromFunction1(value))
+    def setGetNotebooks(value: String => Thenable[AgentNotebooksResult]): Self = StObject.set(x, "getNotebooks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMaterializedNotebook(value: (String, String, Double) => Thenable[AgentNotebookMaterializedResult]): Self = this.set("getMaterializedNotebook", js.Any.fromFunction3(value))
+    def setGetOperators(value: String => Thenable[AgentOperatorsResult]): Self = StObject.set(x, "getOperators", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNotebookHistory(value: (String, String, String, String) => Thenable[AgentNotebookHistoryResult]): Self = this.set("getNotebookHistory", js.Any.fromFunction4(value))
+    def setGetProxies(value: String => Thenable[AgentProxiesResult]): Self = StObject.set(x, "getProxies", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNotebooks(value: String => Thenable[AgentNotebooksResult]): Self = this.set("getNotebooks", js.Any.fromFunction1(value))
+    def setGetTemplateNotebook(value: (String, String, String) => Thenable[AgentNotebookTemplateResult]): Self = StObject.set(x, "getTemplateNotebook", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetOperators(value: String => Thenable[AgentOperatorsResult]): Self = this.set("getOperators", js.Any.fromFunction1(value))
+    def setJobAction(value: (String, String, String) => Thenable[ResultStatus]): Self = StObject.set(x, "jobAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetProxies(value: String => Thenable[AgentProxiesResult]): Self = this.set("getProxies", js.Any.fromFunction1(value))
+    def setRegisterOnUpdated(value: js.Function0[_] => Unit): Self = StObject.set(x, "registerOnUpdated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTemplateNotebook(value: (String, String, String) => Thenable[AgentNotebookTemplateResult]): Self = this.set("getTemplateNotebook", js.Any.fromFunction3(value))
+    def setUpdateAlert(value: (String, String, AgentAlertInfo) => Thenable[UpdateAgentAlertResult]): Self = StObject.set(x, "updateAlert", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setJobAction(value: (String, String, String) => Thenable[ResultStatus]): Self = this.set("jobAction", js.Any.fromFunction3(value))
+    def setUpdateJob(value: (String, String, AgentJobInfo) => Thenable[UpdateAgentJobResult]): Self = StObject.set(x, "updateJob", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRegisterOnUpdated(value: js.Function0[_] => Unit): Self = this.set("registerOnUpdated", js.Any.fromFunction1(value))
+    def setUpdateJobSchedule(value: (String, String, AgentJobScheduleInfo) => Thenable[UpdateAgentJobScheduleResult]): Self = StObject.set(x, "updateJobSchedule", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateAlert(value: (String, String, AgentAlertInfo) => Thenable[UpdateAgentAlertResult]): Self = this.set("updateAlert", js.Any.fromFunction3(value))
+    def setUpdateJobStep(value: (String, String, AgentJobStepInfo) => Thenable[UpdateAgentJobStepResult]): Self = StObject.set(x, "updateJobStep", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateJob(value: (String, String, AgentJobInfo) => Thenable[UpdateAgentJobResult]): Self = this.set("updateJob", js.Any.fromFunction3(value))
+    def setUpdateNotebook(value: (String, String, AgentNotebookInfo, String) => Thenable[UpdateAgentNotebookResult]): Self = StObject.set(x, "updateNotebook", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUpdateJobSchedule(value: (String, String, AgentJobScheduleInfo) => Thenable[UpdateAgentJobScheduleResult]): Self = this.set("updateJobSchedule", js.Any.fromFunction3(value))
+    def setUpdateNotebookMaterializedName(value: (String, AgentNotebookHistoryInfo, String, String) => Thenable[ResultStatus]): Self = StObject.set(x, "updateNotebookMaterializedName", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUpdateJobStep(value: (String, String, AgentJobStepInfo) => Thenable[UpdateAgentJobStepResult]): Self = this.set("updateJobStep", js.Any.fromFunction3(value))
+    def setUpdateNotebookMaterializedPin(value: (String, AgentNotebookHistoryInfo, String, Boolean) => Thenable[ResultStatus]): Self = StObject.set(x, "updateNotebookMaterializedPin", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUpdateNotebook(value: (String, String, AgentNotebookInfo, String) => Thenable[UpdateAgentNotebookResult]): Self = this.set("updateNotebook", js.Any.fromFunction4(value))
+    def setUpdateOperator(value: (String, String, AgentOperatorInfo) => Thenable[UpdateAgentOperatorResult]): Self = StObject.set(x, "updateOperator", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateNotebookMaterializedName(value: (String, AgentNotebookHistoryInfo, String, String) => Thenable[ResultStatus]): Self = this.set("updateNotebookMaterializedName", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setUpdateNotebookMaterializedPin(value: (String, AgentNotebookHistoryInfo, String, Boolean) => Thenable[ResultStatus]): Self = this.set("updateNotebookMaterializedPin", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setUpdateOperator(value: (String, String, AgentOperatorInfo) => Thenable[UpdateAgentOperatorResult]): Self = this.set("updateOperator", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpdateProxy(value: (String, String, AgentProxyInfo) => Thenable[UpdateAgentOperatorResult]): Self = this.set("updateProxy", js.Any.fromFunction3(value))
+    def setUpdateProxy(value: (String, String, AgentProxyInfo) => Thenable[UpdateAgentOperatorResult]): Self = StObject.set(x, "updateProxy", js.Any.fromFunction3(value))
   }
 }

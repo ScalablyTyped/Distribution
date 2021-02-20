@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBooks.anon.DocId
 import typings.maximMazurokGapiClientBooks.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FamilysharingResource extends js.Object {
+trait FamilysharingResource extends StObject {
   
   /** Gets information regarding the family that the user is part of. */
   def getFamilyInfo(): Request[FamilyInfo] = js.native

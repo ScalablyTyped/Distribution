@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceConfig extends js.Object {
+trait ResourceConfig extends StObject {
   
   /**
     * The number of ML compute instances to use. For distributed training, provide a value greater than 1. 
@@ -40,33 +41,21 @@ object ResourceConfig {
   }
   
   @scala.inline
-  implicit class ResourceConfigOps[Self <: ResourceConfig] (val x: Self) extends AnyVal {
+  implicit class ResourceConfigMutableBuilder[Self <: ResourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceCount(value: TrainingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceType(value: TrainingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCount(value: TrainingInstanceCount): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
     
     @scala.inline
-    def setInstanceType(value: TrainingInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeSizeInGB(value: VolumeSizeInGB): Self = this.set("VolumeSizeInGB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
+    def setVolumeSizeInGB(value: VolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
   }
 }

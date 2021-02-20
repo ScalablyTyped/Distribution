@@ -1,5 +1,6 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.navermaps.navermapsStrings.longdashdot
   - typings.navermaps.navermapsStrings.longdashdotdot
 */
-trait strokeStyleType extends js.Object
+trait strokeStyleType extends StObject
 object strokeStyleType {
   
   @scala.inline

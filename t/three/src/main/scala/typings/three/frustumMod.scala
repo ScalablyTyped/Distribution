@@ -7,16 +7,16 @@ import typings.three.planeMod.Plane
 import typings.three.sphereMod.Sphere
 import typings.three.spriteMod.Sprite
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Frustum", JSImport.Namespace)
-@js.native
-object frustumMod extends js.Object {
+object frustumMod {
   
+  @JSImport("three/src/math/Frustum", "Frustum")
   @js.native
-  class Frustum protected () extends js.Object {
+  class Frustum protected () extends StObject {
     def this(
       p0: js.UndefOr[Plane],
       p1: js.UndefOr[Plane],

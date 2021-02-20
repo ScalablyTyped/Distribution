@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectModerationLabelsResponse extends js.Object {
+trait DetectModerationLabelsResponse extends StObject {
   
   /**
     * Shows the results of the human in the loop evaluation.
@@ -31,39 +32,27 @@ object DetectModerationLabelsResponse {
   }
   
   @scala.inline
-  implicit class DetectModerationLabelsResponseOps[Self <: DetectModerationLabelsResponse] (val x: Self) extends AnyVal {
+  implicit class DetectModerationLabelsResponseMutableBuilder[Self <: DetectModerationLabelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = StObject.set(x, "HumanLoopActivationOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHumanLoopActivationOutputUndefined: Self = StObject.set(x, "HumanLoopActivationOutput", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModerationLabels(value: ModerationLabels): Self = StObject.set(x, "ModerationLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = this.set("HumanLoopActivationOutput", value.asInstanceOf[js.Any])
+    def setModerationLabelsUndefined: Self = StObject.set(x, "ModerationLabels", js.undefined)
     
     @scala.inline
-    def deleteHumanLoopActivationOutput: Self = this.set("HumanLoopActivationOutput", js.undefined)
+    def setModerationLabelsVarargs(value: ModerationLabel*): Self = StObject.set(x, "ModerationLabels", js.Array(value :_*))
     
     @scala.inline
-    def setModerationLabelsVarargs(value: ModerationLabel*): Self = this.set("ModerationLabels", js.Array(value :_*))
+    def setModerationModelVersion(value: String): Self = StObject.set(x, "ModerationModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModerationLabels(value: ModerationLabels): Self = this.set("ModerationLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModerationLabels: Self = this.set("ModerationLabels", js.undefined)
-    
-    @scala.inline
-    def setModerationModelVersion(value: String): Self = this.set("ModerationModelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModerationModelVersion: Self = this.set("ModerationModelVersion", js.undefined)
+    def setModerationModelVersionUndefined: Self = StObject.set(x, "ModerationModelVersion", js.undefined)
   }
 }

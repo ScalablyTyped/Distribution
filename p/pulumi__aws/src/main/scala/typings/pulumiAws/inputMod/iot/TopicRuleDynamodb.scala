@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.iot
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleDynamodb extends js.Object {
+trait TopicRuleDynamodb extends StObject {
   
   /**
     * The hash key name.
@@ -72,66 +73,54 @@ object TopicRuleDynamodb {
   }
   
   @scala.inline
-  implicit class TopicRuleDynamodbOps[Self <: TopicRuleDynamodb] (val x: Self) extends AnyVal {
+  implicit class TopicRuleDynamodbMutableBuilder[Self <: TopicRuleDynamodb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHashKeyField(value: Input[String]): Self = StObject.set(x, "hashKeyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashKeyType(value: Input[String]): Self = StObject.set(x, "hashKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashKeyTypeUndefined: Self = StObject.set(x, "hashKeyType", js.undefined)
     
     @scala.inline
-    def setHashKeyField(value: Input[String]): Self = this.set("hashKeyField", value.asInstanceOf[js.Any])
+    def setHashKeyValue(value: Input[String]): Self = StObject.set(x, "hashKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashKeyValue(value: Input[String]): Self = this.set("hashKeyValue", value.asInstanceOf[js.Any])
+    def setOperation(value: Input[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def setTableName(value: Input[String]): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setPayloadField(value: Input[String]): Self = StObject.set(x, "payloadField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashKeyType(value: Input[String]): Self = this.set("hashKeyType", value.asInstanceOf[js.Any])
+    def setPayloadFieldUndefined: Self = StObject.set(x, "payloadField", js.undefined)
     
     @scala.inline
-    def deleteHashKeyType: Self = this.set("hashKeyType", js.undefined)
+    def setRangeKeyField(value: Input[String]): Self = StObject.set(x, "rangeKeyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: Input[String]): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setRangeKeyFieldUndefined: Self = StObject.set(x, "rangeKeyField", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setRangeKeyType(value: Input[String]): Self = StObject.set(x, "rangeKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadField(value: Input[String]): Self = this.set("payloadField", value.asInstanceOf[js.Any])
+    def setRangeKeyTypeUndefined: Self = StObject.set(x, "rangeKeyType", js.undefined)
     
     @scala.inline
-    def deletePayloadField: Self = this.set("payloadField", js.undefined)
+    def setRangeKeyValue(value: Input[String]): Self = StObject.set(x, "rangeKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeKeyField(value: Input[String]): Self = this.set("rangeKeyField", value.asInstanceOf[js.Any])
+    def setRangeKeyValueUndefined: Self = StObject.set(x, "rangeKeyValue", js.undefined)
     
     @scala.inline
-    def deleteRangeKeyField: Self = this.set("rangeKeyField", js.undefined)
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeKeyType(value: Input[String]): Self = this.set("rangeKeyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeKeyType: Self = this.set("rangeKeyType", js.undefined)
-    
-    @scala.inline
-    def setRangeKeyValue(value: Input[String]): Self = this.set("rangeKeyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeKeyValue: Self = this.set("rangeKeyValue", js.undefined)
+    def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

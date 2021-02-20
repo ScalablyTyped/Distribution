@@ -8,13 +8,14 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.RefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/GridListTileBar.GridListTileBarProps> */
 @js.native
-trait PartialGridListTileBarPro extends js.Object {
+trait PartialGridListTileBarPro extends StObject {
   
   var actionIcon: js.UndefOr[ReactNode] = js.native
   
@@ -43,78 +44,66 @@ object PartialGridListTileBarPro {
   }
   
   @scala.inline
-  implicit class PartialGridListTileBarProOps[Self <: PartialGridListTileBarPro] (val x: Self) extends AnyVal {
+  implicit class PartialGridListTileBarProMutableBuilder[Self <: PartialGridListTileBarPro] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionIcon(value: ReactNode): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionPosition(value: left | right): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionIcon(value: ReactNode): Self = this.set("actionIcon", value.asInstanceOf[js.Any])
+    def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
     
     @scala.inline
-    def deleteActionIcon: Self = this.set("actionIcon", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionPosition(value: left | right): Self = this.set("actionPosition", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteActionPosition: Self = this.set("actionPosition", js.undefined)
+    def setClasses(value: PartialClassNameMapGridLiActionIcon): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: PartialClassNameMapGridLiActionIcon): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
     @scala.inline
-    def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("innerRef", js.Any.fromFunction1(value))
+    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
     @scala.inline
-    def setInnerRef(value: Ref[_] | RefObject[_]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInnerRef: Self = this.set("innerRef", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setInnerRefNull: Self = this.set("innerRef", null)
+    def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: ReactNode): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setTitlePosition(value: top | bottom): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
     
     @scala.inline
-    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitlePosition(value: top | bottom): Self = this.set("titlePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitlePosition: Self = this.set("titlePosition", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

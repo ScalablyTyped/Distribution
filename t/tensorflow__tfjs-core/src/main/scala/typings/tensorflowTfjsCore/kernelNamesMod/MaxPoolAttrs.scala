@@ -5,12 +5,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxPoolAttrs extends js.Object {
+trait MaxPoolAttrs extends StObject {
   
   var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.native
   
@@ -33,33 +34,21 @@ object MaxPoolAttrs {
   }
   
   @scala.inline
-  implicit class MaxPoolAttrsOps[Self <: MaxPoolAttrs] (val x: Self) extends AnyVal {
+  implicit class MaxPoolAttrsMutableBuilder[Self <: MaxPoolAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = this.set("filterSize", value.asInstanceOf[js.Any])
+    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = this.set("strides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = this.set("dimRoundingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimRoundingMode: Self = this.set("dimRoundingMode", js.undefined)
+    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

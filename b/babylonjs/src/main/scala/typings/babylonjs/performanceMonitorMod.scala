@@ -1,19 +1,19 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/performanceMonitor", JSImport.Namespace)
-@js.native
-object performanceMonitorMod extends js.Object {
+object performanceMonitorMod {
   
+  @JSImport("babylonjs/Misc/performanceMonitor", "PerformanceMonitor")
   @js.native
   /**
     * constructor
     * @param frameSampleSize The number of samples required to saturate the sliding window
     */
-  class PerformanceMonitor () extends js.Object {
+  class PerformanceMonitor () extends StObject {
     def this(frameSampleSize: Double) = this()
     
     var _enabled: js.Any = js.native
@@ -81,8 +81,9 @@ object performanceMonitorMod extends js.Object {
     def sampleFrame(timeMs: Double): Unit = js.native
   }
   
+  @JSImport("babylonjs/Misc/performanceMonitor", "RollingAverage")
   @js.native
-  class RollingAverage protected () extends js.Object {
+  class RollingAverage protected () extends StObject {
     /**
       * constructor
       * @param length The number of samples required to saturate the sliding window

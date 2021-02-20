@@ -5,6 +5,7 @@ import typings.handsontable.mod.Handsontable.plugins.MergeCellsPlugin.MergedCell
 import typings.handsontable.mod.Handsontable.plugins.MergeCellsPlugin.SelectionCalculations
 import typings.handsontable.mod.Handsontable.wot.CellRange
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,39 +59,27 @@ object MergeCells {
   }
   
   @scala.inline
-  implicit class MergeCellsOps[Self <: MergeCells] (val x: Self) extends AnyVal {
+  implicit class MergeCellsMutableBuilder[Self <: MergeCells] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutofillCalculations(value: AutofillCalculations): Self = StObject.set(x, "autofillCalculations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearCollections(value: () => Unit): Self = StObject.set(x, "clearCollections", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerge(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAutofillCalculations(value: AutofillCalculations): Self = this.set("autofillCalculations", value.asInstanceOf[js.Any])
+    def setMergeSelection(value: CellRange => Unit): Self = StObject.set(x, "mergeSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearCollections(value: () => Unit): Self = this.set("clearCollections", js.Any.fromFunction0(value))
+    def setMergedCellsCollection(value: MergedCellsCollection): Self = StObject.set(x, "mergedCellsCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerge(value: (Double, Double, Double, Double) => Unit): Self = this.set("merge", js.Any.fromFunction4(value))
+    def setSelectionCalculations(value: SelectionCalculations): Self = StObject.set(x, "selectionCalculations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeSelection(value: CellRange => Unit): Self = this.set("mergeSelection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMergedCellsCollection(value: MergedCellsCollection): Self = this.set("mergedCellsCollection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionCalculations(value: SelectionCalculations): Self = this.set("selectionCalculations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnmerge(value: (Double, Double, Double, Double) => Unit): Self = this.set("unmerge", js.Any.fromFunction4(value))
+    def setUnmerge(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "unmerge", js.Any.fromFunction4(value))
   }
 }

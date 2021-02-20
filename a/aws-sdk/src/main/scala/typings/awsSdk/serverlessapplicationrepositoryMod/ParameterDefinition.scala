@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterDefinition extends js.Object {
+trait ParameterDefinition extends StObject {
   
   /**
     * A regular expression that represents the patterns to allow for String types.
@@ -98,96 +99,84 @@ object ParameterDefinition {
   }
   
   @scala.inline
-  implicit class ParameterDefinitionOps[Self <: ParameterDefinition] (val x: Self) extends AnyVal {
+  implicit class ParameterDefinitionMutableBuilder[Self <: ParameterDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedPattern(value: string): Self = StObject.set(x, "AllowedPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedPatternUndefined: Self = StObject.set(x, "AllowedPattern", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedValues(value: listOfString): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
     @scala.inline
-    def setReferencedByResourcesVarargs(value: string*): Self = this.set("ReferencedByResources", js.Array(value :_*))
+    def setAllowedValuesVarargs(value: string*): Self = StObject.set(x, "AllowedValues", js.Array(value :_*))
     
     @scala.inline
-    def setReferencedByResources(value: listOfString): Self = this.set("ReferencedByResources", value.asInstanceOf[js.Any])
+    def setConstraintDescription(value: string): Self = StObject.set(x, "ConstraintDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedPattern(value: string): Self = this.set("AllowedPattern", value.asInstanceOf[js.Any])
+    def setConstraintDescriptionUndefined: Self = StObject.set(x, "ConstraintDescription", js.undefined)
     
     @scala.inline
-    def deleteAllowedPattern: Self = this.set("AllowedPattern", js.undefined)
+    def setDefaultValue(value: string): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValuesVarargs(value: string*): Self = this.set("AllowedValues", js.Array(value :_*))
+    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
     @scala.inline
-    def setAllowedValues(value: listOfString): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setConstraintDescription(value: string): Self = this.set("ConstraintDescription", value.asInstanceOf[js.Any])
+    def setMaxLength(value: integer): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConstraintDescription: Self = this.set("ConstraintDescription", js.undefined)
+    def setMaxLengthUndefined: Self = StObject.set(x, "MaxLength", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: string): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setMaxValue(value: integer): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    def setMaxValueUndefined: Self = StObject.set(x, "MaxValue", js.undefined)
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setMinLength(value: integer): Self = StObject.set(x, "MinLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "MinLength", js.undefined)
     
     @scala.inline
-    def setMaxLength(value: integer): Self = this.set("MaxLength", value.asInstanceOf[js.Any])
+    def setMinValue(value: integer): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("MaxLength", js.undefined)
+    def setMinValueUndefined: Self = StObject.set(x, "MinValue", js.undefined)
     
     @scala.inline
-    def setMaxValue(value: integer): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("MaxValue", js.undefined)
+    def setNoEcho(value: boolean): Self = StObject.set(x, "NoEcho", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLength(value: integer): Self = this.set("MinLength", value.asInstanceOf[js.Any])
+    def setNoEchoUndefined: Self = StObject.set(x, "NoEcho", js.undefined)
     
     @scala.inline
-    def deleteMinLength: Self = this.set("MinLength", js.undefined)
+    def setReferencedByResources(value: listOfString): Self = StObject.set(x, "ReferencedByResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: integer): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    def setReferencedByResourcesVarargs(value: string*): Self = StObject.set(x, "ReferencedByResources", js.Array(value :_*))
     
     @scala.inline
-    def deleteMinValue: Self = this.set("MinValue", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEcho(value: boolean): Self = this.set("NoEcho", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoEcho: Self = this.set("NoEcho", js.undefined)
-    
-    @scala.inline
-    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.IMarkdownString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterInformation extends js.Object {
+trait ParameterInformation extends StObject {
   
   /**
     * The human-readable doc-comment of this signature. Will be shown
@@ -29,27 +30,15 @@ object ParameterInformation {
   }
   
   @scala.inline
-  implicit class ParameterInformationOps[Self <: ParameterInformation] (val x: Self) extends AnyVal {
+  implicit class ParameterInformationMutableBuilder[Self <: ParameterInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentation(value: String | IMarkdownString): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabel(value: String | (js.Tuple2[Double, Double])): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDocumentation(value: String | IMarkdownString): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setLabel(value: String | (js.Tuple2[Double, Double])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagRef extends js.Object {
+trait TagRef extends StObject {
   
   /**
     * One part of a key-value pair that make up a tag. A key is a general label that acts like a category for more specific tag values.
@@ -26,24 +27,12 @@ object TagRef {
   }
   
   @scala.inline
-  implicit class TagRefOps[Self <: TagRef] (val x: Self) extends AnyVal {
+  implicit class TagRefMutableBuilder[Self <: TagRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: TagKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: TagKey): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: TagValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: TagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkforceIntegrationEncryption extends js.Object {
+trait WorkforceIntegrationEncryption extends StObject {
   
   // Possible values are: sharedSecret, unknownFutureValue.
   var protocol: js.UndefOr[NullableOption[WorkforceIntegrationEncryptionProtocol]] = js.native
@@ -22,36 +23,24 @@ object WorkforceIntegrationEncryption {
   }
   
   @scala.inline
-  implicit class WorkforceIntegrationEncryptionOps[Self <: WorkforceIntegrationEncryption] (val x: Self) extends AnyVal {
+  implicit class WorkforceIntegrationEncryptionMutableBuilder[Self <: WorkforceIntegrationEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtocol(value: NullableOption[WorkforceIntegrationEncryptionProtocol]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocolNull: Self = StObject.set(x, "protocol", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def setProtocol(value: NullableOption[WorkforceIntegrationEncryptionProtocol]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setSecret(value: NullableOption[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setSecretNull: Self = StObject.set(x, "secret", null)
     
     @scala.inline
-    def setProtocolNull: Self = this.set("protocol", null)
-    
-    @scala.inline
-    def setSecret(value: NullableOption[String]): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
-    
-    @scala.inline
-    def setSecretNull: Self = this.set("secret", null)
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
   }
 }

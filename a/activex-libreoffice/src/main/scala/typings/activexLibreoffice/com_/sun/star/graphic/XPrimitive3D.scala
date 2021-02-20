@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.geometry.RealRectangle3D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,24 +50,12 @@ object XPrimitive3D {
   }
   
   @scala.inline
-  implicit class XPrimitive3DOps[Self <: XPrimitive3D] (val x: Self) extends AnyVal {
+  implicit class XPrimitive3DMutableBuilder[Self <: XPrimitive3D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDecomposition(value: SeqEquiv[PropertyValue] => SafeArray[XPrimitive3D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDecomposition(value: SeqEquiv[PropertyValue] => SafeArray[XPrimitive3D]): Self = this.set("getDecomposition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRange(value: SeqEquiv[PropertyValue] => RealRectangle3D): Self = this.set("getRange", js.Any.fromFunction1(value))
+    def setGetRange(value: SeqEquiv[PropertyValue] => RealRectangle3D): Self = StObject.set(x, "getRange", js.Any.fromFunction1(value))
   }
 }

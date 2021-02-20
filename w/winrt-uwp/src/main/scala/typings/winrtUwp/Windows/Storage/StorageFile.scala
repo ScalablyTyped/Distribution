@@ -11,13 +11,14 @@ import typings.winrtUwp.Windows.Storage.FileProperties.ThumbnailOptions
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a file. Provides information about the file and its content, and ways to manipulate them. */
 @js.native
-trait StorageFile extends js.Object {
+trait StorageFile extends StObject {
   
   /** Gets the attributes of a file. */
   var attributes: FileAttributes = js.native

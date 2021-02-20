@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceKinesis extends js.Object {
+trait SourceKinesis extends StObject {
   
   // AWS region name of Kinesis stream, by default us-west-2 is used
   var aws_region: js.UndefOr[String] = js.native
@@ -22,27 +23,15 @@ object SourceKinesis {
   }
   
   @scala.inline
-  implicit class SourceKinesisOps[Self <: SourceKinesis] (val x: Self) extends AnyVal {
+  implicit class SourceKinesisMutableBuilder[Self <: SourceKinesis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAws_region(value: String): Self = StObject.set(x, "aws_region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAws_regionUndefined: Self = StObject.set(x, "aws_region", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStream_name(value: String): Self = this.set("stream_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAws_region(value: String): Self = this.set("aws_region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAws_region: Self = this.set("aws_region", js.undefined)
+    def setStream_name(value: String): Self = StObject.set(x, "stream_name", value.asInstanceOf[js.Any])
   }
 }

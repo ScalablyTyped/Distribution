@@ -1,5 +1,6 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object zoomPointsOptions {
   }
   
   @scala.inline
-  implicit class zoomPointsOptionsOps[Self <: zoomPointsOptions] (val x: Self) extends AnyVal {
+  implicit class zoomPointsOptionsMutableBuilder[Self <: zoomPointsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: LocationBaseOptions*): Self = this.set("points", js.Array(value :_*))
+    def setPoints(value: js.Array[LocationBaseOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[LocationBaseOptions]): Self = this.set("points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
-    
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPointsVarargs(value: LocationBaseOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

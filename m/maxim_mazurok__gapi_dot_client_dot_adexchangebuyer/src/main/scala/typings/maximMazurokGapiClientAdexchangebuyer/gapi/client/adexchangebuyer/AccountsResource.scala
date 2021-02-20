@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAdexchangebuyer.anon.Alt
 import typings.maximMazurokGapiClientAdexchangebuyer.anon.ConfirmUnsafeAccountChange
 import typings.maximMazurokGapiClientAdexchangebuyer.anon.Fields
 import typings.maximMazurokGapiClientAdexchangebuyer.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountsResource extends js.Object {
+trait AccountsResource extends StObject {
   
   /** Gets one account by ID. */
   def get(): Request[Account] = js.native

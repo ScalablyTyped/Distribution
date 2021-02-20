@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.emr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterCoreInstanceGroup extends js.Object {
+trait ClusterCoreInstanceGroup extends StObject {
   
   /**
     * String containing the [EMR Auto Scaling Policy](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html) JSON.
@@ -51,54 +52,42 @@ object ClusterCoreInstanceGroup {
   }
   
   @scala.inline
-  implicit class ClusterCoreInstanceGroupOps[Self <: ClusterCoreInstanceGroup] (val x: Self) extends AnyVal {
+  implicit class ClusterCoreInstanceGroupMutableBuilder[Self <: ClusterCoreInstanceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscalingPolicy(value: String): Self = StObject.set(x, "autoscalingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscalingPolicyUndefined: Self = StObject.set(x, "autoscalingPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsConfigsVarargs(value: ClusterCoreInstanceGroupEbsConfig*): Self = this.set("ebsConfigs", js.Array(value :_*))
+    def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
     
     @scala.inline
-    def setEbsConfigs(value: js.Array[ClusterCoreInstanceGroupEbsConfig]): Self = this.set("ebsConfigs", value.asInstanceOf[js.Any])
+    def setEbsConfigs(value: js.Array[ClusterCoreInstanceGroupEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setEbsConfigsVarargs(value: ClusterCoreInstanceGroupEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscalingPolicy(value: String): Self = this.set("autoscalingPolicy", value.asInstanceOf[js.Any])
+    def setInstanceCount(value: Double): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoscalingPolicy: Self = this.set("autoscalingPolicy", js.undefined)
+    def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
     
     @scala.inline
-    def setBidPrice(value: String): Self = this.set("bidPrice", value.asInstanceOf[js.Any])
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBidPrice: Self = this.set("bidPrice", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCount(value: Double): Self = this.set("instanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceCount: Self = this.set("instanceCount", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

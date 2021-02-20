@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequiredResourceAccess extends js.Object {
+trait RequiredResourceAccess extends StObject {
   
   // The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.
   var resourceAccess: js.UndefOr[js.Array[ResourceAccess]] = js.native
@@ -25,33 +26,21 @@ object RequiredResourceAccess {
   }
   
   @scala.inline
-  implicit class RequiredResourceAccessOps[Self <: RequiredResourceAccess] (val x: Self) extends AnyVal {
+  implicit class RequiredResourceAccessMutableBuilder[Self <: RequiredResourceAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceAccess(value: js.Array[ResourceAccess]): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceAccessVarargs(value: ResourceAccess*): Self = StObject.set(x, "resourceAccess", js.Array(value :_*))
     
     @scala.inline
-    def setResourceAccessVarargs(value: ResourceAccess*): Self = this.set("resourceAccess", js.Array(value :_*))
+    def setResourceAppId(value: String): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceAccess(value: js.Array[ResourceAccess]): Self = this.set("resourceAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceAccess: Self = this.set("resourceAccess", js.undefined)
-    
-    @scala.inline
-    def setResourceAppId(value: String): Self = this.set("resourceAppId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceAppId: Self = this.set("resourceAppId", js.undefined)
+    def setResourceAppIdUndefined: Self = StObject.set(x, "resourceAppId", js.undefined)
   }
 }

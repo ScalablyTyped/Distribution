@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that resolves relative URLs.
   */
 @js.native
-trait IResolver extends js.Object {
+trait IResolver extends StObject {
   
   /**
     * Get the download url for a given absolute url path.
@@ -43,30 +44,18 @@ object IResolver {
   }
   
   @scala.inline
-  implicit class IResolverOps[Self <: IResolver] (val x: Self) extends AnyVal {
+  implicit class IResolverMutableBuilder[Self <: IResolver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDownloadUrl(value: String => js.Promise[String]): Self = StObject.set(x, "getDownloadUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLocal(value: /* url */ String => Boolean): Self = StObject.set(x, "isLocal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
     
     @scala.inline
-    def setGetDownloadUrl(value: String => js.Promise[String]): Self = this.set("getDownloadUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveUrl(value: String => js.Promise[String]): Self = this.set("resolveUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsLocal(value: /* url */ String => Boolean): Self = this.set("isLocal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteIsLocal: Self = this.set("isLocal", js.undefined)
+    def setResolveUrl(value: String => js.Promise[String]): Self = StObject.set(x, "resolveUrl", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SMART client settings for browser behaviour
   */
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   /**
     * When set to true, this variable will fully utilize HTML5 sessionStorage API.
@@ -35,24 +36,12 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullSessionStorageSupport(value: Boolean): Self = StObject.set(x, "fullSessionStorageSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFullSessionStorageSupport(value: Boolean): Self = this.set("fullSessionStorageSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaceBrowserHistory(value: Boolean): Self = this.set("replaceBrowserHistory", value.asInstanceOf[js.Any])
+    def setReplaceBrowserHistory(value: Boolean): Self = StObject.set(x, "replaceBrowserHistory", value.asInstanceOf[js.Any])
   }
 }

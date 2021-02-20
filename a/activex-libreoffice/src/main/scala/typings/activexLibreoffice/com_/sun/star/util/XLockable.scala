@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * component is considered locked, which is reflected by {@link isLocked()} returning `TRUE` .
   */
 @js.native
-trait XLockable extends js.Object {
+trait XLockable extends StObject {
   
   /**
     * determines whether the component is currently locked.
@@ -44,27 +45,15 @@ object XLockable {
   }
   
   @scala.inline
-  implicit class XLockableOps[Self <: XLockable] (val x: Self) extends AnyVal {
+  implicit class XLockableMutableBuilder[Self <: XLockable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsLocked(value: () => Boolean): Self = this.set("isLocked", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLock(value: () => Unit): Self = this.set("lock", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
+    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTrafficPolicyVersionsRequest extends js.Object {
+trait ListTrafficPolicyVersionsRequest extends StObject {
   
   /**
     * Specify the value of Id of the traffic policy for which you want to list all versions.
@@ -31,33 +32,21 @@ object ListTrafficPolicyVersionsRequest {
   }
   
   @scala.inline
-  implicit class ListTrafficPolicyVersionsRequestOps[Self <: ListTrafficPolicyVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class ListTrafficPolicyVersionsRequestMutableBuilder[Self <: ListTrafficPolicyVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def setId(value: TrafficPolicyId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = StObject.set(x, "TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
-    
-    @scala.inline
-    def setTrafficPolicyVersionMarker(value: TrafficPolicyVersionMarker): Self = this.set("TrafficPolicyVersionMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrafficPolicyVersionMarker: Self = this.set("TrafficPolicyVersionMarker", js.undefined)
+    def setTrafficPolicyVersionMarkerUndefined: Self = StObject.set(x, "TrafficPolicyVersionMarker", js.undefined)
   }
 }

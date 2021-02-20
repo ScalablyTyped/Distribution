@@ -1,11 +1,12 @@
 package typings.simperium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketObject[T] extends js.Object {
+trait BucketObject[T] extends StObject {
   
   var data: T = js.native
   
@@ -22,30 +23,18 @@ object BucketObject {
   }
   
   @scala.inline
-  implicit class BucketObjectOps[Self <: BucketObject[_], T] (val x: Self with BucketObject[T]) extends AnyVal {
+  implicit class BucketObjectMutableBuilder[Self <: BucketObject[_], T] (val x: Self with BucketObject[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: EntityId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIndexing(value: Boolean): Self = StObject.set(x, "isIndexing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: EntityId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsIndexing(value: Boolean): Self = this.set("isIndexing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsIndexing: Self = this.set("isIndexing", js.undefined)
+    def setIsIndexingUndefined: Self = StObject.set(x, "isIndexing", js.undefined)
   }
 }

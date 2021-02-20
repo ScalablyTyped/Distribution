@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Default extends js.Object {
+trait Default extends StObject {
   
   /**
     * The default value for the property.
@@ -26,27 +27,15 @@ object Default {
   }
   
   @scala.inline
-  implicit class DefaultOps[Self <: Default] (val x: Self) extends AnyVal {
+  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalized(value: js.Array[Language]): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalizedVarargs(value: Language*): Self = this.set("localized", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocalized(value: js.Array[Language]): Self = this.set("localized", value.asInstanceOf[js.Any])
+    def setLocalizedVarargs(value: Language*): Self = StObject.set(x, "localized", js.Array(value :_*))
   }
 }

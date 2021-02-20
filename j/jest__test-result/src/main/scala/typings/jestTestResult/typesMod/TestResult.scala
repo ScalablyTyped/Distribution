@@ -8,12 +8,13 @@ import typings.jestTestResult.anon.Added
 import typings.jestTestResult.anon.End
 import typings.jestTypes.configMod.DisplayName
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResult extends js.Object {
+trait TestResult extends StObject {
   
   var console: js.UndefOr[ConsoleBuffer] = js.native
   
@@ -72,105 +73,93 @@ object TestResult {
   }
   
   @scala.inline
-  implicit class TestResultOps[Self <: TestResult] (val x: Self) extends AnyVal {
+  implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsole(value: ConsoleBuffer): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsoleVarargs(value: LogEntry*): Self = StObject.set(x, "console", js.Array(value :_*))
     
     @scala.inline
-    def setLeaks(value: Boolean): Self = this.set("leaks", value.asInstanceOf[js.Any])
+    def setCoverage(value: CoverageMapData): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFailingTests(value: Double): Self = this.set("numFailingTests", value.asInstanceOf[js.Any])
+    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
     
     @scala.inline
-    def setNumPassingTests(value: Double): Self = this.set("numPassingTests", value.asInstanceOf[js.Any])
+    def setDisplayName(value: DisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPendingTests(value: Double): Self = this.set("numPendingTests", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setNumTodoTests(value: Double): Self = this.set("numTodoTests", value.asInstanceOf[js.Any])
+    def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenHandlesVarargs(value: Error*): Self = this.set("openHandles", js.Array(value :_*))
+    def setFailureMessageNull: Self = StObject.set(x, "failureMessage", null)
     
     @scala.inline
-    def setOpenHandles(value: js.Array[Error]): Self = this.set("openHandles", value.asInstanceOf[js.Any])
+    def setFailureMessageUndefined: Self = StObject.set(x, "failureMessage", js.undefined)
     
     @scala.inline
-    def setPerfStats(value: End): Self = this.set("perfStats", value.asInstanceOf[js.Any])
+    def setLeaks(value: Boolean): Self = StObject.set(x, "leaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipped(value: Boolean): Self = this.set("skipped", value.asInstanceOf[js.Any])
+    def setMemoryUsage(value: Bytes): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: Added): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
     
     @scala.inline
-    def setTestFilePath(value: String): Self = this.set("testFilePath", value.asInstanceOf[js.Any])
+    def setNumFailingTests(value: Double): Self = StObject.set(x, "numFailingTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestResultsVarargs(value: AssertionResult*): Self = this.set("testResults", js.Array(value :_*))
+    def setNumPassingTests(value: Double): Self = StObject.set(x, "numPassingTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestResults(value: js.Array[AssertionResult]): Self = this.set("testResults", value.asInstanceOf[js.Any])
+    def setNumPendingTests(value: Double): Self = StObject.set(x, "numPendingTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsoleVarargs(value: LogEntry*): Self = this.set("console", js.Array(value :_*))
+    def setNumTodoTests(value: Double): Self = StObject.set(x, "numTodoTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsole(value: ConsoleBuffer): Self = this.set("console", value.asInstanceOf[js.Any])
+    def setOpenHandles(value: js.Array[Error]): Self = StObject.set(x, "openHandles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConsole: Self = this.set("console", js.undefined)
+    def setOpenHandlesVarargs(value: Error*): Self = StObject.set(x, "openHandles", js.Array(value :_*))
     
     @scala.inline
-    def setCoverage(value: CoverageMapData): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    def setPerfStats(value: End): Self = StObject.set(x, "perfStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoverage: Self = this.set("coverage", js.undefined)
+    def setSkipped(value: Boolean): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: DisplayName): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setSnapshot(value: Added): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setSourceMaps(value: StringDictionary[String]): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessage(value: String): Self = this.set("failureMessage", value.asInstanceOf[js.Any])
+    def setSourceMapsUndefined: Self = StObject.set(x, "sourceMaps", js.undefined)
     
     @scala.inline
-    def deleteFailureMessage: Self = this.set("failureMessage", js.undefined)
+    def setTestExecError(value: SerializableError): Self = StObject.set(x, "testExecError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessageNull: Self = this.set("failureMessage", null)
+    def setTestExecErrorUndefined: Self = StObject.set(x, "testExecError", js.undefined)
     
     @scala.inline
-    def setMemoryUsage(value: Bytes): Self = this.set("memoryUsage", value.asInstanceOf[js.Any])
+    def setTestFilePath(value: String): Self = StObject.set(x, "testFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemoryUsage: Self = this.set("memoryUsage", js.undefined)
+    def setTestResults(value: js.Array[AssertionResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceMaps(value: StringDictionary[String]): Self = this.set("sourceMaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMaps: Self = this.set("sourceMaps", js.undefined)
-    
-    @scala.inline
-    def setTestExecError(value: SerializableError): Self = this.set("testExecError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestExecError: Self = this.set("testExecError", js.undefined)
+    def setTestResultsVarargs(value: AssertionResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
   }
 }

@@ -5,6 +5,7 @@ import typings.webcl.webclNumbers.`0x1111`
 import typings.webcl.webclNumbers.`0x1112`
 import typings.webcl.webclNumbers.`0x1114`
 import typings.webcl.webclNumbers.`0x1115`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1114`
   - typings.webcl.webclNumbers.`0x1115`
 */
-trait ImageInfo extends js.Object
+trait ImageInfo extends StObject
 object ImageInfo {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
 @js.native
-trait PlusVideoVideoPlayerEvents extends js.Object {
+trait PlusVideoVideoPlayerEvents extends StObject {
   
   /**
     * 视频结束事件
@@ -84,60 +85,48 @@ object PlusVideoVideoPlayerEvents {
   }
   
   @scala.inline
-  implicit class PlusVideoVideoPlayerEventsOps[Self <: PlusVideoVideoPlayerEvents] (val x: Self) extends AnyVal {
+  implicit class PlusVideoVideoPlayerEventsMutableBuilder[Self <: PlusVideoVideoPlayerEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnded(value: String): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnded(value: String): Self = this.set("ended", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteEnded: Self = this.set("ended", js.undefined)
+    def setFullscreenchange(value: String): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFullscreenchangeUndefined: Self = StObject.set(x, "fullscreenchange", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setPause(value: String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreenchange(value: String): Self = this.set("fullscreenchange", value.asInstanceOf[js.Any])
+    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
     @scala.inline
-    def deleteFullscreenchange: Self = this.set("fullscreenchange", js.undefined)
+    def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: String): Self = this.set("pause", value.asInstanceOf[js.Any])
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def deletePause: Self = this.set("pause", js.undefined)
+    def setTimeupdate(value: String): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: String): Self = this.set("play", value.asInstanceOf[js.Any])
+    def setTimeupdateUndefined: Self = StObject.set(x, "timeupdate", js.undefined)
     
     @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setWaiting(value: String): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeupdate(value: String): Self = this.set("timeupdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeupdate: Self = this.set("timeupdate", js.undefined)
-    
-    @scala.inline
-    def setWaiting(value: String): Self = this.set("waiting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaiting: Self = this.set("waiting", js.undefined)
+    def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
   }
 }

@@ -6,12 +6,13 @@ import typings.c3.mod.AxisName
 import typings.c3.mod.DataSeries
 import typings.d3Color.mod.HSLColor
 import typings.d3Color.mod.RGBColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Names extends js.Object {
+trait Names extends StObject {
   
   /**
     * Get data loaded in the chart.

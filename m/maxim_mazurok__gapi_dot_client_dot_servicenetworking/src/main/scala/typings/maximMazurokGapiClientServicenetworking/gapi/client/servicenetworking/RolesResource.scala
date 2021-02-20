@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientServicenetworking.anon.Key
 import typings.maximMazurokGapiClientServicenetworking.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RolesResource extends js.Object {
+trait RolesResource extends StObject {
   
   def add(request: Key, body: AddRolesRequest): Request[Operation] = js.native
   /**

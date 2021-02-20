@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIam.gapi.client.iam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryTestablePermissionsRequest extends js.Object {
+trait QueryTestablePermissionsRequest extends StObject {
   
   /**
     * Required. The full resource name to query from the list of testable permissions. The name follows the Google Cloud Platform resource format. For example, a Cloud Platform project
@@ -28,36 +29,24 @@ object QueryTestablePermissionsRequest {
   }
   
   @scala.inline
-  implicit class QueryTestablePermissionsRequestOps[Self <: QueryTestablePermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class QueryTestablePermissionsRequestMutableBuilder[Self <: QueryTestablePermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullResourceName(value: String): Self = this.set("fullResourceName", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteFullResourceName: Self = this.set("fullResourceName", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

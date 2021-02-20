@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetachObject extends js.Object {
+trait BatchDetachObject extends StObject {
   
   /**
     * The batch reference name. See Transaction Support for more information.
@@ -31,30 +32,18 @@ object BatchDetachObject {
   }
   
   @scala.inline
-  implicit class BatchDetachObjectOps[Self <: BatchDetachObject] (val x: Self) extends AnyVal {
+  implicit class BatchDetachObjectMutableBuilder[Self <: BatchDetachObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchReferenceName(value: BatchReferenceName): Self = StObject.set(x, "BatchReferenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchReferenceNameUndefined: Self = StObject.set(x, "BatchReferenceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = this.set("ParentReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBatchReferenceName(value: BatchReferenceName): Self = this.set("BatchReferenceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchReferenceName: Self = this.set("BatchReferenceName", js.undefined)
+    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
   }
 }

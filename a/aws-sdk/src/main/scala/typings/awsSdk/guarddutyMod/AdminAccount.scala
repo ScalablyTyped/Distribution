@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminAccount extends js.Object {
+trait AdminAccount extends StObject {
   
   /**
     * The AWS account ID for the account.
@@ -26,30 +27,18 @@ object AdminAccount {
   }
   
   @scala.inline
-  implicit class AdminAccountOps[Self <: AdminAccount] (val x: Self) extends AnyVal {
+  implicit class AdminAccountMutableBuilder[Self <: AdminAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminAccountId(value: String): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminAccountIdUndefined: Self = StObject.set(x, "AdminAccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminStatus(value: AdminStatus): Self = StObject.set(x, "AdminStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminAccountId(value: String): Self = this.set("AdminAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdminAccountId: Self = this.set("AdminAccountId", js.undefined)
-    
-    @scala.inline
-    def setAdminStatus(value: AdminStatus): Self = this.set("AdminStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdminStatus: Self = this.set("AdminStatus", js.undefined)
+    def setAdminStatusUndefined: Self = StObject.set(x, "AdminStatus", js.undefined)
   }
 }

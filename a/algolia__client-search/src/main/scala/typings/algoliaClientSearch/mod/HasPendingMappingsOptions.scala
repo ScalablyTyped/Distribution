@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasPendingMappingsOptions extends js.Object {
+trait HasPendingMappingsOptions extends StObject {
   
   /**
     * If the clusters pending mapping state should be on the response.
@@ -32,30 +33,18 @@ object HasPendingMappingsOptions {
   }
   
   @scala.inline
-  implicit class HasPendingMappingsOptionsOps[Self <: HasPendingMappingsOptions] (val x: Self) extends AnyVal {
+  implicit class HasPendingMappingsOptionsMutableBuilder[Self <: HasPendingMappingsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClusters(value: Boolean): Self = StObject.set(x, "getClusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClustersUndefined: Self = StObject.set(x, "getClusters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetrieveMappings(value: Boolean): Self = StObject.set(x, "retrieveMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetClusters(value: Boolean): Self = this.set("getClusters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGetClusters: Self = this.set("getClusters", js.undefined)
-    
-    @scala.inline
-    def setRetrieveMappings(value: Boolean): Self = this.set("retrieveMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetrieveMappings: Self = this.set("retrieveMappings", js.undefined)
+    def setRetrieveMappingsUndefined: Self = StObject.set(x, "retrieveMappings", js.undefined)
   }
 }

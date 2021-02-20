@@ -1,5 +1,6 @@
 package typings.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.speakeasy.speakeasyStrings.base32
   - typings.speakeasy.speakeasyStrings.base64
 */
-trait Encoding extends js.Object
+trait Encoding extends StObject
 object Encoding {
   
   @scala.inline

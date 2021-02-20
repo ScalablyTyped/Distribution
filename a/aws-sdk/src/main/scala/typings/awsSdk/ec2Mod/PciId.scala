@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PciId extends js.Object {
+trait PciId extends StObject {
   
   /**
     * The ID of the device.
@@ -36,42 +37,30 @@ object PciId {
   }
   
   @scala.inline
-  implicit class PciIdOps[Self <: PciId] (val x: Self) extends AnyVal {
+  implicit class PciIdMutableBuilder[Self <: PciId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubsystemId(value: String): Self = StObject.set(x, "SubsystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setSubsystemIdUndefined: Self = StObject.set(x, "SubsystemId", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("DeviceId", js.undefined)
+    def setSubsystemVendorId(value: String): Self = StObject.set(x, "SubsystemVendorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubsystemId(value: String): Self = this.set("SubsystemId", value.asInstanceOf[js.Any])
+    def setSubsystemVendorIdUndefined: Self = StObject.set(x, "SubsystemVendorId", js.undefined)
     
     @scala.inline
-    def deleteSubsystemId: Self = this.set("SubsystemId", js.undefined)
+    def setVendorId(value: String): Self = StObject.set(x, "VendorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubsystemVendorId(value: String): Self = this.set("SubsystemVendorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubsystemVendorId: Self = this.set("SubsystemVendorId", js.undefined)
-    
-    @scala.inline
-    def setVendorId(value: String): Self = this.set("VendorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorId: Self = this.set("VendorId", js.undefined)
+    def setVendorIdUndefined: Self = StObject.set(x, "VendorId", js.undefined)
   }
 }

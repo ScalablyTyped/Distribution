@@ -7,6 +7,7 @@ import typings.activexOutlook.activexOutlookNumbers.`32`
 import typings.activexOutlook.activexOutlookNumbers.`4`
 import typings.activexOutlook.activexOutlookNumbers.`64`
 import typings.activexOutlook.activexOutlookNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOutlook.activexOutlookNumbers.`4`
   - typings.activexOutlook.activexOutlookNumbers.`8`
 */
-trait OlDaysOfWeek extends js.Object
+trait OlDaysOfWeek extends StObject
 object OlDaysOfWeek {
   
   @scala.inline

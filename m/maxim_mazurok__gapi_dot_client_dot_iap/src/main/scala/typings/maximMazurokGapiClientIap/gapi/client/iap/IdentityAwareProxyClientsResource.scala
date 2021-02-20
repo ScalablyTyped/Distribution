@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientIap.anon.Alt
 import typings.maximMazurokGapiClientIap.anon.Callback
 import typings.maximMazurokGapiClientIap.anon.Fields
 import typings.maximMazurokGapiClientIap.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityAwareProxyClientsResource extends js.Object {
+trait IdentityAwareProxyClientsResource extends StObject {
   
   /** Creates an Identity Aware Proxy (IAP) OAuth client. The client is owned by IAP. Requires that the brand for the project exists and that it is set for internal-only use. */
   def create(request: Accesstoken): Request[IdentityAwareProxyClient] = js.native

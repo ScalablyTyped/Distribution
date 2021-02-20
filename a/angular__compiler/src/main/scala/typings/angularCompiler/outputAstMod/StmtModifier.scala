@@ -1,36 +1,32 @@
 package typings.angularCompiler.outputAstMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StmtModifier extends js.Object
+sealed trait StmtModifier extends StObject
 @JSImport("@angular/compiler/src/output/output_ast", "StmtModifier")
 @js.native
-object StmtModifier extends js.Object {
+object StmtModifier extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StmtModifier with Double] = js.native
   
   @js.native
   sealed trait Exported extends StmtModifier
-  /* 2 */ @js.native
-  object Exported extends TopLevel[Exported with Double]
+  /* 2 */ val Exported: typings.angularCompiler.outputAstMod.StmtModifier.Exported with Double = js.native
   
   @js.native
   sealed trait Final extends StmtModifier
-  /* 0 */ @js.native
-  object Final extends TopLevel[Final with Double]
+  /* 0 */ val Final: typings.angularCompiler.outputAstMod.StmtModifier.Final with Double = js.native
   
   @js.native
   sealed trait Private extends StmtModifier
-  /* 1 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  /* 1 */ val Private: typings.angularCompiler.outputAstMod.StmtModifier.Private with Double = js.native
   
   @js.native
   sealed trait Static extends StmtModifier
-  /* 3 */ @js.native
-  object Static extends TopLevel[Static with Double]
+  /* 3 */ val Static: typings.angularCompiler.outputAstMod.StmtModifier.Static with Double = js.native
 }

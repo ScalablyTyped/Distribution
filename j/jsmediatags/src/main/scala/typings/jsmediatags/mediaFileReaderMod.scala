@@ -3,16 +3,28 @@ package typings.jsmediatags
 import typings.jsmediatags.stringUtilsMod.DecodedString
 import typings.jsmediatags.typesMod.CharsetType
 import typings.jsmediatags.typesMod.LoadCallbackType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/MediaFileReader", JSImport.Namespace)
-@js.native
-object mediaFileReaderMod extends js.Object {
+object mediaFileReaderMod {
+  
+  @JSImport("jsmediatags/build2/MediaFileReader", JSImport.Default)
+  @js.native
+  class default () extends MediaFileReader {
+    def this(path: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("jsmediatags/build2/MediaFileReader", "default.canReadFile")
+    @js.native
+    def canReadFile(file: js.Any): Boolean = js.native
+  }
   
   @js.native
-  trait MediaFileReader extends js.Object {
+  trait MediaFileReader extends StObject {
     
     def _init(callbacks: LoadCallbackType): Unit = js.native
     
@@ -52,16 +64,5 @@ object mediaFileReaderMod extends js.Object {
     def isBitSetAt(offset: Double, bit: Double): Boolean = js.native
     
     def loadRange(range: js.Tuple2[Double, Double], callbacks: LoadCallbackType): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends MediaFileReader {
-    def this(path: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def canReadFile(file: js.Any): Boolean = js.native
   }
 }

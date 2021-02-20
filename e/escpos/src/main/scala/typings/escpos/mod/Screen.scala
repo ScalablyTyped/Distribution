@@ -5,13 +5,14 @@ import typings.escpos.escposNumbers.`1`
 import typings.escpos.escposNumbers.`2`
 import typings.escpos.escposNumbers.`3`
 import typings.escpos.escposNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Screen")
 @js.native
-class Screen protected () extends js.Object {
+class Screen protected () extends StObject {
   def this(adapter: Adapter) = this()
   def this(adapter: Adapter, options: Encoding) = this()
   
@@ -134,9 +135,9 @@ class Screen protected () extends js.Object {
   def verticalScroll(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Screen = js.native
 }
 /* static members */
-@JSImport("escpos", "Screen")
-@js.native
-object Screen extends js.Object {
+object Screen {
   
+  @JSImport("escpos", "Screen.create")
+  @js.native
   def create(device: Adapter): js.Promise[Screen] = js.native
 }

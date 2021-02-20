@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseUser extends js.Object {
+trait TopicalExploreFeedResponseUser extends StObject {
   
   var account_badges: js.UndefOr[js.Array[_]] = js.native
   
@@ -59,111 +60,99 @@ object TopicalExploreFeedResponseUser {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseUserOps[Self <: TopicalExploreFeedResponseUser] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseUserMutableBuilder[Self <: TopicalExploreFeedResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_badges(value: js.Array[_]): Self = StObject.set(x, "account_badges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount_badgesUndefined: Self = StObject.set(x, "account_badges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccount_badgesVarargs(value: js.Any*): Self = StObject.set(x, "account_badges", js.Array(value :_*))
     
     @scala.inline
-    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    def setCan_be_reported_as_fraud(value: Boolean): Self = StObject.set(x, "can_be_reported_as_fraud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    def setCan_be_reported_as_fraudUndefined: Self = StObject.set(x, "can_be_reported_as_fraud", js.undefined)
     
     @scala.inline
-    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    def setFriendship_status(value: TopicalExploreFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setFriendship_statusUndefined: Self = StObject.set(x, "friendship_status", js.undefined)
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_badgesVarargs(value: js.Any*): Self = this.set("account_badges", js.Array(value :_*))
+    def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
     
     @scala.inline
-    def setAccount_badges(value: js.Array[_]): Self = this.set("account_badges", value.asInstanceOf[js.Any])
+    def setIs_favorite(value: Boolean): Self = StObject.set(x, "is_favorite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccount_badges: Self = this.set("account_badges", js.undefined)
+    def setIs_favoriteUndefined: Self = StObject.set(x, "is_favorite", js.undefined)
     
     @scala.inline
-    def setCan_be_reported_as_fraud(value: Boolean): Self = this.set("can_be_reported_as_fraud", value.asInstanceOf[js.Any])
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_be_reported_as_fraud: Self = this.set("can_be_reported_as_fraud", js.undefined)
+    def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendship_status(value: TopicalExploreFeedResponseFriendshipStatus): Self = this.set("friendship_status", value.asInstanceOf[js.Any])
+    def setIs_unpublishedUndefined: Self = StObject.set(x, "is_unpublished", js.undefined)
     
     @scala.inline
-    def deleteFriendship_status: Self = this.set("friendship_status", js.undefined)
+    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_anonymous_profile_picture(value: Boolean): Self = this.set("has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_anonymous_profile_picture: Self = this.set("has_anonymous_profile_picture", js.undefined)
+    def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
     
     @scala.inline
-    def setIs_favorite(value: Boolean): Self = this.set("is_favorite", value.asInstanceOf[js.Any])
+    def setMerchant_checkout_style(value: String): Self = StObject.set(x, "merchant_checkout_style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_favorite: Self = this.set("is_favorite", js.undefined)
+    def setMerchant_checkout_styleUndefined: Self = StObject.set(x, "merchant_checkout_style", js.undefined)
     
     @scala.inline
-    def setIs_unpublished(value: Boolean): Self = this.set("is_unpublished", value.asInstanceOf[js.Any])
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_unpublished: Self = this.set("is_unpublished", js.undefined)
+    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest_reel_media(value: Double): Self = this.set("latest_reel_media", value.asInstanceOf[js.Any])
+    def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
     
     @scala.inline
-    def deleteLatest_reel_media: Self = this.set("latest_reel_media", js.undefined)
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchant_checkout_style(value: String): Self = this.set("merchant_checkout_style", value.asInstanceOf[js.Any])
+    def setSeller_shoppable_feed_type(value: String): Self = StObject.set(x, "seller_shoppable_feed_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMerchant_checkout_style: Self = this.set("merchant_checkout_style", js.undefined)
+    def setSeller_shoppable_feed_typeUndefined: Self = StObject.set(x, "seller_shoppable_feed_type", js.undefined)
     
     @scala.inline
-    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    def setShoppable_posts_count(value: Double): Self = StObject.set(x, "shoppable_posts_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfile_pic_id: Self = this.set("profile_pic_id", js.undefined)
+    def setShoppable_posts_countUndefined: Self = StObject.set(x, "shoppable_posts_count", js.undefined)
     
     @scala.inline
-    def setSeller_shoppable_feed_type(value: String): Self = this.set("seller_shoppable_feed_type", value.asInstanceOf[js.Any])
+    def setShow_shoppable_feed(value: Boolean): Self = StObject.set(x, "show_shoppable_feed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeller_shoppable_feed_type: Self = this.set("seller_shoppable_feed_type", js.undefined)
+    def setShow_shoppable_feedUndefined: Self = StObject.set(x, "show_shoppable_feed", js.undefined)
     
     @scala.inline
-    def setShoppable_posts_count(value: Double): Self = this.set("shoppable_posts_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShoppable_posts_count: Self = this.set("shoppable_posts_count", js.undefined)
-    
-    @scala.inline
-    def setShow_shoppable_feed(value: Boolean): Self = this.set("show_shoppable_feed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow_shoppable_feed: Self = this.set("show_shoppable_feed", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

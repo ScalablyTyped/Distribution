@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteStackInstancesInput extends js.Object {
+trait DeleteStackInstancesInput extends StObject {
   
   /**
     * [Self-managed permissions] The names of the AWS accounts that you want to delete stack instances for. You can specify Accounts or DeploymentTargets, but not both.
@@ -51,57 +52,45 @@ object DeleteStackInstancesInput {
   }
   
   @scala.inline
-  implicit class DeleteStackInstancesInputOps[Self <: DeleteStackInstancesInput] (val x: Self) extends AnyVal {
+  implicit class DeleteStackInstancesInputMutableBuilder[Self <: DeleteStackInstancesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
     @scala.inline
-    def setRegionsVarargs(value: Region*): Self = this.set("Regions", js.Array(value :_*))
+    def setDeploymentTargets(value: DeploymentTargets): Self = StObject.set(x, "DeploymentTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegions(value: RegionList): Self = this.set("Regions", value.asInstanceOf[js.Any])
+    def setDeploymentTargetsUndefined: Self = StObject.set(x, "DeploymentTargets", js.undefined)
     
     @scala.inline
-    def setRetainStacks(value: RetainStacks): Self = this.set("RetainStacks", value.asInstanceOf[js.Any])
+    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
     @scala.inline
-    def setAccountsVarargs(value: Account*): Self = this.set("Accounts", js.Array(value :_*))
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = StObject.set(x, "OperationPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounts(value: AccountList): Self = this.set("Accounts", value.asInstanceOf[js.Any])
+    def setOperationPreferencesUndefined: Self = StObject.set(x, "OperationPreferences", js.undefined)
     
     @scala.inline
-    def deleteAccounts: Self = this.set("Accounts", js.undefined)
+    def setRegions(value: RegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentTargets(value: DeploymentTargets): Self = this.set("DeploymentTargets", value.asInstanceOf[js.Any])
+    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeploymentTargets: Self = this.set("DeploymentTargets", js.undefined)
+    def setRetainStacks(value: RetainStacks): Self = StObject.set(x, "RetainStacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationId: Self = this.set("OperationId", js.undefined)
-    
-    @scala.inline
-    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

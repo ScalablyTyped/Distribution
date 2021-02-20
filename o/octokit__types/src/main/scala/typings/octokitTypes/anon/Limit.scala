@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Limit extends js.Object {
+trait Limit extends StObject {
   
   var limit: Double = js.native
   
@@ -22,27 +23,15 @@ object Limit {
   }
   
   @scala.inline
-  implicit class LimitOps[Self <: Limit] (val x: Self) extends AnyVal {
+  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemaining(value: Double): Self = this.set("remaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: Double): Self = this.set("reset", value.asInstanceOf[js.Any])
+    def setReset(value: Double): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }
 }

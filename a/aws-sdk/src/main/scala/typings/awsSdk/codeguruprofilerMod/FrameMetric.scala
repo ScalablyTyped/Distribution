@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrameMetric extends js.Object {
+trait FrameMetric extends StObject {
   
   /**
     *  Name of the method common across the multiple occurrences of a frame in an application profile.
@@ -32,30 +33,18 @@ object FrameMetric {
   }
   
   @scala.inline
-  implicit class FrameMetricOps[Self <: FrameMetric] (val x: Self) extends AnyVal {
+  implicit class FrameMetricMutableBuilder[Self <: FrameMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThreadStates(value: ThreadStates): Self = StObject.set(x, "threadStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreadStatesVarargs(value: String*): Self = StObject.set(x, "threadStates", js.Array(value :_*))
     
     @scala.inline
-    def setFrameName(value: String): Self = this.set("frameName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadStatesVarargs(value: String*): Self = this.set("threadStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreadStates(value: ThreadStates): Self = this.set("threadStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MetricType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MetricType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

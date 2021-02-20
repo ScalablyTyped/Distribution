@@ -1,21 +1,26 @@
 package typings.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpatialNavigationStartedEventArgs extends js.Object {
+trait SpatialNavigationStartedEventArgs extends StObject {
   
   var interactionSourceKind: js.Any = js.native
   
-   /* unmapped type */ var isNavigatingX: js.Any = js.native
+  /* unmapped type */
+  var isNavigatingX: js.Any = js.native
   
-   /* unmapped type */ var isNavigatingY: js.Any = js.native
+  /* unmapped type */
+  var isNavigatingY: js.Any = js.native
   
-   /* unmapped type */ var isNavigatingZ: js.Any = js.native
+  /* unmapped type */
+  var isNavigatingZ: js.Any = js.native
   
-   /* unmapped type */ var tryGetPointerPose: js.Any = js.native
+  /* unmapped type */
+  var tryGetPointerPose: js.Any = js.native
 }
 object SpatialNavigationStartedEventArgs {
   
@@ -32,33 +37,21 @@ object SpatialNavigationStartedEventArgs {
   }
   
   @scala.inline
-  implicit class SpatialNavigationStartedEventArgsOps[Self <: SpatialNavigationStartedEventArgs] (val x: Self) extends AnyVal {
+  implicit class SpatialNavigationStartedEventArgsMutableBuilder[Self <: SpatialNavigationStartedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsNavigatingX(value: js.Any): Self = StObject.set(x, "isNavigatingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNavigatingY(value: js.Any): Self = StObject.set(x, "isNavigatingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = this.set("interactionSourceKind", value.asInstanceOf[js.Any])
+    def setIsNavigatingZ(value: js.Any): Self = StObject.set(x, "isNavigatingZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNavigatingX(value: js.Any): Self = this.set("isNavigatingX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNavigatingY(value: js.Any): Self = this.set("isNavigatingY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNavigatingZ(value: js.Any): Self = this.set("isNavigatingZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTryGetPointerPose(value: js.Any): Self = this.set("tryGetPointerPose", value.asInstanceOf[js.Any])
+    def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
   }
 }

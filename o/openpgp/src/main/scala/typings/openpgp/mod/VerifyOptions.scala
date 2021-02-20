@@ -8,12 +8,13 @@ import typings.openpgp.openpgpBooleans.`false`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerifyOptions extends js.Object {
+trait VerifyOptions extends StObject {
   
   /**
     * (optional) use the given date for verification instead of the current time
@@ -49,45 +50,33 @@ object VerifyOptions {
   }
   
   @scala.inline
-  implicit class VerifyOptionsOps[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+  implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: CleartextMessage | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: CleartextMessage | Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPublicKeys(value: Key | js.Array[_]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeysVarargs(value: js.Any*): Self = this.set("publicKeys", js.Array(value :_*))
+    def setPublicKeysVarargs(value: js.Any*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
     
     @scala.inline
-    def setPublicKeys(value: Key | js.Array[_]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
+    def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setStreaming(value: web | node | `false`): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: Signature): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
-    
-    @scala.inline
-    def setStreaming(value: web | node | `false`): Self = this.set("streaming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreaming: Self = this.set("streaming", js.undefined)
+    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
   }
 }

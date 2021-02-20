@@ -2,13 +2,14 @@ package typings.zdog.mod
 
 import typings.std.CanvasRenderingContext2D
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zdog", "Anchor")
 @js.native
-class Anchor () extends js.Object {
+class Anchor () extends StObject {
   def this(options: AnchorOptions) = this()
   
   /**

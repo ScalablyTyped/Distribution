@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileLocation extends js.Object {
+trait FileLocation extends StObject {
   
   /**
     * The location of the updated firmware in S3.
@@ -26,30 +27,18 @@ object FileLocation {
   }
   
   @scala.inline
-  implicit class FileLocationOps[Self <: FileLocation] (val x: Self) extends AnyVal {
+  implicit class FileLocationMutableBuilder[Self <: FileLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Location(value: S3Location): Self = this.set("s3Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Location: Self = this.set("s3Location", js.undefined)
-    
-    @scala.inline
-    def setStream(value: Stream): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

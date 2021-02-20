@@ -2,6 +2,7 @@ package typings.baidumapWebSdk.global.BMap
 
 import typings.baidumapWebSdk.BMap.SymbolOptions
 import typings.baidumapWebSdk.BMap.SymbolShapeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,44 +9,51 @@ import typings.winrtUwp.Windows.UI.ApplicationSettings.SupportedWebAccountAction
 import typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountCommandInvokedHandler
 import typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountProviderCommandInvokedHandler
 import typings.winrtUwp.Windows.UI.Popups.UICommandInvokedHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes that allow developers to define the app settings that appear in the settings pane of the Windows shell. The settings pane provides a consistent place for users to access app settings. */
-@JSGlobal("Windows.UI.ApplicationSettings")
-@js.native
-object ApplicationSettings extends js.Object {
+object ApplicationSettings {
   
   /** Provides methods to show the accounts pane and also to enable the app to register callbacks when the accounts flyout is about to be displayed. */
+  @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPane")
   @js.native
   abstract class AccountsSettingsPane ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane
-  /* static members */
-  @js.native
-  object AccountsSettingsPane extends js.Object {
+  object AccountsSettingsPane {
     
     /**
       * Gets an AccountsSettingsPane object that is associated with the current app view (that is, with CoreWindow ).
       * @return The account settings pane.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPane.getForCurrentView")
+    @js.native
     def getForCurrentView(): typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane = js.native
     
     /** Displays the account settings pane. */
+    /* static member */
+    @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPane.show")
+    @js.native
     def show(): Unit = js.native
   }
   
   /** Provides data for the AccountCommandsRequested event. */
+  @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs")
   @js.native
   abstract class AccountsSettingsPaneCommandsRequestedEventArgs ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs
   
   /** Enables the app to signal when it has finished populating command collections while handling the AccountCommandsRequested event. */
+  @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPaneEventDeferral")
   @js.native
   abstract class AccountsSettingsPaneEventDeferral ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPaneEventDeferral
   
   /** Deprecated. Represents a command for changing web account credentials in the account settings pane. */
+  @JSGlobal("Windows.UI.ApplicationSettings.CredentialCommand")
   @js.native
   class CredentialCommand protected ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.CredentialCommand {
@@ -64,6 +71,7 @@ object ApplicationSettings extends js.Object {
   }
   
   /** Creates a settings command object that represents a settings entry. This settings command can be appended to the ApplicationCommands vector. */
+  @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand")
   @js.native
   class SettingsCommand protected ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand {
@@ -75,17 +83,25 @@ object ApplicationSettings extends js.Object {
       */
     def this(settingsCommandId: js.Any, label: String, handler: UICommandInvokedHandler) = this()
   }
-  /* static members */
-  @js.native
-  object SettingsCommand extends js.Object {
+  object SettingsCommand {
+    
+    @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Gets the command for a web account in the account settings pane. */
-    var accountsCommand: typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand = js.native
+    /* static member */
+    @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand.accountsCommand")
+    @js.native
+    def accountsCommand: typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand = js.native
+    @scala.inline
+    def accountsCommand_=(x: typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountsCommand")(x.asInstanceOf[js.Any])
   }
   
   /** Specifies the edge of the screen where the Settings charms appear. */
+  @JSGlobal("Windows.UI.ApplicationSettings.SettingsEdgeLocation")
   @js.native
-  object SettingsEdgeLocation extends js.Object {
+  object SettingsEdgeLocation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsEdgeLocation with Double] = js.native
@@ -96,39 +112,56 @@ object ApplicationSettings extends js.Object {
   }
   
   /** A static class that enables the app to control the Settings Charm pane. The app can add or remove commands, receive a notification when the user opens the pane, or open the pane programmatically. */
+  @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
   @js.native
   abstract class SettingsPane ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane
-  /* static members */
-  @js.native
-  object SettingsPane extends js.Object {
+  object SettingsPane {
+    
+    @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Gets a value indicating whether the Settings charm appears on the left or right edge of the screen. */
-    var edge: SettingsEdgeLocation = js.native
+    /* static member */
+    @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane.edge")
+    @js.native
+    def edge: SettingsEdgeLocation = js.native
+    @scala.inline
+    def edge_=(x: SettingsEdgeLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a SettingsPane object that is associated with the current app view (that is, with CoreWindow ).
       * @return The settings pane.
       */
+    /* static member */
+    @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane.getForCurrentView")
+    @js.native
     def getForCurrentView(): typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane = js.native
     
     /** Displays the Settings Charm pane to the user. */
+    /* static member */
+    @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane.show")
+    @js.native
     def show(): Unit = js.native
   }
   
   /** Contains properties that are only available during the CommandsRequested event. */
+  @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest")
   @js.native
   abstract class SettingsPaneCommandsRequest ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest
   
   /** Contains arguments that are available from the event object during the CommandsRequested event. */
+  @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs")
   @js.native
   abstract class SettingsPaneCommandsRequestedEventArgs ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs
   
   /** Specifies actions that your app enables on an web account instance in the account settings pane. */
+  @JSGlobal("Windows.UI.ApplicationSettings.SupportedWebAccountActions")
   @js.native
-  object SupportedWebAccountActions extends js.Object {
+  object SupportedWebAccountActions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -149,8 +182,9 @@ object ApplicationSettings extends js.Object {
   }
   
   /** Specifies actions that your app does on an web account. */
+  @JSGlobal("Windows.UI.ApplicationSettings.WebAccountAction")
   @js.native
-  object WebAccountAction extends js.Object {
+  object WebAccountAction extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountAction with Double] = js.native
@@ -167,6 +201,7 @@ object ApplicationSettings extends js.Object {
   }
   
   /** Associates a command with a WebAccount in the account settings pane.. */
+  @JSGlobal("Windows.UI.ApplicationSettings.WebAccountCommand")
   @js.native
   class WebAccountCommand protected ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountCommand {
@@ -184,11 +219,13 @@ object ApplicationSettings extends js.Object {
   }
   
   /** Provides data for the WebAccountCommandInvokedHandler delegate. */
+  @JSGlobal("Windows.UI.ApplicationSettings.WebAccountInvokedArgs")
   @js.native
   abstract class WebAccountInvokedArgs ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountInvokedArgs
   
   /** Associates a provider command with a WebAccountProvider in the account settings pane. */
+  @JSGlobal("Windows.UI.ApplicationSettings.WebAccountProviderCommand")
   @js.native
   class WebAccountProviderCommand protected ()
     extends typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountProviderCommand {

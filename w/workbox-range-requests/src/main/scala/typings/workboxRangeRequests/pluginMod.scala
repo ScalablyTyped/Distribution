@@ -4,14 +4,14 @@ import typings.std.Response
 import typings.workboxCore.workboxPluginMod.CachedResponseWillBeUsedCallback
 import typings.workboxCore.workboxPluginMod.CachedResponseWillBeUsedCallbackParam
 import typings.workboxCore.workboxPluginMod.WorkboxPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-range-requests/Plugin", JSImport.Namespace)
-@js.native
-object pluginMod extends js.Object {
+object pluginMod {
   
+  @JSImport("workbox-range-requests/Plugin", "Plugin")
   @js.native
   class Plugin () extends WorkboxPlugin {
     

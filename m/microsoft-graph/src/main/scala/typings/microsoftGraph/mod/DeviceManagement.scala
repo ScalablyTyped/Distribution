@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,366 +122,354 @@ object DeviceManagement {
   }
   
   @scala.inline
-  implicit class DeviceManagementOps[Self <: DeviceManagement] (val x: Self) extends AnyVal {
+  implicit class DeviceManagementMutableBuilder[Self <: DeviceManagement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplePushNotificationCertificate(value: NullableOption[ApplePushNotificationCertificate]): Self = StObject.set(x, "applePushNotificationCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplePushNotificationCertificateNull: Self = StObject.set(x, "applePushNotificationCertificate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplePushNotificationCertificateUndefined: Self = StObject.set(x, "applePushNotificationCertificate", js.undefined)
     
     @scala.inline
-    def setApplePushNotificationCertificate(value: NullableOption[ApplePushNotificationCertificate]): Self = this.set("applePushNotificationCertificate", value.asInstanceOf[js.Any])
+    def setComplianceManagementPartners(value: NullableOption[js.Array[ComplianceManagementPartner]]): Self = StObject.set(x, "complianceManagementPartners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplePushNotificationCertificate: Self = this.set("applePushNotificationCertificate", js.undefined)
+    def setComplianceManagementPartnersNull: Self = StObject.set(x, "complianceManagementPartners", null)
     
     @scala.inline
-    def setApplePushNotificationCertificateNull: Self = this.set("applePushNotificationCertificate", null)
+    def setComplianceManagementPartnersUndefined: Self = StObject.set(x, "complianceManagementPartners", js.undefined)
     
     @scala.inline
-    def setComplianceManagementPartnersVarargs(value: ComplianceManagementPartner*): Self = this.set("complianceManagementPartners", js.Array(value :_*))
+    def setComplianceManagementPartnersVarargs(value: ComplianceManagementPartner*): Self = StObject.set(x, "complianceManagementPartners", js.Array(value :_*))
     
     @scala.inline
-    def setComplianceManagementPartners(value: NullableOption[js.Array[ComplianceManagementPartner]]): Self = this.set("complianceManagementPartners", value.asInstanceOf[js.Any])
+    def setConditionalAccessSettings(value: NullableOption[OnPremisesConditionalAccessSettings]): Self = StObject.set(x, "conditionalAccessSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplianceManagementPartners: Self = this.set("complianceManagementPartners", js.undefined)
+    def setConditionalAccessSettingsNull: Self = StObject.set(x, "conditionalAccessSettings", null)
     
     @scala.inline
-    def setComplianceManagementPartnersNull: Self = this.set("complianceManagementPartners", null)
+    def setConditionalAccessSettingsUndefined: Self = StObject.set(x, "conditionalAccessSettings", js.undefined)
     
     @scala.inline
-    def setConditionalAccessSettings(value: NullableOption[OnPremisesConditionalAccessSettings]): Self = this.set("conditionalAccessSettings", value.asInstanceOf[js.Any])
+    def setDetectedApps(value: NullableOption[js.Array[DetectedApp]]): Self = StObject.set(x, "detectedApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalAccessSettings: Self = this.set("conditionalAccessSettings", js.undefined)
+    def setDetectedAppsNull: Self = StObject.set(x, "detectedApps", null)
     
     @scala.inline
-    def setConditionalAccessSettingsNull: Self = this.set("conditionalAccessSettings", null)
+    def setDetectedAppsUndefined: Self = StObject.set(x, "detectedApps", js.undefined)
     
     @scala.inline
-    def setDetectedAppsVarargs(value: DetectedApp*): Self = this.set("detectedApps", js.Array(value :_*))
+    def setDetectedAppsVarargs(value: DetectedApp*): Self = StObject.set(x, "detectedApps", js.Array(value :_*))
     
     @scala.inline
-    def setDetectedApps(value: NullableOption[js.Array[DetectedApp]]): Self = this.set("detectedApps", value.asInstanceOf[js.Any])
+    def setDeviceCategories(value: NullableOption[js.Array[DeviceCategory]]): Self = StObject.set(x, "deviceCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetectedApps: Self = this.set("detectedApps", js.undefined)
+    def setDeviceCategoriesNull: Self = StObject.set(x, "deviceCategories", null)
     
     @scala.inline
-    def setDetectedAppsNull: Self = this.set("detectedApps", null)
+    def setDeviceCategoriesUndefined: Self = StObject.set(x, "deviceCategories", js.undefined)
     
     @scala.inline
-    def setDeviceCategoriesVarargs(value: DeviceCategory*): Self = this.set("deviceCategories", js.Array(value :_*))
+    def setDeviceCategoriesVarargs(value: DeviceCategory*): Self = StObject.set(x, "deviceCategories", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceCategories(value: NullableOption[js.Array[DeviceCategory]]): Self = this.set("deviceCategories", value.asInstanceOf[js.Any])
+    def setDeviceCompliancePolicies(value: NullableOption[js.Array[DeviceCompliancePolicy]]): Self = StObject.set(x, "deviceCompliancePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceCategories: Self = this.set("deviceCategories", js.undefined)
+    def setDeviceCompliancePoliciesNull: Self = StObject.set(x, "deviceCompliancePolicies", null)
     
     @scala.inline
-    def setDeviceCategoriesNull: Self = this.set("deviceCategories", null)
+    def setDeviceCompliancePoliciesUndefined: Self = StObject.set(x, "deviceCompliancePolicies", js.undefined)
     
     @scala.inline
-    def setDeviceCompliancePoliciesVarargs(value: DeviceCompliancePolicy*): Self = this.set("deviceCompliancePolicies", js.Array(value :_*))
+    def setDeviceCompliancePoliciesVarargs(value: DeviceCompliancePolicy*): Self = StObject.set(x, "deviceCompliancePolicies", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceCompliancePolicies(value: NullableOption[js.Array[DeviceCompliancePolicy]]): Self = this.set("deviceCompliancePolicies", value.asInstanceOf[js.Any])
+    def setDeviceCompliancePolicyDeviceStateSummary(value: NullableOption[DeviceCompliancePolicyDeviceStateSummary]): Self = StObject.set(x, "deviceCompliancePolicyDeviceStateSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceCompliancePolicies: Self = this.set("deviceCompliancePolicies", js.undefined)
+    def setDeviceCompliancePolicyDeviceStateSummaryNull: Self = StObject.set(x, "deviceCompliancePolicyDeviceStateSummary", null)
     
     @scala.inline
-    def setDeviceCompliancePoliciesNull: Self = this.set("deviceCompliancePolicies", null)
+    def setDeviceCompliancePolicyDeviceStateSummaryUndefined: Self = StObject.set(x, "deviceCompliancePolicyDeviceStateSummary", js.undefined)
     
     @scala.inline
-    def setDeviceCompliancePolicyDeviceStateSummary(value: NullableOption[DeviceCompliancePolicyDeviceStateSummary]): Self = this.set("deviceCompliancePolicyDeviceStateSummary", value.asInstanceOf[js.Any])
+    def setDeviceCompliancePolicySettingStateSummaries(value: NullableOption[js.Array[DeviceCompliancePolicySettingStateSummary]]): Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceCompliancePolicyDeviceStateSummary: Self = this.set("deviceCompliancePolicyDeviceStateSummary", js.undefined)
+    def setDeviceCompliancePolicySettingStateSummariesNull: Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", null)
     
     @scala.inline
-    def setDeviceCompliancePolicyDeviceStateSummaryNull: Self = this.set("deviceCompliancePolicyDeviceStateSummary", null)
+    def setDeviceCompliancePolicySettingStateSummariesUndefined: Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", js.undefined)
     
     @scala.inline
-    def setDeviceCompliancePolicySettingStateSummariesVarargs(value: DeviceCompliancePolicySettingStateSummary*): Self = this.set("deviceCompliancePolicySettingStateSummaries", js.Array(value :_*))
+    def setDeviceCompliancePolicySettingStateSummariesVarargs(value: DeviceCompliancePolicySettingStateSummary*): Self = StObject.set(x, "deviceCompliancePolicySettingStateSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceCompliancePolicySettingStateSummaries(value: NullableOption[js.Array[DeviceCompliancePolicySettingStateSummary]]): Self = this.set("deviceCompliancePolicySettingStateSummaries", value.asInstanceOf[js.Any])
+    def setDeviceConfigurationDeviceStateSummaries(value: NullableOption[DeviceConfigurationDeviceStateSummary]): Self = StObject.set(x, "deviceConfigurationDeviceStateSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceCompliancePolicySettingStateSummaries: Self = this.set("deviceCompliancePolicySettingStateSummaries", js.undefined)
+    def setDeviceConfigurationDeviceStateSummariesNull: Self = StObject.set(x, "deviceConfigurationDeviceStateSummaries", null)
     
     @scala.inline
-    def setDeviceCompliancePolicySettingStateSummariesNull: Self = this.set("deviceCompliancePolicySettingStateSummaries", null)
+    def setDeviceConfigurationDeviceStateSummariesUndefined: Self = StObject.set(x, "deviceConfigurationDeviceStateSummaries", js.undefined)
     
     @scala.inline
-    def setDeviceConfigurationDeviceStateSummaries(value: NullableOption[DeviceConfigurationDeviceStateSummary]): Self = this.set("deviceConfigurationDeviceStateSummaries", value.asInstanceOf[js.Any])
+    def setDeviceConfigurations(value: NullableOption[js.Array[DeviceConfiguration]]): Self = StObject.set(x, "deviceConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceConfigurationDeviceStateSummaries: Self = this.set("deviceConfigurationDeviceStateSummaries", js.undefined)
+    def setDeviceConfigurationsNull: Self = StObject.set(x, "deviceConfigurations", null)
     
     @scala.inline
-    def setDeviceConfigurationDeviceStateSummariesNull: Self = this.set("deviceConfigurationDeviceStateSummaries", null)
+    def setDeviceConfigurationsUndefined: Self = StObject.set(x, "deviceConfigurations", js.undefined)
     
     @scala.inline
-    def setDeviceConfigurationsVarargs(value: DeviceConfiguration*): Self = this.set("deviceConfigurations", js.Array(value :_*))
+    def setDeviceConfigurationsVarargs(value: DeviceConfiguration*): Self = StObject.set(x, "deviceConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceConfigurations(value: NullableOption[js.Array[DeviceConfiguration]]): Self = this.set("deviceConfigurations", value.asInstanceOf[js.Any])
+    def setDeviceEnrollmentConfigurations(value: NullableOption[js.Array[DeviceEnrollmentConfiguration]]): Self = StObject.set(x, "deviceEnrollmentConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceConfigurations: Self = this.set("deviceConfigurations", js.undefined)
+    def setDeviceEnrollmentConfigurationsNull: Self = StObject.set(x, "deviceEnrollmentConfigurations", null)
     
     @scala.inline
-    def setDeviceConfigurationsNull: Self = this.set("deviceConfigurations", null)
+    def setDeviceEnrollmentConfigurationsUndefined: Self = StObject.set(x, "deviceEnrollmentConfigurations", js.undefined)
     
     @scala.inline
-    def setDeviceEnrollmentConfigurationsVarargs(value: DeviceEnrollmentConfiguration*): Self = this.set("deviceEnrollmentConfigurations", js.Array(value :_*))
+    def setDeviceEnrollmentConfigurationsVarargs(value: DeviceEnrollmentConfiguration*): Self = StObject.set(x, "deviceEnrollmentConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceEnrollmentConfigurations(value: NullableOption[js.Array[DeviceEnrollmentConfiguration]]): Self = this.set("deviceEnrollmentConfigurations", value.asInstanceOf[js.Any])
+    def setDeviceManagementPartners(value: NullableOption[js.Array[DeviceManagementPartner]]): Self = StObject.set(x, "deviceManagementPartners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceEnrollmentConfigurations: Self = this.set("deviceEnrollmentConfigurations", js.undefined)
+    def setDeviceManagementPartnersNull: Self = StObject.set(x, "deviceManagementPartners", null)
     
     @scala.inline
-    def setDeviceEnrollmentConfigurationsNull: Self = this.set("deviceEnrollmentConfigurations", null)
+    def setDeviceManagementPartnersUndefined: Self = StObject.set(x, "deviceManagementPartners", js.undefined)
     
     @scala.inline
-    def setDeviceManagementPartnersVarargs(value: DeviceManagementPartner*): Self = this.set("deviceManagementPartners", js.Array(value :_*))
+    def setDeviceManagementPartnersVarargs(value: DeviceManagementPartner*): Self = StObject.set(x, "deviceManagementPartners", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceManagementPartners(value: NullableOption[js.Array[DeviceManagementPartner]]): Self = this.set("deviceManagementPartners", value.asInstanceOf[js.Any])
+    def setExchangeConnectors(value: NullableOption[js.Array[DeviceManagementExchangeConnector]]): Self = StObject.set(x, "exchangeConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceManagementPartners: Self = this.set("deviceManagementPartners", js.undefined)
+    def setExchangeConnectorsNull: Self = StObject.set(x, "exchangeConnectors", null)
     
     @scala.inline
-    def setDeviceManagementPartnersNull: Self = this.set("deviceManagementPartners", null)
+    def setExchangeConnectorsUndefined: Self = StObject.set(x, "exchangeConnectors", js.undefined)
     
     @scala.inline
-    def setExchangeConnectorsVarargs(value: DeviceManagementExchangeConnector*): Self = this.set("exchangeConnectors", js.Array(value :_*))
+    def setExchangeConnectorsVarargs(value: DeviceManagementExchangeConnector*): Self = StObject.set(x, "exchangeConnectors", js.Array(value :_*))
     
     @scala.inline
-    def setExchangeConnectors(value: NullableOption[js.Array[DeviceManagementExchangeConnector]]): Self = this.set("exchangeConnectors", value.asInstanceOf[js.Any])
+    def setIntuneAccountId(value: String): Self = StObject.set(x, "intuneAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExchangeConnectors: Self = this.set("exchangeConnectors", js.undefined)
+    def setIntuneAccountIdUndefined: Self = StObject.set(x, "intuneAccountId", js.undefined)
     
     @scala.inline
-    def setExchangeConnectorsNull: Self = this.set("exchangeConnectors", null)
+    def setIntuneBrand(value: NullableOption[IntuneBrand]): Self = StObject.set(x, "intuneBrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntuneAccountId(value: String): Self = this.set("intuneAccountId", value.asInstanceOf[js.Any])
+    def setIntuneBrandNull: Self = StObject.set(x, "intuneBrand", null)
     
     @scala.inline
-    def deleteIntuneAccountId: Self = this.set("intuneAccountId", js.undefined)
+    def setIntuneBrandUndefined: Self = StObject.set(x, "intuneBrand", js.undefined)
     
     @scala.inline
-    def setIntuneBrand(value: NullableOption[IntuneBrand]): Self = this.set("intuneBrand", value.asInstanceOf[js.Any])
+    def setIosUpdateStatuses(value: NullableOption[js.Array[IosUpdateDeviceStatus]]): Self = StObject.set(x, "iosUpdateStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntuneBrand: Self = this.set("intuneBrand", js.undefined)
+    def setIosUpdateStatusesNull: Self = StObject.set(x, "iosUpdateStatuses", null)
     
     @scala.inline
-    def setIntuneBrandNull: Self = this.set("intuneBrand", null)
+    def setIosUpdateStatusesUndefined: Self = StObject.set(x, "iosUpdateStatuses", js.undefined)
     
     @scala.inline
-    def setIosUpdateStatusesVarargs(value: IosUpdateDeviceStatus*): Self = this.set("iosUpdateStatuses", js.Array(value :_*))
+    def setIosUpdateStatusesVarargs(value: IosUpdateDeviceStatus*): Self = StObject.set(x, "iosUpdateStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setIosUpdateStatuses(value: NullableOption[js.Array[IosUpdateDeviceStatus]]): Self = this.set("iosUpdateStatuses", value.asInstanceOf[js.Any])
+    def setManagedDeviceOverview(value: NullableOption[ManagedDeviceOverview]): Self = StObject.set(x, "managedDeviceOverview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIosUpdateStatuses: Self = this.set("iosUpdateStatuses", js.undefined)
+    def setManagedDeviceOverviewNull: Self = StObject.set(x, "managedDeviceOverview", null)
     
     @scala.inline
-    def setIosUpdateStatusesNull: Self = this.set("iosUpdateStatuses", null)
+    def setManagedDeviceOverviewUndefined: Self = StObject.set(x, "managedDeviceOverview", js.undefined)
     
     @scala.inline
-    def setManagedDeviceOverview(value: NullableOption[ManagedDeviceOverview]): Self = this.set("managedDeviceOverview", value.asInstanceOf[js.Any])
+    def setManagedDevices(value: NullableOption[js.Array[ManagedDevice]]): Self = StObject.set(x, "managedDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagedDeviceOverview: Self = this.set("managedDeviceOverview", js.undefined)
+    def setManagedDevicesNull: Self = StObject.set(x, "managedDevices", null)
     
     @scala.inline
-    def setManagedDeviceOverviewNull: Self = this.set("managedDeviceOverview", null)
+    def setManagedDevicesUndefined: Self = StObject.set(x, "managedDevices", js.undefined)
     
     @scala.inline
-    def setManagedDevicesVarargs(value: ManagedDevice*): Self = this.set("managedDevices", js.Array(value :_*))
+    def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value :_*))
     
     @scala.inline
-    def setManagedDevices(value: NullableOption[js.Array[ManagedDevice]]): Self = this.set("managedDevices", value.asInstanceOf[js.Any])
+    def setMobileThreatDefenseConnectors(value: NullableOption[js.Array[MobileThreatDefenseConnector]]): Self = StObject.set(x, "mobileThreatDefenseConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagedDevices: Self = this.set("managedDevices", js.undefined)
+    def setMobileThreatDefenseConnectorsNull: Self = StObject.set(x, "mobileThreatDefenseConnectors", null)
     
     @scala.inline
-    def setManagedDevicesNull: Self = this.set("managedDevices", null)
+    def setMobileThreatDefenseConnectorsUndefined: Self = StObject.set(x, "mobileThreatDefenseConnectors", js.undefined)
     
     @scala.inline
-    def setMobileThreatDefenseConnectorsVarargs(value: MobileThreatDefenseConnector*): Self = this.set("mobileThreatDefenseConnectors", js.Array(value :_*))
+    def setMobileThreatDefenseConnectorsVarargs(value: MobileThreatDefenseConnector*): Self = StObject.set(x, "mobileThreatDefenseConnectors", js.Array(value :_*))
     
     @scala.inline
-    def setMobileThreatDefenseConnectors(value: NullableOption[js.Array[MobileThreatDefenseConnector]]): Self = this.set("mobileThreatDefenseConnectors", value.asInstanceOf[js.Any])
+    def setNotificationMessageTemplates(value: NullableOption[js.Array[NotificationMessageTemplate]]): Self = StObject.set(x, "notificationMessageTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMobileThreatDefenseConnectors: Self = this.set("mobileThreatDefenseConnectors", js.undefined)
+    def setNotificationMessageTemplatesNull: Self = StObject.set(x, "notificationMessageTemplates", null)
     
     @scala.inline
-    def setMobileThreatDefenseConnectorsNull: Self = this.set("mobileThreatDefenseConnectors", null)
+    def setNotificationMessageTemplatesUndefined: Self = StObject.set(x, "notificationMessageTemplates", js.undefined)
     
     @scala.inline
-    def setNotificationMessageTemplatesVarargs(value: NotificationMessageTemplate*): Self = this.set("notificationMessageTemplates", js.Array(value :_*))
+    def setNotificationMessageTemplatesVarargs(value: NotificationMessageTemplate*): Self = StObject.set(x, "notificationMessageTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationMessageTemplates(value: NullableOption[js.Array[NotificationMessageTemplate]]): Self = this.set("notificationMessageTemplates", value.asInstanceOf[js.Any])
+    def setRemoteAssistancePartners(value: NullableOption[js.Array[RemoteAssistancePartner]]): Self = StObject.set(x, "remoteAssistancePartners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationMessageTemplates: Self = this.set("notificationMessageTemplates", js.undefined)
+    def setRemoteAssistancePartnersNull: Self = StObject.set(x, "remoteAssistancePartners", null)
     
     @scala.inline
-    def setNotificationMessageTemplatesNull: Self = this.set("notificationMessageTemplates", null)
+    def setRemoteAssistancePartnersUndefined: Self = StObject.set(x, "remoteAssistancePartners", js.undefined)
     
     @scala.inline
-    def setRemoteAssistancePartnersVarargs(value: RemoteAssistancePartner*): Self = this.set("remoteAssistancePartners", js.Array(value :_*))
+    def setRemoteAssistancePartnersVarargs(value: RemoteAssistancePartner*): Self = StObject.set(x, "remoteAssistancePartners", js.Array(value :_*))
     
     @scala.inline
-    def setRemoteAssistancePartners(value: NullableOption[js.Array[RemoteAssistancePartner]]): Self = this.set("remoteAssistancePartners", value.asInstanceOf[js.Any])
+    def setResourceOperations(value: NullableOption[js.Array[ResourceOperation]]): Self = StObject.set(x, "resourceOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoteAssistancePartners: Self = this.set("remoteAssistancePartners", js.undefined)
+    def setResourceOperationsNull: Self = StObject.set(x, "resourceOperations", null)
     
     @scala.inline
-    def setRemoteAssistancePartnersNull: Self = this.set("remoteAssistancePartners", null)
+    def setResourceOperationsUndefined: Self = StObject.set(x, "resourceOperations", js.undefined)
     
     @scala.inline
-    def setResourceOperationsVarargs(value: ResourceOperation*): Self = this.set("resourceOperations", js.Array(value :_*))
+    def setResourceOperationsVarargs(value: ResourceOperation*): Self = StObject.set(x, "resourceOperations", js.Array(value :_*))
     
     @scala.inline
-    def setResourceOperations(value: NullableOption[js.Array[ResourceOperation]]): Self = this.set("resourceOperations", value.asInstanceOf[js.Any])
+    def setRoleAssignments(value: NullableOption[js.Array[DeviceAndAppManagementRoleAssignment]]): Self = StObject.set(x, "roleAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceOperations: Self = this.set("resourceOperations", js.undefined)
+    def setRoleAssignmentsNull: Self = StObject.set(x, "roleAssignments", null)
     
     @scala.inline
-    def setResourceOperationsNull: Self = this.set("resourceOperations", null)
+    def setRoleAssignmentsUndefined: Self = StObject.set(x, "roleAssignments", js.undefined)
     
     @scala.inline
-    def setRoleAssignmentsVarargs(value: DeviceAndAppManagementRoleAssignment*): Self = this.set("roleAssignments", js.Array(value :_*))
+    def setRoleAssignmentsVarargs(value: DeviceAndAppManagementRoleAssignment*): Self = StObject.set(x, "roleAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setRoleAssignments(value: NullableOption[js.Array[DeviceAndAppManagementRoleAssignment]]): Self = this.set("roleAssignments", value.asInstanceOf[js.Any])
+    def setRoleDefinitions(value: NullableOption[js.Array[RoleDefinition]]): Self = StObject.set(x, "roleDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoleAssignments: Self = this.set("roleAssignments", js.undefined)
+    def setRoleDefinitionsNull: Self = StObject.set(x, "roleDefinitions", null)
     
     @scala.inline
-    def setRoleAssignmentsNull: Self = this.set("roleAssignments", null)
+    def setRoleDefinitionsUndefined: Self = StObject.set(x, "roleDefinitions", js.undefined)
     
     @scala.inline
-    def setRoleDefinitionsVarargs(value: RoleDefinition*): Self = this.set("roleDefinitions", js.Array(value :_*))
+    def setRoleDefinitionsVarargs(value: RoleDefinition*): Self = StObject.set(x, "roleDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setRoleDefinitions(value: NullableOption[js.Array[RoleDefinition]]): Self = this.set("roleDefinitions", value.asInstanceOf[js.Any])
+    def setSettings(value: NullableOption[DeviceManagementSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoleDefinitions: Self = this.set("roleDefinitions", js.undefined)
+    def setSettingsNull: Self = StObject.set(x, "settings", null)
     
     @scala.inline
-    def setRoleDefinitionsNull: Self = this.set("roleDefinitions", null)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def setSettings(value: NullableOption[DeviceManagementSettings]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setSoftwareUpdateStatusSummary(value: NullableOption[SoftwareUpdateStatusSummary]): Self = StObject.set(x, "softwareUpdateStatusSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSoftwareUpdateStatusSummaryNull: Self = StObject.set(x, "softwareUpdateStatusSummary", null)
     
     @scala.inline
-    def setSettingsNull: Self = this.set("settings", null)
+    def setSoftwareUpdateStatusSummaryUndefined: Self = StObject.set(x, "softwareUpdateStatusSummary", js.undefined)
     
     @scala.inline
-    def setSoftwareUpdateStatusSummary(value: NullableOption[SoftwareUpdateStatusSummary]): Self = this.set("softwareUpdateStatusSummary", value.asInstanceOf[js.Any])
+    def setSubscriptionState(value: DeviceManagementSubscriptionState): Self = StObject.set(x, "subscriptionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSoftwareUpdateStatusSummary: Self = this.set("softwareUpdateStatusSummary", js.undefined)
+    def setSubscriptionStateUndefined: Self = StObject.set(x, "subscriptionState", js.undefined)
     
     @scala.inline
-    def setSoftwareUpdateStatusSummaryNull: Self = this.set("softwareUpdateStatusSummary", null)
+    def setTelecomExpenseManagementPartners(value: NullableOption[js.Array[TelecomExpenseManagementPartner]]): Self = StObject.set(x, "telecomExpenseManagementPartners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionState(value: DeviceManagementSubscriptionState): Self = this.set("subscriptionState", value.asInstanceOf[js.Any])
+    def setTelecomExpenseManagementPartnersNull: Self = StObject.set(x, "telecomExpenseManagementPartners", null)
     
     @scala.inline
-    def deleteSubscriptionState: Self = this.set("subscriptionState", js.undefined)
+    def setTelecomExpenseManagementPartnersUndefined: Self = StObject.set(x, "telecomExpenseManagementPartners", js.undefined)
     
     @scala.inline
-    def setTelecomExpenseManagementPartnersVarargs(value: TelecomExpenseManagementPartner*): Self = this.set("telecomExpenseManagementPartners", js.Array(value :_*))
+    def setTelecomExpenseManagementPartnersVarargs(value: TelecomExpenseManagementPartner*): Self = StObject.set(x, "telecomExpenseManagementPartners", js.Array(value :_*))
     
     @scala.inline
-    def setTelecomExpenseManagementPartners(value: NullableOption[js.Array[TelecomExpenseManagementPartner]]): Self = this.set("telecomExpenseManagementPartners", value.asInstanceOf[js.Any])
+    def setTermsAndConditions(value: NullableOption[js.Array[TermsAndConditions]]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTelecomExpenseManagementPartners: Self = this.set("telecomExpenseManagementPartners", js.undefined)
+    def setTermsAndConditionsNull: Self = StObject.set(x, "termsAndConditions", null)
     
     @scala.inline
-    def setTelecomExpenseManagementPartnersNull: Self = this.set("telecomExpenseManagementPartners", null)
+    def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
     @scala.inline
-    def setTermsAndConditionsVarargs(value: TermsAndConditions*): Self = this.set("termsAndConditions", js.Array(value :_*))
+    def setTermsAndConditionsVarargs(value: TermsAndConditions*): Self = StObject.set(x, "termsAndConditions", js.Array(value :_*))
     
     @scala.inline
-    def setTermsAndConditions(value: NullableOption[js.Array[TermsAndConditions]]): Self = this.set("termsAndConditions", value.asInstanceOf[js.Any])
+    def setTroubleshootingEvents(value: NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]): Self = StObject.set(x, "troubleshootingEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTermsAndConditions: Self = this.set("termsAndConditions", js.undefined)
+    def setTroubleshootingEventsNull: Self = StObject.set(x, "troubleshootingEvents", null)
     
     @scala.inline
-    def setTermsAndConditionsNull: Self = this.set("termsAndConditions", null)
+    def setTroubleshootingEventsUndefined: Self = StObject.set(x, "troubleshootingEvents", js.undefined)
     
     @scala.inline
-    def setTroubleshootingEventsVarargs(value: DeviceManagementTroubleshootingEvent*): Self = this.set("troubleshootingEvents", js.Array(value :_*))
+    def setTroubleshootingEventsVarargs(value: DeviceManagementTroubleshootingEvent*): Self = StObject.set(x, "troubleshootingEvents", js.Array(value :_*))
     
     @scala.inline
-    def setTroubleshootingEvents(value: NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]): Self = this.set("troubleshootingEvents", value.asInstanceOf[js.Any])
+    def setWindowsInformationProtectionAppLearningSummaries(value: NullableOption[js.Array[WindowsInformationProtectionAppLearningSummary]]): Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTroubleshootingEvents: Self = this.set("troubleshootingEvents", js.undefined)
+    def setWindowsInformationProtectionAppLearningSummariesNull: Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", null)
     
     @scala.inline
-    def setTroubleshootingEventsNull: Self = this.set("troubleshootingEvents", null)
+    def setWindowsInformationProtectionAppLearningSummariesUndefined: Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", js.undefined)
     
     @scala.inline
-    def setWindowsInformationProtectionAppLearningSummariesVarargs(value: WindowsInformationProtectionAppLearningSummary*): Self = this.set("windowsInformationProtectionAppLearningSummaries", js.Array(value :_*))
+    def setWindowsInformationProtectionAppLearningSummariesVarargs(value: WindowsInformationProtectionAppLearningSummary*): Self = StObject.set(x, "windowsInformationProtectionAppLearningSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setWindowsInformationProtectionAppLearningSummaries(value: NullableOption[js.Array[WindowsInformationProtectionAppLearningSummary]]): Self = this.set("windowsInformationProtectionAppLearningSummaries", value.asInstanceOf[js.Any])
+    def setWindowsInformationProtectionNetworkLearningSummaries(value: NullableOption[js.Array[WindowsInformationProtectionNetworkLearningSummary]]): Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWindowsInformationProtectionAppLearningSummaries: Self = this.set("windowsInformationProtectionAppLearningSummaries", js.undefined)
+    def setWindowsInformationProtectionNetworkLearningSummariesNull: Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", null)
     
     @scala.inline
-    def setWindowsInformationProtectionAppLearningSummariesNull: Self = this.set("windowsInformationProtectionAppLearningSummaries", null)
+    def setWindowsInformationProtectionNetworkLearningSummariesUndefined: Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", js.undefined)
     
     @scala.inline
-    def setWindowsInformationProtectionNetworkLearningSummariesVarargs(value: WindowsInformationProtectionNetworkLearningSummary*): Self = this.set("windowsInformationProtectionNetworkLearningSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindowsInformationProtectionNetworkLearningSummaries(value: NullableOption[js.Array[WindowsInformationProtectionNetworkLearningSummary]]): Self = this.set("windowsInformationProtectionNetworkLearningSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsInformationProtectionNetworkLearningSummaries: Self = this.set("windowsInformationProtectionNetworkLearningSummaries", js.undefined)
-    
-    @scala.inline
-    def setWindowsInformationProtectionNetworkLearningSummariesNull: Self = this.set("windowsInformationProtectionNetworkLearningSummaries", null)
+    def setWindowsInformationProtectionNetworkLearningSummariesVarargs(value: WindowsInformationProtectionNetworkLearningSummary*): Self = StObject.set(x, "windowsInformationProtectionNetworkLearningSummaries", js.Array(value :_*))
   }
 }

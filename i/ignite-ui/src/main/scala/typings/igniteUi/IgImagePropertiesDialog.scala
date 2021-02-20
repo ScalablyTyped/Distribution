@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,78 +56,66 @@ object IgImagePropertiesDialog {
   }
   
   @scala.inline
-  implicit class IgImagePropertiesDialogOps[Self <: IgImagePropertiesDialog] (val x: Self) extends AnyVal {
+  implicit class IgImagePropertiesDialogMutableBuilder[Self <: IgImagePropertiesDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: (/* event */ Event, /* ui */ ApplyEventUIParam) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: (/* event */ Event, /* ui */ CancelEventUIParam) => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApply(value: (/* event */ Event, /* ui */ ApplyEventUIParam) => Unit): Self = this.set("apply", js.Any.fromFunction2(value))
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
+    def setHide(value: (/* event */ Event, /* ui */ HideEventUIParam) => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCancel(value: (/* event */ Event, /* ui */ CancelEventUIParam) => Unit): Self = this.set("cancel", js.Any.fromFunction2(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: (/* event */ Event, /* ui */ HideEventUIParam) => Unit): Self = this.set("hide", js.Any.fromFunction2(value))
+    def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHidden(value: Boolean): Self = this.set("isHidden", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteIsHidden: Self = this.set("isHidden", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setShow(value: (/* event */ Event, /* ui */ ShowEventUIParam) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: (/* event */ Event, /* ui */ ShowEventUIParam) => Unit): Self = this.set("show", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

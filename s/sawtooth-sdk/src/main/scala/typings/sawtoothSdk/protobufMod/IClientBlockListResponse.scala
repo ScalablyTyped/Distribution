@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ClientBlockListResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientBlockListResponse extends js.Object {
+trait IClientBlockListResponse extends StObject {
   
   /** ClientBlockListResponse blocks */
   var blocks: js.UndefOr[js.Array[IBlock] | Null] = js.native
@@ -29,57 +30,45 @@ object IClientBlockListResponse {
   }
   
   @scala.inline
-  implicit class IClientBlockListResponseOps[Self <: IClientBlockListResponse] (val x: Self) extends AnyVal {
+  implicit class IClientBlockListResponseMutableBuilder[Self <: IClientBlockListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocks(value: js.Array[IBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksNull: Self = StObject.set(x, "blocks", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
     @scala.inline
-    def setBlocksVarargs(value: IBlock*): Self = this.set("blocks", js.Array(value :_*))
+    def setBlocksVarargs(value: IBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocks(value: js.Array[IBlock]): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlocks: Self = this.set("blocks", js.undefined)
+    def setHeadIdNull: Self = StObject.set(x, "headId", null)
     
     @scala.inline
-    def setBlocksNull: Self = this.set("blocks", null)
+    def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
     
     @scala.inline
-    def setHeadId(value: String): Self = this.set("headId", value.asInstanceOf[js.Any])
+    def setPaging(value: IClientPagingResponse): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeadId: Self = this.set("headId", js.undefined)
+    def setPagingNull: Self = StObject.set(x, "paging", null)
     
     @scala.inline
-    def setHeadIdNull: Self = this.set("headId", null)
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def setPaging(value: IClientPagingResponse): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setPagingNull: Self = this.set("paging", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

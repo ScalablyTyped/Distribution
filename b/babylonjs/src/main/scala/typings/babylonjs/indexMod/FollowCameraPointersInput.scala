@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "FollowCameraPointersInput")
 @js.native
 class FollowCameraPointersInput ()
-  extends typings.babylonjs.followCameraPointersInputMod.FollowCameraPointersInput
+  extends typings.babylonjs.babylonjsMod.FollowCameraPointersInput

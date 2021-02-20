@@ -1,12 +1,13 @@
 package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerClassName extends js.Object {
+trait ContainerClassName extends StObject {
   
   var animate: Boolean = js.native
   
@@ -85,84 +86,72 @@ object ContainerClassName {
   }
   
   @scala.inline
-  implicit class ContainerClassNameOps[Self <: ContainerClassName] (val x: Self) extends AnyVal {
+  implicit class ContainerClassNameMutableBuilder[Self <: ContainerClassName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateOption(value: Appear): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateOption(value: Appear): Self = this.set("animateOption", value.asInstanceOf[js.Any])
+    def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setCrosshairTpl(value: String): Self = StObject.set(x, "crosshairTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClassName(value: String): Self = this.set("containerClassName", value.asInstanceOf[js.Any])
+    def setDefaultCfg(value: `0`): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerTpl(value: String): Self = this.set("containerTpl", value.asInstanceOf[js.Any])
+    def setDefaultStyles(value: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily]): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshairTpl(value: String): Self = this.set("crosshairTpl", value.asInstanceOf[js.Any])
+    def setDomStyles(value: js.Any): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCfg(value: `0`): Self = this.set("defaultCfg", value.asInstanceOf[js.Any])
+    def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultStyles(value: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily]): Self = this.set("defaultStyles", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomStyles(value: js.Any): Self = this.set("domStyles", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: X): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setTextTpl(value: String): Self = StObject.set(x, "textTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: X): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setUpdateAutoRender(value: Boolean): Self = StObject.set(x, "updateAutoRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextTpl(value: String): Self = this.set("textTpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateAutoRender(value: Boolean): Self = this.set("updateAutoRender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.lokijs.anon
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exact[E /* <: js.Object */] extends js.Object {
+trait Exact[E /* <: js.Object */] extends StObject {
   
   var exact: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.ExactIndex<E>}
@@ -32,32 +33,20 @@ object Exact {
   }
   
   @scala.inline
-  implicit class ExactOps[Self <: Exact[_], E /* <: js.Object */] (val x: Self with Exact[E]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ExactMutableBuilder[Self <: Exact[_], E /* <: js.Object */] (val x: Self with Exact[E]) extends AnyVal {
     
     @scala.inline
     def setExact(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof E ]: lokijs.ExactIndex<E>}
       */ typings.lokijs.lokijsStrings.Exact with TopLevel[js.Any]
-    ): Self = this.set("exact", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnique(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof E ]: lokijs.UniqueIndex<E>}
       */ typings.lokijs.lokijsStrings.Exact with TopLevel[js.Any]
-    ): Self = this.set("unique", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
   }
 }

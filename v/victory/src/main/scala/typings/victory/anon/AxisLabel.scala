@@ -1,12 +1,13 @@
 package typings.victory.anon
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisLabel extends js.Object {
+trait AxisLabel extends StObject {
   
   var axis: js.UndefOr[CSSProperties] = js.native
   
@@ -29,54 +30,42 @@ object AxisLabel {
   }
   
   @scala.inline
-  implicit class AxisLabelOps[Self <: AxisLabel] (val x: Self) extends AnyVal {
+  implicit class AxisLabelMutableBuilder[Self <: AxisLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: CSSProperties): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisLabel(value: CSSProperties): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisLabelUndefined: Self = StObject.set(x, "axisLabel", js.undefined)
     
     @scala.inline
-    def setAxis(value: CSSProperties): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setGrid(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLabel(value: CSSProperties): Self = this.set("axisLabel", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteAxisLabel: Self = this.set("axisLabel", js.undefined)
+    def setParent(value: CSSProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: KinkeyofCSSPropertiesstri): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setTickLabels(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "tickLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: CSSProperties): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setTickLabelsUndefined: Self = StObject.set(x, "tickLabels", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setTicks(value: KinkeyofCSSPropertiesstri): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickLabels(value: KinkeyofCSSPropertiesstri): Self = this.set("tickLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTickLabels: Self = this.set("tickLabels", js.undefined)
-    
-    @scala.inline
-    def setTicks(value: KinkeyofCSSPropertiesstri): Self = this.set("ticks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
+    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
   }
 }

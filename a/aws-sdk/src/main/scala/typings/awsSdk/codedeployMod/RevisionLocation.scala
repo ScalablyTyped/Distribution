@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionLocation extends js.Object {
+trait RevisionLocation extends StObject {
   
   /**
     *  The content of an AppSpec file for an AWS Lambda or Amazon ECS deployment. The content is formatted as JSON or YAML and stored as a RawString. 
@@ -41,48 +42,36 @@ object RevisionLocation {
   }
   
   @scala.inline
-  implicit class RevisionLocationOps[Self <: RevisionLocation] (val x: Self) extends AnyVal {
+  implicit class RevisionLocationMutableBuilder[Self <: RevisionLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppSpecContent(value: AppSpecContent): Self = StObject.set(x, "appSpecContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppSpecContentUndefined: Self = StObject.set(x, "appSpecContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGitHubLocation(value: GitHubLocation): Self = StObject.set(x, "gitHubLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppSpecContent(value: AppSpecContent): Self = this.set("appSpecContent", value.asInstanceOf[js.Any])
+    def setGitHubLocationUndefined: Self = StObject.set(x, "gitHubLocation", js.undefined)
     
     @scala.inline
-    def deleteAppSpecContent: Self = this.set("appSpecContent", js.undefined)
+    def setRevisionType(value: RevisionLocationType): Self = StObject.set(x, "revisionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitHubLocation(value: GitHubLocation): Self = this.set("gitHubLocation", value.asInstanceOf[js.Any])
+    def setRevisionTypeUndefined: Self = StObject.set(x, "revisionType", js.undefined)
     
     @scala.inline
-    def deleteGitHubLocation: Self = this.set("gitHubLocation", js.undefined)
+    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionType(value: RevisionLocationType): Self = this.set("revisionType", value.asInstanceOf[js.Any])
+    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
     
     @scala.inline
-    def deleteRevisionType: Self = this.set("revisionType", js.undefined)
+    def setString(value: RawString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Location(value: S3Location): Self = this.set("s3Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Location: Self = this.set("s3Location", js.undefined)
-    
-    @scala.inline
-    def setString(value: RawString): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

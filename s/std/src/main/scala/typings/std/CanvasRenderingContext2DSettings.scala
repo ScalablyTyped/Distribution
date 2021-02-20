@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasRenderingContext2DSettings extends js.Object {
+trait CanvasRenderingContext2DSettings extends StObject {
   
   var alpha: js.UndefOr[scala.Boolean] = js.native
   
@@ -20,30 +21,18 @@ object CanvasRenderingContext2DSettings {
   }
   
   @scala.inline
-  implicit class CanvasRenderingContext2DSettingsOps[Self <: CanvasRenderingContext2DSettings] (val x: Self) extends AnyVal {
+  implicit class CanvasRenderingContext2DSettingsMutableBuilder[Self <: CanvasRenderingContext2DSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesynchronized(value: scala.Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: scala.Boolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
-    
-    @scala.inline
-    def setDesynchronized(value: scala.Boolean): Self = this.set("desynchronized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesynchronized: Self = this.set("desynchronized", js.undefined)
+    def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.UI.Input.Inking
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties and methods to manage InkStroke handwriting recognition data. */
 @js.native
-trait InkRecognitionResult extends js.Object {
+trait InkRecognitionResult extends StObject {
   
   /** Gets the bounding rectangle of the InkStroke data used for handwriting recognition. */
   var boundingRect: Rect = js.native
@@ -38,27 +39,15 @@ object InkRecognitionResult {
   }
   
   @scala.inline
-  implicit class InkRecognitionResultOps[Self <: InkRecognitionResult] (val x: Self) extends AnyVal {
+  implicit class InkRecognitionResultMutableBuilder[Self <: InkRecognitionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetStrokes(value: () => IVectorView[InkStroke]): Self = StObject.set(x, "getStrokes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBoundingRect(value: Rect): Self = this.set("boundingRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetStrokes(value: () => IVectorView[InkStroke]): Self = this.set("getStrokes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextCandidates(value: () => IVectorView[String]): Self = this.set("getTextCandidates", js.Any.fromFunction0(value))
+    def setGetTextCandidates(value: () => IVectorView[String]): Self = StObject.set(x, "getTextCandidates", js.Any.fromFunction0(value))
   }
 }

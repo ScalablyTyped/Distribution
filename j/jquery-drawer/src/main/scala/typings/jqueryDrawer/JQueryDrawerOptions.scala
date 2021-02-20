@@ -1,12 +1,13 @@
 package typings.jqueryDrawer
 
 import typings.iscroll.IScrollOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryDrawerOptions extends js.Object {
+trait JQueryDrawerOptions extends StObject {
   
   var `class`: js.UndefOr[JQueryDrawerClassOptions] = js.native
   
@@ -23,36 +24,24 @@ object JQueryDrawerOptions {
   }
   
   @scala.inline
-  implicit class JQueryDrawerOptionsOps[Self <: JQueryDrawerOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryDrawerOptionsMutableBuilder[Self <: JQueryDrawerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: JQueryDrawerClassOptions): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIscroll(value: IScrollOptions): Self = StObject.set(x, "iscroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: JQueryDrawerClassOptions): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setIscrollUndefined: Self = StObject.set(x, "iscroll", js.undefined)
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setShowOverlay(value: Boolean): Self = StObject.set(x, "showOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIscroll(value: IScrollOptions): Self = this.set("iscroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIscroll: Self = this.set("iscroll", js.undefined)
-    
-    @scala.inline
-    def setShowOverlay(value: Boolean): Self = this.set("showOverlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowOverlay: Self = this.set("showOverlay", js.undefined)
+    def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageServiceIdentifyResultProperties extends js.Object {
+trait ImageServiceIdentifyResultProperties extends StObject {
   
   /**
     * The set of visible areas for the identified catalog items.
@@ -65,63 +66,51 @@ object ImageServiceIdentifyResultProperties {
   }
   
   @scala.inline
-  implicit class ImageServiceIdentifyResultPropertiesOps[Self <: ImageServiceIdentifyResultProperties] (val x: Self) extends AnyVal {
+  implicit class ImageServiceIdentifyResultPropertiesMutableBuilder[Self <: ImageServiceIdentifyResultProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogItemVisibilities(value: js.Array[Double]): Self = StObject.set(x, "catalogItemVisibilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogItemVisibilitiesUndefined: Self = StObject.set(x, "catalogItemVisibilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCatalogItemVisibilitiesVarargs(value: Double*): Self = StObject.set(x, "catalogItemVisibilities", js.Array(value :_*))
     
     @scala.inline
-    def setCatalogItemVisibilitiesVarargs(value: Double*): Self = this.set("catalogItemVisibilities", js.Array(value :_*))
+    def setCatalogItems(value: FeatureSetProperties): Self = StObject.set(x, "catalogItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogItemVisibilities(value: js.Array[Double]): Self = this.set("catalogItemVisibilities", value.asInstanceOf[js.Any])
+    def setCatalogItemsUndefined: Self = StObject.set(x, "catalogItems", js.undefined)
     
     @scala.inline
-    def deleteCatalogItemVisibilities: Self = this.set("catalogItemVisibilities", js.undefined)
+    def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogItems(value: FeatureSetProperties): Self = this.set("catalogItems", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteCatalogItems: Self = this.set("catalogItems", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: PointProperties): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: Double): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

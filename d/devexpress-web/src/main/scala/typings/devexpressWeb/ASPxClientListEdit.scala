@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,33 +87,21 @@ object ASPxClientListEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientListEditOps[Self <: ASPxClientListEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientListEditMutableBuilder[Self <: ASPxClientListEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSelectedIndex(value: () => Double): Self = StObject.set(x, "GetSelectedIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelectedItem(value: () => ASPxClientListEditItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientListEdit]]): Self = StObject.set(x, "SelectedIndexChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectedIndex(value: () => Double): Self = this.set("GetSelectedIndex", js.Any.fromFunction0(value))
+    def setSetSelectedIndex(value: Double => Unit): Self = StObject.set(x, "SetSelectedIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedItem(value: () => ASPxClientListEditItem): Self = this.set("GetSelectedItem", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientListEdit]]): Self = this.set("SelectedIndexChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetSelectedIndex(value: Double => Unit): Self = this.set("SetSelectedIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSelectedItem(value: ASPxClientListEditItem => Unit): Self = this.set("SetSelectedItem", js.Any.fromFunction1(value))
+    def setSetSelectedItem(value: ASPxClientListEditItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

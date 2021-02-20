@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeTreeSnapshot extends js.Object {
+trait NodeTreeSnapshot extends StObject {
   
   /**
     * Attributes of an `Element` node. Flatten name, value pairs.
@@ -95,126 +96,114 @@ object NodeTreeSnapshot {
   }
   
   @scala.inline
-  implicit class NodeTreeSnapshotOps[Self <: NodeTreeSnapshot] (val x: Self) extends AnyVal {
+  implicit class NodeTreeSnapshotMutableBuilder[Self <: NodeTreeSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[ArrayOfStrings]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: ArrayOfStrings*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: ArrayOfStrings*): Self = this.set("attributes", js.Array(value :_*))
+    def setBackendNodeId(value: js.Array[BackendNodeId]): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[ArrayOfStrings]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setBackendNodeIdVarargs(value: BackendNodeId*): Self = StObject.set(x, "backendNodeId", js.Array(value :_*))
     
     @scala.inline
-    def setBackendNodeIdVarargs(value: BackendNodeId*): Self = this.set("backendNodeId", js.Array(value :_*))
+    def setContentDocumentIndex(value: RareIntegerData): Self = StObject.set(x, "contentDocumentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendNodeId(value: js.Array[BackendNodeId]): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
+    def setContentDocumentIndexUndefined: Self = StObject.set(x, "contentDocumentIndex", js.undefined)
     
     @scala.inline
-    def deleteBackendNodeId: Self = this.set("backendNodeId", js.undefined)
+    def setCurrentSourceURL(value: RareStringData): Self = StObject.set(x, "currentSourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDocumentIndex(value: RareIntegerData): Self = this.set("contentDocumentIndex", value.asInstanceOf[js.Any])
+    def setCurrentSourceURLUndefined: Self = StObject.set(x, "currentSourceURL", js.undefined)
     
     @scala.inline
-    def deleteContentDocumentIndex: Self = this.set("contentDocumentIndex", js.undefined)
+    def setInputChecked(value: RareBooleanData): Self = StObject.set(x, "inputChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSourceURL(value: RareStringData): Self = this.set("currentSourceURL", value.asInstanceOf[js.Any])
+    def setInputCheckedUndefined: Self = StObject.set(x, "inputChecked", js.undefined)
     
     @scala.inline
-    def deleteCurrentSourceURL: Self = this.set("currentSourceURL", js.undefined)
+    def setInputValue(value: RareStringData): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputChecked(value: RareBooleanData): Self = this.set("inputChecked", value.asInstanceOf[js.Any])
+    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
     @scala.inline
-    def deleteInputChecked: Self = this.set("inputChecked", js.undefined)
+    def setIsClickable(value: RareBooleanData): Self = StObject.set(x, "isClickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputValue(value: RareStringData): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    def setIsClickableUndefined: Self = StObject.set(x, "isClickable", js.undefined)
     
     @scala.inline
-    def deleteInputValue: Self = this.set("inputValue", js.undefined)
+    def setNodeName(value: js.Array[StringIndex]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClickable(value: RareBooleanData): Self = this.set("isClickable", value.asInstanceOf[js.Any])
+    def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
     
     @scala.inline
-    def deleteIsClickable: Self = this.set("isClickable", js.undefined)
+    def setNodeNameVarargs(value: StringIndex*): Self = StObject.set(x, "nodeName", js.Array(value :_*))
     
     @scala.inline
-    def setNodeNameVarargs(value: StringIndex*): Self = this.set("nodeName", js.Array(value :_*))
+    def setNodeType(value: js.Array[integer]): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeName(value: js.Array[StringIndex]): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
     @scala.inline
-    def deleteNodeName: Self = this.set("nodeName", js.undefined)
+    def setNodeTypeVarargs(value: integer*): Self = StObject.set(x, "nodeType", js.Array(value :_*))
     
     @scala.inline
-    def setNodeTypeVarargs(value: integer*): Self = this.set("nodeType", js.Array(value :_*))
+    def setNodeValue(value: js.Array[StringIndex]): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: js.Array[integer]): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setNodeValueUndefined: Self = StObject.set(x, "nodeValue", js.undefined)
     
     @scala.inline
-    def deleteNodeType: Self = this.set("nodeType", js.undefined)
+    def setNodeValueVarargs(value: StringIndex*): Self = StObject.set(x, "nodeValue", js.Array(value :_*))
     
     @scala.inline
-    def setNodeValueVarargs(value: StringIndex*): Self = this.set("nodeValue", js.Array(value :_*))
+    def setOptionSelected(value: RareBooleanData): Self = StObject.set(x, "optionSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeValue(value: js.Array[StringIndex]): Self = this.set("nodeValue", value.asInstanceOf[js.Any])
+    def setOptionSelectedUndefined: Self = StObject.set(x, "optionSelected", js.undefined)
     
     @scala.inline
-    def deleteNodeValue: Self = this.set("nodeValue", js.undefined)
+    def setOriginURL(value: RareStringData): Self = StObject.set(x, "originURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionSelected(value: RareBooleanData): Self = this.set("optionSelected", value.asInstanceOf[js.Any])
+    def setOriginURLUndefined: Self = StObject.set(x, "originURL", js.undefined)
     
     @scala.inline
-    def deleteOptionSelected: Self = this.set("optionSelected", js.undefined)
+    def setParentIndex(value: js.Array[integer]): Self = StObject.set(x, "parentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginURL(value: RareStringData): Self = this.set("originURL", value.asInstanceOf[js.Any])
+    def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
     
     @scala.inline
-    def deleteOriginURL: Self = this.set("originURL", js.undefined)
+    def setParentIndexVarargs(value: integer*): Self = StObject.set(x, "parentIndex", js.Array(value :_*))
     
     @scala.inline
-    def setParentIndexVarargs(value: integer*): Self = this.set("parentIndex", js.Array(value :_*))
+    def setPseudoType(value: RareStringData): Self = StObject.set(x, "pseudoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentIndex(value: js.Array[integer]): Self = this.set("parentIndex", value.asInstanceOf[js.Any])
+    def setPseudoTypeUndefined: Self = StObject.set(x, "pseudoType", js.undefined)
     
     @scala.inline
-    def deleteParentIndex: Self = this.set("parentIndex", js.undefined)
+    def setTextValue(value: RareStringData): Self = StObject.set(x, "textValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudoType(value: RareStringData): Self = this.set("pseudoType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePseudoType: Self = this.set("pseudoType", js.undefined)
-    
-    @scala.inline
-    def setTextValue(value: RareStringData): Self = this.set("textValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextValue: Self = this.set("textValue", js.undefined)
+    def setTextValueUndefined: Self = StObject.set(x, "textValue", js.undefined)
   }
 }

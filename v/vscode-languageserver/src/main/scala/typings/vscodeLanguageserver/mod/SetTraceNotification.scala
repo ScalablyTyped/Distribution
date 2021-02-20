@@ -1,13 +1,14 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeJsonrpc.mod.SetTraceParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "SetTraceNotification")
-@js.native
-object SetTraceNotification extends js.Object {
+object SetTraceNotification {
   
+  @JSImport("vscode-languageserver", "SetTraceNotification.type")
+  @js.native
   val `type`: typings.vscodeJsonrpc.messagesMod.NotificationType[SetTraceParams, Unit] = js.native
 }

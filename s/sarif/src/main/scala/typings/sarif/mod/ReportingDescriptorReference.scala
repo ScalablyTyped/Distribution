@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportingDescriptorReference extends js.Object {
+trait ReportingDescriptorReference extends StObject {
   
   /**
     * A guid that uniquely identifies the descriptor.
@@ -42,48 +43,36 @@ object ReportingDescriptorReference {
   }
   
   @scala.inline
-  implicit class ReportingDescriptorReferenceOps[Self <: ReportingDescriptorReference] (val x: Self) extends AnyVal {
+  implicit class ReportingDescriptorReferenceMutableBuilder[Self <: ReportingDescriptorReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: String): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGuid: Self = this.set("guid", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setToolComponent(value: ToolComponentReference): Self = StObject.set(x, "toolComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setToolComponent(value: ToolComponentReference): Self = this.set("toolComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolComponent: Self = this.set("toolComponent", js.undefined)
+    def setToolComponentUndefined: Self = StObject.set(x, "toolComponent", js.undefined)
   }
 }

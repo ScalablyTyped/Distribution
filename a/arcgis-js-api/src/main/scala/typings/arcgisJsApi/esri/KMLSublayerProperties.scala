@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KMLSublayerProperties extends js.Object {
+trait KMLSublayerProperties extends StObject {
   
   /**
     * Description for the KML sublayer.
@@ -72,69 +73,57 @@ object KMLSublayerProperties {
   }
   
   @scala.inline
-  implicit class KMLSublayerPropertiesOps[Self <: KMLSublayerProperties] (val x: Self) extends AnyVal {
+  implicit class KMLSublayerPropertiesMutableBuilder[Self <: KMLSublayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLayer(value: KMLLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNetworkLink(value: js.Any): Self = StObject.set(x, "networkLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: KMLLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setNetworkLinkUndefined: Self = StObject.set(x, "networkLink", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkLink(value: js.Any): Self = this.set("networkLink", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deleteNetworkLink: Self = this.set("networkLink", js.undefined)
+    def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
     @scala.inline
-    def setSublayersVarargs(value: KMLSublayerProperties*): Self = this.set("sublayers", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = this.set("sublayers", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSublayers: Self = this.set("sublayers", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

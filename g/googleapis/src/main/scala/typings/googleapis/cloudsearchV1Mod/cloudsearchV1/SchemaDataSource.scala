@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * indexed into Cloud Search.
   */
 @js.native
-trait SchemaDataSource extends js.Object {
+trait SchemaDataSource extends StObject {
   
   /**
     * If true, Indexing API rejects any modification calls to this datasource
@@ -79,75 +80,63 @@ object SchemaDataSource {
   }
   
   @scala.inline
-  implicit class SchemaDataSourceOps[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
+  implicit class SchemaDataSourceMutableBuilder[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableModifications(value: Boolean): Self = StObject.set(x, "disableModifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableModificationsUndefined: Self = StObject.set(x, "disableModifications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableServing(value: Boolean): Self = StObject.set(x, "disableServing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableModifications(value: Boolean): Self = this.set("disableModifications", value.asInstanceOf[js.Any])
+    def setDisableServingUndefined: Self = StObject.set(x, "disableServing", js.undefined)
     
     @scala.inline
-    def deleteDisableModifications: Self = this.set("disableModifications", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableServing(value: Boolean): Self = this.set("disableServing", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDisableServing: Self = this.set("disableServing", js.undefined)
+    def setIndexingServiceAccounts(value: js.Array[String]): Self = StObject.set(x, "indexingServiceAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIndexingServiceAccountsUndefined: Self = StObject.set(x, "indexingServiceAccounts", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIndexingServiceAccountsVarargs(value: String*): Self = StObject.set(x, "indexingServiceAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setIndexingServiceAccountsVarargs(value: String*): Self = this.set("indexingServiceAccounts", js.Array(value :_*))
+    def setItemsVisibility(value: js.Array[SchemaGSuitePrincipal]): Self = StObject.set(x, "itemsVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexingServiceAccounts(value: js.Array[String]): Self = this.set("indexingServiceAccounts", value.asInstanceOf[js.Any])
+    def setItemsVisibilityUndefined: Self = StObject.set(x, "itemsVisibility", js.undefined)
     
     @scala.inline
-    def deleteIndexingServiceAccounts: Self = this.set("indexingServiceAccounts", js.undefined)
+    def setItemsVisibilityVarargs(value: SchemaGSuitePrincipal*): Self = StObject.set(x, "itemsVisibility", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVisibilityVarargs(value: SchemaGSuitePrincipal*): Self = this.set("itemsVisibility", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVisibility(value: js.Array[SchemaGSuitePrincipal]): Self = this.set("itemsVisibility", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItemsVisibility: Self = this.set("itemsVisibility", js.undefined)
+    def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
     
     @scala.inline
-    def setOperationIdsVarargs(value: String*): Self = this.set("operationIds", js.Array(value :_*))
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationIds(value: js.Array[String]): Self = this.set("operationIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationIds: Self = this.set("operationIds", js.undefined)
-    
-    @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortName: Self = this.set("shortName", js.undefined)
+    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
   }
 }

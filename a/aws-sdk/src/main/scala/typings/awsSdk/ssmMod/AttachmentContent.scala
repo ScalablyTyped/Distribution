@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachmentContent extends js.Object {
+trait AttachmentContent extends StObject {
   
   /**
     * The cryptographic hash value of the document content.
@@ -41,48 +42,36 @@ object AttachmentContent {
   }
   
   @scala.inline
-  implicit class AttachmentContentOps[Self <: AttachmentContent] (val x: Self) extends AnyVal {
+  implicit class AttachmentContentMutableBuilder[Self <: AttachmentContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: AttachmentHash): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashType(value: AttachmentHashType): Self = StObject.set(x, "HashType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashTypeUndefined: Self = StObject.set(x, "HashType", js.undefined)
     
     @scala.inline
-    def setHash(value: AttachmentHash): Self = this.set("Hash", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "Hash", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("Hash", js.undefined)
+    def setName(value: AttachmentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashType(value: AttachmentHashType): Self = this.set("HashType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteHashType: Self = this.set("HashType", js.undefined)
+    def setSize(value: ContentLength): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AttachmentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setUrl(value: AttachmentUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: ContentLength): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: AttachmentUrl): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

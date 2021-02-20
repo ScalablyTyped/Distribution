@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessCodeFormat extends js.Object {
+trait AccessCodeFormat extends StObject {
   
   /**
     * Boolean specifying whether this format configuration is required.
@@ -66,78 +67,66 @@ object AccessCodeFormat {
   }
   
   @scala.inline
-  implicit class AccessCodeFormatOps[Self <: AccessCodeFormat] (val x: Self) extends AnyVal {
+  implicit class AccessCodeFormatMutableBuilder[Self <: AccessCodeFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatRequired(value: String): Self = StObject.set(x, "formatRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "formatRequiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatRequiredMetadataUndefined: Self = StObject.set(x, "formatRequiredMetadata", js.undefined)
     
     @scala.inline
-    def setFormatRequired(value: String): Self = this.set("formatRequired", value.asInstanceOf[js.Any])
+    def setFormatRequiredUndefined: Self = StObject.set(x, "formatRequired", js.undefined)
     
     @scala.inline
-    def deleteFormatRequired: Self = this.set("formatRequired", js.undefined)
+    def setLetterRequired(value: String): Self = StObject.set(x, "letterRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatRequiredMetadata(value: SettingsMetadata): Self = this.set("formatRequiredMetadata", value.asInstanceOf[js.Any])
+    def setLetterRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "letterRequiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormatRequiredMetadata: Self = this.set("formatRequiredMetadata", js.undefined)
+    def setLetterRequiredMetadataUndefined: Self = StObject.set(x, "letterRequiredMetadata", js.undefined)
     
     @scala.inline
-    def setLetterRequired(value: String): Self = this.set("letterRequired", value.asInstanceOf[js.Any])
+    def setLetterRequiredUndefined: Self = StObject.set(x, "letterRequired", js.undefined)
     
     @scala.inline
-    def deleteLetterRequired: Self = this.set("letterRequired", js.undefined)
+    def setMinimumLength(value: String): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterRequiredMetadata(value: SettingsMetadata): Self = this.set("letterRequiredMetadata", value.asInstanceOf[js.Any])
+    def setMinimumLengthMetadata(value: SettingsMetadata): Self = StObject.set(x, "minimumLengthMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetterRequiredMetadata: Self = this.set("letterRequiredMetadata", js.undefined)
+    def setMinimumLengthMetadataUndefined: Self = StObject.set(x, "minimumLengthMetadata", js.undefined)
     
     @scala.inline
-    def setMinimumLength(value: String): Self = this.set("minimumLength", value.asInstanceOf[js.Any])
+    def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
     
     @scala.inline
-    def deleteMinimumLength: Self = this.set("minimumLength", js.undefined)
+    def setNumberRequired(value: String): Self = StObject.set(x, "numberRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumLengthMetadata(value: SettingsMetadata): Self = this.set("minimumLengthMetadata", value.asInstanceOf[js.Any])
+    def setNumberRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "numberRequiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumLengthMetadata: Self = this.set("minimumLengthMetadata", js.undefined)
+    def setNumberRequiredMetadataUndefined: Self = StObject.set(x, "numberRequiredMetadata", js.undefined)
     
     @scala.inline
-    def setNumberRequired(value: String): Self = this.set("numberRequired", value.asInstanceOf[js.Any])
+    def setNumberRequiredUndefined: Self = StObject.set(x, "numberRequired", js.undefined)
     
     @scala.inline
-    def deleteNumberRequired: Self = this.set("numberRequired", js.undefined)
+    def setSpecialCharacterRequired(value: String): Self = StObject.set(x, "specialCharacterRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberRequiredMetadata(value: SettingsMetadata): Self = this.set("numberRequiredMetadata", value.asInstanceOf[js.Any])
+    def setSpecialCharacterRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "specialCharacterRequiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberRequiredMetadata: Self = this.set("numberRequiredMetadata", js.undefined)
+    def setSpecialCharacterRequiredMetadataUndefined: Self = StObject.set(x, "specialCharacterRequiredMetadata", js.undefined)
     
     @scala.inline
-    def setSpecialCharacterRequired(value: String): Self = this.set("specialCharacterRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecialCharacterRequired: Self = this.set("specialCharacterRequired", js.undefined)
-    
-    @scala.inline
-    def setSpecialCharacterRequiredMetadata(value: SettingsMetadata): Self = this.set("specialCharacterRequiredMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecialCharacterRequiredMetadata: Self = this.set("specialCharacterRequiredMetadata", js.undefined)
+    def setSpecialCharacterRequiredUndefined: Self = StObject.set(x, "specialCharacterRequired", js.undefined)
   }
 }

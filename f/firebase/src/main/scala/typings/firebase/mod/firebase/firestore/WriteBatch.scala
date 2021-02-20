@@ -1,12 +1,13 @@
 package typings.firebase.mod.firebase.firestore
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteBatch extends js.Object {
+trait WriteBatch extends StObject {
   
   /**
     * Commits all of the writes in this write batch as a single atomic unit.

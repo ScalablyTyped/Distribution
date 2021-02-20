@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessesType extends js.Object {
+trait ProcessesType extends StObject {
   
   /**
     * The names of the process types.
@@ -21,27 +22,15 @@ object ProcessesType {
   }
   
   @scala.inline
-  implicit class ProcessesTypeOps[Self <: ProcessesType] (val x: Self) extends AnyVal {
+  implicit class ProcessesTypeMutableBuilder[Self <: ProcessesType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProcesses(value: Processes): Self = StObject.set(x, "Processes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProcessesUndefined: Self = StObject.set(x, "Processes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProcessesVarargs(value: ProcessType*): Self = this.set("Processes", js.Array(value :_*))
-    
-    @scala.inline
-    def setProcesses(value: Processes): Self = this.set("Processes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcesses: Self = this.set("Processes", js.undefined)
+    def setProcessesVarargs(value: ProcessType*): Self = StObject.set(x, "Processes", js.Array(value :_*))
   }
 }

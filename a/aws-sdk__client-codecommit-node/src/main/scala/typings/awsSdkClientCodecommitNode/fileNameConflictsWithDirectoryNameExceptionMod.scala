@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/FileNameConflictsWithDirectoryNameException", JSImport.Namespace)
-@js.native
-object fileNameConflictsWithDirectoryNameExceptionMod extends js.Object {
+object fileNameConflictsWithDirectoryNameExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/FileNameConflictsWithDirectoryNameException", "FileNameConflictsWithDirectoryNameException")
+  @js.native
   val FileNameConflictsWithDirectoryNameException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

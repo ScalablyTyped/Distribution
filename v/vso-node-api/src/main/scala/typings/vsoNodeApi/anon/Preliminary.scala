@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Preliminary extends js.Object {
+trait Preliminary extends StObject {
   
   var full: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object Preliminary {
   }
   
   @scala.inline
-  implicit class PreliminaryOps[Self <: Preliminary] (val x: Self) extends AnyVal {
+  implicit class PreliminaryMutableBuilder[Self <: Preliminary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: scala.Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFull(value: scala.Double): Self = this.set("full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreliminary(value: scala.Double): Self = this.set("preliminary", value.asInstanceOf[js.Any])
+    def setPreliminary(value: scala.Double): Self = StObject.set(x, "preliminary", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConnectionAction extends js.Object {
+trait NetworkConnectionAction extends StObject {
   
   /**
     * Indicates whether EC2 blocked the network connection to your instance.
@@ -51,60 +52,48 @@ object NetworkConnectionAction {
   }
   
   @scala.inline
-  implicit class NetworkConnectionActionOps[Self <: NetworkConnectionAction] (val x: Self) extends AnyVal {
+  implicit class NetworkConnectionActionMutableBuilder[Self <: NetworkConnectionAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedUndefined: Self = StObject.set(x, "Blocked", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionDirection(value: String): Self = StObject.set(x, "ConnectionDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: Boolean): Self = this.set("Blocked", value.asInstanceOf[js.Any])
+    def setConnectionDirectionUndefined: Self = StObject.set(x, "ConnectionDirection", js.undefined)
     
     @scala.inline
-    def deleteBlocked: Self = this.set("Blocked", js.undefined)
+    def setLocalIpDetails(value: LocalIpDetails): Self = StObject.set(x, "LocalIpDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionDirection(value: String): Self = this.set("ConnectionDirection", value.asInstanceOf[js.Any])
+    def setLocalIpDetailsUndefined: Self = StObject.set(x, "LocalIpDetails", js.undefined)
     
     @scala.inline
-    def deleteConnectionDirection: Self = this.set("ConnectionDirection", js.undefined)
+    def setLocalPortDetails(value: LocalPortDetails): Self = StObject.set(x, "LocalPortDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalIpDetails(value: LocalIpDetails): Self = this.set("LocalIpDetails", value.asInstanceOf[js.Any])
+    def setLocalPortDetailsUndefined: Self = StObject.set(x, "LocalPortDetails", js.undefined)
     
     @scala.inline
-    def deleteLocalIpDetails: Self = this.set("LocalIpDetails", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPortDetails(value: LocalPortDetails): Self = this.set("LocalPortDetails", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def deleteLocalPortDetails: Self = this.set("LocalPortDetails", js.undefined)
+    def setRemoteIpDetails(value: RemoteIpDetails): Self = StObject.set(x, "RemoteIpDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setRemoteIpDetailsUndefined: Self = StObject.set(x, "RemoteIpDetails", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    def setRemotePortDetails(value: RemotePortDetails): Self = StObject.set(x, "RemotePortDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteIpDetails(value: RemoteIpDetails): Self = this.set("RemoteIpDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteIpDetails: Self = this.set("RemoteIpDetails", js.undefined)
-    
-    @scala.inline
-    def setRemotePortDetails(value: RemotePortDetails): Self = this.set("RemotePortDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemotePortDetails: Self = this.set("RemotePortDetails", js.undefined)
+    def setRemotePortDetailsUndefined: Self = StObject.set(x, "RemotePortDetails", js.undefined)
   }
 }

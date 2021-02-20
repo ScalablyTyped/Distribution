@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for the result of checking a revision.
   */
 @js.native
-trait SchemaRevisionCheckResponse extends js.Object {
+trait SchemaRevisionCheckResponse extends StObject {
   
   /**
     * The version of the API this client revision should use when calling API
@@ -40,36 +41,24 @@ object SchemaRevisionCheckResponse {
   }
   
   @scala.inline
-  implicit class SchemaRevisionCheckResponseOps[Self <: SchemaRevisionCheckResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaRevisionCheckResponseMutableBuilder[Self <: SchemaRevisionCheckResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setRevisionStatus(value: String): Self = StObject.set(x, "revisionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setRevisionStatus(value: String): Self = this.set("revisionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionStatus: Self = this.set("revisionStatus", js.undefined)
+    def setRevisionStatusUndefined: Self = StObject.set(x, "revisionStatus", js.undefined)
   }
 }

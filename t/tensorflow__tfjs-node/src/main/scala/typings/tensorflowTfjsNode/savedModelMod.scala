@@ -8,29 +8,14 @@ import typings.tensorflowTfjsCore.modelTypesMod.MetaGraph
 import typings.tensorflowTfjsCore.modelTypesMod.SignatureDefEntry
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node/dist/saved_model", JSImport.Namespace)
-@js.native
-object savedModelMod extends js.Object {
+object savedModelMod {
   
-  def getEnumKeyFromValue(`object`: js.Any, value: Double): String = js.native
-  
-  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
-  
-  def getNumOfSavedModels(): Double = js.native
-  
-  def getSignatureDefEntryFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): SignatureDefEntry = js.native
-  
-  def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
-  def loadSavedModel(path: String, tags: js.UndefOr[scala.Nothing], signature: String): js.Promise[TFSavedModel] = js.native
-  def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
-  def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native
-  
-  def readSavedModelProto(path: String): js.Promise[_] = js.native
-  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "TFSavedModel")
   @js.native
   class TFSavedModel protected () extends InferenceModel {
     def this(sessionId: Double, jsid: Double, signature: SignatureDefEntry, backend: NodeJSKernelBackend) = this()
@@ -85,4 +70,37 @@ object savedModelMod extends js.Object {
     
     var signature: js.Any = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getEnumKeyFromValue")
+  @js.native
+  def getEnumKeyFromValue(`object`: js.Any, value: Double): String = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getMetaGraphsFromSavedModel")
+  @js.native
+  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getNumOfSavedModels")
+  @js.native
+  def getNumOfSavedModels(): Double = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "getSignatureDefEntryFromMetaGraphInfo")
+  @js.native
+  def getSignatureDefEntryFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): SignatureDefEntry = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
+  @js.native
+  def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
+  @js.native
+  def loadSavedModel(path: String, tags: js.UndefOr[scala.Nothing], signature: String): js.Promise[TFSavedModel] = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
+  @js.native
+  def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "loadSavedModel")
+  @js.native
+  def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native
+  
+  @JSImport("@tensorflow/tfjs-node/dist/saved_model", "readSavedModelProto")
+  @js.native
+  def readSavedModelProto(path: String): js.Promise[_] = js.native
 }

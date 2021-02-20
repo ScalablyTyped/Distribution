@@ -1,11 +1,12 @@
 package typings.babelTypes.ts36Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   var end: Double = js.native
   
@@ -31,57 +32,45 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInnerComments(value: js.Array[Comment]): Self = StObject.set(x, "innerComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerCommentsUndefined: Self = StObject.set(x, "innerComments", js.undefined)
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setInnerCommentsVarargs(value: Comment*): Self = StObject.set(x, "innerComments", js.Array(value :_*))
     
     @scala.inline
-    def setLoc(value: SourceLocation): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setLeadingCommentsUndefined: Self = StObject.set(x, "leadingComments", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "leadingComments", js.Array(value :_*))
     
     @scala.inline
-    def setInnerCommentsVarargs(value: Comment*): Self = this.set("innerComments", js.Array(value :_*))
+    def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerComments(value: js.Array[Comment]): Self = this.set("innerComments", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInnerComments: Self = this.set("innerComments", js.undefined)
+    def setTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadingCommentsVarargs(value: Comment*): Self = this.set("leadingComments", js.Array(value :_*))
+    def setTrailingCommentsUndefined: Self = StObject.set(x, "trailingComments", js.undefined)
     
     @scala.inline
-    def setLeadingComments(value: js.Array[Comment]): Self = this.set("leadingComments", value.asInstanceOf[js.Any])
+    def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value :_*))
     
     @scala.inline
-    def deleteLeadingComments: Self = this.set("leadingComments", js.undefined)
-    
-    @scala.inline
-    def setTrailingCommentsVarargs(value: Comment*): Self = this.set("trailingComments", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrailingComments(value: js.Array[Comment]): Self = this.set("trailingComments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailingComments: Self = this.set("trailingComments", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationOptions extends js.Object {
+trait AnimationOptions extends StObject {
   
   /**
     * Sets a time-delay for initiating an animation action.
@@ -32,30 +33,18 @@ object AnimationOptions {
   }
   
   @scala.inline
-  implicit class AnimationOptionsOps[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double | String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double | String): Self = this.set("delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
-    
-    @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

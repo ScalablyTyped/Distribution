@@ -7,6 +7,7 @@ import typings.awsSdk.dynamodbMod.DescribeTableOutput
 import typings.awsSdk.dynamodbMod.UpdateTableOutput
 import typings.dynogels.anon.Name
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,6 +2,7 @@ package typings.sharepoint.CUI
 
 import typings.microsoftAjax.Sys.IDisposable
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,135 +140,123 @@ object Component {
   }
   
   @scala.inline
-  implicit class ComponentOps[Self <: Component] (val x: Self) extends AnyVal {
+  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddChild(value: Component => scala.Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddChildAtIndex(value: (Component, Double) => js.Any): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendChildrenToElement(value: Element => scala.Unit): Self = StObject.set(x, "appendChildrenToElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_lastHeightUpdate(value: Double): Self = this.set("_lastHeightUpdate", value.asInstanceOf[js.Any])
+    def setCreateChildArray(value: () => scala.Unit): Self = StObject.set(x, "createChildArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_lastLeftUpdate(value: Double): Self = this.set("_lastLeftUpdate", value.asInstanceOf[js.Any])
+    def setDoDelayedInit(value: () => scala.Unit): Self = StObject.set(x, "doDelayedInit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_lastTopUpdate(value: Double): Self = this.set("_lastTopUpdate", value.asInstanceOf[js.Any])
+    def setEnsureCorrectChildType(value: () => scala.Unit): Self = StObject.set(x, "ensureCorrectChildType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_lastWidthUpdate(value: Double): Self = this.set("_lastWidthUpdate", value.asInstanceOf[js.Any])
+    def setEnsureDOMElementAndEmpty(value: () => scala.Unit): Self = StObject.set(x, "ensureDOMElementAndEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddChild(value: Component => scala.Unit): Self = this.set("addChild", js.Any.fromFunction1(value))
+    def setGetChild(value: String => Component): Self = StObject.set(x, "getChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddChildAtIndex(value: (Component, Double) => js.Any): Self = this.set("addChildAtIndex", js.Any.fromFunction2(value))
+    def setGetChildByTitle(value: String => Component): Self = StObject.set(x, "getChildByTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendChildrenToElement(value: Element => scala.Unit): Self = this.set("appendChildrenToElement", js.Any.fromFunction1(value))
+    def setGetTextValue(value: () => String): Self = StObject.set(x, "getTextValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateChildArray(value: () => scala.Unit): Self = this.set("createChildArray", js.Any.fromFunction0(value))
+    def setGet_cssClass(value: () => String): Self = StObject.set(x, "get_cssClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoDelayedInit(value: () => scala.Unit): Self = this.set("doDelayedInit", js.Any.fromFunction0(value))
+    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnsureCorrectChildType(value: () => scala.Unit): Self = this.set("ensureCorrectChildType", js.Any.fromFunction0(value))
+    def setGet_domElementTagName(value: () => String): Self = StObject.set(x, "get_domElementTagName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnsureDOMElementAndEmpty(value: () => scala.Unit): Self = this.set("ensureDOMElementAndEmpty", js.Any.fromFunction0(value))
+    def setGet_enabled(value: () => Boolean): Self = StObject.set(x, "get_enabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChild(value: String => Component): Self = this.set("getChild", js.Any.fromFunction1(value))
+    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildByTitle(value: String => Component): Self = this.set("getChildByTitle", js.Any.fromFunction1(value))
+    def setGet_needsDelayIniting(value: () => Boolean): Self = StObject.set(x, "get_needsDelayIniting", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTextValue(value: () => String): Self = this.set("getTextValue", js.Any.fromFunction0(value))
+    def setGet_parent(value: () => Component): Self = StObject.set(x, "get_parent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_cssClass(value: () => String): Self = this.set("get_cssClass", js.Any.fromFunction0(value))
+    def setGet_root(value: () => Component): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_description(value: () => String): Self = this.set("get_description", js.Any.fromFunction0(value))
+    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_domElementTagName(value: () => String): Self = this.set("get_domElementTagName", js.Any.fromFunction0(value))
+    def setGet_visible(value: () => Boolean): Self = StObject.set(x, "get_visible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_enabled(value: () => Boolean): Self = this.set("get_enabled", js.Any.fromFunction0(value))
+    def setGet_visibleInDOM(value: () => Boolean): Self = StObject.set(x, "get_visibleInDOM", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_id(value: () => String): Self = this.set("get_id", js.Any.fromFunction0(value))
+    def setInitRootMember(value: Component => js.Any): Self = StObject.set(x, "initRootMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_needsDelayIniting(value: () => Boolean): Self = this.set("get_needsDelayIniting", js.Any.fromFunction0(value))
+    def setOnEnabledChanged(value: Boolean => js.Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_parent(value: () => Component): Self = this.set("get_parent", js.Any.fromFunction0(value))
+    def setOnMenuClosed(value: () => scala.Unit): Self = StObject.set(x, "onMenuClosed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_root(value: () => Component): Self = this.set("get_root", js.Any.fromFunction0(value))
+    def setRaiseCommandEvent(value: (String, CommandType, js.Any) => js.Any): Self = StObject.set(x, "raiseCommandEvent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGet_title(value: () => String): Self = this.set("get_title", js.Any.fromFunction0(value))
+    def setReceiveFocus(value: () => scala.Unit): Self = StObject.set(x, "receiveFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_visible(value: () => Boolean): Self = this.set("get_visible", js.Any.fromFunction0(value))
+    def setRemoveChild(value: String => scala.Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_visibleInDOM(value: () => Boolean): Self = this.set("get_visibleInDOM", js.Any.fromFunction0(value))
+    def setRemoveChildren(value: () => scala.Unit): Self = StObject.set(x, "removeChildren", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitRootMember(value: Component => js.Any): Self = this.set("initRootMember", js.Any.fromFunction1(value))
+    def setSet_description(value: String => String): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnabledChanged(value: Boolean => js.Any): Self = this.set("onEnabledChanged", js.Any.fromFunction1(value))
+    def setSet_enabled(value: Boolean => Boolean): Self = StObject.set(x, "set_enabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMenuClosed(value: () => scala.Unit): Self = this.set("onMenuClosed", js.Any.fromFunction0(value))
+    def setSet_id(value: String => scala.Unit): Self = StObject.set(x, "set_id", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRaiseCommandEvent(value: (String, CommandType, js.Any) => js.Any): Self = this.set("raiseCommandEvent", js.Any.fromFunction3(value))
+    def setSet_parent(value: Component => Component): Self = StObject.set(x, "set_parent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReceiveFocus(value: () => scala.Unit): Self = this.set("receiveFocus", js.Any.fromFunction0(value))
+    def setSet_title(value: String => String): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveChild(value: String => scala.Unit): Self = this.set("removeChild", js.Any.fromFunction1(value))
+    def setSet_visible(value: Boolean => Boolean): Self = StObject.set(x, "set_visible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveChildren(value: () => scala.Unit): Self = this.set("removeChildren", js.Any.fromFunction0(value))
+    def setValueIsDirty(value: Double => Boolean): Self = StObject.set(x, "valueIsDirty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_description(value: String => String): Self = this.set("set_description", js.Any.fromFunction1(value))
+    def set_lastHeightUpdate(value: Double): Self = StObject.set(x, "_lastHeightUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet_enabled(value: Boolean => Boolean): Self = this.set("set_enabled", js.Any.fromFunction1(value))
+    def set_lastLeftUpdate(value: Double): Self = StObject.set(x, "_lastLeftUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet_id(value: String => scala.Unit): Self = this.set("set_id", js.Any.fromFunction1(value))
+    def set_lastTopUpdate(value: Double): Self = StObject.set(x, "_lastTopUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet_parent(value: Component => Component): Self = this.set("set_parent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_title(value: String => String): Self = this.set("set_title", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_visible(value: Boolean => Boolean): Self = this.set("set_visible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValueIsDirty(value: Double => Boolean): Self = this.set("valueIsDirty", js.Any.fromFunction1(value))
+    def set_lastWidthUpdate(value: Double): Self = StObject.set(x, "_lastWidthUpdate", value.asInstanceOf[js.Any])
   }
 }

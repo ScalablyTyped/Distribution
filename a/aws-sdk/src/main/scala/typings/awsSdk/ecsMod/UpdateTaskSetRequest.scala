@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTaskSetRequest extends js.Object {
+trait UpdateTaskSetRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set exists in.
@@ -33,30 +34,18 @@ object UpdateTaskSetRequest {
   }
   
   @scala.inline
-  implicit class UpdateTaskSetRequestOps[Self <: UpdateTaskSetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTaskSetRequestMutableBuilder[Self <: UpdateTaskSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScale(value: Scale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Scale): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskSet(value: String): Self = this.set("taskSet", value.asInstanceOf[js.Any])
+    def setTaskSet(value: String): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
   }
 }

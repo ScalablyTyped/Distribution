@@ -2,12 +2,13 @@ package typings.konva.anon
 
 import typings.konva.shapeMod.Shape
 import typings.konva.shapeMod.ShapeConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Antialiased extends js.Object {
+trait Antialiased extends StObject {
   
   var antialiased: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object Antialiased {
   }
   
   @scala.inline
-  implicit class AntialiasedOps[Self <: Antialiased] (val x: Self) extends AnyVal {
+  implicit class AntialiasedMutableBuilder[Self <: Antialiased] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntialiased(value: Boolean): Self = StObject.set(x, "antialiased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAntialiasedUndefined: Self = StObject.set(x, "antialiased", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShape(value: Shape[ShapeConfig]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialiased(value: Boolean): Self = this.set("antialiased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAntialiased: Self = this.set("antialiased", js.undefined)
-    
-    @scala.inline
-    def setShape(value: Shape[ShapeConfig]): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
   }
 }

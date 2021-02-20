@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
   */
 @js.native
-trait CephFSVolumeSource extends js.Object {
+trait CephFSVolumeSource extends StObject {
   
   /**
     * Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
@@ -50,54 +51,42 @@ object CephFSVolumeSource {
   }
   
   @scala.inline
-  implicit class CephFSVolumeSourceOps[Self <: CephFSVolumeSource] (val x: Self) extends AnyVal {
+  implicit class CephFSVolumeSourceMutableBuilder[Self <: CephFSVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitors(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonitorsVarargs(value: Input[String]*): Self = StObject.set(x, "monitors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorsVarargs(value: Input[String]*): Self = this.set("monitors", js.Array(value :_*))
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setMonitors(value: Input[js.Array[Input[String]]]): Self = this.set("monitors", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSecretFile(value: Input[String]): Self = StObject.set(x, "secretFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSecretFileUndefined: Self = StObject.set(x, "secretFile", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretFile(value: Input[String]): Self = this.set("secretFile", value.asInstanceOf[js.Any])
+    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
     @scala.inline
-    def deleteSecretFile: Self = this.set("secretFile", js.undefined)
+    def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretRef(value: Input[LocalObjectReference]): Self = this.set("secretRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretRef: Self = this.set("secretRef", js.undefined)
-    
-    @scala.inline
-    def setUser(value: Input[String]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

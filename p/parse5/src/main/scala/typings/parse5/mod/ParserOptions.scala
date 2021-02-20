@@ -1,11 +1,12 @@
 package typings.parse5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParserOptions extends js.Object {
+trait ParserOptions extends StObject {
   
   /**
     * The [scripting flag](https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag). If set
@@ -43,36 +44,24 @@ object ParserOptions {
   }
   
   @scala.inline
-  implicit class ParserOptionsOps[Self <: ParserOptions] (val x: Self) extends AnyVal {
+  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScriptingEnabled(value: Boolean): Self = StObject.set(x, "scriptingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScriptingEnabledUndefined: Self = StObject.set(x, "scriptingEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptingEnabled(value: Boolean): Self = this.set("scriptingEnabled", value.asInstanceOf[js.Any])
+    def setSourceCodeLocationInfoUndefined: Self = StObject.set(x, "sourceCodeLocationInfo", js.undefined)
     
     @scala.inline
-    def deleteScriptingEnabled: Self = this.set("scriptingEnabled", js.undefined)
+    def setTreeAdapter(value: TreeAdapter): Self = StObject.set(x, "treeAdapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCodeLocationInfo(value: Boolean): Self = this.set("sourceCodeLocationInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCodeLocationInfo: Self = this.set("sourceCodeLocationInfo", js.undefined)
-    
-    @scala.inline
-    def setTreeAdapter(value: TreeAdapter): Self = this.set("treeAdapter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreeAdapter: Self = this.set("treeAdapter", js.undefined)
+    def setTreeAdapterUndefined: Self = StObject.set(x, "treeAdapter", js.undefined)
   }
 }

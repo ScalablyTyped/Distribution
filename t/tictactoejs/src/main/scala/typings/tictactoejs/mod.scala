@@ -4,19 +4,19 @@ import typings.tictactoejs.tictactoejsStrings.O
 import typings.tictactoejs.tictactoejsStrings.X
 import typings.tictactoejs.tictactoejsStrings.`in progress`
 import typings.tictactoejs.tictactoejsStrings.draw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tictactoejs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("tictactoejs", "TicTacToe")
   @js.native
   /**
     * The game's constructor
     */
-  class TicTacToe () extends js.Object {
+  class TicTacToe () extends StObject {
     def this(requestSize: Double) = this()
     
     /**

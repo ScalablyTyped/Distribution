@@ -1,11 +1,12 @@
 package typings.knockback.Knockback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statistics extends js.Object {
+trait Statistics extends StObject {
   
   def addModelEvent(event: String): js.Any = js.native
   
@@ -38,39 +39,27 @@ object Statistics {
   }
   
   @scala.inline
-  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddModelEvent(value: String => js.Any): Self = StObject.set(x, "addModelEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelEventsStatsString(value: () => js.Any): Self = StObject.set(x, "modelEventsStatsString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddModelEvent(value: String => js.Any): Self = this.set("addModelEvent", js.Any.fromFunction1(value))
+    def setRegister(value: (String, js.Any) => js.Any): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: () => js.Any): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setRegisteredCount(value: js.Any => Double): Self = StObject.set(x, "registeredCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModelEventsStatsString(value: () => js.Any): Self = this.set("modelEventsStatsString", js.Any.fromFunction0(value))
+    def setRegisteredStatsString(value: String => String): Self = StObject.set(x, "registeredStatsString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegister(value: (String, js.Any) => js.Any): Self = this.set("register", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRegisteredCount(value: js.Any => Double): Self = this.set("registeredCount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisteredStatsString(value: String => String): Self = this.set("registeredStatsString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnregister(value: (String, js.Any) => js.Any): Self = this.set("unregister", js.Any.fromFunction2(value))
+    def setUnregister(value: (String, js.Any) => js.Any): Self = StObject.set(x, "unregister", js.Any.fromFunction2(value))
   }
 }

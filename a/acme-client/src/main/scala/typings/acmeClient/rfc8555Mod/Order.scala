@@ -5,12 +5,13 @@ import typings.acmeClient.acmeClientStrings.pending
 import typings.acmeClient.acmeClientStrings.processing
 import typings.acmeClient.acmeClientStrings.ready
 import typings.acmeClient.acmeClientStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Order extends js.Object {
+trait Order extends StObject {
   
   var authorizations: js.Array[String] = js.native
   
@@ -36,75 +37,64 @@ object Order {
   @scala.inline
   def apply(
     authorizations: js.Array[String],
-    finalize: String,
+    finalize_ : String,
     identifiers: js.Array[Identifier],
     status: pending | ready | processing | valid | invalid
   ): Order = {
-    val __obj = js.Dynamic.literal(authorizations = authorizations.asInstanceOf[js.Any], finalize = finalize.asInstanceOf[js.Any], identifiers = identifiers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authorizations = authorizations.asInstanceOf[js.Any], identifiers = identifiers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("finalize")(finalize_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
   
   @scala.inline
-  implicit class OrderOps[Self <: Order] (val x: Self) extends AnyVal {
+  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizations(value: js.Array[String]): Self = StObject.set(x, "authorizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationsVarargs(value: String*): Self = StObject.set(x, "authorizations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationsVarargs(value: String*): Self = this.set("authorizations", js.Array(value :_*))
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def setAuthorizations(value: js.Array[String]): Self = this.set("authorizations", value.asInstanceOf[js.Any])
+    def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalize(value: String): Self = this.set("finalize", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setIdentifiersVarargs(value: Identifier*): Self = this.set("identifiers", js.Array(value :_*))
+    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifiers(value: js.Array[Identifier]): Self = this.set("identifiers", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
     @scala.inline
-    def setStatus(value: pending | ready | processing | valid | invalid): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setFinalize_(value: String): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setIdentifiers(value: js.Array[Identifier]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
     
     @scala.inline
-    def setError(value: js.Object): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setNotAfter(value: String): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
     @scala.inline
-    def setExpires(value: String): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setNotBefore(value: String): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
     
     @scala.inline
-    def setNotAfter(value: String): Self = this.set("notAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotAfter: Self = this.set("notAfter", js.undefined)
-    
-    @scala.inline
-    def setNotBefore(value: String): Self = this.set("notBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    def setStatus(value: pending | ready | processing | valid | invalid): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

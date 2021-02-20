@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageRecordResult extends js.Object {
+trait UsageRecordResult extends StObject {
   
   /**
     * The MeteringRecordId is a unique identifier for this metering event.
@@ -31,36 +32,24 @@ object UsageRecordResult {
   }
   
   @scala.inline
-  implicit class UsageRecordResultOps[Self <: UsageRecordResult] (val x: Self) extends AnyVal {
+  implicit class UsageRecordResultMutableBuilder[Self <: UsageRecordResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeteringRecordIdUndefined: Self = StObject.set(x, "MeteringRecordId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: UsageRecordResultStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeteringRecordId(value: String): Self = this.set("MeteringRecordId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteMeteringRecordId: Self = this.set("MeteringRecordId", js.undefined)
+    def setUsageRecord(value: UsageRecord): Self = StObject.set(x, "UsageRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: UsageRecordResultStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUsageRecord(value: UsageRecord): Self = this.set("UsageRecord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageRecord: Self = this.set("UsageRecord", js.undefined)
+    def setUsageRecordUndefined: Self = StObject.set(x, "UsageRecord", js.undefined)
   }
 }

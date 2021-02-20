@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Approval extends js.Object {
+trait Approval extends StObject {
   
   /**
     * The state of the approval, APPROVE or REVOKE. REVOKE states are not stored.
@@ -26,30 +27,18 @@ object Approval {
   }
   
   @scala.inline
-  implicit class ApprovalOps[Self <: Approval] (val x: Self) extends AnyVal {
+  implicit class ApprovalMutableBuilder[Self <: Approval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalState(value: ApprovalState): Self = StObject.set(x, "approvalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalStateUndefined: Self = StObject.set(x, "approvalState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserArn(value: Arn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalState(value: ApprovalState): Self = this.set("approvalState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApprovalState: Self = this.set("approvalState", js.undefined)
-    
-    @scala.inline
-    def setUserArn(value: Arn): Self = this.set("userArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserArn: Self = this.set("userArn", js.undefined)
+    def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
   }
 }

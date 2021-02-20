@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait listenToDocOptions extends js.Object {
+trait listenToDocOptions extends StObject {
   
   /**
     * The context of your component.
@@ -33,33 +34,21 @@ object listenToDocOptions {
   }
   
   @scala.inline
-  implicit class listenToDocOptionsOps[Self <: listenToDocOptions] (val x: Self) extends AnyVal {
+  implicit class listenToDocOptionsMutableBuilder[Self <: listenToDocOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFailure(value: () => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setThen(value: () => Unit): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnFailure(value: () => Unit): Self = this.set("onFailure", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setThen(value: () => Unit): Self = this.set("then", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteThen: Self = this.set("then", js.undefined)
+    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.nextAuth.anon
 
 import typings.nextAuth.adaptersMod.TypeORMSessionModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelS_[S /* <: TypeORMSessionModel */] extends js.Object {
+trait ModelS_[S /* <: TypeORMSessionModel */] extends StObject {
   
   var model: S = js.native
   
@@ -21,24 +22,12 @@ object ModelS_ {
   }
   
   @scala.inline
-  implicit class ModelS_Ops[Self <: ModelS_[_], S /* <: TypeORMSessionModel */] (val x: Self with ModelS_[S]) extends AnyVal {
+  implicit class ModelS_MutableBuilder[Self <: ModelS_[_], S /* <: TypeORMSessionModel */] (val x: Self with ModelS_[S]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModel(value: S): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModel(value: S): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: typings.nextAuth.adaptersMod.Schema[S]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSchema(value: typings.nextAuth.adaptersMod.Schema[S]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SAX Attributes 6.0 */
 @js.native
-trait SAXAttributes60 extends js.Object {
+trait SAXAttributes60 extends StObject {
   
   @JSName("MSXML2.SAXAttributes60_typekey")
   var MSXML2DotSAXAttributes60_typekey: SAXAttributes60 = js.native
@@ -74,54 +75,42 @@ object SAXAttributes60 {
   }
   
   @scala.inline
-  implicit class SAXAttributes60Ops[Self <: SAXAttributes60] (val x: Self) extends AnyVal {
+  implicit class SAXAttributes60MutableBuilder[Self <: SAXAttributes60] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAttribute(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAttributeFromIndex(value: (js.Any, Double) => Unit): Self = StObject.set(x, "addAttributeFromIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMSXML2DotSAXAttributes60_typekey(value: SAXAttributes60): Self = this.set("MSXML2.SAXAttributes60_typekey", value.asInstanceOf[js.Any])
+    def setMSXML2DotSAXAttributes60_typekey(value: SAXAttributes60): Self = StObject.set(x, "MSXML2.SAXAttributes60_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAttribute(value: (String, String, String, String, String) => Unit): Self = this.set("addAttribute", js.Any.fromFunction5(value))
+    def setRemoveAttribute(value: Double => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAttributeFromIndex(value: (js.Any, Double) => Unit): Self = this.set("addAttributeFromIndex", js.Any.fromFunction2(value))
+    def setSetAttribute(value: (Double, String, String, String, String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setSetAttributes(value: js.Any => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAttribute(value: Double => Unit): Self = this.set("removeAttribute", js.Any.fromFunction1(value))
+    def setSetLocalName(value: (Double, String) => Unit): Self = StObject.set(x, "setLocalName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAttribute(value: (Double, String, String, String, String, String) => Unit): Self = this.set("setAttribute", js.Any.fromFunction6(value))
+    def setSetQName(value: (Double, String) => Unit): Self = StObject.set(x, "setQName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAttributes(value: js.Any => Unit): Self = this.set("setAttributes", js.Any.fromFunction1(value))
+    def setSetType(value: (Double, String) => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetLocalName(value: (Double, String) => Unit): Self = this.set("setLocalName", js.Any.fromFunction2(value))
+    def setSetURI(value: (Double, String) => Unit): Self = StObject.set(x, "setURI", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetQName(value: (Double, String) => Unit): Self = this.set("setQName", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetType(value: (Double, String) => Unit): Self = this.set("setType", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetURI(value: (Double, String) => Unit): Self = this.set("setURI", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetValue(value: (Double, String) => Unit): Self = this.set("setValue", js.Any.fromFunction2(value))
+    def setSetValue(value: (Double, String) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
   }
 }

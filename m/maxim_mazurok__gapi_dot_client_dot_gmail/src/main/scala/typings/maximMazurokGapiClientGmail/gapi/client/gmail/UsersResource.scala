@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGmail.anon.Alt
 import typings.maximMazurokGapiClientGmail.anon.UserIdXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsersResource extends js.Object {
+trait UsersResource extends StObject {
   
   var drafts: DraftsResource = js.native
   

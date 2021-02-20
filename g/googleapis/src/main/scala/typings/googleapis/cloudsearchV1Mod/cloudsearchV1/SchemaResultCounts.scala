@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Result count information
   */
 @js.native
-trait SchemaResultCounts extends js.Object {
+trait SchemaResultCounts extends StObject {
   
   /**
     * Result count information for each source with results.
@@ -24,27 +25,15 @@ object SchemaResultCounts {
   }
   
   @scala.inline
-  implicit class SchemaResultCountsOps[Self <: SchemaResultCounts] (val x: Self) extends AnyVal {
+  implicit class SchemaResultCountsMutableBuilder[Self <: SchemaResultCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceResultCounts(value: js.Array[SchemaSourceResultCount]): Self = StObject.set(x, "sourceResultCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceResultCountsUndefined: Self = StObject.set(x, "sourceResultCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceResultCountsVarargs(value: SchemaSourceResultCount*): Self = this.set("sourceResultCounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceResultCounts(value: js.Array[SchemaSourceResultCount]): Self = this.set("sourceResultCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceResultCounts: Self = this.set("sourceResultCounts", js.undefined)
+    def setSourceResultCountsVarargs(value: SchemaSourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value :_*))
   }
 }

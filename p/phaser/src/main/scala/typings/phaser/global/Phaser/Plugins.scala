@@ -2,13 +2,31 @@ package typings.phaser.global.Phaser
 
 import typings.phaser.Phaser.Types.Plugins.CorePluginContainer
 import typings.phaser.Phaser.Types.Plugins.CustomPluginContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Plugins")
-@js.native
-object Plugins extends js.Object {
+object Plugins {
+  
+  @JSGlobal("Phaser.Plugins")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * A Global Plugin is installed just once into the Game owned Plugin Manager.
+    * It can listen for Game events and respond to them.
+    */
+  @JSGlobal("Phaser.Plugins.BasePlugin")
+  @js.native
+  class BasePlugin protected ()
+    extends typings.phaser.Phaser.Plugins.BasePlugin {
+    /**
+      * 
+      * @param pluginManager A reference to the Plugin Manager.
+      */
+    def this(pluginManager: typings.phaser.Phaser.Plugins.PluginManager) = this()
+  }
   
   /**
     * These are the core plugins that are installed into every Scene.Systems instance, no matter what.
@@ -16,7 +34,11 @@ object Plugins extends js.Object {
     * 
     * They are created in the order in which they appear in this array and EventEmitter is always first.
     */
-  var CoreScene: js.Array[js.Any] = js.native
+  @JSGlobal("Phaser.Plugins.CoreScene")
+  @js.native
+  def CoreScene: js.Array[js.Any] = js.native
+  @scala.inline
+  def CoreScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreScene")(x.asInstanceOf[js.Any])
   
   /**
     * These plugins are created in Scene.Systems in addition to the CoreScenePlugins.
@@ -29,30 +51,23 @@ object Plugins extends js.Object {
     * 
     * They are always created in the order in which they appear in the array.
     */
-  var DefaultScene: js.Array[js.Any] = js.native
+  @JSGlobal("Phaser.Plugins.DefaultScene")
+  @js.native
+  def DefaultScene: js.Array[js.Any] = js.native
+  @scala.inline
+  def DefaultScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultScene")(x.asInstanceOf[js.Any])
   
   /**
     * These are the Global Managers that are created by the Phaser.Game instance.
     * They are referenced from Scene.Systems so that plugins can use them.
     */
-  var Global: js.Array[js.Any] = js.native
-  
-  /**
-    * A Global Plugin is installed just once into the Game owned Plugin Manager.
-    * It can listen for Game events and respond to them.
-    */
+  @JSGlobal("Phaser.Plugins.Global")
   @js.native
-  class BasePlugin protected ()
-    extends typings.phaser.Phaser.Plugins.BasePlugin {
-    /**
-      * 
-      * @param pluginManager A reference to the Plugin Manager.
-      */
-    def this(pluginManager: typings.phaser.Phaser.Plugins.PluginManager) = this()
-  }
+  def Global: js.Array[js.Any] = js.native
+  @scala.inline
+  def Global_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Global")(x.asInstanceOf[js.Any])
   
-  @js.native
-  object PluginCache extends js.Object {
+  object PluginCache {
     
     /**
       * Removes all Core Plugins.
@@ -60,41 +75,55 @@ object Plugins extends js.Object {
       * This includes all of the internal system plugins that Phaser needs, like the Input Plugin and Loader Plugin.
       * So be sure you only call this if you do not wish to run Phaser again.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.destroyCorePlugins")
+    @js.native
     def destroyCorePlugins(): Unit = js.native
     
     /**
       * Removes all Custom Plugins.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.destroyCustomPlugins")
+    @js.native
     def destroyCustomPlugins(): Unit = js.native
     
     /**
       * Returns the core plugin object from the cache based on the given key.
       * @param key The key of the core plugin to get.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.getCore")
+    @js.native
     def getCore(key: String): CorePluginContainer = js.native
     
     /**
       * Returns the custom plugin object from the cache based on the given key.
       * @param key The key of the custom plugin to get.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.getCustom")
+    @js.native
     def getCustom(key: String): CustomPluginContainer = js.native
     
     /**
       * Returns an object from the custom cache based on the given key that can be instantiated.
       * @param key The key of the custom plugin to get.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.getCustomClass")
+    @js.native
     def getCustomClass(key: String): js.Function = js.native
     
     /**
       * Checks if the given key is already being used in the core plugin cache.
       * @param key The key to check for.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.hasCore")
+    @js.native
     def hasCore(key: String): Boolean = js.native
     
     /**
       * Checks if the given key is already being used in the custom plugin cache.
       * @param key The key to check for.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.hasCustom")
+    @js.native
     def hasCustom(key: String): Boolean = js.native
     
     /**
@@ -107,7 +136,11 @@ object Plugins extends js.Object {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param custom Core Scene plugin or a Custom Scene plugin? Default false.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.register")
+    @js.native
     def register(key: String, plugin: js.Function, mapping: String): Unit = js.native
+    @JSGlobal("Phaser.Plugins.PluginCache.register")
+    @js.native
     def register(key: String, plugin: js.Function, mapping: String, custom: Boolean): Unit = js.native
     
     /**
@@ -118,18 +151,24 @@ object Plugins extends js.Object {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param data A value to be passed to the plugin's `init` method.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.registerCustom")
+    @js.native
     def registerCustom(key: String, plugin: js.Function, mapping: String, data: js.Any): Unit = js.native
     
     /**
       * Removes a core plugin based on the given key.
       * @param key The key of the core plugin to remove.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.remove")
+    @js.native
     def remove(key: String): Unit = js.native
     
     /**
       * Removes a custom plugin based on the given key.
       * @param key The key of the custom plugin to remove.
       */
+    @JSGlobal("Phaser.Plugins.PluginCache.removeCustom")
+    @js.native
     def removeCustom(key: String): Unit = js.native
   }
   
@@ -166,6 +205,7 @@ object Plugins extends js.Object {
     * 
     * For information on creating your own plugin please see the Phaser 3 Plugin Template.
     */
+  @JSGlobal("Phaser.Plugins.PluginManager")
   @js.native
   class PluginManager protected ()
     extends typings.phaser.Phaser.Plugins.PluginManager {
@@ -181,6 +221,7 @@ object Plugins extends js.Object {
     * It can listen for Scene events and respond to them.
     * It can map itself to a Scene property, or into the Scene Systems, or both.
     */
+  @JSGlobal("Phaser.Plugins.ScenePlugin")
   @js.native
   class ScenePlugin protected ()
     extends typings.phaser.Phaser.Plugins.ScenePlugin {

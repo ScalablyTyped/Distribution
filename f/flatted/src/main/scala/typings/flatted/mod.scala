@@ -1,11 +1,20 @@
 package typings.flatted
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.std.JSON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("flatted", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[JSON]
+object mod extends Shortcut {
+  
+  @JSImport("flatted", JSImport.Namespace)
+  @js.native
+  val ^ : JSON = js.native
+  
+  type _To = JSON
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: JSON = ^
+}

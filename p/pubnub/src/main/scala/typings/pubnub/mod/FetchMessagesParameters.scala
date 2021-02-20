@@ -1,17 +1,18 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchMessagesParameters extends js.Object {
+trait FetchMessagesParameters extends StObject {
   
   var channels: js.Array[String] = js.native
   
   var count: js.UndefOr[Double] = js.native
   
-   // timetoken
+  // timetoken
   var end: js.UndefOr[String | Double] = js.native
   
   var includeMessageActions: js.UndefOr[Boolean] = js.native
@@ -22,7 +23,7 @@ trait FetchMessagesParameters extends js.Object {
   
   var stringifiedTimeToken: js.UndefOr[Boolean] = js.native
   
-   // timetoken
+  // timetoken
   var withMessageActions: js.UndefOr[Boolean] = js.native
 }
 object FetchMessagesParameters {
@@ -34,66 +35,54 @@ object FetchMessagesParameters {
   }
   
   @scala.inline
-  implicit class FetchMessagesParametersOps[Self <: FetchMessagesParameters] (val x: Self) extends AnyVal {
+  implicit class FetchMessagesParametersMutableBuilder[Self <: FetchMessagesParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setEnd(value: String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setIncludeMessageActions(value: Boolean): Self = StObject.set(x, "includeMessageActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String | Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setIncludeMessageActionsUndefined: Self = StObject.set(x, "includeMessageActions", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setIncludeMeta(value: Boolean): Self = StObject.set(x, "includeMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeMessageActions(value: Boolean): Self = this.set("includeMessageActions", value.asInstanceOf[js.Any])
+    def setIncludeMetaUndefined: Self = StObject.set(x, "includeMeta", js.undefined)
     
     @scala.inline
-    def deleteIncludeMessageActions: Self = this.set("includeMessageActions", js.undefined)
+    def setStart(value: String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeMeta(value: Boolean): Self = this.set("includeMeta", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteIncludeMeta: Self = this.set("includeMeta", js.undefined)
+    def setStringifiedTimeToken(value: Boolean): Self = StObject.set(x, "stringifiedTimeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: String | Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStringifiedTimeTokenUndefined: Self = StObject.set(x, "stringifiedTimeToken", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setWithMessageActions(value: Boolean): Self = StObject.set(x, "withMessageActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringifiedTimeToken(value: Boolean): Self = this.set("stringifiedTimeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringifiedTimeToken: Self = this.set("stringifiedTimeToken", js.undefined)
-    
-    @scala.inline
-    def setWithMessageActions(value: Boolean): Self = this.set("withMessageActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithMessageActions: Self = this.set("withMessageActions", js.undefined)
+    def setWithMessageActionsUndefined: Self = StObject.set(x, "withMessageActions", js.undefined)
   }
 }

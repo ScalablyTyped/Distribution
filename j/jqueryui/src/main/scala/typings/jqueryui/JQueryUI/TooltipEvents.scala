@@ -1,12 +1,13 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipEvents extends js.Object {
+trait TooltipEvents extends StObject {
   
   var close: js.UndefOr[TooltipEvent] = js.native
   
@@ -21,30 +22,18 @@ object TooltipEvents {
   }
   
   @scala.inline
-  implicit class TooltipEventsOps[Self <: TooltipEvents] (val x: Self) extends AnyVal {
+  implicit class TooltipEventsMutableBuilder[Self <: TooltipEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClose(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = this.set("close", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
-    
-    @scala.inline
-    def setOpen(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = this.set("open", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

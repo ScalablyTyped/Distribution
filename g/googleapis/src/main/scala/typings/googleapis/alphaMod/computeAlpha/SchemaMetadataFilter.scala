@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Node metadata of their XDS requests to loadbalancers.
   */
 @js.native
-trait SchemaMetadataFilter extends js.Object {
+trait SchemaMetadataFilter extends StObject {
   
   /**
     * The list of label value pairs that must match labels in the provided
@@ -49,33 +50,21 @@ object SchemaMetadataFilter {
   }
   
   @scala.inline
-  implicit class SchemaMetadataFilterOps[Self <: SchemaMetadataFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaMetadataFilterMutableBuilder[Self <: SchemaMetadataFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterLabels(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = StObject.set(x, "filterLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterLabelsUndefined: Self = StObject.set(x, "filterLabels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterLabelsVarargs(value: SchemaMetadataFilterLabelMatch*): Self = StObject.set(x, "filterLabels", js.Array(value :_*))
     
     @scala.inline
-    def setFilterLabelsVarargs(value: SchemaMetadataFilterLabelMatch*): Self = this.set("filterLabels", js.Array(value :_*))
+    def setFilterMatchCriteria(value: String): Self = StObject.set(x, "filterMatchCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterLabels(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = this.set("filterLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterLabels: Self = this.set("filterLabels", js.undefined)
-    
-    @scala.inline
-    def setFilterMatchCriteria(value: String): Self = this.set("filterMatchCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterMatchCriteria: Self = this.set("filterMatchCriteria", js.undefined)
+    def setFilterMatchCriteriaUndefined: Self = StObject.set(x, "filterMatchCriteria", js.undefined)
   }
 }

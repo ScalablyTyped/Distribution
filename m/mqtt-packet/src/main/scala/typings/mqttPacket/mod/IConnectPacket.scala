@@ -9,6 +9,7 @@ import typings.mqttPacket.mqttPacketStrings.MQIsdp
 import typings.mqttPacket.mqttPacketStrings.MQTT
 import typings.mqttPacket.mqttPacketStrings.connect
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,72 +49,60 @@ object IConnectPacket {
   }
   
   @scala.inline
-  implicit class IConnectPacketOps[Self <: IConnectPacket] (val x: Self) extends AnyVal {
+  implicit class IConnectPacketMutableBuilder[Self <: IConnectPacket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCmd(value: connect): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: connect): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setKeepalive(value: Double): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClean(value: Boolean): Self = this.set("clean", value.asInstanceOf[js.Any])
+    def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
     
     @scala.inline
-    def deleteClean: Self = this.set("clean", js.undefined)
+    def setPassword(value: Buffer): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepalive(value: Double): Self = this.set("keepalive", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
+    def setProperties(value: AuthenticationData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: Buffer): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setProtocolId(value: MQTT | MQIsdp): Self = StObject.set(x, "protocolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: AuthenticationData): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProtocolIdUndefined: Self = StObject.set(x, "protocolId", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setProtocolVersion(value: `4` | `5` | `3`): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolId(value: MQTT | MQIsdp): Self = this.set("protocolId", value.asInstanceOf[js.Any])
+    def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
     
     @scala.inline
-    def deleteProtocolId: Self = this.set("protocolId", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolVersion(value: `4` | `5` | `3`): Self = this.set("protocolVersion", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteProtocolVersion: Self = this.set("protocolVersion", js.undefined)
+    def setWill(value: Payload): Self = StObject.set(x, "will", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setWill(value: Payload): Self = this.set("will", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWill: Self = this.set("will", js.undefined)
+    def setWillUndefined: Self = StObject.set(x, "will", js.undefined)
   }
 }

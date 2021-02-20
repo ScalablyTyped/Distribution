@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SensorOption extends js.Object {
+trait SensorOption extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -24,39 +25,27 @@ object SensorOption {
   }
   
   @scala.inline
-  implicit class SensorOptionOps[Self <: SensorOption] (val x: Self) extends AnyVal {
+  implicit class SensorOptionMutableBuilder[Self <: SensorOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreq(value: Boolean): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPin(value: Double | String): Self = this.set("pin", value.asInstanceOf[js.Any])
+    def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreq(value: Boolean): Self = this.set("freq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFreq: Self = this.set("freq", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

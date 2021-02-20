@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientPeople.anon.ResourceNames
 import typings.maximMazurokGapiClientPeople.anon.Sources
 import typings.maximMazurokGapiClientPeople.anon.UpdatePersonFields
 import typings.maximMazurokGapiClientPeople.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PeopleResource extends js.Object {
+trait PeopleResource extends StObject {
   
   var connections: ConnectionsResource = js.native
   

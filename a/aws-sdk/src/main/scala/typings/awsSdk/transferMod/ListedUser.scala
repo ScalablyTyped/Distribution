@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListedUser extends js.Object {
+trait ListedUser extends StObject {
   
   /**
     * Provides the unique Amazon Resource Name (ARN) for the user that you want to learn about.
@@ -46,51 +47,39 @@ object ListedUser {
   }
   
   @scala.inline
-  implicit class ListedUserOps[Self <: ListedUser] (val x: Self) extends AnyVal {
+  implicit class ListedUserMutableBuilder[Self <: ListedUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHomeDirectory(value: HomeDirectory): Self = StObject.set(x, "HomeDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHomeDirectoryType(value: HomeDirectoryType): Self = StObject.set(x, "HomeDirectoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setHomeDirectoryTypeUndefined: Self = StObject.set(x, "HomeDirectoryType", js.undefined)
     
     @scala.inline
-    def setHomeDirectory(value: HomeDirectory): Self = this.set("HomeDirectory", value.asInstanceOf[js.Any])
+    def setHomeDirectoryUndefined: Self = StObject.set(x, "HomeDirectory", js.undefined)
     
     @scala.inline
-    def deleteHomeDirectory: Self = this.set("HomeDirectory", js.undefined)
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomeDirectoryType(value: HomeDirectoryType): Self = this.set("HomeDirectoryType", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteHomeDirectoryType: Self = this.set("HomeDirectoryType", js.undefined)
+    def setSshPublicKeyCount(value: SshPublicKeyCount): Self = StObject.set(x, "SshPublicKeyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setSshPublicKeyCountUndefined: Self = StObject.set(x, "SshPublicKeyCount", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshPublicKeyCount(value: SshPublicKeyCount): Self = this.set("SshPublicKeyCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshPublicKeyCount: Self = this.set("SshPublicKeyCount", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

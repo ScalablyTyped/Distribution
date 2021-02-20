@@ -1,11 +1,12 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryRenderedFeaturesParams extends js.Object {
+trait QueryRenderedFeaturesParams extends StObject {
   
   var filter: js.UndefOr[js.Array[_]] = js.native
   
@@ -20,36 +21,24 @@ object QueryRenderedFeaturesParams {
   }
   
   @scala.inline
-  implicit class QueryRenderedFeaturesParamsOps[Self <: QueryRenderedFeaturesParams] (val x: Self) extends AnyVal {
+  implicit class QueryRenderedFeaturesParamsMutableBuilder[Self <: QueryRenderedFeaturesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: js.Any*): Self = this.set("filter", js.Array(value :_*))
+    def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setLayersVarargs(value: String*): Self = this.set("layers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayers(value: js.Array[String]): Self = this.set("layers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

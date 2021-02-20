@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFFolderContentItemType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFolderContentItem extends js.Object {
+trait IFolderContentItem extends StObject {
   
   val FolderContentItemType: MFFolderContentItemType = js.native
   
@@ -33,33 +34,21 @@ object IFolderContentItem {
   }
   
   @scala.inline
-  implicit class IFolderContentItemOps[Self <: IFolderContentItem] (val x: Self) extends AnyVal {
+  implicit class IFolderContentItemMutableBuilder[Self <: IFolderContentItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolderContentItemType(value: MFFolderContentItemType): Self = StObject.set(x, "FolderContentItemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectVersion(value: IObjectVersion): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPropertyFolder(value: ITypedValue): Self = StObject.set(x, "PropertyFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderContentItemType(value: MFFolderContentItemType): Self = this.set("FolderContentItemType", value.asInstanceOf[js.Any])
+    def setTraditionalFolder(value: ILookup): Self = StObject.set(x, "TraditionalFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectVersion(value: IObjectVersion): Self = this.set("ObjectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyFolder(value: ITypedValue): Self = this.set("PropertyFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTraditionalFolder(value: ILookup): Self = this.set("TraditionalFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setView(value: IView): Self = this.set("View", value.asInstanceOf[js.Any])
+    def setView(value: IView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }
 }

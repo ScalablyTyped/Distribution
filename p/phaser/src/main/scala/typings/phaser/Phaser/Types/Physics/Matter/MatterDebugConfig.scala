@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatterDebugConfig extends js.Object {
+trait MatterDebugConfig extends StObject {
   
   /**
     * The color value of constraint anchors.
@@ -246,294 +247,282 @@ object MatterDebugConfig {
   }
   
   @scala.inline
-  implicit class MatterDebugConfigOps[Self <: MatterDebugConfig] (val x: Self) extends AnyVal {
+  implicit class MatterDebugConfigMutableBuilder[Self <: MatterDebugConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorColor(value: Double): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorColorUndefined: Self = StObject.set(x, "anchorColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorSize(value: Double): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorColor(value: Double): Self = this.set("anchorColor", value.asInstanceOf[js.Any])
+    def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
     
     @scala.inline
-    def deleteAnchorColor: Self = this.set("anchorColor", js.undefined)
+    def setAngleColor(value: Double): Self = StObject.set(x, "angleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorSize(value: Double): Self = this.set("anchorSize", value.asInstanceOf[js.Any])
+    def setAngleColorUndefined: Self = StObject.set(x, "angleColor", js.undefined)
     
     @scala.inline
-    def deleteAnchorSize: Self = this.set("anchorSize", js.undefined)
+    def setBoundsColor(value: Double): Self = StObject.set(x, "boundsColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleColor(value: Double): Self = this.set("angleColor", value.asInstanceOf[js.Any])
+    def setBoundsColorUndefined: Self = StObject.set(x, "boundsColor", js.undefined)
     
     @scala.inline
-    def deleteAngleColor: Self = this.set("angleColor", js.undefined)
+    def setBroadphaseColor(value: Double): Self = StObject.set(x, "broadphaseColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsColor(value: Double): Self = this.set("boundsColor", value.asInstanceOf[js.Any])
+    def setBroadphaseColorUndefined: Self = StObject.set(x, "broadphaseColor", js.undefined)
     
     @scala.inline
-    def deleteBoundsColor: Self = this.set("boundsColor", js.undefined)
+    def setCollisionColor(value: Double): Self = StObject.set(x, "collisionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadphaseColor(value: Double): Self = this.set("broadphaseColor", value.asInstanceOf[js.Any])
+    def setCollisionColorUndefined: Self = StObject.set(x, "collisionColor", js.undefined)
     
     @scala.inline
-    def deleteBroadphaseColor: Self = this.set("broadphaseColor", js.undefined)
+    def setFillColor(value: Double): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionColor(value: Double): Self = this.set("collisionColor", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteCollisionColor: Self = this.set("collisionColor", js.undefined)
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Double): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setHullColor(value: Double): Self = StObject.set(x, "hullColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setHullColorUndefined: Self = StObject.set(x, "hullColor", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setJointColor(value: Double): Self = StObject.set(x, "jointColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHullColor(value: Double): Self = this.set("hullColor", value.asInstanceOf[js.Any])
+    def setJointColorUndefined: Self = StObject.set(x, "jointColor", js.undefined)
     
     @scala.inline
-    def deleteHullColor: Self = this.set("hullColor", js.undefined)
+    def setJointLineOpacity(value: Double): Self = StObject.set(x, "jointLineOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJointColor(value: Double): Self = this.set("jointColor", value.asInstanceOf[js.Any])
+    def setJointLineOpacityUndefined: Self = StObject.set(x, "jointLineOpacity", js.undefined)
     
     @scala.inline
-    def deleteJointColor: Self = this.set("jointColor", js.undefined)
+    def setJointLineThickness(value: Double): Self = StObject.set(x, "jointLineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJointLineOpacity(value: Double): Self = this.set("jointLineOpacity", value.asInstanceOf[js.Any])
+    def setJointLineThicknessUndefined: Self = StObject.set(x, "jointLineThickness", js.undefined)
     
     @scala.inline
-    def deleteJointLineOpacity: Self = this.set("jointLineOpacity", js.undefined)
+    def setLineColor(value: Double): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJointLineThickness(value: Double): Self = this.set("jointLineThickness", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteJointLineThickness: Self = this.set("jointLineThickness", js.undefined)
+    def setLineOpacity(value: Double): Self = StObject.set(x, "lineOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: Double): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineOpacityUndefined: Self = StObject.set(x, "lineOpacity", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineOpacity(value: Double): Self = this.set("lineOpacity", value.asInstanceOf[js.Any])
+    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
     
     @scala.inline
-    def deleteLineOpacity: Self = this.set("lineOpacity", js.undefined)
+    def setPinColor(value: Double): Self = StObject.set(x, "pinColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineThickness(value: Double): Self = this.set("lineThickness", value.asInstanceOf[js.Any])
+    def setPinColorUndefined: Self = StObject.set(x, "pinColor", js.undefined)
     
     @scala.inline
-    def deleteLineThickness: Self = this.set("lineThickness", js.undefined)
+    def setPinSize(value: Double): Self = StObject.set(x, "pinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinColor(value: Double): Self = this.set("pinColor", value.asInstanceOf[js.Any])
+    def setPinSizeUndefined: Self = StObject.set(x, "pinSize", js.undefined)
     
     @scala.inline
-    def deletePinColor: Self = this.set("pinColor", js.undefined)
+    def setPositionColor(value: Double): Self = StObject.set(x, "positionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinSize(value: Double): Self = this.set("pinSize", value.asInstanceOf[js.Any])
+    def setPositionColorUndefined: Self = StObject.set(x, "positionColor", js.undefined)
     
     @scala.inline
-    def deletePinSize: Self = this.set("pinSize", js.undefined)
+    def setPositionSize(value: Double): Self = StObject.set(x, "positionSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionColor(value: Double): Self = this.set("positionColor", value.asInstanceOf[js.Any])
+    def setPositionSizeUndefined: Self = StObject.set(x, "positionSize", js.undefined)
     
     @scala.inline
-    def deletePositionColor: Self = this.set("positionColor", js.undefined)
+    def setRenderFill(value: Boolean): Self = StObject.set(x, "renderFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionSize(value: Double): Self = this.set("positionSize", value.asInstanceOf[js.Any])
+    def setRenderFillUndefined: Self = StObject.set(x, "renderFill", js.undefined)
     
     @scala.inline
-    def deletePositionSize: Self = this.set("positionSize", js.undefined)
+    def setRenderLine(value: Boolean): Self = StObject.set(x, "renderLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderFill(value: Boolean): Self = this.set("renderFill", value.asInstanceOf[js.Any])
+    def setRenderLineUndefined: Self = StObject.set(x, "renderLine", js.undefined)
     
     @scala.inline
-    def deleteRenderFill: Self = this.set("renderFill", js.undefined)
+    def setSensorFillColor(value: Double): Self = StObject.set(x, "sensorFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderLine(value: Boolean): Self = this.set("renderLine", value.asInstanceOf[js.Any])
+    def setSensorFillColorUndefined: Self = StObject.set(x, "sensorFillColor", js.undefined)
     
     @scala.inline
-    def deleteRenderLine: Self = this.set("renderLine", js.undefined)
+    def setSensorLineColor(value: Double): Self = StObject.set(x, "sensorLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensorFillColor(value: Double): Self = this.set("sensorFillColor", value.asInstanceOf[js.Any])
+    def setSensorLineColorUndefined: Self = StObject.set(x, "sensorLineColor", js.undefined)
     
     @scala.inline
-    def deleteSensorFillColor: Self = this.set("sensorFillColor", js.undefined)
+    def setSeparationColor(value: Double): Self = StObject.set(x, "separationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensorLineColor(value: Double): Self = this.set("sensorLineColor", value.asInstanceOf[js.Any])
+    def setSeparationColorUndefined: Self = StObject.set(x, "separationColor", js.undefined)
     
     @scala.inline
-    def deleteSensorLineColor: Self = this.set("sensorLineColor", js.undefined)
+    def setShowAngleIndicator(value: Boolean): Self = StObject.set(x, "showAngleIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparationColor(value: Double): Self = this.set("separationColor", value.asInstanceOf[js.Any])
+    def setShowAngleIndicatorUndefined: Self = StObject.set(x, "showAngleIndicator", js.undefined)
     
     @scala.inline
-    def deleteSeparationColor: Self = this.set("separationColor", js.undefined)
+    def setShowAxes(value: Boolean): Self = StObject.set(x, "showAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAngleIndicator(value: Boolean): Self = this.set("showAngleIndicator", value.asInstanceOf[js.Any])
+    def setShowAxesUndefined: Self = StObject.set(x, "showAxes", js.undefined)
     
     @scala.inline
-    def deleteShowAngleIndicator: Self = this.set("showAngleIndicator", js.undefined)
+    def setShowBody(value: Boolean): Self = StObject.set(x, "showBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAxes(value: Boolean): Self = this.set("showAxes", value.asInstanceOf[js.Any])
+    def setShowBodyUndefined: Self = StObject.set(x, "showBody", js.undefined)
     
     @scala.inline
-    def deleteShowAxes: Self = this.set("showAxes", js.undefined)
+    def setShowBounds(value: Boolean): Self = StObject.set(x, "showBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBody(value: Boolean): Self = this.set("showBody", value.asInstanceOf[js.Any])
+    def setShowBoundsUndefined: Self = StObject.set(x, "showBounds", js.undefined)
     
     @scala.inline
-    def deleteShowBody: Self = this.set("showBody", js.undefined)
+    def setShowBroadphase(value: Boolean): Self = StObject.set(x, "showBroadphase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBounds(value: Boolean): Self = this.set("showBounds", value.asInstanceOf[js.Any])
+    def setShowBroadphaseUndefined: Self = StObject.set(x, "showBroadphase", js.undefined)
     
     @scala.inline
-    def deleteShowBounds: Self = this.set("showBounds", js.undefined)
+    def setShowCollisions(value: Boolean): Self = StObject.set(x, "showCollisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBroadphase(value: Boolean): Self = this.set("showBroadphase", value.asInstanceOf[js.Any])
+    def setShowCollisionsUndefined: Self = StObject.set(x, "showCollisions", js.undefined)
     
     @scala.inline
-    def deleteShowBroadphase: Self = this.set("showBroadphase", js.undefined)
+    def setShowConvexHulls(value: Boolean): Self = StObject.set(x, "showConvexHulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCollisions(value: Boolean): Self = this.set("showCollisions", value.asInstanceOf[js.Any])
+    def setShowConvexHullsUndefined: Self = StObject.set(x, "showConvexHulls", js.undefined)
     
     @scala.inline
-    def deleteShowCollisions: Self = this.set("showCollisions", js.undefined)
+    def setShowInternalEdges(value: Boolean): Self = StObject.set(x, "showInternalEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowConvexHulls(value: Boolean): Self = this.set("showConvexHulls", value.asInstanceOf[js.Any])
+    def setShowInternalEdgesUndefined: Self = StObject.set(x, "showInternalEdges", js.undefined)
     
     @scala.inline
-    def deleteShowConvexHulls: Self = this.set("showConvexHulls", js.undefined)
+    def setShowJoint(value: Boolean): Self = StObject.set(x, "showJoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInternalEdges(value: Boolean): Self = this.set("showInternalEdges", value.asInstanceOf[js.Any])
+    def setShowJointUndefined: Self = StObject.set(x, "showJoint", js.undefined)
     
     @scala.inline
-    def deleteShowInternalEdges: Self = this.set("showInternalEdges", js.undefined)
+    def setShowPositions(value: Boolean): Self = StObject.set(x, "showPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowJoint(value: Boolean): Self = this.set("showJoint", value.asInstanceOf[js.Any])
+    def setShowPositionsUndefined: Self = StObject.set(x, "showPositions", js.undefined)
     
     @scala.inline
-    def deleteShowJoint: Self = this.set("showJoint", js.undefined)
+    def setShowSensors(value: Boolean): Self = StObject.set(x, "showSensors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPositions(value: Boolean): Self = this.set("showPositions", value.asInstanceOf[js.Any])
+    def setShowSensorsUndefined: Self = StObject.set(x, "showSensors", js.undefined)
     
     @scala.inline
-    def deleteShowPositions: Self = this.set("showPositions", js.undefined)
+    def setShowSeparation(value: Boolean): Self = StObject.set(x, "showSeparation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSensors(value: Boolean): Self = this.set("showSensors", value.asInstanceOf[js.Any])
+    def setShowSeparationUndefined: Self = StObject.set(x, "showSeparation", js.undefined)
     
     @scala.inline
-    def deleteShowSensors: Self = this.set("showSensors", js.undefined)
+    def setShowSleeping(value: Boolean): Self = StObject.set(x, "showSleeping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSeparation(value: Boolean): Self = this.set("showSeparation", value.asInstanceOf[js.Any])
+    def setShowSleepingUndefined: Self = StObject.set(x, "showSleeping", js.undefined)
     
     @scala.inline
-    def deleteShowSeparation: Self = this.set("showSeparation", js.undefined)
+    def setShowStaticBody(value: Boolean): Self = StObject.set(x, "showStaticBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSleeping(value: Boolean): Self = this.set("showSleeping", value.asInstanceOf[js.Any])
+    def setShowStaticBodyUndefined: Self = StObject.set(x, "showStaticBody", js.undefined)
     
     @scala.inline
-    def deleteShowSleeping: Self = this.set("showSleeping", js.undefined)
+    def setShowVelocity(value: Boolean): Self = StObject.set(x, "showVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowStaticBody(value: Boolean): Self = this.set("showStaticBody", value.asInstanceOf[js.Any])
+    def setShowVelocityUndefined: Self = StObject.set(x, "showVelocity", js.undefined)
     
     @scala.inline
-    def deleteShowStaticBody: Self = this.set("showStaticBody", js.undefined)
+    def setSleepFillColor(value: Double): Self = StObject.set(x, "sleepFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowVelocity(value: Boolean): Self = this.set("showVelocity", value.asInstanceOf[js.Any])
+    def setSleepFillColorUndefined: Self = StObject.set(x, "sleepFillColor", js.undefined)
     
     @scala.inline
-    def deleteShowVelocity: Self = this.set("showVelocity", js.undefined)
+    def setSleepLineColor(value: Double): Self = StObject.set(x, "sleepLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSleepFillColor(value: Double): Self = this.set("sleepFillColor", value.asInstanceOf[js.Any])
+    def setSleepLineColorUndefined: Self = StObject.set(x, "sleepLineColor", js.undefined)
     
     @scala.inline
-    def deleteSleepFillColor: Self = this.set("sleepFillColor", js.undefined)
+    def setSpringColor(value: Double): Self = StObject.set(x, "springColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSleepLineColor(value: Double): Self = this.set("sleepLineColor", value.asInstanceOf[js.Any])
+    def setSpringColorUndefined: Self = StObject.set(x, "springColor", js.undefined)
     
     @scala.inline
-    def deleteSleepLineColor: Self = this.set("sleepLineColor", js.undefined)
+    def setStaticBodySleepOpacity(value: Double): Self = StObject.set(x, "staticBodySleepOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpringColor(value: Double): Self = this.set("springColor", value.asInstanceOf[js.Any])
+    def setStaticBodySleepOpacityUndefined: Self = StObject.set(x, "staticBodySleepOpacity", js.undefined)
     
     @scala.inline
-    def deleteSpringColor: Self = this.set("springColor", js.undefined)
+    def setStaticFillColor(value: Double): Self = StObject.set(x, "staticFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticBodySleepOpacity(value: Double): Self = this.set("staticBodySleepOpacity", value.asInstanceOf[js.Any])
+    def setStaticFillColorUndefined: Self = StObject.set(x, "staticFillColor", js.undefined)
     
     @scala.inline
-    def deleteStaticBodySleepOpacity: Self = this.set("staticBodySleepOpacity", js.undefined)
+    def setStaticLineColor(value: Double): Self = StObject.set(x, "staticLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticFillColor(value: Double): Self = this.set("staticFillColor", value.asInstanceOf[js.Any])
+    def setStaticLineColorUndefined: Self = StObject.set(x, "staticLineColor", js.undefined)
     
     @scala.inline
-    def deleteStaticFillColor: Self = this.set("staticFillColor", js.undefined)
+    def setVelocityColor(value: Double): Self = StObject.set(x, "velocityColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticLineColor(value: Double): Self = this.set("staticLineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticLineColor: Self = this.set("staticLineColor", js.undefined)
-    
-    @scala.inline
-    def setVelocityColor(value: Double): Self = this.set("velocityColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocityColor: Self = this.set("velocityColor", js.undefined)
+    def setVelocityColorUndefined: Self = StObject.set(x, "velocityColor", js.undefined)
   }
 }

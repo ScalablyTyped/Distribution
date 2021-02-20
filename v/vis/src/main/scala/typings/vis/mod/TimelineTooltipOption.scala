@@ -2,12 +2,13 @@ package typings.vis.mod
 
 import typings.vis.visStrings.cap
 import typings.vis.visStrings.flip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineTooltipOption extends js.Object {
+trait TimelineTooltipOption extends StObject {
   
   var followMouse: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object TimelineTooltipOption {
   }
   
   @scala.inline
-  implicit class TimelineTooltipOptionOps[Self <: TimelineTooltipOption] (val x: Self) extends AnyVal {
+  implicit class TimelineTooltipOptionMutableBuilder[Self <: TimelineTooltipOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFollowMouse(value: Boolean): Self = StObject.set(x, "followMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowMouseUndefined: Self = StObject.set(x, "followMouse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverflowMethod(value: cap | flip): Self = StObject.set(x, "overflowMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowMouse(value: Boolean): Self = this.set("followMouse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowMouse: Self = this.set("followMouse", js.undefined)
-    
-    @scala.inline
-    def setOverflowMethod(value: cap | flip): Self = this.set("overflowMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverflowMethod: Self = this.set("overflowMethod", js.undefined)
+    def setOverflowMethodUndefined: Self = StObject.set(x, "overflowMethod", js.undefined)
   }
 }

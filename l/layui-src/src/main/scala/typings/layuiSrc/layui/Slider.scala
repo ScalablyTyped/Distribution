@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slider extends js.Object {
+trait Slider extends StObject {
   
   def render(option: SliderOption): Slider = js.native
   

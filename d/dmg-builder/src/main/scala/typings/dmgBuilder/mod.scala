@@ -3,14 +3,14 @@ package typings.dmgBuilder
 import typings.appBuilderLib.macOptionsMod.DmgOptions
 import typings.appBuilderLib.macPackagerMod.default
 import typings.appBuilderLib.mod.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dmg-builder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("dmg-builder", "DmgTarget")
   @js.native
   class DmgTarget protected () extends Target {
     def this(packager: default, outDir: String) = this()

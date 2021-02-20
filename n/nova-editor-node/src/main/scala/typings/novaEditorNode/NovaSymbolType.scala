@@ -1,5 +1,6 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.novaEditorNode.novaEditorNodeStrings.`tag-form-field`
   - typings.novaEditorNode.novaEditorNodeStrings.`tag-framework`
 */
-trait NovaSymbolType extends js.Object
+trait NovaSymbolType extends StObject
 object NovaSymbolType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InteractionType extends js.Object {
+trait InteractionType extends StObject {
   
   var interactionType: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object InteractionType {
   }
   
   @scala.inline
-  implicit class InteractionTypeOps[Self <: InteractionType] (val x: Self) extends AnyVal {
+  implicit class InteractionTypeMutableBuilder[Self <: InteractionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInteractionType(value: String): Self = StObject.set(x, "interactionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInteractionTypeUndefined: Self = StObject.set(x, "interactionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionType(value: String): Self = this.set("interactionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInteractionType: Self = this.set("interactionType", js.undefined)
-    
-    @scala.inline
-    def setNodeValue(value: String): Self = this.set("nodeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeValue: Self = this.set("nodeValue", js.undefined)
+    def setNodeValueUndefined: Self = StObject.set(x, "nodeValue", js.undefined)
   }
 }

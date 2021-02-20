@@ -2,6 +2,7 @@ package typings.heremaps.H.map
 
 import typings.heremaps.H.math.BitMask
 import typings.heremaps.H.util.kinetics.IKinetics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interaction.
   */
 @js.native
-trait IInteraction extends js.Object {
+trait IInteraction extends StObject {
   
   /**
     * This method ends interaction and applies kinetic movement if defined by using startInteraction method

@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Time window specified for hourly operations.
   */
 @js.native
-trait SchemaResourcePolicyHourlyCycle extends js.Object {
+trait SchemaResourcePolicyHourlyCycle extends StObject {
   
   /**
     * [Output only] Duration of the time window, automatically chosen to be
@@ -36,36 +37,24 @@ object SchemaResourcePolicyHourlyCycle {
   }
   
   @scala.inline
-  implicit class SchemaResourcePolicyHourlyCycleOps[Self <: SchemaResourcePolicyHourlyCycle] (val x: Self) extends AnyVal {
+  implicit class SchemaResourcePolicyHourlyCycleMutableBuilder[Self <: SchemaResourcePolicyHourlyCycle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoursInCycle(value: Double): Self = StObject.set(x, "hoursInCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setHoursInCycleUndefined: Self = StObject.set(x, "hoursInCycle", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoursInCycle(value: Double): Self = this.set("hoursInCycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoursInCycle: Self = this.set("hoursInCycle", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

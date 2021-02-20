@@ -5,17 +5,17 @@ import typings.sipJs.notifyUserAgentServerMod.NotifyUserAgentServer
 import typings.sipJs.subscribeMod.OutgoingSubscribeRequestDelegate
 import typings.sipJs.userAgentClientMod.UserAgentClient
 import typings.sipJs.userAgentCoreMod.UserAgentCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-client", JSImport.Namespace)
-@js.native
-object subscribeUserAgentClientMod extends js.Object {
+object subscribeUserAgentClientMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
-  - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @js.native
+  - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-client", "SubscribeUserAgentClient")
+  @js.native
   class SubscribeUserAgentClient protected () extends UserAgentClient {
     def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
     def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingSubscribeRequestDelegate) = this()

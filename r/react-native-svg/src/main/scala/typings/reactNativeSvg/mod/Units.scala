@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeSvg.reactNativeSvgStrings.userSpaceOnUse
   - typings.reactNativeSvg.reactNativeSvgStrings.objectBoundingBox
 */
-trait Units extends js.Object
+trait Units extends StObject
 object Units {
   
   @scala.inline

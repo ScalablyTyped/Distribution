@@ -1,5 +1,6 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a UPDATE query. */
 @JSImport("massive", "Delete")
 @js.native
-class Delete protected () extends js.Object {
+class Delete protected () extends StObject {
   /** Represents a DELETE query. */
   def this(source: Readable) = this()
   def this(source: Readable, criteria: Double) = this()

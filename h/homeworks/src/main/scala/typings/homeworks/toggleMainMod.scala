@@ -3,14 +3,14 @@ package typings.homeworks
 import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/toggle/main", JSImport.Namespace)
-@js.native
-object toggleMainMod extends js.Object {
+object toggleMainMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/toggle/main", "WorksToggle")
   @js.native
   class WorksToggle protected ()
     extends typings.homeworks.componentToggleMod.WorksToggle {

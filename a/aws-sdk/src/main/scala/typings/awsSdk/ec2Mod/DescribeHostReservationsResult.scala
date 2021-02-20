@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHostReservationsResult extends js.Object {
+trait DescribeHostReservationsResult extends StObject {
   
   /**
     * Details about the reservation's configuration.
@@ -26,33 +27,21 @@ object DescribeHostReservationsResult {
   }
   
   @scala.inline
-  implicit class DescribeHostReservationsResultOps[Self <: DescribeHostReservationsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeHostReservationsResultMutableBuilder[Self <: DescribeHostReservationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostReservationSet(value: HostReservationSet): Self = StObject.set(x, "HostReservationSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostReservationSetUndefined: Self = StObject.set(x, "HostReservationSet", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostReservationSetVarargs(value: HostReservation*): Self = StObject.set(x, "HostReservationSet", js.Array(value :_*))
     
     @scala.inline
-    def setHostReservationSetVarargs(value: HostReservation*): Self = this.set("HostReservationSet", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostReservationSet(value: HostReservationSet): Self = this.set("HostReservationSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostReservationSet: Self = this.set("HostReservationSet", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

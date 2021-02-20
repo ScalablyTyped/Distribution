@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceTagNotificationAttribute extends js.Object {
+trait InstanceTagNotificationAttribute extends StObject {
   
   /**
     * Indicates wheter all tag keys in the current Region are registered to appear in scheduled event notifications. true indicates that all tag keys in the current Region are registered.
@@ -26,33 +27,21 @@ object InstanceTagNotificationAttribute {
   }
   
   @scala.inline
-  implicit class InstanceTagNotificationAttributeOps[Self <: InstanceTagNotificationAttribute] (val x: Self) extends AnyVal {
+  implicit class InstanceTagNotificationAttributeMutableBuilder[Self <: InstanceTagNotificationAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeAllTagsOfInstance(value: Boolean): Self = StObject.set(x, "IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeAllTagsOfInstanceUndefined: Self = StObject.set(x, "IncludeAllTagsOfInstance", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceTagKeys(value: InstanceTagKeySet): Self = StObject.set(x, "InstanceTagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAllTagsOfInstance(value: Boolean): Self = this.set("IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
+    def setInstanceTagKeysUndefined: Self = StObject.set(x, "InstanceTagKeys", js.undefined)
     
     @scala.inline
-    def deleteIncludeAllTagsOfInstance: Self = this.set("IncludeAllTagsOfInstance", js.undefined)
-    
-    @scala.inline
-    def setInstanceTagKeysVarargs(value: String*): Self = this.set("InstanceTagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstanceTagKeys(value: InstanceTagKeySet): Self = this.set("InstanceTagKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceTagKeys: Self = this.set("InstanceTagKeys", js.undefined)
+    def setInstanceTagKeysVarargs(value: String*): Self = StObject.set(x, "InstanceTagKeys", js.Array(value :_*))
   }
 }

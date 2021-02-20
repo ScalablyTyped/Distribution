@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authorization extends js.Object {
+trait Authorization extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the secret in AWS Secrets Manager that is used for CDN authorization.
@@ -26,24 +27,12 @@ object Authorization {
   }
   
   @scala.inline
-  implicit class AuthorizationOps[Self <: Authorization] (val x: Self) extends AnyVal {
+  implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCdnIdentifierSecret(value: string): Self = StObject.set(x, "CdnIdentifierSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCdnIdentifierSecret(value: string): Self = this.set("CdnIdentifierSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretsRoleArn(value: string): Self = this.set("SecretsRoleArn", value.asInstanceOf[js.Any])
+    def setSecretsRoleArn(value: string): Self = StObject.set(x, "SecretsRoleArn", value.asInstanceOf[js.Any])
   }
 }

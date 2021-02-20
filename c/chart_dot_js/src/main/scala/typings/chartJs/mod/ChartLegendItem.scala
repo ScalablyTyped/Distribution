@@ -5,12 +5,13 @@ import typings.chartJs.chartJsStrings.butt
 import typings.chartJs.chartJsStrings.miter
 import typings.chartJs.chartJsStrings.round
 import typings.chartJs.chartJsStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegendItem extends js.Object {
+trait ChartLegendItem extends StObject {
   
   var fillStyle: js.UndefOr[String] = js.native
   
@@ -43,87 +44,75 @@ object ChartLegendItem {
   }
   
   @scala.inline
-  implicit class ChartLegendItemOps[Self <: ChartLegendItem] (val x: Self) extends AnyVal {
+  implicit class ChartLegendItemMutableBuilder[Self <: ChartLegendItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillStyle(value: String): Self = this.set("fillStyle", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteFillStyle: Self = this.set("fillStyle", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setLineCap(value: butt | round | square): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCap(value: butt | round | square): Self = this.set("lineCap", value.asInstanceOf[js.Any])
+    def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineCap: Self = this.set("lineCap", js.undefined)
+    def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
     
     @scala.inline
-    def setLineDashVarargs(value: Double*): Self = this.set("lineDash", js.Array(value :_*))
+    def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
     
     @scala.inline
-    def setLineDash(value: js.Array[Double]): Self = this.set("lineDash", value.asInstanceOf[js.Any])
+    def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
     
     @scala.inline
-    def deleteLineDash: Self = this.set("lineDash", js.undefined)
+    def setLineJoin(value: bevel | round | miter): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDashOffset(value: Double): Self = this.set("lineDashOffset", value.asInstanceOf[js.Any])
+    def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
     @scala.inline
-    def deleteLineDashOffset: Self = this.set("lineDashOffset", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineJoin(value: bevel | round | miter): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineJoin: Self = this.set("lineJoin", js.undefined)
+    def setPointStyle(value: PointStyle): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setPointStyleUndefined: Self = StObject.set(x, "pointStyle", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointStyle(value: PointStyle): Self = this.set("pointStyle", value.asInstanceOf[js.Any])
+    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
     @scala.inline
-    def deletePointStyle: Self = this.set("pointStyle", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeStyle(value: String): Self = this.set("strokeStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeStyle: Self = this.set("strokeStyle", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

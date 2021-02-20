@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateSoftwareTokenResponse extends js.Object {
+trait AssociateSoftwareTokenResponse extends StObject {
   
   /**
     * A unique generated shared secret code that is used in the TOTP algorithm to generate a one time code.
@@ -26,30 +27,18 @@ object AssociateSoftwareTokenResponse {
   }
   
   @scala.inline
-  implicit class AssociateSoftwareTokenResponseOps[Self <: AssociateSoftwareTokenResponse] (val x: Self) extends AnyVal {
+  implicit class AssociateSoftwareTokenResponseMutableBuilder[Self <: AssociateSoftwareTokenResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecretCode(value: SecretCodeType): Self = StObject.set(x, "SecretCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecretCodeUndefined: Self = StObject.set(x, "SecretCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretCode(value: SecretCodeType): Self = this.set("SecretCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretCode: Self = this.set("SecretCode", js.undefined)
-    
-    @scala.inline
-    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("Session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
   }
 }

@@ -34,12 +34,13 @@ import typings.maximMazurokGapiClientCompute.anon.QuotaUserResource
 import typings.maximMazurokGapiClientCompute.anon.RequestIdResourceUserIpZone
 import typings.maximMazurokGapiClientCompute.anon.RequestIdSourceInstanceTemplate
 import typings.maximMazurokGapiClientCompute.anon.SourceInstanceTemplate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   /** Adds an access config to an instance's network interface. */
   def addAccessConfig(request: typings.maximMazurokGapiClientCompute.anon.Instance): Request[Operation] = js.native

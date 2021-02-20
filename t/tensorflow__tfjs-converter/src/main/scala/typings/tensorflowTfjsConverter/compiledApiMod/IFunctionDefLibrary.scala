@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFunctionDefLibrary extends js.Object {
+trait IFunctionDefLibrary extends StObject {
   
   /** FunctionDefLibrary function */
   var function: js.UndefOr[js.Array[IFunctionDef] | Null] = js.native
@@ -22,42 +23,30 @@ object IFunctionDefLibrary {
   }
   
   @scala.inline
-  implicit class IFunctionDefLibraryOps[Self <: IFunctionDefLibrary] (val x: Self) extends AnyVal {
+  implicit class IFunctionDefLibraryMutableBuilder[Self <: IFunctionDefLibrary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunction(value: js.Array[IFunctionDef]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionNull: Self = StObject.set(x, "function", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def setFunctionVarargs(value: IFunctionDef*): Self = this.set("function", js.Array(value :_*))
+    def setFunctionVarargs(value: IFunctionDef*): Self = StObject.set(x, "function", js.Array(value :_*))
     
     @scala.inline
-    def setFunction(value: js.Array[IFunctionDef]): Self = this.set("function", value.asInstanceOf[js.Any])
+    def setGradient(value: js.Array[IGradientDef]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
+    def setGradientNull: Self = StObject.set(x, "gradient", null)
     
     @scala.inline
-    def setFunctionNull: Self = this.set("function", null)
+    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
     @scala.inline
-    def setGradientVarargs(value: IGradientDef*): Self = this.set("gradient", js.Array(value :_*))
-    
-    @scala.inline
-    def setGradient(value: js.Array[IGradientDef]): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGradient: Self = this.set("gradient", js.undefined)
-    
-    @scala.inline
-    def setGradientNull: Self = this.set("gradient", null)
+    def setGradientVarargs(value: IGradientDef*): Self = StObject.set(x, "gradient", js.Array(value :_*))
   }
 }

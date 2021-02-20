@@ -1,12 +1,13 @@
 package typings.reactInstantsearchCore.anon
 
 import typings.reactInstantsearchCore.mod.Hit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightProperty[TDoc] extends js.Object {
+trait HighlightProperty[TDoc] extends StObject {
   
   var attribute: String = js.native
   
@@ -27,39 +28,27 @@ object HighlightProperty {
   }
   
   @scala.inline
-  implicit class HighlightPropertyOps[Self <: HighlightProperty[_], TDoc] (val x: Self with HighlightProperty[TDoc]) extends AnyVal {
+  implicit class HighlightPropertyMutableBuilder[Self <: HighlightProperty[_], TDoc] (val x: Self with HighlightProperty[TDoc]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightProperty(value: String): Self = StObject.set(x, "highlightProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHit(value: Hit[TDoc]): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setPostTag(value: String): Self = StObject.set(x, "postTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightProperty(value: String): Self = this.set("highlightProperty", value.asInstanceOf[js.Any])
+    def setPostTagUndefined: Self = StObject.set(x, "postTag", js.undefined)
     
     @scala.inline
-    def setHit(value: Hit[TDoc]): Self = this.set("hit", value.asInstanceOf[js.Any])
+    def setPreTag(value: String): Self = StObject.set(x, "preTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostTag(value: String): Self = this.set("postTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostTag: Self = this.set("postTag", js.undefined)
-    
-    @scala.inline
-    def setPreTag(value: String): Self = this.set("preTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreTag: Self = this.set("preTag", js.undefined)
+    def setPreTagUndefined: Self = StObject.set(x, "preTag", js.undefined)
   }
 }

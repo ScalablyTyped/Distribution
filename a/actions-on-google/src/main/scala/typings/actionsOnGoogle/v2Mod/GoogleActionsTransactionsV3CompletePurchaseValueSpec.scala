@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3CompletePurchaseValueSpec extends js.Object {
+trait GoogleActionsTransactionsV3CompletePurchaseValueSpec extends StObject {
   
   /**
     * An opaque string specified by developer, which would associate with the
@@ -27,30 +28,18 @@ object GoogleActionsTransactionsV3CompletePurchaseValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3CompletePurchaseValueSpecOps[Self <: GoogleActionsTransactionsV3CompletePurchaseValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3CompletePurchaseValueSpecMutableBuilder[Self <: GoogleActionsTransactionsV3CompletePurchaseValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkuId(value: GoogleActionsTransactionsV3SkuId): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperPayload(value: String): Self = this.set("developerPayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeveloperPayload: Self = this.set("developerPayload", js.undefined)
-    
-    @scala.inline
-    def setSkuId(value: GoogleActionsTransactionsV3SkuId): Self = this.set("skuId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkuId: Self = this.set("skuId", js.undefined)
+    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
   }
 }

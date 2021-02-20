@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LookupEventsRequest extends js.Object {
+trait LookupEventsRequest extends StObject {
   
   /**
     * Specifies that only events that occur before or at the specified time are returned. If the specified end time is before the specified start time, an error is returned.
@@ -46,57 +47,45 @@ object LookupEventsRequest {
   }
   
   @scala.inline
-  implicit class LookupEventsRequestOps[Self <: LookupEventsRequest] (val x: Self) extends AnyVal {
+  implicit class LookupEventsRequestMutableBuilder[Self <: LookupEventsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventCategory(value: EventCategory): Self = StObject.set(x, "EventCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setEventCategoryUndefined: Self = StObject.set(x, "EventCategory", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setLookupAttributes(value: LookupAttributesList): Self = StObject.set(x, "LookupAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCategory(value: EventCategory): Self = this.set("EventCategory", value.asInstanceOf[js.Any])
+    def setLookupAttributesUndefined: Self = StObject.set(x, "LookupAttributes", js.undefined)
     
     @scala.inline
-    def deleteEventCategory: Self = this.set("EventCategory", js.undefined)
+    def setLookupAttributesVarargs(value: LookupAttribute*): Self = StObject.set(x, "LookupAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setLookupAttributesVarargs(value: LookupAttribute*): Self = this.set("LookupAttributes", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookupAttributes(value: LookupAttributesList): Self = this.set("LookupAttributes", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteLookupAttributes: Self = this.set("LookupAttributes", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNativeMaterialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Labels extends js.Object {
+trait Labels extends StObject {
   
   var icon: String = js.native
   
@@ -20,27 +21,15 @@ object Labels {
   }
   
   @scala.inline
-  implicit class LabelsOps[Self <: Labels] (val x: Self) extends AnyVal {
+  implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
-    
-    @scala.inline
-    def setLabels(value: js.Array[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
   }
 }

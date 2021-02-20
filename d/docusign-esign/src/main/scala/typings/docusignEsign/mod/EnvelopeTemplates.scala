@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeTemplates extends js.Object {
+trait EnvelopeTemplates extends StObject {
   
   /**
     * An array of `templateSummary` objects that contain information about templates.
@@ -21,27 +22,15 @@ object EnvelopeTemplates {
   }
   
   @scala.inline
-  implicit class EnvelopeTemplatesOps[Self <: EnvelopeTemplates] (val x: Self) extends AnyVal {
+  implicit class EnvelopeTemplatesMutableBuilder[Self <: EnvelopeTemplates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTemplates(value: js.Array[/* Summary of a template request. */ TemplateSummary]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTemplatesVarargs(value: (/* Summary of a template request. */ TemplateSummary)*): Self = this.set("templates", js.Array(value :_*))
-    
-    @scala.inline
-    def setTemplates(value: js.Array[/* Summary of a template request. */ TemplateSummary]): Self = this.set("templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("templates", js.undefined)
+    def setTemplatesVarargs(value: (/* Summary of a template request. */ TemplateSummary)*): Self = StObject.set(x, "templates", js.Array(value :_*))
   }
 }

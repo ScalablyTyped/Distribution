@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [w] - The quaternion's w component. Default value 1.
   */
 @js.native
-trait Quat extends js.Object {
+trait Quat extends StObject {
   
   /**
     * Copies the contents of a source quaternion to a destination quaternion.

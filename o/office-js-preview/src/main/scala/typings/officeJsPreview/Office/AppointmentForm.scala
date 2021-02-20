@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Office
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
-trait AppointmentForm extends js.Object {
+trait AppointmentForm extends StObject {
   
   /**
     * Gets an object that provides methods for manipulating the body of an item.
@@ -205,51 +206,39 @@ object AppointmentForm {
   }
   
   @scala.inline
-  implicit class AppointmentFormOps[Self <: AppointmentForm] (val x: Self) extends AnyVal {
+  implicit class AppointmentFormMutableBuilder[Self <: AppointmentForm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Body | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: Time | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: Location | String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Body | String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setOptionalAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = StObject.set(x, "optionalAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Time | Date): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setOptionalAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = StObject.set(x, "optionalAttendees", js.Array(value :_*))
     
     @scala.inline
-    def setLocation(value: Location | String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRequiredAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = StObject.set(x, "requiredAttendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = this.set("optionalAttendees", js.Array(value :_*))
+    def setRequiredAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = StObject.set(x, "requiredAttendees", js.Array(value :_*))
     
     @scala.inline
-    def setOptionalAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = this.set("optionalAttendees", value.asInstanceOf[js.Any])
+    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredAttendeesVarargs(value: (EmailAddressDetails | Recipients)*): Self = this.set("requiredAttendees", js.Array(value :_*))
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setRequiredAttendees(value: js.Array[EmailAddressDetails | Recipients]): Self = this.set("requiredAttendees", value.asInstanceOf[js.Any])
+    def setStart(value: Time | Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Time | Date): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: Subject | String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setSubject(value: Subject | String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyCurrentDBClusterCapacityMessage extends js.Object {
+trait ModifyCurrentDBClusterCapacityMessage extends StObject {
   
   /**
     * The DB cluster capacity. When you change the capacity of a paused Aurora Serverless DB cluster, it automatically resumes. Constraints:   For Aurora MySQL, valid capacity values are 1, 2, 4, 8, 16, 32, 64, 128, and 256.   For Aurora PostgreSQL, valid capacity values are 2, 4, 8, 16, 32, 64, 192, and 384.  
@@ -36,39 +37,27 @@ object ModifyCurrentDBClusterCapacityMessage {
   }
   
   @scala.inline
-  implicit class ModifyCurrentDBClusterCapacityMessageOps[Self <: ModifyCurrentDBClusterCapacityMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyCurrentDBClusterCapacityMessageMutableBuilder[Self <: ModifyCurrentDBClusterCapacityMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacity(value: IntegerOptional): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityUndefined: Self = StObject.set(x, "Capacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    def setSecondsBeforeTimeout(value: IntegerOptional): Self = StObject.set(x, "SecondsBeforeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacity(value: IntegerOptional): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    def setSecondsBeforeTimeoutUndefined: Self = StObject.set(x, "SecondsBeforeTimeout", js.undefined)
     
     @scala.inline
-    def deleteCapacity: Self = this.set("Capacity", js.undefined)
+    def setTimeoutAction(value: String): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondsBeforeTimeout(value: IntegerOptional): Self = this.set("SecondsBeforeTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondsBeforeTimeout: Self = this.set("SecondsBeforeTimeout", js.undefined)
-    
-    @scala.inline
-    def setTimeoutAction(value: String): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutAction: Self = this.set("TimeoutAction", js.undefined)
+    def setTimeoutActionUndefined: Self = StObject.set(x, "TimeoutAction", js.undefined)
   }
 }

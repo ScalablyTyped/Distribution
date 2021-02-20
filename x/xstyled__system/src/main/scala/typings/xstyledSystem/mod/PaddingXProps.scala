@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaddingXProps[TLength] extends js.Object {
+trait PaddingXProps[TLength] extends StObject {
   
   val px: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object PaddingXProps {
   }
   
   @scala.inline
-  implicit class PaddingXPropsOps[Self <: PaddingXProps[_], TLength] (val x: Self with PaddingXProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPxVarargs(value: js.Any*): Self = this.set("px", js.Array(value :_*))
+  implicit class PaddingXPropsMutableBuilder[Self <: PaddingXProps[_], TLength] (val x: Self with PaddingXProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setPx(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
         ]
-    ): Self = this.set("px", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePx: Self = this.set("px", js.undefined)
+    def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
+    
+    @scala.inline
+    def setPxVarargs(value: js.Any*): Self = StObject.set(x, "px", js.Array(value :_*))
   }
 }

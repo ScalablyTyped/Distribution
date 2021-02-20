@@ -1,11 +1,12 @@
 package typings.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggerCreateOptions extends js.Object {
+trait TriggerCreateOptions extends StObject {
   
   var def_module: TriggerModule = js.native
   
@@ -35,39 +36,27 @@ object TriggerCreateOptions {
   }
   
   @scala.inline
-  implicit class TriggerCreateOptionsOps[Self <: TriggerCreateOptions] (val x: Self) extends AnyVal {
+  implicit class TriggerCreateOptionsMutableBuilder[Self <: TriggerCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDef_module(value: TriggerModule): Self = StObject.set(x, "def_module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDef_name(value: String): Self = StObject.set(x, "def_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDef_module(value: TriggerModule): Self = this.set("def_module", value.asInstanceOf[js.Any])
+    def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value :_*))
     
     @scala.inline
-    def setDef_name(value: String): Self = this.set("def_name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey_value_pairsVarargs(value: KeyValuePair*): Self = this.set("key_value_pairs", js.Array(value :_*))
+    def setService_name(value: String): Self = StObject.set(x, "service_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = this.set("key_value_pairs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService_name(value: String): Self = this.set("service_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystem_key(value: String): Self = this.set("system_key", value.asInstanceOf[js.Any])
+    def setSystem_key(value: String): Self = StObject.set(x, "system_key", value.asInstanceOf[js.Any])
   }
 }
